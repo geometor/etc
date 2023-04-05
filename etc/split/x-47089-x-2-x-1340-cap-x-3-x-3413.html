@@ -1,0 +1,81 @@
+<h3 id="X47089">X(47089) = X(2)X(1340)&cap;X(3)X(3413) </h3>
+Barycentrics    2*a^6 - 2*a^4*b^2 + a^2*b^4 - b^6 - 2*a^4*c^2 + b^4*c^2 + a^2*c^4 + b^2*c^4 - c^6 + (4*a^4 - 5*a^2*b^2 + b^4 - 5*a^2*c^2 - 2*b^2*c^2 + c^4)*Sqrt[a^4 - a^2*b^2 + b^4 - a^2*c^2 - b^2*c^2 + c^4] : :
+<p>
+X(47089) lies on the cubic K038 and these lines: {2, 1340}, {3, 3413}, {30, 2040}, {141, 542}, {187, 39022}, {376, 31863}, {1379, 6039}, {1380, 6190}, {2039, 44377}, {14501, 19659}, {14630, 14632}, {22244, 46023}
+</p>
+<p>
+X(47089) = midpoint of X(i) and X(j) for these {i,j}: {376, 31863}, {1379, 6039}, {1380, 6190}<br>
+X(47089) = midpoint of circumcircle intercepts of line X(2)X(1340)<br>
+X(47089) = complement of X(31862)<br>
+X(47089) = psi-transform of X(30508)<br>
+</p>
+
+
+
+<!-- preamble start -->
+<header class="triheader">
+<img src="leftri.svg" style="height:30px" alt="leftri">
+<p class="preamble-title">
+ Shinagawa-Euler Points: X(47090)-X(47101)
+</p>
+<img src="rightri.svg" style="height:30px" alt="rightri">
+</header>
+<div class="preamble-sect">
+<p>
+This preamble, based on notes by Kiminari Shinagawa, is contributed by Clark Kimberling and Peter Moses, March 8, 2022.
+<p>
+The Euler coordinate system consists of an x-axis (the Euler line) and y-axis (the orthic axis).  The axes meet in the origin, X(468) = (0,0). Points on the x-axis and on the same side of (0,0) as the centroid, G, have positive x-coordinates.  Points on the y-axis and on the same side of (0,0) as the bicentric point P(201) have positive y-coordinates.
+</p>
+<p>
+A point with barycentrics p : q : r has Euler coordinates (x,y) given by
+</p>
+<p>
+x = (SA*p + SB*q + SC*r)/(p+q+r)<br>
+y = (SA(SB-SC)*p + SB(SC-SA)*q +SC(SA - SB)*r)/(p+q+r).
+</p>
+<p>
+To convert from Euler coordinates (x,y) to barycentrics p : q : r, let
+</p>
+<p>
+S^2 = SB*SC + SC*SA + SA*SB = 4*(area of ABC)^2<br>
+E = (SB + SC)(SC + SA)(SA + SB)/S^2<br>
+F = SA*SB*SC/S^2.<br>
+</p>
+<p>
+Then
+</p>
+<p>
+p = (E+F)*SB*SC - 3F S^2 - (3SB*SC-S^2)x + (SB-SC)y<br>
+q = (E+F)*SC*SA - 3F S^2 - (3SC*SA-S^2)x + (SC-SA)y<br>
+r =  (E+F)*SA*SB - 3F S^2 - (3SA*SB-S^2)x + (SA-SB)y<br>
+</p>
+<p>
+Note that x must have degree 2 in a,b,c, and y must have degree 4.
+</p>
+<p>
+The appearance of (x,0;n) in the following list means that the point with Euler coordinates (x,0) is X(n):
+</p>
+<p>
+{(E/2,0); 10257}, {(-E/2,0); 37971}, {(E+F,0); 858}, {(2(E+F),0); 46517}, {(3(E+F),0); 5189}, {((E+F)/4,0);37911}, {(E-F,0); 2071}, {(F,0); 403}, {(2F,0); 10151}, {(4F,0); 13473}, {(F/2,0); 37942}, {(F/3,0); 37779}, {(-F,0); 186}, {(-2F,0); 37931},
+{(-F/2,0); 37935}
+</p>
+<p>
+The appearance of ($f(a,b,c)$,0;n) in the next list means that the point with Euler coordinates (f(a,b,c)+f(b,c,a)+f(c,a,b),0) is X(n), and that the point lies on the positive x-axis for all non-equilateral triangles:
+</p>
+<p>
+{($a^2$,0); 46517}, {($a^2$/4,0); 5159}, {($a^2$/6,0); 2}, {($aSA$/$a$,0);3109}}
+</p>
+<p>
+For more examples, see <a href="Euler&#32;Coordinates.pdf"><b>Euler Coordinates</b></a>.
+</p>
+<p>
+See also the preambles just before X(47332) and X(47488).
+</p>
+<hr class="end-preamble">
+</div>
+<!-- preamble end -->
+
+
+
+
+

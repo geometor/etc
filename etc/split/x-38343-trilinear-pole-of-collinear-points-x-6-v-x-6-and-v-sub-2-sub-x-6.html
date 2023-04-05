@@ -1,0 +1,84 @@
+<h3 id="X38343">X(38343) =  TRILINEAR POLE OF COLLINEAR POINTS X(6), V(X(6)), AND V<sub>2</sub>(X(6))</h3>
+Barycentrics    = (a - b) (a + b) (a - c) (a + c) (2 a^2 + 2 b^2 - c^2) (2 a^2 - b^2 + 2 c^2) (a^4 - 4 a^2 b^2 + b^4 - c^4) (a^4 - b^4 - 4 a^2 c^2 + c^4) (a^4 + 2 b^4 - 3 b^2 c^2 + c^4 - a^2 (3 b^2 + c^2)) (a^4 + b^4 - 3 b^2 c^2 + 2 c^4 - a^2 (b^2 + 3 c^2)) : :
+<p>
+X(38343) lies on the circumcircle and these lines: {}
+</p>
+<p>
+X(38343) = trilinear pole of the line {6, 22100}<br>
+</p>
+
+
+
+
+
+
+<!-- preamble start -->
+<header class="triheader">
+<img src="leftri.svg" style="height:30px" alt="leftri">
+<p class="preamble-title">
+Equicenters: X(38344)-X(38429)
+</p>
+<img src="rightri.svg" style="height:30px" alt="rightri">
+</header>
+<div class="preamble-sect">
+<p>
+This preamble and centers X(38344)-X(38429) were contributed by César Eliud Lozada, May 10, 2020.
+</p>
+<p><i>
+Let A'B'C' and A"B"C" be triangles inscribed in ABC. The affine transformation sending A' to A", B' to B", C' to C" has a fixed point E named the <b>equicenter</b> of triangles A'B'C' and A"B"C".</i>  (Reference: <a href="http://www.xtec.es/~qcastell/ttw/ttweng/definicions/d_equicentre_p.html">The Triangle Web by Quim Castellsaguer</a>).
+</p>
+<p>
+The fixed point E is unique, and if T' and T" are homothetic, then E is their homothetic center.
+</p>
+<p>
+The equicenter of the affine transformation sending (A', B', C') to (A", B", C") coincides with the equicenter of the inverse affine transformation sending (A", B", C") to (A', B', C'). Therefore, the equicenter of T' and T" may be referred simply as the <b>equicenter of triangles T' and T"</b>, regardless of the order in which the triangles are listed.
+</p>
+<p>
+The equicenter of T' and T" is also the similarity image of T' and T"..
+</p>
+<p>
+Some particular results:</p>
+<ul>
+<li>If <i>normalized barycentric</i> coordinates of A', B', C' are A' = x<sub>a</sub> : y<sub>a</sub> : z<sub>a</sub> and B' = x<sub>b</sub> : y<sub>b</sub> : z<sub>b</sub> : C' = x<sub>c</sub> : y<sub>c</sub> : z<sub>c</sub>, then the equicenter of ABC and A'B'C' is given by
+
+<p>
+Ed(ABC, A'B'C') = x<sub>b</sub> x<sub>c</sub> + x<sub>b</sub> y<sub>c</sub> + x<sub>c</sub> z<sub>b</sub> : :
+</p>
+<p>
+</li><li>
+Suppose that X = x : y : z and U = u : v : w (barycentrics).  If T<sub>X</sub> = cevian-of-X and T<sub>U</sub> = cevian-of-U, then E(T<sub>X</sub>, T<sub>U</sub>) = x u (y w - z v) ((y - z) u - (x + z) v + (x + y) w) : :
+</li></ul>
+<p>
+For an almost complete list of equicenters related to ABC see <a href="X38344List.txt">here</a>. Also, definitions of triangles mentioned can be found in the <a href="IndexOfTrianglesReferencedInETC.html">index of triangles</a>.
+</p>
+<p>
+Open problem: give a geometric construction of the equicenter of two arbitrary triangles.
+</p>
+<blockquote>
+<p>
+Indeed, on October 29, 2005, Fran&ccedil;ois Rideau provided and proved a method, based strictly on intersections of lines, for constructing the fixed point of an affine  transformation (see
+<a href="Francois&#32;Rideau&#32;-&#32;Les&#32;points&#32;fixes&#32;d'une&#32;application&#32;affine.pdf">
+Francois Rideau - Les points fixes d'une application affine.pdf</a> (in French)). This is his construction:
+</p>
+<p>
+<i>Given two non-homothetic triangles A'B'C' and A"B"C" and the affine transformation</i> &fnof;({ A', B', C' }) &rarr; { A", B", C" },<i> we complete the parallelograms A'B'C'D' and A"B"C"D"; i.e., D' is the reflection of B' in the midpoint of segment A'C' and D" is the reflection of B" in the midpoint of segment A"C". Let </i> A* = A'B' &cap; A"B", B* = B'C' &cap; B"C", C* = C'D' &cap; C"D", D* = D'A' &cap; D"A". <i>Then the fixed point M of the affine transformation &fnof; is</i> M = A*C* &cap; B*D*.
+</p>
+<p>
+Additionally, Rideau provided a very simple method for finding &fnof;(X) of a given point X: <i>let U = A*B* &cap; parallelLine(X, A'B') and V = B*D* &cap; parallelLine(X, A'D'). Then &fnof;(X) = parallelLine(U, A"B") &cap; parallelLine(V, A"D").</i>
+</p>
+<p>
+Many thanks to Francisco Javier Garc&iacute;a Capit&aacute;n for his notes with simplifications of Rideua conclusions and to Angel Montesdeoca for sending me these notes.
+</p>
+<p>
+C&eacute;sar Lozada, January 26, 2021.
+</p>
+</blockquote>
+<p>
+If T<sub>X</sub>=pedal-of-X and T<sub>U</sub>=pedal-of-U, then E(T<sub>X</sub>,T<sub>U</sub>) is the orthopole of line XU.  (Randy Hutson, May 19, 2020)
+</p>
+<hr class="end-preamble">
+</div>
+<!-- preamble end -->
+
+
+

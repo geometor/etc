@@ -1,0 +1,553 @@
+<h3 id="X42463">X(42463) = X(10)*T, WHERE T = ANTICEVIAN TRIANGLE OF X(3)</h3>
+Barycentrics    a^2*(a^2 - b^2 - c^2)*(a^3 + a^2*b + a^2*c - b^2*c - b*c^2) : :
+<p>
+X(42463) lies on these lines: {1, 1762}, {3, 48}, {6, 27802}, {56, 3173}, {58, 15376}, {60, 28606}, {63, 1437}, {72, 184}, {101, 580}, {110, 3868}, {154, 37547}, {155, 11249}, {182, 5044}, {206, 518}, {255, 20803}, {354, 28787}, {394, 11573}, {405, 26885}, {474, 26889}, {517, 6759}, {525, 24286}, {578, 5777}, {603, 23169}, {692, 3811}, {758, 14529}, {912, 960}, {942, 9306}, {971, 13346}, {975, 5135}, {999, 1201}, {1036, 1069}, {1071, 1092}, {1098, 18042}, {1125, 9028}, {1193, 22130}, {1386, 5045}, {1420, 36059}, {1451, 4245}, {1714, 5137}, {1780, 2352}, {2174, 19763}, {2175, 5266}, {2217, 9928}, {2323, 5752}, {2915, 26893}, {3045, 12532}, {3215, 23067}, {3220, 37482}, {3292, 23154}, {3564, 15985}, {3876, 5012}, {3927, 3955}, {5138, 37594}, {5439, 5651}, {5767, 27410}, {5769, 34831}, {5791, 37527}, {5927, 11424}, {6638, 20764}, {7113, 19762}, {7535, 37543}, {7561, 26942}, {10539, 24474}, {11363, 14054}, {12233, 31832}, {12514, 20986}, {12528, 34148}, {13352, 40263}, {13754, 35203}, {17220, 31900}, {19365, 34048}, {19597, 23075}, {20739, 23620}, {22276, 39582}, {23072, 23089}, {23074, 23172}, {23383, 35327}, {23841, 39523}, {24320, 36742}, {29958, 34986}, {31835, 32046}
+</p>
+<p>
+X(42463) = isogonal conjugate of polar conjugate of X(3187)<br>
+X(42463) = isogonal conjugate of X(10)-cross conjugate of X(4)<br>
+X(42463) = isotomic conjugate of polar conjugate of X(5301)<br>
+</p>
+
+
+
+
+
+<!-- preamble start -->
+<header class="triheader">
+<img src="leftri.svg" style="height:30px" alt="leftri">
+<p class="preamble-title">
+Perspectors associated with product triangles: X(42464)-X(42471)
+</p>
+<img src="rightri.svg" style="height:30px" alt="rightri">
+</header>
+<div class="preamble-sect">
+<p>
+This preamble is contributed by Clark Kimberling and Peter Moses, March 28, 2021.
+<p>
+Let T<sub>1</sub> = A<sub>1</sub>B<sub>1</sub>C<sub>1</sub> be a triangle, and let M<sub>1</sub> be the matrix whose rows are the normalized barycentrics of A<sub>1</sub>, B<sub>1</sub>, C<sub>1</sub>, respectively. Let T<sub>2</sub> = A<sub>2</sub>B<sub>2</sub>C<sub>2</sub> be a triangle, and let M<sub>2</sub> be the matrix whose rows are the normalized barycentrics of A<sub>2</sub>, B<sub>2</sub>, C<sub>2</sub>, respectively. Let M be the matrix product M<sub>1</sub>*M<sub>2</sub>. The <b>triangle product</b> T<sub>1</sub>*T<sub>2</sub> is here defined as the triangle whose vertices are given by the rows of  M<sub>1</sub>*M<sub>2</sub>. The noncommutative operation denoted by *, here named <b>triangle multiplication</b>, is associative.
+</p>
+<p>
+Abbreviate the cevian triangle of a pont P = p : q : r as cevian(P) and the anticevian triangle of U = u : v : w as anticevian(U). Let
+</p>
+<p>
+T<sub>1</sub> = A'B'C' = anticevian(P), so that A' = -p : q : r<br>
+T<sub>2</sub> = A''B''C'' = anticevian triangle(U), so that A'' = -u : v : w.<br>
+</p>
+<p>
+Then T<sub>1</sub>*T<sub>2</sub> is perspective to ABC, and the perspector, f(P,U), is given by
+</p>
+<p>
+u (p u^2 - q u^2 + r u^2 - 2 r u v - p v^2 + q v^2 + r v^2 + 2 q u w + 2 p v w - p w^2 - q w^2 - r w^2) (p u^2 + q u^2 - r u^2 + 2 r u v - p v^2 - q v^2 - r v^2 - 2 q u w + 2 p v w - p w^2 + q w^2 + r w^2) <br>
+: <br>
+-v (p u^2 - q u^2 + r u^2 - 2 r u v - p v^2 + q v^2 + r v^2 + 2 q u w + 2 p v w - p w^2 - q w^2 - r w^2) (p u^2 + q u^2 + r u^2 - 2 r u v - p v^2 - q v^2 + r v^2 - 2 q u w + 2 p v w - p w^2 + q w^2 - r w^2)<br>
+: <br>
+-w (p u^2 + q u^2 + r u^2 - 2 r u v - p v^2 - q v^2 + r v^2 - 2 q u w + 2 p v w - p w^2 + q w^2 - r w^2) (p u^2 + q u^2 - r u^2 + 2 r u v - p v^2 - q v^2 - r v^2 - 2 q u w + 2 p v w - p w^2 + q w^2 + r w^2)
+</p>
+<p>
+The appearance of (i,j,k) in the following list means that f(X(i),X(j)) = X(k):
+</p>
+<p>
+(1,1,84)<br>
+(1,2,7)<br>
+(1,3,1069)<br>
+(1,6,7169)<br>
+(1,8,6553)<br>
+(1,9,200)<br>
+(1,10,10)<br>
+(1,11,522)<br>
+(2,1,3062)<br>
+(2,2,2)<br>
+(2,3,6391)<br>
+(2,6,64)<br>
+(2,9,3680)<br>
+(2,10,42027)<br>
+(3,1,42464)<br>
+(3,2,69)<br>
+(3,3,15316)<br>
+(3,4,3346)<br>
+(3,5,5)<br>
+(3,6,25)<br>
+(3,11,513)<br>
+(4,1,3345)<br>
+(4,2,253)<br>
+(4,3,3)<br>
+(4,4,42465)<br>
+(5,2,264)<br>
+(5,3,68)<br>
+(5,5,42466)<br>
+(5,6,32319)<br>
+(6,1,42467)<br>
+(6,2,4)<br>
+(6,3,394)<br>
+(6,4,42468)<br>
+(6,5,13157)<br>
+(6,6,34207)<br>
+(6,10,226)<br>
+(6,11,4391)<br>
+(7,1,8917)<br>
+(7,2,10405)<br>
+(7,6,7152)<br>
+(7,9,9)<br>
+(8,1,1)<br>
+(8,2,4373)<br>
+(8,3,42469)<br>
+(8,6,2192)<br>
+(9,1,57)<br>
+(9,2,8)<br>
+(9,9,42470)<br>
+(9,10,4052)<br>
+(9,11,514)<br>
+(10,1,4)<br>
+(10,2,75)<br>
+(10,10,42471)<br>
+(10,11,523)<br>
+(11,1,513)<br>
+(11,2,693)<br>
+(11,3,521)<br>
+(11,9,3900)<br>
+(11,10,522)<br>
+(13,2,19776)<br>
+(14,2,19777)<br>
+(15,2,2992)<br>
+(16,2,2993)<br>
+(17,2,19712)<br>
+(18,2,19713)<br>
+(19,2,7219)<br>
+(19,3,222)<br>
+(20,2,35510)<br>
+(20,4,4)<br>
+(20,6,154)<br>
+</p>
+<p>
+The locus of a point X = x : y : z such that f(P,X) lies on this line: at infinity is the bicevian conic of the points X(2) = 1 : 1 : 1 and -p + q + r : p - q + r : p + q - r, given by
+</p>
+<p>
+(p - q + r)(p + q - r) x^2 + 2 p (p - q - r) y z + (cyclic) = 0.
+</p>
+<p>
+This conic, denoted by BC(P), has center q + r : r + p : p+ q and perspector
+</p>
+<p>
+(p - q - r)/(p^2 - q r - r p - p q) : (q - r - p)/(q^2 - r p - p q - q r) : (r - p - q)/(r^2 - p q - q r - r p)
+</p>
+<p>
+If P lies inside the medial triangle, then BC(P) is an ellipse. If P lies on the nine-point circle, then BC(P) is a right hyperbola.
+</p>
+<p>
+The appearance of (i, [name]) in the following list means that BC(X(i)) is the named conic:
+</p>
+<p>
+(2, Steiner inellipse), (3, nine-point circle), (5, bicevian conic of X(2) and X(3), (10, circumellipse of the medial and incentral triangles [see X(34585)], (115, Kiepert circumhyperbola of the medial triangle) (125, Jerabek circumhyperbola of the medial triangle)
+</p>
+<p>
+The appearance of (i, {n<sub>1</sub>, n<sub>2</sub>, ..., n<sub>k</sub>}) in the next list means that BC(X(i)) is the conic that passes through the points: X(n<sub>1</sub>), X(n<sub>2</sub>), ..., X(n<sub>k</sub>):
+</p>
+<p>
+(1, {11, 1145, 1146, 2968, 3756, 4904, 6739, 6741, 7358, 8286, 16613, 38992, 39004, 39050, 40608, 40609})<br>
+(4, {122, 3184, 13611, 39020, 40616})<br>
+(6, {125, 5181, 6388, 7358, 15526, 15595, 17421, 26932, 40618, 40626})<br>
+(9, {11, 1086, 8287, 10427, 13609, 16591, 16592, 16593, 16594, 16595, 16596, 16597, 20343, 21623, 26932, 34846, 38989, 39007, 39063, 40615, 40617, 40622, 40629}<br>
+(37, {244, 1086, 2968, 4858, 5515, 6377, 16586, 17755, 38995, 39040, 40619, 40624, 40626})<br>
+(39, {115, 339, 3124, 5976, 7664, 21208, 36901, 39000, 40619})<br>
+(113, {3, 125, 2088, 3134, 39174, 39987})<br>
+(114, {3, 115, 868, 17423, 34156, 34810, 38997, 39078})<br>
+(116, {3, 118, 354, 2140, 3136, 3789, 5452, 20970, 32664, 39029, 39046, 40586, 40591})<br>
+(118, {3, 116, 3138, 14714, 39006})<br>
+(119, {3, 11, 3139, 34467, 39175})<br>
+(120, {3, 1015, 3140, 3675, 5511, 34160, 39025})<br>
+(122, {3, 4, 133, 800, 1249, 3184, 6523, 14363, 15259, 16253, 20208, 23976, 33549, 33580})<br>
+(123, {3, 56, 429, 12610, 25640, 36103, 40590})<br>
+(124, {3, 65, 117, 478, 3142, 3454, 24220, 34281, 36033, 39037, 39070, 40611, 40613})<br>
+(126, {3, 1084, 3143, 5512, 21906, 34158})<br>
+(127, {3, 32, 132, 427, 3162, 21248, 22391, 39045, 39071, 39086, 40588, 40959})<br>
+(130, {3, 129, 389, 3819, 21243, 34850})<br>
+(132, {3, 127, 3150, 35071, 41172})<br>
+(136, {3, 131, 216, 6389, 10600, 24245, 24246, 31377, 33553, 34833, 34851, 34853, 35067, 37565, 37864})<br>
+(137, {3, 128, 140, 570, 6592, 8562, 15345, 17707, 21975, 23702, 34828, 39171})<br>
+(140, {137, 2972, 6592, 8902, 17433, 35442, 39019})<br>
+(141, {125, 1084, 3124, 6593, 7668, 8054, 15450, 17413, 36213, 38987, 38988, 38989, 38990, 38991, 38992, 38993, 38994, 38995, 38996, 38997, 38998, 39067, 39068, 39075, 39079, 39080, 40601})<br>
+(142, {11, 3119, 6594, 35508, 38991})<br>
+(216, {{136, 338, 2972, 14920, 15526, 34834, 36901, 38987, 40624}})<br>
+(226, {6506, 26932, 31653, 34591, 35072, 39006})<br>
+(230, {441, 868, 35088, 36212, 38987})<br>
+(233, {5522, 15526, 35442, 38997, 39081, 40604})<br>
+(244, {10, 37, 960, 1125, 3739, 4075, 16597, 18589, 19563, 20529, 21249, 31845, 34587, 34851, 35068, 40607})
+</p>
+<p>
+Inverse triangles are introduced in the preamble just before X(42005).  If T<sub>1</sub> and T<sub>2</sub> are triangles and T<sub>1</sub> is non-degenerate (so that its matrix is invertible), then there exists a unique triangle T such that T<sub>1</sub>*T = T<sub>2</sub>, and the solution is T = inverse(T<sub>1</sub>)*T<sub>2</sub>.  Likewise, there exists a unique triangle T such that T*T<sub>1</sub> = T<sub>2</sub>, and the solution is T = T<sub>2</sub>*inverse(T<sub>1</sub>). Following are eight examples:
+</p>
+<p><br>
+
+
+<b>1.  Let P = p : q : r and U = u : v : w.  Let T<sub>1</sub> = cevian(P) and T<sub>2</sub> = cevian(U). The triangle T = A'B'C' such that T<sub>1</sub>*T = T<sub>2</sub> is given by</b>
+</p>
+<p>
+A' = u (v + w) (2 p u + q u + r u + p v + r v + p w + q w) :  v (u + w) (-q u - r u + p v - r v + p w + q w), (u + v) w (-q u - r u + p v + r v + p w - q w)<br>
+B' = u (v + w) (q u - r u - p v - r v + p w + q w) : v (u + w) (q u + r u + p v + 2 q v + r v + p w + q w) : (u + v) w (q u + r u - p v - r v - p w + q w)
+<br>
+C' = u (v + w) (-q u + r u + p v + r v - p w - q w) : -v (u + w) (-q u - r u + p v - r v + p w + q w) : (u + v) w (q u + r u + p v + r v + p w + q w + 2 r w)
+</p>
+<p>
+The locus of a point U = X = x : y : z such that T is perspective to the medial triangle is the cubic given by
+</p>
+<p>
+(p + r) (q + r) y^2 z + (p + q) (q + r) y z^2 + (cyclic) + 2 (p^2 + q^2 + r^2 + 3(q r + r p + p q)) x y z = 0.
+</p>
+<p>
+For P = X(148), this cubic is K185.  For P = X(150), the cubic passes through X(i) for i = 7, 8, 80, 320, 42482.
+</p>
+<p><br>
+
+
+
+<b>2.  Let P = p : q : r and U = u : v : w.  Let T<sub>1</sub>  = cevian(P) and T<sub>2</sub> = cevian(U). The triangle T = A'B'C' such that T*T<sub>1</sub> = T<sub>2</sub> is given by</b>
+</p>
+<p>
+A'  = (q + r) (r v + q w) : (p + r) (-r v + q w) : -(p + q) (-r v + q w)<br>
+B' = (q + r) (-r u + p w) : (p + r) (r u + p w) : -(p + q) (-r u + p w)<br>
+C' = (q + r) (-q u + p v), -(p + r) (-q u + p v), (p + q) (q u + p v)
+</p>
+<p>
+The locus of a point U = X = x : y : z such that T is perspective to the medial triangle is the cubic given by
+</p>
+<p>
+p^2 (r (p+r) (q+r) y^2 z - q (p+q) (q+r) y z^2) + (cyclic) = 0.
+</p>
+<p>
+This cubic passes through X(2) for every point P. For P = X(4), the cubic is K621. The appearance of (i, {n<sub>1</sub>, n<sub>2</sub>, ..., n<sub>k</sub>}) in the next list means that the cubic passes through the points: X(n<sub>1</sub>), X(n<sub>2</sub>), ..., X(n<sub>k</sub>):
+</p>
+<p>
+(1, {1,2,6,37,81,3293,17147,39949,39964})<br>
+(3, {2,3,97,216,577})<br>
+(4, [K621],{2,4,6,24,393,847,2052,6515})<br>
+(5,{2,5,233,31610,36412})<br>
+(6, {2,6,32,39,251,8267})<br>
+(7, {1,2,7,279,1088,1445,36845})<br>
+(8, {2,8,9,78,312,318,329,346})<br>
+(9, {2,9,220,1212,6605})<br>
+(10, {2,10,594,1213,6539})<br>
+(20, {2,20,1249,6616,18623,27382,36413,37669,41084})<br>
+(63, {2,63,394,1214,1812})<br>
+(69, {2,3,69,305,1370,3926,20806})<br>
+(74, {2,74,323,3003,10419,14264,14910,40353})<br>
+(75, {2,10,75,76,310,4043,17135,40004,40005})<br>
+(76, {2,76,141,1502,40016})<br>
+(99, {2,99,523,4590,14061,14089,31614})<br>
+(100, {2,100,650,1252,31615})<br>
+(101, {2,101,6586,14085,23990,31616})<br>
+(110, {2,110,647,13198,23357})<br>
+(190, {2,190,514,1016,6632,14087,27191})<br>
+(192, {2,43,192,6376,41840})<br>
+(193, {2,193,439,6337,6353,18287})<br>
+(239, {2,239,4366,6654,17755})<br>
+(385, {2,385,4027,5976,40820})<br>
+</p>
+<p><br>
+
+
+<b>3.  Let P = p : q : r and U = u : v : w.  Let T<sub>1</sub> = cevian(P) and T<sub>2</sub> = anticevian(U). The triangle T = A'B'C' such that T<sub>1</sub>*T = T<sub>2</sub> is given by</b>
+</p>
+<p>
+A' = u (p u^2 - p u v - q u v + q v^2 - p u w - r u w - q v w - r v w + r w^2)<br>
+ : v (q u^2 - p u v - q u v + p v^2 + p u w + r u w + q v w + r v w - p w^2 - q w^2 - r w^2)<br>
+ : w (r u^2 + p u v + q u v - p v^2 - q v^2 - r v^2 - p u w - r u w + q v w + r v w + p w^2)
+</p>
+<p>
+B' = u (q u^2 - p u v - q u v + p v^2 + p u w + r u w + q v w + r v w - p w^2 - q w^2 - r w^2)<br>
+: v (p u^2 - p u v - q u v + q v^2 - p u w - r u w - q v w - r v w + r w^2)<br>
+: w (-p u^2 - q u^2 - r u^2 + p u v + q u v + r v^2 + p u w + r u w - q v w - r v w + q w^2)
+</p>
+<p>
+C' = u (r u^2 + p u v + q u v - p v^2 - q v^2 - r v^2 - p u w - r u w + q v w + r v w + p w^2)<br>
+: v (-p u^2 - q u^2 - r u^2 + p u v + q u v + r v^2 + p u w + r u w - q v w - r v w + q w^2)<br>
+: w (p u^2 - p u v - q u v + q v^2 - p u w - r u w - q v w - r v w + r w^2)
+</p>
+<p>
+The triangle T is perspective to ABC for all P and U. The perspector, denoted here by g(P,U), is given by
+</p>
+<p>
+g(P,U) = u (r u^2 + p u v + q u v - p v^2 - q v^2 - r v^2 - p u w - r u w + q v w + r v w + p w^2) (q u^2 - p u v - q u v + p v^2 + p u w +
+ r u w + q v w + r v w - p w^2 - q w^2 - r w^2)<br>
+: v (-p u^2 - q u^2 - r u^2 + p u v + q u v + r v^2 + p u w + r u w - q v w - r v w + q w^2) (q u^2 - p u v - q u v + p v^2 + p u w + r u w + q v w +
+   r v w - p w^2 - q w^2 - r w^2)<br>
+: w (r u^2 + p u v + q u v - p v^2 - q v^2 - r v^2 - p u w - r u w + q v w + r v w + p w^2) (-p u^2 - q u^2 - r u^2 + p u v + q u v + r v^2 + p u w + r u w - q v w - r v w + q w^2).
+</p>
+<p>
+For U = P, this perspector is
+</p>
+<p>
+(-p^2 + q^2 - r^2) (p^2 + q^2 - r^2) : (p^2 - q^2 - r^2) (p^2 + q^2 - r^2) : (p^2 - q^2 - r^2) (p^2 - q^2 + r^2)
+</p>
+<p>
+The appearance of (i,j) in the following list means that g(X(i),X(i)) = nX(j):
+</p>
+<p>
+(1,4), (2,2), (3,68), (4,3346), (5,6662), (6,66), (7,42483), (8,6553), (9,6601), (10,596), (19,42483), (37,13476), (39,27375), (57,34546), (63,6504), (65,42844),  (69,6339), (75,2998), (76,42845),  (92,34287), (115,36955), (141,6664), (174,189), (188,8), (216, 42846), (365,7357), (366,7), (508,10405), (509,8048), (556,39694), (1577,15412), (2582,2592), (2583,2593), (4179,27807), (4182,42361), (5374,69)
+</p>
+<p><br>
+
+
+<b>4.  Let P = p : q : r and U = u : v : w.  Let T<sub>1</sub> = cevian(P) and T<sub>2</sub> = anticevian(U). The triangle T A'B'C' such that T*T<sub>1</sub> = T<sub>2</sub> is given by</b>
+</p>
+<p>
+A' = u (p u - q v + r v + q w - r w) : -v (-q u + r u + p v - p w) : -w (q u - r u - p v + p w)<br>
+B' = u (q u - p v + r v - q w) : -v (-p u + r u + q v + p w - r w) : w (-q u + p v - r v + q w)<br>
+C' = u (r u - r v - p w + q w) : v (-r u + r v + p w - q w) : w (p u - q u - p v + q v - r w).
+</p>
+<p>
+The locus of a point U = X = x : y : z for which the anticomplementary triangle is perspective to T is the union of two cubics, given by
+</p>
+<p>
+Cubic 4.1:  p (- p + q + r) y z (y - z) + q (- q + r + p) z x (z - x) + r (- r + p + q) x y (x - y) = 0, and
+</p>
+<p>
+Cubic 4.2:  p x^3 + q y^3 + r z^3 - (r y + q z) y z - (p z + r x) z x - (q x + p y) x y = 0.
+</p>
+<p>
+The appearance  of {i, [name and/or list of points]} in the following list means that for P = X(i), Cubic 4.1 passes through the listed points:
+</p>
+<p>
+{1, K1077, {1,2,8,9,188,236,3161,7028,8056,24150,24151,24152,24153,24154,24155,24156,24157,24158,39121}<br>
+{3, K002, {1,2,3,4,6,9,57,223,282,1073,1249,3341,3342,3343,3344,3349,3350,3351,3352,3356,14481,39162,39163,39164,39165,40989,40990,40991,40992}<br>
+{4, {2,4,20,1249,38253}<br>
+{5, K612, {2,3,5,6,216,343,2165,34853,40678}<br>
+{6, K168, {2,3,6,69,485,486,5374,5408,5409,6337,8770,13388,13389,24245,24246,30556,30557,30558}<br>
+{7, {2,7,144,3160,38254}<br>
+{8, {2,8,145,3161,38255}<br>
+{9, K363, {1,2,7,9,366,1489,3160,7090,13388,13389,14121,19605,40374,41885}<br>
+{10, K345,{1,2,9,10,37,226,281,1214,7952,39131}<br>
+{11, {2,11,100,650,5375}<br>
+{37, {2,10,37,75,6376,16606}<br>
+{39, {2,39,76,141,6374}<br>
+{44, {2,44,214,320,5239,5240,36668,36669}<br>
+{51, {2,51,2979,40588,41378,41379}<br>
+{75, {2,75,192,6376,40027,40598}<br>
+{76, {2,76,194,6374,32746}<br>
+{111, {2,111,14360,15899,38280}<br>
+{113, K489,{2,3,6,74,113,403,1989,3003,3580,14993,34834,36896}<br>
+{114, {2,98,114,230,36899}<br>
+{115, {2,99,115,523,31998}<br>
+{116, {2,101,116,6586,39026}<br>
+{119, {1,2,9,104,119,1737,2006,8609}<br>
+{121, {2,106,121,8610,40595}<br>
+{125, {2,110,125,647,36830}<br>
+{126, {2,111,126,3291,15899}<br>
+{127, {2,112,127,2485,40596}<br>
+{132, {2,132,232,1297,5000,5001,41200,41201}<br>
+{133, {2,4,30,133,1249,1294,1990,3163,16080}<br>
+{140, {2,5,140,216,233,40684}<br>
+{141, K836, {2,3,6,39,141,427,5403,5404,14376,40938}<br>
+{142,, {1,2,9,142,277,1212,4847}<br>
+{178, {2,178,188,236,2090,5430,16015,16016}<br>
+{206, K177, {2,3,6,25,32,66,206,1676,1677,3162,19615,41378,41379}<br>
+{214, K453, {1,2,9,44,80,88,214,519,3911,4370,19618,40594}<br>
+{216, {2,5,216,264,39641,39642}<br>
+{220, {2,220,6600,6604,24152,24153}<br>
+{223, K965, {2,57,174,189,223,557,558,1659,13388,13389,13390,15495,15891,15892,16662,16663,16664,39122}<br>
+{226, {2,63,226,1214,6505,13388,13389}<br>
+{230, {2,114,230,325,5976}<br>
+{233, {2,17,18,95,140,233}<br>
+{236, {2,188,236,1489,7048,41885}<br>
+{239, {2,239,6542,6651,41841}<br>
+{325, {2,325,385,5976,8290}<br>
+{343, {2,343,1993,5408,5409}<br>
+{385, {2,385,7779,8290,39091}<br>
+{389, {2,5,216,389,577,1147,5562,34836}<br>
+{395, {2,299,395,619,30472}<br>
+{396, {2,298,396,618,30471}<br>
+{402, {2,402,1650,14401,38240,42306}<br>
+{442, {1,2,9,21,442,5249,6734,7110,16585,37887,40582,40937}<br>
+{478, {2,56,478,509,2362,8048,13388,13389,16232}<br>
+</p>
+<p>
+The appearance  of {i, [list of points]} in the following list means that for P = X(i), Cubic 4.2 passes through the listed points:
+</p>
+<p>
+{240, {1,2582,2583}<br>
+{403, {125,41077}
+</p>
+<p><br>
+
+
+
+<b>5.  Let P = p : q : r and U = u : v : w.  Let T<sub>1</sub> = anticevian(P) and T<sub>2</sub> = anticevian(U). The triangle T = A'B'C' such that T<sub>1</sub>*T = T<sub>2</sub> is given by</b>
+</p>
+<p>
+A' = -(q + r) (q r u + p r v + p q w) : (p + r) (q r u + p r v - p q w) : (p + q) (q r u - p r v + p q w)<br>
+B' = -2 q r (q + r) (u + w) (q r u + p r v - p q w) : 2 q r (p + r) (u + w) (q r u + p r v + p q w) : -2 q (p + q) r (u + w) (-q r u + p r v + p q w)<br>
+C' = -2 q r (q + r) (u + w) (q r u + p r v - p q w): 2 q r (p + r) (u + w) (q r u + p r v + p q w) : -2 q (p + q) r (u + w) (-q r u + p r v + p q w))
+</p>
+<p><br>
+
+
+<b>6.  Let P = p : q : r and U = u : v : w.  Let T<sub>1</sub> = anticevian(P) and T<sub>2</sub> = anticevian(U). The triangle T = A'B'C' such that T*T<sub>1</sub> = T<sub>2</sub> is given by</b>
+</p>
+<p>
+A' = p (-p + q + r) (r v + q w) : q (p - q + r) (-r u + p w) : (p + q - r) r (-q u + p v) : <br>
+B' = -p (-p + q + r) (-r v + q w) : -q (p - q + r) (r u + p w) : (p + q - r) r (-q u + p v) : <br>
+C' = -p (-p + q + r) (-r v + q w) : -q (p - q + r) (-r u + p w) : (p + q - r) r (q u + p v)
+</p>
+<p>
+The locus of a point P = X = x : y : z such that the triangle T is perspective to the medial triangle is the union of two cubics:
+</p>
+<p>
+u y z (y - z) + v z x (z - x) + w x y (x - y) = 0, and
+</p>
+<p>
+v w (x - y - z) x^2 + w u (y - z - x) y^2 + u v (z - x - y) z^2 = 0.
+</p>
+<p>
+The locus of a point P = X = x : y : z such that the triangle T is perspective to the anticomplementary triangle is the Steiner inellipse, given by
+</p>
+<p>
+x^2 + y^2 + z^2 - 2 y z - 2 z x - 2 x y = 0.
+</p>
+<p>
+The locust of a point U = X = x : y : z such that T is perspective to the anticomplementary triangle is the following cubic:
+</p>
+<p>
+p^2 (r (p + q - r) y^2 z - q (p - q + r) y z^2) + q^2 (p (q + r - p) z^2 x - r (q - r + p) z x^2) + r^2 (q (q + p - q) x^2 y - p (r - p + q) x y^2) = 0.
+</p>
+<p><br>
+
+
+<b>7.  Let P = p : q : r and U = u : v : w.  Let T<sub>1</sub> = anticevian(P) and T<sub>2</sub> = cevian(U). The triangle T = A'B'C'  such that T<sub>1</sub>*T = T<sub>2</sub> is given by</b>
+</p>
+<p>
+A' = u (2 p u + p v - q v + r v + p w + q w - r w) : (p + q - r) v (u + w) : (p - q + r) (u + v) w <br>
+B' = (p + q - r) u (v + w) : v (-p u + q u + r u + 2 q v + p w + q w - r w) : -(p - q - r) (u + v) w<br>
+C' = (p - q + r) u (v + w) : -(p - q - r) v (u + w) : w (-p u + q u + r u + p v - q v + r v + 2 r w)
+</p>
+<p>
+The triangle T is perspective to ABC for all P and U. The perspector if U = P is given by
+</p>
+<p>
+g(P) = p (q + r) (p - q + r) (p + q - r) : q (r + p) (q - r + p) (q + r - p) : r (p + q)(r - p + q) (r + p - q).
+</p>
+<p>
+The appearance of (i,j) in thje following list means that g(X(i)) = X(j):
+</p>
+<p>
+(1,65),  (2,2), (3,5562), (4,64), (5,14978), (6,1843), (7,3062), (8,3680), (9,3059), (10,4647), (11,42547), (13,34296), (14,34295), (20,33893), (37,2667), (39,42548), (57,42549), (65,42550), (66,22262), (67,10417), (69,6391), (75,42027), (76,42551), (99,9293), (100,42552), (115,42553), (141,42554), (188,42017), (190,42555), (216,42556), (668,9267).
+</p>
+<p><br>
+
+
+<b>8.  Let P = p : q : r and U = u : v : w.  Let T<sub>1</sub> = anticevian(P) and T<sub>2</sub> = cevian(U). The triangle T = A'B'C' such that T*T<sub>1</sub> = T<sub>2</sub> is given by</b>
+</p>
+<p>
+A' = -(p - q - r) (r v + q w) : -q (-p + q - r) w : (p + q - r) r v<br>
+B' = -p (p - q - r) w : (p - q + r) (r u + p w) : (p + q - r) r u<br>
+C' = -p (p - q - r) v : -q (-p + q - r) u : (p + q - r) (q u + p v)
+</p>
+<p>
+The triangle T is perspective to ABC for all P and U. The perspector is given by
+</p>
+<p>
+p (- p + q + r) v w : q (p - q + r) w u : r (p + q - r) u v
+</p>
+<p>
+The locus of a point P = X = x : y : z such that T is perspective to the medial triangle is the conic given by
+</p>
+<p>
+u (y - z)(x - y - z) + v (z - x)(y - z - x) + w (x - y)(z - x - y) = 0, or, equivalently,
+</p>
+<p>
+(v - w)(x^2 + y z) + (w - u)(y^2 + z x) + (u - v)(z^2 + x y) = 0.
+</p>
+<p>
+Clearly, this conic passes through the centroid and the vertices of the medial triangle. The appearance of {i,{n<sub>1</sub>, n<sub>2</sub>, ... ,n<sub>k</sub>} in the following list mean that for U = X(i), the conic passes through the points X(n<sub>1</sub>), X(n<sub>2</sub>), ... , X(n<sub>k</sub>):
+</p>
+<p>
+{1,{2,9,37,440,1213,3161,4370,5513,6544,6651,15487,16590,16593,17755,21838,24771,27481,31336,36911,38015,39056,39059,40181,40586,40614,40651,41841}}<br>
+{3,{2,6,216,233,1196,1249,1560,3162,3163,8105,8106,8968,14091,14401,15595,18311,32750,37891,37895,39034,39078,39081,40179,40582,40583,40601,40937,40938,40939,40940,40941,40942,42306}}<br>
+{6,{2,3,39,114,618,619,629,630,641,642,1125,1649,2482,3413,3414,3666,5664,5745,5976,6292,6337,6503,6509,6626,7710,8290,8299,8786,10291,10335,11147,11165,13701,13821,13882,13934,14713,15349,15810,15814,15819,15850,22848,22892,27929,30471,30472,33364,33365,33614,33615,33616,33617,33618,33619,33620,33621,34452,34834,34835,38998,39090,39091,39094,39096,39098,39100,39102,40125,40592,40604,40605,41820,41849}}<br>
+{7,{1,2,223,1212,1214,2582,2583,3160,3752,6505,16585,16586,17056,18641,31534,31535,35110,36905,39035,39046,39047,39066,40611,40612,41771}}<br>
+{11,{2,650,2238,3008,3290,5375,5452,16588,27942,35113,40869}}<br>
+{12,{2,478,5750,17053,34261,39595}}<br>
+{13,{2,396,11127,35444,40578,40581,40696,41888}}<br>
+{14,{2,395,11126,35443,40579,40580,40695,41887}}<br>
+{17,{2,465,10639,11130,23302}}<br>
+{18,{2,466,10640,11131,23303}}<br>
+{31,{2,16584,17023,19557,32664,33568,40597}}<br>
+{32,{2,206,1194,3589,6676,7664,8265,29654,36213,41884}}<br>
+{37,{2,10,120,1211,3452,3789,6376,6552,6554,13466,14434,16589,16594,17793,21530,28651,36912,39028,40598,40603,40609}}<br>
+{38,{2,661,1575,3912,16587,19584,35123,36906,40585}}<br>
+{39,{2,126,141,1368,3739,3741,6338,6374,6389,10472,20339,21246,21248,27854,32746,34021,35073,39080}}<br>
+{45,{2,514,519,3936,6547,6631,9460,16610,27751,35121,40587,40594}}<br>
+{51,{2,3117,3815,11672,33569,40588}}<br>
+{74,{2,3003,5158,9209,36896}}<br>
+{85,{2,142,4000,11019,17073,17113,18635,20206,36908,39063,40593}}<br>
+{92,{2,226,442,1210,3772,7952,18592,20621,39036,40837}}<br>
+{94,{2,623,624,2072,3580,13162,14993,16188,18314}}<br>
+{98,{2,230,441,647,8623,22391,23967,36830,36899,36904,38975,41196,41197}}<br>
+{99,{2,523,524,3291,5159,8542,9165,15899,23991,31655,31998,35087,39061}}<br>
+{196,{2,860,1465,14837,39053}}<br>
+{210,{2,2276,6184,29571,33570,40599,40606}}<br>
+{216,{2,5,132,3767,6523,6708,13567,20207,34836}}<br>
+{253,{2,4,3343,26958,33537,40839}}<br>
+{257,{2,4357,16591,24239,28358,39040,41886}}<br>
+{269,{2,5437,14986,40183,40194}}<br>
+{290,{2,511,23878,24206,39058}}<br>
+{292,{2,1966,3836,9470,19564,24325}}<br>
+{308,{2,626,3934,39076,39082}}<br>
+{311,{2,343,639,640,1209,7746,11585,31842,34853}}<br>
+{319,{2,3647,5325,19862,28606,30563}}<br>
+{330,{2,75,3840,20258,20343,34832}}<br>
+{371,{2,615,5408,10962,24245}}<br>
+{372,{2,590,5409,10960,24246}}<br>
+{648,{2,30,525,4550,9410,14918,16253,39062,42426}}<br>
+{662,{2,14838,16579,35466,39054}}<br>
+{664,{2,522,527,10001,15346}}<br>
+{694,{2,325,3005,3229,6682,19602,25666,35077,39092}}<br>
+{846,{2,239,4988,10026,35085}}<br>
+{1225,{2,635,636,21975,31843,37452,37636}}<br>
+{1341,{2,13636,39023,39068,40989,40990}}<br>
+{1501,{2,6679,7792,19576,40368,40377}}<br>
+{1978,{2,3835,3948,20340,20530,21250}}<br>
+{2006,{2,908,1577,1737,17057,36909,36914}}<br>
+{2415,{2,8,11530,16602,21129,24151,30827}}<br>
+{2481,{2,518,3826,4762,33675}}<br>
+{3003,{2,113,5309,15760,37648}}<br>
+{3108,{2,6665,10691,31128,34573}}<br>
+{4554,{2,2886,4885,20335,34852}}<br>
+</p>
+<p>
+The locus of a point U = X = x : y : z such that T is perspective to the medial triangle is the circumconic given by p y z + q z x + r x y = 0.
+</p>
+<p><br>
+
+
+The triangle sum, T<sub>1</sub> + T<sub>2</sub> of two arbitrary triangles T<sub>1</sub> and T<sub>2</sub> is defined in the preamble just before X(42285). The two distributive laws hold:; i.e., if T is a triangle, then
+</p>
+<p>
+T*(T<sub>1</sub> + T<sub>2</sub>) = T*T<sub>1</sub> + T*T<sub>2</sub>) <br>
+(T<sub>1</sub> + T<sub>2</sub>)*T = (T<sub>1</sub> + T*T<sub>2</sub>)*T
+</p>
+<p>
+For arbitrary points P and U, the product triangle cevian(P)*anticevian(U) is perspective to anticevian(U)*cevian(P), and the perspector is the P-Ceva conjugate of U.
+</p>
+<p>
+The product A'B'C' = cevian(P)*cevian(U)  is given by<br>
+A' = (q u + r u + q v + r w) : r v (u + w) : q w (u + v)<br>
+B' = u (q u + r u + q v + r w) : r v (u + w) : q w (u + v)<br>
+C' = q u (v + w) : p v (u + w) : w (p u + q v + p w + q w)
+</p>
+<p>
+In particular, the square of cevian(P) is given by<br>
+ A' = p (p q + q^2 + p r + r^2) : q r (p + r) : q r (p + q) :<br>
+B' = p r (q + r) : q (p^2 + p q + q r + r^2) : p r (p + q) :<br>
+C' = p q (q + r) : p q (p + r) : r (p^2 + q^2 + p r + q r)
+</p>
+<p>
+<hr class="end-preamble">
+</div>
+<!-- preamble end -->
+
+
+<br>
+<br>
+<!-- End preamble -->
+
+

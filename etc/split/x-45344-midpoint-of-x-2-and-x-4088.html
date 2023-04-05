@@ -1,0 +1,216 @@
+<h3 id="X45344">X(45344) = MIDPOINT OF X(2) AND X(4088) </h3>
+Barycentrics    (b - c)*(a^3 - 4*a*b^2 + 3*b^3 - 7*a*b*c + 4*b^2*c - 4*a*c^2 + 4*b*c^2 + 3*c^3) : :
+<b><br>
+X(45344) = X[3241] - 3 X[14432], 2 X[4088] + X[4458], X[4707] - 3 X[19875], 3 X[14430] - X[44553]
+</b>
+<p>
+X(45344) lies on these lines: {2, 4088}, {514, 31149}, {522, 14392}, {2785, 3679}, {3241, 14432}, {3738, 30700}, {3807, 32041}, {4122, 4948}, {4522, 4762}, {4707, 19875}, {4728, 28147}, {4778, 31131}, {4800, 28161}, {14430, 44553}
+</p>
+<p>
+X(45344) = midpoint of X(i) and X(j) for these {i,j}: {2, 4088}, {4122, 4948}<br>
+X(45344) = reflection of X(4458) in X(2)<br>
+X(45344) = anticomplement of X(45668)<br>
+</p>
+
+
+
+
+
+
+
+<!-- preamble start -->
+<header class="triheader">
+<img src="leftri.svg" style="height:30px" alt="leftri">
+<p class="preamble-title">
+Inverse triangles and anti- triangles: X(45345)-X(45656)
+</p>
+<img src="rightri.svg" style="height:30px" alt="rightri">
+</header>
+<div class="preamble-sect">
+<p>
+This preamble and centers X(45345)-X(45656) were contributed by C&eacute;sar Eliud Lozada, October 30, 2021.
+</p>
+<p>Inverse triangles were introduced by Peter Moses in the preamble just before <a href="ETCPart22.html#X42005">X(42005)</a> with more or less these terms: <i>Suppose that T = A'B'C' is a triangle with vertices A', B', C' represented in normalized barycentric coordinates. Let M be the matrix representation of A'B'C', and let M<sup>-1</sup> denote the inverse of M. Then the rows of M<sup>-1</sup>, interpreted as vertices of a triangle T<sup>-1</sup>, define the inverse triangle of A'B'C'</i>.</p>
+<p>Matrices M and  M<sup>-1</sup> algebraically behave as expected, it is to say, products of matrices M.M<sup>-1</sup> =  M<sup>-1</sup>.M = (3x3)-identity matrix, which represents ABC. Then it should be reasonable to expect that triangles T-of-T<sup>-1</sup> and T<sup>-1</sup>-of-T should be both ABC, in other words, that T<sup>-1</sup> is the anti-triangle-of-T and vice-versa, but actually, this only occurs when T and ABC are similar or homothetic and, in both cases, T ' and T are homothetic triangles.</p>
+<p>The following properties can be deduced: </p>
+<ul>
+<li style="padding-bottom:10px">If T'=A'B'C' is homothetic to ABC, with homothetic center H = x : y: z, and such that |HA'|/|HA| = |HB'|/|HB| = |HC'|/|HC| = constant = &lambda;,  then T" = A"B"C", the inverse triangle of T', has A-vertex
+<p>&emsp;&emsp;A" = y+z+&lambda;*x : (&lambda;-1)*y : (&lambda;-1)*z, which implies that |HA"| = (1/&lambda;)*|HA| = (1/&lambda;<sup>2</sup>)*HA'</p>
+and cyclically for B" and C".</li>
+<li style="padding-bottom:10px">If T'=A'B'C' and ABC are homothetic triangles (parallel sides), with homothetic center H, and T"=A"B"C" is the inverse triangle of T', then HA'*HA" = HA<sup>2</sup> and H is the homothetic center of T' and T".</li>
+
+<li>If T'=A'B'C' and ABC are similar triangles (non-parallel, proportional sides), with center of similitude (or equicenter) S, and T"=A"B"C" is the inverse triangle of T', then SA'*SA" = SA<sup>2</sup> and S is the homothetic center of T' and T".</li>
+</ul>
+<p>Because of the preceeding, inverse triangles allow to determine the anti-triangles of triangles T similar or homothetic to ABC. Similar triangles to ABC in the <a href="IndexOfTrianglesReferencedInETC.html">index of triangles</a> are:  (1st and 6th Brocard, inner-Garcia, orthocentroidal, 1st orthosymmedial and 1st and 2nd Parry) and homothetic triangles are:
+<div style="padding-left:20px">(ABC-X3 reflections, anticomplementary, Aquila, Ara, 1st Auriga, 2nd Auriga, 5th Brocard, 2nd circumperp tangential, Ehrmann-mid, Euler, outer-Garcia, Gemini 107, Gemini 109, Gemini 110, Gemini 111, Gossard, inner-Grebe, outer-Grebe, infinite-altitude, Johnson, inner-Johnson, outer-Johnson, 1st Johnson-Yff, 2nd Johnson-Yff, 1st Kenmotu-centers, 2nd Kenmotu-centers, 1st Kenmotu-free-vertices, 2nd Kenmotu-free-vertices, Lucas(-1) homothetic, Lucas(+1) homothetic, Mandart-incircle, medial, 5th mixtilnear, 3rd tri-squares-central, 4th tri-squares-central, X3-ABC reflections, 1st Vijay-Paasche-Hutson, 3rd Vijay-Paasche-Hutson, 4th Vijay-Paasche-Hutson, 6th Vijay-Paasche-Hutson, 8th Vijay-Paasche-Hutson, 13th Vijay-Paasche-Hutson, 14th Vijay-Paasche-Hutson, 19th Vijay-Paasche-Hutson, 29th Vijay-Paasche-Hutson, 31th Vijay-Paasche-Hutson, Vijay-Paasche-midpoints, inner-Yff, outer-Yff, inner-Yff tangents, outer-Yff tangents).</div>
+<p>New anti-triangles in ETC, found from definition of inverse-triangles, are showed in the following table:</p>
+
+
+<table id="_45345_">
+<caption>45345</caption>
+  <tr>
+    <td style="width:13%;" class="textcenter"><b>Triangle T</b></td>
+    <td style="width:34%;" class="textleft"><b>anti-triangle of T (T<sup>-1</sup>)</b><br>
+A-vertex barycentric coordinates</td>
+    <td style="width:0%;" class="textcenter"></td>
+    <td style="width:13%;" class="textcenter"><b>Triangle T</b></td>
+    <td class="textleft"><b>anti-triangle of T (T<sup>-1</sup>)</b><br>
+A-vertex barycentric coordinates</td>
+  </tr>
+  <tr>
+    <td class="textcenter">ABC-X3 reflections</td>
+    <td class="textleft">ABC-X3 reflections</td>
+    <td class="textcenter"></td>
+    <td class="textcenter">1st Kenmotu-centers</td>
+    <td class="textleft"><b>1st anti-Kenmotu-centers</b><br>
+-(b^2+c^2+2*S) : b^2 : c^2</td>
+  </tr>
+  <tr>
+    <td class="textcenter">1st Auriga</td>
+    <td class="textleft"><b>1st anti-Auriga</b><br>
+S*sqrt(R*(4*R+r))*a+(a+b+c)*((b^2+c^2)*a-(b+c)*(b-c)^2) :<br>
+(S*sqrt(R*(4*R+r))-b*(a+b+c)*(a-b+c))*b :<br>
+(S*sqrt(R*(4*R+r))-c*(a+b+c)*(a+b-c))*c</td>
+    <td class="textcenter"></td>
+    <td class="textcenter">2nd Kenmotu-centers</td>
+    <td class="textleft"><b>2nd anti-Kenmotu-centers</b><br>
+-(b^2+c^2-2*S) : b^2 : c^2</td>
+  </tr>
+  <tr>
+    <td class="textcenter">2nd Auriga</td>
+    <td class="textleft"><b>2nd anti-Auriga</b><br>
+-S*sqrt(R*(4*R+r))*a+(a+b+B3)*(a*(b^2+c^2)-(b+c)*(b-c)^2) : <br>
+(-S*sqrt(R*(4*R+r))+b*(a+b+c)*(a-b+c))*b :<br>
+(-S*sqrt(R*(4*R+r))+c*(a+b+c)*(a-c+b))*c
+    <td class="textcenter"></td>
+    <td class="textcenter">1st Kenmotu-free-vertices</td>
+    <td class="textleft"><b>1st anti-Kenmotu-free-vertices</b><br>
+(SA+S)*(SB+SC+2*S) : (SB-S)*b^2 : (SC-S)*c^2</td>
+  </tr>
+  <tr>
+    <td class="textcenter">Ehrmann-mid</td>
+    <td class="textleft"><b>anti-Ehrmann-mid</b><br>
+3*a^2*(-a^2+b^2+c^2) :<br>
+2*a^4-(b^2+4*c^2)*a^2-(b^2-c^2)*(b^2+2*c^2) :<br>
+2*a^4-(c^2+4*b^2)*a^2-(c^2-b^2)*(c^2+2*b^2)</td>
+    <td class="textcenter"></td>
+    <td class="textcenter">2nd Kenmotu-free-vertices</td>
+    <td class="textleft"><b>2nd anti-Kenmotu-free-vertices</b><br>
+(SA-S)*(SB+SC-2*S) : (SB+S)*b^2 : (SC+S)*c^2</td>
+  </tr>
+  <tr>
+    <td class="textcenter">inner-Garcia</td>
+    <td class="textleft"><b>anti-inner-Garcia</b><br>
+-(a^2-b^2+b*c-c^2)*a^2 : <br>
+(a*(a*b-c^2)-(b^2-c^2)*(b-c))*b :<br>
+(a*(a*c-b^2)-(c^2-b^2)*(c-b))*c</td>
+    <td class="textcenter"></td>
+    <td class="textcenter">Lucas(-1) homothetic</td>
+    <td class="textleft"><b>anti-Lucas(-1) homothetic</b><br>
+S*(2*S^2-(SA+SW)*S+SA^2) :<br>
+b^2*(2*S^2-(SB+SW)*S+SB^2) :<br>
+c^2*(2*S^2-(SC+SW)*S+SC^2)</td>
+  </tr>
+  <tr>
+    <td class="textcenter">outer-Garcia</td>
+    <td class="textleft">outer-Garcia</td>
+    <td class="textcenter"></td>
+    <td class="textcenter">Lucas(+1) homothetic</td>
+    <td class="textleft"><b>anti-Lucas(+1) homothetic</b><br>
+-S*(2*S^2+(SA+SW)*S+SA^2) : <br>
+b^2*(2*S^2+(SB+SW)*S+SB^2) :  <br>
+c^2*(2*S^2+(SC+SW)*S+SC^2)</td>
+  </tr>
+  <tr>
+    <td class="textcenter">Gemini 107</td>
+    <td class="textleft"><b>anti-Gemini 107</b><br>
+-1 : 2 : 2</td>
+    <td class="textcenter"></td>
+    <td class="textcenter">1st Parry</td>
+    <td class="textleft"><b>1st anti-Parry</b><br>
+-(SA-SB)*(SA-SC)*(2*S^2-(SB-SC)^2) :<br>
+b^2*(SA-SB)*(SB-SC)*(2*SW-3*SC) :<br>
+c^2*(SA-SC)*(SC-SB)*(2*SW-3*SB)</td>
+  </tr>
+  <tr>
+    <td class="textcenter">Gemini 109</td>
+    <td class="textleft"><b>anti-Gemini 109</b><br>
+-3 : 2 : 2</td>
+    <td class="textcenter"></td>
+    <td class="textcenter">2nd Parry</td>
+    <td class="textleft"><b>2nd anti-Parry</b><br>
+2*S^2*(5*S^2-6*R^2*(3*SA-SW)+5*SA^2-2*SB*SC-2*SW^2)/(3*SA-SW) :<br>
+(S^2-3*SA*SB)*b^2 :<br>
+(S^2-3*SA*SC)*c^2</td>
+  </tr>
+  <tr>
+    <td class="textcenter">Gemini 110</td>
+    <td class="textleft"><b>anti-Gemini 117</b><br>
+-3 : 1 : 1</td>
+    <td class="textcenter"></td>
+    <td class="textcenter">3rd tri-squares central</td>
+    <td class="textleft"><b>3rd anti-tri-squares central</b><br>
+-b^2-c^2-3*S : b^2+S : c^2+S</td>
+  </tr>
+  <tr>
+    <td class="textcenter">Gemini 111</td>
+    <td class="textleft"><b>anti-Gemini 111</b><br>
+2 : 1 : 1</td>
+    <td class="textcenter"></td>
+    <td class="textcenter">4th tri-squares central</td>
+    <td class="textleft"><b>4th anti-tri-squares central</b><br>
+-b^2-c^2+3*S : b^2-S : c^2-S</td>
+  </tr>
+  <tr>
+    <td class="textcenter">Gossard</td>
+    <td class="textleft">Gossard</td>
+    <td class="textcenter"></td>
+    <td class="textcenter">X(3)-ABC-reflections</td>
+    <td class="textleft"><b>anti-X(3)-ABC-reflections</b><br>
+3*S^2-SB*SC : S^2-SA*SC : S^2-SA*SB</td>
+  </tr>
+  <tr>
+    <td class="textcenter">Johnson</td>
+    <td class="textleft">Johnson</td>
+    <td class="textcenter"></td>
+    <td class="textcenter">inner-Yff</td>
+    <td class="textleft"><b>anti-inner-Yff</b><br>
+(a^4-2*(b^2+c^2)*a^2 - 2*(b+c)*b*c*a+(b^2-c^2)^2)/(2*a*b*c) : b : c</td>
+  </tr>
+  <tr>
+    <td class="textcenter">inner-Johnson</td>
+    <td class="textleft">2nd Johnson-Yff</td>
+    <td class="textcenter"></td>
+    <td class="textcenter">outer-Yff</td>
+    <td class="textleft"><b>anti-outer-Yff</b><br>
+(a^4-2*(b^2+c^2)*a^2 + 2*(b+c)*b*c*a+(b^2-c^2)^2)/(2*a*b*c) : -b : -c</td>
+  </tr>
+  <tr>
+    <td class="textcenter">outer-Johnson</td>
+    <td class="textleft">1st Johnson-Yff</td>
+    <td class="textcenter"></td>
+    <td class="textcenter">inner-Yff tangents</td>
+    <td class="textleft">outer-Yff tangents</td>
+  </tr>
+  <tr>
+    <td class="textcenter">1st Johnson-Yff</td>
+    <td class="textleft">outer-Johnson</td>
+    <td class="textcenter"></td>
+    <td class="textcenter">outer-Yff tangents</td>
+    <td class="textleft">inner-Yff tangents</td>
+  </tr>
+  <tr>
+    <td class="textcenter">2nd Johnson-Yff</td>
+    <td class="textleft">inner-Johnson</td>
+    <td class="textcenter"></td>
+    <td class="textcenter"></td>
+    <td class="textleft"></td>
+  </tr>
+</table>
+
+<hr class="end-preamble">
+</div>
+<!-- preamble end -->
+
+
+

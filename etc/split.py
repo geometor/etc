@@ -2,6 +2,7 @@ import re
 import os
 import glob
 
+
 def slugify(text):
     return re.sub(r'\W+', '-', text.lower()).strip('-')
 
