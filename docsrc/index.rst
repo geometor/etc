@@ -1,3 +1,6 @@
+:navigation: header footer
+:order: 0
+
 etc
 ===
 
@@ -16,6 +19,7 @@ recent logs
    :maxdepth: 2
 
    mission/index.rst
+   centers/index.rst
    usage/index.rst
    modules/index.rst
    logs.rst

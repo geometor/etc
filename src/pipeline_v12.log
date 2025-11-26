@@ -1,0 +1,54 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/phi/PROJECTS/geometor/etc/src/geometor/etc/__main__.py", line 83, in <module>
+    main()
+    ~~~~^^
+  File "/home/phi/PROJECTS/geometor/etc/src/geometor/etc/__main__.py", line 22, in main
+    ingest_folder(args.input, args.split_dir)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/phi/PROJECTS/geometor/etc/src/geometor/etc/ingest.py", line 83, in ingest_folder
+    split_html_file(file_path, output_folder)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/phi/PROJECTS/geometor/etc/src/geometor/etc/ingest.py", line 31, in split_html_file
+    html_content = file.read()
+  File "<frozen codecs>", line 325, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd3 in position 0: invalid continuation byte
+Splitting HTML files from /home/phi/PROJECTS/geometor/etc/etc/source to /home/phi/PROJECTS/geometor/etc/etc/split...
+Processing: /home/phi/PROJECTS/geometor/etc/etc/source/ETC.html
+  -> Split into 1010 files.
+Processing: /home/phi/PROJECTS/geometor/etc/etc/source/ETCPart10.html
+  -> Split into 2001 files.
+Processing: /home/phi/PROJECTS/geometor/etc/etc/source/ETCPart11.html
+  -> Split into 2001 files.
+Processing: /home/phi/PROJECTS/geometor/etc/etc/source/ETCPart12.html
+  -> Split into 2001 files.
+Processing: /home/phi/PROJECTS/geometor/etc/etc/source/ETCPart13.html
+  -> Split into 2001 files.
+Processing: /home/phi/PROJECTS/geometor/etc/etc/source/ETCPart14.html
+  -> Split into 2001 files.
+Processing: /home/phi/PROJECTS/geometor/etc/etc/source/ETCPart15.html
+  -> Split into 2001 files.
+Processing: /home/phi/PROJECTS/geometor/etc/etc/source/ETCPart16.html
+  -> Split into 2001 files.
+Processing: /home/phi/PROJECTS/geometor/etc/etc/source/ETCPart17.html
+  -> Split into 2001 files.
+Processing: /home/phi/PROJECTS/geometor/etc/etc/source/ETCPart18.html
+  -> Split into 2001 files.
+Processing: /home/phi/PROJECTS/geometor/etc/etc/source/ETCPart19.html
+  -> Split into 2001 files.
+Processing: /home/phi/PROJECTS/geometor/etc/etc/source/ETCPart2.html
+  -> Split into 2001 files.
+Processing: /home/phi/PROJECTS/geometor/etc/etc/source/ETCPart20.html
+  -> Split into 2001 files.
+Processing: /home/phi/PROJECTS/geometor/etc/etc/source/ETCPart21.html
+  -> Split into 2001 files.
+Processing: /home/phi/PROJECTS/geometor/etc/etc/source/ETCPart22.html
+  -> Split into 2001 files.
+Processing: /home/phi/PROJECTS/geometor/etc/etc/source/ETCPart23.html
+  -> Split into 2001 files.
+Processing: /home/phi/PROJECTS/geometor/etc/etc/source/ETCPart24.html
+  -> Split into 2001 files.
+Processing: /home/phi/PROJECTS/geometor/etc/etc/source/ETCPart25.html
+  -> Split into 2001 files.
+Processing: /home/phi/PROJECTS/geometor/etc/etc/source/ETCPart26.html
