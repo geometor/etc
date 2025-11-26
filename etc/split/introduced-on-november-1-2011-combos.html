@@ -1,0 +1,57 @@
+<h3>Introduced on November 1, 2011: Combos </h3>
+<p>
+Suppose that P and U are finite points having normalized barycentric coordinates (p,q,r) and (u,v,w). (Normalized means that p + q + r = 1 and u + v + w = 1.) Suppose that f = f(a,b,c) and g = g(a,b,c) are nonzero homogeneous functions having the same degree of homogeneity.  Let x = fp + gu, y = fq + gv, z = fr + gw. <b>The (f,g) combo of P and U, denoted by f*P + g*U, is introduced here as the point X = x : y : z (homogeneous barycentric coordinates);
+</b>
+the normalized barycentric coordinates of X are (kx,ky,kz), where k=1/(x+y+z).
+</p>
+<p>
+<b>Note 1.</b> If P and U are given by normalized trilinear coordinates (instead of barycentric), then f*P + g*U has homogeneous trilinears fp+gu : fq+gv : fr+gw, which is symbolically identical to the homogenous barycentrics for f*P + g*U. The normalized trilinear coordinates for X are (hx,hy,hz), where h=2*area(ABC)/(ax + by + cz).
+</p>
+<p>
+<b>Note 2.</b> The definition of combo readily extends to finite sets of finite points. In particular, the (f,g,h) combo of P = (p,q,r), U = (u,v,w), J = (j,k,m) is given by fp + gu + hj : fq + gv + hk : fr + gw + hm and denoted by f*P + g*U + h*J.
+</p>
+<p>
+<b>Note 3.</b> f*P + g*U is collinear with P and U, and its {P,Q}-harmonic conjugate is fp - gu : fq - gv : fr - gw.
+</p>
+<p>
+<b>Note 4.</b> Suppose that f,g,h are homogeneous symmetric functions all of the same degree of homogeneity, and suppose that X, X', X" are triangle centers. Then f*X + g*X' + h*X'' is a triangle         center.
+</p>
+<p>
+<b>Note 5.</b> Suppose that X, X', X'', X''' are triangle centers and X', X'', X''' are not collinear. Then there exist f,g,h as in Note 4 such that X = f*X' + g*X'' + h*X'''.  That is, loosely speaking, every triangle center is a linear combination of any other three noncollinear triangle centers.
+</p>
+<p>
+<b>Note 6.</b> Continuing from Note 5, examples of f,g,h are conveniently given using Conway symbols for a triangle ABC with sidelengths a,b,c. Conway symbols and certain classical symbols are
+identified here:
+</p>
+<p>
+S = 2*area(ABC)<br>
+S<sub>A</sub> = (b<sup>2</sup> + c<sup>2</sup> - a<sup>2</sup>)/2 = bc cos A<br>
+S<sub>B</sub> = (c<sup>2</sup> + a<sup>2</sup> - b<sup>2</sup>)/2 = ca cos B<br>
+S<sub>C</sub> = (a<sup>2</sup> + b<sup>2</sup> - c<sup>2</sup>)/2 = ab cos C<br>
+S<sub>&omega;</sub> = S cot &omega;<br>
+s = (a + b + c)/2<br>
+s<sub>a</sub> = (b + c - a)/2<br>
+s<sub>b</sub> = (c + a - b)/2<br>
+s<sub>c</sub> = (a + b - c)/2<br>
+r = inradius = S/(a + b + c)<br>
+R = circumradius = abc/(2S)<br>
+cot(&omega;) = (a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup>)/(2S), where &omega; is the Brocard angle
+</p>
+<p>
+<b>Note 7.</b> The definition of combo along with many examples were developed by Peter Moses prior to November 1, 2011. After that combos have been further developed by Peter Moses, Randy Hutson, and Clark Kimberling.
+</p>
+<p>
+Examples of two-point combos:<br>
+<b>X(175) = 2s*X(1) - (r + 4R)*X(7)<br>X(176) = 2s*X(1) + (r + 4R)*X(7)<br>X(481) = s*X(1) - (r + 4R)*X(7)<br>X(482) = s*X(1) + (r + 4R)*X(7)
+</b></p>
+<p>
+Examples of three-point combos: see below at X(1), X(2), etc.
+</p>
+<p>
+<b>Note 8.</b> Suppose that T is a (central) triangle with vertices A',B',C' given by normalized barycentrics. Then T is represented by a 3x3 matrix with row sums equal to 1. Let NT denote the set of these matrices and let * denote matrix multiplication. Then NT is closed under *. Also, NT is closed under matrix inversion, so that (NT, *) is a group. Once normalized, any central T can be used to produce triangle centers as combos of the form Xcom(nT); see the preambles just before X(3663) and X(3739).
+</p>
+<hr class="gray">
+
+<hr>
+
+

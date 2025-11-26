@@ -1,0 +1,43 @@
+<h3>Introduced on March 21, 2015:  Shinagawa coefficients for triangle centers on the Euler line</h3>
+Suppose that X is a triangle center given by barycentric coordinates f(a,b,c) : f(b,c,a) : f(c,a,b).  The Shinagawa coefficients of X are the functions G(a,b,c) and H(a,b,c) such that
+
+<p>
+f(a,b,c) = G(a,b,c)*S<sup>2</sup> + H(a,b,c)*S<sub>B</sub>S<sub>C</sub>.
+</p>
+<p>
+For many choices of X, G(a,b,c) and H(a,b,c) are conveniently expressed in terms of the following:
+</p>
+<p>
+E = (S<sub>B</sub> + S<sub>C</sub>)(S<sub>C</sub> + S<sub>A</sub>)(S<sub>A</sub> + S<sub>B</sub>)/S<sup>2</sup>, so that E = (abc/S)<sup>2</sup> = 4R<sup>2</sup>
+<br>
+F = S<sub>A</sub>S<sub>B</sub>S<sub>C</sub>/S<sup>2</sup>, so that F = (a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup>)/2 - 4R<sup>2</sup> = S<sub>&omega;</sub> - 4R<sup>2</sup>
+</p>
+<p>
+Examples:<br>
+X(2) has Shinagawa coefficients (1, 0); i.e., X(2) = 1*S<sup>2</sup> + 0*S<sub>B</sub>S<sub>C</sub><br>
+X(3) has Shinagawa coefficients (1, -1)<br>
+X(4) has Shinagawa coefficients (0, 1)<br>
+X(5) has Shinagawa coefficients (1, 1)<br>
+X(23) has Shinagawa coefficients (E + 4F, -4E - 4F)<br>
+X(1113) has Shinagawa coefficients (R - |OH|, -3R + |OH|)<br>
+</p>
+<p>
+A cyclic sum notation, $...$, is introduced here especially for use with Shinagawa coefficients.  For example, $aS<sub>B</sub>S<sub>C</sub>$ abbreviates aS<sub>B</sub>S<sub>C</sub> + bS<sub>C</sub>S<sub>A</sub> + cS<sub>A</sub>S<sub>B</sub>.
+</p>
+<p>
+Example:  X(21) has Shinagawa coefficients ($aS<sub>A</sub>$, abc - $aS<sub>A</sub>$)
+</p>
+<p>
+If a point X has Shinagawa coefficients (u,v) where u and v are real numbers (i.e, G(a,b,c) and H(a,b,c) are constants), then the segment joining X and X(2) is given by |GX| = 2v|GO|/(3u + v), where |GO| = (E - 8F)<sup>1/2</sup>/6.  Then the equation |GX| = 2v|GO|/(3u + v) can be used to obtain these combos:
+</p>
+<p>
+X = [(u + v)/2]*X(2) - (v/3)*X(3)<br>
+X = u*X(2) + (v/3)*X(4)<br>
+X = u*X(3) + [(u + v)/2]*X(4).
+</p>
+<p>
+The function F is also given by these identities: <br>
+F = (4R<sup>2</sup> - 36|GO|<sup>2</sup>)/8  and  F = R<sup>2</sup>( 1 - J<sup>2</sup>)/2, where J = |OH|/R.
+</p>
+<hr class="gray">
+

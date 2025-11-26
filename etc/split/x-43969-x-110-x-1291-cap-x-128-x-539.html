@@ -1,0 +1,331 @@
+<h3 id="X43969">X(43969) = X(110)X(1291)&cap;X(128)X(539) </h3>
+Barycentrics    a^2*(a - b)*(a + b)*(a - c)*(a + c)*(a^2 - b^2 - b*c - c^2)*(a^2 - b^2 + b*c - c^2)*(2*a^8 - 4*a^6*b^2 + 3*a^4*b^4 - 2*a^2*b^6 + b^8 - 4*a^6*c^2 + 2*a^2*b^4*c^2 - 4*b^6*c^2 + 3*a^4*c^4 + 2*a^2*b^2*c^4 + 6*b^4*c^4 - 2*a^2*c^6 - 4*b^2*c^6 + c^8) : :
+<b><br>
+X(43969) = 3 X[110] + X[1291], X[1157] + 3 X[43572], X[14979] - 5 X[15034]
+</b>
+<p>
+See Antreas Hatzipolakis, Elias M. Hagos and Peter Moses, <a href="https://groups.io/g/euclid/message/1834"> <b>euclid 1834</b></a>.
+</p>
+<p>
+X(43969) lies on these lines:  {110, 1291}, {128, 539}, {186, 323}, {1157, 43572}, {2623, 35324}, {14979, 15034}, {15537, 43586}
+</p>
+<p>
+X(43969) = X(2618)-isoconjugate of X(15401) <br>
+X(43969) = crosspoint of X(10411) and X(18315) <br>
+X(43969) = crosssum of X(12077) and X(15475) <br>
+X(43969) = crossdifference of every pair of points on line {10413, 14582} <br>
+X(43969) = barycentric product X(i)*X(j) for these {i,j}: {128, 18315}, {231, 10411}, {539, 14590} <br>
+X(43969) = barycentric quotient X(i)/X(j) for these {i,j}: {128, 18314}, {231, 10412}, {539, 14592}, {14586, 15401}, {14591, 2383} <br>
+</p>
+
+
+
+
+
+<!-- preamble start -->
+<header class="triheader">
+<img src="leftri.svg" style="height:30px" alt="leftri">
+<p class="preamble-title">
+Points associated with Vijay parallel transforms: X(43970)-X(44010)
+</p>
+<img src="rightri.svg" style="height:30px" alt="rightri">
+</header>
+<div class="preamble-sect">
+<p>
+This preamble is contributed by Clark Kimberling (July 18, 2021), based on notes from Dasari Naga Vijay Krishna, July 13, 2021.
+<p>
+
+Let U = u : v : w be a point in the plane of a triangle ABC. Let<br>
+Ia = line through U parallel to line BC, and define Ib and Ic cyclically;<br>
+Ab = Ic&cap;BC, and define Bc and Ca cyclically;<br>
+Ac = Ic&cap;BC, and define Ba and Cb cyclically;<br>
+Ua = reflection of U in line BC, and define Ub and Uc cyclically;<br>
+Pa = line through Ua parallel to the line BC, and define pb and pc cyclically,<br>
+A'B'C' = anticomplementary triangle of ABC;<br>
+A'b=AbBa&cap;C'A', and define B'c and C'a cyclically;<br>
+A'c=AcAa&cap;B'A', and define B'a and C'b cyclically.
+</p>
+<p>
+Define 9 points based on the preceding constructions as follows:
+</p>
+<p>
+A1 = BcCa&cap;CbBa , B1 = CaAb&cap;AcCb, C1 = AbBc&cap;BaAc<br>
+A2 = AbBc&cap;AcCb, B2 = BcCa&cap;BaAc, C2 = CaAb&cap;CbBa<br>
+A3 = AbCb&cap;AcBc, B3 = AcBc&cap;BaCa, C3 = BaCa&cap;AbCb<br>
+A4 = B'cB'a&cap;C'aC'b, B4 = C'aC'b&cap;A'bA'c, C4 = A'bA'c&cap;B'cB'a<br>
+A5 = BA'c&cap;CA'b, B5 = CB'a&cap;AB'c, C5 = AC'b&cap;BC'a<br>
+A6 = AbA'c&cap;AcA'b, B6 = BcB'a&cap;BaB'c, C6 = CaC'b&cap;CbC'a<br>
+A7 = BC4&cap;CB4, B7 = AC4&cap;CA4 , C7 = AB4&cap;BA4<br>
+A8 = AbC4&cap;AcB4, B8 = BcA4&cap;BaC4  , C8 = CaB4&cap;CbA4<br>
+A9 = Pb&cap;Pc , B9 = Pc&cap;Pa , C9 = Pa&cap;Pb.
+</p>
+<p>
+Barycentrics for the 9 points and others:
+</p>
+<p>
+Ab = 0 : u + v : w, Ac = 0 : v : u + w<br>
+A'b = -w : u + v + w : w, A'c = -v : v : u + v + w <br>
+A' = -1 : 1 : 1<br>
+A1 =  (v + w)*(u*v + v*w + w*u) - u*v*w : (v + w)*v^2 : (v + w)*w^2<br>
+A2 =  u^2 : (v + w)*(v + u) : (w + u)*(w + v)<br>
+A3 = -u^2 :  v*(v + w) : w*(v + w)<br>
+A4 = -(u + v + w)^2 - u^2 : w*(u + v + w) - u*v : v*(u + v + w) - u*w<br>
+A5 =  -v*w : v*(u + v + w) : w*(u + v + w)<br>
+A6 =  -u*v*w : v*(v*w + 2*u*w + u*v + u^2) : w*(v*w + u*w + 2*u*v + u^2)<br>
+A7 = -(w*(u + v + w) - u*v)*(v*(u + v + w) - u*w) : (v*(u + v + w) - w*u)*((u + v + w)^2 + v^2)   : (w*(u + v + w) -u*v)*((u + v + w)^2 + w^2)<br>
+A8 =  -u*(v*(u + v + w) - w*u)*(w*(u + v + w) - u*v) : 2*v^2*w^3 + 3*u*v*w^3 - u^2*w^3 + 4*v^3*w^2 + 9*u*v^2*w^2 + 3*u^2*v*w^2 - 2*u^3*w^2 + 2*v^4*w + 8*u*v^3*w+ 6*u^2*v^2*w + u^3*v*w -u^4*w + 2*u*v^4 + 4*u^2*v^3 + 3*u^3*v^2 + u^4*v : 2*v*w^4 + 2*u*w^4 + 4*v^2*w^3 + 8*u*v*w^3 + 4*u^2*w^3 + 2*v^3*w^2 + 9*u*v^2*w^2  + 6*u^2*v*w^2 + 3*u^3*w^2 + 3*u*v^3*w + 3*u^2*v^2*w + u^3*v*w + u^4*w - u^2*v^3 - 2*u^3*v^2 - u^4*v<br>
+A9 =  -(u + 2*v + 2*w) : v : w
+</p>
+<p>
+Related triangles are named as follows:
+</p>
+<p>
+A1B1C1 = 1st Vijay parallel transform triangle of U<br>
+A2B2C2 = 2nd Vijay parallel transform triangle of U<br>
+A3B3C3 = 3rd Vijay parallel transform triangle of U<br>
+A4B4C4= 4th Vijay parallel transform triangle of U<br>
+A5B5C5 = 5th Vijay parallel transform triangle of U<br>
+A6B6C6 = 6th Vijay parallel transform triangle of U<br>
+A7B7C7 = 7th Vijay parallel transform triangle of U<br>
+A8B8C8 = 8th Vijay parallel transform triangle of U<br>
+A9B9C9 = 9th Vijay parallel transform triangle of U<br>
+</p>
+<p>
+Collinearities:
+</p>
+<p>
+U, A, A3, A5, A9 are collinear.<br>
+U, A1, A2 are collinear.<br>
+A3, A4, A8 are collinear.
+</p>
+<p>
+Perspectors:
+</p>
+<p>
+AA3A5A9U&cap;BB3B5B9U&cap;CC3C5C9U = A1A2U&cap;B1B2U&cap;C1C2U = A4A'&cap;B4B'&cap;C4C' = U<br>
+AA1&cap;BB1&cap;CC1 = u^2 : v^2 : w^2 = barycentric square of U<br>
+A5A6&cap;B5B6&cap;C5C6 = vw : uw : uv = 1/u : 1/v : 1/w = isotomic conjugate of U<br>
+A9A'&cap;B9B'&cap;C9C' = v+w : w+u : u+v = complement point U<br>
+AA2&cap;BB2&cap;CC2  = (u+v)(u+w) : (v+w)(v+u) : (w+u)(w+v) = 1/(v+w) : 1/(u+w) : 1/(u+v) = isotomic conjugate of complement of U<br>
+A6A'&cap;B6B'&cap;C6C' = uv-vw+wu : uv+vw-wu : -uv+vw+wu = 1/v + 1/w -1/u  : 1/w + 1/u -1/v  : 1/u + 1/v -1/w = X(2)-Ceva conjugate of U<br>
+AA4&cap;BB4&cap;CC4 = Vijay 1st  parallel transform of U<br>
+AA7&cap;BB7&cap;CC7  = Vijay 2nd  parallel transform of U<br>
+A1A3&cap;B1B3&cap;C1C3 = Vijay 3rd  parallel transform of U<br>
+A2A3&cap;B2B3&cap;C2C3 = Vijay 4th  parallel transform of U<br>
+A2A'&cap;B2B'&cap;C2C' = Vijay 5th  parallel transform of U<br>
+A5A'&cap;B5B'&cap;C5C' = Vijay 6th  parallel transform of U<br>
+A1A8&cap;B1B8&cap;C1C8 = Vijay 7th  parallel transform of U<br>
+A3A4&cap;B3B4&cap;C3C4 = A3A8&cap;B3B8&cap;C3C8 = A4A8&cap;B4B8&cap;C4C8 = Vijay 8th  parallel transform of U<br>
+A3A7&cap;B3B7&cap;C3C7 = Vijay 9th  parallel transform of U<br>
+A4A7&cap;B4B7&cap;C4C7 = Vijay 10th  parallel transform of U<br>
+A2A9&cap;B2B9&cap;C2C9 = Vijay 11th  parallel transform of U<br>
+A4A9&cap;B4B9&cap;C4C9 = Vijay 12th  parallel transform of U<br>
+A7A'&cap;B7B' ? C7C' = Vijay 13th  parallel transform of U<br>
+</p>
+<p>
+Barycentrics for Vijay parallel transforms:
+</p>
+<p>
+Vijay 1st  parallel transform triangle of U<br>
+= 1/ (u*(u + v + w) - v*w) : : <br>
+= perspector of ABC and 4th Vijay parallel transform triangle of U
+</p>
+<p>
+Vijay 2nd  parallel transform of U:<br>
+(u*(u + v + w) - v*w)*((u + v + w)^2 + u^2) : : <br>
+= perspector of ABC and 7th Vijay parallel transform triangle of U
+</p>
+<p>
+Vijay 3rd  parallel transform of U:<br>
+u^2*(u + v)*(u + w)*(v^2 + w^2 + v*w) : :<br>
+= perspector of 1st  and 3rd Vijay parallel transform triangles of U
+</p>
+<p>
+Vijay 4th  parallel transform of U:<br>
+u*(2*v*w + u*w + u*v - u^2)  : :<br>
+= perspector of 2nd  and 3rd Vijay parallel transform triangles of U<br>
+= center of the parallels-conic of U; see the preamble just before X(10001)
+</p>
+<p>
+Vijay 5th  parallel transform of U:<br>
+2*u^2 + u*v + v*w + w*u : :<br>
+= perspector of anticomplementary triangle of ABC and 2nd Vijay parallel transform tirangle of U
+</p>
+<p>
+Vijay 6th parallel transform of U:<br>
+(u + v + w)*(u*v - v*w + w*u) - u*v*w : :<br>
+= perspector of anticomplementary triangle of ABC and 5th Vijay parallel transform triangle of U
+</p>
+<p>
+Vijay 7th  parallel transform of U:<br>
+u*(-v^3*w^5 + 2*u*v^2*w^5 + 5*u^2*v*w^5 + 2*u^3*w^5 - 2*v^4*w^4 + 2*u*v^3*w^4 + 17*u^2*v^2*w^4 + 15*u^3*v*w^4 + 4*u^4*w^4 - v^5*w^3 + 2*u*v^4*w^3 + 20*u^2*v^3*w^3 + 29*u^3*v^2*w^3 + 14*u^4*v*w^3 + 2*u^5*w^3 + 2*u*v^5*w^2 + 17*u^2*v^4*w^2 + 29*u^3*v^3*w^2 + 20*u^4*v^2*w^2 + 4*u^5*v*w^2 + 5*u^2*v^5*w + 15*u^3*v^4*w + 14*u^4*v^3*w + 4*u^5*v^2*w + 2*u^3*v^5 + 4*u^4*v^4 + 2*u^5*v^3) : :<br>
+= perspector of 1st and 8th Vijay parallel transform triangles of U
+</p>
+<p>
+Vijay 8th  parallel transform of U:<br>
+-v*w^3 + u*w^3 - 2*v^2*w^2 + u*v*w^2 + 3*u^2*w^2 -v^3*w + u*v^2*w + 2*u^2*v*w + 2*u^3*w + u*v^3 + 3*u^2*v^2 + 2*u^3*v : :<br>
+= perspector of each pair of these: 3rd, 4th, and 8th Vijay parallel transform triangles of U
+</p>
+<p>
+Vijay 9th  parallel transform of U:<br>
+v*w^3 - u*w^3 + 2*v^2*w^2 + u*v*w^2 - u^2*w^2 + v^3*w + u*v^2*w - 2*u^3*w - u*v^3 - u^2*v^2 - 2*u^3*v - 2*u^4 : :<br>
+= perspector of 3rd and 7th Vijay parallel transform triangles of U
+</p>
+<p>
+Vijay 10th  parallel transform of U:<br>
+-v*w^3 + u*w^3 - 2*v^2*w^2 + 2*u^2*w^2 - v^3*w + u^2*v*w + 2*u^3*w + u*v^3 + 2*u^2*v^2 + 2*u^3*v + u^4 : :<br>
+= perspector of 4th  and 7th Vijay parallel transform triangles of U
+</p>
+<p>
+Vijay 11th  parallel transform of U:<br>
+2*v*w^2 + 2*u*w^2 + 2*v^2*w + 5*u*v*w + 3*u^2*w + 2*u*v^2 + 3*u^2*v + 2*u^3 : :<br>
+= perspector of 2nd and 9th Vijay parallel transform triangles of U
+</p>
+<p>
+Vijay 12th  parallel transform of U:<br>
+v*w^2 - 3*u*w^2 + v^2*w + 2*u*v*w + u^2*w - 3*u*v^2 + u^2*v : :<br>
+= perspector of 4th and 9th Vijay parallel transform triangles of U
+</p>
+<p>
+Vijay 13th  parallel transform of U:<br>
+-2*v*w^6 + 2*u*w^6 - 8*v^2*w^5 + 8*u^2*w^5 - 14*v^3*w^4 - 9*u*v^2*w^4 + 10*u^2*v*w^4 + 13*u^3*w^4 - 14*v^4*w^3 - 14*u*v^3*w^3 + 4*u^2*v^2*w^3 + 14*u^3*v*w^3 + 10*u^4*w^3 - 8*v^5*w^2 - 9*u*v^4*w^2 + 4*u^2*v^3*w^2 + 10*u^3*v^2*w^2 + 4*u^4*v*w^2 + 3*u^5*w^2 - 2*v^6*w + 10*u^2*v^4*w + 14*u^3*v^3*w + 4*u^4*v^2*w - 2*u^5*v*w + 2*u*v^6 + 8*u^2*v^5 + 13*u^3*v^4 + 10*u^4*v^3 + 3*u^5*v^2 : :<br>
+= perspector of anticomplementary triangle of ABC and 7th Vijay parallel transform triangle of U
+</p>
+<p>
+Constructions as downloadable pdfs:
+</p>
+<p>
+<a href="Vijay&#32;1st&#32;parallel&#32;transform.pdf">Vijay 1st parallel transform</a> <br>
+<a href="Vijay&#32;2nd&#32;parallel&#32;transform.pdf">Vijay 2nd parallel transform</a> <br>
+<a href="Vijay&#32;3rd&#32;parallel&#32;transform.pdf">Vijay 3rd parallel transform</a> <br>
+<a href="Vijay&#32;4th&#32;parallel&#32;transform.pdf">Vijay 4thd parallel transform</a> <br>
+<a href="Vijay&#32;5th&#32;parallel&#32;transform.pdf">Vijay 5th parallel transform</a> <br>
+<a href="Vijay&#32;6th&#32;parallel&#32;transform.pdf">Vijay 6th parallel transform</a> <br>
+<a href="Vijay&#32;7th&#32;parallel&#32;transform.pdf">Vijay 7th parallel transform</a> <br>
+<a href="Vijay&#32;8th&#32;parallel&#32;transform.pdf">Vijay 8th parallel transform</a> <br>
+<a href="Vijay&#32;9th&#32;parallel&#32;transform.pdf">Vijay 9th parallel transform</a> <br>
+<a href="Vijay&#32;10th&#32;parallel&#32;transform.pdf">Vijay 10th parallel transform</a> <br>
+<a href="Vijay&#32;11th&#32;parallel&#32;transform.pdf">Vijay 11th parallel transform</a> <br>
+<a href="Vijay&#32;12th&#32;parallel&#32;transform.pdf">Vijay 12th parallel transform</a> <br>
+<a href="Vijay&#32;13th&#32;parallel&#32;transform.pdf">Vijay 13th parallel transform</a> <br>
+</p>
+<p>
+The appearance of {i,j} in the following list means that the 1st Vijay parallel transform of X(i) is X(j):
+</p>
+<p>
+{1,596}, {2,2}, {3,6662}, {4,68}, {6,6664}, {7,6601}, {8,4}, {20,3346}, {69,66}, {75,13476}, {76,27375}, {99,36955}, {144,42483}, {145,6553}, {192,2998}, {193,6339}, {194,42486}, {264,42487}, {329,34546}, {3869,42485}, {4329,42484}, {4560,15412}, {5905,6504}, {6360,34287}, {7057,8}, {16017,189}, {16018,39694}, {20346,7357}, {20534,7}, {40383,330}<br>
+Also, if X is on the line at infinity, then the 1st Vijay parallel transform of X is X.
+</p>
+<p>
+The appearance of {i,j} in the following list means that the 2nd Vijay parallel transform of X(i) is X(j):
+{2,2}<br>
+Also, if X is on the line at infinity, then the 2nd Vijay parallel transform of X is X.
+</p>
+<p>
+The appearance of {i,j} in the following list means that the 3rd Vijay parallel transform of X(i) is X(j):
+</p>
+<p>
+{1,3736}, {2,2}, {13,16459}, {14,16460}, {99,4590}, {190,1016}, {648,23582}, {664,1275}, {668,31625}, {1494,31621}<br>
+</p>
+<p>
+As noted above the 4th Vijay parallel transform of U is the center of the parallels-conic of U. The appearance of {i,j} in the following list means that the 4th Vijay parallel transform of X(i) is X(j):
+</p>
+<p>
+{1,1001}, {2,2}, {3,182}, {4,10002}, {5,10003}, {6,182}, {7,10004}, {8,10005}, {9,1001}, {10,3842}, {11,10006}, {13,10217}, {14,10218}, {25,42820}, {32,42826}, {37,3842}, {39,10007}, {55,42834}, {56,42828}, {69,10008}, {75,10009}, {76,10010}, {99,4590}, {100,38310}, {114,10011}, {115,523}, {125,22264}, {141,10007}, {142,10012}, {190,1016}, {206,42826}, {216,10003}, {230,10011}, {239,20142}, {298,11133}, {299,11132}, {371,42866}, {372,42864}, {381,42830}, {395,6672}, {396,6671}, {478,42828}, {618,6671}, {619,6672}, {647,22264}, {648,23582}, {650,10006}, {664,1275}, {668,31625}, {1015,513},
+{1084,512}, {1086,514}, {1146,522}, {1212,10012}, {1249,10002}, {1494,31621}, {2482,524}, {3068,42838}, {3069,42840}, {3160,10004}, {3161,10005}, {3162,42820}, {3163,30}, {4370,519}, {5375,38310}, {5452,42834}, {6184,518}, {6337,10008}, {6374,10010}, {6376,10009}, {6631,1016}, {6651,20142}, {7026,14358}, {7043,14359}, {9296,31625}, {9410,31621}, {10001,1275}, {10853,4857}, {10960,42864}, {10962,42866},
+{11672,511}, {13466,536}, {13636,8371}, {13722,8371}, {15166,2574}, {15167,2575},
+{15449,826}, {15525,3566}, {15526,525}, {15527,7927}, {17416,3906}, {17429,17430},
+{18334,526}, {20532,726}, {23967,542}, {23972,516}, {23976,1503}, {23980,517},
+{23986,515}, {23992,690}, {30471,11133}, {30472,11132}, {31998,4590}, {33364,42838},
+{33365,42840}, {35066,17768}, {35067,3564}, {35068,740}, {35069,758}, {35070,35101},
+{35071,520}, {35072,521}, {35073,538}, {35074,35102}, {35075,8680}, {35076,4977},
+{35077,5969}, {35078,804}, {35079,2787}, {35080,2786}, {35081,2792}, {35082,2784},
+{35083,2783}, {35084,2795}, {35085,2796}, {35086,2785}, {35087,543}, {35088,2799},
+{35089,35103}, {35090,8674}, {35091,6366}, {35092,900}, {35093,5845}, {35094,918},
+{35095,35104}, {35110,527}, {35111,5853}, {35113,528}, {35114,17770}, {35116,2801},
+{35119,812}, {35121,545}, {35123,537}, {35124,4715}, {35125,3887}, {35126,9055},
+{35128,3738}, {35129,2802}, {35133,1499}, {35135,4160}, {35508,3900}, {36668,3911},
+{36669,3911}, {39008,9033}, {39010,888}, {39011,891}, {39013,924}, {39014,926},
+{39015,6371}, {39016,834}, {39017,928}, {39018,1510}, {39019,6368}, {39020,8057},
+{39022,3414}, {39023,3413}, {39062,23582}, {40578,10217}, {40579,10218}, {40610,4083},
+{40621,3667}, {41887,11064}, {41888,11064}, {43961,23870}, {43962,23871}<br>
+Also, if X is on the line at infinity, then the 4th Vijay parallel transform of X is X.
+</p>
+<p>
+The appearance of {i,j} in the following list means that the 5th Vijay parallel transform of X(i) is X(j):
+</p>
+<p>
+{1,17379}, {2,2}, {6,7787}, {8,4461}, {30,39358}, {69,32830}, {75,34284}, {99,4590}, {190,1016}, {511,39355}, {512,25054}, {513,9263}, {514,4440}, {518,39350}, {519,17487},
+{522,39351}, {523,148}, {524,8591}, {525,39352}, {527,39357}, {528,39363}, {536,39360}, {538,39361}, {648,23582}, {664,1275}, {668,31625}, {690,39356}, {726,39354}, {740,39367}, {788,39347}, {812,39362}, {824,39345}, {826,39346}, {900,39349}, {918,39353}, {1494,31621}, {2786,39368}, {2799,39359}, {3413,39366}, {3414,39365}, {4777,39364}, {4977,39348}, {16839,22739}<br>
+Also, if X is on the line at infinity, then the 5th Vijay parallel transform of X is on the ellipse E(X(4440)), which is the anticomplement of the Steiner circumellipse; see the preamble just before X(39345).
+</p>
+<p>
+The appearance of {i,j} in the following list means that the 6th Vijay parallel transform of X(i) is X(j):
+</p>
+<p>
+{1,17147}, {2,2}, {4,6515}, {6,8267}, {7,36845}, {8,329}, {69,1370}, {75,17135}, {192,41840}, {193,18287}, {693,3434}, {850,11442}, {2592,6515}, {2593,6515}, {4560,18662}, {7192,17140}, {17494,40637}, {22339,1370}, {22340,1370}, {31296,40642}<br>
+Also, if X is on the line at infinity, then the 6th Vijay parallel transform of X is X(2).
+</p>
+<p>
+The appearance of {i,j} in the following list means that the 7th Vijay parallel transform of X(i) is X(j):
+</p>
+<p>
+{2,2}, {99,4590}, {190,1016}, {648,23582}, {664,1275}, {668,31625}, {1494,31621}, {38026,43027}<br>
+Also, if X is on the line at infinity, then the 7th Vijay parallel transform of X is X.
+</p>
+<p>
+The appearance of {i,j} in the following list means that the 8th Vijay parallel transform of X(i) is X(j):
+</p>
+<p>
+{2,2}, {8,3421}<br>
+Also, if X is on the line at infinity, then the 8th Vijay parallel transform of X is X.
+</p>
+<p>
+The appearance of {i,j} in the following list means that the 9th Vijay parallel transform of X(i) is X(j):
+</p>
+<p>
+{2,2}<br>
+Also, if X is on the line at infinity, then the 9th Vijay parallel transform of X is X.
+</p>
+<p>
+The appearance of {i,j} in the following list means that the 10th Vijay parallel transform of X(i) is X(j):
+</p>
+<p>
+{2,2}, {8,7270}<br>
+Also, if X is on the line at infinity, then the 10th Vijay parallel transform of X is X.
+</p>
+<p>
+The appearance of {i,j} in the following list means that the 11th Vijay parallel transform of X(i) is X(j):
+</p>
+<p>
+{2,2}, {99,4590}, {190,1016}, {648,23582}, {664,1275}, {668,31625}, {1494,31621}
+<br>
+Also, if X is on the line at infinity, then the 11th Vijay parallel transform of X is X.
+</p>
+<p>
+The appearance of {i,j} in the following list means that the 12th Vijay parallel transform of X(i) is X(j):
+</p>
+<p>
+{1,17154}, {4,3448}, {6,25047}, {7,149}, {8,149}, {20,34186}, {69,3448}, {75,17154}, {76,25047}, {192,21224}, {253,34186}, {330,21224}, {519,20042}, {903,20042}, {2408,9485}, {2418,9485}, {4240,9033}, {5466,690}, {5468,690}, {6548,900}, {9214,9143}, {13386,37781}, {13387,37781}, {17780,900}, {30508,523}, {30509,523}, {34760,33921}, {34762,33920}, {34763,33921}, {34764,33920}, {34767,9033}, {36890,9143}, {41314,891}, {43928,891}<br>
+Also, if X is on the line at infinity, then the 11th Vijay parallel transform of X is X, and if F(X) denotes this transform, then F(X) = F(X*), where X* = isotomic conjugate of X.  See the note at X(44007).
+</p>
+<p>
+The appearance of {i,j} in the following list means that the 13th Vijay parallel transform of X(i) is X(j):
+</p>
+<p>
+{2,2}<br>
+Also, if X is on the line at infinity, then the 13th Vijay parallel transform of X is X.
+</p>
+<p>
+The Vijay 1st parallel transform of U is the isogonal conjugate of the Vu tangential transform of U, and the perspector of ABC and the reflection of the cevian triangle of U in the centroid of ABCU.  It is also the anticomplement of the centroid of {{[complement of U], [vertices of anticevain triangle of complement of U]}}, and also the isogonal conjugate of the TCC-perspector of [isogonal conjugate of complement of U].  (Randy Hutson, August 24, 2021)
+<hr class="end-preamble">
+</div>
+<!-- preamble end -->
+
+
+<br>
+<br>
+<!-- End preamble -->
+
+
+
