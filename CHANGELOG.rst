@@ -3,6 +3,12 @@ changelog
 
 :project: geometor.etc
 
+0.0.2
+-----
+
+-   Refined docstrings and type hinting.
+-   Fixed `from __future__ import annotations` placement.
+
 0.0.1 
 -----
 

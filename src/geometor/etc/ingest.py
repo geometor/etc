@@ -1,25 +1,43 @@
+from __future__ import annotations
 import re
 import os
 import glob
 from pathlib import Path
 
-def slugify(text):
+def slugify(text: str) -> str:
     """
-    Simple slugify function to create safe filenames.
+    Create a safe filename from text.
+
+    Args:
+        text (str): The input text.
+
+    Returns:
+        str: The slugified text.
     """
     text = re.sub(r'<[^>]+>', '', text)  # Remove HTML tags
     text = text.replace('&nbsp;', ' ')
     return re.sub(r'\W+', '-', text.lower()).strip('-')
 
-def unique_filename(output_folder, base_name):
+def unique_filename(output_folder: str, base_name: str) -> str:
     """
-    Return the filename, allowing overwrites.
+    Return a filename, allowing overwrites (currently just returns the base name with .html).
+
+    Args:
+        output_folder (str): The output directory.
+        base_name (str): The base filename.
+
+    Returns:
+        str: The full filename with extension.
     """
     return f"{base_name}.html"
 
-def split_html_file(input_path, output_folder):
+def split_html_file(input_path: str | Path, output_folder: str | Path) -> None:
     """
-    Splits a single HTML file into multiple files based on <h3> tags.
+    Split a single HTML file into multiple files based on <h3> tags.
+
+    Args:
+        input_path (str): Path to the input HTML file.
+        output_folder (str): Directory to save the split files.
     """
     print(f"Processing: {input_path}")
     with open(input_path, 'r', encoding='utf-8') as file:
@@ -67,9 +85,13 @@ def split_html_file(input_path, output_folder):
     
     print(f"  -> Split into {count} files.")
 
-def ingest_folder(input_folder, output_folder):
+def ingest_folder(input_folder: str, output_folder: str) -> None:
     """
-    Ingests all HTML files in the input folder.
+    Ingest all HTML files in the input folder by splitting them.
+
+    Args:
+        input_folder (str): The directory containing input HTML files.
+        output_folder (str): The directory to save the split files.
     """
     input_path = Path(input_folder)
     html_files = sorted(input_path.glob('*.html'))

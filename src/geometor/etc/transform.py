@@ -1,18 +1,32 @@
+from __future__ import annotations
 import os
 import re
 from .glossary import wrap_glossary_terms
 
 
-def format_rst_header(title, char='='):
+def format_rst_header(title: str, char: str = '=') -> str:
     """
     Create an RST header.
+
+    Args:
+        title (str): The header title.
+        char (str, optional): The underline character. Defaults to '='.
+
+    Returns:
+        str: The formatted RST header string.
     """
     line = char * len(title)
     return f"{title}\n{line}\n\n"
 
-def wrap_refs(text):
+def wrap_refs(text: str) -> str:
     """
     Wrap X(n) references in :ref:`X.n`.
+
+    Args:
+        text (str): The input text.
+
+    Returns:
+        str: The text with references wrapped.
     """
     # Pattern to match X(n) where n is a number
     # We use a negative lookbehind to avoid double wrapping if already wrapped (though simple regex might suffice for raw text)
@@ -25,9 +39,16 @@ def wrap_refs(text):
         
     return re.sub(r'X\((\d+)\)', replace_func, text)
 
-def transform_center_to_rst(data, glossary_terms=None):
+def transform_center_to_rst(data: dict, glossary_terms: list[str] | None = None) -> str:
     """
     Transform a center data dictionary into an RST string.
+
+    Args:
+        data (dict): The center data dictionary.
+        glossary_terms (list, optional): List of glossary terms to link.
+
+    Returns:
+        str: The generated RST content.
     """
     if not data or not data.get('key'):
         return ""
@@ -85,9 +106,14 @@ def transform_center_to_rst(data, glossary_terms=None):
             
     return rst
 
-def generate_rst_files(centers, output_dir, glossary_terms=None):
+def generate_rst_files(centers: list[dict], output_dir: str, glossary_terms: list[str] | None = None) -> None:
     """
     Generate RST files for a list of centers.
+
+    Args:
+        centers (list): List of center data dictionaries.
+        output_dir (str): Directory to save the generated RST files.
+        glossary_terms (list, optional): List of glossary terms to link.
     """
     os.makedirs(output_dir, exist_ok=True)
     

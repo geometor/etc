@@ -1,10 +1,16 @@
+from __future__ import annotations
 import re
 from bs4 import BeautifulSoup
 
-def extract_glossary_terms(html_content):
+def extract_glossary_terms(html_content: str) -> dict[str, str]:
     """
-    Extracts glossary terms and definitions from the HTML content.
-    Returns a dictionary {term: definition_rst}.
+    Extract glossary terms and definitions from the HTML content.
+
+    Args:
+        html_content (str): The HTML content of the glossary page.
+
+    Returns:
+        dict: A dictionary mapping terms to their definitions (in RST format).
     """
     soup = BeautifulSoup(html_content, 'html.parser')
     terms = {}
@@ -32,9 +38,15 @@ def extract_glossary_terms(html_content):
         
     return terms
 
-def generate_glossary_rst(terms):
+def generate_glossary_rst(terms: dict[str, str]) -> str:
     """
-    Generates the content for glossary.rst.
+    Generate the content for glossary.rst.
+
+    Args:
+        terms (dict): A dictionary of terms and definitions.
+
+    Returns:
+        str: The generated RST content.
     """
     rst = ":navigation: header footer\n:order: 2\n\n"
     rst += "Glossary\n========\n\n"
@@ -48,10 +60,16 @@ def generate_glossary_rst(terms):
         
     return rst
 
-def wrap_glossary_terms(text, terms):
+def wrap_glossary_terms(text: str, terms: list[str]) -> str:
     """
-    Wraps occurrences of glossary terms in the text with :term:`term`.
-    terms is a list of strings.
+    Wrap occurrences of glossary terms in the text with :term:`term`.
+
+    Args:
+        text (str): The text to process.
+        terms (list): A list of glossary terms to look for.
+
+    Returns:
+        str: The processed text with terms wrapped.
     """
     # Sort terms by length descending to match longest phrases first
     sorted_terms = sorted(terms, key=len, reverse=True)

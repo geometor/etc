@@ -1,12 +1,29 @@
+from __future__ import annotations
 import re
 import json
 
-def remove_tags(text):
-    """Remove HTML tags from text."""
+def remove_tags(text: str) -> str:
+    """
+    Remove HTML tags from text.
+
+    Args:
+        text (str): The input text with HTML tags.
+
+    Returns:
+        str: The text with tags removed.
+    """
     return re.sub('<[^>]+>', '', text)
 
-def clean_text(text):
-    """Clean up text by removing tags and extra whitespace."""
+def clean_text(text: str) -> str:
+    """
+    Clean up text by removing tags and extra whitespace.
+
+    Args:
+        text (str): The input text.
+
+    Returns:
+        str: The cleaned text.
+    """
     if not text:
         return ""
     text = text.replace('<br>', ' ').replace('<BR>', ' ')
@@ -14,10 +31,16 @@ def clean_text(text):
     text = text.replace('&nbsp;', ' ')
     return " ".join(text.split())
 
-def parse_coordinates(coord_type, html):
+def parse_coordinates(coord_type: str, html: str) -> list[str]:
     """
     Parse coordinates (Trilinears, Barycentrics, etc.) from the HTML.
-    Looks for patterns like "Trilinears ... <br>"
+
+    Args:
+        coord_type (str): The type of coordinates to look for (e.g., "Trilinears").
+        html (str): The HTML content to search.
+
+    Returns:
+        list: A list of parsed coordinate strings.
     """
     # Regex to find the line starting with the coord_type
     # It captures everything until the next <br> or end of string
@@ -35,9 +58,15 @@ def parse_coordinates(coord_type, html):
         
     return parsed_coords
 
-def parse_h3(html):
+def parse_h3(html: str) -> tuple[str | None, str | None]:
     """
     Parse the <h3> tag to get the key (X number) and title.
+
+    Args:
+        html (str): The HTML content.
+
+    Returns:
+        tuple: A tuple containing the key (e.g., "X(1)") and the title.
     """
     match = re.search(r'<h3[^>]*>(.*?)<\/h3>', html, re.DOTALL)
     if not match:
@@ -60,18 +89,30 @@ def parse_h3(html):
         
     return key, title
 
-def parse_notes(html):
+def parse_notes(html: str) -> list[str]:
     """
     Extract paragraphs as notes.
+
+    Args:
+        html (str): The HTML content.
+
+    Returns:
+        list: A list of note strings.
     """
     # Find all <p> tags
     notes = re.findall(r"<p>(.*?)</p>", html, re.DOTALL)
     cleaned_notes = [clean_text(note) for note in notes]
     return cleaned_notes
 
-def parse_center(html_content):
+def parse_center(html_content: str) -> dict | None:
     """
-    Main function to parse a center's HTML content.
+    Parse a center's HTML content into a structured dictionary.
+
+    Args:
+        html_content (str): The HTML content of the center definition.
+
+    Returns:
+        dict: A dictionary containing center data (key, title, coordinates, notes), or None if parsing fails.
     """
     key, title = parse_h3(html_content)
     

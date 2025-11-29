@@ -1,10 +1,10 @@
+:navigation: header
+:order: 2
+
 
 modules
 =======
 
-.. automodule:: geometor.etc
-   :members:
-   :undoc-members:
-   :show-inheritance:
+.. include:: api/geometor/etc/index.rst
 
 
