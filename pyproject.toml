@@ -6,16 +6,15 @@ authors = [
 ]
 description = "index for the encyclopedia of triangle centers"
 readme = "README.rst"
-requires-python = ">=3.7"
+requires-python = ">=3.13"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
 dependencies = [
-    "textual",
+    "beautifulsoup4",
     "rich",
-    "jinja2",
 ]
 
 [project.scripts]
