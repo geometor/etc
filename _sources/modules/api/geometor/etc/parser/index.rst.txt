@@ -1,0 +1,90 @@
+geometor.etc.parser
+===================
+
+.. py:module:: geometor.etc.parser
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.parser.remove_tags
+   geometor.etc.parser.clean_text
+   geometor.etc.parser.parse_coordinates
+   geometor.etc.parser.parse_h3
+   geometor.etc.parser.parse_notes
+   geometor.etc.parser.parse_center
+
+
+Module Contents
+---------------
+
+.. py:function:: remove_tags(text: str) -> str
+
+   Remove HTML tags from text.
+
+   :param text: The input text with HTML tags.
+   :type text: str
+
+   :returns: The text with tags removed.
+   :rtype: str
+
+
+.. py:function:: clean_text(text: str) -> str
+
+   Clean up text by removing tags and extra whitespace.
+
+   :param text: The input text.
+   :type text: str
+
+   :returns: The cleaned text.
+   :rtype: str
+
+
+.. py:function:: parse_coordinates(coord_type: str, html: str) -> list[str]
+
+   Parse coordinates (Trilinears, Barycentrics, etc.) from the HTML.
+
+   :param coord_type: The type of coordinates to look for (e.g., "Trilinears").
+   :type coord_type: str
+   :param html: The HTML content to search.
+   :type html: str
+
+   :returns: A list of parsed coordinate strings.
+   :rtype: list
+
+
+.. py:function:: parse_h3(html: str) -> tuple[str | None, str | None]
+
+   Parse the <h3> tag to get the key (X number) and title.
+
+   :param html: The HTML content.
+   :type html: str
+
+   :returns: A tuple containing the key (e.g., "X(1)") and the title.
+   :rtype: tuple
+
+
+.. py:function:: parse_notes(html: str) -> list[str]
+
+   Extract paragraphs as notes.
+
+   :param html: The HTML content.
+   :type html: str
+
+   :returns: A list of note strings.
+   :rtype: list
+
+
+.. py:function:: parse_center(html_content: str) -> dict | None
+
+   Parse a center's HTML content into a structured dictionary.
+
+   :param html_content: The HTML content of the center definition.
+   :type html_content: str
+
+   :returns: A dictionary containing center data (key, title, coordinates, notes), or None if parsing fails.
+   :rtype: dict
+
+

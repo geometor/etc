@@ -1,0 +1,69 @@
+geometor.etc.transform
+======================
+
+.. py:module:: geometor.etc.transform
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.transform.format_rst_header
+   geometor.etc.transform.wrap_refs
+   geometor.etc.transform.transform_center_to_rst
+   geometor.etc.transform.generate_rst_files
+
+
+Module Contents
+---------------
+
+.. py:function:: format_rst_header(title: str, char: str = '=') -> str
+
+   Create an RST header.
+
+   :param title: The header title.
+   :type title: str
+   :param char: The underline character. Defaults to '='.
+   :type char: str, optional
+
+   :returns: The formatted RST header string.
+   :rtype: str
+
+
+.. py:function:: wrap_refs(text: str) -> str
+
+   Wrap X(n) references in :ref:`X.n`.
+
+   :param text: The input text.
+   :type text: str
+
+   :returns: The text with references wrapped.
+   :rtype: str
+
+
+.. py:function:: transform_center_to_rst(data: dict, glossary_terms: list[str] | None = None) -> str
+
+   Transform a center data dictionary into an RST string.
+
+   :param data: The center data dictionary.
+   :type data: dict
+   :param glossary_terms: List of glossary terms to link.
+   :type glossary_terms: list, optional
+
+   :returns: The generated RST content.
+   :rtype: str
+
+
+.. py:function:: generate_rst_files(centers: list[dict], output_dir: str, glossary_terms: list[str] | None = None) -> None
+
+   Generate RST files for a list of centers.
+
+   :param centers: List of center data dictionaries.
+   :type centers: list
+   :param output_dir: Directory to save the generated RST files.
+   :type output_dir: str
+   :param glossary_terms: List of glossary terms to link.
+   :type glossary_terms: list, optional
+
+

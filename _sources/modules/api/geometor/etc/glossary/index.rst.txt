@@ -1,0 +1,54 @@
+geometor.etc.glossary
+=====================
+
+.. py:module:: geometor.etc.glossary
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.glossary.extract_glossary_terms
+   geometor.etc.glossary.generate_glossary_rst
+   geometor.etc.glossary.wrap_glossary_terms
+
+
+Module Contents
+---------------
+
+.. py:function:: extract_glossary_terms(html_content: str) -> dict[str, str]
+
+   Extract glossary terms and definitions from the HTML content.
+
+   :param html_content: The HTML content of the glossary page.
+   :type html_content: str
+
+   :returns: A dictionary mapping terms to their definitions (in RST format).
+   :rtype: dict
+
+
+.. py:function:: generate_glossary_rst(terms: dict[str, str]) -> str
+
+   Generate the content for glossary.rst.
+
+   :param terms: A dictionary of terms and definitions.
+   :type terms: dict
+
+   :returns: The generated RST content.
+   :rtype: str
+
+
+.. py:function:: wrap_glossary_terms(text: str, terms: list[str]) -> str
+
+   Wrap occurrences of glossary terms in the text with :term:`term`.
+
+   :param text: The text to process.
+   :type text: str
+   :param terms: A list of glossary terms to look for.
+   :type terms: list
+
+   :returns: The processed text with terms wrapped.
+   :rtype: str
+
+

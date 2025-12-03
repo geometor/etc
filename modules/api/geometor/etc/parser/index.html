@@ -1,0 +1,258 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>geometor.etc.parser &mdash; Project name not set  documentation</title>
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=b9bf8c56" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="../../../../../_static/css/print.css" type="text/css" media="print" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="../../../../../index.html">
+        <img src="../../../../../_static/logo.png" class="logo" alt="Logo"/>
+      </a>
+      <div class="org-repo">
+        <span class="org">geometor</span>
+        •
+        <span class="repo">etc</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../../../centers/index.html"  >Encyclopedia of Triangle Centers</a>
+        </li>
+        <li>
+          <a href="../../../../index.html"  >modules</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main>
+
+    <article>
+      <div class="content">
+      <nav class="breadcrumbs">
+        <span><a href="../../../../../index.html">Home</a></span>
+          <span>/</span>
+        <span><a href="../../../../index.html">modules</a></span>
+        <span>/</span>
+        <span>geometor.etc.parser</span>
+      </nav>
+        <nav class="context">
+          <div class="prev">
+             <a href="../ingest/index.html" class="btn btn-neutral float-left" title="geometor.etc.ingest" >Prev</a>
+          </div>
+          <div class="next">
+            <a href="../transform/index.html" class="btn btn-neutral float-right" title="geometor.etc.transform" >Next</a>
+          </div>
+        </nav>
+          <section id="module-geometor.etc.parser">
+<span id="geometor-etc-parser"></span><h1>geometor.etc.parser<a class="headerlink" href="#module-geometor.etc.parser" title="Link to this heading">¶</a></h1>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.parser.remove_tags" title="geometor.etc.parser.remove_tags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">remove_tags</span></code></a>(→ str)</p></td>
+<td><p>Remove HTML tags from text.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.parser.clean_text" title="geometor.etc.parser.clean_text"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clean_text</span></code></a>(→ str)</p></td>
+<td><p>Clean up text by removing tags and extra whitespace.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.parser.parse_coordinates" title="geometor.etc.parser.parse_coordinates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_coordinates</span></code></a>(→ list[str])</p></td>
+<td><p>Parse coordinates (Trilinears, Barycentrics, etc.) from the HTML.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.parser.parse_h3" title="geometor.etc.parser.parse_h3"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_h3</span></code></a>(→ tuple[str | None, str | None])</p></td>
+<td><p>Parse the &lt;h3&gt; tag to get the key (X number) and title.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.parser.parse_notes" title="geometor.etc.parser.parse_notes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_notes</span></code></a>(→ list[str])</p></td>
+<td><p>Extract paragraphs as notes.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.parser.parse_center" title="geometor.etc.parser.parse_center"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_center</span></code></a>(→ dict | None)</p></td>
+<td><p>Parse a center's HTML content into a structured dictionary.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="geometor.etc.parser.remove_tags">
+<span class="sig-prename descclassname"><span class="pre">geometor.etc.parser.</span></span><span class="sig-name descname"><span class="pre">remove_tags</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.parser.remove_tags" title="Link to this definition">¶</a></dt>
+<dd><p>Remove HTML tags from text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>text</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – The input text with HTML tags.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The text with tags removed.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="geometor.etc.parser.clean_text">
+<span class="sig-prename descclassname"><span class="pre">geometor.etc.parser.</span></span><span class="sig-name descname"><span class="pre">clean_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.parser.clean_text" title="Link to this definition">¶</a></dt>
+<dd><p>Clean up text by removing tags and extra whitespace.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>text</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – The input text.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The cleaned text.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="geometor.etc.parser.parse_coordinates">
+<span class="sig-prename descclassname"><span class="pre">geometor.etc.parser.</span></span><span class="sig-name descname"><span class="pre">parse_coordinates</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coord_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">html</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#list" title="(in Python v3.9)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.parser.parse_coordinates" title="Link to this definition">¶</a></dt>
+<dd><p>Parse coordinates (Trilinears, Barycentrics, etc.) from the HTML.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>coord_type</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – The type of coordinates to look for (e.g., “Trilinears”).</p></li>
+<li><p><strong>html</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – The HTML content to search.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of parsed coordinate strings.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#list" title="(in Python v3.9)">list</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="geometor.etc.parser.parse_h3">
+<span class="sig-prename descclassname"><span class="pre">geometor.etc.parser.</span></span><span class="sig-name descname"><span class="pre">parse_h3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">html</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#tuple" title="(in Python v3.9)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.9/library/constants.html#None" title="(in Python v3.9)"><span class="pre">None</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.9/library/constants.html#None" title="(in Python v3.9)"><span class="pre">None</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.parser.parse_h3" title="Link to this definition">¶</a></dt>
+<dd><p>Parse the &lt;h3&gt; tag to get the key (X number) and title.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>html</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – The HTML content.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A tuple containing the key (e.g., “X(1)”) and the title.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#tuple" title="(in Python v3.9)">tuple</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="geometor.etc.parser.parse_notes">
+<span class="sig-prename descclassname"><span class="pre">geometor.etc.parser.</span></span><span class="sig-name descname"><span class="pre">parse_notes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">html</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#list" title="(in Python v3.9)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.parser.parse_notes" title="Link to this definition">¶</a></dt>
+<dd><p>Extract paragraphs as notes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>html</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – The HTML content.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of note strings.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#list" title="(in Python v3.9)">list</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="geometor.etc.parser.parse_center">
+<span class="sig-prename descclassname"><span class="pre">geometor.etc.parser.</span></span><span class="sig-name descname"><span class="pre">parse_center</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">html_content</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#dict" title="(in Python v3.9)"><span class="pre">dict</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.9/library/constants.html#None" title="(in Python v3.9)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#geometor.etc.parser.parse_center" title="Link to this definition">¶</a></dt>
+<dd><p>Parse a center’s HTML content into a structured dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>html_content</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – The HTML content of the center definition.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A dictionary containing center data (key, title, coordinates, notes), or None if parsing fails.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#dict" title="(in Python v3.9)">dict</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+      </div>
+      <footer>
+
+
+        <nav class="context">
+          <div class="prev">
+             <a href="../ingest/index.html" class="btn btn-neutral float-left" title="geometor.etc.ingest" >Prev</a>
+          </div>
+          <div class="next">
+            <a href="../transform/index.html" class="btn btn-neutral float-right" title="geometor.etc.transform" >Next</a>
+          </div>
+        </nav></footer>
+    </article>
+
+  </main>
+
+<div class="asides">
+    <aside>
+        <h3>Search</h3>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+    </aside>
+    
+    
+
+    
+
+    
+
+<aside class="aside-types">
+    <h3>Types</h3>
+    <ul>
+        
+        <li><a href="../../../../../types/center.html">center</a></li>
+        
+    </ul>
+</aside>
+
+</div>
+<footer>
+    <hr/>
+    <div role="contentinfo">
+        <p>
+                &copy; Copyright .
+        </p>
+    </div>
+</footer>
+
+  <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../../_static/documentation_options.js?v=5929fcd5"></script>
+  <script src="../../../../../_static/doctools.js?v=9bcbadda"></script>
+  <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+  <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+
+
+</body>
+</html>

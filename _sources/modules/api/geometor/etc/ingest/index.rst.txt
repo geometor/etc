@@ -1,0 +1,64 @@
+geometor.etc.ingest
+===================
+
+.. py:module:: geometor.etc.ingest
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.ingest.slugify
+   geometor.etc.ingest.unique_filename
+   geometor.etc.ingest.split_html_file
+   geometor.etc.ingest.ingest_folder
+
+
+Module Contents
+---------------
+
+.. py:function:: slugify(text: str) -> str
+
+   Create a safe filename from text.
+
+   :param text: The input text.
+   :type text: str
+
+   :returns: The slugified text.
+   :rtype: str
+
+
+.. py:function:: unique_filename(output_folder: str, base_name: str) -> str
+
+   Return a filename, allowing overwrites (currently just returns the base name with .html).
+
+   :param output_folder: The output directory.
+   :type output_folder: str
+   :param base_name: The base filename.
+   :type base_name: str
+
+   :returns: The full filename with extension.
+   :rtype: str
+
+
+.. py:function:: split_html_file(input_path: str | pathlib.Path, output_folder: str | pathlib.Path) -> None
+
+   Split a single HTML file into multiple files based on <h3> tags.
+
+   :param input_path: Path to the input HTML file.
+   :type input_path: str
+   :param output_folder: Directory to save the split files.
+   :type output_folder: str
+
+
+.. py:function:: ingest_folder(input_folder: str, output_folder: str) -> None
+
+   Ingest all HTML files in the input folder by splitting them.
+
+   :param input_folder: The directory containing input HTML files.
+   :type input_folder: str
+   :param output_folder: The directory to save the split files.
+   :type output_folder: str
+
+
