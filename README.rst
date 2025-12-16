@@ -1,7 +1,7 @@
 geometor-etc
 ============
 
-The **Encyclopedia of Triangle Centers (ETC)** is a monumental work by Clark Kimberling. This project, ``geometor-etc``, aims to transform the original HTML content of the ETC into a structured, machine-readable, and semantically interconnected dataset and documentation site.
+An index and toolkit for the Encyclopedia of Triangle Centers.
 
 Mission
 -------
