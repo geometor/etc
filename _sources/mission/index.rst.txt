@@ -1,17 +1,13 @@
+:navigation: header
+:order: 1
+
 mission
 =======
 
-.. contents::
-   :local:
-   :backlinks: none
-
-
-.. todo:: complete mission statement
+    modernize the Encyclopedia of Triangle Centers with structured data and semantic linking
 
 goals
 -----
 
-.. .. postlist:: 
-   :category: GOALS
-   :excerpts:
-
+.. collection::
+   :sort: order
