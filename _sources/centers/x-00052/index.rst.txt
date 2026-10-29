@@ -55,34 +55,34 @@ Notes
 
 .. container:: note-item
 
-   :ref:`X(52) <X(52)>` is the {:ref:`X(5) <X(5)>`,X(143)}-harmonic conjugate of :ref:`X(51) <X(51)>`.
+   :ref:`X(52) <X(52)>` is the {:ref:`X(5) <X(5)>`,\ :ref:`X(143) <X(143)>`}-harmonic conjugate of :ref:`X(51) <X(51)>`.
 
 Incidence
 ---------
 
 :ref:`X(52) <X(52)>` lies and on these lines:
 
-{:ref:`3 <X(3)>`, :ref:`6 <X(6)>`}, {:ref:`4 <X(4)>`, :ref:`68 <X(68)>`}, {:ref:`5 <X(5)>`, :ref:`51 <X(51)>`}, {:ref:`25 <X(25)>`, 155}, {:ref:`26 <X(26)>`, 184}, {:ref:`30 <X(30)>`, 185}, {:ref:`49 <X(49)>`, 195}, {113, 135}, {114, 211}, {128, 134}, {129, 139}
+{:ref:`3 <X(3)>`, :ref:`6 <X(6)>`}, {:ref:`4 <X(4)>`, :ref:`68 <X(68)>`}, {:ref:`5 <X(5)>`, :ref:`51 <X(51)>`}, {:ref:`25 <X(25)>`, :ref:`155 <X(155)>`}, {:ref:`26 <X(26)>`, :ref:`184 <X(184)>`}, {:ref:`30 <X(30)>`, :ref:`185 <X(185)>`}, {:ref:`49 <X(49)>`, :ref:`195 <X(195)>`}, {:ref:`113 <X(113)>`, :ref:`135 <X(135)>`}, {:ref:`114 <X(114)>`, :ref:`211 <X(211)>`}, {:ref:`128 <X(128)>`, :ref:`134 <X(134)>`}, {:ref:`129 <X(129)>`, :ref:`139 <X(139)>`}
 
 Relations
 ---------
 
-* :ref:`X(52) <X(52)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`3 <X(3)>`, 389), (:ref:`5 <X(5)>`, 143), (113, 1112), (1209, 973)
+* :ref:`X(52) <X(52)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`3 <X(3)>`, :ref:`389 <X(389)>`), (:ref:`5 <X(5)>`, :ref:`143 <X(143)>`), (:ref:`113 <X(113)>`, 1112), (1209, :ref:`973 <X(973)>`)
 * :ref:`X(52) <X(52)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(96) <X(96)>`
 * :ref:`X(52) <X(52)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(34385)
 * :ref:`X(52) <X(52)>` = :term:`anticomplement <anticomplement>` of X(1216)
 * :ref:`X(52) <X(52)>` = circumcircle-inverse of X(32762)
-* :ref:`X(52) <X(52)>` = Brocard-circle-inverse of X(569)
-* :ref:`X(52) <X(52)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`4 <X(4)>`, :ref:`5 <X(5)>`), (317, 467), (324, 216)
+* :ref:`X(52) <X(52)>` = Brocard-circle-inverse of :ref:`X(569) <X(569)>`
+* :ref:`X(52) <X(52)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`4 <X(4)>`, :ref:`5 <X(5)>`), (:ref:`317 <X(317)>`, :ref:`467 <X(467)>`), (:ref:`324 <X(324)>`, :ref:`216 <X(216)>`)
 * :ref:`X(52) <X(52)>` = :term:`crosspoint <crosspoint>` of :ref:`X(4) <X(4)>` and :ref:`X(24) <X(24)>`
 * :ref:`X(52) <X(52)>` = :term:`crosssum <crosssum>` of :ref:`X(3) <X(3)>` and :ref:`X(68) <X(68)>`
-* :ref:`X(52) <X(52)>` = {:ref:`X(3) <X(3)>`,\ :ref:`X(6) <X(6)>`}-harmonic conjugate of X(569)
+* :ref:`X(52) <X(52)>` = {:ref:`X(3) <X(3)>`,\ :ref:`X(6) <X(6)>`}-harmonic conjugate of :ref:`X(569) <X(569)>`
 * :ref:`X(52) <X(52)>` = orthic isogonal conjugate of :ref:`X(5) <X(5)>`
 * :ref:`X(52) <X(52)>` = :ref:`X(20) <X(20)>`-of-2nd Euler triangle
 * :ref:`X(52) <X(52)>` = perspector of ABC and cross-triangle of ABC and 2nd Euler triangle
 * :ref:`X(52) <X(52)>` = perspector of ABC and cross-triangle of ABC and Kosnita triangle
-* :ref:`X(52) <X(52)>` = antipode of X(113) in Hatzipolakis-Lozada hyperbola
-* :ref:`X(52) <X(52)>` = Cundy-Parry Phi transform of X(571)
+* :ref:`X(52) <X(52)>` = antipode of :ref:`X(113) <X(113)>` in Hatzipolakis-Lozada hyperbola
+* :ref:`X(52) <X(52)>` = Cundy-Parry Phi transform of :ref:`X(571) <X(571)>`
 * :ref:`X(52) <X(52)>` = Cundy-Parry Psi transform of X(5392)
 * :ref:`X(52) <X(52)>` = X(1577)-:term:`isoconjugate <isoconjugate>` of X(32692)
 * :ref:`X(52) <X(52)>` = excentral-to-ABC :term:`functional image <functional-image>` of :ref:`X(4) <X(4)>`

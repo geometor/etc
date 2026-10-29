@@ -1,0 +1,67 @@
+:order: 847
+:type: center
+:canonical_id: X(847)
+:dependencies: X(2), X(3), X(4), X(5), X(24), X(52), X(91), X(92), X(96), X(225), X(254), X(378), X(403), X(485), X(486), X(925), X(1093), X(1105), X(1147), X(1993), X(9723)
+
+.. _X(847):
+
+X(847) = X(5)-CROSS CONJUGATE OF X(4)
+=====================================
+
+.. figure:: x-00847.svg
+   :alt: X(847) = X(5)-CROSS CONJUGATE OF X(4)
+   :align: center
+
+   **X(847) = X(5)-CROSS CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+
+Coordinates
+-----------
+
+Trilinears
+~~~~~~~~~~
+
+* :math:`\sec A \sec 2A : \sec B \sec 2B : \sec C \sec 2C`
+
+Barycentrics
+~~~~~~~~~~~~
+
+* :math:`\tan A \sec 2A : \tan B \sec 2B : \tan C \sec 2C`
+* :math:`1/(a^2 (a^2 - b^2 - c^2) (a^4 + b^4 + c^4 - 2 a^2 b^2 - 2 a^2 c^2)) : :`
+
+* **Kimberling (6, 9, 13) Search Value:** :math:`0.746590301756`
+
+Notes
+-----
+
+.. container:: note-item
+
+   This point solves a problem posed by :person:`Antreas Hatzipolakis <antreas-hatzipolakis>` in :cite:`Hyacinthos #3130 <hyacinthos>`, June 25, 2001; see also Jean-Pierre Ehrmann, #3135, June 26, 2001. The problem and solution may be stated as follows. Let ABC be a triangle, L\ :sub:`A`, L\ :sub:`B`, L\ :sub:`C` the perpendicular bisectors of sides BC, CA, AB, and AA', BB', CC' the altitudes of ABC, respectively. Let A\ :sub:`B` be the point of intersection of AA' and L\ :sub:`B`, and let A\ :sub:`C` be the point of intersection of AA' and L\ :sub:`C`. Let A″ be the point of intersection of BA\ :sub:`B` and CA\ :sub:`C`. Define B″ and C″ cyclically. Then triangle A″B″C″ is perspective to triangle ABC, with perspector :ref:`X(847) <X(847)>`.
+
+.. container:: note-item
+
+   Let A'B'C' be the :ref:`X(3) <X(3)>`-:term:`cevian triangle <cevian-triangle>` of the :term:`orthic triangle <orthic-triangle>` of triangle ABC. The lines AA', BB', CC' concur in :ref:`X(847) <X(847)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+
+Incidence
+---------
+
+:ref:`X(847) <X(847)>` lies on the McCay orthic cubic; see `McCay orthic cubic <http://perso.wanadoo.fr/bernard.gibert/Exemples/mccayorthic.html>`__.
+
+:ref:`X(847) <X(847)>` lies and on these lines:
+
+{:ref:`2 <X(2)>`, :ref:`254 <X(254)>`}, {:ref:`3 <X(3)>`, :ref:`925 <X(925)>`}, {:ref:`4 <X(4)>`, :ref:`52 <X(52)>`}, {:ref:`24 <X(24)>`, :ref:`96 <X(96)>`}, {:ref:`91 <X(91)>`, :ref:`225 <X(225)>`}, {:ref:`378 <X(378)>`, 1105}, {:ref:`403 <X(403)>`, 1093}
+
+Relations
+---------
+
+* :ref:`X(847) <X(847)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(1147)
+* :ref:`X(847) <X(847)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(9723)
+* :ref:`X(847) <X(847)>` = polar conjugate of X(1993)
+* :ref:`X(847) <X(847)>` = barycentric product :ref:`X(91) <X(91)>`\ \*\ :ref:`X(92) <X(92)>`
+* :ref:`X(847) <X(847)>` = :ref:`X(5) <X(5)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(4) <X(4)>`
+* :ref:`X(847) <X(847)>` = :term:`cevapoint <cevapoint>` of :ref:`X(485) <X(485)>` and :ref:`X(486) <X(486)>`
+
+Construction
+------------
+
+.. literalinclude:: model.py
+   :language: python

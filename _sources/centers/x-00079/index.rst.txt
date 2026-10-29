@@ -51,7 +51,7 @@ Notes
 
 .. container:: note-item
 
-   Let P and Q be the intersections of line BC and circle {:ref:`X(1) <X(1)>`,2r}. Let X = :ref:`X(1) <X(1)>`. Let A' be the circumcenter of triangle PQX, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(79) <X(79)>`. (Compare to X(592), where the circle is the 1st Lemoine circle) (Randy Hutson, July 20, 2016)
+   Let P and Q be the intersections of line BC and circle {:ref:`X(1) <X(1)>`,2r}. Let X = :ref:`X(1) <X(1)>`. Let A' be the circumcenter of triangle PQX, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(79) <X(79)>`. (Compare to :ref:`X(592) <X(592)>`, where the circle is the 1st Lemoine circle) (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
@@ -66,23 +66,23 @@ Incidence
 
 :ref:`X(79) <X(79)>` lies and on these lines:
 
-{:ref:`1 <X(1)>`, :ref:`30 <X(30)>`}, {:ref:`2 <X(2)>`, 3647}, {:ref:`8 <X(8)>`, 758}, {:ref:`9 <X(9)>`, :ref:`46 <X(46)>`}, {:ref:`12 <X(12)>`, 484}, {:ref:`21 <X(21)>`, :ref:`36 <X(36)>`}, {:ref:`33 <X(33)>`, 1063}, {:ref:`34 <X(34)>`, 1061}, {:ref:`35 <X(35)>`, 226}, {:ref:`57 <X(57)>`, :ref:`90 <X(90)>`}, {:ref:`65 <X(65)>`, :ref:`80 <X(80)>`}, {104, 946}, {314, 320}, {388, 1000}
+{:ref:`1 <X(1)>`, :ref:`30 <X(30)>`}, {:ref:`2 <X(2)>`, 3647}, {:ref:`8 <X(8)>`, :ref:`758 <X(758)>`}, {:ref:`9 <X(9)>`, :ref:`46 <X(46)>`}, {:ref:`12 <X(12)>`, :ref:`484 <X(484)>`}, {:ref:`21 <X(21)>`, :ref:`36 <X(36)>`}, {:ref:`33 <X(33)>`, 1063}, {:ref:`34 <X(34)>`, 1061}, {:ref:`35 <X(35)>`, :ref:`226 <X(226)>`}, {:ref:`57 <X(57)>`, :ref:`90 <X(90)>`}, {:ref:`65 <X(65)>`, :ref:`80 <X(80)>`}, {:ref:`104 <X(104)>`, :ref:`946 <X(946)>`}, {:ref:`314 <X(314)>`, :ref:`320 <X(320)>`}, {:ref:`388 <X(388)>`, :ref:`1000 <X(1000)>`}
 
 Relations
 ---------
 
-* :ref:`X(79) <X(79)>` = reflection of X(191) in X(442)
+* :ref:`X(79) <X(79)>` = reflection of :ref:`X(191) <X(191)>` in :ref:`X(442) <X(442)>`
 * :ref:`X(79) <X(79)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(35) <X(35)>`
-* :ref:`X(79) <X(79)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(319)
-* :ref:`X(79) <X(79)>` = :term:`cevapoint <cevapoint>` of X(481) and X(482)
+* :ref:`X(79) <X(79)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(319) <X(319)>`
+* :ref:`X(79) <X(79)>` = :term:`cevapoint <cevapoint>` of :ref:`X(481) <X(481)>` and :ref:`X(482) <X(482)>`
 * :ref:`X(79) <X(79)>` = :term:`crosssum <crosssum>` of :ref:`X(55) <X(55)>` and X(1030)
 * :ref:`X(79) <X(79)>` = :term:`anticomplement <anticomplement>` of X(3647)
 * :ref:`X(79) <X(79)>` = X(2914) of Fuhrmann triangle
 * :ref:`X(79) <X(79)>` = :term:`antigonal image <antigonal-image>` of X(3065)
-* :ref:`X(79) <X(79)>` = :term:`trilinear pole <trilinear-pole>` of line X(650)X(4802)
+* :ref:`X(79) <X(79)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(650) <X(650)>`\ X(4802)
 * :ref:`X(79) <X(79)>` = perspector of ABC and extraversion triangle of :ref:`X(80) <X(80)>`
 * :ref:`X(79) <X(79)>` = Hofstadter -1/2 point
-* :ref:`X(79) <X(79)>` = trilinear pole of line X(650)X(4802)
+* :ref:`X(79) <X(79)>` = trilinear pole of line :ref:`X(650) <X(650)>`\ X(4802)
 * :ref:`X(79) <X(79)>` = trilinear product of vertices of reflection triangle of :ref:`X(1) <X(1)>`
 * :ref:`X(79) <X(79)>` = X(6152)-of-excentral-triangle
 

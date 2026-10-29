@@ -75,29 +75,29 @@ Incidence
 
 :ref:`X(81) <X(81)>` lies and on these lines:
 
-{:ref:`1 <X(1)>`, :ref:`21 <X(21)>`}, {:ref:`2 <X(2)>`, :ref:`6 <X(6)>`}, {:ref:`7 <X(7)>`, :ref:`27 <X(27)>`}, {:ref:`8 <X(8)>`, 1010}, {:ref:`19 <X(19)>`, 969}, {:ref:`28 <X(28)>`, :ref:`60 <X(60)>`}, {:ref:`29 <X(29)>`, 189}, {:ref:`32 <X(32)>`, 980}, {:ref:`42 <X(42)>`, :ref:`100 <X(100)>`}, {:ref:`43 <X(43)>`, 750}, {:ref:`55 <X(55)>`, 1002}, {:ref:`56 <X(56)>`, 959}, {:ref:`57 <X(57)>`, :ref:`77 <X(77)>`}, {:ref:`65 <X(65)>`, 961}, {:ref:`88 <X(88)>`, 662}, {:ref:`99 <X(99)>`, 739}, {105, 110}, {145, 1043}, {226, 651}, {239, 274}, {314, 321}, {377, 387}, {386, 404}, {411, 581}, {593, 757}, {715, 932}, {859, 957}, {941, 967}, {982, 985}, {1019, 1022}, {1051, 1054}, {1098, 1104}
+{:ref:`1 <X(1)>`, :ref:`21 <X(21)>`}, {:ref:`2 <X(2)>`, :ref:`6 <X(6)>`}, {:ref:`7 <X(7)>`, :ref:`27 <X(27)>`}, {:ref:`8 <X(8)>`, 1010}, {:ref:`19 <X(19)>`, :ref:`969 <X(969)>`}, {:ref:`28 <X(28)>`, :ref:`60 <X(60)>`}, {:ref:`29 <X(29)>`, :ref:`189 <X(189)>`}, {:ref:`32 <X(32)>`, :ref:`980 <X(980)>`}, {:ref:`42 <X(42)>`, :ref:`100 <X(100)>`}, {:ref:`43 <X(43)>`, :ref:`750 <X(750)>`}, {:ref:`55 <X(55)>`, 1002}, {:ref:`56 <X(56)>`, :ref:`959 <X(959)>`}, {:ref:`57 <X(57)>`, :ref:`77 <X(77)>`}, {:ref:`65 <X(65)>`, :ref:`961 <X(961)>`}, {:ref:`88 <X(88)>`, :ref:`662 <X(662)>`}, {:ref:`99 <X(99)>`, :ref:`739 <X(739)>`}, {:ref:`105 <X(105)>`, :ref:`110 <X(110)>`}, {:ref:`145 <X(145)>`, 1043}, {:ref:`226 <X(226)>`, :ref:`651 <X(651)>`}, {:ref:`239 <X(239)>`, :ref:`274 <X(274)>`}, {:ref:`314 <X(314)>`, :ref:`321 <X(321)>`}, {:ref:`377 <X(377)>`, :ref:`387 <X(387)>`}, {:ref:`386 <X(386)>`, :ref:`404 <X(404)>`}, {:ref:`411 <X(411)>`, :ref:`581 <X(581)>`}, {:ref:`593 <X(593)>`, :ref:`757 <X(757)>`}, {:ref:`715 <X(715)>`, :ref:`932 <X(932)>`}, {:ref:`859 <X(859)>`, :ref:`957 <X(957)>`}, {:ref:`941 <X(941)>`, :ref:`967 <X(967)>`}, {:ref:`982 <X(982)>`, :ref:`985 <X(985)>`}, {1019, 1022}, {1051, 1054}, {1098, 1104}
 
 Relations
 ---------
 
 * :ref:`X(81) <X(81)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(37) <X(37)>`
-* :ref:`X(81) <X(81)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(321)
+* :ref:`X(81) <X(81)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(321) <X(321)>`
 * :ref:`X(81) <X(81)>` = anticomplement of X(1211)
 * :ref:`X(81) <X(81)>` = circumcircle-inverse of X(5867)
-* :ref:`X(81) <X(81)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`7 <X(7)>`, 229), (:ref:`86 <X(86)>`, :ref:`21 <X(21)>`), (286, :ref:`28 <X(28)>`)
-* :ref:`X(81) <X(81)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`6 <X(6)>`), (:ref:`57 <X(57)>`, 222), (:ref:`58 <X(58)>`, 284)
-* :ref:`X(81) <X(81)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`86 <X(86)>`), (:ref:`3 <X(3)>`, 272), (:ref:`6 <X(6)>`, :ref:`58 <X(58)>`), (:ref:`57 <X(57)>`, :ref:`27 <X(27)>`), (284, :ref:`21 <X(21)>`)
-* :ref:`X(81) <X(81)>` = :term:`crosspoint <crosspoint>` of X(274) and X(286)
-* :ref:`X(81) <X(81)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, 846), (:ref:`6 <X(6)>`, 1030), (:ref:`42 <X(42)>`, 1334), (213, 228)
-* :ref:`X(81) <X(81)>` = :term:`crossdifference <crossdifference>` of every pair of points on line X(512)X(661)
-* :ref:`X(81) <X(81)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (333, 333), (643, :ref:`81 <X(81)>`), (645, :ref:`81 <X(81)>`), (648, :ref:`81 <X(81)>`), (662, :ref:`81 <X(81)>`), (931, :ref:`81 <X(81)>`)
+* :ref:`X(81) <X(81)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`7 <X(7)>`, :ref:`229 <X(229)>`), (:ref:`86 <X(86)>`, :ref:`21 <X(21)>`), (:ref:`286 <X(286)>`, :ref:`28 <X(28)>`)
+* :ref:`X(81) <X(81)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`6 <X(6)>`), (:ref:`57 <X(57)>`, :ref:`222 <X(222)>`), (:ref:`58 <X(58)>`, :ref:`284 <X(284)>`)
+* :ref:`X(81) <X(81)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`86 <X(86)>`), (:ref:`3 <X(3)>`, :ref:`272 <X(272)>`), (:ref:`6 <X(6)>`, :ref:`58 <X(58)>`), (:ref:`57 <X(57)>`, :ref:`27 <X(27)>`), (:ref:`284 <X(284)>`, :ref:`21 <X(21)>`)
+* :ref:`X(81) <X(81)>` = :term:`crosspoint <crosspoint>` of :ref:`X(274) <X(274)>` and :ref:`X(286) <X(286)>`
+* :ref:`X(81) <X(81)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`846 <X(846)>`), (:ref:`6 <X(6)>`, 1030), (:ref:`42 <X(42)>`, 1334), (:ref:`213 <X(213)>`, :ref:`228 <X(228)>`)
+* :ref:`X(81) <X(81)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(512) <X(512)>`\ \ :ref:`X(661) <X(661)>`
+* :ref:`X(81) <X(81)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`333 <X(333)>`, :ref:`333 <X(333)>`), (:ref:`643 <X(643)>`, :ref:`81 <X(81)>`), (:ref:`645 <X(645)>`, :ref:`81 <X(81)>`), (:ref:`648 <X(648)>`, :ref:`81 <X(81)>`), (:ref:`662 <X(662)>`, :ref:`81 <X(81)>`), (:ref:`931 <X(931)>`, :ref:`81 <X(81)>`)
 * :ref:`X(81) <X(81)>` = trilinear product of PU(31)
 * :ref:`X(81) <X(81)>` = intersection of tangents at :ref:`X(1) <X(1)>` and :ref:`X(6) <X(6)>` to the Stammler hyperbola
 * :ref:`X(81) <X(81)>` = crosspoint of :ref:`X(1) <X(1)>` and :ref:`X(6) <X(6)>` wrt both the excentral and tangential triangles
-* :ref:`X(81) <X(81)>` = trilinear pole of line :ref:`X(36) <X(36)>`\ X(238) (the polar of :ref:`X(1) <X(1)>` wrt the circumcircle)
+* :ref:`X(81) <X(81)>` = trilinear pole of line :ref:`X(36) <X(36)>`\ \ :ref:`X(238) <X(238)>` (the polar of :ref:`X(1) <X(1)>` wrt the circumcircle)
 * :ref:`X(81) <X(81)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(31) <X(31)>`}-harmonic conjugate of X(1621)
 * :ref:`X(81) <X(81)>` = :ref:`X(6) <X(6)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(10) <X(10)>`
-* :ref:`X(81) <X(81)>` = :ref:`X(92) <X(92)>`-isoconjugate of X(228)
+* :ref:`X(81) <X(81)>` = :ref:`X(92) <X(92)>`-isoconjugate of :ref:`X(228) <X(228)>`
 * :ref:`X(81) <X(81)>` = perspector of ABC and cross-triangle of Gemini triangles 1 and 2
 * :ref:`X(81) <X(81)>` = barycentric product of vertices of Gemini triangle 1
 * :ref:`X(81) <X(81)>` = barycentric product of vertices of Gemini triangle 2

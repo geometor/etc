@@ -158,9 +158,9 @@ Module Contents
       :type:  dict[int, tuple[float, float]]
 
 
-.. py:function:: build_center_model(center_data: dict[str, Any], registry: CenterRegistry, include_baseline_guides: bool = True) -> geometor.model.Model
+.. py:function:: build_center_model(center_data: dict[str, Any], registry: CenterRegistry, include_baseline_guides: bool = False) -> geometor.model.Model
 
-   Build a `geometor.model.Model` for `center_data` starting from the unit segment AB.
+   Build a `geometor.model.Model` for `center_data` with a clean primary construction and toggleable `.incident` lines.
 
 
 .. py:function:: generate_center_model_py(center_data: dict[str, Any], registry: CenterRegistry) -> str

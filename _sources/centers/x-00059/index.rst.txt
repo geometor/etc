@@ -35,18 +35,18 @@ Incidence
 
 :ref:`X(59) <X(59)>` lies and on these lines:
 
-{:ref:`36 <X(36)>`, 1110}, {:ref:`60 <X(60)>`, 1101}, {:ref:`100 <X(100)>`, 521}, {101, 657}, {109, 901}, {513, 651}, {518, 765}, {523, 655}
+{:ref:`36 <X(36)>`, 1110}, {:ref:`60 <X(60)>`, 1101}, {:ref:`100 <X(100)>`, :ref:`521 <X(521)>`}, {:ref:`101 <X(101)>`, :ref:`657 <X(657)>`}, {:ref:`109 <X(109)>`, :ref:`901 <X(901)>`}, {:ref:`513 <X(513)>`, :ref:`651 <X(651)>`}, {:ref:`518 <X(518)>`, :ref:`765 <X(765)>`}, {:ref:`523 <X(523)>`, :ref:`655 <X(655)>`}
 
 Relations
 ---------
 
 * :ref:`X(59) <X(59)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(11) <X(11)>`
 * :ref:`X(59) <X(59)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(34387)
-* :ref:`X(59) <X(59)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these (i,j): (:ref:`55 <X(55)>`, 101), (:ref:`56 <X(56)>`, 109), (1381, 1382)
-* :ref:`X(59) <X(59)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, 110), (:ref:`3 <X(3)>`, :ref:`100 <X(100)>`), (:ref:`55 <X(55)>`, 101), (:ref:`56 <X(56)>`, 109), (182, 1492)
+* :ref:`X(59) <X(59)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these (i,j): (:ref:`55 <X(55)>`, :ref:`101 <X(101)>`), (:ref:`56 <X(56)>`, :ref:`109 <X(109)>`), (1381, 1382)
+* :ref:`X(59) <X(59)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`110 <X(110)>`), (:ref:`3 <X(3)>`, :ref:`100 <X(100)>`), (:ref:`55 <X(55)>`, :ref:`101 <X(101)>`), (:ref:`56 <X(56)>`, :ref:`109 <X(109)>`), (:ref:`182 <X(182)>`, 1492)
 * :ref:`X(59) <X(59)>` = :term:`crossdifference <crossdifference>` of every pair of points on line X(4530)X(14393)
-* :ref:`X(59) <X(59)>` = X(765)-:term:`beth conjugate <beth-conjugate>` of X(765)
-* :ref:`X(59) <X(59)>` = :term:`trilinear pole <trilinear-pole>` of line X(101)X(109)
+* :ref:`X(59) <X(59)>` = :ref:`X(765) <X(765)>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X(765) <X(765)>`
+* :ref:`X(59) <X(59)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(101) <X(101)>`\ \ :ref:`X(109) <X(109)>`
 * :ref:`X(59) <X(59)>` = perspector of ABC and the reflection of the :term:`intouch triangle <intouch-triangle>` in line :ref:`X(1) <X(1)>`\ \ :ref:`X(3) <X(3)>`
 * :ref:`X(59) <X(59)>` = perspector of ABC and extraversion triangle of :ref:`X(60) <X(60)>`
 * :ref:`X(59) <X(59)>` = :ref:`X(75) <X(75)>`-:term:`isoconjugate <isoconjugate>` of X(3271)

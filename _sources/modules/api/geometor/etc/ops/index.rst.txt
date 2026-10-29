@@ -357,7 +357,7 @@ Module Contents
    Construct the cevapoint of P and Q with respect to triangle ABC.
 
 
-.. py:function:: central_line(model: geometor.model.Model, P: sympy.geometry.Point, Q: sympy.geometry.Point, i_num: int, j_num: int) -> sympy.geometry.Line
+.. py:function:: central_line(model: geometor.model.Model, P: sympy.geometry.Point, Q: sympy.geometry.Point, i_num: int, j_num: int, incident: bool = False) -> sympy.geometry.Line
 
    Add the central line {i, j} passing through X(i) and X(j), styled as Euler line if applicable.
 

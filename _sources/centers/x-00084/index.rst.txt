@@ -54,22 +54,22 @@ Incidence
 
 :ref:`X(84) <X(84)>` lies on the Darboux cubic, the circumellipse with center :ref:`X(9) <X(9)>` and on these lines:
 
-{:ref:`1 <X(1)>`, 221}, {:ref:`3 <X(3)>`, :ref:`9 <X(9)>`}, {:ref:`4 <X(4)>`, :ref:`57 <X(57)>`}, {:ref:`7 <X(7)>`, 946}, {:ref:`8 <X(8)>`, :ref:`20 <X(20)>`}, {:ref:`21 <X(21)>`, 285}, {:ref:`33 <X(33)>`, 603}, {:ref:`36 <X(36)>`, :ref:`90 <X(90)>`}, {:ref:`46 <X(46)>`, :ref:`80 <X(80)>`}, {:ref:`58 <X(58)>`, 990}, {:ref:`64 <X(64)>`, 3353}, {171, 989}, {256, 988}, {294, 580}, {309, 314}, {581, 941}, {944, 1000}, {2130, 3345}, {3346, 3472}, {3347, 3355}
+{:ref:`1 <X(1)>`, :ref:`221 <X(221)>`}, {:ref:`3 <X(3)>`, :ref:`9 <X(9)>`}, {:ref:`4 <X(4)>`, :ref:`57 <X(57)>`}, {:ref:`7 <X(7)>`, :ref:`946 <X(946)>`}, {:ref:`8 <X(8)>`, :ref:`20 <X(20)>`}, {:ref:`21 <X(21)>`, :ref:`285 <X(285)>`}, {:ref:`33 <X(33)>`, :ref:`603 <X(603)>`}, {:ref:`36 <X(36)>`, :ref:`90 <X(90)>`}, {:ref:`46 <X(46)>`, :ref:`80 <X(80)>`}, {:ref:`58 <X(58)>`, :ref:`990 <X(990)>`}, {:ref:`64 <X(64)>`, 3353}, {:ref:`171 <X(171)>`, :ref:`989 <X(989)>`}, {:ref:`256 <X(256)>`, :ref:`988 <X(988)>`}, {:ref:`294 <X(294)>`, :ref:`580 <X(580)>`}, {:ref:`309 <X(309)>`, :ref:`314 <X(314)>`}, {:ref:`581 <X(581)>`, :ref:`941 <X(941)>`}, {:ref:`944 <X(944)>`, :ref:`1000 <X(1000)>`}, {2130, 3345}, {3346, 3472}, {3347, 3355}
 
 Relations
 ---------
 
 * :ref:`X(84) <X(84)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`40 <X(40)>`, 1158), (1490, :ref:`3 <X(3)>`)
 * :ref:`X(84) <X(84)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(40) <X(40)>`
-* :ref:`X(84) <X(84)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(322)
-* :ref:`X(84) <X(84)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (189, 282), (280, :ref:`1 <X(1)>`)
+* :ref:`X(84) <X(84)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(322) <X(322)>`
+* :ref:`X(84) <X(84)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`189 <X(189)>`, :ref:`282 <X(282)>`), (:ref:`280 <X(280)>`, :ref:`1 <X(1)>`)
 * :ref:`X(84) <X(84)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`19 <X(19)>`, :ref:`57 <X(57)>`), (:ref:`56 <X(56)>`, :ref:`1 <X(1)>`)
-* :ref:`X(84) <X(84)>` = X(280)-:term:`aleph conjugate <aleph-conjugate>` of :ref:`X(84) <X(84)>`
-* :ref:`X(84) <X(84)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (271, :ref:`3 <X(3)>`), (280, 280), (285, :ref:`84 <X(84)>`)
+* :ref:`X(84) <X(84)>` = :ref:`X(280) <X(280)>`-:term:`aleph conjugate <aleph-conjugate>` of :ref:`X(84) <X(84)>`
+* :ref:`X(84) <X(84)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`271 <X(271)>`, :ref:`3 <X(3)>`), (:ref:`280 <X(280)>`, :ref:`280 <X(280)>`), (:ref:`285 <X(285)>`, :ref:`84 <X(84)>`)
 * :ref:`X(84) <X(84)>` = :ref:`X(68) <X(68)>`-of-the-hexyl-triangle
-* :ref:`X(84) <X(84)>` = :term:`trilinear pole <trilinear-pole>` of line X(650)X(1459)
+* :ref:`X(84) <X(84)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(650) <X(650)>`\ X(1459)
 * :ref:`X(84) <X(84)>` = perspector of ABC and the reflection in :ref:`X(9) <X(9)>` of the :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(9) <X(9)>`
-* :ref:`X(84) <X(84)>` = Danneels point of X(110)
+* :ref:`X(84) <X(84)>` = Danneels point of :ref:`X(110) <X(110)>`
 * :ref:`X(84) <X(84)>` = trilinear product of vertices of hexyl triangle (i.e., the extraversions of :ref:`X(40) <X(40)>`)
 * :ref:`X(84) <X(84)>` = hexyl-isotomic conjugate of X(12717)
 * :ref:`X(84) <X(84)>` = orthologic center of hexyl triangle to inverse(n(hexyl triangle)); the reciprocal orthologic center is :ref:`X(65) <X(65)>`

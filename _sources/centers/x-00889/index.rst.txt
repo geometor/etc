@@ -1,0 +1,51 @@
+:order: 889
+:type: center
+:canonical_id: X(889)
+:dependencies: X(2), X(99), X(190), X(350), X(513), X(649), X(668), X(890), X(891), X(898), X(903), X(39011)
+
+.. _X(889):
+
+X(889) = INTERSECTION OF LINES X(99)X(898) AND X(190)X(649)
+===========================================================
+
+.. figure:: x-00889.svg
+   :alt: X(889) = INTERSECTION OF LINES X(99)X(898) AND X(190)X(649)
+   :align: center
+
+   **X(889) = INTERSECTION OF LINES X(99)X(898) AND X(190)X(649)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+
+Coordinates
+-----------
+
+Trilinears
+~~~~~~~~~~
+
+* :math:`(a^{2}u^{2} - bcvw)/[a^{2}u(bv - cw)] : :`, where u : v : w = :ref:`X(513) <X(513)>`
+
+Barycentrics
+~~~~~~~~~~~~
+
+* :math:`b c/((b - c) (a b + a c - 2 b c)) : :`
+
+* **Kimberling (6, 9, 13) Search Value:** :math:`2.749435946006`
+
+Incidence
+---------
+
+:ref:`X(889) <X(889)>` lies on the Steiner circumellipse, the hyperbola {A,B,C,PU(41)}}j and on these lines:
+
+{:ref:`99 <X(99)>`, :ref:`898 <X(898)>`}, {:ref:`190 <X(190)>`, :ref:`649 <X(649)>`}, {:ref:`350 <X(350)>`, :ref:`903 <X(903)>`}, {:ref:`513 <X(513)>`, :ref:`668 <X(668)>`}
+
+Relations
+---------
+
+* :ref:`X(889) <X(889)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(890) <X(890)>`
+* :ref:`X(889) <X(889)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(891) <X(891)>`
+* :ref:`X(889) <X(889)>` = :term:`anticomplement <anticomplement>` of X(39011)
+* :ref:`X(889) <X(889)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(2) <X(2)>`\ \ :ref:`X(668) <X(668)>`
+
+Construction
+------------
+
+.. literalinclude:: model.py
+   :language: python

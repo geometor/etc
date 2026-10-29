@@ -149,6 +149,10 @@
           <span class="sd">    display: none !important;</span>
           <span class="sd">}</span>
 
+          <span class="sd">svg.geometor-etc-drawing:not(.show-lines) .incident {</span>
+          <span class="sd">    display: none !important;</span>
+          <span class="sd">}</span>
+
           <span class="sd">#points circle {</span>
           <span class="sd">    fill: var(--text-color);</span>
           <span class="sd">    stroke: var(--background-color);</span>
@@ -536,21 +540,49 @@
           <span class="sd">                { label: '+', title: 'Zoom In (or scroll wheel)', action: () =&gt; zoomBy(1 / 1.25) },</span>
           <span class="sd">                { label: '−', title: 'Zoom Out (or scroll wheel)', action: () =&gt; zoomBy(1.25) },</span>
           <span class="sd">                { label: '⟲ Fit', title: 'Reset View (or double-click canvas)', action: () =&gt; resetView() },</span>
-          <span class="sd">                { label: 'Labels', title: 'Toggle Point Labels', action: () =&gt; svg.classList.toggle('hide-labels') },</span>
           <span class="sd">            ];</span>
+          <span class="sd">            if (svg.querySelector('.incident')) {</span>
+          <span class="sd">                btns.push({</span>
+          <span class="sd">                    label: 'Lines',</span>
+          <span class="sd">                    toggleKey: 'lines',</span>
+          <span class="sd">                    title: 'Toggle Incident Central Lines',</span>
+          <span class="sd">                    isActive: () =&gt; svg.classList.contains('show-lines'),</span>
+          <span class="sd">                    action: () =&gt; svg.classList.toggle('show-lines'),</span>
+          <span class="sd">                });</span>
+          <span class="sd">            }</span>
+          <span class="sd">            btns.push({</span>
+          <span class="sd">                label: 'Labels',</span>
+          <span class="sd">                toggleKey: 'labels',</span>
+          <span class="sd">                title: 'Toggle Point Labels',</span>
+          <span class="sd">                isActive: () =&gt; !svg.classList.contains('hide-labels'),</span>
+          <span class="sd">                action: () =&gt; svg.classList.toggle('hide-labels'),</span>
+          <span class="sd">            });</span>
           <span class="sd">            if (svg.querySelector('.guide')) {</span>
-          <span class="sd">                btns.push({ label: 'Guides', title: 'Toggle Construction Guides', action: () =&gt; svg.classList.toggle('hide-guides') });</span>
+          <span class="sd">                btns.push({</span>
+          <span class="sd">                    label: 'Guides',</span>
+          <span class="sd">                    toggleKey: 'guides',</span>
+          <span class="sd">                    title: 'Toggle Construction Guides',</span>
+          <span class="sd">                    isActive: () =&gt; !svg.classList.contains('hide-guides'),</span>
+          <span class="sd">                    action: () =&gt; svg.classList.toggle('hide-guides'),</span>
+          <span class="sd">                });</span>
           <span class="sd">            }</span>
           <span class="sd">            btns.forEach(b =&gt; {</span>
           <span class="sd">                const btn = document.createElement('button');</span>
           <span class="sd">                btn.type = 'button';</span>
           <span class="sd">                btn.className = 'etc-svg-btn';</span>
+          <span class="sd">                if (b.toggleKey) {</span>
+          <span class="sd">                    btn.dataset.toggleKey = b.toggleKey;</span>
+          <span class="sd">                    btn.classList.toggle('active', b.isActive());</span>
+          <span class="sd">                }</span>
           <span class="sd">                btn.textContent = b.label;</span>
           <span class="sd">                btn.title = b.title;</span>
           <span class="sd">                btn.addEventListener('click', (e) =&gt; {</span>
           <span class="sd">                    e.preventDefault();</span>
           <span class="sd">                    e.stopPropagation();</span>
           <span class="sd">                    b.action();</span>
+          <span class="sd">                    if (b.isActive) {</span>
+          <span class="sd">                        btn.classList.toggle('active', b.isActive());</span>
+          <span class="sd">                    }</span>
           <span class="sd">                });</span>
           <span class="sd">                toolbar.appendChild(btn);</span>
           <span class="sd">            });</span>
@@ -571,6 +603,7 @@
           <span class="sd">                    const prevSvg = prevPane ? prevPane.querySelector('svg.geometor-etc-drawing') : null;</span>
           <span class="sd">                    const hideLabels = prevSvg ? prevSvg.classList.contains('hide-labels') : false;</span>
           <span class="sd">                    const hideGuides = prevSvg ? prevSvg.classList.contains('hide-guides') : false;</span>
+          <span class="sd">                    const showLines = prevSvg ? prevSvg.classList.contains('show-lines') : false;</span>
 
           <span class="sd">                    tabBtns.forEach(b =&gt; {</span>
           <span class="sd">                        const isMatch = b.getAttribute('data-tab') === targetTab;</span>
@@ -587,6 +620,16 @@
           <span class="sd">                            if (paneSvg) {</span>
           <span class="sd">                                paneSvg.classList.toggle('hide-labels', hideLabels);</span>
           <span class="sd">                                paneSvg.classList.toggle('hide-guides', hideGuides);</span>
+          <span class="sd">                                paneSvg.classList.toggle('show-lines', showLines);</span>
+          <span class="sd">                                const paneToolbar = pane.querySelector('.etc-svg-toolbar');</span>
+          <span class="sd">                                if (paneToolbar) {</span>
+          <span class="sd">                                    const lBtn = paneToolbar.querySelector('[data-toggle-key="lines"]');</span>
+          <span class="sd">                                    if (lBtn) lBtn.classList.toggle('active', showLines);</span>
+          <span class="sd">                                    const lblBtn = paneToolbar.querySelector('[data-toggle-key="labels"]');</span>
+          <span class="sd">                                    if (lblBtn) lblBtn.classList.toggle('active', !hideLabels);</span>
+          <span class="sd">                                    const gBtn = paneToolbar.querySelector('[data-toggle-key="guides"]');</span>
+          <span class="sd">                                    if (gBtn) gBtn.classList.toggle('active', !hideGuides);</span>
+          <span class="sd">                                }</span>
           <span class="sd">                                if (paneSvg._etcController) {</span>
           <span class="sd">                                    paneSvg._etcController.scaleViewElements();</span>
           <span class="sd">                                    requestAnimationFrame(() =&gt; paneSvg._etcController.scaleViewElements());</span>

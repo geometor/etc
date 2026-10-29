@@ -77,25 +77,25 @@ Incidence
 
 :ref:`X(69) <X(69)>` lies on the Lucas cubic and on these lines:
 
-{:ref:`2 <X(2)>`, :ref:`6 <X(6)>`}, {:ref:`3 <X(3)>`, 332}, {:ref:`4 <X(4)>`, :ref:`76 <X(76)>`}, {:ref:`7 <X(7)>`, :ref:`8 <X(8)>`}, {:ref:`9 <X(9)>`, 344}, {:ref:`10 <X(10)>`, 969}, {:ref:`20 <X(20)>`, :ref:`64 <X(64)>`}, {:ref:`22 <X(22)>`, 159}, {:ref:`54 <X(54)>`, :ref:`95 <X(95)>`}, {:ref:`63 <X(63)>`, :ref:`71 <X(71)>`}, {:ref:`72 <X(72)>`, 304}, {:ref:`73 <X(73)>`, :ref:`77 <X(77)>`}, {:ref:`74 <X(74)>`, :ref:`99 <X(99)>`}, {110, 206}, {125, 895}, {144, 190}, {150, 668}, {189, 309}, {192, 742}, {194, 695}, {200, 269}, {219, 1332}, {248, 287}, {263, 308}, {265, 328}, {274, 443}, {290, 670}, {297, 393}, {347, 664}, {350, 497}, {404, 1014}, {478, 651}, {485, 639}, {486, 640}, {520, 879}, {1225, 2888}, {1369, 3410}
+{:ref:`2 <X(2)>`, :ref:`6 <X(6)>`}, {:ref:`3 <X(3)>`, :ref:`332 <X(332)>`}, {:ref:`4 <X(4)>`, :ref:`76 <X(76)>`}, {:ref:`7 <X(7)>`, :ref:`8 <X(8)>`}, {:ref:`9 <X(9)>`, :ref:`344 <X(344)>`}, {:ref:`10 <X(10)>`, :ref:`969 <X(969)>`}, {:ref:`20 <X(20)>`, :ref:`64 <X(64)>`}, {:ref:`22 <X(22)>`, :ref:`159 <X(159)>`}, {:ref:`54 <X(54)>`, :ref:`95 <X(95)>`}, {:ref:`63 <X(63)>`, :ref:`71 <X(71)>`}, {:ref:`72 <X(72)>`, :ref:`304 <X(304)>`}, {:ref:`73 <X(73)>`, :ref:`77 <X(77)>`}, {:ref:`74 <X(74)>`, :ref:`99 <X(99)>`}, {:ref:`110 <X(110)>`, :ref:`206 <X(206)>`}, {:ref:`125 <X(125)>`, :ref:`895 <X(895)>`}, {:ref:`144 <X(144)>`, :ref:`190 <X(190)>`}, {:ref:`150 <X(150)>`, :ref:`668 <X(668)>`}, {:ref:`189 <X(189)>`, :ref:`309 <X(309)>`}, {:ref:`192 <X(192)>`, :ref:`742 <X(742)>`}, {:ref:`194 <X(194)>`, :ref:`695 <X(695)>`}, {:ref:`200 <X(200)>`, :ref:`269 <X(269)>`}, {:ref:`219 <X(219)>`, 1332}, {:ref:`248 <X(248)>`, :ref:`287 <X(287)>`}, {:ref:`263 <X(263)>`, :ref:`308 <X(308)>`}, {:ref:`265 <X(265)>`, :ref:`328 <X(328)>`}, {:ref:`274 <X(274)>`, :ref:`443 <X(443)>`}, {:ref:`290 <X(290)>`, :ref:`670 <X(670)>`}, {:ref:`297 <X(297)>`, :ref:`393 <X(393)>`}, {:ref:`347 <X(347)>`, :ref:`664 <X(664)>`}, {:ref:`350 <X(350)>`, :ref:`497 <X(497)>`}, {:ref:`404 <X(404)>`, 1014}, {:ref:`478 <X(478)>`, :ref:`651 <X(651)>`}, {:ref:`485 <X(485)>`, :ref:`639 <X(639)>`}, {:ref:`486 <X(486)>`, :ref:`640 <X(640)>`}, {:ref:`520 <X(520)>`, :ref:`879 <X(879)>`}, {1225, 2888}, {1369, 3410}
 
 Relations
 ---------
 
-* :ref:`X(69) <X(69)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`2 <X(2)>`, 599), (:ref:`4 <X(4)>`, 1352), (:ref:`6 <X(6)>`, 141), (:ref:`20 <X(20)>`, 1350), (193, :ref:`6 <X(6)>`), (895, 125), (1351, :ref:`5 <X(5)>`), (1353, 140)
+* :ref:`X(69) <X(69)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`599 <X(599)>`), (:ref:`4 <X(4)>`, 1352), (:ref:`6 <X(6)>`, :ref:`141 <X(141)>`), (:ref:`20 <X(20)>`, 1350), (:ref:`193 <X(193)>`, :ref:`6 <X(6)>`), (:ref:`895 <X(895)>`, :ref:`125 <X(125)>`), (1351, :ref:`5 <X(5)>`), (1353, :ref:`140 <X(140)>`)
 * :ref:`X(69) <X(69)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(25) <X(25)>`
 * :ref:`X(69) <X(69)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(4) <X(4)>`
-* :ref:`X(69) <X(69)>` = :term:`complement <complement>` of X(193)
+* :ref:`X(69) <X(69)>` = :term:`complement <complement>` of :ref:`X(193) <X(193)>`
 * :ref:`X(69) <X(69)>` = :term:`anticomplement <anticomplement>` of :ref:`X(6) <X(6)>`
 * :ref:`X(69) <X(69)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X(2) <X(2)>`
 * :ref:`X(69) <X(69)>` = circumcircle-inverse of X(5866)
-* :ref:`X(69) <X(69)>` = :term:`cyclocevian conjugate <cyclocevian-conjugate>` of X(253)
-* :ref:`X(69) <X(69)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`76 <X(76)>`, :ref:`2 <X(2)>`), (304, 345), (314, :ref:`75 <X(75)>`), (332, 326)
-* :ref:`X(69) <X(69)>` = cevapoint of X(i) and X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`20 <X(20)>`), (:ref:`3 <X(3)>`, 394), (:ref:`6 <X(6)>`, 159), (:ref:`8 <X(8)>`, 329), (:ref:`63 <X(63)>`, :ref:`78 <X(78)>`), (:ref:`72 <X(72)>`, 306), (125, 525)
-* :ref:`X(69) <X(69)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`3 <X(3)>`, :ref:`2 <X(2)>`), (:ref:`63 <X(63)>`, 348), (:ref:`72 <X(72)>`, :ref:`63 <X(63)>`), (:ref:`78 <X(78)>`, 345), (125, 525), (306, 304), (307, :ref:`75 <X(75)>`), (343, :ref:`76 <X(76)>`)
-* :ref:`X(69) <X(69)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`2 <X(2)>`, 2996), (:ref:`76 <X(76)>`, 305), (314, 332)
-* :ref:`X(69) <X(69)>` = :ref:`X(2) <X(2)>`-:term:`Hirst inverse <hirst-inverse>` of X(325)
-* :ref:`X(69) <X(69)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`69 <X(69)>`, :ref:`77 <X(77)>`), (:ref:`99 <X(99)>`, 347), (314, :ref:`7 <X(7)>`), (332, :ref:`69 <X(69)>`), (645, :ref:`69 <X(69)>`), (668, :ref:`69 <X(69)>`)
+* :ref:`X(69) <X(69)>` = :term:`cyclocevian conjugate <cyclocevian-conjugate>` of :ref:`X(253) <X(253)>`
+* :ref:`X(69) <X(69)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`76 <X(76)>`, :ref:`2 <X(2)>`), (:ref:`304 <X(304)>`, :ref:`345 <X(345)>`), (:ref:`314 <X(314)>`, :ref:`75 <X(75)>`), (:ref:`332 <X(332)>`, :ref:`326 <X(326)>`)
+* :ref:`X(69) <X(69)>` = cevapoint of X(i) and X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`20 <X(20)>`), (:ref:`3 <X(3)>`, :ref:`394 <X(394)>`), (:ref:`6 <X(6)>`, :ref:`159 <X(159)>`), (:ref:`8 <X(8)>`, :ref:`329 <X(329)>`), (:ref:`63 <X(63)>`, :ref:`78 <X(78)>`), (:ref:`72 <X(72)>`, :ref:`306 <X(306)>`), (:ref:`125 <X(125)>`, :ref:`525 <X(525)>`)
+* :ref:`X(69) <X(69)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`3 <X(3)>`, :ref:`2 <X(2)>`), (:ref:`63 <X(63)>`, :ref:`348 <X(348)>`), (:ref:`72 <X(72)>`, :ref:`63 <X(63)>`), (:ref:`78 <X(78)>`, :ref:`345 <X(345)>`), (:ref:`125 <X(125)>`, :ref:`525 <X(525)>`), (:ref:`306 <X(306)>`, :ref:`304 <X(304)>`), (:ref:`307 <X(307)>`, :ref:`75 <X(75)>`), (:ref:`343 <X(343)>`, :ref:`76 <X(76)>`)
+* :ref:`X(69) <X(69)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`2 <X(2)>`, 2996), (:ref:`76 <X(76)>`, :ref:`305 <X(305)>`), (:ref:`314 <X(314)>`, :ref:`332 <X(332)>`)
+* :ref:`X(69) <X(69)>` = :ref:`X(2) <X(2)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(325) <X(325)>`
+* :ref:`X(69) <X(69)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`69 <X(69)>`, :ref:`77 <X(77)>`), (:ref:`99 <X(99)>`, :ref:`347 <X(347)>`), (:ref:`314 <X(314)>`, :ref:`7 <X(7)>`), (:ref:`332 <X(332)>`, :ref:`69 <X(69)>`), (:ref:`645 <X(645)>`, :ref:`69 <X(69)>`), (:ref:`668 <X(668)>`, :ref:`69 <X(69)>`)
 * :ref:`X(69) <X(69)>` = barycentric product of PU(37)
 * :ref:`X(69) <X(69)>` = bicentric sum of PU(132)
 * :ref:`X(69) <X(69)>` = midpoint of PU(132)
@@ -104,16 +104,16 @@ Relations
 * :ref:`X(69) <X(69)>` = perspector of ABC and (reflection in :ref:`X(2) <X(2)>` of the pedal triangle of :ref:`X(2) <X(2)>`)
 * :ref:`X(69) <X(69)>` = intersection of extended sides P(11)U(45) and U(11)P(45) of the trapezoid PU(11)PU(45)
 * :ref:`X(69) <X(69)>` = perspector of ABC and 4th :term:`extouch triangle <extouch-triangle>`
-* :ref:`X(69) <X(69)>` = antipode of X(287) in hyperbola {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(69) <X(69)>`}}
-* :ref:`X(69) <X(69)>` = trilinear pole of line X(441)X(525)
-* :ref:`X(69) <X(69)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X(393) (line X(460)X(512))
-* :ref:`X(69) <X(69)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of X(393)
+* :ref:`X(69) <X(69)>` = antipode of :ref:`X(287) <X(287)>` in hyperbola {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(69) <X(69)>`}}
+* :ref:`X(69) <X(69)>` = trilinear pole of line :ref:`X(441) <X(441)>`\ \ :ref:`X(525) <X(525)>`
+* :ref:`X(69) <X(69)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(393) <X(393)>` (line :ref:`X(460) <X(460)>`\ \ :ref:`X(512) <X(512)>`)
+* :ref:`X(69) <X(69)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X(393) <X(393)>`
 * :ref:`X(69) <X(69)>` = :ref:`X(6) <X(6)>`-isoconjugate of :ref:`X(19) <X(19)>`
 * :ref:`X(69) <X(69)>` = :ref:`X(92) <X(92)>`-isoconjugate of :ref:`X(32) <X(32)>`
-* :ref:`X(69) <X(69)>` = :term:`antigonal image <antigonal-image>` of X(895)
+* :ref:`X(69) <X(69)>` = :term:`antigonal image <antigonal-image>` of :ref:`X(895) <X(895)>`
 * :ref:`X(69) <X(69)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`6 <X(6)>`, 3053), (:ref:`32 <X(32)>`, 1974)
 * :ref:`X(69) <X(69)>` = perspector of ABC and the 2nd pedal triangle of :ref:`X(3) <X(3)>`
-* :ref:`X(69) <X(69)>` = crosspoint of :ref:`X(6) <X(6)>` and X(159) wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
+* :ref:`X(69) <X(69)>` = crosspoint of :ref:`X(6) <X(6)>` and :ref:`X(159) <X(159)>` wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
 * :ref:`X(69) <X(69)>` = crosspoint of :ref:`X(2) <X(2)>` and :ref:`X(20) <X(20)>` wrt both the excentral and anticomplementary triangles
 * :ref:`X(69) <X(69)>` = homothetic center of anticomplementary triangle and 2nd :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(4) <X(4)>` (i.e., of 1st and 2nd antipedal triangles of :ref:`X(4) <X(4)>`)
 * :ref:`X(69) <X(69)>` = perspector of the complement of the polar circle
@@ -125,7 +125,7 @@ Relations
 * :ref:`X(69) <X(69)>` = perspector of ABC and mid-triangle of orthic and dual of :term:`orthic triangles <orthic-triangle>`
 * :ref:`X(69) <X(69)>` = perspector of ABC and cross-triangle of ABC and 2nd Brocard triangle
 * :ref:`X(69) <X(69)>` = perspector of 2nd Conway triangle and cross-triangle of ABC and 2nd Conway triangle
-* :ref:`X(69) <X(69)>` = Lucas-isogonal conjugate of X(376)
+* :ref:`X(69) <X(69)>` = Lucas-isogonal conjugate of :ref:`X(376) <X(376)>`
 * :ref:`X(69) <X(69)>` = anticevian-isogonal conjugate of :ref:`X(2) <X(2)>`
 * :ref:`X(69) <X(69)>` = inverse-in-MacBeath-circumconic of X(22151)
 * :ref:`X(69) <X(69)>` = {:ref:`X(7) <X(7)>`,\ :ref:`X(8) <X(8)>`}-harmonic conjugate of :ref:`X(75) <X(75)>`

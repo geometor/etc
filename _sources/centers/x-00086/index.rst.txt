@@ -62,7 +62,7 @@ Incidence
 
 :ref:`X(86) <X(86)>` lies and on these lines:
 
-{:ref:`1 <X(1)>`, :ref:`75 <X(75)>`}, {:ref:`2 <X(2)>`, :ref:`6 <X(6)>`}, {:ref:`7 <X(7)>`, :ref:`21 <X(21)>`}, {:ref:`10 <X(10)>`, 319}, {:ref:`29 <X(29)>`, :ref:`34 <X(34)>`}, {:ref:`37 <X(37)>`, 190}, {:ref:`58 <X(58)>`, 238}, {:ref:`60 <X(60)>`, 272}, {:ref:`99 <X(99)>`, 106}, {110, 675}, {142, 284}, {239, 1100}, {269, 1088}, {283, 307}, {310, 350}, {741, 789}, {870, 871}
+{:ref:`1 <X(1)>`, :ref:`75 <X(75)>`}, {:ref:`2 <X(2)>`, :ref:`6 <X(6)>`}, {:ref:`7 <X(7)>`, :ref:`21 <X(21)>`}, {:ref:`10 <X(10)>`, :ref:`319 <X(319)>`}, {:ref:`29 <X(29)>`, :ref:`34 <X(34)>`}, {:ref:`37 <X(37)>`, :ref:`190 <X(190)>`}, {:ref:`58 <X(58)>`, :ref:`238 <X(238)>`}, {:ref:`60 <X(60)>`, :ref:`272 <X(272)>`}, {:ref:`99 <X(99)>`, :ref:`106 <X(106)>`}, {:ref:`110 <X(110)>`, :ref:`675 <X(675)>`}, {:ref:`142 <X(142)>`, :ref:`284 <X(284)>`}, {:ref:`239 <X(239)>`, 1100}, {:ref:`269 <X(269)>`, 1088}, {:ref:`283 <X(283)>`, :ref:`307 <X(307)>`}, {:ref:`310 <X(310)>`, :ref:`350 <X(350)>`}, {:ref:`741 <X(741)>`, :ref:`789 <X(789)>`}, {:ref:`870 <X(870)>`, :ref:`871 <X(871)>`}
 
 Relations
 ---------
@@ -72,16 +72,16 @@ Relations
 * :ref:`X(86) <X(86)>` = :term:`complement <complement>` of X(1654)
 * :ref:`X(86) <X(86)>` = anticomplement of X(1213)
 * :ref:`X(86) <X(86)>` = circumcircle-inverse of X(5937)
-* :ref:`X(86) <X(86)>` = X(274)-:term:`Ceva conjugate <ceva-conjugate>` of X(333)
+* :ref:`X(86) <X(86)>` = :ref:`X(274) <X(274)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(333) <X(333)>`
 * :ref:`X(86) <X(86)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`2 <X(2)>`), (:ref:`7 <X(7)>`, :ref:`77 <X(77)>`), (:ref:`21 <X(21)>`, :ref:`81 <X(81)>`)
 * :ref:`X(86) <X(86)>` = :term:`crosssum <crosssum>` of :ref:`X(1) <X(1)>` and X(1045)
-* :ref:`X(86) <X(86)>` = :term:`crossdifference <crossdifference>` of every pair of points on line X(512)X(798)
-* :ref:`X(86) <X(86)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`81 <X(81)>`), (:ref:`2 <X(2)>`, 274), (:ref:`7 <X(7)>`, 286), (:ref:`21 <X(21)>`, 333), (:ref:`58 <X(58)>`, :ref:`27 <X(27)>`), (513, 190)
-* :ref:`X(86) <X(86)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`86 <X(86)>`, 1014), (:ref:`99 <X(99)>`, :ref:`86 <X(86)>`), (261, :ref:`86 <X(86)>`), (314, 314), (645, :ref:`86 <X(86)>`), (811, :ref:`86 <X(86)>`)
+* :ref:`X(86) <X(86)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(512) <X(512)>`\ \ :ref:`X(798) <X(798)>`
+* :ref:`X(86) <X(86)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`81 <X(81)>`), (:ref:`2 <X(2)>`, :ref:`274 <X(274)>`), (:ref:`7 <X(7)>`, :ref:`286 <X(286)>`), (:ref:`21 <X(21)>`, :ref:`333 <X(333)>`), (:ref:`58 <X(58)>`, :ref:`27 <X(27)>`), (:ref:`513 <X(513)>`, :ref:`190 <X(190)>`)
+* :ref:`X(86) <X(86)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`86 <X(86)>`, 1014), (:ref:`99 <X(99)>`, :ref:`86 <X(86)>`), (:ref:`261 <X(261)>`, :ref:`86 <X(86)>`), (:ref:`314 <X(314)>`, :ref:`314 <X(314)>`), (:ref:`645 <X(645)>`, :ref:`86 <X(86)>`), (:ref:`811 <X(811)>`, :ref:`86 <X(86)>`)
 * :ref:`X(86) <X(86)>` = :ref:`X(2) <X(2)>`-Ceva conjugate of X(6626)
 * :ref:`X(86) <X(86)>` = intersection of tangents at :ref:`X(1) <X(1)>` and :ref:`X(2) <X(2)>` to the bianticevian conic of :ref:`X(1) <X(1)>` and :ref:`X(2) <X(2)>`; see :ref:`X(99) <X(99)>`
 * :ref:`X(86) <X(86)>` = :term:`crosspoint <crosspoint>` of :ref:`X(1) <X(1)>` and :ref:`X(2) <X(2)>` wrt both the excentral and :term:`anticomplementary triangles <anticomplementary-triangle>`
-* :ref:`X(86) <X(86)>` = trilinear pole of line X(239)X(514) (Lemoine axis of :term:`excentral triangle <excentral-triangle>`)
+* :ref:`X(86) <X(86)>` = trilinear pole of line :ref:`X(239) <X(239)>`\ \ :ref:`X(514) <X(514)>` (Lemoine axis of :term:`excentral triangle <excentral-triangle>`)
 * :ref:`X(86) <X(86)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X(1826)
 * :ref:`X(86) <X(86)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate)-of-X(1826)
 * :ref:`X(86) <X(86)>` = perspector of Gemini triangle 1 and cross-triangle of ABC and Gemini triangle 1
@@ -94,7 +94,7 @@ Relations
 * :ref:`X(86) <X(86)>` = barycentric product of vertices of Gemini triangle 25
 * :ref:`X(86) <X(86)>` = {:ref:`X(2) <X(2)>`,\ :ref:`X(6) <X(6)>`}-harmonic conjugate of X(17277)
 * :ref:`X(86) <X(86)>` = {:ref:`X(2) <X(2)>`,\ :ref:`X(69) <X(69)>`}-harmonic conjugate of X(5224)
-* :ref:`X(86) <X(86)>` = {:ref:`X(2) <X(2)>`,X(141)}-harmonic conjugate of X(17307)
+* :ref:`X(86) <X(86)>` = {:ref:`X(2) <X(2)>`,\ :ref:`X(141) <X(141)>`}-harmonic conjugate of X(17307)
 
 Construction
 ------------

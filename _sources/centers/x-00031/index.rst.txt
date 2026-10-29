@@ -44,7 +44,7 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the circumsymmedial triangle. Let A″ be the trilinear product B'\*C', and define B″ and C″ cyclically. Then A″, B″, C″ are collinear on line X(667)X(788) (the :term:`trilinear polar <trilinear-polar>` of :ref:`X(31) <X(31)>`). The lines AA″, BB″, CC″ concur in :ref:`X(31) <X(31)>`. (:person:`Randy Hutson <randy-hutson>`, February 10, 2016)
+   Let A'B'C' be the circumsymmedial triangle. Let A″ be the trilinear product B'\*C', and define B″ and C″ cyclically. Then A″, B″, C″ are collinear on line :ref:`X(667) <X(667)>`\ \ :ref:`X(788) <X(788)>` (the :term:`trilinear polar <trilinear-polar>` of :ref:`X(31) <X(31)>`). The lines AA″, BB″, CC″ concur in :ref:`X(31) <X(31)>`. (:person:`Randy Hutson <randy-hutson>`, February 10, 2016)
 
 .. container:: note-item
 
@@ -56,7 +56,7 @@ Notes
 
 .. container:: note-item
 
-   Define the **1st Kenmotu diagonals triangle** as the triangle formed by the diagonals of the squares in the Kenmotu configuration with center X(371) that do not include X(371). Define the **2nd Kenmotu diagonals triangle** as the triangle formed by the diagonals of the squares in the Kenmotu configuration with center X(372) that do not include X(372). (Randy Hutson, February 10, 2016)
+   Define the **1st Kenmotu diagonals triangle** as the triangle formed by the diagonals of the squares in the Kenmotu configuration with center :ref:`X(371) <X(371)>` that do not include :ref:`X(371) <X(371)>`. Define the **2nd Kenmotu diagonals triangle** as the triangle formed by the diagonals of the squares in the Kenmotu configuration with center :ref:`X(372) <X(372)>` that do not include :ref:`X(372) <X(372)>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 
@@ -75,33 +75,33 @@ Incidence
 
 :ref:`X(31) <X(31)>` lies and on these lines:
 
-{:ref:`1 <X(1)>`, :ref:`21 <X(21)>`}, {:ref:`2 <X(2)>`, 171}, {:ref:`3 <X(3)>`, 601}, {:ref:`4 <X(4)>`, 3072}, {:ref:`6 <X(6)>`, :ref:`42 <X(42)>`}, {:ref:`8 <X(8)>`, 987}, {:ref:`9 <X(9)>`, 612}, {:ref:`10 <X(10)>`, 964}, {:ref:`19 <X(19)>`, 204}, {:ref:`25 <X(25)>`, 608}, {:ref:`28 <X(28)>`, 2282}, {:ref:`32 <X(32)>`, :ref:`41 <X(41)>`}, {:ref:`33 <X(33)>`, 2250}, {:ref:`34 <X(34)>`, 1254}, {:ref:`35 <X(35)>`, 386}, {:ref:`36 <X(36)>`, 995}, {:ref:`37 <X(37)>`, 2214}, {:ref:`40 <X(40)>`, 580}, {:ref:`43 <X(43)>`, :ref:`100 <X(100)>`}, {:ref:`44 <X(44)>`, 210}, {:ref:`48 <X(48)>`, 560}, {:ref:`51 <X(51)>`, 181}, {:ref:`56 <X(56)>`, 154}, {:ref:`57 <X(57)>`, 105}, {:ref:`65 <X(65)>`, 1104}, {:ref:`72 <X(72)>`, 976}, {:ref:`75 <X(75)>`, :ref:`82 <X(82)>`}, {:ref:`76 <X(76)>`, 734}, {:ref:`86 <X(86)>`, 2296}, {:ref:`91 <X(91)>`, 1087}, {:ref:`92 <X(92)>`, 162}, {:ref:`99 <X(99)>`, 715}, {101, 609}, {106, 2163}, {110, 593}, {112, 2249}, {158, 2190}, {163, 923}, {165, 2999}, {172, 1613}, {184, 604}, {197, 2183}, {198, 2255}, {199, 2277}, {200, 1261}, {218, 1260}, {222, 1458}, {226, 3011}, {237, 904}, {240, 1748}, {278, 1430}, {284, 2258}, {292, 1915}, {354, 1279}, {388, 1935}, {404, 978}, {497, 1936}, {516, 1754}, {561, 722}, {582, 3579}, {607, 2357}, {649, 884}, {663, 2423}, {669, 875}, {678, 3158}, {692, 2877}, {701, 789}, {708, 1502}, {740, 3187}, {743, 825}, {745, 827}, {759, 994}, {775, 1097}, {872, 2220}, {893, 1691}, {899, 1376}, {901, 2382}, {937, 1103}, {940, 1001}, {982, 3218}, {984, 3219}, {990, 1709}, {999, 1149}, {1066, 3157}, {1098, 2363}, {1124, 3076}, {1182, 3192}, {1210, 1771}, {1331, 2991}, {1335, 3077}, {1393, 1454}, {1403, 1428}, {1427, 1456}, {1438, 2279}, {1450, 1470}, {1474, 2215}, {1486, 2260}, {1572, 2170}, {1582, 1740}, {1616, 3304}, {1633, 3123}, {1820, 1953}, {1836, 3120}, {1910, 2186}, {1911, 1922}, {1917, 2085}, {1927, 1967}, {1932, 1973}, {1951, 3010}, {1974, 2281}, {1979, 2107}, {2003, 2078}, {2054, 2248}, {2083, 2156}, {2153, 2154}, {2188, 2638}, {2242, 3230}, {2264, 3198}, {2274, 3286}, {2318, 2911}, {3074, 3085}, {3075, 3086}, {3220, 3415}
+{:ref:`1 <X(1)>`, :ref:`21 <X(21)>`}, {:ref:`2 <X(2)>`, :ref:`171 <X(171)>`}, {:ref:`3 <X(3)>`, :ref:`601 <X(601)>`}, {:ref:`4 <X(4)>`, 3072}, {:ref:`6 <X(6)>`, :ref:`42 <X(42)>`}, {:ref:`8 <X(8)>`, :ref:`987 <X(987)>`}, {:ref:`9 <X(9)>`, :ref:`612 <X(612)>`}, {:ref:`10 <X(10)>`, :ref:`964 <X(964)>`}, {:ref:`19 <X(19)>`, :ref:`204 <X(204)>`}, {:ref:`25 <X(25)>`, :ref:`608 <X(608)>`}, {:ref:`28 <X(28)>`, 2282}, {:ref:`32 <X(32)>`, :ref:`41 <X(41)>`}, {:ref:`33 <X(33)>`, 2250}, {:ref:`34 <X(34)>`, 1254}, {:ref:`35 <X(35)>`, :ref:`386 <X(386)>`}, {:ref:`36 <X(36)>`, :ref:`995 <X(995)>`}, {:ref:`37 <X(37)>`, 2214}, {:ref:`40 <X(40)>`, :ref:`580 <X(580)>`}, {:ref:`43 <X(43)>`, :ref:`100 <X(100)>`}, {:ref:`44 <X(44)>`, :ref:`210 <X(210)>`}, {:ref:`48 <X(48)>`, :ref:`560 <X(560)>`}, {:ref:`51 <X(51)>`, :ref:`181 <X(181)>`}, {:ref:`56 <X(56)>`, :ref:`154 <X(154)>`}, {:ref:`57 <X(57)>`, :ref:`105 <X(105)>`}, {:ref:`65 <X(65)>`, 1104}, {:ref:`72 <X(72)>`, :ref:`976 <X(976)>`}, {:ref:`75 <X(75)>`, :ref:`82 <X(82)>`}, {:ref:`76 <X(76)>`, :ref:`734 <X(734)>`}, {:ref:`86 <X(86)>`, 2296}, {:ref:`91 <X(91)>`, 1087}, {:ref:`92 <X(92)>`, :ref:`162 <X(162)>`}, {:ref:`99 <X(99)>`, :ref:`715 <X(715)>`}, {:ref:`101 <X(101)>`, :ref:`609 <X(609)>`}, {:ref:`106 <X(106)>`, 2163}, {:ref:`110 <X(110)>`, :ref:`593 <X(593)>`}, {:ref:`112 <X(112)>`, 2249}, {:ref:`158 <X(158)>`, 2190}, {:ref:`163 <X(163)>`, :ref:`923 <X(923)>`}, {:ref:`165 <X(165)>`, 2999}, {:ref:`172 <X(172)>`, 1613}, {:ref:`184 <X(184)>`, :ref:`604 <X(604)>`}, {:ref:`197 <X(197)>`, 2183}, {:ref:`198 <X(198)>`, 2255}, {:ref:`199 <X(199)>`, 2277}, {:ref:`200 <X(200)>`, 1261}, {:ref:`218 <X(218)>`, 1260}, {:ref:`222 <X(222)>`, 1458}, {:ref:`226 <X(226)>`, 3011}, {:ref:`237 <X(237)>`, :ref:`904 <X(904)>`}, {:ref:`240 <X(240)>`, 1748}, {:ref:`278 <X(278)>`, 1430}, {:ref:`284 <X(284)>`, 2258}, {:ref:`292 <X(292)>`, 1915}, {:ref:`354 <X(354)>`, 1279}, {:ref:`388 <X(388)>`, 1935}, {:ref:`404 <X(404)>`, :ref:`978 <X(978)>`}, {:ref:`497 <X(497)>`, 1936}, {:ref:`516 <X(516)>`, 1754}, {:ref:`561 <X(561)>`, :ref:`722 <X(722)>`}, {:ref:`582 <X(582)>`, 3579}, {:ref:`607 <X(607)>`, 2357}, {:ref:`649 <X(649)>`, :ref:`884 <X(884)>`}, {:ref:`663 <X(663)>`, 2423}, {:ref:`669 <X(669)>`, :ref:`875 <X(875)>`}, {:ref:`678 <X(678)>`, 3158}, {:ref:`692 <X(692)>`, 2877}, {:ref:`701 <X(701)>`, :ref:`789 <X(789)>`}, {:ref:`708 <X(708)>`, 1502}, {:ref:`740 <X(740)>`, 3187}, {:ref:`743 <X(743)>`, :ref:`825 <X(825)>`}, {:ref:`745 <X(745)>`, :ref:`827 <X(827)>`}, {:ref:`759 <X(759)>`, :ref:`994 <X(994)>`}, {:ref:`775 <X(775)>`, 1097}, {:ref:`872 <X(872)>`, 2220}, {:ref:`893 <X(893)>`, 1691}, {:ref:`899 <X(899)>`, 1376}, {:ref:`901 <X(901)>`, 2382}, {:ref:`937 <X(937)>`, 1103}, {:ref:`940 <X(940)>`, 1001}, {:ref:`982 <X(982)>`, 3218}, {:ref:`984 <X(984)>`, 3219}, {:ref:`990 <X(990)>`, 1709}, {:ref:`999 <X(999)>`, 1149}, {1066, 3157}, {1098, 2363}, {1124, 3076}, {1182, 3192}, {1210, 1771}, {1331, 2991}, {1335, 3077}, {1393, 1454}, {1403, 1428}, {1427, 1456}, {1438, 2279}, {1450, 1470}, {1474, 2215}, {1486, 2260}, {1572, 2170}, {1582, 1740}, {1616, 3304}, {1633, 3123}, {1820, 1953}, {1836, 3120}, {1910, 2186}, {1911, 1922}, {1917, 2085}, {1927, 1967}, {1932, 1973}, {1951, 3010}, {1974, 2281}, {1979, 2107}, {2003, 2078}, {2054, 2248}, {2083, 2156}, {2153, 2154}, {2188, 2638}, {2242, 3230}, {2264, 3198}, {2274, 3286}, {2318, 2911}, {3074, 3085}, {3075, 3086}, {3220, 3415}
 
 Relations
 ---------
 
 * :ref:`X(31) <X(31)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(75) <X(75)>`
-* :ref:`X(31) <X(31)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(561)
+* :ref:`X(31) <X(31)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(561) <X(561)>`
 * :ref:`X(31) <X(31)>` = :term:`complement <complement>` of X(6327)
 * :ref:`X(31) <X(31)>` = :term:`anticomplement <anticomplement>` of X(2887)
 * :ref:`X(31) <X(31)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of anticomplement of X(38813)
 * :ref:`X(31) <X(31)>` = circumcircle-inverse of X(5161)
-* :ref:`X(31) <X(31)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`48 <X(48)>`), (:ref:`6 <X(6)>`, :ref:`41 <X(41)>`), (:ref:`9 <X(9)>`, 205), (:ref:`58 <X(58)>`, :ref:`6 <X(6)>`), (:ref:`82 <X(82)>`, :ref:`1 <X(1)>`)
-* :ref:`X(31) <X(31)>` = X(213)-:term:`cross conjugate <cross-conjugate>` of :ref:`X(6) <X(6)>`
+* :ref:`X(31) <X(31)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`48 <X(48)>`), (:ref:`6 <X(6)>`, :ref:`41 <X(41)>`), (:ref:`9 <X(9)>`, :ref:`205 <X(205)>`), (:ref:`58 <X(58)>`, :ref:`6 <X(6)>`), (:ref:`82 <X(82)>`, :ref:`1 <X(1)>`)
+* :ref:`X(31) <X(31)>` = :ref:`X(213) <X(213)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(6) <X(6)>`
 * :ref:`X(31) <X(31)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`19 <X(19)>`), (:ref:`6 <X(6)>`, :ref:`56 <X(56)>`)
-* :ref:`X(31) <X(31)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`63 <X(63)>`), (:ref:`2 <X(2)>`, :ref:`8 <X(8)>`), (:ref:`7 <X(7)>`, 347), (:ref:`10 <X(10)>`, 321), (239, 1281), (244, 514), (307, 1441), (523, 1086), (693, 1111)
-* :ref:`X(31) <X(31)>` = :term:`crossdifference <crossdifference>` of every pair of points on line X(514)X(661)
+* :ref:`X(31) <X(31)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`63 <X(63)>`), (:ref:`2 <X(2)>`, :ref:`8 <X(8)>`), (:ref:`7 <X(7)>`, :ref:`347 <X(347)>`), (:ref:`10 <X(10)>`, :ref:`321 <X(321)>`), (:ref:`239 <X(239)>`, 1281), (:ref:`244 <X(244)>`, :ref:`514 <X(514)>`), (:ref:`307 <X(307)>`, 1441), (:ref:`523 <X(523)>`, 1086), (:ref:`693 <X(693)>`, 1111)
+* :ref:`X(31) <X(31)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(514) <X(514)>`\ \ :ref:`X(661) <X(661)>`
 * :ref:`X(31) <X(31)>` = X(1403)-:term:`Hirst inverse <hirst-inverse>` of X(1428)
 * :ref:`X(31) <X(31)>` = X(i)-:term:`aleph conjugate <aleph-conjugate>` of X(j) for these (i,j): (:ref:`82 <X(82)>`, :ref:`31 <X(31)>`), (:ref:`83 <X(83)>`, :ref:`75 <X(75)>`)
-* :ref:`X(31) <X(31)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`21 <X(21)>`, 993), (:ref:`55 <X(55)>`, :ref:`55 <X(55)>`), (109, :ref:`31 <X(31)>`), (110, :ref:`57 <X(57)>`), (643, :ref:`31 <X(31)>`), (692, :ref:`31 <X(31)>`)
+* :ref:`X(31) <X(31)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`21 <X(21)>`, :ref:`993 <X(993)>`), (:ref:`55 <X(55)>`, :ref:`55 <X(55)>`), (:ref:`109 <X(109)>`, :ref:`31 <X(31)>`), (:ref:`110 <X(110)>`, :ref:`57 <X(57)>`), (:ref:`643 <X(643)>`, :ref:`31 <X(31)>`), (:ref:`692 <X(692)>`, :ref:`31 <X(31)>`)
 * :ref:`X(31) <X(31)>` = barycentric product of PU(8)
 * :ref:`X(31) <X(31)>` = :term:`vertex conjugate <vertex-conjugate>` of PU(8)
 * :ref:`X(31) <X(31)>` = bicentric sum of PU(i) for these i: 23, 48
-* :ref:`X(31) <X(31)>` = PU(23)-harmonic conjugate of X(661)
-* :ref:`X(31) <X(31)>` = PU(48)-harmonic conjugate of X(649)
+* :ref:`X(31) <X(31)>` = PU(23)-harmonic conjugate of :ref:`X(661) <X(661)>`
+* :ref:`X(31) <X(31)>` = PU(48)-harmonic conjugate of :ref:`X(649) <X(649)>`
 * :ref:`X(31) <X(31)>` = trilinear product of PU(36)
 * :ref:`X(31) <X(31)>` = trilinear product :ref:`X(55) <X(55)>`\ \*\ :ref:`X(56) <X(56)>`
-* :ref:`X(31) <X(31)>` = :term:`trilinear pole <trilinear-pole>` of line X(667)X(788)
+* :ref:`X(31) <X(31)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(667) <X(667)>`\ \ :ref:`X(788) <X(788)>`
 * :ref:`X(31) <X(31)>` = pole wrt polar circle of trilinear polar of X(1969)
 * :ref:`X(31) <X(31)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of X(1969)
 * :ref:`X(31) <X(31)>` = :ref:`X(6) <X(6)>`-isoconjugate of :ref:`X(76) <X(76)>`

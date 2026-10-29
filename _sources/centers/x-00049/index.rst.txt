@@ -48,14 +48,14 @@ Notes
 
 .. container:: note-item
 
-   :ref:`X(49) <X(49)>` is the {:ref:`X(54) <X(54)>`,X(110)}-harmonic conjugate of :ref:`X(5) <X(5)>`.
+   :ref:`X(49) <X(49)>` is the {:ref:`X(54) <X(54)>`,\ :ref:`X(110) <X(110)>`}-harmonic conjugate of :ref:`X(5) <X(5)>`.
 
 Incidence
 ---------
 
 :ref:`X(49) <X(49)>` lies and on these lines:
 
-{:ref:`1 <X(1)>`, 215}, {:ref:`3 <X(3)>`, 155}, {:ref:`4 <X(4)>`, 156}, {:ref:`5 <X(5)>`, :ref:`54 <X(54)>`}, {:ref:`24 <X(24)>`, 568}, {:ref:`52 <X(52)>`, 195}, {:ref:`93 <X(93)>`, :ref:`94 <X(94)>`}, {381, 578}
+{:ref:`1 <X(1)>`, :ref:`215 <X(215)>`}, {:ref:`3 <X(3)>`, :ref:`155 <X(155)>`}, {:ref:`4 <X(4)>`, :ref:`156 <X(156)>`}, {:ref:`5 <X(5)>`, :ref:`54 <X(54)>`}, {:ref:`24 <X(24)>`, :ref:`568 <X(568)>`}, {:ref:`52 <X(52)>`, :ref:`195 <X(195)>`}, {:ref:`93 <X(93)>`, :ref:`94 <X(94)>`}, {:ref:`381 <X(381)>`, :ref:`578 <X(578)>`}
 
 Relations
 ---------

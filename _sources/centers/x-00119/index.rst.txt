@@ -1,0 +1,73 @@
+:order: 119
+:type: center
+:canonical_id: X(119)
+:dependencies: X(1), X(2), X(3), X(4), X(5), X(8), X(9), X(10), X(11), X(100), X(104), X(116), X(123), X(124), X(125), X(135), X(136), X(142), X(153), X(214), X(381), X(429), X(431), X(442), X(515), X(517), X(528), X(908), X(915), X(2071), X(2072), X(3035), X(3657), X(15381), X(34459)
+
+.. _X(119):
+
+X(119) = FEUERBACH ANTIPODE
+===========================
+
+.. figure:: x-00119.svg
+   :alt: X(119) = FEUERBACH ANTIPODE
+   :align: center
+
+   **X(119) = FEUERBACH ANTIPODE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+
+Coordinates
+-----------
+
+Trilinears
+~~~~~~~~~~
+
+* :math:`(\csc A)(-1 + \cos B + \cos C)[\sin 2B + \sin 2C + 2(-1 + \cos A)(\sin B + \sin C)] : :`
+
+Barycentrics
+~~~~~~~~~~~~
+
+* :math:`(-1 + \cos B + \cos C)[\sin 2B + \sin 2C + 2(-1 + \cos A)(\sin B + \sin C)] : :`
+
+* **Kimberling (6, 9, 13) Search Value:** :math:`-1.537391637975`
+
+Notes
+-----
+
+.. container:: note-item
+
+   Let Na = :ref:`X(5) <X(5)>`-BC\ :ref:`X(1) <X(1)>`, Nb = :ref:`X(5) <X(5)>`-of-CA\ :ref:`X(1) <X(1)>`, Nc = :ref:`X(5) <X(5)>`-of-AB\ :ref:`X(1) <X(1)>`. Then :ref:`X(119) <X(119)>` = X(2071)-of-NaNbNc. (:person:`Randy Hutson <randy-hutson>`, January 29, 2018)
+
+.. container:: note-item
+
+   Let A'B'C' be the :term:`orthic triangle <orthic-triangle>`. Let La be the antiorthic axis of AB'C', and define Lb and Lc cyclically. Let A″ = Lb∩Lc, B″ = Lc∩La, C″ = La∩Lb. Then triangle A″B″C″ is inversely similar to ABC, with similicenter :ref:`X(9) <X(9)>`. The lines A'A″, B'B″, C'C″ concur in :ref:`X(119) <X(119)>`. Also, :ref:`X(119) <X(119)>` = :ref:`X(3) <X(3)>` of A″B″C″. (Randy Hutson, January 29, 2018)
+
+Incidence
+---------
+
+:ref:`X(119) <X(119)>` lies and on these lines:
+
+{:ref:`1 <X(1)>`, :ref:`5 <X(5)>`}, {:ref:`2 <X(2)>`, :ref:`104 <X(104)>`}, {:ref:`3 <X(3)>`, :ref:`123 <X(123)>`}, {:ref:`4 <X(4)>`, :ref:`100 <X(100)>`}, {:ref:`10 <X(10)>`, :ref:`124 <X(124)>`}, {:ref:`116 <X(116)>`, :ref:`142 <X(142)>`}, {:ref:`125 <X(125)>`, :ref:`442 <X(442)>`}, {:ref:`135 <X(135)>`, :ref:`431 <X(431)>`}, {:ref:`136 <X(136)>`, :ref:`429 <X(429)>`}, {:ref:`214 <X(214)>`, :ref:`515 <X(515)>`}, {:ref:`381 <X(381)>`, :ref:`528 <X(528)>`}, {:ref:`517 <X(517)>`, :ref:`908 <X(908)>`}
+
+Relations
+---------
+
+* :ref:`X(119) <X(119)>` = midpoint of X(i) and X(j) for these (i,j): (:ref:`4 <X(4)>`, :ref:`100 <X(100)>`), (:ref:`104 <X(104)>`, :ref:`153 <X(153)>`)
+* :ref:`X(119) <X(119)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`11 <X(11)>`, :ref:`5 <X(5)>`), (:ref:`3 <X(3)>`, 3035)
+* :ref:`X(119) <X(119)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(15381)
+* :ref:`X(119) <X(119)>` = :term:`complement <complement>` of :ref:`X(104) <X(104)>`
+* :ref:`X(119) <X(119)>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X(517) <X(517)>`
+* :ref:`X(119) <X(119)>` = :ref:`X(4) <X(4)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(517) <X(517)>`
+* :ref:`X(119) <X(119)>` = nine-point-circle-antipode of :ref:`X(11) <X(11)>`
+* :ref:`X(119) <X(119)>` = :ref:`X(104) <X(104)>`-of-:term:`medial triangle <medial-triangle>`
+* :ref:`X(119) <X(119)>` = X(2072)-of-Fuhrmann-triangle
+* :ref:`X(119) <X(119)>` = inverse-in-polar-circle of :ref:`X(915) <X(915)>`
+* :ref:`X(119) <X(119)>` = anticenter of cyclic quadrilateral ABC\ :ref:`X(100) <X(100)>`
+* :ref:`X(119) <X(119)>` = Λ(:ref:`X(1) <X(1)>`, :ref:`X(3) <X(3)>`), wrt orthic triangle
+* :ref:`X(119) <X(119)>` = Λ(:ref:`X(4) <X(4)>`, :ref:`X(8) <X(8)>`), wrt orthic triangle
+* :ref:`X(119) <X(119)>` = Spieker-radical-circle-inverse of X(34459)
+* :ref:`X(119) <X(119)>` = center of rectangular circumhyperbola passing through isogonal and :term:`isotomic conjugates <isotomic-conjugate>` of X(3657)
+
+Construction
+------------
+
+.. literalinclude:: model.py
+   :language: python

@@ -71,13 +71,13 @@ Incidence
 
 :ref:`X(55) <X(55)>` lies and on these lines:
 
-{:ref:`1 <X(1)>`, :ref:`3 <X(3)>`}, {:ref:`2 <X(2)>`, :ref:`11 <X(11)>`}, {:ref:`4 <X(4)>`, :ref:`12 <X(12)>`}, {:ref:`5 <X(5)>`, 498}, {:ref:`6 <X(6)>`, :ref:`31 <X(31)>`}, {:ref:`7 <X(7)>`, 2346}, {:ref:`8 <X(8)>`, :ref:`21 <X(21)>`}, {:ref:`9 <X(9)>`, 200}, {:ref:`10 <X(10)>`, 405}, {:ref:`15 <X(15)>`, 203}, {:ref:`16 <X(16)>`, 202}, {:ref:`19 <X(19)>`, :ref:`25 <X(25)>`}, {:ref:`20 <X(20)>`, 388}, {:ref:`30 <X(30)>`, 495}, {:ref:`34 <X(34)>`, 227}, {:ref:`41 <X(41)>`, 220}, {:ref:`43 <X(43)>`, 238}, {:ref:`45 <X(45)>`, 678}, {:ref:`48 <X(48)>`, 154}, {:ref:`63 <X(63)>`, 518}, {:ref:`64 <X(64)>`, :ref:`73 <X(73)>`}, {:ref:`77 <X(77)>`, 1037}, {:ref:`78 <X(78)>`, 960}, {:ref:`81 <X(81)>`, 1002}, {:ref:`92 <X(92)>`, 243}, {103, 109}, {104, 1000}, {108, 196}, {140, 496}, {181, 573}, {182, 613}, {183, 350}, {184, 215}, {192, 385}, {199, 1030}, {201, 774}, {204, 1033}, {219, 284}, {223, 1456}, {226, 516}, {255, 601}, {256, 983}, {329, 1005}, {376, 1056}, {386, 595}, {392, 997}, {411, 962}, {511, 611}, {515, 1012}, {519, 956}, {574, 1015}, {603, 963}, {631, 1058}, {650, 884}, {654, 926}, {748, 899}, {840, 901}, {846, 984}, {869, 893}, {1026, 1083}, {1070, 1076}, {1072, 1074}, {2195, 5452}
+{:ref:`1 <X(1)>`, :ref:`3 <X(3)>`}, {:ref:`2 <X(2)>`, :ref:`11 <X(11)>`}, {:ref:`4 <X(4)>`, :ref:`12 <X(12)>`}, {:ref:`5 <X(5)>`, :ref:`498 <X(498)>`}, {:ref:`6 <X(6)>`, :ref:`31 <X(31)>`}, {:ref:`7 <X(7)>`, 2346}, {:ref:`8 <X(8)>`, :ref:`21 <X(21)>`}, {:ref:`9 <X(9)>`, :ref:`200 <X(200)>`}, {:ref:`10 <X(10)>`, :ref:`405 <X(405)>`}, {:ref:`15 <X(15)>`, :ref:`203 <X(203)>`}, {:ref:`16 <X(16)>`, :ref:`202 <X(202)>`}, {:ref:`19 <X(19)>`, :ref:`25 <X(25)>`}, {:ref:`20 <X(20)>`, :ref:`388 <X(388)>`}, {:ref:`30 <X(30)>`, :ref:`495 <X(495)>`}, {:ref:`34 <X(34)>`, :ref:`227 <X(227)>`}, {:ref:`41 <X(41)>`, :ref:`220 <X(220)>`}, {:ref:`43 <X(43)>`, :ref:`238 <X(238)>`}, {:ref:`45 <X(45)>`, :ref:`678 <X(678)>`}, {:ref:`48 <X(48)>`, :ref:`154 <X(154)>`}, {:ref:`63 <X(63)>`, :ref:`518 <X(518)>`}, {:ref:`64 <X(64)>`, :ref:`73 <X(73)>`}, {:ref:`77 <X(77)>`, 1037}, {:ref:`78 <X(78)>`, :ref:`960 <X(960)>`}, {:ref:`81 <X(81)>`, 1002}, {:ref:`92 <X(92)>`, :ref:`243 <X(243)>`}, {:ref:`103 <X(103)>`, :ref:`109 <X(109)>`}, {:ref:`104 <X(104)>`, :ref:`1000 <X(1000)>`}, {:ref:`108 <X(108)>`, :ref:`196 <X(196)>`}, {:ref:`140 <X(140)>`, :ref:`496 <X(496)>`}, {:ref:`181 <X(181)>`, :ref:`573 <X(573)>`}, {:ref:`182 <X(182)>`, :ref:`613 <X(613)>`}, {:ref:`183 <X(183)>`, :ref:`350 <X(350)>`}, {:ref:`184 <X(184)>`, :ref:`215 <X(215)>`}, {:ref:`192 <X(192)>`, :ref:`385 <X(385)>`}, {:ref:`199 <X(199)>`, 1030}, {:ref:`201 <X(201)>`, :ref:`774 <X(774)>`}, {:ref:`204 <X(204)>`, 1033}, {:ref:`219 <X(219)>`, :ref:`284 <X(284)>`}, {:ref:`223 <X(223)>`, 1456}, {:ref:`226 <X(226)>`, :ref:`516 <X(516)>`}, {:ref:`255 <X(255)>`, :ref:`601 <X(601)>`}, {:ref:`256 <X(256)>`, :ref:`983 <X(983)>`}, {:ref:`329 <X(329)>`, 1005}, {:ref:`376 <X(376)>`, 1056}, {:ref:`386 <X(386)>`, :ref:`595 <X(595)>`}, {:ref:`392 <X(392)>`, :ref:`997 <X(997)>`}, {:ref:`411 <X(411)>`, :ref:`962 <X(962)>`}, {:ref:`511 <X(511)>`, :ref:`611 <X(611)>`}, {:ref:`515 <X(515)>`, 1012}, {:ref:`519 <X(519)>`, :ref:`956 <X(956)>`}, {:ref:`574 <X(574)>`, 1015}, {:ref:`603 <X(603)>`, :ref:`963 <X(963)>`}, {:ref:`631 <X(631)>`, 1058}, {:ref:`650 <X(650)>`, :ref:`884 <X(884)>`}, {:ref:`654 <X(654)>`, :ref:`926 <X(926)>`}, {:ref:`748 <X(748)>`, :ref:`899 <X(899)>`}, {:ref:`840 <X(840)>`, :ref:`901 <X(901)>`}, {:ref:`846 <X(846)>`, :ref:`984 <X(984)>`}, {:ref:`869 <X(869)>`, :ref:`893 <X(893)>`}, {1026, 1083}, {1070, 1076}, {1072, 1074}, {2195, 5452}
 
 Relations
 ---------
 
 * :ref:`X(55) <X(55)>` = center of homothety of three triangles: tangential, intangents, and extangents. Also, :ref:`X(55) <X(55)>` is the pole-with-respect-to-the-circumcircle of the :term:`trilinear polar <trilinear-polar>` of :ref:`X(1) <X(1)>`. These properties and others are given in
-* :ref:`X(55) <X(55)>` = reflection of X(i) in X(j) for these (i,j): (1478, 495), (2099, :ref:`1 <X(1)>`)
+* :ref:`X(55) <X(55)>` = reflection of X(i) in X(j) for these (i,j): (1478, :ref:`495 <X(495)>`), (2099, :ref:`1 <X(1)>`)
 * :ref:`X(55) <X(55)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(7) <X(7)>`
 * :ref:`X(55) <X(55)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(6063)
 * :ref:`X(55) <X(55)>` = :term:`complement <complement>` of X(3434)
@@ -85,27 +85,27 @@ Relations
 * :ref:`X(55) <X(55)>` = centroid of curvatures of circumcircle and excircles
 * :ref:`X(55) <X(55)>` = circumcircle-inverse of X(1155)
 * :ref:`X(55) <X(55)>` = antigonal conjugate of polar conjugate of X(37767)
-* :ref:`X(55) <X(55)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`6 <X(6)>`), (:ref:`3 <X(3)>`, 198), (:ref:`7 <X(7)>`, 218), (:ref:`8 <X(8)>`, 219), (:ref:`9 <X(9)>`, 220), (:ref:`21 <X(21)>`, :ref:`9 <X(9)>`), (:ref:`59 <X(59)>`, 101), (104, :ref:`44 <X(44)>`), (260, 259), (284, :ref:`41 <X(41)>`)
-* :ref:`X(55) <X(55)>` = :term:`cevapoint <cevapoint>` of :ref:`X(42) <X(42)>` and X(228) for these (i,j)
-* :ref:`X(55) <X(55)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`41 <X(41)>`, :ref:`6 <X(6)>`), (:ref:`42 <X(42)>`, :ref:`33 <X(33)>`), (228, 212)
-* :ref:`X(55) <X(55)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`9 <X(9)>`), (:ref:`3 <X(3)>`, 268), (:ref:`7 <X(7)>`, 277), (:ref:`8 <X(8)>`, 281), (:ref:`21 <X(21)>`, 284), (:ref:`59 <X(59)>`, 101)
-* :ref:`X(55) <X(55)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`57 <X(57)>`), (:ref:`2 <X(2)>`, 145), (:ref:`4 <X(4)>`, 196), (:ref:`11 <X(11)>`, 514), (:ref:`55 <X(55)>`, 218), (:ref:`56 <X(56)>`, 222), (:ref:`63 <X(63)>`, 224), (:ref:`65 <X(65)>`, 226), (:ref:`81 <X(81)>`, 229), (177, 234), (241, 1362), (513, 1086), (905, 1364), (1361, 1465)
-* :ref:`X(55) <X(55)>` = :term:`crossdifference <crossdifference>` of every pair of points on line X(241)X(514)
-* :ref:`X(55) <X(55)>` = X(i)-:term:`Hirst inverse <hirst-inverse>` of X(j) for these (i,j): (:ref:`6 <X(6)>`, 672), (:ref:`43 <X(43)>`, 241)
-* :ref:`X(55) <X(55)>` = :ref:`X(1) <X(1)>`-:term:`line conjugate <line-conjugate>` of X(241)
-* :ref:`X(55) <X(55)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`21 <X(21)>`, 999), (:ref:`55 <X(55)>`, :ref:`31 <X(31)>`), (:ref:`100 <X(100)>`, :ref:`55 <X(55)>`), (200, 200), (643, :ref:`2 <X(2)>`), (1021, 1024)
+* :ref:`X(55) <X(55)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`6 <X(6)>`), (:ref:`3 <X(3)>`, :ref:`198 <X(198)>`), (:ref:`7 <X(7)>`, :ref:`218 <X(218)>`), (:ref:`8 <X(8)>`, :ref:`219 <X(219)>`), (:ref:`9 <X(9)>`, :ref:`220 <X(220)>`), (:ref:`21 <X(21)>`, :ref:`9 <X(9)>`), (:ref:`59 <X(59)>`, :ref:`101 <X(101)>`), (:ref:`104 <X(104)>`, :ref:`44 <X(44)>`), (:ref:`260 <X(260)>`, :ref:`259 <X(259)>`), (:ref:`284 <X(284)>`, :ref:`41 <X(41)>`)
+* :ref:`X(55) <X(55)>` = :term:`cevapoint <cevapoint>` of :ref:`X(42) <X(42)>` and :ref:`X(228) <X(228)>` for these (i,j)
+* :ref:`X(55) <X(55)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`41 <X(41)>`, :ref:`6 <X(6)>`), (:ref:`42 <X(42)>`, :ref:`33 <X(33)>`), (:ref:`228 <X(228)>`, :ref:`212 <X(212)>`)
+* :ref:`X(55) <X(55)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`9 <X(9)>`), (:ref:`3 <X(3)>`, :ref:`268 <X(268)>`), (:ref:`7 <X(7)>`, :ref:`277 <X(277)>`), (:ref:`8 <X(8)>`, :ref:`281 <X(281)>`), (:ref:`21 <X(21)>`, :ref:`284 <X(284)>`), (:ref:`59 <X(59)>`, :ref:`101 <X(101)>`)
+* :ref:`X(55) <X(55)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`57 <X(57)>`), (:ref:`2 <X(2)>`, :ref:`145 <X(145)>`), (:ref:`4 <X(4)>`, :ref:`196 <X(196)>`), (:ref:`11 <X(11)>`, :ref:`514 <X(514)>`), (:ref:`55 <X(55)>`, :ref:`218 <X(218)>`), (:ref:`56 <X(56)>`, :ref:`222 <X(222)>`), (:ref:`63 <X(63)>`, :ref:`224 <X(224)>`), (:ref:`65 <X(65)>`, :ref:`226 <X(226)>`), (:ref:`81 <X(81)>`, :ref:`229 <X(229)>`), (:ref:`177 <X(177)>`, :ref:`234 <X(234)>`), (:ref:`241 <X(241)>`, 1362), (:ref:`513 <X(513)>`, 1086), (:ref:`905 <X(905)>`, 1364), (1361, 1465)
+* :ref:`X(55) <X(55)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(241) <X(241)>`\ \ :ref:`X(514) <X(514)>`
+* :ref:`X(55) <X(55)>` = X(i)-:term:`Hirst inverse <hirst-inverse>` of X(j) for these (i,j): (:ref:`6 <X(6)>`, :ref:`672 <X(672)>`), (:ref:`43 <X(43)>`, :ref:`241 <X(241)>`)
+* :ref:`X(55) <X(55)>` = :ref:`X(1) <X(1)>`-:term:`line conjugate <line-conjugate>` of :ref:`X(241) <X(241)>`
+* :ref:`X(55) <X(55)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`21 <X(21)>`, :ref:`999 <X(999)>`), (:ref:`55 <X(55)>`, :ref:`31 <X(31)>`), (:ref:`100 <X(100)>`, :ref:`55 <X(55)>`), (:ref:`200 <X(200)>`, :ref:`200 <X(200)>`), (:ref:`643 <X(643)>`, :ref:`2 <X(2)>`), (1021, 1024)
 * :ref:`X(55) <X(55)>` = insimilicenter of the intangents and extangents circles
 * :ref:`X(55) <X(55)>` = insimilicenter of the intangents and tangential circles
 * :ref:`X(55) <X(55)>` = exsimilicenter of then extangents and tangential circles
 * :ref:`X(55) <X(55)>` = :ref:`X(22) <X(22)>`-of-intouch-triangle
-* :ref:`X(55) <X(55)>` = :term:`trilinear pole <trilinear-pole>` of line X(657)X(663) (polar of X(331) wrt polar circle)
-* :ref:`X(55) <X(55)>` = pole wrt polar circle of trilinear polar of X(331)
-* :ref:`X(55) <X(55)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of X(331)
+* :ref:`X(55) <X(55)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(657) <X(657)>`\ \ :ref:`X(663) <X(663)>` (polar of :ref:`X(331) <X(331)>` wrt polar circle)
+* :ref:`X(55) <X(55)>` = pole wrt polar circle of trilinear polar of :ref:`X(331) <X(331)>`
+* :ref:`X(55) <X(55)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X(331) <X(331)>`
 * :ref:`X(55) <X(55)>` = homothetic center of ABC and Mandart-incircle triangle
 * :ref:`X(55) <X(55)>` = inverse-in-Feuerbach-hyperbola of X(1001)
 * :ref:`X(55) <X(55)>` = inverse-in-circumconic-centered-at-:ref:`X(1) <X(1)>` of X(1936)
 * :ref:`X(55) <X(55)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(40) <X(40)>`}-harmonic conjugate of :ref:`X(65) <X(65)>`
-* :ref:`X(55) <X(55)>` = trilinear square of X(259)
+* :ref:`X(55) <X(55)>` = trilinear square of :ref:`X(259) <X(259)>`
 * :ref:`X(55) <X(55)>` = Danneels point of :ref:`X(100) <X(100)>`
 * :ref:`X(55) <X(55)>` = :term:`vertex conjugate <vertex-conjugate>` of PU(48)
 * :ref:`X(55) <X(55)>` = vertex conjugate of foci of Mandart inellipse
@@ -115,7 +115,7 @@ Relations
 * :ref:`X(55) <X(55)>` = trilinear product of PU(104)
 * :ref:`X(55) <X(55)>` = barycentric product of PU(112)
 * :ref:`X(55) <X(55)>` = bicentric sum of PU(112)
-* :ref:`X(55) <X(55)>` = PU(112)-harmonic conjugate of X(650)
+* :ref:`X(55) <X(55)>` = PU(112)-harmonic conjugate of :ref:`X(650) <X(650)>`
 * :ref:`X(55) <X(55)>` = perspector of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of 7th mixtilinear triangle
 * :ref:`X(55) <X(55)>` = perspector of 4th mixtilinear triangle and unary cofactor triangle of 7th mixtilinear triangle
 * :ref:`X(55) <X(55)>` = perspector of unary cofactor triangles of 3rd, 4th and 5th extouch triangles
@@ -126,8 +126,8 @@ Relations
 * :ref:`X(55) <X(55)>` = Thomson-isogonal conjugate of X(5657)
 * :ref:`X(55) <X(55)>` = homothetic center of midarc triangle and 2nd-circumperp-of-1st-circumperp triangle (which is also 1st-circumperp-of-2nd-circumperp triangle)
 * :ref:`X(55) <X(55)>` = homothetic center of 2nd midarc triangle and 1st-circumperp-of-1st-circumperp triangle (which is also 2nd-circumperp-of-2nd-circumperp triangle)
-* :ref:`X(55) <X(55)>` = Cundy-Parry Phi transform of X(942)
-* :ref:`X(55) <X(55)>` = Cundy-Parry Psi transform of X(943)
+* :ref:`X(55) <X(55)>` = Cundy-Parry Phi transform of :ref:`X(942) <X(942)>`
+* :ref:`X(55) <X(55)>` = Cundy-Parry Psi transform of :ref:`X(943) <X(943)>`
 * :ref:`X(55) <X(55)>` = :ref:`X(4) <X(4)>`-of-1st-Johnson-Yff-triangle
 * :ref:`X(55) <X(55)>` = homothetic center of anti-Hutson :term:`intouch triangle <intouch-triangle>` and anti-tangential midarc triangle
 * :ref:`X(55) <X(55)>` = barycentric product of circumcircle intercepts of excircles radical circle

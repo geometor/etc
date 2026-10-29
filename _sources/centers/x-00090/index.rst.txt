@@ -5,14 +5,14 @@
 
 .. _X(90):
 
-X(90) = -CROSS CONJUGATE OF X(1)
-================================
+X(90) = X(3)-CROSS CONJUGATE OF X(1)
+====================================
 
 .. figure:: x-00090.svg
-   :alt: X(90) = -CROSS CONJUGATE OF X(1)
+   :alt: X(90) = X(3)-CROSS CONJUGATE OF X(1)
    :align: center
 
-   **X(90) = -CROSS CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(90) = X(3)-CROSS CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
 Coordinates
 -----------
@@ -40,7 +40,7 @@ Incidence
 
 :ref:`X(90) <X(90)>` lies and on these lines:
 
-{:ref:`1 <X(1)>`, 155}, {:ref:`4 <X(4)>`, :ref:`46 <X(46)>`}, {:ref:`9 <X(9)>`, :ref:`35 <X(35)>`}, {:ref:`21 <X(21)>`, 224}, {:ref:`33 <X(33)>`, :ref:`47 <X(47)>`}, {:ref:`36 <X(36)>`, :ref:`84 <X(84)>`}, {:ref:`40 <X(40)>`, :ref:`80 <X(80)>`}, {:ref:`57 <X(57)>`, :ref:`79 <X(79)>`}
+{:ref:`1 <X(1)>`, :ref:`155 <X(155)>`}, {:ref:`4 <X(4)>`, :ref:`46 <X(46)>`}, {:ref:`9 <X(9)>`, :ref:`35 <X(35)>`}, {:ref:`21 <X(21)>`, :ref:`224 <X(224)>`}, {:ref:`33 <X(33)>`, :ref:`47 <X(47)>`}, {:ref:`36 <X(36)>`, :ref:`84 <X(84)>`}, {:ref:`40 <X(40)>`, :ref:`80 <X(80)>`}, {:ref:`57 <X(57)>`, :ref:`79 <X(79)>`}
 
 Relations
 ---------

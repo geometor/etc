@@ -1,0 +1,58 @@
+:order: 469
+:type: center
+:canonical_id: X(469)
+:dependencies: X(2), X(3), X(4), X(27), X(92), X(226), X(264), X(273), X(386)
+
+.. _X(469):
+
+X(469) = EULER LINE INTERCEPT OF LINE X(92)X(264)
+=================================================
+
+.. figure:: x-00469.svg
+   :alt: X(469) = EULER LINE INTERCEPT OF LINE X(92)X(264)
+   :align: center
+
+   **X(469) = EULER LINE INTERCEPT OF LINE X(92)X(264)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+
+Coordinates
+-----------
+
+Trilinears
+~~~~~~~~~~
+
+* :math:`u \csc 2A : v \csc 2B : w \csc 2C`, where, u : v : w = :ref:`X(386) <X(386)>`; e.g., u(a,b,c) = a(b\ :sup:`2` + c\ :sup:`2` + bc + ca + ab)
+
+* **Kimberling (6, 9, 13) Search Value:** :math:`-17.594579768507`
+
+Notes
+-----
+
+.. container:: note-item
+
+   Barycentrics u sec A : v sec B : w sec C
+
+.. container:: note-item
+
+   As a point on the Euler line, :ref:`X(469) <X(469)>` has Shinagawa coefficients (F,E + F + $bc$).
+
+.. container:: note-item
+
+   :ref:`X(469) <X(469)>` is the {:ref:`X(2) <X(2)>`,\ :ref:`X(4) <X(4)>`}-harmonic conjugate of :ref:`X(27) <X(27)>`.
+
+Incidence
+---------
+
+:ref:`X(469) <X(469)>` lies and on these lines:
+
+{:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`92 <X(92)>`, :ref:`264 <X(264)>`}, {:ref:`226 <X(226)>`, :ref:`273 <X(273)>`}
+
+Relations
+---------
+
+* :ref:`X(469) <X(469)>` = inverse-in-orthocentroidal-circle of :ref:`X(27) <X(27)>`
+
+Construction
+------------
+
+.. literalinclude:: model.py
+   :language: python

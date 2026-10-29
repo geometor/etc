@@ -39,7 +39,7 @@ Incidence
 
 :ref:`X(70) <X(70)>` lies on the Jerabek circumhyperbola and on these lines:
 
-{:ref:`3 <X(3)>`, 8907}, {:ref:`6 <X(6)>`, 1594}, {:ref:`54 <X(54)>`, 1899}, {:ref:`64 <X(64)>`, 6240}, {:ref:`66 <X(66)>`, 6403}, {:ref:`71 <X(71)>`, 2158}, {:ref:`74 <X(74)>`, 1288}, {265, 6243}, {1176, 1352}, {1177, 3542}, {3448, 5504}, {3527, 7507}, {4846, 6241}, {6145, 6152}
+{:ref:`3 <X(3)>`, 8907}, {:ref:`6 <X(6)>`, 1594}, {:ref:`54 <X(54)>`, 1899}, {:ref:`64 <X(64)>`, 6240}, {:ref:`66 <X(66)>`, 6403}, {:ref:`71 <X(71)>`, 2158}, {:ref:`74 <X(74)>`, 1288}, {:ref:`265 <X(265)>`, 6243}, {1176, 1352}, {1177, 3542}, {3448, 5504}, {3527, 7507}, {4846, 6241}, {6145, 6152}
 
 Relations
 ---------
@@ -47,12 +47,12 @@ Relations
 * :ref:`X(70) <X(70)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(26) <X(26)>`
 * :ref:`X(70) <X(70)>` = :term:`anticomplement <anticomplement>` of X(34116)
 * :ref:`X(70) <X(70)>` = antigonal conjugate of X(38534)
-* :ref:`X(70) <X(70)>` = X(571)-crossconjugate of :ref:`X(2) <X(2)>`
+* :ref:`X(70) <X(70)>` = :ref:`X(571) <X(571)>`-crossconjugate of :ref:`X(2) <X(2)>`
 * :ref:`X(70) <X(70)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these {i,j}: {:ref:`1 <X(1)>`, :ref:`26 <X(26)>`}, {:ref:`63 <X(63)>`, 8746}
-* :ref:`X(70) <X(70)>` = reflection of the isogonal conjugate of X(2072) in X(125)
-* :ref:`X(70) <X(70)>` = X(125)-:term:`cevapoint <cevapoint>` of X(924)
-* :ref:`X(70) <X(70)>` = X(161)-:term:`crosssum <crosssum>` of X(8553)
-* :ref:`X(70) <X(70)>` = barycentric product X(525) X(1288)
+* :ref:`X(70) <X(70)>` = reflection of the isogonal conjugate of X(2072) in :ref:`X(125) <X(125)>`
+* :ref:`X(70) <X(70)>` = :ref:`X(125) <X(125)>`-:term:`cevapoint <cevapoint>` of :ref:`X(924) <X(924)>`
+* :ref:`X(70) <X(70)>` = :ref:`X(161) <X(161)>`-:term:`crosssum <crosssum>` of X(8553)
+* :ref:`X(70) <X(70)>` = barycentric product :ref:`X(525) <X(525)>` X(1288)
 
 Construction
 ------------

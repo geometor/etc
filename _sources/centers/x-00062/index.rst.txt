@@ -46,23 +46,23 @@ Relations
 ---------
 
 * :ref:`X(62) <X(62)>` = reflection of :ref:`X(61) <X(61)>` in X(5007)
-* :ref:`X(62) <X(62)>` = reflection of X(634) in X(636)
+* :ref:`X(62) <X(62)>` = reflection of :ref:`X(634) <X(634)>` in :ref:`X(636) <X(636)>`
 * :ref:`X(62) <X(62)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(18) <X(18)>`
 * :ref:`X(62) <X(62)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(34390)
-* :ref:`X(62) <X(62)>` = :term:`complement <complement>` of X(634)
-* :ref:`X(62) <X(62)>` = :term:`anticomplement <anticomplement>` of X(636)
+* :ref:`X(62) <X(62)>` = :term:`complement <complement>` of :ref:`X(634) <X(634)>`
+* :ref:`X(62) <X(62)>` = :term:`anticomplement <anticomplement>` of :ref:`X(636) <X(636)>`
 * :ref:`X(62) <X(62)>` = Brocard-circle-inverse of :ref:`X(61) <X(61)>`
 * :ref:`X(62) <X(62)>` = :term:`eigencenter <eigencenter>` of :term:`cevian triangle <cevian-triangle>` of :ref:`X(13) <X(13)>`
 * :ref:`X(62) <X(62)>` = eigencenter of :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(15) <X(15)>`
 * :ref:`X(62) <X(62)>` = :ref:`X(13) <X(13)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(15) <X(15)>`
-* :ref:`X(62) <X(62)>` = :term:`crosspoint <crosspoint>` of X(303) and X(472)
-* :ref:`X(62) <X(62)>` = :term:`crossdifference <crossdifference>` of every pair of points on line X(523)X(14447)
+* :ref:`X(62) <X(62)>` = :term:`crosspoint <crosspoint>` of :ref:`X(303) <X(303)>` and :ref:`X(472) <X(472)>`
+* :ref:`X(62) <X(62)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(523) <X(523)>`\ X(14447)
 * :ref:`X(62) <X(62)>` = point of concurrence of Brocard axes of BC\ :ref:`X(16) <X(16)>`, CA\ :ref:`X(16) <X(16)>`, AB\ :ref:`X(16) <X(16)>`
 * :ref:`X(62) <X(62)>` = perspector of ABC and centers of circles used in construction of X(1338)
 * :ref:`X(62) <X(62)>` = :ref:`X(62) <X(62)>`-of-circumsymmedial-triangle
 * :ref:`X(62) <X(62)>` = orthocorrespondent of :ref:`X(15) <X(15)>`
 * :ref:`X(62) <X(62)>` = {:ref:`X(16) <X(16)>`,\ :ref:`X(61) <X(61)>`}-harmonic conjugate of :ref:`X(3) <X(3)>`
-* :ref:`X(62) <X(62)>` = {X(371),X(372)}-harmonic conjugate of :ref:`X(16) <X(16)>`
+* :ref:`X(62) <X(62)>` = {:ref:`X(371) <X(371)>`,\ :ref:`X(372) <X(372)>`}-harmonic conjugate of :ref:`X(16) <X(16)>`
 * :ref:`X(62) <X(62)>` = perspector of outer Napoleon triangle and orthocentroidal triangle
 * :ref:`X(62) <X(62)>` = Cundy-Parry Phi transform of :ref:`X(16) <X(16)>`
 * :ref:`X(62) <X(62)>` = Cundy-Parry Psi transform of :ref:`X(14) <X(14)>`

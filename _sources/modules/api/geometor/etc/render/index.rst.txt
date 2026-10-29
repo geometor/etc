@@ -76,6 +76,10 @@ Module Contents
           display: none !important;
       }
       
+      svg.geometor-etc-drawing:not(.show-lines) .incident {
+          display: none !important;
+      }
+      
       #points circle {
           fill: var(--text-color);
           stroke: var(--background-color);
@@ -472,21 +476,49 @@ Module Contents
                       { label: '+', title: 'Zoom In (or scroll wheel)', action: () => zoomBy(1 / 1.25) },
                       { label: '−', title: 'Zoom Out (or scroll wheel)', action: () => zoomBy(1.25) },
                       { label: '⟲ Fit', title: 'Reset View (or double-click canvas)', action: () => resetView() },
-                      { label: 'Labels', title: 'Toggle Point Labels', action: () => svg.classList.toggle('hide-labels') },
                   ];
+                  if (svg.querySelector('.incident')) {
+                      btns.push({
+                          label: 'Lines',
+                          toggleKey: 'lines',
+                          title: 'Toggle Incident Central Lines',
+                          isActive: () => svg.classList.contains('show-lines'),
+                          action: () => svg.classList.toggle('show-lines'),
+                      });
+                  }
+                  btns.push({
+                      label: 'Labels',
+                      toggleKey: 'labels',
+                      title: 'Toggle Point Labels',
+                      isActive: () => !svg.classList.contains('hide-labels'),
+                      action: () => svg.classList.toggle('hide-labels'),
+                  });
                   if (svg.querySelector('.guide')) {
-                      btns.push({ label: 'Guides', title: 'Toggle Construction Guides', action: () => svg.classList.toggle('hide-guides') });
+                      btns.push({
+                          label: 'Guides',
+                          toggleKey: 'guides',
+                          title: 'Toggle Construction Guides',
+                          isActive: () => !svg.classList.contains('hide-guides'),
+                          action: () => svg.classList.toggle('hide-guides'),
+                      });
                   }
                   btns.forEach(b => {
                       const btn = document.createElement('button');
                       btn.type = 'button';
                       btn.className = 'etc-svg-btn';
+                      if (b.toggleKey) {
+                          btn.dataset.toggleKey = b.toggleKey;
+                          btn.classList.toggle('active', b.isActive());
+                      }
                       btn.textContent = b.label;
                       btn.title = b.title;
                       btn.addEventListener('click', (e) => {
                           e.preventDefault();
                           e.stopPropagation();
                           b.action();
+                          if (b.isActive) {
+                              btn.classList.toggle('active', b.isActive());
+                          }
                       });
                       toolbar.appendChild(btn);
                   });
@@ -507,6 +539,7 @@ Module Contents
                           const prevSvg = prevPane ? prevPane.querySelector('svg.geometor-etc-drawing') : null;
                           const hideLabels = prevSvg ? prevSvg.classList.contains('hide-labels') : false;
                           const hideGuides = prevSvg ? prevSvg.classList.contains('hide-guides') : false;
+                          const showLines = prevSvg ? prevSvg.classList.contains('show-lines') : false;
       
                           tabBtns.forEach(b => {
                               const isMatch = b.getAttribute('data-tab') === targetTab;
@@ -523,6 +556,16 @@ Module Contents
                                   if (paneSvg) {
                                       paneSvg.classList.toggle('hide-labels', hideLabels);
                                       paneSvg.classList.toggle('hide-guides', hideGuides);
+                                      paneSvg.classList.toggle('show-lines', showLines);
+                                      const paneToolbar = pane.querySelector('.etc-svg-toolbar');
+                                      if (paneToolbar) {
+                                          const lBtn = paneToolbar.querySelector('[data-toggle-key="lines"]');
+                                          if (lBtn) lBtn.classList.toggle('active', showLines);
+                                          const lblBtn = paneToolbar.querySelector('[data-toggle-key="labels"]');
+                                          if (lblBtn) lblBtn.classList.toggle('active', !hideLabels);
+                                          const gBtn = paneToolbar.querySelector('[data-toggle-key="guides"]');
+                                          if (gBtn) gBtn.classList.toggle('active', !hideGuides);
+                                      }
                                       if (paneSvg._etcController) {
                                           paneSvg._etcController.scaleViewElements();
                                           requestAnimationFrame(() => paneSvg._etcController.scaleViewElements());

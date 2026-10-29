@@ -56,20 +56,20 @@ Incidence
 
 :ref:`X(83) <X(83)>` lies and on these lines:
 
-{:ref:`2 <X(2)>`, :ref:`32 <X(32)>`}, {:ref:`3 <X(3)>`, 262}, {:ref:`4 <X(4)>`, 182}, {:ref:`5 <X(5)>`, :ref:`98 <X(98)>`}, {:ref:`6 <X(6)>`, :ref:`76 <X(76)>`}, {:ref:`10 <X(10)>`, :ref:`82 <X(82)>`}, {:ref:`17 <X(17)>`, 624}, {:ref:`18 <X(18)>`, 623}, {:ref:`39 <X(39)>`, :ref:`99 <X(99)>`}, {213, 239}, {217, 287}, {275, 297}, {597, 671}, {689, 729}
+{:ref:`2 <X(2)>`, :ref:`32 <X(32)>`}, {:ref:`3 <X(3)>`, :ref:`262 <X(262)>`}, {:ref:`4 <X(4)>`, :ref:`182 <X(182)>`}, {:ref:`5 <X(5)>`, :ref:`98 <X(98)>`}, {:ref:`6 <X(6)>`, :ref:`76 <X(76)>`}, {:ref:`10 <X(10)>`, :ref:`82 <X(82)>`}, {:ref:`17 <X(17)>`, :ref:`624 <X(624)>`}, {:ref:`18 <X(18)>`, :ref:`623 <X(623)>`}, {:ref:`39 <X(39)>`, :ref:`99 <X(99)>`}, {:ref:`213 <X(213)>`, :ref:`239 <X(239)>`}, {:ref:`217 <X(217)>`, :ref:`287 <X(287)>`}, {:ref:`275 <X(275)>`, :ref:`297 <X(297)>`}, {:ref:`597 <X(597)>`, :ref:`671 <X(671)>`}, {:ref:`689 <X(689)>`, :ref:`729 <X(729)>`}
 
 Relations
 ---------
 
 * :ref:`X(83) <X(83)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(39) <X(39)>`
-* :ref:`X(83) <X(83)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(141)
+* :ref:`X(83) <X(83)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(141) <X(141)>`
 * :ref:`X(83) <X(83)>` = :term:`complement <complement>` of X(2896)
 * :ref:`X(83) <X(83)>` = :term:`cevapoint <cevapoint>` of :ref:`X(2) <X(2)>` and :ref:`X(6) <X(6)>`
-* :ref:`X(83) <X(83)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`2 <X(2)>`, 308), (:ref:`6 <X(6)>`, 251), (512, :ref:`99 <X(99)>`)
-* :ref:`X(83) <X(83)>` = trilinear pole of line :ref:`X(23) <X(23)>`\ X(385) (line is the polar of :ref:`X(2) <X(2)>` wrt the circumcircle, and also the :term:`anticomplement <anticomplement>` of the de Longchamps line, and also the polar of :ref:`X(5) <X(5)>` wrt {circumcircle, nine-point circle}-inverter)
-* :ref:`X(83) <X(83)>` = :term:`crossdifference <crossdifference>` of every pair of points on line X(688)X(3005)
-* :ref:`X(83) <X(83)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X(427)
-* :ref:`X(83) <X(83)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of X(427)
+* :ref:`X(83) <X(83)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`308 <X(308)>`), (:ref:`6 <X(6)>`, :ref:`251 <X(251)>`), (:ref:`512 <X(512)>`, :ref:`99 <X(99)>`)
+* :ref:`X(83) <X(83)>` = trilinear pole of line :ref:`X(23) <X(23)>`\ \ :ref:`X(385) <X(385)>` (line is the polar of :ref:`X(2) <X(2)>` wrt the circumcircle, and also the :term:`anticomplement <anticomplement>` of the de Longchamps line, and also the polar of :ref:`X(5) <X(5)>` wrt {circumcircle, nine-point circle}-inverter)
+* :ref:`X(83) <X(83)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(688) <X(688)>`\ X(3005)
+* :ref:`X(83) <X(83)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(427) <X(427)>`
+* :ref:`X(83) <X(83)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X(427) <X(427)>`
 * :ref:`X(83) <X(83)>` = perspector of ABC and :term:`medial triangle <medial-triangle>` of 1st Brocard triangle
 * :ref:`X(83) <X(83)>` = :term:`crosspoint <crosspoint>` of :ref:`X(2) <X(2)>` and :ref:`X(6) <X(6)>` wrt both the anticomplementary and :term:`tangential triangles <tangential-triangle>`
 * :ref:`X(83) <X(83)>` = trilinear product of vertices of circummedial triangle
@@ -80,9 +80,9 @@ Relations
 * :ref:`X(83) <X(83)>` = perspector of ABC and 1st Brocard triangle of medial triangle
 * :ref:`X(83) <X(83)>` = perspector of ABC and 1st Brocard triangle of 5th anti-Brocard triangle
 * :ref:`X(83) <X(83)>` = homothetic center of ABC and cross-triangle of ABC and 5th anti-Brocard triangle
-* :ref:`X(83) <X(83)>` = Cundy-Parry Phi transform of X(262)
-* :ref:`X(83) <X(83)>` = Cundy-Parry Psi transform of X(182)
-* :ref:`X(83) <X(83)>` = barycentric product of circumcircle intercepts of line X(316)X(512)
+* :ref:`X(83) <X(83)>` = Cundy-Parry Phi transform of :ref:`X(262) <X(262)>`
+* :ref:`X(83) <X(83)>` = Cundy-Parry Psi transform of :ref:`X(182) <X(182)>`
+* :ref:`X(83) <X(83)>` = barycentric product of circumcircle intercepts of line :ref:`X(316) <X(316)>`\ \ :ref:`X(512) <X(512)>`
 
 Construction
 ------------
