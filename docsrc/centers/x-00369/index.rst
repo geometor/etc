@@ -8,26 +8,21 @@
 X(369) = 1st TRISECTED PERIMETER POINT
 ======================================
 
+.. enunciation::
+
+   His presentation included a proof that there is only one point for which AB' + AC' = BC' + BA' = CA' + CB' .
+
 .. figure:: x-00369.svg
    :alt: X(369) = 1st TRISECTED PERIMETER POINT
    :align: center
 
    **X(369) = 1st TRISECTED PERIMETER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
-
-* :math:`x : y : z (see below)`
-
-Barycentrics
-~~~~~~~~~~~~
-
-* :math:`ax : by : cz`
-
-* **Kimberling (6, 9, 13) Search Value:** :math:`2.053651811125`
+   | **Trilinears:** :math:`x : y : z (see below)`
+   | **Barycentrics:** :math:`ax : by : cz`
+   | **Search Value (6, 9, 13):** :math:`2.053651811125`
 
 Notes
 -----
@@ -42,12 +37,7 @@ Notes
 
    x\ :sub:`1` = bc[r\ :sup:`2` - (2c + a)r + (- a\ :sup:`2` + b\ :sup:`2` + 2c\ :sup:`2` + 2bc + 3ca + 2ab].
 
-.. container:: note-item
+.. toctree::
+   :hidden:
 
-   His presentation included a proof that there is only one point for which AB' + AC' = BC' + BA' = CA' + CB' .
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

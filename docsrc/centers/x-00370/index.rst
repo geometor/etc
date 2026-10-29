@@ -8,35 +8,32 @@
 X(370) = EQUILATERAL CEVIAN TRIANGLE POINT
 ==========================================
 
+.. enunciation::
+
+   A point P is an equilateral :term:`cevian triangle <cevian-triangle>` point if the cevian triangle of P is equilateral. Jiang Huanxin introduced this notion in 1997.
+
 .. figure:: x-00370.svg
    :alt: X(370) = EQUILATERAL CEVIAN TRIANGLE POINT
    :align: center
 
    **X(370) = EQUILATERAL CEVIAN TRIANGLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`(see below)`
+   | **Barycentrics:** :math:`(see below)`
+   | **Search Value (6, 9, 13):** :math:`1.277501263430`
 
-* :math:`(see below)`
+.. container:: note-item
 
-Barycentrics
-~~~~~~~~~~~~
-
-* :math:`(see below)`
-
-* **Kimberling (6, 9, 13) Search Value:** :math:`1.277501263430`
+   :ref:`X(370) <X(370)>` lies on the Neuberg cubic.
 
 Notes
 -----
 
 .. container:: note-item
 
-   A point P is an equilateral :term:`cevian triangle <cevian-triangle>` point if the cevian triangle of P is equilateral. Jiang Huanxin introduced this notion in 1997.
-
-      Jean-Pierre Ehrmann notes (11/6/02) that the normalized barycentric coordinates (x,y,z) of :ref:`X(370) <X(370)>` are the unique solution of this system:
+   Jean-Pierre Ehrmann notes (11/6/02) that the normalized barycentric coordinates (x,y,z) of :ref:`X(370) <X(370)>` are the unique solution of this system:
 
    y(1 - y)S\ :sub:`B` + z(1 - z)S\ :sub:`C` = x(1 + x)F
 
@@ -52,13 +49,7 @@ Notes
 
    **Jiang Huanxin and David Goering,** Problem 10358\* and Solution, "Equilateral cevian triangles," *American Mathematical Monthly* 104 (1997) 567-570 [proposed 1994].
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(370) <X(370)>` lies on the Neuberg cubic.
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

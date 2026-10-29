@@ -9,42 +9,80 @@
 X(175) = ISOPERIMETRIC POINT
 ============================
 
+.. enunciation::
+
+   The points :ref:`X(175) <X(175)>` and :ref:`X(176) <X(176)>` are discussed in an 1890 article by :person:`Emile Lemoine <emile-lemoine>`, accessible at `Gallica <http://gallica.bnf.fr/ark:/12148/bpt6k201173h>`__. The article begins on page 111, and the two points are considered beginning on page 128.
+
 .. figure:: x-00175.svg
    :alt: X(175) = ISOPERIMETRIC POINT
    :align: center
 
    **X(175) = ISOPERIMETRIC POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`-1 + \sec A/2 \cos B/2 \cos C/2 : :`
+   | **Barycentrics:** :math:`(\sin A)(-1 + \sec A/2 \cos B/2 \cos C/2) : :`
+   | **Search Value (6, 9, 13):** :math:`-7.151627775903`
 
-* :math:`-1 + \sec A/2 \cos B/2 \cos C/2 : :`
+.. collapse:: Alternate Coordinates
+   :badge: 3 forms
 
-Barycentrics
-~~~~~~~~~~~~
+   * **Barycentrics:** :math:`-2a + (a + b + c) \tan(A/2) : :`
+   * **Barycentrics:** :math:`a - r_{a} : b - r_{b} : c - r_{c}`, where r\ :sub:`a`, r\ :sub:`b`, r\ :sub:`c` are the exradii
+   * **Barycentrics:** :math:`(a + b - c)*(a - b + c)*(a*(a - b - c) + S) : :`
 
-* :math:`(\sin A)(-1 + \sec A/2 \cos B/2 \cos C/2) : :`
-* :math:`-2a + (a + b + c) \tan(A/2) : :`
-* :math:`a - r_{a} : b - r_{b} : c - r_{c}`, where r\ :sub:`a`, r\ :sub:`b`, r\ :sub:`c` are the exradii
-* :math:`(a + b - c)*(a - b + c)*(a*(a - b - c) + S) : :`
+.. collapse:: Linear Combinations
+   :badge: 2 combinations
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`-7.151627775903`
-
-Linear Combinations
--------------------
-
-* :ref:`X(175) <X(175)>` = 2s\*\ :ref:`X(1) <X(1)>` - (r + 4R)\*\ :ref:`X(7) <X(7)>` = 3\ :ref:`X(2) <X(2)>`-4X(31534)
-* :ref:`X(175) <X(175)>` = 3 :ref:`X(2) <X(2)>` - 4 X(31534)
-
-Notes
------
+   * :ref:`X(175) <X(175)>` = 2s\*\ :ref:`X(1) <X(1)>` - (r + 4R)\*\ :ref:`X(7) <X(7)>` = 3\ :ref:`X(2) <X(2)>`-4X(31534)
+   * :ref:`X(175) <X(175)>` = 3 :ref:`X(2) <X(2)>` - 4 X(31534)
 
 .. container:: note-item
 
-   The points :ref:`X(175) <X(175)>` and :ref:`X(176) <X(176)>` are discussed in an 1890 article by :person:`Emile Lemoine <emile-lemoine>`, accessible at `Gallica <http://gallica.bnf.fr/ark:/12148/bpt6k201173h>`__. The article begins on page 111, and the two points are considered beginning on page 128.
+   :ref:`X(175) <X(175)>` lies on the curves K032, K199, K200, K,1175, Q074, Q092, Q104.
+
+.. collapse:: Incident Central Lines
+   :badge: 56 lines
+   :class: line-catalog
+
+   {:ref:`1 <X(1)>`, :ref:`7 <X(7)>`}, {:ref:`2 <X(2)>`, 13386}, {:ref:`4 <X(4)>`, 10905}, {:ref:`8 <X(8)>`, 1270}, {:ref:`40 <X(40)>`, 34495}, {:ref:`65 <X(65)>`, 6252}, {:ref:`69 <X(69)>`, 10908}, {:ref:`105 <X(105)>`, 30385}, {:ref:`144 <X(144)>`, 30557}, {:ref:`174 <X(174)>`, :ref:`483 <X(483)>`}, {:ref:`226 <X(226)>`, 1131}, {:ref:`280 <X(280)>`, 40700}, {:ref:`329 <X(329)>`, 3084}, {:ref:`388 <X(388)>`, 10911}, {:ref:`490 <X(490)>`, :ref:`664 <X(664)>`}, {:ref:`517 <X(517)>`, 39795}, {:ref:`651 <X(651)>`, 1335}, {1086, 44636}, {1336, 10253}, {1463, 7353}, {2082, 6203}, {2550, 45713}, {3062, 10973}, {3083, 9776}, {3296, 34216}, {3297, 5228}, {3298, 6180}, {4000, 7968}, {4644, 7969}, {5045, 39794}, {5222, 18992}, {5226, 5393}, {5261, 9907}, {5405, 5435}, {5932, 31528}, {5933, 31530}, {6283, 49537}, {6360, 46422}, {6405, 20358}, {7090, 10405}, {7585, 30325}, {9778, 10135}, {9789, 21147}, {10580, 16663}, {11293, 17086}, {13387, 20211}, {13389, 21454}, {13459, 16441}, {15913, 31536}, {16214, 32081}, {17365, 44635}, {17950, 43134}, {21453, 30335}, {30347, 31588}, {30413, 31547}, {31544, 32201}
+
+.. collapse:: Functional Relations
+   :badge: 29 relations
+
+   * :ref:`X(175) <X(175)>` = 2a - S/sa : 2b - S/sb : 2c - S/sc
+   * :ref:`X(176) <X(176)>` = 2a + S/sa : 2b + S/sb : 2c + S/sc
+   * :ref:`X(481) <X(481)>` = a - S/sa : b - S/sb : c - S/sc
+   * :ref:`X(482) <X(482)>` = a + S/sa : b + S/sb : c + S/sc
+   * X(1371) = a + 2S/(3 sa) : b + 2S/(3 sb) : c + 2S/(3 sc)
+   * X(1372) = a - 2S/(3 sa) : b - 2S/(3 sb) : c - 2S/(3 sc)
+   * X(1373) = a + 2S/sa : b + 2S/sb : c + 2S/sc
+   * X(1374) = a - 2S/sa : b - 2S/sb : c - 2S/sc
+   * :ref:`X(175) <X(175)>` = reflection of X(i) in X(j) for these {i,j}: {:ref:`176 <X(176)>`, 3160}, {10405, 7090}, {14121, 31534}, {30334, :ref:`1 <X(1)>`}
+   * :ref:`X(175) <X(175)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(30336)
+   * :ref:`X(175) <X(175)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(40699)
+   * :ref:`X(175) <X(175)>` = :term:`anticomplement <anticomplement>` of X(14121)
+   * :ref:`X(175) <X(175)>` = anticomplement of the isogonal conjugate of X(2067)
+   * :ref:`X(175) <X(175)>` = X(i)-:term:`anticomplementary conjugate <anticomplementary-conjugate>` of X(j) for these (i,j): {:ref:`6 <X(6)>`, 13386}, {:ref:`603 <X(603)>`, :ref:`176 <X(176)>`}, {1659, 21270}, {1805, 3869}, {2067, :ref:`8 <X(8)>`}, {2362, :ref:`4 <X(4)>`}, {5414, :ref:`329 <X(329)>`}, {6502, 31552}, {13388, :ref:`69 <X(69)>`}, {30557, 3436}, {34121, 13387}
+   * :ref:`X(175) <X(175)>` = :ref:`X(8) <X(8)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(176) <X(176)>`
+   * :ref:`X(175) <X(175)>` = X(10135)-:term:`cross conjugate <cross-conjugate>` of :ref:`X(7) <X(7)>`
+   * :ref:`X(175) <X(175)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these (i,j): {:ref:`1 <X(1)>`, 30336}, {:ref:`6 <X(6)>`, 15891}, {:ref:`31 <X(31)>`, 40699}, {:ref:`56 <X(56)>`, 34911}
+   * :ref:`X(175) <X(175)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these (i,j): {:ref:`1 <X(1)>`, 34495}, {10253, 32058}
+   * :ref:`X(175) <X(175)>` = :term:`crosssum <crosssum>` of :ref:`X(55) <X(55)>` and X(19037)
+   * :ref:`X(175) <X(175)>` = reflection of :ref:`X(175) <X(175)>` in the Soddy line
+   * :ref:`X(175) <X(175)>` = X(6406)-of-excentral-triangle
+   * :ref:`X(175) <X(175)>` = X(1152)-of-intouch-triangle
+   * :ref:`X(175) <X(175)>` = X(7353)-of-(inner)-tangential-mid-arc-triangle (:cite:`TCCT <tcct>` 6.15)
+   * :ref:`X(175) <X(175)>` = X(12224)-of-first-circumperp-triangle (:cite:`TCCT <tcct>` 6.21)
+   * :ref:`X(175) <X(175)>` = X(6400)-of-second-circumperp-triangle (:cite:`TCCT <tcct>` 6.22)
+   * :ref:`X(175) <X(175)>` = barycentric product X(i)\*X(j) for these {i,j}: {:ref:`7 <X(7)>`, 30413}, {:ref:`8 <X(8)>`, 16662}, {1659, 31547}
+   * :ref:`X(175) <X(175)>` = barycentric quotient X(i)/X(j) for these {i,j}: 1, 15891}, {:ref:`2 <X(2)>`, 40699}, {:ref:`6 <X(6)>`, 30336}, {:ref:`9 <X(9)>`, 34911}, {9778, 30412}, {16662, :ref:`7 <X(7)>`}, {30413, :ref:`8 <X(8)>`}
+   * :ref:`X(175) <X(175)>` = {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): {:ref:`1 <X(1)>`, :ref:`7 <X(7)>`, :ref:`176 <X(176)>`}, {:ref:`1 <X(1)>`, 15891}, {:ref:`2 <X(2)>`, 40699}, {:ref:`6 <X(6)>`, 30336}, {:ref:`9 <X(9)>`, 34911}, {9778, 30412}, {16662, :ref:`7 <X(7)>`}, {30413, :ref:`8 <X(8)>`}
+   * {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): {:ref:`1 <X(1)>`, :ref:`7 <X(7)>`, :ref:`176 <X(176)>`}, {:ref:`1 <X(1)>`, :ref:`481 <X(481)>`, :ref:`7 <X(7)>`}, {:ref:`1 <X(1)>`, :ref:`482 <X(482)>`, 17805}, {:ref:`1 <X(1)>`, 1372, :ref:`481 <X(481)>`}, {:ref:`1 <X(1)>`, 1373, 31538}, {:ref:`1 <X(1)>`, 1374, :ref:`482 <X(482)>`}, {:ref:`1 <X(1)>`, 17803, 31539}, {:ref:`1 <X(1)>`, 30342, 11038}, {:ref:`1 <X(1)>`, 31539, 17802}, {:ref:`1 <X(1)>`, 31568, 8236}, {:ref:`7 <X(7)>`, :ref:`176 <X(176)>`, 21169}, {:ref:`7 <X(7)>`, :ref:`482 <X(482)>`, 21170}, {:ref:`7 <X(7)>`, 1372, 17801}, {:ref:`7 <X(7)>`, 8236, 31566}, {:ref:`7 <X(7)>`, 17802, :ref:`1 <X(1)>`}, {:ref:`7 <X(7)>`, 17805, :ref:`482 <X(482)>`}, {:ref:`7 <X(7)>`, 31601, 1373}, {:ref:`7 <X(7)>`, 31602, :ref:`481 <X(481)>`}, {:ref:`20 <X(20)>`, :ref:`347 <X(347)>`, :ref:`176 <X(176)>`}, {:ref:`77 <X(77)>`, :ref:`962 <X(962)>`, :ref:`176 <X(176)>`}, {:ref:`176 <X(176)>`, 21169, 17804}, {:ref:`176 <X(176)>`, 21170, :ref:`482 <X(482)>`}, {:ref:`269 <X(269)>`, 9785, :ref:`176 <X(176)>`}, {:ref:`279 <X(279)>`, :ref:`390 <X(390)>`, :ref:`176 <X(176)>`}, {:ref:`481 <X(481)>`, :ref:`482 <X(482)>`, 1374}, {:ref:`481 <X(481)>`, 1372, 31602}, {:ref:`481 <X(481)>`, 17802, :ref:`176 <X(176)>`}, {:ref:`481 <X(481)>`, 17803, 17802}, {:ref:`481 <X(481)>`, 31539, :ref:`1 <X(1)>`}, {:ref:`481 <X(481)>`, 31602, 17801}, {:ref:`482 <X(482)>`, 1374, :ref:`7 <X(7)>`}, {:ref:`482 <X(482)>`, 17805, :ref:`176 <X(176)>`}, {:ref:`482 <X(482)>`, 21170, 21169}, {1323, 30332, :ref:`176 <X(176)>`}, {1372, 17803, :ref:`1 <X(1)>`}, {1372, 31539, :ref:`7 <X(7)>`}, {1373, 31538, 31601}, {1374, 17805, 21170}, {1442, 4295, :ref:`176 <X(176)>`}, {1443, 30305, :ref:`176 <X(176)>`}, {3600, 3672, :ref:`176 <X(176)>`}, {3638, 3639, 1372}, {3663, 4308, :ref:`176 <X(176)>`}, {3664, 4323, :ref:`176 <X(176)>`}, {3668, 4313, :ref:`176 <X(176)>`}, {3674, 4344, :ref:`176 <X(176)>`}, {4296, 4329, :ref:`176 <X(176)>`}, {4297, 36640, :ref:`176 <X(176)>`}, {4318, 17170, :ref:`176 <X(176)>`}, {4862, 6049, :ref:`176 <X(176)>`}, {5542, 5543, :ref:`176 <X(176)>`}, {5731, 22464, :ref:`176 <X(176)>`}, {7190, 11037, :ref:`176 <X(176)>`}, {8236, 10481, :ref:`176 <X(176)>`}, {10135, 32083, 16662}, {10481, 31568, 31566}, {13388, 13390, :ref:`2 <X(2)>`}, {14121, 31534, :ref:`2 <X(2)>`}, {17801, 17802, 21169}, {17802, 31602, :ref:`7 <X(7)>`}, {30424, 31721, :ref:`176 <X(176)>`}, {31538, 31601, :ref:`176 <X(176)>`}, {31539, 31602, :ref:`176 <X(176)>`}
+
+Notes
+-----
 
 .. container:: note-item
 
@@ -152,48 +190,7 @@ Notes
 
       (a+b-c) (a-b+c) (2 (a-b-c) (2 a^3 b c+a^4 (b+c)-2 a b c (b+c)^2+(b-c)^2 (b+c)^3-2 a^2 (b^3+b^2 c+b c^2+c^3)+2 (a^3-2 b c (b+c)-a (b+c)^2) S) x^2 + (3 a^6-4 a^5 (b+c)-4 a (b-c)^2 (b+c)^3-3 (b-c)^2 (b+c)^4+a^2 (b+c)^2 (9 b^2+2 b c+9 c^2)-a^4 (9 b^2+14 b c+9 c^2)+8 a^3 (b^3+b^2 c+b c^2+c^3)-2 (a^4+6 a^3 (b+c)-4 a^2 (b+c)^2+3 (b^2-c^2)^2-2 a (3 b^3+7 b^2 c+7 b c^2+3 c^3)) S) y z) + (cyclic) = 0. (:person:`Angel Montesdeoca <angel-montesdeoca>`, September 9, 2022)
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(175) <X(175)>` lies on the curves K032, K199, K200, K,1175, Q074, Q092, Q104 and on these lines:
-
-{:ref:`1 <X(1)>`, :ref:`7 <X(7)>`}, {:ref:`2 <X(2)>`, 13386}, {:ref:`4 <X(4)>`, 10905}, {:ref:`8 <X(8)>`, 1270}, {:ref:`40 <X(40)>`, 34495}, {:ref:`65 <X(65)>`, 6252}, {:ref:`69 <X(69)>`, 10908}, {:ref:`105 <X(105)>`, 30385}, {:ref:`144 <X(144)>`, 30557}, {:ref:`174 <X(174)>`, :ref:`483 <X(483)>`}, {:ref:`226 <X(226)>`, 1131}, {:ref:`280 <X(280)>`, 40700}, {:ref:`329 <X(329)>`, 3084}, {:ref:`388 <X(388)>`, 10911}, {:ref:`490 <X(490)>`, :ref:`664 <X(664)>`}, {:ref:`517 <X(517)>`, 39795}, {:ref:`651 <X(651)>`, 1335}, {1086, 44636}, {1336, 10253}, {1463, 7353}, {2082, 6203}, {2550, 45713}, {3062, 10973}, {3083, 9776}, {3296, 34216}, {3297, 5228}, {3298, 6180}, {4000, 7968}, {4644, 7969}, {5045, 39794}, {5222, 18992}, {5226, 5393}, {5261, 9907}, {5405, 5435}, {5932, 31528}, {5933, 31530}, {6283, 49537}, {6360, 46422}, {6405, 20358}, {7090, 10405}, {7585, 30325}, {9778, 10135}, {9789, 21147}, {10580, 16663}, {11293, 17086}, {13387, 20211}, {13389, 21454}, {13459, 16441}, {15913, 31536}, {16214, 32081}, {17365, 44635}, {17950, 43134}, {21453, 30335}, {30347, 31588}, {30413, 31547}, {31544, 32201}
-
-Relations
----------
-
-* :ref:`X(175) <X(175)>` = 2a - S/sa : 2b - S/sb : 2c - S/sc
-* :ref:`X(176) <X(176)>` = 2a + S/sa : 2b + S/sb : 2c + S/sc
-* :ref:`X(481) <X(481)>` = a - S/sa : b - S/sb : c - S/sc
-* :ref:`X(482) <X(482)>` = a + S/sa : b + S/sb : c + S/sc
-* X(1371) = a + 2S/(3 sa) : b + 2S/(3 sb) : c + 2S/(3 sc)
-* X(1372) = a - 2S/(3 sa) : b - 2S/(3 sb) : c - 2S/(3 sc)
-* X(1373) = a + 2S/sa : b + 2S/sb : c + 2S/sc
-* X(1374) = a - 2S/sa : b - 2S/sb : c - 2S/sc
-* :ref:`X(175) <X(175)>` = reflection of X(i) in X(j) for these {i,j}: {:ref:`176 <X(176)>`, 3160}, {10405, 7090}, {14121, 31534}, {30334, :ref:`1 <X(1)>`}
-* :ref:`X(175) <X(175)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(30336)
-* :ref:`X(175) <X(175)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(40699)
-* :ref:`X(175) <X(175)>` = :term:`anticomplement <anticomplement>` of X(14121)
-* :ref:`X(175) <X(175)>` = anticomplement of the isogonal conjugate of X(2067)
-* :ref:`X(175) <X(175)>` = X(i)-:term:`anticomplementary conjugate <anticomplementary-conjugate>` of X(j) for these (i,j): {:ref:`6 <X(6)>`, 13386}, {:ref:`603 <X(603)>`, :ref:`176 <X(176)>`}, {1659, 21270}, {1805, 3869}, {2067, :ref:`8 <X(8)>`}, {2362, :ref:`4 <X(4)>`}, {5414, :ref:`329 <X(329)>`}, {6502, 31552}, {13388, :ref:`69 <X(69)>`}, {30557, 3436}, {34121, 13387}
-* :ref:`X(175) <X(175)>` = :ref:`X(8) <X(8)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(176) <X(176)>`
-* :ref:`X(175) <X(175)>` = X(10135)-:term:`cross conjugate <cross-conjugate>` of :ref:`X(7) <X(7)>`
-* :ref:`X(175) <X(175)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these (i,j): {:ref:`1 <X(1)>`, 30336}, {:ref:`6 <X(6)>`, 15891}, {:ref:`31 <X(31)>`, 40699}, {:ref:`56 <X(56)>`, 34911}
-* :ref:`X(175) <X(175)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these (i,j): {:ref:`1 <X(1)>`, 34495}, {10253, 32058}
-* :ref:`X(175) <X(175)>` = :term:`crosssum <crosssum>` of :ref:`X(55) <X(55)>` and X(19037)
-* :ref:`X(175) <X(175)>` = reflection of :ref:`X(175) <X(175)>` in the Soddy line
-* :ref:`X(175) <X(175)>` = X(6406)-of-excentral-triangle
-* :ref:`X(175) <X(175)>` = X(1152)-of-intouch-triangle
-* :ref:`X(175) <X(175)>` = X(7353)-of-(inner)-tangential-mid-arc-triangle (:cite:`TCCT <tcct>` 6.15)
-* :ref:`X(175) <X(175)>` = X(12224)-of-first-circumperp-triangle (:cite:`TCCT <tcct>` 6.21)
-* :ref:`X(175) <X(175)>` = X(6400)-of-second-circumperp-triangle (:cite:`TCCT <tcct>` 6.22)
-* :ref:`X(175) <X(175)>` = barycentric product X(i)\*X(j) for these {i,j}: {:ref:`7 <X(7)>`, 30413}, {:ref:`8 <X(8)>`, 16662}, {1659, 31547}
-* :ref:`X(175) <X(175)>` = barycentric quotient X(i)/X(j) for these {i,j}: 1, 15891}, {:ref:`2 <X(2)>`, 40699}, {:ref:`6 <X(6)>`, 30336}, {:ref:`9 <X(9)>`, 34911}, {9778, 30412}, {16662, :ref:`7 <X(7)>`}, {30413, :ref:`8 <X(8)>`}
-* :ref:`X(175) <X(175)>` = {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): {:ref:`1 <X(1)>`, :ref:`7 <X(7)>`, :ref:`176 <X(176)>`}, {:ref:`1 <X(1)>`, 15891}, {:ref:`2 <X(2)>`, 40699}, {:ref:`6 <X(6)>`, 30336}, {:ref:`9 <X(9)>`, 34911}, {9778, 30412}, {16662, :ref:`7 <X(7)>`}, {30413, :ref:`8 <X(8)>`}
-* {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): {:ref:`1 <X(1)>`, :ref:`7 <X(7)>`, :ref:`176 <X(176)>`}, {:ref:`1 <X(1)>`, :ref:`481 <X(481)>`, :ref:`7 <X(7)>`}, {:ref:`1 <X(1)>`, :ref:`482 <X(482)>`, 17805}, {:ref:`1 <X(1)>`, 1372, :ref:`481 <X(481)>`}, {:ref:`1 <X(1)>`, 1373, 31538}, {:ref:`1 <X(1)>`, 1374, :ref:`482 <X(482)>`}, {:ref:`1 <X(1)>`, 17803, 31539}, {:ref:`1 <X(1)>`, 30342, 11038}, {:ref:`1 <X(1)>`, 31539, 17802}, {:ref:`1 <X(1)>`, 31568, 8236}, {:ref:`7 <X(7)>`, :ref:`176 <X(176)>`, 21169}, {:ref:`7 <X(7)>`, :ref:`482 <X(482)>`, 21170}, {:ref:`7 <X(7)>`, 1372, 17801}, {:ref:`7 <X(7)>`, 8236, 31566}, {:ref:`7 <X(7)>`, 17802, :ref:`1 <X(1)>`}, {:ref:`7 <X(7)>`, 17805, :ref:`482 <X(482)>`}, {:ref:`7 <X(7)>`, 31601, 1373}, {:ref:`7 <X(7)>`, 31602, :ref:`481 <X(481)>`}, {:ref:`20 <X(20)>`, :ref:`347 <X(347)>`, :ref:`176 <X(176)>`}, {:ref:`77 <X(77)>`, :ref:`962 <X(962)>`, :ref:`176 <X(176)>`}, {:ref:`176 <X(176)>`, 21169, 17804}, {:ref:`176 <X(176)>`, 21170, :ref:`482 <X(482)>`}, {:ref:`269 <X(269)>`, 9785, :ref:`176 <X(176)>`}, {:ref:`279 <X(279)>`, :ref:`390 <X(390)>`, :ref:`176 <X(176)>`}, {:ref:`481 <X(481)>`, :ref:`482 <X(482)>`, 1374}, {:ref:`481 <X(481)>`, 1372, 31602}, {:ref:`481 <X(481)>`, 17802, :ref:`176 <X(176)>`}, {:ref:`481 <X(481)>`, 17803, 17802}, {:ref:`481 <X(481)>`, 31539, :ref:`1 <X(1)>`}, {:ref:`481 <X(481)>`, 31602, 17801}, {:ref:`482 <X(482)>`, 1374, :ref:`7 <X(7)>`}, {:ref:`482 <X(482)>`, 17805, :ref:`176 <X(176)>`}, {:ref:`482 <X(482)>`, 21170, 21169}, {1323, 30332, :ref:`176 <X(176)>`}, {1372, 17803, :ref:`1 <X(1)>`}, {1372, 31539, :ref:`7 <X(7)>`}, {1373, 31538, 31601}, {1374, 17805, 21170}, {1442, 4295, :ref:`176 <X(176)>`}, {1443, 30305, :ref:`176 <X(176)>`}, {3600, 3672, :ref:`176 <X(176)>`}, {3638, 3639, 1372}, {3663, 4308, :ref:`176 <X(176)>`}, {3664, 4323, :ref:`176 <X(176)>`}, {3668, 4313, :ref:`176 <X(176)>`}, {3674, 4344, :ref:`176 <X(176)>`}, {4296, 4329, :ref:`176 <X(176)>`}, {4297, 36640, :ref:`176 <X(176)>`}, {4318, 17170, :ref:`176 <X(176)>`}, {4862, 6049, :ref:`176 <X(176)>`}, {5542, 5543, :ref:`176 <X(176)>`}, {5731, 22464, :ref:`176 <X(176)>`}, {7190, 11037, :ref:`176 <X(176)>`}, {8236, 10481, :ref:`176 <X(176)>`}, {10135, 32083, 16662}, {10481, 31568, 31566}, {13388, 13390, :ref:`2 <X(2)>`}, {14121, 31534, :ref:`2 <X(2)>`}, {17801, 17802, 21169}, {17802, 31602, :ref:`7 <X(7)>`}, {30424, 31721, :ref:`176 <X(176)>`}, {31538, 31601, :ref:`176 <X(176)>`}, {31539, 31602, :ref:`176 <X(176)>`}
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

@@ -8,27 +8,26 @@
 X(456) = EULER X(195)-11th-SUBSTITUTION POINT
 =============================================
 
+.. enunciation::
+
+   {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): {15770, 15779, 3}
+
 .. figure:: x-00456.svg
    :alt: X(456) = EULER X(195)-11th-SUBSTITUTION POINT
    :align: center
 
    **X(456) = EULER X(195)-11th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`u^{2}\sec A : v^{2}\sec B : w^{2}\sec C`, where u : v : w = :ref:`X(195) <X(195)>`
+   | **Barycentrics:** :math:`u^{2}\tan A : v^{2}\tan B : w^{2}\tan C`
+   | **Search Value (6, 9, 13):** :math:`3.729690948512`
 
-* :math:`u^{2}\sec A : v^{2}\sec B : w^{2}\sec C`, where u : v : w = :ref:`X(195) <X(195)>`
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-Barycentrics
-~~~~~~~~~~~~
-
-* :math:`u^{2}\tan A : v^{2}\tan B : w^{2}\tan C`
-* :math:`a^2*(a^2 + b^2 - c^2)*(a^2 - b^2 + c^2)*(a^8 - 4*a^6*b^2 + 6*a^4*b^4 - 4*a^2*b^6 + b^8 - 4*a^6*c^2 + 5*a^4*b^2*c^2 + a^2*b^4*c^2 - 2*b^6*c^2 + 6*a^4*c^4 + a^2*b^2*c^4 + 2*b^4*c^4 - 4*a^2*c^6 - 2*b^2*c^6 + c^8)^2 : :`
-
-* **Kimberling (6, 9, 13) Search Value:** :math:`3.729690948512`
+   * **Barycentrics:** :math:`a^2*(a^2 + b^2 - c^2)*(a^2 - b^2 + c^2)*(a^8 - 4*a^6*b^2 + 6*a^4*b^4 - 4*a^2*b^6 + b^8 - 4*a^6*c^2 + 5*a^4*b^2*c^2 + a^2*b^4*c^2 - 2*b^6*c^2 + 6*a^4*c^4 + a^2*b^2*c^4 + 2*b^4*c^4 - 4*a^2*c^6 - 2*b^2*c^6 + c^8)^2 : :`
 
 Notes
 -----
@@ -37,12 +36,7 @@ Notes
 
    As a point on the Euler line, :ref:`X(456) <X(456)>` has Shinagawa coefficients ((9E + 16F)EF\ :sup:`2` - 64F\ :sup:`2`\ S\ :sup:`2`, -E\ :sup:`2`\ F\ :sup:`2` + 16(E + 4F)FS\ :sup:`2`).
 
-.. container:: note-item
+.. toctree::
+   :hidden:
 
-   {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): {15770, 15779, 3}
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

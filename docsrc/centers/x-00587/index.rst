@@ -14,30 +14,23 @@ X(587) = POINT ARCTURUS
 
    **X(587) = POINT ARCTURUS** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = bc[2(a + b + c) + (a - b - c) tan A]
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = 2(a + b + c) + (a - b - c) tan A
+   | **Search Value (6, 9, 13):** :math:`2.459114389696`
 
-* :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = bc[2(a + b + c) + (a - b - c) tan A]
+.. container:: note-item
 
-Barycentrics
-~~~~~~~~~~~~
+   :ref:`X(587) <X(587)>` lies.
 
-* :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = 2(a + b + c) + (a - b - c) tan A
+.. collapse:: Incident Central Lines
+   :badge: 1 line
+   :class: line-catalog
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`2.459114389696`
+   {:ref:`2 <X(2)>`, :ref:`92 <X(92)>`}
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(587) <X(587)>` lies and on these lines:
-
-{:ref:`2 <X(2)>`, :ref:`92 <X(92)>`}
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

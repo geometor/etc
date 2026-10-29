@@ -8,41 +8,38 @@
 X(987) = ISOGONAL CONJUGATE OF X(986)
 =====================================
 
+.. enunciation::
+
+   :ref:`X(987) <X(987)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(986) <X(986)>`
+
 .. figure:: x-00987.svg
    :alt: X(987) = ISOGONAL CONJUGATE OF X(986)
    :align: center
 
    **X(987) = ISOGONAL CONJUGATE OF X(986)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = 1/[a(b\ :sup:`2` + bc + c\ :sup:`2`) + b\ :sup:`3` + c\ :sup:`3`]
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Search Value (6, 9, 13):** :math:`1.302105765102`
 
-* :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = 1/[a(b\ :sup:`2` + bc + c\ :sup:`2`) + b\ :sup:`3` + c\ :sup:`3`]
+.. container:: note-item
 
-Barycentrics
-~~~~~~~~~~~~
+   :ref:`X(987) <X(987)>` lies.
 
-* :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+.. collapse:: Incident Central Lines
+   :badge: 6 lines
+   :class: line-catalog
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`1.302105765102`
+   {:ref:`3 <X(3)>`, :ref:`256 <X(256)>`}, {:ref:`4 <X(4)>`, :ref:`171 <X(171)>`}, {:ref:`7 <X(7)>`, 1106}, {:ref:`8 <X(8)>`, :ref:`31 <X(31)>`}, {:ref:`9 <X(9)>`, :ref:`32 <X(32)>`}, {:ref:`58 <X(58)>`, :ref:`314 <X(314)>`}
 
-Incidence
----------
+.. collapse:: Functional Relations
+   :badge: 1 relation
 
-:ref:`X(987) <X(987)>` lies and on these lines:
+   * :ref:`X(987) <X(987)>` = isogonal conjugate of :ref:`X(986) <X(986)>`
 
-{:ref:`3 <X(3)>`, :ref:`256 <X(256)>`}, {:ref:`4 <X(4)>`, :ref:`171 <X(171)>`}, {:ref:`7 <X(7)>`, 1106}, {:ref:`8 <X(8)>`, :ref:`31 <X(31)>`}, {:ref:`9 <X(9)>`, :ref:`32 <X(32)>`}, {:ref:`58 <X(58)>`, :ref:`314 <X(314)>`}
+.. toctree::
+   :hidden:
 
-Relations
----------
-
-* :ref:`X(987) <X(987)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(986) <X(986)>`
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

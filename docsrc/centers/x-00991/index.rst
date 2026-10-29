@@ -8,62 +8,56 @@
 X(991) = INTERSECTION OF LINES X(1)X(7) AND X(3)X(6)
 ====================================================
 
+.. enunciation::
+
+   The function p = (r + 4R)/s is the Tucker parameter for :ref:`X(991) <X(991)>`; see the preamble to X(13323.)
+
 .. figure:: x-00991.svg
    :alt: X(991) = INTERSECTION OF LINES X(1)X(7) AND X(3)X(6)
    :align: center
 
    **X(991) = INTERSECTION OF LINES X(1)X(7) AND X(3)X(6)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`a[a^{3}(b + c) - a^{2}(b^{2} - bc + c^{2}) - a(b + c)(b^{2} + c^{2}) + (b - c)(b^{3} - c^{3})] : :`
+   | **Barycentrics:** :math:`(\sin A)[\cos(A - arccot(p))] : :`, where p = (r + 4R)/s
+   | **Search Value (6, 9, 13):** :math:`3.457495508350`
 
-* :math:`a[a^{3}(b + c) - a^{2}(b^{2} - bc + c^{2}) - a(b + c)(b^{2} + c^{2}) + (b - c)(b^{3} - c^{3})] : :`
-* :math:`\sin(A + U) : :`, where tan U = tan(A/2) tan(B/2) tan(C/2) (Joe Goggins,11/26/08)
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-Barycentrics
-~~~~~~~~~~~~
+   * **Trilinears:** :math:`\sin(A + U) : :`, where tan U = tan(A/2) tan(B/2) tan(C/2) (Joe Goggins,11/26/08)
 
-* :math:`(\sin A)[\cos(A - arccot(p))] : :`, where p = (r + 4R)/s
+.. collapse:: Linear Combinations
+   :badge: 1 combination
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`3.457495508350`
-
-Linear Combinations
--------------------
-
-* :ref:`X(991) <X(991)>` = :ref:`X(3) <X(3)>` + ((cot ω)/p)\ :ref:`X(6) <X(6)>` = 3 X(3576) - X(6210)
-
-Notes
------
+   * :ref:`X(991) <X(991)>` = :ref:`X(3) <X(3)>` + ((cot ω)/p)\ :ref:`X(6) <X(6)>` = 3 X(3576) - X(6210)
 
 .. container:: note-item
 
-   The function p = (r + 4R)/s is the Tucker parameter for :ref:`X(991) <X(991)>`; see the preamble to X(13323.)
+   :ref:`X(991) <X(991)>` lies on the cubic K382.
 
-Incidence
----------
+.. collapse:: Incident Central Lines
+   :badge: 79 lines
+   :class: line-catalog
 
-:ref:`X(991) <X(991)>` lies on the cubic K382 and on these lines:
+   {:ref:`1 <X(1)>`, :ref:`7 <X(7)>`}, {:ref:`2 <X(2)>`, 5400}, {:ref:`3 <X(3)>`, :ref:`6 <X(6)>`}, {:ref:`4 <X(4)>`, 4648}, {:ref:`9 <X(9)>`, 1818}, {:ref:`22 <X(22)>`, 1790}, {:ref:`35 <X(35)>`, :ref:`255 <X(255)>`}, {:ref:`36 <X(36)>`, 1471}, {:ref:`37 <X(37)>`, :ref:`971 <X(971)>`}, {:ref:`42 <X(42)>`, :ref:`165 <X(165)>`}, {:ref:`43 <X(43)>`, 10164}, {:ref:`45 <X(45)>`, 5779}, {:ref:`48 <X(48)>`, 3220}, {:ref:`51 <X(51)>`, 4191}, {:ref:`55 <X(55)>`, :ref:`103 <X(103)>`}, {:ref:`57 <X(57)>`, :ref:`955 <X(955)>`}, {:ref:`63 <X(63)>`, 3190}, {:ref:`73 <X(73)>`, 1394}, {:ref:`78 <X(78)>`, 4416}, {:ref:`81 <X(81)>`, 1754}, {:ref:`84 <X(84)>`, 2335}, {:ref:`212 <X(212)>`, 2003}, {:ref:`223 <X(223)>`, 10383}, {:ref:`241 <X(241)>`, 5728}, {:ref:`394 <X(394)>`, 2328}, {:ref:`550 <X(550)>`, 5453}, {:ref:`601 <X(601)>`, 10902}, {:ref:`741 <X(741)>`, 6011}, {:ref:`940 <X(940)>`, 7580}, {:ref:`942 <X(942)>`, 1418}, {:ref:`954 <X(954)>`, 6180}, {:ref:`968 <X(968)>`, 1709}, {:ref:`975 <X(975)>`, 1490}, {:ref:`984 <X(984)>`, 2801}, {:ref:`993 <X(993)>`, 6518}, {:ref:`995 <X(995)>`, 1064}, {:ref:`999 <X(999)>`, 8147}, {1011, 3917}, {1012, 4653}, {1038, 10393}, {1062, 8555}, {1193, 7987}, {1214, 10391}, {1279, 1385}, {1283, 5197}, {1308, 12032}, {1396, 4219}, {1427, 11018}, {1456, 2646}, {1469, 2223}, {1699, 3720}, {1724, 6986}, {1736, 10394}, {1768, 4414}, {1779, 2979}, {2177, 5537}, {2195, 7295}, {2318, 3929}, {2340, 5223}, {2594, 5217}, {2635, 5219}, {2700, 2701}, {2999, 10857}, {3060, 4210}, {3214, 9588}, {3216, 3523}, {3666, 10167}, {3730, 3781}, {3752, 11227}, {3912, 12618}, {3931, 9943}, {4551, 5218}, {4644, 5759}, {4649, 9441}, {4658, 5706}, {4675, 5805}, {5292, 6908}, {5713, 6851}, {6051, 12688}
 
-{:ref:`1 <X(1)>`, :ref:`7 <X(7)>`}, {:ref:`2 <X(2)>`, 5400}, {:ref:`3 <X(3)>`, :ref:`6 <X(6)>`}, {:ref:`4 <X(4)>`, 4648}, {:ref:`9 <X(9)>`, 1818}, {:ref:`22 <X(22)>`, 1790}, {:ref:`35 <X(35)>`, :ref:`255 <X(255)>`}, {:ref:`36 <X(36)>`, 1471}, {:ref:`37 <X(37)>`, :ref:`971 <X(971)>`}, {:ref:`42 <X(42)>`, :ref:`165 <X(165)>`}, {:ref:`43 <X(43)>`, 10164}, {:ref:`45 <X(45)>`, 5779}, {:ref:`48 <X(48)>`, 3220}, {:ref:`51 <X(51)>`, 4191}, {:ref:`55 <X(55)>`, :ref:`103 <X(103)>`}, {:ref:`57 <X(57)>`, :ref:`955 <X(955)>`}, {:ref:`63 <X(63)>`, 3190}, {:ref:`73 <X(73)>`, 1394}, {:ref:`78 <X(78)>`, 4416}, {:ref:`81 <X(81)>`, 1754}, {:ref:`84 <X(84)>`, 2335}, {:ref:`212 <X(212)>`, 2003}, {:ref:`223 <X(223)>`, 10383}, {:ref:`241 <X(241)>`, 5728}, {:ref:`394 <X(394)>`, 2328}, {:ref:`550 <X(550)>`, 5453}, {:ref:`601 <X(601)>`, 10902}, {:ref:`741 <X(741)>`, 6011}, {:ref:`940 <X(940)>`, 7580}, {:ref:`942 <X(942)>`, 1418}, {:ref:`954 <X(954)>`, 6180}, {:ref:`968 <X(968)>`, 1709}, {:ref:`975 <X(975)>`, 1490}, {:ref:`984 <X(984)>`, 2801}, {:ref:`993 <X(993)>`, 6518}, {:ref:`995 <X(995)>`, 1064}, {:ref:`999 <X(999)>`, 8147}, {1011, 3917}, {1012, 4653}, {1038, 10393}, {1062, 8555}, {1193, 7987}, {1214, 10391}, {1279, 1385}, {1283, 5197}, {1308, 12032}, {1396, 4219}, {1427, 11018}, {1456, 2646}, {1469, 2223}, {1699, 3720}, {1724, 6986}, {1736, 10394}, {1768, 4414}, {1779, 2979}, {2177, 5537}, {2195, 7295}, {2318, 3929}, {2340, 5223}, {2594, 5217}, {2635, 5219}, {2700, 2701}, {2999, 10857}, {3060, 4210}, {3214, 9588}, {3216, 3523}, {3666, 10167}, {3730, 3781}, {3752, 11227}, {3912, 12618}, {3931, 9943}, {4551, 5218}, {4644, 5759}, {4649, 9441}, {4658, 5706}, {4675, 5805}, {5292, 6908}, {5713, 6851}, {6051, 12688}
+.. collapse:: Functional Relations
+   :badge: 9 relations
 
-Relations
----------
+   * :ref:`X(991) <X(991)>` = reflection of :ref:`X(573) <X(573)>` in :ref:`X(3) <X(3)>`
+   * :ref:`X(991) <X(991)>` = :term:`isogonal conjugate <isogonal-conjugate>` of polar conjugate of X(37448)
+   * :ref:`X(991) <X(991)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(523) <X(523)>`\ \ :ref:`X(657) <X(657)>`
+   * :ref:`X(991) <X(991)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these {i,j}: {:ref:`1 <X(1)>`, 4312}, {:ref:`11 <X(11)>`, 4724}
+   * :ref:`X(991) <X(991)>` = inverse-in-Schoute-circle of X(4262)
+   * :ref:`X(991) <X(991)>` = :ref:`X(264) <X(264)>`-of-2nd-circumperp-triangle
+   * :ref:`X(991) <X(991)>` = perspector of excentral-hexyl ellipse wrt hexyl triangle
+   * :ref:`X(991) <X(991)>` = intersection of Brocard axes of ABC and hexyl triangle
+   * :ref:`X(991) <X(991)>` = {:ref:`X(371) <X(371)>`,\ :ref:`X(372) <X(372)>`}-harmonic conjugate of X(4251)
 
-* :ref:`X(991) <X(991)>` = reflection of :ref:`X(573) <X(573)>` in :ref:`X(3) <X(3)>`
-* :ref:`X(991) <X(991)>` = :term:`isogonal conjugate <isogonal-conjugate>` of polar conjugate of X(37448)
-* :ref:`X(991) <X(991)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(523) <X(523)>`\ \ :ref:`X(657) <X(657)>`
-* :ref:`X(991) <X(991)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these {i,j}: {:ref:`1 <X(1)>`, 4312}, {:ref:`11 <X(11)>`, 4724}
-* :ref:`X(991) <X(991)>` = inverse-in-Schoute-circle of X(4262)
-* :ref:`X(991) <X(991)>` = :ref:`X(264) <X(264)>`-of-2nd-circumperp-triangle
-* :ref:`X(991) <X(991)>` = perspector of excentral-hexyl ellipse wrt hexyl triangle
-* :ref:`X(991) <X(991)>` = intersection of Brocard axes of ABC and hexyl triangle
-* :ref:`X(991) <X(991)>` = {:ref:`X(371) <X(371)>`,\ :ref:`X(372) <X(372)>`}-harmonic conjugate of X(4251)
+.. toctree::
+   :hidden:
 
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

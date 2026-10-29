@@ -8,46 +8,45 @@
 X(727) = EVEN (- 2, -1) CIRCUMCIRCLE POINT
 ==========================================
 
+.. enunciation::
+
+   :ref:`X(727) <X(727)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(726) <X(726)>`
+
 .. figure:: x-00727.svg
    :alt: X(727) = EVEN (- 2, -1) CIRCUMCIRCLE POINT
    :align: center
 
    **X(727) = EVEN (- 2, -1) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = 1/[a :sup:`-3`\ (b :sup:`-1` + c :sup:`-1`) - a :sup:`-2`\ (b :sup:`-2` + c :sup:`-2`)]
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Search Value (6, 9, 13):** :math:`-0.618761834841`
 
-* :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = 1/[a :sup:`-3`\ (b :sup:`-1` + c :sup:`-1`) - a :sup:`-2`\ (b :sup:`-2` + c :sup:`-2`)]
+.. container:: note-item
 
-Barycentrics
-~~~~~~~~~~~~
+   :ref:`X(727) <X(727)>` lies on the circumcircle.
 
-* :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+.. container:: note-item
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`-0.618761834841`
+   :ref:`X(727) <X(727)>` lies.
 
-Incidence
----------
+.. collapse:: Incident Central Lines
+   :badge: 6 lines
+   :class: line-catalog
 
-:ref:`X(727) <X(727)>` lies on the circumcircle.
+   {:ref:`1 <X(1)>`, :ref:`932 <X(932)>`}, {:ref:`31 <X(31)>`, :ref:`43 <X(43)>`}, {:ref:`32 <X(32)>`, :ref:`101 <X(101)>`}, {:ref:`58 <X(58)>`, :ref:`99 <X(99)>`}, {:ref:`789 <X(789)>`, :ref:`985 <X(985)>`}, {:ref:`934 <X(934)>`, 1106}
 
-:ref:`X(727) <X(727)>` lies and on these lines:
+.. collapse:: Functional Relations
+   :badge: 4 relations
 
-{:ref:`1 <X(1)>`, :ref:`932 <X(932)>`}, {:ref:`31 <X(31)>`, :ref:`43 <X(43)>`}, {:ref:`32 <X(32)>`, :ref:`101 <X(101)>`}, {:ref:`58 <X(58)>`, :ref:`99 <X(99)>`}, {:ref:`789 <X(789)>`, :ref:`985 <X(985)>`}, {:ref:`934 <X(934)>`, 1106}
+   * :ref:`X(727) <X(727)>` = isogonal conjugate of :ref:`X(726) <X(726)>`
+   * :ref:`X(727) <X(727)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(35538)
+   * :ref:`X(727) <X(727)>` = :ref:`X(238) <X(238)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(58) <X(58)>`
+   * :ref:`X(727) <X(727)>` = Ψ(:ref:`X(190) <X(190)>`, :ref:`X(6) <X(6)>`)
 
-Relations
----------
+.. toctree::
+   :hidden:
 
-* :ref:`X(727) <X(727)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(726) <X(726)>`
-* :ref:`X(727) <X(727)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(35538)
-* :ref:`X(727) <X(727)>` = :ref:`X(238) <X(238)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(58) <X(58)>`
-* :ref:`X(727) <X(727)>` = Ψ(:ref:`X(190) <X(190)>`, :ref:`X(6) <X(6)>`)
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

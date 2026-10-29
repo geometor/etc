@@ -9,34 +9,49 @@
 X(356) = MORLEY CENTER
 ======================
 
+.. enunciation::
+
+   :ref:`X(356) <X(356)>` is the centroid of the Morley equilateral triangle. For a discussion of the theorem and extensive list of references, see
+
 .. figure:: x-00356.svg
    :alt: X(356) = MORLEY CENTER
    :align: center
 
    **X(356) = MORLEY CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`\cos A/3 + 2 \cos B/3 \cos C/3 : :`
+   | **Search Value (6, 9, 13):** :math:`1.625386564358`
 
-* :math:`\cos A/3 + 2 \cos B/3 \cos C/3 : :`
-* :math:`= \cos(B/3 - C/3) + \sqrt{3}\sin(A/3 + \pi /3) (M. Stevanovic, 12/25/2007)`
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`1.625386564358`
+   * **Trilinears:** :math:`= \cos(B/3 - C/3) + \sqrt{3}\sin(A/3 + \pi /3) (M. Stevanovic, 12/25/2007)`
 
-Linear Combinations
--------------------
+.. collapse:: Linear Combinations
+   :badge: 1 combination
 
-* :ref:`X(356) <X(356)>` = X(3276) + X(3277) - :ref:`X(3) <X(3)>`
-
-Notes
------
+   * :ref:`X(356) <X(356)>` = X(3276) + X(3277) - :ref:`X(3) <X(3)>`
 
 .. container:: note-item
 
-   :ref:`X(356) <X(356)>` is the centroid of the Morley equilateral triangle. For a discussion of the theorem and extensive list of references, see
+   :ref:`X(356) <X(356)>` lies.
+
+.. collapse:: Incident Central Lines
+   :badge: 5 lines
+   :class: line-catalog
+
+   {:ref:`2 <X(2)>`, 5455}, {:ref:`3 <X(3)>`, 3278}, {:ref:`357 <X(357)>`, :ref:`358 <X(358)>`}, {1134, 1135}, {3605, 5456}
+
+.. collapse:: Functional Relations
+   :badge: 2 relations
+
+   * :ref:`X(356) <X(356)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(3605)
+   * :ref:`X(356) <X(356)>` = orthology center of 1st Morley adjunct triangle and 1st Morley triangle
+
+Notes
+-----
 
 .. container:: note-item
 
@@ -62,21 +77,7 @@ Notes
 
    **Frank Morley (1860-1937) geometer** (``../bstud/morley.html``).
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(356) <X(356)>` lies and on these lines:
-
-{:ref:`2 <X(2)>`, 5455}, {:ref:`3 <X(3)>`, 3278}, {:ref:`357 <X(357)>`, :ref:`358 <X(358)>`}, {1134, 1135}, {3605, 5456}
-
-Relations
----------
-
-* :ref:`X(356) <X(356)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(3605)
-* :ref:`X(356) <X(356)>` = orthology center of 1st Morley adjunct triangle and 1st Morley triangle
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

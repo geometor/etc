@@ -8,34 +8,47 @@
 X(493) = 1st VAN LAMOEN HOMOTHETIC CENTER
 =========================================
 
+.. enunciation::
+
+   :ref:`X(493) <X(493)>` is a homothetic center of triangles associated with squares that circumscribe ABC. For details, see `Vierkanten in een driehoek: 4. Ingeschreven vierkanten <http://home.wxs.nl/~lamoen/wiskunde/vierkant4.html>`__ (:person:`Floor van Lamoen <floor-van-lamoen>`, 4/27/98)
+
 .. figure:: x-00493.svg
    :alt: X(493) = 1st VAN LAMOEN HOMOTHETIC CENTER
    :align: center
 
    **X(493) = 1st VAN LAMOEN HOMOTHETIC CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`1/(\sin A + \sin B \sin C) : :`
+   | **Barycentrics:** :math:`(\sin A)/(\sin A + \sin B \sin C) : :`
+   | **Search Value (6, 9, 13):** :math:`1.847641056142`
 
-* :math:`1/(\sin A + \sin B \sin C) : :`
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-Barycentrics
-~~~~~~~~~~~~
-
-* :math:`(\sin A)/(\sin A + \sin B \sin C) : :`
-* :math:`a^2/(a^2 + S) : :`
-
-* **Kimberling (6, 9, 13) Search Value:** :math:`1.847641056142`
-
-Notes
------
+   * **Barycentrics:** :math:`a^2/(a^2 + S) : :`
 
 .. container:: note-item
 
-   :ref:`X(493) <X(493)>` is a homothetic center of triangles associated with squares that circumscribe ABC. For details, see `Vierkanten in een driehoek: 4. Ingeschreven vierkanten <http://home.wxs.nl/~lamoen/wiskunde/vierkant4.html>`__ (:person:`Floor van Lamoen <floor-van-lamoen>`, 4/27/98)
+   :ref:`X(493) <X(493)>` lies.
+
+.. collapse:: Incident Central Lines
+   :badge: 3 lines
+   :class: line-catalog
+
+   {:ref:`25 <X(25)>`, :ref:`371 <X(371)>`}, {:ref:`39 <X(39)>`, :ref:`494 <X(494)>`}, {:ref:`394 <X(394)>`, 1504}
+
+.. collapse:: Functional Relations
+   :badge: 4 relations
+
+   * :ref:`X(493) <X(493)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(3068)
+   * :ref:`X(493) <X(493)>` = :ref:`X(394) <X(394)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(494) <X(494)>`
+   * :ref:`X(493) <X(493)>` = perspector of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of outer Vecten triangle
+   * :ref:`X(493) <X(493)>` = perspector of ABC and unary cofactor triangle of Lucas(-1) antipodal triangle
+
+Notes
+-----
 
 .. container:: note-item
 
@@ -45,23 +58,7 @@ Notes
 
    Let A″ be the intersection of line BC and the common tangent to the B- and C-Lucas circles (at their touchpoint). Define B″ and C″ cyclically. Then A″B″C″ is the :term:`cevian triangle <cevian-triangle>` of :ref:`X(493) <X(493)>`. Also, :ref:`X(493) <X(493)>` is the point of intersection of the tangents at :ref:`X(371) <X(371)>` and :ref:`X(485) <X(485)>` to the orthocubic K006. (Randy Hutson, July 23, 2015)
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(493) <X(493)>` lies and on these lines:
-
-{:ref:`25 <X(25)>`, :ref:`371 <X(371)>`}, {:ref:`39 <X(39)>`, :ref:`494 <X(494)>`}, {:ref:`394 <X(394)>`, 1504}
-
-Relations
----------
-
-* :ref:`X(493) <X(493)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(3068)
-* :ref:`X(493) <X(493)>` = :ref:`X(394) <X(394)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(494) <X(494)>`
-* :ref:`X(493) <X(493)>` = perspector of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of outer Vecten triangle
-* :ref:`X(493) <X(493)>` = perspector of ABC and unary cofactor triangle of Lucas(-1) antipodal triangle
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

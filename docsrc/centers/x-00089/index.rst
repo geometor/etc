@@ -8,52 +8,42 @@
 X(89) = ISOGONAL CONJUGATE OF X(45)
 ===================================
 
+.. enunciation::
+
+   Let A\ :sub:`9`\ B\ :sub:`9`\ C\ :sub:`9` be the Gemini triangle 9. Let L\ :sub:`A` be the line through A\ :sub:`9` parallel to BC, and define L\ :sub:`B` and L\ :sub:`C` cyclically. Let A':sub:`9` = L\ :sub:`B`\ ∩L\ :sub:`C`, and define B':sub:`9`, C':sub:`9` cyclically. Triangle A':sub:`9`\ B':sub:`9`\ C':sub:`9` is homothetic to ABC at :ref:`X(89) <X(89)>`. (:person:`Randy Hutson <randy-hutson>`, November 30, 2018)
+
 .. figure:: x-00089.svg
    :alt: X(89) = ISOGONAL CONJUGATE OF X(45)
    :align: center
 
    **X(89) = ISOGONAL CONJUGATE OF X(45)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
-
-* :math:`1/(2b + 2c - a) : 1/(2c + 2a - b) : 1/(2a + 2b - c)`
-
-Barycentrics
-~~~~~~~~~~~~
-
-* :math:`a/(2b + 2c - a) : b/(2c + 2a - b) : c/(2a + 2b - c)`
-
-* **Kimberling (6, 9, 13) Search Value:** :math:`1.010174849101`
-
-Notes
------
+   | **Trilinears:** :math:`1/(2b + 2c - a) : 1/(2c + 2a - b) : 1/(2a + 2b - c)`
+   | **Barycentrics:** :math:`a/(2b + 2c - a) : b/(2c + 2a - b) : c/(2a + 2b - c)`
+   | **Search Value (6, 9, 13):** :math:`1.010174849101`
 
 .. container:: note-item
 
-   Let A\ :sub:`9`\ B\ :sub:`9`\ C\ :sub:`9` be the Gemini triangle 9. Let L\ :sub:`A` be the line through A\ :sub:`9` parallel to BC, and define L\ :sub:`B` and L\ :sub:`C` cyclically. Let A':sub:`9` = L\ :sub:`B`\ ∩L\ :sub:`C`, and define B':sub:`9`, C':sub:`9` cyclically. Triangle A':sub:`9`\ B':sub:`9`\ C':sub:`9` is homothetic to ABC at :ref:`X(89) <X(89)>`. (:person:`Randy Hutson <randy-hutson>`, November 30, 2018)
+   :ref:`X(89) <X(89)>` lies.
 
-Incidence
----------
+.. collapse:: Incident Central Lines
+   :badge: 4 lines
+   :class: line-catalog
 
-:ref:`X(89) <X(89)>` lies and on these lines:
+   {:ref:`1 <X(1)>`, :ref:`902 <X(902)>`}, {:ref:`2 <X(2)>`, :ref:`44 <X(44)>`}, {:ref:`6 <X(6)>`, :ref:`88 <X(88)>`}, {:ref:`649 <X(649)>`, 1022}
 
-{:ref:`1 <X(1)>`, :ref:`902 <X(902)>`}, {:ref:`2 <X(2)>`, :ref:`44 <X(44)>`}, {:ref:`6 <X(6)>`, :ref:`88 <X(88)>`}, {:ref:`649 <X(649)>`, 1022}
+.. collapse:: Functional Relations
+   :badge: 5 relations
 
-Relations
----------
+   * :ref:`X(89) <X(89)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(45) <X(45)>`
+   * :ref:`X(89) <X(89)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(4671)
+   * :ref:`X(89) <X(89)>` = :term:`anticomplement <anticomplement>` of isotomic conjugate of isogonal conjugate of X(20973)
+   * :ref:`X(89) <X(89)>` = anticomplement of polar conjugate of isogonal conjugate of X(22083)
+   * :ref:`X(89) <X(89)>` = anticomplement of :term:`complementary conjugate <complementary-conjugate>` of X(34824)
 
-* :ref:`X(89) <X(89)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(45) <X(45)>`
-* :ref:`X(89) <X(89)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(4671)
-* :ref:`X(89) <X(89)>` = :term:`anticomplement <anticomplement>` of isotomic conjugate of isogonal conjugate of X(20973)
-* :ref:`X(89) <X(89)>` = anticomplement of polar conjugate of isogonal conjugate of X(22083)
-* :ref:`X(89) <X(89)>` = anticomplement of :term:`complementary conjugate <complementary-conjugate>` of X(34824)
+.. toctree::
+   :hidden:
 
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

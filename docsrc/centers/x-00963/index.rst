@@ -8,38 +8,43 @@
 X(963) = ISOGONAL CONJUGATE OF X(962)
 =====================================
 
+.. enunciation::
+
+   :ref:`X(963) <X(963)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(962) <X(962)>`
+
 .. figure:: x-00963.svg
    :alt: X(963) = ISOGONAL CONJUGATE OF X(962)
    :align: center
 
    **X(963) = ISOGONAL CONJUGATE OF X(962)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`a/[a^{4} + 2a^{3}(b + c) - 4a^{2}bc - (b + c)(b - c)^{2}(2a + b + c)] : :`
+   | **Search Value (6, 9, 13):** :math:`8.054422574455`
 
-* :math:`a/[a^{4} + 2a^{3}(b + c) - 4a^{2}bc - (b + c)(b - c)^{2}(2a + b + c)] : :`
-* :math:`\sec A' : :`, where A' is the angle formed by the tangents from :ref:`X(1) <X(1)>` to the A-excircle
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`8.054422574455`
+   * **Trilinears:** :math:`\sec A' : :`, where A' is the angle formed by the tangents from :ref:`X(1) <X(1)>` to the A-excircle
 
-Incidence
----------
+.. container:: note-item
 
-:ref:`X(963) <X(963)>` lies and on these lines:
+   :ref:`X(963) <X(963)>` lies.
 
-{:ref:`3 <X(3)>`, :ref:`200 <X(200)>`}, {:ref:`33 <X(33)>`, :ref:`56 <X(56)>`}, {:ref:`48 <X(48)>`, :ref:`220 <X(220)>`}, {:ref:`55 <X(55)>`, :ref:`603 <X(603)>`}
+.. collapse:: Incident Central Lines
+   :badge: 4 lines
+   :class: line-catalog
 
-Relations
----------
+   {:ref:`3 <X(3)>`, :ref:`200 <X(200)>`}, {:ref:`33 <X(33)>`, :ref:`56 <X(56)>`}, {:ref:`48 <X(48)>`, :ref:`220 <X(220)>`}, {:ref:`55 <X(55)>`, :ref:`603 <X(603)>`}
 
-* :ref:`X(963) <X(963)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(962) <X(962)>`
-* :ref:`X(963) <X(963)>` = :ref:`X(92) <X(92)>`-:term:`isoconjugate <isoconjugate>` of X(22124)
+.. collapse:: Functional Relations
+   :badge: 2 relations
 
-Construction
-------------
+   * :ref:`X(963) <X(963)>` = isogonal conjugate of :ref:`X(962) <X(962)>`
+   * :ref:`X(963) <X(963)>` = :ref:`X(92) <X(92)>`-:term:`isoconjugate <isoconjugate>` of X(22124)
 
-.. literalinclude:: model.py
-   :language: python
+.. toctree::
+   :hidden:
+
+   code

@@ -8,46 +8,37 @@
 X(734) = EVEN (- 2, 3) INFINITY POINT
 =====================================
 
+.. enunciation::
+
+   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X(734) <X(734)>` lies on the line at infinity.
+
 .. figure:: x-00734.svg
    :alt: X(734) = EVEN (- 2, 3) INFINITY POINT
    :align: center
 
    **X(734) = EVEN (- 2, 3) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
-
-* :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = a :sup:`-3`\ (b\ :sup:`3` + c\ :sup:`3`) - a\ :sup:`2`\ (b :sup:`-2` + c :sup:`-2`)
-
-Barycentrics
-~~~~~~~~~~~~
-
-* :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
-
-Notes
------
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = a :sup:`-3`\ (b\ :sup:`3` + c\ :sup:`3`) - a\ :sup:`2`\ (b :sup:`-2` + c :sup:`-2`)
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
 
 .. container:: note-item
 
-   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X(734) <X(734)>` lies on the line at infinity.
+   :ref:`X(734) <X(734)>` lies.
 
-Incidence
----------
+.. collapse:: Incident Central Lines
+   :badge: 2 lines
+   :class: line-catalog
 
-:ref:`X(734) <X(734)>` lies and on these lines:
+   {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}, {:ref:`31 <X(31)>`, :ref:`76 <X(76)>`}
 
-{:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}, {:ref:`31 <X(31)>`, :ref:`76 <X(76)>`}
+.. collapse:: Functional Relations
+   :badge: 1 relation
 
-Relations
----------
+   * :ref:`X(734) <X(734)>` = isogonal conjugate of :ref:`X(735) <X(735)>`
 
-* :ref:`X(734) <X(734)>` = isogonal conjugate of :ref:`X(735) <X(735)>`
+.. toctree::
+   :hidden:
 
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

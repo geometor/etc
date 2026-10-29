@@ -8,33 +8,54 @@
 X(66) = ISOGONAL CONJUGATE OF X(22)
 ===================================
 
+.. enunciation::
+
+   Let P be a point on the circumcircle, and let L\ :sub:`P` be its Steiner line. The locus of the orthopole of L\ :sub:`P`, as P varies, is an ellipse with center :ref:`X(4) <X(4)>` and perspector :ref:`X(66) <X(66)>`. (:person:`Randy Hutson <randy-hutson>`, March 29, 2020)
+
 .. figure:: x-00066.svg
    :alt: X(66) = ISOGONAL CONJUGATE OF X(22)
    :align: center
 
    **X(66) = ISOGONAL CONJUGATE OF X(22)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
-
-* :math:`bc/(b^{4} + c^{4} - a^{4}) : :`
-
-Barycentrics
-~~~~~~~~~~~~
-
-* :math:`1/(b^{4} + c^{4} - a^{4}) : :`
-
-* **Kimberling (6, 9, 13) Search Value:** :math:`9.640588374561`
-
-Notes
------
+   | **Trilinears:** :math:`bc/(b^{4} + c^{4} - a^{4}) : :`
+   | **Barycentrics:** :math:`1/(b^{4} + c^{4} - a^{4}) : :`
+   | **Search Value (6, 9, 13):** :math:`9.640588374561`
 
 .. container:: note-item
 
-   Let P be a point on the circumcircle, and let L\ :sub:`P` be its Steiner line. The locus of the orthopole of L\ :sub:`P`, as P varies, is an ellipse with center :ref:`X(4) <X(4)>` and perspector :ref:`X(66) <X(66)>`. (:person:`Randy Hutson <randy-hutson>`, March 29, 2020)
+   :ref:`X(66) <X(66)>` lies.
+
+.. collapse:: Incident Central Lines
+   :badge: 9 lines
+   :class: line-catalog
+
+   {:ref:`2 <X(2)>`, :ref:`206 <X(206)>`}, {:ref:`3 <X(3)>`, :ref:`141 <X(141)>`}, {:ref:`6 <X(6)>`, :ref:`427 <X(427)>`}, {:ref:`68 <X(68)>`, :ref:`511 <X(511)>`}, {:ref:`73 <X(73)>`, :ref:`976 <X(976)>`}, {:ref:`193 <X(193)>`, :ref:`895 <X(895)>`}, {:ref:`248 <X(248)>`, :ref:`571 <X(571)>`}, {:ref:`290 <X(290)>`, :ref:`317 <X(317)>`}, {:ref:`879 <X(879)>`, :ref:`924 <X(924)>`}
+
+.. collapse:: Functional Relations
+   :badge: 16 relations
+
+   * :ref:`X(66) <X(66)>` = midpoint of X(2892) and X(3448)
+   * :ref:`X(66) <X(66)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`159 <X(159)>`, :ref:`141 <X(141)>`), (1177, :ref:`125 <X(125)>`)
+   * :ref:`X(66) <X(66)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(22) <X(22)>`
+   * :ref:`X(66) <X(66)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(315) <X(315)>`
+   * :ref:`X(66) <X(66)>` = :term:`complement <complement>` of X(5596)
+   * :ref:`X(66) <X(66)>` = :term:`anticomplement <anticomplement>` of :ref:`X(206) <X(206)>`
+   * :ref:`X(66) <X(66)>` = :term:`cyclocevian conjugate <cyclocevian-conjugate>` of X(2998)
+   * :ref:`X(66) <X(66)>` = :term:`cevapoint <cevapoint>` of :ref:`X(125) <X(125)>` and :ref:`X(512) <X(512)>`
+   * :ref:`X(66) <X(66)>` = :ref:`X(32) <X(32)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(2) <X(2)>`
+   * :ref:`X(66) <X(66)>` = :term:`crosssum <crosssum>` of :ref:`X(3) <X(3)>` and :ref:`X(159) <X(159)>`
+   * :ref:`X(66) <X(66)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(647) <X(647)>`\ \ :ref:`X(826) <X(826)>` (radical axis of Brocard and polar circles)
+   * :ref:`X(66) <X(66)>` = :term:`antigonal image <antigonal-image>` of X(1177)
+   * :ref:`X(66) <X(66)>` = orthocenter of :ref:`X(3) <X(3)>`\ \ :ref:`X(4) <X(4)>`\ X(2435)
+   * :ref:`X(66) <X(66)>` = X(3174)-of-orthic-triangle if ABC is acute
+   * :ref:`X(66) <X(66)>` = polar conjugate of isotomic conjugate of X(14376)
+   * :ref:`X(66) <X(66)>` = :ref:`X(63) <X(63)>`-:term:`isoconjugate <isoconjugate>` of X(8743)
+
+Notes
+-----
 
 .. container:: note-item
 
@@ -48,35 +69,7 @@ Notes
 
    The triangle A″B″C″ is perspective to ABC, and the perspector is :ref:`X(66) <X(66)>`. (:person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, April 15, 2021)
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(66) <X(66)>` lies and on these lines:
-
-{:ref:`2 <X(2)>`, :ref:`206 <X(206)>`}, {:ref:`3 <X(3)>`, :ref:`141 <X(141)>`}, {:ref:`6 <X(6)>`, :ref:`427 <X(427)>`}, {:ref:`68 <X(68)>`, :ref:`511 <X(511)>`}, {:ref:`73 <X(73)>`, :ref:`976 <X(976)>`}, {:ref:`193 <X(193)>`, :ref:`895 <X(895)>`}, {:ref:`248 <X(248)>`, :ref:`571 <X(571)>`}, {:ref:`290 <X(290)>`, :ref:`317 <X(317)>`}, {:ref:`879 <X(879)>`, :ref:`924 <X(924)>`}
-
-Relations
----------
-
-* :ref:`X(66) <X(66)>` = midpoint of X(2892) and X(3448)
-* :ref:`X(66) <X(66)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`159 <X(159)>`, :ref:`141 <X(141)>`), (1177, :ref:`125 <X(125)>`)
-* :ref:`X(66) <X(66)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(22) <X(22)>`
-* :ref:`X(66) <X(66)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(315) <X(315)>`
-* :ref:`X(66) <X(66)>` = :term:`complement <complement>` of X(5596)
-* :ref:`X(66) <X(66)>` = :term:`anticomplement <anticomplement>` of :ref:`X(206) <X(206)>`
-* :ref:`X(66) <X(66)>` = :term:`cyclocevian conjugate <cyclocevian-conjugate>` of X(2998)
-* :ref:`X(66) <X(66)>` = :term:`cevapoint <cevapoint>` of :ref:`X(125) <X(125)>` and :ref:`X(512) <X(512)>`
-* :ref:`X(66) <X(66)>` = :ref:`X(32) <X(32)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(2) <X(2)>`
-* :ref:`X(66) <X(66)>` = :term:`crosssum <crosssum>` of :ref:`X(3) <X(3)>` and :ref:`X(159) <X(159)>`
-* :ref:`X(66) <X(66)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(647) <X(647)>`\ \ :ref:`X(826) <X(826)>` (radical axis of Brocard and polar circles)
-* :ref:`X(66) <X(66)>` = :term:`antigonal image <antigonal-image>` of X(1177)
-* :ref:`X(66) <X(66)>` = orthocenter of :ref:`X(3) <X(3)>`\ \ :ref:`X(4) <X(4)>`\ X(2435)
-* :ref:`X(66) <X(66)>` = X(3174)-of-orthic-triangle if ABC is acute
-* :ref:`X(66) <X(66)>` = polar conjugate of isotomic conjugate of X(14376)
-* :ref:`X(66) <X(66)>` = :ref:`X(63) <X(63)>`-:term:`isoconjugate <isoconjugate>` of X(8743)
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

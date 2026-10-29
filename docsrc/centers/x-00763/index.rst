@@ -8,39 +8,32 @@
 X(763) = ISOGONAL CONJUGATE OF X(762)
 =====================================
 
+.. enunciation::
+
+   :ref:`X(763) <X(763)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(762) <X(762)>`
+
 .. figure:: x-00763.svg
    :alt: X(763) = ISOGONAL CONJUGATE OF X(762)
    :align: center
 
    **X(763) = ISOGONAL CONJUGATE OF X(762)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`(b + c) ^{-3} : (c + a) ^{-3} : (a + b) ^{-3}`
+   | **Barycentrics:** :math:`a(b + c) ^{-3} : b(c + a) ^{-3} : c(a + b) ^{-3}`
+   | **Search Value (6, 9, 13):** :math:`0.776054443161`
 
-* :math:`(b + c) ^{-3} : (c + a) ^{-3} : (a + b) ^{-3}`
+.. container:: note-item
 
-Barycentrics
-~~~~~~~~~~~~
+   :ref:`X(763) <X(763)>` lies on line 757,849
 
-* :math:`a(b + c) ^{-3} : b(c + a) ^{-3} : c(a + b) ^{-3}`
+.. collapse:: Functional Relations
+   :badge: 1 relation
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`0.776054443161`
+   * :ref:`X(763) <X(763)>` = isogonal conjugate of :ref:`X(762) <X(762)>`
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(763) <X(763)>` lies on line 757,849
-
-Relations
----------
-
-* :ref:`X(763) <X(763)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(762) <X(762)>`
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

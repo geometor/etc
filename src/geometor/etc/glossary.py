@@ -746,6 +746,8 @@ def generate_glossary_rst(
     lines: list[str] = [
         ":navigation: header",
         ":order: 2",
+        ":layout: book",
+        ":book_title: Encyclopedia of Triangle Centers",
         "",
         ".. _glossary:",
         "",
@@ -841,6 +843,8 @@ def generate_persons_rst(valid_centers: set[int] | None = None) -> str:
     lines = [
         ":navigation: header",
         ":order: 3",
+        ":layout: book",
+        ":book_title: Encyclopedia of Triangle Centers",
         "",
         ".. _persons:",
         "",
@@ -874,6 +878,8 @@ def generate_bibliography_rst() -> str:
     lines = [
         ":navigation: header",
         ":order: 4",
+        ":layout: book",
+        ":book_title: Encyclopedia of Triangle Centers",
         "",
         ".. _bibliography:",
         "",

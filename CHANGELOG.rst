@@ -3,6 +3,14 @@ changelog
 
 :project: geometor.etc
 
+0.1.3
+-----
+
+- Adopted the Book Codex layout (`:layout: book`) across `docsrc/centers/` and the scholarly apparatus (`glossary.rst`, `persons.rst`, `bibliography.rst`).
+- Added a 2-track companion switcher (`Overview` | `Code`) generating per-center `code.rst` pages alongside `index.rst`.
+- Extracted primary geometric definitions into `.. enunciation::` banners (powering collection excerpts and `:ref:` tooltips) and consolidated primary coordinates into a compact `.. signature:: center` card.
+- Organized secondary apparatus into collapsible `.. collapse::` sections (`Alternate Coordinates`, `Linear Combinations`, `Incident Central Lines`, and `Functional Relations`) with count badges.
+
 0.1.2
 -----
 

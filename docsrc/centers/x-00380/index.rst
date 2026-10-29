@@ -14,30 +14,23 @@ X(380) = INTERSECTION OF LINES X(1)X(19) AND X(9)X(55)
 
    **X(380) = INTERSECTION OF LINES X(1)X(19) AND X(9)X(55)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = (b + c - a)[3a\ :sup:`3` + (b + c)(3a\ :sup:`2` + (b - c)\ :sup:`2` + a(b + c))]
+   | **Barycentrics:** :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
+   | **Search Value (6, 9, 13):** :math:`2.331057740835`
 
-* :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = (b + c - a)[3a\ :sup:`3` + (b + c)(3a\ :sup:`2` + (b - c)\ :sup:`2` + a(b + c))]
+.. container:: note-item
 
-Barycentrics
-~~~~~~~~~~~~
+   :ref:`X(380) <X(380)>` lies.
 
-* :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
+.. collapse:: Incident Central Lines
+   :badge: 7 lines
+   :class: line-catalog
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`2.331057740835`
+   {:ref:`1 <X(1)>`, :ref:`19 <X(19)>`}, {:ref:`6 <X(6)>`, :ref:`40 <X(40)>`}, {:ref:`9 <X(9)>`, :ref:`55 <X(55)>`}, {:ref:`165 <X(165)>`, :ref:`579 <X(579)>`}, {:ref:`223 <X(223)>`, :ref:`608 <X(608)>`}, {:ref:`281 <X(281)>`, :ref:`950 <X(950)>`}, {:ref:`282 <X(282)>`, 1036}
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(380) <X(380)>` lies and on these lines:
-
-{:ref:`1 <X(1)>`, :ref:`19 <X(19)>`}, {:ref:`6 <X(6)>`, :ref:`40 <X(40)>`}, {:ref:`9 <X(9)>`, :ref:`55 <X(55)>`}, {:ref:`165 <X(165)>`, :ref:`579 <X(579)>`}, {:ref:`223 <X(223)>`, :ref:`608 <X(608)>`}, {:ref:`281 <X(281)>`, :ref:`950 <X(950)>`}, {:ref:`282 <X(282)>`, 1036}
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

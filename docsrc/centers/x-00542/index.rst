@@ -8,63 +8,65 @@
 X(542) = DIRECTION OF VECTOR AX + BX + CX, where X = X(98)
 ==========================================================
 
+.. enunciation::
+
+   :ref:`X(542) <X(542)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(842) <X(842)>`
+
 .. figure:: x-00542.svg
    :alt: X(542) = DIRECTION OF VECTOR AX + BX + CX, where X = X(98)
    :align: center
 
    **X(542) = DIRECTION OF VECTOR AX + BX + CX, where X = X(98)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`(2ax - by - cz)/a : :`, where x = x(A,B,C) = sec(A + ω), y = x(B,C,A), z = x(C,A,B)
+   | **Barycentrics:** :math:`2a^6 - 2a^4(b^2 + c^2) + a^2(b^4 + c^4) - (b^2 - c^2)^2(b^2 + c^2) : :`
 
-* :math:`(2ax - by - cz)/a : :`, where x = x(A,B,C) = sec(A + ω), y = x(B,C,A), z = x(C,A,B)
+.. collapse:: Alternate Coordinates
+   :badge: 2 forms
 
-Barycentrics
-~~~~~~~~~~~~
+   * **Barycentrics:** :math:`2 a \sec(A + \omega ) - b \sec(B + \omega ) - c \sec(C + \omega ) : :`
+   * **Barycentrics:** :math:`(3 SA - 2 SW) S^2 + 3 SW SB SC : :`
 
-* :math:`2a^6 - 2a^4(b^2 + c^2) + a^2(b^4 + c^4) - (b^2 - c^2)^2(b^2 + c^2) : :`
-* :math:`2 a \sec(A + \omega ) - b \sec(B + \omega ) - c \sec(C + \omega ) : :`
-* :math:`(3 SA - 2 SW) S^2 + 3 SW SB SC : :`
+.. collapse:: Linear Combinations
+   :badge: 1 combination
 
-Linear Combinations
--------------------
+   * :ref:`X(542) <X(542)>` = :ref:`X(6) <X(6)>` - :ref:`X(13) <X(13)>`
 
-* :ref:`X(542) <X(542)>` = :ref:`X(6) <X(6)>` - :ref:`X(13) <X(13)>`
+.. container:: note-item
 
-Incidence
----------
+   :ref:`X(542) <X(542)>` lies.
 
-:ref:`X(542) <X(542)>` lies and on these lines:
+.. collapse:: Incident Central Lines
+   :badge: 25 lines
+   :class: line-catalog
 
-{:ref:`2 <X(2)>`, :ref:`98 <X(98)>`}, {:ref:`3 <X(3)>`, :ref:`67 <X(67)>`}, {:ref:`4 <X(4)>`, :ref:`576 <X(576)>`}, {:ref:`5 <X(5)>`, :ref:`575 <X(575)>`}, {:ref:`6 <X(6)>`, :ref:`13 <X(13)>`}, {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}, {:ref:`68 <X(68)>`, 1177}, {:ref:`69 <X(69)>`, :ref:`74 <X(74)>`}, {:ref:`141 <X(141)>`, :ref:`549 <X(549)>`}, {:ref:`146 <X(146)>`, :ref:`148 <X(148)>`}, {:ref:`159 <X(159)>`, 2931}, {:ref:`161 <X(161)>`, 1619}, {:ref:`230 <X(230)>`, 2030}, {:ref:`428 <X(428)>`, 1112}, {:ref:`858 <X(858)>`, 3292}, {1350, 3534}, {1365, 2606}, {1550, 1551}, {1569, 3094}, {1648, 2502}, {1843, 1986}, {1853, 3167}, {3023, 3028}, {3024, 3027}, {3043, 3044}
+   {:ref:`2 <X(2)>`, :ref:`98 <X(98)>`}, {:ref:`3 <X(3)>`, :ref:`67 <X(67)>`}, {:ref:`4 <X(4)>`, :ref:`576 <X(576)>`}, {:ref:`5 <X(5)>`, :ref:`575 <X(575)>`}, {:ref:`6 <X(6)>`, :ref:`13 <X(13)>`}, {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}, {:ref:`68 <X(68)>`, 1177}, {:ref:`69 <X(69)>`, :ref:`74 <X(74)>`}, {:ref:`141 <X(141)>`, :ref:`549 <X(549)>`}, {:ref:`146 <X(146)>`, :ref:`148 <X(148)>`}, {:ref:`159 <X(159)>`, 2931}, {:ref:`161 <X(161)>`, 1619}, {:ref:`230 <X(230)>`, 2030}, {:ref:`428 <X(428)>`, 1112}, {:ref:`858 <X(858)>`, 3292}, {1350, 3534}, {1365, 2606}, {1550, 1551}, {1569, 3094}, {1648, 2502}, {1843, 1986}, {1853, 3167}, {3023, 3028}, {3024, 3027}, {3043, 3044}
 
-Relations
----------
+.. collapse:: Functional Relations
+   :badge: 18 relations
 
-* :ref:`X(542) <X(542)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(842) <X(842)>`
-* :ref:`X(542) <X(542)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(5641)
-* :ref:`X(542) <X(542)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(6) <X(6)>`\ \ :ref:`X(526) <X(526)>`
-* :ref:`X(542) <X(542)>` = :term:`orthopoint <orthopoint>` of :ref:`X(690) <X(690)>`
-* :ref:`X(542) <X(542)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(23967)
-* :ref:`X(542) <X(542)>` = :ref:`X(30) <X(30)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(523) <X(523)>`
-* :ref:`X(542) <X(542)>` = :ref:`X(30) <X(30)>`-of-1st-Brocard triangle
-* :ref:`X(542) <X(542)>` = :ref:`X(511) <X(511)>`-of-4th-Brocard-triangle
-* :ref:`X(542) <X(542)>` = :ref:`X(511) <X(511)>`-of-orthocentroidal-triangle
-* :ref:`X(542) <X(542)>` = :ref:`X(511) <X(511)>`-of-:ref:`X(4) <X(4)>`-Brocard-triangle
-* :ref:`X(542) <X(542)>` = :ref:`X(524) <X(524)>`-of-McCay-triangle
-* :ref:`X(542) <X(542)>` = :ref:`X(524) <X(524)>`-of-anti-McCay-triangle
-* :ref:`X(542) <X(542)>` = intercept of Fermat axis and the line at infinity
-* :ref:`X(542) <X(542)>` = perspector of hyperbola {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(476) <X(476)>`}}
-* :ref:`X(542) <X(542)>` = Cundy-Parry Phi transform of X(14357)
-* :ref:`X(542) <X(542)>` = Cundy-Parry Psi transform of X(14246)
-* :ref:`X(542) <X(542)>` = 1st-Brocard-isogonal-conjugate of X(6795)
-* :ref:`X(542) <X(542)>` = homothetic center of 2nd Ehrmann triangle and Ehrmann vertex-triangle
+   * :ref:`X(542) <X(542)>` = isogonal conjugate of :ref:`X(842) <X(842)>`
+   * :ref:`X(542) <X(542)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(5641)
+   * :ref:`X(542) <X(542)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(6) <X(6)>`\ \ :ref:`X(526) <X(526)>`
+   * :ref:`X(542) <X(542)>` = :term:`orthopoint <orthopoint>` of :ref:`X(690) <X(690)>`
+   * :ref:`X(542) <X(542)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(23967)
+   * :ref:`X(542) <X(542)>` = :ref:`X(30) <X(30)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(523) <X(523)>`
+   * :ref:`X(542) <X(542)>` = :ref:`X(30) <X(30)>`-of-1st-Brocard triangle
+   * :ref:`X(542) <X(542)>` = :ref:`X(511) <X(511)>`-of-4th-Brocard-triangle
+   * :ref:`X(542) <X(542)>` = :ref:`X(511) <X(511)>`-of-orthocentroidal-triangle
+   * :ref:`X(542) <X(542)>` = :ref:`X(511) <X(511)>`-of-:ref:`X(4) <X(4)>`-Brocard-triangle
+   * :ref:`X(542) <X(542)>` = :ref:`X(524) <X(524)>`-of-McCay-triangle
+   * :ref:`X(542) <X(542)>` = :ref:`X(524) <X(524)>`-of-anti-McCay-triangle
+   * :ref:`X(542) <X(542)>` = intercept of Fermat axis and the line at infinity
+   * :ref:`X(542) <X(542)>` = perspector of hyperbola {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(476) <X(476)>`}}
+   * :ref:`X(542) <X(542)>` = Cundy-Parry Phi transform of X(14357)
+   * :ref:`X(542) <X(542)>` = Cundy-Parry Psi transform of X(14246)
+   * :ref:`X(542) <X(542)>` = 1st-Brocard-isogonal-conjugate of X(6795)
+   * :ref:`X(542) <X(542)>` = homothetic center of 2nd Ehrmann triangle and Ehrmann vertex-triangle
 
-Construction
-------------
+.. toctree::
+   :hidden:
 
-.. literalinclude:: model.py
-   :language: python
+   code

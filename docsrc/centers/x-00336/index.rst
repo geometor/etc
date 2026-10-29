@@ -8,41 +8,38 @@
 X(336) = ISOTOMIC CONJUGATE OF X(240)
 =====================================
 
+.. enunciation::
+
+   :ref:`X(336) <X(336)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(240) <X(240)>`
+
 .. figure:: x-00336.svg
    :alt: X(336) = ISOTOMIC CONJUGATE OF X(240)
    :align: center
 
    **X(336) = ISOTOMIC CONJUGATE OF X(240)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`\csc A \cot A \sec(A + \omega ) : \csc B \cot B \sec(B + \omega ) : \csc C \cot C \sec(C + \omega )`
+   | **Barycentrics:** :math:`\cot A \sec(A + \omega ) : \cot B \sec(B + \omega ) : \cot C \sec(C + \omega )`
+   | **Search Value (6, 9, 13):** :math:`3.929705325689`
 
-* :math:`\csc A \cot A \sec(A + \omega ) : \csc B \cot B \sec(B + \omega ) : \csc C \cot C \sec(C + \omega )`
+.. container:: note-item
 
-Barycentrics
-~~~~~~~~~~~~
+   :ref:`X(336) <X(336)>` lies.
 
-* :math:`\cot A \sec(A + \omega ) : \cot B \sec(B + \omega ) : \cot C \sec(C + \omega )`
+.. collapse:: Incident Central Lines
+   :badge: 4 lines
+   :class: line-catalog
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`3.929705325689`
+   {:ref:`1 <X(1)>`, :ref:`811 <X(811)>`}, {:ref:`48 <X(48)>`, :ref:`75 <X(75)>`}, {:ref:`73 <X(73)>`, :ref:`290 <X(290)>`}, {:ref:`255 <X(255)>`, :ref:`293 <X(293)>`}
 
-Incidence
----------
+.. collapse:: Functional Relations
+   :badge: 1 relation
 
-:ref:`X(336) <X(336)>` lies and on these lines:
+   * :ref:`X(336) <X(336)>` = isotomic conjugate of :ref:`X(240) <X(240)>`
 
-{:ref:`1 <X(1)>`, :ref:`811 <X(811)>`}, {:ref:`48 <X(48)>`, :ref:`75 <X(75)>`}, {:ref:`73 <X(73)>`, :ref:`290 <X(290)>`}, {:ref:`255 <X(255)>`, :ref:`293 <X(293)>`}
+.. toctree::
+   :hidden:
 
-Relations
----------
-
-* :ref:`X(336) <X(336)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(240) <X(240)>`
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

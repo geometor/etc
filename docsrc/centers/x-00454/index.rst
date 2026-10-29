@@ -8,53 +8,47 @@
 X(454) = EULER X(155)-11th-SUBSTITUTION POINT
 =============================================
 
+.. enunciation::
+
+   As a point on the Euler line, :ref:`X(454) <X(454)>` has Shinagawa coefficients (E(E + 4F) - 4S\ :sup:`2`,-E\ :sup:`2` + 4S\ :sup:`2`).
+
 .. figure:: x-00454.svg
    :alt: X(454) = EULER X(155)-11th-SUBSTITUTION POINT
    :align: center
 
    **X(454) = EULER X(155)-11th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`u^{2}\sec A : v^{2}\sec B : w^{2}\sec C`, where, u : v : w = :ref:`X(155) <X(155)>`; e.g., u(A,B,C) = (cos A)[cos\ :sup:`2`\ B + cos\ :sup:`2`\ C - cos\ :sup:`2`\ A]
+   | **Barycentrics:** :math:`u^{2}\tan A : v^{2}\tan B : w^{2}\tan C`
+   | **Search Value (6, 9, 13):** :math:`-0.003927668967`
 
-* :math:`u^{2}\sec A : v^{2}\sec B : w^{2}\sec C`, where, u : v : w = :ref:`X(155) <X(155)>`; e.g., u(A,B,C) = (cos A)[cos\ :sup:`2`\ B + cos\ :sup:`2`\ C - cos\ :sup:`2`\ A]
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-Barycentrics
-~~~~~~~~~~~~
-
-* :math:`u^{2}\tan A : v^{2}\tan B : w^{2}\tan C`
-* :math:`a^2*(a^2 - b^2 - c^2)*(a^6 - 3*a^4*b^2 + 3*a^2*b^4 - b^6 - 3*a^4*c^2 - 2*a^2*b^2*c^2 + b^4*c^2 + 3*a^2*c^4 + b^2*c^4 - c^6)^2 : :`
-
-* **Kimberling (6, 9, 13) Search Value:** :math:`-0.003927668967`
-
-Notes
------
+   * **Barycentrics:** :math:`a^2*(a^2 - b^2 - c^2)*(a^6 - 3*a^4*b^2 + 3*a^2*b^4 - b^6 - 3*a^4*c^2 - 2*a^2*b^2*c^2 + b^4*c^2 + 3*a^2*c^4 + b^2*c^4 - c^6)^2 : :`
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(454) <X(454)>` has Shinagawa coefficients (E(E + 4F) - 4S\ :sup:`2`,-E\ :sup:`2` + 4S\ :sup:`2`).
+   :ref:`X(454) <X(454)>` lies.
 
-Incidence
----------
+.. collapse:: Incident Central Lines
+   :badge: 9 lines
+   :class: line-catalog
 
-:ref:`X(454) <X(454)>` lies and on these lines:
+   {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`155 <X(155)>`, 6503}, {1609, 34853}, {3964, 44405}, {9908, 16391}, {9937, 23181}, {12164, 34333}, {15316, 47195}, {20975, 38260}
 
-{:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`155 <X(155)>`, 6503}, {1609, 34853}, {3964, 44405}, {9908, 16391}, {9937, 23181}, {12164, 34333}, {15316, 47195}, {20975, 38260}
+.. collapse:: Functional Relations
+   :badge: 5 relations
 
-Relations
----------
+   * :ref:`X(454) <X(454)>` = X(3542)-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(155) <X(155)>`
+   * :ref:`X(454) <X(454)>` = :ref:`X(254) <X(254)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(921) <X(921)>`
+   * :ref:`X(454) <X(454)>` = barycentric product X(i)\*X(j) for these {i,j}: {:ref:`155 <X(155)>`, 6515}, {1609, 40697}, {3542, 6503}
+   * :ref:`X(454) <X(454)>` = barycentric quotient X(i)/X(j) for these {i,j}: {:ref:`155 <X(155)>`, 6504}, {1609, :ref:`254 <X(254)>`}, {6515, 46746}
+   * :ref:`X(454) <X(454)>` = {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): {:ref:`3 <X(3)>`, 6617, 3548}
 
-* :ref:`X(454) <X(454)>` = X(3542)-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(155) <X(155)>`
-* :ref:`X(454) <X(454)>` = :ref:`X(254) <X(254)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(921) <X(921)>`
-* :ref:`X(454) <X(454)>` = barycentric product X(i)\*X(j) for these {i,j}: {:ref:`155 <X(155)>`, 6515}, {1609, 40697}, {3542, 6503}
-* :ref:`X(454) <X(454)>` = barycentric quotient X(i)/X(j) for these {i,j}: {:ref:`155 <X(155)>`, 6504}, {1609, :ref:`254 <X(254)>`}, {6515, 46746}
-* :ref:`X(454) <X(454)>` = {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): {:ref:`3 <X(3)>`, 6617, 3548}
+.. toctree::
+   :hidden:
 
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

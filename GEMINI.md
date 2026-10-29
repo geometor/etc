@@ -16,7 +16,7 @@ It is responsible for:
 - **Semantic Parsing**: Extracting canonical identifiers, primary names, aliases, trilinear/barycentric/tripolar coordinates, vector/barycentric linear combinations, construction notes, incidence loci (lines, circles, conics, cubics), and functional center relations (`X(n) = f(X(i), X(j))`).
 - **Apparatus & Cross-Referencing**: Building `resources/glossary.json`, `resources/persons.json`, and `resources/citations.json` to power interactive `:term:`, `:person:`, `:cite:`, and `:ref:` roles across all centers.
 - **Composable Geometric Modeling**: Constructing each center via `src/geometor/etc/ops.py` and generating standalone per-center `model.py` scripts, `geometor.model` JSON files, and two-layer Explorer-styled SVGs (primary defining construction + toggleable incident central lines).
-- **RST Generation**: Generating structured Sphinx documentation per center (`docsrc/centers/x-NNNNN/index.rst`, `docsrc/glossary.rst`, `docsrc/persons.rst`, `docsrc/bibliography.rst`).
+- **RST Generation**: Generating Book Codex (`:layout: book`) 2-track documentation per center (`docsrc/centers/x-NNNNN/index.rst` Overview track with `.. enunciation::`, `.. signature:: center`, and `.. collapse::` sections, plus `code.rst` Code track) alongside `docsrc/glossary.rst`, `docsrc/persons.rst`, and `docsrc/bibliography.rst`.
 
 ## Repository Layout
 
@@ -25,7 +25,7 @@ It is responsible for:
 - `resources/centers/`: Full archive of 53,144 generated per-center folders (git-ignored).
 - `resources/`: Extracted apparatus registries (`glossary.json`, `persons.json`, `citations.json`).
 - `src/geometor/etc/`: Core Python package (`ingest.py`, `parser.py`, `glossary.py`, `ops.py`, `construct.py`, `render.py`, `transform.py`, `__main__.py`).
-- `docsrc/centers/x-NNNNN/`: Per-center folder containing `index.rst`, `model.py`, `x-NNNNN.json`, and interactive SVGs across 4 reference triangles (`x-NNNNN.svg`, `x-NNNNN-right.svg`, `x-NNNNN-kepler.svg`, `x-NNNNN-kimberling.svg`).
+- `docsrc/centers/x-NNNNN/`: Per-center folder containing `index.rst` (`Overview` track), `code.rst` (`Code` track), `model.py`, `x-NNNNN.json`, and interactive SVGs across 4 reference triangles (`x-NNNNN.svg`, `x-NNNNN-right.svg`, `x-NNNNN-kepler.svg`, `x-NNNNN-kimberling.svg`).
 
 ## CLI Usage
 

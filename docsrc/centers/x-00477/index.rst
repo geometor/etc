@@ -8,57 +8,58 @@
 X(477) = TIXIER ANTIPODE
 ========================
 
+.. enunciation::
+
+   :ref:`X(477) <X(477)>` = reflection of :ref:`X(476) <X(476)>` in :ref:`X(3) <X(3)>`
+
 .. figure:: x-00477.svg
    :alt: X(477) = TIXIER ANTIPODE
    :align: center
 
    **X(477) = TIXIER ANTIPODE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`1/[4 \cos A + \cos(A - 2B) + \cos(A - 2C) - 3 \cos(B - C)] : :`
+   | **Barycentrics:** :math:`(a^8 + a^6*b^2 - 4*a^4*b^4 + a^2*b^6 + b^8 - 3*a^6*c^2 + 2*a^4*b^2*c^2 + 2*a^2*b^4*c^2 - 3*b^6*c^2 + 3*a^4*c^4 - 2*a^2*b^2*c^4 + 3*b^4*c^4 - a^2*c^6 - b^2*c^6)*(a^8 - 3*a^6*b^2 + 3*a^4*b^4 - a^2*b^6 + a^6*c^2 + 2*a^4*b^2*c^2 - 2*a^2*b^4*c^2 - b^6*c^2 - 4*a^4*c^4 + 2*a^2*b^2*c^4 + 3*b^4*c^4 + a^2*c^6 - 3*b^2*c^6 + c^8)`
+   | **Search Value (6, 9, 13):** :math:`13.591244760485`
 
-* :math:`1/[4 \cos A + \cos(A - 2B) + \cos(A - 2C) - 3 \cos(B - C)] : :`
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-Barycentrics
-~~~~~~~~~~~~
+   * **Barycentrics:** :math:`1/(a^6 (b^2 + c^2) - a^4 (3 b^4 - 2 b^2 c^2 + 3 c^4) + a^2 (3 b^6 - 2 b^4 c^2 - 2 b^2 c^4 + 3 c^6) - (b^2 - c^2)^2 (b^4 + 3 b^2 c^2 + c^4)) : :`
 
-* :math:`(a^8 + a^6*b^2 - 4*a^4*b^4 + a^2*b^6 + b^8 - 3*a^6*c^2 + 2*a^4*b^2*c^2 + 2*a^2*b^4*c^2 - 3*b^6*c^2 + 3*a^4*c^4 - 2*a^2*b^2*c^4 + 3*b^4*c^4 - a^2*c^6 - b^2*c^6)*(a^8 - 3*a^6*b^2 + 3*a^4*b^4 - a^2*b^6 + a^6*c^2 + 2*a^4*b^2*c^2 - 2*a^2*b^4*c^2 - b^6*c^2 - 4*a^4*c^4 + 2*a^2*b^2*c^4 + 3*b^4*c^4 + a^2*c^6 - 3*b^2*c^6 + c^8)`
-* :math:`1/(a^6 (b^2 + c^2) - a^4 (3 b^4 - 2 b^2 c^2 + 3 c^4) + a^2 (3 b^6 - 2 b^4 c^2 - 2 b^2 c^4 + 3 c^6) - (b^2 - c^2)^2 (b^4 + 3 b^2 c^2 + c^4)) : :`
+.. container:: note-item
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`13.591244760485`
+   :ref:`X(477) <X(477)>` lies.
 
-Incidence
----------
+.. collapse:: Incident Central Lines
+   :badge: 69 lines
+   :class: line-catalog
 
-:ref:`X(477) <X(477)>` lies and on these lines:
+   {:ref:`2 <X(2)>`, 9060}, {:ref:`3 <X(3)>`, :ref:`476 <X(476)>`}, {:ref:`4 <X(4)>`, 1304}, {:ref:`5 <X(5)>`, 16166}, {:ref:`20 <X(20)>`, 10420}, {:ref:`22 <X(22)>`, 16167}, {:ref:`23 <X(23)>`, 1302}, {:ref:`24 <X(24)>`, 22239}, {:ref:`30 <X(30)>`, :ref:`110 <X(110)>`}, {:ref:`50 <X(50)>`, :ref:`112 <X(112)>`}, {:ref:`74 <X(74)>`, :ref:`523 <X(523)>`}, {:ref:`99 <X(99)>`, 3260}, {:ref:`107 <X(107)>`, :ref:`186 <X(186)>`}, {:ref:`109 <X(109)>`, 15228}, {:ref:`111 <X(111)>`, 5915}, {:ref:`125 <X(125)>`, 5627}, {:ref:`140 <X(140)>`, 18319}, {:ref:`265 <X(265)>`, 14851}, {:ref:`376 <X(376)>`, :ref:`691 <X(691)>`}, {:ref:`378 <X(378)>`, :ref:`935 <X(935)>`}, {:ref:`403 <X(403)>`, 1301}, {:ref:`468 <X(468)>`, 9064}, {:ref:`511 <X(511)>`, 9160}, {:ref:`512 <X(512)>`, 9161}, {:ref:`526 <X(526)>`, 16169}, {:ref:`550 <X(550)>`, 1291}, {:ref:`631 <X(631)>`, 22104}, {:ref:`759 <X(759)>`, 23226}, {:ref:`842 <X(842)>`, 2411}, {:ref:`925 <X(925)>`, 2071}, {:ref:`930 <X(930)>`, 18859}, {:ref:`933 <X(933)>`, 13619}, {1138, 12244}, {1141, 23286}, {1290, 3651}, {1300, 15470}, {1499, 9184}, {2222, 22342}, {2452, 2713}, {2549, 2715}, {2687, 7429}, {2688, 7440}, {2689, 7421}, {2690, 7430}, {2695, 7454}, {2752, 7425}, {2758, 7444}, {2766, 7414}, {2770, 7418}, {2782, 20404}, {3154, 14644}, {3233, 15034}, {5473, 9203}, {5474, 9202}, {5663, 14480}, {5994, 15743}, {5995, 11586}, {6080, 12290}, {6236, 11594}, {7417, 10102}, {7471, 15035}, {9781, 12052}, {10423, 18533}, {10990, 14536}, {12030, 14127}, {12084, 15112}, {13398, 16386}, {14094, 14611}, {15396, 17511}
 
-{:ref:`2 <X(2)>`, 9060}, {:ref:`3 <X(3)>`, :ref:`476 <X(476)>`}, {:ref:`4 <X(4)>`, 1304}, {:ref:`5 <X(5)>`, 16166}, {:ref:`20 <X(20)>`, 10420}, {:ref:`22 <X(22)>`, 16167}, {:ref:`23 <X(23)>`, 1302}, {:ref:`24 <X(24)>`, 22239}, {:ref:`30 <X(30)>`, :ref:`110 <X(110)>`}, {:ref:`50 <X(50)>`, :ref:`112 <X(112)>`}, {:ref:`74 <X(74)>`, :ref:`523 <X(523)>`}, {:ref:`99 <X(99)>`, 3260}, {:ref:`107 <X(107)>`, :ref:`186 <X(186)>`}, {:ref:`109 <X(109)>`, 15228}, {:ref:`111 <X(111)>`, 5915}, {:ref:`125 <X(125)>`, 5627}, {:ref:`140 <X(140)>`, 18319}, {:ref:`265 <X(265)>`, 14851}, {:ref:`376 <X(376)>`, :ref:`691 <X(691)>`}, {:ref:`378 <X(378)>`, :ref:`935 <X(935)>`}, {:ref:`403 <X(403)>`, 1301}, {:ref:`468 <X(468)>`, 9064}, {:ref:`511 <X(511)>`, 9160}, {:ref:`512 <X(512)>`, 9161}, {:ref:`526 <X(526)>`, 16169}, {:ref:`550 <X(550)>`, 1291}, {:ref:`631 <X(631)>`, 22104}, {:ref:`759 <X(759)>`, 23226}, {:ref:`842 <X(842)>`, 2411}, {:ref:`925 <X(925)>`, 2071}, {:ref:`930 <X(930)>`, 18859}, {:ref:`933 <X(933)>`, 13619}, {1138, 12244}, {1141, 23286}, {1290, 3651}, {1300, 15470}, {1499, 9184}, {2222, 22342}, {2452, 2713}, {2549, 2715}, {2687, 7429}, {2688, 7440}, {2689, 7421}, {2690, 7430}, {2695, 7454}, {2752, 7425}, {2758, 7444}, {2766, 7414}, {2770, 7418}, {2782, 20404}, {3154, 14644}, {3233, 15034}, {5473, 9203}, {5474, 9202}, {5663, 14480}, {5994, 15743}, {5995, 11586}, {6080, 12290}, {6236, 11594}, {7417, 10102}, {7471, 15035}, {9781, 12052}, {10423, 18533}, {10990, 14536}, {12030, 14127}, {12084, 15112}, {13398, 16386}, {14094, 14611}, {15396, 17511}
+.. collapse:: Functional Relations
+   :badge: 16 relations
 
-Relations
----------
+   * :ref:`X(477) <X(477)>` = reflection of :ref:`X(476) <X(476)>` in :ref:`X(3) <X(3)>`
+   * :ref:`X(477) <X(477)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(5663)
+   * :ref:`X(477) <X(477)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(35520)
+   * :ref:`X(477) <X(477)>` = :term:`complement <complement>` of X(34193)
+   * :ref:`X(477) <X(477)>` = :term:`trilinear pole <trilinear-pole>`, wrt circumcevian triangle of :ref:`X(30) <X(30)>`, of line :ref:`X(3) <X(3)>`\ X(2453)
+   * :ref:`X(477) <X(477)>` = reflection of :ref:`X(74) <X(74)>` in the Euler line
+   * :ref:`X(477) <X(477)>` = Λ(:ref:`X(3) <X(3)>`, :ref:`X(74) <X(74)>`)
+   * :ref:`X(477) <X(477)>` = Λ(:ref:`X(40) <X(40)>`, X(2940))
+   * :ref:`X(477) <X(477)>` = Thomson-isogonal conjugate of :ref:`X(526) <X(526)>`
+   * :ref:`X(477) <X(477)>` = Lucas-isogonal conjugate of :ref:`X(526) <X(526)>`
+   * :ref:`X(477) <X(477)>` = Cundy-Parry Phi transform of X(14254)
+   * :ref:`X(477) <X(477)>` = Cundy-Parry Psi transform of X(14385)
+   * :ref:`X(477) <X(477)>` = trilinear pole of line :ref:`X(6) <X(6)>`\ X(1637)
+   * :ref:`X(477) <X(477)>` = polar conjugate of isogonal conjugate of X(32663)
+   * :ref:`X(477) <X(477)>` = reflection of X(32111) in the orthic axis
+   * :ref:`X(477) <X(477)>` = trilinear pole, wrt circumorthic triangle, of line :ref:`X(25) <X(25)>`\ \ :ref:`X(98) <X(98)>`
 
-* :ref:`X(477) <X(477)>` = reflection of :ref:`X(476) <X(476)>` in :ref:`X(3) <X(3)>`
-* :ref:`X(477) <X(477)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(5663)
-* :ref:`X(477) <X(477)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(35520)
-* :ref:`X(477) <X(477)>` = :term:`complement <complement>` of X(34193)
-* :ref:`X(477) <X(477)>` = :term:`trilinear pole <trilinear-pole>`, wrt circumcevian triangle of :ref:`X(30) <X(30)>`, of line :ref:`X(3) <X(3)>`\ X(2453)
-* :ref:`X(477) <X(477)>` = reflection of :ref:`X(74) <X(74)>` in the Euler line
-* :ref:`X(477) <X(477)>` = Λ(:ref:`X(3) <X(3)>`, :ref:`X(74) <X(74)>`)
-* :ref:`X(477) <X(477)>` = Λ(:ref:`X(40) <X(40)>`, X(2940))
-* :ref:`X(477) <X(477)>` = Thomson-isogonal conjugate of :ref:`X(526) <X(526)>`
-* :ref:`X(477) <X(477)>` = Lucas-isogonal conjugate of :ref:`X(526) <X(526)>`
-* :ref:`X(477) <X(477)>` = Cundy-Parry Phi transform of X(14254)
-* :ref:`X(477) <X(477)>` = Cundy-Parry Psi transform of X(14385)
-* :ref:`X(477) <X(477)>` = trilinear pole of line :ref:`X(6) <X(6)>`\ X(1637)
-* :ref:`X(477) <X(477)>` = polar conjugate of isogonal conjugate of X(32663)
-* :ref:`X(477) <X(477)>` = reflection of X(32111) in the orthic axis
-* :ref:`X(477) <X(477)>` = trilinear pole, wrt circumorthic triangle, of line :ref:`X(25) <X(25)>`\ \ :ref:`X(98) <X(98)>`
+.. toctree::
+   :hidden:
 
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

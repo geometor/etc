@@ -113,6 +113,59 @@ def _enrich_text(
     return filter_center_refs(text, valid_centers)
 
 
+def _extract_primary_enunciation(
+    notes: list[str], relations: list[str]
+) -> tuple[str, list[str]]:
+    """Extract a concise primary defining statement for ``.. enunciation::`` and return remaining notes."""
+    skip_prefixes = (
+        "as a point on the euler line",
+        "barycentrics ",
+        "trilinears ",
+        "tripolars ",
+        "*",
+    )
+    remaining = list(notes)
+
+    for idx, note in enumerate(remaining):
+        s = note.strip()
+        if not s:
+            continue
+        low = s.lower()
+        if any(low.startswith(p) for p in skip_prefixes):
+            continue
+        if "\n" not in s and len(s) > 10:
+            del remaining[idx]
+            return s, remaining
+
+    for idx, note in enumerate(remaining):
+        paras = [p.strip() for p in note.split("\n\n") if p.strip()]
+        if not paras:
+            continue
+        first_p = paras[0]
+        low = first_p.lower()
+        if any(low.startswith(p) for p in skip_prefixes):
+            continue
+        if "\n" not in first_p and len(first_p) > 10:
+            if len(paras) == 1:
+                del remaining[idx]
+            else:
+                remaining[idx] = "\n\n".join(paras[1:])
+            return first_p, remaining
+
+    for idx, note in enumerate(remaining):
+        s = note.strip()
+        if s and "\n" not in s and not s.startswith("*"):
+            del remaining[idx]
+            return s, remaining
+
+    for rel in relations:
+        r_s = rel.strip()
+        if r_s and "for these" not in r_s.lower() and "\n" not in r_s:
+            return r_s, remaining
+
+    return "", remaining
+
+
 def transform_center_to_rst(
     data: dict[str, Any],
     glossary_terms: dict[str, Any] | list[str] | None = None,
@@ -123,7 +176,7 @@ def transform_center_to_rst(
     search_value: float | None = None,
     include_model_py: bool = False,
 ) -> str:
-    """Transform a parsed center dictionary into a rich semantic RST document."""
+    """Transform a parsed center dictionary into the Book Codex Overview track (`index.rst`)."""
     if not data or not data.get("key"):
         return ""
 
@@ -142,8 +195,9 @@ def transform_center_to_rst(
         f":canonical_id: {key}",
     ]
 
-    if data.get("aliases"):
-        lines.append(f":aliases: {', '.join(data['aliases'])}")
+    aliases = data.get("aliases") or []
+    if aliases:
+        lines.append(f":aliases: {', '.join(aliases)}")
 
     if data.get("dependencies"):
         lines.append(f":dependencies: {', '.join(data['dependencies'])}")
@@ -163,9 +217,34 @@ def transform_center_to_rst(
     lines.append("=" * max(4, len(full_title)))
     lines.append("")
 
+    if aliases:
+        lines.append(f".. rubric:: {' • '.join(aliases)}")
+        lines.append("")
+
     seen_terms: set[str] = set()
     seen_persons: set[str] = set()
     seen_cites: set[str] = set()
+
+    raw_notes = data.get("notes") or []
+    raw_relations = data.get("relations") or []
+    enun_raw, remaining_notes = _extract_primary_enunciation(
+        raw_notes, raw_relations
+    )
+
+    if enun_raw:
+        enriched_enun = _enrich_text(
+            enun_raw,
+            glossary_terms,
+            seen_terms,
+            seen_persons,
+            seen_cites,
+            valid_centers=valid_centers,
+        )
+        lines.append(".. enunciation::")
+        lines.append("")
+        for e_ln in enriched_enun.splitlines():
+            lines.append(f"   {e_ln}" if e_ln.strip() else "")
+        lines.append("")
 
     # Optional preceding inter-center group preamble(s)
     if preambles:
@@ -209,8 +288,7 @@ def transform_center_to_rst(
                     lines.append(f"   {p_ln}" if p_ln.strip() else "")
                 lines.append("")
 
-
-    # Primary Geometric Construction Figure
+    # 1. Primary Geometric Construction Figure (4-Tab Interactive Panel)
     if figure_uri:
         lines.append(f".. figure:: {figure_uri}")
         lines.append(f"   :alt: {full_title}")
@@ -222,15 +300,14 @@ def transform_center_to_rst(
         )
         lines.append("")
 
-    # 1. Coordinates Section (-)
+    # 2. Compact Coordinate Signature Card (.. signature:: center) + Alternate Coordinates
     has_coords = any(
         data.get(k) for k in ("trilinears", "barycentrics", "tripolars")
     )
-    if has_coords or search_value is not None:
-        lines.append("Coordinates")
-        lines.append("-----------")
+    alt_coord_bullets: list[str] = []
+    if has_coords or (search_value is not None and abs(search_value) > 1e-12):
+        lines.append(".. signature:: center")
         lines.append("")
-
         for coord_key, coord_label in (
             ("trilinears", "Trilinears"),
             ("barycentrics", "Barycentrics"),
@@ -239,32 +316,55 @@ def transform_center_to_rst(
             items = data.get(coord_key) or []
             if not items:
                 continue
-            lines.append(coord_label)
-            lines.append("~" * len(coord_label))
-            lines.append("")
+            enriched_items = []
             for item in items:
-                enriched_item = _enrich_text(
-                    item,
+                enr = _enrich_text(
+                    " ".join(item.splitlines()).strip(),
                     glossary_terms,
                     seen_terms,
                     seen_persons,
                     seen_cites,
                     valid_centers=valid_centers,
                 )
-                lines.append(f"* {enriched_item}")
-            lines.append("")
+                if enr:
+                    enriched_items.append(enr)
+            if not enriched_items:
+                continue
+            lines.append(f"   | **{coord_label}:** {enriched_items[0]}")
+            rest_start = 1
+            if len(enriched_items) > 1 and enriched_items[1].lower().startswith(
+                "where"
+            ):
+                lines.append(f"   |   {enriched_items[1]}")
+                rest_start = 2
+            for extra_it in enriched_items[rest_start:]:
+                alt_coord_bullets.append(f"**{coord_label}:** {extra_it}")
 
         if search_value is not None and abs(search_value) > 1e-12:
             lines.append(
-                f"* **Kimberling (6, 9, 13) Search Value:** :math:`{search_value:.12f}`"
+                f"   | **Search Value (6, 9, 13):** :math:`{search_value:.12f}`"
             )
-            lines.append("")
+        lines.append("")
 
-    # 2. Linear Combinations Section (-)
+    if alt_coord_bullets:
+        n_alt = len(alt_coord_bullets)
+        alt_badge = "1 form" if n_alt == 1 else f"{n_alt} forms"
+        lines.append(".. collapse:: Alternate Coordinates")
+        lines.append(f"   :badge: {alt_badge}")
+        lines.append("")
+        for b_line in alt_coord_bullets:
+            lines.append(f"   * {b_line}")
+        lines.append("")
+
+    # 3. Collapsible Linear Combinations
     combos = data.get("combinations") or []
     if combos:
-        lines.append("Linear Combinations")
-        lines.append("-------------------")
+        n_combos = len(combos)
+        combo_badge = (
+            "1 combination" if n_combos == 1 else f"{n_combos} combinations"
+        )
+        lines.append(".. collapse:: Linear Combinations")
+        lines.append(f"   :badge: {combo_badge}")
         lines.append("")
         for combo in combos:
             enriched_combo = _enrich_text(
@@ -275,12 +375,116 @@ def transform_center_to_rst(
                 seen_cites,
                 valid_centers=valid_centers,
             )
-            lines.append(f"* {enriched_combo}")
+            combo_lines = [
+                ln.strip() for ln in enriched_combo.splitlines() if ln.strip()
+            ]
+            if combo_lines:
+                lines.append(f"   * {' '.join(combo_lines)}")
         lines.append("")
 
-    # 3. Notes Section (-)
-    notes = data.get("notes") or []
-    if notes:
+    # 4. Incidence (Curves visible + Collapsible Incident Central Lines)
+    incidences = data.get("incidences") or []
+    if incidences:
+        for inc in incidences:
+            if isinstance(inc, dict):
+                line_pairs = inc.get("lines") or []
+                curves_prefix = inc.get("curves_prefix", "")
+                if line_pairs:
+                    enriched_prefix = _enrich_text(
+                        curves_prefix,
+                        glossary_terms,
+                        seen_terms,
+                        seen_persons,
+                        seen_cites,
+                        valid_centers=valid_centers,
+                    ).strip()
+                    is_bare_key = bool(
+                        re.match(
+                            r"^(?::ref:`X\(\d+\) <X\(\d+\)>`|X\(\d+\))\s*$",
+                            enriched_prefix,
+                        )
+                    )
+                    if enriched_prefix and not is_bare_key:
+                        lines.append(".. container:: note-item")
+                        lines.append("")
+                        for c_ln in f"{enriched_prefix}.".splitlines():
+                            lines.append(f"   {c_ln}" if c_ln.strip() else "")
+                        lines.append("")
+
+                    def _fmt_inc_pt(pt: int) -> str:
+                        if valid_centers is None or pt in valid_centers:
+                            return f":ref:`{pt} <X({pt})>`"
+                        return str(pt)
+
+                    formatted_pairs = [
+                        f"{{{_fmt_inc_pt(i)}, {_fmt_inc_pt(j)}}}"
+                        for i, j in line_pairs
+                    ]
+                    n_lines = len(line_pairs)
+                    badge_lbl = "1 line" if n_lines == 1 else f"{n_lines} lines"
+                    lines.append(".. collapse:: Incident Central Lines")
+                    lines.append(f"   :badge: {badge_lbl}")
+                    lines.append("   :class: line-catalog")
+                    lines.append("")
+                    lines.append(f"   {', '.join(formatted_pairs)}")
+                    lines.append("")
+                else:
+                    raw_inc = _enrich_text(
+                        inc.get("raw_rst", ""),
+                        glossary_terms,
+                        seen_terms,
+                        seen_persons,
+                        seen_cites,
+                        valid_centers=valid_centers,
+                    ).strip()
+                    if raw_inc:
+                        lines.append(".. container:: note-item")
+                        lines.append("")
+                        for r_ln in raw_inc.splitlines():
+                            lines.append(f"   {r_ln}" if r_ln.strip() else "")
+                        lines.append("")
+            else:
+                str_inc = _enrich_text(
+                    str(inc),
+                    glossary_terms,
+                    seen_terms,
+                    seen_persons,
+                    seen_cites,
+                    valid_centers=valid_centers,
+                ).strip()
+                if str_inc:
+                    lines.append(".. container:: note-item")
+                    lines.append("")
+                    for s_ln in str_inc.splitlines():
+                        lines.append(f"   {s_ln}" if s_ln.strip() else "")
+                    lines.append("")
+
+    # 5. Collapsible Functional Relations
+    if raw_relations:
+        n_rels = len(raw_relations)
+        rel_badge = "1 relation" if n_rels == 1 else f"{n_rels} relations"
+        lines.append(".. collapse:: Functional Relations")
+        lines.append(f"   :badge: {rel_badge}")
+        lines.append("")
+        for rel in raw_relations:
+            rel_with_tuples = _wrap_relation_tuples(
+                rel, valid_centers=valid_centers
+            )
+            enriched_rel = _enrich_text(
+                rel_with_tuples,
+                glossary_terms,
+                seen_terms,
+                seen_persons,
+                seen_cites,
+                valid_centers=valid_centers,
+            )
+            rel_lines = [ln.strip() for ln in enriched_rel.splitlines() if ln.strip()]
+            if rel_lines:
+                lines.append(f"   * {' '.join(rel_lines)}")
+        lines.append("")
+
+    # 6. Remaining Notes
+    if remaining_notes:
         lines.append("Notes")
         lines.append("-----")
         lines.append("")
@@ -292,7 +496,7 @@ def transform_center_to_rst(
                 return f":ref:`{idx_str} <X({idx_str})>`"
             return idx_str
 
-        for note in notes:
+        for note in remaining_notes:
             enriched_note = _enrich_text(
                 note,
                 glossary_terms,
@@ -313,100 +517,78 @@ def transform_center_to_rst(
                 lines.append(f"   {n_ln}" if n_ln.strip() else "")
             lines.append("")
 
-    # 4. Incidence Section (-)
-    incidences = data.get("incidences") or []
-    if incidences:
-        lines.append("Incidence")
-        lines.append("---------")
-        lines.append("")
-        for inc in incidences:
-            if isinstance(inc, dict):
-                line_pairs = inc.get("lines") or []
-                curves_prefix = inc.get("curves_prefix", "")
-                if line_pairs:
-                    enriched_prefix = _enrich_text(
-                        curves_prefix,
-                        glossary_terms,
-                        seen_terms,
-                        seen_persons,
-                        seen_cites,
-                        valid_centers=valid_centers,
-                    )
-                    if re.match(
-                        r"^(?::ref:`X\(\d+\) <X\(\d+\)>`|X\(\d+\))\s*$",
-                        enriched_prefix.strip(),
-                    ):
-                        intro_line = f"{enriched_prefix.strip()} lies on these lines:"
-                    else:
-                        intro_line = f"{enriched_prefix.strip()} and on these lines:"
-                    lines.append(intro_line)
-                    lines.append("")
-
-                    def _fmt_inc_pt(pt: int) -> str:
-                        if valid_centers is None or pt in valid_centers:
-                            return f":ref:`{pt} <X({pt})>`"
-                        return str(pt)
-
-                    formatted_pairs = [
-                        f"{{{_fmt_inc_pt(i)}, {_fmt_inc_pt(j)}}}"
-                        for i, j in line_pairs
-                    ]
-                    lines.append(", ".join(formatted_pairs))
-                    lines.append("")
-                else:
-                    lines.append(
-                        _enrich_text(
-                            inc.get("raw_rst", ""),
-                            glossary_terms,
-                            seen_terms,
-                            seen_persons,
-                            seen_cites,
-                            valid_centers=valid_centers,
-                        )
-                    )
-                    lines.append("")
-            else:
-                lines.append(
-                    _enrich_text(
-                        str(inc),
-                        glossary_terms,
-                        seen_terms,
-                        seen_persons,
-                        seen_cites,
-                        valid_centers=valid_centers,
-                    )
-                )
-                lines.append("")
-
-    # 5. Relations Section (-)
-    relations = data.get("relations") or []
-    if relations:
-        lines.append("Relations")
-        lines.append("---------")
-        lines.append("")
-        for rel in relations:
-            rel_with_tuples = _wrap_relation_tuples(
-                rel, valid_centers=valid_centers
-            )
-            enriched_rel = _enrich_text(
-                rel_with_tuples,
-                glossary_terms,
-                seen_terms,
-                seen_persons,
-                seen_cites,
-                valid_centers=valid_centers,
-            )
-            lines.append(f"* {enriched_rel}")
-        lines.append("")
-
-    # 6. Symbolic Construction Code Section (-)
+    # 7. Companion Code Track Toctree
     if include_model_py:
-        lines.append("Construction")
-        lines.append("------------")
+        lines.append(".. toctree::")
+        lines.append("   :hidden:")
         lines.append("")
-        lines.append(".. literalinclude:: model.py")
-        lines.append("   :language: python")
+        lines.append("   code")
         lines.append("")
+
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def transform_center_to_code_rst(
+    data: dict[str, Any],
+    glossary_terms: dict[str, Any] | list[str] | None = None,
+    valid_centers: set[int] | None = None,
+    figure_uri: str | None = None,
+) -> str:
+    """Transform a parsed center dictionary into the companion Code track (`code.rst`)."""
+    if not data or not data.get("key"):
+        return ""
+
+    key = data["key"]
+    title = data.get("title", "")
+    full_title = f"{key} = {title}" if title else key
+    code_heading = f"{full_title} — Code"
+
+    lines: list[str] = [
+        f":canonical_id: {key}",
+        ":type: code",
+        "",
+        code_heading,
+        "=" * max(4, len(code_heading)),
+        "",
+    ]
+
+    aliases = data.get("aliases") or []
+    if aliases:
+        lines.append(f".. rubric:: {' • '.join(aliases)}")
+        lines.append("")
+
+    enun_raw, _ = _extract_primary_enunciation(
+        data.get("notes") or [], data.get("relations") or []
+    )
+    if enun_raw:
+        enriched_enun = _enrich_text(
+            enun_raw,
+            glossary_terms,
+            set(),
+            set(),
+            set(),
+            valid_centers=valid_centers,
+        )
+        lines.append(".. enunciation::")
+        lines.append("")
+        for e_ln in enriched_enun.splitlines():
+            lines.append(f"   {e_ln}" if e_ln.strip() else "")
+        lines.append("")
+
+    if figure_uri:
+        lines.append(f".. figure:: {figure_uri}")
+        lines.append(f"   :alt: {full_title}")
+        lines.append("   :align: center")
+        lines.append("")
+        lines.append(
+            f"   **{full_title}** constructed on acute reference triangle "
+            r":math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`."
+        )
+        lines.append("")
+
+    lines.append(".. literalinclude:: model.py")
+    lines.append("   :language: python")
+    lines.append("")
 
     return "\n".join(lines).rstrip() + "\n"
 
@@ -447,6 +629,7 @@ def _process_center_index(idx: int) -> None:
     entry_dir = out_path / folder_name
     entry_dir.mkdir(parents=True, exist_ok=True)
     filepath = entry_dir / "index.rst"
+    code_rst_path = entry_dir / "code.rst"
     model_py_path = entry_dir / "model.py"
 
     figure_uri: str | None = None
@@ -521,6 +704,17 @@ def _process_center_index(idx: int) -> None:
     )
     filepath.write_text(rst_content, encoding="utf-8")
 
+    if has_model_py:
+        code_rst_content = transform_center_to_code_rst(
+            center,
+            glossary_terms=glossary_terms,
+            valid_centers=valid_centers,
+            figure_uri=figure_uri,
+        )
+        code_rst_path.write_text(code_rst_content, encoding="utf-8")
+    elif code_rst_path.exists():
+        code_rst_path.unlink()
+
 
 def generate_rst_files(
     centers: list[dict[str, Any]],
@@ -531,7 +725,7 @@ def generate_rst_files(
     render_graphics: bool = True,
     constructions_dir: str | Path | None = None,
 ) -> None:
-    """Generate per-center folders (`x-NNNNN/`) with `index.rst`, `model.py`, SVGs, and `geometor.model` JSONs."""
+    """Generate per-center folders (`x-NNNNN/`) with `index.rst`, `code.rst`, `model.py`, SVGs, and `geometor.model` JSONs."""
     import concurrent.futures
     import multiprocessing
 
@@ -580,6 +774,8 @@ def generate_rst_files(
     index_lines = [
         ":navigation: header",
         ":order: 1",
+        ":layout: book",
+        ":book_title: Encyclopedia of Triangle Centers",
         "",
         "Encyclopedia of Triangle Centers",
         "================================",
@@ -628,6 +824,7 @@ def generate_rst_files(
 
     _SHARED_GEN_STATE.clear()
     (out_path / "index.rst").write_text("\n".join(index_lines), encoding="utf-8")
+
 
 
 

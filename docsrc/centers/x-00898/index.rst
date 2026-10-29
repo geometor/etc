@@ -8,42 +8,43 @@
 X(898) = ISOGONAL CONJUGATE OF X(891)
 =====================================
 
+.. enunciation::
+
+   :ref:`X(898) <X(898)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(891) <X(891)>`
+
 .. figure:: x-00898.svg
    :alt: X(898) = ISOGONAL CONJUGATE OF X(891)
    :align: center
 
    **X(898) = ISOGONAL CONJUGATE OF X(891)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`1/[(b - c)(2bc - ab - ac)] : : (M. Iliev, 5/13/07)`
+   | **Search Value (6, 9, 13):** :math:`2.291989304945`
 
-* :math:`1/[(b - c)(2bc - ab - ac)] : : (M. Iliev, 5/13/07)`
+.. container:: note-item
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`2.291989304945`
+   :ref:`X(898) <X(898)>` lies.
 
-Incidence
----------
+.. collapse:: Incident Central Lines
+   :badge: 7 lines
+   :class: line-catalog
 
-:ref:`X(898) <X(898)>` lies and on these lines:
+   {:ref:`99 <X(99)>`, :ref:`889 <X(889)>`}, {:ref:`100 <X(100)>`, :ref:`667 <X(667)>`}, {:ref:`101 <X(101)>`, :ref:`765 <X(765)>`}, {:ref:`105 <X(105)>`, :ref:`666 <X(666)>`}, {:ref:`106 <X(106)>`, :ref:`238 <X(238)>`}, {:ref:`813 <X(813)>`, 1023}, {:ref:`840 <X(840)>`, 1083}
 
-{:ref:`99 <X(99)>`, :ref:`889 <X(889)>`}, {:ref:`100 <X(100)>`, :ref:`667 <X(667)>`}, {:ref:`101 <X(101)>`, :ref:`765 <X(765)>`}, {:ref:`105 <X(105)>`, :ref:`666 <X(666)>`}, {:ref:`106 <X(106)>`, :ref:`238 <X(238)>`}, {:ref:`813 <X(813)>`, 1023}, {:ref:`840 <X(840)>`, 1083}
+.. collapse:: Functional Relations
+   :badge: 7 relations
 
-Relations
----------
+   * :ref:`X(898) <X(898)>` = isogonal conjugate of :ref:`X(891) <X(891)>`
+   * :ref:`X(898) <X(898)>` = intersection, other than A, B, C, of circumcircle and hyperbola {A,B,C,PU(26),PU(33)}}
+   * :ref:`X(898) <X(898)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(6) <X(6)>`\ \ :ref:`X(100) <X(100)>`
+   * :ref:`X(898) <X(898)>` = Ψ(:ref:`X(1) <X(1)>`, :ref:`X(190) <X(190)>`)
+   * :ref:`X(898) <X(898)>` = Ψ(:ref:`X(6) <X(6)>`, :ref:`X(100) <X(100)>`)
+   * :ref:`X(898) <X(898)>` = Ψ(:ref:`X(650) <X(650)>`, :ref:`X(8) <X(8)>`)
+   * :ref:`X(898) <X(898)>` = trilinear product of circumcircle intercepts of line :ref:`X(1) <X(1)>`\ \ :ref:`X(190) <X(190)>`
 
-* :ref:`X(898) <X(898)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(891) <X(891)>`
-* :ref:`X(898) <X(898)>` = intersection, other than A, B, C, of circumcircle and hyperbola {A,B,C,PU(26),PU(33)}}
-* :ref:`X(898) <X(898)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(6) <X(6)>`\ \ :ref:`X(100) <X(100)>`
-* :ref:`X(898) <X(898)>` = Ψ(:ref:`X(1) <X(1)>`, :ref:`X(190) <X(190)>`)
-* :ref:`X(898) <X(898)>` = Ψ(:ref:`X(6) <X(6)>`, :ref:`X(100) <X(100)>`)
-* :ref:`X(898) <X(898)>` = Ψ(:ref:`X(650) <X(650)>`, :ref:`X(8) <X(8)>`)
-* :ref:`X(898) <X(898)>` = trilinear product of circumcircle intercepts of line :ref:`X(1) <X(1)>`\ \ :ref:`X(190) <X(190)>`
+.. toctree::
+   :hidden:
 
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

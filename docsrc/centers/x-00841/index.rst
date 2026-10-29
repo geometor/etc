@@ -8,44 +8,43 @@
 X(841) = ISOGONAL CONJUGATE OF X(541)
 =====================================
 
+.. enunciation::
+
+   :ref:`X(841) <X(841)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(541) <X(541)>`
+
 .. figure:: x-00841.svg
    :alt: X(841) = ISOGONAL CONJUGATE OF X(541)
    :align: center
 
    **X(841) = ISOGONAL CONJUGATE OF X(541)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = a/(2ax - by - cz), x = x(A,B,C) = 1/(cos A - 2 cos B cos C)
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Search Value (6, 9, 13):** :math:`13.270923068483`
 
-* :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = a/(2ax - by - cz), x = x(A,B,C) = 1/(cos A - 2 cos B cos C)
+.. container:: note-item
 
-Barycentrics
-~~~~~~~~~~~~
+   :ref:`X(841) <X(841)>` lies on the circumcircle.
 
-* :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+.. container:: note-item
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`13.270923068483`
+   :ref:`X(841) <X(841)>` lies.
 
-Incidence
----------
+.. collapse:: Incident Central Lines
+   :badge: 1 line
+   :class: line-catalog
 
-:ref:`X(841) <X(841)>` lies on the circumcircle.
+   {:ref:`376 <X(376)>`, :ref:`476 <X(476)>`}
 
-:ref:`X(841) <X(841)>` lies and on these lines:
+.. collapse:: Functional Relations
+   :badge: 2 relations
 
-{:ref:`376 <X(376)>`, :ref:`476 <X(476)>`}
+   * :ref:`X(841) <X(841)>` = isogonal conjugate of :ref:`X(541) <X(541)>`
+   * :ref:`X(841) <X(841)>` = :term:`trilinear pole <trilinear-pole>`, wrt circumcevian triangle of :ref:`X(30) <X(30)>`, of line :ref:`X(6) <X(6)>`\ \ :ref:`X(30) <X(30)>`
 
-Relations
----------
+.. toctree::
+   :hidden:
 
-* :ref:`X(841) <X(841)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(541) <X(541)>`
-* :ref:`X(841) <X(841)>` = :term:`trilinear pole <trilinear-pole>`, wrt circumcevian triangle of :ref:`X(30) <X(30)>`, of line :ref:`X(6) <X(6)>`\ \ :ref:`X(30) <X(30)>`
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

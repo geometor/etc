@@ -8,42 +8,39 @@
 X(907) = POINT ACRUX
 ====================
 
+.. enunciation::
+
+   :ref:`X(907) <X(907)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(3800)
+
 .. figure:: x-00907.svg
    :alt: X(907) = POINT ACRUX
    :align: center
 
    **X(907) = POINT ACRUX** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = a/[(b\ :sup:`2` - c\ :sup:`2`)(3a\ :sup:`2` + b\ :sup:`2` + c\ :sup:`2`)]
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = a\ :sup:`2`/[(b\ :sup:`2` - c\ :sup:`2`)(3a\ :sup:`2` + b\ :sup:`2` + c\ :sup:`2`)]
+   | **Search Value (6, 9, 13):** :math:`1.553625773911`
 
-* :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = a/[(b\ :sup:`2` - c\ :sup:`2`)(3a\ :sup:`2` + b\ :sup:`2` + c\ :sup:`2`)]
+.. container:: note-item
 
-Barycentrics
-~~~~~~~~~~~~
+   :ref:`X(907) <X(907)>` lies on the circumcircle.
 
-* :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = a\ :sup:`2`/[(b\ :sup:`2` - c\ :sup:`2`)(3a\ :sup:`2` + b\ :sup:`2` + c\ :sup:`2`)]
+.. collapse:: Incident Central Lines
+   :badge: 3 lines
+   :class: line-catalog
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`1.553625773911`
+   {:ref:`98 <X(98)>`, :ref:`620 <X(620)>`}, {:ref:`111 <X(111)>`, 1180}, {:ref:`112 <X(112)>`, 1634}
 
-Incidence
----------
+.. collapse:: Functional Relations
+   :badge: 2 relations
 
-:ref:`X(907) <X(907)>` lies on the circumcircle and on these lines:
+   * :ref:`X(907) <X(907)>` = isogonal conjugate of X(3800)
+   * :ref:`X(907) <X(907)>` = Λ(:ref:`X(419) <X(419)>`, X(2501)) (line is radical axis of circumcircle and orthosymmedial circle)
 
-{:ref:`98 <X(98)>`, :ref:`620 <X(620)>`}, {:ref:`111 <X(111)>`, 1180}, {:ref:`112 <X(112)>`, 1634}
+.. toctree::
+   :hidden:
 
-Relations
----------
-
-* :ref:`X(907) <X(907)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(3800)
-* :ref:`X(907) <X(907)>` = Λ(:ref:`X(419) <X(419)>`, X(2501)) (line is radical axis of circumcircle and orthosymmedial circle)
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

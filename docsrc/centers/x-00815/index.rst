@@ -8,39 +8,32 @@
 X(815) = o-(- 1, 2) CIRCUMCIRCLE POINT
 ======================================
 
+.. enunciation::
+
+   :ref:`X(815) <X(815)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(814) <X(814)>`
+
 .. figure:: x-00815.svg
    :alt: X(815) = o-(- 1, 2) CIRCUMCIRCLE POINT
    :align: center
 
    **X(815) = o-(- 1, 2) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = 1/[a :sup:`-2`\ (b\ :sup:`2` - c\ :sup:`2`) + a\ :sup:`1`\ (b :sup:`-1` - c :sup:`-1`)]
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Search Value (6, 9, 13):** :math:`-0.577148686207`
 
-* :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = 1/[a :sup:`-2`\ (b\ :sup:`2` - c\ :sup:`2`) + a\ :sup:`1`\ (b :sup:`-1` - c :sup:`-1`)]
+.. container:: note-item
 
-Barycentrics
-~~~~~~~~~~~~
+   :ref:`X(815) <X(815)>` lies on the circumcircle.
 
-* :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+.. collapse:: Functional Relations
+   :badge: 1 relation
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`-0.577148686207`
+   * :ref:`X(815) <X(815)>` = isogonal conjugate of :ref:`X(814) <X(814)>`
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(815) <X(815)>` lies on the circumcircle.
-
-Relations
----------
-
-* :ref:`X(815) <X(815)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(814) <X(814)>`
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

@@ -8,60 +8,54 @@
 X(436) = EULER X(48)-7th-SUBSTITUTION POINT
 ===========================================
 
+.. enunciation::
+
+   As a point on the Euler line, :ref:`X(436) <X(436)>` has Shinagawa coefficients (2F\ :sup:`2`,-(E + F)F + S\ :sup:`2`).
+
 .. figure:: x-00436.svg
    :alt: X(436) = EULER X(48)-7th-SUBSTITUTION POINT
    :align: center
 
    **X(436) = EULER X(48)-7th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`(u^{2} + vw)\sec A : (v^{2} + wu)\sec B : (w^{2} + uv)\sec C`, where, u : v : w = :ref:`X(48) <X(48)>`; e.g., u(A,B,C) = sin 2A
+   | **Barycentrics:** :math:`(u^{2} + vw)\tan A : (v^{2} + wu)\tan B : (w^{2} + uv)\tan C`
+   | **Search Value (6, 9, 13):** :math:`0.375185984287`
 
-* :math:`(u^{2} + vw)\sec A : (v^{2} + wu)\sec B : (w^{2} + uv)\sec C`, where, u : v : w = :ref:`X(48) <X(48)>`; e.g., u(A,B,C) = sin 2A
+.. collapse:: Alternate Coordinates
+   :badge: 2 forms
 
-Barycentrics
-~~~~~~~~~~~~
-
-* :math:`(u^{2} + vw)\tan A : (v^{2} + wu)\tan B : (w^{2} + uv)\tan C`
-* :math:`\tan A - \tan \omega ' : :`, where ω' is the Brocard angle of the :term:`orthic triangle <orthic-triangle>`
-* :math:`(a^2 + b^2 - c^2)*(a^2 - b^2 + c^2)*(a^8 - 2*a^6*b^2 + a^4*b^4 - 2*a^6*c^2 + 3*a^4*b^2*c^2 - b^6*c^2 + a^4*c^4 + 2*b^4*c^4 - b^2*c^6) : :`
-
-* **Kimberling (6, 9, 13) Search Value:** :math:`0.375185984287`
-
-Notes
------
+   * **Barycentrics:** :math:`\tan A - \tan \omega ' : :`, where ω' is the Brocard angle of the :term:`orthic triangle <orthic-triangle>`
+   * **Barycentrics:** :math:`(a^2 + b^2 - c^2)*(a^2 - b^2 + c^2)*(a^8 - 2*a^6*b^2 + a^4*b^4 - 2*a^6*c^2 + 3*a^4*b^2*c^2 - b^6*c^2 + a^4*c^4 + 2*b^4*c^4 - b^2*c^6) : :`
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(436) <X(436)>` has Shinagawa coefficients (2F\ :sup:`2`,-(E + F)F + S\ :sup:`2`).
+   :ref:`X(436) <X(436)>` lies.
 
-Incidence
----------
+.. collapse:: Incident Central Lines
+   :badge: 56 lines
+   :class: line-catalog
 
-:ref:`X(436) <X(436)>` lies and on these lines:
+   {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`6 <X(6)>`, 1988}, {:ref:`51 <X(51)>`, :ref:`107 <X(107)>`}, {:ref:`53 <X(53)>`, 10192}, {:ref:`54 <X(54)>`, 8794}, {:ref:`110 <X(110)>`, :ref:`324 <X(324)>`}, {:ref:`154 <X(154)>`, 33971}, {:ref:`182 <X(182)>`, 15466}, {:ref:`184 <X(184)>`, 2052}, {:ref:`185 <X(185)>`, 51031}, {:ref:`216 <X(216)>`, 40402}, {:ref:`264 <X(264)>`, 9306}, {:ref:`459 <X(459)>`, 18950}, {:ref:`578 <X(578)>`, 1093}, {:ref:`648 <X(648)>`, 34986}, {1075, 7592}, {1196, 6531}, {1199, 43840}, {1304, 32439}, {1495, 1629}, {1614, 44732}, {1941, 34148}, {1947, 7193}, {1948, 3955}, {1970, 27359}, {1994, 35360}, {3167, 9308}, {4994, 38848}, {5012, 46106}, {5890, 40664}, {5943, 36794}, {6344, 50463}, {6524, 11427}, {6525, 14853}, {6530, 23292}, {6747, 14165}, {6749, 45867}, {6761, 12022}, {8795, 26887}, {8884, 8887}, {10982, 45062}, {11245, 51358}, {11424, 14249}, {11455, 48364}, {14361, 14912}, {14363, 37505}, {14978, 18350}, {16657, 51385}, {19357, 41365}, {26880, 42329}, {27377, 41588}, {32002, 32223}, {35259, 41244}, {37894, 44132}, {38833, 39286}, {43650, 52147}
 
-{:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`6 <X(6)>`, 1988}, {:ref:`51 <X(51)>`, :ref:`107 <X(107)>`}, {:ref:`53 <X(53)>`, 10192}, {:ref:`54 <X(54)>`, 8794}, {:ref:`110 <X(110)>`, :ref:`324 <X(324)>`}, {:ref:`154 <X(154)>`, 33971}, {:ref:`182 <X(182)>`, 15466}, {:ref:`184 <X(184)>`, 2052}, {:ref:`185 <X(185)>`, 51031}, {:ref:`216 <X(216)>`, 40402}, {:ref:`264 <X(264)>`, 9306}, {:ref:`459 <X(459)>`, 18950}, {:ref:`578 <X(578)>`, 1093}, {:ref:`648 <X(648)>`, 34986}, {1075, 7592}, {1196, 6531}, {1199, 43840}, {1304, 32439}, {1495, 1629}, {1614, 44732}, {1941, 34148}, {1947, 7193}, {1948, 3955}, {1970, 27359}, {1994, 35360}, {3167, 9308}, {4994, 38848}, {5012, 46106}, {5890, 40664}, {5943, 36794}, {6344, 50463}, {6524, 11427}, {6525, 14853}, {6530, 23292}, {6747, 14165}, {6749, 45867}, {6761, 12022}, {8795, 26887}, {8884, 8887}, {10982, 45062}, {11245, 51358}, {11424, 14249}, {11455, 48364}, {14361, 14912}, {14363, 37505}, {14978, 18350}, {16657, 51385}, {19357, 41365}, {26880, 42329}, {27377, 41588}, {32002, 32223}, {35259, 41244}, {37894, 44132}, {38833, 39286}, {43650, 52147}
+.. collapse:: Functional Relations
+   :badge: 11 relations
 
-Relations
----------
+   * :ref:`X(436) <X(436)>` = orthocentroidal-circle-inverse of X(52249)
+   * :ref:`X(436) <X(436)>` = polar conjugate of X(9290)
+   * :ref:`X(436) <X(436)>` = :term:`isogonal conjugate <isogonal-conjugate>` of the :term:`isotomic conjugate <isotomic-conjugate>` of X(9291)
+   * :ref:`X(436) <X(436)>` = polar conjugate of the isogonal conjugate of X(1970)
+   * :ref:`X(436) <X(436)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): {1987, 41204}, {21449, 1970}, {40402, :ref:`4 <X(4)>`}
+   * :ref:`X(436) <X(436)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these (i,j): {:ref:`3 <X(3)>`, 9251}, {:ref:`48 <X(48)>`, 9290}, {:ref:`656 <X(656)>`, 1303}
+   * :ref:`X(436) <X(436)>` = X(i)-Dao conjugate of X(j) for these (i,j): {1249, 9290}, {1303, 40596}, {9251, 36103}
+   * :ref:`X(436) <X(436)>` = :term:`crosssum <crosssum>` of :ref:`X(520) <X(520)>` and X(41219)
+   * :ref:`X(436) <X(436)>` = barycentric product X(i)\*X(j) for these {i,j}: {:ref:`1 <X(1)>`, 9252}, {:ref:`5 <X(5)>`, 21449}, {:ref:`6 <X(6)>`, 9291}, {:ref:`92 <X(92)>`, 1954}, {:ref:`95 <X(95)>`, 27359}, {:ref:`112 <X(112)>`, 42331}, {:ref:`264 <X(264)>`, 1970}
+   * :ref:`X(436) <X(436)>` = barycentric quotient X(i)/X(j) for these {i,j}: {:ref:`4 <X(4)>`, 9290}, {:ref:`19 <X(19)>`, 9251}, {:ref:`112 <X(112)>`, 1303}, {1954, :ref:`63 <X(63)>`}, {1970, :ref:`3 <X(3)>`}, {9252, :ref:`75 <X(75)>`}, {9291, :ref:`76 <X(76)>`}, {21449, :ref:`95 <X(95)>`}, {27359, :ref:`5 <X(5)>`}, {42331, 3267}
+   * :ref:`X(436) <X(436)>` = {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): {:ref:`2 <X(2)>`, :ref:`4 <X(4)>`, 52249}, {:ref:`4 <X(4)>`, 3079, 7714}, {:ref:`4 <X(4)>`, 52299, 6619}, {:ref:`107 <X(107)>`, :ref:`275 <X(275)>`, :ref:`51 <X(51)>`}, {:ref:`184 <X(184)>`, 2052, 41204}, {:ref:`418 <X(418)>`, 41202, 8613}, {1495, 42400, 1629}, {1585, 1586, 52247}, {4240, 30506, 13595}, {6524, 11427, 41371}, {8887, 10282, 8884}
 
-* :ref:`X(436) <X(436)>` = orthocentroidal-circle-inverse of X(52249)
-* :ref:`X(436) <X(436)>` = polar conjugate of X(9290)
-* :ref:`X(436) <X(436)>` = :term:`isogonal conjugate <isogonal-conjugate>` of the :term:`isotomic conjugate <isotomic-conjugate>` of X(9291)
-* :ref:`X(436) <X(436)>` = polar conjugate of the isogonal conjugate of X(1970)
-* :ref:`X(436) <X(436)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): {1987, 41204}, {21449, 1970}, {40402, :ref:`4 <X(4)>`}
-* :ref:`X(436) <X(436)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these (i,j): {:ref:`3 <X(3)>`, 9251}, {:ref:`48 <X(48)>`, 9290}, {:ref:`656 <X(656)>`, 1303}
-* :ref:`X(436) <X(436)>` = X(i)-Dao conjugate of X(j) for these (i,j): {1249, 9290}, {1303, 40596}, {9251, 36103}
-* :ref:`X(436) <X(436)>` = :term:`crosssum <crosssum>` of :ref:`X(520) <X(520)>` and X(41219)
-* :ref:`X(436) <X(436)>` = barycentric product X(i)\*X(j) for these {i,j}: {:ref:`1 <X(1)>`, 9252}, {:ref:`5 <X(5)>`, 21449}, {:ref:`6 <X(6)>`, 9291}, {:ref:`92 <X(92)>`, 1954}, {:ref:`95 <X(95)>`, 27359}, {:ref:`112 <X(112)>`, 42331}, {:ref:`264 <X(264)>`, 1970}
-* :ref:`X(436) <X(436)>` = barycentric quotient X(i)/X(j) for these {i,j}: {:ref:`4 <X(4)>`, 9290}, {:ref:`19 <X(19)>`, 9251}, {:ref:`112 <X(112)>`, 1303}, {1954, :ref:`63 <X(63)>`}, {1970, :ref:`3 <X(3)>`}, {9252, :ref:`75 <X(75)>`}, {9291, :ref:`76 <X(76)>`}, {21449, :ref:`95 <X(95)>`}, {27359, :ref:`5 <X(5)>`}, {42331, 3267}
-* :ref:`X(436) <X(436)>` = {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): {:ref:`2 <X(2)>`, :ref:`4 <X(4)>`, 52249}, {:ref:`4 <X(4)>`, 3079, 7714}, {:ref:`4 <X(4)>`, 52299, 6619}, {:ref:`107 <X(107)>`, :ref:`275 <X(275)>`, :ref:`51 <X(51)>`}, {:ref:`184 <X(184)>`, 2052, 41204}, {:ref:`418 <X(418)>`, 41202, 8613}, {1495, 42400, 1629}, {1585, 1586, 52247}, {4240, 30506, 13595}, {6524, 11427, 41371}, {8887, 10282, 8884}
+.. toctree::
+   :hidden:
 
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

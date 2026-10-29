@@ -8,38 +8,66 @@
 X(516) = ISOGONAL CONJUGATE OF X(103)
 =====================================
 
+.. enunciation::
+
+   :ref:`X(516) <X(516)>` is the perspector of triangle ABC and the :term:`tangential triangles <tangential-triangle>` of the conic that passes through the points A, B, C, :ref:`X(2) <X(2)>`, and :ref:`X(7) <X(7)>`.
+
 .. figure:: x-00516.svg
    :alt: X(516) = ISOGONAL CONJUGATE OF X(103)
    :align: center
 
    **X(516) = ISOGONAL CONJUGATE OF X(103)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`bc[(a - b) \cot C + (a - c) \cot B] : :`
+   | **Barycentrics:** :math:`2 a^3 - a^2 (b + c) - (b - c)^2 (b + c) : :`
 
-* :math:`bc[(a - b) \cot C + (a - c) \cot B] : :`
-* :math:`a^2 - b^2 \cos C - c^2 \cos B : :`
-* :math:`a^2 - b^2 \cos C - c^2 \cos B : :`
+.. collapse:: Alternate Coordinates
+   :badge: 2 forms
 
-Barycentrics
-~~~~~~~~~~~~
+   * **Trilinears:** :math:`a^2 - b^2 \cos C - c^2 \cos B : :`
+   * **Trilinears:** :math:`a^2 - b^2 \cos C - c^2 \cos B : :`
 
-* :math:`2 a^3 - a^2 (b + c) - (b - c)^2 (b + c) : :`
+.. collapse:: Linear Combinations
+   :badge: 1 combination
 
-Linear Combinations
--------------------
-
-* :ref:`X(516) <X(516)>` = :ref:`X(1) <X(1)>` - :ref:`X(7) <X(7)>`
-
-Notes
------
+   * :ref:`X(516) <X(516)>` = :ref:`X(1) <X(1)>` - :ref:`X(7) <X(7)>`
 
 .. container:: note-item
 
-   :ref:`X(516) <X(516)>` is the perspector of triangle ABC and the :term:`tangential triangles <tangential-triangle>` of the conic that passes through the points A, B, C, :ref:`X(2) <X(2)>`, and :ref:`X(7) <X(7)>`.
+   :ref:`X(516) <X(516)>` lies.
+
+.. collapse:: Incident Central Lines
+   :badge: 91 lines
+   :class: line-catalog
+
+   {:ref:`1 <X(1)>`, :ref:`7 <X(7)>`}, {:ref:`2 <X(2)>`, :ref:`165 <X(165)>`}, {:ref:`3 <X(3)>`, :ref:`142 <X(142)>`}, {:ref:`4 <X(4)>`, :ref:`9 <X(9)>`}, {:ref:`8 <X(8)>`, :ref:`144 <X(144)>`}, {:ref:`11 <X(11)>`, 1155}, {:ref:`27 <X(27)>`, 2328}, {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}, {:ref:`31 <X(31)>`, 1754}, {:ref:`35 <X(35)>`, :ref:`411 <X(411)>`}, {:ref:`46 <X(46)>`, 1210}, {:ref:`55 <X(55)>`, :ref:`226 <X(226)>`}, {:ref:`57 <X(57)>`, :ref:`497 <X(497)>`}, {:ref:`63 <X(63)>`, 1709}, {:ref:`65 <X(65)>`, :ref:`950 <X(950)>`}, {:ref:`72 <X(72)>`, 3059}, {:ref:`74 <X(74)>`, 2690}, {:ref:`79 <X(79)>`, 2346}, {:ref:`80 <X(80)>`, :ref:`655 <X(655)>`}, {:ref:`98 <X(98)>`, 2702}, {:ref:`99 <X(99)>`, 2700}, {:ref:`100 <X(100)>`, :ref:`908 <X(908)>`}, {:ref:`101 <X(101)>`, 2724}, {:ref:`102 <X(102)>`, :ref:`929 <X(929)>`}, {:ref:`103 <X(103)>`, :ref:`927 <X(927)>`}, {:ref:`104 <X(104)>`, 1308}, {:ref:`105 <X(105)>`, 2736}, {:ref:`106 <X(106)>`, 2737}, {:ref:`107 <X(107)>`, 2738}, {:ref:`108 <X(108)>`, 2739}, {:ref:`109 <X(109)>`, 1936}, {:ref:`110 <X(110)>`, 2688}, {:ref:`111 <X(111)>`, 2740}, {:ref:`112 <X(112)>`, 2741}, {:ref:`118 <X(118)>`, :ref:`910 <X(910)>`}, {:ref:`146 <X(146)>`, 2948}, {:ref:`149 <X(149)>`, 1768}, {:ref:`152 <X(152)>`, 1282}, {:ref:`200 <X(200)>`, :ref:`329 <X(329)>`}, {:ref:`214 <X(214)>`, 1537}, {:ref:`238 <X(238)>`, :ref:`673 <X(673)>`}, {:ref:`255 <X(255)>`, 1777}, {:ref:`354 <X(354)>`, :ref:`553 <X(553)>`}, {:ref:`355 <X(355)>`, :ref:`382 <X(382)>`}, {:ref:`376 <X(376)>`, :ref:`551 <X(551)>`}, {:ref:`388 <X(388)>`, 1697}, {:ref:`412 <X(412)>`, 1838}, {:ref:`484 <X(484)>`, 1737}, {:ref:`550 <X(550)>`, 1385}, {:ref:`580 <X(580)>`, 3073}, {:ref:`902 <X(902)>`, 3011}, {:ref:`938 <X(938)>`, 3339}, {:ref:`944 <X(944)>`, 3243}, {:ref:`972 <X(972)>`, 1543}, {:ref:`993 <X(993)>`, 1012}, {1058, 3333}, {1076, 1771}, {1086, 1279}, {1158, 3358}, {1284, 2223}, {1292, 2725}, {1293, 2726}, {1294, 2727}, {1295, 2728}, {1296, 2729}, {1317, 3328}, {1376, 3452}, {1389, 3255}, {1482, 1657}, {1490, 3174}, {1519, 2077}, {1538, 3035}, {1571, 2548}, {1572, 2549}, {1587, 1702}, {1588, 1703}, {1633, 3220}, {1698, 3091}, {1700, 2546}, {1701, 2547}, {1704, 2542}, {1705, 2543}, {1736, 2310}, {1829, 1885}, {1852, 1888}, {2017, 2544}, {2018, 2545}, {2321, 3416}, {2947, 3190}, {3021, 3323}, {3340, 3586}
+
+.. collapse:: Functional Relations
+   :badge: 18 relations
+
+   * :ref:`X(516) <X(516)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(103) <X(103)>`
+   * :ref:`X(516) <X(516)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(18025)
+   * :ref:`X(516) <X(516)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X(152) <X(152)>`
+   * :ref:`X(516) <X(516)>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X(118) <X(118)>`
+   * :ref:`X(516) <X(516)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(23972)
+   * :ref:`X(516) <X(516)>` = :ref:`X(4) <X(4)>`-Ceva conjugate of :ref:`X(118) <X(118)>`
+   * :ref:`X(516) <X(516)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`3 <X(3)>`, :ref:`916 <X(916)>`), (:ref:`55 <X(55)>`, :ref:`672 <X(672)>`)
+   * :ref:`X(516) <X(516)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(6) <X(6)>`\ \ :ref:`X(657) <X(657)>`
+   * :ref:`X(516) <X(516)>` = :term:`orthopoint <orthopoint>` of :ref:`X(514) <X(514)>`
+   * :ref:`X(516) <X(516)>` = intercept of the Soddy line and the line at infinity (:term:`trilinear polars <trilinear-polar>` of :ref:`X(7) <X(7)>` and :ref:`X(2) <X(2)>`)
+   * :ref:`X(516) <X(516)>` = :ref:`X(542) <X(542)>`-of-Fuhrmann-triangle
+   * :ref:`X(516) <X(516)>` = exsimilicenter of Bevan and anticomplementary circles
+   * :ref:`X(516) <X(516)>` = harmonic center of Bevan and anticomplementary circles
+   * :ref:`X(516) <X(516)>` = Thomson-isogonal conjugate of :ref:`X(101) <X(101)>`
+   * :ref:`X(516) <X(516)>` = Lucas-isogonal conjugate of :ref:`X(101) <X(101)>`
+   * :ref:`X(516) <X(516)>` = Cundy-Parry Phi transform of X(14377)
+   * :ref:`X(516) <X(516)>` = Cundy-Parry Psi transform of X(3730)
+   * :ref:`X(516) <X(516)>` = :ref:`X(92) <X(92)>`-:term:`isoconjugate <isoconjugate>` of X(32657)
+
+Notes
+-----
 
 .. container:: note-item
 
@@ -47,39 +75,9 @@ Notes
 
 .. container:: note-item
 
-   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X(516) <X(516)>` lies on the line at infinity.
+   As the isogonal conjugate of a point on the circumcircle, :ref:`X(516) <X(516)>` lies on the line at infinity.
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(516) <X(516)>` lies and on these lines:
-
-{:ref:`1 <X(1)>`, :ref:`7 <X(7)>`}, {:ref:`2 <X(2)>`, :ref:`165 <X(165)>`}, {:ref:`3 <X(3)>`, :ref:`142 <X(142)>`}, {:ref:`4 <X(4)>`, :ref:`9 <X(9)>`}, {:ref:`8 <X(8)>`, :ref:`144 <X(144)>`}, {:ref:`11 <X(11)>`, 1155}, {:ref:`27 <X(27)>`, 2328}, {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}, {:ref:`31 <X(31)>`, 1754}, {:ref:`35 <X(35)>`, :ref:`411 <X(411)>`}, {:ref:`46 <X(46)>`, 1210}, {:ref:`55 <X(55)>`, :ref:`226 <X(226)>`}, {:ref:`57 <X(57)>`, :ref:`497 <X(497)>`}, {:ref:`63 <X(63)>`, 1709}, {:ref:`65 <X(65)>`, :ref:`950 <X(950)>`}, {:ref:`72 <X(72)>`, 3059}, {:ref:`74 <X(74)>`, 2690}, {:ref:`79 <X(79)>`, 2346}, {:ref:`80 <X(80)>`, :ref:`655 <X(655)>`}, {:ref:`98 <X(98)>`, 2702}, {:ref:`99 <X(99)>`, 2700}, {:ref:`100 <X(100)>`, :ref:`908 <X(908)>`}, {:ref:`101 <X(101)>`, 2724}, {:ref:`102 <X(102)>`, :ref:`929 <X(929)>`}, {:ref:`103 <X(103)>`, :ref:`927 <X(927)>`}, {:ref:`104 <X(104)>`, 1308}, {:ref:`105 <X(105)>`, 2736}, {:ref:`106 <X(106)>`, 2737}, {:ref:`107 <X(107)>`, 2738}, {:ref:`108 <X(108)>`, 2739}, {:ref:`109 <X(109)>`, 1936}, {:ref:`110 <X(110)>`, 2688}, {:ref:`111 <X(111)>`, 2740}, {:ref:`112 <X(112)>`, 2741}, {:ref:`118 <X(118)>`, :ref:`910 <X(910)>`}, {:ref:`146 <X(146)>`, 2948}, {:ref:`149 <X(149)>`, 1768}, {:ref:`152 <X(152)>`, 1282}, {:ref:`200 <X(200)>`, :ref:`329 <X(329)>`}, {:ref:`214 <X(214)>`, 1537}, {:ref:`238 <X(238)>`, :ref:`673 <X(673)>`}, {:ref:`255 <X(255)>`, 1777}, {:ref:`354 <X(354)>`, :ref:`553 <X(553)>`}, {:ref:`355 <X(355)>`, :ref:`382 <X(382)>`}, {:ref:`376 <X(376)>`, :ref:`551 <X(551)>`}, {:ref:`388 <X(388)>`, 1697}, {:ref:`412 <X(412)>`, 1838}, {:ref:`484 <X(484)>`, 1737}, {:ref:`550 <X(550)>`, 1385}, {:ref:`580 <X(580)>`, 3073}, {:ref:`902 <X(902)>`, 3011}, {:ref:`938 <X(938)>`, 3339}, {:ref:`944 <X(944)>`, 3243}, {:ref:`972 <X(972)>`, 1543}, {:ref:`993 <X(993)>`, 1012}, {1058, 3333}, {1076, 1771}, {1086, 1279}, {1158, 3358}, {1284, 2223}, {1292, 2725}, {1293, 2726}, {1294, 2727}, {1295, 2728}, {1296, 2729}, {1317, 3328}, {1376, 3452}, {1389, 3255}, {1482, 1657}, {1490, 3174}, {1519, 2077}, {1538, 3035}, {1571, 2548}, {1572, 2549}, {1587, 1702}, {1588, 1703}, {1633, 3220}, {1698, 3091}, {1700, 2546}, {1701, 2547}, {1704, 2542}, {1705, 2543}, {1736, 2310}, {1829, 1885}, {1852, 1888}, {2017, 2544}, {2018, 2545}, {2321, 3416}, {2947, 3190}, {3021, 3323}, {3340, 3586}
-
-Relations
----------
-
-* :ref:`X(516) <X(516)>` = isogonal conjugate of :ref:`X(103) <X(103)>`
-* :ref:`X(516) <X(516)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(18025)
-* :ref:`X(516) <X(516)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X(152) <X(152)>`
-* :ref:`X(516) <X(516)>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X(118) <X(118)>`
-* :ref:`X(516) <X(516)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(23972)
-* :ref:`X(516) <X(516)>` = :ref:`X(4) <X(4)>`-Ceva conjugate of :ref:`X(118) <X(118)>`
-* :ref:`X(516) <X(516)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`3 <X(3)>`, :ref:`916 <X(916)>`), (:ref:`55 <X(55)>`, :ref:`672 <X(672)>`)
-* :ref:`X(516) <X(516)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(6) <X(6)>`\ \ :ref:`X(657) <X(657)>`
-* :ref:`X(516) <X(516)>` = :term:`orthopoint <orthopoint>` of :ref:`X(514) <X(514)>`
-* :ref:`X(516) <X(516)>` = intercept of the Soddy line and the line at infinity (:term:`trilinear polars <trilinear-polar>` of :ref:`X(7) <X(7)>` and :ref:`X(2) <X(2)>`)
-* :ref:`X(516) <X(516)>` = :ref:`X(542) <X(542)>`-of-Fuhrmann-triangle
-* :ref:`X(516) <X(516)>` = exsimilicenter of Bevan and anticomplementary circles
-* :ref:`X(516) <X(516)>` = harmonic center of Bevan and anticomplementary circles
-* :ref:`X(516) <X(516)>` = Thomson-isogonal conjugate of :ref:`X(101) <X(101)>`
-* :ref:`X(516) <X(516)>` = Lucas-isogonal conjugate of :ref:`X(101) <X(101)>`
-* :ref:`X(516) <X(516)>` = Cundy-Parry Phi transform of X(14377)
-* :ref:`X(516) <X(516)>` = Cundy-Parry Psi transform of X(3730)
-* :ref:`X(516) <X(516)>` = :ref:`X(92) <X(92)>`-:term:`isoconjugate <isoconjugate>` of X(32657)
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

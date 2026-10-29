@@ -8,25 +8,57 @@
 X(515) = ISOGONAL CONJUGATE OF X(102)
 =====================================
 
+.. enunciation::
+
+   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X(515) <X(515)>` lies on the line at infinity.
+
 .. figure:: x-00515.svg
    :alt: X(515) = ISOGONAL CONJUGATE OF X(102)
    :align: center
 
    **X(515) = ISOGONAL CONJUGATE OF X(102)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`(b + c)\sec A - b \sec B - c \sec C :`
 
-* :math:`(b + c)\sec A - b \sec B - c \sec C :`
-* :math:`r - 2 R \cos B \cos C : :`
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-Linear Combinations
--------------------
+   * **Trilinears:** :math:`r - 2 R \cos B \cos C : :`
 
-* :ref:`X(515) <X(515)>` = :ref:`X(1) <X(1)>` - :ref:`X(4) <X(4)>`
+.. collapse:: Linear Combinations
+   :badge: 1 combination
+
+   * :ref:`X(515) <X(515)>` = :ref:`X(1) <X(1)>` - :ref:`X(4) <X(4)>`
+
+.. container:: note-item
+
+   :ref:`X(515) <X(515)>` lies.
+
+.. collapse:: Incident Central Lines
+   :badge: 73 lines
+   :class: line-catalog
+
+   {:ref:`1 <X(1)>`, :ref:`4 <X(4)>`}, {:ref:`3 <X(3)>`, :ref:`10 <X(10)>`}, {:ref:`5 <X(5)>`, 1125}, {:ref:`8 <X(8)>`, :ref:`20 <X(20)>`}, {:ref:`9 <X(9)>`, 3427}, {:ref:`11 <X(11)>`, 1319}, {:ref:`12 <X(12)>`, 2646}, {:ref:`29 <X(29)>`, :ref:`947 <X(947)>`}, {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}, {:ref:`36 <X(36)>`, :ref:`80 <X(80)>`}, {:ref:`48 <X(48)>`, 1826}, {:ref:`55 <X(55)>`, 1012}, {:ref:`56 <X(56)>`, 1210}, {:ref:`58 <X(58)>`, 3072}, {:ref:`65 <X(65)>`, 1071}, {:ref:`71 <X(71)>`, 1765}, {:ref:`74 <X(74)>`, 2689}, {:ref:`78 <X(78)>`, 3436}, {:ref:`79 <X(79)>`, 1389}, {:ref:`98 <X(98)>`, 2701}, {:ref:`99 <X(99)>`, 2708}, {:ref:`100 <X(100)>`, 2077}, {:ref:`101 <X(101)>`, 2723}, {:ref:`102 <X(102)>`, 1309}, {:ref:`103 <X(103)>`, :ref:`929 <X(929)>`}, {:ref:`105 <X(105)>`, 2730}, {:ref:`106 <X(106)>`, 2731}, {:ref:`108 <X(108)>`, 2733}, {:ref:`109 <X(109)>`, 2734}, {:ref:`110 <X(110)>`, 2695}, {:ref:`111 <X(111)>`, 2735}, {:ref:`117 <X(117)>`, 1455}, {:ref:`119 <X(119)>`, :ref:`214 <X(214)>`}, {:ref:`145 <X(145)>`, :ref:`962 <X(962)>`}, {:ref:`153 <X(153)>`, :ref:`908 <X(908)>`}, {:ref:`165 <X(165)>`, :ref:`376 <X(376)>`}, {:ref:`200 <X(200)>`, 3421}, {:ref:`281 <X(281)>`, :ref:`610 <X(610)>`}, {:ref:`284 <X(284)>`, 1065}, {:ref:`381 <X(381)>`, :ref:`551 <X(551)>`}, {:ref:`382 <X(382)>`, 1482}, {:ref:`411 <X(411)>`, 2975}, {:ref:`484 <X(484)>`, 1768}, {:ref:`595 <X(595)>`, 3073}, {:ref:`602 <X(602)>`, 1724}, {:ref:`603 <X(603)>`, 1771}, {:ref:`631 <X(631)>`, 1698}, {:ref:`910 <X(910)>`, 1146}, {:ref:`936 <X(936)>`, 2551}, {:ref:`938 <X(938)>`, 3333}, {:ref:`956 <X(956)>`, 3419}, {:ref:`997 <X(997)>`, 3452}, {:ref:`1000 <X(1000)>`, 3062}, {1006, 1746}, {1292, 2751}, {1293, 2757}, {1294, 2762}, {1295, 2765}, {1296, 2768}, {1317, 1537}, {1323, 1565}, {1350, 3416}, {1387, 1538}, {1420, 8086}, {1498, 3173}, {1766, 2321}, {1829, 3575}, {1836, 2099}, {1839, 1963}, {1885, 1902}, {2093, 2096}, {2183, 2250}, {3241, 3543}
+
+.. collapse:: Functional Relations
+   :badge: 14 relations
+
+   * :ref:`X(515) <X(515)>` = isogonal conjugate of :ref:`X(102) <X(102)>`
+   * :ref:`X(515) <X(515)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(34393)
+   * :ref:`X(515) <X(515)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X(151) <X(151)>`
+   * :ref:`X(515) <X(515)>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X(117) <X(117)>`
+   * :ref:`X(515) <X(515)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(23986)
+   * :ref:`X(515) <X(515)>` = :ref:`X(4) <X(4)>`-Ceva conjugate of :ref:`X(117) <X(117)>`
+   * :ref:`X(515) <X(515)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(6) <X(6)>`\ \ :ref:`X(652) <X(652)>`
+   * :ref:`X(515) <X(515)>` = :term:`orthopoint <orthopoint>` of :ref:`X(522) <X(522)>`
+   * :ref:`X(515) <X(515)>` = intersection of :term:`trilinear polars <trilinear-polar>` of :ref:`X(2) <X(2)>` and :ref:`X(8) <X(8)>`
+   * :ref:`X(515) <X(515)>` = Thomson-isogonal conjugate of :ref:`X(109) <X(109)>`
+   * :ref:`X(515) <X(515)>` = Lucas-isogonal conjugate of :ref:`X(109) <X(109)>`
+   * :ref:`X(515) <X(515)>` = Cundy-Parry Phi transform of X(10570)
+   * :ref:`X(515) <X(515)>` = Cundy-Parry Psi transform of X(10571)
+   * :ref:`X(515) <X(515)>` = :ref:`X(2) <X(2)>`-:term:`isoconjugate <isoconjugate>` of X(32677)
 
 Notes
 -----
@@ -37,37 +69,7 @@ Notes
 
    :ref:`X(515) <X(515)>` is the perspector of triangle ABC and the :term:`tangential triangles <tangential-triangle>` of the conic that passes through the points A, B, C, :ref:`X(2) <X(2)>`, and :ref:`X(8) <X(8)>`.
 
-.. container:: note-item
+.. toctree::
+   :hidden:
 
-   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X(515) <X(515)>` lies on the line at infinity.
-
-Incidence
----------
-
-:ref:`X(515) <X(515)>` lies and on these lines:
-
-{:ref:`1 <X(1)>`, :ref:`4 <X(4)>`}, {:ref:`3 <X(3)>`, :ref:`10 <X(10)>`}, {:ref:`5 <X(5)>`, 1125}, {:ref:`8 <X(8)>`, :ref:`20 <X(20)>`}, {:ref:`9 <X(9)>`, 3427}, {:ref:`11 <X(11)>`, 1319}, {:ref:`12 <X(12)>`, 2646}, {:ref:`29 <X(29)>`, :ref:`947 <X(947)>`}, {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}, {:ref:`36 <X(36)>`, :ref:`80 <X(80)>`}, {:ref:`48 <X(48)>`, 1826}, {:ref:`55 <X(55)>`, 1012}, {:ref:`56 <X(56)>`, 1210}, {:ref:`58 <X(58)>`, 3072}, {:ref:`65 <X(65)>`, 1071}, {:ref:`71 <X(71)>`, 1765}, {:ref:`74 <X(74)>`, 2689}, {:ref:`78 <X(78)>`, 3436}, {:ref:`79 <X(79)>`, 1389}, {:ref:`98 <X(98)>`, 2701}, {:ref:`99 <X(99)>`, 2708}, {:ref:`100 <X(100)>`, 2077}, {:ref:`101 <X(101)>`, 2723}, {:ref:`102 <X(102)>`, 1309}, {:ref:`103 <X(103)>`, :ref:`929 <X(929)>`}, {:ref:`105 <X(105)>`, 2730}, {:ref:`106 <X(106)>`, 2731}, {:ref:`108 <X(108)>`, 2733}, {:ref:`109 <X(109)>`, 2734}, {:ref:`110 <X(110)>`, 2695}, {:ref:`111 <X(111)>`, 2735}, {:ref:`117 <X(117)>`, 1455}, {:ref:`119 <X(119)>`, :ref:`214 <X(214)>`}, {:ref:`145 <X(145)>`, :ref:`962 <X(962)>`}, {:ref:`153 <X(153)>`, :ref:`908 <X(908)>`}, {:ref:`165 <X(165)>`, :ref:`376 <X(376)>`}, {:ref:`200 <X(200)>`, 3421}, {:ref:`281 <X(281)>`, :ref:`610 <X(610)>`}, {:ref:`284 <X(284)>`, 1065}, {:ref:`381 <X(381)>`, :ref:`551 <X(551)>`}, {:ref:`382 <X(382)>`, 1482}, {:ref:`411 <X(411)>`, 2975}, {:ref:`484 <X(484)>`, 1768}, {:ref:`595 <X(595)>`, 3073}, {:ref:`602 <X(602)>`, 1724}, {:ref:`603 <X(603)>`, 1771}, {:ref:`631 <X(631)>`, 1698}, {:ref:`910 <X(910)>`, 1146}, {:ref:`936 <X(936)>`, 2551}, {:ref:`938 <X(938)>`, 3333}, {:ref:`956 <X(956)>`, 3419}, {:ref:`997 <X(997)>`, 3452}, {:ref:`1000 <X(1000)>`, 3062}, {1006, 1746}, {1292, 2751}, {1293, 2757}, {1294, 2762}, {1295, 2765}, {1296, 2768}, {1317, 1537}, {1323, 1565}, {1350, 3416}, {1387, 1538}, {1420, 8086}, {1498, 3173}, {1766, 2321}, {1829, 3575}, {1836, 2099}, {1839, 1963}, {1885, 1902}, {2093, 2096}, {2183, 2250}, {3241, 3543}
-
-Relations
----------
-
-* :ref:`X(515) <X(515)>` = isogonal conjugate of :ref:`X(102) <X(102)>`
-* :ref:`X(515) <X(515)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(34393)
-* :ref:`X(515) <X(515)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X(151) <X(151)>`
-* :ref:`X(515) <X(515)>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X(117) <X(117)>`
-* :ref:`X(515) <X(515)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(23986)
-* :ref:`X(515) <X(515)>` = :ref:`X(4) <X(4)>`-Ceva conjugate of :ref:`X(117) <X(117)>`
-* :ref:`X(515) <X(515)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(6) <X(6)>`\ \ :ref:`X(652) <X(652)>`
-* :ref:`X(515) <X(515)>` = :term:`orthopoint <orthopoint>` of :ref:`X(522) <X(522)>`
-* :ref:`X(515) <X(515)>` = intersection of :term:`trilinear polars <trilinear-polar>` of :ref:`X(2) <X(2)>` and :ref:`X(8) <X(8)>`
-* :ref:`X(515) <X(515)>` = Thomson-isogonal conjugate of :ref:`X(109) <X(109)>`
-* :ref:`X(515) <X(515)>` = Lucas-isogonal conjugate of :ref:`X(109) <X(109)>`
-* :ref:`X(515) <X(515)>` = Cundy-Parry Phi transform of X(10570)
-* :ref:`X(515) <X(515)>` = Cundy-Parry Psi transform of X(10571)
-* :ref:`X(515) <X(515)>` = :ref:`X(2) <X(2)>`-:term:`isoconjugate <isoconjugate>` of X(32677)
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

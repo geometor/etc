@@ -8,37 +8,42 @@
 X(939) = ISOGONAL CONJUGATE OF X(938)
 =====================================
 
+.. enunciation::
+
+   :ref:`X(939) <X(939)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(938) <X(938)>`
+
 .. figure:: x-00939.svg
    :alt: X(939) = ISOGONAL CONJUGATE OF X(938)
    :align: center
 
    **X(939) = ISOGONAL CONJUGATE OF X(938)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = a/[a\ :sup:`4` - 2a\ :sup:`3`\ (b + c) - 4a\ :sup:`2`\ bc + (b - c)(b\ :sup:`2` - c\ :sup:`2`)(2a - b - c)]
+   | **Search Value (6, 9, 13):** :math:`1.872877162585`
 
-* :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = a/[a\ :sup:`4` - 2a\ :sup:`3`\ (b + c) - 4a\ :sup:`2`\ bc + (b - c)(b\ :sup:`2` - c\ :sup:`2`)(2a - b - c)]
-* :math:`\sec A' : :`, where A' is the angle formed by the tangents from the A-excenter to the incircle
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`1.872877162585`
+   * **Trilinears:** :math:`\sec A' : :`, where A' is the angle formed by the tangents from the A-excenter to the incircle
 
-Incidence
----------
+.. container:: note-item
 
-:ref:`X(939) <X(939)>` lies and on these lines:
+   :ref:`X(939) <X(939)>` lies.
 
-{:ref:`3 <X(3)>`, :ref:`269 <X(269)>`}, {:ref:`34 <X(34)>`, :ref:`55 <X(55)>`}, {:ref:`56 <X(56)>`, :ref:`212 <X(212)>`}
+.. collapse:: Incident Central Lines
+   :badge: 3 lines
+   :class: line-catalog
 
-Relations
----------
+   {:ref:`3 <X(3)>`, :ref:`269 <X(269)>`}, {:ref:`34 <X(34)>`, :ref:`55 <X(55)>`}, {:ref:`56 <X(56)>`, :ref:`212 <X(212)>`}
 
-* :ref:`X(939) <X(939)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(938) <X(938)>`
+.. collapse:: Functional Relations
+   :badge: 1 relation
 
-Construction
-------------
+   * :ref:`X(939) <X(939)>` = isogonal conjugate of :ref:`X(938) <X(938)>`
 
-.. literalinclude:: model.py
-   :language: python
+.. toctree::
+   :hidden:
+
+   code

@@ -8,34 +8,36 @@
 X(544) = DIRECTION OF VECTOR AX + BX + CX, where X = X(101)
 ===========================================================
 
+.. enunciation::
+
+   :ref:`X(544) <X(544)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(38884)
+
 .. figure:: x-00544.svg
    :alt: X(544) = DIRECTION OF VECTOR AX + BX + CX, where X = X(101)
    :align: center
 
    **X(544) = DIRECTION OF VECTOR AX + BX + CX, where X = X(101)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where, f(a,b,c) = (2ax - by - cz)/a, x = x(a,b,c) = a/(b - c), y = x(b,c,a), z = x(c,a,b)
 
-* :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where, f(a,b,c) = (2ax - by - cz)/a, x = x(a,b,c) = a/(b - c), y = x(b,c,a), z = x(c,a,b)
+.. container:: note-item
 
-Incidence
----------
+   :ref:`X(544) <X(544)>` lies.
 
-:ref:`X(544) <X(544)>` lies and on these lines:
+.. collapse:: Incident Central Lines
+   :badge: 7 lines
+   :class: line-catalog
 
-{:ref:`2 <X(2)>`, :ref:`101 <X(101)>`}, {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}, {:ref:`63 <X(63)>`, 1018}, {:ref:`103 <X(103)>`, :ref:`376 <X(376)>`}, {:ref:`118 <X(118)>`, :ref:`381 <X(381)>`}, {:ref:`152 <X(152)>`, 3543}, {3022, 3058}
+   {:ref:`2 <X(2)>`, :ref:`101 <X(101)>`}, {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}, {:ref:`63 <X(63)>`, 1018}, {:ref:`103 <X(103)>`, :ref:`376 <X(376)>`}, {:ref:`118 <X(118)>`, :ref:`381 <X(381)>`}, {:ref:`152 <X(152)>`, 3543}, {3022, 3058}
 
-Relations
----------
+.. collapse:: Functional Relations
+   :badge: 1 relation
 
-* :ref:`X(544) <X(544)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(38884)
+   * :ref:`X(544) <X(544)>` = isogonal conjugate of X(38884)
 
-Construction
-------------
+.. toctree::
+   :hidden:
 
-.. literalinclude:: model.py
-   :language: python
+   code

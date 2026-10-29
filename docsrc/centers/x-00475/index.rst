@@ -8,49 +8,39 @@
 X(475) = EULER LINE INTERCEPT OF LINE X(10)X(34)
 ================================================
 
+.. enunciation::
+
+   As a point on the Euler line, :ref:`X(475) <X(475)>` has Shinagawa coefficients ($a$F,-abc).
+
 .. figure:: x-00475.svg
    :alt: X(475) = EULER LINE INTERCEPT OF LINE X(10)X(34)
    :align: center
 
    **X(475) = EULER LINE INTERCEPT OF LINE X(10)X(34)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
-
-* :math:`\sec A - (a + b + c)/a : \sec B - (a + b + c)/b : \sec C - (a + b + c)/c`
-
-Barycentrics
-~~~~~~~~~~~~
-
-* :math:`a \sec A - (a + b + c) : b \sec B - (a + b + c) : c \sec C - (a + b + c)`
-
-* **Kimberling (6, 9, 13) Search Value:** :math:`1.816163529168`
-
-Notes
------
+   | **Trilinears:** :math:`\sec A - (a + b + c)/a : \sec B - (a + b + c)/b : \sec C - (a + b + c)/c`
+   | **Barycentrics:** :math:`a \sec A - (a + b + c) : b \sec B - (a + b + c) : c \sec C - (a + b + c)`
+   | **Search Value (6, 9, 13):** :math:`1.816163529168`
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(475) <X(475)>` has Shinagawa coefficients ($a$F,-abc).
+   :ref:`X(475) <X(475)>` lies.
 
-Incidence
----------
+.. collapse:: Incident Central Lines
+   :badge: 5 lines
+   :class: line-catalog
 
-:ref:`X(475) <X(475)>` lies and on these lines:
+   {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`8 <X(8)>`, 1063}, {:ref:`10 <X(10)>`, :ref:`34 <X(34)>`}, {:ref:`264 <X(264)>`, :ref:`274 <X(274)>`}, {:ref:`318 <X(318)>`, 1068}
 
-{:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`8 <X(8)>`, 1063}, {:ref:`10 <X(10)>`, :ref:`34 <X(34)>`}, {:ref:`264 <X(264)>`, :ref:`274 <X(274)>`}, {:ref:`318 <X(318)>`, 1068}
+.. collapse:: Functional Relations
+   :badge: 2 relations
 
-Relations
----------
+   * :ref:`X(475) <X(475)>` = inverse-in-orthocentroidal-circle of :ref:`X(406) <X(406)>`
+   * :ref:`X(475) <X(475)>` = polar conjugate of :term:`isogonal conjugate <isogonal-conjugate>` of X(36743)
 
-* :ref:`X(475) <X(475)>` = inverse-in-orthocentroidal-circle of :ref:`X(406) <X(406)>`
-* :ref:`X(475) <X(475)>` = polar conjugate of :term:`isogonal conjugate <isogonal-conjugate>` of X(36743)
+.. toctree::
+   :hidden:
 
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

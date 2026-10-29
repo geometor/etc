@@ -8,42 +8,39 @@
 X(980) = INTERSECTION OF LINES X(1)X(3) AND X(2)X(39)
 =====================================================
 
+.. enunciation::
+
+   :ref:`X(980) <X(980)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(981) <X(981)>`
+
 .. figure:: x-00980.svg
    :alt: X(980) = INTERSECTION OF LINES X(1)X(3) AND X(2)X(39)
    :align: center
 
    **X(980) = INTERSECTION OF LINES X(1)X(3) AND X(2)X(39)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = a\ :sup:`2`\ (b\ :sup:`2` + bc + c\ :sup:`2`) + (b\ :sup:`2` + c\ :sup:`2`)(bc + ca + ab)
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Search Value (6, 9, 13):** :math:`1.906943083314`
 
-* :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = a\ :sup:`2`\ (b\ :sup:`2` + bc + c\ :sup:`2`) + (b\ :sup:`2` + c\ :sup:`2`)(bc + ca + ab)
+.. container:: note-item
 
-Barycentrics
-~~~~~~~~~~~~
+   :ref:`X(980) <X(980)>` lies.
 
-* :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+.. collapse:: Incident Central Lines
+   :badge: 5 lines
+   :class: line-catalog
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`1.906943083314`
+   {:ref:`1 <X(1)>`, :ref:`3 <X(3)>`}, {:ref:`2 <X(2)>`, :ref:`39 <X(39)>`}, {:ref:`32 <X(32)>`, :ref:`81 <X(81)>`}, {:ref:`38 <X(38)>`, :ref:`869 <X(869)>`}, {:ref:`63 <X(63)>`, :ref:`213 <X(213)>`}
 
-Incidence
----------
+.. collapse:: Functional Relations
+   :badge: 2 relations
 
-:ref:`X(980) <X(980)>` lies and on these lines:
+   * :ref:`X(980) <X(980)>` = isogonal conjugate of :ref:`X(981) <X(981)>`
+   * :ref:`X(980) <X(980)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(650) <X(650)>`\ \ :ref:`X(669) <X(669)>`
 
-{:ref:`1 <X(1)>`, :ref:`3 <X(3)>`}, {:ref:`2 <X(2)>`, :ref:`39 <X(39)>`}, {:ref:`32 <X(32)>`, :ref:`81 <X(81)>`}, {:ref:`38 <X(38)>`, :ref:`869 <X(869)>`}, {:ref:`63 <X(63)>`, :ref:`213 <X(213)>`}
+.. toctree::
+   :hidden:
 
-Relations
----------
-
-* :ref:`X(980) <X(980)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(981) <X(981)>`
-* :ref:`X(980) <X(980)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(650) <X(650)>`\ \ :ref:`X(669) <X(669)>`
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

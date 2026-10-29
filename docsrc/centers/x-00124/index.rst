@@ -8,21 +8,54 @@
 X(124) = X(109)-OF-MEDIAL-TRIANGLE
 ==================================
 
+.. enunciation::
+
+   :ref:`X(124) <X(124)>` = :ref:`X(109) <X(109)>`-of-:term:`medial triangle <medial-triangle>`
+
 .. figure:: x-00124.svg
    :alt: X(124) = X(109)-OF-MEDIAL-TRIANGLE
    :align: center
 
    **X(124) = X(109)-OF-MEDIAL-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where, f(a,b,c) = bc(b + c - a)(b - c)\ :sup:`2`\ [(b + c)(b\ :sup:`2` + c\ :sup:`2` - a\ :sup:`2` - bc) + abc]
+   | **Search Value (6, 9, 13):** :math:`3.863590110143`
 
-* :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where, f(a,b,c) = bc(b + c - a)(b - c)\ :sup:`2`\ [(b + c)(b\ :sup:`2` + c\ :sup:`2` - a\ :sup:`2` - bc) + abc]
+.. container:: note-item
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`3.863590110143`
+   :ref:`X(124) <X(124)>` lies on the nine-point circle
+
+.. container:: note-item
+
+   :ref:`X(124) <X(124)>` lies.
+
+.. collapse:: Incident Central Lines
+   :badge: 5 lines
+   :class: line-catalog
+
+   {:ref:`2 <X(2)>`, :ref:`109 <X(109)>`}, {:ref:`4 <X(4)>`, :ref:`102 <X(102)>`}, {:ref:`5 <X(5)>`, :ref:`117 <X(117)>`}, {:ref:`10 <X(10)>`, :ref:`119 <X(119)>`}, {:ref:`116 <X(116)>`, :ref:`928 <X(928)>`}
+
+.. collapse:: Functional Relations
+   :badge: 16 relations
+
+   * :ref:`X(124) <X(124)>` = :ref:`X(109) <X(109)>`-of-medial triangle
+   * :ref:`X(124) <X(124)>` = center of the rectangular hyperbola that passes through A, B, C, and :ref:`X(58) <X(58)>`
+   * :ref:`X(124) <X(124)>` = midpoint of :ref:`X(4) <X(4)>` and :ref:`X(102) <X(102)>`
+   * :ref:`X(124) <X(124)>` = reflection of :ref:`X(117) <X(117)>` in :ref:`X(5) <X(5)>`
+   * :ref:`X(124) <X(124)>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X(522) <X(522)>`
+   * :ref:`X(124) <X(124)>` = :ref:`X(4) <X(4)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(522) <X(522)>`
+   * :ref:`X(124) <X(124)>` = :term:`complement <complement>` of :ref:`X(109) <X(109)>`
+   * :ref:`X(124) <X(124)>` = :term:`crosssum <crosssum>` of circumcircle intercepts of line :ref:`X(3) <X(3)>`\ \ :ref:`X(10) <X(10)>`
+   * :ref:`X(124) <X(124)>` = orthopole of line :ref:`X(3) <X(3)>`\ \ :ref:`X(10) <X(10)>`
+   * :ref:`X(124) <X(124)>` = focus of Mandart parabola
+   * :ref:`X(124) <X(124)>` = anticenter of cyclic quadrilateral ABC\ :ref:`X(102) <X(102)>`
+   * :ref:`X(124) <X(124)>` = inverse-in-orthoptic-circle-of-Steiner-inellipse of X(1311)
+   * :ref:`X(124) <X(124)>` = Spieker-radical-circle-inverse of X(34458)
+   * :ref:`X(124) <X(124)>` = :ref:`X(2) <X(2)>`-Ceva conjugate of X(6589)
+   * :ref:`X(124) <X(124)>` = Kirikami-six-circles image of :ref:`X(58) <X(58)>`
+   * :ref:`X(124) <X(124)>` = center of rectangular circumhyperbola that is :term:`isogonal conjugate <isogonal-conjugate>` of line :ref:`X(3) <X(3)>`\ \ :ref:`X(10) <X(10)>`
 
 Notes
 -----
@@ -33,37 +66,7 @@ Notes
 
       * g(a,b,c) = (b + c - a)(b - c)\ :sup:`2` [(b + c)(b\ :sup:`2` + c\ :sup:`2` - a\ :sup:`2` - bc) + abc]
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(124) <X(124)>` lies on the nine-point circle
-
-:ref:`X(124) <X(124)>` lies and on these lines:
-
-{:ref:`2 <X(2)>`, :ref:`109 <X(109)>`}, {:ref:`4 <X(4)>`, :ref:`102 <X(102)>`}, {:ref:`5 <X(5)>`, :ref:`117 <X(117)>`}, {:ref:`10 <X(10)>`, :ref:`119 <X(119)>`}, {:ref:`116 <X(116)>`, :ref:`928 <X(928)>`}
-
-Relations
----------
-
-* :ref:`X(124) <X(124)>` = :ref:`X(109) <X(109)>`-of-:term:`medial triangle <medial-triangle>`
-* :ref:`X(124) <X(124)>` = center of the rectangular hyperbola that passes through A, B, C, and :ref:`X(58) <X(58)>`
-* :ref:`X(124) <X(124)>` = midpoint of :ref:`X(4) <X(4)>` and :ref:`X(102) <X(102)>`
-* :ref:`X(124) <X(124)>` = reflection of :ref:`X(117) <X(117)>` in :ref:`X(5) <X(5)>`
-* :ref:`X(124) <X(124)>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X(522) <X(522)>`
-* :ref:`X(124) <X(124)>` = :ref:`X(4) <X(4)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(522) <X(522)>`
-* :ref:`X(124) <X(124)>` = :term:`complement <complement>` of :ref:`X(109) <X(109)>`
-* :ref:`X(124) <X(124)>` = :term:`crosssum <crosssum>` of circumcircle intercepts of line :ref:`X(3) <X(3)>`\ \ :ref:`X(10) <X(10)>`
-* :ref:`X(124) <X(124)>` = orthopole of line :ref:`X(3) <X(3)>`\ \ :ref:`X(10) <X(10)>`
-* :ref:`X(124) <X(124)>` = focus of Mandart parabola
-* :ref:`X(124) <X(124)>` = anticenter of cyclic quadrilateral ABC\ :ref:`X(102) <X(102)>`
-* :ref:`X(124) <X(124)>` = inverse-in-orthoptic-circle-of-Steiner-inellipse of X(1311)
-* :ref:`X(124) <X(124)>` = Spieker-radical-circle-inverse of X(34458)
-* :ref:`X(124) <X(124)>` = :ref:`X(2) <X(2)>`-Ceva conjugate of X(6589)
-* :ref:`X(124) <X(124)>` = Kirikami-six-circles image of :ref:`X(58) <X(58)>`
-* :ref:`X(124) <X(124)>` = center of rectangular circumhyperbola that is :term:`isogonal conjugate <isogonal-conjugate>` of line :ref:`X(3) <X(3)>`\ \ :ref:`X(10) <X(10)>`
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

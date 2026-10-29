@@ -8,52 +8,46 @@
 X(458) = EULER LINE INTERCEPT OF LINE X(76)X(275)
 =================================================
 
+.. enunciation::
+
+   As a point on the Euler line, :ref:`X(458) <X(458)>` has Shinagawa coefficients ((E + F)F, S\ :sup:`2`).
+
 .. figure:: x-00458.svg
    :alt: X(458) = EULER LINE INTERCEPT OF LINE X(76)X(275)
    :align: center
 
    **X(458) = EULER LINE INTERCEPT OF LINE X(76)X(275)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`u \csc 2A : v \csc 2B : w \csc 2C`, where, u : v : w = :ref:`X(182) <X(182)>`; e.g.; u(A,B,C) = cos(A - ω)
+   | **Barycentrics:** :math:`u \sec A : v \sec B : w \sec C`
+   | **Search Value (6, 9, 13):** :math:`3.233562950894`
 
-* :math:`u \csc 2A : v \csc 2B : w \csc 2C`, where, u : v : w = :ref:`X(182) <X(182)>`; e.g.; u(A,B,C) = cos(A - ω)
+.. collapse:: Alternate Coordinates
+   :badge: 2 forms
 
-Barycentrics
-~~~~~~~~~~~~
-
-* :math:`u \sec A : v \sec B : w \sec C`
-* :math:`\tan A + \cot \omega : :`
-* :math:`\sec A \cos(A - \omega ) : :`
-
-* **Kimberling (6, 9, 13) Search Value:** :math:`3.233562950894`
-
-Notes
------
+   * **Barycentrics:** :math:`\tan A + \cot \omega : :`
+   * **Barycentrics:** :math:`\sec A \cos(A - \omega ) : :`
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(458) <X(458)>` has Shinagawa coefficients ((E + F)F, S\ :sup:`2`).
+   :ref:`X(458) <X(458)>` lies.
 
-Incidence
----------
+.. collapse:: Incident Central Lines
+   :badge: 8 lines
+   :class: line-catalog
 
-:ref:`X(458) <X(458)>` lies and on these lines:
+   {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`6 <X(6)>`, :ref:`264 <X(264)>`}, {:ref:`76 <X(76)>`, :ref:`275 <X(275)>`}, {:ref:`141 <X(141)>`, :ref:`317 <X(317)>`}, {:ref:`239 <X(239)>`, :ref:`318 <X(318)>`}, {:ref:`273 <X(273)>`, :ref:`894 <X(894)>`}, {:ref:`315 <X(315)>`, :ref:`343 <X(343)>`}, {:ref:`340 <X(340)>`, :ref:`599 <X(599)>`}
 
-{:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`6 <X(6)>`, :ref:`264 <X(264)>`}, {:ref:`76 <X(76)>`, :ref:`275 <X(275)>`}, {:ref:`141 <X(141)>`, :ref:`317 <X(317)>`}, {:ref:`239 <X(239)>`, :ref:`318 <X(318)>`}, {:ref:`273 <X(273)>`, :ref:`894 <X(894)>`}, {:ref:`315 <X(315)>`, :ref:`343 <X(343)>`}, {:ref:`340 <X(340)>`, :ref:`599 <X(599)>`}
+.. collapse:: Functional Relations
+   :badge: 3 relations
 
-Relations
----------
+   * :ref:`X(458) <X(458)>` = inverse-in-orthocentroidal-circle of :ref:`X(297) <X(297)>`
+   * :ref:`X(458) <X(458)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(262) <X(262)>` (line :ref:`X(523) <X(523)>`\ X(3569))
+   * :ref:`X(458) <X(458)>` = polar conjugate of :ref:`X(262) <X(262)>`
 
-* :ref:`X(458) <X(458)>` = inverse-in-orthocentroidal-circle of :ref:`X(297) <X(297)>`
-* :ref:`X(458) <X(458)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(262) <X(262)>` (line :ref:`X(523) <X(523)>`\ X(3569))
-* :ref:`X(458) <X(458)>` = polar conjugate of :ref:`X(262) <X(262)>`
+.. toctree::
+   :hidden:
 
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

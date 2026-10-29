@@ -8,44 +8,41 @@
 X(889) = INTERSECTION OF LINES X(99)X(898) AND X(190)X(649)
 ===========================================================
 
+.. enunciation::
+
+   :ref:`X(889) <X(889)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(890) <X(890)>`
+
 .. figure:: x-00889.svg
    :alt: X(889) = INTERSECTION OF LINES X(99)X(898) AND X(190)X(649)
    :align: center
 
    **X(889) = INTERSECTION OF LINES X(99)X(898) AND X(190)X(649)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`(a^{2}u^{2} - bcvw)/[a^{2}u(bv - cw)] : :`, where u : v : w = :ref:`X(513) <X(513)>`
+   | **Barycentrics:** :math:`b c/((b - c) (a b + a c - 2 b c)) : :`
+   | **Search Value (6, 9, 13):** :math:`2.749435946006`
 
-* :math:`(a^{2}u^{2} - bcvw)/[a^{2}u(bv - cw)] : :`, where u : v : w = :ref:`X(513) <X(513)>`
+.. container:: note-item
 
-Barycentrics
-~~~~~~~~~~~~
+   :ref:`X(889) <X(889)>` lies on the Steiner circumellipse, the hyperbola {A,B,C,PU(41)}}j.
 
-* :math:`b c/((b - c) (a b + a c - 2 b c)) : :`
+.. collapse:: Incident Central Lines
+   :badge: 4 lines
+   :class: line-catalog
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`2.749435946006`
+   {:ref:`99 <X(99)>`, :ref:`898 <X(898)>`}, {:ref:`190 <X(190)>`, :ref:`649 <X(649)>`}, {:ref:`350 <X(350)>`, :ref:`903 <X(903)>`}, {:ref:`513 <X(513)>`, :ref:`668 <X(668)>`}
 
-Incidence
----------
+.. collapse:: Functional Relations
+   :badge: 4 relations
 
-:ref:`X(889) <X(889)>` lies on the Steiner circumellipse, the hyperbola {A,B,C,PU(41)}}j and on these lines:
+   * :ref:`X(889) <X(889)>` = isogonal conjugate of :ref:`X(890) <X(890)>`
+   * :ref:`X(889) <X(889)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(891) <X(891)>`
+   * :ref:`X(889) <X(889)>` = :term:`anticomplement <anticomplement>` of X(39011)
+   * :ref:`X(889) <X(889)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(2) <X(2)>`\ \ :ref:`X(668) <X(668)>`
 
-{:ref:`99 <X(99)>`, :ref:`898 <X(898)>`}, {:ref:`190 <X(190)>`, :ref:`649 <X(649)>`}, {:ref:`350 <X(350)>`, :ref:`903 <X(903)>`}, {:ref:`513 <X(513)>`, :ref:`668 <X(668)>`}
+.. toctree::
+   :hidden:
 
-Relations
----------
-
-* :ref:`X(889) <X(889)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(890) <X(890)>`
-* :ref:`X(889) <X(889)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(891) <X(891)>`
-* :ref:`X(889) <X(889)>` = :term:`anticomplement <anticomplement>` of X(39011)
-* :ref:`X(889) <X(889)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(2) <X(2)>`\ \ :ref:`X(668) <X(668)>`
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

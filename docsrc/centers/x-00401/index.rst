@@ -9,6 +9,10 @@
 X(401) = BAILEY POINT
 =====================
 
+.. enunciation::
+
+   As a point on the Euler line, :ref:`X(401) <X(401)>` has Shinagawa coefficients (EF + F\ :sup:`2` - S\ :sup:`2`, 2S\ :sup:`2`).
+
 .. _preamble-0009:
 
 .. admonition:: Group Preamble
@@ -22,63 +26,53 @@ X(401) = BAILEY POINT
 
    **X(401) = BAILEY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`[\sin 2B \sin 2C - \sin^{2}(2A)](\csc A) : :`
+   | **Barycentrics:** :math:`\sin 2B \sin 2C - \sin^{2}(2A) : :`
+   | **Search Value (6, 9, 13):** :math:`3.684283855313`
 
-* :math:`[\sin 2B \sin 2C - \sin^{2}(2A)](\csc A) : :`
+.. collapse:: Alternate Coordinates
+   :badge: 3 forms
 
-Barycentrics
-~~~~~~~~~~~~
+   * **Barycentrics:** :math:`\tan B + \tan C - \tan A - \cot \omega : :`
+   * **Barycentrics:** :math:`a^8 - 2 a^6 (b^2 + c^2) + a^4 (b^4 + b^2 c^2 + c^4) + b^2 c^2 (b^2 - c^2)^2 : :`
+   * **Barycentrics:** :math:`\tan A - \cot \omega ' : :`, where ω' is the Brocard angle of the :term:`orthic triangle <orthic-triangle>`
 
-* :math:`\sin 2B \sin 2C - \sin^{2}(2A) : :`
-* :math:`\tan B + \tan C - \tan A - \cot \omega : :`
-* :math:`a^8 - 2 a^6 (b^2 + c^2) + a^4 (b^4 + b^2 c^2 + c^4) + b^2 c^2 (b^2 - c^2)^2 : :`
-* :math:`\tan A - \cot \omega ' : :`, where ω' is the Brocard angle of the :term:`orthic triangle <orthic-triangle>`
+.. collapse:: Linear Combinations
+   :badge: 1 combination
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`3.684283855313`
-
-Linear Combinations
--------------------
-
-* :ref:`X(401) <X(401)>` = 3 SA SB SC SW :ref:`X(2) <X(2)>` - S^4 :ref:`X(20) <X(20)>`
-
-Notes
------
+   * :ref:`X(401) <X(401)>` = 3 SA SB SC SW :ref:`X(2) <X(2)>` - S^4 :ref:`X(20) <X(20)>`
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(401) <X(401)>` has Shinagawa coefficients (EF + F\ :sup:`2` - S\ :sup:`2`, 2S\ :sup:`2`).
+   :ref:`X(401) <X(401)>` lies.
 
-Incidence
----------
+.. collapse:: Incident Central Lines
+   :badge: 101 lines
+   :class: line-catalog
 
-:ref:`X(401) <X(401)>` lies and on these lines:
+   {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`6 <X(6)>`, 3164}, {:ref:`32 <X(32)>`, 40814}, {:ref:`50 <X(50)>`, :ref:`338 <X(338)>`}, {:ref:`51 <X(51)>`, 12110}, {:ref:`81 <X(81)>`, 18667}, {:ref:`94 <X(94)>`, 32662}, {:ref:`95 <X(95)>`, 14767}, {:ref:`97 <X(97)>`, :ref:`276 <X(276)>`}, {:ref:`99 <X(99)>`, 36212}, {:ref:`182 <X(182)>`, 42329}, {:ref:`184 <X(184)>`, 11257}, {:ref:`187 <X(187)>`, 41254}, {:ref:`193 <X(193)>`, 6527}, {:ref:`194 <X(194)>`, 1993}, {:ref:`216 <X(216)>`, 36794}, {:ref:`239 <X(239)>`, 10538}, {:ref:`248 <X(248)>`, :ref:`290 <X(290)>`}, {:ref:`253 <X(253)>`, 20080}, {:ref:`264 <X(264)>`, :ref:`577 <X(577)>`}, {:ref:`275 <X(275)>`, 9290}, {:ref:`287 <X(287)>`, :ref:`511 <X(511)>`}, {:ref:`317 <X(317)>`, 6389}, {:ref:`323 <X(323)>`, :ref:`525 <X(525)>`}, {:ref:`325 <X(325)>`, 39359}, {:ref:`340 <X(340)>`, 15526}, {:ref:`343 <X(343)>`, 7750}, {:ref:`394 <X(394)>`, 1975}, {:ref:`524 <X(524)>`, 39352}, {:ref:`571 <X(571)>`, 41760}, {:ref:`648 <X(648)>`, 3284}, {:ref:`925 <X(925)>`, 2698}, {1073, 38256}, {1297, 6037}, {1503, 14721}, {1632, 2393}, {1899, 36998}, {1916, 15391}, {1968, 2052}, {1994, 7839}, {2782, 40870}, {2896, 34850}, {3087, 40680}, {3098, 42313}, {3100, 4366}, {3260, 4558}, {3289, 39355}, {3292, 23235}, {3329, 22240}, {3580, 14712}, {4296, 6645}, {5422, 7787}, {5480, 36988}, {5641, 35178}, {6515, 20065}, {6709, 36422}, {6748, 17035}, {7738, 11427}, {7925, 35088}, {8591, 40112}, {8859, 23967}, {9308, 15905}, {9512, 23200}, {9863, 11442}, {9873, 11550}, {9983, 18018}, {10329, 23292}, {10341, 10350}, {10420, 43654}, {11064, 15351}, {11078, 41997}, {11092, 41998}, {11596, 21639}, {12117, 13857}, {12215, 25332}, {13366, 32467}, {14570, 22151}, {14919, 16077}, {14920, 39008}, {14961, 41253}, {15066, 34360}, {15262, 41678}, {15595, 29012}, {15988, 18666}, {19571, 36790}, {19585, 32529}, {19924, 41145}, {21243, 32152}, {23582, 23590}, {23583, 37765}, {27377, 41005}, {30227, 37645}, {32428, 39081}, {34396, 39906}, {34545, 41334}, {35278, 42671}, {36748, 43980}, {38382, 39101}, {40897, 41008}, {41194, 41196}, {41195, 41197}
 
-{:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`6 <X(6)>`, 3164}, {:ref:`32 <X(32)>`, 40814}, {:ref:`50 <X(50)>`, :ref:`338 <X(338)>`}, {:ref:`51 <X(51)>`, 12110}, {:ref:`81 <X(81)>`, 18667}, {:ref:`94 <X(94)>`, 32662}, {:ref:`95 <X(95)>`, 14767}, {:ref:`97 <X(97)>`, :ref:`276 <X(276)>`}, {:ref:`99 <X(99)>`, 36212}, {:ref:`182 <X(182)>`, 42329}, {:ref:`184 <X(184)>`, 11257}, {:ref:`187 <X(187)>`, 41254}, {:ref:`193 <X(193)>`, 6527}, {:ref:`194 <X(194)>`, 1993}, {:ref:`216 <X(216)>`, 36794}, {:ref:`239 <X(239)>`, 10538}, {:ref:`248 <X(248)>`, :ref:`290 <X(290)>`}, {:ref:`253 <X(253)>`, 20080}, {:ref:`264 <X(264)>`, :ref:`577 <X(577)>`}, {:ref:`275 <X(275)>`, 9290}, {:ref:`287 <X(287)>`, :ref:`511 <X(511)>`}, {:ref:`317 <X(317)>`, 6389}, {:ref:`323 <X(323)>`, :ref:`525 <X(525)>`}, {:ref:`325 <X(325)>`, 39359}, {:ref:`340 <X(340)>`, 15526}, {:ref:`343 <X(343)>`, 7750}, {:ref:`394 <X(394)>`, 1975}, {:ref:`524 <X(524)>`, 39352}, {:ref:`571 <X(571)>`, 41760}, {:ref:`648 <X(648)>`, 3284}, {:ref:`925 <X(925)>`, 2698}, {1073, 38256}, {1297, 6037}, {1503, 14721}, {1632, 2393}, {1899, 36998}, {1916, 15391}, {1968, 2052}, {1994, 7839}, {2782, 40870}, {2896, 34850}, {3087, 40680}, {3098, 42313}, {3100, 4366}, {3260, 4558}, {3289, 39355}, {3292, 23235}, {3329, 22240}, {3580, 14712}, {4296, 6645}, {5422, 7787}, {5480, 36988}, {5641, 35178}, {6515, 20065}, {6709, 36422}, {6748, 17035}, {7738, 11427}, {7925, 35088}, {8591, 40112}, {8859, 23967}, {9308, 15905}, {9512, 23200}, {9863, 11442}, {9873, 11550}, {9983, 18018}, {10329, 23292}, {10341, 10350}, {10420, 43654}, {11064, 15351}, {11078, 41997}, {11092, 41998}, {11596, 21639}, {12117, 13857}, {12215, 25332}, {13366, 32467}, {14570, 22151}, {14919, 16077}, {14920, 39008}, {14961, 41253}, {15066, 34360}, {15262, 41678}, {15595, 29012}, {15988, 18666}, {19571, 36790}, {19585, 32529}, {19924, 41145}, {21243, 32152}, {23582, 23590}, {23583, 37765}, {27377, 41005}, {30227, 37645}, {32428, 39081}, {34396, 39906}, {34545, 41334}, {35278, 42671}, {36748, 43980}, {38382, 39101}, {40897, 41008}, {41194, 41196}, {41195, 41197}
+.. collapse:: Functional Relations
+   :badge: 14 relations
 
-Relations
----------
+   * :ref:`X(401) <X(401)>` = reflection of :ref:`X(297) <X(297)>` in :ref:`X(441) <X(441)>`
+   * :ref:`X(401) <X(401)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(1987)
+   * :ref:`X(401) <X(401)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(1972)
+   * :ref:`X(401) <X(401)>` = :term:`anticomplement <anticomplement>` of :ref:`X(297) <X(297)>`
+   * :ref:`X(401) <X(401)>` = circumcircle-inverse of X(37918)
+   * :ref:`X(401) <X(401)>` = perspector of conic {A,B,C,\ :ref:`X(95) <X(95)>`,\ :ref:`X(648) <X(648)>`}}
+   * :ref:`X(401) <X(401)>` = :ref:`X(2) <X(2)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(3) <X(3)>`
+   * :ref:`X(401) <X(401)>` = inverse-in-Steiner-circumellipse of :ref:`X(3) <X(3)>`
+   * :ref:`X(401) <X(401)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`2 <X(2)>`, 39081), (:ref:`287 <X(287)>`, :ref:`2 <X(2)>`), (:ref:`511 <X(511)>`, :ref:`385 <X(385)>`)
+   * :ref:`X(401) <X(401)>` = :term:`crosspoint <crosspoint>` of :ref:`X(276) <X(276)>` and :ref:`X(290) <X(290)>`
+   * :ref:`X(401) <X(401)>` = :term:`crosssum <crosssum>` of :ref:`X(217) <X(217)>` and :ref:`X(237) <X(237)>`
+   * :ref:`X(401) <X(401)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(51) <X(51)>`\ \ :ref:`X(647) <X(647)>`
+   * :ref:`X(401) <X(401)>` = {X(2479),X(2480)}-harmonic conjugate of :ref:`X(3) <X(3)>`
+   * :ref:`X(401) <X(401)>` = crossdifference of PU(157)
 
-* :ref:`X(401) <X(401)>` = reflection of :ref:`X(297) <X(297)>` in :ref:`X(441) <X(441)>`
-* :ref:`X(401) <X(401)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(1987)
-* :ref:`X(401) <X(401)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(1972)
-* :ref:`X(401) <X(401)>` = :term:`anticomplement <anticomplement>` of :ref:`X(297) <X(297)>`
-* :ref:`X(401) <X(401)>` = circumcircle-inverse of X(37918)
-* :ref:`X(401) <X(401)>` = perspector of conic {A,B,C,\ :ref:`X(95) <X(95)>`,\ :ref:`X(648) <X(648)>`}}
-* :ref:`X(401) <X(401)>` = :ref:`X(2) <X(2)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(3) <X(3)>`
-* :ref:`X(401) <X(401)>` = inverse-in-Steiner-circumellipse of :ref:`X(3) <X(3)>`
-* :ref:`X(401) <X(401)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`2 <X(2)>`, 39081), (:ref:`287 <X(287)>`, :ref:`2 <X(2)>`), (:ref:`511 <X(511)>`, :ref:`385 <X(385)>`)
-* :ref:`X(401) <X(401)>` = :term:`crosspoint <crosspoint>` of :ref:`X(276) <X(276)>` and :ref:`X(290) <X(290)>`
-* :ref:`X(401) <X(401)>` = :term:`crosssum <crosssum>` of :ref:`X(217) <X(217)>` and :ref:`X(237) <X(237)>`
-* :ref:`X(401) <X(401)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(51) <X(51)>`\ \ :ref:`X(647) <X(647)>`
-* :ref:`X(401) <X(401)>` = {X(2479),X(2480)}-harmonic conjugate of :ref:`X(3) <X(3)>`
-* :ref:`X(401) <X(401)>` = crossdifference of PU(157)
+.. toctree::
+   :hidden:
 
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

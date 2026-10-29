@@ -14,30 +14,23 @@ X(601) = INTERSECTION OF LINES X(3)X(31) AND X(55)X(255)
 
    **X(601) = INTERSECTION OF LINES X(3)X(31) AND X(55)X(255)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`\sin^{2}A + \cos A : \sin^{2}B + \cos B : \sin^{2}C + \cos C`
+   | **Barycentrics:** :math:`(\sin A)(\sin^{2}A + \cos A) : (\sin B)(\sin^{2}B + \cos B) : (\sin C)(\sin^{2}C + \cos C)`
+   | **Search Value (6, 9, 13):** :math:`2.469482727889`
 
-* :math:`\sin^{2}A + \cos A : \sin^{2}B + \cos B : \sin^{2}C + \cos C`
+.. container:: note-item
 
-Barycentrics
-~~~~~~~~~~~~
+   :ref:`X(601) <X(601)>` lies.
 
-* :math:`(\sin A)(\sin^{2}A + \cos A) : (\sin B)(\sin^{2}B + \cos B) : (\sin C)(\sin^{2}C + \cos C)`
+.. collapse:: Incident Central Lines
+   :badge: 16 lines
+   :class: line-catalog
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`2.469482727889`
+   {:ref:`1 <X(1)>`, :ref:`104 <X(104)>`}, {:ref:`3 <X(3)>`, :ref:`31 <X(31)>`}, {:ref:`4 <X(4)>`, :ref:`171 <X(171)>`}, {:ref:`5 <X(5)>`, :ref:`750 <X(750)>`}, {:ref:`35 <X(35)>`, :ref:`47 <X(47)>`}, {:ref:`40 <X(40)>`, :ref:`58 <X(58)>`}, {:ref:`41 <X(41)>`, :ref:`906 <X(906)>`}, {:ref:`55 <X(55)>`, :ref:`255 <X(255)>`}, {:ref:`140 <X(140)>`, :ref:`748 <X(748)>`}, {:ref:`165 <X(165)>`, :ref:`580 <X(580)>`}, {:ref:`201 <X(201)>`, :ref:`920 <X(920)>`}, {:ref:`371 <X(371)>`, :ref:`606 <X(606)>`}, {:ref:`372 <X(372)>`, :ref:`605 <X(605)>`}, {:ref:`774 <X(774)>`, 1060}, {:ref:`912 <X(912)>`, :ref:`976 <X(976)>`}, {:ref:`999 <X(999)>`, 1106}
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(601) <X(601)>` lies and on these lines:
-
-{:ref:`1 <X(1)>`, :ref:`104 <X(104)>`}, {:ref:`3 <X(3)>`, :ref:`31 <X(31)>`}, {:ref:`4 <X(4)>`, :ref:`171 <X(171)>`}, {:ref:`5 <X(5)>`, :ref:`750 <X(750)>`}, {:ref:`35 <X(35)>`, :ref:`47 <X(47)>`}, {:ref:`40 <X(40)>`, :ref:`58 <X(58)>`}, {:ref:`41 <X(41)>`, :ref:`906 <X(906)>`}, {:ref:`55 <X(55)>`, :ref:`255 <X(255)>`}, {:ref:`140 <X(140)>`, :ref:`748 <X(748)>`}, {:ref:`165 <X(165)>`, :ref:`580 <X(580)>`}, {:ref:`201 <X(201)>`, :ref:`920 <X(920)>`}, {:ref:`371 <X(371)>`, :ref:`606 <X(606)>`}, {:ref:`372 <X(372)>`, :ref:`605 <X(605)>`}, {:ref:`774 <X(774)>`, 1060}, {:ref:`912 <X(912)>`, :ref:`976 <X(976)>`}, {:ref:`999 <X(999)>`, 1106}
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

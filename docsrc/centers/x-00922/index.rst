@@ -8,41 +8,42 @@
 X(922) = POINT ALBALI
 =====================
 
+.. enunciation::
+
+   :ref:`X(922) <X(922)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(896) <X(896)>`
+
 .. figure:: x-00922.svg
    :alt: X(922) = POINT ALBALI
    :align: center
 
    **X(922) = POINT ALBALI** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`a^{2}(b^{2} + c^{2} - 2a^{2}) (M. Iliev, 5/13/07)`
+   | **Search Value (6, 9, 13):** :math:`-0.729495489993`
 
-* :math:`a^{2}(b^{2} + c^{2} - 2a^{2}) (M. Iliev, 5/13/07)`
+.. container:: note-item
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`-0.729495489993`
+   :ref:`X(922) <X(922)>` lies.
 
-Incidence
----------
+.. collapse:: Incident Central Lines
+   :badge: 2 lines
+   :class: line-catalog
 
-:ref:`X(922) <X(922)>` lies and on these lines:
+   {:ref:`31 <X(31)>`, :ref:`48 <X(48)>`}, {:ref:`667 <X(667)>`, :ref:`788 <X(788)>`}
 
-{:ref:`31 <X(31)>`, :ref:`48 <X(48)>`}, {:ref:`667 <X(667)>`, :ref:`788 <X(788)>`}
+.. collapse:: Functional Relations
+   :badge: 6 relations
 
-Relations
----------
+   * :ref:`X(922) <X(922)>` = isogonal conjugate of isotomic conjugate of :ref:`X(896) <X(896)>`
+   * :ref:`X(922) <X(922)>` = isogonal conjugate of :term:`complement <complement>` of :term:`anticomplementary conjugate <anticomplementary-conjugate>` of X(21298)
+   * :ref:`X(922) <X(922)>` = isogonal conjugate of :term:`anticomplement <anticomplement>` of :term:`complementary conjugate <complementary-conjugate>` of X(21256)
+   * :ref:`X(922) <X(922)>` = complement of X(21298)
+   * :ref:`X(922) <X(922)>` = anticomplement of X(21256)
+   * :ref:`X(922) <X(922)>` = trilinear product of PU(107)
 
-* :ref:`X(922) <X(922)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(896) <X(896)>`
-* :ref:`X(922) <X(922)>` = isogonal conjugate of :term:`complement <complement>` of :term:`anticomplementary conjugate <anticomplementary-conjugate>` of X(21298)
-* :ref:`X(922) <X(922)>` = isogonal conjugate of :term:`anticomplement <anticomplement>` of :term:`complementary conjugate <complementary-conjugate>` of X(21256)
-* :ref:`X(922) <X(922)>` = complement of X(21298)
-* :ref:`X(922) <X(922)>` = anticomplement of X(21256)
-* :ref:`X(922) <X(922)>` = trilinear product of PU(107)
+.. toctree::
+   :hidden:
 
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

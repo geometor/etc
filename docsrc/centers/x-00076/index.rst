@@ -9,39 +9,96 @@
 X(76) = 3rd BROCARD POINT
 =========================
 
+.. enunciation::
+
+   Let A' be the perspector of the A-McCay circle, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(76) <X(76)>`. (:person:`Randy Hutson <randy-hutson>`, April 9, 2016)
+
 .. figure:: x-00076.svg
    :alt: X(76) = 3rd BROCARD POINT
    :align: center
 
    **X(76) = 3rd BROCARD POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`1/a^{3} : 1/b^{3} : 1/c^{3}`
+   | **Barycentrics:** :math:`1/a^{2} : 1/b^{2} : 1/c^{2}`
+   | **Search Value (6, 9, 13):** :math:`4.759147084540`
 
-* :math:`1/a^{3} : 1/b^{3} : 1/c^{3}`
-* :math:`\csc(A - \omega ) : \csc(B - \omega ) : \csc(C - \omega )`
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-Barycentrics
-~~~~~~~~~~~~
+   * **Trilinears:** :math:`\csc(A - \omega ) : \csc(B - \omega ) : \csc(C - \omega )`
 
-* :math:`1/a^{2} : 1/b^{2} : 1/c^{2}`
+.. collapse:: Linear Combinations
+   :badge: 1 combination
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`4.759147084540`
-
-Linear Combinations
--------------------
-
-* :ref:`X(76) <X(76)>` = 3\*\ :ref:`X(2) <X(2)>` - 2\*\ :ref:`X(39) <X(39)>` = 3\*\ :ref:`X(2) <X(2)>` - P(1) - U(1)
-
-Notes
------
+   * :ref:`X(76) <X(76)>` = 3\*\ :ref:`X(2) <X(2)>` - 2\*\ :ref:`X(39) <X(39)>` = 3\*\ :ref:`X(2) <X(2)>` - P(1) - U(1)
 
 .. container:: note-item
 
-   Let A' be the perspector of the A-McCay circle, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(76) <X(76)>`. (:person:`Randy Hutson <randy-hutson>`, April 9, 2016)
+   :ref:`X(76) <X(76)>` lies.
+
+.. collapse:: Incident Central Lines
+   :badge: 69 lines
+   :class: line-catalog
+
+   {:ref:`1 <X(1)>`, :ref:`350 <X(350)>`}, {:ref:`2 <X(2)>`, :ref:`39 <X(39)>`}, {:ref:`3 <X(3)>`, :ref:`98 <X(98)>`}, {:ref:`4 <X(4)>`, :ref:`69 <X(69)>`}, {:ref:`5 <X(5)>`, :ref:`262 <X(262)>`}, {:ref:`6 <X(6)>`, :ref:`83 <X(83)>`}, {:ref:`7 <X(7)>`, 1240}, {:ref:`8 <X(8)>`, :ref:`668 <X(668)>`}, {:ref:`10 <X(10)>`, :ref:`75 <X(75)>`}, {:ref:`13 <X(13)>`, :ref:`299 <X(299)>`}, {:ref:`14 <X(14)>`, :ref:`298 <X(298)>`}, {:ref:`17 <X(17)>`, :ref:`303 <X(303)>`}, {:ref:`18 <X(18)>`, :ref:`302 <X(302)>`}, {:ref:`20 <X(20)>`, 3424}, {:ref:`22 <X(22)>`, 1799}, {:ref:`25 <X(25)>`, 1241}, {:ref:`31 <X(31)>`, :ref:`734 <X(734)>`}, {:ref:`32 <X(32)>`, :ref:`384 <X(384)>`}, {:ref:`37 <X(37)>`, 1218}, {:ref:`85 <X(85)>`, :ref:`226 <X(226)>`}, {:ref:`95 <X(95)>`, :ref:`96 <X(96)>`}, {:ref:`100 <X(100)>`, :ref:`767 <X(767)>`}, {:ref:`107 <X(107)>`, 2366}, {:ref:`110 <X(110)>`, 2367}, {:ref:`115 <X(115)>`, :ref:`626 <X(626)>`}, {:ref:`141 <X(141)>`, :ref:`698 <X(698)>`}, {:ref:`148 <X(148)>`, 2896}, {:ref:`182 <X(182)>`, 3406}, {:ref:`187 <X(187)>`, 3552}, {:ref:`192 <X(192)>`, 1221}, {:ref:`251 <X(251)>`, 1239}, {:ref:`257 <X(257)>`, 1926}, {:ref:`275 <X(275)>`, :ref:`276 <X(276)>`}, {:ref:`297 <X(297)>`, :ref:`343 <X(343)>`}, {:ref:`321 <X(321)>`, :ref:`561 <X(561)>`}, {:ref:`330 <X(330)>`, 1015}, {:ref:`331 <X(331)>`, 1231}, {:ref:`333 <X(333)>`, 1751}, {:ref:`334 <X(334)>`, 1089}, {:ref:`335 <X(335)>`, :ref:`871 <X(871)>`}, {:ref:`338 <X(338)>`, :ref:`599 <X(599)>`}, {:ref:`485 <X(485)>`, :ref:`491 <X(491)>`}, {:ref:`486 <X(486)>`, :ref:`492 <X(492)>`}, {:ref:`524 <X(524)>`, :ref:`598 <X(598)>`}, {:ref:`620 <X(620)>`, 1569}, {:ref:`689 <X(689)>`, :ref:`755 <X(755)>`}, {:ref:`691 <X(691)>`, 2868}, {:ref:`693 <X(693)>`, :ref:`764 <X(764)>`}, {:ref:`761 <X(761)>`, :ref:`789 <X(789)>`}, {:ref:`799 <X(799)>`, 1150}, {:ref:`826 <X(826)>`, :ref:`882 <X(882)>`}, {:ref:`940 <X(940)>`, 1509}, {1003, 3053}, {1007, 3090}, {1131, 1271}, {1132, 1270}, {1229, 1446}, {1423, 3403}, {1501, 3115}, {1670, 1677}, {1671, 1676}, {1698, 3097}, {2001, 2909}, {2319, 3500}, {2394, 3267}, {3224, 3225}, {3492, 3506}, {3496, 3512}, {3497, 3509}
+
+.. collapse:: Functional Relations
+   :badge: 48 relations
+
+   * :ref:`X(76) <X(76)>` = reflection of :ref:`X(194) <X(194)>` in :ref:`X(39) <X(39)>`
+   * :ref:`X(76) <X(76)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(32) <X(32)>`
+   * :ref:`X(76) <X(76)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(6) <X(6)>`
+   * :ref:`X(76) <X(76)>` = :term:`complement <complement>` of :ref:`X(194) <X(194)>`
+   * :ref:`X(76) <X(76)>` = :term:`anticomplement <anticomplement>` of :ref:`X(39) <X(39)>`
+   * :ref:`X(76) <X(76)>` = circumcircle-inverse of X(5152)
+   * :ref:`X(76) <X(76)>` = 2nd-Brocard circle-inverse of :ref:`X(99) <X(99)>`
+   * :ref:`X(76) <X(76)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of X(2896)
+   * :ref:`X(76) <X(76)>` = :term:`cyclocevian conjugate <cyclocevian-conjugate>` of isogonal conjugate of X(2916)
+   * :ref:`X(76) <X(76)>` = cyclocevian conjugate of isotomic conjugate of X(1369)
+   * :ref:`X(76) <X(76)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`308 <X(308)>`, :ref:`2 <X(2)>`), (:ref:`310 <X(310)>`, :ref:`75 <X(75)>`)
+   * :ref:`X(76) <X(76)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`69 <X(69)>`), (:ref:`6 <X(6)>`, :ref:`22 <X(22)>`), (:ref:`75 <X(75)>`, :ref:`312 <X(312)>`), (:ref:`311 <X(311)>`, :ref:`343 <X(343)>`), (:ref:`313 <X(313)>`, :ref:`321 <X(321)>`), (:ref:`339 <X(339)>`, :ref:`525 <X(525)>`)
+   * :ref:`X(76) <X(76)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`264 <X(264)>`), (:ref:`69 <X(69)>`, :ref:`305 <X(305)>`), (:ref:`141 <X(141)>`, :ref:`2 <X(2)>`), (:ref:`321 <X(321)>`, :ref:`75 <X(75)>`), (:ref:`343 <X(343)>`, :ref:`69 <X(69)>`), (:ref:`525 <X(525)>`, :ref:`99 <X(99)>`)
+   * :ref:`X(76) <X(76)>` = :term:`crosssum <crosssum>` of :ref:`X(669) <X(669)>` and X(1084)
+   * :ref:`X(76) <X(76)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(669) <X(669)>`\ \ :ref:`X(688) <X(688)>`
+   * :ref:`X(76) <X(76)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`76 <X(76)>`, :ref:`85 <X(85)>`), (:ref:`799 <X(799)>`, :ref:`348 <X(348)>`)
+   * :ref:`X(76) <X(76)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(25) <X(25)>` (line :ref:`X(512) <X(512)>`\ X(1692))
+   * :ref:`X(76) <X(76)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X(25) <X(25)>`
+   * :ref:`X(76) <X(76)>` = :ref:`X(6) <X(6)>`-isoconjugate of :ref:`X(31) <X(31)>`
+   * :ref:`X(76) <X(76)>` = trilinear product of PU(i) for these i: 10, 86
+   * :ref:`X(76) <X(76)>` = barycentric product of PU(11)
+   * :ref:`X(76) <X(76)>` = :term:`antigonal image <antigonal-image>` of X(1916)
+   * :ref:`X(76) <X(76)>` = cevapoint of polar conjugates of PU(4)
+   * :ref:`X(76) <X(76)>` = trilinear product of vertices of 1st Brocard triangle
+   * :ref:`X(76) <X(76)>` = trilinear product of vertices of 1st anti-Brocard triangle
+   * :ref:`X(76) <X(76)>` = :ref:`X(2) <X(2)>`-Ceva conjugate of X(6374)
+   * :ref:`X(76) <X(76)>` = :ref:`X(384) <X(384)>`-of-5th-Brocard-triangle
+   * :ref:`X(76) <X(76)>` = :ref:`X(6) <X(6)>`-of-6th-Brocard-triangle
+   * :ref:`X(76) <X(76)>` = perspector of ABC and 1st Brocard triangle
+   * :ref:`X(76) <X(76)>` = :term:`trilinear pole <trilinear-pole>` of de Longchamps line
+   * :ref:`X(76) <X(76)>` = bicentric sum of PU(159)
+   * :ref:`X(76) <X(76)>` = PU(159)-harmonic conjugate of X(9494)
+   * :ref:`X(76) <X(76)>` = perspector of conic {A,B,C,\ :ref:`X(670) <X(670)>`,\ :ref:`X(689) <X(689)>`,X(1978)}} (isotomic conjugate of Lemoine axis.)
+   * :ref:`X(76) <X(76)>` = X(1916) of 1st Brocard triangle
+   * :ref:`X(76) <X(76)>` = :term:`crosspoint <crosspoint>` of :ref:`X(6) <X(6)>` and :ref:`X(22) <X(22)>` wrt both the anticomplementary and :term:`tangential triangles <tangential-triangle>`
+   * :ref:`X(76) <X(76)>` = X(3094)-of-1st anti-Brocard-triangle
+   * :ref:`X(76) <X(76)>` = trilinear product of vertices of mid-triangle of 1st Brocard and 1st anti-Brocard triangles
+   * :ref:`X(76) <X(76)>` = perspector of ABC and cross-triangle of ABC and 3rd Brocard triangle
+   * :ref:`X(76) <X(76)>` = trilinear product of vertices of the three anti-altimedial triangles
+   * :ref:`X(76) <X(76)>` = Cundy-Parry Phi transform of :ref:`X(98) <X(98)>`
+   * :ref:`X(76) <X(76)>` = Cundy-Parry Psi transform of :ref:`X(511) <X(511)>`
+   * :ref:`X(76) <X(76)>` = barycentric product :ref:`X(99) <X(99)>`\ \*\ :ref:`X(850) <X(850)>`
+   * :ref:`X(76) <X(76)>` = intersection, other than :ref:`X(4) <X(4)>`, of P(1)- and U(1)-Fuhrmann circles (aka -Hagge circles)
+   * :ref:`X(76) <X(76)>` = {X(7737),X(14023)}-harmonic conjugate of X(20065)
+   * :ref:`X(76) <X(76)>` = intersection of lines PU(1) of 1st and 2nd Ehrmann circumscribing triangles
+   * :ref:`X(76) <X(76)>` = trilinear cube of :ref:`X(2) <X(2)>`
+   * :ref:`X(76) <X(76)>` = barycentric square of :ref:`X(75) <X(75)>`
+   * :ref:`X(76) <X(76)>` = trilinear product of vertices of Gemini triangle 19
+
+Notes
+-----
 
 .. container:: note-item
 
@@ -63,67 +120,7 @@ Notes
 
    :ref:`X(76) <X(76)>` is the {:ref:`X(2) <X(2)>`,\ :ref:`X(194) <X(194)>`}-harmonic conjugate of :ref:`X(39) <X(39)>`.
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(76) <X(76)>` lies and on these lines:
-
-{:ref:`1 <X(1)>`, :ref:`350 <X(350)>`}, {:ref:`2 <X(2)>`, :ref:`39 <X(39)>`}, {:ref:`3 <X(3)>`, :ref:`98 <X(98)>`}, {:ref:`4 <X(4)>`, :ref:`69 <X(69)>`}, {:ref:`5 <X(5)>`, :ref:`262 <X(262)>`}, {:ref:`6 <X(6)>`, :ref:`83 <X(83)>`}, {:ref:`7 <X(7)>`, 1240}, {:ref:`8 <X(8)>`, :ref:`668 <X(668)>`}, {:ref:`10 <X(10)>`, :ref:`75 <X(75)>`}, {:ref:`13 <X(13)>`, :ref:`299 <X(299)>`}, {:ref:`14 <X(14)>`, :ref:`298 <X(298)>`}, {:ref:`17 <X(17)>`, :ref:`303 <X(303)>`}, {:ref:`18 <X(18)>`, :ref:`302 <X(302)>`}, {:ref:`20 <X(20)>`, 3424}, {:ref:`22 <X(22)>`, 1799}, {:ref:`25 <X(25)>`, 1241}, {:ref:`31 <X(31)>`, :ref:`734 <X(734)>`}, {:ref:`32 <X(32)>`, :ref:`384 <X(384)>`}, {:ref:`37 <X(37)>`, 1218}, {:ref:`85 <X(85)>`, :ref:`226 <X(226)>`}, {:ref:`95 <X(95)>`, :ref:`96 <X(96)>`}, {:ref:`100 <X(100)>`, :ref:`767 <X(767)>`}, {:ref:`107 <X(107)>`, 2366}, {:ref:`110 <X(110)>`, 2367}, {:ref:`115 <X(115)>`, :ref:`626 <X(626)>`}, {:ref:`141 <X(141)>`, :ref:`698 <X(698)>`}, {:ref:`148 <X(148)>`, 2896}, {:ref:`182 <X(182)>`, 3406}, {:ref:`187 <X(187)>`, 3552}, {:ref:`192 <X(192)>`, 1221}, {:ref:`251 <X(251)>`, 1239}, {:ref:`257 <X(257)>`, 1926}, {:ref:`275 <X(275)>`, :ref:`276 <X(276)>`}, {:ref:`297 <X(297)>`, :ref:`343 <X(343)>`}, {:ref:`321 <X(321)>`, :ref:`561 <X(561)>`}, {:ref:`330 <X(330)>`, 1015}, {:ref:`331 <X(331)>`, 1231}, {:ref:`333 <X(333)>`, 1751}, {:ref:`334 <X(334)>`, 1089}, {:ref:`335 <X(335)>`, :ref:`871 <X(871)>`}, {:ref:`338 <X(338)>`, :ref:`599 <X(599)>`}, {:ref:`485 <X(485)>`, :ref:`491 <X(491)>`}, {:ref:`486 <X(486)>`, :ref:`492 <X(492)>`}, {:ref:`524 <X(524)>`, :ref:`598 <X(598)>`}, {:ref:`620 <X(620)>`, 1569}, {:ref:`689 <X(689)>`, :ref:`755 <X(755)>`}, {:ref:`691 <X(691)>`, 2868}, {:ref:`693 <X(693)>`, :ref:`764 <X(764)>`}, {:ref:`761 <X(761)>`, :ref:`789 <X(789)>`}, {:ref:`799 <X(799)>`, 1150}, {:ref:`826 <X(826)>`, :ref:`882 <X(882)>`}, {:ref:`940 <X(940)>`, 1509}, {1003, 3053}, {1007, 3090}, {1131, 1271}, {1132, 1270}, {1229, 1446}, {1423, 3403}, {1501, 3115}, {1670, 1677}, {1671, 1676}, {1698, 3097}, {2001, 2909}, {2319, 3500}, {2394, 3267}, {3224, 3225}, {3492, 3506}, {3496, 3512}, {3497, 3509}
-
-Relations
----------
-
-* :ref:`X(76) <X(76)>` = reflection of :ref:`X(194) <X(194)>` in :ref:`X(39) <X(39)>`
-* :ref:`X(76) <X(76)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(32) <X(32)>`
-* :ref:`X(76) <X(76)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(6) <X(6)>`
-* :ref:`X(76) <X(76)>` = :term:`complement <complement>` of :ref:`X(194) <X(194)>`
-* :ref:`X(76) <X(76)>` = :term:`anticomplement <anticomplement>` of :ref:`X(39) <X(39)>`
-* :ref:`X(76) <X(76)>` = circumcircle-inverse of X(5152)
-* :ref:`X(76) <X(76)>` = 2nd-Brocard circle-inverse of :ref:`X(99) <X(99)>`
-* :ref:`X(76) <X(76)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of X(2896)
-* :ref:`X(76) <X(76)>` = :term:`cyclocevian conjugate <cyclocevian-conjugate>` of isogonal conjugate of X(2916)
-* :ref:`X(76) <X(76)>` = cyclocevian conjugate of isotomic conjugate of X(1369)
-* :ref:`X(76) <X(76)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`308 <X(308)>`, :ref:`2 <X(2)>`), (:ref:`310 <X(310)>`, :ref:`75 <X(75)>`)
-* :ref:`X(76) <X(76)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`69 <X(69)>`), (:ref:`6 <X(6)>`, :ref:`22 <X(22)>`), (:ref:`75 <X(75)>`, :ref:`312 <X(312)>`), (:ref:`311 <X(311)>`, :ref:`343 <X(343)>`), (:ref:`313 <X(313)>`, :ref:`321 <X(321)>`), (:ref:`339 <X(339)>`, :ref:`525 <X(525)>`)
-* :ref:`X(76) <X(76)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`264 <X(264)>`), (:ref:`69 <X(69)>`, :ref:`305 <X(305)>`), (:ref:`141 <X(141)>`, :ref:`2 <X(2)>`), (:ref:`321 <X(321)>`, :ref:`75 <X(75)>`), (:ref:`343 <X(343)>`, :ref:`69 <X(69)>`), (:ref:`525 <X(525)>`, :ref:`99 <X(99)>`)
-* :ref:`X(76) <X(76)>` = :term:`crosssum <crosssum>` of :ref:`X(669) <X(669)>` and X(1084)
-* :ref:`X(76) <X(76)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(669) <X(669)>`\ \ :ref:`X(688) <X(688)>`
-* :ref:`X(76) <X(76)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`76 <X(76)>`, :ref:`85 <X(85)>`), (:ref:`799 <X(799)>`, :ref:`348 <X(348)>`)
-* :ref:`X(76) <X(76)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(25) <X(25)>` (line :ref:`X(512) <X(512)>`\ X(1692))
-* :ref:`X(76) <X(76)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X(25) <X(25)>`
-* :ref:`X(76) <X(76)>` = :ref:`X(6) <X(6)>`-isoconjugate of :ref:`X(31) <X(31)>`
-* :ref:`X(76) <X(76)>` = trilinear product of PU(i) for these i: 10, 86
-* :ref:`X(76) <X(76)>` = barycentric product of PU(11)
-* :ref:`X(76) <X(76)>` = :term:`antigonal image <antigonal-image>` of X(1916)
-* :ref:`X(76) <X(76)>` = cevapoint of polar conjugates of PU(4)
-* :ref:`X(76) <X(76)>` = trilinear product of vertices of 1st Brocard triangle
-* :ref:`X(76) <X(76)>` = trilinear product of vertices of 1st anti-Brocard triangle
-* :ref:`X(76) <X(76)>` = :ref:`X(2) <X(2)>`-Ceva conjugate of X(6374)
-* :ref:`X(76) <X(76)>` = :ref:`X(384) <X(384)>`-of-5th-Brocard-triangle
-* :ref:`X(76) <X(76)>` = :ref:`X(6) <X(6)>`-of-6th-Brocard-triangle
-* :ref:`X(76) <X(76)>` = perspector of ABC and 1st Brocard triangle
-* :ref:`X(76) <X(76)>` = :term:`trilinear pole <trilinear-pole>` of de Longchamps line
-* :ref:`X(76) <X(76)>` = bicentric sum of PU(159)
-* :ref:`X(76) <X(76)>` = PU(159)-harmonic conjugate of X(9494)
-* :ref:`X(76) <X(76)>` = perspector of conic {A,B,C,\ :ref:`X(670) <X(670)>`,\ :ref:`X(689) <X(689)>`,X(1978)}} (isotomic conjugate of Lemoine axis.)
-* :ref:`X(76) <X(76)>` = X(1916) of 1st Brocard triangle
-* :ref:`X(76) <X(76)>` = :term:`crosspoint <crosspoint>` of :ref:`X(6) <X(6)>` and :ref:`X(22) <X(22)>` wrt both the anticomplementary and :term:`tangential triangles <tangential-triangle>`
-* :ref:`X(76) <X(76)>` = X(3094)-of-1st anti-Brocard-triangle
-* :ref:`X(76) <X(76)>` = trilinear product of vertices of mid-triangle of 1st Brocard and 1st anti-Brocard triangles
-* :ref:`X(76) <X(76)>` = perspector of ABC and cross-triangle of ABC and 3rd Brocard triangle
-* :ref:`X(76) <X(76)>` = trilinear product of vertices of the three anti-altimedial triangles
-* :ref:`X(76) <X(76)>` = Cundy-Parry Phi transform of :ref:`X(98) <X(98)>`
-* :ref:`X(76) <X(76)>` = Cundy-Parry Psi transform of :ref:`X(511) <X(511)>`
-* :ref:`X(76) <X(76)>` = barycentric product :ref:`X(99) <X(99)>`\ \*\ :ref:`X(850) <X(850)>`
-* :ref:`X(76) <X(76)>` = intersection, other than :ref:`X(4) <X(4)>`, of P(1)- and U(1)-Fuhrmann circles (aka -Hagge circles)
-* :ref:`X(76) <X(76)>` = {X(7737),X(14023)}-harmonic conjugate of X(20065)
-* :ref:`X(76) <X(76)>` = intersection of lines PU(1) of 1st and 2nd Ehrmann circumscribing triangles
-* :ref:`X(76) <X(76)>` = trilinear cube of :ref:`X(2) <X(2)>`
-* :ref:`X(76) <X(76)>` = barycentric square of :ref:`X(75) <X(75)>`
-* :ref:`X(76) <X(76)>` = trilinear product of vertices of Gemini triangle 19
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code
