@@ -8,37 +8,42 @@
 X(569) = HARMONIC OF X(52)
 ==========================
 
+.. enunciation::
+
+   :ref:`X(569) <X(569)>` = inverse-in-Brocard-circle of :ref:`X(52) <X(52)>`
+
 .. figure:: x-00569.svg
    :alt: X(569) = HARMONIC OF X(52)
    :align: center
 
    **X(569) = HARMONIC OF X(52)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`\sin A + \cot D/2 \cos A : :,`
+   | **Search Value (6, 9, 13):** :math:`2.078407331492`
 
-* :math:`\sin A + \cot D/2 \cos A : :,`
-* :math:`\cot D/2 = (2e_{3} + e_{2} - e_{1})/[64*(area)^{3}]`, where, e\ :sub:`1` = a\ :sup:`6` + b\ :sup:`6` + c\ :sup:`6`, e\ :sub:`2` = a\ :sup:`4`\ (b\ :sup:`2` + c\ :sup:`2`) + b\ :sup:`4`\ (c\ :sup:`2` + a\ :sup:`2`) + c\ :sup:`4`\ (a\ :sup:`2` + b\ :sup:`2`), e\ :sub:`3` = a\ :sup:`2`\ b\ :sup:`2`\ c\ :sup:`2`
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`2.078407331492`
+   * **Trilinears:** :math:`\cot D/2 = (2e_{3} + e_{2} - e_{1})/[64*(area)^{3}]`, where, e\ :sub:`1` = a\ :sup:`6` + b\ :sup:`6` + c\ :sup:`6`, e\ :sub:`2` = a\ :sup:`4`\ (b\ :sup:`2` + c\ :sup:`2`) + b\ :sup:`4`\ (c\ :sup:`2` + a\ :sup:`2`) + c\ :sup:`4`\ (a\ :sup:`2` + b\ :sup:`2`), e\ :sub:`3` = a\ :sup:`2`\ b\ :sup:`2`\ c\ :sup:`2`
 
-Incidence
----------
+.. container:: note-item
 
-:ref:`X(569) <X(569)>` lies and on these lines:
+   :ref:`X(569) <X(569)>` lies.
 
-{:ref:`2 <X(2)>`, :ref:`54 <X(54)>`}, {:ref:`3 <X(3)>`, :ref:`6 <X(6)>`}, {:ref:`5 <X(5)>`, :ref:`156 <X(156)>`}, {:ref:`26 <X(26)>`, :ref:`51 <X(51)>`}, {:ref:`140 <X(140)>`, :ref:`343 <X(343)>`}
+.. collapse:: Incident Central Lines
+   :badge: 5 lines
+   :class: line-catalog
 
-Relations
----------
+   {:ref:`2 <X(2)>`, :ref:`54 <X(54)>`}, {:ref:`3 <X(3)>`, :ref:`6 <X(6)>`}, {:ref:`5 <X(5)>`, :ref:`156 <X(156)>`}, {:ref:`26 <X(26)>`, :ref:`51 <X(51)>`}, {:ref:`140 <X(140)>`, :ref:`343 <X(343)>`}
 
-* :ref:`X(569) <X(569)>` = inverse-in-Brocard-circle of :ref:`X(52) <X(52)>`
+.. collapse:: Functional Relations
+   :badge: 1 relation
 
-Construction
-------------
+   * :ref:`X(569) <X(569)>` = inverse-in-Brocard-circle of :ref:`X(52) <X(52)>`
 
-.. literalinclude:: model.py
-   :language: python
+.. toctree::
+   :hidden:
+
+   code

@@ -8,36 +8,64 @@
 X(389) = CENTER OF THE TAYLOR CIRCLE
 ====================================
 
+.. enunciation::
+
+   If ABC is acute then :ref:`X(389) <X(389)>` is the Spieker center of the :term:`orthic triangle <orthic-triangle>`. :person:`Peter Yff <peter-yff>` reports (Sept. 19, 2001) that since :ref:`X(389) <X(389)>` is on the Brocard axis, there must exist T for which :ref:`X(389) <X(389)>` is sin(A+T) : sin(B+T) : sin(C+T), and that tan(T) = - cot A cot B cot C.
+
 .. figure:: x-00389.svg
    :alt: X(389) = CENTER OF THE TAYLOR CIRCLE
    :align: center
 
    **X(389) = CENTER OF THE TAYLOR CIRCLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`\cos A - \cos 2A \cos(B - C) : \cos B - \cos 2B \cos(C - A) : \cos C - \cos 2C \cos(A - B) : :`
+   | **Barycentrics:** :math:`a[\cos A - \cos 2A \cos(B - C)] : b[\cos B - \cos 2B \cos(C - A)] : c[\cos C - \cos 2C \cos(A - B)] : :`
+   | **Search Value (6, 9, 13):** :math:`3.019248079525`
 
-* :math:`\cos A - \cos 2A \cos(B - C) : \cos B - \cos 2B \cos(C - A) : \cos C - \cos 2C \cos(A - B) : :`
-* :math:`\cos A - \sin A (\tan A + \tan B + \tan C) : :`
-* :math:`\cos A (\cot A \cot B \cot C) - \sin A : :`
+.. collapse:: Alternate Coordinates
+   :badge: 3 forms
 
-Barycentrics
-~~~~~~~~~~~~
-
-* :math:`a[\cos A - \cos 2A \cos(B - C)] : b[\cos B - \cos 2B \cos(C - A)] : c[\cos C - \cos 2C \cos(A - B)] : :`
-* :math:`a^2[a^6(b^2 + c^2) - 3a^4(b^4 + c^4) + 3a^2(b^2 - c^2)^2(b^2 + c^2) - (b^2 - c^2)^2(b^4 + c^4)] : :`
-
-* **Kimberling (6, 9, 13) Search Value:** :math:`3.019248079525`
-
-Notes
------
+   * **Trilinears:** :math:`\cos A - \sin A (\tan A + \tan B + \tan C) : :`
+   * **Trilinears:** :math:`\cos A (\cot A \cot B \cot C) - \sin A : :`
+   * **Barycentrics:** :math:`a^2[a^6(b^2 + c^2) - 3a^4(b^4 + c^4) + 3a^2(b^2 - c^2)^2(b^2 + c^2) - (b^2 - c^2)^2(b^4 + c^4)] : :`
 
 .. container:: note-item
 
-   If ABC is acute then :ref:`X(389) <X(389)>` is the Spieker center of the :term:`orthic triangle <orthic-triangle>`. :person:`Peter Yff <peter-yff>` reports (Sept. 19, 2001) that since :ref:`X(389) <X(389)>` is on the Brocard axis, there must exist T for which :ref:`X(389) <X(389)>` is sin(A+T) : sin(B+T) : sin(C+T), and that tan(T) = - cot A cot B cot C.
+   :ref:`X(389) <X(389)>` lies.
+
+.. collapse:: Incident Central Lines
+   :badge: 8 lines
+   :class: line-catalog
+
+   {:ref:`3 <X(3)>`, :ref:`6 <X(6)>`}, {:ref:`4 <X(4)>`, :ref:`51 <X(51)>`}, {:ref:`24 <X(24)>`, :ref:`184 <X(184)>`}, {:ref:`30 <X(30)>`, :ref:`143 <X(143)>`}, {:ref:`54 <X(54)>`, :ref:`186 <X(186)>`}, {:ref:`115 <X(115)>`, :ref:`129 <X(129)>`}, {:ref:`217 <X(217)>`, :ref:`232 <X(232)>`}, {:ref:`517 <X(517)>`, :ref:`950 <X(950)>`}
+
+.. collapse:: Functional Relations
+   :badge: 19 relations
+
+   * :ref:`X(389) <X(389)>` = midpoint of X(i) and X(j) for these (i,j): (:ref:`3 <X(3)>`, :ref:`52 <X(52)>`), (:ref:`4 <X(4)>`, :ref:`185 <X(185)>`), (:ref:`974 <X(974)>`, 1112)
+   * :ref:`X(389) <X(389)>` = reflection of X(1216) in :ref:`X(140) <X(140)>`
+   * :ref:`X(389) <X(389)>` = :term:`complement <complement>` of X(5562)
+   * :ref:`X(389) <X(389)>` = :term:`anticomplement <anticomplement>` of X(11793)
+   * :ref:`X(389) <X(389)>` = polar-circle-inverse of X(6761)
+   * :ref:`X(389) <X(389)>` = Schoute-circle-inverse of X(22052)
+   * :ref:`X(389) <X(389)>` = circle-{:ref:`X(371) <X(371)>`,\ :ref:`X(372) <X(372)>`,PU(1),PU(39)}}-inverse of :ref:`X(577) <X(577)>`
+   * :ref:`X(389) <X(389)>` = {:ref:`X(15) <X(15)>`,\ :ref:`X(16) <X(16)>`}-harmonic conjugate of X(22052)
+   * :ref:`X(389) <X(389)>` = {:ref:`X(371) <X(371)>`,\ :ref:`X(372) <X(372)>`}-harmonic conjugate of :ref:`X(577) <X(577)>`
+   * :ref:`X(389) <X(389)>` = inverse-in-Brocard-circle of :ref:`X(578) <X(578)>`
+   * :ref:`X(389) <X(389)>` = :term:`crosspoint <crosspoint>` of :ref:`X(4) <X(4)>` and :ref:`X(54) <X(54)>`
+   * :ref:`X(389) <X(389)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`3 <X(3)>`, :ref:`5 <X(5)>`), (:ref:`6 <X(6)>`, :ref:`418 <X(418)>`)
+   * :ref:`X(389) <X(389)>` = orthology center of half-altitude and orthic triangles
+   * :ref:`X(389) <X(389)>` = complement of :ref:`X(4) <X(4)>` wrt orthic triangle
+   * :ref:`X(389) <X(389)>` = :ref:`X(20) <X(20)>`-of-polar-triangle-of-complement-of-polar-circle
+   * :ref:`X(389) <X(389)>` = :ref:`X(10) <X(10)>`-of-orthic-triangle if ABC is acute
+   * :ref:`X(389) <X(389)>` = :ref:`X(4) <X(4)>`-of-1st-Hyacinth-triangle
+   * :ref:`X(389) <X(389)>` = excentral-to-ABC :term:`functional image <functional-image>` of :ref:`X(10) <X(10)>`
+   * :ref:`X(389) <X(389)>` = {:ref:`X(61) <X(61)>`,\ :ref:`X(62) <X(62)>`}-harmonic conjugate of X(3284)
+
+Notes
+-----
 
 .. container:: note-item
 
@@ -67,38 +95,7 @@ Notes
 
    Let A'B'C' be the midheight triangle. Let A\ :sub:`B`, A\ :sub:`C` be the orthogonal projections of A' on CA, AB, resp. Define B\ :sub:`C`, B\ :sub:`A`, C\ :sub:`A`, C\ :sub:`B` cyclically. Let A″ = C\ :sub:`A`\ A\ :sub:`C`\ ∩A\ :sub:`B`\ B\ :sub:`A`, and define B″ and C″ cyclically. Triangle A″B″C″ is homothetic to ABC at :ref:`X(6) <X(6)>`. The lines A'A″, B'B″, C'C″ concur in :ref:`X(389) <X(389)>`, which is also :ref:`X(3) <X(3)>`-of-A″B″C″. (Randy Hutson, March 29, 2020)
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(389) <X(389)>` lies and on these lines:
-
-{:ref:`3 <X(3)>`, :ref:`6 <X(6)>`}, {:ref:`4 <X(4)>`, :ref:`51 <X(51)>`}, {:ref:`24 <X(24)>`, :ref:`184 <X(184)>`}, {:ref:`30 <X(30)>`, :ref:`143 <X(143)>`}, {:ref:`54 <X(54)>`, :ref:`186 <X(186)>`}, {:ref:`115 <X(115)>`, :ref:`129 <X(129)>`}, {:ref:`217 <X(217)>`, :ref:`232 <X(232)>`}, {:ref:`517 <X(517)>`, :ref:`950 <X(950)>`}
-
-Relations
----------
-
-* :ref:`X(389) <X(389)>` = midpoint of X(i) and X(j) for these (i,j): (:ref:`3 <X(3)>`, :ref:`52 <X(52)>`), (:ref:`4 <X(4)>`, :ref:`185 <X(185)>`), (:ref:`974 <X(974)>`, 1112)
-* :ref:`X(389) <X(389)>` = reflection of X(1216) in :ref:`X(140) <X(140)>`
-* :ref:`X(389) <X(389)>` = :term:`complement <complement>` of X(5562)
-* :ref:`X(389) <X(389)>` = :term:`anticomplement <anticomplement>` of X(11793)
-* :ref:`X(389) <X(389)>` = polar-circle-inverse of X(6761)
-* :ref:`X(389) <X(389)>` = Schoute-circle-inverse of X(22052)
-* :ref:`X(389) <X(389)>` = circle-{:ref:`X(371) <X(371)>`,\ :ref:`X(372) <X(372)>`,PU(1),PU(39)}}-inverse of :ref:`X(577) <X(577)>`
-* :ref:`X(389) <X(389)>` = {:ref:`X(15) <X(15)>`,\ :ref:`X(16) <X(16)>`}-harmonic conjugate of X(22052)
-* :ref:`X(389) <X(389)>` = {:ref:`X(371) <X(371)>`,\ :ref:`X(372) <X(372)>`}-harmonic conjugate of :ref:`X(577) <X(577)>`
-* :ref:`X(389) <X(389)>` = inverse-in-Brocard-circle of :ref:`X(578) <X(578)>`
-* :ref:`X(389) <X(389)>` = :term:`crosspoint <crosspoint>` of :ref:`X(4) <X(4)>` and :ref:`X(54) <X(54)>`
-* :ref:`X(389) <X(389)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`3 <X(3)>`, :ref:`5 <X(5)>`), (:ref:`6 <X(6)>`, :ref:`418 <X(418)>`)
-* :ref:`X(389) <X(389)>` = orthology center of half-altitude and orthic triangles
-* :ref:`X(389) <X(389)>` = complement of :ref:`X(4) <X(4)>` wrt orthic triangle
-* :ref:`X(389) <X(389)>` = :ref:`X(20) <X(20)>`-of-polar-triangle-of-complement-of-polar-circle
-* :ref:`X(389) <X(389)>` = :ref:`X(10) <X(10)>`-of-orthic-triangle if ABC is acute
-* :ref:`X(389) <X(389)>` = :ref:`X(4) <X(4)>`-of-1st-Hyacinth-triangle
-* :ref:`X(389) <X(389)>` = excentral-to-ABC :term:`functional image <functional-image>` of :ref:`X(10) <X(10)>`
-* :ref:`X(389) <X(389)>` = {:ref:`X(61) <X(61)>`,\ :ref:`X(62) <X(62)>`}-harmonic conjugate of X(3284)
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

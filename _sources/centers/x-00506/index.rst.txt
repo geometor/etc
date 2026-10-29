@@ -8,33 +8,29 @@
 X(506) = 4th ISOSCELIZER POINT
 ==============================
 
+.. enunciation::
+
+   The :term:`isoscelizer <isoscelizer>` equations
+
 .. figure:: x-00506.svg
    :alt: X(506) = 4th ISOSCELIZER POINT
    :align: center
 
    **X(506) = 4th ISOSCELIZER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = (cos A/2)\ :sup:`-2/3`
+   | **Barycentrics:** :math:`af(A,B,C) : bf(B,C,A) : cf(C,A,B)`
+   | **Search Value (6, 9, 13):** :math:`1.341187212164`
 
-* :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = (cos A/2)\ :sup:`-2/3`
+.. collapse:: Functional Relations
+   :badge: 1 relation
 
-Barycentrics
-~~~~~~~~~~~~
-
-* :math:`af(A,B,C) : bf(B,C,A) : cf(C,A,B)`
-
-* **Kimberling (6, 9, 13) Search Value:** :math:`1.341187212164`
+   * :ref:`X(506) <X(506)>` = trilinear cube root of :ref:`X(7) <X(7)>`
 
 Notes
 -----
-
-.. container:: note-item
-
-   The :term:`isoscelizer <isoscelizer>` equations
 
 .. container:: note-item
 
@@ -44,13 +40,7 @@ Notes
 
    have solution X = :ref:`X(506) <X(506)>`. (:person:`Peter Yff <peter-yff>`, 4/9/99)
 
-Relations
----------
+.. toctree::
+   :hidden:
 
-* :ref:`X(506) <X(506)>` = trilinear cube root of :ref:`X(7) <X(7)>`
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

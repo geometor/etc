@@ -8,42 +8,39 @@
 X(945) = ISOGONAL CONJUGATE OF X(944)
 =====================================
 
+.. enunciation::
+
+   :ref:`X(945) <X(945)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(944) <X(944)>`
+
 .. figure:: x-00945.svg
    :alt: X(945) = ISOGONAL CONJUGATE OF X(944)
    :align: center
 
    **X(945) = ISOGONAL CONJUGATE OF X(944)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = a/[3a\ :sup:`4` - 2a\ :sup:`3`\ (b + c) + (b - c)\ :sup:`2`\ (2ab + 2ac - 2bc - b\ :sup:`2` - c\ :sup:`2` - 2a\ :sup:`2`)]
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Search Value (6, 9, 13):** :math:`-28.107306354614`
 
-* :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = a/[3a\ :sup:`4` - 2a\ :sup:`3`\ (b + c) + (b - c)\ :sup:`2`\ (2ab + 2ac - 2bc - b\ :sup:`2` - c\ :sup:`2` - 2a\ :sup:`2`)]
+.. container:: note-item
 
-Barycentrics
-~~~~~~~~~~~~
+   :ref:`X(945) <X(945)>` lies.
 
-* :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+.. collapse:: Incident Central Lines
+   :badge: 2 lines
+   :class: line-catalog
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`-28.107306354614`
+   {:ref:`78 <X(78)>`, :ref:`517 <X(517)>`}, {:ref:`283 <X(283)>`, :ref:`859 <X(859)>`}
 
-Incidence
----------
+.. collapse:: Functional Relations
+   :badge: 2 relations
 
-:ref:`X(945) <X(945)>` lies and on these lines:
+   * :ref:`X(945) <X(945)>` = isogonal conjugate of :ref:`X(944) <X(944)>`
+   * :ref:`X(945) <X(945)>` = :ref:`X(3) <X(3)>`-:term:`vertex conjugate <vertex-conjugate>` of :ref:`X(56) <X(56)>`
 
-{:ref:`78 <X(78)>`, :ref:`517 <X(517)>`}, {:ref:`283 <X(283)>`, :ref:`859 <X(859)>`}
+.. toctree::
+   :hidden:
 
-Relations
----------
-
-* :ref:`X(945) <X(945)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(944) <X(944)>`
-* :ref:`X(945) <X(945)>` = :ref:`X(3) <X(3)>`-:term:`vertex conjugate <vertex-conjugate>` of :ref:`X(56) <X(56)>`
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

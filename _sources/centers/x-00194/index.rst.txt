@@ -8,39 +8,74 @@
 X(194) = X(6)-CEVA CONJUGATE OF X(2)
 ====================================
 
+.. enunciation::
+
+   Let Oa be the circle through A and tangent to BC at its midpoint. Define Ob and Oc cyclically. The radical center of Oa, Ob, Oc is :ref:`X(194) <X(194)>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
+
 .. figure:: x-00194.svg
    :alt: X(194) = X(6)-CEVA CONJUGATE OF X(2)
    :align: center
 
    **X(194) = X(6)-CEVA CONJUGATE OF X(2)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`bc[a^{2}b^{2} + a^{2}c^{2} - b^{2}c^{2}] : :`
+   | **Barycentrics:** :math:`a^{2}b^{2} + a^{2}c^{2} - b^{2}c^{2} : :`
+   | **Search Value (6, 9, 13):** :math:`-1.630187791614`
 
-* :math:`bc[a^{2}b^{2} + a^{2}c^{2} - b^{2}c^{2}] : :`
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-Barycentrics
-~~~~~~~~~~~~
+   * **Barycentrics:** :math:`\cot^{2}A - \csc^{2}A \cos 2\omega : : (M. Iliev, 5/13/07)`
 
-* :math:`a^{2}b^{2} + a^{2}c^{2} - b^{2}c^{2} : :`
-* :math:`\cot^{2}A - \csc^{2}A \cos 2\omega : : (M. Iliev, 5/13/07)`
+.. collapse:: Linear Combinations
+   :badge: 1 combination
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`-1.630187791614`
-
-Linear Combinations
--------------------
-
-* :ref:`X(194) <X(194)>` = 2\ :ref:`X(39) <X(39)>` - :ref:`X(76) <X(76)>` - P(1) + U(1) - :ref:`X(76) <X(76)>`
-
-Notes
------
+   * :ref:`X(194) <X(194)>` = 2\ :ref:`X(39) <X(39)>` - :ref:`X(76) <X(76)>` - P(1) + U(1) - :ref:`X(76) <X(76)>`
 
 .. container:: note-item
 
-   Let Oa be the circle through A and tangent to BC at its midpoint. Define Ob and Oc cyclically. The radical center of Oa, Ob, Oc is :ref:`X(194) <X(194)>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
+   :ref:`X(194) <X(194)>` lies.
+
+.. collapse:: Incident Central Lines
+   :badge: 50 lines
+   :class: line-catalog
+
+   {:ref:`1 <X(1)>`, :ref:`87 <X(87)>`}, {:ref:`2 <X(2)>`, :ref:`39 <X(39)>`}, {:ref:`3 <X(3)>`, :ref:`385 <X(385)>`}, {:ref:`4 <X(4)>`, :ref:`147 <X(147)>`}, {:ref:`6 <X(6)>`, :ref:`384 <X(384)>`}, {:ref:`8 <X(8)>`, :ref:`730 <X(730)>`}, {:ref:`10 <X(10)>`, 3097}, {:ref:`20 <X(20)>`, :ref:`185 <X(185)>`}, {:ref:`32 <X(32)>`, :ref:`99 <X(99)>`}, {:ref:`63 <X(63)>`, :ref:`239 <X(239)>`}, {:ref:`69 <X(69)>`, :ref:`695 <X(695)>`}, {:ref:`75 <X(75)>`, 1107}, {:ref:`83 <X(83)>`, 3734}, {:ref:`183 <X(183)>`, 5013}, {:ref:`184 <X(184)>`, 3492}, {:ref:`190 <X(190)>`, 2176}, {:ref:`257 <X(257)>`, :ref:`986 <X(986)>`}, {:ref:`262 <X(262)>`, 2996}, {:ref:`263 <X(263)>`, 3498}, {:ref:`304 <X(304)>`, 3797}, {:ref:`315 <X(315)>`, :ref:`736 <X(736)>`}, {:ref:`325 <X(325)>`, 5025}, {:ref:`350 <X(350)>`, 2275}, {:ref:`401 <X(401)>`, 1993}, {:ref:`487 <X(487)>`, 1587}, {:ref:`488 <X(488)>`, 1588}, {:ref:`548 <X(548)>`, 3793}, {:ref:`574 <X(574)>`, 1078}, {:ref:`616 <X(616)>`, 3104}, {:ref:`617 <X(617)>`, 3105}, {:ref:`627 <X(627)>`, 3106}, {:ref:`628 <X(628)>`, 3107}, {:ref:`648 <X(648)>`, 1968}, {:ref:`712 <X(712)>`, 4393}, {1007, 2023}, {1593, 1941}, {1654, 4201}, {1670, 2547}, {1671, 2546}, {1909, 2276}, {2128, 2285}, {3096, 4045}, {3212, 3503}, {3314, 3933}, {3413, 3557}, {3414, 3558}, {3522, 5188}, {3770, 4261}, {3906, 5652}, {3972, 5007}
+
+.. collapse:: Functional Relations
+   :badge: 26 relations
+
+   * :ref:`X(194) <X(194)>` = reflection of :ref:`X(76) <X(76)>` in :ref:`X(39) <X(39)>`
+   * :ref:`X(194) <X(194)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(3224)
+   * :ref:`X(194) <X(194)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(2998)
+   * :ref:`X(194) <X(194)>` = isotomic conjugate of the :term:`complement <complement>` of X(32747)
+   * :ref:`X(194) <X(194)>` = complement of X(20081)
+   * :ref:`X(194) <X(194)>` = :term:`anticomplement <anticomplement>` of :ref:`X(76) <X(76)>`
+   * :ref:`X(194) <X(194)>` = circumcircle-inverse of X(32517)
+   * :ref:`X(194) <X(194)>` = polar circle inverse of X(32527)
+   * :ref:`X(194) <X(194)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X(315) <X(315)>`
+   * :ref:`X(194) <X(194)>` = :term:`complementary conjugate <complementary-conjugate>` of complement of X(36615)
+   * :ref:`X(194) <X(194)>` = :term:`eigencenter <eigencenter>` of :term:`cevian triangle <cevian-triangle>` of :ref:`X(6) <X(6)>`
+   * :ref:`X(194) <X(194)>` = eigencenter of :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(2) <X(2)>`
+   * :ref:`X(194) <X(194)>` = radical center of the Neuberg circles.
+   * :ref:`X(194) <X(194)>` = :ref:`X(6) <X(6)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(2) <X(2)>`
+   * :ref:`X(194) <X(194)>` = :ref:`X(3) <X(3)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(385) <X(385)>`
+   * :ref:`X(194) <X(194)>` = anticomplementary-isotomic conjugate of :ref:`X(69) <X(69)>`
+   * :ref:`X(194) <X(194)>` = X(6374)-:term:`cross conjugate <cross-conjugate>` of :ref:`X(2) <X(2)>`
+   * :ref:`X(194) <X(194)>` = :term:`vertex conjugate <vertex-conjugate>` of PU(140)
+   * :ref:`X(194) <X(194)>` = 1st-Brocard-to-6th-Brocard :term:`similarity image <similarity-image>` of :ref:`X(6) <X(6)>`
+   * :ref:`X(194) <X(194)>` = :ref:`X(99) <X(99)>`-of-6th-Brocard-triangle
+   * :ref:`X(194) <X(194)>` = anticomplementary-circle-inverse of X(32528)
+   * :ref:`X(194) <X(194)>` = orthoptic-circle-of-Steiner-inellipse-inverse of X(32530)
+   * :ref:`X(194) <X(194)>` = orthoptic-circle-of-Steiner-circumellipe-inverse of X(32526)
+   * :ref:`X(194) <X(194)>` = de Longchamps-circle-inverse of X(32529)
+   * :ref:`X(194) <X(194)>` = 2nd-Brocard-circle-inverse of X(32531)
+   * :ref:`X(194) <X(194)>` = perspector of 3rd Brocard triangle and 1st Brocard-reflected triangle
+
+Notes
+-----
 
 .. container:: note-item
 
@@ -54,45 +89,7 @@ Notes
 
    :ref:`X(194) <X(194)>` is the {:ref:`X(39) <X(39)>`,\ :ref:`X(76) <X(76)>`}-harmonic conjugate of :ref:`X(2) <X(2)>`.
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(194) <X(194)>` lies and on these lines:
-
-{:ref:`1 <X(1)>`, :ref:`87 <X(87)>`}, {:ref:`2 <X(2)>`, :ref:`39 <X(39)>`}, {:ref:`3 <X(3)>`, :ref:`385 <X(385)>`}, {:ref:`4 <X(4)>`, :ref:`147 <X(147)>`}, {:ref:`6 <X(6)>`, :ref:`384 <X(384)>`}, {:ref:`8 <X(8)>`, :ref:`730 <X(730)>`}, {:ref:`10 <X(10)>`, 3097}, {:ref:`20 <X(20)>`, :ref:`185 <X(185)>`}, {:ref:`32 <X(32)>`, :ref:`99 <X(99)>`}, {:ref:`63 <X(63)>`, :ref:`239 <X(239)>`}, {:ref:`69 <X(69)>`, :ref:`695 <X(695)>`}, {:ref:`75 <X(75)>`, 1107}, {:ref:`83 <X(83)>`, 3734}, {:ref:`183 <X(183)>`, 5013}, {:ref:`184 <X(184)>`, 3492}, {:ref:`190 <X(190)>`, 2176}, {:ref:`257 <X(257)>`, :ref:`986 <X(986)>`}, {:ref:`262 <X(262)>`, 2996}, {:ref:`263 <X(263)>`, 3498}, {:ref:`304 <X(304)>`, 3797}, {:ref:`315 <X(315)>`, :ref:`736 <X(736)>`}, {:ref:`325 <X(325)>`, 5025}, {:ref:`350 <X(350)>`, 2275}, {:ref:`401 <X(401)>`, 1993}, {:ref:`487 <X(487)>`, 1587}, {:ref:`488 <X(488)>`, 1588}, {:ref:`548 <X(548)>`, 3793}, {:ref:`574 <X(574)>`, 1078}, {:ref:`616 <X(616)>`, 3104}, {:ref:`617 <X(617)>`, 3105}, {:ref:`627 <X(627)>`, 3106}, {:ref:`628 <X(628)>`, 3107}, {:ref:`648 <X(648)>`, 1968}, {:ref:`712 <X(712)>`, 4393}, {1007, 2023}, {1593, 1941}, {1654, 4201}, {1670, 2547}, {1671, 2546}, {1909, 2276}, {2128, 2285}, {3096, 4045}, {3212, 3503}, {3314, 3933}, {3413, 3557}, {3414, 3558}, {3522, 5188}, {3770, 4261}, {3906, 5652}, {3972, 5007}
-
-Relations
----------
-
-* :ref:`X(194) <X(194)>` = reflection of :ref:`X(76) <X(76)>` in :ref:`X(39) <X(39)>`
-* :ref:`X(194) <X(194)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(3224)
-* :ref:`X(194) <X(194)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(2998)
-* :ref:`X(194) <X(194)>` = isotomic conjugate of the :term:`complement <complement>` of X(32747)
-* :ref:`X(194) <X(194)>` = complement of X(20081)
-* :ref:`X(194) <X(194)>` = :term:`anticomplement <anticomplement>` of :ref:`X(76) <X(76)>`
-* :ref:`X(194) <X(194)>` = circumcircle-inverse of X(32517)
-* :ref:`X(194) <X(194)>` = polar circle inverse of X(32527)
-* :ref:`X(194) <X(194)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X(315) <X(315)>`
-* :ref:`X(194) <X(194)>` = :term:`complementary conjugate <complementary-conjugate>` of complement of X(36615)
-* :ref:`X(194) <X(194)>` = :term:`eigencenter <eigencenter>` of :term:`cevian triangle <cevian-triangle>` of :ref:`X(6) <X(6)>`
-* :ref:`X(194) <X(194)>` = eigencenter of :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(2) <X(2)>`
-* :ref:`X(194) <X(194)>` = radical center of the Neuberg circles.
-* :ref:`X(194) <X(194)>` = :ref:`X(6) <X(6)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(2) <X(2)>`
-* :ref:`X(194) <X(194)>` = :ref:`X(3) <X(3)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(385) <X(385)>`
-* :ref:`X(194) <X(194)>` = anticomplementary-isotomic conjugate of :ref:`X(69) <X(69)>`
-* :ref:`X(194) <X(194)>` = X(6374)-:term:`cross conjugate <cross-conjugate>` of :ref:`X(2) <X(2)>`
-* :ref:`X(194) <X(194)>` = :term:`vertex conjugate <vertex-conjugate>` of PU(140)
-* :ref:`X(194) <X(194)>` = 1st-Brocard-to-6th-Brocard :term:`similarity image <similarity-image>` of :ref:`X(6) <X(6)>`
-* :ref:`X(194) <X(194)>` = :ref:`X(99) <X(99)>`-of-6th-Brocard-triangle
-* :ref:`X(194) <X(194)>` = anticomplementary-circle-inverse of X(32528)
-* :ref:`X(194) <X(194)>` = orthoptic-circle-of-Steiner-inellipse-inverse of X(32530)
-* :ref:`X(194) <X(194)>` = orthoptic-circle-of-Steiner-circumellipe-inverse of X(32526)
-* :ref:`X(194) <X(194)>` = de Longchamps-circle-inverse of X(32529)
-* :ref:`X(194) <X(194)>` = 2nd-Brocard-circle-inverse of X(32531)
-* :ref:`X(194) <X(194)>` = perspector of 3rd Brocard triangle and 1st Brocard-reflected triangle
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

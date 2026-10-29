@@ -8,27 +8,49 @@
 X(554) = (X(1),X(13))-ANSWER TO QUESTION A
 ==========================================
 
+.. enunciation::
+
+   Let A' = (XY\ :sub:`A` intersect BC), and define B' and C' cyclically. In
+
 .. figure:: x-00554.svg
    :alt: X(554) = (X(1),X(13))-ANSWER TO QUESTION A
    :align: center
 
    **X(554) = (X(1),X(13))-ANSWER TO QUESTION A** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`\sec(A/2) \csc(A/2 + \pi /3) : \sec(B/2) \csc(B/2 + \pi /3) : \sec(C/2) \csc(C/2 + \pi /3)`
+   | **Barycentrics:** :math:`\sin A \sec(A/2) \csc(A/2 + \pi /3) : \sin B \sec(B/2) \csc(B/2 + \pi /3) : \sin C \sec(C/2) \csc(C/2 + \pi /3)`
+   | **Search Value (6, 9, 13):** :math:`1.119721207656`
 
-* :math:`\sec(A/2) \csc(A/2 + \pi /3) : \sec(B/2) \csc(B/2 + \pi /3) : \sec(C/2) \csc(C/2 + \pi /3)`
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-Barycentrics
-~~~~~~~~~~~~
+   * **Barycentrics:** :math:`(a + b - c)*(a - b + c)*(a + 2*b + 2*c) + 2*\sqrt{3}*a*S : :`
 
-* :math:`\sin A \sec(A/2) \csc(A/2 + \pi /3) : \sin B \sec(B/2) \csc(B/2 + \pi /3) : \sin C \sec(C/2) \csc(C/2 + \pi /3)`
-* :math:`(a + b - c)*(a - b + c)*(a + 2*b + 2*c) + 2*\sqrt{3}*a*S : :`
+.. container:: note-item
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`1.119721207656`
+   :ref:`X(554) <X(554)>` lies on the circumconic {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(7) <X(7)>`}}, the cubics K134 and K419b.
+
+.. collapse:: Incident Central Lines
+   :badge: 22 lines
+   :class: line-catalog
+
+   {:ref:`1 <X(1)>`, :ref:`30 <X(30)>`}, {:ref:`2 <X(2)>`, 33654}, {:ref:`7 <X(7)>`, 1082}, {:ref:`13 <X(13)>`, 43682}, {:ref:`14 <X(14)>`, :ref:`226 <X(226)>`}, {:ref:`55 <X(55)>`, 10652}, {:ref:`57 <X(57)>`, 41225}, {:ref:`75 <X(75)>`, :ref:`299 <X(299)>`}, {:ref:`396 <X(396)>`, 1652}, {:ref:`497 <X(497)>`, 30344}, {:ref:`553 <X(553)>`, 37772}, {:ref:`675 <X(675)>`, 36073}, {1086, 11073}, {1365, 18975}, {3475, 37830}, {3639, 3982}, {5239, 5249}, {5240, 5905}, {6186, 10648}, {7043, 11092}, {11705, 26700}, {30327, 37641}
+
+.. collapse:: Functional Relations
+   :badge: 9 relations
+
+   * :ref:`X(554) <X(554)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(10638)
+   * :ref:`X(554) <X(554)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(40714)
+   * :ref:`X(554) <X(554)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): {:ref:`553 <X(553)>`, 1081}, {30382, :ref:`85 <X(85)>`}
+   * :ref:`X(554) <X(554)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these (i,j): {:ref:`1 <X(1)>`, 1652}, {33653, 33654}
+   * :ref:`X(554) <X(554)>` = X(i)-Dao conjugate of X(j) for these (i,j): {:ref:`2 <X(2)>`, 40714}, {:ref:`3 <X(3)>`, 10638}, {:ref:`223 <X(223)>`, :ref:`559 <X(559)>`}, {7043, 40579}
+   * :ref:`X(554) <X(554)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these (i,j): {:ref:`1 <X(1)>`, 10638}, {:ref:`16 <X(16)>`, 7126}, {:ref:`31 <X(31)>`, 40714}, {:ref:`35 <X(35)>`, 1251}, {:ref:`55 <X(55)>`, :ref:`559 <X(559)>`}, {1250, 42677}, {2152, 7043}, {5239, 42624}, {5357, 19551}, {7005, 33653}, {7127, 7150}, {35057, 36072}
+   * :ref:`X(554) <X(554)>` = barycentric product X(i)\*X(j) for these {i,j}: {:ref:`75 <X(75)>`, 33654}, {:ref:`85 <X(85)>`, 33653}, {:ref:`301 <X(301)>`, 7051}, {1082, 30690}, {2307, 20565}, {3261, 36073}
+   * :ref:`X(554) <X(554)>` = barycentric quotient X(i)/X(j) for these {i,j}: {:ref:`2 <X(2)>`, 40714}, {:ref:`6 <X(6)>`, 10638}, {:ref:`14 <X(14)>`, 7043}, {:ref:`57 <X(57)>`, :ref:`559 <X(559)>`}, {1082, 3219}, {2154, 7126}, {2160, 1251}, {2306, 42677}, {2307, :ref:`35 <X(35)>`}, {5239, 44689}, {7051, :ref:`16 <X(16)>`}, {7052, 7150}, {11073, 19551}, {19373, 5357}, {33653, :ref:`9 <X(9)>`}, {33654, :ref:`1 <X(1)>`}, {33655, 46073}, {36073, :ref:`101 <X(101)>`}, {39152, 5240}, {40713, 42033}, {41225, 5239}
+   * :ref:`X(554) <X(554)>` = {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): {:ref:`1 <X(1)>`, 4654, 1081}, {:ref:`226 <X(226)>`, 3638, :ref:`559 <X(559)>`}, {3649, 37631, 1081}, {3782, 5434, 1081}
 
 Notes
 -----
@@ -44,36 +66,11 @@ Notes
 
 .. container:: note-item
 
-   Let A' = (XY\ :sub:`A` intersect BC), and define B' and C' cyclically. In
-
-.. container:: note-item
-
    **Clark Kimberling,** ":term:`Major Centers <major-center>` of Triangles," *Amer. Math. Monthly* 104 (1997) 431-438,
 
    Question A is this: *for what choices of X and Y do the lines AA', BB', CC' concur?* A solution (X,Y) will here be called the *(X,Y)-answer to Question A.* :ref:`X(554) <X(554)>` is the (:ref:`X(1) <X(1)>`,\ :ref:`X(13) <X(13)>`)-answer to Question A. (In the reference, see (9) on page 435, with Y = :ref:`X(13) <X(13)>`.)
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(554) <X(554)>` lies on the circumconic {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(7) <X(7)>`}}, the cubics K134 and K419b and on these lines:
-
-{:ref:`1 <X(1)>`, :ref:`30 <X(30)>`}, {:ref:`2 <X(2)>`, 33654}, {:ref:`7 <X(7)>`, 1082}, {:ref:`13 <X(13)>`, 43682}, {:ref:`14 <X(14)>`, :ref:`226 <X(226)>`}, {:ref:`55 <X(55)>`, 10652}, {:ref:`57 <X(57)>`, 41225}, {:ref:`75 <X(75)>`, :ref:`299 <X(299)>`}, {:ref:`396 <X(396)>`, 1652}, {:ref:`497 <X(497)>`, 30344}, {:ref:`553 <X(553)>`, 37772}, {:ref:`675 <X(675)>`, 36073}, {1086, 11073}, {1365, 18975}, {3475, 37830}, {3639, 3982}, {5239, 5249}, {5240, 5905}, {6186, 10648}, {7043, 11092}, {11705, 26700}, {30327, 37641}
-
-Relations
----------
-
-* :ref:`X(554) <X(554)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(10638)
-* :ref:`X(554) <X(554)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(40714)
-* :ref:`X(554) <X(554)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): {:ref:`553 <X(553)>`, 1081}, {30382, :ref:`85 <X(85)>`}
-* :ref:`X(554) <X(554)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these (i,j): {:ref:`1 <X(1)>`, 1652}, {33653, 33654}
-* :ref:`X(554) <X(554)>` = X(i)-Dao conjugate of X(j) for these (i,j): {:ref:`2 <X(2)>`, 40714}, {:ref:`3 <X(3)>`, 10638}, {:ref:`223 <X(223)>`, :ref:`559 <X(559)>`}, {7043, 40579}
-* :ref:`X(554) <X(554)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these (i,j): {:ref:`1 <X(1)>`, 10638}, {:ref:`16 <X(16)>`, 7126}, {:ref:`31 <X(31)>`, 40714}, {:ref:`35 <X(35)>`, 1251}, {:ref:`55 <X(55)>`, :ref:`559 <X(559)>`}, {1250, 42677}, {2152, 7043}, {5239, 42624}, {5357, 19551}, {7005, 33653}, {7127, 7150}, {35057, 36072}
-* :ref:`X(554) <X(554)>` = barycentric product X(i)\*X(j) for these {i,j}: {:ref:`75 <X(75)>`, 33654}, {:ref:`85 <X(85)>`, 33653}, {:ref:`301 <X(301)>`, 7051}, {1082, 30690}, {2307, 20565}, {3261, 36073}
-* :ref:`X(554) <X(554)>` = barycentric quotient X(i)/X(j) for these {i,j}: {:ref:`2 <X(2)>`, 40714}, {:ref:`6 <X(6)>`, 10638}, {:ref:`14 <X(14)>`, 7043}, {:ref:`57 <X(57)>`, :ref:`559 <X(559)>`}, {1082, 3219}, {2154, 7126}, {2160, 1251}, {2306, 42677}, {2307, :ref:`35 <X(35)>`}, {5239, 44689}, {7051, :ref:`16 <X(16)>`}, {7052, 7150}, {11073, 19551}, {19373, 5357}, {33653, :ref:`9 <X(9)>`}, {33654, :ref:`1 <X(1)>`}, {33655, 46073}, {36073, :ref:`101 <X(101)>`}, {39152, 5240}, {40713, 42033}, {41225, 5239}
-* :ref:`X(554) <X(554)>` = {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): {:ref:`1 <X(1)>`, 4654, 1081}, {:ref:`226 <X(226)>`, 3638, :ref:`559 <X(559)>`}, {3649, 37631, 1081}, {3782, 5434, 1081}
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

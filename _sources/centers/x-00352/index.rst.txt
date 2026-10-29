@@ -8,54 +8,51 @@
 X(352) = INVERSE-IN-CIRCUMCIRCLE OF X(353)
 ==========================================
 
+.. enunciation::
+
+   :ref:`X(352) <X(352)>` = reflection of :ref:`X(843) <X(843)>` in :ref:`X(187) <X(187)>`
+
 .. figure:: x-00352.svg
    :alt: X(352) = INVERSE-IN-CIRCUMCIRCLE OF X(353)
    :align: center
 
    **X(352) = INVERSE-IN-CIRCUMCIRCLE OF X(353)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = a(-a\ :sup:`4` - b\ :sup:`4` - c\ :sup:`4` - 5b\ :sup:`2`\ c\ :sup:`2` + 4a\ :sup:`2`\ b\ :sup:`2` + 4a\ :sup:`2`\ c\ :sup:`2`)
+   | **Barycentrics:** :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
+   | **Search Value (6, 9, 13):** :math:`-8.749665363574`
 
-* :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = a(-a\ :sup:`4` - b\ :sup:`4` - c\ :sup:`4` - 5b\ :sup:`2`\ c\ :sup:`2` + 4a\ :sup:`2`\ b\ :sup:`2` + 4a\ :sup:`2`\ c\ :sup:`2`)
+.. container:: note-item
 
-Barycentrics
-~~~~~~~~~~~~
+   :ref:`X(352) <X(352)>` lies on the Parry circle.
 
-* :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
+.. collapse:: Incident Central Lines
+   :badge: 5 lines
+   :class: line-catalog
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`-8.749665363574`
+   {:ref:`2 <X(2)>`, :ref:`6 <X(6)>`}, {:ref:`3 <X(3)>`, :ref:`353 <X(353)>`}, {:ref:`23 <X(23)>`, 2502}, {:ref:`110 <X(110)>`, :ref:`187 <X(187)>`}, {:ref:`111 <X(111)>`, :ref:`511 <X(511)>`}
 
-Incidence
----------
+.. collapse:: Functional Relations
+   :badge: 14 relations
 
-:ref:`X(352) <X(352)>` lies on the Parry circle and on these lines:
+   * :ref:`X(352) <X(352)>` = reflection of :ref:`X(843) <X(843)>` in :ref:`X(187) <X(187)>`
+   * :ref:`X(352) <X(352)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(6094)
+   * :ref:`X(352) <X(352)>` = inverse-in-circumcircle of :ref:`X(353) <X(353)>`
+   * :ref:`X(352) <X(352)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(373) <X(373)>`\ \ :ref:`X(512) <X(512)>`
+   * :ref:`X(352) <X(352)>` = :ref:`X(23) <X(23)>`-of-circumsymmedial-triangle
+   * :ref:`X(352) <X(352)>` = inverse-in-{circumcircle, nine-point circle}-inverter of X(3815)
+   * :ref:`X(352) <X(352)>` = orthocentroidal-to-ABC :term:`similarity image <similarity-image>` of :ref:`X(111) <X(111)>`
+   * :ref:`X(352) <X(352)>` = 4th-Brocard-to-circumsymmedial similarity image of :ref:`X(111) <X(111)>`
+   * :ref:`X(352) <X(352)>` = X(2709)-of-1st-Parry-triangle
+   * :ref:`X(352) <X(352)>` = :ref:`X(843) <X(843)>`-of-2nd-Parry-triangle
+   * :ref:`X(352) <X(352)>` = :ref:`X(110) <X(110)>`-of-3rd-Parry-triangle
+   * :ref:`X(352) <X(352)>` = inverse-in-Parry-isodynamic-circle of :ref:`X(23) <X(23)>`; see :ref:`X(2) <X(2)>`
+   * :ref:`X(352) <X(352)>` = :term:`radical trace <radical-trace>` of circumcircles of Artzt and anti-Artzt triangles
+   * :ref:`X(352) <X(352)>` = :term:`trilinear pole <trilinear-pole>`, wrt 3rd Parry triangle, of Lemoine axis
 
-{:ref:`2 <X(2)>`, :ref:`6 <X(6)>`}, {:ref:`3 <X(3)>`, :ref:`353 <X(353)>`}, {:ref:`23 <X(23)>`, 2502}, {:ref:`110 <X(110)>`, :ref:`187 <X(187)>`}, {:ref:`111 <X(111)>`, :ref:`511 <X(511)>`}
+.. toctree::
+   :hidden:
 
-Relations
----------
-
-* :ref:`X(352) <X(352)>` = reflection of :ref:`X(843) <X(843)>` in :ref:`X(187) <X(187)>`
-* :ref:`X(352) <X(352)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(6094)
-* :ref:`X(352) <X(352)>` = inverse-in-circumcircle of :ref:`X(353) <X(353)>`
-* :ref:`X(352) <X(352)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(373) <X(373)>`\ \ :ref:`X(512) <X(512)>`
-* :ref:`X(352) <X(352)>` = :ref:`X(23) <X(23)>`-of-circumsymmedial-triangle
-* :ref:`X(352) <X(352)>` = inverse-in-{circumcircle, nine-point circle}-inverter of X(3815)
-* :ref:`X(352) <X(352)>` = orthocentroidal-to-ABC :term:`similarity image <similarity-image>` of :ref:`X(111) <X(111)>`
-* :ref:`X(352) <X(352)>` = 4th-Brocard-to-circumsymmedial similarity image of :ref:`X(111) <X(111)>`
-* :ref:`X(352) <X(352)>` = X(2709)-of-1st-Parry-triangle
-* :ref:`X(352) <X(352)>` = :ref:`X(843) <X(843)>`-of-2nd-Parry-triangle
-* :ref:`X(352) <X(352)>` = :ref:`X(110) <X(110)>`-of-3rd-Parry-triangle
-* :ref:`X(352) <X(352)>` = inverse-in-Parry-isodynamic-circle of :ref:`X(23) <X(23)>`; see :ref:`X(2) <X(2)>`
-* :ref:`X(352) <X(352)>` = :term:`radical trace <radical-trace>` of circumcircles of Artzt and anti-Artzt triangles
-* :ref:`X(352) <X(352)>` = :term:`trilinear pole <trilinear-pole>`, wrt 3rd Parry triangle, of Lemoine axis
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

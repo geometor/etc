@@ -9,52 +9,42 @@
 X(365) = SQUARE ROOT POINT
 ==========================
 
+.. enunciation::
+
+   For a construction of :ref:`X(365) <X(365)>`, see the note at :ref:`X(2) <X(2)>`, which provides for a construction barycentric square roots which one can easily extend to a construction for trilinear square roots.
+
 .. figure:: x-00365.svg
    :alt: X(365) = SQUARE ROOT POINT
    :align: center
 
    **X(365) = SQUARE ROOT POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
-
-* :math:`a^{1/2} : b^{1/2} : c^{1/2}`
-
-Barycentrics
-~~~~~~~~~~~~
-
-* :math:`a^{3/2} : b^{3/2} : c^{3/2}`
-
-* **Kimberling (6, 9, 13) Search Value:** :math:`1.308932882636`
-
-Notes
------
+   | **Trilinears:** :math:`a^{1/2} : b^{1/2} : c^{1/2}`
+   | **Barycentrics:** :math:`a^{3/2} : b^{3/2} : c^{3/2}`
+   | **Search Value (6, 9, 13):** :math:`1.308932882636`
 
 .. container:: note-item
 
-   For a construction of :ref:`X(365) <X(365)>`, see the note at :ref:`X(2) <X(2)>`, which provides for a construction barycentric square roots which one can easily extend to a construction for trilinear square roots.
+   :ref:`X(365) <X(365)>` lies.
 
-Incidence
----------
+.. collapse:: Incident Central Lines
+   :badge: 6 lines
+   :class: line-catalog
 
-:ref:`X(365) <X(365)>` lies and on these lines:
+   {:ref:`1 <X(1)>`, :ref:`364 <X(364)>`}, {:ref:`6 <X(6)>`, 2118}, {:ref:`43 <X(43)>`, 2068}, {:ref:`292 <X(292)>`, 2146}, {2110, 2119}, {2144, 2147}
 
-{:ref:`1 <X(1)>`, :ref:`364 <X(364)>`}, {:ref:`6 <X(6)>`, 2118}, {:ref:`43 <X(43)>`, 2068}, {:ref:`292 <X(292)>`, 2146}, {2110, 2119}, {2144, 2147}
+.. collapse:: Functional Relations
+   :badge: 5 relations
 
-Relations
----------
+   * :ref:`X(365) <X(365)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(366) <X(366)>`
+   * :ref:`X(365) <X(365)>` = :term:`complement <complement>` of X(20346)
+   * :ref:`X(365) <X(365)>` = :term:`anticomplement <anticomplement>` of X(20334)
+   * :ref:`X(365) <X(365)>` = :term:`crosssum <crosssum>` of :ref:`X(1) <X(1)>` and :ref:`X(364) <X(364)>`
+   * :ref:`X(365) <X(365)>` = trilinear square root of :ref:`X(6) <X(6)>`
 
-* :ref:`X(365) <X(365)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(366) <X(366)>`
-* :ref:`X(365) <X(365)>` = :term:`complement <complement>` of X(20346)
-* :ref:`X(365) <X(365)>` = :term:`anticomplement <anticomplement>` of X(20334)
-* :ref:`X(365) <X(365)>` = :term:`crosssum <crosssum>` of :ref:`X(1) <X(1)>` and :ref:`X(364) <X(364)>`
-* :ref:`X(365) <X(365)>` = trilinear square root of :ref:`X(6) <X(6)>`
+.. toctree::
+   :hidden:
 
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

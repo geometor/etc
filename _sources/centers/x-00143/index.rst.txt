@@ -8,41 +8,61 @@
 X(143) = NINE-POINT CENTER OF ORTHIC TRIANGLE
 =============================================
 
+.. enunciation::
+
+   :ref:`X(143) <X(143)>` is the third of three Spanish Points developed by Antreas P. Hatzipolakis and Javier Garcia Capitan in 2009; see X(3567).
+
 .. figure:: x-00143.svg
    :alt: X(143) = NINE-POINT CENTER OF ORTHIC TRIANGLE
    :align: center
 
    **X(143) = NINE-POINT CENTER OF ORTHIC TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`(\sec A)[\cos(2C - 2A) + \cos(2A - 2B)] : :`
+   | **Barycentrics:** :math:`(\tan A)[\cos(2C - 2A) + \cos(2A - 2B)] : :`
+   | **Search Value (6, 9, 13):** :math:`-0.095497496756`
 
-* :math:`(\sec A)[\cos(2C - 2A) + \cos(2A - 2B)] : :`
-* :math:`(1 - 2 \cos 2A)\cos(B - C)]: :`
-* :math:`\sec A \cos(3A) \cos(B - C) : :`
+.. collapse:: Alternate Coordinates
+   :badge: 3 forms
 
-Barycentrics
-~~~~~~~~~~~~
+   * **Trilinears:** :math:`(1 - 2 \cos 2A)\cos(B - C)]: :`
+   * **Trilinears:** :math:`\sec A \cos(3A) \cos(B - C) : :`
+   * **Barycentrics:** :math:`a^2 (a^2 b^2 + a^2 c^2 + 2 b^2 c^2 - b^4 - c^4) (a^4 + b^4 + c^4 - 2 a^2 b^2 - 2 a^2 c^2 - b^2 c^2) : :`
 
-* :math:`(\tan A)[\cos(2C - 2A) + \cos(2A - 2B)] : :`
-* :math:`a^2 (a^2 b^2 + a^2 c^2 + 2 b^2 c^2 - b^4 - c^4) (a^4 + b^4 + c^4 - 2 a^2 b^2 - 2 a^2 c^2 - b^2 c^2) : :`
+.. collapse:: Linear Combinations
+   :badge: 1 combination
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`-0.095497496756`
-
-Linear Combinations
--------------------
-
-* :ref:`X(143) <X(143)>` = :ref:`X(5) <X(5)>` - 3 :ref:`X(51) <X(51)>` = 3 :ref:`X(51) <X(51)>` + :ref:`X(52) <X(52)>` = :ref:`X(4) <X(4)>` + 3 :ref:`X(568) <X(568)>` = :ref:`X(3) <X(3)>` + 3 X(3060) = 3 X(2979) - 7 X(3526) = :ref:`X(3) <X(3)>` - 5 X(3567) = 3 X(3060) + 5 X(3567) = 5 :ref:`X(632) <X(632)>` - 3 X(3917) = 3 :ref:`X(140) <X(140)>` - 2 X(5447) = X(5447) - 3 X(5462) = 3 :ref:`X(5) <X(5)>` - X(5562) = 9 :ref:`X(51) <X(51)>` - X(5562) = 3 :ref:`X(52) <X(52)>` + X(5562) = 5 X(1656) - 9 X(5640) = 3 :ref:`X(381) <X(381)>` - X(5876) = 3 :ref:`X(381) <X(381)>` + X(5889) = :ref:`X(382) <X(382)>` + 3 X(5890) = 5 X(5562) - 9 X(5891) = 5 :ref:`X(5) <X(5)>` - 3 X(5891) = 5 :ref:`X(51) <X(51)>` - X(5891) = 5 :ref:`X(52) <X(52)>` + 3 X(5891) = 2 X(3530) - 3 X(5892) = X(1216) - 3 X(5943) = 2 X(3628) - 3 X(5943) = :ref:`X(3) <X(3)>` - 3 X(5946) = 5 X(3567) - 3 X(5946) = 3 :ref:`X(568) <X(568)>` - X(6102) = 3 X(3830) + X(6241) = 3 :ref:`X(2) <X(2)>` + X(6243) = 3 X(5093) + X(6403) = :ref:`X(195) <X(195)>` + 3 X(7730) = 11 X(5070) - 7 X(7999)
-
-Notes
------
+   * :ref:`X(143) <X(143)>` = :ref:`X(5) <X(5)>` - 3 :ref:`X(51) <X(51)>` = 3 :ref:`X(51) <X(51)>` + :ref:`X(52) <X(52)>` = :ref:`X(4) <X(4)>` + 3 :ref:`X(568) <X(568)>` = :ref:`X(3) <X(3)>` + 3 X(3060) = 3 X(2979) - 7 X(3526) = :ref:`X(3) <X(3)>` - 5 X(3567) = 3 X(3060) + 5 X(3567) = 5 :ref:`X(632) <X(632)>` - 3 X(3917) = 3 :ref:`X(140) <X(140)>` - 2 X(5447) = X(5447) - 3 X(5462) = 3 :ref:`X(5) <X(5)>` - X(5562) = 9 :ref:`X(51) <X(51)>` - X(5562) = 3 :ref:`X(52) <X(52)>` + X(5562) = 5 X(1656) - 9 X(5640) = 3 :ref:`X(381) <X(381)>` - X(5876) = 3 :ref:`X(381) <X(381)>` + X(5889) = :ref:`X(382) <X(382)>` + 3 X(5890) = 5 X(5562) - 9 X(5891) = 5 :ref:`X(5) <X(5)>` - 3 X(5891) = 5 :ref:`X(51) <X(51)>` - X(5891) = 5 :ref:`X(52) <X(52)>` + 3 X(5891) = 2 X(3530) - 3 X(5892) = X(1216) - 3 X(5943) = 2 X(3628) - 3 X(5943) = :ref:`X(3) <X(3)>` - 3 X(5946) = 5 X(3567) - 3 X(5946) = 3 :ref:`X(568) <X(568)>` - X(6102) = 3 X(3830) + X(6241) = 3 :ref:`X(2) <X(2)>` + X(6243) = 3 X(5093) + X(6403) = :ref:`X(195) <X(195)>` + 3 X(7730) = 11 X(5070) - 7 X(7999)
 
 .. container:: note-item
 
-   :ref:`X(143) <X(143)>` is the third of three Spanish Points developed by Antreas P. Hatzipolakis and Javier Garcia Capitan in 2009; see X(3567).
+   :ref:`X(143) <X(143)>` lies on the curves K054, K416, K464, Q106.
+
+.. collapse:: Incident Central Lines
+   :badge: 45 lines
+   :class: line-catalog
+
+   {:ref:`2 <X(2)>`, 6101}, {:ref:`3 <X(3)>`, 1173}, {:ref:`4 <X(4)>`, :ref:`94 <X(94)>`}, {:ref:`5 <X(5)>`, :ref:`51 <X(51)>`}, {:ref:`6 <X(6)>`, :ref:`26 <X(26)>`}, {:ref:`23 <X(23)>`, 1199}, {:ref:`25 <X(25)>`, :ref:`156 <X(156)>`}, {:ref:`30 <X(30)>`, :ref:`389 <X(389)>`}, {:ref:`49 <X(49)>`, 1493}, {:ref:`54 <X(54)>`, 2070}, {:ref:`61 <X(61)>`, 2912}, {:ref:`62 <X(62)>`, 2913}, {:ref:`110 <X(110)>`, :ref:`195 <X(195)>`}, {:ref:`140 <X(140)>`, :ref:`511 <X(511)>`}, {:ref:`182 <X(182)>`, 7525}, {:ref:`185 <X(185)>`, 3627}, {:ref:`324 <X(324)>`, :ref:`565 <X(565)>`}, {:ref:`381 <X(381)>`, 5876}, {:ref:`382 <X(382)>`, 5890}, {:ref:`567 <X(567)>`, 7488}, {:ref:`569 <X(569)>`, 7502}, {:ref:`575 <X(575)>`, 7555}, {:ref:`576 <X(576)>`, 1147}, {:ref:`578 <X(578)>`, 1658}, {:ref:`632 <X(632)>`, 3917}, {:ref:`970 <X(970)>`, 7508}, {1181, 7530}, {1216, 3628}, {1351, 6642}, {1353, 1843}, {1656, 5640}, {1993, 7506}, {2392, 5885}, {2937, 5012}, {2979, 3526}, {3517, 5093}, {3530, 5892}, {3580, 5576}, {3830, 6241}, {3850, 5907}, {3853, 6000}, {5070, 7999}, {5609, 7545}, {6515, 7528}, {7517, 7592}
+
+.. collapse:: Functional Relations
+   :badge: 11 relations
+
+   * :ref:`X(143) <X(143)>` = midpoint of X(i) and X(j) for these {i,j}: {:ref:`4 <X(4)>`, 6102}, {:ref:`5 <X(5)>`, :ref:`52 <X(52)>`}, {:ref:`185 <X(185)>`, 3627}, {:ref:`389 <X(389)>`, 5446}, {1353, 1843}, {1493, 6152}, {3060, 5946}, {5876, 5889}, {6101, 6243}
+   * :ref:`X(143) <X(143)>` = reflection of X(i) in X(j) for these {i,j}: {:ref:`140 <X(140)>`, 5462}, {1216, 3628}, {5907, 3850}
+   * :ref:`X(143) <X(143)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(252) <X(252)>`
+   * :ref:`X(143) <X(143)>` = :term:`anticomplement <anticomplement>` of X(32142)
+   * :ref:`X(143) <X(143)>` = :ref:`X(137) <X(137)>`-:term:`cross conjugate <cross-conjugate>` of X(1510)
+   * :ref:`X(143) <X(143)>` = :ref:`X(5) <X(5)>`-of-:term:`orthic triangle <orthic-triangle>`
+   * :ref:`X(143) <X(143)>` = :ref:`X(249) <X(249)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(1625)
+   * :ref:`X(143) <X(143)>` = :ref:`X(137) <X(137)>`-cross conjugate of X(1510)
+   * :ref:`X(143) <X(143)>` = excentral-to-ABC :term:`functional image <functional-image>` of :ref:`X(5) <X(5)>`
+   * :ref:`X(143) <X(143)>` = {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): (:ref:`2 <X(2)>`, 6243, 6101), (:ref:`3 <X(3)>`, 3567, 5946), (:ref:`4 <X(4)>`, :ref:`568 <X(568)>`, 6102), (:ref:`49 <X(49)>`, 1994, 1493), (:ref:`51 <X(51)>`, :ref:`52 <X(52)>`, :ref:`5 <X(5)>`), (:ref:`54 <X(54)>`, 2070, 5944), (:ref:`381 <X(381)>`, 5889, 5876), (1112, 6746, :ref:`4 <X(4)>`), (1216, 5943, 3628), (1994, 3518, :ref:`49 <X(49)>`), (3060, 3567, :ref:`3 <X(3)>`)
+   * :ref:`X(143) <X(143)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these {i,j}: {:ref:`1 <X(1)>`, :ref:`252 <X(252)>`}, {:ref:`54 <X(54)>`, 2962}, {:ref:`93 <X(93)>`, 2169}, {:ref:`930 <X(930)>`, 2616}, {2167, 2963}, {2190, 3519}
+
+Notes
+-----
 
 .. container:: note-item
 
@@ -52,30 +72,7 @@ Notes
 
    :ref:`X(143) <X(143)>` is the QA-P13 center (Nine-point Center of the QA-Diagonal Triangle) of quadrangle ABC\ :ref:`X(4) <X(4)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/41-qa-p13.html). Also, :ref:`X(143) <X(143)>` is the QA-P22 center (Midpoint QA-P1 and QA-P20) of quadrangle ABC\ :ref:`X(4) <X(4)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/50-qa-p22.html)
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(143) <X(143)>` lies on the curves K054, K416, K464, Q106 and on these lines:
-
-{:ref:`2 <X(2)>`, 6101}, {:ref:`3 <X(3)>`, 1173}, {:ref:`4 <X(4)>`, :ref:`94 <X(94)>`}, {:ref:`5 <X(5)>`, :ref:`51 <X(51)>`}, {:ref:`6 <X(6)>`, :ref:`26 <X(26)>`}, {:ref:`23 <X(23)>`, 1199}, {:ref:`25 <X(25)>`, :ref:`156 <X(156)>`}, {:ref:`30 <X(30)>`, :ref:`389 <X(389)>`}, {:ref:`49 <X(49)>`, 1493}, {:ref:`54 <X(54)>`, 2070}, {:ref:`61 <X(61)>`, 2912}, {:ref:`62 <X(62)>`, 2913}, {:ref:`110 <X(110)>`, :ref:`195 <X(195)>`}, {:ref:`140 <X(140)>`, :ref:`511 <X(511)>`}, {:ref:`182 <X(182)>`, 7525}, {:ref:`185 <X(185)>`, 3627}, {:ref:`324 <X(324)>`, :ref:`565 <X(565)>`}, {:ref:`381 <X(381)>`, 5876}, {:ref:`382 <X(382)>`, 5890}, {:ref:`567 <X(567)>`, 7488}, {:ref:`569 <X(569)>`, 7502}, {:ref:`575 <X(575)>`, 7555}, {:ref:`576 <X(576)>`, 1147}, {:ref:`578 <X(578)>`, 1658}, {:ref:`632 <X(632)>`, 3917}, {:ref:`970 <X(970)>`, 7508}, {1181, 7530}, {1216, 3628}, {1351, 6642}, {1353, 1843}, {1656, 5640}, {1993, 7506}, {2392, 5885}, {2937, 5012}, {2979, 3526}, {3517, 5093}, {3530, 5892}, {3580, 5576}, {3830, 6241}, {3850, 5907}, {3853, 6000}, {5070, 7999}, {5609, 7545}, {6515, 7528}, {7517, 7592}
-
-Relations
----------
-
-* :ref:`X(143) <X(143)>` = midpoint of X(i) and X(j) for these {i,j}: {:ref:`4 <X(4)>`, 6102}, {:ref:`5 <X(5)>`, :ref:`52 <X(52)>`}, {:ref:`185 <X(185)>`, 3627}, {:ref:`389 <X(389)>`, 5446}, {1353, 1843}, {1493, 6152}, {3060, 5946}, {5876, 5889}, {6101, 6243}
-* :ref:`X(143) <X(143)>` = reflection of X(i) in X(j) for these {i,j}: {:ref:`140 <X(140)>`, 5462}, {1216, 3628}, {5907, 3850}
-* :ref:`X(143) <X(143)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(252) <X(252)>`
-* :ref:`X(143) <X(143)>` = :term:`anticomplement <anticomplement>` of X(32142)
-* :ref:`X(143) <X(143)>` = :ref:`X(137) <X(137)>`-:term:`cross conjugate <cross-conjugate>` of X(1510)
-* :ref:`X(143) <X(143)>` = :ref:`X(5) <X(5)>`-of-:term:`orthic triangle <orthic-triangle>`
-* :ref:`X(143) <X(143)>` = :ref:`X(249) <X(249)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(1625)
-* :ref:`X(143) <X(143)>` = :ref:`X(137) <X(137)>`-cross conjugate of X(1510)
-* :ref:`X(143) <X(143)>` = excentral-to-ABC :term:`functional image <functional-image>` of :ref:`X(5) <X(5)>`
-* :ref:`X(143) <X(143)>` = {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): (:ref:`2 <X(2)>`, 6243, 6101), (:ref:`3 <X(3)>`, 3567, 5946), (:ref:`4 <X(4)>`, :ref:`568 <X(568)>`, 6102), (:ref:`49 <X(49)>`, 1994, 1493), (:ref:`51 <X(51)>`, :ref:`52 <X(52)>`, :ref:`5 <X(5)>`), (:ref:`54 <X(54)>`, 2070, 5944), (:ref:`381 <X(381)>`, 5889, 5876), (1112, 6746, :ref:`4 <X(4)>`), (1216, 5943, 3628), (1994, 3518, :ref:`49 <X(49)>`), (3060, 3567, :ref:`3 <X(3)>`)
-* :ref:`X(143) <X(143)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these {i,j}: {:ref:`1 <X(1)>`, :ref:`252 <X(252)>`}, {:ref:`54 <X(54)>`, 2962}, {:ref:`93 <X(93)>`, 2169}, {:ref:`930 <X(930)>`, 2616}, {2167, 2963}, {2190, 3519}
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

@@ -8,21 +8,36 @@
 X(465) = EULER LINE INTERCEPT OF LINE X(216)X(395)
 ==================================================
 
+.. enunciation::
+
+   :ref:`X(465) <X(465)>` is the {:ref:`X(2) <X(2)>`,\ :ref:`X(3) <X(3)>`}-harmonic conjugate of :ref:`X(466) <X(466)>`.
+
 .. figure:: x-00465.svg
    :alt: X(465) = EULER LINE INTERCEPT OF LINE X(216)X(395)
    :align: center
 
    **X(465) = EULER LINE INTERCEPT OF LINE X(216)X(395)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`u \cot A : v \cot B : w \cot C`, where, u : v : w = :ref:`X(397) <X(397)>`; e.g., u(A,B,C) = cos(B - C) - 2 cos(A + π/3)
+   | **Search Value (6, 9, 13):** :math:`0.344964461051`
 
-* :math:`u \cot A : v \cot B : w \cot C`, where, u : v : w = :ref:`X(397) <X(397)>`; e.g., u(A,B,C) = cos(B - C) - 2 cos(A + π/3)
+.. container:: note-item
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`0.344964461051`
+   :ref:`X(465) <X(465)>` lies.
+
+.. collapse:: Incident Central Lines
+   :badge: 3 lines
+   :class: line-catalog
+
+   {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`216 <X(216)>`, :ref:`395 <X(395)>`}, {:ref:`396 <X(396)>`, :ref:`577 <X(577)>`}
+
+.. collapse:: Functional Relations
+   :badge: 2 relations
+
+   * :ref:`X(465) <X(465)>` = :term:`complement <complement>` of :ref:`X(473) <X(473)>`
+   * :ref:`X(465) <X(465)>` = :term:`complementary conjugate <complementary-conjugate>` of the complement of X(32585)
 
 Notes
 -----
@@ -35,25 +50,7 @@ Notes
 
    As a point on the Euler line, :ref:`X(465) <X(465)>` has Shinagawa coefficients (2F + 3\ :sup:`1/2`\ S, -3\ :sup:`1/2`\ S).
 
-.. container:: note-item
+.. toctree::
+   :hidden:
 
-   :ref:`X(465) <X(465)>` is the {:ref:`X(2) <X(2)>`,\ :ref:`X(3) <X(3)>`}-harmonic conjugate of :ref:`X(466) <X(466)>`.
-
-Incidence
----------
-
-:ref:`X(465) <X(465)>` lies and on these lines:
-
-{:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`216 <X(216)>`, :ref:`395 <X(395)>`}, {:ref:`396 <X(396)>`, :ref:`577 <X(577)>`}
-
-Relations
----------
-
-* :ref:`X(465) <X(465)>` = :term:`complement <complement>` of :ref:`X(473) <X(473)>`
-* :ref:`X(465) <X(465)>` = :term:`complementary conjugate <complementary-conjugate>` of the complement of X(32585)
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

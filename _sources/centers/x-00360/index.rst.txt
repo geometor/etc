@@ -9,31 +9,65 @@
 X(360) = HOFSTADTER ZERO POINT
 ==============================
 
+.. enunciation::
+
+   The limit of this point as r approaches 0 is :ref:`X(360) <X(360)>`. The two Hofstadter points, :ref:`X(359) <X(359)>` and :ref:`X(360) <X(360)>` are examples of transcendental :term:`triangle centers <triangle-center>`, since they have no trilinear or barycentric representation using only algebraic functions of a,b,c (or sin A, sin B, sin C).
+
 .. figure:: x-00360.svg
    :alt: X(360) = HOFSTADTER ZERO POINT
    :align: center
 
    **X(360) = HOFSTADTER ZERO POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`A/a : B/b : C/c`
+   | **Barycentrics:** :math:`A : B : C`
+   | **Search Value (6, 9, 13):** :math:`1.045653663244`
 
-* :math:`A/a : B/b : C/c`
+.. collapse:: Linear Combinations
+   :badge: 1 combination
 
-Barycentrics
-~~~~~~~~~~~~
+   * :ref:`X(360) <X(360)>` = A\*[A] + B\*[B] + C\*[C], where A, B, C are the angles and [A], [B], [C] are the vertices
 
-* :math:`A : B : C`
+.. container:: note-item
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`1.045653663244`
+   :ref:`X(360) <X(360)>` lies.
 
-Linear Combinations
--------------------
+.. collapse:: Incident Central Lines
+   :badge: 1 line
+   :class: line-catalog
 
-* :ref:`X(360) <X(360)>` = A\*[A] + B\*[B] + C\*[C], where A, B, C are the angles and [A], [B], [C] are the vertices
+   {:ref:`2 <X(2)>`, 1115}
+
+.. collapse:: Functional Relations
+   :badge: 25 relations
+
+   * :ref:`X(1) <X(1)>` = Hofstadter 1/2 point = :term:`antigonal image <antigonal-image>` of :ref:`X(80) <X(80)>`
+   * :ref:`X(3) <X(3)>` = Hofstadter 2 point = antigonal image of :ref:`X(265) <X(265)>`
+   * :ref:`X(4) <X(4)>` = Hofstadter -1 point
+   * :ref:`X(35) <X(35)>` = Hofstadter 3/2 point
+   * :ref:`X(79) <X(79)>` = Hofstadter -1/2 point = antigonal image of X(3065)
+   * :ref:`X(186) <X(186)>` = Hofstadter 3 point = antigonal image of X(5962)
+   * :ref:`X(265) <X(265)>` = Hofstadter -2 point = antigonal image of :ref:`X(3) <X(3)>`
+   * :ref:`X(357) <X(357)>` = Hofstadter 1/3 point
+   * :ref:`X(358) <X(358)>` = Hofstadter 2/3 point
+   * :ref:`X(359) <X(359)>` = Hofstadter 0 point
+   * :ref:`X(360) <X(360)>` = Hofstadter 1 point
+   * X(1127) = Hofstadter 1/4 point
+   * X(1129) = Hofstadter 3/4 point
+   * X(5457) = Hofstadter -1/3 point
+   * X(5458) = Hofstadter -2/3 point
+   * X(5961) = Hofstadter 4 point = antigonal image of X(5964)
+   * X(5962) = Hofstadter -3 point = antigonal image of :ref:`X(186) <X(186)>`
+   * X(5963) = Hofstadter 5 point
+   * X(5964) = Hofstadter -4 point = antigonal image of X(5961)
+   * :ref:`X(360) <X(360)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(359) <X(359)>`
+   * :ref:`X(360) <X(360)>` = :term:`anticomplement <anticomplement>` of X(1115)
+   * :ref:`X(360) <X(360)>` = X(i)-:term:`anticomplementary conjugate <anticomplementary-conjugate>` of X(j) for these (i,j): {7021, :ref:`8 <X(8)>`}, {7041, :ref:`69 <X(69)>`}
+   * :ref:`X(360) <X(360)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these (i,j): {:ref:`1 <X(1)>`, :ref:`359 <X(359)>`}, {:ref:`6 <X(6)>`, 1077}
+   * :ref:`X(360) <X(360)>` = barycentric product :ref:`X(75) <X(75)>`\ \*X(1049)
+   * :ref:`X(360) <X(360)>` = barycentric quotient X(i)/X(j) for these {i,j}: {:ref:`1 <X(1)>`, 1077}, {:ref:`6 <X(6)>`, :ref:`359 <X(359)>`}, {1049, :ref:`1 <X(1)>`}, {1077, 1028}, {1085, 1049}
 
 Notes
 -----
@@ -46,57 +80,16 @@ Notes
 
 .. container:: note-item
 
-   The limit of this point as r approaches 0 is :ref:`X(360) <X(360)>`. The two Hofstadter points, :ref:`X(359) <X(359)>` and :ref:`X(360) <X(360)>` are examples of transcendental :term:`triangle centers <triangle-center>`, since they have no trilinear or barycentric representation using only algebraic functions of a,b,c (or sin A, sin B, sin C).
-
-.. container:: note-item
-
    **Clark Kimberling,** "Hofstadter points," *Nieuw Archief voor Wiskunde* 12 (1994) 109-114.
 
 .. container:: note-item
 
    If r is an integer other than 0, 1, or 2, then the inverse-in-circumcircle of the Hofstadter r point is the Hofstadter (2-r) point;
 
-      * thus, since the :term:`isogonal conjugate <isogonal-conjugate>` of the Hofstadter r point is the Hofstadter (1-r) point, if r is not -1, 0 or 1,
-      * then the :term:`antigonal image <antigonal-image>` of the Hofstadter r point is the Hofstadter -r point.
+      * thus, since the isogonal conjugate of the Hofstadter r point is the Hofstadter (1-r) point, if r is not -1, 0 or 1,
+      * then the antigonal image of the Hofstadter r point is the Hofstadter -r point.
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(360) <X(360)>` lies and on these lines:
-
-{:ref:`2 <X(2)>`, 1115}
-
-Relations
----------
-
-* :ref:`X(1) <X(1)>` = Hofstadter 1/2 point = antigonal image of :ref:`X(80) <X(80)>`
-* :ref:`X(3) <X(3)>` = Hofstadter 2 point = antigonal image of :ref:`X(265) <X(265)>`
-* :ref:`X(4) <X(4)>` = Hofstadter -1 point
-* :ref:`X(35) <X(35)>` = Hofstadter 3/2 point
-* :ref:`X(79) <X(79)>` = Hofstadter -1/2 point = antigonal image of X(3065)
-* :ref:`X(186) <X(186)>` = Hofstadter 3 point = antigonal image of X(5962)
-* :ref:`X(265) <X(265)>` = Hofstadter -2 point = antigonal image of :ref:`X(3) <X(3)>`
-* :ref:`X(357) <X(357)>` = Hofstadter 1/3 point
-* :ref:`X(358) <X(358)>` = Hofstadter 2/3 point
-* :ref:`X(359) <X(359)>` = Hofstadter 0 point
-* :ref:`X(360) <X(360)>` = Hofstadter 1 point
-* X(1127) = Hofstadter 1/4 point
-* X(1129) = Hofstadter 3/4 point
-* X(5457) = Hofstadter -1/3 point
-* X(5458) = Hofstadter -2/3 point
-* X(5961) = Hofstadter 4 point = antigonal image of X(5964)
-* X(5962) = Hofstadter -3 point = antigonal image of :ref:`X(186) <X(186)>`
-* X(5963) = Hofstadter 5 point
-* X(5964) = Hofstadter -4 point = antigonal image of X(5961)
-* :ref:`X(360) <X(360)>` = isogonal conjugate of :ref:`X(359) <X(359)>`
-* :ref:`X(360) <X(360)>` = :term:`anticomplement <anticomplement>` of X(1115)
-* :ref:`X(360) <X(360)>` = X(i)-:term:`anticomplementary conjugate <anticomplementary-conjugate>` of X(j) for these (i,j): {7021, :ref:`8 <X(8)>`}, {7041, :ref:`69 <X(69)>`}
-* :ref:`X(360) <X(360)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these (i,j): {:ref:`1 <X(1)>`, :ref:`359 <X(359)>`}, {:ref:`6 <X(6)>`, 1077}
-* :ref:`X(360) <X(360)>` = barycentric product :ref:`X(75) <X(75)>`\ \*X(1049)
-* :ref:`X(360) <X(360)>` = barycentric quotient X(i)/X(j) for these {i,j}: {:ref:`1 <X(1)>`, 1077}, {:ref:`6 <X(6)>`, :ref:`359 <X(359)>`}, {1049, :ref:`1 <X(1)>`}, {1077, 1028}, {1085, 1049}
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

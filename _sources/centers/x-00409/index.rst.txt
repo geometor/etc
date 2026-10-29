@@ -8,55 +8,49 @@
 X(409) = EULER X(21)-1st-SUBSTITUTION POINT
 ===========================================
 
+.. enunciation::
+
+   As a point on the Euler line, :ref:`X(409) <X(409)>` has Shinagawa coefficients ($aS\ :sub:`A`\ $[($aS\ :sub:`A`\ $)\ :sup:`2` - $bcS\ :sub:`B`\ S\ :sub:`C`\ $] + 2abcFS\ :sup:`2`, -$aS\ :sub:`A`\ $[($aS\ :sub:`A`\ $)\ :sup:`2` - $bcS\ :sub:`B`\ S\ :sub:`C`\ $] + abc[($aS\ :sub:`A`\ $)\ :sup:`2` + $bcS\ :sub:`B`\ S\ :sub:`C`\ $ - 2FS\ :sup:`2`]).
+
 .. figure:: x-00409.svg
    :alt: X(409) = EULER X(21)-1st-SUBSTITUTION POINT
    :align: center
 
    **X(409) = EULER X(21)-1st-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`u^{2} + vw : v^{2} + wu : w^{2} + uv`, where u : v : w = :ref:`X(21) <X(21)>`; e.g., u = u(A,B,C) = 1/(cos B + cos C)
+   | **Barycentrics:** :math:`a(u^{2} + vw) : b(v^{2} + wu) : c(w^{2} + uv)`
+   | **Search Value (6, 9, 13):** :math:`2.330340117158`
 
-* :math:`u^{2} + vw : v^{2} + wu : w^{2} + uv`, where u : v : w = :ref:`X(21) <X(21)>`; e.g., u = u(A,B,C) = 1/(cos B + cos C)
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-Barycentrics
-~~~~~~~~~~~~
-
-* :math:`a(u^{2} + vw) : b(v^{2} + wu) : c(w^{2} + uv)`
-* :math:`a*(a + b)*(a + c)*(a^4 - a^3*b + a*b^3 - b^4 - a^3*c + a^2*b*c + a*b^2*c + b^3*c + a*b*c^2 + 4*b^2*c^2 + a*c^3 + b*c^3 - c^4) : :`
-
-* **Kimberling (6, 9, 13) Search Value:** :math:`2.330340117158`
-
-Notes
------
+   * **Barycentrics:** :math:`a*(a + b)*(a + c)*(a^4 - a^3*b + a*b^3 - b^4 - a^3*c + a^2*b*c + a*b^2*c + b^3*c + a*b*c^2 + 4*b^2*c^2 + a*c^3 + b*c^3 - c^4) : :`
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(409) <X(409)>` has Shinagawa coefficients ($aS\ :sub:`A`\ $[($aS\ :sub:`A`\ $)\ :sup:`2` - $bcS\ :sub:`B`\ S\ :sub:`C`\ $] + 2abcFS\ :sup:`2`, -$aS\ :sub:`A`\ $[($aS\ :sub:`A`\ $)\ :sup:`2` - $bcS\ :sub:`B`\ S\ :sub:`C`\ $] + abc[($aS\ :sub:`A`\ $)\ :sup:`2` + $bcS\ :sub:`B`\ S\ :sub:`C`\ $ - 2FS\ :sup:`2`]).
+   :ref:`X(409) <X(409)>` lies.
 
-Incidence
----------
+.. collapse:: Incident Central Lines
+   :badge: 32 lines
+   :class: line-catalog
 
-:ref:`X(409) <X(409)>` lies and on these lines:
+   {:ref:`1 <X(1)>`, 1247}, {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`10 <X(10)>`, 37816}, {:ref:`46 <X(46)>`, 51290}, {:ref:`58 <X(58)>`, 5883}, {:ref:`65 <X(65)>`, 1098}, {:ref:`81 <X(81)>`, 3924}, {:ref:`86 <X(86)>`, 40980}, {:ref:`100 <X(100)>`, 21674}, {:ref:`229 <X(229)>`, 2607}, {:ref:`643 <X(643)>`, 5836}, {:ref:`662 <X(662)>`, 2646}, {:ref:`759 <X(759)>`, 1125}, {:ref:`950 <X(950)>`, 19642}, {:ref:`993 <X(993)>`, 47059}, {1054, 34882}, {1104, 2363}, {1178, 1201}, {1958, 10448}, {2648, 9398}, {2886, 52360}, {3304, 36224}, {3754, 5127}, {3897, 37793}, {4653, 27784}, {5260, 27714}, {7354, 52361}, {9275, 30143}, {15792, 35016}, {17104, 30147}, {24619, 26532}, {34195, 37783}
 
-{:ref:`1 <X(1)>`, 1247}, {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`10 <X(10)>`, 37816}, {:ref:`46 <X(46)>`, 51290}, {:ref:`58 <X(58)>`, 5883}, {:ref:`65 <X(65)>`, 1098}, {:ref:`81 <X(81)>`, 3924}, {:ref:`86 <X(86)>`, 40980}, {:ref:`100 <X(100)>`, 21674}, {:ref:`229 <X(229)>`, 2607}, {:ref:`643 <X(643)>`, 5836}, {:ref:`662 <X(662)>`, 2646}, {:ref:`759 <X(759)>`, 1125}, {:ref:`950 <X(950)>`, 19642}, {:ref:`993 <X(993)>`, 47059}, {1054, 34882}, {1104, 2363}, {1178, 1201}, {1958, 10448}, {2648, 9398}, {2886, 52360}, {3304, 36224}, {3754, 5127}, {3897, 37793}, {4653, 27784}, {5260, 27714}, {7354, 52361}, {9275, 30143}, {15792, 35016}, {17104, 30147}, {24619, 26532}, {34195, 37783}
+.. collapse:: Functional Relations
+   :badge: 7 relations
 
-Relations
----------
+   * :ref:`X(409) <X(409)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(9399)
+   * :ref:`X(409) <X(409)>` = X(2648)-:term:`Ceva conjugate <ceva-conjugate>` of X(2651)
+   * :ref:`X(409) <X(409)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these (i,j): {:ref:`1 <X(1)>`, 9399}, {:ref:`65 <X(65)>`, 9398}
+   * :ref:`X(409) <X(409)>` = X(i)-Dao conjugate of X(j) for these (i,j): {:ref:`3 <X(3)>`, 9399}, {9398, 40602}
+   * :ref:`X(409) <X(409)>` = barycentric product :ref:`X(333) <X(333)>`\ \*X(2647)
+   * :ref:`X(409) <X(409)>` = barycentric quotient X(i)/X(j) for these {i,j}: {:ref:`6 <X(6)>`, 9399}, {:ref:`284 <X(284)>`, 9398}, {2647, :ref:`226 <X(226)>`}
+   * :ref:`X(409) <X(409)>` = {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): {:ref:`2 <X(2)>`, 2475, 27687}, {:ref:`2 <X(2)>`, 11101, :ref:`21 <X(21)>`}, {:ref:`3 <X(3)>`, 11116, 35991}, {:ref:`21 <X(21)>`, :ref:`29 <X(29)>`, :ref:`413 <X(413)>`}, {:ref:`21 <X(21)>`, 13746, 15776}, {:ref:`21 <X(21)>`, 17518, 13588}, {:ref:`21 <X(21)>`, 17568, 1817}, {:ref:`21 <X(21)>`, 35991, :ref:`3 <X(3)>`}, {:ref:`21 <X(21)>`, 37294, 17549}, {:ref:`65 <X(65)>`, 1098, 2651}, {:ref:`405 <X(405)>`, 17512, :ref:`21 <X(21)>`}, {:ref:`662 <X(662)>`, 40430, 2646}, {1010, 36011, :ref:`21 <X(21)>`}, {11102, 19259, :ref:`21 <X(21)>`}, {11110, 37227, :ref:`21 <X(21)>`}, {11110, 52244, 7483}, {13725, 14015, :ref:`21 <X(21)>`}, {13739, 37228, :ref:`21 <X(21)>`}, {16418, 37029, :ref:`21 <X(21)>`}, {16865, 37032, :ref:`21 <X(21)>`}
 
-* :ref:`X(409) <X(409)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(9399)
-* :ref:`X(409) <X(409)>` = X(2648)-:term:`Ceva conjugate <ceva-conjugate>` of X(2651)
-* :ref:`X(409) <X(409)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these (i,j): {:ref:`1 <X(1)>`, 9399}, {:ref:`65 <X(65)>`, 9398}
-* :ref:`X(409) <X(409)>` = X(i)-Dao conjugate of X(j) for these (i,j): {:ref:`3 <X(3)>`, 9399}, {9398, 40602}
-* :ref:`X(409) <X(409)>` = barycentric product :ref:`X(333) <X(333)>`\ \*X(2647)
-* :ref:`X(409) <X(409)>` = barycentric quotient X(i)/X(j) for these {i,j}: {:ref:`6 <X(6)>`, 9399}, {:ref:`284 <X(284)>`, 9398}, {2647, :ref:`226 <X(226)>`}
-* :ref:`X(409) <X(409)>` = {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): {:ref:`2 <X(2)>`, 2475, 27687}, {:ref:`2 <X(2)>`, 11101, :ref:`21 <X(21)>`}, {:ref:`3 <X(3)>`, 11116, 35991}, {:ref:`21 <X(21)>`, :ref:`29 <X(29)>`, :ref:`413 <X(413)>`}, {:ref:`21 <X(21)>`, 13746, 15776}, {:ref:`21 <X(21)>`, 17518, 13588}, {:ref:`21 <X(21)>`, 17568, 1817}, {:ref:`21 <X(21)>`, 35991, :ref:`3 <X(3)>`}, {:ref:`21 <X(21)>`, 37294, 17549}, {:ref:`65 <X(65)>`, 1098, 2651}, {:ref:`405 <X(405)>`, 17512, :ref:`21 <X(21)>`}, {:ref:`662 <X(662)>`, 40430, 2646}, {1010, 36011, :ref:`21 <X(21)>`}, {11102, 19259, :ref:`21 <X(21)>`}, {11110, 37227, :ref:`21 <X(21)>`}, {11110, 52244, 7483}, {13725, 14015, :ref:`21 <X(21)>`}, {13739, 37228, :ref:`21 <X(21)>`}, {16418, 37029, :ref:`21 <X(21)>`}, {16865, 37032, :ref:`21 <X(21)>`}
+.. toctree::
+   :hidden:
 
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

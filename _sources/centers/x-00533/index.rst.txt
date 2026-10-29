@@ -8,43 +8,40 @@
 X(533) = DIRECTION OF VECTOR AX + BX + CX, where X = X(18)
 ==========================================================
 
+.. enunciation::
+
+   Barycentrics af(a,b,c) : bf(b,c,a) : cf(c,a,b)
+
 .. figure:: x-00533.svg
    :alt: X(533) = DIRECTION OF VECTOR AX + BX + CX, where X = X(18)
    :align: center
 
    **X(533) = DIRECTION OF VECTOR AX + BX + CX, where X = X(18)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
-
-* :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where, f(a,b,c) = (2ax - by - cz)/a, x = x(A,B,C) = csc(A - π/6), y = x(B,C,A), z = x(C,A,B)
-
-Notes
------
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where, f(a,b,c) = (2ax - by - cz)/a, x = x(A,B,C) = csc(A - π/6), y = x(B,C,A), z = x(C,A,B)
 
 .. container:: note-item
 
-   Barycentrics af(a,b,c) : bf(b,c,a) : cf(c,a,b)
+   :ref:`X(533) <X(533)>` lies on the line at infinity.
 
-Incidence
----------
+.. container:: note-item
 
-:ref:`X(533) <X(533)>` lies on the line at infinity.
+   :ref:`X(533) <X(533)>` lies.
 
-:ref:`X(533) <X(533)>` lies and on these lines:
+.. collapse:: Incident Central Lines
+   :badge: 9 lines
+   :class: line-catalog
 
-{:ref:`2 <X(2)>`, :ref:`18 <X(18)>`}, {:ref:`13 <X(13)>`, :ref:`621 <X(621)>`}, {:ref:`14 <X(14)>`, :ref:`299 <X(299)>`}, {:ref:`15 <X(15)>`, :ref:`298 <X(298)>`}, {:ref:`16 <X(16)>`, :ref:`617 <X(617)>`}, {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}, {:ref:`395 <X(395)>`, :ref:`619 <X(619)>`}, {:ref:`396 <X(396)>`, :ref:`623 <X(623)>`}, {:ref:`398 <X(398)>`, :ref:`636 <X(636)>`}
+   {:ref:`2 <X(2)>`, :ref:`18 <X(18)>`}, {:ref:`13 <X(13)>`, :ref:`621 <X(621)>`}, {:ref:`14 <X(14)>`, :ref:`299 <X(299)>`}, {:ref:`15 <X(15)>`, :ref:`298 <X(298)>`}, {:ref:`16 <X(16)>`, :ref:`617 <X(617)>`}, {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}, {:ref:`395 <X(395)>`, :ref:`619 <X(619)>`}, {:ref:`396 <X(396)>`, :ref:`623 <X(623)>`}, {:ref:`398 <X(398)>`, :ref:`636 <X(636)>`}
 
-Relations
----------
+.. collapse:: Functional Relations
+   :badge: 1 relation
 
-* :ref:`X(533) <X(533)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(2381)
+   * :ref:`X(533) <X(533)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(2381)
 
-Construction
-------------
+.. toctree::
+   :hidden:
 
-.. literalinclude:: model.py
-   :language: python
+   code

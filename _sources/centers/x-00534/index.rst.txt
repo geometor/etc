@@ -8,39 +8,37 @@
 X(534) = DIRECTION OF VECTOR AX + BX + CX, where X = X(19)
 ==========================================================
 
+.. enunciation::
+
+   :ref:`X(534) <X(534)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(38883)
+
 .. figure:: x-00534.svg
    :alt: X(534) = DIRECTION OF VECTOR AX + BX + CX, where X = X(19)
    :align: center
 
    **X(534) = DIRECTION OF VECTOR AX + BX + CX, where X = X(19)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where, f(a,b,c) = (2ax - by - cz)/a, x = x(A,B,C) = tan A, y = x(B,C,A), z = x(C,A,B)
+   | **Barycentrics:** :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
 
-* :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where, f(a,b,c) = (2ax - by - cz)/a, x = x(A,B,C) = tan A, y = x(B,C,A), z = x(C,A,B)
+.. container:: note-item
 
-Barycentrics
-~~~~~~~~~~~~
+   :ref:`X(534) <X(534)>` lies.
 
-* :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
+.. collapse:: Incident Central Lines
+   :badge: 4 lines
+   :class: line-catalog
 
-Incidence
----------
+   {:ref:`2 <X(2)>`, :ref:`19 <X(19)>`}, {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}, {:ref:`553 <X(553)>`, 1407}, {1441, 1839}
 
-:ref:`X(534) <X(534)>` lies and on these lines:
+.. collapse:: Functional Relations
+   :badge: 1 relation
 
-{:ref:`2 <X(2)>`, :ref:`19 <X(19)>`}, {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}, {:ref:`553 <X(553)>`, 1407}, {1441, 1839}
+   * :ref:`X(534) <X(534)>` = isogonal conjugate of X(38883)
 
-Relations
----------
+.. toctree::
+   :hidden:
 
-* :ref:`X(534) <X(534)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(38883)
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

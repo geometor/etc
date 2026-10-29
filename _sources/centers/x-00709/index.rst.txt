@@ -8,40 +8,33 @@
 X(709) = EVEN (- 4, 3) CIRCUMCIRCLE POINT
 =========================================
 
+.. enunciation::
+
+   :ref:`X(709) <X(709)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(708) <X(708)>`
+
 .. figure:: x-00709.svg
    :alt: X(709) = EVEN (- 4, 3) CIRCUMCIRCLE POINT
    :align: center
 
    **X(709) = EVEN (- 4, 3) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = 1/[a :sup:`-5`\ (b\ :sup:`3` + c\ :sup:`3`) - a\ :sup:`2`\ (b :sup:`-4` + c :sup:`-4`)]
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Search Value (6, 9, 13):** :math:`-0.293639938613`
 
-* :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = 1/[a :sup:`-5`\ (b\ :sup:`3` + c\ :sup:`3`) - a\ :sup:`2`\ (b :sup:`-4` + c :sup:`-4`)]
+.. container:: note-item
 
-Barycentrics
-~~~~~~~~~~~~
+   :ref:`X(709) <X(709)>` lies on the circumcircle.
 
-* :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+.. collapse:: Functional Relations
+   :badge: 2 relations
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`-0.293639938613`
+   * :ref:`X(709) <X(709)>` = isogonal conjugate of :ref:`X(708) <X(708)>`
+   * :ref:`X(709) <X(709)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(35529)
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(709) <X(709)>` lies on the circumcircle.
-
-Relations
----------
-
-* :ref:`X(709) <X(709)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(708) <X(708)>`
-* :ref:`X(709) <X(709)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(35529)
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

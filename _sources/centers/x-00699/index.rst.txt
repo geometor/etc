@@ -8,46 +8,43 @@
 X(699) = EVEN (- 4, - 2) CIRCUMCIRCLE POINT
 ===========================================
 
+.. enunciation::
+
+   :ref:`X(699) <X(699)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(698) <X(698)>`
+
 .. figure:: x-00699.svg
    :alt: X(699) = EVEN (- 4, - 2) CIRCUMCIRCLE POINT
    :align: center
 
    **X(699) = EVEN (- 4, - 2) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = 1/[a :sup:`-5`\ (b :sup:`-2` + c :sup:`-2`) - a :sup:`-3`\ (b :sup:`-4` + c :sup:`-4`)]
+   | **Barycentrics:** :math:`a^2/(a^2 b^4 + a^2 c^4 - b^4 c^2 - b^2 c^4) : :`
+   | **Search Value (6, 9, 13):** :math:`-0.588121284539`
 
-* :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = 1/[a :sup:`-5`\ (b :sup:`-2` + c :sup:`-2`) - a :sup:`-3`\ (b :sup:`-4` + c :sup:`-4`)]
+.. container:: note-item
 
-Barycentrics
-~~~~~~~~~~~~
+   :ref:`X(699) <X(699)>` lies on the circumcircle.
 
-* :math:`a^2/(a^2 b^4 + a^2 c^4 - b^4 c^2 - b^2 c^4) : :`
+.. collapse:: Incident Central Lines
+   :badge: 3 lines
+   :class: line-catalog
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`-0.588121284539`
+   {:ref:`32 <X(32)>`, :ref:`99 <X(99)>`}, {:ref:`172 <X(172)>`, :ref:`932 <X(932)>`}, {:ref:`251 <X(251)>`, :ref:`689 <X(689)>`}
 
-Incidence
----------
+.. collapse:: Functional Relations
+   :badge: 6 relations
 
-:ref:`X(699) <X(699)>` lies on the circumcircle and on these lines:
+   * :ref:`X(699) <X(699)>` = isogonal conjugate of :ref:`X(698) <X(698)>`
+   * :ref:`X(699) <X(699)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(35524)
+   * :ref:`X(699) <X(699)>` = :ref:`X(385) <X(385)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(251) <X(251)>`
+   * :ref:`X(699) <X(699)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(6) <X(6)>`\ X(3221)
+   * :ref:`X(699) <X(699)>` = Ψ(:ref:`X(6) <X(6)>`, X(3221))
+   * :ref:`X(699) <X(699)>` = :term:`cevapoint <cevapoint>` of :ref:`X(32) <X(32)>` and X(1691)
 
-{:ref:`32 <X(32)>`, :ref:`99 <X(99)>`}, {:ref:`172 <X(172)>`, :ref:`932 <X(932)>`}, {:ref:`251 <X(251)>`, :ref:`689 <X(689)>`}
+.. toctree::
+   :hidden:
 
-Relations
----------
-
-* :ref:`X(699) <X(699)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(698) <X(698)>`
-* :ref:`X(699) <X(699)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(35524)
-* :ref:`X(699) <X(699)>` = :ref:`X(385) <X(385)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(251) <X(251)>`
-* :ref:`X(699) <X(699)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(6) <X(6)>`\ X(3221)
-* :ref:`X(699) <X(699)>` = Ψ(:ref:`X(6) <X(6)>`, X(3221))
-* :ref:`X(699) <X(699)>` = :term:`cevapoint <cevapoint>` of :ref:`X(32) <X(32)>` and X(1691)
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

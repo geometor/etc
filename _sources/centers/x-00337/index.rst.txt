@@ -8,42 +8,39 @@
 X(337) = ISOTOMIC CONJUGATE OF X(242)
 =====================================
 
+.. enunciation::
+
+   :ref:`X(337) <X(337)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(242) <X(242)>`
+
 .. figure:: x-00337.svg
    :alt: X(337) = ISOTOMIC CONJUGATE OF X(242)
    :align: center
 
    **X(337) = ISOTOMIC CONJUGATE OF X(242)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`(\csc A \cot A)/(a^{2} - bc) : (\csc B \cot B)/(b^{2} - ca) : (\csc C \cot C)/(c^{2} - ab)`
+   | **Barycentrics:** :math:`(\cot A)/(a^{2} - bc) : (\cot B)/(b^{2} - ca) : (\cot C)/(c^{2} - ab)`
+   | **Search Value (6, 9, 13):** :math:`-0.544995474285`
 
-* :math:`(\csc A \cot A)/(a^{2} - bc) : (\csc B \cot B)/(b^{2} - ca) : (\csc C \cot C)/(c^{2} - ab)`
+.. container:: note-item
 
-Barycentrics
-~~~~~~~~~~~~
+   :ref:`X(337) <X(337)>` lies.
 
-* :math:`(\cot A)/(a^{2} - bc) : (\cot B)/(b^{2} - ca) : (\cot C)/(c^{2} - ab)`
+.. collapse:: Incident Central Lines
+   :badge: 5 lines
+   :class: line-catalog
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`-0.544995474285`
+   {:ref:`12 <X(12)>`, :ref:`85 <X(85)>`}, {:ref:`37 <X(37)>`, :ref:`86 <X(86)>`}, {:ref:`72 <X(72)>`, :ref:`295 <X(295)>`}, {:ref:`201 <X(201)>`, :ref:`348 <X(348)>`}, {:ref:`291 <X(291)>`, :ref:`986 <X(986)>`}
 
-Incidence
----------
+.. collapse:: Functional Relations
+   :badge: 2 relations
 
-:ref:`X(337) <X(337)>` lies and on these lines:
+   * :ref:`X(337) <X(337)>` = isotomic conjugate of :ref:`X(242) <X(242)>`
+   * :ref:`X(337) <X(337)>` = :ref:`X(295) <X(295)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(335) <X(335)>`
 
-{:ref:`12 <X(12)>`, :ref:`85 <X(85)>`}, {:ref:`37 <X(37)>`, :ref:`86 <X(86)>`}, {:ref:`72 <X(72)>`, :ref:`295 <X(295)>`}, {:ref:`201 <X(201)>`, :ref:`348 <X(348)>`}, {:ref:`291 <X(291)>`, :ref:`986 <X(986)>`}
+.. toctree::
+   :hidden:
 
-Relations
----------
-
-* :ref:`X(337) <X(337)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(242) <X(242)>`
-* :ref:`X(337) <X(337)>` = :ref:`X(295) <X(295)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(335) <X(335)>`
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

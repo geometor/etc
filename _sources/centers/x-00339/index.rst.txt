@@ -8,21 +8,39 @@
 X(339) = ISOTOMIC CONJUGATE OF X(250)
 =====================================
 
+.. enunciation::
+
+   :ref:`X(339) <X(339)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(250) <X(250)>`
+
 .. figure:: x-00339.svg
    :alt: X(339) = ISOTOMIC CONJUGATE OF X(250)
    :align: center
 
    **X(339) = ISOTOMIC CONJUGATE OF X(250)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`(b^{2} - c^{2})^{2}(\cos A)/a^{4} : (c^{2} - a^{2})^{2}(\cos B)/b^{4} : (a^{2} - b^{2})^{2}(\cos C)/c^{4}, = \csc A \cot A \sin^{2}(B - C) : \csc B \cot B \sin^{2}(C - A) : \csc C \cot C \sin^{2}(A - B)`
+   | **Search Value (6, 9, 13):** :math:`5.009222601597`
 
-* :math:`(b^{2} - c^{2})^{2}(\cos A)/a^{4} : (c^{2} - a^{2})^{2}(\cos B)/b^{4} : (a^{2} - b^{2})^{2}(\cos C)/c^{4}, = \csc A \cot A \sin^{2}(B - C) : \csc B \cot B \sin^{2}(C - A) : \csc C \cot C \sin^{2}(A - B)`
+.. container:: note-item
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`5.009222601597`
+   :ref:`X(339) <X(339)>` lies on the MacBeath inconic.
+
+.. collapse:: Incident Central Lines
+   :badge: 4 lines
+   :class: line-catalog
+
+   {:ref:`3 <X(3)>`, :ref:`76 <X(76)>`}, {:ref:`69 <X(69)>`, :ref:`265 <X(265)>`}, {:ref:`115 <X(115)>`, :ref:`127 <X(127)>`}, {:ref:`264 <X(264)>`, :ref:`381 <X(381)>`}
+
+.. collapse:: Functional Relations
+   :badge: 5 relations
+
+   * :ref:`X(339) <X(339)>` = isotomic conjugate of :ref:`X(250) <X(250)>`
+   * :ref:`X(339) <X(339)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`76 <X(76)>`, :ref:`525 <X(525)>`), (:ref:`305 <X(305)>`, 3267)
+   * :ref:`X(339) <X(339)>` = :ref:`X(125) <X(125)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(338) <X(338)>`
+   * :ref:`X(339) <X(339)>` = :ref:`X(25) <X(25)>`-:term:`isoconjugate <isoconjugate>` of X(1101)
+   * :ref:`X(339) <X(339)>` = :term:`crosspoint <crosspoint>` of :ref:`X(305) <X(305)>` and X(3267)
 
 Notes
 -----
@@ -35,24 +53,7 @@ Notes
 
    Barycentrics b^2 c^2 (b^2 - c^2)^2 (b^2 + c^2 - a^2) : :
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(339) <X(339)>` lies on the MacBeath inconic and on these lines:
-
-{:ref:`3 <X(3)>`, :ref:`76 <X(76)>`}, {:ref:`69 <X(69)>`, :ref:`265 <X(265)>`}, {:ref:`115 <X(115)>`, :ref:`127 <X(127)>`}, {:ref:`264 <X(264)>`, :ref:`381 <X(381)>`}
-
-Relations
----------
-
-* :ref:`X(339) <X(339)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(250) <X(250)>`
-* :ref:`X(339) <X(339)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`76 <X(76)>`, :ref:`525 <X(525)>`), (:ref:`305 <X(305)>`, 3267)
-* :ref:`X(339) <X(339)>` = :ref:`X(125) <X(125)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(338) <X(338)>`
-* :ref:`X(339) <X(339)>` = :ref:`X(25) <X(25)>`-:term:`isoconjugate <isoconjugate>` of X(1101)
-* :ref:`X(339) <X(339)>` = :term:`crosspoint <crosspoint>` of :ref:`X(305) <X(305)>` and X(3267)
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

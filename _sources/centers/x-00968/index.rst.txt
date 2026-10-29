@@ -8,39 +8,44 @@
 X(968) = POINT ALDERAMIN
 ========================
 
+.. enunciation::
+
+   :ref:`X(968) <X(968)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(969) <X(969)>`
+
 .. figure:: x-00968.svg
    :alt: X(968) = POINT ALDERAMIN
    :align: center
 
    **X(968) = POINT ALDERAMIN** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`a^{2} - 2a(b + c) - (b + c)^{2} : :`
+   | **Search Value (6, 9, 13):** :math:`2.150752517522`
 
-* :math:`a^{2} - 2a(b + c) - (b + c)^{2} : :`
-* :math:`ra^{2} - sS : rb^{2} - sS : rc^{2} - sS`
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`2.150752517522`
+   * **Trilinears:** :math:`ra^{2} - sS : rb^{2} - sS : rc^{2} - sS`
 
-Incidence
----------
+.. container:: note-item
 
-:ref:`X(968) <X(968)>` lies and on these lines:
+   :ref:`X(968) <X(968)>` lies.
 
-{:ref:`1 <X(1)>`, :ref:`21 <X(21)>`}, {:ref:`9 <X(9)>`, :ref:`42 <X(42)>`}, {:ref:`19 <X(19)>`, :ref:`25 <X(25)>`}, {:ref:`35 <X(35)>`, :ref:`975 <X(975)>`}, {:ref:`45 <X(45)>`, :ref:`210 <X(210)>`}, {:ref:`165 <X(165)>`, :ref:`750 <X(750)>`}, {:ref:`200 <X(200)>`, :ref:`756 <X(756)>`}, {:ref:`614 <X(614)>`, 1001}, {:ref:`943 <X(943)>`, 1039}
+.. collapse:: Incident Central Lines
+   :badge: 9 lines
+   :class: line-catalog
 
-Relations
----------
+   {:ref:`1 <X(1)>`, :ref:`21 <X(21)>`}, {:ref:`9 <X(9)>`, :ref:`42 <X(42)>`}, {:ref:`19 <X(19)>`, :ref:`25 <X(25)>`}, {:ref:`35 <X(35)>`, :ref:`975 <X(975)>`}, {:ref:`45 <X(45)>`, :ref:`210 <X(210)>`}, {:ref:`165 <X(165)>`, :ref:`750 <X(750)>`}, {:ref:`200 <X(200)>`, :ref:`756 <X(756)>`}, {:ref:`614 <X(614)>`, 1001}, {:ref:`943 <X(943)>`, 1039}
 
-* :ref:`X(968) <X(968)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(969) <X(969)>`
-* :ref:`X(968) <X(968)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(661) <X(661)>`\ \ :ref:`X(905) <X(905)>`
-* :ref:`X(968) <X(968)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(63) <X(63)>`}-harmonic conjugate of X(3158)
+.. collapse:: Functional Relations
+   :badge: 3 relations
 
-Construction
-------------
+   * :ref:`X(968) <X(968)>` = isogonal conjugate of :ref:`X(969) <X(969)>`
+   * :ref:`X(968) <X(968)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(661) <X(661)>`\ \ :ref:`X(905) <X(905)>`
+   * :ref:`X(968) <X(968)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(63) <X(63)>`}-harmonic conjugate of X(3158)
 
-.. literalinclude:: model.py
-   :language: python
+.. toctree::
+   :hidden:
+
+   code

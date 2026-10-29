@@ -8,43 +8,40 @@
 X(288) = CEVAPOINT OF X(6) AND X(54)
 ====================================
 
+.. enunciation::
+
+   :ref:`X(288) <X(288)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(233) <X(233)>`
+
 .. figure:: x-00288.svg
    :alt: X(288) = CEVAPOINT OF X(6) AND X(54)
    :align: center
 
    **X(288) = CEVAPOINT OF X(6) AND X(54)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = [sec(B - C)]/[b cos(C - A) + c cos(B - A)]
+   | **Barycentrics:** :math:`a/(b \sec(A - B) + c \sec(A - C)) : :`
+   | **Search Value (6, 9, 13):** :math:`0.255273525396`
 
-* :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = [sec(B - C)]/[b cos(C - A) + c cos(B - A)]
+.. container:: note-item
 
-Barycentrics
-~~~~~~~~~~~~
+   :ref:`X(288) <X(288)>` lies.
 
-* :math:`a/(b \sec(A - B) + c \sec(A - C)) : :`
+.. collapse:: Incident Central Lines
+   :badge: 3 lines
+   :class: line-catalog
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`0.255273525396`
+   {:ref:`51 <X(51)>`, :ref:`54 <X(54)>`}, {:ref:`53 <X(53)>`, :ref:`275 <X(275)>`}, {:ref:`97 <X(97)>`, :ref:`216 <X(216)>`}
 
-Incidence
----------
+.. collapse:: Functional Relations
+   :badge: 3 relations
 
-:ref:`X(288) <X(288)>` lies and on these lines:
+   * :ref:`X(288) <X(288)>` = isogonal conjugate of :ref:`X(233) <X(233)>`
+   * :ref:`X(288) <X(288)>` = :term:`cevapoint <cevapoint>` of :ref:`X(6) <X(6)>` and :ref:`X(54) <X(54)>`
+   * :ref:`X(288) <X(288)>` = :term:`trilinear pole <trilinear-pole>` of line X(1157)X(1510)
 
-{:ref:`51 <X(51)>`, :ref:`54 <X(54)>`}, {:ref:`53 <X(53)>`, :ref:`275 <X(275)>`}, {:ref:`97 <X(97)>`, :ref:`216 <X(216)>`}
+.. toctree::
+   :hidden:
 
-Relations
----------
-
-* :ref:`X(288) <X(288)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(233) <X(233)>`
-* :ref:`X(288) <X(288)>` = :term:`cevapoint <cevapoint>` of :ref:`X(6) <X(6)>` and :ref:`X(54) <X(54)>`
-* :ref:`X(288) <X(288)>` = :term:`trilinear pole <trilinear-pole>` of line X(1157)X(1510)
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

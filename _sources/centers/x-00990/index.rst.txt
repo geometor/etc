@@ -8,41 +8,38 @@
 X(990) = INTERSECTION OF LINES X(1)X(7) AND X(3)X(37)
 =====================================================
 
+.. enunciation::
+
+   :ref:`X(990) <X(990)>` = :term:`complement <complement>`, wrt hexyl triangle, of X(12717)
+
 .. figure:: x-00990.svg
    :alt: X(990) = INTERSECTION OF LINES X(1)X(7) AND X(3)X(37)
    :align: center
 
    **X(990) = INTERSECTION OF LINES X(1)X(7) AND X(3)X(37)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = a\ :sup:`5` - a\ :sup:`4`\ (b + c) - 2a\ :sup:`3`\ bc - a(b - c)\ :sup:`2`\ (b\ :sup:`2` + c\ :sup:`2`) + (b - c)\ :sup:`2`\ (b + c)\ :sup:`3`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Search Value (6, 9, 13):** :math:`-1.386821299805`
 
-* :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = a\ :sup:`5` - a\ :sup:`4`\ (b + c) - 2a\ :sup:`3`\ bc - a(b - c)\ :sup:`2`\ (b\ :sup:`2` + c\ :sup:`2`) + (b - c)\ :sup:`2`\ (b + c)\ :sup:`3`
+.. container:: note-item
 
-Barycentrics
-~~~~~~~~~~~~
+   :ref:`X(990) <X(990)>` lies.
 
-* :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+.. collapse:: Incident Central Lines
+   :badge: 7 lines
+   :class: line-catalog
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`-1.386821299805`
+   {:ref:`1 <X(1)>`, :ref:`7 <X(7)>`}, {:ref:`3 <X(3)>`, :ref:`37 <X(37)>`}, {:ref:`6 <X(6)>`, :ref:`971 <X(971)>`}, {:ref:`33 <X(33)>`, :ref:`57 <X(57)>`}, {:ref:`58 <X(58)>`, :ref:`84 <X(84)>`}, {:ref:`165 <X(165)>`, :ref:`612 <X(612)>`}, {:ref:`226 <X(226)>`, 1040}
 
-Incidence
----------
+.. collapse:: Functional Relations
+   :badge: 1 relation
 
-:ref:`X(990) <X(990)>` lies and on these lines:
+   * :ref:`X(990) <X(990)>` = complement, wrt hexyl triangle, of X(12717)
 
-{:ref:`1 <X(1)>`, :ref:`7 <X(7)>`}, {:ref:`3 <X(3)>`, :ref:`37 <X(37)>`}, {:ref:`6 <X(6)>`, :ref:`971 <X(971)>`}, {:ref:`33 <X(33)>`, :ref:`57 <X(57)>`}, {:ref:`58 <X(58)>`, :ref:`84 <X(84)>`}, {:ref:`165 <X(165)>`, :ref:`612 <X(612)>`}, {:ref:`226 <X(226)>`, 1040}
+.. toctree::
+   :hidden:
 
-Relations
----------
-
-* :ref:`X(990) <X(990)>` = :term:`complement <complement>`, wrt hexyl triangle, of X(12717)
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

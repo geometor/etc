@@ -8,50 +8,40 @@
 X(504) = 2nd ISOSCELIZER POINT
 ==============================
 
+.. enunciation::
+
+   The :term:`isoscelizer <isoscelizer>` equations [H(A,X)]/a = [H(B,X)]/b = [H(C,X)]/c have solution X = :ref:`X(504) <X(504)>`. (:person:`Peter Yff <peter-yff>`, 4/9/99)
+
 .. figure:: x-00504.svg
    :alt: X(504) = 2nd ISOSCELIZER POINT
    :align: center
 
    **X(504) = 2nd ISOSCELIZER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
-
-* :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = b sin B/2 + c sin C/2 - a sin A/2
-
-Barycentrics
-~~~~~~~~~~~~
-
-* :math:`af(A,B,C) : bf(B,C,A) : cf(C,A,B)`
-
-* **Kimberling (6, 9, 13) Search Value:** :math:`8.547349049518`
-
-Notes
------
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = b sin B/2 + c sin C/2 - a sin A/2
+   | **Barycentrics:** :math:`af(A,B,C) : bf(B,C,A) : cf(C,A,B)`
+   | **Search Value (6, 9, 13):** :math:`8.547349049518`
 
 .. container:: note-item
 
-   The :term:`isoscelizer <isoscelizer>` equations [H(A,X)]/a = [H(B,X)]/b = [H(C,X)]/c have solution X = :ref:`X(504) <X(504)>`. (:person:`Peter Yff <peter-yff>`, 4/9/99)
+   :ref:`X(504) <X(504)>` lies.
 
-Incidence
----------
+.. collapse:: Incident Central Lines
+   :badge: 1 line
+   :class: line-catalog
 
-:ref:`X(504) <X(504)>` lies and on these lines:
+   {:ref:`164 <X(164)>`, :ref:`173 <X(173)>`}
 
-{:ref:`164 <X(164)>`, :ref:`173 <X(173)>`}
+.. collapse:: Functional Relations
+   :badge: 3 relations
 
-Relations
----------
+   * :ref:`X(504) <X(504)>` = :ref:`X(48) <X(48)>`-of-excentral-triangle
+   * :ref:`X(504) <X(504)>` = excentral-:term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(503) <X(503)>`
+   * :ref:`X(504) <X(504)>` = ABC-to-excentral :term:`trilinear image <trilinear-image>` of :ref:`X(6) <X(6)>`
 
-* :ref:`X(504) <X(504)>` = :ref:`X(48) <X(48)>`-of-excentral-triangle
-* :ref:`X(504) <X(504)>` = excentral-:term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(503) <X(503)>`
-* :ref:`X(504) <X(504)>` = ABC-to-excentral :term:`trilinear image <trilinear-image>` of :ref:`X(6) <X(6)>`
+.. toctree::
+   :hidden:
 
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

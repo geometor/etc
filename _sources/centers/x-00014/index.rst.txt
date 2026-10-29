@@ -9,21 +9,66 @@
 X(14) = 2nd ISOGONIC CENTER
 ===========================
 
+.. enunciation::
+
+   Let NaNbNc, Na'Nb'Nc' be the outer and inner Napoleon triangles, resp. Let A' be the :term:`isogonal conjugate <isogonal-conjugate>` of Na, wrt Na'Nb'Nc', and define B' and C' cyclically. The lines Na'A', Nb'B', Nc'C' concur in :ref:`X(14) <X(14)>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2015)
+
 .. figure:: x-00014.svg
    :alt: X(14) = 2nd ISOGONIC CENTER
    :align: center
 
    **X(14) = 2nd ISOGONIC CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`\csc(A - \pi /3) : \csc(B - \pi /3) : \csc(C - \pi /3), = \sec(A + \pi /6) : \sec(B + \pi /6) : \sec(C + \pi /6)`
+   | **Search Value (6, 9, 13):** :math:`4.373431772013`
 
-* :math:`\csc(A - \pi /3) : \csc(B - \pi /3) : \csc(C - \pi /3), = \sec(A + \pi /6) : \sec(B + \pi /6) : \sec(C + \pi /6)`
+.. container:: note-item
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`4.373431772013`
+   :ref:`X(14) <X(14)>` lies on the Neuberg cubic.
+
+.. collapse:: Incident Central Lines
+   :badge: 21 lines
+   :class: line-catalog
+
+   {:ref:`2 <X(2)>`, :ref:`15 <X(15)>`}, {:ref:`3 <X(3)>`, :ref:`18 <X(18)>`}, {:ref:`4 <X(4)>`, :ref:`62 <X(62)>`}, {:ref:`5 <X(5)>`, :ref:`17 <X(17)>`}, {:ref:`6 <X(6)>`, :ref:`13 <X(13)>`}, {:ref:`11 <X(11)>`, :ref:`203 <X(203)>`}, {:ref:`16 <X(16)>`, :ref:`30 <X(30)>`}, {:ref:`76 <X(76)>`, :ref:`298 <X(298)>`}, {:ref:`98 <X(98)>`, :ref:`383 <X(383)>`}, {:ref:`99 <X(99)>`, :ref:`302 <X(302)>`}, {:ref:`148 <X(148)>`, :ref:`616 <X(616)>`}, {:ref:`202 <X(202)>`, 1478}, {:ref:`226 <X(226)>`, :ref:`554 <X(554)>`}, {:ref:`262 <X(262)>`, 1080}, {:ref:`275 <X(275)>`, :ref:`473 <X(473)>`}, {:ref:`299 <X(299)>`, :ref:`533 <X(533)>`}, {:ref:`397 <X(397)>`, :ref:`546 <X(546)>`}, {:ref:`484 <X(484)>`, 1276}, {:ref:`530 <X(530)>`, :ref:`671 <X(671)>`}, {:ref:`532 <X(532)>`, :ref:`622 <X(622)>`}, {:ref:`633 <X(633)>`, :ref:`636 <X(636)>`}
+
+.. collapse:: Functional Relations
+   :badge: 32 relations
+
+   * :ref:`X(14) <X(14)>` = 3\ :sup:`1/2`\ (r\ :sup:`2` + 2rR + s\ :sup:`2`)\*\ :ref:`X(1) <X(1)>` - 6r(3\ :sup:`1/2`\ R + 2s)\*\ :ref:`X(2) <X(2)>` - 2r(3\ :sup:`1/2`\ r - 3s)\*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
+   * :ref:`X(14) <X(14)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`13 <X(13)>`, :ref:`115 <X(115)>`), (:ref:`16 <X(16)>`, :ref:`395 <X(395)>`), (:ref:`99 <X(99)>`, :ref:`618 <X(618)>`), (:ref:`299 <X(299)>`, :ref:`624 <X(624)>`), (:ref:`617 <X(617)>`, :ref:`619 <X(619)>`)
+   * :ref:`X(14) <X(14)>` = isogonal conjugate of :ref:`X(16) <X(16)>`
+   * :ref:`X(14) <X(14)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(299) <X(299)>`
+   * :ref:`X(14) <X(14)>` = :term:`complement <complement>` of :ref:`X(617) <X(617)>`
+   * :ref:`X(14) <X(14)>` = :term:`anticomplement <anticomplement>` of :ref:`X(619) <X(619)>`
+   * :ref:`X(14) <X(14)>` = circumcircle-inverse of X(6105)
+   * :ref:`X(14) <X(14)>` = orthocentroidal-circle-inverse of :ref:`X(13) <X(13)>`
+   * :ref:`X(14) <X(14)>` = :term:`cevapoint <cevapoint>` of :ref:`X(16) <X(16)>` and :ref:`X(61) <X(61)>`
+   * :ref:`X(14) <X(14)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`16 <X(16)>`, :ref:`17 <X(17)>`), (:ref:`30 <X(30)>`, :ref:`13 <X(13)>`), (:ref:`395 <X(395)>`, :ref:`2 <X(2)>`)
+   * :ref:`X(14) <X(14)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(396) <X(396)>`\ \ :ref:`X(523) <X(523)>` (polar of :ref:`X(471) <X(471)>` wrt polar circle)
+   * :ref:`X(14) <X(14)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(471) <X(471)>`
+   * :ref:`X(14) <X(14)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X(471) <X(471)>`
+   * :ref:`X(14) <X(14)>` = :term:`antigonal image <antigonal-image>` of :ref:`X(13) <X(13)>`
+   * :ref:`X(14) <X(14)>` = reflection of :ref:`X(13) <X(13)>` in line :ref:`X(115) <X(115)>`\ \ :ref:`X(125) <X(125)>`
+   * :ref:`X(14) <X(14)>` = :ref:`X(16) <X(16)>`-of-4th-Brocard triangle
+   * :ref:`X(14) <X(14)>` = :ref:`X(16) <X(16)>`-of-orthocentroidal-triangle
+   * :ref:`X(14) <X(14)>` = orthocorrespondent of :ref:`X(14) <X(14)>`
+   * :ref:`X(14) <X(14)>` = homothetic center of inner Napoleon triangle and :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(14) <X(14)>`
+   * :ref:`X(14) <X(14)>` = inner-Napoleon-isogonal conjugate of :ref:`X(3) <X(3)>`
+   * :ref:`X(14) <X(14)>` = outer-Napoleon-to-inner-Napoleon :term:`similarity image <similarity-image>` of :ref:`X(16) <X(16)>`
+   * :ref:`X(14) <X(14)>` = inner-Napoleon-to-outer-Napoleon similarity image of :ref:`X(13) <X(13)>`
+   * :ref:`X(14) <X(14)>` = orthocenter of :ref:`X(13) <X(13)>`\ \ :ref:`X(98) <X(98)>`\ X(2394)
+   * :ref:`X(14) <X(14)>` = :ref:`X(16) <X(16)>`-of-pedal-triangle of :ref:`X(14) <X(14)>`
+   * :ref:`X(14) <X(14)>` = {:ref:`X(265) <X(265)>`,X(1989)}-harmonic Conjugate of :ref:`X(13) <X(13)>`
+   * :ref:`X(14) <X(14)>` = homothetic center of (equilateral) antipedal triangle of :ref:`X(14) <X(14)>` and triangle formed by circumcenters of BC\ :ref:`X(14) <X(14)>`, CA\ :ref:`X(14) <X(14)>`, AB\ :ref:`X(14) <X(14)>`
+   * :ref:`X(14) <X(14)>` = homothetic center of triangle formed by circumcenters of BC\ :ref:`X(13) <X(13)>`, CA\ :ref:`X(13) <X(13)>`, AB\ :ref:`X(13) <X(13)>` and triangle formed by nine-point centers of BC\ :ref:`X(14) <X(14)>`, CA\ :ref:`X(14) <X(14)>`, AB\ :ref:`X(14) <X(14)>`
+   * :ref:`X(14) <X(14)>` = Cundy-Parry Phi transform of :ref:`X(18) <X(18)>`
+   * :ref:`X(14) <X(14)>` = Cundy-Parry Psi transform of :ref:`X(62) <X(62)>`
+   * :ref:`X(14) <X(14)>` = Kosnita(:ref:`X(14) <X(14)>`,\ :ref:`X(1) <X(1)>`) point
+   * :ref:`X(14) <X(14)>` = Kosnita(:ref:`X(14) <X(14)>`,\ :ref:`X(14) <X(14)>`) point
+   * :ref:`X(14) <X(14)>` = Thomson-isogonal conjugate of X(34318)
 
 Notes
 -----
@@ -36,11 +81,7 @@ Notes
       * Barycentrics (SA - Sqrt[3] S) (SB + SC) + 4 SB SC : :
       * Tripolars 1/(a^4+a^2 b^2-2 b^4+a^2 c^2+4 b^2 c^2-2 c^4-2 Sqrt[3] a^2 S) : :
 
-   Construct the equilateral triangle BA'C having base BC and vertex A' on the positive side of BC; similarly construct equilateral triangles CB'A and AC'B based on the other two sides. The lines AA',BB',CC' concur in :ref:`X(14) <X(14)>`. The :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(14) <X(14)>` is equilateral.
-
-.. container:: note-item
-
-   Let NaNbNc, Na'Nb'Nc' be the outer and inner Napoleon triangles, resp. Let A' be the :term:`isogonal conjugate <isogonal-conjugate>` of Na, wrt Na'Nb'Nc', and define B' and C' cyclically. The lines Na'A', Nb'B', Nc'C' concur in :ref:`X(14) <X(14)>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2015)
+   Construct the equilateral triangle BA'C having base BC and vertex A' on the positive side of BC; similarly construct equilateral triangles CB'A and AC'B based on the other two sides. The lines AA',BB',CC' concur in :ref:`X(14) <X(14)>`. The antipedal triangle of :ref:`X(14) <X(14)>` is equilateral.
 
 .. container:: note-item
 
@@ -64,51 +105,7 @@ Notes
 
    :ref:`X(14) <X(14)>` is the {:ref:`X(6) <X(6)>`,\ :ref:`X(381) <X(381)>`}-harmonic conjugate of :ref:`X(13) <X(13)>`.
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(14) <X(14)>` lies on the Neuberg cubic and on these lines:
-
-{:ref:`2 <X(2)>`, :ref:`15 <X(15)>`}, {:ref:`3 <X(3)>`, :ref:`18 <X(18)>`}, {:ref:`4 <X(4)>`, :ref:`62 <X(62)>`}, {:ref:`5 <X(5)>`, :ref:`17 <X(17)>`}, {:ref:`6 <X(6)>`, :ref:`13 <X(13)>`}, {:ref:`11 <X(11)>`, :ref:`203 <X(203)>`}, {:ref:`16 <X(16)>`, :ref:`30 <X(30)>`}, {:ref:`76 <X(76)>`, :ref:`298 <X(298)>`}, {:ref:`98 <X(98)>`, :ref:`383 <X(383)>`}, {:ref:`99 <X(99)>`, :ref:`302 <X(302)>`}, {:ref:`148 <X(148)>`, :ref:`616 <X(616)>`}, {:ref:`202 <X(202)>`, 1478}, {:ref:`226 <X(226)>`, :ref:`554 <X(554)>`}, {:ref:`262 <X(262)>`, 1080}, {:ref:`275 <X(275)>`, :ref:`473 <X(473)>`}, {:ref:`299 <X(299)>`, :ref:`533 <X(533)>`}, {:ref:`397 <X(397)>`, :ref:`546 <X(546)>`}, {:ref:`484 <X(484)>`, 1276}, {:ref:`530 <X(530)>`, :ref:`671 <X(671)>`}, {:ref:`532 <X(532)>`, :ref:`622 <X(622)>`}, {:ref:`633 <X(633)>`, :ref:`636 <X(636)>`}
-
-Relations
----------
-
-* :ref:`X(14) <X(14)>` = 3\ :sup:`1/2`\ (r\ :sup:`2` + 2rR + s\ :sup:`2`)\*\ :ref:`X(1) <X(1)>` - 6r(3\ :sup:`1/2`\ R + 2s)\*\ :ref:`X(2) <X(2)>` - 2r(3\ :sup:`1/2`\ r - 3s)\*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-* :ref:`X(14) <X(14)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`13 <X(13)>`, :ref:`115 <X(115)>`), (:ref:`16 <X(16)>`, :ref:`395 <X(395)>`), (:ref:`99 <X(99)>`, :ref:`618 <X(618)>`), (:ref:`299 <X(299)>`, :ref:`624 <X(624)>`), (:ref:`617 <X(617)>`, :ref:`619 <X(619)>`)
-* :ref:`X(14) <X(14)>` = isogonal conjugate of :ref:`X(16) <X(16)>`
-* :ref:`X(14) <X(14)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(299) <X(299)>`
-* :ref:`X(14) <X(14)>` = :term:`complement <complement>` of :ref:`X(617) <X(617)>`
-* :ref:`X(14) <X(14)>` = :term:`anticomplement <anticomplement>` of :ref:`X(619) <X(619)>`
-* :ref:`X(14) <X(14)>` = circumcircle-inverse of X(6105)
-* :ref:`X(14) <X(14)>` = orthocentroidal-circle-inverse of :ref:`X(13) <X(13)>`
-* :ref:`X(14) <X(14)>` = :term:`cevapoint <cevapoint>` of :ref:`X(16) <X(16)>` and :ref:`X(61) <X(61)>`
-* :ref:`X(14) <X(14)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`16 <X(16)>`, :ref:`17 <X(17)>`), (:ref:`30 <X(30)>`, :ref:`13 <X(13)>`), (:ref:`395 <X(395)>`, :ref:`2 <X(2)>`)
-* :ref:`X(14) <X(14)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(396) <X(396)>`\ \ :ref:`X(523) <X(523)>` (polar of :ref:`X(471) <X(471)>` wrt polar circle)
-* :ref:`X(14) <X(14)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(471) <X(471)>`
-* :ref:`X(14) <X(14)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X(471) <X(471)>`
-* :ref:`X(14) <X(14)>` = :term:`antigonal image <antigonal-image>` of :ref:`X(13) <X(13)>`
-* :ref:`X(14) <X(14)>` = reflection of :ref:`X(13) <X(13)>` in line :ref:`X(115) <X(115)>`\ \ :ref:`X(125) <X(125)>`
-* :ref:`X(14) <X(14)>` = :ref:`X(16) <X(16)>`-of-4th-Brocard triangle
-* :ref:`X(14) <X(14)>` = :ref:`X(16) <X(16)>`-of-orthocentroidal-triangle
-* :ref:`X(14) <X(14)>` = orthocorrespondent of :ref:`X(14) <X(14)>`
-* :ref:`X(14) <X(14)>` = homothetic center of inner Napoleon triangle and antipedal triangle of :ref:`X(14) <X(14)>`
-* :ref:`X(14) <X(14)>` = inner-Napoleon-isogonal conjugate of :ref:`X(3) <X(3)>`
-* :ref:`X(14) <X(14)>` = outer-Napoleon-to-inner-Napoleon :term:`similarity image <similarity-image>` of :ref:`X(16) <X(16)>`
-* :ref:`X(14) <X(14)>` = inner-Napoleon-to-outer-Napoleon similarity image of :ref:`X(13) <X(13)>`
-* :ref:`X(14) <X(14)>` = orthocenter of :ref:`X(13) <X(13)>`\ \ :ref:`X(98) <X(98)>`\ X(2394)
-* :ref:`X(14) <X(14)>` = :ref:`X(16) <X(16)>`-of-pedal-triangle of :ref:`X(14) <X(14)>`
-* :ref:`X(14) <X(14)>` = {:ref:`X(265) <X(265)>`,X(1989)}-harmonic Conjugate of :ref:`X(13) <X(13)>`
-* :ref:`X(14) <X(14)>` = homothetic center of (equilateral) antipedal triangle of :ref:`X(14) <X(14)>` and triangle formed by circumcenters of BC\ :ref:`X(14) <X(14)>`, CA\ :ref:`X(14) <X(14)>`, AB\ :ref:`X(14) <X(14)>`
-* :ref:`X(14) <X(14)>` = homothetic center of triangle formed by circumcenters of BC\ :ref:`X(13) <X(13)>`, CA\ :ref:`X(13) <X(13)>`, AB\ :ref:`X(13) <X(13)>` and triangle formed by nine-point centers of BC\ :ref:`X(14) <X(14)>`, CA\ :ref:`X(14) <X(14)>`, AB\ :ref:`X(14) <X(14)>`
-* :ref:`X(14) <X(14)>` = Cundy-Parry Phi transform of :ref:`X(18) <X(18)>`
-* :ref:`X(14) <X(14)>` = Cundy-Parry Psi transform of :ref:`X(62) <X(62)>`
-* :ref:`X(14) <X(14)>` = Kosnita(:ref:`X(14) <X(14)>`,\ :ref:`X(1) <X(1)>`) point
-* :ref:`X(14) <X(14)>` = Kosnita(:ref:`X(14) <X(14)>`,\ :ref:`X(14) <X(14)>`) point
-* :ref:`X(14) <X(14)>` = Thomson-isogonal conjugate of X(34318)
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

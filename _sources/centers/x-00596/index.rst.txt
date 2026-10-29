@@ -8,43 +8,40 @@
 X(596) = ISOGONAL CONJUGATE OF X(595)
 =====================================
 
+.. enunciation::
+
+   :ref:`X(596) <X(596)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(595) <X(595)>`
+
 .. figure:: x-00596.svg
    :alt: X(596) = ISOGONAL CONJUGATE OF X(595)
    :align: center
 
    **X(596) = ISOGONAL CONJUGATE OF X(595)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`1/[a(a^{2} + ab + ac - bc)] : 1/[b(b^{2} + bc + ba - ca)] : 1/[c(c^{2} + ca + cb - ab)]`
+   | **Barycentrics:** :math:`1/(a^{2} + ab + ac - bc) : 1/(b^{2} + bc + ba - ca) : 1/(c^{2} + ca + cb - ab)`
+   | **Search Value (6, 9, 13):** :math:`5.411635861830`
 
-* :math:`1/[a(a^{2} + ab + ac - bc)] : 1/[b(b^{2} + bc + ba - ca)] : 1/[c(c^{2} + ca + cb - ab)]`
+.. container:: note-item
 
-Barycentrics
-~~~~~~~~~~~~
+   :ref:`X(596) <X(596)>` lies.
 
-* :math:`1/(a^{2} + ab + ac - bc) : 1/(b^{2} + bc + ba - ca) : 1/(c^{2} + ca + cb - ab)`
+.. collapse:: Incident Central Lines
+   :badge: 5 lines
+   :class: line-catalog
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`5.411635861830`
+   {:ref:`10 <X(10)>`, :ref:`38 <X(38)>`}, {:ref:`37 <X(37)>`, :ref:`39 <X(39)>`}, {:ref:`58 <X(58)>`, :ref:`82 <X(82)>`}, {:ref:`65 <X(65)>`, :ref:`519 <X(519)>`}, {:ref:`244 <X(244)>`, 1089}
 
-Incidence
----------
+.. collapse:: Functional Relations
+   :badge: 3 relations
 
-:ref:`X(596) <X(596)>` lies and on these lines:
+   * :ref:`X(596) <X(596)>` = isogonal conjugate of :ref:`X(595) <X(595)>`
+   * :ref:`X(596) <X(596)>` = :term:`anticomplement <anticomplement>` of X(4075)
+   * :ref:`X(596) <X(596)>` = perspector of ABC and the reflection of the :term:`incentral triangle <incentral-triangle>` in X(1125)
 
-{:ref:`10 <X(10)>`, :ref:`38 <X(38)>`}, {:ref:`37 <X(37)>`, :ref:`39 <X(39)>`}, {:ref:`58 <X(58)>`, :ref:`82 <X(82)>`}, {:ref:`65 <X(65)>`, :ref:`519 <X(519)>`}, {:ref:`244 <X(244)>`, 1089}
+.. toctree::
+   :hidden:
 
-Relations
----------
-
-* :ref:`X(596) <X(596)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(595) <X(595)>`
-* :ref:`X(596) <X(596)>` = :term:`anticomplement <anticomplement>` of X(4075)
-* :ref:`X(596) <X(596)>` = perspector of ABC and the reflection of the :term:`incentral triangle <incentral-triangle>` in X(1125)
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

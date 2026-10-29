@@ -8,41 +8,38 @@
 X(955) = ISOGONAL CONJUGATE OF X(954)
 =====================================
 
+.. enunciation::
+
+   :ref:`X(955) <X(955)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(954) <X(954)>`
+
 .. figure:: x-00955.svg
    :alt: X(955) = ISOGONAL CONJUGATE OF X(954)
    :align: center
 
    **X(955) = ISOGONAL CONJUGATE OF X(954)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = 1/[a\ :sup:`5` + (b + c)[2a\ :sup:`2`\ (b\ :sup:`2` + c\ :sup:`2` - a\ :sup:`2` + bc) - (b - c)\ :sup:`2`\ (2bc + ab + ac)]]
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Search Value (6, 9, 13):** :math:`1.524901641842`
 
-* :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = 1/[a\ :sup:`5` + (b + c)[2a\ :sup:`2`\ (b\ :sup:`2` + c\ :sup:`2` - a\ :sup:`2` + bc) - (b - c)\ :sup:`2`\ (2bc + ab + ac)]]
+.. container:: note-item
 
-Barycentrics
-~~~~~~~~~~~~
+   :ref:`X(955) <X(955)>` lies.
 
-* :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+.. collapse:: Incident Central Lines
+   :badge: 3 lines
+   :class: line-catalog
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`1.524901641842`
+   {:ref:`57 <X(57)>`, :ref:`991 <X(991)>`}, {:ref:`278 <X(278)>`, :ref:`354 <X(354)>`}, {:ref:`279 <X(279)>`, :ref:`942 <X(942)>`}
 
-Incidence
----------
+.. collapse:: Functional Relations
+   :badge: 1 relation
 
-:ref:`X(955) <X(955)>` lies and on these lines:
+   * :ref:`X(955) <X(955)>` = isogonal conjugate of :ref:`X(954) <X(954)>`
 
-{:ref:`57 <X(57)>`, :ref:`991 <X(991)>`}, {:ref:`278 <X(278)>`, :ref:`354 <X(354)>`}, {:ref:`279 <X(279)>`, :ref:`942 <X(942)>`}
+.. toctree::
+   :hidden:
 
-Relations
----------
-
-* :ref:`X(955) <X(955)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(954) <X(954)>`
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

@@ -8,44 +8,38 @@
 X(844) = INTERSECTION OF LINES X(166)X(167) AND X(173)X(503)
 ============================================================
 
+.. enunciation::
+
+   This point solves a problem posed by :person:`Antreas Hatzipolakis <antreas-hatzipolakis>` in :cite:`Hyacinthos #2768 <hyacinthos>`, May 3, 2001.
+
 .. figure:: x-00844.svg
    :alt: X(844) = INTERSECTION OF LINES X(166)X(167) AND X(173)X(503)
    :align: center
 
    **X(844) = INTERSECTION OF LINES X(166)X(167) AND X(173)X(503)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
-
-* :math:`- x + y + z : :`, where x = x(A,B,C) = sin(A/2) sec\ :sup:`2`\ (A/2)
-
-* **Kimberling (6, 9, 13) Search Value:** :math:`11.987336626371`
-
-Notes
------
+   | **Trilinears:** :math:`- x + y + z : :`, where x = x(A,B,C) = sin(A/2) sec\ :sup:`2`\ (A/2)
+   | **Search Value (6, 9, 13):** :math:`11.987336626371`
 
 .. container:: note-item
 
-   This point solves a problem posed by :person:`Antreas Hatzipolakis <antreas-hatzipolakis>` in :cite:`Hyacinthos #2768 <hyacinthos>`, May 3, 2001.
+   :ref:`X(844) <X(844)>` lies.
 
-Incidence
----------
+.. collapse:: Incident Central Lines
+   :badge: 2 lines
+   :class: line-catalog
 
-:ref:`X(844) <X(844)>` lies and on these lines:
+   {:ref:`166 <X(166)>`, :ref:`167 <X(167)>`}, {:ref:`173 <X(173)>`, :ref:`503 <X(503)>`}
 
-{:ref:`166 <X(166)>`, :ref:`167 <X(167)>`}, {:ref:`173 <X(173)>`, :ref:`503 <X(503)>`}
+.. collapse:: Functional Relations
+   :badge: 2 relations
 
-Relations
----------
+   * :ref:`X(844) <X(844)>` = :ref:`X(75) <X(75)>`-of-excentral-triangle
+   * :ref:`X(844) <X(844)>` = excentral :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(164) <X(164)>`
 
-* :ref:`X(844) <X(844)>` = :ref:`X(75) <X(75)>`-of-excentral-triangle
-* :ref:`X(844) <X(844)>` = excentral :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(164) <X(164)>`
+.. toctree::
+   :hidden:
 
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

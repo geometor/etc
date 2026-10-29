@@ -8,69 +8,64 @@
 X(517) = ISOGONAL CONJUGATE OF X(104)
 =====================================
 
+.. enunciation::
+
+   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X(517) <X(517)>` lies on the line at infinity.
+
 .. figure:: x-00517.svg
    :alt: X(517) = ISOGONAL CONJUGATE OF X(104)
    :align: center
 
    **X(517) = ISOGONAL CONJUGATE OF X(104)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`-1 + \cos B + \cos C : -1 + \cos C + \cos A : -1 + \cos A + \cos B`
+   | **Barycentrics:** :math:`(\sin A)(-1 + \cos B + \cos C) : (\sin B)(-1 + \cos C + \cos A) : (\sin C)(-1 + \cos A + \cos B)`
 
-* :math:`-1 + \cos B + \cos C : -1 + \cos C + \cos A : -1 + \cos A + \cos B`
-* :math:`(b + c)\cos A - b \cos B - c \cos C : :`
-* :math:`b^3 + c^3 - (a^2 + bc)(b + c) + 2abc : :`
+.. collapse:: Alternate Coordinates
+   :badge: 3 forms
 
-Barycentrics
-~~~~~~~~~~~~
+   * **Trilinears:** :math:`(b + c)\cos A - b \cos B - c \cos C : :`
+   * **Trilinears:** :math:`b^3 + c^3 - (a^2 + bc)(b + c) + 2abc : :`
+   * **Barycentrics:** :math:`(a - c) \cos B + (a - b) \cos C : :`
 
-* :math:`(\sin A)(-1 + \cos B + \cos C) : (\sin B)(-1 + \cos C + \cos A) : (\sin C)(-1 + \cos A + \cos B)`
-* :math:`(a - c) \cos B + (a - b) \cos C : :`
+.. collapse:: Linear Combinations
+   :badge: 1 combination
 
-Linear Combinations
--------------------
-
-* :ref:`X(517) <X(517)>` = :ref:`X(1) <X(1)>` - :ref:`X(3) <X(3)>`
-
-Notes
------
+   * :ref:`X(517) <X(517)>` = :ref:`X(1) <X(1)>` - :ref:`X(3) <X(3)>`
 
 .. container:: note-item
 
-   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X(517) <X(517)>` lies on the line at infinity.
+   :ref:`X(517) <X(517)>` lies.
 
-Incidence
----------
+.. collapse:: Incident Central Lines
+   :badge: 117 lines
+   :class: line-catalog
 
-:ref:`X(517) <X(517)>` lies and on these lines:
+   {:ref:`1 <X(1)>`, :ref:`3 <X(3)>`}, {:ref:`2 <X(2)>`, :ref:`392 <X(392)>`}, {:ref:`4 <X(4)>`, :ref:`8 <X(8)>`}, {:ref:`5 <X(5)>`, :ref:`10 <X(10)>`}, {:ref:`6 <X(6)>`, :ref:`998 <X(998)>`}, {:ref:`7 <X(7)>`, :ref:`1000 <X(1000)>`}, {:ref:`9 <X(9)>`, :ref:`374 <X(374)>`}, {:ref:`11 <X(11)>`, 1737}, {:ref:`19 <X(19)>`, :ref:`219 <X(219)>`}, {:ref:`20 <X(20)>`, :ref:`145 <X(145)>`}, {:ref:`21 <X(21)>`, 1389}, {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}, {:ref:`33 <X(33)>`, 1905}, {:ref:`34 <X(34)>`, 1753}, {:ref:`37 <X(37)>`, :ref:`573 <X(573)>`}, {:ref:`42 <X(42)>`, 1064}, {:ref:`44 <X(44)>`, 1168}, {:ref:`52 <X(52)>`, 1858}, {:ref:`59 <X(59)>`, 1870}, {:ref:`63 <X(63)>`, :ref:`956 <X(956)>`}, {:ref:`71 <X(71)>`, 1243}, {:ref:`74 <X(74)>`, 1290}, {:ref:`78 <X(78)>`, :ref:`945 <X(945)>`}, {:ref:`88 <X(88)>`, 1318}, {:ref:`98 <X(98)>`, 2703}, {:ref:`99 <X(99)>`, 2699}, {:ref:`100 <X(100)>`, :ref:`953 <X(953)>`}, {:ref:`101 <X(101)>`, :ref:`910 <X(910)>`}, {:ref:`102 <X(102)>`, 1807}, {:ref:`103 <X(103)>`, 1308}, {:ref:`104 <X(104)>`, :ref:`901 <X(901)>`}, {:ref:`105 <X(105)>`, 2742}, {:ref:`106 <X(106)>`, 2743}, {:ref:`107 <X(107)>`, 2744}, {:ref:`108 <X(108)>`, 2745}, {:ref:`109 <X(109)>`, 1455}, {:ref:`110 <X(110)>`, 1325}, {:ref:`111 <X(111)>`, 2746}, {:ref:`112 <X(112)>`, 2747}, {:ref:`119 <X(119)>`, :ref:`908 <X(908)>`}, {:ref:`140 <X(140)>`, 1125}, {:ref:`151 <X(151)>`, 1535}, {:ref:`169 <X(169)>`, :ref:`220 <X(220)>`}, {:ref:`182 <X(182)>`, 1386}, {:ref:`201 <X(201)>`, 2599}, {:ref:`210 <X(210)>`, :ref:`381 <X(381)>`}, {:ref:`218 <X(218)>`, 2082}, {:ref:`221 <X(221)>`, 3157}, {:ref:`226 <X(226)>`, :ref:`495 <X(495)>`}, {:ref:`238 <X(238)>`, 1052}, {:ref:`244 <X(244)>`, 1149}, {:ref:`347 <X(347)>`, 1439}, {:ref:`376 <X(376)>`, 2094}, {:ref:`389 <X(389)>`, :ref:`950 <X(950)>`}, {:ref:`390 <X(390)>`, 3488}, {:ref:`399 <X(399)>`, 2948}, {:ref:`496 <X(496)>`, 1210}, {:ref:`500 <X(500)>`, 2650}, {:ref:`549 <X(549)>`, :ref:`551 <X(551)>`}, {:ref:`550 <X(550)>`, 1483}, {:ref:`572 <X(572)>`, 1100}, {:ref:`579 <X(579)>`, 1108}, {:ref:`580 <X(580)>`, :ref:`595 <X(595)>`}, {:ref:`582 <X(582)>`, :ref:`602 <X(602)>`}, {:ref:`601 <X(601)>`, 1468}, {:ref:`672 <X(672)>`, 2170}, {:ref:`840 <X(840)>`, 1292}, {:ref:`906 <X(906)>`, 1951}, {:ref:`936 <X(936)>`, 1706}, {:ref:`938 <X(938)>`, 1058}, {:ref:`958 <X(958)>`, 3560}, {:ref:`990 <X(990)>`, 1350}, {:ref:`997 <X(997)>`, 1376}, {1006, 1621}, {1042, 1066}, {1046, 2943}, {1051, 2944}, {1068, 1426}, {1113, 2103}, {1114, 2102}, {1124, 2362}, {1148, 1895}, {1293, 2718}, {1294, 2719}, {1295, 2720}, {1296, 2721}, {1297, 2722}, {1817, 3025}, {1352, 3416}, {1361, 1785}, {1362, 3328}, {1364, 3319}, {1391, 1443}, {1411, 2361}, {1437, 3193}, {1451, 1497}, {1457, 1465}, {1478, 1836}, {1479, 1837}, {1490, 2136}, {1656, 1698}, {1702, 3311}, {1703, 3312}, {1788, 3086}, {1830, 1877}, {1838, 1888}, {2171, 2269}, {2182, 2323}, {2270, 2324}, {2329, 3496}, {3022, 3322}, {3061, 3501}, {3085, 3485}, {3125, 3290}, {3190, 3198}, {3197, 3211}, {3474, 3476}
 
-{:ref:`1 <X(1)>`, :ref:`3 <X(3)>`}, {:ref:`2 <X(2)>`, :ref:`392 <X(392)>`}, {:ref:`4 <X(4)>`, :ref:`8 <X(8)>`}, {:ref:`5 <X(5)>`, :ref:`10 <X(10)>`}, {:ref:`6 <X(6)>`, :ref:`998 <X(998)>`}, {:ref:`7 <X(7)>`, :ref:`1000 <X(1000)>`}, {:ref:`9 <X(9)>`, :ref:`374 <X(374)>`}, {:ref:`11 <X(11)>`, 1737}, {:ref:`19 <X(19)>`, :ref:`219 <X(219)>`}, {:ref:`20 <X(20)>`, :ref:`145 <X(145)>`}, {:ref:`21 <X(21)>`, 1389}, {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}, {:ref:`33 <X(33)>`, 1905}, {:ref:`34 <X(34)>`, 1753}, {:ref:`37 <X(37)>`, :ref:`573 <X(573)>`}, {:ref:`42 <X(42)>`, 1064}, {:ref:`44 <X(44)>`, 1168}, {:ref:`52 <X(52)>`, 1858}, {:ref:`59 <X(59)>`, 1870}, {:ref:`63 <X(63)>`, :ref:`956 <X(956)>`}, {:ref:`71 <X(71)>`, 1243}, {:ref:`74 <X(74)>`, 1290}, {:ref:`78 <X(78)>`, :ref:`945 <X(945)>`}, {:ref:`88 <X(88)>`, 1318}, {:ref:`98 <X(98)>`, 2703}, {:ref:`99 <X(99)>`, 2699}, {:ref:`100 <X(100)>`, :ref:`953 <X(953)>`}, {:ref:`101 <X(101)>`, :ref:`910 <X(910)>`}, {:ref:`102 <X(102)>`, 1807}, {:ref:`103 <X(103)>`, 1308}, {:ref:`104 <X(104)>`, :ref:`901 <X(901)>`}, {:ref:`105 <X(105)>`, 2742}, {:ref:`106 <X(106)>`, 2743}, {:ref:`107 <X(107)>`, 2744}, {:ref:`108 <X(108)>`, 2745}, {:ref:`109 <X(109)>`, 1455}, {:ref:`110 <X(110)>`, 1325}, {:ref:`111 <X(111)>`, 2746}, {:ref:`112 <X(112)>`, 2747}, {:ref:`119 <X(119)>`, :ref:`908 <X(908)>`}, {:ref:`140 <X(140)>`, 1125}, {:ref:`151 <X(151)>`, 1535}, {:ref:`169 <X(169)>`, :ref:`220 <X(220)>`}, {:ref:`182 <X(182)>`, 1386}, {:ref:`201 <X(201)>`, 2599}, {:ref:`210 <X(210)>`, :ref:`381 <X(381)>`}, {:ref:`218 <X(218)>`, 2082}, {:ref:`221 <X(221)>`, 3157}, {:ref:`226 <X(226)>`, :ref:`495 <X(495)>`}, {:ref:`238 <X(238)>`, 1052}, {:ref:`244 <X(244)>`, 1149}, {:ref:`347 <X(347)>`, 1439}, {:ref:`376 <X(376)>`, 2094}, {:ref:`389 <X(389)>`, :ref:`950 <X(950)>`}, {:ref:`390 <X(390)>`, 3488}, {:ref:`399 <X(399)>`, 2948}, {:ref:`496 <X(496)>`, 1210}, {:ref:`500 <X(500)>`, 2650}, {:ref:`549 <X(549)>`, :ref:`551 <X(551)>`}, {:ref:`550 <X(550)>`, 1483}, {:ref:`572 <X(572)>`, 1100}, {:ref:`579 <X(579)>`, 1108}, {:ref:`580 <X(580)>`, :ref:`595 <X(595)>`}, {:ref:`582 <X(582)>`, :ref:`602 <X(602)>`}, {:ref:`601 <X(601)>`, 1468}, {:ref:`672 <X(672)>`, 2170}, {:ref:`840 <X(840)>`, 1292}, {:ref:`906 <X(906)>`, 1951}, {:ref:`936 <X(936)>`, 1706}, {:ref:`938 <X(938)>`, 1058}, {:ref:`958 <X(958)>`, 3560}, {:ref:`990 <X(990)>`, 1350}, {:ref:`997 <X(997)>`, 1376}, {1006, 1621}, {1042, 1066}, {1046, 2943}, {1051, 2944}, {1068, 1426}, {1113, 2103}, {1114, 2102}, {1124, 2362}, {1148, 1895}, {1293, 2718}, {1294, 2719}, {1295, 2720}, {1296, 2721}, {1297, 2722}, {1817, 3025}, {1352, 3416}, {1361, 1785}, {1362, 3328}, {1364, 3319}, {1391, 1443}, {1411, 2361}, {1437, 3193}, {1451, 1497}, {1457, 1465}, {1478, 1836}, {1479, 1837}, {1490, 2136}, {1656, 1698}, {1702, 3311}, {1703, 3312}, {1788, 3086}, {1830, 1877}, {1838, 1888}, {2171, 2269}, {2182, 2323}, {2270, 2324}, {2329, 3496}, {3022, 3322}, {3061, 3501}, {3085, 3485}, {3125, 3290}, {3190, 3198}, {3197, 3211}, {3474, 3476}
+.. collapse:: Functional Relations
+   :badge: 16 relations
 
-Relations
----------
+   * :ref:`X(517) <X(517)>` = isogonal conjugate of :ref:`X(104) <X(104)>`
+   * :ref:`X(517) <X(517)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(18816)
+   * :ref:`X(517) <X(517)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X(153) <X(153)>`
+   * :ref:`X(517) <X(517)>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X(119) <X(119)>`
+   * :ref:`X(517) <X(517)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(23980)
+   * :ref:`X(517) <X(517)>` = :ref:`X(4) <X(4)>`-Ceva conjugate of :ref:`X(119) <X(119)>`
+   * :ref:`X(517) <X(517)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`80 <X(80)>`), (:ref:`7 <X(7)>`, :ref:`88 <X(88)>`)
+   * :ref:`X(517) <X(517)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`36 <X(36)>`), (:ref:`3 <X(3)>`, :ref:`912 <X(912)>`), (:ref:`44 <X(44)>`, :ref:`55 <X(55)>`), (:ref:`56 <X(56)>`, 1455)
+   * :ref:`X(517) <X(517)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(6) <X(6)>`\ \ :ref:`X(650) <X(650)>`
+   * :ref:`X(517) <X(517)>` = :term:`orthopoint <orthopoint>` of :ref:`X(513) <X(513)>`
+   * :ref:`X(517) <X(517)>` = :term:`trilinear pole <trilinear-pole>` of line X(1769)X(3310)
+   * :ref:`X(517) <X(517)>` = Thomson-isogonal conjugate of :ref:`X(100) <X(100)>`
+   * :ref:`X(517) <X(517)>` = Lucas-isogonal conjugate of :ref:`X(100) <X(100)>`
+   * :ref:`X(517) <X(517)>` = Cundy-Parry Phi transform of :ref:`X(56) <X(56)>`
+   * :ref:`X(517) <X(517)>` = Cundy-Parry Psi transform of :ref:`X(8) <X(8)>`
+   * :ref:`X(517) <X(517)>` = :ref:`X(30) <X(30)>`-of-excentral-triangle
 
-* :ref:`X(517) <X(517)>` = isogonal conjugate of :ref:`X(104) <X(104)>`
-* :ref:`X(517) <X(517)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(18816)
-* :ref:`X(517) <X(517)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X(153) <X(153)>`
-* :ref:`X(517) <X(517)>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X(119) <X(119)>`
-* :ref:`X(517) <X(517)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(23980)
-* :ref:`X(517) <X(517)>` = :ref:`X(4) <X(4)>`-Ceva conjugate of :ref:`X(119) <X(119)>`
-* :ref:`X(517) <X(517)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`80 <X(80)>`), (:ref:`7 <X(7)>`, :ref:`88 <X(88)>`)
-* :ref:`X(517) <X(517)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`36 <X(36)>`), (:ref:`3 <X(3)>`, :ref:`912 <X(912)>`), (:ref:`44 <X(44)>`, :ref:`55 <X(55)>`), (:ref:`56 <X(56)>`, 1455)
-* :ref:`X(517) <X(517)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(6) <X(6)>`\ \ :ref:`X(650) <X(650)>`
-* :ref:`X(517) <X(517)>` = :term:`orthopoint <orthopoint>` of :ref:`X(513) <X(513)>`
-* :ref:`X(517) <X(517)>` = :term:`trilinear pole <trilinear-pole>` of line X(1769)X(3310)
-* :ref:`X(517) <X(517)>` = Thomson-isogonal conjugate of :ref:`X(100) <X(100)>`
-* :ref:`X(517) <X(517)>` = Lucas-isogonal conjugate of :ref:`X(100) <X(100)>`
-* :ref:`X(517) <X(517)>` = Cundy-Parry Phi transform of :ref:`X(56) <X(56)>`
-* :ref:`X(517) <X(517)>` = Cundy-Parry Psi transform of :ref:`X(8) <X(8)>`
-* :ref:`X(517) <X(517)>` = :ref:`X(30) <X(30)>`-of-excentral-triangle
+.. toctree::
+   :hidden:
 
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

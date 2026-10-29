@@ -8,62 +8,59 @@
 X(479) = X(269)-CROSS CONJUGATE OF X(279)
 =========================================
 
+.. enunciation::
+
+   Let A' be the point in which the incircle is tangent to a circle that passes through vertices B and C, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(479) <X(479)>`. For an excircle version, see X(5423).
+
 .. figure:: x-00479.svg
    :alt: X(479) = X(269)-CROSS CONJUGATE OF X(279)
    :align: center
 
    **X(479) = X(269)-CROSS CONJUGATE OF X(279)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`(\tan A/2 \sec A/2)^{2} : :`
+   | **Barycentrics:** :math:`\tan^{3}(A/2) : :`
+   | **Search Value (6, 9, 13):** :math:`0.015254626563`
 
-* :math:`(\tan A/2 \sec A/2)^{2} : :`
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-Barycentrics
-~~~~~~~~~~~~
+   * **Barycentrics:** :math:`1/(b + c - a)^{3} : :`
 
-* :math:`\tan^{3}(A/2) : :`
-* :math:`1/(b + c - a)^{3} : :`
+.. container:: note-item
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`0.015254626563`
+   :ref:`X(479) <X(479)>` lies.
+
+.. collapse:: Incident Central Lines
+   :badge: 16 lines
+   :class: line-catalog
+
+   {:ref:`2 <X(2)>`, 5574}, {:ref:`7 <X(7)>`, :ref:`354 <X(354)>`}, {:ref:`8 <X(8)>`, 7182}, {:ref:`55 <X(55)>`, 3160}, {:ref:`57 <X(57)>`, :ref:`279 <X(279)>`}, {:ref:`165 <X(165)>`, 1323}, {:ref:`269 <X(269)>`, :ref:`614 <X(614)>`}, {:ref:`348 <X(348)>`, 5273}, {:ref:`658 <X(658)>`, 5435}, {:ref:`934 <X(934)>`, 1617}, {1014, 5324}, {1119, 1851}, {1407, 1462}, {1996, 5226}, {3188, 6060}, {4554, 8055}
+
+.. collapse:: Functional Relations
+   :badge: 10 relations
+
+   * :ref:`X(479) <X(479)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(480) <X(480)>`
+   * :ref:`X(479) <X(479)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(5423)
+   * :ref:`X(479) <X(479)>` = :ref:`X(269) <X(269)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(279) <X(279)>`
+   * :ref:`X(479) <X(479)>` = :term:`anticomplement <anticomplement>` of X(5574)
+   * :ref:`X(479) <X(479)>` = :term:`crosssum <crosssum>` of X(3022) and X(4105)
+   * :ref:`X(479) <X(479)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these {i,j}: {:ref:`269 <X(269)>`, :ref:`738 <X(738)>`}, {3271, 3669}
+   * :ref:`X(479) <X(479)>` = {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): (1088, 7056, :ref:`7 <X(7)>`), (3160, 3599, :ref:`55 <X(55)>`)
+   * :ref:`X(479) <X(479)>` = X(i)-cross conguate of X(j) for these (i,j): (:ref:`269 <X(269)>`, :ref:`279 <X(279)>`), (3271, 3669), (5573, :ref:`2 <X(2)>`), (7195, :ref:`7 <X(7)>`)
+   * :ref:`X(479) <X(479)>` = polar conjugate of isotomic conjugate of X(30682)
+   * :ref:`X(479) <X(479)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these {i,j}: {:ref:`1 <X(1)>`, :ref:`480 <X(480)>`}, {:ref:`2 <X(2)>`, 6602}, {:ref:`6 <X(6)>`, :ref:`728 <X(728)>`}, {:ref:`8 <X(8)>`, 1253}, {:ref:`9 <X(9)>`, :ref:`220 <X(220)>`}, {:ref:`31 <X(31)>`, 5423}, {:ref:`33 <X(33)>`, 1260}, {:ref:`41 <X(41)>`, :ref:`346 <X(346)>`}, {:ref:`55 <X(55)>`, :ref:`200 <X(200)>`}, {:ref:`78 <X(78)>`, 7071}, {:ref:`100 <X(100)>`, 4105}, {:ref:`101 <X(101)>`, 4130}, {:ref:`210 <X(210)>`, 2328}, {:ref:`212 <X(212)>`, 7046}, {:ref:`219 <X(219)>`, 7079}, {:ref:`281 <X(281)>`, 1802}, {:ref:`282 <X(282)>`, 7368}, {:ref:`284 <X(284)>`, 4515}, {:ref:`341 <X(341)>`, 2175}, {:ref:`607 <X(607)>`, 3692}, {:ref:`643 <X(643)>`, 4524}, {:ref:`644 <X(644)>`, :ref:`657 <X(657)>`}, {:ref:`663 <X(663)>`, 4578}, {:ref:`692 <X(692)>`, 4163}, {:ref:`756 <X(756)>`, 6061}, {:ref:`765 <X(765)>`, 3022}, {1098, 7064}, {1110, 4081}, {1252, 3119}, {1265, 2212}, {1334, 2287}, {2194, 4082}, {2310, 6065}, {2318, 4183}, {2324, 7367}, {2332, 3694}, {3063, 6558}, {3699, 8641}, {3709, 7259}, {3900, 3939}, {4012, 7084}, {4171, 5546}, {6605, 8012}
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let A' be the point in which the incircle is tangent to a circle that passes through vertices B and C, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(479) <X(479)>`. For an excircle version, see X(5423).
-
-.. container:: note-item
-
    **Clark Kimberling and Peter Yff,** Problem 10678, *American Mathematical Monthly* 105 (1998) 666.
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(479) <X(479)>` lies and on these lines:
-
-{:ref:`2 <X(2)>`, 5574}, {:ref:`7 <X(7)>`, :ref:`354 <X(354)>`}, {:ref:`8 <X(8)>`, 7182}, {:ref:`55 <X(55)>`, 3160}, {:ref:`57 <X(57)>`, :ref:`279 <X(279)>`}, {:ref:`165 <X(165)>`, 1323}, {:ref:`269 <X(269)>`, :ref:`614 <X(614)>`}, {:ref:`348 <X(348)>`, 5273}, {:ref:`658 <X(658)>`, 5435}, {:ref:`934 <X(934)>`, 1617}, {1014, 5324}, {1119, 1851}, {1407, 1462}, {1996, 5226}, {3188, 6060}, {4554, 8055}
-
-Relations
----------
-
-* :ref:`X(479) <X(479)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(480) <X(480)>`
-* :ref:`X(479) <X(479)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(5423)
-* :ref:`X(479) <X(479)>` = :ref:`X(269) <X(269)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(279) <X(279)>`
-* :ref:`X(479) <X(479)>` = :term:`anticomplement <anticomplement>` of X(5574)
-* :ref:`X(479) <X(479)>` = :term:`crosssum <crosssum>` of X(3022) and X(4105)
-* :ref:`X(479) <X(479)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these {i,j}: {:ref:`269 <X(269)>`, :ref:`738 <X(738)>`}, {3271, 3669}
-* :ref:`X(479) <X(479)>` = {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): (1088, 7056, :ref:`7 <X(7)>`), (3160, 3599, :ref:`55 <X(55)>`)
-* :ref:`X(479) <X(479)>` = X(i)-cross conguate of X(j) for these (i,j): (:ref:`269 <X(269)>`, :ref:`279 <X(279)>`), (3271, 3669), (5573, :ref:`2 <X(2)>`), (7195, :ref:`7 <X(7)>`)
-* :ref:`X(479) <X(479)>` = polar conjugate of isotomic conjugate of X(30682)
-* :ref:`X(479) <X(479)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these {i,j}: {:ref:`1 <X(1)>`, :ref:`480 <X(480)>`}, {:ref:`2 <X(2)>`, 6602}, {:ref:`6 <X(6)>`, :ref:`728 <X(728)>`}, {:ref:`8 <X(8)>`, 1253}, {:ref:`9 <X(9)>`, :ref:`220 <X(220)>`}, {:ref:`31 <X(31)>`, 5423}, {:ref:`33 <X(33)>`, 1260}, {:ref:`41 <X(41)>`, :ref:`346 <X(346)>`}, {:ref:`55 <X(55)>`, :ref:`200 <X(200)>`}, {:ref:`78 <X(78)>`, 7071}, {:ref:`100 <X(100)>`, 4105}, {:ref:`101 <X(101)>`, 4130}, {:ref:`210 <X(210)>`, 2328}, {:ref:`212 <X(212)>`, 7046}, {:ref:`219 <X(219)>`, 7079}, {:ref:`281 <X(281)>`, 1802}, {:ref:`282 <X(282)>`, 7368}, {:ref:`284 <X(284)>`, 4515}, {:ref:`341 <X(341)>`, 2175}, {:ref:`607 <X(607)>`, 3692}, {:ref:`643 <X(643)>`, 4524}, {:ref:`644 <X(644)>`, :ref:`657 <X(657)>`}, {:ref:`663 <X(663)>`, 4578}, {:ref:`692 <X(692)>`, 4163}, {:ref:`756 <X(756)>`, 6061}, {:ref:`765 <X(765)>`, 3022}, {1098, 7064}, {1110, 4081}, {1252, 3119}, {1265, 2212}, {1334, 2287}, {2194, 4082}, {2310, 6065}, {2318, 4183}, {2324, 7367}, {2332, 3694}, {3063, 6558}, {3699, 8641}, {3709, 7259}, {3900, 3939}, {4012, 7084}, {4171, 5546}, {6605, 8012}
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

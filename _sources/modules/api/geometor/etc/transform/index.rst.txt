@@ -17,6 +17,7 @@ Functions
    geometor.etc.transform.format_rst_header
    geometor.etc.transform.wrap_refs
    geometor.etc.transform.transform_center_to_rst
+   geometor.etc.transform.transform_center_to_code_rst
    geometor.etc.transform.generate_rst_files
 
 
@@ -35,11 +36,16 @@ Module Contents
 
 .. py:function:: transform_center_to_rst(data: dict[str, Any], glossary_terms: dict[str, Any] | list[str] | None = None, preambles: list[dict[str, Any]] | None = None, valid_centers: set[int] | None = None, figure_uri: str | None = None, kimberling_figure_uri: str | None = None, search_value: float | None = None, include_model_py: bool = False) -> str
 
-   Transform a parsed center dictionary into a rich semantic RST document.
+   Transform a parsed center dictionary into the Book Codex Overview track (`index.rst`).
+
+
+.. py:function:: transform_center_to_code_rst(data: dict[str, Any], glossary_terms: dict[str, Any] | list[str] | None = None, valid_centers: set[int] | None = None, figure_uri: str | None = None) -> str
+
+   Transform a parsed center dictionary into the companion Code track (`code.rst`).
 
 
 .. py:function:: generate_rst_files(centers: list[dict[str, Any]], output_dir: str | pathlib.Path, glossary_terms: dict[str, Any] | list[str] | None = None, preambles_by_center: dict[str, list[dict[str, Any]]] | None = None, valid_centers: set[int] | None = None, render_graphics: bool = True, constructions_dir: str | pathlib.Path | None = None) -> None
 
-   Generate per-center folders (`x-NNNNN/`) with `index.rst`, `model.py`, SVGs, and `geometor.model` JSONs.
+   Generate per-center folders (`x-NNNNN/`) with `index.rst`, `code.rst`, `model.py`, SVGs, and `geometor.model` JSONs.
 
 

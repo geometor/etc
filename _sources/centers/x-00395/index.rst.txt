@@ -8,28 +8,50 @@
 X(395) = MIDPOINT OF X(14) AND X(16)
 ====================================
 
+.. enunciation::
+
+   :ref:`X(395) <X(395)>` is the center of the (equilateral) :term:`pedal triangle <pedal-triangle>` of :ref:`X(16) <X(16)>`, as well as the circumcenter of the pedal triangle of :ref:`X(14) <X(14)>`.
+
 .. figure:: x-00395.svg
    :alt: X(395) = MIDPOINT OF X(14) AND X(16)
    :align: center
 
    **X(395) = MIDPOINT OF X(14) AND X(16)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
-
-* :math:`\cos(B - C) + 2 \cos(A + \pi /3) : :`
-
-* **Kimberling (6, 9, 13) Search Value:** :math:`-1.205389861913`
-
-Notes
------
+   | **Trilinears:** :math:`\cos(B - C) + 2 \cos(A + \pi /3) : :`
+   | **Search Value (6, 9, 13):** :math:`-1.205389861913`
 
 .. container:: note-item
 
-   :ref:`X(395) <X(395)>` is the center of the (equilateral) :term:`pedal triangle <pedal-triangle>` of :ref:`X(16) <X(16)>`, as well as the circumcenter of the pedal triangle of :ref:`X(14) <X(14)>`.
+   :ref:`X(395) <X(395)>` lies.
+
+.. collapse:: Incident Central Lines
+   :badge: 15 lines
+   :class: line-catalog
+
+   {:ref:`2 <X(2)>`, :ref:`6 <X(6)>`}, {:ref:`3 <X(3)>`, :ref:`398 <X(398)>`}, {:ref:`5 <X(5)>`, :ref:`13 <X(13)>`}, {:ref:`14 <X(14)>`, :ref:`16 <X(16)>`}, {:ref:`15 <X(15)>`, :ref:`549 <X(549)>`}, {:ref:`39 <X(39)>`, :ref:`618 <X(618)>`}, {:ref:`53 <X(53)>`, :ref:`472 <X(472)>`}, {:ref:`61 <X(61)>`, :ref:`140 <X(140)>`}, {:ref:`115 <X(115)>`, :ref:`530 <X(530)>`}, {:ref:`187 <X(187)>`, :ref:`531 <X(531)>`}, {:ref:`202 <X(202)>`, :ref:`495 <X(495)>`}, {:ref:`216 <X(216)>`, :ref:`465 <X(465)>`}, {:ref:`466 <X(466)>`, :ref:`577 <X(577)>`}, {:ref:`532 <X(532)>`, :ref:`624 <X(624)>`}, {:ref:`533 <X(533)>`, :ref:`619 <X(619)>`}
+
+.. collapse:: Functional Relations
+   :badge: 13 relations
+
+   * :ref:`X(395) <X(395)>` = midpoint of X(i) and X(j) for these (i,j): (:ref:`14 <X(14)>`, :ref:`16 <X(16)>`), (:ref:`298 <X(298)>`, :ref:`385 <X(385)>`)
+   * :ref:`X(395) <X(395)>` = reflection of :ref:`X(396) <X(396)>` in :ref:`X(230) <X(230)>`
+   * :ref:`X(395) <X(395)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(6151)
+   * :ref:`X(395) <X(395)>` = :term:`complement <complement>` of :ref:`X(299) <X(299)>`
+   * :ref:`X(395) <X(395)>` = :term:`crosspoint <crosspoint>` of :ref:`X(2) <X(2)>` and :ref:`X(14) <X(14)>`
+   * :ref:`X(395) <X(395)>` = :term:`crosssum <crosssum>` of :ref:`X(6) <X(6)>` and :ref:`X(16) <X(16)>`
+   * :ref:`X(395) <X(395)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(15) <X(15)>`\ \ :ref:`X(512) <X(512)>`
+   * :ref:`X(395) <X(395)>` = barycentric products :ref:`X(13) <X(13)>`\ \*\ :ref:`X(533) <X(533)>`, :ref:`X(14) <X(14)>`\ \*\ :ref:`X(619) <X(619)>`
+   * :ref:`X(395) <X(395)>` = {:ref:`X(2) <X(2)>`,\ :ref:`X(6) <X(6)>`}-harmonic conjugate of :ref:`X(396) <X(396)>`
+   * :ref:`X(395) <X(395)>` = polar conjugate of X(38427)
+   * :ref:`X(395) <X(395)>` = perspector of circumconic centered at :ref:`X(619) <X(619)>`
+   * :ref:`X(395) <X(395)>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X(619) <X(619)>`
+   * :ref:`X(395) <X(395)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(619) <X(619)>`
+
+Notes
+-----
 
 .. container:: note-item
 
@@ -43,32 +65,7 @@ Notes
 
    You can view **7th and 8th Fermat-Dao equilateral triangles** (``Fermat-Dao_7-8.gif``).
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(395) <X(395)>` lies and on these lines:
-
-{:ref:`2 <X(2)>`, :ref:`6 <X(6)>`}, {:ref:`3 <X(3)>`, :ref:`398 <X(398)>`}, {:ref:`5 <X(5)>`, :ref:`13 <X(13)>`}, {:ref:`14 <X(14)>`, :ref:`16 <X(16)>`}, {:ref:`15 <X(15)>`, :ref:`549 <X(549)>`}, {:ref:`39 <X(39)>`, :ref:`618 <X(618)>`}, {:ref:`53 <X(53)>`, :ref:`472 <X(472)>`}, {:ref:`61 <X(61)>`, :ref:`140 <X(140)>`}, {:ref:`115 <X(115)>`, :ref:`530 <X(530)>`}, {:ref:`187 <X(187)>`, :ref:`531 <X(531)>`}, {:ref:`202 <X(202)>`, :ref:`495 <X(495)>`}, {:ref:`216 <X(216)>`, :ref:`465 <X(465)>`}, {:ref:`466 <X(466)>`, :ref:`577 <X(577)>`}, {:ref:`532 <X(532)>`, :ref:`624 <X(624)>`}, {:ref:`533 <X(533)>`, :ref:`619 <X(619)>`}
-
-Relations
----------
-
-* :ref:`X(395) <X(395)>` = midpoint of X(i) and X(j) for these (i,j): (:ref:`14 <X(14)>`, :ref:`16 <X(16)>`), (:ref:`298 <X(298)>`, :ref:`385 <X(385)>`)
-* :ref:`X(395) <X(395)>` = reflection of :ref:`X(396) <X(396)>` in :ref:`X(230) <X(230)>`
-* :ref:`X(395) <X(395)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(6151)
-* :ref:`X(395) <X(395)>` = :term:`complement <complement>` of :ref:`X(299) <X(299)>`
-* :ref:`X(395) <X(395)>` = :term:`crosspoint <crosspoint>` of :ref:`X(2) <X(2)>` and :ref:`X(14) <X(14)>`
-* :ref:`X(395) <X(395)>` = :term:`crosssum <crosssum>` of :ref:`X(6) <X(6)>` and :ref:`X(16) <X(16)>`
-* :ref:`X(395) <X(395)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(15) <X(15)>`\ \ :ref:`X(512) <X(512)>`
-* :ref:`X(395) <X(395)>` = barycentric products :ref:`X(13) <X(13)>`\ \*\ :ref:`X(533) <X(533)>`, :ref:`X(14) <X(14)>`\ \*\ :ref:`X(619) <X(619)>`
-* :ref:`X(395) <X(395)>` = {:ref:`X(2) <X(2)>`,\ :ref:`X(6) <X(6)>`}-harmonic conjugate of :ref:`X(396) <X(396)>`
-* :ref:`X(395) <X(395)>` = polar conjugate of X(38427)
-* :ref:`X(395) <X(395)>` = perspector of circumconic centered at :ref:`X(619) <X(619)>`
-* :ref:`X(395) <X(395)>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X(619) <X(619)>`
-* :ref:`X(395) <X(395)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(619) <X(619)>`
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

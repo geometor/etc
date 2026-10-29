@@ -8,66 +8,63 @@
 X(183) = TRILINEAR PRODUCT X(75)X(182)
 ======================================
 
+.. enunciation::
+
+   Let A'B'C' be the circummedial triangle. Let La be the line through A parallel to B'C', and define Lb and Lc cyclically. Let A″ = Lb∩Lc, B″ = Lc∩La, C″ = La∩Lb. The lines A'A″, B'B″, C'C″ concur in :ref:`X(183) <X(183)>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
+
 .. figure:: x-00183.svg
    :alt: X(183) = TRILINEAR PRODUCT X(75)X(182)
    :align: center
 
    **X(183) = TRILINEAR PRODUCT X(75)X(182)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`b^{2}c^{2}\cos(A- \omega ) : c^{2}a^{2}\cos(B - \omega ) : a^{2}b^{2}\cos(C - \omega )`
+   | **Barycentrics:** :math:`\csc A \cos(A - \omega ) : \csc B \cos(B - \omega ) : \csc C \cos(C - \omega )`
+   | **Search Value (6, 9, 13):** :math:`5.092762853514`
 
-* :math:`b^{2}c^{2}\cos(A- \omega ) : c^{2}a^{2}\cos(B - \omega ) : a^{2}b^{2}\cos(C - \omega )`
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-Barycentrics
-~~~~~~~~~~~~
+   * **Barycentrics:** :math:`\cot A + \tan \omega : :`
 
-* :math:`\csc A \cos(A - \omega ) : \csc B \cos(B - \omega ) : \csc C \cos(C - \omega )`
-* :math:`\cot A + \tan \omega : :`
+.. collapse:: Linear Combinations
+   :badge: 1 combination
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`5.092762853514`
+   * :ref:`X(183) <X(183)>` = 3\*\ :ref:`X(2) <X(2)>` - 2(cos ω)\ :sup:`2`\ \*\ :ref:`X(6) <X(6)>`
 
-Linear Combinations
--------------------
+.. container:: note-item
 
-* :ref:`X(183) <X(183)>` = 3\*\ :ref:`X(2) <X(2)>` - 2(cos ω)\ :sup:`2`\ \*\ :ref:`X(6) <X(6)>`
+   :ref:`X(183) <X(183)>` lies.
+
+.. collapse:: Incident Central Lines
+   :badge: 15 lines
+   :class: line-catalog
+
+   {:ref:`2 <X(2)>`, :ref:`6 <X(6)>`}, {:ref:`3 <X(3)>`, :ref:`76 <X(76)>`}, {:ref:`5 <X(5)>`, :ref:`315 <X(315)>`}, {:ref:`22 <X(22)>`, :ref:`157 <X(157)>`}, {:ref:`25 <X(25)>`, :ref:`264 <X(264)>`}, {:ref:`55 <X(55)>`, :ref:`350 <X(350)>`}, {:ref:`95 <X(95)>`, :ref:`305 <X(305)>`}, {:ref:`187 <X(187)>`, 1003}, {:ref:`274 <X(274)>`, :ref:`474 <X(474)>`}, {:ref:`316 <X(316)>`, :ref:`381 <X(381)>`}, {:ref:`317 <X(317)>`, :ref:`427 <X(427)>`}, {:ref:`383 <X(383)>`, :ref:`621 <X(621)>`}, {:ref:`538 <X(538)>`, :ref:`574 <X(574)>`}, {:ref:`622 <X(622)>`, 1080}, {:ref:`668 <X(668)>`, :ref:`956 <X(956)>`}
+
+.. collapse:: Functional Relations
+   :badge: 9 relations
+
+   * :ref:`X(183) <X(183)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(263) <X(263)>`
+   * :ref:`X(183) <X(183)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(262) <X(262)>`
+   * :ref:`X(183) <X(183)>` = :ref:`X(645) <X(645)>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X(183) <X(183)>`
+   * :ref:`X(183) <X(183)>` = {:ref:`X(2) <X(2)>`,\ :ref:`X(69) <X(69)>`}-harmonic conjugate of :ref:`X(325) <X(325)>`
+   * :ref:`X(183) <X(183)>` = :ref:`X(6) <X(6)>`-of-circummedial-triangle
+   * :ref:`X(183) <X(183)>` = pole wrt circumcircle of :term:`trilinear polar <trilinear-polar>` of X(3114) (line :ref:`X(669) <X(669)>`\ \ :ref:`X(804) <X(804)>`)
+   * :ref:`X(183) <X(183)>` = insimilicenter of Artzt and anti-Artzt circles; the exsimilicenter is :ref:`X(2) <X(2)>`
+   * :ref:`X(183) <X(183)>` = :term:`crossdifference <crossdifference>` of every pair of points on the line through [U(2) of :term:`pedal triangle <pedal-triangle>` of P(1)] and [P(2) of pedal triangle of U(1)]
+   * :ref:`X(183) <X(183)>` = X(5034)-of-6th-Brocard-triangle
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let A'B'C' be the circummedial triangle. Let La be the line through A parallel to B'C', and define Lb and Lc cyclically. Let A″ = Lb∩Lc, B″ = Lc∩La, C″ = La∩Lb. The lines A'A″, B'B″, C'C″ concur in :ref:`X(183) <X(183)>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
-
-.. container:: note-item
-
    :ref:`X(183) <X(183)>` is the {:ref:`X(2) <X(2)>`,\ :ref:`X(69) <X(69)>`}-harmonic conjugate of :ref:`X(325) <X(325)>`.
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(183) <X(183)>` lies and on these lines:
-
-{:ref:`2 <X(2)>`, :ref:`6 <X(6)>`}, {:ref:`3 <X(3)>`, :ref:`76 <X(76)>`}, {:ref:`5 <X(5)>`, :ref:`315 <X(315)>`}, {:ref:`22 <X(22)>`, :ref:`157 <X(157)>`}, {:ref:`25 <X(25)>`, :ref:`264 <X(264)>`}, {:ref:`55 <X(55)>`, :ref:`350 <X(350)>`}, {:ref:`95 <X(95)>`, :ref:`305 <X(305)>`}, {:ref:`187 <X(187)>`, 1003}, {:ref:`274 <X(274)>`, :ref:`474 <X(474)>`}, {:ref:`316 <X(316)>`, :ref:`381 <X(381)>`}, {:ref:`317 <X(317)>`, :ref:`427 <X(427)>`}, {:ref:`383 <X(383)>`, :ref:`621 <X(621)>`}, {:ref:`538 <X(538)>`, :ref:`574 <X(574)>`}, {:ref:`622 <X(622)>`, 1080}, {:ref:`668 <X(668)>`, :ref:`956 <X(956)>`}
-
-Relations
----------
-
-* :ref:`X(183) <X(183)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(263) <X(263)>`
-* :ref:`X(183) <X(183)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(262) <X(262)>`
-* :ref:`X(183) <X(183)>` = :ref:`X(645) <X(645)>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X(183) <X(183)>`
-* :ref:`X(183) <X(183)>` = {:ref:`X(2) <X(2)>`,\ :ref:`X(69) <X(69)>`}-harmonic conjugate of :ref:`X(325) <X(325)>`
-* :ref:`X(183) <X(183)>` = :ref:`X(6) <X(6)>`-of-circummedial-triangle
-* :ref:`X(183) <X(183)>` = pole wrt circumcircle of :term:`trilinear polar <trilinear-polar>` of X(3114) (line :ref:`X(669) <X(669)>`\ \ :ref:`X(804) <X(804)>`)
-* :ref:`X(183) <X(183)>` = insimilicenter of Artzt and anti-Artzt circles; the exsimilicenter is :ref:`X(2) <X(2)>`
-* :ref:`X(183) <X(183)>` = :term:`crossdifference <crossdifference>` of every pair of points on the line through [U(2) of :term:`pedal triangle <pedal-triangle>` of P(1)] and [P(2) of pedal triangle of U(1)]
-* :ref:`X(183) <X(183)>` = X(5034)-of-6th-Brocard-triangle
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

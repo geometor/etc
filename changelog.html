@@ -6,12 +6,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>changelog &mdash; Project name not set  documentation</title>
+  <title>changelog &mdash; geometor • etc</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=156d9f89" />
+  <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=51fa7472" />
   <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -82,7 +82,16 @@
           </dd>
           </dl>
           <section class="level-2" id="id1">
-          <h2>0.1.2<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+          <h2>0.1.3<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+          <ul class="simple">
+          <li><p>Adopted the Book Codex layout (<cite>:layout: book</cite>) across <cite>docsrc/centers/</cite> and the scholarly apparatus (<cite>glossary.rst</cite>, <cite>persons.rst</cite>, <cite>bibliography.rst</cite>).</p></li>
+          <li><p>Added a 2-track companion switcher (<cite>Overview</cite> | <cite>Code</cite>) generating per-center <cite>code.rst</cite> pages alongside <cite>index.rst</cite>.</p></li>
+          <li><p>Extracted primary geometric definitions into <cite>.. enunciation::</cite> banners (powering collection excerpts and <cite>:ref:</cite> tooltips) and consolidated primary coordinates into a compact <cite>.. signature:: center</cite> card.</p></li>
+          <li><p>Organized secondary apparatus into collapsible <cite>.. collapse::</cite> sections (<cite>Alternate Coordinates</cite>, <cite>Linear Combinations</cite>, <cite>Incident Central Lines</cite>, and <cite>Functional Relations</cite>) with count badges.</p></li>
+          </ul>
+          </section>
+          <section class="level-2" id="id2">
+          <h2>0.1.2<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
           <ul class="simple">
           <li><p>Simplified initial center graphics into a focused primary construction layer showing only the specific defining geometric relationship (and the golden Euler line whenever $X(n)$ lies on the Euler line).</p></li>
           <li><p>Added a <cite>Lines</cite> toolbar toggle button to show/hide incident central lines <cite>{i, j}</cite> and their defining centers across all 4 reference triangle tabs.</p></li>
@@ -90,8 +99,8 @@
           <li><p>Expanded coordinate/incidence resolution and generated documentation and interactive graphics for <cite>X(1)</cite> through <cite>X(1000)</cite>.</p></li>
           </ul>
           </section>
-          <section class="level-2" id="id2">
-          <h2>0.1.1<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id3">
+          <h2>0.1.1<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
           <ul class="simple">
           <li><p>Added interactive Explorer-styled SVG controls (zoom, pan, reset, label/guide toggles) and native topmost element hover highlighting with named points, lines, circles, and triangles.</p></li>
           <li><p>Scaled point radii and label typography $1.5times$ for legibility.</p></li>
@@ -99,21 +108,21 @@
           <li><p>Added projective limit fallback evaluation and coincident point handling for right triangles (<cite>3, 4, 5</cite> and <cite>Kepler</cite>).</p></li>
           </ul>
           </section>
-          <section class="level-2" id="id3">
-          <h2>0.1.0<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id4">
+          <h2>0.1.0<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
           <ul class="simple">
           <li><p>Added semantic parser, glossary/person/citation registries, composable triangle construction operators (<cite>ops.py</cite>), and per-center folders with <cite>model.py</cite>, <cite>x-NNNNN.json</cite>, and <cite>x-NNNNN.svg</cite>.</p></li>
           </ul>
           </section>
-          <section class="level-2" id="id4">
-          <h2>0.0.2<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id5">
+          <h2>0.0.2<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
           <ul class="simple">
           <li><p>Refined docstrings and type hinting.</p></li>
           <li><p>Fixed <cite>from __future__ import annotations</cite> placement.</p></li>
           </ul>
           </section>
-          <section class="level-2" id="id5">
-          <h2>0.0.1<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id6">
+          <h2>0.0.1<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
           <dl class="field-list simple">
           <dt class="field-odd">init<span class="colon">:</span></dt>
           <dd class="field-odd"><p>2025.330</p>
@@ -167,6 +176,7 @@
       <h3>Types</h3>
       <ul>
         <li><a href="types/center.html">center</a></li>
+        <li><a href="types/code.html">code</a></li>
       </ul>
     </aside>
   </div>
@@ -174,18 +184,18 @@
     <hr />
     <div role="contentinfo">
       <p>
-        &copy; Copyright .
+        &copy; Copyright 2026, geometor.
       </p>
     </div>
   </footer>
 
   <script src="_static/jquery.js?v=5d32c60e"></script>
   <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="_static/documentation_options.js?v=5929fcd5"></script>
+  <script src="_static/documentation_options.js?v=360bc84d"></script>
   <script src="_static/doctools.js?v=fd6eb6e6"></script>
   <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="_static/js/geometor_interactive.js?v=421e4467"></script>
+  <script src="_static/js/geometor_interactive.js?v=4430a5d4"></script>
   <script src="_static/js/search_highlight.js"></script>
 
 </body>

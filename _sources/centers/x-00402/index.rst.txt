@@ -9,26 +9,52 @@
 X(402) = ZEEMAN-GOSSARD PERSPECTOR
 ==================================
 
+.. enunciation::
+
+   In *A History of Mathematics,* Florian Cajori writes, "H. C. Gossard of the University of Oklahoma showed in 1916 that the three Euler lines of the triangles formed by the Euler line and the sides, taken by twos, of a given triangle, form a triangle . . . perspective with the given triangle and having the same Euler line." Let ABC be the given triangle and A'B'C' the Gossard triangle - that is, the triangle perspective with the given triangle and having the same Euler line. The lines AA', BB', CC' concur in :ref:`X(402) <X(402)>`, named the Gosssard perspector by John Conway (1998).
+
 .. figure:: x-00402.svg
    :alt: X(402) = ZEEMAN-GOSSARD PERSPECTOR
    :align: center
 
    **X(402) = ZEEMAN-GOSSARD PERSPECTOR** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Barycentrics
-~~~~~~~~~~~~
+   | **Barycentrics:** :math:`(2*a^4 - a^2*b^2 - b^4 - a^2*c^2 + 2*b^2*c^2 - c^4)*(a^8 - a^6*b^2 - 2*a^4*b^4 + 3*a^2*b^6 - b^8 - a^6*c^2 + 5*a^4*b^2*c^2 - 3*a^2*b^4*c^2 - b^6*c^2 - 2*a^4*c^4 - 3*a^2*b^2*c^4 + 4*b^4*c^4 + 3*a^2*c^6 - b^2*c^6 - c^8) : :` (:person:`Paul Yiu <paul-yiu>`, February 20, 1999)
+   | **Search Value (6, 9, 13):** :math:`2.073784975589`
 
-* :math:`(2*a^4 - a^2*b^2 - b^4 - a^2*c^2 + 2*b^2*c^2 - c^4)*(a^8 - a^6*b^2 - 2*a^4*b^4 + 3*a^2*b^6 - b^8 - a^6*c^2 + 5*a^4*b^2*c^2 - 3*a^2*b^4*c^2 - b^6*c^2 - 2*a^4*c^4 - 3*a^2*b^2*c^4 + 4*b^4*c^4 + 3*a^2*c^6 - b^2*c^6 - c^8) : :` (:person:`Paul Yiu <paul-yiu>`, February 20, 1999)
+.. collapse:: Linear Combinations
+   :badge: 1 combination
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`2.073784975589`
+   * :ref:`X(402) <X(402)>` = :ref:`X(1) <X(1)>` - 3 X(11831),\ :ref:`X(1) <X(1)>` + 3 X(11852),5 :ref:`X(2) <X(2)>` + X(3081),3 :ref:`X(2) <X(2)>` + X(4240),5 :ref:`X(2) <X(2)>` - X(11050),3 :ref:`X(2) <X(2)>` - 5 X(15183),2 :ref:`X(2) <X(2)>` + X(34582),\ :ref:`X(3) <X(3)>` + 3 X(11911),\ :ref:`X(3) <X(3)>` - 3 X(26451),3 :ref:`X(3) <X(3)>` - X(35241),\ :ref:`X(4) <X(4)>` + 3 X(11845),\ :ref:`X(4) <X(4)>` - 3 X(11897),2 :ref:`X(5) <X(5)>` + X(15774),\ :ref:`X(8) <X(8)>` - 3 X(16210),\ :ref:`X(8) <X(8)>` + 3 X(16212),\ :ref:`X(20) <X(20)>` - 3 X(16190),\ :ref:`X(145) <X(145)>` - 3 X(16211),3 :ref:`X(381) <X(381)>` - X(18507),3 :ref:`X(381) <X(381)>` + X(18508),X(1650) + 3 X(1651),5 X(1650) + 3 X(3081),2 X(1650) - 3 X(11049),5 X(1650) - 3 X(11050),X(1650) - 5 X(15183),2 X(1650) + 3 X(34582),5 X(1651) - X(3081),3 X(1651) - X(4240),2 X(1651) + X(11049),5 X(1651) + X(11050),3 X(1651) + 5 X(15183),3 X(1651) + 2 X(15184),3 X(3081) - 5 X(4240),2 X(3081) + 5 X(11049),3 X(3081) + 25 X(15183),3 X(3081) + 10 X(15184),2 X(3081) - 5 X(34582),2 X(4240) + 3 X(11049),5 X(4240) + 3 X(11050),X(4240) + 5 X(15183),X(4240) + 2 X(15184),2 X(4240) - 3 X(34582),3 X(5055) + X(20128),5 X(11049) - 2 X(11050),3 X(11049) - 10 X(15183),3 X(11049) - 4 X(15184),3 X(11050) - 25 X(15183),3 X(11050) - 10 X(15184),2 X(11050) + 5 X(34582),X(11251) - 3 X(11911),X(11251) + 3 X(26451),3 X(11251) + X(35241),3 X(11831) + X(12438),3 X(11845) - X(12113),3 X(11852) - X(12438),3 X(11897) + X(12113),9 X(11911) + X(35241),X(12626) + 3 X(16210),X(12626) - 3 X(16212),5 X(15183) - 2 X(15184),10 X(15183) + 3 X(34582),4 X(15184) + 3 X(34582),9 X(26451) - X(35241) (:person:`Peter Moses <peter-moses>`, November 26,2020)
 
-Linear Combinations
--------------------
+.. container:: note-item
 
-* :ref:`X(402) <X(402)>` = :ref:`X(1) <X(1)>` - 3 X(11831),\ :ref:`X(1) <X(1)>` + 3 X(11852),5 :ref:`X(2) <X(2)>` + X(3081),3 :ref:`X(2) <X(2)>` + X(4240),5 :ref:`X(2) <X(2)>` - X(11050),3 :ref:`X(2) <X(2)>` - 5 X(15183),2 :ref:`X(2) <X(2)>` + X(34582),\ :ref:`X(3) <X(3)>` + 3 X(11911),\ :ref:`X(3) <X(3)>` - 3 X(26451),3 :ref:`X(3) <X(3)>` - X(35241),\ :ref:`X(4) <X(4)>` + 3 X(11845),\ :ref:`X(4) <X(4)>` - 3 X(11897),2 :ref:`X(5) <X(5)>` + X(15774),\ :ref:`X(8) <X(8)>` - 3 X(16210),\ :ref:`X(8) <X(8)>` + 3 X(16212),\ :ref:`X(20) <X(20)>` - 3 X(16190),\ :ref:`X(145) <X(145)>` - 3 X(16211),3 :ref:`X(381) <X(381)>` - X(18507),3 :ref:`X(381) <X(381)>` + X(18508),X(1650) + 3 X(1651),5 X(1650) + 3 X(3081),2 X(1650) - 3 X(11049),5 X(1650) - 3 X(11050),X(1650) - 5 X(15183),2 X(1650) + 3 X(34582),5 X(1651) - X(3081),3 X(1651) - X(4240),2 X(1651) + X(11049),5 X(1651) + X(11050),3 X(1651) + 5 X(15183),3 X(1651) + 2 X(15184),3 X(3081) - 5 X(4240),2 X(3081) + 5 X(11049),3 X(3081) + 25 X(15183),3 X(3081) + 10 X(15184),2 X(3081) - 5 X(34582),2 X(4240) + 3 X(11049),5 X(4240) + 3 X(11050),X(4240) + 5 X(15183),X(4240) + 2 X(15184),2 X(4240) - 3 X(34582),3 X(5055) + X(20128),5 X(11049) - 2 X(11050),3 X(11049) - 10 X(15183),3 X(11049) - 4 X(15184),3 X(11050) - 25 X(15183),3 X(11050) - 10 X(15184),2 X(11050) + 5 X(34582),X(11251) - 3 X(11911),X(11251) + 3 X(26451),3 X(11251) + X(35241),3 X(11831) + X(12438),3 X(11845) - X(12113),3 X(11852) - X(12438),3 X(11897) + X(12113),9 X(11911) + X(35241),X(12626) + 3 X(16210),X(12626) - 3 X(16212),5 X(15183) - 2 X(15184),10 X(15183) + 3 X(34582),4 X(15184) + 3 X(34582),9 X(26451) - X(35241) (:person:`Peter Moses <peter-moses>`, November 26,2020)
+   :ref:`X(402) <X(402)>` lies.
+
+.. collapse:: Incident Central Lines
+   :badge: 62 lines
+   :class: line-catalog
+
+   {:ref:`1 <X(1)>`, 11831}, {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`6 <X(6)>`, 11901}, {:ref:`8 <X(8)>`, 12626}, {:ref:`10 <X(10)>`, 11900}, {:ref:`11 <X(11)>`, 11903}, {:ref:`12 <X(12)>`, 11904}, {:ref:`13 <X(13)>`, 12793}, {:ref:`14 <X(14)>`, 12792}, {:ref:`17 <X(17)>`, 22897}, {:ref:`18 <X(18)>`, 22852}, {:ref:`32 <X(32)>`, 11839}, {:ref:`40 <X(40)>`, 12696}, {:ref:`54 <X(54)>`, 12797}, {:ref:`55 <X(55)>`, 11848}, {:ref:`56 <X(56)>`, 18958}, {:ref:`64 <X(64)>`, 12791}, {:ref:`67 <X(67)>`, 32279}, {:ref:`68 <X(68)>`, 12418}, {:ref:`74 <X(74)>`, 12369}, {:ref:`76 <X(76)>`, 12794}, {:ref:`79 <X(79)>`, 16129}, {:ref:`80 <X(80)>`, 12729}, {:ref:`83 <X(83)>`, 12795}, {:ref:`84 <X(84)>`, 12668}, {:ref:`98 <X(98)>`, 12181}, {:ref:`99 <X(99)>`, 13179}, {:ref:`100 <X(100)>`, 13268}, {:ref:`104 <X(104)>`, 12752}, {:ref:`110 <X(110)>`, 13212}, {:ref:`112 <X(112)>`, 13281}, {:ref:`113 <X(113)>`, 38605}, {:ref:`145 <X(145)>`, 16211}, {:ref:`190 <X(190)>`, 24830}, {:ref:`262 <X(262)>`, 22698}, {:ref:`265 <X(265)>`, 12790}, {:ref:`371 <X(371)>`, 35791}, {:ref:`372 <X(372)>`, 35790}, {:ref:`485 <X(485)>`, 12800}, {:ref:`486 <X(486)>`, 12799}, {:ref:`493 <X(493)>`, 11907}, {:ref:`494 <X(494)>`, 11908}, {:ref:`671 <X(671)>`, 12347}, {1297, 12796}, {1327, 13689}, {1328, 13809}, {3068, 13894}, {3069, 13948}, {5597, 11863}, {5598, 11864}, {5877, 26958}, {5972, 6130}, {6145, 32372}, {6776, 39886}, {7160, 12789}, {7740, 18279}, {10266, 12798}, {11657, 16186}, {13494, 13495}, {22466, 22943}, {25641, 38625}, {34297, 38794}
+
+.. collapse:: Functional Relations
+   :badge: 13 relations
+
+   * :ref:`X(402) <X(402)>` = midpoint of X(i) and X(j) for these {i,j}: {:ref:`1 <X(1)>`, 12438}, {:ref:`2 <X(2)>`, 1651}, {:ref:`3 <X(3)>`, 11251}, {:ref:`4 <X(4)>`, 12113}, {:ref:`5 <X(5)>`, 32162}, {:ref:`6 <X(6)>`, 12583}, {:ref:`8 <X(8)>`, 12626}, {:ref:`13 <X(13)>`, 12793}, {:ref:`14 <X(14)>`, 12792}, {:ref:`17 <X(17)>`, 22897}, {:ref:`18 <X(18)>`, 22852}, {:ref:`40 <X(40)>`, 12696}, {:ref:`54 <X(54)>`, 12797}, {:ref:`64 <X(64)>`, 12791}, {:ref:`67 <X(67)>`, 32279}, {:ref:`68 <X(68)>`, 12418}, {:ref:`74 <X(74)>`, 12369}, {:ref:`76 <X(76)>`, 12794}, {:ref:`79 <X(79)>`, 16129}, {:ref:`80 <X(80)>`, 12729}, {:ref:`83 <X(83)>`, 12795}, {:ref:`84 <X(84)>`, 12668}, {:ref:`98 <X(98)>`, 12181}, {:ref:`99 <X(99)>`, 13179}, {:ref:`100 <X(100)>`, 13268}, {:ref:`104 <X(104)>`, 12752}, {:ref:`110 <X(110)>`, 13212}, {:ref:`112 <X(112)>`, 13281}, {:ref:`190 <X(190)>`, 24830}, {:ref:`262 <X(262)>`, 22698}, {:ref:`265 <X(265)>`, 12790}, {:ref:`402 <X(402)>`, :ref:`402 <X(402)>`}, {:ref:`485 <X(485)>`, 12800}, {:ref:`486 <X(486)>`, 12799}, {:ref:`671 <X(671)>`, 12347}, {1297, 12796}, {1327, 13689}, {1328, 13809}, {1650, 4240}, {3081, 11050}, {6145, 32372}, {6776, 39886}, {7160, 12789}, {7740, 18279}, {10266, 12798}, {11049, 34582}, {11831, 11852}, {11832, 11853}, {11839, 11885}, {11845, 11897}, {11848, 11909}, {11863, 26383}, {11864, 26407}, {11901, 19017}, {11902, 19018}, {11903, 11906}, {11904, 11905}, {11907, 26447}, {11908, 26448}, {11911, 26451}, {11912, 26452}, {11913, 26453}, {11914, 11915}, {13494, 13495}, {13894, 26449}, {13948, 26450}, {16210, 16212}, {18507, 18508}, {18958, 22755}, {22466, 22943}
+   * :ref:`X(402) <X(402)>` = reflection of X(i) in X(j) for these {i,j}: {11049, :ref:`2 <X(2)>`}, {34582, 1651}, {1650, 15184}, {15774, 32162}
+   * :ref:`X(402) <X(402)>` = :term:`complement <complement>` of X(1650)
+   * :ref:`X(402) <X(402)>` = :term:`anticomplement <anticomplement>` of X(15184)
+   * :ref:`X(402) <X(402)>` = :term:`isotomic conjugate <isotomic-conjugate>` of the anticomplement of X(32750)
+   * :ref:`X(402) <X(402)>` = X(i)-:term:`complementary conjugate <complementary-conjugate>` of X(j) for these (i,j): {:ref:`162 <X(162)>`, 16177}, {1304, 34846}, {15459, 21253}, {24000, :ref:`113 <X(113)>`}, {32640, 16595}, {32676, 39008}, {32695, 8287}, {32715, 16573}, {36034, :ref:`122 <X(122)>`}, {36117, 37985}, {36131, 15526}
+   * :ref:`X(402) <X(402)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): {5972, 31945}, {9033, :ref:`30 <X(30)>`}, {13494, :ref:`523 <X(523)>`}
+   * :ref:`X(402) <X(402)>` = X(32750)-:term:`cross conjugate <cross-conjugate>` of :ref:`X(2) <X(2)>`
+   * :ref:`X(402) <X(402)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these (i,j): {:ref:`74 <X(74)>`, 9390}, {1304, 9392}, {2159, 15351}
+   * :ref:`X(402) <X(402)>` = X(i)-:term:`reciprocal conjugate <reciprocal-conjugate>` of X(j) for these (i,j): {:ref:`30 <X(30)>`, 15351}, {1494, 39352}, {2173, 9390}, {2349, 2629}, {2631, 9392}, {15184, 32750}, {16077, 39062}, {34767, 38240}
+   * :ref:`X(402) <X(402)>` = barycentric product X(i)\*X(j) for these {i,j}: {:ref:`30 <X(30)>`, 39352}, {2629, 14206}, {4240, 38240}, {9033, 39062}
+   * :ref:`X(402) <X(402)>` = barycentric quotient X(i)/X(j) for these {i,j}: {:ref:`30 <X(30)>`, 15351}, {2173, 9390}, {2629, 2349}, {2631, 9392}, {32750, 15184}, {38240, 34767}, {39062, 16077}, {39352, 1494}
+   * :ref:`X(402) <X(402)>` = {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): {:ref:`1 <X(1)>`, 11852, 12438}, {:ref:`1 <X(1)>`, 26452, 11915}, {:ref:`1 <X(1)>`, 26453, 11914}, {:ref:`2 <X(2)>`, 1650, 15184}, {:ref:`2 <X(2)>`, 4240, 1650}, {:ref:`3 <X(3)>`, 11911, 11251}, {:ref:`4 <X(4)>`, 11845, 12113}, {:ref:`8 <X(8)>`, 16212, 12626}, {:ref:`381 <X(381)>`, 18508, 18507}, {1650, 1651, 4240}, {1650, 15183, :ref:`2 <X(2)>`}, {1650, 15184, 11049}, {1651, 15183, 1650}, {4240, 15183, 15184}, {11251, 26451, :ref:`3 <X(3)>`}, {11831, 12438, :ref:`1 <X(1)>`}, {11897, 12113, :ref:`4 <X(4)>`}, {11901, 11902, 12583}, {11912, 11913, :ref:`1 <X(1)>`}, {11912, 12438, 11914}, {11913, 12438, 11915}, {12626, 16210, :ref:`8 <X(8)>`}, {19017, 19018, :ref:`6 <X(6)>`}, {26452, 26453, 12438}
 
 Notes
 -----
@@ -39,42 +65,13 @@ Notes
 
 .. container:: note-item
 
-   In *A History of Mathematics,* Florian Cajori writes, "H. C. Gossard of the University of Oklahoma showed in 1916 that the three Euler lines of the triangles formed by the Euler line and the sides, taken by twos, of a given triangle, form a triangle . . . perspective with the given triangle and having the same Euler line." Let ABC be the given triangle and A'B'C' the Gossard triangle - that is, the triangle perspective with the given triangle and having the same Euler line. The lines AA', BB', CC' concur in :ref:`X(402) <X(402)>`, named the Gosssard perspector by John Conway (1998).
-
-.. container:: note-item
-
    Actually, :ref:`X(402) <X(402)>` dates back to an article by Christopher Zeeman in *Wiskundige Opgaven* 8 (1899-1902) 305. For details, see Paul Yiu's :cite:`Hyacinthos <hyacinthos>` message #7536 and others with Gossard in the subject line. (In ETC, the change of name from Gossard Perspector to Zeeman-Gossard Perspector was made on Oct. 15, 2003.) Further details are given by Wilson Stothers in :cite:`Hyacinthos #8383 <hyacinthos>`, Oct. 21, 2003.
 
-      (From :person:`Angel Montesdeoca <angel-montesdeoca>`, November 25, 2020) Let P be a variable point on the Euler line and Q its :term:`isotomic conjugate <isotomic-conjugate>`. Let TP and TQ be the :term:`cevian triangles <cevian-triangle>` of P and Q, respectively. Let F be the finite fixed point of the affine transformation that carries TP onto TQ. The envelope of the line PF is a hyperbola (H) with center :ref:`X(402) <X(402)>`, an asymptote of the Euler line. A barycentric equation for (H) follows:
+      (From :person:`Angel Montesdeoca <angel-montesdeoca>`, November 25, 2020) Let P be a variable point on the Euler line and Q its isotomic conjugate. Let TP and TQ be the :term:`cevian triangles <cevian-triangle>` of P and Q, respectively. Let F be the finite fixed point of the affine transformation that carries TP onto TQ. The envelope of the line PF is a hyperbola (H) with center :ref:`X(402) <X(402)>`, an asymptote of the Euler line. A barycentric equation for (H) follows:
 
    cyclic sum [(-b^4+c^4+a^2 (b^2-c^2))^4 (-2 a^4+(b^2-c^2)^2+a^2 (b^2+c^2))^2x^2-2 (a^2-b^2)^2 (a^2-c^2)^2 (a^4-(b^2-c^2)^2)^2 (a^8-a^6 (b^2+c^2)+5 a^2 (b^2-c^2)^2 (b^2+c^2)+a^4 (-3 b^4+7 b^2 c^2-3 c^4)-(b^2-c^2)^2 (2 b^4+5 b^2 c^2+2 c^4))y z ] = 0.
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(402) <X(402)>` lies and on these lines:
-
-{:ref:`1 <X(1)>`, 11831}, {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`6 <X(6)>`, 11901}, {:ref:`8 <X(8)>`, 12626}, {:ref:`10 <X(10)>`, 11900}, {:ref:`11 <X(11)>`, 11903}, {:ref:`12 <X(12)>`, 11904}, {:ref:`13 <X(13)>`, 12793}, {:ref:`14 <X(14)>`, 12792}, {:ref:`17 <X(17)>`, 22897}, {:ref:`18 <X(18)>`, 22852}, {:ref:`32 <X(32)>`, 11839}, {:ref:`40 <X(40)>`, 12696}, {:ref:`54 <X(54)>`, 12797}, {:ref:`55 <X(55)>`, 11848}, {:ref:`56 <X(56)>`, 18958}, {:ref:`64 <X(64)>`, 12791}, {:ref:`67 <X(67)>`, 32279}, {:ref:`68 <X(68)>`, 12418}, {:ref:`74 <X(74)>`, 12369}, {:ref:`76 <X(76)>`, 12794}, {:ref:`79 <X(79)>`, 16129}, {:ref:`80 <X(80)>`, 12729}, {:ref:`83 <X(83)>`, 12795}, {:ref:`84 <X(84)>`, 12668}, {:ref:`98 <X(98)>`, 12181}, {:ref:`99 <X(99)>`, 13179}, {:ref:`100 <X(100)>`, 13268}, {:ref:`104 <X(104)>`, 12752}, {:ref:`110 <X(110)>`, 13212}, {:ref:`112 <X(112)>`, 13281}, {:ref:`113 <X(113)>`, 38605}, {:ref:`145 <X(145)>`, 16211}, {:ref:`190 <X(190)>`, 24830}, {:ref:`262 <X(262)>`, 22698}, {:ref:`265 <X(265)>`, 12790}, {:ref:`371 <X(371)>`, 35791}, {:ref:`372 <X(372)>`, 35790}, {:ref:`485 <X(485)>`, 12800}, {:ref:`486 <X(486)>`, 12799}, {:ref:`493 <X(493)>`, 11907}, {:ref:`494 <X(494)>`, 11908}, {:ref:`671 <X(671)>`, 12347}, {1297, 12796}, {1327, 13689}, {1328, 13809}, {3068, 13894}, {3069, 13948}, {5597, 11863}, {5598, 11864}, {5877, 26958}, {5972, 6130}, {6145, 32372}, {6776, 39886}, {7160, 12789}, {7740, 18279}, {10266, 12798}, {11657, 16186}, {13494, 13495}, {22466, 22943}, {25641, 38625}, {34297, 38794}
-
-Relations
----------
-
-* :ref:`X(402) <X(402)>` = midpoint of X(i) and X(j) for these {i,j}: {:ref:`1 <X(1)>`, 12438}, {:ref:`2 <X(2)>`, 1651}, {:ref:`3 <X(3)>`, 11251}, {:ref:`4 <X(4)>`, 12113}, {:ref:`5 <X(5)>`, 32162}, {:ref:`6 <X(6)>`, 12583}, {:ref:`8 <X(8)>`, 12626}, {:ref:`13 <X(13)>`, 12793}, {:ref:`14 <X(14)>`, 12792}, {:ref:`17 <X(17)>`, 22897}, {:ref:`18 <X(18)>`, 22852}, {:ref:`40 <X(40)>`, 12696}, {:ref:`54 <X(54)>`, 12797}, {:ref:`64 <X(64)>`, 12791}, {:ref:`67 <X(67)>`, 32279}, {:ref:`68 <X(68)>`, 12418}, {:ref:`74 <X(74)>`, 12369}, {:ref:`76 <X(76)>`, 12794}, {:ref:`79 <X(79)>`, 16129}, {:ref:`80 <X(80)>`, 12729}, {:ref:`83 <X(83)>`, 12795}, {:ref:`84 <X(84)>`, 12668}, {:ref:`98 <X(98)>`, 12181}, {:ref:`99 <X(99)>`, 13179}, {:ref:`100 <X(100)>`, 13268}, {:ref:`104 <X(104)>`, 12752}, {:ref:`110 <X(110)>`, 13212}, {:ref:`112 <X(112)>`, 13281}, {:ref:`190 <X(190)>`, 24830}, {:ref:`262 <X(262)>`, 22698}, {:ref:`265 <X(265)>`, 12790}, {:ref:`402 <X(402)>`, :ref:`402 <X(402)>`}, {:ref:`485 <X(485)>`, 12800}, {:ref:`486 <X(486)>`, 12799}, {:ref:`671 <X(671)>`, 12347}, {1297, 12796}, {1327, 13689}, {1328, 13809}, {1650, 4240}, {3081, 11050}, {6145, 32372}, {6776, 39886}, {7160, 12789}, {7740, 18279}, {10266, 12798}, {11049, 34582}, {11831, 11852}, {11832, 11853}, {11839, 11885}, {11845, 11897}, {11848, 11909}, {11863, 26383}, {11864, 26407}, {11901, 19017}, {11902, 19018}, {11903, 11906}, {11904, 11905}, {11907, 26447}, {11908, 26448}, {11911, 26451}, {11912, 26452}, {11913, 26453}, {11914, 11915}, {13494, 13495}, {13894, 26449}, {13948, 26450}, {16210, 16212}, {18507, 18508}, {18958, 22755}, {22466, 22943}
-* :ref:`X(402) <X(402)>` = reflection of X(i) in X(j) for these {i,j}: {11049, :ref:`2 <X(2)>`}, {34582, 1651}, {1650, 15184}, {15774, 32162}
-* :ref:`X(402) <X(402)>` = :term:`complement <complement>` of X(1650)
-* :ref:`X(402) <X(402)>` = :term:`anticomplement <anticomplement>` of X(15184)
-* :ref:`X(402) <X(402)>` = isotomic conjugate of the anticomplement of X(32750)
-* :ref:`X(402) <X(402)>` = X(i)-:term:`complementary conjugate <complementary-conjugate>` of X(j) for these (i,j): {:ref:`162 <X(162)>`, 16177}, {1304, 34846}, {15459, 21253}, {24000, :ref:`113 <X(113)>`}, {32640, 16595}, {32676, 39008}, {32695, 8287}, {32715, 16573}, {36034, :ref:`122 <X(122)>`}, {36117, 37985}, {36131, 15526}
-* :ref:`X(402) <X(402)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): {5972, 31945}, {9033, :ref:`30 <X(30)>`}, {13494, :ref:`523 <X(523)>`}
-* :ref:`X(402) <X(402)>` = X(32750)-:term:`cross conjugate <cross-conjugate>` of :ref:`X(2) <X(2)>`
-* :ref:`X(402) <X(402)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these (i,j): {:ref:`74 <X(74)>`, 9390}, {1304, 9392}, {2159, 15351}
-* :ref:`X(402) <X(402)>` = X(i)-:term:`reciprocal conjugate <reciprocal-conjugate>` of X(j) for these (i,j): {:ref:`30 <X(30)>`, 15351}, {1494, 39352}, {2173, 9390}, {2349, 2629}, {2631, 9392}, {15184, 32750}, {16077, 39062}, {34767, 38240}
-* :ref:`X(402) <X(402)>` = barycentric product X(i)\*X(j) for these {i,j}: {:ref:`30 <X(30)>`, 39352}, {2629, 14206}, {4240, 38240}, {9033, 39062}
-* :ref:`X(402) <X(402)>` = barycentric quotient X(i)/X(j) for these {i,j}: {:ref:`30 <X(30)>`, 15351}, {2173, 9390}, {2629, 2349}, {2631, 9392}, {32750, 15184}, {38240, 34767}, {39062, 16077}, {39352, 1494}
-* :ref:`X(402) <X(402)>` = {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): {:ref:`1 <X(1)>`, 11852, 12438}, {:ref:`1 <X(1)>`, 26452, 11915}, {:ref:`1 <X(1)>`, 26453, 11914}, {:ref:`2 <X(2)>`, 1650, 15184}, {:ref:`2 <X(2)>`, 4240, 1650}, {:ref:`3 <X(3)>`, 11911, 11251}, {:ref:`4 <X(4)>`, 11845, 12113}, {:ref:`8 <X(8)>`, 16212, 12626}, {:ref:`381 <X(381)>`, 18508, 18507}, {1650, 1651, 4240}, {1650, 15183, :ref:`2 <X(2)>`}, {1650, 15184, 11049}, {1651, 15183, 1650}, {4240, 15183, 15184}, {11251, 26451, :ref:`3 <X(3)>`}, {11831, 12438, :ref:`1 <X(1)>`}, {11897, 12113, :ref:`4 <X(4)>`}, {11901, 11902, 12583}, {11912, 11913, :ref:`1 <X(1)>`}, {11912, 12438, 11914}, {11913, 12438, 11915}, {12626, 16210, :ref:`8 <X(8)>`}, {19017, 19018, :ref:`6 <X(6)>`}, {26452, 26453, 12438}
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

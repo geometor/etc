@@ -1,5 +1,7 @@
 :navigation: header
 :order: 4
+:layout: book
+:book_title: Encyclopedia of Triangle Centers
 
 .. _bibliography:
 

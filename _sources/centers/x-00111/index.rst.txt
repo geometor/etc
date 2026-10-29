@@ -9,38 +9,94 @@
 X(111) = PARRY POINT
 ====================
 
+.. enunciation::
+
+   Let L be a line tangent to the Brocard circle. Let P be the :term:`trilinear pole <trilinear-pole>` of L, and let P' be the :term:`isogonal conjugate <isogonal-conjugate>` of P. As L varies, P' traces a parabola with focus at :ref:`X(111) <X(111)>`. The parabola meets the line at infinity at :ref:`X(524) <X(524)>`. Also, :ref:`X(111) <X(111)>` is the QA-P4 center (Isogonal Center) of quadrangle :ref:`X(13) <X(13)>`\ \ :ref:`X(14) <X(14)>`\ \ :ref:`X(15) <X(15)>`\ \ :ref:`X(16) <X(16)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/25-qa-p4.html) Also, let A' = BC∩\ :ref:`X(115) <X(115)>`\ \ :ref:`X(125) <X(125)>`, and define B' and C' cyclically. The circumcircles of AB'C', BC'A', CA'B' concur in :ref:`X(111) <X(111)>`. (:person:`Randy Hutson <randy-hutson>`, October 13, 2015)
+
 .. figure:: x-00111.svg
    :alt: X(111) = PARRY POINT
    :align: center
 
    **X(111) = PARRY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
-
-* :math:`a/(2a^{2} - b^{2} - c^{2}) : b/(2b^{2} - c^{2} - a^{2}) : c/(2c^{2} - a^{2} - b^{2})`
-
-Barycentrics
-~~~~~~~~~~~~
-
-* :math:`a^{2}/(2a^{2} - b^{2} - c^{2}) : b^{2}/(2b^{2} - c^{2} - a^{2}) : c^{2}/(2c^{2} - a^{2} - b^{2})`
-
-Tripolars
-~~~~~~~~~
-
-* :math:`|b c (2 a^2 - b^2 - c^2)| : :`
-
-* **Kimberling (6, 9, 13) Search Value:** :math:`1.207441876625`
-
-Notes
------
+   | **Trilinears:** :math:`a/(2a^{2} - b^{2} - c^{2}) : b/(2b^{2} - c^{2} - a^{2}) : c/(2c^{2} - a^{2} - b^{2})`
+   | **Barycentrics:** :math:`a^{2}/(2a^{2} - b^{2} - c^{2}) : b^{2}/(2b^{2} - c^{2} - a^{2}) : c^{2}/(2c^{2} - a^{2} - b^{2})`
+   | **Tripolars:** :math:`|b c (2 a^2 - b^2 - c^2)| : :`
+   | **Search Value (6, 9, 13):** :math:`1.207441876625`
 
 .. container:: note-item
 
-   Let L be a line tangent to the Brocard circle. Let P be the :term:`trilinear pole <trilinear-pole>` of L, and let P' be the :term:`isogonal conjugate <isogonal-conjugate>` of P. As L varies, P' traces a parabola with focus at :ref:`X(111) <X(111)>`. The parabola meets the line at infinity at :ref:`X(524) <X(524)>`. Also, :ref:`X(111) <X(111)>` is the QA-P4 center (Isogonal Center) of quadrangle :ref:`X(13) <X(13)>`\ \ :ref:`X(14) <X(14)>`\ \ :ref:`X(15) <X(15)>`\ \ :ref:`X(16) <X(16)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/25-qa-p4.html) Also, let A' = BC∩\ :ref:`X(115) <X(115)>`\ \ :ref:`X(125) <X(125)>`, and define B' and C' cyclically. The circumcircles of AB'C', BC'A', CA'B' concur in :ref:`X(111) <X(111)>`. (:person:`Randy Hutson <randy-hutson>`, October 13, 2015)
+   :ref:`X(111) <X(111)>` lies on the Parry circle.
+
+.. collapse:: Incident Central Lines
+   :badge: 305 lines
+   :class: line-catalog
+
+   {:ref:`1 <X(1)>`, 8691}, {:ref:`2 <X(2)>`, :ref:`99 <X(99)>`}, {:ref:`3 <X(3)>`, 1296}, {:ref:`4 <X(4)>`, 1560}, {:ref:`5 <X(5)>`, 10748}, {:ref:`6 <X(6)>`, :ref:`110 <X(110)>`}, {:ref:`11 <X(11)>`, 10779}, {:ref:`15 <X(15)>`, 9202}, {:ref:`16 <X(16)>`, 9203}, {:ref:`20 <X(20)>`, 20187}, {:ref:`22 <X(22)>`, 2079}, {:ref:`23 <X(23)>`, :ref:`187 <X(187)>`}, {:ref:`24 <X(24)>`, 8428}, {:ref:`25 <X(25)>`, :ref:`112 <X(112)>`}, {:ref:`30 <X(30)>`, 2696}, {:ref:`32 <X(32)>`, 1383}, {:ref:`37 <X(37)>`, :ref:`100 <X(100)>`}, {:ref:`39 <X(39)>`, 7711}, {:ref:`42 <X(42)>`, :ref:`101 <X(101)>`}, {:ref:`51 <X(51)>`, 10558}, {:ref:`55 <X(55)>`, 6019}, {:ref:`56 <X(56)>`, 3325}, {:ref:`74 <X(74)>`, 2433}, {:ref:`76 <X(76)>`, 16055}, {:ref:`98 <X(98)>`, 1637}, {:ref:`102 <X(102)>`, 2819}, {:ref:`103 <X(103)>`, 2824}, {:ref:`104 <X(104)>`, 2830}, {:ref:`105 <X(105)>`, 2837}, {:ref:`106 <X(106)>`, 2843}, {:ref:`107 <X(107)>`, :ref:`393 <X(393)>`}, {:ref:`108 <X(108)>`, 1880}, {:ref:`109 <X(109)>`, 1400}, {:ref:`125 <X(125)>`, 35902}, {:ref:`140 <X(140)>`, 38806}, {:ref:`141 <X(141)>`, 36883}, {:ref:`182 <X(182)>`, :ref:`353 <X(353)>`}, {:ref:`183 <X(183)>`, 9066}, {:ref:`184 <X(184)>`, 3048}, {:ref:`186 <X(186)>`, 10098}, {:ref:`230 <X(230)>`, :ref:`476 <X(476)>`}, {:ref:`232 <X(232)>`, 1304}, {:ref:`251 <X(251)>`, :ref:`827 <X(827)>`}, {:ref:`263 <X(263)>`, 9463}, {:ref:`265 <X(265)>`, 14846}, {:ref:`308 <X(308)>`, :ref:`689 <X(689)>`}, {:ref:`316 <X(316)>`, 35569}, {:ref:`323 <X(323)>`, 2987}, {:ref:`325 <X(325)>`, 2858}, {:ref:`351 <X(351)>`, 2492}, {:ref:`352 <X(352)>`, :ref:`511 <X(511)>`}, {:ref:`376 <X(376)>`, 30256}, {:ref:`381 <X(381)>`, 6032}, {:ref:`382 <X(382)>`, 38799}, {:ref:`385 <X(385)>`, :ref:`892 <X(892)>`}, {:ref:`468 <X(468)>`, :ref:`935 <X(935)>`}, {:ref:`477 <X(477)>`, 5915}, {:ref:`493 <X(493)>`, 1306}, {:ref:`494 <X(494)>`, 1307}, {:ref:`512 <X(512)>`, :ref:`843 <X(843)>`}, {:ref:`513 <X(513)>`, 2721}, {:ref:`514 <X(514)>`, 2729}, {:ref:`515 <X(515)>`, 2735}, {:ref:`516 <X(516)>`, 2740}, {:ref:`517 <X(517)>`, 2746}, {:ref:`518 <X(518)>`, 2753}, {:ref:`519 <X(519)>`, 2759}, {:ref:`520 <X(520)>`, 2763}, {:ref:`521 <X(521)>`, 2767}, {:ref:`522 <X(522)>`, 2768}, {:ref:`523 <X(523)>`, 2770}, {:ref:`524 <X(524)>`, 6082}, {:ref:`526 <X(526)>`, 9184}, {:ref:`538 <X(538)>`, 5971}, {:ref:`542 <X(542)>`, 6791}, {:ref:`548 <X(548)>`, 38798}, {:ref:`550 <X(550)>`, 38797}, {:ref:`576 <X(576)>`, 8600}, {:ref:`612 <X(612)>`, 15322}, {:ref:`631 <X(631)>`, 38804}, {:ref:`647 <X(647)>`, :ref:`842 <X(842)>`}, {:ref:`649 <X(649)>`, 2712}, {:ref:`650 <X(650)>`, 2752}, {:ref:`667 <X(667)>`, 35107}, {:ref:`669 <X(669)>`, 5970}, {:ref:`675 <X(675)>`, 26273}, {:ref:`694 <X(694)>`, :ref:`805 <X(805)>`}, {:ref:`729 <X(729)>`, 5027}, {:ref:`739 <X(739)>`, 5040}, {:ref:`741 <X(741)>`, 3572}, {:ref:`755 <X(755)>`, 5113}, {:ref:`759 <X(759)>`, 23894}, {:ref:`831 <X(831)>`, 1961}, {:ref:`840 <X(840)>`, 5098}, {:ref:`850 <X(850)>`, 2868}, {:ref:`858 <X(858)>`, 24855}, {:ref:`880 <X(880)>`, 34087}, {:ref:`898 <X(898)>`, 5291}, {:ref:`901 <X(901)>`, 17735}, {:ref:`902 <X(902)>`, 2054}, {:ref:`907 <X(907)>`, 1180}, {:ref:`919 <X(919)>`, 20989}, {:ref:`925 <X(925)>`, 2165}, {:ref:`927 <X(927)>`, 37798}, {:ref:`930 <X(930)>`, 2963}, {:ref:`931 <X(931)>`, :ref:`941 <X(941)>`}, {:ref:`932 <X(932)>`, 16606}, {:ref:`933 <X(933)>`, 8882}, {:ref:`934 <X(934)>`, 1427}, {1055, 2701}, {1084, 14948}, {1113, 8106}, {1114, 8105}, {1171, 6578}, {1194, 3108}, {1239, 6572}, {1241, 35567}, {1287, 10416}, {1289, 6353}, {1290, 3290}, {1291, 14579}, {1292, 4220}, {1293, 9526}, {1294, 9529}, {1295, 9531}, {1297, 13114}, {1302, 3018}, {1305, 26252}, {1310, 17019}, {1340, 6141}, {1341, 6142}, {1344, 8427}, {1345, 8426}, {1350, 33979}, {1379, 5639}, {1380, 5638}, {1495, 1976}, {1499, 6093}, {1611, 36616}, {1640, 14932}, {1645, 9468}, {1648, 9140}, {1657, 38800}, {1691, 32694}, {1692, 35265}, {1799, 6573}, {1992, 10552}, {2080, 13225}, {2177, 5147}, {2248, 33774}, {2291, 5075}, {2373, 9979}, {2374, 9131}, {2378, 6138}, {2379, 6137}, {2393, 5166}, {2408, 9084}, {2444, 9135}, {2469, 14899}, {2470, 35607}, {2690, 3011}, {2691, 37959}, {2697, 6587}, {2698, 3288}, {2703, 3230}, {2713, 3331}, {2748, 5524}, {2760, 3239}, {2766, 5089}, {2782, 9775}, {2981, 10409}, {2998, 3222}, {3003, 9060}, {3016, 9160}, {3055, 10276}, {3060, 10559}, {3090, 38807}, {3098, 8617}, {3143, 34171}, {3146, 38801}, {3163, 5304}, {3430, 28295}, {3448, 6388}, {3457, 5995}, {3458, 5994}, {3522, 38803}, {3542, 30251}, {3815, 30537}, {3832, 38802}, {3920, 9281}, {4231, 26706}, {4240, 6531}, {4563, 25047}, {4588, 28658}, {5012, 10485}, {5024, 9155}, {5033, 7712}, {5038, 5643}, {5085, 14688}, {5092, 14660}, {5099, 30718}, {5108, 5969}, {5169, 18424}, {5182, 35356}, {5251, 29351}, {5468, 10754}, {5475, 11640}, {5477, 9143}, {5622, 35901}, {5916, 9200}, {5917, 9201}, {6034, 7698}, {6037, 9154}, {6083, 20461}, {6094, 9080}, {6128, 7736}, {6151, 10410}, {6200, 7598}, {6221, 7601}, {6323, 9208}, {6325, 9769}, {6339, 20080}, {6396, 7599}, {6398, 7602}, {6781, 37901}, {7467, 14678}, {7485, 34866}, {7492, 8588}, {7496, 8589}, {7575, 32229}, {7606, 10166}, {7610, 9829}, {7792, 9069}, {7954, 14075}, {8030, 38020}, {8429, 37930}, {8586, 9225}, {8644, 9136}, {8651, 14659}, {8652, 28625}, {8681, 15387}, {8707, 14624}, {8709, 27809}, {8744, 10422}, {8859, 18818}, {8869, 19121}, {9059, 26244}, {9067, 26243}, {9070, 26242}, {9076, 22105}, {9091, 16098}, {9096, 26241}, {9126, 19901}, {9137, 10102}, {9159, 9828}, {9169, 9830}, {9176, 13233}, {9189, 18007}, {9206, 11081}, {9207, 11086}, {9605, 30734}, {9810, 14126}, {9831, 12434}, {10304, 37749}, {10313, 10420}, {10560, 11002}, {10645, 14704}, {10646, 14705}, {11175, 36213}, {11215, 11622}, {11332, 21444}, {11632, 14694}, {11635, 38463}, {11639, 31489}, {11645, 11647}, {12041, 35447}, {12149, 25424}, {12212, 31609}, {12834, 14153}, {13397, 26253}, {13398, 26283}, {14733, 17966}, {15018, 30535}, {15066, 35575}, {15271, 34227}, {15360, 15993}, {16081, 22456}, {16167, 16310}, {16318, 22239}, {16806, 21461}, {16807, 21462}, {19561, 28895}, {21906, 34574}, {23297, 33013}, {23701, 30209}, {30249, 33630}, {31884, 37751}, {32237, 38010}, {32526, 35002}, {32849, 35574}, {34079, 36069}, {34482, 34572}, {36066, 36085}, {36201, 36203}, {36894, 37643}
+
+.. collapse:: Functional Relations
+   :badge: 55 relations
+
+   * :ref:`X(111) <X(111)>` = reflection of X(1296) in :ref:`X(3) <X(3)>`
+   * :ref:`X(111) <X(111)>` = isogonal conjugate of :ref:`X(524) <X(524)>`
+   * :ref:`X(111) <X(111)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(3266)
+   * :ref:`X(111) <X(111)>` = inverse-in-Brocard-circle of :ref:`X(353) <X(353)>`
+   * :ref:`X(111) <X(111)>` = :term:`anticomplement <anticomplement>` of :ref:`X(126) <X(126)>`
+   * :ref:`X(111) <X(111)>` = :term:`cevapoint <cevapoint>` of :ref:`X(6) <X(6)>` and :ref:`X(187) <X(187)>`
+   * :ref:`X(111) <X(111)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`23 <X(23)>`, :ref:`251 <X(251)>`), (:ref:`187 <X(187)>`, :ref:`6 <X(6)>`), (:ref:`351 <X(351)>`, :ref:`110 <X(110)>`)
+   * :ref:`X(111) <X(111)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(351) <X(351)>`\ \ :ref:`X(690) <X(690)>`
+   * :ref:`X(111) <X(111)>` = perspector of ABC and the triangle formed by the reflections of line PU(7) in the sides of ABC
+   * :ref:`X(111) <X(111)>` = point of intersection, other than A, B, C, of circumcircle and hyperbola {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(6) <X(6)>`}}
+   * :ref:`X(111) <X(111)>` = trilinear pole of line :ref:`X(6) <X(6)>`\ \ :ref:`X(512) <X(512)>`
+   * :ref:`X(111) <X(111)>` = Λ(:ref:`X(2) <X(2)>`, :ref:`X(6) <X(6)>`)
+   * :ref:`X(111) <X(111)>` = Ψ(X(i),X(j)) for these (i,j): (:ref:`6 <X(6)>`, :ref:`512 <X(512)>`), (:ref:`21 <X(21)>`, :ref:`650 <X(650)>`), (:ref:`190 <X(190)>`, :ref:`10 <X(10)>`)
+   * :ref:`X(111) <X(111)>` = trilinear pole wrt circumsymmedial triangle of Brocard axis
+   * :ref:`X(111) <X(111)>` = trilinear pole wrt circummedial triangle of line :ref:`X(2) <X(2)>`\ \ :ref:`X(6) <X(6)>`
+   * :ref:`X(111) <X(111)>` = :ref:`X(110) <X(110)>`-of-circumsymmedial-triangle
+   * :ref:`X(111) <X(111)>` = :ref:`X(23) <X(23)>`-of-4th-Brocard-triangle
+   * :ref:`X(111) <X(111)>` = :ref:`X(352) <X(352)>`-of-orthocentroidal-triangle
+   * :ref:`X(111) <X(111)>` = :ref:`X(138) <X(138)>`-of-excentral-triangle
+   * :ref:`X(111) <X(111)>` = reflection of X(2770) in the Euler line
+   * :ref:`X(111) <X(111)>` = reflection of :ref:`X(843) <X(843)>` in the Brocard axis
+   * :ref:`X(111) <X(111)>` = reflection of X(2721) in line :ref:`X(1) <X(1)>`\ \ :ref:`X(3) <X(3)>`
+   * :ref:`X(111) <X(111)>` = reflection of :ref:`X(110) <X(110)>` in line :ref:`X(3) <X(3)>`\ \ :ref:`X(351) <X(351)>`
+   * :ref:`X(111) <X(111)>` = inverse-in-polar-circle of X(1560)
+   * :ref:`X(111) <X(111)>` = inverse-in-{circumcircle, nine-point circle}-inverter of :ref:`X(115) <X(115)>`
+   * :ref:`X(111) <X(111)>` = inverse-in-Moses-radical-circle of :ref:`X(842) <X(842)>`
+   * :ref:`X(111) <X(111)>` = inverse-in-circle-O(15,16) of :ref:`X(691) <X(691)>`
+   * :ref:`X(111) <X(111)>` = X(1577)-:term:`isoconjugate <isoconjugate>` of X(5467)
+   * :ref:`X(111) <X(111)>` = SR(P,U), where P and U are the circumcircle intercepts of line :ref:`X(2) <X(2)>`\ \ :ref:`X(6) <X(6)>`
+   * :ref:`X(111) <X(111)>` = one of two harmonic traces of the McCay circles; :ref:`X(2) <X(2)>` is the other
+   * :ref:`X(111) <X(111)>` = X(1296)-of-1st-Parry-triangle
+   * :ref:`X(111) <X(111)>` = :ref:`X(111) <X(111)>`-of-2nd-Parry-triangle
+   * :ref:`X(111) <X(111)>` = :ref:`X(691) <X(691)>`-of-3rd-Parry-triangle
+   * :ref:`X(111) <X(111)>` = center of similitude of ABC and 2nd Parry triangle
+   * :ref:`X(111) <X(111)>` = inverse-in-Parry-isodynamic-circle of :ref:`X(110) <X(110)>`; see :ref:`X(2) <X(2)>`
+   * :ref:`X(111) <X(111)>` = 3rd-Parry-to-circumsymmedial :term:`similarity image <similarity-image>` of :ref:`X(352) <X(352)>`
+   * :ref:`X(111) <X(111)>` = center of similitude of ABC and circumsymmedial triangle of Artzt triangle
+   * :ref:`X(111) <X(111)>` = :term:`eigencenter <eigencenter>` of circumtangential triangle
+   * :ref:`X(111) <X(111)>` = perspector of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of 2nd Brocard triangle
+   * :ref:`X(111) <X(111)>` = :ref:`X(2) <X(2)>`-of-4th-anti-Brocard-triangle
+   * :ref:`X(111) <X(111)>` = anti-Artzt-to-4th-anti-Brocard similarity image of :ref:`X(2) <X(2)>`
+   * :ref:`X(111) <X(111)>` = Thomson-isogonal conjugate of X(1499)
+   * :ref:`X(111) <X(111)>` = Lucas-isogonal conjugate of X(1499)
+   * :ref:`X(111) <X(111)>` = Cundy-Parry Phi transform of X(14262)
+   * :ref:`X(111) <X(111)>` = Cundy-Parry Psi transform of X(13608)
+   * :ref:`X(111) <X(111)>` = :ref:`X(6) <X(6)>`-isoconjugate of X(14210)
+   * :ref:`X(111) <X(111)>` = inverse-in-circle-{X(1687),X(1688),PU(1),PU(2)}} of X(32694)
+   * :ref:`X(111) <X(111)>` = barycentric product of circumcircle intercepts of line :ref:`X(2) <X(2)>`\ \ :ref:`X(523) <X(523)>`
+   * :ref:`X(111) <X(111)>` = inverse-in-Stevanovic-circle of X(2758)
+   * :ref:`X(111) <X(111)>` = trilinear pole, wrt Thomson triangle, of line :ref:`X(6) <X(6)>`\ X(5646)
+   * :ref:`X(111) <X(111)>` = trilinear pole, wrt 2nd Parry triangle, of line :ref:`X(511) <X(511)>`\ X(3569)
+   * :ref:`X(111) <X(111)>` = areal center of :term:`pedal triangles <pedal-triangle>` of PU(7)
+   * :ref:`X(111) <X(111)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(15899)
+   * :ref:`X(111) <X(111)>` = perspector of circumconic centered at X(15899)
+   * :ref:`X(111) <X(111)>` = McCay-bisector-circle-inverse of :ref:`X(2) <X(2)>`
+
+Notes
+-----
 
 .. container:: note-item
 
@@ -54,74 +110,7 @@ Notes
 
    Let A'B'C' and A″B″C″ be the 4th Brocard and 4th anti-Brocard triangles, resp. Let A\* be the barycentric product A'\*A'', and define B\* and C\* cyclically. The lines AA\*, BB\*, CC\* concur in :ref:`X(111) <X(111)>`. (Randy Hutson, December 2, 2017)
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(111) <X(111)>` lies on the Parry circle and on these lines:
-
-{:ref:`1 <X(1)>`, 8691}, {:ref:`2 <X(2)>`, :ref:`99 <X(99)>`}, {:ref:`3 <X(3)>`, 1296}, {:ref:`4 <X(4)>`, 1560}, {:ref:`5 <X(5)>`, 10748}, {:ref:`6 <X(6)>`, :ref:`110 <X(110)>`}, {:ref:`11 <X(11)>`, 10779}, {:ref:`15 <X(15)>`, 9202}, {:ref:`16 <X(16)>`, 9203}, {:ref:`20 <X(20)>`, 20187}, {:ref:`22 <X(22)>`, 2079}, {:ref:`23 <X(23)>`, :ref:`187 <X(187)>`}, {:ref:`24 <X(24)>`, 8428}, {:ref:`25 <X(25)>`, :ref:`112 <X(112)>`}, {:ref:`30 <X(30)>`, 2696}, {:ref:`32 <X(32)>`, 1383}, {:ref:`37 <X(37)>`, :ref:`100 <X(100)>`}, {:ref:`39 <X(39)>`, 7711}, {:ref:`42 <X(42)>`, :ref:`101 <X(101)>`}, {:ref:`51 <X(51)>`, 10558}, {:ref:`55 <X(55)>`, 6019}, {:ref:`56 <X(56)>`, 3325}, {:ref:`74 <X(74)>`, 2433}, {:ref:`76 <X(76)>`, 16055}, {:ref:`98 <X(98)>`, 1637}, {:ref:`102 <X(102)>`, 2819}, {:ref:`103 <X(103)>`, 2824}, {:ref:`104 <X(104)>`, 2830}, {:ref:`105 <X(105)>`, 2837}, {:ref:`106 <X(106)>`, 2843}, {:ref:`107 <X(107)>`, :ref:`393 <X(393)>`}, {:ref:`108 <X(108)>`, 1880}, {:ref:`109 <X(109)>`, 1400}, {:ref:`125 <X(125)>`, 35902}, {:ref:`140 <X(140)>`, 38806}, {:ref:`141 <X(141)>`, 36883}, {:ref:`182 <X(182)>`, :ref:`353 <X(353)>`}, {:ref:`183 <X(183)>`, 9066}, {:ref:`184 <X(184)>`, 3048}, {:ref:`186 <X(186)>`, 10098}, {:ref:`230 <X(230)>`, :ref:`476 <X(476)>`}, {:ref:`232 <X(232)>`, 1304}, {:ref:`251 <X(251)>`, :ref:`827 <X(827)>`}, {:ref:`263 <X(263)>`, 9463}, {:ref:`265 <X(265)>`, 14846}, {:ref:`308 <X(308)>`, :ref:`689 <X(689)>`}, {:ref:`316 <X(316)>`, 35569}, {:ref:`323 <X(323)>`, 2987}, {:ref:`325 <X(325)>`, 2858}, {:ref:`351 <X(351)>`, 2492}, {:ref:`352 <X(352)>`, :ref:`511 <X(511)>`}, {:ref:`376 <X(376)>`, 30256}, {:ref:`381 <X(381)>`, 6032}, {:ref:`382 <X(382)>`, 38799}, {:ref:`385 <X(385)>`, :ref:`892 <X(892)>`}, {:ref:`468 <X(468)>`, :ref:`935 <X(935)>`}, {:ref:`477 <X(477)>`, 5915}, {:ref:`493 <X(493)>`, 1306}, {:ref:`494 <X(494)>`, 1307}, {:ref:`512 <X(512)>`, :ref:`843 <X(843)>`}, {:ref:`513 <X(513)>`, 2721}, {:ref:`514 <X(514)>`, 2729}, {:ref:`515 <X(515)>`, 2735}, {:ref:`516 <X(516)>`, 2740}, {:ref:`517 <X(517)>`, 2746}, {:ref:`518 <X(518)>`, 2753}, {:ref:`519 <X(519)>`, 2759}, {:ref:`520 <X(520)>`, 2763}, {:ref:`521 <X(521)>`, 2767}, {:ref:`522 <X(522)>`, 2768}, {:ref:`523 <X(523)>`, 2770}, {:ref:`524 <X(524)>`, 6082}, {:ref:`526 <X(526)>`, 9184}, {:ref:`538 <X(538)>`, 5971}, {:ref:`542 <X(542)>`, 6791}, {:ref:`548 <X(548)>`, 38798}, {:ref:`550 <X(550)>`, 38797}, {:ref:`576 <X(576)>`, 8600}, {:ref:`612 <X(612)>`, 15322}, {:ref:`631 <X(631)>`, 38804}, {:ref:`647 <X(647)>`, :ref:`842 <X(842)>`}, {:ref:`649 <X(649)>`, 2712}, {:ref:`650 <X(650)>`, 2752}, {:ref:`667 <X(667)>`, 35107}, {:ref:`669 <X(669)>`, 5970}, {:ref:`675 <X(675)>`, 26273}, {:ref:`694 <X(694)>`, :ref:`805 <X(805)>`}, {:ref:`729 <X(729)>`, 5027}, {:ref:`739 <X(739)>`, 5040}, {:ref:`741 <X(741)>`, 3572}, {:ref:`755 <X(755)>`, 5113}, {:ref:`759 <X(759)>`, 23894}, {:ref:`831 <X(831)>`, 1961}, {:ref:`840 <X(840)>`, 5098}, {:ref:`850 <X(850)>`, 2868}, {:ref:`858 <X(858)>`, 24855}, {:ref:`880 <X(880)>`, 34087}, {:ref:`898 <X(898)>`, 5291}, {:ref:`901 <X(901)>`, 17735}, {:ref:`902 <X(902)>`, 2054}, {:ref:`907 <X(907)>`, 1180}, {:ref:`919 <X(919)>`, 20989}, {:ref:`925 <X(925)>`, 2165}, {:ref:`927 <X(927)>`, 37798}, {:ref:`930 <X(930)>`, 2963}, {:ref:`931 <X(931)>`, :ref:`941 <X(941)>`}, {:ref:`932 <X(932)>`, 16606}, {:ref:`933 <X(933)>`, 8882}, {:ref:`934 <X(934)>`, 1427}, {1055, 2701}, {1084, 14948}, {1113, 8106}, {1114, 8105}, {1171, 6578}, {1194, 3108}, {1239, 6572}, {1241, 35567}, {1287, 10416}, {1289, 6353}, {1290, 3290}, {1291, 14579}, {1292, 4220}, {1293, 9526}, {1294, 9529}, {1295, 9531}, {1297, 13114}, {1302, 3018}, {1305, 26252}, {1310, 17019}, {1340, 6141}, {1341, 6142}, {1344, 8427}, {1345, 8426}, {1350, 33979}, {1379, 5639}, {1380, 5638}, {1495, 1976}, {1499, 6093}, {1611, 36616}, {1640, 14932}, {1645, 9468}, {1648, 9140}, {1657, 38800}, {1691, 32694}, {1692, 35265}, {1799, 6573}, {1992, 10552}, {2080, 13225}, {2177, 5147}, {2248, 33774}, {2291, 5075}, {2373, 9979}, {2374, 9131}, {2378, 6138}, {2379, 6137}, {2393, 5166}, {2408, 9084}, {2444, 9135}, {2469, 14899}, {2470, 35607}, {2690, 3011}, {2691, 37959}, {2697, 6587}, {2698, 3288}, {2703, 3230}, {2713, 3331}, {2748, 5524}, {2760, 3239}, {2766, 5089}, {2782, 9775}, {2981, 10409}, {2998, 3222}, {3003, 9060}, {3016, 9160}, {3055, 10276}, {3060, 10559}, {3090, 38807}, {3098, 8617}, {3143, 34171}, {3146, 38801}, {3163, 5304}, {3430, 28295}, {3448, 6388}, {3457, 5995}, {3458, 5994}, {3522, 38803}, {3542, 30251}, {3815, 30537}, {3832, 38802}, {3920, 9281}, {4231, 26706}, {4240, 6531}, {4563, 25047}, {4588, 28658}, {5012, 10485}, {5024, 9155}, {5033, 7712}, {5038, 5643}, {5085, 14688}, {5092, 14660}, {5099, 30718}, {5108, 5969}, {5169, 18424}, {5182, 35356}, {5251, 29351}, {5468, 10754}, {5475, 11640}, {5477, 9143}, {5622, 35901}, {5916, 9200}, {5917, 9201}, {6034, 7698}, {6037, 9154}, {6083, 20461}, {6094, 9080}, {6128, 7736}, {6151, 10410}, {6200, 7598}, {6221, 7601}, {6323, 9208}, {6325, 9769}, {6339, 20080}, {6396, 7599}, {6398, 7602}, {6781, 37901}, {7467, 14678}, {7485, 34866}, {7492, 8588}, {7496, 8589}, {7575, 32229}, {7606, 10166}, {7610, 9829}, {7792, 9069}, {7954, 14075}, {8030, 38020}, {8429, 37930}, {8586, 9225}, {8644, 9136}, {8651, 14659}, {8652, 28625}, {8681, 15387}, {8707, 14624}, {8709, 27809}, {8744, 10422}, {8859, 18818}, {8869, 19121}, {9059, 26244}, {9067, 26243}, {9070, 26242}, {9076, 22105}, {9091, 16098}, {9096, 26241}, {9126, 19901}, {9137, 10102}, {9159, 9828}, {9169, 9830}, {9176, 13233}, {9189, 18007}, {9206, 11081}, {9207, 11086}, {9605, 30734}, {9810, 14126}, {9831, 12434}, {10304, 37749}, {10313, 10420}, {10560, 11002}, {10645, 14704}, {10646, 14705}, {11175, 36213}, {11215, 11622}, {11332, 21444}, {11632, 14694}, {11635, 38463}, {11639, 31489}, {11645, 11647}, {12041, 35447}, {12149, 25424}, {12212, 31609}, {12834, 14153}, {13397, 26253}, {13398, 26283}, {14733, 17966}, {15018, 30535}, {15066, 35575}, {15271, 34227}, {15360, 15993}, {16081, 22456}, {16167, 16310}, {16318, 22239}, {16806, 21461}, {16807, 21462}, {19561, 28895}, {21906, 34574}, {23297, 33013}, {23701, 30209}, {30249, 33630}, {31884, 37751}, {32237, 38010}, {32526, 35002}, {32849, 35574}, {34079, 36069}, {34482, 34572}, {36066, 36085}, {36201, 36203}, {36894, 37643}
-
-Relations
----------
-
-* :ref:`X(111) <X(111)>` = reflection of X(1296) in :ref:`X(3) <X(3)>`
-* :ref:`X(111) <X(111)>` = isogonal conjugate of :ref:`X(524) <X(524)>`
-* :ref:`X(111) <X(111)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(3266)
-* :ref:`X(111) <X(111)>` = inverse-in-Brocard-circle of :ref:`X(353) <X(353)>`
-* :ref:`X(111) <X(111)>` = :term:`anticomplement <anticomplement>` of :ref:`X(126) <X(126)>`
-* :ref:`X(111) <X(111)>` = :term:`cevapoint <cevapoint>` of :ref:`X(6) <X(6)>` and :ref:`X(187) <X(187)>`
-* :ref:`X(111) <X(111)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`23 <X(23)>`, :ref:`251 <X(251)>`), (:ref:`187 <X(187)>`, :ref:`6 <X(6)>`), (:ref:`351 <X(351)>`, :ref:`110 <X(110)>`)
-* :ref:`X(111) <X(111)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(351) <X(351)>`\ \ :ref:`X(690) <X(690)>`
-* :ref:`X(111) <X(111)>` = perspector of ABC and the triangle formed by the reflections of line PU(7) in the sides of ABC
-* :ref:`X(111) <X(111)>` = point of intersection, other than A, B, C, of circumcircle and hyperbola {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(6) <X(6)>`}}
-* :ref:`X(111) <X(111)>` = trilinear pole of line :ref:`X(6) <X(6)>`\ \ :ref:`X(512) <X(512)>`
-* :ref:`X(111) <X(111)>` = Λ(:ref:`X(2) <X(2)>`, :ref:`X(6) <X(6)>`)
-* :ref:`X(111) <X(111)>` = Ψ(X(i),X(j)) for these (i,j): (:ref:`6 <X(6)>`, :ref:`512 <X(512)>`), (:ref:`21 <X(21)>`, :ref:`650 <X(650)>`), (:ref:`190 <X(190)>`, :ref:`10 <X(10)>`)
-* :ref:`X(111) <X(111)>` = trilinear pole wrt circumsymmedial triangle of Brocard axis
-* :ref:`X(111) <X(111)>` = trilinear pole wrt circummedial triangle of line :ref:`X(2) <X(2)>`\ \ :ref:`X(6) <X(6)>`
-* :ref:`X(111) <X(111)>` = :ref:`X(110) <X(110)>`-of-circumsymmedial-triangle
-* :ref:`X(111) <X(111)>` = :ref:`X(23) <X(23)>`-of-4th-Brocard-triangle
-* :ref:`X(111) <X(111)>` = :ref:`X(352) <X(352)>`-of-orthocentroidal-triangle
-* :ref:`X(111) <X(111)>` = :ref:`X(138) <X(138)>`-of-excentral-triangle
-* :ref:`X(111) <X(111)>` = reflection of X(2770) in the Euler line
-* :ref:`X(111) <X(111)>` = reflection of :ref:`X(843) <X(843)>` in the Brocard axis
-* :ref:`X(111) <X(111)>` = reflection of X(2721) in line :ref:`X(1) <X(1)>`\ \ :ref:`X(3) <X(3)>`
-* :ref:`X(111) <X(111)>` = reflection of :ref:`X(110) <X(110)>` in line :ref:`X(3) <X(3)>`\ \ :ref:`X(351) <X(351)>`
-* :ref:`X(111) <X(111)>` = inverse-in-polar-circle of X(1560)
-* :ref:`X(111) <X(111)>` = inverse-in-{circumcircle, nine-point circle}-inverter of :ref:`X(115) <X(115)>`
-* :ref:`X(111) <X(111)>` = inverse-in-Moses-radical-circle of :ref:`X(842) <X(842)>`
-* :ref:`X(111) <X(111)>` = inverse-in-circle-O(15,16) of :ref:`X(691) <X(691)>`
-* :ref:`X(111) <X(111)>` = X(1577)-:term:`isoconjugate <isoconjugate>` of X(5467)
-* :ref:`X(111) <X(111)>` = SR(P,U), where P and U are the circumcircle intercepts of line :ref:`X(2) <X(2)>`\ \ :ref:`X(6) <X(6)>`
-* :ref:`X(111) <X(111)>` = one of two harmonic traces of the McCay circles; :ref:`X(2) <X(2)>` is the other
-* :ref:`X(111) <X(111)>` = X(1296)-of-1st-Parry-triangle
-* :ref:`X(111) <X(111)>` = :ref:`X(111) <X(111)>`-of-2nd-Parry-triangle
-* :ref:`X(111) <X(111)>` = :ref:`X(691) <X(691)>`-of-3rd-Parry-triangle
-* :ref:`X(111) <X(111)>` = center of similitude of ABC and 2nd Parry triangle
-* :ref:`X(111) <X(111)>` = inverse-in-Parry-isodynamic-circle of :ref:`X(110) <X(110)>`; see :ref:`X(2) <X(2)>`
-* :ref:`X(111) <X(111)>` = 3rd-Parry-to-circumsymmedial :term:`similarity image <similarity-image>` of :ref:`X(352) <X(352)>`
-* :ref:`X(111) <X(111)>` = center of similitude of ABC and circumsymmedial triangle of Artzt triangle
-* :ref:`X(111) <X(111)>` = :term:`eigencenter <eigencenter>` of circumtangential triangle
-* :ref:`X(111) <X(111)>` = perspector of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of 2nd Brocard triangle
-* :ref:`X(111) <X(111)>` = :ref:`X(2) <X(2)>`-of-4th-anti-Brocard-triangle
-* :ref:`X(111) <X(111)>` = anti-Artzt-to-4th-anti-Brocard similarity image of :ref:`X(2) <X(2)>`
-* :ref:`X(111) <X(111)>` = Thomson-isogonal conjugate of X(1499)
-* :ref:`X(111) <X(111)>` = Lucas-isogonal conjugate of X(1499)
-* :ref:`X(111) <X(111)>` = Cundy-Parry Phi transform of X(14262)
-* :ref:`X(111) <X(111)>` = Cundy-Parry Psi transform of X(13608)
-* :ref:`X(111) <X(111)>` = :ref:`X(6) <X(6)>`-isoconjugate of X(14210)
-* :ref:`X(111) <X(111)>` = inverse-in-circle-{X(1687),X(1688),PU(1),PU(2)}} of X(32694)
-* :ref:`X(111) <X(111)>` = barycentric product of circumcircle intercepts of line :ref:`X(2) <X(2)>`\ \ :ref:`X(523) <X(523)>`
-* :ref:`X(111) <X(111)>` = inverse-in-Stevanovic-circle of X(2758)
-* :ref:`X(111) <X(111)>` = trilinear pole, wrt Thomson triangle, of line :ref:`X(6) <X(6)>`\ X(5646)
-* :ref:`X(111) <X(111)>` = trilinear pole, wrt 2nd Parry triangle, of line :ref:`X(511) <X(511)>`\ X(3569)
-* :ref:`X(111) <X(111)>` = areal center of :term:`pedal triangles <pedal-triangle>` of PU(7)
-* :ref:`X(111) <X(111)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(15899)
-* :ref:`X(111) <X(111)>` = perspector of circumconic centered at X(15899)
-* :ref:`X(111) <X(111)>` = McCay-bisector-circle-inverse of :ref:`X(2) <X(2)>`
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

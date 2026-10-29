@@ -8,40 +8,81 @@
 X(58) = ISOGONAL CONJUGATE OF X(10)
 ===================================
 
+.. enunciation::
+
+   :ref:`X(58) <X(58)>` is the point of concurrence of the Brocard axes of triangles BIC, CIA, AIB, ABC, (where I denotes the incenter, :ref:`X(1) <X(1)>`), as proved in **Antreas P. Hatzipolakis, Floor van Lamoen, Barry Wolk, and Paul Yiu,** Concurrency of Four Euler Lines, *:cite:`Forum Geometricorum <forum-geometricorum>`* 1 (2001) 59-68.
+
 .. figure:: x-00058.svg
    :alt: X(58) = ISOGONAL CONJUGATE OF X(10)
    :align: center
 
    **X(58) = ISOGONAL CONJUGATE OF X(10)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`a/(b + c) : b/(c + a) : c/(a + b)`
+   | **Barycentrics:** :math:`a^{2}/(b + c) : b^{2}/(c + a) : c^{2}/(a + b)`
+   | **Search Value (6, 9, 13):** :math:`0.751932245362`
 
-* :math:`a/(b + c) : b/(c + a) : c/(a + b)`
-* :math:`(1 - \cos A)/(\cos B + \cos C) : :`
-* :math:`sa^{2} + SR : sb^{2} + SR : sc^{2} + SR`
-* :math:`r \cos A - s \sin A : :`, where s = semiperimeter and r = inradius
-* :math:`\sin(A - U) : :`, U as at :ref:`X(572) <X(572)>` and :ref:`X(573) <X(573)>`
-* :math:`(R/r) - 1/(\cos B + \cos C) : :`
-* :math:`(r/R) - \cos 2A + 1 : :`
-* eccentricity of A-Soddy ellipse : :
+.. collapse:: Alternate Coordinates
+   :badge: 7 forms
 
-Barycentrics
-~~~~~~~~~~~~
-
-* :math:`a^{2}/(b + c) : b^{2}/(c + a) : c^{2}/(a + b)`
-
-* **Kimberling (6, 9, 13) Search Value:** :math:`0.751932245362`
-
-Notes
------
+   * **Trilinears:** :math:`(1 - \cos A)/(\cos B + \cos C) : :`
+   * **Trilinears:** :math:`sa^{2} + SR : sb^{2} + SR : sc^{2} + SR`
+   * **Trilinears:** :math:`r \cos A - s \sin A : :`, where s = semiperimeter and r = inradius
+   * **Trilinears:** :math:`\sin(A - U) : :`, U as at :ref:`X(572) <X(572)>` and :ref:`X(573) <X(573)>`
+   * **Trilinears:** :math:`(R/r) - 1/(\cos B + \cos C) : :`
+   * **Trilinears:** :math:`(r/R) - \cos 2A + 1 : :`
+   * **Trilinears:** eccentricity of A-Soddy ellipse : :
 
 .. container:: note-item
 
-   :ref:`X(58) <X(58)>` is the point of concurrence of the Brocard axes of triangles BIC, CIA, AIB, ABC, (where I denotes the incenter, :ref:`X(1) <X(1)>`), as proved in **Antreas P. Hatzipolakis, Floor van Lamoen, Barry Wolk, and Paul Yiu,** Concurrency of Four Euler Lines, *:cite:`Forum Geometricorum <forum-geometricorum>`* 1 (2001) 59-68.
+   :ref:`X(58) <X(58)>` lies.
+
+.. collapse:: Incident Central Lines
+   :badge: 37 lines
+   :class: line-catalog
+
+   {:ref:`1 <X(1)>`, :ref:`21 <X(21)>`}, {:ref:`2 <X(2)>`, :ref:`540 <X(540)>`}, {:ref:`3 <X(3)>`, :ref:`6 <X(6)>`}, {:ref:`7 <X(7)>`, :ref:`272 <X(272)>`}, {:ref:`8 <X(8)>`, :ref:`996 <X(996)>`}, {:ref:`9 <X(9)>`, :ref:`975 <X(975)>`}, {:ref:`10 <X(10)>`, :ref:`171 <X(171)>`}, {:ref:`20 <X(20)>`, :ref:`387 <X(387)>`}, {:ref:`25 <X(25)>`, :ref:`967 <X(967)>`}, {:ref:`27 <X(27)>`, :ref:`270 <X(270)>`}, {:ref:`28 <X(28)>`, :ref:`34 <X(34)>`}, {:ref:`29 <X(29)>`, :ref:`162 <X(162)>`}, {:ref:`35 <X(35)>`, :ref:`42 <X(42)>`}, {:ref:`36 <X(36)>`, :ref:`60 <X(60)>`}, {:ref:`40 <X(40)>`, :ref:`601 <X(601)>`}, {:ref:`41 <X(41)>`, :ref:`609 <X(609)>`}, {:ref:`43 <X(43)>`, :ref:`979 <X(979)>`}, {:ref:`46 <X(46)>`, :ref:`998 <X(998)>`}, {:ref:`56 <X(56)>`, :ref:`222 <X(222)>`}, {:ref:`65 <X(65)>`, :ref:`109 <X(109)>`}, {:ref:`82 <X(82)>`, :ref:`596 <X(596)>`}, {:ref:`84 <X(84)>`, :ref:`990 <X(990)>`}, {:ref:`86 <X(86)>`, :ref:`238 <X(238)>`}, {:ref:`87 <X(87)>`, :ref:`978 <X(978)>`}, {:ref:`99 <X(99)>`, :ref:`727 <X(727)>`}, {:ref:`101 <X(101)>`, :ref:`172 <X(172)>`}, {:ref:`103 <X(103)>`, :ref:`112 <X(112)>`}, {:ref:`106 <X(106)>`, :ref:`110 <X(110)>`}, {:ref:`229 <X(229)>`, :ref:`244 <X(244)>`}, {:ref:`269 <X(269)>`, 1014}, {:ref:`274 <X(274)>`, :ref:`870 <X(870)>`}, {:ref:`314 <X(314)>`, :ref:`987 <X(987)>`}, {:ref:`405 <X(405)>`, :ref:`940 <X(940)>`}, {:ref:`519 <X(519)>`, 1043}, {:ref:`942 <X(942)>`, 1104}, {:ref:`977 <X(977)>`, :ref:`982 <X(982)>`}, {1019, 1027}
+
+.. collapse:: Functional Relations
+   :badge: 32 relations
+
+   * :ref:`X(58) <X(58)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(10) <X(10)>`
+   * :ref:`X(58) <X(58)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(313) <X(313)>`
+   * :ref:`X(58) <X(58)>` = :term:`complement <complement>` of X(1330)
+   * :ref:`X(58) <X(58)>` = :term:`anticomplement <anticomplement>` of X(3454)
+   * :ref:`X(58) <X(58)>` = circumcircle-inverse of X(1326)
+   * :ref:`X(58) <X(58)>` = Brocard-circle-inverse of :ref:`X(386) <X(386)>`
+   * :ref:`X(58) <X(58)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`81 <X(81)>`, :ref:`284 <X(284)>`), (:ref:`267 <X(267)>`, :ref:`501 <X(501)>`), (:ref:`270 <X(270)>`, :ref:`28 <X(28)>`)
+   * :ref:`X(58) <X(58)>` = :term:`cevapoint <cevapoint>` of :ref:`X(6) <X(6)>` and :ref:`X(31) <X(31)>`
+   * :ref:`X(58) <X(58)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`6 <X(6)>`, :ref:`81 <X(81)>`), (:ref:`36 <X(36)>`, :ref:`106 <X(106)>`), (:ref:`56 <X(56)>`, :ref:`28 <X(28)>`), (:ref:`513 <X(513)>`, :ref:`109 <X(109)>`)
+   * :ref:`X(58) <X(58)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`267 <X(267)>`), (:ref:`21 <X(21)>`, :ref:`285 <X(285)>`), (:ref:`27 <X(27)>`, :ref:`86 <X(86)>`), (:ref:`60 <X(60)>`, :ref:`270 <X(270)>`)
+   * :ref:`X(58) <X(58)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`191 <X(191)>`), (:ref:`6 <X(6)>`, :ref:`199 <X(199)>`), (:ref:`12 <X(12)>`, :ref:`201 <X(201)>`), (:ref:`37 <X(37)>`, :ref:`210 <X(210)>`), (:ref:`42 <X(42)>`, :ref:`71 <X(71)>`), (:ref:`65 <X(65)>`, :ref:`227 <X(227)>`), (:ref:`594 <X(594)>`, :ref:`756 <X(756)>`)
+   * :ref:`X(58) <X(58)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(523) <X(523)>`\ \ :ref:`X(661) <X(661)>`
+   * :ref:`X(58) <X(58)>` = :ref:`X(6) <X(6)>`-:term:`Hirst inverse <hirst-inverse>` of X(1326)
+   * :ref:`X(58) <X(58)>` = antigonal conjugate of isogonal conjugate of X(1324)
+   * :ref:`X(58) <X(58)>` = antigonal conjugate of isotomic conjugate of X(21277)
+   * :ref:`X(58) <X(58)>` = antigonal conjugate of polar conjugate of X(37770)
+   * :ref:`X(58) <X(58)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`21 <X(21)>`, :ref:`21 <X(21)>`), (:ref:`60 <X(60)>`, :ref:`58 <X(58)>`), (:ref:`110 <X(110)>`, :ref:`58 <X(58)>`), (:ref:`162 <X(162)>`, :ref:`58 <X(58)>`), (:ref:`643 <X(643)>`, :ref:`58 <X(58)>`), (1098, :ref:`283 <X(283)>`)
+   * :ref:`X(58) <X(58)>` = barycentric product of PU(31)
+   * :ref:`X(58) <X(58)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(649) <X(649)>`\ \ :ref:`X(834) <X(834)>`
+   * :ref:`X(58) <X(58)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(31) <X(31)>`}-harmonic conjugate of :ref:`X(595) <X(595)>`
+   * :ref:`X(58) <X(58)>` = {:ref:`X(21) <X(21)>`,\ :ref:`X(283) <X(283)>`}-harmonic conjugate of X(2328)
+   * :ref:`X(58) <X(58)>` = :ref:`X(42) <X(42)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(75) <X(75)>`
+   * :ref:`X(58) <X(58)>` = :ref:`X(71) <X(71)>`-isoconjugate of :ref:`X(92) <X(92)>`
+   * :ref:`X(58) <X(58)>` = :ref:`X(101) <X(101)>`-isoconjugate of X(1577)
+   * :ref:`X(58) <X(58)>` = homothetic center of 2nd circumperp triangle and 'Hatzipolakis-Brocard triangle' (A'B'C' as defined at X(5429))
+   * :ref:`X(58) <X(58)>` = trilinear product of vertices of 2nd circumperp triangle
+   * :ref:`X(58) <X(58)>` = perspector of 2nd circumperp triangle and :term:`unary cofactor triangle <unary-cofactor-triangle>` of 1st circumperp triangle
+   * :ref:`X(58) <X(58)>` = perspector of ABC and cross-triangle of ABC and 2nd circumperp triangle
+   * :ref:`X(58) <X(58)>` = Cundy-Parry Phi transform of :ref:`X(573) <X(573)>`
+   * :ref:`X(58) <X(58)>` = Cundy-Parry Psi transform of X(13478)
+   * :ref:`X(58) <X(58)>` = perspector of ABC and unary cofactor triangle of Gemini triangle 11
+   * :ref:`X(58) <X(58)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(21) <X(21)>`}-harmonic conjugate of X(4653)
+
+Notes
+-----
 
 .. container:: note-item
 
@@ -49,11 +90,11 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the :term:`anticomplement <anticomplement>` of the Feuerbach triangle. Let A″B″C″ be the circumcevian triangle, wrt A'B'C', of :ref:`X(1) <X(1)>`. The lines AA″, BB″, CC″ concur in :ref:`X(58) <X(58)>`. (Randy Hutson, July 20, 2016)
+   Let A'B'C' be the anticomplement of the Feuerbach triangle. Let A″B″C″ be the circumcevian triangle, wrt A'B'C', of :ref:`X(1) <X(1)>`. The lines AA″, BB″, CC″ concur in :ref:`X(58) <X(58)>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the Feuerbach triangle. Let La be the tangent to the nine-point circle at A', and define Lb, Lc cyclically. Let A″ be the :term:`isogonal conjugate <isogonal-conjugate>` of the :term:`trilinear pole <trilinear-pole>` of La, and define B″, C″ cyclically. Let A\* = BB″∩CC″, B\* = CC″∩AA″, C\* = AA″∩BB″. The lines AA\*, BB\*, CC\* concur in :ref:`X(58) <X(58)>`. (Randy Hutson, July 20, 2016)
+   Let A'B'C' be the Feuerbach triangle. Let La be the tangent to the nine-point circle at A', and define Lb, Lc cyclically. Let A″ be the isogonal conjugate of the trilinear pole of La, and define B″, C″ cyclically. Let A\* = BB″∩CC″, B\* = CC″∩AA″, C\* = AA″∩BB″. The lines AA\*, BB\*, CC\* concur in :ref:`X(58) <X(58)>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
@@ -67,51 +108,7 @@ Notes
 
    :ref:`X(58) <X(58)>` is the {:ref:`X(3) <X(3)>`,\ :ref:`X(6) <X(6)>`}-harmonic conjugate of :ref:`X(386) <X(386)>`.
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(58) <X(58)>` lies and on these lines:
-
-{:ref:`1 <X(1)>`, :ref:`21 <X(21)>`}, {:ref:`2 <X(2)>`, :ref:`540 <X(540)>`}, {:ref:`3 <X(3)>`, :ref:`6 <X(6)>`}, {:ref:`7 <X(7)>`, :ref:`272 <X(272)>`}, {:ref:`8 <X(8)>`, :ref:`996 <X(996)>`}, {:ref:`9 <X(9)>`, :ref:`975 <X(975)>`}, {:ref:`10 <X(10)>`, :ref:`171 <X(171)>`}, {:ref:`20 <X(20)>`, :ref:`387 <X(387)>`}, {:ref:`25 <X(25)>`, :ref:`967 <X(967)>`}, {:ref:`27 <X(27)>`, :ref:`270 <X(270)>`}, {:ref:`28 <X(28)>`, :ref:`34 <X(34)>`}, {:ref:`29 <X(29)>`, :ref:`162 <X(162)>`}, {:ref:`35 <X(35)>`, :ref:`42 <X(42)>`}, {:ref:`36 <X(36)>`, :ref:`60 <X(60)>`}, {:ref:`40 <X(40)>`, :ref:`601 <X(601)>`}, {:ref:`41 <X(41)>`, :ref:`609 <X(609)>`}, {:ref:`43 <X(43)>`, :ref:`979 <X(979)>`}, {:ref:`46 <X(46)>`, :ref:`998 <X(998)>`}, {:ref:`56 <X(56)>`, :ref:`222 <X(222)>`}, {:ref:`65 <X(65)>`, :ref:`109 <X(109)>`}, {:ref:`82 <X(82)>`, :ref:`596 <X(596)>`}, {:ref:`84 <X(84)>`, :ref:`990 <X(990)>`}, {:ref:`86 <X(86)>`, :ref:`238 <X(238)>`}, {:ref:`87 <X(87)>`, :ref:`978 <X(978)>`}, {:ref:`99 <X(99)>`, :ref:`727 <X(727)>`}, {:ref:`101 <X(101)>`, :ref:`172 <X(172)>`}, {:ref:`103 <X(103)>`, :ref:`112 <X(112)>`}, {:ref:`106 <X(106)>`, :ref:`110 <X(110)>`}, {:ref:`229 <X(229)>`, :ref:`244 <X(244)>`}, {:ref:`269 <X(269)>`, 1014}, {:ref:`274 <X(274)>`, :ref:`870 <X(870)>`}, {:ref:`314 <X(314)>`, :ref:`987 <X(987)>`}, {:ref:`405 <X(405)>`, :ref:`940 <X(940)>`}, {:ref:`519 <X(519)>`, 1043}, {:ref:`942 <X(942)>`, 1104}, {:ref:`977 <X(977)>`, :ref:`982 <X(982)>`}, {1019, 1027}
-
-Relations
----------
-
-* :ref:`X(58) <X(58)>` = isogonal conjugate of :ref:`X(10) <X(10)>`
-* :ref:`X(58) <X(58)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(313) <X(313)>`
-* :ref:`X(58) <X(58)>` = :term:`complement <complement>` of X(1330)
-* :ref:`X(58) <X(58)>` = anticomplement of X(3454)
-* :ref:`X(58) <X(58)>` = circumcircle-inverse of X(1326)
-* :ref:`X(58) <X(58)>` = Brocard-circle-inverse of :ref:`X(386) <X(386)>`
-* :ref:`X(58) <X(58)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`81 <X(81)>`, :ref:`284 <X(284)>`), (:ref:`267 <X(267)>`, :ref:`501 <X(501)>`), (:ref:`270 <X(270)>`, :ref:`28 <X(28)>`)
-* :ref:`X(58) <X(58)>` = :term:`cevapoint <cevapoint>` of :ref:`X(6) <X(6)>` and :ref:`X(31) <X(31)>`
-* :ref:`X(58) <X(58)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`6 <X(6)>`, :ref:`81 <X(81)>`), (:ref:`36 <X(36)>`, :ref:`106 <X(106)>`), (:ref:`56 <X(56)>`, :ref:`28 <X(28)>`), (:ref:`513 <X(513)>`, :ref:`109 <X(109)>`)
-* :ref:`X(58) <X(58)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`267 <X(267)>`), (:ref:`21 <X(21)>`, :ref:`285 <X(285)>`), (:ref:`27 <X(27)>`, :ref:`86 <X(86)>`), (:ref:`60 <X(60)>`, :ref:`270 <X(270)>`)
-* :ref:`X(58) <X(58)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`191 <X(191)>`), (:ref:`6 <X(6)>`, :ref:`199 <X(199)>`), (:ref:`12 <X(12)>`, :ref:`201 <X(201)>`), (:ref:`37 <X(37)>`, :ref:`210 <X(210)>`), (:ref:`42 <X(42)>`, :ref:`71 <X(71)>`), (:ref:`65 <X(65)>`, :ref:`227 <X(227)>`), (:ref:`594 <X(594)>`, :ref:`756 <X(756)>`)
-* :ref:`X(58) <X(58)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(523) <X(523)>`\ \ :ref:`X(661) <X(661)>`
-* :ref:`X(58) <X(58)>` = :ref:`X(6) <X(6)>`-:term:`Hirst inverse <hirst-inverse>` of X(1326)
-* :ref:`X(58) <X(58)>` = antigonal conjugate of isogonal conjugate of X(1324)
-* :ref:`X(58) <X(58)>` = antigonal conjugate of isotomic conjugate of X(21277)
-* :ref:`X(58) <X(58)>` = antigonal conjugate of polar conjugate of X(37770)
-* :ref:`X(58) <X(58)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`21 <X(21)>`, :ref:`21 <X(21)>`), (:ref:`60 <X(60)>`, :ref:`58 <X(58)>`), (:ref:`110 <X(110)>`, :ref:`58 <X(58)>`), (:ref:`162 <X(162)>`, :ref:`58 <X(58)>`), (:ref:`643 <X(643)>`, :ref:`58 <X(58)>`), (1098, :ref:`283 <X(283)>`)
-* :ref:`X(58) <X(58)>` = barycentric product of PU(31)
-* :ref:`X(58) <X(58)>` = trilinear pole of line :ref:`X(649) <X(649)>`\ \ :ref:`X(834) <X(834)>`
-* :ref:`X(58) <X(58)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(31) <X(31)>`}-harmonic conjugate of :ref:`X(595) <X(595)>`
-* :ref:`X(58) <X(58)>` = {:ref:`X(21) <X(21)>`,\ :ref:`X(283) <X(283)>`}-harmonic conjugate of X(2328)
-* :ref:`X(58) <X(58)>` = :ref:`X(42) <X(42)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(75) <X(75)>`
-* :ref:`X(58) <X(58)>` = :ref:`X(71) <X(71)>`-isoconjugate of :ref:`X(92) <X(92)>`
-* :ref:`X(58) <X(58)>` = :ref:`X(101) <X(101)>`-isoconjugate of X(1577)
-* :ref:`X(58) <X(58)>` = homothetic center of 2nd circumperp triangle and 'Hatzipolakis-Brocard triangle' (A'B'C' as defined at X(5429))
-* :ref:`X(58) <X(58)>` = trilinear product of vertices of 2nd circumperp triangle
-* :ref:`X(58) <X(58)>` = perspector of 2nd circumperp triangle and :term:`unary cofactor triangle <unary-cofactor-triangle>` of 1st circumperp triangle
-* :ref:`X(58) <X(58)>` = perspector of ABC and cross-triangle of ABC and 2nd circumperp triangle
-* :ref:`X(58) <X(58)>` = Cundy-Parry Phi transform of :ref:`X(573) <X(573)>`
-* :ref:`X(58) <X(58)>` = Cundy-Parry Psi transform of X(13478)
-* :ref:`X(58) <X(58)>` = perspector of ABC and unary cofactor triangle of Gemini triangle 11
-* :ref:`X(58) <X(58)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(21) <X(21)>`}-harmonic conjugate of X(4653)
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

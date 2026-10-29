@@ -8,61 +8,55 @@
 X(420) = X(4)-HIRST INVERSE OF X(427)
 =====================================
 
+.. enunciation::
+
+   As a point on the Euler line, :ref:`X(420) <X(420)>` has Shinagawa coefficients (4(E + F)F,-(E + F)\ :sup:`2` - S\ :sup:`2`).
+
 .. figure:: x-00420.svg
    :alt: X(420) = X(4)-HIRST INVERSE OF X(427)
    :align: center
 
    **X(420) = X(4)-HIRST INVERSE OF X(427)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`(u^{2} - vw)\sec A : (v^{2} - wu)\sec B : (v^{2} - uv)\sec C`, where, u : v : w = :ref:`X(38) <X(38)>`; e.g., u = u(a,b,c) = b\ :sup:`2` + c\ :sup:`2`
+   | **Barycentrics:** :math:`(u^{2} - vw)\tan A : (v^{2} - wu)\tan B : (w^{2} - uv)\tan C`
+   | **Search Value (6, 9, 13):** :math:`0.834756041461`
 
-* :math:`(u^{2} - vw)\sec A : (v^{2} - wu)\sec B : (v^{2} - uv)\sec C`, where, u : v : w = :ref:`X(38) <X(38)>`; e.g., u = u(a,b,c) = b\ :sup:`2` + c\ :sup:`2`
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-Barycentrics
-~~~~~~~~~~~~
-
-* :math:`(u^{2} - vw)\tan A : (v^{2} - wu)\tan B : (w^{2} - uv)\tan C`
-* :math:`(a^2 - b*c)*(a^2 + b*c)*(a^2 + b^2 - c^2)*(a^2 - b^2 + c^2) : :(a^2 + b^2 - c^2)*(a^2 - b^2 + c^2)*(a^4 + a^2*b^2 - b^4 + a^2*c^2 - b^2*c^2 - c^4) : :`
-
-* **Kimberling (6, 9, 13) Search Value:** :math:`0.834756041461`
-
-Notes
------
+   * **Barycentrics:** :math:`(a^2 - b*c)*(a^2 + b*c)*(a^2 + b^2 - c^2)*(a^2 - b^2 + c^2) : :(a^2 + b^2 - c^2)*(a^2 - b^2 + c^2)*(a^4 + a^2*b^2 - b^4 + a^2*c^2 - b^2*c^2 - c^4) : :`
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(420) <X(420)>` has Shinagawa coefficients (4(E + F)F,-(E + F)\ :sup:`2` - S\ :sup:`2`).
+   :ref:`X(420) <X(420)>` lies.
 
-Incidence
----------
+.. collapse:: Incident Central Lines
+   :badge: 39 lines
+   :class: line-catalog
 
-:ref:`X(420) <X(420)>` lies and on these lines:
+   {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`112 <X(112)>`, 8623}, {:ref:`232 <X(232)>`, 3229}, {:ref:`240 <X(240)>`, 17927}, {:ref:`340 <X(340)>`, 44102}, {:ref:`685 <X(685)>`, 20021}, {1613, 8743}, {1843, 34236}, {1990, 38294}, {2207, 21001}, {2501, 9210}, {2896, 11380}, {3117, 39575}, {3186, 17907}, {3231, 8744}, {3819, 10357}, {3978, 44146}, {5207, 40876}, {6198, 40790}, {6688, 7859}, {7779, 44090}, {9208, 44427}, {9302, 16080}, {9862, 42671}, {12143, 46226}, {14165, 34854}, {16081, 46306}, {17414, 47217}, {18020, 20022}, {18371, 52418}, {19128, 36213}, {19558, 43696}, {26958, 39646}, {28408, 44443}, {32223, 43453}, {33873, 44084}, {39201, 44451}, {39231, 40559}, {40858, 41676}
 
-{:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`112 <X(112)>`, 8623}, {:ref:`232 <X(232)>`, 3229}, {:ref:`240 <X(240)>`, 17927}, {:ref:`340 <X(340)>`, 44102}, {:ref:`685 <X(685)>`, 20021}, {1613, 8743}, {1843, 34236}, {1990, 38294}, {2207, 21001}, {2501, 9210}, {2896, 11380}, {3117, 39575}, {3186, 17907}, {3231, 8744}, {3819, 10357}, {3978, 44146}, {5207, 40876}, {6198, 40790}, {6688, 7859}, {7779, 44090}, {9208, 44427}, {9302, 16080}, {9862, 42671}, {12143, 46226}, {14165, 34854}, {16081, 46306}, {17414, 47217}, {18020, 20022}, {18371, 52418}, {19128, 36213}, {19558, 43696}, {26958, 39646}, {28408, 44443}, {32223, 43453}, {33873, 44084}, {39201, 44451}, {39231, 40559}, {40858, 41676}
+.. collapse:: Functional Relations
+   :badge: 13 relations
 
-Relations
----------
+   * :ref:`X(420) <X(420)>` = polar conjugate of X(11606)
+   * :ref:`X(420) <X(420)>` = :term:`isotomic conjugate <isotomic-conjugate>` of the :term:`isogonal conjugate <isogonal-conjugate>` of X(44090)
+   * :ref:`X(420) <X(420)>` = polar conjugate of the isotomic conjugate of X(7779)
+   * :ref:`X(420) <X(420)>` = polar conjugate of the isogonal conjugate of X(2076)
+   * :ref:`X(420) <X(420)>` = X(2076)-:term:`cross conjugate <cross-conjugate>` of X(7779)
+   * :ref:`X(420) <X(420)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these (i,j): {:ref:`48 <X(48)>`, 11606}, {:ref:`63 <X(63)>`, 46286}, {:ref:`656 <X(656)>`, 46970}, {1176, 17957}
+   * :ref:`X(420) <X(420)>` = X(i)-Dao conjugate of X(j) for these (i,j): {:ref:`69 <X(69)>`, 39091}, {:ref:`385 <X(385)>`, 12215}, {:ref:`647 <X(647)>`, 39079}, {1249, 11606}, {3162, 46286}, {17949, 40938}, {40596, 46970}
+   * :ref:`X(420) <X(420)>` = :term:`cevapoint <cevapoint>` of X(2076) and X(44090)
+   * :ref:`X(420) <X(420)>` = :term:`trilinear pole <trilinear-pole>` of line {9479, 12830}
+   * :ref:`X(420) <X(420)>` = :term:`crossdifference <crossdifference>` of every pair of points on line {647, 22352}
+   * :ref:`X(420) <X(420)>` = barycentric product X(i)\*X(j) for these {i,j}: {:ref:`4 <X(4)>`, 7779}, {:ref:`76 <X(76)>`, 44090}, {:ref:`92 <X(92)>`, 17799}, {:ref:`264 <X(264)>`, 2076}, {:ref:`427 <X(427)>`, 40850}, {:ref:`648 <X(648)>`, 9479}, {1235, 46228}, {5113, 6331}, {12830, 35142}, {18010, 41676}, {20883, 34054}
+   * :ref:`X(420) <X(420)>` = barycentric quotient X(i)/X(j) for these {i,j}: {:ref:`4 <X(4)>`, 11606}, {:ref:`25 <X(25)>`, 46286}, {:ref:`112 <X(112)>`, 46970}, {:ref:`427 <X(427)>`, 17949}, {2076, :ref:`3 <X(3)>`}, {5113, :ref:`647 <X(647)>`}, {7779, :ref:`69 <X(69)>`}, {8290, 12215}, {8864, 8858}, {9479, :ref:`525 <X(525)>`}, {12830, 3564}, {17442, 17957}, {17799, :ref:`63 <X(63)>`}, {18010, 4580}, {34054, 34055}, {40850, 1799}, {44090, :ref:`6 <X(6)>`}, {46228, 1176}
+   * :ref:`X(420) <X(420)>` = {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): {:ref:`25 <X(25)>`, 5117, :ref:`4 <X(4)>`}, {:ref:`25 <X(25)>`, 11331, 5117}, {:ref:`297 <X(297)>`, :ref:`419 <X(419)>`, :ref:`4 <X(4)>`}, {:ref:`297 <X(297)>`, :ref:`468 <X(468)>`, :ref:`419 <X(419)>`}, {:ref:`403 <X(403)>`, 35474, :ref:`4 <X(4)>`}, {3535, 3536, 37187}, {5000, 5001, 40236}, {5112, 44887, :ref:`401 <X(401)>`}, {6353, 52283, :ref:`4 <X(4)>`}, {20854, 21536, 40236}
 
-* :ref:`X(420) <X(420)>` = polar conjugate of X(11606)
-* :ref:`X(420) <X(420)>` = :term:`isotomic conjugate <isotomic-conjugate>` of the :term:`isogonal conjugate <isogonal-conjugate>` of X(44090)
-* :ref:`X(420) <X(420)>` = polar conjugate of the isotomic conjugate of X(7779)
-* :ref:`X(420) <X(420)>` = polar conjugate of the isogonal conjugate of X(2076)
-* :ref:`X(420) <X(420)>` = X(2076)-:term:`cross conjugate <cross-conjugate>` of X(7779)
-* :ref:`X(420) <X(420)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these (i,j): {:ref:`48 <X(48)>`, 11606}, {:ref:`63 <X(63)>`, 46286}, {:ref:`656 <X(656)>`, 46970}, {1176, 17957}
-* :ref:`X(420) <X(420)>` = X(i)-Dao conjugate of X(j) for these (i,j): {:ref:`69 <X(69)>`, 39091}, {:ref:`385 <X(385)>`, 12215}, {:ref:`647 <X(647)>`, 39079}, {1249, 11606}, {3162, 46286}, {17949, 40938}, {40596, 46970}
-* :ref:`X(420) <X(420)>` = :term:`cevapoint <cevapoint>` of X(2076) and X(44090)
-* :ref:`X(420) <X(420)>` = :term:`trilinear pole <trilinear-pole>` of line {9479, 12830}
-* :ref:`X(420) <X(420)>` = :term:`crossdifference <crossdifference>` of every pair of points on line {647, 22352}
-* :ref:`X(420) <X(420)>` = barycentric product X(i)\*X(j) for these {i,j}: {:ref:`4 <X(4)>`, 7779}, {:ref:`76 <X(76)>`, 44090}, {:ref:`92 <X(92)>`, 17799}, {:ref:`264 <X(264)>`, 2076}, {:ref:`427 <X(427)>`, 40850}, {:ref:`648 <X(648)>`, 9479}, {1235, 46228}, {5113, 6331}, {12830, 35142}, {18010, 41676}, {20883, 34054}
-* :ref:`X(420) <X(420)>` = barycentric quotient X(i)/X(j) for these {i,j}: {:ref:`4 <X(4)>`, 11606}, {:ref:`25 <X(25)>`, 46286}, {:ref:`112 <X(112)>`, 46970}, {:ref:`427 <X(427)>`, 17949}, {2076, :ref:`3 <X(3)>`}, {5113, :ref:`647 <X(647)>`}, {7779, :ref:`69 <X(69)>`}, {8290, 12215}, {8864, 8858}, {9479, :ref:`525 <X(525)>`}, {12830, 3564}, {17442, 17957}, {17799, :ref:`63 <X(63)>`}, {18010, 4580}, {34054, 34055}, {40850, 1799}, {44090, :ref:`6 <X(6)>`}, {46228, 1176}
-* :ref:`X(420) <X(420)>` = {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): {:ref:`25 <X(25)>`, 5117, :ref:`4 <X(4)>`}, {:ref:`25 <X(25)>`, 11331, 5117}, {:ref:`297 <X(297)>`, :ref:`419 <X(419)>`, :ref:`4 <X(4)>`}, {:ref:`297 <X(297)>`, :ref:`468 <X(468)>`, :ref:`419 <X(419)>`}, {:ref:`403 <X(403)>`, 35474, :ref:`4 <X(4)>`}, {3535, 3536, 37187}, {5000, 5001, 40236}, {5112, 44887, :ref:`401 <X(401)>`}, {6353, 52283, :ref:`4 <X(4)>`}, {20854, 21536, 40236}
+.. toctree::
+   :hidden:
 
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

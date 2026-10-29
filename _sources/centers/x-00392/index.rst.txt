@@ -8,36 +8,33 @@
 X(392) = X(1,6)∩X(10,11)
 ========================
 
+.. enunciation::
+
+   :ref:`X(392) <X(392)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(9) <X(9)>`}-harmonic conjugate of :ref:`X(956) <X(956)>`
+
 .. figure:: x-00392.svg
    :alt: X(392) = X(1,6)∩X(10,11)
    :align: center
 
    **X(392) = X(1,6)∩X(10,11)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`(b + c)(b^{2} + c^{2} - a^{2}) + 4abc : :`
+   | **Search Value (6, 9, 13):** :math:`3.016229524473`
 
-* :math:`(b + c)(b^{2} + c^{2} - a^{2}) + 4abc : :`
+.. container:: note-item
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`3.016229524473`
+   :ref:`X(392) <X(392)>` lies on the Thomson-Gibert-Moses hyperbola and these lines: (pending)
 
-Incidence
----------
+.. collapse:: Functional Relations
+   :badge: 3 relations
 
-:ref:`X(392) <X(392)>` lies on the Thomson-Gibert-Moses hyperbola and these lines: (pending)
+   * :ref:`X(392) <X(392)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(9) <X(9)>`}-harmonic conjugate of :ref:`X(956) <X(956)>`
+   * :ref:`X(392) <X(392)>` = :ref:`X(2) <X(2)>`-of-:ref:`X(1) <X(1)>`-Brocard-triangle
+   * :ref:`X(392) <X(392)>` = Thomson-:term:`isogonal conjugate <isogonal-conjugate>` of X(4220)
 
-Relations
----------
+.. toctree::
+   :hidden:
 
-* :ref:`X(392) <X(392)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(9) <X(9)>`}-harmonic conjugate of :ref:`X(956) <X(956)>`
-* :ref:`X(392) <X(392)>` = :ref:`X(2) <X(2)>`-of-:ref:`X(1) <X(1)>`-Brocard-triangle
-* :ref:`X(392) <X(392)>` = Thomson-:term:`isogonal conjugate <isogonal-conjugate>` of X(4220)
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

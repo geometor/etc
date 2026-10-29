@@ -8,44 +8,43 @@
 X(713) = EVEN (- 3, - 2) CIRCUMCIRCLE POINT
 ===========================================
 
+.. enunciation::
+
+   :ref:`X(713) <X(713)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(712) <X(712)>`
+
 .. figure:: x-00713.svg
    :alt: X(713) = EVEN (- 3, - 2) CIRCUMCIRCLE POINT
    :align: center
 
    **X(713) = EVEN (- 3, - 2) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = 1/[a :sup:`-4`\ (b :sup:`-2` + c :sup:`-2`) - a :sup:`-3`\ (b :sup:`-3` + c :sup:`-3`)]
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Search Value (6, 9, 13):** :math:`-0.616529833082`
 
-* :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = 1/[a :sup:`-4`\ (b :sup:`-2` + c :sup:`-2`) - a :sup:`-3`\ (b :sup:`-3` + c :sup:`-3`)]
+.. container:: note-item
 
-Barycentrics
-~~~~~~~~~~~~
+   :ref:`X(713) <X(713)>` lies on the circumcircle.
 
-* :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+.. container:: note-item
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`-0.616529833082`
+   :ref:`X(713) <X(713)>` lies.
 
-Incidence
----------
+.. collapse:: Incident Central Lines
+   :badge: 2 lines
+   :class: line-catalog
 
-:ref:`X(713) <X(713)>` lies on the circumcircle.
+   {:ref:`32 <X(32)>`, :ref:`100 <X(100)>`}, {:ref:`101 <X(101)>`, :ref:`560 <X(560)>`}
 
-:ref:`X(713) <X(713)>` lies and on these lines:
+.. collapse:: Functional Relations
+   :badge: 2 relations
 
-{:ref:`32 <X(32)>`, :ref:`100 <X(100)>`}, {:ref:`101 <X(101)>`, :ref:`560 <X(560)>`}
+   * :ref:`X(713) <X(713)>` = isogonal conjugate of :ref:`X(712) <X(712)>`
+   * :ref:`X(713) <X(713)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(35531)
 
-Relations
----------
+.. toctree::
+   :hidden:
 
-* :ref:`X(713) <X(713)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(712) <X(712)>`
-* :ref:`X(713) <X(713)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(35531)
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

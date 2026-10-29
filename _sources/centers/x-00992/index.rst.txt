@@ -14,30 +14,23 @@ X(992) = INTERSECTION OF LINES X(2)X(6) AND X(9)X(39)
 
    **X(992) = INTERSECTION OF LINES X(2)X(6) AND X(9)X(39)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = a\ :sup:`3`\ (b + c) + a\ :sup:`2`\ (b\ :sup:`2` + c\ :sup:`2`) - abc(b + c) - bc(b + c)\ :sup:`2`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Search Value (6, 9, 13):** :math:`47.057524952315`
 
-* :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = a\ :sup:`3`\ (b + c) + a\ :sup:`2`\ (b\ :sup:`2` + c\ :sup:`2`) - abc(b + c) - bc(b + c)\ :sup:`2`
+.. container:: note-item
 
-Barycentrics
-~~~~~~~~~~~~
+   :ref:`X(992) <X(992)>` lies.
 
-* :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+.. collapse:: Incident Central Lines
+   :badge: 4 lines
+   :class: line-catalog
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`47.057524952315`
+   {:ref:`2 <X(2)>`, :ref:`6 <X(6)>`}, {:ref:`9 <X(9)>`, :ref:`39 <X(39)>`}, {:ref:`44 <X(44)>`, :ref:`583 <X(583)>`}, {:ref:`238 <X(238)>`, 1009}
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(992) <X(992)>` lies and on these lines:
-
-{:ref:`2 <X(2)>`, :ref:`6 <X(6)>`}, {:ref:`9 <X(9)>`, :ref:`39 <X(39)>`}, {:ref:`44 <X(44)>`, :ref:`583 <X(583)>`}, {:ref:`238 <X(238)>`, 1009}
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

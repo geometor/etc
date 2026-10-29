@@ -8,41 +8,38 @@
 X(957) = ISOGONAL CONJUGATE OF X(956)
 =====================================
 
+.. enunciation::
+
+   :ref:`X(957) <X(957)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(956) <X(956)>`
+
 .. figure:: x-00957.svg
    :alt: X(957) = ISOGONAL CONJUGATE OF X(956)
    :align: center
 
    **X(957) = ISOGONAL CONJUGATE OF X(956)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = 1/[a\ :sup:`3` - a(b - c)\ :sup:`2` - 2bc(b + c)]
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Search Value (6, 9, 13):** :math:`-0.397101178306`
 
-* :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = 1/[a\ :sup:`3` - a(b - c)\ :sup:`2` - 2bc(b + c)]
+.. container:: note-item
 
-Barycentrics
-~~~~~~~~~~~~
+   :ref:`X(957) <X(957)>` lies.
 
-* :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+.. collapse:: Incident Central Lines
+   :badge: 3 lines
+   :class: line-catalog
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`-0.397101178306`
+   {:ref:`2 <X(2)>`, :ref:`392 <X(392)>`}, {:ref:`57 <X(57)>`, :ref:`995 <X(995)>`}, {:ref:`81 <X(81)>`, :ref:`859 <X(859)>`}
 
-Incidence
----------
+.. collapse:: Functional Relations
+   :badge: 1 relation
 
-:ref:`X(957) <X(957)>` lies and on these lines:
+   * :ref:`X(957) <X(957)>` = isogonal conjugate of :ref:`X(956) <X(956)>`
 
-{:ref:`2 <X(2)>`, :ref:`392 <X(392)>`}, {:ref:`57 <X(57)>`, :ref:`995 <X(995)>`}, {:ref:`81 <X(81)>`, :ref:`859 <X(859)>`}
+.. toctree::
+   :hidden:
 
-Relations
----------
-
-* :ref:`X(957) <X(957)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(956) <X(956)>`
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

@@ -8,38 +8,39 @@
 X(881) = ISOGONAL CONJUGATE OF X(880)
 =====================================
 
+.. enunciation::
+
+   :ref:`X(881) <X(881)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(880) <X(880)>`
+
 .. figure:: x-00881.svg
    :alt: X(881) = ISOGONAL CONJUGATE OF X(880)
    :align: center
 
    **X(881) = ISOGONAL CONJUGATE OF X(880)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`a^{2}u(bv - cw)/(a^{2}u^{2} - bcvw)`, where u : v : w = :ref:`X(6) <X(6)>`
+   | **Search Value (6, 9, 13):** :math:`0.040588591223`
 
-* :math:`a^{2}u(bv - cw)/(a^{2}u^{2} - bcvw)`, where u : v : w = :ref:`X(6) <X(6)>`
+.. container:: note-item
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`0.040588591223`
+   :ref:`X(881) <X(881)>` lies.
 
-Incidence
----------
+.. collapse:: Incident Central Lines
+   :badge: 2 lines
+   :class: line-catalog
 
-:ref:`X(881) <X(881)>` lies and on these lines:
+   {:ref:`39 <X(39)>`, :ref:`512 <X(512)>`}, {:ref:`351 <X(351)>`, :ref:`694 <X(694)>`}
 
-{:ref:`39 <X(39)>`, :ref:`512 <X(512)>`}, {:ref:`351 <X(351)>`, :ref:`694 <X(694)>`}
+.. collapse:: Functional Relations
+   :badge: 3 relations
 
-Relations
----------
+   * :ref:`X(881) <X(881)>` = isogonal conjugate of :ref:`X(880) <X(880)>`
+   * :ref:`X(881) <X(881)>` = :term:`crosssum <crosssum>` of :ref:`X(732) <X(732)>` and :ref:`X(804) <X(804)>`
+   * :ref:`X(881) <X(881)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(688) <X(688)>`\ X(1084)
 
-* :ref:`X(881) <X(881)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(880) <X(880)>`
-* :ref:`X(881) <X(881)>` = :term:`crosssum <crosssum>` of :ref:`X(732) <X(732)>` and :ref:`X(804) <X(804)>`
-* :ref:`X(881) <X(881)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(688) <X(688)>`\ X(1084)
+.. toctree::
+   :hidden:
 
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

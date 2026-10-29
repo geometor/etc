@@ -10,46 +10,84 @@
 X(13) = 1st ISOGONIC CENTER (FERMAT POINT, TORRICELLI POINT)
 ============================================================
 
+.. rubric:: FERMAT POINT • TORRICELLI POINT
+
+.. enunciation::
+
+   Construct the equilateral triangle BA'C having base BC and vertex A' on the negative side of BC; similarly construct equilateral triangles CB'A and AC'B based on the other two sides. The lines AA', BB', CC' concur in :ref:`X(13) <X(13)>`. If each of the angles A, B, C is < 2π/3, then :ref:`X(13) <X(13)>` is the only center X for which the angles BXC, CXA, AXB are equal, and :ref:`X(13) <X(13)>` minimizes the sum \|AX\| + \|BX\| + \|CX\|. The :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(13) <X(13)>` is equilateral.
+
 .. figure:: x-00013.svg
    :alt: X(13) = 1st ISOGONIC CENTER (FERMAT POINT, TORRICELLI POINT)
    :align: center
 
    **X(13) = 1st ISOGONIC CENTER (FERMAT POINT, TORRICELLI POINT)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`\csc(A + \pi /3) : \csc(B + \pi /3) : \csc(C + \pi /3)`
+   | **Barycentrics:** :math:`a^{4} - 2(b^{2} - c^{2})^{2} + a^{2}(b^{2} + c^{2} + 4*\sqrt{3}*Area(ABC)) : :`
+   | **Tripolars:** :math:`1/(a^4+a^2 b^2-2 b^4+a^2 c^2+4 b^2 c^2-2 c^4+2 \sqrt{3} a^2 S) : :`
+   | **Search Value (6, 9, 13):** :math:`0.075945151805`
 
-* :math:`\csc(A + \pi /3) : \csc(B + \pi /3) : \csc(C + \pi /3)`
-* :math:`\sec(A - \pi /6) : \sec(B - \pi /6) : \sec(C - \pi /6)`
+.. collapse:: Alternate Coordinates
+   :badge: 2 forms
 
-Barycentrics
-~~~~~~~~~~~~
+   * **Trilinears:** :math:`\sec(A - \pi /6) : \sec(B - \pi /6) : \sec(C - \pi /6)`
+   * **Barycentrics:** :math:`(SA + \sqrt{3} S) (SB + SC) + 4 SB SC : :`
 
-* :math:`a^{4} - 2(b^{2} - c^{2})^{2} + a^{2}(b^{2} + c^{2} + 4*\sqrt{3}*Area(ABC)) : :`
-* :math:`(SA + \sqrt{3} S) (SB + SC) + 4 SB SC : :`
+.. collapse:: Linear Combinations
+   :badge: 2 combinations
 
-Tripolars
-~~~~~~~~~
-
-* :math:`1/(a^4+a^2 b^2-2 b^4+a^2 c^2+4 b^2 c^2-2 c^4+2 \sqrt{3} a^2 S) : :`
-
-* **Kimberling (6, 9, 13) Search Value:** :math:`0.075945151805`
-
-Linear Combinations
--------------------
-
-* :ref:`X(13) <X(13)>` = 3\ :sup:`1/2`\ (r\ :sup:`2` + 2rR + s\ :sup:`2`)\*\ :ref:`X(1) <X(1)>` - 6r(3\ :sup:`1/2`\ R - 2s)\*\ :ref:`X(2) <X(2)>` - 2r(3\ :sup:`1/2`\ r + 3s)\*\ :ref:`X(3) <X(3)>`
-* (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-
-Notes
------
+   * :ref:`X(13) <X(13)>` = 3\ :sup:`1/2`\ (r\ :sup:`2` + 2rR + s\ :sup:`2`)\*\ :ref:`X(1) <X(1)>` - 6r(3\ :sup:`1/2`\ R - 2s)\*\ :ref:`X(2) <X(2)>` - 2r(3\ :sup:`1/2`\ r + 3s)\*\ :ref:`X(3) <X(3)>`
+   * (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. container:: note-item
 
-   Construct the equilateral triangle BA'C having base BC and vertex A' on the negative side of BC; similarly construct equilateral triangles CB'A and AC'B based on the other two sides. The lines AA', BB', CC' concur in :ref:`X(13) <X(13)>`. If each of the angles A, B, C is < 2π/3, then :ref:`X(13) <X(13)>` is the only center X for which the angles BXC, CXA, AXB are equal, and :ref:`X(13) <X(13)>` minimizes the sum \|AX\| + \|BX\| + \|CX\|. The :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(13) <X(13)>` is equilateral.
+   :ref:`X(13) <X(13)>` lies on the Neuberg cubic.
+
+.. collapse:: Incident Central Lines
+   :badge: 21 lines
+   :class: line-catalog
+
+   {:ref:`2 <X(2)>`, :ref:`16 <X(16)>`}, {:ref:`3 <X(3)>`, :ref:`17 <X(17)>`}, {:ref:`4 <X(4)>`, :ref:`61 <X(61)>`}, {:ref:`5 <X(5)>`, :ref:`18 <X(18)>`}, {:ref:`6 <X(6)>`, :ref:`14 <X(14)>`}, {:ref:`11 <X(11)>`, :ref:`202 <X(202)>`}, {:ref:`15 <X(15)>`, :ref:`30 <X(30)>`}, {:ref:`76 <X(76)>`, :ref:`299 <X(299)>`}, {:ref:`80 <X(80)>`, 1251}, {:ref:`98 <X(98)>`, 1080}, {:ref:`99 <X(99)>`, :ref:`303 <X(303)>`}, {:ref:`148 <X(148)>`, :ref:`617 <X(617)>`}, {:ref:`203 <X(203)>`, 1478}, {:ref:`226 <X(226)>`, 1081}, {:ref:`262 <X(262)>`, :ref:`383 <X(383)>`}, {:ref:`275 <X(275)>`, :ref:`472 <X(472)>`}, {:ref:`298 <X(298)>`, :ref:`532 <X(532)>`}, {:ref:`484 <X(484)>`, 1277}, {:ref:`531 <X(531)>`, :ref:`671 <X(671)>`}, {:ref:`533 <X(533)>`, :ref:`621 <X(621)>`}, {:ref:`634 <X(634)>`, :ref:`635 <X(635)>`}
+
+.. collapse:: Functional Relations
+   :badge: 31 relations
+
+   * :ref:`X(13) <X(13)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`14 <X(14)>`, :ref:`115 <X(115)>`), (:ref:`15 <X(15)>`, :ref:`396 <X(396)>`), (:ref:`99 <X(99)>`, :ref:`619 <X(619)>`), (:ref:`298 <X(298)>`, :ref:`623 <X(623)>`), (:ref:`616 <X(616)>`, :ref:`618 <X(618)>`)
+   * :ref:`X(13) <X(13)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(15) <X(15)>`
+   * :ref:`X(13) <X(13)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(298) <X(298)>`
+   * :ref:`X(13) <X(13)>` = circumcircle-inverse of X(6104)
+   * :ref:`X(13) <X(13)>` = orthocentroidal-circle inverse of :ref:`X(14) <X(14)>`
+   * :ref:`X(13) <X(13)>` = :term:`complement <complement>` of :ref:`X(616) <X(616)>`
+   * :ref:`X(13) <X(13)>` = :term:`anticomplement <anticomplement>` of :ref:`X(618) <X(618)>`
+   * :ref:`X(13) <X(13)>` = :term:`cevapoint <cevapoint>` of :ref:`X(15) <X(15)>` and :ref:`X(62) <X(62)>`
+   * :ref:`X(13) <X(13)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`15 <X(15)>`, :ref:`18 <X(18)>`), (:ref:`30 <X(30)>`, :ref:`14 <X(14)>`), (:ref:`396 <X(396)>`, :ref:`2 <X(2)>`)
+   * :ref:`X(13) <X(13)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(395) <X(395)>`\ \ :ref:`X(523) <X(523)>` (polar of :ref:`X(470) <X(470)>` wrt polar circle)
+   * :ref:`X(13) <X(13)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(470) <X(470)>`
+   * :ref:`X(13) <X(13)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X(470) <X(470)>`
+   * :ref:`X(13) <X(13)>` = :term:`antigonal image <antigonal-image>` of :ref:`X(14) <X(14)>`
+   * :ref:`X(13) <X(13)>` = reflection of :ref:`X(14) <X(14)>` in line :ref:`X(115) <X(115)>`\ \ :ref:`X(125) <X(125)>`
+   * :ref:`X(13) <X(13)>` = :ref:`X(15) <X(15)>`-of-4th-Brocard-triangle
+   * :ref:`X(13) <X(13)>` = :ref:`X(15) <X(15)>`-of-orthocentroidal-triangle
+   * :ref:`X(13) <X(13)>` = orthocorrespondent of :ref:`X(13) <X(13)>`
+   * :ref:`X(13) <X(13)>` = homothetic center of outer Napoleon triangle and antipedal triangle of :ref:`X(13) <X(13)>`
+   * :ref:`X(13) <X(13)>` = inner-Napoleon-to-outer-Napoleon :term:`similarity image <similarity-image>` of :ref:`X(15) <X(15)>`
+   * :ref:`X(13) <X(13)>` = outer-Napoleon-isogonal conjugate of :ref:`X(3) <X(3)>`
+   * :ref:`X(13) <X(13)>` = outer-Napoleon-to-inner-Napoleon similarity image of :ref:`X(14) <X(14)>`
+   * :ref:`X(13) <X(13)>` = orthocenter of :ref:`X(14) <X(14)>`\ \ :ref:`X(98) <X(98)>`\ X(2394)
+   * :ref:`X(13) <X(13)>` = :ref:`X(15) <X(15)>`-of-pedal-triangle of :ref:`X(13) <X(13)>`
+   * :ref:`X(13) <X(13)>` = {:ref:`X(265) <X(265)>`,X(1989)}-harmonic Conjugate of :ref:`X(14) <X(14)>`
+   * :ref:`X(13) <X(13)>` = homothetic center of (equilateral) antipedal triangle of :ref:`X(13) <X(13)>` and triangle formed by circumcenters of BC\ :ref:`X(13) <X(13)>`, CA\ :ref:`X(13) <X(13)>`, AB\ :ref:`X(13) <X(13)>`
+   * :ref:`X(13) <X(13)>` = homothetic center of triangle formed by circumcenters of BC\ :ref:`X(14) <X(14)>`, CA\ :ref:`X(14) <X(14)>`, AB\ :ref:`X(14) <X(14)>` and triangle formed by nine-point centers of BC\ :ref:`X(13) <X(13)>`, CA\ :ref:`X(13) <X(13)>`, AB\ :ref:`X(13) <X(13)>`
+   * :ref:`X(13) <X(13)>` = Cundy-Parry Phi transform of :ref:`X(17) <X(17)>`
+   * :ref:`X(13) <X(13)>` = Cundy-Parry Psi transform of :ref:`X(61) <X(61)>`
+   * :ref:`X(13) <X(13)>` = Kosnita(:ref:`X(13) <X(13)>`,\ :ref:`X(1) <X(1)>`) point
+   * :ref:`X(13) <X(13)>` = Kosnita(:ref:`X(13) <X(13)>`,\ :ref:`X(13) <X(13)>`) point
+   * :ref:`X(13) <X(13)>` = Thomson-isogonal conjugate of X(34317)
+
+Notes
+-----
 
 .. container:: note-item
 
@@ -61,7 +99,7 @@ Notes
 
 .. container:: note-item
 
-   Let NaNbNc, Na'Nb'Nc' be the outer and inner Napoleon triangles, respectively. Let A' be the :term:`isogonal conjugate <isogonal-conjugate>` of Na', wrt NaNbNc, and define B' and C' cyclically. The lines NaA', NbB', NcC' concur in :ref:`X(13) <X(13)>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2015)
+   Let NaNbNc, Na'Nb'Nc' be the outer and inner Napoleon triangles, respectively. Let A' be the isogonal conjugate of Na', wrt NaNbNc, and define B' and C' cyclically. The lines NaA', NbB', NcC' concur in :ref:`X(13) <X(13)>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2015)
 
 .. container:: note-item
 
@@ -122,50 +160,7 @@ Notes
 
    :ref:`X(13) <X(13)>` is the {:ref:`X(6) <X(6)>`,\ :ref:`X(381) <X(381)>`}-harmonic conjugate of :ref:`X(14) <X(14)>`.
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(13) <X(13)>` lies on the Neuberg cubic and on these lines:
-
-{:ref:`2 <X(2)>`, :ref:`16 <X(16)>`}, {:ref:`3 <X(3)>`, :ref:`17 <X(17)>`}, {:ref:`4 <X(4)>`, :ref:`61 <X(61)>`}, {:ref:`5 <X(5)>`, :ref:`18 <X(18)>`}, {:ref:`6 <X(6)>`, :ref:`14 <X(14)>`}, {:ref:`11 <X(11)>`, :ref:`202 <X(202)>`}, {:ref:`15 <X(15)>`, :ref:`30 <X(30)>`}, {:ref:`76 <X(76)>`, :ref:`299 <X(299)>`}, {:ref:`80 <X(80)>`, 1251}, {:ref:`98 <X(98)>`, 1080}, {:ref:`99 <X(99)>`, :ref:`303 <X(303)>`}, {:ref:`148 <X(148)>`, :ref:`617 <X(617)>`}, {:ref:`203 <X(203)>`, 1478}, {:ref:`226 <X(226)>`, 1081}, {:ref:`262 <X(262)>`, :ref:`383 <X(383)>`}, {:ref:`275 <X(275)>`, :ref:`472 <X(472)>`}, {:ref:`298 <X(298)>`, :ref:`532 <X(532)>`}, {:ref:`484 <X(484)>`, 1277}, {:ref:`531 <X(531)>`, :ref:`671 <X(671)>`}, {:ref:`533 <X(533)>`, :ref:`621 <X(621)>`}, {:ref:`634 <X(634)>`, :ref:`635 <X(635)>`}
-
-Relations
----------
-
-* :ref:`X(13) <X(13)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`14 <X(14)>`, :ref:`115 <X(115)>`), (:ref:`15 <X(15)>`, :ref:`396 <X(396)>`), (:ref:`99 <X(99)>`, :ref:`619 <X(619)>`), (:ref:`298 <X(298)>`, :ref:`623 <X(623)>`), (:ref:`616 <X(616)>`, :ref:`618 <X(618)>`)
-* :ref:`X(13) <X(13)>` = isogonal conjugate of :ref:`X(15) <X(15)>`
-* :ref:`X(13) <X(13)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(298) <X(298)>`
-* :ref:`X(13) <X(13)>` = circumcircle-inverse of X(6104)
-* :ref:`X(13) <X(13)>` = orthocentroidal-circle inverse of :ref:`X(14) <X(14)>`
-* :ref:`X(13) <X(13)>` = :term:`complement <complement>` of :ref:`X(616) <X(616)>`
-* :ref:`X(13) <X(13)>` = :term:`anticomplement <anticomplement>` of :ref:`X(618) <X(618)>`
-* :ref:`X(13) <X(13)>` = :term:`cevapoint <cevapoint>` of :ref:`X(15) <X(15)>` and :ref:`X(62) <X(62)>`
-* :ref:`X(13) <X(13)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`15 <X(15)>`, :ref:`18 <X(18)>`), (:ref:`30 <X(30)>`, :ref:`14 <X(14)>`), (:ref:`396 <X(396)>`, :ref:`2 <X(2)>`)
-* :ref:`X(13) <X(13)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(395) <X(395)>`\ \ :ref:`X(523) <X(523)>` (polar of :ref:`X(470) <X(470)>` wrt polar circle)
-* :ref:`X(13) <X(13)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(470) <X(470)>`
-* :ref:`X(13) <X(13)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X(470) <X(470)>`
-* :ref:`X(13) <X(13)>` = :term:`antigonal image <antigonal-image>` of :ref:`X(14) <X(14)>`
-* :ref:`X(13) <X(13)>` = reflection of :ref:`X(14) <X(14)>` in line :ref:`X(115) <X(115)>`\ \ :ref:`X(125) <X(125)>`
-* :ref:`X(13) <X(13)>` = :ref:`X(15) <X(15)>`-of-4th-Brocard-triangle
-* :ref:`X(13) <X(13)>` = :ref:`X(15) <X(15)>`-of-orthocentroidal-triangle
-* :ref:`X(13) <X(13)>` = orthocorrespondent of :ref:`X(13) <X(13)>`
-* :ref:`X(13) <X(13)>` = homothetic center of outer Napoleon triangle and antipedal triangle of :ref:`X(13) <X(13)>`
-* :ref:`X(13) <X(13)>` = inner-Napoleon-to-outer-Napoleon :term:`similarity image <similarity-image>` of :ref:`X(15) <X(15)>`
-* :ref:`X(13) <X(13)>` = outer-Napoleon-isogonal conjugate of :ref:`X(3) <X(3)>`
-* :ref:`X(13) <X(13)>` = outer-Napoleon-to-inner-Napoleon similarity image of :ref:`X(14) <X(14)>`
-* :ref:`X(13) <X(13)>` = orthocenter of :ref:`X(14) <X(14)>`\ \ :ref:`X(98) <X(98)>`\ X(2394)
-* :ref:`X(13) <X(13)>` = :ref:`X(15) <X(15)>`-of-pedal-triangle of :ref:`X(13) <X(13)>`
-* :ref:`X(13) <X(13)>` = {:ref:`X(265) <X(265)>`,X(1989)}-harmonic Conjugate of :ref:`X(14) <X(14)>`
-* :ref:`X(13) <X(13)>` = homothetic center of (equilateral) antipedal triangle of :ref:`X(13) <X(13)>` and triangle formed by circumcenters of BC\ :ref:`X(13) <X(13)>`, CA\ :ref:`X(13) <X(13)>`, AB\ :ref:`X(13) <X(13)>`
-* :ref:`X(13) <X(13)>` = homothetic center of triangle formed by circumcenters of BC\ :ref:`X(14) <X(14)>`, CA\ :ref:`X(14) <X(14)>`, AB\ :ref:`X(14) <X(14)>` and triangle formed by nine-point centers of BC\ :ref:`X(13) <X(13)>`, CA\ :ref:`X(13) <X(13)>`, AB\ :ref:`X(13) <X(13)>`
-* :ref:`X(13) <X(13)>` = Cundy-Parry Phi transform of :ref:`X(17) <X(17)>`
-* :ref:`X(13) <X(13)>` = Cundy-Parry Psi transform of :ref:`X(61) <X(61)>`
-* :ref:`X(13) <X(13)>` = Kosnita(:ref:`X(13) <X(13)>`,\ :ref:`X(1) <X(1)>`) point
-* :ref:`X(13) <X(13)>` = Kosnita(:ref:`X(13) <X(13)>`,\ :ref:`X(13) <X(13)>`) point
-* :ref:`X(13) <X(13)>` = Thomson-isogonal conjugate of X(34317)
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code

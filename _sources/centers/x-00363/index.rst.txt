@@ -9,32 +9,43 @@
 X(363) = EQUAL PERIMETERS ISOSCELIZER POINT
 ===========================================
 
+.. enunciation::
+
+   If X = :ref:`X(363) <X(363)>`, the :term:`isoscelizer <isoscelizer>` triangles of X have equal perimeters.
+
 .. figure:: x-00363.svg
    :alt: X(363) = EQUAL PERIMETERS ISOSCELIZER POINT
    :align: center
 
    **X(363) = EQUAL PERIMETERS ISOSCELIZER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
-Coordinates
------------
+.. signature:: center
 
-Trilinears
-~~~~~~~~~~
+   | **Trilinears:** :math:`b/(1 + \sin B/2) + c/(1 + \sin C/2) - a/(1 + \sin A/2) : :`
+   | **Search Value (6, 9, 13):** :math:`2.584980945018`
 
-* :math:`b/(1 + \sin B/2) + c/(1 + \sin C/2) - a/(1 + \sin A/2) : :`
+.. container:: note-item
 
-* **Kimberling (6, 9, 13) Search Value:** :math:`2.584980945018`
+   :ref:`X(363) <X(363)>` lies.
+
+.. collapse:: Incident Central Lines
+   :badge: 3 lines
+   :class: line-catalog
+
+   {:ref:`1 <X(1)>`, :ref:`289 <X(289)>`}, {:ref:`40 <X(40)>`, :ref:`164 <X(164)>`}, {:ref:`165 <X(165)>`, :ref:`166 <X(166)>`}
+
+.. collapse:: Functional Relations
+   :badge: 2 relations
+
+   * :ref:`X(363) <X(363)>` = :ref:`X(57) <X(57)>` of :term:`excentral triangle <excentral-triangle>`
+   * :ref:`X(363) <X(363)>` = homothetic center of ABC and :term:`orthic triangle <orthic-triangle>` of inner Hutson triangle
 
 Notes
 -----
 
 .. container:: note-item
 
-   If X = :ref:`X(363) <X(363)>`, the :term:`isoscelizer <isoscelizer>` triangles of X have equal perimeters.
-
-.. container:: note-item
-
-   :ref:`X(363) <X(363)>` is the homothetic center of the :term:`excentral triangle <excentral-triangle>` and the inner Hutson triangle. A construction of the latter follows. The internal bisector of angle A meets the A-excircle in two points. Let P\ :sub:`A` be the point closer to line BC and let Q\ :sub:`A` be the other point. Define P\ :sub:`B` and P\ :sub:`C` cyclically, and define Q\ :sub:`B` and Q\ :sub:`C` cyclically. Let L\ :sub:`A` be the line tangent to the A-excircle at P\ :sub:`A`, and define L\ :sub:`B` and L\ :sub:`C` cyclically. Let M\ :sub:`A` be the line tangent to the A-excircle at Q\ :sub:`A`, and define M\ :sub:`B` and M\ :sub:`C` cyclically. The inner Hutson triangle is the triangle A'B'C' given by A' = L\ :sub:`B`\ ∩L\ :sub:`C`, B' = L\ :sub:`C`\ ∩L\ :sub:`A`, C' = L\ :sub:`A`\ ∩L\ :sub:`B`; the outer Hutson triangle is given by A'' = M\ :sub:`B`\ ∩M\ :sub:`C`, B'' = M\ :sub:`C`\ ∩M\ :sub:`A`, C' = M\ :sub:`A`\ ∩M\ :sub:`B`. (Based on a description of A'B'C' by :person:`Randy Hutson <randy-hutson>`, September 23, 2011)
+   :ref:`X(363) <X(363)>` is the homothetic center of the excentral triangle and the inner Hutson triangle. A construction of the latter follows. The internal bisector of angle A meets the A-excircle in two points. Let P\ :sub:`A` be the point closer to line BC and let Q\ :sub:`A` be the other point. Define P\ :sub:`B` and P\ :sub:`C` cyclically, and define Q\ :sub:`B` and Q\ :sub:`C` cyclically. Let L\ :sub:`A` be the line tangent to the A-excircle at P\ :sub:`A`, and define L\ :sub:`B` and L\ :sub:`C` cyclically. Let M\ :sub:`A` be the line tangent to the A-excircle at Q\ :sub:`A`, and define M\ :sub:`B` and M\ :sub:`C` cyclically. The inner Hutson triangle is the triangle A'B'C' given by A' = L\ :sub:`B`\ ∩L\ :sub:`C`, B' = L\ :sub:`C`\ ∩L\ :sub:`A`, C' = L\ :sub:`A`\ ∩L\ :sub:`B`; the outer Hutson triangle is given by A'' = M\ :sub:`B`\ ∩M\ :sub:`C`, B'' = M\ :sub:`C`\ ∩M\ :sub:`A`, C' = M\ :sub:`A`\ ∩M\ :sub:`B`. (Based on a description of A'B'C' by :person:`Randy Hutson <randy-hutson>`, September 23, 2011)
 
 .. container:: note-item
 
@@ -64,21 +75,7 @@ Notes
 
    Let UVW and U'V'W' be the tangential-midarc triangles introduced in the preamble to X(8075). The inner and outer Hutson triangles introduced at :ref:`X(363) <X(363)>` are the excircles-version of UVW and U'V'W'. (Randy Hutson and :person:`César Lozada <cesar-lozada>`, August 29, 2015)
 
-Incidence
----------
+.. toctree::
+   :hidden:
 
-:ref:`X(363) <X(363)>` lies and on these lines:
-
-{:ref:`1 <X(1)>`, :ref:`289 <X(289)>`}, {:ref:`40 <X(40)>`, :ref:`164 <X(164)>`}, {:ref:`165 <X(165)>`, :ref:`166 <X(166)>`}
-
-Relations
----------
-
-* :ref:`X(363) <X(363)>` = :ref:`X(57) <X(57)>` of excentral triangle
-* :ref:`X(363) <X(363)>` = homothetic center of ABC and :term:`orthic triangle <orthic-triangle>` of inner Hutson triangle
-
-Construction
-------------
-
-.. literalinclude:: model.py
-   :language: python
+   code
