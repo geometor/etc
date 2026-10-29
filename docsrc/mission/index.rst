@@ -1,5 +1,5 @@
 :navigation: header
-:order: 1
+:order: 5
 
 mission
 =======

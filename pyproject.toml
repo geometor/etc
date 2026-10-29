@@ -15,10 +15,12 @@ classifiers = [
 dependencies = [
     "beautifulsoup4",
     "rich",
+    "sympy",
+    "geometor-model",
 ]
 
 [project.scripts]
-etc = "geometor.etc.__main__:run"
+etc = "geometor.etc.__main__:main"
 
 [build-system]
 requires = ["setuptools", "setuptools-scm"]

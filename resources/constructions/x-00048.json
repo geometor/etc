@@ -1,0 +1,199 @@
+{
+    "name": "X(48) = CROSSPOINT OF X(1) AND X(63)",
+    "use_point_subscript": false,
+    "last_point_id": "",
+    "elements": {
+        "A": {
+            "sympy_obj": "Point2D(Integer(0), Integer(0))",
+            "ID": "A",
+            "classes": [
+                "given",
+                "vertex"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "B": {
+            "sympy_obj": "Point2D(Integer(1), Integer(0))",
+            "ID": "B",
+            "classes": [
+                "given",
+                "vertex"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "[ A B ]": {
+            "sympy_obj": "Line2D(Point2D(Integer(0), Integer(0)), Point2D(Integer(1), Integer(0)))",
+            "ID": "[ A B ]",
+            "classes": [
+                "given",
+                "sideline"
+            ],
+            "parents": [
+                "A",
+                "B"
+            ],
+            "guide": false
+        },
+        "C": {
+            "sympy_obj": "Point2D(Rational(6122449, 10000000), Rational(3749219, 6250000))",
+            "ID": "C",
+            "classes": [
+                "vertex"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "[ B C ]": {
+            "sympy_obj": "Line2D(Point2D(Integer(1), Integer(0)), Point2D(Rational(6122449, 10000000), Rational(3749219, 6250000)))",
+            "ID": "[ B C ]",
+            "classes": [
+                "sideline"
+            ],
+            "parents": [
+                "B",
+                "C"
+            ],
+            "guide": false
+        },
+        "[ C A ]": {
+            "sympy_obj": "Line2D(Point2D(Rational(6122449, 10000000), Rational(3749219, 6250000)), Point2D(Integer(0), Integer(0)))",
+            "ID": "[ C A ]",
+            "classes": [
+                "sideline"
+            ],
+            "parents": [
+                "C",
+                "A"
+            ],
+            "guide": false
+        },
+        "< A B C >": {
+            "sympy_obj": "Triangle(Point2D(Integer(0), Integer(0)), Point2D(Integer(1), Integer(0)), Point2D(Rational(6122449, 10000000), Rational(3749219, 6250000)))",
+            "ID": "< A B C >",
+            "classes": [
+                "reference"
+            ],
+            "parents": [
+                "A",
+                "B",
+                "C"
+            ],
+            "guide": false
+        },
+        "X(3)": {
+            "sympy_obj": "Point2D(Rational(1, 2), Rational(10206207, 100000000))",
+            "ID": "X(3)",
+            "classes": [
+                "center"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "circumcircle": {
+            "sympy_obj": "Circle(Point2D(Rational(1, 2), Rational(10206207, 100000000)), Mul(Rational(1, 100000000), Pow(Integer(2604166661326849), Rational(1, 2))))",
+            "ID": "circumcircle",
+            "classes": [
+                "circumcircle"
+            ],
+            "parents": [
+                "X(3)",
+                "A"
+            ],
+            "guide": false,
+            "pt_radius": "A"
+        },
+        "X(1)": {
+            "sympy_obj": "Point2D(Rational(4, 7), Rational(11664237, 50000000))",
+            "ID": "X(1)",
+            "classes": [
+                "center"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "X(19)": {
+            "sympy_obj": "Point2D(Rational(31231003, 50000000), Rational(2652373, 6250000))",
+            "ID": "X(19)",
+            "classes": [
+                "center"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "{ 1, 19 }": {
+            "sympy_obj": "Line2D(Point2D(Rational(4, 7), Rational(11664237, 50000000)), Point2D(Rational(31231003, 50000000), Rational(2652373, 6250000)))",
+            "ID": "{ 1, 19 }",
+            "classes": [
+                "central_line"
+            ],
+            "parents": [
+                "X(1)",
+                "X(19)"
+            ],
+            "guide": false
+        },
+        "X(6)": {
+            "sympy_obj": "Point2D(Rational(3, 5), Rational(13360853, 50000000))",
+            "ID": "X(6)",
+            "classes": [
+                "center"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "X(41)": {
+            "sympy_obj": "Point2D(Rational(5823337, 10000000), Rational(11219037, 50000000))",
+            "ID": "X(41)",
+            "classes": [
+                "center"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "{ 6, 41 }": {
+            "sympy_obj": "Line2D(Point2D(Rational(3, 5), Rational(13360853, 50000000)), Point2D(Rational(5823337, 10000000), Rational(11219037, 50000000)))",
+            "ID": "{ 6, 41 }",
+            "classes": [
+                "central_line"
+            ],
+            "parents": [
+                "X(6)",
+                "X(41)"
+            ],
+            "guide": false
+        },
+        "X(71)": {
+            "sympy_obj": "Point2D(Rational(9614949, 20000000), Rational(4577189, 50000000))",
+            "ID": "X(71)",
+            "classes": [
+                "center"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "{ 3, 71 }": {
+            "sympy_obj": "Line2D(Point2D(Rational(1, 2), Rational(10206207, 100000000)), Point2D(Rational(9614949, 20000000), Rational(4577189, 50000000)))",
+            "ID": "{ 3, 71 }",
+            "classes": [
+                "central_line"
+            ],
+            "parents": [
+                "X(3)",
+                "X(71)"
+            ],
+            "guide": false
+        },
+        "X(48)": {
+            "sympy_obj": "Point2D(Rational(54116223, 100000000), Rational(12455033, 100000000))",
+            "ID": "X(48)",
+            "classes": [
+                "selected",
+                "target"
+            ],
+            "parents": [],
+            "guide": false
+        }
+    }
+}

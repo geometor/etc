@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg id="drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.110000 -0.757438 1.220000 0.915000" preserveAspectRatio="xMidYMid meet">
+  <style>
+:root {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --accent-color: #161616;
+    --border-color: #333;
+    --select-color: #0ff;
+}
+
+#drawing {
+    width: 100%;
+    height: auto;
+    max-height: 520px;
+    background-color: var(--accent-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    display: block;
+}
+
+#points circle {
+    fill: var(--text-color);
+    stroke: var(--background-color);
+    stroke-width: 2.5;
+    vector-effect: non-scaling-stroke;
+}
+
+#points circle.given {
+    fill: #6F6;
+}
+
+#points circle.guide {
+    fill: orange;
+    stroke-dasharray: none;
+}
+
+#points circle.selected,
+#points circle.target {
+    stroke: var(--select-color);
+    fill: gold;
+    stroke-width: 3;
+}
+
+#elements line {
+    fill: none;
+    stroke: #777;
+    stroke-width: 1.5;
+    vector-effect: non-scaling-stroke;
+}
+
+#elements line.sideline {
+    stroke: #999;
+    stroke-width: 2;
+}
+
+#elements line.central_line {
+    stroke: #0bd;
+    stroke-width: 1.75;
+    stroke-opacity: 0.85;
+}
+
+#elements line.golden,
+#elements line.euler {
+    stroke: gold;
+    stroke-width: 2;
+}
+
+#elements circle {
+    fill: none;
+    stroke: #C09;
+    stroke-width: 2;
+    vector-effect: non-scaling-stroke;
+}
+
+#elements circle.incircle {
+    stroke: #e040fb;
+}
+
+#elements circle.nine_point_circle {
+    stroke: #00e5ff;
+    stroke-dasharray: 6, 3;
+}
+
+#elements .bisector {
+    stroke-dasharray: 8, 4, 2, 4;
+}
+
+#elements .guide {
+    stroke: orange;
+    stroke-dasharray: 2, 4;
+    stroke-opacity: 0.65;
+}
+
+#graphics polyline {
+    stroke: #36c9;
+    fill: none;
+    stroke-width: 6;
+    vector-effect: non-scaling-stroke;
+}
+
+#graphics polygon {
+    stroke: #36c9;
+    fill: #36c2;
+    stroke-width: 6;
+    vector-effect: non-scaling-stroke;
+    stroke-linejoin: round;
+    marker-start: url(#marker);
+    marker-mid: url(#marker);
+    marker-end: url(#marker);
+}
+
+#graphics polygon.secondary {
+    stroke: rgba(144, 238, 144, 0.55);
+    fill: rgba(144, 238, 144, 0.08);
+    stroke-width: 3;
+}
+
+#labels text {
+    fill: var(--text-color);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-weight: 600;
+    paint-order: stroke;
+    stroke: var(--accent-color);
+    stroke-width: 3px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vector-effect: non-scaling-stroke;
+    user-select: none;
+}
+
+#labels text.target-label {
+    fill: gold;
+    font-weight: 700;
+}
+
+#labels text.given-label {
+    fill: #8f8;
+}
+</style>
+  <defs>
+    <marker id="marker" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="3" markerHeight="3" orient="auto-start-reverse">
+      <circle cx="3" cy="3" r="3" fill="context-stroke" vector-effect="non-scaling-stroke"></circle>
+    </marker>
+  </defs>
+  <g id="graphics">
+    <polygon id="&lt; A B C &gt;" class="polygon reference" data-category="graphics" points="0.000000,-0.000000 1.000000,-0.000000 0.612245,-0.599875" />
+    <polygon id="&lt; T_a T_b T_c &gt;" class="polygon secondary" data-category="graphics" points="0.767347,-0.359925 0.408163,-0.399917 0.571429,-0.000000" />
+  </g>
+  <g id="highlights">
+    <polyline id="highlight-[ A B ]" class="highlight-segment" points="0.000000,-0.000000 1.000000,-0.000000" style="display: none;" />
+    <polyline id="highlight-[ B C ]" class="highlight-segment" points="1.000000,-0.000000 0.612245,-0.599875" style="display: none;" />
+    <polyline id="highlight-[ C A ]" class="highlight-segment" points="0.612245,-0.599875 0.000000,-0.000000" style="display: none;" />
+    <polyline id="highlight-[ A X(1) ]" class="highlight-segment" points="0.000000,-0.000000 0.571429,-0.233285" style="display: none;" />
+    <polyline id="highlight-[ B X(1) ]" class="highlight-segment" points="1.000000,-0.000000 0.571429,-0.233285" style="display: none;" />
+    <polyline id="highlight-[ C X(1) ]" class="highlight-segment" points="0.612245,-0.599875 0.571429,-0.233285" style="display: none;" />
+    <polyline id="highlight-{ 2, 8 }" class="highlight-segment" points="0.537415,-0.199958 0.469388,-0.133306" style="display: none;" />
+    <polyline id="highlight-{ 6, 9 }" class="highlight-segment" points="0.600000,-0.267217 0.510989,-0.161505" style="display: none;" />
+    <polyline id="highlight-{ 5, 11 }" class="highlight-segment" points="0.556122,-0.248906 0.734694,-0.066653" style="display: none;" />
+  </g>
+  <g id="elements">
+    <line id="[ A B ]" class="line given sideline" data-category="elements" x1="-1000.00000" y1="-0.00000" x2="1000.00000" y2="-0.00000" />
+    <circle id="( A R_b )" class="circle guide" data-category="elements" cx="0.000000" cy="-0.000000" r="0.857143" fill="none" />
+    <circle id="( B R_a )" class="circle guide" data-category="elements" cx="1.000000" cy="-0.000000" r="0.714286" fill="none" />
+    <line id="[ B C ]" class="line sideline" data-category="elements" x1="388.75510" y1="599.87504" x2="-386.75510" y2="-599.87504" />
+    <line id="[ C A ]" class="line sideline" data-category="elements" x1="612.85714" y1="-600.47492" x2="-611.63266" y2="599.27516" />
+    <circle id="incircle" class="circle incircle" data-category="elements" cx="0.571429" cy="-0.233285" r="0.233285" fill="none" />
+    <line id="[ A X(1) ]" class="line bisector" data-category="elements" x1="-571.42857" y1="233.28474" x2="571.42857" y2="-233.28474" />
+    <line id="[ B X(1) ]" class="line bisector" data-category="elements" x1="429.57143" y1="233.28474" x2="-427.57143" y2="-233.28474" />
+    <line id="[ C X(1) ]" class="line bisector" data-category="elements" x1="41.42857" y1="-367.19018" x2="-40.20409" y2="365.99042" />
+    <line id="{ 2, 8 }" class="line central_line" data-category="elements" x1="68.56462" y1="-66.85275" x2="-67.48980" y2="66.45283" />
+    <line id="{ 6, 9 }" class="line central_line" data-category="elements" x1="89.61099" y1="-105.97946" x2="-88.41099" y2="105.44502" />
+    <line id="{ 5, 11 }" class="line central_line" data-category="elements" x1="-178.01531" y1="-182.50261" x2="179.12755" y2="182.00479" />
+  </g>
+  <g id="points">
+    <circle id="A" class="point given vertex" data-category="points" cx="0.000000" cy="-0.000000" r="0.007625"><title>A (0.0000, 0.0000)</title></circle>
+    <circle id="B" class="point given vertex" data-category="points" cx="1.000000" cy="-0.000000" r="0.007625"><title>B (1.0000, 0.0000)</title></circle>
+    <circle id="R_b" class="point guide" data-category="points" cx="0.857143" cy="-0.000000" r="0.004880"><title>R_b (0.8571, 0.0000)</title></circle>
+    <circle id="R_a" class="point guide" data-category="points" cx="0.285714" cy="-0.000000" r="0.004880"><title>R_a (0.2857, 0.0000)</title></circle>
+    <circle id="C" class="point vertex" data-category="points" cx="0.612245" cy="-0.599875" r="0.007625"><title>C (0.6122, 0.5999)</title></circle>
+    <circle id="T_a" class="point guide" data-category="points" cx="0.767347" cy="-0.359925" r="0.004880"><title>T_a (0.7673, 0.3599)</title></circle>
+    <circle id="T_b" class="point guide" data-category="points" cx="0.408163" cy="-0.399917" r="0.004880"><title>T_b (0.4082, 0.3999)</title></circle>
+    <circle id="T_c" class="point guide" data-category="points" cx="0.571429" cy="-0.000000" r="0.004880"><title>T_c (0.5714, 0.0000)</title></circle>
+    <circle id="X(2)" class="point center" data-category="points" cx="0.537415" cy="-0.199958" r="0.007625"><title>X(2) (0.5374, 0.2000)</title></circle>
+    <circle id="X(8)" class="point center" data-category="points" cx="0.469388" cy="-0.133306" r="0.007625"><title>X(8) (0.4694, 0.1333)</title></circle>
+    <circle id="X(6)" class="point center" data-category="points" cx="0.600000" cy="-0.267217" r="0.007625"><title>X(6) (0.6000, 0.2672)</title></circle>
+    <circle id="X(9)" class="point center" data-category="points" cx="0.510989" cy="-0.161505" r="0.007625"><title>X(9) (0.5110, 0.1615)</title></circle>
+    <circle id="X(5)" class="point center" data-category="points" cx="0.556122" cy="-0.248906" r="0.007625"><title>X(5) (0.5561, 0.2489)</title></circle>
+    <circle id="X(11)" class="point center" data-category="points" cx="0.734694" cy="-0.066653" r="0.007625"><title>X(11) (0.7347, 0.0667)</title></circle>
+    <circle id="X(1)" class="point selected target" data-category="points" cx="0.571429" cy="-0.233285" r="0.010675"><title>X(1) (0.5714, 0.2333)</title></circle>
+  </g>
+  <g id="labels">
+    <text class="given-label" x="-0.024400" y="0.022875" font-size="0.020587">A</text>
+    <text class="given-label" x="1.012200" y="0.022875" font-size="0.020587">B</text>
+    <text class="point-label" x="0.604620" y="-0.615125" font-size="0.020587">C</text>
+    <text class="point-label" x="0.549615" y="-0.210633" font-size="0.020587">X(2)</text>
+    <text class="point-label" x="0.481588" y="-0.143981" font-size="0.020587">X(8)</text>
+    <text class="point-label" x="0.612200" y="-0.277892" font-size="0.020587">X(6)</text>
+    <text class="point-label" x="0.523189" y="-0.172180" font-size="0.020587">X(9)</text>
+    <text class="point-label" x="0.568322" y="-0.259581" font-size="0.020587">X(5)</text>
+    <text class="point-label" x="0.746894" y="-0.077328" font-size="0.020587">X(11)</text>
+    <text class="target-label" x="0.583629" y="-0.243960" font-size="0.020587">X(1)</text>
+    <text class="point-label" x="-0.088650" y="0.139262" font-size="0.017537" fill="#999">(a, b, c) = (5, 6, 7) | AB = 1</text>
+  </g>
+</svg>

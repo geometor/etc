@@ -1,0 +1,226 @@
+{
+    "name": "X(33) = PERSPECTOR OF THE ORTHIC AND INTANGENTS TRIANGLES",
+    "use_point_subscript": false,
+    "last_point_id": "",
+    "elements": {
+        "A": {
+            "sympy_obj": "Point2D(Integer(0), Integer(0))",
+            "ID": "A",
+            "classes": [
+                "given",
+                "vertex"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "B": {
+            "sympy_obj": "Point2D(Integer(1), Integer(0))",
+            "ID": "B",
+            "classes": [
+                "given",
+                "vertex"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "[ A B ]": {
+            "sympy_obj": "Line2D(Point2D(Integer(0), Integer(0)), Point2D(Integer(1), Integer(0)))",
+            "ID": "[ A B ]",
+            "classes": [
+                "given",
+                "sideline"
+            ],
+            "parents": [
+                "A",
+                "B"
+            ],
+            "guide": false
+        },
+        "C": {
+            "sympy_obj": "Point2D(Rational(6122449, 10000000), Rational(3749219, 6250000))",
+            "ID": "C",
+            "classes": [
+                "vertex"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "[ B C ]": {
+            "sympy_obj": "Line2D(Point2D(Integer(1), Integer(0)), Point2D(Rational(6122449, 10000000), Rational(3749219, 6250000)))",
+            "ID": "[ B C ]",
+            "classes": [
+                "sideline"
+            ],
+            "parents": [
+                "B",
+                "C"
+            ],
+            "guide": false
+        },
+        "[ C A ]": {
+            "sympy_obj": "Line2D(Point2D(Rational(6122449, 10000000), Rational(3749219, 6250000)), Point2D(Integer(0), Integer(0)))",
+            "ID": "[ C A ]",
+            "classes": [
+                "sideline"
+            ],
+            "parents": [
+                "C",
+                "A"
+            ],
+            "guide": false
+        },
+        "< A B C >": {
+            "sympy_obj": "Triangle(Point2D(Integer(0), Integer(0)), Point2D(Integer(1), Integer(0)), Point2D(Rational(6122449, 10000000), Rational(3749219, 6250000)))",
+            "ID": "< A B C >",
+            "classes": [
+                "reference"
+            ],
+            "parents": [
+                "A",
+                "B",
+                "C"
+            ],
+            "guide": false
+        },
+        "H_a": {
+            "sympy_obj": "Point2D(Rational(17632653, 25000000), Rational(45590503, 100000000))",
+            "ID": "H_a",
+            "classes": [
+                "foot"
+            ],
+            "parents": [],
+            "guide": true
+        },
+        "H_b": {
+            "sympy_obj": "Point2D(Rational(25, 49), Rational(49989587, 100000000))",
+            "ID": "H_b",
+            "classes": [
+                "foot"
+            ],
+            "parents": [],
+            "guide": true
+        },
+        "H_c": {
+            "sympy_obj": "Point2D(Rational(6122449, 10000000), Integer(0))",
+            "ID": "H_c",
+            "classes": [
+                "foot"
+            ],
+            "parents": [],
+            "guide": true
+        },
+        "< H_a H_b H_c >": {
+            "sympy_obj": "Triangle(Point2D(Rational(17632653, 25000000), Rational(45590503, 100000000)), Point2D(Rational(25, 49), Rational(49989587, 100000000)), Point2D(Rational(6122449, 10000000), Integer(0)))",
+            "ID": "< H_a H_b H_c >",
+            "classes": [
+                "secondary"
+            ],
+            "parents": [
+                "H_a",
+                "H_b",
+                "H_c"
+            ],
+            "guide": false
+        },
+        "X(1)": {
+            "sympy_obj": "Point2D(Rational(4, 7), Rational(11664237, 50000000))",
+            "ID": "X(1)",
+            "classes": [
+                "center"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "X(4)": {
+            "sympy_obj": "Point2D(Rational(6122449, 10000000), Rational(39575089, 100000000))",
+            "ID": "X(4)",
+            "classes": [
+                "center"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "{ 1, 4 }": {
+            "sympy_obj": "Line2D(Point2D(Rational(4, 7), Rational(11664237, 50000000)), Point2D(Rational(6122449, 10000000), Rational(39575089, 100000000)))",
+            "ID": "{ 1, 4 }",
+            "classes": [
+                "central_line"
+            ],
+            "parents": [
+                "X(1)",
+                "X(4)"
+            ],
+            "guide": false
+        },
+        "X(19)": {
+            "sympy_obj": "Point2D(Rational(31231003, 50000000), Rational(2652373, 6250000))",
+            "ID": "X(19)",
+            "classes": [
+                "center"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "X(25)": {
+            "sympy_obj": "Point2D(Rational(1977657, 3125000), Rational(22483239, 50000000))",
+            "ID": "X(25)",
+            "classes": [
+                "center"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "{ 19, 25 }": {
+            "sympy_obj": "Line2D(Point2D(Rational(31231003, 50000000), Rational(2652373, 6250000)), Point2D(Rational(1977657, 3125000), Rational(22483239, 50000000)))",
+            "ID": "{ 19, 25 }",
+            "classes": [
+                "central_line"
+            ],
+            "parents": [
+                "X(19)",
+                "X(25)"
+            ],
+            "guide": false
+        },
+        "X(24)": {
+            "sympy_obj": "Point2D(Rational(66272189, 100000000), Rational(52782397, 100000000))",
+            "ID": "X(24)",
+            "classes": [
+                "center"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "X(35)": {
+            "sympy_obj": "Point2D(Rational(53731343, 100000000), Rational(17061123, 100000000))",
+            "ID": "X(35)",
+            "classes": [
+                "center"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "{ 24, 35 }": {
+            "sympy_obj": "Line2D(Point2D(Rational(66272189, 100000000), Rational(52782397, 100000000)), Point2D(Rational(53731343, 100000000), Rational(17061123, 100000000)))",
+            "ID": "{ 24, 35 }",
+            "classes": [
+                "central_line"
+            ],
+            "parents": [
+                "X(24)",
+                "X(35)"
+            ],
+            "guide": false
+        },
+        "X(33)": {
+            "sympy_obj": "Point2D(Rational(15047619, 25000000), Rational(443241, 1250000))",
+            "ID": "X(33)",
+            "classes": [
+                "selected",
+                "target"
+            ],
+            "parents": [],
+            "guide": false
+        }
+    }
+}

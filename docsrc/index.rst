@@ -6,26 +6,23 @@ etc
 
 .. include:: intro.rst
 
-recent logs
------------
+Sections
+--------
 
-.. postlist:: 5
-   :excerpts:
-
-
+* :doc:`Encyclopedia of Triangle Centers <centers/index>` — Canonical centers :ref:`X(1) <X(1)>` through :ref:`X(100) <X(100)>` (from 53,144 ingested centers)
+* :doc:`Glossary <glossary>` — Definitions of classical and modern triangle geometry terms and central triangles
+* :doc:`Index Nominum <persons>` — Biographical register of geometers and contributors
+* :doc:`Bibliography <bibliography>` — Primary monographs, journals, catalogs, and research forums
 
 .. toctree::
    :hidden:
    :maxdepth: 2
 
-   mission/index.rst
-   centers/index.rst
    usage/index.rst
-   modules/index.rst
    logs.rst
    demos/index.rst
    refs/index.rst
-   todos.rst
+   todos/index.rst
    changelog.rst
    connect.rst
    about.rst
