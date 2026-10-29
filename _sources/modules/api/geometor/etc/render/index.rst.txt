@@ -1,0 +1,201 @@
+geometor.etc.render
+===================
+
+.. py:module:: geometor.etc.render
+
+.. autoapi-nested-parse::
+
+   Render `geometor.model.Model` instances into standalone SVGs following `geometor.explorer` conventions.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.etc.render.EXPLORER_SVG_CSS
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.render.model_to_elements_list
+   geometor.etc.render.render_model_svg
+   geometor.etc.render.write_center_svg
+
+
+Module Contents
+---------------
+
+.. py:data:: EXPLORER_SVG_CSS
+   :value: Multiline-String
+
+   .. raw:: html
+
+      <details><summary>Show Value</summary>
+
+   .. code-block:: python
+
+      """
+      :root {
+          --background-color: #121212;
+          --text-color: #e0e0e0;
+          --accent-color: #161616;
+          --border-color: #333;
+          --select-color: #0ff;
+      }
+      
+      #drawing {
+          width: 100%;
+          height: auto;
+          max-height: 520px;
+          background-color: var(--accent-color);
+          border: 1px solid var(--border-color);
+          border-radius: 4px;
+          display: block;
+      }
+      
+      #points circle {
+          fill: var(--text-color);
+          stroke: var(--background-color);
+          stroke-width: 2.5;
+          vector-effect: non-scaling-stroke;
+      }
+      
+      #points circle.given {
+          fill: #6F6;
+      }
+      
+      #points circle.guide {
+          fill: orange;
+          stroke-dasharray: none;
+      }
+      
+      #points circle.selected,
+      #points circle.target {
+          stroke: var(--select-color);
+          fill: gold;
+          stroke-width: 3;
+      }
+      
+      #elements line {
+          fill: none;
+          stroke: #777;
+          stroke-width: 1.5;
+          vector-effect: non-scaling-stroke;
+      }
+      
+      #elements line.sideline {
+          stroke: #999;
+          stroke-width: 2;
+      }
+      
+      #elements line.central_line {
+          stroke: #0bd;
+          stroke-width: 1.75;
+          stroke-opacity: 0.85;
+      }
+      
+      #elements line.golden,
+      #elements line.euler {
+          stroke: gold;
+          stroke-width: 2;
+      }
+      
+      #elements circle {
+          fill: none;
+          stroke: #C09;
+          stroke-width: 2;
+          vector-effect: non-scaling-stroke;
+      }
+      
+      #elements circle.incircle {
+          stroke: #e040fb;
+      }
+      
+      #elements circle.nine_point_circle {
+          stroke: #00e5ff;
+          stroke-dasharray: 6, 3;
+      }
+      
+      #elements .bisector {
+          stroke-dasharray: 8, 4, 2, 4;
+      }
+      
+      #elements .guide {
+          stroke: orange;
+          stroke-dasharray: 2, 4;
+          stroke-opacity: 0.65;
+      }
+      
+      #graphics polyline {
+          stroke: #36c9;
+          fill: none;
+          stroke-width: 6;
+          vector-effect: non-scaling-stroke;
+      }
+      
+      #graphics polygon {
+          stroke: #36c9;
+          fill: #36c2;
+          stroke-width: 6;
+          vector-effect: non-scaling-stroke;
+          stroke-linejoin: round;
+          marker-start: url(#marker);
+          marker-mid: url(#marker);
+          marker-end: url(#marker);
+      }
+      
+      #graphics polygon.secondary {
+          stroke: rgba(144, 238, 144, 0.55);
+          fill: rgba(144, 238, 144, 0.08);
+          stroke-width: 3;
+      }
+      
+      #labels text {
+          fill: var(--text-color);
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+          font-weight: 600;
+          paint-order: stroke;
+          stroke: var(--accent-color);
+          stroke-width: 3px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          vector-effect: non-scaling-stroke;
+          user-select: none;
+      }
+      
+      #labels text.target-label {
+          fill: gold;
+          font-weight: 700;
+      }
+      
+      #labels text.given-label {
+          fill: #8f8;
+      }
+      """
+
+   .. raw:: html
+
+      </details>
+
+
+
+.. py:function:: model_to_elements_list(model: geometor.model.Model) -> list[dict[str, Any]]
+
+   Convert a `geometor.model.Model` into a chronological list of browser-ready element dicts.
+
+
+.. py:function:: render_model_svg(model: geometor.model.Model, svg_width: int = 800, svg_height: int = 600, show_labels: bool = True, subtitle: str = '') -> str
+
+   Render a `geometor.model.Model` to an Explorer-compatible SVG string.
+
+
+.. py:function:: write_center_svg(model: geometor.model.Model, output_path: str | pathlib.Path, subtitle: str = '') -> pathlib.Path
+
+   Render and write a center's `Model` SVG to `output_path`.
+
+

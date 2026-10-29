@@ -3,52 +3,125 @@ geometor.etc.glossary
 
 .. py:module:: geometor.etc.glossary
 
+.. autoapi-nested-parse::
+
+   Glossary, biographical (persons), and bibliographic (citations) extraction and apparatus generation for ETC.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.etc.glossary.SKIP_AUTO_WRAP_TERMS
+   geometor.etc.glossary.CLASSICAL_TRIANGLE_ALIASES
+   geometor.etc.glossary.PERSONS_REGISTRY
+   geometor.etc.glossary.CITATIONS_REGISTRY
+
 
 Functions
 ---------
 
 .. autoapisummary::
 
+   geometor.etc.glossary.apparatus_slug
+   geometor.etc.glossary.clean_html_entities
+   geometor.etc.glossary.convert_inline_html_to_rst
+   geometor.etc.glossary.filter_center_refs
    geometor.etc.glossary.extract_glossary_terms
+   geometor.etc.glossary.extract_glossary_intro_rst
    geometor.etc.glossary.generate_glossary_rst
+   geometor.etc.glossary.build_glossary_json
+   geometor.etc.glossary.build_persons_json
+   geometor.etc.glossary.build_citations_json
+   geometor.etc.glossary.generate_persons_rst
+   geometor.etc.glossary.generate_bibliography_rst
    geometor.etc.glossary.wrap_glossary_terms
+   geometor.etc.glossary.wrap_persons_and_citations
 
 
 Module Contents
 ---------------
 
-.. py:function:: extract_glossary_terms(html_content: str) -> dict[str, str]
+.. py:function:: apparatus_slug(key: str) -> str
 
-   Extract glossary terms and definitions from the HTML content.
-
-   :param html_content: The HTML content of the glossary page.
-   :type html_content: str
-
-   :returns: A dictionary mapping terms to their definitions (in RST format).
-   :rtype: dict
+   Create a deterministic anchor slug matching photon-platform/publish.
 
 
-.. py:function:: generate_glossary_rst(terms: dict[str, str]) -> str
+.. py:data:: SKIP_AUTO_WRAP_TERMS
 
-   Generate the content for glossary.rst.
+.. py:data:: CLASSICAL_TRIANGLE_ALIASES
+   :type:  dict[str, dict[str, str]]
 
-   :param terms: A dictionary of terms and definitions.
-   :type terms: dict
+.. py:data:: PERSONS_REGISTRY
+   :type:  dict[str, dict[str, str]]
 
-   :returns: The generated RST content.
-   :rtype: str
+.. py:data:: CITATIONS_REGISTRY
+   :type:  dict[str, dict[str, str]]
+
+.. py:function:: clean_html_entities(text: str) -> str
+
+   Fix common entity typos in ETC HTML and unescape all HTML entities to UTF-8.
 
 
-.. py:function:: wrap_glossary_terms(text: str, terms: list[str]) -> str
+.. py:function:: convert_inline_html_to_rst(fragment: str, valid_centers: set[int] | None = None) -> str
 
-   Wrap occurrences of glossary terms in the text with :term:`term`.
+   Convert inline HTML tags (sup, sub, b, i, a, br) to clean ReStructuredText.
 
-   :param text: The text to process.
-   :type text: str
-   :param terms: A list of glossary terms to look for.
-   :type terms: list
 
-   :returns: The processed text with terms wrapped.
-   :rtype: str
+.. py:function:: filter_center_refs(rst_text: str, valid_centers: set[int] | None) -> str
+
+   Downgrade any `:ref:`label <X(n)>`` to plain `label` when `n` is not in `valid_centers`.
+
+
+.. py:function:: extract_glossary_terms(html_content: str) -> dict[str, Any]
+
+   Extract all glossary terms, their rich RST bodies, and plain-text summaries from GLOSSARY HTML.
+
+
+.. py:function:: extract_glossary_intro_rst(html_content: str) -> str
+
+   Extract the introductory methodology section from GLOSSARY HTML as RST.
+
+
+.. py:function:: generate_glossary_rst(terms: dict[str, Any], intro_rst: str = '', valid_centers: set[int] | None = None) -> str
+
+   Generate rich `docsrc/glossary.rst` with deterministic `#term-<slug>` anchors.
+
+
+.. py:function:: build_glossary_json(terms: dict[str, Any]) -> dict[str, dict[str, str]]
+
+   Build the `resources/glossary.json` dictionary keyed by both slug and headword.
+
+
+.. py:function:: build_persons_json() -> dict[str, dict[str, Any]]
+
+   Build the `resources/persons.json` dictionary keyed by slug and alias.
+
+
+.. py:function:: build_citations_json() -> dict[str, dict[str, str]]
+
+   Build the `resources/citations.json` dictionary.
+
+
+.. py:function:: generate_persons_rst(valid_centers: set[int] | None = None) -> str
+
+   Generate `docsrc/persons.rst` with `#person-<slug>` anchors for all `:person:` links.
+
+
+.. py:function:: generate_bibliography_rst() -> str
+
+   Generate `docsrc/bibliography.rst` with `#cite-<slug>` anchors for all `:cite:` links.
+
+
+.. py:function:: wrap_glossary_terms(text: str, terms: dict[str, Any] | list[str], seen_slugs: set[str] | None = None) -> str
+
+   Wrap technical glossary terms in `:term:`matched <slug>``, avoiding existing RST markup.
+
+
+.. py:function:: wrap_persons_and_citations(text: str, seen_persons: set[str] | None = None, seen_cites: set[str] | None = None) -> str
+
+   Wrap contributor names in `:person:` and standard citations (TCCT, Hyacinthos, ADGEOM) in `:cite:`.
 
 

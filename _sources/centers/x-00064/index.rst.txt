@@ -1,0 +1,99 @@
+:order: 64
+:type: center
+:canonical_id: X(64)
+:dependencies: X(1), X(3), X(4), X(6), X(19), X(20), X(24), X(25), X(30), X(33), X(40), X(54), X(55), X(65), X(68), X(69), X(71), X(72), X(73), X(74), X(84), X(154), X(185), X(198), X(207), X(265), X(378), X(382), X(459), X(647), X(657), X(1498), X(2136), X(2184), X(2435), X(2883), X(3182), X(3183), X(3345), X(3346), X(3353), X(3355), X(3472), X(6225), X(8905), X(11589), X(14615)
+
+.. _X(64):
+
+X(64) = ISOGONAL CONJUGATE OF X(20)
+===================================
+
+.. figure:: x-00064.svg
+   :alt: X(64) = ISOGONAL CONJUGATE OF X(20)
+   :align: center
+
+   **X(64) = ISOGONAL CONJUGATE OF X(20)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+
+Coordinates
+-----------
+
+Trilinears
+~~~~~~~~~~
+
+* :math:`1/(\cos A - \cos B \cos C) : 1/(\cos B - \cos C \cos A) : 1/(\cos C - \cos A \cos B)`
+
+Barycentrics
+~~~~~~~~~~~~
+
+* :math:`a/(\cos A - \cos B \cos C) : b/(\cos B - \cos C \cos A) : c/(\cos C - \cos A \cos B)`
+* :math:`a^2/[3a^4 - 2a^2(b^2 + c^2) - (b^2 - c^2)^2] : :`
+
+* **Kimberling (6, 9, 13) Search Value:** :math:`31.627324066040`
+
+Notes
+-----
+
+.. container:: note-item
+
+   A construction of :ref:`X(64) <X(64)>` appears in Lemoine's 1886 paper cited at :ref:`X(19) <X(19)>`.
+
+.. container:: note-item
+
+   Let A'B'C' be the half-altitude triangle. Let La be the :term:`trilinear polar <trilinear-polar>` of A', and define Lb and Lc cyclically. Let A″ = Lb∩Lc, and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(64) <X(64)>`. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
+
+.. container:: note-item
+
+   Let Oa be the circle with segment BC as diameter. Let A' be the perspector of Oa. Let La be the polar of A' wrt Oa. Define Lb and Lc cyclically. Let A″ = Lb∩Lc, B″ = Lc∩La, C″ = La∩Lb. The lines AA″, BB″, CC″ concur in :ref:`X(64) <X(64)>`. (Randy Hutson, November 18, 2015)
+
+.. container:: note-item
+
+   Let A'B'C' be the :term:`cevian triangle <cevian-triangle>` of :ref:`X(69) <X(69)>`. Let A″ be the orthocenter of AB'C', and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(64) <X(64)>`. (Randy Hutson, November 18, 2015)
+
+.. container:: note-item
+
+   Let A'B'C' be the reflection of the :term:`orthic triangle <orthic-triangle>` in :ref:`X(4) <X(4)>`. Let A''B''C'' be the trangential triangle, with respect ot the orthic triangle, of the circumconic of the orthic triangle with center :ref:`X(4) <X(4)>`; i.e., the bicevian conic of :ref:`X(4) <X(4)>` and X(459). Then :ref:`X(64) <X(64)>` is the perspector of A'B'C' and A''B''C''. (Randy Hutson, November 18, 2015)
+
+.. container:: note-item
+
+   The tangents at A, B, C to the Darboux cubic K004 concur in :ref:`X(64) <X(64)>`. (Randy Hutson, November 18, 2015)
+
+Incidence
+---------
+
+:ref:`X(64) <X(64)>` lies on the Darboux cubic and on these lines:
+
+{:ref:`1 <X(1)>`, 3182}, {:ref:`3 <X(3)>`, 154}, {:ref:`4 <X(4)>`, 3183}, {:ref:`6 <X(6)>`, 185}, {:ref:`20 <X(20)>`, :ref:`69 <X(69)>`}, {:ref:`24 <X(24)>`, :ref:`74 <X(74)>`}, {:ref:`30 <X(30)>`, :ref:`68 <X(68)>`}, {:ref:`33 <X(33)>`, :ref:`65 <X(65)>`}, {:ref:`40 <X(40)>`, :ref:`72 <X(72)>`}, {:ref:`54 <X(54)>`, 378}, {:ref:`55 <X(55)>`, :ref:`73 <X(73)>`}, {:ref:`71 <X(71)>`, 198}, {:ref:`84 <X(84)>`, 3353}, {265, 382}, {3345, 3472}, {3346, 3355}
+
+Relations
+---------
+
+* :ref:`X(64) <X(64)>` = reflection of X(1498) in :ref:`X(3) <X(3)>`
+* :ref:`X(64) <X(64)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(20) <X(20)>`
+* :ref:`X(64) <X(64)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(14615)
+* :ref:`X(64) <X(64)>` = :term:`complement <complement>` of X(6225)
+* :ref:`X(64) <X(64)>` = :term:`anticomplement <anticomplement>` of X(2883)
+* :ref:`X(64) <X(64)>` = circumcircle-inverse of X(11589)
+* :ref:`X(64) <X(64)>` = :ref:`X(25) <X(25)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(6) <X(6)>`
+* :ref:`X(64) <X(64)>` = :ref:`X(1) <X(1)>`-:term:`beth conjugate <beth-conjugate>` of X(207)
+* :ref:`X(64) <X(64)>` = :term:`crosspoint <crosspoint>` of :ref:`X(4) <X(4)>` and X(3346)
+* :ref:`X(64) <X(64)>` = :term:`crosssum <crosssum>` of :ref:`X(3) <X(3)>` and X(1498)
+* :ref:`X(64) <X(64)>` = perspector of hexyl triangle and :term:`anticevian triangle <anticevian-triangle>` of X(2184)
+* :ref:`X(64) <X(64)>` = :term:`trilinear pole <trilinear-pole>` of line X(647)X(657)
+* :ref:`X(64) <X(64)>` = concurrence of normals to MacBeath circumconic at A, B, C
+* :ref:`X(64) <X(64)>` = isogonal conjugate, wrt :term:`tangential triangle <tangential-triangle>` of MacBeath circumconic (or anticevian triangle of :ref:`X(3) <X(3)>`), of X(1498)
+* :ref:`X(64) <X(64)>` = orthocenter of x(3)\ :ref:`X(6) <X(6)>`\ X(2435)
+* :ref:`X(64) <X(64)>` = orthology center of ABC and half-altitude triangle
+* :ref:`X(64) <X(64)>` = intersection of tangents at :ref:`X(3) <X(3)>` and :ref:`X(4) <X(4)>` to Thomson cubic K002
+* :ref:`X(64) <X(64)>` = intersection of tangents at :ref:`X(20) <X(20)>` and :ref:`X(64) <X(64)>` to Darboux cubic K004
+* :ref:`X(64) <X(64)>` = perspector of ABC and the reflection in :ref:`X(3) <X(3)>` of the :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(3) <X(3)>` (tangential triangle)
+* :ref:`X(64) <X(64)>` = perspector of ABC and circumcircle antipode of circumanticevian triangle of :ref:`X(3) <X(3)>`
+* :ref:`X(64) <X(64)>` = perspector of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of half-altitude triangle
+* :ref:`X(64) <X(64)>` = X(2136)-of-orthic-triangle if ABC is acute
+* :ref:`X(64) <X(64)>` = X(8905)-of-excentral-triangle
+* :ref:`X(64) <X(64)>` = :ref:`X(3) <X(3)>`-:term:`vertex conjugate <vertex-conjugate>` of :ref:`X(3) <X(3)>`
+
+Construction
+------------
+
+.. literalinclude:: model.py
+   :language: python

@@ -1,15 +1,21 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-content_root="./">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Glossary &mdash; Project name not set  documentation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=38c7a96b" />
+  <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=5aff7b7d" />
   <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
   <link rel="stylesheet" href="_static/css/print.css" type="text/css" media="print" />
   <link rel="icon" href="_static/favicon.ico" />
 </head>
@@ -31,10 +37,19 @@
       <label for="nav-Header-toggle" >Header</label>
       <ul>
         <li>
-          <a href="mission/index.html"  >mission</a>
+          <a href="centers/index.html"  >Encyclopedia of Triangle Centers</a>
         </li>
         <li>
-          <a href="centers/index.html"  >Encyclopedia of Triangle Centers</a>
+          <a href="#" aria-selected="true" aria-current="true">Glossary</a>
+        </li>
+        <li>
+          <a href="persons.html"  >Index Nominum (Geometers & Contributors)</a>
+        </li>
+        <li>
+          <a href="bibliography.html"  >Bibliography & Cited Sources</a>
+        </li>
+        <li>
+          <a href="mission/index.html"  >mission</a>
         </li>
         <li>
           <a href="modules/index.html"  >modules</a>
@@ -51,443 +66,729 @@
       </nav>
         <nav class="context">
           <div class="prev">
+             <a href="centers/x-00100/index.html" title="X(100) = ANTICOMPLEMENT OF FEUERBACH POINT" >Prev</a>
           </div>
           <div class="next">
+            <a href="persons.html" title="Index Nominum (Geometers &amp; Contributors)" >Next</a>
           </div>
         </nav>
       </header>
-      <div class="content">
-        <section id="glossary">
-          <h1>Glossary<a class="headerlink" href="#glossary" title="Link to this heading">¶</a></h1>
-          <dl class="glossary">
-          <dt id="term-Ceva-conjugate">Ceva conjugate<a class="headerlink" href="#term-Ceva-conjugate" title="Link to this term">¶</a></dt><dd><p>Let P = p : q : r and U = u : v : w be points, neither lying on a sideline of ABC.  The P-Ceva conjugate of U is the point</p>
-          <p>u(- qru + rpv + pqw) : v(qru - rpv + pqw) : w(qru + rpv - pqw),</p>
-          <p>which is the perspector of the cevian triangle of P and the anticevian triangle of U.
-          (See cevian nest and
-          cross conjugate.)</p>
-          <p>Ceva conjugate and cevapoint are related thus:  X = P©U if and only if P = cevapoint(U,X), and in this case, U = P©X.</p>
-          <p>Let f(x : y : z) = p(y + z) : q(z + x) : r(x + y).  The P-Ceva conjugate of U is “what you do to f(X) to make f(X -1) when f(X) = U.”  (Hyacinthos #3966, Sept. 26, 2001.)</p>
-          <p>If you have The Geometer’s Sketchpad, you can view CEVA CONJUGATE.</p>
-          </dd>
-          <dt id="term-Hirst-inverse">Hirst inverse<a class="headerlink" href="#term-Hirst-inverse" title="Link to this term">¶</a></dt><dd><p>Let P = p : q : r and U = u : v : w be distinct points, neither lying on a sideline of ABC.  The P-Hirst inverse of U is the point</p>
-          <p>qru2 - vwp2 : rpv2 - wuq2 : pqw2 - uvr2.</p>
-          <p>Geometrically, this is the point of intersection of the line PU and the polar of U with respect to the conic.</p>
-          <p>pyz + qzx + rxy = 0.</p>
-          <dl class="simple">
-          <dt>As a transformation, P-Hirst inverse is an involution; i.e., if PhU = P-Hirst inverse of U, then Ph(PhU) = U.  Concerning the designation “Hirst inverse,” see the</dt><dd><p>information contributed by Gunter Weiss.</p>
-          </dd>
-          </dl>
-          </dd>
-          <dt id="term-aleph-conjugate">aleph conjugate<a class="headerlink" href="#term-aleph-conjugate" title="Link to this term">¶</a></dt><dd><p>Let P = p : q : r and U = u : v : w be points, neither lying on a sideline of ABC.  The P-aleph conjugate of U is the point</p>
-          <p>h(p,q,r,u,v,w) : h(q,r,p,v,w,u) : h(r,p,q,w,u,v),</p>
+      <div class="content body" role="main">
+        <section class="level-1" id="glossary">
+          <span id="id1"></span><h1>Glossary<a class="headerlink" href="#glossary" title="Link to this heading">¶</a></h1>
+          <p>An extension of this Glossary, contributed by César Lozada, can be accessed here:</p>
+          <p>.</p>
+          <p>Many of the terms used in triangle geometry are presented in Eric Weisstein’s <a class="reference external" href="https://mathworld.wolfram.com/">MathWorld</a>, including topics contributed by <a class="reference external" href="http://mathworld.wolfram.com/topics/Grinberg.html">Darij Grinberg</a>, <a class="reference external" href="http://mathworld.wolfram.com/topics/vanLamoen.html">Floor Lamoen</a>, and <a class="reference external" href="http://mathworld.wolfram.com/topics/Moses.html">Peter Moses</a>.</p>
+          <p>A number of terms defined at MathWorld originated in this Glossary, using trilinear coordinates. The need for definitions using barycentric coordinates has led to P. L. Douillet’s highly recommended <a class="reference external" href="https://vixra.org/pdf/2504.0039v1.pdf">Translation of Kimberling’s Glossary into barycentrics, “Le Glossaire de Pierre”</a></p>
+          <p>In 2012, links to <a class="reference external" href="https://faculty.evansville.edu/ck6/encyclopedia/Tables.html">Tables</a> were added to ETC. These tables include many examples of conjugates of various kinds (e.g., aleph, beth, gimel, he, waw, zayin, complementary, and anticomplementary), introduced in C. Kimberling, <a class="reference external" href="http://forumgeom.fau.edu/FG2002volume2/FG200204.pdf">Collineations, Conjugacies, and Cubics</a>, <em>Forum Geometricorum</em> 2 (2002) 21-32. Those definitions are included below.</p>
+          <p>In 2016, an Index of Triangles Referenced in ETC was provided by César Lozada. You can access it <a class="reference external" href="https://faculty.evansville.edu/ck6/encyclopedia/IndexOfTrianglesReferencedInETC.html">here</a>, and also from <a class="reference external" href="https://faculty.evansville.edu/ck6/encyclopedia/Tables.html">Tables</a>.</p>
+          <p>In this Glossary, points and lines are given in homogeneous coordinates. The coordinates are assumed to be trilinear unless otherwise indicated (as barycentric or polar coordinates), and they are used here to <strong>define</strong> points, lines, circles, triangle centers, etc. Likewise, zero determinants <strong>define</strong> collinearity and concurrence, etc. Consequently, triangle geometry is presented here at a much more general level than a single euclidean triangle. In this treatment, the symbols a,b,c are regarded as algebraic indeterminates or variables, so that points, as functions of a,b,c, are quite different from points in a two-dimensional plane. When (a,b,c) are real numbers restricted by the “triangle inequalities” for sidelengths (i.e., a ≤ b + c, b ≤ c + a, c ≤ a + b), the result is traditional triangle geometry. In favor of the greater generality, in this Glossary, algebraic definitions take precedence over traditional geometric construction-definitions. (For more in this vein, see the definitions of line, point, and symbolic substitution.)</p>
+          <p>The words “defined cyclically” apply after an “A-object” has been defined: if the A-object is F(A,B,C), then the B-object is F(B,C,A), obtained by the cyclic permutation ABC → BCA, and the C-object is, likewise, F(C,A,B). Example: If A’ is the point where lines AP and BC meet, and B’ and C’ are defined cyclically, then B’ is where lines BP and CA meet, and C’ is where lines CP and AB meet.</p>
+          <hr class="docutils" />
+          <section class="level-2" id="term-aleph-conjugate">
+          <span id="aleph-conjugate"></span><span id="id2"></span><h2>aleph conjugate<a class="headerlink" href="#term-aleph-conjugate" title="Link to this heading">¶</a></h2>
+          <p>Let P = p : q : r and U = u : v : w be points, neither lying on a sideline of ABC. The P-aleph conjugate of U is the point</p>
+          <blockquote>
+          <div><p>h(p,q,r,u,v,w) : h(q,r,p,v,w,u) : h(r,p,q,w,u,v),</p>
+          </div></blockquote>
           <p>where</p>
-          <p>h(p,q,r,u,v,w) = - q2r2u2 + r2p2v2 + p2q2w2 + (vw + wu + uv)( - q2r2 + r2p2 + p2q2).</p>
+          <blockquote>
+          <div><p>h(p,q,r,u,v,w) = - q<sup>2</sup>r<sup>2</sup>u<sup>2</sup> + r<sup>2</sup>p<sup>2</sup>v<sup>2</sup> + p<sup>2</sup>q<sup>2</sup>w<sup>2</sup> + (vw + wu + uv)( - q<sup>2</sup>r<sup>2</sup> + r<sup>2</sup>p<sup>2</sup> + p<sup>2</sup>q<sup>2</sup>).</p>
+          </div></blockquote>
           <p>Let g be the mapping given by</p>
-          <p>g(x : y : z) = -x/p + y/q + z/r : x/p - y/q + z/r : x/p + y/q - z/r.</p>
-          <p>The P-aleph conjugate of U is “what you do to g(X) to make g(X -1) when f(X) = U.”  (Hyacinthos #4111, Oct. 11, 2001.)</p>
-          </dd>
-          <dt id="term-anticevian-triangle">anticevian triangle<a class="headerlink" href="#term-anticevian-triangle" title="Link to this term">¶</a></dt><dd><p>Let P be a point not on a sideline of ABC.  Let A’ = AP∩BC.  Let A” be the harmonic conjugate
-          of P with respect to A and A’.  Define B” and C” cyclically.  Triangle A”B”C” is the anticevian
-          triangle of triangle ABC.  (The lines AP, BP, CP are the cevians of P, and A’B’C’,
-          the cevian triangle of P.)</p>
-          <p>If P = p : q : r,  then A” = - p : q : r,  B” = p : - q : r,  C” = p : q : - r.</p>
+          <blockquote>
+          <div><p>g(x : y : z) = -x/p + y/q + z/r : x/p - y/q + z/r : x/p + y/q - z/r.</p>
+          </div></blockquote>
+          <p>The P-aleph conjugate of U is “what you do to g(X) to make g(X<sup>-1</sup>) when f(X) = U.” (Hyacinthos #4111, Oct. 11, 2001.)</p>
+          </section>
+          <section class="level-2" id="term-anticevian-triangle">
+          <span id="anticevian-triangle"></span><span id="id3"></span><h2>anticevian triangle<a class="headerlink" href="#term-anticevian-triangle" title="Link to this heading">¶</a></h2>
+          <p>Let P be a point not on a sideline of ABC. Let A’ = AP∩BC. Let A” be the harmonic conjugate of P with respect to A and A’. Define B” and C” cyclically. Triangle A”B”C” is the anticevian triangle of triangle ABC. (The lines AP, BP, CP are the <em>cevians</em> of P, and A’B’C’, the <em>cevian triangle</em> of P.)</p>
+          <blockquote>
+          <div><p>If P = p : q : r, then A” = - p : q : r, B” = p : - q : r, C” = p : q : - r.</p>
+          </div></blockquote>
           <p>Examples of anticevian triangles</p>
-          <p>excentral; P = incenter = X(1) = 1 : 1 : 1
-          anticomplementary; P = centroid = X(2) = 1/a : 1/b : 1/c
-          tangential; P = symmedian point = X(6) = a : b : c</p>
-          </dd>
-          <dt id="term-anticomplement">anticomplement<a class="headerlink" href="#term-anticomplement" title="Link to this term">¶</a></dt><dd><p>If points P and Q are collinear with the centroid G, then P is the anticomplement of Q if G trisects segment PQ and is closer to Q than to P.  See also
-          complement.
-          (According to Court, p. 297, the term anticomplementary point dates from 1886.)</p>
-          </dd>
-          <dt id="term-anticomplementary-conjugate">anticomplementary conjugate<a class="headerlink" href="#term-anticomplementary-conjugate" title="Link to this term">¶</a></dt><dd><p>Let P = p : q : r and U = u : v : w be points, neither lying on a sideline of ABC.  The P-anticomplementary conjugate of U is the point</p>
-          <p>h(a,b,c,p,q,r,u,v,w) : h(b,c,a,q,r,p,v,w,u) : h(c,a,b,r,p,q,w,u,v),</p>
+          <ul class="simple">
+          <li><p>excentral; P = incenter = <a class="reference internal" href="centers/x-00001/index.html#x-1"><span class="std std-ref">X(1)</span></a> = 1 : 1 : 1</p></li>
+          <li><p>anticomplementary; P = centroid = <a class="reference internal" href="centers/x-00002/index.html#x-2"><span class="std std-ref">X(2)</span></a> = 1/a : 1/b : 1/c</p></li>
+          <li><p>tangential; P = symmedian point = <a class="reference internal" href="centers/x-00006/index.html#x-6"><span class="std std-ref">X(6)</span></a> = a : b : c</p></li>
+          </ul>
+          </section>
+          <section class="level-2" id="term-anticomplement">
+          <span id="anticomplement"></span><span id="id4"></span><h2>anticomplement<a class="headerlink" href="#term-anticomplement" title="Link to this heading">¶</a></h2>
+          <p>If points P and Q are collinear with the centroid G, then P is the anticomplement of Q if G trisects segment PQ and is closer to Q than to P. See also <a class="term-ref glossary-term" id="occ-term-complement-1" href="#term-complement" data-term="complement" title="complement: If points P and U are collinear with the centroid G, then P is the complement of U if G trisects segment PU and is closer to P than to U. See also anticomplement . (According to Court, p. 297, the term complementary point dates from 1885.)">complement</a>. (According to Court, p. 297, the term <em>anticomplementary point</em> dates from 1886.)</p>
+          </section>
+          <section class="level-2" id="term-anticomplementary-conjugate">
+          <span id="anticomplementary-conjugate"></span><span id="id5"></span><h2>anticomplementary conjugate<a class="headerlink" href="#term-anticomplementary-conjugate" title="Link to this heading">¶</a></h2>
+          <p>Let P = p : q : r and U = u : v : w be points, neither lying on a sideline of ABC. The P-anticomplementary conjugate of U is the point</p>
+          <blockquote>
+          <div><p>h(a,b,c,p,q,r,u,v,w) : h(b,c,a,q,r,p,v,w,u) : h(c,a,b,r,p,q,w,u,v),</p>
+          </div></blockquote>
           <p>where</p>
-          <p>h(a,b,c,p,q,r,u,v,w) = [b2/q(au + cw) + c2/r(au + bv) - a2/p(bv + cw)]/a.</p>
+          <blockquote>
+          <div><p>h(a,b,c,p,q,r,u,v,w) = [b<sup>2</sup>/q(au + cw) + c<sup>2</sup>/r(au + bv) - a<sup>2</sup>/p(bv + cw)]/a.</p>
+          </div></blockquote>
           <p>Let f(X) be the anticomplement of X, given by</p>
-          <p>f(x : y : z) = (- ax + by + cz)/a : (ax - by + cz)/b : (ax + by - cz)/c,</p>
-          <p>and let k be P-isoconjugation.  The P-anticomplementary conjugate of U is “what you do to f(X) to make f(k(X)) when f(X) = U.”</p>
+          <blockquote>
+          <div><p>f(x : y : z) = (- ax + by + cz)/a : (ax - by + cz)/b : (ax + by - cz)/c,</p>
+          </div></blockquote>
+          <p>and let k be P-isoconjugation. The P-anticomplementary conjugate of U is “what you do to f(X) to make f(k(X)) when f(X) = U.”</p>
           <p>If P = incenter, then P-anticomplementary conjugate is shortened to “anticomplementary conjugate.”</p>
-          </dd>
-          <dt id="term-anticomplementary-triangle">anticomplementary triangle<a class="headerlink" href="#term-anticomplementary-triangle" title="Link to this term">¶</a></dt><dd><p>Let L(A) be the line through vertex A parallel to side BC, and define L(B) and L(C) cyclically.  Let A’ = L(B)∩L(C), and define B’ and C’ cyclically.  Then A’B’C’ is the anticomplementary triangle of ABC.  (Efforts to replace this name have encountered the fact that A’ is the anticomplement of A.)</p>
-          </dd>
-          <dt id="term-antigonal-image">antigonal image<a class="headerlink" href="#term-antigonal-image" title="Link to this term">¶</a></dt><dd><p>Let P = p : q : r (barycentric coordinates) be a point not on a sideline of ABC and not X(4).  The antigonal image of P is the point h(P) given by barycentyrics</p>
-          <p>h(a,b,c,p,q,r) : h(b,c,a,q,r,p) : h(c,a,b,r,p,q),</p>
+          </section>
+          <section class="level-2" id="term-anticomplementary-triangle">
+          <span id="anticomplementary-triangle"></span><span id="id6"></span><h2>anticomplementary triangle<a class="headerlink" href="#term-anticomplementary-triangle" title="Link to this heading">¶</a></h2>
+          <p>Let L(A) be the line through vertex A parallel to side BC, and define L(B) and L(C) cyclically. Let A’ = L(B)∩L(C), and define B’ and C’ cyclically. Then A’B’C’ is the anticomplementary triangle of ABC. (Efforts to replace this name have encountered the fact that A’ is the anticomplement of A.)</p>
+          </section>
+          <section class="level-2" id="term-antigonal-image">
+          <span id="antigonal-image"></span><span id="id7"></span><h2>antigonal image<a class="headerlink" href="#term-antigonal-image" title="Link to this heading">¶</a></h2>
+          <p>Let P = p : q : r (barycentric coordinates) be a point not on a sideline of ABC and not <a class="reference internal" href="centers/x-00004/index.html#x-4"><span class="std std-ref">X(4)</span></a>. The antigonal image of P is the point h(P) given by barycentyrics</p>
+          <blockquote>
+          <div><p>h(a,b,c,p,q,r) : h(b,c,a,q,r,p) : h(c,a,b,r,p,q),</p>
+          </div></blockquote>
           <p>where</p>
-          <p>h(a,b,c,p,q,r) = p/[(b2 + c2 - a2)p2 - a2qr + (b2 - a2)pq + (c2 - a2)pr].</p>
-          <p>The point h(P) is the isogonal conjugate of the inverse-in-circumcircle of the isogonal conjugate of P.  If P lies on the circumcircle then h(P)=X(4); otherwise, h(h(P))=P, so that h(P), in such a case, is called the antigonal conjugate of P.  If P lies on the line at infinity, then h(P)=P.</p>
-          <p>Antigonal pairs of points are discussed in Jan Van Yzeren, “Pairs of Points: Antigonal, Isogonal, and Inverse,” Mathematics Magazine 65 (1992) 339-347.</p>
+          <blockquote>
+          <div><p>h(a,b,c,p,q,r) = p/[(b<sup>2</sup> + c<sup>2</sup> - a<sup>2</sup>)p<sup>2</sup> - a<sup>2</sup>qr + (b<sup>2</sup> - a<sup>2</sup>)pq + (c<sup>2</sup> - a<sup>2</sup>)pr].</p>
+          </div></blockquote>
+          <p>The point h(P) is the isogonal conjugate of the inverse-in-circumcircle of the isogonal conjugate of P. If P lies on the circumcircle then h(P)=<a class="reference internal" href="centers/x-00004/index.html#x-4"><span class="std std-ref">X(4)</span></a>; otherwise, h(h(P))=P, so that h(P), in such a case, is called the antigonal conjugate of P. If P lies on the line at infinity, then h(P)=P.</p>
+          <p>Antigonal pairs of points are discussed in Jan Van Yzeren, “Pairs of Points: Antigonal, Isogonal, and Inverse,” <em>Mathematics Magazine</em> 65 (1992) 339-347.</p>
           <p>Subsequent developments occur in Hyacinthos, beginning with #7825.</p>
-          </dd>
-          <dt id="term-antitomic-conjugate">antitomic conjugate<a class="headerlink" href="#term-antitomic-conjugate" title="Link to this term">¶</a></dt><dd><p>Let P be a point not on a sideline of ABC. Let T = isotomic conjugate and S = Steiner- circumellipse-inverse (this ellipse is T of the line at infinity). The antitomic conjugate of P is the point T(S(T(P))).  Source: Preamble just  before X(14941).</p>
-          </dd>
-          <dt id="term-barycentric-image">barycentric image<a class="headerlink" href="#term-barycentric-image" title="Link to this term">¶</a></dt><dd><p>See homologous images)</p>
-          </dd>
-          <dt id="term-beth-conjugate">beth conjugate<a class="headerlink" href="#term-beth-conjugate" title="Link to this term">¶</a></dt><dd><p>Let P = p : q : r and U = u : v : w be points, neither lying on a sideline of ABC.  The P-beth conjugate of U is the point</p>
-          <p>h(a,b,c,p,q,r,u,v,w) : h(b,c,a,q,r,p,v,w,u) : h(c,a,b,r,p,q,w,u,v),</p>
+          </section>
+          <section class="level-2" id="term-antipedal-triangle">
+          <span id="antipedal-triangle"></span><span id="id8"></span><h2>antipedal triangle<a class="headerlink" href="#term-antipedal-triangle" title="Link to this heading">¶</a></h2>
+          <p>For a point P, the triangle A’B’C’ formed by the lines through A, B, C perpendicular to AP, BP, CP respectively. (See <a class="term-ref glossary-term" id="occ-term-central-triangle-1" href="#term-central-triangle" data-term="central-triangle" title="central triangle: Let each of f(a,b,c) and g(a,b,c) be a center function (i.e., as in the definition of triangle center) or the zero function, such that one of these conditions holds: Let Then A&#x27;B&#x27;C&#x27; is the (f,g)-central triangle of type 1 . A central triangle of type 1 is any triangle A&#x27;B&#x27;C&#x27; for which equations (1)-(3) hold for some choice of center functions f and g....">central triangle</a>.)</p>
+          </section>
+          <section class="level-2" id="term-antitomic-conjugate">
+          <span id="antitomic-conjugate"></span><span id="id9"></span><h2>antitomic conjugate<a class="headerlink" href="#term-antitomic-conjugate" title="Link to this heading">¶</a></h2>
+          <p>Let P be a point not on a sideline of ABC. Let T = isotomic conjugate and S = Steiner- circumellipse-inverse (this ellipse is T of the line at infinity). The antitomic conjugate of P is the point T(S(T(P))). Source: Preamble just before X(14941).</p>
+          </section>
+          <section class="level-2" id="term-barycentric-image">
+          <span id="barycentric-image"></span><span id="id10"></span><h2>barycentric image<a class="headerlink" href="#term-barycentric-image" title="Link to this heading">¶</a></h2>
+          <p>See <a class="term-ref glossary-term" id="occ-term-homologous-1" href="#term-homologous" data-term="homologous" title="homologous images: similarity image, trilinear image, barycentric image, and functional image: The term homologous means having the same relation or relative position to . Let T 1 and T 2 be two triangles, and P a point in the plane of triangle T 1 . The point P&#x27; in the plane of triangle T 2 is a T 1 -to-T 2 homologous image of P if P&#x27; has the same relation or relative position to T 2 as P has to T 1 . However, the words &quot;relation or relative...">homologous images</a>)</p>
+          </section>
+          <section class="level-2" id="term-beth-conjugate">
+          <span id="beth-conjugate"></span><span id="id11"></span><h2>beth conjugate<a class="headerlink" href="#term-beth-conjugate" title="Link to this heading">¶</a></h2>
+          <p>Let P = p : q : r and U = u : v : w be points, neither lying on a sideline of ABC. The P-beth conjugate of U is the point</p>
+          <blockquote>
+          <div><p>h(a,b,c,p,q,r,u,v,w) : h(b,c,a,q,r,p,v,w,u) : h(c,a,b,r,p,q,w,u,v),</p>
+          </div></blockquote>
           <p>where</p>
-          <p>h(a,b,c,p,q,r,u,v,w) = 2abcp(cos B + cos C)(ua’/p + vb’/q + wc’/r) - (a+b+c)a’b’c’u,</p>
-          <p>where a’, b’, c’ are - a + b + c, a - b + c, a + b - c, respectively.  Let f by the mapping given by</p>
-          <p>f(x : y : z) = p(y + z) : q(z + x) : r(x + y),</p>
-          <p>and let k be the mapping “reflection in the circumcenter.”  The P-beth conjugate of U is “what you do to f(X) to make
-          f(k(X)) when f(X) = U.”  (Hyacinthos #4146, Oct. 26, 2001.)</p>
-          </dd>
-          <dt id="term-bicentric-points">bicentric points<a class="headerlink" href="#term-bicentric-points" title="Link to this term">¶</a></dt><dd><p>Let f(a,b,c) : f(b,c,a) : f(c,a,b) be a point that satisfies (1) in the definition of triangle center, but that <a href="#id5"><span class="problematic" id="id6">|f(a,b,c)|</span></a> ≠ <a href="#id7"><span class="problematic" id="id8">|f(a,c,b)|</span></a>.  Then</p>
-          <p>f(a,c,b) : f(b,a,c) : f(c,b,a) and f(a,b,c) : f(b,c,a) : f(c,a,b)</p>
-          <p>are bicentric points, together comprising a bicentric pair.  Example: the Brocard points, c/b : a/c : b/a and b/c : c/a : a/b.</p>
-          </dd>
-          <dt id="term-center">center<a class="headerlink" href="#term-center" title="Link to this term">¶</a></dt><dd><p>See triangle center.</p>
-          </dd>
-          <dt id="term-central-triangle">central triangle<a class="headerlink" href="#term-central-triangle" title="Link to this term">¶</a></dt><dd><p>Let each of f(a,b,c) and g(a,b,c) be a center function (i.e., as in the definition of triangle center) or the zero function, such that one of these conditions holds:</p>
-          <ol class="arabic simple">
-          <li><p>the degree of homogeneity of g equals that of f;</p></li>
-          <li><p>f is the zero function and g is not the zero function;</p></li>
-          <li><p>g is the zero function and f is not the zero function.</p></li>
-          </ol>
-          <p>A’ = f(a,b,c) : g(b,c,a) : g(c,a,b)
-          B’ = g(a,b,c) : f(b,c,a) : g(c,a,b)
-          C’ = g(a,b,c) : g(b,c,a) : f(c,a,b).</p>
-          <p>Then A’B’C’ is the (f,g)-central triangle of type 1.  A central triangle of type 1 is any triangle A’B’C’ for which equations (1)-(3) hold for some choice of center functions f and g.</p>
-          <p>Next, suppose f and g are as for type 1 except that g(a,b,c) ≠ g(a,c,b).  Let</p>
-          <p>A’ = f(a,b,c) : g(b,c,a) : g(c,b,a)
-          B’ = g(a,c,b) : f(b,c,a) : g(c,a,b)
-          C’ = g(a,b,c) : g(b,a,c) : f(c,a,b).</p>
-          <p>Then A’B’C’ is the (f,g)-central triangle of type 2.  A central triangle of type 2 is any triangle A’B’C’ for some choice of center function f and function g as described.  Note that the coordinates in the definitions can be read as barycentrics without changing the classes of triangles called central, central of type 1, and central of type 2.</p>
+          <blockquote>
+          <div><p>h(a,b,c,p,q,r,u,v,w) = 2abcp(cos B + cos C)(ua’/p + vb’/q + wc’/r) - (a+b+c)a’b’c’u,</p>
+          </div></blockquote>
+          <p>where a’, b’, c’ are - a + b + c, a - b + c, a + b - c, respectively. Let f by the mapping given by</p>
+          <blockquote>
+          <div><p>f(x : y : z) = p(y + z) : q(z + x) : r(x + y),</p>
+          </div></blockquote>
+          <div class="line-block">
+          <div class="line">and let k be the mapping “reflection in the circumcenter.” The P-beth conjugate of U is “what you do to f(X) to make</div>
+          <div class="line">f(k(X)) when f(X) = U.” (Hyacinthos #4146, Oct. 26, 2001.)</div>
+          </div>
+          </section>
+          <section class="level-2" id="term-bicentric-points">
+          <span id="bicentric-points"></span><span id="id12"></span><h2>bicentric points<a class="headerlink" href="#term-bicentric-points" title="Link to this heading">¶</a></h2>
+          <p>Let f(a,b,c) : f(b,c,a) : f(c,a,b) be a point that satisfies (1) in the definition of triangle center, but that |f(a,b,c)| ≠ |f(a,c,b)|. Then</p>
+          <blockquote>
+          <div><p>f(a,c,b) : f(b,a,c) : f(c,b,a) and f(a,b,c) : f(b,c,a) : f(c,a,b)</p>
+          </div></blockquote>
+          <p>are bicentric points, together comprising a <em>bicentric pair</em>. Example: the Brocard points, c/b : a/c : b/a and b/c : c/a : a/b.</p>
+          </section>
+          <section class="level-2" id="term-center">
+          <span id="center"></span><span id="id13"></span><h2>center<a class="headerlink" href="#term-center" title="Link to this heading">¶</a></h2>
+          <p>See <a class="term-ref glossary-term" id="occ-term-triangle-center-1" href="#term-triangle-center" data-term="triangle-center" title="triangle center: A triangle center is a point of the form f(a,b,c) : f(b,c,a) : f(c,a,b), where f is a nonzero function satisfying two conditions: A formal definition of triangle center is given in TCCT. See also polynomial center , transcendental center , central triangle , bicentric points .">triangle center</a>.</p>
+          </section>
+          <section class="level-2" id="term-central-triangle">
+          <span id="central-triangle"></span><span id="id14"></span><h2>central triangle<a class="headerlink" href="#term-central-triangle" title="Link to this heading">¶</a></h2>
+          <p>Let each of f(a,b,c) and g(a,b,c) be a center function (i.e., as in the definition of triangle center) or the zero function, such that one of these conditions holds:</p>
+          <blockquote>
+          <div><div class="line-block">
+          <div class="line">(1) the degree of homogeneity of g equals that of f;</div>
+          <div class="line">(2) f is the zero function and g is not the zero function;</div>
+          <div class="line">(3) g is the zero function and f is not the zero function.</div>
+          </div>
+          </div></blockquote>
+          <p>Let</p>
+          <blockquote>
+          <div><div class="line-block">
+          <div class="line">A’ = f(a,b,c) : g(b,c,a) : g(c,a,b)</div>
+          <div class="line">B’ = g(a,b,c) : f(b,c,a) : g(c,a,b)</div>
+          <div class="line">C’ = g(a,b,c) : g(b,c,a) : f(c,a,b).</div>
+          </div>
+          </div></blockquote>
+          <p>Then A’B’C’ is the <em>(f,g)-central triangle of type 1</em>. A <em>central triangle of type 1</em> is any triangle A’B’C’ for which equations (1)-(3) hold for some choice of center functions f and g.</p>
+          <p>Next, suppose f and g are as for type 1 except that g(a,b,c) ≠ g(a,c,b). Let</p>
+          <blockquote>
+          <div><div class="line-block">
+          <div class="line">A’ = f(a,b,c) : g(b,c,a) : g(c,b,a)</div>
+          <div class="line">B’ = g(a,c,b) : f(b,c,a) : g(c,a,b)</div>
+          <div class="line">C’ = g(a,b,c) : g(b,a,c) : f(c,a,b).</div>
+          </div>
+          </div></blockquote>
+          <p>Then A’B’C’ is the <em>(f,g)-central triangle of type 2</em>. A <em>central triangle of type 2</em> is any triangle A’B’C’ for some choice of center function f and function g as described. Note that the coordinates in the definitions can be read as barycentrics without changing the classes of triangles called central, central of type 1, and central of type 2.</p>
           <p>A form for compact notation for a central triangle is T(f(a,b,c), g(b,c,a)), where the triangle is of type 1 if g(b,c,a ) = g(b,a,c) and of type 2 otherwise; see the preamble to X(3758) in ETC.</p>
-          <p>Examples:  ABC, the medial, orthic, excentral, anticomplementary, and tangential triangles are central of type 1; in fact, if X is a center, then the cevian and anticevian triangles of X are central of type 1.  The pedal triangle of X is of type 2 if the triangle is not also a cevian triangle.</p>
-          </dd>
-          <dt id="term-cevapoint">cevapoint<a class="headerlink" href="#term-cevapoint" title="Link to this term">¶</a></dt><dd><p>Let P = p : q : r and U = u : v : w be distinct points, neither lying on a sideline of ABC.  The cevapoint of P and U is the point</p>
-          <p>(pv + qu)(pw + ru) : (qw + rv)(qu + pv) : (ru + pw)(rv + qw).</p>
-          <p>Let A”B”C” be the anticevian triangle of U.  Let A’ =PA”∩BC, and define B’ and C’ cyclically.  The cevapoint of P and U is the perspector, X, of triangles ABC and A’B’C’.  Moreover, P is the X-Ceva conjugate of U, and U is the X-Ceva conjugate of P.
-          (See cevian nest and
-          Ceva conjugate.)
-          As a comparison of cevapoint(P,U) and crosspoint(P,U), note that their trilinears can be written as</p>
-          <p>1/(qw + rv) : 1/(ru + pw) : 1/(pv + qu)    and      1/qw + 1/rv : 1/ru + 1/pw : 1/pv + 1/qu.</p>
-          <p>If you have The Geometer’s Sketchpad, you can view CEVAPOINT.</p>
-          <p>Floor Van Lamoen contributed the following two constructions of cevapoint(P,U).  Let ApBpCp be the cevian triangle of P, and let  AuBuCu be the cevian triangle of U.  Define</p>
-          <p>Apu = CpAu∩ApBu
-          … … … … . .
-          Aup = CuAp∩AuBp</p>
-          <p>Bpu = ApBu∩BpCu
-          … … … … . .
-          Bup = AuBp∩BuCp</p>
-          <p>Cpu = BpCu∩CpAu
-          … … … … . .
-          Cup = BuCp∩CuAp</p>
-          <p>Then triangle ABC is perspective to both triangles ApuBpuCpu and AupBupCup, and the perspector in both cases is the cevapoint of P and U.  (Received 10/17/2003)</p>
-          <p>Randy Hutson noted that cevapoint(P,U) is given by the following constructions:
-          * The intersection of tangents at P and U to the bianticevian conic of P and U;
-          * The crosspoint of P and U wrt both the anticevian triangle of P and anticevian triangle of U;
-          * The pole of line PU wrt the bianticevian conic of P and U.  (Received 7/14/2019)</p>
-          </dd>
-          <dt id="term-cevian">cevian<a class="headerlink" href="#term-cevian" title="Link to this term">¶</a></dt><dd><p>Let P be a point not on a sideline of ABC.  The lines AP, BP, CP are the cevians of P.</p>
-          </dd>
-          <dt id="term-cevian-nest">cevian nest<a class="headerlink" href="#term-cevian-nest" title="Link to this term">¶</a></dt><dd><p>Let D,E,F be triangles, where F is inscribed in E, and E is inscribed in D.  If any two of the three triangles are perspective, then the ordered triple (D,E,F) is a cevian nest.  (It is well known that if any two of the three triangles are perspective, then each is perspective to the third; in particular, E is a cevian triangle of D, and F is a cevian triangle of E.)</p>
-          <p>Cevian nests in which one of the triangles is ABC beget three families of conjugates: Ceva conjugates, cross conjugates, and isoconjugates.  See also crosspoint.</p>
-          <p>If you have The Geometer’s Sketchpad, you can view CEVIAN NEST.</p>
-          </dd>
-          <dt id="term-cevian-triangle">cevian triangle<a class="headerlink" href="#term-cevian-triangle" title="Link to this term">¶</a></dt><dd><p>Let P be a point not on a sideline of ABC.  Let A’ = AP∩BC meet.  Define B’ and C’ cyclically.  Triangle A’B’C’ is the cevian triangle of triangle ABC.</p>
-          <p>If P = p : q : r, then A’ = 0 : q : r,  B’ = p : 0 : r,  C’ = p : q : 0.</p>
+          <p>Examples: ABC, the medial, orthic, excentral, anticomplementary, and tangential triangles are central of type 1; in fact, if X is a center, then the cevian and anticevian triangles of X are central of type 1. The pedal triangle of X is of type 2 if the triangle is not also a cevian triangle.</p>
+          </section>
+          <section class="level-2" id="term-ceva-conjugate">
+          <span id="ceva-conjugate"></span><span id="id15"></span><h2>Ceva conjugate<a class="headerlink" href="#term-ceva-conjugate" title="Link to this heading">¶</a></h2>
+          <p>Let P = p : q : r and U = u : v : w be points, neither lying on a sideline of ABC. The P-Ceva conjugate of U is the point</p>
+          <blockquote>
+          <div><p>u(- qru + rpv + pqw) : v(qru - rpv + pqw) : w(qru + rpv - pqw),</p>
+          </div></blockquote>
+          <p>which is the perspector of the cevian triangle of P and the anticevian triangle of U. (See <a class="term-ref glossary-term" id="occ-term-cevian-nest-1" href="#term-cevian-nest" data-term="cevian-nest" title="cevian nest: Let D,E,F be triangles, where F is inscribed in E, and E is inscribed in D. If any two of the three triangles are perspective, then the ordered triple (D,E,F) is a cevian nest. (It is well known that if any two of the three triangles are perspective, then each is perspective to the third; in particular, E is a cevian triangle of D, and F is a cevian...">cevian nest</a> and <a class="term-ref glossary-term" id="occ-term-cross-conjugate-1" href="#term-cross-conjugate" data-term="cross-conjugate" title="cross conjugate: Let P = p : q : r and U = u : v : w be distinct points, neither lying on a sideline of ABC. The P-cross conjugate of U is the point Let A&#x27;B&#x27;C&#x27; be the cevian triangle of U. Let A&quot; be where line PA&#x27; crosses line B&#x27;C&#x27;, and define B&quot; and C&quot; cyclically - so that A&quot;B&quot;C&quot; is the cevian triangle (in triangle A&#x27;B&#x27;C&#x27;, not ABC) of P. The perspector of triangles ABC...">cross conjugate</a>.)</p>
+          <p>Ceva conjugate and cevapoint are related thus: X = P©U if and only if P = cevapoint(U,X), and in this case, U = P©X.</p>
+          <p>Let f(x : y : z) = p(y + z) : q(z + x) : r(x + y). The P-Ceva conjugate of U is “what you do to f(X) to make f(X<sup>-1</sup>) when f(X) = U.” (Hyacinthos #3966, Sept. 26, 2001.)</p>
+          </section>
+          <section class="level-2" id="term-cevapoint">
+          <span id="cevapoint"></span><span id="id16"></span><h2>cevapoint<a class="headerlink" href="#term-cevapoint" title="Link to this heading">¶</a></h2>
+          <p>Let P = p : q : r and U = u : v : w be distinct points, neither lying on a sideline of ABC. The cevapoint of P and U is the point</p>
+          <blockquote>
+          <div><p>(pv + qu)(pw + ru) : (qw + rv)(qu + pv) : (ru + pw)(rv + qw).</p>
+          </div></blockquote>
+          <p>Let A”B”C” be the anticevian triangle of U. Let A’ =PA”∩BC, and define B’ and C’ cyclically. The cevapoint of P and U is the perspector, X, of triangles ABC and A’B’C’. Moreover, P is the X-Ceva conjugate of U, and U is the X-Ceva conjugate of P. (See <a class="term-ref glossary-term" id="occ-term-cevian-nest-2" href="#term-cevian-nest" data-term="cevian-nest" title="cevian nest: Let D,E,F be triangles, where F is inscribed in E, and E is inscribed in D. If any two of the three triangles are perspective, then the ordered triple (D,E,F) is a cevian nest. (It is well known that if any two of the three triangles are perspective, then each is perspective to the third; in particular, E is a cevian triangle of D, and F is a cevian...">cevian nest</a> and <a class="term-ref glossary-term" id="occ-term-ceva-conjugate-1" href="#term-ceva-conjugate" data-term="ceva-conjugate" title="Ceva conjugate: Let P = p : q : r and U = u : v : w be points, neither lying on a sideline of ABC. The P-Ceva conjugate of U is the point which is the perspector of the cevian triangle of P and the anticevian triangle of U. (See cevian nest and cross conjugate .) Ceva conjugate and cevapoint are related thus: X = P©U if and only if P = cevapoint(U,X), and in this case,...">Ceva conjugate</a>.) As a comparison of cevapoint(P,U) and crosspoint(P,U), note that their trilinears can be written as</p>
+          <blockquote>
+          <div><p>1/(qw + rv) : 1/(ru + pw) : 1/(pv + qu) and 1/qw + 1/rv : 1/ru + 1/pw : 1/pv + 1/qu.</p>
+          </div></blockquote>
+          <p>Floor Van Lamoen contributed the following two constructions of cevapoint(P,U). Let A<sub>p</sub>B<sub>p</sub>C<sub>p</sub> be the cevian triangle of P, and let A<sub>u</sub>B<sub>u</sub>C<sub>u</sub> be the cevian triangle of U. Define</p>
+          <blockquote>
+          <div><div class="line-block">
+          <div class="line">A<sub>pu</sub> = C<sub>p</sub>A<sub>u</sub>∩A<sub>p</sub>B<sub>u</sub>   —   A<sub>up</sub> = C<sub>u</sub>A<sub>p</sub>∩A<sub>u</sub>B<sub>p</sub></div>
+          <div class="line">B<sub>pu</sub> = A<sub>p</sub>B<sub>u</sub>∩B<sub>p</sub>C<sub>u</sub>   —   B<sub>up</sub> = A<sub>u</sub>B<sub>p</sub>∩B<sub>u</sub>C<sub>p</sub></div>
+          <div class="line">C<sub>pu</sub> = B<sub>p</sub>C<sub>u</sub>∩C<sub>p</sub>A<sub>u</sub>   —   C<sub>up</sub> = B<sub>u</sub>C<sub>p</sub>∩C<sub>u</sub>A<sub>p</sub></div>
+          </div>
+          </div></blockquote>
+          <p>Then triangle ABC is perspective to both triangles A<sub>pu</sub>B<sub>pu</sub>C<sub>pu</sub> and A<sub>up</sub>B<sub>up</sub>C<sub>up</sub>, and the perspector in both cases is the cevapoint of P and U. (Received 10/17/2003)</p>
+          <div class="line-block">
+          <div class="line">Randy Hutson noted that cevapoint(P,U) is given by the following constructions:</div>
+          <div class="line">* The intersection of tangents at P and U to the bianticevian conic of P and U;</div>
+          <div class="line">* The crosspoint of P and U wrt both the anticevian triangle of P and anticevian triangle of U;</div>
+          <div class="line">* The pole of line PU wrt the bianticevian conic of P and U. (Received 7/14/2019)</div>
+          </div>
+          </section>
+          <section class="level-2" id="term-cevian">
+          <span id="cevian"></span><span id="id17"></span><h2>cevian<a class="headerlink" href="#term-cevian" title="Link to this heading">¶</a></h2>
+          <p>Let P be a point not on a sideline of ABC. The lines AP, BP, CP are the <em>cevians</em> of P.</p>
+          </section>
+          <section class="level-2" id="term-cevian-nest">
+          <span id="cevian-nest"></span><span id="id18"></span><h2>cevian nest<a class="headerlink" href="#term-cevian-nest" title="Link to this heading">¶</a></h2>
+          <p>Let D,E,F be triangles, where F is inscribed in E, and E is inscribed in D. If any two of the three triangles are perspective, then the ordered triple (D,E,F) is a cevian nest. (It is well known that if any two of the three triangles are perspective, then each is perspective to the third; in particular, E is a cevian triangle of D, and F is a cevian triangle of E.)</p>
+          <p>Cevian nests in which one of the triangles is ABC beget three families of conjugates: <em>Ceva conjugates,</em> <em>cross conjugates,</em> and <em>isoconjugates</em>. See also <a class="term-ref glossary-term" id="occ-term-crosspoint-1" href="#term-crosspoint" data-term="crosspoint" title="crosspoint: Let P = p : q : r and U = u : v : w be distinct points, neither lying on a sideline of ABC. The crosspoint of P and U is the point This point is introduced in TCCT with the notation C(P,Q). Here, &quot;Q&quot; is replaced by &quot;U&quot;, and C(P,U) is abbreviated as X. The construction for X given in TCCT follows. Let A&#x27;B&#x27;C&#x27; be the cevian triangle of P and A&quot;B&quot;C&quot; that of...">crosspoint</a>.</p>
+          </section>
+          <section class="level-2" id="term-cevian-triangle">
+          <span id="cevian-triangle"></span><span id="id19"></span><h2>cevian triangle<a class="headerlink" href="#term-cevian-triangle" title="Link to this heading">¶</a></h2>
+          <p>Let P be a point not on a sideline of ABC. Let A’ = AP∩BC meet. Define B’ and C’ cyclically. Triangle A’B’C’ is the cevian triangle of triangle ABC.</p>
+          <blockquote>
+          <div><p>If P = p : q : r, then A’ = 0 : q : r, B’ = p : 0 : r, C’ = p : q : 0.</p>
+          </div></blockquote>
           <p>Examples of cevian triangles:</p>
-          <p>incentral triangle; P = incenter = X(1) = 1 : 1 : 1
-          medial triangle; P = centroid = X(2) = 1/a : 1/b : 1/c
-          orthic triangle; P = orthocenter = X(4) = sec A : sec B : sec C
-          intouch triangle; P = Gergonne point = X(7) = sec2(A/2) : sec2(B/2) : sec2(C/2)
-          extouch triangle; P = Nagel point = X(8) = csc2(A/2) : csc2(B/2) : csc2(C/2)</p>
-          </dd>
-          <dt id="term-circumperp-conjugate">circumperp conjugate<a class="headerlink" href="#term-circumperp-conjugate" title="Link to this term">¶</a></dt><dd><p>Let P = p : q : r be a point distinct from X(3).  The circumperp conjugate of P is the point</p>
-          <p>f(p,q,r,a,b,c,SA,SB,SC) : f(q,r,p,b,c,a,SB,SC,SA) : f(r,p,q,c,a,b,SC,SA,SB),</p>
+          <blockquote>
+          <div><div class="line-block">
+          <div class="line">incentral triangle; P = incenter = <a class="reference internal" href="centers/x-00001/index.html#x-1"><span class="std std-ref">X(1)</span></a> = 1 : 1 : 1</div>
+          <div class="line">medial triangle; P = centroid = <a class="reference internal" href="centers/x-00002/index.html#x-2"><span class="std std-ref">X(2)</span></a> = 1/a : 1/b : 1/c</div>
+          <div class="line">orthic triangle; P = orthocenter = <a class="reference internal" href="centers/x-00004/index.html#x-4"><span class="std std-ref">X(4)</span></a> = sec A : sec B : sec C</div>
+          <div class="line">intouch triangle; P = Gergonne point = <a class="reference internal" href="centers/x-00007/index.html#x-7"><span class="std std-ref">X(7)</span></a> = sec<sup>2</sup>(A/2) : sec<sup>2</sup>(B/2) : sec<sup>2</sup>(C/2)</div>
+          <div class="line">extouch triangle; P = Nagel point = <a class="reference internal" href="centers/x-00008/index.html#x-8"><span class="std std-ref">X(8)</span></a> = csc<sup>2</sup>(A/2) : csc<sup>2</sup>(B/2) : csc<sup>2</sup>(C/2)</div>
+          </div>
+          </div></blockquote>
+          </section>
+          <section class="level-2" id="term-circumperp-conjugate">
+          <span id="circumperp-conjugate"></span><span id="id20"></span><h2>circumperp conjugate<a class="headerlink" href="#term-circumperp-conjugate" title="Link to this heading">¶</a></h2>
+          <p>Let P = p : q : r be a point distinct from <a class="reference internal" href="centers/x-00003/index.html#x-3"><span class="std std-ref">X(3)</span></a>. The circumperp conjugate of P is the point</p>
+          <blockquote>
+          <div><p>f(p,q,r,a,b,c,SA,SB,SC) : f(q,r,p,b,c,a,SB,SC,SA) : f(r,p,q,c,a,b,SC,SA,SB),</p>
+          </div></blockquote>
           <p>where</p>
-          <p>f(p,q,r,a,b,c,SA,SB,SC) = (-a*(-b*c*SC*SB*p^2+2*r*q*SA^3)-SA*a*b*c*(b^2*q^2+c^2*r^2)+b*((SA+SB)*S^2-2*SA*SB^2)*r*p+c*((SC+SA)*S^2-2*SA*SC^2)*p*q)*a.</p>
-          <p>Let ABC be a triangle and P a point. The perpendicular bisectors of BC, CA, AB intersect the circumcircle at (A1, A2), (B1, B2), (C1, C2), respectively. Then the circumcircles of PA1A2, PB1B2, PC1C2 are coaxial. The other than P point of intersection of these circles is the circumperp conjugate of P, as A1, A2, B1, B2, C1, C2 are the vertices of the circumperp triangles.
-          (See preamble just before X(18859))</p>
-          </dd>
-          <dt id="term-cocevian-triangle">cocevian triangle<a class="headerlink" href="#term-cocevian-triangle" title="Link to this term">¶</a></dt><dd><p>Let P be a point not on a sideline of ABC, and let A’B’C’ be the anticevian triangle of P.  Let A” be the harmonic conjugate of A’ with respect to B and C, and define B” and C” cyclically.  (If P = p : q : r, then A” = 0 : y : - z.).  The cocevian triangle of P is the triangle A”B”C”.  The vertices are collinear and the triangle degenerate.  For a discussion, see TCCT, page 200.</p>
-          </dd>
-          <dt id="term-combo">combo<a class="headerlink" href="#term-combo" title="Link to this term">¶</a></dt><dd><p>Let P and U be finite points having normalized barycentric coordinates (p,q,r) and (u,v,w).  Suppose that f = f(a,b,c) and g = g(a,b,c) are nonzero homogeneous functions having the same degree of homogeneity.  Let x = fp + gu, y = fq + gv, z = fr + gw.  The (f,g) combo of P and U, denoted by f*P + g*U, is the point X = x : y : z; the normalized barycentric coordinates of X are (kx,ky,kz), where k=1/(x+y+z).</p>
-          <p>The definition of combo readily extends to finite sets of finite points.  In particular, the (f,g,h) combo of P = (p,q,r), U = (u,v,w), J = (j,k,m) is given by fp + gu + hj : fq + gv + hk : fr + gw + hm and denoted by f*P + g*U + h*J.  Suppose that T is a (central) triangle with vertices A’,B’,C’ given by normalize barycentrics.  Then T is represented by a 3x3 matrix with row sums equal to 1.  Let NT denote the set of these matrices and let * denote matrix multiplication.  Then NT is closed under <a href="#id1"><span class="problematic" id="id2">*</span></a>.  Also, NT is closed under matrix inversion, so that (NT, <a href="#id3"><span class="problematic" id="id4">*</span></a>) is a group.  Once normalized, any central T can be used to produce triangle centers as combos of the form Xcom(nT); see the preambles to X(3663), X(3739), and X(3758) in ETC.</p>
-          </dd>
-          <dt id="term-complement">complement<a class="headerlink" href="#term-complement" title="Link to this term">¶</a></dt><dd><p>If points P and U are collinear with the centroid G, then P is the complement of U if G trisects segment PU and is closer to P than to U.  See also anticomplement.  (According to Court, p. 297, the term complementary point dates from 1885.)</p>
-          </dd>
-          <dt id="term-complementary-conjugate">complementary conjugate<a class="headerlink" href="#term-complementary-conjugate" title="Link to this term">¶</a></dt><dd><p>Let P = p : q : r and U = u : v : w be points, neither lying on a sideline of ABC.  The P-complementary conjugate of U is the point</p>
-          <p>h(a,b,c,p,q,r,u,v,w) : h(b,c,a,q,r,p,v,w,u) : h(c,a,b,r,p,q,w,u,v),</p>
+          <blockquote>
+          <div><p>f(p,q,r,a,b,c,SA,SB,SC) = (-a*(-b*c*SC*SB*p^2+2*r*q*SA^3)-SA*a*b*c*(b^2*q^2+c^2*r^2)+b*((SA+SB)*S^2-2*SA*SB^2)*r*p+c*((SC+SA)*S^2-2*SA*SC^2)*p*q)*a.</p>
+          </div></blockquote>
+          <p>Let ABC be a triangle and P a point. The perpendicular bisectors of BC, CA, AB intersect the circumcircle at (A<sub>1</sub>, A<sub>2</sub>), (B<sub>1</sub>, B<sub>2</sub>), (C<sub>1</sub>, C<sub>2</sub>), respectively. Then the circumcircles of PA<sub>1</sub>A<sub>2</sub>, PB<sub>1</sub>B<sub>2</sub>, PC<sub>1</sub>C<sub>2</sub> are coaxial. The other than P point of intersection of these circles is the circumperp conjugate of P, as A<sub>1</sub>, A<sub>2</sub>, B<sub>1</sub>, B<sub>2</sub>, C<sub>1</sub>, C<sub>2</sub> are the vertices of the circumperp triangles. (See preamble just before X(18859))</p>
+          </section>
+          <section class="level-2" id="term-cocevian-triangle">
+          <span id="cocevian-triangle"></span><span id="id21"></span><h2>cocevian triangle<a class="headerlink" href="#term-cocevian-triangle" title="Link to this heading">¶</a></h2>
+          <p>Let P be a point not on a sideline of ABC, and let A’B’C’ be the anticevian triangle of P. Let A” be the harmonic conjugate of A’ with respect to B and C, and define B” and C” cyclically. (If P = p : q : r, then A” = 0 : y : - z.). The cocevian triangle of P is the triangle A”B”C”. The vertices are collinear and the triangle degenerate. For a discussion, see TCCT, page 200.</p>
+          </section>
+          <section class="level-2" id="term-combo">
+          <span id="combo"></span><span id="id22"></span><h2>combo<a class="headerlink" href="#term-combo" title="Link to this heading">¶</a></h2>
+          <p>Let P and U be finite points having normalized barycentric coordinates (p,q,r) and (u,v,w). Suppose that f = f(a,b,c) and g = g(a,b,c) are nonzero homogeneous functions having the same degree of homogeneity. Let x = fp + gu, y = fq + gv, z = fr + gw. The (f,g) combo of P and U, denoted by f*P + g*U, is the point X = x : y : z; the normalized barycentric coordinates of X are (kx,ky,kz), where k=1/(x+y+z).</p>
+          <p>The definition of combo readily extends to finite sets of finite points. In particular, the (f,g,h) combo of P = (p,q,r), U = (u,v,w), J = (j,k,m) is given by fp + gu + hj : fq + gv + hk : fr + gw + hm and denoted by f*P + g*U + h*J. Suppose that T is a (central) triangle with vertices A’,B’,C’ given by normalize barycentrics. Then T is represented by a 3x3 matrix with row sums equal to 1. Let NT denote the set of these matrices and let * denote matrix multiplication. Then NT is closed under *. Also, NT is closed under matrix inversion, so that (NT, *) is a group. Once normalized, any central T can be used to produce triangle centers as combos of the form Xcom(nT); see the preambles to X(3663), X(3739), and X(3758) in ETC.</p>
+          </section>
+          <section class="level-2" id="term-complement">
+          <span id="complement"></span><span id="id23"></span><h2>complement<a class="headerlink" href="#term-complement" title="Link to this heading">¶</a></h2>
+          <p>If points P and U are collinear with the centroid G, then P is the complement of U if G trisects segment PU and is closer to P than to U. See also <a class="term-ref glossary-term" id="occ-term-anticomplement-1" href="#term-anticomplement" data-term="anticomplement" title="anticomplement: If points P and Q are collinear with the centroid G, then P is the anticomplement of Q if G trisects segment PQ and is closer to Q than to P. See also complement . (According to Court, p. 297, the term anticomplementary point dates from 1886.)">anticomplement</a>. (According to Court, p. 297, the term <em>complementary point</em> dates from 1885.)</p>
+          </section>
+          <section class="level-2" id="term-complementary-conjugate">
+          <span id="complementary-conjugate"></span><span id="id24"></span><h2>complementary conjugate<a class="headerlink" href="#term-complementary-conjugate" title="Link to this heading">¶</a></h2>
+          <p>Let P = p : q : r and U = u : v : w be points, neither lying on a sideline of ABC. The P-complementary conjugate of U is the point</p>
+          <blockquote>
+          <div><p>h(a,b,c,p,q,r,u,v,w) : h(b,c,a,q,r,p,v,w,u) : h(c,a,b,r,p,q,w,u,v),</p>
+          </div></blockquote>
           <p>where</p>
-          <p>h(a,b,c,p,q,r,u,v,w) = [b2/q(au - bv + cw) + c2/r(au + bv - cw)]/a.</p>
+          <blockquote>
+          <div><p>h(a,b,c,p,q,r,u,v,w) = [b<sup>2</sup>/q(au - bv + cw) + c<sup>2</sup>/r(au + bv - cw)]/a.</p>
+          </div></blockquote>
           <p>Let f(X) be the complement of X, given by</p>
-          <p>f(x : y : z) = (bv + cw)/a : (cw + au)/b : (au + bv)/c,</p>
-          <p>and let k be P-isoconjugation.  The P-complementary conjugate of U is “what you do to f(X) to make f(k(X)) when f(X) = U.”</p>
+          <blockquote>
+          <div><p>f(x : y : z) = (bv + cw)/a : (cw + au)/b : (au + bv)/c,</p>
+          </div></blockquote>
+          <p>and let k be P-isoconjugation. The P-complementary conjugate of U is “what you do to f(X) to make f(k(X)) when f(X) = U.”</p>
           <p>If P = incenter, then P-complementary conjugate is shortened to “complementary conjugate.”</p>
-          </dd>
-          <dt id="term-cross-conjugate">cross conjugate<a class="headerlink" href="#term-cross-conjugate" title="Link to this term">¶</a></dt><dd><p>Let P = p : q : r and U = u : v : w be distinct points, neither lying on a sideline of ABC.  The P-cross conjugate of U is the point</p>
-          <p>u/(- pvw + qwu + ruv) : v/(pvw - qwu + ruv) : w/(pvw + qwu - ruv).</p>
-          <p>Let A’B’C’ be the cevian triangle of U.  Let A” be where line PA’ crosses line B’C’, and define B” and C” cyclically - so that A”B”C” is the cevian triangle (in triangle A’B’C’, not ABC) of P.  The perspector of triangles ABC and A”B”C” is the P-cross conjugate of U.  (See cevian nest.)</p>
-          <p>As a transformation, P-cross conjugate is an involution; i.e., if PxU = P-cross conjugate of U, then Px(PxU) = U.  Properties of cross conjugates arise from those of Ceva conjugates; for, on writing PcU for the P-Ceva conjugate of U,</p>
-          <p>PxU = (U/P)*(UcP)     and      PcU = (U/P)*(UxP)</p>
+          </section>
+          <section class="level-2" id="term-cross-conjugate">
+          <span id="cross-conjugate"></span><span id="id25"></span><h2>cross conjugate<a class="headerlink" href="#term-cross-conjugate" title="Link to this heading">¶</a></h2>
+          <p>Let P = p : q : r and U = u : v : w be distinct points, neither lying on a sideline of ABC. The P-cross conjugate of U is the point</p>
+          <blockquote>
+          <div><p>u/(- pvw + qwu + ruv) : v/(pvw - qwu + ruv) : w/(pvw + qwu - ruv).</p>
+          </div></blockquote>
+          <p>Let A’B’C’ be the cevian triangle of U. Let A” be where line PA’ crosses line B’C’, and define B” and C” cyclically - so that A”B”C” is the cevian triangle (in triangle A’B’C’, not ABC) of P. The perspector of triangles ABC and A”B”C” is the P-cross conjugate of U. (See <a class="term-ref glossary-term" id="occ-term-cevian-nest-3" href="#term-cevian-nest" data-term="cevian-nest" title="cevian nest: Let D,E,F be triangles, where F is inscribed in E, and E is inscribed in D. If any two of the three triangles are perspective, then the ordered triple (D,E,F) is a cevian nest. (It is well known that if any two of the three triangles are perspective, then each is perspective to the third; in particular, E is a cevian triangle of D, and F is a cevian...">cevian nest.</a>)</p>
+          <p>As a transformation, P-cross conjugate is an involution; i.e., if PxU = P-cross conjugate of U, then Px(PxU) = U. Properties of cross conjugates arise from those of Ceva conjugates; for, on writing PcU for the P-Ceva conjugate of U,</p>
+          <blockquote>
+          <div><p>PxU = (U/P)*(UcP) and PcU = (U/P)*(UxP)</p>
           <p>where / and * denote trilinear division and multiplication.</p>
-          <p>Cross conjugate and crosspoint are related thus:  X = PxU if and only if P = crosspoint(X,U).</p>
-          <p>If you have The Geometer’s Sketchpad, you can view CROSS CONJUGATE.</p>
-          </dd>
-          <dt id="term-crossdifference">crossdifference<a class="headerlink" href="#term-crossdifference" title="Link to this term">¶</a></dt><dd><p>Let P = p : q : r and U = u : v : w be distinct points, neither lying on a sideline of ABC.  The crossdifference of P and U is the point X defined by trilinears</p>
-          <p>qw - rv : ru - pw : pv - qu,</p>
-          <p>constructible as the isogonal conjugate of the trilinear pole of the line PU.  Thus, U is the crossdifference of P and X, and P is the crossdifference of U and X.  In order to see that the crossdifference of P and X is a solution for U of the equation</p>
+          </div></blockquote>
+          <p>Cross conjugate and crosspoint are related thus: X = PxU if and only if P = crosspoint(X,U).</p>
+          </section>
+          <section class="level-2" id="term-crossdifference">
+          <span id="crossdifference"></span><span id="id26"></span><h2>crossdifference<a class="headerlink" href="#term-crossdifference" title="Link to this heading">¶</a></h2>
+          <p>Let P = p : q : r and U = u : v : w be distinct points, neither lying on a sideline of ABC. The crossdifference of P and U is the point X defined by trilinears</p>
+          <blockquote>
+          <div><p>qw - rv : ru - pw : pv - qu,</p>
+          </div></blockquote>
+          <p>constructible as the isogonal conjugate of the trilinear pole of the line PU. Thus, U is the crossdifference of P and X, and P is the crossdifference of U and X. In order to see that the crossdifference of P and X is a solution for U of the equation</p>
           <p>x : y : z = qw - rv : ru - pw : pv - qu,</p>
-          <p>note first that this equation implies px + qy + rz = 0.  Thus, if u : v : w = qz - ry : rx - pz : py - qx, then</p>
-          <p>qw - rv = q(py - qx) - r(rx - pz) = - (p2 + q2 + r2)x, so that</p>
-          <p>qw - rv : ru - pw : pv - qu = x : y : z.</p>
-          <p>A point X is the crossdifference of distinct points P and U if and only if the line PU is the trilinear polar of the isogonal conjugate of X.  Examples:</p>
-          <p>X(1) = crossdifference of X(44) and X(513)
-          X(2) = crossdifference of X(187) and X(512)
-          X(3) = crossdifference of X(230) and X(231).</p>
-          <p>Let W be the side-triangle of these two triangles:  the cevian triangle of the isogonal conjugate of P and the cevian triangle of the isogonal conjugate of U.  Then W is perspective to ABC, and the perspector is the crossdifference of P and U; see also
-          crosspoint. (Randy Hutson, April 9, 2016)</p>
-          </dd>
-          <dt id="term-crosspoint">crosspoint<a class="headerlink" href="#term-crosspoint" title="Link to this term">¶</a></dt><dd><p>Let P = p : q : r and U = u : v : w be distinct points, neither lying on a sideline of ABC.  The crosspoint of P and U is the point</p>
-          <p>pu(rv + qw) : qv(pw + ru) : rw(qu + pv).</p>
-          <p>This point is introduced in TCCT
-          with the notation C(P,Q).  Here, “Q” is replaced by “U”, and C(P,U) is abbreviated as X.  The construction for X given in TCCT follows.  Let A’B’C’ be the cevian triangle of P and A”B”C” that of U.  Let A’’’ = AA”∩B’C’, and define B’’’ and C’’’ cyclically.  Then X is the perspector of triangles A’B’C’ and A’’’B’’’C’’’.  Moreover, U is the X-cross conjugate of P, and P is the X-cross conjugate of U.  (See
-          cevian nest and
-          cross conjugate.)
-          The following properties of X were noted by Jean-Pierre Ehrmann (5/29/03):</p>
+          <div class="line-block">
+          <div class="line">note first that this equation implies px + qy + rz = 0. Thus, if u : v : w = qz - ry : rx - pz : py - qx, then</div>
+          <div class="line">qw - rv = q(py - qx) - r(rx - pz) = - (p<sup>2</sup> + q<sup>2</sup> + r<sup>2</sup>)x, so that</div>
+          <div class="line">qw - rv : ru - pw : pv - qu = x : y : z.</div>
+          </div>
+          <p>A point X is the crossdifference of distinct points P and U if and only if the line PU is the trilinear polar of the isogonal conjugate of X. Examples:</p>
+          <div class="line-block">
+          <div class="line"><a class="reference internal" href="centers/x-00001/index.html#x-1"><span class="std std-ref">X(1)</span></a> = crossdifference of <a class="reference internal" href="centers/x-00044/index.html#x-44"><span class="std std-ref">X(44)</span></a> and X(513)</div>
+          <div class="line"><a class="reference internal" href="centers/x-00002/index.html#x-2"><span class="std std-ref">X(2)</span></a> = crossdifference of X(187) and X(512)</div>
+          <div class="line"><a class="reference internal" href="centers/x-00003/index.html#x-3"><span class="std std-ref">X(3)</span></a> = crossdifference of X(230) and X(231).</div>
+          </div>
+          <p>Let W be the side-triangle of these two triangles: the cevian triangle of the isogonal conjugate of P and the cevian triangle of the isogonal conjugate of U. Then W is perspective to ABC, and the perspector is the crossdifference of P and U; see also <a class="term-ref glossary-term" id="occ-term-crosspoint-2" href="#term-crosspoint" data-term="crosspoint" title="crosspoint: Let P = p : q : r and U = u : v : w be distinct points, neither lying on a sideline of ABC. The crosspoint of P and U is the point This point is introduced in TCCT with the notation C(P,Q). Here, &quot;Q&quot; is replaced by &quot;U&quot;, and C(P,U) is abbreviated as X. The construction for X given in TCCT follows. Let A&#x27;B&#x27;C&#x27; be the cevian triangle of P and A&quot;B&quot;C&quot; that of...">crosspoint</a>. (Randy Hutson, April 9, 2016)</p>
+          </section>
+          <section class="level-2" id="term-crosspoint">
+          <span id="crosspoint"></span><span id="id27"></span><h2>crosspoint<a class="headerlink" href="#term-crosspoint" title="Link to this heading">¶</a></h2>
+          <p>Let P = p : q : r and U = u : v : w be distinct points, neither lying on a sideline of ABC. The crosspoint of P and U is the point</p>
+          <blockquote>
+          <div><p>pu(rv + qw) : qv(pw + ru) : rw(qu + pv).</p>
+          </div></blockquote>
+          <p>This point is introduced in <a class="reference external" href="http://faculty.evansville.edu/ck6/tcenters/tcct.html">TCCT</a> with the notation C(P,Q). Here, “Q” is replaced by “U”, and C(P,U) is abbreviated as X. The construction for X given in TCCT follows. Let A’B’C’ be the cevian triangle of P and A”B”C” that of U. Let A’’’ = AA”∩B’C’, and define B’’’ and C’’’ cyclically. Then X is the perspector of triangles A’B’C’ and A’’’B’’’C’’’. Moreover, U is the X-cross conjugate of P, and P is the X-cross conjugate of U. (See <a class="term-ref glossary-term" id="occ-term-cevian-nest-4" href="#term-cevian-nest" data-term="cevian-nest" title="cevian nest: Let D,E,F be triangles, where F is inscribed in E, and E is inscribed in D. If any two of the three triangles are perspective, then the ordered triple (D,E,F) is a cevian nest. (It is well known that if any two of the three triangles are perspective, then each is perspective to the third; in particular, E is a cevian triangle of D, and F is a cevian...">cevian nest</a> and <a class="term-ref glossary-term" id="occ-term-cross-conjugate-2" href="#term-cross-conjugate" data-term="cross-conjugate" title="cross conjugate: Let P = p : q : r and U = u : v : w be distinct points, neither lying on a sideline of ABC. The P-cross conjugate of U is the point Let A&#x27;B&#x27;C&#x27; be the cevian triangle of U. Let A&quot; be where line PA&#x27; crosses line B&#x27;C&#x27;, and define B&quot; and C&quot; cyclically - so that A&quot;B&quot;C&quot; is the cevian triangle (in triangle A&#x27;B&#x27;C&#x27;, not ABC) of P. The perspector of triangles ABC...">cross conjugate</a>.) The following properties of X were noted by Jean-Pierre Ehrmann (5/29/03):</p>
           <p>X = perspector of A’B’C’ and the triangle with vertices AU∩B’C’, BU∩C’A’, CU∩A’B’;</p>
           <p>X = perspector of A”B”C” and the triangle with vertices AP∩B”C”, BP∩C”A”, CP∩A”B”;</p>
-          <p>X = the point of concurrence of these three lines:</p>
-          <p>     the line of points AP∩BU and AU∩BP</p>
-          <p>     the line of points BP∩CU and BU∩CP</p>
-          <p>     the line of points CP∩AU and CU∩AP</p>
+          <div class="line-block">
+          <div class="line">X = the point of concurrence of these three lines:</div>
+          <div class="line">the line of points AP∩BU and AU∩BP</div>
+          <div class="line">the line of points BP∩CU and BU∩CP</div>
+          <div class="line">the line of points CP∩AU and CU∩AP</div>
+          </div>
           <p>Figure 7.3 in TCCT with “Q” replaced by “U” can be used to visualize the nine lines concurring in X.</p>
-          <p>The lines tangent to the conic {A,B,C,P,U} at P and U intersect in X.  (Randy Hutson, September 10, 2012)</p>
-          <p>Let W be the side-triangle of these two triangles:  the cevian triangle of P and the cevian triangle of U.
-          Let W’ be the vertex-triangle of the anticevian triangle of P and the anticevian triangle of U.  Then W is perspective to W’, and the perspector is the crosspoint of P and U; see also
-          crossdifference.  (Randy Hutson, April 9, 2016)</p>
-          <p>If you have The Geometer’s Sketchpad, you can view CROSSPOINT.</p>
-          </dd>
-          <dt id="term-crosssum">crosssum<a class="headerlink" href="#term-crosssum" title="Link to this term">¶</a></dt><dd><p>Let P = p : q : r and U = u : v : w be distinct points, neither lying on a sideline of ABC.  The crosssum of P and U is the point X defined by trilinears</p>
-          <p>qw + rv : ru + pw : pv + qu,</p>
-          <p>constructible as the crosspoint of the isogonal conjugates of P and U.  Thus, U is the isogonal conjugate of the X-cross conjugate of the isogonal conjugate of P, and P is the isogonal conjugate of the X-cross conjugate of the isogonal conjugate of U.  (Regarding the neologism “crosssum” placed here on 5/28/03, what words in the English language have spellings containing three consecutive identical letters?)</p>
-          </dd>
-          <dt id="term-cubic">cubic<a class="headerlink" href="#term-cubic" title="Link to this term">¶</a></dt><dd><p>A cubic is a curve of degree 3 in a,b,c.  For a catalog with sketches, visit
-          Bernard Gibert’s site.</p>
-          </dd>
-          <dt id="term-cyclocevian-conjugate">cyclocevian conjugate<a class="headerlink" href="#term-cyclocevian-conjugate" title="Link to this term">¶</a></dt><dd><p>Let P = p : q : r be a point not on a sideline of ABC, and let A’B’C’ be the cevian triangle of P.  The circumcircle of A’B’C’ meets line BC in two points: A’ and A”; pairs B’, B”, and C’,C” are obtained cyclically.  The lines AA”, BB”, CC” concur in the cyclocevian conjugate of P.  Let</p>
-          <p>g(a,b,c) = a/[p(qb + rc)]  and  f(a,b,c) = bc/[g(b,c,a) + g(c,a,b) - g(a,b,c)].</p>
-          <p>The cyclocevian conjugate of P is given by</p>
-          <p>f(a,b,c) : f(b,c,a) : f(c,a,b).</p>
-          <p>In Hyacinthos #6423 (January 24, 2003), Darij Grinberg states nine theorems, of which the last is as follows:</p>
-          <p>The cyclocevian conjugate of a point is the
-            isotomic conjugate
-              of the anticomplement
-                of the isogonal conjugate
-                  of the complement
-                    of the isotomic conjugate
-                      of the point.</p>
-          <p>If you have The Geometer’s Sketchpad, you can view CYCLOCEVIAN CONJUGATE.</p>
-          </dd>
-          <dt id="term-daleth-conjugate">daleth conjugate<a class="headerlink" href="#term-daleth-conjugate" title="Link to this term">¶</a></dt><dd><p>Let P = p : q : r and U = u : v : w be points, neither lying on a sideline of ABC.  The P-daleth conjugate of U is the point</p>
-          <p>h(p,q,r,u,v,w) : h(q,r,p,v,w,u) : h(r,p,q,w,u,v),</p>
-          <p>where</p>
-          <p>h(p,q,r,u,v,w) = p(y/q - z/r)2 + x(2x/p - y/q - z/r).</p>
-          </dd>
-          <dt id="term-dual-triangle">dual triangle<a class="headerlink" href="#term-dual-triangle" title="Link to this term">¶</a></dt><dd><p>Let DEF be a triangle in the plane of triangle ABC.  Let D’ be the isogonal conjugate of the point of intersection of line EF and the line at infinity.  Define E’ and F’ cyclically.  The triangle D’E’F’ is the dual of DEF.  The vertices of D’E’F’ lie on the circumcircle, and D’E’F’ is similar to DEF.  The duality is between the sidelines EF, FD, DE and the points D’, E’, F’, respectively.  For example, if E and F remain fixed and D varies, then D’ remains fixed, while E’F’ varies.
-          (From the preamble to X(2979) in ETC.)</p>
-          </dd>
-          <dt id="term-eigencenter">eigencenter<a class="headerlink" href="#term-eigencenter" title="Link to this term">¶</a></dt><dd><p>Let T be a central triangle, and let U(T) be the unary cofactor triangle of T.  Then T and U(T) are perspective, and their perspector is the eigencenter of T.</p>
-          <p>Suppose the A-, B-, C- vertices of T are  Pi = xi : yi : zi, for i = 1,2,3.  Let</p>
-          <p>s = y3(x1x2 + z1z2) - y1(x2x3 + z2z3)</p>
-          <p>t = z1(x2x3 + y2y3) - z2(x1x3 + y1y3)</p>
-          <p>u = z3(x1x2 + y1y2) - z1(x2x3 + y2y3)</p>
-          <p>v = y1(x2x3 + z2z3) - y2(x1x3 + z1z3)</p>
-          <p>Let x = st - uv, and define y and z cyclically.  Then the eigencenter of T is the point
-          x : y : z.</p>
-          </dd>
-          <dt id="term-functional-image">functional image<a class="headerlink" href="#term-functional-image" title="Link to this term">¶</a></dt><dd><p>see homologous images</p>
-          </dd>
-          <dt id="term-gimel-conjugate">gimel conjugate<a class="headerlink" href="#term-gimel-conjugate" title="Link to this term">¶</a></dt><dd><p>Let P = p : q : r and U = u : v : w be points, neither lying on a sideline of ABC.  The P-gimel conjugate of U is the point</p>
-          <p>h(a,b,c,p,q,r,u,v,w) : h(b,c,a,q,r,p,v,w,u) : h(c,a,b,r,p,q,w,u,v),</p>
-          <p>where</p>
-          <p>h(a,b,c,p,q,r,u,v,w) = abc[- (cos A)/p + (cos B)/q + (cos C)/r]S - 8uσ2,</p>
-          <p>where S = (bq + cr)u + (cr + ap)v + (ap + bq)w and σ = area of ABC.</p>
-          </dd>
-          <dt id="term-he-conjugate">he conjugate<a class="headerlink" href="#term-he-conjugate" title="Link to this term">¶</a></dt><dd><p>Let P = p : q : r and U = u : v : w be points, neither lying on a sideline of ABC.  The P-he conjugate of U is the point</p>
-          <p>h(p,q,r,u,v,w) : h(q,r,p,v,w,u) : h(r,p,q,w,u,v),</p>
-          <p>where</p>
-          <p>h(p,q,r,u,v,w) = -p(y + z)2 + q(z + x)2 + r(x + y)2</p>
+          <p>The lines tangent to the conic {A,B,C,P,U} at P and U intersect in X. (Randy Hutson, September 10, 2012)</p>
+          <p>Let W be the side-triangle of these two triangles: the cevian triangle of P and the cevian triangle of U. Let W’ be the vertex-triangle of the anticevian triangle of P and the anticevian triangle of U. Then W is perspective to W’, and the perspector is the crosspoint of P and U; see also <a class="term-ref glossary-term" id="occ-term-crossdifference-1" href="#term-crossdifference" data-term="crossdifference" title="crossdifference: Let P = p : q : r and U = u : v : w be distinct points, neither lying on a sideline of ABC. The crossdifference of P and U is the point X defined by trilinears constructible as the isogonal conjugate of the trilinear pole of the line PU. Thus, U is the crossdifference of P and X, and P is the crossdifference of U and X. In order to see that the...">crossdifference</a>. (Randy Hutson, April 9, 2016)</p>
+          </section>
+          <section class="level-2" id="term-crosssum">
+          <span id="crosssum"></span><span id="id28"></span><h2>crosssum<a class="headerlink" href="#term-crosssum" title="Link to this heading">¶</a></h2>
+          <p>Let P = p : q : r and U = u : v : w be distinct points, neither lying on a sideline of ABC. The crosssum of P and U is the point X defined by trilinears</p>
           <blockquote>
-          <div><ul class="simple">
-          <li><p>(qr/p)(x + y)(x + z) - (rp/q)(y + z)(y + x) - (pq/r)(z + x)(z + y).</p></li>
-          </ul>
+          <div><p>qw + rv : ru + pw : pv + qu,</p>
           </div></blockquote>
-          </dd>
-          <dt id="term-homologous-images-similarity-image-trilinear-image-barycentric-image-and-functional-image">homologous images: similarity image, trilinear image, barycentric image, and functional image<a class="headerlink" href="#term-homologous-images-similarity-image-trilinear-image-barycentric-image-and-functional-image" title="Link to this term">¶</a></dt><dd><p>The term homologous means having the same relation or relative position to.  Let T1 and T2 be two triangles, and P a point in the plane of triangle T1.  The point P’ in the plane of triangle T2 is a T1-to-T2 homologous image of P if P’ has the same relation or relative position to T2 as P has to T1.  However, the words “relation or relative position” are subject to different meanings, as discussed here.</p>
-          <p>If T1 and T2 are similar triangles, then P’ is the T1-to-T2 similarity image of P.</p>
-          <p>Suppose that P has trilinears x : y : z wrt T1.  Then the T1-to-T2 trilinear image of P is the point P’ with trilinears x : y : z wrt T2.  This is a non-affine collineation, preserving collinearities, but not ratios of distances between collinear points.  Parallel lines do not remain parallel under this mapping, so that points on the line at infinity map to finite points.  Circumconics of T1 map to circumconics of T2 and inconics of T1 map to inconics of T2.</p>
-          <p>Suppose that P has barycentrics x : y : z wrt T1.  Then the T1-to-T2 barycentric image of P is the point P’ with barycentrics x : y : z wrt T2.  This is an affine collineation, preserving collinearities as well as ratios of distances between collinear points.  Parallel lines remain parallel under this mapping, so that the line at infinity maps to itself.  Conics map to conics of the same type (ellipses, including circles, map to ellipses, parabolas to parabolas, hyperbolas to hyperbolas).  Circumconics of T1 map to circumconics of T2 and inconics of T1 map to inconics of T2.</p>
-          <p>Let the sidelengths of T1 be denoted a1, b1, c1 and the sidelengths of T2 be denoted a2, b2, c2.  Suppose that P has coordinates f(a1,b1,c1) : g(b1,c1,a1) : h(c1,a1,b1) with respect to T1, where f, g, h either have the same degree of homogeneity, or else one is the zero function and the other two have the same degree of homogeneity.  (If P is a center of T1, then f = g = h.)  Then the T1-to-T2-functional image of P is the point P’ with coordinates f(a2,b2,c2) : g(b2,c2,a2) : h(c2,a2,b2) with respect to T2.  Coordinates here can be trilinears or barycentrics, as long as the same system is used for T1 and T2.  P’ serves the same ‘function’ wrt T2 (e.g., centroid, circumcenter, 1st Brocard point, A-vertex of orthic triangle, etc.) as P serves wrt T1.  For example, the orthic-to-excentral functional image of X(5) is X(40), since X(5) and X(40) are the respective circumcenters of the orthic and excentral triangles.  This is a non-affine collineation, preserving collinearities, but not ratios of distances between collinear points (except where these distance ratios define the point, such as midpoints, reflections, etc.).  Parallel lines remain parallel under this mapping, so that the line at infinity maps to itself.  Circles map to circles.  Other conics map to conics, but not necessarily of the same type (e.g., the MacBeath circumconic of T1 may be an ellipse, but maps to the MacBeath circumconic of T2, which may be a hyperbola.)  Circumconics of T1 map to circumconics of T2 and inconics of T1 map to inconics of T2.</p>
-          </dd>
-          <dt id="term-isoconjugate">isoconjugate<a class="headerlink" href="#term-isoconjugate" title="Link to this term">¶</a></dt><dd><p>Let P = p : q : r and U = u : v : w be points, neither on a sideline of ABC.  The P-isoconjugate of U is the point</p>
-          <p>qrvw : rpwu : pquv.</p>
-          <p>Examples:  the isogonal conjugate of U is the X(1)-isoconjugate of U, and the isotomic conjugate of U is the X(31)-isoconjugate of U.</p>
+          <p>constructible as the crosspoint of the isogonal conjugates of P and U. Thus, U is the isogonal conjugate of the X-cross conjugate of the isogonal conjugate of P, and P is the isogonal conjugate of the X-cross conjugate of the isogonal conjugate of U. (Regarding the neologism “crosssum” placed here on 5/28/03, what words in the English language have spellings containing three consecutive identical letters?)</p>
+          </section>
+          <section class="level-2" id="term-cubic">
+          <span id="cubic"></span><span id="id29"></span><h2>cubic<a class="headerlink" href="#term-cubic" title="Link to this heading">¶</a></h2>
+          <p>A cubic is a curve of degree 3 in a,b,c. For a catalog with sketches, visit <a class="reference external" href="http://perso.wanadoo.fr/bernard.gibert/index.html">Bernard Gibert’s site</a>.</p>
+          </section>
+          <section class="level-2" id="term-cyclocevian-conjugate">
+          <span id="cyclocevian-conjugate"></span><span id="id30"></span><h2>cyclocevian conjugate<a class="headerlink" href="#term-cyclocevian-conjugate" title="Link to this heading">¶</a></h2>
+          <p>Let P = p : q : r be a point not on a sideline of ABC, and let A’B’C’ be the cevian triangle of P. The circumcircle of A’B’C’ meets line BC in two points: A’ and A”; pairs B’, B”, and C’,C” are obtained cyclically. The lines AA”, BB”, CC” concur in the cyclocevian conjugate of P. Let</p>
+          <blockquote>
+          <div><p>g(a,b,c) = a/[p(qb + rc)] and f(a,b,c) = bc/[g(b,c,a) + g(c,a,b) - g(a,b,c)].</p>
+          </div></blockquote>
+          <p>The cyclocevian conjugate of P is given by</p>
+          <blockquote>
+          <div><p>f(a,b,c) : f(b,c,a) : f(c,a,b).</p>
+          </div></blockquote>
+          <p>In Hyacinthos #6423 (January 24, 2003), Darij Grinberg states nine theorems, of which the last is as follows:</p>
+          <div class="line-block">
+          <div class="line">The cyclocevian conjugate of a point is the</div>
+          <div class="line">isotomic conjugate</div>
+          <div class="line">of the anticomplement</div>
+          <div class="line">of the isogonal conjugate</div>
+          <div class="line">of the complement</div>
+          <div class="line">of the isotomic conjugate</div>
+          <div class="line">of the point.</div>
+          </div>
+          </section>
+          <section class="level-2" id="term-daleth-conjugate">
+          <span id="daleth-conjugate"></span><span id="id31"></span><h2>daleth conjugate<a class="headerlink" href="#term-daleth-conjugate" title="Link to this heading">¶</a></h2>
+          <p>Let P = p : q : r and U = u : v : w be points, neither lying on a sideline of ABC. The P-daleth conjugate of U is the point</p>
+          <blockquote>
+          <div><p>h(p,q,r,u,v,w) : h(q,r,p,v,w,u) : h(r,p,q,w,u,v),</p>
+          </div></blockquote>
+          <p>where</p>
+          <blockquote>
+          <div><p>h(p,q,r,u,v,w) = p(y/q - z/r)<sup>2</sup> + x(2x/p - y/q - z/r).</p>
+          </div></blockquote>
+          </section>
+          <section class="level-2" id="term-dual-triangle">
+          <span id="dual-triangle"></span><span id="id32"></span><h2>dual triangle<a class="headerlink" href="#term-dual-triangle" title="Link to this heading">¶</a></h2>
+          <p>Let DEF be a triangle in the plane of triangle ABC. Let D’ be the isogonal conjugate of the point of intersection of line EF and the line at infinity. Define E’ and F’ cyclically. The triangle D’E’F’ is the <em>dual</em> of DEF. The vertices of D’E’F’ lie on the circumcircle, and D’E’F’ is similar to DEF. The duality is between the sidelines EF, FD, DE and the points D’, E’, F’, respectively. For example, if E and F remain fixed and D varies, then D’ remains fixed, while E’F’ varies. (From the preamble to X(2979) in ETC.)</p>
+          </section>
+          <section class="level-2" id="term-eigencenter">
+          <span id="eigencenter"></span><span id="id33"></span><h2>eigencenter<a class="headerlink" href="#term-eigencenter" title="Link to this heading">¶</a></h2>
+          <p>Let T be a central triangle, and let U(T) be the unary cofactor triangle of T. Then T and U(T) are perspective, and their perspector is the eigencenter of T.</p>
+          <p>Suppose the A-, B-, C- vertices of T are P<sub>i</sub> = x<sub>i</sub> : y<sub>i</sub> : z<sub>i</sub>, for i = 1,2,3. Let</p>
+          <blockquote>
+          <div><p>s = y<sub>3</sub>(x<sub>1</sub>x<sub>2</sub> + z<sub>1</sub>z<sub>2</sub>) - y<sub>1</sub>(x<sub>2</sub>x<sub>3</sub> + z<sub>2</sub>z<sub>3</sub>)</p>
+          <p>t = z<sub>1</sub>(x<sub>2</sub>x<sub>3</sub> + y<sub>2</sub>y<sub>3</sub>) - z<sub>2</sub>(x<sub>1</sub>x<sub>3</sub> + y<sub>1</sub>y<sub>3</sub>)</p>
+          <p>u = z<sub>3</sub>(x<sub>1</sub>x<sub>2</sub> + y<sub>1</sub>y<sub>2</sub>) - z<sub>1</sub>(x<sub>2</sub>x<sub>3</sub> + y<sub>2</sub>y<sub>3</sub>)</p>
+          <p>v = y<sub>1</sub>(x<sub>2</sub>x<sub>3</sub> + z<sub>2</sub>z<sub>3</sub>) - y<sub>2</sub>(x<sub>1</sub>x<sub>3</sub> + z<sub>1</sub>z<sub>3</sub>)</p>
+          </div></blockquote>
+          <p>Let x = st - uv, and define y and z cyclically. Then the eigencenter of T is the point x : y : z.</p>
+          </section>
+          <section class="level-2" id="term-excentral-triangle">
+          <span id="excentral-triangle"></span><span id="id34"></span><h2>excentral triangle<a class="headerlink" href="#term-excentral-triangle" title="Link to this heading">¶</a></h2>
+          <p>The anticevian triangle of the incenter <a class="reference internal" href="centers/x-00001/index.html#x-1"><span class="std std-ref">X(1)</span></a> = 1 : 1 : 1, whose vertices are the three excenters of ABC. (See <a class="term-ref glossary-term" id="occ-term-anticevian-triangle-1" href="#term-anticevian-triangle" data-term="anticevian-triangle" title="anticevian triangle: Let P be a point not on a sideline of ABC. Let A&#x27; = AP∩BC. Let A&quot; be the harmonic conjugate of P with respect to A and A&#x27;. Define B&quot; and C&quot; cyclically. Triangle A&quot;B&quot;C&quot; is the anticevian triangle of triangle ABC. (The lines AP, BP, CP are the cevians of P, and A&#x27;B&#x27;C&#x27;, the cevian triangle of P.) Examples of anticevian triangles">anticevian triangle</a>.)</p>
+          </section>
+          <section class="level-2" id="term-extouch-triangle">
+          <span id="extouch-triangle"></span><span id="id35"></span><h2>extouch triangle<a class="headerlink" href="#term-extouch-triangle" title="Link to this heading">¶</a></h2>
+          <p>The cevian triangle of the Nagel point <a class="reference internal" href="centers/x-00008/index.html#x-8"><span class="std std-ref">X(8)</span></a>, whose vertices are the points of tangency of the A-, B-, C-excircles with sides BC, CA, AB. (See <a class="term-ref glossary-term" id="occ-term-cevian-triangle-1" href="#term-cevian-triangle" data-term="cevian-triangle" title="cevian triangle: Let P be a point not on a sideline of ABC. Let A&#x27; = AP∩BC meet. Define B&#x27; and C&#x27; cyclically. Triangle A&#x27;B&#x27;C&#x27; is the cevian triangle of triangle ABC. Examples of cevian triangles:">cevian triangle</a>.)</p>
+          </section>
+          <section class="level-2" id="term-functional-image">
+          <span id="functional-image"></span><span id="id36"></span><h2>functional image<a class="headerlink" href="#term-functional-image" title="Link to this heading">¶</a></h2>
+          <p>see <a class="term-ref glossary-term" id="occ-term-homologous-2" href="#term-homologous" data-term="homologous" title="homologous images: similarity image, trilinear image, barycentric image, and functional image: The term homologous means having the same relation or relative position to . Let T 1 and T 2 be two triangles, and P a point in the plane of triangle T 1 . The point P&#x27; in the plane of triangle T 2 is a T 1 -to-T 2 homologous image of P if P&#x27; has the same relation or relative position to T 2 as P has to T 1 . However, the words &quot;relation or relative...">homologous images</a></p>
+          </section>
+          <section class="level-2" id="term-gimel-conjugate">
+          <span id="gimel-conjugate"></span><span id="id37"></span><h2>gimel conjugate<a class="headerlink" href="#term-gimel-conjugate" title="Link to this heading">¶</a></h2>
+          <p>Let P = p : q : r and U = u : v : w be points, neither lying on a sideline of ABC. The P-gimel conjugate of U is the point</p>
+          <blockquote>
+          <div><p>h(a,b,c,p,q,r,u,v,w) : h(b,c,a,q,r,p,v,w,u) : h(c,a,b,r,p,q,w,u,v),</p>
+          </div></blockquote>
+          <p>where</p>
+          <blockquote>
+          <div><p>h(a,b,c,p,q,r,u,v,w) = abc[- (cos A)/p + (cos B)/q + (cos C)/r]S - 8uσ<sup>2</sup>,</p>
+          </div></blockquote>
+          <p>where S = (bq + cr)u + (cr + ap)v + (ap + bq)w and σ = area of ABC.</p>
+          </section>
+          <section class="level-2" id="term-he-conjugate">
+          <span id="he-conjugate"></span><span id="id38"></span><h2>he conjugate<a class="headerlink" href="#term-he-conjugate" title="Link to this heading">¶</a></h2>
+          <p>Let P = p : q : r and U = u : v : w be points, neither lying on a sideline of ABC. The P-he conjugate of U is the point</p>
+          <blockquote>
+          <div><p>h(p,q,r,u,v,w) : h(q,r,p,v,w,u) : h(r,p,q,w,u,v),</p>
+          </div></blockquote>
+          <p>where</p>
+          <blockquote>
+          <div><p>h(p,q,r,u,v,w) = -p(y + z)<sup>2</sup> + q(z + x)<sup>2</sup> + r(x + y)<sup>2</sup>
+          + (qr/p)(x + y)(x + z) - (rp/q)(y + z)(y + x) - (pq/r)(z + x)(z + y).</p>
+          </div></blockquote>
+          </section>
+          <section class="level-2" id="term-hirst-inverse">
+          <span id="hirst-inverse"></span><span id="id39"></span><h2>Hirst inverse<a class="headerlink" href="#term-hirst-inverse" title="Link to this heading">¶</a></h2>
+          <p>Let P = p : q : r and U = u : v : w be distinct points, neither lying on a sideline of ABC. The P-Hirst inverse of U is the point</p>
+          <blockquote>
+          <div><p>qru<sup>2</sup> - vwp<sup>2</sup> : rpv<sup>2</sup> - wuq<sup>2</sup> : pqw<sup>2</sup> - uvr<sup>2</sup>.</p>
+          </div></blockquote>
+          <p>Geometrically, this is the point of intersection of the line PU and the polar of U with respect to the conic.</p>
+          <blockquote>
+          <div><p>pyz + qzx + rxy = 0.</p>
+          </div></blockquote>
+          <p>As a transformation, P-Hirst inverse is an involution; i.e., if PhU = P-Hirst inverse of U, then Ph(PhU) = U. Concerning the designation “Hirst inverse,” see the <a class="reference external" href="http://mathforum.org/kb/message.jspa?messageID=1178474&amp;tstart=0">information</a> contributed by Gunter Weiss.</p>
+          </section>
+          <section class="level-2" id="homologous-images-similarity-image-trilinear-image-barycentric-image-and-functional-image">
+          <span id="term-homologous"></span><span id="homologous"></span><h2>homologous images: similarity image, trilinear image, barycentric image, and functional image<a class="headerlink" href="#homologous-images-similarity-image-trilinear-image-barycentric-image-and-functional-image" title="Link to this heading">¶</a></h2>
+          <p>The term <em>homologous</em> means <em>having the same relation or relative position to</em>. Let T<sub>1</sub> and T<sub>2</sub> be two triangles, and P a point in the plane of triangle T<sub>1</sub>. The point P’ in the plane of triangle T<sub>2</sub> is a T<sub>1</sub>-to-T<sub>2</sub> homologous image of P if P’ has the same relation or relative position to T<sub>2</sub> as P has to T<sub>1</sub>. However, the words “relation or relative position” are subject to different meanings, as discussed here.</p>
+          <p>If T<sub>1</sub> and T<sub>2</sub> are similar triangles, then P’ is the T<sub>1</sub>-to-T<sub>2</sub> similarity image of P.</p>
+          <p>Suppose that P has trilinears x : y : z wrt T<sub>1</sub>. Then the T<sub>1</sub>-to-T<sub>2</sub> trilinear image of P is the point P’ with trilinears x : y : z wrt T<sub>2</sub>. This is a non-affine collineation, preserving collinearities, but not ratios of distances between collinear points. Parallel lines do not remain parallel under this mapping, so that points on the line at infinity map to finite points. Circumconics of T<sub>1</sub> map to circumconics of T<sub>2</sub> and inconics of T<sub>1</sub> map to inconics of T<sub>2</sub>.</p>
+          <p>Suppose that P has barycentrics x : y : z wrt T<sub>1</sub>. Then the T<sub>1</sub>-to-T<sub>2</sub> barycentric image of P is the point P’ with barycentrics x : y : z wrt T<sub>2</sub>. This is an affine collineation, preserving collinearities as well as ratios of distances between collinear points. Parallel lines remain parallel under this mapping, so that the line at infinity maps to itself. Conics map to conics of the same type (ellipses, including circles, map to ellipses, parabolas to parabolas, hyperbolas to hyperbolas). Circumconics of T<sub>1</sub> map to circumconics of T<sub>2</sub> and inconics of T<sub>1</sub> map to inconics of T<sub>2</sub>.</p>
+          <p>Let the sidelengths of T<sub>1</sub> be denoted a<sub>1</sub>, b<sub>1</sub>, c<sub>1</sub> and the sidelengths of T<sub>2</sub> be denoted a<sub>2</sub>, b<sub>2</sub>, c<sub>2</sub>. Suppose that P has coordinates f(a<sub>1</sub>,b<sub>1</sub>,c<sub>1</sub>) : g(b<sub>1</sub>,c<sub>1</sub>,a<sub>1</sub>) : h(c<sub>1</sub>,a<sub>1</sub>,b<sub>1</sub>) with respect to T<sub>1</sub>, where f, g, h either have the same degree of homogeneity, or else one is the zero function and the other two have the same degree of homogeneity. (If P is a center of T<sub>1</sub>, then f = g = h.) Then the T<sub>1</sub>-to-T<sub>2</sub>-functional image of P is the point P’ with coordinates f(a<sub>2</sub>,b<sub>2</sub>,c<sub>2</sub>) : g(b<sub>2</sub>,c<sub>2</sub>,a<sub>2</sub>) : h(c<sub>2</sub>,a<sub>2</sub>,b<sub>2</sub>) with respect to T<sub>2</sub>. Coordinates here can be trilinears or barycentrics, as long as the same system is used for T<sub>1</sub> and T<sub>2</sub>. P’ serves the same ‘function’ wrt T<sub>2</sub> (e.g., centroid, circumcenter, 1st Brocard point, A-vertex of orthic triangle, etc.) as P serves wrt T<sub>1</sub>. For example, the orthic-to-excentral functional image of <a class="reference internal" href="centers/x-00005/index.html#x-5"><span class="std std-ref">X(5)</span></a> is <a class="reference internal" href="centers/x-00040/index.html#x-40"><span class="std std-ref">X(40)</span></a>, since <a class="reference internal" href="centers/x-00005/index.html#x-5"><span class="std std-ref">X(5)</span></a> and <a class="reference internal" href="centers/x-00040/index.html#x-40"><span class="std std-ref">X(40)</span></a> are the respective circumcenters of the orthic and excentral triangles. This is a non-affine collineation, preserving collinearities, but not ratios of distances between collinear points (except where these distance ratios define the point, such as midpoints, reflections, etc.). Parallel lines remain parallel under this mapping, so that the line at infinity maps to itself. Circles map to circles. Other conics map to conics, but not necessarily of the same type (e.g., the MacBeath circumconic of T<sub>1</sub> may be an ellipse, but maps to the MacBeath circumconic of T<sub>2</sub>, which may be a hyperbola.) Circumconics of T<sub>1</sub> map to circumconics of T<sub>2</sub> and inconics of T<sub>1</sub> map to inconics of T<sub>2</sub>.</p>
+          </section>
+          <section class="level-2" id="term-incentral-triangle">
+          <span id="incentral-triangle"></span><span id="id40"></span><h2>incentral triangle<a class="headerlink" href="#term-incentral-triangle" title="Link to this heading">¶</a></h2>
+          <p>The cevian triangle of the incenter <a class="reference internal" href="centers/x-00001/index.html#x-1"><span class="std std-ref">X(1)</span></a> = 1 : 1 : 1, whose vertices are the points where the interior angle bisectors of ABC meet the opposite sidelines. (See <a class="term-ref glossary-term" id="occ-term-cevian-triangle-2" href="#term-cevian-triangle" data-term="cevian-triangle" title="cevian triangle: Let P be a point not on a sideline of ABC. Let A&#x27; = AP∩BC meet. Define B&#x27; and C&#x27; cyclically. Triangle A&#x27;B&#x27;C&#x27; is the cevian triangle of triangle ABC. Examples of cevian triangles:">cevian triangle</a>.)</p>
+          </section>
+          <section class="level-2" id="term-intouch-triangle">
+          <span id="intouch-triangle"></span><span id="id41"></span><h2>intouch triangle<a class="headerlink" href="#term-intouch-triangle" title="Link to this heading">¶</a></h2>
+          <p>The cevian triangle of the Gergonne point <a class="reference internal" href="centers/x-00007/index.html#x-7"><span class="std std-ref">X(7)</span></a> (also the pedal triangle of the incenter <a class="reference internal" href="centers/x-00001/index.html#x-1"><span class="std std-ref">X(1)</span></a>), whose vertices are the points of tangency of the incircle with the sides of ABC. (See <a class="term-ref glossary-term" id="occ-term-cevian-triangle-3" href="#term-cevian-triangle" data-term="cevian-triangle" title="cevian triangle: Let P be a point not on a sideline of ABC. Let A&#x27; = AP∩BC meet. Define B&#x27; and C&#x27; cyclically. Triangle A&#x27;B&#x27;C&#x27; is the cevian triangle of triangle ABC. Examples of cevian triangles:">cevian triangle</a>.)</p>
+          </section>
+          <section class="level-2" id="term-isoconjugate">
+          <span id="isoconjugate"></span><span id="id42"></span><h2>isoconjugate<a class="headerlink" href="#term-isoconjugate" title="Link to this heading">¶</a></h2>
+          <p>Let P = p : q : r and U = u : v : w be points, neither on a sideline of ABC. The P-isoconjugate of U is the point</p>
+          <blockquote>
+          <div><p>qrvw : rpwu : pquv.</p>
+          </div></blockquote>
+          <p>Examples: the <em>isogonal conjugate</em> of U is the <a class="reference internal" href="centers/x-00001/index.html#x-1"><span class="std std-ref">X(1)</span></a>-isoconjugate of U, and the <em>isotomic conjugate</em> of U is the <a class="reference internal" href="centers/x-00031/index.html#x-31"><span class="std std-ref">X(31)</span></a>-isoconjugate of U.</p>
           <p>As suggested by the meaning of the prefix “iso”,</p>
           <p>P-isoconjugate of U = U-isoconjugate of P.</p>
-          <p>Let A’B’C’ be the anticevian triangle of U, and let A”B”C” be the anticevian triangle of P with respect to A’B’C’.  The perspector of A’B’C’ and A”B”C” is the U -2-isoconjugate of P, where U -2 = u -2 : v -2: w -2.  (See cevian nest.)</p>
-          <p>The earliest appearance of the term “isoconjugate” in triangle geometry may be its inclusion in this Glossary as early as 1998.  Isoconjugates are also discussed in C. Kimberling, “Conjugacies in the plane of a triangle,” Aequationes Mathematicae 63 (2002) 158-167, submitted April 27, 1999, and “Conics associated with a cevian nest,” Forum Geometricorum 1 (2001) 141-150.</p>
-          <p>Thereafter the term “isoconjugate” was sometimes used for reciprocal conjugate, a term defined in this Glossary, with a reference to probable earliest usage.</p>
-          </dd>
-          <dt id="term-isogonal-conjugate">isogonal conjugate<a class="headerlink" href="#term-isogonal-conjugate" title="Link to this term">¶</a></dt><dd><p>Let P = p : q : r be a point not on a sideline of ABC.  Let L(A) be the line obtained by reflecting line AP in the internal bisector of angle A.  Define L(B) and L(B) cyclically.  The lines L(A), L(B), L(C) concur in the isogonal conjugate of P, which has trilinears 1/p : 1/q : 1/r and is denoted by P -1.  See isoconjugate.</p>
-          <p>If you have The Geometer’s Sketchpad, you can view
-          ISOGONAL CONJUGATE and  ISOGONAL CONJUGATE OF A LINE.</p>
-          </dd>
-          <dt id="term-isoscelizer">isoscelizer<a class="headerlink" href="#term-isoscelizer" title="Link to this term">¶</a></dt><dd><p>An isoscelizer is a line perpendicular to an angle bisector.  If P is a point, then the A-isoscelizer of P is the line L(P,A) through P perpendicular to the line that bisects vertex angle A; the B- and C- isoscelizers are defined cyclically.  Let D and E be the points where L(P,A) meets sidelines AB and AC.  Unless D = E = A, the triangle ADE is isosceles.</p>
-          <p>In ETC, there are several triangle centers defined in terms of isoscelizers.  These were discovered or invented by Peter Yff, in whose notebooks the word isoscelizer dates back to 1963.</p>
-          </dd>
-          <dt id="term-isotomic-conjugate">isotomic conjugate<a class="headerlink" href="#term-isotomic-conjugate" title="Link to this term">¶</a></dt><dd><p>Let P = p : q : r be a point not on a sideline of ABC.  Let A’, B’, C’ be the points where lines AP, BP, CP meet lines BC, CA, AB, respectively.  Reflect A’, B’, C’ about the midpoints of sides BC, CA, AB, respectively, to obtain points A”, B”, C”.  Then lines AA”, BB”, CC” concur in the isotomic conjugate of P, which has trilinears 1/(pa2) : 1/(qb2) : 1/(rc2).  See isoconjugate.</p>
-          </dd>
-          <dt id="term-line">line<a class="headerlink" href="#term-line" title="Link to this term">¶</a></dt><dd><p>A line is the set of points x : y : z satisfying the equation</p>
-          <p>f(a,b,c)x + g(a,b,c)y + h(a,b,c)z = 0</p>
-          <p>for some point f(a,b,c) : g(a,b,c) : h(a,b,c).  If this point is a triangle center, then the corresponding line is a central line.</p>
-          <p>Three lines  dx + ey + fz = 0,  rx + sy + tz = 0,  ux + vy + wz = 0  are concurrent if and only the following determinant equation holds:</p>
-          <p>See also point.
-          Chapter 5 of TCCT discusses central lines.</p>
-          </dd>
-          <dt id="term-line-conjugate">line conjugate<a class="headerlink" href="#term-line-conjugate" title="Link to this term">¶</a></dt><dd><p>Let P = p : q : r and U = u : v : w be distinct points, neither equal to A, B, or C.  The P-line conjugate of U is the point</p>
-          <p>p(v2 + w2) - u(qv + rw) : q(w2 + u2) - v(rw + pu) : r(u2 + v2) - w(pu + qv),</p>
+          <p>Let A’B’C’ be the anticevian triangle of U, and let A”B”C” be the anticevian triangle of P <em>with respect to A’B’C’</em>. The perspector of A’B’C’ and A”B”C” is the U<sup>-2</sup>-isoconjugate of P, where U<sup>-2</sup> = u<sup>-2</sup> : v<sup>-2</sup>: w<sup>-2</sup>. (See <a class="term-ref glossary-term" id="occ-term-cevian-nest-5" href="#term-cevian-nest" data-term="cevian-nest" title="cevian nest: Let D,E,F be triangles, where F is inscribed in E, and E is inscribed in D. If any two of the three triangles are perspective, then the ordered triple (D,E,F) is a cevian nest. (It is well known that if any two of the three triangles are perspective, then each is perspective to the third; in particular, E is a cevian triangle of D, and F is a cevian...">cevian nest</a>.)</p>
+          <p>The earliest appearance of the term “isoconjugate” in triangle geometry may be its inclusion in this Glossary as early as 1998. Isoconjugates are also discussed in C. Kimberling, “Conjugacies in the plane of a triangle,” <em>Aequationes Mathematicae</em> 63 (2002) 158-167, submitted April 27, 1999, and “Conics associated with a cevian nest,” <em>Forum Geometricorum</em> 1 (2001) 141-150.</p>
+          <p>Thereafter the term “isoconjugate” was sometimes used for <em>reciprocal conjugate</em>, a term defined in this Glossary, with a reference to probable earliest usage.</p>
+          </section>
+          <section class="level-2" id="term-isogonal-conjugate">
+          <span id="isogonal-conjugate"></span><span id="id43"></span><h2>isogonal conjugate<a class="headerlink" href="#term-isogonal-conjugate" title="Link to this heading">¶</a></h2>
+          <p>Let P = p : q : r be a point not on a sideline of ABC. Let L(A) be the line obtained by reflecting line AP in the internal bisector of angle A. Define L(B) and L(B) cyclically. The lines L(A), L(B), L(C) concur in the isogonal conjugate of P, which has trilinears 1/p : 1/q : 1/r and is denoted by P<sup>-1</sup>. See <a class="term-ref glossary-term" id="occ-term-isoconjugate-1" href="#term-isoconjugate" data-term="isoconjugate" title="isoconjugate: Let P = p : q : r and U = u : v : w be points, neither on a sideline of ABC. The P-isoconjugate of U is the point Examples: the isogonal conjugate of U is the X(1)-isoconjugate of U, and the isotomic conjugate of U is the X(31)-isoconjugate of U. As suggested by the meaning of the prefix &quot;iso&quot;, P-isoconjugate of U = U-isoconjugate of P. Let A&#x27;B&#x27;C&#x27; be the...">isoconjugate</a>.</p>
+          </section>
+          <section class="level-2" id="term-isoscelizer">
+          <span id="isoscelizer"></span><span id="id44"></span><h2>isoscelizer<a class="headerlink" href="#term-isoscelizer" title="Link to this heading">¶</a></h2>
+          <p>An isoscelizer is a line perpendicular to an angle bisector. If P is a point, then the A-isoscelizer of P is the line L(P,A) through P perpendicular to the line that bisects vertex angle A; the B- and C- isoscelizers are defined cyclically. Let D and E be the points where L(P,A) meets sidelines AB and AC. Unless D = E = A, the triangle ADE is isosceles.</p>
+          <p>In ETC, there are several triangle centers defined in terms of isoscelizers. These were discovered or invented by Peter Yff, in whose notebooks the word <em>isoscelizer</em> dates back to 1963.</p>
+          </section>
+          <section class="level-2" id="term-isotomic-conjugate">
+          <span id="isotomic-conjugate"></span><span id="id45"></span><h2>isotomic conjugate<a class="headerlink" href="#term-isotomic-conjugate" title="Link to this heading">¶</a></h2>
+          <p>Let P = p : q : r be a point not on a sideline of ABC. Let A’, B’, C’ be the points where lines AP, BP, CP meet lines BC, CA, AB, respectively. Reflect A’, B’, C’ about the midpoints of sides BC, CA, AB, respectively, to obtain points A”, B”, C”. Then lines AA”, BB”, CC” concur in the isotomic conjugate of P, which has trilinears 1/(pa<sup>2</sup>) : 1/(qb<sup>2</sup>) : 1/(rc<sup>2</sup>). See <a class="term-ref glossary-term" id="occ-term-isoconjugate-2" href="#term-isoconjugate" data-term="isoconjugate" title="isoconjugate: Let P = p : q : r and U = u : v : w be points, neither on a sideline of ABC. The P-isoconjugate of U is the point Examples: the isogonal conjugate of U is the X(1)-isoconjugate of U, and the isotomic conjugate of U is the X(31)-isoconjugate of U. As suggested by the meaning of the prefix &quot;iso&quot;, P-isoconjugate of U = U-isoconjugate of P. Let A&#x27;B&#x27;C&#x27; be the...">isoconjugate</a>.</p>
+          </section>
+          <section class="level-2" id="term-line">
+          <span id="line"></span><span id="id46"></span><h2>line<a class="headerlink" href="#term-line" title="Link to this heading">¶</a></h2>
+          <p>A line is the set of points x : y : z satisfying the equation</p>
+          <blockquote>
+          <div><p>f(a,b,c)x + g(a,b,c)y + h(a,b,c)z = 0</p>
+          </div></blockquote>
+          <p>for some point f(a,b,c) : g(a,b,c) : h(a,b,c). If this point is a triangle center, then the corresponding line is a <em>central line.</em></p>
+          <div class="line-block">
+          <div class="line">Three lines dx + ey + fz = 0, rx + sy + tz = 0, ux + vy + wz = 0 are concurrent if and only the following determinant equation holds:</div>
+          <div class="line">See also <a class="term-ref glossary-term" id="occ-term-point-1" href="#term-point" data-term="point" title="point: In traditional euclidean geometry, point is not subject to definition, much as an axiom is not subject to proof. However, when (a,b,c) is variable or indeterminate, a point is defined informally by f(a,b,c) : g(a,b,c) : h(a,b,c) for all (a,b,c) for which at least one of the values f(a,b,c), g(a,b,c), h(a,b,c) is not zero. A formal definition is given in...">point</a>. Chapter 5 of <a class="reference external" href="http://faculty.evansville.edu/ck6/tcenters/tcct.html">TCCT</a> discusses central lines.</div>
+          </div>
+          </section>
+          <section class="level-2" id="term-line-conjugate">
+          <span id="line-conjugate"></span><span id="id47"></span><h2>line conjugate<a class="headerlink" href="#term-line-conjugate" title="Link to this heading">¶</a></h2>
+          <p>Let P = p : q : r and U = u : v : w be distinct points, neither equal to A, B, or C. The P-line conjugate of U is the point</p>
+          <blockquote>
+          <div><p>p(v<sup>2</sup> + w<sup>2</sup>) - u(qv + rw) : q(w<sup>2</sup> + u<sup>2</sup>) - v(rw + pu) : r(u<sup>2</sup> + v<sup>2</sup>) - w(pu + qv),</p>
+          </div></blockquote>
           <p>or, equivalently,</p>
-          <p>hp - ku : hq - kv : hr - kw,</p>
-          <p>where h = u2 + v2 + w2 and k = pu + qv + rw.</p>
+          <blockquote>
+          <div><p>hp - ku : hq - kv : hr - kw,</p>
+          </div></blockquote>
+          <p>where h = u<sup>2</sup> + v<sup>2</sup> + w<sup>2</sup> and k = pu + qv + rw.</p>
           <p>This is the point of intersection of line PU and the trilinear polar of the isogonal conjugate of U.</p>
-          </dd>
-          <dt id="term-line-polar-triangle">line-polar triangle<a class="headerlink" href="#term-line-polar-triangle" title="Link to this term">¶</a></dt><dd><p>Let Pi = xi : yi : zi, for i=1,2,3, be noncollinear points.  An equation for line P2P3 is then</p>
-          <p>a1x + b1y + c1z = 0,</p>
-          <p>where a1 = y2z3 - z2y3, and b1 and c1 are defined cyclically.  The trilinear pole of this line is the point</p>
-          <p>1/a1 : 1/b1 : 1/c1.</p>
-          <p>This point is the A-vertex of the line-polar triangle.  The B- and C- vertices are defined cyclically.</p>
-          </dd>
-          <dt id="term-major-center">major center<a class="headerlink" href="#term-major-center" title="Link to this term">¶</a></dt><dd><dl class="simple">
-          <dt>A major center is a triangle center X for which there exists a function f(A) such that X = f(A)<span class="classifier">f(B)</span><span class="classifier">f(C).  Examples: X(1), X(2), X(3), X(4), X(6).  Major centers solve certain problems in functional equations; click</span></dt><dd><p>here (AeqMath) or
-          here (AMM) for more.</p>
-          </dd>
-          </dl>
-          </dd>
-          <dt id="term-orthojoin">orthojoin<a class="headerlink" href="#term-orthojoin" title="Link to this term">¶</a></dt><dd><p>Let X = x : y : z be a point, and let</p>
-          <p>a1 = (b2 + c2 - a2)/(2bc) = cos A,
-          b1 = (c2 + a2 - b2)/(2ca) = cos B,
-          c1 = (a2 + b2 - c2)/(2ab) = cos C,</p>
-          <p>u1 = b1c1x3 - b1y3 - c1z3,</p>
-          <p>u2 = - (1 + 2c12)b1x2y - (1 + 2b12)c1x2z,</p>
-          <p>u3 = (2a1b1 - c1)y2z + (2a1c1 - b1)yz2,</p>
-          <p>u4 = 3b1c1xy2 + 3b1c1xz2,</p>
-          <p>u5 = (1 + b12 + c12 - a12 - 4a1b1c1)xyz,</p>
-          <p>f(a,b,c) = (- x + yc1 + zb1)(u1 + u2 + u3 + u4 + u5).</p>
+          </section>
+          <section class="level-2" id="term-line-polar-triangle">
+          <span id="line-polar-triangle"></span><span id="id48"></span><h2>line-polar triangle<a class="headerlink" href="#term-line-polar-triangle" title="Link to this heading">¶</a></h2>
+          <p>Let P<sub>i</sub> = x<sub>i</sub> : y<sub>i</sub> : z<sub>i</sub>, for i=1,2,3, be noncollinear points. An equation for line P<sub>2</sub>P<sub>3</sub> is then</p>
+          <blockquote>
+          <div><p>a<sub>1</sub>x + b<sub>1</sub>y + c<sub>1</sub>z = 0,</p>
+          </div></blockquote>
+          <p>where a<sub>1</sub> = y<sub>2</sub>z<sub>3</sub> - z<sub>2</sub>y<sub>3</sub>, and b<sub>1</sub> and c<sub>1</sub> are defined cyclically. The trilinear pole of this line is the point</p>
+          <blockquote>
+          <div><p>1/a<sub>1</sub> : 1/b<sub>1</sub> : 1/c<sub>1</sub>.</p>
+          </div></blockquote>
+          <p>This point is the A-vertex of the line-polar triangle. The B- and C- vertices are defined cyclically.</p>
+          </section>
+          <section class="level-2" id="term-major-center">
+          <span id="major-center"></span><span id="id49"></span><h2>major center<a class="headerlink" href="#term-major-center" title="Link to this heading">¶</a></h2>
+          <p>A major center is a triangle center X for which there exists a function f(A) such that X = f(A) : f(B) : f(C). Examples: <a class="reference internal" href="centers/x-00001/index.html#x-1"><span class="std std-ref">X(1)</span></a>, <a class="reference internal" href="centers/x-00002/index.html#x-2"><span class="std std-ref">X(2)</span></a>, <a class="reference internal" href="centers/x-00003/index.html#x-3"><span class="std std-ref">X(3)</span></a>, <a class="reference internal" href="centers/x-00004/index.html#x-4"><span class="std std-ref">X(4)</span></a>, <a class="reference internal" href="centers/x-00006/index.html#x-6"><span class="std std-ref">X(6)</span></a>. Major centers solve certain problems in functional equations; click <a class="reference external" href="http://www.link.springer.de/link/service/journals/00010/bibs/8055003/80550251.htm">here (AeqMath)</a> or <a class="reference external" href="http://www.maa.org/pubs/monthly_may97_toc.html">here (AMM)</a> for more.</p>
+          </section>
+          <section class="level-2" id="term-medial-triangle">
+          <span id="medial-triangle"></span><span id="id50"></span><h2>medial triangle<a class="headerlink" href="#term-medial-triangle" title="Link to this heading">¶</a></h2>
+          <p>The cevian triangle of the centroid <a class="reference internal" href="centers/x-00002/index.html#x-2"><span class="std std-ref">X(2)</span></a> = 1/a : 1/b : 1/c, whose vertices are the midpoints of sides BC, CA, AB. (See <a class="term-ref glossary-term" id="occ-term-cevian-triangle-4" href="#term-cevian-triangle" data-term="cevian-triangle" title="cevian triangle: Let P be a point not on a sideline of ABC. Let A&#x27; = AP∩BC meet. Define B&#x27; and C&#x27; cyclically. Triangle A&#x27;B&#x27;C&#x27; is the cevian triangle of triangle ABC. Examples of cevian triangles:">cevian triangle</a>.)</p>
+          </section>
+          <section class="level-2" id="term-orthic-triangle">
+          <span id="orthic-triangle"></span><span id="id51"></span><h2>orthic triangle<a class="headerlink" href="#term-orthic-triangle" title="Link to this heading">¶</a></h2>
+          <p>The cevian (and pedal) triangle of the orthocenter <a class="reference internal" href="centers/x-00004/index.html#x-4"><span class="std std-ref">X(4)</span></a> = sec A : sec B : sec C, whose vertices are the feet of the altitudes of ABC. (See <a class="term-ref glossary-term" id="occ-term-cevian-triangle-5" href="#term-cevian-triangle" data-term="cevian-triangle" title="cevian triangle: Let P be a point not on a sideline of ABC. Let A&#x27; = AP∩BC meet. Define B&#x27; and C&#x27; cyclically. Triangle A&#x27;B&#x27;C&#x27; is the cevian triangle of triangle ABC. Examples of cevian triangles:">cevian triangle</a>.)</p>
+          </section>
+          <section class="level-2" id="term-orthojoin">
+          <span id="orthojoin"></span><span id="id52"></span><h2>orthojoin<a class="headerlink" href="#term-orthojoin" title="Link to this heading">¶</a></h2>
+          <p>Let X = x : y : z be a point, and let</p>
+          <div class="line-block">
+          <div class="line">a<sub>1</sub> = (b<sup>2</sup> + c<sup>2</sup> - a<sup>2</sup>)/(2bc) = cos A,</div>
+          <div class="line">b<sub>1</sub> = (c<sup>2</sup> + a<sup>2</sup> - b<sup>2</sup>)/(2ca) = cos B,</div>
+          <div class="line">c<sub>1</sub> = (a<sup>2</sup> + b<sup>2</sup> - c<sup>2</sup>)/(2ab) = cos C,</div>
+          </div>
+          <div class="line-block">
+          <div class="line">u<sub>1</sub> = b<sub>1</sub>c<sub>1</sub>x<sup>3</sup> - b<sub>1</sub>y<sup>3</sup> - c<sub>1</sub>z<sup>3</sup>,</div>
+          <div class="line">u<sub>2</sub> = - (1 + 2c<sub>1</sub><sup>2</sup>)b<sub>1</sub>x<sup>2</sup>y - (1 + 2b<sub>1</sub><sup>2</sup>)c<sub>1</sub>x<sup>2</sup>z,</div>
+          <div class="line">u<sub>3</sub> = (2a<sub>1</sub>b<sub>1</sub> - c<sub>1</sub>)y<sup>2</sup>z + (2a<sub>1</sub>c<sub>1</sub> - b<sub>1</sub>)yz<sup>2</sup>,</div>
+          <div class="line">u<sub>4</sub> = 3b<sub>1</sub>c<sub>1</sub>xy<sup>2</sup> + 3b<sub>1</sub>c<sub>1</sub>xz<sup>2</sup>,</div>
+          <div class="line">u<sub>5</sub> = (1 + b<sub>1</sub><sup>2</sup> + c<sub>1</sub><sup>2</sup> - a<sub>1</sub><sup>2</sup> - 4a<sub>1</sub>b<sub>1</sub>c<sub>1</sub>)xyz,</div>
+          </div>
+          <p>f(a,b,c) = (- x + yc<sub>1</sub> + zb<sub>1</sub>)(u<sub>1</sub> + u<sub>2</sub> + u<sub>3</sub> + u<sub>4</sub> + u<sub>5</sub>).</p>
           <p>The orthojoin of X is the point f(a,b,c) : f(b,c,a) : f(c,a,b).</p>
-          <p>The above formula for f(a,b,c) can be written out explicitly in terms of a,b,c and simplified to the form</p>
-          <p>g(a,b,c) : g(b,c,a) : g(c,a,b), where</p>
-          <p>g(a,b,c) = bc[2abcx + c3y + b3z - (a2 + bc)(cy + bz)]F,</p>
-          <p>where   F = x[a4 - (b2 - c2)2] + 2a[by(b2 - a2 - c2) + cz(c2 - b2 - a2)]</p>
-          <dl class="simple">
-          <dt>The orthojoin of X, defined (6/16/03) as above, can be described geometrically (when a,b,c are sidelengths of a triangle) as the orthopole of the trilinear polar of the isogonal conjugate of X.  The orthopole of a line L is constructed as follows.  Let A’ be the foot of the perpendicular from vertex A on L, and define B’ and C’ cyclically.  Then the perpendiculars from A’ to BC, from B’ to CA, and from C’ to AB concur in the orthopole of L.  For a proof and link to further information, see</dt><dd><p>Orthopole - a new proof by Darij Grinberg.</p>
-          </dd>
-          </dl>
-          </dd>
-          <dt id="term-orthopoint">orthopoint<a class="headerlink" href="#term-orthopoint" title="Link to this term">¶</a></dt><dd><p>Each point X on the line at infinity is the point common to every line in a family F(X) of pairwise parallel lines.  That is, X may be regarded as the direction common to the lines in F(X).  Let L be any line in F(X), and let L’ be any line perpendicular to L.  Let G be the family of lines parallel to L’.  The orthopoint of X is the point H(X) in which L’ meets the line at infinity.  If X = x : y : z, then</p>
-          <p>H(X) = cy cos B - bz cos C : az cos C - cx cos A : bx cos A - ay cos B.</p>
-          <p>For any X on the line at infinity, the isogonal conjugates of X and H(X) are circumcircle-antipodes; i.e., each is the X(3)-reflection of the other.</p>
-          </dd>
-          <dt id="term-perspective">perspective<a class="headerlink" href="#term-perspective" title="Link to this term">¶</a></dt><dd><p>Triangles DEF and UVW are perspective triangles if one of the following six triples of lines concur in a point:</p>
-          <p>{DU,EV,FW},  {DV,EW,FU},  {DW,EU,FV};    {DU,EW,FV},  {DV,EU,FW},  {DW,EV,FU}</p>
-          <p>The point of concurrence is called a perspector (replacing center of perspective).  If, for example, lines DU,EV,FW concur in a point, then by Desargues’s theorem, the points</p>
-          <p>EF intersect VW,   FD intersect WU,   DE intersect UV</p>
-          <p>are collinear, and their line is the perspectrix (replacing axis of perspective.)</p>
-          <p>In case DEF is the reference triangle, ABC, and UVW is a central triangle, it is sometimes tacitly understood that perspectivity of the two triangles refers to only one of the six possibilities, namely, the concurrence of lines DU,EV,FW.  In this case, if UVW is the cevian triangle, A’B’C’, of a point P, then P is the perspector of ABC and A’B’C’, and the perspectrix is the trilinear polar of P.</p>
-          </dd>
-          <dt id="term-point">point<a class="headerlink" href="#term-point" title="Link to this term">¶</a></dt><dd><dl class="simple">
-          <dt>In traditional euclidean geometry, point is not subject to definition, much as an axiom is not subject to proof.  However, when (a,b,c) is variable or indeterminate, a point is defined informally by f(a,b,c)<span class="classifier">g(a,b,c)</span><span class="classifier">h(a,b,c) for all (a,b,c) for which at least one of the values f(a,b,c), g(a,b,c), h(a,b,c) is not zero.  A formal definition is given in</span></dt><dd><p>TCCT.</p>
-          </dd>
-          </dl>
-          <p>See also triangle center.</p>
-          <p>Three points  x : y : z,  r : s : t,  u : v : w  are collinear if and only the following determinant equation holds:</p>
+          <div class="line-block">
+          <div class="line">The above formula for f(a,b,c) can be written out explicitly in terms of a,b,c and simplified to the form</div>
+          <div class="line">g(a,b,c) : g(b,c,a) : g(c,a,b), where</div>
+          </div>
+          <p>g(a,b,c) = bc[2abcx + c<sub>3</sub>y + b<sub>3</sub>z - (a<sub>2</sub> + bc)(cy + bz)]F,</p>
+          <p>where F = x[a<sub>4</sub> - (b<sub>2</sub> - c<sub>2</sub>)<sub>2</sub>] + 2a[by(b<sub>2</sub> - a<sub>2</sub> - c<sub>2</sub>) + cz(c<sub>2</sub> - b<sub>2</sub> - a<sub>2</sub>)]</p>
+          <p>The orthojoin of X, defined (6/16/03) as above, can be described geometrically (when a,b,c are sidelengths of a triangle) as the orthopole of the trilinear polar of the isogonal conjugate of X. The orthopole of a line L is constructed as follows. Let A’ be the foot of the perpendicular from vertex A on L, and define B’ and C’ cyclically. Then the perpendiculars from A’ to BC, from B’ to CA, and from C’ to AB concur in the orthopole of L. For a proof and link to further information, see <a class="reference external" href="http://mathforum.org/epigone/geom.college/cexprylox">Orthopole - a new proof by Darij Grinberg</a>.</p>
+          </section>
+          <section class="level-2" id="term-orthopoint">
+          <span id="orthopoint"></span><span id="id53"></span><h2>orthopoint<a class="headerlink" href="#term-orthopoint" title="Link to this heading">¶</a></h2>
+          <p>Each point X on the line at infinity is the point common to every line in a family F(X) of pairwise parallel lines. That is, X may be regarded as the direction common to the lines in F(X). Let L be any line in F(X), and let L’ be any line perpendicular to L. Let G be the family of lines parallel to L’. The orthopoint of X is the point H(X) in which L’ meets the line at infinity. If X = x : y : z, then</p>
+          <blockquote>
+          <div><p>H(X) = cy cos B - bz cos C : az cos C - cx cos A : bx cos A - ay cos B.</p>
+          </div></blockquote>
+          <p>For any X on the line at infinity, the isogonal conjugates of X and H(X) are circumcircle-antipodes; i.e., each is the <a class="reference internal" href="centers/x-00003/index.html#x-3"><span class="std std-ref">X(3)</span></a>-reflection of the other.</p>
+          </section>
+          <section class="level-2" id="term-pedal-triangle">
+          <span id="pedal-triangle"></span><span id="id54"></span><h2>pedal triangle<a class="headerlink" href="#term-pedal-triangle" title="Link to this heading">¶</a></h2>
+          <p>For a point P, the triangle A’B’C’ whose vertices are the orthogonal projections (feet of perpendiculars) of P onto the sidelines BC, CA, AB. (See <a class="term-ref glossary-term" id="occ-term-central-triangle-2" href="#term-central-triangle" data-term="central-triangle" title="central triangle: Let each of f(a,b,c) and g(a,b,c) be a center function (i.e., as in the definition of triangle center) or the zero function, such that one of these conditions holds: Let Then A&#x27;B&#x27;C&#x27; is the (f,g)-central triangle of type 1 . A central triangle of type 1 is any triangle A&#x27;B&#x27;C&#x27; for which equations (1)-(3) hold for some choice of center functions f and g....">central triangle</a>.)</p>
+          </section>
+          <section class="level-2" id="term-perspective">
+          <span id="perspective"></span><span id="id55"></span><h2>perspective<a class="headerlink" href="#term-perspective" title="Link to this heading">¶</a></h2>
+          <p>Triangles DEF and UVW are perspective triangles if one of the following six triples of lines concur in a point:</p>
+          <blockquote>
+          <div><p>{DU,EV,FW}, {DV,EW,FU}, {DW,EU,FV}; {DU,EW,FV}, {DV,EU,FW}, {DW,EV,FU}</p>
+          </div></blockquote>
+          <p>The point of concurrence is called a <em>perspector</em> (replacing <em>center of perspective</em>). If, for example, lines DU,EV,FW concur in a point, then by Desargues’s theorem, the points</p>
+          <blockquote>
+          <div><p>EF intersect VW, FD intersect WU, DE intersect UV</p>
+          </div></blockquote>
+          <p>are collinear, and their line is the <em>perspectrix</em> (replacing <em>axis of perspective</em>.)</p>
+          <p>In case DEF is the reference triangle, ABC, and UVW is a central triangle, it is sometimes tacitly understood that perspectivity of the two triangles refers to only one of the six possibilities, namely, the concurrence of lines DU,EV,FW. In this case, if UVW is the cevian triangle, A’B’C’, of a point P, then P is the perspector of ABC and A’B’C’, and the perspectrix is the trilinear polar of P.</p>
+          </section>
+          <section class="level-2" id="term-point">
+          <span id="point"></span><span id="id56"></span><h2>point<a class="headerlink" href="#term-point" title="Link to this heading">¶</a></h2>
+          <p>In traditional euclidean geometry, <em>point</em> is not subject to definition, much as an axiom is not subject to proof. However, when (a,b,c) is variable or indeterminate, a point is defined informally by f(a,b,c) : g(a,b,c) : h(a,b,c) for all (a,b,c) for which at least one of the values f(a,b,c), g(a,b,c), h(a,b,c) is not zero. A formal definition is given in <a class="reference external" href="http://faculty.evansville.edu/ck6/tcenters/tcct.html">TCCT.</a> See also <a class="term-ref glossary-term" id="occ-term-triangle-center-2" href="#term-triangle-center" data-term="triangle-center" title="triangle center: A triangle center is a point of the form f(a,b,c) : f(b,c,a) : f(c,a,b), where f is a nonzero function satisfying two conditions: A formal definition of triangle center is given in TCCT. See also polynomial center , transcendental center , central triangle , bicentric points .">triangle center</a>.</p>
+          <p>Three points x : y : z, r : s : t, u : v : w are collinear if and only the following determinant equation holds:</p>
           <p>Thus, if x : y : z is a variable point, this equation gives the line determined by the points r : s : t and u : v : w.</p>
-          </dd>
-          <dt id="term-point-polar-triangle">point-polar triangle<a class="headerlink" href="#term-point-polar-triangle" title="Link to this term">¶</a></dt><dd><p>Let Pi = xi : yi : zi, for i = 1,2,3, be noncollinear points, none lying on a sideline of ABC.  The trilinear polar of P1 is the line</p>
-          <p>x/x1 + y/y1 + z/z1 = 0,</p>
-          <p>and the trilinear polars of P2 and P3 are defined cyclically.  These last two lines meet in the point</p>
-          <p>1/y2z3 - 1/z2y3 : 1/z2x3 - 1/x2z3 : 1/x2y3 - 1/y2x3.</p>
-          <p>This point is the A-vertex of the point-polar triangle.  The B- and C- vertices are defined cyclically.</p>
-          </dd>
-          <dt id="term-polar">polar<a class="headerlink" href="#term-polar" title="Link to this term">¶</a></dt><dd><p>Let W be a conic, P a point, and XX’ and YY’ chords of W that meet in P.  As X and Y vary, the locus of the point X’Y∩XY’ is a line, called the polar of P with respect to W.  If W is a circumconic, it has an equation uyz + vzx + wxy = 0, and the polar of a point Q = p : q : r is the line</p>
-          <p>(vr + wq)x + (wp + ur)y + (uq + vp)z = 0.</p>
-          </dd>
-          <dt id="term-polynomial-center">polynomial center<a class="headerlink" href="#term-polynomial-center" title="Link to this term">¶</a></dt><dd><p>A triangle center X is a polynomial center if there exists a polynomial f(a,b,c) such that</p>
-          <p>X = f(a,b,c) : f(b,c,a) : f(c,a,b).</p>
-          <p>Examples: X(1), X(2), … , X(12), but not X(13).</p>
-          </dd>
-          <dt id="term-radical-trace">radical trace<a class="headerlink" href="#term-radical-trace" title="Link to this term">¶</a></dt><dd><p>The radical trace of two nonconcentric circles is the point of intersection of the radical axis of the circles and the line of the centers of the circles.  (For examples, see X(I) for I = 6, 187, 1570, 2021-2025, 2030-2032.)</p>
-          </dd>
-          <dt id="term-reciprocal-conjugate">reciprocal conjugate<a class="headerlink" href="#term-reciprocal-conjugate" title="Link to this term">¶</a></dt><dd><p>Let P and U be points, neither on a sideline of ABC, given in barycentric coordinates by P = p : q : r and U = u : v : w.  The P-reciprocal conjugate of U is the point</p>
-          <p>pvw : qwu : ruv.    (barycentrics)</p>
+          </section>
+          <section class="level-2" id="term-point-polar-triangle">
+          <span id="point-polar-triangle"></span><span id="id57"></span><h2>point-polar triangle<a class="headerlink" href="#term-point-polar-triangle" title="Link to this heading">¶</a></h2>
+          <p>Let P<sub>i</sub> = x<sub>i</sub> : y<sub>i</sub> : z<sub>i</sub>, for i = 1,2,3, be noncollinear points, none lying on a sideline of ABC. The trilinear polar of P<sub>1</sub> is the line</p>
+          <blockquote>
+          <div><p>x/x<sub>1</sub> + y/y<sub>1</sub> + z/z<sub>1</sub> = 0,</p>
+          </div></blockquote>
+          <p>and the trilinear polars of P<sub>2</sub> and P<sub>3</sub> are defined cyclically. These last two lines meet in the point</p>
+          <blockquote>
+          <div><p>1/y<sub>2</sub>z<sub>3</sub> - 1/z<sub>2</sub>y<sub>3</sub> : 1/z<sub>2</sub>x<sub>3</sub> - 1/x<sub>2</sub>z<sub>3</sub> : 1/x<sub>2</sub>y<sub>3</sub> - 1/y<sub>2</sub>x<sub>3</sub>.</p>
+          </div></blockquote>
+          <p>This point is the A-vertex of the point-polar triangle. The B- and C- vertices are defined cyclically.</p>
+          </section>
+          <section class="level-2" id="term-polar">
+          <span id="polar"></span><span id="id58"></span><h2>polar<a class="headerlink" href="#term-polar" title="Link to this heading">¶</a></h2>
+          <p>Let W be a conic, P a point, and XX’ and YY’ chords of W that meet in P. As X and Y vary, the locus of the point X’Y∩XY’ is a line, called the polar of P with respect to W. If W is a circumconic, it has an equation uyz + vzx + wxy = 0, and the polar of a point Q = p : q : r is the line</p>
+          <blockquote>
+          <div><p>(vr + wq)x + (wp + ur)y + (uq + vp)z = 0.</p>
+          </div></blockquote>
+          </section>
+          <section class="level-2" id="term-polynomial-center">
+          <span id="polynomial-center"></span><span id="id59"></span><h2>polynomial center<a class="headerlink" href="#term-polynomial-center" title="Link to this heading">¶</a></h2>
+          <p>A triangle center X is a polynomial center if there exists a polynomial f(a,b,c) such that</p>
+          <blockquote>
+          <div><p>X = f(a,b,c) : f(b,c,a) : f(c,a,b).</p>
+          </div></blockquote>
+          <p>Examples: <a class="reference internal" href="centers/x-00001/index.html#x-1"><span class="std std-ref">X(1)</span></a>, <a class="reference internal" href="centers/x-00002/index.html#x-2"><span class="std std-ref">X(2)</span></a>, … , <a class="reference internal" href="centers/x-00012/index.html#x-12"><span class="std std-ref">X(12)</span></a>, but not <a class="reference internal" href="centers/x-00013/index.html#x-13"><span class="std std-ref">X(13)</span></a>.</p>
+          </section>
+          <section class="level-2" id="term-radical-trace">
+          <span id="radical-trace"></span><span id="id60"></span><h2>radical trace<a class="headerlink" href="#term-radical-trace" title="Link to this heading">¶</a></h2>
+          <p>The radical trace of two nonconcentric circles is the point of intersection of the radical axis of the circles and the line of the centers of the circles. (For examples, see X(I) for I = 6, 187, 1570, 2021-2025, 2030-2032.)</p>
+          </section>
+          <section class="level-2" id="term-reciprocal-conjugate">
+          <span id="reciprocal-conjugate"></span><span id="id61"></span><h2>reciprocal conjugate<a class="headerlink" href="#term-reciprocal-conjugate" title="Link to this heading">¶</a></h2>
+          <p>Let P and U be points, neither on a sideline of ABC, given in barycentric coordinates by P = p : q : r and U = u : v : w. The P-reciprocal conjugate of U is the point</p>
+          <blockquote>
+          <div><p>pvw : qwu : ruv. (barycentrics)</p>
+          </div></blockquote>
           <p>As suggested by the meaning of “reciprocal”,</p>
-          <p>P-reciprocal conjugate of U = G/(U-reciprocal conjugate of P),</p>
+          <blockquote>
+          <div><p>P-reciprocal conjugate of U = G/(U-reciprocal conjugate of P),</p>
+          </div></blockquote>
           <p>in accord with the fact that G, the centroid, is the identity corresponding to barycentric division.</p>
-          <p>The term reciprocal conjugate was introduced in Keith Dean and Floor van Lamoen, “Geometric construction of reciprocal conjugations,” Forum Geometricorum 1 (2001) 115-120.</p>
-          <p>See also isoconjugate.</p>
-          </dd>
-          <dt id="term-similarity-image">similarity image<a class="headerlink" href="#term-similarity-image" title="Link to this term">¶</a></dt><dd><p>see homologous images</p>
-          </dd>
-          <dt id="term-symbolic-substitution">symbolic substitution<a class="headerlink" href="#term-symbolic-substitution" title="Link to this term">¶</a></dt><dd><p>Let p(a, b, c), q(a, b, c), r(a, b, c) be functions of a, b, c, all of the same degree of homogeneity.  As the plane consists of points [functions of the form X = x(a, b, c) : y(a, b, c) : z(a, b, c)], the substitution indicated by</p>
-          <p>a → p(a, b, c),   b → q(a, b, c),   c → r(a, b, c)</p>
-          <p>maps the set of all points - that is, the plane - into itself.  Such a substitution has no clear geometric meaning, as suggested by the name, symbolic substitution.  On the other hand, symbolic substitutions are of geometric interest because they map lines to lines, conics to conics, cubics to cubics, and they preserve incidence.</p>
-          <p>Example:  The symbolic substitution (a, b, c) →(1/a, 1/b, 1/c) maps every triangle center to a triangle center, every pair of bicentric points to a pair of bicentric points, every circumconic to a circumconic, etc.  However, when (a, b, c) = (2, 4, 5), for example, then a, b, c are sidelengths of a euclidean triangle, but 1/a, 1/b, 1/c are not.</p>
-          <p>Symbolic substitutions are introduced in C. Kimberling, “Symbolic substitutions in the transfigured plane of a triangle,” Aequationes Mathematicae 73 (2007) 156-171.</p>
-          </dd>
-          <dt id="term-syngonal-image">syngonal image<a class="headerlink" href="#term-syngonal-image" title="Link to this term">¶</a></dt><dd><p>Let P = p : q : r (barycentric coordinates) be a point not on a sideline of ABC, not X(3), and not on the circumcircle of ABC.  The syngonal image of P is the point k(P) given by barycentyrics</p>
-          <p>k(a,b,c,p,q,r) : k(b,c,a,q,r,p) : k(c,a,b,r,p,q),</p>
+          <p>The term <em>reciprocal conjugate</em> was introduced in Keith Dean and Floor van Lamoen, “Geometric construction of reciprocal conjugations,” <em>Forum Geometricorum</em> 1 (2001) 115-120.</p>
+          <p>See also <a class="term-ref glossary-term" id="occ-term-isoconjugate-3" href="#term-isoconjugate" data-term="isoconjugate" title="isoconjugate: Let P = p : q : r and U = u : v : w be points, neither on a sideline of ABC. The P-isoconjugate of U is the point Examples: the isogonal conjugate of U is the X(1)-isoconjugate of U, and the isotomic conjugate of U is the X(31)-isoconjugate of U. As suggested by the meaning of the prefix &quot;iso&quot;, P-isoconjugate of U = U-isoconjugate of P. Let A&#x27;B&#x27;C&#x27; be the...">isoconjugate.</a></p>
+          </section>
+          <section class="level-2" id="term-similarity-image">
+          <span id="similarity-image"></span><span id="id62"></span><h2>similarity image<a class="headerlink" href="#term-similarity-image" title="Link to this heading">¶</a></h2>
+          <p>see <a class="term-ref glossary-term" id="occ-term-homologous-3" href="#term-homologous" data-term="homologous" title="homologous images: similarity image, trilinear image, barycentric image, and functional image: The term homologous means having the same relation or relative position to . Let T 1 and T 2 be two triangles, and P a point in the plane of triangle T 1 . The point P&#x27; in the plane of triangle T 2 is a T 1 -to-T 2 homologous image of P if P&#x27; has the same relation or relative position to T 2 as P has to T 1 . However, the words &quot;relation or relative...">homologous images</a></p>
+          </section>
+          <section class="level-2" id="term-symbolic-substitution">
+          <span id="symbolic-substitution"></span><span id="id63"></span><h2>symbolic substitution<a class="headerlink" href="#term-symbolic-substitution" title="Link to this heading">¶</a></h2>
+          <p>Let p(a, b, c), q(a, b, c), r(a, b, c) be functions of a, b, c, all of the same degree of homogeneity. As the plane consists of points [functions of the form X = x(a, b, c) : y(a, b, c) : z(a, b, c)], the substitution indicated by</p>
+          <blockquote>
+          <div><p>a → p(a, b, c), b → q(a, b, c), c → r(a, b, c)</p>
+          </div></blockquote>
+          <p>maps the set of all points - that is, the plane - into itself. Such a substitution has no clear geometric meaning, as suggested by the name, <em>symbolic</em> substitution. On the other hand, symbolic substitutions are of geometric interest because they map lines to lines, conics to conics, cubics to cubics, and they preserve incidence.</p>
+          <p>Example: The symbolic substitution (a, b, c) →(1/a, 1/b, 1/c) maps every triangle center to a triangle center, every pair of bicentric points to a pair of bicentric points, every circumconic to a circumconic, etc. However, when (a, b, c) = (2, 4, 5), for example, then a, b, c are sidelengths of a euclidean triangle, but 1/a, 1/b, 1/c are not.</p>
+          <p>Symbolic substitutions are introduced in C. Kimberling, “Symbolic substitutions in the transfigured plane of a triangle,” <em>Aequationes Mathematicae</em> 73 (2007) 156-171.</p>
+          </section>
+          <section class="level-2" id="term-syngonal-image">
+          <span id="syngonal-image"></span><span id="id64"></span><h2>syngonal image<a class="headerlink" href="#term-syngonal-image" title="Link to this heading">¶</a></h2>
+          <p>Let P = p : q : r (barycentric coordinates) be a point not on a sideline of ABC, not <a class="reference internal" href="centers/x-00003/index.html#x-3"><span class="std std-ref">X(3)</span></a>, and not on the circumcircle of ABC. The syngonal image of P is the point k(P) given by barycentyrics</p>
+          <blockquote>
+          <div><p>k(a,b,c,p,q,r) : k(b,c,a,q,r,p) : k(c,a,b,r,p,q),</p>
+          </div></blockquote>
           <p>where</p>
-          <p>k(a,b,c,p,q,r) = (q + r - p)/[2a2qr - (q + r - p)(b2r + c2q)].</p>
-          <p>The point k(P) is the antigonal image of the anticomplement of P.  For further developments, search Hyacinthos for “symgonal” - however, following Hyacinthos #9881, the spelling “syngonal” is used here.</p>
-          </dd>
-          <dt id="term-transcendental-center">transcendental center<a class="headerlink" href="#term-transcendental-center" title="Link to this term">¶</a></dt><dd><p>A triangle center X is a transcendental center if there exists no algebraic function f(a,b,c) such that X = f(a,b,c) : f(b,c,a) : f(c,a,b).  Examples:  X(359) and X(360).</p>
-          </dd>
-          <dt id="term-triangle-center">triangle center<a class="headerlink" href="#term-triangle-center" title="Link to this term">¶</a></dt><dd><p>A triangle center is a point of the form f(a,b,c) : f(b,c,a) : f(c,a,b), where f is a nonzero function satisfying two conditions:</p>
-          <p>(1)    f  is homogeneous in a,b,c; i.e., there is a nonnegative real number h such that</p>
-          <p>f(ta,tb,tc) = thf(a,b,c) for all (a,b,c) in the domain of f;</p>
-          <p>(2)    f  is symmetric in b and c; i.e., f(a,c,b) = f(a,b,c).</p>
-          <p>A formal definition of triangle center is given in  TCCT.
-          See also
-          polynomial center,
-          transcendental center,
-          central triangle,
-          bicentric points.</p>
-          </dd>
-          <dt id="term-trilinear-image">trilinear image<a class="headerlink" href="#term-trilinear-image" title="Link to this term">¶</a></dt><dd><p>see homologous images</p>
-          </dd>
-          <dt id="term-trilinear-polar">trilinear polar<a class="headerlink" href="#term-trilinear-polar" title="Link to this term">¶</a></dt><dd><p>The trilinear polar of a point p : q : r is the line</p>
-          <p>qrx + rpy + pqz = 0.</p>
-          </dd>
-          <dt id="term-trilinear-pole">trilinear pole<a class="headerlink" href="#term-trilinear-pole" title="Link to this term">¶</a></dt><dd><p>The trilinear pole of the line ux + vy + wz = 0 is the point wv : uw : uv.</p>
-          <p>Geometrically, the trilinear pole of a line PU is the perspector of ABC and the vertex-triangle of the anticevian triangles of P and U.  (Randy Hutson, April 9, 2016)</p>
-          </dd>
-          <dt id="term-unary-cofactor-triangle">unary cofactor triangle<a class="headerlink" href="#term-unary-cofactor-triangle" title="Link to this term">¶</a></dt><dd><p>Let Pi = xi : yi : zi, for i=1,2,3, be points.  The A-vertex of the unary cofactor triangle is the point</p>
-          <p>y2z3 - z2y3 : z2x3 - x2z3 : x2y3 - y2x3 .</p>
-          <p>The B-vertex and C-vertex are defined cyclically.  The vertices are the isogonal conjugates of the the vertices of the line-polar triangle of the points Pi.</p>
-          <p>If T is a triangle and U(T) its unary cofactor triangle, then U(U(T)) = T, and T and U(T) are perspective;
-          see eigencenter.</p>
-          </dd>
-          <dt id="term-vertex-conjugate">vertex conjugate<a class="headerlink" href="#term-vertex-conjugate" title="Link to this term">¶</a></dt><dd><p>The U-vertex conjugate of X is defined for distinct points U = u : v : w and X = x : y : z: (trilinears) as the point P given by</p>
-          <p>P = a/[a2vwyz - ux(bw + cv)(bz + cy)] : b/[b2wuzx - vy(cu + aw)(cx + az)] : c/[c2uvxy - wz(av + bu)(ay + bx)].</p>
-          <p>Suppose that T = DEF and T’ = D’E’F’ are triangles.  The vertex triangle of T and T’ is the triangle V(T,T’) having sidelines DD’, EE’, FF’.  Thus, V(T,T’) generalizes “perspector”, since V(T,T’) is a single point if and only if T is perspective to T’.  If U and X are distinct points, then (vertex triangle of the circumcevian triangles of U and X) is perspective to ABC, and the perspector is the U-vertex conjugate of X, which equals the X-vertex conjugate of U.  See C. Kimberling,
-          Mappings Associated with Vertex Triangles, Forum Geometricorum, 2 (2002) 21-32.</p>
-          </dd>
-          <dt id="term-waw-conjugate">waw conjugate<a class="headerlink" href="#term-waw-conjugate" title="Link to this term">¶</a></dt><dd><p>Let P = p : q : r and U = u : v : w be points, neither lying on a sideline of ABC.  The P-waw conjugate of U is the point</p>
-          <p>h(p,q,r,u,v,w) : h(q,r,p,v,w,u) : h(r,p,q,w,u,v),</p>
+          <blockquote>
+          <div><p>k(a,b,c,p,q,r) = (q + r - p)/[2a<sup>2</sup>qr - (q + r - p)(b<sup>2</sup>r + c<sup>2</sup>q)].</p>
+          </div></blockquote>
+          <p>The point k(P) is the antigonal image of the anticomplement of P. For further developments, search Hyacinthos for “symgonal” - however, following Hyacinthos #9881, the spelling “syngonal” is used here.</p>
+          </section>
+          <section class="level-2" id="term-tangential-triangle">
+          <span id="tangential-triangle"></span><span id="id65"></span><h2>tangential triangle<a class="headerlink" href="#term-tangential-triangle" title="Link to this heading">¶</a></h2>
+          <p>The anticevian triangle of the symmedian point <a class="reference internal" href="centers/x-00006/index.html#x-6"><span class="std std-ref">X(6)</span></a> = a : b : c, formed by the lines tangent to the circumcircle of ABC at vertices A, B, C. (See <a class="term-ref glossary-term" id="occ-term-anticevian-triangle-2" href="#term-anticevian-triangle" data-term="anticevian-triangle" title="anticevian triangle: Let P be a point not on a sideline of ABC. Let A&#x27; = AP∩BC. Let A&quot; be the harmonic conjugate of P with respect to A and A&#x27;. Define B&quot; and C&quot; cyclically. Triangle A&quot;B&quot;C&quot; is the anticevian triangle of triangle ABC. (The lines AP, BP, CP are the cevians of P, and A&#x27;B&#x27;C&#x27;, the cevian triangle of P.) Examples of anticevian triangles">anticevian triangle</a>.)</p>
+          </section>
+          <section class="level-2" id="transcendental-center">
+          <span id="term-transcendental-center"></span><span id="id66"></span><h2>transcendental center<a class="headerlink" href="#transcendental-center" title="Link to this heading">¶</a></h2>
+          <p>A triangle center X is a transcendental center if there exists no algebraic function f(a,b,c) such that X = f(a,b,c) : f(b,c,a) : f(c,a,b). Examples: X(359) and X(360).</p>
+          </section>
+          <section class="level-2" id="triangle-center">
+          <span id="term-triangle-center"></span><span id="id67"></span><h2>triangle center<a class="headerlink" href="#triangle-center" title="Link to this heading">¶</a></h2>
+          <p>A triangle center is a point of the form f(a,b,c) : f(b,c,a) : f(c,a,b), where f is a nonzero function satisfying two conditions:</p>
+          <blockquote>
+          <div><div class="line-block">
+          <div class="line">(1) f is homogeneous in a,b,c; i.e., there is a nonnegative real number h such that</div>
+          </div>
+          <p>f(ta,tb,tc) = t<sup>h</sup>f(a,b,c) for all (a,b,c) in the domain of f;</p>
+          <div class="line-block">
+          <div class="line">(2) f is symmetric in b and c; i.e., f(a,c,b) = f(a,b,c).</div>
+          </div>
+          </div></blockquote>
+          <p>A formal definition of triangle center is given in <a class="reference external" href="http://faculty.evansville.edu/ck6/tcenters/tcct.html">TCCT.</a> See also <a class="term-ref glossary-term" id="occ-term-polynomial-center-1" href="#term-polynomial-center" data-term="polynomial-center" title="polynomial center: A triangle center X is a polynomial center if there exists a polynomial f(a,b,c) such that Examples: X(1), X(2), . . . , X(12), but not X(13).">polynomial center</a>, <a class="term-ref glossary-term" id="occ-term-transcendental-center-1" href="#term-transcendental-center" data-term="transcendental-center" title="transcendental center: A triangle center X is a transcendental center if there exists no algebraic function f(a,b,c) such that X = f(a,b,c) : f(b,c,a) : f(c,a,b). Examples: X(359) and X(360).">transcendental center</a>, <a class="term-ref glossary-term" id="occ-term-central-triangle-3" href="#term-central-triangle" data-term="central-triangle" title="central triangle: Let each of f(a,b,c) and g(a,b,c) be a center function (i.e., as in the definition of triangle center) or the zero function, such that one of these conditions holds: Let Then A&#x27;B&#x27;C&#x27; is the (f,g)-central triangle of type 1 . A central triangle of type 1 is any triangle A&#x27;B&#x27;C&#x27; for which equations (1)-(3) hold for some choice of center functions f and g....">central triangle</a>, <a class="term-ref glossary-term" id="occ-term-bicentric-points-1" href="#term-bicentric-points" data-term="bicentric-points" title="bicentric points: Let f(a,b,c) : f(b,c,a) : f(c,a,b) be a point that satisfies (1) in the definition of triangle center, but that |f(a,b,c)| ≠ |f(a,c,b)|. Then are bicentric points, together comprising a bicentric pair . Example: the Brocard points, c/b : a/c : b/a and b/c : c/a : a/b.">bicentric points</a>.</p>
+          </section>
+          <section class="level-2" id="trilinear-image">
+          <span id="term-trilinear-image"></span><span id="id68"></span><h2>trilinear image<a class="headerlink" href="#trilinear-image" title="Link to this heading">¶</a></h2>
+          <p>see <a class="term-ref glossary-term" id="occ-term-homologous-4" href="#term-homologous" data-term="homologous" title="homologous images: similarity image, trilinear image, barycentric image, and functional image: The term homologous means having the same relation or relative position to . Let T 1 and T 2 be two triangles, and P a point in the plane of triangle T 1 . The point P&#x27; in the plane of triangle T 2 is a T 1 -to-T 2 homologous image of P if P&#x27; has the same relation or relative position to T 2 as P has to T 1 . However, the words &quot;relation or relative...">homologous images</a></p>
+          </section>
+          <section class="level-2" id="trilinear-polar">
+          <span id="term-trilinear-polar"></span><span id="id69"></span><h2>trilinear polar<a class="headerlink" href="#trilinear-polar" title="Link to this heading">¶</a></h2>
+          <p>The trilinear polar of a point p : q : r is the line</p>
+          <blockquote>
+          <div><p>qrx + rpy + pqz = 0.</p>
+          </div></blockquote>
+          </section>
+          <section class="level-2" id="trilinear-pole">
+          <span id="term-trilinear-pole"></span><span id="id70"></span><h2>trilinear pole<a class="headerlink" href="#trilinear-pole" title="Link to this heading">¶</a></h2>
+          <p>The trilinear pole of the line ux + vy + wz = 0 is the point wv : uw : uv.</p>
+          <p>Geometrically, the trilinear pole of a line PU is the perspector of ABC and the vertex-triangle of the anticevian triangles of P and U. (Randy Hutson, April 9, 2016)</p>
+          </section>
+          <section class="level-2" id="unary-cofactor-triangle">
+          <span id="term-unary-cofactor-triangle"></span><span id="id71"></span><h2>unary cofactor triangle<a class="headerlink" href="#unary-cofactor-triangle" title="Link to this heading">¶</a></h2>
+          <p>Let P<sub>i</sub> = x<sub>i</sub> : y<sub>i</sub> : z<sub>i</sub>, for i=1,2,3, be points. The A-vertex of the unary cofactor triangle is the point</p>
+          <blockquote>
+          <div><p>y<sub>2</sub>z<sub>3</sub> - z<sub>2</sub>y<sub>3</sub> : z<sub>2</sub>x<sub>3</sub> - x<sub>2</sub>z<sub>3</sub> : x<sub>2</sub>y<sub>3</sub> - y<sub>2</sub>x<sub>3</sub> .</p>
+          </div></blockquote>
+          <p>The B-vertex and C-vertex are defined cyclically. The vertices are the isogonal conjugates of the the vertices of the line-polar triangle of the points P<sub>i</sub>.</p>
+          <p>If T is a triangle and U(T) its unary cofactor triangle, then U(U(T)) = T, and T and U(T) are perspective; see <a class="term-ref glossary-term" id="occ-term-eigencenter-1" href="#term-eigencenter" data-term="eigencenter" title="eigencenter: Let T be a central triangle, and let U(T) be the unary cofactor triangle of T. Then T and U(T) are perspective, and their perspector is the eigencenter of T. Suppose the A-, B-, C- vertices of T are P i = x i : y i : z i , for i = 1,2,3. Let Let x = st - uv, and define y and z cyclically. Then the eigencenter of T is the point x : y : z.">eigencenter</a>.</p>
+          </section>
+          <section class="level-2" id="vertex-conjugate">
+          <span id="term-vertex-conjugate"></span><span id="id72"></span><h2>vertex conjugate<a class="headerlink" href="#vertex-conjugate" title="Link to this heading">¶</a></h2>
+          <p>The U-vertex conjugate of X is defined for distinct points U = u : v : w and X = x : y : z: (trilinears) as the point P given by</p>
+          <blockquote>
+          <div><p>P = a/[a<sup>2</sup>vwyz - ux(bw + cv)(bz + cy)] : b/[b<sup>2</sup>wuzx - vy(cu + aw)(cx + az)] : c/[c<sup>2</sup>uvxy - wz(av + bu)(ay + bx)].</p>
+          </div></blockquote>
+          <p>Suppose that T = DEF and T’ = D’E’F’ are triangles. The vertex triangle of T and T’ is the triangle V(T,T’) having sidelines DD’, EE’, FF’. Thus, V(T,T’) generalizes “perspector”, since V(T,T’) is a single point if and only if T is perspective to T’. If U and X are distinct points, then (vertex triangle of the circumcevian triangles of U and X) is perspective to ABC, and the perspector is the U-vertex conjugate of X, which equals the X-vertex conjugate of U. See C. Kimberling, <a class="reference external" href="http://forumgeom.fau.edu/FG2009volume9/FG200903.pdf">Mappings Associated with Vertex Triangles</a>, <em>Forum Geometricorum,</em> 2 (2002) 21-32.</p>
+          </section>
+          <section class="level-2" id="waw-conjugate">
+          <span id="term-waw-conjugate"></span><span id="id73"></span><h2>waw conjugate<a class="headerlink" href="#waw-conjugate" title="Link to this heading">¶</a></h2>
+          <p>Let P = p : q : r and U = u : v : w be points, neither lying on a sideline of ABC. The P-waw conjugate of U is the point</p>
+          <blockquote>
+          <div><p>h(p,q,r,u,v,w) : h(q,r,p,v,w,u) : h(r,p,q,w,u,v),</p>
+          </div></blockquote>
           <p>where</p>
-          <p>h(p,q,r,u,v,w) = p[x2q2r2 + 2p2(ry - qz)2 - pqr2xy - pq2rxz]</p>
-          </dd>
-          <dt id="term-zayin-conjugate">zayin conjugate<a class="headerlink" href="#term-zayin-conjugate" title="Link to this term">¶</a></dt><dd><p>Let P = p : q : r and U = u : v : w be points, neither lying on a sideline of ABC.  The P-zayin conjugate of U is the point</p>
-          <p>h(p,q,r,u,v,w) : h(q,r,p,v,w,u) : h(r,p,q,w,u,v),</p>
+          <blockquote>
+          <div><p>h(p,q,r,u,v,w) = p[x<sup>2</sup>q<sup>2</sup>r<sup>2</sup> + 2p<sup>2</sup>(ry - qz)<sup>2</sup> - pqr<sup>2</sup>xy - pq<sup>2</sup>rxz]</p>
+          </div></blockquote>
+          </section>
+          <section class="level-2" id="zayin-conjugate">
+          <span id="term-zayin-conjugate"></span><span id="id74"></span><h2>zayin conjugate<a class="headerlink" href="#zayin-conjugate" title="Link to this heading">¶</a></h2>
+          <p>Let P = p : q : r and U = u : v : w be points, neither lying on a sideline of ABC. The P-zayin conjugate of U is the point</p>
+          <blockquote>
+          <div><p>h(p,q,r,u,v,w) : h(q,r,p,v,w,u) : h(r,p,q,w,u,v),</p>
+          </div></blockquote>
           <p>where</p>
-          <p>h(p,q,r,u,v,w) = p(y + z)2 - ry2 - qz2 + (p - r)xy + (p - q)xz.</p>
-          <p>Note that X(1)-zayin conjugacy is simply isogonal conjugacy.</p>
-          <p>Return to ETC</p>
-          </dd>
-          </dl>
+          <blockquote>
+          <div><p>h(p,q,r,u,v,w) = p(y + z)<sup>2</sup> - ry<sup>2</sup> - qz<sup>2</sup> + (p - r)xy + (p - q)xz.</p>
+          </div></blockquote>
+          <p>Note that <a class="reference internal" href="centers/x-00001/index.html#x-1"><span class="std std-ref">X(1)</span></a>-zayin conjugacy is simply isogonal conjugacy.</p>
+          </section>
           </section>
 
       </div>
@@ -497,19 +798,29 @@
         </div>
         <nav class="context">
           <div class="prev">
+             <a href="centers/x-00100/index.html" title="X(100) = ANTICOMPLEMENT OF FEUERBACH POINT" >Prev</a>
           </div>
           <div class="next">
+            <a href="persons.html" title="Index Nominum (Geometers &amp; Contributors)" >Next</a>
           </div>
         </nav>
       </footer>
     </article>
   </main>
   <div class="asides">
-    <aside>
+    <aside class="aside-search">
       <h3>Search</h3>
-      <div role="search">
-        <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-          <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
           <input type="hidden" name="check_keywords" value="yes" />
           <input type="hidden" name="area" value="default" />
         </form>
@@ -534,9 +845,11 @@
   <script src="_static/jquery.js?v=5d32c60e"></script>
   <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
   <script src="_static/documentation_options.js?v=5929fcd5"></script>
-  <script src="_static/doctools.js?v=9bcbadda"></script>
-  <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+  <script src="_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="_static/js/geometor_interactive.js?v=832534ec"></script>
+  <script src="_static/js/search_highlight.js"></script>
 
 </body>
 </html>

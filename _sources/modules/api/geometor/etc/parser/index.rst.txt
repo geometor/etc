@@ -3,6 +3,11 @@ geometor.etc.parser
 
 .. py:module:: geometor.etc.parser
 
+.. autoapi-nested-parse::
+
+   Semantic HTML parser for Encyclopedia of Triangle Centers (ETC) entries and preambles.
+
+
 
 Functions
 ---------
@@ -11,10 +16,11 @@ Functions
 
    geometor.etc.parser.remove_tags
    geometor.etc.parser.clean_text
-   geometor.etc.parser.parse_coordinates
+   geometor.etc.parser.formula_html_to_latex
+   geometor.etc.parser.format_coordinate_line
    geometor.etc.parser.parse_h3
-   geometor.etc.parser.parse_notes
    geometor.etc.parser.parse_center
+   geometor.etc.parser.parse_preamble
 
 
 Module Contents
@@ -24,67 +30,34 @@ Module Contents
 
    Remove HTML tags from text.
 
-   :param text: The input text with HTML tags.
-   :type text: str
-
-   :returns: The text with tags removed.
-   :rtype: str
-
 
 .. py:function:: clean_text(text: str) -> str
 
-   Clean up text by removing tags and extra whitespace.
-
-   :param text: The input text.
-   :type text: str
-
-   :returns: The cleaned text.
-   :rtype: str
+   Clean up inline HTML text into single-line RST-safe text.
 
 
-.. py:function:: parse_coordinates(coord_type: str, html: str) -> list[str]
+.. py:function:: formula_html_to_latex(formula_html: str) -> str
 
-   Parse coordinates (Trilinears, Barycentrics, etc.) from the HTML.
-
-   :param coord_type: The type of coordinates to look for (e.g., "Trilinears").
-   :type coord_type: str
-   :param html: The HTML content to search.
-   :type html: str
-
-   :returns: A list of parsed coordinate strings.
-   :rtype: list
+   Convert an HTML coordinate formula into clean LaTeX suitable for `:math:`.
 
 
-.. py:function:: parse_h3(html: str) -> tuple[str | None, str | None]
+.. py:function:: format_coordinate_line(coord_html: str) -> str
 
-   Parse the <h3> tag to get the key (X number) and title.
-
-   :param html: The HTML content.
-   :type html: str
-
-   :returns: A tuple containing the key (e.g., "X(1)") and the title.
-   :rtype: tuple
+   Format a single coordinate line (possibly with a trailing ', where ...' clause) into RST.
 
 
-.. py:function:: parse_notes(html: str) -> list[str]
+.. py:function:: parse_h3(html_content: str) -> dict[str, Any] | None
 
-   Extract paragraphs as notes.
-
-   :param html: The HTML content.
-   :type html: str
-
-   :returns: A list of note strings.
-   :rtype: list
+   Parse the <h3> tag to extract key, num, title, aliases, and named HTML anchor.
 
 
-.. py:function:: parse_center(html_content: str) -> dict | None
+.. py:function:: parse_center(html_content: str) -> dict[str, Any] | None
 
-   Parse a center's HTML content into a structured dictionary.
+   Parse a center's HTML content into a rich structured dictionary.
 
-   :param html_content: The HTML content of the center definition.
-   :type html_content: str
 
-   :returns: A dictionary containing center data (key, title, coordinates, notes), or None if parsing fails.
-   :rtype: dict
+.. py:function:: parse_preamble(preamble_html: str) -> dict[str, Any]
+
+   Parse an inter-center preamble HTML block into a title and list of RST paragraphs.
 
 

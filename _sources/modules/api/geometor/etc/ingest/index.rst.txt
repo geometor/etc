@@ -3,6 +3,16 @@ geometor.etc.ingest
 
 .. py:module:: geometor.etc.ingest
 
+.. autoapi-nested-parse::
+
+   Ingest raw HTML volumes of the Encyclopedia of Triangle Centers (ETC).
+
+   Splits `ETC.html` and `ETCPart2.html`..`ETCPart27.html` into:
+   - Individual center HTML files (`x-00001.html` .. `x-53144.html`) in `output_folder`
+   - Inter-center group preambles (`preambles/p-XXXX-x-YYYYY.html` and `preambles.json`)
+   - Part 1 introductory essays (`intro/00-header.html` .. `intro/09-combos.html` and `intros.json`)
+
+
 
 Functions
 ---------
@@ -10,8 +20,7 @@ Functions
 .. autoapisummary::
 
    geometor.etc.ingest.slugify
-   geometor.etc.ingest.unique_filename
-   geometor.etc.ingest.split_html_file
+   geometor.etc.ingest.read_html_source
    geometor.etc.ingest.ingest_folder
 
 
@@ -20,45 +29,18 @@ Module Contents
 
 .. py:function:: slugify(text: str) -> str
 
-   Create a safe filename from text.
-
-   :param text: The input text.
-   :type text: str
-
-   :returns: The slugified text.
-   :rtype: str
+   Create a safe filename slug from text.
 
 
-.. py:function:: unique_filename(output_folder: str, base_name: str) -> str
+.. py:function:: read_html_source(path: str | pathlib.Path) -> str
 
-   Return a filename, allowing overwrites (currently just returns the base name with .html).
-
-   :param output_folder: The output directory.
-   :type output_folder: str
-   :param base_name: The base filename.
-   :type base_name: str
-
-   :returns: The full filename with extension.
-   :rtype: str
+   Read an ETC HTML file, stripping any binary wrapper bytes and normalizing newlines.
 
 
-.. py:function:: split_html_file(input_path: str | pathlib.Path, output_folder: str | pathlib.Path) -> None
+.. py:function:: ingest_folder(input_folder: str | pathlib.Path, output_folder: str | pathlib.Path) -> dict[str, Any]
 
-   Split a single HTML file into multiple files based on <h3> tags.
+   Ingest all ETC volume HTML files in `input_folder` and write split files to `output_folder`.
 
-   :param input_path: Path to the input HTML file.
-   :type input_path: str
-   :param output_folder: Directory to save the split files.
-   :type output_folder: str
-
-
-.. py:function:: ingest_folder(input_folder: str, output_folder: str) -> None
-
-   Ingest all HTML files in the input folder by splitting them.
-
-   :param input_folder: The directory containing input HTML files.
-   :type input_folder: str
-   :param output_folder: The directory to save the split files.
-   :type output_folder: str
+   Returns a summary dictionary with counts of centers, preambles, and intro sections.
 
 

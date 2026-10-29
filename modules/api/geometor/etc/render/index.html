@@ -1,0 +1,335 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>geometor.etc.render &mdash; Project name not set  documentation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=5aff7b7d" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../../../_static/favicon.ico" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="../../../../../index.html">
+        <img src="../../../../../_static/logo.png" class="logo" alt="Logo"/>
+      </a>
+      <div class="org-repo">
+        <span class="org">geometor</span>
+        •
+        <span class="repo">etc</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../../../centers/index.html"  >Encyclopedia of Triangle Centers</a>
+        </li>
+        <li>
+          <a href="../../../../../glossary.html"  >Glossary</a>
+        </li>
+        <li>
+          <a href="../../../../../persons.html"  >Index Nominum (Geometers & Contributors)</a>
+        </li>
+        <li>
+          <a href="../../../../../bibliography.html"  >Bibliography & Cited Sources</a>
+        </li>
+        <li>
+          <a href="../../../../../mission/index.html"  >mission</a>
+        </li>
+        <li>
+          <a href="../../../../index.html"  >modules</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main>
+    <article>
+      <header>
+      <nav class="breadcrumbs">
+        <span><a href="../../../../../index.html">Home</a></span>
+          <span>/</span>
+        <span><a href="../../../../index.html">modules</a></span>
+      </nav>
+        <nav class="context">
+          <div class="prev">
+             <a href="../parser/index.html" title="geometor.etc.parser" >Prev</a>
+          </div>
+          <div class="next">
+            <a href="../transform/index.html" title="geometor.etc.transform" >Next</a>
+          </div>
+        </nav>
+      </header>
+      <div class="content body" role="main">
+        <section class="level-1" id="module-geometor.etc.render">
+          <span id="geometor-etc-render"></span><h1>geometor.etc.render<a class="headerlink" href="#module-geometor.etc.render" title="Link to this heading">¶</a></h1>
+          <p>Render <cite>geometor.model.Model</cite> instances into standalone SVGs following <cite>geometor.explorer</cite> conventions.</p>
+          <section class="level-2" id="attributes">
+          <h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+          <table class="autosummary longtable docutils align-default">
+          <tbody>
+          <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.render.EXPLORER_SVG_CSS" title="geometor.etc.render.EXPLORER_SVG_CSS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLORER_SVG_CSS</span></code></a></p></td>
+          <td><p></p></td>
+          </tr>
+          </tbody>
+          </table>
+          </section>
+          <section class="level-2" id="functions">
+          <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+          <table class="autosummary longtable docutils align-default">
+          <tbody>
+          <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.render.model_to_elements_list" title="geometor.etc.render.model_to_elements_list"><code class="xref py py-obj docutils literal notranslate"><span class="pre">model_to_elements_list</span></code></a>(→ list[dict[str, Any]])</p></td>
+          <td><p>Convert a <cite>geometor.model.Model</cite> into a chronological list of browser-ready element dicts.</p></td>
+          </tr>
+          <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.render.render_model_svg" title="geometor.etc.render.render_model_svg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">render_model_svg</span></code></a>(→ str)</p></td>
+          <td><p>Render a <cite>geometor.model.Model</cite> to an Explorer-compatible SVG string.</p></td>
+          </tr>
+          <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.render.write_center_svg" title="geometor.etc.render.write_center_svg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">write_center_svg</span></code></a>(→ pathlib.Path)</p></td>
+          <td><p>Render and write a center's <cite>Model</cite> SVG to <cite>output_path</cite>.</p></td>
+          </tr>
+          </tbody>
+          </table>
+          </section>
+          <section class="level-2" id="module-contents">
+          <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+          <dl class="py data">
+          <dt class="sig sig-object py" id="geometor.etc.render.EXPLORER_SVG_CSS">
+          <span class="sig-prename descclassname"><span class="pre">geometor.etc.render.</span></span><span class="sig-name descname"><span class="pre">EXPLORER_SVG_CSS</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">Multiline-String</span></span><a class="headerlink" href="#geometor.etc.render.EXPLORER_SVG_CSS" title="Link to this definition">¶</a></dt>
+          <dd><details><summary>Show Value</summary><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">"""</span>
+          <span class="sd">:root {</span>
+          <span class="sd">    --background-color: #121212;</span>
+          <span class="sd">    --text-color: #e0e0e0;</span>
+          <span class="sd">    --accent-color: #161616;</span>
+          <span class="sd">    --border-color: #333;</span>
+          <span class="sd">    --select-color: #0ff;</span>
+          <span class="sd">}</span>
+
+          <span class="sd">#drawing {</span>
+          <span class="sd">    width: 100%;</span>
+          <span class="sd">    height: auto;</span>
+          <span class="sd">    max-height: 520px;</span>
+          <span class="sd">    background-color: var(--accent-color);</span>
+          <span class="sd">    border: 1px solid var(--border-color);</span>
+          <span class="sd">    border-radius: 4px;</span>
+          <span class="sd">    display: block;</span>
+          <span class="sd">}</span>
+
+          <span class="sd">#points circle {</span>
+          <span class="sd">    fill: var(--text-color);</span>
+          <span class="sd">    stroke: var(--background-color);</span>
+          <span class="sd">    stroke-width: 2.5;</span>
+          <span class="sd">    vector-effect: non-scaling-stroke;</span>
+          <span class="sd">}</span>
+
+          <span class="sd">#points circle.given {</span>
+          <span class="sd">    fill: #6F6;</span>
+          <span class="sd">}</span>
+
+          <span class="sd">#points circle.guide {</span>
+          <span class="sd">    fill: orange;</span>
+          <span class="sd">    stroke-dasharray: none;</span>
+          <span class="sd">}</span>
+
+          <span class="sd">#points circle.selected,</span>
+          <span class="sd">#points circle.target {</span>
+          <span class="sd">    stroke: var(--select-color);</span>
+          <span class="sd">    fill: gold;</span>
+          <span class="sd">    stroke-width: 3;</span>
+          <span class="sd">}</span>
+
+          <span class="sd">#elements line {</span>
+          <span class="sd">    fill: none;</span>
+          <span class="sd">    stroke: #777;</span>
+          <span class="sd">    stroke-width: 1.5;</span>
+          <span class="sd">    vector-effect: non-scaling-stroke;</span>
+          <span class="sd">}</span>
+
+          <span class="sd">#elements line.sideline {</span>
+          <span class="sd">    stroke: #999;</span>
+          <span class="sd">    stroke-width: 2;</span>
+          <span class="sd">}</span>
+
+          <span class="sd">#elements line.central_line {</span>
+          <span class="sd">    stroke: #0bd;</span>
+          <span class="sd">    stroke-width: 1.75;</span>
+          <span class="sd">    stroke-opacity: 0.85;</span>
+          <span class="sd">}</span>
+
+          <span class="sd">#elements line.golden,</span>
+          <span class="sd">#elements line.euler {</span>
+          <span class="sd">    stroke: gold;</span>
+          <span class="sd">    stroke-width: 2;</span>
+          <span class="sd">}</span>
+
+          <span class="sd">#elements circle {</span>
+          <span class="sd">    fill: none;</span>
+          <span class="sd">    stroke: #C09;</span>
+          <span class="sd">    stroke-width: 2;</span>
+          <span class="sd">    vector-effect: non-scaling-stroke;</span>
+          <span class="sd">}</span>
+
+          <span class="sd">#elements circle.incircle {</span>
+          <span class="sd">    stroke: #e040fb;</span>
+          <span class="sd">}</span>
+
+          <span class="sd">#elements circle.nine_point_circle {</span>
+          <span class="sd">    stroke: #00e5ff;</span>
+          <span class="sd">    stroke-dasharray: 6, 3;</span>
+          <span class="sd">}</span>
+
+          <span class="sd">#elements .bisector {</span>
+          <span class="sd">    stroke-dasharray: 8, 4, 2, 4;</span>
+          <span class="sd">}</span>
+
+          <span class="sd">#elements .guide {</span>
+          <span class="sd">    stroke: orange;</span>
+          <span class="sd">    stroke-dasharray: 2, 4;</span>
+          <span class="sd">    stroke-opacity: 0.65;</span>
+          <span class="sd">}</span>
+
+          <span class="sd">#graphics polyline {</span>
+          <span class="sd">    stroke: #36c9;</span>
+          <span class="sd">    fill: none;</span>
+          <span class="sd">    stroke-width: 6;</span>
+          <span class="sd">    vector-effect: non-scaling-stroke;</span>
+          <span class="sd">}</span>
+
+          <span class="sd">#graphics polygon {</span>
+          <span class="sd">    stroke: #36c9;</span>
+          <span class="sd">    fill: #36c2;</span>
+          <span class="sd">    stroke-width: 6;</span>
+          <span class="sd">    vector-effect: non-scaling-stroke;</span>
+          <span class="sd">    stroke-linejoin: round;</span>
+          <span class="sd">    marker-start: url(#marker);</span>
+          <span class="sd">    marker-mid: url(#marker);</span>
+          <span class="sd">    marker-end: url(#marker);</span>
+          <span class="sd">}</span>
+
+          <span class="sd">#graphics polygon.secondary {</span>
+          <span class="sd">    stroke: rgba(144, 238, 144, 0.55);</span>
+          <span class="sd">    fill: rgba(144, 238, 144, 0.08);</span>
+          <span class="sd">    stroke-width: 3;</span>
+          <span class="sd">}</span>
+
+          <span class="sd">#labels text {</span>
+          <span class="sd">    fill: var(--text-color);</span>
+          <span class="sd">    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;</span>
+          <span class="sd">    font-weight: 600;</span>
+          <span class="sd">    paint-order: stroke;</span>
+          <span class="sd">    stroke: var(--accent-color);</span>
+          <span class="sd">    stroke-width: 3px;</span>
+          <span class="sd">    stroke-linecap: round;</span>
+          <span class="sd">    stroke-linejoin: round;</span>
+          <span class="sd">    vector-effect: non-scaling-stroke;</span>
+          <span class="sd">    user-select: none;</span>
+          <span class="sd">}</span>
+
+          <span class="sd">#labels text.target-label {</span>
+          <span class="sd">    fill: gold;</span>
+          <span class="sd">    font-weight: 700;</span>
+          <span class="sd">}</span>
+
+          <span class="sd">#labels text.given-label {</span>
+          <span class="sd">    fill: #8f8;</span>
+          <span class="sd">}</span>
+          <span class="sd">"""</span>
+          </pre></div>
+          </div>
+          </details></dd></dl>
+
+          <dl class="py function">
+          <dt class="sig sig-object py" id="geometor.etc.render.model_to_elements_list">
+          <span class="sig-prename descclassname"><span class="pre">geometor.etc.render.</span></span><span class="sig-name descname"><span class="pre">model_to_elements_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.render.model_to_elements_list" title="Link to this definition">¶</a></dt>
+          <dd><p>Convert a <cite>geometor.model.Model</cite> into a chronological list of browser-ready element dicts.</p>
+          </dd></dl>
+
+          <dl class="py function">
+          <dt class="sig sig-object py" id="geometor.etc.render.render_model_svg">
+          <span class="sig-prename descclassname"><span class="pre">geometor.etc.render.</span></span><span class="sig-name descname"><span class="pre">render_model_svg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">svg_width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">800</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">svg_height</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">600</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_labels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subtitle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.render.render_model_svg" title="Link to this definition">¶</a></dt>
+          <dd><p>Render a <cite>geometor.model.Model</cite> to an Explorer-compatible SVG string.</p>
+          </dd></dl>
+
+          <dl class="py function">
+          <dt class="sig sig-object py" id="geometor.etc.render.write_center_svg">
+          <span class="sig-prename descclassname"><span class="pre">geometor.etc.render.</span></span><span class="sig-name descname"><span class="pre">write_center_svg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">subtitle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></span><a class="headerlink" href="#geometor.etc.render.write_center_svg" title="Link to this definition">¶</a></dt>
+          <dd><p>Render and write a center’s <cite>Model</cite> SVG to <cite>output_path</cite>.</p>
+          </dd></dl>
+
+          </section>
+          </section>
+
+      </div>
+      <footer>
+
+        <nav class="context">
+          <div class="prev">
+             <a href="../parser/index.html" title="geometor.etc.parser" >Prev</a>
+          </div>
+          <div class="next">
+            <a href="../transform/index.html" title="geometor.etc.transform" >Next</a>
+          </div>
+        </nav>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../../../types/center.html">center</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright .
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../../_static/documentation_options.js?v=5929fcd5"></script>
+  <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../../../_static/js/geometor_interactive.js?v=832534ec"></script>
+  <script src="../../../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

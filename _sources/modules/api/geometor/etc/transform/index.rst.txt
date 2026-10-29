@@ -3,6 +3,11 @@ geometor.etc.transform
 
 .. py:module:: geometor.etc.transform
 
+.. autoapi-nested-parse::
+
+   Transform parsed ETC center and preamble structures into semantic ReStructuredText.
+
+
 
 Functions
 ---------
@@ -20,50 +25,21 @@ Module Contents
 
 .. py:function:: format_rst_header(title: str, char: str = '=') -> str
 
-   Create an RST header.
-
-   :param title: The header title.
-   :type title: str
-   :param char: The underline character. Defaults to '='.
-   :type char: str, optional
-
-   :returns: The formatted RST header string.
-   :rtype: str
+   Create an RST section header with matching underline length.
 
 
-.. py:function:: wrap_refs(text: str) -> str
+.. py:function:: wrap_refs(text: str, valid_centers: set[int] | None = None) -> str
 
-   Wrap X(n) references in :ref:`X.n`.
-
-   :param text: The input text.
-   :type text: str
-
-   :returns: The text with references wrapped.
-   :rtype: str
+   Wrap X(n) and X[n] references in `:ref:`X(n) <X(n)>`` outside existing RST roles.
 
 
-.. py:function:: transform_center_to_rst(data: dict, glossary_terms: list[str] | None = None) -> str
+.. py:function:: transform_center_to_rst(data: dict[str, Any], glossary_terms: dict[str, Any] | list[str] | None = None, preambles: list[dict[str, Any]] | None = None, valid_centers: set[int] | None = None, figure_uri: str | None = None, kimberling_figure_uri: str | None = None, search_value: float | None = None, include_model_py: bool = False) -> str
 
-   Transform a center data dictionary into an RST string.
-
-   :param data: The center data dictionary.
-   :type data: dict
-   :param glossary_terms: List of glossary terms to link.
-   :type glossary_terms: list, optional
-
-   :returns: The generated RST content.
-   :rtype: str
+   Transform a parsed center dictionary into a rich semantic RST document.
 
 
-.. py:function:: generate_rst_files(centers: list[dict], output_dir: str, glossary_terms: list[str] | None = None) -> None
+.. py:function:: generate_rst_files(centers: list[dict[str, Any]], output_dir: str | pathlib.Path, glossary_terms: dict[str, Any] | list[str] | None = None, preambles_by_center: dict[str, list[dict[str, Any]]] | None = None, valid_centers: set[int] | None = None, render_graphics: bool = True, constructions_dir: str | pathlib.Path | None = None) -> None
 
-   Generate RST files for a list of centers.
-
-   :param centers: List of center data dictionaries.
-   :type centers: list
-   :param output_dir: Directory to save the generated RST files.
-   :type output_dir: str
-   :param glossary_terms: List of glossary terms to link.
-   :type glossary_terms: list, optional
+   Generate per-center folders (`x-NNNNN/`) with `index.rst`, `model.py`, SVGs, and `geometor.model` JSONs.
 
 

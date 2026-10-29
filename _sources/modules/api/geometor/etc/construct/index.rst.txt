@@ -1,0 +1,166 @@
+geometor.etc.construct
+======================
+
+.. py:module:: geometor.etc.construct
+
+.. autoapi-nested-parse::
+
+   Symbolic and numerical geometric construction engine for ETC triangle centers using `geometor.model`.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.etc.construct.TRIANGLE_PRESETS
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.etc.construct.TriangleContext
+   geometor.etc.construct.CenterRegistry
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.construct.build_center_model
+   geometor.etc.construct.generate_center_model_py
+
+
+Module Contents
+---------------
+
+.. py:data:: TRIANGLE_PRESETS
+   :type:  dict[str, tuple[float, float, float]]
+
+.. py:class:: TriangleContext(a: float, b: float, c: float)
+
+   Precomputed triangle invariants and Cartesian coordinates on the unit baseline AB (c = 1).
+
+
+   .. py:attribute:: raw_a
+
+
+   .. py:attribute:: raw_b
+
+
+   .. py:attribute:: raw_c
+
+
+   .. py:attribute:: scale
+
+
+   .. py:attribute:: a
+
+
+   .. py:attribute:: b
+
+
+   .. py:attribute:: c
+      :value: 1.0
+
+
+
+   .. py:attribute:: A_xy
+      :value: (0.0, 0.0)
+
+
+
+   .. py:attribute:: B_xy
+      :value: (1.0, 0.0)
+
+
+
+   .. py:attribute:: C_xy
+
+
+   .. py:attribute:: s
+
+
+   .. py:attribute:: area
+
+
+   .. py:attribute:: R
+
+
+   .. py:attribute:: r
+
+
+   .. py:attribute:: A_rad
+
+
+   .. py:attribute:: B_rad
+
+
+   .. py:attribute:: C_rad
+
+
+   .. py:attribute:: omega
+
+
+   .. py:attribute:: eval_envs
+      :type:  tuple[dict[str, Any], dict[str, Any], dict[str, Any]]
+
+
+   .. py:method:: bary_to_cartesian(u: float, v: float, w: float) -> tuple[float, float] | None
+
+      Convert homogeneous barycentric coordinates (u : v : w) to Cartesian (x, y) on unit AB.
+
+
+
+   .. py:method:: trilinear_to_bary(alpha: float, beta: float, gamma: float) -> tuple[float, float, float]
+
+      Convert homogeneous trilinear coordinates to homogeneous barycentrics.
+
+
+
+   .. py:method:: normalize_bary(u: float, v: float, w: float) -> tuple[float, float, float]
+
+      Normalize homogeneous barycentrics so u + v + w = 1 (or unit norm if sum is near 0).
+
+
+
+   .. py:method:: kimberling_search_value(u: float, v: float, w: float) -> float
+
+      Compute Kimberling's signed distance h_a from X(n) to side BC for raw (a, b, c).
+
+
+
+.. py:class:: CenterRegistry(centers: list[dict[str, Any]], ctx: TriangleContext)
+
+   Evaluates and caches barycentric and Cartesian coordinates for ETC centers on a TriangleContext.
+
+
+   .. py:attribute:: ctx
+
+
+   .. py:attribute:: centers_by_num
+      :type:  dict[int, dict[str, Any]]
+
+
+   .. py:attribute:: bary_cache
+      :type:  dict[int, tuple[float, float, float]]
+
+
+   .. py:attribute:: xy_cache
+      :type:  dict[int, tuple[float, float]]
+
+
+.. py:function:: build_center_model(center_data: dict[str, Any], registry: CenterRegistry, include_baseline_guides: bool = True) -> geometor.model.Model
+
+   Build a `geometor.model.Model` for `center_data` starting from the unit segment AB.
+
+
+.. py:function:: generate_center_model_py(center_data: dict[str, Any], registry: CenterRegistry) -> str
+
+   Generate a standalone, composable `geometor.model` Python script (`model.py`) for `center_data`.
+
+

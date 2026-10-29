@@ -1,0 +1,73 @@
+:order: 94
+:type: center
+:canonical_id: X(94)
+:dependencies: X(2), X(3), X(4), X(5), X(6), X(13), X(14), X(15), X(16), X(23), X(30), X(48), X(49), X(50), X(74), X(93), X(96), X(98), X(107), X(110), X(143), X(186), X(264), X(265), X(275), X(300), X(301), X(323), X(324), X(328), X(476), X(523), X(850), X(925), X(34834)
+
+.. _X(94):
+
+X(94) = ISOGONAL CONJUGATE OF X(50)
+===================================
+
+.. figure:: x-00094.svg
+   :alt: X(94) = ISOGONAL CONJUGATE OF X(50)
+   :align: center
+
+   **X(94) = ISOGONAL CONJUGATE OF X(50)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+
+Coordinates
+-----------
+
+Trilinears
+~~~~~~~~~~
+
+* :math:`\csc 3A : \csc 3B : \csc 3C`
+
+Barycentrics
+~~~~~~~~~~~~
+
+* :math:`\sin A \csc 3A : \sin B \csc 3B : \sin C \csc 3C`
+* :math:`b^2 c^2 / ((a^2 - b^2 - c^2)^2 - b^2 c^2) : :`
+
+* **Kimberling (6, 9, 13) Search Value:** :math:`-0.265365586504`
+
+Notes
+-----
+
+.. container:: note-item
+
+   Let A1B1C1 and A2B2C2 be the 1st and 2nd Ehrmann circumscribing triangles. Let A' be the :term:`trilinear pole <trilinear-pole>` of line A1A2, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(94) <X(94)>`. Let A1'B1'C1' and A2'B2'C2' be the 1st and 2nd Ehrmann inscribed triangles. Then :ref:`X(94) <X(94)>` is the radical center of nine-point circles of AA1'A2', BB1'B2', CC1'C2'. (:person:`Randy Hutson <randy-hutson>`, June 27, 2018)
+
+.. container:: note-item
+
+   Let A'B'C' be the medial or :term:`orthic triangle <orthic-triangle>` of ABC and A″, B″, C″ the centers of circles {A', :ref:`X(3) <X(3)>`, :ref:`X(4) <X(4)>`}}, {B', :ref:`X(3) <X(3)>`, :ref:`X(4) <X(4)>`}} and {C', :ref:`X(3) <X(3)>`, :ref:`X(4) <X(4)>`}}, respectively. Then A″, B″, C″ are collinear on the :term:`trilinear polar <trilinear-polar>` of :ref:`X(94) <X(94)>`. (:person:`César Lozada <cesar-lozada>`, March 9, 2021).
+
+Incidence
+---------
+
+:ref:`X(94) <X(94)>` lies on the Kiepert hyperbola and on these lines:
+
+{:ref:`2 <X(2)>`, 300}, {:ref:`4 <X(4)>`, 143}, {:ref:`23 <X(23)>`, :ref:`98 <X(98)>`}, {:ref:`49 <X(49)>`, :ref:`93 <X(93)>`}, {:ref:`96 <X(96)>`, 925}, {275, 324}
+
+Relations
+---------
+
+* :ref:`X(94) <X(94)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(50) <X(50)>`
+* :ref:`X(94) <X(94)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(323)
+* :ref:`X(94) <X(94)>` = :term:`anticomplement <anticomplement>` of X(34834)
+* :ref:`X(94) <X(94)>` = :term:`cevapoint <cevapoint>` of :ref:`X(49) <X(49)>` and :ref:`X(50) <X(50)>`
+* :ref:`X(94) <X(94)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`30 <X(30)>`, 264), (:ref:`50 <X(50)>`, :ref:`93 <X(93)>`), (265, 328)
+* :ref:`X(94) <X(94)>` = X(300)-:term:`Hirst inverse <hirst-inverse>` of X(301)
+* :ref:`X(94) <X(94)>` = trilinear pole of PU(5) (line :ref:`X(5) <X(5)>`\ X(523))
+* :ref:`X(94) <X(94)>` = pole wrt polar circle of trilinear polar of X(186)
+* :ref:`X(94) <X(94)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of X(186)
+* :ref:`X(94) <X(94)>` = barycentric product X(476)\*X(850)
+* :ref:`X(94) <X(94)>` = trilinear pole of PU(173)
+* :ref:`X(94) <X(94)>` = trilinear product :ref:`X(74) <X(74)>`\ \*X(107) (circumcircle-:ref:`X(4) <X(4)>` antipodes)
+* :ref:`X(94) <X(94)>` = barycentric quotient X(476)/X(110)
+* :ref:`X(94) <X(94)>` = intersection of the tangent to hyperbola {A,B,C,\ :ref:`X(6) <X(6)>`,\ :ref:`X(13) <X(13)>`,\ :ref:`X(16) <X(16)>`}} at :ref:`X(13) <X(13)>` and the tangent to hyperbola {A,B,C,\ :ref:`X(6) <X(6)>`,\ :ref:`X(14) <X(14)>`,\ :ref:`X(15) <X(15)>`}} at :ref:`X(14) <X(14)>`
+
+Construction
+------------
+
+.. literalinclude:: model.py
+   :language: python
