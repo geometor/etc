@@ -48,12 +48,6 @@ Tripolars
 
 * **Kimberling (6, 9, 13) Search Value:** :math:`19.241345199319`
 
-.. figure:: x-00020-kimberling.svg
-   :alt: X(20) = DE LONGCHAMPS POINT on Kimberling (6, 9, 13) triangle
-   :align: center
-
-   **X(20)** on Kimberling's canonical uniqueness test triangle :math:`(a, b, c) = (6, 9, 13)` (obtuse scalene, unit baseline :math:`AB = 1`).
-
 Linear Combinations
 -------------------
 

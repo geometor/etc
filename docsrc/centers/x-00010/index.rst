@@ -42,12 +42,6 @@ Tripolars
 
 * **Kimberling (6, 9, 13) Search Value:** :math:`3.098898934005`
 
-.. figure:: x-00010-kimberling.svg
-   :alt: X(10) = SPIEKER CENTER on Kimberling (6, 9, 13) triangle
-   :align: center
-
-   **X(10)** on Kimberling's canonical uniqueness test triangle :math:`(a, b, c) = (6, 9, 13)` (obtuse scalene, unit baseline :math:`AB = 1`).
-
 Linear Combinations
 -------------------
 

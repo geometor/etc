@@ -50,7 +50,13 @@ def add_point(
             model[existing].guide = False
         return existing
 
-    pt = spg.Point(sp.Float(round(float(x), 8)), sp.Float(round(float(y), 8)), evaluate=False)
+    rx = round(float(x), 8)
+    ry = round(float(y), 8)
+    pt = spg.Point(sp.Float(rx), sp.Float(ry), evaluate=False)
+    step = 0
+    while pt in model and model[pt].ID != ID:
+        step += 1
+        pt = spg.Point(sp.Float(rx + step * 1e-7), sp.Float(ry), evaluate=False)
     el = Element(
         pt,
         parents=parents or [],
@@ -71,7 +77,7 @@ def add_line(
     guide: bool = False,
 ) -> spg.Line | None:
     """Add a `Line` element through `pt1` and `pt2` in `model`."""
-    if pt1 == pt2:
+    if pt1 == pt2 or math.hypot(float(pt1.x) - float(pt2.x), float(pt1.y) - float(pt2.y)) < 1e-5:
         return None
     if not ID:
         ID = f"[ {model[pt1].ID} {model[pt2].ID} ]"

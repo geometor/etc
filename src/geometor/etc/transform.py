@@ -242,17 +242,6 @@ def transform_center_to_rst(
             )
             lines.append("")
 
-    if kimberling_figure_uri:
-        lines.append(f".. figure:: {kimberling_figure_uri}")
-        lines.append(f"   :alt: {full_title} on Kimberling (6, 9, 13) triangle")
-        lines.append("   :align: center")
-        lines.append("")
-        lines.append(
-            f"   **{key}** on Kimberling's canonical uniqueness test triangle "
-            r":math:`(a, b, c) = (6, 9, 13)` (obtuse scalene, unit baseline :math:`AB = 1`)."
-        )
-        lines.append("")
-
     # 2. Linear Combinations Section (-)
     combos = data.get("combinations") or []
     if combos:
@@ -416,6 +405,8 @@ def _process_center_index(idx: int) -> None:
 
     out_path: Path = state["out_path"]
     acute_reg = state["acute_reg"]
+    right_reg = state["right_reg"]
+    kepler_reg = state["kepler_reg"]
     kimb_reg = state["kimb_reg"]
     kimb_ctx = state["kimb_ctx"]
     render_graphics: bool = state["render_graphics"]
@@ -441,7 +432,6 @@ def _process_center_index(idx: int) -> None:
     model_py_path = entry_dir / "model.py"
 
     figure_uri: str | None = None
-    kimb_figure_uri: str | None = None
     search_val: float | None = None
     has_model_py = False
 
@@ -451,6 +441,8 @@ def _process_center_index(idx: int) -> None:
             search_val = kimb_ctx.kimberling_search_value(*kb)
 
     svg_name = f"x-{num:05d}.svg"
+    right_svg_name = f"x-{num:05d}-right.svg"
+    kepler_svg_name = f"x-{num:05d}-kepler.svg"
     kimb_svg_name = f"x-{num:05d}-kimberling.svg"
 
     if num in acute_reg.xy_cache:
@@ -468,19 +460,32 @@ def _process_center_index(idx: int) -> None:
         model_acute.save(str(entry_dir / f"x-{num:05d}.json"))
         figure_uri = svg_name
 
-        if num <= 20 and num in kimb_reg.xy_cache:
+        if num in right_reg.xy_cache:
+            model_right = build_center_model(center, right_reg)
+            write_center_svg(
+                model_right,
+                entry_dir / right_svg_name,
+                subtitle="(a, b, c) = (3, 4, 5) | AB = 1",
+            )
+
+        if num in kepler_reg.xy_cache:
+            model_kepler = build_center_model(center, kepler_reg)
+            write_center_svg(
+                model_kepler,
+                entry_dir / kepler_svg_name,
+                subtitle="Kepler (1, √φ, φ) | AB = 1",
+            )
+
+        if num in kimb_reg.xy_cache:
             model_kimb = build_center_model(center, kimb_reg)
             write_center_svg(
                 model_kimb,
                 entry_dir / kimb_svg_name,
                 subtitle="Kimberling (6, 9, 13) | AB = 1",
             )
-            kimb_figure_uri = kimb_svg_name
     else:
         if (entry_dir / svg_name).exists():
             figure_uri = svg_name
-        if (entry_dir / kimb_svg_name).exists():
-            kimb_figure_uri = kimb_svg_name
         if model_py_path.exists():
             has_model_py = True
 
@@ -493,7 +498,6 @@ def _process_center_index(idx: int) -> None:
         preambles=center_preambles,
         valid_centers=valid_centers,
         figure_uri=figure_uri,
-        kimberling_figure_uri=kimb_figure_uri,
         search_value=search_val,
         include_model_py=has_model_py,
     )
@@ -543,10 +547,14 @@ def generate_rst_files(
     if glossary_terms:
         _get_glossary_lookup_and_pattern(glossary_terms)
 
-    # Build coordinate and construction registries on (5, 6, 7) and Kimberling (6, 9, 13)
+    # Build coordinate and construction registries on (5, 6, 7), (3, 4, 5), Kepler, and Kimberling (6, 9, 13)
     print(f"Resolving coordinates and incidences for {len(centers)} centers...", flush=True)
     acute_ctx = TriangleContext(*TRIANGLE_PRESETS["acute"])
     acute_reg = CenterRegistry(centers, acute_ctx)
+    right_ctx = TriangleContext(*TRIANGLE_PRESETS["right"])
+    right_reg = CenterRegistry(centers, right_ctx)
+    kepler_ctx = TriangleContext(*TRIANGLE_PRESETS["kepler"])
+    kepler_reg = CenterRegistry(centers, kepler_ctx)
     kimb_ctx = TriangleContext(*TRIANGLE_PRESETS["kimberling"])
     kimb_reg = CenterRegistry(centers, kimb_ctx)
     print(f"Resolved {len(acute_reg.xy_cache)} / {len(centers)} centers.", flush=True)
@@ -570,6 +578,8 @@ def generate_rst_files(
             "centers": centers,
             "out_path": out_path,
             "acute_reg": acute_reg,
+            "right_reg": right_reg,
+            "kepler_reg": kepler_reg,
             "kimb_reg": kimb_reg,
             "kimb_ctx": kimb_ctx,
             "render_graphics": render_graphics,

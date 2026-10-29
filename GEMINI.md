@@ -25,7 +25,7 @@ It is responsible for:
 - `resources/centers/`: Full archive of 53,144 generated per-center folders (git-ignored).
 - `resources/`: Extracted apparatus registries (`glossary.json`, `persons.json`, `citations.json`).
 - `src/geometor/etc/`: Core Python package (`ingest.py`, `parser.py`, `glossary.py`, `ops.py`, `construct.py`, `render.py`, `transform.py`, `__main__.py`).
-- `docsrc/centers/x-NNNNN/`: Per-center folder containing `index.rst`, `model.py`, `x-NNNNN.svg`, and `x-NNNNN.json`.
+- `docsrc/centers/x-NNNNN/`: Per-center folder containing `index.rst`, `model.py`, `x-NNNNN.json`, and interactive SVGs across 4 reference triangles (`x-NNNNN.svg`, `x-NNNNN-right.svg`, `x-NNNNN-kepler.svg`, `x-NNNNN-kimberling.svg`).
 
 ## CLI Usage
 

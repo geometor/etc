@@ -14,7 +14,6 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     incenter_of,
-    point_from_barycentrics,
     promote_point_to_top,
     symmedian_point_of,
 )
@@ -29,7 +28,7 @@ def construct_x_00045(
     X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
     central_line(model, X_1, X_6, 1, 6)
     X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
-    X_88 = point_from_barycentrics(model, A, B, C, -0, 1, -0, ID="X(88)", classes=["center"])
+    X_88 = eval_trilinear_point(model, A, B, C, '1/(b + c - 2*a)', ID="X(88)", classes=["center"])
     central_line(model, X_2, X_88, 2, 88)
     X_45 = eval_trilinear_point(model, A, B, C, '2*b + 2*c - a', ID="X(45)", classes=["selected", "target"])
     return promote_point_to_top(model, X_45)

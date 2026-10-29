@@ -101,6 +101,22 @@ class TriangleContext:
             {**safe_funcs, "a": b_r, "b": c_r, "c": a_r, "A": B_rad, "B": C_rad, "C": A_rad, "Ra": Rb, "Rb": Rc, "Rc": Ra, "SA": SB, "SB": SC, "SC": SA},
             {**safe_funcs, "a": c_r, "b": a_r, "c": b_r, "A": C_rad, "B": A_rad, "C": B_rad, "Ra": Rc, "Rb": Ra, "Rc": Rb, "SA": SC, "SB": SA, "SC": SB},
         )
+        # Perturbed environments for removable singularities on right/special triangles (e.g. C = 90°)
+        c_p = c_r * (1.0 - 1e-7)
+        s_p = 0.5 * (a_r + b_r + c_p)
+        area_p = math.sqrt(max(1e-16, s_p * (s_p - a_r) * (s_p - b_r) * (s_p - c_p)))
+        A_p = math.acos(max(-1.0, min(1.0, (b_r**2 + c_p**2 - a_r**2) / (2.0 * b_r * c_p))))
+        B_p = math.acos(max(-1.0, min(1.0, (c_p**2 + a_r**2 - b_r**2) / (2.0 * c_p * a_r))))
+        C_p = math.acos(max(-1.0, min(1.0, (a_r**2 + b_r**2 - c_p**2) / (2.0 * a_r * b_r))))
+        SA_p = 0.5 * (b_r**2 + c_p**2 - a_r**2)
+        SB_p = 0.5 * (c_p**2 + a_r**2 - b_r**2)
+        SC_p = 0.5 * (a_r**2 + b_r**2 - c_p**2)
+        Ra_p, Rb_p, Rc_p = area_p / (s_p - a_r), area_p / (s_p - b_r), area_p / (s_p - c_p)
+        self.perturbed_eval_envs: tuple[dict[str, Any], dict[str, Any], dict[str, Any]] = (
+            {**safe_funcs, "a": a_r, "b": b_r, "c": c_p, "A": A_p, "B": B_p, "C": C_p, "Ra": Ra_p, "Rb": Rb_p, "Rc": Rc_p, "SA": SA_p, "SB": SB_p, "SC": SC_p},
+            {**safe_funcs, "a": b_r, "b": c_p, "c": a_r, "A": B_p, "B": C_p, "C": A_p, "Ra": Rb_p, "Rb": Rc_p, "Rc": Ra_p, "SA": SB_p, "SB": SC_p, "SC": SA_p},
+            {**safe_funcs, "a": c_p, "b": a_r, "c": b_r, "A": C_p, "B": A_p, "C": B_p, "Ra": Rc_p, "Rb": Ra_p, "Rc": Rb_p, "SA": SC_p, "SB": SA_p, "SC": SB_p},
+        )
 
     def bary_to_cartesian(self, u: float, v: float, w: float) -> tuple[float, float] | None:
         """Convert homogeneous barycentric coordinates (u : v : w) to Cartesian (x, y) on unit AB."""
@@ -280,20 +296,27 @@ def _compile_expr(expr_str: str) -> Any:
 
 def _eval_cyclic(expr_str: str, ctx: TriangleContext) -> tuple[float, float, float] | None:
     """Evaluate a cyclic coordinate expression f(a, b, c, A, B, C) for all three components."""
-    vals: list[float] = []
+    code = None
     try:
         code = _compile_expr(expr_str)
-        for env in ctx.eval_envs:
-            val = float(eval(code, _EMPTY_GLOBALS, env))
-            if not math.isfinite(val):
-                return None
-            vals.append(val)
     except Exception:
         return None
 
-    if all(abs(v) < 1e-14 for v in vals):
-        return None
-    return (vals[0], vals[1], vals[2])
+    for env_tuple in (ctx.eval_envs, ctx.perturbed_eval_envs):
+        vals: list[float] = []
+        ok = True
+        try:
+            for env in env_tuple:
+                val = float(eval(code, _EMPTY_GLOBALS, env))
+                if not math.isfinite(val):
+                    ok = False
+                    break
+                vals.append(val)
+        except Exception:
+            ok = False
+        if ok and len(vals) == 3 and not all(abs(v) < 1e-14 for v in vals):
+            return (vals[0], vals[1], vals[2])
+    return None
 
 
 def _bary_line(
@@ -528,8 +551,9 @@ class CenterRegistry:
                 k = int(m.group(1))
                 if k in self.bary_cache:
                     u, v, w = self.bary_cache[k]
-                    if abs(u * v * w) > 1e-14:
-                        return (a**2 / u, b**2 / v, c**2 / w)
+                    res = (a**2 * v * w, b**2 * w * u, c**2 * u * v)
+                    if math.hypot(*res) > 1e-14:
+                        return res
 
             # isotomic conjugate of X(k)
             m = re.match(
@@ -541,8 +565,9 @@ class CenterRegistry:
                 k = int(m.group(1))
                 if k in self.bary_cache:
                     u, v, w = self.bary_cache[k]
-                    if abs(u * v * w) > 1e-14:
-                        return (1.0 / u, 1.0 / v, 1.0 / w)
+                    res = (v * w, w * u, u * v)
+                    if math.hypot(*res) > 1e-14:
+                        return res
 
             # complement of X(k)
             m = re.match(
@@ -744,7 +769,22 @@ def _add_point(
     guide: bool = False,
 ) -> spg.Point:
     """Add a Point element directly to a `geometor.model.Model` with float/SymPy precision."""
-    pt = spg.Point(sp.Float(round(x, 8)), sp.Float(round(y, 8)), evaluate=False)
+    existing = model.get_element_by_ID(ID)
+    if existing is not None and isinstance(existing, spg.Point):
+        if classes:
+            for c in classes:
+                model[existing].classes[c] = ""
+        if not guide:
+            model[existing].guide = False
+        return existing
+
+    rx = round(float(x), 8)
+    ry = round(float(y), 8)
+    pt = spg.Point(sp.Float(rx), sp.Float(ry), evaluate=False)
+    step = 0
+    while pt in model and model[pt].ID != ID:
+        step += 1
+        pt = spg.Point(sp.Float(rx + step * 1e-7), sp.Float(ry), evaluate=False)
     el = Element(
         pt,
         parents=parents or [],
@@ -765,7 +805,7 @@ def _add_line(
     guide: bool = False,
 ) -> spg.Line | None:
     """Add a Line element between two points in `model`."""
-    if pt1 == pt2:
+    if pt1 == pt2 or math.hypot(float(pt1.x) - float(pt2.x), float(pt1.y) - float(pt2.y)) < 1e-5:
         return None
     if not ID:
         ID = f"[ {model[pt1].ID} {model[pt2].ID} ]"
@@ -931,6 +971,18 @@ def _detect_clues(center_data: dict[str, Any]) -> dict[str, bool]:
         or "isogonic" in text
         or "napoleon" in text
     )
+    has_brocard_circle = (
+        num in {15, 16, 182}
+        or "brocard circle" in text
+    )
+    has_orthocentroidal_circle = (
+        num in {381}
+        or "orthocentroidal circle" in text
+    )
+    has_fuhrmann_circle = (
+        num in {427}
+        or "fuhrmann circle" in text
+    )
 
     return {
         "circumcircle": has_circumcircle,
@@ -942,6 +994,9 @@ def _detect_clues(center_data: dict[str, Any]) -> dict[str, bool]:
         "extouch": has_extouch,
         "tangential": has_tangential,
         "equilateral": has_equilateral,
+        "brocard_circle": has_brocard_circle,
+        "orthocentroidal_circle": has_orthocentroidal_circle,
+        "fuhrmann_circle": has_fuhrmann_circle,
     }
 
 
@@ -1112,6 +1167,60 @@ def build_center_model(
             Sp_r = _add_point(model, sp_foot[0], sp_foot[1], ID="S_c", guide=True)
             _add_circle(model, X10, Sp_r, ID="spieker_circle", classes=["incircle"])
 
+    # Brocard Circle (diameter X(3)X(6), center X(182))
+    if clues.get("brocard_circle"):
+        X3 = get_or_add_center_pt(3, is_target=(num == 3))
+        X6 = get_or_add_center_pt(6, is_target=(num == 6))
+        if X3 is not None and X6 is not None:
+            x3_xy = registry.xy_cache[3]
+            x6_xy = registry.xy_cache[6]
+            X182 = _add_point(
+                model,
+                0.5 * (x3_xy[0] + x6_xy[0]),
+                0.5 * (x3_xy[1] + x6_xy[1]),
+                ID="X(182)",
+                classes=["selected", "target"] if num == 182 else ["center"],
+                guide=(num != 182),
+            )
+            added_centers[182] = X182
+            _add_circle(model, X182, X3, ID="brocard_circle", classes=["secondary_circle"])
+
+    # Orthocentroidal Circle (diameter X(2)X(4), center X(381))
+    if clues.get("orthocentroidal_circle"):
+        X2 = get_or_add_center_pt(2, is_target=(num == 2))
+        X4 = get_or_add_center_pt(4, is_target=(num == 4))
+        if X2 is not None and X4 is not None:
+            x2_xy = registry.xy_cache[2]
+            x4_xy = registry.xy_cache[4]
+            X381 = _add_point(
+                model,
+                0.5 * (x2_xy[0] + x4_xy[0]),
+                0.5 * (x2_xy[1] + x4_xy[1]),
+                ID="X(381)",
+                classes=["selected", "target"] if num == 381 else ["center"],
+                guide=(num != 381),
+            )
+            added_centers[381] = X381
+            _add_circle(model, X381, X2, ID="orthocentroidal_circle", classes=["secondary_circle"])
+
+    # Fuhrmann Circle (diameter X(4)X(8), center X(427))
+    if clues.get("fuhrmann_circle"):
+        X4 = get_or_add_center_pt(4, is_target=(num == 4))
+        X8 = get_or_add_center_pt(8, is_target=(num == 8))
+        if X4 is not None and X8 is not None:
+            x4_xy = registry.xy_cache[4]
+            x8_xy = registry.xy_cache[8]
+            X427 = _add_point(
+                model,
+                0.5 * (x4_xy[0] + x8_xy[0]),
+                0.5 * (x4_xy[1] + x8_xy[1]),
+                ID="X(427)",
+                classes=["selected", "target"] if num == 427 else ["center"],
+                guide=(num != 427),
+            )
+            added_centers[427] = X427
+            _add_circle(model, X427, X4, ID="fuhrmann_circle", classes=["secondary_circle"])
+
     # Equilateral apexes for Fermat / Isodynamic / Napoleon points (X(13)..X(18))
     if clues["equilateral"]:
         sign = -1.0 if num in {14, 16, 18} else 1.0
@@ -1171,6 +1280,32 @@ def build_center_model(
 
     # 5. Ensure target center X(n) is added last (topmost in SVG points group)
     target_pt = get_or_add_center_pt(num, is_target=True)
+
+    # 5b. Add named circles from `(c_num; Circle Name, ...)` in notes if c_num is resolved
+    if target_pt is not None:
+        notes_text = " ".join(center_data.get("notes") or [])
+        added_named_circles = 0
+        for cm in re.finditer(
+            r"\((\d+)\s*;\s*([A-Za-z0-9\-\'\s]+?circle)\s*[,;]",
+            notes_text,
+            re.IGNORECASE,
+        ):
+            c_center_num = int(cm.group(1))
+            c_name_raw = " ".join(cm.group(2).split())
+            if c_center_num in registry.xy_cache and c_center_num != num:
+                c_ctr_pt = get_or_add_center_pt(c_center_num, is_target=False)
+                if c_ctr_pt is not None:
+                    _add_circle(
+                        model,
+                        c_ctr_pt,
+                        target_pt,
+                        ID=c_name_raw,
+                        classes=["secondary_circle"],
+                    )
+                    added_named_circles += 1
+                    if added_named_circles >= 2:
+                        break
+
     if target_pt is not None:
         # Re-insert target_pt at the end of model dict so it renders on top
         el_data = model.pop(target_pt)
