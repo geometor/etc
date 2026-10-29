@@ -40,12 +40,6 @@ Tripolars
 
 * **Kimberling (6, 9, 13) Search Value:** :math:`-6.784211495839`
 
-.. figure:: x-00016-kimberling.svg
-   :alt: X(16) = 2nd ISODYNAMIC POINT on Kimberling (6, 9, 13) triangle
-   :align: center
-
-   **X(16)** on Kimberling's canonical uniqueness test triangle :math:`(a, b, c) = (6, 9, 13)` (obtuse scalene, unit baseline :math:`AB = 1`).
-
 Linear Combinations
 -------------------
 

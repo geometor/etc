@@ -110,6 +110,10 @@ Module Contents
       :type:  tuple[dict[str, Any], dict[str, Any], dict[str, Any]]
 
 
+   .. py:attribute:: perturbed_eval_envs
+      :type:  tuple[dict[str, Any], dict[str, Any], dict[str, Any]]
+
+
    .. py:method:: bary_to_cartesian(u: float, v: float, w: float) -> tuple[float, float] | None
 
       Convert homogeneous barycentric coordinates (u : v : w) to Cartesian (x, y) on unit AB.

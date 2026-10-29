@@ -39,12 +39,6 @@ Tripolars
 
 * **Kimberling (6, 9, 13) Search Value:** :math:`1.334163924620`
 
-.. figure:: x-00012-kimberling.svg
-   :alt: X(12) = {X(1),X(5)}-HARMONIC CONJUGATE OF X(11) on Kimberling (6, 9, 13) triangle
-   :align: center
-
-   **X(12)** on Kimberling's canonical uniqueness test triangle :math:`(a, b, c) = (6, 9, 13)` (obtuse scalene, unit baseline :math:`AB = 1`).
-
 Linear Combinations
 -------------------
 

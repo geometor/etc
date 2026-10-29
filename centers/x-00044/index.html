@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=5aff7b7d" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=156d9f89" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -79,7 +79,2658 @@
         <section class="level-1" id="x-44-line-conjugate-of-x-1">
           <span id="x-44"></span><h1>X(44) = -LINE CONJUGATE OF X(1)<a class="headerlink" href="#x-44-line-conjugate-of-x-1" title="Link to this heading">¶</a></h1>
           <figure class="align-center" id="id1">
-          <img alt="X(44) = -LINE CONJUGATE OF X(1)" src="../../_images/x-00044.svg" />
+          <div class="etc-graphics-panel">
+            <div class="etc-triangle-tabs" role="tablist" aria-label="Reference Triangle">
+              <button type="button" class="etc-tab-btn active" role="tab" aria-selected="true" data-tab="acute" title="Acute Scalene Triangle (5, 6, 7)" data-caption-html="&lt;strong&gt;X(44) = -LINE CONJUGATE OF X(1)&lt;/strong&gt; constructed on acute reference triangle &lt;code&gt;(a, b, c) = (5, 6, 7)&lt;/code&gt; with unit baseline &lt;code&gt;AB = 1&lt;/code&gt;.">5, 6, 7</button>
+              <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="right" title="Egyptian Right Triangle (3, 4, 5)" data-caption-html="&lt;strong&gt;X(44) = -LINE CONJUGATE OF X(1)&lt;/strong&gt; constructed on Egyptian right triangle &lt;code&gt;(a, b, c) = (3, 4, 5)&lt;/code&gt; with unit baseline &lt;code&gt;AB = 1&lt;/code&gt;.">3, 4, 5</button>
+              <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="kepler" title="Kepler Golden Right Triangle (1, √φ, φ)" data-caption-html="&lt;strong&gt;X(44) = -LINE CONJUGATE OF X(1)&lt;/strong&gt; constructed on Kepler golden right triangle &lt;code&gt;(a, b, c) = (1, √φ, φ)&lt;/code&gt; with unit baseline &lt;code&gt;AB = 1&lt;/code&gt;.">Kepler</button>
+              <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="kimberling" title="Kimberling Obtuse Scalene Triangle (6, 9, 13)" data-caption-html="&lt;strong&gt;X(44) = -LINE CONJUGATE OF X(1)&lt;/strong&gt; constructed on Kimberling&#x27;s canonical uniqueness test triangle &lt;code&gt;(a, b, c) = (6, 9, 13)&lt;/code&gt; (obtuse scalene, unit baseline &lt;code&gt;AB = 1&lt;/code&gt;).">Kimberling</button>
+            </div>
+          <div class="etc-tab-pane active" data-tab-pane="acute">
+          <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.636216 -2.330515 3.415289 2.561466" data-initial-viewbox="-0.636216 -2.330515 3.415289 2.561466" preserveAspectRatio="xMidYMid meet">
+            <style>
+          :root {
+              --background-color: #121212;
+              --text-color: #e0e0e0;
+              --accent-color: #161616;
+              --border-color: #333;
+              --select-color: #0ff;
+          }
+
+          svg.geometor-etc-drawing {
+              width: 100%;
+              height: auto;
+              max-height: 540px;
+              background-color: var(--accent-color);
+              border: 1px solid var(--border-color);
+              border-radius: 4px;
+              display: block;
+              user-select: none;
+              touch-action: none;
+              cursor: grab;
+          }
+
+          svg.geometor-etc-drawing.is-panning {
+              cursor: grabbing;
+          }
+
+          svg.geometor-etc-drawing.hide-labels #labels .point-label,
+          svg.geometor-etc-drawing.hide-labels #labels .target-label,
+          svg.geometor-etc-drawing.hide-labels #labels .given-label {
+              display: none;
+          }
+
+          svg.geometor-etc-drawing.hide-guides .guide {
+              display: none !important;
+          }
+
+          #points circle {
+              fill: var(--text-color);
+              stroke: var(--background-color);
+              stroke-width: 2.5;
+              vector-effect: non-scaling-stroke;
+              cursor: pointer;
+              transition: fill 0.12s ease, stroke 0.12s ease;
+          }
+
+          #points circle.given {
+              fill: #6F6;
+          }
+
+          #points circle.guide {
+              fill: orange;
+              stroke-dasharray: none;
+          }
+
+          #points circle.selected,
+          #points circle.target {
+              stroke: var(--select-color);
+              fill: gold;
+              stroke-width: 3;
+          }
+
+          #points circle:hover,
+          #points circle.hover {
+              fill: var(--select-color) !important;
+              stroke: #fff !important;
+              stroke-width: 3.5 !important;
+          }
+
+          #elements line {
+              fill: none;
+              stroke: #777;
+              stroke-width: 1.5;
+              vector-effect: non-scaling-stroke;
+              cursor: pointer;
+          }
+
+          #elements line.sideline {
+              stroke: #999;
+              stroke-width: 2;
+          }
+
+          #elements line.central_line {
+              stroke: #0bd;
+              stroke-width: 1.75;
+              stroke-opacity: 0.85;
+          }
+
+          #elements line.golden,
+          #elements line.euler {
+              stroke: gold;
+              stroke-width: 2;
+          }
+
+          #elements circle {
+              fill: none;
+              stroke: #C09;
+              stroke-width: 2;
+              vector-effect: non-scaling-stroke;
+              cursor: pointer;
+          }
+
+          #elements circle.incircle {
+              stroke: #e040fb;
+          }
+
+          #elements circle.nine_point_circle {
+              stroke: #00e5ff;
+              stroke-dasharray: 6, 3;
+          }
+
+          #elements circle.secondary_circle {
+              stroke: #ff9100;
+              stroke-dasharray: 5, 3;
+              stroke-opacity: 0.85;
+          }
+
+          #elements .bisector {
+              stroke-dasharray: 8, 4, 2, 4;
+          }
+
+          #elements .guide {
+              stroke: orange;
+              stroke-dasharray: 2, 4;
+              stroke-opacity: 0.65;
+          }
+
+          #elements line:hover,
+          #elements line.hover,
+          #elements circle:hover,
+          #elements circle.hover {
+              stroke: var(--select-color) !important;
+              stroke-width: 3.2 !important;
+              stroke-opacity: 1 !important;
+          }
+
+          #highlights .highlight-segment {
+              stroke: var(--select-color);
+              fill: none;
+              stroke-width: 6;
+              stroke-opacity: 0.45;
+              vector-effect: non-scaling-stroke;
+              marker-start: url(#marker);
+              marker-end: url(#marker);
+              pointer-events: none;
+          }
+
+          #graphics polyline {
+              stroke: #36c9;
+              fill: none;
+              stroke-width: 6;
+              vector-effect: non-scaling-stroke;
+          }
+
+          #graphics polygon {
+              stroke: #36c9;
+              fill: #36c2;
+              stroke-width: 6;
+              vector-effect: non-scaling-stroke;
+              stroke-linejoin: round;
+              marker-start: url(#marker);
+              marker-mid: url(#marker);
+              marker-end: url(#marker);
+          }
+
+          #graphics polygon.secondary {
+              stroke: rgba(144, 238, 144, 0.55);
+              fill: rgba(144, 238, 144, 0.08);
+              stroke-width: 3;
+          }
+
+          #graphics polygon:hover,
+          #graphics polygon.hover,
+          #graphics polyline:hover,
+          #graphics polyline.hover {
+              stroke: var(--select-color) !important;
+              stroke-opacity: 1 !important;
+          }
+
+          #labels text {
+              fill: var(--text-color);
+              font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+              font-weight: 600;
+              paint-order: stroke;
+              stroke: var(--accent-color);
+              stroke-width: 3px;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              vector-effect: non-scaling-stroke;
+              user-select: none;
+              pointer-events: none;
+          }
+
+          #labels text.target-label {
+              fill: gold;
+              font-weight: 700;
+          }
+
+          #labels text.given-label {
+              fill: #8f8;
+          }
+
+          #labels text.hover-label {
+              fill: var(--select-color) !important;
+              font-weight: 700;
+          }
+
+          .etc-svg-stage {
+              position: relative;
+              width: 100%;
+          }
+
+          .etc-svg-toolbar {
+              position: absolute;
+              top: 8px;
+              right: 8px;
+              display: flex;
+              gap: 4px;
+              z-index: 20;
+              opacity: 0.35;
+              transition: opacity 0.18s ease;
+          }
+
+          .etc-svg-stage:hover .etc-svg-toolbar,
+          figure:hover .etc-svg-toolbar {
+              opacity: 0.95;
+          }
+
+          .etc-svg-btn {
+              background: rgba(18, 18, 18, 0.88);
+              color: #e0e0e0;
+              border: 1px solid #444;
+              border-radius: 4px;
+              padding: 2px 8px;
+              font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+              font-size: 12px;
+              line-height: 1.4;
+              cursor: pointer;
+              user-select: none;
+          }
+
+          .etc-svg-btn:hover {
+              background: #0ff;
+              color: #121212;
+              border-color: #0ff;
+          }
+
+          .etc-graphics-panel {
+              width: 100%;
+              background: #141414;
+              border: 1px solid #333;
+              border-radius: 6px;
+              overflow: hidden;
+          }
+
+          .etc-graphics-panel svg.geometor-etc-drawing {
+              border: none;
+              border-radius: 0;
+          }
+
+          .etc-triangle-tabs {
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              gap: 2px;
+              background: #1a1a1a;
+              border-bottom: 1px solid #2e2e2e;
+              padding: 6px 10px 0 10px;
+          }
+
+          .etc-tab-btn {
+              background: transparent;
+              color: #999;
+              border: 1px solid transparent;
+              border-bottom: none;
+              border-radius: 5px 5px 0 0;
+              padding: 5px 14px;
+              font-family: "Fira Sans Condensed", system-ui, -apple-system, sans-serif;
+              font-size: 13.5px;
+              font-weight: 600;
+              letter-spacing: 0.02em;
+              cursor: pointer;
+              user-select: none;
+              transition: color 0.15s ease, background 0.15s ease;
+              margin-bottom: -1px;
+          }
+
+          .etc-tab-btn:hover {
+              color: #fff;
+              background: rgba(255, 255, 255, 0.04);
+          }
+
+          .etc-tab-btn.active {
+              background: #161616;
+              color: #0ff;
+              border-color: #2e2e2e;
+              border-bottom: 1px solid #161616;
+          }
+          </style>
+            <defs>
+              <marker id="marker" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="3" markerHeight="3" orient="auto-start-reverse">
+                <circle cx="3" cy="3" r="3" fill="context-stroke" vector-effect="non-scaling-stroke"></circle>
+              </marker>
+            </defs>
+            <g id="graphics">
+              <polygon data-id="&lt; A B C &gt;" data-name="Reference Triangle △ABC" class="polygon reference" data-category="graphics" points="0.000000,-0.000000 1.000000,-0.000000 0.612245,-0.599875"><title>&lt; A B C &gt;: Reference Triangle △ABC</title></polygon>
+            </g>
+            <g id="highlights">
+              <polyline data-highlight-for="[ A B ]" class="highlight-segment" points="0.000000,-0.000000 1.000000,-0.000000" style="display: none;" />
+              <polyline data-highlight-for="[ B C ]" class="highlight-segment" points="1.000000,-0.000000 0.612245,-0.599875" style="display: none;" />
+              <polyline data-highlight-for="[ C A ]" class="highlight-segment" points="0.612245,-0.599875 0.000000,-0.000000" style="display: none;" />
+              <polyline data-highlight-for="{ 1, 6 }" class="highlight-segment" points="0.571429,-0.233285 0.600000,-0.267217" style="display: none;" />
+              <polyline data-highlight-for="{ 2, 89 }" class="highlight-segment" points="0.537415,-0.199958 0.596330,-0.269669" style="display: none;" />
+            </g>
+            <g id="elements">
+              <line data-id="[ A B ]" data-name="Sideline AB (Base c = 1)" class="line given sideline" data-category="elements" x1="-1000.00000" y1="-0.00000" x2="1000.00000" y2="-0.00000"><title>[ A B ]: Sideline AB (Base c = 1)</title></line>
+              <line data-id="[ B C ]" data-name="Sideline BC (Side a)" class="line sideline" data-category="elements" x1="388.75510" y1="599.87504" x2="-386.75510" y2="-599.87504"><title>[ B C ]: Sideline BC (Side a)</title></line>
+              <line data-id="[ C A ]" data-name="Sideline CA (Side b)" class="line sideline" data-category="elements" x1="612.85714" y1="-600.47492" x2="-611.63266" y2="599.27516"><title>[ C A ]: Sideline CA (Side b)</title></line>
+              <line data-id="{ 1, 6 }" data-name="Incenter–Symmedian Line" class="line central_line" data-category="elements" x1="-28.00000" y1="33.69904" x2="29.14286" y2="-34.16560"><title>{ 1, 6 }: Incenter–Symmedian Line</title></line>
+              <line data-id="{ 2, 89 }" data-name="Central Line L(2, 89)" class="line central_line" data-category="elements" x1="-58.37790" y1="69.51029" x2="59.45272" y2="-69.91021"><title>{ 2, 89 }: Central Line L(2, 89)</title></line>
+            </g>
+            <g id="points">
+              <circle data-id="A" data-name="Vertex A" class="point given vertex" data-category="points" cx="0.000000" cy="-0.000000" r="0.032018"><title>A = Vertex A (0.0000, 0.0000)</title></circle>
+              <circle data-id="B" data-name="Vertex B" class="point given vertex" data-category="points" cx="1.000000" cy="-0.000000" r="0.032018"><title>B = Vertex B (1.0000, 0.0000)</title></circle>
+              <circle data-id="C" data-name="Vertex C" class="point vertex" data-category="points" cx="0.612245" cy="-0.599875" r="0.032018"><title>C = Vertex C (0.6122, 0.5999)</title></circle>
+              <circle data-id="X(1)" data-name="INCENTER" class="point center" data-category="points" cx="0.571429" cy="-0.233285" r="0.032018"><title>X(1) = INCENTER (0.5714, 0.2333)</title></circle>
+              <circle data-id="X(6)" data-name="SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)" class="point center" data-category="points" cx="0.600000" cy="-0.267217" r="0.032018"><title>X(6) = SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT) (0.6000, 0.2672)</title></circle>
+              <circle data-id="X(2)" data-name="CENTROID" class="point center" data-category="points" cx="0.537415" cy="-0.199958" r="0.032018"><title>X(2) = CENTROID (0.5374, 0.2000)</title></circle>
+              <circle data-id="X(89)" data-name="ISOGONAL CONJUGATE OF X(45)" class="point center" data-category="points" cx="0.596330" cy="-0.269669" r="0.032018"><title>X(89) = ISOGONAL CONJUGATE OF X(45) (0.5963, 0.2697)</title></circle>
+              <circle data-id="X(44)" data-name="-LINE CONJUGATE OF X(1)" class="point selected target" data-category="points" cx="2.142857" cy="-2.099563" r="0.044826"><title>X(44) = -LINE CONJUGATE OF X(1) (2.1429, 2.0996)</title></circle>
+            </g>
+            <g id="labels">
+              <text class="given-label" data-point-id="A" data-anchor-x="0.000000" data-anchor-y="-0.000000" data-offset-x="-24.0" data-offset-y="22.5" x="-0.102459" y="0.096055" font-size="0.086449">A</text>
+              <text class="given-label" data-point-id="B" data-anchor-x="1.000000" data-anchor-y="-0.000000" data-offset-x="12.0" data-offset-y="22.5" x="1.051229" y="0.096055" font-size="0.086449">B</text>
+              <text class="point-label" data-point-id="C" data-anchor-x="0.612245" data-anchor-y="-0.599875" data-offset-x="-7.5" data-offset-y="-15.0" x="0.580227" y="-0.663912" font-size="0.086449">C</text>
+              <text class="point-label" data-point-id="X(1)" data-anchor-x="0.571429" data-anchor-y="-0.233285" data-offset-x="12.0" data-offset-y="-10.5" x="0.622658" y="-0.278110" font-size="0.086449">X(1)</text>
+              <text class="point-label" data-point-id="X(6)" data-anchor-x="0.600000" data-anchor-y="-0.267217" data-offset-x="12.0" data-offset-y="-10.5" x="0.651229" y="-0.312043" font-size="0.086449">X(6)</text>
+              <text class="point-label" data-point-id="X(2)" data-anchor-x="0.537415" data-anchor-y="-0.199958" data-offset-x="12.0" data-offset-y="-10.5" x="0.588644" y="-0.244784" font-size="0.086449">X(2)</text>
+              <text class="point-label" data-point-id="X(89)" data-anchor-x="0.596330" data-anchor-y="-0.269669" data-offset-x="12.0" data-offset-y="-10.5" x="0.647560" y="-0.314494" font-size="0.086449">X(89)</text>
+              <text class="target-label" data-point-id="X(44)" data-anchor-x="2.142857" data-anchor-y="-2.099563" data-offset-x="12.0" data-offset-y="-10.5" x="2.194086" y="-2.144388" font-size="0.086449">X(44)</text>
+              <text class="subtitle-label" x="-0.550833" y="0.154108" font-size="0.073642" fill="#999">(a, b, c) = (5, 6, 7) | AB = 1</text>
+            </g>
+            <script type="application/json" class="etc-elements-meta">{"A":{"ID":"A","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex A","subtitle":"Reference triangle vertex at origin (0, 0)","rows":[["x","0.0000"],["y","0.0000"],["bary","1.0000 : 0.0000 : 0.0000"]],"related_points":["A"]},"B":{"ID":"B","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex B","subtitle":"Reference triangle vertex at unit base (1, 0)","rows":[["x","1.0000"],["y","0.0000"],["bary","0.0000 : 1.0000 : 0.0000"]],"related_points":["B"]},"[ A B ]":{"ID":"[ A B ]","type":"line","classes":["given","sideline"],"color":"#aaa","name":"Sideline AB (Base c = 1)","subtitle":"Reference triangle baseline through A and B","rows":[["pts","A (Vertex A), B (Vertex B)"],["len","1.0000"],["eq","0.0000x + 1.0000y + 0.0000 = 0"]],"related_points":["A","B"]},"C":{"ID":"C","type":"point","classes":["vertex"],"color":"#0ff","name":"Vertex C","subtitle":"Reference triangle apex constructed by Euclid I.22","rows":[["x","0.6122"],["y","0.5999"],["bary","-0.0000 : 0.0000 : 1.0000"]],"related_points":["C"]},"[ B C ]":{"ID":"[ B C ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline BC (Side a)","subtitle":"Reference triangle sideline opposite vertex A","rows":[["pts","B (Vertex B), C (Vertex C)"],["len","0.7143"],["eq","0.8398x + 0.5429y - 0.8398 = 0"]],"related_points":["B","C"]},"[ C A ]":{"ID":"[ C A ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline CA (Side b)","subtitle":"Reference triangle sideline opposite vertex B","rows":[["pts","C (Vertex C), A (Vertex A)"],["len","0.8571"],["eq","0.6999x - 0.7143y + 0.0000 = 0"]],"related_points":["C","A"]},"< A B C >":{"ID":"< A B C >","type":"polygon","classes":["reference"],"color":"#58a6ff","name":"Reference Triangle △ABC","subtitle":"Primary reference triangle with unit baseline AB = 1","rows":[["verts","A, B, C"],["sides","0.7143, 0.8571, 1.0000"],["area","0.2999"]],"related_points":["A","B","C"]},"X(1)":{"ID":"X(1)","type":"point","classes":["center"],"color":"#0ff","name":"INCENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5714"],["y","0.2333"],["bary","0.2778 : 0.3333 : 0.3889"]],"related_points":["X(1)"]},"X(6)":{"ID":"X(6)","type":"point","classes":["center"],"color":"#0ff","name":"SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6000"],["y","0.2672"],["bary","0.2273 : 0.3273 : 0.4455"]],"related_points":["X(6)"]},"{ 1, 6 }":{"ID":"{ 1, 6 }","type":"line","classes":["central_line"],"color":"#0bd","name":"Incenter–Symmedian Line","subtitle":"Collinear line of X(1) Incenter, X(6) Symmedian Point, X(9) Mittenpunkt","rows":[["pts","X(1) (INCENTER), X(6) (SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT))"],["len","0.0444"],["eq","0.7649x - 0.6441y - 0.2869 = 0"]],"related_points":["X(1)","X(6)"]},"X(2)":{"ID":"X(2)","type":"point","classes":["center"],"color":"#0ff","name":"CENTROID","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5374"],["y","0.2000"],["bary","0.3333 : 0.3333 : 0.3333"]],"related_points":["X(2)"]},"X(89)":{"ID":"X(89)","type":"point","classes":["center"],"color":"#0ff","name":"ISOGONAL CONJUGATE OF X(45)","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5963"],["y","0.2697"],["bary","0.2294 : 0.3211 : 0.4495"]],"related_points":["X(89)"]},"{ 2, 89 }":{"ID":"{ 2, 89 }","type":"line","classes":["central_line"],"color":"#0bd","name":"Central Line L(2, 89)","subtitle":"Through X(2) (CENTROID) and X(89) (ISOGONAL CONJUGATE OF X(45))","rows":[["pts","X(2) (CENTROID), X(89) (ISOGONAL CONJUGATE OF X(45))"],["len","0.0913"],["eq","0.7638x - 0.6455y - 0.2814 = 0"]],"related_points":["X(2)","X(89)"]},"X(44)":{"ID":"X(44)","type":"point","classes":["selected","target"],"color":"gold","name":"-LINE CONJUGATE OF X(1)","subtitle":"Target Triangle Center","rows":[["x","2.1429"],["y","2.0996"],["bary","-2.5000 : -0.0000 : 3.5000"]],"related_points":["X(44)"]}}</script>
+            <script>//<![CDATA[
+
+          (function () {
+              const scriptEl = document.currentScript;
+              const svg = scriptEl ? scriptEl.closest('svg') : document.querySelector('svg.geometor-etc-drawing');
+              if (!svg || svg.dataset.etcInteractiveInit === '1') return;
+              if (svg.closest('.excerpt, .collection, a') || svg.classList.contains('euclid-thumbnail')) return;
+              svg.dataset.etcInteractiveInit = '1';
+
+              const initVbAttr = svg.getAttribute('data-initial-viewbox') || svg.getAttribute('viewBox');
+              const initialViewBox = initVbAttr.split(/\s+/).map(Number);
+
+              // Parse embedded element metadata catalog
+              let elementsCatalog = {};
+              const metaEl = svg.querySelector('script.etc-elements-meta');
+              if (metaEl) {
+                  try {
+                      elementsCatalog = JSON.parse(metaEl.textContent);
+                  } catch (e) {}
+              }
+
+              const pointsGroup = svg.querySelector('#points');
+              const elementsGroup = svg.querySelector('#elements');
+              const graphicsGroup = svg.querySelector('#graphics');
+              const highlightsGroup = svg.querySelector('#highlights');
+              const labelsGroup = svg.querySelector('#labels');
+
+              const pointEls = pointsGroup ? Array.from(pointsGroup.querySelectorAll('circle')) : [];
+              const structEls = elementsGroup ? Array.from(elementsGroup.querySelectorAll('line, circle')) : [];
+              const polyEls = graphicsGroup ? Array.from(graphicsGroup.querySelectorAll('polygon, polyline')) : [];
+              const labelEls = labelsGroup ? Array.from(labelsGroup.querySelectorAll('text[data-point-id]')) : [];
+              const subtitleEl = labelsGroup ? labelsGroup.querySelector('text.subtitle-label') : null;
+
+              function getViewBox() {
+                  return svg.getAttribute('viewBox').split(/\s+/).map(Number);
+              }
+
+              function scaleViewElements() {
+                  const rect = svg.getBoundingClientRect();
+                  const widthPx = rect.width || 800;
+                  const vb = getViewBox();
+                  const unitsPerPx = vb[2] / widthPx;
+
+                  pointEls.forEach(c => {
+                      const isTarget = c.classList.contains('target') || c.classList.contains('selected');
+                      const isGuide = c.classList.contains('guide');
+                      const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);
+                      c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
+                  });
+
+                  const fontSize = 20.25 * unitsPerPx;
+                  labelEls.forEach(lbl => {
+                      const cx = parseFloat(lbl.getAttribute('data-anchor-x') || '0');
+                      const cy = parseFloat(lbl.getAttribute('data-anchor-y') || '0');
+                      const oxPx = parseFloat(lbl.getAttribute('data-offset-x') || '12');
+                      const oyPx = parseFloat(lbl.getAttribute('data-offset-y') || '-10.5');
+                      lbl.setAttribute('x', (cx + oxPx * unitsPerPx).toFixed(6));
+                      lbl.setAttribute('y', (cy + oyPx * unitsPerPx).toFixed(6));
+                      lbl.setAttribute('font-size', fontSize.toFixed(6));
+                  });
+
+                  if (subtitleEl) {
+                      const subX = vb[0] + 20.0 * unitsPerPx;
+                      const subY = vb[1] + vb[3] - 18.0 * unitsPerPx;
+                      subtitleEl.setAttribute('x', subX.toFixed(6));
+                      subtitleEl.setAttribute('y', subY.toFixed(6));
+                      subtitleEl.setAttribute('font-size', (17.25 * unitsPerPx).toFixed(6));
+                  }
+              }
+
+              function setViewBox(vb) {
+                  svg.setAttribute('viewBox', `${vb[0].toFixed(6)} ${vb[1].toFixed(6)} ${vb[2].toFixed(6)} ${vb[3].toFixed(6)}`);
+                  scaleViewElements();
+              }
+
+              function zoomBy(factor, clientX, clientY) {
+                  const vb = getViewBox();
+                  let [x, y, w, h] = vb;
+                  const rect = svg.getBoundingClientRect();
+                  const relX = (clientX !== undefined && rect.width > 0) ? (clientX - rect.left) / rect.width : 0.5;
+                  const relY = (clientY !== undefined && rect.height > 0) ? (clientY - rect.top) / rect.height : 0.5;
+                  const focusX = x + relX * w;
+                  const focusY = y + relY * h;
+                  const newW = Math.min(Math.max(w * factor, 0.002), 50.0);
+                  const newH = Math.min(Math.max(h * factor, 0.002), 50.0);
+                  const newX = focusX - relX * newW;
+                  const newY = focusY - relY * newH;
+                  setViewBox([newX, newY, newW, newH]);
+              }
+
+              function resetView() {
+                  setViewBox([...initialViewBox]);
+              }
+
+              // Expose controller API on the SVG element for external toolbar buttons
+              svg._etcController = {
+                  zoomIn: () => zoomBy(1 / 1.25),
+                  zoomOut: () => zoomBy(1.25),
+                  resetView: resetView,
+                  toggleLabels: () => svg.classList.toggle('hide-labels'),
+                  toggleGuides: () => svg.classList.toggle('hide-guides'),
+                  scaleViewElements: scaleViewElements,
+              };
+
+              // Ensure Toolbar and Triangle Tabs exist if running inside an HTML document
+              if (document.body && document.documentElement.tagName.toLowerCase() === 'html') {
+                  const parent = svg.parentElement;
+                  if (parent && !parent.classList.contains('etc-svg-stage')) {
+                      const stage = document.createElement('div');
+                      stage.className = 'etc-svg-stage';
+                      parent.insertBefore(stage, svg);
+                      stage.appendChild(svg);
+
+                      const toolbar = document.createElement('div');
+                      toolbar.className = 'etc-svg-toolbar';
+                      const btns = [
+                          { label: '+', title: 'Zoom In (or scroll wheel)', action: () => zoomBy(1 / 1.25) },
+                          { label: '−', title: 'Zoom Out (or scroll wheel)', action: () => zoomBy(1.25) },
+                          { label: '⟲ Fit', title: 'Reset View (or double-click canvas)', action: () => resetView() },
+                          { label: 'Labels', title: 'Toggle Point Labels', action: () => svg.classList.toggle('hide-labels') },
+                      ];
+                      if (svg.querySelector('.guide')) {
+                          btns.push({ label: 'Guides', title: 'Toggle Construction Guides', action: () => svg.classList.toggle('hide-guides') });
+                      }
+                      btns.forEach(b => {
+                          const btn = document.createElement('button');
+                          btn.type = 'button';
+                          btn.className = 'etc-svg-btn';
+                          btn.textContent = b.label;
+                          btn.title = b.title;
+                          btn.addEventListener('click', (e) => {
+                              e.preventDefault();
+                              e.stopPropagation();
+                              b.action();
+                          });
+                          toolbar.appendChild(btn);
+                      });
+                      stage.appendChild(toolbar);
+                  }
+
+                  const panel = svg.closest('.etc-graphics-panel');
+                  if (panel && panel.dataset.etcTabsInit !== '1') {
+                      panel.dataset.etcTabsInit = '1';
+                      const tabBtns = Array.from(panel.querySelectorAll('.etc-tab-btn'));
+
+                      tabBtns.forEach(btn => {
+                          btn.addEventListener('click', (e) => {
+                              e.preventDefault();
+                              const targetTab = btn.getAttribute('data-tab');
+                              const tabPanes = Array.from(panel.querySelectorAll('.etc-tab-pane'));
+                              const prevPane = panel.querySelector('.etc-tab-pane.active');
+                              const prevSvg = prevPane ? prevPane.querySelector('svg.geometor-etc-drawing') : null;
+                              const hideLabels = prevSvg ? prevSvg.classList.contains('hide-labels') : false;
+                              const hideGuides = prevSvg ? prevSvg.classList.contains('hide-guides') : false;
+
+                              tabBtns.forEach(b => {
+                                  const isMatch = b.getAttribute('data-tab') === targetTab;
+                                  b.classList.toggle('active', isMatch);
+                                  b.setAttribute('aria-selected', isMatch ? 'true' : 'false');
+                              });
+
+                              tabPanes.forEach(pane => {
+                                  const isMatch = pane.getAttribute('data-tab-pane') === targetTab;
+                                  pane.classList.toggle('active', isMatch);
+                                  pane.style.display = isMatch ? 'block' : 'none';
+                                  if (isMatch) {
+                                      const paneSvg = pane.querySelector('svg.geometor-etc-drawing');
+                                      if (paneSvg) {
+                                          paneSvg.classList.toggle('hide-labels', hideLabels);
+                                          paneSvg.classList.toggle('hide-guides', hideGuides);
+                                          if (paneSvg._etcController) {
+                                              paneSvg._etcController.scaleViewElements();
+                                              requestAnimationFrame(() => paneSvg._etcController.scaleViewElements());
+                                          }
+                                      }
+                                  }
+                              });
+
+                              const figureEl = panel.closest('figure');
+                              const captionP = figureEl ? (figureEl.querySelector('figcaption .caption-text') || figureEl.querySelector('figcaption p')) : null;
+                              if (captionP) {
+                                  if (!captionP.dataset.origHtml) {
+                                      captionP.dataset.origHtml = captionP.innerHTML;
+                                  }
+                                  const capHtml = btn.getAttribute('data-caption-html');
+                                  if (targetTab === 'acute' && captionP.dataset.origHtml) {
+                                      captionP.innerHTML = captionP.dataset.origHtml;
+                                  } else if (capHtml) {
+                                      captionP.innerHTML = capHtml;
+                                  }
+                              }
+                          });
+                      });
+                  }
+              }
+
+              let activeHoveredId = null;
+
+              function clearHover() {
+                  if (!activeHoveredId) return;
+                  activeHoveredId = null;
+                  svg.querySelectorAll('.hover').forEach(el => el.classList.remove('hover'));
+                  svg.querySelectorAll('.hover-label').forEach(el => el.classList.remove('hover-label'));
+                  if (highlightsGroup) {
+                      highlightsGroup.querySelectorAll('.highlight-segment').forEach(el => {
+                          el.style.display = 'none';
+                      });
+                  }
+              }
+
+              function activateHover(id) {
+                  if (activeHoveredId === id) return;
+                  clearHover();
+                  activeHoveredId = id;
+                  const info = elementsCatalog[id];
+
+                  const targetEl = svg.querySelector(`[data-id="${CSS.escape(id)}"]`);
+                  if (targetEl) {
+                      targetEl.classList.add('hover');
+                  }
+
+                  // Show highlight segment if present
+                  if (highlightsGroup) {
+                      const hl = highlightsGroup.querySelector(`[data-highlight-for="${CSS.escape(id)}"]`);
+                      if (hl) hl.style.display = 'inline';
+                  }
+
+                  // Highlight parent/endpoint points and labels
+                  const relatedPts = (info && info.related_points) ? info.related_points : [id];
+                  relatedPts.forEach(pid => {
+                      const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
+                      if (ptEl) ptEl.classList.add('hover');
+                      const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
+                      if (lblEl) lblEl.classList.add('hover-label');
+                  });
+              }
+
+              // Native DOM hover matching browser <title> tooltip topmost target
+              svg.addEventListener('mouseover', (event) => {
+                  if (isPanning) return;
+                  const target = event.target.closest('[data-id]');
+                  if (target && svg.contains(target)) {
+                      activateHover(target.getAttribute('data-id'));
+                  } else {
+                      clearHover();
+                  }
+              });
+
+              svg.addEventListener('mouseout', (event) => {
+                  if (isPanning) return;
+                  const related = event.relatedTarget ? event.relatedTarget.closest?.('[data-id]') : null;
+                  if (!related || !svg.contains(related)) {
+                      clearHover();
+                  }
+              });
+
+              // Wheel Zoom
+              svg.addEventListener('wheel', (event) => {
+                  event.preventDefault();
+                  const factor = event.deltaY > 0 ? 1.12 : (1 / 1.12);
+                  zoomBy(factor, event.clientX, event.clientY);
+              }, { passive: false });
+
+              // Drag Pan
+              let isPanning = false;
+              let didDrag = false;
+              let startClient = { x: 0, y: 0 };
+
+              svg.addEventListener('mousedown', (event) => {
+                  if (event.button !== 0) return;
+                  isPanning = true;
+                  didDrag = false;
+                  startClient = { x: event.clientX, y: event.clientY };
+                  svg.classList.add('is-panning');
+              });
+
+              svg.addEventListener('mousemove', (event) => {
+                  if (!isPanning) return;
+                  const dxPx = event.clientX - startClient.x;
+                  const dyPx = event.clientY - startClient.y;
+                  if (Math.hypot(dxPx, dyPx) > 2) didDrag = true;
+                  const rect = svg.getBoundingClientRect();
+                  if (rect.width > 0 && rect.height > 0) {
+                      const vb = getViewBox();
+                      const dx = dxPx * (vb[2] / rect.width);
+                      const dy = dyPx * (vb[3] / rect.height);
+                      setViewBox([vb[0] - dx, vb[1] - dy, vb[2], vb[3]]);
+                  }
+                  startClient = { x: event.clientX, y: event.clientY };
+              });
+
+              window.addEventListener('mouseup', () => {
+                  if (isPanning) {
+                      isPanning = false;
+                      svg.classList.remove('is-panning');
+                  }
+              });
+
+              svg.addEventListener('mouseleave', () => {
+                  isPanning = false;
+                  svg.classList.remove('is-panning');
+                  clearHover();
+              });
+
+              svg.addEventListener('dblclick', (event) => {
+                  event.preventDefault();
+                  resetView();
+              });
+
+              if (typeof ResizeObserver !== 'undefined') {
+                  new ResizeObserver(() => scaleViewElements()).observe(svg);
+              }
+          })();
+
+          //]]></script>
+          </svg>
+          </div>
+          <div class="etc-tab-pane" data-tab-pane="right" style="display: none;">
+          <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.176000 -1.332000 1.952000 1.464000" data-initial-viewbox="-0.176000 -1.332000 1.952000 1.464000" preserveAspectRatio="xMidYMid meet">
+            <style>
+          :root {
+              --background-color: #121212;
+              --text-color: #e0e0e0;
+              --accent-color: #161616;
+              --border-color: #333;
+              --select-color: #0ff;
+          }
+
+          svg.geometor-etc-drawing {
+              width: 100%;
+              height: auto;
+              max-height: 540px;
+              background-color: var(--accent-color);
+              border: 1px solid var(--border-color);
+              border-radius: 4px;
+              display: block;
+              user-select: none;
+              touch-action: none;
+              cursor: grab;
+          }
+
+          svg.geometor-etc-drawing.is-panning {
+              cursor: grabbing;
+          }
+
+          svg.geometor-etc-drawing.hide-labels #labels .point-label,
+          svg.geometor-etc-drawing.hide-labels #labels .target-label,
+          svg.geometor-etc-drawing.hide-labels #labels .given-label {
+              display: none;
+          }
+
+          svg.geometor-etc-drawing.hide-guides .guide {
+              display: none !important;
+          }
+
+          #points circle {
+              fill: var(--text-color);
+              stroke: var(--background-color);
+              stroke-width: 2.5;
+              vector-effect: non-scaling-stroke;
+              cursor: pointer;
+              transition: fill 0.12s ease, stroke 0.12s ease;
+          }
+
+          #points circle.given {
+              fill: #6F6;
+          }
+
+          #points circle.guide {
+              fill: orange;
+              stroke-dasharray: none;
+          }
+
+          #points circle.selected,
+          #points circle.target {
+              stroke: var(--select-color);
+              fill: gold;
+              stroke-width: 3;
+          }
+
+          #points circle:hover,
+          #points circle.hover {
+              fill: var(--select-color) !important;
+              stroke: #fff !important;
+              stroke-width: 3.5 !important;
+          }
+
+          #elements line {
+              fill: none;
+              stroke: #777;
+              stroke-width: 1.5;
+              vector-effect: non-scaling-stroke;
+              cursor: pointer;
+          }
+
+          #elements line.sideline {
+              stroke: #999;
+              stroke-width: 2;
+          }
+
+          #elements line.central_line {
+              stroke: #0bd;
+              stroke-width: 1.75;
+              stroke-opacity: 0.85;
+          }
+
+          #elements line.golden,
+          #elements line.euler {
+              stroke: gold;
+              stroke-width: 2;
+          }
+
+          #elements circle {
+              fill: none;
+              stroke: #C09;
+              stroke-width: 2;
+              vector-effect: non-scaling-stroke;
+              cursor: pointer;
+          }
+
+          #elements circle.incircle {
+              stroke: #e040fb;
+          }
+
+          #elements circle.nine_point_circle {
+              stroke: #00e5ff;
+              stroke-dasharray: 6, 3;
+          }
+
+          #elements circle.secondary_circle {
+              stroke: #ff9100;
+              stroke-dasharray: 5, 3;
+              stroke-opacity: 0.85;
+          }
+
+          #elements .bisector {
+              stroke-dasharray: 8, 4, 2, 4;
+          }
+
+          #elements .guide {
+              stroke: orange;
+              stroke-dasharray: 2, 4;
+              stroke-opacity: 0.65;
+          }
+
+          #elements line:hover,
+          #elements line.hover,
+          #elements circle:hover,
+          #elements circle.hover {
+              stroke: var(--select-color) !important;
+              stroke-width: 3.2 !important;
+              stroke-opacity: 1 !important;
+          }
+
+          #highlights .highlight-segment {
+              stroke: var(--select-color);
+              fill: none;
+              stroke-width: 6;
+              stroke-opacity: 0.45;
+              vector-effect: non-scaling-stroke;
+              marker-start: url(#marker);
+              marker-end: url(#marker);
+              pointer-events: none;
+          }
+
+          #graphics polyline {
+              stroke: #36c9;
+              fill: none;
+              stroke-width: 6;
+              vector-effect: non-scaling-stroke;
+          }
+
+          #graphics polygon {
+              stroke: #36c9;
+              fill: #36c2;
+              stroke-width: 6;
+              vector-effect: non-scaling-stroke;
+              stroke-linejoin: round;
+              marker-start: url(#marker);
+              marker-mid: url(#marker);
+              marker-end: url(#marker);
+          }
+
+          #graphics polygon.secondary {
+              stroke: rgba(144, 238, 144, 0.55);
+              fill: rgba(144, 238, 144, 0.08);
+              stroke-width: 3;
+          }
+
+          #graphics polygon:hover,
+          #graphics polygon.hover,
+          #graphics polyline:hover,
+          #graphics polyline.hover {
+              stroke: var(--select-color) !important;
+              stroke-opacity: 1 !important;
+          }
+
+          #labels text {
+              fill: var(--text-color);
+              font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+              font-weight: 600;
+              paint-order: stroke;
+              stroke: var(--accent-color);
+              stroke-width: 3px;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              vector-effect: non-scaling-stroke;
+              user-select: none;
+              pointer-events: none;
+          }
+
+          #labels text.target-label {
+              fill: gold;
+              font-weight: 700;
+          }
+
+          #labels text.given-label {
+              fill: #8f8;
+          }
+
+          #labels text.hover-label {
+              fill: var(--select-color) !important;
+              font-weight: 700;
+          }
+
+          .etc-svg-stage {
+              position: relative;
+              width: 100%;
+          }
+
+          .etc-svg-toolbar {
+              position: absolute;
+              top: 8px;
+              right: 8px;
+              display: flex;
+              gap: 4px;
+              z-index: 20;
+              opacity: 0.35;
+              transition: opacity 0.18s ease;
+          }
+
+          .etc-svg-stage:hover .etc-svg-toolbar,
+          figure:hover .etc-svg-toolbar {
+              opacity: 0.95;
+          }
+
+          .etc-svg-btn {
+              background: rgba(18, 18, 18, 0.88);
+              color: #e0e0e0;
+              border: 1px solid #444;
+              border-radius: 4px;
+              padding: 2px 8px;
+              font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+              font-size: 12px;
+              line-height: 1.4;
+              cursor: pointer;
+              user-select: none;
+          }
+
+          .etc-svg-btn:hover {
+              background: #0ff;
+              color: #121212;
+              border-color: #0ff;
+          }
+
+          .etc-graphics-panel {
+              width: 100%;
+              background: #141414;
+              border: 1px solid #333;
+              border-radius: 6px;
+              overflow: hidden;
+          }
+
+          .etc-graphics-panel svg.geometor-etc-drawing {
+              border: none;
+              border-radius: 0;
+          }
+
+          .etc-triangle-tabs {
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              gap: 2px;
+              background: #1a1a1a;
+              border-bottom: 1px solid #2e2e2e;
+              padding: 6px 10px 0 10px;
+          }
+
+          .etc-tab-btn {
+              background: transparent;
+              color: #999;
+              border: 1px solid transparent;
+              border-bottom: none;
+              border-radius: 5px 5px 0 0;
+              padding: 5px 14px;
+              font-family: "Fira Sans Condensed", system-ui, -apple-system, sans-serif;
+              font-size: 13.5px;
+              font-weight: 600;
+              letter-spacing: 0.02em;
+              cursor: pointer;
+              user-select: none;
+              transition: color 0.15s ease, background 0.15s ease;
+              margin-bottom: -1px;
+          }
+
+          .etc-tab-btn:hover {
+              color: #fff;
+              background: rgba(255, 255, 255, 0.04);
+          }
+
+          .etc-tab-btn.active {
+              background: #161616;
+              color: #0ff;
+              border-color: #2e2e2e;
+              border-bottom: 1px solid #161616;
+          }
+          </style>
+            <defs>
+              <marker id="marker" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="3" markerHeight="3" orient="auto-start-reverse">
+                <circle cx="3" cy="3" r="3" fill="context-stroke" vector-effect="non-scaling-stroke"></circle>
+              </marker>
+            </defs>
+            <g id="graphics">
+              <polygon data-id="&lt; A B C &gt;" data-name="Reference Triangle △ABC" class="polygon reference" data-category="graphics" points="0.000000,-0.000000 1.000000,-0.000000 0.640000,-0.480000"><title>&lt; A B C &gt;: Reference Triangle △ABC</title></polygon>
+            </g>
+            <g id="highlights">
+              <polyline data-highlight-for="[ A B ]" class="highlight-segment" points="0.000000,-0.000000 1.000000,-0.000000" style="display: none;" />
+              <polyline data-highlight-for="[ B C ]" class="highlight-segment" points="1.000000,-0.000000 0.640000,-0.480000" style="display: none;" />
+              <polyline data-highlight-for="[ C A ]" class="highlight-segment" points="0.640000,-0.480000 0.000000,-0.000000" style="display: none;" />
+              <polyline data-highlight-for="{ 1, 6 }" class="highlight-segment" points="0.600000,-0.200000 0.640000,-0.240000" style="display: none;" />
+              <polyline data-highlight-for="{ 2, 89 }" class="highlight-segment" points="0.546667,-0.160000 0.632653,-0.244898" style="display: none;" />
+            </g>
+            <g id="elements">
+              <line data-id="[ A B ]" data-name="Sideline AB (Base c = 1)" class="line given sideline" data-category="elements" x1="-1000.00000" y1="-0.00000" x2="1000.00000" y2="-0.00000"><title>[ A B ]: Sideline AB (Base c = 1)</title></line>
+              <line data-id="[ B C ]" data-name="Sideline BC (Side a)" class="line sideline" data-category="elements" x1="361.00000" y1="480.00000" x2="-359.00000" y2="-480.00000"><title>[ B C ]: Sideline BC (Side a)</title></line>
+              <line data-id="[ C A ]" data-name="Sideline CA (Side b)" class="line sideline" data-category="elements" x1="640.64000" y1="-480.48000" x2="-639.36000" y2="479.52000"><title>[ C A ]: Sideline CA (Side b)</title></line>
+              <line data-id="{ 1, 6 }" data-name="Incenter–Symmedian Line" class="line central_line" data-category="elements" x1="-39.40000" y1="39.80000" x2="40.60000" y2="-40.20000"><title>{ 1, 6 }: Incenter–Symmedian Line</title></line>
+              <line data-id="{ 2, 89 }" data-name="Central Line L(2, 89)" class="line central_line" data-category="elements" x1="-85.43972" y1="84.73796" x2="86.53306" y2="-85.05796"><title>{ 2, 89 }: Central Line L(2, 89)</title></line>
+            </g>
+            <g id="points">
+              <circle data-id="A" data-name="Vertex A" class="point given vertex" data-category="points" cx="0.000000" cy="-0.000000" r="0.018300"><title>A = Vertex A (0.0000, 0.0000)</title></circle>
+              <circle data-id="B" data-name="Vertex B" class="point given vertex" data-category="points" cx="1.000000" cy="-0.000000" r="0.018300"><title>B = Vertex B (1.0000, 0.0000)</title></circle>
+              <circle data-id="C" data-name="Vertex C" class="point vertex" data-category="points" cx="0.640000" cy="-0.480000" r="0.018300"><title>C = Vertex C (0.6400, 0.4800)</title></circle>
+              <circle data-id="X(1)" data-name="INCENTER" class="point center" data-category="points" cx="0.600000" cy="-0.200000" r="0.018300"><title>X(1) = INCENTER (0.6000, 0.2000)</title></circle>
+              <circle data-id="X(6)" data-name="SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)" class="point center" data-category="points" cx="0.640000" cy="-0.240000" r="0.018300"><title>X(6) = SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT) (0.6400, 0.2400)</title></circle>
+              <circle data-id="X(2)" data-name="CENTROID" class="point center" data-category="points" cx="0.546667" cy="-0.160000" r="0.018300"><title>X(2) = CENTROID (0.5467, 0.1600)</title></circle>
+              <circle data-id="X(89)" data-name="ISOGONAL CONJUGATE OF X(45)" class="point center" data-category="points" cx="0.632653" cy="-0.244898" r="0.018300"><title>X(89) = ISOGONAL CONJUGATE OF X(45) (0.6327, 0.2449)</title></circle>
+              <circle data-id="X(44)" data-name="-LINE CONJUGATE OF X(1)" class="point selected target" data-category="points" cx="1.600000" cy="-1.200000" r="0.025620"><title>X(44) = -LINE CONJUGATE OF X(1) (1.6000, 1.2000)</title></circle>
+            </g>
+            <g id="labels">
+              <text class="given-label" data-point-id="A" data-anchor-x="0.000000" data-anchor-y="-0.000000" data-offset-x="-24.0" data-offset-y="22.5" x="-0.058560" y="0.054900" font-size="0.049410">A</text>
+              <text class="given-label" data-point-id="B" data-anchor-x="1.000000" data-anchor-y="-0.000000" data-offset-x="12.0" data-offset-y="22.5" x="1.029280" y="0.054900" font-size="0.049410">B</text>
+              <text class="point-label" data-point-id="C" data-anchor-x="0.640000" data-anchor-y="-0.480000" data-offset-x="-7.5" data-offset-y="-15.0" x="0.621700" y="-0.516600" font-size="0.049410">C</text>
+              <text class="point-label" data-point-id="X(1)" data-anchor-x="0.600000" data-anchor-y="-0.200000" data-offset-x="12.0" data-offset-y="-10.5" x="0.629280" y="-0.225620" font-size="0.049410">X(1)</text>
+              <text class="point-label" data-point-id="X(6)" data-anchor-x="0.640000" data-anchor-y="-0.240000" data-offset-x="12.0" data-offset-y="-10.5" x="0.669280" y="-0.265620" font-size="0.049410">X(6)</text>
+              <text class="point-label" data-point-id="X(2)" data-anchor-x="0.546667" data-anchor-y="-0.160000" data-offset-x="12.0" data-offset-y="-10.5" x="0.575947" y="-0.185620" font-size="0.049410">X(2)</text>
+              <text class="point-label" data-point-id="X(89)" data-anchor-x="0.632653" data-anchor-y="-0.244898" data-offset-x="12.0" data-offset-y="-10.5" x="0.661933" y="-0.270518" font-size="0.049410">X(89)</text>
+              <text class="target-label" data-point-id="X(44)" data-anchor-x="1.600000" data-anchor-y="-1.200000" data-offset-x="12.0" data-offset-y="-10.5" x="1.629280" y="-1.225620" font-size="0.049410">X(44)</text>
+              <text class="subtitle-label" x="-0.127200" y="0.088080" font-size="0.042090" fill="#999">(a, b, c) = (3, 4, 5) | AB = 1</text>
+            </g>
+            <script type="application/json" class="etc-elements-meta">{"A":{"ID":"A","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex A","subtitle":"Reference triangle vertex at origin (0, 0)","rows":[["x","0.0000"],["y","0.0000"],["bary","1.0000 : 0.0000 : 0.0000"]],"related_points":["A"]},"B":{"ID":"B","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex B","subtitle":"Reference triangle vertex at unit base (1, 0)","rows":[["x","1.0000"],["y","0.0000"],["bary","0.0000 : 1.0000 : 0.0000"]],"related_points":["B"]},"[ A B ]":{"ID":"[ A B ]","type":"line","classes":["given","sideline"],"color":"#aaa","name":"Sideline AB (Base c = 1)","subtitle":"Reference triangle baseline through A and B","rows":[["pts","A (Vertex A), B (Vertex B)"],["len","1.0000"],["eq","0.0000x + 1.0000y + 0.0000 = 0"]],"related_points":["A","B"]},"C":{"ID":"C","type":"point","classes":["vertex"],"color":"#0ff","name":"Vertex C","subtitle":"Reference triangle apex constructed by Euclid I.22","rows":[["x","0.6400"],["y","0.4800"],["bary","-0.0000 : 0.0000 : 1.0000"]],"related_points":["C"]},"[ B C ]":{"ID":"[ B C ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline BC (Side a)","subtitle":"Reference triangle sideline opposite vertex A","rows":[["pts","B (Vertex B), C (Vertex C)"],["len","0.6000"],["eq","0.8000x + 0.6000y - 0.8000 = 0"]],"related_points":["B","C"]},"[ C A ]":{"ID":"[ C A ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline CA (Side b)","subtitle":"Reference triangle sideline opposite vertex B","rows":[["pts","C (Vertex C), A (Vertex A)"],["len","0.8000"],["eq","0.6000x - 0.8000y + 0.0000 = 0"]],"related_points":["C","A"]},"< A B C >":{"ID":"< A B C >","type":"polygon","classes":["reference"],"color":"#58a6ff","name":"Reference Triangle △ABC","subtitle":"Primary reference triangle with unit baseline AB = 1","rows":[["verts","A, B, C"],["sides","0.6000, 0.8000, 1.0000"],["area","0.2400"]],"related_points":["A","B","C"]},"X(1)":{"ID":"X(1)","type":"point","classes":["center"],"color":"#0ff","name":"INCENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6000"],["y","0.2000"],["bary","0.2500 : 0.3333 : 0.4167"]],"related_points":["X(1)"]},"X(6)":{"ID":"X(6)","type":"point","classes":["center"],"color":"#0ff","name":"SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6400"],["y","0.2400"],["bary","0.1800 : 0.3200 : 0.5000"]],"related_points":["X(6)"]},"{ 1, 6 }":{"ID":"{ 1, 6 }","type":"line","classes":["central_line"],"color":"#0bd","name":"Incenter–Symmedian Line","subtitle":"Collinear line of X(1) Incenter, X(6) Symmedian Point, X(9) Mittenpunkt","rows":[["pts","X(1) (INCENTER), X(6) (SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT))"],["len","0.0566"],["eq","0.7071x - 0.7071y - 0.2828 = 0"]],"related_points":["X(1)","X(6)"]},"X(2)":{"ID":"X(2)","type":"point","classes":["center"],"color":"#0ff","name":"CENTROID","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5467"],["y","0.1600"],["bary","0.3333 : 0.3333 : 0.3333"]],"related_points":["X(2)"]},"X(89)":{"ID":"X(89)","type":"point","classes":["center"],"color":"#0ff","name":"ISOGONAL CONJUGATE OF X(45)","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6327"],["y","0.2449"],["bary","0.1837 : 0.3061 : 0.5102"]],"related_points":["X(89)"]},"{ 2, 89 }":{"ID":"{ 2, 89 }","type":"line","classes":["central_line"],"color":"#0bd","name":"Central Line L(2, 89)","subtitle":"Through X(2) (CENTROID) and X(89) (ISOGONAL CONJUGATE OF X(45))","rows":[["pts","X(2) (CENTROID), X(89) (ISOGONAL CONJUGATE OF X(45))"],["len","0.1208"],["eq","0.7026x - 0.7116y - 0.2702 = 0"]],"related_points":["X(2)","X(89)"]},"X(44)":{"ID":"X(44)","type":"point","classes":["selected","target"],"color":"gold","name":"-LINE CONJUGATE OF X(1)","subtitle":"Target Triangle Center","rows":[["x","1.6000"],["y","1.2000"],["bary","-1.5000 : 0.0000 : 2.5000"]],"related_points":["X(44)"]}}</script>
+            <script>//<![CDATA[
+
+          (function () {
+              const scriptEl = document.currentScript;
+              const svg = scriptEl ? scriptEl.closest('svg') : document.querySelector('svg.geometor-etc-drawing');
+              if (!svg || svg.dataset.etcInteractiveInit === '1') return;
+              if (svg.closest('.excerpt, .collection, a') || svg.classList.contains('euclid-thumbnail')) return;
+              svg.dataset.etcInteractiveInit = '1';
+
+              const initVbAttr = svg.getAttribute('data-initial-viewbox') || svg.getAttribute('viewBox');
+              const initialViewBox = initVbAttr.split(/\s+/).map(Number);
+
+              // Parse embedded element metadata catalog
+              let elementsCatalog = {};
+              const metaEl = svg.querySelector('script.etc-elements-meta');
+              if (metaEl) {
+                  try {
+                      elementsCatalog = JSON.parse(metaEl.textContent);
+                  } catch (e) {}
+              }
+
+              const pointsGroup = svg.querySelector('#points');
+              const elementsGroup = svg.querySelector('#elements');
+              const graphicsGroup = svg.querySelector('#graphics');
+              const highlightsGroup = svg.querySelector('#highlights');
+              const labelsGroup = svg.querySelector('#labels');
+
+              const pointEls = pointsGroup ? Array.from(pointsGroup.querySelectorAll('circle')) : [];
+              const structEls = elementsGroup ? Array.from(elementsGroup.querySelectorAll('line, circle')) : [];
+              const polyEls = graphicsGroup ? Array.from(graphicsGroup.querySelectorAll('polygon, polyline')) : [];
+              const labelEls = labelsGroup ? Array.from(labelsGroup.querySelectorAll('text[data-point-id]')) : [];
+              const subtitleEl = labelsGroup ? labelsGroup.querySelector('text.subtitle-label') : null;
+
+              function getViewBox() {
+                  return svg.getAttribute('viewBox').split(/\s+/).map(Number);
+              }
+
+              function scaleViewElements() {
+                  const rect = svg.getBoundingClientRect();
+                  const widthPx = rect.width || 800;
+                  const vb = getViewBox();
+                  const unitsPerPx = vb[2] / widthPx;
+
+                  pointEls.forEach(c => {
+                      const isTarget = c.classList.contains('target') || c.classList.contains('selected');
+                      const isGuide = c.classList.contains('guide');
+                      const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);
+                      c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
+                  });
+
+                  const fontSize = 20.25 * unitsPerPx;
+                  labelEls.forEach(lbl => {
+                      const cx = parseFloat(lbl.getAttribute('data-anchor-x') || '0');
+                      const cy = parseFloat(lbl.getAttribute('data-anchor-y') || '0');
+                      const oxPx = parseFloat(lbl.getAttribute('data-offset-x') || '12');
+                      const oyPx = parseFloat(lbl.getAttribute('data-offset-y') || '-10.5');
+                      lbl.setAttribute('x', (cx + oxPx * unitsPerPx).toFixed(6));
+                      lbl.setAttribute('y', (cy + oyPx * unitsPerPx).toFixed(6));
+                      lbl.setAttribute('font-size', fontSize.toFixed(6));
+                  });
+
+                  if (subtitleEl) {
+                      const subX = vb[0] + 20.0 * unitsPerPx;
+                      const subY = vb[1] + vb[3] - 18.0 * unitsPerPx;
+                      subtitleEl.setAttribute('x', subX.toFixed(6));
+                      subtitleEl.setAttribute('y', subY.toFixed(6));
+                      subtitleEl.setAttribute('font-size', (17.25 * unitsPerPx).toFixed(6));
+                  }
+              }
+
+              function setViewBox(vb) {
+                  svg.setAttribute('viewBox', `${vb[0].toFixed(6)} ${vb[1].toFixed(6)} ${vb[2].toFixed(6)} ${vb[3].toFixed(6)}`);
+                  scaleViewElements();
+              }
+
+              function zoomBy(factor, clientX, clientY) {
+                  const vb = getViewBox();
+                  let [x, y, w, h] = vb;
+                  const rect = svg.getBoundingClientRect();
+                  const relX = (clientX !== undefined && rect.width > 0) ? (clientX - rect.left) / rect.width : 0.5;
+                  const relY = (clientY !== undefined && rect.height > 0) ? (clientY - rect.top) / rect.height : 0.5;
+                  const focusX = x + relX * w;
+                  const focusY = y + relY * h;
+                  const newW = Math.min(Math.max(w * factor, 0.002), 50.0);
+                  const newH = Math.min(Math.max(h * factor, 0.002), 50.0);
+                  const newX = focusX - relX * newW;
+                  const newY = focusY - relY * newH;
+                  setViewBox([newX, newY, newW, newH]);
+              }
+
+              function resetView() {
+                  setViewBox([...initialViewBox]);
+              }
+
+              // Expose controller API on the SVG element for external toolbar buttons
+              svg._etcController = {
+                  zoomIn: () => zoomBy(1 / 1.25),
+                  zoomOut: () => zoomBy(1.25),
+                  resetView: resetView,
+                  toggleLabels: () => svg.classList.toggle('hide-labels'),
+                  toggleGuides: () => svg.classList.toggle('hide-guides'),
+                  scaleViewElements: scaleViewElements,
+              };
+
+              // Ensure Toolbar and Triangle Tabs exist if running inside an HTML document
+              if (document.body && document.documentElement.tagName.toLowerCase() === 'html') {
+                  const parent = svg.parentElement;
+                  if (parent && !parent.classList.contains('etc-svg-stage')) {
+                      const stage = document.createElement('div');
+                      stage.className = 'etc-svg-stage';
+                      parent.insertBefore(stage, svg);
+                      stage.appendChild(svg);
+
+                      const toolbar = document.createElement('div');
+                      toolbar.className = 'etc-svg-toolbar';
+                      const btns = [
+                          { label: '+', title: 'Zoom In (or scroll wheel)', action: () => zoomBy(1 / 1.25) },
+                          { label: '−', title: 'Zoom Out (or scroll wheel)', action: () => zoomBy(1.25) },
+                          { label: '⟲ Fit', title: 'Reset View (or double-click canvas)', action: () => resetView() },
+                          { label: 'Labels', title: 'Toggle Point Labels', action: () => svg.classList.toggle('hide-labels') },
+                      ];
+                      if (svg.querySelector('.guide')) {
+                          btns.push({ label: 'Guides', title: 'Toggle Construction Guides', action: () => svg.classList.toggle('hide-guides') });
+                      }
+                      btns.forEach(b => {
+                          const btn = document.createElement('button');
+                          btn.type = 'button';
+                          btn.className = 'etc-svg-btn';
+                          btn.textContent = b.label;
+                          btn.title = b.title;
+                          btn.addEventListener('click', (e) => {
+                              e.preventDefault();
+                              e.stopPropagation();
+                              b.action();
+                          });
+                          toolbar.appendChild(btn);
+                      });
+                      stage.appendChild(toolbar);
+                  }
+
+                  const panel = svg.closest('.etc-graphics-panel');
+                  if (panel && panel.dataset.etcTabsInit !== '1') {
+                      panel.dataset.etcTabsInit = '1';
+                      const tabBtns = Array.from(panel.querySelectorAll('.etc-tab-btn'));
+
+                      tabBtns.forEach(btn => {
+                          btn.addEventListener('click', (e) => {
+                              e.preventDefault();
+                              const targetTab = btn.getAttribute('data-tab');
+                              const tabPanes = Array.from(panel.querySelectorAll('.etc-tab-pane'));
+                              const prevPane = panel.querySelector('.etc-tab-pane.active');
+                              const prevSvg = prevPane ? prevPane.querySelector('svg.geometor-etc-drawing') : null;
+                              const hideLabels = prevSvg ? prevSvg.classList.contains('hide-labels') : false;
+                              const hideGuides = prevSvg ? prevSvg.classList.contains('hide-guides') : false;
+
+                              tabBtns.forEach(b => {
+                                  const isMatch = b.getAttribute('data-tab') === targetTab;
+                                  b.classList.toggle('active', isMatch);
+                                  b.setAttribute('aria-selected', isMatch ? 'true' : 'false');
+                              });
+
+                              tabPanes.forEach(pane => {
+                                  const isMatch = pane.getAttribute('data-tab-pane') === targetTab;
+                                  pane.classList.toggle('active', isMatch);
+                                  pane.style.display = isMatch ? 'block' : 'none';
+                                  if (isMatch) {
+                                      const paneSvg = pane.querySelector('svg.geometor-etc-drawing');
+                                      if (paneSvg) {
+                                          paneSvg.classList.toggle('hide-labels', hideLabels);
+                                          paneSvg.classList.toggle('hide-guides', hideGuides);
+                                          if (paneSvg._etcController) {
+                                              paneSvg._etcController.scaleViewElements();
+                                              requestAnimationFrame(() => paneSvg._etcController.scaleViewElements());
+                                          }
+                                      }
+                                  }
+                              });
+
+                              const figureEl = panel.closest('figure');
+                              const captionP = figureEl ? (figureEl.querySelector('figcaption .caption-text') || figureEl.querySelector('figcaption p')) : null;
+                              if (captionP) {
+                                  if (!captionP.dataset.origHtml) {
+                                      captionP.dataset.origHtml = captionP.innerHTML;
+                                  }
+                                  const capHtml = btn.getAttribute('data-caption-html');
+                                  if (targetTab === 'acute' && captionP.dataset.origHtml) {
+                                      captionP.innerHTML = captionP.dataset.origHtml;
+                                  } else if (capHtml) {
+                                      captionP.innerHTML = capHtml;
+                                  }
+                              }
+                          });
+                      });
+                  }
+              }
+
+              let activeHoveredId = null;
+
+              function clearHover() {
+                  if (!activeHoveredId) return;
+                  activeHoveredId = null;
+                  svg.querySelectorAll('.hover').forEach(el => el.classList.remove('hover'));
+                  svg.querySelectorAll('.hover-label').forEach(el => el.classList.remove('hover-label'));
+                  if (highlightsGroup) {
+                      highlightsGroup.querySelectorAll('.highlight-segment').forEach(el => {
+                          el.style.display = 'none';
+                      });
+                  }
+              }
+
+              function activateHover(id) {
+                  if (activeHoveredId === id) return;
+                  clearHover();
+                  activeHoveredId = id;
+                  const info = elementsCatalog[id];
+
+                  const targetEl = svg.querySelector(`[data-id="${CSS.escape(id)}"]`);
+                  if (targetEl) {
+                      targetEl.classList.add('hover');
+                  }
+
+                  // Show highlight segment if present
+                  if (highlightsGroup) {
+                      const hl = highlightsGroup.querySelector(`[data-highlight-for="${CSS.escape(id)}"]`);
+                      if (hl) hl.style.display = 'inline';
+                  }
+
+                  // Highlight parent/endpoint points and labels
+                  const relatedPts = (info && info.related_points) ? info.related_points : [id];
+                  relatedPts.forEach(pid => {
+                      const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
+                      if (ptEl) ptEl.classList.add('hover');
+                      const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
+                      if (lblEl) lblEl.classList.add('hover-label');
+                  });
+              }
+
+              // Native DOM hover matching browser <title> tooltip topmost target
+              svg.addEventListener('mouseover', (event) => {
+                  if (isPanning) return;
+                  const target = event.target.closest('[data-id]');
+                  if (target && svg.contains(target)) {
+                      activateHover(target.getAttribute('data-id'));
+                  } else {
+                      clearHover();
+                  }
+              });
+
+              svg.addEventListener('mouseout', (event) => {
+                  if (isPanning) return;
+                  const related = event.relatedTarget ? event.relatedTarget.closest?.('[data-id]') : null;
+                  if (!related || !svg.contains(related)) {
+                      clearHover();
+                  }
+              });
+
+              // Wheel Zoom
+              svg.addEventListener('wheel', (event) => {
+                  event.preventDefault();
+                  const factor = event.deltaY > 0 ? 1.12 : (1 / 1.12);
+                  zoomBy(factor, event.clientX, event.clientY);
+              }, { passive: false });
+
+              // Drag Pan
+              let isPanning = false;
+              let didDrag = false;
+              let startClient = { x: 0, y: 0 };
+
+              svg.addEventListener('mousedown', (event) => {
+                  if (event.button !== 0) return;
+                  isPanning = true;
+                  didDrag = false;
+                  startClient = { x: event.clientX, y: event.clientY };
+                  svg.classList.add('is-panning');
+              });
+
+              svg.addEventListener('mousemove', (event) => {
+                  if (!isPanning) return;
+                  const dxPx = event.clientX - startClient.x;
+                  const dyPx = event.clientY - startClient.y;
+                  if (Math.hypot(dxPx, dyPx) > 2) didDrag = true;
+                  const rect = svg.getBoundingClientRect();
+                  if (rect.width > 0 && rect.height > 0) {
+                      const vb = getViewBox();
+                      const dx = dxPx * (vb[2] / rect.width);
+                      const dy = dyPx * (vb[3] / rect.height);
+                      setViewBox([vb[0] - dx, vb[1] - dy, vb[2], vb[3]]);
+                  }
+                  startClient = { x: event.clientX, y: event.clientY };
+              });
+
+              window.addEventListener('mouseup', () => {
+                  if (isPanning) {
+                      isPanning = false;
+                      svg.classList.remove('is-panning');
+                  }
+              });
+
+              svg.addEventListener('mouseleave', () => {
+                  isPanning = false;
+                  svg.classList.remove('is-panning');
+                  clearHover();
+              });
+
+              svg.addEventListener('dblclick', (event) => {
+                  event.preventDefault();
+                  resetView();
+              });
+
+              if (typeof ResizeObserver !== 'undefined') {
+                  new ResizeObserver(() => scaleViewElements()).observe(svg);
+              }
+          })();
+
+          //]]></script>
+          </svg>
+          </div>
+          <div class="etc-tab-pane" data-tab-pane="kepler" style="display: none;">
+          <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.315194 -1.461308 2.141497 1.606123" data-initial-viewbox="-0.315194 -1.461308 2.141497 1.606123" preserveAspectRatio="xMidYMid meet">
+            <style>
+          :root {
+              --background-color: #121212;
+              --text-color: #e0e0e0;
+              --accent-color: #161616;
+              --border-color: #333;
+              --select-color: #0ff;
+          }
+
+          svg.geometor-etc-drawing {
+              width: 100%;
+              height: auto;
+              max-height: 540px;
+              background-color: var(--accent-color);
+              border: 1px solid var(--border-color);
+              border-radius: 4px;
+              display: block;
+              user-select: none;
+              touch-action: none;
+              cursor: grab;
+          }
+
+          svg.geometor-etc-drawing.is-panning {
+              cursor: grabbing;
+          }
+
+          svg.geometor-etc-drawing.hide-labels #labels .point-label,
+          svg.geometor-etc-drawing.hide-labels #labels .target-label,
+          svg.geometor-etc-drawing.hide-labels #labels .given-label {
+              display: none;
+          }
+
+          svg.geometor-etc-drawing.hide-guides .guide {
+              display: none !important;
+          }
+
+          #points circle {
+              fill: var(--text-color);
+              stroke: var(--background-color);
+              stroke-width: 2.5;
+              vector-effect: non-scaling-stroke;
+              cursor: pointer;
+              transition: fill 0.12s ease, stroke 0.12s ease;
+          }
+
+          #points circle.given {
+              fill: #6F6;
+          }
+
+          #points circle.guide {
+              fill: orange;
+              stroke-dasharray: none;
+          }
+
+          #points circle.selected,
+          #points circle.target {
+              stroke: var(--select-color);
+              fill: gold;
+              stroke-width: 3;
+          }
+
+          #points circle:hover,
+          #points circle.hover {
+              fill: var(--select-color) !important;
+              stroke: #fff !important;
+              stroke-width: 3.5 !important;
+          }
+
+          #elements line {
+              fill: none;
+              stroke: #777;
+              stroke-width: 1.5;
+              vector-effect: non-scaling-stroke;
+              cursor: pointer;
+          }
+
+          #elements line.sideline {
+              stroke: #999;
+              stroke-width: 2;
+          }
+
+          #elements line.central_line {
+              stroke: #0bd;
+              stroke-width: 1.75;
+              stroke-opacity: 0.85;
+          }
+
+          #elements line.golden,
+          #elements line.euler {
+              stroke: gold;
+              stroke-width: 2;
+          }
+
+          #elements circle {
+              fill: none;
+              stroke: #C09;
+              stroke-width: 2;
+              vector-effect: non-scaling-stroke;
+              cursor: pointer;
+          }
+
+          #elements circle.incircle {
+              stroke: #e040fb;
+          }
+
+          #elements circle.nine_point_circle {
+              stroke: #00e5ff;
+              stroke-dasharray: 6, 3;
+          }
+
+          #elements circle.secondary_circle {
+              stroke: #ff9100;
+              stroke-dasharray: 5, 3;
+              stroke-opacity: 0.85;
+          }
+
+          #elements .bisector {
+              stroke-dasharray: 8, 4, 2, 4;
+          }
+
+          #elements .guide {
+              stroke: orange;
+              stroke-dasharray: 2, 4;
+              stroke-opacity: 0.65;
+          }
+
+          #elements line:hover,
+          #elements line.hover,
+          #elements circle:hover,
+          #elements circle.hover {
+              stroke: var(--select-color) !important;
+              stroke-width: 3.2 !important;
+              stroke-opacity: 1 !important;
+          }
+
+          #highlights .highlight-segment {
+              stroke: var(--select-color);
+              fill: none;
+              stroke-width: 6;
+              stroke-opacity: 0.45;
+              vector-effect: non-scaling-stroke;
+              marker-start: url(#marker);
+              marker-end: url(#marker);
+              pointer-events: none;
+          }
+
+          #graphics polyline {
+              stroke: #36c9;
+              fill: none;
+              stroke-width: 6;
+              vector-effect: non-scaling-stroke;
+          }
+
+          #graphics polygon {
+              stroke: #36c9;
+              fill: #36c2;
+              stroke-width: 6;
+              vector-effect: non-scaling-stroke;
+              stroke-linejoin: round;
+              marker-start: url(#marker);
+              marker-mid: url(#marker);
+              marker-end: url(#marker);
+          }
+
+          #graphics polygon.secondary {
+              stroke: rgba(144, 238, 144, 0.55);
+              fill: rgba(144, 238, 144, 0.08);
+              stroke-width: 3;
+          }
+
+          #graphics polygon:hover,
+          #graphics polygon.hover,
+          #graphics polyline:hover,
+          #graphics polyline.hover {
+              stroke: var(--select-color) !important;
+              stroke-opacity: 1 !important;
+          }
+
+          #labels text {
+              fill: var(--text-color);
+              font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+              font-weight: 600;
+              paint-order: stroke;
+              stroke: var(--accent-color);
+              stroke-width: 3px;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              vector-effect: non-scaling-stroke;
+              user-select: none;
+              pointer-events: none;
+          }
+
+          #labels text.target-label {
+              fill: gold;
+              font-weight: 700;
+          }
+
+          #labels text.given-label {
+              fill: #8f8;
+          }
+
+          #labels text.hover-label {
+              fill: var(--select-color) !important;
+              font-weight: 700;
+          }
+
+          .etc-svg-stage {
+              position: relative;
+              width: 100%;
+          }
+
+          .etc-svg-toolbar {
+              position: absolute;
+              top: 8px;
+              right: 8px;
+              display: flex;
+              gap: 4px;
+              z-index: 20;
+              opacity: 0.35;
+              transition: opacity 0.18s ease;
+          }
+
+          .etc-svg-stage:hover .etc-svg-toolbar,
+          figure:hover .etc-svg-toolbar {
+              opacity: 0.95;
+          }
+
+          .etc-svg-btn {
+              background: rgba(18, 18, 18, 0.88);
+              color: #e0e0e0;
+              border: 1px solid #444;
+              border-radius: 4px;
+              padding: 2px 8px;
+              font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+              font-size: 12px;
+              line-height: 1.4;
+              cursor: pointer;
+              user-select: none;
+          }
+
+          .etc-svg-btn:hover {
+              background: #0ff;
+              color: #121212;
+              border-color: #0ff;
+          }
+
+          .etc-graphics-panel {
+              width: 100%;
+              background: #141414;
+              border: 1px solid #333;
+              border-radius: 6px;
+              overflow: hidden;
+          }
+
+          .etc-graphics-panel svg.geometor-etc-drawing {
+              border: none;
+              border-radius: 0;
+          }
+
+          .etc-triangle-tabs {
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              gap: 2px;
+              background: #1a1a1a;
+              border-bottom: 1px solid #2e2e2e;
+              padding: 6px 10px 0 10px;
+          }
+
+          .etc-tab-btn {
+              background: transparent;
+              color: #999;
+              border: 1px solid transparent;
+              border-bottom: none;
+              border-radius: 5px 5px 0 0;
+              padding: 5px 14px;
+              font-family: "Fira Sans Condensed", system-ui, -apple-system, sans-serif;
+              font-size: 13.5px;
+              font-weight: 600;
+              letter-spacing: 0.02em;
+              cursor: pointer;
+              user-select: none;
+              transition: color 0.15s ease, background 0.15s ease;
+              margin-bottom: -1px;
+          }
+
+          .etc-tab-btn:hover {
+              color: #fff;
+              background: rgba(255, 255, 255, 0.04);
+          }
+
+          .etc-tab-btn.active {
+              background: #161616;
+              color: #0ff;
+              border-color: #2e2e2e;
+              border-bottom: 1px solid #161616;
+          }
+          </style>
+            <defs>
+              <marker id="marker" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="3" markerHeight="3" orient="auto-start-reverse">
+                <circle cx="3" cy="3" r="3" fill="context-stroke" vector-effect="non-scaling-stroke"></circle>
+              </marker>
+            </defs>
+            <g id="graphics">
+              <polygon data-id="&lt; A B C &gt;" data-name="Reference Triangle △ABC" class="polygon reference" data-category="graphics" points="0.000000,-0.000000 1.000000,-0.000000 0.618034,-0.485868"><title>&lt; A B C &gt;: Reference Triangle △ABC</title></polygon>
+            </g>
+            <g id="highlights">
+              <polyline data-highlight-for="[ A B ]" class="highlight-segment" points="0.000000,-0.000000 1.000000,-0.000000" style="display: none;" />
+              <polyline data-highlight-for="[ B C ]" class="highlight-segment" points="1.000000,-0.000000 0.618034,-0.485868" style="display: none;" />
+              <polyline data-highlight-for="[ C A ]" class="highlight-segment" points="0.618034,-0.485868 0.000000,-0.000000" style="display: none;" />
+              <polyline data-highlight-for="{ 1, 6 }" class="highlight-segment" points="0.584059,-0.202093 0.618034,-0.242934" style="display: none;" />
+              <polyline data-highlight-for="{ 2, 89 }" class="highlight-segment" points="0.539345,-0.161956 0.611826,-0.248069" style="display: none;" />
+            </g>
+            <g id="elements">
+              <line data-id="[ A B ]" data-name="Sideline AB (Base c = 1)" class="line given sideline" data-category="elements" x1="-1000.00000" y1="-0.00000" x2="1000.00000" y2="-0.00000"><title>[ A B ]: Sideline AB (Base c = 1)</title></line>
+              <line data-id="[ B C ]" data-name="Sideline BC (Side a)" class="line sideline" data-category="elements" x1="382.96601" y1="485.86827" x2="-380.96601" y2="-485.86827"><title>[ B C ]: Sideline BC (Side a)</title></line>
+              <line data-id="[ C A ]" data-name="Sideline CA (Side b)" class="line sideline" data-category="elements" x1="618.65202" y1="-486.35414" x2="-617.41596" y2="485.38240"><title>[ C A ]: Sideline CA (Side b)</title></line>
+              <line data-id="{ 1, 6 }" data-name="Incenter–Symmedian Line" class="line central_line" data-category="elements" x1="-33.39124" y1="40.63937" x2="34.55936" y2="-41.04355"><title>{ 1, 6 }: Incenter–Symmedian Line</title></line>
+              <line data-id="{ 2, 89 }" data-name="Central Line L(2, 89)" class="line central_line" data-category="elements" x1="-71.94154" y1="85.95136" x2="73.02022" y2="-86.27528"><title>{ 2, 89 }: Central Line L(2, 89)</title></line>
+            </g>
+            <g id="points">
+              <circle data-id="A" data-name="Vertex A" class="point given vertex" data-category="points" cx="0.000000" cy="-0.000000" r="0.020077"><title>A = Vertex A (0.0000, 0.0000)</title></circle>
+              <circle data-id="B" data-name="Vertex B" class="point given vertex" data-category="points" cx="1.000000" cy="-0.000000" r="0.020077"><title>B = Vertex B (1.0000, 0.0000)</title></circle>
+              <circle data-id="C" data-name="Vertex C" class="point vertex" data-category="points" cx="0.618034" cy="-0.485868" r="0.020077"><title>C = Vertex C (0.6180, 0.4859)</title></circle>
+              <circle data-id="X(1)" data-name="INCENTER" class="point center" data-category="points" cx="0.584059" cy="-0.202093" r="0.020077"><title>X(1) = INCENTER (0.5841, 0.2021)</title></circle>
+              <circle data-id="X(6)" data-name="SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)" class="point center" data-category="points" cx="0.618034" cy="-0.242934" r="0.020077"><title>X(6) = SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT) (0.6180, 0.2429)</title></circle>
+              <circle data-id="X(2)" data-name="CENTROID" class="point center" data-category="points" cx="0.539345" cy="-0.161956" r="0.020077"><title>X(2) = CENTROID (0.5393, 0.1620)</title></circle>
+              <circle data-id="X(89)" data-name="ISOGONAL CONJUGATE OF X(45)" class="point center" data-category="points" cx="0.611826" cy="-0.248069" r="0.020077"><title>X(89) = ISOGONAL CONJUGATE OF X(45) (0.6118, 0.2481)</title></circle>
+              <circle data-id="X(44)" data-name="-LINE CONJUGATE OF X(1)" class="point selected target" data-category="points" cx="1.511110" cy="-1.316494" r="0.028107"><title>X(44) = -LINE CONJUGATE OF X(1) (1.5111, 1.3165)</title></circle>
+            </g>
+            <g id="labels">
+              <text class="given-label" data-point-id="A" data-anchor-x="0.000000" data-anchor-y="-0.000000" data-offset-x="-24.0" data-offset-y="22.5" x="-0.064245" y="0.060230" font-size="0.054207">A</text>
+              <text class="given-label" data-point-id="B" data-anchor-x="1.000000" data-anchor-y="-0.000000" data-offset-x="12.0" data-offset-y="22.5" x="1.032122" y="0.060230" font-size="0.054207">B</text>
+              <text class="point-label" data-point-id="C" data-anchor-x="0.618034" data-anchor-y="-0.485868" data-offset-x="-7.5" data-offset-y="-15.0" x="0.597957" y="-0.526021" font-size="0.054207">C</text>
+              <text class="point-label" data-point-id="X(1)" data-anchor-x="0.584059" data-anchor-y="-0.202093" data-offset-x="12.0" data-offset-y="-10.5" x="0.616181" y="-0.230200" font-size="0.054207">X(1)</text>
+              <text class="point-label" data-point-id="X(6)" data-anchor-x="0.618034" data-anchor-y="-0.242934" data-offset-x="12.0" data-offset-y="-10.5" x="0.650156" y="-0.271041" font-size="0.054207">X(6)</text>
+              <text class="point-label" data-point-id="X(2)" data-anchor-x="0.539345" data-anchor-y="-0.161956" data-offset-x="12.0" data-offset-y="-10.5" x="0.571467" y="-0.190063" font-size="0.054207">X(2)</text>
+              <text class="point-label" data-point-id="X(89)" data-anchor-x="0.611826" data-anchor-y="-0.248069" data-offset-x="12.0" data-offset-y="-10.5" x="0.643948" y="-0.276177" font-size="0.054207">X(89)</text>
+              <text class="target-label" data-point-id="X(44)" data-anchor-x="1.511110" data-anchor-y="-1.316494" data-offset-x="12.0" data-offset-y="-10.5" x="1.543232" y="-1.344601" font-size="0.054207">X(44)</text>
+              <text class="subtitle-label" x="-0.261656" y="0.096631" font-size="0.046176" fill="#999">Kepler (1, √φ, φ) | AB = 1</text>
+            </g>
+            <script type="application/json" class="etc-elements-meta">{"A":{"ID":"A","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex A","subtitle":"Reference triangle vertex at origin (0, 0)","rows":[["x","0.0000"],["y","0.0000"],["bary","1.0000 : 0.0000 : 0.0000"]],"related_points":["A"]},"B":{"ID":"B","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex B","subtitle":"Reference triangle vertex at unit base (1, 0)","rows":[["x","1.0000"],["y","0.0000"],["bary","0.0000 : 1.0000 : 0.0000"]],"related_points":["B"]},"[ A B ]":{"ID":"[ A B ]","type":"line","classes":["given","sideline"],"color":"#aaa","name":"Sideline AB (Base c = 1)","subtitle":"Reference triangle baseline through A and B","rows":[["pts","A (Vertex A), B (Vertex B)"],["len","1.0000"],["eq","0.0000x + 1.0000y + 0.0000 = 0"]],"related_points":["A","B"]},"C":{"ID":"C","type":"point","classes":["vertex"],"color":"#0ff","name":"Vertex C","subtitle":"Reference triangle apex constructed by Euclid I.22","rows":[["x","0.6180"],["y","0.4859"],["bary","-0.0000 : 0.0000 : 1.0000"]],"related_points":["C"]},"[ B C ]":{"ID":"[ B C ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline BC (Side a)","subtitle":"Reference triangle sideline opposite vertex A","rows":[["pts","B (Vertex B), C (Vertex C)"],["len","0.6180"],["eq","0.7862x + 0.6180y - 0.7862 = 0"]],"related_points":["B","C"]},"[ C A ]":{"ID":"[ C A ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline CA (Side b)","subtitle":"Reference triangle sideline opposite vertex B","rows":[["pts","C (Vertex C), A (Vertex A)"],["len","0.7862"],["eq","0.6180x - 0.7862y + 0.0000 = 0"]],"related_points":["C","A"]},"< A B C >":{"ID":"< A B C >","type":"polygon","classes":["reference"],"color":"#58a6ff","name":"Reference Triangle △ABC","subtitle":"Primary reference triangle with unit baseline AB = 1","rows":[["verts","A, B, C"],["sides","0.6180, 0.7862, 1.0000"],["area","0.2429"]],"related_points":["A","B","C"]},"X(1)":{"ID":"X(1)","type":"point","classes":["center"],"color":"#0ff","name":"INCENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5841"],["y","0.2021"],["bary","0.2571 : 0.3270 : 0.4159"]],"related_points":["X(1)"]},"X(6)":{"ID":"X(6)","type":"point","classes":["center"],"color":"#0ff","name":"SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6180"],["y","0.2429"],["bary","0.1910 : 0.3090 : 0.5000"]],"related_points":["X(6)"]},"{ 1, 6 }":{"ID":"{ 1, 6 }","type":"line","classes":["central_line"],"color":"#0bd","name":"Incenter–Symmedian Line","subtitle":"Collinear line of X(1) Incenter, X(6) Symmedian Point, X(9) Mittenpunkt","rows":[["pts","X(1) (INCENTER), X(6) (SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT))"],["len","0.0531"],["eq","0.7688x - 0.6395y - 0.3198 = 0"]],"related_points":["X(1)","X(6)"]},"X(2)":{"ID":"X(2)","type":"point","classes":["center"],"color":"#0ff","name":"CENTROID","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5393"],["y","0.1620"],["bary","0.3333 : 0.3333 : 0.3333"]],"related_points":["X(2)"]},"X(89)":{"ID":"X(89)","type":"point","classes":["center"],"color":"#0ff","name":"ISOGONAL CONJUGATE OF X(45)","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6118"],["y","0.2481"],["bary","0.1932 : 0.2963 : 0.5106"]],"related_points":["X(89)"]},"{ 2, 89 }":{"ID":"{ 2, 89 }","type":"line","classes":["central_line"],"color":"#0bd","name":"Central Line L(2, 89)","subtitle":"Through X(2) (CENTROID) and X(89) (ISOGONAL CONJUGATE OF X(45))","rows":[["pts","X(2) (CENTROID), X(89) (ISOGONAL CONJUGATE OF X(45))"],["len","0.1126"],["eq","0.7651x - 0.6440y - 0.3083 = 0"]],"related_points":["X(2)","X(89)"]},"X(44)":{"ID":"X(44)","type":"point","classes":["selected","target"],"color":"gold","name":"-LINE CONJUGATE OF X(1)","subtitle":"Target Triangle Center","rows":[["x","1.5111"],["y","1.3165"],["bary","-1.5461 : -0.1635 : 2.7096"]],"related_points":["X(44)"]}}</script>
+            <script>//<![CDATA[
+
+          (function () {
+              const scriptEl = document.currentScript;
+              const svg = scriptEl ? scriptEl.closest('svg') : document.querySelector('svg.geometor-etc-drawing');
+              if (!svg || svg.dataset.etcInteractiveInit === '1') return;
+              if (svg.closest('.excerpt, .collection, a') || svg.classList.contains('euclid-thumbnail')) return;
+              svg.dataset.etcInteractiveInit = '1';
+
+              const initVbAttr = svg.getAttribute('data-initial-viewbox') || svg.getAttribute('viewBox');
+              const initialViewBox = initVbAttr.split(/\s+/).map(Number);
+
+              // Parse embedded element metadata catalog
+              let elementsCatalog = {};
+              const metaEl = svg.querySelector('script.etc-elements-meta');
+              if (metaEl) {
+                  try {
+                      elementsCatalog = JSON.parse(metaEl.textContent);
+                  } catch (e) {}
+              }
+
+              const pointsGroup = svg.querySelector('#points');
+              const elementsGroup = svg.querySelector('#elements');
+              const graphicsGroup = svg.querySelector('#graphics');
+              const highlightsGroup = svg.querySelector('#highlights');
+              const labelsGroup = svg.querySelector('#labels');
+
+              const pointEls = pointsGroup ? Array.from(pointsGroup.querySelectorAll('circle')) : [];
+              const structEls = elementsGroup ? Array.from(elementsGroup.querySelectorAll('line, circle')) : [];
+              const polyEls = graphicsGroup ? Array.from(graphicsGroup.querySelectorAll('polygon, polyline')) : [];
+              const labelEls = labelsGroup ? Array.from(labelsGroup.querySelectorAll('text[data-point-id]')) : [];
+              const subtitleEl = labelsGroup ? labelsGroup.querySelector('text.subtitle-label') : null;
+
+              function getViewBox() {
+                  return svg.getAttribute('viewBox').split(/\s+/).map(Number);
+              }
+
+              function scaleViewElements() {
+                  const rect = svg.getBoundingClientRect();
+                  const widthPx = rect.width || 800;
+                  const vb = getViewBox();
+                  const unitsPerPx = vb[2] / widthPx;
+
+                  pointEls.forEach(c => {
+                      const isTarget = c.classList.contains('target') || c.classList.contains('selected');
+                      const isGuide = c.classList.contains('guide');
+                      const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);
+                      c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
+                  });
+
+                  const fontSize = 20.25 * unitsPerPx;
+                  labelEls.forEach(lbl => {
+                      const cx = parseFloat(lbl.getAttribute('data-anchor-x') || '0');
+                      const cy = parseFloat(lbl.getAttribute('data-anchor-y') || '0');
+                      const oxPx = parseFloat(lbl.getAttribute('data-offset-x') || '12');
+                      const oyPx = parseFloat(lbl.getAttribute('data-offset-y') || '-10.5');
+                      lbl.setAttribute('x', (cx + oxPx * unitsPerPx).toFixed(6));
+                      lbl.setAttribute('y', (cy + oyPx * unitsPerPx).toFixed(6));
+                      lbl.setAttribute('font-size', fontSize.toFixed(6));
+                  });
+
+                  if (subtitleEl) {
+                      const subX = vb[0] + 20.0 * unitsPerPx;
+                      const subY = vb[1] + vb[3] - 18.0 * unitsPerPx;
+                      subtitleEl.setAttribute('x', subX.toFixed(6));
+                      subtitleEl.setAttribute('y', subY.toFixed(6));
+                      subtitleEl.setAttribute('font-size', (17.25 * unitsPerPx).toFixed(6));
+                  }
+              }
+
+              function setViewBox(vb) {
+                  svg.setAttribute('viewBox', `${vb[0].toFixed(6)} ${vb[1].toFixed(6)} ${vb[2].toFixed(6)} ${vb[3].toFixed(6)}`);
+                  scaleViewElements();
+              }
+
+              function zoomBy(factor, clientX, clientY) {
+                  const vb = getViewBox();
+                  let [x, y, w, h] = vb;
+                  const rect = svg.getBoundingClientRect();
+                  const relX = (clientX !== undefined && rect.width > 0) ? (clientX - rect.left) / rect.width : 0.5;
+                  const relY = (clientY !== undefined && rect.height > 0) ? (clientY - rect.top) / rect.height : 0.5;
+                  const focusX = x + relX * w;
+                  const focusY = y + relY * h;
+                  const newW = Math.min(Math.max(w * factor, 0.002), 50.0);
+                  const newH = Math.min(Math.max(h * factor, 0.002), 50.0);
+                  const newX = focusX - relX * newW;
+                  const newY = focusY - relY * newH;
+                  setViewBox([newX, newY, newW, newH]);
+              }
+
+              function resetView() {
+                  setViewBox([...initialViewBox]);
+              }
+
+              // Expose controller API on the SVG element for external toolbar buttons
+              svg._etcController = {
+                  zoomIn: () => zoomBy(1 / 1.25),
+                  zoomOut: () => zoomBy(1.25),
+                  resetView: resetView,
+                  toggleLabels: () => svg.classList.toggle('hide-labels'),
+                  toggleGuides: () => svg.classList.toggle('hide-guides'),
+                  scaleViewElements: scaleViewElements,
+              };
+
+              // Ensure Toolbar and Triangle Tabs exist if running inside an HTML document
+              if (document.body && document.documentElement.tagName.toLowerCase() === 'html') {
+                  const parent = svg.parentElement;
+                  if (parent && !parent.classList.contains('etc-svg-stage')) {
+                      const stage = document.createElement('div');
+                      stage.className = 'etc-svg-stage';
+                      parent.insertBefore(stage, svg);
+                      stage.appendChild(svg);
+
+                      const toolbar = document.createElement('div');
+                      toolbar.className = 'etc-svg-toolbar';
+                      const btns = [
+                          { label: '+', title: 'Zoom In (or scroll wheel)', action: () => zoomBy(1 / 1.25) },
+                          { label: '−', title: 'Zoom Out (or scroll wheel)', action: () => zoomBy(1.25) },
+                          { label: '⟲ Fit', title: 'Reset View (or double-click canvas)', action: () => resetView() },
+                          { label: 'Labels', title: 'Toggle Point Labels', action: () => svg.classList.toggle('hide-labels') },
+                      ];
+                      if (svg.querySelector('.guide')) {
+                          btns.push({ label: 'Guides', title: 'Toggle Construction Guides', action: () => svg.classList.toggle('hide-guides') });
+                      }
+                      btns.forEach(b => {
+                          const btn = document.createElement('button');
+                          btn.type = 'button';
+                          btn.className = 'etc-svg-btn';
+                          btn.textContent = b.label;
+                          btn.title = b.title;
+                          btn.addEventListener('click', (e) => {
+                              e.preventDefault();
+                              e.stopPropagation();
+                              b.action();
+                          });
+                          toolbar.appendChild(btn);
+                      });
+                      stage.appendChild(toolbar);
+                  }
+
+                  const panel = svg.closest('.etc-graphics-panel');
+                  if (panel && panel.dataset.etcTabsInit !== '1') {
+                      panel.dataset.etcTabsInit = '1';
+                      const tabBtns = Array.from(panel.querySelectorAll('.etc-tab-btn'));
+
+                      tabBtns.forEach(btn => {
+                          btn.addEventListener('click', (e) => {
+                              e.preventDefault();
+                              const targetTab = btn.getAttribute('data-tab');
+                              const tabPanes = Array.from(panel.querySelectorAll('.etc-tab-pane'));
+                              const prevPane = panel.querySelector('.etc-tab-pane.active');
+                              const prevSvg = prevPane ? prevPane.querySelector('svg.geometor-etc-drawing') : null;
+                              const hideLabels = prevSvg ? prevSvg.classList.contains('hide-labels') : false;
+                              const hideGuides = prevSvg ? prevSvg.classList.contains('hide-guides') : false;
+
+                              tabBtns.forEach(b => {
+                                  const isMatch = b.getAttribute('data-tab') === targetTab;
+                                  b.classList.toggle('active', isMatch);
+                                  b.setAttribute('aria-selected', isMatch ? 'true' : 'false');
+                              });
+
+                              tabPanes.forEach(pane => {
+                                  const isMatch = pane.getAttribute('data-tab-pane') === targetTab;
+                                  pane.classList.toggle('active', isMatch);
+                                  pane.style.display = isMatch ? 'block' : 'none';
+                                  if (isMatch) {
+                                      const paneSvg = pane.querySelector('svg.geometor-etc-drawing');
+                                      if (paneSvg) {
+                                          paneSvg.classList.toggle('hide-labels', hideLabels);
+                                          paneSvg.classList.toggle('hide-guides', hideGuides);
+                                          if (paneSvg._etcController) {
+                                              paneSvg._etcController.scaleViewElements();
+                                              requestAnimationFrame(() => paneSvg._etcController.scaleViewElements());
+                                          }
+                                      }
+                                  }
+                              });
+
+                              const figureEl = panel.closest('figure');
+                              const captionP = figureEl ? (figureEl.querySelector('figcaption .caption-text') || figureEl.querySelector('figcaption p')) : null;
+                              if (captionP) {
+                                  if (!captionP.dataset.origHtml) {
+                                      captionP.dataset.origHtml = captionP.innerHTML;
+                                  }
+                                  const capHtml = btn.getAttribute('data-caption-html');
+                                  if (targetTab === 'acute' && captionP.dataset.origHtml) {
+                                      captionP.innerHTML = captionP.dataset.origHtml;
+                                  } else if (capHtml) {
+                                      captionP.innerHTML = capHtml;
+                                  }
+                              }
+                          });
+                      });
+                  }
+              }
+
+              let activeHoveredId = null;
+
+              function clearHover() {
+                  if (!activeHoveredId) return;
+                  activeHoveredId = null;
+                  svg.querySelectorAll('.hover').forEach(el => el.classList.remove('hover'));
+                  svg.querySelectorAll('.hover-label').forEach(el => el.classList.remove('hover-label'));
+                  if (highlightsGroup) {
+                      highlightsGroup.querySelectorAll('.highlight-segment').forEach(el => {
+                          el.style.display = 'none';
+                      });
+                  }
+              }
+
+              function activateHover(id) {
+                  if (activeHoveredId === id) return;
+                  clearHover();
+                  activeHoveredId = id;
+                  const info = elementsCatalog[id];
+
+                  const targetEl = svg.querySelector(`[data-id="${CSS.escape(id)}"]`);
+                  if (targetEl) {
+                      targetEl.classList.add('hover');
+                  }
+
+                  // Show highlight segment if present
+                  if (highlightsGroup) {
+                      const hl = highlightsGroup.querySelector(`[data-highlight-for="${CSS.escape(id)}"]`);
+                      if (hl) hl.style.display = 'inline';
+                  }
+
+                  // Highlight parent/endpoint points and labels
+                  const relatedPts = (info && info.related_points) ? info.related_points : [id];
+                  relatedPts.forEach(pid => {
+                      const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
+                      if (ptEl) ptEl.classList.add('hover');
+                      const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
+                      if (lblEl) lblEl.classList.add('hover-label');
+                  });
+              }
+
+              // Native DOM hover matching browser <title> tooltip topmost target
+              svg.addEventListener('mouseover', (event) => {
+                  if (isPanning) return;
+                  const target = event.target.closest('[data-id]');
+                  if (target && svg.contains(target)) {
+                      activateHover(target.getAttribute('data-id'));
+                  } else {
+                      clearHover();
+                  }
+              });
+
+              svg.addEventListener('mouseout', (event) => {
+                  if (isPanning) return;
+                  const related = event.relatedTarget ? event.relatedTarget.closest?.('[data-id]') : null;
+                  if (!related || !svg.contains(related)) {
+                      clearHover();
+                  }
+              });
+
+              // Wheel Zoom
+              svg.addEventListener('wheel', (event) => {
+                  event.preventDefault();
+                  const factor = event.deltaY > 0 ? 1.12 : (1 / 1.12);
+                  zoomBy(factor, event.clientX, event.clientY);
+              }, { passive: false });
+
+              // Drag Pan
+              let isPanning = false;
+              let didDrag = false;
+              let startClient = { x: 0, y: 0 };
+
+              svg.addEventListener('mousedown', (event) => {
+                  if (event.button !== 0) return;
+                  isPanning = true;
+                  didDrag = false;
+                  startClient = { x: event.clientX, y: event.clientY };
+                  svg.classList.add('is-panning');
+              });
+
+              svg.addEventListener('mousemove', (event) => {
+                  if (!isPanning) return;
+                  const dxPx = event.clientX - startClient.x;
+                  const dyPx = event.clientY - startClient.y;
+                  if (Math.hypot(dxPx, dyPx) > 2) didDrag = true;
+                  const rect = svg.getBoundingClientRect();
+                  if (rect.width > 0 && rect.height > 0) {
+                      const vb = getViewBox();
+                      const dx = dxPx * (vb[2] / rect.width);
+                      const dy = dyPx * (vb[3] / rect.height);
+                      setViewBox([vb[0] - dx, vb[1] - dy, vb[2], vb[3]]);
+                  }
+                  startClient = { x: event.clientX, y: event.clientY };
+              });
+
+              window.addEventListener('mouseup', () => {
+                  if (isPanning) {
+                      isPanning = false;
+                      svg.classList.remove('is-panning');
+                  }
+              });
+
+              svg.addEventListener('mouseleave', () => {
+                  isPanning = false;
+                  svg.classList.remove('is-panning');
+                  clearHover();
+              });
+
+              svg.addEventListener('dblclick', (event) => {
+                  event.preventDefault();
+                  resetView();
+              });
+
+              if (typeof ResizeObserver !== 'undefined') {
+                  new ResizeObserver(() => scaleViewElements()).observe(svg);
+              }
+          })();
+
+          //]]></script>
+          </svg>
+          </div>
+          <div class="etc-tab-pane" data-tab-pane="kimberling" style="display: none;">
+          <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.121206 -0.774696 1.344283 1.008212" data-initial-viewbox="-0.121206 -0.774696 1.344283 1.008212" preserveAspectRatio="xMidYMid meet">
+            <style>
+          :root {
+              --background-color: #121212;
+              --text-color: #e0e0e0;
+              --accent-color: #161616;
+              --border-color: #333;
+              --select-color: #0ff;
+          }
+
+          svg.geometor-etc-drawing {
+              width: 100%;
+              height: auto;
+              max-height: 540px;
+              background-color: var(--accent-color);
+              border: 1px solid var(--border-color);
+              border-radius: 4px;
+              display: block;
+              user-select: none;
+              touch-action: none;
+              cursor: grab;
+          }
+
+          svg.geometor-etc-drawing.is-panning {
+              cursor: grabbing;
+          }
+
+          svg.geometor-etc-drawing.hide-labels #labels .point-label,
+          svg.geometor-etc-drawing.hide-labels #labels .target-label,
+          svg.geometor-etc-drawing.hide-labels #labels .given-label {
+              display: none;
+          }
+
+          svg.geometor-etc-drawing.hide-guides .guide {
+              display: none !important;
+          }
+
+          #points circle {
+              fill: var(--text-color);
+              stroke: var(--background-color);
+              stroke-width: 2.5;
+              vector-effect: non-scaling-stroke;
+              cursor: pointer;
+              transition: fill 0.12s ease, stroke 0.12s ease;
+          }
+
+          #points circle.given {
+              fill: #6F6;
+          }
+
+          #points circle.guide {
+              fill: orange;
+              stroke-dasharray: none;
+          }
+
+          #points circle.selected,
+          #points circle.target {
+              stroke: var(--select-color);
+              fill: gold;
+              stroke-width: 3;
+          }
+
+          #points circle:hover,
+          #points circle.hover {
+              fill: var(--select-color) !important;
+              stroke: #fff !important;
+              stroke-width: 3.5 !important;
+          }
+
+          #elements line {
+              fill: none;
+              stroke: #777;
+              stroke-width: 1.5;
+              vector-effect: non-scaling-stroke;
+              cursor: pointer;
+          }
+
+          #elements line.sideline {
+              stroke: #999;
+              stroke-width: 2;
+          }
+
+          #elements line.central_line {
+              stroke: #0bd;
+              stroke-width: 1.75;
+              stroke-opacity: 0.85;
+          }
+
+          #elements line.golden,
+          #elements line.euler {
+              stroke: gold;
+              stroke-width: 2;
+          }
+
+          #elements circle {
+              fill: none;
+              stroke: #C09;
+              stroke-width: 2;
+              vector-effect: non-scaling-stroke;
+              cursor: pointer;
+          }
+
+          #elements circle.incircle {
+              stroke: #e040fb;
+          }
+
+          #elements circle.nine_point_circle {
+              stroke: #00e5ff;
+              stroke-dasharray: 6, 3;
+          }
+
+          #elements circle.secondary_circle {
+              stroke: #ff9100;
+              stroke-dasharray: 5, 3;
+              stroke-opacity: 0.85;
+          }
+
+          #elements .bisector {
+              stroke-dasharray: 8, 4, 2, 4;
+          }
+
+          #elements .guide {
+              stroke: orange;
+              stroke-dasharray: 2, 4;
+              stroke-opacity: 0.65;
+          }
+
+          #elements line:hover,
+          #elements line.hover,
+          #elements circle:hover,
+          #elements circle.hover {
+              stroke: var(--select-color) !important;
+              stroke-width: 3.2 !important;
+              stroke-opacity: 1 !important;
+          }
+
+          #highlights .highlight-segment {
+              stroke: var(--select-color);
+              fill: none;
+              stroke-width: 6;
+              stroke-opacity: 0.45;
+              vector-effect: non-scaling-stroke;
+              marker-start: url(#marker);
+              marker-end: url(#marker);
+              pointer-events: none;
+          }
+
+          #graphics polyline {
+              stroke: #36c9;
+              fill: none;
+              stroke-width: 6;
+              vector-effect: non-scaling-stroke;
+          }
+
+          #graphics polygon {
+              stroke: #36c9;
+              fill: #36c2;
+              stroke-width: 6;
+              vector-effect: non-scaling-stroke;
+              stroke-linejoin: round;
+              marker-start: url(#marker);
+              marker-mid: url(#marker);
+              marker-end: url(#marker);
+          }
+
+          #graphics polygon.secondary {
+              stroke: rgba(144, 238, 144, 0.55);
+              fill: rgba(144, 238, 144, 0.08);
+              stroke-width: 3;
+          }
+
+          #graphics polygon:hover,
+          #graphics polygon.hover,
+          #graphics polyline:hover,
+          #graphics polyline.hover {
+              stroke: var(--select-color) !important;
+              stroke-opacity: 1 !important;
+          }
+
+          #labels text {
+              fill: var(--text-color);
+              font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+              font-weight: 600;
+              paint-order: stroke;
+              stroke: var(--accent-color);
+              stroke-width: 3px;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              vector-effect: non-scaling-stroke;
+              user-select: none;
+              pointer-events: none;
+          }
+
+          #labels text.target-label {
+              fill: gold;
+              font-weight: 700;
+          }
+
+          #labels text.given-label {
+              fill: #8f8;
+          }
+
+          #labels text.hover-label {
+              fill: var(--select-color) !important;
+              font-weight: 700;
+          }
+
+          .etc-svg-stage {
+              position: relative;
+              width: 100%;
+          }
+
+          .etc-svg-toolbar {
+              position: absolute;
+              top: 8px;
+              right: 8px;
+              display: flex;
+              gap: 4px;
+              z-index: 20;
+              opacity: 0.35;
+              transition: opacity 0.18s ease;
+          }
+
+          .etc-svg-stage:hover .etc-svg-toolbar,
+          figure:hover .etc-svg-toolbar {
+              opacity: 0.95;
+          }
+
+          .etc-svg-btn {
+              background: rgba(18, 18, 18, 0.88);
+              color: #e0e0e0;
+              border: 1px solid #444;
+              border-radius: 4px;
+              padding: 2px 8px;
+              font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+              font-size: 12px;
+              line-height: 1.4;
+              cursor: pointer;
+              user-select: none;
+          }
+
+          .etc-svg-btn:hover {
+              background: #0ff;
+              color: #121212;
+              border-color: #0ff;
+          }
+
+          .etc-graphics-panel {
+              width: 100%;
+              background: #141414;
+              border: 1px solid #333;
+              border-radius: 6px;
+              overflow: hidden;
+          }
+
+          .etc-graphics-panel svg.geometor-etc-drawing {
+              border: none;
+              border-radius: 0;
+          }
+
+          .etc-triangle-tabs {
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              gap: 2px;
+              background: #1a1a1a;
+              border-bottom: 1px solid #2e2e2e;
+              padding: 6px 10px 0 10px;
+          }
+
+          .etc-tab-btn {
+              background: transparent;
+              color: #999;
+              border: 1px solid transparent;
+              border-bottom: none;
+              border-radius: 5px 5px 0 0;
+              padding: 5px 14px;
+              font-family: "Fira Sans Condensed", system-ui, -apple-system, sans-serif;
+              font-size: 13.5px;
+              font-weight: 600;
+              letter-spacing: 0.02em;
+              cursor: pointer;
+              user-select: none;
+              transition: color 0.15s ease, background 0.15s ease;
+              margin-bottom: -1px;
+          }
+
+          .etc-tab-btn:hover {
+              color: #fff;
+              background: rgba(255, 255, 255, 0.04);
+          }
+
+          .etc-tab-btn.active {
+              background: #161616;
+              color: #0ff;
+              border-color: #2e2e2e;
+              border-bottom: 1px solid #161616;
+          }
+          </style>
+            <defs>
+              <marker id="marker" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="3" markerHeight="3" orient="auto-start-reverse">
+                <circle cx="3" cy="3" r="3" fill="context-stroke" vector-effect="non-scaling-stroke"></circle>
+              </marker>
+            </defs>
+            <g id="graphics">
+              <polygon data-id="&lt; A B C &gt;" data-name="Reference Triangle △ABC" class="polygon reference" data-category="graphics" points="0.000000,-0.000000 1.000000,-0.000000 0.633136,-0.280051"><title>&lt; A B C &gt;: Reference Triangle △ABC</title></polygon>
+            </g>
+            <g id="highlights">
+              <polyline data-highlight-for="[ A B ]" class="highlight-segment" points="0.000000,-0.000000 1.000000,-0.000000" style="display: none;" />
+              <polyline data-highlight-for="[ B C ]" class="highlight-segment" points="1.000000,-0.000000 0.633136,-0.280051" style="display: none;" />
+              <polyline data-highlight-for="[ C A ]" class="highlight-segment" points="0.633136,-0.280051 0.000000,-0.000000" style="display: none;" />
+              <polyline data-highlight-for="{ 1, 6 }" class="highlight-segment" points="0.615385,-0.130024 0.657343,-0.165485" style="display: none;" />
+              <polyline data-highlight-for="{ 2, 89 }" class="highlight-segment" points="0.544379,-0.093350 0.644398,-0.173695" style="display: none;" />
+            </g>
+            <g id="elements">
+              <line data-id="[ A B ]" data-name="Sideline AB (Base c = 1)" class="line given sideline" data-category="elements" x1="-1000.00000" y1="-0.00000" x2="1000.00000" y2="-0.00000"><title>[ A B ]: Sideline AB (Base c = 1)</title></line>
+              <line data-id="[ B C ]" data-name="Sideline BC (Side a)" class="line sideline" data-category="elements" x1="367.86391" y1="280.05111" x2="-365.86391" y2="-280.05111"><title>[ B C ]: Sideline BC (Side a)</title></line>
+              <line data-id="[ C A ]" data-name="Sideline CA (Side b)" class="line sideline" data-category="elements" x1="633.76923" y1="-280.33116" x2="-632.50295" y2="279.77106"><title>[ C A ]: Sideline CA (Side b)</title></line>
+              <line data-id="{ 1, 6 }" data-name="Incenter–Symmedian Line" class="line central_line" data-category="elements" x1="-41.34266" y1="35.33100" x2="42.57342" y2="-35.59104"><title>{ 1, 6 }: Incenter–Symmedian Line</title></line>
+              <line data-id="{ 2, 89 }" data-name="Central Line L(2, 89)" class="line central_line" data-category="elements" x1="-99.47504" y1="80.25150" x2="100.56380" y2="-80.43820"><title>{ 2, 89 }: Central Line L(2, 89)</title></line>
+            </g>
+            <g id="points">
+              <circle data-id="A" data-name="Vertex A" class="point given vertex" data-category="points" cx="0.000000" cy="-0.000000" r="0.012603"><title>A = Vertex A (0.0000, 0.0000)</title></circle>
+              <circle data-id="B" data-name="Vertex B" class="point given vertex" data-category="points" cx="1.000000" cy="-0.000000" r="0.012603"><title>B = Vertex B (1.0000, 0.0000)</title></circle>
+              <circle data-id="C" data-name="Vertex C" class="point vertex" data-category="points" cx="0.633136" cy="-0.280051" r="0.012603"><title>C = Vertex C (0.6331, 0.2801)</title></circle>
+              <circle data-id="X(1)" data-name="INCENTER" class="point center" data-category="points" cx="0.615385" cy="-0.130024" r="0.012603"><title>X(1) = INCENTER (0.6154, 0.1300)</title></circle>
+              <circle data-id="X(6)" data-name="SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)" class="point center" data-category="points" cx="0.657343" cy="-0.165485" r="0.012603"><title>X(6) = SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT) (0.6573, 0.1655)</title></circle>
+              <circle data-id="X(2)" data-name="CENTROID" class="point center" data-category="points" cx="0.544379" cy="-0.093350" r="0.012603"><title>X(2) = CENTROID (0.5444, 0.0934)</title></circle>
+              <circle data-id="X(89)" data-name="ISOGONAL CONJUGATE OF X(45)" class="point center" data-category="points" cx="0.644398" cy="-0.173695" r="0.012603"><title>X(89) = ISOGONAL CONJUGATE OF X(45) (0.6444, 0.1737)</title></circle>
+              <circle data-id="X(44)" data-name="-LINE CONJUGATE OF X(1)" class="point selected target" data-category="points" cx="1.101871" cy="-0.541180" r="0.017644"><title>X(44) = -LINE CONJUGATE OF X(1) (1.1019, 0.5412)</title></circle>
+            </g>
+            <g id="labels">
+              <text class="given-label" data-point-id="A" data-anchor-x="0.000000" data-anchor-y="-0.000000" data-offset-x="-24.0" data-offset-y="22.5" x="-0.040328" y="0.037808" font-size="0.034027">A</text>
+              <text class="given-label" data-point-id="B" data-anchor-x="1.000000" data-anchor-y="-0.000000" data-offset-x="12.0" data-offset-y="22.5" x="1.020164" y="0.037808" font-size="0.034027">B</text>
+              <text class="point-label" data-point-id="C" data-anchor-x="0.633136" data-anchor-y="-0.280051" data-offset-x="-7.5" data-offset-y="-15.0" x="0.620533" y="-0.305256" font-size="0.034027">C</text>
+              <text class="point-label" data-point-id="X(1)" data-anchor-x="0.615385" data-anchor-y="-0.130024" data-offset-x="12.0" data-offset-y="-10.5" x="0.635549" y="-0.147667" font-size="0.034027">X(1)</text>
+              <text class="point-label" data-point-id="X(6)" data-anchor-x="0.657343" data-anchor-y="-0.165485" data-offset-x="12.0" data-offset-y="-10.5" x="0.677507" y="-0.183128" font-size="0.034027">X(6)</text>
+              <text class="point-label" data-point-id="X(2)" data-anchor-x="0.544379" data-anchor-y="-0.093350" data-offset-x="12.0" data-offset-y="-10.5" x="0.564543" y="-0.110994" font-size="0.034027">X(2)</text>
+              <text class="point-label" data-point-id="X(89)" data-anchor-x="0.644398" data-anchor-y="-0.173695" data-offset-x="12.0" data-offset-y="-10.5" x="0.664562" y="-0.191339" font-size="0.034027">X(89)</text>
+              <text class="target-label" data-point-id="X(44)" data-anchor-x="1.101871" data-anchor-y="-0.541180" data-offset-x="12.0" data-offset-y="-10.5" x="1.122035" y="-0.558824" font-size="0.034027">X(44)</text>
+              <text class="subtitle-label" x="-0.087599" y="0.203270" font-size="0.028986" fill="#999">Kimberling (6, 9, 13) | AB = 1</text>
+            </g>
+            <script type="application/json" class="etc-elements-meta">{"A":{"ID":"A","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex A","subtitle":"Reference triangle vertex at origin (0, 0)","rows":[["x","0.0000"],["y","0.0000"],["bary","1.0000 : 0.0000 : 0.0000"]],"related_points":["A"]},"B":{"ID":"B","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex B","subtitle":"Reference triangle vertex at unit base (1, 0)","rows":[["x","1.0000"],["y","0.0000"],["bary","0.0000 : 1.0000 : 0.0000"]],"related_points":["B"]},"[ A B ]":{"ID":"[ A B ]","type":"line","classes":["given","sideline"],"color":"#aaa","name":"Sideline AB (Base c = 1)","subtitle":"Reference triangle baseline through A and B","rows":[["pts","A (Vertex A), B (Vertex B)"],["len","1.0000"],["eq","0.0000x + 1.0000y + 0.0000 = 0"]],"related_points":["A","B"]},"C":{"ID":"C","type":"point","classes":["vertex"],"color":"#0ff","name":"Vertex C","subtitle":"Reference triangle apex constructed by Euclid I.22","rows":[["x","0.6331"],["y","0.2801"],["bary","-0.0000 : 0.0000 : 1.0000"]],"related_points":["C"]},"[ B C ]":{"ID":"[ B C ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline BC (Side a)","subtitle":"Reference triangle sideline opposite vertex A","rows":[["pts","B (Vertex B), C (Vertex C)"],["len","0.4615"],["eq","0.6068x + 0.7949y - 0.6068 = 0"]],"related_points":["B","C"]},"[ C A ]":{"ID":"[ C A ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline CA (Side b)","subtitle":"Reference triangle sideline opposite vertex B","rows":[["pts","C (Vertex C), A (Vertex A)"],["len","0.6923"],["eq","0.4045x - 0.9145y + 0.0000 = 0"]],"related_points":["C","A"]},"< A B C >":{"ID":"< A B C >","type":"polygon","classes":["reference"],"color":"#58a6ff","name":"Reference Triangle △ABC","subtitle":"Primary reference triangle with unit baseline AB = 1","rows":[["verts","A, B, C"],["sides","0.4615, 0.6923, 1.0000"],["area","0.1400"]],"related_points":["A","B","C"]},"X(1)":{"ID":"X(1)","type":"point","classes":["center"],"color":"#0ff","name":"INCENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6154"],["y","0.1300"],["bary","0.2143 : 0.3214 : 0.4643"]],"related_points":["X(1)"]},"X(6)":{"ID":"X(6)","type":"point","classes":["center"],"color":"#0ff","name":"SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6573"],["y","0.1655"],["bary","0.1259 : 0.2832 : 0.5909"]],"related_points":["X(6)"]},"{ 1, 6 }":{"ID":"{ 1, 6 }","type":"line","classes":["central_line"],"color":"#0bd","name":"Incenter–Symmedian Line","subtitle":"Collinear line of X(1) Incenter, X(6) Symmedian Point, X(9) Mittenpunkt","rows":[["pts","X(1) (INCENTER), X(6) (SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT))"],["len","0.0549"],["eq","0.6455x - 0.7638y - 0.2979 = 0"]],"related_points":["X(1)","X(6)"]},"X(2)":{"ID":"X(2)","type":"point","classes":["center"],"color":"#0ff","name":"CENTROID","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5444"],["y","0.0934"],["bary","0.3333 : 0.3333 : 0.3333"]],"related_points":["X(2)"]},"X(89)":{"ID":"X(89)","type":"point","classes":["center"],"color":"#0ff","name":"ISOGONAL CONJUGATE OF X(45)","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6444"],["y","0.1737"],["bary","0.1281 : 0.2517 : 0.6202"]],"related_points":["X(89)"]},"{ 2, 89 }":{"ID":"{ 2, 89 }","type":"line","classes":["central_line"],"color":"#0bd","name":"Central Line L(2, 89)","subtitle":"Through X(2) (CENTROID) and X(89) (ISOGONAL CONJUGATE OF X(45))","rows":[["pts","X(2) (CENTROID), X(89) (ISOGONAL CONJUGATE OF X(45))"],["len","0.1283"],["eq","0.6263x - 0.7796y - 0.2681 = 0"]],"related_points":["X(2)","X(89)"]},"X(44)":{"ID":"X(44)","type":"point","classes":["selected","target"],"color":"gold","name":"-LINE CONJUGATE OF X(1)","subtitle":"Target Triangle Center","rows":[["x","1.1019"],["y","0.5412"],["bary","-0.8108 : -0.1216 : 1.9324"]],"related_points":["X(44)"]}}</script>
+            <script>//<![CDATA[
+
+          (function () {
+              const scriptEl = document.currentScript;
+              const svg = scriptEl ? scriptEl.closest('svg') : document.querySelector('svg.geometor-etc-drawing');
+              if (!svg || svg.dataset.etcInteractiveInit === '1') return;
+              if (svg.closest('.excerpt, .collection, a') || svg.classList.contains('euclid-thumbnail')) return;
+              svg.dataset.etcInteractiveInit = '1';
+
+              const initVbAttr = svg.getAttribute('data-initial-viewbox') || svg.getAttribute('viewBox');
+              const initialViewBox = initVbAttr.split(/\s+/).map(Number);
+
+              // Parse embedded element metadata catalog
+              let elementsCatalog = {};
+              const metaEl = svg.querySelector('script.etc-elements-meta');
+              if (metaEl) {
+                  try {
+                      elementsCatalog = JSON.parse(metaEl.textContent);
+                  } catch (e) {}
+              }
+
+              const pointsGroup = svg.querySelector('#points');
+              const elementsGroup = svg.querySelector('#elements');
+              const graphicsGroup = svg.querySelector('#graphics');
+              const highlightsGroup = svg.querySelector('#highlights');
+              const labelsGroup = svg.querySelector('#labels');
+
+              const pointEls = pointsGroup ? Array.from(pointsGroup.querySelectorAll('circle')) : [];
+              const structEls = elementsGroup ? Array.from(elementsGroup.querySelectorAll('line, circle')) : [];
+              const polyEls = graphicsGroup ? Array.from(graphicsGroup.querySelectorAll('polygon, polyline')) : [];
+              const labelEls = labelsGroup ? Array.from(labelsGroup.querySelectorAll('text[data-point-id]')) : [];
+              const subtitleEl = labelsGroup ? labelsGroup.querySelector('text.subtitle-label') : null;
+
+              function getViewBox() {
+                  return svg.getAttribute('viewBox').split(/\s+/).map(Number);
+              }
+
+              function scaleViewElements() {
+                  const rect = svg.getBoundingClientRect();
+                  const widthPx = rect.width || 800;
+                  const vb = getViewBox();
+                  const unitsPerPx = vb[2] / widthPx;
+
+                  pointEls.forEach(c => {
+                      const isTarget = c.classList.contains('target') || c.classList.contains('selected');
+                      const isGuide = c.classList.contains('guide');
+                      const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);
+                      c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
+                  });
+
+                  const fontSize = 20.25 * unitsPerPx;
+                  labelEls.forEach(lbl => {
+                      const cx = parseFloat(lbl.getAttribute('data-anchor-x') || '0');
+                      const cy = parseFloat(lbl.getAttribute('data-anchor-y') || '0');
+                      const oxPx = parseFloat(lbl.getAttribute('data-offset-x') || '12');
+                      const oyPx = parseFloat(lbl.getAttribute('data-offset-y') || '-10.5');
+                      lbl.setAttribute('x', (cx + oxPx * unitsPerPx).toFixed(6));
+                      lbl.setAttribute('y', (cy + oyPx * unitsPerPx).toFixed(6));
+                      lbl.setAttribute('font-size', fontSize.toFixed(6));
+                  });
+
+                  if (subtitleEl) {
+                      const subX = vb[0] + 20.0 * unitsPerPx;
+                      const subY = vb[1] + vb[3] - 18.0 * unitsPerPx;
+                      subtitleEl.setAttribute('x', subX.toFixed(6));
+                      subtitleEl.setAttribute('y', subY.toFixed(6));
+                      subtitleEl.setAttribute('font-size', (17.25 * unitsPerPx).toFixed(6));
+                  }
+              }
+
+              function setViewBox(vb) {
+                  svg.setAttribute('viewBox', `${vb[0].toFixed(6)} ${vb[1].toFixed(6)} ${vb[2].toFixed(6)} ${vb[3].toFixed(6)}`);
+                  scaleViewElements();
+              }
+
+              function zoomBy(factor, clientX, clientY) {
+                  const vb = getViewBox();
+                  let [x, y, w, h] = vb;
+                  const rect = svg.getBoundingClientRect();
+                  const relX = (clientX !== undefined && rect.width > 0) ? (clientX - rect.left) / rect.width : 0.5;
+                  const relY = (clientY !== undefined && rect.height > 0) ? (clientY - rect.top) / rect.height : 0.5;
+                  const focusX = x + relX * w;
+                  const focusY = y + relY * h;
+                  const newW = Math.min(Math.max(w * factor, 0.002), 50.0);
+                  const newH = Math.min(Math.max(h * factor, 0.002), 50.0);
+                  const newX = focusX - relX * newW;
+                  const newY = focusY - relY * newH;
+                  setViewBox([newX, newY, newW, newH]);
+              }
+
+              function resetView() {
+                  setViewBox([...initialViewBox]);
+              }
+
+              // Expose controller API on the SVG element for external toolbar buttons
+              svg._etcController = {
+                  zoomIn: () => zoomBy(1 / 1.25),
+                  zoomOut: () => zoomBy(1.25),
+                  resetView: resetView,
+                  toggleLabels: () => svg.classList.toggle('hide-labels'),
+                  toggleGuides: () => svg.classList.toggle('hide-guides'),
+                  scaleViewElements: scaleViewElements,
+              };
+
+              // Ensure Toolbar and Triangle Tabs exist if running inside an HTML document
+              if (document.body && document.documentElement.tagName.toLowerCase() === 'html') {
+                  const parent = svg.parentElement;
+                  if (parent && !parent.classList.contains('etc-svg-stage')) {
+                      const stage = document.createElement('div');
+                      stage.className = 'etc-svg-stage';
+                      parent.insertBefore(stage, svg);
+                      stage.appendChild(svg);
+
+                      const toolbar = document.createElement('div');
+                      toolbar.className = 'etc-svg-toolbar';
+                      const btns = [
+                          { label: '+', title: 'Zoom In (or scroll wheel)', action: () => zoomBy(1 / 1.25) },
+                          { label: '−', title: 'Zoom Out (or scroll wheel)', action: () => zoomBy(1.25) },
+                          { label: '⟲ Fit', title: 'Reset View (or double-click canvas)', action: () => resetView() },
+                          { label: 'Labels', title: 'Toggle Point Labels', action: () => svg.classList.toggle('hide-labels') },
+                      ];
+                      if (svg.querySelector('.guide')) {
+                          btns.push({ label: 'Guides', title: 'Toggle Construction Guides', action: () => svg.classList.toggle('hide-guides') });
+                      }
+                      btns.forEach(b => {
+                          const btn = document.createElement('button');
+                          btn.type = 'button';
+                          btn.className = 'etc-svg-btn';
+                          btn.textContent = b.label;
+                          btn.title = b.title;
+                          btn.addEventListener('click', (e) => {
+                              e.preventDefault();
+                              e.stopPropagation();
+                              b.action();
+                          });
+                          toolbar.appendChild(btn);
+                      });
+                      stage.appendChild(toolbar);
+                  }
+
+                  const panel = svg.closest('.etc-graphics-panel');
+                  if (panel && panel.dataset.etcTabsInit !== '1') {
+                      panel.dataset.etcTabsInit = '1';
+                      const tabBtns = Array.from(panel.querySelectorAll('.etc-tab-btn'));
+
+                      tabBtns.forEach(btn => {
+                          btn.addEventListener('click', (e) => {
+                              e.preventDefault();
+                              const targetTab = btn.getAttribute('data-tab');
+                              const tabPanes = Array.from(panel.querySelectorAll('.etc-tab-pane'));
+                              const prevPane = panel.querySelector('.etc-tab-pane.active');
+                              const prevSvg = prevPane ? prevPane.querySelector('svg.geometor-etc-drawing') : null;
+                              const hideLabels = prevSvg ? prevSvg.classList.contains('hide-labels') : false;
+                              const hideGuides = prevSvg ? prevSvg.classList.contains('hide-guides') : false;
+
+                              tabBtns.forEach(b => {
+                                  const isMatch = b.getAttribute('data-tab') === targetTab;
+                                  b.classList.toggle('active', isMatch);
+                                  b.setAttribute('aria-selected', isMatch ? 'true' : 'false');
+                              });
+
+                              tabPanes.forEach(pane => {
+                                  const isMatch = pane.getAttribute('data-tab-pane') === targetTab;
+                                  pane.classList.toggle('active', isMatch);
+                                  pane.style.display = isMatch ? 'block' : 'none';
+                                  if (isMatch) {
+                                      const paneSvg = pane.querySelector('svg.geometor-etc-drawing');
+                                      if (paneSvg) {
+                                          paneSvg.classList.toggle('hide-labels', hideLabels);
+                                          paneSvg.classList.toggle('hide-guides', hideGuides);
+                                          if (paneSvg._etcController) {
+                                              paneSvg._etcController.scaleViewElements();
+                                              requestAnimationFrame(() => paneSvg._etcController.scaleViewElements());
+                                          }
+                                      }
+                                  }
+                              });
+
+                              const figureEl = panel.closest('figure');
+                              const captionP = figureEl ? (figureEl.querySelector('figcaption .caption-text') || figureEl.querySelector('figcaption p')) : null;
+                              if (captionP) {
+                                  if (!captionP.dataset.origHtml) {
+                                      captionP.dataset.origHtml = captionP.innerHTML;
+                                  }
+                                  const capHtml = btn.getAttribute('data-caption-html');
+                                  if (targetTab === 'acute' && captionP.dataset.origHtml) {
+                                      captionP.innerHTML = captionP.dataset.origHtml;
+                                  } else if (capHtml) {
+                                      captionP.innerHTML = capHtml;
+                                  }
+                              }
+                          });
+                      });
+                  }
+              }
+
+              let activeHoveredId = null;
+
+              function clearHover() {
+                  if (!activeHoveredId) return;
+                  activeHoveredId = null;
+                  svg.querySelectorAll('.hover').forEach(el => el.classList.remove('hover'));
+                  svg.querySelectorAll('.hover-label').forEach(el => el.classList.remove('hover-label'));
+                  if (highlightsGroup) {
+                      highlightsGroup.querySelectorAll('.highlight-segment').forEach(el => {
+                          el.style.display = 'none';
+                      });
+                  }
+              }
+
+              function activateHover(id) {
+                  if (activeHoveredId === id) return;
+                  clearHover();
+                  activeHoveredId = id;
+                  const info = elementsCatalog[id];
+
+                  const targetEl = svg.querySelector(`[data-id="${CSS.escape(id)}"]`);
+                  if (targetEl) {
+                      targetEl.classList.add('hover');
+                  }
+
+                  // Show highlight segment if present
+                  if (highlightsGroup) {
+                      const hl = highlightsGroup.querySelector(`[data-highlight-for="${CSS.escape(id)}"]`);
+                      if (hl) hl.style.display = 'inline';
+                  }
+
+                  // Highlight parent/endpoint points and labels
+                  const relatedPts = (info && info.related_points) ? info.related_points : [id];
+                  relatedPts.forEach(pid => {
+                      const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
+                      if (ptEl) ptEl.classList.add('hover');
+                      const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
+                      if (lblEl) lblEl.classList.add('hover-label');
+                  });
+              }
+
+              // Native DOM hover matching browser <title> tooltip topmost target
+              svg.addEventListener('mouseover', (event) => {
+                  if (isPanning) return;
+                  const target = event.target.closest('[data-id]');
+                  if (target && svg.contains(target)) {
+                      activateHover(target.getAttribute('data-id'));
+                  } else {
+                      clearHover();
+                  }
+              });
+
+              svg.addEventListener('mouseout', (event) => {
+                  if (isPanning) return;
+                  const related = event.relatedTarget ? event.relatedTarget.closest?.('[data-id]') : null;
+                  if (!related || !svg.contains(related)) {
+                      clearHover();
+                  }
+              });
+
+              // Wheel Zoom
+              svg.addEventListener('wheel', (event) => {
+                  event.preventDefault();
+                  const factor = event.deltaY > 0 ? 1.12 : (1 / 1.12);
+                  zoomBy(factor, event.clientX, event.clientY);
+              }, { passive: false });
+
+              // Drag Pan
+              let isPanning = false;
+              let didDrag = false;
+              let startClient = { x: 0, y: 0 };
+
+              svg.addEventListener('mousedown', (event) => {
+                  if (event.button !== 0) return;
+                  isPanning = true;
+                  didDrag = false;
+                  startClient = { x: event.clientX, y: event.clientY };
+                  svg.classList.add('is-panning');
+              });
+
+              svg.addEventListener('mousemove', (event) => {
+                  if (!isPanning) return;
+                  const dxPx = event.clientX - startClient.x;
+                  const dyPx = event.clientY - startClient.y;
+                  if (Math.hypot(dxPx, dyPx) > 2) didDrag = true;
+                  const rect = svg.getBoundingClientRect();
+                  if (rect.width > 0 && rect.height > 0) {
+                      const vb = getViewBox();
+                      const dx = dxPx * (vb[2] / rect.width);
+                      const dy = dyPx * (vb[3] / rect.height);
+                      setViewBox([vb[0] - dx, vb[1] - dy, vb[2], vb[3]]);
+                  }
+                  startClient = { x: event.clientX, y: event.clientY };
+              });
+
+              window.addEventListener('mouseup', () => {
+                  if (isPanning) {
+                      isPanning = false;
+                      svg.classList.remove('is-panning');
+                  }
+              });
+
+              svg.addEventListener('mouseleave', () => {
+                  isPanning = false;
+                  svg.classList.remove('is-panning');
+                  clearHover();
+              });
+
+              svg.addEventListener('dblclick', (event) => {
+                  event.preventDefault();
+                  resetView();
+              });
+
+              if (typeof ResizeObserver !== 'undefined') {
+                  new ResizeObserver(() => scaleViewElements()).observe(svg);
+              }
+          })();
+
+          //]]></script>
+          </svg>
+          </div>
+          </div>
           <figcaption>
           <p><span class="caption-text"><strong>X(44) = -LINE CONJUGATE OF X(1)</strong> constructed on acute reference triangle <span class="math notranslate nohighlight">\((a, b, c) = (5, 6, 7)\)</span> with unit baseline <span class="math notranslate nohighlight">\(AB = 1\)</span>.</span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
           </figcaption>
@@ -274,7 +2925,7 @@
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="../../_static/js/geometor_interactive.js?v=832534ec"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=421e4467"></script>
   <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 

@@ -42,12 +42,6 @@ Tripolars
 
 * **Kimberling (6, 9, 13) Search Value:** :math:`4.507489358552`
 
-.. figure:: x-00008-kimberling.svg
-   :alt: X(8) = NAGEL POINT on Kimberling (6, 9, 13) triangle
-   :align: center
-
-   **X(8)** on Kimberling's canonical uniqueness test triangle :math:`(a, b, c) = (6, 9, 13)` (obtuse scalene, unit baseline :math:`AB = 1`).
-
 Linear Combinations
 -------------------
 

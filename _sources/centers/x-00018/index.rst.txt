@@ -36,12 +36,6 @@ Tripolars
 
 * **Kimberling (6, 9, 13) Search Value:** :math:`-16.280673997779`
 
-.. figure:: x-00018-kimberling.svg
-   :alt: X(18) = 2nd NAPOLEON POINT on Kimberling (6, 9, 13) triangle
-   :align: center
-
-   **X(18)** on Kimberling's canonical uniqueness test triangle :math:`(a, b, c) = (6, 9, 13)` (obtuse scalene, unit baseline :math:`AB = 1`).
-
 Notes
 -----
 

@@ -40,12 +40,6 @@ Tripolars
 
 * **Kimberling (6, 9, 13) Search Value:** :math:`-1.480512397789`
 
-.. figure:: x-00019-kimberling.svg
-   :alt: X(19) = CLAWSON POINT on Kimberling (6, 9, 13) triangle
-   :align: center
-
-   **X(19)** on Kimberling's canonical uniqueness test triangle :math:`(a, b, c) = (6, 9, 13)` (obtuse scalene, unit baseline :math:`AB = 1`).
-
 Linear Combinations
 -------------------
 

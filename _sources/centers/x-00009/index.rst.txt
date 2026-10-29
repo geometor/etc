@@ -43,12 +43,6 @@ Tripolars
 
 * **Kimberling (6, 9, 13) Search Value:** :math:`3.571972699230`
 
-.. figure:: x-00009-kimberling.svg
-   :alt: X(9) = MITTENPUNKT on Kimberling (6, 9, 13) triangle
-   :align: center
-
-   **X(9)** on Kimberling's canonical uniqueness test triangle :math:`(a, b, c) = (6, 9, 13)` (obtuse scalene, unit baseline :math:`AB = 1`).
-
 Linear Combinations
 -------------------
 

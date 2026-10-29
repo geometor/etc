@@ -43,12 +43,6 @@ Tripolars
 
 * **Kimberling (6, 9, 13) Search Value:** :math:`2.629368792489`
 
-.. figure:: x-00002-kimberling.svg
-   :alt: X(2) = CENTROID on Kimberling (6, 9, 13) triangle
-   :align: center
-
-   **X(2)** on Kimberling's canonical uniqueness test triangle :math:`(a, b, c) = (6, 9, 13)` (obtuse scalene, unit baseline :math:`AB = 1`).
-
 Linear Combinations
 -------------------
 

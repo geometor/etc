@@ -43,12 +43,6 @@ Tripolars
 
 * **Kimberling (6, 9, 13) Search Value:** :math:`0.992908495066`
 
-.. figure:: x-00006-kimberling.svg
-   :alt: X(6) = SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT) on Kimberling (6, 9, 13) triangle
-   :align: center
-
-   **X(6)** on Kimberling's canonical uniqueness test triangle :math:`(a, b, c) = (6, 9, 13)` (obtuse scalene, unit baseline :math:`AB = 1`).
-
 Linear Combinations
 -------------------
 

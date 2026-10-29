@@ -40,12 +40,6 @@ Tripolars
 
 * **Kimberling (6, 9, 13) Search Value:** :math:`2.643135121245`
 
-.. figure:: x-00011-kimberling.svg
-   :alt: X(11) = FEUERBACH POINT on Kimberling (6, 9, 13) triangle
-   :align: center
-
-   **X(11)** on Kimberling's canonical uniqueness test triangle :math:`(a, b, c) = (6, 9, 13)` (obtuse scalene, unit baseline :math:`AB = 1`).
-
 Linear Combinations
 -------------------
 
