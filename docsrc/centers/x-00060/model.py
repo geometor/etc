@@ -9,10 +9,10 @@ from geometor.model import Model
 
 from geometor.etc.ops import (
     central_line,
-    circumcircle,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    incenter_of,
     isogonal_conjugate,
     promote_point_to_top,
 )
@@ -23,15 +23,17 @@ def construct_x_00060(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(60) = ISOGONAL CONJUGATE OF X(12) on reference triangle ABC."""
-    circumcircle(model, A, B, C)
-    X_36 = eval_trilinear_point(model, A, B, C, '1 - 2*cos(A)', ID="X(36)", classes=["center"])
-    X_58 = eval_trilinear_point(model, A, B, C, 'a/(b + c)', ID="X(58)", classes=["center"])
-    central_line(model, X_36, X_58, 36, 58)
-    X_28 = eval_trilinear_point(model, A, B, C, '(tan(A))/(b + c)', ID="X(28)", classes=["center"])
-    X_81 = eval_trilinear_point(model, A, B, C, '1/(b + c)', ID="X(81)", classes=["center"])
-    central_line(model, X_28, X_81, 28, 81)
     X_12 = eval_trilinear_point(model, A, B, C, '1 + cos(B - C)', ID="X(12)", classes=["center"])
     X_60 = isogonal_conjugate(model, A, B, C, X_12, ID="X(60)", classes=["selected", "target"])
+    X_36 = eval_trilinear_point(model, A, B, C, '1 - 2*cos(A)', ID="X(36)", classes=["center", "incident"])
+    X_58 = eval_trilinear_point(model, A, B, C, 'a/(b + c)', ID="X(58)", classes=["center", "incident"])
+    central_line(model, X_36, X_58, 36, 58, incident=True)
+    X_28 = eval_trilinear_point(model, A, B, C, '(tan(A))/(b + c)', ID="X(28)", classes=["center", "incident"])
+    X_81 = eval_trilinear_point(model, A, B, C, '1/(b + c)', ID="X(81)", classes=["center", "incident"])
+    central_line(model, X_28, X_81, 28, 81, incident=True)
+    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
+    X_110 = eval_trilinear_point(model, A, B, C, 'csc(B - C)', ID="X(110)", classes=["center", "incident"])
+    central_line(model, X_1, X_110, 1, 110, incident=True)
     return promote_point_to_top(model, X_60)
 
 

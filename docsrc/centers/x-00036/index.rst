@@ -62,36 +62,36 @@ Incidence
 
 :ref:`X(36) <X(36)>` lies and on these lines:
 
-{:ref:`1 <X(1)>`, :ref:`3 <X(3)>`}, {:ref:`2 <X(2)>`, 535}, {:ref:`4 <X(4)>`, 499}, {:ref:`6 <X(6)>`, 609}, {:ref:`10 <X(10)>`, 404}, {:ref:`11 <X(11)>`, :ref:`30 <X(30)>`}, {:ref:`12 <X(12)>`, 140}, {:ref:`15 <X(15)>`, 202}, {:ref:`16 <X(16)>`, 203}, {:ref:`21 <X(21)>`, :ref:`79 <X(79)>`}, {:ref:`22 <X(22)>`, 614}, {:ref:`24 <X(24)>`, :ref:`34 <X(34)>`}, {:ref:`31 <X(31)>`, 995}, {:ref:`33 <X(33)>`, 378}, {:ref:`39 <X(39)>`, 172}, {:ref:`47 <X(47)>`, 602}, {:ref:`48 <X(48)>`, 579}, {:ref:`54 <X(54)>`, :ref:`73 <X(73)>`}, {:ref:`58 <X(58)>`, :ref:`60 <X(60)>`}, {:ref:`59 <X(59)>`, 1110}, {:ref:`63 <X(63)>`, 997}, {:ref:`80 <X(80)>`, 104}, {:ref:`84 <X(84)>`, :ref:`90 <X(90)>`}, {:ref:`99 <X(99)>`, 350}, {:ref:`100 <X(100)>`, 519}, {101, 672}, {106, 901}, {109, 953}, {187, 1015}, {191, 960}, {214, 758}, {226, 1006}, {238, 513}, {255, 1106}, {376, 497}, {388, 498}, {474, 958}, {495, 549}, {496, 550}, {573, 604}, {1030, 1100}
+{:ref:`1 <X(1)>`, :ref:`3 <X(3)>`}, {:ref:`2 <X(2)>`, :ref:`535 <X(535)>`}, {:ref:`4 <X(4)>`, :ref:`499 <X(499)>`}, {:ref:`6 <X(6)>`, :ref:`609 <X(609)>`}, {:ref:`10 <X(10)>`, :ref:`404 <X(404)>`}, {:ref:`11 <X(11)>`, :ref:`30 <X(30)>`}, {:ref:`12 <X(12)>`, :ref:`140 <X(140)>`}, {:ref:`15 <X(15)>`, :ref:`202 <X(202)>`}, {:ref:`16 <X(16)>`, :ref:`203 <X(203)>`}, {:ref:`21 <X(21)>`, :ref:`79 <X(79)>`}, {:ref:`22 <X(22)>`, :ref:`614 <X(614)>`}, {:ref:`24 <X(24)>`, :ref:`34 <X(34)>`}, {:ref:`31 <X(31)>`, :ref:`995 <X(995)>`}, {:ref:`33 <X(33)>`, :ref:`378 <X(378)>`}, {:ref:`39 <X(39)>`, :ref:`172 <X(172)>`}, {:ref:`47 <X(47)>`, :ref:`602 <X(602)>`}, {:ref:`48 <X(48)>`, :ref:`579 <X(579)>`}, {:ref:`54 <X(54)>`, :ref:`73 <X(73)>`}, {:ref:`58 <X(58)>`, :ref:`60 <X(60)>`}, {:ref:`59 <X(59)>`, 1110}, {:ref:`63 <X(63)>`, :ref:`997 <X(997)>`}, {:ref:`80 <X(80)>`, :ref:`104 <X(104)>`}, {:ref:`84 <X(84)>`, :ref:`90 <X(90)>`}, {:ref:`99 <X(99)>`, :ref:`350 <X(350)>`}, {:ref:`100 <X(100)>`, :ref:`519 <X(519)>`}, {:ref:`101 <X(101)>`, :ref:`672 <X(672)>`}, {:ref:`106 <X(106)>`, :ref:`901 <X(901)>`}, {:ref:`109 <X(109)>`, :ref:`953 <X(953)>`}, {:ref:`187 <X(187)>`, 1015}, {:ref:`191 <X(191)>`, :ref:`960 <X(960)>`}, {:ref:`214 <X(214)>`, :ref:`758 <X(758)>`}, {:ref:`226 <X(226)>`, 1006}, {:ref:`238 <X(238)>`, :ref:`513 <X(513)>`}, {:ref:`255 <X(255)>`, 1106}, {:ref:`376 <X(376)>`, :ref:`497 <X(497)>`}, {:ref:`388 <X(388)>`, :ref:`498 <X(498)>`}, {:ref:`474 <X(474)>`, :ref:`958 <X(958)>`}, {:ref:`495 <X(495)>`, :ref:`549 <X(549)>`}, {:ref:`496 <X(496)>`, :ref:`550 <X(550)>`}, {:ref:`573 <X(573)>`, :ref:`604 <X(604)>`}, {1030, 1100}
 
 Relations
 ---------
 
-* :ref:`X(36) <X(36)>` = midpoint of :ref:`X(1) <X(1)>` and X(484)
-* :ref:`X(36) <X(36)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`1 <X(1)>`, 1319), (484, 1155) (2077, :ref:`3 <X(3)>`)
+* :ref:`X(36) <X(36)>` = midpoint of :ref:`X(1) <X(1)>` and :ref:`X(484) <X(484)>`
+* :ref:`X(36) <X(36)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`1 <X(1)>`, 1319), (:ref:`484 <X(484)>`, 1155) (2077, :ref:`3 <X(3)>`)
 * :ref:`X(36) <X(36)>` = isogonal conjugate of :ref:`X(80) <X(80)>`
 * :ref:`X(36) <X(36)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(20566)
 * :ref:`X(36) <X(36)>` = :term:`complement <complement>` of X(5080)
 * :ref:`X(36) <X(36)>` = :term:`anticomplement <anticomplement>` of X(3814)
 * :ref:`X(36) <X(36)>` = circumcircle-inverse of :ref:`X(1) <X(1)>`
-* :ref:`X(36) <X(36)>` = inccircle-inverse of X(942)
+* :ref:`X(36) <X(36)>` = inccircle-inverse of :ref:`X(942) <X(942)>`
 * :ref:`X(36) <X(36)>` = Bevan-circle-inverse of :ref:`X(46) <X(46)>`
 * :ref:`X(36) <X(36)>` = polar conjugate of isotomic conjugate of X(22128)
-* :ref:`X(36) <X(36)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`88 <X(88)>`, :ref:`6 <X(6)>`), (104, :ref:`1 <X(1)>`)
-* :ref:`X(36) <X(36)>` = :term:`crosspoint <crosspoint>` of :ref:`X(58) <X(58)>` and X(106)
-* :ref:`X(36) <X(36)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, 484), (:ref:`10 <X(10)>`, 519), (:ref:`11 <X(11)>`, 900)
-* :ref:`X(36) <X(36)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(37) <X(37)>`\ X(650)
-* :ref:`X(36) <X(36)>` = X(104)-:term:`aleph conjugate <aleph-conjugate>` of :ref:`X(36) <X(36)>`
-* :ref:`X(36) <X(36)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`21 <X(21)>`, :ref:`36 <X(36)>`), (:ref:`100 <X(100)>`, :ref:`36 <X(36)>`), (643, 519)
+* :ref:`X(36) <X(36)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`88 <X(88)>`, :ref:`6 <X(6)>`), (:ref:`104 <X(104)>`, :ref:`1 <X(1)>`)
+* :ref:`X(36) <X(36)>` = :term:`crosspoint <crosspoint>` of :ref:`X(58) <X(58)>` and :ref:`X(106) <X(106)>`
+* :ref:`X(36) <X(36)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`484 <X(484)>`), (:ref:`10 <X(10)>`, :ref:`519 <X(519)>`), (:ref:`11 <X(11)>`, :ref:`900 <X(900)>`)
+* :ref:`X(36) <X(36)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(37) <X(37)>`\ \ :ref:`X(650) <X(650)>`
+* :ref:`X(36) <X(36)>` = :ref:`X(104) <X(104)>`-:term:`aleph conjugate <aleph-conjugate>` of :ref:`X(36) <X(36)>`
+* :ref:`X(36) <X(36)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`21 <X(21)>`, :ref:`36 <X(36)>`), (:ref:`100 <X(100)>`, :ref:`36 <X(36)>`), (:ref:`643 <X(643)>`, :ref:`519 <X(519)>`)
 * :ref:`X(36) <X(36)>` = X(2070)-of-intouch-triangle
-* :ref:`X(36) <X(36)>` = X(186)-of-2nd circumperp-triangle
-* :ref:`X(36) <X(36)>` = {:ref:`X(55) <X(55)>`,\ :ref:`X(56) <X(56)>`}-harmonic conjugate of X(999)
-* :ref:`X(36) <X(36)>` = reflection of X(484) in the antiorthic axis
-* :ref:`X(36) <X(36)>` = inverse-in-{circumcircle, nine-point circle}-inverter of X(354)
+* :ref:`X(36) <X(36)>` = :ref:`X(186) <X(186)>`-of-2nd circumperp-triangle
+* :ref:`X(36) <X(36)>` = {:ref:`X(55) <X(55)>`,\ :ref:`X(56) <X(56)>`}-harmonic conjugate of :ref:`X(999) <X(999)>`
+* :ref:`X(36) <X(36)>` = reflection of :ref:`X(484) <X(484)>` in the antiorthic axis
+* :ref:`X(36) <X(36)>` = inverse-in-{circumcircle, nine-point circle}-inverter of :ref:`X(354) <X(354)>`
 * :ref:`X(36) <X(36)>` = perspector of ABC and extraversion triangle of :ref:`X(35) <X(35)>`
 * :ref:`X(36) <X(36)>` = homothetic center of intangents and Trinh triangles
 * :ref:`X(36) <X(36)>` = perspector of ABC and the reflection of the 2nd circumperp triangle in line :ref:`X(1) <X(1)>`\ \ :ref:`X(3) <X(3)>`
-* :ref:`X(36) <X(36)>` = X(186)-of-reflection-triangle-of-:ref:`X(1) <X(1)>`
+* :ref:`X(36) <X(36)>` = :ref:`X(186) <X(186)>`-of-reflection-triangle-of-:ref:`X(1) <X(1)>`
 * :ref:`X(36) <X(36)>` = Cundy-Parry Psi transform of X(15446)
 * :ref:`X(36) <X(36)>` = exsimilicenter of circumcircle and circumcircle of reflection triangle of :ref:`X(1) <X(1)>`; insimilicenter is :ref:`X(35) <X(35)>`
 * :ref:`X(36) <X(36)>` = homothetic center of :term:`medial triangle <medial-triangle>` and cross-triangle of ABC and 2nd isogonal triangle of :ref:`X(1) <X(1)>`

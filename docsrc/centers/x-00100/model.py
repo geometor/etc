@@ -8,19 +8,14 @@ import sympy.geometry as spg
 from geometor.model import Model
 
 from geometor.etc.ops import (
-    anticomplement,
     central_line,
     centroid_of,
     circumcenter_of,
-    circumcircle,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
     feuerbach_point_of,
-    incircle,
-    medial_triangle,
     nagel_point_of,
-    nine_point_circle,
     promote_point_to_top,
     spieker_center_of,
 )
@@ -31,20 +26,16 @@ def construct_x_00100(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(100) = ANTICOMPLEMENT OF FEUERBACH POINT on reference triangle ABC."""
-    medial_triangle(model, A, B, C)
-    incircle(model, A, B, C)
-    circumcircle(model, A, B, C)
-    nine_point_circle(model, A, B, C)
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
-    X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center"])
-    central_line(model, X_3, X_8, 3, 8)
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
-    X_11 = feuerbach_point_of(model, A, B, C, ID="X(11)", classes=["center"])
-    central_line(model, X_2, X_11, 2, 11)
-    X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["center"])
-    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X(21)", classes=["center"])
-    central_line(model, X_10, X_21, 10, 21)
-    X_100 = anticomplement(model, A, B, C, X_11, ID="X(100)", classes=["selected", "target"])
+    X_100 = eval_trilinear_point(model, A, B, C, '1/(b - c)', ID="X(100)", classes=["selected", "target"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
+    X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center", "incident"])
+    central_line(model, X_3, X_8, 3, 8, incident=True)
+    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
+    X_11 = feuerbach_point_of(model, A, B, C, ID="X(11)", classes=["center", "incident"])
+    central_line(model, X_2, X_11, 2, 11, incident=True)
+    X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["center", "incident"])
+    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X(21)", classes=["center", "incident"])
+    central_line(model, X_10, X_21, 10, 21, incident=True)
     return promote_point_to_top(model, X_100)
 
 

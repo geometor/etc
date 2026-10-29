@@ -1,0 +1,48 @@
+"""GEOMETOR construction model for X(771) = ISOGONAL CONJUGATE OF X(770)."""
+
+from __future__ import annotations
+
+from pathlib import Path
+
+import sympy.geometry as spg
+from geometor.model import Model
+
+from geometor.etc.ops import (
+    construct_baseline_triangle,
+    create_model,
+    isogonal_conjugate,
+    point_from_barycentrics,
+    promote_point_to_top,
+)
+from geometor.etc.render import write_center_svg
+
+
+def construct_x_00771(
+    model: Model, A: spg.Point, B: spg.Point, C: spg.Point
+) -> spg.Point:
+    """Construct X(771) = ISOGONAL CONJUGATE OF X(770) on reference triangle ABC."""
+    X_770 = point_from_barycentrics(model, A, B, C, 14.48, -40.752, 27.272, ID="X(770)", classes=["center"])
+    X_771 = isogonal_conjugate(model, A, B, C, X_770, ID="X(771)", classes=["selected", "target"])
+    return promote_point_to_top(model, X_771)
+
+
+def build_model(
+    sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
+    show_guides: bool = False,
+) -> Model:
+    """Build a `geometor.model.Model` for X(771) on the given reference triangle."""
+    model = create_model('X(771) = ISOGONAL CONJUGATE OF X(770)')
+    A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
+    construct_x_00771(model, A, B, C)
+    return model
+
+
+if __name__ == "__main__":
+    here = Path(__file__).resolve().parent
+    model_acute = build_model((5.0, 6.0, 7.0))
+    model_acute.save(str(here / "x-00771.json"))
+    write_center_svg(
+        model_acute,
+        here / "x-00771.svg",
+        subtitle="(a, b, c) = (5, 6, 7) | AB = 1",
+    )

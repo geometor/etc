@@ -25,17 +25,17 @@ def construct_x_00088(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(88) = ISOGONAL CONJUGATE OF X(44) on reference triangle ABC."""
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
-    X_45 = eval_trilinear_point(model, A, B, C, '2*b + 2*c - a', ID="X(45)", classes=["center"])
-    central_line(model, X_2, X_45, 2, 45)
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
-    X_89 = eval_trilinear_point(model, A, B, C, '1/(2*b + 2*c - a)', ID="X(89)", classes=["center"])
-    central_line(model, X_6, X_89, 6, 89)
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
-    X_100 = eval_trilinear_point(model, A, B, C, '1/(b - c)', ID="X(100)", classes=["center"])
-    central_line(model, X_1, X_100, 1, 100)
     X_44 = eval_trilinear_point(model, A, B, C, 'b + c - 2*a', ID="X(44)", classes=["center"])
     X_88 = isogonal_conjugate(model, A, B, C, X_44, ID="X(88)", classes=["selected", "target"])
+    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
+    X_45 = eval_trilinear_point(model, A, B, C, '2*b + 2*c - a', ID="X(45)", classes=["center", "incident"])
+    central_line(model, X_2, X_45, 2, 45, incident=True)
+    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
+    X_89 = eval_trilinear_point(model, A, B, C, '1/(2*b + 2*c - a)', ID="X(89)", classes=["center", "incident"])
+    central_line(model, X_6, X_89, 6, 89, incident=True)
+    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
+    X_100 = eval_trilinear_point(model, A, B, C, '1/(b - c)', ID="X(100)", classes=["center", "incident"])
+    central_line(model, X_1, X_100, 1, 100, incident=True)
     return promote_point_to_top(model, X_88)
 
 

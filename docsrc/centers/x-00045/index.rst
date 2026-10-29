@@ -5,14 +5,14 @@
 
 .. _X(45):
 
-X(45) = -BETH CONJUGATE OF X(1)
-===============================
+X(45) = X(9)-BETH CONJUGATE OF X(1)
+===================================
 
 .. figure:: x-00045.svg
-   :alt: X(45) = -BETH CONJUGATE OF X(1)
+   :alt: X(45) = X(9)-BETH CONJUGATE OF X(1)
    :align: center
 
-   **X(45) = -BETH CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(45) = X(9)-BETH CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
 Coordinates
 -----------
@@ -46,7 +46,7 @@ Incidence
 
 :ref:`X(45) <X(45)>` lies and on these lines:
 
-{:ref:`1 <X(1)>`, :ref:`6 <X(6)>`}, {:ref:`2 <X(2)>`, :ref:`88 <X(88)>`}, {:ref:`53 <X(53)>`, 281}, {:ref:`55 <X(55)>`, 678}, {141, 344}, {198, 1030}, {210, 968}, {346, 594}
+{:ref:`1 <X(1)>`, :ref:`6 <X(6)>`}, {:ref:`2 <X(2)>`, :ref:`88 <X(88)>`}, {:ref:`53 <X(53)>`, :ref:`281 <X(281)>`}, {:ref:`55 <X(55)>`, :ref:`678 <X(678)>`}, {:ref:`141 <X(141)>`, :ref:`344 <X(344)>`}, {:ref:`198 <X(198)>`, 1030}, {:ref:`210 <X(210)>`, :ref:`968 <X(968)>`}, {:ref:`346 <X(346)>`, :ref:`594 <X(594)>`}
 
 Relations
 ---------
@@ -54,9 +54,9 @@ Relations
 * :ref:`X(45) <X(45)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(89) <X(89)>`
 * :ref:`X(45) <X(45)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(20569)
 * :ref:`X(45) <X(45)>` = :term:`anticomplement <anticomplement>` of X(34824)
-* :ref:`X(45) <X(45)>` = :term:`crosssum <crosssum>` of :ref:`X(6) <X(6)>` and X(999)
+* :ref:`X(45) <X(45)>` = :term:`crosssum <crosssum>` of :ref:`X(6) <X(6)>` and :ref:`X(999) <X(999)>`
 * :ref:`X(45) <X(45)>` = anticomplement of isotomic conjugate of X(32013)
-* :ref:`X(45) <X(45)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`9 <X(9)>`, :ref:`1 <X(1)>`), (644, :ref:`45 <X(45)>`)
+* :ref:`X(45) <X(45)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`9 <X(9)>`, :ref:`1 <X(1)>`), (:ref:`644 <X(644)>`, :ref:`45 <X(45)>`)
 * :ref:`X(45) <X(45)>` = :term:`complement <complement>` of polar conjugate of isogonal conjugate of X(22129)
 * :ref:`X(45) <X(45)>` = anticomplement of anticomplement of X(31285)
 

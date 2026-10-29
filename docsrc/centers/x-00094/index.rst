@@ -46,24 +46,24 @@ Incidence
 
 :ref:`X(94) <X(94)>` lies on the Kiepert hyperbola and on these lines:
 
-{:ref:`2 <X(2)>`, 300}, {:ref:`4 <X(4)>`, 143}, {:ref:`23 <X(23)>`, :ref:`98 <X(98)>`}, {:ref:`49 <X(49)>`, :ref:`93 <X(93)>`}, {:ref:`96 <X(96)>`, 925}, {275, 324}
+{:ref:`2 <X(2)>`, :ref:`300 <X(300)>`}, {:ref:`4 <X(4)>`, :ref:`143 <X(143)>`}, {:ref:`23 <X(23)>`, :ref:`98 <X(98)>`}, {:ref:`49 <X(49)>`, :ref:`93 <X(93)>`}, {:ref:`96 <X(96)>`, :ref:`925 <X(925)>`}, {:ref:`275 <X(275)>`, :ref:`324 <X(324)>`}
 
 Relations
 ---------
 
 * :ref:`X(94) <X(94)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(50) <X(50)>`
-* :ref:`X(94) <X(94)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(323)
+* :ref:`X(94) <X(94)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(323) <X(323)>`
 * :ref:`X(94) <X(94)>` = :term:`anticomplement <anticomplement>` of X(34834)
 * :ref:`X(94) <X(94)>` = :term:`cevapoint <cevapoint>` of :ref:`X(49) <X(49)>` and :ref:`X(50) <X(50)>`
-* :ref:`X(94) <X(94)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`30 <X(30)>`, 264), (:ref:`50 <X(50)>`, :ref:`93 <X(93)>`), (265, 328)
-* :ref:`X(94) <X(94)>` = X(300)-:term:`Hirst inverse <hirst-inverse>` of X(301)
-* :ref:`X(94) <X(94)>` = trilinear pole of PU(5) (line :ref:`X(5) <X(5)>`\ X(523))
-* :ref:`X(94) <X(94)>` = pole wrt polar circle of trilinear polar of X(186)
-* :ref:`X(94) <X(94)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of X(186)
-* :ref:`X(94) <X(94)>` = barycentric product X(476)\*X(850)
+* :ref:`X(94) <X(94)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`30 <X(30)>`, :ref:`264 <X(264)>`), (:ref:`50 <X(50)>`, :ref:`93 <X(93)>`), (:ref:`265 <X(265)>`, :ref:`328 <X(328)>`)
+* :ref:`X(94) <X(94)>` = :ref:`X(300) <X(300)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(301) <X(301)>`
+* :ref:`X(94) <X(94)>` = trilinear pole of PU(5) (line :ref:`X(5) <X(5)>`\ \ :ref:`X(523) <X(523)>`)
+* :ref:`X(94) <X(94)>` = pole wrt polar circle of trilinear polar of :ref:`X(186) <X(186)>`
+* :ref:`X(94) <X(94)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X(186) <X(186)>`
+* :ref:`X(94) <X(94)>` = barycentric product :ref:`X(476) <X(476)>`\ \*\ :ref:`X(850) <X(850)>`
 * :ref:`X(94) <X(94)>` = trilinear pole of PU(173)
-* :ref:`X(94) <X(94)>` = trilinear product :ref:`X(74) <X(74)>`\ \*X(107) (circumcircle-:ref:`X(4) <X(4)>` antipodes)
-* :ref:`X(94) <X(94)>` = barycentric quotient X(476)/X(110)
+* :ref:`X(94) <X(94)>` = trilinear product :ref:`X(74) <X(74)>`\ \*\ :ref:`X(107) <X(107)>` (circumcircle-:ref:`X(4) <X(4)>` antipodes)
+* :ref:`X(94) <X(94)>` = barycentric quotient :ref:`X(476) <X(476)>`/:ref:`X(110) <X(110)>`
 * :ref:`X(94) <X(94)>` = intersection of the tangent to hyperbola {A,B,C,\ :ref:`X(6) <X(6)>`,\ :ref:`X(13) <X(13)>`,\ :ref:`X(16) <X(16)>`}} at :ref:`X(13) <X(13)>` and the tangent to hyperbola {A,B,C,\ :ref:`X(6) <X(6)>`,\ :ref:`X(14) <X(14)>`,\ :ref:`X(15) <X(15)>`}} at :ref:`X(14) <X(14)>`
 
 Construction

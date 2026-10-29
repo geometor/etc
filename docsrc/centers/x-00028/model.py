@@ -24,16 +24,16 @@ def construct_x_00028(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(28) = CEVAPOINT OF X(19) AND X(25) on reference triangle ABC."""
+    X_28 = eval_trilinear_point(model, A, B, C, '(tan(A))/(b + c)', ID="X(28)", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
-    X_19 = eval_trilinear_point(model, A, B, C, 'tan(A)', ID="X(19)", classes=["center"])
-    central_line(model, X_1, X_19, 1, 19)
-    X_34 = eval_trilinear_point(model, A, B, C, '1 - sec(A)', ID="X(34)", classes=["center"])
-    X_57 = eval_trilinear_point(model, A, B, C, '1/(b + c - a)', ID="X(57)", classes=["center"])
-    central_line(model, X_34, X_57, 34, 57)
-    X_28 = eval_trilinear_point(model, A, B, C, '(tan(A))/(b + c)', ID="X(28)", classes=["selected", "target"])
+    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
+    X_19 = eval_trilinear_point(model, A, B, C, 'tan(A)', ID="X(19)", classes=["center", "incident"])
+    central_line(model, X_1, X_19, 1, 19, incident=True)
+    X_34 = eval_trilinear_point(model, A, B, C, '1 - sec(A)', ID="X(34)", classes=["center", "incident"])
+    X_57 = eval_trilinear_point(model, A, B, C, '1/(b + c - a)', ID="X(57)", classes=["center", "incident"])
+    central_line(model, X_34, X_57, 34, 57, incident=True)
     return promote_point_to_top(model, X_28)
 
 

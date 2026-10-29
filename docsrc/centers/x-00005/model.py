@@ -16,9 +16,7 @@ from geometor.etc.ops import (
     eval_trilinear_point,
     feuerbach_point_of,
     incenter_of,
-    medial_triangle,
     nine_point_center_of,
-    orthic_triangle,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -28,24 +26,22 @@ def construct_x_00005(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(5) = NINE-POINT CENTER on reference triangle ABC."""
-    medial_triangle(model, A, B, C)
-    orthic_triangle(model, A, B, C)
+    X_5 = nine_point_center_of(model, A, B, C, ID="X(5)", classes=["selected", "target"], draw_circle=True)
     X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
-    X_11 = feuerbach_point_of(model, A, B, C, ID="X(11)", classes=["center"])
-    central_line(model, X_1, X_11, 1, 11)
-    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /3)', ID="X(13)", classes=["center"])
-    X_18 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /6)', ID="X(18)", classes=["center"])
-    central_line(model, X_13, X_18, 13, 18)
-    X_5 = nine_point_center_of(model, A, B, C, ID="X(5)", classes=["selected", "target"], draw_circle=True)
+    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
+    X_11 = feuerbach_point_of(model, A, B, C, ID="X(11)", classes=["center", "incident"])
+    central_line(model, X_1, X_11, 1, 11, incident=True)
+    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /3)', ID="X(13)", classes=["center", "incident"])
+    X_18 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /6)', ID="X(18)", classes=["center", "incident"])
+    central_line(model, X_13, X_18, 13, 18, incident=True)
     return promote_point_to_top(model, X_5)
 
 
 def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
-    show_guides: bool = True,
+    show_guides: bool = False,
 ) -> Model:
     """Build a `geometor.model.Model` for X(5) on the given reference triangle."""
     model = create_model('X(5) = NINE-POINT CENTER')

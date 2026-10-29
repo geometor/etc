@@ -13,7 +13,6 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     incenter_of,
-    incircle,
     isogonal_conjugate,
     nagel_point_of,
     orthocenter_of,
@@ -26,18 +25,17 @@ def construct_x_00092(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(92) = CEVAPOINT OF INCENTER AND CLAWSON POINT on reference triangle ABC."""
-    incircle(model, A, B, C)
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center"])
-    X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center"])
-    central_line(model, X_4, X_8, 4, 8)
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
-    X_29 = eval_trilinear_point(model, A, B, C, '(sec(A))/(cos(B) + cos(C))', ID="X(29)", classes=["center"])
-    central_line(model, X_1, X_29, 1, 29)
-    X_19 = eval_trilinear_point(model, A, B, C, 'tan(A)', ID="X(19)", classes=["center"])
-    X_27 = eval_trilinear_point(model, A, B, C, '(sec(A))/(b + c)', ID="X(27)", classes=["center"])
-    central_line(model, X_19, X_27, 19, 27)
     X_48 = eval_trilinear_point(model, A, B, C, 'tan(B) + tan(C)', ID="X(48)", classes=["center"])
     X_92 = isogonal_conjugate(model, A, B, C, X_48, ID="X(92)", classes=["selected", "target"])
+    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
+    X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center", "incident"])
+    central_line(model, X_4, X_8, 4, 8, incident=True)
+    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
+    X_29 = eval_trilinear_point(model, A, B, C, '(sec(A))/(cos(B) + cos(C))', ID="X(29)", classes=["center", "incident"])
+    central_line(model, X_1, X_29, 1, 29, incident=True)
+    X_19 = eval_trilinear_point(model, A, B, C, 'tan(A)', ID="X(19)", classes=["center", "incident"])
+    X_27 = eval_trilinear_point(model, A, B, C, '(sec(A))/(b + c)', ID="X(27)", classes=["center", "incident"])
+    central_line(model, X_19, X_27, 19, 27, incident=True)
     return promote_point_to_top(model, X_92)
 
 

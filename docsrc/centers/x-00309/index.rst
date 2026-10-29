@@ -1,0 +1,48 @@
+:order: 309
+:type: center
+:canonical_id: X(309)
+:dependencies: X(7), X(40), X(69), X(75), X(77), X(84), X(85), X(92), X(189), X(264), X(280), X(304), X(314), X(318), X(322), X(2187), X(2331)
+
+.. _X(309):
+
+X(309) = ISOTOMIC CONJUGATE OF X(40)
+====================================
+
+.. figure:: x-00309.svg
+   :alt: X(309) = ISOTOMIC CONJUGATE OF X(40)
+   :align: center
+
+   **X(309) = ISOTOMIC CONJUGATE OF X(40)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+
+Coordinates
+-----------
+
+Trilinears
+~~~~~~~~~~
+
+* :math:`(\csc^{2}A)/(-1 - \cos A + \cos B + \cos C) : :`
+* :math:`b^2 c^2 (a^2 (a^2 - (b - c)^2)^2 - (b - c)^2 (a^2 - (b + c)^2)^2) : :`
+
+* **Kimberling (6, 9, 13) Search Value:** :math:`6.780894052493`
+
+Incidence
+---------
+
+:ref:`X(309) <X(309)>` lies and on these lines:
+
+{:ref:`69 <X(69)>`, :ref:`189 <X(189)>`}, {:ref:`75 <X(75)>`, :ref:`280 <X(280)>`}, {:ref:`77 <X(77)>`, :ref:`318 <X(318)>`}, {:ref:`84 <X(84)>`, :ref:`314 <X(314)>`}, {:ref:`85 <X(85)>`, :ref:`264 <X(264)>`}, {:ref:`304 <X(304)>`, :ref:`322 <X(322)>`}
+
+Relations
+---------
+
+* :ref:`X(309) <X(309)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(2187)
+* :ref:`X(309) <X(309)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(40) <X(40)>`
+* :ref:`X(309) <X(309)>` = :term:`cevapoint <cevapoint>` of :ref:`X(189) <X(189)>` and :ref:`X(280) <X(280)>`
+* :ref:`X(309) <X(309)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`7 <X(7)>`, :ref:`75 <X(75)>`), (:ref:`92 <X(92)>`, :ref:`85 <X(85)>`)
+* :ref:`X(309) <X(309)>` = polar conjugate of X(2331)
+
+Construction
+------------
+
+.. literalinclude:: model.py
+   :language: python

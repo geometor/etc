@@ -3,6 +3,14 @@ changelog
 
 :project: geometor.etc
 
+0.1.2
+-----
+
+- Simplified initial center graphics into a focused primary construction layer showing only the specific defining geometric relationship (and the golden Euler line whenever $X(n)$ lies on the Euler line).
+- Added a `Lines` toolbar toggle button to show/hide incident central lines `{i, j}` and their defining centers across all 4 reference triangle tabs.
+- Escaped XML special characters (`<`, `>`, `&`) as JSON unicode sequences in embedded SVG metadata so collection page `<img>` thumbnails pass strict XML validation.
+- Expanded coordinate/incidence resolution and generated documentation and interactive graphics for `X(1)` through `X(1000)`.
+
 0.1.1
 -----
 
@@ -10,6 +18,7 @@ changelog
 - Scaled point radii and label typography $1.5\times$ for legibility.
 - Unified reference triangle graphics into a 4-tab graphics panel (`5, 6, 7`, `3, 4, 5`, `Kepler`, and `Kimberling`) on center pages while keeping static thumbnails on collection pages.
 - Added projective limit fallback evaluation and coincident point handling for right triangles (`3, 4, 5` and `Kepler`).
+
 
 0.1.0
 -----

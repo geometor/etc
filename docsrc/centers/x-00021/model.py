@@ -25,16 +25,16 @@ def construct_x_00021(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(21) = SCHIFFLER POINT on reference triangle ABC."""
+    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X(21)", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
-    X_31 = eval_trilinear_point(model, A, B, C, 'a**(2)', ID="X(31)", classes=["center"])
-    central_line(model, X_1, X_31, 1, 31)
-    X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["center"])
-    X_35 = eval_trilinear_point(model, A, B, C, '1 + 2*cos(A)', ID="X(35)", classes=["center"])
-    central_line(model, X_10, X_35, 10, 35)
-    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X(21)", classes=["selected", "target"])
+    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
+    X_31 = eval_trilinear_point(model, A, B, C, 'a**(2)', ID="X(31)", classes=["center", "incident"])
+    central_line(model, X_1, X_31, 1, 31, incident=True)
+    X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["center", "incident"])
+    X_35 = eval_trilinear_point(model, A, B, C, '1 + 2*cos(A)', ID="X(35)", classes=["center", "incident"])
+    central_line(model, X_10, X_35, 10, 35, incident=True)
     return promote_point_to_top(model, X_21)
 
 

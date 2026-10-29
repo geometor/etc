@@ -15,11 +15,9 @@ from geometor.etc.ops import (
     eval_trilinear_point,
     gergonne_point_of,
     incenter_of,
-    incircle,
     isogonal_conjugate,
     promote_point_to_top,
     symmedian_point_of,
-    tangential_triangle,
 )
 from geometor.etc.render import write_center_svg
 
@@ -28,19 +26,17 @@ def construct_x_00081(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(81) = CEVAPOINT OF INCENTER AND SYMMEDIAN POINT on reference triangle ABC."""
-    incircle(model, A, B, C)
-    tangential_triangle(model, A, B, C)
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
-    central_line(model, X_2, X_6, 2, 6)
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
-    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X(21)", classes=["center"])
-    central_line(model, X_1, X_21, 1, 21)
-    X_7 = gergonne_point_of(model, A, B, C, ID="X(7)", classes=["center"])
-    X_27 = eval_trilinear_point(model, A, B, C, '(sec(A))/(b + c)', ID="X(27)", classes=["center"])
-    central_line(model, X_7, X_27, 7, 27)
     X_37 = eval_trilinear_point(model, A, B, C, 'b + c', ID="X(37)", classes=["center"])
     X_81 = isogonal_conjugate(model, A, B, C, X_37, ID="X(81)", classes=["selected", "target"])
+    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
+    central_line(model, X_2, X_6, 2, 6, incident=True)
+    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
+    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X(21)", classes=["center", "incident"])
+    central_line(model, X_1, X_21, 1, 21, incident=True)
+    X_7 = gergonne_point_of(model, A, B, C, ID="X(7)", classes=["center", "incident"])
+    X_27 = eval_trilinear_point(model, A, B, C, '(sec(A))/(b + c)', ID="X(27)", classes=["center", "incident"])
+    central_line(model, X_7, X_27, 7, 27, incident=True)
     return promote_point_to_top(model, X_81)
 
 

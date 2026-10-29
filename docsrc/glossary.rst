@@ -398,9 +398,9 @@ x : y : z = qw - rv : ru - pw : pv - qu,
 
 A point X is the crossdifference of distinct points P and U if and only if the line PU is the trilinear polar of the isogonal conjugate of X. Examples:
 
-| :ref:`X(1) <X(1)>` = crossdifference of :ref:`X(44) <X(44)>` and X(513)
-| :ref:`X(2) <X(2)>` = crossdifference of X(187) and X(512)
-| :ref:`X(3) <X(3)>` = crossdifference of X(230) and X(231).
+| :ref:`X(1) <X(1)>` = crossdifference of :ref:`X(44) <X(44)>` and :ref:`X(513) <X(513)>`
+| :ref:`X(2) <X(2)>` = crossdifference of :ref:`X(187) <X(187)>` and :ref:`X(512) <X(512)>`
+| :ref:`X(3) <X(3)>` = crossdifference of :ref:`X(230) <X(230)>` and :ref:`X(231) <X(231)>`.
 
 Let W be the side-triangle of these two triangles: the cevian triangle of the isogonal conjugate of P and the cevian triangle of the isogonal conjugate of U. Then W is perspective to ABC, and the perspector is the crossdifference of P and U; see also :term:`crosspoint <crosspoint>`. (Randy Hutson, April 9, 2016)
 
@@ -942,7 +942,7 @@ The anticevian triangle of the symmedian point :ref:`X(6) <X(6)>` = a : b : c, f
 transcendental center
 ---------------------
 
-A triangle center X is a transcendental center if there exists no algebraic function f(a,b,c) such that X = f(a,b,c) : f(b,c,a) : f(c,a,b). Examples: X(359) and X(360).
+A triangle center X is a transcendental center if there exists no algebraic function f(a,b,c) such that X = f(a,b,c) : f(b,c,a) : f(c,a,b). Examples: :ref:`X(359) <X(359)>` and :ref:`X(360) <X(360)>`.
 
 .. _term-triangle-center:
 .. _triangle-center:

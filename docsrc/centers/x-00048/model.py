@@ -10,7 +10,6 @@ from geometor.model import Model
 from geometor.etc.ops import (
     central_line,
     circumcenter_of,
-    circumcircle,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
@@ -25,17 +24,16 @@ def construct_x_00048(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(48) = CROSSPOINT OF X(1) AND X(63) on reference triangle ABC."""
-    circumcircle(model, A, B, C)
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
-    X_19 = eval_trilinear_point(model, A, B, C, 'tan(A)', ID="X(19)", classes=["center"])
-    central_line(model, X_1, X_19, 1, 19)
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
-    X_41 = eval_trilinear_point(model, A, B, C, 'a**(2)*(b + c - a)', ID="X(41)", classes=["center"])
-    central_line(model, X_6, X_41, 6, 41)
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
-    X_71 = eval_trilinear_point(model, A, B, C, '(b + c)*cos(A)', ID="X(71)", classes=["center"])
-    central_line(model, X_3, X_71, 3, 71)
     X_48 = eval_trilinear_point(model, A, B, C, 'tan(B) + tan(C)', ID="X(48)", classes=["selected", "target"])
+    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
+    X_19 = eval_trilinear_point(model, A, B, C, 'tan(A)', ID="X(19)", classes=["center", "incident"])
+    central_line(model, X_1, X_19, 1, 19, incident=True)
+    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
+    X_41 = eval_trilinear_point(model, A, B, C, 'a**(2)*(b + c - a)', ID="X(41)", classes=["center", "incident"])
+    central_line(model, X_6, X_41, 6, 41, incident=True)
+    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
+    X_71 = eval_trilinear_point(model, A, B, C, '(b + c)*cos(A)', ID="X(71)", classes=["center", "incident"])
+    central_line(model, X_3, X_71, 3, 71, incident=True)
     return promote_point_to_top(model, X_48)
 
 

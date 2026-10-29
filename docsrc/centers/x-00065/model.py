@@ -15,7 +15,6 @@ from geometor.etc.ops import (
     eval_trilinear_point,
     gergonne_point_of,
     incenter_of,
-    intouch_triangle,
     isogonal_conjugate,
     nagel_point_of,
     promote_point_to_top,
@@ -28,18 +27,17 @@ def construct_x_00065(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(65) = ORTHOCENTER OF THE INTOUCH TRIANGLE on reference triangle ABC."""
-    intouch_triangle(model, A, B, C)
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
-    central_line(model, X_1, X_3, 1, 3)
-    X_7 = gergonne_point_of(model, A, B, C, ID="X(7)", classes=["center"])
-    X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center"])
-    central_line(model, X_7, X_8, 7, 8)
-    X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["center"])
-    X_12 = eval_trilinear_point(model, A, B, C, '1 + cos(B - C)', ID="X(12)", classes=["center"])
-    central_line(model, X_10, X_12, 10, 12)
     X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X(21)", classes=["center"])
     X_65 = isogonal_conjugate(model, A, B, C, X_21, ID="X(65)", classes=["selected", "target"])
+    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
+    central_line(model, X_1, X_3, 1, 3, incident=True)
+    X_7 = gergonne_point_of(model, A, B, C, ID="X(7)", classes=["center", "incident"])
+    X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center", "incident"])
+    central_line(model, X_7, X_8, 7, 8, incident=True)
+    X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["center", "incident"])
+    X_12 = eval_trilinear_point(model, A, B, C, '1 + cos(B - C)', ID="X(12)", classes=["center", "incident"])
+    central_line(model, X_10, X_12, 10, 12, incident=True)
     return promote_point_to_top(model, X_65)
 
 

@@ -8,8 +8,10 @@ import sympy.geometry as spg
 from geometor.model import Model
 
 from geometor.etc.ops import (
+    central_line,
     construct_baseline_triangle,
     create_model,
+    eval_trilinear_point,
     feuerbach_point_of,
     isogonal_conjugate,
     promote_point_to_top,
@@ -23,6 +25,15 @@ def construct_x_00059(
     """Construct X(59) = ISOGONAL CONJUGATE OF X(11) on reference triangle ABC."""
     X_11 = feuerbach_point_of(model, A, B, C, ID="X(11)", classes=["center"])
     X_59 = isogonal_conjugate(model, A, B, C, X_11, ID="X(59)", classes=["selected", "target"])
+    X_100 = eval_trilinear_point(model, A, B, C, '1/(b - c)', ID="X(100)", classes=["center", "incident"])
+    X_521 = eval_trilinear_point(model, A, B, C, '(sec(B) - sec(C))*(csc(A))', ID="X(521)", classes=["center", "incident"])
+    central_line(model, X_100, X_521, 100, 521, incident=True)
+    X_101 = eval_trilinear_point(model, A, B, C, 'a/(b - c)', ID="X(101)", classes=["center", "incident"])
+    X_657 = eval_trilinear_point(model, A, B, C, '(1 + cos(A))*(cos(B) - cos(C))', ID="X(657)", classes=["center", "incident"])
+    central_line(model, X_101, X_657, 101, 657, incident=True)
+    X_109 = eval_trilinear_point(model, A, B, C, 'a/(cos(B) - cos(C))', ID="X(109)", classes=["center", "incident"])
+    X_901 = eval_trilinear_point(model, A, B, C, 'a/((b - c)*(b + c - 2*a))', ID="X(901)", classes=["center", "incident"])
+    central_line(model, X_109, X_901, 109, 901, incident=True)
     return promote_point_to_top(model, X_59)
 
 

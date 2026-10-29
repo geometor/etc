@@ -13,7 +13,7 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     isogonal_conjugate,
-    nine_point_circle,
+    orthocenter_of,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -23,15 +23,17 @@ def construct_x_00094(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(94) = ISOGONAL CONJUGATE OF X(50) on reference triangle ABC."""
-    nine_point_circle(model, A, B, C)
-    X_49 = eval_trilinear_point(model, A, B, C, 'cos(3*A)', ID="X(49)", classes=["center"])
-    X_93 = eval_trilinear_point(model, A, B, C, 'sec(3*A)', ID="X(93)", classes=["center"])
-    central_line(model, X_49, X_93, 49, 93)
-    X_23 = eval_trilinear_point(model, A, B, C, 'a*(b**(4) + c**(4) - a**(4) - b**(2)*c**(2))', ID="X(23)", classes=["center"])
-    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A + omega )', ID="X(98)", classes=["center"])
-    central_line(model, X_23, X_98, 23, 98)
     X_50 = eval_trilinear_point(model, A, B, C, 'sin(3*A)', ID="X(50)", classes=["center"])
     X_94 = isogonal_conjugate(model, A, B, C, X_50, ID="X(94)", classes=["selected", "target"])
+    X_49 = eval_trilinear_point(model, A, B, C, 'cos(3*A)', ID="X(49)", classes=["center", "incident"])
+    X_93 = eval_trilinear_point(model, A, B, C, 'sec(3*A)', ID="X(93)", classes=["center", "incident"])
+    central_line(model, X_49, X_93, 49, 93, incident=True)
+    X_23 = eval_trilinear_point(model, A, B, C, 'a*(b**(4) + c**(4) - a**(4) - b**(2)*c**(2))', ID="X(23)", classes=["center", "incident"])
+    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A + omega )', ID="X(98)", classes=["center", "incident"])
+    central_line(model, X_23, X_98, 23, 98, incident=True)
+    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
+    X_143 = eval_trilinear_point(model, A, B, C, '(sec(A))*(cos(2*C - 2*A) + cos(2*A - 2*B))', ID="X(143)", classes=["center", "incident"])
+    central_line(model, X_4, X_143, 4, 143, incident=True)
     return promote_point_to_top(model, X_94)
 
 

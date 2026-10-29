@@ -9,12 +9,10 @@ from geometor.model import Model
 
 from geometor.etc.ops import (
     central_line,
-    circumcircle,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
     incenter_of,
-    incircle,
     isogonal_conjugate,
     orthocenter_of,
     promote_point_to_top,
@@ -27,19 +25,17 @@ def construct_x_00073(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(73) = CROSSPOINT OF INCENTER AND CIRCUMCENTER on reference triangle ABC."""
-    incircle(model, A, B, C)
-    circumcircle(model, A, B, C)
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center"])
-    central_line(model, X_1, X_4, 1, 4)
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
-    X_41 = eval_trilinear_point(model, A, B, C, 'a**(2)*(b + c - a)', ID="X(41)", classes=["center"])
-    central_line(model, X_6, X_41, 6, 41)
-    X_36 = eval_trilinear_point(model, A, B, C, '1 - 2*cos(A)', ID="X(36)", classes=["center"])
-    X_54 = eval_trilinear_point(model, A, B, C, 'sec(B - C)', ID="X(54)", classes=["center"])
-    central_line(model, X_36, X_54, 36, 54)
     X_29 = eval_trilinear_point(model, A, B, C, '(sec(A))/(cos(B) + cos(C))', ID="X(29)", classes=["center"])
     X_73 = isogonal_conjugate(model, A, B, C, X_29, ID="X(73)", classes=["selected", "target"])
+    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
+    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
+    central_line(model, X_1, X_4, 1, 4, incident=True)
+    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
+    X_41 = eval_trilinear_point(model, A, B, C, 'a**(2)*(b + c - a)', ID="X(41)", classes=["center", "incident"])
+    central_line(model, X_6, X_41, 6, 41, incident=True)
+    X_36 = eval_trilinear_point(model, A, B, C, '1 - 2*cos(A)', ID="X(36)", classes=["center", "incident"])
+    X_54 = eval_trilinear_point(model, A, B, C, 'sec(B - C)', ID="X(54)", classes=["center", "incident"])
+    central_line(model, X_36, X_54, 36, 54, incident=True)
     return promote_point_to_top(model, X_73)
 
 

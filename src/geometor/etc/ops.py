@@ -1289,7 +1289,11 @@ def central_line(
     Q: spg.Point,
     i_num: int,
     j_num: int,
+    incident: bool = False,
 ) -> spg.Line:
     """Add the central line {i, j} passing through X(i) and X(j), styled as Euler line if applicable."""
     cls = ["golden", "euler"] if {i_num, j_num} <= {2, 3, 4, 5, 20, 30} else ["central_line"]
+    if incident:
+        cls.append("incident")
     return add_line(model, P, Q, ID=f"{{ {i_num}, {j_num} }}", classes=cls)
+

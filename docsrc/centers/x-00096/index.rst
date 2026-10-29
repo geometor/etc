@@ -41,7 +41,7 @@ Incidence
 
 :ref:`X(96) <X(96)>` lies and on these lines:
 
-{:ref:`2 <X(2)>`, :ref:`54 <X(54)>`}, {:ref:`4 <X(4)>`, 231}, {:ref:`24 <X(24)>`, 847}, {:ref:`76 <X(76)>`, :ref:`95 <X(95)>`}, {:ref:`94 <X(94)>`, 925}
+{:ref:`2 <X(2)>`, :ref:`54 <X(54)>`}, {:ref:`4 <X(4)>`, :ref:`231 <X(231)>`}, {:ref:`24 <X(24)>`, :ref:`847 <X(847)>`}, {:ref:`76 <X(76)>`, :ref:`95 <X(95)>`}, {:ref:`94 <X(94)>`, :ref:`925 <X(925)>`}
 
 Relations
 ---------
@@ -51,9 +51,9 @@ Relations
 * :ref:`X(96) <X(96)>` = :term:`anticomplement <anticomplement>` of X(34835)
 * :ref:`X(96) <X(96)>` = :term:`cevapoint <cevapoint>` of :ref:`X(3) <X(3)>` and :ref:`X(68) <X(68)>`
 * :ref:`X(96) <X(96)>` = :ref:`X(3) <X(3)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(54) <X(54)>`
-* :ref:`X(96) <X(96)>` = polar conjugate of X(467)
+* :ref:`X(96) <X(96)>` = polar conjugate of :ref:`X(467) <X(467)>`
 * :ref:`X(96) <X(96)>` = Cundy-Parry Phi transform of X(5392)
-* :ref:`X(96) <X(96)>` = Cundy-Parry Psi transform of X(571)
+* :ref:`X(96) <X(96)>` = Cundy-Parry Psi transform of :ref:`X(571) <X(571)>`
 
 Construction
 ------------

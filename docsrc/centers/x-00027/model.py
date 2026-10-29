@@ -24,16 +24,16 @@ def construct_x_00027(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(27) = CEVAPOINT OF ORTHOCENTER AND CLAWSON CENTER on reference triangle ABC."""
+    X_27 = eval_trilinear_point(model, A, B, C, '(sec(A))/(b + c)', ID="X(27)", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
-    X_19 = eval_trilinear_point(model, A, B, C, 'tan(A)', ID="X(19)", classes=["center"])
-    X_63 = eval_trilinear_point(model, A, B, C, 'cot(A)', ID="X(63)", classes=["center"])
-    central_line(model, X_19, X_63, 19, 63)
-    X_7 = gergonne_point_of(model, A, B, C, ID="X(7)", classes=["center"])
-    X_81 = eval_trilinear_point(model, A, B, C, '1/(b + c)', ID="X(81)", classes=["center"])
-    central_line(model, X_7, X_81, 7, 81)
-    X_27 = eval_trilinear_point(model, A, B, C, '(sec(A))/(b + c)', ID="X(27)", classes=["selected", "target"])
+    X_19 = eval_trilinear_point(model, A, B, C, 'tan(A)', ID="X(19)", classes=["center", "incident"])
+    X_63 = eval_trilinear_point(model, A, B, C, 'cot(A)', ID="X(63)", classes=["center", "incident"])
+    central_line(model, X_19, X_63, 19, 63, incident=True)
+    X_7 = gergonne_point_of(model, A, B, C, ID="X(7)", classes=["center", "incident"])
+    X_81 = eval_trilinear_point(model, A, B, C, '1/(b + c)', ID="X(81)", classes=["center", "incident"])
+    central_line(model, X_7, X_81, 7, 81, incident=True)
     return promote_point_to_top(model, X_27)
 
 

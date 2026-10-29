@@ -24,14 +24,17 @@ def construct_x_00085(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(85) = ISOTOMIC CONJUGATE OF X(9) on reference triangle ABC."""
-    X_7 = gergonne_point_of(model, A, B, C, ID="X(7)", classes=["center"])
-    X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center"])
-    central_line(model, X_7, X_8, 7, 8)
-    X_29 = eval_trilinear_point(model, A, B, C, '(sec(A))/(cos(B) + cos(C))', ID="X(29)", classes=["center"])
-    X_34 = eval_trilinear_point(model, A, B, C, '1 - sec(A)', ID="X(34)", classes=["center"])
-    central_line(model, X_29, X_34, 29, 34)
     X_41 = eval_trilinear_point(model, A, B, C, 'a**(2)*(b + c - a)', ID="X(41)", classes=["center"])
     X_85 = isogonal_conjugate(model, A, B, C, X_41, ID="X(85)", classes=["selected", "target"])
+    X_7 = gergonne_point_of(model, A, B, C, ID="X(7)", classes=["center", "incident"])
+    X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center", "incident"])
+    central_line(model, X_7, X_8, 7, 8, incident=True)
+    X_29 = eval_trilinear_point(model, A, B, C, '(sec(A))/(cos(B) + cos(C))', ID="X(29)", classes=["center", "incident"])
+    X_34 = eval_trilinear_point(model, A, B, C, '1 - sec(A)', ID="X(34)", classes=["center", "incident"])
+    central_line(model, X_29, X_34, 29, 34, incident=True)
+    X_12 = eval_trilinear_point(model, A, B, C, '1 + cos(B - C)', ID="X(12)", classes=["center", "incident"])
+    X_120 = eval_trilinear_point(model, A, B, C, 'b*c*(2*a*b*c - (b + c)*(a**(2) + (b - c)**(2)))*(b**(2) + c**(2) - a*b -a*c)', ID="X(120)", classes=["center", "incident"])
+    central_line(model, X_12, X_120, 12, 120, incident=True)
     return promote_point_to_top(model, X_85)
 
 

@@ -11,7 +11,6 @@ from geometor.etc.ops import (
     central_line,
     centroid_of,
     circumcenter_of,
-    circumcircle,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
@@ -27,17 +26,16 @@ def construct_x_00020(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(20) = DE LONGCHAMPS POINT on reference triangle ABC."""
-    circumcircle(model, A, B, C)
+    X_20 = eval_trilinear_point(model, A, B, C, 'cos(A) - cos(B)*cos(C)', ID="X(20)", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
-    X_7 = gergonne_point_of(model, A, B, C, ID="X(7)", classes=["center"])
-    central_line(model, X_1, X_7, 1, 7)
-    X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center"])
-    X_40 = eval_trilinear_point(model, A, B, C, 'cos(B) + cos(C) - cos(A) - 1', ID="X(40)", classes=["center"])
-    central_line(model, X_8, X_40, 8, 40)
-    X_20 = eval_trilinear_point(model, A, B, C, 'cos(A) - cos(B)*cos(C)', ID="X(20)", classes=["selected", "target"])
+    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
+    X_7 = gergonne_point_of(model, A, B, C, ID="X(7)", classes=["center", "incident"])
+    central_line(model, X_1, X_7, 1, 7, incident=True)
+    X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center", "incident"])
+    X_40 = eval_trilinear_point(model, A, B, C, 'cos(B) + cos(C) - cos(A) - 1', ID="X(40)", classes=["center", "incident"])
+    central_line(model, X_8, X_40, 8, 40, incident=True)
     return promote_point_to_top(model, X_20)
 
 

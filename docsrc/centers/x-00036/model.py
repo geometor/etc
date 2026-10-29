@@ -10,13 +10,11 @@ from geometor.model import Model
 from geometor.etc.ops import (
     central_line,
     circumcenter_of,
-    circumcircle,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
     feuerbach_point_of,
     incenter_of,
-    incircle,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -26,18 +24,16 @@ def construct_x_00036(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(36) = INVERSE-IN-CIRCUMCIRCLE OF INCENTER on reference triangle ABC."""
-    incircle(model, A, B, C)
-    circumcircle(model, A, B, C)
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
-    central_line(model, X_1, X_3, 1, 3)
-    X_11 = feuerbach_point_of(model, A, B, C, ID="X(11)", classes=["center"])
-    X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X(30)", classes=["center"])
-    central_line(model, X_11, X_30, 11, 30)
-    X_24 = eval_trilinear_point(model, A, B, C, 'sec(A)*cos(2*A)', ID="X(24)", classes=["center"])
-    X_34 = eval_trilinear_point(model, A, B, C, '1 - sec(A)', ID="X(34)", classes=["center"])
-    central_line(model, X_24, X_34, 24, 34)
     X_36 = eval_trilinear_point(model, A, B, C, '1 - 2*cos(A)', ID="X(36)", classes=["selected", "target"])
+    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
+    central_line(model, X_1, X_3, 1, 3, incident=True)
+    X_11 = feuerbach_point_of(model, A, B, C, ID="X(11)", classes=["center", "incident"])
+    X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X(30)", classes=["center", "incident"])
+    central_line(model, X_11, X_30, 11, 30, incident=True)
+    X_24 = eval_trilinear_point(model, A, B, C, 'sec(A)*cos(2*A)', ID="X(24)", classes=["center", "incident"])
+    X_34 = eval_trilinear_point(model, A, B, C, '1 - sec(A)', ID="X(34)", classes=["center", "incident"])
+    central_line(model, X_24, X_34, 24, 34, incident=True)
     return promote_point_to_top(model, X_36)
 
 

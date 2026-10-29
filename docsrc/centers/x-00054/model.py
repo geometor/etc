@@ -15,7 +15,6 @@ from geometor.etc.ops import (
     eval_trilinear_point,
     isogonal_conjugate,
     nine_point_center_of,
-    orthic_triangle,
     promote_point_to_top,
     symmedian_point_of,
 )
@@ -26,17 +25,16 @@ def construct_x_00054(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(54) = KOSNITA POINT on reference triangle ABC."""
-    orthic_triangle(model, A, B, C)
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
-    X_24 = eval_trilinear_point(model, A, B, C, 'sec(A)*cos(2*A)', ID="X(24)", classes=["center"])
-    central_line(model, X_6, X_24, 6, 24)
     X_5 = nine_point_center_of(model, A, B, C, ID="X(5)", classes=["center"])
-    X_49 = eval_trilinear_point(model, A, B, C, 'cos(3*A)', ID="X(49)", classes=["center"])
-    central_line(model, X_5, X_49, 5, 49)
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
-    X_68 = eval_trilinear_point(model, A, B, C, 'cos(A)*sec(2*A)', ID="X(68)", classes=["center"])
-    central_line(model, X_2, X_68, 2, 68)
     X_54 = isogonal_conjugate(model, A, B, C, X_5, ID="X(54)", classes=["selected", "target"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
+    X_24 = eval_trilinear_point(model, A, B, C, 'sec(A)*cos(2*A)', ID="X(24)", classes=["center", "incident"])
+    central_line(model, X_6, X_24, 6, 24, incident=True)
+    X_49 = eval_trilinear_point(model, A, B, C, 'cos(3*A)', ID="X(49)", classes=["center", "incident"])
+    central_line(model, X_5, X_49, 5, 49, incident=True)
+    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
+    X_68 = eval_trilinear_point(model, A, B, C, 'cos(A)*sec(2*A)', ID="X(68)", classes=["center", "incident"])
+    central_line(model, X_2, X_68, 2, 68, incident=True)
     return promote_point_to_top(model, X_54)
 
 

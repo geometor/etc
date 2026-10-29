@@ -41,24 +41,24 @@ Incidence
 
 :ref:`X(67) <X(67)>` lies and on these lines:
 
-{:ref:`3 <X(3)>`, 542}, {:ref:`4 <X(4)>`, 338}, {:ref:`6 <X(6)>`, 125}, {:ref:`50 <X(50)>`, 248}, {:ref:`74 <X(74)>`, 935}, {110, 141}, {265, 511}, {290, 340}, {524, 858}, {526, 879}
+{:ref:`3 <X(3)>`, :ref:`542 <X(542)>`}, {:ref:`4 <X(4)>`, :ref:`338 <X(338)>`}, {:ref:`6 <X(6)>`, :ref:`125 <X(125)>`}, {:ref:`50 <X(50)>`, :ref:`248 <X(248)>`}, {:ref:`74 <X(74)>`, :ref:`935 <X(935)>`}, {:ref:`110 <X(110)>`, :ref:`141 <X(141)>`}, {:ref:`265 <X(265)>`, :ref:`511 <X(511)>`}, {:ref:`290 <X(290)>`, :ref:`340 <X(340)>`}, {:ref:`524 <X(524)>`, :ref:`858 <X(858)>`}, {:ref:`526 <X(526)>`, :ref:`879 <X(879)>`}
 
 Relations
 ---------
 
 * :ref:`X(67) <X(67)>` = midpoint of :ref:`X(69) <X(69)>` and X(3448)
-* :ref:`X(67) <X(67)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`6 <X(6)>`, 125), (110, 141)
+* :ref:`X(67) <X(67)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`6 <X(6)>`, :ref:`125 <X(125)>`), (:ref:`110 <X(110)>`, :ref:`141 <X(141)>`)
 * :ref:`X(67) <X(67)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(23) <X(23)>`
-* :ref:`X(67) <X(67)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(316)
+* :ref:`X(67) <X(67)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(316) <X(316)>`
 * :ref:`X(67) <X(67)>` = circumcircle-inverse of X(3455)
-* :ref:`X(67) <X(67)>` = :term:`cevapoint <cevapoint>` of X(141) and X(524)
-* :ref:`X(67) <X(67)>` = X(187)-:term:`cross conjugate <cross-conjugate>` of :ref:`X(2) <X(2)>`
+* :ref:`X(67) <X(67)>` = :term:`cevapoint <cevapoint>` of :ref:`X(141) <X(141)>` and :ref:`X(524) <X(524)>`
+* :ref:`X(67) <X(67)>` = :ref:`X(187) <X(187)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(2) <X(2)>`
 * :ref:`X(67) <X(67)>` = :term:`antigonal image <antigonal-image>` of :ref:`X(6) <X(6)>`
-* :ref:`X(67) <X(67)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(39) <X(39)>`\ X(647)
+* :ref:`X(67) <X(67)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(39) <X(39)>`\ \ :ref:`X(647) <X(647)>`
 * :ref:`X(67) <X(67)>` = polar conjugate of X(37765)
 * :ref:`X(67) <X(67)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X(37765) (line X(9517)X(9979))
 * :ref:`X(67) <X(67)>` = :ref:`X(63) <X(63)>`-:term:`isoconjugate <isoconjugate>` of X(8744)
-* :ref:`X(67) <X(67)>` = orthocenter of :ref:`X(3) <X(3)>`\ \ :ref:`X(74) <X(74)>`\ X(879)
+* :ref:`X(67) <X(67)>` = orthocenter of :ref:`X(3) <X(3)>`\ \ :ref:`X(74) <X(74)>`\ \ :ref:`X(879) <X(879)>`
 * :ref:`X(67) <X(67)>` = perspector of ABC and :ref:`X(2) <X(2)>`-Ehrmann triangle; see :ref:`X(25) <X(25)>`
 * :ref:`X(67) <X(67)>` = :ref:`X(19) <X(19)>`-isoconjugate of X(22151)
 

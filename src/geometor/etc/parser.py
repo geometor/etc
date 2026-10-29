@@ -89,7 +89,8 @@ def formula_html_to_latex(formula_html: str) -> str:
         r"\\\1",
         s,
     )
-    return " ".join(s.split())
+    return " ".join(s.split()).rstrip("\\").strip()
+
 
 
 def format_coordinate_line(coord_html: str) -> str:
@@ -173,16 +174,20 @@ def parse_h3(html_content: str) -> dict[str, Any] | None:
     key = f"X({num})"
 
     title = re.sub(
-        r"^(?:X[\(\[]\d+[\)\]]\s*=?\s*)+", "", clean_h3, flags=re.IGNORECASE
+        r"^(?:X[\(\[]\d+[\)\]]\s*=\s*)+", "", clean_h3, flags=re.IGNORECASE
     ).strip()
+    if not title or title == clean_h3:
+        title = re.sub(
+            r"^X[\(\[]\d+[\)\]]\s*", "", clean_h3, flags=re.IGNORECASE
+        ).strip()
     if not title:
         title = clean_h3
 
     # Extract parenthetical aliases at the end of the title if present, e.g.
     # "SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)" -> primary="SYMMEDIAN POINT", aliases=["LEMOINE POINT", "GREBE POINT"]
     aliases: list[str] = []
-    alias_m = re.match(r"^(.+?)\s*\(([^()]+POINT[^()]*)\)\s*$", title)
-    if alias_m:
+    alias_m = re.match(r"^([A-Za-z0-9\s\-\']{4,}?)\s+\(([^()]+(?:POINT|CENTER)[^()]*)\)\s*$", title)
+    if alias_m and not alias_m.group(1).strip().upper().endswith(("SIMILICENTER", "CONJUGATE", "PERSPECTOR")):
         primary_title = alias_m.group(1).strip()
         aliases = [a.strip() for a in alias_m.group(2).split(",") if a.strip()]
     else:
@@ -277,7 +282,7 @@ def _parse_incidence_block(raw_block: str, center_num: int) -> dict[str, Any]:
     lines_pairs: list[tuple[int, int]] = []
     curves_text = cleaned
     lines_split = re.split(
-        r"\b(?:(?:and|as\s+well\s+as)\s+)?(?:on\s+)?(?:these|this|the\s+following)\s+lines?\s*:\s*",
+        r"\b(?:(?:and|as\s+well\s+as)\s+)?(?:on\s+)?(?:these|this|the\s+following)\s+(?:\(?parallel\)?\s+)?lines?\s*:\s*",
         cleaned,
         maxsplit=1,
         flags=re.IGNORECASE,

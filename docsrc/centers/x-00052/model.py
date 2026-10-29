@@ -14,7 +14,6 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     nine_point_center_of,
-    orthic_triangle,
     orthocenter_of,
     promote_point_to_top,
     symmedian_point_of,
@@ -26,17 +25,16 @@ def construct_x_00052(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(52) = ORTHOCENTER OF ORTHIC TRIANGLE on reference triangle ABC."""
-    orthic_triangle(model, A, B, C)
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
-    central_line(model, X_3, X_6, 3, 6)
-    X_5 = nine_point_center_of(model, A, B, C, ID="X(5)", classes=["center"])
-    X_51 = eval_trilinear_point(model, A, B, C, 'a**(2)*cos(B - C)', ID="X(51)", classes=["center"])
-    central_line(model, X_5, X_51, 5, 51)
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center"])
-    X_68 = eval_trilinear_point(model, A, B, C, 'cos(A)*sec(2*A)', ID="X(68)", classes=["center"])
-    central_line(model, X_4, X_68, 4, 68)
     X_52 = eval_trilinear_point(model, A, B, C, 'cos(2*A)*cos(B - C)', ID="X(52)", classes=["selected", "target"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
+    central_line(model, X_3, X_6, 3, 6, incident=True)
+    X_5 = nine_point_center_of(model, A, B, C, ID="X(5)", classes=["center", "incident"])
+    X_51 = eval_trilinear_point(model, A, B, C, 'a**(2)*cos(B - C)', ID="X(51)", classes=["center", "incident"])
+    central_line(model, X_5, X_51, 5, 51, incident=True)
+    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
+    X_68 = eval_trilinear_point(model, A, B, C, 'cos(A)*sec(2*A)', ID="X(68)", classes=["center", "incident"])
+    central_line(model, X_4, X_68, 4, 68, incident=True)
     return promote_point_to_top(model, X_52)
 
 

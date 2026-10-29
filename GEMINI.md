@@ -15,7 +15,7 @@ It is responsible for:
 - **Ingestion**: Splitting raw HTML source volumes (`ETC.html`, `ETCPart2.html`–`ETCPart27.html`) into introductory sections, inter-center group preambles, and individual center records (`resources/split/`).
 - **Semantic Parsing**: Extracting canonical identifiers, primary names, aliases, trilinear/barycentric/tripolar coordinates, vector/barycentric linear combinations, construction notes, incidence loci (lines, circles, conics, cubics), and functional center relations (`X(n) = f(X(i), X(j))`).
 - **Apparatus & Cross-Referencing**: Building `resources/glossary.json`, `resources/persons.json`, and `resources/citations.json` to power interactive `:term:`, `:person:`, `:cite:`, and `:ref:` roles across all centers.
-- **Composable Geometric Modeling**: Constructing each center via `src/geometor/etc/ops.py` and generating standalone per-center `model.py` scripts, `geometor.model` JSON files, and Explorer-styled SVGs.
+- **Composable Geometric Modeling**: Constructing each center via `src/geometor/etc/ops.py` and generating standalone per-center `model.py` scripts, `geometor.model` JSON files, and two-layer Explorer-styled SVGs (primary defining construction + toggleable incident central lines).
 - **RST Generation**: Generating structured Sphinx documentation per center (`docsrc/centers/x-NNNNN/index.rst`, `docsrc/glossary.rst`, `docsrc/persons.rst`, `docsrc/bibliography.rst`).
 
 ## Repository Layout
@@ -30,5 +30,6 @@ It is responsible for:
 ## CLI Usage
 
 ```bash
-python3 -m geometor.etc --skip-ingest --limit 100
+python3 -m geometor.etc --skip-ingest --limit 1000
 ```
+

@@ -34,14 +34,14 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the circummedial triangle. Let A″ be the trilinear product B'\*C', and define B″, C″ cyclically. A″, B″, C″ are collinear on line X(798)X(812) (the :term:`trilinear polar <trilinear-polar>` of X(3112)). The lines AA″, BB″, CC″ concur in :ref:`X(82) <X(82)>`. (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
+   Let A'B'C' be the circummedial triangle. Let A″ be the trilinear product B'\*C', and define B″, C″ cyclically. A″, B″, C″ are collinear on line :ref:`X(798) <X(798)>`\ \ :ref:`X(812) <X(812)>` (the :term:`trilinear polar <trilinear-polar>` of X(3112)). The lines AA″, BB″, CC″ concur in :ref:`X(82) <X(82)>`. (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
 
 Incidence
 ---------
 
 :ref:`X(82) <X(82)>` lies and on these lines:
 
-{:ref:`1 <X(1)>`, 560}, {:ref:`10 <X(10)>`, :ref:`83 <X(83)>`}, {:ref:`31 <X(31)>`, :ref:`75 <X(75)>`}, {:ref:`37 <X(37)>`, 251}, {:ref:`58 <X(58)>`, 596}, {689, 715}, {759, 827}
+{:ref:`1 <X(1)>`, :ref:`560 <X(560)>`}, {:ref:`10 <X(10)>`, :ref:`83 <X(83)>`}, {:ref:`31 <X(31)>`, :ref:`75 <X(75)>`}, {:ref:`37 <X(37)>`, :ref:`251 <X(251)>`}, {:ref:`58 <X(58)>`, :ref:`596 <X(596)>`}, {:ref:`689 <X(689)>`, :ref:`715 <X(715)>`}, {:ref:`759 <X(759)>`, :ref:`827 <X(827)>`}
 
 Relations
 ---------
@@ -50,7 +50,7 @@ Relations
 * :ref:`X(82) <X(82)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(1930)
 * :ref:`X(82) <X(82)>` = :term:`anticomplement <anticomplement>` of X(21249)
 * :ref:`X(82) <X(82)>` = :term:`cevapoint <cevapoint>` of :ref:`X(1) <X(1)>` and :ref:`X(31) <X(31)>`
-* :ref:`X(82) <X(82)>` = :term:`trilinear pole <trilinear-pole>` of line X(661)X(830)
+* :ref:`X(82) <X(82)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(661) <X(661)>`\ \ :ref:`X(830) <X(830)>`
 * :ref:`X(82) <X(82)>` = :term:`crossdifference <crossdifference>` of every pair of points on line X(2084)X(2530)
 * :ref:`X(82) <X(82)>` = perspector of ABC and extraversion triangle of :ref:`X(82) <X(82)>` (which is also the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(82) <X(82)>`)
 * :ref:`X(82) <X(82)>` = :term:`crosspoint <crosspoint>` of :ref:`X(1) <X(1)>` and :ref:`X(31) <X(31)>` wrt the :term:`excentral triangle <excentral-triangle>`

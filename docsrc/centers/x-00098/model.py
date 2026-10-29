@@ -10,7 +10,6 @@ from geometor.model import Model
 from geometor.etc.ops import (
     central_line,
     circumcenter_of,
-    circumcircle,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
@@ -25,17 +24,16 @@ def construct_x_00098(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(98) = TARRY POINT on reference triangle ABC."""
-    circumcircle(model, A, B, C)
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center"])
-    X_32 = eval_trilinear_point(model, A, B, C, 'a**(3)', ID="X(32)", classes=["center"])
-    central_line(model, X_4, X_32, 4, 32)
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
-    X_76 = eval_trilinear_point(model, A, B, C, '1/a**(3)', ID="X(76)", classes=["center"])
-    central_line(model, X_3, X_76, 3, 76)
-    X_5 = nine_point_center_of(model, A, B, C, ID="X(5)", classes=["center"])
-    X_83 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(2) + c**(2))', ID="X(83)", classes=["center"])
-    central_line(model, X_5, X_83, 5, 83)
     X_98 = eval_trilinear_point(model, A, B, C, 'sec(A + omega )', ID="X(98)", classes=["selected", "target"])
+    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
+    X_32 = eval_trilinear_point(model, A, B, C, 'a**(3)', ID="X(32)", classes=["center", "incident"])
+    central_line(model, X_4, X_32, 4, 32, incident=True)
+    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
+    X_76 = eval_trilinear_point(model, A, B, C, '1/a**(3)', ID="X(76)", classes=["center", "incident"])
+    central_line(model, X_3, X_76, 3, 76, incident=True)
+    X_5 = nine_point_center_of(model, A, B, C, ID="X(5)", classes=["center", "incident"])
+    X_83 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(2) + c**(2))', ID="X(83)", classes=["center", "incident"])
+    central_line(model, X_5, X_83, 5, 83, incident=True)
     return promote_point_to_top(model, X_98)
 
 

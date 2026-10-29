@@ -24,16 +24,16 @@ def construct_x_00032(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(32) = 3rd POWER POINT on reference triangle ABC."""
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
-    central_line(model, X_3, X_6, 3, 6)
-    X_31 = eval_trilinear_point(model, A, B, C, 'a**(2)', ID="X(31)", classes=["center"])
-    X_41 = eval_trilinear_point(model, A, B, C, 'a**(2)*(b + c - a)', ID="X(41)", classes=["center"])
-    central_line(model, X_31, X_41, 31, 41)
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
-    X_83 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(2) + c**(2))', ID="X(83)", classes=["center"])
-    central_line(model, X_2, X_83, 2, 83)
     X_32 = eval_trilinear_point(model, A, B, C, 'a**(3)', ID="X(32)", classes=["selected", "target"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
+    central_line(model, X_3, X_6, 3, 6, incident=True)
+    X_31 = eval_trilinear_point(model, A, B, C, 'a**(2)', ID="X(31)", classes=["center", "incident"])
+    X_41 = eval_trilinear_point(model, A, B, C, 'a**(2)*(b + c - a)', ID="X(41)", classes=["center", "incident"])
+    central_line(model, X_31, X_41, 31, 41, incident=True)
+    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
+    X_83 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(2) + c**(2))', ID="X(83)", classes=["center", "incident"])
+    central_line(model, X_2, X_83, 2, 83, incident=True)
     return promote_point_to_top(model, X_32)
 
 

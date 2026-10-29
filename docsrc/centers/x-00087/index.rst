@@ -5,14 +5,14 @@
 
 .. _X(87):
 
-X(87) = -CROSS CONJUGATE OF X(1)
-================================
+X(87) = X(2)-CROSS CONJUGATE OF X(1)
+====================================
 
 .. figure:: x-00087.svg
-   :alt: X(87) = -CROSS CONJUGATE OF X(1)
+   :alt: X(87) = X(2)-CROSS CONJUGATE OF X(1)
    :align: center
 
-   **X(87) = -CROSS CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(87) = X(2)-CROSS CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
 Coordinates
 -----------
@@ -34,7 +34,7 @@ Incidence
 
 :ref:`X(87) <X(87)>` lies and on these lines:
 
-{:ref:`1 <X(1)>`, 192}, {:ref:`6 <X(6)>`, :ref:`43 <X(43)>`}, {:ref:`9 <X(9)>`, 292}, {:ref:`10 <X(10)>`, 979}, {:ref:`34 <X(34)>`, 242}, {:ref:`56 <X(56)>`, 238}, {:ref:`58 <X(58)>`, 978}, {106, 932}
+{:ref:`1 <X(1)>`, :ref:`192 <X(192)>`}, {:ref:`6 <X(6)>`, :ref:`43 <X(43)>`}, {:ref:`9 <X(9)>`, :ref:`292 <X(292)>`}, {:ref:`10 <X(10)>`, :ref:`979 <X(979)>`}, {:ref:`34 <X(34)>`, :ref:`242 <X(242)>`}, {:ref:`56 <X(56)>`, :ref:`238 <X(238)>`}, {:ref:`58 <X(58)>`, :ref:`978 <X(978)>`}, {:ref:`106 <X(106)>`, :ref:`932 <X(932)>`}
 
 Relations
 ---------
@@ -44,9 +44,9 @@ Relations
 * :ref:`X(87) <X(87)>` = :term:`anticomplement <anticomplement>` of X(34832)
 * :ref:`X(87) <X(87)>` = perspector of ABC and extraversion triangle of :ref:`X(43) <X(43)>`
 * :ref:`X(87) <X(87)>` = trilinear product of extraversions of :ref:`X(43) <X(43)>`
-* :ref:`X(87) <X(87)>` = :term:`cevapoint <cevapoint>` of :ref:`X(2) <X(2)>` and X(330)
+* :ref:`X(87) <X(87)>` = :term:`cevapoint <cevapoint>` of :ref:`X(2) <X(2)>` and :ref:`X(330) <X(330)>`
 * :ref:`X(87) <X(87)>` = :ref:`X(2) <X(2)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(1) <X(1)>`
-* :ref:`X(87) <X(87)>` = X(932)-:term:`beth conjugate <beth-conjugate>` of :ref:`X(87) <X(87)>`
+* :ref:`X(87) <X(87)>` = :ref:`X(932) <X(932)>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X(87) <X(87)>`
 
 Construction
 ------------

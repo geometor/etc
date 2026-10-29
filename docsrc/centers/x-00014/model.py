@@ -11,7 +11,6 @@ from geometor.etc.ops import (
     central_line,
     centroid_of,
     circumcenter_of,
-    circumcircle,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
@@ -27,18 +26,17 @@ def construct_x_00014(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(14) = 2nd ISOGONIC CENTER on reference triangle ABC."""
-    circumcircle(model, A, B, C)
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
-    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /3)', ID="X(13)", classes=["center"])
-    central_line(model, X_6, X_13, 6, 13)
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
-    X_15 = eval_trilinear_point(model, A, B, C, 'sin(A + pi /3)', ID="X(15)", classes=["center"])
-    central_line(model, X_2, X_15, 2, 15)
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
-    X_18 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /6)', ID="X(18)", classes=["center"])
-    central_line(model, X_3, X_18, 3, 18)
     Ea, Eb, Ec = inner_equilateral_triangles(model, A, B, C)
     X_14 = perspector(model, A, B, C, Ea, Eb, Ec, ID="X(14)", classes=["selected", "target"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
+    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /3)', ID="X(13)", classes=["center", "incident"])
+    central_line(model, X_6, X_13, 6, 13, incident=True)
+    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
+    X_15 = eval_trilinear_point(model, A, B, C, 'sin(A + pi /3)', ID="X(15)", classes=["center", "incident"])
+    central_line(model, X_2, X_15, 2, 15, incident=True)
+    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
+    X_18 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /6)', ID="X(18)", classes=["center", "incident"])
+    central_line(model, X_3, X_18, 3, 18, incident=True)
     return promote_point_to_top(model, X_14)
 
 

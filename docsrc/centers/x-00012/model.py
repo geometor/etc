@@ -14,9 +14,7 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     incenter_of,
-    incircle,
     nine_point_center_of,
-    nine_point_circle,
     orthocenter_of,
     promote_point_to_top,
 )
@@ -27,18 +25,16 @@ def construct_x_00012(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(12) = {X(1),X(5)}-HARMONIC CONJUGATE OF X(11) on reference triangle ABC."""
-    incircle(model, A, B, C)
-    nine_point_circle(model, A, B, C)
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
-    X_5 = nine_point_center_of(model, A, B, C, ID="X(5)", classes=["center"])
-    central_line(model, X_1, X_5, 1, 5)
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
-    X_56 = eval_trilinear_point(model, A, B, C, 'a/(b + c - a)', ID="X(56)", classes=["center"])
-    central_line(model, X_2, X_56, 2, 56)
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center"])
-    X_55 = eval_trilinear_point(model, A, B, C, 'a*(b + c - a)', ID="X(55)", classes=["center"])
-    central_line(model, X_4, X_55, 4, 55)
     X_12 = eval_trilinear_point(model, A, B, C, '1 + cos(B - C)', ID="X(12)", classes=["selected", "target"])
+    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
+    X_5 = nine_point_center_of(model, A, B, C, ID="X(5)", classes=["center", "incident"])
+    central_line(model, X_1, X_5, 1, 5, incident=True)
+    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
+    X_56 = eval_trilinear_point(model, A, B, C, 'a/(b + c - a)', ID="X(56)", classes=["center", "incident"])
+    central_line(model, X_2, X_56, 2, 56, incident=True)
+    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
+    X_55 = eval_trilinear_point(model, A, B, C, 'a*(b + c - a)', ID="X(55)", classes=["center", "incident"])
+    central_line(model, X_4, X_55, 4, 55, incident=True)
     return promote_point_to_top(model, X_12)
 
 

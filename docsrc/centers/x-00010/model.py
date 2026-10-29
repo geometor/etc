@@ -26,16 +26,16 @@ def construct_x_00010(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(10) = SPIEKER CENTER on reference triangle ABC."""
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
-    central_line(model, X_1, X_2, 1, 2)
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center"])
-    X_9 = mittenpunkt_of(model, A, B, C, ID="X(9)", classes=["center"])
-    central_line(model, X_4, X_9, 4, 9)
-    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X(21)", classes=["center"])
-    X_35 = eval_trilinear_point(model, A, B, C, '1 + 2*cos(A)', ID="X(35)", classes=["center"])
-    central_line(model, X_21, X_35, 21, 35)
     X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["selected", "target"], draw_circle=True)
+    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
+    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
+    central_line(model, X_1, X_2, 1, 2, incident=True)
+    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
+    X_9 = mittenpunkt_of(model, A, B, C, ID="X(9)", classes=["center", "incident"])
+    central_line(model, X_4, X_9, 4, 9, incident=True)
+    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X(21)", classes=["center", "incident"])
+    X_35 = eval_trilinear_point(model, A, B, C, '1 + 2*cos(A)', ID="X(35)", classes=["center", "incident"])
+    central_line(model, X_21, X_35, 21, 35, incident=True)
     return promote_point_to_top(model, X_10)
 
 

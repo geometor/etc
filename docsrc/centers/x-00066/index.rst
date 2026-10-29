@@ -53,22 +53,22 @@ Incidence
 
 :ref:`X(66) <X(66)>` lies and on these lines:
 
-{:ref:`2 <X(2)>`, 206}, {:ref:`3 <X(3)>`, 141}, {:ref:`6 <X(6)>`, 427}, {:ref:`68 <X(68)>`, 511}, {:ref:`73 <X(73)>`, 976}, {193, 895}, {248, 571}, {290, 317}, {879, 924}
+{:ref:`2 <X(2)>`, :ref:`206 <X(206)>`}, {:ref:`3 <X(3)>`, :ref:`141 <X(141)>`}, {:ref:`6 <X(6)>`, :ref:`427 <X(427)>`}, {:ref:`68 <X(68)>`, :ref:`511 <X(511)>`}, {:ref:`73 <X(73)>`, :ref:`976 <X(976)>`}, {:ref:`193 <X(193)>`, :ref:`895 <X(895)>`}, {:ref:`248 <X(248)>`, :ref:`571 <X(571)>`}, {:ref:`290 <X(290)>`, :ref:`317 <X(317)>`}, {:ref:`879 <X(879)>`, :ref:`924 <X(924)>`}
 
 Relations
 ---------
 
 * :ref:`X(66) <X(66)>` = midpoint of X(2892) and X(3448)
-* :ref:`X(66) <X(66)>` = reflection of X(i) in X(j) for these (i,j): (159, 141), (1177, 125)
+* :ref:`X(66) <X(66)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`159 <X(159)>`, :ref:`141 <X(141)>`), (1177, :ref:`125 <X(125)>`)
 * :ref:`X(66) <X(66)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(22) <X(22)>`
-* :ref:`X(66) <X(66)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(315)
+* :ref:`X(66) <X(66)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(315) <X(315)>`
 * :ref:`X(66) <X(66)>` = :term:`complement <complement>` of X(5596)
-* :ref:`X(66) <X(66)>` = :term:`anticomplement <anticomplement>` of X(206)
+* :ref:`X(66) <X(66)>` = :term:`anticomplement <anticomplement>` of :ref:`X(206) <X(206)>`
 * :ref:`X(66) <X(66)>` = :term:`cyclocevian conjugate <cyclocevian-conjugate>` of X(2998)
-* :ref:`X(66) <X(66)>` = :term:`cevapoint <cevapoint>` of X(125) and X(512)
+* :ref:`X(66) <X(66)>` = :term:`cevapoint <cevapoint>` of :ref:`X(125) <X(125)>` and :ref:`X(512) <X(512)>`
 * :ref:`X(66) <X(66)>` = :ref:`X(32) <X(32)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(2) <X(2)>`
-* :ref:`X(66) <X(66)>` = :term:`crosssum <crosssum>` of :ref:`X(3) <X(3)>` and X(159)
-* :ref:`X(66) <X(66)>` = :term:`trilinear pole <trilinear-pole>` of line X(647)X(826) (radical axis of Brocard and polar circles)
+* :ref:`X(66) <X(66)>` = :term:`crosssum <crosssum>` of :ref:`X(3) <X(3)>` and :ref:`X(159) <X(159)>`
+* :ref:`X(66) <X(66)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(647) <X(647)>`\ \ :ref:`X(826) <X(826)>` (radical axis of Brocard and polar circles)
 * :ref:`X(66) <X(66)>` = :term:`antigonal image <antigonal-image>` of X(1177)
 * :ref:`X(66) <X(66)>` = orthocenter of :ref:`X(3) <X(3)>`\ \ :ref:`X(4) <X(4)>`\ X(2435)
 * :ref:`X(66) <X(66)>` = X(3174)-of-orthic-triangle if ABC is acute

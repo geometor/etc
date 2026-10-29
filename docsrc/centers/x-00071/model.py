@@ -13,7 +13,6 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
-    extouch_triangle,
     isogonal_conjugate,
     mittenpunkt_of,
     orthocenter_of,
@@ -27,18 +26,17 @@ def construct_x_00071(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(71) = ISOGONAL CONJUGATE OF X(27) on reference triangle ABC."""
-    extouch_triangle(model, A, B, C)
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center"])
-    X_9 = mittenpunkt_of(model, A, B, C, ID="X(9)", classes=["center"])
-    central_line(model, X_4, X_9, 4, 9)
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
-    X_31 = eval_trilinear_point(model, A, B, C, 'a**(2)', ID="X(31)", classes=["center"])
-    central_line(model, X_6, X_31, 6, 31)
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
-    X_48 = eval_trilinear_point(model, A, B, C, 'tan(B) + tan(C)', ID="X(48)", classes=["center"])
-    central_line(model, X_3, X_48, 3, 48)
     X_27 = eval_trilinear_point(model, A, B, C, '(sec(A))/(b + c)', ID="X(27)", classes=["center"])
     X_71 = isogonal_conjugate(model, A, B, C, X_27, ID="X(71)", classes=["selected", "target"])
+    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
+    X_9 = mittenpunkt_of(model, A, B, C, ID="X(9)", classes=["center", "incident"])
+    central_line(model, X_4, X_9, 4, 9, incident=True)
+    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
+    X_31 = eval_trilinear_point(model, A, B, C, 'a**(2)', ID="X(31)", classes=["center", "incident"])
+    central_line(model, X_6, X_31, 6, 31, incident=True)
+    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
+    X_48 = eval_trilinear_point(model, A, B, C, 'tan(B) + tan(C)', ID="X(48)", classes=["center", "incident"])
+    central_line(model, X_3, X_48, 3, 48, incident=True)
     return promote_point_to_top(model, X_71)
 
 

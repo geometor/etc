@@ -23,15 +23,15 @@ def construct_x_00064(
 ) -> spg.Point:
     """Construct X(64) = ISOGONAL CONJUGATE OF X(20) on reference triangle ABC."""
     X_20 = eval_trilinear_point(model, A, B, C, 'cos(A) - cos(B)*cos(C)', ID="X(20)", classes=["center"])
-    X_69 = eval_trilinear_point(model, A, B, C, '(cos(A))/a**(2)', ID="X(69)", classes=["center"])
-    central_line(model, X_20, X_69, 20, 69)
-    X_24 = eval_trilinear_point(model, A, B, C, 'sec(A)*cos(2*A)', ID="X(24)", classes=["center"])
-    X_74 = eval_trilinear_point(model, A, B, C, '1/(cos(A) - 2*cos(B)*cos(C))', ID="X(74)", classes=["center"])
-    central_line(model, X_24, X_74, 24, 74)
-    X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X(30)", classes=["center"])
-    X_68 = eval_trilinear_point(model, A, B, C, 'cos(A)*sec(2*A)', ID="X(68)", classes=["center"])
-    central_line(model, X_30, X_68, 30, 68)
     X_64 = isogonal_conjugate(model, A, B, C, X_20, ID="X(64)", classes=["selected", "target"])
+    X_69 = eval_trilinear_point(model, A, B, C, '(cos(A))/a**(2)', ID="X(69)", classes=["center", "incident"])
+    central_line(model, X_20, X_69, 20, 69, incident=True)
+    X_24 = eval_trilinear_point(model, A, B, C, 'sec(A)*cos(2*A)', ID="X(24)", classes=["center", "incident"])
+    X_74 = eval_trilinear_point(model, A, B, C, '1/(cos(A) - 2*cos(B)*cos(C))', ID="X(74)", classes=["center", "incident"])
+    central_line(model, X_24, X_74, 24, 74, incident=True)
+    X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X(30)", classes=["center", "incident"])
+    X_68 = eval_trilinear_point(model, A, B, C, 'cos(A)*sec(2*A)', ID="X(68)", classes=["center", "incident"])
+    central_line(model, X_30, X_68, 30, 68, incident=True)
     return promote_point_to_top(model, X_64)
 
 

@@ -14,10 +14,8 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
-    orthic_triangle,
     promote_point_to_top,
     symmedian_point_of,
-    tangential_triangle,
 )
 from geometor.etc.render import write_center_svg
 
@@ -26,18 +24,16 @@ def construct_x_00025(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(25) = HOMOTHETIC CENTER OF ORTHIC AND TANGENTIAL TRIANGLES on reference triangle ABC."""
-    orthic_triangle(model, A, B, C)
-    tangential_triangle(model, A, B, C)
+    X_25 = eval_trilinear_point(model, A, B, C, 'sin(A)*tan(A)', ID="X(25)", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
-    X_19 = eval_trilinear_point(model, A, B, C, 'tan(A)', ID="X(19)", classes=["center"])
-    X_33 = eval_trilinear_point(model, A, B, C, '1 + sec(A)', ID="X(33)", classes=["center"])
-    central_line(model, X_19, X_33, 19, 33)
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
-    X_51 = eval_trilinear_point(model, A, B, C, 'a**(2)*cos(B - C)', ID="X(51)", classes=["center"])
-    central_line(model, X_6, X_51, 6, 51)
-    X_25 = eval_trilinear_point(model, A, B, C, 'sin(A)*tan(A)', ID="X(25)", classes=["selected", "target"])
+    X_19 = eval_trilinear_point(model, A, B, C, 'tan(A)', ID="X(19)", classes=["center", "incident"])
+    X_33 = eval_trilinear_point(model, A, B, C, '1 + sec(A)', ID="X(33)", classes=["center", "incident"])
+    central_line(model, X_19, X_33, 19, 33, incident=True)
+    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
+    X_51 = eval_trilinear_point(model, A, B, C, 'a**(2)*cos(B - C)', ID="X(51)", classes=["center", "incident"])
+    central_line(model, X_6, X_51, 6, 51, incident=True)
     return promote_point_to_top(model, X_25)
 
 

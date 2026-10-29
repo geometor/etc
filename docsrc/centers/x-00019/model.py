@@ -9,13 +9,11 @@ from geometor.model import Model
 
 from geometor.etc.ops import (
     central_line,
-    circumcircle,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
     incenter_of,
     mittenpunkt_of,
-    orthic_triangle,
     orthocenter_of,
     promote_point_to_top,
     symmedian_point_of,
@@ -27,18 +25,16 @@ def construct_x_00019(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(19) = CLAWSON POINT on reference triangle ABC."""
-    orthic_triangle(model, A, B, C)
-    circumcircle(model, A, B, C)
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center"])
-    X_9 = mittenpunkt_of(model, A, B, C, ID="X(9)", classes=["center"])
-    central_line(model, X_4, X_9, 4, 9)
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
-    X_28 = eval_trilinear_point(model, A, B, C, '(tan(A))/(b + c)', ID="X(28)", classes=["center"])
-    central_line(model, X_1, X_28, 1, 28)
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
-    X_34 = eval_trilinear_point(model, A, B, C, '1 - sec(A)', ID="X(34)", classes=["center"])
-    central_line(model, X_6, X_34, 6, 34)
     X_19 = eval_trilinear_point(model, A, B, C, 'tan(A)', ID="X(19)", classes=["selected", "target"])
+    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
+    X_9 = mittenpunkt_of(model, A, B, C, ID="X(9)", classes=["center", "incident"])
+    central_line(model, X_4, X_9, 4, 9, incident=True)
+    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
+    X_28 = eval_trilinear_point(model, A, B, C, '(tan(A))/(b + c)', ID="X(28)", classes=["center", "incident"])
+    central_line(model, X_1, X_28, 1, 28, incident=True)
+    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
+    X_34 = eval_trilinear_point(model, A, B, C, '1 - sec(A)', ID="X(34)", classes=["center", "incident"])
+    central_line(model, X_6, X_34, 6, 34, incident=True)
     return promote_point_to_top(model, X_19)
 
 

@@ -13,7 +13,6 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     incenter_of,
-    orthic_triangle,
     orthocenter_of,
     promote_point_to_top,
 )
@@ -24,17 +23,16 @@ def construct_x_00033(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(33) = PERSPECTOR OF THE ORTHIC AND INTANGENTS TRIANGLES on reference triangle ABC."""
-    orthic_triangle(model, A, B, C)
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center"])
-    central_line(model, X_1, X_4, 1, 4)
-    X_19 = eval_trilinear_point(model, A, B, C, 'tan(A)', ID="X(19)", classes=["center"])
-    X_25 = eval_trilinear_point(model, A, B, C, 'sin(A)*tan(A)', ID="X(25)", classes=["center"])
-    central_line(model, X_19, X_25, 19, 25)
-    X_24 = eval_trilinear_point(model, A, B, C, 'sec(A)*cos(2*A)', ID="X(24)", classes=["center"])
-    X_35 = eval_trilinear_point(model, A, B, C, '1 + 2*cos(A)', ID="X(35)", classes=["center"])
-    central_line(model, X_24, X_35, 24, 35)
     X_33 = eval_trilinear_point(model, A, B, C, '1 + sec(A)', ID="X(33)", classes=["selected", "target"])
+    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
+    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
+    central_line(model, X_1, X_4, 1, 4, incident=True)
+    X_19 = eval_trilinear_point(model, A, B, C, 'tan(A)', ID="X(19)", classes=["center", "incident"])
+    X_25 = eval_trilinear_point(model, A, B, C, 'sin(A)*tan(A)', ID="X(25)", classes=["center", "incident"])
+    central_line(model, X_19, X_25, 19, 25, incident=True)
+    X_24 = eval_trilinear_point(model, A, B, C, 'sec(A)*cos(2*A)', ID="X(24)", classes=["center", "incident"])
+    X_35 = eval_trilinear_point(model, A, B, C, '1 + 2*cos(A)', ID="X(35)", classes=["center", "incident"])
+    central_line(model, X_24, X_35, 24, 35, incident=True)
     return promote_point_to_top(model, X_33)
 
 

@@ -8,6 +8,9 @@ import sympy.geometry as spg
 from geometor.model import Model
 
 from geometor.etc.ops import (
+    central_line,
+    centroid_of,
+    circumcenter_of,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
@@ -21,6 +24,15 @@ def construct_x_00030(
 ) -> spg.Point:
     """Construct X(30) = EULER INFINITY POINT on reference triangle ABC."""
     X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X(30)", classes=["selected", "target"])
+    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
+    central_line(model, X_2, X_3, 2, 3)
+    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /3)', ID="X(13)", classes=["center", "incident"])
+    X_15 = eval_trilinear_point(model, A, B, C, 'sin(A + pi /3)', ID="X(15)", classes=["center", "incident"])
+    central_line(model, X_13, X_15, 13, 15, incident=True)
+    X_14 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /3)', ID="X(14)", classes=["center", "incident"])
+    X_16 = eval_trilinear_point(model, A, B, C, 'sin(A- pi /3)', ID="X(16)", classes=["center", "incident"])
+    central_line(model, X_14, X_16, 14, 16, incident=True)
     return promote_point_to_top(model, X_30)
 
 

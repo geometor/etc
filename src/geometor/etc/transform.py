@@ -172,25 +172,43 @@ def transform_center_to_rst(
         for p_item in preambles:
             parsed_p = parse_preamble(p_item.get("html", ""))
             p_title = parsed_p["title"] or p_item.get("title", "Preamble")
+            p_paras = parsed_p["paragraphs"]
             p_id = p_item.get("id")
             if p_id:
                 lines.append(f".. _{p_id}:")
                 lines.append("")
-            lines.append(f".. admonition:: Group Preamble — {p_title}")
-            lines.append("   :class: note")
-            lines.append("")
-            for para in parsed_p["paragraphs"]:
-                enriched_para = _enrich_text(
-                    para,
+            if p_paras:
+                lines.append(f".. admonition:: Group Preamble — {p_title}")
+                lines.append("   :class: note")
+                lines.append("")
+                for para in p_paras:
+                    enriched_para = _enrich_text(
+                        para,
+                        glossary_terms,
+                        seen_terms,
+                        seen_persons,
+                        seen_cites,
+                        valid_centers=valid_centers,
+                    )
+                    for p_ln in enriched_para.splitlines():
+                        lines.append(f"   {p_ln}" if p_ln.strip() else "")
+                    lines.append("")
+            else:
+                lines.append(".. admonition:: Group Preamble")
+                lines.append("   :class: note")
+                lines.append("")
+                enriched_title = _enrich_text(
+                    p_title,
                     glossary_terms,
                     seen_terms,
                     seen_persons,
                     seen_cites,
                     valid_centers=valid_centers,
                 )
-                for p_ln in enriched_para.splitlines():
+                for p_ln in enriched_title.splitlines():
                     lines.append(f"   {p_ln}" if p_ln.strip() else "")
                 lines.append("")
+
 
     # Primary Geometric Construction Figure
     if figure_uri:

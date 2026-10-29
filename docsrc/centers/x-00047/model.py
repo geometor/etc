@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(47) = -BETH CONJUGATE OF X(34)."""
+"""GEOMETOR construction model for X(47) = X(110)-BETH CONJUGATE OF X(34)."""
 
 from __future__ import annotations
 
@@ -21,17 +21,17 @@ from geometor.etc.render import write_center_svg
 def construct_x_00047(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(47) = -BETH CONJUGATE OF X(34) on reference triangle ABC."""
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
-    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X(21)", classes=["center"])
-    central_line(model, X_1, X_21, 1, 21)
-    X_34 = eval_trilinear_point(model, A, B, C, '1 - sec(A)', ID="X(34)", classes=["center"])
-    X_46 = eval_trilinear_point(model, A, B, C, 'cos(B) + cos(C) - cos(A)', ID="X(46)", classes=["center"])
-    central_line(model, X_34, X_46, 34, 46)
-    X_33 = eval_trilinear_point(model, A, B, C, '1 + sec(A)', ID="X(33)", classes=["center"])
-    X_90 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C) - cos(A))', ID="X(90)", classes=["center"])
-    central_line(model, X_33, X_90, 33, 90)
+    """Construct X(47) = X(110)-BETH CONJUGATE OF X(34) on reference triangle ABC."""
     X_47 = eval_trilinear_point(model, A, B, C, 'cos(2*A)', ID="X(47)", classes=["selected", "target"])
+    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
+    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X(21)", classes=["center", "incident"])
+    central_line(model, X_1, X_21, 1, 21, incident=True)
+    X_34 = eval_trilinear_point(model, A, B, C, '1 - sec(A)', ID="X(34)", classes=["center", "incident"])
+    X_46 = eval_trilinear_point(model, A, B, C, 'cos(B) + cos(C) - cos(A)', ID="X(46)", classes=["center", "incident"])
+    central_line(model, X_34, X_46, 34, 46, incident=True)
+    X_33 = eval_trilinear_point(model, A, B, C, '1 + sec(A)', ID="X(33)", classes=["center", "incident"])
+    X_90 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C) - cos(A))', ID="X(90)", classes=["center", "incident"])
+    central_line(model, X_33, X_90, 33, 90, incident=True)
     return promote_point_to_top(model, X_47)
 
 
@@ -40,7 +40,7 @@ def build_model(
     show_guides: bool = False,
 ) -> Model:
     """Build a `geometor.model.Model` for X(47) on the given reference triangle."""
-    model = create_model('X(47) = -BETH CONJUGATE OF X(34)')
+    model = create_model('X(47) = X(110)-BETH CONJUGATE OF X(34)')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00047(model, A, B, C)
     return model

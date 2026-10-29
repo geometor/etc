@@ -27,17 +27,17 @@ def construct_x_00072(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(72) = ISOGONAL CONJUGATE OF X(28) on reference triangle ABC."""
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
-    central_line(model, X_1, X_6, 1, 6)
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center"])
-    X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center"])
-    central_line(model, X_4, X_8, 4, 8)
-    X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["center"])
-    X_12 = eval_trilinear_point(model, A, B, C, '1 + cos(B - C)', ID="X(12)", classes=["center"])
-    central_line(model, X_10, X_12, 10, 12)
     X_28 = eval_trilinear_point(model, A, B, C, '(tan(A))/(b + c)', ID="X(28)", classes=["center"])
     X_72 = isogonal_conjugate(model, A, B, C, X_28, ID="X(72)", classes=["selected", "target"])
+    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
+    central_line(model, X_1, X_6, 1, 6, incident=True)
+    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
+    X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center", "incident"])
+    central_line(model, X_4, X_8, 4, 8, incident=True)
+    X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["center", "incident"])
+    X_12 = eval_trilinear_point(model, A, B, C, '1 + cos(B - C)', ID="X(12)", classes=["center", "incident"])
+    central_line(model, X_10, X_12, 10, 12, incident=True)
     return promote_point_to_top(model, X_72)
 
 

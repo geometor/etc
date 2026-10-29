@@ -48,18 +48,18 @@ Incidence
 
 :ref:`X(97) <X(97)>` lies and on these lines:
 
-{:ref:`2 <X(2)>`, :ref:`95 <X(95)>`}, {:ref:`3 <X(3)>`, :ref:`54 <X(54)>`}, {110, 418}, {216, 288}, {276, 401}
+{:ref:`2 <X(2)>`, :ref:`95 <X(95)>`}, {:ref:`3 <X(3)>`, :ref:`54 <X(54)>`}, {:ref:`110 <X(110)>`, :ref:`418 <X(418)>`}, {:ref:`216 <X(216)>`, :ref:`288 <X(288)>`}, {:ref:`276 <X(276)>`, :ref:`401 <X(401)>`}
 
 Relations
 ---------
 
 * :ref:`X(97) <X(97)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(53) <X(53)>`
-* :ref:`X(97) <X(97)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(324)
+* :ref:`X(97) <X(97)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(324) <X(324)>`
 * :ref:`X(97) <X(97)>` = :term:`anticomplement <anticomplement>` of X(34836)
 * :ref:`X(97) <X(97)>` = :term:`complement <complement>` of isogonal conjugate of X(34433)
 * :ref:`X(97) <X(97)>` = :ref:`X(95) <X(95)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(54) <X(54)>`
 * :ref:`X(97) <X(97)>` = :ref:`X(3) <X(3)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(95) <X(95)>`
-* :ref:`X(97) <X(97)>` = :term:`cevapoint <cevapoint>` of :ref:`X(3) <X(3)>` and X(577)
+* :ref:`X(97) <X(97)>` = :term:`cevapoint <cevapoint>` of :ref:`X(3) <X(3)>` and :ref:`X(577) <X(577)>`
 * :ref:`X(97) <X(97)>` = :ref:`X(51) <X(51)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(92) <X(92)>`
 * :ref:`X(97) <X(97)>` = Cundy-Parry Phi transform of X(7592)
 

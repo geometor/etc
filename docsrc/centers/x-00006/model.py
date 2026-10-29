@@ -25,16 +25,16 @@ def construct_x_00006(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(6) = SYMMEDIAN POINT on reference triangle ABC."""
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
-    X_9 = mittenpunkt_of(model, A, B, C, ID="X(9)", classes=["center"])
-    central_line(model, X_1, X_9, 1, 9)
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
-    X_15 = eval_trilinear_point(model, A, B, C, 'sin(A + pi /3)', ID="X(15)", classes=["center"])
-    central_line(model, X_3, X_15, 3, 15)
-    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /3)', ID="X(13)", classes=["center"])
-    X_14 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /3)', ID="X(14)", classes=["center"])
-    central_line(model, X_13, X_14, 13, 14)
     X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["selected", "target"], draw_symmedians=True)
+    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
+    X_9 = mittenpunkt_of(model, A, B, C, ID="X(9)", classes=["center", "incident"])
+    central_line(model, X_1, X_9, 1, 9, incident=True)
+    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
+    X_15 = eval_trilinear_point(model, A, B, C, 'sin(A + pi /3)', ID="X(15)", classes=["center", "incident"])
+    central_line(model, X_3, X_15, 3, 15, incident=True)
+    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /3)', ID="X(13)", classes=["center", "incident"])
+    X_14 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /3)', ID="X(14)", classes=["center", "incident"])
+    central_line(model, X_13, X_14, 13, 14, incident=True)
     return promote_point_to_top(model, X_6)
 
 

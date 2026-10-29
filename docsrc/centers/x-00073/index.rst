@@ -47,7 +47,7 @@ Incidence
 
 :ref:`X(73) <X(73)>` lies and on these lines:
 
-{:ref:`1 <X(1)>`, :ref:`4 <X(4)>`}, {:ref:`3 <X(3)>`, 212}, {:ref:`6 <X(6)>`, :ref:`41 <X(41)>`}, {:ref:`21 <X(21)>`, 651}, {:ref:`35 <X(35)>`, :ref:`74 <X(74)>`}, {:ref:`36 <X(36)>`, :ref:`54 <X(54)>`}, {:ref:`37 <X(37)>`, 836}, {:ref:`42 <X(42)>`, :ref:`65 <X(65)>`}, {:ref:`55 <X(55)>`, :ref:`64 <X(64)>`}, {:ref:`57 <X(57)>`, 386}, {:ref:`66 <X(66)>`, 976}, {:ref:`68 <X(68)>`, 1060}, {:ref:`69 <X(69)>`, :ref:`77 <X(77)>`}, {:ref:`72 <X(72)>`, 201}, {102, 947}, {228, 408}, {284, 951}, {290, 336}, {1036, 1037}, {1057, 1059}
+{:ref:`1 <X(1)>`, :ref:`4 <X(4)>`}, {:ref:`3 <X(3)>`, :ref:`212 <X(212)>`}, {:ref:`6 <X(6)>`, :ref:`41 <X(41)>`}, {:ref:`21 <X(21)>`, :ref:`651 <X(651)>`}, {:ref:`35 <X(35)>`, :ref:`74 <X(74)>`}, {:ref:`36 <X(36)>`, :ref:`54 <X(54)>`}, {:ref:`37 <X(37)>`, :ref:`836 <X(836)>`}, {:ref:`42 <X(42)>`, :ref:`65 <X(65)>`}, {:ref:`55 <X(55)>`, :ref:`64 <X(64)>`}, {:ref:`57 <X(57)>`, :ref:`386 <X(386)>`}, {:ref:`66 <X(66)>`, :ref:`976 <X(976)>`}, {:ref:`68 <X(68)>`, 1060}, {:ref:`69 <X(69)>`, :ref:`77 <X(77)>`}, {:ref:`72 <X(72)>`, :ref:`201 <X(201)>`}, {:ref:`102 <X(102)>`, :ref:`947 <X(947)>`}, {:ref:`228 <X(228)>`, :ref:`408 <X(408)>`}, {:ref:`284 <X(284)>`, :ref:`951 <X(951)>`}, {:ref:`290 <X(290)>`, :ref:`336 <X(336)>`}, {1036, 1037}, {1057, 1059}
 
 Relations
 ---------
@@ -55,18 +55,18 @@ Relations
 * :ref:`X(73) <X(73)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(29) <X(29)>`
 * :ref:`X(73) <X(73)>` = :term:`anticomplement <anticomplement>` of X(34381)
 * :ref:`X(73) <X(73)>` = :ref:`X(1) <X(1)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(65) <X(65)>`
-* :ref:`X(73) <X(73)>` = X(228)-:term:`cross conjugate <cross-conjugate>` of :ref:`X(71) <X(71)>`
-* :ref:`X(73) <X(73)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`3 <X(3)>`), (:ref:`77 <X(77)>`, 222), (226, 307)
-* :ref:`X(73) <X(73)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`4 <X(4)>`), (:ref:`33 <X(33)>`, 281)
-* :ref:`X(73) <X(73)>` = :term:`crossdifference <crossdifference>` of every pair of points on line X(243)X(522)
-* :ref:`X(73) <X(73)>` = X(i)-:term:`Hirst inverse <hirst-inverse>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, 243), (:ref:`65 <X(65)>`, 851)
-* :ref:`X(73) <X(73)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, 1042), (:ref:`3 <X(3)>`, :ref:`73 <X(73)>`), (:ref:`21 <X(21)>`, 946), (:ref:`72 <X(72)>`, :ref:`72 <X(72)>`), (:ref:`100 <X(100)>`, :ref:`10 <X(10)>`), (101, :ref:`73 <X(73)>`), (295, :ref:`73 <X(73)>`)
+* :ref:`X(73) <X(73)>` = :ref:`X(228) <X(228)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(71) <X(71)>`
+* :ref:`X(73) <X(73)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`3 <X(3)>`), (:ref:`77 <X(77)>`, :ref:`222 <X(222)>`), (:ref:`226 <X(226)>`, :ref:`307 <X(307)>`)
+* :ref:`X(73) <X(73)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`4 <X(4)>`), (:ref:`33 <X(33)>`, :ref:`281 <X(281)>`)
+* :ref:`X(73) <X(73)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(243) <X(243)>`\ \ :ref:`X(522) <X(522)>`
+* :ref:`X(73) <X(73)>` = X(i)-:term:`Hirst inverse <hirst-inverse>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`243 <X(243)>`), (:ref:`65 <X(65)>`, :ref:`851 <X(851)>`)
+* :ref:`X(73) <X(73)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, 1042), (:ref:`3 <X(3)>`, :ref:`73 <X(73)>`), (:ref:`21 <X(21)>`, :ref:`946 <X(946)>`), (:ref:`72 <X(72)>`, :ref:`72 <X(72)>`), (:ref:`100 <X(100)>`, :ref:`10 <X(10)>`), (:ref:`101 <X(101)>`, :ref:`73 <X(73)>`), (:ref:`295 <X(295)>`, :ref:`73 <X(73)>`)
 * :ref:`X(73) <X(73)>` = bicentric sum of PU(16)
-* :ref:`X(73) <X(73)>` = PU(16)-harmonic conjugate of X(652)
+* :ref:`X(73) <X(73)>` = PU(16)-harmonic conjugate of :ref:`X(652) <X(652)>`
 * :ref:`X(73) <X(73)>` = trilinear product of PU(83)
-* :ref:`X(73) <X(73)>` = :term:`trilinear pole <trilinear-pole>` of line X(647)X(822)
+* :ref:`X(73) <X(73)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(647) <X(647)>`\ \ :ref:`X(822) <X(822)>`
 * :ref:`X(73) <X(73)>` = :ref:`X(63) <X(63)>`-:term:`isoconjugate <isoconjugate>` of X(8748)
-* :ref:`X(73) <X(73)>` = :ref:`X(92) <X(92)>`-isoconjugate of X(284)
+* :ref:`X(73) <X(73)>` = :ref:`X(92) <X(92)>`-isoconjugate of :ref:`X(284) <X(284)>`
 * :ref:`X(73) <X(73)>` = {:ref:`X(1) <X(1)>`,X(1745)}-harmonic conjugate of :ref:`X(4) <X(4)>`
 
 Construction

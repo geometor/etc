@@ -5,14 +5,14 @@
 
 .. _X(34):
 
-X(34) = -BETH CONJUGATE OF X(4)
-===============================
+X(34) = X(4)-BETH CONJUGATE OF X(4)
+===================================
 
 .. figure:: x-00034.svg
-   :alt: X(34) = -BETH CONJUGATE OF X(4)
+   :alt: X(34) = X(4)-BETH CONJUGATE OF X(4)
    :align: center
 
-   **X(34) = -BETH CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(34) = X(4)-BETH CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
 Coordinates
 -----------
@@ -59,7 +59,7 @@ Incidence
 
 :ref:`X(34) <X(34)>` lies and on these lines:
 
-{:ref:`1 <X(1)>`, :ref:`4 <X(4)>`}, {:ref:`2 <X(2)>`, 1038}, {:ref:`5 <X(5)>`, 1060}, {:ref:`6 <X(6)>`, :ref:`19 <X(19)>`}, {:ref:`7 <X(7)>`, 1039}, {:ref:`8 <X(8)>`, 1041}, {:ref:`9 <X(9)>`, 201}, {:ref:`10 <X(10)>`, 475}, {:ref:`11 <X(11)>`, 235}, {:ref:`12 <X(12)>`, 427}, {:ref:`20 <X(20)>`, 1040}, {:ref:`24 <X(24)>`, :ref:`36 <X(36)>`}, {:ref:`25 <X(25)>`, :ref:`56 <X(56)>`}, {:ref:`28 <X(28)>`, :ref:`57 <X(57)>`}, {:ref:`29 <X(29)>`, :ref:`77 <X(77)>`}, {:ref:`30 <X(30)>`, 1062}, {:ref:`35 <X(35)>`, 378}, {:ref:`40 <X(40)>`, 212}, {:ref:`46 <X(46)>`, :ref:`47 <X(47)>`}, {:ref:`55 <X(55)>`, 227}, {:ref:`79 <X(79)>`, 1061}, {:ref:`80 <X(80)>`, 1063}, {:ref:`87 <X(87)>`, 242}, {106, 108}, {196, 937}, {207, 1042}, {222, 942}, {244, 1106}, {331, 870}, {347, 452}, {860, 997}
+{:ref:`1 <X(1)>`, :ref:`4 <X(4)>`}, {:ref:`2 <X(2)>`, 1038}, {:ref:`5 <X(5)>`, 1060}, {:ref:`6 <X(6)>`, :ref:`19 <X(19)>`}, {:ref:`7 <X(7)>`, 1039}, {:ref:`8 <X(8)>`, 1041}, {:ref:`9 <X(9)>`, :ref:`201 <X(201)>`}, {:ref:`10 <X(10)>`, :ref:`475 <X(475)>`}, {:ref:`11 <X(11)>`, :ref:`235 <X(235)>`}, {:ref:`12 <X(12)>`, :ref:`427 <X(427)>`}, {:ref:`20 <X(20)>`, 1040}, {:ref:`24 <X(24)>`, :ref:`36 <X(36)>`}, {:ref:`25 <X(25)>`, :ref:`56 <X(56)>`}, {:ref:`28 <X(28)>`, :ref:`57 <X(57)>`}, {:ref:`29 <X(29)>`, :ref:`77 <X(77)>`}, {:ref:`30 <X(30)>`, 1062}, {:ref:`35 <X(35)>`, :ref:`378 <X(378)>`}, {:ref:`40 <X(40)>`, :ref:`212 <X(212)>`}, {:ref:`46 <X(46)>`, :ref:`47 <X(47)>`}, {:ref:`55 <X(55)>`, :ref:`227 <X(227)>`}, {:ref:`79 <X(79)>`, 1061}, {:ref:`80 <X(80)>`, 1063}, {:ref:`87 <X(87)>`, :ref:`242 <X(242)>`}, {:ref:`106 <X(106)>`, :ref:`108 <X(108)>`}, {:ref:`196 <X(196)>`, :ref:`937 <X(937)>`}, {:ref:`207 <X(207)>`, 1042}, {:ref:`222 <X(222)>`, :ref:`942 <X(942)>`}, {:ref:`244 <X(244)>`, 1106}, {:ref:`331 <X(331)>`, :ref:`870 <X(870)>`}, {:ref:`347 <X(347)>`, :ref:`452 <X(452)>`}, {:ref:`860 <X(860)>`, :ref:`997 <X(997)>`}
 
 Relations
 ---------
@@ -67,21 +67,21 @@ Relations
 * :ref:`X(34) <X(34)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(78) <X(78)>`
 * :ref:`X(34) <X(34)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(3718)
 * :ref:`X(34) <X(34)>` = :term:`anticomplement <anticomplement>` of X(34823)
-* :ref:`X(34) <X(34)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, 207), (:ref:`4 <X(4)>`, 208), (:ref:`28 <X(28)>`, :ref:`56 <X(56)>`), (273, :ref:`57 <X(57)>`), (278, :ref:`19 <X(19)>`)
+* :ref:`X(34) <X(34)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`207 <X(207)>`), (:ref:`4 <X(4)>`, :ref:`208 <X(208)>`), (:ref:`28 <X(28)>`, :ref:`56 <X(56)>`), (:ref:`273 <X(273)>`, :ref:`57 <X(57)>`), (:ref:`278 <X(278)>`, :ref:`19 <X(19)>`)
 * :ref:`X(34) <X(34)>` = :ref:`X(25) <X(25)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(19) <X(19)>`
-* :ref:`X(34) <X(34)>` = :term:`crosssum <crosssum>` of X(219) and X(1260)
-* :ref:`X(34) <X(34)>` = :term:`crossdifference <crossdifference>` of every pair of points on line X(521)X(652)
+* :ref:`X(34) <X(34)>` = :term:`crosssum <crosssum>` of :ref:`X(219) <X(219)>` and X(1260)
+* :ref:`X(34) <X(34)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(521) <X(521)>`\ \ :ref:`X(652) <X(652)>`
 * :ref:`X(34) <X(34)>` = circumcircle-inverse of X(32757)
 * :ref:`X(34) <X(34)>` = :ref:`X(56) <X(56)>`-:term:`Hirst inverse <hirst-inverse>` of X(1430)
-* :ref:`X(34) <X(34)>` = :term:`trilinear pole <trilinear-pole>` of polar of X(312) wrt polar circle (line X(649)X(4017))
-* :ref:`X(34) <X(34)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X(312) (line X(522)X(3717))
-* :ref:`X(34) <X(34)>` = polar conjugate of X(312)
+* :ref:`X(34) <X(34)>` = :term:`trilinear pole <trilinear-pole>` of polar of :ref:`X(312) <X(312)>` wrt polar circle (line :ref:`X(649) <X(649)>`\ X(4017))
+* :ref:`X(34) <X(34)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(312) <X(312)>` (line :ref:`X(522) <X(522)>`\ X(3717))
+* :ref:`X(34) <X(34)>` = polar conjugate of :ref:`X(312) <X(312)>`
 * :ref:`X(34) <X(34)>` = perspector of ABC and extraversion triangle of :ref:`X(33) <X(33)>`
 * :ref:`X(34) <X(34)>` = homothetic center of intangents triangle and reflection of orthic triangle in :ref:`X(4) <X(4)>`
 * :ref:`X(34) <X(34)>` = homothetic center of orthic triangle and anti-tangential midarc triangle
 * :ref:`X(34) <X(34)>` = X(8078)-of-orthic-triangle if ABC is acute
-* :ref:`X(34) <X(34)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, 221), (:ref:`4 <X(4)>`, :ref:`4 <X(4)>`), (:ref:`28 <X(28)>`, :ref:`34 <X(34)>`), (:ref:`29 <X(29)>`, :ref:`1 <X(1)>`), (107, 158), (108, :ref:`34 <X(34)>`), (110, :ref:`47 <X(47)>`), (162, :ref:`34 <X(34)>`), (811, :ref:`34 <X(34)>`)
-* :ref:`X(34) <X(34)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these {i,j}: {:ref:`1 <X(1)>`, :ref:`78 <X(78)>`}, {:ref:`31 <X(31)>`, 3718}, {:ref:`48 <X(48)>`, 312}
+* :ref:`X(34) <X(34)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`221 <X(221)>`), (:ref:`4 <X(4)>`, :ref:`4 <X(4)>`), (:ref:`28 <X(28)>`, :ref:`34 <X(34)>`), (:ref:`29 <X(29)>`, :ref:`1 <X(1)>`), (:ref:`107 <X(107)>`, :ref:`158 <X(158)>`), (:ref:`108 <X(108)>`, :ref:`34 <X(34)>`), (:ref:`110 <X(110)>`, :ref:`47 <X(47)>`), (:ref:`162 <X(162)>`, :ref:`34 <X(34)>`), (:ref:`811 <X(811)>`, :ref:`34 <X(34)>`)
+* :ref:`X(34) <X(34)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these {i,j}: {:ref:`1 <X(1)>`, :ref:`78 <X(78)>`}, {:ref:`31 <X(31)>`, 3718}, {:ref:`48 <X(48)>`, :ref:`312 <X(312)>`}
 
 Construction
 ------------

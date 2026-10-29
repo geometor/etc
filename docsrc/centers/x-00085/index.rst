@@ -42,7 +42,7 @@ Incidence
 
 :ref:`X(85) <X(85)>` lies and on these lines:
 
-{:ref:`1 <X(1)>`, 664}, {:ref:`2 <X(2)>`, 241}, {:ref:`7 <X(7)>`, :ref:`8 <X(8)>`}, {:ref:`12 <X(12)>`, 120}, {:ref:`29 <X(29)>`, :ref:`34 <X(34)>`}, {:ref:`56 <X(56)>`, 870}, {:ref:`57 <X(57)>`, 274}, {:ref:`76 <X(76)>`, 226}, {:ref:`92 <X(92)>`, 331}, {109, 767}, {150, 355}, {264, 309}
+{:ref:`1 <X(1)>`, :ref:`664 <X(664)>`}, {:ref:`2 <X(2)>`, :ref:`241 <X(241)>`}, {:ref:`7 <X(7)>`, :ref:`8 <X(8)>`}, {:ref:`12 <X(12)>`, :ref:`120 <X(120)>`}, {:ref:`29 <X(29)>`, :ref:`34 <X(34)>`}, {:ref:`56 <X(56)>`, :ref:`870 <X(870)>`}, {:ref:`57 <X(57)>`, :ref:`274 <X(274)>`}, {:ref:`76 <X(76)>`, :ref:`226 <X(226)>`}, {:ref:`92 <X(92)>`, :ref:`331 <X(331)>`}, {:ref:`109 <X(109)>`, :ref:`767 <X(767)>`}, {:ref:`150 <X(150)>`, :ref:`355 <X(355)>`}, {:ref:`264 <X(264)>`, :ref:`309 <X(309)>`}
 
 Relations
 ---------
@@ -51,15 +51,15 @@ Relations
 * :ref:`X(85) <X(85)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(9) <X(9)>`
 * :ref:`X(85) <X(85)>` = :term:`complement <complement>` of X(3177)
 * :ref:`X(85) <X(85)>` = :term:`anticomplement <anticomplement>` of X(1212)
-* :ref:`X(85) <X(85)>` = X(274)-:term:`Ceva conjugate <ceva-conjugate>` of X(348)
-* :ref:`X(85) <X(85)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, 169), (:ref:`2 <X(2)>`, :ref:`7 <X(7)>`), (:ref:`57 <X(57)>`, :ref:`77 <X(77)>`), (:ref:`92 <X(92)>`, 342)
-* :ref:`X(85) <X(85)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`75 <X(75)>`), (:ref:`57 <X(57)>`, 273), (:ref:`92 <X(92)>`, 309), (142, :ref:`2 <X(2)>`), (226, :ref:`7 <X(7)>`)
-* :ref:`X(85) <X(85)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`76 <X(76)>`, :ref:`76 <X(76)>`), (:ref:`85 <X(85)>`, 279), (:ref:`99 <X(99)>`, :ref:`1 <X(1)>`), (274, :ref:`85 <X(85)>`), (668, :ref:`85 <X(85)>`), (789, :ref:`85 <X(85)>`), (799, :ref:`85 <X(85)>`), (811, :ref:`85 <X(85)>`)
-* :ref:`X(85) <X(85)>` = :term:`trilinear pole <trilinear-pole>` of line X(522)X(693) (the isotomic conjugate of the circumconic centered at :ref:`X(1) <X(1)>`, conic {A,B,C,\ :ref:`X(100) <X(100)>`,X(664),X(1120),X(1320)}; also the polar of :ref:`X(33) <X(33)>` wrt polar circle)
-* :ref:`X(85) <X(85)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(33) <X(33)>` (line X(657)X(4041))
+* :ref:`X(85) <X(85)>` = :ref:`X(274) <X(274)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(348) <X(348)>`
+* :ref:`X(85) <X(85)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`169 <X(169)>`), (:ref:`2 <X(2)>`, :ref:`7 <X(7)>`), (:ref:`57 <X(57)>`, :ref:`77 <X(77)>`), (:ref:`92 <X(92)>`, :ref:`342 <X(342)>`)
+* :ref:`X(85) <X(85)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`75 <X(75)>`), (:ref:`57 <X(57)>`, :ref:`273 <X(273)>`), (:ref:`92 <X(92)>`, :ref:`309 <X(309)>`), (:ref:`142 <X(142)>`, :ref:`2 <X(2)>`), (:ref:`226 <X(226)>`, :ref:`7 <X(7)>`)
+* :ref:`X(85) <X(85)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`76 <X(76)>`, :ref:`76 <X(76)>`), (:ref:`85 <X(85)>`, :ref:`279 <X(279)>`), (:ref:`99 <X(99)>`, :ref:`1 <X(1)>`), (:ref:`274 <X(274)>`, :ref:`85 <X(85)>`), (:ref:`668 <X(668)>`, :ref:`85 <X(85)>`), (:ref:`789 <X(789)>`, :ref:`85 <X(85)>`), (:ref:`799 <X(799)>`, :ref:`85 <X(85)>`), (:ref:`811 <X(811)>`, :ref:`85 <X(85)>`)
+* :ref:`X(85) <X(85)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(522) <X(522)>`\ \ :ref:`X(693) <X(693)>` (the isotomic conjugate of the circumconic centered at :ref:`X(1) <X(1)>`, conic {A,B,C,\ :ref:`X(100) <X(100)>`,\ :ref:`X(664) <X(664)>`,X(1120),X(1320)}; also the polar of :ref:`X(33) <X(33)>` wrt polar circle)
+* :ref:`X(85) <X(85)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(33) <X(33)>` (line :ref:`X(657) <X(657)>`\ X(4041))
 * :ref:`X(85) <X(85)>` = polar conjugate of :ref:`X(33) <X(33)>`
 * :ref:`X(85) <X(85)>` = {:ref:`X(7) <X(7)>`,\ :ref:`X(8) <X(8)>`}-harmonic conjugate of X(6604)
-* :ref:`X(85) <X(85)>` = trilinear square of X(508)
+* :ref:`X(85) <X(85)>` = trilinear square of :ref:`X(508) <X(508)>`
 * :ref:`X(85) <X(85)>` = trilinear product of vertices of Gemini triangle 9
 * :ref:`X(85) <X(85)>` = trilinear product of vertices of Gemini triangle 10
 

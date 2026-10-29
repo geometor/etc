@@ -26,17 +26,17 @@ def construct_x_00017(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(17) = 1st NAPOLEON POINT on reference triangle ABC."""
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
-    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /3)', ID="X(13)", classes=["center"])
-    central_line(model, X_3, X_13, 3, 13)
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center"])
-    X_15 = eval_trilinear_point(model, A, B, C, 'sin(A + pi /3)', ID="X(15)", classes=["center"])
-    central_line(model, X_4, X_15, 4, 15)
-    X_5 = nine_point_center_of(model, A, B, C, ID="X(5)", classes=["center"])
-    X_14 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /3)', ID="X(14)", classes=["center"])
-    central_line(model, X_5, X_14, 5, 14)
     Na, Nb, Nc = outer_napoleon_triangle(model, A, B, C)
     X_17 = perspector(model, A, B, C, Na, Nb, Nc, ID="X(17)", classes=["selected", "target"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
+    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /3)', ID="X(13)", classes=["center", "incident"])
+    central_line(model, X_3, X_13, 3, 13, incident=True)
+    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
+    X_15 = eval_trilinear_point(model, A, B, C, 'sin(A + pi /3)', ID="X(15)", classes=["center", "incident"])
+    central_line(model, X_4, X_15, 4, 15, incident=True)
+    X_5 = nine_point_center_of(model, A, B, C, ID="X(5)", classes=["center", "incident"])
+    X_14 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /3)', ID="X(14)", classes=["center", "incident"])
+    central_line(model, X_5, X_14, 5, 14, incident=True)
     return promote_point_to_top(model, X_17)
 
 

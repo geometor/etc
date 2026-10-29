@@ -54,7 +54,7 @@ Incidence
 
 :ref:`X(33) <X(33)>` lies and on these lines:
 
-{:ref:`1 <X(1)>`, :ref:`4 <X(4)>`}, {:ref:`2 <X(2)>`, 1040}, {:ref:`5 <X(5)>`, 1062}, {:ref:`6 <X(6)>`, 204}, {:ref:`7 <X(7)>`, 1041}, {:ref:`8 <X(8)>`, 1039}, {:ref:`9 <X(9)>`, 212}, {:ref:`10 <X(10)>`, 406}, {:ref:`11 <X(11)>`, 427}, {:ref:`12 <X(12)>`, 235}, {:ref:`19 <X(19)>`, :ref:`25 <X(25)>`}, {:ref:`20 <X(20)>`, 1038}, {:ref:`24 <X(24)>`, :ref:`35 <X(35)>`}, {:ref:`28 <X(28)>`, 975}, {:ref:`29 <X(29)>`, :ref:`78 <X(78)>`}, {:ref:`30 <X(30)>`, 1060}, {:ref:`36 <X(36)>`, 378}, {:ref:`40 <X(40)>`, 201}, {:ref:`42 <X(42)>`, 393}, {:ref:`47 <X(47)>`, :ref:`90 <X(90)>`}, {:ref:`56 <X(56)>`, 963}, {:ref:`57 <X(57)>`, 103}, {:ref:`63 <X(63)>`, 1013}, {:ref:`64 <X(64)>`, :ref:`65 <X(65)>`}, {:ref:`79 <X(79)>`, 1063}, {:ref:`80 <X(80)>`, 1061}, {:ref:`84 <X(84)>`, 603}, {112, 609}, {200, 281}, {210, 220}, {222, 971}, {264, 350}
+{:ref:`1 <X(1)>`, :ref:`4 <X(4)>`}, {:ref:`2 <X(2)>`, 1040}, {:ref:`5 <X(5)>`, 1062}, {:ref:`6 <X(6)>`, :ref:`204 <X(204)>`}, {:ref:`7 <X(7)>`, 1041}, {:ref:`8 <X(8)>`, 1039}, {:ref:`9 <X(9)>`, :ref:`212 <X(212)>`}, {:ref:`10 <X(10)>`, :ref:`406 <X(406)>`}, {:ref:`11 <X(11)>`, :ref:`427 <X(427)>`}, {:ref:`12 <X(12)>`, :ref:`235 <X(235)>`}, {:ref:`19 <X(19)>`, :ref:`25 <X(25)>`}, {:ref:`20 <X(20)>`, 1038}, {:ref:`24 <X(24)>`, :ref:`35 <X(35)>`}, {:ref:`28 <X(28)>`, :ref:`975 <X(975)>`}, {:ref:`29 <X(29)>`, :ref:`78 <X(78)>`}, {:ref:`30 <X(30)>`, 1060}, {:ref:`36 <X(36)>`, :ref:`378 <X(378)>`}, {:ref:`40 <X(40)>`, :ref:`201 <X(201)>`}, {:ref:`42 <X(42)>`, :ref:`393 <X(393)>`}, {:ref:`47 <X(47)>`, :ref:`90 <X(90)>`}, {:ref:`56 <X(56)>`, :ref:`963 <X(963)>`}, {:ref:`57 <X(57)>`, :ref:`103 <X(103)>`}, {:ref:`63 <X(63)>`, 1013}, {:ref:`64 <X(64)>`, :ref:`65 <X(65)>`}, {:ref:`79 <X(79)>`, 1063}, {:ref:`80 <X(80)>`, 1061}, {:ref:`84 <X(84)>`, :ref:`603 <X(603)>`}, {:ref:`112 <X(112)>`, :ref:`609 <X(609)>`}, {:ref:`200 <X(200)>`, :ref:`281 <X(281)>`}, {:ref:`210 <X(210)>`, :ref:`220 <X(220)>`}, {:ref:`222 <X(222)>`, :ref:`971 <X(971)>`}, {:ref:`264 <X(264)>`, :ref:`350 <X(350)>`}
 
 Relations
 ---------
@@ -62,15 +62,15 @@ Relations
 * :ref:`X(33) <X(33)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(77) <X(77)>`
 * :ref:`X(33) <X(33)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(7182)
 * :ref:`X(33) <X(33)>` = :term:`anticomplement <anticomplement>` of X(34822)
-* :ref:`X(33) <X(33)>` = :term:`trilinear pole <trilinear-pole>` of line X(657)X(4041) (the polar of :ref:`X(85) <X(85)>` wrt polar circle)
-* :ref:`X(33) <X(33)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(85) <X(85)>` (line X(522)X(693))
+* :ref:`X(33) <X(33)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(657) <X(657)>`\ X(4041) (the polar of :ref:`X(85) <X(85)>` wrt polar circle)
+* :ref:`X(33) <X(33)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(85) <X(85)>` (line :ref:`X(522) <X(522)>`\ \ :ref:`X(693) <X(693)>`)
 * :ref:`X(33) <X(33)>` = polar conjugate of :ref:`X(85) <X(85)>`
 * :ref:`X(33) <X(33)>` = perspector of ABC and extraversion triangle of :ref:`X(34) <X(34)>`
-* :ref:`X(33) <X(33)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`4 <X(4)>`, :ref:`19 <X(19)>`), (:ref:`29 <X(29)>`, 281), (318, :ref:`9 <X(9)>`)
+* :ref:`X(33) <X(33)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`4 <X(4)>`, :ref:`19 <X(19)>`), (:ref:`29 <X(29)>`, :ref:`281 <X(281)>`), (:ref:`318 <X(318)>`, :ref:`9 <X(9)>`)
 * :ref:`X(33) <X(33)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`41 <X(41)>`, :ref:`9 <X(9)>`), (:ref:`42 <X(42)>`, :ref:`55 <X(55)>`)
-* :ref:`X(33) <X(33)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, 282), (:ref:`4 <X(4)>`, 281)
-* :ref:`X(33) <X(33)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, 223), (:ref:`3 <X(3)>`, 222), (:ref:`57 <X(57)>`, 1394), (:ref:`73 <X(73)>`, 1214)
-* :ref:`X(33) <X(33)>` = :term:`crossdifference <crossdifference>` of every pair of points on line X(652)X(905)
+* :ref:`X(33) <X(33)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`282 <X(282)>`), (:ref:`4 <X(4)>`, :ref:`281 <X(281)>`)
+* :ref:`X(33) <X(33)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`223 <X(223)>`), (:ref:`3 <X(3)>`, :ref:`222 <X(222)>`), (:ref:`57 <X(57)>`, 1394), (:ref:`73 <X(73)>`, 1214)
+* :ref:`X(33) <X(33)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(652) <X(652)>`\ \ :ref:`X(905) <X(905)>`
 * :ref:`X(33) <X(33)>` = :ref:`X(33) <X(33)>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X(25) <X(25)>`
 * :ref:`X(33) <X(33)>` = homothetic center of anti-excenters-incenter reflections triangle and anti-tangential midarc triangle
 

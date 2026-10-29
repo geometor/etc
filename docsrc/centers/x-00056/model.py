@@ -16,11 +16,9 @@ from geometor.etc.ops import (
     eval_trilinear_point,
     feuerbach_point_of,
     incenter_of,
-    intouch_triangle,
     midpoint,
     orthocenter_of,
     promote_point_to_top,
-    tangential_triangle,
 )
 from geometor.etc.render import write_center_svg
 
@@ -29,19 +27,17 @@ def construct_x_00056(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(56) = EXSIMILICENTER(CIRCUMCIRCLE, INCIRCLE) on reference triangle ABC."""
-    intouch_triangle(model, A, B, C)
-    tangential_triangle(model, A, B, C)
     X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
-    central_line(model, X_1, X_3, 1, 3)
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
-    X_12 = eval_trilinear_point(model, A, B, C, '1 + cos(B - C)', ID="X(12)", classes=["center"])
-    central_line(model, X_2, X_12, 2, 12)
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center"])
-    X_11 = feuerbach_point_of(model, A, B, C, ID="X(11)", classes=["center"])
-    central_line(model, X_4, X_11, 4, 11)
     X_46 = eval_trilinear_point(model, A, B, C, 'cos(B) + cos(C) - cos(A)', ID="X(46)", classes=["center"])
     X_56 = midpoint(model, X_1, X_46, ID="X(56)", classes=["selected", "target"], guide=False)
+    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
+    central_line(model, X_1, X_3, 1, 3, incident=True)
+    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
+    X_12 = eval_trilinear_point(model, A, B, C, '1 + cos(B - C)', ID="X(12)", classes=["center", "incident"])
+    central_line(model, X_2, X_12, 2, 12, incident=True)
+    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
+    X_11 = feuerbach_point_of(model, A, B, C, ID="X(11)", classes=["center", "incident"])
+    central_line(model, X_4, X_11, 4, 11, incident=True)
     return promote_point_to_top(model, X_56)
 
 

@@ -12,11 +12,11 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
-    orthic_triangle,
+    nine_point_center_of,
     orthocenter_of,
+    point_from_barycentrics,
     promote_point_to_top,
     symmedian_point_of,
-    tangential_triangle,
 )
 from geometor.etc.render import write_center_svg
 
@@ -25,12 +25,16 @@ def construct_x_00053(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(53) = SYMMEDIAN POINT OF ORTHIC TRIANGLE on reference triangle ABC."""
-    orthic_triangle(model, A, B, C)
-    tangential_triangle(model, A, B, C)
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center"])
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
-    central_line(model, X_4, X_6, 4, 6)
     X_53 = eval_trilinear_point(model, A, B, C, 'tan(A)*cos(B - C)', ID="X(53)", classes=["selected", "target"])
+    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
+    central_line(model, X_4, X_6, 4, 6, incident=True)
+    X_25 = eval_trilinear_point(model, A, B, C, 'sin(A)*tan(A)', ID="X(25)", classes=["center", "incident"])
+    X_157 = point_from_barycentrics(model, A, B, C, 0.22698945, 0.13751531, 0.63549524, ID="X(157)", classes=["center", "incident"])
+    central_line(model, X_25, X_157, 25, 157, incident=True)
+    X_5 = nine_point_center_of(model, A, B, C, ID="X(5)", classes=["center", "incident"])
+    X_216 = eval_trilinear_point(model, A, B, C, 'sin(2*A)*cos(B - C)', ID="X(216)", classes=["center", "incident"])
+    central_line(model, X_5, X_216, 5, 216, incident=True)
     return promote_point_to_top(model, X_53)
 
 

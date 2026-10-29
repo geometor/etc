@@ -51,7 +51,7 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the reflection of the :term:`orthic triangle <orthic-triangle>` in :ref:`X(4) <X(4)>`. Let A''B''C'' be the trangential triangle, with respect ot the orthic triangle, of the circumconic of the orthic triangle with center :ref:`X(4) <X(4)>`; i.e., the bicevian conic of :ref:`X(4) <X(4)>` and X(459). Then :ref:`X(64) <X(64)>` is the perspector of A'B'C' and A''B''C''. (Randy Hutson, November 18, 2015)
+   Let A'B'C' be the reflection of the :term:`orthic triangle <orthic-triangle>` in :ref:`X(4) <X(4)>`. Let A''B''C'' be the trangential triangle, with respect ot the orthic triangle, of the circumconic of the orthic triangle with center :ref:`X(4) <X(4)>`; i.e., the bicevian conic of :ref:`X(4) <X(4)>` and :ref:`X(459) <X(459)>`. Then :ref:`X(64) <X(64)>` is the perspector of A'B'C' and A''B''C''. (Randy Hutson, November 18, 2015)
 
 .. container:: note-item
 
@@ -62,7 +62,7 @@ Incidence
 
 :ref:`X(64) <X(64)>` lies on the Darboux cubic and on these lines:
 
-{:ref:`1 <X(1)>`, 3182}, {:ref:`3 <X(3)>`, 154}, {:ref:`4 <X(4)>`, 3183}, {:ref:`6 <X(6)>`, 185}, {:ref:`20 <X(20)>`, :ref:`69 <X(69)>`}, {:ref:`24 <X(24)>`, :ref:`74 <X(74)>`}, {:ref:`30 <X(30)>`, :ref:`68 <X(68)>`}, {:ref:`33 <X(33)>`, :ref:`65 <X(65)>`}, {:ref:`40 <X(40)>`, :ref:`72 <X(72)>`}, {:ref:`54 <X(54)>`, 378}, {:ref:`55 <X(55)>`, :ref:`73 <X(73)>`}, {:ref:`71 <X(71)>`, 198}, {:ref:`84 <X(84)>`, 3353}, {265, 382}, {3345, 3472}, {3346, 3355}
+{:ref:`1 <X(1)>`, 3182}, {:ref:`3 <X(3)>`, :ref:`154 <X(154)>`}, {:ref:`4 <X(4)>`, 3183}, {:ref:`6 <X(6)>`, :ref:`185 <X(185)>`}, {:ref:`20 <X(20)>`, :ref:`69 <X(69)>`}, {:ref:`24 <X(24)>`, :ref:`74 <X(74)>`}, {:ref:`30 <X(30)>`, :ref:`68 <X(68)>`}, {:ref:`33 <X(33)>`, :ref:`65 <X(65)>`}, {:ref:`40 <X(40)>`, :ref:`72 <X(72)>`}, {:ref:`54 <X(54)>`, :ref:`378 <X(378)>`}, {:ref:`55 <X(55)>`, :ref:`73 <X(73)>`}, {:ref:`71 <X(71)>`, :ref:`198 <X(198)>`}, {:ref:`84 <X(84)>`, 3353}, {:ref:`265 <X(265)>`, :ref:`382 <X(382)>`}, {3345, 3472}, {3346, 3355}
 
 Relations
 ---------
@@ -74,11 +74,11 @@ Relations
 * :ref:`X(64) <X(64)>` = :term:`anticomplement <anticomplement>` of X(2883)
 * :ref:`X(64) <X(64)>` = circumcircle-inverse of X(11589)
 * :ref:`X(64) <X(64)>` = :ref:`X(25) <X(25)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(6) <X(6)>`
-* :ref:`X(64) <X(64)>` = :ref:`X(1) <X(1)>`-:term:`beth conjugate <beth-conjugate>` of X(207)
+* :ref:`X(64) <X(64)>` = :ref:`X(1) <X(1)>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X(207) <X(207)>`
 * :ref:`X(64) <X(64)>` = :term:`crosspoint <crosspoint>` of :ref:`X(4) <X(4)>` and X(3346)
 * :ref:`X(64) <X(64)>` = :term:`crosssum <crosssum>` of :ref:`X(3) <X(3)>` and X(1498)
 * :ref:`X(64) <X(64)>` = perspector of hexyl triangle and :term:`anticevian triangle <anticevian-triangle>` of X(2184)
-* :ref:`X(64) <X(64)>` = :term:`trilinear pole <trilinear-pole>` of line X(647)X(657)
+* :ref:`X(64) <X(64)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(647) <X(647)>`\ \ :ref:`X(657) <X(657)>`
 * :ref:`X(64) <X(64)>` = concurrence of normals to MacBeath circumconic at A, B, C
 * :ref:`X(64) <X(64)>` = isogonal conjugate, wrt :term:`tangential triangle <tangential-triangle>` of MacBeath circumconic (or anticevian triangle of :ref:`X(3) <X(3)>`), of X(1498)
 * :ref:`X(64) <X(64)>` = orthocenter of x(3)\ :ref:`X(6) <X(6)>`\ X(2435)

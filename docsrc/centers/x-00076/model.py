@@ -13,7 +13,6 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
-    isogonal_conjugate,
     orthocenter_of,
     promote_point_to_top,
     spieker_center_of,
@@ -25,17 +24,16 @@ def construct_x_00076(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(76) = 3rd BROCARD POINT on reference triangle ABC."""
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
-    X_39 = eval_trilinear_point(model, A, B, C, 'a*(b**(2) + c**(2))', ID="X(39)", classes=["center"])
-    central_line(model, X_2, X_39, 2, 39)
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center"])
-    X_69 = eval_trilinear_point(model, A, B, C, '(cos(A))/a**(2)', ID="X(69)", classes=["center"])
-    central_line(model, X_4, X_69, 4, 69)
-    X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["center"])
-    X_75 = eval_trilinear_point(model, A, B, C, '1/a**(2)', ID="X(75)", classes=["center"])
-    central_line(model, X_10, X_75, 10, 75)
-    X_32 = eval_trilinear_point(model, A, B, C, 'a**(3)', ID="X(32)", classes=["center"])
-    X_76 = isogonal_conjugate(model, A, B, C, X_32, ID="X(76)", classes=["selected", "target"])
+    X_76 = eval_trilinear_point(model, A, B, C, '1/a**(3)', ID="X(76)", classes=["selected", "target"])
+    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
+    X_39 = eval_trilinear_point(model, A, B, C, 'a*(b**(2) + c**(2))', ID="X(39)", classes=["center", "incident"])
+    central_line(model, X_2, X_39, 2, 39, incident=True)
+    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
+    X_69 = eval_trilinear_point(model, A, B, C, '(cos(A))/a**(2)', ID="X(69)", classes=["center", "incident"])
+    central_line(model, X_4, X_69, 4, 69, incident=True)
+    X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["center", "incident"])
+    X_75 = eval_trilinear_point(model, A, B, C, '1/a**(2)', ID="X(75)", classes=["center", "incident"])
+    central_line(model, X_10, X_75, 10, 75, incident=True)
     return promote_point_to_top(model, X_76)
 
 

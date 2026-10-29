@@ -5,14 +5,14 @@
 
 .. _X(50):
 
-X(50) = -CEVA CONJUGATE OF X(184)
-=================================
+X(50) = X(74)-CEVA CONJUGATE OF X(184)
+======================================
 
 .. figure:: x-00050.svg
-   :alt: X(50) = -CEVA CONJUGATE OF X(184)
+   :alt: X(50) = X(74)-CEVA CONJUGATE OF X(184)
    :align: center
 
-   **X(50) = -CEVA CONJUGATE OF X(184)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(50) = X(74)-CEVA CONJUGATE OF X(184)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
 
 Coordinates
 -----------
@@ -22,7 +22,7 @@ Trilinears
 
 * :math:`\sin 3A : :`
 * :math:`\cos A \sin 2A + \sin A \cos 2A : :`
-* :math:`\sin A + \cos A \cot D/2 : :`, where cot D/2 = (4\*area)/(6R\ :sup:`2` - a\ :sup:`2` - b\ :sup:`2` - c\ :sup:`2`), where R = abc/(4\*area) (:person:`Peter Moses <peter-moses>`, 12/19/2011; cf. X(568))
+* :math:`\sin A + \cos A \cot D/2 : :`, where cot D/2 = (4\*area)/(6R\ :sup:`2` - a\ :sup:`2` - b\ :sup:`2` - c\ :sup:`2`), where R = abc/(4\*area) (:person:`Peter Moses <peter-moses>`, 12/19/2011; cf. :ref:`X(568) <X(568)>`)
 * :math:`a(1 - 4 \cos^{2}A) : b(1 - 4 \cos^{2}B) : c(1 - 4 \cos^{2}C)`
 * :math:`a(1 + 2 \cos 2A) : b(1 + 2 \cos 2B) : c(1 + 2 \cos 2C)`
 
@@ -49,7 +49,7 @@ Notes
 
 .. container:: note-item
 
-   Let DEF be any equilateral triangle inscribed in the circumcircle of ABC. Let D' be the barycentric product E\*F, and define E', F' cyclically. Then D',E',F' all line on a line passing through :ref:`X(50) <X(50)>`. In the special case that DEF is the circumtangential triangle, the points D',E',F' lie on the Brocard axis, and in case DEF is the circumnormal triangle, the points D',E'F' lie on the line :ref:`X(50) <X(50)>`\ X(647). See also X(6149). (:person:`Randy Hutson <randy-hutson>`, January 29, 2015)
+   Let DEF be any equilateral triangle inscribed in the circumcircle of ABC. Let D' be the barycentric product E\*F, and define E', F' cyclically. Then D',E',F' all line on a line passing through :ref:`X(50) <X(50)>`. In the special case that DEF is the circumtangential triangle, the points D',E',F' lie on the Brocard axis, and in case DEF is the circumnormal triangle, the points D',E'F' lie on the line :ref:`X(50) <X(50)>`\ \ :ref:`X(647) <X(647)>`. See also X(6149). (:person:`Randy Hutson <randy-hutson>`, January 29, 2015)
 
 .. container:: note-item
 
@@ -65,14 +65,14 @@ Notes
 
 .. container:: note-item
 
-   :ref:`X(50) <X(50)>` is the {:ref:`X(3) <X(3)>`,\ :ref:`X(6) <X(6)>`}-harmonic conjugate of X(566).
+   :ref:`X(50) <X(50)>` is the {:ref:`X(3) <X(3)>`,\ :ref:`X(6) <X(6)>`}-harmonic conjugate of :ref:`X(566) <X(566)>`.
 
 Incidence
 ---------
 
 :ref:`X(50) <X(50)>` lies and on these lines:
 
-{:ref:`3 <X(3)>`, :ref:`6 <X(6)>`}, {:ref:`67 <X(67)>`, 248}, {112, 477}, {115, 231}, {230, 858}, {338, 401}, {647, 654}
+{:ref:`3 <X(3)>`, :ref:`6 <X(6)>`}, {:ref:`67 <X(67)>`, :ref:`248 <X(248)>`}, {:ref:`112 <X(112)>`, :ref:`477 <X(477)>`}, {:ref:`115 <X(115)>`, :ref:`231 <X(231)>`}, {:ref:`230 <X(230)>`, :ref:`858 <X(858)>`}, {:ref:`338 <X(338)>`, :ref:`401 <X(401)>`}, {:ref:`647 <X(647)>`, :ref:`654 <X(654)>`}
 
 Relations
 ---------
@@ -82,15 +82,15 @@ Relations
 * :ref:`X(50) <X(50)>` = :term:`anticomplement <anticomplement>` of X(34827)
 * :ref:`X(50) <X(50)>` = :term:`complement <complement>` of isogonal conjugate of X(34448)
 * :ref:`X(50) <X(50)>` = circumcircle-inverse of X(32761)
-* :ref:`X(50) <X(50)>` = Brocard-circle-inverse of X(566)
-* :ref:`X(50) <X(50)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, 215), (:ref:`74 <X(74)>`, 184), (:ref:`94 <X(94)>`, :ref:`49 <X(49)>`)
-* :ref:`X(50) <X(50)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`93 <X(93)>`, :ref:`94 <X(94)>`), (186, 323)
+* :ref:`X(50) <X(50)>` = Brocard-circle-inverse of :ref:`X(566) <X(566)>`
+* :ref:`X(50) <X(50)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`215 <X(215)>`), (:ref:`74 <X(74)>`, :ref:`184 <X(184)>`), (:ref:`94 <X(94)>`, :ref:`49 <X(49)>`)
+* :ref:`X(50) <X(50)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`93 <X(93)>`, :ref:`94 <X(94)>`), (:ref:`186 <X(186)>`, :ref:`323 <X(323)>`)
 * :ref:`X(50) <X(50)>` = :term:`crosssum <crosssum>` of :ref:`X(49) <X(49)>` and :ref:`X(50) <X(50)>`
-* :ref:`X(50) <X(50)>` = crossdifference of every pair of points on line :ref:`X(5) <X(5)>`\ X(523)
+* :ref:`X(50) <X(50)>` = crossdifference of every pair of points on line :ref:`X(5) <X(5)>`\ \ :ref:`X(523) <X(523)>`
 * :ref:`X(50) <X(50)>` = barycentric product of :ref:`X(15) <X(15)>` and :ref:`X(16) <X(16)>`
-* :ref:`X(50) <X(50)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these (i,j): (:ref:`92 <X(92)>`, 265), (1577, 476)
-* :ref:`X(50) <X(50)>` = Cundy-Parry Phi transform of X(568)
-* :ref:`X(50) <X(50)>` = perspector of circumconic passing through X(110) and the isogonal conjugates of PU(5)
+* :ref:`X(50) <X(50)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these (i,j): (:ref:`92 <X(92)>`, :ref:`265 <X(265)>`), (1577, :ref:`476 <X(476)>`)
+* :ref:`X(50) <X(50)>` = Cundy-Parry Phi transform of :ref:`X(568) <X(568)>`
+* :ref:`X(50) <X(50)>` = perspector of circumconic passing through :ref:`X(110) <X(110)>` and the isogonal conjugates of PU(5)
 * :ref:`X(50) <X(50)>` = :ref:`X(2) <X(2)>`-Ceva conjugate of X(11597)
 * :ref:`X(50) <X(50)>` = perspector of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of Ehrmann vertex-triangle
 * :ref:`X(50) <X(50)>` = barycentric product :ref:`X(35) <X(35)>`\ \*\ :ref:`X(36) <X(36)>`

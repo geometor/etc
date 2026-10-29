@@ -11,7 +11,6 @@ from geometor.etc.ops import (
     central_line,
     centroid_of,
     circumcenter_of,
-    circumcircle,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
@@ -27,18 +26,17 @@ def construct_x_00013(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(13) = 1st ISOGONIC CENTER on reference triangle ABC."""
-    circumcircle(model, A, B, C)
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
-    X_16 = eval_trilinear_point(model, A, B, C, 'sin(A- pi /3)', ID="X(16)", classes=["center"])
-    central_line(model, X_2, X_16, 2, 16)
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
-    X_17 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /6)', ID="X(17)", classes=["center"])
-    central_line(model, X_3, X_17, 3, 17)
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
-    X_14 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /3)', ID="X(14)", classes=["center"])
-    central_line(model, X_6, X_14, 6, 14)
     Ea, Eb, Ec = outer_equilateral_triangles(model, A, B, C)
     X_13 = perspector(model, A, B, C, Ea, Eb, Ec, ID="X(13)", classes=["selected", "target"])
+    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
+    X_16 = eval_trilinear_point(model, A, B, C, 'sin(A- pi /3)', ID="X(16)", classes=["center", "incident"])
+    central_line(model, X_2, X_16, 2, 16, incident=True)
+    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
+    X_17 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /6)', ID="X(17)", classes=["center", "incident"])
+    central_line(model, X_3, X_17, 3, 17, incident=True)
+    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
+    X_14 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /3)', ID="X(14)", classes=["center", "incident"])
+    central_line(model, X_6, X_14, 6, 14, incident=True)
     return promote_point_to_top(model, X_13)
 
 

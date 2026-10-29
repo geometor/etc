@@ -17,7 +17,6 @@ from geometor.etc.ops import (
     promote_point_to_top,
     spieker_center_of,
     symmedian_point_of,
-    tangential_triangle,
 )
 from geometor.etc.render import write_center_svg
 
@@ -26,18 +25,17 @@ def construct_x_00083(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(83) = CEVAPOINT OF CENTROID AND SYMMEDIAN POINT on reference triangle ABC."""
-    tangential_triangle(model, A, B, C)
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
-    X_32 = eval_trilinear_point(model, A, B, C, 'a**(3)', ID="X(32)", classes=["center"])
-    central_line(model, X_2, X_32, 2, 32)
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
-    X_76 = eval_trilinear_point(model, A, B, C, '1/a**(3)', ID="X(76)", classes=["center"])
-    central_line(model, X_6, X_76, 6, 76)
-    X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["center"])
-    X_82 = eval_trilinear_point(model, A, B, C, '1/(b**(2) + c**(2))', ID="X(82)", classes=["center"])
-    central_line(model, X_10, X_82, 10, 82)
     X_39 = eval_trilinear_point(model, A, B, C, 'a*(b**(2) + c**(2))', ID="X(39)", classes=["center"])
     X_83 = isogonal_conjugate(model, A, B, C, X_39, ID="X(83)", classes=["selected", "target"])
+    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
+    X_32 = eval_trilinear_point(model, A, B, C, 'a**(3)', ID="X(32)", classes=["center", "incident"])
+    central_line(model, X_2, X_32, 2, 32, incident=True)
+    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
+    X_76 = eval_trilinear_point(model, A, B, C, '1/a**(3)', ID="X(76)", classes=["center", "incident"])
+    central_line(model, X_6, X_76, 6, 76, incident=True)
+    X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["center", "incident"])
+    X_82 = eval_trilinear_point(model, A, B, C, '1/(b**(2) + c**(2))', ID="X(82)", classes=["center", "incident"])
+    central_line(model, X_10, X_82, 10, 82, incident=True)
     return promote_point_to_top(model, X_83)
 
 

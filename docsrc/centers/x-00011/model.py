@@ -10,15 +10,12 @@ from geometor.model import Model
 from geometor.etc.ops import (
     central_line,
     centroid_of,
-    circumcircle,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
     feuerbach_point_of,
     incenter_of,
-    medial_triangle,
     nine_point_center_of,
-    orthic_triangle,
     orthocenter_of,
     promote_point_to_top,
 )
@@ -29,19 +26,16 @@ def construct_x_00011(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(11) = FEUERBACH POINT on reference triangle ABC."""
-    medial_triangle(model, A, B, C)
-    orthic_triangle(model, A, B, C)
-    circumcircle(model, A, B, C)
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
-    X_5 = nine_point_center_of(model, A, B, C, ID="X(5)", classes=["center"])
-    central_line(model, X_1, X_5, 1, 5)
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
-    X_55 = eval_trilinear_point(model, A, B, C, 'a*(b + c - a)', ID="X(55)", classes=["center"])
-    central_line(model, X_2, X_55, 2, 55)
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center"])
-    X_56 = eval_trilinear_point(model, A, B, C, 'a/(b + c - a)', ID="X(56)", classes=["center"])
-    central_line(model, X_4, X_56, 4, 56)
     X_11 = feuerbach_point_of(model, A, B, C, ID="X(11)", classes=["selected", "target"], draw_circles=True)
+    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
+    X_5 = nine_point_center_of(model, A, B, C, ID="X(5)", classes=["center", "incident"])
+    central_line(model, X_1, X_5, 1, 5, incident=True)
+    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
+    X_55 = eval_trilinear_point(model, A, B, C, 'a*(b + c - a)', ID="X(55)", classes=["center", "incident"])
+    central_line(model, X_2, X_55, 2, 55, incident=True)
+    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
+    X_56 = eval_trilinear_point(model, A, B, C, 'a/(b + c - a)', ID="X(56)", classes=["center", "incident"])
+    central_line(model, X_4, X_56, 4, 56, incident=True)
     return promote_point_to_top(model, X_11)
 
 

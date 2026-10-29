@@ -9,6 +9,7 @@ from geometor.model import Model
 
 from geometor.etc.ops import (
     central_line,
+    centroid_of,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
@@ -22,10 +23,16 @@ def construct_x_00038(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(38) = CROSSPOINT OF X(1) AND X(75) on reference triangle ABC."""
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
-    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X(21)", classes=["center"])
-    central_line(model, X_1, X_21, 1, 21)
     X_38 = eval_trilinear_point(model, A, B, C, 'b**(2) + c**(2)', ID="X(38)", classes=["selected", "target"])
+    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
+    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X(21)", classes=["center", "incident"])
+    central_line(model, X_1, X_21, 1, 21, incident=True)
+    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
+    X_244 = eval_trilinear_point(model, A, B, C, '(b - c)**(2)', ID="X(244)", classes=["center", "incident"])
+    central_line(model, X_2, X_244, 2, 244, incident=True)
+    X_56 = eval_trilinear_point(model, A, B, C, 'a/(b + c - a)', ID="X(56)", classes=["center", "incident"])
+    X_201 = eval_trilinear_point(model, A, B, C, '(cos(A))*(1 + cos(B - C))', ID="X(201)", classes=["center", "incident"])
+    central_line(model, X_56, X_201, 56, 201, incident=True)
     return promote_point_to_top(model, X_38)
 
 

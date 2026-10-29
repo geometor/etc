@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(87) = -CROSS CONJUGATE OF X(1)."""
+"""GEOMETOR construction model for X(87) = X(2)-CROSS CONJUGATE OF X(1)."""
 
 from __future__ import annotations
 
@@ -12,7 +12,9 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    incenter_of,
     isogonal_conjugate,
+    point_from_barycentrics,
     promote_point_to_top,
     symmedian_point_of,
 )
@@ -22,11 +24,17 @@ from geometor.etc.render import write_center_svg
 def construct_x_00087(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(87) = -CROSS CONJUGATE OF X(1) on reference triangle ABC."""
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
+    """Construct X(87) = X(2)-CROSS CONJUGATE OF X(1) on reference triangle ABC."""
     X_43 = eval_trilinear_point(model, A, B, C, 'a*b + a*c - b*c', ID="X(43)", classes=["center"])
-    central_line(model, X_6, X_43, 6, 43)
     X_87 = isogonal_conjugate(model, A, B, C, X_43, ID="X(87)", classes=["selected", "target"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
+    central_line(model, X_6, X_43, 6, 43, incident=True)
+    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
+    X_192 = eval_trilinear_point(model, A, B, C, 'b*c*(c*a + a*b - b*c)', ID="X(192)", classes=["center", "incident"])
+    central_line(model, X_1, X_192, 1, 192, incident=True)
+    X_34 = eval_trilinear_point(model, A, B, C, '1 - sec(A)', ID="X(34)", classes=["center", "incident"])
+    X_242 = point_from_barycentrics(model, A, B, C, -0.21362434, 0.01984127, 1.1937831, ID="X(242)", classes=["center", "incident"])
+    central_line(model, X_34, X_242, 34, 242, incident=True)
     return promote_point_to_top(model, X_87)
 
 
@@ -35,7 +43,7 @@ def build_model(
     show_guides: bool = False,
 ) -> Model:
     """Build a `geometor.model.Model` for X(87) on the given reference triangle."""
-    model = create_model('X(87) = -CROSS CONJUGATE OF X(1)')
+    model = create_model('X(87) = X(2)-CROSS CONJUGATE OF X(1)')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00087(model, A, B, C)
     return model

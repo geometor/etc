@@ -51,6 +51,10 @@ svg.geometor-etc-drawing.hide-guides .guide {
     display: none !important;
 }
 
+svg.geometor-etc-drawing:not(.show-lines) .incident {
+    display: none !important;
+}
+
 #points circle {
     fill: var(--text-color);
     stroke: var(--background-color);
@@ -433,21 +437,49 @@ INTERACTIVE_SVG_JS = r"""
                 { label: '+', title: 'Zoom In (or scroll wheel)', action: () => zoomBy(1 / 1.25) },
                 { label: '−', title: 'Zoom Out (or scroll wheel)', action: () => zoomBy(1.25) },
                 { label: '⟲ Fit', title: 'Reset View (or double-click canvas)', action: () => resetView() },
-                { label: 'Labels', title: 'Toggle Point Labels', action: () => svg.classList.toggle('hide-labels') },
             ];
+            if (svg.querySelector('.incident')) {
+                btns.push({
+                    label: 'Lines',
+                    toggleKey: 'lines',
+                    title: 'Toggle Incident Central Lines',
+                    isActive: () => svg.classList.contains('show-lines'),
+                    action: () => svg.classList.toggle('show-lines'),
+                });
+            }
+            btns.push({
+                label: 'Labels',
+                toggleKey: 'labels',
+                title: 'Toggle Point Labels',
+                isActive: () => !svg.classList.contains('hide-labels'),
+                action: () => svg.classList.toggle('hide-labels'),
+            });
             if (svg.querySelector('.guide')) {
-                btns.push({ label: 'Guides', title: 'Toggle Construction Guides', action: () => svg.classList.toggle('hide-guides') });
+                btns.push({
+                    label: 'Guides',
+                    toggleKey: 'guides',
+                    title: 'Toggle Construction Guides',
+                    isActive: () => !svg.classList.contains('hide-guides'),
+                    action: () => svg.classList.toggle('hide-guides'),
+                });
             }
             btns.forEach(b => {
                 const btn = document.createElement('button');
                 btn.type = 'button';
                 btn.className = 'etc-svg-btn';
+                if (b.toggleKey) {
+                    btn.dataset.toggleKey = b.toggleKey;
+                    btn.classList.toggle('active', b.isActive());
+                }
                 btn.textContent = b.label;
                 btn.title = b.title;
                 btn.addEventListener('click', (e) => {
                     e.preventDefault();
                     e.stopPropagation();
                     b.action();
+                    if (b.isActive) {
+                        btn.classList.toggle('active', b.isActive());
+                    }
                 });
                 toolbar.appendChild(btn);
             });
@@ -468,6 +500,7 @@ INTERACTIVE_SVG_JS = r"""
                     const prevSvg = prevPane ? prevPane.querySelector('svg.geometor-etc-drawing') : null;
                     const hideLabels = prevSvg ? prevSvg.classList.contains('hide-labels') : false;
                     const hideGuides = prevSvg ? prevSvg.classList.contains('hide-guides') : false;
+                    const showLines = prevSvg ? prevSvg.classList.contains('show-lines') : false;
 
                     tabBtns.forEach(b => {
                         const isMatch = b.getAttribute('data-tab') === targetTab;
@@ -484,6 +517,16 @@ INTERACTIVE_SVG_JS = r"""
                             if (paneSvg) {
                                 paneSvg.classList.toggle('hide-labels', hideLabels);
                                 paneSvg.classList.toggle('hide-guides', hideGuides);
+                                paneSvg.classList.toggle('show-lines', showLines);
+                                const paneToolbar = pane.querySelector('.etc-svg-toolbar');
+                                if (paneToolbar) {
+                                    const lBtn = paneToolbar.querySelector('[data-toggle-key="lines"]');
+                                    if (lBtn) lBtn.classList.toggle('active', showLines);
+                                    const lblBtn = paneToolbar.querySelector('[data-toggle-key="labels"]');
+                                    if (lblBtn) lblBtn.classList.toggle('active', !hideLabels);
+                                    const gBtn = paneToolbar.querySelector('[data-toggle-key="guides"]');
+                                    if (gBtn) gBtn.classList.toggle('active', !hideGuides);
+                                }
                                 if (paneSvg._etcController) {
                                     paneSvg._etcController.scaleViewElements();
                                     requestAnimationFrame(() => paneSvg._etcController.scaleViewElements());
@@ -666,9 +709,36 @@ _CLASSICAL_POINT_INFO: dict[str, tuple[str, str]] = {
     "N_a": ("Excircle Touchpoint N_a on BC", "Extouch triangle vertex opposite A"),
     "N_b": ("Excircle Touchpoint N_b on CA", "Extouch triangle vertex opposite B"),
     "N_c": ("Excircle Touchpoint N_c on AB", "Extouch triangle vertex opposite C"),
+    "I_a": ("Angle Bisector Foot I_a on BC", "Incentral triangle vertex opposite A"),
+    "I_b": ("Angle Bisector Foot I_b on CA", "Incentral triangle vertex opposite B"),
+    "I_c": ("Angle Bisector Foot I_c on AB", "Incentral triangle vertex opposite C"),
+    "J_a": ("A-Excenter J_a", "Excentral triangle vertex opposite A"),
+    "J_b": ("B-Excenter J_b", "Excentral triangle vertex opposite B"),
+    "J_c": ("C-Excenter J_c", "Excentral triangle vertex opposite C"),
+    "K_a": ("Anticomplementary Vertex K_a", "Anticomplementary triangle vertex opposite A"),
+    "K_b": ("Anticomplementary Vertex K_b", "Anticomplementary triangle vertex opposite B"),
+    "K_c": ("Anticomplementary Vertex K_c", "Anticomplementary triangle vertex opposite C"),
+    "Tan_a": ("Tangential Vertex Tan_a", "Intersection of circumcircle tangents at B and C"),
+    "Tan_b": ("Tangential Vertex Tan_b", "Intersection of circumcircle tangents at C and A"),
+    "Tan_c": ("Tangential Vertex Tan_c", "Intersection of circumcircle tangents at A and B"),
+    "Sym_a": ("Symmedian Foot Sym_a on BC", "Symmedial triangle vertex opposite A"),
+    "Sym_b": ("Symmedian Foot Sym_b on CA", "Symmedial triangle vertex opposite B"),
+    "Sym_c": ("Symmedian Foot Sym_c on AB", "Symmedial triangle vertex opposite C"),
+    "Eu_a": ("Euler Vertex Eu_a", "Midpoint of segment A–X(4) (Euler triangle vertex)"),
+    "Eu_b": ("Euler Vertex Eu_b", "Midpoint of segment B–X(4) (Euler triangle vertex)"),
+    "Eu_c": ("Euler Vertex Eu_c", "Midpoint of segment C–X(4) (Euler triangle vertex)"),
+    "Ref_a": ("Reflection Ref_a of A in BC", "Vertex of reflection triangle opposite A"),
+    "Ref_b": ("Reflection Ref_b of B in CA", "Vertex of reflection triangle opposite B"),
+    "Ref_c": ("Reflection Ref_c of C in AB", "Vertex of reflection triangle opposite C"),
+    "P_a": ("Cevian Trace P_a on BC", "Intersection of cevian from A with sideline BC"),
+    "P_b": ("Cevian Trace P_b on CA", "Intersection of cevian from B with sideline CA"),
+    "P_c": ("Cevian Trace P_c on AB", "Intersection of cevian from C with sideline AB"),
     "A'": ("Auxiliary Apex A'", "Constructed apex opposite vertex A"),
     "B'": ("Auxiliary Apex B'", "Constructed apex opposite vertex B"),
     "C'": ("Auxiliary Apex C'", "Constructed apex opposite vertex C"),
+    "Nap_a": ("Napoleon Center Nap_a", "Centroid of equilateral triangle on BC"),
+    "Nap_b": ("Napoleon Center Nap_b", "Centroid of equilateral triangle on CA"),
+    "Nap_c": ("Napoleon Center Nap_c", "Centroid of equilateral triangle on AB"),
     "N_A": ("Napoleon Center N_A", "Centroid of equilateral triangle on BC"),
     "N_B": ("Napoleon Center N_B", "Centroid of equilateral triangle on CA"),
     "N_C": ("Napoleon Center N_C", "Centroid of equilateral triangle on AB"),
@@ -693,12 +763,27 @@ _CONSTRUCTION_LINE_INFO: dict[str, tuple[str, str]] = {
     "[ A X(1) ]": ("Internal Angle Bisector of ∠A", "Bisector of interior angle A through Incenter X(1)"),
     "[ B X(1) ]": ("Internal Angle Bisector of ∠B", "Bisector of interior angle B through Incenter X(1)"),
     "[ C X(1) ]": ("Internal Angle Bisector of ∠C", "Bisector of interior angle C through Incenter X(1)"),
+    "[ A I_a ]": ("Internal Angle Bisector of ∠A", "Bisector of interior angle A meeting BC at I_a"),
+    "[ B I_b ]": ("Internal Angle Bisector of ∠B", "Bisector of interior angle B meeting CA at I_b"),
+    "[ C I_c ]": ("Internal Angle Bisector of ∠C", "Bisector of interior angle C meeting AB at I_c"),
+    "[ A Tan_a ]": ("A-Symmedian", "Symmedian from vertex A to tangential vertex Tan_a"),
+    "[ B Tan_b ]": ("B-Symmedian", "Symmedian from vertex B to tangential vertex Tan_b"),
+    "[ C Tan_c ]": ("C-Symmedian", "Symmedian from vertex C to tangential vertex Tan_c"),
+    "[ A Sym_a ]": ("A-Symmedian", "Symmedian from vertex A meeting BC at Sym_a"),
+    "[ B Sym_b ]": ("B-Symmedian", "Symmedian from vertex B meeting CA at Sym_b"),
+    "[ C Sym_c ]": ("C-Symmedian", "Symmedian from vertex C meeting AB at Sym_c"),
     "[ A T_a ]": ("Gergonne Cevian A–T_a", "Cevian from vertex A to incircle touchpoint T_a"),
     "[ B T_b ]": ("Gergonne Cevian B–T_b", "Cevian from vertex B to incircle touchpoint T_b"),
     "[ C T_c ]": ("Gergonne Cevian C–T_c", "Cevian from vertex C to incircle touchpoint T_c"),
     "[ A N_a ]": ("Nagel Cevian (Splitter) A–N_a", "Perimeter-bisecting cevian from A to excircle touchpoint N_a"),
     "[ B N_b ]": ("Nagel Cevian (Splitter) B–N_b", "Perimeter-bisecting cevian from B to excircle touchpoint N_b"),
     "[ C N_c ]": ("Nagel Cevian (Splitter) C–N_c", "Perimeter-bisecting cevian from C to excircle touchpoint N_c"),
+    "[ J_a M_a ]": ("Mittenpunkt Symmedian J_a–M_a", "Line joining A-excenter J_a to side midpoint M_a"),
+    "[ J_b M_b ]": ("Mittenpunkt Symmedian J_b–M_b", "Line joining B-excenter J_b to side midpoint M_b"),
+    "[ J_c M_c ]": ("Mittenpunkt Symmedian J_c–M_c", "Line joining C-excenter J_c to side midpoint M_c"),
+    "[ A P_a ]": ("A-Cevian A–P_a", "Cevian from vertex A through target center to trace P_a on BC"),
+    "[ B P_b ]": ("B-Cevian B–P_b", "Cevian from vertex B through target center to trace P_b on CA"),
+    "[ C P_c ]": ("C-Cevian C–P_c", "Cevian from vertex C through target center to trace P_c on AB"),
     "[ A A' ]": ("Apex Cevian A–A'", "Cevian joining vertex A to constructed apex A'"),
     "[ B B' ]": ("Apex Cevian B–B'", "Cevian joining vertex B to constructed apex B'"),
     "[ C C' ]": ("Apex Cevian C–C'", "Cevian joining vertex C to constructed apex C'"),
@@ -721,6 +806,10 @@ _KNOWN_CIRCLE_INFO: dict[str, tuple[str, str]] = {
         "Spieker Circle",
         "Incircle of the medial triangle △M_a M_b M_c; centered at X(10) SPIEKER CENTER",
     ),
+    "bevan_circle": (
+        "Bevan Circle",
+        "Circumcircle of the excentral triangle △J_a J_b J_c; centered at X(40) BEVAN POINT",
+    ),
     "brocard_circle": (
         "Brocard Circle (Seven-Point Circle)",
         "Circle on diameter X(3)X(6) passing through Brocard points and X(15), X(16); centered at X(182)",
@@ -732,6 +821,18 @@ _KNOWN_CIRCLE_INFO: dict[str, tuple[str, str]] = {
     "fuhrmann_circle": (
         "Fuhrmann Circle",
         "Circle on diameter X(4)X(8) (Orthocenter to Nagel Point); centered at X(427)",
+    ),
+    "A-Apollonian circle": (
+        "A-Apollonian Circle",
+        "Circle through A whose diameter on BC is bounded by the internal and external angle bisectors of ∠A",
+    ),
+    "B-Apollonian circle": (
+        "B-Apollonian Circle",
+        "Circle through B whose diameter on CA is bounded by the internal and external angle bisectors of ∠B",
+    ),
+    "C-Apollonian circle": (
+        "C-Apollonian Circle",
+        "Circle through C whose diameter on AB is bounded by the internal and external angle bisectors of ∠C",
     ),
     "( A R_b )": (
         "Euclid I.22 Guide Circle (A)",
@@ -749,7 +850,17 @@ _KNOWN_POLYGON_INFO: dict[str, tuple[str, str]] = {
     "< H_a H_b H_c >": ("Orthic Triangle △H_a H_b H_c", "Pedal triangle of Orthocenter X(4) (altitude feet)"),
     "< T_a T_b T_c >": ("Intouch (Contact) Triangle △T_a T_b T_c", "Contact triangle of Incircle touchpoints on BC, CA, AB"),
     "< N_a N_b N_c >": ("Extouch Triangle △N_a N_b N_c", "Contact triangle of Excircle touchpoints on BC, CA, AB"),
-    "< A' B' C' >": ("Tangential / Auxiliary Triangle △A'B'C'", "Derived triangle"),
+    "< I_a I_b I_c >": ("Incentral Triangle △I_a I_b I_c", "Cevian triangle of Incenter X(1) (angle bisector feet)"),
+    "< J_a J_b J_c >": ("Excentral Triangle △J_a J_b J_c", "Anticevian triangle of Incenter X(1) (the three excenters)"),
+    "< K_a K_b K_c >": ("Anticomplementary Triangle △K_a K_b K_c", "Formed by lines through A, B, C parallel to opposite sides"),
+    "< Tan_a Tan_b Tan_c >": ("Tangential Triangle △Tan_a Tan_b Tan_c", "Bounded by tangents to the circumcircle at A, B, C"),
+    "< Sym_a Sym_b Sym_c >": ("Symmedial Triangle △Sym_a Sym_b Sym_c", "Cevian triangle of Symmedian Point X(6)"),
+    "< Eu_a Eu_b Eu_c >": ("Euler (Feuerbach) Triangle △Eu_a Eu_b Eu_c", "Midpoints of segments joining A, B, C to Orthocenter X(4)"),
+    "< Ref_a Ref_b Ref_c >": ("Reflection Triangle △Ref_a Ref_b Ref_c", "Reflections of vertices A, B, C across opposite sidelines"),
+    "< P_a P_b P_c >": ("Cevian Triangle △P_a P_b P_c", "Traces of cevians through target center on BC, CA, AB"),
+    "< A' B' C' >": ("Auxiliary Triangle △A'B'C'", "Derived triangle"),
+    "< Nap_a Nap_b Nap_c >": ("Outer Napoleon Triangle △Nap_a Nap_b Nap_c", "Equilateral triangle formed by centers of outward side equilateral triangles"),
+    "< Nap'_a Nap'_b Nap'_c >": ("Inner Napoleon Triangle △Nap'_a Nap'_b Nap'_c", "Equilateral triangle formed by centers of inward side equilateral triangles"),
     "< N_A N_B N_C >": ("Napoleon Triangle △N_A N_B N_C", "Equilateral triangle formed by centers of side equilateral triangles"),
     "< B C A' >": ("Equilateral Triangle on BC", "Equilateral triangle erected on side BC"),
     "< C A B' >": ("Equilateral Triangle on CA", "Equilateral triangle erected on side CA"),
@@ -1151,7 +1262,7 @@ def render_model_svg(
     min_y, max_y = float("inf"), float("-inf")
 
     for p in points_by_id.values():
-        if p["guide"]:
+        if p["guide"] or "incident" in p["classes"]:
             continue
         # Guard against extreme far-out points dwarfing the reference triangle
         if abs(p["x"]) <= 4.5 and abs(p["y"]) <= 4.5:
@@ -1160,8 +1271,19 @@ def render_model_svg(
             min_y = min(min_y, p["y"])
             max_y = max(max_y, p["y"])
 
+    # Also include vertices of primary (non-incident) polygons if reasonably bounded
+    for poly in elements:
+        if poly["type"] == "polygon" and "incident" not in poly["classes"]:
+            for pid in poly["points"]:
+                pt = points_by_id.get(pid)
+                if pt and abs(pt["x"]) <= 3.0 and abs(pt["y"]) <= 3.0:
+                    min_x = min(min_x, pt["x"])
+                    max_x = max(max_x, pt["x"])
+                    min_y = min(min_y, pt["y"])
+                    max_y = max(max_y, pt["y"])
+
     for c in elements:
-        if c["type"] == "circle" and not c["guide"]:
+        if c["type"] == "circle" and not c["guide"] and "incident" not in c["classes"]:
             ctr = points_by_id.get(c["center"])
             r = c["radius"]
             if ctr and r <= 3.5:
@@ -1295,6 +1417,8 @@ def render_model_svg(
                     if is_target
                     else ("given-label" if "given" in el["classes"] else "point-label")
                 )
+                if "incident" in el["classes"]:
+                    lbl_cls += " incident"
                 ox_px = 12.0
                 oy_px = -10.5
                 if raw_id == "A":
@@ -1323,7 +1447,13 @@ def render_model_svg(
         )
 
     vb_str = f"{vb_x:.6f} {vb_y:.6f} {vb_width:.6f} {vb_height:.6f}"
-    meta_json = json.dumps(catalog, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    meta_json = (
+        json.dumps(catalog, ensure_ascii=False, separators=(",", ":"))
+        .replace("&", "\\u0026")
+        .replace("<", "\\u003c")
+        .replace(">", "\\u003e")
+    )
+
 
     svg_lines = [
         '<?xml version="1.0" encoding="UTF-8" standalone="no"?>',

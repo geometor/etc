@@ -102,7 +102,7 @@ Founder of the Hyacinthos, Anopolis, and Euclid geometry research forums; propos
 Douglas Richard Hofstadter (b. 1945)
 ------------------------------------
 
-Cognitive scientist and geometer who discovered the Hofstadter points, including the Hofstadter zero point X(359) and one point X(360).
+Cognitive scientist and geometer who discovered the Hofstadter points, including the Hofstadter zero point :ref:`X(359) <X(359)>` and one point :ref:`X(360) <X(360)>`.
 
 .. _person-randy-hutson:
 .. _randy-hutson:
@@ -206,7 +206,7 @@ Geometer and discoverer of generalizations of the Simson line, Napoleon configur
 Cyril F. Parry (1915–1999)
 --------------------------
 
-British geometer who discovered the Parry point X(111), the Parry circle, and the Parry reflection property.
+British geometer who discovered the Parry point :ref:`X(111) <X(111)>`, the Parry circle, and the Parry reflection property.
 
 .. _person-stanley-rabinowitz:
 .. _stanley-rabinowitz:
@@ -262,7 +262,7 @@ Creator of MathWorld, providing extensive cross-linked articles and illustration
 Peter Yff (1924–2016)
 ---------------------
 
-Geometer who discovered the Yff center of congruence X(174), Yff parabolic point X(190), and Yff central triangles.
+Geometer who discovered the Yff center of congruence :ref:`X(174) <X(174)>`, Yff parabolic point :ref:`X(190) <X(190)>`, and Yff central triangles.
 
 .. _person-paul-yiu:
 .. _paul-yiu:

@@ -14,7 +14,6 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     incenter_of,
-    incircle,
     isogonal_conjugate,
     promote_point_to_top,
     spieker_center_of,
@@ -27,18 +26,17 @@ def construct_x_00058(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(58) = ISOGONAL CONJUGATE OF X(10) on reference triangle ABC."""
-    incircle(model, A, B, C)
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
-    central_line(model, X_3, X_6, 3, 6)
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
-    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X(21)", classes=["center"])
-    central_line(model, X_1, X_21, 1, 21)
-    X_28 = eval_trilinear_point(model, A, B, C, '(tan(A))/(b + c)', ID="X(28)", classes=["center"])
-    X_34 = eval_trilinear_point(model, A, B, C, '1 - sec(A)', ID="X(34)", classes=["center"])
-    central_line(model, X_28, X_34, 28, 34)
     X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["center"])
     X_58 = isogonal_conjugate(model, A, B, C, X_10, ID="X(58)", classes=["selected", "target"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
+    central_line(model, X_3, X_6, 3, 6, incident=True)
+    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
+    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X(21)", classes=["center", "incident"])
+    central_line(model, X_1, X_21, 1, 21, incident=True)
+    X_28 = eval_trilinear_point(model, A, B, C, '(tan(A))/(b + c)', ID="X(28)", classes=["center", "incident"])
+    X_34 = eval_trilinear_point(model, A, B, C, '1 - sec(A)', ID="X(34)", classes=["center", "incident"])
+    central_line(model, X_28, X_34, 28, 34, incident=True)
     return promote_point_to_top(model, X_58)
 
 

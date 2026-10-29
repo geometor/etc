@@ -26,16 +26,16 @@ def construct_x_00007(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(7) = GERGONNE POINT on reference triangle ABC."""
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
-    X_9 = mittenpunkt_of(model, A, B, C, ID="X(9)", classes=["center"])
-    central_line(model, X_2, X_9, 2, 9)
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
-    X_20 = eval_trilinear_point(model, A, B, C, 'cos(A) - cos(B)*cos(C)', ID="X(20)", classes=["center"])
-    central_line(model, X_1, X_20, 1, 20)
-    X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center"])
-    X_65 = eval_trilinear_point(model, A, B, C, 'cos(B) + cos(C)', ID="X(65)", classes=["center"])
-    central_line(model, X_8, X_65, 8, 65)
     X_7 = gergonne_point_of(model, A, B, C, ID="X(7)", classes=["selected", "target"], draw_cevians=True)
+    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
+    X_9 = mittenpunkt_of(model, A, B, C, ID="X(9)", classes=["center", "incident"])
+    central_line(model, X_2, X_9, 2, 9, incident=True)
+    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
+    X_20 = eval_trilinear_point(model, A, B, C, 'cos(A) - cos(B)*cos(C)', ID="X(20)", classes=["center", "incident"])
+    central_line(model, X_1, X_20, 1, 20, incident=True)
+    X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center", "incident"])
+    X_65 = eval_trilinear_point(model, A, B, C, 'cos(B) + cos(C)', ID="X(65)", classes=["center", "incident"])
+    central_line(model, X_8, X_65, 8, 65, incident=True)
     return promote_point_to_top(model, X_7)
 
 

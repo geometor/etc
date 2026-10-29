@@ -25,22 +25,22 @@ def construct_x_00003(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(3) = CIRCUMCENTER on reference triangle ABC."""
+    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["selected", "target"], draw_bisectors=True, draw_circumcircle=True)
     X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
     X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center"])
     central_line(model, X_2, X_4, 2, 4)
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
-    X_15 = eval_trilinear_point(model, A, B, C, 'sin(A + pi /3)', ID="X(15)", classes=["center"])
-    central_line(model, X_6, X_15, 6, 15)
-    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /3)', ID="X(13)", classes=["center"])
-    X_17 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /6)', ID="X(17)", classes=["center"])
-    central_line(model, X_13, X_17, 13, 17)
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["selected", "target"], draw_bisectors=True, draw_circumcircle=True)
+    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
+    X_15 = eval_trilinear_point(model, A, B, C, 'sin(A + pi /3)', ID="X(15)", classes=["center", "incident"])
+    central_line(model, X_6, X_15, 6, 15, incident=True)
+    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /3)', ID="X(13)", classes=["center", "incident"])
+    X_17 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /6)', ID="X(17)", classes=["center", "incident"])
+    central_line(model, X_13, X_17, 13, 17, incident=True)
     return promote_point_to_top(model, X_3)
 
 
 def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
-    show_guides: bool = True,
+    show_guides: bool = False,
 ) -> Model:
     """Build a `geometor.model.Model` for X(3) on the given reference triangle."""
     model = create_model('X(3) = CIRCUMCENTER')

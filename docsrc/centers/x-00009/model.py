@@ -14,14 +14,11 @@ from geometor.etc.ops import (
     create_model,
     gergonne_point_of,
     incenter_of,
-    incircle,
-    medial_triangle,
     mittenpunkt_of,
     orthocenter_of,
     promote_point_to_top,
     spieker_center_of,
     symmedian_point_of,
-    tangential_triangle,
 )
 from geometor.etc.render import write_center_svg
 
@@ -30,19 +27,16 @@ def construct_x_00009(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(9) = MITTENPUNKT on reference triangle ABC."""
-    medial_triangle(model, A, B, C)
-    incircle(model, A, B, C)
-    tangential_triangle(model, A, B, C)
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
-    central_line(model, X_1, X_6, 1, 6)
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
-    X_7 = gergonne_point_of(model, A, B, C, ID="X(7)", classes=["center"])
-    central_line(model, X_2, X_7, 2, 7)
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center"])
-    X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["center"])
-    central_line(model, X_4, X_10, 4, 10)
     X_9 = mittenpunkt_of(model, A, B, C, ID="X(9)", classes=["selected", "target"])
+    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
+    central_line(model, X_1, X_6, 1, 6, incident=True)
+    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
+    X_7 = gergonne_point_of(model, A, B, C, ID="X(7)", classes=["center", "incident"])
+    central_line(model, X_2, X_7, 2, 7, incident=True)
+    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
+    X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["center", "incident"])
+    central_line(model, X_4, X_10, 4, 10, incident=True)
     return promote_point_to_top(model, X_9)
 
 

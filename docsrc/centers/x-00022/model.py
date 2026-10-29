@@ -15,7 +15,6 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     promote_point_to_top,
-    tangential_triangle,
 )
 from geometor.etc.render import write_center_svg
 
@@ -24,11 +23,16 @@ def construct_x_00022(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(22) = EXETER POINT on reference triangle ABC."""
-    tangential_triangle(model, A, B, C)
+    X_22 = eval_trilinear_point(model, A, B, C, 'a*(b**(4) + c**(4) - a**(4))', ID="X(22)", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
-    X_22 = eval_trilinear_point(model, A, B, C, 'a*(b**(4) + c**(4) - a**(4))', ID="X(22)", classes=["selected", "target"])
+    X_69 = eval_trilinear_point(model, A, B, C, '(cos(A))/a**(2)', ID="X(69)", classes=["center", "incident"])
+    X_159 = eval_trilinear_point(model, A, B, C, 'a*((a**(2)+ b**(2)+ c**(2))*sin(2*A) + (c**(2)- b**(2)- a**(2))*sin(2*B) + (b**(2)- c**(2)- a**(2))*sin(2*C))', ID="X(159)", classes=["center", "incident"])
+    central_line(model, X_69, X_159, 69, 159, incident=True)
+    X_51 = eval_trilinear_point(model, A, B, C, 'a**(2)*cos(B - C)', ID="X(51)", classes=["center", "incident"])
+    X_182 = eval_trilinear_point(model, A, B, C, 'cos(A- omega )', ID="X(182)", classes=["center", "incident"])
+    central_line(model, X_51, X_182, 51, 182, incident=True)
     return promote_point_to_top(model, X_22)
 
 

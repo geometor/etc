@@ -15,7 +15,7 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     promote_point_to_top,
-    tangential_triangle,
+    symmedian_point_of,
 )
 from geometor.etc.render import write_center_svg
 
@@ -24,11 +24,16 @@ def construct_x_00026(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(26) = CIRCUMCENTER OF THE TANGENTIAL TRIANGLE on reference triangle ABC."""
-    tangential_triangle(model, A, B, C)
+    X_26 = eval_trilinear_point(model, A, B, C, 'a*(b**(2)*cos(2*B) + c**(2)*cos(2*C) - a**(2)*cos(2*A))', ID="X(26)", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
-    X_26 = eval_trilinear_point(model, A, B, C, 'a*(b**(2)*cos(2*B) + c**(2)*cos(2*C) - a**(2)*cos(2*A))', ID="X(26)", classes=["selected", "target"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
+    X_143 = eval_trilinear_point(model, A, B, C, '(sec(A))*(cos(2*C - 2*A) + cos(2*A - 2*B))', ID="X(143)", classes=["center", "incident"])
+    central_line(model, X_6, X_143, 6, 143, incident=True)
+    X_68 = eval_trilinear_point(model, A, B, C, 'cos(A)*sec(2*A)', ID="X(68)", classes=["center", "incident"])
+    X_161 = eval_trilinear_point(model, A, B, C, 'a*((a**(2)+ b**(2)+ c**(2))*(sin(2*A))**(2) + (c**(2)- b**(2)- a**(2))*(sin(2*B))**(2) + (b**(2)- c**(2)- a**(2))*(sin(2*C))**(2))', ID="X(161)", classes=["center", "incident"])
+    central_line(model, X_68, X_161, 68, 161, incident=True)
     return promote_point_to_top(model, X_26)
 
 

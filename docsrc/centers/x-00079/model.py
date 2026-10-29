@@ -13,7 +13,6 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     incenter_of,
-    isogonal_conjugate,
     mittenpunkt_of,
     promote_point_to_top,
 )
@@ -24,17 +23,16 @@ def construct_x_00079(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(79) = ISOGONAL CONJUGATE OF X(35) on reference triangle ABC."""
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
-    X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X(30)", classes=["center"])
-    central_line(model, X_1, X_30, 1, 30)
-    X_9 = mittenpunkt_of(model, A, B, C, ID="X(9)", classes=["center"])
-    X_46 = eval_trilinear_point(model, A, B, C, 'cos(B) + cos(C) - cos(A)', ID="X(46)", classes=["center"])
-    central_line(model, X_9, X_46, 9, 46)
-    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X(21)", classes=["center"])
-    X_36 = eval_trilinear_point(model, A, B, C, '1 - 2*cos(A)', ID="X(36)", classes=["center"])
-    central_line(model, X_21, X_36, 21, 36)
-    X_35 = eval_trilinear_point(model, A, B, C, '1 + 2*cos(A)', ID="X(35)", classes=["center"])
-    X_79 = isogonal_conjugate(model, A, B, C, X_35, ID="X(79)", classes=["selected", "target"])
+    X_79 = eval_trilinear_point(model, A, B, C, '1/(1 + 2*cos(A))', ID="X(79)", classes=["selected", "target"])
+    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
+    X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X(30)", classes=["center", "incident"])
+    central_line(model, X_1, X_30, 1, 30, incident=True)
+    X_9 = mittenpunkt_of(model, A, B, C, ID="X(9)", classes=["center", "incident"])
+    X_46 = eval_trilinear_point(model, A, B, C, 'cos(B) + cos(C) - cos(A)', ID="X(46)", classes=["center", "incident"])
+    central_line(model, X_9, X_46, 9, 46, incident=True)
+    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X(21)", classes=["center", "incident"])
+    X_36 = eval_trilinear_point(model, A, B, C, '1 - 2*cos(A)', ID="X(36)", classes=["center", "incident"])
+    central_line(model, X_21, X_36, 21, 36, incident=True)
     return promote_point_to_top(model, X_79)
 
 
