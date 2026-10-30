@@ -9,9 +9,9 @@
   <title>changelog &mdash; geometor • etc</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=51fa7472" />
+  <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=3d8cc37d" />
   <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -20,7 +20,7 @@
   <link rel="icon" href="_static/favicon.ico" />
 </head>
 
-<body>
+<body class="book-theme-classical-serif">
   <header>
     <div class="logo">
       <a href="index.html">
@@ -58,98 +58,107 @@
     </nav>
     <div class="motto"></div>
   </header>
-  <main>
-    <article>
-      <header>
-      <nav class="breadcrumbs">
-        <span><a href="index.html">Home</a></span>
-      </nav>
-        <nav class="context">
-          <div class="prev">
-             <a href="todos/expand_clark_kimberling.html" title="Expand Clark Kimberling" >Prev</a>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="index.html" title="Return to Project Portal">&larr; etc</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="index.html">geometor • etc</a>
           </div>
-          <div class="next">
-            <a href="connect.html" title="connect" >Next</a>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="todos/expand_clark_kimberling.html" title="Expand Clark Kimberling">&larr; <span class="nav-label">Prev</span></a>
           </div>
-        </nav>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="connect.html" title="connect"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
       </header>
-      <div class="content body" role="main">
+      <div class="content body book-content" role="main">
         <section class="level-1" id="changelog">
-          <h1>changelog<a class="headerlink" href="#changelog" title="Link to this heading">¶</a></h1>
-          <dl class="field-list simple">
-          <dt class="field-odd">project<span class="colon">:</span></dt>
-          <dd class="field-odd"><p>geometor.etc</p>
-          </dd>
-          </dl>
-          <section class="level-2" id="id1">
-          <h2>0.1.3<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
-          <ul class="simple">
-          <li><p>Adopted the Book Codex layout (<cite>:layout: book</cite>) across <cite>docsrc/centers/</cite> and the scholarly apparatus (<cite>glossary.rst</cite>, <cite>persons.rst</cite>, <cite>bibliography.rst</cite>).</p></li>
-          <li><p>Added a 2-track companion switcher (<cite>Overview</cite> | <cite>Code</cite>) generating per-center <cite>code.rst</cite> pages alongside <cite>index.rst</cite>.</p></li>
-          <li><p>Extracted primary geometric definitions into <cite>.. enunciation::</cite> banners (powering collection excerpts and <cite>:ref:</cite> tooltips) and consolidated primary coordinates into a compact <cite>.. signature:: center</cite> card.</p></li>
-          <li><p>Organized secondary apparatus into collapsible <cite>.. collapse::</cite> sections (<cite>Alternate Coordinates</cite>, <cite>Linear Combinations</cite>, <cite>Incident Central Lines</cite>, and <cite>Functional Relations</cite>) with count badges.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id2">
-          <h2>0.1.2<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
-          <ul class="simple">
-          <li><p>Simplified initial center graphics into a focused primary construction layer showing only the specific defining geometric relationship (and the golden Euler line whenever $X(n)$ lies on the Euler line).</p></li>
-          <li><p>Added a <cite>Lines</cite> toolbar toggle button to show/hide incident central lines <cite>{i, j}</cite> and their defining centers across all 4 reference triangle tabs.</p></li>
-          <li><p>Escaped XML special characters (<cite>&lt;</cite>, <cite>&gt;</cite>, <cite>&amp;</cite>) as JSON unicode sequences in embedded SVG metadata so collection page <cite>&lt;img&gt;</cite> thumbnails pass strict XML validation.</p></li>
-          <li><p>Expanded coordinate/incidence resolution and generated documentation and interactive graphics for <cite>X(1)</cite> through <cite>X(1000)</cite>.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id3">
-          <h2>0.1.1<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
-          <ul class="simple">
-          <li><p>Added interactive Explorer-styled SVG controls (zoom, pan, reset, label/guide toggles) and native topmost element hover highlighting with named points, lines, circles, and triangles.</p></li>
-          <li><p>Scaled point radii and label typography $1.5times$ for legibility.</p></li>
-          <li><p>Unified reference triangle graphics into a 4-tab graphics panel (<cite>5, 6, 7</cite>, <cite>3, 4, 5</cite>, <cite>Kepler</cite>, and <cite>Kimberling</cite>) on center pages while keeping static thumbnails on collection pages.</p></li>
-          <li><p>Added projective limit fallback evaluation and coincident point handling for right triangles (<cite>3, 4, 5</cite> and <cite>Kepler</cite>).</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id4">
-          <h2>0.1.0<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
-          <ul class="simple">
-          <li><p>Added semantic parser, glossary/person/citation registries, composable triangle construction operators (<cite>ops.py</cite>), and per-center folders with <cite>model.py</cite>, <cite>x-NNNNN.json</cite>, and <cite>x-NNNNN.svg</cite>.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id5">
-          <h2>0.0.2<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
-          <ul class="simple">
-          <li><p>Refined docstrings and type hinting.</p></li>
-          <li><p>Fixed <cite>from __future__ import annotations</cite> placement.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id6">
-          <h2>0.0.1<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
-          <dl class="field-list simple">
-          <dt class="field-odd">init<span class="colon">:</span></dt>
-          <dd class="field-odd"><p>2025.330</p>
-          </dd>
-          <dt class="field-even">merge<span class="colon">:</span></dt>
-          <dd class="field-even"><p></p></dd>
-          <dt class="field-odd">pub<span class="colon">:</span></dt>
-          <dd class="field-odd"><p>index for the encyclopedia of triangle centers</p>
-          </dd>
-          </dl>
-          <ul class="simple">
-          <li><p>initalize project</p></li>
-          </ul>
-          </section>
-          </section>
+        <h1>changelog<a class="headerlink" href="#changelog" title="Link to this heading">¶</a></h1>
+        <dl class="field-list simple">
+        <dt class="field-odd">project<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>geometor.etc</p>
+        </dd>
+        </dl>
+        <section class="level-2" id="id1">
+        <h2>0.1.3<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+        <ul class="simple">
+        <li><p>Adopted the Book Codex layout (<cite>:layout: book</cite>) across <cite>docsrc/centers/</cite> and the scholarly apparatus (<cite>glossary.rst</cite>, <cite>persons.rst</cite>, <cite>bibliography.rst</cite>).</p></li>
+        <li><p>Added a 2-track companion switcher (<cite>Overview</cite> | <cite>Code</cite>) generating per-center <cite>code.rst</cite> pages alongside <cite>index.rst</cite>.</p></li>
+        <li><p>Extracted primary geometric definitions into <cite>.. enunciation::</cite> banners (powering collection excerpts and <cite>:ref:</cite> tooltips) and consolidated primary coordinates into a compact <cite>.. signature:: center</cite> card.</p></li>
+        <li><p>Organized secondary apparatus into collapsible <cite>.. collapse::</cite> sections (<cite>Alternate Coordinates</cite>, <cite>Linear Combinations</cite>, <cite>Incident Central Lines</cite>, and <cite>Functional Relations</cite>) with count badges.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id2">
+        <h2>0.1.2<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+        <ul class="simple">
+        <li><p>Simplified initial center graphics into a focused primary construction layer showing only the specific defining geometric relationship (and the golden Euler line whenever $X(n)$ lies on the Euler line).</p></li>
+        <li><p>Added a <cite>Lines</cite> toolbar toggle button to show/hide incident central lines <cite>{i, j}</cite> and their defining centers across all 4 reference triangle tabs.</p></li>
+        <li><p>Escaped XML special characters (<cite>&lt;</cite>, <cite>&gt;</cite>, <cite>&amp;</cite>) as JSON unicode sequences in embedded SVG metadata so collection page <cite>&lt;img&gt;</cite> thumbnails pass strict XML validation.</p></li>
+        <li><p>Expanded coordinate/incidence resolution and generated documentation and interactive graphics for <cite>X(1)</cite> through <cite>X(1000)</cite>.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id3">
+        <h2>0.1.1<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+        <ul class="simple">
+        <li><p>Added interactive Explorer-styled SVG controls (zoom, pan, reset, label/guide toggles) and native topmost element hover highlighting with named points, lines, circles, and triangles.</p></li>
+        <li><p>Scaled point radii and label typography $1.5times$ for legibility.</p></li>
+        <li><p>Unified reference triangle graphics into a 4-tab graphics panel (<cite>5, 6, 7</cite>, <cite>3, 4, 5</cite>, <cite>Kepler</cite>, and <cite>Kimberling</cite>) on center pages while keeping static thumbnails on collection pages.</p></li>
+        <li><p>Added projective limit fallback evaluation and coincident point handling for right triangles (<cite>3, 4, 5</cite> and <cite>Kepler</cite>).</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id4">
+        <h2>0.1.0<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+        <ul class="simple">
+        <li><p>Added semantic parser, glossary/person/citation registries, composable triangle construction operators (<cite>ops.py</cite>), and per-center folders with <cite>model.py</cite>, <cite>x-NNNNN.json</cite>, and <cite>x-NNNNN.svg</cite>.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id5">
+        <h2>0.0.2<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+        <ul class="simple">
+        <li><p>Refined docstrings and type hinting.</p></li>
+        <li><p>Fixed <cite>from __future__ import annotations</cite> placement.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id6">
+        <h2>0.0.1<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
+        <dl class="field-list simple">
+        <dt class="field-odd">init<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>2025.330</p>
+        </dd>
+        <dt class="field-even">merge<span class="colon">:</span></dt>
+        <dd class="field-even"><p></p></dd>
+        <dt class="field-odd">pub<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>index for the encyclopedia of triangle centers</p>
+        </dd>
+        </dl>
+        <ul class="simple">
+        <li><p>initalize project</p></li>
+        </ul>
+        </section>
+        </section>
 
       </div>
-      <footer>
-
-        <nav class="context">
-          <div class="prev">
-             <a href="todos/expand_clark_kimberling.html" title="Expand Clark Kimberling" >Prev</a>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="todos/expand_clark_kimberling.html" title="Expand Clark Kimberling">&larr; <span class="nav-label">Expand Clark Kimberling</span></a>
           </div>
-          <div class="next">
-            <a href="connect.html" title="connect" >Next</a>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="index.html">geometor • etc</a>
           </div>
-        </nav>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="connect.html" title="connect"><span class="nav-label">connect</span> &rarr;</a>
+          </div>
+        </div>
       </footer>
     </article>
   </main>

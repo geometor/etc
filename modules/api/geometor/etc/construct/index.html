@@ -9,9 +9,9 @@
   <title>geometor.etc.construct &mdash; geometor • etc</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=51fa7472" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=3d8cc37d" />
   <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -20,7 +20,7 @@
   <link rel="icon" href="../../../../../_static/favicon.ico" />
 </head>
 
-<body>
+<body class="book-theme-classical-serif">
   <header>
     <div class="logo">
       <a href="../../../../../index.html">
@@ -52,258 +52,268 @@
           <a href="../../../../../mission/index.html"  >mission</a>
         </li>
         <li>
-          <a href="../../../../index.html"  >modules</a>
+          <a href="../../../../index.html" class="is-active" aria-selected="true" >modules</a>
         </li>
       </ul>
     </nav>
     <div class="motto"></div>
   </header>
-  <main>
-    <article>
-      <header>
-      <nav class="breadcrumbs">
-        <span><a href="../../../../../index.html">Home</a></span>
-          <span>/</span>
-        <span><a href="../../../../index.html">modules</a></span>
-      </nav>
-        <nav class="context">
-          <div class="prev">
-             <a href="../__main__/index.html" title="geometor.etc.__main__" >Prev</a>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../../../index.html" title="Return to Project Portal">&larr; etc</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../../../../index.html">geometor • etc</a>
           </div>
-          <div class="next">
-            <a href="../glossary/index.html" title="geometor.etc.glossary" >Next</a>
+          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Breadcrumbs">
+            <a class="book-crumb-link" href="../../../../index.html">modules</a>
           </div>
-        </nav>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../__main__/index.html" title="geometor.etc.__main__">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../glossary/index.html" title="geometor.etc.glossary"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
       </header>
-      <div class="content body" role="main">
+      <div class="content body book-content" role="main">
         <section class="level-1" id="module-geometor.etc.construct">
-          <span id="geometor-etc-construct"></span><h1>geometor.etc.construct<a class="headerlink" href="#module-geometor.etc.construct" title="Link to this heading">¶</a></h1>
-          <p>Symbolic and numerical geometric construction engine for ETC triangle centers using <cite>geometor.model</cite>.</p>
-          <section class="level-2" id="attributes">
-          <h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
-          <table class="autosummary longtable docutils align-default">
-          <tbody>
-          <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.construct.TRIANGLE_PRESETS" title="geometor.etc.construct.TRIANGLE_PRESETS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TRIANGLE_PRESETS</span></code></a></p></td>
-          <td><p></p></td>
-          </tr>
-          </tbody>
-          </table>
-          </section>
-          <section class="level-2" id="classes">
-          <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
-          <table class="autosummary longtable docutils align-default">
-          <tbody>
-          <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.construct.TriangleContext" title="geometor.etc.construct.TriangleContext"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TriangleContext</span></code></a></p></td>
-          <td><p>Precomputed triangle invariants and Cartesian coordinates on the unit baseline AB (c = 1).</p></td>
-          </tr>
-          <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.construct.CenterRegistry" title="geometor.etc.construct.CenterRegistry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CenterRegistry</span></code></a></p></td>
-          <td><p>Evaluates and caches barycentric and Cartesian coordinates for ETC centers on a TriangleContext.</p></td>
-          </tr>
-          </tbody>
-          </table>
-          </section>
-          <section class="level-2" id="functions">
-          <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
-          <table class="autosummary longtable docutils align-default">
-          <tbody>
-          <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.construct.build_center_model" title="geometor.etc.construct.build_center_model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">build_center_model</span></code></a>(→ geometor.model.Model)</p></td>
-          <td><p>Build a <cite>geometor.model.Model</cite> for <cite>center_data</cite> with a clean primary construction and toggleable <cite>.incident</cite> lines.</p></td>
-          </tr>
-          <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.construct.generate_center_model_py" title="geometor.etc.construct.generate_center_model_py"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_center_model_py</span></code></a>(→ str)</p></td>
-          <td><p>Generate a standalone, composable <cite>geometor.model</cite> Python script (<cite>model.py</cite>) for <cite>center_data</cite>.</p></td>
-          </tr>
-          </tbody>
-          </table>
-          </section>
-          <section class="level-2" id="module-contents">
-          <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
-          <dl class="py data">
-          <dt class="sig sig-object py" id="geometor.etc.construct.TRIANGLE_PRESETS">
-          <span class="sig-prename descclassname"><span class="pre">geometor.etc.construct.</span></span><span class="sig-name descname"><span class="pre">TRIANGLE_PRESETS</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.construct.TRIANGLE_PRESETS" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <span id="geometor-etc-construct"></span><h1>geometor.etc.construct<a class="headerlink" href="#module-geometor.etc.construct" title="Link to this heading">¶</a></h1>
+        <p>Symbolic and numerical geometric construction engine for ETC triangle centers using <cite>geometor.model</cite>.</p>
+        <section class="level-2" id="attributes">
+        <h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.construct.TRIANGLE_PRESETS" title="geometor.etc.construct.TRIANGLE_PRESETS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TRIANGLE_PRESETS</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="classes">
+        <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.construct.TriangleContext" title="geometor.etc.construct.TriangleContext"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TriangleContext</span></code></a></p></td>
+        <td><p>Precomputed triangle invariants and Cartesian coordinates on the unit baseline AB (c = 1).</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.construct.CenterRegistry" title="geometor.etc.construct.CenterRegistry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CenterRegistry</span></code></a></p></td>
+        <td><p>Evaluates and caches barycentric and Cartesian coordinates for ETC centers on a TriangleContext.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.construct.build_center_model" title="geometor.etc.construct.build_center_model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">build_center_model</span></code></a>(→ geometor.model.Model)</p></td>
+        <td><p>Build a <cite>geometor.model.Model</cite> for <cite>center_data</cite> with a clean primary construction and toggleable <cite>.incident</cite> lines.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.construct.generate_center_model_py" title="geometor.etc.construct.generate_center_model_py"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_center_model_py</span></code></a>(→ str)</p></td>
+        <td><p>Generate a standalone, composable <cite>geometor.model</cite> Python script (<cite>model.py</cite>) for <cite>center_data</cite>.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.etc.construct.TRIANGLE_PRESETS">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.construct.</span></span><span class="sig-name descname"><span class="pre">TRIANGLE_PRESETS</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.construct.TRIANGLE_PRESETS" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py class">
-          <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext">
-          <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.etc.construct.</span></span><span class="sig-name descname"><span class="pre">TriangleContext</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#geometor.etc.construct.TriangleContext" title="Link to this definition">¶</a></dt>
-          <dd><p>Precomputed triangle invariants and Cartesian coordinates on the unit baseline AB (c = 1).</p>
-          <dl class="py attribute">
-          <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.raw_a">
-          <span class="sig-name descname"><span class="pre">raw_a</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.raw_a" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.etc.construct.</span></span><span class="sig-name descname"><span class="pre">TriangleContext</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#geometor.etc.construct.TriangleContext" title="Link to this definition">¶</a></dt>
+        <dd><p>Precomputed triangle invariants and Cartesian coordinates on the unit baseline AB (c = 1).</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.raw_a">
+        <span class="sig-name descname"><span class="pre">raw_a</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.raw_a" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py attribute">
-          <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.raw_b">
-          <span class="sig-name descname"><span class="pre">raw_b</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.raw_b" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.raw_b">
+        <span class="sig-name descname"><span class="pre">raw_b</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.raw_b" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py attribute">
-          <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.raw_c">
-          <span class="sig-name descname"><span class="pre">raw_c</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.raw_c" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.raw_c">
+        <span class="sig-name descname"><span class="pre">raw_c</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.raw_c" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py attribute">
-          <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.scale">
-          <span class="sig-name descname"><span class="pre">scale</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.scale" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.scale">
+        <span class="sig-name descname"><span class="pre">scale</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.scale" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py attribute">
-          <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.a">
-          <span class="sig-name descname"><span class="pre">a</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.a" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.a">
+        <span class="sig-name descname"><span class="pre">a</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.a" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py attribute">
-          <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.b">
-          <span class="sig-name descname"><span class="pre">b</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.b" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.b">
+        <span class="sig-name descname"><span class="pre">b</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.b" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py attribute">
-          <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.c">
-          <span class="sig-name descname"><span class="pre">c</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1.0</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.c" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.c">
+        <span class="sig-name descname"><span class="pre">c</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1.0</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.c" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py attribute">
-          <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.A_xy">
-          <span class="sig-name descname"><span class="pre">A_xy</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(0.0,</span> <span class="pre">0.0)</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.A_xy" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.A_xy">
+        <span class="sig-name descname"><span class="pre">A_xy</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(0.0,</span> <span class="pre">0.0)</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.A_xy" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py attribute">
-          <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.B_xy">
-          <span class="sig-name descname"><span class="pre">B_xy</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(1.0,</span> <span class="pre">0.0)</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.B_xy" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.B_xy">
+        <span class="sig-name descname"><span class="pre">B_xy</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(1.0,</span> <span class="pre">0.0)</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.B_xy" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py attribute">
-          <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.C_xy">
-          <span class="sig-name descname"><span class="pre">C_xy</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.C_xy" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.C_xy">
+        <span class="sig-name descname"><span class="pre">C_xy</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.C_xy" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py attribute">
-          <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.s">
-          <span class="sig-name descname"><span class="pre">s</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.s" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.s">
+        <span class="sig-name descname"><span class="pre">s</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.s" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py attribute">
-          <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.area">
-          <span class="sig-name descname"><span class="pre">area</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.area" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.area">
+        <span class="sig-name descname"><span class="pre">area</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.area" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py attribute">
-          <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.R">
-          <span class="sig-name descname"><span class="pre">R</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.R" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.R">
+        <span class="sig-name descname"><span class="pre">R</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.R" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py attribute">
-          <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.r">
-          <span class="sig-name descname"><span class="pre">r</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.r" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.r">
+        <span class="sig-name descname"><span class="pre">r</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.r" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py attribute">
-          <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.A_rad">
-          <span class="sig-name descname"><span class="pre">A_rad</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.A_rad" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.A_rad">
+        <span class="sig-name descname"><span class="pre">A_rad</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.A_rad" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py attribute">
-          <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.B_rad">
-          <span class="sig-name descname"><span class="pre">B_rad</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.B_rad" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.B_rad">
+        <span class="sig-name descname"><span class="pre">B_rad</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.B_rad" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py attribute">
-          <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.C_rad">
-          <span class="sig-name descname"><span class="pre">C_rad</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.C_rad" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.C_rad">
+        <span class="sig-name descname"><span class="pre">C_rad</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.C_rad" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py attribute">
-          <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.omega">
-          <span class="sig-name descname"><span class="pre">omega</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.omega" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.omega">
+        <span class="sig-name descname"><span class="pre">omega</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.omega" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py attribute">
-          <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.eval_envs">
-          <span class="sig-name descname"><span class="pre">eval_envs</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.eval_envs" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.eval_envs">
+        <span class="sig-name descname"><span class="pre">eval_envs</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.eval_envs" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py attribute">
-          <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.perturbed_eval_envs">
-          <span class="sig-name descname"><span class="pre">perturbed_eval_envs</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.perturbed_eval_envs" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.perturbed_eval_envs">
+        <span class="sig-name descname"><span class="pre">perturbed_eval_envs</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.perturbed_eval_envs" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py method">
-          <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.bary_to_cartesian">
-          <span class="sig-name descname"><span class="pre">bary_to_cartesian</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">u</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">v</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">w</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.bary_to_cartesian" title="Link to this definition">¶</a></dt>
-          <dd><p>Convert homogeneous barycentric coordinates (u : v : w) to Cartesian (x, y) on unit AB.</p>
-          </dd></dl>
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.bary_to_cartesian">
+        <span class="sig-name descname"><span class="pre">bary_to_cartesian</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">u</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">v</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">w</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.bary_to_cartesian" title="Link to this definition">¶</a></dt>
+        <dd><p>Convert homogeneous barycentric coordinates (u : v : w) to Cartesian (x, y) on unit AB.</p>
+        </dd></dl>
 
-          <dl class="py method">
-          <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.trilinear_to_bary">
-          <span class="sig-name descname"><span class="pre">trilinear_to_bary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">beta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">gamma</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.trilinear_to_bary" title="Link to this definition">¶</a></dt>
-          <dd><p>Convert homogeneous trilinear coordinates to homogeneous barycentrics.</p>
-          </dd></dl>
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.trilinear_to_bary">
+        <span class="sig-name descname"><span class="pre">trilinear_to_bary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">beta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">gamma</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.trilinear_to_bary" title="Link to this definition">¶</a></dt>
+        <dd><p>Convert homogeneous trilinear coordinates to homogeneous barycentrics.</p>
+        </dd></dl>
 
-          <dl class="py method">
-          <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.normalize_bary">
-          <span class="sig-name descname"><span class="pre">normalize_bary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">u</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">v</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">w</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.normalize_bary" title="Link to this definition">¶</a></dt>
-          <dd><p>Normalize homogeneous barycentrics so u + v + w = 1 (or unit norm if sum is near 0).</p>
-          </dd></dl>
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.normalize_bary">
+        <span class="sig-name descname"><span class="pre">normalize_bary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">u</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">v</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">w</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.normalize_bary" title="Link to this definition">¶</a></dt>
+        <dd><p>Normalize homogeneous barycentrics so u + v + w = 1 (or unit norm if sum is near 0).</p>
+        </dd></dl>
 
-          <dl class="py method">
-          <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.kimberling_search_value">
-          <span class="sig-name descname"><span class="pre">kimberling_search_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">u</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">v</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">w</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.kimberling_search_value" title="Link to this definition">¶</a></dt>
-          <dd><p>Compute Kimberling’s signed distance h_a from X(n) to side BC for raw (a, b, c).</p>
-          </dd></dl>
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.kimberling_search_value">
+        <span class="sig-name descname"><span class="pre">kimberling_search_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">u</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">v</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">w</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.kimberling_search_value" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute Kimberling’s signed distance h_a from X(n) to side BC for raw (a, b, c).</p>
+        </dd></dl>
 
-          </dd></dl>
+        </dd></dl>
 
-          <dl class="py class">
-          <dt class="sig sig-object py" id="geometor.etc.construct.CenterRegistry">
-          <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.etc.construct.</span></span><span class="sig-name descname"><span class="pre">CenterRegistry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">centers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ctx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#geometor.etc.construct.TriangleContext" title="geometor.etc.construct.TriangleContext"><span class="pre">TriangleContext</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#geometor.etc.construct.CenterRegistry" title="Link to this definition">¶</a></dt>
-          <dd><p>Evaluates and caches barycentric and Cartesian coordinates for ETC centers on a TriangleContext.</p>
-          <dl class="py attribute">
-          <dt class="sig sig-object py" id="geometor.etc.construct.CenterRegistry.ctx">
-          <span class="sig-name descname"><span class="pre">ctx</span></span><a class="headerlink" href="#geometor.etc.construct.CenterRegistry.ctx" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.etc.construct.CenterRegistry">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.etc.construct.</span></span><span class="sig-name descname"><span class="pre">CenterRegistry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">centers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ctx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#geometor.etc.construct.TriangleContext" title="geometor.etc.construct.TriangleContext"><span class="pre">TriangleContext</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#geometor.etc.construct.CenterRegistry" title="Link to this definition">¶</a></dt>
+        <dd><p>Evaluates and caches barycentric and Cartesian coordinates for ETC centers on a TriangleContext.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.construct.CenterRegistry.ctx">
+        <span class="sig-name descname"><span class="pre">ctx</span></span><a class="headerlink" href="#geometor.etc.construct.CenterRegistry.ctx" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py attribute">
-          <dt class="sig sig-object py" id="geometor.etc.construct.CenterRegistry.centers_by_num">
-          <span class="sig-name descname"><span class="pre">centers_by_num</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.construct.CenterRegistry.centers_by_num" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.construct.CenterRegistry.centers_by_num">
+        <span class="sig-name descname"><span class="pre">centers_by_num</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.construct.CenterRegistry.centers_by_num" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py attribute">
-          <dt class="sig sig-object py" id="geometor.etc.construct.CenterRegistry.bary_cache">
-          <span class="sig-name descname"><span class="pre">bary_cache</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.construct.CenterRegistry.bary_cache" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.construct.CenterRegistry.bary_cache">
+        <span class="sig-name descname"><span class="pre">bary_cache</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.construct.CenterRegistry.bary_cache" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py attribute">
-          <dt class="sig sig-object py" id="geometor.etc.construct.CenterRegistry.xy_cache">
-          <span class="sig-name descname"><span class="pre">xy_cache</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.construct.CenterRegistry.xy_cache" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.construct.CenterRegistry.xy_cache">
+        <span class="sig-name descname"><span class="pre">xy_cache</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.construct.CenterRegistry.xy_cache" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          </dd></dl>
+        </dd></dl>
 
-          <dl class="py function">
-          <dt class="sig sig-object py" id="geometor.etc.construct.build_center_model">
-          <span class="sig-prename descclassname"><span class="pre">geometor.etc.construct.</span></span><span class="sig-name descname"><span class="pre">build_center_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">center_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">registry</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#geometor.etc.construct.CenterRegistry" title="geometor.etc.construct.CenterRegistry"><span class="pre">CenterRegistry</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_baseline_guides</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">geometor.model.Model</span></span></span><a class="headerlink" href="#geometor.etc.construct.build_center_model" title="Link to this definition">¶</a></dt>
-          <dd><p>Build a <cite>geometor.model.Model</cite> for <cite>center_data</cite> with a clean primary construction and toggleable <cite>.incident</cite> lines.</p>
-          </dd></dl>
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.etc.construct.build_center_model">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.construct.</span></span><span class="sig-name descname"><span class="pre">build_center_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">center_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">registry</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#geometor.etc.construct.CenterRegistry" title="geometor.etc.construct.CenterRegistry"><span class="pre">CenterRegistry</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_baseline_guides</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">geometor.model.Model</span></span></span><a class="headerlink" href="#geometor.etc.construct.build_center_model" title="Link to this definition">¶</a></dt>
+        <dd><p>Build a <cite>geometor.model.Model</cite> for <cite>center_data</cite> with a clean primary construction and toggleable <cite>.incident</cite> lines.</p>
+        </dd></dl>
 
-          <dl class="py function">
-          <dt class="sig sig-object py" id="geometor.etc.construct.generate_center_model_py">
-          <span class="sig-prename descclassname"><span class="pre">geometor.etc.construct.</span></span><span class="sig-name descname"><span class="pre">generate_center_model_py</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">center_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">registry</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#geometor.etc.construct.CenterRegistry" title="geometor.etc.construct.CenterRegistry"><span class="pre">CenterRegistry</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.construct.generate_center_model_py" title="Link to this definition">¶</a></dt>
-          <dd><p>Generate a standalone, composable <cite>geometor.model</cite> Python script (<cite>model.py</cite>) for <cite>center_data</cite>.</p>
-          </dd></dl>
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.etc.construct.generate_center_model_py">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.construct.</span></span><span class="sig-name descname"><span class="pre">generate_center_model_py</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">center_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">registry</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#geometor.etc.construct.CenterRegistry" title="geometor.etc.construct.CenterRegistry"><span class="pre">CenterRegistry</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.construct.generate_center_model_py" title="Link to this definition">¶</a></dt>
+        <dd><p>Generate a standalone, composable <cite>geometor.model</cite> Python script (<cite>model.py</cite>) for <cite>center_data</cite>.</p>
+        </dd></dl>
 
-          </section>
-          </section>
+        </section>
+        </section>
 
       </div>
-      <footer>
-
-        <nav class="context">
-          <div class="prev">
-             <a href="../__main__/index.html" title="geometor.etc.__main__" >Prev</a>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../__main__/index.html" title="geometor.etc.__main__">&larr; <span class="nav-label">geometor.etc.__main__</span></a>
           </div>
-          <div class="next">
-            <a href="../glossary/index.html" title="geometor.etc.glossary" >Next</a>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../../index.html">geometor • etc</a>
           </div>
-        </nav>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../glossary/index.html" title="geometor.etc.glossary"><span class="nav-label">geometor.etc.glossary</span> &rarr;</a>
+          </div>
+        </div>
       </footer>
     </article>
   </main>

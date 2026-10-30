@@ -9,9 +9,9 @@
   <title>modules &mdash; geometor • etc</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../_static/css/styles.css?v=51fa7472" />
+  <link rel="stylesheet" type="text/css" href="../_static/css/styles.css?v=3d8cc37d" />
   <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -20,7 +20,7 @@
   <link rel="icon" href="../_static/favicon.ico" />
 </head>
 
-<body>
+<body class="book-theme-classical-serif">
   <header>
     <div class="logo">
       <a href="../index.html">
@@ -52,136 +52,143 @@
           <a href="../mission/index.html"  >mission</a>
         </li>
         <li>
-          <a href="#" aria-selected="true" aria-current="true">modules</a>
+          <a href="#" class="is-active" aria-selected="true" aria-current="page">modules</a>
         </li>
       </ul>
     </nav>
     <div class="motto"></div>
   </header>
-  <main>
-    <article>
-      <header>
-      <nav class="breadcrumbs">
-        <span><a href="../index.html">Home</a></span>
-      </nav>
-        <nav class="context">
-          <div class="prev">
-             <a href="../mission/enhanced_documentation.html" title="enhanced documentation" >Prev</a>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../index.html" title="Return to Project Portal">&larr; etc</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../index.html">geometor • etc</a>
           </div>
-          <div class="next">
-            <a href="api/geometor/etc/__main__/index.html" title="geometor.etc.__main__" >Next</a>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../mission/enhanced_documentation.html" title="enhanced documentation">&larr; <span class="nav-label">Prev</span></a>
           </div>
-        </nav>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="api/geometor/etc/__main__/index.html" title="geometor.etc.__main__"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
       </header>
-      <div class="content body" role="main">
+      <div class="content body book-content" role="main">
         <section class="level-1" id="modules">
-          <h1>modules<a class="headerlink" href="#modules" title="Link to this heading">¶</a></h1>
-          </section>
-          <section class="level-1" id="module-geometor.etc">
-          <span id="geometor-etc"></span><h1>geometor.etc<a class="headerlink" href="#module-geometor.etc" title="Link to this heading">¶</a></h1>
-          <p>Tools for processing and modeling the Encyclopedia of Triangle Centers (ETC).</p>
-          <section class="level-2" id="key-components">
-          <h2>Key Components:<a class="headerlink" href="#key-components" title="Link to this heading">¶</a></h2>
-          <ul class="simple">
-          <li><p><strong>Ingest</strong>: Tools (<a class="reference internal" href="#geometor.etc.ingest_folder" title="geometor.etc.ingest_folder"><code class="xref py py-func docutils literal notranslate"><span class="pre">ingest_folder()</span></code></a>) to split and organize the raw HTML source.</p></li>
-          <li><p><strong>Parser</strong>: Tools (<a class="reference internal" href="#geometor.etc.parse_center" title="geometor.etc.parse_center"><code class="xref py py-func docutils literal notranslate"><span class="pre">parse_center()</span></code></a>) to extract center data from HTML.</p></li>
-          <li><p><strong>Glossary</strong>: Tools (<a class="reference internal" href="#geometor.etc.extract_glossary_terms" title="geometor.etc.extract_glossary_terms"><code class="xref py py-func docutils literal notranslate"><span class="pre">extract_glossary_terms()</span></code></a>) to handle glossary terms, persons, and citations.</p></li>
-          <li><p><strong>Ops</strong>: Composable Euclidean construction primitives and triangle operators (<a class="reference internal" href="api/geometor/etc/ops/index.html#module-geometor.etc.ops" title="geometor.etc.ops"><code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.etc.ops</span></code></a>).</p></li>
-          <li><p><strong>Construct</strong>: Coordinate/incidence resolver, <cite>Model</cite> builder, and per-center <cite>model.py</cite> generator (<a class="reference internal" href="api/geometor/etc/construct/index.html#module-geometor.etc.construct" title="geometor.etc.construct"><code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.etc.construct</span></code></a>).</p></li>
-          <li><p><strong>Render</strong>: Explorer-styled SVG renderer (<a class="reference internal" href="api/geometor/etc/render/index.html#module-geometor.etc.render" title="geometor.etc.render"><code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.etc.render</span></code></a>).</p></li>
-          <li><p><strong>Transform</strong>: Tools (<a class="reference internal" href="#geometor.etc.generate_rst_files" title="geometor.etc.generate_rst_files"><code class="xref py py-func docutils literal notranslate"><span class="pre">generate_rst_files()</span></code></a>) to generate per-center ReStructuredText folders and graphics.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="usage">
-          <h2>Usage:<a class="headerlink" href="#usage" title="Link to this heading">¶</a></h2>
-          <p>Use the <cite>main</cite> function in <cite>__main__.py</cite> or the individual modules to process ETC data.</p>
-          </section>
-          <section class="level-2" id="submodules">
-          <h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
-          <div class="toctree-wrapper compound">
-          <ul>
-          <li class="toctree-l1"><a class="reference internal" href="api/geometor/etc/__main__/index.html">geometor.etc.__main__</a></li>
-          <li class="toctree-l1"><a class="reference internal" href="api/geometor/etc/construct/index.html">geometor.etc.construct</a></li>
-          <li class="toctree-l1"><a class="reference internal" href="api/geometor/etc/glossary/index.html">geometor.etc.glossary</a></li>
-          <li class="toctree-l1"><a class="reference internal" href="api/geometor/etc/ingest/index.html">geometor.etc.ingest</a></li>
-          <li class="toctree-l1"><a class="reference internal" href="api/geometor/etc/ops/index.html">geometor.etc.ops</a></li>
-          <li class="toctree-l1"><a class="reference internal" href="api/geometor/etc/parser/index.html">geometor.etc.parser</a></li>
-          <li class="toctree-l1"><a class="reference internal" href="api/geometor/etc/render/index.html">geometor.etc.render</a></li>
-          <li class="toctree-l1"><a class="reference internal" href="api/geometor/etc/transform/index.html">geometor.etc.transform</a></li>
-          </ul>
-          </div>
-          </section>
-          <section class="level-2" id="functions">
-          <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
-          <table class="autosummary longtable docutils align-default">
-          <tbody>
-          <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.ingest_folder" title="geometor.etc.ingest_folder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ingest_folder</span></code></a>(→ dict[str, Any])</p></td>
-          <td><p>Ingest all ETC volume HTML files in <cite>input_folder</cite> and write split files to <cite>output_folder</cite>.</p></td>
-          </tr>
-          <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.parse_center" title="geometor.etc.parse_center"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_center</span></code></a>(→ dict[str, Any] | None)</p></td>
-          <td><p>Parse a center's HTML content into a rich structured dictionary.</p></td>
-          </tr>
-          <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.generate_rst_files" title="geometor.etc.generate_rst_files"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_rst_files</span></code></a>(→ None)</p></td>
-          <td><p>Generate per-center folders (<cite>x-NNNNN/</cite>) with <cite>index.rst</cite>, <cite>code.rst</cite>, <cite>model.py</cite>, SVGs, and <cite>geometor.model</cite> JSONs.</p></td>
-          </tr>
-          <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.extract_glossary_terms" title="geometor.etc.extract_glossary_terms"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extract_glossary_terms</span></code></a>(→ dict[str, Any])</p></td>
-          <td><p>Extract all glossary terms, their rich RST bodies, and plain-text summaries from GLOSSARY HTML.</p></td>
-          </tr>
-          <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.generate_glossary_rst" title="geometor.etc.generate_glossary_rst"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_glossary_rst</span></code></a>(→ str)</p></td>
-          <td><p>Generate rich <cite>docsrc/glossary.rst</cite> with deterministic <cite>#term-&lt;slug&gt;</cite> anchors.</p></td>
-          </tr>
-          </tbody>
-          </table>
-          </section>
-          <section class="level-2" id="package-contents">
-          <h2>Package Contents<a class="headerlink" href="#package-contents" title="Link to this heading">¶</a></h2>
-          <dl class="py function">
-          <dt class="sig sig-object py" id="geometor.etc.ingest_folder">
-          <span class="sig-prename descclassname"><span class="pre">geometor.etc.</span></span><span class="sig-name descname"><span class="pre">ingest_folder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_folder</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_folder</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.ingest_folder" title="Link to this definition">¶</a></dt>
-          <dd><p>Ingest all ETC volume HTML files in <cite>input_folder</cite> and write split files to <cite>output_folder</cite>.</p>
-          <p>Returns a summary dictionary with counts of centers, preambles, and intro sections.</p>
-          </dd></dl>
+        <h1>modules<a class="headerlink" href="#modules" title="Link to this heading">¶</a></h1>
+        </section>
+        <section class="level-1" id="module-geometor.etc">
+        <span id="geometor-etc"></span><h1>geometor.etc<a class="headerlink" href="#module-geometor.etc" title="Link to this heading">¶</a></h1>
+        <p>Tools for processing and modeling the Encyclopedia of Triangle Centers (ETC).</p>
+        <section class="level-2" id="key-components">
+        <h2>Key Components:<a class="headerlink" href="#key-components" title="Link to this heading">¶</a></h2>
+        <ul class="simple">
+        <li><p><strong>Ingest</strong>: Tools (<a class="reference internal" href="#geometor.etc.ingest_folder" title="geometor.etc.ingest_folder"><code class="xref py py-func docutils literal notranslate"><span class="pre">ingest_folder()</span></code></a>) to split and organize the raw HTML source.</p></li>
+        <li><p><strong>Parser</strong>: Tools (<a class="reference internal" href="#geometor.etc.parse_center" title="geometor.etc.parse_center"><code class="xref py py-func docutils literal notranslate"><span class="pre">parse_center()</span></code></a>) to extract center data from HTML.</p></li>
+        <li><p><strong>Glossary</strong>: Tools (<a class="reference internal" href="#geometor.etc.extract_glossary_terms" title="geometor.etc.extract_glossary_terms"><code class="xref py py-func docutils literal notranslate"><span class="pre">extract_glossary_terms()</span></code></a>) to handle glossary terms, persons, and citations.</p></li>
+        <li><p><strong>Ops</strong>: Composable Euclidean construction primitives and triangle operators (<a class="reference internal" href="api/geometor/etc/ops/index.html#module-geometor.etc.ops" title="geometor.etc.ops"><code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.etc.ops</span></code></a>).</p></li>
+        <li><p><strong>Construct</strong>: Coordinate/incidence resolver, <cite>Model</cite> builder, and per-center <cite>model.py</cite> generator (<a class="reference internal" href="api/geometor/etc/construct/index.html#module-geometor.etc.construct" title="geometor.etc.construct"><code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.etc.construct</span></code></a>).</p></li>
+        <li><p><strong>Render</strong>: Explorer-styled SVG renderer (<a class="reference internal" href="api/geometor/etc/render/index.html#module-geometor.etc.render" title="geometor.etc.render"><code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.etc.render</span></code></a>).</p></li>
+        <li><p><strong>Transform</strong>: Tools (<a class="reference internal" href="#geometor.etc.generate_rst_files" title="geometor.etc.generate_rst_files"><code class="xref py py-func docutils literal notranslate"><span class="pre">generate_rst_files()</span></code></a>) to generate per-center ReStructuredText folders and graphics.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="usage">
+        <h2>Usage:<a class="headerlink" href="#usage" title="Link to this heading">¶</a></h2>
+        <p>Use the <cite>main</cite> function in <cite>__main__.py</cite> or the individual modules to process ETC data.</p>
+        </section>
+        <section class="level-2" id="submodules">
+        <h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+        <div class="toctree-wrapper compound">
+        <ul>
+        <li class="toctree-l1"><a class="reference internal" href="api/geometor/etc/__main__/index.html">geometor.etc.__main__</a></li>
+        <li class="toctree-l1"><a class="reference internal" href="api/geometor/etc/construct/index.html">geometor.etc.construct</a></li>
+        <li class="toctree-l1"><a class="reference internal" href="api/geometor/etc/glossary/index.html">geometor.etc.glossary</a></li>
+        <li class="toctree-l1"><a class="reference internal" href="api/geometor/etc/ingest/index.html">geometor.etc.ingest</a></li>
+        <li class="toctree-l1"><a class="reference internal" href="api/geometor/etc/ops/index.html">geometor.etc.ops</a></li>
+        <li class="toctree-l1"><a class="reference internal" href="api/geometor/etc/parser/index.html">geometor.etc.parser</a></li>
+        <li class="toctree-l1"><a class="reference internal" href="api/geometor/etc/render/index.html">geometor.etc.render</a></li>
+        <li class="toctree-l1"><a class="reference internal" href="api/geometor/etc/transform/index.html">geometor.etc.transform</a></li>
+        </ul>
+        </div>
+        </section>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.ingest_folder" title="geometor.etc.ingest_folder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ingest_folder</span></code></a>(→ dict[str, Any])</p></td>
+        <td><p>Ingest all ETC volume HTML files in <cite>input_folder</cite> and write split files to <cite>output_folder</cite>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.parse_center" title="geometor.etc.parse_center"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_center</span></code></a>(→ dict[str, Any] | None)</p></td>
+        <td><p>Parse a center's HTML content into a rich structured dictionary.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.generate_rst_files" title="geometor.etc.generate_rst_files"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_rst_files</span></code></a>(→ None)</p></td>
+        <td><p>Generate per-center folders (<cite>x-NNNNN/</cite>) with <cite>index.rst</cite>, <cite>code.rst</cite>, <cite>model.py</cite>, SVGs, and <cite>geometor.model</cite> JSONs.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.extract_glossary_terms" title="geometor.etc.extract_glossary_terms"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extract_glossary_terms</span></code></a>(→ dict[str, Any])</p></td>
+        <td><p>Extract all glossary terms, their rich RST bodies, and plain-text summaries from GLOSSARY HTML.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.generate_glossary_rst" title="geometor.etc.generate_glossary_rst"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_glossary_rst</span></code></a>(→ str)</p></td>
+        <td><p>Generate rich <cite>docsrc/glossary.rst</cite> with deterministic <cite>#term-&lt;slug&gt;</cite> anchors.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="package-contents">
+        <h2>Package Contents<a class="headerlink" href="#package-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.etc.ingest_folder">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.</span></span><span class="sig-name descname"><span class="pre">ingest_folder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_folder</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_folder</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.ingest_folder" title="Link to this definition">¶</a></dt>
+        <dd><p>Ingest all ETC volume HTML files in <cite>input_folder</cite> and write split files to <cite>output_folder</cite>.</p>
+        <p>Returns a summary dictionary with counts of centers, preambles, and intro sections.</p>
+        </dd></dl>
 
-          <dl class="py function">
-          <dt class="sig sig-object py" id="geometor.etc.parse_center">
-          <span class="sig-prename descclassname"><span class="pre">geometor.etc.</span></span><span class="sig-name descname"><span class="pre">parse_center</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">html_content</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#geometor.etc.parse_center" title="Link to this definition">¶</a></dt>
-          <dd><p>Parse a center’s HTML content into a rich structured dictionary.</p>
-          </dd></dl>
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.etc.parse_center">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.</span></span><span class="sig-name descname"><span class="pre">parse_center</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">html_content</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#geometor.etc.parse_center" title="Link to this definition">¶</a></dt>
+        <dd><p>Parse a center’s HTML content into a rich structured dictionary.</p>
+        </dd></dl>
 
-          <dl class="py function">
-          <dt class="sig sig-object py" id="geometor.etc.generate_rst_files">
-          <span class="sig-prename descclassname"><span class="pre">geometor.etc.</span></span><span class="sig-name descname"><span class="pre">generate_rst_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">centers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">glossary_terms</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preambles_by_center</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valid_centers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#set" title="(in Python v3.13)"><span class="pre">set</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">render_graphics</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constructions_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#geometor.etc.generate_rst_files" title="Link to this definition">¶</a></dt>
-          <dd><p>Generate per-center folders (<cite>x-NNNNN/</cite>) with <cite>index.rst</cite>, <cite>code.rst</cite>, <cite>model.py</cite>, SVGs, and <cite>geometor.model</cite> JSONs.</p>
-          </dd></dl>
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.etc.generate_rst_files">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.</span></span><span class="sig-name descname"><span class="pre">generate_rst_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">centers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">glossary_terms</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preambles_by_center</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valid_centers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#set" title="(in Python v3.13)"><span class="pre">set</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">render_graphics</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constructions_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#geometor.etc.generate_rst_files" title="Link to this definition">¶</a></dt>
+        <dd><p>Generate per-center folders (<cite>x-NNNNN/</cite>) with <cite>index.rst</cite>, <cite>code.rst</cite>, <cite>model.py</cite>, SVGs, and <cite>geometor.model</cite> JSONs.</p>
+        </dd></dl>
 
-          <dl class="py function">
-          <dt class="sig sig-object py" id="geometor.etc.extract_glossary_terms">
-          <span class="sig-prename descclassname"><span class="pre">geometor.etc.</span></span><span class="sig-name descname"><span class="pre">extract_glossary_terms</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">html_content</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.extract_glossary_terms" title="Link to this definition">¶</a></dt>
-          <dd><p>Extract all glossary terms, their rich RST bodies, and plain-text summaries from GLOSSARY HTML.</p>
-          </dd></dl>
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.etc.extract_glossary_terms">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.</span></span><span class="sig-name descname"><span class="pre">extract_glossary_terms</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">html_content</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.extract_glossary_terms" title="Link to this definition">¶</a></dt>
+        <dd><p>Extract all glossary terms, their rich RST bodies, and plain-text summaries from GLOSSARY HTML.</p>
+        </dd></dl>
 
-          <dl class="py function">
-          <dt class="sig sig-object py" id="geometor.etc.generate_glossary_rst">
-          <span class="sig-prename descclassname"><span class="pre">geometor.etc.</span></span><span class="sig-name descname"><span class="pre">generate_glossary_rst</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">terms</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">intro_rst</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valid_centers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#set" title="(in Python v3.13)"><span class="pre">set</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.generate_glossary_rst" title="Link to this definition">¶</a></dt>
-          <dd><p>Generate rich <cite>docsrc/glossary.rst</cite> with deterministic <cite>#term-&lt;slug&gt;</cite> anchors.</p>
-          </dd></dl>
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.etc.generate_glossary_rst">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.</span></span><span class="sig-name descname"><span class="pre">generate_glossary_rst</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">terms</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">intro_rst</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valid_centers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#set" title="(in Python v3.13)"><span class="pre">set</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.generate_glossary_rst" title="Link to this definition">¶</a></dt>
+        <dd><p>Generate rich <cite>docsrc/glossary.rst</cite> with deterministic <cite>#term-&lt;slug&gt;</cite> anchors.</p>
+        </dd></dl>
 
-          </section>
-          </section>
+        </section>
+        </section>
 
       </div>
-      <footer>
-
-        <div class="meta">
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../mission/enhanced_documentation.html" title="enhanced documentation">&larr; <span class="nav-label">enhanced documentation</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../index.html">geometor • etc</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="api/geometor/etc/__main__/index.html" title="geometor.etc.__main__"><span class="nav-label">geometor.etc.__main__</span> &rarr;</a>
+          </div>
         </div>
-        <nav class="context">
-          <div class="prev">
-             <a href="../mission/enhanced_documentation.html" title="enhanced documentation" >Prev</a>
-          </div>
-          <div class="next">
-            <a href="api/geometor/etc/__main__/index.html" title="geometor.etc.__main__" >Next</a>
-          </div>
-        </nav>
       </footer>
     </article>
   </main>

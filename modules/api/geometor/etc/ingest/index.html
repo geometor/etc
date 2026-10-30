@@ -9,9 +9,9 @@
   <title>geometor.etc.ingest &mdash; geometor • etc</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=51fa7472" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=3d8cc37d" />
   <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -20,7 +20,7 @@
   <link rel="icon" href="../../../../../_static/favicon.ico" />
 </head>
 
-<body>
+<body class="book-theme-classical-serif">
   <header>
     <div class="logo">
       <a href="../../../../../index.html">
@@ -52,88 +52,98 @@
           <a href="../../../../../mission/index.html"  >mission</a>
         </li>
         <li>
-          <a href="../../../../index.html"  >modules</a>
+          <a href="../../../../index.html" class="is-active" aria-selected="true" >modules</a>
         </li>
       </ul>
     </nav>
     <div class="motto"></div>
   </header>
-  <main>
-    <article>
-      <header>
-      <nav class="breadcrumbs">
-        <span><a href="../../../../../index.html">Home</a></span>
-          <span>/</span>
-        <span><a href="../../../../index.html">modules</a></span>
-      </nav>
-        <nav class="context">
-          <div class="prev">
-             <a href="../glossary/index.html" title="geometor.etc.glossary" >Prev</a>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../../../index.html" title="Return to Project Portal">&larr; etc</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../../../../index.html">geometor • etc</a>
           </div>
-          <div class="next">
-            <a href="../ops/index.html" title="geometor.etc.ops" >Next</a>
+          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Breadcrumbs">
+            <a class="book-crumb-link" href="../../../../index.html">modules</a>
           </div>
-        </nav>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../glossary/index.html" title="geometor.etc.glossary">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../ops/index.html" title="geometor.etc.ops"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
       </header>
-      <div class="content body" role="main">
+      <div class="content body book-content" role="main">
         <section class="level-1" id="module-geometor.etc.ingest">
-          <span id="geometor-etc-ingest"></span><h1>geometor.etc.ingest<a class="headerlink" href="#module-geometor.etc.ingest" title="Link to this heading">¶</a></h1>
-          <p>Ingest raw HTML volumes of the Encyclopedia of Triangle Centers (ETC).</p>
-          <p>Splits <cite>ETC.html</cite> and <cite>ETCPart2.html</cite>..`ETCPart27.html` into:
-          - Individual center HTML files (<cite>x-00001.html</cite> .. <cite>x-53144.html</cite>) in <cite>output_folder</cite>
-          - Inter-center group preambles (<cite>preambles/p-XXXX-x-YYYYY.html</cite> and <cite>preambles.json</cite>)
-          - Part 1 introductory essays (<cite>intro/00-header.html</cite> .. <cite>intro/09-combos.html</cite> and <cite>intros.json</cite>)</p>
-          <section class="level-2" id="functions">
-          <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
-          <table class="autosummary longtable docutils align-default">
-          <tbody>
-          <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.ingest.slugify" title="geometor.etc.ingest.slugify"><code class="xref py py-obj docutils literal notranslate"><span class="pre">slugify</span></code></a>(→ str)</p></td>
-          <td><p>Create a safe filename slug from text.</p></td>
-          </tr>
-          <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.ingest.read_html_source" title="geometor.etc.ingest.read_html_source"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_html_source</span></code></a>(→ str)</p></td>
-          <td><p>Read an ETC HTML file, stripping any binary wrapper bytes and normalizing newlines.</p></td>
-          </tr>
-          <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.ingest.ingest_folder" title="geometor.etc.ingest.ingest_folder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ingest_folder</span></code></a>(→ dict[str, Any])</p></td>
-          <td><p>Ingest all ETC volume HTML files in <cite>input_folder</cite> and write split files to <cite>output_folder</cite>.</p></td>
-          </tr>
-          </tbody>
-          </table>
-          </section>
-          <section class="level-2" id="module-contents">
-          <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
-          <dl class="py function">
-          <dt class="sig sig-object py" id="geometor.etc.ingest.slugify">
-          <span class="sig-prename descclassname"><span class="pre">geometor.etc.ingest.</span></span><span class="sig-name descname"><span class="pre">slugify</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.ingest.slugify" title="Link to this definition">¶</a></dt>
-          <dd><p>Create a safe filename slug from text.</p>
-          </dd></dl>
+        <span id="geometor-etc-ingest"></span><h1>geometor.etc.ingest<a class="headerlink" href="#module-geometor.etc.ingest" title="Link to this heading">¶</a></h1>
+        <p>Ingest raw HTML volumes of the Encyclopedia of Triangle Centers (ETC).</p>
+        <p>Splits <cite>ETC.html</cite> and <cite>ETCPart2.html</cite>..`ETCPart27.html` into:
+        - Individual center HTML files (<cite>x-00001.html</cite> .. <cite>x-53144.html</cite>) in <cite>output_folder</cite>
+        - Inter-center group preambles (<cite>preambles/p-XXXX-x-YYYYY.html</cite> and <cite>preambles.json</cite>)
+        - Part 1 introductory essays (<cite>intro/00-header.html</cite> .. <cite>intro/09-combos.html</cite> and <cite>intros.json</cite>)</p>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.ingest.slugify" title="geometor.etc.ingest.slugify"><code class="xref py py-obj docutils literal notranslate"><span class="pre">slugify</span></code></a>(→ str)</p></td>
+        <td><p>Create a safe filename slug from text.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.ingest.read_html_source" title="geometor.etc.ingest.read_html_source"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_html_source</span></code></a>(→ str)</p></td>
+        <td><p>Read an ETC HTML file, stripping any binary wrapper bytes and normalizing newlines.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.ingest.ingest_folder" title="geometor.etc.ingest.ingest_folder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ingest_folder</span></code></a>(→ dict[str, Any])</p></td>
+        <td><p>Ingest all ETC volume HTML files in <cite>input_folder</cite> and write split files to <cite>output_folder</cite>.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.etc.ingest.slugify">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.ingest.</span></span><span class="sig-name descname"><span class="pre">slugify</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.ingest.slugify" title="Link to this definition">¶</a></dt>
+        <dd><p>Create a safe filename slug from text.</p>
+        </dd></dl>
 
-          <dl class="py function">
-          <dt class="sig sig-object py" id="geometor.etc.ingest.read_html_source">
-          <span class="sig-prename descclassname"><span class="pre">geometor.etc.ingest.</span></span><span class="sig-name descname"><span class="pre">read_html_source</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.ingest.read_html_source" title="Link to this definition">¶</a></dt>
-          <dd><p>Read an ETC HTML file, stripping any binary wrapper bytes and normalizing newlines.</p>
-          </dd></dl>
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.etc.ingest.read_html_source">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.ingest.</span></span><span class="sig-name descname"><span class="pre">read_html_source</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.ingest.read_html_source" title="Link to this definition">¶</a></dt>
+        <dd><p>Read an ETC HTML file, stripping any binary wrapper bytes and normalizing newlines.</p>
+        </dd></dl>
 
-          <dl class="py function">
-          <dt class="sig sig-object py" id="geometor.etc.ingest.ingest_folder">
-          <span class="sig-prename descclassname"><span class="pre">geometor.etc.ingest.</span></span><span class="sig-name descname"><span class="pre">ingest_folder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_folder</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_folder</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.ingest.ingest_folder" title="Link to this definition">¶</a></dt>
-          <dd><p>Ingest all ETC volume HTML files in <cite>input_folder</cite> and write split files to <cite>output_folder</cite>.</p>
-          <p>Returns a summary dictionary with counts of centers, preambles, and intro sections.</p>
-          </dd></dl>
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.etc.ingest.ingest_folder">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.ingest.</span></span><span class="sig-name descname"><span class="pre">ingest_folder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_folder</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_folder</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.ingest.ingest_folder" title="Link to this definition">¶</a></dt>
+        <dd><p>Ingest all ETC volume HTML files in <cite>input_folder</cite> and write split files to <cite>output_folder</cite>.</p>
+        <p>Returns a summary dictionary with counts of centers, preambles, and intro sections.</p>
+        </dd></dl>
 
-          </section>
-          </section>
+        </section>
+        </section>
 
       </div>
-      <footer>
-
-        <nav class="context">
-          <div class="prev">
-             <a href="../glossary/index.html" title="geometor.etc.glossary" >Prev</a>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../glossary/index.html" title="geometor.etc.glossary">&larr; <span class="nav-label">geometor.etc.glossary</span></a>
           </div>
-          <div class="next">
-            <a href="../ops/index.html" title="geometor.etc.ops" >Next</a>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../../index.html">geometor • etc</a>
           </div>
-        </nav>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../ops/index.html" title="geometor.etc.ops"><span class="nav-label">geometor.etc.ops</span> &rarr;</a>
+          </div>
+        </div>
       </footer>
     </article>
   </main>

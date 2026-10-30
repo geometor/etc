@@ -9,9 +9,9 @@
   <title>&lt;no title&gt; &mdash; geometor • etc</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=51fa7472" />
+  <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=3d8cc37d" />
   <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -20,7 +20,7 @@
   <link rel="icon" href="_static/favicon.ico" />
 </head>
 
-<body>
+<body class="book-theme-classical-serif">
   <header>
     <div class="logo">
       <a href="index.html">
@@ -58,38 +58,34 @@
     </nav>
     <div class="motto"></div>
   </header>
-  <main>
-    <article>
-      <header>
-      <nav class="breadcrumbs">
-        <span><a href="index.html">Home</a></span>
-      </nav>
-        <nav class="context">
-          <div class="prev">
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="index.html" title="Return to Project Portal">&larr; etc</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="index.html">geometor • etc</a>
           </div>
-          <div class="next">
-          </div>
-        </nav>
+        </div>
       </header>
-      <div class="content body" role="main">
-        <p><code class="docutils literal notranslate"><span class="pre">-</span></code></p>
-          <blockquote>
-          <div><p>index for the encyclopedia of triangle centers</p>
-          </div></blockquote>
-          <div class="admonition-todo admonition" id="id1">
-          <p class="admonition-title">Todo</p>
-          <p>complete project description in intro.rst</p>
-          </div>
+      <div class="content body book-content" role="main">
+        <p><strong>Digital reconstruction, semantic index, and composable geometric modeling of Clark Kimberling’s *Encyclopedia of Triangle Centers* (`X(1)`–`X(53144)`).</strong></p>
+        <p><code class="docutils literal notranslate"><span class="pre">geometor.etc</span></code> transforms the archival HTML volumes of Clark Kimberling’s <em>Encyclopedia of Triangle Centers</em> and its supporting <em>Glossary</em> into structured registries, executable <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code> construction scripts, interactive multi-triangle SVG diagrams, and a 2-track <strong>Book Codex</strong> edition powered by <code class="docutils literal notranslate"><span class="pre">photon-platform/publish</span></code>.</p>
+        <p>Each center features a synchronized <strong>Overview</strong> track (with <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">enunciation::</span></code>, <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">signature::</span> <span class="pre">center</span></code> trilinear/barycentric coordinates, collapsible incidence/relation tables, and interactive SVGs across <strong>Acute</strong>, <strong>Right</strong>, <strong>Kepler</strong>, and <strong>Kimberling</strong> reference triangles) and a <strong>Code</strong> track (with standalone <code class="docutils literal notranslate"><span class="pre">model.py</span></code> constructions).</p>
 
       </div>
-      <footer>
-
-        <nav class="context">
-          <div class="prev">
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
           </div>
-          <div class="next">
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="index.html">geometor • etc</a>
           </div>
-        </nav>
+          <div class="book-nav-next">
+          </div>
+        </div>
       </footer>
     </article>
   </main>

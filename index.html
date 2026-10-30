@@ -6,12 +6,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>etc &mdash; geometor • etc</title>
+  <title>GEOMETOR • etc &mdash; geometor • etc</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=51fa7472" />
+  <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=3d8cc37d" />
   <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -20,7 +20,7 @@
   <link rel="icon" href="_static/favicon.ico" />
 </head>
 
-<body>
+<body class="book-theme-classical-serif">
   <header>
     <div class="logo">
       <a href="#">
@@ -58,66 +58,68 @@
     </nav>
     <div class="motto"></div>
   </header>
-  <main>
-    <article>
-      <header>
-      <nav class="breadcrumbs">
-        <span><a href="#">Home</a></span>
-      </nav>
-        <nav class="context">
-          <div class="prev">
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-title-link" href="#">geometor • etc</a>
           </div>
-          <div class="next">
-            <a href="usage/index.html" title="usage" >Next</a>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
           </div>
-        </nav>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="usage/index.html" title="usage"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
       </header>
-      <div class="content body" role="main">
-        <section class="level-1" id="etc">
-          <h1>etc<a class="headerlink" href="#etc" title="Link to this heading">¶</a></h1>
-          <p><code class="docutils literal notranslate"><span class="pre">-</span></code></p>
-          <blockquote>
-          <div><p>index for the encyclopedia of triangle centers</p>
-          </div></blockquote>
-          <div class="admonition-todo admonition" id="id1">
-          <p class="admonition-title">Todo</p>
-          <p>complete project description in intro.rst</p>
-          </div>
-          <section class="level-2" id="sections">
-          <h2>Sections<a class="headerlink" href="#sections" title="Link to this heading">¶</a></h2>
-          <ul class="simple">
-          <li><p><a class="reference internal" href="centers/index.html"><span class="doc">Encyclopedia of Triangle Centers</span></a> — Canonical centers <a class="reference internal" href="centers/x-00001/index.html#x-1" title="X(1): X(1) is the point of concurrence of the interior angle bisectors of ABC; the point inside ABC whose distances from sidelines BC, CA, AB are equal. This equal distance, r, is the…"><span class="std std-ref">X(1)</span></a> through <a class="reference internal" href="centers/x-00100/index.html#x-100" title="X(100): Let LA be the reflection of the line X(1)X(3) in line BC, and define LB and LC cyclically. Let A' = LB∩LC, B' = LC∩LA, C' = LA∩LB. The lines AA', BB', CC' concur in X(100). (Randy…"><span class="std std-ref">X(100)</span></a> (from 53,144 ingested centers)</p></li>
-          <li><p><a class="reference internal" href="glossary.html"><span class="doc">Glossary</span></a> — Definitions of classical and modern triangle geometry terms and central triangles</p></li>
-          <li><p><a class="reference internal" href="persons.html"><span class="doc">Index Nominum</span></a> — Biographical register of geometers and contributors</p></li>
-          <li><p><a class="reference internal" href="bibliography.html"><span class="doc">Bibliography</span></a> — Primary monographs, journals, catalogs, and research forums</p></li>
-          </ul>
-          <div class="toctree-wrapper compound">
-          </div>
-          </section>
-          <section class="level-2" id="indices">
-          <h2>indices<a class="headerlink" href="#indices" title="Link to this heading">¶</a></h2>
-          <ul class="simple">
-          <li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
-          <li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
-          <li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
-          </ul>
-          <div class="toctree-wrapper compound">
-          </div>
-          </section>
-          </section>
+      <div class="content body book-content" role="main">
+        <section class="level-1" id="geometor-etc">
+        <h1>GEOMETOR • etc<a class="headerlink" href="#geometor-etc" title="Link to this heading">¶</a></h1>
+        <p><strong>Digital reconstruction, semantic index, and composable geometric modeling of Clark Kimberling’s *Encyclopedia of Triangle Centers* (`X(1)`–`X(53144)`).</strong></p>
+        <p><code class="docutils literal notranslate"><span class="pre">geometor.etc</span></code> transforms the archival HTML volumes of Clark Kimberling’s <em>Encyclopedia of Triangle Centers</em> and its supporting <em>Glossary</em> into structured registries, executable <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code> construction scripts, interactive multi-triangle SVG diagrams, and a 2-track <strong>Book Codex</strong> edition powered by <code class="docutils literal notranslate"><span class="pre">photon-platform/publish</span></code>.</p>
+        <p>Each center features a synchronized <strong>Overview</strong> track (with <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">enunciation::</span></code>, <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">signature::</span> <span class="pre">center</span></code> trilinear/barycentric coordinates, collapsible incidence/relation tables, and interactive SVGs across <strong>Acute</strong>, <strong>Right</strong>, <strong>Kepler</strong>, and <strong>Kimberling</strong> reference triangles) and a <strong>Code</strong> track (with standalone <code class="docutils literal notranslate"><span class="pre">model.py</span></code> constructions).</p>
+        <hr class="docutils" />
+        <section class="level-2" id="sections">
+        <h2>Sections<a class="headerlink" href="#sections" title="Link to this heading">¶</a></h2>
+        <ul class="simple">
+        <li><p><a class="reference internal" href="centers/index.html"><span class="doc">Encyclopedia of Triangle Centers</span></a> — Canonical centers <a class="reference internal" href="centers/x-00001/index.html#x-1" title="X(1): X(1) is the point of concurrence of the interior angle bisectors of ABC; the point inside ABC whose distances from sidelines BC, CA, AB are equal. This equal distance, r, is the…"><span class="std std-ref">X(1)</span></a> through <a class="reference internal" href="centers/x-01000/index.html#x-1000" title="X(1000): Let A* be the parabola with focus A and directrix BC, and let A** be the polar of X(1) with respect to A*. Define B** and C** cyclically, and let A' = B**∩C**, and define B' and…"><span class="std std-ref">X(1000)</span></a> (from 53,144 ingested centers) in a 2-track Book Codex (<em>Overview</em> &amp; <em>Code</em>)</p></li>
+        <li><p><a class="reference internal" href="glossary.html"><span class="doc">Glossary</span></a> — Definitions of classical and modern triangle geometry terms, transformations, and central triangles</p></li>
+        <li><p><a class="reference internal" href="persons.html"><span class="doc">Index Nominum</span></a> — Biographical register of geometers and contributors</p></li>
+        <li><p><a class="reference internal" href="bibliography.html"><span class="doc">Bibliography</span></a> — Primary monographs, journals, catalogs, and research forums</p></li>
+        </ul>
+        <div class="toctree-wrapper compound">
+        </div>
+        </section>
+        <hr class="docutils" />
+        <section class="level-2" id="indices">
+        <h2>Indices<a class="headerlink" href="#indices" title="Link to this heading">¶</a></h2>
+        <ul class="simple">
+        <li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+        <li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+        <li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+        </ul>
+        <div class="toctree-wrapper compound">
+        </div>
+        </section>
+        </section>
 
       </div>
-      <footer>
-
-        <div class="meta">
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="#">geometor • etc</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="usage/index.html" title="usage"><span class="nav-label">usage</span> &rarr;</a>
+          </div>
         </div>
-        <nav class="context">
-          <div class="prev">
-          </div>
-          <div class="next">
-            <a href="usage/index.html" title="usage" >Next</a>
-          </div>
-        </nav>
       </footer>
     </article>
   </main>
