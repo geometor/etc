@@ -1,14 +1,10 @@
+:navigation: footer
+:order: 10
 
-.. _about:
-
-
+=====
 about
 =====
 
+``geometor.etc`` is developed and maintained by **phi ARCHITECT** as part of the **GEOMETOR** initiative.
 
-I have always been deeply interested in architecture and have had the privilege of practicing it in many different domains. 
-
-Architecture is order. 
-
-.. It can be in the material world.
-
+It is based on Clark Kimberling's `Encyclopedia of Triangle Centers (ETC) <https://faculty.evansville.edu/ck6/encyclopedia/ETC.html>`_ at the University of Evansville, restructuring its archival entries, coordinates, incidences, and glossary into an interactive Book Codex and ``geometor.model`` construction suite.

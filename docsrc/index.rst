@@ -1,6 +1,3 @@
-:navigation: header footer
-:order: 0
-
 GEOMETOR • etc
 ==============
 
