@@ -16,17 +16,13 @@ X(418) = X(3)-CEVA-CONJUGATE OF X(216)
    :alt: X(418) = X(3)-CEVA-CONJUGATE OF X(216)
    :align: center
 
-   **X(418) = X(3)-CEVA-CONJUGATE OF X(216)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(418) = X(3)-CEVA-CONJUGATE OF X(216)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`(\cos A)(\csc 2B + \csc 2C) : :`
    | **Barycentrics:** :math:`(\sin 2A)(\csc 2B + \csc 2C) : :`
    | **Search Value (6, 9, 13):** :math:`0.440187399170`
-
-.. container:: note-item
-
-   :ref:`X(418) <X(418)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 93 lines
@@ -49,7 +45,7 @@ X(418) = X(3)-CEVA-CONJUGATE OF X(216)
    * :ref:`X(418) <X(418)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): {:ref:`3 <X(3)>`, :ref:`216 <X(216)>`}, {:ref:`4 <X(4)>`, 31353}, {:ref:`95 <X(95)>`, 41334}, {:ref:`110 <X(110)>`, 32320}, {:ref:`216 <X(216)>`, :ref:`217 <X(217)>`}, {14587, 32661}, {14941, 3289}, {23181, 17434}, {40448, :ref:`6 <X(6)>`}
    * :ref:`X(418) <X(418)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): {42556, :ref:`3 <X(3)>`}, {44088, :ref:`217 <X(217)>`}, {46394, :ref:`216 <X(216)>`}
    * :ref:`X(418) <X(418)>` = Danneels point of :ref:`X(3) <X(3)>`
-   * :ref:`X(418) <X(418)>` = X(1764)-of-orthic-triangle if ABC is acute
+   * :ref:`X(418) <X(418)>` = X(1764)-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(418) <X(418)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these (i,j): {:ref:`1 <X(1)>`, 8795}, {:ref:`4 <X(4)>`, 40440}, {:ref:`19 <X(19)>`, :ref:`276 <X(276)>`}, {:ref:`63 <X(63)>`, 8794}, {:ref:`75 <X(75)>`, 8884}, {:ref:`92 <X(92)>`, :ref:`275 <X(275)>`}, {:ref:`95 <X(95)>`, :ref:`158 <X(158)>`}, {:ref:`97 <X(97)>`, 6521}, {:ref:`264 <X(264)>`, 2190}, {:ref:`661 <X(661)>`, 42405}, {:ref:`799 <X(799)>`, 15422}, {:ref:`821 <X(821)>`, 19166}, {:ref:`822 <X(822)>`, 42401}, {:ref:`823 <X(823)>`, 15412}, {1096, 34384}, {1577, 16813}, {1969, 8882}, {2052, 2167}, {2148, 18027}, {2616, 6528}, {3112, 19174}, {6520, 34386}, {8901, 23999}, {18831, 24006}, {36119, 43752}, {42300, 51315}
    * :ref:`X(418) <X(418)>` = X(i)-Dao conjugate of X(j) for these (i,j): {:ref:`3 <X(3)>`, 8795}, {:ref:`5 <X(5)>`, :ref:`264 <X(264)>`}, {:ref:`6 <X(6)>`, :ref:`276 <X(276)>`}, {:ref:`95 <X(95)>`, 1147}, {:ref:`130 <X(130)>`, :ref:`523 <X(523)>`}, {:ref:`206 <X(206)>`, 8884}, {:ref:`216 <X(216)>`, 18027}, {:ref:`275 <X(275)>`, 22391}, {:ref:`389 <X(389)>`, 45198}, {:ref:`850 <X(850)>`, 2972}, {1511, 43752}, {2052, 40588}, {3162, 8794}, {6503, 34384}, {14618, 15450}, {14767, 42368}, {15422, 38996}, {16089, 52128}, {18022, 52032}, {19174, 34452}, {20572, 39171}, {21243, 23295}, {23962, 35441}, {34386, 37867}, {36033, 40440}, {36830, 42405}
    * :ref:`X(418) <X(418)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): {:ref:`3 <X(3)>`, :ref:`577 <X(577)>`}, {:ref:`6 <X(6)>`, 22261}, {:ref:`184 <X(184)>`, 2351}, {:ref:`216 <X(216)>`, 5562}, {14587, 32661}
@@ -65,7 +61,7 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(418) <X(418)>` has Shinagawa coefficients (F\ :sup:`2` + S\ :sup:`2`,-(E + F)F - S\ :sup:`2`).
+   As a point on the Euler line, :ref:`X(418) <X(418)>` has Shinagawa coefficients :math:`(F^{2} + S^{2},-(E + F)F - S^{2})`.
 
 .. toctree::
    :hidden:

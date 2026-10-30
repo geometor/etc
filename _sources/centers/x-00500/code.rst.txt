@@ -12,7 +12,7 @@ X(500) = ORTHOCENTER OF THE INCENTRAL TRIANGLE — Code
    :alt: X(500) = ORTHOCENTER OF THE INCENTRAL TRIANGLE
    :align: center
 
-   **X(500) = ORTHOCENTER OF THE INCENTRAL TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(500) = ORTHOCENTER OF THE INCENTRAL TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

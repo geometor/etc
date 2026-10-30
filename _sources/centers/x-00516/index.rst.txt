@@ -10,33 +10,29 @@ X(516) = ISOGONAL CONJUGATE OF X(103)
 
 .. enunciation::
 
-   :ref:`X(516) <X(516)>` is the perspector of triangle ABC and the :term:`tangential triangles <tangential-triangle>` of the conic that passes through the points A, B, C, :ref:`X(2) <X(2)>`, and :ref:`X(7) <X(7)>`.
+   :ref:`X(516) <X(516)>` is the perspector of triangle :g:`ABC << A B C >>` and the :term:`tangential triangles <tangential-triangle>` of the conic that passes through the points :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, :ref:`X(2) <X(2)>`, and :ref:`X(7) <X(7)>`.
 
 .. figure:: x-00516.svg
    :alt: X(516) = ISOGONAL CONJUGATE OF X(103)
    :align: center
 
-   **X(516) = ISOGONAL CONJUGATE OF X(103)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(516) = ISOGONAL CONJUGATE OF X(103)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`bc[(a - b) \cot C + (a - c) \cot B] : :`
-   | **Barycentrics:** :math:`2 a^3 - a^2 (b + c) - (b - c)^2 (b + c) : :`
+   | **Barycentrics:** :math:`2 a^{3} - a^{2} (b + c) - (b - c)^{2} (b + c) : :`
 
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
-   * **Trilinears:** :math:`a^2 - b^2 \cos C - c^2 \cos B : :`
-   * **Trilinears:** :math:`a^2 - b^2 \cos C - c^2 \cos B : :`
+   * **Trilinears:** :math:`a^{2} - b^{2} \cos C - c^{2} \cos B : :`
+   * **Trilinears:** :math:`a^{2} - b^{2} \cos C - c^{2} \cos B : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
    * :ref:`X(516) <X(516)>` = :ref:`X(1) <X(1)>` - :ref:`X(7) <X(7)>`
-
-.. container:: note-item
-
-   :ref:`X(516) <X(516)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 91 lines

@@ -10,28 +10,24 @@ X(412) = EULER X(29)-2nd-SUBSTITUTION POINT
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(412) <X(412)>` has Shinagawa coefficients (FS\ :sup:`2`, -$bcS\ :sub:`B`\ S\ :sub:`C`\ $ - FS\ :sup:`2`).
+   As a point on the Euler line, :ref:`X(412) <X(412)>` has Shinagawa coefficients :math:`(FS^{2}, -\$bcS_{B}S_{C}\$ - FS^{2})`.
 
 .. figure:: x-00412.svg
    :alt: X(412) = EULER X(29)-2nd-SUBSTITUTION POINT
    :align: center
 
-   **X(412) = EULER X(29)-2nd-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(412) = EULER X(29)-2nd-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(1/v)^{2} + (1/w)^{2} - (1/u)^{2} : (1/w)^{2} + (1/u)^{2} - (1/v)^{2} : (1/u)^{2} + (1/v)^{2} - (1/w)^{2}`, where, u : v : w = :ref:`X(29) <X(29)>`; e.g., u = u(A,B,C) = (sec A)/(cos B + cos C)
+   | **Trilinears:** :math:`(1/v)^{2} + (1/w)^{2} - (1/u)^{2} : (1/w)^{2} + (1/u)^{2} - (1/v)^{2} : (1/u)^{2} + (1/v)^{2} - (1/w)^{2}`, where :math:`u : v : w` = :ref:`X(29) <X(29)>`; e.g., :math:`u = u(A,B,C) = (\sec A)/(\cos B + \cos C)`
    | **Barycentrics:** :math:`a[(1/v)^{2} + (1/w)^{2} - (1/u)^{2}] : b[(1/w)^{2} + (1/u)^{2} - (1/v)^{2}] : c[(1/u)^{2} + (1/v)^{2} - (1/w)^{2}]`
    | **Search Value (6, 9, 13):** :math:`8.765223466970`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`(a^2 + b^2 - c^2)*(a^2 - b^2 + c^2)*(a^6 + a^5*b - 2*a^4*b^2 - 2*a^3*b^3 + a^2*b^4 + a*b^5 + a^5*c - a^4*b*c - a*b^4*c + b^5*c - 2*a^4*c^2 + 2*a^2*b^2*c^2 - 2*a^3*c^3 - 2*b^3*c^3 + a^2*c^4 - a*b*c^4 + a*c^5 + b*c^5) : :`
-
-.. container:: note-item
-
-   :ref:`X(412) <X(412)>` lies.
+   * **Barycentrics:** :math:`(a^{2} + b^{2} - c^{2}) \cdot (a^{2} - b^{2} + c^{2}) \cdot (a^{6} + a^{5} b - 2 a^{4} b^{2} - 2 a^{3} b^{3} + a^{2} b^{4} + a b^{5} + a^{5} c - a^{4} b c - a b^{4} c + b^{5} c - 2 a^{4} c^{2} + 2 a^{2} b^{2} c^{2} - 2 a^{3} c^{3} - 2 b^{3} c^{3} + a^{2} c^{4} - a b c^{4} + a c^{5} + b c^{5}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 57 lines

@@ -16,17 +16,13 @@ X(366) = ISOGONAL CONJUGATE OF X(365)
    :alt: X(366) = ISOGONAL CONJUGATE OF X(365)
    :align: center
 
-   **X(366) = ISOGONAL CONJUGATE OF X(365)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(366) = ISOGONAL CONJUGATE OF X(365)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`a^{-1/2} : b^{-1/2} : c^{-1/2}`
    | **Barycentrics:** :math:`a^{1/2} : b^{1/2} : c^{1/2}`
    | **Search Value (6, 9, 13):** :math:`2.133820887465`
-
-.. container:: note-item
-
-   :ref:`X(366) <X(366)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines

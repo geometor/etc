@@ -17,7 +17,7 @@ X(237) = X(3)-LINE CONJUGATE OF X(2)
 .. admonition:: Group Preamble — Centers X(237)-X(248)
    :class: note
 
-   Centers :ref:`X(237) <X(237)>`-:ref:`X(248) <X(248)>` are :term:`line conjugates <line-conjugate>`. (The P-line conjugate of Q is the point where line PQ meets the :term:`trilinear polar <trilinear-polar>` of the :term:`isogonal conjugate <isogonal-conjugate>` of Q.)
+   Centers :ref:`X(237) <X(237)>`-:ref:`X(248) <X(248)>` are :term:`line conjugates <line-conjugate>`. (The :g:`P <P>`-line conjugate of :g:`Q <Q>` is the point where line :g:`PQ <[ P Q ]>` meets the :term:`trilinear polar <trilinear-polar>` of the :term:`isogonal conjugate <isogonal-conjugate>` of :g:`Q <Q>`.)
 
    See :person:`Clark Kimberling <clark-kimberling>` and Peter J. C. Moses, `Line conjugates in the plane of a triangle, <https://trebuchet.public.springernature.app/get_content/9bf860cd-18a5-4f8a-a5b0-90acefaf051b>`__ *Aequationes Mathematicae*, August 2022.
 
@@ -25,7 +25,7 @@ X(237) = X(3)-LINE CONJUGATE OF X(2)
    :alt: X(237) = X(3)-LINE CONJUGATE OF X(2)
    :align: center
 
-   **X(237) = X(3)-LINE CONJUGATE OF X(2)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(237) = X(3)-LINE CONJUGATE OF X(2)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -36,13 +36,13 @@ X(237) = X(3)-LINE CONJUGATE OF X(2)
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
-   * **Trilinears:** a\ :sup:`3`\ (b\ :sup:`4` + c\ :sup:`4` - a\ :sup:`2`\ b\ :sup:`2` - a\ :sup:`2`\ c\ :sup:`2`) (:person:`Darij Grinberg <darij-grinberg>`, 3/29/03)
-   * **Barycentrics:** :math:`a^4*(a^2*b^2 - b^4 + a^2*c^2 - c^4) : :`
+   * **Trilinears:** :math:`a^{3}(b^{4} + c^{4} - a^{2}b^{2} - a^{2}c^{2})` (:person:`Darij Grinberg <darij-grinberg>`, 3/29/03)
+   * **Barycentrics:** :math:`a^{4} (a^{2} b^{2} - b^{4} + a^{2} c^{2} - c^{4}) : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(237) <X(237)>` = :ref:`X(237) <X(237)>` = 3 :ref:`X(2) <X(2)>` + X(46518), 2 X(3001) - 3 X(22087), 3 X(9155) - 2 X(36212), X(14957) - 6 X(44215), X(21531) - 3 X(44215), 2 X(21531) + X(46518), 3 X(22087) - 4 X(34990), X(34175) - 3 X(38227), 6 X(44215) + X(46518)
+   * :ref:`X(237) <X(237)>` = :ref:`X(237) <X(237)>` = :math:`3` :ref:`X(2) <X(2)>` + X(46518), :math:`2` X(3001) - :math:`3` X(22087), :math:`3` X(9155) - :math:`2` X(36212), X(14957) - :math:`6` X(44215), X(21531) - :math:`3` X(44215), :math:`2` X(21531) + X(46518), :math:`3` X(22087) - :math:`4` X(34990), X(34175) - :math:`3` X(38227), :math:`6` X(44215) + X(46518)
 
 .. container:: note-item
 
@@ -99,7 +99,7 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(237) <X(237)>` has Shinagawa coefficients (EF + F\ :sup:`2` + S\ :sup:`2`, -(E + F)\ :sup:`2` - S\ :sup:`2`).
+   As a point on the Euler line, :ref:`X(237) <X(237)>` has Shinagawa coefficients :math:`(EF + F^{2} + S^{2}, -(E + F)^{2} - S^{2})`.
 
 .. toctree::
    :hidden:

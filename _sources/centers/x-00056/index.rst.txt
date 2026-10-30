@@ -16,7 +16,7 @@ X(56) = EXSIMILICENTER(CIRCUMCIRCLE, INCIRCLE)
    :alt: X(56) = EXSIMILICENTER(CIRCUMCIRCLE, INCIRCLE)
    :align: center
 
-   **X(56) = EXSIMILICENTER(CIRCUMCIRCLE, INCIRCLE)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(56) = EXSIMILICENTER(CIRCUMCIRCLE, INCIRCLE)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -30,19 +30,15 @@ X(56) = EXSIMILICENTER(CIRCUMCIRCLE, INCIRCLE)
    * **Trilinears:** :math:`1 - \cos A : 1 - \cos B : 1 - \cos C`
    * **Trilinears:** :math:`\sin^{2}(A/2) : \sin^{2}(B/2) : \sin^{2}(C/2)`
    * **Trilinears:** :math:`a(\tan A/2) : :`
-   * **Trilinears:** :math:`Ra - r : Rb - r : Rc - r`, where Ra, Rb, Rc are the exradii
-   * **Trilinears:** :math:`a*Ra : b*Rb : c*Rc`, where Ra, Rb, Rc are the exradii
+   * **Trilinears:** :math:`R_{a} - r : R_{b} - r : R_{c} - r`, where :math:`R_{a}`, :math:`R_{b}`, :math:`R_{c}` are the exradii
+   * **Trilinears:** :math:`a R_{a} : b R_{b} : c R_{c}`, where :math:`R_{a}`, :math:`R_{b}`, :math:`R_{c}` are the exradii
    * **Trilinears:** :math:`a \cos A - (c + a) \cos B - (a + b) \cos C : :`
-   * **Barycentrics:** :math:`area(A'BC) : :`, where A'B'C' = 2nd circumperp triangle
+   * **Barycentrics:** :math:`\operatorname{area}(A'BC) : :`, where :g:`A'B'C' << A' B' C' >>` = 2nd circumperp triangle
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(56) <X(56)>` = R\*\ :ref:`X(1) <X(1)>` - r\*\ :ref:`X(3) <X(3)>`
-
-.. container:: note-item
-
-   :ref:`X(56) <X(56)>` lies.
+   * :ref:`X(56) <X(56)>` = :math:`R` :ref:`X(1) <X(1)>` - :math:`r` :ref:`X(3) <X(3)>`
 
 .. collapse:: Incident Central Lines
    :badge: 58 lines
@@ -71,7 +67,7 @@ X(56) = EXSIMILICENTER(CIRCUMCIRCLE, INCIRCLE)
    * :ref:`X(56) <X(56)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`1 <X(1)>`), (:ref:`21 <X(21)>`, :ref:`3 <X(3)>`), (:ref:`56 <X(56)>`, 1106), (:ref:`58 <X(58)>`, :ref:`56 <X(56)>`), and (P,57) for all P on the circumcircle
    * :ref:`X(56) <X(56)>` = homothetic center of the :term:`intouch triangle <intouch-triangle>` and the circumcevian triangle of :ref:`X(1) <X(1)>`
    * :ref:`X(56) <X(56)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(649) <X(649)>`\ \ :ref:`X(854) <X(854)>` (the isogonal conjugate of the isotomic conjugate of the Gergonne line)
-   * :ref:`X(56) <X(56)>` = homothetic center of ABC and the reflection of the Mandart-incircle triangle in :ref:`X(1) <X(1)>`
+   * :ref:`X(56) <X(56)>` = homothetic center of :g:`ABC << A B C >>` and the reflection of the Mandart-incircle triangle in :ref:`X(1) <X(1)>`
    * :ref:`X(56) <X(56)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(40) <X(40)>`}-harmonic conjugate of X(3057)
    * :ref:`X(56) <X(56)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(57) <X(57)>`}-harmonic conjugate of :ref:`X(65) <X(65)>`
    * :ref:`X(56) <X(56)>` = trilinear square of :ref:`X(266) <X(266)>`
@@ -79,8 +75,8 @@ X(56) = EXSIMILICENTER(CIRCUMCIRCLE, INCIRCLE)
    * :ref:`X(56) <X(56)>` = :ref:`X(92) <X(92)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(219) <X(219)>`
    * :ref:`X(56) <X(56)>` = :term:`vertex conjugate <vertex-conjugate>` of PU(93)
    * :ref:`X(56) <X(56)>` = inverse-in-{circumcircle, incircle}-inverter of X(3660)
-   * :ref:`X(56) <X(56)>` = perspector of ABC and extraversion triangle of :ref:`X(55) <X(55)>`
-   * :ref:`X(56) <X(56)>` = perspector of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of Gemini triangle 15
+   * :ref:`X(56) <X(56)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(55) <X(55)>`
+   * :ref:`X(56) <X(56)>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of Gemini triangle 15
    * :ref:`X(56) <X(56)>` = homothetic center of intangents triangle and reflection of tangential triangle in :ref:`X(3) <X(3)>`
    * :ref:`X(56) <X(56)>` = homothetic center of tangential triangle and reflection of intangents triangle in :ref:`X(1) <X(1)>`
    * :ref:`X(56) <X(56)>` = Brianchon point (perspector) of inellipse that is isogonal conjugate of isotomic conjugate of incircle
@@ -90,9 +86,9 @@ X(56) = EXSIMILICENTER(CIRCUMCIRCLE, INCIRCLE)
    * :ref:`X(56) <X(56)>` = bicentric sum of PU(60)
    * :ref:`X(56) <X(56)>` = PU(60)-harmonic conjugate of :ref:`X(650) <X(650)>`
    * :ref:`X(56) <X(56)>` = trilinear product of PU(92)
-   * :ref:`X(56) <X(56)>` = perspector of ABC and cross-triangle of ABC and Apus triangle
-   * :ref:`X(56) <X(56)>` = perspector of ABC and cross-triangle of ABC and Hutson intouch triangle
-   * :ref:`X(56) <X(56)>` = homothetic center of ABC and cross-triangle of ABC and 1st Johnson-Yff triangle
+   * :ref:`X(56) <X(56)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Apus triangle
+   * :ref:`X(56) <X(56)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Hutson intouch triangle
+   * :ref:`X(56) <X(56)>` = homothetic center of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and 1st Johnson-Yff triangle
    * :ref:`X(56) <X(56)>` = homothetic center of midarc triangle and 1st-circumperp-of-1st-circumperp triangle (which is also 2nd-circumperp-of-2nd-circumperp triangle)
    * :ref:`X(56) <X(56)>` = homothetic center of 2nd midarc triangle and 2nd-circumperp-of-1st-circumperp triangle (which is also 1st-circumperp-of-2nd-circumperp triangle)
    * :ref:`X(56) <X(56)>` = Cundy-Parry Phi transform of :ref:`X(517) <X(517)>`
@@ -108,11 +104,11 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the Fuhrmann triangle. Let La be the line through A' parallel to BC, and define Lb and Lc cyclically. Let A″ = Lb∩Lc, B″ = Lc∩La, C″ = La∩Lb. The lines AA″, BB″, CC″ concur in :ref:`X(56) <X(56)>`. Also, let AaBaCa be the poristic triangle (i.e., a triangle with common circumcircle and incircle as ABC) such that BaCa is parallel to BC. Define AbBbCb and AcBcCc cyclically. The lines AAa, BBb, CCc concur in :ref:`X(56) <X(56)>`. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the Fuhrmann triangle. Let :g:`L_{a} <L_a>` be the line through :g:`A' <A'>` parallel to :g:`BC <[ B C ]>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, :g:`B″ <B″>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C″ <C″>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(56) <X(56)>`. Also, let :g:`A_{a}B_{a}C_{a} << A_a B_a C_a >>` be the poristic triangle (i.e., a triangle with common circumcircle and incircle as :g:`ABC << A B C >>`) such that :g:`B_{a}C_{a} <[ B_a C_a ]>` is parallel to :g:`BC <[ B C ]>`. Define :g:`A_{b}B_{b}C_{b} << A_b B_b C_b >>` and :g:`A_{c}B_{c}C_{c} << A_c B_c C_c >>` cyclically. The lines :g:`AA_{a} <[ A A_a ]>`, :g:`BB_{b} <[ B B_b ]>`, :g:`CC_{c} <[ C C_c ]>` concur in :ref:`X(56) <X(56)>`. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
 
 .. container:: note-item
 
-   Let A'B'C' be the intouch triangle. Let A″ be the barycentric product of the circumcircle intercepts of line B'C', and define B″, C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(56) <X(56)>`. (Randy Hutson, June 27, 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the intouch triangle. Let :g:`A″ <A″>` be the barycentric product of the circumcircle intercepts of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(56) <X(56)>`. (Randy Hutson, June 27, 2018)
 
 .. container:: note-item
 
@@ -120,17 +116,17 @@ Notes
 
 .. container:: note-item
 
-   In the plane of a triangle ABC, let
+   In the plane of a triangle :g:`ABC << A B C >>`, let
 
-      * A'B'C' = circumcevian triangle of :ref:`X(1) <X(1)>`;
-      * Ta = line tangent to circumcircle at A', and define Tb and Tc cyclically;
-      * Va = Tb∩Tc, and define Vb and Vc cyclically.
+      * :g:`A'B'C' << A' B' C' >>` = circumcevian triangle of :ref:`X(1) <X(1)>`;
+      * :g:`T_{a} <T_a>` = line tangent to circumcircle at :g:`A' <A'>`, and define :g:`T_{b} <T_b>` and :g:`T_{c} <T_c>` cyclically;
+      * :g:`V_{a} <V_a>` = :g:`T_{b} <T_b>`\ ∩\ :g:`T_{c} <T_c>`, and define :g:`V_{b} <V_b>` and :g:`V_{c} <V_c>` cyclically.
 
-   The triangle VaVbVc is perspective to ABC, and the perspector is :ref:`X(56) <X(56)>`. (Dasari Naga Vijay Krishna, June 19, 2021)
+   The triangle :g:`V_{a}V_{b}V_{c} << V_a V_b V_c >>` is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X(56) <X(56)>`. (Dasari Naga Vijay Krishna, June 19, 2021)
 
 .. container:: note-item
 
-   In the plane of a triangle ABC, let (Oa) be the circle tangent internally to the incircle and tangent internally to the circumcircle at A. Define (Ob) and (Oc) cyclically. The radical center of (Oa), (Ob), (Oc) is :ref:`X(56) <X(56)>`. (Ivan Pavlov, February 24, 2022)
+   In the plane of a triangle :g:`ABC << A B C >>`, let (:g:`O_{a} <O_a>`) be the circle tangent internally to the incircle and tangent internally to the circumcircle at A. Define (:g:`O_{b} <O_b>`) and (:g:`O_{c} <O_c>`) cyclically. The radical center of (:g:`O_{a} <O_a>`), (:g:`O_{b} <O_b>`), (:g:`O_{c} <O_c>`) is :ref:`X(56) <X(56)>`. (Ivan Pavlov, February 24, 2022)
 
 .. container:: note-item
 

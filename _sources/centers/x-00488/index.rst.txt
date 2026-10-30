@@ -10,23 +10,19 @@ X(488) = ANTICOMPLEMENT OF X(485)
 
 .. enunciation::
 
-   :ref:`X(488) <X(488)>` is a perspector of triangles associated with squares that circumscribe ABC. For details, see `Vierkanten in een driehoek: 2. Meer punten uit omgeschreven vierkanten <http://home.wxs.nl/~lamoen/wiskunde/vierkant2.html>`__ (:person:`Floor van Lamoen <floor-van-lamoen>`, 4/29/98)
+   :ref:`X(488) <X(488)>` is a perspector of triangles associated with squares that circumscribe :g:`ABC << A B C >>`. For details, see `Vierkanten in een driehoek: 2. Meer punten uit omgeschreven vierkanten <http://home.wxs.nl/~lamoen/wiskunde/vierkant2.html>`__ (:person:`Floor van Lamoen <floor-van-lamoen>`, 4/29/98)
 
 .. figure:: x-00488.svg
    :alt: X(488) = ANTICOMPLEMENT OF X(485)
    :align: center
 
-   **X(488) = ANTICOMPLEMENT OF X(485)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(488) = ANTICOMPLEMENT OF X(485)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = (cos A)(1 + csc A sin B sin C)
-   | **Barycentrics:** :math:`(b^{2} + c^{2} - a^{2})(a^{2} + 2σ) : (c^{2} + a^{2} - b^{2})(b^{2} + 2σ) : :`
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = (\cos A)(1 + \csc A \sin B \sin C)`
+   | **Barycentrics:** :math:`(b^{2} + c^{2} - a^{2})(a^{2} + 2\sigma ) : (c^{2} + a^{2} - b^{2})(b^{2} + 2\sigma ) : :`
    | **Search Value (6, 9, 13):** :math:`6.252816678238`
-
-.. container:: note-item
-
-   :ref:`X(488) <X(488)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 7 lines
@@ -50,7 +46,7 @@ Notes
 
 .. container:: note-item
 
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the outer Vecten triangle and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(488) <X(488)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (:person:`Randy Hutson <randy-hutson>`, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the outer Vecten triangle and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(488) <X(488)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (:person:`Randy Hutson <randy-hutson>`, August 30, 2020)
 
 .. toctree::
    :hidden:

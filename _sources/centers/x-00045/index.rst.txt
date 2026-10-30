@@ -16,7 +16,7 @@ X(45) = X(9)-BETH CONJUGATE OF X(1)
    :alt: X(45) = X(9)-BETH CONJUGATE OF X(1)
    :align: center
 
-   **X(45) = X(9)-BETH CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(45) = X(9)-BETH CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,11 +27,7 @@ X(45) = X(9)-BETH CONJUGATE OF X(1)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(45) <X(45)>` = (3r\ :sup:`2` + 6rR - s\ :sup:`2`)\*\ :ref:`X(1) <X(1)>` - 18rR\*\ :ref:`X(2) <X(2)>` - 6r\ :sup:`2`\ \*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-
-.. container:: note-item
-
-   :ref:`X(45) <X(45)>` lies.
+   * :ref:`X(45) <X(45)>` = :math:`(3r^{2} + 6rR - s^{2})` :ref:`X(1) <X(1)>` - :math:`18rR` :ref:`X(2) <X(2)>` - :math:`6r^{2}` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines

@@ -10,22 +10,19 @@ X(383) = EULER LINE INTERCEPT OF LINE X(14)X(98)
 
 .. enunciation::
 
-   Barycentrics (sin A)f(A,B,C) : (sin B)f(B,C,A) : (sin C)f(C,A,B)
+   As a point on the Euler line, :ref:`X(383) <X(383)>` has Shinagawa coefficients :math:`(S, -3^{1/2}(E + F))`.
 
 .. figure:: x-00383.svg
    :alt: X(383) = EULER LINE INTERCEPT OF LINE X(14)X(98)
    :align: center
 
-   **X(383) = EULER LINE INTERCEPT OF LINE X(14)X(98)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(383) = EULER LINE INTERCEPT OF LINE X(14)X(98)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where, f(A,B,C) = csc(B - C) [sin 2B cos(C - ω) sin(C + π/3) - sin 2C cos(B - ω) sin(B + π/3)]
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = \csc(B - C) [\sin 2B \cos(C - \omega ) \sin(C + \pi /3) - \sin 2C \cos(B - \omega ) \sin(B + \pi /3)]`
+   | **Barycentrics:** :math:`(\sin A)f(A,B,C) : (\sin B)f(B,C,A) : (\sin C)f(C,A,B)`
    | **Search Value (6, 9, 13):** :math:`-16.834262678779`
-
-.. container:: note-item
-
-   :ref:`X(383) <X(383)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines
@@ -39,13 +36,6 @@ X(383) = EULER LINE INTERCEPT OF LINE X(14)X(98)
    * :ref:`X(383) <X(383)>` = reflection of X(1080) in X(1513)
    * :ref:`X(383) <X(383)>` = inverse-in-orthocentroidal-circle of X(1080)
    * :ref:`X(383) <X(383)>` = orthoptic-circle-of-Steiner-inellipse-inverse of X(32460)
-
-Notes
------
-
-.. container:: note-item
-
-   As a point on the Euler line, :ref:`X(383) <X(383)>` has Shinagawa coefficients (S, -3\ :sup:`1/2`\ (E + F)).
 
 .. toctree::
    :hidden:

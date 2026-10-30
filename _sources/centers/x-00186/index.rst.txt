@@ -10,13 +10,13 @@ X(186) = INVERSE-IN-CIRCUMCIRCLE OF X(4)
 
 .. enunciation::
 
-   Let AA\ :sub:`1`\ A\ :sub:`2`, BB\ :sub:`1`\ B\ :sub:`2`, CC\ :sub:`1`\ C\ :sub:`2` be the circumcircle-inscribed equilateral triangles used in the construction of the Trinh triangle. Let A' be the :term:`cevapoint <cevapoint>` of A\ :sub:`1` and A\ :sub:`2`, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(186) <X(186)>`. (:person:`Randy Hutson <randy-hutson>`, October 8, 2019
+   Let :g:`AA_{1}A_{2} << A A_1 A_2 >>`, :g:`BB_{1}B_{2} << B B_1 B_2 >>`, :g:`CC_{1}C_{2} << C C_1 C_2 >>` be the circumcircle-inscribed equilateral triangles used in the construction of the Trinh triangle. Let :g:`A' <A'>` be the :term:`cevapoint <cevapoint>` of :g:`A_{1} <A_1>` and :g:`A_{2} <A_2>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(186) <X(186)>`. (:person:`Randy Hutson <randy-hutson>`, October 8, 2019
 
 .. figure:: x-00186.svg
    :alt: X(186) = INVERSE-IN-CIRCUMCIRCLE OF X(4)
    :align: center
 
-   **X(186) = INVERSE-IN-CIRCUMCIRCLE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(186) = INVERSE-IN-CIRCUMCIRCLE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -29,16 +29,12 @@ X(186) = INVERSE-IN-CIRCUMCIRCLE OF X(4)
    :badge: 2 forms
 
    * **Trilinears:** :math:`\sin 3A \csc 2A : \sin 3B \csc 2B : \sin 3C \csc 2C`
-   * **Barycentrics:** :math:`a^2 ((a^2 - b^2 - c^2)^2 - b^2 c^2) / (a^2 - b^2 - c^2) : :`
+   * **Barycentrics:** :math:`a^{2} ((a^{2} - b^{2} - c^{2})^{2} - b^{2} c^{2}) / (a^{2} - b^{2} - c^{2}) : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(186) <X(186)>` = 3\*\ :ref:`X(2) <X(2)>` + (J^2 - 3)\*\ :ref:`X(3) <X(3)>` = 2 :ref:`X(3) <X(3)>` + :ref:`X(23) <X(23)>` = (a^2 - b^2 - c^2)(a^2 + b^2 - c^2)(a^2 - b^2 + c^2)\*\ :ref:`X(3) <X(3)>` + (a^2b^2c^2)\*\ :ref:`X(4) <X(4)>`
-
-.. container:: note-item
-
-   :ref:`X(186) <X(186)>` lies.
+   * :ref:`X(186) <X(186)>` = :math:`3` :ref:`X(2) <X(2)>` + :math:`(J^{2} - 3)` :ref:`X(3) <X(3)>` = :math:`2` :ref:`X(3) <X(3)>` + :ref:`X(23) <X(23)>` = :math:`(a^{2} - b^{2} - c^{2})(a^{2} + b^{2} - c^{2})(a^{2} - b^{2} + c^{2})` :ref:`X(3) <X(3)>` + :math:`(a^{2}b^{2}c^{2})` :ref:`X(4) <X(4)>`
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines
@@ -66,31 +62,31 @@ X(186) = INVERSE-IN-CIRCUMCIRCLE OF X(4)
    * :ref:`X(186) <X(186)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of anticomplement of X(38534)
    * :ref:`X(186) <X(186)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(94) <X(94)>` (line :ref:`X(5) <X(5)>`\ \ :ref:`X(523) <X(523)>`)
    * :ref:`X(186) <X(186)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X(94) <X(94)>`
-   * :ref:`X(186) <X(186)>` = perspector of ABC and the reflection of the circumorthic triangle in the Euler line
-   * :ref:`X(186) <X(186)>` = perspector of ABC and the reflection of the Kosnita triangle in the Euler line
-   * :ref:`X(186) <X(186)>` = perspector of ABC and the reflection of the :term:`orthic triangle <orthic-triangle>` in the orthic axis
+   * :ref:`X(186) <X(186)>` = perspector of :g:`ABC << A B C >>` and the reflection of the circumorthic triangle in the Euler line
+   * :ref:`X(186) <X(186)>` = perspector of :g:`ABC << A B C >>` and the reflection of the Kosnita triangle in the Euler line
+   * :ref:`X(186) <X(186)>` = perspector of :g:`ABC << A B C >>` and the reflection of the :term:`orthic triangle <orthic-triangle>` in the orthic axis
    * :ref:`X(186) <X(186)>` = reflection of :ref:`X(403) <X(403)>` in the orthic axis
    * :ref:`X(186) <X(186)>` = crosspoint of :ref:`X(3) <X(3)>` and X(2931) wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
    * :ref:`X(186) <X(186)>` = homothetic center of circumorthic and Kosnita triangles
    * :ref:`X(186) <X(186)>` = perspector of circumconic through polar conjugates of PU(5)
    * :ref:`X(186) <X(186)>` = Hofstadter 3 point
    * :ref:`X(186) <X(186)>` = :term:`antigonal image <antigonal-image>` of X(5962)
-   * :ref:`X(186) <X(186)>` = :ref:`X(484) <X(484)>`-of-orthic-triangle if ABC is acute
+   * :ref:`X(186) <X(186)>` = :ref:`X(484) <X(484)>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(186) <X(186)>` = Thomson-isogonal conjugate of X(15131)
    * :ref:`X(186) <X(186)>` = Ehrmann-vertex-to-orthic :term:`similarity image <similarity-image>` of X(3153)
    * :ref:`X(186) <X(186)>` = {:ref:`X(3) <X(3)>`,\ :ref:`X(4) <X(4)>`}-harmonic conjugate of X(3520)
-   * :ref:`X(186) <X(186)>` = intersection of the tangent to hyperbola {A,B,C,\ :ref:`X(3) <X(3)>`,\ :ref:`X(15) <X(15)>`}} at :ref:`X(15) <X(15)>` and the tangent to hyperbola {A,B,C,\ :ref:`X(3) <X(3)>`,\ :ref:`X(16) <X(16)>`}} at :ref:`X(16) <X(16)>`
+   * :ref:`X(186) <X(186)>` = intersection of the tangent to hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(3) <X(3)>`,\ :ref:`X(15) <X(15)>`}} at :ref:`X(15) <X(15)>` and the tangent to hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(3) <X(3)>`,\ :ref:`X(16) <X(16)>`}} at :ref:`X(16) <X(16)>`
 
 Notes
 -----
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(186) <X(186)>` has Shinagawa coefficients (4F, -E - 4F).
+   As a point on the Euler line, :ref:`X(186) <X(186)>` has Shinagawa coefficients :math:`(4F, -E - 4F)`.
 
 .. container:: note-item
 
-   Let P and Q be circumcircle antipodes. :ref:`X(186) <X(186)>` is the Euler line intercept, other than :ref:`X(20) <X(20)>`, of circle {:ref:`X(20) <X(20)>`,P,Q}} for all P, Q. (Randy Hutson, August 30, 2020)
+   Let :g:`P <P>` and :g:`Q <Q>` be circumcircle antipodes. :ref:`X(186) <X(186)>` is the Euler line intercept, other than :ref:`X(20) <X(20)>`, of circle {:ref:`X(20) <X(20)>`,P,Q}} for all P, Q. (Randy Hutson, August 30, 2020)
 
 .. container:: note-item
 

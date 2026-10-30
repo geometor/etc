@@ -16,16 +16,12 @@ X(898) = ISOGONAL CONJUGATE OF X(891)
    :alt: X(898) = ISOGONAL CONJUGATE OF X(891)
    :align: center
 
-   **X(898) = ISOGONAL CONJUGATE OF X(891)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(898) = ISOGONAL CONJUGATE OF X(891)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`1/[(b - c)(2bc - ab - ac)] : : (M. Iliev, 5/13/07)`
+   | **Trilinears:** :math:`1/[(b - c)(2bc - ab - ac)] : :` (M. Iliev, 5/13/07)
    | **Search Value (6, 9, 13):** :math:`2.291989304945`
-
-.. container:: note-item
-
-   :ref:`X(898) <X(898)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 7 lines
@@ -37,7 +33,7 @@ X(898) = ISOGONAL CONJUGATE OF X(891)
    :badge: 7 relations
 
    * :ref:`X(898) <X(898)>` = isogonal conjugate of :ref:`X(891) <X(891)>`
-   * :ref:`X(898) <X(898)>` = intersection, other than A, B, C, of circumcircle and hyperbola {A,B,C,PU(26),PU(33)}}
+   * :ref:`X(898) <X(898)>` = intersection, other than :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, of circumcircle and hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(26),PU(33)}}
    * :ref:`X(898) <X(898)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(6) <X(6)>`\ \ :ref:`X(100) <X(100)>`
    * :ref:`X(898) <X(898)>` = Ψ(:ref:`X(1) <X(1)>`, :ref:`X(190) <X(190)>`)
    * :ref:`X(898) <X(898)>` = Ψ(:ref:`X(6) <X(6)>`, :ref:`X(100) <X(100)>`)

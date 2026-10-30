@@ -10,23 +10,19 @@ X(489) = CEVAPOINT OF X(20) AND X(487)
 
 .. enunciation::
 
-   :ref:`X(489) <X(489)>` is a perspector of triangles associated with squares that circumscribe ABC. For details and reference, see :ref:`X(488) <X(488)>`. (:person:`Floor van Lamoen <floor-van-lamoen>`, 4/29/98)
+   :ref:`X(489) <X(489)>` is a perspector of triangles associated with squares that circumscribe :g:`ABC << A B C >>`. For details and reference, see :ref:`X(488) <X(488)>`. (:person:`Floor van Lamoen <floor-van-lamoen>`, 4/29/98)
 
 .. figure:: x-00489.svg
    :alt: X(489) = CEVAPOINT OF X(20) AND X(487)
    :align: center
 
-   **X(489) = CEVAPOINT OF X(20) AND X(487)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(489) = CEVAPOINT OF X(20) AND X(487)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = (cos A)(1 - csc A sin B sin C) - cos B cos C
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = (\cos A)(1 - \csc A \sin B \sin C) - \cos B \cos C`
    | **Barycentrics:** :math:`(\sin A)f(A,B,C) : (\sin B)f(B,C,A) : (\sin C)f(C,A,B)`
    | **Search Value (6, 9, 13):** :math:`-0.696543699903`
-
-.. container:: note-item
-
-   :ref:`X(489) <X(489)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 7 lines

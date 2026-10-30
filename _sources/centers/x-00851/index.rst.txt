@@ -10,13 +10,13 @@ X(851) = X(65)-HIRST INVERSE OF X(73)
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(851) <X(851)>` has Shinagawa coefficients ($bcS\ :sub:`B`\ S\ :sub:`C`\ $,-$bc$S\ :sup:`2`).
+   As a point on the Euler line, :ref:`X(851) <X(851)>` has Shinagawa coefficients :math:`(\$bcS_{B}S_{C}\$,-\$bc\$S^{2})`.
 
 .. figure:: x-00851.svg
    :alt: X(851) = X(65)-HIRST INVERSE OF X(73)
    :align: center
 
-   **X(851) = X(65)-HIRST INVERSE OF X(73)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(851) = X(65)-HIRST INVERSE OF X(73)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,10 +28,6 @@ X(851) = X(65)-HIRST INVERSE OF X(73)
 
    * **Trilinears:** :math:`(\cos A + \cos B + \cos C) \csc A - (\csc A + \csc B + \csc C) \cos A : :`
    * **Trilinears:** :math:`(\sec A + \sec B + \sec C) \csc A - (\csc A + \csc B + \csc C) \sec A : :`
-
-.. container:: note-item
-
-   :ref:`X(851) <X(851)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines

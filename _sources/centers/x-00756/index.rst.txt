@@ -16,17 +16,13 @@ X(756) = CROSSPOINT OF X(10) AND X(37)
    :alt: X(756) = CROSSPOINT OF X(10) AND X(37)
    :align: center
 
-   **X(756) = CROSSPOINT OF X(10) AND X(37)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(756) = CROSSPOINT OF X(10) AND X(37)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`(b + c)^{2} : (c + a)^{2} : (a + b)^{2}`
    | **Barycentrics:** :math:`a(b + c)^{2} : b(c + a)^{2} : c(a + b)^{2}`
    | **Search Value (6, 9, 13):** :math:`2.523359872236`
-
-.. container:: note-item
-
-   :ref:`X(756) <X(756)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 12 lines

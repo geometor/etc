@@ -10,18 +10,18 @@ X(546) = MIDPOINT OF X(4) AND X(5)
 
 .. enunciation::
 
-   Let A'B'C', A″B″C″ be the outer and inner Vecten triangles, resp. Let (Oa) be the circle inscribed in square A'BA″C, and define (Ob) and (Oc) cyclically. :ref:`X(546) <X(546)>` is the radical center of circles (Oa), (Ob), (Oc). (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
+   Let :g:`A'B'C' << A' B' C' >>`, :g:`A″B″C″ << A″ B″ C″ >>` be the outer and inner Vecten triangles, resp. Let (:g:`O_{a} <O_a>`) be the circle inscribed in square A':g:`BA″C << B A″ C >>`, and define (:g:`O_{b} <O_b>`) and (:g:`O_{c} <O_c>`) cyclically. :ref:`X(546) <X(546)>` is the radical center of circles (:g:`O_{a} <O_a>`), (:g:`O_{b} <O_b>`), (:g:`O_{c} <O_c>`). (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
 
 .. figure:: x-00546.svg
    :alt: X(546) = MIDPOINT OF X(4) AND X(5)
    :align: center
 
-   **X(546) = MIDPOINT OF X(4) AND X(5)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(546) = MIDPOINT OF X(4) AND X(5)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`3 \cos(B - C) - 2 \cos A : :`
-   | **Barycentrics:** :math:`2 a^4 + a^2 (b^2 + c^2) - 3 (b^2 - c^2)^2 : :`
+   | **Barycentrics:** :math:`2 a^{4} + a^{2} (b^{2} + c^{2}) - 3 (b^{2} - c^{2})^{2} : :`
    | **Search Value (6, 9, 13):** :math:`-2.561873834646`
 
 .. collapse:: Alternate Coordinates
@@ -32,11 +32,7 @@ X(546) = MIDPOINT OF X(4) AND X(5)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(546) <X(546)>` = :ref:`X(3) <X(3)>` - 3\*\ :ref:`X(5) <X(5)>` = :ref:`X(4) <X(4)>` + :ref:`X(5) <X(5)>` = :ref:`X(3) <X(3)>` + 3\*\ :ref:`X(4) <X(4)>`
-
-.. container:: note-item
-
-   :ref:`X(546) <X(546)>` lies.
+   * :ref:`X(546) <X(546)>` = :ref:`X(3) <X(3)>` - :math:`3` :ref:`X(5) <X(5)>` = :ref:`X(4) <X(4)>` + :ref:`X(5) <X(5)>` = :ref:`X(3) <X(3)>` + :math:`3` :ref:`X(4) <X(4)>`
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines
@@ -53,25 +49,25 @@ X(546) = MIDPOINT OF X(4) AND X(5)
    * :ref:`X(546) <X(546)>` = :term:`anticomplement <anticomplement>` of X(3530)
    * :ref:`X(546) <X(546)>` = circumcircle-inverse of X(37922)
    * :ref:`X(546) <X(546)>` = orthocentroidal-circle-inverse of :ref:`X(382) <X(382)>`
-   * :ref:`X(546) <X(546)>` = X(1385)-of-orthic-triangle if ABC is acute
+   * :ref:`X(546) <X(546)>` = X(1385)-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(546) <X(546)>` = :ref:`X(5) <X(5)>`-of-Euler-triangle
    * :ref:`X(546) <X(546)>` = {:ref:`X(3) <X(3)>`,\ :ref:`X(5) <X(5)>`}-harmonic conjugate of X(3628)
    * :ref:`X(546) <X(546)>` = :ref:`X(5) <X(5)>`-of-Ehrmann-mid-triangle
    * :ref:`X(546) <X(546)>` = Ehrmann-side-to-orthic :term:`similarity image <similarity-image>` of :ref:`X(5) <X(5)>`
    * :ref:`X(546) <X(546)>` = Johnson-to-Ehrmann-mid similarity image of :ref:`X(5) <X(5)>`
    * :ref:`X(546) <X(546)>` = homothetic center of Ehrmann mid-triangle and Euler triangle
-   * :ref:`X(546) <X(546)>` = radical center of de Longchamps circles of ABC and 1st and 2nd Ehrmann inscribed triangles
+   * :ref:`X(546) <X(546)>` = radical center of de Longchamps circles of :g:`ABC << A B C >>` and 1st and 2nd Ehrmann inscribed triangles
 
 Notes
 -----
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(546) <X(546)>` has Shinagawa coefficients (1,5).
+   As a point on the Euler line, :ref:`X(546) <X(546)>` has Shinagawa coefficients :math:`(1,5)`.
 
 .. container:: note-item
 
-   Let M\ :sub:`A` denote the point in which the A-median meets side BC. On 11/05/03, Andrew Crane noted that :ref:`X(546) <X(546)>` is the radical center of circles (A), (B), (C), where (A) denotes the circle centered at A and passing through M\ :sub:`A`, and (B) and (C) are defined cyclically.
+   Let :g:`M_{A} <M_A>` denote the point in which the :g:`A <A>`-median meets side :g:`BC <[ B C ]>`. On 11/05/03, Andrew Crane noted that :ref:`X(546) <X(546)>` is the radical center of circles (A), (B), (C), where (A) denotes the circle centered at :g:`A <A>` and passing through :g:`M_{A} <M_A>`, and (B) and (C) are defined cyclically.
 
 .. toctree::
    :hidden:

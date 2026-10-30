@@ -27,6 +27,7 @@ Functions
 
    geometor.etc.glossary.apparatus_slug
    geometor.etc.glossary.clean_html_entities
+   geometor.etc.glossary.formula_html_to_latex
    geometor.etc.glossary.convert_inline_html_to_rst
    geometor.etc.glossary.filter_center_refs
    geometor.etc.glossary.extract_glossary_terms
@@ -37,6 +38,7 @@ Functions
    geometor.etc.glossary.build_citations_json
    geometor.etc.glossary.generate_persons_rst
    geometor.etc.glossary.generate_bibliography_rst
+   geometor.etc.glossary.wrap_geom_refs
    geometor.etc.glossary.wrap_glossary_terms
    geometor.etc.glossary.wrap_persons_and_citations
 
@@ -63,6 +65,11 @@ Module Contents
 .. py:function:: clean_html_entities(text: str) -> str
 
    Fix common entity typos in ETC HTML and unescape all HTML entities to UTF-8.
+
+
+.. py:function:: formula_html_to_latex(formula_html: str) -> str
+
+   Convert an HTML coordinate or algebraic formula into clean LaTeX suitable for `:math:`.
 
 
 .. py:function:: convert_inline_html_to_rst(fragment: str, valid_centers: set[int] | None = None) -> str
@@ -113,6 +120,11 @@ Module Contents
 .. py:function:: generate_bibliography_rst() -> str
 
    Generate `docsrc/bibliography.rst` with `#cite-<slug>` anchors for all `:cite:` links.
+
+
+.. py:function:: wrap_geom_refs(text: str) -> str
+
+   Wrap geometric elements (triangles, segments, lines, circles, points) in `:g:` roles.
 
 
 .. py:function:: wrap_glossary_terms(text: str, terms: dict[str, Any] | list[str], seen_slugs: set[str] | None = None) -> str

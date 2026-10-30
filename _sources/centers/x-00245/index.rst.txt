@@ -10,22 +10,19 @@ X(245) = X(1)-LINE CONJUGATE OF X(110)
 
 .. enunciation::
 
-   Barycentrics (sin A)f(A,B,C) : (sin B)f(B,C,A) : (sin C)f(C,A,B)
+   :ref:`X(245) <X(245)>` = :ref:`X(1) <X(1)>`-:term:`line conjugate <line-conjugate>` of :ref:`X(110) <X(110)>`
 
 .. figure:: x-00245.svg
    :alt: X(245) = X(1)-LINE CONJUGATE OF X(110)
    :align: center
 
-   **X(245) = X(1)-LINE CONJUGATE OF X(110)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(245) = X(1)-LINE CONJUGATE OF X(110)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where, f(A,B,C) = csc\ :sup:`2`\ (C - A) + csc(C - B) [csc(C - A) -csc(B - A)] + csc\ :sup:`2`\ (A - B)
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = \csc^{2}(C - A) + \csc(C - B) [\csc(C - A) -\csc(B - A)] + \csc^{2}(A - B)`
+   | **Barycentrics:** :math:`(\sin A)f(A,B,C) : (\sin B)f(B,C,A) : (\sin C)f(C,A,B)`
    | **Search Value (6, 9, 13):** :math:`2.204587745588`
-
-.. container:: note-item
-
-   :ref:`X(245) <X(245)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines
@@ -36,7 +33,7 @@ X(245) = X(1)-LINE CONJUGATE OF X(110)
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(245) <X(245)>` = :ref:`X(1) <X(1)>`-:term:`line conjugate <line-conjugate>` of :ref:`X(110) <X(110)>`
+   * :ref:`X(245) <X(245)>` = :ref:`X(1) <X(1)>`-line conjugate of :ref:`X(110) <X(110)>`
 
 .. toctree::
    :hidden:

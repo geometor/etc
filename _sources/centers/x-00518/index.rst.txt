@@ -16,21 +16,17 @@ X(518) = ISOGONAL CONJUGATE OF X(105)
    :alt: X(518) = ISOGONAL CONJUGATE OF X(105)
    :align: center
 
-   **X(518) = ISOGONAL CONJUGATE OF X(105)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(518) = ISOGONAL CONJUGATE OF X(105)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = ab + ac - b\ :sup:`2` - c\ :sup:`2`
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = ab + ac - b^{2} - c^{2}`
    | **Barycentrics:** :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
    * **Trilinears:** :math:`as - S_{\omega } : bs - S_{\omega } : cs - S_{\omega }`
-
-.. container:: note-item
-
-   :ref:`X(518) <X(518)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 95 lines
@@ -55,7 +51,7 @@ X(518) = ISOGONAL CONJUGATE OF X(105)
    * :ref:`X(518) <X(518)>` = crossdifference of PU(i) for i in (46, 54)
    * :ref:`X(518) <X(518)>` = :ref:`X(6) <X(6)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(673) <X(673)>`
    * :ref:`X(518) <X(518)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(665) <X(665)>`\ X(1642)
-   * :ref:`X(518) <X(518)>` = perspector of conic {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(100) <X(100)>`,PU(112)}
+   * :ref:`X(518) <X(518)>` = perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(100) <X(100)>`,PU(112)}
    * :ref:`X(518) <X(518)>` = trilinear square root of X(4712)
    * :ref:`X(518) <X(518)>` = Cundy-Parry Psi transform of X(14268)
    * :ref:`X(518) <X(518)>` = Thomson-isogonal conjugate of X(1292)
@@ -69,7 +65,7 @@ Notes
 
 .. container:: note-item
 
-   Let Ia be the reflection of :ref:`X(1) <X(1)>` in the perpendicular bisector of BC, and define Ib and Ic cyclically; then :ref:`X(518) <X(518)>` = :ref:`X(528) <X(528)>` of IaIbIc. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
+   Let :g:`I_{a} <I_a>` be the reflection of :ref:`X(1) <X(1)>` in the perpendicular bisector of :g:`BC <[ B C ]>`, and define :g:`I_{b} <I_b>` and :g:`I_{c} <I_c>` cyclically; then :ref:`X(518) <X(518)>` = :ref:`X(528) <X(528)>` of :g:`I_{a}I_{b}I_{c} << I_a I_b I_c >>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
 
 .. toctree::
    :hidden:

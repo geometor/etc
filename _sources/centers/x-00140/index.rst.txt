@@ -10,7 +10,7 @@ X(140) = MIDPOINT OF X(3) AND X(5)
 
 .. enunciation::
 
-   Let A' be the midpoint between A and :ref:`X(3) <X(3)>`, and define B' and C' cyclically; the triangle A'B'C' is homothetic to the :term:`medial triangle <medial-triangle>`, and the center of homothety is :ref:`X(140) <X(140)>`. Let A'' be the centroid of the triangle BC\ :ref:`X(3) <X(3)>`, and define B'' and C'' cyclically; then A''B''C'' is homothetic to ABC, and the center of homothety is :ref:`X(140) <X(140)>`. Also, :ref:`X(140) <X(140)>` is the center of the conic consisting of the centers of all the conics which pass through A, B, C, and :ref:`X(3) <X(3)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011) This conic is also the locus of :term:`crosssums <crosssum>` of the intersections of the circumcircle and lines through :ref:`X(4) <X(4)>`. Furthmore, this conic is the bicevian conic of :ref:`X(2) <X(2)>` and :ref:`X(3) <X(3)>`. (Randy Hutson, 9/14/2016)
+   Let :g:`A' <A'>` be the midpoint between A and :ref:`X(3) <X(3)>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically; the triangle :g:`A'B'C' << A' B' C' >>` is homothetic to the :term:`medial triangle <medial-triangle>`, and the center of homothety is :ref:`X(140) <X(140)>`. Let :g:`A″ <A″>` be the centroid of the triangle :g:`BC <[ B C ]>`\ :ref:`X(3) <X(3)>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically; then :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to :g:`ABC << A B C >>`, and the center of homothety is :ref:`X(140) <X(140)>`. Also, :ref:`X(140) <X(140)>` is the center of the conic consisting of the centers of all the conics which pass through :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, and :ref:`X(3) <X(3)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011) This conic is also the locus of :term:`crosssums <crosssum>` of the intersections of the circumcircle and lines through :ref:`X(4) <X(4)>`. Furthmore, this conic is the bicevian conic of :ref:`X(2) <X(2)>` and :ref:`X(3) <X(3)>`. (Randy Hutson, 9/14/2016)
 
 .. _preamble-0004:
 
@@ -29,7 +29,7 @@ X(140) = MIDPOINT OF X(3) AND X(5)
    :alt: X(140) = MIDPOINT OF X(3) AND X(5)
    :align: center
 
-   **X(140) = MIDPOINT OF X(3) AND X(5)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(140) = MIDPOINT OF X(3) AND X(5)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -45,17 +45,13 @@ X(140) = MIDPOINT OF X(3) AND X(5)
    * **Trilinears:** :math:`2 \sec A + 3 \sec B \sec C : 2 \sec B + 3 \sec C \sec A : 2 \sec C + 3 \sec A \sec B`
    * **Trilinears:** :math:`bc[b \cos(C - A) + c \cos(B - A)] : :`
    * **Barycentrics:** :math:`3 - \cot B \cot C : :`
-   * **Barycentrics:** :math:`2a^4 - 3a^2(b^2 + c^2) + (b^2 - c^2)^2 : :`
-   * **Barycentrics:** :math:`3 S^2 - SB SC : :`
+   * **Barycentrics:** :math:`2a^{4} - 3a^{2}(b^{2} + c^{2}) + (b^{2} - c^{2})^{2} : :`
+   * **Barycentrics:** :math:`3 S^{2} - S_{B} S_{C} : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(140) <X(140)>` = 3\*\ :ref:`X(2) <X(2)>` + :ref:`X(3) <X(3)>` = 3\*\ :ref:`X(2) <X(2)>` - :ref:`X(5) <X(5)>` = 3\*\ :ref:`X(3) <X(3)>` + :ref:`X(4) <X(4)>` = :ref:`X(4) <X(4)>` - 3\*\ :ref:`X(5) <X(5)>`
-
-.. container:: note-item
-
-   :ref:`X(140) <X(140)>` lies.
+   * :ref:`X(140) <X(140)>` = :math:`3` :ref:`X(2) <X(2)>` + :ref:`X(3) <X(3)>` = :math:`3` :ref:`X(2) <X(2)>` - :ref:`X(5) <X(5)>` = :math:`3` :ref:`X(3) <X(3)>` + :ref:`X(4) <X(4)>` = :ref:`X(4) <X(4)>` - :math:`3` :ref:`X(5) <X(5)>`
 
 .. collapse:: Incident Central Lines
    :badge: 399 lines
@@ -79,7 +75,7 @@ X(140) = MIDPOINT OF X(3) AND X(5)
    * :ref:`X(140) <X(140)>` = crosspoint of the two Napoleon points, :ref:`X(17) <X(17)>` and :ref:`X(18) <X(18)>`
    * :ref:`X(140) <X(140)>` = inverse-in-orthocentroidal-circle of X(1656)
    * :ref:`X(140) <X(140)>` = :ref:`X(5) <X(5)>`-of-medial triangle
-   * :ref:`X(140) <X(140)>` = centroid of the quadrangle ABC\ :ref:`X(3) <X(3)>`
+   * :ref:`X(140) <X(140)>` = centroid of the quadrangle :g:`ABC << A B C >>`\ :ref:`X(3) <X(3)>`
    * :ref:`X(140) <X(140)>` = perspector of circumconic centered at :ref:`X(233) <X(233)>`
    * :ref:`X(140) <X(140)>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X(233) <X(233)>`
    * :ref:`X(140) <X(140)>` = intersection of tangents to Evans conic at X(3070) and X(3071)
@@ -90,14 +86,14 @@ X(140) = MIDPOINT OF X(3) AND X(5)
    * :ref:`X(140) <X(140)>` = inverse-in-{circumcircle, nine-point circle}-inverter of X(5189)
    * :ref:`X(140) <X(140)>` = center of inverse-in-{circumcircle, nine-point circle}-inverter of anticomplementary circle
    * :ref:`X(140) <X(140)>` = centroid of the six circumcenters in the construction of the van Lamoen circle.
-   * :ref:`X(140) <X(140)>` = centroid of ABC\ :ref:`X(3) <X(3)>`
+   * :ref:`X(140) <X(140)>` = centroid of :g:`ABC << A B C >>`\ :ref:`X(3) <X(3)>`
    * :ref:`X(140) <X(140)>` = Kosnita(:ref:`X(3) <X(3)>`,\ :ref:`X(2) <X(2)>`) point
    * :ref:`X(140) <X(140)>` = center of circle that is locus of crosssums of antipodes on the 2nd Lemoine circle
    * :ref:`X(140) <X(140)>` = {:ref:`X(2) <X(2)>`,\ :ref:`X(5) <X(5)>`}-harmonic conjugate of X(3628)
    * :ref:`X(140) <X(140)>` = {:ref:`X(3) <X(3)>`,\ :ref:`X(4) <X(4)>`}-harmonic conjugate of :ref:`X(550) <X(550)>`
    * :ref:`X(140) <X(140)>` = {:ref:`X(4) <X(4)>`,\ :ref:`X(5) <X(5)>`}-harmonic conjugate of X(3850)
    * :ref:`X(140) <X(140)>` = homothetic center of :ref:`X(4) <X(4)>`-altimedial and :ref:`X(140) <X(140)>`-anti-altimedial triangles
-   * :ref:`X(140) <X(140)>` = X(3579)-of-orthic-triangle if ABC is acute
+   * :ref:`X(140) <X(140)>` = X(3579)-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(140) <X(140)>` = pole of van Aubel line wrt conic {:ref:`X(2) <X(2)>`,\ :ref:`X(15) <X(15)>`,\ :ref:`X(16) <X(16)>`,\ :ref:`X(17) <X(17)>`,\ :ref:`X(18) <X(18)>`}}
    * :ref:`X(140) <X(140)>` = homothetic center of McCay and Moses-Steiner osculatory triangles
 
@@ -106,19 +102,19 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(140) <X(140)>` has Shinagawa coefficients (3, -1).
+   As a point on the Euler line, :ref:`X(140) <X(140)>` has Shinagawa coefficients :math:`(3, -1)`.
 
 .. container:: note-item
 
-   Let Oa be the circle centered at A and passing through the A-vertex of the Euler triangle; define Ob and Oc cyclically. The radical center of Oa, Ob, Oc is :ref:`X(140) <X(140)>`. (Randy Hutson, September 14, 2016)
+   Let :g:`O_{a} <O_a>` be the circle centered at :g:`A <A>` and passing through the :g:`A <A>`-vertex of the Euler triangle; define :g:`O_{b} <O_b>` and :g:`O_{c} <O_c>` cyclically. The radical center of :g:`O_{a} <O_a>`, :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>` is :ref:`X(140) <X(140)>`. (Randy Hutson, September 14, 2016)
 
 .. container:: note-item
 
-   Let Oa be the circle centered at A with radius 1/2\*sqrt(b^2 + c^2), and define Ob and Oc cyclically. The radical center of Oa, Ob, Oc is :ref:`X(140) <X(140)>`. (Randy Hutson, September 14, 2016)
+   Let :g:`O_{a} <O_a>` be the circle centered at :g:`A <A>` with radius 1/2\*\ :math:`\sqrt{b^{2} + c^{2}}`, and define :g:`O_{b} <O_b>` and :g:`O_{c} <O_c>` cyclically. The radical center of :g:`O_{a} <O_a>`, :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>` is :ref:`X(140) <X(140)>`. (Randy Hutson, September 14, 2016)
 
 .. container:: note-item
 
-   Let P be a point on the circumcircle. The bicevian conic of :ref:`X(2) <X(2)>` and P is a rectangular hyperbola, H. Let X be the center of H. As P varies, X traces a circle centered at :ref:`X(140) <X(140)>`. (Randy Hutson, November 2, 2017)
+   Let :g:`P <P>` be a point on the circumcircle. The bicevian conic of :ref:`X(2) <X(2)>` and P is a rectangular hyperbola, H. Let :g:`X <X>` be the center of H. As P varies, X traces a circle centered at :ref:`X(140) <X(140)>`. (Randy Hutson, November 2, 2017)
 
 .. container:: note-item
 

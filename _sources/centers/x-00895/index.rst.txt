@@ -10,13 +10,13 @@ X(895) = ISOGONAL CONJUGATE OF X(468)
 
 .. enunciation::
 
-   Let A″B″C″ be the 2nd Ehrmann triangle. Let A\* be the :term:`cevapoint <cevapoint>` of B″ and C″, and define B\* and C\* cyclically. The lines AA\*, BB\*, CC\* concur in :ref:`X(895) <X(895)>`. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
+   Let :g:`A″B″C″ << A″ B″ C″ >>` be the 2nd Ehrmann triangle. Let :g:`A* <A*>` be the :term:`cevapoint <cevapoint>` of :g:`B″ <B″>` and :g:`C″ <C″>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(895) <X(895)>`. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
 
 .. figure:: x-00895.svg
    :alt: X(895) = ISOGONAL CONJUGATE OF X(468)
    :align: center
 
-   **X(895) = ISOGONAL CONJUGATE OF X(468)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(895) = ISOGONAL CONJUGATE OF X(468)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -48,9 +48,9 @@ X(895) = ISOGONAL CONJUGATE OF X(468)
    * :ref:`X(895) <X(895)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X(37778) (line :ref:`X(690) <X(690)>`\ X(12828))
    * :ref:`X(895) <X(895)>` = MacBeath-circumconic-antipode of :ref:`X(110) <X(110)>`
    * :ref:`X(895) <X(895)>` = :ref:`X(92) <X(92)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(187) <X(187)>`
-   * :ref:`X(895) <X(895)>` = perspector of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of 4th Brocard triangle
+   * :ref:`X(895) <X(895)>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of 4th Brocard triangle
    * :ref:`X(895) <X(895)>` = :term:`eigencenter <eigencenter>` of 2nd Ehrmann triangle
-   * :ref:`X(895) <X(895)>` = perspector of 2nd Ehrmann triangle and cross-triangle of ABC and 2nd Ehrmann triangle
+   * :ref:`X(895) <X(895)>` = perspector of 2nd Ehrmann triangle and cross-triangle of :g:`ABC << A B C >>` and 2nd Ehrmann triangle
 
 .. toctree::
    :hidden:

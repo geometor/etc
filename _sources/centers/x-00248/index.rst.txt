@@ -16,7 +16,7 @@ X(248) = X(4)-LINE CONJUGATE OF X(132)
    :alt: X(248) = X(4)-LINE CONJUGATE OF X(132)
    :align: center
 
-   **X(248) = X(4)-LINE CONJUGATE OF X(132)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(248) = X(4)-LINE CONJUGATE OF X(132)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,11 +27,7 @@ X(248) = X(4)-LINE CONJUGATE OF X(132)
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`a^2 (a^2 - b^2 - c^2)/(b^4 + c^4 - a^2 b^2 - a^2 c^2) : :`
-
-.. container:: note-item
-
-   :ref:`X(248) <X(248)>` lies.
+   * **Barycentrics:** :math:`a^{2} (a^{2} - b^{2} - c^{2})/(b^{4} + c^{4} - a^{2} b^{2} - a^{2} c^{2}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 11 lines
@@ -51,7 +47,7 @@ X(248) = X(4)-LINE CONJUGATE OF X(132)
    * :ref:`X(248) <X(248)>` = crossdifference of every pair of points on line :ref:`X(114) <X(114)>`\ \ :ref:`X(132) <X(132)>`
    * :ref:`X(248) <X(248)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(39085)
    * :ref:`X(248) <X(248)>` = :ref:`X(92) <X(92)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(511) <X(511)>`
-   * :ref:`X(248) <X(248)>` = perspector of conic {A,B,C,\ :ref:`X(685) <X(685)>`,X(2065),X(2715),X(15407),X(17932)}}
+   * :ref:`X(248) <X(248)>` = perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(685) <X(685)>`,X(2065),X(2715),X(15407),X(17932)}}
    * :ref:`X(248) <X(248)>` = barycentric product :ref:`X(3) <X(3)>`\ \*\ :ref:`X(98) <X(98)>`
    * :ref:`X(248) <X(248)>` = barycentric product of circumcircle intercepts of line :ref:`X(3) <X(3)>`\ \ :ref:`X(525) <X(525)>`
 

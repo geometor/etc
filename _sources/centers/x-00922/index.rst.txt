@@ -16,16 +16,12 @@ X(922) = POINT ALBALI
    :alt: X(922) = POINT ALBALI
    :align: center
 
-   **X(922) = POINT ALBALI** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(922) = POINT ALBALI** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`a^{2}(b^{2} + c^{2} - 2a^{2}) (M. Iliev, 5/13/07)`
+   | **Trilinears:** :math:`a^{2}(b^{2} + c^{2} - 2a^{2})` (M. Iliev, 5/13/07)
    | **Search Value (6, 9, 13):** :math:`-0.729495489993`
-
-.. container:: note-item
-
-   :ref:`X(922) <X(922)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines

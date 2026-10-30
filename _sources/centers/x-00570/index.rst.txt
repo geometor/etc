@@ -16,21 +16,17 @@ X(570) = ORTHOGONAL OF X(52)
    :alt: X(570) = ORTHOGONAL OF X(52)
    :align: center
 
-   **X(570) = ORTHOGONAL OF X(52)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(570) = ORTHOGONAL OF X(52)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\sin A + \sin 2A \cos(B - C) : : (Joe Goggins, 11/26/08)`
+   | **Trilinears:** :math:`\sin A + \sin 2A \cos(B - C) : :` (Joe Goggins, 11/26/08)
    | **Search Value (6, 9, 13):** :math:`2.856483116793`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`(\sin A)(1 - 2 \sin^2 B - 2 \sin^2 C) : :`
-
-.. container:: note-item
-
-   :ref:`X(570) <X(570)>` lies.
+   * **Trilinears:** :math:`(\sin A)(1 - 2 \sin^{2} B - 2 \sin^{2} C) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines
@@ -45,7 +41,7 @@ X(570) = ORTHOGONAL OF X(52)
    * :ref:`X(570) <X(570)>` = :term:`complement <complement>` of :ref:`X(311) <X(311)>`
    * :ref:`X(570) <X(570)>` = :term:`crosspoint <crosspoint>` of :ref:`X(2) <X(2)>` and :ref:`X(54) <X(54)>`
    * :ref:`X(570) <X(570)>` = :term:`crosssum <crosssum>` of :ref:`X(5) <X(5)>` and :ref:`X(6) <X(6)>`
-   * :ref:`X(570) <X(570)>` = :ref:`X(71) <X(71)>`-of-orthic-triangle if ABC is acute
+   * :ref:`X(570) <X(570)>` = :ref:`X(71) <X(71)>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(570) <X(570)>` = {:ref:`X(6) <X(6)>`,\ :ref:`X(39) <X(39)>`}-harmonic conjugate of X(5421)
    * :ref:`X(570) <X(570)>` = perspector of circumconic centered at X(1209)
    * :ref:`X(570) <X(570)>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through X(1209)

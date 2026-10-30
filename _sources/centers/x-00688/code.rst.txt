@@ -12,7 +12,7 @@ X(688) = CROSSDIFFERENCE OF X(6) AND X(76) — Code
    :alt: X(688) = CROSSDIFFERENCE OF X(6) AND X(76)
    :align: center
 
-   **X(688) = CROSSDIFFERENCE OF X(6) AND X(76)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(688) = CROSSDIFFERENCE OF X(6) AND X(76)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

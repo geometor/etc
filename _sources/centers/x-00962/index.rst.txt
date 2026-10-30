@@ -16,7 +16,7 @@ X(962) = LONGUET-HIGGINS POINT
    :alt: X(962) = LONGUET-HIGGINS POINT
    :align: center
 
-   **X(962) = LONGUET-HIGGINS POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(962) = LONGUET-HIGGINS POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -29,11 +29,7 @@ X(962) = LONGUET-HIGGINS POINT
    * **Trilinears:** :math:`\sin B \sin C + \cos B + \cos C - \cos A - 1 : :`
    * **Trilinears:** :math:`\cos B + \cos C + \cos B \cos C - 1 : :`
    * **Trilinears:** :math:`1 - 2 \cos^{2}(B/2) \cos^{2}(C/2) : :`
-   * **Trilinears:** :math:`\cos A' : :`, where A' is the angle formed by the tangents from :ref:`X(1) <X(1)>` to the A-excircle
-
-.. container:: note-item
-
-   :ref:`X(962) <X(962)>` lies.
+   * **Trilinears:** :math:`\cos A' : :`, where :g:`A' <A'>` is the angle formed by the tangents from :ref:`X(1) <X(1)>` to the :g:`A <A>`-excircle
 
 .. collapse:: Incident Central Lines
    :badge: 14 lines
@@ -60,13 +56,13 @@ Notes
 
 .. container:: note-item
 
-   Let I = :ref:`X(1) <X(1)>` and H = :ref:`X(4) <X(4)>` in a triangle ABC. Let L\ :sub:`b` be the perpendicular to B at I, and let I\ :sub:`c` be the perpendicular to CI at I. Let A\ :sub:`b` = L\ :sub:`b`\ ∩AH and A\ :sub:`c` = L\ :sub:`c`\ ∩AH. Let U be the circle {I, A\ :sub:`b`, A\ :sub:`c`}}. Let M\ :sub:`b` be the point, other than I, where BI meets U, and let M\ :sub:`c` be the point, other than I, where CI meets U. Let ℓ\ :sub:`a` be the line M\ :sub:`b`\ M\ :sub:`c`, and define ℓ\ :sub:`b` and ℓ\ :sub:`c` cyclically. The lines ℓ\ :sub:`a`, ℓ\ :sub:`b`, ℓ\ :sub:`c` concur in :ref:`X(962) <X(962)>`. (:person:`Angel Montesdeoca <angel-montesdeoca>`, March 12, 2020)
+   Let I = :ref:`X(1) <X(1)>` and H = :ref:`X(4) <X(4)>` in a triangle :g:`ABC << A B C >>`. Let :g:`L_{b} <L_b>` be the perpendicular to :g:`B <B>` at :g:`I <I>`, and let :g:`I_{c} <I_c>` be the perpendicular to :g:`CI <[ C I ]>` at I. Let :g:`A_{b} <A_b>` = :g:`L_{b} <L_b>`\ ∩\ :g:`AH <[ A H ]>` and :g:`A_{c} <A_c>` = :g:`L_{c} <L_c>`\ ∩\ :g:`AH <[ A H ]>`. Let :g:`U <U>` be the circle {I, :g:`A_{b} <A_b>`, :g:`A_{c} <A_c>`}}. Let :g:`M_{b} <M_b>` be the point, other than I, where :g:`BI <[ B I ]>` meets U, and let :g:`M_{c} <M_c>` be the point, other than I, where :g:`CI <[ C I ]>` meets U. Let :g:`ℓ_{a} <ℓ_a>` be the line :g:`M_{b}M_{c} <[ M_b M_c ]>`, and define :g:`ℓ_{b} <ℓ_b>` and :g:`ℓ_{c} <ℓ_c>` cyclically. The lines :g:`ℓ_{a} <ℓ_a>`, :g:`ℓ_{b} <ℓ_b>`, :g:`ℓ_{c} <ℓ_c>` concur in :ref:`X(962) <X(962)>`. (:person:`Angel Montesdeoca <angel-montesdeoca>`, March 12, 2020)
 
 .. container:: note-item
 
-   :ref:`X(962) <X(962)>` is the radical center of the circles centered at A, B, C, with respective
+   :ref:`X(962) <X(962)>` is the radical center of the circles centered at :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, with respective
 
-   radii \|CA\| + \|AB\|, \|AB\| + \|BC\|, \|BC\| + \|CA\|. See
+   radii \|\ :g:`CA <[ C A ]>`\ \| + \|\ :g:`AB <[ A B ]>`\ \|, \|\ :g:`AB <[ A B ]>`\ \| + \|\ :g:`BC <[ B C ]>`\ \|, \|\ :g:`BC <[ B C ]>`\ \| + \|\ :g:`CA <[ C A ]>`\ \|. See
 
 .. container:: note-item
 

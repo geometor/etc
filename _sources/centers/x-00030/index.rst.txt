@@ -11,18 +11,18 @@ X(30) = EULER INFINITY POINT
 
 .. enunciation::
 
-   Let A'B'C' be the reflection triangle. Let A″ be the :term:`cevapoint <cevapoint>` of B' and C', and define B″ and C″ cyclically. The lines AA″, BB″, CC″ are parallel to the Euler line, and therefore concur in :ref:`X(30) <X(30)>`. (:person:`Randy Hutson <randy-hutson>`, December 10, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the reflection triangle. Let :g:`A″ <A″>` be the :term:`cevapoint <cevapoint>` of :g:`B' <B'>` and :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` are parallel to the Euler line, and therefore concur in :ref:`X(30) <X(30)>`. (:person:`Randy Hutson <randy-hutson>`, December 10, 2016)
 
 .. figure:: x-00030.svg
    :alt: X(30) = EULER INFINITY POINT
    :align: center
 
-   **X(30) = EULER INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(30) = EULER INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\cos A - 2 \cos B \cos C : \cos B - 2 \cos C \cos A : \cos C - 2 \cos A cosB`
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = 2a\ :sup:`4` - (b\ :sup:`2` - c\ :sup:`2`)\ :sup:`2` - a\ :sup:`2`\ (b\ :sup:`2` + c\ :sup:`2`)
+   | **Trilinears:** :math:`\cos A - 2 \cos B \cos C : \cos B - 2 \cos C \cos A : \cos C - 2 \cos A \cos B`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = 2a^{4} - (b^{2} - c^{2})^{2} - a^{2}(b^{2} + c^{2})`
 
 .. collapse:: Alternate Coordinates
    :badge: 4 forms
@@ -30,7 +30,7 @@ X(30) = EULER INFINITY POINT
    * **Trilinears:** :math:`bc[2a^{4} - (b^{2} - c^{2})^{2} - a^{2}(b^{2} + c^{2})] : :`
    * **Trilinears:** :math:`2 \sec A - \sec B \sec C : :`
    * **Trilinears:** :math:`\sin B \sin C - 3 \cos B \cos C : :`
-   * **Barycentrics:** :math:`S^2 - 3 SB SC : :`
+   * **Barycentrics:** :math:`S^{2} - 3 S_{B} S_{C} : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
@@ -66,13 +66,13 @@ X(30) = EULER INFINITY POINT
    * :ref:`X(30) <X(30)>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through X(3163)
    * :ref:`X(30) <X(30)>` = :ref:`X(2) <X(2)>`-Ceva conjugate of X(3163)
    * :ref:`X(30) <X(30)>` = trilinear pole of line X(1636)X(1637) (the line that is the tripolar centroid of the Euler line)
-   * :ref:`X(30) <X(30)>` = :ref:`X(517) <X(517)>`-of-:term:`orthic triangle <orthic-triangle>` if ABC is acute
+   * :ref:`X(30) <X(30)>` = :ref:`X(517) <X(517)>`-of-:term:`orthic triangle <orthic-triangle>` if :g:`ABC << A B C >>` is acute
    * :ref:`X(30) <X(30)>` = :ref:`X(542) <X(542)>`-of-1st Brocard triangle
    * :ref:`X(30) <X(30)>` = crosspoint of :ref:`X(3) <X(3)>` and :ref:`X(399) <X(399)>` wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
    * :ref:`X(30) <X(30)>` = crosspoint of :ref:`X(616) <X(616)>` and :ref:`X(617) <X(617)>` wrt both the excentral and :term:`anticomplementary triangles <anticomplementary-triangle>`
    * :ref:`X(30) <X(30)>` = cevapoint of :ref:`X(616) <X(616)>` and :ref:`X(617) <X(617)>`
    * :ref:`X(30) <X(30)>` = :ref:`X(6) <X(6)>`-:term:`isoconjugate <isoconjugate>` of X(2349)
-   * :ref:`X(30) <X(30)>` = perspector of 2nd isogonal triangle of :ref:`X(4) <X(4)>` and cross-triangle of ABC and 2nd isogonal triangle of :ref:`X(4) <X(4)>`
+   * :ref:`X(30) <X(30)>` = perspector of 2nd isogonal triangle of :ref:`X(4) <X(4)>` and cross-triangle of :g:`ABC << A B C >>` and 2nd isogonal triangle of :ref:`X(4) <X(4)>`
    * :ref:`X(30) <X(30)>` = Thomson isogonal conjugate of :ref:`X(110) <X(110)>`
    * :ref:`X(30) <X(30)>` = Lucas isogonal conjugate of :ref:`X(110) <X(110)>`
    * :ref:`X(30) <X(30)>` = homothetic center of :ref:`X(20) <X(20)>`-altimedial and :ref:`X(140) <X(140)>`-anti-altimedial triangles
@@ -80,7 +80,7 @@ X(30) = EULER INFINITY POINT
    * :ref:`X(30) <X(30)>` = homothetic center of Ehrmann vertex-triangle and Trinh triangle
    * :ref:`X(30) <X(30)>` = homothetic center of Ehrmann side-triangle and dual of orthic triangle
    * :ref:`X(30) <X(30)>` = homothetic center of Ehrmann mid-triangle and :term:`medial triangle <medial-triangle>`
-   * :ref:`X(30) <X(30)>` = excentral-to-ABC :term:`functional image <functional-image>` of :ref:`X(517) <X(517)>`
+   * :ref:`X(30) <X(30)>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X(517) <X(517)>`
    * :ref:`X(30) <X(30)>` = 1st-Brocard-isogonal conjugate of X(18332)
    * :ref:`X(30) <X(30)>` = polar conjugate of X(16080)
    * :ref:`X(30) <X(30)>` = :ref:`X(63) <X(63)>`-isoconjugate of X(8749)
@@ -90,7 +90,7 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(30) <X(30)>` has Shinagawa coefficients (1, -3).
+   As a point on the Euler line, :ref:`X(30) <X(30)>` has Shinagawa coefficients :math:`(1, -3)`.
 
 .. container:: note-item
 

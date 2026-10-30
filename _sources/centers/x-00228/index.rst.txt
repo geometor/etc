@@ -16,17 +16,13 @@ X(228) = X(3)-CEVA CONJUGATE OF X(71)
    :alt: X(228) = X(3)-CEVA CONJUGATE OF X(71)
    :align: center
 
-   **X(228) = X(3)-CEVA CONJUGATE OF X(71)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(228) = X(3)-CEVA CONJUGATE OF X(71)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`(\sin 2A)(\sin B + \sin C) : (\sin 2B)(\sin C + \sin A) : (\sin 2C)(\sin A + \sin B)`
    | **Barycentrics:** :math:`(\sin A \sin 2A)(\sin B + \sin C) : (\sin B \sin 2B)(\sin C + \sin A) : (\sin C \sin 2C)(\sin A + \sin B)`
    | **Search Value (6, 9, 13):** :math:`7.858247558978`
-
-.. container:: note-item
-
-   :ref:`X(228) <X(228)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 12 lines

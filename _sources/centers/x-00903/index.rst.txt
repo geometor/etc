@@ -10,18 +10,18 @@ X(903) = X(1)-BLAIKIE TRANSFORM OF X(2)
 
 .. enunciation::
 
-   James Blaikie (1847-1929) proposed the following problem. Let O be any point in the plane of triangle ABC, and let any straight line g through O meet BC in P, CA in Q, AB in R; then, if points P', Q', R' be taken on the line so that PO = OP', QO = OQ', RO = OR'. Prove that AP', BQ', CR' concur.
+   James Blaikie (1847-1929) proposed the following problem. Let :g:`O <O>` be any point in the plane of triangle :g:`ABC << A B C >>`, and let any straight line g through O meet :g:`BC <[ B C ]>` in :g:`P <P>`, :g:`CA <[ C A ]>` in :g:`Q <Q>`, :g:`AB <[ A B ]>` in R; then, if points :g:`P' <P'>`, :g:`Q' <Q'>`, R' be taken on the line so that :g:`PO <[ P O ]>` = :g:`OP' <[ O P' ]>`, :g:`QO <[ Q O ]>` = :g:`OQ' <[ O Q' ]>`, RO = :g:`OR' <[ O R' ]>`. Prove that :g:`AP' <[ A P' ]>`, :g:`BQ' <[ B Q' ]>`, :g:`CR' <[ C R' ]>` concur.
 
 .. figure:: x-00903.svg
    :alt: X(903) = X(1)-BLAIKIE TRANSFORM OF X(2)
    :align: center
 
-   **X(903) = X(1)-BLAIKIE TRANSFORM OF X(2)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(903) = X(1)-BLAIKIE TRANSFORM OF X(2)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`bc/(b + c - 2a) : ca/(c + a - 2b) : ab/(a + b - 2c) : :`
-   | **Barycentrics:** 1/(b + c - 2a) : 1/(c + a - 2b) : 1/(a + b - 2c) (:person:`Darij Grinberg <darij-grinberg>`, 12/28/02)
+   | **Barycentrics:** :math:`1/(b + c - 2a) : 1/(c + a - 2b) : 1/(a + b - 2c)` (:person:`Darij Grinberg <darij-grinberg>`, 12/28/02)
    | **Search Value (6, 9, 13):** :math:`0.781704235605`
 
 .. container:: note-item
@@ -45,7 +45,7 @@ X(903) = X(1)-BLAIKIE TRANSFORM OF X(2)
    * :ref:`X(903) <X(903)>` = Steiner-circumellipse-antipode of :ref:`X(190) <X(190)>`
    * :ref:`X(903) <X(903)>` = :term:`anticomplement <anticomplement>` of X(4370)
    * :ref:`X(903) <X(903)>` = projection from Steiner inellipse to Steiner circumellipse of X(1086)
-   * :ref:`X(903) <X(903)>` = antipode of :ref:`X(2) <X(2)>` in hyperbola {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(7) <X(7)>`}
+   * :ref:`X(903) <X(903)>` = antipode of :ref:`X(2) <X(2)>` in hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(7) <X(7)>`}
    * :ref:`X(903) <X(903)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(2) <X(2)>`\ \ :ref:`X(514) <X(514)>`
    * :ref:`X(903) <X(903)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X(8756) (line X(4120)X(4895))
    * :ref:`X(903) <X(903)>` = :ref:`X(19) <X(19)>`-:term:`isoconjugate <isoconjugate>` of X(22356)
@@ -58,13 +58,13 @@ Notes
 
 .. container:: note-item
 
-   Darij Grinberg introduces the term *Blaikie point of O and g* for the point Z of concurrence. If
+   Darij Grinberg introduces the term *Blaikie point of :g:`O <O>` and g* for the point Z of concurrence. If
 
 .. container:: note-item
 
-   O = x : y : z and g = [k : l : m] (barycentric coordinates),
+   :g:`O <O>` =\ :math:`x : y : z` and g = [:math:`k : l : m`] (barycentric coordinates),
 
-   then Z has first barycentric 1/[k(y-z) - (ly-mz)]. Given a point S = u : v : w, Grinberg then defines the *S-Blaikie transform of O* as the Blaikie point of O and OS. The first barycentric of Z can be written as
+   then Z has first barycentric 1/[k(y-z) - (ly-mz)]. Given a point S =\ :math:`u : v : w`, Grinberg then defines the *S-Blaikie transform of :g:`O* <O*>` as the Blaikie point of :g:`O <O>` and OS. The first barycentric of Z can be written as
 
       1/[yw(y+x) + zv(z+x) - yz(2u+v+w)].
 

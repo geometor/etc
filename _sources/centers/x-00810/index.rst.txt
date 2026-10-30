@@ -16,24 +16,20 @@ X(810) = CROSSPOINT OF X(1) AND X(163)
    :alt: X(810) = CROSSPOINT OF X(1) AND X(163)
    :align: center
 
-   **X(810) = CROSSPOINT OF X(1) AND X(163)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(810) = CROSSPOINT OF X(1) AND X(163)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\sin 2A (\cos^{2}B - \cos^{2}C) : :`
-   | **Barycentrics:** :math:`\sin^{2}A \cos A (\cos^{2}B - \cos^{2}C) : :`
+   | **Trilinears:** :math:`\sin 2A (\cos^{2} B - \cos^{2} C) : :`
+   | **Barycentrics:** :math:`\sin^{2} A \cos A (\cos^{2} B - \cos^{2} C) : :`
    | **Search Value (6, 9, 13):** :math:`-2.450114674422`
 
 .. collapse:: Alternate Coordinates
    :badge: 3 forms
 
-   * **Trilinears:** :math:`\sin 2A (\sin^2 B - \sin^2 C) : :`
-   * **Trilinears:** :math:`a^2(b^2 - c^2)(b^2 + c^2 - a^2) : :`
+   * **Trilinears:** :math:`\sin 2A (\sin^{2} B - \sin^{2} C) : :`
+   * **Trilinears:** :math:`a^{2}(b^{2} - c^{2})(b^{2} + c^{2} - a^{2}) : :`
    * **Trilinears:** :math:`\tan B \cot C - \tan C \cot B : :`
-
-.. container:: note-item
-
-   :ref:`X(810) <X(810)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines

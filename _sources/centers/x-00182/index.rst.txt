@@ -1,7 +1,7 @@
 :order: 182
 :type: center
 :canonical_id: X(182)
-:dependencies: X(1), X(2), X(3), X(4), X(5), X(6), X(10), X(15), X(16), X(22), X(24), X(25), X(30), X(32), X(36), X(39), X(40), X(51), X(54), X(55), X(56), X(61), X(62), X(69), X(83), X(98), X(111), X(140), X(141), X(171), X(206), X(262), X(327), X(353), X(371), X(372), X(373), X(381), X(474), X(511), X(517), X(518), X(524), X(549), X(574), X(575), X(576), X(597), X(611), X(613), X(691), X(692), X(727), X(729), X(952), X(983), X(996), X(1001), X(1151), X(1152), X(1293), X(1296), X(1316), X(1340), X(1341), X(1350), X(1351), X(1352), X(1385), X(1386), X(1397), X(1437), X(1469), X(1495), X(1678), X(1687), X(1688), X(1700), X(1843), X(2080), X(2698), X(3066), X(3095), X(3102), X(3103), X(5476), X(9737), X(9738), X(9739), X(32452)
+:dependencies: X(1), X(2), X(3), X(4), X(5), X(6), X(10), X(15), X(16), X(22), X(24), X(25), X(30), X(32), X(36), X(39), X(40), X(51), X(54), X(55), X(56), X(61), X(62), X(69), X(83), X(98), X(111), X(140), X(141), X(171), X(206), X(262), X(327), X(353), X(371), X(372), X(373), X(381), X(474), X(511), X(517), X(518), X(524), X(549), X(574), X(575), X(576), X(597), X(611), X(613), X(691), X(692), X(727), X(729), X(952), X(983), X(996), X(1001), X(1151), X(1152), X(1293), X(1296), X(1340), X(1341), X(1350), X(1351), X(1352), X(1385), X(1386), X(1397), X(1437), X(1469), X(1495), X(1678), X(1687), X(1688), X(1700), X(1843), X(2080), X(2698), X(3066), X(3095), X(3102), X(3103), X(5476), X(9737), X(9738), X(9739), X(32452)
 
 .. _X(182):
 
@@ -10,13 +10,13 @@ X(182) = MIDPOINT OF BROCARD DIAMETER
 
 .. enunciation::
 
-   :ref:`X(182) <X(182)>` is the {:ref:`X(371) <X(371)>`,\ :ref:`X(372) <X(372)>`}-harmonic conjugate of :ref:`X(39) <X(39)>`.
+   :ref:`X(182) <X(182)>` is the midpoint of the Brocard diameter (the segment :ref:`X(3) <X(3)>`-to-:ref:`X(6) <X(6)>`); also the center of the 1st Lemoine circle, and the center of the Brocard circle.
 
 .. figure:: x-00182.svg
    :alt: X(182) = MIDPOINT OF BROCARD DIAMETER
    :align: center
 
-   **X(182) = MIDPOINT OF BROCARD DIAMETER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(182) = MIDPOINT OF BROCARD DIAMETER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -33,16 +33,12 @@ X(182) = MIDPOINT OF BROCARD DIAMETER
    * **Trilinears:** a + 2R cot ω cos A : b + 2R cot ω cos B: c + 2R cot ω cos C (cf., X(1350), X(1351))
    * **Trilinears:** sin A + cos A cot ω : sin B + cos B cot ω : sin C + cos C cot ω (cf., :ref:`X(575) <X(575)>`, :ref:`X(576) <X(576)>`,,X(1350), X(1351))
    * **Trilinears:** :math:`\cos A + (2 - 2 \cot \omega ) \sin A : \cos B + (2 - 2 \cot \omega ) \sin B : \cos C + (2 - 2 \cot \omega ) \sin C`
-   * **Barycentrics:** a^2(a^4 - a^2b^2 - a^2c^2 - 2b^2c^2) : :, :ref:`X(182) <X(182)>` is the midpoint of the Brocard diameter (the segment :ref:`X(3) <X(3)>`-to-:ref:`X(6) <X(6)>`); also the center of the 1st Lemoine circle, and the center of the Brocard circle. If you have The Geometer's Sketchpad, you can view **X(1316)** (``X(1316).gsp``), which includes :ref:`X(182) <X(182)>`.
+   * **Barycentrics:** :math:`a^{2}(a^{4} - a^{2}b^{2} - a^{2}c^{2} - 2b^{2}c^{2}) : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
    * :ref:`X(182) <X(182)>` = :ref:`X(3) <X(3)>` + :ref:`X(6) <X(6)>`
-
-.. container:: note-item
-
-   :ref:`X(182) <X(182)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 28 lines
@@ -94,6 +90,13 @@ X(182) = MIDPOINT OF BROCARD DIAMETER
    * :ref:`X(182) <X(182)>` = Cundy-Parry Psi transform of :ref:`X(83) <X(83)>`
    * :ref:`X(182) <X(182)>` = endo-similarity image of reflection triangles of PU(1); the similitude center of these triangles is :ref:`X(6) <X(6)>`
    * :ref:`X(182) <X(182)>` = 1st-Brocard-isogonal conjugate of X(1352)
+
+Notes
+-----
+
+.. container:: note-item
+
+   :ref:`X(182) <X(182)>` is the {:ref:`X(371) <X(371)>`,\ :ref:`X(372) <X(372)>`}-harmonic conjugate of :ref:`X(39) <X(39)>`.
 
 .. toctree::
    :hidden:

@@ -10,23 +10,19 @@ X(239) = X(1)-LINE CONJUGATE OF X(42)
 
 .. enunciation::
 
-   :ref:`X(239) <X(239)>` is the perspector of triangle ABC and the :term:`tangential triangle <tangential-triangle>` of the conic that passes through A, B, C, and the pair P(6) and U(6) of :term:`bicentric points <bicentric-points>` (see the notes just before X(1908). (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   :ref:`X(239) <X(239)>` is the perspector of triangle :g:`ABC << A B C >>` and the :term:`tangential triangle <tangential-triangle>` of the conic that passes through :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, and the pair P(6) and U(6) of :term:`bicentric points <bicentric-points>` (see the notes just before X(1908). (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. figure:: x-00239.svg
    :alt: X(239) = X(1)-LINE CONJUGATE OF X(42)
    :align: center
 
-   **X(239) = X(1)-LINE CONJUGATE OF X(42)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(239) = X(1)-LINE CONJUGATE OF X(42)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`bc(a^{2} - bc) : :`
    | **Barycentrics:** :math:`a^{2} - bc : :`
    | **Search Value (6, 9, 13):** :math:`-17.268557204723`
-
-.. container:: note-item
-
-   :ref:`X(239) <X(239)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 21 lines
@@ -48,7 +44,7 @@ X(239) = X(1)-LINE CONJUGATE OF X(42)
    * :ref:`X(239) <X(239)>` = X(i)-:term:`Hirst inverse <hirst-inverse>` of X(j) for these (i,j): (:ref:`171 <X(171)>`, :ref:`238 <X(238)>`), (:ref:`665 <X(665)>`, 1015)
    * :ref:`X(239) <X(239)>` = :ref:`X(1) <X(1)>`-:term:`line conjugate <line-conjugate>` of :ref:`X(42) <X(42)>`
    * :ref:`X(239) <X(239)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`333 <X(333)>`, :ref:`239 <X(239)>`), (:ref:`645 <X(645)>`, :ref:`44 <X(44)>`)
-   * :ref:`X(239) <X(239)>` = perspector of conic {A,B,C,\ :ref:`X(86) <X(86)>`,\ :ref:`X(190) <X(190)>`}
+   * :ref:`X(239) <X(239)>` = perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(86) <X(86)>`,\ :ref:`X(190) <X(190)>`}
    * :ref:`X(239) <X(239)>` = inverse-in-Steiner-circumellipse of :ref:`X(1) <X(1)>`
    * :ref:`X(239) <X(239)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(659) <X(659)>`\ \ :ref:`X(812) <X(812)>`
    * :ref:`X(239) <X(239)>` = crossdifference of PU(8)
@@ -67,7 +63,7 @@ Notes
 
       * :ref:`X(1) <X(1)>`\ \ :ref:`X(2) <X(2)>` = trilinear polar of :ref:`X(190) <X(190)>`
       * trilinear polar of :term:`cevapoint <cevapoint>`{:ref:`X(1) <X(1)>`, :ref:`X(2) <X(2)>`}, which is :ref:`X(239) <X(239)>`\ \ :ref:`X(514) <X(514)>`
-      * UV, where U = :ref:`X(1) <X(1)>`-Ceva-conjugate-of-(2) = :ref:`X(192) <X(192)>`, and V = :ref:`X(2) <X(2)>`-Ceva-conjugate-of-:ref:`X(1) <X(1)>` = :ref:`X(9) <X(9)>` (Randy Hutson, December 26, 2015)
+      * :g:`UV <[ U V ]>`, where :g:`U <U>` = :ref:`X(1) <X(1)>`-Ceva-conjugate-of-(2) = :ref:`X(192) <X(192)>`, and V = :ref:`X(2) <X(2)>`-Ceva-conjugate-of-:ref:`X(1) <X(1)>` = :ref:`X(9) <X(9)>` (Randy Hutson, December 26, 2015)
 
 .. toctree::
    :hidden:

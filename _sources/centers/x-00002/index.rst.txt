@@ -11,19 +11,19 @@ X(2) = CENTROID
 
 .. enunciation::
 
-   :ref:`X(2) <X(2)>` is the point of concurrence of the medians of ABC, situated 1/3 of the distance from each vertex to the midpoint of the opposite side. More generally, if L is any line in the plane of ABC, then the distance from :ref:`X(2) <X(2)>` to L is the average of the distances from A, B, C to L. An idealized triangular sheet balances atop a pin head located at :ref:`X(2) <X(2)>` and also balances atop any knife-edge that passes through :ref:`X(2) <X(2)>`. The triangles BXC, CXA, AXB have equal areas if and only if X = :ref:`X(2) <X(2)>`.
+   :ref:`X(2) <X(2)>` is the point of concurrence of the medians of :g:`ABC << A B C >>`, situated 1/3 of the distance from each vertex to the midpoint of the opposite side. More generally, if L is any line in the plane of :g:`ABC << A B C >>`, then the distance from :ref:`X(2) <X(2)>` to :g:`L <L>` is the average of the distances from :g:`A <A>`, :g:`B <B>`, :g:`C <C>` to L. An idealized triangular sheet balances atop a pin head located at :ref:`X(2) <X(2)>` and also balances atop any knife-edge that passes through :ref:`X(2) <X(2)>`. The triangles :g:`BXC << B X C >>`, :g:`CXA << C X A >>`, :g:`AXB << A X B >>` have equal areas if and only if :g:`X <X>` = :ref:`X(2) <X(2)>`.
 
 .. figure:: x-00002.svg
    :alt: X(2) = CENTROID
    :align: center
 
-   **X(2) = CENTROID** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(2) = CENTROID** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`1/a : 1/b : 1/c`
    | **Barycentrics:** :math:`1 : 1 : 1`
-   | **Tripolars:** :math:`\sqrt{2(b^2 + c^2) - a^2} : :`
+   | **Tripolars:** :math:`\sqrt{2(b^{2} + c^{2}) - a^{2}} : :`
    | **Search Value (6, 9, 13):** :math:`2.629368792489`
 
 .. collapse:: Alternate Coordinates
@@ -41,7 +41,7 @@ X(2) = CENTROID
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(2) <X(2)>` = (3 + J) X(1113) + (3 - J) X(1114)
+   * :ref:`X(2) <X(2)>` = :math:`(3 + J)` X(1113) + :math:`(3 - J)` X(1114)
 
 .. container:: note-item
 
@@ -70,8 +70,8 @@ X(2) = CENTROID
    * :ref:`X(2) <X(2)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X(69) <X(69)>`
    * :ref:`X(2) <X(2)>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X(141) <X(141)>`
    * :ref:`X(2) <X(2)>` = insimilicenter of incircle and Spieker circle
-   * :ref:`X(2) <X(2)>` = insimilicenter of incircle and AC-incircle
-   * :ref:`X(2) <X(2)>` = exsimilicenter of Spieker circle and AC-incircle
+   * :ref:`X(2) <X(2)>` = insimilicenter of incircle and :g:`AC <[ A C ]>`-incircle
+   * :ref:`X(2) <X(2)>` = exsimilicenter of Spieker circle and :g:`AC <[ A C ]>`-incircle
    * :ref:`X(2) <X(2)>` = insimilicenter of Conway circle and Spieker radical circle
    * :ref:`X(2) <X(2)>` = insimilicenter of polar circle and de Longchamps circle
    * :ref:`X(2) <X(2)>` = harmonic center of pedal circles of :ref:`X(13) <X(13)>` and :ref:`X(14) <X(14)>` (which are also the pedal circles of :ref:`X(15) <X(15)>` and :ref:`X(16) <X(16)>`)
@@ -82,7 +82,7 @@ X(2) = CENTROID
    * :ref:`X(2) <X(2)>` = :ref:`X(110) <X(110)>`-of-:ref:`X(2) <X(2)>`-Brocard-triangle
    * :ref:`X(2) <X(2)>` = :ref:`X(110) <X(110)>`-of-orthocentroidal-triangle
    * :ref:`X(2) <X(2)>` = :ref:`X(353) <X(353)>`-of-circumsymmedial-triangle
-   * :ref:`X(2) <X(2)>` = :ref:`X(165) <X(165)>`-of-orthic-triangle if ABC is acute
+   * :ref:`X(2) <X(2)>` = :ref:`X(165) <X(165)>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(2) <X(2)>` = :ref:`X(51) <X(51)>`-of-excentral-triangle
    * :ref:`X(2) <X(2)>` = inverse-in-polar-circle of :ref:`X(468) <X(468)>`
    * :ref:`X(2) <X(2)>` = inverse-in-de-Longchamps-circle of :ref:`X(858) <X(858)>`
@@ -99,14 +99,14 @@ X(2) = CENTROID
    * :ref:`X(2) <X(2)>` = harmonic center of nine-point circle and Johnson circle
    * :ref:`X(2) <X(2)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(4) <X(4)>` (orthic axis)
    * :ref:`X(2) <X(2)>` = polar conjugate of :ref:`X(4) <X(4)>`
-   * :ref:`X(2) <X(2)>` = excentral-to-ABC :term:`functional image <functional-image>` of :ref:`X(165) <X(165)>`
-   * :ref:`X(2) <X(2)>` = excentral-to-ABC :term:`barycentric image <barycentric-image>` of :ref:`X(165) <X(165)>`
-   * :ref:`X(2) <X(2)>` = orthic-to-ABC functional image of :ref:`X(51) <X(51)>`
-   * :ref:`X(2) <X(2)>` = orthic-to-ABC barycentric image of :ref:`X(51) <X(51)>`
-   * :ref:`X(2) <X(2)>` = incentral-to-ABC functional image of X(1962)
-   * :ref:`X(2) <X(2)>` = incentral-to-ABC barycentric image of X(1962)
-   * :ref:`X(2) <X(2)>` = Feuerbach-to-ABC functional image of X(5947)
-   * :ref:`X(2) <X(2)>` = Feuerbach-to-ABC barycentric image of X(5947)
+   * :ref:`X(2) <X(2)>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X(165) <X(165)>`
+   * :ref:`X(2) <X(2)>` = excentral-to-:g:`ABC << A B C >>` :term:`barycentric image <barycentric-image>` of :ref:`X(165) <X(165)>`
+   * :ref:`X(2) <X(2)>` = orthic-to-:g:`ABC << A B C >>` functional image of :ref:`X(51) <X(51)>`
+   * :ref:`X(2) <X(2)>` = orthic-to-:g:`ABC << A B C >>` barycentric image of :ref:`X(51) <X(51)>`
+   * :ref:`X(2) <X(2)>` = incentral-to-:g:`ABC << A B C >>` functional image of X(1962)
+   * :ref:`X(2) <X(2)>` = incentral-to-:g:`ABC << A B C >>` barycentric image of X(1962)
+   * :ref:`X(2) <X(2)>` = Feuerbach-to-:g:`ABC << A B C >>` functional image of X(5947)
+   * :ref:`X(2) <X(2)>` = Feuerbach-to-:g:`ABC << A B C >>` barycentric image of X(5947)
    * :ref:`X(2) <X(2)>` = perspector of :term:`orthic triangle <orthic-triangle>` and polar triangle of the complement of the polar circle
    * :ref:`X(2) <X(2)>` = :term:`trilinear pole <trilinear-pole>`, wrt orthocentroidal triangle, of Fermat axis
    * :ref:`X(2) <X(2)>` = trilinear pole, wrt 1st Parry triangle, of line X(1499)X(8598)
@@ -119,11 +119,11 @@ X(2) = CENTROID
    * :ref:`X(2) <X(2)>` = crosspoint of :ref:`X(1) <X(1)>` and :ref:`X(9) <X(9)>` wrt excentral triangle
    * :ref:`X(2) <X(2)>` = crosspoint of :ref:`X(3) <X(3)>` and :ref:`X(6) <X(6)>` wrt excentral triangle
    * :ref:`X(2) <X(2)>` = crosspoint of :ref:`X(7) <X(7)>` and :ref:`X(8) <X(8)>` wrt 2nd Conway triangle
-   * :ref:`X(2) <X(2)>` = antipode of X(3228) in hyperbola {{A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(6) <X(6)>`}}
-   * :ref:`X(2) <X(2)>` = antipode of X(1494) in hyperbola {{A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(69) <X(69)>`}}
+   * :ref:`X(2) <X(2)>` = antipode of X(3228) in hyperbola {{:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(6) <X(6)>`}}
+   * :ref:`X(2) <X(2)>` = antipode of X(1494) in hyperbola {{:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(69) <X(69)>`}}
    * :ref:`X(2) <X(2)>` = perspector of pedal and :term:`anticevian triangles <anticevian-triangle>` of :ref:`X(20) <X(20)>`
    * :ref:`X(2) <X(2)>` = homothetic center of the 2nd :term:`pedal triangle <pedal-triangle>` of :ref:`X(4) <X(4)>` and the 3rd pedal triangle of :ref:`X(3) <X(3)>`
-   * :ref:`X(2) <X(2)>` = perspector of ABC and the reflection in :ref:`X(6) <X(6)>` of the pedal triangle of :ref:`X(6) <X(6)>`
+   * :ref:`X(2) <X(2)>` = perspector of :g:`ABC << A B C >>` and the reflection in :ref:`X(6) <X(6)>` of the pedal triangle of :ref:`X(6) <X(6)>`
    * :ref:`X(2) <X(2)>` = perspector of orthic triangle and polar triangle of the complement of the polar circle
    * :ref:`X(2) <X(2)>` = Moses-radical-circle-inverse of X(34235)
    * :ref:`X(2) <X(2)>` = X(6374)-:term:`cross conjugate <cross-conjugate>` of :ref:`X(194) <X(194)>`
@@ -152,24 +152,24 @@ X(2) = CENTROID
    * :ref:`X(2) <X(2)>` = PU(148)-harmonic conjugate of :ref:`X(669) <X(669)>`
    * :ref:`X(2) <X(2)>` = bicentric difference of PU(147)
    * :ref:`X(2) <X(2)>` = :term:`eigencenter <eigencenter>` of 2nd Brocard triangle
-   * :ref:`X(2) <X(2)>` = perspector of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of Lucas :term:`central triangle <central-triangle>`
-   * :ref:`X(2) <X(2)>` = perspector of ABC and unary cofactor triangle of Lucas(-1) central triangle
-   * :ref:`X(2) <X(2)>` = perspector of ABC and unary cofactor triangle of Lucas tangents triangle
-   * :ref:`X(2) <X(2)>` = perspector of ABC and unary cofactor triangle of Lucas(-1) tangents triangle
-   * :ref:`X(2) <X(2)>` = perspector of ABC and unary cofactor triangle of Lucas inner triangle
-   * :ref:`X(2) <X(2)>` = perspector of ABC and unary cofactor triangle of Lucas(-1) inner triangle
-   * :ref:`X(2) <X(2)>` = perspector of ABC and unary cofactor triangle of 1st anti-Brocard triangle
-   * :ref:`X(2) <X(2)>` = perspector of ABC and unary cofactor triangle of 1st Sharygin triangle
-   * :ref:`X(2) <X(2)>` = perspector of ABC and unary cofactor triangle of 2nd Sharygin triangle
-   * :ref:`X(2) <X(2)>` = perspector of ABC and unary cofactor triangle of 1st Pamfilos-Zhou triangle
-   * :ref:`X(2) <X(2)>` = perspector of ABC and unary cofactor triangle of Artzt triangle
+   * :ref:`X(2) <X(2)>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of Lucas :term:`central triangle <central-triangle>`
+   * :ref:`X(2) <X(2)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of Lucas(-1) central triangle
+   * :ref:`X(2) <X(2)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of Lucas tangents triangle
+   * :ref:`X(2) <X(2)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of Lucas(-1) tangents triangle
+   * :ref:`X(2) <X(2)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of Lucas inner triangle
+   * :ref:`X(2) <X(2)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of Lucas(-1) inner triangle
+   * :ref:`X(2) <X(2)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of 1st anti-Brocard triangle
+   * :ref:`X(2) <X(2)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of 1st Sharygin triangle
+   * :ref:`X(2) <X(2)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of 2nd Sharygin triangle
+   * :ref:`X(2) <X(2)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of 1st Pamfilos-Zhou triangle
+   * :ref:`X(2) <X(2)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of Artzt triangle
    * :ref:`X(2) <X(2)>` = perspector of 1st Parry triangle and unary cofactor of 3rd Parry triangle
    * :ref:`X(2) <X(2)>` = X(6032) of 4th anti-Brocard triangle
    * :ref:`X(2) <X(2)>` = orthocenter of :ref:`X(3) <X(3)>`\ X(9147)X(9149)
    * :ref:`X(2) <X(2)>` = exsimilicenter of Artzt and anti-Artzt circles; the insimilicenter is :ref:`X(183) <X(183)>`
-   * :ref:`X(2) <X(2)>` = perspector of ABC and cross-triangle of inner- and outer-squares triangles
-   * :ref:`X(2) <X(2)>` = perspector of ABC and 2nd Brocard triangle of 1st Brocard triangle
-   * :ref:`X(2) <X(2)>` = perspector of half-altitude triangle and cross-triangle of ABC and half-altitude triangle
+   * :ref:`X(2) <X(2)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of inner- and outer-squares triangles
+   * :ref:`X(2) <X(2)>` = perspector of :g:`ABC << A B C >>` and 2nd Brocard triangle of 1st Brocard triangle
+   * :ref:`X(2) <X(2)>` = perspector of half-altitude triangle and cross-triangle of :g:`ABC << A B C >>` and half-altitude triangle
    * :ref:`X(2) <X(2)>` = 4th-anti-Brocard-to-anti-Artzt :term:`similarity image <similarity-image>` of :ref:`X(111) <X(111)>`
    * :ref:`X(2) <X(2)>` = homothetic center of Aquila triangle and cross-triangle of Aquila and anti-Aquila triangles
    * :ref:`X(2) <X(2)>` = :ref:`X(551) <X(551)>`-of-cross-triangle-of Aquila-and-anti-Aquila-triangles
@@ -180,8 +180,8 @@ X(2) = CENTROID
    * :ref:`X(2) <X(2)>` = Dao image of :ref:`X(13) <X(13)>`
    * :ref:`X(2) <X(2)>` = Dao image of :ref:`X(14) <X(14)>`
    * :ref:`X(2) <X(2)>` = center of equilateral triangle :ref:`X(3) <X(3)>`\ PU(5)
-   * :ref:`X(2) <X(2)>` = center of equilateral triangle formed by the circumcenters of BCF, CAF, ABF, where F = :ref:`X(13) <X(13)>`
-   * :ref:`X(2) <X(2)>` = center of equilateral triangle formed by the circumcenters of BCF', CAF', ABF', where F' = :ref:`X(14) <X(14)>`
+   * :ref:`X(2) <X(2)>` = center of equilateral triangle formed by the circumcenters of :g:`BCF << B C F >>`, :g:`CAF << C A F >>`, :g:`ABF << A B F >>`, where :g:`F <F>` = :ref:`X(13) <X(13)>`
+   * :ref:`X(2) <X(2)>` = center of equilateral triangle formed by the circumcenters of :g:`BCF' << B C F' >>`, :g:`CAF' << C A F' >>`, :g:`ABF' << A B F' >>`, where :g:`F' <F'>` = :ref:`X(14) <X(14)>`
    * :ref:`X(2) <X(2)>` = trisector nearest :ref:`X(5) <X(5)>` of segment :ref:`X(3) <X(3)>`\ \ :ref:`X(5) <X(5)>`
    * :ref:`X(2) <X(2)>` = trisector nearest :ref:`X(4) <X(4)>` of segment :ref:`X(4) <X(4)>`\ \ :ref:`X(20) <X(20)>`
    * :ref:`X(2) <X(2)>` = pedal antipodal perspector of :ref:`X(15) <X(15)>`
@@ -204,7 +204,7 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(2) <X(2)>` has Shinagawa coefficients (1, 0).
+   As a point on the Euler line, :ref:`X(2) <X(2)>` has Shinagawa coefficients :math:`(1, 0)`.
 
 .. container:: note-item
 
@@ -214,11 +214,11 @@ Notes
 
    :ref:`X(2) <X(2)>` is the identity of the group of :term:`triangle centers <triangle-center>` under "barycentric multiplication" defined by
 
-      (x : y : z)\*(u : v : w) = xu : yv : zw.
+   :math:`(x : y : z) \cdot (u : v : w) = xu : yv : zw`.
 
 .. container:: note-item
 
-   :ref:`X(2) <X(2)>` is the unique point X (as a function of a,b,c) for which the vector-sum XA + XB + XC is the zero vector.
+   :ref:`X(2) <X(2)>` is the unique point X (as a function of a,b,c) for which the vector-sum :g:`XA <[ X A ]>` + :g:`XB <[ X B ]>` + :g:`XC <[ X C ]>` is the zero vector.
 
 .. container:: note-item
 
@@ -226,11 +226,11 @@ Notes
 
 .. container:: note-item
 
-   Let A' be the trilinear pole of the perpendicular bisector of BC, and define B' and C' cyclically. A'B'C' is also the anticomplement of the anticomplement of the midheight triangle. A'B'C' is homothetic to the midheight triangle at :ref:`X(2) <X(2)>`. (Randy Hutson, January 29, 2018)
+   Let :g:`A' <A'>` be the trilinear pole of the perpendicular bisector of :g:`BC <[ B C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. :g:`A'B'C' << A' B' C' >>` is also the anticomplement of the anticomplement of the midheight triangle. :g:`A'B'C' << A' B' C' >>` is homothetic to the midheight triangle at :ref:`X(2) <X(2)>`. (Randy Hutson, January 29, 2018)
 
 .. container:: note-item
 
-   Let A'B'C' be the excentral triangle. Let Oa be the A'-McCay circle of triangle A'BC, and define Ob, Oc cyclically. :ref:`X(2) <X(2)>` is the radical center of Oa, Ob, Oc. (Randy Hutson, June 27, 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the excentral triangle. Let :g:`O_{a} <O_a>` be the :g:`A' <A'>`-McCay circle of triangle :g:`A'BC << A' B C >>`, and define :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>` cyclically. :ref:`X(2) <X(2)>` is the radical center of :g:`O_{a} <O_a>`, :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>`. (Randy Hutson, June 27, 2018)
 
 .. container:: note-item
 
@@ -238,34 +238,34 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the midheight triangle. Let A″ be the cevapoint of B' and C', and define B″ and C″ cyclically. The lines A″, BB″, CC″ concur in :ref:`X(2) <X(2)>`. (Randy Hutson, October 8, 2019)
+   Let :g:`A'B'C' << A' B' C' >>` be the midheight triangle. Let :g:`A″ <A″>` be the cevapoint of :g:`B' <B'>` and :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(2) <X(2)>`. (Randy Hutson, October 8, 2019)
 
 .. container:: note-item
 
-   In the plane of a triangle ABC, let
+   In the plane of a triangle :g:`ABC << A B C >>`, let
 
-      * Oa = circle with diameter BC, and define Ob and Oc cyclically;
-      * A′ = the reflection of A with in Oa, and define B′ and C′ cyclically.
+      * :g:`O_{a} <O_a>` = circle with diameter :g:`BC <[ B C ]>`, and define :g:`O_{b} <O_b>` and :g:`O_{c} <O_c>` cyclically;
+      * :g:`A' <A'>` = the reflection of :g:`A <A>` with in :g:`O_{a} <O_a>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically.
 
-   The triangle A′B′C′ is perspective to ABC, and the perspector is :ref:`X(2) <X(2)>`. (:person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, April 19, 2021)
-
-.. container:: note-item
-
-   Let Na = reflection of ninepoint center(N) wrt to BC, define Nb, Nc cyclically; then NaNbNc is perspective to ABC, and the perspector is :ref:`X(2) <X(2)>`. (Dasari Naga Vijay Krishna, June 8, 2021)
+   The triangle :g:`A'B'C' << A' B' C' >>` is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X(2) <X(2)>`. (:person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, April 19, 2021)
 
 .. container:: note-item
 
-   Let O be a point(not necessarily :ref:`X(3) <X(3)>`), and let AOB be a fixed-angle sector of a circle C=(O,R), rigidly rotating about center O. Let P be an arbitrary point. The locus of :ref:`X(2) <X(2)>`-of-PAB is a circle C'=(O',R') whose center O' lies on OP. The radius R', independent of P, is given by R'=sqrt(2+sqrt(2))(R/3). `Figure <https://user-images.githubusercontent.com/16231062/145676530-859098b9-0002-4eb5-bc07-b10fabcfb9db.png>`__. (:person:`Dan Reznik <dan-reznik>`, December 11, 2021)
+   Let :g:`N_{a} <N_a>` = reflection of ninepoint center(N) wrt to :g:`BC <[ B C ]>`, define :g:`N_{b} <N_b>`, :g:`N_{c} <N_c>` cyclically; then :g:`N_{a}N_{b}N_{c} << N_a N_b N_c >>` is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X(2) <X(2)>`. (Dasari Naga Vijay Krishna, June 8, 2021)
 
 .. container:: note-item
 
-   In the plane of a triangle ABC, let P be a point, and let
+   Let :g:`O <O>` be a point(not necessarily :ref:`X(3) <X(3)>`), and let :g:`AOB << A O B >>` be a fixed-angle sector of a circle :g:`C <C>`\ =(O,R), rigidly rotating about center O. Let :g:`P <P>` be an arbitrary point. The locus of :ref:`X(2) <X(2)>`-of-:g:`PAB << P A B >>` is a circle :g:`C' <C'>`\ =(:g:`O' <O'>`,R') whose center :g:`O' <O'>` lies on :g:`OP <[ O P ]>`. The radius R', independent of :g:`P <P>`, is given by R'=\ :math:`\sqrt{2+\sqrt{2}}`\ (R/3). `Figure <https://user-images.githubusercontent.com/16231062/145676530-859098b9-0002-4eb5-bc07-b10fabcfb9db.png>`__. (:person:`Dan Reznik <dan-reznik>`, December 11, 2021)
 
-      * A'B'C' = pedal triangle of P;
-      * O' = circumcenter of A'B'C';
-      * A" = reflection of A' in O', and define B" and C" cyclically.
+.. container:: note-item
 
-   The triangles ABC and A"B"C" are perspective, and their pespector is named here the **pedal antipodal perspector of P**. (Randy Hutson, `Hyacinthos 20403 <http://hyacinthos.epizy.com/message.php?msg=20403>`__, Nov. 21, 2011).
+   In the plane of a triangle :g:`ABC << A B C >>`, let :g:`P <P>` be a point, and let
+
+      * :g:`A'B'C' << A' B' C' >>` = pedal triangle of :g:`P <P>`;
+      * :g:`O' <O'>` = circumcenter of :g:`A'B'C' << A' B' C' >>`;
+      * :g:`A″ <A″>` = reflection of :g:`A' <A'>` in :g:`O' <O'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically.
+
+   The triangles :g:`ABC << A B C >>` and :g:`A″B″C″ << A″ B″ C″ >>` are perspective, and their pespector is named here the **pedal antipodal perspector of P**. (Randy Hutson, `Hyacinthos 20403 <http://hyacinthos.epizy.com/message.php?msg=20403>`__, Nov. 21, 2011).
 
 .. container:: note-item
 

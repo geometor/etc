@@ -10,18 +10,18 @@ X(100) = ANTICOMPLEMENT OF FEUERBACH POINT
 
 .. enunciation::
 
-   Let L\ :sub:`A` be the reflection of the line :ref:`X(1) <X(1)>`\ \ :ref:`X(3) <X(3)>` in line BC, and define L\ :sub:`B` and L\ :sub:`C` cyclically. Let A' = L\ :sub:`B`\ ∩L\ :sub:`C`, B' = L\ :sub:`C`\ ∩L\ :sub:`A`, C' = L\ :sub:`A`\ ∩L\ :sub:`B`. The lines AA', BB', CC' concur in :ref:`X(100) <X(100)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   Let :g:`L_{A} <L_A>` be the reflection of the line :ref:`X(1) <X(1)>`\ \ :ref:`X(3) <X(3)>` in line :g:`BC <[ B C ]>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A' <A'>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, :g:`B' <B'>` = :g:`L_{C} <L_C>`\ ∩\ :g:`L_{A} <L_A>`, :g:`C' <C'>` = :g:`L_{A} <L_A>`\ ∩\ :g:`L_{B} <L_B>`. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(100) <X(100)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. figure:: x-00100.svg
    :alt: X(100) = ANTICOMPLEMENT OF FEUERBACH POINT
    :align: center
 
-   **X(100) = ANTICOMPLEMENT OF FEUERBACH POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(100) = ANTICOMPLEMENT OF FEUERBACH POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`1/(b - c) : :`
-   | **Barycentrics:** :math:`a*(a - b)*(a - c) : :`
+   | **Barycentrics:** :math:`a (a - b) \cdot (a - c) : :`
    | **Tripolars:** :math:`|b - c| : :`
    | **Search Value (6, 9, 13):** :math:`2.601836134976`
 
@@ -34,7 +34,7 @@ X(100) = ANTICOMPLEMENT OF FEUERBACH POINT
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(100) <X(100)>` = 2R\*\ :ref:`X(1) <X(1)>` - 3R\*\ :ref:`X(2) <X(2)>` + 2r\*\ :ref:`X(3) <X(3)>`, 3 :ref:`X(1) <X(1)>` - X(12653), :ref:`X(1) <X(1)>` - 3 X(15015), 4 :ref:`X(214) <X(214)>` - X(1320), 2 :ref:`X(214) <X(214)>` + X(5541), 6 :ref:`X(214) <X(214)>` - X(12653), 2 :ref:`X(214) <X(214)>` - 3 X(15015), 2 X(1054) - 3 X(14193), X(1320) + 2 X(5541), 3 X(1320) - 2 X(12653), X(1320) - 6 X(15015), 3 X(5541) + X(12653), X(5541) + 3 X(15015), 3 X(10087) - 2 X(25439), X(12653) - 9 X(15015), 3 X(13278) - 4 X(25439), X(13279) - 4 X(25440), 3 :ref:`X(2) <X(2)>` - 4 X(3035), 3 :ref:`X(2) <X(2)>` + 2 X(6154), 9 :ref:`X(2) <X(2)>` - 8 X(6667), 3 :ref:`X(2) <X(2)>` + X(20095), 9 :ref:`X(2) <X(2)>` - 10 X(31235), 6 :ref:`X(2) <X(2)>` - 5 X(31272), 3 :ref:`X(2) <X(2)>` - 8 X(35023), 5 :ref:`X(2) <X(2)>` - 4 X(45310), :ref:`X(11) <X(11)>` - 3 X(6174), 3 :ref:`X(11) <X(11)>` - 4 X(6667), 4 :ref:`X(11) <X(11)>` - 3 X(10707), 2 :ref:`X(11) <X(11)>` + X(20095), 3 :ref:`X(11) <X(11)>` - 5 X(31235), 4 :ref:`X(11) <X(11)>` - 5 X(31272), :ref:`X(11) <X(11)>` - 4 X(35023), 5 :ref:`X(11) <X(11)>` - 6 X(45310), :ref:`X(149) <X(149)>` - 4 X(3035), :ref:`X(149) <X(149)>` + 2 X(6154), :ref:`X(149) <X(149)>` - 6 X(6174), 3 :ref:`X(149) <X(149)>` - 8 X(6667), 2 :ref:`X(149) <X(149)>` - 3 X(10707), 3 :ref:`X(149) <X(149)>` - 10 X(31235), 2 :ref:`X(149) <X(149)>` - 5 X(31272), :ref:`X(149) <X(149)>` - 8 X(35023), 5 :ref:`X(149) <X(149)>` - 12 X(45310), 2 X(3035) + X(6154), 2 X(3035) - 3 X(6174), 3 X(3035) - 2 X(6667), 8 X(3035) - 3 X(10707), 4 X(3035) + X(20095), 6 X(3035) - 5 X(31235), 8 X(3035) - 5 X(31272), 5 X(3035) - 3 X(45310), and many more
+   * :ref:`X(100) <X(100)>` = :math:`2R` :ref:`X(1) <X(1)>` - :math:`3R` :ref:`X(2) <X(2)>` + :math:`2r` :ref:`X(3) <X(3)>`, :math:`3` :ref:`X(1) <X(1)>` - X(12653), :ref:`X(1) <X(1)>` - :math:`3` X(15015), :math:`4` :ref:`X(214) <X(214)>` - X(1320), :math:`2` :ref:`X(214) <X(214)>` + X(5541), :math:`6` :ref:`X(214) <X(214)>` - X(12653), :math:`2` :ref:`X(214) <X(214)>` - :math:`3` X(15015), :math:`2` X(1054) - :math:`3` X(14193), X(1320) + :math:`2` X(5541), :math:`3` X(1320) - :math:`2` X(12653), X(1320) - :math:`6` X(15015), :math:`3` X(5541) + X(12653), X(5541) + :math:`3` X(15015), :math:`3` X(10087) - :math:`2` X(25439), X(12653) - :math:`9` X(15015), :math:`3` X(13278) - :math:`4` X(25439), X(13279) - :math:`4` X(25440), :math:`3` :ref:`X(2) <X(2)>` - :math:`4` X(3035), :math:`3` :ref:`X(2) <X(2)>` + :math:`2` X(6154), :math:`9` :ref:`X(2) <X(2)>` - :math:`8` X(6667), :math:`3` :ref:`X(2) <X(2)>` + X(20095), :math:`9` :ref:`X(2) <X(2)>` - :math:`10` X(31235), :math:`6` :ref:`X(2) <X(2)>` - :math:`5` X(31272), :math:`3` :ref:`X(2) <X(2)>` - :math:`8` X(35023), :math:`5` :ref:`X(2) <X(2)>` - :math:`4` X(45310), :ref:`X(11) <X(11)>` - :math:`3` X(6174), :math:`3` :ref:`X(11) <X(11)>` - :math:`4` X(6667), :math:`4` :ref:`X(11) <X(11)>` - :math:`3` X(10707), :math:`2` :ref:`X(11) <X(11)>` + X(20095), :math:`3` :ref:`X(11) <X(11)>` - :math:`5` X(31235), :math:`4` :ref:`X(11) <X(11)>` - :math:`5` X(31272), :ref:`X(11) <X(11)>` - :math:`4` X(35023), :math:`5` :ref:`X(11) <X(11)>` - :math:`6` X(45310), :ref:`X(149) <X(149)>` - :math:`4` X(3035), :ref:`X(149) <X(149)>` + :math:`2` X(6154), :ref:`X(149) <X(149)>` - :math:`6` X(6174), :math:`3` :ref:`X(149) <X(149)>` - :math:`8` X(6667), :math:`2` :ref:`X(149) <X(149)>` - :math:`3` X(10707), :math:`3` :ref:`X(149) <X(149)>` - :math:`10` X(31235), :math:`2` :ref:`X(149) <X(149)>` - :math:`5` X(31272), :ref:`X(149) <X(149)>` - :math:`8` X(35023), :math:`5` :ref:`X(149) <X(149)>` - :math:`12` X(45310), :math:`2` X(3035) + X(6154), :math:`2` X(3035) - :math:`3` X(6174), :math:`3` X(3035) - :math:`2` X(6667), :math:`8` X(3035) - :math:`3` X(10707), :math:`4` X(3035) + X(20095), :math:`6` X(3035) - :math:`5` X(31235), :math:`8` X(3035) - :math:`5` X(31272), :math:`5` X(3035) - :math:`3` X(45310), and many more
 
 .. container:: note-item
 
@@ -91,17 +91,17 @@ X(100) = ANTICOMPLEMENT OF FEUERBACH POINT
    * :ref:`X(100) <X(100)>` = Ψ(X(i),X(j)) for these (i,j): (:ref:`1 <X(1)>`, :ref:`2 <X(2)>`), 2,37), (:ref:`3 <X(3)>`, :ref:`63 <X(63)>`), (:ref:`4 <X(4)>`, :ref:`8 <X(8)>`), (:ref:`6 <X(6)>`, :ref:`1 <X(1)>`), (:ref:`7 <X(7)>`, :ref:`8 <X(8)>`), (:ref:`48 <X(48)>`, :ref:`3 <X(3)>`), (:ref:`56 <X(56)>`, :ref:`55 <X(55)>`), (:ref:`68 <X(68)>`, :ref:`72 <X(72)>`)
    * :ref:`X(100) <X(100)>` = :ref:`X(1) <X(1)>`-:term:`line conjugate <line-conjugate>` of :ref:`X(244) <X(244)>`
    * :ref:`X(100) <X(100)>` = :ref:`X(113) <X(113)>`-of-the-hexyl-triangle
-   * :ref:`X(100) <X(100)>` = concurrence of reflections in sides of ABC of line :ref:`X(4) <X(4)>`\ \ :ref:`X(8) <X(8)>`
+   * :ref:`X(100) <X(100)>` = concurrence of reflections in sides of :g:`ABC << A B C >>` of line :ref:`X(4) <X(4)>`\ \ :ref:`X(8) <X(8)>`
    * :ref:`X(100) <X(100)>` = perspector of Hutson-Moses hyperbola
    * :ref:`X(100) <X(100)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(1) <X(1)>`\ \ :ref:`X(6) <X(6)>` (and PU(28)) (van Aubel line of :term:`excentral triangle <excentral-triangle>`)
    * :ref:`X(100) <X(100)>` = trilinear product of PU(33)
    * :ref:`X(100) <X(100)>` = trilinear product of intercepts of circumcircle and Nagel line
    * :ref:`X(100) <X(100)>` = polar conjugate of X(17924)
    * :ref:`X(100) <X(100)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X(17924) (line :ref:`X(11) <X(11)>`\ X(2969))
-   * :ref:`X(100) <X(100)>` = the point of intersection, other than A, B, and C, of the circumcircle and the circumellipse centered at :ref:`X(1) <X(1)>` (viz., {A,B,C,\ :ref:`X(100) <X(100)>`,\ :ref:`X(664) <X(664)>`,X(1120),X(1320)}})
-   * :ref:`X(100) <X(100)>` = the point of intersection, other than A, B, and C, of the circumcircle and the circumellipse centered at :ref:`X(9) <X(9)>` (viz., {A,B,C,\ :ref:`X(100) <X(100)>`,\ :ref:`X(658) <X(658)>`,\ :ref:`X(662) <X(662)>`,\ :ref:`X(799) <X(799)>`,X(1821),X(2580),X(2581),PU(34)}})
-   * :ref:`X(100) <X(100)>` = the point of intersection, other than A, B, and C, of the circumcircle and hyperbola {A,B,C,PU(8)}}
-   * :ref:`X(100) <X(100)>` = the point of intersection, other than A, B, and C, of the circumcircle and hyperbola {A,B,C,PU(32)}}
+   * :ref:`X(100) <X(100)>` = the point of intersection, other than :g:`A <A>`, :g:`B <B>`, and :g:`C <C>`, of the circumcircle and the circumellipse centered at :ref:`X(1) <X(1)>` (viz., {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(100) <X(100)>`,\ :ref:`X(664) <X(664)>`,X(1120),X(1320)}})
+   * :ref:`X(100) <X(100)>` = the point of intersection, other than :g:`A <A>`, :g:`B <B>`, and :g:`C <C>`, of the circumcircle and the circumellipse centered at :ref:`X(9) <X(9)>` (viz., {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(100) <X(100)>`,\ :ref:`X(658) <X(658)>`,\ :ref:`X(662) <X(662)>`,\ :ref:`X(799) <X(799)>`,X(1821),X(2580),X(2581),PU(34)}})
+   * :ref:`X(100) <X(100)>` = the point of intersection, other than :g:`A <A>`, :g:`B <B>`, and :g:`C <C>`, of the circumcircle and hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(8)}}
+   * :ref:`X(100) <X(100)>` = the point of intersection, other than :g:`A <A>`, :g:`B <B>`, and :g:`C <C>`, of the circumcircle and hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(32)}}
    * :ref:`X(100) <X(100)>` = center of hyperbola passing through :ref:`X(1) <X(1)>`, :ref:`X(9) <X(9)>`, and the excenters
    * :ref:`X(100) <X(100)>` = :ref:`X(125) <X(125)>`-of-excentral-triangle
    * :ref:`X(100) <X(100)>` = trilinear pole wrt 1st circumperp triangle of line :ref:`X(3) <X(3)>`\ \ :ref:`X(142) <X(142)>`
@@ -111,10 +111,10 @@ X(100) = ANTICOMPLEMENT OF FEUERBACH POINT
    * :ref:`X(100) <X(100)>` = reflection of :ref:`X(901) <X(901)>` in line :ref:`X(1) <X(1)>`\ \ :ref:`X(3) <X(3)>`
    * :ref:`X(100) <X(100)>` = :term:`cevapoint <cevapoint>` of :ref:`X(59) <X(59)>` and inverse-in-circumcircle-of-:ref:`X(59) <X(59)>`
    * :ref:`X(100) <X(100)>` = inverse-in-{circumcircle, nine-point circle}-inverter of :ref:`X(120) <X(120)>`
-   * :ref:`X(100) <X(100)>` = exsimilicenter of circumcircle and AC-incircle
+   * :ref:`X(100) <X(100)>` = exsimilicenter of circumcircle and :g:`AC <[ A C ]>`-incircle
    * :ref:`X(100) <X(100)>` = X(i)-:term:`aleph conjugate <aleph-conjugate>` of X(j) for these (i,j) (1,1052), (100,1), (190,63), (643,411), (666,673), (765,100), (1016,190)
    * :ref:`X(100) <X(100)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`8 <X(8)>`, :ref:`80 <X(80)>`), (:ref:`21 <X(21)>`, :ref:`106 <X(106)>`), (:ref:`100 <X(100)>`, :ref:`109 <X(109)>`), (:ref:`333 <X(333)>`, :ref:`673 <X(673)>`), (:ref:`643 <X(643)>`, :ref:`100 <X(100)>`), (:ref:`765 <X(765)>`, :ref:`100 <X(100)>`)
-   * :ref:`X(100) <X(100)>` = the point of intersection, other than A, B, and C, of the circumcircle and ellipse {A,B,C,PU(75)}}
+   * :ref:`X(100) <X(100)>` = the point of intersection, other than :g:`A <A>`, :g:`B <B>`, and :g:`C <C>`, of the circumcircle and ellipse {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(75)}}
    * :ref:`X(100) <X(100)>` = :term:`crossdifference <crossdifference>` of PU(27)
    * :ref:`X(100) <X(100)>` = homothetic center of 2nd Schiffler triangle and excenters-midpoints triangle
    * :ref:`X(100) <X(100)>` = Feuerbach image of :ref:`X(2) <X(2)>`
@@ -124,15 +124,15 @@ X(100) = ANTICOMPLEMENT OF FEUERBACH POINT
    * :ref:`X(100) <X(100)>` = :term:`eigencenter <eigencenter>` of Gemini triangle 2
    * :ref:`X(100) <X(100)>` = barycentric product of vertices of Gemini triangle 5
    * :ref:`X(100) <X(100)>` = barycentric product of vertices of Gemini triangle 6
-   * :ref:`X(100) <X(100)>` = perspector of ABC and side-triangle of Gemini triangles 29 and 30
+   * :ref:`X(100) <X(100)>` = perspector of :g:`ABC << A B C >>` and side-triangle of Gemini triangles 29 and 30
    * :ref:`X(100) <X(100)>` = homothetic center of 2nd Schiffler triangle and excenters-midpoints triangle
    * :ref:`X(100) <X(100)>` = barycentric product of vertices of Gemini triangle 29
    * :ref:`X(100) <X(100)>` = barycentric product of vertices of Gemini triangle 30
-   * :ref:`X(100) <X(100)>` = intersection, other than A, B, C, of {ABC, Gemini 29}-circumconic and {ABC, Gemini 30}-circumconic
+   * :ref:`X(100) <X(100)>` = intersection, other than :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, of {:g:`ABC << A B C >>`, Gemini 29}-circumconic and {:g:`ABC << A B C >>`, Gemini 30}-circumconic
    * :ref:`X(100) <X(100)>` = barycentric product of circumcircle intercepts of line :ref:`X(2) <X(2)>`\ \ :ref:`X(37) <X(37)>`
-   * :ref:`X(100) <X(100)>` = excentral-to-ABC :term:`barycentric image <barycentric-image>` of X(1768)
-   * :ref:`X(100) <X(100)>` = intouch-to-ABC barycentric image of :ref:`X(11) <X(11)>`
-   * :ref:`X(100) <X(100)>` = ABC-to-excentral barycentric image of :ref:`X(11) <X(11)>`
+   * :ref:`X(100) <X(100)>` = excentral-to-:g:`ABC << A B C >>` :term:`barycentric image <barycentric-image>` of X(1768)
+   * :ref:`X(100) <X(100)>` = intouch-to-:g:`ABC << A B C >>` barycentric image of :ref:`X(11) <X(11)>`
+   * :ref:`X(100) <X(100)>` = :g:`ABC << A B C >>`-to-excentral barycentric image of :ref:`X(11) <X(11)>`
    * :ref:`X(100) <X(100)>` = trilinear pole, wrt circumtangential triangle, of line :ref:`X(1) <X(1)>`\ \ :ref:`X(3) <X(3)>`
    * :ref:`X(100) <X(100)>` = BSS(a^2→a) of :ref:`X(110) <X(110)>`
    * :ref:`X(100) <X(100)>` = Collings transform of X(i) for these i: {:ref:`1 <X(1)>`, :ref:`9 <X(9)>`, :ref:`10 <X(10)>`, :ref:`119 <X(119)>`, :ref:`142 <X(142)>`, :ref:`214 <X(214)>`, :ref:`442 <X(442)>`, :ref:`600 <X(600)>`, 1145, 2092, 3126, 3307, 3308, 3647, 5507, 6184, 6260, 6594, 6600, 10427, 10472, 11517, 11530, 12631, 12639, 12640, 12864, 13089, 15346, 15347, 15348, 17057, 17060, 18258, 18642, 19557, 19584, 22754, 34261, 35204, 39041, 39048, 40587, 40600, 40653, 41540, 41862, 41886, 43182, 45036}
@@ -155,11 +155,11 @@ Notes
 
 .. container:: note-item
 
-   Let Ia be the reflection of :ref:`X(1) <X(1)>` in the perpendicular bisector of BC, and define Ib and Ic cyclically; then :ref:`X(100) <X(100)>` = :ref:`X(36) <X(36)>`-of-IaIbIc. Also, let P be a point on line :ref:`X(4) <X(4)>`\ \ :ref:`X(8) <X(8)>` other than :ref:`X(4) <X(4)>`. Let A' be the reflection of P in BC, and define B' and C' cyclically. The circumcircles of AB'C', BC'A', and CA'B' concur at :ref:`X(100) <X(100)>`. (Randy Hutson, 9/5/2015)
+   Let :g:`I_{a} <I_a>` be the reflection of :ref:`X(1) <X(1)>` in the perpendicular bisector of :g:`BC <[ B C ]>`, and define :g:`I_{b} <I_b>` and :g:`I_{c} <I_c>` cyclically; then :ref:`X(100) <X(100)>` = :ref:`X(36) <X(36)>`-of-:g:`I_{a}I_{b}I_{c} << I_a I_b I_c >>`. Also, let :g:`P <P>` be a point on line :ref:`X(4) <X(4)>`\ \ :ref:`X(8) <X(8)>` other than :ref:`X(4) <X(4)>`. Let :g:`A' <A'>` be the reflection of :g:`P <P>` in :g:`BC <[ B C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The circumcircles of :g:`AB'C' << A B' C' >>`, :g:`BC'A' << B C' A' >>`, and :g:`CA'B' << C A' B' >>` concur at :ref:`X(100) <X(100)>`. (Randy Hutson, 9/5/2015)
 
 .. container:: note-item
 
-   Let IaIbIc be the excentral triangle. The Euler lines of triangles BCIa, CAIb, ABIc concur in :ref:`X(100) <X(100)>`. (Randy Hutson, June 27, 2018)
+   Let :g:`I_{a}I_{b}I_{c} << I_a I_b I_c >>` be the excentral triangle. The Euler lines of triangles BCIa, CAIb, ABIc concur in :ref:`X(100) <X(100)>`. (Randy Hutson, June 27, 2018)
 
 .. toctree::
    :hidden:

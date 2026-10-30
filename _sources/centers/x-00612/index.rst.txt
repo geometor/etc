@@ -16,23 +16,19 @@ X(612) = INTERSECTION OF LINES X(1)X(2) AND X(9)X(31)
    :alt: X(612) = INTERSECTION OF LINES X(1)X(2) AND X(9)X(31)
    :align: center
 
-   **X(612) = INTERSECTION OF LINES X(1)X(2) AND X(9)X(31)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(612) = INTERSECTION OF LINES X(1)X(2) AND X(9)X(31)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`a^{2} + b^{2} + c^{2} + 2bc (M. Iliev, 5/13/2007)`
+   | **Trilinears:** :math:`a^{2} + b^{2} + c^{2} + 2bc` (M. Iliev, 5/13/2007)
    | **Search Value (6, 9, 13):** :math:`2.013984607013`
 
 .. collapse:: Alternate Coordinates
    :badge: 3 forms
 
-   * **Trilinears:** :math:`bc + S_{\omega } : ca + S_{\omega } : ab + S_{\omega } (C. Lozada, 9/07/2013)`
+   * **Trilinears:** :math:`bc + S_{\omega } : ca + S_{\omega } : ab + S_{\omega }` (C. Lozada, 9/07/2013)
    * **Trilinears:** :math:`(1 + \cos A)(1 + \cos B \cos C) : :`
    * **Trilinears:** :math:`(1 + \sec A)(1 + \sec B \sec C) : :`
-
-.. container:: note-item
-
-   :ref:`X(612) <X(612)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 14 lines

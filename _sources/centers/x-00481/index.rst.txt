@@ -11,13 +11,13 @@ X(481) = 1st EPPSTEIN POINT
 
 .. enunciation::
 
-   Let S be the inner Soddy circle and S\ :sub:`A`, S\ :sub:`B`, S\ :sub:`C` the Soddy circles tangent to S. Let Ia = S∩S\ :sub:`A`, Ea = S\ :sub:`B`\ ∩S\ :sub:`C`, and determine Ib, Ic, Eb, Ec cyclically. Then :ref:`X(481) <X(481)>` is the point of concurrence of lines I\ :sub:`A`-to-E\ :sub:`A`, I\ :sub:`B`-to-E\ :sub:`B`, I\ :sub:`C`-to-E\ :sub:`C`.
+   Let S be the inner Soddy circle and :math:`S_{A}`, :math:`S_{B}`, :math:`S_{C}` the Soddy circles tangent to S. Let :g:`I_{a} <I_a>` = S∩\ :math:`S_{A}`, :g:`E_{a} <E_a>` = :math:`S_{B}`\ ∩\ :math:`S_{C}`, and determine :g:`I_{b} <I_b>`, :g:`I_{c} <I_c>`, :g:`E_{b} <E_b>`, :g:`E_{c} <E_c>` cyclically. Then :ref:`X(481) <X(481)>` is the point of concurrence of lines :g:`I_{A} <I_A>`-to-:g:`E_{A} <E_A>`, :g:`I_{B} <I_B>`-to-:g:`E_{B} <E_B>`, :g:`I_{C} <I_C>`-to-:g:`E_{C} <E_C>`.
 
 .. figure:: x-00481.svg
    :alt: X(481) = 1st EPPSTEIN POINT
    :align: center
 
-   **X(481) = 1st EPPSTEIN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(481) = 1st EPPSTEIN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,18 +27,14 @@ X(481) = 1st EPPSTEIN POINT
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`1 - 4(area)/[a(b + c - a)] : : (E. Brisse, 3/20/01)`
+   * **Trilinears:** :math:`1 - 4(\operatorname{area})/[a(b + c - a)] : :` (E. Brisse, 3/20/01)
 
 .. collapse:: Linear Combinations
    :badge: 3 combinations
 
-   * :ref:`X(481) <X(481)>` = s\*\ :ref:`X(1) <X(1)>` - (r + 4R)\*\ :ref:`X(7) <X(7)>`
-   * :ref:`X(481) <X(481)>` = [A]/Ra + [B]/Rb + [C]/Rc - :ref:`X(1) <X(1)>`/r, where Ra, Rb, Rc = radii of Soddy circles
-   * :ref:`X(481) <X(481)>` = [A]/Ra + [B]/Rb + [C]/Rc + :ref:`X(175) <X(175)>`/Rs', where Ra, Rb, Rc = radii of Soddy circles, and Rs' = radius of outer Soddy circle
-
-.. container:: note-item
-
-   :ref:`X(481) <X(481)>` lies.
+   * :ref:`X(481) <X(481)>` = :math:`s` :ref:`X(1) <X(1)>` - :math:`(r + 4R)` :ref:`X(7) <X(7)>`
+   * :ref:`X(481) <X(481)>` = :g:`A <A>` / :math:`R_{a}` + :g:`B <B>` / :math:`R_{b}` + :g:`C <C>` / :math:`R_{c}` - :ref:`X(1) <X(1)>` / :math:`r`, where :math:`R_{a}`, :math:`R_{b}`, :math:`R_{c}` = radii of Soddy circles
+   * :ref:`X(481) <X(481)>` = :g:`A <A>` / :math:`R_{a}` + :g:`B <B>` / :math:`R_{b}` + :g:`C <C>` / :math:`R_{c}` + :ref:`X(175) <X(175)>` / :math:`R_{s}'`, where :math:`R_{a}`, :math:`R_{b}`, :math:`R_{c}` = radii of Soddy circles, and :math:`R_{s}'` = radius of outer Soddy circle
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines
@@ -65,11 +61,11 @@ Notes
 
 .. container:: note-item
 
-   Let S' be the outer Soddy center, :ref:`X(175) <X(175)>`. :ref:`X(481) <X(481)>` is the point of concurrence of the Soddy lines of BS'C, CS'A, and AS'B. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
+   Let S' be the outer Soddy center, :ref:`X(175) <X(175)>`. :ref:`X(481) <X(481)>` is the point of concurrence of the Soddy lines of :g:`BS'C << B S' C >>`, :g:`CS'A << C S' A >>`, and :g:`AS'B << A S' B >>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
 
 .. container:: note-item
 
-   Let La be the line tangent to the outer Soddy circle at the touchpoint with the A-Soddy circle. Define Lb and Lc cyclically. Let A' = Lb∩Lc and define B' and C'cyclically. Triangle A'B'C', here introduced as the outer Soddy :term:`tangential triangle <tangential-triangle>`, is perspective to ABC, and the perspector is :ref:`X(481) <X(481)>`. (Randy Hutson, September 14, 2016)
+   Let :g:`L_{a} <L_a>` be the line tangent to the outer Soddy circle at the touchpoint with the A-Soddy circle. Define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>` and define :g:`B' <B'>` and C'cyclically. Triangle :g:`A'B'C' << A' B' C' >>`, here introduced as the outer Soddy :term:`tangential triangle <tangential-triangle>`, is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X(481) <X(481)>`. (Randy Hutson, September 14, 2016)
 
 .. toctree::
    :hidden:

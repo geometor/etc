@@ -16,17 +16,13 @@ X(909) = POINT ADHAFERA
    :alt: X(909) = POINT ADHAFERA
    :align: center
 
-   **X(909) = POINT ADHAFERA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(909) = POINT ADHAFERA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = a/[(wb + vc)/a - v - w], u : v : w = :ref:`X(3) <X(3)>`
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a/[(wb + vc)/a - v - w]`,\ :math:`u : v : w` = :ref:`X(3) <X(3)>`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`-9.634392551591`
-
-.. container:: note-item
-
-   :ref:`X(909) <X(909)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines

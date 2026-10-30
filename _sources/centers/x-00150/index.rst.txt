@@ -16,11 +16,12 @@ X(150) = REFLECTION OF X(20) IN X(103)
    :alt: X(150) = REFLECTION OF X(20) IN X(103)
    :align: center
 
-   **X(150) = REFLECTION OF X(20) IN X(103)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(150) = REFLECTION OF X(20) IN X(103)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where, f(a,b,c) = bc[b\ :sup:`4` + c\ :sup:`4` - a\ :sup:`4` + a(bc\ :sup:`2` +cb\ :sup:`2` - b\ :sup:`3` - c\ :sup:`3`) - bc(a\ :sup:`2` + b\ :sup:`2` + c\ :sup:`2`) + (b + c)a\ :sup:`3`]
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = bc[b^{4} + c^{4} - a^{4} + a(bc^{2} +cb^{2} - b^{3} - c^{3}) - bc(a^{2} + b^{2} + c^{2}) + (b + c)a^{3}]`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = b^{4} + c^{4} - a^{4} + a(bc^{2} +cb^{2} - b^{3} - c^{3}) - bc(a^{2} + b^{2} + c^{2}) + (b + c)a^{3}`
    | **Search Value (6, 9, 13):** :math:`5.247092904763`
 
 .. container:: note-item
@@ -43,15 +44,6 @@ X(150) = REFLECTION OF X(20) IN X(103)
    * :ref:`X(150) <X(150)>` = isotomic conjugate of :term:`anticomplement <anticomplement>` of X(39026)
    * :ref:`X(150) <X(150)>` = polar conjugate of isogonal conjugate of X(22145)
    * :ref:`X(150) <X(150)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X(514) <X(514)>`
-
-Notes
------
-
-.. container:: note-item
-
-   Barycentrics g(a,b,c) : g(b,c,a) : g(c,a,b), where
-
-      * g(a,b,c) = b\ :sup:`4` + c\ :sup:`4` - a\ :sup:`4` + a(bc\ :sup:`2` +cb\ :sup:`2` - b\ :sup:`3` - c\ :sup:`3`) - bc(a\ :sup:`2` + b\ :sup:`2` + c\ :sup:`2`) + (b + c)a\ :sup:`3`
 
 .. toctree::
    :hidden:

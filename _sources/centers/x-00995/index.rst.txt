@@ -16,16 +16,12 @@ X(995) = MIDPOINT OF X(1) AND X(43)
    :alt: X(995) = MIDPOINT OF X(1) AND X(43)
    :align: center
 
-   **X(995) = MIDPOINT OF X(1) AND X(43)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(995) = MIDPOINT OF X(1) AND X(43)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`a(ab + ac - bc + b^{2} + c^{2}) : :`
    | **Search Value (6, 9, 13):** :math:`0.973764684796`
-
-.. container:: note-item
-
-   :ref:`X(995) <X(995)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 11 lines

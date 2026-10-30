@@ -16,21 +16,17 @@ X(681) = TRILINEAR POLE OF LINE X(6)X(158)
    :alt: X(681) = TRILINEAR POLE OF LINE X(6)X(158)
    :align: center
 
-   **X(681) = TRILINEAR POLE OF LINE X(6)X(158)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(681) = TRILINEAR POLE OF LINE X(6)X(158)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C): f(B,C,A) : f(C,A,B)`, where f(A,B,C) = (sec\ :sup:`2`\ A)/(sin B cos\ :sup:`2`\ B - sin C cos\ :sup:`2`\ C)
+   | **Trilinears:** :math:`f(A,B,C): f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = (\sec^{2} A)/(\sin B \cos^{2} B - \sin C \cos^{2} C)`
    | **Barycentrics:** :math:`(\sin A)f(A,B,C): (\sin B)f(B,C,A) : (\sin C)f(C,A,B)`
    | **Search Value (6, 9, 13):** :math:`1.927083772921`
 
 .. container:: note-item
 
    :ref:`X(681) <X(681)>` lies on the circumcircle.
-
-.. container:: note-item
-
-   :ref:`X(681) <X(681)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines

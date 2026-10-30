@@ -10,19 +10,19 @@ X(187) = INVERSE-IN-CIRCUMCIRCLE OF X(6) (SCHOUTE CENTER)
 
 .. enunciation::
 
-   Let L denote the line having trilinears of :ref:`X(187) <X(187)>` as coefficients. Then L is the line passing through :ref:`X(2) <X(2)>` perpendicular to the Euler line.
+   Let :g:`L <L>` denote the line having trilinears of :ref:`X(187) <X(187)>` as coefficients. Then L is the line passing through :ref:`X(2) <X(2)>` perpendicular to the Euler line.
 
 .. figure:: x-00187.svg
    :alt: X(187) = INVERSE-IN-CIRCUMCIRCLE OF X(6) (SCHOUTE CENTER)
    :align: center
 
-   **X(187) = INVERSE-IN-CIRCUMCIRCLE OF X(6) (SCHOUTE CENTER)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(187) = INVERSE-IN-CIRCUMCIRCLE OF X(6) (SCHOUTE CENTER)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`a(2a^{2} - b^{2} - c^{2}) : :`
    | **Barycentrics:** :math:`a^{2}(2a^{2} - b^{2} - c^{2}) : :`
-   | **Tripolars:** :math:`b c \sqrt{2(b^2 + c^2) - a^2} : :`
+   | **Tripolars:** :math:`b c \sqrt{2(b^{2} + c^{2}) - a^{2}} : :`
    | **Search Value (6, 9, 13):** :math:`-1.840883737592`
 
 .. collapse:: Alternate Coordinates
@@ -31,7 +31,7 @@ X(187) = INVERSE-IN-CIRCUMCIRCLE OF X(6) (SCHOUTE CENTER)
    * **Trilinears:** :math:`\sin A - 3 \cos A \tan \omega : :`
    * **Trilinears:** :math:`2 \sin(A - 2\omega ) - \sin(A + 2\omega ) + \sin A : :`
    * **Trilinears:** :math:`\sin A + \sin A \cos 2\omega - 3 \cos A \sin 2\omega : :`
-   * **Trilinears:** :math:`\cos(A + \omega ) \sin 2\omega - e^2 \sin(A - \omega ) : :`
+   * **Trilinears:** :math:`\cos(A + \omega ) \sin 2\omega - e^{2} \sin(A - \omega ) : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
@@ -72,13 +72,13 @@ X(187) = INVERSE-IN-CIRCUMCIRCLE OF X(6) (SCHOUTE CENTER)
    * :ref:`X(187) <X(187)>` = radical trace of Lucas inner and Lucas(-1) inner circle
    * :ref:`X(187) <X(187)>` = radical trace of circles {P(1),U(2),U(39)}} and {U(1),P(2),P(39)}}
    * :ref:`X(187) <X(187)>` = intersection of Brocard axis and Lemoine axis
-   * :ref:`X(187) <X(187)>` = intersection of Brocard axis (or Lemoine axis) and non-transverse axis of hyperbola {A,B,C,PU(2)}}
-   * :ref:`X(187) <X(187)>` = intersection of Brocard axis (or Lemoine axis) and tangent at :ref:`X(691) <X(691)>` to hyperbola {A,B,C,PU(2)}}
+   * :ref:`X(187) <X(187)>` = intersection of Brocard axis (or Lemoine axis) and non-transverse axis of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(2)}}
+   * :ref:`X(187) <X(187)>` = intersection of Brocard axis (or Lemoine axis) and tangent at :ref:`X(691) <X(691)>` to hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(2)}}
    * :ref:`X(187) <X(187)>` = midpoint of PU(2)
    * :ref:`X(187) <X(187)>` = bicentric sum of PU(2)
-   * :ref:`X(187) <X(187)>` = perspector of ABC and the reflection of the circumsymmedial triangle in the Brocard axis
-   * :ref:`X(187) <X(187)>` = perspector of ABC and the reflection of the circumsymmedial triangle in the Lemoine axis
-   * :ref:`X(187) <X(187)>` = intersection of tangents to hyperbola {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(6) <X(6)>`} at :ref:`X(6) <X(6)>` and :ref:`X(111) <X(111)>`
+   * :ref:`X(187) <X(187)>` = perspector of :g:`ABC << A B C >>` and the reflection of the circumsymmedial triangle in the Brocard axis
+   * :ref:`X(187) <X(187)>` = perspector of :g:`ABC << A B C >>` and the reflection of the circumsymmedial triangle in the Lemoine axis
+   * :ref:`X(187) <X(187)>` = intersection of tangents to hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(6) <X(6)>`} at :ref:`X(6) <X(6)>` and :ref:`X(111) <X(111)>`
    * :ref:`X(187) <X(187)>` = inverse-in-Parry-circle of X(2502)
    * :ref:`X(187) <X(187)>` = :ref:`X(187) <X(187)>`-of-2nd-Brocard-triangle
    * :ref:`X(187) <X(187)>` = :ref:`X(187) <X(187)>`-of-circumsymmedial-triangle
@@ -102,18 +102,18 @@ X(187) = INVERSE-IN-CIRCUMCIRCLE OF X(6) (SCHOUTE CENTER)
    * :ref:`X(187) <X(187)>` = :ref:`X(13) <X(13)>`-antipedal-to-:ref:`X(16) <X(16)>`-pedal :term:`similarity image <similarity-image>` of :ref:`X(13) <X(13)>`
    * :ref:`X(187) <X(187)>` = :ref:`X(14) <X(14)>`-antipedal-to-:ref:`X(15) <X(15)>`-pedal similarity image of :ref:`X(14) <X(14)>`
    * :ref:`X(187) <X(187)>` = homothetic center of Trinh triangle and mid-triangle of 1st and 2nd Kenmotu diagonals triangles
-   * :ref:`X(187) <X(187)>` = QA-P4 (Isogonal Center of quadrangle ABC\ :ref:`X(2) <X(2)>`; see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/25-qa-p4.html)
+   * :ref:`X(187) <X(187)>` = :g:`QA <[ Q A ]>`-:g:`P_{4} <P_4>` (Isogonal Center of quadrangle :g:`ABC << A B C >>`\ :ref:`X(2) <X(2)>`; see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/25-qa-p4.html)
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let A'B'C' be the 1st Brocard triangle. Let A″B″C″ be the 2nd Brocard triangle. Let A\* = Λ((A',A″), and define B\* and C\* cyclically. The lines AA\*, BB\*, CC\* concur in :ref:`X(187) <X(187)>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the 1st Brocard triangle. Let :g:`A″B″C″ << A″ B″ C″ >>` be the 2nd Brocard triangle. Let :g:`A* <A*>` = Λ((:g:`A' <A'>`,\ :g:`A″ <A″>`), and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(187) <X(187)>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
 
 .. container:: note-item
 
-   Let (O\ :sub:`A`) be the circumcircle of BC\ :ref:`X(2) <X(2)>`. Let P\ :sub:`A` be the perspector of (O\ :sub:`A`). Let L\ :sub:`A` be the polar of P\ :sub:`A` wrt (O\ :sub:`A`). Define L\ :sub:`B` and L\ :sub:`C` cyclically. Let A' = L\ :sub:`B`\ ∩L\ :sub:`C`, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(187) <X(187)>`. (Randy Hutson, June 7, 2019)
+   Let (:g:`O_{A} <O_A>`) be the circumcircle of :g:`BC <[ B C ]>`\ :ref:`X(2) <X(2)>`. Let :g:`P_{A} <P_A>` be the perspector of (:g:`O_{A} <O_A>`). Let :g:`L_{A} <L_A>` be the polar of :g:`P_{A} <P_A>` wrt (:g:`O_{A} <O_A>`). Define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A' <A'>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(187) <X(187)>`. (Randy Hutson, June 7, 2019)
 
 .. container:: note-item
 

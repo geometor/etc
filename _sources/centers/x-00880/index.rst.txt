@@ -16,16 +16,12 @@ X(880) = INTERSECTION OF LINES X(6)X(76) AND X(99)X(670)
    :alt: X(880) = INTERSECTION OF LINES X(6)X(76) AND X(99)X(670)
    :align: center
 
-   **X(880) = INTERSECTION OF LINES X(6)X(76) AND X(99)X(670)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(880) = INTERSECTION OF LINES X(6)X(76) AND X(99)X(670)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(a^{2}u^{2} - bcvw)/[a^{2}u(bv - cw)]: :`, where u : v : w = :ref:`X(6) <X(6)>`
+   | **Trilinears:** :math:`(a^{2}u^{2} - bcvw)/[a^{2}u(bv - cw)]: :`, where :math:`u : v : w` = :ref:`X(6) <X(6)>`
    | **Search Value (6, 9, 13):** :math:`52.830844700136`
-
-.. container:: note-item
-
-   :ref:`X(880) <X(880)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines

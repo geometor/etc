@@ -16,17 +16,17 @@ X(889) = INTERSECTION OF LINES X(99)X(898) AND X(190)X(649)
    :alt: X(889) = INTERSECTION OF LINES X(99)X(898) AND X(190)X(649)
    :align: center
 
-   **X(889) = INTERSECTION OF LINES X(99)X(898) AND X(190)X(649)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(889) = INTERSECTION OF LINES X(99)X(898) AND X(190)X(649)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(a^{2}u^{2} - bcvw)/[a^{2}u(bv - cw)] : :`, where u : v : w = :ref:`X(513) <X(513)>`
+   | **Trilinears:** :math:`(a^{2}u^{2} - bcvw)/[a^{2}u(bv - cw)] : :`, where :math:`u : v : w` = :ref:`X(513) <X(513)>`
    | **Barycentrics:** :math:`b c/((b - c) (a b + a c - 2 b c)) : :`
    | **Search Value (6, 9, 13):** :math:`2.749435946006`
 
 .. container:: note-item
 
-   :ref:`X(889) <X(889)>` lies on the Steiner circumellipse, the hyperbola {A,B,C,PU(41)}}j.
+   :ref:`X(889) <X(889)>` lies on the Steiner circumellipse, the hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(41)}}j.
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines

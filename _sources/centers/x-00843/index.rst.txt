@@ -16,20 +16,16 @@ X(843) = ISOGONAL CONJUGATE OF X(543)
    :alt: X(843) = ISOGONAL CONJUGATE OF X(543)
    :align: center
 
-   **X(843) = ISOGONAL CONJUGATE OF X(543)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(843) = ISOGONAL CONJUGATE OF X(543)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`a/(2ax - by - cz) : :`, where x = x(a,b,c) = bc/(b\ :sup:`2` - c\ :sup:`2`)
+   | **Trilinears:** :math:`a/(2ax - by - cz) : :`, where :math:`x = x(a,b,c) = bc/(b^{2} - c^{2})`
    | **Search Value (6, 9, 13):** :math:`18.626457277622`
 
 .. container:: note-item
 
    :ref:`X(843) <X(843)>` lies on the circumcircle.
-
-.. container:: note-item
-
-   :ref:`X(843) <X(843)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines
@@ -49,7 +45,7 @@ X(843) = ISOGONAL CONJUGATE OF X(543)
    * :ref:`X(843) <X(843)>` = reflection of X(2709) in :ref:`X(3) <X(3)>`
    * :ref:`X(843) <X(843)>` = reflection of :ref:`X(111) <X(111)>` in the Brocard axis
    * :ref:`X(843) <X(843)>` = inverse-in-circle-O(15,16) of :ref:`X(110) <X(110)>`
-   * :ref:`X(843) <X(843)>` = 2nd-Parry-to-ABC :term:`similarity image <similarity-image>` of :ref:`X(352) <X(352)>`
+   * :ref:`X(843) <X(843)>` = 2nd-Parry-to-:g:`ABC << A B C >>` :term:`similarity image <similarity-image>` of :ref:`X(352) <X(352)>`
    * :ref:`X(843) <X(843)>` = 3rd-Parry-to-circumsymmedial similarity image of :ref:`X(111) <X(111)>`
    * :ref:`X(843) <X(843)>` = X(9144)-of-4th-anti-Brocard-triangle
    * :ref:`X(843) <X(843)>` = :term:`cevapoint <cevapoint>` of Schoute circle intercepts with Lemoine axis

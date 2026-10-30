@@ -16,7 +16,7 @@ X(749) = ISOGONAL CONJUGATE OF X(748)
    :alt: X(749) = ISOGONAL CONJUGATE OF X(748)
    :align: center
 
-   **X(749) = ISOGONAL CONJUGATE OF X(748)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(749) = ISOGONAL CONJUGATE OF X(748)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 

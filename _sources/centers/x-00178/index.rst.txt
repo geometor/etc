@@ -11,23 +11,19 @@ X(178) = 2nd MID-ARC POINT
 
 .. enunciation::
 
-   Let A',B',C' be the first points of intersection of the angle bisectors of ABC with its incircle. Let A″,B″,C″ be the midpoints of segments BC,CA,AB, respectively. The lines A'A″,B'B″,C'C″ concur in :ref:`X(178) <X(178)>`.
+   Let :g:`A' <A'>`,\ :g:`B' <B'>`,\ :g:`C' <C'>` be the first points of intersection of the angle bisectors of :g:`ABC << A B C >>` with its incircle. Let :g:`A″ <A″>`,\ :g:`B″ <B″>`,\ :g:`C″ <C″>` be the midpoints of segments :g:`BC <[ B C ]>`,\ :g:`CA <[ C A ]>`,\ :g:`AB <[ A B ]>`, respectively. The lines :g:`A'A″ <[ A' A″ ]>`,\ :g:`B'B″ <[ B' B″ ]>`,\ :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(178) <X(178)>`.
 
 .. figure:: x-00178.svg
    :alt: X(178) = 2nd MID-ARC POINT
    :align: center
 
-   **X(178) = 2nd MID-ARC POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(178) = 2nd MID-ARC POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`(\cos B/2 + \cos C/2) \csc A : (\cos C/2 + \cos A/2) \csc B : (\cos A/2 + \cos B/2) \csc C`
    | **Barycentrics:** :math:`\cos B/2 + \cos C/2 : \cos C/2 + \cos A/2 : \cos A/2 + \cos B/2`
    | **Search Value (6, 9, 13):** :math:`2.359244703059`
-
-.. container:: note-item
-
-   :ref:`X(178) <X(178)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines

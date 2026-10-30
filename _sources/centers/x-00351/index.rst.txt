@@ -16,12 +16,12 @@ X(351) = CENTER OF THE PARRY CIRCLE
    :alt: X(351) = CENTER OF THE PARRY CIRCLE
    :align: center
 
-   **X(351) = CENTER OF THE PARRY CIRCLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(351) = CENTER OF THE PARRY CIRCLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = a(b\ :sup:`2` - c\ :sup:`2`)(b\ :sup:`2` + c\ :sup:`2` - 2a\ :sup:`2`)
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = a\ :sup:`2`\ (b\ :sup:`2` - c\ :sup:`2`)(b\ :sup:`2` + c\ :sup:`2` - 2a\ :sup:`2`)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a(b^{2} - c^{2})(b^{2} + c^{2} - 2a^{2})`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = a^{2}(b^{2} - c^{2})(b^{2} + c^{2} - 2a^{2})`
    | **Search Value (6, 9, 13):** :math:`-2.815203880078`
 
 .. container:: note-item
@@ -42,7 +42,7 @@ X(351) = CENTER OF THE PARRY CIRCLE
    * :ref:`X(351) <X(351)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(892) <X(892)>`
    * :ref:`X(351) <X(351)>` = :term:`complement <complement>` of :term:`anticomplementary conjugate <anticomplementary-conjugate>` of X(39356)
    * :ref:`X(351) <X(351)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(38988)
-   * :ref:`X(351) <X(351)>` = perspector of hyperbola {A,B,C,\ :ref:`X(6) <X(6)>`,\ :ref:`X(187) <X(187)>`}}, which is the locus of the barycentric product of circumcircle-:ref:`X(690) <X(690)>`-antipodes
+   * :ref:`X(351) <X(351)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(6) <X(6)>`,\ :ref:`X(187) <X(187)>`}}, which is the locus of the barycentric product of circumcircle-:ref:`X(690) <X(690)>`-antipodes
    * :ref:`X(351) <X(351)>` = :term:`crosspoint <crosspoint>` of :ref:`X(110) <X(110)>` and :ref:`X(111) <X(111)>`
    * :ref:`X(351) <X(351)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`690 <X(690)>`), (:ref:`523 <X(523)>`, :ref:`524 <X(524)>`), (:ref:`850 <X(850)>`, 1236)
    * :ref:`X(351) <X(351)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(2) <X(2)>`\ \ :ref:`X(99) <X(99)>`
@@ -57,7 +57,7 @@ X(351) = CENTER OF THE PARRY CIRCLE
    * :ref:`X(351) <X(351)>` = tripolar centroid of :ref:`X(6) <X(6)>`
    * :ref:`X(351) <X(351)>` = tripolar centroid of X(14608)
    * :ref:`X(351) <X(351)>` = X(9227)-anticomplementary conjugate of X(21294)
-   * :ref:`X(351) <X(351)>` = centroid of Lemoine axis intercepts with sidelines of ABC
+   * :ref:`X(351) <X(351)>` = centroid of Lemoine axis intercepts with sidelines of :g:`ABC << A B C >>`
    * :ref:`X(351) <X(351)>` = :ref:`X(351) <X(351)>`-of-circumsymmedial-triangle
    * :ref:`X(351) <X(351)>` = intersection of tangents to Steiner inellipse at X(1084) and X(2482)
    * :ref:`X(351) <X(351)>` = crosspoint wrt :term:`medial triangle <medial-triangle>` of X(1084) and X(2482)
@@ -91,11 +91,11 @@ Notes
 
 .. container:: note-item
 
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the 1st anti-Parry triangle and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(351) <X(351)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (:person:`Randy Hutson <randy-hutson>`, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the 1st anti-Parry triangle and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(351) <X(351)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (:person:`Randy Hutson <randy-hutson>`, August 30, 2020)
 
 .. container:: note-item
 
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the 2nd anti-Parry triangle and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(351) <X(351)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (Randy Hutson, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the 2nd anti-Parry triangle and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(351) <X(351)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
 
 .. container:: note-item
 

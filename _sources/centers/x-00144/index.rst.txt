@@ -16,7 +16,7 @@ X(144) = ANTICOMPLEMENT OF X(7)
    :alt: X(144) = ANTICOMPLEMENT OF X(7)
    :align: center
 
-   **X(144) = ANTICOMPLEMENT OF X(7)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(144) = ANTICOMPLEMENT OF X(7)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,13 +28,13 @@ X(144) = ANTICOMPLEMENT OF X(7)
    :badge: 3 forms
 
    * **Barycentrics:** :math:`1/(a - b - c) + 1/(a - b + c) + 1/(a + b - c) : :`
-   * **Barycentrics:** :math:`3a^2 - 2a(b + c) - (b - c)^2 : :`
-   * **Barycentrics:** :math:`3*a^2 - 2*a*b - b^2 - 2*a*c + 2*b*c - c^2 : :`
+   * **Barycentrics:** :math:`3a^{2} - 2a(b + c) - (b - c)^{2} : :`
+   * **Barycentrics:** :math:`3 a^{2} - 2 a b - b^{2} - 2 a c + 2 b c - c^{2} : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(144) <X(144)>` = 3 :ref:`X(2) <X(2)>` - 4 :ref:`X(9) <X(9)>`,9 :ref:`X(2) <X(2)>` - 8 :ref:`X(142) <X(142)>`,5 :ref:`X(2) <X(2)>` - 4 X(6173),15 :ref:`X(2) <X(2)>` - 16 X(6666),9 :ref:`X(2) <X(2)>` - 10 X(18230),21 :ref:`X(2) <X(2)>` - 20 X(20195),2 :ref:`X(3) <X(3)>` - 3 X(21168),3 :ref:`X(4) <X(4)>` - 2 X(31671),3 :ref:`X(7) <X(7)>` - 4 :ref:`X(142) <X(142)>`,\ :ref:`X(7) <X(7)>` - 3 X(6172),5 :ref:`X(7) <X(7)>` - 6 X(6173),5 :ref:`X(7) <X(7)>` - 8 X(6666),3 :ref:`X(7) <X(7)>` - 5 X(18230),7 :ref:`X(7) <X(7)>` - 10 X(20195),3 :ref:`X(9) <X(9)>` - 2 :ref:`X(142) <X(142)>`,2 :ref:`X(9) <X(9)>` - 3 X(6172),5 :ref:`X(9) <X(9)>` - 3 X(6173),5 :ref:`X(9) <X(9)>` - 4 X(6666),6 :ref:`X(9) <X(9)>` - 5 X(18230),4 :ref:`X(9) <X(9)>` - X(20059),7 :ref:`X(9) <X(9)>` - 5 X(20195),2 :ref:`X(75) <X(75)>` - 3 X(27484),4 :ref:`X(142) <X(142)>` - 9 X(6172),10 :ref:`X(142) <X(142)>` - 9 X(6173),5 :ref:`X(142) <X(142)>` - 6 X(6666),4 :ref:`X(142) <X(142)>` - 5 X(18230),8 :ref:`X(142) <X(142)>` - 3 X(20059),14 :ref:`X(142) <X(142)>` - 15 X(20195),\ :ref:`X(145) <X(145)>` - 4 X(5698),3 :ref:`X(210) <X(210)>` - 2 X(15587),3 :ref:`X(210) <X(210)>` - X(31391)
+   * :ref:`X(144) <X(144)>` = :math:`3` :ref:`X(2) <X(2)>` - :math:`4` :ref:`X(9) <X(9)>`, :math:`9` :ref:`X(2) <X(2)>` - :math:`8` :ref:`X(142) <X(142)>`, :math:`5` :ref:`X(2) <X(2)>` - :math:`4` X(6173), :math:`15` :ref:`X(2) <X(2)>` - :math:`16` X(6666), :math:`9` :ref:`X(2) <X(2)>` - :math:`10` X(18230), :math:`21` :ref:`X(2) <X(2)>` - :math:`20` X(20195), :math:`2` :ref:`X(3) <X(3)>` - :math:`3` X(21168), :math:`3` :ref:`X(4) <X(4)>` - :math:`2` X(31671), :math:`3` :ref:`X(7) <X(7)>` - :math:`4` :ref:`X(142) <X(142)>`, :ref:`X(7) <X(7)>` - :math:`3` X(6172), :math:`5` :ref:`X(7) <X(7)>` - :math:`6` X(6173), :math:`5` :ref:`X(7) <X(7)>` - :math:`8` X(6666), :math:`3` :ref:`X(7) <X(7)>` - :math:`5` X(18230), :math:`7` :ref:`X(7) <X(7)>` - :math:`10` X(20195), :math:`3` :ref:`X(9) <X(9)>` - :math:`2` :ref:`X(142) <X(142)>`, :math:`2` :ref:`X(9) <X(9)>` - :math:`3` X(6172), :math:`5` :ref:`X(9) <X(9)>` - :math:`3` X(6173), :math:`5` :ref:`X(9) <X(9)>` - :math:`4` X(6666), :math:`6` :ref:`X(9) <X(9)>` - :math:`5` X(18230), :math:`4` :ref:`X(9) <X(9)>` - X(20059), :math:`7` :ref:`X(9) <X(9)>` - :math:`5` X(20195), :math:`2` :ref:`X(75) <X(75)>` - :math:`3` X(27484), :math:`4` :ref:`X(142) <X(142)>` - :math:`9` X(6172), :math:`10` :ref:`X(142) <X(142)>` - :math:`9` X(6173), :math:`5` :ref:`X(142) <X(142)>` - :math:`6` X(6666), :math:`4` :ref:`X(142) <X(142)>` - :math:`5` X(18230), :math:`8` :ref:`X(142) <X(142)>` - :math:`3` X(20059), :math:`14` :ref:`X(142) <X(142)>` - :math:`15` X(20195), :ref:`X(145) <X(145)>` - :math:`4` X(5698), :math:`3` :ref:`X(210) <X(210)>` - :math:`2` X(15587), :math:`3` :ref:`X(210) <X(210)>` - X(31391)
 
 .. container:: note-item
 
@@ -58,7 +58,7 @@ X(144) = ANTICOMPLEMENT OF X(7)
    * :ref:`X(144) <X(144)>` = anticomplementary-isogonal conjugate of X(3434)
    * :ref:`X(144) <X(144)>` = polar conjugate of the isogonal of X(22117)
    * :ref:`X(144) <X(144)>` = perspector of anticomplementary triangle and **its** :term:`intouch triangle <intouch-triangle>` (inner Conway triangle)
-   * :ref:`X(144) <X(144)>` = perspector of anticomplementary triangle and the :term:`extouch triangle <extouch-triangle>` of ABC
+   * :ref:`X(144) <X(144)>` = perspector of anticomplementary triangle and the :term:`extouch triangle <extouch-triangle>` of :g:`ABC << A B C >>`
    * :ref:`X(144) <X(144)>` = perspector of extouch triangle and inner Conway triangle (Gemini triangle 30)
    * :ref:`X(144) <X(144)>` = :ref:`X(7) <X(7)>`-of-anticomplementary triangle
    * :ref:`X(144) <X(144)>` = polar conjugate of isogonal conjugate of X(22117)

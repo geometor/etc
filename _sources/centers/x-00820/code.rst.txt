@@ -12,7 +12,7 @@ X(820) = CROSSPOINT OF X(1) AND X(255) — Code
    :alt: X(820) = CROSSPOINT OF X(1) AND X(255)
    :align: center
 
-   **X(820) = CROSSPOINT OF X(1) AND X(255)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(820) = CROSSPOINT OF X(1) AND X(255)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

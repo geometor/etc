@@ -10,13 +10,13 @@ X(94) = ISOGONAL CONJUGATE OF X(50)
 
 .. enunciation::
 
-   Let A1B1C1 and A2B2C2 be the 1st and 2nd Ehrmann circumscribing triangles. Let A' be the :term:`trilinear pole <trilinear-pole>` of line A1A2, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(94) <X(94)>`. Let A1'B1'C1' and A2'B2'C2' be the 1st and 2nd Ehrmann inscribed triangles. Then :ref:`X(94) <X(94)>` is the radical center of nine-point circles of AA1'A2', BB1'B2', CC1'C2'. (:person:`Randy Hutson <randy-hutson>`, June 27, 2018)
+   Let :g:`A_{1}B_{1}C_{1} << A_1 B_1 C_1 >>` and :g:`A_{2}B_{2}C_{2} << A_2 B_2 C_2 >>` be the 1st and 2nd Ehrmann circumscribing triangles. Let :g:`A' <A'>` be the :term:`trilinear pole <trilinear-pole>` of line :g:`A_{1}A_{2} <[ A_1 A_2 ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(94) <X(94)>`. Let :g:`A_{1}'B_{1}'C_{1}' << A_1' B_1' C_1' >>` and :g:`A_{2}'B_{2}'C_{2}' << A_2' B_2' C_2' >>` be the 1st and 2nd Ehrmann inscribed triangles. Then :ref:`X(94) <X(94)>` is the radical center of nine-point circles of AA1':g:`A_{2}' <A_2'>`, BB1':g:`B_{2}' <B_2'>`, CC1':g:`C_{2}' <C_2'>`. (:person:`Randy Hutson <randy-hutson>`, June 27, 2018)
 
 .. figure:: x-00094.svg
    :alt: X(94) = ISOGONAL CONJUGATE OF X(50)
    :align: center
 
-   **X(94) = ISOGONAL CONJUGATE OF X(50)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(94) = ISOGONAL CONJUGATE OF X(50)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,7 +27,7 @@ X(94) = ISOGONAL CONJUGATE OF X(50)
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`b^2 c^2 / ((a^2 - b^2 - c^2)^2 - b^2 c^2) : :`
+   * **Barycentrics:** :math:`b^{2} c^{2} / ((a^{2} - b^{2} - c^{2})^{2} - b^{2} c^{2}) : :`
 
 .. container:: note-item
 
@@ -55,14 +55,14 @@ X(94) = ISOGONAL CONJUGATE OF X(50)
    * :ref:`X(94) <X(94)>` = trilinear pole of PU(173)
    * :ref:`X(94) <X(94)>` = trilinear product :ref:`X(74) <X(74)>`\ \*\ :ref:`X(107) <X(107)>` (circumcircle-:ref:`X(4) <X(4)>` antipodes)
    * :ref:`X(94) <X(94)>` = barycentric quotient :ref:`X(476) <X(476)>`/:ref:`X(110) <X(110)>`
-   * :ref:`X(94) <X(94)>` = intersection of the tangent to hyperbola {A,B,C,\ :ref:`X(6) <X(6)>`,\ :ref:`X(13) <X(13)>`,\ :ref:`X(16) <X(16)>`}} at :ref:`X(13) <X(13)>` and the tangent to hyperbola {A,B,C,\ :ref:`X(6) <X(6)>`,\ :ref:`X(14) <X(14)>`,\ :ref:`X(15) <X(15)>`}} at :ref:`X(14) <X(14)>`
+   * :ref:`X(94) <X(94)>` = intersection of the tangent to hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(6) <X(6)>`,\ :ref:`X(13) <X(13)>`,\ :ref:`X(16) <X(16)>`}} at :ref:`X(13) <X(13)>` and the tangent to hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(6) <X(6)>`,\ :ref:`X(14) <X(14)>`,\ :ref:`X(15) <X(15)>`}} at :ref:`X(14) <X(14)>`
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let A'B'C' be the medial or :term:`orthic triangle <orthic-triangle>` of ABC and A″, B″, C″ the centers of circles {A', :ref:`X(3) <X(3)>`, :ref:`X(4) <X(4)>`}}, {B', :ref:`X(3) <X(3)>`, :ref:`X(4) <X(4)>`}} and {C', :ref:`X(3) <X(3)>`, :ref:`X(4) <X(4)>`}}, respectively. Then A″, B″, C″ are collinear on the trilinear polar of :ref:`X(94) <X(94)>`. (:person:`César Lozada <cesar-lozada>`, March 9, 2021).
+   Let :g:`A'B'C' << A' B' C' >>` be the medial or :term:`orthic triangle <orthic-triangle>` of :g:`ABC << A B C >>` and :g:`A″ <A″>`, :g:`B″ <B″>`, :g:`C″ <C″>` the centers of circles {:g:`A' <A'>`, :ref:`X(3) <X(3)>`, :ref:`X(4) <X(4)>`}}, {:g:`B' <B'>`, :ref:`X(3) <X(3)>`, :ref:`X(4) <X(4)>`}} and {:g:`C' <C'>`, :ref:`X(3) <X(3)>`, :ref:`X(4) <X(4)>`}}, respectively. Then :g:`A″ <A″>`, :g:`B″ <B″>`, :g:`C″ <C″>` are collinear on the trilinear polar of :ref:`X(94) <X(94)>`. (:person:`César Lozada <cesar-lozada>`, March 9, 2021).
 
 .. toctree::
    :hidden:

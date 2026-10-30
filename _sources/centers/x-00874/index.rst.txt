@@ -16,17 +16,13 @@ X(874) = INTERSECTION OF LINES X(1)X(75) AND X(99)X(670)
    :alt: X(874) = INTERSECTION OF LINES X(1)X(75) AND X(99)X(670)
    :align: center
 
-   **X(874) = INTERSECTION OF LINES X(1)X(75) AND X(99)X(670)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(874) = INTERSECTION OF LINES X(1)X(75) AND X(99)X(670)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = (a\ :sup:`2`\ u\ :sup:`2` - bcvw)/[a\ :sup:`2`\ u(bv - cw)], u : v : w = :ref:`X(1) <X(1)>`
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = (a^{2}u^{2} - bcvw)/[a^{2}u(bv - cw)]`,\ :math:`u : v : w` = :ref:`X(1) <X(1)>`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`56.177035853433`
-
-.. container:: note-item
-
-   :ref:`X(874) <X(874)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines

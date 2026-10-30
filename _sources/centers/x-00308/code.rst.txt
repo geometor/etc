@@ -12,7 +12,7 @@ X(308) = ISOTOMIC CONJUGATE OF X(39) — Code
    :alt: X(308) = ISOTOMIC CONJUGATE OF X(39)
    :align: center
 
-   **X(308) = ISOTOMIC CONJUGATE OF X(39)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(308) = ISOTOMIC CONJUGATE OF X(39)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

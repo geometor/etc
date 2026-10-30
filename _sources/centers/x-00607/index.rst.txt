@@ -16,7 +16,7 @@ X(607) = ISOGONAL CONJUGATE OF X(348)
    :alt: X(607) = ISOGONAL CONJUGATE OF X(348)
    :align: center
 
-   **X(607) = ISOGONAL CONJUGATE OF X(348)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(607) = ISOGONAL CONJUGATE OF X(348)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,10 +28,6 @@ X(607) = ISOGONAL CONJUGATE OF X(348)
    :badge: 1 form
 
    * **Trilinears:** :math:`\sin A + \tan A : :`
-
-.. container:: note-item
-
-   :ref:`X(607) <X(607)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 13 lines

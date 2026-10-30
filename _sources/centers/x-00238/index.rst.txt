@@ -10,23 +10,19 @@ X(238) = X(1)-LINE CONJUGATE OF X(37)
 
 .. enunciation::
 
-   :ref:`X(238) <X(238)>` is the perspector of triangle ABC and the :term:`tangential triangle <tangential-triangle>` of the conic that passes through A, B, C, and the pair P(8) and U(8) of :term:`bicentric points <bicentric-points>` (see the notes just before X(1908). (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   :ref:`X(238) <X(238)>` is the perspector of triangle :g:`ABC << A B C >>` and the :term:`tangential triangle <tangential-triangle>` of the conic that passes through :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, and the pair P(8) and U(8) of :term:`bicentric points <bicentric-points>` (see the notes just before X(1908). (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. figure:: x-00238.svg
    :alt: X(238) = X(1)-LINE CONJUGATE OF X(37)
    :align: center
 
-   **X(238) = X(1)-LINE CONJUGATE OF X(37)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(238) = X(1)-LINE CONJUGATE OF X(37)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`a^{2} - bc : b^{2} - ca : c^{2} - ab`
    | **Barycentrics:** :math:`a^{3} - abc : b^{3} - abc : c^{3} - abc`
    | **Search Value (6, 9, 13):** :math:`-3.700405115298`
-
-.. container:: note-item
-
-   :ref:`X(238) <X(238)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 49 lines
@@ -56,8 +52,8 @@ X(238) = X(1)-LINE CONJUGATE OF X(37)
    * :ref:`X(238) <X(238)>` = crossdifference of PU(i) for these i: 6, 52, 53
    * :ref:`X(238) <X(238)>` = trilinear product of PU(134)
    * :ref:`X(238) <X(238)>` = X(6530)-of-excentral-triangle
-   * :ref:`X(238) <X(238)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(659) <X(659)>`\ X(4435) (the perspectrix of ABC and Gemini triangle 33)
-   * :ref:`X(238) <X(238)>` = perspector of Gemini triangle 34 and cross-triangle of ABC and Gemini triangle 34
+   * :ref:`X(238) <X(238)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(659) <X(659)>`\ X(4435) (the perspectrix of :g:`ABC << A B C >>` and Gemini triangle 33)
+   * :ref:`X(238) <X(238)>` = perspector of Gemini triangle 34 and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 34
 
 .. toctree::
    :hidden:

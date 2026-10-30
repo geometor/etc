@@ -10,17 +10,17 @@ X(919) = ISOGONAL CONJUGATE OF X(918)
 
 .. enunciation::
 
-   Let Q be a point on line :ref:`X(2) <X(2)>`\ \ :ref:`X(11) <X(11)>` other than :ref:`X(2) <X(2)>`. Let A'B'C' be the :term:`cevian triangle <cevian-triangle>` of Q. Let A″ be the {B,C}-harmonic conjugate of A' (or equivalently, A″ = BC∩B'C'), and define B″, C″ cyclically. The circumcircles of AB″C″, BC″A″, CA″B″ concur in :ref:`X(919) <X(919)>`. (:person:`Randy Hutson <randy-hutson>`, February 10, 2016)
+   Let :g:`Q <Q>` be a point on line :ref:`X(2) <X(2)>`\ \ :ref:`X(11) <X(11)>` other than :ref:`X(2) <X(2)>`. Let :g:`A'B'C' << A' B' C' >>` be the :term:`cevian triangle <cevian-triangle>` of Q. Let :g:`A″ <A″>` be the {B,C}-harmonic conjugate of :g:`A' <A'>` (or equivalently, :g:`A″ <A″>` = :g:`BC <[ B C ]>`\ ∩\ :g:`B'C' <[ B' C' ]>`), and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The circumcircles of :g:`AB″C″ << A B″ C″ >>`, :g:`BC″A″ << B C″ A″ >>`, :g:`CA″B″ << C A″ B″ >>` concur in :ref:`X(919) <X(919)>`. (:person:`Randy Hutson <randy-hutson>`, February 10, 2016)
 
 .. figure:: x-00919.svg
    :alt: X(919) = ISOGONAL CONJUGATE OF X(918)
    :align: center
 
-   **X(919) = ISOGONAL CONJUGATE OF X(918)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(919) = ISOGONAL CONJUGATE OF X(918)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`a^{2}/(w/b - v/c) : :`, where u : v : w = :ref:`X(100) <X(100)>`
+   | **Trilinears:** :math:`a^{2}/(w/b - v/c) : :`, where :math:`u : v : w` = :ref:`X(100) <X(100)>`
    | **Search Value (6, 9, 13):** :math:`-0.610000059147`
 
 .. container:: note-item
@@ -40,7 +40,7 @@ X(919) = ISOGONAL CONJUGATE OF X(918)
    * :ref:`X(919) <X(919)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(6) <X(6)>`\ \ :ref:`X(692) <X(692)>`
    * :ref:`X(919) <X(919)>` = Ψ(X(i), X(j)) for these (i,j): (:ref:`1 <X(1)>`, :ref:`41 <X(41)>`), (:ref:`2 <X(2)>`, :ref:`11 <X(11)>`), (:ref:`6 <X(6)>`, :ref:`692 <X(692)>`), (:ref:`11 <X(11)>`, :ref:`650 <X(650)>`), (:ref:`76 <X(76)>`, :ref:`8 <X(8)>`)
    * :ref:`X(919) <X(919)>` = isogonal conjugate of :term:`isotomic conjugate <isotomic-conjugate>` of trilinear pole of line :ref:`X(2) <X(2)>`\ \ :ref:`X(11) <X(11)>`
-   * :ref:`X(919) <X(919)>` = circumcircle intercept, other than A, B, C, of conic {A,B,C,PU(95)}}
+   * :ref:`X(919) <X(919)>` = circumcircle intercept, other than :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(95)}}
    * :ref:`X(919) <X(919)>` = inverse-in-Stevanovic-circle of :ref:`X(100) <X(100)>`
    * :ref:`X(919) <X(919)>` = trilinear product :ref:`X(101) <X(101)>`\ \*\ :ref:`X(105) <X(105)>` (circumcircle-:ref:`X(1) <X(1)>` antipodes)
    * :ref:`X(919) <X(919)>` = barycentric product :ref:`X(100) <X(100)>`\ \*\ :ref:`X(105) <X(105)>` (circumcircle-:ref:`X(2) <X(2)>` antipodes)
@@ -50,7 +50,7 @@ Notes
 
 .. container:: note-item
 
-   Let A', B', C' be the intersections of line :ref:`X(1) <X(1)>`\ \ :ref:`X(6) <X(6)>` and lines BC, CA, AB, resp. The circumcircles of AB'C', BC'A', CA'B' concur in :ref:`X(919) <X(919)>`. (Randy Hutson, February 10, 2016)
+   Let :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>` be the intersections of line :ref:`X(1) <X(1)>`\ \ :ref:`X(6) <X(6)>` and lines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, resp. The circumcircles of :g:`AB'C' << A B' C' >>`, :g:`BC'A' << B C' A' >>`, :g:`CA'B' << C A' B' >>` concur in :ref:`X(919) <X(919)>`. (Randy Hutson, February 10, 2016)
 
 .. toctree::
    :hidden:

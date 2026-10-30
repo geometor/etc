@@ -11,25 +11,25 @@ X(4) = ORTHOCENTER
 
 .. enunciation::
 
-   :ref:`X(4) <X(4)>` is the point of concurrence of the altitudes of ABC.
+   :ref:`X(4) <X(4)>` is the point of concurrence of the altitudes of :g:`ABC << A B C >>`.
 
 .. figure:: x-00004.svg
    :alt: X(4) = ORTHOCENTER
    :align: center
 
-   **X(4) = ORTHOCENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(4) = ORTHOCENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`\sec A : \sec B : \sec C`
-   | **Barycentrics:** :math:`1/SA : 1/SB : 1/SC`
+   | **Barycentrics:** :math:`1/S_{A} : 1/S_{B} : 1/S_{C}`
    | **Tripolars:** :math:`|\cos A| : :`
    | **Search Value (6, 9, 13):** :math:`-5.676619410927`
 
 .. collapse:: Alternate Coordinates
    :badge: 9 forms
 
-   * **Trilinears:** :math:`\cos A - \sin B \sin C : \cos B - \sin C \sin A : \cos C - \sin A sinB`
+   * **Trilinears:** :math:`\cos A - \sin B \sin C : \cos B - \sin C \sin A : \cos C - \sin A \sin B`
    * **Trilinears:** :math:`\cos A - \cos(B - C) : \cos B - \cos(C - A) : \cos C - \cos(A - B)`
    * **Trilinears:** :math:`\sin B \sin C - \cos(B - C) : \sin C \sin A - \cos(C - A) : \sin A \sin B - \cos(A - B)`
    * **Trilinears:** :math:`\csc A \tan 3A - 2 \sec 3A : :`
@@ -37,13 +37,13 @@ X(4) = ORTHOCENTER
    * **Trilinears:** :math:`\cos A + \cos(B - C) + 5 \cos B \cos C - 2 \sin B \sin C : :`
    * **Barycentrics:** :math:`\tan A : \tan B : \tan C`
    * **Barycentrics:** :math:`1/(b^{2} + c^{2} - a^{2}) : 1/(c^{2} + a^{2} - b^{2}) : 1/(a^{2} + b^{2} - c^{2})`
-   * **Tripolars:** :math:`|a(b^2 + c^2 - a^2)| : :`
+   * **Tripolars:** :math:`|a(b^{2} + c^{2} - a^{2})| : :`
 
 .. collapse:: Linear Combinations
    :badge: 2 combinations
 
-   * :ref:`X(4) <X(4)>` = (1 + J) X(1113) + (1 - J) X(1114)
-   * :ref:`X(4) <X(4)>` = (tan A)\*[A] + (tan B)\*[B] + (tan C)\*[C], where A, B, C are the angles and [A], [B], [C] are the vertices
+   * :ref:`X(4) <X(4)>` = :math:`(1 + J)` X(1113) + :math:`(1 - J)` X(1114)
+   * :ref:`X(4) <X(4)>` = :math:`(\tan A)` :g:`A <A>` + :math:`(\tan B)` :g:`B <B>` + :math:`(\tan C)` :g:`C <C>`, where :g:`A <A>`, :g:`B <B>`, :g:`C <C>` are the angles and :g:`A <A>`, :g:`B <B>`, :g:`C <C>` are the vertices
 
 .. container:: note-item
 
@@ -94,7 +94,7 @@ X(4) = ORTHOCENTER
    * :ref:`X(4) <X(4)>` = midpoint of PU(131)
    * :ref:`X(4) <X(4)>` = crosspoint of polar conjugates of PU(4)
    * :ref:`X(4) <X(4)>` = cevapoint of foci of orthic inconic
-   * :ref:`X(4) <X(4)>` = QA-P33 (Centroid of the Orthocenter Quadrangle) of quadrangle ABC\ :ref:`X(2) <X(2)>` (see `http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/61-qa-p33.html <http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/61-qa-p33.html>`__)
+   * :ref:`X(4) <X(4)>` = :g:`QA <[ Q A ]>`-P33 (Centroid of the Orthocenter Quadrangle) of quadrangle :g:`ABC << A B C >>`\ :ref:`X(2) <X(2)>` (see `http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/61-qa-p33.html <http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/61-qa-p33.html>`__)
    * :ref:`X(4) <X(4)>` = Hofstadter -1 point
    * :ref:`X(4) <X(4)>` = :ref:`X(4) <X(4)>`-of X(i)X(j)X(k) for these {i,j,k}: {:ref:`1 <X(1)>`, :ref:`8 <X(8)>`, 5556}, {:ref:`1 <X(1)>`, :ref:`9 <X(9)>`, :ref:`885 <X(885)>`}, {:ref:`2 <X(2)>`, :ref:`6 <X(6)>`, 1640}, {:ref:`2 <X(2)>`, :ref:`10 <X(10)>`, 4049}, {:ref:`3 <X(3)>`, :ref:`6 <X(6)>`, :ref:`879 <X(879)>`}, {:ref:`3 <X(3)>`, :ref:`66 <X(66)>`, 2435}, {:ref:`7 <X(7)>`, :ref:`8 <X(8)>`, :ref:`885 <X(885)>`}
    * :ref:`X(4) <X(4)>` = homothetic center of these triangles: orthic, :ref:`X(13) <X(13)>`-Ehrmann, :ref:`X(14) <X(14)>`-Ehrmann (see :ref:`X(25) <X(25)>`)
@@ -117,17 +117,17 @@ X(4) = ORTHOCENTER
    * :ref:`X(4) <X(4)>` = center of conic that is the locus of orthopoles of lines passing through :ref:`X(4) <X(4)>`
    * :ref:`X(4) <X(4)>` = perspector of circumanticevian triangle of :ref:`X(4) <X(4)>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of circumanticevian triangle of :ref:`X(3) <X(3)>`
    * :ref:`X(4) <X(4)>` = :ref:`X(3) <X(3)>`-of-2nd-extouch-triangle
-   * :ref:`X(4) <X(4)>` = perspector of ABC and 2nd and 3rd :term:`extouch triangles <extouch-triangle>`
-   * :ref:`X(4) <X(4)>` = perspector of ABC and 1st Brocard triangle of :term:`anticomplementary triangle <anticomplementary-triangle>`
-   * :ref:`X(4) <X(4)>` = perspector of ABC and 1st Brocard triangle of Johnson triangle
-   * :ref:`X(4) <X(4)>` = perspector of ABC and mid-triangle of 2nd and 3rd extouch triangles
-   * :ref:`X(4) <X(4)>` = perspector of extouch triangle and cross-triangle of ABC and 2nd extouch triangle
-   * :ref:`X(4) <X(4)>` = perspector of 2nd Hyacinth triangle and cross-triangle of ABC and 2nd Hyacinth triangle
-   * :ref:`X(4) <X(4)>` = homothetic center of 2nd Johnson-Yff triangle and cross-triangle of ABC and 1st Johnson-Yff triangle
-   * :ref:`X(4) <X(4)>` = homothetic center of 1st Johnson-Yff triangle and cross-triangle of ABC and 2nd Johnson-Yff triangle
-   * :ref:`X(4) <X(4)>` = :ref:`X(1) <X(1)>`-of-orthic-triangle if ABC is acute, and an excenter of orthic triangle otherwise
+   * :ref:`X(4) <X(4)>` = perspector of :g:`ABC << A B C >>` and 2nd and 3rd :term:`extouch triangles <extouch-triangle>`
+   * :ref:`X(4) <X(4)>` = perspector of :g:`ABC << A B C >>` and 1st Brocard triangle of :term:`anticomplementary triangle <anticomplementary-triangle>`
+   * :ref:`X(4) <X(4)>` = perspector of :g:`ABC << A B C >>` and 1st Brocard triangle of Johnson triangle
+   * :ref:`X(4) <X(4)>` = perspector of :g:`ABC << A B C >>` and mid-triangle of 2nd and 3rd extouch triangles
+   * :ref:`X(4) <X(4)>` = perspector of extouch triangle and cross-triangle of :g:`ABC << A B C >>` and 2nd extouch triangle
+   * :ref:`X(4) <X(4)>` = perspector of 2nd Hyacinth triangle and cross-triangle of :g:`ABC << A B C >>` and 2nd Hyacinth triangle
+   * :ref:`X(4) <X(4)>` = homothetic center of 2nd Johnson-Yff triangle and cross-triangle of :g:`ABC << A B C >>` and 1st Johnson-Yff triangle
+   * :ref:`X(4) <X(4)>` = homothetic center of 1st Johnson-Yff triangle and cross-triangle of :g:`ABC << A B C >>` and 2nd Johnson-Yff triangle
+   * :ref:`X(4) <X(4)>` = :ref:`X(1) <X(1)>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute, and an excenter of orthic triangle otherwise
    * :ref:`X(4) <X(4)>` = :ref:`X(52) <X(52)>`-of-:term:`excentral triangle <excentral-triangle>`
-   * :ref:`X(4) <X(4)>` = :ref:`X(65) <X(65)>`-of-tangential-triangle if ABC is acute
+   * :ref:`X(4) <X(4)>` = :ref:`X(65) <X(65)>`-of-tangential-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(4) <X(4)>` = :ref:`X(155) <X(155)>`-of-intouch-triangle
    * :ref:`X(4) <X(4)>` = :ref:`X(110) <X(110)>`-of-Fuhrmann-triangle
    * :ref:`X(4) <X(4)>` = :ref:`X(147) <X(147)>`-of-1st-Brocard-triangle
@@ -137,12 +137,12 @@ X(4) = ORTHOCENTER
    * :ref:`X(4) <X(4)>` = harmonic center of circle O(PU(4)) and orthoptic circle of Steiner inellipse
    * :ref:`X(4) <X(4)>` = Thomson-isogonal conjugate of :ref:`X(154) <X(154)>`
    * :ref:`X(4) <X(4)>` = Lucas-isogonal conjugate of X(11206)
-   * :ref:`X(4) <X(4)>` = perspector of ABC and cross-triangle of 1st and 2nd Neuberg triangles
+   * :ref:`X(4) <X(4)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of 1st and 2nd Neuberg triangles
    * :ref:`X(4) <X(4)>` = perspector of circumconic centered at X(1249)
    * :ref:`X(4) <X(4)>` = center of circumconic that is locus of trilinear poles of lines passing through X(1249)
    * :ref:`X(4) <X(4)>` = circumcevian isogonal conjugate of :ref:`X(4) <X(4)>`
    * :ref:`X(4) <X(4)>` = orthic-isogonal conjugate of :ref:`X(4) <X(4)>`
-   * :ref:`X(4) <X(4)>` = :ref:`X(1) <X(1)>`-of-circumorthic-triangle if ABC is acute
+   * :ref:`X(4) <X(4)>` = :ref:`X(1) <X(1)>`-of-circumorthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(4) <X(4)>` = isogonal conjugate wrt half-altitude triangle of :ref:`X(185) <X(185)>`
    * :ref:`X(4) <X(4)>` = Miquel associate of :ref:`X(4) <X(4)>`
    * :ref:`X(4) <X(4)>` = crosspoint of :ref:`X(3) <X(3)>` and :ref:`X(155) <X(155)>` wrt both the excentral and tangential triangles
@@ -151,16 +151,16 @@ X(4) = ORTHOCENTER
    * :ref:`X(4) <X(4)>` = :ref:`X(110) <X(110)>`-of-:ref:`X(3) <X(3)>`-Fuhrmann-triangle
    * :ref:`X(4) <X(4)>` = barycentric product :ref:`X(112) <X(112)>`\ \*\ :ref:`X(850) <X(850)>`
    * :ref:`X(4) <X(4)>` = Kosnita(:ref:`X(20) <X(20)>`,\ :ref:`X(20) <X(20)>`) point
-   * :ref:`X(4) <X(4)>` = perspector of ABC and the reflection of the excentral triangle in :ref:`X(10) <X(10)>`
+   * :ref:`X(4) <X(4)>` = perspector of :g:`ABC << A B C >>` and the reflection of the excentral triangle in :ref:`X(10) <X(10)>`
    * :ref:`X(4) <X(4)>` = pedal antipodal perspector of :ref:`X(3) <X(3)>`
    * :ref:`X(4) <X(4)>` = Ehrmann-side-to-Ehrmann-vertex :term:`similarity image <similarity-image>` of :ref:`X(3) <X(3)>`
    * :ref:`X(4) <X(4)>` = Ehrmann-vertex-to-orthic similarity image of :ref:`X(4) <X(4)>`
    * :ref:`X(4) <X(4)>` = Ehrmann-side-to-orthic similarity image of :ref:`X(3) <X(3)>`
-   * :ref:`X(4) <X(4)>` = Ehrmann-mid-to-ABC similarity image of :ref:`X(5) <X(5)>`
+   * :ref:`X(4) <X(4)>` = Ehrmann-mid-to-:g:`ABC << A B C >>` similarity image of :ref:`X(5) <X(5)>`
    * :ref:`X(4) <X(4)>` = perspector of hexyl triangle and :term:`cevian triangle <cevian-triangle>` of :ref:`X(27) <X(27)>`
    * :ref:`X(4) <X(4)>` = perspector of hexyl triangle and :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(19) <X(19)>`
-   * :ref:`X(4) <X(4)>` = perspector of ABC and :term:`medial triangle <medial-triangle>` of :term:`pedal triangle <pedal-triangle>` of :ref:`X(64) <X(64)>`
-   * :ref:`X(4) <X(4)>` = perspector of ABC and the reflection in :ref:`X(2) <X(2)>` of the :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(2) <X(2)>`
+   * :ref:`X(4) <X(4)>` = perspector of :g:`ABC << A B C >>` and :term:`medial triangle <medial-triangle>` of :term:`pedal triangle <pedal-triangle>` of :ref:`X(64) <X(64)>`
+   * :ref:`X(4) <X(4)>` = perspector of :g:`ABC << A B C >>` and the reflection in :ref:`X(2) <X(2)>` of the :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(2) <X(2)>`
    * :ref:`X(4) <X(4)>` = perspector of hexyl triangle and tangential triangle wrt excentral triangle of the excentral-hexyl ellipse
    * :ref:`X(4) <X(4)>` = inverse-in-Steiner-circumellipse of :ref:`X(297) <X(297)>`
    * :ref:`X(4) <X(4)>` = {X(2479),X(2480)}-harmonic conjugate of :ref:`X(297) <X(297)>`
@@ -171,10 +171,10 @@ X(4) = ORTHOCENTER
    * :ref:`X(4) <X(4)>` = center of inverse-in-de-Longchamps-circle of circumcircle
    * :ref:`X(4) <X(4)>` = inner-Napoleon circle-inverse of X(32460)
    * :ref:`X(4) <X(4)>` = outer-Napoleon circle-inverse of X(32461)
-   * :ref:`X(4) <X(4)>` = excentral-to-ABC :term:`functional image <functional-image>` of :ref:`X(1) <X(1)>`
-   * :ref:`X(4) <X(4)>` = orthic-to-ABC functional image of :ref:`X(52) <X(52)>`
-   * :ref:`X(4) <X(4)>` = incentral-to-ABC functional image of :ref:`X(500) <X(500)>`
-   * :ref:`X(4) <X(4)>` = Feuerbach-to-ABC functional image of X(5948)
+   * :ref:`X(4) <X(4)>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X(1) <X(1)>`
+   * :ref:`X(4) <X(4)>` = orthic-to-:g:`ABC << A B C >>` functional image of :ref:`X(52) <X(52)>`
+   * :ref:`X(4) <X(4)>` = incentral-to-:g:`ABC << A B C >>` functional image of :ref:`X(500) <X(500)>`
+   * :ref:`X(4) <X(4)>` = Feuerbach-to-:g:`ABC << A B C >>` functional image of X(5948)
    * :ref:`X(4) <X(4)>` = excentral-to-intouch similarity image of :ref:`X(84) <X(84)>`
    * :ref:`X(4) <X(4)>` = barycentric product of circumcircle intercepts of line :ref:`X(297) <X(297)>`\ (525)
    * :ref:`X(4) <X(4)>` = trilinear product of vertices of infinite altitude triangle
@@ -184,23 +184,23 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(4) <X(4)>` has Shinagawa coefficients (0, 1).
+   As a point on the Euler line, :ref:`X(4) <X(4)>` has Shinagawa coefficients :math:`(0, 1)`.
 
 .. container:: note-item
 
-   The tangents at A,B,C to the McCay cubic K003 concur in :ref:`X(4) <X(4)>`. Also, the tangents at A,B,C to the Lucas cubic K007 concur in :ref:`X(4) <X(4)>`. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
+   The tangents at :g:`A <A>`, :g:`B <B>`, :g:`C <C>` to the McCay cubic K003 concur in :ref:`X(4) <X(4)>`. Also, the tangents at :g:`A <A>`, :g:`B <B>`, :g:`C <C>` to the Lucas cubic K007 concur in :ref:`X(4) <X(4)>`. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
 
 .. container:: note-item
 
-   Let P be a point in the plane of ABC. Let Oa be the circumcenter of BCP, and define Ob and Oc cyclically. Let Q be the circumcenter of OaObOc. P = Q only when P = :ref:`X(4) <X(4)>`. (Randy Hutson, June 27, 2018)
+   Let :g:`P <P>` be a point in the plane of :g:`ABC << A B C >>`. Let :g:`O_{a} <O_a>` be the circumcenter of :g:`BCP << B C P >>`, and define :g:`O_{b} <O_b>` and :g:`O_{c} <O_c>` cyclically. Let :g:`Q <Q>` be the circumcenter of :g:`O_{a}O_{b}O_{c} << O_a O_b O_c >>`. :g:`P <P>` = Q only when :g:`P <P>` = :ref:`X(4) <X(4)>`. (Randy Hutson, June 27, 2018)
 
 .. container:: note-item
 
-   Taking a reference triangle ABC and a variable point P on the plane, P=\ :ref:`X(3) <X(3)>` is the point of maximal area of its pedal triangle when considering all points P inside the circumcircle of ABC. There are points P far away from the circumcircle for which the area of their pedal triangles is much larger. However, if you consider the signed area of the pedal triangle of P (of which sign depends on whether the points are in clockwise or anti-clockwise order), you could just say that the area of the pedal triangle of P is always negative whenever P is outside of the circumcircle so that P=\ :ref:`X(3) <X(3)>` gives the global maximum. (Mark Helman, July 10, 2020)
+   Taking a reference triangle :g:`ABC << A B C >>` and a variable point :g:`P <P>` on the plane, :g:`P <P>`\ =\ :ref:`X(3) <X(3)>` is the point of maximal area of its pedal triangle when considering all points P inside the circumcircle of :g:`ABC << A B C >>`. There are points P far away from the circumcircle for which the area of their pedal triangles is much larger. However, if you consider the signed area of the pedal triangle of P (of which sign depends on whether the points are in clockwise or anti-clockwise order), you could just say that the area of the pedal triangle of :g:`P <P>` is always negative whenever P is outside of the circumcircle so that :g:`P <P>`\ =\ :ref:`X(3) <X(3)>` gives the global maximum. (Mark Helman, July 10, 2020)
 
 .. container:: note-item
 
-   A slightly similar thing happens regarding the area of the antipedal triangle of P. P=\ :ref:`X(4) <X(4)>` has the smallest area of its antipedal amongst all P in the interior of triangle ABC (when :ref:`X(4) <X(4)>` is in this interior). There are points P (on the circumcircle) for which this area goes to 0. However, if we consider the signed area of the antipedal, even though there are still regions of the plane outside of ABC where the signed area is positive, P=\ :ref:`X(4) <X(4)>` gives the smallest area of the antipedal among all P for which this area is positive (this works even when ABC is obtuse, and points close to the circumcircle (on both sides) have negative antipedal area). (Mark Helman, July 10, 2020)
+   A slightly similar thing happens regarding the area of the antipedal triangle of :g:`P <P>`. :g:`P <P>`\ =\ :ref:`X(4) <X(4)>` has the smallest area of its antipedal amongst all P in the interior of triangle :g:`ABC << A B C >>` (when :ref:`X(4) <X(4)>` is in this interior). There are points P (on the circumcircle) for which this area goes to 0. However, if we consider the signed area of the antipedal, even though there are still regions of the plane outside of :g:`ABC << A B C >>` where the signed area is positive, :g:`P <P>`\ =\ :ref:`X(4) <X(4)>` gives the smallest area of the antipedal among all P for which this area is positive (this works even when :g:`ABC << A B C >>` is obtuse, and points close to the circumcircle (on both sides) have negative antipedal area). (Mark Helman, July 10, 2020)
 
 .. container:: note-item
 
@@ -208,19 +208,19 @@ Notes
 
 .. container:: note-item
 
-   :ref:`X(4) <X(4)>` and the vertices A,B,C comprise an orthocentric system, defined as a set of four points, one of which is the orthocenter of the triangle of the other three (so that each is the orthocenter of the other three). The incenter and excenters also form an orthocentric system. If ABC is acute, then :ref:`X(4) <X(4)>` is the incenter of the orthic triangle.
+   :ref:`X(4) <X(4)>` and the vertices :g:`A <A>`, :g:`B <B>`, :g:`C <C>` comprise an orthocentric system, defined as a set of four points, one of which is the orthocenter of the triangle of the other three (so that each is the orthocenter of the other three). The incenter and excenters also form an orthocentric system. If :g:`ABC << A B C >>` is acute, then :ref:`X(4) <X(4)>` is the incenter of the orthic triangle.
 
 .. container:: note-item
 
-   Suppose P is not on a sideline of ABC. Let A'B'C' be the cevian triangle of P. Let D,E,F be the circles having diameters AA', BB',CC'. The radical center of D,E,F is :ref:`X(4) <X(4)>`. (:person:`Floor van Lamoen <floor-van-lamoen>`, :cite:`Hyacinthos #214 <hyacinthos>`, Jan. 24, 2000.)
+   Suppose P is not on a sideline of :g:`ABC << A B C >>`. Let :g:`A'B'C' << A' B' C' >>` be the cevian triangle of P. Let :g:`D <D>`, :g:`E <E>`, :g:`F <F>` be the circles having diameters :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`,\ :g:`CC' <[ C C' ]>`. The radical center of :g:`D <D>`, :g:`E <E>`, :g:`F <F>` is :ref:`X(4) <X(4)>`. (:person:`Floor van Lamoen <floor-van-lamoen>`, :cite:`Hyacinthos #214 <hyacinthos>`, Jan. 24, 2000.)
 
 .. container:: note-item
 
-   Let A2B2C2 be the 2nd Conway triangle. Let A' be the crosspoint of B2 and C2, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(4) <X(4)>`. (Randy Hutson, December 10, 2016)
+   Let :g:`A_{2}B_{2}C_{2} << A_2 B_2 C_2 >>` be the 2nd Conway triangle. Let :g:`A' <A'>` be the crosspoint of :g:`B_{2} <B_2>` and :g:`C_{2} <C_2>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(4) <X(4)>`. (Randy Hutson, December 10, 2016)
 
 .. container:: note-item
 
-   Let T be any one of these trianges: {anticevian of :ref:`X(30) <X(30)>`, anti-Hutson-intouch, anti-incircle-circles, Ehrmann side, :ref:`X(2) <X(2)>`-Ehrmann, Gemini 15, Gemini 16, Kosnita, midheight, N-obverse of :ref:`X(6) <X(6)>`, Schroeter, tangential, Trinh, 1st Zaniah, 2nd Zaniah}. Let O\ :sub:`A` be the circle centered at the A-vertex of T and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(4) <X(4)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (Randy Hutson, August 30, 2020)
+   Let :g:`T <T>` be any one of these trianges: {anticevian of :ref:`X(30) <X(30)>`, anti-Hutson-intouch, anti-incircle-circles, Ehrmann side, :ref:`X(2) <X(2)>`-Ehrmann, Gemini 15, Gemini 16, Kosnita, midheight, N-obverse of :ref:`X(6) <X(6)>`, Schroeter, tangential, Trinh, 1st Zaniah, 2nd Zaniah}. Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of :g:`T <T>` and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(4) <X(4)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
 
 .. container:: note-item
 
@@ -228,24 +228,24 @@ Notes
 
 .. container:: note-item
 
-   In the plane of a triangle ABC, let
+   In the plane of a triangle :g:`ABC << A B C >>`, let
 
-      * Oa = circle with diameter BC, and define Ob and Oc cyclically;
-      * A′ = reflection of A in Oa, and define B′ and C′ cyclically;
-      * Ab = polar of A' with respect to Ob, and define Bc and Ca cyclically;
-      * Ac = polar of A' with respect to OC, and define Ba and Cb cyclically;
-      * ″ = Ab∩Ac, and define B″ and C″ cyclically.
+      * :g:`O_{a} <O_a>` = circle with diameter :g:`BC <[ B C ]>`, and define :g:`O_{b} <O_b>` and :g:`O_{c} <O_c>` cyclically;
+      * :g:`A' <A'>` = reflection of :g:`A <A>` in :g:`O_{a} <O_a>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically;
+      * :g:`A_{b} <A_b>` = polar of :g:`A' <A'>` with respect to :g:`O_{b} <O_b>`, and define :g:`B_{c} <B_c>` and :g:`C_{a} <C_a>` cyclically;
+      * :g:`A_{c} <A_c>` = polar of :g:`A' <A'>` with respect to :g:`OC <[ O C ]>`, and define :g:`B_{a} <B_a>` and :g:`C_{b} <C_b>` cyclically;
+      * ″ = :g:`A_{b} <A_b>`\ ∩\ :g:`A_{c} <A_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically.
 
-   The triangle A″B″C″ is perspective to ABC, and the perspector is :ref:`X(4) <X(4)>`. (:person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, April 19, 2021)
+   The triangle :g:`A″B″C″ << A″ B″ C″ >>` is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X(4) <X(4)>`. (:person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, April 19, 2021)
 
 .. container:: note-item
 
-   In the plane of a triangle ABC, let
+   In the plane of a triangle :g:`ABC << A B C >>`, let
 
-      * Oa = circle with diameter BC, and define Ob and Oc cyclically;
-      * Pa = polar of A with respect to Oa, and define Pb and Pc cyclically.
+      * :g:`O_{a} <O_a>` = circle with diameter :g:`BC <[ B C ]>`, and define :g:`O_{b} <O_b>` and :g:`O_{c} <O_c>` cyclically;
+      * :g:`P_{a} <P_a>` = polar of :g:`A <A>` with respect to :g:`O_{a} <O_a>`, and define :g:`P_{b} <P_b>` and :g:`P_{c} <P_c>` cyclically.
 
-   Then :ref:`X(4) <X(4)>`\ = Pa∩Pb∩Pc, (Dasari Naga Vijay Krishna, July 19, 2021)
+   Then :ref:`X(4) <X(4)>`\ = :g:`P_{a} <P_a>`\ ∩\ :g:`P_{b} <P_b>`\ ∩\ :g:`P_{c} <P_c>`, (Dasari Naga Vijay Krishna, July 19, 2021)
 
 .. container:: note-item
 

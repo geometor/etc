@@ -10,22 +10,19 @@ X(229) = X(7)-CEVA CONJUGATE OF X(81)
 
 .. enunciation::
 
-   Barycentrics af(a,b,c) : bf(b,c,a) : cf(c,a,b)
+   :ref:`X(229) <X(229)>` = midpoint of :ref:`X(1) <X(1)>` and :ref:`X(267) <X(267)>`
 
 .. figure:: x-00229.svg
    :alt: X(229) = X(7)-CEVA CONJUGATE OF X(81)
    :align: center
 
-   **X(229) = X(7)-CEVA CONJUGATE OF X(81)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(229) = X(7)-CEVA CONJUGATE OF X(81)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = (v + w - u)/(b + c),, u = u(a,b,c) = a(b + c - a)/(b + c), v = u(b,c,a), w = u(c,a,b)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = (v + w - u)/(b + c)`, :math:`u = u(a,b,c) = a(b + c - a)/(b + c)`, :math:`v = u(b,c,a)`, :math:`w = u(c,a,b)`
+   | **Barycentrics:** :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
    | **Search Value (6, 9, 13):** :math:`0.596004115866`
-
-.. container:: note-item
-
-   :ref:`X(229) <X(229)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines

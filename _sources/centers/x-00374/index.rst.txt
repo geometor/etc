@@ -12,17 +12,13 @@ X(374) = CENTROID OF THE PEDAL TRIANGLE OF X(9)
    :alt: X(374) = CENTROID OF THE PEDAL TRIANGLE OF X(9)
    :align: center
 
-   **X(374) = CENTROID OF THE PEDAL TRIANGLE OF X(9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(374) = CENTROID OF THE PEDAL TRIANGLE OF X(9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = 2b + 2c - 3a + (c + a)cos C + (b + a)cos B
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = 2b + 2c - 3a + (c + a)\cos C + (b + a)\cos B`
    | **Barycentrics:** :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
    | **Search Value (6, 9, 13):** :math:`2.141317916799`
-
-.. container:: note-item
-
-   :ref:`X(374) <X(374)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines

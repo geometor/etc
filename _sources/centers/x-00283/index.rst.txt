@@ -16,17 +16,13 @@ X(283) = X(3)-CROSS CONJUGATE OF X(21)
    :alt: X(283) = X(3)-CROSS CONJUGATE OF X(21)
    :align: center
 
-   **X(283) = X(3)-CROSS CONJUGATE OF X(21)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(283) = X(3)-CROSS CONJUGATE OF X(21)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`(\cos A)/(\cos B + \cos C) : (\cos B)/(\cos C + \cos A) : (\cos C)/(\cos A + \cos B)`
    | **Barycentrics:** :math:`(\sin 2A)/(\cos B + \cos C) : (\sin 2B)/(\cos C + \cos A) : (\sin 2C)/(\cos A + \cos B)`
    | **Search Value (6, 9, 13):** :math:`4.548122601227`
-
-.. container:: note-item
-
-   :ref:`X(283) <X(283)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 14 lines

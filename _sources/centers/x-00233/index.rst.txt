@@ -16,12 +16,12 @@ X(233) = X(2)-CEVA CONJUGATE OF X(140)
    :alt: X(233) = X(2)-CEVA CONJUGATE OF X(140)
    :align: center
 
-   **X(233) = X(2)-CEVA CONJUGATE OF X(140)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(233) = X(2)-CEVA CONJUGATE OF X(140)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`[b \cos(C - A) + c \cos(B - A)]\cos(B - C) : :`
-   | **Barycentrics:** :math:`(a^2 (b^2 + c^2) - (b^2 - c^2)^2) (2 a^4 - 3 a^2 (b^2 + c^2) + (b^2 - c^2)^2) : :`
+   | **Barycentrics:** :math:`(a^{2} (b^{2} + c^{2}) - (b^{2} - c^{2})^{2}) (2 a^{4} - 3 a^{2} (b^{2} + c^{2}) + (b^{2} - c^{2})^{2}) : :`
    | **Search Value (6, 9, 13):** :math:`48.812271241930`
 
 .. collapse:: Alternate Coordinates
@@ -32,10 +32,6 @@ X(233) = X(2)-CEVA CONJUGATE OF X(140)
 .. container:: note-item
 
    :ref:`X(233) <X(233)>` lies on hyperbola {:ref:`X(2) <X(2)>`,\ :ref:`X(6) <X(6)>`,\ :ref:`X(216) <X(216)>`,\ :ref:`X(233) <X(233)>`,X(1249),X(1560),X(3162)}}. This hyperbola is a circumconic of the :term:`medial triangle <medial-triangle>`, and the locus of perspectors of circumconics centered at a point on the Euler line. It is tangent to Euler line at :ref:`X(2) <X(2)>`. (:person:`Randy Hutson <randy-hutson>`, March 21, 2019)
-
-.. container:: note-item
-
-   :ref:`X(233) <X(233)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines

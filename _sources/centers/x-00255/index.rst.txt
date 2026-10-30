@@ -10,18 +10,18 @@ X(255) = ISOGONAL CONJUGATE OF X(158)
 
 .. enunciation::
 
-   Let A'B'C' and A″B″C″ be the Lucas and Lucas(-1) :term:`central triangles <central-triangle>`. Let A\* be the trilinear product A'\*A″, and define B\* and C\* cyclically. The lines AA\*, BB\*, CC\* concur in :ref:`X(255) <X(255)>`. (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
+   Let :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>` be the Lucas and Lucas(-1) :term:`central triangles <central-triangle>`. Let :g:`A* <A*>` be the trilinear product :g:`A' <A'>`\ \*\ :g:`A″ <A″>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(255) <X(255)>`. (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
 
 .. figure:: x-00255.svg
    :alt: X(255) = ISOGONAL CONJUGATE OF X(158)
    :align: center
 
-   **X(255) = ISOGONAL CONJUGATE OF X(158)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(255) = ISOGONAL CONJUGATE OF X(158)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\cos^{2}A : \cos^{2}B : \cos^{2}C`
-   | **Barycentrics:** :math:`\sin A \cos^{2}A : \sin B \cos^{2}B : \sin C \cos^{2}C`
+   | **Trilinears:** :math:`\cos^{2} A : \cos^{2} B : \cos^{2} C`
+   | **Barycentrics:** :math:`\sin A \cos^{2} A : \sin B \cos^{2} B : \sin C \cos^{2} C`
    | **Search Value (6, 9, 13):** :math:`2.885490285498`
 
 .. collapse:: Alternate Coordinates
@@ -29,10 +29,6 @@ X(255) = ISOGONAL CONJUGATE OF X(158)
 
    * **Trilinears:** :math:`1 + \cos 2A : 1 + \cos 2B : 1 + \cos 2C`
    * **Trilinears:** :math:`\tan B \tan C - 1 : :`
-
-.. container:: note-item
-
-   :ref:`X(255) <X(255)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 22 lines
@@ -62,7 +58,7 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' and A″B″C″ be the Lucas and Lucas(-1) antipodal triangles. Let A\* be the trilinear product A'\*A″, and define B\* and C\* cyclically. The lines AA\*, BB\*, CC\* concur in :ref:`X(255) <X(255)>`. (Randy Hutson, October 15, 2018)
+   Let :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>` be the Lucas and Lucas(-1) antipodal triangles. Let :g:`A* <A*>` be the trilinear product :g:`A' <A'>`\ \*\ :g:`A″ <A″>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(255) <X(255)>`. (Randy Hutson, October 15, 2018)
 
 .. container:: note-item
 

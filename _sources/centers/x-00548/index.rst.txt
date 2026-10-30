@@ -10,13 +10,13 @@ X(548) = MIDPOINT OF X(5) AND X(20)
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(548) <X(548)>` has Shinagawa coefficients (5,-7).
+   As a point on the Euler line, :ref:`X(548) <X(548)>` has Shinagawa coefficients :math:`(5,-7)`.
 
 .. figure:: x-00548.svg
    :alt: X(548) = MIDPOINT OF X(5) AND X(20)
    :align: center
 
-   **X(548) = MIDPOINT OF X(5) AND X(20)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(548) = MIDPOINT OF X(5) AND X(20)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -32,7 +32,7 @@ X(548) = MIDPOINT OF X(5) AND X(20)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(548) <X(548)>` = 3 :ref:`X(2) <X(2)>` - 7 :ref:`X(3) <X(3)>` = 3\ :ref:`X(3) <X(3)>` - :ref:`X(5) <X(5)>`
+   * :ref:`X(548) <X(548)>` = :math:`3` :ref:`X(2) <X(2)>` - :math:`7` :ref:`X(3) <X(3)>` = :math:`3` :ref:`X(3) <X(3)>` - :ref:`X(5) <X(5)>`
 
 .. container:: note-item
 
@@ -45,7 +45,7 @@ X(548) = MIDPOINT OF X(5) AND X(20)
    * :ref:`X(548) <X(548)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`140 <X(140)>`, :ref:`3 <X(3)>`), (:ref:`546 <X(546)>`, :ref:`140 <X(140)>`)
    * :ref:`X(548) <X(548)>` = {:ref:`X(2) <X(2)>`,\ :ref:`X(3) <X(3)>`}-harmonic conjugate of X(15712)
    * :ref:`X(548) <X(548)>` = {:ref:`X(3) <X(3)>`,\ :ref:`X(5) <X(5)>`}-harmonic conjugate of X(3530)
-   * :ref:`X(548) <X(548)>` = radical center of circles centered at vertices of ABC with diameter equal to opposite side
+   * :ref:`X(548) <X(548)>` = radical center of circles centered at vertices of :g:`ABC << A B C >>` with diameter equal to opposite side
 
 .. toctree::
    :hidden:

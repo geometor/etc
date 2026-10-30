@@ -17,7 +17,7 @@ X(32) = 3rd POWER POINT
    :alt: X(32) = 3rd POWER POINT
    :align: center
 
-   **X(32) = 3rd POWER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(32) = 3rd POWER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -38,11 +38,7 @@ X(32) = 3rd POWER POINT
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(32) <X(32)>` = -(r\ :sup:`2` + 4rR - s\ :sup:`2`)(r\ :sup:`2` + 2rR + s\ :sup:`2`)\*\ :ref:`X(1) <X(1)>` + 6rR(r\ :sup:`2` + 4rR - s\ :sup:`2`)\*\ :ref:`X(2) <X(2)>` + 2r\ :sup:`2`\ (r\ :sup:`2` + 4rR - 3s\ :sup:`2`)\*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-
-.. container:: note-item
-
-   :ref:`X(32) <X(32)>` lies.
+   * :ref:`X(32) <X(32)>` = :math:`-(r^{2} + 4rR - s^{2})(r^{2} + 2rR + s^{2})` :ref:`X(1) <X(1)>` + :math:`6rR(r^{2} + 4rR - s^{2})` :ref:`X(2) <X(2)>` + :math:`2r^{2}(r^{2} + 4rR - 3s^{2})` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. collapse:: Incident Central Lines
    :badge: 84 lines
@@ -85,14 +81,14 @@ X(32) = 3rd POWER POINT
    * :ref:`X(32) <X(32)>` = midpoint of PU(39)
    * :ref:`X(32) <X(32)>` = center of circle {:ref:`X(371) <X(371)>`,\ :ref:`X(372) <X(372)>`,PU(1),PU(39)}} (the circle orthogonal to the Brocard circle through the 1st and 2nd Brocard points)
    * :ref:`X(32) <X(32)>` = crosssum of polar conjugates of PU(4)
-   * :ref:`X(32) <X(32)>` = perspector ABC and :term:`tangential triangle <tangential-triangle>` of 1st Brocard triangle
+   * :ref:`X(32) <X(32)>` = perspector :g:`ABC << A B C >>` and :term:`tangential triangle <tangential-triangle>` of 1st Brocard triangle
    * :ref:`X(32) <X(32)>` = trilinear cube of :ref:`X(6) <X(6)>`
    * :ref:`X(32) <X(32)>` = trilinear square root of X(1917)
    * :ref:`X(32) <X(32)>` = inverse-in-2nd-Brocard-circle of X(3094)
    * :ref:`X(32) <X(32)>` = perspector of circumconic centered at :ref:`X(206) <X(206)>`
    * :ref:`X(32) <X(32)>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X(206) <X(206)>`
    * :ref:`X(32) <X(32)>` = trilinear pole of line :ref:`X(669) <X(669)>`\ \ :ref:`X(688) <X(688)>` (the isogonal conjugate of the isotomic conjugate of the Lemoine axis)
-   * :ref:`X(32) <X(32)>` = perspector of ABC and 3rd Brocard triangle
+   * :ref:`X(32) <X(32)>` = perspector of :g:`ABC << A B C >>` and 3rd Brocard triangle
    * :ref:`X(32) <X(32)>` = {:ref:`X(61) <X(61)>`,\ :ref:`X(62) <X(62)>`}-harmonic conjugate of :ref:`X(576) <X(576)>`
    * :ref:`X(32) <X(32)>` = {X(1340),X(1341)}-harmonic conjugate of X(5116)
    * :ref:`X(32) <X(32)>` = {X(1687),X(1688)}-harmonic conjugate of :ref:`X(3) <X(3)>`
@@ -103,12 +99,12 @@ X(32) = 3rd POWER POINT
    * :ref:`X(32) <X(32)>` = X(1577)-isoconjugate of :ref:`X(99) <X(99)>`
    * :ref:`X(32) <X(32)>` = X(4048) of 1st anti-Brocard triangle
    * :ref:`X(32) <X(32)>` = homothetic center of circumnormal triangle and :term:`unary cofactor triangle <unary-cofactor-triangle>` of Stammler triangle
-   * :ref:`X(32) <X(32)>` = perspector of ABC and cross-triangle of ABC and 1st Brocard triangle
-   * :ref:`X(32) <X(32)>` = homothetic center of :term:`medial triangle <medial-triangle>` and cross-triangle of ABC and 5th Brocard triangle
-   * :ref:`X(32) <X(32)>` = homothetic center of medial triangle and cross-triangle of ABC and 5th anti-Brocard triangle
+   * :ref:`X(32) <X(32)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and 1st Brocard triangle
+   * :ref:`X(32) <X(32)>` = homothetic center of :term:`medial triangle <medial-triangle>` and cross-triangle of :g:`ABC << A B C >>` and 5th Brocard triangle
+   * :ref:`X(32) <X(32)>` = homothetic center of medial triangle and cross-triangle of :g:`ABC << A B C >>` and 5th anti-Brocard triangle
    * :ref:`X(32) <X(32)>` = Cundy-Parry Phi transform of :ref:`X(511) <X(511)>`
    * :ref:`X(32) <X(32)>` = Cundy-Parry Psi transform of :ref:`X(98) <X(98)>`
-   * :ref:`X(32) <X(32)>` = :ref:`X(169) <X(169)>`-of-orthic-triangle if ABC is acute
+   * :ref:`X(32) <X(32)>` = :ref:`X(169) <X(169)>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(32) <X(32)>` = Steiner-circumellipse-inverse of X(16985)
    * :ref:`X(32) <X(32)>` = barycentric square of :ref:`X(6) <X(6)>`
    * :ref:`X(32) <X(32)>` = barycentric product of (nonreal) circumcircle intercepts of the Lemoine axis
@@ -118,15 +114,15 @@ Notes
 
 .. container:: note-item
 
-   The 5th Brocard triangle is homothetic to ABC at :ref:`X(32) <X(32)>`, homothetic to the medial triangle at X(3096), homothetic to the :term:`anticomplementary triangle <anticomplementary-triangle>` at X(2896), perspective to the 1st Brocard triangle at X(2896), and perspective to the 3rd Brocard triangle at :ref:`X(32) <X(32)>`.(Randy Hutson, December 26, 2015)
+   The 5th Brocard triangle is homothetic to :g:`ABC << A B C >>` at :ref:`X(32) <X(32)>`, homothetic to the medial triangle at X(3096), homothetic to the :term:`anticomplementary triangle <anticomplementary-triangle>` at X(2896), perspective to the 1st Brocard triangle at X(2896), and perspective to the 3rd Brocard triangle at :ref:`X(32) <X(32)>`.(Randy Hutson, December 26, 2015)
 
 .. container:: note-item
 
-   Let A'B'C' be the 1st Brocard triangle. Let A″, B″, C″ be inverse-in-circumcircle of A', B' and C' resp. AA″, BB″, CC″ concur in :ref:`X(32) <X(32)>`. (Randy Hutson, July 20, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the 1st Brocard triangle. Let :g:`A″ <A″>`, :g:`B″ <B″>`, :g:`C″ <C″>` be inverse-in-circumcircle of :g:`A' <A'>`, :g:`B' <B'>` and :g:`C' <C'>` resp. :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(32) <X(32)>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the 1st Brocard triangle. Let A″ be the :term:`cevapoint <cevapoint>`, wrt A'B'C', of B and C, and define B″, C″ cyclically. A'A″, B'B″, C'C″ concur in :ref:`X(32) <X(32)>`. (Randy Hutson, July 20, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the 1st Brocard triangle. Let :g:`A″ <A″>` be the :term:`cevapoint <cevapoint>`, wrt :g:`A'B'C' << A' B' C' >>`, of :g:`B <B>` and :g:`C <C>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(32) <X(32)>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 

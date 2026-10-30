@@ -16,7 +16,7 @@ X(758) = EVEN (1, 3) INFINITY POINT
    :alt: X(758) = EVEN (1, 3) INFINITY POINT
    :align: center
 
-   **X(758) = EVEN (1, 3) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(758) = EVEN (1, 3) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -26,11 +26,7 @@ X(758) = EVEN (1, 3) INFINITY POINT
    :badge: 2 forms
 
    * **Trilinears:** :math:`(b + c) \cot A - b \cot B - c \cot C : :`
-   * **Trilinears:** :math:`(b + c) (b^2 + c^2 - a^2 - bc) : :`
-
-.. container:: note-item
-
-   :ref:`X(758) <X(758)>` lies.
+   * **Trilinears:** :math:`(b + c) (b^{2} + c^{2} - a^{2} - bc) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 12 lines
@@ -49,7 +45,7 @@ X(758) = EVEN (1, 3) INFINITY POINT
    * :ref:`X(758) <X(758)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(6) <X(6)>`\ \ :ref:`X(661) <X(661)>`
    * :ref:`X(758) <X(758)>` = :term:`crosspoint <crosspoint>` of :ref:`X(1) <X(1)>` and X(2948) wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
    * :ref:`X(758) <X(758)>` = trilinear square root of X(4736)
-   * :ref:`X(758) <X(758)>` = excentral-to-ABC :term:`barycentric image <barycentric-image>` of :ref:`X(30) <X(30)>`
+   * :ref:`X(758) <X(758)>` = excentral-to-:g:`ABC << A B C >>` :term:`barycentric image <barycentric-image>` of :ref:`X(30) <X(30)>`
    * :ref:`X(758) <X(758)>` = excentral-isogonal conjugate of X(34196)
    * :ref:`X(758) <X(758)>` = perspector of circumconic centered at X(35069)
 

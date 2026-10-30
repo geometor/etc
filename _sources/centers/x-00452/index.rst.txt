@@ -10,23 +10,19 @@ X(452) = X(2)-HIRST INVERSE OF X(449)
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(452) <X(452)>` has Shinagawa coefficients (abc\*$a$ + S\ :sup:`2`,-2S\ :sup:`2`).
+   As a point on the Euler line, :ref:`X(452) <X(452)>` has Shinagawa coefficients :math:`(abc \$a\$ + S^{2},-2S^{2})`.
 
 .. figure:: x-00452.svg
    :alt: X(452) = X(2)-HIRST INVERSE OF X(449)
    :align: center
 
-   **X(452) = X(2)-HIRST INVERSE OF X(449)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(452) = X(2)-HIRST INVERSE OF X(449)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`u \csc A : v \csc B : w \csc C`, where u : v : w = :ref:`X(380) <X(380)>`
+   | **Trilinears:** :math:`u \csc A : v \csc B : w \csc C`, where :math:`u : v : w` = :ref:`X(380) <X(380)>`
    | **Barycentrics:** :math:`u : v : w`
    | **Search Value (6, 9, 13):** :math:`3.237309374623`
-
-.. container:: note-item
-
-   :ref:`X(452) <X(452)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 10 lines

@@ -16,7 +16,7 @@ X(632) = 9/10*OG
    :alt: X(632) = 9/10*OG
    :align: center
 
-   **X(632) = 9/10*OG** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(632) = 9/10*OG** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,10 +28,6 @@ X(632) = 9/10*OG
    :badge: 1 form
 
    * **Trilinears:** :math:`7 \cos A + 6 \cos B \cos C : :`
-
-.. container:: note-item
-
-   :ref:`X(632) <X(632)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines
@@ -50,7 +46,7 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(632) <X(632)>` has Shinagawa coefficients (7,-1).
+   As a point on the Euler line, :ref:`X(632) <X(632)>` has Shinagawa coefficients :math:`(7,-1)`.
 
 .. toctree::
    :hidden:

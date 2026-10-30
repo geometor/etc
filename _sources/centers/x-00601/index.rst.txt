@@ -12,17 +12,13 @@ X(601) = INTERSECTION OF LINES X(3)X(31) AND X(55)X(255)
    :alt: X(601) = INTERSECTION OF LINES X(3)X(31) AND X(55)X(255)
    :align: center
 
-   **X(601) = INTERSECTION OF LINES X(3)X(31) AND X(55)X(255)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(601) = INTERSECTION OF LINES X(3)X(31) AND X(55)X(255)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\sin^{2}A + \cos A : \sin^{2}B + \cos B : \sin^{2}C + \cos C`
-   | **Barycentrics:** :math:`(\sin A)(\sin^{2}A + \cos A) : (\sin B)(\sin^{2}B + \cos B) : (\sin C)(\sin^{2}C + \cos C)`
+   | **Trilinears:** :math:`\sin^{2} A + \cos A : \sin^{2} B + \cos B : \sin^{2} C + \cos C`
+   | **Barycentrics:** :math:`(\sin A)(\sin^{2} A + \cos A) : (\sin B)(\sin^{2} B + \cos B) : (\sin C)(\sin^{2} C + \cos C)`
    | **Search Value (6, 9, 13):** :math:`2.469482727889`
-
-.. container:: note-item
-
-   :ref:`X(601) <X(601)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 16 lines

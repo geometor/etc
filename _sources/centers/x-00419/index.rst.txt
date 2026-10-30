@@ -10,24 +10,24 @@ X(419) = X(4)-HIRST INVERSE OF X(25)
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(419) <X(419)>` has Shinagawa coefficients (2(E + F)F,-(E + F)\ :sup:`2` + S\ :sup:`2`).
+   As a point on the Euler line, :ref:`X(419) <X(419)>` has Shinagawa coefficients :math:`(2(E + F)F,-(E + F)^{2} + S^{2})`.
 
 .. figure:: x-00419.svg
    :alt: X(419) = X(4)-HIRST INVERSE OF X(25)
    :align: center
 
-   **X(419) = X(4)-HIRST INVERSE OF X(25)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(419) = X(4)-HIRST INVERSE OF X(25)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(u^{2} - vw)\sec A : (v^{2} - wu)\sec B : (v^{2} - uv)\sec C`, where, u : v : w = :ref:`X(31) <X(31)>`; e.g., u = u(A,B,C) = a\ :sup:`2`
+   | **Trilinears:** :math:`(u^{2} - vw)\sec A : (v^{2} - wu)\sec B : (v^{2} - uv)\sec C`, where :math:`u : v : w` = :ref:`X(31) <X(31)>`; e.g., :math:`u = u(A,B,C) = a^{2}`
    | **Barycentrics:** :math:`(u^{2} - vw)\tan A : (v^{2} - wu)\tan B : (w^{2} - uv)\tan C`
    | **Search Value (6, 9, 13):** :math:`0.834756041461`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`(a^2 - b*c)*(a^2 + b*c)*(a^2 + b^2 - c^2)*(a^2 - b^2 + c^2) :`
+   * **Barycentrics:** :math:`(a^{2} - b c) \cdot (a^{2} + b c) \cdot (a^{2} + b^{2} - c^{2}) \cdot (a^{2} - b^{2} + c^{2}) :`
 
 .. container:: note-item
 

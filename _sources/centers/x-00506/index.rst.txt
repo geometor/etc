@@ -16,11 +16,11 @@ X(506) = 4th ISOSCELIZER POINT
    :alt: X(506) = 4th ISOSCELIZER POINT
    :align: center
 
-   **X(506) = 4th ISOSCELIZER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(506) = 4th ISOSCELIZER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = (cos A/2)\ :sup:`-2/3`
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = (\cos A/2)^{-2/3}`
    | **Barycentrics:** :math:`af(A,B,C) : bf(B,C,A) : cf(C,A,B)`
    | **Search Value (6, 9, 13):** :math:`1.341187212164`
 
@@ -38,7 +38,7 @@ Notes
 
 .. container:: note-item
 
-   have solution X = :ref:`X(506) <X(506)>`. (:person:`Peter Yff <peter-yff>`, 4/9/99)
+   have solution :g:`X <X>` = :ref:`X(506) <X(506)>`. (:person:`Peter Yff <peter-yff>`, 4/9/99)
 
 .. toctree::
    :hidden:

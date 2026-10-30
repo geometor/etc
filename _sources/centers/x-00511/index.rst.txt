@@ -17,20 +17,20 @@ X(511) = ISOGONAL CONJUGATE OF X(98)
 .. admonition:: Group Preamble — Centers on the line at infinity: X(511)-X(526)
    :class: note
 
-   In barycentric coordinates, the line at infinity, L, is the set of points X = x : y : z satisfying x + y + z = 0. The isogonal conjugate of L, given by a^2 y z + b^2 z x + c^2 x y = 0, is the circumcircle (e.g., :ref:`X(98) <X(98)>`-:ref:`X(112) <X(112)>`).
+   In barycentric coordinates, the line at infinity, L, is the set of points :g:`X <X>` =\ :math:`x : y : z` satisfying :math:`x + y + z = 0`. The isogonal conjugate of :g:`L <L>`, given by a^2 y z + b^2 z x + c^2 x y = 0, is the circumcircle (e.g., :ref:`X(98) <X(98)>`-:ref:`X(112) <X(112)>`).
 
    The collection of collinearities reported below for each of the centers on L comprises a family of parallel lines.
 
-   Barycentrics x: y : z (and trilinears) for :ref:`X(30) <X(30)>`, :ref:`X(511) <X(511)>`-:ref:`X(526) <X(526)>`, and many other :term:`triangle centers <triangle-center>` on L, are polynomials in (a,b,c). For example, barycentrics for :ref:`X(511) <X(511)>` are p(a,b,c) : p(b,c,a) : p(c,a,b), where
+   Barycentrics :math:`x: y : z` (and trilinears) for :ref:`X(30) <X(30)>`, :ref:`X(511) <X(511)>`-:ref:`X(526) <X(526)>`, and many other :term:`triangle centers <triangle-center>` on :g:`L <L>`, are polynomials in (a,b,c). For example, barycentrics for :ref:`X(511) <X(511)>` are :math:`p(a,b,c) : p(b,c,a) : p(c,a,b)`, where
 
-   p(a,b,c) = a\ :sup:`2`\ (a\ :sup:`2`\ b\ :sup:`2` + a\ :sup:`2`\ c\ :sup:`2` - b\ :sup:`4` - c\ :sup:`4`).
+   p(a,b,c) = :math:`a^{2}(a^{2}b^{2} + a^{2}c^{2} - b^{4} - c^{4})`.
 
    Such polynomials comprise a family that can be partitioned into two subfamilies: even and odd. Each subfamily can be generated as linear combination of polynomials in certain bases. For example, a basis for the even polynomials of degrees 1 to 4 follows:
 
    | degree 1: 2a - b - c
-   | degree 2: 2a\ :sup:`2` - b\ :sup:`2` - c\ :sup:`2`, 2bc - ca - ab
-   | degree 3: 2a\ :sup:`3` - b\ :sup:`3` - c\ :sup:`3`, a\ :sup:`2`\ b + a\ :sup:`2`\ c - b\ :sup:`2`\ c - b\ :sup:`2`\ c, a\ :sup:`2`\ b + a\ :sup:`2`\ c - b\ :sup:`2`\ c - b\ :sup:`2`\ c
-   | degree 4: 2a\ :sup:`4` - b\ :sup:`4` - c\ :sup:`4`, a\ :sup:`3`\ b + a\ :sup:`3`\ c - b\ :sup:`3`\ c - b\ :sup:`3`\ c, a\ :sup:`3`\ b + a\ :sup:`3`\ c - b\ :sup:`3`\ c - b\ :sup:`3`\ c, 2b\ :sup:`2`\ c\ :sup:`2` - a\ :sup:`2`\ b\ :sup:`2` - a\ :sup:`2`\ c\ :sup:`2`, 2a\ :sup:`2`\ bc - ab\ :sup:`2`\ c - abc\ :sup:`2`
+   | degree 2: :math:`2a^{2}` - :math:`b^{2}` - :math:`c^{2}`, 2bc - ca - ab
+   | degree 3: :math:`2a^{3}` - :math:`b^{3}` - :math:`c^{3}`, :math:`a^{2}`\ b + :math:`a^{2}`\ c - :math:`b^{2}`\ c - :math:`b^{2}`\ c, :math:`a^{2}`\ b + :math:`a^{2}`\ c - :math:`b^{2}`\ c - :math:`b^{2}`\ c
+   | degree 4: :math:`2a^{4}` - :math:`b^{4}` - :math:`c^{4}`, :math:`a^{3}`\ b + :math:`a^{3}`\ c - :math:`b^{3}`\ c - :math:`b^{3}`\ c, :math:`a^{3}`\ b + :math:`a^{3}`\ c - :math:`b^{3}`\ c - :math:`b^{3}`\ c, :math:`2b^{2}`\ :math:`c^{2}` - :math:`a^{2}`\ :math:`b^{2}` - :math:`a^{2}`\ :math:`c^{2}`, :math:`2a^{2}`\ bc - :math:`ab^{2}`\ c - :math:`abc^{2}`
 
    A basis for the odd polynomials of degrees 1 to 2 follows:
 
@@ -43,7 +43,7 @@ X(511) = ISOGONAL CONJUGATE OF X(98)
    :alt: X(511) = ISOGONAL CONJUGATE OF X(98)
    :align: center
 
-   **X(511) = ISOGONAL CONJUGATE OF X(98)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(511) = ISOGONAL CONJUGATE OF X(98)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -55,9 +55,9 @@ X(511) = ISOGONAL CONJUGATE OF X(98)
 
    * **Trilinears:** :math:`\sin A - \sin(A + 2\omega ) : \sin B - \sin(B + 2\omega ) : \sin C - \sin(C + 2\omega )`
    * **Trilinears:** :math:`\cos A + \cos(A + 2\omega ) : \cos B + \cos(B + 2\omega ) : \cos C + \cos(C + 2\omega )`
-   * **Trilinears:** :math:`a(a^{2}b^{2} + a^{2}c^{2} - b^{4} - c^{4}) : : (M. Iliev, 5/13/07)`
+   * **Trilinears:** :math:`a(a^{2}b^{2} + a^{2}c^{2} - b^{4} - c^{4}) : :` (M. Iliev, 5/13/07)
    * **Trilinears:** :math:`\cos A - \sin A \tan \omega : :`
-   * **Trilinears:** :math:`a^{2}\cos B \cos C - bc \cos^{2}A : : (R. Hutson, 1/29,15)`
+   * **Trilinears:** :math:`a^{2}\cos B \cos C - bc \cos^{2} A : : (R. Hutson, 1/29,15)`
    * **Trilinears:** :math:`\cos A + \cos 2A \cos(B - C) : :`
    * **Trilinears:** :math:`a - 2R \cos A \cot \omega : :`
    * **Barycentrics:** :math:`(\cot A + \cot B + \cot C) \tan A - (\tan A + \tan B + \tan C) \cot A : :`
@@ -66,10 +66,6 @@ X(511) = ISOGONAL CONJUGATE OF X(98)
    :badge: 1 combination
 
    * :ref:`X(511) <X(511)>` = :ref:`X(3) <X(3)>` - :ref:`X(6) <X(6)>`
-
-.. container:: note-item
-
-   :ref:`X(511) <X(511)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 94 lines
@@ -110,8 +106,8 @@ X(511) = ISOGONAL CONJUGATE OF X(98)
    * :ref:`X(511) <X(511)>` = perspector of 2nd Neuberg triangle and cross-triangle of 1st and 2nd Neuberg triangles
    * :ref:`X(511) <X(511)>` = Cundy-Parry Phi transform of :ref:`X(32) <X(32)>`
    * :ref:`X(511) <X(511)>` = Cundy-Parry Psi transform of :ref:`X(76) <X(76)>`
-   * :ref:`X(511) <X(511)>` = perspector of ABC and side-triangle of :term:`pedal triangles <pedal-triangle>` of PU(1)
-   * :ref:`X(511) <X(511)>` = perspector of ABC and side-triangle of reflection triangles of PU(1)
+   * :ref:`X(511) <X(511)>` = perspector of :g:`ABC << A B C >>` and side-triangle of :term:`pedal triangles <pedal-triangle>` of PU(1)
+   * :ref:`X(511) <X(511)>` = perspector of :g:`ABC << A B C >>` and side-triangle of reflection triangles of PU(1)
    * :ref:`X(511) <X(511)>` = polar conjugate of isotomic conjugate of X(36212)
 
 Notes
@@ -119,11 +115,11 @@ Notes
 
 .. container:: note-item
 
-   Let L denote the line having trilinears of :ref:`X(511) <X(511)>` as coefficients. Then L is the line passing through :ref:`X(6) <X(6)>` perpendicular to the Euler line.
+   Let :g:`L <L>` denote the line having trilinears of :ref:`X(511) <X(511)>` as coefficients. Then L is the line passing through :ref:`X(6) <X(6)>` perpendicular to the Euler line.
 
 .. container:: note-item
 
-   :ref:`X(511) <X(511)>` is the perspector of triangle ABC and the :term:`tangential triangle <tangential-triangle>` of the hyperbola {A, B, C, :ref:`X(2) <X(2)>`, and :ref:`X(110) <X(110)>`}}.
+   :ref:`X(511) <X(511)>` is the perspector of triangle :g:`ABC << A B C >>` and the :term:`tangential triangle <tangential-triangle>` of the hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`, :ref:`X(2) <X(2)>`, and :ref:`X(110) <X(110)>`}}.
 
 .. toctree::
    :hidden:

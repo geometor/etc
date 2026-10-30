@@ -10,24 +10,24 @@ X(668) = TRILINEAR POLE OF LINE X(2)X(37)
 
 .. enunciation::
 
-   As the trilinear product of Steiner circumellipse antipodes, :ref:`X(668) <X(668)>` lies on conic {A,B,C,\ :ref:`X(668) <X(668)>`,\ :ref:`X(789) <X(789)>`}} with center X(6376) and perspector :ref:`X(75) <X(75)>`. (:person:`Randy Hutson <randy-hutson>`, July 11, 2019)
+   As the trilinear product of Steiner circumellipse antipodes, :ref:`X(668) <X(668)>` lies on conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(668) <X(668)>`,\ :ref:`X(789) <X(789)>`}} with center X(6376) and perspector :ref:`X(75) <X(75)>`. (:person:`Randy Hutson <randy-hutson>`, July 11, 2019)
 
 .. figure:: x-00668.svg
    :alt: X(668) = TRILINEAR POLE OF LINE X(2)X(37)
    :align: center
 
-   **X(668) = TRILINEAR POLE OF LINE X(2)X(37)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(668) = TRILINEAR POLE OF LINE X(2)X(37)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`1/[a^{2}(b - c)] : :`
-   | **Barycentrics:** :math:`b*c*(a - b)*(a - c) : :`
+   | **Barycentrics:** :math:`b c (a - b) \cdot (a - c) : :`
    | **Search Value (6, 9, 13):** :math:`6.390068371063`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(668) <X(668)>` = 3 :ref:`X(2) <X(2)>` - 4 X(27076), 6 :ref:`X(2) <X(2)>` - 5 X(27195), 3 :ref:`X(2) <X(2)>` + X(31298), :ref:`X(2) <X(2)>` - 4 X(36524), 9 :ref:`X(2) <X(2)>` - 8 X(40479), 2 :ref:`X(350) <X(350)>` - 3 X(18145), 2 :ref:`X(889) <X(889)>` - 3 X(9296), :ref:`X(889) <X(889)>` - 3 X(31625), 4 X(1015) - 3 X(3227), X(1015) - 3 X(13466), 4 X(1015) - 5 X(27195), 2 X(1015) + X(31298), X(1015) - 6 X(36524), 2 X(1015) + 3 X(39360), 3 X(1015) - 4 X(40479), 5 X(1698) - 4 X(40533), 3 X(3227) - 2 X(9263), X(3227) - 4 X(13466), 3 X(3227) - 8 X(27076), 3 X(3227) - 5 X(27195), 3 X(3227) + 2 X(31298), X(3227) - 8 X(36524), X(3227) + 2 X(39360), 9 X(3227) - 16 X(40479), 3 X(3807) - 4 X(4103), 3 X(3807) - 2 X(4568), 3 X(3807) - X(33946), 4 X(4103) - X(33946), 4 X(4422) - 3 X(24508), 4 X(6381) - 3 X(18145), X(9263) - 6 X(13466), X(9263) - 4 X(27076), 2 X(9263) - 5 X(27195), X(9263) - 12 X(36524), X(9263) + 3 X(39360), 3 X(9263) - 8 X(40479), 2 X(9267) - 3 X(14441), 3 X(13466) - 2 X(27076), 12 X(13466) - 5 X(27195), 6 X(13466) + X(31298), 2 X(13466) + X(39360), 9 X(13466) - 4 X(40479), 8 X(27076) - 5 X(27195), 4 X(27076) + X(31298), X(27076) - 3 X(36524), 4 X(27076) + 3 X(39360), 3 X(27076) - 2 X(40479), 5 X(27195) + 2 X(31298), 5 X(27195) - 24 X(36524), 5 X(27195) + 6 X(39360), 15 X(27195) - 16 X(40479), X(31298) + 12 X(36524), X(31298) - 3 X(39360), 3 X(31298) + 8 X(40479), 4 X(36524) + X(39360), 9 X(36524) - 2 X(40479), 9 X(39360) + 8 X(40479)
+   * :ref:`X(668) <X(668)>` = :math:`3` :ref:`X(2) <X(2)>` - :math:`4` X(27076), :math:`6` :ref:`X(2) <X(2)>` - :math:`5` X(27195), :math:`3` :ref:`X(2) <X(2)>` + X(31298), :ref:`X(2) <X(2)>` - :math:`4` X(36524), :math:`9` :ref:`X(2) <X(2)>` - :math:`8` X(40479), :math:`2` :ref:`X(350) <X(350)>` - :math:`3` X(18145), :math:`2` :ref:`X(889) <X(889)>` - :math:`3` X(9296), :ref:`X(889) <X(889)>` - :math:`3` X(31625), :math:`4` X(1015) - :math:`3` X(3227), X(1015) - :math:`3` X(13466), :math:`4` X(1015) - :math:`5` X(27195), :math:`2` X(1015) + X(31298), X(1015) - :math:`6` X(36524), :math:`2` X(1015) + :math:`3` X(39360), :math:`3` X(1015) - :math:`4` X(40479), :math:`5` X(1698) - :math:`4` X(40533), :math:`3` X(3227) - :math:`2` X(9263), X(3227) - :math:`4` X(13466), :math:`3` X(3227) - :math:`8` X(27076), :math:`3` X(3227) - :math:`5` X(27195), :math:`3` X(3227) + :math:`2` X(31298), X(3227) - :math:`8` X(36524), X(3227) + :math:`2` X(39360), :math:`9` X(3227) - :math:`16` X(40479), :math:`3` X(3807) - :math:`4` X(4103), :math:`3` X(3807) - :math:`2` X(4568), :math:`3` X(3807) - X(33946), :math:`4` X(4103) - X(33946), :math:`4` X(4422) - :math:`3` X(24508), :math:`4` X(6381) - :math:`3` X(18145), X(9263) - :math:`6` X(13466), X(9263) - :math:`4` X(27076), :math:`2` X(9263) - :math:`5` X(27195), X(9263) - :math:`12` X(36524), X(9263) + :math:`3` X(39360), :math:`3` X(9263) - :math:`8` X(40479), :math:`2` X(9267) - :math:`3` X(14441), :math:`3` X(13466) - :math:`2` X(27076), :math:`12` X(13466) - :math:`5` X(27195), :math:`6` X(13466) + X(31298), :math:`2` X(13466) + X(39360), :math:`9` X(13466) - :math:`4` X(40479), :math:`8` X(27076) - :math:`5` X(27195), :math:`4` X(27076) + X(31298), X(27076) - :math:`3` X(36524), :math:`4` X(27076) + :math:`3` X(39360), :math:`3` X(27076) - :math:`2` X(40479), :math:`5` X(27195) + :math:`2` X(31298), :math:`5` X(27195) - :math:`24` X(36524), :math:`5` X(27195) + :math:`6` X(39360), :math:`15` X(27195) - :math:`16` X(40479), X(31298) + :math:`12` X(36524), X(31298) - :math:`3` X(39360), :math:`3` X(31298) + :math:`8` X(40479), :math:`4` X(36524) + X(39360), :math:`9` X(36524) - :math:`2` X(40479), :math:`9` X(39360) + :math:`8` X(40479)
 
 .. container:: note-item
 
@@ -69,7 +69,7 @@ X(668) = TRILINEAR POLE OF LINE X(2)X(37)
    * :ref:`X(668) <X(668)>` = crossdifference of PU(42)
    * :ref:`X(668) <X(668)>` = trilinear product of intercepts of Steiner circumellipse and Nagel line
    * :ref:`X(668) <X(668)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X(6591) (line X(3125)X(3271))
-   * :ref:`X(668) <X(668)>` = perspector of hyperbola {A,B,C,PU(41)}}
+   * :ref:`X(668) <X(668)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(41)}}
    * :ref:`X(668) <X(668)>` = trilinear product of vertices of Gemini triangle 5
    * :ref:`X(668) <X(668)>` = trilinear product of vertices of Gemini triangle 6
    * :ref:`X(668) <X(668)>` = trilinear product of vertices of Gemini triangle 29

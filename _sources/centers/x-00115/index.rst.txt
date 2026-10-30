@@ -10,13 +10,13 @@ X(115) = CENTER OF KIEPERT HYPERBOLA
 
 .. enunciation::
 
-   The circumcircle of the :term:`incentral triangle <incentral-triangle>` intersects the nine-point circle at 2 points, :ref:`X(11) <X(11)>` and :ref:`X(115) <X(115)>`, and :ref:`X(115) <X(115)>` lies on the incentral circle and the :term:`cevian <cevian>` circle of every point on the Kiepert hyperbola. Let A'B'C' be the :term:`orthic triangle <orthic-triangle>`. The Brocard axes of AB'C', BC'A', CA'B' concur in :ref:`X(115) <X(115)>`. Let P be a point on the Brocard circle, and let L be the line tangent to the Brocard circle at P. Let P' be the :term:`trilinear pole <trilinear-pole>` of L, and let P" be the :term:`isotomic conjugate <isotomic-conjugate>` of P'. As P varies, P" traces an ellipse with center at :ref:`X(115) <X(115)>`. (:person:`Randy Hutson <randy-hutson>`, July 23, 2015)
+   The circumcircle of the :term:`incentral triangle <incentral-triangle>` intersects the nine-point circle at 2 points, :ref:`X(11) <X(11)>` and :ref:`X(115) <X(115)>`, and :ref:`X(115) <X(115)>` lies on the incentral circle and the :term:`cevian <cevian>` circle of every point on the Kiepert hyperbola. Let :g:`A'B'C' << A' B' C' >>` be the :term:`orthic triangle <orthic-triangle>`. The Brocard axes of :g:`AB'C' << A B' C' >>`, :g:`BC'A' << B C' A' >>`, :g:`CA'B' << C A' B' >>` concur in :ref:`X(115) <X(115)>`. Let :g:`P <P>` be a point on the Brocard circle, and let :g:`L <L>` be the line tangent to the Brocard circle at P. Let :g:`P' <P'>` be the :term:`trilinear pole <trilinear-pole>` of :g:`L <L>`, and let :g:`P″ <P″>` be the :term:`isotomic conjugate <isotomic-conjugate>` of :g:`P' <P'>`. As P varies, :g:`P″ <P″>` traces an ellipse with center at :ref:`X(115) <X(115)>`. (:person:`Randy Hutson <randy-hutson>`, July 23, 2015)
 
 .. figure:: x-00115.svg
    :alt: X(115) = CENTER OF KIEPERT HYPERBOLA
    :align: center
 
-   **X(115) = CENTER OF KIEPERT HYPERBOLA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(115) = CENTER OF KIEPERT HYPERBOLA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,16 +27,16 @@ X(115) = CENTER OF KIEPERT HYPERBOLA
 .. collapse:: Alternate Coordinates
    :badge: 4 forms
 
-   * **Trilinears:** cos A - 2 cos(B - C) + cot ω sin A : : (Peter J. C. Moses, 9/12/03)
+   * **Trilinears:** :math:`\cos A - 2 \cos(B - C) + \cot \omega \sin A : :` (Peter J. C. Moses, 9/12/03)
    * **Trilinears:** :math:`\sin A \sin^{2}(B - C) : :`
-   * **Barycentrics:** :math:`(SB - SC)^2 : :`
-   * **Barycentrics:** :math:`(SA - SW) (SB + SC) + 4 SB SC : :`
+   * **Barycentrics:** :math:`(S_{B} - S_{C})^{2} : :`
+   * **Barycentrics:** :math:`(S_{A} - S_{\omega}) (S_{B} + S_{C}) + 4 S_{B} S_{C} : :`
 
 .. collapse:: Linear Combinations
    :badge: 2 combinations
 
-   * :ref:`X(115) <X(115)>` = 2(tan ω sin 2ω)\*\ :ref:`X(5) <X(5)>` - :ref:`X(39) <X(39)>`
-   * :ref:`X(115) <X(115)>` = :ref:`X(13) <X(13)>` + :ref:`X(14) <X(14)>` (Randy Hutson, July 23, 2015) :ref:`X(115) <X(115)>` = 3 :ref:`X(2) <X(2)>` + :ref:`X(148) <X(148)>`, 3 :ref:`X(2) <X(2)>` - 4 X(6722), 5 :ref:`X(2) <X(2)>` - X(8591), 7 :ref:`X(2) <X(2)>` + X(8596), :ref:`X(2) <X(2)>` - 3 X(9166), 4 :ref:`X(2) <X(2)>` - 3 X(9167), 3 :ref:`X(2) <X(2)>` - 5 X(14061), 2 :ref:`X(2) <X(2)>` - 3 X(14971), 4 :ref:`X(2) <X(2)>` - X(15300), 9 :ref:`X(2) <X(2)>` - X(20094), 5 :ref:`X(2) <X(2)>` - 4 X(22247), 6 :ref:`X(2) <X(2)>` - 5 X(31274), 9 :ref:`X(2) <X(2)>` - 4 X(35022), :ref:`X(3) <X(3)>` - 4 X(20398), 3 :ref:`X(4) <X(4)>` + X(9862), 3 :ref:`X(4) <X(4)>` - X(10722), 2 :ref:`X(4) <X(4)>` + X(10991), :ref:`X(4) <X(4)>` + 2 X(11623), :ref:`X(4) <X(4)>` - 3 X(14639), :ref:`X(4) <X(4)>` + 3 X(14651), 4 :ref:`X(5) <X(5)>` - X(14981), 3 :ref:`X(5) <X(5)>` - 4 X(15092), 2 :ref:`X(5) <X(5)>` - 3 X(23514), :ref:`X(6) <X(6)>` - 3 X(6034), :ref:`X(13) <X(13)>` + 3 X(5469), :ref:`X(13) <X(13)>` - 3 X(5470), 3 :ref:`X(13) <X(13)>` + X(6777), 3 :ref:`X(13) <X(13)>` - X(6778), :ref:`X(14) <X(14)>` - 3 X(5469), :ref:`X(14) <X(14)>` + 3 X(5470), 3 :ref:`X(14) <X(14)>` - X(6777), 3 :ref:`X(14) <X(14)>` + X(6778), :ref:`X(15) <X(15)>` - 3 X(22510), :ref:`X(16) <X(16)>` - 3 X(22511), :ref:`X(20) <X(20)>` - 3 X(34473), 3 :ref:`X(98) <X(98)>` - X(9862), 3 :ref:`X(98) <X(98)>` + X(10722), :ref:`X(98) <X(98)>` + 3 X(14639), :ref:`X(98) <X(98)>` - 3 X(14651), :ref:`X(99) <X(99)>` + 3 :ref:`X(671) <X(671)>`, 2 :ref:`X(99) <X(99)>` - 3 X(2482), :ref:`X(99) <X(99)>` - 6 X(5461), :ref:`X(99) <X(99)>` - 4 X(6722), 5 :ref:`X(99) <X(99)>` - 3 X(8591), 7 :ref:`X(99) <X(99)>` + 3 X(8596), :ref:`X(99) <X(99)>` - 9 X(9166), 4 :ref:`X(99) <X(99)>` - 9 X(9167), :ref:`X(99) <X(99)>` - 5 X(14061), 2 :ref:`X(99) <X(99)>` - 9 X(14971), 4 :ref:`X(99) <X(99)>` - 3 X(15300), 3 :ref:`X(99) <X(99)>` - X(20094), 5 :ref:`X(99) <X(99)>` - 12 X(22247), 2 :ref:`X(99) <X(99)>` - 5 X(31274)
+   * :ref:`X(115) <X(115)>` = :math:`2(\tan \omega \sin 2\omega )` :ref:`X(5) <X(5)>` - :ref:`X(39) <X(39)>`
+   * :ref:`X(115) <X(115)>` = :ref:`X(13) <X(13)>` + :ref:`X(14) <X(14)>`\ (Randy Hutson, July 23, 2015) :ref:`X(115) <X(115)>` = :math:`3` :ref:`X(2) <X(2)>` + :ref:`X(148) <X(148)>`, :math:`3` :ref:`X(2) <X(2)>` - :math:`4` X(6722), :math:`5` :ref:`X(2) <X(2)>` - X(8591), :math:`7` :ref:`X(2) <X(2)>` + X(8596), :ref:`X(2) <X(2)>` - :math:`3` X(9166), :math:`4` :ref:`X(2) <X(2)>` - :math:`3` X(9167), :math:`3` :ref:`X(2) <X(2)>` - :math:`5` X(14061), :math:`2` :ref:`X(2) <X(2)>` - :math:`3` X(14971), :math:`4` :ref:`X(2) <X(2)>` - X(15300), :math:`9` :ref:`X(2) <X(2)>` - X(20094), :math:`5` :ref:`X(2) <X(2)>` - :math:`4` X(22247), :math:`6` :ref:`X(2) <X(2)>` - :math:`5` X(31274), :math:`9` :ref:`X(2) <X(2)>` - :math:`4` X(35022), :ref:`X(3) <X(3)>` - :math:`4` X(20398), :math:`3` :ref:`X(4) <X(4)>` + X(9862), :math:`3` :ref:`X(4) <X(4)>` - X(10722), :math:`2` :ref:`X(4) <X(4)>` + X(10991), :ref:`X(4) <X(4)>` + :math:`2` X(11623), :ref:`X(4) <X(4)>` - :math:`3` X(14639), :ref:`X(4) <X(4)>` + :math:`3` X(14651), :math:`4` :ref:`X(5) <X(5)>` - X(14981), :math:`3` :ref:`X(5) <X(5)>` - :math:`4` X(15092), :math:`2` :ref:`X(5) <X(5)>` - :math:`3` X(23514), :ref:`X(6) <X(6)>` - :math:`3` X(6034), :ref:`X(13) <X(13)>` + :math:`3` X(5469), :ref:`X(13) <X(13)>` - :math:`3` X(5470), :math:`3` :ref:`X(13) <X(13)>` + X(6777), :math:`3` :ref:`X(13) <X(13)>` - X(6778), :ref:`X(14) <X(14)>` - :math:`3` X(5469), :ref:`X(14) <X(14)>` + :math:`3` X(5470), :math:`3` :ref:`X(14) <X(14)>` - X(6777), :math:`3` :ref:`X(14) <X(14)>` + X(6778), :ref:`X(15) <X(15)>` - :math:`3` X(22510), :ref:`X(16) <X(16)>` - :math:`3` X(22511), :ref:`X(20) <X(20)>` - :math:`3` X(34473), :math:`3` :ref:`X(98) <X(98)>` - X(9862), :math:`3` :ref:`X(98) <X(98)>` + X(10722), :ref:`X(98) <X(98)>` + :math:`3` X(14639), :ref:`X(98) <X(98)>` - :math:`3` X(14651), :ref:`X(99) <X(99)>` + :math:`3` :ref:`X(671) <X(671)>`, :math:`2` :ref:`X(99) <X(99)>` - :math:`3` X(2482), :ref:`X(99) <X(99)>` - :math:`6` X(5461), :ref:`X(99) <X(99)>` - :math:`4` X(6722), :math:`5` :ref:`X(99) <X(99)>` - :math:`3` X(8591), :math:`7` :ref:`X(99) <X(99)>` + :math:`3` X(8596), :ref:`X(99) <X(99)>` - :math:`9` X(9166), :math:`4` :ref:`X(99) <X(99)>` - :math:`9` X(9167), :ref:`X(99) <X(99)>` - :math:`5` X(14061), :math:`2` :ref:`X(99) <X(99)>` - :math:`9` X(14971), :math:`4` :ref:`X(99) <X(99)>` - :math:`3` X(15300), :math:`3` :ref:`X(99) <X(99)>` - X(20094), :math:`5` :ref:`X(99) <X(99)>` - :math:`12` X(22247), :math:`2` :ref:`X(99) <X(99)>` - :math:`5` X(31274)
 
 .. container:: note-item
 
@@ -86,7 +86,7 @@ X(115) = CENTER OF KIEPERT HYPERBOLA
    * :ref:`X(115) <X(115)>` = tripolar centroid of X(5466)
    * :ref:`X(115) <X(115)>` = :ref:`X(2) <X(2)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(148) <X(148)>`
    * :ref:`X(115) <X(115)>` = :ref:`X(99) <X(99)>`-of-:term:`medial triangle <medial-triangle>`
-   * :ref:`X(115) <X(115)>` = :ref:`X(101) <X(101)>`-of-orthic triangle if ABC is acute
+   * :ref:`X(115) <X(115)>` = :ref:`X(101) <X(101)>`-of-orthic triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(115) <X(115)>` = :ref:`X(325) <X(325)>`-of-1st-Brocard-triangle
    * :ref:`X(115) <X(115)>` = :ref:`X(187) <X(187)>`-of-4th-Brocard-triangle
    * :ref:`X(115) <X(115)>` = :ref:`X(187) <X(187)>`-of-orthocentroidal-triangle
@@ -96,7 +96,7 @@ X(115) = CENTER OF KIEPERT HYPERBOLA
    * :ref:`X(115) <X(115)>` = projection from Steiner circumellipse to Steiner inellipse of :ref:`X(671) <X(671)>`
    * :ref:`X(115) <X(115)>` = center of similitude of incentral and Feuerbach triangles
    * :ref:`X(115) <X(115)>` = center of circumconic that is locus of trilinear poles of lines parallel to the orthic axis (i.e. lines that pass through :ref:`X(523) <X(523)>`)
-   * :ref:`X(115) <X(115)>` = perspector of circumconic centered at :ref:`X(523) <X(523)>` (parabola {A,B,C,\ :ref:`X(476) <X(476)>`,\ :ref:`X(523) <X(523)>`,\ :ref:`X(685) <X(685)>`})
+   * :ref:`X(115) <X(115)>` = perspector of circumconic centered at :ref:`X(523) <X(523)>` (parabola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(476) <X(476)>`,\ :ref:`X(523) <X(523)>`,\ :ref:`X(685) <X(685)>`})
    * :ref:`X(115) <X(115)>` = trilinear pole wrt medial triangle of line :ref:`X(2) <X(2)>`\ \ :ref:`X(6) <X(6)>`
    * :ref:`X(115) <X(115)>` = inverse-in-circumcircle of X(2079)
    * :ref:`X(115) <X(115)>` = inverse-in-polar-circle of :ref:`X(112) <X(112)>`
@@ -110,10 +110,10 @@ X(115) = CENTER OF KIEPERT HYPERBOLA
    * :ref:`X(115) <X(115)>` = orthopole of Brocard axis
    * :ref:`X(115) <X(115)>` = orthic isogonal conjugate of :ref:`X(512) <X(512)>`
    * :ref:`X(115) <X(115)>` = incentral isogonal conjugate of :ref:`X(512) <X(512)>`
-   * :ref:`X(115) <X(115)>` = perspector of orthic triangle and :term:`tangential triangle <tangential-triangle>` of hyperbola {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(6) <X(6)>`}}
+   * :ref:`X(115) <X(115)>` = perspector of orthic triangle and :term:`tangential triangle <tangential-triangle>` of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(6) <X(6)>`}}
    * :ref:`X(115) <X(115)>` = similitude center of (equilateral) :term:`pedal triangles <pedal-triangle>` of :ref:`X(15) <X(15)>` and :ref:`X(16) <X(16)>`
    * :ref:`X(115) <X(115)>` = exsimilicenter of Moses circle and the nine-point circle
-   * :ref:`X(115) <X(115)>` = anticenter of cyclic quadrilateral ABC\ :ref:`X(98) <X(98)>`
+   * :ref:`X(115) <X(115)>` = anticenter of cyclic quadrilateral :g:`ABC << A B C >>`\ :ref:`X(98) <X(98)>`
    * :ref:`X(115) <X(115)>` = Λ(:ref:`X(187) <X(187)>`, :ref:`X(237) <X(237)>`)-wrt-orthic-triangle
    * :ref:`X(115) <X(115)>` = X(1101)-:term:`isoconjugate <isoconjugate>` of :ref:`X(2) <X(2)>`
    * :ref:`X(115) <X(115)>` = harmonic center of nine-point circle and Gallatly circle
@@ -150,15 +150,15 @@ Notes
 
 .. container:: note-item
 
-   Let La, Lb, Lc be the lines through A, B, C, resp. parallel to the Brocard axis. Let Ma, Mb, Mc be the reflections of BC, CA, AB in La, Lb, Lc, resp. Let A' = Mb∩Mc, and define B', C' cyclically. Triangle A'B'C' is inversely similar to, and 3 times the size of, ABC. Let A″B″C″ be the reflection of A'B'C' in the Brocard axis. The triangle A″B″C″ is homothetic to ABC, with center of homothety :ref:`X(115) <X(115)>`; see :cite:`Hyacinthos #16741 <hyacinthos>`/16782, Sep 2008.
+   Let :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` be the lines through :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, resp. parallel to the Brocard axis. Let :g:`M_{a} <M_a>`, :g:`M_{b} <M_b>`, :g:`M_{c} <M_c>` be the reflections of :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>` in :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>`, resp. Let :g:`A' <A'>` = :g:`M_{b} <M_b>`\ ∩\ :g:`M_{c} <M_c>`, and define :g:`B' <B'>`, :g:`C' <C'>` cyclically. Triangle :g:`A'B'C' << A' B' C' >>` is inversely similar to, and 3 times the size of, :g:`ABC << A B C >>`. Let :g:`A″B″C″ << A″ B″ C″ >>` be the reflection of :g:`A'B'C' << A' B' C' >>` in the Brocard axis. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to :g:`ABC << A B C >>`, with center of homothety :ref:`X(115) <X(115)>`; see :cite:`Hyacinthos #16741 <hyacinthos>`/16782, Sep 2008.
 
 .. container:: note-item
 
-   :ref:`X(115) <X(115)>` is the QA-P2 center (Euler-Poncelet Point) of quadrangle ABC\ :ref:`X(2) <X(2)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/10-mathematics/quadrangle-objects/12-qa-p2.html)
+   :ref:`X(115) <X(115)>` is the :g:`QA <[ Q A ]>`-:g:`P_{2} <P_2>` center (Euler-Poncelet Point) of quadrangle :g:`ABC << A B C >>`\ :ref:`X(2) <X(2)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/10-mathematics/quadrangle-objects/12-qa-p2.html)
 
 .. container:: note-item
 
-   Let F be the Feuerbach point, :ref:`X(11) <X(11)>`, and FaFbFc be the Feuerbach triangle (the extraversion triangle of :ref:`X(11) <X(11)>`). Let A' be the barycentric product F\*Fa, and define B', C' cyclically. The lines AA', BB', CC' concur in :ref:`X(115) <X(115)>`. (Randy Hutson, January 29, 2018)
+   Let :g:`F <F>` be the Feuerbach point, :ref:`X(11) <X(11)>`, and :g:`F_{a}F_{b}F_{c} << F_a F_b F_c >>` be the Feuerbach triangle (the extraversion triangle of :ref:`X(11) <X(11)>`). Let :g:`A' <A'>` be the barycentric product F\*\ :g:`F_{a} <F_a>`, and define :g:`B' <B'>`, :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(115) <X(115)>`. (Randy Hutson, January 29, 2018)
 
 .. container:: note-item
 

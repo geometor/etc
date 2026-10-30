@@ -16,7 +16,7 @@ X(525) = ISOGONAL CONJUGATE OF X(112)
    :alt: X(525) = ISOGONAL CONJUGATE OF X(112)
    :align: center
 
-   **X(525) = ISOGONAL CONJUGATE OF X(112)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(525) = ISOGONAL CONJUGATE OF X(112)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -30,11 +30,7 @@ X(525) = ISOGONAL CONJUGATE OF X(112)
    * **Barycentrics:** :math:`\sin 2B - \sin 2C : :`
    * **Barycentrics:** :math:`\tan B - \tan C : :`
    * **Barycentrics:** :math:`\tan B \cos 2B - \tan C \cos 2C : :`
-   * **Barycentrics:** :math:`(b^2 - c^2)(b^2 + c^2 - a^2) : :`
-
-.. container:: note-item
-
-   :ref:`X(525) <X(525)>` lies.
+   * **Barycentrics:** :math:`(b^{2} - c^{2})(b^{2} + c^{2} - a^{2}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 29 lines
@@ -53,7 +49,7 @@ X(525) = ISOGONAL CONJUGATE OF X(112)
    * :ref:`X(525) <X(525)>` = :term:`crosspoint <crosspoint>` of :ref:`X(76) <X(76)>` and :ref:`X(99) <X(99)>`
    * :ref:`X(525) <X(525)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`6 <X(6)>`, :ref:`647 <X(647)>`), (:ref:`32 <X(32)>`, :ref:`512 <X(512)>`), (:ref:`427 <X(427)>`, :ref:`523 <X(523)>`)
    * :ref:`X(525) <X(525)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(6) <X(6)>`\ \ :ref:`X(25) <X(25)>`
-   * :ref:`X(525) <X(525)>` = perspector of hyperbola {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(69) <X(69)>`}}
+   * :ref:`X(525) <X(525)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(69) <X(69)>`}}
    * :ref:`X(525) <X(525)>` = intersection of :term:`trilinear polars <trilinear-polar>` of :ref:`X(2) <X(2)>` and :ref:`X(69) <X(69)>`
    * :ref:`X(525) <X(525)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(122) <X(122)>`\ \ :ref:`X(125) <X(125)>`
    * :ref:`X(525) <X(525)>` = pole wrt polar circle of trilinear polar of :ref:`X(107) <X(107)>` (line :ref:`X(4) <X(4)>`\ \ :ref:`X(6) <X(6)>`)

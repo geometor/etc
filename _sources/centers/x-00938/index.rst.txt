@@ -16,21 +16,17 @@ X(938) = ANTICOMPLEMENT OF X(936)
    :alt: X(938) = ANTICOMPLEMENT OF X(936)
    :align: center
 
-   **X(938) = ANTICOMPLEMENT OF X(936)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(938) = ANTICOMPLEMENT OF X(936)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = bc[a\ :sup:`4` - 2a\ :sup:`3`\ (b + c) - 4a\ :sup:`2`\ bc + (b - c)(b\ :sup:`2` - c\ :sup:`2`)(2a - b - c)]
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = bc[a^{4} - 2a^{3}(b + c) - 4a^{2}bc + (b - c)(b^{2} - c^{2})(2a - b - c)]`
    | **Search Value (6, 9, 13):** :math:`1.520086101657`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`\cos A' : :`, where A' is the angle formed by the tangents from the A-excenter to the incircle
-
-.. container:: note-item
-
-   :ref:`X(938) <X(938)>` lies.
+   * **Trilinears:** :math:`\cos A' : :`, where :g:`A' <A'>` is the angle formed by the tangents from the :g:`A <A>`-excenter to the incircle
 
 .. collapse:: Incident Central Lines
    :badge: 13 lines

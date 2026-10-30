@@ -16,11 +16,11 @@ X(317) = ISOTOMIC CONJUGATE OF X(68)
    :alt: X(317) = ISOTOMIC CONJUGATE OF X(68)
    :align: center
 
-   **X(317) = ISOTOMIC CONJUGATE OF X(68)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(317) = ISOTOMIC CONJUGATE OF X(68)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\sec A \cos 2A \csc^{2}A : :`
+   | **Trilinears:** :math:`\sec A \cos 2A \csc^{2} A : :`
    | **Barycentrics:** :math:`\cot 2A : \cot 2B : \cot 2C`
    | **Search Value (6, 9, 13):** :math:`3.944983833327`
 
@@ -29,14 +29,10 @@ X(317) = ISOTOMIC CONJUGATE OF X(68)
 
    * **Trilinears:** :math:`bc \cot 2A : ca \cot 2B : ab \cot 2C`
    * **Trilinears:** :math:`\sec A - \cot A \csc A : :`
-   * **Barycentrics:** :math:`\tan A \cos 2A \csc^{2}A`
+   * **Barycentrics:** :math:`\tan A \cos 2A \csc^{2} A`
    * **Barycentrics:** :math:`\tan A - \cot A : :`
    * **Barycentrics:** :math:`\tan A + \cot B + \cot C - \cot \omega : :`
-   * **Barycentrics:** :math:`(a^4 + b^4 + c^4 - 2 a^2 b^2 - 2 a^2 c^2) / (b^2 + c^2 - a^2) : :`
-
-.. container:: note-item
-
-   :ref:`X(317) <X(317)>` lies.
+   * **Barycentrics:** :math:`(a^{4} + b^{4} + c^{4} - 2 a^{2} b^{2} - 2 a^{2} c^{2}) / (b^{2} + c^{2} - a^{2}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 17 lines
@@ -52,7 +48,7 @@ X(317) = ISOTOMIC CONJUGATE OF X(68)
    * :ref:`X(317) <X(317)>` = :term:`anticomplement <anticomplement>` of :ref:`X(577) <X(577)>`
    * :ref:`X(317) <X(317)>` = :term:`cevapoint <cevapoint>` of :ref:`X(52) <X(52)>` and :ref:`X(467) <X(467)>`
    * :ref:`X(317) <X(317)>` = polar conjugate of X(2165)
-   * :ref:`X(317) <X(317)>` = X(1721)-of-orthic-triangle if ABC is acute
+   * :ref:`X(317) <X(317)>` = X(1721)-of-orthic-triangle if :g:`ABC << A B C >>` is acute
 
 .. toctree::
    :hidden:

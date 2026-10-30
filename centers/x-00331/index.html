@@ -100,10 +100,10 @@
         <figure class="align-center" id="id1">
         <div class="etc-graphics-panel">
           <div class="etc-triangle-tabs" role="tablist" aria-label="Reference Triangle">
-            <button type="button" class="etc-tab-btn active" role="tab" aria-selected="true" data-tab="acute" title="Acute Scalene Triangle (5, 6, 7)" data-caption-html="&lt;strong&gt;X(331) = ISOTOMIC CONJUGATE OF X(219)&lt;/strong&gt; constructed on acute reference triangle &lt;code&gt;(a, b, c) = (5, 6, 7)&lt;/code&gt; with unit baseline &lt;code&gt;AB = 1&lt;/code&gt;.">5, 6, 7</button>
-            <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="right" title="Egyptian Right Triangle (3, 4, 5)" data-caption-html="&lt;strong&gt;X(331) = ISOTOMIC CONJUGATE OF X(219)&lt;/strong&gt; constructed on Egyptian right triangle &lt;code&gt;(a, b, c) = (3, 4, 5)&lt;/code&gt; with unit baseline &lt;code&gt;AB = 1&lt;/code&gt;.">3, 4, 5</button>
-            <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="kepler" title="Kepler Golden Right Triangle (1, √φ, φ)" data-caption-html="&lt;strong&gt;X(331) = ISOTOMIC CONJUGATE OF X(219)&lt;/strong&gt; constructed on Kepler golden right triangle &lt;code&gt;(a, b, c) = (1, √φ, φ)&lt;/code&gt; with unit baseline &lt;code&gt;AB = 1&lt;/code&gt;.">Kepler</button>
-            <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="kimberling" title="Kimberling Obtuse Scalene Triangle (6, 9, 13)" data-caption-html="&lt;strong&gt;X(331) = ISOTOMIC CONJUGATE OF X(219)&lt;/strong&gt; constructed on Kimberling&#x27;s canonical uniqueness test triangle &lt;code&gt;(a, b, c) = (6, 9, 13)&lt;/code&gt; (obtuse scalene, unit baseline &lt;code&gt;AB = 1&lt;/code&gt;).">Kimberling</button>
+            <button type="button" class="etc-tab-btn active" role="tab" aria-selected="true" data-tab="acute" title="Acute Scalene Triangle (5, 6, 7)" data-caption-html="&lt;strong&gt;X(331) = ISOTOMIC CONJUGATE OF X(219)&lt;/strong&gt; constructed on acute reference triangle &lt;code&gt;(a, b, c) = (5, 6, 7)&lt;/code&gt; with unit baseline &lt;span class=&quot;geom-ref geom-segment&quot; data-ref=&quot;[ A B ]&quot;&gt;AB&lt;/span&gt; = &lt;code&gt;1&lt;/code&gt;.">5, 6, 7</button>
+            <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="right" title="Egyptian Right Triangle (3, 4, 5)" data-caption-html="&lt;strong&gt;X(331) = ISOTOMIC CONJUGATE OF X(219)&lt;/strong&gt; constructed on Egyptian right triangle &lt;code&gt;(a, b, c) = (3, 4, 5)&lt;/code&gt; with unit baseline &lt;span class=&quot;geom-ref geom-segment&quot; data-ref=&quot;[ A B ]&quot;&gt;AB&lt;/span&gt; = &lt;code&gt;1&lt;/code&gt;.">3, 4, 5</button>
+            <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="kepler" title="Kepler Golden Right Triangle (1, √φ, φ)" data-caption-html="&lt;strong&gt;X(331) = ISOTOMIC CONJUGATE OF X(219)&lt;/strong&gt; constructed on Kepler golden right triangle &lt;code&gt;(a, b, c) = (1, √φ, φ)&lt;/code&gt; with unit baseline &lt;span class=&quot;geom-ref geom-segment&quot; data-ref=&quot;[ A B ]&quot;&gt;AB&lt;/span&gt; = &lt;code&gt;1&lt;/code&gt;.">Kepler</button>
+            <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="kimberling" title="Kimberling Obtuse Scalene Triangle (6, 9, 13)" data-caption-html="&lt;strong&gt;X(331) = ISOTOMIC CONJUGATE OF X(219)&lt;/strong&gt; constructed on Kimberling&#x27;s canonical uniqueness test triangle &lt;code&gt;(a, b, c) = (6, 9, 13)&lt;/code&gt; (obtuse scalene, unit baseline &lt;span class=&quot;geom-ref geom-segment&quot; data-ref=&quot;[ A B ]&quot;&gt;AB&lt;/span&gt; = &lt;code&gt;1&lt;/code&gt;).">Kimberling</button>
           </div>
         <div class="etc-tab-pane active" data-tab-pane="acute">
         <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.110000 -0.757438 1.220000 0.915000" data-initial-viewbox="-0.110000 -0.757438 1.220000 0.915000" preserveAspectRatio="xMidYMid meet">
@@ -723,9 +723,38 @@
                         el.style.display = 'none';
                     });
                 }
+                if (typeof document !== 'undefined') {
+                    document.querySelectorAll('.geom-highlight-text').forEach(el => {
+                        el.classList.remove('geom-highlight-text');
+                    });
+                }
             }
 
-            function activateHover(id) {
+            function resolveSvgId(rawId) {
+                if (!rawId) return rawId;
+                if (svg.querySelector(`[data-id="${CSS.escape(rawId)}"]`)) return rawId;
+                const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                if (segM) {
+                    const revId = `[ ${segM[2]} ${segM[1]} ]`;
+                    if (svg.querySelector(`[data-id="${CSS.escape(revId)}"]`)) return revId;
+                }
+                const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                if (triM) {
+                    const pts = [triM[1], triM[2], triM[3]];
+                    if (pts.includes('A') && pts.includes('B') && pts.includes('C')) {
+                        return '< A B C >';
+                    }
+                    const secPoly = graphicsGroup ? graphicsGroup.querySelector('polygon.secondary[data-id]') : null;
+                    if (secPoly) {
+                        return secPoly.getAttribute('data-id') || rawId;
+                    }
+                }
+                return rawId;
+            }
+
+            function activateHover(rawId) {
+                if (!rawId) return;
+                const id = resolveSvgId(rawId);
                 if (activeHoveredId === id) return;
                 clearHover();
                 activeHoveredId = id;
@@ -743,12 +772,70 @@
                 }
 
                 // Highlight parent/endpoint points and labels
-                const relatedPts = (info && info.related_points) ? info.related_points : [id];
+                let relatedPts = (info && info.related_points) ? info.related_points : [id];
+                if (!targetEl && relatedPts.length === 1 && relatedPts[0] === id) {
+                    const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                    const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                    if (segM) relatedPts = [segM[1], segM[2]];
+                    else if (triM) relatedPts = [triM[1], triM[2], triM[3]];
+                }
                 relatedPts.forEach(pid => {
                     const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
                     if (ptEl) ptEl.classList.add('hover');
                     const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
                     if (lblEl) lblEl.classList.add('hover-label');
+                });
+
+                if (typeof document !== 'undefined') {
+                    const sel = rawId === id
+                        ? `.geom-ref[data-ref="${CSS.escape(id)}"]`
+                        : `.geom-ref[data-ref="${CSS.escape(rawId)}"], .geom-ref[data-ref="${CSS.escape(id)}"]`;
+                    document.querySelectorAll(sel).forEach(el => {
+                        el.classList.add('geom-highlight-text');
+                    });
+                }
+            }
+
+            svg._etcController.activateHover = activateHover;
+            svg._etcController.clearHover = clearHover;
+
+            if (document.body && document.documentElement.tagName.toLowerCase() === 'html' && document.body.dataset.etcGeomRefSyncInit !== '1') {
+                document.body.dataset.etcGeomRefSyncInit = '1';
+                function getActiveSvg() {
+                    const activePaneSvg = document.querySelector('.etc-tab-pane.active svg.geometor-etc-drawing');
+                    if (activePaneSvg && activePaneSvg._etcController) return activePaneSvg;
+                    const anySvg = document.querySelector('svg.geometor-etc-drawing');
+                    return (anySvg && anySvg._etcController) ? anySvg : null;
+                }
+                document.body.addEventListener('mouseover', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref]');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.activateHover) {
+                            activeSvg._etcController.activateHover(geomEl.getAttribute('data-ref'));
+                        }
+                        return;
+                    }
+                    const refLink = e.target.closest('a.reference.internal');
+                    if (refLink) {
+                        const txt = (refLink.textContent || '').trim();
+                        const xm = txt.match(/^X\((\d+)\)$/);
+                        if (xm) {
+                            const activeSvg = getActiveSvg();
+                            if (activeSvg && activeSvg._etcController.activateHover) {
+                                activeSvg._etcController.activateHover(`X(${xm[1]})`);
+                            }
+                        }
+                    }
+                });
+                document.body.addEventListener('mouseout', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref], a.reference.internal');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.clearHover) {
+                            activeSvg._etcController.clearHover();
+                        }
+                    }
                 });
             }
 
@@ -1453,9 +1540,38 @@
                         el.style.display = 'none';
                     });
                 }
+                if (typeof document !== 'undefined') {
+                    document.querySelectorAll('.geom-highlight-text').forEach(el => {
+                        el.classList.remove('geom-highlight-text');
+                    });
+                }
             }
 
-            function activateHover(id) {
+            function resolveSvgId(rawId) {
+                if (!rawId) return rawId;
+                if (svg.querySelector(`[data-id="${CSS.escape(rawId)}"]`)) return rawId;
+                const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                if (segM) {
+                    const revId = `[ ${segM[2]} ${segM[1]} ]`;
+                    if (svg.querySelector(`[data-id="${CSS.escape(revId)}"]`)) return revId;
+                }
+                const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                if (triM) {
+                    const pts = [triM[1], triM[2], triM[3]];
+                    if (pts.includes('A') && pts.includes('B') && pts.includes('C')) {
+                        return '< A B C >';
+                    }
+                    const secPoly = graphicsGroup ? graphicsGroup.querySelector('polygon.secondary[data-id]') : null;
+                    if (secPoly) {
+                        return secPoly.getAttribute('data-id') || rawId;
+                    }
+                }
+                return rawId;
+            }
+
+            function activateHover(rawId) {
+                if (!rawId) return;
+                const id = resolveSvgId(rawId);
                 if (activeHoveredId === id) return;
                 clearHover();
                 activeHoveredId = id;
@@ -1473,12 +1589,70 @@
                 }
 
                 // Highlight parent/endpoint points and labels
-                const relatedPts = (info && info.related_points) ? info.related_points : [id];
+                let relatedPts = (info && info.related_points) ? info.related_points : [id];
+                if (!targetEl && relatedPts.length === 1 && relatedPts[0] === id) {
+                    const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                    const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                    if (segM) relatedPts = [segM[1], segM[2]];
+                    else if (triM) relatedPts = [triM[1], triM[2], triM[3]];
+                }
                 relatedPts.forEach(pid => {
                     const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
                     if (ptEl) ptEl.classList.add('hover');
                     const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
                     if (lblEl) lblEl.classList.add('hover-label');
+                });
+
+                if (typeof document !== 'undefined') {
+                    const sel = rawId === id
+                        ? `.geom-ref[data-ref="${CSS.escape(id)}"]`
+                        : `.geom-ref[data-ref="${CSS.escape(rawId)}"], .geom-ref[data-ref="${CSS.escape(id)}"]`;
+                    document.querySelectorAll(sel).forEach(el => {
+                        el.classList.add('geom-highlight-text');
+                    });
+                }
+            }
+
+            svg._etcController.activateHover = activateHover;
+            svg._etcController.clearHover = clearHover;
+
+            if (document.body && document.documentElement.tagName.toLowerCase() === 'html' && document.body.dataset.etcGeomRefSyncInit !== '1') {
+                document.body.dataset.etcGeomRefSyncInit = '1';
+                function getActiveSvg() {
+                    const activePaneSvg = document.querySelector('.etc-tab-pane.active svg.geometor-etc-drawing');
+                    if (activePaneSvg && activePaneSvg._etcController) return activePaneSvg;
+                    const anySvg = document.querySelector('svg.geometor-etc-drawing');
+                    return (anySvg && anySvg._etcController) ? anySvg : null;
+                }
+                document.body.addEventListener('mouseover', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref]');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.activateHover) {
+                            activeSvg._etcController.activateHover(geomEl.getAttribute('data-ref'));
+                        }
+                        return;
+                    }
+                    const refLink = e.target.closest('a.reference.internal');
+                    if (refLink) {
+                        const txt = (refLink.textContent || '').trim();
+                        const xm = txt.match(/^X\((\d+)\)$/);
+                        if (xm) {
+                            const activeSvg = getActiveSvg();
+                            if (activeSvg && activeSvg._etcController.activateHover) {
+                                activeSvg._etcController.activateHover(`X(${xm[1]})`);
+                            }
+                        }
+                    }
+                });
+                document.body.addEventListener('mouseout', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref], a.reference.internal');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.clearHover) {
+                            activeSvg._etcController.clearHover();
+                        }
+                    }
                 });
             }
 
@@ -2183,9 +2357,38 @@
                         el.style.display = 'none';
                     });
                 }
+                if (typeof document !== 'undefined') {
+                    document.querySelectorAll('.geom-highlight-text').forEach(el => {
+                        el.classList.remove('geom-highlight-text');
+                    });
+                }
             }
 
-            function activateHover(id) {
+            function resolveSvgId(rawId) {
+                if (!rawId) return rawId;
+                if (svg.querySelector(`[data-id="${CSS.escape(rawId)}"]`)) return rawId;
+                const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                if (segM) {
+                    const revId = `[ ${segM[2]} ${segM[1]} ]`;
+                    if (svg.querySelector(`[data-id="${CSS.escape(revId)}"]`)) return revId;
+                }
+                const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                if (triM) {
+                    const pts = [triM[1], triM[2], triM[3]];
+                    if (pts.includes('A') && pts.includes('B') && pts.includes('C')) {
+                        return '< A B C >';
+                    }
+                    const secPoly = graphicsGroup ? graphicsGroup.querySelector('polygon.secondary[data-id]') : null;
+                    if (secPoly) {
+                        return secPoly.getAttribute('data-id') || rawId;
+                    }
+                }
+                return rawId;
+            }
+
+            function activateHover(rawId) {
+                if (!rawId) return;
+                const id = resolveSvgId(rawId);
                 if (activeHoveredId === id) return;
                 clearHover();
                 activeHoveredId = id;
@@ -2203,12 +2406,70 @@
                 }
 
                 // Highlight parent/endpoint points and labels
-                const relatedPts = (info && info.related_points) ? info.related_points : [id];
+                let relatedPts = (info && info.related_points) ? info.related_points : [id];
+                if (!targetEl && relatedPts.length === 1 && relatedPts[0] === id) {
+                    const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                    const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                    if (segM) relatedPts = [segM[1], segM[2]];
+                    else if (triM) relatedPts = [triM[1], triM[2], triM[3]];
+                }
                 relatedPts.forEach(pid => {
                     const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
                     if (ptEl) ptEl.classList.add('hover');
                     const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
                     if (lblEl) lblEl.classList.add('hover-label');
+                });
+
+                if (typeof document !== 'undefined') {
+                    const sel = rawId === id
+                        ? `.geom-ref[data-ref="${CSS.escape(id)}"]`
+                        : `.geom-ref[data-ref="${CSS.escape(rawId)}"], .geom-ref[data-ref="${CSS.escape(id)}"]`;
+                    document.querySelectorAll(sel).forEach(el => {
+                        el.classList.add('geom-highlight-text');
+                    });
+                }
+            }
+
+            svg._etcController.activateHover = activateHover;
+            svg._etcController.clearHover = clearHover;
+
+            if (document.body && document.documentElement.tagName.toLowerCase() === 'html' && document.body.dataset.etcGeomRefSyncInit !== '1') {
+                document.body.dataset.etcGeomRefSyncInit = '1';
+                function getActiveSvg() {
+                    const activePaneSvg = document.querySelector('.etc-tab-pane.active svg.geometor-etc-drawing');
+                    if (activePaneSvg && activePaneSvg._etcController) return activePaneSvg;
+                    const anySvg = document.querySelector('svg.geometor-etc-drawing');
+                    return (anySvg && anySvg._etcController) ? anySvg : null;
+                }
+                document.body.addEventListener('mouseover', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref]');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.activateHover) {
+                            activeSvg._etcController.activateHover(geomEl.getAttribute('data-ref'));
+                        }
+                        return;
+                    }
+                    const refLink = e.target.closest('a.reference.internal');
+                    if (refLink) {
+                        const txt = (refLink.textContent || '').trim();
+                        const xm = txt.match(/^X\((\d+)\)$/);
+                        if (xm) {
+                            const activeSvg = getActiveSvg();
+                            if (activeSvg && activeSvg._etcController.activateHover) {
+                                activeSvg._etcController.activateHover(`X(${xm[1]})`);
+                            }
+                        }
+                    }
+                });
+                document.body.addEventListener('mouseout', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref], a.reference.internal');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.clearHover) {
+                            activeSvg._etcController.clearHover();
+                        }
+                    }
                 });
             }
 
@@ -2910,9 +3171,38 @@
                         el.style.display = 'none';
                     });
                 }
+                if (typeof document !== 'undefined') {
+                    document.querySelectorAll('.geom-highlight-text').forEach(el => {
+                        el.classList.remove('geom-highlight-text');
+                    });
+                }
             }
 
-            function activateHover(id) {
+            function resolveSvgId(rawId) {
+                if (!rawId) return rawId;
+                if (svg.querySelector(`[data-id="${CSS.escape(rawId)}"]`)) return rawId;
+                const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                if (segM) {
+                    const revId = `[ ${segM[2]} ${segM[1]} ]`;
+                    if (svg.querySelector(`[data-id="${CSS.escape(revId)}"]`)) return revId;
+                }
+                const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                if (triM) {
+                    const pts = [triM[1], triM[2], triM[3]];
+                    if (pts.includes('A') && pts.includes('B') && pts.includes('C')) {
+                        return '< A B C >';
+                    }
+                    const secPoly = graphicsGroup ? graphicsGroup.querySelector('polygon.secondary[data-id]') : null;
+                    if (secPoly) {
+                        return secPoly.getAttribute('data-id') || rawId;
+                    }
+                }
+                return rawId;
+            }
+
+            function activateHover(rawId) {
+                if (!rawId) return;
+                const id = resolveSvgId(rawId);
                 if (activeHoveredId === id) return;
                 clearHover();
                 activeHoveredId = id;
@@ -2930,12 +3220,70 @@
                 }
 
                 // Highlight parent/endpoint points and labels
-                const relatedPts = (info && info.related_points) ? info.related_points : [id];
+                let relatedPts = (info && info.related_points) ? info.related_points : [id];
+                if (!targetEl && relatedPts.length === 1 && relatedPts[0] === id) {
+                    const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                    const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                    if (segM) relatedPts = [segM[1], segM[2]];
+                    else if (triM) relatedPts = [triM[1], triM[2], triM[3]];
+                }
                 relatedPts.forEach(pid => {
                     const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
                     if (ptEl) ptEl.classList.add('hover');
                     const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
                     if (lblEl) lblEl.classList.add('hover-label');
+                });
+
+                if (typeof document !== 'undefined') {
+                    const sel = rawId === id
+                        ? `.geom-ref[data-ref="${CSS.escape(id)}"]`
+                        : `.geom-ref[data-ref="${CSS.escape(rawId)}"], .geom-ref[data-ref="${CSS.escape(id)}"]`;
+                    document.querySelectorAll(sel).forEach(el => {
+                        el.classList.add('geom-highlight-text');
+                    });
+                }
+            }
+
+            svg._etcController.activateHover = activateHover;
+            svg._etcController.clearHover = clearHover;
+
+            if (document.body && document.documentElement.tagName.toLowerCase() === 'html' && document.body.dataset.etcGeomRefSyncInit !== '1') {
+                document.body.dataset.etcGeomRefSyncInit = '1';
+                function getActiveSvg() {
+                    const activePaneSvg = document.querySelector('.etc-tab-pane.active svg.geometor-etc-drawing');
+                    if (activePaneSvg && activePaneSvg._etcController) return activePaneSvg;
+                    const anySvg = document.querySelector('svg.geometor-etc-drawing');
+                    return (anySvg && anySvg._etcController) ? anySvg : null;
+                }
+                document.body.addEventListener('mouseover', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref]');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.activateHover) {
+                            activeSvg._etcController.activateHover(geomEl.getAttribute('data-ref'));
+                        }
+                        return;
+                    }
+                    const refLink = e.target.closest('a.reference.internal');
+                    if (refLink) {
+                        const txt = (refLink.textContent || '').trim();
+                        const xm = txt.match(/^X\((\d+)\)$/);
+                        if (xm) {
+                            const activeSvg = getActiveSvg();
+                            if (activeSvg && activeSvg._etcController.activateHover) {
+                                activeSvg._etcController.activateHover(`X(${xm[1]})`);
+                            }
+                        }
+                    }
+                });
+                document.body.addEventListener('mouseout', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref], a.reference.internal');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.clearHover) {
+                            activeSvg._etcController.clearHover();
+                        }
+                    }
                 });
             }
 
@@ -3021,18 +3369,24 @@
         </div>
         </div>
         <figcaption>
-        <p><span class="caption-text"><strong>X(331) = ISOTOMIC CONJUGATE OF X(219)</strong> constructed on acute reference triangle <span class="math notranslate nohighlight">\((a, b, c) = (5, 6, 7)\)</span> with unit baseline <span class="math notranslate nohighlight">\(AB = 1\)</span>.</span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+        <p><span class="caption-text"><strong>X(331) = ISOTOMIC CONJUGATE OF X(219)</strong> constructed on acute reference triangle <span class="math notranslate nohighlight">\((a, b, c) = (5, 6, 7)\)</span> with unit baseline <span class="geom-ref" data-ref="[ A B ]" title="[ A B ]">AB</span> = <span class="math notranslate nohighlight">\(1\)</span>.</span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
         </figcaption>
         </figure>
         <div class="geom-signature geom-signature-center">
         <div class="line-block">
-        <div class="line"><strong>Trilinears:</strong> <span class="math notranslate nohighlight">\(\sec^{2}(A/2) \csc(2A) : \sec^{2}(B/2) \csc(2B) : \sec^{2}(C/2) \csc(2C), = (1 - \sec A)\csc(A - \omega ) : (1 - \sec B)\csc(B - \omega ) : (1 - \sec C)\csc(C - \omega )\)</span></div>
+        <div class="line"><strong>Trilinears:</strong> <span class="math notranslate nohighlight">\(\sec^{2}(A/2) \csc(2A) : \sec^{2}(B/2) \csc(2B) : \sec^{2}(C/2) \csc(2C)\)</span></div>
+        <div class="line"><strong>Barycentrics:</strong> <span class="math notranslate nohighlight">\(\sec^{2}(A/2) \sec A : \sec^{2}(B/2) \sec B : \sec^{2}(C/2) \sec C\)</span></div>
         <div class="line"><strong>Search Value (6, 9, 13):</strong> <span class="math notranslate nohighlight">\(-1.648176523381\)</span></div>
         </div>
         </div>
-        <div class="note-item docutils container">
-        <p><a class="reference internal" href="#x-331" title="X(331): X(331) is the Brianchon point (perspector) of the inconic that is the polar conjugate of the isogonal conjugate of the incircle. (Randy Hutson, October 15, 2018)"><span class="std std-ref">X(331)</span></a> lies.</p>
+        <details class="book-collapse">
+        <summary class="book-collapse-summary"><span class="book-collapse-title"><span class="collapse-icon">▸</span> Alternate Coordinates</span><span class="book-collapse-badge">1 form</span></summary>
+        <div class="book-collapse-body">
+        <ul class="simple">
+        <li><p><strong>Trilinears:</strong> <span class="math notranslate nohighlight">\((1 - \sec A)\csc(A - \omega ) : (1 - \sec B)\csc(B - \omega ) : (1 - \sec C)\csc(C - \omega )\)</span></p></li>
+        </ul>
         </div>
+        </details>
         <details class="book-collapse line-catalog">
         <summary class="book-collapse-summary"><span class="book-collapse-title"><span class="collapse-icon">▸</span> Incident Central Lines</span><span class="book-collapse-badge">7 lines</span></summary>
         <div class="book-collapse-body">
@@ -3046,22 +3400,16 @@
         <li><p><a class="reference internal" href="#x-331" title="X(331): X(331) is the Brianchon point (perspector) of the inconic that is the polar conjugate of the isogonal conjugate of the incircle. (Randy Hutson, October 15, 2018)"><span class="std std-ref">X(331)</span></a> = isogonal conjugate of polar conjugate of <a class="term-ref glossary-term" id="occ-term-isotomic-conjugate-1" href="../../glossary.html#term-isotomic-conjugate" data-term="isotomic-conjugate" title="isotomic conjugate: Let P = p : q : r be a point not on a sideline of ABC. Let A&#x27;, B&#x27;, C&#x27; be the points where lines AP, BP, CP meet lines BC, CA, AB, respectively. Reflect A&#x27;, B&#x27;, C&#x27; about the midpoints of sides BC, CA, AB, respectively, to obtain points A&quot;, B&quot;, C&quot;. Then lines AA&quot;, BB&quot;, CC&quot; concur in the isotomic conjugate of P, which has trilinears 1/(pa 2 ) : 1/(qb 2 ) :...">isotomic conjugate</a> of X(6056)</p></li>
         <li><p><a class="reference internal" href="#x-331" title="X(331): X(331) is the Brianchon point (perspector) of the inconic that is the polar conjugate of the isogonal conjugate of the incircle. (Randy Hutson, October 15, 2018)"><span class="std std-ref">X(331)</span></a> = isotomic conjugate of <a class="reference internal" href="../x-00219/index.html#x-219" title="X(219): Let A'B'C' be the extouch triangle. Let A″ be the barycentric product of the circumcircle intercepts of line B'C', and define B″ and C″ cyclically. The lines A'A″, B'B″, C'C″…"><span class="std std-ref">X(219)</span></a></p></li>
         <li><p><a class="reference internal" href="#x-331" title="X(331): X(331) is the Brianchon point (perspector) of the inconic that is the polar conjugate of the isogonal conjugate of the incircle. (Randy Hutson, October 15, 2018)"><span class="std std-ref">X(331)</span></a> = <a class="term-ref glossary-term" id="occ-term-cevapoint-1" href="../../glossary.html#term-cevapoint" data-term="cevapoint" title="cevapoint: Let P = p : q : r and U = u : v : w be distinct points, neither lying on a sideline of ABC. The cevapoint of P and U is the point Let A&quot;B&quot;C&quot; be the anticevian triangle of U. Let A&#x27; =PA&quot;∩BC, and define B&#x27; and C&#x27; cyclically. The cevapoint of P and U is the perspector, X, of triangles ABC and A&#x27;B&#x27;C&#x27;. Moreover, P is the X-Ceva conjugate of U, and U is the...">cevapoint</a> of X(i) and X(j) for these (i,j): (<a class="reference internal" href="../x-00007/index.html#x-7"><span class="std std-ref">7</span></a>, <a class="reference internal" href="../x-00278/index.html#x-278"><span class="std std-ref">278</span></a>), (<a class="reference internal" href="../x-00092/index.html#x-92"><span class="std std-ref">92</span></a>, <a class="reference internal" href="../x-00273/index.html#x-273"><span class="std std-ref">273</span></a>)</p></li>
-        <li><p><a class="reference internal" href="#x-331" title="X(331): X(331) is the Brianchon point (perspector) of the inconic that is the polar conjugate of the isogonal conjugate of the incircle. (Randy Hutson, October 15, 2018)"><span class="std std-ref">X(331)</span></a> = <a class="reference internal" href="../x-00092/index.html#x-92" title="X(92): Suppose that T = A'B'C' is a central triangle. Let A'' be the pole with respect to the polar circle of the line B'C', and define B'' and C'' cyclically. The appearance of T in the…"><span class="std std-ref">X(92)</span></a>-<a class="term-ref glossary-term" id="occ-term-cross-conjugate-1" href="../../glossary.html#term-cross-conjugate" data-term="cross-conjugate" title="cross conjugate: Let P = p : q : r and U = u : v : w be distinct points, neither lying on a sideline of ABC. The P-cross conjugate of U is the point Let A&#x27;B&#x27;C&#x27; be the cevian triangle of U. Let A&quot; be where line PA&#x27; crosses line B&#x27;C&#x27;, and define B&quot; and C&quot; cyclically - so that A&quot;B&quot;C&quot; is the cevian triangle (in triangle A&#x27;B&#x27;C&#x27;, not ABC) of P. The perspector of triangles ABC...">cross conjugate</a> of <a class="reference internal" href="../x-00264/index.html#x-264" title="X(264): Let A' be the trilinear product of the vertices of the A-anti-altimedial triangle, and define B' and C' cyclically. The lines AA', BB', CC' concur in X(264). (Randy Hutson…"><span class="std std-ref">X(264)</span></a></p></li>
+        <li><p><a class="reference internal" href="#x-331" title="X(331): X(331) is the Brianchon point (perspector) of the inconic that is the polar conjugate of the isogonal conjugate of the incircle. (Randy Hutson, October 15, 2018)"><span class="std std-ref">X(331)</span></a> = <a class="reference internal" href="../x-00092/index.html#x-92" title="X(92): Suppose that T = A'B'C' is a central triangle. Let A″ be the pole with respect to the polar circle of the line B'C', and define B″ and C″ cyclically. The appearance of T in the…"><span class="std std-ref">X(92)</span></a>-<a class="term-ref glossary-term" id="occ-term-cross-conjugate-1" href="../../glossary.html#term-cross-conjugate" data-term="cross-conjugate" title="cross conjugate: Let P = p : q : r and U = u : v : w be distinct points, neither lying on a sideline of ABC. The P-cross conjugate of U is the point Let A&#x27;B&#x27;C&#x27; be the cevian triangle of U. Let A&quot; be where line PA&#x27; crosses line B&#x27;C&#x27;, and define B&quot; and C&quot; cyclically - so that A&quot;B&quot;C&quot; is the cevian triangle (in triangle A&#x27;B&#x27;C&#x27;, not ABC) of P. The perspector of triangles ABC...">cross conjugate</a> of <a class="reference internal" href="../x-00264/index.html#x-264" title="X(264): Let A' be the trilinear product of the vertices of the A-anti-altimedial triangle, and define B' and C' cyclically. The lines AA', BB', CC' concur in X(264). (Randy Hutson…"><span class="std std-ref">X(264)</span></a></p></li>
         <li><p><a class="reference internal" href="#x-331" title="X(331): X(331) is the Brianchon point (perspector) of the inconic that is the polar conjugate of the isogonal conjugate of the incircle. (Randy Hutson, October 15, 2018)"><span class="std std-ref">X(331)</span></a> = <a class="reference internal" href="../x-00019/index.html#x-19" title="X(19): X(19) is the homothetic center of the orthic and extangents triangles. The Ayme triangle, constructed at X(3610), is perspective to ABC with perspector X(19)."><span class="std std-ref">X(19)</span></a>-<a class="term-ref glossary-term" id="occ-term-isoconjugate-1" href="../../glossary.html#term-isoconjugate" data-term="isoconjugate" title="isoconjugate: Let P = p : q : r and U = u : v : w be points, neither on a sideline of ABC. The P-isoconjugate of U is the point Examples: the isogonal conjugate of U is the X(1)-isoconjugate of U, and the isotomic conjugate of U is the X(31)-isoconjugate of U. As suggested by the meaning of the prefix &quot;iso&quot;, P-isoconjugate of U = U-isoconjugate of P. Let A&#x27;B&#x27;C&#x27; be the...">isoconjugate</a> of X(6056)</p></li>
-        <li><p><a class="reference internal" href="#x-331" title="X(331): X(331) is the Brianchon point (perspector) of the inconic that is the polar conjugate of the isogonal conjugate of the incircle. (Randy Hutson, October 15, 2018)"><span class="std std-ref">X(331)</span></a> = <a class="term-ref glossary-term" id="occ-term-trilinear-pole-1" href="../../glossary.html#term-trilinear-pole" data-term="trilinear-pole" title="trilinear pole: The trilinear pole of the line ux + vy + wz = 0 is the point wv : uw : uv. Geometrically, the trilinear pole of a line PU is the perspector of ABC and the vertex-triangle of the anticevian triangles of P and U. (Randy Hutson, April 9, 2016)">trilinear pole</a> of polar of <a class="reference internal" href="../x-00055/index.html#x-55" title="X(55): Let A', B', C' be the second points of intersection of the angle bisectors of triangle ABC with its incircle. Let Oa be the circle externally tangent to the incircle at A', and…"><span class="std std-ref">X(55)</span></a> wrt polar circle</p></li>
-        <li><p><a class="reference internal" href="#x-331" title="X(331): X(331) is the Brianchon point (perspector) of the inconic that is the polar conjugate of the isogonal conjugate of the incircle. (Randy Hutson, October 15, 2018)"><span class="std std-ref">X(331)</span></a> = pole wrt polar circle of <a class="term-ref glossary-term" id="occ-term-trilinear-polar-1" href="../../glossary.html#term-trilinear-polar" data-term="trilinear-polar" title="trilinear polar: The trilinear polar of a point p : q : r is the line">trilinear polar</a> of <a class="reference internal" href="../x-00055/index.html#x-55" title="X(55): Let A', B', C' be the second points of intersection of the angle bisectors of triangle ABC with its incircle. Let Oa be the circle externally tangent to the incircle at A', and…"><span class="std std-ref">X(55)</span></a> (line <a class="reference internal" href="../x-00657/index.html#x-657" title="X(657): X(657) = midpoint of X(4130) and X(4827)"><span class="std std-ref">X(657)</span></a><a class="reference internal" href="../x-00663/index.html#x-663" title="X(663): X(663) = isogonal conjugate of X(664)"><span class="std std-ref">X(663)</span></a>)</p></li>
-        <li><p><a class="reference internal" href="#x-331" title="X(331): X(331) is the Brianchon point (perspector) of the inconic that is the polar conjugate of the isogonal conjugate of the incircle. (Randy Hutson, October 15, 2018)"><span class="std std-ref">X(331)</span></a> = polar conjugate of <a class="reference internal" href="../x-00055/index.html#x-55" title="X(55): Let A', B', C' be the second points of intersection of the angle bisectors of triangle ABC with its incircle. Let Oa be the circle externally tangent to the incircle at A', and…"><span class="std std-ref">X(55)</span></a></p></li>
+        <li><p><a class="reference internal" href="#x-331" title="X(331): X(331) is the Brianchon point (perspector) of the inconic that is the polar conjugate of the isogonal conjugate of the incircle. (Randy Hutson, October 15, 2018)"><span class="std std-ref">X(331)</span></a> = <a class="term-ref glossary-term" id="occ-term-trilinear-pole-1" href="../../glossary.html#term-trilinear-pole" data-term="trilinear-pole" title="trilinear pole: The trilinear pole of the line ux + vy + wz = 0 is the point wv : uw : uv. Geometrically, the trilinear pole of a line PU is the perspector of ABC and the vertex-triangle of the anticevian triangles of P and U. (Randy Hutson, April 9, 2016)">trilinear pole</a> of polar of <a class="reference internal" href="../x-00055/index.html#x-55" title="X(55): Let A', B', C' be the second points of intersection of the angle bisectors of triangle ABC with its incircle. Let O_{a} be the circle externally tangent to the incircle at A', and…"><span class="std std-ref">X(55)</span></a> wrt polar circle</p></li>
+        <li><p><a class="reference internal" href="#x-331" title="X(331): X(331) is the Brianchon point (perspector) of the inconic that is the polar conjugate of the isogonal conjugate of the incircle. (Randy Hutson, October 15, 2018)"><span class="std std-ref">X(331)</span></a> = pole wrt polar circle of <a class="term-ref glossary-term" id="occ-term-trilinear-polar-1" href="../../glossary.html#term-trilinear-polar" data-term="trilinear-polar" title="trilinear polar: The trilinear polar of a point p : q : r is the line">trilinear polar</a> of <a class="reference internal" href="../x-00055/index.html#x-55" title="X(55): Let A', B', C' be the second points of intersection of the angle bisectors of triangle ABC with its incircle. Let O_{a} be the circle externally tangent to the incircle at A', and…"><span class="std std-ref">X(55)</span></a> (line <a class="reference internal" href="../x-00657/index.html#x-657" title="X(657): X(657) = midpoint of X(4130) and X(4827)"><span class="std std-ref">X(657)</span></a><a class="reference internal" href="../x-00663/index.html#x-663" title="X(663): X(663) = isogonal conjugate of X(664)"><span class="std std-ref">X(663)</span></a>)</p></li>
+        <li><p><a class="reference internal" href="#x-331" title="X(331): X(331) is the Brianchon point (perspector) of the inconic that is the polar conjugate of the isogonal conjugate of the incircle. (Randy Hutson, October 15, 2018)"><span class="std std-ref">X(331)</span></a> = polar conjugate of <a class="reference internal" href="../x-00055/index.html#x-55" title="X(55): Let A', B', C' be the second points of intersection of the angle bisectors of triangle ABC with its incircle. Let O_{a} be the circle externally tangent to the incircle at A', and…"><span class="std std-ref">X(55)</span></a></p></li>
         </ul>
         </div>
         </details>
-        <section class="level-2" id="notes">
-        <h2>Notes<a class="headerlink" href="#notes" title="Link to this heading">¶</a></h2>
-        <div class="note-item docutils container">
-        <p>Barycentrics sec<sup>2</sup>(A/2) sec A : sec<sup>2</sup>(B/2) sec B : sec<sup>2</sup>(C/2) sec C</p>
-        </div>
         <div class="toctree-wrapper compound">
         </div>
-        </section>
         </section>
 
       </div>
@@ -3150,7 +3498,7 @@
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=360bc84d"></script>
+  <script src="../../_static/documentation_options.js?v=fd825880"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>

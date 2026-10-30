@@ -10,13 +10,13 @@ X(427) = COMPLEMENT OF X(22)
 
 .. enunciation::
 
-   Let L\ :sub:`A` be the line tangent to the nine-point circle at the midpoint of segment BC, and define L\ :sub:`B` and L\ :sub:`C` cyclically. The triangle formed by the lines L\ :sub:`A`, L\ :sub:`B`, L\ :sub:`C` is homothetic to the :term:`orthic triangle <orthic-triangle>`, and the center of homothety is :ref:`X(427) <X(427)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   Let :g:`L_{A} <L_A>` be the line tangent to the nine-point circle at the midpoint of segment :g:`BC <[ B C ]>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. The triangle formed by the lines :g:`L_{A} <L_A>`, :g:`L_{B} <L_B>`, :g:`L_{C} <L_C>` is homothetic to the :term:`orthic triangle <orthic-triangle>`, and the center of homothety is :ref:`X(427) <X(427)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. figure:: x-00427.svg
    :alt: X(427) = COMPLEMENT OF X(22)
    :align: center
 
-   **X(427) = COMPLEMENT OF X(22)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(427) = COMPLEMENT OF X(22)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,12 +27,12 @@ X(427) = COMPLEMENT OF X(22)
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`(a^2 + b^2 - c^2)*(a^2 - b^2 + c^2)*(b^2 + c^2) : :`
+   * **Barycentrics:** :math:`(a^{2} + b^{2} - c^{2}) \cdot (a^{2} - b^{2} + c^{2}) \cdot (b^{2} + c^{2}) : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(427) <X(427)>` = 3 :ref:`X(2) <X(2)>` + X(7391), 9 :ref:`X(2) <X(2)>` - X(20062), :ref:`X(2) <X(2)>` + 3 X(31105), 3 :ref:`X(2) <X(2)>` - 5 X(31236), 5 :ref:`X(2) <X(2)>` - 3 X(47596), 3 :ref:`X(4) <X(4)>` - X(35480), 3 :ref:`X(4) <X(4)>` + X(35481), 3 :ref:`X(5) <X(5)>` - 4 X(13413), and many others
+   * :ref:`X(427) <X(427)>` = :math:`3` :ref:`X(2) <X(2)>` + X(7391), :math:`9` :ref:`X(2) <X(2)>` - X(20062), :ref:`X(2) <X(2)>` + :math:`3` X(31105), :math:`3` :ref:`X(2) <X(2)>` - :math:`5` X(31236), :math:`5` :ref:`X(2) <X(2)>` - :math:`3` X(47596), :math:`3` :ref:`X(4) <X(4)>` - X(35480), :math:`3` :ref:`X(4) <X(4)>` + X(35481), :math:`3` :ref:`X(5) <X(5)>` - :math:`4` X(13413), and many others
 
 .. container:: note-item
 
@@ -84,8 +84,8 @@ X(427) = COMPLEMENT OF X(22)
    * :ref:`X(427) <X(427)>` = :term:`crossdifference <crossdifference>` of every pair of points on line {647, 8673}
    * :ref:`X(427) <X(427)>` = :ref:`X(2) <X(2)>`-:term:`line conjugate <line-conjugate>` of X(44894)
    * :ref:`X(427) <X(427)>` = :ref:`X(4) <X(4)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(420) <X(420)>`
-   * :ref:`X(427) <X(427)>` = :ref:`X(55) <X(55)>` of orthic triangle if ABC is acute
-   * :ref:`X(427) <X(427)>` = exsimilicenter of nine-point circle and incircle of orthic triangle if ABC is acute; the insimilicenter is :ref:`X(235) <X(235)>`
+   * :ref:`X(427) <X(427)>` = :ref:`X(55) <X(55)>` of orthic triangle if :g:`ABC << A B C >>` is acute
+   * :ref:`X(427) <X(427)>` = exsimilicenter of nine-point circle and incircle of orthic triangle if :g:`ABC << A B C >>` is acute; the insimilicenter is :ref:`X(235) <X(235)>`
    * :ref:`X(427) <X(427)>` = intersection of tangents to nine-point circle at PU(4)
    * :ref:`X(427) <X(427)>` = pole of orthic axis wrt the nine-point circle
    * :ref:`X(427) <X(427)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(83) <X(83)>` (line :ref:`X(23) <X(23)>`\ \ :ref:`X(385) <X(385)>`)
@@ -95,13 +95,13 @@ X(427) = COMPLEMENT OF X(22)
    * :ref:`X(427) <X(427)>` = perspector of orthic and 5th Euler triangles
    * :ref:`X(427) <X(427)>` = :term:`radical trace <radical-trace>` of anticomplementary circle and tangential circle
    * :ref:`X(427) <X(427)>` = homothetic center of the :term:`medial triangle <medial-triangle>` and the 2nd :term:`pedal triangle <pedal-triangle>` of :ref:`X(4) <X(4)>`
-   * :ref:`X(427) <X(427)>` = perspector of 4th Brocard triangle and cross-triangle of ABC and 4th Brocard triangle
-   * :ref:`X(427) <X(427)>` = perspector of ABC and cross-triangle of ABC and 5th Euler triangle
+   * :ref:`X(427) <X(427)>` = perspector of 4th Brocard triangle and cross-triangle of :g:`ABC << A B C >>` and 4th Brocard triangle
+   * :ref:`X(427) <X(427)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and 5th Euler triangle
    * :ref:`X(427) <X(427)>` = harmonic center of nine-point circle and circle O(PU(4))
    * :ref:`X(427) <X(427)>` = orthic-isogonal conjugate of X(1843)
    * :ref:`X(427) <X(427)>` = intersection of tangents to Hatzipolakis-Lozada hyperbola at :ref:`X(4) <X(4)>` and :ref:`X(6) <X(6)>`
    * :ref:`X(427) <X(427)>` = crosspoint, wrt orthic triangle, of :ref:`X(4) <X(4)>` and :ref:`X(6) <X(6)>`
-   * :ref:`X(427) <X(427)>` = excentral-to-ABC :term:`functional image <functional-image>` of :ref:`X(56) <X(56)>`
+   * :ref:`X(427) <X(427)>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X(56) <X(56)>`
    * :ref:`X(427) <X(427)>` = intersection of tangents to Walsmith rectangular hyperbola at :ref:`X(113) <X(113)>` and :ref:`X(125) <X(125)>`
    * :ref:`X(427) <X(427)>` = barycentric product X(i)\*X(j) for these {i,j}: {:ref:`1 <X(1)>`, 20883}, {:ref:`4 <X(4)>`, :ref:`141 <X(141)>`}, {:ref:`6 <X(6)>`, 1235}, {:ref:`10 <X(10)>`, 17171}, {:ref:`19 <X(19)>`, 1930}, {:ref:`25 <X(25)>`, 8024}, {:ref:`27 <X(27)>`, 15523}, {:ref:`37 <X(37)>`, 16747}, {:ref:`38 <X(38)>`, :ref:`92 <X(92)>`}, {:ref:`39 <X(39)>`, :ref:`264 <X(264)>`}, {:ref:`69 <X(69)>`, 27376}, {:ref:`75 <X(75)>`, 17442}, {:ref:`76 <X(76)>`, 1843}, {:ref:`86 <X(86)>`, 21016}, {:ref:`95 <X(95)>`, 27371}, {:ref:`107 <X(107)>`, 2525}, {:ref:`112 <X(112)>`, 23285}, {:ref:`190 <X(190)>`, 21108}, {:ref:`193 <X(193)>`, 47730}, {:ref:`273 <X(273)>`, 33299}, {:ref:`278 <X(278)>`, 3703}, {:ref:`281 <X(281)>`, 3665}, {:ref:`286 <X(286)>`, 3954}, {:ref:`297 <X(297)>`, 20021}, {:ref:`324 <X(324)>`, 16030}, {:ref:`331 <X(331)>`, 3688}, {:ref:`343 <X(343)>`, 19174}, {:ref:`393 <X(393)>`, 3933}, {:ref:`420 <X(420)>`, 17949}, {:ref:`468 <X(468)>`, 31125}, {:ref:`523 <X(523)>`, 41676}, {:ref:`525 <X(525)>`, 46151}, {:ref:`648 <X(648)>`, :ref:`826 <X(826)>`}, {:ref:`653 <X(653)>`, 48278}, {:ref:`811 <X(811)>`, 8061}, {:ref:`850 <X(850)>`, 35325}, {1289, 23881}, {1401, 7017}, {1502, 27369}, {1634, 14618}, {1783, 48084}, {1824, 16703}, {1826, 16887}, {1897, 16892}, {1964, 1969}, {2052, 3917}, {2501, 4576}, {2528, 42396}, {2530, 6335}, {2592, 46166}, {2593, 46167}, {2996, 41584}, {3005, 6331}, {3051, 18022}, {3186, 42551}, {3313, 43678}, {3404, 40703}, {3613, 37125}, {3867, 18840}, {4074, 37892}, {4391, 46152}, {4553, 17924}, {4568, 7649}, {5094, 23297}, {5117, 14617}, {5485, 41585}, {5523, 46165}, {6531, 51371}, {7794, 32085}, {7813, 17983}, {8041, 46104}, {8362, 8801}, {9019, 46105}, {9229, 12143}, {10159, 46026}, {14376, 41375}, {16080, 51360}, {16102, 40889}, {16696, 41013}, {17980, 35540}, {18018, 40938}, {18020, 39691}, {18027, 20775}, {19568, 47847}, {21035, 44129}, {28666, 40425}, {31613, 42394}, {35140, 51434}, {39129, 41361}, {40416, 46508}, {41331, 44161}, {44132, 51869}, {44146, 46154}, {44427, 46155}, {46106, 46147}, {46107, 46148}, {46108, 46149}, {46109, 46150}, {46110, 46153}
    * :ref:`X(427) <X(427)>` = barycentric quotient X(i)/X(j) for these {i,j}: {:ref:`1 <X(1)>`, 34055}, {:ref:`2 <X(2)>`, 1799}, {:ref:`3 <X(3)>`, 28724}, {:ref:`4 <X(4)>`, :ref:`83 <X(83)>`}, {:ref:`6 <X(6)>`, 1176}, {:ref:`19 <X(19)>`, :ref:`82 <X(82)>`}, {:ref:`25 <X(25)>`, :ref:`251 <X(251)>`}, {:ref:`27 <X(27)>`, 52394}, {:ref:`28 <X(28)>`, 52376}, {:ref:`32 <X(32)>`, 10547}, {:ref:`38 <X(38)>`, :ref:`63 <X(63)>`}, {:ref:`39 <X(39)>`, :ref:`3 <X(3)>`}, {:ref:`53 <X(53)>`, 17500}, {:ref:`66 <X(66)>`, 40404}, {:ref:`92 <X(92)>`, 3112}, {:ref:`107 <X(107)>`, 42396}, {:ref:`112 <X(112)>`, :ref:`827 <X(827)>`}, {:ref:`141 <X(141)>`, :ref:`69 <X(69)>`}, {:ref:`162 <X(162)>`, 4599}, {:ref:`225 <X(225)>`, 18097}, {:ref:`232 <X(232)>`, 51862}, {:ref:`240 <X(240)>`, 3405}, {:ref:`264 <X(264)>`, :ref:`308 <X(308)>`}, {:ref:`275 <X(275)>`, 39287}, {:ref:`276 <X(276)>`, 41488}, {:ref:`297 <X(297)>`, 20022}, {:ref:`393 <X(393)>`, 32085}, {:ref:`420 <X(420)>`, 40850}, {:ref:`429 <X(429)>`, 27067}, {:ref:`523 <X(523)>`, 4580}, {:ref:`648 <X(648)>`, 4577}, {:ref:`688 <X(688)>`, 3049}, {:ref:`732 <X(732)>`, 12215}, {:ref:`811 <X(811)>`, 4593}, {:ref:`826 <X(826)>`, :ref:`525 <X(525)>`}, {1235, :ref:`76 <X(76)>`}, {1401, :ref:`222 <X(222)>`}, {1593, 26224}, {1634, 4558}, {1824, 18098}, {1826, 18082}, {1840, 18099}, {1843, :ref:`6 <X(6)>`}, {1883, 27005}, {1923, 9247}, {1930, :ref:`304 <X(304)>`}, {1964, :ref:`48 <X(48)>`}, {1969, 18833}, {1973, 46289}, {1974, 46288}, {2052, 46104}, {2084, :ref:`810 <X(810)>`}, {2353, 46765}, {2489, 18105}, {2525, 3265}, {2528, 2525}, {2530, :ref:`905 <X(905)>`}, {2971, 51906}, {3005, :ref:`647 <X(647)>`}, {3051, :ref:`184 <X(184)>`}, {3118, 4173}, {3162, 8793}, {3172, 51508}, {3313, 20806}, {3404, :ref:`293 <X(293)>`}, {3575, 10548}, {3665, :ref:`348 <X(348)>`}, {3688, :ref:`219 <X(219)>`}, {3703, :ref:`345 <X(345)>`}, {3787, 3167}, {3867, 3618}, {3914, 18084}, {3917, :ref:`394 <X(394)>`}, {3933, 3926}, {3954, :ref:`72 <X(72)>`}, {4020, :ref:`255 <X(255)>`}, {4074, 37894}, {4553, 1332}, {4568, 4561}, {4576, 4563}, {5064, 39668}, {5094, 10130}, {6292, 7767}, {6331, :ref:`689 <X(689)>`}, {6591, 18108}, {6995, 42037}, {7649, 10566}, {7794, 3933}, {7813, 6390}, {8024, :ref:`305 <X(305)>`}, {8041, 3917}, {8061, :ref:`656 <X(656)>`}, {8362, 3785}, {8711, 22159}, {8735, 18101}, {8750, 4628}, {8754, 34294}, {8791, 9076}, {9019, 22151}, {11105, 29534}, {11205, 22352}, {11325, 38834}, {12143, :ref:`384 <X(384)>`}, {13854, 16277}, {14273, 22105}, {14424, 14417}, {15523, :ref:`306 <X(306)>`}, {16030, :ref:`97 <X(97)>`}, {16318, 21458}, {16696, 1444}, {16747, :ref:`274 <X(274)>`}, {16887, 17206}, {16892, 4025}, {16893, 4121}, {17171, :ref:`86 <X(86)>`}, {17187, 1790}, {17407, 40357}, {17442, :ref:`1 <X(1)>`}, {17980, :ref:`733 <X(733)>`}, {18022, 40016}, {19118, 33632}, {19174, :ref:`275 <X(275)>`}, {19577, 51459}, {19595, 5596}, {19606, 15389}, {20021, :ref:`287 <X(287)>`}, {20775, :ref:`577 <X(577)>`}, {20883, :ref:`75 <X(75)>`}, {21016, :ref:`10 <X(10)>`}, {21035, :ref:`71 <X(71)>`}, {21108, :ref:`514 <X(514)>`}, {21123, 1459}, {21248, 45201}, {21336, 45220}, {21814, :ref:`228 <X(228)>`}, {23208, 10316}, {23285, 3267}, {23642, 11574}, {24006, 18070}, {27369, :ref:`32 <X(32)>`}, {27370, 41334}, {27371, :ref:`5 <X(5)>`}, {27373, 8743}, {27374, :ref:`217 <X(217)>`}, {27376, :ref:`4 <X(4)>`}, {28666, 6292}, {28667, 8788}, {29959, 41614}, {30489, 43697}, {31125, 30786}, {31390, 21637}, {32085, 52395}, {32676, 34072}, {33299, :ref:`78 <X(78)>`}, {35319, 23181}, {35325, :ref:`110 <X(110)>`}, {36794, 41296}, {37125, 1078}, {39284, 39289}, {39691, :ref:`125 <X(125)>`}, {40889, 16095}, {40936, 22061}, {40938, :ref:`22 <X(22)>`}, {40972, :ref:`212 <X(212)>`}, {41267, 2200}, {41272, 14908}, {41331, 14575}, {41375, 17907}, {41584, :ref:`193 <X(193)>`}, {41585, 1992}, {41676, :ref:`99 <X(99)>`}, {42551, 43714}, {44090, 46228}, {45211, 45210}, {46026, 3589}, {46147, 14919}, {46148, 1331}, {46149, 1814}, {46150, 1797}, {46151, :ref:`648 <X(648)>`}, {46152, :ref:`651 <X(651)>`}, {46153, 1813}, {46154, :ref:`895 <X(895)>`}, {46166, 8115}, {46167, 8116}, {46387, 22384}, {46508, :ref:`626 <X(626)>`}, {46509, 8023}, {47730, 2996}, {48084, 15413}, {48278, 6332}, {50521, 22383}, {51360, 11064}, {51371, 6393}, {51434, 1503}, {51869, :ref:`248 <X(248)>`}
@@ -112,15 +112,15 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(427) <X(427)>` has Shinagawa coefficients (F,E + F).
+   As a point on the Euler line, :ref:`X(427) <X(427)>` has Shinagawa coefficients :math:`(F,E + F)`.
 
 .. container:: note-item
 
-   Let (O) be the circumcircle, (N) the nine-point circle, and (I\ :sub:`A`, (I\ :sub:`B`, (I\ :sub:`C` the excircles of ABC. Let A' and A'' be the points of intersection of (O) and (I\ :sub:`A`. Let F\ :sub:`A` be the touchpoint of (N) and (I\ :sub:`A`, and let (K\ :sub:`A`) be the circle through A' and A'' that is internally tangent to (N); let L\ :sub:`A` be the touchpoint. Define F\ :sub:`B`, F\ :sub:`C` and L\ :sub:`B`, L\ :sub:`C` cyclically. The lines F\ :sub:`A`\ L\ :sub:`A`, F\ :sub:`B`\ L\ :sub:`B`, F\ :sub:`C`\ L\ :sub:`C` concur ion :ref:`X(427) <X(427)>`. (Tran Quang Hung :cite:`ADGEOM #1458 <adgeom>`, August 5, 2014; see also #1459)
+   Let (O) be the circumcircle, (N) the nine-point circle, and (:g:`I_{A} <I_A>`, (:g:`I_{B} <I_B>`, (:g:`I_{C} <I_C>` the excircles of :g:`ABC << A B C >>`. Let :g:`A' <A'>` and :g:`A″ <A″>` be the points of intersection of (O) and (:g:`I_{A} <I_A>`. Let :g:`F_{A} <F_A>` be the touchpoint of (N) and (:g:`I_{A} <I_A>`, and let (:g:`K_{A} <K_A>`) be the circle through :g:`A' <A'>` and :g:`A″ <A″>` that is internally tangent to (N); let :g:`L_{A} <L_A>` be the touchpoint. Define :g:`F_{B} <F_B>`, :g:`F_{C} <F_C>` and :g:`L_{B} <L_B>`, :g:`L_{C} <L_C>` cyclically. The lines :g:`F_{A}L_{A} <[ F_A L_A ]>`, :g:`F_{B}L_{B} <[ F_B L_B ]>`, :g:`F_{C}L_{C} <[ F_C L_C ]>` concur ion :ref:`X(427) <X(427)>`. (Tran Quang Hung :cite:`ADGEOM #1458 <adgeom>`, August 5, 2014; see also #1459)
 
 .. container:: note-item
 
-   Let A'B'C' be the circummedial triangle. Let A″ be the pole, wrt the polar circle, of line B'C', and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(427) <X(427)>`. Moreover, :ref:`X(427) <X(427)>` is the Euler line intercept of radical axis of nine-point circle and every circle with center on orthic axis that is orthogonal to nine-point circle, and :ref:`X(427) <X(427)>` is the point in which the extended trapezoid legs (P(4),P(4)-Ceva conjugate of U(4)) and (U(4),U(4)-Ceva conjugate of P(4)) meet. Also, :ref:`X(427) <X(427)>` is the QA-P38 center (Montesdeoca-Hutson Point) of quadrangle ABC\ :ref:`X(2) <X(2)>`. (Randy Hutson, October 13, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the circummedial triangle. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(427) <X(427)>`. Moreover, :ref:`X(427) <X(427)>` is the Euler line intercept of radical axis of nine-point circle and every circle with center on orthic axis that is orthogonal to nine-point circle, and :ref:`X(427) <X(427)>` is the point in which the extended trapezoid legs (P(4),P(4)-Ceva conjugate of U(4)) and (U(4),U(4)-Ceva conjugate of P(4)) meet. Also, :ref:`X(427) <X(427)>` is the :g:`QA <[ Q A ]>`-P38 center (Montesdeoca-Hutson Point) of quadrangle :g:`ABC << A B C >>`\ :ref:`X(2) <X(2)>`. (Randy Hutson, October 13, 2015)
 
 .. container:: note-item
 

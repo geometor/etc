@@ -10,13 +10,13 @@ X(312) = ISOTOMIC CONJUGATE OF X(57)
 
 .. enunciation::
 
-   Let A\ :sub:`37`\ B\ :sub:`37`\ C\ :sub:`37` be Gemini triangle 37. Let A' be the perspector of conic {A,B,C,B\ :sub:`37`,C\ :sub:`37`}}, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(312) <X(312)>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
+   Let :g:`A_{37}B_{37}C_{37} << A_37 B_37 C_37 >>` be Gemini triangle 37. Let :g:`A' <A'>` be the perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B_{37} <B_37>`,\ :g:`C_{37} <C_37>`}}, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(312) <X(312)>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
 
 .. figure:: x-00312.svg
    :alt: X(312) = ISOTOMIC CONJUGATE OF X(57)
    :align: center
 
-   **X(312) = ISOTOMIC CONJUGATE OF X(57)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(312) = ISOTOMIC CONJUGATE OF X(57)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,12 +28,8 @@ X(312) = ISOTOMIC CONJUGATE OF X(57)
    :badge: 3 forms
 
    * **Trilinears:** :math:`(1 + \cos A)\csc(A - \omega ) : (1 + \cos B)\csc(B - \omega ) : (1 + \cos C)\csc(C - \omega )`
-   * **Trilinears:** :math:`(\csc A)/(1 - \cos A) : (\csc B)/(1 - \cos B) : (\csc C)/(1 - \cos C) (M. Iliev, 4/12/07)`
-   * **Trilinears:** :math:`bc \tan A' : ca \tan B' : ab \tan C'`, where A'B'C' is the :term:`excentral triangle <excentral-triangle>`
-
-.. container:: note-item
-
-   :ref:`X(312) <X(312)>` lies.
+   * **Trilinears:** :math:`(\csc A)/(1 - \cos A) : (\csc B)/(1 - \cos B) : (\csc C)/(1 - \cos C)` (M. Iliev, 4/12/07)
+   * **Trilinears:** :math:`bc \tan A' : ca \tan B' : ab \tan C'`, where :g:`A'B'C' << A' B' C' >>` is the :term:`excentral triangle <excentral-triangle>`
 
 .. collapse:: Incident Central Lines
    :badge: 14 lines
@@ -53,10 +49,10 @@ X(312) = ISOTOMIC CONJUGATE OF X(57)
    * :ref:`X(312) <X(312)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`8 <X(8)>`, :ref:`75 <X(75)>`), (:ref:`9 <X(9)>`, :ref:`318 <X(318)>`), (:ref:`306 <X(306)>`, :ref:`345 <X(345)>`), (:ref:`346 <X(346)>`, :ref:`341 <X(341)>`)
    * :ref:`X(312) <X(312)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`32 <X(32)>`, 1397), (:ref:`56 <X(56)>`, 1403), (:ref:`57 <X(57)>`, 1424)
    * :ref:`X(312) <X(312)>` = polar conjugate of :ref:`X(34) <X(34)>`
-   * :ref:`X(312) <X(312)>` = perspector of ABC and extraversion triangle of :ref:`X(85) <X(85)>`
-   * :ref:`X(312) <X(312)>` = BSS(A→A') of :ref:`X(4) <X(4)>`, where A'B'C' is the excentral triangle
+   * :ref:`X(312) <X(312)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(85) <X(85)>`
+   * :ref:`X(312) <X(312)>` = BSS(A→\ :g:`A' <A'>`) of :ref:`X(4) <X(4)>`, where :g:`A'B'C' << A' B' C' >>` is the excentral triangle
    * :ref:`X(312) <X(312)>` = barycentric product of vertices of Gemini triangle 27
-   * :ref:`X(312) <X(312)>` = perspector of ABC and cross-triangle of ABC and Gemini triangle 27
+   * :ref:`X(312) <X(312)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 27
    * :ref:`X(312) <X(312)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(522) <X(522)>`\ X(3717) (the polar of :ref:`X(34) <X(34)>` wrt polar circle, and the radical axis of the circumcircles of the outer and inner Garcia triangles)
 
 Notes
@@ -64,7 +60,7 @@ Notes
 
 .. container:: note-item
 
-   Let A\ :sub:`39`\ B\ :sub:`39`\ C\ :sub:`39` be Gemini triangle 39. Let A' be the perspector of conic {A,B,C,B\ :sub:`39`,C\ :sub:`39`}}, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(312) <X(312)>`. (Randy Hutson, January 15, 2019)
+   Let :g:`A_{39}B_{39}C_{39} << A_39 B_39 C_39 >>` be Gemini triangle 39. Let :g:`A' <A'>` be the perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B_{39} <B_39>`,\ :g:`C_{39} <C_39>`}}, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(312) <X(312)>`. (Randy Hutson, January 15, 2019)
 
 .. toctree::
    :hidden:

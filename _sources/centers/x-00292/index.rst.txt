@@ -10,23 +10,19 @@ X(292) = X(1)-HIRST INVERSE OF X(291)
 
 .. enunciation::
 
-   Let A\ :sub:`33`\ B\ :sub:`33`\ C\ :sub:`33` be Gemini triangle 33. Let A' be the perspector of conic {A,B,C,B\ :sub:`33`,C\ :sub:`33`}}, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(292) <X(292)>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
+   Let :g:`A_{33}B_{33}C_{33} << A_33 B_33 C_33 >>` be Gemini triangle 33. Let :g:`A' <A'>` be the perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B_{33} <B_33>`,\ :g:`C_{33} <C_33>`}}, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(292) <X(292)>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
 
 .. figure:: x-00292.svg
    :alt: X(292) = X(1)-HIRST INVERSE OF X(291)
    :align: center
 
-   **X(292) = X(1)-HIRST INVERSE OF X(291)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(292) = X(1)-HIRST INVERSE OF X(291)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`a/(a^{2} - bc) : b/(b^{2} - ca) : c/(c^{2} - ab)`
    | **Barycentrics:** :math:`a^{2}/(a^{2} - bc) : b^{2}/(b^{2} - ca) : c^{2}/(c^{2} - ab)`
    | **Search Value (6, 9, 13):** :math:`-0.125095805476`
-
-.. container:: note-item
-
-   :ref:`X(292) <X(292)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 11 lines
@@ -47,10 +43,10 @@ X(292) = X(1)-HIRST INVERSE OF X(291)
    * :ref:`X(292) <X(292)>` = crossdifference of PU(134)
    * :ref:`X(292) <X(292)>` = :ref:`X(1) <X(1)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(291) <X(291)>`
    * :ref:`X(292) <X(292)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(42) <X(42)>`\ \ :ref:`X(649) <X(649)>`
-   * :ref:`X(292) <X(292)>` = point of intersection, other than A, B, C, of 1st and 2nd bicentrics of the Steiner circumellipse
-   * :ref:`X(292) <X(292)>` = perspector of hyperbola {A,B,C,\ :ref:`X(660) <X(660)>`,\ :ref:`X(813) <X(813)>`}}
-   * :ref:`X(292) <X(292)>` = perspector of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of obverse triangle of :ref:`X(1) <X(1)>`
-   * :ref:`X(292) <X(292)>` = perspector of ABC and unary cofactor triangle of trilinear obverse triangle of :ref:`X(2) <X(2)>`
+   * :ref:`X(292) <X(292)>` = point of intersection, other than :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, of 1st and 2nd bicentrics of the Steiner circumellipse
+   * :ref:`X(292) <X(292)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(660) <X(660)>`,\ :ref:`X(813) <X(813)>`}}
+   * :ref:`X(292) <X(292)>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of obverse triangle of :ref:`X(1) <X(1)>`
+   * :ref:`X(292) <X(292)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of trilinear obverse triangle of :ref:`X(2) <X(2)>`
    * :ref:`X(292) <X(292)>` = trilinear square root of isogonal conjugate of X(39044)
 
 .. toctree::

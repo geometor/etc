@@ -16,7 +16,7 @@ X(480) = X(200)-CEVA CONJUGATE OF X(220)
    :alt: X(480) = X(200)-CEVA CONJUGATE OF X(220)
    :align: center
 
-   **X(480) = X(200)-CEVA CONJUGATE OF X(220)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(480) = X(200)-CEVA CONJUGATE OF X(220)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,10 +28,6 @@ X(480) = X(200)-CEVA CONJUGATE OF X(220)
    :badge: 1 form
 
    * **Trilinears:** :math:`a(b + c - a)^{3} : b(c + a - b)^{3} : c(a + b - c)^{3}`
-
-.. container:: note-item
-
-   :ref:`X(480) <X(480)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines

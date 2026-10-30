@@ -10,13 +10,13 @@ X(946) = MIDPOINT OF X(1) AND X(4)
 
 .. enunciation::
 
-   Let A' be the midpoint of BC, and define B' and C' cyclically. A″ be the midpoint of A\ :ref:`X(1) <X(1)>`, and define B″ and C″ cyclically. Let A″'B″'C″' be the :term:`incentral triangle <incentral-triangle>`. Let A\* be the orthocenter of A'A″A″', and define B\* and C\* cyclically. The lines A″A\*, B″B\*, C″C\* concur in :ref:`X(946) <X(946)>`. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
+   Let :g:`A' <A'>` be the midpoint of :g:`BC <[ B C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. :g:`A″ <A″>` be the midpoint of A\ :ref:`X(1) <X(1)>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Let A″'B″'C″' be the :term:`incentral triangle <incentral-triangle>`. Let :g:`A* <A*>` be the orthocenter of A'A″A″', and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`A″A* <[ A″ A* ]>`, :g:`B″B* <[ B″ B* ]>`, :g:`C″C* <[ C″ C* ]>` concur in :ref:`X(946) <X(946)>`. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
 
 .. figure:: x-00946.svg
    :alt: X(946) = MIDPOINT OF X(1) AND X(4)
    :align: center
 
-   **X(946) = MIDPOINT OF X(1) AND X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(946) = MIDPOINT OF X(1) AND X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -33,10 +33,6 @@ X(946) = MIDPOINT OF X(1) AND X(4)
    :badge: 1 combination
 
    * :ref:`X(946) <X(946)>` = :ref:`X(1) <X(1)>` + :ref:`X(4) <X(4)>`
-
-.. container:: note-item
-
-   :ref:`X(946) <X(946)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 19 lines
@@ -70,11 +66,11 @@ Notes
 
 .. container:: note-item
 
-   Let A' be the intersection of these three lines: the perpendicular from midpoint of segment CA to line B\ :ref:`X(1) <X(1)>`, the perpendicular from midpoint of segment AB to line C\ :ref:`X(1) <X(1)>`, and the perpendicular from midpoint of segment A\ :ref:`X(1) <X(1)>` to line BC. Define B' and C' cyclically. The circumcenter of A'B'C' is :ref:`X(946) <X(946)>`. Note that A'B'C' is the complement of the :term:`excentral triangle <excentral-triangle>`; also A'B'C' is the extraversion triangle of :ref:`X(10) <X(10)>`. (Randy Hutson, November 18, 2015)
+   Let :g:`A' <A'>` be the intersection of these three lines: the perpendicular from midpoint of segment :g:`CA <[ C A ]>` to line B\ :ref:`X(1) <X(1)>`, the perpendicular from midpoint of segment :g:`AB <[ A B ]>` to line C\ :ref:`X(1) <X(1)>`, and the perpendicular from midpoint of segment A\ :ref:`X(1) <X(1)>` to line :g:`BC <[ B C ]>`. Define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The circumcenter of :g:`A'B'C' << A' B' C' >>` is :ref:`X(946) <X(946)>`. Note that :g:`A'B'C' << A' B' C' >>` is the complement of the :term:`excentral triangle <excentral-triangle>`; also :g:`A'B'C' << A' B' C' >>` is the extraversion triangle of :ref:`X(10) <X(10)>`. (Randy Hutson, November 18, 2015)
 
 .. container:: note-item
 
-   Let A' be the midpoint of A and :ref:`X(1) <X(1)>`, and define B' and C' cyclically. The orthocenter of A'B'C' is :ref:`X(946) <X(946)>`. (Randy Hutson, November 18, 2015)
+   Let :g:`A' <A'>` be the midpoint of :g:`A <A>` and :ref:`X(1) <X(1)>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The orthocenter of :g:`A'B'C' << A' B' C' >>` is :ref:`X(946) <X(946)>`. (Randy Hutson, November 18, 2015)
 
 .. toctree::
    :hidden:

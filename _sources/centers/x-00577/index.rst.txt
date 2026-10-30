@@ -16,12 +16,12 @@ X(577) = HARMONIC OF X(216)
    :alt: X(577) = HARMONIC OF X(216)
    :align: center
 
-   **X(577) = HARMONIC OF X(216)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(577) = HARMONIC OF X(216)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\sin A \cos^{2}A : :`
-   | **Barycentrics:** :math:`a^4(b^2 + c^2 - a^2)^2 : :`
+   | **Trilinears:** :math:`\sin A \cos^{2} A : :`
+   | **Barycentrics:** :math:`a^{4}(b^{2} + c^{2} - a^{2})^{2} : :`
    | **Search Value (6, 9, 13):** :math:`1.971561272069`
 
 .. collapse:: Alternate Coordinates
@@ -32,11 +32,7 @@ X(577) = HARMONIC OF X(216)
    * **Trilinears:** :math:`\cos A \sin 2A : :`
    * **Trilinears:** :math:`\cos(A - T) : :`, T as at :ref:`X(389) <X(389)>`
    * **Trilinears:** :math:`\sec B \sec C - \csc B \csc C : :`
-   * **Barycentrics:** :math:`\sin^2 2A : :`
-
-.. container:: note-item
-
-   :ref:`X(577) <X(577)>` lies.
+   * **Barycentrics:** :math:`\sin^{2} 2A : :`
 
 .. collapse:: Incident Central Lines
    :badge: 18 lines
@@ -64,7 +60,7 @@ X(577) = HARMONIC OF X(216)
    * :ref:`X(577) <X(577)>` = X(1577)-isoconjugate of :ref:`X(107) <X(107)>`
    * :ref:`X(577) <X(577)>` = {:ref:`X(6) <X(6)>`,\ :ref:`X(50) <X(50)>`}-harmonic conjugate of :ref:`X(571) <X(571)>`
    * :ref:`X(577) <X(577)>` = barycentric square of :ref:`X(3) <X(3)>`
-   * :ref:`X(577) <X(577)>` = orthic-to-ABC :term:`barycentric image <barycentric-image>` of :ref:`X(53) <X(53)>`
+   * :ref:`X(577) <X(577)>` = orthic-to-:g:`ABC << A B C >>` :term:`barycentric image <barycentric-image>` of :ref:`X(53) <X(53)>`
    * :ref:`X(577) <X(577)>` = antipode of X(36426) in barycentric Euler inellipse
    * :ref:`X(577) <X(577)>` = circle-{:ref:`X(371) <X(371)>`,\ :ref:`X(372) <X(372)>`,PU(1),PU(39)}}-inverse of :ref:`X(389) <X(389)>`
    * :ref:`X(577) <X(577)>` = {:ref:`X(371) <X(371)>`,\ :ref:`X(372) <X(372)>`}-harmonic conjugate of :ref:`X(389) <X(389)>`

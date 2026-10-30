@@ -16,7 +16,7 @@ X(91) = ISOGONAL CONJUGATE OF X(47)
    :alt: X(91) = ISOGONAL CONJUGATE OF X(47)
    :align: center
 
-   **X(91) = ISOGONAL CONJUGATE OF X(47)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(91) = ISOGONAL CONJUGATE OF X(47)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,10 +28,6 @@ X(91) = ISOGONAL CONJUGATE OF X(47)
    :badge: 1 form
 
    * **Trilinears:** :math:`\cot A \tan 2A : :`
-
-.. container:: note-item
-
-   :ref:`X(91) <X(91)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 9 lines
@@ -48,7 +44,7 @@ X(91) = ISOGONAL CONJUGATE OF X(47)
    * :ref:`X(91) <X(91)>` = polar conjugate of X(1748)
    * :ref:`X(91) <X(91)>` = :ref:`X(92) <X(92)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(563) <X(563)>`
    * :ref:`X(91) <X(91)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(661) <X(661)>`\ X(2618)
-   * :ref:`X(91) <X(91)>` = perspector of ABC and extraversion triangle of :ref:`X(91) <X(91)>` (which is also the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(91) <X(91)>`)
+   * :ref:`X(91) <X(91)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(91) <X(91)>` (which is also the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(91) <X(91)>`)
    * :ref:`X(91) <X(91)>` = trilinear product of vertices of outer and inner Vecten triangles
 
 .. toctree::

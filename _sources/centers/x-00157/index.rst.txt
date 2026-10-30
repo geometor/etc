@@ -10,22 +10,24 @@ X(157) = X(6)-OF-TANGENTIAL-TRIANGLE
 
 .. enunciation::
 
-   Barycentrics af(a,b,c) : bf(b,c,a) : cf(c,a,b)
+   :ref:`X(157) <X(157)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :term:`anticomplement <anticomplement>` of X(22391)
 
 .. figure:: x-00157.svg
    :alt: X(157) = X(6)-OF-TANGENTIAL-TRIANGLE
    :align: center
 
-   **X(157) = X(6)-OF-TANGENTIAL-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(157) = X(6)-OF-TANGENTIAL-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = a[b\ :sup:`3`\ cos B + c\ :sup:`3`\ cos C - a\ :sup:`3`\ cos A], = g(a,b,c) : g(b,c,a) : g(c,a,b), where, g(a,b,c) = a[a\ :sup:`6` - b\ :sup:`6` - c\ :sup:`6` - a\ :sup:`4`\ (b\ :sup:`2` + c\ :sup:`2`) + b\ :sup:`4`\ (c\ :sup:`2` + a\ :sup:`2`) + c\ :sup:`4`\ (a\ :sup:`2` + b\ :sup:`2`)]
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a[b^{3}\cos B + c^{3}\cos C - a^{3}\cos A]`
+   | **Barycentrics:** :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
    | **Search Value (6, 9, 13):** :math:`-1.134813455477`
 
-.. container:: note-item
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-   :ref:`X(157) <X(157)>` lies.
+   * **Trilinears:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = a[a^{6} - b^{6} - c^{6} - a^{4}(b^{2} + c^{2}) + b^{4}(c^{2} + a^{2}) + c^{4}(a^{2} + b^{2})]`
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines
@@ -36,14 +38,14 @@ X(157) = X(6)-OF-TANGENTIAL-TRIANGLE
 .. collapse:: Functional Relations
    :badge: 8 relations
 
-   * :ref:`X(157) <X(157)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :term:`anticomplement <anticomplement>` of X(22391)
+   * :ref:`X(157) <X(157)>` = isogonal conjugate of anticomplement of X(22391)
    * :ref:`X(157) <X(157)>` = :term:`isotomic conjugate <isotomic-conjugate>` of isogonal conjugate of X(2909)
    * :ref:`X(157) <X(157)>` = :ref:`X(264) <X(264)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(6) <X(6)>`
    * :ref:`X(157) <X(157)>` = :term:`crosssum <crosssum>` of :ref:`X(127) <X(127)>` and :ref:`X(520) <X(520)>`
    * :ref:`X(157) <X(157)>` = :ref:`X(6) <X(6)>`-of-tangential-triangle
    * :ref:`X(157) <X(157)>` = perspector of circumcircle wrt Schroeter triangle
    * :ref:`X(157) <X(157)>` = perspector of polar circle wrt :term:`tangential triangle <tangential-triangle>`
-   * :ref:`X(157) <X(157)>` = intouch-to-ABC :term:`functional image <functional-image>` of :ref:`X(6) <X(6)>`
+   * :ref:`X(157) <X(157)>` = intouch-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X(6) <X(6)>`
 
 .. toctree::
    :hidden:

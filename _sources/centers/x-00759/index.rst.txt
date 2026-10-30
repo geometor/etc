@@ -16,18 +16,18 @@ X(759) = EVEN (1, 3) CIRCUMCIRCLE POINT
    :alt: X(759) = EVEN (1, 3) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(759) = EVEN (1, 3) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(759) = EVEN (1, 3) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = 1/[a\ :sup:`0`\ (b\ :sup:`3` + c\ :sup:`3`) - a\ :sup:`2`\ (b\ :sup:`1` + c\ :sup:`1`)]
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = 1/[a^{0}(b^{3} + c^{3}) - a^{2}(b^{1} + c^{1})]`
    | **Search Value (6, 9, 13):** :math:`4.495915743960`
 
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
    * **Trilinears:** :math:`1/((b + c) \cot A - b \cot B - c \cot C) : :`
-   * **Trilinears:** :math:`1/((b + c) (b^2 + c^2 - a^2 - b c)) : :`
+   * **Trilinears:** :math:`1/((b + c) (b^{2} + c^{2} - a^{2} - b c)) : :`
 
 .. container:: note-item
 

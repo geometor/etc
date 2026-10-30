@@ -16,7 +16,7 @@ X(224) = X(7)-CEVA CONJUGATE OF X(63)
    :alt: X(224) = X(7)-CEVA CONJUGATE OF X(63)
    :align: center
 
-   **X(224) = X(7)-CEVA CONJUGATE OF X(63)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(224) = X(7)-CEVA CONJUGATE OF X(63)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -26,11 +26,7 @@ X(224) = X(7)-CEVA CONJUGATE OF X(63)
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`(b^2 + c^2 - a^2) (a^4 - b^4 - c^4 - 2 a^3 (b + c) - 2 a^2 b c + 2 a (b^3 + c^3) + 2 b^2 c^2) : :`
-
-.. container:: note-item
-
-   :ref:`X(224) <X(224)>` lies.
+   * **Trilinears:** :math:`(b^{2} + c^{2} - a^{2}) (a^{4} - b^{4} - c^{4} - 2 a^{3} (b + c) - 2 a^{2} b c + 2 a (b^{3} + c^{3}) + 2 b^{2} c^{2}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 7 lines

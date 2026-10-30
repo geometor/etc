@@ -16,7 +16,7 @@ X(378) = REFLECTION OF X(22) IN X(3)
    :alt: X(378) = REFLECTION OF X(22) IN X(3)
    :align: center
 
-   **X(378) = REFLECTION OF X(22) IN X(3)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(378) = REFLECTION OF X(22) IN X(3)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,16 +27,12 @@ X(378) = REFLECTION OF X(22) IN X(3)
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`a^2 (a^4 + b^4 + c^4 - 2 a^2 b^2 - 2 a^2 c^2 + 4 b^2 c^2)/(b^2 + c^2 - a^2) : :`
+   * **Barycentrics:** :math:`a^{2} (a^{4} + b^{4} + c^{4} - 2 a^{2} b^{2} - 2 a^{2} c^{2} + 4 b^{2} c^{2})/(b^{2} + c^{2} - a^{2}) : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(378) <X(378)>` = 6 :ref:`X(2) <X(2)>` + (J^2 + 3) :ref:`X(3) <X(3)>` = 2 :ref:`X(3) <X(3)>` - :ref:`X(22) <X(22)>`
-
-.. container:: note-item
-
-   :ref:`X(378) <X(378)>` lies.
+   * :ref:`X(378) <X(378)>` = :math:`6` :ref:`X(2) <X(2)>` + :math:`(J^{2} + 3)` :ref:`X(3) <X(3)>` = :math:`2` :ref:`X(3) <X(3)>` - :ref:`X(22) <X(22)>`
 
 .. collapse:: Incident Central Lines
    :badge: 11 lines
@@ -60,7 +56,7 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(378) <X(378)>` has Shinagawa coefficients (2F, E - 2F).
+   As a point on the Euler line, :ref:`X(378) <X(378)>` has Shinagawa coefficients :math:`(2F, E - 2F)`.
 
 .. toctree::
    :hidden:

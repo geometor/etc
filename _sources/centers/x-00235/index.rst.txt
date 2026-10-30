@@ -10,29 +10,25 @@ X(235) = X(4)-CEVA CONJUGATE OF X(185)
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(235) <X(235)>` has Shinagawa coefficients (F, F - E).
+   As a point on the Euler line, :ref:`X(235) <X(235)>` has Shinagawa coefficients :math:`(F, F - E)`.
 
 .. figure:: x-00235.svg
    :alt: X(235) = X(4)-CEVA CONJUGATE OF X(185)
    :align: center
 
-   **X(235) = X(4)-CEVA CONJUGATE OF X(185)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(235) = X(4)-CEVA CONJUGATE OF X(185)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`\sec A - \cos(B - C) : :`
-   | **Barycentrics:** :math:`(\tan A)(\cos^{2}B + \cos^{2}C) : :`
+   | **Barycentrics:** :math:`(\tan A)(\cos^{2} B + \cos^{2} C) : :`
    | **Search Value (6, 9, 13):** :math:`-2.042726748267`
 
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
-   * **Trilinears:** :math:`(\sec A)(\cos^{2}B + \cos^{2}C) : :`
-   * **Barycentrics:** :math:`(a^4 (b^2 + c^2) - 2 a^2 (b^2 - c^2)^2 + (b^2 - c^2)^2 (b^2 + c^2))/(a^2 - b^2 - c^2) : :`
-
-.. container:: note-item
-
-   :ref:`X(235) <X(235)>` lies.
+   * **Trilinears:** :math:`(\sec A)(\cos^{2} B + \cos^{2} C) : :`
+   * **Barycentrics:** :math:`(a^{4} (b^{2} + c^{2}) - 2 a^{2} (b^{2} - c^{2})^{2} + (b^{2} - c^{2})^{2} (b^{2} + c^{2}))/(a^{2} - b^{2} - c^{2}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines
@@ -47,15 +43,15 @@ X(235) = X(4)-CEVA CONJUGATE OF X(185)
    * :ref:`X(235) <X(235)>` = :term:`complement <complement>` of X(11413)
    * :ref:`X(235) <X(235)>` = :term:`anticomplement <anticomplement>` of X(16196)
    * :ref:`X(235) <X(235)>` = circumcircle-inverse of X(37917)
-   * :ref:`X(235) <X(235)>` = excentral-to-ABC :term:`functional image <functional-image>` of :ref:`X(55) <X(55)>`
+   * :ref:`X(235) <X(235)>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X(55) <X(55)>`
    * :ref:`X(235) <X(235)>` = :ref:`X(4) <X(4)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(185) <X(185)>`
    * :ref:`X(235) <X(235)>` = :term:`crosssum <crosssum>` of :ref:`X(3) <X(3)>` and X(1092)
    * :ref:`X(235) <X(235)>` = orthic-:term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(185) <X(185)>`
-   * :ref:`X(235) <X(235)>` = :ref:`X(56) <X(56)>` of :term:`orthic triangle <orthic-triangle>` if ABC is acute
-   * :ref:`X(235) <X(235)>` = insimilicenter of nine-point circle and incircle of orthic triangle if ABC is acute; the exsimilicenter is :ref:`X(427) <X(427)>`
+   * :ref:`X(235) <X(235)>` = :ref:`X(56) <X(56)>` of :term:`orthic triangle <orthic-triangle>` if :g:`ABC << A B C >>` is acute
+   * :ref:`X(235) <X(235)>` = insimilicenter of nine-point circle and incircle of orthic triangle if :g:`ABC << A B C >>` is acute; the exsimilicenter is :ref:`X(427) <X(427)>`
    * :ref:`X(235) <X(235)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(801) <X(801)>` (line :ref:`X(523) <X(523)>`\ X(2071))
    * :ref:`X(235) <X(235)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X(801) <X(801)>`
-   * :ref:`X(235) <X(235)>` = perspector of ABC and cross-triangle of ABC and 2nd Hyacinth triangle
+   * :ref:`X(235) <X(235)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and 2nd Hyacinth triangle
    * :ref:`X(235) <X(235)>` = radical center of the polar-circle-inverses of the power circles
    * :ref:`X(235) <X(235)>` = intersection of tangents to Hatzipolakis-Lozada hyperbola at :ref:`X(4) <X(4)>` and :ref:`X(155) <X(155)>`
    * :ref:`X(235) <X(235)>` = :term:`crosspoint <crosspoint>`, wrt orthic triangle, of :ref:`X(4) <X(4)>` and :ref:`X(155) <X(155)>`

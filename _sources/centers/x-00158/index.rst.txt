@@ -10,22 +10,24 @@ X(158) = X(19)-CROSS CONJUGATE OF X(92)
 
 .. enunciation::
 
-   Let A'B'C' be the hexyl triangle. Let A″ be the pole, wrt the polar circle, of line B'C', and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(158) <X(158)>`. (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the hexyl triangle. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(158) <X(158)>`. (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
 
 .. figure:: x-00158.svg
    :alt: X(158) = X(19)-CROSS CONJUGATE OF X(92)
    :align: center
 
-   **X(158) = X(19)-CROSS CONJUGATE OF X(92)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(158) = X(19)-CROSS CONJUGATE OF X(92)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\sec^{2}A : \sec^{2}B : \sec^{2}C, = 1/(1 + \cos 2A) : 1/(1 + \cos 2B) : 1/(1 + \cos 2C)`
+   | **Trilinears:** :math:`\sec^{2} A : \sec^{2} B : \sec^{2} C`
+   | **Barycentrics:** :math:`\sec A \tan A : \sec B \tan B : \sec C \tan C`
    | **Search Value (6, 9, 13):** :math:`0.730217888460`
 
-.. container:: note-item
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-   :ref:`X(158) <X(158)>` lies.
+   * **Trilinears:** :math:`1/(1 + \cos 2A) : 1/(1 + \cos 2B) : 1/(1 + \cos 2C)`
 
 .. collapse:: Incident Central Lines
    :badge: 15 lines
@@ -54,11 +56,7 @@ Notes
 
 .. container:: note-item
 
-   Barycentrics sec A tan A : sec B tan B : sec C tan C
-
-.. container:: note-item
-
-   Let A'B'C' and A″B″C″ be the Euler and anti-Euler triangles, resp. Let A\* be the trilinear product A'\*A″, and define B\* and C\* cyclically. The lines AA\*, BB\*, CC\* concur in :ref:`X(158) <X(158)>`. (Randy Hutson, October 15, 2018)
+   Let :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>` be the Euler and anti-Euler triangles, resp. Let :g:`A* <A*>` be the trilinear product :g:`A' <A'>`\ \*\ :g:`A″ <A″>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(158) <X(158)>`. (Randy Hutson, October 15, 2018)
 
 .. toctree::
    :hidden:

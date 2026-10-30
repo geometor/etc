@@ -16,17 +16,13 @@ X(896) = INTERSECTION OF LINES X(1)X(21) AND X(9)X(750)
    :alt: X(896) = INTERSECTION OF LINES X(1)X(21) AND X(9)X(750)
    :align: center
 
-   **X(896) = INTERSECTION OF LINES X(1)X(21) AND X(9)X(750)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(896) = INTERSECTION OF LINES X(1)X(21) AND X(9)X(750)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`2a^{2} - b^{2} - c^{2} : :`
    | **Barycentrics:** :math:`a(2a^{2} - b^{2} - c^{2}) : :`
    | **Search Value (6, 9, 13):** :math:`-5.941112560743`
-
-.. container:: note-item
-
-   :ref:`X(896) <X(896)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines

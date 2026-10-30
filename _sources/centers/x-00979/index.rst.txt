@@ -16,17 +16,13 @@ X(979) = X(8)-CROSS CONJUGATE OF X(1)
    :alt: X(979) = X(8)-CROSS CONJUGATE OF X(1)
    :align: center
 
-   **X(979) = X(8)-CROSS CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(979) = X(8)-CROSS CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = 1/[a\ :sup:`2`\ (b + c) + a(b\ :sup:`2` - bc + c\ :sup:`2`) - bc(b + c)]
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = 1/[a^{2}(b + c) + a(b^{2} - bc + c^{2}) - bc(b + c)]`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`-7.385519455995`
-
-.. container:: note-item
-
-   :ref:`X(979) <X(979)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines

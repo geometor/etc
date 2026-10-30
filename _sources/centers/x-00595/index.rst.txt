@@ -10,17 +10,17 @@ X(595) = 2nd HATZIPOLAKIS-YIU POINT
 
 .. enunciation::
 
-   Let O(A) be the circle tangent to line BC and to the circumcircle of triangle ABC at vertex A, and define O(B) and O(C) cyclically. :ref:`X(595) <X(595)>` is the radical center of O(A), O(B), O(C).
+   Let O(A) be the circle tangent to line :g:`BC <[ B C ]>` and to the circumcircle of triangle :g:`ABC << A B C >>` at vertex :g:`A <A>`, and define O(B) and O(C) cyclically. :ref:`X(595) <X(595)>` is the radical center of O(A), O(B), O(C).
 
 .. figure:: x-00595.svg
    :alt: X(595) = 2nd HATZIPOLAKIS-YIU POINT
    :align: center
 
-   **X(595) = 2nd HATZIPOLAKIS-YIU POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(595) = 2nd HATZIPOLAKIS-YIU POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`r + R*(\cos 2A - 1) : :`
+   | **Trilinears:** :math:`r + R (\cos 2A - 1) : :`
    | **Barycentrics:** :math:`a^{2}(a^{2} + ab + ac - bc) : :`
    | **Search Value (6, 9, 13):** :math:`0.211981313071`
 
@@ -29,10 +29,6 @@ X(595) = 2nd HATZIPOLAKIS-YIU POINT
 
    * **Trilinears:** :math:`a(a^{2} + ab + ac - bc) : :`
    * **Trilinears:** :math:`sa^{2} - SR : sb^{2} - SR sc^{2} - SR : :`
-
-.. container:: note-item
-
-   :ref:`X(595) <X(595)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 13 lines

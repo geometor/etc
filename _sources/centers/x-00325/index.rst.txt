@@ -10,17 +10,17 @@ X(325) = X(2)-HIRST INVERSE OF X(69)
 
 .. enunciation::
 
-   Let La be the line through A parallel to the Lemoine axis, and define Lb and Lc cyclically. Let Ma be the reflection of BC in La, and define Mb and Mc cyclically. Let A' = Mb∩Mc, and define B' and C' cyclically. The triangle A'B'C' is inversely similar to, and 3 times the size of, ABC. Let A″B″C″ be the reflection of A'B'C' in the Lemoine axis. The triangle A″B″C″ is homothetic to ABC, with center of homothety :ref:`X(325) <X(325)>`; see :cite:`Hyacinthos #16741 <hyacinthos>`/16782, Sep 2008. (:person:`Randy Hutson <randy-hutson>`, November 30, 2015)
+   Let :g:`L_{a} <L_a>` be the line through :g:`A <A>` parallel to the Lemoine axis, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`M_{a} <M_a>` be the reflection of :g:`BC <[ B C ]>` in :g:`L_{a} <L_a>`, and define :g:`M_{b} <M_b>` and :g:`M_{c} <M_c>` cyclically. Let :g:`A' <A'>` = :g:`M_{b} <M_b>`\ ∩\ :g:`M_{c} <M_c>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The triangle :g:`A'B'C' << A' B' C' >>` is inversely similar to, and 3 times the size of, :g:`ABC << A B C >>`. Let :g:`A″B″C″ << A″ B″ C″ >>` be the reflection of :g:`A'B'C' << A' B' C' >>` in the Lemoine axis. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to :g:`ABC << A B C >>`, with center of homothety :ref:`X(325) <X(325)>`; see :cite:`Hyacinthos #16741 <hyacinthos>`/16782, Sep 2008. (:person:`Randy Hutson <randy-hutson>`, November 30, 2015)
 
 .. figure:: x-00325.svg
    :alt: X(325) = X(2)-HIRST INVERSE OF X(69)
    :align: center
 
-   **X(325) = X(2)-HIRST INVERSE OF X(69)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(325) = X(2)-HIRST INVERSE OF X(69)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\csc^{2}A : :`
+   | **Trilinears:** :math:`\csc^{2} A : :`
    | **Barycentrics:** :math:`\cot A - \tan \omega : :`
    | **Search Value (6, 9, 13):** :math:`7.504301653149`
 
@@ -56,7 +56,7 @@ X(325) = X(2)-HIRST INVERSE OF X(69)
    * :ref:`X(325) <X(325)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(32) <X(32)>`\ \ :ref:`X(512) <X(512)>`
    * :ref:`X(325) <X(325)>` = :ref:`X(2) <X(2)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(69) <X(69)>`
    * :ref:`X(325) <X(325)>` = {:ref:`X(2) <X(2)>`,\ :ref:`X(69) <X(69)>`}-harmonic conjugate of :ref:`X(183) <X(183)>`
-   * :ref:`X(325) <X(325)>` = perspector of hyperbola {A,B,C,\ :ref:`X(99) <X(99)>`,PU(37)}}
+   * :ref:`X(325) <X(325)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(99) <X(99)>`,PU(37)}}
    * :ref:`X(325) <X(325)>` = intersection of :term:`trilinear polars <trilinear-polar>` of :ref:`X(99) <X(99)>`, P(37), and U(37)
    * :ref:`X(325) <X(325)>` = :term:`crosspoint <crosspoint>` of :ref:`X(2) <X(2)>` and :ref:`X(147) <X(147)>` wrt both the excentral and :term:`anticomplementary triangles <anticomplementary-triangle>`
    * :ref:`X(325) <X(325)>` = :term:`trilinear pole <trilinear-pole>` of line X(2799)X(3569)

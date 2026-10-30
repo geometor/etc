@@ -10,23 +10,19 @@ X(441) = COMPLEMENT OF X(297)
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(441) <X(441)>` has Shinagawa coefficients (2(E + F)F - S\ :sup:`2`, S\ :sup:`2`)
+   As a point on the Euler line, :ref:`X(441) <X(441)>` has Shinagawa coefficients :math:`(2(E + F)F - S^{2}, S^{2})`
 
 .. figure:: x-00441.svg
    :alt: X(441) = COMPLEMENT OF X(297)
    :align: center
 
-   **X(441) = COMPLEMENT OF X(297)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(441) = COMPLEMENT OF X(297)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`bc(v + w) : ca(w + u) : ab(u + v)`, where, u : v : w = :ref:`X(240) <X(240)>`; e.g., u(A,B,C) = sec A cos(A + ω)
+   | **Trilinears:** :math:`bc(v + w) : ca(w + u) : ab(u + v)`, where :math:`u : v : w` = :ref:`X(240) <X(240)>`; e.g., :math:`u(A,B,C) = \sec A \cos(A + \omega )`
    | **Barycentrics:** :math:`v + w : w + u : u + v`
    | **Search Value (6, 9, 13):** :math:`2.893097558195`
-
-.. container:: note-item
-
-   :ref:`X(441) <X(441)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines

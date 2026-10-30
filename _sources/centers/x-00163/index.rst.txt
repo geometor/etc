@@ -10,13 +10,13 @@ X(163) = TRILINEAR PRODUCT X(6)*X(110)
 
 .. enunciation::
 
-   Let A'B'C' be the circumcevian triangle of :ref:`X(512) <X(512)>`. Let A″ be the trilinear product B'\*C', and define B″ and C″ cyclically. A″, B″, C″ are collinear on line :ref:`X(667) <X(667)>`\ \ :ref:`X(788) <X(788)>`. The lines AA″, BB″, CC″ concur in :ref:`X(163) <X(163)>`. (:person:`Randy Hutson <randy-hutson>`, August 19, 2019)
+   Let :g:`A'B'C' << A' B' C' >>` be the circumcevian triangle of :ref:`X(512) <X(512)>`. Let :g:`A″ <A″>` be the trilinear product :g:`B' <B'>`\ \*\ :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. :g:`A″ <A″>`, :g:`B″ <B″>`, :g:`C″ <C″>` are collinear on line :ref:`X(667) <X(667)>`\ \ :ref:`X(788) <X(788)>`. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(163) <X(163)>`. (:person:`Randy Hutson <randy-hutson>`, August 19, 2019)
 
 .. figure:: x-00163.svg
    :alt: X(163) = TRILINEAR PRODUCT X(6)*X(110)
    :align: center
 
-   **X(163) = TRILINEAR PRODUCT X(6)*X(110)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(163) = TRILINEAR PRODUCT X(6)*X(110)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,10 +28,6 @@ X(163) = TRILINEAR PRODUCT X(6)*X(110)
    :badge: 1 form
 
    * **Trilinears:** :math:`a^{2}/(b^{2} - c^{2}) : :`
-
-.. container:: note-item
-
-   :ref:`X(163) <X(163)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 13 lines

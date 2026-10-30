@@ -17,15 +17,15 @@ X(566) = HARMONIC OF X(50)
 .. admonition:: Group Preamble — Centers X(566)-X(584)
    :class: note
 
-   Centers :ref:`X(566) <X(566)>`-:ref:`X(584) <X(584)>` lie on the Brocard axis, L(3,6). Each is the center X of a circle that meets the sides of triangle ABC with three equal angles at X.
+   Centers :ref:`X(566) <X(566)>`-:ref:`X(584) <X(584)>` lie on the Brocard axis, L(3,6). Each is the center X of a circle that meets the sides of triangle :g:`ABC << A B C >>` with three equal angles at :g:`X <X>`.
 
-   Let A\ :sub:`B`, A\ :sub:`C`, B\ :sub:`C`, B\ :sub:`A`, C\ :sub:`A`, C\ :sub:`B` denote the meeting-points; e.g., A\ :sub:`B` and C\ :sub:`B` are on side CA. The equal angles are given by
+   Let :g:`A_{B} <A_B>`, :g:`A_{C} <A_C>`, :g:`B_{C} <B_C>`, :g:`B_{A} <B_A>`, :g:`C_{A} <C_A>`, :g:`C_{B} <C_B>` denote the meeting-points; e.g., :g:`A_{B} <A_B>` and :g:`C_{B} <C_B>` are on side :g:`CA <[ C A ]>`. The equal angles are given by
 
-   D = angle(A\ :sub:`B`\ XA\ :sub:`C`) = angle(B\ :sub:`C`\ XB\ :sub:`A`) = angle(C\ :sub:`A`\ XC\ :sub:`B)`
+   :g:`D <D>` = angle(:g:`A_{B}XA_{C} << A_B X A_C >>`) = angle(:g:`B_{C}XB_{A} << B_C X B_A >>`) = angle(:g:`C_{A}XC_{B)} << C_A X C_B) >>`
 
-   Then trilinears for X are given by
+   Then trilinears for :g:`X <X>` are given by
 
-   X = sin A + cot D/2 cos A : sin B + cot D/2 cos B : sin C + cot D/2 cos C.
+   :g:`X <X>` = sin A + cot D/2 cos A : sin B + cot D/2 cos B : sin C + cot D/2 cos C.
 
    Definitions: Y is the **orthogonal** of X if D(X) + D(Y) = π/2;
 
@@ -37,23 +37,19 @@ X(566) = HARMONIC OF X(50)
    :alt: X(566) = HARMONIC OF X(50)
    :align: center
 
-   **X(566) = HARMONIC OF X(50)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(566) = HARMONIC OF X(50)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\sin A + \cos A \cot D/2 : :`, where cot D/2 = 4\*area/(a\ :sup:`2` + b\ :sup:`2` + c\ :sup:`2` - 6R\ :sup:`2`), where R = abc/(4\*area)
-   | **Barycentrics:** :math:`a^2 (a^4 (b^2 + c^2) - a^2 (2 b^4 + b^2 c^2 + 2 c^4) + (b^2 - c^2)^2 (b^2 + c^2)) : :`
+   | **Trilinears:** :math:`\sin A + \cos A \cot D/2 : :`, where cot :math:`D/2 = 4 \operatorname{area}/(a^{2} + b^{2} + c^{2} - 6R^{2})`, where :math:`R = abc/(4 \operatorname{area})`
+   | **Barycentrics:** :math:`a^{2} (a^{4} (b^{2} + c^{2}) - a^{2} (2 b^{4} + b^{2} c^{2} + 2 c^{4}) + (b^{2} - c^{2})^{2} (b^{2} + c^{2})) : :`
    | **Search Value (6, 9, 13):** :math:`-13.317949197267`
 
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
-   * **Trilinears:** :math:`a[16(b^{2} + c^{2})σ^{2} - 3a^{2}b^{2}c^{2}] (M.Iliev, 5/13/07)`
-   * **Barycentrics:** :math:`(SB + SC) (3 R^2 - SA - SW) : :`
-
-.. container:: note-item
-
-   :ref:`X(566) <X(566)>` lies.
+   * **Trilinears:** :math:`a[16(b^{2} + c^{2})\sigma ^{2} - 3a^{2}b^{2}c^{2}]` (M.Iliev, 5/13/07)
+   * **Barycentrics:** :math:`(S_{B} + S_{C}) (3 R^{2} - S_{A} - S_{\omega}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 71 lines

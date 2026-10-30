@@ -16,24 +16,20 @@ X(614) = INTERSECTION OF LINES X(1)X(2) AND X(11)X(33)
    :alt: X(614) = INTERSECTION OF LINES X(1)X(2) AND X(11)X(33)
    :align: center
 
-   **X(614) = INTERSECTION OF LINES X(1)X(2) AND X(11)X(33)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(614) = INTERSECTION OF LINES X(1)X(2) AND X(11)X(33)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`a^{2} + b^{2} + c^{2} - 2bc (M. Iliev, 5/13/07)`
+   | **Trilinears:** :math:`a^{2} + b^{2} + c^{2} - 2bc` (M. Iliev, 5/13/07)
    | **Search Value (6, 9, 13):** :math:`0.648337510477`
 
 .. collapse:: Alternate Coordinates
    :badge: 4 forms
 
-   * **Trilinears:** :math:`bc - S_{\omega } : ca - S_{\omega } : ab - S_{\omega } (C. Lozada, 9/07/2013)`
-   * **Trilinears:** :math:`\cot^2(B/2) + \cot^2(C/2) : :`
+   * **Trilinears:** :math:`bc - S_{\omega } : ca - S_{\omega } : ab - S_{\omega }` (C. Lozada, 9/07/2013)
+   * **Trilinears:** :math:`\cot^{2}(B/2) + \cot^{2}(C/2) : :`
    * **Trilinears:** :math:`(1 - \cos A)(1 - \cos B \cos C) : :`
    * **Trilinears:** :math:`(1 - \sec A)(1 - \sec B \sec C) : :`
-
-.. container:: note-item
-
-   :ref:`X(614) <X(614)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 21 lines

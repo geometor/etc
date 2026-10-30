@@ -16,17 +16,13 @@ X(565) = INTERSECTION OF LINES X(49)X(93) AND X(143,324)
    :alt: X(565) = INTERSECTION OF LINES X(49)X(93) AND X(143,324)
    :align: center
 
-   **X(565) = INTERSECTION OF LINES X(49)X(93) AND X(143,324)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(565) = INTERSECTION OF LINES X(49)X(93) AND X(143,324)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`\cos(3B - 3C) : \cos(3C - 3A) : \cos(3A - 3B)`
    | **Barycentrics:** :math:`\sin A \cos(3B - 3C) : \sin B \cos(3C - 3A) : \sin C \cos(3A - 3B)`
    | **Search Value (6, 9, 13):** :math:`-2.145101227873`
-
-.. container:: note-item
-
-   :ref:`X(565) <X(565)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines

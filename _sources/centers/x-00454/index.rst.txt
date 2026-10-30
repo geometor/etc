@@ -10,28 +10,24 @@ X(454) = EULER X(155)-11th-SUBSTITUTION POINT
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(454) <X(454)>` has Shinagawa coefficients (E(E + 4F) - 4S\ :sup:`2`,-E\ :sup:`2` + 4S\ :sup:`2`).
+   As a point on the Euler line, :ref:`X(454) <X(454)>` has Shinagawa coefficients :math:`(E(E + 4F) - 4S^{2},-E^{2} + 4S^{2})`.
 
 .. figure:: x-00454.svg
    :alt: X(454) = EULER X(155)-11th-SUBSTITUTION POINT
    :align: center
 
-   **X(454) = EULER X(155)-11th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(454) = EULER X(155)-11th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`u^{2}\sec A : v^{2}\sec B : w^{2}\sec C`, where, u : v : w = :ref:`X(155) <X(155)>`; e.g., u(A,B,C) = (cos A)[cos\ :sup:`2`\ B + cos\ :sup:`2`\ C - cos\ :sup:`2`\ A]
+   | **Trilinears:** :math:`u^{2}\sec A : v^{2}\sec B : w^{2}\sec C`, where :math:`u : v : w` = :ref:`X(155) <X(155)>`; e.g., :math:`u(A,B,C) = (\cos A)[\cos^{2} B + \cos^{2} C - \cos^{2} A]`
    | **Barycentrics:** :math:`u^{2}\tan A : v^{2}\tan B : w^{2}\tan C`
-   | **Search Value (6, 9, 13):** :math:`-0.003927668967`
+   | **Search Value (6, 9, 13):** :math:`4.705865843343`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`a^2*(a^2 - b^2 - c^2)*(a^6 - 3*a^4*b^2 + 3*a^2*b^4 - b^6 - 3*a^4*c^2 - 2*a^2*b^2*c^2 + b^4*c^2 + 3*a^2*c^4 + b^2*c^4 - c^6)^2 : :`
-
-.. container:: note-item
-
-   :ref:`X(454) <X(454)>` lies.
+   * **Barycentrics:** :math:`a^{2} (a^{2} - b^{2} - c^{2}) \cdot (a^{6} - 3 a^{4} b^{2} + 3 a^{2} b^{4} - b^{6} - 3 a^{4} c^{2} - 2 a^{2} b^{2} c^{2} + b^{4} c^{2} + 3 a^{2} c^{4} + b^{2} c^{4} - c^{6})^{2} : :`
 
 .. collapse:: Incident Central Lines
    :badge: 9 lines

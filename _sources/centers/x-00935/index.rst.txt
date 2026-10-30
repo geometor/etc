@@ -16,12 +16,12 @@ X(935) = POINT ALCOR
    :alt: X(935) = POINT ALCOR
    :align: center
 
-   **X(935) = POINT ALCOR** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(935) = POINT ALCOR** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = 1/(bw - cv), u : v : w = :ref:`X(67) <X(67)>`
-   | **Barycentrics:** :math:`1/((b^2 - c^2) (b^2 + c^2 - a^2) (b^4 + c^4 - a^4 - b^2 c^2)) : :`
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = 1/(bw - cv)`,\ :math:`u : v : w` = :ref:`X(67) <X(67)>`
+   | **Barycentrics:** :math:`1/((b^{2} - c^{2}) (b^{2} + c^{2} - a^{2}) (b^{4} + c^{4} - a^{4} - b^{2} c^{2})) : :`
    | **Search Value (6, 9, 13):** :math:`1.208870298682`
 
 .. container:: note-item
@@ -40,7 +40,7 @@ X(935) = POINT ALCOR
    * :ref:`X(935) <X(935)>` = anticomplement of X(38971)
    * :ref:`X(935) <X(935)>` = :ref:`X(63) <X(63)>`-:term:`isoconjugate <isoconjugate>` of X(2492)
    * :ref:`X(935) <X(935)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(6) <X(6)>`\ \ :ref:`X(67) <X(67)>` (the radical axis of the orthocentroidal circle and Dao-Moses-Telv circle)
-   * :ref:`X(935) <X(935)>` = concurrence of reflections in sides of ABC of line :ref:`X(4) <X(4)>`\ \ :ref:`X(67) <X(67)>`
+   * :ref:`X(935) <X(935)>` = concurrence of reflections in sides of :g:`ABC << A B C >>` of line :ref:`X(4) <X(4)>`\ \ :ref:`X(67) <X(67)>`
    * :ref:`X(935) <X(935)>` = polar conjugate of X(9979)
    * :ref:`X(935) <X(935)>` = Ψ(:ref:`X(3) <X(3)>`, :ref:`X(67) <X(67)>`)
    * :ref:`X(935) <X(935)>` = Ψ(:ref:`X(4) <X(4)>`, :ref:`X(67) <X(67)>`)

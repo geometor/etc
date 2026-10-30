@@ -16,16 +16,12 @@ X(904) = X(238)-HIRST INVERSE OF X(256)
    :alt: X(904) = X(238)-HIRST INVERSE OF X(256)
    :align: center
 
-   **X(904) = X(238)-HIRST INVERSE OF X(256)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(904) = X(238)-HIRST INVERSE OF X(256)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`a^{2}/(a^{2} + bc) : :`
    | **Search Value (6, 9, 13):** :math:`0.702654375347`
-
-.. container:: note-item
-
-   :ref:`X(904) <X(904)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines

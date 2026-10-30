@@ -16,16 +16,12 @@ X(954) = INTERSECTION OF LINES X(1)X(6) AND X(3)X(7)
    :alt: X(954) = INTERSECTION OF LINES X(1)X(6) AND X(3)X(7)
    :align: center
 
-   **X(954) = INTERSECTION OF LINES X(1)X(6) AND X(3)X(7)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(954) = INTERSECTION OF LINES X(1)X(6) AND X(3)X(7)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`a^{5} + (b + c)[2a^{2}(b^{2} + c^{2} - a^{2} + bc) - (b - c)^{2}(2bc + ab + ac)] : :`
    | **Search Value (6, 9, 13):** :math:`1.864940916861`
-
-.. container:: note-item
-
-   :ref:`X(954) <X(954)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 9 lines

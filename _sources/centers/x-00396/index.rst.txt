@@ -16,16 +16,12 @@ X(396) = MIDPOINT OF X(13) AND X(15)
    :alt: X(396) = MIDPOINT OF X(13) AND X(15)
    :align: center
 
-   **X(396) = MIDPOINT OF X(13) AND X(15)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(396) = MIDPOINT OF X(13) AND X(15)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`\cos(B - C) + 2 \cos(A - \pi /3) : :`
    | **Search Value (6, 9, 13):** :math:`1.589194586230`
-
-.. container:: note-item
-
-   :ref:`X(396) <X(396)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 15 lines
@@ -55,11 +51,11 @@ Notes
 
 .. container:: note-item
 
-   :ref:`X(396) <X(396)>` is the centroid of the points Ab, Ac, Bc, Ba, Ca, Cb in the construction of the 3rd Fermat-Dao equilateral triangle; see X(16267). Also, :ref:`X(396) <X(396)>` is the center of the ellipse passing through these six points. (:person:`Randy Hutson <randy-hutson>`, March 14, 2018)
+   :ref:`X(396) <X(396)>` is the centroid of the points :g:`A_{b} <A_b>`, :g:`A_{c} <A_c>`, :g:`B_{c} <B_c>`, :g:`B_{a} <B_a>`, :g:`C_{a} <C_a>`, :g:`C_{b} <C_b>` in the construction of the 3rd Fermat-Dao equilateral triangle; see X(16267). Also, :ref:`X(396) <X(396)>` is the center of the ellipse passing through these six points. (:person:`Randy Hutson <randy-hutson>`, March 14, 2018)
 
 .. container:: note-item
 
-   Let F = :ref:`X(13) <X(13)>`, the 1st Fermat point. Let Ab be the point on CA and Ac the point on AB such that FAbAc is an equilateral triangle. Let A' be the midpoint of FAbAc, and define B' and C' cyclically. The triangle A'B'C', here named the **7th Fermat-Dao equilateral triangle**, is perspective to ABC. The circumcircle of A'B'C' is the pedal circle of :ref:`X(13) <X(13)>` and (X15), and the centroid of A'B'C' is :ref:`X(396) <X(396)>`. The perspector of ABC and A'B'C' is :ref:`X(2) <X(2)>`, and the centroid of A'B'C' is :ref:`X(396) <X(396)>`.
+   Let :g:`F <F>` = :ref:`X(13) <X(13)>`, the 1st Fermat point. Let :g:`A_{b} <A_b>` be the point on :g:`CA <[ C A ]>` and :g:`A_{c} <A_c>` the point on :g:`AB <[ A B ]>` such that FAbAc is an equilateral triangle. Let :g:`A' <A'>` be the midpoint of FAbAc, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The triangle :g:`A'B'C' << A' B' C' >>`, here named the **7th Fermat-Dao equilateral triangle**, is perspective to :g:`ABC << A B C >>`. The circumcircle of :g:`A'B'C' << A' B' C' >>` is the pedal circle of :ref:`X(13) <X(13)>` and (X15), and the centroid of :g:`A'B'C' << A' B' C' >>` is :ref:`X(396) <X(396)>`. The perspector of :g:`ABC << A B C >>` and :g:`A'B'C' << A' B' C' >>` is :ref:`X(2) <X(2)>`, and the centroid of :g:`A'B'C' << A' B' C' >>` is :ref:`X(396) <X(396)>`.
 
 .. container:: note-item
 

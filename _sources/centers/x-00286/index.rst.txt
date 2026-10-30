@@ -16,17 +16,13 @@ X(286) = X(4)-CROSS CONJUGATE OF X(27)
    :alt: X(286) = X(4)-CROSS CONJUGATE OF X(27)
    :align: center
 
-   **X(286) = X(4)-CROSS CONJUGATE OF X(27)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(286) = X(4)-CROSS CONJUGATE OF X(27)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`(\csc 2A)/(\sin B + \sin C) : (\csc 2B)/(\sin C + \sin A) : (\csc 2C)/(\sin A + \sin B)`
    | **Barycentrics:** :math:`(\sec A)/(\sin B + \sin C) : (\sec B)/(\sin C + \sin A) : (\sec C)/(\sin A + \sin B)`
    | **Search Value (6, 9, 13):** :math:`-17.390107023003`
-
-.. container:: note-item
-
-   :ref:`X(286) <X(286)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 9 lines

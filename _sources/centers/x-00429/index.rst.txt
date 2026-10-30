@@ -10,24 +10,24 @@ X(429) = EULER X(58)-5th-SUBSTITUTION POINT
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(429) <X(429)>` has Shinagawa coefficients ($a$F,$a$(E + F) + 2abc).
+   As a point on the Euler line, :ref:`X(429) <X(429)>` has Shinagawa coefficients :math:`(\$a\$F,\$a\$(E + F) + 2abc)`.
 
 .. figure:: x-00429.svg
    :alt: X(429) = EULER X(58)-5th-SUBSTITUTION POINT
    :align: center
 
-   **X(429) = EULER X(58)-5th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(429) = EULER X(58)-5th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(v + w)\sec A : (w + u)\sec B : (u + v)\sec C`, where, u : v : w = :ref:`X(58) <X(58)>`; e.g., u = u(a,b,c) = a/(b + c)
+   | **Trilinears:** :math:`(v + w)\sec A : (w + u)\sec B : (u + v)\sec C`, where :math:`u : v : w` = :ref:`X(58) <X(58)>`; e.g., :math:`u = u(a,b,c) = a/(b + c)`
    | **Barycentrics:** :math:`(v + w)\tan A : (w + u)\tan B : (u + v)\tan C`
    | **Search Value (6, 9, 13):** :math:`44.999584520517`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`(b + c)*(-a^2 + b^2 - c^2)*(a^2 + b^2 - c^2)*(a*b + b^2 + a*c + c^2) : :`
+   * **Barycentrics:** :math:`(b + c) \cdot (-a^{2} + b^{2} - c^{2}) \cdot (a^{2} + b^{2} - c^{2}) \cdot (a b + b^{2} + a c + c^{2}) : :`
 
 .. container:: note-item
 

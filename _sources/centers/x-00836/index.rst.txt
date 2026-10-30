@@ -16,17 +16,13 @@ X(836) = CROSSPOINT OF X(1) AND X(394)
    :alt: X(836) = CROSSPOINT OF X(1) AND X(394)
    :align: center
 
-   **X(836) = CROSSPOINT OF X(1) AND X(394)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(836) = CROSSPOINT OF X(1) AND X(394)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = sin B sec\ :sup:`2`\ B + sin C sec\ :sup:`2`\ C
-   | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where g(A,B,C) = sin A f(A,B,C)
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = \sin B \sec^{2} B + \sin C \sec^{2} C`
+   | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where :math:`g(A,B,C) = \sin A f(A,B,C)`
    | **Search Value (6, 9, 13):** :math:`2.621417052429`
-
-.. container:: note-item
-
-   :ref:`X(836) <X(836)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines

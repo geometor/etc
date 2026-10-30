@@ -10,23 +10,19 @@ X(599) = ISOTOMIC CONJUGATE OF X(598)
 
 .. enunciation::
 
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the Artzt triangle and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(599) <X(599)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (:person:`Randy Hutson <randy-hutson>`, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the Artzt triangle and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(599) <X(599)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (:person:`Randy Hutson <randy-hutson>`, August 30, 2020)
 
 .. figure:: x-00599.svg
    :alt: X(599) = ISOTOMIC CONJUGATE OF X(598)
    :align: center
 
-   **X(599) = ISOTOMIC CONJUGATE OF X(598)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(599) = ISOTOMIC CONJUGATE OF X(598)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`bc(a^{2} - 2b^{2} - 2c^{2}) : ca(b^{2} - 2c^{2} - 2a^{2}) : ab(c^{2} - 2a^{2} - 2b^{2})`
    | **Barycentrics:** :math:`a^{2} - 2b^{2} - 2c^{2} : b^{2} - 2c^{2} - 2a^{2} : c^{2} - 2a^{2} - 2b^{2}`
    | **Search Value (6, 9, 13):** :math:`4.265829089912`
-
-.. container:: note-item
-
-   :ref:`X(599) <X(599)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 7 lines
@@ -58,7 +54,7 @@ Notes
 
 .. container:: note-item
 
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(6) <X(6)>` and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(599) <X(599)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (Randy Hutson, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(6) <X(6)>` and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(599) <X(599)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
 
 .. toctree::
    :hidden:

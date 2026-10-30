@@ -10,26 +10,23 @@ X(138) = X(111)-OF-ORTHIC-TRIANGLE
 
 .. enunciation::
 
-   Barycentrics (v + w) tan A : (w + u) tan B : (u + v) tan C
+   :ref:`X(138) <X(138)>` = :ref:`X(111) <X(111)>`-of-:term:`orthic triangle <orthic-triangle>`
 
 .. figure:: x-00138.svg
    :alt: X(138) = X(111)-OF-ORTHIC-TRIANGLE
    :align: center
 
-   **X(138) = X(111)-OF-ORTHIC-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(138) = X(111)-OF-ORTHIC-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(v + w) \sec A : (w + u) \sec B : (u + v) \sec C`, where, u = u(A,B,C) = (sin 2A)/(2 sin\ :sup:`2`\ 2A - sin\ :sup:`2`\ 2B - sin\ :sup:`2`\ 2C), v = u(B,C,A), w = u(C,A,B)
+   | **Trilinears:** :math:`(v + w) \sec A : (w + u) \sec B : (u + v) \sec C`, where :math:`u = u(A,B,C) = (\sin 2A)/(2 \sin^{2} 2A - \sin^{2} 2B - \sin^{2} 2C)`, :math:`v = u(B,C,A)`, :math:`w = u(C,A,B)`
+   | **Barycentrics:** :math:`(v + w) \tan A : (w + u) \tan B : (u + v) \tan C`
    | **Search Value (6, 9, 13):** :math:`3.323272182949`
 
 .. container:: note-item
 
    :ref:`X(138) <X(138)>` lies on the nine-point circle
-
-.. container:: note-item
-
-   :ref:`X(138) <X(138)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines
@@ -40,7 +37,7 @@ X(138) = X(111)-OF-ORTHIC-TRIANGLE
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(138) <X(138)>` = :ref:`X(111) <X(111)>`-of-:term:`orthic triangle <orthic-triangle>`
+   * :ref:`X(138) <X(138)>` = :ref:`X(111) <X(111)>`-of-orthic triangle
    * :ref:`X(138) <X(138)>` = Λ(:ref:`X(51) <X(51)>`, :ref:`X(53) <X(53)>`), wrt orthic triangle
 
 .. toctree::

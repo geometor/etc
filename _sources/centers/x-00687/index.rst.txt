@@ -16,17 +16,13 @@ X(687) = TRILINEAR POLE OF LINE X(4)X(110)
    :alt: X(687) = TRILINEAR POLE OF LINE X(4)X(110)
    :align: center
 
-   **X(687) = TRILINEAR POLE OF LINE X(4)X(110)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(687) = TRILINEAR POLE OF LINE X(4)X(110)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C): f(B,C,A) : f(C,A,B)`, where f(A,B,C) = 1/[sec B csc(A - B) + sec C csc(A - C)]
-   | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where g(A,B,C) = sin A f(A,B,C)
+   | **Trilinears:** :math:`f(A,B,C): f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = 1/[\sec B \csc(A - B) + \sec C \csc(A - C)]`
+   | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where :math:`g(A,B,C) = \sin A f(A,B,C)`
    | **Search Value (6, 9, 13):** :math:`-2.864702884868`
-
-.. container:: note-item
-
-   :ref:`X(687) <X(687)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines

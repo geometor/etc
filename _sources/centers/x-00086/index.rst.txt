@@ -10,13 +10,13 @@ X(86) = CEVAPOINT OF INCENTER AND CENTROID
 
 .. enunciation::
 
-   Let A'B'C' be the :term:`anticomplement <anticomplement>` of the Feuerbach triangle. Let La be the tangent to the circumcircle at A', and define Lb and Lc cyclically. Let A″ be the point where La is tangent to the Steiner circumellipse, and define B″ and C″ cyclically. Let A\* = BB″∩CC″, and define B\* and C\* cyclically. The lines AA\*, BB\*, CC\* concur in :ref:`X(86) <X(86)>`. (:person:`Randy Hutson <randy-hutson>`, December 10, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`anticomplement <anticomplement>` of the Feuerbach triangle. Let :g:`L_{a} <L_a>` be the tangent to the circumcircle at :g:`A' <A'>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` be the point where :g:`L_{a} <L_a>` is tangent to the Steiner circumellipse, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Let :g:`A* <A*>` = :g:`BB″ <[ B B″ ]>`\ ∩\ :g:`CC″ <[ C C″ ]>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(86) <X(86)>`. (:person:`Randy Hutson <randy-hutson>`, December 10, 2016)
 
 .. figure:: x-00086.svg
    :alt: X(86) = CEVAPOINT OF INCENTER AND CENTROID
    :align: center
 
-   **X(86) = CEVAPOINT OF INCENTER AND CENTROID** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(86) = CEVAPOINT OF INCENTER AND CENTROID** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,11 +27,7 @@ X(86) = CEVAPOINT OF INCENTER AND CENTROID
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(86) <X(86)>` = 2(r\ :sup:`2` + 2rR + s\ :sup:`2`)\*\ :ref:`X(1) <X(1)>` + 3(r\ :sup:`2` + s\ :sup:`2`)\*\ :ref:`X(2) <X(2)>` - 4r\ :sup:`2`\ \*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-
-.. container:: note-item
-
-   :ref:`X(86) <X(86)>` lies.
+   * :ref:`X(86) <X(86)>` = :math:`2(r^{2} + 2rR + s^{2})` :ref:`X(1) <X(1)>` + :math:`3(r^{2} + s^{2})` :ref:`X(2) <X(2)>` - :math:`4r^{2}` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. collapse:: Incident Central Lines
    :badge: 17 lines
@@ -59,11 +55,11 @@ X(86) = CEVAPOINT OF INCENTER AND CENTROID
    * :ref:`X(86) <X(86)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(239) <X(239)>`\ \ :ref:`X(514) <X(514)>` (Lemoine axis of :term:`excentral triangle <excentral-triangle>`)
    * :ref:`X(86) <X(86)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X(1826)
    * :ref:`X(86) <X(86)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate)-of-X(1826)
-   * :ref:`X(86) <X(86)>` = perspector of Gemini triangle 1 and cross-triangle of ABC and Gemini triangle 1
-   * :ref:`X(86) <X(86)>` = perspector of ABC and cross-triangle of ABC and Gemini triangle 23
-   * :ref:`X(86) <X(86)>` = perspector of ABC and cross-triangle of ABC and Gemini triangle 24
-   * :ref:`X(86) <X(86)>` = perspector of ABC and cross-triangle of Gemini triangles 23 and 24
-   * :ref:`X(86) <X(86)>` = perspector of ABC and Gemini triangle 25
+   * :ref:`X(86) <X(86)>` = perspector of Gemini triangle 1 and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 1
+   * :ref:`X(86) <X(86)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 23
+   * :ref:`X(86) <X(86)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 24
+   * :ref:`X(86) <X(86)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of Gemini triangles 23 and 24
+   * :ref:`X(86) <X(86)>` = perspector of :g:`ABC << A B C >>` and Gemini triangle 25
    * :ref:`X(86) <X(86)>` = barycentric product of vertices of Gemini triangle 23
    * :ref:`X(86) <X(86)>` = barycentric product of vertices of Gemini triangle 24
    * :ref:`X(86) <X(86)>` = barycentric product of vertices of Gemini triangle 25
@@ -76,19 +72,19 @@ Notes
 
 .. container:: note-item
 
-   Let A1B1C1 be the 1st Conway triangle. Let A' be the trilinear pole of line B1C1, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(86) <X(86)>`. (Randy Hutson, December 10, 2016)
+   Let :g:`A_{1}B_{1}C_{1} << A_1 B_1 C_1 >>` be the 1st Conway triangle. Let :g:`A' <A'>` be the trilinear pole of line :g:`B_{1}C_{1} <[ B_1 C_1 ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(86) <X(86)>`. (Randy Hutson, December 10, 2016)
 
 .. container:: note-item
 
-   Let A5B5C5 be the 5th Conway triangle. Let A' be the trilinear pole of line B5C5, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(86) <X(86)>`. (Randy Hutson, December 10, 2016)
+   Let :g:`A_{5}B_{5}C_{5} << A_5 B_5 C_5 >>` be the 5th Conway triangle. Let :g:`A' <A'>` be the trilinear pole of line :g:`B_{5}C_{5} <[ B_5 C_5 ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(86) <X(86)>`. (Randy Hutson, December 10, 2016)
 
 .. container:: note-item
 
-   Let A\ :sub:`3`\ B\ :sub:`3`\ C\ :sub:`3` and A\ :sub:`4`\ B\ :sub:`4`\ C\ :sub:`4` be Gemini triangles 3 and 4, resp. Let L\ :sub:`A` be the tangent at A to conic {A,B\ :sub:`3`,C\ :sub:`3`,B\ :sub:`4`,C\ :sub:`4`}}, and define L\ :sub:`B`, L\ :sub:`C` cyclically. Let A' = L\ :sub:`B`\ ∩L\ :sub:`C`, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(86) <X(86)>`. (Randy Hutson, January 15, 2019)
+   Let :g:`A_{3}B_{3}C_{3} << A_3 B_3 C_3 >>` and :g:`A_{4}B_{4}C_{4} << A_4 B_4 C_4 >>` be Gemini triangles 3 and 4, resp. Let :g:`L_{A} <L_A>` be the tangent at :g:`A <A>` to conic {A,\ :g:`B_{3} <B_3>`,\ :g:`C_{3} <C_3>`,\ :g:`B_{4} <B_4>`,\ :g:`C_{4} <C_4>`}}, and define :g:`L_{B} <L_B>`, :g:`L_{C} <L_C>` cyclically. Let :g:`A' <A'>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(86) <X(86)>`. (Randy Hutson, January 15, 2019)
 
 .. container:: note-item
 
-   Let A\ :sub:`21`\ B\ :sub:`21`\ C\ :sub:`21` be Gemini triangle 21. Let A' be the perspector of conic {A,B,C,B\ :sub:`21`,C\ :sub:`21`}}, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(86) <X(86)>`. (Randy Hutson, January 15, 2019)
+   Let :g:`A_{21}B_{21}C_{21} << A_21 B_21 C_21 >>` be Gemini triangle 21. Let :g:`A' <A'>` be the perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B_{21} <B_21>`,\ :g:`C_{21} <C_21>`}}, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(86) <X(86)>`. (Randy Hutson, January 15, 2019)
 
 .. toctree::
    :hidden:

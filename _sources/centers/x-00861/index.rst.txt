@@ -10,23 +10,19 @@ X(861) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(9)
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(861) <X(861)>` has Shinagawa coefficients (ES\ :sup:`2`\ +2$abS\ :sub:`C`\ $F-$ab$[2(E+F)F-S\ :sup:`2`], -3ES\ :sup:`2`\ +$abS\ :sub:`A`\ S\ :sub:`B`\ $-2$ab$S\ :sup:`2`).
+   As a point on the Euler line, :ref:`X(861) <X(861)>` has Shinagawa coefficients :math:`(ES^{2}+2\$abS_{C}\$F-\$ab\$[2(E+F)F-S^{2}], -3ES^{2}+\$abS_{A}S_{B}\$-2\$ab\$S^{2})`.
 
 .. figure:: x-00861.svg
    :alt: X(861) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(9)
    :align: center
 
-   **X(861) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(861) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B),`, where f(A,B,C) = tan(C/2) sin 2B sin(C - A) + tan(B/2) sin 2C sin(B - A)
-   | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where g(A,B,C) = (sin A)f(A,B,C)
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = \tan(C/2) \sin 2B \sin(C - A) + \tan(B/2) \sin 2C \sin(B - A)`
+   | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where :math:`g(A,B,C) = (\sin A)f(A,B,C)`
    | **Search Value (6, 9, 13):** :math:`4.916619474317`
-
-.. container:: note-item
-
-   :ref:`X(861) <X(861)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines

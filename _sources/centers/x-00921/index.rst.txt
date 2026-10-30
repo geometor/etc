@@ -16,21 +16,17 @@ X(921) = ISOGONAL CONJUGATE OF X(920)
    :alt: X(921) = ISOGONAL CONJUGATE OF X(920)
    :align: center
 
-   **X(921) = ISOGONAL CONJUGATE OF X(920)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(921) = ISOGONAL CONJUGATE OF X(920)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`1/(\cos^{2}B + \cos^{2}C - \cos^{2}A) : :`
+   | **Trilinears:** :math:`1/(\cos^{2} B + \cos^{2} C - \cos^{2} A) : :`
    | **Search Value (6, 9, 13):** :math:`6.909789463241`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`1/(a^6 - 3 a^4 (b^2 + c^2) + a^2 (3 b^4 - 2 b^2 c^2 + 3 c^4) - (b^2 - c^2)^2 (b^2 + c^2)) : :`
-
-.. container:: note-item
-
-   :ref:`X(921) <X(921)>` lies.
+   * **Trilinears:** :math:`1/(a^{6} - 3 a^{4} (b^{2} + c^{2}) + a^{2} (3 b^{4} - 2 b^{2} c^{2} + 3 c^{4}) - (b^{2} - c^{2})^{2} (b^{2} + c^{2})) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines

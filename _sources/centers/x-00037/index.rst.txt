@@ -11,13 +11,13 @@ X(37) = CROSSPOINT OF INCENTER AND CENTROID
 
 .. enunciation::
 
-   Let A'B'C' be the :term:`cevian triangle <cevian-triangle>` of :ref:`X(1) <X(1)>`. Let A″ be the centroid of triangle AB'C', and define B″ and C″ cyclically. Then the lines AA″, BB″, CC″ concur in :ref:`X(37) <X(37)>`. (Eric Danneels, :cite:`Hyacinthos <hyacinthos>` 7892, 9/13/03)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`cevian triangle <cevian-triangle>` of :ref:`X(1) <X(1)>`. Let :g:`A″ <A″>` be the centroid of triangle :g:`AB'C' << A B' C' >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Then the lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(37) <X(37)>`. (Eric Danneels, :cite:`Hyacinthos <hyacinthos>` 7892, 9/13/03)
 
 .. figure:: x-00037.svg
    :alt: X(37) = CROSSPOINT OF INCENTER AND CENTROID
    :align: center
 
-   **X(37) = CROSSPOINT OF INCENTER AND CENTROID** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(37) = CROSSPOINT OF INCENTER AND CENTROID** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -35,11 +35,7 @@ X(37) = CROSSPOINT OF INCENTER AND CENTROID
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(37) <X(37)>` = (r\ :sup:`2` + 2rR - s\ :sup:`2`)\*\ :ref:`X(1) <X(1)>` - 6rR\*\ :ref:`X(2) <X(2)>` - 2r\ :sup:`2`\ \*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-
-.. container:: note-item
-
-   :ref:`X(37) <X(37)>` lies.
+   * :ref:`X(37) <X(37)>` = :math:`(r^{2} + 2rR - s^{2})` :ref:`X(1) <X(1)>` - :math:`6rR` :ref:`X(2) <X(2)>` - :math:`2r^{2}` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. collapse:: Incident Central Lines
    :badge: 39 lines
@@ -50,7 +46,7 @@ X(37) = CROSSPOINT OF INCENTER AND CENTROID
 .. collapse:: Functional Relations
    :badge: 45 relations
 
-   * :ref:`X(37) <X(37)>` = perspector of ABC and the :term:`medial triangle <medial-triangle>` of the :term:`incentral triangle <incentral-triangle>` of ABC. (:person:`Randy Hutson <randy-hutson>`, August 23, 2011)
+   * :ref:`X(37) <X(37)>` = perspector of :g:`ABC << A B C >>` and the :term:`medial triangle <medial-triangle>` of the :term:`incentral triangle <incentral-triangle>` of :g:`ABC << A B C >>`. (:person:`Randy Hutson <randy-hutson>`, August 23, 2011)
    * :ref:`X(37) <X(37)>` = center of the Hofstadter ellipse E(1/2); see :ref:`X(359) <X(359)>`. This is the incentral inellipse, which is the trilinear square of the antiorthic axis. (Randy Hutson, August 9, 2014)
    * :ref:`X(37) <X(37)>` = midpoint of X(i) and X(j) for these (i,j): (:ref:`75 <X(75)>`, :ref:`192 <X(192)>`), (:ref:`190 <X(190)>`, :ref:`335 <X(335)>`)
    * :ref:`X(37) <X(37)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(81) <X(81)>`
@@ -80,36 +76,36 @@ X(37) = CROSSPOINT OF INCENTER AND CENTROID
    * :ref:`X(37) <X(37)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X(286) <X(286)>`
    * :ref:`X(37) <X(37)>` = {:ref:`X(6) <X(6)>`,\ :ref:`X(9) <X(9)>`}-harmonic conjugate of :ref:`X(44) <X(44)>`
    * :ref:`X(37) <X(37)>` = :ref:`X(160) <X(160)>`-of-:term:`intouch triangle <intouch-triangle>`
-   * :ref:`X(37) <X(37)>` = perpector of ABC and n(Medial)\*n(Incentral) triangle
+   * :ref:`X(37) <X(37)>` = perpector of :g:`ABC << A B C >>` and n(Medial)\*n(Incentral) triangle
    * :ref:`X(37) <X(37)>` = homothetic center of medial triangle and inverse of n(Medial)\*n(Incentral) triangle
    * :ref:`X(37) <X(37)>` = perspector of incentral triangle and :term:`tangential triangle <tangential-triangle>`, wrt incentral triangle, of circumconic of incentral triangle centered at :ref:`X(1) <X(1)>` (the bicevian conic of :ref:`X(1) <X(1)>` and :ref:`X(57) <X(57)>`)
    * :ref:`X(37) <X(37)>` = inverse-in-circumconic-centered-at-:ref:`X(9) <X(9)>` of X(1757)
    * :ref:`X(37) <X(37)>` = complement wrt incentral triangle of X(2667)
-   * :ref:`X(37) <X(37)>` = perspector of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of 2nd circumperp triangle
+   * :ref:`X(37) <X(37)>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of 2nd circumperp triangle
    * :ref:`X(37) <X(37)>` = perspector of medial triangle and Gergonne line extraversion triangle
    * :ref:`X(37) <X(37)>` = trilinear pole, wrt Gergonne line extraversion triangle, of Gergonne line
-   * :ref:`X(37) <X(37)>` = perspector of ABC and cross-triangle of Gemini triangles 3 and 4
-   * :ref:`X(37) <X(37)>` = perspector of ABC and cross-triangle of ABC and Gemini triangle 3
-   * :ref:`X(37) <X(37)>` = perspector of ABC and cross-triangle of ABC and Gemini triangle 4
-   * :ref:`X(37) <X(37)>` = perspector of ABC and cross-triangle of ABC and Gemini triangle 16
-   * :ref:`X(37) <X(37)>` = center of the {ABC, Gemini 17}-circumconic
-   * :ref:`X(37) <X(37)>` = perspector of ABC and unary cofactor triangle of Gemini triangle 23
-   * :ref:`X(37) <X(37)>` = incentral-to-ABC :term:`barycentric image <barycentric-image>` of :ref:`X(37) <X(37)>`
+   * :ref:`X(37) <X(37)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of Gemini triangles 3 and 4
+   * :ref:`X(37) <X(37)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 3
+   * :ref:`X(37) <X(37)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 4
+   * :ref:`X(37) <X(37)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 16
+   * :ref:`X(37) <X(37)>` = center of the {:g:`ABC << A B C >>`, Gemini 17}-circumconic
+   * :ref:`X(37) <X(37)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of Gemini triangle 23
+   * :ref:`X(37) <X(37)>` = incentral-to-:g:`ABC << A B C >>` :term:`barycentric image <barycentric-image>` of :ref:`X(37) <X(37)>`
 
 Notes
 -----
 
 .. container:: note-item
 
-   A simple construction of :ref:`X(37) <X(37)>` as a crosspoint can be generalized as follows: let DEF be the medial triangle of ABC and let A'B'C' be the cevian triangle of a point U other than the centroid, :ref:`X(2) <X(2)>`. The crosspoint of :ref:`X(2) <X(2)>` and U is then the point of concurrence of lines LD,ME,NF, where L,M,N are the respective midpoints of AA', BB', CC'. If U=u : v : w (trilinears), then crosspoint(:ref:`X(2) <X(2)>`,U) = b/w+c/v : c/u+a/w : a/v+b/u, assuming that uvw is nonzero. In particular, if U=\ :ref:`X(1) <X(1)>`, then the crosspoint is :ref:`X(37) <X(37)>`. (Seiichi Kirikami, July 10, 2011)
+   A simple construction of :ref:`X(37) <X(37)>` as a crosspoint can be generalized as follows: let :g:`DEF << D E F >>` be the medial triangle of :g:`ABC << A B C >>` and let :g:`A'B'C' << A' B' C' >>` be the cevian triangle of a point U other than the centroid, :ref:`X(2) <X(2)>`. The crosspoint of :ref:`X(2) <X(2)>` and U is then the point of concurrence of lines LD,ME,NF, where L,M,N are the respective midpoints of :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>`. If :g:`U <U>`\ =\ :math:`u : v : w` (trilinears), then crosspoint(:ref:`X(2) <X(2)>`,U) = b/w+c/v : c/u+a/w : a/v+b/u, assuming that uvw is nonzero. In particular, if :g:`U <U>`\ =\ :ref:`X(1) <X(1)>`, then the crosspoint is :ref:`X(37) <X(37)>`. (Seiichi Kirikami, July 10, 2011)
 
 .. container:: note-item
 
-   Let A' be the trilinear pole of the tangent to the Apollonius circle where it meets the A-excircle, and define B' and C' cyclically. The triangle A'B'C' is homothetic to ABC at :ref:`X(37) <X(37)>`. (Randy Hutson, April 9, 2016)
+   Let :g:`A' <A'>` be the trilinear pole of the tangent to the Apollonius circle where it meets the :g:`A <A>`-excircle, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The triangle :g:`A'B'C' << A' B' C' >>` is homothetic to :g:`ABC << A B C >>` at :ref:`X(37) <X(37)>`. (Randy Hutson, April 9, 2016)
 
 .. container:: note-item
 
-   Let Oa be the A-extraversion of the Conway circle (the circle centered at the A-excenter and passing through A, with radius sqrt(r\ :sub:`a`\ ^2 + s^2), where r\ :sub:`a` is the A-exradius). Let La be the radical axis of the circumcircle and Oa. Let A' = Lb∩Lc, B' = Lc∩La, C' = La∩Lb. The lines AA', BB', CC' concur in :ref:`X(37) <X(37)>`. (Randy Hutson, April 9, 2016)
+   Let :g:`O_{a} <O_a>` be the A-extraversion of the Conway circle (the circle centered at the :g:`A <A>`-excenter and passing through :g:`A <A>`, with radius :math:`\sqrt{r_{a}^{2} + s^{2}}`, where :math:`r_{a}` is the A-exradius). Let :g:`L_{a} <L_a>` be the radical axis of the circumcircle and :g:`O_{a} <O_a>`. Let :g:`A' <A'>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, :g:`B' <B'>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C' <C'>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(37) <X(37)>`. (Randy Hutson, April 9, 2016)
 
 .. container:: note-item
 

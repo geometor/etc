@@ -16,7 +16,7 @@ X(551) = MIDPOINT OF X(1) AND X(2)
    :alt: X(551) = MIDPOINT OF X(1) AND X(2)
    :align: center
 
-   **X(551) = MIDPOINT OF X(1) AND X(2)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(551) = MIDPOINT OF X(1) AND X(2)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -32,11 +32,7 @@ X(551) = MIDPOINT OF X(1) AND X(2)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(551) <X(551)>` = :ref:`X(1) <X(1)>` + :ref:`X(2) <X(2)>` = 2 :ref:`X(8) <X(8)>` - 5 :ref:`X(10) <X(10)>`
-
-.. container:: note-item
-
-   :ref:`X(551) <X(551)>` lies.
+   * :ref:`X(551) <X(551)>` = :ref:`X(1) <X(1)>` + :ref:`X(2) <X(2)>` = :math:`2` :ref:`X(8) <X(8)>` - :math:`5` :ref:`X(10) <X(10)>`
 
 .. collapse:: Incident Central Lines
    :badge: 15 lines

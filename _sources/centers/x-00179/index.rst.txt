@@ -11,23 +11,19 @@ X(179) = 1st AJIMA-MALFATTI POINT
 
 .. enunciation::
 
-   The famous Malfatti Problem is to construct three circles O(A), O(B), O(C) inside ABC such that each is externally tangent to the other two, O(A) is tangent to lines AB and AC, O(B) is tangent to BC and BA, and O(C) is tangent to CA and CB. Let A' = O(B)∩O(C), B' = O(C)∩O(A), C' = O(A)∩O(B). The lines AA',BB',CC' concur in :ref:`X(179) <X(179)>`. Trilinears are found in Yff's unpublished notes. See also the Yff-Malfatti Point, :ref:`X(400) <X(400)>`, having trilinears csc\ :sup:`4`\ (A/4) : csc\ :sup:`4`\ (B/4) : csc\ :sup:`4`\ (C/4), and the references for historical notes.
+   The famous Malfatti Problem is to construct three circles O(A), O(B), O(C) inside :g:`ABC << A B C >>` such that each is externally tangent to the other two, O(A) is tangent to lines :g:`AB <[ A B ]>` and :g:`AC <[ A C ]>`, O(B) is tangent to :g:`BC <[ B C ]>` and :g:`BA <[ B A ]>`, and O(C) is tangent to :g:`CA <[ C A ]>` and :g:`CB <[ C B ]>`. Let :g:`A' <A'>` = O(B)∩O(C), :g:`B' <B'>` = O(C)∩O(A), :g:`C' <C'>` = O(A)∩O(B). The lines :g:`AA' <[ A A' ]>`,\ :g:`BB' <[ B B' ]>`,\ :g:`CC' <[ C C' ]>` concur in :ref:`X(179) <X(179)>`. Trilinears are found in Yff's unpublished notes. See also the Yff-Malfatti Point, :ref:`X(400) <X(400)>`, having trilinears :math:`\csc^{4}(A/4)` : :math:`\csc^{4}(B/4)` : :math:`\csc^{4}(C/4)`, and the references for historical notes.
 
 .. figure:: x-00179.svg
    :alt: X(179) = 1st AJIMA-MALFATTI POINT
    :align: center
 
-   **X(179) = 1st AJIMA-MALFATTI POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(179) = 1st AJIMA-MALFATTI POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`\sec^{4}(A/4) : \sec^{4}(B/4) : \sec^{4}(C/4)`
    | **Barycentrics:** :math:`\sin A \sec^{4}(A/4) : \sin B \sec^{4}(B/4) : \sin C \sec^{4}(C/4)`
    | **Search Value (6, 9, 13):** :math:`1.257739557595`
-
-.. container:: note-item
-
-   :ref:`X(179) <X(179)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines
@@ -52,7 +48,7 @@ Notes
 
 .. container:: note-item
 
-   Let A', B', C' be the centers of the Malfatti circles. Let A″ be the trilinear product B'\*C', and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in X(1142). The lines A'A″, B'B″, C'C″ concur in :ref:`X(179) <X(179)>`. (:person:`Randy Hutson <randy-hutson>`, July 11, 2019)
+   Let :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>` be the centers of the Malfatti circles. Let :g:`A″ <A″>` be the trilinear product :g:`B' <B'>`\ \*\ :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in X(1142). The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(179) <X(179)>`. (:person:`Randy Hutson <randy-hutson>`, July 11, 2019)
 
 .. container:: note-item
 

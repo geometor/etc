@@ -12,7 +12,7 @@ X(997) = MIDPOINT OF X(1) AND X(200) — Code
    :alt: X(997) = MIDPOINT OF X(1) AND X(200)
    :align: center
 
-   **X(997) = MIDPOINT OF X(1) AND X(200)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(997) = MIDPOINT OF X(1) AND X(200)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

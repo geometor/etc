@@ -16,29 +16,25 @@ X(576) = ORTHOHARMONIC OF X(187)
    :alt: X(576) = ORTHOHARMONIC OF X(187)
    :align: center
 
-   **X(576) = ORTHOHARMONIC OF X(187)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(576) = ORTHOHARMONIC OF X(187)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\sin A + \cot(D/2) \cos A`, where cot(D/2) = - (a\ :sup:`2` + b\ :sup:`2` + c\ :sup:`2`)/(12\*area)
-   | **Barycentrics:** :math:`a^2(a^4 + 2b^4 + 2c^4 - 3a^2b^2 - 3a^2c^2 - 2b^2c^2) : :`
+   | **Trilinears:** :math:`\sin A + \cot(D/2) \cos A`, where :math:`\cot(D/2) = - (a^{2} + b^{2} + c^{2})/(12 \operatorname{area})`
+   | **Barycentrics:** :math:`a^{2}(a^{4} + 2b^{4} + 2c^{4} - 3a^{2}b^{2} - 3a^{2}c^{2} - 2b^{2}c^{2}) : :`
    | **Search Value (6, 9, 13):** :math:`-1.901818704500`
 
 .. collapse:: Alternate Coordinates
    :badge: 3 forms
 
-   * **Trilinears:** 3 sin A - cos A cot ω : : (Peter J. C. Moses, 7/20/03)
-   * **Trilinears:** cos A - 3 sin A tan ω : : (Peter J. C. Moses, 8/22/03)
+   * **Trilinears:** :math:`3 \sin A - \cos A \cot \omega : :` (Peter J. C. Moses, 7/20/03)
+   * **Trilinears:** :math:`\cos A - 3 \sin A \tan \omega : :` (Peter J. C. Moses, 8/22/03)
    * **Trilinears:** :math:`2 \cos(A + 2\omega ) - \cos(A - 2\omega ) + \cos A : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(576) <X(576)>` = :ref:`X(3) <X(3)>` - 3\ :ref:`X(6) <X(6)>`
-
-.. container:: note-item
-
-   :ref:`X(576) <X(576)>` lies.
+   * :ref:`X(576) <X(576)>` = :ref:`X(3) <X(3)>` - :math:`3` :ref:`X(6) <X(6)>`
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines
@@ -57,7 +53,7 @@ X(576) = ORTHOHARMONIC OF X(187)
    * :ref:`X(576) <X(576)>` = {:ref:`X(61) <X(61)>`,\ :ref:`X(62) <X(62)>`}-harmonic conjugate of :ref:`X(32) <X(32)>`
    * :ref:`X(576) <X(576)>` = pole of Lemoine axis wrt circle {:ref:`X(371) <X(371)>`,\ :ref:`X(372) <X(372)>`,PU(1),PU(39)}
    * :ref:`X(576) <X(576)>` = center of Ehrmann circle
-   * :ref:`X(576) <X(576)>` = :ref:`X(1) <X(1)>` of 2nd Ehrmann triangle if ABC is acute
+   * :ref:`X(576) <X(576)>` = :ref:`X(1) <X(1)>` of 2nd Ehrmann triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(576) <X(576)>` = Cundy-Parry Phi transform of :ref:`X(187) <X(187)>`
    * :ref:`X(576) <X(576)>` = Cundy-Parry Psi transform of :ref:`X(671) <X(671)>`
 

@@ -10,23 +10,19 @@ X(594) = ISOGONAL CONJUGATE OF X(593)
 
 .. enunciation::
 
-   Let A'B'C' be the Feuerbach triangle. Let La be the tangent to the nine-point circle at A', and define Lb and Lc cyclically. La, Lb, Lc are also tangent to the Steiner inellipse. Let A″, B″, C″ be the respective touchpoints. The lines AA″, BB″, CC″ concur in :ref:`X(594) <X(594)>`. (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the Feuerbach triangle. Let :g:`L_{a} <L_a>` be the tangent to the nine-point circle at :g:`A' <A'>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` are also tangent to the Steiner inellipse. Let :g:`A″ <A″>`, :g:`B″ <B″>`, :g:`C″ <C″>` be the respective touchpoints. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(594) <X(594)>`. (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
 
 .. figure:: x-00594.svg
    :alt: X(594) = ISOGONAL CONJUGATE OF X(593)
    :align: center
 
-   **X(594) = ISOGONAL CONJUGATE OF X(593)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(594) = ISOGONAL CONJUGATE OF X(593)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`(b + c)^{2}/a : (c + a)^{2}/b : (a + b)^{2}/c`
    | **Barycentrics:** :math:`(b + c)^{2} : (c + a)^{2} : (a + b)^{2}`
    | **Search Value (6, 9, 13):** :math:`3.568078024947`
-
-.. container:: note-item
-
-   :ref:`X(594) <X(594)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 15 lines
@@ -44,7 +40,7 @@ X(594) = ISOGONAL CONJUGATE OF X(593)
    * :ref:`X(594) <X(594)>` = :term:`crosspoint <crosspoint>` of :ref:`X(10) <X(10)>` and :ref:`X(321) <X(321)>`
    * :ref:`X(594) <X(594)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`6 <X(6)>`, :ref:`595 <X(595)>`), (:ref:`58 <X(58)>`, 1333)
    * :ref:`X(594) <X(594)>` = barycentric square of :ref:`X(10) <X(10)>`
-   * :ref:`X(594) <X(594)>` = perspector of ABC and cross-triangle of ABC and Gemini triangle 19
+   * :ref:`X(594) <X(594)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 19
    * :ref:`X(594) <X(594)>` = barycentric product of vertices of Gemini triangle 26
    * :ref:`X(594) <X(594)>` = {:ref:`X(6) <X(6)>`,\ :ref:`X(8) <X(8)>`}-harmonic conjugate of X(17362)
    * :ref:`X(594) <X(594)>` = {X(3661),X(3662)}-harmonic conjugate of X(17228)

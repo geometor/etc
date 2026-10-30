@@ -10,13 +10,13 @@ X(321) = ISOTOMIC CONJUGATE OF X(81)
 
 .. enunciation::
 
-   Let A\ :sub:`26`\ B\ :sub:`26`\ C\ :sub:`26` be Gemini triangle 26. Let A' be the perspector of conic {A,B,C,B\ :sub:`26`,C\ :sub:`26`}}, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(321) <X(321)>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
+   Let :g:`A_{26}B_{26}C_{26} << A_26 B_26 C_26 >>` be Gemini triangle 26. Let :g:`A' <A'>` be the perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B_{26} <B_26>`,\ :g:`C_{26} <C_26>`}}, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(321) <X(321)>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
 
 .. figure:: x-00321.svg
    :alt: X(321) = ISOTOMIC CONJUGATE OF X(81)
    :align: center
 
-   **X(321) = ISOTOMIC CONJUGATE OF X(81)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(321) = ISOTOMIC CONJUGATE OF X(81)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -53,20 +53,20 @@ X(321) = ISOTOMIC CONJUGATE OF X(81)
    * :ref:`X(321) <X(321)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`75 <X(75)>`, :ref:`76 <X(76)>`), (:ref:`313 <X(313)>`, :ref:`349 <X(349)>`)
    * :ref:`X(321) <X(321)>` = :term:`crosssum <crosssum>` of :ref:`X(31) <X(31)>` and :ref:`X(32) <X(32)>`
    * :ref:`X(321) <X(321)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(667) <X(667)>`\ \ :ref:`X(838) <X(838)>`
-   * :ref:`X(321) <X(321)>` = homothetic center of ABC and inverse of n(Medial)\*n(Incentral) triangle
+   * :ref:`X(321) <X(321)>` = homothetic center of :g:`ABC << A B C >>` and inverse of n(Medial)\*n(Incentral) triangle
    * :ref:`X(321) <X(321)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(28) <X(28)>` (line :ref:`X(513) <X(513)>`\ X(1430))
    * :ref:`X(321) <X(321)>` = polar conjugate of :ref:`X(28) <X(28)>`
    * :ref:`X(321) <X(321)>` = Danneels point of :ref:`X(75) <X(75)>`
    * :ref:`X(321) <X(321)>` = inverse-in-Fuhrmann-circle of X(5016)
    * :ref:`X(321) <X(321)>` = barycentric product :ref:`X(100) <X(100)>`\ \*\ :ref:`X(850) <X(850)>`
-   * :ref:`X(321) <X(321)>` = perspector of ABC and cross-triangle of Gemini triangles 13 and 14
-   * :ref:`X(321) <X(321)>` = perspector of ABC and cross-triangle of ABC and Gemini triangle 13
-   * :ref:`X(321) <X(321)>` = perspector of ABC and cross-triangle of ABC and Gemini triangle 14
-   * :ref:`X(321) <X(321)>` = perspector of ABC and cross-triangle of ABC and Gemini triangle 20
+   * :ref:`X(321) <X(321)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of Gemini triangles 13 and 14
+   * :ref:`X(321) <X(321)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 13
+   * :ref:`X(321) <X(321)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 14
+   * :ref:`X(321) <X(321)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 20
    * :ref:`X(321) <X(321)>` = barycentric product of vertices of Gemini triangle 16
    * :ref:`X(321) <X(321)>` = barycentric product of vertices of Gemini triangle 20
-   * :ref:`X(321) <X(321)>` = perspector of Gemini triangle 22 and cross-triangle of ABC and Gemini triangle 22
-   * :ref:`X(321) <X(321)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(523) <X(523)>`\ X(1577) (the perspectrix of ABC and Gemini triangles 21 and 27)
+   * :ref:`X(321) <X(321)>` = perspector of Gemini triangle 22 and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 22
+   * :ref:`X(321) <X(321)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(523) <X(523)>`\ X(1577) (the perspectrix of :g:`ABC << A B C >>` and Gemini triangles 21 and 27)
 
 .. toctree::
    :hidden:

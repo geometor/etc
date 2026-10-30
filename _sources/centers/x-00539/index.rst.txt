@@ -16,20 +16,16 @@ X(539) = DIRECTION OF VECTOR AX + BX + CX, where X = X(54)
    :alt: X(539) = DIRECTION OF VECTOR AX + BX + CX, where X = X(54)
    :align: center
 
-   **X(539) = DIRECTION OF VECTOR AX + BX + CX, where X = X(54)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(539) = DIRECTION OF VECTOR AX + BX + CX, where X = X(54)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where, f(a,b,c) = (2ax - by - cz)/a, x = x(A,B,C) = 1/cos(B-C), y = x(B,C,A), z = x(C,A,B)
-   | **Barycentrics:** :math:`(a^2 - b^2 - c^2) (2 a^8 - 4 a^6 (b^2 + c^2) + 3 a^4 (b^4 + c^4) - 2 a^2 (b^2 - c^2)^2 (b^2 + c^2) + (b^2 - c^2)^4) : :`
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = (2ax - by - cz)/a`, :math:`x = x(A,B,C) = 1/\cos(B-C)`, :math:`y = x(B,C,A)`, :math:`z = x(C,A,B)`
+   | **Barycentrics:** :math:`(a^{2} - b^{2} - c^{2}) (2 a^{8} - 4 a^{6} (b^{2} + c^{2}) + 3 a^{4} (b^{4} + c^{4}) - 2 a^{2} (b^{2} - c^{2})^{2} (b^{2} + c^{2}) + (b^{2} - c^{2})^{4}) : :`
 
 .. container:: note-item
 
    :ref:`X(539) <X(539)>` lies on the line at infinity.
-
-.. container:: note-item
-
-   :ref:`X(539) <X(539)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines

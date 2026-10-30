@@ -16,7 +16,7 @@ X(332) = ISOTOMIC CONJUGATE OF X(225)
    :alt: X(332) = ISOTOMIC CONJUGATE OF X(225)
    :align: center
 
-   **X(332) = ISOTOMIC CONJUGATE OF X(225)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(332) = ISOTOMIC CONJUGATE OF X(225)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,11 +27,7 @@ X(332) = ISOTOMIC CONJUGATE OF X(225)
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`(b^2 + c^2 - a^2) (b + c - a)/(b + c) : :`
-
-.. container:: note-item
-
-   :ref:`X(332) <X(332)>` lies.
+   * **Barycentrics:** :math:`(b^{2} + c^{2} - a^{2}) (b + c - a)/(b + c) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 7 lines

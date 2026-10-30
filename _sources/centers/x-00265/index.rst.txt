@@ -10,19 +10,19 @@ X(265) = REFLECTION OF X(3) IN X(125)
 
 .. enunciation::
 
-   Let P = :ref:`X(74) <X(74)>`, H = :ref:`X(4) <X(4)>`, H' =H-of-BCP, H'' = H-of-CAP, and H''' = H-of ABP. Then :ref:`X(265) <X(265)>` is the circumcenter of the cyclic quadrilateral HH'H''H'''. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   Let :g:`P <P>` = :ref:`X(74) <X(74)>`, H = :ref:`X(4) <X(4)>`, :g:`H' <H'>` =H-of-:g:`BCP << B C P >>`, :g:`H″ <H″>` = H-of-:g:`CAP << C A P >>`, and H''' = H-of :g:`ABP << A B P >>`. Then :ref:`X(265) <X(265)>` is the circumcenter of the cyclic quadrilateral HH'H''H'''. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. figure:: x-00265.svg
    :alt: X(265) = REFLECTION OF X(3) IN X(125)
    :align: center
 
-   **X(265) = REFLECTION OF X(3) IN X(125)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(265) = REFLECTION OF X(3) IN X(125)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`\sin 2A \csc 3A : :`
    | **Barycentrics:** :math:`\sin A \sin 2A \csc 3A : :`
-   | **Tripolars:** :math:`a^2((a^2 - b^2 - c^2)^2 - b^2 c^2) : :`
+   | **Tripolars:** :math:`a^{2}((a^{2} - b^{2} - c^{2})^{2} - b^{2} c^{2}) : :`
    | **Search Value (6, 9, 13):** :math:`0.198180509168`
 
 .. collapse:: Alternate Coordinates
@@ -30,13 +30,13 @@ X(265) = REFLECTION OF X(3) IN X(125)
 
    * **Trilinears:** :math:`1/(4 \cos A - \sec A) : :`
    * **Trilinears:** :math:`\csc(A + \pi /3) - \csc(A - \pi /3) : :`
-   * **Trilinears:** :math:`(\cos A)/(1 - 4 \cos^2 A) : :`
-   * **Barycentrics:** :math:`(a^2 - b^2 - c^2)/[(a^2 - b^2 - c^2)^2 - b^2c^2] : :`
+   * **Trilinears:** :math:`(\cos A)/(1 - 4 \cos^{2} A) : :`
+   * **Barycentrics:** :math:`(a^{2} - b^{2} - c^{2})/[(a^{2} - b^{2} - c^{2})^{2} - b^{2}c^{2}] : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(265) <X(265)>` = 3 :ref:`X(2) <X(2)>` - 5 X(15081),3 :ref:`X(2) <X(2)>` - 4 X(20304),3 :ref:`X(3) <X(3)>` - 4 X(6699),2 :ref:`X(3) <X(3)>` - 5 X(15027),2 :ref:`X(3) <X(3)>` - 3 X(15061),3 :ref:`X(3) <X(3)>` - 2 X(16163),5 :ref:`X(3) <X(3)>` - 8 X(20397),3 :ref:`X(4) <X(4)>` - :ref:`X(146) <X(146)>`,3 :ref:`X(4) <X(4)>` - 2 X(1539),3 :ref:`X(4) <X(4)>` + X(12317),3 :ref:`X(5) <X(5)>` - 2 X(10272),4 :ref:`X(5) <X(5)>` - 3 X(14643),2 :ref:`X(5) <X(5)>` - 3 X(14644),4 :ref:`X(5) <X(5)>` - X(23236),\ :ref:`X(20) <X(20)>` - 4 X(20379),3 :ref:`X(51) <X(51)>` - 2 X(11557),\ :ref:`X(67) <X(67)>` + 2 X(32273),\ :ref:`X(74) <X(74)>` - 3 X(9140),3 :ref:`X(74) <X(74)>` - 2 X(14677),2 :ref:`X(74) <X(74)>` - 3 X(20126),2 :ref:`X(98) <X(98)>` - 3 X(14849),2 :ref:`X(99) <X(99)>` - 3 X(14850),3 :ref:`X(110) <X(110)>` - 4 X(10272),\ :ref:`X(110) <X(110)>` - 4 X(11801),2 :ref:`X(110) <X(110)>` - 3 X(14643),\ :ref:`X(110) <X(110)>` - 3 X(14644),2 :ref:`X(113) <X(113)>` - 3 :ref:`X(381) <X(381)>`,4 :ref:`X(113) <X(113)>` - 3 X(5655),3 :ref:`X(113) <X(113)>` - 2 X(6053),3 :ref:`X(125) <X(125)>` - 2 X(6699),4 :ref:`X(125) <X(125)>` - X(12121),2 :ref:`X(125) <X(125)>` + X(12902),4 :ref:`X(125) <X(125)>` - 5 X(15027),4 :ref:`X(125) <X(125)>` - 3 X(15061),3 :ref:`X(125) <X(125)>` - X(16163),5 :ref:`X(125) <X(125)>` - 4 X(20397),4 :ref:`X(140) <X(140)>` - 3 X(15035),4 :ref:`X(140) <X(140)>` - 5 X(15059),\ :ref:`X(146) <X(146)>` + 3 X(3448),2 :ref:`X(146) <X(146)>` - 3 X(7728),\ :ref:`X(146) <X(146)>` - 6 X(10113),3 :ref:`X(381) <X(381)>` - :ref:`X(399) <X(399)>`,9 :ref:`X(381) <X(381)>` - 4 X(6053),3 :ref:`X(381) <X(381)>` - 4 X(7687),\ :ref:`X(382) <X(382)>` + 2 X(16003),2 :ref:`X(399) <X(399)>` - 3 X(5655),3 :ref:`X(399) <X(399)>` - 4 X(6053),\ :ref:`X(399) <X(399)>` - 4 X(7687),\ :ref:`X(476) <X(476)>` - 3 X(5627),2 :ref:`X(476) <X(476)>` - 3 X(14993),2 :ref:`X(477) <X(477)>` - 3 X(14851)
+   * :ref:`X(265) <X(265)>` = :math:`3` :ref:`X(2) <X(2)>` - :math:`5` X(15081), :math:`3` :ref:`X(2) <X(2)>` - :math:`4` X(20304), :math:`3` :ref:`X(3) <X(3)>` - :math:`4` X(6699), :math:`2` :ref:`X(3) <X(3)>` - :math:`5` X(15027), :math:`2` :ref:`X(3) <X(3)>` - :math:`3` X(15061), :math:`3` :ref:`X(3) <X(3)>` - :math:`2` X(16163), :math:`5` :ref:`X(3) <X(3)>` - :math:`8` X(20397), :math:`3` :ref:`X(4) <X(4)>` - :ref:`X(146) <X(146)>`, :math:`3` :ref:`X(4) <X(4)>` - :math:`2` X(1539), :math:`3` :ref:`X(4) <X(4)>` + X(12317), :math:`3` :ref:`X(5) <X(5)>` - :math:`2` X(10272), :math:`4` :ref:`X(5) <X(5)>` - :math:`3` X(14643), :math:`2` :ref:`X(5) <X(5)>` - :math:`3` X(14644), :math:`4` :ref:`X(5) <X(5)>` - X(23236), :ref:`X(20) <X(20)>` - :math:`4` X(20379), :math:`3` :ref:`X(51) <X(51)>` - :math:`2` X(11557), :ref:`X(67) <X(67)>` + :math:`2` X(32273), :ref:`X(74) <X(74)>` - :math:`3` X(9140), :math:`3` :ref:`X(74) <X(74)>` - :math:`2` X(14677), :math:`2` :ref:`X(74) <X(74)>` - :math:`3` X(20126), :math:`2` :ref:`X(98) <X(98)>` - :math:`3` X(14849), :math:`2` :ref:`X(99) <X(99)>` - :math:`3` X(14850), :math:`3` :ref:`X(110) <X(110)>` - :math:`4` X(10272), :ref:`X(110) <X(110)>` - :math:`4` X(11801), :math:`2` :ref:`X(110) <X(110)>` - :math:`3` X(14643), :ref:`X(110) <X(110)>` - :math:`3` X(14644), :math:`2` :ref:`X(113) <X(113)>` - :math:`3` :ref:`X(381) <X(381)>`, :math:`4` :ref:`X(113) <X(113)>` - :math:`3` X(5655), :math:`3` :ref:`X(113) <X(113)>` - :math:`2` X(6053), :math:`3` :ref:`X(125) <X(125)>` - :math:`2` X(6699), :math:`4` :ref:`X(125) <X(125)>` - X(12121), :math:`2` :ref:`X(125) <X(125)>` + X(12902), :math:`4` :ref:`X(125) <X(125)>` - :math:`5` X(15027), :math:`4` :ref:`X(125) <X(125)>` - :math:`3` X(15061), :math:`3` :ref:`X(125) <X(125)>` - X(16163), :math:`5` :ref:`X(125) <X(125)>` - :math:`4` X(20397), :math:`4` :ref:`X(140) <X(140)>` - :math:`3` X(15035), :math:`4` :ref:`X(140) <X(140)>` - :math:`5` X(15059), :ref:`X(146) <X(146)>` + :math:`3` X(3448), :math:`2` :ref:`X(146) <X(146)>` - :math:`3` X(7728), :ref:`X(146) <X(146)>` - :math:`6` X(10113), :math:`3` :ref:`X(381) <X(381)>` - :ref:`X(399) <X(399)>`, :math:`9` :ref:`X(381) <X(381)>` - :math:`4` X(6053), :math:`3` :ref:`X(381) <X(381)>` - :math:`4` X(7687), :ref:`X(382) <X(382)>` + :math:`2` X(16003), :math:`2` :ref:`X(399) <X(399)>` - :math:`3` X(5655), :math:`3` :ref:`X(399) <X(399)>` - :math:`4` X(6053), :ref:`X(399) <X(399)>` - :math:`4` X(7687), :ref:`X(476) <X(476)>` - :math:`3` X(5627), :math:`2` :ref:`X(476) <X(476)>` - :math:`3` X(14993), :math:`2` :ref:`X(477) <X(477)>` - :math:`3` X(14851)
 
 .. container:: note-item
 
@@ -80,8 +80,8 @@ X(265) = REFLECTION OF X(3) IN X(125)
    * :ref:`X(265) <X(265)>` = barycentric product X(i)\*X(j) for these {i,j}: {:ref:`3 <X(3)>`, :ref:`94 <X(94)>`}, {:ref:`6 <X(6)>`, :ref:`328 <X(328)>`}, {:ref:`63 <X(63)>`, 2166}, {:ref:`68 <X(68)>`, 18883}, {:ref:`69 <X(69)>`, 1989}, {:ref:`99 <X(99)>`, 14582}, {:ref:`110 <X(110)>`, 14592}, {:ref:`184 <X(184)>`, 20573}, {:ref:`287 <X(287)>`, 14356}, {:ref:`305 <X(305)>`, 11060}, {:ref:`311 <X(311)>`, 11077}, {:ref:`343 <X(343)>`, 1141}, {:ref:`394 <X(394)>`, 6344}, {:ref:`476 <X(476)>`, :ref:`525 <X(525)>`}, {:ref:`577 <X(577)>`, 18817}, {:ref:`656 <X(656)>`, 32680}, {:ref:`850 <X(850)>`, 32662}, {1304, 18557}, {1807, 30690}, {2410, 14220}, {3260, 11079}, {3267, 14560}, {3519, 30529}, {3580, 12028}, {3926, 18384}, {4558, 10412}, {4563, 15475}, {5392, 5961}, {5627, 11064}, {7100, 18359}, {7799, 14595}, {10217, 11092}, {10218, 11078}, {14208, 32678}, {14254, 14919}, {14559, 14977}, {16077, 18558}
    * :ref:`X(265) <X(265)>` = barycentric quotient X(i)/X(j) for these {i,j}: {:ref:`2 <X(2)>`, :ref:`340 <X(340)>`}, {:ref:`3 <X(3)>`, :ref:`323 <X(323)>`}, {:ref:`4 <X(4)>`, 14165}, {:ref:`5 <X(5)>`, 14918}, {:ref:`6 <X(6)>`, :ref:`186 <X(186)>`}, {:ref:`13 <X(13)>`, :ref:`471 <X(471)>`}, {:ref:`14 <X(14)>`, :ref:`470 <X(470)>`}, {:ref:`30 <X(30)>`, 14920}, {:ref:`48 <X(48)>`, 6149}, {:ref:`50 <X(50)>`, 3043}, {:ref:`51 <X(51)>`, 11062}, {:ref:`69 <X(69)>`, 7799}, {:ref:`79 <X(79)>`, 17923}, {:ref:`94 <X(94)>`, :ref:`264 <X(264)>`}, {:ref:`110 <X(110)>`, 14590}, {:ref:`184 <X(184)>`, :ref:`50 <X(50)>`}, {:ref:`216 <X(216)>`, 1154}, {:ref:`248 <X(248)>`, 14355}, {:ref:`328 <X(328)>`, :ref:`76 <X(76)>`}, {:ref:`343 <X(343)>`, 1273}, {:ref:`476 <X(476)>`, :ref:`648 <X(648)>`}, {:ref:`520 <X(520)>`, 8552}, {:ref:`525 <X(525)>`, 3268}, {:ref:`577 <X(577)>`, 22115}, {:ref:`647 <X(647)>`, :ref:`526 <X(526)>`}, {:ref:`656 <X(656)>`, 32679}, {:ref:`810 <X(810)>`, 2624}, {1141, :ref:`275 <X(275)>`}, {1576, 14591}, {1807, 3219}, {1989, :ref:`4 <X(4)>`}, {2006, 7282}, {2160, 1870}, {2161, 6198}, {2165, 5962}, {2166, :ref:`92 <X(92)>`}, {2341, 11107}, {2437, 7480}, {2963, :ref:`562 <X(562)>`}, {3003, 1986}, {3049, 14270}, {3269, 16186}, {3284, 1511}, {3457, 8740}, {3458, 8739}, {4558, 10411}, {5158, 3581}, {5627, 16080}, {5961, 1993}, {6344, 2052}, {7100, 3218}, {7110, 5081}, {8014, 23714}, {8015, 23715}, {8606, 2323}, {8818, :ref:`860 <X(860)>`}, {9033, 5664}, {9380, 11597}, {10097, 9213}, {10217, 11078}, {10218, 11092}, {10412, 14618}, {11060, :ref:`25 <X(25)>`}, {11063, 2914}, {11064, 6148}, {11077, :ref:`54 <X(54)>`}, {11079, :ref:`74 <X(74)>`}, {11083, 10632}, {11088, 10633}, {12028, 2986}, {14220, 2411}, {14356, :ref:`297 <X(297)>`}, {14559, 4235}, {14560, :ref:`112 <X(112)>`}, {14575, 19627}, {14582, :ref:`523 <X(523)>`}, {14583, 1990}, {14592, :ref:`850 <X(850)>`}, {14595, 1989}, {15392, 13582}, {15451, 2081}, {15475, 2501}, {18384, :ref:`393 <X(393)>`}, {18479, 5158}, {18558, 9033}, {18817, 18027}, {18877, 14385}, {18883, :ref:`317 <X(317)>`}, {20573, 18022}, {20975, 2088}, {23968, 7473}, {30529, 32002}, {32662, :ref:`110 <X(110)>`}, {32678, :ref:`162 <X(162)>`}, {32680, :ref:`811 <X(811)>`}
    * :ref:`X(265) <X(265)>` = Johnson-circumconic antipode of :ref:`X(110) <X(110)>`
-   * :ref:`X(265) <X(265)>` = perspector of ABC and 2nd isogonal triangle of :ref:`X(4) <X(4)>`
-   * :ref:`X(265) <X(265)>` = perspector of ABC and Ehrmann side-triangle
+   * :ref:`X(265) <X(265)>` = perspector of :g:`ABC << A B C >>` and 2nd isogonal triangle of :ref:`X(4) <X(4)>`
+   * :ref:`X(265) <X(265)>` = perspector of :g:`ABC << A B C >>` and Ehrmann side-triangle
    * :ref:`X(265) <X(265)>` = perspector, wrt Ehrmann side-triangle, of Ehrmann conic
    * :ref:`X(265) <X(265)>` = pole of line :ref:`X(3) <X(3)>`\ \ :ref:`X(523) <X(523)>` (the line of the Ehrmann cross-triangle) wrt the Ehrmann conic
    * :ref:`X(265) <X(265)>` = homothetic center of :term:`orthic triangle <orthic-triangle>` and cross-triangle of Ehrmann side- and Ehrmann vertex-triangles
@@ -92,43 +92,43 @@ Notes
 
 .. container:: note-item
 
-   Let A' be the reflection in line BC of the A-vertex of the :term:`tangential triangle <tangential-triangle>`, and define B' and C' cyclically. The circumcircles of A'BC, B'CA, and C'AB concur in :ref:`X(265) <X(265)>`. Let A'' be the reflection in line BC of the A-vertex of the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(5) <X(5)>`, and define B'' and C'' cyclically. The circumcircles of AB''C'', BC''A'', CA''B'' concur in :ref:`X(265) <X(265)>`. (Randy Hutson, August 26, 2014)
+   Let :g:`A' <A'>` be the reflection in line :g:`BC <[ B C ]>` of the :g:`A <A>`-vertex of the :term:`tangential triangle <tangential-triangle>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The circumcircles of :g:`A'BC << A' B C >>`, :g:`B'CA << B' C A >>`, and :g:`C'AB << C' A B >>` concur in :ref:`X(265) <X(265)>`. Let :g:`A″ <A″>` be the reflection in line :g:`BC <[ B C ]>` of the :g:`A <A>`-vertex of the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(5) <X(5)>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The circumcircles of :g:`AB″C″ << A B″ C″ >>`, :g:`BC″A″ << B C″ A″ >>`, :g:`CA″B″ << C A″ B″ >>` concur in :ref:`X(265) <X(265)>`. (Randy Hutson, August 26, 2014)
 
 .. container:: note-item
 
-   Let A\*B\*C\* be the Kosnita triangle. Let A' be the orthopole of line B\*C\*, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(265) <X(265)>`. (Randy Hutson, August 26, 2014)
+   Let :g:`A*B*C* << A* B* C* >>` be the Kosnita triangle. Let :g:`A' <A'>` be the orthopole of line :g:`B*C* <[ B* C* ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(265) <X(265)>`. (Randy Hutson, August 26, 2014)
 
 .. container:: note-item
 
-   Let A'B'C' be the :ref:`X(3) <X(3)>`-Fuhrmann triangle. Let A'' be the reflection of A in line B'C', and define B'' and C'' cyclically. Then A''B''C'' is inversely similar to ABC, with similtude center :ref:`X(265) <X(265)>`, and A''B''C'' is perspective to ABC with persepctor :ref:`X(74) <X(74)>`. (Randy Hutson, August 26, 2014)
+   Let :g:`A'B'C' << A' B' C' >>` be the :ref:`X(3) <X(3)>`-Fuhrmann triangle. Let :g:`A″ <A″>` be the reflection of :g:`A <A>` in line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Then :g:`A″B″C″ << A″ B″ C″ >>` is inversely similar to :g:`ABC << A B C >>`, with similtude center :ref:`X(265) <X(265)>`, and :g:`A″B″C″ << A″ B″ C″ >>` is perspective to :g:`ABC << A B C >>` with persepctor :ref:`X(74) <X(74)>`. (Randy Hutson, August 26, 2014)
 
 .. container:: note-item
 
-   Let A'B'C' be the reflection triangle. Let L be the line through A' parallel to the Euler line, and define M and N cyclically. Let L' be the reflection of L in sideline BC, and define M' and N' cyclically. The lines L',M', N' concur in :ref:`X(265) <X(265)>`. (Randy Hutson, August 26, 2014)
+   Let :g:`A'B'C' << A' B' C' >>` be the reflection triangle. Let :g:`L <L>` be the line through :g:`A' <A'>` parallel to the Euler line, and define M and N cyclically. Let :g:`L' <L'>` be the reflection of :g:`L <L>` in sideline :g:`BC <[ B C ]>`, and define :g:`M' <M'>` and :g:`N' <N'>` cyclically. The lines :g:`L' <L'>`,\ :g:`M' <M'>`, :g:`N' <N'>` concur in :ref:`X(265) <X(265)>`. (Randy Hutson, August 26, 2014)
 
 .. container:: note-item
 
-   Let A'B'C' be the reflection triangle. Let A″ be the trilinear pole of line B'C', and define B″, C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(5) <X(5)>`. Let A\* be the trilinear pole, wrt A'B'C', of line B″C″, and define B\*, C\* cyclically. The lines AA\*, BB\*, CC\* concur in :ref:`X(265) <X(265)>`. (Randy Hutson, July 20, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the reflection triangle. Let :g:`A″ <A″>` be the trilinear pole of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(5) <X(5)>`. Let :g:`A* <A*>` be the trilinear pole, wrt :g:`A'B'C' << A' B' C' >>`, of line :g:`B″C″ <[ B″ C″ ]>`, and define :g:`B* <B*>`, :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(265) <X(265)>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
-   Let A' be the point such that triangle A'BC is directly similar to the orthic triangle, and define B', C' cyclically. The lines AA', BB', CC' concur in :ref:`X(265) <X(265)>`. If 'inversely' is substituted for 'directly', the lines concur in :ref:`X(3) <X(3)>`. (Randy Hutson, July 20, 2016)
+   Let :g:`A' <A'>` be the point such that triangle :g:`A'BC << A' B C >>` is directly similar to the orthic triangle, and define :g:`B' <B'>`, :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(265) <X(265)>`. If 'inversely' is substituted for 'directly', the lines concur in :ref:`X(3) <X(3)>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
-   Let A' be the isogonal conjugate of A wrt the A-altimedial triangle, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(265) <X(265)>`. (Randy Hutson, November 2, 2017)
+   Let :g:`A' <A'>` be the isogonal conjugate of :g:`A <A>` wrt the A-altimedial triangle, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(265) <X(265)>`. (Randy Hutson, November 2, 2017)
 
 .. container:: note-item
 
-   Let La be the line through A parallel to the Euler line of the A-altimedial triangle, and define Lb and Lc cyclically. Lines La, Lb, Lc concur in :ref:`X(265) <X(265)>`. (Randy Hutson, November 2, 2017)
+   Let :g:`L_{a} <L_a>` be the line through :g:`A <A>` parallel to the Euler line of the A-altimedial triangle, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Lines :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` concur in :ref:`X(265) <X(265)>`. (Randy Hutson, November 2, 2017)
 
 .. container:: note-item
 
-   Let AA\ :sub:`1`\ A\ :sub:`2`, BB\ :sub:`1`\ B\ :sub:`2`, CC\ :sub:`1`\ C\ :sub:`2` be the circumcircle-inscribed equilateral triangles used in the construction of the Trinh triangle. Let A' be the crosssum of A\ :sub:`1` and A\ :sub:`2`, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(265) <X(265)>`. (Randy Hutson, October 8, 2019)
+   Let :g:`AA_{1}A_{2} << A A_1 A_2 >>`, :g:`BB_{1}B_{2} << B B_1 B_2 >>`, :g:`CC_{1}C_{2} << C C_1 C_2 >>` be the circumcircle-inscribed equilateral triangles used in the construction of the Trinh triangle. Let :g:`A' <A'>` be the crosssum of :g:`A_{1} <A_1>` and :g:`A_{2} <A_2>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(265) <X(265)>`. (Randy Hutson, October 8, 2019)
 
 .. container:: note-item
 
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the orthocentroidal triangle and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(265) <X(265)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (Randy Hutson, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the orthocentroidal triangle and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(265) <X(265)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
 
 .. toctree::
    :hidden:

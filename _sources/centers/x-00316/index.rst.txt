@@ -11,24 +11,20 @@ X(316) = DROUSSENT PIVOT
 
 .. enunciation::
 
-   Let A'B'C' be the :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(4) <X(4)>` (the :term:`anticomplementary triangle <anticomplementary-triangle>`). The circumcircles of AA':ref:`X(4) <X(4)>`, BB':ref:`X(4) <X(4)>`, CC':ref:`X(4) <X(4)>` concur, other than :ref:`X(4) <X(4)>`, in :ref:`X(316) <X(316)>`. (:person:`Randy Hutson <randy-hutson>`, June 27, 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(4) <X(4)>` (the :term:`anticomplementary triangle <anticomplementary-triangle>`). The circumcircles of :g:`AA' <[ A A' ]>`:ref:`X(4) <X(4)>`, :g:`BB' <[ B B' ]>`:ref:`X(4) <X(4)>`, :g:`CC' <[ C C' ]>`:ref:`X(4) <X(4)>` concur, other than :ref:`X(4) <X(4)>`, in :ref:`X(316) <X(316)>`. (:person:`Randy Hutson <randy-hutson>`, June 27, 2018)
 
 .. figure:: x-00316.svg
    :alt: X(316) = DROUSSENT PIVOT
    :align: center
 
-   **X(316) = DROUSSENT PIVOT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(316) = DROUSSENT PIVOT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = bc(b\ :sup:`4` + c\ :sup:`4` - a\ :sup:`4` - b\ :sup:`2`\ c\ :sup:`2`)
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = b\ :sup:`4` + c\ :sup:`4` - a\ :sup:`4` - b\ :sup:`2`\ c\ :sup:`2`
-   | **Tripolars:** :math:`a^2 \sqrt{2(b^2 + c^2) - a^2} : :`
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = bc(b^{4} + c^{4} - a^{4} - b^{2}c^{2})`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = b^{4} + c^{4} - a^{4} - b^{2}c^{2}`
+   | **Tripolars:** :math:`a^{2} \sqrt{2(b^{2} + c^{2}) - a^{2}} : :`
    | **Search Value (6, 9, 13):** :math:`11.569873852650`
-
-.. container:: note-item
-
-   :ref:`X(316) <X(316)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 17 lines

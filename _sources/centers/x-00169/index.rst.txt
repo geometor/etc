@@ -16,7 +16,7 @@ X(169) = X(85)-CEVA CONJUGATE OF X(1)
    :alt: X(169) = X(85)-CEVA CONJUGATE OF X(1)
    :align: center
 
-   **X(169) = X(85)-CEVA CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(169) = X(85)-CEVA CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -26,11 +26,7 @@ X(169) = X(85)-CEVA CONJUGATE OF X(1)
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`a^3 - a^2 (b + c) + a (b^2 + c^2) - (b - c)^2 (b + c) : :`
-
-.. container:: note-item
-
-   :ref:`X(169) <X(169)>` lies.
+   * **Trilinears:** :math:`a^{3} - a^{2} (b + c) + a (b^{2} + c^{2}) - (b - c)^{2} (b + c) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 10 lines

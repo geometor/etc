@@ -12,7 +12,7 @@ X(932) = X(190)-CROSS CONJUGATE OF X(100) — Code
    :alt: X(932) = X(190)-CROSS CONJUGATE OF X(100)
    :align: center
 
-   **X(932) = X(190)-CROSS CONJUGATE OF X(100)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(932) = X(190)-CROSS CONJUGATE OF X(100)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

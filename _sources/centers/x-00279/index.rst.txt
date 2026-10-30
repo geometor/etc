@@ -16,27 +16,27 @@ X(279) = ISOGONAL CONJUGATE OF X(220)
    :alt: X(279) = ISOGONAL CONJUGATE OF X(220)
    :align: center
 
-   **X(279) = ISOGONAL CONJUGATE OF X(220)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(279) = ISOGONAL CONJUGATE OF X(220)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\csc A \tan^{2}A/2 : \csc B \tan^{2}B/2 : \csc C \tan^{2}C/2`
-   | **Barycentrics:** :math:`\tan^{2}A/2 : \tan^{2}B/2 : \tan^{2}C/2`
+   | **Trilinears:** :math:`\csc A \tan^{2} A/2 : \csc B \tan^{2} B/2 : \csc C \tan^{2} C/2`
+   | **Barycentrics:** :math:`\tan^{2} A/2 : \tan^{2} B/2 : \tan^{2} C/2`
    | **Search Value (6, 9, 13):** :math:`0.116757051176`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`(a + b - c)^2*(a - b + c)^2 : :`
+   * **Barycentrics:** :math:`(a + b - c)^{2} (a - b + c)^{2} : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(279) <X(279)>` = 2\*s^2\*\ :ref:`X(1) <X(1)>` - (r + 4 R)^2\*\ :ref:`X(7) <X(7)>`
+   * :ref:`X(279) <X(279)>` = :math:`2 s^{2}` :ref:`X(1) <X(1)>` - :math:`(r + 4 R)^{2}` :ref:`X(7) <X(7)>`
 
 .. container:: note-item
 
-   :ref:`X(279) <X(279)>` lies on the circumconic {A, B, C, :ref:`X(1) <X(1)>`, :ref:`X(2) <X(2)>`}}, the cubics K041, K360, K605, K623, K1011, K1044, K1189.
+   :ref:`X(279) <X(279)>` lies on the circumconic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`, :ref:`X(1) <X(1)>`, :ref:`X(2) <X(2)>`}}, the cubics K041, K360, K605, K623, K1011, K1044, K1189.
 
 .. collapse:: Incident Central Lines
    :badge: 181 lines
@@ -89,11 +89,11 @@ Notes
 
 .. container:: note-item
 
-   Let A\ :sub:`1`\ B\ :sub:`1`\ C\ :sub:`1` and A\ :sub:`2`\ B\ :sub:`2`\ C\ :sub:`2` be the 1st and 2nd Conway triangles. Let A' be the barycentric product A\ :sub:`1`\ \*A\ :sub:`2`, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(279) <X(279)>`. (Randy Hutson, July 11, 2019)
+   Let :g:`A_{1}B_{1}C_{1} << A_1 B_1 C_1 >>` and :g:`A_{2}B_{2}C_{2} << A_2 B_2 C_2 >>` be the 1st and 2nd Conway triangles. Let :g:`A' <A'>` be the barycentric product :g:`A_{1} <A_1>`\ \*\ :g:`A_{2} <A_2>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(279) <X(279)>`. (Randy Hutson, July 11, 2019)
 
 .. container:: note-item
 
-   An **exarc circle** is a circle tangent to two sides of a triangle ABC and externally tangent to the circumcircle of ABC. The point whose distance to the sides BC, CA, AB are proportional to the respective radii of the exarc circles is :ref:`X(279) <X(279)>`. The point having distances to the sides proportional to the radii of the inarc circles is :ref:`X(7) <X(7)>`. See **Martin Lukarevski**, "Exarc radii and the Finsler-Hadwiger inequality", *The Mathematical Gazette* 106, issue 565, March 2022, pp. 138-143.
+   An **exarc circle** is a circle tangent to two sides of a triangle :g:`ABC << A B C >>` and externally tangent to the circumcircle of :g:`ABC << A B C >>`. The point whose distance to the sides :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>` are proportional to the respective radii of the exarc circles is :ref:`X(279) <X(279)>`. The point having distances to the sides proportional to the radii of the inarc circles is :ref:`X(7) <X(7)>`. See **Martin Lukarevski**, "Exarc radii and the Finsler-Hadwiger inequality", *The Mathematical Gazette* 106, issue 565, March 2022, pp. 138-143.
 
 .. toctree::
    :hidden:

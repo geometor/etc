@@ -6,13 +6,13 @@ X(160) = X(37)-OF-TANGENTIAL-TRIANGLE — Code
 
 .. enunciation::
 
-   Barycentrics g(a,b,c) : g(b,c,a) : g(c,a,b), where g(a,b,c) = af(a,b,c)
+   :ref:`X(160) <X(160)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :term:`anticomplement <anticomplement>` of :term:`complementary conjugate <complementary-conjugate>` of X(34845)
 
 .. figure:: x-00160.svg
    :alt: X(160) = X(37)-OF-TANGENTIAL-TRIANGLE
    :align: center
 
-   **X(160) = X(37)-OF-TANGENTIAL-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(160) = X(37)-OF-TANGENTIAL-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

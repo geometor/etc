@@ -10,23 +10,19 @@ X(406) = EULER LINE INTERCEPT OF LINE X(10)X(33)
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(406) <X(406)>` has Shinagawa coefficients ($a$F, abc).
+   As a point on the Euler line, :ref:`X(406) <X(406)>` has Shinagawa coefficients :math:`(\$a\$F, abc)`.
 
 .. figure:: x-00406.svg
    :alt: X(406) = EULER LINE INTERCEPT OF LINE X(10)X(33)
    :align: center
 
-   **X(406) = EULER LINE INTERCEPT OF LINE X(10)X(33)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(406) = EULER LINE INTERCEPT OF LINE X(10)X(33)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = bc(a + b + c) + abc sec A
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = bc(a + b + c) + abc \sec A`
    | **Barycentrics:** :math:`b + c + a(1 + \sec A) : c + a + b(1 + \sec B) : a + b + c(1 + \sec C)`
    | **Search Value (6, 9, 13):** :math:`3.640581424626`
-
-.. container:: note-item
-
-   :ref:`X(406) <X(406)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines

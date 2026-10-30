@@ -12,7 +12,7 @@ X(724) = EVEN (- 3, 4) INFINITY POINT — Code
    :alt: X(724) = EVEN (- 3, 4) INFINITY POINT
    :align: center
 
-   **X(724) = EVEN (- 3, 4) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(724) = EVEN (- 3, 4) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

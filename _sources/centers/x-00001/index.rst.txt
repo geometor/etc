@@ -11,13 +11,13 @@ X(1) = INCENTER
 
 .. enunciation::
 
-   :ref:`X(1) <X(1)>` is the point of concurrence of the interior angle bisectors of ABC; the point inside ABC whose distances from sidelines BC, CA, AB are equal. This equal distance, r, is the radius of the incircle, given by r = 2\*area(ABC)/(a + b + c).
+   :ref:`X(1) <X(1)>` is the point of concurrence of the interior angle bisectors of :g:`ABC << A B C >>`; the point inside :g:`ABC << A B C >>` whose distances from sidelines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>` are equal. This equal distance, r, is the radius of the incircle, given by :math:`r = 2 \operatorname{area}(ABC)/(a + b + c)`.
 
 .. figure:: x-00001.svg
    :alt: X(1) = INCENTER
    :align: center
 
-   **X(1) = INCENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(1) = INCENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -30,16 +30,16 @@ X(1) = INCENTER
    :badge: 2 forms
 
    * **Barycentrics:** :math:`\sin A : \sin B : \sin C`
-   * **Tripolars:** :math:`\sec A' : :`, where A'B'C' is the :term:`excentral triangle <excentral-triangle>`
+   * **Tripolars:** :math:`\sec A' : :`, where :g:`A'B'C' << A' B' C' >>` is the :term:`excentral triangle <excentral-triangle>`
 
 .. collapse:: Linear Combinations
    :badge: 5 combinations
 
-   * :ref:`X(1) <X(1)>` = 3R\*\ :ref:`X(2) <X(2)>` + r\*\ :ref:`X(3) <X(3)>` + s\*cot(ω)\*\ :ref:`X(6) <X(6)>`
-   * :ref:`X(1) <X(1)>` = [A]/Ra + [B]/Rb + [C]/Rc - :ref:`X(176) <X(176)>`/Rs, where Ra, Rb, Rc = radii of Soddy circles, Rs = radius of inner Soddy circle, [A], [B], [C] are the vertices of ABC
-   * :ref:`X(1) <X(1)>` = [A]/Ra + [B]/Rb + [C]/Rc - :ref:`X(175) <X(175)>`/Rs', where Ra, Rb, Rc = radii of Soddy circles, Rs' = radius of outer Soddy circle, [A], [B], [C] are the vertices of ABC
-   * :ref:`X(1) <X(1)>` = (sin A)\*[A] + (sin B)\*[B] + (sin C)\*[C], where [A], [B], [C] are vertices of ABC
-   * :ref:`X(1) <X(1)>` = a\*[A] + b\*[B] + c\*[C], where [A], [B], [C] are vertices
+   * :ref:`X(1) <X(1)>` = :math:`3R` :ref:`X(2) <X(2)>` + :math:`r` :ref:`X(3) <X(3)>` + :math:`s \cot(\omega )` :ref:`X(6) <X(6)>`
+   * :ref:`X(1) <X(1)>` = :g:`A <A>` / :math:`R_{a}` + :g:`B <B>` / :math:`R_{b}` + :g:`C <C>` / :math:`R_{c}` - :ref:`X(176) <X(176)>` / :math:`R_{s}`, where :math:`R_{a}`, :math:`R_{b}`, :math:`R_{c}` = radii of Soddy circles, :math:`R_{s}` = radius of inner Soddy circle, :g:`A <A>`, :g:`B <B>`, :g:`C <C>` are the vertices of :g:`ABC << A B C >>`
+   * :ref:`X(1) <X(1)>` = :g:`A <A>` / :math:`R_{a}` + :g:`B <B>` / :math:`R_{b}` + :g:`C <C>` / :math:`R_{c}` - :ref:`X(175) <X(175)>` / :math:`R_{s}'`, where :math:`R_{a}`, :math:`R_{b}`, :math:`R_{c}` = radii of Soddy circles, :math:`R_{s}'` = radius of outer Soddy circle, :g:`A <A>`, :g:`B <B>`, :g:`C <C>` are the vertices of :g:`ABC << A B C >>`
+   * :ref:`X(1) <X(1)>` = :math:`(\sin A)` :g:`A <A>` + :math:`(\sin B)` :g:`B <B>` + :math:`(\sin C)` :g:`C <C>`, where :g:`A <A>`, :g:`B <B>`, :g:`C <C>` are vertices of :g:`ABC << A B C >>`
+   * :ref:`X(1) <X(1)>` = :math:`a` :g:`A <A>` + :math:`b` :g:`B <B>` + :math:`c` :g:`C <C>`, where :g:`A <A>`, :g:`B <B>`, :g:`C <C>` are vertices
 
 .. container:: note-item
 
@@ -111,19 +111,19 @@ X(1) = INCENTER
    * :ref:`X(1) <X(1)>` = perspector circumconic centered at :ref:`X(9) <X(9)>`
    * :ref:`X(1) <X(1)>` = eigencenter of mixtilinear excentral triangle
    * :ref:`X(1) <X(1)>` = eigencenter of 2nd Sharygin triangle
-   * :ref:`X(1) <X(1)>` = perspector of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of extangents triangle
-   * :ref:`X(1) <X(1)>` = perspector of ABC and unary cofactor triangle of Feuerbach triangle
-   * :ref:`X(1) <X(1)>` = perspector of ABC and unary cofactor triangle of Apollonius triangle
-   * :ref:`X(1) <X(1)>` = perspector of ABC and unary cofactor triangle of 2nd mixtilinear triangle
-   * :ref:`X(1) <X(1)>` = perspector of ABC and unary cofactor triangle of 4th mixtilinear triangle
-   * :ref:`X(1) <X(1)>` = perspector of ABC and unary cofactor triangle of Apus triangle
+   * :ref:`X(1) <X(1)>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of extangents triangle
+   * :ref:`X(1) <X(1)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of Feuerbach triangle
+   * :ref:`X(1) <X(1)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of Apollonius triangle
+   * :ref:`X(1) <X(1)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of 2nd mixtilinear triangle
+   * :ref:`X(1) <X(1)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of 4th mixtilinear triangle
+   * :ref:`X(1) <X(1)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of Apus triangle
    * :ref:`X(1) <X(1)>` = perspector of unary cofactor triangles of 6th and 7th mixtilinear triangles
    * :ref:`X(1) <X(1)>` = perspector of unary cofactor triangles of 2nd and 3rd :term:`extouch triangles <extouch-triangle>`
    * :ref:`X(1) <X(1)>` = perspector of 5th mixtilinear triangle and unary cofactor triangle of 2nd mixtilinear triangle
    * :ref:`X(1) <X(1)>` = perspector of 5th mixtilinear triangle and unary cofactor triangle of 4th mixtilinear triangle
    * :ref:`X(1) <X(1)>` = :ref:`X(3) <X(3)>`-of-reflection-triangle-of-:ref:`X(1) <X(1)>`
    * :ref:`X(1) <X(1)>` = X(1181)-of-2nd-extouch triangle
-   * :ref:`X(1) <X(1)>` = perspector of ABC and orthic-triangle-of-2nd-circumperp-triangle
+   * :ref:`X(1) <X(1)>` = perspector of :g:`ABC << A B C >>` and orthic-triangle-of-2nd-circumperp-triangle
    * :ref:`X(1) <X(1)>` = :ref:`X(4) <X(4)>`-of-excentral triangle
    * :ref:`X(1) <X(1)>` = :ref:`X(40) <X(40)>`-of-Yff :term:`central triangle <central-triangle>`
    * :ref:`X(1) <X(1)>` = :ref:`X(20) <X(20)>`-of-1st circumperp triangle
@@ -134,10 +134,10 @@ X(1) = INCENTER
    * :ref:`X(1) <X(1)>` = trilinear pole wrt excentral triangle of antiorthic axis
    * :ref:`X(1) <X(1)>` = trilinear pole wrt :term:`incentral triangle <incentral-triangle>` of antiorthic axis
    * :ref:`X(1) <X(1)>` = Miquel associate of :ref:`X(7) <X(7)>`
-   * :ref:`X(1) <X(1)>` = homothetic center of Johnson triangle and cross-triangle of ABC and 2nd isogonal triangle of :ref:`X(1) <X(1)>`
-   * :ref:`X(1) <X(1)>` = homothetic center of 1st Johnson-Yff triangle and cross-triangle of ABC and 2nd isogonal triangle of :ref:`X(1) <X(1)>`
-   * :ref:`X(1) <X(1)>` = homothetic center of 2nd Johnson-Yff triangle and cross-triangle of ABC and 2nd isogonal triangle of :ref:`X(1) <X(1)>`
-   * :ref:`X(1) <X(1)>` = homothetic center of Mandart-incircle triangle and cross-triangle of ABC and 1st Johnson-Yff triangle
+   * :ref:`X(1) <X(1)>` = homothetic center of Johnson triangle and cross-triangle of :g:`ABC << A B C >>` and 2nd isogonal triangle of :ref:`X(1) <X(1)>`
+   * :ref:`X(1) <X(1)>` = homothetic center of 1st Johnson-Yff triangle and cross-triangle of :g:`ABC << A B C >>` and 2nd isogonal triangle of :ref:`X(1) <X(1)>`
+   * :ref:`X(1) <X(1)>` = homothetic center of 2nd Johnson-Yff triangle and cross-triangle of :g:`ABC << A B C >>` and 2nd isogonal triangle of :ref:`X(1) <X(1)>`
+   * :ref:`X(1) <X(1)>` = homothetic center of Mandart-incircle triangle and cross-triangle of :g:`ABC << A B C >>` and 1st Johnson-Yff triangle
    * :ref:`X(1) <X(1)>` = homothetic center of :term:`medial triangle <medial-triangle>` and cross-triangle of Aquila and anti-Aquila triangles
    * :ref:`X(1) <X(1)>` = homothetic center of outer Garcia triangle and cross-triangle of Aquila and anti-Aquila triangles
    * :ref:`X(1) <X(1)>` = :ref:`X(8) <X(8)>`-of-cross-triangle-of Aquila-and-anti-Aquila-triangles
@@ -145,13 +145,13 @@ X(1) = INCENTER
    * :ref:`X(1) <X(1)>` = :ref:`X(100) <X(100)>`-of-inner-Garcia-triangle
    * :ref:`X(1) <X(1)>` = Thomson-isogonal conjugate of :ref:`X(165) <X(165)>`
    * :ref:`X(1) <X(1)>` = :ref:`X(8) <X(8)>`-of-outer-Garcia-triangle
-   * :ref:`X(1) <X(1)>` = :ref:`X(486) <X(486)>`-of-BCI-triangle
-   * :ref:`X(1) <X(1)>` = :ref:`X(164) <X(164)>`-of-orthic-triangle if ABC is acute
+   * :ref:`X(1) <X(1)>` = :ref:`X(486) <X(486)>`-of-:g:`BCI << B C I >>`-triangle
+   * :ref:`X(1) <X(1)>` = :ref:`X(164) <X(164)>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(1) <X(1)>` = X(1593)-of-Ascella-triangle
    * :ref:`X(1) <X(1)>` = excentral-to-Ascella :term:`similarity image <similarity-image>` of X(1697)
    * :ref:`X(1) <X(1)>` = Dao image of :ref:`X(1) <X(1)>`
-   * :ref:`X(1) <X(1)>` = :ref:`X(40) <X(40)>`-of-reflection of ABC in :ref:`X(3) <X(3)>`
-   * :ref:`X(1) <X(1)>` = radical center of the tangent circles of ABC
+   * :ref:`X(1) <X(1)>` = :ref:`X(40) <X(40)>`-of-reflection of :g:`ABC << A B C >>` in :ref:`X(3) <X(3)>`
+   * :ref:`X(1) <X(1)>` = radical center of the tangent circles of :g:`ABC << A B C >>`
    * :ref:`X(1) <X(1)>` = homothetic center of intangents triangle and anti-tangential midarc triangle
    * :ref:`X(1) <X(1)>` = K(:ref:`X(15) <X(15)>`) = K(:ref:`X(16) <X(16)>`), as defined at :ref:`X(174) <X(174)>`
    * :ref:`X(1) <X(1)>` = :ref:`X(3) <X(3)>`-of-hexyl-triangle
@@ -159,20 +159,20 @@ X(1) = INCENTER
    * :ref:`X(1) <X(1)>` = hexyl-isogonal conjugate of :ref:`X(40) <X(40)>`
    * :ref:`X(1) <X(1)>` = inverse-in-polar-circle of X(1785)
    * :ref:`X(1) <X(1)>` = inverse-in-orthoptic-circle-of-Steiner-inellipse of X(5121)
-   * :ref:`X(1) <X(1)>` = inverse-in-OI-inverter of X(1155)
+   * :ref:`X(1) <X(1)>` = inverse-in-:g:`OI <[ O I ]>`-inverter of X(1155)
    * :ref:`X(1) <X(1)>` = inverse-in-Steiner-circumellipse of :ref:`X(239) <X(239)>`
    * :ref:`X(1) <X(1)>` = inverse-in-MacBeath-circumconic of X(2323)
    * :ref:`X(1) <X(1)>` = inverse-in-circumconic-centered-at-:ref:`X(9) <X(9)>` of :ref:`X(44) <X(44)>`
-   * :ref:`X(1) <X(1)>` = excentral-to-ABC :term:`barycentric image <barycentric-image>` of :ref:`X(40) <X(40)>`
-   * :ref:`X(1) <X(1)>` = excentral-to-ABC :term:`functional image <functional-image>` of :ref:`X(164) <X(164)>`
-   * :ref:`X(1) <X(1)>` = excentral-to-ABC :term:`trilinear image <trilinear-image>` of :ref:`X(164) <X(164)>`
-   * :ref:`X(1) <X(1)>` = orthic-to-ABC functional image of :ref:`X(4) <X(4)>`, if ABC is acute
-   * :ref:`X(1) <X(1)>` = orthic-to-ABC trilinear image of :ref:`X(4) <X(4)>`, if ABC is acute
-   * :ref:`X(1) <X(1)>` = intouch-to-ABC barycentric image of :ref:`X(1) <X(1)>`
+   * :ref:`X(1) <X(1)>` = excentral-to-:g:`ABC << A B C >>` :term:`barycentric image <barycentric-image>` of :ref:`X(40) <X(40)>`
+   * :ref:`X(1) <X(1)>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X(164) <X(164)>`
+   * :ref:`X(1) <X(1)>` = excentral-to-:g:`ABC << A B C >>` :term:`trilinear image <trilinear-image>` of :ref:`X(164) <X(164)>`
+   * :ref:`X(1) <X(1)>` = orthic-to-:g:`ABC << A B C >>` functional image of :ref:`X(4) <X(4)>`, if :g:`ABC << A B C >>` is acute
+   * :ref:`X(1) <X(1)>` = orthic-to-:g:`ABC << A B C >>` trilinear image of :ref:`X(4) <X(4)>`, if :g:`ABC << A B C >>` is acute
+   * :ref:`X(1) <X(1)>` = intouch-to-:g:`ABC << A B C >>` barycentric image of :ref:`X(1) <X(1)>`
    * :ref:`X(1) <X(1)>` = excentral-to-intouch similarity image of :ref:`X(40) <X(40)>`
-   * :ref:`X(1) <X(1)>` = ABC-to-excentral barycentric image of :ref:`X(8) <X(8)>`
+   * :ref:`X(1) <X(1)>` = :g:`ABC << A B C >>`-to-excentral barycentric image of :ref:`X(8) <X(8)>`
    * :ref:`X(1) <X(1)>` = :ref:`X(1) <X(1)>`-vertex conjugate of :ref:`X(56) <X(56)>`
-   * :ref:`X(1) <X(1)>` = perspector of ABC and reflection triangle of intangents triangle
+   * :ref:`X(1) <X(1)>` = perspector of :g:`ABC << A B C >>` and reflection triangle of intangents triangle
    * :ref:`X(1) <X(1)>` = perspector of pedal and anticevian triangles of :ref:`X(40) <X(40)>`
    * :ref:`X(1) <X(1)>` = perspector of hexyl triangle and :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(40) <X(40)>`
    * :ref:`X(1) <X(1)>` = perspector of hexyl triangle and anticevian triangle of :ref:`X(57) <X(57)>`
@@ -185,21 +185,21 @@ Notes
 
    Three more points are also equidistant from the sidelines; they are given by these names and trilinears:
 
-      A-excenter = -1 : 1 : 1, B-excenter = 1 : -1 : 1, C-excenter = 1 : 1 : -1.
+      :g:`A <A>`-excenter = :math:`-1 : 1 : 1`, :g:`B <B>`-excenter =\ :math:`1 : -1 : 1`, :g:`C <C>`-excenter =\ :math:`1 : 1 : -1`.
 
 .. container:: note-item
 
-   The radii of the excircles are 2\*area(ABC)/(-a + b + c), 2\*area(ABC)/(a - b + c), 2\*area(ABC)/(a + b - c).
+   The radii of the excircles are :math:`2 \operatorname{area}(ABC)/(-a + b + c)`, :math:`2 \operatorname{area}(ABC)/(a - b + c)`, :math:`2 \operatorname{area}(ABC)/(a + b - c)`.
 
 .. container:: note-item
 
-   Writing the A-exradius as r(a,b,c), the others are r(b,c,a) and r(c,a,b). If these exradii are abbreviated as r\ :sub:`a`, r\ :sub:`b`, r\ :sub:`c`, then 1/r = 1/r\ :sub:`a` +1/r\ :sub:`b` + 1/r\ :sub:`c`. Moreover,
+   Writing the A-exradius as r(a,b,c), the others are r(b,c,a) and r(c,a,b). If these exradii are abbreviated as :math:`r_{a}`, :math:`r_{b}`, :math:`r_{c}`, then :math:`1/r = 1/r_{a} +1/r_{b} + 1/r_{c}`. Moreover,
 
-   area(ABC) = sqrt(r\*r\ :sub:`a`\ \*r\ :sub:`b`\ \*r\ :sub:`c`) and r\ :sub:`a` + r\ :sub:`b` + r\ :sub:`c` = r + 4R, where R denotes the radius of the circumcircle.
+   :math:`\operatorname{area}(ABC) = \sqrt{r r_{a} r_{b} r_{c}}` and :math:`r_{a} + r_{b} + r_{c} = r + 4R`, where R denotes the radius of the circumcircle.
 
 .. container:: note-item
 
-   The incenter is the identity of the group of :term:`triangle centers <triangle-center>` under **trilinear multiplication** defined by (x : y : z)\*(u : v : w) = xu : yv : zw.
+   The incenter is the identity of the group of :term:`triangle centers <triangle-center>` under **trilinear multiplication** defined by :math:`(x : y : z) \cdot (u : v : w) = xu : yv : zw`.
 
 .. container:: note-item
 
@@ -215,35 +215,35 @@ Notes
 
 .. container:: note-item
 
-   Let O\ :sub:`A` be the circle tangent to side BC at its midpoint and to the circumcircle on the side of BC opposite A. Define O\ :sub:`B` and O\ :sub:`C` cyclically. Let L\ :sub:`A` be the external tangent to circles O\ :sub:`B` and O\ :sub:`C` that is nearest to O\ :sub:`A`. Define L\ :sub:`B` and L\ :sub:`C` cyclically. Let A' = L\ :sub:`B` ∩L\ :sub:`C`, and define B' and C' cyclically. Then triangle A'B'C' is homothetic to the medial triangle, and the center of homothety is :ref:`X(1) <X(1)>`; see the reference at X(1001).
+   Let :g:`O_{A} <O_A>` be the circle tangent to side :g:`BC <[ B C ]>` at its midpoint and to the circumcircle on the side of :g:`BC <[ B C ]>` opposite A. Define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. Let :g:`L_{A} <L_A>` be the external tangent to circles :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` that is nearest to :g:`O_{A} <O_A>`. Define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A' <A'>` = :g:`L_{B} <L_B>` ∩\ :g:`L_{C} <L_C>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Then triangle :g:`A'B'C' << A' B' C' >>` is homothetic to the medial triangle, and the center of homothety is :ref:`X(1) <X(1)>`; see the reference at X(1001).
 
 .. container:: note-item
 
-   Let A'B'C' and A″B″C″ be the intouch and excentral triangles; :ref:`X(1) <X(1)>` is the radical center of the circumcircles of AA'″, BB'B″, CC'C″. (:person:`Randy Hutson <randy-hutson>`, December 10, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>` be the intouch and excentral triangles; :ref:`X(1) <X(1)>` is the radical center of the circumcircles of :g:`AA'A″ << A A' A″ >>`, :g:`BB'B″ << B B' B″ >>`, :g:`CC'C″ << C C' C″ >>`. (:person:`Randy Hutson <randy-hutson>`, December 10, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the Feuerbach triangle. Let A″ be the trilinear pole of line B'C', and define B″ and C″ cyclically. The lines A″, BB″, CC″ concur in :ref:`X(1) <X(1)>`. (Randy Hutson, November 17, 2019)
+   Let :g:`A'B'C' << A' B' C' >>` be the Feuerbach triangle. Let :g:`A″ <A″>` be the trilinear pole of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(1) <X(1)>`. (Randy Hutson, November 17, 2019)
 
 .. container:: note-item
 
-   Let A'B'C' be the mixtilinear excentral triangle. Let A″ be the cevapoint of B' and C', and define B″ and C″ cyclically. The lines A″, BB″, CC″ concur in :ref:`X(1) <X(1)>`. (Randy Hutson, November 17, 2019)
+   Let :g:`A'B'C' << A' B' C' >>` be the mixtilinear excentral triangle. Let :g:`A″ <A″>` be the cevapoint of :g:`B' <B'>` and :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(1) <X(1)>`. (Randy Hutson, November 17, 2019)
 
 .. container:: note-item
 
-   Let A'B'C' be the mixtilinear excentral triangle. Let A″ be the trilinear pole of line B'C', and define B″ and C″ cyclically. The lines A″, BB″, CC″ concur in :ref:`X(1) <X(1)>`. (Randy Hutson, November 17, 2019)
+   Let :g:`A'B'C' << A' B' C' >>` be the mixtilinear excentral triangle. Let :g:`A″ <A″>` be the trilinear pole of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(1) <X(1)>`. (Randy Hutson, November 17, 2019)
 
 .. container:: note-item
 
-   Let A'B'C' be the mixtilinear excentral triangle. Let L\ :sub:`A` be the trilinear polar of A', and define L\ :sub:`B` and L\ :sub:`C` cyclically. Let A″ = L\ :sub:`B`\ ∩L\ :sub:`C`, and define B″ and C″ cyclically. The lines A″, BB″, CC″ concur in :ref:`X(1) <X(1)>`. (Randy Hutson, November 17, 2019)
+   Let :g:`A'B'C' << A' B' C' >>` be the mixtilinear excentral triangle. Let :g:`L_{A} <L_A>` be the trilinear polar of :g:`A' <A'>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A″ <A″>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(1) <X(1)>`. (Randy Hutson, November 17, 2019)
 
 .. container:: note-item
 
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the excenters-midpoints triangle and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(1) <X(1)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (Randy Hutson, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the excenters-midpoints triangle and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(1) <X(1)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
 
 .. container:: note-item
 
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the Gemini triangle 22 and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(1) <X(1)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (Randy Hutson, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the Gemini triangle 22 and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(1) <X(1)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
 
 .. container:: note-item
 

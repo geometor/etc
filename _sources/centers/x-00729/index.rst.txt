@@ -16,7 +16,7 @@ X(729) = EVEN (- 2, 0) CIRCUMCIRCLE POINT
    :alt: X(729) = EVEN (- 2, 0) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(729) = EVEN (- 2, 0) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(729) = EVEN (- 2, 0) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -26,7 +26,7 @@ X(729) = EVEN (- 2, 0) CIRCUMCIRCLE POINT
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`a/(2b^2c^2 - a^2b^2 - a^2c^2) : :`
+   * **Trilinears:** :math:`a/(2b^{2}c^{2} - a^{2}b^{2} - a^{2}c^{2}) : :`
 
 .. container:: note-item
 

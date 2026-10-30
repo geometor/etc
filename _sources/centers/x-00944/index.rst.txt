@@ -16,7 +16,7 @@ X(944) = HOFSTADTER TRAPEZOID POINT
    :alt: X(944) = HOFSTADTER TRAPEZOID POINT
    :align: center
 
-   **X(944) = HOFSTADTER TRAPEZOID POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(944) = HOFSTADTER TRAPEZOID POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -32,11 +32,7 @@ X(944) = HOFSTADTER TRAPEZOID POINT
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(944) <X(944)>` = 2 :ref:`X(1) <X(1)>` - :ref:`X(4) <X(4)>`
-
-.. container:: note-item
-
-   :ref:`X(944) <X(944)>` lies.
+   * :ref:`X(944) <X(944)>` = :math:`2` :ref:`X(1) <X(1)>` - :ref:`X(4) <X(4)>`
 
 .. collapse:: Incident Central Lines
    :badge: 16 lines
@@ -67,15 +63,15 @@ Notes
 
 .. container:: note-item
 
-   The centroid of ABC is also the centroid of triangle :ref:`X(4) <X(4)>`\ \ :ref:`X(8) <X(8)>`\ \ :ref:`X(944) <X(944)>`. (:person:`Darij Grinberg <darij-grinberg>`, August 22, 2002)
+   The centroid of :g:`ABC << A B C >>` is also the centroid of triangle :ref:`X(4) <X(4)>`\ \ :ref:`X(8) <X(8)>`\ \ :ref:`X(944) <X(944)>`. (:person:`Darij Grinberg <darij-grinberg>`, August 22, 2002)
 
 .. container:: note-item
 
-   Let Ha be the hyperbola passing through A, and with foci at B and C. This is called the A-Soddy hyperbola in (:person:`Paul Yiu <paul-yiu>`, Introduction to the Geometry of the Triangle, 2002; 12.4 The Soddy hyperbolas, p. 143). Let La be the polar of :ref:`X(3) <X(3)>` with respect to Ha. Define Lb and Lc cyclically. Let A' = Lb ∩ Lc, B' = Lc ∩ La, C' = La ∩ Lb. Triangle A'B'C' is homothetic to ABC, and its orthocenter is :ref:`X(944) <X(944)>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2018)
+   Let :g:`H_{a} <H_a>` be the hyperbola passing through :g:`A <A>`, and with foci at :g:`B <B>` and C. This is called the A-Soddy hyperbola in (:person:`Paul Yiu <paul-yiu>`, Introduction to the Geometry of the Triangle, 2002; 12.4 The Soddy hyperbolas, p. 143). Let :g:`L_{a} <L_a>` be the polar of :ref:`X(3) <X(3)>` with respect to :g:`H_{a} <H_a>`. Define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>` ∩ :g:`L_{c} <L_c>`, :g:`B' <B'>` = :g:`L_{c} <L_c>` ∩ :g:`L_{a} <L_a>`, :g:`C' <C'>` = :g:`L_{a} <L_a>` ∩ :g:`L_{b} <L_b>`. Triangle :g:`A'B'C' << A' B' C' >>` is homothetic to :g:`ABC << A B C >>`, and its orthocenter is :ref:`X(944) <X(944)>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2018)
 
 .. container:: note-item
 
-   Let Ma be the polar of :ref:`X(4) <X(4)>` wrt the circle centered at A and passing through :ref:`X(1) <X(1)>`, and define Mb, Mc cyclically. (Note: :ref:`X(4) <X(4)>` is the perspector of any circle centered at a vertex of ABC.) Let A″ = Mb ∩ Mc, and define B″ and C″ cyclically. Triangle A″B″C″ is homothetic to ABC, and its orthocenter is :ref:`X(944) <X(944)>`. (Randy Hutson, January 29, 2018)
+   Let :g:`M_{a} <M_a>` be the polar of :ref:`X(4) <X(4)>` wrt the circle centered at :g:`A <A>` and passing through :ref:`X(1) <X(1)>`, and define :g:`M_{b} <M_b>`, :g:`M_{c} <M_c>` cyclically. (Note: :ref:`X(4) <X(4)>` is the perspector of any circle centered at a vertex of :g:`ABC << A B C >>`.) Let :g:`A″ <A″>` = :g:`M_{b} <M_b>` ∩ :g:`M_{c} <M_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to :g:`ABC << A B C >>`, and its orthocenter is :ref:`X(944) <X(944)>`. (Randy Hutson, January 29, 2018)
 
 .. toctree::
    :hidden:

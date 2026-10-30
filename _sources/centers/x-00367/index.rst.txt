@@ -16,17 +16,13 @@ X(367) = CROSSPOINT OF X(1) AND X(366)
    :alt: X(367) = CROSSPOINT OF X(1) AND X(366)
    :align: center
 
-   **X(367) = CROSSPOINT OF X(1) AND X(366)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(367) = CROSSPOINT OF X(1) AND X(366)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`b^{1/2} + c^{1/2} : c^{1/2} + a^{1/2} : a^{1/2} + b^{1/2}`
    | **Barycentrics:** :math:`a(b^{1/2} + c^{1/2}) : b(c^{1/2} + a^{1/2}) : c(a^{1/2} + b^{1/2})`
    | **Search Value (6, 9, 13):** :math:`1.895058946195`
-
-.. container:: note-item
-
-   :ref:`X(367) <X(367)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines

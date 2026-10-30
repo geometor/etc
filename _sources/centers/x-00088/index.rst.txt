@@ -10,13 +10,13 @@ X(88) = ISOGONAL CONJUGATE OF X(44)
 
 .. enunciation::
 
-   Let A\ :sub:`9`\ B\ :sub:`9`\ C\ :sub:`9` be Gemini triangle 9. Let A' be the perspector of conic {A,B,C,B\ :sub:`9`,C\ :sub:`9`}}, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(88) <X(88)>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
+   Let :g:`A_{9}B_{9}C_{9} << A_9 B_9 C_9 >>` be Gemini triangle 9. Let :g:`A' <A'>` be the perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B_{9} <B_9>`,\ :g:`C_{9} <C_9>`}}, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(88) <X(88)>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
 
 .. figure:: x-00088.svg
    :alt: X(88) = ISOGONAL CONJUGATE OF X(44)
    :align: center
 
-   **X(88) = ISOGONAL CONJUGATE OF X(44)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(88) = ISOGONAL CONJUGATE OF X(44)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,11 +27,7 @@ X(88) = ISOGONAL CONJUGATE OF X(44)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(88) <X(88)>` = (3r\ :sup:`2` + 6rR - s\ :sup:`2`)\*\ :ref:`X(1) <X(1)>` + 9rR\*\ :ref:`X(2) <X(2)>` - 6r\ :sup:`2`\ \*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-
-.. container:: note-item
-
-   :ref:`X(88) <X(88)>` lies.
+   * :ref:`X(88) <X(88)>` = :math:`(3r^{2} + 6rR - s^{2})` :ref:`X(1) <X(1)>` + :math:`9rR` :ref:`X(2) <X(2)>` - :math:`6r^{2}` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. collapse:: Incident Central Lines
    :badge: 12 lines
@@ -50,7 +46,7 @@ X(88) = ISOGONAL CONJUGATE OF X(44)
    * :ref:`X(88) <X(88)>` = X(i)-:term:`aleph conjugate <aleph-conjugate>` of X(j) for these (i,j): (:ref:`88 <X(88)>`, :ref:`1 <X(1)>`), (:ref:`679 <X(679)>`, :ref:`88 <X(88)>`), (:ref:`903 <X(903)>`, :ref:`63 <X(63)>`), (1022, 1052)
    * :ref:`X(88) <X(88)>` = :ref:`X(333) <X(333)>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X(190) <X(190)>`
    * :ref:`X(88) <X(88)>` = trilinear product of PU(50)
-   * :ref:`X(88) <X(88)>` = perspector of conic {A,B,C,PU(50)}}
+   * :ref:`X(88) <X(88)>` = perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(50)}}
    * :ref:`X(88) <X(88)>` = :term:`trilinear pole <trilinear-pole>` of PU(55); the line :ref:`X(1) <X(1)>`\ \ :ref:`X(513) <X(513)>`, the line through :ref:`X(1) <X(1)>` parallel to its :term:`trilinear polar <trilinear-polar>`; also normal to Feuerbach hyperbola at :ref:`X(1) <X(1)>`
    * :ref:`X(88) <X(88)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(678) <X(678)>`\ X(1635)
    * :ref:`X(88) <X(88)>` = :ref:`X(6) <X(6)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(519) <X(519)>`

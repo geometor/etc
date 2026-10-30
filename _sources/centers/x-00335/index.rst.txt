@@ -16,17 +16,13 @@ X(335) = ISOTOMIC CONJUGATE OF X(239)
    :alt: X(335) = ISOTOMIC CONJUGATE OF X(239)
    :align: center
 
-   **X(335) = ISOTOMIC CONJUGATE OF X(239)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(335) = ISOTOMIC CONJUGATE OF X(239)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`bc/(a^{2} - bc) : ca/(b^{2} - ca) : ab/(c^{2} - ab)`
    | **Barycentrics:** :math:`1/(a^{2} - bc) : 1/(b^{2} - ca) : 1/(c^{2} - ab)`
    | **Search Value (6, 9, 13):** :math:`-0.295386595053`
-
-.. container:: note-item
-
-   :ref:`X(335) <X(335)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 15 lines

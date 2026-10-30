@@ -10,23 +10,19 @@ X(119) = FEUERBACH ANTIPODE
 
 .. enunciation::
 
-   Let Na = :ref:`X(5) <X(5)>`-BC\ :ref:`X(1) <X(1)>`, Nb = :ref:`X(5) <X(5)>`-of-CA\ :ref:`X(1) <X(1)>`, Nc = :ref:`X(5) <X(5)>`-of-AB\ :ref:`X(1) <X(1)>`. Then :ref:`X(119) <X(119)>` = X(2071)-of-NaNbNc. (:person:`Randy Hutson <randy-hutson>`, January 29, 2018)
+   Let :g:`N_{a} <N_a>` = :ref:`X(5) <X(5)>`-:g:`BC <[ B C ]>`\ :ref:`X(1) <X(1)>`, :g:`N_{b} <N_b>` = :ref:`X(5) <X(5)>`-of-:g:`CA <[ C A ]>`\ :ref:`X(1) <X(1)>`, :g:`N_{c} <N_c>` = :ref:`X(5) <X(5)>`-of-:g:`AB <[ A B ]>`\ :ref:`X(1) <X(1)>`. Then :ref:`X(119) <X(119)>` = X(2071)-of-:g:`N_{a}N_{b}N_{c} << N_a N_b N_c >>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2018)
 
 .. figure:: x-00119.svg
    :alt: X(119) = FEUERBACH ANTIPODE
    :align: center
 
-   **X(119) = FEUERBACH ANTIPODE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(119) = FEUERBACH ANTIPODE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`(\csc A)(-1 + \cos B + \cos C)[\sin 2B + \sin 2C + 2(-1 + \cos A)(\sin B + \sin C)] : :`
    | **Barycentrics:** :math:`(-1 + \cos B + \cos C)[\sin 2B + \sin 2C + 2(-1 + \cos A)(\sin B + \sin C)] : :`
    | **Search Value (6, 9, 13):** :math:`-1.537391637975`
-
-.. container:: note-item
-
-   :ref:`X(119) <X(119)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 12 lines
@@ -47,7 +43,7 @@ X(119) = FEUERBACH ANTIPODE
    * :ref:`X(119) <X(119)>` = :ref:`X(104) <X(104)>`-of-:term:`medial triangle <medial-triangle>`
    * :ref:`X(119) <X(119)>` = X(2072)-of-Fuhrmann-triangle
    * :ref:`X(119) <X(119)>` = inverse-in-polar-circle of :ref:`X(915) <X(915)>`
-   * :ref:`X(119) <X(119)>` = anticenter of cyclic quadrilateral ABC\ :ref:`X(100) <X(100)>`
+   * :ref:`X(119) <X(119)>` = anticenter of cyclic quadrilateral :g:`ABC << A B C >>`\ :ref:`X(100) <X(100)>`
    * :ref:`X(119) <X(119)>` = Λ(:ref:`X(1) <X(1)>`, :ref:`X(3) <X(3)>`), wrt :term:`orthic triangle <orthic-triangle>`
    * :ref:`X(119) <X(119)>` = Λ(:ref:`X(4) <X(4)>`, :ref:`X(8) <X(8)>`), wrt orthic triangle
    * :ref:`X(119) <X(119)>` = Spieker-radical-circle-inverse of X(34459)
@@ -58,7 +54,7 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the orthic triangle. Let La be the antiorthic axis of AB'C', and define Lb and Lc cyclically. Let A″ = Lb∩Lc, B″ = Lc∩La, C″ = La∩Lb. Then triangle A″B″C″ is inversely similar to ABC, with similicenter :ref:`X(9) <X(9)>`. The lines A'A″, B'B″, C'C″ concur in :ref:`X(119) <X(119)>`. Also, :ref:`X(119) <X(119)>` = :ref:`X(3) <X(3)>` of A″B″C″. (Randy Hutson, January 29, 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the orthic triangle. Let :g:`L_{a} <L_a>` be the antiorthic axis of :g:`AB'C' << A B' C' >>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, :g:`B″ <B″>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C″ <C″>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. Then triangle :g:`A″B″C″ << A″ B″ C″ >>` is inversely similar to :g:`ABC << A B C >>`, with similicenter :ref:`X(9) <X(9)>`. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(119) <X(119)>`. Also, :ref:`X(119) <X(119)>` = :ref:`X(3) <X(3)>` of :g:`A″B″C″ << A″ B″ C″ >>`. (Randy Hutson, January 29, 2018)
 
 .. toctree::
    :hidden:

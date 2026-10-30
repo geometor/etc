@@ -16,17 +16,13 @@ X(899) = INTERSECTION OF LINES X(1)X(2) AND X(6)X(750)
    :alt: X(899) = INTERSECTION OF LINES X(1)X(2) AND X(6)X(750)
    :align: center
 
-   **X(899) = INTERSECTION OF LINES X(1)X(2) AND X(6)X(750)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(899) = INTERSECTION OF LINES X(1)X(2) AND X(6)X(750)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`1/b + 1/c - 2/a : 1/c + 1/a - 2/b : 1/a + 1/b - 2/c` (Joe Goggins, 2002)
    | **Barycentrics:** :math:`a(1/b + 1/c - 2/a) : b(1/c + 1/a - 2/b) : c(1/a + 1/b - 2/c)`
    | **Search Value (6, 9, 13):** :math:`-7.381530738546`
-
-.. container:: note-item
-
-   :ref:`X(899) <X(899)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines

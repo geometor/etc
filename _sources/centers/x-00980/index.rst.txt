@@ -16,17 +16,13 @@ X(980) = INTERSECTION OF LINES X(1)X(3) AND X(2)X(39)
    :alt: X(980) = INTERSECTION OF LINES X(1)X(3) AND X(2)X(39)
    :align: center
 
-   **X(980) = INTERSECTION OF LINES X(1)X(3) AND X(2)X(39)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(980) = INTERSECTION OF LINES X(1)X(3) AND X(2)X(39)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = a\ :sup:`2`\ (b\ :sup:`2` + bc + c\ :sup:`2`) + (b\ :sup:`2` + c\ :sup:`2`)(bc + ca + ab)
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a^{2}(b^{2} + bc + c^{2}) + (b^{2} + c^{2})(bc + ca + ab)`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`1.906943083314`
-
-.. container:: note-item
-
-   :ref:`X(980) <X(980)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines

@@ -10,25 +10,22 @@ X(538) = DIRECTION OF VECTOR AX + BX + CX, where X = X(39)
 
 .. enunciation::
 
-   Barycentrics af(a,b,c) : bf(b,c,a) : cf(c,a,b)
+   :ref:`X(538) <X(538)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(729) <X(729)>`
 
 .. figure:: x-00538.svg
    :alt: X(538) = DIRECTION OF VECTOR AX + BX + CX, where X = X(39)
    :align: center
 
-   **X(538) = DIRECTION OF VECTOR AX + BX + CX, where X = X(39)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(538) = DIRECTION OF VECTOR AX + BX + CX, where X = X(39)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where, f(a,b,c) = (2ax - by - cz)/a, x = x(a,b,c) = a(b\ :sup:`2` + c\ :sup:`2`), y = x(b,c,a), z = x(c,a,b)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = (2ax - by - cz)/a`, :math:`x = x(a,b,c) = a(b^{2} + c^{2})`, :math:`y = x(b,c,a)`, :math:`z = x(c,a,b)`
+   | **Barycentrics:** :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
 
 .. container:: note-item
 
    :ref:`X(538) <X(538)>` lies on the line at infinity.
-
-.. container:: note-item
-
-   :ref:`X(538) <X(538)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 21 lines
@@ -39,7 +36,7 @@ X(538) = DIRECTION OF VECTOR AX + BX + CX, where X = X(39)
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X(538) <X(538)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(729) <X(729)>`
+   * :ref:`X(538) <X(538)>` = isogonal conjugate of :ref:`X(729) <X(729)>`
    * :ref:`X(538) <X(538)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(3228)
    * :ref:`X(538) <X(538)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(35073)
    * :ref:`X(538) <X(538)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(6) <X(6)>`\ \ :ref:`X(669) <X(669)>`

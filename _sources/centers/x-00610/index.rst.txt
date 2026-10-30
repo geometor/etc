@@ -10,29 +10,26 @@ X(610) = X(63)-CEVA CONJUGATE OF X(1)
 
 .. enunciation::
 
-   Barycentrics a(area - a\ :sup:`2` cot A) : b(area - b\ :sup:`2` cot B) : c(area - c\ :sup:`2` cot C)
+   :ref:`X(610) <X(610)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(2184)
 
 .. figure:: x-00610.svg
    :alt: X(610) = X(63)-CEVA CONJUGATE OF X(1)
    :align: center
 
-   **X(610) = X(63)-CEVA CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(610) = X(63)-CEVA CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`area - a^{2} \cot A : area - b^{2} \cot B : area - c^{2}\cot C`
+   | **Trilinears:** :math:`\operatorname{area} - a^{2} \cot A : \operatorname{area} - b^{2} \cot B : \operatorname{area} - c^{2}\cot C`
+   | **Barycentrics:** :math:`a(\operatorname{area} - a^{2} \cot A) : b(\operatorname{area} - b^{2} \cot B) : c(\operatorname{area} - c^{2} \cot C)`
    | **Search Value (6, 9, 13):** :math:`-6.409966276989`
 
 .. collapse:: Alternate Coordinates
    :badge: 3 forms
 
-   * **Trilinears:** tan B + tan C - tan A : tan C + tan A - tan B : tan A + tan B - tan C (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
-   * **Trilinears:** S\ :sub:`B`\ S\ :sub:`C` - a\ :sup:`2`\ S\ :sub:`A` : : (C. Lozada, 9/07/2013)
-   * **Trilinears:** :math:`3a^4 - 2a^2(b^2 + c^2) - (b^2 - c^2)^2 : :`
-
-.. container:: note-item
-
-   :ref:`X(610) <X(610)>` lies.
+   * **Trilinears:** :math:`\tan B + \tan C - \tan A : \tan C + \tan A - \tan B : \tan A + \tan B - \tan C` (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   * **Trilinears:** :math:`S_{B}S_{C} - a^{2}S_{A} : :` (C. Lozada, 9/07/2013)
+   * **Trilinears:** :math:`3a^{4} - 2a^{2}(b^{2} + c^{2}) - (b^{2} - c^{2})^{2} : :`
 
 .. collapse:: Incident Central Lines
    :badge: 9 lines
@@ -43,7 +40,7 @@ X(610) = X(63)-CEVA CONJUGATE OF X(1)
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X(610) <X(610)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(2184)
+   * :ref:`X(610) <X(610)>` = isogonal conjugate of X(2184)
    * :ref:`X(610) <X(610)>` = :ref:`X(63) <X(63)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(1) <X(1)>`
    * :ref:`X(610) <X(610)>` = :ref:`X(204) <X(204)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(1) <X(1)>`
    * :ref:`X(610) <X(610)>` = X(2165)-of-excentral-triangle

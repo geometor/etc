@@ -10,22 +10,19 @@ X(166) = GERGONNE POINT OF EXCENTRAL TRIANGLE
 
 .. enunciation::
 
-   Barycentrics g(A,B,C) : g(B,C,A) : g(C,A,B), where g(A,B,C) = (sin A)f(A,B,C)
+   :ref:`X(166) <X(166)>` = :ref:`X(7) <X(7)>`-of-:term:`excentral triangle <excentral-triangle>`
 
 .. figure:: x-00166.svg
    :alt: X(166) = GERGONNE POINT OF EXCENTRAL TRIANGLE
    :align: center
 
-   **X(166) = GERGONNE POINT OF EXCENTRAL TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(166) = GERGONNE POINT OF EXCENTRAL TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where, f(A,B,C) = (tan A/2)/(cos B/2 + cos C/2 - cos A/2) - (tan B/2)/(cos C/2 + cos A/2 - cos B/2) - (tan C/2)/(cos A/2 + cos B/2 - cos C/2)
-   | **Search Value (6, 9, 13):** :math:`4.147361892877`
-
-.. container:: note-item
-
-   :ref:`X(166) <X(166)>` lies.
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = (\tan A/2)/(\cos B/2 + \cos C/2 - \cos A/2) - (\tan B/2)/(\cos C/2 + \cos A/2 - \cos B/2) - (\tan C/2)/(\cos A/2 + \cos B/2 - \cos C/2)`
+   | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where :math:`g(A,B,C) = (\sin A)f(A,B,C)`
+   | **Search Value (6, 9, 13):** :math:`0.878975912381`
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines
@@ -36,7 +33,7 @@ X(166) = GERGONNE POINT OF EXCENTRAL TRIANGLE
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X(166) <X(166)>` = :ref:`X(7) <X(7)>`-of-:term:`excentral triangle <excentral-triangle>`
+   * :ref:`X(166) <X(166)>` = :ref:`X(7) <X(7)>`-of-excentral triangle
    * :ref:`X(166) <X(166)>` = :ref:`X(266) <X(266)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(57) <X(57)>`
    * :ref:`X(166) <X(166)>` = :term:`cevapoint <cevapoint>` of :ref:`X(266) <X(266)>` and :ref:`X(289) <X(289)>`
 

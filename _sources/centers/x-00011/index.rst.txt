@@ -17,13 +17,13 @@ X(11) = FEUERBACH POINT
    :alt: X(11) = FEUERBACH POINT
    :align: center
 
-   **X(11) = FEUERBACH POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(11) = FEUERBACH POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`1 - \cos(B - C) : 1 - \cos(C - A) : 1 - \cos(A - B)`
    | **Barycentrics:** :math:`a(1 - \cos(B - C)) : b(1 - \cos(C - A)) : c(1 - \cos(A -B))`
-   | **Tripolars:** :math:`\sqrt{(a-b-c) (a^4-2 a^2 b^2+b^4+a^2 b c+a b^2 c-2 b^3 c-2 a^2 c^2+a b c^2+2 b^2 c^2-2 b c^3+c^4)} : :`
+   | **Tripolars:** :math:`\sqrt{(a-b-c) (a^{4}-2 a^{2} b^{2}+b^{4}+a^{2} b c+a b^{2} c-2 b^{3} c-2 a^{2} c^{2}+a b c^{2}+2 b^{2} c^{2}-2 b c^{3}+c^{4})} : :`
    | **Search Value (6, 9, 13):** :math:`2.643135121245`
 
 .. collapse:: Alternate Coordinates
@@ -38,20 +38,16 @@ X(11) = FEUERBACH POINT
 .. collapse:: Linear Combinations
    :badge: 2 combinations
 
-   * :ref:`X(11) <X(11)>` = R\*\ :ref:`X(1) <X(1)>` - 3rX(2) + r\*\ :ref:`X(3) <X(3)>`
-   * :ref:`X(11) <X(11)>` = 3 :ref:`X(1) <X(1)>` - X(7972), 3 :ref:`X(1) <X(1)>` + X(9897), :ref:`X(1) <X(1)>` + 2 X(12019), 3 :ref:`X(1) <X(1)>` - 2 X(12735), :ref:`X(1) <X(1)>` - 3 X(16173), :ref:`X(1) <X(1)>` + 3 X(37718), and many others
+   * :ref:`X(11) <X(11)>` = :math:`R` :ref:`X(1) <X(1)>` - :math:`3r` :ref:`X(2) <X(2)>` + :math:`r` :ref:`X(3) <X(3)>`
+   * :ref:`X(11) <X(11)>` = :math:`3` :ref:`X(1) <X(1)>` - X(7972), :math:`3` :ref:`X(1) <X(1)>` + X(9897), :ref:`X(1) <X(1)>` + :math:`2` X(12019), :math:`3` :ref:`X(1) <X(1)>` - :math:`2` X(12735), :ref:`X(1) <X(1)>` - :math:`3` X(16173), :ref:`X(1) <X(1)>` + :math:`3` X(37718), and many others
 
 .. container:: note-item
 
-   :ref:`X(11) <X(11)>` lies on the bicevian conic of :ref:`X(1) <X(1)>` and :ref:`X(2) <X(2)>`, which is also QA-Co1 (Nine-point Conic) of quadrangle ABC\ :ref:`X(1) <X(1)>` (see http://www.chrisvantienhoven.nl/other-quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/76-qa-co1.html) (:person:`Randy Hutson <randy-hutson>`, April 9, 2016)
+   :ref:`X(11) <X(11)>` lies on the bicevian conic of :ref:`X(1) <X(1)>` and :ref:`X(2) <X(2)>`, which is also :g:`QA <[ Q A ]>`-Co1 (Nine-point Conic) of quadrangle :g:`ABC << A B C >>`\ :ref:`X(1) <X(1)>` (see http://www.chrisvantienhoven.nl/other-quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/76-qa-co1.html) (:person:`Randy Hutson <randy-hutson>`, April 9, 2016)
 
 .. container:: note-item
 
    :ref:`X(11) <X(11)>` lies on the following curves:
-
-.. container:: note-item
-
-   :ref:`X(11) <X(11)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 1579 lines
@@ -100,8 +96,8 @@ X(11) = FEUERBACH POINT
    * :ref:`X(11) <X(11)>` = psi-transform of X(18343)
    * :ref:`X(11) <X(11)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`11 <X(11)>`, :ref:`244 <X(244)>`), (:ref:`522 <X(522)>`, :ref:`11 <X(11)>`), (:ref:`693 <X(693)>`, :ref:`11 <X(11)>`)
    * :ref:`X(11) <X(11)>` = orthopole of line :ref:`X(1) <X(1)>`\ \ :ref:`X(3) <X(3)>`
-   * :ref:`X(11) <X(11)>` = anticenter of cyclic quadrilateral ABC\ :ref:`X(104) <X(104)>`
-   * :ref:`X(11) <X(11)>` = perspector of ABC and extraversion triangle of :ref:`X(12) <X(12)>`
+   * :ref:`X(11) <X(11)>` = anticenter of cyclic quadrilateral :g:`ABC << A B C >>`\ :ref:`X(104) <X(104)>`
+   * :ref:`X(11) <X(11)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(12) <X(12)>`
    * :ref:`X(11) <X(11)>` = homothetic center of intouch and 3rd Euler triangles
    * :ref:`X(11) <X(11)>` = trilinear square root of X(6728)
    * :ref:`X(11) <X(11)>` = perspector of Feuerbach triangle and Schroeter triangle
@@ -116,29 +112,29 @@ X(11) = FEUERBACH POINT
    * :ref:`X(11) <X(11)>` = bicentric sum of PU(i) for these i: 121, 123
    * :ref:`X(11) <X(11)>` = homothetic center of medial triangle and Mandart-incircle triangle
    * :ref:`X(11) <X(11)>` = :ref:`X(100) <X(100)>` of Mandart-incircle triangle
-   * :ref:`X(11) <X(11)>` = X(3659) of orthic triangle if ABC is acute
+   * :ref:`X(11) <X(11)>` = X(3659) of orthic triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(11) <X(11)>` = homothetic center of intangents triangle and reflection of extangents triangle in :ref:`X(100) <X(100)>`
    * :ref:`X(11) <X(11)>` = homothetic center of 3rd Euler triangle and intouch triangle
-   * :ref:`X(11) <X(11)>` = QA-P2 (Euler-Poncelet Point) of quadrangle ABC\ :ref:`X(1) <X(1)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/10-mathematics/quadrangle-objects/12-qa-p2.html)
+   * :ref:`X(11) <X(11)>` = :g:`QA <[ Q A ]>`-:g:`P_{2} <P_2>` (Euler-Poncelet Point) of quadrangle :g:`ABC << A B C >>`\ :ref:`X(1) <X(1)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/10-mathematics/quadrangle-objects/12-qa-p2.html)
    * :ref:`X(11) <X(11)>` = intersection of tangents to Steiner inellipse at X(1086) and X(1146)
    * :ref:`X(11) <X(11)>` = crosspoint wrt medial triangle of X(1086) and X(1146)
-   * :ref:`X(11) <X(11)>` = perspector of orthic triangle and :term:`tangential triangle <tangential-triangle>` of hyperbola {{A,B,C,\ :ref:`X(1) <X(1)>`,\ :ref:`X(2) <X(2)>`}}
-   * :ref:`X(11) <X(11)>` = homothetic center of cyclic quadrilateral ABC\ :ref:`X(104) <X(104)>` and congruent quadrilateral formed by orthocenters of vertices taken 3 at a time
-   * :ref:`X(11) <X(11)>` = perspector of ABC and cross-triangle of ABC and Feuerbach triangle
-   * :ref:`X(11) <X(11)>` = homothetic center of medial triangle and cross-triangle of ABC and inner Johnson triangle
-   * :ref:`X(11) <X(11)>` = homothetic center of Euler triangle and cross-triangle of ABC and 1st Johnson-Yff triangle
-   * :ref:`X(11) <X(11)>` = homothetic center of medial triangle and cross-triangle of ABC and 2nd Johnson-Yff triangle
+   * :ref:`X(11) <X(11)>` = perspector of orthic triangle and :term:`tangential triangle <tangential-triangle>` of hyperbola {{:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(1) <X(1)>`,\ :ref:`X(2) <X(2)>`}}
+   * :ref:`X(11) <X(11)>` = homothetic center of cyclic quadrilateral :g:`ABC << A B C >>`\ :ref:`X(104) <X(104)>` and congruent quadrilateral formed by orthocenters of vertices taken 3 at a time
+   * :ref:`X(11) <X(11)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Feuerbach triangle
+   * :ref:`X(11) <X(11)>` = homothetic center of medial triangle and cross-triangle of :g:`ABC << A B C >>` and inner Johnson triangle
+   * :ref:`X(11) <X(11)>` = homothetic center of Euler triangle and cross-triangle of :g:`ABC << A B C >>` and 1st Johnson-Yff triangle
+   * :ref:`X(11) <X(11)>` = homothetic center of medial triangle and cross-triangle of :g:`ABC << A B C >>` and 2nd Johnson-Yff triangle
    * :ref:`X(11) <X(11)>` = orthic-isogonal conjugate of :ref:`X(513) <X(513)>`
    * :ref:`X(11) <X(11)>` = trilinear pole of line X(4530)X(14393)
    * :ref:`X(11) <X(11)>` = point of concurrence of :term:`cevian <cevian>` circles of vertices of :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(7) <X(7)>`
-   * :ref:`X(11) <X(11)>` = homothetic center of cyclic quadrilateral ABC\ :ref:`X(104) <X(104)>` and congruent quadrilateral formed by orthocenters of vertices taken 3 at a time
+   * :ref:`X(11) <X(11)>` = homothetic center of cyclic quadrilateral :g:`ABC << A B C >>`\ :ref:`X(104) <X(104)>` and congruent quadrilateral formed by orthocenters of vertices taken 3 at a time
    * :ref:`X(11) <X(11)>` = homothetic center of Ursa-minor and Ursa-major triangles
-   * :ref:`X(11) <X(11)>` = homothetic center of ABC and inner Johnson triangle
+   * :ref:`X(11) <X(11)>` = homothetic center of :g:`ABC << A B C >>` and inner Johnson triangle
    * :ref:`X(11) <X(11)>` = trilinear product :ref:`X(57) <X(57)>`\ \*X(1146)
    * :ref:`X(11) <X(11)>` = barycentric product :ref:`X(7) <X(7)>`\ \*X(1146)
    * :ref:`X(11) <X(11)>` = homothetic center of Garcia reflection triangle (aka Gemini triangle 8) and 2nd Schiffler triangle
-   * :ref:`X(11) <X(11)>` = excentral-to-ABC :term:`functional image <functional-image>` of X(3659)
-   * :ref:`X(11) <X(11)>` = excentral-to-ABC :term:`barycentric image <barycentric-image>` of :ref:`X(100) <X(100)>`
+   * :ref:`X(11) <X(11)>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of X(3659)
+   * :ref:`X(11) <X(11)>` = excentral-to-:g:`ABC << A B C >>` :term:`barycentric image <barycentric-image>` of :ref:`X(100) <X(100)>`
    * :ref:`X(11) <X(11)>` = Pelletier-isogonal conjugate of X(35604)
    * :ref:`X(11) <X(11)>` = X(i)-:term:`anticomplementary conjugate <anticomplementary-conjugate>` of X(j) for these (i,j): {18771, :ref:`8 <X(8)>`}, {31628, 20295}, {38809, 21272}
    * :ref:`X(11) <X(11)>` = X(i)-complementary conjugate of X(j) for these (i,j): {:ref:`1 <X(1)>`, :ref:`513 <X(513)>`}, {:ref:`2 <X(2)>`, 3835}, {:ref:`3 <X(3)>`, 20315}, {:ref:`4 <X(4)>`, 20316}, {:ref:`6 <X(6)>`, :ref:`514 <X(514)>`}, {:ref:`7 <X(7)>`, 17072}, {:ref:`9 <X(9)>`, 20317}, {:ref:`10 <X(10)>`, 31946}, {:ref:`11 <X(11)>`, :ref:`124 <X(124)>`}, {:ref:`25 <X(25)>`, 3239}, {:ref:`27 <X(27)>`, 30476}, {:ref:`28 <X(28)>`, 8062}, {:ref:`31 <X(31)>`, :ref:`650 <X(650)>`}, {:ref:`32 <X(32)>`, 6586}, {:ref:`34 <X(34)>`, :ref:`521 <X(521)>`}, {:ref:`37 <X(37)>`, 4129}, {:ref:`42 <X(42)>`, :ref:`661 <X(661)>`}, {:ref:`55 <X(55)>`, 4521}, {:ref:`56 <X(56)>`, :ref:`522 <X(522)>`}, {:ref:`57 <X(57)>`, 4885}, {:ref:`58 <X(58)>`, :ref:`523 <X(523)>`}, {:ref:`75 <X(75)>`, 21260}, {:ref:`76 <X(76)>`, 21262}, {:ref:`81 <X(81)>`, 4369}, {:ref:`86 <X(86)>`, :ref:`512 <X(512)>`}, {:ref:`87 <X(87)>`, 4083}, {:ref:`88 <X(88)>`, 4928}, {:ref:`89 <X(89)>`, 47779}, {:ref:`100 <X(100)>`, 24003}, {:ref:`101 <X(101)>`, 4422}, {:ref:`105 <X(105)>`, 3716}, {:ref:`106 <X(106)>`, :ref:`900 <X(900)>`}, {:ref:`109 <X(109)>`, 3035}, {:ref:`111 <X(111)>`, 45661}, {:ref:`190 <X(190)>`, 27076}, {:ref:`223 <X(223)>`, 20314}, {:ref:`239 <X(239)>`, 27854}, {:ref:`244 <X(244)>`, :ref:`11 <X(11)>`}, {:ref:`256 <X(256)>`, 21051}, {:ref:`269 <X(269)>`, 3900}, {:ref:`274 <X(274)>`, 42327}, {:ref:`278 <X(278)>`, 46396}, {:ref:`279 <X(279)>`, 46399}, {:ref:`282 <X(282)>`, 20318}, {:ref:`286 <X(286)>`, 21259}, {:ref:`291 <X(291)>`, 3837}, {:ref:`292 <X(292)>`, :ref:`812 <X(812)>`}, {:ref:`310 <X(310)>`, 23301}, {:ref:`330 <X(330)>`, 21191}, {:ref:`335 <X(335)>`, 21261}, {:ref:`512 <X(512)>`, 1213}, {:ref:`513 <X(513)>`, :ref:`10 <X(10)>`}, {:ref:`514 <X(514)>`, :ref:`141 <X(141)>`}, {:ref:`521 <X(521)>`, 34823}, {:ref:`522 <X(522)>`, 1329}, {:ref:`523 <X(523)>`, 3454}, {:ref:`593 <X(593)>`, 21196}, {:ref:`596 <X(596)>`, 44316}, {:ref:`604 <X(604)>`, :ref:`905 <X(905)>`}, {:ref:`608 <X(608)>`, 14837}, {:ref:`614 <X(614)>`, 17115}, {:ref:`647 <X(647)>`, :ref:`440 <X(440)>`}, {:ref:`649 <X(649)>`, :ref:`2 <X(2)>`}, {:ref:`650 <X(650)>`, 3452}, {:ref:`651 <X(651)>`, 21232}, {:ref:`656 <X(656)>`, 21530}, {:ref:`657 <X(657)>`, 6554}, {:ref:`659 <X(659)>`, 17793}, {:ref:`661 <X(661)>`, 1211}, {:ref:`663 <X(663)>`, :ref:`9 <X(9)>`}, {:ref:`665 <X(665)>`, 16593}, {:ref:`667 <X(667)>`, :ref:`37 <X(37)>`}, {:ref:`669 <X(669)>`, 21838}, {:ref:`676 <X(676)>`, :ref:`118 <X(118)>`}, {:ref:`692 <X(692)>`, 24036}, {:ref:`693 <X(693)>`, 2887}, {:ref:`739 <X(739)>`, 4763}, {:ref:`741 <X(741)>`, 9508}, {:ref:`749 <X(749)>`, 23815}, {:ref:`798 <X(798)>`, 16589}, {:ref:`810 <X(810)>`, 18591}, {:ref:`812 <X(812)>`, 20333}, {:ref:`849 <X(849)>`, 31947}, {:ref:`870 <X(870)>`, :ref:`788 <X(788)>`}, {:ref:`875 <X(875)>`, 1575}, {:ref:`876 <X(876)>`, 3836}, {:ref:`884 <X(884)>`, 40869}, {:ref:`893 <X(893)>`, 25666}, {:ref:`899 <X(899)>`, 14434}, {:ref:`900 <X(900)>`, :ref:`121 <X(121)>`}, {:ref:`902 <X(902)>`, 6544}, {:ref:`904 <X(904)>`, 3709}, {:ref:`905 <X(905)>`, 18589}, {:ref:`918 <X(918)>`, 20540}, {:ref:`977 <X(977)>`, :ref:`832 <X(832)>`}, {:ref:`985 <X(985)>`, 4874}, {:ref:`987 <X(987)>`, 6133}, {:ref:`996 <X(996)>`, 9002}, {:ref:`998 <X(998)>`, 9001}, {1002, 24720}, {1015, 1086}, {1019, 3739}, {1022, 3834}, {1024, 34852}, {1027, :ref:`518 <X(518)>`}, {1042, :ref:`656 <X(656)>`}, {1073, 20319}, {1086, :ref:`116 <X(116)>`}, {1096, 14298}, {1106, 6129}, {1111, 21252}, {1120, 6085}, {1126, 4977}, {1169, 8045}, {1193, 50330}, {1201, 6615}, {1220, 6371}, {1222, 6363}, {1245, 47842}, {1252, 10196}, {1255, 48049}, {1333, 14838}, {1357, 3756}, {1358, 17059}, {1390, 48050}, {1395, 6588}, {1397, 6589}, {1398, 21172}, {1400, 1577}, {1407, 7658}, {1411, 3738}, {1412, 17069}, {1413, 8058}, {1415, 16578}, {1416, :ref:`676 <X(676)>`}, {1431, 3907}, {1434, 17066}, {1438, :ref:`918 <X(918)>`}, {1458, 3126}, {1459, :ref:`3 <X(3)>`}, {1461, 17044}, {1474, :ref:`525 <X(525)>`}, {1477, 4925}, {1577, 21245}, {1635, 16594}, {1638, 31844}, {1647, 3259}, {1769, :ref:`119 <X(119)>`}, {1911, :ref:`665 <X(665)>`}, {1914, 27929}, {1919, :ref:`39 <X(39)>`}, {1960, 4370}, {1973, 2509}, {1977, 6377}, {1980, 16584}, {2006, 46397}, {2107, 46390}, {2162, 31286}, {2163, 4777}, {2170, 26932}, {2191, 3309}, {2203, 16612}, {2206, :ref:`647 <X(647)>`}, {2215, 23882}, {2254, :ref:`120 <X(120)>`}, {2279, 4762}, {2291, 45326}, {2297, 8712}, {2308, 4988}, {2309, 40627}, {2310, 5514}, {2334, 4778}, {2350, :ref:`693 <X(693)>`}, {2382, 45666}, {2384, 45684}, {2423, 3911}, {2424, :ref:`516 <X(516)>`}, {2530, 21249}, {2605, 3647}, {2983, 29162}, {3063, 1212}, {3064, 41883}, {3120, :ref:`125 <X(125)>`}, {3121, 16592}, {3122, :ref:`115 <X(115)>`}, {3123, 5518}, {3124, 6627}, {3125, 8287}, {3223, 25142}, {3226, 6373}, {3248, 1015}, {3261, :ref:`626 <X(626)>`}, {3270, 40616}, {3271, 1146}, {3415, 4522}, {3445, 3667}, {3572, 3912}, {3667, 2885}, {3669, :ref:`142 <X(142)>`}, {3676, 2886}, {3699, 3038}, {3709, 38930}, {3720, 50497}, {3733, 1125}, {3737, :ref:`960 <X(960)>`}, {3756, 5510}, {3766, 20542}, {3768, 13466}, {3835, 21250}, {3837, 20551}, {3937, 2968}, {3939, 3039}, {4010, 45162}, {4017, :ref:`442 <X(442)>`}, {4025, 1368}, {4040, 40607}, {4057, 4075}, {4079, 6537}, {4083, 34832}, {4091, 6389}, {4105, 5574}, {4107, 39080}, {4164, 19563}, {4367, 51575}, {4391, 21244}, {4444, 20541}, {4455, 35068}, {4466, :ref:`127 <X(127)>`}, {4556, :ref:`620 <X(620)>`}, {4560, 21246}, {4581, 3831}, {4584, 40548}, {4598, 40562}, {4603, 40546}, {4724, 3789}, {4750, :ref:`126 <X(126)>`}, {4775, 16590}, {4777, 21251}, {4817, 21264}, {5029, 6651}, {5331, 8672}, {6129, 6260}, {6164, 11814}, {6186, 3700}, {6187, 1639}, {6373, 20532}, {6385, 21263}, {6548, 21241}, {6591, :ref:`226 <X(226)>`}, {6729, 2090}, {7004, :ref:`123 <X(123)>`}, {7050, 43061}, {7117, 16596}, {7121, 21348}, {7123, 11068}, {7151, 14331}, {7178, 17052}, {7180, 17056}, {7192, 3741}, {7199, 21240}, {7203, 3742}, {7216, 18635}, {7250, 1834}, {7252, 5745}, {7649, :ref:`5 <X(5)>`}, {7658, 2884}, {8050, 36951}, {8578, 39026}, {8632, 17755}, {8643, 3161}, {8656, 36911}, {8700, 45679}, {8747, :ref:`520 <X(520)>`}, {9262, :ref:`190 <X(190)>`}, {9268, 6550}, {9309, 4147}, {9315, 31287}, {9456, 3960}, {10013, 6005}, {10566, 3934}, {10579, 8713}, {11125, :ref:`113 <X(113)>`}, {13476, 50337}, {14413, 10427}, {14419, 16597}, {14936, 13609}, {16079, 4943}, {16726, 17761}, {16732, 21253}, {16757, 21247}, {16892, 21248}, {17096, 17050}, {17187, 3005}, {17924, 20305}, {17925, 34830}, {17954, 2787}, {17962, 2786}, {18001, 10026}, {18014, 20546}, {18098, 29512}, {18108, 1215}, {18191, 34589}, {18210, 34846}, {18344, 20262}, {20974, 40618}, {20979, 6376}, {21102, 1209}, {21109, 15116}, {21122, 40938}, {21123, 6292}, {21132, 46100}, {21143, 6547}, {21172, 2883}, {21758, 16586}, {21832, 46842}, {22350, 42769}, {22383, 1214}, {23189, 34851}, {23345, :ref:`519 <X(519)>`}, {23351, 5199}, {23355, :ref:`726 <X(726)>`}, {23472, 41771}, {23493, :ref:`798 <X(798)>`}, {23572, 6374}, {23838, 5123}, {23892, :ref:`536 <X(536)>`}, {24002, 17046}, {24012, 17426}, {25417, 4932}, {25426, 28840}, {25430, 4940}, {25576, 25107}, {26721, 23305}, {27789, 48041}, {27846, 38989}, {28615, 48003}, {30571, 4806}, {30650, 47778}, {30651, 48008}, {32674, 36949}, {32735, 24980}, {32739, 23988}, {34080, 25097}, {34444, 8714}, {34893, 2832}, {34916, 4160}, {35058, 23803}, {35348, 5087}, {35355, 3823}, {35365, 50752}, {36123, 8677}, {36127, 3042}, {36598, 29226}, {37129, :ref:`891 <X(891)>`}, {37627, 3880}, {38266, 3669}, {38346, 40619}, {38357, 46663}, {38986, 40610}, {39949, 4132}, {39961, 47996}, {39965, 48399}, {39972, 29198}, {40148, :ref:`649 <X(649)>`}, {40433, 6372}, {40495, 21235}, {40746, :ref:`824 <X(824)>`}, {40763, 3805}, {40958, 40628}, {41434, 28209}, {41436, 6006}, {43051, 20528}, {43531, :ref:`834 <X(834)>`}, {43922, 1647}, {43923, 1210}, {43924, :ref:`1 <X(1)>`}, {43925, 40940}, {43926, 50755}, {43927, 50605}, {43928, 4871}, {43929, 3008}, {43931, 3840}, {43932, 11019}, {46018, 4791}, {46107, 21243}, {47947, 17239}, {48032, 40609}, {48131, 51571}, {48144, 10472}, {48306, 51573}, {48340, 51572}, {50344, 3634}, {50521, 16587}, {50525, 28651}, {51223, 47843}, {51443, 4913}, {51476, 2490}, {51640, 18642}, {51642, 2092}, {51648, 35204}, {51650, 41540}, {51654, 6600}, {51658, 12640}, {51686, 23874}
@@ -161,7 +157,7 @@ Notes
 
 .. container:: note-item
 
-   Let L\ :sub:`A` be the line through A parallel to :ref:`X(1) <X(1)>`\ \ :ref:`X(3) <X(3)>`, and define L\ :sub:`B` and L\ :sub:`C` cyclically. Let M\ :sub:`A` be the reflection of BC in L\ :sub:`A`, and define M\ :sub:`B` and M\ :sub:`C` cyclically. Let A' = M\ :sub:`B`\ ∩M\ :sub:`C`, and define cyclically B' and C' cyclically. The triangle A'B'C' is inversely similar to, and 3 times the size of, ABC. Let A″B″C″ be the reflection of A'B'C' in line :ref:`X(1) <X(1)>`\ \ :ref:`X(3) <X(3)>`. The triangle A″B″C″ is homothetic to ABC, with center of homothety :ref:`X(11) <X(11)>`; see :cite:`Hyacinthos #16741 <hyacinthos>`/16782, Sep 2008. (Randy Hutson, March 25, 2016)
+   Let :g:`L_{A} <L_A>` be the line through :g:`A <A>` parallel to :ref:`X(1) <X(1)>`\ \ :ref:`X(3) <X(3)>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`M_{A} <M_A>` be the reflection of :g:`BC <[ B C ]>` in :g:`L_{A} <L_A>`, and define :g:`M_{B} <M_B>` and :g:`M_{C} <M_C>` cyclically. Let :g:`A' <A'>` = :g:`M_{B} <M_B>`\ ∩\ :g:`M_{C} <M_C>`, and define cyclically :g:`B' <B'>` and :g:`C' <C'>` cyclically. The triangle :g:`A'B'C' << A' B' C' >>` is inversely similar to, and 3 times the size of, :g:`ABC << A B C >>`. Let :g:`A″B″C″ << A″ B″ C″ >>` be the reflection of :g:`A'B'C' << A' B' C' >>` in line :ref:`X(1) <X(1)>`\ \ :ref:`X(3) <X(3)>`. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to :g:`ABC << A B C >>`, with center of homothety :ref:`X(11) <X(11)>`; see :cite:`Hyacinthos #16741 <hyacinthos>`/16782, Sep 2008. (Randy Hutson, March 25, 2016)
 
 .. container:: note-item
 
@@ -169,27 +165,27 @@ Notes
 
 .. container:: note-item
 
-   Let Na = :ref:`X(5) <X(5)>` of BC\ :ref:`X(1) <X(1)>`, Nb = :ref:`X(5) <X(5)>` of CA\ :ref:`X(1) <X(1)>`, Nc = :ref:`X(5) <X(5)>` of AB\ :ref:`X(1) <X(1)>`. Then :ref:`X(11) <X(11)>` = :ref:`X(186) <X(186)>` of NaNbNc. (Randy Hutson, April 9, 2016)
+   Let :g:`N_{a} <N_a>` = :ref:`X(5) <X(5)>` of :g:`BC <[ B C ]>`\ :ref:`X(1) <X(1)>`, :g:`N_{b} <N_b>` = :ref:`X(5) <X(5)>` of :g:`CA <[ C A ]>`\ :ref:`X(1) <X(1)>`, :g:`N_{c} <N_c>` = :ref:`X(5) <X(5)>` of :g:`AB <[ A B ]>`\ :ref:`X(1) <X(1)>`. Then :ref:`X(11) <X(11)>` = :ref:`X(186) <X(186)>` of :g:`N_{a}N_{b}N_{c} << N_a N_b N_c >>`. (Randy Hutson, April 9, 2016)
 
 .. container:: note-item
 
-   Let JaJbJc be the :term:`excentral triangle <excentral-triangle>` and FaFbFc be the Feuerbach triangle. Let Fa' = {:ref:`X(5) <X(5)>`,Ja}-harmonic conjugate of Fa, and define Fb', Fc' cyclically. The lines AFa', BFb', CFc' concur in :ref:`X(11) <X(11)>`.
+   Let :g:`J_{a}J_{b}J_{c} << J_a J_b J_c >>` be the :term:`excentral triangle <excentral-triangle>` and :g:`F_{a}F_{b}F_{c} << F_a F_b F_c >>` be the Feuerbach triangle. Let :g:`F_{a}' <F_a'>` = {:ref:`X(5) <X(5)>`,\ :g:`J_{a} <J_a>`}-harmonic conjugate of :g:`F_{a} <F_a>`, and define :g:`F_{b}' <F_b'>`, :g:`F_{c}' <F_c'>` cyclically. The lines :g:`AF_{a}' <[ A F_a' ]>`, :g:`BF_{b}' <[ B F_b' ]>`, :g:`CF_{c}' <[ C F_c' ]>` concur in :ref:`X(11) <X(11)>`.
 
 .. container:: note-item
 
-   Let A'B'C' be the orthic triangle. Let La be the antiorthic axis of AB'C', and define Lb and Lc cyclically. Let A″ = Lb∩Lc, and define B'' and C'' cyclically. The triangle A″B″C″ is inversely similar to ABC, with similitude center :ref:`X(9) <X(9)>`, and :ref:`X(11) <X(11)>` = :ref:`X(55) <X(55)>`-of-A″B″C″. (Randy Hutson, December 10, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the orthic triangle. Let :g:`L_{a} <L_a>` be the antiorthic axis of :g:`AB'C' << A B' C' >>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is inversely similar to :g:`ABC << A B C >>`, with similitude center :ref:`X(9) <X(9)>`, and :ref:`X(11) <X(11)>` = :ref:`X(55) <X(55)>`-of-:g:`A″B″C″ << A″ B″ C″ >>`. (Randy Hutson, December 10, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the orthic triangle. Let Na be the Nagel line of AB'C', and define Nb and Nc cyclically. Let A″ = Nb∩Nc, and define B'' and C'' cyclically. The triangle A″B″C″ is inversely similar to ABC, and :ref:`X(11) <X(11)>` = :ref:`X(36) <X(36)>`-of-A″B″C″. (Randy Hutson, December 10, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the orthic triangle. Let :g:`N_{a} <N_a>` be the Nagel line of :g:`AB'C' << A B' C' >>`, and define :g:`N_{b} <N_b>` and :g:`N_{c} <N_c>` cyclically. Let :g:`A″ <A″>` = :g:`N_{b} <N_b>`\ ∩\ :g:`N_{c} <N_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is inversely similar to :g:`ABC << A B C >>`, and :ref:`X(11) <X(11)>` = :ref:`X(36) <X(36)>`-of-:g:`A″B″C″ << A″ B″ C″ >>`. (Randy Hutson, December 10, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the orthic triangle. The lines IO of AB'C', BC'A', CA'B' concur in :ref:`X(11) <X(11)>`. (Randy Hutson, December 10, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the orthic triangle. The lines :g:`IO <[ I O ]>` of :g:`AB'C' << A B' C' >>`, :g:`BC'A' << B C' A' >>`, :g:`CA'B' << C A' B' >>` concur in :ref:`X(11) <X(11)>`. (Randy Hutson, December 10, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the orthic triangle. The lines IO of AB'C', BC'A', CA'B' concur in :ref:`X(11) <X(11)>`. (Randy Hutson, June 27, 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the orthic triangle. The lines :g:`IO <[ I O ]>` of :g:`AB'C' << A B' C' >>`, :g:`BC'A' << B C' A' >>`, :g:`CA'B' << C A' B' >>` concur in :ref:`X(11) <X(11)>`. (Randy Hutson, June 27, 2018)
 
 .. container:: note-item
 

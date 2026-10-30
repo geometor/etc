@@ -10,23 +10,19 @@ X(164) = INCENTER OF EXCENTRAL TRIANGLE
 
 .. enunciation::
 
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the 1st-circumperp-of-1st-circumperp triangle (which is also the 2nd-circumperp-of-2nd-circumperp triangle) and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(164) <X(164)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (:person:`Randy Hutson <randy-hutson>`, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the 1st-circumperp-of-1st-circumperp triangle (which is also the 2nd-circumperp-of-2nd-circumperp triangle) and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(164) <X(164)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (:person:`Randy Hutson <randy-hutson>`, August 30, 2020)
 
 .. figure:: x-00164.svg
    :alt: X(164) = INCENTER OF EXCENTRAL TRIANGLE
    :align: center
 
-   **X(164) = INCENTER OF EXCENTRAL TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(164) = INCENTER OF EXCENTRAL TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`\sin B/2 + \sin C/2 - \sin A/2 : \sin C/2 + \sin A/2 - \sin B/2 : \sin A/2 + \sin B/2 - \sin C/2`
    | **Barycentrics:** :math:`a(\sin B/2 + \sin C/2 - \sin A/2) : b(\sin C/2 + \sin A/2 - \sin B/2) : c(\sin A/2 + \sin B/2 - \sin C/2)`
    | **Search Value (6, 9, 13):** :math:`5.601337607767`
-
-.. container:: note-item
-
-   :ref:`X(164) <X(164)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 9 lines
@@ -47,14 +43,14 @@ X(164) = INCENTER OF EXCENTRAL TRIANGLE
    * :ref:`X(164) <X(164)>` = :ref:`X(188) <X(188)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(1) <X(1)>`
    * :ref:`X(164) <X(164)>` = X(i)-:term:`aleph conjugate <aleph-conjugate>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`361 <X(361)>`), (:ref:`2 <X(2)>`, :ref:`362 <X(362)>`), (:ref:`9 <X(9)>`, :ref:`844 <X(844)>`), (:ref:`188 <X(188)>`, :ref:`164 <X(164)>`), (:ref:`366 <X(366)>`, :ref:`173 <X(173)>`)
    * :ref:`X(164) <X(164)>` = centroid of curvatures of extraversions of Conway circle
-   * :ref:`X(164) <X(164)>` = ABC-to-excentral :term:`trilinear image <trilinear-image>` of :ref:`X(1) <X(1)>`
+   * :ref:`X(164) <X(164)>` = :g:`ABC << A B C >>`-to-excentral :term:`trilinear image <trilinear-image>` of :ref:`X(1) <X(1)>`
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the 1st-circumperp-of-2nd-circumperp triangle (which is also the 2nd-circumperp-of-1st-circumperp triangle) and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(164) <X(164)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (Randy Hutson, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the 1st-circumperp-of-2nd-circumperp triangle (which is also the 2nd-circumperp-of-1st-circumperp triangle) and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(164) <X(164)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
 
 .. toctree::
    :hidden:

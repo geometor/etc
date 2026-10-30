@@ -16,22 +16,22 @@ X(673) = TRILINEAR POLE OF LINE X(1)X(514)
    :alt: X(673) = TRILINEAR POLE OF LINE X(1)X(514)
    :align: center
 
-   **X(673) = TRILINEAR POLE OF LINE X(1)X(514)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(673) = TRILINEAR POLE OF LINE X(1)X(514)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`bc/[b^{2} + c^{2} - a(b + c)]`
-   | **Barycentrics:** :math:`(a^2 + b^2 - a*c - b*c)*(a^2 - a*b - b*c + c^2) : :`
+   | **Barycentrics:** :math:`(a^{2} + b^{2} - a c - b c) \cdot (a^{2} - a b - b c + c^{2}) : :`
    | **Search Value (6, 9, 13):** :math:`2.666912049087`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(673) <X(673)>` = 3 :ref:`X(2) <X(2)>` + X(41845), 4 :ref:`X(142) <X(142)>` - 5 X(27191), 4 X(4422) - 5 X(18230), 3 X(5817) - 2 X(24828), 2 X(16593) + X(41845), 3 X(21168) - X(24817), 4 X(25351) - 3 X(38052), 3 X(27484) - X(33888)
+   * :ref:`X(673) <X(673)>` = :math:`3` :ref:`X(2) <X(2)>` + X(41845), :math:`4` :ref:`X(142) <X(142)>` - :math:`5` X(27191), :math:`4` X(4422) - :math:`5` X(18230), :math:`3` X(5817) - :math:`2` X(24828), :math:`2` X(16593) + X(41845), :math:`3` X(21168) - X(24817), :math:`4` X(25351) - :math:`3` X(38052), :math:`3` X(27484) - X(33888)
 
 .. container:: note-item
 
-   :ref:`X(673) <X(673)>` lies on the conic {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(7) <X(7)>`}}, the cubics K251, K323, K385, K506, K623, K980, K983, the curves CC9 and Q012.
+   :ref:`X(673) <X(673)>` lies on the conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(7) <X(7)>`}}, the cubics K251, K323, K385, K506, K623, K980, K983, the curves :g:`CC_{9} <[ C C_9 ]>` and Q012.
 
 .. collapse:: Incident Central Lines
    :badge: 261 lines
@@ -49,7 +49,7 @@ X(673) = TRILINEAR POLE OF LINE X(1)X(514)
    * :ref:`X(673) <X(673)>` = :term:`complement <complement>` of X(20533)
    * :ref:`X(673) <X(673)>` = :term:`anticomplement <anticomplement>` of X(16593)
    * :ref:`X(673) <X(673)>` = BSS(a^2→a) of :ref:`X(98) <X(98)>`
-   * :ref:`X(673) <X(673)>` = antipode of :ref:`X(7) <X(7)>` in hyperbola {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(7) <X(7)>`}}
+   * :ref:`X(673) <X(673)>` = antipode of :ref:`X(7) <X(7)>` in hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(7) <X(7)>`}}
    * :ref:`X(673) <X(673)>` = polar conjugate of X(1861)
    * :ref:`X(673) <X(673)>` = X(i)-:term:`anticomplementary conjugate <anticomplementary-conjugate>` of X(j) for these (i,j): {1280, 20552}, {39272, 20295}
    * :ref:`X(673) <X(673)>` = X(i)-:term:`complementary conjugate <complementary-conjugate>` of X(j) for these (i,j): {2115, 3452}, {9499, :ref:`141 <X(141)>`}, {9500, :ref:`10 <X(10)>`}

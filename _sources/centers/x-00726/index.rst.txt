@@ -16,16 +16,12 @@ X(726) = EVEN (- 2, -1) INFINITY POINT
    :alt: X(726) = EVEN (- 2, -1) INFINITY POINT
    :align: center
 
-   **X(726) = EVEN (- 2, -1) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(726) = EVEN (- 2, -1) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = a :sup:`-3`\ (b :sup:`-1` + c :sup:`-1`) - a :sup:`-2`\ (b :sup:`-2` + c :sup:`-2`)
-   | **Barycentrics:** :math:`a (b^2 + c^2) - b c (b + c) : :`
-
-.. container:: note-item
-
-   :ref:`X(726) <X(726)>` lies.
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a ^{-3}(b ^{-1} + c ^{-1}) - a ^{-2}(b ^{-2} + c ^{-2})`
+   | **Barycentrics:** :math:`a (b^{2} + c^{2}) - b c (b + c) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines

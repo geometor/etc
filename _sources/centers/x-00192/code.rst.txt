@@ -12,7 +12,7 @@ X(192) = X(1)-CEVA CONJUGATE OF X(2) (CONGRUENT PARALLELIANS POINT) — Code
    :alt: X(192) = X(1)-CEVA CONJUGATE OF X(2) (CONGRUENT PARALLELIANS POINT)
    :align: center
 
-   **X(192) = X(1)-CEVA CONJUGATE OF X(2) (CONGRUENT PARALLELIANS POINT)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(192) = X(1)-CEVA CONJUGATE OF X(2) (CONGRUENT PARALLELIANS POINT)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

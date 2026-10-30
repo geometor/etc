@@ -16,17 +16,13 @@ X(71) = ISOGONAL CONJUGATE OF X(27)
    :alt: X(71) = ISOGONAL CONJUGATE OF X(27)
    :align: center
 
-   **X(71) = ISOGONAL CONJUGATE OF X(27)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(71) = ISOGONAL CONJUGATE OF X(27)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`(b + c) \cos A : (c + a) \cos B : (a + b) \cos C`
    | **Barycentrics:** :math:`(b + c) \sin 2A : (c + a) \sin 2B : (a + b) \sin 2C`
    | **Search Value (6, 9, 13):** :math:`5.850835756503`
-
-.. container:: note-item
-
-   :ref:`X(71) <X(71)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 13 lines

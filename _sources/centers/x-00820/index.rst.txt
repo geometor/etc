@@ -16,17 +16,13 @@ X(820) = CROSSPOINT OF X(1) AND X(255)
    :alt: X(820) = CROSSPOINT OF X(1) AND X(255)
    :align: center
 
-   **X(820) = CROSSPOINT OF X(1) AND X(255)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(820) = CROSSPOINT OF X(1) AND X(255)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = cos\ :sup:`2`\ A (cos\ :sup:`2`\ B + cos\ :sup:`2`\ C)
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = \cos^{2} A (\cos^{2} B + \cos^{2} C)`
    | **Barycentrics:** :math:`(\sin A)f(A,B,C) : (\sin B)f(B,C,A) : (\sin C)f(C,A,B)`
    | **Search Value (6, 9, 13):** :math:`2.304798246387`
-
-.. container:: note-item
-
-   :ref:`X(820) <X(820)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines

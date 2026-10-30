@@ -16,12 +16,12 @@ X(654) = CROSSDIFFERENCE OF X(1) AND X(5)
    :alt: X(654) = CROSSDIFFERENCE OF X(1) AND X(5)
    :align: center
 
-   **X(654) = CROSSDIFFERENCE OF X(1) AND X(5)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(654) = CROSSDIFFERENCE OF X(1) AND X(5)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`\cos(A - B) - \cos(C - A) : :`
-   | **Barycentrics:** :math:`a^2 (b - c) (a - b - c) (a^2 - b^2 + b c - c^2) : :`
+   | **Barycentrics:** :math:`a^{2} (b - c) (a - b - c) (a^{2} - b^{2} + b c - c^{2}) : :`
    | **Search Value (6, 9, 13):** :math:`-12.173358731681`
 
 .. container:: note-item
@@ -49,7 +49,7 @@ X(654) = CROSSDIFFERENCE OF X(1) AND X(5)
    * :ref:`X(654) <X(654)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): {:ref:`1 <X(1)>`, :ref:`655 <X(655)>`}, {:ref:`9 <X(9)>`, 5548}, {:ref:`57 <X(57)>`, 2720}, {:ref:`100 <X(100)>`, 2990}, {:ref:`101 <X(101)>`, 2316}, {:ref:`104 <X(104)>`, :ref:`651 <X(651)>`}, {:ref:`110 <X(110)>`, 24624}, {:ref:`275 <X(275)>`, 1309}, {:ref:`901 <X(901)>`, 40215}, {1983, 4282}, {3738, 3960}, {3904, 44428}, {4560, 43728}
    * :ref:`X(654) <X(654)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): {:ref:`1 <X(1)>`, :ref:`654 <X(654)>`}, {:ref:`6 <X(6)>`, 39200}, {:ref:`9 <X(9)>`, 2804}, {:ref:`57 <X(57)>`, 30725}, {:ref:`216 <X(216)>`, 8677}, {:ref:`513 <X(513)>`, 8609}, {:ref:`514 <X(514)>`, 3911}, {:ref:`517 <X(517)>`, :ref:`650 <X(650)>`}, {:ref:`523 <X(523)>`, 2245}, {2599, 2600}, {4559, 23981}
    * :ref:`X(654) <X(654)>` = :term:`crossdifference <crossdifference>` of every pair of points on line {1, 5}
-   * :ref:`X(654) <X(654)>` = perspector of hyperbola {A,B,C,\ :ref:`X(1) <X(1)>`,\ :ref:`X(36) <X(36)>`}}
+   * :ref:`X(654) <X(654)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(1) <X(1)>`,\ :ref:`X(36) <X(36)>`}}
    * :ref:`X(654) <X(654)>` = bicentric difference of PU(68)
    * :ref:`X(654) <X(654)>` = PU(68)-harmonic conjugate of X(2594)
    * :ref:`X(654) <X(654)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these (i,j): {:ref:`1 <X(1)>`, :ref:`655 <X(655)>`}, {:ref:`2 <X(2)>`, 2222}, {:ref:`6 <X(6)>`, 35174}, {:ref:`12 <X(12)>`, 37140}, {:ref:`56 <X(56)>`, 36804}, {:ref:`75 <X(75)>`, 32675}, {:ref:`80 <X(80)>`, :ref:`651 <X(651)>`}, {:ref:`100 <X(100)>`, 2006}, {:ref:`101 <X(101)>`, 18815}, {:ref:`109 <X(109)>`, 18359}, {:ref:`190 <X(190)>`, 1411}, {:ref:`476 <X(476)>`, 16577}, {:ref:`653 <X(653)>`, 1807}, {:ref:`664 <X(664)>`, 2161}, {:ref:`759 <X(759)>`, 4552}, {:ref:`901 <X(901)>`, 14628}, {:ref:`934 <X(934)>`, 36910}, {1020, 6740}, {1415, 20566}, {2341, 4566}, {2594, 32680}, {3257, 14584}, {3738, 23592}, {4551, 24624}, {4554, 6187}, {4559, 14616}, {4565, 15065}, {4573, 34857}, {6358, 36069}, {14213, 36078}, {21741, 35139}, {24029, 40437}, {26700, 41226}, {32671, 34388}, {32678, 40999}, {34242, 44765}, {35307, 39277}, {37222, 37630}

@@ -10,13 +10,13 @@ X(103) = ANTIPODE OF X(101)
 
 .. enunciation::
 
-   Let A'B'C' be the :term:`excentral triangle <excentral-triangle>`. The Lemoine axes of triangles A'BC, B'CA, C'AB bound a triangle perspective to ABC at :ref:`X(103) <X(103)>`. (:person:`Randy Hutson <randy-hutson>`, June 27, 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`excentral triangle <excentral-triangle>`. The Lemoine axes of triangles :g:`A'BC << A' B C >>`, :g:`B'CA << B' C A >>`, :g:`C'AB << C' A B >>` bound a triangle perspective to :g:`ABC << A B C >>` at :ref:`X(103) <X(103)>`. (:person:`Randy Hutson <randy-hutson>`, June 27, 2018)
 
 .. figure:: x-00103.svg
    :alt: X(103) = ANTIPODE OF X(101)
    :align: center
 
-   **X(103) = ANTIPODE OF X(101)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(103) = ANTIPODE OF X(101)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,11 +28,7 @@ X(103) = ANTIPODE OF X(101)
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`a^2 / (2 a^3 - a^2 (b + c) - (b - c)^2 (b + c)) : :`
-
-.. container:: note-item
-
-   :ref:`X(103) <X(103)>` lies.
+   * **Barycentrics:** :math:`a^{2} / (2 a^{3} - a^{2} (b + c) - (b - c)^{2} (b + c)) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 164 lines
@@ -52,7 +48,7 @@ X(103) = ANTIPODE OF X(101)
    * :ref:`X(103) <X(103)>` = :ref:`X(21) <X(21)>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X(934) <X(934)>`
    * :ref:`X(103) <X(103)>` = circumcircle-antipode of :ref:`X(101) <X(101)>`
    * :ref:`X(103) <X(103)>` = :ref:`X(115) <X(115)>`-of-the-hexyl-triangle
-   * :ref:`X(103) <X(103)>` = perspector of ABC and the triangle formed by reflecting line PU(10) in the sidelines of ABC
+   * :ref:`X(103) <X(103)>` = perspector of :g:`ABC << A B C >>` and the triangle formed by reflecting line PU(10) in the sidelines of :g:`ABC << A B C >>`
    * :ref:`X(103) <X(103)>` = :ref:`X(114) <X(114)>`-of-excentral-triangle
    * :ref:`X(103) <X(103)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(6) <X(6)>`\ \ :ref:`X(657) <X(657)>`
    * :ref:`X(103) <X(103)>` = Ψ(X(i),X(j)) for these (i,j): (:ref:`6 <X(6)>`, :ref:`657 <X(657)>`), (:ref:`101 <X(101)>`, :ref:`3 <X(3)>`), (:ref:`190 <X(190)>`, :ref:`69 <X(69)>`)

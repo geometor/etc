@@ -100,10 +100,10 @@
         <figure class="align-center" id="id1">
         <div class="etc-graphics-panel">
           <div class="etc-triangle-tabs" role="tablist" aria-label="Reference Triangle">
-            <button type="button" class="etc-tab-btn active" role="tab" aria-selected="true" data-tab="acute" title="Acute Scalene Triangle (5, 6, 7)" data-caption-html="&lt;strong&gt;X(351) = CENTER OF THE PARRY CIRCLE&lt;/strong&gt; constructed on acute reference triangle &lt;code&gt;(a, b, c) = (5, 6, 7)&lt;/code&gt; with unit baseline &lt;code&gt;AB = 1&lt;/code&gt;.">5, 6, 7</button>
-            <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="right" title="Egyptian Right Triangle (3, 4, 5)" data-caption-html="&lt;strong&gt;X(351) = CENTER OF THE PARRY CIRCLE&lt;/strong&gt; constructed on Egyptian right triangle &lt;code&gt;(a, b, c) = (3, 4, 5)&lt;/code&gt; with unit baseline &lt;code&gt;AB = 1&lt;/code&gt;.">3, 4, 5</button>
-            <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="kepler" title="Kepler Golden Right Triangle (1, √φ, φ)" data-caption-html="&lt;strong&gt;X(351) = CENTER OF THE PARRY CIRCLE&lt;/strong&gt; constructed on Kepler golden right triangle &lt;code&gt;(a, b, c) = (1, √φ, φ)&lt;/code&gt; with unit baseline &lt;code&gt;AB = 1&lt;/code&gt;.">Kepler</button>
-            <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="kimberling" title="Kimberling Obtuse Scalene Triangle (6, 9, 13)" data-caption-html="&lt;strong&gt;X(351) = CENTER OF THE PARRY CIRCLE&lt;/strong&gt; constructed on Kimberling&#x27;s canonical uniqueness test triangle &lt;code&gt;(a, b, c) = (6, 9, 13)&lt;/code&gt; (obtuse scalene, unit baseline &lt;code&gt;AB = 1&lt;/code&gt;).">Kimberling</button>
+            <button type="button" class="etc-tab-btn active" role="tab" aria-selected="true" data-tab="acute" title="Acute Scalene Triangle (5, 6, 7)" data-caption-html="&lt;strong&gt;X(351) = CENTER OF THE PARRY CIRCLE&lt;/strong&gt; constructed on acute reference triangle &lt;code&gt;(a, b, c) = (5, 6, 7)&lt;/code&gt; with unit baseline &lt;span class=&quot;geom-ref geom-segment&quot; data-ref=&quot;[ A B ]&quot;&gt;AB&lt;/span&gt; = &lt;code&gt;1&lt;/code&gt;.">5, 6, 7</button>
+            <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="right" title="Egyptian Right Triangle (3, 4, 5)" data-caption-html="&lt;strong&gt;X(351) = CENTER OF THE PARRY CIRCLE&lt;/strong&gt; constructed on Egyptian right triangle &lt;code&gt;(a, b, c) = (3, 4, 5)&lt;/code&gt; with unit baseline &lt;span class=&quot;geom-ref geom-segment&quot; data-ref=&quot;[ A B ]&quot;&gt;AB&lt;/span&gt; = &lt;code&gt;1&lt;/code&gt;.">3, 4, 5</button>
+            <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="kepler" title="Kepler Golden Right Triangle (1, √φ, φ)" data-caption-html="&lt;strong&gt;X(351) = CENTER OF THE PARRY CIRCLE&lt;/strong&gt; constructed on Kepler golden right triangle &lt;code&gt;(a, b, c) = (1, √φ, φ)&lt;/code&gt; with unit baseline &lt;span class=&quot;geom-ref geom-segment&quot; data-ref=&quot;[ A B ]&quot;&gt;AB&lt;/span&gt; = &lt;code&gt;1&lt;/code&gt;.">Kepler</button>
+            <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="kimberling" title="Kimberling Obtuse Scalene Triangle (6, 9, 13)" data-caption-html="&lt;strong&gt;X(351) = CENTER OF THE PARRY CIRCLE&lt;/strong&gt; constructed on Kimberling&#x27;s canonical uniqueness test triangle &lt;code&gt;(a, b, c) = (6, 9, 13)&lt;/code&gt; (obtuse scalene, unit baseline &lt;span class=&quot;geom-ref geom-segment&quot; data-ref=&quot;[ A B ]&quot;&gt;AB&lt;/span&gt; = &lt;code&gt;1&lt;/code&gt;).">Kimberling</button>
           </div>
         <div class="etc-tab-pane active" data-tab-pane="acute">
         <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.447604 -1.534624 2.248938 1.686703" data-initial-viewbox="-0.447604 -1.534624 2.248938 1.686703" preserveAspectRatio="xMidYMid meet">
@@ -724,9 +724,38 @@
                         el.style.display = 'none';
                     });
                 }
+                if (typeof document !== 'undefined') {
+                    document.querySelectorAll('.geom-highlight-text').forEach(el => {
+                        el.classList.remove('geom-highlight-text');
+                    });
+                }
             }
 
-            function activateHover(id) {
+            function resolveSvgId(rawId) {
+                if (!rawId) return rawId;
+                if (svg.querySelector(`[data-id="${CSS.escape(rawId)}"]`)) return rawId;
+                const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                if (segM) {
+                    const revId = `[ ${segM[2]} ${segM[1]} ]`;
+                    if (svg.querySelector(`[data-id="${CSS.escape(revId)}"]`)) return revId;
+                }
+                const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                if (triM) {
+                    const pts = [triM[1], triM[2], triM[3]];
+                    if (pts.includes('A') && pts.includes('B') && pts.includes('C')) {
+                        return '< A B C >';
+                    }
+                    const secPoly = graphicsGroup ? graphicsGroup.querySelector('polygon.secondary[data-id]') : null;
+                    if (secPoly) {
+                        return secPoly.getAttribute('data-id') || rawId;
+                    }
+                }
+                return rawId;
+            }
+
+            function activateHover(rawId) {
+                if (!rawId) return;
+                const id = resolveSvgId(rawId);
                 if (activeHoveredId === id) return;
                 clearHover();
                 activeHoveredId = id;
@@ -744,12 +773,70 @@
                 }
 
                 // Highlight parent/endpoint points and labels
-                const relatedPts = (info && info.related_points) ? info.related_points : [id];
+                let relatedPts = (info && info.related_points) ? info.related_points : [id];
+                if (!targetEl && relatedPts.length === 1 && relatedPts[0] === id) {
+                    const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                    const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                    if (segM) relatedPts = [segM[1], segM[2]];
+                    else if (triM) relatedPts = [triM[1], triM[2], triM[3]];
+                }
                 relatedPts.forEach(pid => {
                     const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
                     if (ptEl) ptEl.classList.add('hover');
                     const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
                     if (lblEl) lblEl.classList.add('hover-label');
+                });
+
+                if (typeof document !== 'undefined') {
+                    const sel = rawId === id
+                        ? `.geom-ref[data-ref="${CSS.escape(id)}"]`
+                        : `.geom-ref[data-ref="${CSS.escape(rawId)}"], .geom-ref[data-ref="${CSS.escape(id)}"]`;
+                    document.querySelectorAll(sel).forEach(el => {
+                        el.classList.add('geom-highlight-text');
+                    });
+                }
+            }
+
+            svg._etcController.activateHover = activateHover;
+            svg._etcController.clearHover = clearHover;
+
+            if (document.body && document.documentElement.tagName.toLowerCase() === 'html' && document.body.dataset.etcGeomRefSyncInit !== '1') {
+                document.body.dataset.etcGeomRefSyncInit = '1';
+                function getActiveSvg() {
+                    const activePaneSvg = document.querySelector('.etc-tab-pane.active svg.geometor-etc-drawing');
+                    if (activePaneSvg && activePaneSvg._etcController) return activePaneSvg;
+                    const anySvg = document.querySelector('svg.geometor-etc-drawing');
+                    return (anySvg && anySvg._etcController) ? anySvg : null;
+                }
+                document.body.addEventListener('mouseover', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref]');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.activateHover) {
+                            activeSvg._etcController.activateHover(geomEl.getAttribute('data-ref'));
+                        }
+                        return;
+                    }
+                    const refLink = e.target.closest('a.reference.internal');
+                    if (refLink) {
+                        const txt = (refLink.textContent || '').trim();
+                        const xm = txt.match(/^X\((\d+)\)$/);
+                        if (xm) {
+                            const activeSvg = getActiveSvg();
+                            if (activeSvg && activeSvg._etcController.activateHover) {
+                                activeSvg._etcController.activateHover(`X(${xm[1]})`);
+                            }
+                        }
+                    }
+                });
+                document.body.addEventListener('mouseout', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref], a.reference.internal');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.clearHover) {
+                            activeSvg._etcController.clearHover();
+                        }
+                    }
                 });
             }
 
@@ -1446,9 +1533,38 @@
                         el.style.display = 'none';
                     });
                 }
+                if (typeof document !== 'undefined') {
+                    document.querySelectorAll('.geom-highlight-text').forEach(el => {
+                        el.classList.remove('geom-highlight-text');
+                    });
+                }
             }
 
-            function activateHover(id) {
+            function resolveSvgId(rawId) {
+                if (!rawId) return rawId;
+                if (svg.querySelector(`[data-id="${CSS.escape(rawId)}"]`)) return rawId;
+                const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                if (segM) {
+                    const revId = `[ ${segM[2]} ${segM[1]} ]`;
+                    if (svg.querySelector(`[data-id="${CSS.escape(revId)}"]`)) return revId;
+                }
+                const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                if (triM) {
+                    const pts = [triM[1], triM[2], triM[3]];
+                    if (pts.includes('A') && pts.includes('B') && pts.includes('C')) {
+                        return '< A B C >';
+                    }
+                    const secPoly = graphicsGroup ? graphicsGroup.querySelector('polygon.secondary[data-id]') : null;
+                    if (secPoly) {
+                        return secPoly.getAttribute('data-id') || rawId;
+                    }
+                }
+                return rawId;
+            }
+
+            function activateHover(rawId) {
+                if (!rawId) return;
+                const id = resolveSvgId(rawId);
                 if (activeHoveredId === id) return;
                 clearHover();
                 activeHoveredId = id;
@@ -1466,12 +1582,70 @@
                 }
 
                 // Highlight parent/endpoint points and labels
-                const relatedPts = (info && info.related_points) ? info.related_points : [id];
+                let relatedPts = (info && info.related_points) ? info.related_points : [id];
+                if (!targetEl && relatedPts.length === 1 && relatedPts[0] === id) {
+                    const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                    const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                    if (segM) relatedPts = [segM[1], segM[2]];
+                    else if (triM) relatedPts = [triM[1], triM[2], triM[3]];
+                }
                 relatedPts.forEach(pid => {
                     const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
                     if (ptEl) ptEl.classList.add('hover');
                     const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
                     if (lblEl) lblEl.classList.add('hover-label');
+                });
+
+                if (typeof document !== 'undefined') {
+                    const sel = rawId === id
+                        ? `.geom-ref[data-ref="${CSS.escape(id)}"]`
+                        : `.geom-ref[data-ref="${CSS.escape(rawId)}"], .geom-ref[data-ref="${CSS.escape(id)}"]`;
+                    document.querySelectorAll(sel).forEach(el => {
+                        el.classList.add('geom-highlight-text');
+                    });
+                }
+            }
+
+            svg._etcController.activateHover = activateHover;
+            svg._etcController.clearHover = clearHover;
+
+            if (document.body && document.documentElement.tagName.toLowerCase() === 'html' && document.body.dataset.etcGeomRefSyncInit !== '1') {
+                document.body.dataset.etcGeomRefSyncInit = '1';
+                function getActiveSvg() {
+                    const activePaneSvg = document.querySelector('.etc-tab-pane.active svg.geometor-etc-drawing');
+                    if (activePaneSvg && activePaneSvg._etcController) return activePaneSvg;
+                    const anySvg = document.querySelector('svg.geometor-etc-drawing');
+                    return (anySvg && anySvg._etcController) ? anySvg : null;
+                }
+                document.body.addEventListener('mouseover', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref]');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.activateHover) {
+                            activeSvg._etcController.activateHover(geomEl.getAttribute('data-ref'));
+                        }
+                        return;
+                    }
+                    const refLink = e.target.closest('a.reference.internal');
+                    if (refLink) {
+                        const txt = (refLink.textContent || '').trim();
+                        const xm = txt.match(/^X\((\d+)\)$/);
+                        if (xm) {
+                            const activeSvg = getActiveSvg();
+                            if (activeSvg && activeSvg._etcController.activateHover) {
+                                activeSvg._etcController.activateHover(`X(${xm[1]})`);
+                            }
+                        }
+                    }
+                });
+                document.body.addEventListener('mouseout', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref], a.reference.internal');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.clearHover) {
+                            activeSvg._etcController.clearHover();
+                        }
+                    }
                 });
             }
 
@@ -2162,9 +2336,38 @@
                         el.style.display = 'none';
                     });
                 }
+                if (typeof document !== 'undefined') {
+                    document.querySelectorAll('.geom-highlight-text').forEach(el => {
+                        el.classList.remove('geom-highlight-text');
+                    });
+                }
             }
 
-            function activateHover(id) {
+            function resolveSvgId(rawId) {
+                if (!rawId) return rawId;
+                if (svg.querySelector(`[data-id="${CSS.escape(rawId)}"]`)) return rawId;
+                const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                if (segM) {
+                    const revId = `[ ${segM[2]} ${segM[1]} ]`;
+                    if (svg.querySelector(`[data-id="${CSS.escape(revId)}"]`)) return revId;
+                }
+                const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                if (triM) {
+                    const pts = [triM[1], triM[2], triM[3]];
+                    if (pts.includes('A') && pts.includes('B') && pts.includes('C')) {
+                        return '< A B C >';
+                    }
+                    const secPoly = graphicsGroup ? graphicsGroup.querySelector('polygon.secondary[data-id]') : null;
+                    if (secPoly) {
+                        return secPoly.getAttribute('data-id') || rawId;
+                    }
+                }
+                return rawId;
+            }
+
+            function activateHover(rawId) {
+                if (!rawId) return;
+                const id = resolveSvgId(rawId);
                 if (activeHoveredId === id) return;
                 clearHover();
                 activeHoveredId = id;
@@ -2182,12 +2385,70 @@
                 }
 
                 // Highlight parent/endpoint points and labels
-                const relatedPts = (info && info.related_points) ? info.related_points : [id];
+                let relatedPts = (info && info.related_points) ? info.related_points : [id];
+                if (!targetEl && relatedPts.length === 1 && relatedPts[0] === id) {
+                    const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                    const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                    if (segM) relatedPts = [segM[1], segM[2]];
+                    else if (triM) relatedPts = [triM[1], triM[2], triM[3]];
+                }
                 relatedPts.forEach(pid => {
                     const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
                     if (ptEl) ptEl.classList.add('hover');
                     const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
                     if (lblEl) lblEl.classList.add('hover-label');
+                });
+
+                if (typeof document !== 'undefined') {
+                    const sel = rawId === id
+                        ? `.geom-ref[data-ref="${CSS.escape(id)}"]`
+                        : `.geom-ref[data-ref="${CSS.escape(rawId)}"], .geom-ref[data-ref="${CSS.escape(id)}"]`;
+                    document.querySelectorAll(sel).forEach(el => {
+                        el.classList.add('geom-highlight-text');
+                    });
+                }
+            }
+
+            svg._etcController.activateHover = activateHover;
+            svg._etcController.clearHover = clearHover;
+
+            if (document.body && document.documentElement.tagName.toLowerCase() === 'html' && document.body.dataset.etcGeomRefSyncInit !== '1') {
+                document.body.dataset.etcGeomRefSyncInit = '1';
+                function getActiveSvg() {
+                    const activePaneSvg = document.querySelector('.etc-tab-pane.active svg.geometor-etc-drawing');
+                    if (activePaneSvg && activePaneSvg._etcController) return activePaneSvg;
+                    const anySvg = document.querySelector('svg.geometor-etc-drawing');
+                    return (anySvg && anySvg._etcController) ? anySvg : null;
+                }
+                document.body.addEventListener('mouseover', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref]');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.activateHover) {
+                            activeSvg._etcController.activateHover(geomEl.getAttribute('data-ref'));
+                        }
+                        return;
+                    }
+                    const refLink = e.target.closest('a.reference.internal');
+                    if (refLink) {
+                        const txt = (refLink.textContent || '').trim();
+                        const xm = txt.match(/^X\((\d+)\)$/);
+                        if (xm) {
+                            const activeSvg = getActiveSvg();
+                            if (activeSvg && activeSvg._etcController.activateHover) {
+                                activeSvg._etcController.activateHover(`X(${xm[1]})`);
+                            }
+                        }
+                    }
+                });
+                document.body.addEventListener('mouseout', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref], a.reference.internal');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.clearHover) {
+                            activeSvg._etcController.clearHover();
+                        }
+                    }
                 });
             }
 
@@ -2890,9 +3151,38 @@
                         el.style.display = 'none';
                     });
                 }
+                if (typeof document !== 'undefined') {
+                    document.querySelectorAll('.geom-highlight-text').forEach(el => {
+                        el.classList.remove('geom-highlight-text');
+                    });
+                }
             }
 
-            function activateHover(id) {
+            function resolveSvgId(rawId) {
+                if (!rawId) return rawId;
+                if (svg.querySelector(`[data-id="${CSS.escape(rawId)}"]`)) return rawId;
+                const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                if (segM) {
+                    const revId = `[ ${segM[2]} ${segM[1]} ]`;
+                    if (svg.querySelector(`[data-id="${CSS.escape(revId)}"]`)) return revId;
+                }
+                const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                if (triM) {
+                    const pts = [triM[1], triM[2], triM[3]];
+                    if (pts.includes('A') && pts.includes('B') && pts.includes('C')) {
+                        return '< A B C >';
+                    }
+                    const secPoly = graphicsGroup ? graphicsGroup.querySelector('polygon.secondary[data-id]') : null;
+                    if (secPoly) {
+                        return secPoly.getAttribute('data-id') || rawId;
+                    }
+                }
+                return rawId;
+            }
+
+            function activateHover(rawId) {
+                if (!rawId) return;
+                const id = resolveSvgId(rawId);
                 if (activeHoveredId === id) return;
                 clearHover();
                 activeHoveredId = id;
@@ -2910,12 +3200,70 @@
                 }
 
                 // Highlight parent/endpoint points and labels
-                const relatedPts = (info && info.related_points) ? info.related_points : [id];
+                let relatedPts = (info && info.related_points) ? info.related_points : [id];
+                if (!targetEl && relatedPts.length === 1 && relatedPts[0] === id) {
+                    const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                    const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                    if (segM) relatedPts = [segM[1], segM[2]];
+                    else if (triM) relatedPts = [triM[1], triM[2], triM[3]];
+                }
                 relatedPts.forEach(pid => {
                     const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
                     if (ptEl) ptEl.classList.add('hover');
                     const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
                     if (lblEl) lblEl.classList.add('hover-label');
+                });
+
+                if (typeof document !== 'undefined') {
+                    const sel = rawId === id
+                        ? `.geom-ref[data-ref="${CSS.escape(id)}"]`
+                        : `.geom-ref[data-ref="${CSS.escape(rawId)}"], .geom-ref[data-ref="${CSS.escape(id)}"]`;
+                    document.querySelectorAll(sel).forEach(el => {
+                        el.classList.add('geom-highlight-text');
+                    });
+                }
+            }
+
+            svg._etcController.activateHover = activateHover;
+            svg._etcController.clearHover = clearHover;
+
+            if (document.body && document.documentElement.tagName.toLowerCase() === 'html' && document.body.dataset.etcGeomRefSyncInit !== '1') {
+                document.body.dataset.etcGeomRefSyncInit = '1';
+                function getActiveSvg() {
+                    const activePaneSvg = document.querySelector('.etc-tab-pane.active svg.geometor-etc-drawing');
+                    if (activePaneSvg && activePaneSvg._etcController) return activePaneSvg;
+                    const anySvg = document.querySelector('svg.geometor-etc-drawing');
+                    return (anySvg && anySvg._etcController) ? anySvg : null;
+                }
+                document.body.addEventListener('mouseover', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref]');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.activateHover) {
+                            activeSvg._etcController.activateHover(geomEl.getAttribute('data-ref'));
+                        }
+                        return;
+                    }
+                    const refLink = e.target.closest('a.reference.internal');
+                    if (refLink) {
+                        const txt = (refLink.textContent || '').trim();
+                        const xm = txt.match(/^X\((\d+)\)$/);
+                        if (xm) {
+                            const activeSvg = getActiveSvg();
+                            if (activeSvg && activeSvg._etcController.activateHover) {
+                                activeSvg._etcController.activateHover(`X(${xm[1]})`);
+                            }
+                        }
+                    }
+                });
+                document.body.addEventListener('mouseout', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref], a.reference.internal');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.clearHover) {
+                            activeSvg._etcController.clearHover();
+                        }
+                    }
                 });
             }
 
@@ -3001,13 +3349,13 @@
         </div>
         </div>
         <figcaption>
-        <p><span class="caption-text"><strong>X(351) = CENTER OF THE PARRY CIRCLE</strong> constructed on acute reference triangle <span class="math notranslate nohighlight">\((a, b, c) = (5, 6, 7)\)</span> with unit baseline <span class="math notranslate nohighlight">\(AB = 1\)</span>.</span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+        <p><span class="caption-text"><strong>X(351) = CENTER OF THE PARRY CIRCLE</strong> constructed on acute reference triangle <span class="math notranslate nohighlight">\((a, b, c) = (5, 6, 7)\)</span> with unit baseline <span class="geom-ref" data-ref="[ A B ]" title="[ A B ]">AB</span> = <span class="math notranslate nohighlight">\(1\)</span>.</span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
         </figcaption>
         </figure>
         <div class="geom-signature geom-signature-center">
         <div class="line-block">
-        <div class="line"><strong>Trilinears:</strong> <span class="math notranslate nohighlight">\(f(a,b,c) : f(b,c,a) : f(c,a,b)\)</span>, where f(a,b,c) = a(b<sup>2</sup> - c<sup>2</sup>)(b<sup>2</sup> + c<sup>2</sup> - 2a<sup>2</sup>)</div>
-        <div class="line"><strong>Barycentrics:</strong> <span class="math notranslate nohighlight">\(g(a,b,c) : g(b,c,a) : g(c,a,b)\)</span>, where g(a,b,c) = a<sup>2</sup>(b<sup>2</sup> - c<sup>2</sup>)(b<sup>2</sup> + c<sup>2</sup> - 2a<sup>2</sup>)</div>
+        <div class="line"><strong>Trilinears:</strong> <span class="math notranslate nohighlight">\(f(a,b,c) : f(b,c,a) : f(c,a,b)\)</span>, where <span class="math notranslate nohighlight">\(f(a,b,c) = a(b^{2} - c^{2})(b^{2} + c^{2} - 2a^{2})\)</span></div>
+        <div class="line"><strong>Barycentrics:</strong> <span class="math notranslate nohighlight">\(g(a,b,c) : g(b,c,a) : g(c,a,b)\)</span>, where <span class="math notranslate nohighlight">\(g(a,b,c) = a^{2}(b^{2} - c^{2})(b^{2} + c^{2} - 2a^{2})\)</span></div>
         <div class="line"><strong>Search Value (6, 9, 13):</strong> <span class="math notranslate nohighlight">\(-2.815203880078\)</span></div>
         </div>
         </div>
@@ -3029,10 +3377,10 @@
         <li><p><a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> = <a class="term-ref glossary-term" id="occ-term-isogonal-conjugate-1" href="../../glossary.html#term-isogonal-conjugate" data-term="isogonal-conjugate" title="isogonal conjugate: Let P = p : q : r be a point not on a sideline of ABC. Let L(A) be the line obtained by reflecting line AP in the internal bisector of angle A. Define L(B) and L(B) cyclically. The lines L(A), L(B), L(C) concur in the isogonal conjugate of P, which has trilinears 1/p : 1/q : 1/r and is denoted by P -1 . See isoconjugate .">isogonal conjugate</a> of <a class="reference internal" href="../x-00892/index.html#x-892" title="X(892): The osculating circle of the Steiner circumellipse at X(99) intersects the Steiner circumellipse in two points: X(99) and X(892). See Osculating circle of Steiner circumellipse at…"><span class="std std-ref">X(892)</span></a></p></li>
         <li><p><a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> = <a class="term-ref glossary-term" id="occ-term-complement-1" href="../../glossary.html#term-complement" data-term="complement" title="complement: If points P and U are collinear with the centroid G, then P is the complement of U if G trisects segment PU and is closer to P than to U. See also anticomplement . (According to Court, p. 297, the term complementary point dates from 1885.)">complement</a> of <a class="term-ref glossary-term" id="occ-term-anticomplementary-conjugate-1" href="../../glossary.html#term-anticomplementary-conjugate" data-term="anticomplementary-conjugate" title="anticomplementary conjugate: Let P = p : q : r and U = u : v : w be points, neither lying on a sideline of ABC. The P-anticomplementary conjugate of U is the point where Let f(X) be the anticomplement of X, given by and let k be P-isoconjugation. The P-anticomplementary conjugate of U is &quot;what you do to f(X) to make f(k(X)) when f(X) = U.&quot; If P = incenter, then P-anticomplementary...">anticomplementary conjugate</a> of X(39356)</p></li>
         <li><p><a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> = <a class="reference internal" href="../x-00002/index.html#x-2" title="X(2): X(2) is the point of concurrence of the medians of ABC, situated 1/3 of the distance from each vertex to the midpoint of the opposite side. More generally, if L is any line in the…"><span class="std std-ref">X(2)</span></a>-<a class="term-ref glossary-term" id="occ-term-ceva-conjugate-1" href="../../glossary.html#term-ceva-conjugate" data-term="ceva-conjugate" title="Ceva conjugate: Let P = p : q : r and U = u : v : w be points, neither lying on a sideline of ABC. The P-Ceva conjugate of U is the point which is the perspector of the cevian triangle of P and the anticevian triangle of U. (See cevian nest and cross conjugate .) Ceva conjugate and cevapoint are related thus: X = P©U if and only if P = cevapoint(U,X), and in this case,...">Ceva conjugate</a> of X(38988)</p></li>
-        <li><p><a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> = perspector of hyperbola {A,B,C,<a class="reference internal" href="../x-00006/index.html#x-6" title="X(6): X(6) is the point of concurrence of the symmedians (i.e., reflections of medians in corresponding angle bisectors). X(6) is the point which, when given by actual trilinear…"><span class="std std-ref">X(6)</span></a>,<a class="reference internal" href="../x-00187/index.html#x-187" title="X(187): Let L denote the line having trilinears of X(187) as coefficients. Then L is the line passing through X(2) perpendicular to the Euler line."><span class="std std-ref">X(187)</span></a>}}, which is the locus of the barycentric product of circumcircle-<a class="reference internal" href="../x-00690/index.html#x-690" title="X(690): Let NaNbNc and Na'Nb'Nc' be the outer and inner Napoleon triangles, respectively. Let A' be the isogonal conjugate of Na wrt Na'Nb'Nc', and define B' and C' cyclically. Let A″ be…"><span class="std std-ref">X(690)</span></a>-antipodes</p></li>
+        <li><p><a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> = perspector of hyperbola {<span class="geom-ref" data-ref="A" title="A">A</span>, <span class="geom-ref" data-ref="B" title="B">B</span>, <span class="geom-ref" data-ref="C" title="C">C</span>,<a class="reference internal" href="../x-00006/index.html#x-6" title="X(6): X(6) is the point of concurrence of the symmedians (i.e., reflections of medians in corresponding angle bisectors). X(6) is the point which, when given by actual trilinear…"><span class="std std-ref">X(6)</span></a>,<a class="reference internal" href="../x-00187/index.html#x-187" title="X(187): Let L denote the line having trilinears of X(187) as coefficients. Then L is the line passing through X(2) perpendicular to the Euler line."><span class="std std-ref">X(187)</span></a>}}, which is the locus of the barycentric product of circumcircle-<a class="reference internal" href="../x-00690/index.html#x-690" title="X(690): Let N_{a}N_{b}N_{c} and N_{a}'N_{b}'N_{c}' be the outer and inner Napoleon triangles, respectively. Let A' be the isogonal conjugate of N_{a} wrt N_{a}'N_{b}'N_{c}', and define B'…"><span class="std std-ref">X(690)</span></a>-antipodes</p></li>
         <li><p><a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> = <a class="term-ref glossary-term" id="occ-term-crosspoint-1" href="../../glossary.html#term-crosspoint" data-term="crosspoint" title="crosspoint: Let P = p : q : r and U = u : v : w be distinct points, neither lying on a sideline of ABC. The crosspoint of P and U is the point This point is introduced in TCCT with the notation C(P,Q). Here, &quot;Q&quot; is replaced by &quot;U&quot;, and C(P,U) is abbreviated as X. The construction for X given in TCCT follows. Let A&#x27;B&#x27;C&#x27; be the cevian triangle of P and A&quot;B&quot;C&quot; that of...">crosspoint</a> of <a class="reference internal" href="../x-00110/index.html#x-110" title="X(110): X(110) is the center of the Stammler hyperbola, SH, which is the rectangular hyperbola that passes through X(1), X(3), X(6), X(155), X(159), X(195), X(399), X(1498), X(2916)…"><span class="std std-ref">X(110)</span></a> and <a class="reference internal" href="../x-00111/index.html#x-111" title="X(111): Let L be a line tangent to the Brocard circle. Let P be the trilinear pole of L, and let P' be the isogonal conjugate of P. As L varies, P' traces a parabola with focus at X(111)…"><span class="std std-ref">X(111)</span></a></p></li>
         <li><p><a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> = <a class="term-ref glossary-term" id="occ-term-crosssum-1" href="../../glossary.html#term-crosssum" data-term="crosssum" title="crosssum: Let P = p : q : r and U = u : v : w be distinct points, neither lying on a sideline of ABC. The crosssum of P and U is the point X defined by trilinears constructible as the crosspoint of the isogonal conjugates of P and U. Thus, U is the isogonal conjugate of the X-cross conjugate of the isogonal conjugate of P, and P is the isogonal conjugate of the...">crosssum</a> of X(i) and X(j) for these (i,j): (<a class="reference internal" href="../x-00002/index.html#x-2"><span class="std std-ref">2</span></a>, <a class="reference internal" href="../x-00690/index.html#x-690"><span class="std std-ref">690</span></a>), (<a class="reference internal" href="../x-00523/index.html#x-523"><span class="std std-ref">523</span></a>, <a class="reference internal" href="../x-00524/index.html#x-524"><span class="std std-ref">524</span></a>), (<a class="reference internal" href="../x-00850/index.html#x-850"><span class="std std-ref">850</span></a>, 1236)</p></li>
-        <li><p><a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> = <a class="term-ref glossary-term" id="occ-term-crossdifference-1" href="../../glossary.html#term-crossdifference" data-term="crossdifference" title="crossdifference: Let P = p : q : r and U = u : v : w be distinct points, neither lying on a sideline of ABC. The crossdifference of P and U is the point X defined by trilinears constructible as the isogonal conjugate of the trilinear pole of the line PU. Thus, U is the crossdifference of P and X, and P is the crossdifference of U and X. In order to see that the...">crossdifference</a> of every pair of points on line <a class="reference internal" href="../x-00002/index.html#x-2" title="X(2): X(2) is the point of concurrence of the medians of ABC, situated 1/3 of the distance from each vertex to the midpoint of the opposite side. More generally, if L is any line in the…"><span class="std std-ref">X(2)</span></a><a class="reference internal" href="../x-00099/index.html#x-99" title="X(99): Let LA be the reflection of the line X(3)X(6) in line BC, and define LB and LC cyclically. Let A' = LB∩LC, B' = LC∩LA, C' = LA∩LB. The lines AA', BB', CC' concur in X(99). (Randy…"><span class="std std-ref">X(99)</span></a></p></li>
+        <li><p><a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> = <a class="term-ref glossary-term" id="occ-term-crossdifference-1" href="../../glossary.html#term-crossdifference" data-term="crossdifference" title="crossdifference: Let P = p : q : r and U = u : v : w be distinct points, neither lying on a sideline of ABC. The crossdifference of P and U is the point X defined by trilinears constructible as the isogonal conjugate of the trilinear pole of the line PU. Thus, U is the crossdifference of P and X, and P is the crossdifference of U and X. In order to see that the...">crossdifference</a> of every pair of points on line <a class="reference internal" href="../x-00002/index.html#x-2" title="X(2): X(2) is the point of concurrence of the medians of ABC, situated 1/3 of the distance from each vertex to the midpoint of the opposite side. More generally, if L is any line in the…"><span class="std std-ref">X(2)</span></a><a class="reference internal" href="../x-00099/index.html#x-99" title="X(99): Let L_{A} be the reflection of the line X(3)X(6) in line BC, and define L_{B} and L_{C} cyclically. Let A' = L_{B}∩L_{C}, B' = L_{C}∩L_{A}, C' = L_{A}∩L_{B}. The lines AA', BB'…"><span class="std std-ref">X(99)</span></a></p></li>
         <li><p><a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> = circumcircle-inverse of X(9129)</p></li>
         <li><p><a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> = Parry-isodynamic-circle-inverse of <a class="reference internal" href="../x-00187/index.html#x-187" title="X(187): Let L denote the line having trilinears of X(187) as coefficients. Then L is the line passing through X(2) perpendicular to the Euler line."><span class="std std-ref">X(187)</span></a></p></li>
         <li><p><a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> = X(i)-<a class="term-ref glossary-term" id="occ-term-line-conjugate-1" href="../../glossary.html#term-line-conjugate" data-term="line-conjugate" title="line conjugate: Let P = p : q : r and U = u : v : w be distinct points, neither equal to A, B, or C. The P-line conjugate of U is the point or, equivalently, where h = u 2 + v 2 + w 2 and k = pu + qv + rw. This is the point of intersection of line PU and the trilinear polar of the isogonal conjugate of U.">line conjugate</a> of X(j) for these (i,j): {<a class="reference internal" href="../x-00187/index.html#x-187"><span class="std std-ref">187</span></a>, 5106}, {<a class="reference internal" href="../x-00690/index.html#x-690"><span class="std std-ref">690</span></a>, 2482}, {<a class="reference internal" href="../x-00804/index.html#x-804"><span class="std std-ref">804</span></a>, <a class="reference internal" href="../x-00002/index.html#x-2"><span class="std std-ref">2</span></a>}, {2492, <a class="reference internal" href="../x-00111/index.html#x-111"><span class="std std-ref">111</span></a>}, {2793, 9172}, {3455, 41272}, {6131, 7665}, {22105, 7664}</p></li>
@@ -3044,13 +3392,13 @@
         <li><p><a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> = tripolar centroid of <a class="reference internal" href="../x-00006/index.html#x-6" title="X(6): X(6) is the point of concurrence of the symmedians (i.e., reflections of medians in corresponding angle bisectors). X(6) is the point which, when given by actual trilinear…"><span class="std std-ref">X(6)</span></a></p></li>
         <li><p><a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> = tripolar centroid of X(14608)</p></li>
         <li><p><a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> = X(9227)-anticomplementary conjugate of X(21294)</p></li>
-        <li><p><a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> = centroid of Lemoine axis intercepts with sidelines of ABC</p></li>
+        <li><p><a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> = centroid of Lemoine axis intercepts with sidelines of <span class="geom-ref" data-ref="&lt; A B C &gt;" title="&lt; A B C &gt;">ABC</span></p></li>
         <li><p><a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> = <a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a>-of-circumsymmedial-triangle</p></li>
         <li><p><a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> = intersection of tangents to Steiner inellipse at X(1084) and X(2482)</p></li>
         <li><p><a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> = crosspoint wrt <a class="term-ref glossary-term" id="occ-term-medial-triangle-1" href="../../glossary.html#term-medial-triangle" data-term="medial-triangle" title="medial triangle: The cevian triangle of the centroid X(2) = 1/a : 1/b : 1/c, whose vertices are the midpoints of sides BC, CA, AB.">medial triangle</a> of X(1084) and X(2482)</p></li>
         <li><p><a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> = <a class="term-ref glossary-term" id="occ-term-vertex-conjugate-1" href="../../glossary.html#term-vertex-conjugate" data-term="vertex-conjugate" title="vertex conjugate: The U-vertex conjugate of X is defined for distinct points U = u : v : w and X = x : y : z: (trilinears) as the point P given by Suppose that T = DEF and T&#x27; = D&#x27;E&#x27;F&#x27; are triangles. The vertex triangle of T and T&#x27; is the triangle V(T,T&#x27;) having sidelines DD&#x27;, EE&#x27;, FF&#x27;. Thus, V(T,T&#x27;) generalizes &quot;perspector&quot;, since V(T,T&#x27;) is a single point if and only if...">vertex conjugate</a> of PU(62)</p></li>
         <li><p><a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> = radical center of (circumcircle, Brocard circle, McCay circumcircle)</p></li>
-        <li><p><a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> = harmonic center of circles {<a class="reference internal" href="../x-00014/index.html#x-14" title="X(14): Let NaNbNc, Na'Nb'Nc' be the outer and inner Napoleon triangles, resp. Let A' be the isogonal conjugate of Na, wrt Na'Nb'Nc', and define B' and C' cyclically. The lines Na'A'…"><span class="std std-ref">X(14)</span></a>,<a class="reference internal" href="../x-00015/index.html#x-15" title="X(15): Let U and V be the points on sideline BC met by the interior and exterior bisectors of angle A. The circle having diameter UV is the A-Apollonian circle. The B- and C- Apollonian…"><span class="std std-ref">X(15)</span></a>,<a class="reference internal" href="../x-00016/index.html#x-16" title="X(16): Let U and V be the points on sideline BC met by the interior and exterior bisectors of angle A. The circle having diameter UV is the A-Apollonian circle. The B- and C- Apollonian…"><span class="std std-ref">X(16)</span></a>}} and {<a class="reference internal" href="../x-00013/index.html#x-13" title="X(13): Construct the equilateral triangle BA'C having base BC and vertex A' on the negative side of BC; similarly construct equilateral triangles CB'A and AC'B based on the other two…"><span class="std std-ref">X(13)</span></a>,<a class="reference internal" href="../x-00015/index.html#x-15" title="X(15): Let U and V be the points on sideline BC met by the interior and exterior bisectors of angle A. The circle having diameter UV is the A-Apollonian circle. The B- and C- Apollonian…"><span class="std std-ref">X(15)</span></a>,<a class="reference internal" href="../x-00016/index.html#x-16" title="X(16): Let U and V be the points on sideline BC met by the interior and exterior bisectors of angle A. The circle having diameter UV is the A-Apollonian circle. The B- and C- Apollonian…"><span class="std std-ref">X(16)</span></a>}}</p></li>
+        <li><p><a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> = harmonic center of circles {<a class="reference internal" href="../x-00014/index.html#x-14" title="X(14): Construct the equilateral triangle BA'C having base BC and vertex A' on the positive side of BC; similarly construct equilateral triangles CB'A and AC'B based on the other two…"><span class="std std-ref">X(14)</span></a>,<a class="reference internal" href="../x-00015/index.html#x-15" title="X(15): Let U and V be the points on sideline BC met by the interior and exterior bisectors of angle A. The circle having diameter UV is the A-Apollonian circle. The B- and C- Apollonian…"><span class="std std-ref">X(15)</span></a>,<a class="reference internal" href="../x-00016/index.html#x-16" title="X(16): Let U and V be the points on sideline BC met by the interior and exterior bisectors of angle A. The circle having diameter UV is the A-Apollonian circle. The B- and C- Apollonian…"><span class="std std-ref">X(16)</span></a>}} and {<a class="reference internal" href="../x-00013/index.html#x-13" title="X(13): Construct the equilateral triangle BA'C having base BC and vertex A' on the negative side of BC; similarly construct equilateral triangles CB'A and AC'B based on the other two…"><span class="std std-ref">X(13)</span></a>,<a class="reference internal" href="../x-00015/index.html#x-15" title="X(15): Let U and V be the points on sideline BC met by the interior and exterior bisectors of angle A. The circle having diameter UV is the A-Apollonian circle. The B- and C- Apollonian…"><span class="std std-ref">X(15)</span></a>,<a class="reference internal" href="../x-00016/index.html#x-16" title="X(16): Let U and V be the points on sideline BC met by the interior and exterior bisectors of angle A. The circle having diameter UV is the A-Apollonian circle. The B- and C- Apollonian…"><span class="std std-ref">X(16)</span></a>}}</p></li>
         <li><p><a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> = bicentric difference of PU(i) for these i: 62, 63, 64, 65, 66, 67</p></li>
         <li><p><a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> = PU(62)-harmonic conjugate of <a class="reference internal" href="../x-00006/index.html#x-6" title="X(6): X(6) is the point of concurrence of the symmedians (i.e., reflections of medians in corresponding angle bisectors). X(6) is the point which, when given by actual trilinear…"><span class="std std-ref">X(6)</span></a></p></li>
         <li><p><a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> = PU(63)-harmonic conjugate of <a class="reference internal" href="../x-00003/index.html#x-3" title="X(3): X(3) is the point of concurrence of the perpendicular bisectors of the sides of ABC. The lengths of segments AX, BX, CX are equal if and only if X = X(3). This common distance is…"><span class="std std-ref">X(3)</span></a></p></li>
@@ -3078,10 +3426,10 @@
         <section class="level-2" id="notes">
         <h2>Notes<a class="headerlink" href="#notes" title="Link to this heading">¶</a></h2>
         <div class="note-item docutils container">
-        <p>Let O<sub>A</sub> be the circle centered at the A-vertex of the 1st anti-Parry triangle and passing through A; define O<sub>B</sub> and O<sub>C</sub> cyclically. <a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> is the radical center of O<sub>A</sub>, O<sub>B</sub>, O<sub>C</sub>. (<a class="person-ref" id="occ-person-randy-hutson-1" href="../../persons.html#person-randy-hutson" data-person="randy-hutson" title="Randy Hutson (fl. 2011–present) — Prolific contributor to the ETC, specializing in synthetic constructions, perspective triangles, radical centers, and conjugate relationships.">Randy Hutson</a>, August 30, 2020)</p>
+        <p>Let <span class="geom-ref" data-ref="O_A" title="O_A">O<sub>A</sub></span> be the circle centered at the <span class="geom-ref" data-ref="A" title="A">A</span>-vertex of the 1st anti-Parry triangle and passing through <span class="geom-ref" data-ref="A" title="A">A</span>; define <span class="geom-ref" data-ref="O_B" title="O_B">O<sub>B</sub></span> and <span class="geom-ref" data-ref="O_C" title="O_C">O<sub>C</sub></span> cyclically. <a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> is the radical center of <span class="geom-ref" data-ref="O_A" title="O_A">O<sub>A</sub></span>, <span class="geom-ref" data-ref="O_B" title="O_B">O<sub>B</sub></span>, <span class="geom-ref" data-ref="O_C" title="O_C">O<sub>C</sub></span>. (<a class="person-ref" id="occ-person-randy-hutson-1" href="../../persons.html#person-randy-hutson" data-person="randy-hutson" title="Randy Hutson (fl. 2011–present) — Prolific contributor to the ETC, specializing in synthetic constructions, perspective triangles, radical centers, and conjugate relationships.">Randy Hutson</a>, August 30, 2020)</p>
         </div>
         <div class="note-item docutils container">
-        <p>Let O<sub>A</sub> be the circle centered at the A-vertex of the 2nd anti-Parry triangle and passing through A; define O<sub>B</sub> and O<sub>C</sub> cyclically. <a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> is the radical center of O<sub>A</sub>, O<sub>B</sub>, O<sub>C</sub>. (Randy Hutson, August 30, 2020)</p>
+        <p>Let <span class="geom-ref" data-ref="O_A" title="O_A">O<sub>A</sub></span> be the circle centered at the <span class="geom-ref" data-ref="A" title="A">A</span>-vertex of the 2nd anti-Parry triangle and passing through <span class="geom-ref" data-ref="A" title="A">A</span>; define <span class="geom-ref" data-ref="O_B" title="O_B">O<sub>B</sub></span> and <span class="geom-ref" data-ref="O_C" title="O_C">O<sub>C</sub></span> cyclically. <a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a> is the radical center of <span class="geom-ref" data-ref="O_A" title="O_A">O<sub>A</sub></span>, <span class="geom-ref" data-ref="O_B" title="O_B">O<sub>B</sub></span>, <span class="geom-ref" data-ref="O_C" title="O_C">O<sub>C</sub></span>. (Randy Hutson, August 30, 2020)</p>
         </div>
         <div class="note-item docutils container">
         <p>Let S be the set of these 9 circles: circumcircle, Brocard circle, ninepoint circle of <a class="term-ref glossary-term" id="occ-term-tangential-triangle-1" href="../../glossary.html#term-tangential-triangle" data-term="tangential-triangle" title="tangential triangle: The anticevian triangle of the symmedian point X(6) = a : b : c, formed by the lines tangent to the circumcircle of ABC at vertices A, B, C.">tangential triangle</a>, McCay circumcircle, Lucas inner circle, Lucas circles radical circle, outer Montesdeoca-Lemoine circle, inner Montesdeoca-Lemoine circle, Parry isodynamic circle. Let S’ be any one of the 84 subsets of S that consist of 3 circles. The radical center of S’ is <a class="reference internal" href="#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a>. (<a class="person-ref" id="occ-person-peter-moses-1" href="../../persons.html#person-peter-moses" data-person="peter-moses" title="Peter J. C. Moses (fl. 2000–present) — Computational geometer and principal collaborator on the ETC, discoverer of thousands of barycentric combinations, coordinates, and circle/cubic properties.">Peter Moses</a>, March 4, 2023)</p>
@@ -3216,7 +3564,7 @@
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=360bc84d"></script>
+  <script src="../../_static/documentation_options.js?v=fd825880"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>

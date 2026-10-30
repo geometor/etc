@@ -10,13 +10,13 @@ X(219) = X(8)-CEVA CONJUGATE OF X(55)
 
 .. enunciation::
 
-   Let A'B'C' be the :term:`extouch triangle <extouch-triangle>`. Let A″ be the barycentric product of the circumcircle intercepts of line B'C', and define B″ and C″ cyclically. The lines A'A″, B'B″, C'C″ concur in :ref:`X(219) <X(219)>`. (:person:`Randy Hutson <randy-hutson>`, July 31 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`extouch triangle <extouch-triangle>`. Let :g:`A″ <A″>` be the barycentric product of the circumcircle intercepts of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(219) <X(219)>`. (:person:`Randy Hutson <randy-hutson>`, July 31 2018)
 
 .. figure:: x-00219.svg
    :alt: X(219) = X(8)-CEVA CONJUGATE OF X(55)
    :align: center
 
-   **X(219) = X(8)-CEVA CONJUGATE OF X(55)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(219) = X(8)-CEVA CONJUGATE OF X(55)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -31,10 +31,6 @@ X(219) = X(8)-CEVA CONJUGATE OF X(55)
    * **Trilinears:** :math:`1/(\csc A - 2 \csc 2A) : :`
    * **Trilinears:** :math:`a(b + c - a)(b^{2} + c^{2} - a^{2}) : :`
    * **Trilinears:** :math:`(b + c - a) \cos A : :`
-
-.. container:: note-item
-
-   :ref:`X(219) <X(219)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 23 lines
@@ -56,7 +52,7 @@ X(219) = X(8)-CEVA CONJUGATE OF X(55)
    * :ref:`X(219) <X(219)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(513) <X(513)>`\ X(1835)
    * :ref:`X(219) <X(219)>` = :ref:`X(92) <X(92)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(56) <X(56)>`
    * :ref:`X(219) <X(219)>` = perspector of extouch triangle and :term:`unary cofactor triangle <unary-cofactor-triangle>` of :term:`intouch triangle <intouch-triangle>`
-   * :ref:`X(219) <X(219)>` = perspector of ABC and unary cofactor triangle of Gemini triangle 37
+   * :ref:`X(219) <X(219)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of Gemini triangle 37
    * :ref:`X(219) <X(219)>` = polar conjugate of isogonal conjugate of X(6056)
    * :ref:`X(219) <X(219)>` = polar conjugate of isotomic conjugate of X(1259)
    * :ref:`X(219) <X(219)>` = :ref:`X(63) <X(63)>`-isoconjugate of X(1118)

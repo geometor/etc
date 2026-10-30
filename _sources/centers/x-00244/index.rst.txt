@@ -10,13 +10,13 @@ X(244) = X(1)-LINE CONJUGATE OF X(100)
 
 .. enunciation::
 
-   Let O\* be a circle with center :ref:`X(3) <X(3)>` and variable radius R\*. Let La be the radical axis of O\* and the A-excircle, and define Lb and Lc cyclically. Let A'=Lb∩Lc, B'=Lc∩La, C'=La∩Lb. Then A'B'C' is perspective to ABC, and the locus of the perspector as R\* varies is the hyperbola {A,B,C,\ :ref:`X(1) <X(1)>`,\ :ref:`X(10) <X(10)>`}}, which has center :ref:`X(244) <X(244)>`. Also, :ref:`X(244) <X(244)>` lies in the inellipse centered at :ref:`X(10) <X(10)>`, as well as the Hofstadter ellpse E(1/2), which is the incentral inellipse. (:person:`Randy Hutson <randy-hutson>`, December 26, 2016)
+   Let :g:`O* <O*>` be a circle with center :ref:`X(3) <X(3)>` and variable radius R\*. Let :g:`L_{a} <L_a>` be the radical axis of :g:`O* <O*>` and the :g:`A <A>`-excircle, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>`\ =\ :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, :g:`B' <B'>`\ =\ :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C' <C'>`\ =\ :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. Then :g:`A'B'C' << A' B' C' >>` is perspective to :g:`ABC << A B C >>`, and the locus of the perspector as R\* varies is the hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(1) <X(1)>`,\ :ref:`X(10) <X(10)>`}}, which has center :ref:`X(244) <X(244)>`. Also, :ref:`X(244) <X(244)>` lies in the inellipse centered at :ref:`X(10) <X(10)>`, as well as the Hofstadter ellpse E(1/2), which is the incentral inellipse. (:person:`Randy Hutson <randy-hutson>`, December 26, 2016)
 
 .. figure:: x-00244.svg
    :alt: X(244) = X(1)-LINE CONJUGATE OF X(100)
    :align: center
 
-   **X(244) = X(1)-LINE CONJUGATE OF X(100)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(244) = X(1)-LINE CONJUGATE OF X(100)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,7 +28,7 @@ X(244) = X(1)-LINE CONJUGATE OF X(100)
    :badge: 2 forms
 
    * **Trilinears:** :math:`[1 - \cos(B - C)]\sin^{2}(A/2) : :`
-   * **Trilinears:** :math:`d(a,b,c) : :`, where d(a,b,c) = (distance from A to Nagel line)\ :sup:`2`
+   * **Trilinears:** :math:`d(a,b,c) : :`, where d(a,b,c) = :math:`(distance from A to Nagel line)^{2}`
 
 .. container:: note-item
 
@@ -75,7 +75,7 @@ Notes
 
 .. container:: note-item
 
-   **Art from triangle centers:** Let X = :ref:`X(244) <X(244)>`. In a square, suppose that P is a randomly chosen point, and form a triangle using two vertices of the square and P as the third vertex. Then let P = X and repeat the procedure, several thousand times. For typical results, see **X(244) art** (``X(244)art.png``) and **X(244) art animated** (``X(244)KageyAnimated.gif``). For results using other :term:`triangle centers <triangle-center>` for X, see **X(41) art** (``X(41)art.png``), **X(58) art** (``X(58)art.png``), **X(76) art** (``X(76)art.png``), **X(115) art** (``X(115)art.png``), **X(141) art** (``X(141)art.png``), **X(179) art** (``X(179)art.png``), and **X(255) art** (``X(255)art.png``). (Contributed by Peter Kagey, February 8, 2023) **Figure 1** (``KM``)
+   **Art from triangle centers:** Let :g:`X <X>` = :ref:`X(244) <X(244)>`. In a square, suppose that P is a randomly chosen point, and form a triangle using two vertices of the square and P as the third vertex. Then let :g:`P <P>` = X and repeat the procedure, several thousand times. For typical results, see **X(244) art** (``X(244)art.png``) and **X(244) art animated** (``X(244)KageyAnimated.gif``). For results using other :term:`triangle centers <triangle-center>` for :g:`X <X>`, see **X(41) art** (``X(41)art.png``), **X(58) art** (``X(58)art.png``), **X(76) art** (``X(76)art.png``), **X(115) art** (``X(115)art.png``), **X(141) art** (``X(141)art.png``), **X(179) art** (``X(179)art.png``), and **X(255) art** (``X(255)art.png``). (Contributed by Peter Kagey, February 8, 2023) **Figure 1** (``KM``)
 
 .. toctree::
    :hidden:

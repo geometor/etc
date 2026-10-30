@@ -16,7 +16,7 @@ X(308) = ISOTOMIC CONJUGATE OF X(39)
    :alt: X(308) = ISOTOMIC CONJUGATE OF X(39)
    :align: center
 
-   **X(308) = ISOTOMIC CONJUGATE OF X(39)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(308) = ISOTOMIC CONJUGATE OF X(39)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,14 +27,10 @@ X(308) = ISOTOMIC CONJUGATE OF X(39)
 .. collapse:: Alternate Coordinates
    :badge: 4 forms
 
-   * **Trilinears:** :math:`\csc^{2}A \csc(A + \omega ) : :`
+   * **Trilinears:** :math:`\csc^{2} A \csc(A + \omega ) : :`
    * **Trilinears:** :math:`[\csc(A - \omega )]/(b^{2} + c^{2}) : :`
    * **Trilinears:** :math:`\csc(A + \omega ) + \csc(A - \omega ) : :`
    * **Barycentrics:** :math:`\csc A \csc(A + \omega ) : :`
-
-.. container:: note-item
-
-   :ref:`X(308) <X(308)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 9 lines

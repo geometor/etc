@@ -12,22 +12,18 @@ X(611) = INTERSECTION OF LINES X(1)X(6) AND X(55)X(511)
    :alt: X(611) = INTERSECTION OF LINES X(1)X(6) AND X(55)X(511)
    :align: center
 
-   **X(611) = INTERSECTION OF LINES X(1)X(6) AND X(55)X(511)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(611) = INTERSECTION OF LINES X(1)X(6) AND X(55)X(511)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`D + \sin A : D + \sin B : D + \sin C`, where D = (a\ :sup:`2` + b\ :sup:`2` + c\ :sup:`2`)/(4\*area)
+   | **Trilinears:** :math:`D + \sin A : D + \sin B : D + \sin C`, where :math:`D = (a^{2} + b^{2} + c^{2})/(4 \operatorname{area})`
    | **Barycentrics:** :math:`a(D + \sin A) : b(D + \sin B) : c(D + \sin C)`
    | **Search Value (6, 9, 13):** :math:`1.560860710962`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`a(S^2 + bc SW) : :`
-
-.. container:: note-item
-
-   :ref:`X(611) <X(611)>` lies.
+   * **Trilinears:** :math:`a(S^{2} + bc S_{\omega}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines

@@ -10,22 +10,19 @@ X(501) = MIQUEL ASSOCIATE OF INCENTER
 
 .. enunciation::
 
-   Miquel's theorem states that if A', B', C' are points (other than A, B, C) on sidelines BC, CA, AB, respectively, then the circles AB'C', BC'A', CA'B' meet at a point. Suppose P is a point and A' = P∩BC, B' = P∩CA, C' = P∩AB; the point in which the three circles is the *Miquel associate* of P. (:person:`Paul Yiu <paul-yiu>`, 7/6/99)
+   Miquel's theorem states that if :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>` are points (other than :g:`A <A>`, :g:`B <B>`, :g:`C <C>`) on sidelines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, respectively, then the circles :g:`AB'C' << A B' C' >>`, :g:`BC'A' << B C' A' >>`, :g:`CA'B' << C A' B' >>` meet at a point. Suppose P is a point and :g:`A' <A'>` = P∩\ :g:`BC <[ B C ]>`, :g:`B' <B'>` = P∩\ :g:`CA <[ C A ]>`, :g:`C' <C'>` = P∩\ :g:`AB <[ A B ]>`; the point in which the three circles is the *Miquel associate* of :g:`P <P>`. (:person:`Paul Yiu <paul-yiu>`, 7/6/99)
 
 .. figure:: x-00501.svg
    :alt: X(501) = MIQUEL ASSOCIATE OF INCENTER
    :align: center
 
-   **X(501) = MIQUEL ASSOCIATE OF INCENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(501) = MIQUEL ASSOCIATE OF INCENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where, f(a,b,c) = a[a\ :sup:`3` - b\ :sup:`3` - c\ :sup:`3` - bc(a + b + c) + ab(a - b) + ac(a - c)]/(b + c)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a[a^{3} - b^{3} - c^{3} - bc(a + b + c) + ab(a - b) + ac(a - c)]/(b + c)`
+   | **Barycentrics:** :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
    | **Search Value (6, 9, 13):** :math:`4.266239413525`
-
-.. container:: note-item
-
-   :ref:`X(501) <X(501)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 10 lines
@@ -37,13 +34,6 @@ X(501) = MIQUEL ASSOCIATE OF INCENTER
    :badge: 1 relation
 
    * :ref:`X(501) <X(501)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(502) <X(502)>`
-
-Notes
------
-
-.. container:: note-item
-
-   Barycentrics af(a,b,c) : bf(b,c,a) : cf(c,a,b)
 
 .. toctree::
    :hidden:

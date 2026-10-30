@@ -16,16 +16,12 @@ X(834) = ODD (2, 3) INFINITY POINT
    :alt: X(834) = ODD (2, 3) INFINITY POINT
    :align: center
 
-   **X(834) = ODD (2, 3) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(834) = ODD (2, 3) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = a\ :sup:`1`\ (b\ :sup:`3` - c\ :sup:`3`) + a\ :sup:`2`\ (b\ :sup:`2` - c\ :sup:`2`)
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
-
-.. container:: note-item
-
-   :ref:`X(834) <X(834)>` lies.
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a^{1}(b^{3} - c^{3}) + a^{2}(b^{2} - c^{2})`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
 
 .. collapse:: Incident Central Lines
    :badge: 1 line
@@ -40,7 +36,7 @@ X(834) = ODD (2, 3) INFINITY POINT
    * :ref:`X(834) <X(834)>` = :term:`crosssum <crosssum>` of :ref:`X(522) <X(522)>` and :ref:`X(958) <X(958)>`
    * :ref:`X(834) <X(834)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(6) <X(6)>`\ \ :ref:`X(10) <X(10)>`
    * :ref:`X(834) <X(834)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(39016)
-   * :ref:`X(834) <X(834)>` = perspector of hyperbola {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(58) <X(58)>`}}
+   * :ref:`X(834) <X(834)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(58) <X(58)>`}}
    * :ref:`X(834) <X(834)>` = barycentric square root of X(39016)
 
 .. toctree::

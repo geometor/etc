@@ -16,12 +16,12 @@ X(822) = CROSSDIFFERENCE OF X(1) AND X(29)
    :alt: X(822) = CROSSDIFFERENCE OF X(1) AND X(29)
    :align: center
 
-   **X(822) = CROSSDIFFERENCE OF X(1) AND X(29)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(822) = CROSSDIFFERENCE OF X(1) AND X(29)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\sec^{2}B - \sec^{2}C : :`
-   | **Barycentrics:** :math:`\sin A (\sec^{2}B - \sec^{2}C) : :`
+   | **Trilinears:** :math:`\sec^{2} B - \sec^{2} C : :`
+   | **Barycentrics:** :math:`\sin A (\sec^{2} B - \sec^{2} C) : :`
    | **Search Value (6, 9, 13):** :math:`94.917870194493`
 
 .. collapse:: Alternate Coordinates
@@ -30,11 +30,7 @@ X(822) = CROSSDIFFERENCE OF X(1) AND X(29)
    * **Trilinears:** :math:`\csc B/2 - \csc C/2 : :`
    * **Trilinears:** :math:`\csc 2B - \csc 2C : :`
    * **Trilinears:** :math:`\sin 2A (\tan B - \tan C) : :`
-   * **Trilinears:** :math:`a^2(b^2 - c^2)(b^2 + c^2 - a^2)^2 : :`
-
-.. container:: note-item
-
-   :ref:`X(822) <X(822)>` lies.
+   * **Trilinears:** :math:`a^{2}(b^{2} - c^{2})(b^{2} + c^{2} - a^{2})^{2} : :`
 
 .. collapse:: Incident Central Lines
    :badge: 1 line
@@ -57,7 +53,7 @@ X(822) = CROSSDIFFERENCE OF X(1) AND X(29)
    * :ref:`X(822) <X(822)>` = PU(83)-harmonic conjugate of X(2658)
    * :ref:`X(822) <X(822)>` = :ref:`X(63) <X(63)>`-isoconjugate of X(36126)
    * :ref:`X(822) <X(822)>` = :ref:`X(2) <X(2)>`-Ceva conjugate of X(38985)
-   * :ref:`X(822) <X(822)>` = perspector of hyperbola {A,B,C,\ :ref:`X(1) <X(1)>`,\ :ref:`X(48) <X(48)>`}}
+   * :ref:`X(822) <X(822)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(1) <X(1)>`,\ :ref:`X(48) <X(48)>`}}
 
 .. toctree::
    :hidden:

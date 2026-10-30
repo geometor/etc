@@ -16,7 +16,7 @@ X(958) = INTERSECTION OF LINES X(1)X(6) AND X(2)X(12)
    :alt: X(958) = INTERSECTION OF LINES X(1)X(6) AND X(2)X(12)
    :align: center
 
-   **X(958) = INTERSECTION OF LINES X(1)X(6) AND X(2)X(12)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(958) = INTERSECTION OF LINES X(1)X(6) AND X(2)X(12)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,13 +27,9 @@ X(958) = INTERSECTION OF LINES X(1)X(6) AND X(2)X(12)
 .. collapse:: Linear Combinations
    :badge: 3 combinations
 
-   * :ref:`X(958) <X(958)>` = :ref:`X(1) <X(1)>` - 3\ :ref:`X(2) <X(2)>` - (r/R)\ :ref:`X(3) <X(3)>`
-   * :ref:`X(958) <X(958)>` = r\*\ :ref:`X(3) <X(3)>` + 2R\*\ :ref:`X(10) <X(10)>`
-   * :ref:`X(958) <X(958)>` = :ref:`X(1) <X(1)>` + :ref:`X(8) <X(8)>` + (r/R)\*\ :ref:`X(3) <X(3)>`
-
-.. container:: note-item
-
-   :ref:`X(958) <X(958)>` lies.
+   * :ref:`X(958) <X(958)>` = :ref:`X(1) <X(1)>` - :math:`3` :ref:`X(2) <X(2)>` - :math:`(r/R)` :ref:`X(3) <X(3)>`
+   * :ref:`X(958) <X(958)>` = :math:`r` :ref:`X(3) <X(3)>` + :math:`2R` :ref:`X(10) <X(10)>`
+   * :ref:`X(958) <X(958)>` = :ref:`X(1) <X(1)>` + :ref:`X(8) <X(8)>` + :math:`(r/R)` :ref:`X(3) <X(3)>`
 
 .. collapse:: Incident Central Lines
    :badge: 15 lines
@@ -49,7 +45,7 @@ X(958) = INTERSECTION OF LINES X(1)X(6) AND X(2)X(12)
    * :ref:`X(958) <X(958)>` = :term:`crosssum <crosssum>` of :ref:`X(6) <X(6)>` and X(1460)
    * :ref:`X(958) <X(958)>` = insimilicenter of circumcircle and Spieker circle
    * :ref:`X(958) <X(958)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(9) <X(9)>`}-harmonic conjugate of :ref:`X(960) <X(960)>`
-   * :ref:`X(958) <X(958)>` = homothetic center of ABC and cross-triangle of ABC and outer Johnson triangle
+   * :ref:`X(958) <X(958)>` = homothetic center of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and outer Johnson triangle
 
 .. toctree::
    :hidden:

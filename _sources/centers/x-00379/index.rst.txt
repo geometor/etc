@@ -10,23 +10,19 @@ X(379) = EULER LINE INTERCEPT OF LINE X(6)X(7)
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(379) <X(379)>` has Shinagawa coefficients ($a\*S\ :sub:`B`\ S\ :sub:`C`\ $, $a$S\ :sup:`2`).
+   As a point on the Euler line, :ref:`X(379) <X(379)>` has Shinagawa coefficients :math:`(\$a S_{B}S_{C}\$, \$a\$S^{2})`.
 
 .. figure:: x-00379.svg
    :alt: X(379) = EULER LINE INTERCEPT OF LINE X(6)X(7)
    :align: center
 
-   **X(379) = EULER LINE INTERCEPT OF LINE X(6)X(7)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(379) = EULER LINE INTERCEPT OF LINE X(6)X(7)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = bc[a\ :sup:`5` + (b + c)(bca\ :sup:`2` - (bc + ca + ab)(b - c)\ :sup:`2`)]
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = a\ :sup:`5` + (b + c)(bca\ :sup:`2` - (bc + ca + ab)(b - c)\ :sup:`2`)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = bc[a^{5} + (b + c)(bca^{2} - (bc + ca + ab)(b - c)^{2})]`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = a^{5} + (b + c)(bca^{2} - (bc + ca + ab)(b - c)^{2})`
    | **Search Value (6, 9, 13):** :math:`0.232161131211`
-
-.. container:: note-item
-
-   :ref:`X(379) <X(379)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines

@@ -16,7 +16,7 @@ X(523) = ISOGONAL CONJUGATE OF X(110)
    :alt: X(523) = ISOGONAL CONJUGATE OF X(110)
    :align: center
 
-   **X(523) = ISOGONAL CONJUGATE OF X(110)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(523) = ISOGONAL CONJUGATE OF X(110)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,7 +27,7 @@ X(523) = ISOGONAL CONJUGATE OF X(110)
    :badge: 4 forms
 
    * **Barycentrics:** :math:`\cot B \cos 2C - \cot C \cos 2B : :`
-   * **Barycentrics:** :math:`SB - SC : :`
+   * **Barycentrics:** :math:`S_{B} - S_{C} : :`
    * **Barycentrics:** :math:`\cot B - \cot C : :`
    * **Barycentrics:** :math:`\cos 2B - \cos 2C : :`
 
@@ -69,9 +69,9 @@ X(523) = ISOGONAL CONJUGATE OF X(110)
    * :ref:`X(523) <X(523)>` = perspector of the Kiepert hyperbola
    * :ref:`X(523) <X(523)>` = intersection of the :term:`trilinear polars <trilinear-polar>` of any 2 points on the Kiepert hyperbola
    * :ref:`X(523) <X(523)>` = intercept of orthic axis and the line at infinity (the trilinear polars of :ref:`X(4) <X(4)>` and :ref:`X(2) <X(2)>`)
-   * :ref:`X(523) <X(523)>` = center of parabola {A,B,C,\ :ref:`X(476) <X(476)>`,\ :ref:`X(523) <X(523)>`}}, which is the locus of trilinear poles of lines passing through :ref:`X(115) <X(115)>`
-   * :ref:`X(523) <X(523)>` = perspector of ABC and the side-triangle of the medial and :term:`orthic triangles <orthic-triangle>`
-   * :ref:`X(523) <X(523)>` = perspector of ABC and the vertex-triangle of the :term:`tangential triangles <tangential-triangle>` of the medial and Feuerbach triangles
+   * :ref:`X(523) <X(523)>` = center of parabola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(476) <X(476)>`,\ :ref:`X(523) <X(523)>`}}, which is the locus of trilinear poles of lines passing through :ref:`X(115) <X(115)>`
+   * :ref:`X(523) <X(523)>` = perspector of :g:`ABC << A B C >>` and the side-triangle of the medial and :term:`orthic triangles <orthic-triangle>`
+   * :ref:`X(523) <X(523)>` = perspector of :g:`ABC << A B C >>` and the vertex-triangle of the :term:`tangential triangles <tangential-triangle>` of the medial and Feuerbach triangles
    * :ref:`X(523) <X(523)>` = :ref:`X(526) <X(526)>`-of-orthocentroidal-triangle
    * :ref:`X(523) <X(523)>` = :ref:`X(526) <X(526)>`-of-:ref:`X(4) <X(4)>`-Brocard-triangle
    * :ref:`X(523) <X(523)>` = :ref:`X(30) <X(30)>`-of-1st-Parry-triangle
@@ -100,15 +100,15 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the 1st Brocard triangle. Let A″B″C″ be the 2nd Brocard triangle. Let A\* be the trilinear pole of line A'A″, and define B\* and C\* cyclically. The lines AA\*, BB\*, CC\* are parallel and meet the line at infinity at :ref:`X(523) <X(523)>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the 1st Brocard triangle. Let :g:`A″B″C″ << A″ B″ C″ >>` be the 2nd Brocard triangle. Let :g:`A* <A*>` be the trilinear pole of line :g:`A'A″ <[ A' A″ ]>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` are parallel and meet the line at infinity at :ref:`X(523) <X(523)>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
 
 .. container:: note-item
 
-   Let A'B'C' be the Feuerbach triangle. Let La be the tangent to conic {A,B,C,B',C'}} at A, and define Lb and Lc cyclically. Let A″ = Lb∩Lc, B″ = Lc∩La, C″ = La∩Lb. The lines A'A″, B'B″, C'C″ concur in :ref:`X(523) <X(523)>`; see also X(1109).
+   Let :g:`A'B'C' << A' B' C' >>` be the Feuerbach triangle. Let :g:`L_{a} <L_a>` be the tangent to conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B' <B'>`,\ :g:`C' <C'>`}} at :g:`A <A>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, :g:`B″ <B″>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C″ <C″>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(523) <X(523)>`; see also X(1109).
 
 .. container:: note-item
 
-   Let L be the line :ref:`X(115) <X(115)>`\ \ :ref:`X(125) <X(125)>`; then :ref:`X(523) <X(523)>` = trilinear pole of L. The line L is also PU(40), the tangent to Steiner inellipse at :ref:`X(115) <X(115)>`, the Lemoine axis of the 4th Brocard triangle, the Fermat axis of the 2nd Parry triangle, and the isogonal conjugate of hyperbola {A,B,C,PU(2)}) (Randy Hutson, December 26, 2015)
+   Let :g:`L <L>` be the line :ref:`X(115) <X(115)>`\ \ :ref:`X(125) <X(125)>`; then :ref:`X(523) <X(523)>` = trilinear pole of L. The line :g:`L <L>` is also PU(40), the tangent to Steiner inellipse at :ref:`X(115) <X(115)>`, the Lemoine axis of the 4th Brocard triangle, the Fermat axis of the 2nd Parry triangle, and the isogonal conjugate of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(2)}) (Randy Hutson, December 26, 2015)
 
 .. toctree::
    :hidden:

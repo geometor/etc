@@ -16,17 +16,13 @@ X(644) = TRILINEAR MULTIPLIER FOR YFF PARABOLA
    :alt: X(644) = TRILINEAR MULTIPLIER FOR YFF PARABOLA
    :align: center
 
-   **X(644) = TRILINEAR MULTIPLIER FOR YFF PARABOLA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(644) = TRILINEAR MULTIPLIER FOR YFF PARABOLA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = (b + c - a)/(b - c)
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = (b + c - a)/(b - c)`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`9.556744265007`
-
-.. container:: note-item
-
-   :ref:`X(644) <X(644)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 11 lines
@@ -50,16 +46,16 @@ X(644) = TRILINEAR MULTIPLIER FOR YFF PARABOLA
    * :ref:`X(644) <X(644)>` = eigencenter of 5th mixtilinear triangle
    * :ref:`X(644) <X(644)>` = perspector of unary cofactor triangles of 3rd and 5th mixtilinear triangles
    * :ref:`X(644) <X(644)>` = perspector of 5th mixtilinear triangle and unary cofactor triangle of 3rd mixtilinear triangle
-   * :ref:`X(644) <X(644)>` = intersection, other than vertices of Gemini triangle 29, of {ABC, Gemini 29}-circumconic and {Gemini 29, Gemini 30}-circumconic
+   * :ref:`X(644) <X(644)>` = intersection, other than vertices of Gemini triangle 29, of {:g:`ABC << A B C >>`, Gemini 29}-circumconic and {Gemini 29, Gemini 30}-circumconic
 
 Notes
 -----
 
 .. container:: note-item
 
-   :ref:`X(644) <X(644)>` satisfies the equation X\*(incircle) = Yff parabola, where \* denotes trilinear multiplication, defined by
+   :ref:`X(644) <X(644)>` satisfies the equation :g:`X* <X*>`\ (incircle) = Yff parabola, where \* denotes trilinear multiplication, defined by
 
-   (u : v : w) \* (x : y : z) = ux : vy : wz.
+   (:math:`u : v : w`) \* (:math:`x : y : z`) =\ :math:`ux : vy : wz`.
 
 .. toctree::
    :hidden:

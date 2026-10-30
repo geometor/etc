@@ -10,29 +10,27 @@ X(492) = CEVAPOINT OF X(2) AND X(488)
 
 .. enunciation::
 
-   :ref:`X(492) <X(492)>` is a pole associated with squares that circumscribe ABC. For details and reference, see :ref:`X(488) <X(488)>`. (:person:`Floor van Lamoen <floor-van-lamoen>`, 4/27/98)
+   :ref:`X(492) <X(492)>` is a pole associated with squares that circumscribe :g:`ABC << A B C >>`. For details and reference, see :ref:`X(488) <X(488)>`. (:person:`Floor van Lamoen <floor-van-lamoen>`, 4/27/98)
 
 .. figure:: x-00492.svg
    :alt: X(492) = CEVAPOINT OF X(2) AND X(488)
    :align: center
 
-   **X(492) = CEVAPOINT OF X(2) AND X(488)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(492) = CEVAPOINT OF X(2) AND X(488)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = (cos A)(1 + csc A sin B sin C) + cos B cos C
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = (\cos A)(1 + \csc A \sin B \sin C) + \cos B \cos C`
+   | **Barycentrics:** :math:`(\sin A)f(A,B,C) : (\sin B)f(B,C,A) : (\sin C)f(C,A,B)`
    | **Search Value (6, 9, 13):** :math:`4.271652220428`
 
 .. collapse:: Alternate Coordinates
-   :badge: 3 forms
+   :badge: 4 forms
 
-   * **Trilinears:** :math:`\sin(A + \pi /4)\csc^{2}A : \sin(B + \pi /4)\csc^{2}B : \sin(C + \pi /4)\csc^{2}C (M. Iliev, 4/12/2007)`
-   * **Trilinears:** :math:`(1 + \cot A) \csc A : (1 + \cot B) \csc B : (1 + \cot C) \csc C (M. Iliev, 4/12/2007)`
-   * **Trilinears:** :math:`(S + S_{A})/a : (S + S_{B})/b : (S + S_{C})/c (C. Lozada, 8/07/2013)`
-
-.. container:: note-item
-
-   :ref:`X(492) <X(492)>` lies.
+   * **Trilinears:** :math:`\sin(A + \pi /4)\csc^{2} A : \sin(B + \pi /4)\csc^{2} B : \sin(C + \pi /4)\csc^{2} C` (M. Iliev, 4/12/2007)
+   * **Trilinears:** :math:`(1 + \cot A) \csc A : (1 + \cot B) \csc B : (1 + \cot C) \csc C` (M. Iliev, 4/12/2007)
+   * **Trilinears:** :math:`(S + S_{A})/a : (S + S_{B})/b : (S + S_{C})/c` (C. Lozada, 8/07/2013)
+   * **Barycentrics:** :math:`b^{2} + c^{2} - a^{2} + 4\sigma : c^{2} + a^{2} - b^{2} + 4\sigma : a^{2} + b^{2} - c^{2} + 4\sigma` (M. Iliev, 5/13/07)
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines
@@ -49,16 +47,7 @@ X(492) = CEVAPOINT OF X(2) AND X(488)
    * :ref:`X(492) <X(492)>` = :term:`cevapoint <cevapoint>` of :ref:`X(2) <X(2)>` and :ref:`X(488) <X(488)>`
    * :ref:`X(492) <X(492)>` = :term:`crosspoint <crosspoint>` of :ref:`X(2) <X(2)>` and :ref:`X(488) <X(488)>` wrt both the excentral and :term:`anticomplementary triangles <anticomplementary-triangle>`
    * :ref:`X(492) <X(492)>` = {:ref:`X(2) <X(2)>`,\ :ref:`X(69) <X(69)>`}-harmonic conjugate of :ref:`X(491) <X(491)>`
-   * :ref:`X(492) <X(492)>` = homothetic center of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of 1st Kenmotu diagonals triangle
-
-Notes
------
-
-.. container:: note-item
-
-   Barycentrics (sin A)f(A,B,C) : (sin B)f(B,C,A) : (sin C)f(C,A,B)
-
-   Barycentrics b\ :sup:`2` + c\ :sup:`2` - a\ :sup:`2` + 4σ : c\ :sup:`2` + a\ :sup:`2` - b\ :sup:`2` + 4σ : a\ :sup:`2` + b\ :sup:`2` - c\ :sup:`2` + 4σ (M. Iliev, 5/13/07)
+   * :ref:`X(492) <X(492)>` = homothetic center of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of 1st Kenmotu diagonals triangle
 
 .. toctree::
    :hidden:

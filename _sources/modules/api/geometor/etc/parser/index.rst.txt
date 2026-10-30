@@ -16,8 +16,8 @@ Functions
 
    geometor.etc.parser.remove_tags
    geometor.etc.parser.clean_text
-   geometor.etc.parser.formula_html_to_latex
    geometor.etc.parser.format_coordinate_line
+   geometor.etc.parser.format_combination_line
    geometor.etc.parser.parse_h3
    geometor.etc.parser.parse_center
    geometor.etc.parser.parse_preamble
@@ -36,14 +36,14 @@ Module Contents
    Clean up inline HTML text into single-line RST-safe text.
 
 
-.. py:function:: formula_html_to_latex(formula_html: str) -> str
-
-   Convert an HTML coordinate formula into clean LaTeX suitable for `:math:`.
-
-
 .. py:function:: format_coordinate_line(coord_html: str) -> str
 
    Format a single coordinate line (possibly with a trailing ', where ...' clause) into RST.
+
+
+.. py:function:: format_combination_line(comb_html: str) -> str
+
+   Format a linear combination line (e.g., `X(6) = (r^2 + s^2 + 2rR)*X(2) - 2r^2*X(3)`) into RST.
 
 
 .. py:function:: parse_h3(html_content: str) -> dict[str, Any] | None

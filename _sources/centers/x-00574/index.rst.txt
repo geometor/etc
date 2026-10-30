@@ -10,28 +10,33 @@ X(574) = HARMONIC OF X(187)
 
 .. enunciation::
 
-   Let A', B', C' be the inverse-in-Brocard-circle of A, B, C. Let A″, B″, C″ be the inverse-in-circumcircle of the vertices of 1st Brocard triangle. The lines A'A″, B'B″, C'C″ concur in :ref:`X(574) <X(574)>`. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
+   Let :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>` be the inverse-in-Brocard-circle of :g:`A <A>`, :g:`B <B>`, :g:`C <C>`. Let :g:`A″ <A″>`, :g:`B″ <B″>`, :g:`C″ <C″>` be the inverse-in-circumcircle of the vertices of 1st Brocard triangle. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(574) <X(574)>`. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
 
 .. figure:: x-00574.svg
    :alt: X(574) = HARMONIC OF X(187)
    :align: center
 
-   **X(574) = HARMONIC OF X(187)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(574) = HARMONIC OF X(187)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\sin A + \cot D/2 \cos A`, where cot(D/2) = 12\*area/(a\ :sup:`2` + b\ :sup:`2` + c\ :sup:`2`)
-   | **Barycentrics:** a^2\*(a^2 - 2\*b^2 - 2\*c^2) : :, :ref:`X(574) <X(574)>` = 2 :ref:`X(6) <X(6)>` - 3 X(5034), X(7774) + 3 X(33008), 5 X(12017) - 3 X(35429), X(14907) - 3 X(33008), X(17131) + 2 X(31859)
+   | **Trilinears:** :math:`\sin A + \cot D/2 \cos A`, where :math:`\cot(D/2) = 12 \operatorname{area}/(a^{2} + b^{2} + c^{2})`
+   | **Barycentrics:** :math:`a^{2} (a^{2} - 2 b^{2} - 2 c^{2}) : :`
    | **Search Value (6, 9, 13):** :math:`2.424876309934`
 
 .. collapse:: Alternate Coordinates
    :badge: 5 forms
 
    * **Trilinears:** :math:`a(a^{2} - 2b^{2} - 2c^{2}) : :`
-   * **Trilinears:** sin A + 3 cos A tan ω : : (Peter J. C. Moses, 8/22/03)
+   * **Trilinears:** :math:`\sin A + 3 \cos A \tan \omega : :` (Peter J. C. Moses, 8/22/03)
    * **Trilinears:** :math:`2 \sin(A + 2\omega ) - \sin(A - 2\omega ) + \sin A : :`
    * **Trilinears:** :math:`3 \cos A + \sin A \cot \omega : :`
-   * **Trilinears:** :math:`\cos(A - \omega ) \sin 2\omega - e^2 \sin(A + \omega ) : :`
+   * **Trilinears:** :math:`\cos(A - \omega ) \sin 2\omega - e^{2} \sin(A + \omega ) : :`
+
+.. collapse:: Linear Combinations
+   :badge: 1 combination
+
+   * :ref:`X(574) <X(574)>` = :math:`2` :ref:`X(6) <X(6)>` - :math:`3` X(5034), X(7774) + :math:`3` X(33008), :math:`5` X(12017) - :math:`3` X(35429), X(14907) - :math:`3` X(33008), X(17131) + :math:`2` X(31859)
 
 .. container:: note-item
 
@@ -76,12 +81,12 @@ X(574) = HARMONIC OF X(187)
    * :ref:`X(574) <X(574)>` = crossdifference of every pair of points on line :ref:`X(351) <X(351)>`\ \ :ref:`X(523) <X(523)>`
    * :ref:`X(574) <X(574)>` = :ref:`X(6) <X(6)>`-of-2nd-Brocard-triangle
    * :ref:`X(574) <X(574)>` = perspector of Lucas Brocard and Lucas(-1) Brocard triangles
-   * :ref:`X(574) <X(574)>` = perspector of ABC and inverse-in-Brocard-circle of vertices of circumsymmedial triangle
-   * :ref:`X(574) <X(574)>` = perspector of circumsymmedial triangle and inverse-in-Brocard-circle of A,B,C
+   * :ref:`X(574) <X(574)>` = perspector of :g:`ABC << A B C >>` and inverse-in-Brocard-circle of vertices of circumsymmedial triangle
+   * :ref:`X(574) <X(574)>` = perspector of circumsymmedial triangle and inverse-in-Brocard-circle of :g:`A <A>`, :g:`B <B>`, :g:`C <C>`
    * :ref:`X(574) <X(574)>` = pole, wrt Brocard circle, of Lemoine axis
    * :ref:`X(574) <X(574)>` = harmonic center of Gallatly circle and Ehrmann circle
    * :ref:`X(574) <X(574)>` = homothetic center of circumtangential triangle and :term:`unary cofactor triangle <unary-cofactor-triangle>` of Stammler triangle
-   * :ref:`X(574) <X(574)>` = perspector of ABC and unary cofactor triangle of Lemoine triangle
+   * :ref:`X(574) <X(574)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of Lemoine triangle
    * :ref:`X(574) <X(574)>` = :ref:`X(6) <X(6)>`-of-:ref:`X(3) <X(3)>`\ PU(1)
    * :ref:`X(574) <X(574)>` = homothetic center of Kosnita triangle and mid-triangle of inner and outer tri-equilateral triangles
    * :ref:`X(574) <X(574)>` = {:ref:`X(15) <X(15)>`,\ :ref:`X(16) <X(16)>`}-harmonic conjugate of :ref:`X(182) <X(182)>`
@@ -96,21 +101,21 @@ Notes
 
 .. container:: note-item
 
-   Let X'Y'Z' be the circumcevian-inversion triangle of :ref:`X(6) <X(6)>`, as defined in the preamble just before X(34864). The A-vertex of this triangle is given by
+   Let X':g:`Y'Z' <[ Y' Z' ]>` be the circumcevian-inversion triangle of :ref:`X(6) <X(6)>`, as defined in the preamble just before X(34864). The :g:`A <A>`-vertex of this triangle is given by
 
-   X' = (2 a^2 - b^2 - c^2) (4 a^2 + b^2 + c^2) : b^2 (-2 a^2 + b^2 - 2 c^2) (5 a^2 + 2 b^2 + 2 c^2) : c^2 (-2 a^2 - 2 b^2 + c^2) (5 a^2 + 2 b^2 + 2 c^2).
-
-.. container:: note-item
-
-   The triangles ABC and X'Y'Z' are perspective, and their perspector is :ref:`X(574) <X(574)>`. (:person:`Peter Moses <peter-moses>`, December 9, 2019)
+   :g:`X' <X'>` = (2 a^2 - b^2 - c^2) (4 a^2 + b^2 + c^2) : b^2 (-2 a^2 + b^2 - 2 c^2) (5 a^2 + 2 b^2 + 2 c^2) : c^2 (-2 a^2 - 2 b^2 + c^2) (5 a^2 + 2 b^2 + 2 c^2).
 
 .. container:: note-item
 
-   Let P1' be the tangent, other than U(1), to the Brocard circle from P(2). Let U1' be the tangent, other than P(1), to the Brocard circle from U(2). P1' and U1' are also the Schoute-circle-inverses of P(1) and U(1), resp. Then :ref:`X(574) <X(574)>` = P(1)U1'∩U(1)P1'. (Randy Hutson, January 17, 2020)
+   The triangles :g:`ABC << A B C >>` and X':g:`Y'Z' <[ Y' Z' ]>` are perspective, and their perspector is :ref:`X(574) <X(574)>`. (:person:`Peter Moses <peter-moses>`, December 9, 2019)
 
 .. container:: note-item
 
-   "Each one of the three circles of Apollonius of the reference triangle cuts the circumcircle in a second point. These three points form a triangle which is perspective with the base triangle through the symmedian point, the co-symmedian triangle. This triangle also possesses a Neuberg cubic, which has three points in common with the cubic of the first triangle in the circumcenter and the two isodynamic centers. Hence the remaining points of intersection must lie on a conic, which is necessarily a circle, since two of these six points are the circular points I and J." Quoted from (`T. W. Moore and J. H. Neelley <https://www.jstor.org/stable/pdf/2299192.pdf>`__). The center of the circle is :ref:`X(574) <X(574)>`. (:person:`Bernard Gibert <bernard-gibert>`, `euclid 4332 <https://groups.io/g/euclid/message/4332>`__)
+   Let :g:`P_{1}' <P_1'>` be the tangent, other than U(1), to the Brocard circle from P(2). Let :g:`U_{1}' <U_1'>` be the tangent, other than P(1), to the Brocard circle from U(2). :g:`P_{1}' <P_1'>` and :g:`U_{1}' <U_1'>` are also the Schoute-circle-inverses of P(1) and U(1), resp. Then :ref:`X(574) <X(574)>` = P(1)\ :g:`U_{1}' <U_1'>`\ ∩U(1)\ :g:`P_{1}' <P_1'>`. (Randy Hutson, January 17, 2020)
+
+.. container:: note-item
+
+   "Each one of the three circles of Apollonius of the reference triangle cuts the circumcircle in a second point. These three points form a triangle which is perspective with the base triangle through the symmedian point, the co-symmedian triangle. This triangle also possesses a Neuberg cubic, which has three points in common with the cubic of the first triangle in the circumcenter and the two isodynamic centers. Hence the remaining points of intersection must lie on a conic, which is necessarily a circle, since two of these six points are the circular points :g:`I <I>` and J." Quoted from (`T. W. Moore and J. H. Neelley <https://www.jstor.org/stable/pdf/2299192.pdf>`__). The center of the circle is :ref:`X(574) <X(574)>`. (:person:`Bernard Gibert <bernard-gibert>`, `euclid 4332 <https://groups.io/g/euclid/message/4332>`__)
 
 .. toctree::
    :hidden:

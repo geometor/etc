@@ -10,22 +10,24 @@ X(341) = ISOTOMIC CONJUGATE OF X(269)
 
 .. enunciation::
 
-   Barycentrics bc(b + c - a)\ :sup:`2` : ca(c + a - b)\ :sup:`2` : ab(a + b - c)\ :sup:`2`
+   :ref:`X(341) <X(341)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(1106)
 
 .. figure:: x-00341.svg
    :alt: X(341) = ISOTOMIC CONJUGATE OF X(269)
    :align: center
 
-   **X(341) = ISOTOMIC CONJUGATE OF X(269)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(341) = ISOTOMIC CONJUGATE OF X(269)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`b^{2}c^{2}(b + c - a)^{2} : c^{2}a^{2}(c + a - b)^{2} : a^{2}b^{2}(a + b - c)^{2}, = \csc^{4}A/2 : \csc^{4}B/2 : \csc^{4}C/2`
+   | **Trilinears:** :math:`b^{2}c^{2}(b + c - a)^{2} : c^{2}a^{2}(c + a - b)^{2} : a^{2}b^{2}(a + b - c)^{2}`
+   | **Barycentrics:** :math:`bc(b + c - a)^{2} : ca(c + a - b)^{2} : ab(a + b - c)^{2}`
    | **Search Value (6, 9, 13):** :math:`6.222728671983`
 
-.. container:: note-item
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-   :ref:`X(341) <X(341)>` lies.
+   * **Trilinears:** :math:`\csc^{4} A/2 : \csc^{4} B/2 : \csc^{4} C/2`
 
 .. collapse:: Incident Central Lines
    :badge: 9 lines
@@ -36,7 +38,7 @@ X(341) = ISOTOMIC CONJUGATE OF X(269)
 .. collapse:: Functional Relations
    :badge: 7 relations
 
-   * :ref:`X(341) <X(341)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(1106)
+   * :ref:`X(341) <X(341)>` = isogonal conjugate of X(1106)
    * :ref:`X(341) <X(341)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(269) <X(269)>`
    * :ref:`X(341) <X(341)>` = :term:`complement <complement>` of X(17480)
    * :ref:`X(341) <X(341)>` = :term:`anticomplement <anticomplement>` of polar conjugate of isogonal conjugate of X(23222)

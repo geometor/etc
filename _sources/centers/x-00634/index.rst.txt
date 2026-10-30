@@ -10,22 +10,24 @@ X(634) = ANTICOMPLEMENT OF X(62)
 
 .. enunciation::
 
-   Trilinears F(62)/a + 2 cos(A + π/3) : F(62)/b + 2 cos(B + π/3) : F(62)/c + 2 cos(C + π/3)
+   :ref:`X(634) <X(634)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(3443)
 
 .. figure:: x-00634.svg
    :alt: X(634) = ANTICOMPLEMENT OF X(62)
    :align: center
 
-   **X(634) = ANTICOMPLEMENT OF X(62)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(634) = ANTICOMPLEMENT OF X(62)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = (S\ :sub:`B`\ S\ :sub:`C` - 2 sqr(3) S\ :sub:`A` area)/a
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = (S_{B}S_{C} - 2 \sqrt{3} S_{A} \operatorname{area})/a`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`8.637509400092`
 
-.. container:: note-item
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-   :ref:`X(634) <X(634)>` lies.
+   * **Trilinears:** :math:`F(62)/a + 2 \cos(A + \pi /3) : F(62)/b + 2 \cos(B + \pi /3) : F(62)/c + 2 \cos(C + \pi /3)`
 
 .. collapse:: Incident Central Lines
    :badge: 12 lines
@@ -37,16 +39,9 @@ X(634) = ANTICOMPLEMENT OF X(62)
    :badge: 4 relations
 
    * :ref:`X(634) <X(634)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`62 <X(62)>`, :ref:`636 <X(636)>`), (:ref:`61 <X(61)>`, :ref:`635 <X(635)>`)
-   * :ref:`X(634) <X(634)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(3443)
+   * :ref:`X(634) <X(634)>` = isogonal conjugate of X(3443)
    * :ref:`X(634) <X(634)>` = :term:`anticomplement <anticomplement>` of :ref:`X(62) <X(62)>`
    * :ref:`X(634) <X(634)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X(628) <X(628)>`
-
-Notes
------
-
-.. container:: note-item
-
-   Barycentrics g(a,b,c) : g(b,c,a) : g(c,a,b), where g(a,b,c) = af(a,b,c)
 
 .. toctree::
    :hidden:

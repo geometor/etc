@@ -100,10 +100,10 @@
         <figure class="align-center" id="id1">
         <div class="etc-graphics-panel">
           <div class="etc-triangle-tabs" role="tablist" aria-label="Reference Triangle">
-            <button type="button" class="etc-tab-btn active" role="tab" aria-selected="true" data-tab="acute" title="Acute Scalene Triangle (5, 6, 7)" data-caption-html="&lt;strong&gt;X(631) = 3/5*OG&lt;/strong&gt; constructed on acute reference triangle &lt;code&gt;(a, b, c) = (5, 6, 7)&lt;/code&gt; with unit baseline &lt;code&gt;AB = 1&lt;/code&gt;.">5, 6, 7</button>
-            <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="right" title="Egyptian Right Triangle (3, 4, 5)" data-caption-html="&lt;strong&gt;X(631) = 3/5*OG&lt;/strong&gt; constructed on Egyptian right triangle &lt;code&gt;(a, b, c) = (3, 4, 5)&lt;/code&gt; with unit baseline &lt;code&gt;AB = 1&lt;/code&gt;.">3, 4, 5</button>
-            <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="kepler" title="Kepler Golden Right Triangle (1, √φ, φ)" data-caption-html="&lt;strong&gt;X(631) = 3/5*OG&lt;/strong&gt; constructed on Kepler golden right triangle &lt;code&gt;(a, b, c) = (1, √φ, φ)&lt;/code&gt; with unit baseline &lt;code&gt;AB = 1&lt;/code&gt;.">Kepler</button>
-            <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="kimberling" title="Kimberling Obtuse Scalene Triangle (6, 9, 13)" data-caption-html="&lt;strong&gt;X(631) = 3/5*OG&lt;/strong&gt; constructed on Kimberling&#x27;s canonical uniqueness test triangle &lt;code&gt;(a, b, c) = (6, 9, 13)&lt;/code&gt; (obtuse scalene, unit baseline &lt;code&gt;AB = 1&lt;/code&gt;).">Kimberling</button>
+            <button type="button" class="etc-tab-btn active" role="tab" aria-selected="true" data-tab="acute" title="Acute Scalene Triangle (5, 6, 7)" data-caption-html="&lt;strong&gt;X(631) = 3/5*OG&lt;/strong&gt; constructed on acute reference triangle &lt;code&gt;(a, b, c) = (5, 6, 7)&lt;/code&gt; with unit baseline &lt;span class=&quot;geom-ref geom-segment&quot; data-ref=&quot;[ A B ]&quot;&gt;AB&lt;/span&gt; = &lt;code&gt;1&lt;/code&gt;.">5, 6, 7</button>
+            <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="right" title="Egyptian Right Triangle (3, 4, 5)" data-caption-html="&lt;strong&gt;X(631) = 3/5*OG&lt;/strong&gt; constructed on Egyptian right triangle &lt;code&gt;(a, b, c) = (3, 4, 5)&lt;/code&gt; with unit baseline &lt;span class=&quot;geom-ref geom-segment&quot; data-ref=&quot;[ A B ]&quot;&gt;AB&lt;/span&gt; = &lt;code&gt;1&lt;/code&gt;.">3, 4, 5</button>
+            <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="kepler" title="Kepler Golden Right Triangle (1, √φ, φ)" data-caption-html="&lt;strong&gt;X(631) = 3/5*OG&lt;/strong&gt; constructed on Kepler golden right triangle &lt;code&gt;(a, b, c) = (1, √φ, φ)&lt;/code&gt; with unit baseline &lt;span class=&quot;geom-ref geom-segment&quot; data-ref=&quot;[ A B ]&quot;&gt;AB&lt;/span&gt; = &lt;code&gt;1&lt;/code&gt;.">Kepler</button>
+            <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="kimberling" title="Kimberling Obtuse Scalene Triangle (6, 9, 13)" data-caption-html="&lt;strong&gt;X(631) = 3/5*OG&lt;/strong&gt; constructed on Kimberling&#x27;s canonical uniqueness test triangle &lt;code&gt;(a, b, c) = (6, 9, 13)&lt;/code&gt; (obtuse scalene, unit baseline &lt;span class=&quot;geom-ref geom-segment&quot; data-ref=&quot;[ A B ]&quot;&gt;AB&lt;/span&gt; = &lt;code&gt;1&lt;/code&gt;).">Kimberling</button>
           </div>
         <div class="etc-tab-pane active" data-tab-pane="acute">
         <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.110000 -0.757438 1.220000 0.915000" data-initial-viewbox="-0.110000 -0.757438 1.220000 0.915000" preserveAspectRatio="xMidYMid meet">
@@ -724,9 +724,38 @@
                         el.style.display = 'none';
                     });
                 }
+                if (typeof document !== 'undefined') {
+                    document.querySelectorAll('.geom-highlight-text').forEach(el => {
+                        el.classList.remove('geom-highlight-text');
+                    });
+                }
             }
 
-            function activateHover(id) {
+            function resolveSvgId(rawId) {
+                if (!rawId) return rawId;
+                if (svg.querySelector(`[data-id="${CSS.escape(rawId)}"]`)) return rawId;
+                const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                if (segM) {
+                    const revId = `[ ${segM[2]} ${segM[1]} ]`;
+                    if (svg.querySelector(`[data-id="${CSS.escape(revId)}"]`)) return revId;
+                }
+                const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                if (triM) {
+                    const pts = [triM[1], triM[2], triM[3]];
+                    if (pts.includes('A') && pts.includes('B') && pts.includes('C')) {
+                        return '< A B C >';
+                    }
+                    const secPoly = graphicsGroup ? graphicsGroup.querySelector('polygon.secondary[data-id]') : null;
+                    if (secPoly) {
+                        return secPoly.getAttribute('data-id') || rawId;
+                    }
+                }
+                return rawId;
+            }
+
+            function activateHover(rawId) {
+                if (!rawId) return;
+                const id = resolveSvgId(rawId);
                 if (activeHoveredId === id) return;
                 clearHover();
                 activeHoveredId = id;
@@ -744,12 +773,70 @@
                 }
 
                 // Highlight parent/endpoint points and labels
-                const relatedPts = (info && info.related_points) ? info.related_points : [id];
+                let relatedPts = (info && info.related_points) ? info.related_points : [id];
+                if (!targetEl && relatedPts.length === 1 && relatedPts[0] === id) {
+                    const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                    const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                    if (segM) relatedPts = [segM[1], segM[2]];
+                    else if (triM) relatedPts = [triM[1], triM[2], triM[3]];
+                }
                 relatedPts.forEach(pid => {
                     const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
                     if (ptEl) ptEl.classList.add('hover');
                     const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
                     if (lblEl) lblEl.classList.add('hover-label');
+                });
+
+                if (typeof document !== 'undefined') {
+                    const sel = rawId === id
+                        ? `.geom-ref[data-ref="${CSS.escape(id)}"]`
+                        : `.geom-ref[data-ref="${CSS.escape(rawId)}"], .geom-ref[data-ref="${CSS.escape(id)}"]`;
+                    document.querySelectorAll(sel).forEach(el => {
+                        el.classList.add('geom-highlight-text');
+                    });
+                }
+            }
+
+            svg._etcController.activateHover = activateHover;
+            svg._etcController.clearHover = clearHover;
+
+            if (document.body && document.documentElement.tagName.toLowerCase() === 'html' && document.body.dataset.etcGeomRefSyncInit !== '1') {
+                document.body.dataset.etcGeomRefSyncInit = '1';
+                function getActiveSvg() {
+                    const activePaneSvg = document.querySelector('.etc-tab-pane.active svg.geometor-etc-drawing');
+                    if (activePaneSvg && activePaneSvg._etcController) return activePaneSvg;
+                    const anySvg = document.querySelector('svg.geometor-etc-drawing');
+                    return (anySvg && anySvg._etcController) ? anySvg : null;
+                }
+                document.body.addEventListener('mouseover', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref]');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.activateHover) {
+                            activeSvg._etcController.activateHover(geomEl.getAttribute('data-ref'));
+                        }
+                        return;
+                    }
+                    const refLink = e.target.closest('a.reference.internal');
+                    if (refLink) {
+                        const txt = (refLink.textContent || '').trim();
+                        const xm = txt.match(/^X\((\d+)\)$/);
+                        if (xm) {
+                            const activeSvg = getActiveSvg();
+                            if (activeSvg && activeSvg._etcController.activateHover) {
+                                activeSvg._etcController.activateHover(`X(${xm[1]})`);
+                            }
+                        }
+                    }
+                });
+                document.body.addEventListener('mouseout', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref], a.reference.internal');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.clearHover) {
+                            activeSvg._etcController.clearHover();
+                        }
+                    }
                 });
             }
 
@@ -1452,9 +1539,38 @@
                         el.style.display = 'none';
                     });
                 }
+                if (typeof document !== 'undefined') {
+                    document.querySelectorAll('.geom-highlight-text').forEach(el => {
+                        el.classList.remove('geom-highlight-text');
+                    });
+                }
             }
 
-            function activateHover(id) {
+            function resolveSvgId(rawId) {
+                if (!rawId) return rawId;
+                if (svg.querySelector(`[data-id="${CSS.escape(rawId)}"]`)) return rawId;
+                const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                if (segM) {
+                    const revId = `[ ${segM[2]} ${segM[1]} ]`;
+                    if (svg.querySelector(`[data-id="${CSS.escape(revId)}"]`)) return revId;
+                }
+                const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                if (triM) {
+                    const pts = [triM[1], triM[2], triM[3]];
+                    if (pts.includes('A') && pts.includes('B') && pts.includes('C')) {
+                        return '< A B C >';
+                    }
+                    const secPoly = graphicsGroup ? graphicsGroup.querySelector('polygon.secondary[data-id]') : null;
+                    if (secPoly) {
+                        return secPoly.getAttribute('data-id') || rawId;
+                    }
+                }
+                return rawId;
+            }
+
+            function activateHover(rawId) {
+                if (!rawId) return;
+                const id = resolveSvgId(rawId);
                 if (activeHoveredId === id) return;
                 clearHover();
                 activeHoveredId = id;
@@ -1472,12 +1588,70 @@
                 }
 
                 // Highlight parent/endpoint points and labels
-                const relatedPts = (info && info.related_points) ? info.related_points : [id];
+                let relatedPts = (info && info.related_points) ? info.related_points : [id];
+                if (!targetEl && relatedPts.length === 1 && relatedPts[0] === id) {
+                    const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                    const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                    if (segM) relatedPts = [segM[1], segM[2]];
+                    else if (triM) relatedPts = [triM[1], triM[2], triM[3]];
+                }
                 relatedPts.forEach(pid => {
                     const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
                     if (ptEl) ptEl.classList.add('hover');
                     const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
                     if (lblEl) lblEl.classList.add('hover-label');
+                });
+
+                if (typeof document !== 'undefined') {
+                    const sel = rawId === id
+                        ? `.geom-ref[data-ref="${CSS.escape(id)}"]`
+                        : `.geom-ref[data-ref="${CSS.escape(rawId)}"], .geom-ref[data-ref="${CSS.escape(id)}"]`;
+                    document.querySelectorAll(sel).forEach(el => {
+                        el.classList.add('geom-highlight-text');
+                    });
+                }
+            }
+
+            svg._etcController.activateHover = activateHover;
+            svg._etcController.clearHover = clearHover;
+
+            if (document.body && document.documentElement.tagName.toLowerCase() === 'html' && document.body.dataset.etcGeomRefSyncInit !== '1') {
+                document.body.dataset.etcGeomRefSyncInit = '1';
+                function getActiveSvg() {
+                    const activePaneSvg = document.querySelector('.etc-tab-pane.active svg.geometor-etc-drawing');
+                    if (activePaneSvg && activePaneSvg._etcController) return activePaneSvg;
+                    const anySvg = document.querySelector('svg.geometor-etc-drawing');
+                    return (anySvg && anySvg._etcController) ? anySvg : null;
+                }
+                document.body.addEventListener('mouseover', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref]');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.activateHover) {
+                            activeSvg._etcController.activateHover(geomEl.getAttribute('data-ref'));
+                        }
+                        return;
+                    }
+                    const refLink = e.target.closest('a.reference.internal');
+                    if (refLink) {
+                        const txt = (refLink.textContent || '').trim();
+                        const xm = txt.match(/^X\((\d+)\)$/);
+                        if (xm) {
+                            const activeSvg = getActiveSvg();
+                            if (activeSvg && activeSvg._etcController.activateHover) {
+                                activeSvg._etcController.activateHover(`X(${xm[1]})`);
+                            }
+                        }
+                    }
+                });
+                document.body.addEventListener('mouseout', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref], a.reference.internal');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.clearHover) {
+                            activeSvg._etcController.clearHover();
+                        }
+                    }
                 });
             }
 
@@ -2180,9 +2354,38 @@
                         el.style.display = 'none';
                     });
                 }
+                if (typeof document !== 'undefined') {
+                    document.querySelectorAll('.geom-highlight-text').forEach(el => {
+                        el.classList.remove('geom-highlight-text');
+                    });
+                }
             }
 
-            function activateHover(id) {
+            function resolveSvgId(rawId) {
+                if (!rawId) return rawId;
+                if (svg.querySelector(`[data-id="${CSS.escape(rawId)}"]`)) return rawId;
+                const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                if (segM) {
+                    const revId = `[ ${segM[2]} ${segM[1]} ]`;
+                    if (svg.querySelector(`[data-id="${CSS.escape(revId)}"]`)) return revId;
+                }
+                const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                if (triM) {
+                    const pts = [triM[1], triM[2], triM[3]];
+                    if (pts.includes('A') && pts.includes('B') && pts.includes('C')) {
+                        return '< A B C >';
+                    }
+                    const secPoly = graphicsGroup ? graphicsGroup.querySelector('polygon.secondary[data-id]') : null;
+                    if (secPoly) {
+                        return secPoly.getAttribute('data-id') || rawId;
+                    }
+                }
+                return rawId;
+            }
+
+            function activateHover(rawId) {
+                if (!rawId) return;
+                const id = resolveSvgId(rawId);
                 if (activeHoveredId === id) return;
                 clearHover();
                 activeHoveredId = id;
@@ -2200,12 +2403,70 @@
                 }
 
                 // Highlight parent/endpoint points and labels
-                const relatedPts = (info && info.related_points) ? info.related_points : [id];
+                let relatedPts = (info && info.related_points) ? info.related_points : [id];
+                if (!targetEl && relatedPts.length === 1 && relatedPts[0] === id) {
+                    const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                    const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                    if (segM) relatedPts = [segM[1], segM[2]];
+                    else if (triM) relatedPts = [triM[1], triM[2], triM[3]];
+                }
                 relatedPts.forEach(pid => {
                     const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
                     if (ptEl) ptEl.classList.add('hover');
                     const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
                     if (lblEl) lblEl.classList.add('hover-label');
+                });
+
+                if (typeof document !== 'undefined') {
+                    const sel = rawId === id
+                        ? `.geom-ref[data-ref="${CSS.escape(id)}"]`
+                        : `.geom-ref[data-ref="${CSS.escape(rawId)}"], .geom-ref[data-ref="${CSS.escape(id)}"]`;
+                    document.querySelectorAll(sel).forEach(el => {
+                        el.classList.add('geom-highlight-text');
+                    });
+                }
+            }
+
+            svg._etcController.activateHover = activateHover;
+            svg._etcController.clearHover = clearHover;
+
+            if (document.body && document.documentElement.tagName.toLowerCase() === 'html' && document.body.dataset.etcGeomRefSyncInit !== '1') {
+                document.body.dataset.etcGeomRefSyncInit = '1';
+                function getActiveSvg() {
+                    const activePaneSvg = document.querySelector('.etc-tab-pane.active svg.geometor-etc-drawing');
+                    if (activePaneSvg && activePaneSvg._etcController) return activePaneSvg;
+                    const anySvg = document.querySelector('svg.geometor-etc-drawing');
+                    return (anySvg && anySvg._etcController) ? anySvg : null;
+                }
+                document.body.addEventListener('mouseover', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref]');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.activateHover) {
+                            activeSvg._etcController.activateHover(geomEl.getAttribute('data-ref'));
+                        }
+                        return;
+                    }
+                    const refLink = e.target.closest('a.reference.internal');
+                    if (refLink) {
+                        const txt = (refLink.textContent || '').trim();
+                        const xm = txt.match(/^X\((\d+)\)$/);
+                        if (xm) {
+                            const activeSvg = getActiveSvg();
+                            if (activeSvg && activeSvg._etcController.activateHover) {
+                                activeSvg._etcController.activateHover(`X(${xm[1]})`);
+                            }
+                        }
+                    }
+                });
+                document.body.addEventListener('mouseout', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref], a.reference.internal');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.clearHover) {
+                            activeSvg._etcController.clearHover();
+                        }
+                    }
                 });
             }
 
@@ -2908,9 +3169,38 @@
                         el.style.display = 'none';
                     });
                 }
+                if (typeof document !== 'undefined') {
+                    document.querySelectorAll('.geom-highlight-text').forEach(el => {
+                        el.classList.remove('geom-highlight-text');
+                    });
+                }
             }
 
-            function activateHover(id) {
+            function resolveSvgId(rawId) {
+                if (!rawId) return rawId;
+                if (svg.querySelector(`[data-id="${CSS.escape(rawId)}"]`)) return rawId;
+                const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                if (segM) {
+                    const revId = `[ ${segM[2]} ${segM[1]} ]`;
+                    if (svg.querySelector(`[data-id="${CSS.escape(revId)}"]`)) return revId;
+                }
+                const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                if (triM) {
+                    const pts = [triM[1], triM[2], triM[3]];
+                    if (pts.includes('A') && pts.includes('B') && pts.includes('C')) {
+                        return '< A B C >';
+                    }
+                    const secPoly = graphicsGroup ? graphicsGroup.querySelector('polygon.secondary[data-id]') : null;
+                    if (secPoly) {
+                        return secPoly.getAttribute('data-id') || rawId;
+                    }
+                }
+                return rawId;
+            }
+
+            function activateHover(rawId) {
+                if (!rawId) return;
+                const id = resolveSvgId(rawId);
                 if (activeHoveredId === id) return;
                 clearHover();
                 activeHoveredId = id;
@@ -2928,12 +3218,70 @@
                 }
 
                 // Highlight parent/endpoint points and labels
-                const relatedPts = (info && info.related_points) ? info.related_points : [id];
+                let relatedPts = (info && info.related_points) ? info.related_points : [id];
+                if (!targetEl && relatedPts.length === 1 && relatedPts[0] === id) {
+                    const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                    const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                    if (segM) relatedPts = [segM[1], segM[2]];
+                    else if (triM) relatedPts = [triM[1], triM[2], triM[3]];
+                }
                 relatedPts.forEach(pid => {
                     const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
                     if (ptEl) ptEl.classList.add('hover');
                     const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
                     if (lblEl) lblEl.classList.add('hover-label');
+                });
+
+                if (typeof document !== 'undefined') {
+                    const sel = rawId === id
+                        ? `.geom-ref[data-ref="${CSS.escape(id)}"]`
+                        : `.geom-ref[data-ref="${CSS.escape(rawId)}"], .geom-ref[data-ref="${CSS.escape(id)}"]`;
+                    document.querySelectorAll(sel).forEach(el => {
+                        el.classList.add('geom-highlight-text');
+                    });
+                }
+            }
+
+            svg._etcController.activateHover = activateHover;
+            svg._etcController.clearHover = clearHover;
+
+            if (document.body && document.documentElement.tagName.toLowerCase() === 'html' && document.body.dataset.etcGeomRefSyncInit !== '1') {
+                document.body.dataset.etcGeomRefSyncInit = '1';
+                function getActiveSvg() {
+                    const activePaneSvg = document.querySelector('.etc-tab-pane.active svg.geometor-etc-drawing');
+                    if (activePaneSvg && activePaneSvg._etcController) return activePaneSvg;
+                    const anySvg = document.querySelector('svg.geometor-etc-drawing');
+                    return (anySvg && anySvg._etcController) ? anySvg : null;
+                }
+                document.body.addEventListener('mouseover', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref]');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.activateHover) {
+                            activeSvg._etcController.activateHover(geomEl.getAttribute('data-ref'));
+                        }
+                        return;
+                    }
+                    const refLink = e.target.closest('a.reference.internal');
+                    if (refLink) {
+                        const txt = (refLink.textContent || '').trim();
+                        const xm = txt.match(/^X\((\d+)\)$/);
+                        if (xm) {
+                            const activeSvg = getActiveSvg();
+                            if (activeSvg && activeSvg._etcController.activateHover) {
+                                activeSvg._etcController.activateHover(`X(${xm[1]})`);
+                            }
+                        }
+                    }
+                });
+                document.body.addEventListener('mouseout', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref], a.reference.internal');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.clearHover) {
+                            activeSvg._etcController.clearHover();
+                        }
+                    }
                 });
             }
 
@@ -3019,7 +3367,7 @@
         </div>
         </div>
         <figcaption>
-        <p><span class="caption-text"><strong>X(631) = 3/5*OG</strong> constructed on acute reference triangle <span class="math notranslate nohighlight">\((a, b, c) = (5, 6, 7)\)</span> with unit baseline <span class="math notranslate nohighlight">\(AB = 1\)</span>.</span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+        <p><span class="caption-text"><strong>X(631) = 3/5*OG</strong> constructed on acute reference triangle <span class="math notranslate nohighlight">\((a, b, c) = (5, 6, 7)\)</span> with unit baseline <span class="geom-ref" data-ref="[ A B ]" title="[ A B ]">AB</span> = <span class="math notranslate nohighlight">\(1\)</span>.</span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
         </figcaption>
         </figure>
         <div class="geom-signature geom-signature-center">
@@ -3036,16 +3384,13 @@
         <li><p><strong>Trilinears:</strong> <span class="math notranslate nohighlight">\(\cos A + \sin B \sin C : \cos B + \sin C \sin A : \cos C + \sin A \sin B : :\)</span></p></li>
         <li><p><strong>Trilinears:</strong> <span class="math notranslate nohighlight">\(\sec A + 2 \sec B \sec C : \sec B + 2 \sec C \sec A : \sec C + 2 \sec A \sec B\)</span></p></li>
         <li><p><strong>Trilinears:</strong> <span class="math notranslate nohighlight">\(a/(b \sec B + c \sec C) + 2 \cos A : :\)</span></p></li>
-        <li><p><strong>Barycentrics:</strong> <span class="math notranslate nohighlight">\(3a^4 - 4a^2(b^2 + c^2) + (b^2 - c^2)^2 : :\)</span></p></li>
-        <li><p><strong>Barycentrics:</strong> <span class="math notranslate nohighlight">\(2 SA a^2 + SB SC : :\)</span></p></li>
-        <li><p><strong>Barycentrics:</strong> <span class="math notranslate nohighlight">\(2 S^2 - SB SC : :\)</span></p></li>
+        <li><p><strong>Barycentrics:</strong> <span class="math notranslate nohighlight">\(3a^{4} - 4a^{2}(b^{2} + c^{2}) + (b^{2} - c^{2})^{2} : :\)</span></p></li>
+        <li><p><strong>Barycentrics:</strong> <span class="math notranslate nohighlight">\(2 S_{A} a^{2} + S_{B} S_{C} : :\)</span></p></li>
+        <li><p><strong>Barycentrics:</strong> <span class="math notranslate nohighlight">\(2 S^{2} - S_{B} S_{C} : :\)</span></p></li>
         <li><p><strong>Barycentrics:</strong> <span class="math notranslate nohighlight">\(\cot B \cot C - 2 : :\)</span></p></li>
         </ul>
         </div>
         </details>
-        <div class="note-item docutils container">
-        <p><a class="reference internal" href="#x-631" title="X(631): Let AeBeCe and AiBiCi be the Ae and Ai triangles (aka K798e and K798i triangles). X(631) is the radical center of the circumcircles of triangles AAeAi, BBeBi, CCeCi. (Randy…"><span class="std std-ref">X(631)</span></a> lies.</p>
-        </div>
         <details class="book-collapse line-catalog">
         <summary class="book-collapse-summary"><span class="book-collapse-title"><span class="collapse-icon">▸</span> Incident Central Lines</span><span class="book-collapse-badge">435 lines</span></summary>
         <div class="book-collapse-body">
@@ -3056,23 +3401,23 @@
         <summary class="book-collapse-summary"><span class="book-collapse-title"><span class="collapse-icon">▸</span> Functional Relations</span><span class="book-collapse-badge">18 relations</span></summary>
         <div class="book-collapse-body">
         <ul class="simple">
-        <li><p><a class="reference internal" href="#x-631" title="X(631): Let AeBeCe and AiBiCi be the Ae and Ai triangles (aka K798e and K798i triangles). X(631) is the radical center of the circumcircles of triangles AAeAi, BBeBi, CCeCi. (Randy…"><span class="std std-ref">X(631)</span></a> = reflection of <a class="reference internal" href="../x-00632/index.html#x-632" title="X(632): X(632) is the {X(2),X(140)}-harmonic conjugate of X(5)."><span class="std std-ref">X(632)</span></a> in <a class="reference internal" href="../x-00140/index.html#x-140" title="X(140): Let A' be the midpoint between A and X(3), and define B' and C' cyclically; the triangle A'B'C' is homothetic to the medial triangle, and the center of homothety is X(140). Let…"><span class="std std-ref">X(140)</span></a></p></li>
+        <li><p><a class="reference internal" href="#x-631" title="X(631): Let AeBeCe and AiBiCi be the Ae and Ai triangles (aka K798e and K798i triangles). X(631) is the radical center of the circumcircles of triangles AAeAi, BBeBi, CCeCi. (Randy…"><span class="std std-ref">X(631)</span></a> = reflection of <a class="reference internal" href="../x-00632/index.html#x-632" title="X(632): X(632) is the {X(2),X(140)}-harmonic conjugate of X(5)."><span class="std std-ref">X(632)</span></a> in <a class="reference internal" href="../x-00140/index.html#x-140" title="X(140): Let A' be the midpoint between A and X(3), and define B' and C' cyclically; the triangle A'B'C' is homothetic to the medial triangle, and the center of homothety is X(140). Let A″…"><span class="std std-ref">X(140)</span></a></p></li>
         <li><p><a class="reference internal" href="#x-631" title="X(631): Let AeBeCe and AiBiCi be the Ae and Ai triangles (aka K798e and K798i triangles). X(631) is the radical center of the circumcircles of triangles AAeAi, BBeBi, CCeCi. (Randy…"><span class="std std-ref">X(631)</span></a> = <a class="term-ref glossary-term" id="occ-term-isogonal-conjugate-1" href="../../glossary.html#term-isogonal-conjugate" data-term="isogonal-conjugate" title="isogonal conjugate: Let P = p : q : r be a point not on a sideline of ABC. Let L(A) be the line obtained by reflecting line AP in the internal bisector of angle A. Define L(B) and L(B) cyclically. The lines L(A), L(B), L(C) concur in the isogonal conjugate of P, which has trilinears 1/p : 1/q : 1/r and is denoted by P -1 . See isoconjugate .">isogonal conjugate</a> of X(3527)</p></li>
         <li><p><a class="reference internal" href="#x-631" title="X(631): Let AeBeCe and AiBiCi be the Ae and Ai triangles (aka K798e and K798i triangles). X(631) is the radical center of the circumcircles of triangles AAeAi, BBeBi, CCeCi. (Randy…"><span class="std std-ref">X(631)</span></a> = <a class="term-ref glossary-term" id="occ-term-isotomic-conjugate-1" href="../../glossary.html#term-isotomic-conjugate" data-term="isotomic-conjugate" title="isotomic conjugate: Let P = p : q : r be a point not on a sideline of ABC. Let A&#x27;, B&#x27;, C&#x27; be the points where lines AP, BP, CP meet lines BC, CA, AB, respectively. Reflect A&#x27;, B&#x27;, C&#x27; about the midpoints of sides BC, CA, AB, respectively, to obtain points A&quot;, B&quot;, C&quot;. Then lines AA&quot;, BB&quot;, CC&quot; concur in the isotomic conjugate of P, which has trilinears 1/(pa 2 ) : 1/(qb 2 ) :...">isotomic conjugate</a> of X(8797)</p></li>
         <li><p><a class="reference internal" href="#x-631" title="X(631): Let AeBeCe and AiBiCi be the Ae and Ai triangles (aka K798e and K798i triangles). X(631) is the radical center of the circumcircles of triangles AAeAi, BBeBi, CCeCi. (Randy…"><span class="std std-ref">X(631)</span></a> = <a class="term-ref glossary-term" id="occ-term-complement-1" href="../../glossary.html#term-complement" data-term="complement" title="complement: If points P and U are collinear with the centroid G, then P is the complement of U if G trisects segment PU and is closer to P than to U. See also anticomplement . (According to Court, p. 297, the term complementary point dates from 1885.)">complement</a> of X(3091)</p></li>
         <li><p><a class="reference internal" href="#x-631" title="X(631): Let AeBeCe and AiBiCi be the Ae and Ai triangles (aka K798e and K798i triangles). X(631) is the radical center of the circumcircles of triangles AAeAi, BBeBi, CCeCi. (Randy…"><span class="std std-ref">X(631)</span></a> = <a class="term-ref glossary-term" id="occ-term-anticomplement-1" href="../../glossary.html#term-anticomplement" data-term="anticomplement" title="anticomplement: If points P and Q are collinear with the centroid G, then P is the anticomplement of Q if G trisects segment PQ and is closer to Q than to P. See also complement . (According to Court, p. 297, the term anticomplementary point dates from 1886.)">anticomplement</a> of X(1656)</p></li>
         <li><p><a class="reference internal" href="#x-631" title="X(631): Let AeBeCe and AiBiCi be the Ae and Ai triangles (aka K798e and K798i triangles). X(631) is the radical center of the circumcircles of triangles AAeAi, BBeBi, CCeCi. (Randy…"><span class="std std-ref">X(631)</span></a> = circumcircle-inverse of X(37925)</p></li>
         <li><p><a class="reference internal" href="#x-631" title="X(631): Let AeBeCe and AiBiCi be the Ae and Ai triangles (aka K798e and K798i triangles). X(631) is the radical center of the circumcircles of triangles AAeAi, BBeBi, CCeCi. (Randy…"><span class="std std-ref">X(631)</span></a> = orthocentroidal-circle-inverse of X(3090)</p></li>
-        <li><p><a class="reference internal" href="#x-631" title="X(631): Let AeBeCe and AiBiCi be the Ae and Ai triangles (aka K798e and K798i triangles). X(631) is the radical center of the circumcircles of triangles AAeAi, BBeBi, CCeCi. (Randy…"><span class="std std-ref">X(631)</span></a> = insimilicenter of circumcircle and 1st Steiner circle; the exsimilicenter is <a class="reference internal" href="../x-00020/index.html#x-20" title="X(20): Let La be the polar of X(4) wrt the circle centered at A and passing through X(3), and define Lb and Lc cyclically. (Note: X(4) is the perspector of any circle centered at a…"><span class="std std-ref">X(20)</span></a></p></li>
+        <li><p><a class="reference internal" href="#x-631" title="X(631): Let AeBeCe and AiBiCi be the Ae and Ai triangles (aka K798e and K798i triangles). X(631) is the radical center of the circumcircles of triangles AAeAi, BBeBi, CCeCi. (Randy…"><span class="std std-ref">X(631)</span></a> = insimilicenter of circumcircle and 1st Steiner circle; the exsimilicenter is <a class="reference internal" href="../x-00020/index.html#x-20" title="X(20): Let L_{a} be the polar of X(4) wrt the circle centered at A and passing through X(3), and define L_{b} and L_{c} cyclically. (Note: X(4) is the perspector of any circle centered…"><span class="std std-ref">X(20)</span></a></p></li>
         <li><p><a class="reference internal" href="#x-631" title="X(631): Let AeBeCe and AiBiCi be the Ae and Ai triangles (aka K798e and K798i triangles). X(631) is the radical center of the circumcircles of triangles AAeAi, BBeBi, CCeCi. (Randy…"><span class="std std-ref">X(631)</span></a> = pole wrt polar circle of <a class="term-ref glossary-term" id="occ-term-trilinear-polar-1" href="../../glossary.html#term-trilinear-polar" data-term="trilinear-polar" title="trilinear polar: The trilinear polar of a point p : q : r is the line">trilinear polar</a> of X(8796)</p></li>
         <li><p><a class="reference internal" href="#x-631" title="X(631): Let AeBeCe and AiBiCi be the Ae and Ai triangles (aka K798e and K798i triangles). X(631) is the radical center of the circumcircles of triangles AAeAi, BBeBi, CCeCi. (Randy…"><span class="std std-ref">X(631)</span></a> = <a class="reference internal" href="../x-00048/index.html#x-48" title="X(48): Let A'B'C' be the hexyl triangle. Let A″ be the barycentric product of the circumcircle intercepts of line B'C'. Define B″, C″ cyclically. The lines AA″, BB″, CC″ concur in X(48)…"><span class="std std-ref">X(48)</span></a>-<a class="term-ref glossary-term" id="occ-term-isoconjugate-1" href="../../glossary.html#term-isoconjugate" data-term="isoconjugate" title="isoconjugate: Let P = p : q : r and U = u : v : w be points, neither on a sideline of ABC. The P-isoconjugate of U is the point Examples: the isogonal conjugate of U is the X(1)-isoconjugate of U, and the isotomic conjugate of U is the X(31)-isoconjugate of U. As suggested by the meaning of the prefix &quot;iso&quot;, P-isoconjugate of U = U-isoconjugate of P. Let A&#x27;B&#x27;C&#x27; be the...">isoconjugate</a> (polar conjugate)-of-X(8796)</p></li>
-        <li><p><a class="reference internal" href="#x-631" title="X(631): Let AeBeCe and AiBiCi be the Ae and Ai triangles (aka K798e and K798i triangles). X(631) is the radical center of the circumcircles of triangles AAeAi, BBeBi, CCeCi. (Randy…"><span class="std std-ref">X(631)</span></a> = {<a class="reference internal" href="../x-00003/index.html#x-3" title="X(3): X(3) is the point of concurrence of the perpendicular bisectors of the sides of ABC. The lengths of segments AX, BX, CX are equal if and only if X = X(3). This common distance is…"><span class="std std-ref">X(3)</span></a>,<a class="reference internal" href="../x-00004/index.html#x-4" title="X(4): X(4) is the point of concurrence of the altitudes of ABC."><span class="std std-ref">X(4)</span></a>}-harmonic conjugate of <a class="reference internal" href="../x-00376/index.html#x-376" title="X(376): Let Pa be the parabola with focus A and directrix BC. Let La be the polar of X(3) wrt Pa. Define Lb, Lc cyclically. Let A' = Lb∩Lc, B' = Lc∩La, C' = La∩Lb. X(376) = X(69) of…"><span class="std std-ref">X(376)</span></a></p></li>
+        <li><p><a class="reference internal" href="#x-631" title="X(631): Let AeBeCe and AiBiCi be the Ae and Ai triangles (aka K798e and K798i triangles). X(631) is the radical center of the circumcircles of triangles AAeAi, BBeBi, CCeCi. (Randy…"><span class="std std-ref">X(631)</span></a> = {<a class="reference internal" href="../x-00003/index.html#x-3" title="X(3): X(3) is the point of concurrence of the perpendicular bisectors of the sides of ABC. The lengths of segments AX, BX, CX are equal if and only if X = X(3). This common distance is…"><span class="std std-ref">X(3)</span></a>,<a class="reference internal" href="../x-00004/index.html#x-4" title="X(4): X(4) is the point of concurrence of the altitudes of ABC."><span class="std std-ref">X(4)</span></a>}-harmonic conjugate of <a class="reference internal" href="../x-00376/index.html#x-376" title="X(376): Let P_{a} be the parabola with focus A and directrix BC. Let L_{a} be the polar of X(3) wrt P_{a}. Define L_{b}, L_{c} cyclically. Let A' = L_{b}∩L_{c}, B' = L_{c}∩L_{a}, C' =…"><span class="std std-ref">X(376)</span></a></p></li>
         <li><p><a class="reference internal" href="#x-631" title="X(631): Let AeBeCe and AiBiCi be the Ae and Ai triangles (aka K798e and K798i triangles). X(631) is the radical center of the circumcircles of triangles AAeAi, BBeBi, CCeCi. (Randy…"><span class="std std-ref">X(631)</span></a> = insimilicenter of circumcircles of Euler and anti-Euler triangles; the exsimilicenter is <a class="reference internal" href="../x-00004/index.html#x-4" title="X(4): X(4) is the point of concurrence of the altitudes of ABC."><span class="std std-ref">X(4)</span></a></p></li>
         <li><p><a class="reference internal" href="#x-631" title="X(631): Let AeBeCe and AiBiCi be the Ae and Ai triangles (aka K798e and K798i triangles). X(631) is the radical center of the circumcircles of triangles AAeAi, BBeBi, CCeCi. (Randy…"><span class="std std-ref">X(631)</span></a> = homothetic center of circumorthic triangle and mid-triangle of orthic and dual of <a class="term-ref glossary-term" id="occ-term-orthic-triangle-1" href="../../glossary.html#term-orthic-triangle" data-term="orthic-triangle" title="orthic triangle: The cevian (and pedal) triangle of the orthocenter X(4) = sec A : sec B : sec C, whose vertices are the feet of the altitudes of ABC.">orthic triangles</a></p></li>
-        <li><p><a class="reference internal" href="#x-631" title="X(631): Let AeBeCe and AiBiCi be the Ae and Ai triangles (aka K798e and K798i triangles). X(631) is the radical center of the circumcircles of triangles AAeAi, BBeBi, CCeCi. (Randy…"><span class="std std-ref">X(631)</span></a> = perspector of ABC and cross-triangle of ABC and anti-Euler triangle</p></li>
+        <li><p><a class="reference internal" href="#x-631" title="X(631): Let AeBeCe and AiBiCi be the Ae and Ai triangles (aka K798e and K798i triangles). X(631) is the radical center of the circumcircles of triangles AAeAi, BBeBi, CCeCi. (Randy…"><span class="std std-ref">X(631)</span></a> = perspector of <span class="geom-ref" data-ref="&lt; A B C &gt;" title="&lt; A B C &gt;">ABC</span> and cross-triangle of <span class="geom-ref" data-ref="&lt; A B C &gt;" title="&lt; A B C &gt;">ABC</span> and anti-Euler triangle</p></li>
         <li><p><a class="reference internal" href="#x-631" title="X(631): Let AeBeCe and AiBiCi be the Ae and Ai triangles (aka K798e and K798i triangles). X(631) is the radical center of the circumcircles of triangles AAeAi, BBeBi, CCeCi. (Randy…"><span class="std std-ref">X(631)</span></a> = orthocenter of cross-triangle of Euler and anti-Euler triangles</p></li>
         <li><p><a class="reference internal" href="#x-631" title="X(631): Let AeBeCe and AiBiCi be the Ae and Ai triangles (aka K798e and K798i triangles). X(631) is the radical center of the circumcircles of triangles AAeAi, BBeBi, CCeCi. (Randy…"><span class="std std-ref">X(631)</span></a> = homothetic center of <a class="reference internal" href="../x-00004/index.html#x-4" title="X(4): X(4) is the point of concurrence of the altitudes of ABC."><span class="std std-ref">X(4)</span></a>-altimedial and <a class="reference internal" href="../x-00002/index.html#x-2" title="X(2): X(2) is the point of concurrence of the medians of ABC, situated 1/3 of the distance from each vertex to the midpoint of the opposite side. More generally, if L is any line in the…"><span class="std std-ref">X(2)</span></a>-anti-altimedial triangles</p></li>
-        <li><p><a class="reference internal" href="#x-631" title="X(631): Let AeBeCe and AiBiCi be the Ae and Ai triangles (aka K798e and K798i triangles). X(631) is the radical center of the circumcircles of triangles AAeAi, BBeBi, CCeCi. (Randy…"><span class="std std-ref">X(631)</span></a> = Euler line intercept, other than <a class="reference internal" href="../x-00020/index.html#x-20" title="X(20): Let La be the polar of X(4) wrt the circle centered at A and passing through X(3), and define Lb and Lc cyclically. (Note: X(4) is the perspector of any circle centered at a…"><span class="std std-ref">X(20)</span></a>, of conic {<a class="reference internal" href="../x-00013/index.html#x-13" title="X(13): Construct the equilateral triangle BA'C having base BC and vertex A' on the negative side of BC; similarly construct equilateral triangles CB'A and AC'B based on the other two…"><span class="std std-ref">X(13)</span></a>,<a class="reference internal" href="../x-00014/index.html#x-14" title="X(14): Let NaNbNc, Na'Nb'Nc' be the outer and inner Napoleon triangles, resp. Let A' be the isogonal conjugate of Na, wrt Na'Nb'Nc', and define B' and C' cyclically. The lines Na'A'…"><span class="std std-ref">X(14)</span></a>,<a class="reference internal" href="../x-00017/index.html#x-17" title="X(17): Let X,Y,Z be the centers of the equilateral triangles in the construction of X(13). The lines AX, BY, CZ concur in X(17)."><span class="std std-ref">X(17)</span></a>,<a class="reference internal" href="../x-00018/index.html#x-18" title="X(18): Let X,Y,Z be the centers of the equilateral triangles in the construction of X(14). The lines AX, BY, CZ concur in X(18)."><span class="std std-ref">X(18)</span></a>,<a class="reference internal" href="../x-00020/index.html#x-20" title="X(20): Let La be the polar of X(4) wrt the circle centered at A and passing through X(3), and define Lb and Lc cyclically. (Note: X(4) is the perspector of any circle centered at a…"><span class="std std-ref">X(20)</span></a>}}</p></li>
+        <li><p><a class="reference internal" href="#x-631" title="X(631): Let AeBeCe and AiBiCi be the Ae and Ai triangles (aka K798e and K798i triangles). X(631) is the radical center of the circumcircles of triangles AAeAi, BBeBi, CCeCi. (Randy…"><span class="std std-ref">X(631)</span></a> = Euler line intercept, other than <a class="reference internal" href="../x-00020/index.html#x-20" title="X(20): Let L_{a} be the polar of X(4) wrt the circle centered at A and passing through X(3), and define L_{b} and L_{c} cyclically. (Note: X(4) is the perspector of any circle centered…"><span class="std std-ref">X(20)</span></a>, of conic {<a class="reference internal" href="../x-00013/index.html#x-13" title="X(13): Construct the equilateral triangle BA'C having base BC and vertex A' on the negative side of BC; similarly construct equilateral triangles CB'A and AC'B based on the other two…"><span class="std std-ref">X(13)</span></a>,<a class="reference internal" href="../x-00014/index.html#x-14" title="X(14): Construct the equilateral triangle BA'C having base BC and vertex A' on the positive side of BC; similarly construct equilateral triangles CB'A and AC'B based on the other two…"><span class="std std-ref">X(14)</span></a>,<a class="reference internal" href="../x-00017/index.html#x-17" title="X(17): Let X,Y,Z be the centers of the equilateral triangles in the construction of X(13). The lines AX, BY, CZ concur in X(17)."><span class="std std-ref">X(17)</span></a>,<a class="reference internal" href="../x-00018/index.html#x-18" title="X(18): Let X,Y,Z be the centers of the equilateral triangles in the construction of X(14). The lines AX, BY, CZ concur in X(18)."><span class="std std-ref">X(18)</span></a>,<a class="reference internal" href="../x-00020/index.html#x-20" title="X(20): Let L_{a} be the polar of X(4) wrt the circle centered at A and passing through X(3), and define L_{b} and L_{c} cyclically. (Note: X(4) is the perspector of any circle centered…"><span class="std std-ref">X(20)</span></a>}}</p></li>
         <li><p><a class="reference internal" href="#x-631" title="X(631): Let AeBeCe and AiBiCi be the Ae and Ai triangles (aka K798e and K798i triangles). X(631) is the radical center of the circumcircles of triangles AAeAi, BBeBi, CCeCi. (Randy…"><span class="std std-ref">X(631)</span></a> = pole of Brocard axis wrt conic {<a class="reference internal" href="../x-00002/index.html#x-2" title="X(2): X(2) is the point of concurrence of the medians of ABC, situated 1/3 of the distance from each vertex to the midpoint of the opposite side. More generally, if L is any line in the…"><span class="std std-ref">X(2)</span></a>,<a class="reference internal" href="../x-00015/index.html#x-15" title="X(15): Let U and V be the points on sideline BC met by the interior and exterior bisectors of angle A. The circle having diameter UV is the A-Apollonian circle. The B- and C- Apollonian…"><span class="std std-ref">X(15)</span></a>,<a class="reference internal" href="../x-00016/index.html#x-16" title="X(16): Let U and V be the points on sideline BC met by the interior and exterior bisectors of angle A. The circle having diameter UV is the A-Apollonian circle. The B- and C- Apollonian…"><span class="std std-ref">X(16)</span></a>,<a class="reference internal" href="../x-00017/index.html#x-17" title="X(17): Let X,Y,Z be the centers of the equilateral triangles in the construction of X(13). The lines AX, BY, CZ concur in X(17)."><span class="std std-ref">X(17)</span></a>,<a class="reference internal" href="../x-00018/index.html#x-18" title="X(18): Let X,Y,Z be the centers of the equilateral triangles in the construction of X(14). The lines AX, BY, CZ concur in X(18)."><span class="std std-ref">X(18)</span></a>}}</p></li>
         </ul>
         </div>
@@ -3080,7 +3425,7 @@
         <section class="level-2" id="notes">
         <h2>Notes<a class="headerlink" href="#notes" title="Link to this heading">¶</a></h2>
         <div class="note-item docutils container">
-        <p>As a point on the Euler line, <a class="reference internal" href="#x-631" title="X(631): Let AeBeCe and AiBiCi be the Ae and Ai triangles (aka K798e and K798i triangles). X(631) is the radical center of the circumcircles of triangles AAeAi, BBeBi, CCeCi. (Randy…"><span class="std std-ref">X(631)</span></a> has Shinagawa coefficients (2,-1).</p>
+        <p>As a point on the Euler line, <a class="reference internal" href="#x-631" title="X(631): Let AeBeCe and AiBiCi be the Ae and Ai triangles (aka K798e and K798i triangles). X(631) is the radical center of the circumcircles of triangles AAeAi, BBeBi, CCeCi. (Randy…"><span class="std std-ref">X(631)</span></a> has Shinagawa coefficients <span class="math notranslate nohighlight">\((2,-1)\)</span>.</p>
         </div>
         <div class="note-item docutils container">
         <p><a class="reference internal" href="#x-631" title="X(631): Let AeBeCe and AiBiCi be the Ae and Ai triangles (aka K798e and K798i triangles). X(631) is the radical center of the circumcircles of triangles AAeAi, BBeBi, CCeCi. (Randy…"><span class="std std-ref">X(631)</span></a> is the {<a class="reference internal" href="../x-00002/index.html#x-2" title="X(2): X(2) is the point of concurrence of the medians of ABC, situated 1/3 of the distance from each vertex to the midpoint of the opposite side. More generally, if L is any line in the…"><span class="std std-ref">X(2)</span></a>,<a class="reference internal" href="../x-00003/index.html#x-3" title="X(3): X(3) is the point of concurrence of the perpendicular bisectors of the sides of ABC. The lengths of segments AX, BX, CX are equal if and only if X = X(3). This common distance is…"><span class="std std-ref">X(3)</span></a>}-harmonic conjugate of <a class="reference internal" href="../x-00004/index.html#x-4" title="X(4): X(4) is the point of concurrence of the altitudes of ABC."><span class="std std-ref">X(4)</span></a>.</p>
@@ -3176,7 +3521,7 @@
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=360bc84d"></script>
+  <script src="../../_static/documentation_options.js?v=fd825880"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>

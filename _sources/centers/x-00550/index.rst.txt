@@ -10,18 +10,18 @@ X(550) = MIDPOINT OF X(3) AND X(20)
 
 .. enunciation::
 
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the :term:`anticomplementary triangle <anticomplementary-triangle>` and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(550) <X(550)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (:person:`Randy Hutson <randy-hutson>`, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the :term:`anticomplementary triangle <anticomplementary-triangle>` and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(550) <X(550)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (:person:`Randy Hutson <randy-hutson>`, August 30, 2020)
 
 .. figure:: x-00550.svg
    :alt: X(550) = MIDPOINT OF X(3) AND X(20)
    :align: center
 
-   **X(550) = MIDPOINT OF X(3) AND X(20)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(550) = MIDPOINT OF X(3) AND X(20)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`- \cos(B - C) + 4 \cos A : :`
-   | **Barycentrics:** 4 a^4 - 3 a^2 (b^2 + c^2) - (b^2 - c^2)^2 : :, As a point on the Euler line, :ref:`X(550) <X(550)>` has Shinagawa coefficients (3,-5).
+   | **Barycentrics:** :math:`4 a^{4} - 3 a^{2} (b^{2} + c^{2}) - (b^{2} - c^{2})^{2} : :`
    | **Search Value (6, 9, 13):** :math:`13.011854046758`
 
 .. collapse:: Alternate Coordinates
@@ -36,11 +36,7 @@ X(550) = MIDPOINT OF X(3) AND X(20)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(550) <X(550)>` = 3\*\ :ref:`X(3) <X(3)>` - :ref:`X(4) <X(4)>`
-
-.. container:: note-item
-
-   :ref:`X(550) <X(550)>` lies.
+   * :ref:`X(550) <X(550)>` = :math:`3` :ref:`X(3) <X(3)>` - :ref:`X(4) <X(4)>`
 
 .. collapse:: Incident Central Lines
    :badge: 9 lines
@@ -61,7 +57,7 @@ X(550) = MIDPOINT OF X(3) AND X(20)
    * :ref:`X(550) <X(550)>` = :ref:`X(143) <X(143)>`-of-hexyl-triangle
    * :ref:`X(550) <X(550)>` = intersection of tangents to Evans conic at :ref:`X(17) <X(17)>` and :ref:`X(18) <X(18)>`
    * :ref:`X(550) <X(550)>` = inverse-in-orthocentroidal-circle of X(3851)
-   * :ref:`X(550) <X(550)>` = radical center of reflections of nine-point circle in A, B, C
+   * :ref:`X(550) <X(550)>` = radical center of reflections of nine-point circle in :g:`A <A>`, :g:`B <B>`, :g:`C <C>`
    * :ref:`X(550) <X(550)>` = antipedal isogonal conjugate of :ref:`X(5) <X(5)>`
    * :ref:`X(550) <X(550)>` = :term:`radical trace <radical-trace>` of circumcircle and Trinh circle
    * :ref:`X(550) <X(550)>` = {:ref:`X(2) <X(2)>`,X(3529)}-harmonic conjugate of :ref:`X(382) <X(382)>`
@@ -74,7 +70,11 @@ Notes
 
 .. container:: note-item
 
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the anti-Euler triangle and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(550) <X(550)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (Randy Hutson, August 30, 2020)
+   As a point on the Euler line, :ref:`X(550) <X(550)>` has Shinagawa coefficients :math:`(3,-5)`.
+
+.. container:: note-item
+
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the anti-Euler triangle and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(550) <X(550)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
 
 .. toctree::
    :hidden:

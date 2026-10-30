@@ -16,12 +16,12 @@ X(615) = ISOGONAL CONJUGATE OF X(589)
    :alt: X(615) = ISOGONAL CONJUGATE OF X(589)
    :align: center
 
-   **X(615) = ISOGONAL CONJUGATE OF X(589)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(615) = ISOGONAL CONJUGATE OF X(589)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(a^{2} - 4*area)/a : :`
-   | **Barycentrics:** :math:`a^{2} - 4*area : :`
+   | **Trilinears:** :math:`(a^{2} - 4 \operatorname{area})/a : :`
+   | **Barycentrics:** :math:`a^{2} - 4 \operatorname{area} : :`
    | **Search Value (6, 9, 13):** :math:`-228.134102794607`
 
 .. collapse:: Alternate Coordinates
@@ -30,10 +30,6 @@ X(615) = ISOGONAL CONJUGATE OF X(589)
    * **Trilinears:** :math:`\sin A - 2 \sin B \sin : :`
    * **Trilinears:** :math:`aR- bc : :`
    * **Barycentrics:** :math:`a^{2} - 2S : :`
-
-.. container:: note-item
-
-   :ref:`X(615) <X(615)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 10 lines

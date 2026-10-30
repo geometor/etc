@@ -17,7 +17,7 @@ X(356) = MORLEY CENTER
    :alt: X(356) = MORLEY CENTER
    :align: center
 
-   **X(356) = MORLEY CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(356) = MORLEY CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,16 +27,12 @@ X(356) = MORLEY CENTER
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`= \cos(B/3 - C/3) + \sqrt{3}\sin(A/3 + \pi /3) (M. Stevanovic, 12/25/2007)`
+   * **Trilinears:** :math:`\cos(B/3 - C/3) + \sqrt{3}\sin(A/3 + \pi /3)` (M. Stevanovic, 12/25/2007)
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
    * :ref:`X(356) <X(356)>` = X(3276) + X(3277) - :ref:`X(3) <X(3)>`
-
-.. container:: note-item
-
-   :ref:`X(356) <X(356)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines
@@ -67,7 +63,7 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the 1st Morley triangle. Let A″ be the :term:`cevapoint <cevapoint>` of B' and C', and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(356) <X(356)>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the 1st Morley triangle. Let :g:`A″ <A″>` be the :term:`cevapoint <cevapoint>` of :g:`B' <B'>` and :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(356) <X(356)>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
 
 .. container:: note-item
 

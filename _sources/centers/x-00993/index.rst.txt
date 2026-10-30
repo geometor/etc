@@ -16,22 +16,18 @@ X(993) = MIDPOINT OF X(1) AND X(63)
    :alt: X(993) = MIDPOINT OF X(1) AND X(63)
    :align: center
 
-   **X(993) = MIDPOINT OF X(1) AND X(63)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(993) = MIDPOINT OF X(1) AND X(63)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = a\ :sup:`3` - a(b\ :sup:`2` + c\ :sup:`2`) - bc(b + c)
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a^{3} - a(b^{2} + c^{2}) - bc(b + c)`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`3.782604541465`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(993) <X(993)>` = :ref:`X(1) <X(1)>` - 3\ :ref:`X(2) <X(2)>` - 2(r/R)\ :ref:`X(3) <X(3)>`
-
-.. container:: note-item
-
-   :ref:`X(993) <X(993)>` lies.
+   * :ref:`X(993) <X(993)>` = :ref:`X(1) <X(1)>` - :math:`3` :ref:`X(2) <X(2)>` - :math:`2(r/R)` :ref:`X(3) <X(3)>`
 
 .. collapse:: Incident Central Lines
    :badge: 15 lines

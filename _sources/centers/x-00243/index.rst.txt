@@ -10,18 +10,18 @@ X(243) = X(4)-LINE CONJUGATE OF X(73)
 
 .. enunciation::
 
-   :ref:`X(243) <X(243)>` is the perspector of triangle ABC and the :term:`tangential triangle <tangential-triangle>` of the conic that passes through A, B, C, and the pair P(15) and U(15) of :term:`bicentric points <bicentric-points>` (see the notes just before X(1908). (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   :ref:`X(243) <X(243)>` is the perspector of triangle :g:`ABC << A B C >>` and the :term:`tangential triangle <tangential-triangle>` of the conic that passes through :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, and the pair P(15) and U(15) of :term:`bicentric points <bicentric-points>` (see the notes just before X(1908). (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. figure:: x-00243.svg
    :alt: X(243) = X(4)-LINE CONJUGATE OF X(73)
    :align: center
 
-   **X(243) = X(4)-LINE CONJUGATE OF X(73)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(243) = X(4)-LINE CONJUGATE OF X(73)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(\sec A)(\cos^{2}A - \cos B \cos C) : :`
-   | **Barycentrics:** :math:`(a - b - c) (a^4 - a^2 (b^2 - b c + c^2) - b c (b - c)^2)/(a^2 - b^2 - c^2) : :`
+   | **Trilinears:** :math:`(\sec A)(\cos^{2} A - \cos B \cos C) : :`
+   | **Barycentrics:** :math:`(a - b - c) (a^{4} - a^{2} (b^{2} - b c + c^{2}) - b c (b - c)^{2})/(a^{2} - b^{2} - c^{2}) : :`
    | **Search Value (6, 9, 13):** :math:`1.882963431523`
 
 .. container:: note-item
@@ -54,8 +54,8 @@ X(243) = X(4)-LINE CONJUGATE OF X(73)
    * :ref:`X(243) <X(243)>` = :term:`crossdifference <crossdifference>` of every pair of points on line {73, 652}
    * :ref:`X(243) <X(243)>` = X(i)-lineconjugate of X(j) for these (i,j): {:ref:`1 <X(1)>`, :ref:`73 <X(73)>`}, {:ref:`522 <X(522)>`, :ref:`652 <X(652)>`}
    * :ref:`X(243) <X(243)>` = X(i)-:term:`Hirst inverse <hirst-inverse>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`4 <X(4)>`), (:ref:`46 <X(46)>`, 1148)
-   * :ref:`X(243) <X(243)>` = perspector of conic {A,B,C,\ :ref:`X(29) <X(29)>`,\ :ref:`X(653) <X(653)>`,PU(15)}}
-   * :ref:`X(243) <X(243)>` = perspector of conic {A,B,C,\ :ref:`X(29) <X(29)>`,\ :ref:`X(653) <X(653)>`,PU(15)}
+   * :ref:`X(243) <X(243)>` = perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(29) <X(29)>`,\ :ref:`X(653) <X(653)>`,PU(15)}}
+   * :ref:`X(243) <X(243)>` = perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(29) <X(29)>`,\ :ref:`X(653) <X(653)>`,PU(15)}
    * :ref:`X(243) <X(243)>` = crossdifference of PU(16)
    * :ref:`X(243) <X(243)>` = pole wrt polar circle of the line :ref:`X(226) <X(226)>`\ \ :ref:`X(522) <X(522)>`
    * :ref:`X(243) <X(243)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of X(1952)
@@ -75,7 +75,7 @@ Notes
       * :term:`trilinear polars <trilinear-polar>` of P(15) and U(15)
       * :ref:`X(1) <X(1)>`\ \ :ref:`X(4) <X(4)>`
       * trilinear polar of cevapoint{:ref:`X(1) <X(1)>`,\ :ref:`X(4) <X(4)>`}
-      * UV, where U = :ref:`X(1) <X(1)>`-Ceva-conjugate-of-(4) = X(1148), and V = :ref:`X(4) <X(4)>`-Ceva-conjugate-of-:ref:`X(1) <X(1)>` = :ref:`X(46) <X(46)>` (Randy Hutson, December 26, 2015)
+      * :g:`UV <[ U V ]>`, where :g:`U <U>` = :ref:`X(1) <X(1)>`-Ceva-conjugate-of-(4) = X(1148), and V = :ref:`X(4) <X(4)>`-Ceva-conjugate-of-:ref:`X(1) <X(1)>` = :ref:`X(46) <X(46)>` (Randy Hutson, December 26, 2015)
 
 .. toctree::
    :hidden:

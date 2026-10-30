@@ -10,23 +10,19 @@ X(66) = ISOGONAL CONJUGATE OF X(22)
 
 .. enunciation::
 
-   Let P be a point on the circumcircle, and let L\ :sub:`P` be its Steiner line. The locus of the orthopole of L\ :sub:`P`, as P varies, is an ellipse with center :ref:`X(4) <X(4)>` and perspector :ref:`X(66) <X(66)>`. (:person:`Randy Hutson <randy-hutson>`, March 29, 2020)
+   Let :g:`P <P>` be a point on the circumcircle, and let :g:`L_{P} <L_P>` be its Steiner line. The locus of the orthopole of :g:`L_{P} <L_P>`, as P varies, is an ellipse with center :ref:`X(4) <X(4)>` and perspector :ref:`X(66) <X(66)>`. (:person:`Randy Hutson <randy-hutson>`, March 29, 2020)
 
 .. figure:: x-00066.svg
    :alt: X(66) = ISOGONAL CONJUGATE OF X(22)
    :align: center
 
-   **X(66) = ISOGONAL CONJUGATE OF X(22)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(66) = ISOGONAL CONJUGATE OF X(22)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`bc/(b^{4} + c^{4} - a^{4}) : :`
    | **Barycentrics:** :math:`1/(b^{4} + c^{4} - a^{4}) : :`
    | **Search Value (6, 9, 13):** :math:`9.640588374561`
-
-.. container:: note-item
-
-   :ref:`X(66) <X(66)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 9 lines
@@ -50,7 +46,7 @@ X(66) = ISOGONAL CONJUGATE OF X(22)
    * :ref:`X(66) <X(66)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(647) <X(647)>`\ \ :ref:`X(826) <X(826)>` (radical axis of Brocard and polar circles)
    * :ref:`X(66) <X(66)>` = :term:`antigonal image <antigonal-image>` of X(1177)
    * :ref:`X(66) <X(66)>` = orthocenter of :ref:`X(3) <X(3)>`\ \ :ref:`X(4) <X(4)>`\ X(2435)
-   * :ref:`X(66) <X(66)>` = X(3174)-of-orthic-triangle if ABC is acute
+   * :ref:`X(66) <X(66)>` = X(3174)-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(66) <X(66)>` = polar conjugate of isotomic conjugate of X(14376)
    * :ref:`X(66) <X(66)>` = :ref:`X(63) <X(63)>`-:term:`isoconjugate <isoconjugate>` of X(8743)
 
@@ -59,15 +55,15 @@ Notes
 
 .. container:: note-item
 
-   In the plane of a triangle ABC, let
+   In the plane of a triangle :g:`ABC << A B C >>`, let
 
-      * A'B'C' = :term:`anticomplementary triangle <anticomplementary-triangle>`;
-      * Oa = circle with diameter BC, and define Ob and Oc cyclically;
-      * Ab = A'BC'∩Oa, and define Bc and Ca cyclically;
-      * Ac = B'CA'∩Oa, and define Ba and Cb cyclically;
-      * A″= BcBa∩CaCb, and define B″ and C″ cyclically.
+      * :g:`A'B'C' << A' B' C' >>` = :term:`anticomplementary triangle <anticomplementary-triangle>`;
+      * :g:`O_{a} <O_a>` = circle with diameter :g:`BC <[ B C ]>`, and define :g:`O_{b} <O_b>` and :g:`O_{c} <O_c>` cyclically;
+      * :g:`A_{b} <A_b>` = :g:`A'BC' << A' B C' >>`\ ∩\ :g:`O_{a} <O_a>`, and define :g:`B_{c} <B_c>` and :g:`C_{a} <C_a>` cyclically;
+      * :g:`A_{c} <A_c>` = :g:`B'CA' << B' C A' >>`\ ∩\ :g:`O_{a} <O_a>`, and define :g:`B_{a} <B_a>` and :g:`C_{b} <C_b>` cyclically;
+      * :g:`A″ <A″>`\ = :g:`B_{c}B_{a} <[ B_c B_a ]>`\ ∩\ :g:`C_{a}C_{b} <[ C_a C_b ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically.
 
-   The triangle A″B″C″ is perspective to ABC, and the perspector is :ref:`X(66) <X(66)>`. (:person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, April 15, 2021)
+   The triangle :g:`A″B″C″ << A″ B″ C″ >>` is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X(66) <X(66)>`. (:person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, April 15, 2021)
 
 .. toctree::
    :hidden:

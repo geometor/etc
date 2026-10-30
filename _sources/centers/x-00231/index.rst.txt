@@ -16,23 +16,23 @@ X(231) = X(2)-CEVA CONJUGATE OF X(128)
    :alt: X(231) = X(2)-CEVA CONJUGATE OF X(128)
    :align: center
 
-   **X(231) = X(2)-CEVA CONJUGATE OF X(128)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(231) = X(2)-CEVA CONJUGATE OF X(128)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** u(-au + bv + cw), u : v : w = :ref:`X(128) <X(128)>`
-   | **Barycentrics:** :math:`2*a^8 - 4*a^6*b^2 + 3*a^4*b^4 - 2*a^2*b^6 + b^8 - 4*a^6*c^2 + 2*a^2*b^4*c^2 - 4*b^6*c^2 + 3*a^4*c^4 + 2*a^2*b^2*c^4 + 6*b^4*c^4 - 2*a^2*c^6 - 4*b^2*c^6 + c^8 : :`
+   | **Trilinears:** u(-au + bv + cw),\ :math:`u : v : w` = :ref:`X(128) <X(128)>`
+   | **Barycentrics:** :math:`2 a^{8} - 4 a^{6} b^{2} + 3 a^{4} b^{4} - 2 a^{2} b^{6} + b^{8} - 4 a^{6} c^{2} + 2 a^{2} b^{4} c^{2} - 4 b^{6} c^{2} + 3 a^{4} c^{4} + 2 a^{2} b^{2} c^{4} + 6 b^{4} c^{4} - 2 a^{2} c^{6} - 4 b^{2} c^{6} + c^{8} : :`
    | **Search Value (6, 9, 13):** :math:`-2.059786071846`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`(\cos B) (4 \sin^2 C - 1) (\cos A \sin B - \sin A \cos B) - (\cos C) (4 \sin^2 B - 1) (\cos C \sin A - \sin C \cos A) : :`
+   * **Trilinears:** :math:`(\cos B) (4 \sin^{2} C - 1) (\cos A \sin B - \sin A \cos B) - (\cos C) (4 \sin^{2} B - 1) (\cos C \sin A - \sin C \cos A) : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(231) <X(231)>` = X(35727) + 3 X(38394)
+   * :ref:`X(231) <X(231)>` = X(35727) + :math:`3` X(38394)
 
 .. container:: note-item
 

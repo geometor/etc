@@ -16,17 +16,13 @@ X(404) = {X(2),X(3)}-HARMONIC CONJUGATE OF X(21)
    :alt: X(404) = {X(2),X(3)}-HARMONIC CONJUGATE OF X(21)
    :align: center
 
-   **X(404) = {X(2),X(3)}-HARMONIC CONJUGATE OF X(21)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(404) = {X(2),X(3)}-HARMONIC CONJUGATE OF X(21)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = bc(a + b + c) - a(b\ :sup:`2` + c\ :sup:`2` - a\ :sup:`2`)
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = abc(a + b + c) - a\ :sup:`2`\ (b\ :sup:`2` + c\ :sup:`2` - a\ :sup:`2`)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = bc(a + b + c) - a(b^{2} + c^{2} - a^{2})`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = abc(a + b + c) - a^{2}(b^{2} + c^{2} - a^{2})`
    | **Search Value (6, 9, 13):** :math:`1.885271305061`
-
-.. container:: note-item
-
-   :ref:`X(404) <X(404)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 18 lines
@@ -46,7 +42,7 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(404) <X(404)>` has Shinagawa coefficients (abc\*$a$ - 2S\ :sup:`2`, 2S\ :sup:`2`).
+   As a point on the Euler line, :ref:`X(404) <X(404)>` has Shinagawa coefficients :math:`(abc \$a\$ - 2S^{2}, 2S^{2})`.
 
 .. toctree::
    :hidden:

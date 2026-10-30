@@ -10,33 +10,29 @@ X(439) = EULER X(193)-9th-SUBSTITUTION POINT
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(439) <X(439)>` has Shinagawa coefficients ((E + F) :sup:`2` - 4S\ :sup:`2`,4S\ :sup:`2`)
+   As a point on the Euler line, :ref:`X(439) <X(439)>` has Shinagawa coefficients :math:`((E + F) ^{2} - 4S^{2},4S^{2})`
 
 .. figure:: x-00439.svg
    :alt: X(439) = EULER X(193)-9th-SUBSTITUTION POINT
    :align: center
 
-   **X(439) = EULER X(193)-9th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(439) = EULER X(193)-9th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`au^{2} : bv^{2} : cw^{2}`, where, u : v : w = :ref:`X(193) <X(193)>`; e.g., u(A,B,C) = (csc A)(cot B + cot C - cot A)
+   | **Trilinears:** :math:`au^{2} : bv^{2} : cw^{2}`, where :math:`u : v : w` = :ref:`X(193) <X(193)>`; e.g., :math:`u(A,B,C) = (\csc A)(\cot B + \cot C - \cot A)`
    | **Barycentrics:** :math:`(au)^{2} : (bv)^{2} : (cw)^{2}`
    | **Search Value (6, 9, 13):** :math:`0.915650269390`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`(3*a^2 - b^2 - c^2)^2 : :`
+   * **Barycentrics:** :math:`(3 a^{2} - b^{2} - c^{2})^{2} : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(439) <X(439)>` = 3 :ref:`X(2) <X(2)>` - 4 X(32970)
-
-.. container:: note-item
-
-   :ref:`X(439) <X(439)>` lies.
+   * :ref:`X(439) <X(439)>` = :math:`3` :ref:`X(2) <X(2)>` - :math:`4` X(32970)
 
 .. collapse:: Incident Central Lines
    :badge: 70 lines

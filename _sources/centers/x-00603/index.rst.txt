@@ -16,24 +16,20 @@ X(603) = X(58)-CEVA CONJUGATE OF X(56)
    :alt: X(603) = X(58)-CEVA CONJUGATE OF X(56)
    :align: center
 
-   **X(603) = X(58)-CEVA CONJUGATE OF X(56)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(603) = X(58)-CEVA CONJUGATE OF X(56)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\cos^{2}A - \cos A : :`
-   | **Barycentrics:** :math:`(\sin A)(\cos^{2}A - \cos A) : (\cos B)(\cos^{2}B - \cos B) : (\cos C)(\cos^{2}C - \cos C)`
+   | **Trilinears:** :math:`\cos^{2} A - \cos A : :`
+   | **Barycentrics:** :math:`(\sin A)(\cos^{2} A - \cos A) : (\cos B)(\cos^{2} B - \cos B) : (\cos C)(\cos^{2} C - \cos C)`
    | **Search Value (6, 9, 13):** :math:`-0.504249278091`
 
 .. collapse:: Alternate Coordinates
    :badge: 3 forms
 
    * **Trilinears:** :math:`(\cos A) (1 - \cos A) : :`
-   * **Trilinears:** :math:`(\cos A) \sin^2(A/2) : :`
-   * **Trilinears:** :math:`a^2 (b^2 + c^2 - a^2)/(b + c - a) : :`
-
-.. container:: note-item
-
-   :ref:`X(603) <X(603)>` lies.
+   * **Trilinears:** :math:`(\cos A) \sin^{2}(A/2) : :`
+   * **Trilinears:** :math:`a^{2} (b^{2} + c^{2} - a^{2})/(b + c - a) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 15 lines

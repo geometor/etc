@@ -17,7 +17,7 @@ X(360) = HOFSTADTER ZERO POINT
    :alt: X(360) = HOFSTADTER ZERO POINT
    :align: center
 
-   **X(360) = HOFSTADTER ZERO POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(360) = HOFSTADTER ZERO POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,11 +28,7 @@ X(360) = HOFSTADTER ZERO POINT
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(360) <X(360)>` = A\*[A] + B\*[B] + C\*[C], where A, B, C are the angles and [A], [B], [C] are the vertices
-
-.. container:: note-item
-
-   :ref:`X(360) <X(360)>` lies.
+   * :ref:`X(360) <X(360)>` = :math:`A` :g:`A <A>` + :math:`B` :g:`B <B>` + :math:`C` :g:`C <C>`, where :g:`A <A>`, :g:`B <B>`, :g:`C <C>` are the angles and :g:`A <A>`, :g:`B <B>`, :g:`C <C>` are the vertices
 
 .. collapse:: Incident Central Lines
    :badge: 1 line
@@ -74,7 +70,7 @@ Notes
 
 .. container:: note-item
 
-   This point is obtained as a limit of perspectors. Let r denote a real number, but not 0 or 1. Using vertex B as a pivot, swing line BC toward vertex A through angle rB and swing line BC about C through angle rC. Let A(r) be the point in which the two swung lines meet. Obtain B(r) and C(r) cyclically. Triangle A(r)B(r)C(r) is the *r-Hofstadter triangle*; its perspector with ABC, called the Hofstadter r point, is the point given by trilinears
+   This point is obtained as a limit of perspectors. Let r denote a real number, but not 0 or 1. Using vertex B as a pivot, swing line :g:`BC <[ B C ]>` toward vertex A through angle rB and swing line :g:`BC <[ B C ]>` about C through angle rC. Let A(r) be the point in which the two swung lines meet. Obtain B(r) and C(r) cyclically. Triangle A(r)B(r)C(r) is the *r-Hofstadter triangle*; its perspector with :g:`ABC << A B C >>`, called the Hofstadter r point, is the point given by trilinears
 
       (sin rA)/sin(A - rA) : (sin rB)/sin(B - rB) : (sin rC)/sin(C - rC).
 

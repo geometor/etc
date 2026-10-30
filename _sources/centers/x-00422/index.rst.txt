@@ -10,28 +10,24 @@ X(422) = X(4)-HIRST INVERSE OF X(28)
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(422) <X(422)>` has Shinagawa coefficients (4(E+F)\ :sup:`2`\ FS\ :sup:`2`-3$abS\ :sub:`C`\ $F+7$ab$(E+F)F, -2(E+F)[(E+F)\ :sup:`2`-S\ :sup:`2`]+$abS\ :sub:`C`\ $(E+F) -$ab$[3(E+F)\ :sup:`2`-2S\ :sup:`2`]).
+   As a point on the Euler line, :ref:`X(422) <X(422)>` has Shinagawa coefficients :math:`(4(E+F)^{2}FS^{2}-3\$abS_{C}\$F+7\$ab\$(E+F)F, -2(E+F)[(E+F)^{2}-S^{2}]+\$abS_{C}\$(E+F) -\$ab\$[3(E+F)^{2}-2S^{2}])`.
 
 .. figure:: x-00422.svg
    :alt: X(422) = X(4)-HIRST INVERSE OF X(28)
    :align: center
 
-   **X(422) = X(4)-HIRST INVERSE OF X(28)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(422) = X(4)-HIRST INVERSE OF X(28)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(u^{2} - vw)\sec A : (v^{2} - wu)\sec B : (v^{2} - uv)\sec C`, where, u : v : w = :ref:`X(58) <X(58)>`; e.g., u = u(a,b,c) = a/(b + c)
+   | **Trilinears:** :math:`(u^{2} - vw)\sec A : (v^{2} - wu)\sec B : (v^{2} - uv)\sec C`, where :math:`u : v : w` = :ref:`X(58) <X(58)>`; e.g., :math:`u = u(a,b,c) = a/(b + c)`
    | **Barycentrics:** :math:`(u^{2} - vw)\tan A : (v^{2} - wu)\tan B : (w^{2} - uv)\tan C`
    | **Search Value (6, 9, 13):** :math:`0.909221981878`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`(a + b)*(a + c)*(a^2 + b^2 - c^2)*(a^2 - b^2 + c^2)*(a^3 + a*b*c - b^2*c - b*c^2) : :`
-
-.. container:: note-item
-
-   :ref:`X(422) <X(422)>` lies.
+   * **Barycentrics:** :math:`(a + b) \cdot (a + c) \cdot (a^{2} + b^{2} - c^{2}) \cdot (a^{2} - b^{2} + c^{2}) \cdot (a^{3} + a b c - b^{2} c - b c^{2}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 12 lines

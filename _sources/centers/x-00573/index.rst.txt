@@ -16,28 +16,24 @@ X(573) = ORTHOHARMONIC OF X(58)
    :alt: X(573) = ORTHOHARMONIC OF X(58)
    :align: center
 
-   **X(573) = ORTHOHARMONIC OF X(58)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(573) = ORTHOHARMONIC OF X(58)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\cos(A + U) : :`, where cot U = cot(A/2) cot(B/2) cot(C/2) (Joe Goggins, 11/26/08)
+   | **Trilinears:** :math:`\cos(A + U) : :`, where cot :math:`U = \cot(A/2) \cot(B/2) \cot(C/2)` (Joe Goggins, 11/26/08)
    | **Search Value (6, 9, 13):** :math:`10.107230280042`
 
 .. collapse:: Alternate Coordinates
    :badge: 3 forms
 
    * **Trilinears:** :math:`(c - a)\cos B \sin(A - B) - (a - b)\cos C \sin(C - A) : :`
-   * **Trilinears:** :math:`a[a^2(b + c) - abc - b^3 - c^3] : :`
+   * **Trilinears:** :math:`a[a^{2}(b + c) - abc - b^{3} - c^{3}] : :`
    * **Trilinears:** s cos A - r sin A, s = semiperimeter, r = inradius
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(573) <X(573)>` = s\*\ :ref:`X(3) <X(3)>` - r\*cot(ω)\*\ :ref:`X(6) <X(6)>`
-
-.. container:: note-item
-
-   :ref:`X(573) <X(573)>` lies.
+   * :ref:`X(573) <X(573)>` = :math:`s` :ref:`X(3) <X(3)>` - :math:`r \cot(\omega )` :ref:`X(6) <X(6)>`
 
 .. collapse:: Incident Central Lines
    :badge: 16 lines
@@ -66,7 +62,7 @@ Notes
 
 .. container:: note-item
 
-   Let A' be the inverse-in-excircles-radical-circle of the midpoint of BC, and define B' and C' cyclically. Triangle A'B'C' is inscribed in the Apollonius circle and homothetic to the 1st circumperp triangle at :ref:`X(573) <X(573)>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
+   Let :g:`A' <A'>` be the inverse-in-excircles-radical-circle of the midpoint of :g:`BC <[ B C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Triangle :g:`A'B'C' << A' B' C' >>` is inscribed in the Apollonius circle and homothetic to the 1st circumperp triangle at :ref:`X(573) <X(573)>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
 
 .. toctree::
    :hidden:

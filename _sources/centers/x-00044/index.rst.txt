@@ -16,7 +16,7 @@ X(44) = X(6)-LINE CONJUGATE OF X(1)
    :alt: X(44) = X(6)-LINE CONJUGATE OF X(1)
    :align: center
 
-   **X(44) = X(6)-LINE CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(44) = X(6)-LINE CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,8 +27,8 @@ X(44) = X(6)-LINE CONJUGATE OF X(1)
 .. collapse:: Linear Combinations
    :badge: 2 combinations
 
-   * :ref:`X(44) <X(44)>` = (3r\ :sup:`2` + 6rR + s\ :sup:`2`)\*\ :ref:`X(1) <X(1)>` - 18rR\*\ :ref:`X(2) <X(2)>` -6r\ :sup:`2`\ \*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-   * :ref:`X(44) <X(44)>` = :ref:`X(1) <X(1)>` - 3 :ref:`X(238) <X(238)>`, 2 :ref:`X(1) <X(1)>` - 3 X(1279), :ref:`X(1) <X(1)>` + 3 X(1757), 4 :ref:`X(1) <X(1)>` - 3 X(4864), 3 :ref:`X(2) <X(2)>` - 4 X(6687), 3 :ref:`X(2) <X(2)>` + X(20072), 6 :ref:`X(2) <X(2)>` - 5 X(31243), 3 :ref:`X(190) <X(190)>` + X(17160), 3 :ref:`X(238) <X(238)>` - 2 X(3246), 4 :ref:`X(238) <X(238)>` - X(4864), 3 :ref:`X(239) <X(239)>` - X(17160), :ref:`X(320) <X(320)>` - 4 X(6687) (and many more)
+   * :ref:`X(44) <X(44)>` = :math:`(3r^{2} + 6rR + s^{2})` :ref:`X(1) <X(1)>` - :math:`18rR` :ref:`X(2) <X(2)>` - :math:`6r^{2}` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
+   * :ref:`X(44) <X(44)>` = :ref:`X(1) <X(1)>` - :math:`3` :ref:`X(238) <X(238)>`, :math:`2` :ref:`X(1) <X(1)>` - :math:`3` X(1279), :ref:`X(1) <X(1)>` + :math:`3` X(1757), :math:`4` :ref:`X(1) <X(1)>` - :math:`3` X(4864), :math:`3` :ref:`X(2) <X(2)>` - :math:`4` X(6687), :math:`3` :ref:`X(2) <X(2)>` + X(20072), :math:`6` :ref:`X(2) <X(2)>` - :math:`5` X(31243), :math:`3` :ref:`X(190) <X(190)>` + X(17160), :math:`3` :ref:`X(238) <X(238)>` - :math:`2` X(3246), :math:`4` :ref:`X(238) <X(238)>` - X(4864), :math:`3` :ref:`X(239) <X(239)>` - X(17160), :ref:`X(320) <X(320)>` - :math:`4` X(6687)(and many more)
 
 .. container:: note-item
 

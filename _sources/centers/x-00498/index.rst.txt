@@ -16,7 +16,7 @@ X(498) = YFF CONCURRENT CONGRUENT CIRCLES POINT
    :alt: X(498) = YFF CONCURRENT CONGRUENT CIRCLES POINT
    :align: center
 
-   **X(498) = YFF CONCURRENT CONGRUENT CIRCLES POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(498) = YFF CONCURRENT CONGRUENT CIRCLES POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,16 +27,12 @@ X(498) = YFF CONCURRENT CONGRUENT CIRCLES POINT
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`bc + 2R^2 : :`
+   * **Trilinears:** :math:`bc + 2R^{2} : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(498) <X(498)>` = R\*\ :ref:`X(1) <X(1)>` + r\*\ :ref:`X(3) <X(3)>` + 2r\*\ :ref:`X(5) <X(5)>`
-
-.. container:: note-item
-
-   :ref:`X(498) <X(498)>` lies.
+   * :ref:`X(498) <X(498)>` = :math:`R` :ref:`X(1) <X(1)>` + :math:`r` :ref:`X(3) <X(3)>` + :math:`2r` :ref:`X(5) <X(5)>`
 
 .. collapse:: Incident Central Lines
    :badge: 14 lines
@@ -47,7 +43,7 @@ X(498) = YFF CONCURRENT CONGRUENT CIRCLES POINT
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(498) <X(498)>` = homothetic center of anti-Euler triangle and (cross-triangle of ABC and 2nd isogonal triangle of :ref:`X(1) <X(1)>`)
+   * :ref:`X(498) <X(498)>` = homothetic center of anti-Euler triangle and (cross-triangle of :g:`ABC << A B C >>` and 2nd isogonal triangle of :ref:`X(1) <X(1)>`)
 
 Notes
 -----

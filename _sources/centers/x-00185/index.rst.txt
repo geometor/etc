@@ -10,13 +10,13 @@ X(185) = NAGEL POINT OF THE ORTHIC TRIANGLE
 
 .. enunciation::
 
-   Alexei Myakishev has noted that :ref:`X(185) <X(185)>` is the Nagel point of the :term:`orthic triangle <orthic-triangle>` only is ABC is an acute triangle.
+   Alexei Myakishev has noted that :ref:`X(185) <X(185)>` is the Nagel point of the :term:`orthic triangle <orthic-triangle>` only is :g:`ABC << A B C >>` is an acute triangle.
 
 .. figure:: x-00185.svg
    :alt: X(185) = NAGEL POINT OF THE ORTHIC TRIANGLE
    :align: center
 
-   **X(185) = NAGEL POINT OF THE ORTHIC TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(185) = NAGEL POINT OF THE ORTHIC TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,12 +27,8 @@ X(185) = NAGEL POINT OF THE ORTHIC TRIANGLE
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
-   * **Trilinears:** :math:`(\cos A)(\cos^2 B + \cos^2 C) : :`
-   * **Trilinears:** :math:`a(b^2 + c^2 - a^2)[2a^2(b^2 - c^2)^2 - a^4(b^2 + c^2) - (b^2 - c^2)^2(b^2 + c^2)] : :`
-
-.. container:: note-item
-
-   :ref:`X(185) <X(185)>` lies.
+   * **Trilinears:** :math:`(\cos A)(\cos^{2} B + \cos^{2} C) : :`
+   * **Trilinears:** :math:`a(b^{2} + c^{2} - a^{2})[2a^{2}(b^{2} - c^{2})^{2} - a^{4}(b^{2} + c^{2}) - (b^{2} - c^{2})^{2}(b^{2} + c^{2})] : :`
 
 .. collapse:: Incident Central Lines
    :badge: 16 lines
@@ -61,8 +57,8 @@ X(185) = NAGEL POINT OF THE ORTHIC TRIANGLE
    * :ref:`X(185) <X(185)>` = :term:`eigencenter <eigencenter>` of :term:`cevian triangle <cevian-triangle>` of :ref:`X(648) <X(648)>`
    * :ref:`X(185) <X(185)>` = eigencenter of :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(647) <X(647)>`
    * :ref:`X(185) <X(185)>` = trilinear product of vertices of 2nd Hyacinth triangle
-   * :ref:`X(185) <X(185)>` = :ref:`X(10) <X(10)>`-of-circumorthic-triangle if ABC is acute
-   * :ref:`X(185) <X(185)>` = excentral-to-ABC :term:`functional image <functional-image>` of :ref:`X(8) <X(8)>`
+   * :ref:`X(185) <X(185)>` = :ref:`X(10) <X(10)>`-of-circumorthic-triangle if :g:`ABC << A B C >>` is acute
+   * :ref:`X(185) <X(185)>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X(8) <X(8)>`
    * :ref:`X(185) <X(185)>` = polar-circle-inverse of X(34170)
 
 Notes
@@ -70,19 +66,19 @@ Notes
 
 .. container:: note-item
 
-   Let Ha be the foot of the A-altitude. Let Ba and Ca be the feet of perpendiculars from Ha to CA and AB, respectively. Let Ga be the centroid of HaBaCa. Define Gb and Gc cyclically. The lines HaGa, HbGb, HcGc concur in :ref:`X(185) <X(185)>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
+   Let :g:`H_{a} <H_a>` be the foot of the :g:`A <A>`-altitude. Let :g:`B_{a} <B_a>` and :g:`C_{a} <C_a>` be the feet of perpendiculars from :g:`H_{a} <H_a>` to :g:`CA <[ C A ]>` and :g:`AB <[ A B ]>`, respectively. Let :g:`G_{a} <G_a>` be the centroid of :g:`H_{a}B_{a}C_{a} << H_a B_a C_a >>`. Define :g:`G_{b} <G_b>` and :g:`G_{c} <G_c>` cyclically. The lines :g:`H_{a}G_{a} <[ H_a G_a ]>`, :g:`H_{b}G_{b} <[ H_b G_b ]>`, :g:`H_{c}G_{c} <[ H_c G_c ]>` concur in :ref:`X(185) <X(185)>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
 
 .. container:: note-item
 
-   Let Ha, Hb, Hc be the orthocenters of the A-, B-, and C-altimedial triangles. :ref:`X(185) <X(185)>` is the orthocenter of HaHbHc. (Randy Hutson, March 25, 2016)
+   Let :g:`H_{a} <H_a>`, :g:`H_{b} <H_b>`, :g:`H_{c} <H_c>` be the orthocenters of the A-, B-, and C-altimedial triangles. :ref:`X(185) <X(185)>` is the orthocenter of :g:`H_{a}H_{b}H_{c} << H_a H_b H_c >>`. (Randy Hutson, March 25, 2016)
 
 .. container:: note-item
 
-   Let P be a point on the circumcircle. Let Pa be the orthogonal projection of P on the A-altitude, and define Pb, Pc cyclically. The locus of the orthocenter of PaPbPc as P varies is an ellipse centered at :ref:`X(185) <X(185)>`. See also X(9730). (Randy Hutson, March 25, 2016)
+   Let :g:`P <P>` be a point on the circumcircle. Let :g:`P_{a} <P_a>` be the orthogonal projection of :g:`P <P>` on the :g:`A <A>`-altitude, and define :g:`P_{b} <P_b>`, :g:`P_{c} <P_c>` cyclically. The locus of the orthocenter of :g:`P_{a}P_{b}P_{c} << P_a P_b P_c >>` as P varies is an ellipse centered at :ref:`X(185) <X(185)>`. See also X(9730). (Randy Hutson, March 25, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the midheight triangle. Let A\ :sub:`B`, A\ :sub:`C` be the orthogonal projections of A' on CA, AB, resp. Define B\ :sub:`C`, B\ :sub:`A`, C\ :sub:`A`, C\ :sub:`B` cyclically. Let A″ = C\ :sub:`A`\ A\ :sub:`C`\ ∩A\ :sub:`B`\ B\ :sub:`A`, and define B″ and C″ cyclically. Triangle A″B″C″ is homothetic to ABC at :ref:`X(6) <X(6)>` and perspective to the orthic triangle at :ref:`X(185) <X(185)>`. (Randy Hutson, March 29, 2020)
+   Let :g:`A'B'C' << A' B' C' >>` be the midheight triangle. Let :g:`A_{B} <A_B>`, :g:`A_{C} <A_C>` be the orthogonal projections of :g:`A' <A'>` on :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, resp. Define :g:`B_{C} <B_C>`, :g:`B_{A} <B_A>`, :g:`C_{A} <C_A>`, :g:`C_{B} <C_B>` cyclically. Let :g:`A″ <A″>` = :g:`C_{A}A_{C} <[ C_A A_C ]>`\ ∩\ :g:`A_{B}B_{A} <[ A_B B_A ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to :g:`ABC << A B C >>` at :ref:`X(6) <X(6)>` and perspective to the orthic triangle at :ref:`X(185) <X(185)>`. (Randy Hutson, March 29, 2020)
 
 .. toctree::
    :hidden:

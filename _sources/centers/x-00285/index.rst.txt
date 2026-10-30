@@ -10,22 +10,19 @@ X(285) = X(58)-CROSS CONJUGATE OF X(21)
 
 .. enunciation::
 
-   Barycentrics (sin A)f(A,B,C) : (sin B)f(B,C,A) : (sin C)f(C,A,B)
+   :ref:`X(285) <X(285)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(227) <X(227)>`
 
 .. figure:: x-00285.svg
    :alt: X(285) = X(58)-CROSS CONJUGATE OF X(21)
    :align: center
 
-   **X(285) = X(58)-CROSS CONJUGATE OF X(21)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(285) = X(58)-CROSS CONJUGATE OF X(21)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where, f(A,B,C) = 1/[(cos B + cos C)(-1 - cos A + cos B + cos C)]
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = 1/[(\cos B + \cos C)(-1 - \cos A + \cos B + \cos C)]`
+   | **Barycentrics:** :math:`(\sin A)f(A,B,C) : (\sin B)f(B,C,A) : (\sin C)f(C,A,B)`
    | **Search Value (6, 9, 13):** :math:`4.527607627783`
-
-.. container:: note-item
-
-   :ref:`X(285) <X(285)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines
@@ -36,7 +33,7 @@ X(285) = X(58)-CROSS CONJUGATE OF X(21)
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X(285) <X(285)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(227) <X(227)>`
+   * :ref:`X(285) <X(285)>` = isogonal conjugate of :ref:`X(227) <X(227)>`
    * :ref:`X(285) <X(285)>` = :term:`complement <complement>` of :term:`anticomplementary conjugate <anticomplementary-conjugate>` of X(20220)
    * :ref:`X(285) <X(285)>` = :ref:`X(58) <X(58)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(21) <X(21)>`
 

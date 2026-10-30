@@ -16,29 +16,29 @@ X(102) = Λ(INCENTER, ORTHOCENTER)
    :alt: X(102) = Λ(INCENTER, ORTHOCENTER)
    :align: center
 
-   **X(102) = Λ(INCENTER, ORTHOCENTER)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(102) = Λ(INCENTER, ORTHOCENTER)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`1/[\sin B (\sec A - \sec B) + \sin C (\sec A - \sec C)] : :`
-   | **Barycentrics:** :math:`a^2*(a^4 - 2*a^2*b^2 + b^4 - a^3*c + a^2*b*c + a*b^2*c - b^3*c + a^2*c^2 - 2*a*b*c^2 + b^2*c^2 + a*c^3 + b*c^3 - 2*c^4)*(a^4 - a^3*b + a^2*b^2 + a*b^3 - 2*b^4 + a^2*b*c - 2*a*b^2*c + b^3*c - 2*a^2*c^2 + a*b*c^2 + b^2*c^2 - b*c^3 + c^4) : :`
+   | **Barycentrics:** :math:`a^{2} (a^{4} - 2 a^{2} b^{2} + b^{4} - a^{3} c + a^{2} b c + a b^{2} c - b^{3} c + a^{2} c^{2} - 2 a b c^{2} + b^{2} c^{2} + a c^{3} + b c^{3} - 2 c^{4}) \cdot (a^{4} - a^{3} b + a^{2} b^{2} + a b^{3} - 2 b^{4} + a^{2} b c - 2 a b^{2} c + b^{3} c - 2 a^{2} c^{2} + a b c^{2} + b^{2} c^{2} - b c^{3} + c^{4}) : :`
    | **Tripolars:** :math:`|\sin B (\sec A - \sec B) + \sin C (\sec A - \sec C)| : :`
    | **Search Value (6, 9, 13):** :math:`13.403799631213`
 
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
-   * **Trilinears:** :math:`a/[2a^4 - (b + c) a^3 - (b - c)^2 a^2 + (b - c)^2 (b + c) a - (b^2 - c^2)^2] : :`
+   * **Trilinears:** :math:`a/[2a^{4} - (b + c) a^{3} - (b - c)^{2} a^{2} + (b - c)^{2} (b + c) a - (b^{2} - c^{2})^{2}] : :`
    * **Barycentrics:** :math:`(\sin A)/[\sin B (\sec A - \sec B) + \sin C (\sec A - \sec C)] : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(102) <X(102)>` = X(10696) - 4 X(11713), 3 :ref:`X(2) <X(2)>` - 4 X(6711), 4 :ref:`X(117) <X(117)>` - 3 X(10709), :ref:`X(151) <X(151)>` - 4 X(6711), 2 :ref:`X(151) <X(151)>` - 3 X(10709), 8 X(6711) - 3 X(10709), 3 :ref:`X(3) <X(3)>` - X(38579), 3 :ref:`X(3) <X(3)>` - 2 X(38607), 2 :ref:`X(3) <X(3)>` + X(38667), 4 :ref:`X(3) <X(3)>` - X(38674), 2 :ref:`X(3) <X(3)>` - 3 X(38691), 4 :ref:`X(3) <X(3)>` - 3 X(38697), :ref:`X(109) <X(109)>` + 2 X(38573), 3 :ref:`X(109) <X(109)>` - 2 X(38579), :ref:`X(109) <X(109)>` - 4 X(38600), 3 :ref:`X(109) <X(109)>` - 4 X(38607), :ref:`X(109) <X(109)>` - 3 X(38691), 2 :ref:`X(109) <X(109)>` - 3 X(38697), 3 X(38573) + X(38579), X(38573) + 2 X(38600), 3 X(38573) + 2 X(38607), 4 X(38573) + X(38674), 2 X(38573) + 3 X(38691), 4 X(38573) + 3 X(38697), X(38579) - 6 X(38600), 2 X(38579) + 3 X(38667), 4 X(38579) - 3 X(38674), 2 X(38579) - 9 X(38691), 4 X(38579) - 9 X(38697), 3 X(38600) - X(38607), 4 X(38600) + X(38667), 8 X(38600) - X(38674), 4 X(38600) - 3 X(38691), 8 X(38600) - 3 X(38697), 4 X(38607) + 3 X(38667), 8 X(38607) - 3 X(38674), 4 X(38607) - 9 X(38691), 8 X(38607) - 9 X(38697), 2 X(38667) + X(38674), X(38667) + 3 X(38691), 2 X(38667) + 3 X(38697), X(38674) - 6 X(38691), X(38674) - 3 X(38697), 4 :ref:`X(124) <X(124)>` - X(10726), 2 :ref:`X(5) <X(5)>` - 3 X(38776), X(10740) - 3 X(38776), 3 X(10716) - X(10732), 3 X(10716) - 2 X(10747), 3 X(3576) - 2 X(11700), 4 :ref:`X(140) <X(140)>` - 5 X(38786), 3 :ref:`X(165) <X(165)>` - 2 X(14690), 3 :ref:`X(376) <X(376)>` - 2 X(38785), :ref:`X(382) <X(382)>` - 3 X(38779), 4 :ref:`X(548) <X(548)>` - 3 X(38778), 5 :ref:`X(631) <X(631)>` - 4 X(6718), 5 :ref:`X(631) <X(631)>` - 6 X(38784), 2 X(6718) - 3 X(38784), 7 X(3090) - 10 X(38787), X(3146) - 4 X(38781), 5 X(3522) - 4 X(38783), 5 X(3616) - 4 X(11727), 7 X(3832) - 12 X(38782), 3 X(5603) - 4 X(11734)
+   * :ref:`X(102) <X(102)>` = X(10696) - :math:`4` X(11713), :math:`3` :ref:`X(2) <X(2)>` - :math:`4` X(6711), :math:`4` :ref:`X(117) <X(117)>` - :math:`3` X(10709), :ref:`X(151) <X(151)>` - :math:`4` X(6711), :math:`2` :ref:`X(151) <X(151)>` - :math:`3` X(10709), :math:`8` X(6711) - :math:`3` X(10709), :math:`3` :ref:`X(3) <X(3)>` - X(38579), :math:`3` :ref:`X(3) <X(3)>` - :math:`2` X(38607), :math:`2` :ref:`X(3) <X(3)>` + X(38667), :math:`4` :ref:`X(3) <X(3)>` - X(38674), :math:`2` :ref:`X(3) <X(3)>` - :math:`3` X(38691), :math:`4` :ref:`X(3) <X(3)>` - :math:`3` X(38697), :ref:`X(109) <X(109)>` + :math:`2` X(38573), :math:`3` :ref:`X(109) <X(109)>` - :math:`2` X(38579), :ref:`X(109) <X(109)>` - :math:`4` X(38600), :math:`3` :ref:`X(109) <X(109)>` - :math:`4` X(38607), :ref:`X(109) <X(109)>` - :math:`3` X(38691), :math:`2` :ref:`X(109) <X(109)>` - :math:`3` X(38697), :math:`3` X(38573) + X(38579), X(38573) + :math:`2` X(38600), :math:`3` X(38573) + :math:`2` X(38607), :math:`4` X(38573) + X(38674), :math:`2` X(38573) + :math:`3` X(38691), :math:`4` X(38573) + :math:`3` X(38697), X(38579) - :math:`6` X(38600), :math:`2` X(38579) + :math:`3` X(38667), :math:`4` X(38579) - :math:`3` X(38674), :math:`2` X(38579) - :math:`9` X(38691), :math:`4` X(38579) - :math:`9` X(38697), :math:`3` X(38600) - X(38607), :math:`4` X(38600) + X(38667), :math:`8` X(38600) - X(38674), :math:`4` X(38600) - :math:`3` X(38691), :math:`8` X(38600) - :math:`3` X(38697), :math:`4` X(38607) + :math:`3` X(38667), :math:`8` X(38607) - :math:`3` X(38674), :math:`4` X(38607) - :math:`9` X(38691), :math:`8` X(38607) - :math:`9` X(38697), :math:`2` X(38667) + X(38674), X(38667) + :math:`3` X(38691), :math:`2` X(38667) + :math:`3` X(38697), X(38674) - :math:`6` X(38691), X(38674) - :math:`3` X(38697), :math:`4` :ref:`X(124) <X(124)>` - X(10726), :math:`2` :ref:`X(5) <X(5)>` - :math:`3` X(38776), X(10740) - :math:`3` X(38776), :math:`3` X(10716) - X(10732), :math:`3` X(10716) - :math:`2` X(10747), :math:`3` X(3576) - :math:`2` X(11700), :math:`4` :ref:`X(140) <X(140)>` - :math:`5` X(38786), :math:`3` :ref:`X(165) <X(165)>` - :math:`2` X(14690), :math:`3` :ref:`X(376) <X(376)>` - :math:`2` X(38785), :ref:`X(382) <X(382)>` - :math:`3` X(38779), :math:`4` :ref:`X(548) <X(548)>` - :math:`3` X(38778), :math:`5` :ref:`X(631) <X(631)>` - :math:`4` X(6718), :math:`5` :ref:`X(631) <X(631)>` - :math:`6` X(38784), :math:`2` X(6718) - :math:`3` X(38784), :math:`7` X(3090) - :math:`10` X(38787), X(3146) - :math:`4` X(38781), :math:`5` X(3522) - :math:`4` X(38783), :math:`5` X(3616) - :math:`4` X(11727), :math:`7` X(3832) - :math:`12` X(38782), :math:`3` X(5603) - :math:`4` X(11734)
 
 .. container:: note-item
 
-   :ref:`X(102) <X(102)>` lies on the circumcircle, the conic {A,B,C,\ :ref:`X(1) <X(1)>`, :ref:`X(3) <X(3)>`}}, the cubics K269, K685.
+   :ref:`X(102) <X(102)>` lies on the circumcircle, the conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(1) <X(1)>`, :ref:`X(3) <X(3)>`}}, the cubics K269, K685.
 
 .. collapse:: Incident Central Lines
    :badge: 144 lines
@@ -77,7 +77,7 @@ X(102) = Λ(INCENTER, ORTHOCENTER)
    * :ref:`X(102) <X(102)>` = Ψ(:ref:`X(653) <X(653)>`, :ref:`X(2) <X(2)>`)
    * :ref:`X(102) <X(102)>` = trilinear product of circumcircle intercepts of line :ref:`X(1) <X(1)>`\ \ :ref:`X(521) <X(521)>`
    * :ref:`X(102) <X(102)>` = trilinear pole wrt 2nd circumperp triangle of line :ref:`X(971) <X(971)>`\ X(1001)
-   * :ref:`X(102) <X(102)>` = the point of intersection, other than A, B, and C, of the circumcircle and hyperbola {A,B,C,\ :ref:`X(4) <X(4)>`,\ :ref:`X(58) <X(58)>`}}
+   * :ref:`X(102) <X(102)>` = the point of intersection, other than :g:`A <A>`, :g:`B <B>`, and :g:`C <C>`, of the circumcircle and hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(4) <X(4)>`,\ :ref:`X(58) <X(58)>`}}
    * :ref:`X(102) <X(102)>` = reflection of X(2695) in the Euler line
    * :ref:`X(102) <X(102)>` = reflection of X(2708) in the Brocard axis
    * :ref:`X(102) <X(102)>` = reflection of X(2716) in line :ref:`X(1) <X(1)>`\ \ :ref:`X(3) <X(3)>`

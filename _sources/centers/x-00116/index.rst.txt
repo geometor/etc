@@ -10,13 +10,13 @@ X(116) = MIDPOINT OF X(4) AND X(103)
 
 .. enunciation::
 
-   Let A'B'C' be the :term:`orthic triangle <orthic-triangle>`. Let La be the Soddy line of triangle AB'C', and define Lb and Lc cyclically. Let A″ = Lb∩Lc, and define B″ and C″ cyclically. The lines A'A″, B'B″, C'C″ concur in :ref:`X(116) <X(116)>`, which is :ref:`X(3) <X(3)>`-of-A″B″C″. (:person:`Randy Hutson <randy-hutson>`, July 31 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`L_{a} <L_a>` be the Soddy line of triangle :g:`AB'C' << A B' C' >>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(116) <X(116)>`, which is :ref:`X(3) <X(3)>`-of-:g:`A″B″C″ << A″ B″ C″ >>`. (:person:`Randy Hutson <randy-hutson>`, July 31 2018)
 
 .. figure:: x-00116.svg
    :alt: X(116) = MIDPOINT OF X(4) AND X(103)
    :align: center
 
-   **X(116) = MIDPOINT OF X(4) AND X(103)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(116) = MIDPOINT OF X(4) AND X(103)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -46,7 +46,7 @@ X(116) = MIDPOINT OF X(4) AND X(103)
    * :ref:`X(116) <X(116)>` = polar conjugate of isogonal conjugate of X(22084)
    * :ref:`X(116) <X(116)>` = inverse-in-excircles-radical-circle of X(3034)
    * :ref:`X(116) <X(116)>` = inverse-in-orthoptic-circle-of-Steiner-inellipse of :ref:`X(675) <X(675)>`
-   * :ref:`X(116) <X(116)>` = anticenter of cyclic quadrilateral ABC\ :ref:`X(103) <X(103)>`
+   * :ref:`X(116) <X(116)>` = anticenter of cyclic quadrilateral :g:`ABC << A B C >>`\ :ref:`X(103) <X(103)>`
    * :ref:`X(116) <X(116)>` = Λ(Gergonne line), wrt orthic triangle
    * :ref:`X(116) <X(116)>` = :ref:`X(2) <X(2)>`-Ceva conjugate of X(6586)
    * :ref:`X(116) <X(116)>` = :ref:`X(101) <X(101)>`-of-:term:`medial triangle <medial-triangle>`.

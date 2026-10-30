@@ -16,16 +16,12 @@ X(981) = ISOGONAL CONJUGATE OF X(980)
    :alt: X(981) = ISOGONAL CONJUGATE OF X(980)
    :align: center
 
-   **X(981) = ISOGONAL CONJUGATE OF X(980)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(981) = ISOGONAL CONJUGATE OF X(980)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`1/[a^{2}(b^{2} + bc + c^{2}) + (b^{2} + c^{2})(bc + ca + ab)] : :`
    | **Search Value (6, 9, 13):** :math:`1.475039588170`
-
-.. container:: note-item
-
-   :ref:`X(981) <X(981)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines

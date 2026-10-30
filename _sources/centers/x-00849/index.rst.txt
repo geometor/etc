@@ -10,23 +10,19 @@ X(849) = 4th HATZIPOLAKIS-YIU POINT
 
 .. enunciation::
 
-   Let D denote the circumcircle of triangle ABC. Let D\ :sub:`A` be the circle tangent to sideline BC and tangent to D at A. Let B\ :sub:`A` = AC∩D\ :sub:`A` and C\ :sub:`A` = AB∩D\ :sub:`A`, and define C\ :sub:`B`, C\ :sub:`B` and A\ :sub:`C`, A\ :sub:`B` cyclically. Define A' = C\ :sub:`B`\ A\ :sub:`B`\ ∩A\ :sub:`C`\ B\ :sub:`C`, and define B' and C' cyclically. Then triangle A'B'C' is homothetic to ABC, and :ref:`X(849) <X(849)>` is the center of homothety. See A. Hatzipolakis and P. Yiu, :cite:`Hyacinthos #2056 <hyacinthos>`-2070, December, 2000.
+   Let :g:`D <D>` denote the circumcircle of triangle :g:`ABC << A B C >>`. Let :g:`D_{A} <D_A>` be the circle tangent to sideline :g:`BC <[ B C ]>` and tangent to :g:`D <D>` at A. Let :g:`B_{A} <B_A>` = :g:`AC <[ A C ]>`\ ∩\ :g:`D_{A} <D_A>` and :g:`C_{A} <C_A>` = :g:`AB <[ A B ]>`\ ∩\ :g:`D_{A} <D_A>`, and define :g:`C_{B} <C_B>`, :g:`C_{B} <C_B>` and :g:`A_{C} <A_C>`, :g:`A_{B} <A_B>` cyclically. Define :g:`A' <A'>` = :g:`C_{B}A_{B} <[ C_B A_B ]>`\ ∩\ :g:`A_{C}B_{C} <[ A_C B_C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Then triangle :g:`A'B'C' << A' B' C' >>` is homothetic to :g:`ABC << A B C >>`, and :ref:`X(849) <X(849)>` is the center of homothety. See A. Hatzipolakis and P. Yiu, :cite:`Hyacinthos #2056 <hyacinthos>`-2070, December, 2000.
 
 .. figure:: x-00849.svg
    :alt: X(849) = 4th HATZIPOLAKIS-YIU POINT
    :align: center
 
-   **X(849) = 4th HATZIPOLAKIS-YIU POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(849) = 4th HATZIPOLAKIS-YIU POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`[a/(b + c)]^{2} : [b/(c + a)]^{2} : [c/(a + b)]^{2}`
    | **Barycentrics:** :math:`a[a/(b + c)]^{2} : b[b/(c + a)]^{2} : c[c/(a + b)]^{2}`
    | **Search Value (6, 9, 13):** :math:`0.287839619174`
-
-.. container:: note-item
-
-   :ref:`X(849) <X(849)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines

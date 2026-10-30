@@ -14,19 +14,19 @@ X(6) = SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)
 
 .. enunciation::
 
-   :ref:`X(6) <X(6)>` is the point of concurrence of the symmedians (i.e., reflections of medians in corresponding angle bisectors). :ref:`X(6) <X(6)>` is the point which, when given by *actual* trilinear distances x,y,z, minimizes x\ :sup:`2` + y\ :sup:`2` + z\ :sup:`2`.
+   :ref:`X(6) <X(6)>` is the point of concurrence of the symmedians (i.e., reflections of medians in corresponding angle bisectors). :ref:`X(6) <X(6)>` is the point which, when given by *actual* trilinear distances x,y,z, minimizes :math:`x^{2}` + :math:`y^{2}` + :math:`z^{2}`.
 
 .. figure:: x-00006.svg
    :alt: X(6) = SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)
    :align: center
 
-   **X(6) = SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(6) = SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`a : b : c`
    | **Barycentrics:** :math:`a^{2} : b^{2} : c^{2}`
-   | **Tripolars:** :math:`b c \sqrt{2(b^2 + c^2) - a^2} : :`
+   | **Tripolars:** :math:`b c \sqrt{2(b^{2} + c^{2}) - a^{2}} : :`
    | **Search Value (6, 9, 13):** :math:`0.992908495066`
 
 .. collapse:: Alternate Coordinates
@@ -35,18 +35,18 @@ X(6) = SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)
    * **Trilinears:** :math:`\sin A : \sin B : \sin C`
    * **Trilinears:** :math:`(1 + \cos A)(1 - \cos A + \cos B + \cos C) : :`
    * **Trilinears:** :math:`\cot B/2 + \cot C/2 : :`
-   * **Barycentrics:** :math:`SB + SC : :`
-   * **Barycentrics:** :math:`SA - SW : :`
+   * **Barycentrics:** :math:`S_{B} + S_{C} : :`
+   * **Barycentrics:** :math:`S_{A} - S_{\omega} : :`
    * **Barycentrics:** :math:`\cot A - \cot \omega : :`
    * **Barycentrics:** :math:`\cot B + \cot C - \cot A + \cot \omega : :`
 
 .. collapse:: Linear Combinations
    :badge: 5 combinations
 
-   * :ref:`X(6) <X(6)>` = (r\ :sup:`2` + s\ :sup:`2` + 2rR)\*\ :ref:`X(1) <X(1)>` - 6rR\*\ :ref:`X(2) <X(2)>` -2r\ :sup:`2`\ \*\ :ref:`X(3) <X(3)>`
-   * :ref:`X(6) <X(6)>` = (1 + sqrt(3)\*tan(ω))\*\ :ref:`X(13) <X(13)>` + (1 - sqrt(3)\*tan(ω))\*\ :ref:`X(14) <X(14)>`
-   * :ref:`X(6) <X(6)>` = (1 + sqrt(3)\*tan(ω))\*\ :ref:`X(15) <X(15)>` + (1 - sqrt(3)\*tan(ω))\*\ :ref:`X(16) <X(16)>`
-   * :ref:`X(6) <X(6)>` = (3 + 5\*sqrt(3)\*tan(ω))\*\ :ref:`X(17) <X(17)>` + (3 - 5\*sqrt(3)\*tan(ω))\*\ :ref:`X(18) <X(18)>`
+   * :ref:`X(6) <X(6)>` = :math:`(r^{2} + s^{2} + 2rR)` :ref:`X(1) <X(1)>` - :math:`6rR` :ref:`X(2) <X(2)>` - :math:`2r^{2}` :ref:`X(3) <X(3)>`
+   * :ref:`X(6) <X(6)>` = :math:`(1 + \sqrt{3} \tan(\omega ))` :ref:`X(13) <X(13)>` + :math:`(1 - \sqrt{3} \tan(\omega ))` :ref:`X(14) <X(14)>`
+   * :ref:`X(6) <X(6)>` = :math:`(1 + \sqrt{3} \tan(\omega ))` :ref:`X(15) <X(15)>` + :math:`(1 - \sqrt{3} \tan(\omega ))` :ref:`X(16) <X(16)>`
+   * :ref:`X(6) <X(6)>` = :math:`(3 + 5 \sqrt{3} \tan(\omega ))` :ref:`X(17) <X(17)>` + :math:`(3 - 5 \sqrt{3} \tan(\omega ))` :ref:`X(18) <X(18)>`
    * (The above four :term:`combos <combo>` for :ref:`X(6) <X(6)>` found by :person:`Peter Moses <peter-moses>`, November, 2011)
 
 .. container:: note-item
@@ -121,7 +121,7 @@ X(6) = SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)
    * :ref:`X(6) <X(6)>` = eigencenter of inner Grebe triangle
    * :ref:`X(6) <X(6)>` = eigencenter of submedial triangle
    * :ref:`X(6) <X(6)>` = perspector of :term:`unary cofactor triangles <unary-cofactor-triangle>` of every pair of homothetic triangles
-   * :ref:`X(6) <X(6)>` = perspector of ABC and unary cofactor triangle of any triangle homothetic to ABC
+   * :ref:`X(6) <X(6)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of any triangle homothetic to :g:`ABC << A B C >>`
    * :ref:`X(6) <X(6)>` = perspector of Stammler triangle and unary cofactor triangle of circumtangential triangle
    * :ref:`X(6) <X(6)>` = perspector of Stammler triangle and unary cofactor triangle of circumnormal triangle
    * :ref:`X(6) <X(6)>` = perspector of submedial triangle and unary cofactor triangle of :term:`orthic triangle <orthic-triangle>`
@@ -131,17 +131,17 @@ X(6) = SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)
    * :ref:`X(6) <X(6)>` = orthic isogonal conjugate of :ref:`X(25) <X(25)>`
    * :ref:`X(6) <X(6)>` = center of bicevian conic of :ref:`X(371) <X(371)>` and :ref:`X(372) <X(372)>`
    * :ref:`X(6) <X(6)>` = center of bicevian conic of :ref:`X(6) <X(6)>` and :ref:`X(25) <X(25)>`
-   * :ref:`X(6) <X(6)>` = perspector of ABC and mid-triangle of Mandart-incircle and Mandart-excircles triangles
+   * :ref:`X(6) <X(6)>` = perspector of :g:`ABC << A B C >>` and mid-triangle of Mandart-incircle and Mandart-excircles triangles
    * :ref:`X(6) <X(6)>` = :ref:`X(381) <X(381)>`-of-anti-Artzt-triangle
-   * :ref:`X(6) <X(6)>` = homothetic center of :term:`medial triangle <medial-triangle>` and cross-triangle of ABC and inner Grebe triangle
-   * :ref:`X(6) <X(6)>` = homothetic center of medial triangle and cross-triangle of ABC and outer Grebe triangle
+   * :ref:`X(6) <X(6)>` = homothetic center of :term:`medial triangle <medial-triangle>` and cross-triangle of :g:`ABC << A B C >>` and inner Grebe triangle
+   * :ref:`X(6) <X(6)>` = homothetic center of medial triangle and cross-triangle of :g:`ABC << A B C >>` and outer Grebe triangle
    * :ref:`X(6) <X(6)>` = 4th-anti-Brocard-to-anti-Artzt :term:`similarity image <similarity-image>` of :ref:`X(3) <X(3)>`
    * :ref:`X(6) <X(6)>` = perspector of pedal and :term:`anticevian triangles <anticevian-triangle>` of :ref:`X(3) <X(3)>`
-   * :ref:`X(6) <X(6)>` = :ref:`X(9) <X(9)>`-of-orthic-triangle if ABC is acute
-   * :ref:`X(6) <X(6)>` = :ref:`X(7) <X(7)>`-of-tangential-triangle if ABC is acute
+   * :ref:`X(6) <X(6)>` = :ref:`X(9) <X(9)>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
+   * :ref:`X(6) <X(6)>` = :ref:`X(7) <X(7)>`-of-tangential-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(6) <X(6)>` = :ref:`X(53) <X(53)>`-of-excentral-triangle
    * :ref:`X(6) <X(6)>` = Thomson-isogonal conjugate of :ref:`X(376) <X(376)>`
-   * :ref:`X(6) <X(6)>` = perspector of ABC and mid-triangle of 1st and 2nd anti-Conway triangles
+   * :ref:`X(6) <X(6)>` = perspector of :g:`ABC << A B C >>` and mid-triangle of 1st and 2nd anti-Conway triangles
    * :ref:`X(6) <X(6)>` = :ref:`X(193) <X(193)>`-of-3rd-tri-squares-central-triangle
    * :ref:`X(6) <X(6)>` = :ref:`X(193) <X(193)>`-of-4th-tri-squares-central-triangle
    * :ref:`X(6) <X(6)>` = :ref:`X(6) <X(6)>`-of-circumsymmedial-triangle
@@ -149,7 +149,7 @@ X(6) = SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)
    * :ref:`X(6) <X(6)>` = :ref:`X(6) <X(6)>`-of-outer-Grebe-triangle
    * :ref:`X(6) <X(6)>` = :ref:`X(157) <X(157)>`-of-intouch-triangle
    * :ref:`X(6) <X(6)>` = perspector, wrt Schroeter triangle, of polar circle
-   * :ref:`X(6) <X(6)>` = center of the perspeconic of these triangles: ABC and Ehrmann vertex
+   * :ref:`X(6) <X(6)>` = center of the perspeconic of these triangles: :g:`ABC << A B C >>` and Ehrmann vertex
    * :ref:`X(6) <X(6)>` = barycentric square of :ref:`X(1) <X(1)>`
    * :ref:`X(6) <X(6)>` = pole, wrt circumcircle, of Lemoine axis
    * :ref:`X(6) <X(6)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(264) <X(264)>` (line :ref:`X(297) <X(297)>`\ \ :ref:`X(525) <X(525)>`)
@@ -169,7 +169,7 @@ X(6) = SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)
    * :ref:`X(6) <X(6)>` = :ref:`X(6) <X(6)>`-of-4th-Brocard-triangle
    * :ref:`X(6) <X(6)>` = :ref:`X(6) <X(6)>`-of-orthocentroidal-triangle
    * :ref:`X(6) <X(6)>` = reflection of X(2453) in the Euler line
-   * :ref:`X(6) <X(6)>` = similitude center of ABC and orthocentroidal triangle
+   * :ref:`X(6) <X(6)>` = similitude center of :g:`ABC << A B C >>` and orthocentroidal triangle
    * :ref:`X(6) <X(6)>` = similitude center of 4th Brocard and circumsymmedial triangles
    * :ref:`X(6) <X(6)>` = tangential isogonal conjugate of :ref:`X(22) <X(22)>`
    * :ref:`X(6) <X(6)>` = tangential isotomic conjugate of X(1498)
@@ -182,12 +182,12 @@ X(6) = SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)
    * :ref:`X(6) <X(6)>` = crosspoint of :ref:`X(2) <X(2)>` and :ref:`X(194) <X(194)>` wrt both the excentral and :term:`anticomplementary triangles <anticomplementary-triangle>`
    * :ref:`X(6) <X(6)>` = pedal antipodal perspector of X(5004) and of X(5005)
    * :ref:`X(6) <X(6)>` = vertex conjugate of Jerabek hyperbola intercepts of Lemoine axis
-   * :ref:`X(6) <X(6)>` = hyperbola {{A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(6) <X(6)>`}} antipode of :ref:`X(694) <X(694)>`
+   * :ref:`X(6) <X(6)>` = hyperbola {{:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(6) <X(6)>`}} antipode of :ref:`X(694) <X(694)>`
    * :ref:`X(6) <X(6)>` = perspector of orthic triangle and tangential triangle, wrt orthic triangle, of the circumconic of the orthic triangle centered at :ref:`X(4) <X(4)>` (the bicevian conic of :ref:`X(4) <X(4)>` and :ref:`X(459) <X(459)>`)
    * :ref:`X(6) <X(6)>` = perspector of :term:`excentral triangle <excentral-triangle>` and extraversion triangle of :ref:`X(9) <X(9)>`
-   * :ref:`X(6) <X(6)>` = excentral-to-ABC :term:`functional image <functional-image>` of :ref:`X(9) <X(9)>`
-   * :ref:`X(6) <X(6)>` = orthic-to-ABC functional image of :ref:`X(53) <X(53)>`
-   * :ref:`X(6) <X(6)>` = intouch-to-ABC functional image of :ref:`X(7) <X(7)>`
+   * :ref:`X(6) <X(6)>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X(9) <X(9)>`
+   * :ref:`X(6) <X(6)>` = orthic-to-:g:`ABC << A B C >>` functional image of :ref:`X(53) <X(53)>`
+   * :ref:`X(6) <X(6)>` = intouch-to-:g:`ABC << A B C >>` functional image of :ref:`X(7) <X(7)>`
    * :ref:`X(6) <X(6)>` = 1st-Brocard-isogonal conjugate of :ref:`X(804) <X(804)>`
    * :ref:`X(6) <X(6)>` = center of the MacBeath circumconic
    * :ref:`X(6) <X(6)>` = center of the cosine circle (the 2nd Lemoine circle)
@@ -195,7 +195,7 @@ X(6) = SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)
    * :ref:`X(6) <X(6)>` = antipode of X(32113) in Walsmith rectangular hyperbola
    * :ref:`X(6) <X(6)>` = orthocenter of :ref:`X(74) <X(74)>`\ \ :ref:`X(110) <X(110)>`\ X(3569)
    * :ref:`X(6) <X(6)>` = orthocenter of :ref:`X(113) <X(113)>`\ \ :ref:`X(125) <X(125)>`\ X(3569)
-   * :ref:`X(6) <X(6)>` = QA-P23 (Inscribed Square Axes Crosspoint) of quadrangle ABC\ :ref:`X(2) <X(2)>`; see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/51-qa-p23.html
+   * :ref:`X(6) <X(6)>` = :g:`QA <[ Q A ]>`-P23 (Inscribed Square Axes Crosspoint) of quadrangle :g:`ABC << A B C >>`\ :ref:`X(2) <X(2)>`; see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/51-qa-p23.html
 
 Notes
 -----
@@ -210,11 +210,11 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the pedal triangle of an arbitrary point X, and let S(X) be the vector sum XA' + XB' + XC'. Then
+   Let :g:`A'B'C' << A' B' C' >>` be the pedal triangle of an arbitrary point :g:`X <X>`, and let S(X) be the vector sum :g:`XA' <[ X A' ]>` + :g:`XB' <[ X B' ]>` + :g:`XC' <[ X C' ]>`. Then
 
 .. container:: note-item
 
-   S(X) = (0 vector) if and only if X = :ref:`X(6) <X(6)>`.
+   S(X) = (0 vector) if and only if :g:`X <X>` = :ref:`X(6) <X(6)>`.
 
 .. container:: note-item
 
@@ -226,7 +226,7 @@ Notes
 
 .. container:: note-item
 
-   :ref:`X(6) <X(6)>` is the perspector of ABC and the medial triangle of the orthic triangle of ABC. (:person:`Randy Hutson <randy-hutson>`, 8/23/2011)
+   :ref:`X(6) <X(6)>` is the perspector of :g:`ABC << A B C >>` and the medial triangle of the orthic triangle of :g:`ABC << A B C >>`. (:person:`Randy Hutson <randy-hutson>`, 8/23/2011)
 
 .. container:: note-item
 
@@ -234,19 +234,19 @@ Notes
 
 .. container:: note-item
 
-   Let A' be the center of the conic through the contact points of the incircle and the A-excircle with the sidelines of ABC. Define B' and C' cyclically. Let A″ be the center of the conic through the contact points of the B- and C- excircles with the sidelines of ABC. Define B″ and C″ cyclically. The triangles A'B'C' and A″B″C″ are perspective at :ref:`X(6) <X(6)>`. See also :ref:`X(25) <X(25)>`, :ref:`X(218) <X(218)>`, :ref:`X(222) <X(222)>`, :ref:`X(940) <X(940)>`, X(1743). (Randy Hutson, July 23, 2015)
+   Let :g:`A' <A'>` be the center of the conic through the contact points of the incircle and the :g:`A <A>`-excircle with the sidelines of :g:`ABC << A B C >>`. Define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Let :g:`A″ <A″>` be the center of the conic through the contact points of the B- and C- excircles with the sidelines of :g:`ABC << A B C >>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The triangles :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>` are perspective at :ref:`X(6) <X(6)>`. See also :ref:`X(25) <X(25)>`, :ref:`X(218) <X(218)>`, :ref:`X(222) <X(222)>`, :ref:`X(940) <X(940)>`, X(1743). (Randy Hutson, July 23, 2015)
 
 .. container:: note-item
 
-   The tangents at A,B,C to the Thomson cubic K002 concur in :ref:`X(6) <X(6)>`. Let Ha be the foot of the A-altitude. Let Ba, Ca be the feet of perpendiculars from Ha to CA, AB, resp. Let A' be the orthocenter of HaBaCa, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(6) <X(6)>`. (Randy Hutson, November 18, 2015)
+   The tangents at :g:`A <A>`, :g:`B <B>`, :g:`C <C>` to the Thomson cubic K002 concur in :ref:`X(6) <X(6)>`. Let :g:`H_{a} <H_a>` be the foot of the :g:`A <A>`-altitude. Let :g:`B_{a} <B_a>`, :g:`C_{a} <C_a>` be the feet of perpendiculars from :g:`H_{a} <H_a>` to :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, resp. Let :g:`A' <A'>` be the orthocenter of :g:`H_{a}B_{a}C_{a} << H_a B_a C_a >>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(6) <X(6)>`. (Randy Hutson, November 18, 2015)
 
 .. container:: note-item
 
-   Let Ja, Jb, Jc be the excenters and I the incenter of ABC. Let Ka be the symmedian point of JbJcI, and define Kb and Kc cyclically. Then KaKbKc is perspective to JaJbJc at :ref:`X(6) <X(6)>`. (Randy Hutson, February 10, 2016)
+   Let :g:`J_{a} <J_a>`, :g:`J_{b} <J_b>`, :g:`J_{c} <J_c>` be the excenters and I the incenter of :g:`ABC << A B C >>`. Let :g:`K_{a} <K_a>` be the symmedian point of JbJcI, and define :g:`K_{b} <K_b>` and :g:`K_{c} <K_c>` cyclically. Then :g:`K_{a}K_{b}K_{c} << K_a K_b K_c >>` is perspective to :g:`J_{a}J_{b}J_{c} << J_a J_b J_c >>` at :ref:`X(6) <X(6)>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the triangle described in :cite:`ADGEOM #2697 <adgeom>` (8/26/2015, Tran Quang Hung); then :ref:`X(6) <X(6)>` = X(6467)-of-A'B'C'. (Randy Hutson, June 27, 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the triangle described in :cite:`ADGEOM #2697 <adgeom>` (8/26/2015, Tran Quang Hung); then :ref:`X(6) <X(6)>` = X(6467)-of-:g:`A'B'C' << A' B' C' >>`. (Randy Hutson, June 27, 2018)
 
 .. container:: note-item
 
@@ -254,11 +254,11 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the tangential triangle of the Jerabek hyperbola. Let A″ be the pole wrt circumcircle of line B'C', and define B″, C″ cyclically. The lines A'″, B'B″, C'C″ concur in :ref:`X(6) <X(6)>`. (Randy Hutson, November 30, 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the tangential triangle of the Jerabek hyperbola. Let :g:`A″ <A″>` be the pole wrt circumcircle of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines A'″, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(6) <X(6)>`. (Randy Hutson, November 30, 2018)
 
 .. container:: note-item
 
-   Let A'B'C' be the half-altitude (midheight) triangle. Let L\ :sub:`A` be the line through A parallel to B'C', and define L\ :sub:`B` and L\ :sub:`C` cyclically. Let A″ = L\ :sub:`B`\ ∩L\ :sub:`C`, and define B″, C″ cyclically. The lines A'″, B'B″, C'C″ concur in :ref:`X(6) <X(6)>`. (Randy Hutson, November 30, 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the half-altitude (midheight) triangle. Let :g:`L_{A} <L_A>` be the line through :g:`A <A>` parallel to :g:`B'C' <[ B' C' ]>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A″ <A″>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines A'″, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(6) <X(6)>`. (Randy Hutson, November 30, 2018)
 
 .. container:: note-item
 
@@ -266,11 +266,11 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be any one of {Lucas(t) :term:`central triangle <central-triangle>`, Lucas(t) tangents triangle, Lucas(t) inner triangle} (for arbitrary t). Let A″ be the trilinear pole of line B'C', and define B″ and C″ cyclically. The lines A″, BB″, CC″ concur in :ref:`X(6) <X(6)>`. (Randy Hutson, July 11, 2019)
+   Let :g:`A'B'C' << A' B' C' >>` be any one of {Lucas(t) :term:`central triangle <central-triangle>`, Lucas(t) tangents triangle, Lucas(t) inner triangle} (for arbitrary t). Let :g:`A″ <A″>` be the trilinear pole of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(6) <X(6)>`. (Randy Hutson, July 11, 2019)
 
 .. container:: note-item
 
-   Let A'B'C' be the medial triangle, and A″B″C″ the orthic triangle. Let A\* be the centroid of AA'A″, and define B\* and C\* cyclically. A\*B\*C\* is inversely similar to ABC, and the lines A'A\*, B'B\*, C'C\* concur in :ref:`X(6) <X(6)>`. (Randy Hutson, July 11, 2019)
+   Let :g:`A'B'C' << A' B' C' >>` be the medial triangle, and :g:`A″B″C″ << A″ B″ C″ >>` the orthic triangle. Let :g:`A* <A*>` be the centroid of :g:`AA'A″ << A A' A″ >>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. :g:`A*B*C* << A* B* C* >>` is inversely similar to :g:`ABC << A B C >>`, and the lines :g:`A'A* <[ A' A* ]>`, :g:`B'B* <[ B' B* ]>`, :g:`C'C* <[ C' C* ]>` concur in :ref:`X(6) <X(6)>`. (Randy Hutson, July 11, 2019)
 
 .. container:: note-item
 
@@ -282,33 +282,33 @@ Notes
 
 .. container:: note-item
 
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the 2nd Brocard triangle and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(6) <X(6)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (Randy Hutson, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the 2nd Brocard triangle and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(6) <X(6)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
 
 .. container:: note-item
 
-   In the plane of a triangle ABC, let
+   In the plane of a triangle :g:`ABC << A B C >>`, let
 
-      * Oa = circle with diameter BC, and define Ob and Oc cyclically;
-      * A' = apex of equilateral triangle on side BC, and define B′ and C′ cyclically;
-      * Ab = BA′∩Oa, and define Bc and Ca cyclically;
-      * Ac = CA′∩Oa, and define Ba and Cb cyclically;
-      * A″= BcBa∩CaCb, and define B″ and C″ cyclically.
+      * :g:`O_{a} <O_a>` = circle with diameter :g:`BC <[ B C ]>`, and define :g:`O_{b} <O_b>` and :g:`O_{c} <O_c>` cyclically;
+      * :g:`A' <A'>` = apex of equilateral triangle on side :g:`BC <[ B C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically;
+      * :g:`A_{b} <A_b>` = :g:`BA' <[ B A' ]>`\ ∩\ :g:`O_{a} <O_a>`, and define :g:`B_{c} <B_c>` and :g:`C_{a} <C_a>` cyclically;
+      * :g:`A_{c} <A_c>` = :g:`CA' <[ C A' ]>`\ ∩\ :g:`O_{a} <O_a>`, and define :g:`B_{a} <B_a>` and :g:`C_{b} <C_b>` cyclically;
+      * :g:`A″ <A″>`\ = :g:`B_{c}B_{a} <[ B_c B_a ]>`\ ∩\ :g:`C_{a}C_{b} <[ C_a C_b ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically.
 
-   The triangle A″B″C″ is perspective to ABC, and the perspector is :ref:`X(6) <X(6)>`. (:person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, April 19, 2021)
+   The triangle :g:`A″B″C″ << A″ B″ C″ >>` is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X(6) <X(6)>`. (:person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, April 19, 2021)
 
 .. container:: note-item
 
-   Let P and Q be distinct points in a plane, and let T be a triangle rigidly rotating about P. Let X be a triangle center, and let
+   Let :g:`P <P>` and :g:`Q <Q>` be distinct points in a plane, and let :g:`T <T>` be a triangle rigidly rotating about P. Let :g:`X <X>` be a triangle center, and let
 
-      * X\ :sub:`T` = X-of-T;
-      * O = a circle with center Q';
-      * {A,B,C} = vertices of T;
-      * A' = inverse of A in O, and define B' and C' cyclically;
-      * T' = A'B'C';
-      * X':sub:`T` = X-of-T'.
-      * (1) If X = X(k) for k = 3, 6, 15, 16, 61, 62, then the locus of X':sub:`T` is a conic.
-      * (2) If X = :ref:`X(15) <X(15)>` or X = :ref:`X(16) <X(16)>`, the conic is a circle.
-      * (3) If P is one of the points X(k), for k = 3, 6, 15, 16, 61, 62, then the locus of X':sub:`T` is a single point, and the points O, X\ :sub:`T`, X':sub:`T` are collinear. For example, if P = :ref:`X(6) <X(6)>`, then the locus of :ref:`X(6) <X(6)>`-of-T' is collinear with O and :ref:`X(6) <X(6)>`-of-T.
+      * :g:`X_{T} <X_T>` = X-of-T;
+      * :g:`O <O>` = a circle with center :g:`Q' <Q'>`;
+      * {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`} = vertices of :g:`T <T>`;
+      * :g:`A' <A'>` = inverse of :g:`A <A>` in :g:`O <O>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically;
+      * :g:`T' <T'>` = :g:`A'B'C' << A' B' C' >>`;
+      * :g:`X'_{T} <X'_T>` = X-of-:g:`T' <T'>`.
+      * (1) If :g:`X <X>` = X(k) for k = 3, 6, 15, 16, 61, 62, then the locus of :g:`X'_{T} <X'_T>` is a conic.
+      * (2) If :g:`X <X>` = :ref:`X(15) <X(15)>` or :g:`X <X>` = :ref:`X(16) <X(16)>`, the conic is a circle.
+      * (3) If P is one of the points X(k), for k = 3, 6, 15, 16, 61, 62, then the locus of :g:`X'_{T} <X'_T>` is a single point, and the points :g:`O <O>`, :g:`X_{T} <X_T>`, :g:`X'_{T} <X'_T>` are collinear. For example, if :g:`P <P>` = :ref:`X(6) <X(6)>`, then the locus of :ref:`X(6) <X(6)>`-of-:g:`T' <T'>` is collinear with :g:`O <O>` and :ref:`X(6) <X(6)>`-of-T.
       * Videos:
       * `Inversive Image of Pivoting Triangle, Part II: Conic Loci of X(3) and X(6) of Inversive <https://youtu.be/qVCjQfXkK_k>`__ (:person:`Dan Reznik <dan-reznik>`, August 15, 2021)
 
@@ -318,7 +318,7 @@ Notes
 
 .. container:: note-item
 
-   Let P be a point in the plane of T = ABC, and let T'=A'B'C' be the :term:`cevian triangle <cevian-triangle>` of P. Let A'' = BC∩B'C', and define B'' and C'' cycllically. By Desargues' theorem, the points A",B",C" lie on the perspectrix of the ktriangles T and T'. Let Ka be the circle that passes through the points A,A',A'', and define Kb and Kc cyclically. As is well known, if P=\ :ref:`X(1) <X(1)>`, then the circles Ka,Kb,Kc meet in :ref:`X(15) <X(15)>` and :ref:`X(16) <X(16)>`, and their radical axis is the Brocard axis. We offer the following new observation. The locus of P such that Ka,Kb,Kc intersect in exactly two points, Z\ :sub:`1` and Z\ :sub:`2`, is the curve Q066, which is the Stammler quartic (the isogonal image of the Stammler hyperbola). The curve Q066 passes through the excenters and the triangle centers X(k) for k=1, 2, 4, 254, and others, listed in `Q066, Stammler quartic) <https://bernard-gibert.pagesperso-orange.fr/curves/q066.html>`__ . Moreover, the line Z\ :sub:`1`\ Z\ :sub:`2` passes through the point :ref:`X(6) <X(6)>`-of-T. See the figures in `Q066 and line Z1Z2 <https://user-images.githubusercontent.com/16231062/218744084-4e759f54-8bd0-452c-b575-2ea85289c792.png>`__ . (:person:`Bernard Gibert <bernard-gibert>` and Dan Reznik, February 12, 2023)
+   Let :g:`P <P>` be a point in the plane of :g:`T <T>` = :g:`ABC << A B C >>`, and let :g:`T' <T'>`\ =\ :g:`A'B'C' << A' B' C' >>` be the :term:`cevian triangle <cevian-triangle>` of P. Let :g:`A″ <A″>` = :g:`BC <[ B C ]>`\ ∩\ :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cycllically. By Desargues' theorem, the points :g:`A″ <A″>`,\ :g:`B″ <B″>`,\ :g:`C″ <C″>` lie on the perspectrix of the ktriangles T and :g:`T' <T'>`. Let :g:`K_{a} <K_a>` be the circle that passes through the points :g:`A <A>`,\ :g:`A' <A'>`,\ :g:`A″ <A″>`, and define :g:`K_{b} <K_b>` and :g:`K_{c} <K_c>` cyclically. As is well known, if :g:`P <P>`\ =\ :ref:`X(1) <X(1)>`, then the circles :g:`K_{a} <K_a>`,\ :g:`K_{b} <K_b>`,\ :g:`K_{c} <K_c>` meet in :ref:`X(15) <X(15)>` and :ref:`X(16) <X(16)>`, and their radical axis is the Brocard axis. We offer the following new observation. The locus of P such that :g:`K_{a} <K_a>`,\ :g:`K_{b} <K_b>`,\ :g:`K_{c} <K_c>` intersect in exactly two points, :g:`Z_{1} <Z_1>` and :g:`Z_{2} <Z_2>`, is the curve Q066, which is the Stammler quartic (the isogonal image of the Stammler hyperbola). The curve Q066 passes through the excenters and the triangle centers X(k) for k=1, 2, 4, 254, and others, listed in `Q066, Stammler quartic) <https://bernard-gibert.pagesperso-orange.fr/curves/q066.html>`__ . Moreover, the line :g:`Z_{1}Z_{2} <[ Z_1 Z_2 ]>` passes through the point :ref:`X(6) <X(6)>`-of-T. See the figures in `Q066 and line Z1Z2 <https://user-images.githubusercontent.com/16231062/218744084-4e759f54-8bd0-452c-b575-2ea85289c792.png>`__ . (:person:`Bernard Gibert <bernard-gibert>` and Dan Reznik, February 12, 2023)
 
 .. container:: note-item
 

@@ -16,22 +16,22 @@ X(660) = TRILINEAR POLE OF LINE X(1)X(39)
    :alt: X(660) = TRILINEAR POLE OF LINE X(1)X(39)
    :align: center
 
-   **X(660) = TRILINEAR POLE OF LINE X(1)X(39)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(660) = TRILINEAR POLE OF LINE X(1)X(39)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`1/[(a^{2} - bc)(b - c)] : :`
-   | **Barycentrics:** :math:`a*(a - b)*(a - c)*(-b^2 + a*c)*(a*b - c^2) : :`
+   | **Barycentrics:** :math:`a (a - b) \cdot (a - c) \cdot (-b^{2} + a c) \cdot (a b - c^{2}) : :`
    | **Search Value (6, 9, 13):** :math:`0.356797529576`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(660) <X(660)>` = 3 :ref:`X(2) <X(2)>` - 4 X(40538)
+   * :ref:`X(660) <X(660)>` = :math:`3` :ref:`X(2) <X(2)>` - :math:`4` X(40538)
 
 .. container:: note-item
 
-   :ref:`X(660) <X(660)>` lies on the curve CC9.
+   :ref:`X(660) <X(660)>` lies on the curve :g:`CC_{9} <[ C C_9 ]>`.
 
 .. collapse:: Incident Central Lines
    :badge: 89 lines

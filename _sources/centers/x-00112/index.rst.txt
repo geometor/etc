@@ -10,13 +10,13 @@ X(112) = Ψ(ORTHOCENTER, SYMMEDIAN POINT)
 
 .. enunciation::
 
-   If the line :ref:`X(4) <X(4)>`\ \ :ref:`X(6) <X(6)>` is reflected in every side of triangle ABC, then the reflections concur in :ref:`X(112) <X(112)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   If the line :ref:`X(4) <X(4)>`\ \ :ref:`X(6) <X(6)>` is reflected in every side of triangle :g:`ABC << A B C >>`, then the reflections concur in :ref:`X(112) <X(112)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. figure:: x-00112.svg
    :alt: X(112) = Ψ(ORTHOCENTER, SYMMEDIAN POINT)
    :align: center
 
-   **X(112) = Ψ(ORTHOCENTER, SYMMEDIAN POINT)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(112) = Ψ(ORTHOCENTER, SYMMEDIAN POINT)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -30,10 +30,6 @@ X(112) = Ψ(ORTHOCENTER, SYMMEDIAN POINT)
 
    * **Trilinears:** :math:`a/[(b^{2} - c^{2})(b^{2} + c^{2} - a^{2})]`
    * **Trilinears:** :math:`\tan A \csc(B - C) : :`
-
-.. container:: note-item
-
-   :ref:`X(112) <X(112)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 416 lines
@@ -54,7 +50,7 @@ X(112) = Ψ(ORTHOCENTER, SYMMEDIAN POINT)
    * :ref:`X(112) <X(112)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(122) <X(122)>`\ \ :ref:`X(125) <X(125)>`
    * :ref:`X(112) <X(112)>` = barycentric product of X(1113) and X(1114)
    * :ref:`X(112) <X(112)>` = isogonal conjugate of isotomic conjugate of :term:`trilinear pole <trilinear-pole>` of Euler line
-   * :ref:`X(112) <X(112)>` = point of intersection, other than A, B, C, of circumcircle and hyperbola {A,B,C,\ :ref:`X(4) <X(4)>`,PU(39)}}
+   * :ref:`X(112) <X(112)>` = point of intersection, other than :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, of circumcircle and hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(4) <X(4)>`,PU(39)}}
    * :ref:`X(112) <X(112)>` = trilinear pole of line :ref:`X(6) <X(6)>`\ \ :ref:`X(25) <X(25)>`
    * :ref:`X(112) <X(112)>` = :ref:`X(647) <X(647)>`-cross conjugate of :ref:`X(6) <X(6)>`
    * :ref:`X(112) <X(112)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(850) <X(850)>` (line :ref:`X(115) <X(115)>`\ \ :ref:`X(127) <X(127)>`)
@@ -77,7 +73,7 @@ X(112) = Ψ(ORTHOCENTER, SYMMEDIAN POINT)
    * :ref:`X(112) <X(112)>` = :term:`eigencenter <eigencenter>` of circumnormal triangle
    * :ref:`X(112) <X(112)>` = Thomson-isogonal conjugate of X(1503)
    * :ref:`X(112) <X(112)>` = Lucas-isogonal conjugate of X(1503)
-   * :ref:`X(112) <X(112)>` = perspector of circumcevian triangle of :ref:`X(468) <X(468)>` and cross-triangle of ABC and circumcevian triangle of :ref:`X(25) <X(25)>`
+   * :ref:`X(112) <X(112)>` = perspector of circumcevian triangle of :ref:`X(468) <X(468)>` and cross-triangle of :g:`ABC << A B C >>` and circumcevian triangle of :ref:`X(25) <X(25)>`
    * :ref:`X(112) <X(112)>` = trilinear product of circumcircle intercepts of line :ref:`X(1) <X(1)>`\ \ :ref:`X(19) <X(19)>`
    * :ref:`X(112) <X(112)>` = barycentric product :ref:`X(3) <X(3)>`\ \*\ :ref:`X(107) <X(107)>`
    * :ref:`X(112) <X(112)>` = barycentric product :ref:`X(4) <X(4)>`\ \*\ :ref:`X(110) <X(110)>`
@@ -91,27 +87,27 @@ Notes
 
 .. container:: note-item
 
-   Let P be a point on the van Aubel line other than :ref:`X(4) <X(4)>`. Let A' be the reflection of P in BC, and define B' and C' cyclically. The circumcircles of AA'B', BC'A', and CA'B' concur at :ref:`X(112) <X(112)>`. (Randy Hutson, December 26, 2015)
+   Let :g:`P <P>` be a point on the van Aubel line other than :ref:`X(4) <X(4)>`. Let :g:`A' <A'>` be the reflection of :g:`P <P>` in :g:`BC <[ B C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The circumcircles of :g:`AA'B' << A A' B' >>`, :g:`BC'A' << B C' A' >>`, and :g:`CA'B' << C A' B' >>` concur at :ref:`X(112) <X(112)>`. (Randy Hutson, December 26, 2015)
 
 .. container:: note-item
 
-   Let Q be a point on the Euler line other than :ref:`X(2) <X(2)>`. Let A'B'C' be the :term:`cevian triangle <cevian-triangle>` of Q. Let A″ be the {B,C}-harmonic conjugate of A' (or equivalently, A″ = BC∩B'C'), and define B″ and C″ cyclically. The circumcircles of AB″C″, BC″A″, CA″B″ concur in :ref:`X(112) <X(112)>`. (Randy Hutson, December 26, 2015)
+   Let :g:`Q <Q>` be a point on the Euler line other than :ref:`X(2) <X(2)>`. Let :g:`A'B'C' << A' B' C' >>` be the :term:`cevian triangle <cevian-triangle>` of Q. Let :g:`A″ <A″>` be the {B,C}-harmonic conjugate of :g:`A' <A'>` (or equivalently, :g:`A″ <A″>` = :g:`BC <[ B C ]>`\ ∩\ :g:`B'C' <[ B' C' ]>`), and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The circumcircles of :g:`AB″C″ << A B″ C″ >>`, :g:`BC″A″ << B C″ A″ >>`, :g:`CA″B″ << C A″ B″ >>` concur in :ref:`X(112) <X(112)>`. (Randy Hutson, December 26, 2015)
 
 .. container:: note-item
 
-   Let A', B', C' be the intersections of the orthic axis and lines BC, CA, AB, respectively. The circumcircles of AB'C', BC'A', CA'B' concur in :ref:`X(112) <X(112)>`. (Randy Hutson, December 26, 2015)
+   Let :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>` be the intersections of the orthic axis and lines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, respectively. The circumcircles of :g:`AB'C' << A B' C' >>`, :g:`BC'A' << B C' A' >>`, :g:`CA'B' << C A' B' >>` concur in :ref:`X(112) <X(112)>`. (Randy Hutson, December 26, 2015)
 
 .. container:: note-item
 
-   Let A' be the reflection of :ref:`X(6) <X(6)>` in BC, and define B' and C' cyclically. The circumcircles of AB'C', BC'A', CA'B' concur in :ref:`X(112) <X(112)>`. (Randy Hutson, December 26, 2015)
+   Let :g:`A' <A'>` be the reflection of :ref:`X(6) <X(6)>` in :g:`BC <[ B C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The circumcircles of :g:`AB'C' << A B' C' >>`, :g:`BC'A' << B C' A' >>`, :g:`CA'B' << C A' B' >>` concur in :ref:`X(112) <X(112)>`. (Randy Hutson, December 26, 2015)
 
 .. container:: note-item
 
-   Let A'B'C' be the circummedial triangle. Let A″ be the pole, wrt the polar circle, of line B'C', and define B″ and C″ cyclically. The lines A'A″, B'B″, C'C″ concur in :ref:`X(112) <X(112)>`. (Randy Hutson, December 26, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the circummedial triangle. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(112) <X(112)>`. (Randy Hutson, December 26, 2015)
 
 .. container:: note-item
 
-   Let L\ :sub:`1` be the line that is the barycentric product of the Euler line and P(4). Let L\ :sub:`2` be the line that is the barycentric product of the Euler line and U(4). Then :ref:`X(112) <X(112)>` = L\ :sub:`1`\ ∩L\ :sub:`2`. (Randy Hutson, July 11, 2019)
+   Let :g:`L_{1} <L_1>` be the line that is the barycentric product of the Euler line and P(4). Let :g:`L_{2} <L_2>` be the line that is the barycentric product of the Euler line and U(4). Then :ref:`X(112) <X(112)>` = :g:`L_{1} <L_1>`\ ∩\ :g:`L_{2} <L_2>`. (Randy Hutson, July 11, 2019)
 
 .. toctree::
    :hidden:

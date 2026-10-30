@@ -16,7 +16,7 @@ X(73) = CROSSPOINT OF INCENTER AND CIRCUMCENTER
    :alt: X(73) = CROSSPOINT OF INCENTER AND CIRCUMCENTER
    :align: center
 
-   **X(73) = CROSSPOINT OF INCENTER AND CIRCUMCENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(73) = CROSSPOINT OF INCENTER AND CIRCUMCENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,16 +27,12 @@ X(73) = CROSSPOINT OF INCENTER AND CIRCUMCENTER
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`a(b + c)(a^2 - b^2 - c^2)/(a - b - c) : :`
+   * **Trilinears:** :math:`a(b + c)(a^{2} - b^{2} - c^{2})/(a - b - c) : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(73) <X(73)>` = (r\ :sup:`2` - 4R\ :sup:`2` + s\ :sup:`2`)\*\ :ref:`X(1) <X(1)>` - 6rR\*\ :ref:`X(2) <X(2)>` + 4rR\*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-
-.. container:: note-item
-
-   :ref:`X(73) <X(73)>` lies.
+   * :ref:`X(73) <X(73)>` = :math:`(r^{2} - 4R^{2} + s^{2})` :ref:`X(1) <X(1)>` - :math:`6rR` :ref:`X(2) <X(2)>` + :math:`4rR` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. collapse:: Incident Central Lines
    :badge: 20 lines

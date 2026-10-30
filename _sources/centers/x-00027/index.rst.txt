@@ -16,7 +16,7 @@ X(27) = CEVAPOINT OF ORTHOCENTER AND CLAWSON CENTER
    :alt: X(27) = CEVAPOINT OF ORTHOCENTER AND CLAWSON CENTER
    :align: center
 
-   **X(27) = CEVAPOINT OF ORTHOCENTER AND CLAWSON CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(27) = CEVAPOINT OF ORTHOCENTER AND CLAWSON CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,11 +27,7 @@ X(27) = CEVAPOINT OF ORTHOCENTER AND CLAWSON CENTER
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(27) <X(27)>` = 3 SA SB SC :ref:`X(2) <X(2)>` - 2 S^2 s^2 :ref:`X(3) <X(3)>`
-
-.. container:: note-item
-
-   :ref:`X(27) <X(27)>` lies.
+   * :ref:`X(27) <X(27)>` = :math:`3 S_{A} S_{B} S_{C}` :ref:`X(2) <X(2)>` - :math:`2 S^{2} s^{2}` :ref:`X(3) <X(3)>`
 
 .. collapse:: Incident Central Lines
    :badge: 175 lines
@@ -68,7 +64,7 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(27) <X(27)>` has Shinagawa coefficients (F, -E - F - $bc$).
+   As a point on the Euler line, :ref:`X(27) <X(27)>` has Shinagawa coefficients :math:`(F, -E - F - \$bc\$)`.
 
 .. toctree::
    :hidden:

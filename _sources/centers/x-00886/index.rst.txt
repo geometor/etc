@@ -16,12 +16,12 @@ X(886) = INTERSECTION OF LINES X(99)X(669) AND X(512)X(670)
    :alt: X(886) = INTERSECTION OF LINES X(99)X(669) AND X(512)X(670)
    :align: center
 
-   **X(886) = INTERSECTION OF LINES X(99)X(669) AND X(512)X(670)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(886) = INTERSECTION OF LINES X(99)X(669) AND X(512)X(670)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(a^{2}u^{2} - bcvw)/[a^{2}u(bv - cw)] : :`, where u : v : w = :ref:`X(512) <X(512)>`
-   | **Barycentrics:** :math:`b^2 c^2/((b^2 - c^2) (a^2 b^2 + a^2 c^2 - 2 b^2 c^2)) : :`
+   | **Trilinears:** :math:`(a^{2}u^{2} - bcvw)/[a^{2}u(bv - cw)] : :`, where :math:`u : v : w` = :ref:`X(512) <X(512)>`
+   | **Barycentrics:** :math:`b^{2} c^{2}/((b^{2} - c^{2}) (a^{2} b^{2} + a^{2} c^{2} - 2 b^{2} c^{2})) : :`
    | **Search Value (6, 9, 13):** :math:`4.726589555271`
 
 .. container:: note-item

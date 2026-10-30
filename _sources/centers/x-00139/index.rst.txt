@@ -16,11 +16,11 @@ X(139) = X(112)-OF-ORTHIC-TRIANGLE
    :alt: X(139) = X(112)-OF-ORTHIC-TRIANGLE
    :align: center
 
-   **X(139) = X(112)-OF-ORTHIC-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(139) = X(112)-OF-ORTHIC-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where, f(A,B,C) = (sec A)(sin 2B + sin 2C)[(sin 2B - sin 2C)\ :sup:`2`][sin\ :sup:`2`\ (2B) + sin\ :sup:`2`\ (2C) - sin\ :sup:`2`\ (2A)] u(A,B,C),, u(A,B,C) = (sin 2B)\ :sup:`4` + (sin 2C)\ :sup:`4` - (sin 2A)\ :sup:`4` + (sin 2B sin 2C)[sin\ :sup:`2`\ (2B) + sin\ :sup:`2`\ (2C) - sin\ :sup:`2`\ (2A)]
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = (\sec A)(\sin 2B + \sin 2C)[(\sin 2B - \sin 2C)^{2}][\sin^{2}(2B) + \sin^{2}(2C) - \sin^{2}(2A)] u(A,B,C)`, :math:`u(A,B,C) = (\sin 2B)^{4} + (\sin 2C)^{4} - (\sin 2A)^{4} + (\sin 2B \sin 2C)[\sin^{2}(2B) + \sin^{2}(2C) - \sin^{2}(2A)]`
    | **Search Value (6, 9, 13):** :math:`-2.966034811283`
 
 .. container:: note-item

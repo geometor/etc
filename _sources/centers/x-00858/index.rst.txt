@@ -10,25 +10,30 @@ X(858) = COMPLEMENT OF X(23)
 
 .. enunciation::
 
-   Let P and P' be circumcircle antipodes. Let Q and Q' be the :term:`anticomplements <anticomplement>` of P and P', resp. The rectangular hyperbola passing through P, P', Q, Q' has center :ref:`X(858) <X(858)>` for all P. (:person:`Randy Hutson <randy-hutson>`, March 29, 2020)
+   Let :g:`P <P>` and :g:`P' <P'>` be circumcircle antipodes. Let :g:`Q <Q>` and :g:`Q' <Q'>` be the :term:`anticomplements <anticomplement>` of :g:`P <P>` and :g:`P' <P'>`, resp. The rectangular hyperbola passing through :g:`P <P>`, :g:`P' <P'>`, Q, :g:`Q' <Q'>` has center :ref:`X(858) <X(858)>` for all P. (:person:`Randy Hutson <randy-hutson>`, March 29, 2020)
 
 .. figure:: x-00858.svg
    :alt: X(858) = COMPLEMENT OF X(23)
    :align: center
 
-   **X(858) = COMPLEMENT OF X(23)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(858) = COMPLEMENT OF X(23)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\sin^{3}C \sin 2B \sin(C - A) + \sin^{3}B \sin 2C \sin(B - A) : :`
-   | **Barycentrics:** :math:`a^4*b^2 - b^6 + a^4*c^2 - 2*a^2*b^2*c^2 + b^4*c^2 + b^2*c^4 - c^6 : :`
+   | **Trilinears:** :math:`\sin^{3} C \sin 2B \sin(C - A) + \sin^{3} B \sin 2C \sin(B - A) : :`
+   | **Barycentrics:** :math:`a^{4} b^{2} - b^{6} + a^{4} c^{2} - 2 a^{2} b^{2} c^{2} + b^{4} c^{2} + b^{2} c^{4} - c^{6} : :`
    | **Search Value (6, 9, 13):** :math:`5.470836447671`
 
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
-   * **Barycentrics:** :math:`c^2*(a^4 - a^2*b^2 + b^4 - c^4) + b^2*(a^4 - b^4 - a^2*c^2 + c^4) : :`
-   * **Barycentrics:** Sin[2\*B] + Sin[2\*C] - 3\*Tan[w] : :, :ref:`X(858) <X(858)>` = 3 :ref:`X(2) <X(2)>` - 4 X(5159), 3 :ref:`X(2) <X(2)>` + X(5189), 9 :ref:`X(2) <X(2)>` - X(20063), 3 :ref:`X(2) <X(2)>` - 5 X(30745), 9 :ref:`X(2) <X(2)>` - 5 X(37760), 9 :ref:`X(2) <X(2)>` - 4 X(37897), 9 :ref:`X(2) <X(2)>` - 2 X(37899), 6 :ref:`X(2) <X(2)>` - X(37900), 5 :ref:`X(2) <X(2)>` - X(37901), 5 :ref:`X(2) <X(2)>` - 2 X(37904), 5 :ref:`X(2) <X(2)>` - 3 X(37907), 7 :ref:`X(2) <X(2)>` - 3 X(37909), 15 :ref:`X(2) <X(2)>` - 4 X(37910), 9 :ref:`X(2) <X(2)>` - 8 X(37911), 3 :ref:`X(2) <X(2)>` + 2 X(46517), 4 :ref:`X(3) <X(3)>` - 3 X(44280), 4 :ref:`X(5) <X(5)>` - 3 :ref:`X(403) <X(403)>`, 2 :ref:`X(5) <X(5)>` - 3 X(2072), 5 :ref:`X(5) <X(5)>` - 3 X(11563), :ref:`X(5) <X(5)>` - 3 X(37938), 7 :ref:`X(5) <X(5)>` - 3 X(43893), 3 :ref:`X(5) <X(5)>` - 2 X(44961), 7 :ref:`X(5) <X(5)>` - 6 X(46031), :ref:`X(20) <X(20)>` - 3 X(2071), :ref:`X(20) <X(20)>` + 3 X(3153), 2 :ref:`X(20) <X(20)>` - 3 X(16386), :ref:`X(20) <X(20)>` - 9 X(44450), :ref:`X(23) <X(23)>` - 4 X(5159), 2 :ref:`X(23) <X(23)>` - 3 X(7426), :ref:`X(23) <X(23)>` + 3 X(10989), 3 :ref:`X(23) <X(23)>` - X(20063), :ref:`X(23) <X(23)>` - 5 X(30745), 3 :ref:`X(23) <X(23)>` - 5 X(37760), 3 :ref:`X(23) <X(23)>` - 4 X(37897), 3 :ref:`X(23) <X(23)>` - 2 X(37899), 5 :ref:`X(23) <X(23)>` - 3 X(37901), 5 :ref:`X(23) <X(23)>` - 6 X(37904), 5 :ref:`X(23) <X(23)>` - 9 X(37907), 7 :ref:`X(23) <X(23)>` - 9 X(37909), 5 :ref:`X(23) <X(23)>` - 4 X(37910), 3 :ref:`X(23) <X(23)>` - 8 X(37911), :ref:`X(23) <X(23)>` + 2 X(46517), 3 :ref:`X(125) <X(125)>` - X(41586), 9 :ref:`X(140) <X(140)>` - 5 X(22248), 3 :ref:`X(140) <X(140)>` - 2 X(22249), 4 :ref:`X(140) <X(140)>` - 3 X(44214), 3 :ref:`X(186) <X(186)>` - 5 :ref:`X(631) <X(631)>`, 3 :ref:`X(381) <X(381)>` - X(18325), 3 :ref:`X(381) <X(381)>` + X(35001), :ref:`X(382) <X(382)>` - 3 X(18403), :ref:`X(382) <X(382)>` + 3 X(18859), 5 :ref:`X(403) <X(403)>` - 4 X(11563), 3 :ref:`X(403) <X(403)>` - 2 X(11799), :ref:`X(403) <X(403)>` - 4 X(37938), 7 :ref:`X(403) <X(403)>` - 4 X(43893), 9 :ref:`X(403) <X(403)>` - 8 X(44961), 7 :ref:`X(403) <X(403)>` - 8 X(46031), 2 :ref:`X(468) <X(468)>` + X(5189), 4 :ref:`X(468) <X(468)>` - 3 X(7426), 2 :ref:`X(468) <X(468)>` + 3 X(10989), 6 :ref:`X(468) <X(468)>` - X(20063), 2 :ref:`X(468) <X(468)>` - 5 X(30745), 6 :ref:`X(468) <X(468)>` - 5 X(37760), 3 :ref:`X(468) <X(468)>` - 2 X(37897), 3 :ref:`X(468) <X(468)>` - X(37899), 4 :ref:`X(468) <X(468)>` - X(37900), 10 :ref:`X(468) <X(468)>` - 3 X(37901), 5 :ref:`X(468) <X(468)>` - 3 X(37904), 10 :ref:`X(468) <X(468)>` - 9 X(37907), 14 :ref:`X(468) <X(468)>` - 9 X(37909), 5 :ref:`X(468) <X(468)>` - 2 X(37910), 3 :ref:`X(468) <X(468)>` - 4 X(37911), 2 :ref:`X(548) <X(548)>` - 3 X(34152), 4 :ref:`X(548) <X(548)>` - 3 X(44246), 3 :ref:`X(549) <X(549)>` - 2 X(18571), 5 :ref:`X(631) <X(631)>` - 6 X(10257), 5 :ref:`X(631) <X(631)>` + 3 X(46450), 5 :ref:`X(632) <X(632)>` - 2 X(12105)
+   * **Barycentrics:** :math:`c^{2} (a^{4} - a^{2} b^{2} + b^{4} - c^{4}) + b^{2} (a^{4} - b^{4} - a^{2} c^{2} + c^{4}) : :`
+   * **Barycentrics:** :math:`Sin[2 B] + Sin[2 C] - 3 Tan[w] : :`
+
+.. collapse:: Linear Combinations
+   :badge: 1 combination
+
+   * :ref:`X(858) <X(858)>` = :math:`3` :ref:`X(2) <X(2)>` - :math:`4` X(5159), :math:`3` :ref:`X(2) <X(2)>` + X(5189), :math:`9` :ref:`X(2) <X(2)>` - X(20063), :math:`3` :ref:`X(2) <X(2)>` - :math:`5` X(30745), :math:`9` :ref:`X(2) <X(2)>` - :math:`5` X(37760), :math:`9` :ref:`X(2) <X(2)>` - :math:`4` X(37897), :math:`9` :ref:`X(2) <X(2)>` - :math:`2` X(37899), :math:`6` :ref:`X(2) <X(2)>` - X(37900), :math:`5` :ref:`X(2) <X(2)>` - X(37901), :math:`5` :ref:`X(2) <X(2)>` - :math:`2` X(37904), :math:`5` :ref:`X(2) <X(2)>` - :math:`3` X(37907), :math:`7` :ref:`X(2) <X(2)>` - :math:`3` X(37909), :math:`15` :ref:`X(2) <X(2)>` - :math:`4` X(37910), :math:`9` :ref:`X(2) <X(2)>` - :math:`8` X(37911), :math:`3` :ref:`X(2) <X(2)>` + :math:`2` X(46517), :math:`4` :ref:`X(3) <X(3)>` - :math:`3` X(44280), :math:`4` :ref:`X(5) <X(5)>` - :math:`3` :ref:`X(403) <X(403)>`, :math:`2` :ref:`X(5) <X(5)>` - :math:`3` X(2072), :math:`5` :ref:`X(5) <X(5)>` - :math:`3` X(11563), :ref:`X(5) <X(5)>` - :math:`3` X(37938), :math:`7` :ref:`X(5) <X(5)>` - :math:`3` X(43893), :math:`3` :ref:`X(5) <X(5)>` - :math:`2` X(44961), :math:`7` :ref:`X(5) <X(5)>` - :math:`6` X(46031), :ref:`X(20) <X(20)>` - :math:`3` X(2071), :ref:`X(20) <X(20)>` + :math:`3` X(3153), :math:`2` :ref:`X(20) <X(20)>` - :math:`3` X(16386), :ref:`X(20) <X(20)>` - :math:`9` X(44450), :ref:`X(23) <X(23)>` - :math:`4` X(5159), :math:`2` :ref:`X(23) <X(23)>` - :math:`3` X(7426), :ref:`X(23) <X(23)>` + :math:`3` X(10989), :math:`3` :ref:`X(23) <X(23)>` - X(20063), :ref:`X(23) <X(23)>` - :math:`5` X(30745), :math:`3` :ref:`X(23) <X(23)>` - :math:`5` X(37760), :math:`3` :ref:`X(23) <X(23)>` - :math:`4` X(37897), :math:`3` :ref:`X(23) <X(23)>` - :math:`2` X(37899), :math:`5` :ref:`X(23) <X(23)>` - :math:`3` X(37901), :math:`5` :ref:`X(23) <X(23)>` - :math:`6` X(37904), :math:`5` :ref:`X(23) <X(23)>` - :math:`9` X(37907), :math:`7` :ref:`X(23) <X(23)>` - :math:`9` X(37909), :math:`5` :ref:`X(23) <X(23)>` - :math:`4` X(37910), :math:`3` :ref:`X(23) <X(23)>` - :math:`8` X(37911), :ref:`X(23) <X(23)>` + :math:`2` X(46517), :math:`3` :ref:`X(125) <X(125)>` - X(41586), :math:`9` :ref:`X(140) <X(140)>` - :math:`5` X(22248), :math:`3` :ref:`X(140) <X(140)>` - :math:`2` X(22249), :math:`4` :ref:`X(140) <X(140)>` - :math:`3` X(44214), :math:`3` :ref:`X(186) <X(186)>` - :math:`5` :ref:`X(631) <X(631)>`, :math:`3` :ref:`X(381) <X(381)>` - X(18325), :math:`3` :ref:`X(381) <X(381)>` + X(35001), :ref:`X(382) <X(382)>` - :math:`3` X(18403), :ref:`X(382) <X(382)>` + :math:`3` X(18859), :math:`5` :ref:`X(403) <X(403)>` - :math:`4` X(11563), :math:`3` :ref:`X(403) <X(403)>` - :math:`2` X(11799), :ref:`X(403) <X(403)>` - :math:`4` X(37938), :math:`7` :ref:`X(403) <X(403)>` - :math:`4` X(43893), :math:`9` :ref:`X(403) <X(403)>` - :math:`8` X(44961), :math:`7` :ref:`X(403) <X(403)>` - :math:`8` X(46031), :math:`2` :ref:`X(468) <X(468)>` + X(5189), :math:`4` :ref:`X(468) <X(468)>` - :math:`3` X(7426), :math:`2` :ref:`X(468) <X(468)>` + :math:`3` X(10989), :math:`6` :ref:`X(468) <X(468)>` - X(20063), :math:`2` :ref:`X(468) <X(468)>` - :math:`5` X(30745), :math:`6` :ref:`X(468) <X(468)>` - :math:`5` X(37760), :math:`3` :ref:`X(468) <X(468)>` - :math:`2` X(37897), :math:`3` :ref:`X(468) <X(468)>` - X(37899), :math:`4` :ref:`X(468) <X(468)>` - X(37900), :math:`10` :ref:`X(468) <X(468)>` - :math:`3` X(37901), :math:`5` :ref:`X(468) <X(468)>` - :math:`3` X(37904), :math:`10` :ref:`X(468) <X(468)>` - :math:`9` X(37907), :math:`14` :ref:`X(468) <X(468)>` - :math:`9` X(37909), :math:`5` :ref:`X(468) <X(468)>` - :math:`2` X(37910), :math:`3` :ref:`X(468) <X(468)>` - :math:`4` X(37911), :math:`2` :ref:`X(548) <X(548)>` - :math:`3` X(34152), :math:`4` :ref:`X(548) <X(548)>` - :math:`3` X(44246), :math:`3` :ref:`X(549) <X(549)>` - :math:`2` X(18571), :math:`5` :ref:`X(631) <X(631)>` - :math:`6` X(10257), :math:`5` :ref:`X(631) <X(631)>` + :math:`3` X(46450), :math:`5` :ref:`X(632) <X(632)>` - :math:`2` X(12105)
 
 .. container:: note-item
 
@@ -82,7 +87,7 @@ X(858) = COMPLEMENT OF X(23)
    * :ref:`X(858) <X(858)>` = one of two harmonic traces of the power circles (:ref:`X(2) <X(2)>` is the other)
    * :ref:`X(858) <X(858)>` = homothetic center of :ref:`X(2) <X(2)>`- and :ref:`X(4) <X(4)>`-Ehrmann triangles; see :ref:`X(25) <X(25)>`
    * :ref:`X(858) <X(858)>` = Euler line intercept, other than :ref:`X(858) <X(858)>`, of circle {:ref:`X(403) <X(403)>`,\ :ref:`X(858) <X(858)>`,PU(4)}}
-   * :ref:`X(858) <X(858)>` = perspector of :ref:`X(2) <X(2)>`-Ehrmann triangle and cross-triangle of ABC and :ref:`X(2) <X(2)>`-Ehrmann triangle
+   * :ref:`X(858) <X(858)>` = perspector of :ref:`X(2) <X(2)>`-Ehrmann triangle and cross-triangle of :g:`ABC << A B C >>` and :ref:`X(2) <X(2)>`-Ehrmann triangle
    * :ref:`X(858) <X(858)>` = intersection of orthic axes of 1st and 2nd Ehrmann circumscribing triangles
    * :ref:`X(858) <X(858)>` = intersection of orthic axes of :term:`anticevian triangles <anticevian-triangle>` of PU(4)
    * :ref:`X(858) <X(858)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these (i,j): {:ref:`1 <X(1)>`, 1177}, {:ref:`19 <X(19)>`, 18876}, {:ref:`31 <X(31)>`, 2373}, {:ref:`32 <X(32)>`, 37220}, {:ref:`560 <X(560)>`, 46140}, {:ref:`647 <X(647)>`, 36095}, {:ref:`656 <X(656)>`, 10423}, {:ref:`896 <X(896)>`, 10422}, {1910, 36823}, {46165, 46289}
@@ -95,7 +100,7 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(858) <X(858)>` has Shinagawa coefficients (E - 2F,-2E - 2F).
+   As a point on the Euler line, :ref:`X(858) <X(858)>` has Shinagawa coefficients :math:`(E - 2F,-2E - 2F)`.
 
 .. toctree::
    :hidden:

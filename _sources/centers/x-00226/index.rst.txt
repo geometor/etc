@@ -16,7 +16,7 @@ X(226) = X(7)-CEVA CONJUGATE OF X(65)
    :alt: X(226) = X(7)-CEVA CONJUGATE OF X(65)
    :align: center
 
-   **X(226) = X(7)-CEVA CONJUGATE OF X(65)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(226) = X(7)-CEVA CONJUGATE OF X(65)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,13 +28,9 @@ X(226) = X(7)-CEVA CONJUGATE OF X(65)
    :badge: 4 forms
 
    * **Trilinears:** :math:`bc(b + c)/(b + c - a) : ca(c + a)/(c + a - b) : ab(a + b)/(a + b - c)`
-   * **Trilinears:** cos(angle BIC) : cos(angle CIA) : cos(angle AIB)
-   * **Barycentrics:** :math:`area(A'BC) : :`, where A'B'C' is the 2nd :term:`extouch triangle <extouch-triangle>`
-   * **Barycentrics:** :math:`r_{A} + r : r_{B} + r : r_{C} + r`, where r\ :sub:`A`, r\ :sub:`B`, r\ :sub:`C` are the exradii
-
-.. container:: note-item
-
-   :ref:`X(226) <X(226)>` lies.
+   * **Trilinears:** :math:`\cos(angle BIC) : \cos(angle CIA) : \cos(angle AIB)`
+   * **Barycentrics:** :math:`\operatorname{area}(A'BC) : :`, where :g:`A'B'C' << A' B' C' >>` is the 2nd :term:`extouch triangle <extouch-triangle>`
+   * **Barycentrics:** :math:`r_{A} + r : r_{B} + r : r_{C} + r`, where :math:`r_{A}`, :math:`r_{B}`, :math:`r_{C}` are the exradii
 
 .. collapse:: Incident Central Lines
    :badge: 51 lines
@@ -72,36 +68,36 @@ X(226) = X(7)-CEVA CONJUGATE OF X(65)
    * :ref:`X(226) <X(226)>` = perspector of 2nd extouch triangle and Gergonne line extraversion triangle
    * :ref:`X(226) <X(226)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`226 <X(226)>`), (:ref:`21 <X(21)>`, 1064), (:ref:`100 <X(100)>`, :ref:`42 <X(42)>`), (:ref:`190 <X(190)>`, :ref:`226 <X(226)>`), (:ref:`312 <X(312)>`, :ref:`306 <X(306)>`), (:ref:`321 <X(321)>`, :ref:`321 <X(321)>`), (:ref:`335 <X(335)>`, :ref:`226 <X(226)>`), (:ref:`835 <X(835)>`, :ref:`226 <X(226)>`)
    * :ref:`X(226) <X(226)>` = barycentric product :ref:`X(109) <X(109)>`\ \*\ :ref:`X(850) <X(850)>`
-   * :ref:`X(226) <X(226)>` = perspector of Gemini triangle 9 and cross-triangle of ABC and Gemini triangle 9
-   * :ref:`X(226) <X(226)>` = trilinear pole of perspectrix of ABC and Gemini triangle 10
-   * :ref:`X(226) <X(226)>` = perspector of Gemini triangle 40 and cross-triangle of ABC and Gemini triangle 40
+   * :ref:`X(226) <X(226)>` = perspector of Gemini triangle 9 and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 9
+   * :ref:`X(226) <X(226)>` = trilinear pole of perspectrix of :g:`ABC << A B C >>` and Gemini triangle 10
+   * :ref:`X(226) <X(226)>` = perspector of Gemini triangle 40 and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 40
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let A' be the radical center of the incircle and the B- and C-excircles; define B' and C' cyclically. A'B'C' is also the complement of the excentral triangle, and the triangle formed by the radical axes of the incircle and each excircle. Then :ref:`X(226) <X(226)>` is the homothetic center of A'B'C' and the intouch triangle. (Randy Hutson, December 26, 2015)
+   Let :g:`A' <A'>` be the radical center of the incircle and the B- and :g:`C <C>`-excircles; define :g:`B' <B'>` and :g:`C' <C'>` cyclically. :g:`A'B'C' << A' B' C' >>` is also the complement of the excentral triangle, and the triangle formed by the radical axes of the incircle and each excircle. Then :ref:`X(226) <X(226)>` is the homothetic center of :g:`A'B'C' << A' B' C' >>` and the intouch triangle. (Randy Hutson, December 26, 2015)
 
 .. container:: note-item
 
-   Let A' be the homothetic center of the :term:`orthic triangles <orthic-triangle>` of the intouch and A-extouch triangles, and define B' and C' cyclically. Let AaBaCa be the orthic triangle of the A-extouch triangle, and define AbBbCb, and AcBcCc cyclically. Let A″ be the centroid of AaAbAc, and define B″ and C″ cyclically. Then A'B'C' and A″B″C″ are homothetic to each other and to the :term:`medial triangle <medial-triangle>` and the orthic triangle of the intouch triangle at :ref:`X(226) <X(226)>`. (Randy Hutson, December 26, 2015)
+   Let :g:`A' <A'>` be the homothetic center of the :term:`orthic triangles <orthic-triangle>` of the intouch and A-extouch triangles, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Let :g:`A_{a}B_{a}C_{a} << A_a B_a C_a >>` be the orthic triangle of the A-extouch triangle, and define :g:`A_{b}B_{b}C_{b} << A_b B_b C_b >>`, and :g:`A_{c}B_{c}C_{c} << A_c B_c C_c >>` cyclically. Let :g:`A″ <A″>` be the centroid of :g:`A_{a}A_{b}A_{c} << A_a A_b A_c >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Then :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>` are homothetic to each other and to the :term:`medial triangle <medial-triangle>` and the orthic triangle of the intouch triangle at :ref:`X(226) <X(226)>`. (Randy Hutson, December 26, 2015)
 
 .. container:: note-item
 
-   Let (A') be the pedal circle of the A-vertex of the hexyl triangle, and define (B') and (C') cyclically. Then :ref:`X(226) <X(226)>` is the radical center of circles (A'), (B'), (C'). (Randy Hutson, December 26, 2015)
+   Let (:g:`A' <A'>`) be the pedal circle of the :g:`A <A>`-vertex of the hexyl triangle, and define (:g:`B' <B'>`) and (:g:`C' <C'>`) cyclically. Then :ref:`X(226) <X(226)>` is the radical center of circles (:g:`A' <A'>`), (:g:`B' <B'>`), (:g:`C' <C'>`). (Randy Hutson, December 26, 2015)
 
 .. container:: note-item
 
-   Let IaIbIc be the reflection triangle of :ref:`X(1) <X(1)>`. Let A' be the trilinear pole of line IbIc, and define B', C' cyclically. The lines AA', BB', CC' concur in :ref:`X(226) <X(226)>`. (Randy Hutson, July 20, 2016)
+   Let :g:`I_{a}I_{b}I_{c} << I_a I_b I_c >>` be the reflection triangle of :ref:`X(1) <X(1)>`. Let :g:`A' <A'>` be the trilinear pole of line :g:`I_{b}I_{c} <[ I_b I_c ]>`, and define :g:`B' <B'>`, :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(226) <X(226)>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
-   Let A\ :sub:`13`\ B\ :sub:`13`\ C\ :sub:`13` be Gemini triangle 13. Let A' be the perspector of conic {A,B,C,B\ :sub:`13`,C\ :sub:`13`}}, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(226) <X(226)>`. (Randy Hutson, January 15, 2019)
+   Let :g:`A_{13}B_{13}C_{13} << A_13 B_13 C_13 >>` be Gemini triangle 13. Let :g:`A' <A'>` be the perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B_{13} <B_13>`,\ :g:`C_{13} <C_13>`}}, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(226) <X(226)>`. (Randy Hutson, January 15, 2019)
 
 .. container:: note-item
 
-   Let A\ :sub:`14`\ B\ :sub:`14`\ C\ :sub:`14` be Gemini triangle 14. Let A' be the center of conic {A,B,C,B\ :sub:`14`,C\ :sub:`14`}}, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(226) <X(226)>`. (Randy Hutson, January 15, 2019)
+   Let :g:`A_{14}B_{14}C_{14} << A_14 B_14 C_14 >>` be Gemini triangle 14. Let :g:`A' <A'>` be the center of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B_{14} <B_14>`,\ :g:`C_{14} <C_14>`}}, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(226) <X(226)>`. (Randy Hutson, January 15, 2019)
 
 .. toctree::
    :hidden:

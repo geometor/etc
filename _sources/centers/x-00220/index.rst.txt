@@ -16,7 +16,7 @@ X(220) = X(9)-CEVA CONJUGATE OF X(55)
    :alt: X(220) = X(9)-CEVA CONJUGATE OF X(55)
    :align: center
 
-   **X(220) = X(9)-CEVA CONJUGATE OF X(55)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(220) = X(9)-CEVA CONJUGATE OF X(55)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,11 +27,7 @@ X(220) = X(9)-CEVA CONJUGATE OF X(55)
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`(1 + \cos A)^{2}/\sin A : : (M. Iliev, 4/12/07)`
-
-.. container:: note-item
-
-   :ref:`X(220) <X(220)>` lies.
+   * **Trilinears:** :math:`(1 + \cos A)^{2}/\sin A : :` (M. Iliev, 4/12/07)
 
 .. collapse:: Incident Central Lines
    :badge: 20 lines
@@ -51,7 +47,7 @@ X(220) = X(9)-CEVA CONJUGATE OF X(55)
    * :ref:`X(220) <X(220)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(513) <X(513)>`\ \ :ref:`X(676) <X(676)>`
    * :ref:`X(220) <X(220)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`101 <X(101)>`, :ref:`221 <X(221)>`), (:ref:`220 <X(220)>`, :ref:`41 <X(41)>`), (:ref:`644 <X(644)>`, :ref:`220 <X(220)>`), (:ref:`728 <X(728)>`, :ref:`728 <X(728)>`)
    * :ref:`X(220) <X(220)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(9) <X(9)>`}-harmonic conjugate of X(1212)
-   * :ref:`X(220) <X(220)>` = perspector of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of inverse-in-incircle triangle
+   * :ref:`X(220) <X(220)>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of inverse-in-incircle triangle
    * :ref:`X(220) <X(220)>` = barycentric square of :ref:`X(9) <X(9)>`
 
 Notes
@@ -59,7 +55,7 @@ Notes
 
 .. container:: note-item
 
-   Let A' be the barycentric product of the circumcircle intercepts of the A-excircle. Define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(220) <X(220)>`. (Randy Hutson, July 11, 2019)
+   Let :g:`A' <A'>` be the barycentric product of the circumcircle intercepts of the :g:`A <A>`-excircle. Define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(220) <X(220)>`. (Randy Hutson, July 11, 2019)
 
 .. toctree::
    :hidden:

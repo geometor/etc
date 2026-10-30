@@ -11,13 +11,13 @@ X(31) = 2nd POWER POINT
 
 .. enunciation::
 
-   Let A'B'C' be the circumsymmedial triangle. Let A″ be the trilinear product B'\*C', and define B″ and C″ cyclically. Then A″, B″, C″ are collinear on line :ref:`X(667) <X(667)>`\ \ :ref:`X(788) <X(788)>` (the :term:`trilinear polar <trilinear-polar>` of :ref:`X(31) <X(31)>`). The lines AA″, BB″, CC″ concur in :ref:`X(31) <X(31)>`. (:person:`Randy Hutson <randy-hutson>`, February 10, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the circumsymmedial triangle. Let :g:`A″ <A″>` be the trilinear product :g:`B' <B'>`\ \*\ :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Then :g:`A″ <A″>`, :g:`B″ <B″>`, :g:`C″ <C″>` are collinear on line :ref:`X(667) <X(667)>`\ \ :ref:`X(788) <X(788)>` (the :term:`trilinear polar <trilinear-polar>` of :ref:`X(31) <X(31)>`). The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(31) <X(31)>`. (:person:`Randy Hutson <randy-hutson>`, February 10, 2016)
 
 .. figure:: x-00031.svg
    :alt: X(31) = 2nd POWER POINT
    :align: center
 
-   **X(31) = 2nd POWER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(31) = 2nd POWER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -36,11 +36,7 @@ X(31) = 2nd POWER POINT
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(31) <X(31)>` = (r\ :sup:`2` + s\ :sup:`2`)\*\ :ref:`X(1) <X(1)>` - 6rR\*\ :ref:`X(2) <X(2)>` - 4r\ :sup:`2`\ \*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-
-.. container:: note-item
-
-   :ref:`X(31) <X(31)>` lies.
+   * :ref:`X(31) <X(31)>` = :math:`(r^{2} + s^{2})` :ref:`X(1) <X(1)>` - :math:`6rR` :ref:`X(2) <X(2)>` - :math:`4r^{2}` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. collapse:: Incident Central Lines
    :badge: 123 lines
@@ -80,16 +76,16 @@ X(31) = 2nd POWER POINT
    * :ref:`X(31) <X(31)>` = trilinear square of :ref:`X(6) <X(6)>`
    * :ref:`X(31) <X(31)>` = trilinear cube root of X(1917)
    * :ref:`X(31) <X(31)>` = vertex conjugate of foci of incentral inellipse
-   * :ref:`X(31) <X(31)>` = perspector of ABC and extraversion triangle of :ref:`X(31) <X(31)>` (which is also the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(31) <X(31)>`)
+   * :ref:`X(31) <X(31)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(31) <X(31)>` (which is also the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(31) <X(31)>`)
    * :ref:`X(31) <X(31)>` = {:ref:`X(1) <X(1)>`,X(1707)}-harmonic conjugate of :ref:`X(63) <X(63)>`
-   * :ref:`X(31) <X(31)>` = perspector of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of extraversion triangle of :ref:`X(7) <X(7)>`
-   * :ref:`X(31) <X(31)>` = perspector of ABC and unary cofactor triangle of extraversion triangle of :ref:`X(8) <X(8)>` (2nd Conway triangle)
-   * :ref:`X(31) <X(31)>` = perspector of ABC and unary cofactor triangle of 4th Conway triangle
+   * :ref:`X(31) <X(31)>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of extraversion triangle of :ref:`X(7) <X(7)>`
+   * :ref:`X(31) <X(31)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of extraversion triangle of :ref:`X(8) <X(8)>` (2nd Conway triangle)
+   * :ref:`X(31) <X(31)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of 4th Conway triangle
    * :ref:`X(31) <X(31)>` = perspector of unary cofactor triangles of 2nd and 4th Conway triangles
    * :ref:`X(31) <X(31)>` = perspector of unary cofactor triangles of Gemini triangles 2 and 30
-   * :ref:`X(31) <X(31)>` = perspector of ABC and cross-triangle of Gemini triangles 33 and 34
-   * :ref:`X(31) <X(31)>` = perspector of ABC and cross-triangle of ABC and Gemini triangle 33
-   * :ref:`X(31) <X(31)>` = perspector of ABC and cross-triangle of ABC and Gemini triangle 34
+   * :ref:`X(31) <X(31)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of Gemini triangles 33 and 34
+   * :ref:`X(31) <X(31)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 33
+   * :ref:`X(31) <X(31)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 34
    * :ref:`X(31) <X(31)>` = barycentric product of vertices of Gemini triangle 33
    * :ref:`X(31) <X(31)>` = barycentric product of vertices of Gemini triangle 34
    * :ref:`X(31) <X(31)>` = barycentric product of (nonreal) circumcircle intercepts of the antiorthic axis
@@ -102,11 +98,11 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the Apus triangle. Let A″ be the trilinear product B'\*C', and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(31) <X(31)>`. (Randy Hutson, February 10, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the Apus triangle. Let :g:`A″ <A″>` be the trilinear product :g:`B' <B'>`\ \*\ :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(31) <X(31)>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the Ara triangle. Let A″ be the trilinear product B'\*C', and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(31) <X(31)>`. (Randy Hutson, February 10, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the Ara triangle. Let :g:`A″ <A″>` be the trilinear product :g:`B' <B'>`\ \*\ :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(31) <X(31)>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 
@@ -114,7 +110,7 @@ Notes
 
 .. container:: note-item
 
-   Let A\ :sub:`1`\ B\ :sub:`1`\ C\ :sub:`1` and A\ :sub:`2`\ B\ :sub:`2`\ C\ :sub:`2` be the 1st and 2nd Kenmotu diagonals triangles. Let A' be the trilinear product A\ :sub:`1`\ \*A\ :sub:`2`, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(31) <X(31)>`. (Randy Hutson, February 10, 2016)
+   Let :g:`A_{1}B_{1}C_{1} << A_1 B_1 C_1 >>` and :g:`A_{2}B_{2}C_{2} << A_2 B_2 C_2 >>` be the 1st and 2nd Kenmotu diagonals triangles. Let :g:`A' <A'>` be the trilinear product :g:`A_{1} <A_1>`\ \*\ :g:`A_{2} <A_2>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(31) <X(31)>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 

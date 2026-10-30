@@ -11,7 +11,7 @@ X(401) = BAILEY POINT
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(401) <X(401)>` has Shinagawa coefficients (EF + F\ :sup:`2` - S\ :sup:`2`, 2S\ :sup:`2`).
+   As a point on the Euler line, :ref:`X(401) <X(401)>` has Shinagawa coefficients :math:`(EF + F^{2} - S^{2}, 2S^{2})`.
 
 .. _preamble-0009:
 
@@ -24,7 +24,7 @@ X(401) = BAILEY POINT
    :alt: X(401) = BAILEY POINT
    :align: center
 
-   **X(401) = BAILEY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(401) = BAILEY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -36,17 +36,13 @@ X(401) = BAILEY POINT
    :badge: 3 forms
 
    * **Barycentrics:** :math:`\tan B + \tan C - \tan A - \cot \omega : :`
-   * **Barycentrics:** :math:`a^8 - 2 a^6 (b^2 + c^2) + a^4 (b^4 + b^2 c^2 + c^4) + b^2 c^2 (b^2 - c^2)^2 : :`
+   * **Barycentrics:** :math:`a^{8} - 2 a^{6} (b^{2} + c^{2}) + a^{4} (b^{4} + b^{2} c^{2} + c^{4}) + b^{2} c^{2} (b^{2} - c^{2})^{2} : :`
    * **Barycentrics:** :math:`\tan A - \cot \omega ' : :`, where ω' is the Brocard angle of the :term:`orthic triangle <orthic-triangle>`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(401) <X(401)>` = 3 SA SB SC SW :ref:`X(2) <X(2)>` - S^4 :ref:`X(20) <X(20)>`
-
-.. container:: note-item
-
-   :ref:`X(401) <X(401)>` lies.
+   * :ref:`X(401) <X(401)>` = :math:`3 S_{A} S_{B} S_{C} S_{\omega}` :ref:`X(2) <X(2)>` - :math:`S^{4}` :ref:`X(20) <X(20)>`
 
 .. collapse:: Incident Central Lines
    :badge: 101 lines
@@ -62,7 +58,7 @@ X(401) = BAILEY POINT
    * :ref:`X(401) <X(401)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(1972)
    * :ref:`X(401) <X(401)>` = :term:`anticomplement <anticomplement>` of :ref:`X(297) <X(297)>`
    * :ref:`X(401) <X(401)>` = circumcircle-inverse of X(37918)
-   * :ref:`X(401) <X(401)>` = perspector of conic {A,B,C,\ :ref:`X(95) <X(95)>`,\ :ref:`X(648) <X(648)>`}}
+   * :ref:`X(401) <X(401)>` = perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(95) <X(95)>`,\ :ref:`X(648) <X(648)>`}}
    * :ref:`X(401) <X(401)>` = :ref:`X(2) <X(2)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(3) <X(3)>`
    * :ref:`X(401) <X(401)>` = inverse-in-Steiner-circumellipse of :ref:`X(3) <X(3)>`
    * :ref:`X(401) <X(401)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`2 <X(2)>`, 39081), (:ref:`287 <X(287)>`, :ref:`2 <X(2)>`), (:ref:`511 <X(511)>`, :ref:`385 <X(385)>`)

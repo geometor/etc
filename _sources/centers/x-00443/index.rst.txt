@@ -10,22 +10,19 @@ X(443) = COMPLEMENT OF X(452)
 
 .. enunciation::
 
-   Barycentrics v + w : w + u : u + v
+   As a point on the Euler line, :ref:`X(443) <X(443)>` has Shinagawa coefficients :math:`(abc \$a\$, S^{2})`.
 
 .. figure:: x-00443.svg
    :alt: X(443) = COMPLEMENT OF X(452)
    :align: center
 
-   **X(443) = COMPLEMENT OF X(452)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(443) = COMPLEMENT OF X(452)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`bc(v + w) : ca(w + u) : ab(u + v)`, where, u : v : w = :ref:`X(380) <X(380)>`
+   | **Trilinears:** :math:`bc(v + w) : ca(w + u) : ab(u + v)`, where :math:`u : v : w` = :ref:`X(380) <X(380)>`
+   | **Barycentrics:** :math:`v + w : w + u : u + v`
    | **Search Value (6, 9, 13):** :math:`2.325398501421`
-
-.. container:: note-item
-
-   :ref:`X(443) <X(443)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 77 lines
@@ -37,13 +34,6 @@ X(443) = COMPLEMENT OF X(452)
    :badge: 1 relation
 
    * :ref:`X(443) <X(443)>` = :term:`complement <complement>` of :ref:`X(452) <X(452)>`
-
-Notes
------
-
-.. container:: note-item
-
-   As a point on the Euler line, :ref:`X(443) <X(443)>` has Shinagawa coefficients (abc\*$a$, S\ :sup:`2`).
 
 .. toctree::
    :hidden:

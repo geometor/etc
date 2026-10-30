@@ -16,7 +16,7 @@ X(521) = ISOGONAL CONJUGATE OF X(108)
    :alt: X(521) = ISOGONAL CONJUGATE OF X(108)
    :align: center
 
-   **X(521) = ISOGONAL CONJUGATE OF X(108)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(521) = ISOGONAL CONJUGATE OF X(108)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -26,13 +26,9 @@ X(521) = ISOGONAL CONJUGATE OF X(108)
 .. collapse:: Alternate Coordinates
    :badge: 3 forms
 
-   * **Trilinears:** :math:`(b - c)(b + c - a)(b^2 + c^2 - a^2) : :`
-   * **Trilinears:** directed distance from A to line :ref:`X(1) <X(1)>`\ \ :ref:`X(4) <X(4)>` : :
+   * **Trilinears:** :math:`(b - c)(b + c - a)(b^{2} + c^{2} - a^{2}) : :`
+   * **Trilinears:** directed distance from :g:`A <A>` to line :ref:`X(1) <X(1)>`\ \ :ref:`X(4) <X(4)>` : :
    * **Barycentrics:** :math:`(\cos A)(\cos B - \cos C) : :`
-
-.. container:: note-item
-
-   :ref:`X(521) <X(521)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 18 lines
@@ -48,7 +44,7 @@ X(521) = ISOGONAL CONJUGATE OF X(108)
    * :ref:`X(521) <X(521)>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X(123) <X(123)>`
    * :ref:`X(521) <X(521)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of X(34188)
    * :ref:`X(521) <X(521)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`2 <X(2)>`, 35072), (:ref:`4 <X(4)>`, :ref:`123 <X(123)>`), (:ref:`100 <X(100)>`, :ref:`3 <X(3)>`)
-   * :ref:`X(521) <X(521)>` = perspector of hyperbola {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(21) <X(21)>`}}
+   * :ref:`X(521) <X(521)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(21) <X(21)>`}}
    * :ref:`X(521) <X(521)>` = :term:`crosspoint <crosspoint>` of :ref:`X(8) <X(8)>` and :ref:`X(100) <X(100)>`
    * :ref:`X(521) <X(521)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`33 <X(33)>`, :ref:`650 <X(650)>`), (:ref:`56 <X(56)>`, :ref:`513 <X(513)>`), (:ref:`429 <X(429)>`, :ref:`523 <X(523)>`), (:ref:`663 <X(663)>`, 1400)
    * :ref:`X(521) <X(521)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(6) <X(6)>`\ \ :ref:`X(19) <X(19)>`

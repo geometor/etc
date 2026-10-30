@@ -10,18 +10,18 @@ X(428) = EULER X(38)-5th-SUBSTITUTION POINT
 
 .. enunciation::
 
-   Let V = P(4)-:term:`Ceva conjugate <ceva-conjugate>` of U(4)) and W = U(4)-Ceva conjugate of P(4); then V and W lie on the orthocentroidal circle, and with with PU(4) they are the vertices of a cyclic trapezoid. The midpoint of V and W is :ref:`X(428) <X(428)>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
+   Let V = P(4)-:term:`Ceva conjugate <ceva-conjugate>` of U(4)) and W = U(4)-Ceva conjugate of P(4); then :g:`V <V>` and :g:`W <W>` lie on the orthocentroidal circle, and with with PU(4) they are the vertices of a cyclic trapezoid. The midpoint of :g:`V <V>` and :g:`W <W>` is :ref:`X(428) <X(428)>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
 
 .. figure:: x-00428.svg
    :alt: X(428) = EULER X(38)-5th-SUBSTITUTION POINT
    :align: center
 
-   **X(428) = EULER X(38)-5th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(428) = EULER X(38)-5th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`3 \sec A - \csc A \tan \omega : :`
-   | **Barycentrics:** :math:`(a^2 + b^2 - c^2)*(a^2 - b^2 + c^2)*(2*a^2 + b^2 + c^2) : :`
+   | **Barycentrics:** :math:`(a^{2} + b^{2} - c^{2}) \cdot (a^{2} - b^{2} + c^{2}) \cdot (2 a^{2} + b^{2} + c^{2}) : :`
    | **Search Value (6, 9, 13):** :math:`-2.769479717909`
 
 .. collapse:: Alternate Coordinates
@@ -32,11 +32,7 @@ X(428) = EULER X(38)-5th-SUBSTITUTION POINT
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(428) <X(428)>` = 5 :ref:`X(2) <X(2)>` - 4 X(7734), 3 :ref:`X(2) <X(2)>` - 4 X(10128), 7 :ref:`X(2) <X(2)>` - 8 X(13361), 4 :ref:`X(2) <X(2)>` - 3 X(43957), 4 :ref:`X(4) <X(4)>` - X(1885), 2 :ref:`X(4) <X(4)>` + X(3575), 5 :ref:`X(4) <X(4)>` + X(6240), :ref:`X(4) <X(4)>` + 2 X(6756), 5 :ref:`X(4) <X(4)>` - 2 X(13488), 3 :ref:`X(4) <X(4)>` + X(18559), 7 :ref:`X(4) <X(4)>` - X(18560), 11 :ref:`X(4) <X(4)>` + X(34797), 2 :ref:`X(5) <X(5)>` + X(7553), :ref:`X(20) <X(20)>` - 4 X(9825), 4 :ref:`X(140) <X(140)>` - 3 X(43934), :ref:`X(382) <X(382)>` + 2 X(31833), 2 :ref:`X(546) <X(546)>` + X(11819), 4 :ref:`X(546) <X(546)>` - X(12605), :ref:`X(548) <X(548)>` - 4 X(13163), 5 X(1656) - 8 X(23411), X(1885) + 2 X(3575), 5 X(1885) + 4 X(6240), X(1885) + 8 X(6756), X(1885) + 4 X(7576), 5 X(1885) - 8 X(13488), 3 X(1885) + 4 X(18559), 7 X(1885) - 4 X(18560), 11 X(1885) + 4 X(34797), 5 X(3091) - 2 X(12362), X(3146) + 2 X(31829), 5 X(3575) - 2 X(6240), X(3575) - 4 X(6756), 5 X(3575) + 4 X(13488), 3 X(3575) - 2 X(18559), 7 X(3575) + 2 X(18560), 11 X(3575) - 2 X(34797), X(3627) + 2 X(31830), 7 X(3832) - X(12225), 3 X(3839) - X(52069), 5 X(3843) - X(18564), 5 X(3858) - 2 X(52073), 4 X(3861) - X(52070), X(6240) - 10 X(6756), X(6240) - 5 X(7576), X(6240) + 2 X(13488), 3 X(6240) - 5 X(18559), 7 X(6240) + 5 X(18560), 11 X(6240) - 5 X(34797), and many others
-
-.. container:: note-item
-
-   :ref:`X(428) <X(428)>` lies.
+   * :ref:`X(428) <X(428)>` = :math:`5` :ref:`X(2) <X(2)>` - :math:`4` X(7734), :math:`3` :ref:`X(2) <X(2)>` - :math:`4` X(10128), :math:`7` :ref:`X(2) <X(2)>` - :math:`8` X(13361), :math:`4` :ref:`X(2) <X(2)>` - :math:`3` X(43957), :math:`4` :ref:`X(4) <X(4)>` - X(1885), :math:`2` :ref:`X(4) <X(4)>` + X(3575), :math:`5` :ref:`X(4) <X(4)>` + X(6240), :ref:`X(4) <X(4)>` + :math:`2` X(6756), :math:`5` :ref:`X(4) <X(4)>` - :math:`2` X(13488), :math:`3` :ref:`X(4) <X(4)>` + X(18559), :math:`7` :ref:`X(4) <X(4)>` - X(18560), :math:`11` :ref:`X(4) <X(4)>` + X(34797), :math:`2` :ref:`X(5) <X(5)>` + X(7553), :ref:`X(20) <X(20)>` - :math:`4` X(9825), :math:`4` :ref:`X(140) <X(140)>` - :math:`3` X(43934), :ref:`X(382) <X(382)>` + :math:`2` X(31833), :math:`2` :ref:`X(546) <X(546)>` + X(11819), :math:`4` :ref:`X(546) <X(546)>` - X(12605), :ref:`X(548) <X(548)>` - :math:`4` X(13163), :math:`5` X(1656) - :math:`8` X(23411), X(1885) + :math:`2` X(3575), :math:`5` X(1885) + :math:`4` X(6240), X(1885) + :math:`8` X(6756), X(1885) + :math:`4` X(7576), :math:`5` X(1885) - :math:`8` X(13488), :math:`3` X(1885) + :math:`4` X(18559), :math:`7` X(1885) - :math:`4` X(18560), :math:`11` X(1885) + :math:`4` X(34797), :math:`5` X(3091) - :math:`2` X(12362), X(3146) + :math:`2` X(31829), :math:`5` X(3575) - :math:`2` X(6240), X(3575) - :math:`4` X(6756), :math:`5` X(3575) + :math:`4` X(13488), :math:`3` X(3575) - :math:`2` X(18559), :math:`7` X(3575) + :math:`2` X(18560), :math:`11` X(3575) - :math:`2` X(34797), X(3627) + :math:`2` X(31830), :math:`7` X(3832) - X(12225), :math:`3` X(3839) - X(52069), :math:`5` X(3843) - X(18564), :math:`5` X(3858) - :math:`2` X(52073), :math:`4` X(3861) - X(52070), X(6240) - :math:`10` X(6756), X(6240) - :math:`5` X(7576), X(6240) + :math:`2` X(13488), :math:`3` X(6240) - :math:`5` X(18559), :math:`7` X(6240) + :math:`5` X(18560), :math:`11` X(6240) - :math:`5` X(34797), and many others
 
 .. collapse:: Incident Central Lines
    :badge: 265 lines
@@ -71,7 +67,7 @@ X(428) = EULER X(38)-5th-SUBSTITUTION POINT
    * :ref:`X(428) <X(428)>` = :term:`crosssum <crosssum>` of :ref:`X(3) <X(3)>` and X(3917)
    * :ref:`X(428) <X(428)>` = :term:`crossdifference <crossdifference>` of every pair of points on line {647, 22121}
    * :ref:`X(428) <X(428)>` = :ref:`X(2) <X(2)>`-of-anti-Ara-triangle
-   * :ref:`X(428) <X(428)>` = :ref:`X(354) <X(354)>`-of-orthic-triangle if ABC is acute
+   * :ref:`X(428) <X(428)>` = :ref:`X(354) <X(354)>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(428) <X(428)>` = :ref:`X(2) <X(2)>` of 3rd :term:`pedal triangle <pedal-triangle>` of :ref:`X(4) <X(4)>`
    * :ref:`X(428) <X(428)>` = {:ref:`X(2) <X(2)>`,\ :ref:`X(4) <X(4)>`}-harmonic conjugate of X(5064)
    * :ref:`X(428) <X(428)>` = barycentric product X(i)\*X(j) for these {i,j}: {:ref:`4 <X(4)>`, 3589}, {:ref:`6 <X(6)>`, 44142}, {:ref:`25 <X(25)>`, 39998}, {:ref:`76 <X(76)>`, 44091}, {:ref:`83 <X(83)>`, 46026}, {:ref:`92 <X(92)>`, 17469}, {:ref:`264 <X(264)>`, 5007}, {:ref:`278 <X(278)>`, 4030}, {:ref:`281 <X(281)>`, 7198}, {:ref:`286 <X(286)>`, 21802}, {:ref:`393 <X(393)>`, 7767}, {:ref:`648 <X(648)>`, 7927}, {1783, 48152}, {1824, 16707}, {1826, 17200}, {1897, 48101}, {2052, 22352}, {2501, 10330}, {6292, 32085}, {6331, 8664}, {11205, 46104}, {28666, 52395}
@@ -83,17 +79,17 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(428) <X(428)>` has Shinagawa coefficients (F,-3E - 3F).
+   As a point on the Euler line, :ref:`X(428) <X(428)>` has Shinagawa coefficients :math:`(F,-3E - 3F)`.
 
 .. container:: note-item
 
-   Let H = :ref:`X(4) <X(4)>` and let A'B'C' be the pedal triangle of H in the plane of a triangle ABC. Let
+   Let H = :ref:`X(4) <X(4)>` and let :g:`A'B'C' << A' B' C' >>` be the pedal triangle of :g:`H <H>` in the plane of a triangle :g:`ABC << A B C >>`. Let
 
-      * Bc = reflection of B' in HC', and define Ca and Ab cyclically;
-      * Cb = reflection of C' in HB', and define Ac and Ba cyclically;
-      * Ha = orthogonal projecton of A on BcCb, and define Hb and Hc cyclically.
+      * :g:`B_{c} <B_c>` = reflection of :g:`B' <B'>` in :g:`HC' <[ H C' ]>`, and define :g:`C_{a} <C_a>` and :g:`A_{b} <A_b>` cyclically;
+      * :g:`C_{b} <C_b>` = reflection of :g:`C' <C'>` in :g:`HB' <[ H B' ]>`, and define :g:`A_{c} <A_c>` and :g:`B_{a} <B_a>` cyclically;
+      * :g:`H_{a} <H_a>` = orthogonal projecton of :g:`A <A>` on :g:`B_{c}C_{b} <[ B_c C_b ]>`, and define :g:`H_{b} <H_b>` and :g:`H_{c} <H_c>` cyclically.
 
-   Then :ref:`X(428) <X(428)>` = centroid of triangle HaHbHc. See :person:`Antreas Hatzipolakis <antreas-hatzipolakis>` and :person:`Peter Moses <peter-moses>`, `Hyacinthos 27169 <http://www.hyacinthos.epizy.com/message.php?msg=27169>`__
+   Then :ref:`X(428) <X(428)>` = centroid of triangle :g:`H_{a}H_{b}H_{c} << H_a H_b H_c >>`. See :person:`Antreas Hatzipolakis <antreas-hatzipolakis>` and :person:`Peter Moses <peter-moses>`, `Hyacinthos 27169 <http://www.hyacinthos.epizy.com/message.php?msg=27169>`__
 
 .. toctree::
    :hidden:

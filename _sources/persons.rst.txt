@@ -48,7 +48,7 @@ Swiss mathematician who proved in 1765 that the orthocenter :ref:`X(4) <X(4)>`, 
 Pierre de Fermat (1607–1665)
 ----------------------------
 
-French mathematician who posed the problem of finding the point :ref:`X(13) <X(13)>` minimizing the sum of distances \|AX\| + \|BX\| + \|CX\| to the vertices of ABC.
+French mathematician who posed the problem of finding the point :ref:`X(13) <X(13)>` minimizing the sum of distances \|\ :g:`AX <[ A X ]>`\ \| + \|\ :g:`BX <[ B X ]>`\ \| + \|\ :g:`CX <[ C X ]>`\ \| to the vertices of :g:`ABC << A B C >>`.
 
 .. _person-karl-wilhelm-feuerbach:
 .. _karl-wilhelm-feuerbach:
@@ -232,7 +232,7 @@ Researcher on Poncelet porisms, locus invariants, and dynamic triangle center lo
 Kiminari Shinagawa (fl. 2015–present)
 -------------------------------------
 
-Geometer who introduced the Shinagawa coefficients (G, H) for triangle centers on the Euler line.
+Geometer who introduced the Shinagawa coefficients :math:`(G, H) for triangle centers on the Euler line`.
 
 .. _person-theodor-spieker:
 .. _theodor-spieker:
@@ -240,7 +240,7 @@ Geometer who introduced the Shinagawa coefficients (G, H) for triangle centers o
 Theodor Spieker (1823–1913)
 ---------------------------
 
-German geometer who discovered the Spieker center :ref:`X(10) <X(10)>` (incenter of the medial triangle and center of mass of the perimeter of ABC).
+German geometer who discovered the Spieker center :ref:`X(10) <X(10)>` (incenter of the medial triangle and center of mass of the perimeter of :g:`ABC << A B C >>`).
 
 .. _person-evangelista-torricelli:
 .. _evangelista-torricelli:
@@ -248,7 +248,7 @@ German geometer who discovered the Spieker center :ref:`X(10) <X(10)>` (incenter
 Evangelista Torricelli (1608–1647)
 ----------------------------------
 
-Italian physicist and mathematician who solved Fermat's problem via equilateral triangles erected on the sides of ABC, locating :ref:`X(13) <X(13)>` and :ref:`X(14) <X(14)>`.
+Italian physicist and mathematician who solved Fermat's problem via equilateral triangles erected on the sides of :g:`ABC << A B C >>`, locating :ref:`X(13) <X(13)>` and :ref:`X(14) <X(14)>`.
 
 .. _person-eric-weisstein:
 .. _eric-weisstein:

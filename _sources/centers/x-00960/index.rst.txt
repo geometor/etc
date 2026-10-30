@@ -16,17 +16,13 @@ X(960) = INTERSECTION OF LINES X(1)X(6) AND X(5)X(10)
    :alt: X(960) = INTERSECTION OF LINES X(1)X(6) AND X(5)X(10)
    :align: center
 
-   **X(960) = INTERSECTION OF LINES X(1)X(6) AND X(5)X(10)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(960) = INTERSECTION OF LINES X(1)X(6) AND X(5)X(10)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = (b + c - a)(b\ :sup:`2` + c\ :sup:`2` + ab + ac)
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = (b + c - a)(b^{2} + c^{2} + ab + ac)`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`3.679190031981`
-
-.. container:: note-item
-
-   :ref:`X(960) <X(960)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 20 lines
@@ -54,7 +50,7 @@ X(960) = INTERSECTION OF LINES X(1)X(6) AND X(5)X(10)
    * :ref:`X(960) <X(960)>` = X(3035)-of-inner-Garcia-triangle
    * :ref:`X(960) <X(960)>` = X(12241)-of-excentral-triangle
    * :ref:`X(960) <X(960)>` = polar conjugate of isogonal conjugate of X(22074)
-   * :ref:`X(960) <X(960)>` = excentral-to-ABC :term:`barycentric image <barycentric-image>` of :ref:`X(10) <X(10)>`
+   * :ref:`X(960) <X(960)>` = excentral-to-:g:`ABC << A B C >>` :term:`barycentric image <barycentric-image>` of :ref:`X(10) <X(10)>`
 
 .. toctree::
    :hidden:

@@ -10,13 +10,13 @@ X(92) = CEVAPOINT OF INCENTER AND CLAWSON POINT
 
 .. enunciation::
 
-   Suppose that T = A'B'C' is a :term:`central triangle <central-triangle>`. Let A'' be the pole with respect to the polar circle of the line B'C', and define B'' and C'' cyclically. The appearance of T in the following list means that the lines AA'', BB'', CC'' concur in :ref:`X(92) <X(92)>`: Feurerbach, incentral, excentral, extangents, Apollonius, mixtilinear excentral. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
+   Suppose that :g:`T <T>` = :g:`A'B'C' << A' B' C' >>` is a :term:`central triangle <central-triangle>`. Let :g:`A″ <A″>` be the pole with respect to the polar circle of the line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The appearance of :g:`T <T>` in the following list means that the lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(92) <X(92)>`: Feurerbach, incentral, excentral, extangents, Apollonius, mixtilinear excentral. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
 
 .. figure:: x-00092.svg
    :alt: X(92) = CEVAPOINT OF INCENTER AND CLAWSON POINT
    :align: center
 
-   **X(92) = CEVAPOINT OF INCENTER AND CLAWSON POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(92) = CEVAPOINT OF INCENTER AND CLAWSON POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -32,12 +32,8 @@ X(92) = CEVAPOINT OF INCENTER AND CLAWSON POINT
 .. collapse:: Linear Combinations
    :badge: 2 combinations
 
-   * :ref:`X(92) <X(92)>` = 2r(r+2R)\*\ :ref:`X(4) <X(4)>` - ((r + 2R)^2 - s^2)\*\ :ref:`X(8) <X(8)>`
-   * :ref:`X(92) <X(92)>` = (sec A)\*[A] + (sec B)\*[B] + (sec C)\*[C], where A, B, C denote angles and [A], [B], [C] denote vertices
-
-.. container:: note-item
-
-   :ref:`X(92) <X(92)>` lies.
+   * :ref:`X(92) <X(92)>` = :math:`2r(r+2R)` :ref:`X(4) <X(4)>` - :math:`((r + 2R)^{2} - s^{2})` :ref:`X(8) <X(8)>`
+   * :ref:`X(92) <X(92)>` = :math:`(\sec A)` :g:`A <A>` + :math:`(\sec B)` :g:`B <B>` + :math:`(\sec C)` :g:`C <C>`, where :g:`A <A>`, :g:`B <B>`, :g:`C <C>` denote angles and :g:`A <A>`, :g:`B <B>`, :g:`C <C>` denote vertices
 
 .. collapse:: Incident Central Lines
    :badge: 71 lines
@@ -72,12 +68,12 @@ X(92) = CEVAPOINT OF INCENTER AND CLAWSON POINT
    * :ref:`X(92) <X(92)>` = :ref:`X(48) <X(48)>`-isoconjugate (polar conjugate) of :ref:`X(1) <X(1)>`
    * :ref:`X(92) <X(92)>` = :ref:`X(88) <X(88)>`-isoconjugate of X(23202)
    * :ref:`X(92) <X(92)>` = :ref:`X(91) <X(91)>`-isoconjugate of :ref:`X(563) <X(563)>`
-   * :ref:`X(92) <X(92)>` = perspector of ABC and extraversion triangle of :ref:`X(92) <X(92)>` (which is also the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(92) <X(92)>`)
+   * :ref:`X(92) <X(92)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(92) <X(92)>` (which is also the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(92) <X(92)>`)
    * :ref:`X(92) <X(92)>` = crosspoint of :ref:`X(1) <X(1)>` and :ref:`X(19) <X(19)>` wrt :term:`excentral triangle <excentral-triangle>`
    * :ref:`X(92) <X(92)>` = crosspoint of :ref:`X(47) <X(47)>` and :ref:`X(48) <X(48)>` wrt excentral triangle
-   * :ref:`X(92) <X(92)>` = perspector of ABC and cross-triangle of Gemini triangles 37 and 38
-   * :ref:`X(92) <X(92)>` = perspector of ABC and cross-triangle of ABC and Gemini triangle 37
-   * :ref:`X(92) <X(92)>` = perspector of ABC and cross-triangle of ABC and Gemini triangle 38
+   * :ref:`X(92) <X(92)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of Gemini triangles 37 and 38
+   * :ref:`X(92) <X(92)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 37
+   * :ref:`X(92) <X(92)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 38
    * :ref:`X(92) <X(92)>` = barycentric product of vertices of Gemini triangle 37
    * :ref:`X(92) <X(92)>` = barycentric product of vertices of Gemini triangle 38
 
@@ -86,15 +82,15 @@ Notes
 
 .. container:: note-item
 
-   Let L\ :sub:`A` be the line through :ref:`X(4) <X(4)>` parallel to the internal bisector of angle A, and let
+   Let :g:`L_{A} <L_A>` be the line through :ref:`X(4) <X(4)>` parallel to the internal bisector of angle :g:`A <A>`, and let
 
-      * A' = BC∩L\ :sub:`A`. Define B' and C' cyclically.
+      * :g:`A' <A'>` = :g:`BC <[ B C ]>`\ ∩\ :g:`L_{A} <L_A>`. Define :g:`B' <B'>` and :g:`C' <C'>` cyclically.
 
 .. container:: note-item
 
    **Alexei Myakishev,** "The M-Configuration of a Triangle," `Forum Geometricorum 3 (2003) 135-144 <http://forumgeom.fau.edu/FG2003volume3/FG200315.pdf>`__,
 
-   proves that the lines AA', BB', CC' concur in :ref:`X(92) <X(92)>`. He notes that another construction follows from Proposition 2 of the article: let A\ :sub:`1` be the midpoint of the arc BC of the circumcircle that passes through A, and let A\ :sub:`2` be the point, other than A, in which the A-altitude meets the circumcircle. Let A″ = A\ :sub:`1`\ A\ :sub:`2`\ ∩BC. Define B″ and C″ cyclically. Then the lines AA″, BB″, CC″ concur in :ref:`X(92) <X(92)>`.
+   proves that the lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(92) <X(92)>`. He notes that another construction follows from Proposition 2 of the article: let :g:`A_{1} <A_1>` be the midpoint of the arc :g:`BC <[ B C ]>` of the circumcircle that passes through :g:`A <A>`, and let :g:`A_{2} <A_2>` be the point, other than A, in which the :g:`A <A>`-altitude meets the circumcircle. Let :g:`A″ <A″>` = :g:`A_{1}A_{2} <[ A_1 A_2 ]>`\ ∩\ :g:`BC <[ B C ]>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Then the lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(92) <X(92)>`.
 
 .. toctree::
    :hidden:

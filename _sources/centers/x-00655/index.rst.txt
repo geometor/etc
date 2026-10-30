@@ -16,22 +16,22 @@ X(655) = TRILINEAR POLE OF LINE X(1)X(5)
    :alt: X(655) = TRILINEAR POLE OF LINE X(1)X(5)
    :align: center
 
-   **X(655) = TRILINEAR POLE OF LINE X(1)X(5)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(655) = TRILINEAR POLE OF LINE X(1)X(5)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`1/[\cos(A - B) - \cos(C- A)] : :`
-   | **Barycentrics:** :math:`(a - b)*(a - c)*(a + b - c)*(a - b + c)*(a^2 - a*b + b^2 - c^2)*(a^2 - b^2 - a*c + c^2) : :`
+   | **Barycentrics:** :math:`(a - b) \cdot (a - c) \cdot (a + b - c) \cdot (a - b + c) \cdot (a^{2} - a b + b^{2} - c^{2}) \cdot (a^{2} - b^{2} - a c + c^{2}) : :`
    | **Search Value (6, 9, 13):** :math:`-0.737967855306`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(655) <X(655)>` = 3 :ref:`X(2) <X(2)>` - 4 X(40536)
+   * :ref:`X(655) <X(655)>` = :math:`3` :ref:`X(2) <X(2)>` - :math:`4` X(40536)
 
 .. container:: note-item
 
-   :ref:`X(655) <X(655)>` lies on the curve CC9.
+   :ref:`X(655) <X(655)>` lies on the curve :g:`CC_{9} <[ C C_9 ]>`.
 
 .. collapse:: Incident Central Lines
    :badge: 44 lines

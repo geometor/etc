@@ -16,16 +16,12 @@ X(936) = INTERSECTION OF LINES X(1)X(2) AND X(3)X(9)
    :alt: X(936) = INTERSECTION OF LINES X(1)X(2) AND X(3)X(9)
    :align: center
 
-   **X(936) = INTERSECTION OF LINES X(1)X(2) AND X(3)X(9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(936) = INTERSECTION OF LINES X(1)X(2) AND X(3)X(9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`a^{3} - a^{2}(b + c) - a(b - c)^{2} + (b + c)^{3} : :`
    | **Search Value (6, 9, 13):** :math:`3.184010137905`
-
-.. container:: note-item
-
-   :ref:`X(936) <X(936)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 13 lines

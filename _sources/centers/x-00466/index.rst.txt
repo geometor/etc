@@ -16,16 +16,13 @@ X(466) = EULER LINE INTERCEPT OF LINE X(216)X(396)
    :alt: X(466) = EULER LINE INTERCEPT OF LINE X(216)X(396)
    :align: center
 
-   **X(466) = EULER LINE INTERCEPT OF LINE X(216)X(396)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(466) = EULER LINE INTERCEPT OF LINE X(216)X(396)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`u \cot A : v \cot B : w \cot C`, where, u : v : w = :ref:`X(398) <X(398)>`; e.g., u(A,B,C) = cos(B - C) - 2 cos(A - π/3)
+   | **Trilinears:** :math:`u \cot A : v \cot B : w \cot C`, where :math:`u : v : w` = :ref:`X(398) <X(398)>`; e.g., :math:`u(A,B,C) = \cos(B - C) - 2 \cos(A - \pi /3)`
+   | **Barycentrics:** :math:`u \cos A : v \cos B : w \cos C`
    | **Search Value (6, 9, 13):** :math:`3.717116127581`
-
-.. container:: note-item
-
-   :ref:`X(466) <X(466)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines
@@ -44,11 +41,7 @@ Notes
 
 .. container:: note-item
 
-   Barycentrics u cos A : v cos B : w cos C
-
-.. container:: note-item
-
-   As a point on the Euler line, :ref:`X(466) <X(466)>` has Shinagawa coefficients (2F - 3\ :sup:`1/2`\ S, 3\ :sup:`1/2`\ S).
+   As a point on the Euler line, :ref:`X(466) <X(466)>` has Shinagawa coefficients :math:`(2F - 3^{1/2}S, 3^{1/2}S)`.
 
 .. toctree::
    :hidden:

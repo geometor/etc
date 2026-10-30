@@ -12,7 +12,7 @@ X(846) = 4th SHARYGIN POINT — Code
    :alt: X(846) = 4th SHARYGIN POINT
    :align: center
 
-   **X(846) = 4th SHARYGIN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(846) = 4th SHARYGIN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

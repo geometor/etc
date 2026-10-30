@@ -16,7 +16,7 @@ X(90) = X(3)-CROSS CONJUGATE OF X(1)
    :alt: X(90) = X(3)-CROSS CONJUGATE OF X(1)
    :align: center
 
-   **X(90) = X(3)-CROSS CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(90) = X(3)-CROSS CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,16 +27,12 @@ X(90) = X(3)-CROSS CONJUGATE OF X(1)
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`1/(a^3 + a^2 (b + c) - a (b^2 + c^2) - (b - c)^2 (b + c)) : :`
+   * **Trilinears:** :math:`1/(a^{3} + a^{2} (b + c) - a (b^{2} + c^{2}) - (b - c)^{2} (b + c)) : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(90) <X(90)>` = (r + R)\ :sup:`2`\ \*\ :ref:`X(1) <X(1)>` - 6rR\*\ :ref:`X(2) <X(2)>` - 2r(r - R)\*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-
-.. container:: note-item
-
-   :ref:`X(90) <X(90)>` lies.
+   * :ref:`X(90) <X(90)>` = :math:`(r + R)^{2}` :ref:`X(1) <X(1)>` - :math:`6rR` :ref:`X(2) <X(2)>` - :math:`2r(r - R)` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines
@@ -50,7 +46,7 @@ X(90) = X(3)-CROSS CONJUGATE OF X(1)
    * :ref:`X(90) <X(90)>` = isogonal conjugate of :ref:`X(46) <X(46)>`
    * :ref:`X(90) <X(90)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(20930)
    * :ref:`X(90) <X(90)>` = :ref:`X(3) <X(3)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(1) <X(1)>`
-   * :ref:`X(90) <X(90)>` = perspector of ABC and extraversion triangle of :ref:`X(46) <X(46)>`
+   * :ref:`X(90) <X(90)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(46) <X(46)>`
    * :ref:`X(90) <X(90)>` = trilinear product of the extraversions of :ref:`X(46) <X(46)>`, which is also the cross-triangle of the orthic and :term:`excentral triangles <excentral-triangle>`
    * :ref:`X(90) <X(90)>` = trilinear product of PU(125)
    * :ref:`X(90) <X(90)>` = Cundy-Parry Phi transform of :ref:`X(90) <X(90)>`

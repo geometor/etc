@@ -10,13 +10,13 @@ X(194) = X(6)-CEVA CONJUGATE OF X(2)
 
 .. enunciation::
 
-   Let Oa be the circle through A and tangent to BC at its midpoint. Define Ob and Oc cyclically. The radical center of Oa, Ob, Oc is :ref:`X(194) <X(194)>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
+   Let :g:`O_{a} <O_a>` be the circle through :g:`A <A>` and tangent to :g:`BC <[ B C ]>` at its midpoint. Define :g:`O_{b} <O_b>` and :g:`O_{c} <O_c>` cyclically. The radical center of :g:`O_{a} <O_a>`, :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>` is :ref:`X(194) <X(194)>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
 
 .. figure:: x-00194.svg
    :alt: X(194) = X(6)-CEVA CONJUGATE OF X(2)
    :align: center
 
-   **X(194) = X(6)-CEVA CONJUGATE OF X(2)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(194) = X(6)-CEVA CONJUGATE OF X(2)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,16 +27,12 @@ X(194) = X(6)-CEVA CONJUGATE OF X(2)
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`\cot^{2}A - \csc^{2}A \cos 2\omega : : (M. Iliev, 5/13/07)`
+   * **Barycentrics:** :math:`\cot^{2} A - \csc^{2} A \cos 2\omega : :` (M. Iliev, 5/13/07)
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(194) <X(194)>` = 2\ :ref:`X(39) <X(39)>` - :ref:`X(76) <X(76)>` - P(1) + U(1) - :ref:`X(76) <X(76)>`
-
-.. container:: note-item
-
-   :ref:`X(194) <X(194)>` lies.
+   * :ref:`X(194) <X(194)>` = :math:`2` :ref:`X(39) <X(39)>` - :ref:`X(76) <X(76)>` - :math:`P(1) + U(1) -` :ref:`X(76) <X(76)>`
 
 .. collapse:: Incident Central Lines
    :badge: 50 lines
@@ -79,11 +75,11 @@ Notes
 
 .. container:: note-item
 
-   Let AaBaCa, AbBbCb, AcBcCc be the A-, B- and C-anti-altimedial triangles. Let A' be the trilinear product Aa\*Ab\*Ac, and define B', C' cyclically. Triangle A'B'C' is the :term:`anticomplementary triangle <anticomplementary-triangle>` of the 1st Brocard triangle, and is perspective to ABC at :ref:`X(4) <X(4)>`, and to the anticomplementary triangle at :ref:`X(194) <X(194)>`. (Randy Hutson, November 2, 2017)
+   Let :g:`A_{a}B_{a}C_{a} << A_a B_a C_a >>`, :g:`A_{b}B_{b}C_{b} << A_b B_b C_b >>`, :g:`A_{c}B_{c}C_{c} << A_c B_c C_c >>` be the A-, B- and C-anti-altimedial triangles. Let :g:`A' <A'>` be the trilinear product :g:`A_{a} <A_a>`\ \*\ :g:`A_{b} <A_b>`\ \*\ :g:`A_{c} <A_c>`, and define :g:`B' <B'>`, :g:`C' <C'>` cyclically. Triangle :g:`A'B'C' << A' B' C' >>` is the :term:`anticomplementary triangle <anticomplementary-triangle>` of the 1st Brocard triangle, and is perspective to :g:`ABC << A B C >>` at :ref:`X(4) <X(4)>`, and to the anticomplementary triangle at :ref:`X(194) <X(194)>`. (Randy Hutson, November 2, 2017)
 
 .. container:: note-item
 
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the 1st Neuberg triangle and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(194) <X(194)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (Randy Hutson, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the 1st Neuberg triangle and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(194) <X(194)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
 
 .. container:: note-item
 

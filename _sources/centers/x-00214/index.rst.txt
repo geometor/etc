@@ -16,7 +16,7 @@ X(214) = X(2)-CEVA CONJUGATE OF X(44)
    :alt: X(214) = X(2)-CEVA CONJUGATE OF X(44)
    :align: center
 
-   **X(214) = X(2)-CEVA CONJUGATE OF X(44)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(214) = X(2)-CEVA CONJUGATE OF X(44)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -25,11 +25,7 @@ X(214) = X(2)-CEVA CONJUGATE OF X(44)
 
 .. container:: note-item
 
-   :ref:`X(214) <X(214)>` lies on the bicevian conic of :ref:`X(1) <X(1)>` and :ref:`X(2) <X(2)>`, which is also QA-Co1 (Nine-point Conic) of quadrangle ABC\ :ref:`X(1) <X(1)>` (see http://www.chrisvantienhoven.nl/other-quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/76-qa-co1.html) (:person:`Randy Hutson <randy-hutson>`, July 20, 2016)
-
-.. container:: note-item
-
-   :ref:`X(214) <X(214)>` lies.
+   :ref:`X(214) <X(214)>` lies on the bicevian conic of :ref:`X(1) <X(1)>` and :ref:`X(2) <X(2)>`, which is also :g:`QA <[ Q A ]>`-Co1 (Nine-point Conic) of quadrangle :g:`ABC << A B C >>`\ :ref:`X(1) <X(1)>` (see http://www.chrisvantienhoven.nl/other-quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/76-qa-co1.html) (:person:`Randy Hutson <randy-hutson>`, July 20, 2016)
 
 .. collapse:: Incident Central Lines
    :badge: 12 lines
@@ -50,12 +46,12 @@ X(214) = X(2)-CEVA CONJUGATE OF X(44)
    * :ref:`X(214) <X(214)>` = perspector of circumconic centered at :ref:`X(44) <X(44)>`
    * :ref:`X(214) <X(214)>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X(44) <X(44)>`
    * :ref:`X(214) <X(214)>` = :ref:`X(36) <X(36)>` of :ref:`X(1) <X(1)>`-Brocard triangle
-   * :ref:`X(214) <X(214)>` = inner-Garcia-to-ABC :term:`similarity image <similarity-image>` of :ref:`X(10) <X(10)>`
+   * :ref:`X(214) <X(214)>` = inner-Garcia-to-:g:`ABC << A B C >>` :term:`similarity image <similarity-image>` of :ref:`X(10) <X(10)>`
    * :ref:`X(214) <X(214)>` = X(7687)-of-excentral-triangle
    * :ref:`X(214) <X(214)>` = :term:`crosssum <crosssum>` of circumcircle intercepts of line PU(55) (line :ref:`X(1) <X(1)>`\ \ :ref:`X(513) <X(513)>`)
-   * :ref:`X(214) <X(214)>` = center of conic {A,B,C,\ :ref:`X(1) <X(1)>`,\ :ref:`X(100) <X(100)>`}}
+   * :ref:`X(214) <X(214)>` = center of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(1) <X(1)>`,\ :ref:`X(100) <X(100)>`}}
    * :ref:`X(214) <X(214)>` = :term:`complementary conjugate <complementary-conjugate>` of X(3814)
-   * :ref:`X(214) <X(214)>` = QA-P3 (Gergonne-Steiner Point) of quadrangle ABC\ :ref:`X(1) <X(1)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/10-mathematics/quadrangle-objects/18-qa-p3.html)
+   * :ref:`X(214) <X(214)>` = :g:`QA <[ Q A ]>`-:g:`P_{3} <P_3>` (Gergonne-Steiner Point) of quadrangle :g:`ABC << A B C >>`\ :ref:`X(1) <X(1)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/10-mathematics/quadrangle-objects/18-qa-p3.html)
 
 .. toctree::
    :hidden:

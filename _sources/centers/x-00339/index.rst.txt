@@ -16,12 +16,20 @@ X(339) = ISOTOMIC CONJUGATE OF X(250)
    :alt: X(339) = ISOTOMIC CONJUGATE OF X(250)
    :align: center
 
-   **X(339) = ISOTOMIC CONJUGATE OF X(250)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(339) = ISOTOMIC CONJUGATE OF X(250)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(b^{2} - c^{2})^{2}(\cos A)/a^{4} : (c^{2} - a^{2})^{2}(\cos B)/b^{4} : (a^{2} - b^{2})^{2}(\cos C)/c^{4}, = \csc A \cot A \sin^{2}(B - C) : \csc B \cot B \sin^{2}(C - A) : \csc C \cot C \sin^{2}(A - B)`
+   | **Trilinears:** :math:`(b^{2} - c^{2})^{2}(\cos A)/a^{4} : (c^{2} - a^{2})^{2}(\cos B)/b^{4} : (a^{2} - b^{2})^{2}(\cos C)/c^{4}`
+   | **Barycentrics:** :math:`(b^{2} - c^{2})^{2}(\cos A)/a^{3} : (c^{2} - a^{2})^{2}(\cos B)/b^{3} : (a^{2} - b^{2})^{2}(\cos C)/c^{3}`
    | **Search Value (6, 9, 13):** :math:`5.009222601597`
+
+.. collapse:: Alternate Coordinates
+   :badge: 3 forms
+
+   * **Trilinears:** :math:`\csc A \cot A \sin^{2}(B - C) : \csc B \cot B \sin^{2}(C - A) : \csc C \cot C \sin^{2}(A - B)`
+   * **Barycentrics:** :math:`\cot A \sin^{2}(B - C) : \cot B \sin^{2}(C - A) : \cot C \sin^{2}(A - B)`
+   * **Barycentrics:** :math:`b^{2} c^{2} (b^{2} - c^{2})^{2} (b^{2} + c^{2} - a^{2}) : :`
 
 .. container:: note-item
 
@@ -41,17 +49,6 @@ X(339) = ISOTOMIC CONJUGATE OF X(250)
    * :ref:`X(339) <X(339)>` = :ref:`X(125) <X(125)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(338) <X(338)>`
    * :ref:`X(339) <X(339)>` = :ref:`X(25) <X(25)>`-:term:`isoconjugate <isoconjugate>` of X(1101)
    * :ref:`X(339) <X(339)>` = :term:`crosspoint <crosspoint>` of :ref:`X(305) <X(305)>` and X(3267)
-
-Notes
------
-
-.. container:: note-item
-
-   Barycentrics (b\ :sup:`2` - c\ :sup:`2`)\ :sup:`2`\ (cos A)/a\ :sup:`3` : (c\ :sup:`2` - a\ :sup:`2`)\ :sup:`2`\ (cos B)/b\ :sup:`3` : (a\ :sup:`2` - b\ :sup:`2`)\ :sup:`2`\ (cos C)/c\ :sup:`3`
-
-   = cot A sin\ :sup:`2`\ (B - C) : cot B sin\ :sup:`2`\ (C - A) : cot C sin\ :sup:`2`\ (A - B)
-
-   Barycentrics b^2 c^2 (b^2 - c^2)^2 (b^2 + c^2 - a^2) : :
 
 .. toctree::
    :hidden:

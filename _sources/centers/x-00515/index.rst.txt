@@ -10,17 +10,18 @@ X(515) = ISOGONAL CONJUGATE OF X(102)
 
 .. enunciation::
 
-   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X(515) <X(515)>` lies on the line at infinity.
+   :ref:`X(515) <X(515)>` is the perspector of triangle :g:`ABC << A B C >>` and the :term:`tangential triangles <tangential-triangle>` of the conic that passes through the points :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, :ref:`X(2) <X(2)>`, and :ref:`X(8) <X(8)>`.
 
 .. figure:: x-00515.svg
    :alt: X(515) = ISOGONAL CONJUGATE OF X(102)
    :align: center
 
-   **X(515) = ISOGONAL CONJUGATE OF X(102)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(515) = ISOGONAL CONJUGATE OF X(102)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`(b + c)\sec A - b \sec B - c \sec C :`
+   | **Barycentrics:** :math:`2a^{4} - a^{3}(b + c) - a^{2}(b - c)^{2} + a(b - c)^{2}(b + c) - (b^{2} - c^{2})^{2} : :`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
@@ -32,10 +33,6 @@ X(515) = ISOGONAL CONJUGATE OF X(102)
 
    * :ref:`X(515) <X(515)>` = :ref:`X(1) <X(1)>` - :ref:`X(4) <X(4)>`
 
-.. container:: note-item
-
-   :ref:`X(515) <X(515)>` lies.
-
 .. collapse:: Incident Central Lines
    :badge: 73 lines
    :class: line-catalog
@@ -45,7 +42,7 @@ X(515) = ISOGONAL CONJUGATE OF X(102)
 .. collapse:: Functional Relations
    :badge: 14 relations
 
-   * :ref:`X(515) <X(515)>` = isogonal conjugate of :ref:`X(102) <X(102)>`
+   * :ref:`X(515) <X(515)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(102) <X(102)>`
    * :ref:`X(515) <X(515)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(34393)
    * :ref:`X(515) <X(515)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X(151) <X(151)>`
    * :ref:`X(515) <X(515)>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X(117) <X(117)>`
@@ -65,9 +62,7 @@ Notes
 
 .. container:: note-item
 
-   Barycentrics 2a^4 - a^3(b + c) - a^2(b - c)^2 + a(b - c)^2(b + c) - (b^2 - c^2)^2 : :
-
-   :ref:`X(515) <X(515)>` is the perspector of triangle ABC and the :term:`tangential triangles <tangential-triangle>` of the conic that passes through the points A, B, C, :ref:`X(2) <X(2)>`, and :ref:`X(8) <X(8)>`.
+   As the isogonal conjugate of a point on the circumcircle, :ref:`X(515) <X(515)>` lies on the line at infinity.
 
 .. toctree::
    :hidden:

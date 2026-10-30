@@ -10,24 +10,24 @@ X(146) = REFLECTION OF X(20) IN X(110)
 
 .. enunciation::
 
-   Let T be the P-Brocard triangle for any P on the Euler line. Let O\ :sub:`A` be the circle centered at the A-vertex of T and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(146) <X(146)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (:person:`Randy Hutson <randy-hutson>`, August 30, 2020)
+   Let :g:`T <T>` be the :g:`P <P>`-Brocard triangle for any P on the Euler line. Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of :g:`T <T>` and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(146) <X(146)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (:person:`Randy Hutson <randy-hutson>`, August 30, 2020)
 
 .. figure:: x-00146.svg
    :alt: X(146) = REFLECTION OF X(20) IN X(110)
    :align: center
 
-   **X(146) = REFLECTION OF X(20) IN X(110)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(146) = REFLECTION OF X(20) IN X(110)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`bc(-avw + bwu + cuv) : :`, where u = u(A,B,C) = cos A - 2 cos B cos C, v = u(B,C,A), w = u(C,A,B)
+   | **Trilinears:** :math:`bc(-avw + bwu + cuv) : :`, where :math:`u = u(A,B,C) = \cos A - 2 \cos B \cos C`, :math:`v = u(B,C,A)`, :math:`w = u(C,A,B)`
    | **Barycentrics:** :math:`-avw + bwu + cuv : -bwu + cuv + avw : -cuv + avw + bwu`
    | **Search Value (6, 9, 13):** :math:`-17.426219251116`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`a^{10} + a^8 (b^2 + c^2) - a^6 (8 b^4 - 9 b^2 c^2 + 8 c^4) + 2 a^4 (b^2 + c^2) (4 b^4 - 7 b^2 c^2 + 4 c^4) - a^2 (b^2 - c^2)^2 (b^4 + 9 b^2 c^2 + c^4) - (b^2 - c^2)^4 (b^2 + c^2) : :`
+   * **Barycentrics:** :math:`a^{10} + a^{8} (b^{2} + c^{2}) - a^{6} (8 b^{4} - 9 b^{2} c^{2} + 8 c^{4}) + 2 a^{4} (b^{2} + c^{2}) (4 b^{4} - 7 b^{2} c^{2} + 4 c^{4}) - a^{2} (b^{2} - c^{2})^{2} (b^{4} + 9 b^{2} c^{2} + c^{4}) - (b^{2} - c^{2})^{4} (b^{2} + c^{2}) : :`
 
 .. container:: note-item
 

@@ -10,23 +10,19 @@ X(852) = X(2)-LINE CONJUGATE OF X(4)
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(852) <X(852)>` has Shinagawa coefficients ((2E - F)F - S\ :sup:`2`,(E + F)F + S\ :sup:`2`).
+   As a point on the Euler line, :ref:`X(852) <X(852)>` has Shinagawa coefficients :math:`((2E - F)F - S^{2},(E + F)F + S^{2})`.
 
 .. figure:: x-00852.svg
    :alt: X(852) = X(2)-LINE CONJUGATE OF X(4)
    :align: center
 
-   **X(852) = X(2)-LINE CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(852) = X(2)-LINE CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`\sec C \sin 2B \sin(C - A) + \sec B \sin 2C \sin(B - A) : :`
-   | **Barycentrics:** :math:`a^2*(a^2 - b^2 - c^2)*(a^6*b^2 - 2*a^4*b^4 + a^2*b^6 + a^6*c^2 + 2*a^4*b^2*c^2 - a^2*b^4*c^2 - 2*b^6*c^2 - 2*a^4*c^4 - a^2*b^2*c^4 + 4*b^4*c^4 + a^2*c^6 - 2*b^2*c^6) : :`
+   | **Barycentrics:** :math:`a^{2} (a^{2} - b^{2} - c^{2}) \cdot (a^{6} b^{2} - 2 a^{4} b^{4} + a^{2} b^{6} + a^{6} c^{2} + 2 a^{4} b^{2} c^{2} - a^{2} b^{4} c^{2} - 2 b^{6} c^{2} - 2 a^{4} c^{4} - a^{2} b^{2} c^{4} + 4 b^{4} c^{4} + a^{2} c^{6} - 2 b^{2} c^{6}) : :`
    | **Search Value (6, 9, 13):** :math:`2.089399019079`
-
-.. container:: note-item
-
-   :ref:`X(852) <X(852)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 43 lines

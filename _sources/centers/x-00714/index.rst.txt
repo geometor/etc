@@ -16,16 +16,12 @@ X(714) = EVEN (- 3, - 1) INFINITY POINT
    :alt: X(714) = EVEN (- 3, - 1) INFINITY POINT
    :align: center
 
-   **X(714) = EVEN (- 3, - 1) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(714) = EVEN (- 3, - 1) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = a :sup:`-4`\ (b :sup:`-1` + c :sup:`-1`) - a :sup:`-2`\ (b :sup:`-3` + c :sup:`-3`)
-   | **Barycentrics:** :math:`(b + c) (a^2 (b^2 - b c + c^2) - b^2 c^2) : :`
-
-.. container:: note-item
-
-   :ref:`X(714) <X(714)>` lies.
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a ^{-4}(b ^{-1} + c ^{-1}) - a ^{-2}(b ^{-3} + c ^{-3})`
+   | **Barycentrics:** :math:`(b + c) (a^{2} (b^{2} - b c + c^{2}) - b^{2} c^{2}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines

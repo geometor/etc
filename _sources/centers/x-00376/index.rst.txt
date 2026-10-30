@@ -10,13 +10,13 @@ X(376) = CENTROID OF THE ANTIPEDAL TRIANGLE OF X(2)
 
 .. enunciation::
 
-   Let Pa be the parabola with focus A and directrix BC. Let La be the polar of :ref:`X(3) <X(3)>` wrt Pa. Define Lb, Lc cyclically. Let A' = Lb∩Lc, B' = Lc∩La, C' = La∩Lb. :ref:`X(376) <X(376)>` = :ref:`X(69) <X(69)>` of triangle A'B'C'. (:person:`Randy Hutson <randy-hutson>`, July 20, 2016)
+   Let :g:`P_{a} <P_a>` be the parabola with focus A and directrix :g:`BC <[ B C ]>`. Let :g:`L_{a} <L_a>` be the polar of :ref:`X(3) <X(3)>` wrt :g:`P_{a} <P_a>`. Define :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, :g:`B' <B'>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C' <C'>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. :ref:`X(376) <X(376)>` = :ref:`X(69) <X(69)>` of triangle :g:`A'B'C' << A' B' C' >>`. (:person:`Randy Hutson <randy-hutson>`, July 20, 2016)
 
 .. figure:: x-00376.svg
    :alt: X(376) = CENTROID OF THE ANTIPEDAL TRIANGLE OF X(2)
    :align: center
 
-   **X(376) = CENTROID OF THE ANTIPEDAL TRIANGLE OF X(2)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(376) = CENTROID OF THE ANTIPEDAL TRIANGLE OF X(2)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -32,12 +32,8 @@ X(376) = CENTROID OF THE ANTIPEDAL TRIANGLE OF X(2)
    * **Trilinears:** :math:`\sec A - 2 \sec B \sec C : \sec B - 2 \sec C \sec A : \sec C - 2 \sec A \sec B`
    * **Trilinears:** :math:`(\csc A)(5 \sin 2A - \sin 2B - \sin 2C) : :`
    * **Trilinears:** :math:`a/(b \sec B + c \sec C) - 2 \cos A : :`
-   * **Barycentrics:** :math:`2*SA*a^2 - SB*SC : :`
-   * **Barycentrics:** :math:`5 a^4 - 4 a^2 (b^2 + c^2) - (b^2 - c^2)^2 : :`
-
-.. container:: note-item
-
-   :ref:`X(376) <X(376)>` lies.
+   * **Barycentrics:** :math:`2 S_{A} a^{2} - S_{B} S_{C} : :`
+   * **Barycentrics:** :math:`5 a^{4} - 4 a^{2} (b^{2} + c^{2}) - (b^{2} - c^{2})^{2} : :`
 
 .. collapse:: Incident Central Lines
    :badge: 22 lines
@@ -66,7 +62,7 @@ X(376) = CENTROID OF THE ANTIPEDAL TRIANGLE OF X(2)
    * :ref:`X(376) <X(376)>` = :ref:`X(2) <X(2)>`-of-1st-anti-tri-squares-triangle
    * :ref:`X(376) <X(376)>` = :ref:`X(2) <X(2)>`-of-2nd-anti-tri-squares-triangle
    * :ref:`X(376) <X(376)>` = homothetic center of 1st and 2nd anti-tri-squares triangles
-   * :ref:`X(376) <X(376)>` = insimilicenter of circumcircles of ABC and anti-Euler triangle; the exsimilicenter is :ref:`X(4) <X(4)>`
+   * :ref:`X(376) <X(376)>` = insimilicenter of circumcircles of :g:`ABC << A B C >>` and anti-Euler triangle; the exsimilicenter is :ref:`X(4) <X(4)>`
    * :ref:`X(376) <X(376)>` = {X(2043),X(2044)}-harmonic conjugate of :ref:`X(20) <X(20)>`
    * :ref:`X(376) <X(376)>` = trisector nearest :ref:`X(3) <X(3)>` of segment :ref:`X(3) <X(3)>`\ \ :ref:`X(20) <X(20)>`
    * :ref:`X(376) <X(376)>` = trisector nearest :ref:`X(20) <X(20)>` of segment :ref:`X(4) <X(4)>`\ \ :ref:`X(20) <X(20)>`
@@ -78,15 +74,15 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(376) <X(376)>` has Shinagawa coefficients (2, -3).
+   As a point on the Euler line, :ref:`X(376) <X(376)>` has Shinagawa coefficients :math:`(2, -3)`.
 
 .. container:: note-item
 
-   Let Ma be the polar of :ref:`X(4) <X(4)>` wrt the circle centered at A and passing through :ref:`X(2) <X(2)>`, and define Mb, Mc cyclically. (Note: :ref:`X(4) <X(4)>` is the perspector of any circle centered at a vertex of ABC.) Let A″ = Mb∩Mc, and define B″, C″ cyclically. Triangle A″B″C″ is homothetic to ABC, and its orthocenter is :ref:`X(376) <X(376)>`. (Randy Hutson, July 20, 2016)
+   Let :g:`M_{a} <M_a>` be the polar of :ref:`X(4) <X(4)>` wrt the circle centered at :g:`A <A>` and passing through :ref:`X(2) <X(2)>`, and define :g:`M_{b} <M_b>`, :g:`M_{c} <M_c>` cyclically. (Note: :ref:`X(4) <X(4)>` is the perspector of any circle centered at a vertex of :g:`ABC << A B C >>`.) Let :g:`A″ <A″>` = :g:`M_{b} <M_b>`\ ∩\ :g:`M_{c} <M_c>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. Triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to :g:`ABC << A B C >>`, and its orthocenter is :ref:`X(376) <X(376)>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
-   Let Aa, Ab, Ac be the centers of the inverse-in-A-excircle of lines BC, CA, AB, resp. Let A' be the point of concurrence of lines AAa, BAb, CAc. Define B', C' cyclically. Triangle A'B'C' is perspective to the :term:`excentral triangle <excentral-triangle>` at :ref:`X(376) <X(376)>`. (Randy Hutson, July 20, 2016)
+   Let :g:`A_{a} <A_a>`, :g:`A_{b} <A_b>`, :g:`A_{c} <A_c>` be the centers of the inverse-in-A-excircle of lines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, resp. Let :g:`A' <A'>` be the point of concurrence of lines :g:`AA_{a} <[ A A_a ]>`, :g:`BA_{b} <[ B A_b ]>`, :g:`CA_{c} <[ C A_c ]>`. Define :g:`B' <B'>`, :g:`C' <C'>` cyclically. Triangle :g:`A'B'C' << A' B' C' >>` is perspective to the :term:`excentral triangle <excentral-triangle>` at :ref:`X(376) <X(376)>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 

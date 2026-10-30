@@ -16,17 +16,13 @@ X(276) = ISOGONAL CONJUGATE OF X(217)
    :alt: X(276) = ISOGONAL CONJUGATE OF X(217)
    :align: center
 
-   **X(276) = ISOGONAL CONJUGATE OF X(217)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(276) = ISOGONAL CONJUGATE OF X(217)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\csc^{3}A \sec A \sec(B - C) : \csc^{3}B \sec B \sec(C - A) : \csc^{3}C \sec C \sec(A - B)`
-   | **Barycentrics:** :math:`\csc^{2}A \sec A \sec(B - C) : \csc^{2}B \sec B \sec(C - A) : \csc^{2}C \sec C \sec(A - B)`
+   | **Trilinears:** :math:`\csc^{3} A \sec A \sec(B - C) : \csc^{3} B \sec B \sec(C - A) : \csc^{3} C \sec C \sec(A - B)`
+   | **Barycentrics:** :math:`\csc^{2} A \sec A \sec(B - C) : \csc^{2} B \sec B \sec(C - A) : \csc^{2} C \sec C \sec(A - B)`
    | **Search Value (6, 9, 13):** :math:`160.227757913965`
-
-.. container:: note-item
-
-   :ref:`X(276) <X(276)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines

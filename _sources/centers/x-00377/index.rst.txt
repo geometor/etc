@@ -16,17 +16,18 @@ X(377) = EULER LINE INTERCEPT OF LINE X(7)X(8)
    :alt: X(377) = EULER LINE INTERCEPT OF LINE X(7)X(8)
    :align: center
 
-   **X(377) = EULER LINE INTERCEPT OF LINE X(7)X(8)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(377) = EULER LINE INTERCEPT OF LINE X(7)X(8)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = bc(b\ :sup:`4` + c\ :sup:`4` - a\ :sup:`4` - 2b\ :sup:`2`\ c\ :sup:`2` - 2abc(a + b + c)), = g(A,B,C) : g(B,C,A) : g(C,A,B), where g(A,B,C) = cos A +(cos A + cos B + cos C) cos B cos C
-   | **Barycentrics:** :math:`h(a,b,c) : h(b,c,a) : h(c,a,b)`, where h(a,b,c) = b\ :sup:`4` + c\ :sup:`4` - a\ :sup:`4` - 2b\ :sup:`2`\ c\ :sup:`2` - 2abc(a + b + c)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = bc(b^{4} + c^{4} - a^{4} - 2b^{2}c^{2} - 2abc(a + b + c))`
+   | **Barycentrics:** :math:`h(a,b,c) : h(b,c,a) : h(c,a,b)`, where :math:`h(a,b,c) = b^{4} + c^{4} - a^{4} - 2b^{2}c^{2} - 2abc(a + b + c)`
    | **Search Value (6, 9, 13):** :math:`2.042891249441`
 
-.. container:: note-item
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-   :ref:`X(377) <X(377)>` lies.
+   * **Trilinears:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where :math:`g(A,B,C) = \cos A +(\cos A + \cos B + \cos C) \cos B \cos C`
 
 .. collapse:: Incident Central Lines
    :badge: 105 lines
@@ -45,7 +46,7 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(377) <X(377)>` has Shinagawa coefficients (abc\*$a, 2S\ :sup:`2`).
+   As a point on the Euler line, :ref:`X(377) <X(377)>` has Shinagawa coefficients :math:`(abc \$a, 2S^{2})`.
 
 .. toctree::
    :hidden:

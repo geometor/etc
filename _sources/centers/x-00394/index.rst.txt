@@ -10,31 +10,27 @@ X(394) = X(69)-CEVA CONJUGATE OF X(3)
 
 .. enunciation::
 
-   Let A' be the :term:`trilinear pole <trilinear-pole>` of the tangent to the circumcircle at the antipode of A, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(394) <X(394)>`. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
+   Let :g:`A' <A'>` be the :term:`trilinear pole <trilinear-pole>` of the tangent to the circumcircle at the antipode of :g:`A <A>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(394) <X(394)>`. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
 
 .. figure:: x-00394.svg
    :alt: X(394) = X(69)-CEVA CONJUGATE OF X(3)
    :align: center
 
-   **X(394) = X(69)-CEVA CONJUGATE OF X(3)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(394) = X(69)-CEVA CONJUGATE OF X(3)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`\cos A \cot A : \cos B \cot B : \cos C \cot C`
-   | **Barycentrics:** :math:`\cos^{2}A : \cos^{2}B : \cos^{2}C`
+   | **Barycentrics:** :math:`\cos^{2} A : \cos^{2} B : \cos^{2} C`
    | **Search Value (6, 9, 13):** :math:`3.880761683324`
 
 .. collapse:: Alternate Coordinates
    :badge: 4 forms
 
    * **Trilinears:** :math:`\sin A - \csc A : :`
-   * **Trilinears:** :math:`a \cot^{2}A : :`
+   * **Trilinears:** :math:`a \cot^{2} A : :`
    * **Barycentrics:** :math:`1 - \tan B \tan C : :`
-   * **Barycentrics:** :math:`a^2(b^2 + c^2 - a^2)^2 : :`
-
-.. container:: note-item
-
-   :ref:`X(394) <X(394)>` lies.
+   * **Barycentrics:** :math:`a^{2}(b^{2} + c^{2} - a^{2})^{2} : :`
 
 .. collapse:: Incident Central Lines
    :badge: 23 lines
@@ -55,7 +51,7 @@ X(394) = X(69)-CEVA CONJUGATE OF X(3)
    * :ref:`X(394) <X(394)>` = crosspoint of X(11090) and X(11091)
    * :ref:`X(394) <X(394)>` = crosssum of :ref:`X(4) <X(4)>` and :ref:`X(459) <X(459)>`
    * :ref:`X(394) <X(394)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(460) <X(460)>`\ \ :ref:`X(512) <X(512)>`
-   * :ref:`X(394) <X(394)>` = intersection of tangents to hyperbola {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(6) <X(6)>`}} at :ref:`X(493) <X(493)>` and :ref:`X(494) <X(494)>`
+   * :ref:`X(394) <X(394)>` = intersection of tangents to hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(6) <X(6)>`}} at :ref:`X(493) <X(493)>` and :ref:`X(494) <X(494)>`
    * :ref:`X(394) <X(394)>` = Danneels point of :ref:`X(69) <X(69)>`
    * :ref:`X(394) <X(394)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X(1093)
    * :ref:`X(394) <X(394)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of X(1093)
@@ -68,7 +64,7 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the :term:`orthic triangle <orthic-triangle>`. Let A″ be the crosssum of the (real or imaginary) circumcircle intercepts of line B'C'. Define B″ andC″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(393) <X(393)>`. (Randy Hutson, July 31 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`A″ <A″>` be the crosssum of the (real or imaginary) circumcircle intercepts of line :g:`B'C' <[ B' C' ]>`. Define :g:`B″ <B″>` andC″ cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(393) <X(393)>`. (Randy Hutson, July 31 2018)
 
 .. toctree::
    :hidden:

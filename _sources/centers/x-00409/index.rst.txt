@@ -10,28 +10,24 @@ X(409) = EULER X(21)-1st-SUBSTITUTION POINT
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(409) <X(409)>` has Shinagawa coefficients ($aS\ :sub:`A`\ $[($aS\ :sub:`A`\ $)\ :sup:`2` - $bcS\ :sub:`B`\ S\ :sub:`C`\ $] + 2abcFS\ :sup:`2`, -$aS\ :sub:`A`\ $[($aS\ :sub:`A`\ $)\ :sup:`2` - $bcS\ :sub:`B`\ S\ :sub:`C`\ $] + abc[($aS\ :sub:`A`\ $)\ :sup:`2` + $bcS\ :sub:`B`\ S\ :sub:`C`\ $ - 2FS\ :sup:`2`]).
+   As a point on the Euler line, :ref:`X(409) <X(409)>` has Shinagawa coefficients :math:`(\$aS_{A}\$[(\$aS_{A}\$)^{2} - \$bcS_{B}S_{C}\$] + 2abcFS^{2}, -\$aS_{A}\$[(\$aS_{A}\$)^{2} - \$bcS_{B}S_{C}\$] + abc[(\$aS_{A}\$)^{2} + \$bcS_{B}S_{C}\$ - 2FS^{2}])`.
 
 .. figure:: x-00409.svg
    :alt: X(409) = EULER X(21)-1st-SUBSTITUTION POINT
    :align: center
 
-   **X(409) = EULER X(21)-1st-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(409) = EULER X(21)-1st-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`u^{2} + vw : v^{2} + wu : w^{2} + uv`, where u : v : w = :ref:`X(21) <X(21)>`; e.g., u = u(A,B,C) = 1/(cos B + cos C)
+   | **Trilinears:** :math:`u^{2} + vw : v^{2} + wu : w^{2} + uv`, where :math:`u : v : w` = :ref:`X(21) <X(21)>`; e.g., :math:`u = u(A,B,C) = 1/(\cos B + \cos C)`
    | **Barycentrics:** :math:`a(u^{2} + vw) : b(v^{2} + wu) : c(w^{2} + uv)`
-   | **Search Value (6, 9, 13):** :math:`2.330340117158`
+   | **Search Value (6, 9, 13):** :math:`4.705865843343`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`a*(a + b)*(a + c)*(a^4 - a^3*b + a*b^3 - b^4 - a^3*c + a^2*b*c + a*b^2*c + b^3*c + a*b*c^2 + 4*b^2*c^2 + a*c^3 + b*c^3 - c^4) : :`
-
-.. container:: note-item
-
-   :ref:`X(409) <X(409)>` lies.
+   * **Barycentrics:** :math:`a (a + b) \cdot (a + c) \cdot (a^{4} - a^{3} b + a b^{3} - b^{4} - a^{3} c + a^{2} b c + a b^{2} c + b^{3} c + a b c^{2} + 4 b^{2} c^{2} + a c^{3} + b c^{3} - c^{4}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 32 lines

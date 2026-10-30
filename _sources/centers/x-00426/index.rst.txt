@@ -10,29 +10,25 @@ X(426) = EULER X(19)-4th-SUBSTITUTION POINT
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(426) <X(426)>` has Shinagawa coefficients ((2E + F)F - S\ :sup:`2`,-(E + F)F + S\ :sup:`2`).
+   As a point on the Euler line, :ref:`X(426) <X(426)>` has Shinagawa coefficients :math:`((2E + F)F - S^{2},-(E + F)F + S^{2})`.
 
 .. figure:: x-00426.svg
    :alt: X(426) = EULER X(19)-4th-SUBSTITUTION POINT
    :align: center
 
-   **X(426) = EULER X(19)-4th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(426) = EULER X(19)-4th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(v^{2} + w^{2})\cos A : (w^{2} + u^{2})\cos B : (u^{2} + v^{2})\cos C`, where, u : v : w = :ref:`X(19) <X(19)>`; e.g., u = u(A,B,C) = tan A
+   | **Trilinears:** :math:`(v^{2} + w^{2})\cos A : (w^{2} + u^{2})\cos B : (u^{2} + v^{2})\cos C`, where :math:`u : v : w` = :ref:`X(19) <X(19)>`; e.g., :math:`u = u(A,B,C) = \tan A`
    | **Barycentrics:** :math:`(v^{2} + w^{2})\sin 2A : (w^{2} + u^{2})\sin 2B : (u^{2} + v^{2})\sin 2C`
-   | **Search Value (6, 9, 13):** :math:`1.875882662069`
+   | **Search Value (6, 9, 13):** :math:`4.052790055994`
 
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
-   * **Barycentrics:** :math:`(a + b)*(a + c)*(a^2 + b^2 - c^2)*(a^2 - b^2 + c^2)*(a^6 - a^5*b - a^4*b^2 + a^3*b^3 - a^5*c + a^4*b*c + a^3*b^2*c - b^5*c - a^4*c^2 + a^3*b*c^2 + 2*a^2*b^2*c^2 - 2*a*b^3*c^2 + a^3*c^3 - 2*a*b^2*c^3 + 2*b^3*c^3 - b*c^5) : :`
-   * **Barycentrics:** :math:`a^2*(a^2 - b^2 - c^2)^3*(a^4 + b^4 - 2*b^2*c^2 + c^4) : :`
-
-.. container:: note-item
-
-   :ref:`X(426) <X(426)>` lies.
+   * **Barycentrics:** :math:`(a + b) \cdot (a + c) \cdot (a^{2} + b^{2} - c^{2}) \cdot (a^{2} - b^{2} + c^{2}) \cdot (a^{6} - a^{5} b - a^{4} b^{2} + a^{3} b^{3} - a^{5} c + a^{4} b c + a^{3} b^{2} c - b^{5} c - a^{4} c^{2} + a^{3} b c^{2} + 2 a^{2} b^{2} c^{2} - 2 a b^{3} c^{2} + a^{3} c^{3} - 2 a b^{2} c^{3} + 2 b^{3} c^{3} - b c^{5}) : :`
+   * **Barycentrics:** :math:`a^{2} (a^{2} - b^{2} - c^{2})^{3} (a^{4} + b^{4} - 2 b^{2} c^{2} + c^{4}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 31 lines

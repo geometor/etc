@@ -10,22 +10,18 @@ X(870) = ISOGONAL CONJUGATE OF X(869)
 
 .. enunciation::
 
-   Let A'B'C' be the trilinear obverse triangle of :ref:`X(2) <X(2)>`. Let L\ :sub:`A` be the line through A' parallel to BC, and define L\ :sub:`B` and L\ :sub:`C` cyclically. Let A″ = L\ :sub:`B`\ ∩L\ :sub:`C`, and define B″ and C″ cyclically. Triangle A″B″C″ is homothetic to ABC at :ref:`X(870) <X(870)>`. (:person:`Randy Hutson <randy-hutson>`, November 30, 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the trilinear obverse triangle of :ref:`X(2) <X(2)>`. Let :g:`L_{A} <L_A>` be the line through :g:`A' <A'>` parallel to :g:`BC <[ B C ]>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A″ <A″>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to :g:`ABC << A B C >>` at :ref:`X(870) <X(870)>`. (:person:`Randy Hutson <randy-hutson>`, November 30, 2018)
 
 .. figure:: x-00870.svg
    :alt: X(870) = ISOGONAL CONJUGATE OF X(869)
    :align: center
 
-   **X(870) = ISOGONAL CONJUGATE OF X(869)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(870) = ISOGONAL CONJUGATE OF X(869)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`1/[a^{2}(b^{2} + c^{2} + bc)] : :`
    | **Search Value (6, 9, 13):** :math:`2.762812806045`
-
-.. container:: note-item
-
-   :ref:`X(870) <X(870)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 9 lines

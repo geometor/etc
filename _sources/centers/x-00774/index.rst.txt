@@ -16,22 +16,18 @@ X(774) = CROSSPOINT OF X(1) AND X(158)
    :alt: X(774) = CROSSPOINT OF X(1) AND X(158)
    :align: center
 
-   **X(774) = CROSSPOINT OF X(1) AND X(158)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(774) = CROSSPOINT OF X(1) AND X(158)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\cos^{2}B + \cos^{2}C : :`
+   | **Trilinears:** :math:`\cos^{2} B + \cos^{2} C : :`
    | **Search Value (6, 9, 13):** :math:`1.206397861735`
 
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
    * **Trilinears:** :math:`1 - \cos A \cos(B - C) : :`
-   * **Trilinears:** :math:`2 a^2 (b^2 - c^2)^2 - a^4 (b^2 + c^2) - (b^2 - c^2)^2 (b^2 + c^2) : :`
-
-.. container:: note-item
-
-   :ref:`X(774) <X(774)>` lies.
+   * **Trilinears:** :math:`2 a^{2} (b^{2} - c^{2})^{2} - a^{4} (b^{2} + c^{2}) - (b^{2} - c^{2})^{2} (b^{2} + c^{2}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 7 lines

@@ -10,19 +10,24 @@ X(122) = X(107)-OF-MEDIAL-TRIANGLE
 
 .. enunciation::
 
-   Barycentrics (b^2 - c^2)^2 (a^2 - b^2 - c^2)^2 (3 a^4 - 2 a^2 (b^2 + c^2) - (b^2 - c^2)^2) : :
+   :ref:`X(122) <X(122)>` = reflection of :ref:`X(133) <X(133)>` in :ref:`X(5) <X(5)>`
 
 .. figure:: x-00122.svg
    :alt: X(122) = X(107)-OF-MEDIAL-TRIANGLE
    :align: center
 
-   **X(122) = X(107)-OF-MEDIAL-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(122) = X(107)-OF-MEDIAL-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(b^{2} - c^{2})^{2}(\cos A - \cos B \cos C) \cot^{2}A : :`
-   | **Barycentrics:** :math:`a(b^{2} - c^{2})^{2}(\cos A - \cos B \cos C) \cot^{2}A : :`
+   | **Trilinears:** :math:`(b^{2} - c^{2})^{2}(\cos A - \cos B \cos C) \cot^{2} A : :`
+   | **Barycentrics:** :math:`a(b^{2} - c^{2})^{2}(\cos A - \cos B \cos C) \cot^{2} A : :`
    | **Search Value (6, 9, 13):** :math:`3.821374194765`
+
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
+
+   * **Barycentrics:** :math:`(b^{2} - c^{2})^{2} (a^{2} - b^{2} - c^{2})^{2} (3 a^{4} - 2 a^{2} (b^{2} + c^{2}) - (b^{2} - c^{2})^{2}) : :`
 
 .. container:: note-item
 
@@ -45,10 +50,10 @@ X(122) = X(107)-OF-MEDIAL-TRIANGLE
    * :ref:`X(122) <X(122)>` = :term:`crosspoint <crosspoint>` of :ref:`X(253) <X(253)>` and :ref:`X(525) <X(525)>`
    * :ref:`X(122) <X(122)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(112) <X(112)>`\ X(1301)
    * :ref:`X(122) <X(122)>` = :ref:`X(107) <X(107)>`-of-:term:`medial triangle <medial-triangle>`
-   * :ref:`X(122) <X(122)>` = center of the rectangular hyperbola that passes through A, B, C, and :ref:`X(20) <X(20)>`
-   * :ref:`X(122) <X(122)>` = X(1293)-of-orthic-triangle if ABC is acute
+   * :ref:`X(122) <X(122)>` = center of the rectangular hyperbola that passes through :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, and :ref:`X(20) <X(20)>`
+   * :ref:`X(122) <X(122)>` = X(1293)-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(122) <X(122)>` = :term:`complement <complement>` of :ref:`X(107) <X(107)>`
-   * :ref:`X(122) <X(122)>` = perspector of :term:`orthic triangle <orthic-triangle>` and :term:`tangential triangle <tangential-triangle>` of hyperbola {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(3) <X(3)>`}}
+   * :ref:`X(122) <X(122)>` = perspector of :term:`orthic triangle <orthic-triangle>` and :term:`tangential triangle <tangential-triangle>` of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(3) <X(3)>`}}
    * :ref:`X(122) <X(122)>` = inverse-in-polar-circle of X(1301)
    * :ref:`X(122) <X(122)>` = inverse-in-orthoptic-circle-of-Steiner-inellipse of X(1297)
    * :ref:`X(122) <X(122)>` = inverse-in-Moses-radical-circle of X(33504)

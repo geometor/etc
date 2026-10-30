@@ -16,17 +16,13 @@ X(302) = ISOTOMIC CONJUGATE OF 1st NAPOLEON POINT
    :alt: X(302) = ISOTOMIC CONJUGATE OF 1st NAPOLEON POINT
    :align: center
 
-   **X(302) = ISOTOMIC CONJUGATE OF 1st NAPOLEON POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(302) = ISOTOMIC CONJUGATE OF 1st NAPOLEON POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\csc^{2}A \sin(A + \pi /6) : \csc^{2}B \sin(B + \pi /6) : \csc^{2}C \sin(C + \pi /6)`
+   | **Trilinears:** :math:`\csc^{2} A \sin(A + \pi /6) : \csc^{2} B \sin(B + \pi /6) : \csc^{2} C \sin(C + \pi /6)`
    | **Barycentrics:** :math:`\csc A \sin(A + \pi /6) : \csc B \sin(B + \pi /6) : \csc C \sin(C + \pi /6)`
    | **Search Value (6, 9, 13):** :math:`3.832751081755`
-
-.. container:: note-item
-
-   :ref:`X(302) <X(302)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 13 lines

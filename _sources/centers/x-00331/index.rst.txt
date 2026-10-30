@@ -16,16 +16,18 @@ X(331) = ISOTOMIC CONJUGATE OF X(219)
    :alt: X(331) = ISOTOMIC CONJUGATE OF X(219)
    :align: center
 
-   **X(331) = ISOTOMIC CONJUGATE OF X(219)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(331) = ISOTOMIC CONJUGATE OF X(219)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\sec^{2}(A/2) \csc(2A) : \sec^{2}(B/2) \csc(2B) : \sec^{2}(C/2) \csc(2C), = (1 - \sec A)\csc(A - \omega ) : (1 - \sec B)\csc(B - \omega ) : (1 - \sec C)\csc(C - \omega )`
+   | **Trilinears:** :math:`\sec^{2}(A/2) \csc(2A) : \sec^{2}(B/2) \csc(2B) : \sec^{2}(C/2) \csc(2C)`
+   | **Barycentrics:** :math:`\sec^{2}(A/2) \sec A : \sec^{2}(B/2) \sec B : \sec^{2}(C/2) \sec C`
    | **Search Value (6, 9, 13):** :math:`-1.648176523381`
 
-.. container:: note-item
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-   :ref:`X(331) <X(331)>` lies.
+   * **Trilinears:** :math:`(1 - \sec A)\csc(A - \omega ) : (1 - \sec B)\csc(B - \omega ) : (1 - \sec C)\csc(C - \omega )`
 
 .. collapse:: Incident Central Lines
    :badge: 7 lines
@@ -44,13 +46,6 @@ X(331) = ISOTOMIC CONJUGATE OF X(219)
    * :ref:`X(331) <X(331)>` = :term:`trilinear pole <trilinear-pole>` of polar of :ref:`X(55) <X(55)>` wrt polar circle
    * :ref:`X(331) <X(331)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(55) <X(55)>` (line :ref:`X(657) <X(657)>`\ \ :ref:`X(663) <X(663)>`)
    * :ref:`X(331) <X(331)>` = polar conjugate of :ref:`X(55) <X(55)>`
-
-Notes
------
-
-.. container:: note-item
-
-   Barycentrics sec\ :sup:`2`\ (A/2) sec A : sec\ :sup:`2`\ (B/2) sec B : sec\ :sup:`2`\ (C/2) sec C
 
 .. toctree::
    :hidden:

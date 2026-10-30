@@ -10,24 +10,25 @@ X(253) = X(4)-CROSS CONJUGATE OF X(2)
 
 .. enunciation::
 
-   :ref:`X(253) <X(253)>` is the perspector of ABC and the :term:`pedal triangle <pedal-triangle>` of :ref:`X(64) <X(64)>`.
+   :ref:`X(253) <X(253)>` is the unique point whose :term:`complement <complement>` is also its polar conjugate (X(1249)). (:person:`Randy Hutson <randy-hutson>`, July 11, 2019)
 
 .. figure:: x-00253.svg
    :alt: X(253) = X(4)-CROSS CONJUGATE OF X(2)
    :align: center
 
-   **X(253) = X(4)-CROSS CONJUGATE OF X(2)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(253) = X(4)-CROSS CONJUGATE OF X(2)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = (csc A)/(tan B + tan C - tan A), = g(A,B,C) : g(B,C,A) : g(C,A,B), where g(A,B,C) = (csc\ :sup:`2`\ A)/(cos A - cos B cos C)
-   | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where g(A,B,C) = 1/(tan B + tan C - tan A)
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = (\csc A)/(\tan B + \tan C - \tan A)`
+   | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where :math:`g(A,B,C) = 1/(\tan B + \tan C - \tan A)`
    | **Search Value (6, 9, 13):** :math:`6.547843480141`
 
 .. collapse:: Alternate Coordinates
-   :badge: 1 form
+   :badge: 2 forms
 
-   * **Barycentrics:** 1/(3 a^4 - 2 a^2 (b^2 + c^2) - (b^2 - c^2)^2) : :, :ref:`X(253) <X(253)>` is the unique point whose :term:`complement <complement>` is also its polar conjugate (X(1249)). (:person:`Randy Hutson <randy-hutson>`, July 11, 2019)
+   * **Trilinears:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where :math:`g(A,B,C) = (\csc^{2} A)/(\cos A - \cos B \cos C)`
+   * **Barycentrics:** :math:`1/(3 a^{4} - 2 a^{2} (b^{2} + c^{2}) - (b^{2} - c^{2})^{2}) : :`
 
 .. container:: note-item
 
@@ -49,9 +50,16 @@ X(253) = X(4)-CROSS CONJUGATE OF X(2)
    * :ref:`X(253) <X(253)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`4 <X(4)>`, :ref:`2 <X(2)>`), (:ref:`122 <X(122)>`, :ref:`525 <X(525)>`)
    * :ref:`X(253) <X(253)>` = :term:`anticomplement <anticomplement>` of X(1249)
    * :ref:`X(253) <X(253)>` = polar conjugate of X(1249)
-   * :ref:`X(253) <X(253)>` = perspector of ABC and the reflection in X(1073) of the pedal triangle of X(1073)
+   * :ref:`X(253) <X(253)>` = perspector of :g:`ABC << A B C >>` and the reflection in X(1073) of the :term:`pedal triangle <pedal-triangle>` of X(1073)
    * :ref:`X(253) <X(253)>` = perspector of de Longchamps circle
    * :ref:`X(253) <X(253)>` = pole, wrt de Longchamps circle, of :term:`trilinear polar <trilinear-polar>` of :ref:`X(69) <X(69)>` (line :ref:`X(441) <X(441)>`\ \ :ref:`X(525) <X(525)>`)
+
+Notes
+-----
+
+.. container:: note-item
+
+   :ref:`X(253) <X(253)>` is the perspector of :g:`ABC << A B C >>` and the pedal triangle of :ref:`X(64) <X(64)>`.
 
 .. toctree::
    :hidden:

@@ -16,17 +16,13 @@ X(242) = X(4)-LINE CONJUGATE OF X(71)
    :alt: X(242) = X(4)-LINE CONJUGATE OF X(71)
    :align: center
 
-   **X(242) = X(4)-LINE CONJUGATE OF X(71)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(242) = X(4)-LINE CONJUGATE OF X(71)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = (sec A)(sin\ :sup:`2`\ A - sin B sin C)
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = (\sec A)(\sin^{2} A - \sin B \sin C)`
    | **Barycentrics:** :math:`(\sin A)f(A,B,C) : (\sin B)f(B,C,A) : (\sin C)f(C,A,B)`
    | **Search Value (6, 9, 13):** :math:`1.163624376275`
-
-.. container:: note-item
-
-   :ref:`X(242) <X(242)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 9 lines

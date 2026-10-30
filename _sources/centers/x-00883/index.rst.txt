@@ -16,16 +16,12 @@ X(883) = INTERSECTION OF LINES X(7)X(8) AND X(190)X(644)
    :alt: X(883) = INTERSECTION OF LINES X(7)X(8) AND X(190)X(644)
    :align: center
 
-   **X(883) = INTERSECTION OF LINES X(7)X(8) AND X(190)X(644)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(883) = INTERSECTION OF LINES X(7)X(8) AND X(190)X(644)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(a^{2}u^{2} - bcvw)/[a^{2}u(bv - cw)] : :`, where u : v : w = :ref:`X(7) <X(7)>`
+   | **Trilinears:** :math:`(a^{2}u^{2} - bcvw)/[a^{2}u(bv - cw)] : :`, where :math:`u : v : w` = :ref:`X(7) <X(7)>`
    | **Search Value (6, 9, 13):** :math:`-1.249247616341`
-
-.. container:: note-item
-
-   :ref:`X(883) <X(883)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines

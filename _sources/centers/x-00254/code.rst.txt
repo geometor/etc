@@ -12,7 +12,7 @@ X(254) = X(3)-CROSS CONJUGATE OF X(4) — Code
    :alt: X(254) = X(3)-CROSS CONJUGATE OF X(4)
    :align: center
 
-   **X(254) = X(3)-CROSS CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(254) = X(3)-CROSS CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

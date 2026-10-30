@@ -10,22 +10,18 @@ X(950) = CROSSPOINT OF X(8) AND X(29)
 
 .. enunciation::
 
-   Let A'B'C' be the Gergonne line extraversion triangle, as defined at X(10180). Let La be the reflection of line BC in line B'C', and define Lb and Lc cyclically. Let A″ = Lb ∩ Lc, and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(950) <X(950)>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the Gergonne line extraversion triangle, as defined at X(10180). Let :g:`L_{a} <L_a>` be the reflection of line :g:`BC <[ B C ]>` in line :g:`B'C' <[ B' C' ]>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>` ∩ :g:`L_{c} <L_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(950) <X(950)>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2018)
 
 .. figure:: x-00950.svg
    :alt: X(950) = CROSSPOINT OF X(8) AND X(29)
    :align: center
 
-   **X(950) = CROSSPOINT OF X(8) AND X(29)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(950) = CROSSPOINT OF X(8) AND X(29)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`bc(b + c - a)[2a^{3} + (b + c)(a^{2} + (b - c)^{2})] : :`
    | **Search Value (6, 9, 13):** :math:`2.529844454800`
-
-.. container:: note-item
-
-   :ref:`X(950) <X(950)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 17 lines

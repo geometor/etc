@@ -12,7 +12,7 @@ X(139) = X(112)-OF-ORTHIC-TRIANGLE — Code
    :alt: X(139) = X(112)-OF-ORTHIC-TRIANGLE
    :align: center
 
-   **X(139) = X(112)-OF-ORTHIC-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(139) = X(112)-OF-ORTHIC-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -16,7 +16,7 @@ X(748) = INTERSECTION OF LINES X(2)X(31) AND X(9)X(38)
    :alt: X(748) = INTERSECTION OF LINES X(2)X(31) AND X(9)X(38)
    :align: center
 
-   **X(748) = INTERSECTION OF LINES X(2)X(31) AND X(9)X(38)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(748) = INTERSECTION OF LINES X(2)X(31) AND X(9)X(38)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,10 +28,6 @@ X(748) = INTERSECTION OF LINES X(2)X(31) AND X(9)X(38)
    :badge: 1 form
 
    * **Trilinears:** :math:`a^{2} + rs - bcS :: b^{2} + rs - caS : c^{2} + rs - abS`
-
-.. container:: note-item
-
-   :ref:`X(748) <X(748)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 15 lines

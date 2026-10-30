@@ -12,7 +12,7 @@ X(761) = EVEN (1, 4) CIRCUMCIRCLE POINT — Code
    :alt: X(761) = EVEN (1, 4) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(761) = EVEN (1, 4) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(761) = EVEN (1, 4) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

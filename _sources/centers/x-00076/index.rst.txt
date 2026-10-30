@@ -11,13 +11,13 @@ X(76) = 3rd BROCARD POINT
 
 .. enunciation::
 
-   Let A' be the perspector of the A-McCay circle, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(76) <X(76)>`. (:person:`Randy Hutson <randy-hutson>`, April 9, 2016)
+   Let :g:`A' <A'>` be the perspector of the A-McCay circle, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(76) <X(76)>`. (:person:`Randy Hutson <randy-hutson>`, April 9, 2016)
 
 .. figure:: x-00076.svg
    :alt: X(76) = 3rd BROCARD POINT
    :align: center
 
-   **X(76) = 3rd BROCARD POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(76) = 3rd BROCARD POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -33,11 +33,7 @@ X(76) = 3rd BROCARD POINT
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(76) <X(76)>` = 3\*\ :ref:`X(2) <X(2)>` - 2\*\ :ref:`X(39) <X(39)>` = 3\*\ :ref:`X(2) <X(2)>` - P(1) - U(1)
-
-.. container:: note-item
-
-   :ref:`X(76) <X(76)>` lies.
+   * :ref:`X(76) <X(76)>` = :math:`3` :ref:`X(2) <X(2)>` - :math:`2` :ref:`X(39) <X(39)>` = :math:`3` :ref:`X(2) <X(2)>` - :math:`P(1) - U(1)`
 
 .. collapse:: Incident Central Lines
    :badge: 69 lines
@@ -76,16 +72,16 @@ X(76) = 3rd BROCARD POINT
    * :ref:`X(76) <X(76)>` = :ref:`X(2) <X(2)>`-Ceva conjugate of X(6374)
    * :ref:`X(76) <X(76)>` = :ref:`X(384) <X(384)>`-of-5th-Brocard-triangle
    * :ref:`X(76) <X(76)>` = :ref:`X(6) <X(6)>`-of-6th-Brocard-triangle
-   * :ref:`X(76) <X(76)>` = perspector of ABC and 1st Brocard triangle
+   * :ref:`X(76) <X(76)>` = perspector of :g:`ABC << A B C >>` and 1st Brocard triangle
    * :ref:`X(76) <X(76)>` = :term:`trilinear pole <trilinear-pole>` of de Longchamps line
    * :ref:`X(76) <X(76)>` = bicentric sum of PU(159)
    * :ref:`X(76) <X(76)>` = PU(159)-harmonic conjugate of X(9494)
-   * :ref:`X(76) <X(76)>` = perspector of conic {A,B,C,\ :ref:`X(670) <X(670)>`,\ :ref:`X(689) <X(689)>`,X(1978)}} (isotomic conjugate of Lemoine axis.)
+   * :ref:`X(76) <X(76)>` = perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(670) <X(670)>`,\ :ref:`X(689) <X(689)>`,X(1978)}} (isotomic conjugate of Lemoine axis.)
    * :ref:`X(76) <X(76)>` = X(1916) of 1st Brocard triangle
    * :ref:`X(76) <X(76)>` = :term:`crosspoint <crosspoint>` of :ref:`X(6) <X(6)>` and :ref:`X(22) <X(22)>` wrt both the anticomplementary and :term:`tangential triangles <tangential-triangle>`
    * :ref:`X(76) <X(76)>` = X(3094)-of-1st anti-Brocard-triangle
    * :ref:`X(76) <X(76)>` = trilinear product of vertices of mid-triangle of 1st Brocard and 1st anti-Brocard triangles
-   * :ref:`X(76) <X(76)>` = perspector of ABC and cross-triangle of ABC and 3rd Brocard triangle
+   * :ref:`X(76) <X(76)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and 3rd Brocard triangle
    * :ref:`X(76) <X(76)>` = trilinear product of vertices of the three anti-altimedial triangles
    * :ref:`X(76) <X(76)>` = Cundy-Parry Phi transform of :ref:`X(98) <X(98)>`
    * :ref:`X(76) <X(76)>` = Cundy-Parry Psi transform of :ref:`X(511) <X(511)>`
@@ -106,7 +102,7 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the obverse triangle of :ref:`X(1) <X(1)>`. Let A″B″C″ be the N-obverse triangle of :ref:`X(1) <X(1)>`. Let A\* be the barycentric product A'\*A″, and define B\* and C\* cyclically. The lines AA\*, BB\*, CC\* concur in :ref:`X(76) <X(76)>`. (Randy Hutson, October 15, 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the obverse triangle of :ref:`X(1) <X(1)>`. Let :g:`A″B″C″ << A″ B″ C″ >>` be the N-obverse triangle of :ref:`X(1) <X(1)>`. Let :g:`A* <A*>` be the barycentric product :g:`A' <A'>`\ \*\ :g:`A″ <A″>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(76) <X(76)>`. (Randy Hutson, October 15, 2018)
 
 .. container:: note-item
 

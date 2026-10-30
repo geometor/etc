@@ -10,28 +10,24 @@ X(430) = EULER X(81)-5th-SUBSTITUTION POINT
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(430) <X(430)>` has Shinagawa coefficients (F,2$bc$ + E + F).
+   As a point on the Euler line, :ref:`X(430) <X(430)>` has Shinagawa coefficients :math:`(F,2\$bc\$ + E + F)`.
 
 .. figure:: x-00430.svg
    :alt: X(430) = EULER X(81)-5th-SUBSTITUTION POINT
    :align: center
 
-   **X(430) = EULER X(81)-5th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(430) = EULER X(81)-5th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(v + w)\sec A : (w + u)\sec B : (u + v)\sec C`, where, u : v : w = :ref:`X(81) <X(81)>`; e.g., u = u(a,b,c) = 1/(b + c)
+   | **Trilinears:** :math:`(v + w)\sec A : (w + u)\sec B : (u + v)\sec C`, where :math:`u : v : w` = :ref:`X(81) <X(81)>`; e.g., :math:`u = u(a,b,c) = 1/(b + c)`
    | **Barycentrics:** :math:`(v + w)\tan A : (w + u)\tan B : (u + v)\tan C`
    | **Search Value (6, 9, 13):** :math:`-10.356504391821`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`(b + c)*(2*a + b + c)*(-a^2 + b^2 - c^2)*(a^2 + b^2 - c^2) : :`
-
-.. container:: note-item
-
-   :ref:`X(430) <X(430)>` lies.
+   * **Barycentrics:** :math:`(b + c) \cdot (2 a + b + c) \cdot (-a^{2} + b^{2} - c^{2}) \cdot (a^{2} + b^{2} - c^{2}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 38 lines

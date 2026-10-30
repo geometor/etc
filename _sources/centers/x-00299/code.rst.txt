@@ -12,7 +12,7 @@ X(299) = ISOTOMIC CONJUGATE OF 2nd ISOGONIC CENTER — Code
    :alt: X(299) = ISOTOMIC CONJUGATE OF 2nd ISOGONIC CENTER
    :align: center
 
-   **X(299) = ISOTOMIC CONJUGATE OF 2nd ISOGONIC CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(299) = ISOTOMIC CONJUGATE OF 2nd ISOGONIC CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -16,17 +16,13 @@ X(801) = ISOGONAL CONJUGATE OF X(800)
    :alt: X(801) = ISOGONAL CONJUGATE OF X(800)
    :align: center
 
-   **X(801) = ISOGONAL CONJUGATE OF X(800)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(801) = ISOGONAL CONJUGATE OF X(800)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = (csc A)/(cos\ :sup:`2`\ B + cos\ :sup:`2`\ C)
-   | **Barycentrics:** :math:`1/(a^4 (b^2 + c^2) - 2 a^2 (b^2 - c^2)^2 + (b^2 - c^2)^2 (b^2 + c^2)) : :`
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = (\csc A)/(\cos^{2} B + \cos^{2} C)`
+   | **Barycentrics:** :math:`1/(a^{4} (b^{2} + c^{2}) - 2 a^{2} (b^{2} - c^{2})^{2} + (b^{2} - c^{2})^{2} (b^{2} + c^{2})) : :`
    | **Search Value (6, 9, 13):** :math:`3.291163117829`
-
-.. container:: note-item
-
-   :ref:`X(801) <X(801)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines

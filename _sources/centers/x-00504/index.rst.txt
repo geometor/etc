@@ -10,23 +10,19 @@ X(504) = 2nd ISOSCELIZER POINT
 
 .. enunciation::
 
-   The :term:`isoscelizer <isoscelizer>` equations [H(A,X)]/a = [H(B,X)]/b = [H(C,X)]/c have solution X = :ref:`X(504) <X(504)>`. (:person:`Peter Yff <peter-yff>`, 4/9/99)
+   The :term:`isoscelizer <isoscelizer>` equations [H(A,X)]/a = [H(B,X)]/b = [H(C,X)]/c have solution :g:`X <X>` = :ref:`X(504) <X(504)>`. (:person:`Peter Yff <peter-yff>`, 4/9/99)
 
 .. figure:: x-00504.svg
    :alt: X(504) = 2nd ISOSCELIZER POINT
    :align: center
 
-   **X(504) = 2nd ISOSCELIZER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(504) = 2nd ISOSCELIZER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = b sin B/2 + c sin C/2 - a sin A/2
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = b \sin B/2 + c \sin C/2 - a \sin A/2`
    | **Barycentrics:** :math:`af(A,B,C) : bf(B,C,A) : cf(C,A,B)`
-   | **Search Value (6, 9, 13):** :math:`8.547349049518`
-
-.. container:: note-item
-
-   :ref:`X(504) <X(504)>` lies.
+   | **Search Value (6, 9, 13):** :math:`3.233394747665`
 
 .. collapse:: Incident Central Lines
    :badge: 1 line
@@ -39,7 +35,7 @@ X(504) = 2nd ISOSCELIZER POINT
 
    * :ref:`X(504) <X(504)>` = :ref:`X(48) <X(48)>`-of-excentral-triangle
    * :ref:`X(504) <X(504)>` = excentral-:term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(503) <X(503)>`
-   * :ref:`X(504) <X(504)>` = ABC-to-excentral :term:`trilinear image <trilinear-image>` of :ref:`X(6) <X(6)>`
+   * :ref:`X(504) <X(504)>` = :g:`ABC << A B C >>`-to-excentral :term:`trilinear image <trilinear-image>` of :ref:`X(6) <X(6)>`
 
 .. toctree::
    :hidden:

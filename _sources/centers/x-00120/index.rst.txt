@@ -16,7 +16,7 @@ X(120) = X(105)-OF-MEDIAL-TRIANGLE
    :alt: X(120) = X(105)-OF-MEDIAL-TRIANGLE
    :align: center
 
-   **X(120) = X(105)-OF-MEDIAL-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(120) = X(105)-OF-MEDIAL-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 

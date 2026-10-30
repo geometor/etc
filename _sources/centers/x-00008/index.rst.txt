@@ -11,19 +11,19 @@ X(8) = NAGEL POINT
 
 .. enunciation::
 
-   Let A'B'C' be the points in which the A-excircle meets BC, the B-excircle meets CA, and the C-excircle meets AB, respectively. The lines AA', BB', CC' concur in :ref:`X(8) <X(8)>`. Another construction of A' is to start at A and trace around ABC half its perimeter, and similarly for B' and C'. Also, :ref:`X(8) <X(8)>` is the incenter of the :term:`anticomplementary triangle <anticomplementary-triangle>`.
+   Let :g:`A'B'C' << A' B' C' >>` be the points in which the :g:`A <A>`-excircle meets :g:`BC <[ B C ]>`, the :g:`B <B>`-excircle meets :g:`CA <[ C A ]>`, and the :g:`C <C>`-excircle meets :g:`AB <[ A B ]>`, respectively. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(8) <X(8)>`. Another construction of :g:`A' <A'>` is to start at :g:`A <A>` and trace around :g:`ABC << A B C >>` half its perimeter, and similarly for :g:`B' <B'>` and :g:`C' <C'>`. Also, :ref:`X(8) <X(8)>` is the incenter of the :term:`anticomplementary triangle <anticomplementary-triangle>`.
 
 .. figure:: x-00008.svg
    :alt: X(8) = NAGEL POINT
    :align: center
 
-   **X(8) = NAGEL POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(8) = NAGEL POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`(b + c - a)/a : (c + a - b)/b : (a + b - c)/c`
    | **Barycentrics:** :math:`b + c - a : c + a - b : a + b - c`
-   | **Tripolars:** :math:`\sqrt{a (a^2-a b-2 b^2-a c+4 b c-2 c^2)} : :`
+   | **Tripolars:** :math:`\sqrt{a (a^{2}-a b-2 b^{2}-a c+4 b c-2 c^{2})} : :`
    | **Search Value (6, 9, 13):** :math:`4.507489358552`
 
 .. collapse:: Alternate Coordinates
@@ -40,8 +40,8 @@ X(8) = NAGEL POINT
 .. collapse:: Linear Combinations
    :badge: 2 combinations
 
-   * :ref:`X(8) <X(8)>` = 2\*\ :ref:`X(1) <X(1)>` - 3\*\ :ref:`X(2) <X(2)>` = 3\*\ :ref:`X(2) <X(2)>` - 4\*\ :ref:`X(10) <X(10)>` = 4\ :ref:`X(10) <X(10)>` - :ref:`X(145) <X(145)>`
-   * :ref:`X(8) <X(8)>` = [A]\*Ra + [B]\*Rb + [C]\*Rc, where Ra, Rb, Rc = radii of Soddy circles
+   * :ref:`X(8) <X(8)>` = :math:`2` :ref:`X(1) <X(1)>` - :math:`3` :ref:`X(2) <X(2)>` = :math:`3` :ref:`X(2) <X(2)>` - :math:`4` :ref:`X(10) <X(10)>` = :math:`4` :ref:`X(10) <X(10)>` - :ref:`X(145) <X(145)>`
+   * :ref:`X(8) <X(8)>` = :g:`A <A>`:math:`R_{a} +` :g:`B <B>`:math:`R_{b} +` :g:`C <C>`:math:`R_{c}`, where :math:`R_{a}`, :math:`R_{b}`, :math:`R_{c}` = radii of Soddy circles
 
 .. container:: note-item
 
@@ -60,7 +60,7 @@ X(8) = NAGEL POINT
 .. collapse:: Functional Relations
    :badge: 73 relations
 
-   * :ref:`X(8) <X(8)>` = perspector of ABC and the :term:`intouch triangle <intouch-triangle>` of the :term:`medial triangle <medial-triangle>` of ABC. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   * :ref:`X(8) <X(8)>` = perspector of :g:`ABC << A B C >>` and the :term:`intouch triangle <intouch-triangle>` of the :term:`medial triangle <medial-triangle>` of :g:`ABC << A B C >>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
    * :ref:`X(8) <X(8)>` = midpoint of X(i) and X(j) for these {i,j}: {:ref:`1 <X(1)>`, 3632}, {:ref:`10 <X(10)>`, 3625}, {:ref:`40 <X(40)>`, 5881}, {:ref:`145 <X(145)>`, 3621}, {3057, 3893}, {3626, 4701}, {3679, 4677}, {4474, 4814}, {4668, 4816}, {4900, 8275}, {5541, 9897}, {5691, 7991}, {5903, 5904}
    * :ref:`X(8) <X(8)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`10 <X(10)>`), (:ref:`2 <X(2)>`, 3679), (:ref:`3 <X(3)>`, 5690), (:ref:`4 <X(4)>`, :ref:`355 <X(355)>`), (:ref:`7 <X(7)>`, 2550), (:ref:`8 <X(8)>`, :ref:`8 <X(8)>`), (:ref:`10 <X(10)>`, 3626), (:ref:`11 <X(11)>`, 3036), (:ref:`20 <X(20)>`, :ref:`40 <X(40)>`), (:ref:`56 <X(56)>`, 8256), (:ref:`65 <X(65)>`, 5836), (:ref:`69 <X(69)>`, 3416), (:ref:`75 <X(75)>`, 3696), (:ref:`78 <X(78)>`, 6736), (:ref:`86 <X(86)>`, 4733), (:ref:`100 <X(100)>`, 1145), (:ref:`144 <X(144)>`, 5223), (:ref:`145 <X(145)>`, :ref:`1 <X(1)>`), (:ref:`147 <X(147)>`, 9864), (:ref:`149 <X(149)>`, :ref:`80 <X(80)>`), (:ref:`192 <X(192)>`, :ref:`984 <X(984)>`), (:ref:`193 <X(193)>`, 3751), (:ref:`210 <X(210)>`, 4711), (:ref:`315 <X(315)>`, 4769), (:ref:`329 <X(329)>`, 3421), (:ref:`346 <X(346)>`, 4901), (:ref:`376 <X(376)>`, 3654), (:ref:`388 <X(388)>`, 5794), (:ref:`390 <X(390)>`, :ref:`9 <X(9)>`), (:ref:`551 <X(551)>`, 4745), (:ref:`663 <X(663)>`, 4147), (:ref:`944 <X(944)>`, :ref:`3 <X(3)>`), (:ref:`950 <X(950)>`, 5795), (:ref:`960 <X(960)>`, 4662), (:ref:`962 <X(962)>`, :ref:`4 <X(4)>`), (1019, 4807), (1043, 3704), (1120, 3756), (1125, 4691), (1280, 4904), (1317, 3035), (1320, :ref:`11 <X(11)>`), (1361, 3042), (1364, 3040), (1392, 7705), (1482, :ref:`5 <X(5)>`), (1483, :ref:`140 <X(140)>`), (1697, 5837), (2098, 1329), (2099, 2886), (2102, 1313), (2103, 1312), (3021, 3039), (3022, 3041), (3057, :ref:`960 <X(960)>`), (3146, 5691), (3161, 10005), (3189, 3913), (3241, :ref:`2 <X(2)>`), (3242, :ref:`141 <X(141)>`), (3243, :ref:`142 <X(142)>`), (3244, 1125), (3434, 3419), (3476, 1376), (3486, :ref:`958 <X(958)>`), (3488, 9708), (3555, :ref:`942 <X(942)>`), (3600, 1706), (3616, 3617), (3617, 4668), (3621, 3632), (3623, 1698), (3625, 4701), (3626, 4746), (3632, 3625), (3633, 3244), (3635, 3634), (3679, 4669), (3685, 3717), (3786, 4111), (3868, :ref:`65 <X(65)>`), (3869, :ref:`72 <X(72)>`), (3872, 4847), (3873, 3753), (3874, 3754), (3875, 3755), (3877, :ref:`210 <X(210)>`), (3878, 3678), (3881, 3918), (3883, 3686), (3884, 4015), (3885, 3057), (3886, 2321), (3889, 3698), (3890, 3697), (3892, 3968), (3894, 3919), (3898, 3956), (3899, 4134), (3901, 4084), (3902, 3706), (3952, 4738), (4318, 1861), (4344, 2345), (4360, 4026), (4363, 4665), (4419, 4643), (4430, 5902), (4454, 4659), (4511, 6735), (4560, 4041), (4643, 4690), (4644, 4363), (4673, 3714), (4693, 4439), (4720, 4046), (4861, 6734), (4864, 3823), (4895, 3716), (4922, 9508), (5048, 5123), (5080, 5176), (5180, 5080), (5263, :ref:`594 <X(594)>`), (5441, 3647), (5603, 5790), (5697, 3878), (5698, 5220), (5710, 5835), (5716, 5793), (5731, 5657), (5734, 5818), (5882, 6684), (5905, 1478), (5919, 3740), (5984, 9860), (6018, 3038), (6193, 9928), (6224, :ref:`100 <X(100)>`), (6327, 4680), (6332, 4163), (6737, 6743), (6740, 6741), (6742, 6739), (6758, 4736), (7192, 4761), (7253, 4086), (7962, 3452), (7970, :ref:`114 <X(114)>`), (7971, 6260), (7972, :ref:`214 <X(214)>`), (7973, 2883), (7974, :ref:`619 <X(619)>`), (7975, :ref:`618 <X(618)>`), (7976, :ref:`39 <X(39)>`), (7977, 6292), (7978, :ref:`113 <X(113)>`), (7979, 1209), (7980, :ref:`642 <X(642)>`), (7981, :ref:`641 <X(641)>`), (7982, :ref:`946 <X(946)>`), (7983, :ref:`115 <X(115)>`), (7984, :ref:`125 <X(125)>`), (8241, 2090), (8591, 9881), (8596, 9875), (8834, 6552), (9263, :ref:`291 <X(291)>`), (9780, 4678), (9785, 2551), (9791, 1654), (9797, :ref:`938 <X(938)>`), (9802, :ref:`149 <X(149)>`), (9809, :ref:`153 <X(153)>`), (9856, 9947), (9884, 2482), (9933, 1147), (9957, 5044), (9963, 6154), (9965, 2093), (10031, 6174)
    * :ref:`X(8) <X(8)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(56) <X(56)>`
@@ -85,9 +85,9 @@ X(8) = NAGEL POINT
    * :ref:`X(8) <X(8)>` = trilinear product of vertices of Hutson-intouch triangle
    * :ref:`X(8) <X(8)>` = trilinear product of vertices of Caelum triangle
    * :ref:`X(8) <X(8)>` = orthocenter of X(i)X(j)X(k) for these (i,j,k): (:ref:`1 <X(1)>`, :ref:`4 <X(4)>`, 5556), (:ref:`4 <X(4)>`, :ref:`7 <X(7)>`, :ref:`885 <X(885)>`)
-   * :ref:`X(8) <X(8)>` = perspector of ABC and :term:`pedal triangle <pedal-triangle>` of :ref:`X(40) <X(40)>`
-   * :ref:`X(8) <X(8)>` = perspector of ABC and reflection of medial triangle in :ref:`X(10) <X(10)>`
-   * :ref:`X(8) <X(8)>` = perspector of ABC and reflection of intouch triangle in :ref:`X(1) <X(1)>`
+   * :ref:`X(8) <X(8)>` = perspector of :g:`ABC << A B C >>` and :term:`pedal triangle <pedal-triangle>` of :ref:`X(40) <X(40)>`
+   * :ref:`X(8) <X(8)>` = perspector of :g:`ABC << A B C >>` and reflection of medial triangle in :ref:`X(10) <X(10)>`
+   * :ref:`X(8) <X(8)>` = perspector of :g:`ABC << A B C >>` and reflection of intouch triangle in :ref:`X(1) <X(1)>`
    * :ref:`X(8) <X(8)>` = pedal antipodal perspector of :ref:`X(1) <X(1)>`
    * :ref:`X(8) <X(8)>` = pedal antipodal perspector of :ref:`X(36) <X(36)>`
    * :ref:`X(8) <X(8)>` = X(1498)-of-intouch-triangle
@@ -119,16 +119,16 @@ X(8) = NAGEL POINT
    * :ref:`X(8) <X(8)>` = X(i)-beth conjugate of X(j) for these (i,j): (:ref:`8 <X(8)>`, :ref:`1 <X(1)>`), (:ref:`99 <X(99)>`, 3160), (:ref:`200 <X(200)>`, 4517), (:ref:`333 <X(333)>`, 5222), (:ref:`341 <X(341)>`, :ref:`341 <X(341)>`), (:ref:`346 <X(346)>`, 4873), (:ref:`643 <X(643)>`, :ref:`3 <X(3)>`), (:ref:`644 <X(644)>`, 3730), (:ref:`668 <X(668)>`, :ref:`8 <X(8)>`), (1043, :ref:`8 <X(8)>`), (2287, 4266), (3699, :ref:`8 <X(8)>`), (6558, :ref:`8 <X(8)>`), (7256, :ref:`8 <X(8)>`), (7257, :ref:`76 <X(76)>`), (7259, :ref:`220 <X(220)>`), (8706, :ref:`8 <X(8)>`)
    * :ref:`X(8) <X(8)>` = X(i)-anticomplementary conjugate of X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`8 <X(8)>`), (:ref:`2 <X(2)>`, :ref:`69 <X(69)>`), (:ref:`3 <X(3)>`, :ref:`20 <X(20)>`), (:ref:`5 <X(5)>`, 2888), (:ref:`6 <X(6)>`, :ref:`2 <X(2)>`), (:ref:`7 <X(7)>`, 3434), (:ref:`8 <X(8)>`, 3436), (:ref:`9 <X(9)>`, :ref:`829 <X(829)>`), (:ref:`10 <X(10)>`, 1330), (:ref:`13 <X(13)>`, :ref:`621 <X(621)>`), (:ref:`14 <X(14)>`, :ref:`622 <X(622)>`), (:ref:`15 <X(15)>`, :ref:`616 <X(616)>`), (:ref:`16 <X(16)>`, :ref:`617 <X(617)>`), (:ref:`18 <X(18)>`, :ref:`634 <X(634)>`), (:ref:`19 <X(19)>`, 59015), (:ref:`20 <X(20)>`, 6225), (:ref:`21 <X(21)>`, 3869), (:ref:`22 <X(22)>`, 5596), (:ref:`24 <X(24)>`, 6193), (:ref:`25 <X(25)>`, :ref:`192 <X(192)>`), (:ref:`28 <X(28)>`, 3868), (:ref:`30 <X(30)>`, :ref:`146 <X(146)>`), (:ref:`31 <X(31)>`, :ref:`192 <X(192)>`), (:ref:`32 <X(32)>`, :ref:`194 <X(194)>`), (:ref:`54 <X(54)>`, :ref:`3 <X(3)>`), (:ref:`55 <X(55)>`, :ref:`144 <X(144)>`), (:ref:`56 <X(56)>`, :ref:`145 <X(145)>`), (:ref:`57 <X(57)>`, :ref:`7 <X(7)>`), (:ref:`58 <X(58)>`, :ref:`1 <X(1)>`), (:ref:`59 <X(59)>`, :ref:`100 <X(100)>`), (:ref:`74 <X(74)>`, :ref:`30 <X(30)>`), (:ref:`81 <X(81)>`, :ref:`75 <X(75)>`), (:ref:`98 <X(98)>`, :ref:`511 <X(511)>`), (:ref:`99 <X(99)>`, :ref:`512 <X(512)>`), and many others
    * :ref:`X(8) <X(8)>` = X(i)-complementary conjugate of X(j) for these (i,j): (:ref:`1 <X(1)>`, 2885), (:ref:`31 <X(31)>`, 3161), (:ref:`513 <X(513)>`, 5510), (1293, :ref:`513 <X(513)>`), (3445, :ref:`10 <X(10)>`), (3680, 1329), (4373, 2887), (8056, :ref:`141 <X(141)>`)
-   * :ref:`X(8) <X(8)>` = perspector of ABC and mid-triangle of excentral and 2nd extouch triangles
-   * :ref:`X(8) <X(8)>` = perspector of 5th extouch triangle and cross-triangle of ABC and 5th extouch triangle
+   * :ref:`X(8) <X(8)>` = perspector of :g:`ABC << A B C >>` and mid-triangle of excentral and 2nd extouch triangles
+   * :ref:`X(8) <X(8)>` = perspector of 5th extouch triangle and cross-triangle of :g:`ABC << A B C >>` and 5th extouch triangle
    * :ref:`X(8) <X(8)>` = X(1593)-of-2nd-extouch-triangle
    * :ref:`X(8) <X(8)>` = excentral-to-2nd-extouch :term:`similarity image <similarity-image>` of X(1697)
    * :ref:`X(8) <X(8)>` = Cundy-Parry Phi transform of :ref:`X(104) <X(104)>`
    * :ref:`X(8) <X(8)>` = Cundy-Parry Psi transform of :ref:`X(517) <X(517)>`
-   * :ref:`X(8) <X(8)>` = perspector of ABC and cross-triangle of ABC and Gemini triangle 39
+   * :ref:`X(8) <X(8)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 39
    * :ref:`X(8) <X(8)>` = barycentric product of vertices of Gemini triangle 39
    * :ref:`X(8) <X(8)>` = perspector of Gemini triangle 13 and cross-triangle of Gemini triangles 1 and 13
-   * :ref:`X(8) <X(8)>` = excentral-to-ABC :term:`barycentric image <barycentric-image>` of :ref:`X(1) <X(1)>`
+   * :ref:`X(8) <X(8)>` = excentral-to-:g:`ABC << A B C >>` :term:`barycentric image <barycentric-image>` of :ref:`X(1) <X(1)>`
    * :ref:`X(8) <X(8)>` = :ref:`X(4) <X(4)>`-of-Yff-contact-triangle
    * :ref:`X(8) <X(8)>` = Yff-contact-isogonal conjugate of X(5592)
    * :ref:`X(8) <X(8)>` = perspector (Brianchon point) of the Mandart inellipse
@@ -139,19 +139,19 @@ Notes
 
 .. container:: note-item
 
-   Let Ab, Ac, Bc, Ba, Ca, Cb be as in the construction of the Conway circle (http://mathworld.wolfram.com/ConwayCircle.html). Let Oa be the circumcircle of ABcCb, and define Ob, Oc cyclically. :ref:`X(8) <X(8)>` is the radical center of Oa, Ob, Oc. see also :ref:`X(21) <X(21)>` and :ref:`X(274) <X(274)>`. (Randy Hutson, April 9, 2016)
+   Let :g:`A_{b} <A_b>`, :g:`A_{c} <A_c>`, :g:`B_{c} <B_c>`, :g:`B_{a} <B_a>`, :g:`C_{a} <C_a>`, :g:`C_{b} <C_b>` be as in the construction of the Conway circle (http://mathworld.wolfram.com/ConwayCircle.html). Let :g:`O_{a} <O_a>` be the circumcircle of :g:`AB_{c}C_{b} << A B_c C_b >>`, and define :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>` cyclically. :ref:`X(8) <X(8)>` is the radical center of :g:`O_{a} <O_a>`, :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>`. see also :ref:`X(21) <X(21)>` and :ref:`X(274) <X(274)>`. (Randy Hutson, April 9, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be Triangle T(-2,1). Let A″ be the trilinear product B'\*C', and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(519) <X(519)>`. The lines A'A″, B'B″, C'C″ concur in :ref:`X(8) <X(8)>`. (Randy Hutson, November 18, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be Triangle T(-2,1). Let :g:`A″ <A″>` be the trilinear product :g:`B' <B'>`\ \*\ :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(519) <X(519)>`. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(8) <X(8)>`. (Randy Hutson, November 18, 2015)
 
 .. container:: note-item
 
-   Let Ia be the reflection of :ref:`X(1) <X(1)>` in the perpendicular bisector of BC, and define Ib and Ic cyclically. :ref:`X(8) <X(8)>` = :ref:`X(1) <X(1)>`-of-IaIbIc. (Randy Hutson, September 14, 2016)
+   Let :g:`I_{a} <I_a>` be the reflection of :ref:`X(1) <X(1)>` in the perpendicular bisector of :g:`BC <[ B C ]>`, and define :g:`I_{b} <I_b>` and :g:`I_{c} <I_c>` cyclically. :ref:`X(8) <X(8)>` = :ref:`X(1) <X(1)>`-of-:g:`I_{a}I_{b}I_{c} << I_a I_b I_c >>`. (Randy Hutson, September 14, 2016)
 
 .. container:: note-item
 
-   Let A\ :sub:`28`\ B\ :sub:`28`\ C\ :sub:`28` be the Gemini triangle 28. Let L\ :sub:`A` be the line through A\ :sub:`28` parallel to BC, and define L\ :sub:`B` and L\ :sub:`C` cyclically. Let A':sub:`28` = L\ :sub:`B`\ ∩L\ :sub:`C`, and define B':sub:`28`, C':sub:`28` cyclically. Triangle A':sub:`28`\ B':sub:`28`\ C':sub:`28` is homothetic to ABC at :ref:`X(8) <X(8)>`. (Randy Hutson, November 30, 2018)
+   Let :g:`A_{28}B_{28}C_{28} << A_28 B_28 C_28 >>` be the Gemini triangle 28. Let :g:`L_{A} <L_A>` be the line through :g:`A_{28} <A_28>` parallel to :g:`BC <[ B C ]>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A'_{28} <A'_28>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`B'_{28} <B'_28>`, :g:`C'_{28} <C'_28>` cyclically. Triangle :g:`A'_{28}B'_{28}C'_{28} << A'_28 B'_28 C'_28 >>` is homothetic to :g:`ABC << A B C >>` at :ref:`X(8) <X(8)>`. (Randy Hutson, November 30, 2018)
 
 .. container:: note-item
 
@@ -163,7 +163,7 @@ Notes
 
 .. container:: note-item
 
-   Let T be any one of these trianges: {Ascella, 1st circumperp, 2nd circumperp}. Let O\ :sub:`A` be the circle centered at the A-vertex of T and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(8) <X(8)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (Randy Hutson, August 30, 2020)
+   Let :g:`T <T>` be any one of these trianges: {Ascella, 1st circumperp, 2nd circumperp}. Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of :g:`T <T>` and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(8) <X(8)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
 
 .. container:: note-item
 

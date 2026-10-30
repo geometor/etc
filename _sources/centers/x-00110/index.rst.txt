@@ -11,13 +11,13 @@ X(110) = FOCUS OF KIEPERT PARABOLA
 
 .. enunciation::
 
-   :ref:`X(110) <X(110)>` is the center of the Stammler hyperbola, SH, which is the rectangular hyperbola that passes through :ref:`X(1) <X(1)>`, :ref:`X(3) <X(3)>`, :ref:`X(6) <X(6)>`, :ref:`X(155) <X(155)>`, :ref:`X(159) <X(159)>`, :ref:`X(195) <X(195)>`, :ref:`X(399) <X(399)>`, X(1498), X(2916), X(2917), X(2918), X(2929), X(2930), X(2931), X(2935), X(2948), X(3511), the excenters, and the vertices of the :term:`tangential triangle <tangential-triangle>`. SH is the bianticevian conic of :ref:`X(1) <X(1)>` and :ref:`X(6) <X(6)>` and the antipedal-anticevian conic of :ref:`X(3) <X(3)>`. SH is the tangential :term:`isogonal conjugate <isogonal-conjugate>` of the Euler line, the tangential :term:`isotomic conjugate <isotomic-conjugate>` of the van Aubel line, the excentral isogonal conjugate of line :ref:`X(30) <X(30)>`\ \ :ref:`X(40) <X(40)>`, and the excentral isotomic conjugate of line :ref:`X(191) <X(191)>`\ X(2938). SH is tangent to the Euler line at :ref:`X(3) <X(3)>` and meets the line at infinity (and the Jerabek hyperbola, other than at :ref:`X(3) <X(3)>` and :ref:`X(6) <X(6)>`) at X(2574) and X(2575). SH is the locus of a point P for which the P-Brocard triangle is perspective to ABC. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011, 1/29/2015)
+   :ref:`X(110) <X(110)>` is the center of the Stammler hyperbola, SH, which is the rectangular hyperbola that passes through :ref:`X(1) <X(1)>`, :ref:`X(3) <X(3)>`, :ref:`X(6) <X(6)>`, :ref:`X(155) <X(155)>`, :ref:`X(159) <X(159)>`, :ref:`X(195) <X(195)>`, :ref:`X(399) <X(399)>`, X(1498), X(2916), X(2917), X(2918), X(2929), X(2930), X(2931), X(2935), X(2948), X(3511), the excenters, and the vertices of the :term:`tangential triangle <tangential-triangle>`. SH is the bianticevian conic of :ref:`X(1) <X(1)>` and :ref:`X(6) <X(6)>` and the antipedal-anticevian conic of :ref:`X(3) <X(3)>`. SH is the tangential :term:`isogonal conjugate <isogonal-conjugate>` of the Euler line, the tangential :term:`isotomic conjugate <isotomic-conjugate>` of the van Aubel line, the excentral isogonal conjugate of line :ref:`X(30) <X(30)>`\ \ :ref:`X(40) <X(40)>`, and the excentral isotomic conjugate of line :ref:`X(191) <X(191)>`\ X(2938). SH is tangent to the Euler line at :ref:`X(3) <X(3)>` and meets the line at infinity (and the Jerabek hyperbola, other than at :ref:`X(3) <X(3)>` and :ref:`X(6) <X(6)>`) at X(2574) and X(2575). SH is the locus of a point :g:`P <P>` for which the :g:`P <P>`-Brocard triangle is perspective to :g:`ABC << A B C >>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011, 1/29/2015)
 
 .. figure:: x-00110.svg
    :alt: X(110) = FOCUS OF KIEPERT PARABOLA
    :align: center
 
-   **X(110) = FOCUS OF KIEPERT PARABOLA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(110) = FOCUS OF KIEPERT PARABOLA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -32,7 +32,7 @@ X(110) = FOCUS OF KIEPERT PARABOLA
    * **Trilinears:** :math:`\cos(B - C) - \cos(C - A) \cos(A - B) : :`
    * **Trilinears:** :math:`a/(b^{2} - c^{2}) : :`
    * **Trilinears:** :math:`\sec(B - C) - \sec(C - A) \sec(A - B) : :`
-   * **Tripolars:** :math:`|b c (b^2 - c^2)| : :`
+   * **Tripolars:** :math:`|b c (b^{2} - c^{2})| : :`
 
 .. container:: note-item
 
@@ -71,10 +71,10 @@ X(110) = FOCUS OF KIEPERT PARABOLA
    * :ref:`X(110) <X(110)>` = :term:`trilinear pole <trilinear-pole>` of the Brocard axis
    * :ref:`X(110) <X(110)>` = trilinear pole of PU(29) (see ETC→Tables→Bicentric Pairs)
    * :ref:`X(110) <X(110)>` = crosssum of polar circle intercepts of Euler line
-   * :ref:`X(110) <X(110)>` = perspector of ABC and vertex-triangle of :term:`anticevian triangles <anticevian-triangle>` of :ref:`X(3) <X(3)>` and :ref:`X(6) <X(6)>`
+   * :ref:`X(110) <X(110)>` = perspector of :g:`ABC << A B C >>` and vertex-triangle of :term:`anticevian triangles <anticevian-triangle>` of :ref:`X(3) <X(3)>` and :ref:`X(6) <X(6)>`
    * :ref:`X(110) <X(110)>` = Johnson-circumconic antipode of :ref:`X(265) <X(265)>`
    * :ref:`X(110) <X(110)>` = MacBeath-circumconic antipode of :ref:`X(895) <X(895)>`
-   * :ref:`X(110) <X(110)>` = perspector of conic {A,B,C,PU(2)}
+   * :ref:`X(110) <X(110)>` = perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(2)}
    * :ref:`X(110) <X(110)>` = intersection of :term:`trilinear polars <trilinear-polar>` of P(2) and U(2)
    * :ref:`X(110) <X(110)>` = intersection of tangents to Steiner circumellipse at :ref:`X(99) <X(99)>` and :ref:`X(648) <X(648)>`
    * :ref:`X(110) <X(110)>` = :term:`crosspoint <crosspoint>` of :ref:`X(99) <X(99)>` and :ref:`X(648) <X(648)>`
@@ -91,12 +91,12 @@ X(110) = FOCUS OF KIEPERT PARABOLA
    * :ref:`X(110) <X(110)>` = perspector of circumorthic triangle and Johnson triangle (the reflection triangles of :ref:`X(4) <X(4)>` and :ref:`X(3) <X(3)>`, resp.)
    * :ref:`X(110) <X(110)>` = trilinear product of vertices of circumtangential triangle
    * :ref:`X(110) <X(110)>` = {:ref:`X(3) <X(3)>`,\ :ref:`X(156) <X(156)>`}-harmonic conjugate of X(1614)
-   * :ref:`X(110) <X(110)>` = orthocentroidal-to-ABC :term:`similarity image <similarity-image>` of :ref:`X(2) <X(2)>`
+   * :ref:`X(110) <X(110)>` = orthocentroidal-to-:g:`ABC << A B C >>` :term:`similarity image <similarity-image>` of :ref:`X(2) <X(2)>`
    * :ref:`X(110) <X(110)>` = 4th-Brocard-to-circumsymmedial similarity image of :ref:`X(2) <X(2)>`
    * :ref:`X(110) <X(110)>` = isogonal conjugate of isotomic conjugate of trilinear pole of line :ref:`X(2) <X(2)>`\ \ :ref:`X(6) <X(6)>`
-   * :ref:`X(110) <X(110)>` = the point of intersection, other than A, B, C, of the circumcircle and Johnson circumconic
-   * :ref:`X(110) <X(110)>` = the point of intersection, other than A, B, C, of the circumcircle and MacBeath circumconic
-   * :ref:`X(110) <X(110)>` = the point of intersection, other than A, B, C, of the circumcircle and circumconic {A,B,C,PU(5)}}
+   * :ref:`X(110) <X(110)>` = the point of intersection, other than :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, of the circumcircle and Johnson circumconic
+   * :ref:`X(110) <X(110)>` = the point of intersection, other than :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, of the circumcircle and MacBeath circumconic
+   * :ref:`X(110) <X(110)>` = the point of intersection, other than :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, of the circumcircle and circumconic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(5)}}
    * :ref:`X(110) <X(110)>` = Collings transform of :ref:`X(5) <X(5)>`
    * :ref:`X(110) <X(110)>` = Collings transform of :ref:`X(6) <X(6)>`
    * :ref:`X(110) <X(110)>` = intersection of tangents at :ref:`X(61) <X(61)>` and :ref:`X(62) <X(62)>` to the Napoleon-Feuerbach cubic K005
@@ -107,14 +107,14 @@ X(110) = FOCUS OF KIEPERT PARABOLA
    * :ref:`X(110) <X(110)>` = Ψ(X(i), X(j)) for these (i,j): (:ref:`1 <X(1)>`, :ref:`21 <X(21)>`), (:ref:`2 <X(2)>`, :ref:`6 <X(6)>`), (:ref:`3 <X(3)>`, :ref:`49 <X(49)>`), (:ref:`4 <X(4)>`, :ref:`2 <X(2)>`), (:ref:`5 <X(5)>`, :ref:`51 <X(51)>`), (:ref:`6 <X(6)>`, :ref:`3 <X(3)>`), (:ref:`7 <X(7)>`, :ref:`21 <X(21)>`), (:ref:`8 <X(8)>`, :ref:`21 <X(21)>`), (:ref:`9 <X(9)>`, :ref:`21 <X(21)>`), (:ref:`19 <X(19)>`, :ref:`1 <X(1)>`), (:ref:`53 <X(53)>`, :ref:`5 <X(5)>`), (:ref:`54 <X(54)>`, :ref:`3 <X(3)>`), (:ref:`64 <X(64)>`, :ref:`3 <X(3)>`), (:ref:`65 <X(65)>`, :ref:`1 <X(1)>`), (:ref:`66 <X(66)>`, :ref:`3 <X(3)>`), (:ref:`67 <X(67)>`, :ref:`3 <X(3)>`), (:ref:`68 <X(68)>`, :ref:`3 <X(3)>`), (:ref:`69 <X(69)>`, :ref:`3 <X(3)>`), (:ref:`73 <X(73)>`, :ref:`3 <X(3)>`), (:ref:`74 <X(74)>`, :ref:`3 <X(3)>`), (:ref:`75 <X(75)>`, :ref:`1 <X(1)>`), (:ref:`76 <X(76)>`, :ref:`2 <X(2)>`), (:ref:`93 <X(93)>`, :ref:`4 <X(4)>`), (:ref:`95 <X(95)>`, :ref:`54 <X(54)>`), (:ref:`115 <X(115)>`, :ref:`125 <X(125)>`), (:ref:`190 <X(190)>`, :ref:`99 <X(99)>`), (:ref:`250 <X(250)>`, :ref:`186 <X(186)>`)
    * :ref:`X(110) <X(110)>` = :ref:`X(110) <X(110)>`-of-1st-Parry-triangle
    * :ref:`X(110) <X(110)>` = :ref:`X(74) <X(74)>`-of-2nd-Parry-triangle
-   * :ref:`X(110) <X(110)>` = center of similitude of ABC and 1st Parry triangle
+   * :ref:`X(110) <X(110)>` = center of similitude of :g:`ABC << A B C >>` and 1st Parry triangle
    * :ref:`X(110) <X(110)>` = inverse-in-Parry-isodynamic-circle of :ref:`X(111) <X(111)>`; see :ref:`X(2) <X(2)>`
    * :ref:`X(110) <X(110)>` = barycentric product of PU(i) for these i: 78, 145
    * :ref:`X(110) <X(110)>` = perspector of :term:`unary cofactor triangles <unary-cofactor-triangle>` of outer and inner Napoleon triangles
    * :ref:`X(110) <X(110)>` = X(6792)-of-4th-anti-Brocard-triangle
    * :ref:`X(110) <X(110)>` = :ref:`X(111) <X(111)>`-of-anti-Artzt-triangle
-   * :ref:`X(110) <X(110)>` = perspector of circumcevian triangle of :ref:`X(36) <X(36)>` and cross-triangle of ABC and 2nd circumperp triangle
-   * :ref:`X(110) <X(110)>` = perspector of circumcevian triangle of :ref:`X(187) <X(187)>` and cross-triangle of ABC and circumsymmedial triangle
+   * :ref:`X(110) <X(110)>` = perspector of circumcevian triangle of :ref:`X(36) <X(36)>` and cross-triangle of :g:`ABC << A B C >>` and 2nd circumperp triangle
+   * :ref:`X(110) <X(110)>` = perspector of circumcevian triangle of :ref:`X(187) <X(187)>` and cross-triangle of :g:`ABC << A B C >>` and circumsymmedial triangle
    * :ref:`X(110) <X(110)>` = Kiepert image of :ref:`X(3) <X(3)>`
    * :ref:`X(110) <X(110)>` = Jerabek image of :ref:`X(2) <X(2)>`
    * :ref:`X(110) <X(110)>` = Cundy-Parry Phi transform of X(14264)
@@ -124,16 +124,16 @@ X(110) = FOCUS OF KIEPERT PARABOLA
    * :ref:`X(110) <X(110)>` = Lucas isogonal conjugate of :ref:`X(30) <X(30)>`
    * :ref:`X(110) <X(110)>` = center of the perspeconic of these triangles: inner and outer Napoleon
    * :ref:`X(110) <X(110)>` = intersection of antipedal lines of X(1113) and X(1114)
-   * :ref:`X(110) <X(110)>` = :ref:`X(104) <X(104)>`-of-circumorthic-triangle if ABC is acute
+   * :ref:`X(110) <X(110)>` = :ref:`X(104) <X(104)>`-of-circumorthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(110) <X(110)>` = perspector, wrt circumorthic triangle, of polar circle
    * :ref:`X(110) <X(110)>` = trilinear product of circumcircle intercepts of line :ref:`X(1) <X(1)>`\ \ :ref:`X(21) <X(21)>`
    * :ref:`X(110) <X(110)>` = barycentric product of circumcircle intercepts of line :ref:`X(2) <X(2)>`\ \ :ref:`X(6) <X(6)>`
    * :ref:`X(110) <X(110)>` = barycentric product :ref:`X(6) <X(6)>`\ \*\ :ref:`X(99) <X(99)>`
    * :ref:`X(110) <X(110)>` = barycentric product of Steiner circumellipse intercepts of Brocard axis
-   * :ref:`X(110) <X(110)>` = Feuerbach point of the tangential triangle if ABC is acute; otherwise, a vertex of the Feuerbach triangle of the tangential triangle
+   * :ref:`X(110) <X(110)>` = Feuerbach point of the tangential triangle if :g:`ABC << A B C >>` is acute; otherwise, a vertex of the Feuerbach triangle of the tangential triangle
    * :ref:`X(110) <X(110)>` = barycentric product of MacBeath circumconic intercepts of Euler line
-   * :ref:`X(110) <X(110)>` = excentral-to-ABC :term:`functional image <functional-image>` of X(1768)
-   * :ref:`X(110) <X(110)>` = intouch-to-ABC functional image of :ref:`X(11) <X(11)>`
+   * :ref:`X(110) <X(110)>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of X(1768)
+   * :ref:`X(110) <X(110)>` = intouch-to-:g:`ABC << A B C >>` functional image of :ref:`X(11) <X(11)>`
    * :ref:`X(110) <X(110)>` = trilinear pole, wrt circumtangential triangle, of Euler line
    * :ref:`X(110) <X(110)>` = trilinear pole, wrt 1st Parry triangle, of Lemoine axis
    * :ref:`X(110) <X(110)>` = trilinear product of circumcircle intercepts of line :ref:`X(1) <X(1)>`\ \ :ref:`X(21) <X(21)>`
@@ -159,41 +159,41 @@ Notes
 
 .. container:: note-item
 
-   Scimemi proves that if the Euler line is reflected in every side of triangle ABC, then the three reflections concur in :ref:`X(110) <X(110)>`.
+   Scimemi proves that if the Euler line is reflected in every side of triangle :g:`ABC << A B C >>`, then the three reflections concur in :ref:`X(110) <X(110)>`.
 
 .. container:: note-item
 
    Seven constructions from Randy Hutson, January 29, 2015:
 
-      (1) Let P be a point, other than :ref:`X(4) <X(4)>`, on Euler line. Let A' be the reflection of P in BC, and define B' and C' cyclically. The circumcircles of AA'B', BC'A', and CA'B' concur in :ref:`X(110) <X(110)>`.
+      (1) Let :g:`P <P>` be a point, other than :ref:`X(4) <X(4)>`, on Euler line. Let :g:`A' <A'>` be the reflection of :g:`P <P>` in :g:`BC <[ B C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The circumcircles of :g:`AA'B' << A A' B' >>`, :g:`BC'A' << B C' A' >>`, and :g:`CA'B' << C A' B' >>` concur in :ref:`X(110) <X(110)>`.
 
-      (2) Let Q be a point on line :ref:`X(2) <X(2)>`\ \ :ref:`X(6) <X(6)>` other than :ref:`X(2) <X(2)>`. Let A'B'C' be the :term:`cevian triangle <cevian-triangle>` of Q. Let A″ be the {B,C}-harmonic conjugate of A' (or equivalently, A″ = BC∩B'C'), and define B″, C″ cyclically. The circumcircles of AB″C″, BC″A″, CA″B″ concur in :ref:`X(110) <X(110)>`.
+      (2) Let :g:`Q <Q>` be a point on line :ref:`X(2) <X(2)>`\ \ :ref:`X(6) <X(6)>` other than :ref:`X(2) <X(2)>`. Let :g:`A'B'C' << A' B' C' >>` be the :term:`cevian triangle <cevian-triangle>` of Q. Let :g:`A″ <A″>` be the {B,C}-harmonic conjugate of :g:`A' <A'>` (or equivalently, :g:`A″ <A″>` = :g:`BC <[ B C ]>`\ ∩\ :g:`B'C' <[ B' C' ]>`), and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The circumcircles of :g:`AB″C″ << A B″ C″ >>`, :g:`BC″A″ << B C″ A″ >>`, :g:`CA″B″ << C A″ B″ >>` concur in :ref:`X(110) <X(110)>`.
 
-      (3) Let La, Lb, Lc be the lines through A, B, C, resp. parallel to the Euler line. Let Ma, Mb, Mc be the reflections of BC, CA, AB in La, Lb, Lc, resp. Let A' = Mb∩Mc, and define B', C' cyclically. Triangle A'B'C' is inversely similar to, and 3 times the size of, ABC. Let A″B″C″ be the reflection of A'B'C' in the Euler line. The triangle A″B″C″ is homothetic to ABC, with center of homothety :ref:`X(125) <X(125)>` and centroid :ref:`X(110) <X(110)>`. (See :cite:`Hyacinthos #16741 <hyacinthos>`/16782, Sep 2008.)
+      (3) Let :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` be the lines through :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, resp. parallel to the Euler line. Let :g:`M_{a} <M_a>`, :g:`M_{b} <M_b>`, :g:`M_{c} <M_c>` be the reflections of :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>` in :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>`, resp. Let :g:`A' <A'>` = :g:`M_{b} <M_b>`\ ∩\ :g:`M_{c} <M_c>`, and define :g:`B' <B'>`, :g:`C' <C'>` cyclically. Triangle :g:`A'B'C' << A' B' C' >>` is inversely similar to, and 3 times the size of, :g:`ABC << A B C >>`. Let :g:`A″B″C″ << A″ B″ C″ >>` be the reflection of :g:`A'B'C' << A' B' C' >>` in the Euler line. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to :g:`ABC << A B C >>`, with center of homothety :ref:`X(125) <X(125)>` and centroid :ref:`X(110) <X(110)>`. (See :cite:`Hyacinthos #16741 <hyacinthos>`/16782, Sep 2008.)
 
-      (4) Let A', B', C' be the intersections of the Lemoine axis and lines BC, CA, AB, resp. The circumcircles of AB'C', BC'A', CA'B' concur in :ref:`X(110) <X(110)>`.
+      (4) Let :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>` be the intersections of the Lemoine axis and lines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, resp. The circumcircles of :g:`AB'C' << A B' C' >>`, :g:`BC'A' << B C' A' >>`, :g:`CA'B' << C A' B' >>` concur in :ref:`X(110) <X(110)>`.
 
-      (5) Let A', B', C' be the intersections of line :ref:`X(36) <X(36)>`\ \ :ref:`X(238) <X(238)>` and lines BC, CA, AB, resp. The circumcircles of AB'C', BC'A', CA'B' concur in :ref:`X(110) <X(110)>`.
+      (5) Let :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>` be the intersections of line :ref:`X(36) <X(36)>`\ \ :ref:`X(238) <X(238)>` and lines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, resp. The circumcircles of :g:`AB'C' << A B' C' >>`, :g:`BC'A' << B C' A' >>`, :g:`CA'B' << C A' B' >>` concur in :ref:`X(110) <X(110)>`.
 
-      (6) Let A', B', C' be the intersections of the Euler line and lines BC, CA, AB, resp. Let Oa, Ob, Oc be the circumcenters of AB'C', BC'A', CA'B', resp. The lines AOa, BOb, COc concur in :ref:`X(110) <X(110)>`.
+      (6) Let :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>` be the intersections of the Euler line and lines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, resp. Let :g:`O_{a} <O_a>`, :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>` be the circumcenters of :g:`AB'C' << A B' C' >>`, :g:`BC'A' << B C' A' >>`, :g:`CA'B' << C A' B' >>`, resp. The lines :g:`AO_{a} <[ A O_a ]>`, :g:`BO_{b} <[ B O_b ]>`, :g:`CO_{c} <[ C O_c ]>` concur in :ref:`X(110) <X(110)>`.
 
-      (7) Let Na be the reflection of :ref:`X(5) <X(5)>` in the perpendicular bisector of BC, and define Nb, Nc cyclically. :ref:`X(110) <X(110)>` = X(2070) of NaNbNc.
-
-.. container:: note-item
-
-   Let A2B2C2 and A3B3C3 be the 2nd and 3rd Parry triangles. Let A' be the barycentric product A2\*A3, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(110) <X(110)>`. (Randy Hutson, February 10, 2016)
+      (7) Let :g:`N_{a} <N_a>` be the reflection of :ref:`X(5) <X(5)>` in the perpendicular bisector of :g:`BC <[ B C ]>`, and define :g:`N_{b} <N_b>`, :g:`N_{c} <N_c>` cyclically. :ref:`X(110) <X(110)>` = X(2070) of :g:`N_{a}N_{b}N_{c} << N_a N_b N_c >>`.
 
 .. container:: note-item
 
-   Let A'B'C' be the triangle described in :cite:`ADGEOM #2697 <adgeom>` (8/26/2015, Tran Quang Hung). A'B'C' is homothetic to the :term:`anticomplementary triangle <anticomplementary-triangle>` at :ref:`X(110) <X(110)>`. The nine-point circle of A'B'C' touches the circumcircle of ABC at :ref:`X(110) <X(110)>`. Also, :ref:`X(110) <X(110)>` = :ref:`X(125) <X(125)>`-of-A'B'C'. (Randy Hutson, Novermber 2, 2016)
+   Let :g:`A_{2}B_{2}C_{2} << A_2 B_2 C_2 >>` and :g:`A_{3}B_{3}C_{3} << A_3 B_3 C_3 >>` be the 2nd and 3rd Parry triangles. Let :g:`A' <A'>` be the barycentric product :g:`A_{2} <A_2>`\ \*\ :g:`A_{3} <A_3>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(110) <X(110)>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 
-   Let A' be the trilinear pole of the perpendicular bisector of BC, and define B', C' cyclically. A'B'C' is homothetic to the circumanticevian triangle of :ref:`X(4) <X(4)>` at :ref:`X(110) <X(110)>`. :ref:`X(110) <X(110)>` is also the barycentric product A'\*B'\*C'. (Randy Hutson, January 29, 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the triangle described in :cite:`ADGEOM #2697 <adgeom>` (8/26/2015, Tran Quang Hung). :g:`A'B'C' << A' B' C' >>` is homothetic to the :term:`anticomplementary triangle <anticomplementary-triangle>` at :ref:`X(110) <X(110)>`. The nine-point circle of :g:`A'B'C' << A' B' C' >>` touches the circumcircle of :g:`ABC << A B C >>` at :ref:`X(110) <X(110)>`. Also, :ref:`X(110) <X(110)>` = :ref:`X(125) <X(125)>`-of-:g:`A'B'C' << A' B' C' >>`. (Randy Hutson, Novermber 2, 2016)
 
 .. container:: note-item
 
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the AAOA triangle and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. Circles O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C` concur in :ref:`X(110) <X(110)>`. (Randy Hutson, August 30, 2020)
+   Let :g:`A' <A'>` be the trilinear pole of the perpendicular bisector of :g:`BC <[ B C ]>`, and define :g:`B' <B'>`, :g:`C' <C'>` cyclically. :g:`A'B'C' << A' B' C' >>` is homothetic to the circumanticevian triangle of :ref:`X(4) <X(4)>` at :ref:`X(110) <X(110)>`. :ref:`X(110) <X(110)>` is also the barycentric product :g:`A' <A'>`\ \*\ :g:`B' <B'>`\ \*\ :g:`C' <C'>`. (Randy Hutson, January 29, 2018)
+
+.. container:: note-item
+
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the AAOA triangle and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. Circles :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>` concur in :ref:`X(110) <X(110)>`. (Randy Hutson, August 30, 2020)
 
 .. container:: note-item
 

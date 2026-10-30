@@ -16,7 +16,7 @@ X(320) = ISOTOMIC CONJUGATE OF X(80)
    :alt: X(320) = ISOTOMIC CONJUGATE OF X(80)
    :align: center
 
-   **X(320) = ISOTOMIC CONJUGATE OF X(80)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(320) = ISOTOMIC CONJUGATE OF X(80)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,13 +27,13 @@ X(320) = ISOTOMIC CONJUGATE OF X(80)
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
-   * **Barycentrics:** :math:`a^2 - b^2 - c^2 + b c : :`
-   * **Barycentrics:** :math:`b c - 2 SA : :`
+   * **Barycentrics:** :math:`a^{2} - b^{2} - c^{2} + b c : :`
+   * **Barycentrics:** :math:`b c - 2 S_{A} : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(320) <X(320)>` = 3 :ref:`X(1) <X(1)>` - 2 X(49700), 4 X(49700) - 3 X(49709), 3 :ref:`X(2) <X(2)>` - 4 X(3834), 9 :ref:`X(2) <X(2)>` - 8 X(6687), 9 :ref:`X(2) <X(2)>` - 10 X(31243), 3 :ref:`X(44) <X(44)>` - 4 X(6687), :ref:`X(44) <X(44)>` - 3 X(31138), 3 :ref:`X(44) <X(44)>` - 5 X(31243), 3 X(3834) - 2 X(6687), 4 X(3834) - X(20072), 2 X(3834) - 3 X(31138), 6 X(3834) - 5 X(31243), 8 X(6687) - 3 X(20072), 4 X(6687) - 9 X(31138), 4 X(6687) - 5 X(31243), X(20072) - 6 X(31138), 3 X(20072) - 10 X(31243), 9 X(31138) - 5 X(31243), :ref:`X(8) <X(8)>` - 3 X(4645), 2 :ref:`X(8) <X(8)>` - 3 X(32850), 7 :ref:`X(8) <X(8)>` - 6 X(49694), 4 :ref:`X(8) <X(8)>` - 3 X(49698), 3 :ref:`X(8) <X(8)>` - 2 X(49702), 5 :ref:`X(8) <X(8)>` - 3 X(49707), 7 X(4645) - 2 X(49694), and many others
+   * :ref:`X(320) <X(320)>` = :math:`3` :ref:`X(1) <X(1)>` - :math:`2` X(49700), :math:`4` X(49700) - :math:`3` X(49709), :math:`3` :ref:`X(2) <X(2)>` - :math:`4` X(3834), :math:`9` :ref:`X(2) <X(2)>` - :math:`8` X(6687), :math:`9` :ref:`X(2) <X(2)>` - :math:`10` X(31243), :math:`3` :ref:`X(44) <X(44)>` - :math:`4` X(6687), :ref:`X(44) <X(44)>` - :math:`3` X(31138), :math:`3` :ref:`X(44) <X(44)>` - :math:`5` X(31243), :math:`3` X(3834) - :math:`2` X(6687), :math:`4` X(3834) - X(20072), :math:`2` X(3834) - :math:`3` X(31138), :math:`6` X(3834) - :math:`5` X(31243), :math:`8` X(6687) - :math:`3` X(20072), :math:`4` X(6687) - :math:`9` X(31138), :math:`4` X(6687) - :math:`5` X(31243), X(20072) - :math:`6` X(31138), :math:`3` X(20072) - :math:`10` X(31243), :math:`9` X(31138) - :math:`5` X(31243), :ref:`X(8) <X(8)>` - :math:`3` X(4645), :math:`2` :ref:`X(8) <X(8)>` - :math:`3` X(32850), :math:`7` :ref:`X(8) <X(8)>` - :math:`6` X(49694), :math:`4` :ref:`X(8) <X(8)>` - :math:`3` X(49698), :math:`3` :ref:`X(8) <X(8)>` - :math:`2` X(49702), :math:`5` :ref:`X(8) <X(8)>` - :math:`3` X(49707), :math:`7` X(4645) - :math:`2` X(49694), and many others
 
 .. container:: note-item
 

@@ -10,13 +10,13 @@ X(651) = TRILINEAR POLE OF LINE X(1)X(3)
 
 .. enunciation::
 
-   Let E\ :sub:`1` and E\ :sub:`9` be the circumellipses centered at :ref:`X(1) <X(1)>` and :ref:`X(9) <X(9)>`, respectively. The line tangent to E\ :sub:`1` at :ref:`X(100) <X(100)>` meets E\ :sub:`9` at :ref:`X(651) <X(651)>`. (:person:`Dan Reznik <dan-reznik>`, July 7, 2019)
+   Let :g:`E_{1} <E_1>` and :g:`E_{9} <E_9>` be the circumellipses centered at :ref:`X(1) <X(1)>` and :ref:`X(9) <X(9)>`, respectively. The line tangent to :g:`E_{1} <E_1>` at :ref:`X(100) <X(100)>` meets :g:`E_{9} <E_9>` at :ref:`X(651) <X(651)>`. (:person:`Dan Reznik <dan-reznik>`, July 7, 2019)
 
 .. figure:: x-00651.svg
    :alt: X(651) = TRILINEAR POLE OF LINE X(1)X(3)
    :align: center
 
-   **X(651) = TRILINEAR POLE OF LINE X(1)X(3)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(651) = TRILINEAR POLE OF LINE X(1)X(3)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -33,7 +33,7 @@ X(651) = TRILINEAR POLE OF LINE X(1)X(3)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(651) <X(651)>` = 3 :ref:`X(2) <X(2)>` - 4 X(36949), 4 :ref:`X(692) <X(692)>` - 3 X(35280), 2 X(1633) - 3 X(35280), 4 X(36949) - X(37781)
+   * :ref:`X(651) <X(651)>` = :math:`3` :ref:`X(2) <X(2)>` - :math:`4` X(36949), :math:`4` :ref:`X(692) <X(692)>` - :math:`3` X(35280), :math:`2` X(1633) - :math:`3` X(35280), :math:`4` X(36949) - X(37781)
 
 .. container:: note-item
 
@@ -61,12 +61,12 @@ X(651) = TRILINEAR POLE OF LINE X(1)X(3)
    * :ref:`X(651) <X(651)>` = MacBeath circumconic antipode of X(1814)
    * :ref:`X(651) <X(651)>` = trilinear pole wrt :term:`tangential triangle <tangential-triangle>` of line :ref:`X(1) <X(1)>`\ \ :ref:`X(3) <X(3)>`
    * :ref:`X(651) <X(651)>` = orthocorrespondent of :ref:`X(11) <X(11)>`
-   * :ref:`X(651) <X(651)>` = perspector of conic {A,B,C,PU(57)}}
+   * :ref:`X(651) <X(651)>` = perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(57)}}
    * :ref:`X(651) <X(651)>` = :term:`eigencenter <eigencenter>` of Honsberger triangle
    * :ref:`X(651) <X(651)>` = X(8754)-of-excentral-triangle
    * :ref:`X(651) <X(651)>` = barycentric product of circumcircle intercepts of line :ref:`X(7) <X(7)>`\ \ :ref:`X(8) <X(8)>`
    * :ref:`X(651) <X(651)>` = cevapoint of Feuerbach hyperbola intercepts of antiorthic axis
-   * :ref:`X(651) <X(651)>` = intersection, other than vertices of Gemini triangle 30, of {ABC, Gemini 30}-circumconic and {Gemini 29, Gemini 30}-circumconic
+   * :ref:`X(651) <X(651)>` = intersection, other than vertices of Gemini triangle 30, of {:g:`ABC << A B C >>`, Gemini 30}-circumconic and {Gemini 29, Gemini 30}-circumconic
    * :ref:`X(651) <X(651)>` = trilinear product of circumcircle intercepts of line :ref:`X(2) <X(2)>`\ \ :ref:`X(7) <X(7)>`
    * :ref:`X(651) <X(651)>` = BSS(a^2→a) of :ref:`X(112) <X(112)>`
    * :ref:`X(651) <X(651)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): {:ref:`1 <X(1)>`, 9358}, {:ref:`7 <X(7)>`, 40577}, {:ref:`648 <X(648)>`, :ref:`653 <X(653)>`}, {:ref:`658 <X(658)>`, :ref:`934 <X(934)>`}, {:ref:`662 <X(662)>`, 1813}, {:ref:`664 <X(664)>`, :ref:`100 <X(100)>`}, {:ref:`765 <X(765)>`, 1445}, {:ref:`927 <X(927)>`, 2283}, {1016, 5435}, {1262, 17074}, {1275, :ref:`7 <X(7)>`}, {1414, :ref:`109 <X(109)>`}, {3257, 24029}, {4554, 6516}, {4564, :ref:`57 <X(57)>`}, {4569, 40576}, {4573, :ref:`664 <X(664)>`}, {4620, 1014}, {4998, :ref:`56 <X(56)>`}, {5376, 37789}, {6183, 35280}, {6648, 4552}, {7045, :ref:`1 <X(1)>`}, {7128, 17080}, {13136, 2406}, {18026, :ref:`108 <X(108)>`}, {23586, 3160}, {24011, 7676}, {24032, :ref:`411 <X(411)>`}, {31615, 4564}, {37139, 23890}, {39293, 7677}, {44327, 37141}, {46102, :ref:`2 <X(2)>`}

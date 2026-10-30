@@ -12,7 +12,7 @@ X(102) = Λ(INCENTER, ORTHOCENTER) — Code
    :alt: X(102) = Λ(INCENTER, ORTHOCENTER)
    :align: center
 
-   **X(102) = Λ(INCENTER, ORTHOCENTER)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(102) = Λ(INCENTER, ORTHOCENTER)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

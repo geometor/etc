@@ -10,22 +10,24 @@ X(250) = ISOGONAL CONJUGATE OF X(125)
 
 .. enunciation::
 
-   :ref:`X(250) <X(250)>` is the :term:`trilinear pole <trilinear-pole>` of line :ref:`X(110) <X(110)>`\ \ :ref:`X(112) <X(112)>`, which is the tangent to the MacBeath circumconic at :ref:`X(110) <X(110)>`, and the locus of trilinear poles of tangents at P to conic {A,B,C,\ :ref:`X(3) <X(3)>`,P}}, as P moves on the Brocard axis. (:person:`Randy Hutson <randy-hutson>`, March 21, 2019)
+   :ref:`X(250) <X(250)>` is the :term:`trilinear pole <trilinear-pole>` of line :ref:`X(110) <X(110)>`\ \ :ref:`X(112) <X(112)>`, which is the tangent to the MacBeath circumconic at :ref:`X(110) <X(110)>`, and the locus of trilinear poles of tangents at :g:`P <P>` to conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(3) <X(3)>`,P}}, as P moves on the Brocard axis. (:person:`Randy Hutson <randy-hutson>`, March 21, 2019)
 
 .. figure:: x-00250.svg
    :alt: X(250) = ISOGONAL CONJUGATE OF X(125)
    :align: center
 
-   **X(250) = ISOGONAL CONJUGATE OF X(125)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(250) = ISOGONAL CONJUGATE OF X(125)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(\sec A)\csc^{2}(B - C) : (\sec B)\csc^{2}(C - A) : (\sec C)\csc^{2}(A - B), = (a^{2}\sec A)/(b^{2} - c^{2})^{2} : (b^{2}\sec B)/(c^{2} - a^{2})^{2} : (c^{2}\sec C)/(a^{2} - b^{2})^{2}`
+   | **Trilinears:** :math:`(\sec A)\csc^{2}(B - C) : (\sec B)\csc^{2}(C - A) : (\sec C)\csc^{2}(A - B)`
+   | **Barycentrics:** :math:`(\tan A)\csc^{2}(B - C) : (\tan B)\csc^{2}(C - A) : (\tan C)\csc^{2}(A - B)`
    | **Search Value (6, 9, 13):** :math:`-0.110816929619`
 
-.. container:: note-item
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-   :ref:`X(250) <X(250)>` lies.
+   * **Trilinears:** :math:`(a^{2}\sec A)/(b^{2} - c^{2})^{2} : (b^{2}\sec B)/(c^{2} - a^{2})^{2} : (c^{2}\sec C)/(a^{2} - b^{2})^{2}`
 
 .. collapse:: Incident Central Lines
    :badge: 9 lines
@@ -44,13 +46,6 @@ X(250) = ISOGONAL CONJUGATE OF X(125)
    * :ref:`X(250) <X(250)>` = circumcenter of reflection triangle of :ref:`X(125) <X(125)>`
    * :ref:`X(250) <X(250)>` = barycentric product :ref:`X(99) <X(99)>`\ \*\ :ref:`X(112) <X(112)>`
    * :ref:`X(250) <X(250)>` = cevapoint of MacBeath circumconic intercepts of Brocard axis
-
-Notes
------
-
-.. container:: note-item
-
-   Barycentrics (tan A)csc\ :sup:`2`\ (B - C) : (tan B)csc\ :sup:`2`\ (C - A) : (tan C)csc\ :sup:`2`\ (A - B)
 
 .. toctree::
    :hidden:

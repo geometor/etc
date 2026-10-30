@@ -12,7 +12,7 @@ X(996) = INTERSECTION OF LINES X(8)X(58) AND X(10)X(56) — Code
    :alt: X(996) = INTERSECTION OF LINES X(8)X(58) AND X(10)X(56)
    :align: center
 
-   **X(996) = INTERSECTION OF LINES X(8)X(58) AND X(10)X(56)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(996) = INTERSECTION OF LINES X(8)X(58) AND X(10)X(56)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -10,22 +10,18 @@ X(591) = 1st VAN LAMOEN PERPENDICULAR BISECTORS POINT
 
 .. enunciation::
 
-   Erect squares outwardly on the sides of triangle ABC. Two edges emanate from A; let P and Q be their endpoints. Let a' be the perpendicular bisector of PQ, and define b' and c' cyclically. Then a', b', c' concur in :ref:`X(591) <X(591)>`. See also X(1991). (:person:`Floor van Lamoen <floor-van-lamoen>`, 1/4/2001, :cite:`Hyacinthos #2123 <hyacinthos>`)
+   Erect squares outwardly on the sides of triangle :g:`ABC << A B C >>`. Two edges emanate from :g:`A <A>`; let :g:`P <P>` and :g:`Q <Q>` be their endpoints. Let a' be the perpendicular bisector of :g:`PQ <[ P Q ]>`, and define b' and c' cyclically. Then a', b', c' concur in :ref:`X(591) <X(591)>`. See also X(1991). (:person:`Floor van Lamoen <floor-van-lamoen>`, 1/4/2001, :cite:`Hyacinthos #2123 <hyacinthos>`)
 
 .. figure:: x-00591.svg
    :alt: X(591) = 1st VAN LAMOEN PERPENDICULAR BISECTORS POINT
    :align: center
 
-   **X(591) = 1st VAN LAMOEN PERPENDICULAR BISECTORS POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(591) = 1st VAN LAMOEN PERPENDICULAR BISECTORS POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`bc[b^{2} + c^{2} - 2a^{2} + 4*area(ABC)]`
-   | **Search Value (6, 9, 13):** :math:`11.413041315846`
-
-.. container:: note-item
-
-   :ref:`X(591) <X(591)>` lies.
+   | **Trilinears:** :math:`bc[b^{2} + c^{2} - 2a^{2} + 4 \operatorname{area}(ABC)]`
+   | **Search Value (6, 9, 13):** :math:`7.573813236933`
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines
@@ -38,7 +34,7 @@ X(591) = 1st VAN LAMOEN PERPENDICULAR BISECTORS POINT
 
    * :ref:`X(591) <X(591)>` = reflection of X(1991) in :ref:`X(2) <X(2)>`
    * :ref:`X(591) <X(591)>` = perspector of inner Vecten triangle and outer Vecten of outer Vecten triangle
-   * :ref:`X(591) <X(591)>` = centroid of {Ab, Ac, Bc, Ba, Ca, Cb} used in construction of 4th Lozada circle
+   * :ref:`X(591) <X(591)>` = centroid of {:g:`A_{b} <A_b>`, :g:`A_{c} <A_c>`, :g:`B_{c} <B_c>`, :g:`B_{a} <B_a>`, :g:`C_{a} <C_a>`, :g:`C_{b} <C_b>`} used in construction of 4th Lozada circle
 
 .. toctree::
    :hidden:

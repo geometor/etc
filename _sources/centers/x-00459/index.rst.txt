@@ -10,13 +10,13 @@ X(459) = X(253)-CEVA CONJUGATE OF X(4)
 
 .. enunciation::
 
-   Let A'B'C' be the midheight triangle. Let A″ be the pole, wrt the polar circle, of line B'C', and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(459) <X(459)>`. (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
+   Let :g:`A'B'C' << A' B' C' >>` be the midheight triangle. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(459) <X(459)>`. (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
 
 .. figure:: x-00459.svg
    :alt: X(459) = X(253)-CEVA CONJUGATE OF X(4)
    :align: center
 
-   **X(459) = X(253)-CEVA CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(459) = X(253)-CEVA CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,7 +27,7 @@ X(459) = X(253)-CEVA CONJUGATE OF X(4)
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
-   * **Trilinears:** :math:`|A'A''| : :`, where A'B'C', A″B″C″ are the :term:`cevian <cevian>` and :term:`anticevian triangles <anticevian-triangle>` of :ref:`X(4) <X(4)>`
+   * **Trilinears:** :math:`|A'A''| : :`, where :g:`A'B'C' << A' B' C' >>`, :g:`A″B″C″ << A″ B″ C″ >>` are the :term:`cevian <cevian>` and :term:`anticevian triangles <anticevian-triangle>` of :ref:`X(4) <X(4)>`
    * **Barycentrics:** :math:`1/(S_{A}(S^{2} - 2S_{B}S_{C})) : :`
 
 .. container:: note-item

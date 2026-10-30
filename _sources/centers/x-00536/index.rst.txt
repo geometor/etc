@@ -16,16 +16,12 @@ X(536) = DIRECTION OF VECTOR AX + BX + CX, where X = X(37)
    :alt: X(536) = DIRECTION OF VECTOR AX + BX + CX, where X = X(37)
    :align: center
 
-   **X(536) = DIRECTION OF VECTOR AX + BX + CX, where X = X(37)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(536) = DIRECTION OF VECTOR AX + BX + CX, where X = X(37)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(2ax - by - cz)/a`, where x = x(a,b,c) = b + c, y = x(b,c,a), z = x(c,a,b)
+   | **Trilinears:** :math:`(2ax - by - cz)/a`, where :math:`x = x(a,b,c) = b + c`, :math:`y = x(b,c,a)`, :math:`z = x(c,a,b)`
    | **Barycentrics:** :math:`2bc - ca - ab : :`
-
-.. container:: note-item
-
-   :ref:`X(536) <X(536)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 12 lines

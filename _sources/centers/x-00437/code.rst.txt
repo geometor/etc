@@ -6,13 +6,13 @@ X(437) = EULER X(214)-7th-SUBSTITUTION POINT — Code
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(437) <X(437)>` has Shinagawa coefficients (2(E+F)\ :sup:`2`\ F+10FS\ :sup:`2`\ +7$bcS\ :sub:`A`\ $F-5$ab$(E+F)F, (5E-16F)S\ :sup:`2`-$abS\ :sub:`C`\ :sup:`2`\ $ +41$bcS\ :sub:`B`\ S\ :sub:`C`\ $+$ab$[(E+F)\ :sup:`2`-19S\ :sup:`2`]).
+   As a point on the Euler line, :ref:`X(437) <X(437)>` has Shinagawa coefficients :math:`(2(E+F)^{2}F+10FS^{2}+7\$bcS_{A}\$F-5\$ab\$(E+F)F, (5E-16F)S^{2}-\$abS_{C}^{2}\$ +41\$bcS_{B}S_{C}\$+\$ab\$[(E+F)^{2}-19S^{2}])`.
 
 .. figure:: x-00437.svg
    :alt: X(437) = EULER X(214)-7th-SUBSTITUTION POINT
    :align: center
 
-   **X(437) = EULER X(214)-7th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(437) = EULER X(214)-7th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

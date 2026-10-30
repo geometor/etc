@@ -16,7 +16,7 @@ X(689) = TRILINEAR POLE OF LINE X(6)X(76)
    :alt: X(689) = TRILINEAR POLE OF LINE X(6)X(76)
    :align: center
 
-   **X(689) = TRILINEAR POLE OF LINE X(6)X(76)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(689) = TRILINEAR POLE OF LINE X(6)X(76)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -41,7 +41,7 @@ X(689) = TRILINEAR POLE OF LINE X(6)X(76)
    * :ref:`X(689) <X(689)>` = :term:`anticomplement <anticomplement>` of X(35971)
    * :ref:`X(689) <X(689)>` = Ψ(:ref:`X(32) <X(32)>`, :ref:`X(2) <X(2)>`)
    * :ref:`X(689) <X(689)>` = Ψ(:ref:`X(39) <X(39)>`, :ref:`X(2) <X(2)>`)
-   * :ref:`X(689) <X(689)>` = perspector of ABC and the :term:`tangential triangle <tangential-triangle>`, wrt the tangential triangle, of the bianticevian conic of :ref:`X(2) <X(2)>` and :ref:`X(6) <X(6)>` (see X(4577))
+   * :ref:`X(689) <X(689)>` = perspector of :g:`ABC << A B C >>` and the :term:`tangential triangle <tangential-triangle>`, wrt the tangential triangle, of the bianticevian conic of :ref:`X(2) <X(2)>` and :ref:`X(6) <X(6)>` (see X(4577))
 
 .. toctree::
    :hidden:

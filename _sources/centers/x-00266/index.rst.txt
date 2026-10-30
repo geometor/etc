@@ -16,7 +16,7 @@ X(266) = ISOGONAL CONJUGATE OF X(188)
    :alt: X(266) = ISOGONAL CONJUGATE OF X(188)
    :align: center
 
-   **X(266) = ISOGONAL CONJUGATE OF X(188)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(266) = ISOGONAL CONJUGATE OF X(188)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -29,13 +29,9 @@ X(266) = ISOGONAL CONJUGATE OF X(188)
 
    * **Trilinears:** :math:`[a/(b + c - a)]^{1/2} : :`
    * **Trilinears:** :math:`\sin A \sec A/2 : :`
-   * **Trilinears:** :math:`\cos A' : :`, where A'B'C' is the :term:`excentral triangle <excentral-triangle>`
-   * **Trilinears:** \|\ :ref:`X(1) <X(1)>`\ A'\| : \|\ :ref:`X(1) <X(1)>`\ B'\| : \|\ :ref:`X(1) <X(1)>`\ C'\|, where A'B'C' is the excentral triangle
-   * **Trilinears:** cos(angle BIC) : cos(angle CIA) : cos(angle AIB)
-
-.. container:: note-item
-
-   :ref:`X(266) <X(266)>` lies.
+   * **Trilinears:** :math:`\cos A' : :`, where :g:`A'B'C' << A' B' C' >>` is the :term:`excentral triangle <excentral-triangle>`
+   * **Trilinears:** \|\ :ref:`X(1) <X(1)>`\ :g:`A' <A'>`\ \| : \|\ :ref:`X(1) <X(1)>`\ :g:`B' <B'>`\ \| : \|\ :ref:`X(1) <X(1)>`\ :g:`C' <C'>`\ \|, where :g:`A'B'C' << A' B' C' >>` is the excentral triangle
+   * **Trilinears:** :math:`\cos(angle BIC) : \cos(angle CIA) : \cos(angle AIB)`
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines
@@ -54,10 +50,10 @@ X(266) = ISOGONAL CONJUGATE OF X(188)
    * :ref:`X(266) <X(266)>` = :ref:`X(6) <X(6)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(289) <X(289)>`
    * :ref:`X(266) <X(266)>` = :term:`crosspoint <crosspoint>` of :ref:`X(1) <X(1)>` and :ref:`X(505) <X(505)>`
    * :ref:`X(266) <X(266)>` = :term:`crosssum <crosssum>` of :ref:`X(1) <X(1)>` and :ref:`X(164) <X(164)>`
-   * :ref:`X(266) <X(266)>` = SS(A→A') of :ref:`X(3) <X(3)>`, where A'B'C' is the excentral triangle
+   * :ref:`X(266) <X(266)>` = SS(A→\ :g:`A' <A'>`) of :ref:`X(3) <X(3)>`, where :g:`A'B'C' << A' B' C' >>` is the excentral triangle
    * :ref:`X(266) <X(266)>` = trilinear square root of :ref:`X(56) <X(56)>`
-   * :ref:`X(266) <X(266)>` = excentral-to-ABC :term:`trilinear image <trilinear-image>` of :ref:`X(40) <X(40)>`
-   * :ref:`X(266) <X(266)>` = intouch-to-ABC trilinear image of :ref:`X(1) <X(1)>`
+   * :ref:`X(266) <X(266)>` = excentral-to-:g:`ABC << A B C >>` :term:`trilinear image <trilinear-image>` of :ref:`X(40) <X(40)>`
+   * :ref:`X(266) <X(266)>` = intouch-to-:g:`ABC << A B C >>` trilinear image of :ref:`X(1) <X(1)>`
 
 .. toctree::
    :hidden:

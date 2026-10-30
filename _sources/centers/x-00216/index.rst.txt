@@ -16,7 +16,7 @@ X(216) = X(5)-CEVA CONJUGATE OF X(51)
    :alt: X(216) = X(5)-CEVA CONJUGATE OF X(51)
    :align: center
 
-   **X(216) = X(5)-CEVA CONJUGATE OF X(51)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(216) = X(5)-CEVA CONJUGATE OF X(51)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -31,19 +31,15 @@ X(216) = X(5)-CEVA CONJUGATE OF X(51)
    * **Trilinears:** :math:`\cos A + \sin A (\cot A \cot B \cot C) : :`
    * **Trilinears:** :math:`(\sin 2B + \sin 2C) \cos A : :`
    * **Trilinears:** :math:`\sin A (\cos 2B + \cos 2C) : :`
-   * **Trilinears:** :math:`(\sin A)(1 - \sin^2 B - \sin^2 C) : :`
+   * **Trilinears:** :math:`(\sin A)(1 - \sin^{2} B - \sin^{2} C) : :`
    * **Trilinears:** :math:`\sec B \sec C + \csc B \csc C : :`
    * **Trilinears:** :math:`\cos(A + T) : :`, T as at :ref:`X(389) <X(389)>`
-   * **Barycentrics:** :math:`a^2(b^2 + c^2 - a^2)[a^2(b^2 + c^2) - (b^2 - c^2)^2] : :`
+   * **Barycentrics:** :math:`a^{2}(b^{2} + c^{2} - a^{2})[a^{2}(b^{2} + c^{2}) - (b^{2} - c^{2})^{2}] : :`
    * **Barycentrics:** :math:`(\sin A)(\sin 2A)\cos(B - C) : :`
 
 .. container:: note-item
 
    :ref:`X(216) <X(216)>` lies on hyperbola {:ref:`X(2) <X(2)>`,\ :ref:`X(6) <X(6)>`,\ :ref:`X(216) <X(216)>`,\ :ref:`X(233) <X(233)>`,X(1249),X(1560),X(3162)}}, which is a circumconic of the :term:`medial triangle <medial-triangle>`, as well as the locus of the perspector of circumconics centered at a point on the Euler line. Also, this hyperbola is tangent to Euler line at :ref:`X(2) <X(2)>`. (Randy Hutson, July 20, 2016)
-
-.. container:: note-item
-
-   :ref:`X(216) <X(216)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 14 lines
@@ -74,8 +70,8 @@ X(216) = X(5)-CEVA CONJUGATE OF X(51)
    * :ref:`X(216) <X(216)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of X(8795)
    * :ref:`X(216) <X(216)>` = :ref:`X(92) <X(92)>`-isoconjugate of :ref:`X(54) <X(54)>`
    * :ref:`X(216) <X(216)>` = X(1577)-isoconjugate of :ref:`X(933) <X(933)>`
-   * :ref:`X(216) <X(216)>` = :ref:`X(573) <X(573)>`-of-orthic-triangle if ABC is acute
-   * :ref:`X(216) <X(216)>` = perspector of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of circumorthic triangle
+   * :ref:`X(216) <X(216)>` = :ref:`X(573) <X(573)>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
+   * :ref:`X(216) <X(216)>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of circumorthic triangle
    * :ref:`X(216) <X(216)>` = {:ref:`X(61) <X(61)>`,\ :ref:`X(62) <X(62)>`}-harmonic conjugate of X(37505)
 
 Notes
@@ -83,7 +79,7 @@ Notes
 
 .. container:: note-item
 
-   Let Ea be the ellipse with B and C as foci and passing through :ref:`X(5) <X(5)>`, and define Eb, Ec cyclically. Let La be the line tangent to Ea at :ref:`X(5) <X(5)>`, and define Lb, Lc cyclically. Let A' be the trilinear pole of line La, and define B', C' cyclically. A', B', C' lie on the circumconic centered at :ref:`X(216) <X(216)>`. (Randy Hutson, July 20, 2016)
+   Let :g:`E_{a} <E_a>` be the ellipse with :g:`B <B>` and :g:`C <C>` as foci and passing through :ref:`X(5) <X(5)>`, and define :g:`E_{b} <E_b>`, :g:`E_{c} <E_c>` cyclically. Let :g:`L_{a} <L_a>` be the line tangent to :g:`E_{a} <E_a>` at :ref:`X(5) <X(5)>`, and define :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` be the trilinear pole of line :g:`L_{a} <L_a>`, and define :g:`B' <B'>`, :g:`C' <C'>` cyclically. :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>` lie on the circumconic centered at :ref:`X(216) <X(216)>`. (Randy Hutson, July 20, 2016)
 
 .. toctree::
    :hidden:

@@ -12,7 +12,7 @@ X(969) = INTERSECTION OF LINES X(10)X(69) AND X(19)X(81) — Code
    :alt: X(969) = INTERSECTION OF LINES X(10)X(69) AND X(19)X(81)
    :align: center
 
-   **X(969) = INTERSECTION OF LINES X(10)X(69) AND X(19)X(81)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(969) = INTERSECTION OF LINES X(10)X(69) AND X(19)X(81)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

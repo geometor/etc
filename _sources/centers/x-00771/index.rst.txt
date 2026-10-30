@@ -16,17 +16,13 @@ X(771) = ISOGONAL CONJUGATE OF X(770)
    :alt: X(771) = ISOGONAL CONJUGATE OF X(770)
    :align: center
 
-   **X(771) = ISOGONAL CONJUGATE OF X(770)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(771) = ISOGONAL CONJUGATE OF X(770)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`1/(\cos^{3}B - \cos^{3}C) : :`
-   | **Barycentrics:** :math:`a*(a - b)*(a - c)*(a + b - c)*(a - b + c)*(a^6 - a^5*b - a^4*b^2 + 2*a^3*b^3 - a^2*b^4 - a*b^5 + b^6 - 2*a^4*c^2 + 4*a^2*b^2*c^2 - 2*b^4*c^2 + a^2*c^4 + a*b*c^4 + b^2*c^4)*(a^6 - 2*a^4*b^2 + a^2*b^4 - a^5*c + a*b^4*c - a^4*c^2 + 4*a^2*b^2*c^2 + b^4*c^2 + 2*a^3*c^3 - a^2*c^4 - 2*b^2*c^4 - a*c^5 + c^6) : :`
-   | **Search Value (6, 9, 13):** :math:`1.573551824387`
-
-.. container:: note-item
-
-   :ref:`X(771) <X(771)>` lies.
+   | **Trilinears:** :math:`1/(\cos^{3} B - \cos^{3} C) : :`
+   | **Barycentrics:** :math:`a (a - b) \cdot (a - c) \cdot (a + b - c) \cdot (a - b + c) \cdot (a^{6} - a^{5} b - a^{4} b^{2} + 2 a^{3} b^{3} - a^{2} b^{4} - a b^{5} + b^{6} - 2 a^{4} c^{2} + 4 a^{2} b^{2} c^{2} - 2 b^{4} c^{2} + a^{2} c^{4} + a b c^{4} + b^{2} c^{4}) \cdot (a^{6} - 2 a^{4} b^{2} + a^{2} b^{4} - a^{5} c + a b^{4} c - a^{4} c^{2} + 4 a^{2} b^{2} c^{2} + b^{4} c^{2} + 2 a^{3} c^{3} - a^{2} c^{4} - 2 b^{2} c^{4} - a c^{5} + c^{6}) : :`
+   | **Search Value (6, 9, 13):** :math:`2.629368792489`
 
 .. collapse:: Incident Central Lines
    :badge: 1 line

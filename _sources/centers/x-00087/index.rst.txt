@@ -16,17 +16,13 @@ X(87) = X(2)-CROSS CONJUGATE OF X(1)
    :alt: X(87) = X(2)-CROSS CONJUGATE OF X(1)
    :align: center
 
-   **X(87) = X(2)-CROSS CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(87) = X(2)-CROSS CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`1/(ab + ac - bc) : 1/(bc + ba - ca) : 1/(ca + cb - ab)`
    | **Barycentrics:** :math:`a/(ab + ac - bc) : b/(bc + ba - ca) : c/(ca + cb - ab)`
    | **Search Value (6, 9, 13):** :math:`5.357195925405`
-
-.. container:: note-item
-
-   :ref:`X(87) <X(87)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines
@@ -40,7 +36,7 @@ X(87) = X(2)-CROSS CONJUGATE OF X(1)
    * :ref:`X(87) <X(87)>` = isogonal conjugate of :ref:`X(43) <X(43)>`
    * :ref:`X(87) <X(87)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(6376)
    * :ref:`X(87) <X(87)>` = :term:`anticomplement <anticomplement>` of X(34832)
-   * :ref:`X(87) <X(87)>` = perspector of ABC and extraversion triangle of :ref:`X(43) <X(43)>`
+   * :ref:`X(87) <X(87)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(43) <X(43)>`
    * :ref:`X(87) <X(87)>` = trilinear product of extraversions of :ref:`X(43) <X(43)>`
    * :ref:`X(87) <X(87)>` = :term:`cevapoint <cevapoint>` of :ref:`X(2) <X(2)>` and :ref:`X(330) <X(330)>`
    * :ref:`X(87) <X(87)>` = :ref:`X(2) <X(2)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(1) <X(1)>`

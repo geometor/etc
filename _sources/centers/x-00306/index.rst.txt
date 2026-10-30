@@ -16,17 +16,13 @@ X(306) = ISOTOMIC CONJUGATE OF X(27)
    :alt: X(306) = ISOTOMIC CONJUGATE OF X(27)
    :align: center
 
-   **X(306) = ISOTOMIC CONJUGATE OF X(27)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(306) = ISOTOMIC CONJUGATE OF X(27)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`(b^{2}c^{2})(b + c)\cos A : (c^{2}a^{2})(c + a)\cos B : (a^{2}b^{2})(a + b)\cos C`
    | **Barycentrics:** :math:`bc(b + c)\cos A : ca(c + a)\cos B : ab(a + b)\cos C`
    | **Search Value (6, 9, 13):** :math:`5.909803441297`
-
-.. container:: note-item
-
-   :ref:`X(306) <X(306)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 11 lines

@@ -681,9 +681,38 @@
         <span class="sd">                el.style.display = 'none';</span>
         <span class="sd">            });</span>
         <span class="sd">        }</span>
+        <span class="sd">        if (typeof document !== 'undefined') {</span>
+        <span class="sd">            document.querySelectorAll('.geom-highlight-text').forEach(el =&gt; {</span>
+        <span class="sd">                el.classList.remove('geom-highlight-text');</span>
+        <span class="sd">            });</span>
+        <span class="sd">        }</span>
         <span class="sd">    }</span>
 
-        <span class="sd">    function activateHover(id) {</span>
+        <span class="sd">    function resolveSvgId(rawId) {</span>
+        <span class="sd">        if (!rawId) return rawId;</span>
+        <span class="sd">        if (svg.querySelector(`[data-id="${CSS.escape(rawId)}"]`)) return rawId;</span>
+        <span class="sd">        const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);</span>
+        <span class="sd">        if (segM) {</span>
+        <span class="sd">            const revId = `[ ${segM[2]} ${segM[1]} ]`;</span>
+        <span class="sd">            if (svg.querySelector(`[data-id="${CSS.escape(revId)}"]`)) return revId;</span>
+        <span class="sd">        }</span>
+        <span class="sd">        const triM = rawId.match(/^&lt;\s*(\S+)\s+(\S+)\s+(\S+)\s*&gt;$/);</span>
+        <span class="sd">        if (triM) {</span>
+        <span class="sd">            const pts = [triM[1], triM[2], triM[3]];</span>
+        <span class="sd">            if (pts.includes('A') &amp;&amp; pts.includes('B') &amp;&amp; pts.includes('C')) {</span>
+        <span class="sd">                return '&lt; A B C &gt;';</span>
+        <span class="sd">            }</span>
+        <span class="sd">            const secPoly = graphicsGroup ? graphicsGroup.querySelector('polygon.secondary[data-id]') : null;</span>
+        <span class="sd">            if (secPoly) {</span>
+        <span class="sd">                return secPoly.getAttribute('data-id') || rawId;</span>
+        <span class="sd">            }</span>
+        <span class="sd">        }</span>
+        <span class="sd">        return rawId;</span>
+        <span class="sd">    }</span>
+
+        <span class="sd">    function activateHover(rawId) {</span>
+        <span class="sd">        if (!rawId) return;</span>
+        <span class="sd">        const id = resolveSvgId(rawId);</span>
         <span class="sd">        if (activeHoveredId === id) return;</span>
         <span class="sd">        clearHover();</span>
         <span class="sd">        activeHoveredId = id;</span>
@@ -701,12 +730,70 @@
         <span class="sd">        }</span>
 
         <span class="sd">        // Highlight parent/endpoint points and labels</span>
-        <span class="sd">        const relatedPts = (info &amp;&amp; info.related_points) ? info.related_points : [id];</span>
+        <span class="sd">        let relatedPts = (info &amp;&amp; info.related_points) ? info.related_points : [id];</span>
+        <span class="sd">        if (!targetEl &amp;&amp; relatedPts.length === 1 &amp;&amp; relatedPts[0] === id) {</span>
+        <span class="sd">            const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);</span>
+        <span class="sd">            const triM = rawId.match(/^&lt;\s*(\S+)\s+(\S+)\s+(\S+)\s*&gt;$/);</span>
+        <span class="sd">            if (segM) relatedPts = [segM[1], segM[2]];</span>
+        <span class="sd">            else if (triM) relatedPts = [triM[1], triM[2], triM[3]];</span>
+        <span class="sd">        }</span>
         <span class="sd">        relatedPts.forEach(pid =&gt; {</span>
         <span class="sd">            const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;</span>
         <span class="sd">            if (ptEl) ptEl.classList.add('hover');</span>
         <span class="sd">            const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;</span>
         <span class="sd">            if (lblEl) lblEl.classList.add('hover-label');</span>
+        <span class="sd">        });</span>
+
+        <span class="sd">        if (typeof document !== 'undefined') {</span>
+        <span class="sd">            const sel = rawId === id</span>
+        <span class="sd">                ? `.geom-ref[data-ref="${CSS.escape(id)}"]`</span>
+        <span class="sd">                : `.geom-ref[data-ref="${CSS.escape(rawId)}"], .geom-ref[data-ref="${CSS.escape(id)}"]`;</span>
+        <span class="sd">            document.querySelectorAll(sel).forEach(el =&gt; {</span>
+        <span class="sd">                el.classList.add('geom-highlight-text');</span>
+        <span class="sd">            });</span>
+        <span class="sd">        }</span>
+        <span class="sd">    }</span>
+
+        <span class="sd">    svg._etcController.activateHover = activateHover;</span>
+        <span class="sd">    svg._etcController.clearHover = clearHover;</span>
+
+        <span class="sd">    if (document.body &amp;&amp; document.documentElement.tagName.toLowerCase() === 'html' &amp;&amp; document.body.dataset.etcGeomRefSyncInit !== '1') {</span>
+        <span class="sd">        document.body.dataset.etcGeomRefSyncInit = '1';</span>
+        <span class="sd">        function getActiveSvg() {</span>
+        <span class="sd">            const activePaneSvg = document.querySelector('.etc-tab-pane.active svg.geometor-etc-drawing');</span>
+        <span class="sd">            if (activePaneSvg &amp;&amp; activePaneSvg._etcController) return activePaneSvg;</span>
+        <span class="sd">            const anySvg = document.querySelector('svg.geometor-etc-drawing');</span>
+        <span class="sd">            return (anySvg &amp;&amp; anySvg._etcController) ? anySvg : null;</span>
+        <span class="sd">        }</span>
+        <span class="sd">        document.body.addEventListener('mouseover', (e) =&gt; {</span>
+        <span class="sd">            const geomEl = e.target.closest('.geom-ref[data-ref]');</span>
+        <span class="sd">            if (geomEl) {</span>
+        <span class="sd">                const activeSvg = getActiveSvg();</span>
+        <span class="sd">                if (activeSvg &amp;&amp; activeSvg._etcController.activateHover) {</span>
+        <span class="sd">                    activeSvg._etcController.activateHover(geomEl.getAttribute('data-ref'));</span>
+        <span class="sd">                }</span>
+        <span class="sd">                return;</span>
+        <span class="sd">            }</span>
+        <span class="sd">            const refLink = e.target.closest('a.reference.internal');</span>
+        <span class="sd">            if (refLink) {</span>
+        <span class="sd">                const txt = (refLink.textContent || '').trim();</span>
+        <span class="sd">                const xm = txt.match(/^X\((\d+)\)$/);</span>
+        <span class="sd">                if (xm) {</span>
+        <span class="sd">                    const activeSvg = getActiveSvg();</span>
+        <span class="sd">                    if (activeSvg &amp;&amp; activeSvg._etcController.activateHover) {</span>
+        <span class="sd">                        activeSvg._etcController.activateHover(`X(${xm[1]})`);</span>
+        <span class="sd">                    }</span>
+        <span class="sd">                }</span>
+        <span class="sd">            }</span>
+        <span class="sd">        });</span>
+        <span class="sd">        document.body.addEventListener('mouseout', (e) =&gt; {</span>
+        <span class="sd">            const geomEl = e.target.closest('.geom-ref[data-ref], a.reference.internal');</span>
+        <span class="sd">            if (geomEl) {</span>
+        <span class="sd">                const activeSvg = getActiveSvg();</span>
+        <span class="sd">                if (activeSvg &amp;&amp; activeSvg._etcController.clearHover) {</span>
+        <span class="sd">                    activeSvg._etcController.clearHover();</span>
+        <span class="sd">                }</span>
+        <span class="sd">            }</span>
         <span class="sd">        });</span>
         <span class="sd">    }</span>
 
@@ -898,7 +985,7 @@
 
   <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../../../../_static/documentation_options.js?v=360bc84d"></script>
+  <script src="../../../../../_static/documentation_options.js?v=fd825880"></script>
   <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>

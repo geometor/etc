@@ -16,7 +16,7 @@ X(519) = ISOGONAL CONJUGATE OF X(106)
    :alt: X(519) = ISOGONAL CONJUGATE OF X(106)
    :align: center
 
-   **X(519) = ISOGONAL CONJUGATE OF X(106)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(519) = ISOGONAL CONJUGATE OF X(106)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -33,10 +33,6 @@ X(519) = ISOGONAL CONJUGATE OF X(106)
    :badge: 1 combination
 
    * :ref:`X(519) <X(519)>` = :ref:`X(1) <X(1)>` - :ref:`X(2) <X(2)>`
-
-.. container:: note-item
-
-   :ref:`X(519) <X(519)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 89 lines
@@ -78,11 +74,11 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the :term:`incentral triangle <incentral-triangle>`. Let A″ be the reflection of A in A', and define B″ and C″ cyclically. Let A\* be the :term:`cevapoint <cevapoint>` of B″ and C″, and define B\* and C\* cyclically. The lines AA\*, BB\*, CC\* concur in :ref:`X(519) <X(519)>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`incentral triangle <incentral-triangle>`. Let :g:`A″ <A″>` be the reflection of :g:`A <A>` in :g:`A' <A'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Let :g:`A* <A*>` be the :term:`cevapoint <cevapoint>` of :g:`B″ <B″>` and :g:`C″ <C″>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(519) <X(519)>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
 
 .. container:: note-item
 
-   Let A'B'C' be triangle T(-2,1). Let A″ be the trilinear product B'\*C', and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(519) <X(519)>`. The lines A'A″, B'B″, C'C″ concur in :ref:`X(8) <X(8)>`. (Randy Hutson, December 26, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be triangle T(-2,1). Let :g:`A″ <A″>` be the trilinear product :g:`B' <B'>`\ \*\ :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(519) <X(519)>`. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(8) <X(8)>`. (Randy Hutson, December 26, 2015)
 
 .. toctree::
    :hidden:

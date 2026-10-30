@@ -10,13 +10,13 @@ X(165) = CENTROID OF THE EXCENTRAL TRIANGLE
 
 .. enunciation::
 
-   If DEF is the :term:`pedal triangle <pedal-triangle>` of :ref:`X(165) <X(165)>`, then \|AE\| + \|AF\| = \|BF\| + \|BD\| = \|CD\| + \|CE\|. (Seiichi Kirikami, October 8, 2010.)
+   If :g:`DEF << D E F >>` is the :term:`pedal triangle <pedal-triangle>` of :ref:`X(165) <X(165)>`, then \|\ :g:`AE <[ A E ]>`\ \| + \|\ :g:`AF <[ A F ]>`\ \| = \|\ :g:`BF <[ B F ]>`\ \| + \|\ :g:`BD <[ B D ]>`\ \| = \|\ :g:`CD <[ C D ]>`\ \| + \|\ :g:`CE <[ C E ]>`\ \|. (Seiichi Kirikami, October 8, 2010.)
 
 .. figure:: x-00165.svg
    :alt: X(165) = CENTROID OF THE EXCENTRAL TRIANGLE
    :align: center
 
-   **X(165) = CENTROID OF THE EXCENTRAL TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(165) = CENTROID OF THE EXCENTRAL TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -33,11 +33,7 @@ X(165) = CENTROID OF THE EXCENTRAL TRIANGLE
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(165) <X(165)>` = :ref:`X(1) <X(1)>` - 4 :ref:`X(3) <X(3)>`
-
-.. container:: note-item
-
-   :ref:`X(165) <X(165)>` lies.
+   * :ref:`X(165) <X(165)>` = :ref:`X(1) <X(1)>` - :math:`4` :ref:`X(3) <X(3)>`
 
 .. collapse:: Incident Central Lines
    :badge: 45 lines
@@ -52,7 +48,7 @@ X(165) = CENTROID OF THE EXCENTRAL TRIANGLE
    * :ref:`X(165) <X(165)>` = :ref:`X(9) <X(9)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(1) <X(1)>`
    * :ref:`X(165) <X(165)>` = :term:`anticomplement <anticomplement>` of X(3817)
    * :ref:`X(165) <X(165)>` = :ref:`X(2) <X(2)>`-of-1st-circumperp-triangle
-   * :ref:`X(165) <X(165)>` = homothetic center of ABC and :term:`orthic triangle <orthic-triangle>` of 1st circumperp triangle
+   * :ref:`X(165) <X(165)>` = homothetic center of :g:`ABC << A B C >>` and :term:`orthic triangle <orthic-triangle>` of 1st circumperp triangle
    * :ref:`X(165) <X(165)>` = homothetic center of :term:`excentral triangle <excentral-triangle>` and :term:`medial triangle <medial-triangle>` of 1st circumperp triangle
    * :ref:`X(165) <X(165)>` = excentral isogonal conjugate of :ref:`X(9) <X(9)>`
    * :ref:`X(165) <X(165)>` = excentral :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(165) <X(165)>`
@@ -64,18 +60,18 @@ X(165) = CENTROID OF THE EXCENTRAL TRIANGLE
    * :ref:`X(165) <X(165)>` = X(i)-:term:`aleph conjugate <aleph-conjugate>` of X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`169 <X(169)>`), (:ref:`9 <X(9)>`, :ref:`165 <X(165)>`), (:ref:`21 <X(21)>`, :ref:`572 <X(572)>`), (:ref:`100 <X(100)>`, :ref:`101 <X(101)>`), (:ref:`188 <X(188)>`, :ref:`9 <X(9)>`), (:ref:`259 <X(259)>`, :ref:`43 <X(43)>`), (:ref:`365 <X(365)>`, :ref:`978 <X(978)>`), (:ref:`366 <X(366)>`, :ref:`57 <X(57)>`), (:ref:`650 <X(650)>`, 1053)
    * :ref:`X(165) <X(165)>` = centroid of the triangle with vertices :ref:`X(1) <X(1)>`, :ref:`X(8) <X(8)>`, :ref:`X(20) <X(20)>`
    * :ref:`X(165) <X(165)>` = centroid of the triangle with vertices :ref:`X(4) <X(4)>`, :ref:`X(20) <X(20)>`, :ref:`X(40) <X(40)>`
-   * :ref:`X(165) <X(165)>` = ABC-to-excentral :term:`barycentric image <barycentric-image>` of :ref:`X(2) <X(2)>`
+   * :ref:`X(165) <X(165)>` = :g:`ABC << A B C >>`-to-excentral :term:`barycentric image <barycentric-image>` of :ref:`X(2) <X(2)>`
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let A'B'C' be the anticevian triangle, wrt :term:`intouch triangle <intouch-triangle>`, of :ref:`X(1) <X(1)>`. Let A″ be the reflection of A' in A, and define B' and C' cyclically. The centroid of A″B″C″ is :ref:`X(165) <X(165)>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
+   Let :g:`A'B'C' << A' B' C' >>` be the anticevian triangle, wrt :term:`intouch triangle <intouch-triangle>`, of :ref:`X(1) <X(1)>`. Let :g:`A″ <A″>` be the reflection of :g:`A' <A'>` in :g:`A <A>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The centroid of :g:`A″B″C″ << A″ B″ C″ >>` is :ref:`X(165) <X(165)>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
 
 .. container:: note-item
 
-   Let A'B'C' be the excentral triangle. Let A″ be the symmedian point of triangle A'BC, and define B″ and C″ cyclically. The lines A'A″, B'B″, C'C″ concur in :ref:`X(165) <X(165)>`. (Randy Hutson, July 31 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the excentral triangle. Let :g:`A″ <A″>` be the symmedian point of triangle :g:`A'BC << A' B C >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(165) <X(165)>`. (Randy Hutson, July 31 2018)
 
 .. container:: note-item
 

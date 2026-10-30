@@ -10,13 +10,13 @@ X(68) = PRASOLOV POINT
 
 .. enunciation::
 
-   Let A'B'C' be the 2nd Euler triangle. The lines AA', BB', CC' concur in :ref:`X(68) <X(68)>`, as proved in **V. V. Prasolov,** *Zadachi po planimetrii,* Moscow, 4th edition, 2001.
+   Let :g:`A'B'C' << A' B' C' >>` be the 2nd Euler triangle. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(68) <X(68)>`, as proved in **V. V. Prasolov,** *Zadachi po planimetrii,* Moscow, 4th edition, 2001.
 
 .. figure:: x-00068.svg
    :alt: X(68) = PRASOLOV POINT
    :align: center
 
-   **X(68) = PRASOLOV POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(68) = PRASOLOV POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,11 +27,7 @@ X(68) = PRASOLOV POINT
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`(b^2 + c^2 - a^2)/(a^4 + b^4 + c^4 - 2a^2b^2 - 2a^2c^2) : :`
-
-.. container:: note-item
-
-   :ref:`X(68) <X(68)>` lies.
+   * **Barycentrics:** :math:`(b^{2} + c^{2} - a^{2})/(a^{4} + b^{4} + c^{4} - 2a^{2}b^{2} - 2a^{2}c^{2}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 14 lines
@@ -54,7 +50,7 @@ X(68) = PRASOLOV POINT
    * :ref:`X(68) <X(68)>` = :ref:`X(63) <X(63)>`-:term:`isoconjugate <isoconjugate>` of X(8745)
    * :ref:`X(68) <X(68)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(924) <X(924)>`\ X(6753)
    * :ref:`X(68) <X(68)>` = trilinear product of vertices of :ref:`X(3) <X(3)>`-anti-altimedial triangle
-   * :ref:`X(68) <X(68)>` = orthic-to-ABC :term:`barycentric image <barycentric-image>` of :ref:`X(52) <X(52)>`
+   * :ref:`X(68) <X(68)>` = orthic-to-:g:`ABC << A B C >>` :term:`barycentric image <barycentric-image>` of :ref:`X(52) <X(52)>`
    * :ref:`X(68) <X(68)>` = :term:`cyclocevian conjugate <cyclocevian-conjugate>` of X(34287)
 
 Notes
@@ -66,11 +62,11 @@ Notes
 
 .. container:: note-item
 
-   Let Oa be the circle centered at the A-vertex of the :term:`orthic triangle <orthic-triangle>` and passing through A; define Ob and Oc cyclically. Then :ref:`X(68) <X(68)>` is the radical center of Oa, Ob, Oc. (:person:`Randy Hutson <randy-hutson>`, November 2, 2017)
+   Let :g:`O_{a} <O_a>` be the circle centered at the :g:`A <A>`-vertex of the :term:`orthic triangle <orthic-triangle>` and passing through :g:`A <A>`; define :g:`O_{b} <O_b>` and :g:`O_{c} <O_c>` cyclically. Then :ref:`X(68) <X(68)>` is the radical center of :g:`O_{a} <O_a>`, :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>`. (:person:`Randy Hutson <randy-hutson>`, November 2, 2017)
 
 .. container:: note-item
 
-   The :ref:`X(3) <X(3)>`-Fuhrmann triangle is inversely similar to ABC, with similitude center :ref:`X(3) <X(3)>`, and perspective to ABC at :ref:`X(68) <X(68)>`. (Randy Hutson, November 3, 2017)
+   The :ref:`X(3) <X(3)>`-Fuhrmann triangle is inversely similar to :g:`ABC << A B C >>`, with similitude center :ref:`X(3) <X(3)>`, and perspective to :g:`ABC << A B C >>` at :ref:`X(68) <X(68)>`. (Randy Hutson, November 3, 2017)
 
 .. toctree::
    :hidden:

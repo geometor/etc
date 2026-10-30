@@ -10,17 +10,18 @@ X(132) = X(2)X(107)∩X(4)X(32)
 
 .. enunciation::
 
-   Barycentrics g(A,B,C) : g(B,C,A) : g(C,A,B), where g(A,B,C) = (sin A) f(A,B,C)
+   :ref:`X(132) <X(132)>` = midpoint of :ref:`X(4) <X(4)>` and :ref:`X(112) <X(112)>`
 
 .. figure:: x-00132.svg
    :alt: X(132) = X(2)X(107)∩X(4)X(32)
    :align: center
 
-   **X(132) = X(2)X(107)∩X(4)X(32)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(132) = X(2)X(107)∩X(4)X(32)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where, f(A,B,C) = (sec A) u(A,B,C) v(A,B,C),, u(A,B,C) = [sin\ :sup:`2`\ (2A) + (sin 2B - sin 2C)\ :sup:`2` + (sin 2A)(sin 2A - sin 2B - sin 2C)],, v(A,B,C) = [sin\ :sup:`2`\ (2B) + sin\ :sup:`2`\ (2C) - (sin 2A sin 2B) - (sin 2A sin 2C)]
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = (\sec A) u(A,B,C) v(A,B,C)`, :math:`u(A,B,C) = [\sin^{2}(2A) + (\sin 2B - \sin 2C)^{2} + (\sin 2A)(\sin 2A - \sin 2B - \sin 2C)]`, :math:`v(A,B,C) = [\sin^{2}(2B) + \sin^{2}(2C) - (\sin 2A \sin 2B) - (\sin 2A \sin 2C)]`
+   | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where :math:`g(A,B,C) = (\sin A) f(A,B,C)`
    | **Search Value (6, 9, 13):** :math:`-2.938541066207`
 
 .. container:: note-item
@@ -43,15 +44,15 @@ X(132) = X(2)X(107)∩X(4)X(32)
    * :ref:`X(132) <X(132)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`232 <X(232)>`), (:ref:`4 <X(4)>`, 1503)
    * :ref:`X(132) <X(132)>` = :ref:`X(4) <X(4)>`-:term:`line conjugate <line-conjugate>` of :ref:`X(248) <X(248)>`
    * :ref:`X(132) <X(132)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(248) <X(248)>`\ \ :ref:`X(684) <X(684)>`
-   * :ref:`X(132) <X(132)>` = :ref:`X(105) <X(105)>`-of-:term:`orthic triangle <orthic-triangle>` if ABC is acute
+   * :ref:`X(132) <X(132)>` = :ref:`X(105) <X(105)>`-of-:term:`orthic triangle <orthic-triangle>` if :g:`ABC << A B C >>` is acute
    * :ref:`X(132) <X(132)>` = :term:`complement <complement>` of X(1297)
    * :ref:`X(132) <X(132)>` = perspector of circumconic centered at :ref:`X(232) <X(232)>`
-   * :ref:`X(132) <X(132)>` = center of rectangular hyperbola {A,B,C,\ :ref:`X(4) <X(4)>`,\ :ref:`X(112) <X(112)>`,PU(39)}} that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X(232) <X(232)>`
+   * :ref:`X(132) <X(132)>` = center of rectangular hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(4) <X(4)>`,\ :ref:`X(112) <X(112)>`,PU(39)}} that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X(232) <X(232)>`
    * :ref:`X(132) <X(132)>` = center of rectangular hyperbola {:ref:`X(4) <X(4)>`,\ :ref:`X(112) <X(112)>`,\ :ref:`X(371) <X(371)>`,\ :ref:`X(372) <X(372)>`,\ :ref:`X(378) <X(378)>`,X(1064)}
    * :ref:`X(132) <X(132)>` = inverse-in-polar-circle of :ref:`X(98) <X(98)>`
    * :ref:`X(132) <X(132)>` = circumcircle-inverse of X(34131)
    * :ref:`X(132) <X(132)>` = inverse-in-{circumcircle, nine-point circle}-inverter of :ref:`X(107) <X(107)>`
-   * :ref:`X(132) <X(132)>` = anticenter of cyclic quadrilateral ABC\ :ref:`X(112) <X(112)>`
+   * :ref:`X(132) <X(132)>` = anticenter of cyclic quadrilateral :g:`ABC << A B C >>`\ :ref:`X(112) <X(112)>`
    * :ref:`X(132) <X(132)>` = Λ(:ref:`X(4) <X(4)>`, :ref:`X(6) <X(6)>`), wrt orthic triangle
    * :ref:`X(132) <X(132)>` = :term:`crosssum <crosssum>` of circumcircle intercepts of line PU(37) (line :ref:`X(3) <X(3)>`\ \ :ref:`X(525) <X(525)>`)
    * :ref:`X(132) <X(132)>` = orthopole of PU(37)

@@ -10,28 +10,24 @@ X(457) = EULER X(399)-11th-SUBSTITUTION POINT
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(457) <X(457)>` has Shinagawa coefficients (9(E + 16F)EF - 64FS\ :sup:`2`,-81E\ :sup:`2`\ F + 16(E + 4F)S\ :sup:`2`).
+   As a point on the Euler line, :ref:`X(457) <X(457)>` has Shinagawa coefficients :math:`(9(E + 16F)EF - 64FS^{2},-81E^{2}F + 16(E + 4F)S^{2})`.
 
 .. figure:: x-00457.svg
    :alt: X(457) = EULER X(399)-11th-SUBSTITUTION POINT
    :align: center
 
-   **X(457) = EULER X(399)-11th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(457) = EULER X(399)-11th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`u^{2}\sec A : v^{2}\sec B : w^{2}\sec C`, where u : v : w = :ref:`X(399) <X(399)>`
+   | **Trilinears:** :math:`u^{2}\sec A : v^{2}\sec B : w^{2}\sec C`, where :math:`u : v : w` = :ref:`X(399) <X(399)>`
    | **Barycentrics:** :math:`u^{2}\tan A : v^{2}\tan B : w^{2}\tan C`
-   | **Search Value (6, 9, 13):** :math:`-0.492700786670`
+   | **Search Value (6, 9, 13):** :math:`4.705865843343`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`a^2*(a^2 + b^2 - c^2)*(a^2 - b^2 + c^2)*(a^8 - 4*a^6*b^2 + 6*a^4*b^4 - 4*a^2*b^6 + b^8 - 4*a^6*c^2 + a^4*b^2*c^2 + a^2*b^4*c^2 + 2*b^6*c^2 + 6*a^4*c^4 + a^2*b^2*c^4 - 6*b^4*c^4 - 4*a^2*c^6 + 2*b^2*c^6 + c^8)^2 : :`
-
-.. container:: note-item
-
-   :ref:`X(457) <X(457)>` lies.
+   * **Barycentrics:** :math:`a^{2} (a^{2} + b^{2} - c^{2}) \cdot (a^{2} - b^{2} + c^{2}) \cdot (a^{8} - 4 a^{6} b^{2} + 6 a^{4} b^{4} - 4 a^{2} b^{6} + b^{8} - 4 a^{6} c^{2} + a^{4} b^{2} c^{2} + a^{2} b^{4} c^{2} + 2 b^{6} c^{2} + 6 a^{4} c^{4} + a^{2} b^{2} c^{4} - 6 b^{4} c^{4} - 4 a^{2} c^{6} + 2 b^{2} c^{6} + c^{8})^{2} : :`
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines

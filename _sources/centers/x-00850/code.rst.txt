@@ -12,7 +12,7 @@ X(850) = BARYCENTRIC MULTIPLIER FOR KIEPERT HYPERBOLA — Code
    :alt: X(850) = BARYCENTRIC MULTIPLIER FOR KIEPERT HYPERBOLA
    :align: center
 
-   **X(850) = BARYCENTRIC MULTIPLIER FOR KIEPERT HYPERBOLA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(850) = BARYCENTRIC MULTIPLIER FOR KIEPERT HYPERBOLA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -16,7 +16,7 @@ X(604) = X(56)-CEVA CONJUGATE OF X(31)
    :alt: X(604) = X(56)-CEVA CONJUGATE OF X(31)
    :align: center
 
-   **X(604) = X(56)-CEVA CONJUGATE OF X(31)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(604) = X(56)-CEVA CONJUGATE OF X(31)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,13 +28,9 @@ X(604) = X(56)-CEVA CONJUGATE OF X(31)
    :badge: 4 forms
 
    * **Trilinears:** :math:`a^{2}(S_{A} - bc) : :`
-   * **Trilinears:** :math:`a^2/(b + c - a) : :`
-   * **Trilinears:** :math:`area(A'BC) : :`, where A'B'C' = Fuhrmann triangle
-   * **Barycentrics:** :math:`\sin^2 A \sin^2(A/2) : :`
-
-.. container:: note-item
-
-   :ref:`X(604) <X(604)>` lies.
+   * **Trilinears:** :math:`a^{2}/(b + c - a) : :`
+   * **Trilinears:** :math:`\operatorname{area}(A'BC) : :`, where :g:`A'B'C' << A' B' C' >>` = Fuhrmann triangle
+   * **Barycentrics:** :math:`\sin^{2} A \sin^{2}(A/2) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 11 lines
@@ -55,11 +51,11 @@ X(604) = X(56)-CEVA CONJUGATE OF X(31)
    * :ref:`X(604) <X(604)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`329 <X(329)>`), (:ref:`8 <X(8)>`, :ref:`346 <X(346)>`), (:ref:`9 <X(9)>`, :ref:`78 <X(78)>`), (:ref:`306 <X(306)>`, :ref:`321 <X(321)>`)
    * :ref:`X(604) <X(604)>` = :ref:`X(75) <X(75)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(9) <X(9)>`
    * :ref:`X(604) <X(604)>` = :ref:`X(92) <X(92)>`-isoconjugate of :ref:`X(78) <X(78)>`
-   * :ref:`X(604) <X(604)>` = perspector of ABC and extraversion triangle of :ref:`X(41) <X(41)>`
+   * :ref:`X(604) <X(604)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(41) <X(41)>`
    * :ref:`X(604) <X(604)>` = trilinear product of PU(48)
    * :ref:`X(604) <X(604)>` = barycentric product of PU(92)
    * :ref:`X(604) <X(604)>` = barycentric square of :ref:`X(266) <X(266)>`
-   * :ref:`X(604) <X(604)>` = perspector of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of Gemini triangle 13
+   * :ref:`X(604) <X(604)>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of Gemini triangle 13
 
 .. toctree::
    :hidden:

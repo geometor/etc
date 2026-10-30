@@ -12,7 +12,7 @@ X(372) = {X(3),X(6)}-HARMONIC CONJUGATE OF X(371) — Code
    :alt: X(372) = {X(3),X(6)}-HARMONIC CONJUGATE OF X(371)
    :align: center
 
-   **X(372) = {X(3),X(6)}-HARMONIC CONJUGATE OF X(371)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(372) = {X(3),X(6)}-HARMONIC CONJUGATE OF X(371)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

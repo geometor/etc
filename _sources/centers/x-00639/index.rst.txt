@@ -16,16 +16,13 @@ X(639) = COMPLEMENT OF X(371)
    :alt: X(639) = COMPLEMENT OF X(371)
    :align: center
 
-   **X(639) = COMPLEMENT OF X(371)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(639) = COMPLEMENT OF X(371)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = [2S\ :sub:`B`\ S\ :sub:`C` + S\ :sub:`A`\ a\ :sup:`2` + 2(b\ :sup:`2` + c\ :sup:`2`) area]/a
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = [2S_{B}S_{C} + S_{A}a^{2} + 2(b^{2} + c^{2}) \operatorname{area}]/a`
+   | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where :math:`g(A,B,C) = 2 + \sin 2B + \sin 2C - \cos 2B - \cos 2C`,\ :math:`h(a,b,c) : h(b,c,a) : h(c,a,b)`, where :math:`h(a,b,c) = (a^{2} + 4 \operatorname{area}(ABC))(b^{2} + c^{2}) - (b^{2} - c^{2})^{2}`
    | **Search Value (6, 9, 13):** :math:`2.727772972011`
-
-.. container:: note-item
-
-   :ref:`X(639) <X(639)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines
@@ -41,15 +38,6 @@ X(639) = COMPLEMENT OF X(371)
    * :ref:`X(639) <X(639)>` = :term:`complement <complement>` of :ref:`X(371) <X(371)>`
    * :ref:`X(639) <X(639)>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X(641) <X(641)>`
    * :ref:`X(639) <X(639)>` = nine-point-circle-inverse of X(32432)
-
-Notes
------
-
-.. container:: note-item
-
-   Barycentrics g(A,B,C) : g(B,C,A) : g(C,A,B), where g(A,B,C) = 2 + sin 2B + sin 2C - cos 2B - cos 2C
-
-   h(a,b,c) : h(b,c,a) : h(c,a,b), where h(a,b,c) = (a\ :sup:`2` + 4 area(ABC))(b\ :sup:`2` + c\ :sup:`2`) - (b\ :sup:`2` - c\ :sup:`2`)\ :sup:`2`
 
 .. toctree::
    :hidden:

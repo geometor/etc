@@ -16,7 +16,7 @@ X(282) = X(6)-CROSS CONJUGATE OF X(9)
    :alt: X(282) = X(6)-CROSS CONJUGATE OF X(9)
    :align: center
 
-   **X(282) = X(6)-CROSS CONJUGATE OF X(9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(282) = X(6)-CROSS CONJUGATE OF X(9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -44,9 +44,9 @@ X(282) = X(6)-CROSS CONJUGATE OF X(9)
    * :ref:`X(282) <X(282)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`6 <X(6)>`, :ref:`9 <X(9)>`), (:ref:`33 <X(33)>`, :ref:`1 <X(1)>`)
    * :ref:`X(282) <X(282)>` = :term:`crosspoint <crosspoint>` of :ref:`X(189) <X(189)>` and :ref:`X(280) <X(280)>`
    * :ref:`X(282) <X(282)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`6 <X(6)>`, 1035), (:ref:`198 <X(198)>`, :ref:`221 <X(221)>`)
-   * :ref:`X(282) <X(282)>` = perspector of ABC and :term:`antipedal triangle <antipedal-triangle>` of X(1490)
+   * :ref:`X(282) <X(282)>` = perspector of :g:`ABC << A B C >>` and :term:`antipedal triangle <antipedal-triangle>` of X(1490)
    * :ref:`X(282) <X(282)>` = perspector of pedal and :term:`anticevian triangles <anticevian-triangle>` of :ref:`X(84) <X(84)>`
-   * :ref:`X(282) <X(282)>` = perspector of ABC and :term:`medial triangle <medial-triangle>` of :term:`pedal triangle <pedal-triangle>` of X(3345)
+   * :ref:`X(282) <X(282)>` = perspector of :g:`ABC << A B C >>` and :term:`medial triangle <medial-triangle>` of :term:`pedal triangle <pedal-triangle>` of X(3345)
    * :ref:`X(282) <X(282)>` = perspector of circumconic centered at X(3341)
    * :ref:`X(282) <X(282)>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through X(3341)
    * :ref:`X(282) <X(282)>` = :ref:`X(2) <X(2)>`-Ceva conjugate of X(3341)

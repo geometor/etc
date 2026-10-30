@@ -16,17 +16,13 @@ X(905) = POINT ACHERNAR
    :alt: X(905) = POINT ACHERNAR
    :align: center
 
-   **X(905) = POINT ACHERNAR** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(905) = POINT ACHERNAR** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`(b - c)\cot A: (c - a)\cot B: (a - b)\cot C`
    | **Barycentrics:** :math:`a(b - c)(b^{2} + c^{2} - a^{2}) : :`
    | **Search Value (6, 9, 13):** :math:`-8.612524310091`
-
-.. container:: note-item
-
-   :ref:`X(905) <X(905)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines

@@ -16,18 +16,19 @@ X(108) = Ψ(CIRCUMCENTER, INCENTER)
    :alt: X(108) = Ψ(CIRCUMCENTER, INCENTER)
    :align: center
 
-   **X(108) = Ψ(CIRCUMCENTER, INCENTER)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(108) = Ψ(CIRCUMCENTER, INCENTER)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`a/(\sec B - \sec C) : b/(\sec C - \sec A): c/(\sec A - \sec B), = g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = 1/[(b - c)(b + c - a)(b\ :sup:`2` + c\ :sup:`2` - a\ :sup:`2`)]
+   | **Trilinears:** :math:`a/(\sec B - \sec C) : b/(\sec C - \sec A): c/(\sec A - \sec B)`
    | **Barycentrics:** :math:`a^{2}/(\sec B - \sec C) : b^{2}/(\sec C - \sec A): c^{2}/(\sec A - \sec B)`
    | **Tripolars:** :math:`|b c (\sec B - \sec C)| : :`
    | **Search Value (6, 9, 13):** :math:`-0.081760732885`
 
-.. container:: note-item
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-   :ref:`X(108) <X(108)>` lies.
+   * **Trilinears:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = 1/[(b - c)(b + c - a)(b^{2} + c^{2} - a^{2})]`
 
 .. collapse:: Incident Central Lines
    :badge: 268 lines
@@ -49,12 +50,12 @@ X(108) = Ψ(CIRCUMCENTER, INCENTER)
    * :ref:`X(108) <X(108)>` = :term:`crosspoint <crosspoint>` of :ref:`X(107) <X(107)>` and :ref:`X(162) <X(162)>`
    * :ref:`X(108) <X(108)>` = :term:`crosssum <crosssum>` of :ref:`X(520) <X(520)>` and :ref:`X(656) <X(656)>`
    * :ref:`X(108) <X(108)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`21 <X(21)>`, :ref:`102 <X(102)>`), (:ref:`162 <X(162)>`, :ref:`108 <X(108)>`)
-   * :ref:`X(108) <X(108)>` = point of intersection, other than A, B, and C, of the circumcircle and hyperbola {A,B,C,PU(18)}}
+   * :ref:`X(108) <X(108)>` = point of intersection, other than :g:`A <A>`, :g:`B <B>`, and :g:`C <C>`, of the circumcircle and hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(18)}}
    * :ref:`X(108) <X(108)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(6) <X(6)>`\ \ :ref:`X(19) <X(19)>` (the polar of X(4391) wrt polar circle)
    * :ref:`X(108) <X(108)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X(4391) (line :ref:`X(11) <X(11)>`\ \ :ref:`X(123) <X(123)>`)
    * :ref:`X(108) <X(108)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of X(4391)
    * :ref:`X(108) <X(108)>` = X(1577)-isoconjugate of X(2193)
-   * :ref:`X(108) <X(108)>` = concurrence of the reflections of line :ref:`X(4) <X(4)>`\ \ :ref:`X(65) <X(65)>` in the sidelines of ABC
+   * :ref:`X(108) <X(108)>` = concurrence of the reflections of line :ref:`X(4) <X(4)>`\ \ :ref:`X(65) <X(65)>` in the sidelines of :g:`ABC << A B C >>`
    * :ref:`X(108) <X(108)>` = Ψ(X(i),Xj)) for these (i,j): (:ref:`1 <X(1)>`, :ref:`4 <X(4)>`), (:ref:`3 <X(3)>`, :ref:`1 <X(1)>`), (:ref:`4 <X(4)>`, :ref:`65 <X(65)>`), (:ref:`6 <X(6)>`, :ref:`19 <X(19)>`), (:ref:`7 <X(7)>`, :ref:`4 <X(4)>`), (:ref:`8 <X(8)>`, :ref:`4 <X(4)>`), (:ref:`9 <X(9)>`, :ref:`4 <X(4)>`), (:ref:`29 <X(29)>`, :ref:`1 <X(1)>`), (:ref:`69 <X(69)>`, :ref:`7 <X(7)>`), (:ref:`80 <X(80)>`, :ref:`4 <X(4)>`)
    * :ref:`X(108) <X(108)>` = reflection of X(2766) in the Euler line
    * :ref:`X(108) <X(108)>` = reflection of X(2714) in the Brocard axis

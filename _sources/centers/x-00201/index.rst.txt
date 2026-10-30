@@ -16,17 +16,13 @@ X(201) = X(10)-CEVA CONJUGATE OF X(12)
    :alt: X(201) = X(10)-CEVA CONJUGATE OF X(12)
    :align: center
 
-   **X(201) = X(10)-CEVA CONJUGATE OF X(12)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(201) = X(10)-CEVA CONJUGATE OF X(12)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`(\cos A)[1 + \cos(B - C)] : (\cos B)[1 + \cos(C - A)] : (\cos C)[1 + \cos(A - B)]`
    | **Barycentrics:** :math:`(\sin 2A)[1 + \cos(B - C)] : (\sin 2B)[1 + \cos(C - A)] : (\sin 2C)[1 + \cos(A - B)]`
    | **Search Value (6, 9, 13):** :math:`99.519892096135`
-
-.. container:: note-item
-
-   :ref:`X(201) <X(201)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 18 lines

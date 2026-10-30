@@ -16,7 +16,7 @@ X(963) = ISOGONAL CONJUGATE OF X(962)
    :alt: X(963) = ISOGONAL CONJUGATE OF X(962)
    :align: center
 
-   **X(963) = ISOGONAL CONJUGATE OF X(962)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(963) = ISOGONAL CONJUGATE OF X(962)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -26,11 +26,7 @@ X(963) = ISOGONAL CONJUGATE OF X(962)
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`\sec A' : :`, where A' is the angle formed by the tangents from :ref:`X(1) <X(1)>` to the A-excircle
-
-.. container:: note-item
-
-   :ref:`X(963) <X(963)>` lies.
+   * **Trilinears:** :math:`\sec A' : :`, where :g:`A' <A'>` is the angle formed by the tangents from :ref:`X(1) <X(1)>` to the :g:`A <A>`-excircle
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines

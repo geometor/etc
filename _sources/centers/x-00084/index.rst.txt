@@ -10,13 +10,13 @@ X(84) = ISOGONAL CONJUGATE OF X(40)
 
 .. enunciation::
 
-   Let A',B',C' be the excenters. The perpendiculars from B' to AB and from C' to AC meet in a point A″. Points B″ and C″ are determined cyclically. The hexyl triangle, A″B″C″, is perspective to ABC, and :ref:`X(84) <X(84)>` is the perspector.
+   Let :g:`A' <A'>`,\ :g:`B' <B'>`,\ :g:`C' <C'>` be the excenters. The perpendiculars from :g:`B' <B'>` to :g:`AB <[ A B ]>` and from :g:`C' <C'>` to :g:`AC <[ A C ]>` meet in a point :g:`A″ <A″>`. Points :g:`B″ <B″>` and :g:`C″ <C″>` are determined cyclically. The hexyl triangle, :g:`A″B″C″ << A″ B″ C″ >>`, is perspective to :g:`ABC << A B C >>`, and :ref:`X(84) <X(84)>` is the perspector.
 
 .. figure:: x-00084.svg
    :alt: X(84) = ISOGONAL CONJUGATE OF X(40)
    :align: center
 
-   **X(84) = ISOGONAL CONJUGATE OF X(40)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(84) = ISOGONAL CONJUGATE OF X(40)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -26,12 +26,12 @@ X(84) = ISOGONAL CONJUGATE OF X(40)
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`a^2[a^2 - (b - c)^2]^2 - (b - c)^2[a^2 - (b + c)^2]^2 : :`
+   * **Trilinears:** :math:`a^{2}[a^{2} - (b - c)^{2}]^{2} - (b - c)^{2}[a^{2} - (b + c)^{2}]^{2} : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(84) <X(84)>` = (r + 2R)\*\ :ref:`X(1) <X(1)>` - 6R\*\ :ref:`X(2) <X(2)>` + (4R - 2r)\*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
+   * :ref:`X(84) <X(84)>` = :math:`(r + 2R)` :ref:`X(1) <X(1)>` - :math:`6R` :ref:`X(2) <X(2)>` + :math:`(4R - 2r)` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. container:: note-item
 
@@ -55,12 +55,12 @@ X(84) = ISOGONAL CONJUGATE OF X(40)
    * :ref:`X(84) <X(84)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`271 <X(271)>`, :ref:`3 <X(3)>`), (:ref:`280 <X(280)>`, :ref:`280 <X(280)>`), (:ref:`285 <X(285)>`, :ref:`84 <X(84)>`)
    * :ref:`X(84) <X(84)>` = :ref:`X(68) <X(68)>`-of-the-hexyl-triangle
    * :ref:`X(84) <X(84)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(650) <X(650)>`\ X(1459)
-   * :ref:`X(84) <X(84)>` = perspector of ABC and the reflection in :ref:`X(9) <X(9)>` of the :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(9) <X(9)>`
+   * :ref:`X(84) <X(84)>` = perspector of :g:`ABC << A B C >>` and the reflection in :ref:`X(9) <X(9)>` of the :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(9) <X(9)>`
    * :ref:`X(84) <X(84)>` = Danneels point of :ref:`X(110) <X(110)>`
    * :ref:`X(84) <X(84)>` = trilinear product of vertices of hexyl triangle (i.e., the extraversions of :ref:`X(40) <X(40)>`)
    * :ref:`X(84) <X(84)>` = hexyl-isotomic conjugate of X(12717)
    * :ref:`X(84) <X(84)>` = orthologic center of hexyl triangle to inverse(n(hexyl triangle)); the reciprocal orthologic center is :ref:`X(65) <X(65)>`
-   * :ref:`X(84) <X(84)>` = perspector of ABC and cross-triangle of extouch and Hutson-:term:`extouch triangles <extouch-triangle>`
+   * :ref:`X(84) <X(84)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of extouch and Hutson-:term:`extouch triangles <extouch-triangle>`
    * :ref:`X(84) <X(84)>` = Cundy-Parry Phi transform of :ref:`X(9) <X(9)>`
    * :ref:`X(84) <X(84)>` = Cundy-Parry Psi transform of :ref:`X(57) <X(57)>`
    * :ref:`X(84) <X(84)>` = intouch-to-excentral :term:`similarity image <similarity-image>` of :ref:`X(4) <X(4)>`
@@ -70,11 +70,11 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the extouch triangle. Let A″ be the orthocenter of AB'C', and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(84) <X(84)>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the extouch triangle. Let :g:`A″ <A″>` be the orthocenter of :g:`AB'C' << A B' C' >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(84) <X(84)>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
 
 .. container:: note-item
 
-   Let A1B1C1 be the 1st Conway triangle. Let A' be the :term:`crosspoint <crosspoint>` of B1 and C1, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(84) <X(84)>`. (Randy Hutson, December 2, 2017)
+   Let :g:`A_{1}B_{1}C_{1} << A_1 B_1 C_1 >>` be the 1st Conway triangle. Let :g:`A' <A'>` be the :term:`crosspoint <crosspoint>` of :g:`B_{1} <B_1>` and :g:`C_{1} <C_1>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(84) <X(84)>`. (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 

@@ -100,10 +100,10 @@
         <figure class="align-center" id="id1">
         <div class="etc-graphics-panel">
           <div class="etc-triangle-tabs" role="tablist" aria-label="Reference Triangle">
-            <button type="button" class="etc-tab-btn active" role="tab" aria-selected="true" data-tab="acute" title="Acute Scalene Triangle (5, 6, 7)" data-caption-html="&lt;strong&gt;X(512) = ISOGONAL CONJUGATE OF X(99)&lt;/strong&gt; constructed on acute reference triangle &lt;code&gt;(a, b, c) = (5, 6, 7)&lt;/code&gt; with unit baseline &lt;code&gt;AB = 1&lt;/code&gt;.">5, 6, 7</button>
-            <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="right" title="Egyptian Right Triangle (3, 4, 5)" data-caption-html="&lt;strong&gt;X(512) = ISOGONAL CONJUGATE OF X(99)&lt;/strong&gt; constructed on Egyptian right triangle &lt;code&gt;(a, b, c) = (3, 4, 5)&lt;/code&gt; with unit baseline &lt;code&gt;AB = 1&lt;/code&gt;.">3, 4, 5</button>
-            <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="kepler" title="Kepler Golden Right Triangle (1, √φ, φ)" data-caption-html="&lt;strong&gt;X(512) = ISOGONAL CONJUGATE OF X(99)&lt;/strong&gt; constructed on Kepler golden right triangle &lt;code&gt;(a, b, c) = (1, √φ, φ)&lt;/code&gt; with unit baseline &lt;code&gt;AB = 1&lt;/code&gt;.">Kepler</button>
-            <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="kimberling" title="Kimberling Obtuse Scalene Triangle (6, 9, 13)" data-caption-html="&lt;strong&gt;X(512) = ISOGONAL CONJUGATE OF X(99)&lt;/strong&gt; constructed on Kimberling&#x27;s canonical uniqueness test triangle &lt;code&gt;(a, b, c) = (6, 9, 13)&lt;/code&gt; (obtuse scalene, unit baseline &lt;code&gt;AB = 1&lt;/code&gt;).">Kimberling</button>
+            <button type="button" class="etc-tab-btn active" role="tab" aria-selected="true" data-tab="acute" title="Acute Scalene Triangle (5, 6, 7)" data-caption-html="&lt;strong&gt;X(512) = ISOGONAL CONJUGATE OF X(99)&lt;/strong&gt; constructed on acute reference triangle &lt;code&gt;(a, b, c) = (5, 6, 7)&lt;/code&gt; with unit baseline &lt;span class=&quot;geom-ref geom-segment&quot; data-ref=&quot;[ A B ]&quot;&gt;AB&lt;/span&gt; = &lt;code&gt;1&lt;/code&gt;.">5, 6, 7</button>
+            <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="right" title="Egyptian Right Triangle (3, 4, 5)" data-caption-html="&lt;strong&gt;X(512) = ISOGONAL CONJUGATE OF X(99)&lt;/strong&gt; constructed on Egyptian right triangle &lt;code&gt;(a, b, c) = (3, 4, 5)&lt;/code&gt; with unit baseline &lt;span class=&quot;geom-ref geom-segment&quot; data-ref=&quot;[ A B ]&quot;&gt;AB&lt;/span&gt; = &lt;code&gt;1&lt;/code&gt;.">3, 4, 5</button>
+            <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="kepler" title="Kepler Golden Right Triangle (1, √φ, φ)" data-caption-html="&lt;strong&gt;X(512) = ISOGONAL CONJUGATE OF X(99)&lt;/strong&gt; constructed on Kepler golden right triangle &lt;code&gt;(a, b, c) = (1, √φ, φ)&lt;/code&gt; with unit baseline &lt;span class=&quot;geom-ref geom-segment&quot; data-ref=&quot;[ A B ]&quot;&gt;AB&lt;/span&gt; = &lt;code&gt;1&lt;/code&gt;.">Kepler</button>
+            <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="kimberling" title="Kimberling Obtuse Scalene Triangle (6, 9, 13)" data-caption-html="&lt;strong&gt;X(512) = ISOGONAL CONJUGATE OF X(99)&lt;/strong&gt; constructed on Kimberling&#x27;s canonical uniqueness test triangle &lt;code&gt;(a, b, c) = (6, 9, 13)&lt;/code&gt; (obtuse scalene, unit baseline &lt;span class=&quot;geom-ref geom-segment&quot; data-ref=&quot;[ A B ]&quot;&gt;AB&lt;/span&gt; = &lt;code&gt;1&lt;/code&gt;).">Kimberling</button>
           </div>
         <div class="etc-tab-pane active" data-tab-pane="acute">
         <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.114336 -0.723471 1.268093 0.951070" data-initial-viewbox="-0.114336 -0.723471 1.268093 0.951070" preserveAspectRatio="xMidYMid meet">
@@ -723,9 +723,38 @@
                         el.style.display = 'none';
                     });
                 }
+                if (typeof document !== 'undefined') {
+                    document.querySelectorAll('.geom-highlight-text').forEach(el => {
+                        el.classList.remove('geom-highlight-text');
+                    });
+                }
             }
 
-            function activateHover(id) {
+            function resolveSvgId(rawId) {
+                if (!rawId) return rawId;
+                if (svg.querySelector(`[data-id="${CSS.escape(rawId)}"]`)) return rawId;
+                const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                if (segM) {
+                    const revId = `[ ${segM[2]} ${segM[1]} ]`;
+                    if (svg.querySelector(`[data-id="${CSS.escape(revId)}"]`)) return revId;
+                }
+                const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                if (triM) {
+                    const pts = [triM[1], triM[2], triM[3]];
+                    if (pts.includes('A') && pts.includes('B') && pts.includes('C')) {
+                        return '< A B C >';
+                    }
+                    const secPoly = graphicsGroup ? graphicsGroup.querySelector('polygon.secondary[data-id]') : null;
+                    if (secPoly) {
+                        return secPoly.getAttribute('data-id') || rawId;
+                    }
+                }
+                return rawId;
+            }
+
+            function activateHover(rawId) {
+                if (!rawId) return;
+                const id = resolveSvgId(rawId);
                 if (activeHoveredId === id) return;
                 clearHover();
                 activeHoveredId = id;
@@ -743,12 +772,70 @@
                 }
 
                 // Highlight parent/endpoint points and labels
-                const relatedPts = (info && info.related_points) ? info.related_points : [id];
+                let relatedPts = (info && info.related_points) ? info.related_points : [id];
+                if (!targetEl && relatedPts.length === 1 && relatedPts[0] === id) {
+                    const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                    const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                    if (segM) relatedPts = [segM[1], segM[2]];
+                    else if (triM) relatedPts = [triM[1], triM[2], triM[3]];
+                }
                 relatedPts.forEach(pid => {
                     const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
                     if (ptEl) ptEl.classList.add('hover');
                     const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
                     if (lblEl) lblEl.classList.add('hover-label');
+                });
+
+                if (typeof document !== 'undefined') {
+                    const sel = rawId === id
+                        ? `.geom-ref[data-ref="${CSS.escape(id)}"]`
+                        : `.geom-ref[data-ref="${CSS.escape(rawId)}"], .geom-ref[data-ref="${CSS.escape(id)}"]`;
+                    document.querySelectorAll(sel).forEach(el => {
+                        el.classList.add('geom-highlight-text');
+                    });
+                }
+            }
+
+            svg._etcController.activateHover = activateHover;
+            svg._etcController.clearHover = clearHover;
+
+            if (document.body && document.documentElement.tagName.toLowerCase() === 'html' && document.body.dataset.etcGeomRefSyncInit !== '1') {
+                document.body.dataset.etcGeomRefSyncInit = '1';
+                function getActiveSvg() {
+                    const activePaneSvg = document.querySelector('.etc-tab-pane.active svg.geometor-etc-drawing');
+                    if (activePaneSvg && activePaneSvg._etcController) return activePaneSvg;
+                    const anySvg = document.querySelector('svg.geometor-etc-drawing');
+                    return (anySvg && anySvg._etcController) ? anySvg : null;
+                }
+                document.body.addEventListener('mouseover', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref]');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.activateHover) {
+                            activeSvg._etcController.activateHover(geomEl.getAttribute('data-ref'));
+                        }
+                        return;
+                    }
+                    const refLink = e.target.closest('a.reference.internal');
+                    if (refLink) {
+                        const txt = (refLink.textContent || '').trim();
+                        const xm = txt.match(/^X\((\d+)\)$/);
+                        if (xm) {
+                            const activeSvg = getActiveSvg();
+                            if (activeSvg && activeSvg._etcController.activateHover) {
+                                activeSvg._etcController.activateHover(`X(${xm[1]})`);
+                            }
+                        }
+                    }
+                });
+                document.body.addEventListener('mouseout', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref], a.reference.internal');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.clearHover) {
+                            activeSvg._etcController.clearHover();
+                        }
+                    }
                 });
             }
 
@@ -1450,9 +1537,38 @@
                         el.style.display = 'none';
                     });
                 }
+                if (typeof document !== 'undefined') {
+                    document.querySelectorAll('.geom-highlight-text').forEach(el => {
+                        el.classList.remove('geom-highlight-text');
+                    });
+                }
             }
 
-            function activateHover(id) {
+            function resolveSvgId(rawId) {
+                if (!rawId) return rawId;
+                if (svg.querySelector(`[data-id="${CSS.escape(rawId)}"]`)) return rawId;
+                const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                if (segM) {
+                    const revId = `[ ${segM[2]} ${segM[1]} ]`;
+                    if (svg.querySelector(`[data-id="${CSS.escape(revId)}"]`)) return revId;
+                }
+                const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                if (triM) {
+                    const pts = [triM[1], triM[2], triM[3]];
+                    if (pts.includes('A') && pts.includes('B') && pts.includes('C')) {
+                        return '< A B C >';
+                    }
+                    const secPoly = graphicsGroup ? graphicsGroup.querySelector('polygon.secondary[data-id]') : null;
+                    if (secPoly) {
+                        return secPoly.getAttribute('data-id') || rawId;
+                    }
+                }
+                return rawId;
+            }
+
+            function activateHover(rawId) {
+                if (!rawId) return;
+                const id = resolveSvgId(rawId);
                 if (activeHoveredId === id) return;
                 clearHover();
                 activeHoveredId = id;
@@ -1470,12 +1586,70 @@
                 }
 
                 // Highlight parent/endpoint points and labels
-                const relatedPts = (info && info.related_points) ? info.related_points : [id];
+                let relatedPts = (info && info.related_points) ? info.related_points : [id];
+                if (!targetEl && relatedPts.length === 1 && relatedPts[0] === id) {
+                    const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                    const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                    if (segM) relatedPts = [segM[1], segM[2]];
+                    else if (triM) relatedPts = [triM[1], triM[2], triM[3]];
+                }
                 relatedPts.forEach(pid => {
                     const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
                     if (ptEl) ptEl.classList.add('hover');
                     const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
                     if (lblEl) lblEl.classList.add('hover-label');
+                });
+
+                if (typeof document !== 'undefined') {
+                    const sel = rawId === id
+                        ? `.geom-ref[data-ref="${CSS.escape(id)}"]`
+                        : `.geom-ref[data-ref="${CSS.escape(rawId)}"], .geom-ref[data-ref="${CSS.escape(id)}"]`;
+                    document.querySelectorAll(sel).forEach(el => {
+                        el.classList.add('geom-highlight-text');
+                    });
+                }
+            }
+
+            svg._etcController.activateHover = activateHover;
+            svg._etcController.clearHover = clearHover;
+
+            if (document.body && document.documentElement.tagName.toLowerCase() === 'html' && document.body.dataset.etcGeomRefSyncInit !== '1') {
+                document.body.dataset.etcGeomRefSyncInit = '1';
+                function getActiveSvg() {
+                    const activePaneSvg = document.querySelector('.etc-tab-pane.active svg.geometor-etc-drawing');
+                    if (activePaneSvg && activePaneSvg._etcController) return activePaneSvg;
+                    const anySvg = document.querySelector('svg.geometor-etc-drawing');
+                    return (anySvg && anySvg._etcController) ? anySvg : null;
+                }
+                document.body.addEventListener('mouseover', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref]');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.activateHover) {
+                            activeSvg._etcController.activateHover(geomEl.getAttribute('data-ref'));
+                        }
+                        return;
+                    }
+                    const refLink = e.target.closest('a.reference.internal');
+                    if (refLink) {
+                        const txt = (refLink.textContent || '').trim();
+                        const xm = txt.match(/^X\((\d+)\)$/);
+                        if (xm) {
+                            const activeSvg = getActiveSvg();
+                            if (activeSvg && activeSvg._etcController.activateHover) {
+                                activeSvg._etcController.activateHover(`X(${xm[1]})`);
+                            }
+                        }
+                    }
+                });
+                document.body.addEventListener('mouseout', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref], a.reference.internal');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.clearHover) {
+                            activeSvg._etcController.clearHover();
+                        }
+                    }
                 });
             }
 
@@ -2177,9 +2351,38 @@
                         el.style.display = 'none';
                     });
                 }
+                if (typeof document !== 'undefined') {
+                    document.querySelectorAll('.geom-highlight-text').forEach(el => {
+                        el.classList.remove('geom-highlight-text');
+                    });
+                }
             }
 
-            function activateHover(id) {
+            function resolveSvgId(rawId) {
+                if (!rawId) return rawId;
+                if (svg.querySelector(`[data-id="${CSS.escape(rawId)}"]`)) return rawId;
+                const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                if (segM) {
+                    const revId = `[ ${segM[2]} ${segM[1]} ]`;
+                    if (svg.querySelector(`[data-id="${CSS.escape(revId)}"]`)) return revId;
+                }
+                const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                if (triM) {
+                    const pts = [triM[1], triM[2], triM[3]];
+                    if (pts.includes('A') && pts.includes('B') && pts.includes('C')) {
+                        return '< A B C >';
+                    }
+                    const secPoly = graphicsGroup ? graphicsGroup.querySelector('polygon.secondary[data-id]') : null;
+                    if (secPoly) {
+                        return secPoly.getAttribute('data-id') || rawId;
+                    }
+                }
+                return rawId;
+            }
+
+            function activateHover(rawId) {
+                if (!rawId) return;
+                const id = resolveSvgId(rawId);
                 if (activeHoveredId === id) return;
                 clearHover();
                 activeHoveredId = id;
@@ -2197,12 +2400,70 @@
                 }
 
                 // Highlight parent/endpoint points and labels
-                const relatedPts = (info && info.related_points) ? info.related_points : [id];
+                let relatedPts = (info && info.related_points) ? info.related_points : [id];
+                if (!targetEl && relatedPts.length === 1 && relatedPts[0] === id) {
+                    const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                    const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                    if (segM) relatedPts = [segM[1], segM[2]];
+                    else if (triM) relatedPts = [triM[1], triM[2], triM[3]];
+                }
                 relatedPts.forEach(pid => {
                     const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
                     if (ptEl) ptEl.classList.add('hover');
                     const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
                     if (lblEl) lblEl.classList.add('hover-label');
+                });
+
+                if (typeof document !== 'undefined') {
+                    const sel = rawId === id
+                        ? `.geom-ref[data-ref="${CSS.escape(id)}"]`
+                        : `.geom-ref[data-ref="${CSS.escape(rawId)}"], .geom-ref[data-ref="${CSS.escape(id)}"]`;
+                    document.querySelectorAll(sel).forEach(el => {
+                        el.classList.add('geom-highlight-text');
+                    });
+                }
+            }
+
+            svg._etcController.activateHover = activateHover;
+            svg._etcController.clearHover = clearHover;
+
+            if (document.body && document.documentElement.tagName.toLowerCase() === 'html' && document.body.dataset.etcGeomRefSyncInit !== '1') {
+                document.body.dataset.etcGeomRefSyncInit = '1';
+                function getActiveSvg() {
+                    const activePaneSvg = document.querySelector('.etc-tab-pane.active svg.geometor-etc-drawing');
+                    if (activePaneSvg && activePaneSvg._etcController) return activePaneSvg;
+                    const anySvg = document.querySelector('svg.geometor-etc-drawing');
+                    return (anySvg && anySvg._etcController) ? anySvg : null;
+                }
+                document.body.addEventListener('mouseover', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref]');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.activateHover) {
+                            activeSvg._etcController.activateHover(geomEl.getAttribute('data-ref'));
+                        }
+                        return;
+                    }
+                    const refLink = e.target.closest('a.reference.internal');
+                    if (refLink) {
+                        const txt = (refLink.textContent || '').trim();
+                        const xm = txt.match(/^X\((\d+)\)$/);
+                        if (xm) {
+                            const activeSvg = getActiveSvg();
+                            if (activeSvg && activeSvg._etcController.activateHover) {
+                                activeSvg._etcController.activateHover(`X(${xm[1]})`);
+                            }
+                        }
+                    }
+                });
+                document.body.addEventListener('mouseout', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref], a.reference.internal');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.clearHover) {
+                            activeSvg._etcController.clearHover();
+                        }
+                    }
                 });
             }
 
@@ -2904,9 +3165,38 @@
                         el.style.display = 'none';
                     });
                 }
+                if (typeof document !== 'undefined') {
+                    document.querySelectorAll('.geom-highlight-text').forEach(el => {
+                        el.classList.remove('geom-highlight-text');
+                    });
+                }
             }
 
-            function activateHover(id) {
+            function resolveSvgId(rawId) {
+                if (!rawId) return rawId;
+                if (svg.querySelector(`[data-id="${CSS.escape(rawId)}"]`)) return rawId;
+                const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                if (segM) {
+                    const revId = `[ ${segM[2]} ${segM[1]} ]`;
+                    if (svg.querySelector(`[data-id="${CSS.escape(revId)}"]`)) return revId;
+                }
+                const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                if (triM) {
+                    const pts = [triM[1], triM[2], triM[3]];
+                    if (pts.includes('A') && pts.includes('B') && pts.includes('C')) {
+                        return '< A B C >';
+                    }
+                    const secPoly = graphicsGroup ? graphicsGroup.querySelector('polygon.secondary[data-id]') : null;
+                    if (secPoly) {
+                        return secPoly.getAttribute('data-id') || rawId;
+                    }
+                }
+                return rawId;
+            }
+
+            function activateHover(rawId) {
+                if (!rawId) return;
+                const id = resolveSvgId(rawId);
                 if (activeHoveredId === id) return;
                 clearHover();
                 activeHoveredId = id;
@@ -2924,12 +3214,70 @@
                 }
 
                 // Highlight parent/endpoint points and labels
-                const relatedPts = (info && info.related_points) ? info.related_points : [id];
+                let relatedPts = (info && info.related_points) ? info.related_points : [id];
+                if (!targetEl && relatedPts.length === 1 && relatedPts[0] === id) {
+                    const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                    const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                    if (segM) relatedPts = [segM[1], segM[2]];
+                    else if (triM) relatedPts = [triM[1], triM[2], triM[3]];
+                }
                 relatedPts.forEach(pid => {
                     const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
                     if (ptEl) ptEl.classList.add('hover');
                     const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
                     if (lblEl) lblEl.classList.add('hover-label');
+                });
+
+                if (typeof document !== 'undefined') {
+                    const sel = rawId === id
+                        ? `.geom-ref[data-ref="${CSS.escape(id)}"]`
+                        : `.geom-ref[data-ref="${CSS.escape(rawId)}"], .geom-ref[data-ref="${CSS.escape(id)}"]`;
+                    document.querySelectorAll(sel).forEach(el => {
+                        el.classList.add('geom-highlight-text');
+                    });
+                }
+            }
+
+            svg._etcController.activateHover = activateHover;
+            svg._etcController.clearHover = clearHover;
+
+            if (document.body && document.documentElement.tagName.toLowerCase() === 'html' && document.body.dataset.etcGeomRefSyncInit !== '1') {
+                document.body.dataset.etcGeomRefSyncInit = '1';
+                function getActiveSvg() {
+                    const activePaneSvg = document.querySelector('.etc-tab-pane.active svg.geometor-etc-drawing');
+                    if (activePaneSvg && activePaneSvg._etcController) return activePaneSvg;
+                    const anySvg = document.querySelector('svg.geometor-etc-drawing');
+                    return (anySvg && anySvg._etcController) ? anySvg : null;
+                }
+                document.body.addEventListener('mouseover', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref]');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.activateHover) {
+                            activeSvg._etcController.activateHover(geomEl.getAttribute('data-ref'));
+                        }
+                        return;
+                    }
+                    const refLink = e.target.closest('a.reference.internal');
+                    if (refLink) {
+                        const txt = (refLink.textContent || '').trim();
+                        const xm = txt.match(/^X\((\d+)\)$/);
+                        if (xm) {
+                            const activeSvg = getActiveSvg();
+                            if (activeSvg && activeSvg._etcController.activateHover) {
+                                activeSvg._etcController.activateHover(`X(${xm[1]})`);
+                            }
+                        }
+                    }
+                });
+                document.body.addEventListener('mouseout', (e) => {
+                    const geomEl = e.target.closest('.geom-ref[data-ref], a.reference.internal');
+                    if (geomEl) {
+                        const activeSvg = getActiveSvg();
+                        if (activeSvg && activeSvg._etcController.clearHover) {
+                            activeSvg._etcController.clearHover();
+                        }
+                    }
                 });
             }
 
@@ -3015,7 +3363,7 @@
         </div>
         </div>
         <figcaption>
-        <p><span class="caption-text"><strong>X(512) = ISOGONAL CONJUGATE OF X(99)</strong> constructed on acute reference triangle <span class="math notranslate nohighlight">\((a, b, c) = (5, 6, 7)\)</span> with unit baseline <span class="math notranslate nohighlight">\(AB = 1\)</span>.</span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+        <p><span class="caption-text"><strong>X(512) = ISOGONAL CONJUGATE OF X(99)</strong> constructed on acute reference triangle <span class="math notranslate nohighlight">\((a, b, c) = (5, 6, 7)\)</span> with unit baseline <span class="geom-ref" data-ref="[ A B ]" title="[ A B ]">AB</span> = <span class="math notranslate nohighlight">\(1\)</span>.</span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
         </figcaption>
         </figure>
         <div class="geom-signature geom-signature-center">
@@ -3029,7 +3377,7 @@
         <div class="book-collapse-body">
         <ul class="simple">
         <li><p><strong>Trilinears:</strong> <span class="math notranslate nohighlight">\(\sin A (\cos 2B - \cos 2C) : :\)</span></p></li>
-        <li><p><strong>Barycentrics:</strong> <span class="math notranslate nohighlight">\(SB^2 - SC^2 : :\)</span></p></li>
+        <li><p><strong>Barycentrics:</strong> <span class="math notranslate nohighlight">\(S_{B}^{2} - S_{C}^{2} : :\)</span></p></li>
         </ul>
         </div>
         </details>
@@ -3037,13 +3385,10 @@
         <summary class="book-collapse-summary"><span class="book-collapse-title"><span class="collapse-icon">▸</span> Linear Combinations</span><span class="book-collapse-badge">1 combination</span></summary>
         <div class="book-collapse-body">
         <ul class="simple">
-        <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = P(1) - U(1)</p></li>
+        <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = <span class="math notranslate nohighlight">\(P(1) - U(1)\)</span></p></li>
         </ul>
         </div>
         </details>
-        <div class="note-item docutils container">
-        <p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> lies.</p>
-        </div>
         <details class="book-collapse line-catalog">
         <summary class="book-collapse-summary"><span class="book-collapse-title"><span class="collapse-icon">▸</span> Incident Central Lines</span><span class="book-collapse-badge">59 lines</span></summary>
         <div class="book-collapse-body">
@@ -3054,7 +3399,7 @@
         <summary class="book-collapse-summary"><span class="book-collapse-title"><span class="collapse-icon">▸</span> Functional Relations</span><span class="book-collapse-badge">47 relations</span></summary>
         <div class="book-collapse-body">
         <ul class="simple">
-        <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = <a class="term-ref glossary-term" id="occ-term-isogonal-conjugate-1" href="../../glossary.html#term-isogonal-conjugate" data-term="isogonal-conjugate" title="isogonal conjugate: Let P = p : q : r be a point not on a sideline of ABC. Let L(A) be the line obtained by reflecting line AP in the internal bisector of angle A. Define L(B) and L(B) cyclically. The lines L(A), L(B), L(C) concur in the isogonal conjugate of P, which has trilinears 1/p : 1/q : 1/r and is denoted by P -1 . See isoconjugate .">isogonal conjugate</a> of <a class="reference internal" href="../x-00099/index.html#x-99" title="X(99): Let LA be the reflection of the line X(3)X(6) in line BC, and define LB and LC cyclically. Let A' = LB∩LC, B' = LC∩LA, C' = LA∩LB. The lines AA', BB', CC' concur in X(99). (Randy…"><span class="std std-ref">X(99)</span></a></p></li>
+        <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = <a class="term-ref glossary-term" id="occ-term-isogonal-conjugate-1" href="../../glossary.html#term-isogonal-conjugate" data-term="isogonal-conjugate" title="isogonal conjugate: Let P = p : q : r be a point not on a sideline of ABC. Let L(A) be the line obtained by reflecting line AP in the internal bisector of angle A. Define L(B) and L(B) cyclically. The lines L(A), L(B), L(C) concur in the isogonal conjugate of P, which has trilinears 1/p : 1/q : 1/r and is denoted by P -1 . See isoconjugate .">isogonal conjugate</a> of <a class="reference internal" href="../x-00099/index.html#x-99" title="X(99): Let L_{A} be the reflection of the line X(3)X(6) in line BC, and define L_{B} and L_{C} cyclically. Let A' = L_{B}∩L_{C}, B' = L_{C}∩L_{A}, C' = L_{A}∩L_{B}. The lines AA', BB'…"><span class="std std-ref">X(99)</span></a></p></li>
         <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = <a class="term-ref glossary-term" id="occ-term-isotomic-conjugate-1" href="../../glossary.html#term-isotomic-conjugate" data-term="isotomic-conjugate" title="isotomic conjugate: Let P = p : q : r be a point not on a sideline of ABC. Let A&#x27;, B&#x27;, C&#x27; be the points where lines AP, BP, CP meet lines BC, CA, AB, respectively. Reflect A&#x27;, B&#x27;, C&#x27; about the midpoints of sides BC, CA, AB, respectively, to obtain points A&quot;, B&quot;, C&quot;. Then lines AA&quot;, BB&quot;, CC&quot; concur in the isotomic conjugate of P, which has trilinears 1/(pa 2 ) : 1/(qb 2 ) :...">isotomic conjugate</a> of <a class="reference internal" href="../x-00670/index.html#x-670" title="X(670): X(670) = isogonal conjugate of X(669)"><span class="std std-ref">X(670)</span></a></p></li>
         <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = <a class="term-ref glossary-term" id="occ-term-anticomplementary-conjugate-1" href="../../glossary.html#term-anticomplementary-conjugate" data-term="anticomplementary-conjugate" title="anticomplementary conjugate: Let P = p : q : r and U = u : v : w be points, neither lying on a sideline of ABC. The P-anticomplementary conjugate of U is the point where Let f(X) be the anticomplement of X, given by and let k be P-isoconjugation. The P-anticomplementary conjugate of U is &quot;what you do to f(X) to make f(k(X)) when f(X) = U.&quot; If P = incenter, then P-anticomplementary...">anticomplementary conjugate</a> of <a class="reference internal" href="../x-00148/index.html#x-148" title="X(148): X(148) = isogonal conjugate of X(9217)"><span class="std std-ref">X(148)</span></a></p></li>
         <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = <a class="term-ref glossary-term" id="occ-term-complementary-conjugate-1" href="../../glossary.html#term-complementary-conjugate" data-term="complementary-conjugate" title="complementary conjugate: Let P = p : q : r and U = u : v : w be points, neither lying on a sideline of ABC. The P-complementary conjugate of U is the point where Let f(X) be the complement of X, given by and let k be P-isoconjugation. The P-complementary conjugate of U is &quot;what you do to f(X) to make f(k(X)) when f(X) = U.&quot; If P = incenter, then P-complementary conjugate is...">complementary conjugate</a> of <a class="reference internal" href="../x-00115/index.html#x-115" title="X(115): The circumcircle of the incentral triangle intersects the nine-point circle at 2 points, X(11) and X(115), and X(115) lies on the incentral circle and the cevian circle of every…"><span class="std std-ref">X(115)</span></a></p></li>
@@ -3073,28 +3418,28 @@
         <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = ideal point of PU(26)</p></li>
         <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = vertex conjugate of PU(2)</p></li>
         <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = vertex conjugate of <a class="reference internal" href="../x-00006/index.html#x-6" title="X(6): X(6) is the point of concurrence of the symmedians (i.e., reflections of medians in corresponding angle bisectors). X(6) is the point which, when given by actual trilinear…"><span class="std std-ref">X(6)</span></a> and <a class="reference internal" href="../x-00187/index.html#x-187" title="X(187): Let L denote the line having trilinears of X(187) as coefficients. Then L is the line passing through X(2) perpendicular to the Euler line."><span class="std std-ref">X(187)</span></a></p></li>
-        <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = <a class="term-ref glossary-term" id="occ-term-trilinear-pole-1" href="../../glossary.html#term-trilinear-pole" data-term="trilinear-pole" title="trilinear pole: The trilinear pole of the line ux + vy + wz = 0 is the point wv : uw : uv. Geometrically, the trilinear pole of a line PU is the perspector of ABC and the vertex-triangle of the anticevian triangles of P and U. (Randy Hutson, April 9, 2016)">trilinear pole</a> of line <a class="reference internal" href="../x-00351/index.html#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a><a class="reference internal" href="../x-00865/index.html#x-865" title="X(865): As a point on the Euler line, X(865) has Shinagawa coefficients ((E + F)3F - (7E - 2F)FS2 + S4, -(E + F)4 + 2(E + F)(2E - F)S2 - S4)."><span class="std std-ref">X(865)</span></a> (line is tangent to Steiner inellipse at X(1084))</p></li>
-        <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = perspector of hyperbola {A,B,C,<a class="reference internal" href="../x-00002/index.html#x-2" title="X(2): X(2) is the point of concurrence of the medians of ABC, situated 1/3 of the distance from each vertex to the midpoint of the opposite side. More generally, if L is any line in the…"><span class="std std-ref">X(2)</span></a>,<a class="reference internal" href="../x-00006/index.html#x-6" title="X(6): X(6) is the point of concurrence of the symmedians (i.e., reflections of medians in corresponding angle bisectors). X(6) is the point which, when given by actual trilinear…"><span class="std std-ref">X(6)</span></a>} (circumconic centered at X(1084))</p></li>
+        <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = <a class="term-ref glossary-term" id="occ-term-trilinear-pole-1" href="../../glossary.html#term-trilinear-pole" data-term="trilinear-pole" title="trilinear pole: The trilinear pole of the line ux + vy + wz = 0 is the point wv : uw : uv. Geometrically, the trilinear pole of a line PU is the perspector of ABC and the vertex-triangle of the anticevian triangles of P and U. (Randy Hutson, April 9, 2016)">trilinear pole</a> of line <a class="reference internal" href="../x-00351/index.html#x-351" title="X(351): X(351) is the center of the Parry circle introduced in TCCT (Art. 8.13) as the circle that passes through X(i) for I = 2, 15, 16, 23, 110, 111, 352, 353."><span class="std std-ref">X(351)</span></a><a class="reference internal" href="../x-00865/index.html#x-865" title="X(865): As a point on the Euler line, X(865) has Shinagawa coefficients ((E + F)^{3}F - (7E - 2F)FS^{2} + S^{4}, -(E + F)^{4} + 2(E + F)(2E - F)S^{2} - S^{4})."><span class="std std-ref">X(865)</span></a> (line is tangent to Steiner inellipse at X(1084))</p></li>
+        <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = perspector of hyperbola {<span class="geom-ref" data-ref="A" title="A">A</span>, <span class="geom-ref" data-ref="B" title="B">B</span>, <span class="geom-ref" data-ref="C" title="C">C</span>,<a class="reference internal" href="../x-00002/index.html#x-2" title="X(2): X(2) is the point of concurrence of the medians of ABC, situated 1/3 of the distance from each vertex to the midpoint of the opposite side. More generally, if L is any line in the…"><span class="std std-ref">X(2)</span></a>,<a class="reference internal" href="../x-00006/index.html#x-6" title="X(6): X(6) is the point of concurrence of the symmedians (i.e., reflections of medians in corresponding angle bisectors). X(6) is the point which, when given by actual trilinear…"><span class="std std-ref">X(6)</span></a>} (circumconic centered at X(1084))</p></li>
         <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = intercept of Lemoine axis and the line at infinity (<a class="term-ref glossary-term" id="occ-term-trilinear-polar-1" href="../../glossary.html#term-trilinear-polar" data-term="trilinear-polar" title="trilinear polar: The trilinear polar of a point p : q : r is the line">trilinear polars</a> of <a class="reference internal" href="../x-00006/index.html#x-6" title="X(6): X(6) is the point of concurrence of the symmedians (i.e., reflections of medians in corresponding angle bisectors). X(6) is the point which, when given by actual trilinear…"><span class="std std-ref">X(6)</span></a> and <a class="reference internal" href="../x-00002/index.html#x-2" title="X(2): X(2) is the point of concurrence of the medians of ABC, situated 1/3 of the distance from each vertex to the midpoint of the opposite side. More generally, if L is any line in the…"><span class="std std-ref">X(2)</span></a>)</p></li>
         <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = center of circumconic that is locus of trilinear poles of lines passing through X(1084)</p></li>
-        <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = perspector of ABC and the dual of the 1st Brocard triangle</p></li>
+        <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = perspector of <span class="geom-ref" data-ref="&lt; A B C &gt;" title="&lt; A B C &gt;">ABC</span> and the dual of the 1st Brocard triangle</p></li>
         <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = <a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a>-of-2nd-Brocard triangle</p></li>
-        <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = <a class="reference internal" href="../x-00690/index.html#x-690" title="X(690): Let NaNbNc and Na'Nb'Nc' be the outer and inner Napoleon triangles, respectively. Let A' be the isogonal conjugate of Na wrt Na'Nb'Nc', and define B' and C' cyclically. Let A″ be…"><span class="std std-ref">X(690)</span></a>-of-orthocentroidal-triangle</p></li>
-        <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = <a class="reference internal" href="../x-00690/index.html#x-690" title="X(690): Let NaNbNc and Na'Nb'Nc' be the outer and inner Napoleon triangles, respectively. Let A' be the isogonal conjugate of Na wrt Na'Nb'Nc', and define B' and C' cyclically. Let A″ be…"><span class="std std-ref">X(690)</span></a>-of <a class="reference internal" href="../x-00004/index.html#x-4" title="X(4): X(4) is the point of concurrence of the altitudes of ABC."><span class="std std-ref">X(4)</span></a>-Brocard-triangle</p></li>
+        <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = <a class="reference internal" href="../x-00690/index.html#x-690" title="X(690): Let N_{a}N_{b}N_{c} and N_{a}'N_{b}'N_{c}' be the outer and inner Napoleon triangles, respectively. Let A' be the isogonal conjugate of N_{a} wrt N_{a}'N_{b}'N_{c}', and define B'…"><span class="std std-ref">X(690)</span></a>-of-orthocentroidal-triangle</p></li>
+        <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = <a class="reference internal" href="../x-00690/index.html#x-690" title="X(690): Let N_{a}N_{b}N_{c} and N_{a}'N_{b}'N_{c}' be the outer and inner Napoleon triangles, respectively. Let A' be the isogonal conjugate of N_{a} wrt N_{a}'N_{b}'N_{c}', and define B'…"><span class="std std-ref">X(690)</span></a>-of <a class="reference internal" href="../x-00004/index.html#x-4" title="X(4): X(4) is the point of concurrence of the altitudes of ABC."><span class="std std-ref">X(4)</span></a>-Brocard-triangle</p></li>
         <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = orthic isogonal conjugate of <a class="reference internal" href="../x-00115/index.html#x-115" title="X(115): The circumcircle of the incentral triangle intersects the nine-point circle at 2 points, X(11) and X(115), and X(115) lies on the incentral circle and the cevian circle of every…"><span class="std std-ref">X(115)</span></a></p></li>
         <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = incentral isogonal conjugate of <a class="reference internal" href="../x-00115/index.html#x-115" title="X(115): The circumcircle of the incentral triangle intersects the nine-point circle at 2 points, X(11) and X(115), and X(115) lies on the incentral circle and the cevian circle of every…"><span class="std std-ref">X(115)</span></a></p></li>
         <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = incentral isotomic conjugate of X(2643)</p></li>
-        <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = <a class="reference internal" href="../x-00006/index.html#x-6" title="X(6): X(6) is the point of concurrence of the symmedians (i.e., reflections of medians in corresponding angle bisectors). X(6) is the point which, when given by actual trilinear…"><span class="std std-ref">X(6)</span></a>-<a class="term-ref glossary-term" id="occ-term-isoconjugate-1" href="../../glossary.html#term-isoconjugate" data-term="isoconjugate" title="isoconjugate: Let P = p : q : r and U = u : v : w be points, neither on a sideline of ABC. The P-isoconjugate of U is the point Examples: the isogonal conjugate of U is the X(1)-isoconjugate of U, and the isotomic conjugate of U is the X(31)-isoconjugate of U. As suggested by the meaning of the prefix &quot;iso&quot;, P-isoconjugate of U = U-isoconjugate of P. Let A&#x27;B&#x27;C&#x27; be the...">isoconjugate</a> of <a class="reference internal" href="../x-00799/index.html#x-799" title="X(799): Let La be the A-extraversion of line X(1)X(75), and define Lb and Lc cyclically. Let A' = Lb ∩ Lc, and define B' and C' cyclically. The lines AA', BB', CC' concur in X(799)…"><span class="std std-ref">X(799)</span></a></p></li>
-        <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = <a class="reference internal" href="../x-00092/index.html#x-92" title="X(92): Suppose that T = A'B'C' is a central triangle. Let A'' be the pole with respect to the polar circle of the line B'C', and define B'' and C'' cyclically. The appearance of T in the…"><span class="std std-ref">X(92)</span></a>-isoconjugate of X(4558)</p></li>
+        <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = <a class="reference internal" href="../x-00006/index.html#x-6" title="X(6): X(6) is the point of concurrence of the symmedians (i.e., reflections of medians in corresponding angle bisectors). X(6) is the point which, when given by actual trilinear…"><span class="std std-ref">X(6)</span></a>-<a class="term-ref glossary-term" id="occ-term-isoconjugate-1" href="../../glossary.html#term-isoconjugate" data-term="isoconjugate" title="isoconjugate: Let P = p : q : r and U = u : v : w be points, neither on a sideline of ABC. The P-isoconjugate of U is the point Examples: the isogonal conjugate of U is the X(1)-isoconjugate of U, and the isotomic conjugate of U is the X(31)-isoconjugate of U. As suggested by the meaning of the prefix &quot;iso&quot;, P-isoconjugate of U = U-isoconjugate of P. Let A&#x27;B&#x27;C&#x27; be the...">isoconjugate</a> of <a class="reference internal" href="../x-00799/index.html#x-799" title="X(799): Let L_{a} be the A-extraversion of line X(1)X(75), and define L_{b} and L_{c} cyclically. Let A' = L_{b} ∩ L_{c}, and define B' and C' cyclically. The lines AA', BB', CC' concur…"><span class="std std-ref">X(799)</span></a></p></li>
+        <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = <a class="reference internal" href="../x-00092/index.html#x-92" title="X(92): Suppose that T = A'B'C' is a central triangle. Let A″ be the pole with respect to the polar circle of the line B'C', and define B″ and C″ cyclically. The appearance of T in the…"><span class="std std-ref">X(92)</span></a>-isoconjugate of X(4558)</p></li>
         <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = exsimilicenter of antipedal circles of PU(1)</p></li>
         <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = harmonic center of antipedal circles of PU(1)</p></li>
         <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = trilinear pole of PU(105)</p></li>
         <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = bicentric difference of PU(191)</p></li>
         <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = ideal point of PU(191)</p></li>
-        <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = perspector of ABC and <a class="term-ref glossary-term" id="occ-term-unary-cofactor-triangle-1" href="../../glossary.html#term-unary-cofactor-triangle" data-term="unary-cofactor-triangle" title="unary cofactor triangle: Let P i = x i : y i : z i , for i=1,2,3, be points. The A-vertex of the unary cofactor triangle is the point The B-vertex and C-vertex are defined cyclically. The vertices are the isogonal conjugates of the the vertices of the line-polar triangle of the points P i . If T is a triangle and U(T) its unary cofactor triangle, then U(U(T)) = T, and T and U(T)...">unary cofactor triangle</a> of Steiner triangle</p></li>
-        <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = <a class="reference internal" href="../x-00690/index.html#x-690" title="X(690): Let NaNbNc and Na'Nb'Nc' be the outer and inner Napoleon triangles, respectively. Let A' be the isogonal conjugate of Na wrt Na'Nb'Nc', and define B' and C' cyclically. Let A″ be…"><span class="std std-ref">X(690)</span></a> of 4th anti-Brocard triangle</p></li>
-        <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = Thomson-isogonal conjugate of <a class="reference internal" href="../x-00098/index.html#x-98" title="X(98): Let A' be the apex of the isosceles triangle BA'C constructed inward on BC such that ∠A'BC = ∠A'CB = ω. Define B' nad C' cyclically. Let Ha be the orthocenter of BA'C, and define…"><span class="std std-ref">X(98)</span></a></p></li>
-        <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = Lucas-isogonal conjugate of <a class="reference internal" href="../x-00098/index.html#x-98" title="X(98): Let A' be the apex of the isosceles triangle BA'C constructed inward on BC such that ∠A'BC = ∠A'CB = ω. Define B' nad C' cyclically. Let Ha be the orthocenter of BA'C, and define…"><span class="std std-ref">X(98)</span></a></p></li>
+        <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = perspector of <span class="geom-ref" data-ref="&lt; A B C &gt;" title="&lt; A B C &gt;">ABC</span> and <a class="term-ref glossary-term" id="occ-term-unary-cofactor-triangle-1" href="../../glossary.html#term-unary-cofactor-triangle" data-term="unary-cofactor-triangle" title="unary cofactor triangle: Let P i = x i : y i : z i , for i=1,2,3, be points. The A-vertex of the unary cofactor triangle is the point The B-vertex and C-vertex are defined cyclically. The vertices are the isogonal conjugates of the the vertices of the line-polar triangle of the points P i . If T is a triangle and U(T) its unary cofactor triangle, then U(U(T)) = T, and T and U(T)...">unary cofactor triangle</a> of Steiner triangle</p></li>
+        <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = <a class="reference internal" href="../x-00690/index.html#x-690" title="X(690): Let N_{a}N_{b}N_{c} and N_{a}'N_{b}'N_{c}' be the outer and inner Napoleon triangles, respectively. Let A' be the isogonal conjugate of N_{a} wrt N_{a}'N_{b}'N_{c}', and define B'…"><span class="std std-ref">X(690)</span></a> of 4th anti-Brocard triangle</p></li>
+        <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = Thomson-isogonal conjugate of <a class="reference internal" href="../x-00098/index.html#x-98" title="X(98): Let A' be the apex of the isosceles triangle BA'C constructed inward on BC such that ∠A'BC = ∠A'CB = ω. Define B' nad C' cyclically. Let H_{a} be the orthocenter of BA'C, and…"><span class="std std-ref">X(98)</span></a></p></li>
+        <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = Lucas-isogonal conjugate of <a class="reference internal" href="../x-00098/index.html#x-98" title="X(98): Let A' be the apex of the isosceles triangle BA'C constructed inward on BC such that ∠A'BC = ∠A'CB = ω. Define B' nad C' cyclically. Let H_{a} be the orthocenter of BA'C, and…"><span class="std std-ref">X(98)</span></a></p></li>
         <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = Cundy-Parry Psi transform of X(14265)</p></li>
         <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = barycentric product <a class="reference internal" href="../x-00004/index.html#x-4" title="X(4): X(4) is the point of concurrence of the altitudes of ABC."><span class="std std-ref">X(4)</span></a>*<a class="reference internal" href="../x-00647/index.html#x-647" title="X(647): X(647) is the point whose trilinears are coefficients for the Euler line."><span class="std std-ref">X(647)</span></a></p></li>
         <li><p><a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a> = barycentric product of Jerabek hyperbola intercepts of orthic axis</p></li>
@@ -3107,7 +3452,7 @@
         <section class="level-2" id="notes">
         <h2>Notes<a class="headerlink" href="#notes" title="Link to this heading">¶</a></h2>
         <div class="note-item docutils container">
-        <p>Let A’B’C’ be the 1st Brocard triangle. Let La be the reflection of B’C’ in the internal angle bisector of vertex angle A, and define Lb and Lc cyclically. Then the lines La, Lb, Lc are parallel, and they concur in <a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a>. (<a class="person-ref" id="occ-person-randy-hutson-1" href="../../persons.html#person-randy-hutson" data-person="randy-hutson" title="Randy Hutson (fl. 2011–present) — Prolific contributor to the ETC, specializing in synthetic constructions, perspective triangles, radical centers, and conjugate relationships.">Randy Hutson</a>, September 5, 2015)</p>
+        <p>Let <span class="geom-ref" data-ref="&lt; A' B' C' &gt;" title="&lt; A&#x27; B&#x27; C&#x27; &gt;">A'B'C'</span> be the 1st Brocard triangle. Let <span class="geom-ref" data-ref="L_a" title="L_a">L<sub>a</sub></span> be the reflection of <span class="geom-ref" data-ref="[ B' C' ]" title="[ B&#x27; C&#x27; ]">B'C'</span> in the internal angle bisector of vertex angle <span class="geom-ref" data-ref="A" title="A">A</span>, and define <span class="geom-ref" data-ref="L_b" title="L_b">L<sub>b</sub></span> and <span class="geom-ref" data-ref="L_c" title="L_c">L<sub>c</sub></span> cyclically. Then the lines <span class="geom-ref" data-ref="L_a" title="L_a">L<sub>a</sub></span>, <span class="geom-ref" data-ref="L_b" title="L_b">L<sub>b</sub></span>, <span class="geom-ref" data-ref="L_c" title="L_c">L<sub>c</sub></span> are parallel, and they concur in <a class="reference internal" href="#x-512" title="X(512): X(512) is the point in which the line of the 1st and 2nd Brocard points meets the line at infinity."><span class="std std-ref">X(512)</span></a>. (<a class="person-ref" id="occ-person-randy-hutson-1" href="../../persons.html#person-randy-hutson" data-person="randy-hutson" title="Randy Hutson (fl. 2011–present) — Prolific contributor to the ETC, specializing in synthetic constructions, perspective triangles, radical centers, and conjugate relationships.">Randy Hutson</a>, September 5, 2015)</p>
         </div>
         <div class="toctree-wrapper compound">
         </div>
@@ -3200,7 +3545,7 @@
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=360bc84d"></script>
+  <script src="../../_static/documentation_options.js?v=fd825880"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>

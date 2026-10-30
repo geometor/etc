@@ -12,7 +12,7 @@ X(544) = DIRECTION OF VECTOR AX + BX + CX, where X = X(101) — Code
    :alt: X(544) = DIRECTION OF VECTOR AX + BX + CX, where X = X(101)
    :align: center
 
-   **X(544) = DIRECTION OF VECTOR AX + BX + CX, where X = X(101)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(544) = DIRECTION OF VECTOR AX + BX + CX, where X = X(101)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -10,26 +10,23 @@ X(128) = X(74)-OF-ORTHIC-TRIANGLE
 
 .. enunciation::
 
-   Barycentrics g(A,B,C) : g(B,C,A) : g(C,A,B) where g(A,B,C) = (sin A) f(A,B,C)
+   :ref:`X(128) <X(128)>` = :ref:`X(74) <X(74)>`-of-:term:`orthic triangle <orthic-triangle>`.
 
 .. figure:: x-00128.svg
    :alt: X(128) = X(74)-OF-ORTHIC-TRIANGLE
    :align: center
 
-   **X(128) = X(74)-OF-ORTHIC-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(128) = X(74)-OF-ORTHIC-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where, f(A,B,C) = (sec A)(cos 2B + cos 2C)(1 + 2 cos 2A)(cos 2A + 2 cos 2B cos 2C)
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = (\sec A)(\cos 2B + \cos 2C)(1 + 2 \cos 2A)(\cos 2A + 2 \cos 2B \cos 2C)`
+   | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where :math:`g(A,B,C) = (\sin A) f(A,B,C)`
    | **Search Value (6, 9, 13):** :math:`4.231492060175`
 
 .. container:: note-item
 
    :ref:`X(128) <X(128)>` lies on the nine-point circle
-
-.. container:: note-item
-
-   :ref:`X(128) <X(128)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines
@@ -40,7 +37,7 @@ X(128) = X(74)-OF-ORTHIC-TRIANGLE
 .. collapse:: Functional Relations
    :badge: 11 relations
 
-   * :ref:`X(128) <X(128)>` = :ref:`X(74) <X(74)>`-of-:term:`orthic triangle <orthic-triangle>`.
+   * :ref:`X(128) <X(128)>` = :ref:`X(74) <X(74)>`-of-orthic triangle.
    * :ref:`X(128) <X(128)>` = reflection of :ref:`X(137) <X(137)>` in :ref:`X(5) <X(5)>`
    * :ref:`X(128) <X(128)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(15401)
    * :ref:`X(128) <X(128)>` = :term:`complement <complement>` of X(1141)
@@ -50,7 +47,7 @@ X(128) = X(74)-OF-ORTHIC-TRIANGLE
    * :ref:`X(128) <X(128)>` = inverse-in-polar-circle of X(2383)
    * :ref:`X(128) <X(128)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(231) <X(231)>`
    * :ref:`X(128) <X(128)>` = :term:`orthojoin <orthojoin>` of :ref:`X(231) <X(231)>`
-   * :ref:`X(128) <X(128)>` = excentral-to-ABC :term:`functional image <functional-image>` of :ref:`X(74) <X(74)>`
+   * :ref:`X(128) <X(128)>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X(74) <X(74)>`
 
 .. toctree::
    :hidden:

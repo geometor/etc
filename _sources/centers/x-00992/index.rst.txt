@@ -12,17 +12,13 @@ X(992) = INTERSECTION OF LINES X(2)X(6) AND X(9)X(39)
    :alt: X(992) = INTERSECTION OF LINES X(2)X(6) AND X(9)X(39)
    :align: center
 
-   **X(992) = INTERSECTION OF LINES X(2)X(6) AND X(9)X(39)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(992) = INTERSECTION OF LINES X(2)X(6) AND X(9)X(39)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = a\ :sup:`3`\ (b + c) + a\ :sup:`2`\ (b\ :sup:`2` + c\ :sup:`2`) - abc(b + c) - bc(b + c)\ :sup:`2`
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
-   | **Search Value (6, 9, 13):** :math:`47.057524952315`
-
-.. container:: note-item
-
-   :ref:`X(992) <X(992)>` lies.
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a^{3}(b + c) + a^{2}(b^{2} + c^{2}) - abc(b + c) - bc(b + c)^{2}`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
+   | **Search Value (6, 9, 13):** :math:`47.057524952314`
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines

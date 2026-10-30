@@ -16,22 +16,18 @@ X(198) = X(9)-CEVA CONJUGATE OF X(6)
    :alt: X(198) = X(9)-CEVA CONJUGATE OF X(6)
    :align: center
 
-   **X(198) = X(9)-CEVA CONJUGATE OF X(6)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(198) = X(9)-CEVA CONJUGATE OF X(6)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = a(cos B + cos C - cos A - 1)
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = a(\cos B + \cos C - \cos A - 1)`
    | **Search Value (6, 9, 13):** :math:`-13.649689379823`
 
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
-   * **Trilinears:** :math:`a (a^3 + a^2 (b + c) - a (b + c)^2 - (b - c)^2 (b + c)) : :`
+   * **Trilinears:** :math:`a (a^{3} + a^{2} (b + c) - a (b + c)^{2} - (b - c)^{2} (b + c)) : :`
    * **Trilinears:** :math:`s \cos A - r \cot(A/2) : :`
-
-.. container:: note-item
-
-   :ref:`X(198) <X(198)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 13 lines

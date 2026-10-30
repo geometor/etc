@@ -12,7 +12,7 @@ X(73) = CROSSPOINT OF INCENTER AND CIRCUMCENTER — Code
    :alt: X(73) = CROSSPOINT OF INCENTER AND CIRCUMCENTER
    :align: center
 
-   **X(73) = CROSSPOINT OF INCENTER AND CIRCUMCENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(73) = CROSSPOINT OF INCENTER AND CIRCUMCENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

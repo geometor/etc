@@ -10,22 +10,24 @@ X(327) = ISOTOMIC CONJUGATE OF X(182)
 
 .. enunciation::
 
-   Barycentrics csc A sec(A - ω) : csc B sec(B - ω) : csc C sec(C - ω)
+   :ref:`X(327) <X(327)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(34396)
 
 .. figure:: x-00327.svg
    :alt: X(327) = ISOTOMIC CONJUGATE OF X(182)
    :align: center
 
-   **X(327) = ISOTOMIC CONJUGATE OF X(182)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(327) = ISOTOMIC CONJUGATE OF X(182)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\csc^{2}A \sec(A - \omega ) : \csc^{2}B \sec(B - \omega ) : \csc^{2}C \sec(C - \omega ), = \sin A \csc(2A - 2 \omega ): \sin B \csc(2B - 2 \omega ) : \sin C \csc(2C - 2 \omega )`
+   | **Trilinears:** :math:`\csc^{2} A \sec(A - \omega ) : \csc^{2} B \sec(B - \omega ) : \csc^{2} C \sec(C - \omega )`
+   | **Barycentrics:** :math:`\csc A \sec(A - \omega ) : \csc B \sec(B - \omega ) : \csc C \sec(C - \omega )`
    | **Search Value (6, 9, 13):** :math:`-9.548082449486`
 
-.. container:: note-item
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-   :ref:`X(327) <X(327)>` lies.
+   * **Trilinears:** :math:`\sin A \csc(2A - 2 \omega ): \sin B \csc(2B - 2 \omega ) : \sin C \csc(2C - 2 \omega )`
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines
@@ -36,7 +38,7 @@ X(327) = ISOTOMIC CONJUGATE OF X(182)
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X(327) <X(327)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(34396)
+   * :ref:`X(327) <X(327)>` = isogonal conjugate of X(34396)
    * :ref:`X(327) <X(327)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(182) <X(182)>`
    * :ref:`X(327) <X(327)>` = :term:`cevapoint <cevapoint>` of :ref:`X(2) <X(2)>` and X(1352)
    * :ref:`X(327) <X(327)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(850) <X(850)>`\ X(2525)

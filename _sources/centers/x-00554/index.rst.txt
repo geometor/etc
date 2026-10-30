@@ -10,13 +10,13 @@ X(554) = (X(1),X(13))-ANSWER TO QUESTION A
 
 .. enunciation::
 
-   Let A' = (XY\ :sub:`A` intersect BC), and define B' and C' cyclically. In
+   Let :g:`A' <A'>` = (:g:`XY_{A} <[ X Y_A ]>` intersect :g:`BC <[ B C ]>`), and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. In
 
 .. figure:: x-00554.svg
    :alt: X(554) = (X(1),X(13))-ANSWER TO QUESTION A
    :align: center
 
-   **X(554) = (X(1),X(13))-ANSWER TO QUESTION A** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(554) = (X(1),X(13))-ANSWER TO QUESTION A** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,11 +27,11 @@ X(554) = (X(1),X(13))-ANSWER TO QUESTION A
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`(a + b - c)*(a - b + c)*(a + 2*b + 2*c) + 2*\sqrt{3}*a*S : :`
+   * **Barycentrics:** :math:`(a + b - c) \cdot (a - b + c) \cdot (a + 2 b + 2 c) + 2 \sqrt{3} a S : :`
 
 .. container:: note-item
 
-   :ref:`X(554) <X(554)>` lies on the circumconic {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(7) <X(7)>`}}, the cubics K134 and K419b.
+   :ref:`X(554) <X(554)>` lies on the circumconic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(7) <X(7)>`}}, the cubics K134 and K419b.
 
 .. collapse:: Incident Central Lines
    :badge: 22 lines
@@ -59,16 +59,16 @@ Notes
 
    Suppose that X and Y are :term:`triangle centers <triangle-center>`. Let
 
-   Y\ :sub:`A` = (Y of the triangle XBC),
+   :g:`Y_{A} <Y_A>` = (Y of the triangle :g:`XBC << X B C >>`),
 
-      * Y\ :sub:`B` = (Y of the triangle XCA),
-      * Y\ :sub:`C` = (Y of the triangle XAB).
+      * :g:`Y_{B} <Y_B>` = (Y of the triangle :g:`XCA << X C A >>`),
+      * :g:`Y_{C} <Y_C>` = (Y of the triangle :g:`XAB << X A B >>`).
 
 .. container:: note-item
 
    **Clark Kimberling,** ":term:`Major Centers <major-center>` of Triangles," *Amer. Math. Monthly* 104 (1997) 431-438,
 
-   Question A is this: *for what choices of X and Y do the lines AA', BB', CC' concur?* A solution (X,Y) will here be called the *(X,Y)-answer to Question A.* :ref:`X(554) <X(554)>` is the (:ref:`X(1) <X(1)>`,\ :ref:`X(13) <X(13)>`)-answer to Question A. (In the reference, see (9) on page 435, with Y = :ref:`X(13) <X(13)>`.)
+   Question A is this: *for what choices of :g:`X <X>` and Y do the lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur?* A solution (X,Y) will here be called the *(X,Y)-answer to Question A.* :ref:`X(554) <X(554)>` is the (:ref:`X(1) <X(1)>`,\ :ref:`X(13) <X(13)>`)-answer to Question A. (In the reference, see (9) on page 435, with Y = :ref:`X(13) <X(13)>`.)
 
 .. toctree::
    :hidden:

@@ -10,27 +10,28 @@ X(136) = INTERSECTION OF LINE X(4)X(110) AND X(25)X(132)
 
 .. enunciation::
 
-   Barycentrics af(A,B,C) : bf(B,C,A) : cf(C,A,B)
+   :ref:`X(136) <X(136)>` =\ :ref:`X(109) <X(109)>`-of-:term:`orthic triangle <orthic-triangle>` if :g:`ABC << A B C >>` is acute
 
 .. figure:: x-00136.svg
    :alt: X(136) = INTERSECTION OF LINE X(4)X(110) AND X(25)X(132)
    :align: center
 
-   **X(136) = INTERSECTION OF LINE X(4)X(110) AND X(25)X(132)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(136) = INTERSECTION OF LINE X(4)X(110) AND X(25)X(132)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where, f(A,B,C) = (sec A)[(sin 2B - sin 2C)\ :sup:`2`](sin 2B + sin 2C - sin 2A) u(A,B,C),, u(A,B,C) = [sin\ :sup:`2`\ (2B) + sin\ :sup:`2`\ (2C) - sin\ :sup:`2`\ (2A)]
-   | **Barycentrics:** :math:`(b^2 - c^2)^2 (a^4 + b^4 + c^4 - 2 a^2 b^2 - 2 a^2 c^2)/(a^2 - b^2 - c^2) : :`
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = (\sec A)[(\sin 2B - \sin 2C)^{2}](\sin 2B + \sin 2C - \sin 2A) u(A,B,C)`, :math:`u(A,B,C) = [\sin^{2}(2B) + \sin^{2}(2C) - \sin^{2}(2A)]`
+   | **Barycentrics:** :math:`(b^{2} - c^{2})^{2} (a^{4} + b^{4} + c^{4} - 2 a^{2} b^{2} - 2 a^{2} c^{2})/(a^{2} - b^{2} - c^{2}) : :`
    | **Search Value (6, 9, 13):** :math:`4.219605641607`
+
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
+
+   * **Barycentrics:** :math:`af(A,B,C) : bf(B,C,A) : cf(C,A,B)`
 
 .. container:: note-item
 
    :ref:`X(136) <X(136)>` lies on the nine-point circle
-
-.. container:: note-item
-
-   :ref:`X(136) <X(136)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 12 lines
@@ -41,8 +42,8 @@ X(136) = INTERSECTION OF LINE X(4)X(110) AND X(25)X(132)
 .. collapse:: Functional Relations
    :badge: 18 relations
 
-   * :ref:`X(136) <X(136)>` =\ :ref:`X(109) <X(109)>`-of-:term:`orthic triangle <orthic-triangle>` if ABC is acute
-   * :ref:`X(136) <X(136)>` = center of the rectangular hyperbola that passes through A, B, C, and :ref:`X(93) <X(93)>`
+   * :ref:`X(136) <X(136)>` =\ :ref:`X(109) <X(109)>`-of-orthic triangle if :g:`ABC << A B C >>` is acute
+   * :ref:`X(136) <X(136)>` = center of the rectangular hyperbola that passes through :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, and :ref:`X(93) <X(93)>`
    * :ref:`X(136) <X(136)>` = reflection of :ref:`X(131) <X(131)>` in :ref:`X(5) <X(5)>`
    * :ref:`X(136) <X(136)>` = :term:`complement <complement>` of :ref:`X(925) <X(925)>`
    * :ref:`X(136) <X(136)>` = :term:`anticomplement <anticomplement>` of X(34844)
@@ -50,7 +51,7 @@ X(136) = INTERSECTION OF LINE X(4)X(110) AND X(25)X(132)
    * :ref:`X(136) <X(136)>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X(924) <X(924)>`
    * :ref:`X(136) <X(136)>` = :ref:`X(254) <X(254)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(523) <X(523)>`
    * :ref:`X(136) <X(136)>` = perspector of circumconic centered at X(2501)
-   * :ref:`X(136) <X(136)>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through X(2501) (hyperbola {A,B,C,\ :ref:`X(4) <X(4)>`,\ :ref:`X(93) <X(93)>`}})
+   * :ref:`X(136) <X(136)>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through X(2501) (hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(4) <X(4)>`,\ :ref:`X(93) <X(93)>`}})
    * :ref:`X(136) <X(136)>` = :ref:`X(2) <X(2)>`-Ceva conjugate of X(2501)
    * :ref:`X(136) <X(136)>` = inverse-in-polar-circle of :ref:`X(110) <X(110)>`
    * :ref:`X(136) <X(136)>` = inverse-in-orthoptic-circle-of-Steiner-inellipse of X(3563)

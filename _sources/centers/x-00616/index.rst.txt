@@ -19,12 +19,12 @@ X(616) = ANTICOMPLEMENT OF X(13)
 
    Centers :ref:`X(616) <X(616)>`-:ref:`X(642) <X(642)>` were contributed by :person:`Bernard Gibert <bernard-gibert>`, March 2, 2001. Notation:
 
-   S\ :sub:`A` = (b\ :sup:`2` + c\ :sup:`2` - a\ :sup:`2`)/2 S\ :sub:`B` = (c\ :sup:`2` + a\ :sup:`2` - b\ :sup:`2`)/2 S\ :sub:`C` = (a\ :sup:`2` + b\ :sup:`2` - c\ :sup:`2`)/2
+   :math:`S_{A}` = (:math:`b^{2}` + :math:`c^{2}` - :math:`a^{2})`/2 :math:`S_{B}` = (:math:`c^{2}` + :math:`a^{2}` - :math:`b^{2})`/2 :math:`S_{C}` = (:math:`a^{2}` + :math:`b^{2}` - :math:`c^{2})`/2
 
    Joe Goggins (Oct. 19, 2005) found trilinears for points in this section, using the following notation. Let
 
-   | F(13) = a csc(A + π/3) + b csc(B + π/3) + c csc(C + π/3)
-   | F(14) = a csc(A - π/3) + b csc(B - π/3) + c csc(C - π/3)
+   | :math:`F(13) = a \csc(A + \pi /3) + b \csc(B + \pi /3) + c \csc(C + \pi /3)`
+   | :math:`F(14) = a \csc(A - \pi /3) + b \csc(B - \pi /3) + c \csc(C - \pi /3)`
    | These are based on trilinears for the isogonic centers, :ref:`X(13) <X(13)>` and :ref:`X(14) <X(14)>`. In like manner, F(i) is defined for i = 15, 16, 17, 18, 61, 62.
 
    | Using this notation, we have, for example,
@@ -37,11 +37,11 @@ X(616) = ANTICOMPLEMENT OF X(13)
    :alt: X(616) = ANTICOMPLEMENT OF X(13)
    :align: center
 
-   **X(616) = ANTICOMPLEMENT OF X(13)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(616) = ANTICOMPLEMENT OF X(13)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = [S\ :sub:`B`\ S\ :sub:`C` - 2S\ :sub:`A`\ (a\ :sup:`2` + sqr(3) area)]/a
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = [S_{B}S_{C} - 2S_{A}(a^{2} + \sqrt{3} \operatorname{area})]/a`
    | **Search Value (6, 9, 13):** :math:`7.736216073857`
 
 .. collapse:: Alternate Coordinates
@@ -76,7 +76,7 @@ Notes
 
 .. container:: note-item
 
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the outer Napoleon triangle and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(616) <X(616)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (:person:`Randy Hutson <randy-hutson>`, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the outer Napoleon triangle and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(616) <X(616)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (:person:`Randy Hutson <randy-hutson>`, August 30, 2020)
 
 .. toctree::
    :hidden:

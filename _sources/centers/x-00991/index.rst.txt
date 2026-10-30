@@ -16,23 +16,23 @@ X(991) = INTERSECTION OF LINES X(1)X(7) AND X(3)X(6)
    :alt: X(991) = INTERSECTION OF LINES X(1)X(7) AND X(3)X(6)
    :align: center
 
-   **X(991) = INTERSECTION OF LINES X(1)X(7) AND X(3)X(6)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(991) = INTERSECTION OF LINES X(1)X(7) AND X(3)X(6)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`a[a^{3}(b + c) - a^{2}(b^{2} - bc + c^{2}) - a(b + c)(b^{2} + c^{2}) + (b - c)(b^{3} - c^{3})] : :`
-   | **Barycentrics:** :math:`(\sin A)[\cos(A - arccot(p))] : :`, where p = (r + 4R)/s
+   | **Barycentrics:** :math:`(\sin A)[\cos(A - arccot(p))] : :`, where :math:`p = (r + 4R)/s`
    | **Search Value (6, 9, 13):** :math:`3.457495508350`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`\sin(A + U) : :`, where tan U = tan(A/2) tan(B/2) tan(C/2) (Joe Goggins,11/26/08)
+   * **Trilinears:** :math:`\sin(A + U) : :`, where tan :math:`U = \tan(A/2) \tan(B/2) \tan(C/2)` (Joe Goggins,11/26/08)
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(991) <X(991)>` = :ref:`X(3) <X(3)>` + ((cot ω)/p)\ :ref:`X(6) <X(6)>` = 3 X(3576) - X(6210)
+   * :ref:`X(991) <X(991)>` = :ref:`X(3) <X(3)>` + :math:`((\cot \omega )/p)` :ref:`X(6) <X(6)>` = :math:`3` X(3576) - X(6210)
 
 .. container:: note-item
 
@@ -54,7 +54,7 @@ X(991) = INTERSECTION OF LINES X(1)X(7) AND X(3)X(6)
    * :ref:`X(991) <X(991)>` = inverse-in-Schoute-circle of X(4262)
    * :ref:`X(991) <X(991)>` = :ref:`X(264) <X(264)>`-of-2nd-circumperp-triangle
    * :ref:`X(991) <X(991)>` = perspector of excentral-hexyl ellipse wrt hexyl triangle
-   * :ref:`X(991) <X(991)>` = intersection of Brocard axes of ABC and hexyl triangle
+   * :ref:`X(991) <X(991)>` = intersection of Brocard axes of :g:`ABC << A B C >>` and hexyl triangle
    * :ref:`X(991) <X(991)>` = {:ref:`X(371) <X(371)>`,\ :ref:`X(372) <X(372)>`}-harmonic conjugate of X(4251)
 
 .. toctree::

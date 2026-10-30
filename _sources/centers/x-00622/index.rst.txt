@@ -10,22 +10,24 @@ X(622) = ANTICOMPLEMENT OF X(16)
 
 .. enunciation::
 
-   Trilinears F(16)/a - 2 sin(A - π/3) : F(16)/b - 2 sin(B - π/3) : F(16)/c - 2 sin(C - π/3)
+   :ref:`X(622) <X(622)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(3439)
 
 .. figure:: x-00622.svg
    :alt: X(622) = ANTICOMPLEMENT OF X(16)
    :align: center
 
-   **X(622) = ANTICOMPLEMENT OF X(16)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(622) = ANTICOMPLEMENT OF X(16)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = [sqr(3) S\ :sub:`B`\ S\ :sub:`C` - 2S\ :sub:`A` area]/a
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = [\sqrt{3} S_{B}S_{C} - 2S_{A} \operatorname{area}]/a`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`21.456529369144`
 
-.. container:: note-item
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-   :ref:`X(622) <X(622)>` lies.
+   * **Trilinears:** :math:`F(16)/a - 2 \sin(A - \pi /3) : F(16)/b - 2 \sin(B - \pi /3) : F(16)/c - 2 \sin(C - \pi /3)`
 
 .. collapse:: Incident Central Lines
    :badge: 13 lines
@@ -37,19 +39,12 @@ X(622) = ANTICOMPLEMENT OF X(16)
    :badge: 7 relations
 
    * :ref:`X(622) <X(622)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`16 <X(16)>`, :ref:`624 <X(624)>`), (:ref:`617 <X(617)>`, :ref:`299 <X(299)>`), (:ref:`621 <X(621)>`, :ref:`316 <X(316)>`)
-   * :ref:`X(622) <X(622)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(3439)
+   * :ref:`X(622) <X(622)>` = isogonal conjugate of X(3439)
    * :ref:`X(622) <X(622)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(2993)
    * :ref:`X(622) <X(622)>` = :term:`anticomplement <anticomplement>` of :ref:`X(16) <X(16)>`
    * :ref:`X(622) <X(622)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X(617) <X(617)>`
    * :ref:`X(622) <X(622)>` = :ref:`X(301) <X(301)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(2) <X(2)>`
    * :ref:`X(622) <X(622)>` = :term:`crosspoint <crosspoint>` of :ref:`X(617) <X(617)>` and :ref:`X(627) <X(627)>` wrt both the excentral and :term:`anticomplementary triangles <anticomplementary-triangle>`
-
-Notes
------
-
-.. container:: note-item
-
-   Barycentrics g(a,b,c) : g(b,c,a) : g(c,a,b), where g(a,b,c) = af(a,b,c)
 
 .. toctree::
    :hidden:

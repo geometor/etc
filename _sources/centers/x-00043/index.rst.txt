@@ -10,13 +10,13 @@ X(43) = X(6)-CEVA CONJUGATE OF X(1)
 
 .. enunciation::
 
-   Let A' be the inverse-in-excircles-radical-circle of the midpoint of BC, and define B' and C' cyclically. Triangle A'B'C' is inscribed in the Apollonius circle and homothetic to the :term:`excentral triangle <excentral-triangle>` at :ref:`X(43) <X(43)>`. (:person:`Randy Hutson <randy-hutson>`, November 30, 2018)
+   Let :g:`A' <A'>` be the inverse-in-excircles-radical-circle of the midpoint of :g:`BC <[ B C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Triangle :g:`A'B'C' << A' B' C' >>` is inscribed in the Apollonius circle and homothetic to the :term:`excentral triangle <excentral-triangle>` at :ref:`X(43) <X(43)>`. (:person:`Randy Hutson <randy-hutson>`, November 30, 2018)
 
 .. figure:: x-00043.svg
    :alt: X(43) = X(6)-CEVA CONJUGATE OF X(1)
    :align: center
 
-   **X(43) = X(6)-CEVA CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(43) = X(6)-CEVA CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -51,7 +51,7 @@ X(43) = X(6)-CEVA CONJUGATE OF X(1)
    * :ref:`X(43) <X(43)>` = :term:`crosssum <crosssum>` of :ref:`X(2) <X(2)>` and :ref:`X(330) <X(330)>`
    * :ref:`X(43) <X(43)>` = :ref:`X(55) <X(55)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(238) <X(238)>`
    * :ref:`X(43) <X(43)>` = inverse-in-excircles-radical-circle of X(5121)
-   * :ref:`X(43) <X(43)>` = perspector of ABC and extraversion triangle of :ref:`X(87) <X(87)>`
+   * :ref:`X(43) <X(43)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(87) <X(87)>`
    * :ref:`X(43) <X(43)>` = trilinear product of extraversions of :ref:`X(87) <X(87)>`
    * :ref:`X(43) <X(43)>` = excentral-isogonal conjugate of X(1766)
    * :ref:`X(43) <X(43)>` = polar conjugate of isotomic conjugate of X(22370)

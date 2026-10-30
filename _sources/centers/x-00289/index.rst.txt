@@ -16,7 +16,7 @@ X(289) = ISOGONAL CONJUGATE OF X(236)
    :alt: X(289) = ISOGONAL CONJUGATE OF X(236)
    :align: center
 
-   **X(289) = ISOGONAL CONJUGATE OF X(236)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(289) = ISOGONAL CONJUGATE OF X(236)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -26,12 +26,8 @@ X(289) = ISOGONAL CONJUGATE OF X(236)
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
-   * **Trilinears:** :math:`[1 - \sin(A/2)] \tan(A/2) : : (M. Iliev, 4/12/2007)`
+   * **Trilinears:** :math:`[1 - \sin(A/2)] \tan(A/2) : :` (M. Iliev, 4/12/2007)
    * **Trilinears:** :math:`a/(1 + \sin(A/2)) : :`
-
-.. container:: note-item
-
-   :ref:`X(289) <X(289)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines

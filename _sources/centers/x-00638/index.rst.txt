@@ -16,17 +16,13 @@ X(638) = ANTICOMPLEMENT OF X(372)
    :alt: X(638) = ANTICOMPLEMENT OF X(372)
    :align: center
 
-   **X(638) = ANTICOMPLEMENT OF X(372)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(638) = ANTICOMPLEMENT OF X(372)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = (S\ :sub:`B`\ S\ :sub:`C` - 2S\ :sub:`A` area)/a
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
-   | **Search Value (6, 9, 13):** :math:`11.630377459613`
-
-.. container:: note-item
-
-   :ref:`X(638) <X(638)>` lies.
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = (S_{B}S_{C} - 2S_{A} \operatorname{area})/a`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
+   | **Search Value (6, 9, 13):** :math:`11.630377459612`
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines

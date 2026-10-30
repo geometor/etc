@@ -10,22 +10,19 @@ X(159) = X(9)-OF-TANGENTIAL-TRIANGLE
 
 .. enunciation::
 
-   Barycentrics g(a,b,c) : g(b,c,a) : g(c,a,b), where g(a,b,c) = af(a,b,c)
+   :ref:`X(159) <X(159)>` = :ref:`X(9) <X(9)>`-of-:term:`tangential triangle <tangential-triangle>` if :g:`ABC << A B C >>` is acute
 
 .. figure:: x-00159.svg
    :alt: X(159) = X(9)-OF-TANGENTIAL-TRIANGLE
    :align: center
 
-   **X(159) = X(9)-OF-TANGENTIAL-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(159) = X(9)-OF-TANGENTIAL-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where, f(a,b,c) = a[(a\ :sup:`2` + b\ :sup:`2` + c\ :sup:`2`)sin 2A + (c\ :sup:`2` - b\ :sup:`2` - a\ :sup:`2`)sin 2B + (b\ :sup:`2` - c\ :sup:`2` - a\ :sup:`2`)sin 2C]
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a[(a^{2} + b^{2} + c^{2})\sin 2A + (c^{2} - b^{2} - a^{2})\sin 2B + (b^{2} - c^{2} - a^{2})\sin 2C]`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`-2.745390492160`
-
-.. container:: note-item
-
-   :ref:`X(159) <X(159)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines
@@ -36,7 +33,7 @@ X(159) = X(9)-OF-TANGENTIAL-TRIANGLE
 .. collapse:: Functional Relations
    :badge: 12 relations
 
-   * :ref:`X(159) <X(159)>` = :ref:`X(9) <X(9)>`-of-:term:`tangential triangle <tangential-triangle>` if ABC is acute
+   * :ref:`X(159) <X(159)>` = :ref:`X(9) <X(9)>`-of-tangential triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(159) <X(159)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`6 <X(6)>`, :ref:`206 <X(206)>`), (:ref:`66 <X(66)>`, :ref:`141 <X(141)>`)
    * :ref:`X(159) <X(159)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(13575)
    * :ref:`X(159) <X(159)>` = :term:`crosspoint <crosspoint>` of :ref:`X(110) <X(110)>` and X(15388)
@@ -47,7 +44,7 @@ X(159) = X(9)-OF-TANGENTIAL-TRIANGLE
    * :ref:`X(159) <X(159)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these {i,j}: {:ref:`2 <X(2)>`, 7500}, {:ref:`127 <X(127)>`, :ref:`523 <X(523)>`}
    * :ref:`X(159) <X(159)>` = tangential-isogonal conjugate of :ref:`X(25) <X(25)>`
    * :ref:`X(159) <X(159)>` = tangential-:term:`isotomic conjugate <isotomic-conjugate>` of X(32445)
-   * :ref:`X(159) <X(159)>` = intouch-to-ABC :term:`functional image <functional-image>` of :ref:`X(9) <X(9)>`
+   * :ref:`X(159) <X(159)>` = intouch-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X(9) <X(9)>`
 
 .. toctree::
    :hidden:

@@ -16,7 +16,7 @@ X(385) = X(2)-HIRST INVERSE OF X(6)
    :alt: X(385) = X(2)-HIRST INVERSE OF X(6)
    :align: center
 
-   **X(385) = X(2)-HIRST INVERSE OF X(6)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(385) = X(2)-HIRST INVERSE OF X(6)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -52,7 +52,7 @@ X(385) = X(2)-HIRST INVERSE OF X(6)
    * :ref:`X(385) <X(385)>` = X(i)-:term:`Hirst inverse <hirst-inverse>` of X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`6 <X(6)>`), (:ref:`3 <X(3)>`, :ref:`194 <X(194)>`), (:ref:`171 <X(171)>`, :ref:`894 <X(894)>`)
    * :ref:`X(385) <X(385)>` = {:ref:`X(2) <X(2)>`,\ :ref:`X(193) <X(193)>`}-harmonic conjugate of X(7774)
    * :ref:`X(385) <X(385)>` = intersection of :term:`trilinear polars <trilinear-polar>` of P(1) and U(1)
-   * :ref:`X(385) <X(385)>` = trilinear pole of line :ref:`X(804) <X(804)>`\ X(4107) (line is perspectrix of any pair of {ABC, 1st Brocard triangle, 3rd Brocard triangle}, and is also the Lemoine axis of the 1st Brocard triangle.)
+   * :ref:`X(385) <X(385)>` = trilinear pole of line :ref:`X(804) <X(804)>`\ X(4107) (line is perspectrix of any pair of {:g:`ABC << A B C >>`, 1st Brocard triangle, 3rd Brocard triangle}, and is also the Lemoine axis of the 1st Brocard triangle.)
    * :ref:`X(385) <X(385)>` = anticomplementary isotomic conjugate of :ref:`X(147) <X(147)>`
    * :ref:`X(385) <X(385)>` = crosspoint of :ref:`X(6) <X(6)>` and X(3511) wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
    * :ref:`X(385) <X(385)>` = inverse-in-Steiner-circumellipse of :ref:`X(6) <X(6)>`
@@ -60,22 +60,22 @@ X(385) = X(2)-HIRST INVERSE OF X(6)
    * :ref:`X(385) <X(385)>` = :ref:`X(98) <X(98)>`-of-anti-McCay-triangle
    * :ref:`X(385) <X(385)>` = barycentric product of PU(133)
    * :ref:`X(385) <X(385)>` = barycentric product :ref:`X(239) <X(239)>`\ \*\ :ref:`X(894) <X(894)>`
-   * :ref:`X(385) <X(385)>` = perspector of ABC and side-triangle of :term:`cevian triangles <cevian-triangle>` of PU(1)
+   * :ref:`X(385) <X(385)>` = perspector of :g:`ABC << A B C >>` and side-triangle of :term:`cevian triangles <cevian-triangle>` of PU(1)
 
 Notes
 -----
 
 .. container:: note-item
 
-   :ref:`X(385) <X(385)>` is the perspector of triangle ABC and the tangential triangle of the conic that passes through A, B, C, and the pair P(1) and U(1) of :term:`bicentric points <bicentric-points>` (see the notes just before X(1908). (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   :ref:`X(385) <X(385)>` is the perspector of triangle :g:`ABC << A B C >>` and the tangential triangle of the conic that passes through :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, and the pair P(1) and U(1) of :term:`bicentric points <bicentric-points>` (see the notes just before X(1908). (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. container:: note-item
 
-   Let A'B'C' be the 1st Brocard triangle. Let A″ be the trilinear pole of line B'C', and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(385) <X(385)>`. (Randy Hutson, November 30, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the 1st Brocard triangle. Let :g:`A″ <A″>` be the trilinear pole of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(385) <X(385)>`. (Randy Hutson, November 30, 2015)
 
 .. container:: note-item
 
-   Let La be the line through A parallel to the Lemoine axis, and define Lb and Lc cyclically. Let Ma be the reflection of BC in La, and define Mb and Mc cyclically. Let A' = Mb∩Mc, and define B', C' cyclically. Triangle A'B'C' is inversely similar to, and 3 times the size of, ABC. Let A″B″C″ be the reflection of A'B'C' in the Lemoine axis. The triangle A″B″C″ is homothetic to ABC, with center of homothety :ref:`X(325) <X(325)>` and centroid :ref:`X(385) <X(385)>`; see :cite:`Hyacinthos #16741 <hyacinthos>`/16782, Sep 2008. (Randy Hutson, November 30, 2015)
+   Let :g:`L_{a} <L_a>` be the line through :g:`A <A>` parallel to the Lemoine axis, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`M_{a} <M_a>` be the reflection of :g:`BC <[ B C ]>` in :g:`L_{a} <L_a>`, and define :g:`M_{b} <M_b>` and :g:`M_{c} <M_c>` cyclically. Let :g:`A' <A'>` = :g:`M_{b} <M_b>`\ ∩\ :g:`M_{c} <M_c>`, and define :g:`B' <B'>`, :g:`C' <C'>` cyclically. Triangle :g:`A'B'C' << A' B' C' >>` is inversely similar to, and 3 times the size of, :g:`ABC << A B C >>`. Let :g:`A″B″C″ << A″ B″ C″ >>` be the reflection of :g:`A'B'C' << A' B' C' >>` in the Lemoine axis. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to :g:`ABC << A B C >>`, with center of homothety :ref:`X(325) <X(325)>` and centroid :ref:`X(385) <X(385)>`; see :cite:`Hyacinthos #16741 <hyacinthos>`/16782, Sep 2008. (Randy Hutson, November 30, 2015)
 
 .. toctree::
    :hidden:

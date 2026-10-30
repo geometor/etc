@@ -16,17 +16,13 @@ X(261) = ISOTOMIC CONJUGATE OF X(12)
    :alt: X(261) = ISOTOMIC CONJUGATE OF X(12)
    :align: center
 
-   **X(261) = ISOTOMIC CONJUGATE OF X(12)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(261) = ISOTOMIC CONJUGATE OF X(12)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = [(csc A)(sec(B/2 - C/2))]\ :sup:`2`
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = [(\csc A)(\sec(B/2 - C/2))]^{2}`
    | **Barycentrics:** :math:`(\sin A)f(A,B,C) : (\sin B)f(B,C,A) : (\sin C)f(C,A,B)`
    | **Search Value (6, 9, 13):** :math:`3.744047967075`
-
-.. container:: note-item
-
-   :ref:`X(261) <X(261)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 12 lines

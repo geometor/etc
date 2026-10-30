@@ -16,7 +16,7 @@ X(284) = X(55)-CROSS CONJUGATE OF X(21)
    :alt: X(284) = X(55)-CROSS CONJUGATE OF X(21)
    :align: center
 
-   **X(284) = X(55)-CROSS CONJUGATE OF X(21)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(284) = X(55)-CROSS CONJUGATE OF X(21)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -32,11 +32,7 @@ X(284) = X(55)-CROSS CONJUGATE OF X(21)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(284) <X(284)>` = s\*\ :ref:`X(3) <X(3)>` + (r + 2R)\*cot(ω)\*\ :ref:`X(6) <X(6)>`
-
-.. container:: note-item
-
-   :ref:`X(284) <X(284)>` lies.
+   * :ref:`X(284) <X(284)>` = :math:`s` :ref:`X(3) <X(3)>` + :math:`(r + 2R) \cot(\omega )` :ref:`X(6) <X(6)>`
 
 .. collapse:: Incident Central Lines
    :badge: 21 lines
@@ -60,8 +56,8 @@ X(284) = X(55)-CROSS CONJUGATE OF X(21)
    * :ref:`X(284) <X(284)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(652) <X(652)>`\ \ :ref:`X(663) <X(663)>`
    * :ref:`X(284) <X(284)>` = :ref:`X(92) <X(92)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(73) <X(73)>`
    * :ref:`X(284) <X(284)>` = X(1577)-isoconjugate of :ref:`X(109) <X(109)>`
-   * :ref:`X(284) <X(284)>` = perspector of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of Gemini triangle 10
-   * :ref:`X(284) <X(284)>` = perspector of ABC and unary cofactor triangle of isogonal triangle of :ref:`X(1) <X(1)>` (a.k.a. reflection triangle of :ref:`X(1) <X(1)>`)
+   * :ref:`X(284) <X(284)>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of Gemini triangle 10
+   * :ref:`X(284) <X(284)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of isogonal triangle of :ref:`X(1) <X(1)>` (a.k.a. reflection triangle of :ref:`X(1) <X(1)>`)
 
 .. toctree::
    :hidden:

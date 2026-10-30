@@ -17,7 +17,7 @@ X(54) = KOSNITA POINT
    :alt: X(54) = KOSNITA POINT
    :align: center
 
-   **X(54) = KOSNITA POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(54) = KOSNITA POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -29,9 +29,9 @@ X(54) = KOSNITA POINT
    :badge: 4 forms
 
    * **Trilinears:** :math:`a/(b \cos B + c \cos C) : :`
-   * **Barycentrics:** :math:`a^2/(S^2 + SB SC) : :`
-   * **Barycentrics:** :math:`a^2/(b^4 + c^4 - a^2b^2 - a^2c^2 - 2b^2c^2) : :`
-   * **Barycentrics:** :math:`a^2*(a^4 - 2*a^2*b^2 + b^4 - a^2*c^2 - b^2*c^2)*(a^4 - a^2*b^2 - 2*a^2*c^2 - b^2*c^2 + c^4) : :`
+   * **Barycentrics:** :math:`a^{2}/(S^{2} + S_{B} S_{C}) : :`
+   * **Barycentrics:** :math:`a^{2}/(b^{4} + c^{4} - a^{2}b^{2} - a^{2}c^{2} - 2b^{2}c^{2}) : :`
+   * **Barycentrics:** :math:`a^{2} (a^{4} - 2 a^{2} b^{2} + b^{4} - a^{2} c^{2} - b^{2} c^{2}) \cdot (a^{4} - a^{2} b^{2} - 2 a^{2} c^{2} - b^{2} c^{2} + c^{4}) : :`
 
 .. container:: note-item
 
@@ -75,17 +75,17 @@ X(54) = KOSNITA POINT
    * :ref:`X(54) <X(54)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(324) <X(324)>`
    * :ref:`X(54) <X(54)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X(324) <X(324)>`
    * :ref:`X(54) <X(54)>` = :ref:`X(92) <X(92)>`-isoconjugate of :ref:`X(216) <X(216)>`
-   * :ref:`X(54) <X(54)>` = intersection of tangents to hyperbola {A,B,C,\ :ref:`X(4) <X(4)>`,\ :ref:`X(5) <X(5)>`}} at :ref:`X(4) <X(4)>` and X(3459)
+   * :ref:`X(54) <X(54)>` = intersection of tangents to hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(4) <X(4)>`,\ :ref:`X(5) <X(5)>`}} at :ref:`X(4) <X(4)>` and X(3459)
    * :ref:`X(54) <X(54)>` = {X(2595),X(2596)}-harmonic conjugate of X(1087)
    * :ref:`X(54) <X(54)>` = trilinear product of vertices of circumnormal triangle
    * :ref:`X(54) <X(54)>` = intersection of tangents at :ref:`X(3) <X(3)>` and :ref:`X(4) <X(4)>` to Neuberg cubic K001
    * :ref:`X(54) <X(54)>` = exsimilicenter of nine-point circle and sine-triple-angle circle
    * :ref:`X(54) <X(54)>` = homothetic center of orthocevian triangle of :ref:`X(3) <X(3)>` and circumorthic triangle
-   * :ref:`X(54) <X(54)>` = perspector of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of reflection triangle
+   * :ref:`X(54) <X(54)>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of reflection triangle
    * :ref:`X(54) <X(54)>` = :ref:`X(3) <X(3)>`-of-reflection-triangle-of-:ref:`X(5) <X(5)>`
-   * :ref:`X(54) <X(54)>` = perspector of ABC and cross-triangle of ABC and circumorthic triangle
-   * :ref:`X(54) <X(54)>` = perspector of ABC and Hatzipolakis-Moses triangle
-   * :ref:`X(54) <X(54)>` = :ref:`X(191) <X(191)>`-of-orthic-triangle if ABC is acute
+   * :ref:`X(54) <X(54)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and circumorthic triangle
+   * :ref:`X(54) <X(54)>` = perspector of :g:`ABC << A B C >>` and Hatzipolakis-Moses triangle
+   * :ref:`X(54) <X(54)>` = :ref:`X(191) <X(191)>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(54) <X(54)>` = trilinear product of vertices of :ref:`X(4) <X(4)>`-altimedial triangle
    * :ref:`X(54) <X(54)>` = X(i)-isoconjugate of X(j) for these (i,j): {:ref:`1 <X(1)>`, :ref:`5 <X(5)>`}, {:ref:`2 <X(2)>`, 1953}, {:ref:`6 <X(6)>`, 14213}, {:ref:`7 <X(7)>`, 7069}, {:ref:`8 <X(8)>`, 1393}, {:ref:`10 <X(10)>`, 18180}, {:ref:`19 <X(19)>`, :ref:`343 <X(343)>`}, {:ref:`25 <X(25)>`, 18695}, {:ref:`31 <X(31)>`, :ref:`311 <X(311)>`}, {:ref:`37 <X(37)>`, 17167}, {:ref:`38 <X(38)>`, 17500}, {:ref:`48 <X(48)>`, :ref:`324 <X(324)>`}, {:ref:`51 <X(51)>`, :ref:`75 <X(75)>`}, {:ref:`52 <X(52)>`, :ref:`91 <X(91)>`}, {:ref:`53 <X(53)>`, :ref:`63 <X(63)>`}, {:ref:`54 <X(54)>`, 1087}, {:ref:`69 <X(69)>`, 2181}, {:ref:`76 <X(76)>`, 2179}, {:ref:`79 <X(79)>`, 35194}, {:ref:`81 <X(81)>`, 21011}, {:ref:`86 <X(86)>`, 21807}, {:ref:`92 <X(92)>`, :ref:`216 <X(216)>`}, {:ref:`94 <X(94)>`, 2290}, {:ref:`100 <X(100)>`, 21102}, {:ref:`110 <X(110)>`, 2618}, {:ref:`143 <X(143)>`, 2962}, {:ref:`158 <X(158)>`, 5562}, {:ref:`162 <X(162)>`, 6368}, {:ref:`163 <X(163)>`, 18314}, {:ref:`217 <X(217)>`, 1969}, {:ref:`255 <X(255)>`, 13450}, {:ref:`293 <X(293)>`, 39569}, {:ref:`304 <X(304)>`, 3199}, {:ref:`318 <X(318)>`, 30493}, {:ref:`326 <X(326)>`, 14569}, {:ref:`467 <X(467)>`, 1820}, {:ref:`523 <X(523)>`, 2617}, {:ref:`561 <X(561)>`, 40981}, {:ref:`610 <X(610)>`, 13157}, {:ref:`655 <X(655)>`, 2600}, {:ref:`656 <X(656)>`, 35360}, {:ref:`661 <X(661)>`, 14570}, {:ref:`662 <X(662)>`, 12077}, {:ref:`811 <X(811)>`, 15451}, {:ref:`823 <X(823)>`, 17434}, {:ref:`897 <X(897)>`, 41586}, {:ref:`920 <X(920)>`, 8800}, {:ref:`921 <X(921)>`, 41587}, {1154, 2166}, {1209, 2216}, {1263, 1749}, {1474, 42698}, {1568, 36119}, {1577, 1625}, {1707, 27364}, {1826, 16697}, {1895, 8798}, {1956, 32428}, {1972, 2313}, {1973, 28706}, {2081, 32680}, {2153, 33529}, {2154, 33530}, {2167, 36412}, {2180, 5392}, {2184, 42459}, {2222, 6369}, {2595, 7135}, {2596, 2603}, {2599, 3615}, {2621, 18114}, {2964, 25043}, {4560, 35307}, {4575, 23290}, {8769, 41588}, {10015, 35321}, {17438, 31610}, {18070, 35319}, {18833, 27374}, {20577, 36148}, {23181, 24006}, {24000, 35442}, {24041, 41221}, {27371, 34055}, {32678, 41078}, {36035, 36831}
    * :ref:`X(54) <X(54)>` = barycentric product X(i)\*X(j) for these {i,j}: {:ref:`1 <X(1)>`, 2167}, {:ref:`3 <X(3)>`, :ref:`275 <X(275)>`}, {:ref:`4 <X(4)>`, :ref:`97 <X(97)>`}, {:ref:`6 <X(6)>`, :ref:`95 <X(95)>`}, {:ref:`25 <X(25)>`, 34386}, {:ref:`32 <X(32)>`, 34384}, {:ref:`39 <X(39)>`, 39287}, {:ref:`48 <X(48)>`, 40440}, {:ref:`63 <X(63)>`, 2190}, {:ref:`69 <X(69)>`, 8882}, {:ref:`75 <X(75)>`, 2148}, {:ref:`83 <X(83)>`, 16030}, {:ref:`92 <X(92)>`, 2169}, {:ref:`96 <X(96)>`, 1993}, {:ref:`99 <X(99)>`, 2623}, {:ref:`110 <X(110)>`, 15412}, {:ref:`140 <X(140)>`, :ref:`288 <X(288)>`}, {:ref:`182 <X(182)>`, 42300}, {:ref:`184 <X(184)>`, :ref:`276 <X(276)>`}, {:ref:`226 <X(226)>`, 35196}, {:ref:`249 <X(249)>`, 8901}, {:ref:`252 <X(252)>`, 1994}, {:ref:`253 <X(253)>`, 33629}, {:ref:`264 <X(264)>`, 14533}, {:ref:`287 <X(287)>`, 19189}, {:ref:`290 <X(290)>`, 41270}, {:ref:`323 <X(323)>`, 1141}, {:ref:`338 <X(338)>`, 14587}, {:ref:`340 <X(340)>`, 11077}, {:ref:`371 <X(371)>`, 16032}, {:ref:`372 <X(372)>`, 16037}, {:ref:`394 <X(394)>`, 8884}, {:ref:`401 <X(401)>`, 1298}, {:ref:`520 <X(520)>`, 16813}, {:ref:`523 <X(523)>`, 18315}, {:ref:`525 <X(525)>`, :ref:`933 <X(933)>`}, {:ref:`571 <X(571)>`, 34385}, {:ref:`577 <X(577)>`, 8795}, {:ref:`578 <X(578)>`, 37872}, {:ref:`647 <X(647)>`, 18831}, {:ref:`648 <X(648)>`, 23286}, {:ref:`662 <X(662)>`, 2616}, {:ref:`801 <X(801)>`, 16035}, {:ref:`850 <X(850)>`, 14586}, {1073, 38808}, {1092, 8794}, {1105, 19180}, {1157, 13582}, {1166, 37636}, {1502, 14573}, {1577, 36134}, {1634, 39182}, {2052, 19210}, {2245, 39277}, {2888, 40140}, {2984, 11245}, {3051, 41488}, {3431, 4993}, {3904, 36078}, {4551, 39177}, {6504, 8883}, {6563, 32692}, {7763, 41271}, {11140, 25044}, {13366, 31617}, {14096, 39283}, {14528, 19188}, {14618, 15958}, {15351, 19208}, {15414, 32713}, {19166, 41890}, {19170, 40448}, {19174, 28724}, {20574, 40684}, {22052, 39286}, {35311, 39181}, {37225, 39274}, {39201, 42405}
@@ -97,7 +97,7 @@ Notes
 
 .. container:: note-item
 
-   Let O be the circumcenter of triangle ABC, and O\ :sub:`A` the circumcenter of triangle BOC. Define O\ :sub:`B` and O\ :sub:`C` cyclically. Then the lines AO\ :sub:`A`, BO\ :sub:`B`, CO\ :sub:`C` concur in :ref:`X(54) <X(54)>`. For details and generalization, see
+   Let :g:`O <O>` be the circumcenter of triangle :g:`ABC << A B C >>`, and :g:`O_{A} <O_A>` the circumcenter of triangle :g:`BOC << B O C >>`. Define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. Then the lines :g:`AO_{A} <[ A O_A ]>`, :g:`BO_{B} <[ B O_B ]>`, :g:`CO_{C} <[ C O_C ]>` concur in :ref:`X(54) <X(54)>`. For details and generalization, see
 
 .. container:: note-item
 
@@ -105,19 +105,19 @@ Notes
 
 .. container:: note-item
 
-   The above construction of :ref:`X(54) <X(54)>` generalizes. Suppose that P and Q are points (as functions of a,b,c). Let A' = Q-of-BCP, B' = Q-of-CAP, C' = Q-of-ABP. If the lines AA', BB', CC' concur, the perspector is called the Kosnita(P,Q) point, denoted by K(P,Q). (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   The above construction of :ref:`X(54) <X(54)>` generalizes. Suppose that :g:`P <P>` and :g:`Q <Q>` are points (as functions of a,b,c). Let :g:`A' <A'>` = Q-of-:g:`BCP << B C P >>`, :g:`B' <B'>` = Q-of-:g:`CAP << C A P >>`, :g:`C' <C'>` = Q-of-:g:`ABP << A B P >>`. If the lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur, the perspector is called the Kosnita(P,Q) point, denoted by K(P,Q). (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. container:: note-item
 
-   Let N\ :sub:`A`\ N\ :sub:`B`\ N\ :sub:`C` be the reflection triangle of :ref:`X(5) <X(5)>`. Let O\ :sub:`A` be the circumcenter of AN\ :sub:`B`\ N\ :sub:`C`, and define O\ :sub:`B` and O\ :sub:`C` cyclically. Triangle O\ :sub:`A`\ O\ :sub:`B`\ O\ :sub:`C` is perspective to ABC at :ref:`X(54) <X(54)>`, homothetic to the orthic-of-orthocentroidal triangle at :ref:`X(54) <X(54)>`, and orthologic to the reflection triangle at :ref:`X(54) <X(54)>`. (Randy Hutson, June 7, 2019)
+   Let :g:`N_{A}N_{B}N_{C} << N_A N_B N_C >>` be the reflection triangle of :ref:`X(5) <X(5)>`. Let :g:`O_{A} <O_A>` be the circumcenter of :g:`AN_{B}N_{C} << A N_B N_C >>`, and define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. Triangle :g:`O_{A}O_{B}O_{C} << O_A O_B O_C >>` is perspective to :g:`ABC << A B C >>` at :ref:`X(54) <X(54)>`, homothetic to the orthic-of-orthocentroidal triangle at :ref:`X(54) <X(54)>`, and orthologic to the reflection triangle at :ref:`X(54) <X(54)>`. (Randy Hutson, June 7, 2019)
 
 .. container:: note-item
 
-   Let (Na) be the reflection of the nine-point circle in BC, and define (Nb) and (Nc) cyclically. :ref:`X(54) <X(54)>` is the radical center of (Na), (Nb), (Nc). The tangents at A, B, C to the Napoleon-Feuerbach cubic K005 concur in :ref:`X(54) <X(54)>`. Let A'B'C' be the reflection triangle. Let La be the trilinear polar of A', and define Lb and Lc cyclically. Let A″ be Lb∩Lc, and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(54) <X(54)>`. (Randy Hutson, July 23, 2015)
+   Let (:g:`N_{a} <N_a>`) be the reflection of the nine-point circle in :g:`BC <[ B C ]>`, and define (:g:`N_{b} <N_b>`) and (:g:`N_{c} <N_c>`) cyclically. :ref:`X(54) <X(54)>` is the radical center of (:g:`N_{a} <N_a>`), (:g:`N_{b} <N_b>`), (:g:`N_{c} <N_c>`). The tangents at :g:`A <A>`, :g:`B <B>`, :g:`C <C>` to the Napoleon-Feuerbach cubic K005 concur in :ref:`X(54) <X(54)>`. Let :g:`A'B'C' << A' B' C' >>` be the reflection triangle. Let :g:`L_{a} <L_a>` be the trilinear polar of :g:`A' <A'>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` be :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(54) <X(54)>`. (Randy Hutson, July 23, 2015)
 
 .. container:: note-item
 
-   let Na = reflection of :ref:`X(5) <X(5)>` in the line BC, and define Nb and Nc cyclically. The :term:`medial triangle <medial-triangle>` of NaNbNc is perspective to ABC, and the perspector is :ref:`X(54) <X(54)>`. (:person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, June 8, 2021)
+   let :g:`N_{a} <N_a>` = reflection of :ref:`X(5) <X(5)>` in the line :g:`BC <[ B C ]>`, and define :g:`N_{b} <N_b>` and :g:`N_{c} <N_c>` cyclically. The :term:`medial triangle <medial-triangle>` of :g:`N_{a}N_{b}N_{c} << N_a N_b N_c >>` is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X(54) <X(54)>`. (:person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, June 8, 2021)
 
 .. toctree::
    :hidden:

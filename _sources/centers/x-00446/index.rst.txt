@@ -10,23 +10,19 @@ X(446) = CROSSPOINT OF X(98) AND X(511)
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(446) <X(446)>` has Shinagawa coefficients ((E + F)\ :sup:`3`\ F - (E + F)(E - 2F)S\ :sup:`2` + S\ :sup:`4`, (E - F)(E + F)\ :sup:`3` - 2(E + F)\ :sup:`2`\ S\ :sup:`2` - S\ :sup:`4`).
+   As a point on the Euler line, :ref:`X(446) <X(446)>` has Shinagawa coefficients :math:`((E + F)^{3}F - (E + F)(E - 2F)S^{2} + S^{4}, (E - F)(E + F)^{3} - 2(E + F)^{2}S^{2} - S^{4})`.
 
 .. figure:: x-00446.svg
    :alt: X(446) = CROSSPOINT OF X(98) AND X(511)
    :align: center
 
-   **X(446) = CROSSPOINT OF X(98) AND X(511)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(446) = CROSSPOINT OF X(98) AND X(511)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`u(v^{2} + w^{2}) : v(w^{2} + u^{2}) : w(u^{2} + v^{2})`, where, u : v : w = :ref:`X(98) <X(98)>`; e.g., u(A,B,C) = sec(A + ω)
+   | **Trilinears:** :math:`u(v^{2} + w^{2}) : v(w^{2} + u^{2}) : w(u^{2} + v^{2})`, where :math:`u : v : w` = :ref:`X(98) <X(98)>`; e.g., :math:`u(A,B,C) = \sec(A + \omega )`
    | **Barycentrics:** :math:`au(v^{2} + w^{2}) : bv(w^{2} + u^{2}) : cw(u^{2} + v^{2})`
    | **Search Value (6, 9, 13):** :math:`28.482023066739`
-
-.. container:: note-item
-
-   :ref:`X(446) <X(446)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 1 line

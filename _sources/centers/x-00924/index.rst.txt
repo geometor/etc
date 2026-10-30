@@ -16,7 +16,7 @@ X(924) = CROSSDIFFERENCE OF X(5) AND X(6)
    :alt: X(924) = CROSSDIFFERENCE OF X(5) AND X(6)
    :align: center
 
-   **X(924) = CROSSDIFFERENCE OF X(5) AND X(6)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(924) = CROSSDIFFERENCE OF X(5) AND X(6)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -26,11 +26,7 @@ X(924) = CROSSDIFFERENCE OF X(5) AND X(6)
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`a (b^2 - c^2) (a^4 + b^4 + c^4 - 2 a^2 b^2 - 2 a^2 c^2) : :`
-
-.. container:: note-item
-
-   :ref:`X(924) <X(924)>` lies.
+   * **Trilinears:** :math:`a (b^{2} - c^{2}) (a^{4} + b^{4} + c^{4} - 2 a^{2} b^{2} - 2 a^{2} c^{2}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines
@@ -48,7 +44,7 @@ X(924) = CROSSDIFFERENCE OF X(5) AND X(6)
    * :ref:`X(924) <X(924)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`4 <X(4)>`, :ref:`110 <X(110)>`), (:ref:`99 <X(99)>`, :ref:`275 <X(275)>`)
    * :ref:`X(924) <X(924)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`3 <X(3)>`, :ref:`523 <X(523)>`), (:ref:`216 <X(216)>`, :ref:`512 <X(512)>`)
    * :ref:`X(924) <X(924)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(5) <X(5)>`\ \ :ref:`X(6) <X(6)>`
-   * :ref:`X(924) <X(924)>` = perspector of hyperbola {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(24) <X(24)>`}}
+   * :ref:`X(924) <X(924)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(24) <X(24)>`}}
    * :ref:`X(924) <X(924)>` = intersection of :term:`trilinear polars <trilinear-polar>` of :ref:`X(2) <X(2)>` and :ref:`X(24) <X(24)>`
    * :ref:`X(924) <X(924)>` = barycentric square root of X(39013)
 

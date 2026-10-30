@@ -11,13 +11,13 @@ X(39) = BROCARD MIDPOINT
 
 .. enunciation::
 
-   :ref:`X(39) <X(39)>` is the midpoint of the 1st and 2nd Brocard points, given by trilinears c/b : a/c : b/a and b/c : c/a : a/b. The third and fourth trilinear representations were given by Peter J. C. Moses (10/3/03); cf. :ref:`X(511) <X(511)>`, :ref:`X(32) <X(32)>`, :ref:`X(182) <X(182)>`.
+   :ref:`X(39) <X(39)>` is the midpoint of the 1st and 2nd Brocard points, given by trilinears :math:`c/b : a/c : b/a` and :math:`b/c : c/a : a/b`. The third and fourth trilinear representations were given by Peter J. C. Moses (10/3/03); cf. :ref:`X(511) <X(511)>`, :ref:`X(32) <X(32)>`, :ref:`X(182) <X(182)>`.
 
 .. figure:: x-00039.svg
    :alt: X(39) = BROCARD MIDPOINT
    :align: center
 
-   **X(39) = BROCARD MIDPOINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(39) = BROCARD MIDPOINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -38,8 +38,8 @@ X(39) = BROCARD MIDPOINT
 .. collapse:: Linear Combinations
    :badge: 2 combinations
 
-   * :ref:`X(39) <X(39)>` = (r\ :sup:`2` + 4rR - s\ :sup:`2`)\*(r\ :sup:`2` + 2rR + s\ :sup:`2`)\ :ref:`X(1) <X(1)>` - 6rR(r\ :sup:`2` + 4rR - s\ :sup:`2`)\*\ :ref:`X(2) <X(2)>` - 2r\ :sup:`2`\ (r\ :sup:`2` + 4rR + s\ :sup:`2`)\*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-   * :ref:`X(39) <X(39)>` = P(1) + U(1)
+   * :ref:`X(39) <X(39)>` = :math:`(r^{2} + 4rR - s^{2}) \cdot (r^{2} + 2rR + s^{2})` :ref:`X(1) <X(1)>` - :math:`6rR(r^{2} + 4rR - s^{2})` :ref:`X(2) <X(2)>` - :math:`2r^{2}(r^{2} + 4rR + s^{2})` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
+   * :ref:`X(39) <X(39)>` = :math:`P(1) + U(1)`
 
 .. container:: note-item
 
@@ -86,21 +86,21 @@ X(39) = BROCARD MIDPOINT
    * :ref:`X(39) <X(39)>` = {:ref:`X(61) <X(61)>`,\ :ref:`X(62) <X(62)>`}-harmonic conjugate of :ref:`X(575) <X(575)>`
    * :ref:`X(39) <X(39)>` = {X(1687),X(1688)}-harmonic conjugate of X(3398)
    * :ref:`X(39) <X(39)>` = {X(2009),X(2010)}-harmonic conjugate of :ref:`X(5) <X(5)>`
-   * :ref:`X(39) <X(39)>` = Brocard axis intercept of radical axis of nine-point circles of ABC and circumsymmedial triangle
-   * :ref:`X(39) <X(39)>` = intersection of tangents to hyperbola {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(6) <X(6)>`}} at :ref:`X(2) <X(2)>` and :ref:`X(6) <X(6)>`
+   * :ref:`X(39) <X(39)>` = Brocard axis intercept of radical axis of nine-point circles of :g:`ABC << A B C >>` and circumsymmedial triangle
+   * :ref:`X(39) <X(39)>` = intersection of tangents to hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(6) <X(6)>`}} at :ref:`X(2) <X(2)>` and :ref:`X(6) <X(6)>`
    * :ref:`X(39) <X(39)>` = perspector of circumconic centered at :ref:`X(141) <X(141)>`
    * :ref:`X(39) <X(39)>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X(141) <X(141)>`
    * :ref:`X(39) <X(39)>` = trilinear pole, wrt :term:`medial triangle <medial-triangle>`, of orthic axis
    * :ref:`X(39) <X(39)>` = trilinear pole of line :ref:`X(688) <X(688)>`\ X(3005)
-   * :ref:`X(39) <X(39)>` = perspector of medial triangle of ABC and medial triangle of 1st Brocard triangle
+   * :ref:`X(39) <X(39)>` = perspector of medial triangle of :g:`ABC << A B C >>` and medial triangle of 1st Brocard triangle
    * :ref:`X(39) <X(39)>` = X(2029)-of-2nd-Brocard triangle
    * :ref:`X(39) <X(39)>` = :ref:`X(39) <X(39)>`-of-circumsymmedial-triangle
    * :ref:`X(39) <X(39)>` = perspector, wrt symmedial triangle, of bicevian conic of :ref:`X(6) <X(6)>` and :ref:`X(25) <X(25)>`
-   * :ref:`X(39) <X(39)>` = intersection of Brocard axes of ABC and 5th Euler triangle
+   * :ref:`X(39) <X(39)>` = intersection of Brocard axes of :g:`ABC << A B C >>` and 5th Euler triangle
    * :ref:`X(39) <X(39)>` = :ref:`X(92) <X(92)>`-:term:`isoconjugate <isoconjugate>` of X(1176)
    * :ref:`X(39) <X(39)>` = X(1577)-isoconjugate of :ref:`X(827) <X(827)>`
    * :ref:`X(39) <X(39)>` = eigencenter of Steiner triangle
-   * :ref:`X(39) <X(39)>` = perspector of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of circummedial triangle
+   * :ref:`X(39) <X(39)>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of circummedial triangle
    * :ref:`X(39) <X(39)>` = center of (equilateral) unary cofactor triangle of Stammler triangle
    * :ref:`X(39) <X(39)>` = X(7753)-of-4th-anti-Brocard-triangle
    * :ref:`X(39) <X(39)>` = :ref:`X(11) <X(11)>`-of-:ref:`X(3) <X(3)>`\ PU(1)
@@ -111,14 +111,14 @@ X(39) = BROCARD MIDPOINT
    * :ref:`X(39) <X(39)>` = Cundy-Parry Psi transform of :ref:`X(262) <X(262)>`
    * :ref:`X(39) <X(39)>` = endo-:term:`similarity image <similarity-image>` of :term:`antipedal triangles <antipedal-triangle>` of PU(1); the similitude center of these triangles is :ref:`X(3) <X(3)>`
    * :ref:`X(39) <X(39)>` = orthoptic-circle-of-Steiner-inellipse-inverse of X(32526)
-   * :ref:`X(39) <X(39)>` = QA-P42 (QA-Orthopole Center) of quadrangle ABC\ :ref:`X(2) <X(2)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/index.php/15-mathematics/encyclopedia-of-quadri-figures/quadrangle-objects/artikelen-qa/228-qa-p42.html)
+   * :ref:`X(39) <X(39)>` = :g:`QA <[ Q A ]>`-P42 (:g:`QA <[ Q A ]>`-Orthopole Center) of quadrangle :g:`ABC << A B C >>`\ :ref:`X(2) <X(2)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/index.php/15-mathematics/encyclopedia-of-quadri-figures/quadrangle-objects/artikelen-qa/228-qa-p42.html)
 
 Notes
 -----
 
 .. container:: note-item
 
-   The locus of the nine-point center in a Brocard porism (triangles sharing circumcircle and Brocard inellipse with ABC) is the circle through :ref:`X(5) <X(5)>` with center :ref:`X(39) <X(39)>`. (:person:`Randy Hutson <randy-hutson>`, August 29, 2018)
+   The locus of the nine-point center in a Brocard porism (triangles sharing circumcircle and Brocard inellipse with :g:`ABC << A B C >>`) is the circle through :ref:`X(5) <X(5)>` with center :ref:`X(39) <X(39)>`. (:person:`Randy Hutson <randy-hutson>`, August 29, 2018)
 
 .. container:: note-item
 

@@ -16,7 +16,7 @@ X(41) = X(6)-CEVA CONJUGATE OF X(31)
    :alt: X(41) = X(6)-CEVA CONJUGATE OF X(31)
    :align: center
 
-   **X(41) = X(6)-CEVA CONJUGATE OF X(31)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(41) = X(6)-CEVA CONJUGATE OF X(31)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -29,16 +29,12 @@ X(41) = X(6)-CEVA CONJUGATE OF X(31)
 
    * **Trilinears:** :math:`a^{2}\cot(A/2) : b^{2}\cot(B/2) : c^{2}\cot(C/2)`
    * **Trilinears:** :math:`a^{2}(a - s) : b^{2}(b - s) : c^{2}(c - s)`
-   * **Trilinears:** :math:`a \tan A' : :`, where A'B'C' is the :term:`excentral triangle <excentral-triangle>`
+   * **Trilinears:** :math:`a \tan A' : :`, where :g:`A'B'C' << A' B' C' >>` is the :term:`excentral triangle <excentral-triangle>`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(41) <X(41)>` = (r + 2R)(r\ :sup:`2` + 4rR + s\ :sup:`2`)\*\ :ref:`X(1) <X(1)>` - 6rR(r + 4R)\*\ :ref:`X(2) <X(2)>` -2r(:sup:`2` + 4rR - s\ :sup:`2`)\*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-
-.. container:: note-item
-
-   :ref:`X(41) <X(41)>` lies.
+   * :ref:`X(41) <X(41)>` = :math:`(r + 2R)(r^{2} + 4rR + s^{2})` :ref:`X(1) <X(1)>` - :math:`6rR(r + 4R)` :ref:`X(2) <X(2)>` - :math:`2r(^{2} + 4rR - s^{2})` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. collapse:: Incident Central Lines
    :badge: 16 lines

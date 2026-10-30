@@ -16,7 +16,7 @@ X(522) = ISOGONAL CONJUGATE OF X(109)
    :alt: X(522) = ISOGONAL CONJUGATE OF X(109)
    :align: center
 
-   **X(522) = ISOGONAL CONJUGATE OF X(109)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(522) = ISOGONAL CONJUGATE OF X(109)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -26,13 +26,9 @@ X(522) = ISOGONAL CONJUGATE OF X(109)
 .. collapse:: Alternate Coordinates
    :badge: 3 forms
 
-   * **Trilinears:** :math:`d(a,b,c) : :`, where d(a,b,c) = directed distance from A to line :ref:`X(1) <X(1)>`\ \ :ref:`X(3) <X(3)>`
+   * **Trilinears:** :math:`d(a,b,c) : :`, where d(a,b,c) = directed distance from :g:`A <A>` to line :ref:`X(1) <X(1)>`\ \ :ref:`X(3) <X(3)>`
    * **Barycentrics:** :math:`(b - c)(b + c - a) : :`
    * **Barycentrics:** :math:`\tan B/2 - \tan C/2 : :`
-
-.. container:: note-item
-
-   :ref:`X(522) <X(522)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 42 lines

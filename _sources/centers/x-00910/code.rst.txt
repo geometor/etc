@@ -12,7 +12,7 @@ X(910) = CROSSPOINT OF X(57) AND X(105) — Code
    :alt: X(910) = CROSSPOINT OF X(57) AND X(105)
    :align: center
 
-   **X(910) = CROSSPOINT OF X(57) AND X(105)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(910) = CROSSPOINT OF X(57) AND X(105)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

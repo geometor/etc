@@ -10,13 +10,13 @@ X(48) = CROSSPOINT OF X(1) AND X(63)
 
 .. enunciation::
 
-   Let A'B'C' be the hexyl triangle. Let A″ be the barycentric product of the circumcircle intercepts of line B'C'. Define B″, C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(48) <X(48)>`. (:person:`Randy Hutson <randy-hutson>`, July 31 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the hexyl triangle. Let :g:`A″ <A″>` be the barycentric product of the circumcircle intercepts of line :g:`B'C' <[ B' C' ]>`. Define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(48) <X(48)>`. (:person:`Randy Hutson <randy-hutson>`, July 31 2018)
 
 .. figure:: x-00048.svg
    :alt: X(48) = CROSSPOINT OF X(1) AND X(63)
    :align: center
 
-   **X(48) = CROSSPOINT OF X(1) AND X(63)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(48) = CROSSPOINT OF X(1) AND X(63)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,18 +27,14 @@ X(48) = CROSSPOINT OF X(1) AND X(63)
    :badge: 4 forms
 
    * **Trilinears:** :math:`a^{2}(b^{2} + c^{2} - a^{2}) ::`
-   * **Trilinears:** S\ :sub:`B`\ S\ :sub:`C` - S\ :sup:`2` : S\ :sub:`C`\ S\ :sub:`A` - S\ :sup:`2` : S\ :sub:`A`\ S\ :sub:`B` - S\ :sup:`2`
+   * **Trilinears:** :math:`S_{B}`\ :math:`S_{C}` - :math:`S^{2}` : :math:`S_{C}`\ :math:`S_{A}` - :math:`S^{2}` : :math:`S_{A}`\ :math:`S_{B}` - :math:`S^{2}`
    * **Trilinears:** :math:`1 - \cot B \cot C : :`
    * **Trilinears:** :math:`\sin 2A : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(48) <X(48)>` = (r\ :sup:`2` + 4rR + 4R\ :sup:`2` + s\ :sup:`2`)\*\ :ref:`X(1) <X(1)>` - 6R(2R + r)\*\ :ref:`X(2) <X(2)>` - 2(r\ :sup:`2` + 2rR - s\ :sup:`2`)\*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-
-.. container:: note-item
-
-   :ref:`X(48) <X(48)>` lies.
+   * :ref:`X(48) <X(48)>` = :math:`(r^{2} + 4rR + 4R^{2} + s^{2})` :ref:`X(1) <X(1)>` - :math:`6R(2R + r)` :ref:`X(2) <X(2)>` - :math:`2(r^{2} + 2rR - s^{2})` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. collapse:: Incident Central Lines
    :badge: 22 lines
@@ -68,7 +64,7 @@ X(48) = CROSSPOINT OF X(1) AND X(63)
    * :ref:`X(48) <X(48)>` = :ref:`X(2) <X(2)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(4) <X(4)>`
    * :ref:`X(48) <X(48)>` = :ref:`X(75) <X(75)>`-isoconjugate of :ref:`X(19) <X(19)>`
    * :ref:`X(48) <X(48)>` = :ref:`X(91) <X(91)>`-isoconjugate of X(1748)
-   * :ref:`X(48) <X(48)>` = perspector of ABC and extraversion triangle of :ref:`X(48) <X(48)>` (which is also the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(48) <X(48)>`)
+   * :ref:`X(48) <X(48)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(48) <X(48)>` (which is also the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(48) <X(48)>`)
    * :ref:`X(48) <X(48)>` = crosspoint of X(2066) and X(5414)
    * :ref:`X(48) <X(48)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(19) <X(19)>`}-harmonic conjugate of X(1953)
    * :ref:`X(48) <X(48)>` = perspector of circumconic centered at X(36033)

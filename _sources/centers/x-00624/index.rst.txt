@@ -10,22 +10,24 @@ X(624) = COMPLEMENT OF X(16)
 
 .. enunciation::
 
-   Trilinears F(16)/a - sin(A - π/3) : F(16)/b - sin(B - π/3) : F(16)/c - sin(C - π/3)
+   :ref:`X(624) <X(624)>` = reflection of :ref:`X(623) <X(623)>` in :ref:`X(625) <X(625)>`
 
 .. figure:: x-00624.svg
    :alt: X(624) = COMPLEMENT OF X(16)
    :align: center
 
-   **X(624) = COMPLEMENT OF X(16)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(624) = COMPLEMENT OF X(16)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where, f(a,b,c) = [2(b\ :sup:`2` + c\ :sup:`2`) area - sqr(3)(a\ :sup:`2`\ S\ :sub:`A` + 2S\ :sub:`B`\ S\ :sub:`C`)]/a
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = [2(b^{2} + c^{2}) \operatorname{area} - \sqrt{3}(a^{2}S_{A} + 2S_{B}S_{C})]/a`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`7.336158936653`
 
-.. container:: note-item
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-   :ref:`X(624) <X(624)>` lies.
+   * **Trilinears:** :math:`F(16)/a - \sin(A - \pi /3) : F(16)/b - \sin(B - \pi /3) : F(16)/c - \sin(C - \pi /3)`
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines
@@ -43,13 +45,6 @@ X(624) = COMPLEMENT OF X(16)
    * :ref:`X(624) <X(624)>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X(619) <X(619)>`
    * :ref:`X(624) <X(624)>` = :term:`crosspoint <crosspoint>` of :ref:`X(2) <X(2)>` and :ref:`X(301) <X(301)>`
    * :ref:`X(624) <X(624)>` = intersection of extended legs P(5)U(11) and U(5)P(11) of trapezoid PU(5)PU(11)
-
-Notes
------
-
-.. container:: note-item
-
-   Barycentrics g(a,b,c) : g(b,c,a) : g(c,a,b), where g(a,b,c) = af(a,b,c)
 
 .. toctree::
    :hidden:

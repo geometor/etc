@@ -12,7 +12,7 @@ X(800) = CROSSPOINT OF X(2) AND X(64) — Code
    :alt: X(800) = CROSSPOINT OF X(2) AND X(64)
    :align: center
 
-   **X(800) = CROSSPOINT OF X(2) AND X(64)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(800) = CROSSPOINT OF X(2) AND X(64)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

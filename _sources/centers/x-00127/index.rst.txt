@@ -10,13 +10,13 @@ X(127) = X(112)-OF-MEDIAL-TRIANGLE
 
 .. enunciation::
 
-   Let A'B'C' be the :term:`orthic triangle <orthic-triangle>`. Let La be the van Aubel line of triangle AB'C', and define Lb and Lc cyclically. Let A″ = Lb∩Lc, and define B″ and C″ cyclically. The lines A'A″, B'B″, C'C″ concur in :ref:`X(127) <X(127)>`, which is :ref:`X(3) <X(3)>`-of-A″B″C″. (:person:`Randy Hutson <randy-hutson>`, July 31 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`L_{a} <L_a>` be the van Aubel line of triangle :g:`AB'C' << A B' C' >>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(127) <X(127)>`, which is :ref:`X(3) <X(3)>`-of-:g:`A″B″C″ << A″ B″ C″ >>`. (:person:`Randy Hutson <randy-hutson>`, July 31 2018)
 
 .. figure:: x-00127.svg
    :alt: X(127) = X(112)-OF-MEDIAL-TRIANGLE
    :align: center
 
-   **X(127) = X(112)-OF-MEDIAL-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(127) = X(112)-OF-MEDIAL-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,7 +27,7 @@ X(127) = X(112)-OF-MEDIAL-TRIANGLE
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`(b^2 - c^2)^2(b^2 + c^2 - a^2)(b^4 + c^4 - a^4) : :`
+   * **Barycentrics:** :math:`(b^{2} - c^{2})^{2}(b^{2} + c^{2} - a^{2})(b^{4} + c^{4} - a^{4}) : :`
 
 .. container:: note-item
 
@@ -48,14 +48,14 @@ X(127) = X(112)-OF-MEDIAL-TRIANGLE
    * :ref:`X(127) <X(127)>` = :term:`complement <complement>` of :ref:`X(112) <X(112)>`
    * :ref:`X(127) <X(127)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X(525) <X(525)>`
    * :ref:`X(127) <X(127)>` = :ref:`X(4) <X(4)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(525) <X(525)>`
-   * :ref:`X(127) <X(127)>` = X(1292)-of-orthic-triangle if ABC is acute
+   * :ref:`X(127) <X(127)>` = X(1292)-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(127) <X(127)>` = perspector of circumconic centered at X(2485)
    * :ref:`X(127) <X(127)>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through X(2485)
    * :ref:`X(127) <X(127)>` = :ref:`X(2) <X(2)>`-Ceva conjugate of X(2485)
    * :ref:`X(127) <X(127)>` = inverse-in-polar-circle of X(1289)
    * :ref:`X(127) <X(127)>` = inverse-in-orthoptic-circle-of-Steiner-inellipse of X(2373)
    * :ref:`X(127) <X(127)>` = :ref:`X(112) <X(112)>`-of-:term:`medial triangle <medial-triangle>`
-   * :ref:`X(127) <X(127)>` = center of the rectangular hyperbola that passes through A, B, C, and :ref:`X(22) <X(22)>`
+   * :ref:`X(127) <X(127)>` = center of the rectangular hyperbola that passes through :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, and :ref:`X(22) <X(22)>`
    * :ref:`X(127) <X(127)>` = :term:`crosssum <crosssum>` of circumcircle intercepts of line :ref:`X(3) <X(3)>`\ \ :ref:`X(66) <X(66)>`
    * :ref:`X(127) <X(127)>` = orthopole of line :ref:`X(3) <X(3)>`\ \ :ref:`X(66) <X(66)>`
    * :ref:`X(127) <X(127)>` = Kirikami-six-circles image of :ref:`X(22) <X(22)>`

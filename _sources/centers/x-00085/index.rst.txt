@@ -10,28 +10,25 @@ X(85) = ISOTOMIC CONJUGATE OF X(9)
 
 .. enunciation::
 
-   Let A\ :sub:`38`\ B\ :sub:`38`\ C\ :sub:`38` be Gemini triangle 38. Let A' be the perspector of conic {A,B,C,B\ :sub:`38`,C\ :sub:`38`}}, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(85) <X(85)>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
+   Let :g:`A_{38}B_{38}C_{38} << A_38 B_38 C_38 >>` be Gemini triangle 38. Let :g:`A' <A'>` be the perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B_{38} <B_38>`,\ :g:`C_{38} <C_38>`}}, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(85) <X(85)>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
 
 .. figure:: x-00085.svg
    :alt: X(85) = ISOTOMIC CONJUGATE OF X(9)
    :align: center
 
-   **X(85) = ISOTOMIC CONJUGATE OF X(9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(85) = ISOTOMIC CONJUGATE OF X(9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`b^{2}c^{2}/(b + c - a) : c^{2}a^{2}/(c + a - b) : a^{2}b^{2}/(a + b - c), = \tan(A/2) \csc^{2}A : \tan(B/2) \csc^{2}B : \tan(C/2) \csc^{2}C`
+   | **Trilinears:** :math:`b^{2}c^{2}/(b + c - a) : c^{2}a^{2}/(c + a - b) : a^{2}b^{2}/(a + b - c)`
    | **Barycentrics:** :math:`bc/(b + c - a) : ca/(c + a - b) : ab/(a + b - c)`
    | **Search Value (6, 9, 13):** :math:`1.369706806417`
 
 .. collapse:: Alternate Coordinates
-   :badge: 1 form
+   :badge: 2 forms
 
-   * **Barycentrics:** :math:`\cot A' : :`, where A'B'C' is the :term:`excentral triangle <excentral-triangle>`
-
-.. container:: note-item
-
-   :ref:`X(85) <X(85)>` lies.
+   * **Trilinears:** :math:`\tan(A/2) \csc^{2} A : \tan(B/2) \csc^{2} B : \tan(C/2) \csc^{2} C`
+   * **Barycentrics:** :math:`\cot A' : :`, where :g:`A'B'C' << A' B' C' >>` is the :term:`excentral triangle <excentral-triangle>`
 
 .. collapse:: Incident Central Lines
    :badge: 12 lines
@@ -50,7 +47,7 @@ X(85) = ISOTOMIC CONJUGATE OF X(9)
    * :ref:`X(85) <X(85)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`169 <X(169)>`), (:ref:`2 <X(2)>`, :ref:`7 <X(7)>`), (:ref:`57 <X(57)>`, :ref:`77 <X(77)>`), (:ref:`92 <X(92)>`, :ref:`342 <X(342)>`)
    * :ref:`X(85) <X(85)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`75 <X(75)>`), (:ref:`57 <X(57)>`, :ref:`273 <X(273)>`), (:ref:`92 <X(92)>`, :ref:`309 <X(309)>`), (:ref:`142 <X(142)>`, :ref:`2 <X(2)>`), (:ref:`226 <X(226)>`, :ref:`7 <X(7)>`)
    * :ref:`X(85) <X(85)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`76 <X(76)>`, :ref:`76 <X(76)>`), (:ref:`85 <X(85)>`, :ref:`279 <X(279)>`), (:ref:`99 <X(99)>`, :ref:`1 <X(1)>`), (:ref:`274 <X(274)>`, :ref:`85 <X(85)>`), (:ref:`668 <X(668)>`, :ref:`85 <X(85)>`), (:ref:`789 <X(789)>`, :ref:`85 <X(85)>`), (:ref:`799 <X(799)>`, :ref:`85 <X(85)>`), (:ref:`811 <X(811)>`, :ref:`85 <X(85)>`)
-   * :ref:`X(85) <X(85)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(522) <X(522)>`\ \ :ref:`X(693) <X(693)>` (the isotomic conjugate of the circumconic centered at :ref:`X(1) <X(1)>`, conic {A,B,C,\ :ref:`X(100) <X(100)>`,\ :ref:`X(664) <X(664)>`,X(1120),X(1320)}; also the polar of :ref:`X(33) <X(33)>` wrt polar circle)
+   * :ref:`X(85) <X(85)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(522) <X(522)>`\ \ :ref:`X(693) <X(693)>` (the isotomic conjugate of the circumconic centered at :ref:`X(1) <X(1)>`, conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(100) <X(100)>`,\ :ref:`X(664) <X(664)>`,X(1120),X(1320)}; also the polar of :ref:`X(33) <X(33)>` wrt polar circle)
    * :ref:`X(85) <X(85)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(33) <X(33)>` (line :ref:`X(657) <X(657)>`\ X(4041))
    * :ref:`X(85) <X(85)>` = polar conjugate of :ref:`X(33) <X(33)>`
    * :ref:`X(85) <X(85)>` = {:ref:`X(7) <X(7)>`,\ :ref:`X(8) <X(8)>`}-harmonic conjugate of X(6604)

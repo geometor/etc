@@ -11,23 +11,19 @@ X(478) = CENTER OF YIU CONIC
 
 .. enunciation::
 
-   Center of the Yiu conic, which passes through the points outside the circumcircle at which the excircles of ABC are tangent to the sidelines of ABC. See :person:`Paul Yiu <paul-yiu>`'s
+   Center of the Yiu conic, which passes through the points outside the circumcircle at which the excircles of :g:`ABC << A B C >>` are tangent to the sidelines of :g:`ABC << A B C >>`. See :person:`Paul Yiu <paul-yiu>`'s
 
 .. figure:: x-00478.svg
    :alt: X(478) = CENTER OF YIU CONIC
    :align: center
 
-   **X(478) = CENTER OF YIU CONIC** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(478) = CENTER OF YIU CONIC** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`a[a^{4} - 2abc(b + c - a) - (b^{2} - c^{2})^{2}]/(b + c - a) : :`
-   | **Barycentrics:** :math:`a^2*(a + b - c)*(a - b + c)*(a^4 - b^4 + 2*a^2*b*c - 2*a*b^2*c - 2*a*b*c^2 + 2*b^2*c^2 - c^4)`
+   | **Barycentrics:** :math:`a^{2} (a + b - c) \cdot (a - b + c) \cdot (a^{4} - b^{4} + 2 a^{2} b c - 2 a b^{2} c - 2 a b c^{2} + 2 b^{2} c^{2} - c^{4})`
    | **Search Value (6, 9, 13):** :math:`-0.295568314180`
-
-.. container:: note-item
-
-   :ref:`X(478) <X(478)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 34 lines
@@ -44,7 +40,7 @@ X(478) = CENTER OF YIU CONIC
    * :ref:`X(478) <X(478)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): {:ref:`6 <X(6)>`, 3435}, {:ref:`650 <X(650)>`, 2968}
    * :ref:`X(478) <X(478)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(521) <X(521)>`\ X(14312)
    * .
-   * :ref:`X(478) <X(478)>` = center of the perspeconic of every pair of these triangles: ABC, 2nd extouch, 3rd extouch
+   * :ref:`X(478) <X(478)>` = center of the perspeconic of every pair of these triangles: :g:`ABC << A B C >>`, 2nd extouch, 3rd extouch
    * :ref:`X(478) <X(478)>` = crosssum of circumcircle intercepts of excircles radical circle
    * :ref:`X(478) <X(478)>` = trilinear product X(i)\*X(j) for these {i,j}: {:ref:`6 <X(6)>`, 21147}, {:ref:`7 <X(7)>`, :ref:`205 <X(205)>`}, {:ref:`34 <X(34)>`, 22132}, {:ref:`48 <X(48)>`, 14257}, {:ref:`56 <X(56)>`, 1766}, {:ref:`57 <X(57)>`, :ref:`197 <X(197)>`}, {:ref:`63 <X(63)>`, 17408}, {:ref:`109 <X(109)>`, 6588}, {:ref:`604 <X(604)>`, 3436}, {1397, 20928}, {1400, 16049}, {1408, 21074}, {1415, 21186}
 
@@ -53,7 +49,7 @@ Notes
 
 .. container:: note-item
 
-   Let Ea be the ellipse through A having foci B and C, and define Eb and Ec cyclically. The minor vertices, A\ :sub:`1`, A\ :sub:`2`; B\ :sub:`1`, B\ :sub:`2`; C\ :sub:`1`, C\ :sub:`2` are the touchpoints of the excircle with sidelines external to the circumcircle; i.e., they lie on the Yiu conic, centered at :ref:`X(478) <X(478)>`. See `Figure <https://user-images.githubusercontent.com/16231062/145788967-e1c21905-87e2-4eef-8990-a7589e9f0d04.png>`__. If ABC is a right triangle, then the Yiu conic is a pair of lines meeting in :ref:`X(478) <X(478)>`. `Figure <https://user-images.githubusercontent.com/16231062/145790658-4322c765-ee4d-4c6f-96dd-50eaf63ea4b6.png>`__. (:person:`Dan Reznik <dan-reznik>`, December 13, 2021)
+   Let :g:`E_{a} <E_a>` be the ellipse through A having foci :g:`B <B>` and :g:`C <C>`, and define :g:`E_{b} <E_b>` and :g:`E_{c} <E_c>` cyclically. The minor vertices, :g:`A_{1} <A_1>`, :g:`A_{2} <A_2>`; :g:`B_{1} <B_1>`, :g:`B_{2} <B_2>`; :g:`C_{1} <C_1>`, :g:`C_{2} <C_2>` are the touchpoints of the excircle with sidelines external to the circumcircle; i.e., they lie on the Yiu conic, centered at :ref:`X(478) <X(478)>`. See `Figure <https://user-images.githubusercontent.com/16231062/145788967-e1c21905-87e2-4eef-8990-a7589e9f0d04.png>`__. If :g:`ABC << A B C >>` is a right triangle, then the Yiu conic is a pair of lines meeting in :ref:`X(478) <X(478)>`. `Figure <https://user-images.githubusercontent.com/16231062/145790658-4322c765-ee4d-4c6f-96dd-50eaf63ea4b6.png>`__. (:person:`Dan Reznik <dan-reznik>`, December 13, 2021)
 
 .. toctree::
    :hidden:

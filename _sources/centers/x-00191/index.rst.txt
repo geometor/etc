@@ -10,20 +10,20 @@ X(191) = X(10)-CEVA CONJUGATE OF X(1)
 
 .. enunciation::
 
-   Let Ia be the reflection of :ref:`X(1) <X(1)>` in the perpendicular bisector of BC, and define Ib and Ic cyclically. :ref:`X(191) <X(191)>` = :ref:`X(21) <X(21)>` of IaIbIc. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
+   Let :g:`I_{a} <I_a>` be the reflection of :ref:`X(1) <X(1)>` in the perpendicular bisector of :g:`BC <[ B C ]>`, and define :g:`I_{b} <I_b>` and :g:`I_{c} <I_c>` cyclically. :ref:`X(191) <X(191)>` = :ref:`X(21) <X(21)>` of :g:`I_{a}I_{b}I_{c} << I_a I_b I_c >>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
 
 .. _preamble-0005:
 
 .. admonition:: Group Preamble — Centers X(191)-X(236)
    :class: note
 
-   Centers :ref:`X(191) <X(191)>`-:ref:`X(236) <X(236)>` are :term:`Ceva conjugates <ceva-conjugate>`. (The P-Ceva conjugate of Q is the perspector of the :term:`cevian triangle <cevian-triangle>` of P and the :term:`anticevian triangle <anticevian-triangle>` of Q.)
+   Centers :ref:`X(191) <X(191)>`-:ref:`X(236) <X(236)>` are :term:`Ceva conjugates <ceva-conjugate>`. (The P-Ceva conjugate of :g:`Q <Q>` is the perspector of the :term:`cevian triangle <cevian-triangle>` of :g:`P <P>` and the :term:`anticevian triangle <anticevian-triangle>` of :g:`Q <Q>`.)
 
 .. figure:: x-00191.svg
    :alt: X(191) = X(10)-CEVA CONJUGATE OF X(1)
    :align: center
 
-   **X(191) = X(10)-CEVA CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(191) = X(10)-CEVA CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -38,11 +38,7 @@ X(191) = X(10)-CEVA CONJUGATE OF X(1)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(191) <X(191)>` = :ref:`X(1) <X(1)>` - 2 :ref:`X(21) <X(21)>`
-
-.. container:: note-item
-
-   :ref:`X(191) <X(191)>` lies.
+   * :ref:`X(191) <X(191)>` = :ref:`X(1) <X(1)>` - :math:`2` :ref:`X(21) <X(21)>`
 
 .. collapse:: Incident Central Lines
    :badge: 10 lines
@@ -74,7 +70,7 @@ Notes
 
 .. container:: note-item
 
-   Let IaIbIc be the excentral triangle. Let Na be the nine-point center of BCIa, and define Nb and Nc cyclically. The lines IaNa, IbNb, IcNc concur in :ref:`X(191) <X(191)>`; c.f. X(5506). (Randy Hutson, December 2, 2017)
+   Let :g:`I_{a}I_{b}I_{c} << I_a I_b I_c >>` be the excentral triangle. Let :g:`N_{a} <N_a>` be the nine-point center of BCIa, and define :g:`N_{b} <N_b>` and :g:`N_{c} <N_c>` cyclically. The lines :g:`I_{a}N_{a} <[ I_a N_a ]>`, :g:`I_{b}N_{b} <[ I_b N_b ]>`, :g:`I_{c}N_{c} <[ I_c N_c ]>` concur in :ref:`X(191) <X(191)>`; c.f. X(5506). (Randy Hutson, December 2, 2017)
 
 .. toctree::
    :hidden:

@@ -10,13 +10,13 @@ X(104) = ANTIPODE OF X(100)
 
 .. enunciation::
 
-   Let L\ :sub:`A` be the reflection of the line :ref:`X(1) <X(1)>`\ \ :ref:`X(513) <X(513)>` in line BC, and define L\ :sub:`B` and L\ :sub:`C` cyclically. Let A' = L\ :sub:`B`\ ∩L\ :sub:`C`, B' = L\ :sub:`C`\ ∩L\ :sub:`A`, C' = L\ :sub:`A`\ ∩L\ :sub:`B`. The lines AA', BB', CC' concur in :ref:`X(104) <X(104)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   Let :g:`L_{A} <L_A>` be the reflection of the line :ref:`X(1) <X(1)>`\ \ :ref:`X(513) <X(513)>` in line :g:`BC <[ B C ]>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A' <A'>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, :g:`B' <B'>` = :g:`L_{C} <L_C>`\ ∩\ :g:`L_{A} <L_A>`, :g:`C' <C'>` = :g:`L_{A} <L_A>`\ ∩\ :g:`L_{B} <L_B>`. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(104) <X(104)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. figure:: x-00104.svg
    :alt: X(104) = ANTIPODE OF X(100)
    :align: center
 
-   **X(104) = ANTIPODE OF X(100)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(104) = ANTIPODE OF X(100)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,16 +28,12 @@ X(104) = ANTIPODE OF X(100)
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`1/[b^3 + c^3 - (a^2 + bc)(b + c) + 2abc] : :`
+   * **Trilinears:** :math:`1/[b^{3} + c^{3} - (a^{2} + bc)(b + c) + 2abc] : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(104) <X(104)>` = 2R\*\ :ref:`X(1) <X(1)>` - 3R\*\ :ref:`X(2) <X(2)>` + (2R - 2r)\*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-
-.. container:: note-item
-
-   :ref:`X(104) <X(104)>` lies.
+   * :ref:`X(104) <X(104)>` = :math:`2R` :ref:`X(1) <X(1)>` - :math:`3R` :ref:`X(2) <X(2)>` + :math:`(2R - 2r)` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. collapse:: Incident Central Lines
    :badge: 565 lines
@@ -57,7 +53,7 @@ X(104) = ANTIPODE OF X(100)
    * :ref:`X(104) <X(104)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`36 <X(36)>`), (:ref:`44 <X(44)>`, :ref:`55 <X(55)>`)
    * :ref:`X(104) <X(104)>` = :ref:`X(21) <X(21)>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X(109) <X(109)>`
    * :ref:`X(104) <X(104)>` = circumcircle-antipode of :ref:`X(100) <X(100)>`
-   * :ref:`X(104) <X(104)>` = point of intersection, other than A, B, and C, of the circumcircle and Feuerbach hyperbola
+   * :ref:`X(104) <X(104)>` = point of intersection, other than :g:`A <A>`, :g:`B <B>`, and :g:`C <C>`, of the circumcircle and Feuerbach hyperbola
    * :ref:`X(104) <X(104)>` = Λ(:ref:`X(1) <X(1)>`, :ref:`X(3) <X(3)>`)
    * :ref:`X(104) <X(104)>` = Ψ(:ref:`X(101) <X(101)>`, :ref:`X(9) <X(9)>`)
    * :ref:`X(104) <X(104)>` = :ref:`X(125) <X(125)>`-of-the-hexyl-triangle
@@ -90,19 +86,19 @@ Notes
 
 .. container:: note-item
 
-   Let A', B', C' be the intersections of the antiorthic axis and lines BC, CA, AB, resp. Let Oa, Ob, Oc be the circumcenters of AB'C', BC'A', CA'B', resp. The lines AOa, BOb, COc conucr in :ref:`X(104) <X(104)>`. (Randy Hutson, December 2, 2017)
+   Let :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>` be the intersections of the antiorthic axis and lines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, resp. Let :g:`O_{a} <O_a>`, :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>` be the circumcenters of :g:`AB'C' << A B' C' >>`, :g:`BC'A' << B C' A' >>`, :g:`CA'B' << C A' B' >>`, resp. The lines :g:`AO_{a} <[ A O_a ]>`, :g:`BO_{b} <[ B O_b ]>`, :g:`CO_{c} <[ C O_c ]>` conucr in :ref:`X(104) <X(104)>`. (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 
-   Let A'B'C' be the :term:`excentral triangle <excentral-triangle>` (i.e. the antiorthic triangle). Let A″B″C″ be the triangle bounded by the orthic axes of A'BC, B'CA, C'AB. Then A″B″C″ is perspective to ABC at :ref:`X(104) <X(104)>`; c.f. X(8068). (Randy Hutson, December 2, 2017)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`excentral triangle <excentral-triangle>` (i.e. the antiorthic triangle). Let :g:`A″B″C″ << A″ B″ C″ >>` be the triangle bounded by the orthic axes of :g:`A'BC << A' B C >>`, :g:`B'CA << B' C A >>`, :g:`C'AB << C' A B >>`. Then :g:`A″B″C″ << A″ B″ C″ >>` is perspective to :g:`ABC << A B C >>` at :ref:`X(104) <X(104)>`; c.f. X(8068). (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 
-   Let A'B'C' be the excentral triangle. The de Longchamps lines of triangles A'BC, B'CA, C'AB bound a triangle perspective to ABC at :ref:`X(104) <X(104)>`. (Randy Hutson, June 27, 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the excentral triangle. The de Longchamps lines of triangles :g:`A'BC << A' B C >>`, :g:`B'CA << B' C A >>`, :g:`C'AB << C' A B >>` bound a triangle perspective to :g:`ABC << A B C >>` at :ref:`X(104) <X(104)>`. (Randy Hutson, June 27, 2018)
 
 .. container:: note-item
 
-   Let A'B'C' be the excentral triangle. The Hatzipolakis axes of triangles A'BC, B'CA, C'AB bound a triangle perspective to ABC at :ref:`X(104) <X(104)>`. (Randy Hutson, June 27, 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the excentral triangle. The Hatzipolakis axes of triangles :g:`A'BC << A' B C >>`, :g:`B'CA << B' C A >>`, :g:`C'AB << C' A B >>` bound a triangle perspective to :g:`ABC << A B C >>` at :ref:`X(104) <X(104)>`. (Randy Hutson, June 27, 2018)
 
 .. toctree::
    :hidden:

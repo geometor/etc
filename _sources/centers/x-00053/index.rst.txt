@@ -10,13 +10,13 @@ X(53) = SYMMEDIAN POINT OF ORTHIC TRIANGLE
 
 .. enunciation::
 
-   Let A'B'C' be the Euler triangle. Let L\ :sub:`A` be the :term:`trilinear polar <trilinear-polar>` of A', and define L\ :sub:`B` and L\ :sub:`C` cyclically. Let A″ = L\ :sub:`B`\ ∩L\ :sub:`C`, and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(53) <X(53)>`. (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
+   Let :g:`A'B'C' << A' B' C' >>` be the Euler triangle. Let :g:`L_{A} <L_A>` be the :term:`trilinear polar <trilinear-polar>` of :g:`A' <A'>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A″ <A″>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(53) <X(53)>`. (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
 
 .. figure:: x-00053.svg
    :alt: X(53) = SYMMEDIAN POINT OF ORTHIC TRIANGLE
    :align: center
 
-   **X(53) = SYMMEDIAN POINT OF ORTHIC TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(53) = SYMMEDIAN POINT OF ORTHIC TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,11 +27,7 @@ X(53) = SYMMEDIAN POINT OF ORTHIC TRIANGLE
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`(a^2 (b^2 + c^2) - (b^2 - c^2)^2)/(a^2 - b^2 - c^2) : :`
-
-.. container:: note-item
-
-   :ref:`X(53) <X(53)>` lies.
+   * **Barycentrics:** :math:`(a^{2} (b^{2} + c^{2}) - (b^{2} - c^{2})^{2})/(a^{2} - b^{2} - c^{2}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 17 lines
@@ -52,7 +48,7 @@ X(53) = SYMMEDIAN POINT OF ORTHIC TRIANGLE
    * :ref:`X(53) <X(53)>` = :term:`trilinear pole <trilinear-pole>` of line X(12077)X(15451) (the polar of :ref:`X(95) <X(95)>` wrt polar circle)
    * :ref:`X(53) <X(53)>` = pole wrt polar circle of trilinear polar of :ref:`X(95) <X(95)>` (line :ref:`X(323) <X(323)>`\ \ :ref:`X(401) <X(401)>`)
    * :ref:`X(53) <X(53)>` = polar conjugate of :ref:`X(95) <X(95)>`
-   * :ref:`X(53) <X(53)>` = excentral-to-ABC :term:`functional image <functional-image>` of :ref:`X(6) <X(6)>`
+   * :ref:`X(53) <X(53)>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X(6) <X(6)>`
 
 Notes
 -----

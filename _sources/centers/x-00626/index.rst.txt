@@ -16,17 +16,13 @@ X(626) = COMPLEMENT OF X(32)
    :alt: X(626) = COMPLEMENT OF X(32)
    :align: center
 
-   **X(626) = COMPLEMENT OF X(32)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(626) = COMPLEMENT OF X(32)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`(b^{4} + c^{4})/a : (c^{4} + a^{4})/b: (a^{4} + b^{4})/c`
    | **Barycentrics:** :math:`b^{4} + c^{4} : c^{4} + a^{4} : a^{4} + b^{4}`
    | **Search Value (6, 9, 13):** :math:`3.803696965640`
-
-.. container:: note-item
-
-   :ref:`X(626) <X(626)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines

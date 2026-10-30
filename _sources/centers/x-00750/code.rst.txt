@@ -12,7 +12,7 @@ X(750) = INTERSECTION OF LINES X(1)X(88) AND X(2)X(31) — Code
    :alt: X(750) = INTERSECTION OF LINES X(1)X(88) AND X(2)X(31)
    :align: center
 
-   **X(750) = INTERSECTION OF LINES X(1)X(88) AND X(2)X(31)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(750) = INTERSECTION OF LINES X(1)X(88) AND X(2)X(31)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

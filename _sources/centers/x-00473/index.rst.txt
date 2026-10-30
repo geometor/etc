@@ -10,13 +10,13 @@ X(473) = X(61)-CROSS CONJUGATE OF X(302)
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(473) <X(473)>` has Shinagawa coefficients (F, 3\ :sup:`1/2`\ S).
+   As a point on the Euler line, :ref:`X(473) <X(473)>` has Shinagawa coefficients :math:`(F, 3^{1/2}S)`.
 
 .. figure:: x-00473.svg
    :alt: X(473) = X(61)-CROSS CONJUGATE OF X(302)
    :align: center
 
-   **X(473) = X(61)-CROSS CONJUGATE OF X(302)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(473) = X(61)-CROSS CONJUGATE OF X(302)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,10 +28,6 @@ X(473) = X(61)-CROSS CONJUGATE OF X(302)
    :badge: 1 form
 
    * **Barycentrics:** :math:`\sqrt{3} \tan A + 1 : :`
-
-.. container:: note-item
-
-   :ref:`X(473) <X(473)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 7 lines

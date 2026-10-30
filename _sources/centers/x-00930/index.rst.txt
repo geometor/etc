@@ -16,12 +16,12 @@ X(930) = ANTICOMPLEMENT OF X(137)
    :alt: X(930) = ANTICOMPLEMENT OF X(137)
    :align: center
 
-   **X(930) = ANTICOMPLEMENT OF X(137)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(930) = ANTICOMPLEMENT OF X(137)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`1/(bw - cv) : :`, where u : v : w = :ref:`X(17) <X(17)>`
-   | **Barycentrics:** :math:`1/((b^2 - c^2) (a^4 + b^4 + c^4 - 2 a^2 b^2 - 2 a^2 c^2 - b^2 c^2)) : :`
+   | **Trilinears:** :math:`1/(bw - cv) : :`, where :math:`u : v : w` = :ref:`X(17) <X(17)>`
+   | **Barycentrics:** :math:`1/((b^{2} - c^{2}) (a^{4} + b^{4} + c^{4} - 2 a^{2} b^{2} - 2 a^{2} c^{2} - b^{2} c^{2})) : :`
    | **Search Value (6, 9, 13):** :math:`14.139603531276`
 
 .. container:: note-item

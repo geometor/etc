@@ -16,7 +16,7 @@ X(850) = BARYCENTRIC MULTIPLIER FOR KIEPERT HYPERBOLA
    :alt: X(850) = BARYCENTRIC MULTIPLIER FOR KIEPERT HYPERBOLA
    :align: center
 
-   **X(850) = BARYCENTRIC MULTIPLIER FOR KIEPERT HYPERBOLA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(850) = BARYCENTRIC MULTIPLIER FOR KIEPERT HYPERBOLA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,11 +28,7 @@ X(850) = BARYCENTRIC MULTIPLIER FOR KIEPERT HYPERBOLA
    :badge: 2 forms
 
    * **Barycentrics:** :math:`\csc A \sin(B - C) : :`
-   * **Barycentrics:** :math:`|AP(1)|^2 - |AU(1)|^2 : :`
-
-.. container:: note-item
-
-   :ref:`X(850) <X(850)>` lies.
+   * **Barycentrics:** :math:`|AP(1)|^{2} - |AU(1)|^{2} : :`
 
 .. collapse:: Incident Central Lines
    :badge: 9 lines
@@ -64,7 +60,7 @@ Notes
 
 .. container:: note-item
 
-   Let P1 and P2 be the two points on the de Longchamps line whose trilinear polars are parallel to the de Longchamps line. P1 and P2 lie on the Kiepert hyperbola and circle {:ref:`X(2) <X(2)>`, :ref:`X(98) <X(98)>`, :ref:`X(99) <X(99)>`}}. :ref:`X(850) <X(850)>` is the barycentric product P1\*P2. (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
+   Let :g:`P_{1} <P_1>` and :g:`P_{2} <P_2>` be the two points on the de Longchamps line whose trilinear polars are parallel to the de Longchamps line. :g:`P_{1} <P_1>` and :g:`P_{2} <P_2>` lie on the Kiepert hyperbola and circle {:ref:`X(2) <X(2)>`, :ref:`X(98) <X(98)>`, :ref:`X(99) <X(99)>`}}. :ref:`X(850) <X(850)>` is the barycentric product :g:`P_{1} <P_1>`\ \*\ :g:`P_{2} <P_2>`. (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
 
 .. toctree::
    :hidden:

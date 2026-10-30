@@ -16,12 +16,12 @@ X(211) = X(4)-CEVA CONJUGATE OF X(39)
    :alt: X(211) = X(4)-CEVA CONJUGATE OF X(39)
    :align: center
 
-   **X(211) = X(4)-CEVA CONJUGATE OF X(39)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(211) = X(4)-CEVA CONJUGATE OF X(39)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`\sin(A + \omega )[\cos B \sin(B + \omega ) + \cos C \sin(C + \omega ) - \cos A \sin(A + \omega )] : :`
-   | **Barycentrics:** :math:`a^4*(b^2 + c^2)*(a^2*b^2 - b^4 + a^2*c^2 + b^2*c^2 - c^4) : :`
+   | **Barycentrics:** :math:`a^{4} (b^{2} + c^{2}) \cdot (a^{2} b^{2} - b^{4} + a^{2} c^{2} + b^{2} c^{2} - c^{4}) : :`
    | **Search Value (6, 9, 13):** :math:`-0.885265197581`
 
 .. container:: note-item

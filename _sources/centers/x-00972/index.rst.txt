@@ -16,7 +16,7 @@ X(972) = ISOGONAL CONJUGATE OF X(971)
    :alt: X(972) = ISOGONAL CONJUGATE OF X(971)
    :align: center
 
-   **X(972) = ISOGONAL CONJUGATE OF X(971)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(972) = ISOGONAL CONJUGATE OF X(971)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -39,7 +39,7 @@ X(972) = ISOGONAL CONJUGATE OF X(971)
    * :ref:`X(972) <X(972)>` = reflection of :ref:`X(934) <X(934)>` in :ref:`X(3) <X(3)>`
    * :ref:`X(972) <X(972)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(971) <X(971)>`
    * :ref:`X(972) <X(972)>` = :term:`cevapoint <cevapoint>` of X(32622) and X(32623)
-   * :ref:`X(972) <X(972)>` = the point of intersection, other than A, B, and C, of the circumcircle and hyperbola {A,B,C,\ :ref:`X(4) <X(4)>`,\ :ref:`X(40) <X(40)>`,\ :ref:`X(57) <X(57)>`}}
+   * :ref:`X(972) <X(972)>` = the point of intersection, other than :g:`A <A>`, :g:`B <B>`, and :g:`C <C>`, of the circumcircle and hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(4) <X(4)>`,\ :ref:`X(40) <X(40)>`,\ :ref:`X(57) <X(57)>`}}
    * :ref:`X(972) <X(972)>` = Cundy-Parry Phi transform of X(14256)
    * :ref:`X(972) <X(972)>` = Cundy-Parry Psi transform of X(7367)
 

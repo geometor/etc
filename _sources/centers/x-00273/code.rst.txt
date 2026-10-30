@@ -6,13 +6,13 @@ X(273) = ISOGONAL CONJUGATE OF X(212) — Code
 
 .. enunciation::
 
-   Barycentrics tan A sec\ :sup:`2`\ (A/2) : tan B sec\ :sup:`2`\ (B/2) : tan C sec\ :sup:`2`\ (C/2)
+   :ref:`X(273) <X(273)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(212) <X(212)>`
 
 .. figure:: x-00273.svg
    :alt: X(273) = ISOGONAL CONJUGATE OF X(212)
    :align: center
 
-   **X(273) = ISOGONAL CONJUGATE OF X(212)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(273) = ISOGONAL CONJUGATE OF X(212)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

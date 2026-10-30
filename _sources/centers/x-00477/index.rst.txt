@@ -16,22 +16,18 @@ X(477) = TIXIER ANTIPODE
    :alt: X(477) = TIXIER ANTIPODE
    :align: center
 
-   **X(477) = TIXIER ANTIPODE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(477) = TIXIER ANTIPODE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`1/[4 \cos A + \cos(A - 2B) + \cos(A - 2C) - 3 \cos(B - C)] : :`
-   | **Barycentrics:** :math:`(a^8 + a^6*b^2 - 4*a^4*b^4 + a^2*b^6 + b^8 - 3*a^6*c^2 + 2*a^4*b^2*c^2 + 2*a^2*b^4*c^2 - 3*b^6*c^2 + 3*a^4*c^4 - 2*a^2*b^2*c^4 + 3*b^4*c^4 - a^2*c^6 - b^2*c^6)*(a^8 - 3*a^6*b^2 + 3*a^4*b^4 - a^2*b^6 + a^6*c^2 + 2*a^4*b^2*c^2 - 2*a^2*b^4*c^2 - b^6*c^2 - 4*a^4*c^4 + 2*a^2*b^2*c^4 + 3*b^4*c^4 + a^2*c^6 - 3*b^2*c^6 + c^8)`
+   | **Barycentrics:** :math:`(a^{8} + a^{6} b^{2} - 4 a^{4} b^{4} + a^{2} b^{6} + b^{8} - 3 a^{6} c^{2} + 2 a^{4} b^{2} c^{2} + 2 a^{2} b^{4} c^{2} - 3 b^{6} c^{2} + 3 a^{4} c^{4} - 2 a^{2} b^{2} c^{4} + 3 b^{4} c^{4} - a^{2} c^{6} - b^{2} c^{6}) \cdot (a^{8} - 3 a^{6} b^{2} + 3 a^{4} b^{4} - a^{2} b^{6} + a^{6} c^{2} + 2 a^{4} b^{2} c^{2} - 2 a^{2} b^{4} c^{2} - b^{6} c^{2} - 4 a^{4} c^{4} + 2 a^{2} b^{2} c^{4} + 3 b^{4} c^{4} + a^{2} c^{6} - 3 b^{2} c^{6} + c^{8})`
    | **Search Value (6, 9, 13):** :math:`13.591244760485`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`1/(a^6 (b^2 + c^2) - a^4 (3 b^4 - 2 b^2 c^2 + 3 c^4) + a^2 (3 b^6 - 2 b^4 c^2 - 2 b^2 c^4 + 3 c^6) - (b^2 - c^2)^2 (b^4 + 3 b^2 c^2 + c^4)) : :`
-
-.. container:: note-item
-
-   :ref:`X(477) <X(477)>` lies.
+   * **Barycentrics:** :math:`1/(a^{6} (b^{2} + c^{2}) - a^{4} (3 b^{4} - 2 b^{2} c^{2} + 3 c^{4}) + a^{2} (3 b^{6} - 2 b^{4} c^{2} - 2 b^{2} c^{4} + 3 c^{6}) - (b^{2} - c^{2})^{2} (b^{4} + 3 b^{2} c^{2} + c^{4})) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 69 lines

@@ -12,7 +12,7 @@ X(891) = ISOTOMIC CONJUGATE OF X(889) — Code
    :alt: X(891) = ISOTOMIC CONJUGATE OF X(889)
    :align: center
 
-   **X(891) = ISOTOMIC CONJUGATE OF X(889)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(891) = ISOTOMIC CONJUGATE OF X(889)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

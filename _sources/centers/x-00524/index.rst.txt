@@ -16,7 +16,7 @@ X(524) = ISOGONAL CONJUGATE OF X(111)
    :alt: X(524) = ISOGONAL CONJUGATE OF X(111)
    :align: center
 
-   **X(524) = ISOGONAL CONJUGATE OF X(111)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(524) = ISOGONAL CONJUGATE OF X(111)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,10 +27,6 @@ X(524) = ISOGONAL CONJUGATE OF X(111)
    :badge: 1 combination
 
    * :ref:`X(524) <X(524)>` = :ref:`X(2) <X(2)>` - :ref:`X(6) <X(6)>`
-
-.. container:: note-item
-
-   :ref:`X(524) <X(524)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 57 lines
@@ -61,20 +57,20 @@ X(524) = ISOGONAL CONJUGATE OF X(111)
    * :ref:`X(524) <X(524)>` = polar conjugate of X(17983)
    * :ref:`X(524) <X(524)>` = :ref:`X(63) <X(63)>`-isoconjugate of X(8753)
    * :ref:`X(524) <X(524)>` = barycentric cube root of X(8030)
-   * :ref:`X(524) <X(524)>` = perspector of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of 2nd Ehrmann triangle
+   * :ref:`X(524) <X(524)>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of 2nd Ehrmann triangle
    * :ref:`X(524) <X(524)>` = X(8705)-of-circumsymmedial-triangle
    * :ref:`X(524) <X(524)>` = Cundy-Parry Phi transform of X(13608)
    * :ref:`X(524) <X(524)>` = Cundy-Parry Psi transform of X(14262)
    * :ref:`X(524) <X(524)>` = Thomson-isogonal conjugate of X(1296)
    * :ref:`X(524) <X(524)>` = Lucas-isogonal conjugate of X(1296)
-   * :ref:`X(524) <X(524)>` = trilinear pole of line :ref:`X(351) <X(351)>`\ \ :ref:`X(690) <X(690)>` (line is perspectrix of ABC and 2nd Brocard triangle, and the tangent to the Steiner inellipse at X(2482))
+   * :ref:`X(524) <X(524)>` = trilinear pole of line :ref:`X(351) <X(351)>`\ \ :ref:`X(690) <X(690)>` (line is perspectrix of :g:`ABC << A B C >>` and 2nd Brocard triangle, and the tangent to the Steiner inellipse at X(2482))
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let A'B'C' be the 2nd Brocard triangle. Let A″ be the trilinear pole of line B'C', and define B″, C″ cyclically. The lines AA″, BB″, CC″ are parallel, and meet the line at infinity at :ref:`X(524) <X(524)>`. (:person:`Randy Hutson <randy-hutson>`, July 20, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the 2nd Brocard triangle. Let :g:`A″ <A″>` be the trilinear pole of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` are parallel, and meet the line at infinity at :ref:`X(524) <X(524)>`. (:person:`Randy Hutson <randy-hutson>`, July 20, 2016)
 
 .. toctree::
    :hidden:

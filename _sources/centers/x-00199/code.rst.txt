@@ -6,13 +6,13 @@ X(199) = X(10)-CEVA CONJUGATE OF X(6) — Code
 
 .. enunciation::
 
-   Let I\ :sub:`A`, I\ :sub:`B`, I\ :sub:`C` be the excenters. Let (O\ :sub:`A`) be the circle tangent to the circumcircle at A and passing through I\ :sub:`A`. Let A' be the antipode of A in (O\ :sub:`A`). Let L\ :sub:`A` be the tangent to (O\ :sub:`A`) at A'. Define L\ :sub:`B` and L\ :sub:`C` cyclically. Let T\ :sub:`A` = L\ :sub:`B`\ ∩L\ :sub:`C`, and define T\ :sub:`B` and T\ :sub:`C` cyclically. Triangle T\ :sub:`A`\ T\ :sub:`B`\ T\ :sub:`C` is homothetic to the :term:`tangential triangle <tangential-triangle>` at :ref:`X(199) <X(199)>`. (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
+   Let :g:`I_{A} <I_A>`, :g:`I_{B} <I_B>`, :g:`I_{C} <I_C>` be the excenters. Let (:g:`O_{A} <O_A>`) be the circle tangent to the circumcircle at :g:`A <A>` and passing through :g:`I_{A} <I_A>`. Let :g:`A' <A'>` be the antipode of :g:`A <A>` in (:g:`O_{A} <O_A>`). Let :g:`L_{A} <L_A>` be the tangent to (:g:`O_{A} <O_A>`) at :g:`A' <A'>`. Define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`T_{A} <T_A>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`T_{B} <T_B>` and :g:`T_{C} <T_C>` cyclically. Triangle :g:`T_{A}T_{B}T_{C} << T_A T_B T_C >>` is homothetic to the :term:`tangential triangle <tangential-triangle>` at :ref:`X(199) <X(199)>`. (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
 
 .. figure:: x-00199.svg
    :alt: X(199) = X(10)-CEVA CONJUGATE OF X(6)
    :align: center
 
-   **X(199) = X(10)-CEVA CONJUGATE OF X(6)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(199) = X(10)-CEVA CONJUGATE OF X(6)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

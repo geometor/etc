@@ -11,23 +11,19 @@ X(358) = 2nd MORLEY-TAYLOR-MARR CENTER
 
 .. enunciation::
 
-   :ref:`X(358) <X(358)>` is the perspector of the adjunct Morley triangle and ABC, and also the Hofstadter 2/3 point.
+   :ref:`X(358) <X(358)>` is the perspector of the adjunct Morley triangle and :g:`ABC << A B C >>`, and also the Hofstadter 2/3 point.
 
 .. figure:: x-00358.svg
    :alt: X(358) = 2nd MORLEY-TAYLOR-MARR CENTER
    :align: center
 
-   **X(358) = 2nd MORLEY-TAYLOR-MARR CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(358) = 2nd MORLEY-TAYLOR-MARR CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`\cos A/3 : \cos B/3 : \cos C/3`
    | **Barycentrics:** :math:`\sin A \cos A/3 : \sin B \cos B/3 : \sin C \cos C/3`
    | **Search Value (6, 9, 13):** :math:`1.894018594196`
-
-.. container:: note-item
-
-   :ref:`X(358) <X(358)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines

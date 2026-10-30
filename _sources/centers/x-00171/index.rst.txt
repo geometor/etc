@@ -16,17 +16,13 @@ X(171) = {X(2), X(31)}-HARMONIC CONJUGATE OF X(238)
    :alt: X(171) = {X(2), X(31)}-HARMONIC CONJUGATE OF X(238)
    :align: center
 
-   **X(171) = {X(2), X(31)}-HARMONIC CONJUGATE OF X(238)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(171) = {X(2), X(31)}-HARMONIC CONJUGATE OF X(238)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`a^{2} + bc : b^{2} + ca : c^{2} + ab`
    | **Barycentrics:** :math:`a^{3} + abc : b^{3} + abc : c^{3} + abc`
    | **Search Value (6, 9, 13):** :math:`1.379817388436`
-
-.. container:: note-item
-
-   :ref:`X(171) <X(171)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 23 lines
@@ -41,13 +37,13 @@ X(171) = {X(2), X(31)}-HARMONIC CONJUGATE OF X(238)
    * :ref:`X(171) <X(171)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(7018)
    * :ref:`X(171) <X(171)>` = :term:`complement <complement>` of X(4388)
    * :ref:`X(171) <X(171)>` = :term:`anticomplement <anticomplement>` of X(3846)
-   * :ref:`X(171) <X(171)>` = perspector of Gemini triangle 33 and cross-triangle of ABC and Gemini triangle 33
-   * :ref:`X(171) <X(171)>` = :term:`trilinear pole <trilinear-pole>` line X(3287)X(3805) (the perspectrix of ABC and Gemini triangle 34)
+   * :ref:`X(171) <X(171)>` = perspector of Gemini triangle 33 and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 33
+   * :ref:`X(171) <X(171)>` = :term:`trilinear pole <trilinear-pole>` line X(3287)X(3805) (the perspectrix of :g:`ABC << A B C >>` and Gemini triangle 34)
    * :ref:`X(171) <X(171)>` = :ref:`X(292) <X(292)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(238) <X(238)>`
    * :ref:`X(171) <X(171)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`100 <X(100)>`, :ref:`171 <X(171)>`), (:ref:`643 <X(643)>`, :ref:`42 <X(42)>`)
    * :ref:`X(171) <X(171)>` = :term:`crosssum <crosssum>` of PU(6)
    * :ref:`X(171) <X(171)>` = :term:`crosspoint <crosspoint>` of PU(8)
-   * :ref:`X(171) <X(171)>` = intersection of tangents at PU(8) to hyperbola {A,B,C,\ :ref:`X(100) <X(100)>`,PU(8)}}
+   * :ref:`X(171) <X(171)>` = intersection of tangents at PU(8) to hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(100) <X(100)>`,PU(8)}}
    * :ref:`X(171) <X(171)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(40) <X(40)>`}-harmonic conjugate of X(37598)
    * :ref:`X(171) <X(171)>` = {:ref:`X(55) <X(55)>`,\ :ref:`X(56) <X(56)>`}-harmonic conjugate of X(23853)
 

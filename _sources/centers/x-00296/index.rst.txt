@@ -16,22 +16,22 @@ X(296) = ISOGONAL CONJUGATE OF X(243)
    :alt: X(296) = ISOGONAL CONJUGATE OF X(243)
    :align: center
 
-   **X(296) = ISOGONAL CONJUGATE OF X(243)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(296) = ISOGONAL CONJUGATE OF X(243)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(\cos A)/[\cos^{2}A - \cos B \cos C] : :`
-   | **Barycentrics:** :math:`a^2*(a + b - c)*(a - b + c)*(a^2 - b^2 - c^2)*(a^2*b^2 - b^4 + a^3*c - a*b^2*c - 2*a^2*c^2 + b^2*c^2 + a*c^3)*(a^3*b - 2*a^2*b^2 + a*b^3 + a^2*c^2 - a*b*c^2 + b^2*c^2 - c^4) : :`
+   | **Trilinears:** :math:`(\cos A)/[\cos^{2} A - \cos B \cos C] : :`
+   | **Barycentrics:** :math:`a^{2} (a + b - c) \cdot (a - b + c) \cdot (a^{2} - b^{2} - c^{2}) \cdot (a^{2} b^{2} - b^{4} + a^{3} c - a b^{2} c - 2 a^{2} c^{2} + b^{2} c^{2} + a c^{3}) \cdot (a^{3} b - 2 a^{2} b^{2} + a b^{3} + a^{2} c^{2} - a b c^{2} + b^{2} c^{2} - c^{4}) : :`
    | **Search Value (6, 9, 13):** :math:`1.490824291403`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`(\sin 2A)/(\cos^{2}A - \cos B \cos C) : :`
+   * **Barycentrics:** :math:`(\sin 2A)/(\cos^{2} A - \cos B \cos C) : :`
 
 .. container:: note-item
 
-   :ref:`X(296) <X(296)>` lies on the conic {A,B,C,\ :ref:`X(1) <X(1)>`,\ :ref:`X(3) <X(3)>`}}, the cubics K040 and K1185.
+   :ref:`X(296) <X(296)>` lies on the conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(1) <X(1)>`,\ :ref:`X(3) <X(3)>`}}, the cubics K040 and K1185.
 
 .. collapse:: Incident Central Lines
    :badge: 26 lines

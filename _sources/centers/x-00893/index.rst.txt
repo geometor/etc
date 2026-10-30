@@ -10,22 +10,18 @@ X(893) = X(238)-CROSS CONJUGATE OF X(292)
 
 .. enunciation::
 
-   Let A\ :sub:`34`\ B\ :sub:`34`\ C\ :sub:`34` be Gemini triangle 34. Let A' be the perspector of conic {A,B,C,B\ :sub:`34`,C\ :sub:`34`}}, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(893) <X(893)>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
+   Let :g:`A_{34}B_{34}C_{34} << A_34 B_34 C_34 >>` be Gemini triangle 34. Let :g:`A' <A'>` be the perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B_{34} <B_34>`,\ :g:`C_{34} <C_34>`}}, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(893) <X(893)>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
 
 .. figure:: x-00893.svg
    :alt: X(893) = X(238)-CROSS CONJUGATE OF X(292)
    :align: center
 
-   **X(893) = X(238)-CROSS CONJUGATE OF X(292)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(893) = X(238)-CROSS CONJUGATE OF X(292)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`a/(a^{2} + bc) : :`
    | **Search Value (6, 9, 13):** :math:`1.235229038235`
-
-.. container:: note-item
-
-   :ref:`X(893) <X(893)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 7 lines
@@ -43,9 +39,9 @@ X(893) = X(238)-CROSS CONJUGATE OF X(292)
    * :ref:`X(893) <X(893)>` = :ref:`X(239) <X(239)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(257) <X(257)>`
    * :ref:`X(893) <X(893)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(663) <X(663)>`\ \ :ref:`X(788) <X(788)>`
    * :ref:`X(893) <X(893)>` = :term:`cevapoint <cevapoint>` of PU(8)
-   * :ref:`X(893) <X(893)>` = perspector of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of N-obverse triangle of :ref:`X(1) <X(1)>`
-   * :ref:`X(893) <X(893)>` = perspector of ABC and unary cofactor triangle of trilinear N-obverse triangle of :ref:`X(2) <X(2)>`
-   * :ref:`X(893) <X(893)>` = perspector of ABC and unary cofactor triangle of Gemini triangle 3
+   * :ref:`X(893) <X(893)>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of N-obverse triangle of :ref:`X(1) <X(1)>`
+   * :ref:`X(893) <X(893)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of trilinear N-obverse triangle of :ref:`X(2) <X(2)>`
+   * :ref:`X(893) <X(893)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of Gemini triangle 3
    * :ref:`X(893) <X(893)>` = :term:`complement <complement>` of X(30660)
    * :ref:`X(893) <X(893)>` = perspector of Gemini triangle 33 and cross-triangle of Gemini triangles 33 and 34
 

@@ -16,22 +16,18 @@ X(241) = X(1)-LINE CONJUGATE OF X(55)
    :alt: X(241) = X(1)-LINE CONJUGATE OF X(55)
    :align: center
 
-   **X(241) = X(1)-LINE CONJUGATE OF X(55)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(241) = X(1)-LINE CONJUGATE OF X(55)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\cos^{4}B/2 - [\cos^{2}(A/2)][\cos^{2}(B/2) +\cos^{2}(C/2)] + \cos^{4}(C/2) : :`
-   | **Barycentrics:** :math:`(b^2 + c^2)(1 - \cos A) - a^2(\cos B + \cos C) : :`
+   | **Trilinears:** :math:`\cos^{4} B/2 - [\cos^{2}(A/2)][\cos^{2}(B/2) +\cos^{2}(C/2)] + \cos^{4}(C/2) : :`
+   | **Barycentrics:** :math:`(b^{2} + c^{2})(1 - \cos A) - a^{2}(\cos B + \cos C) : :`
    | **Search Value (6, 9, 13):** :math:`-0.807702666211`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`(b^2 + c^2 - a b - a c)/(a - b - c) : :`
-
-.. container:: note-item
-
-   :ref:`X(241) <X(241)>` lies.
+   * **Trilinears:** :math:`(b^{2} + c^{2} - a b - a c)/(a - b - c) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 15 lines
@@ -55,7 +51,7 @@ X(241) = X(1)-LINE CONJUGATE OF X(55)
    * :ref:`X(241) <X(241)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`241 <X(241)>`), (:ref:`100 <X(100)>`, :ref:`241 <X(241)>`), (1025, :ref:`241 <X(241)>`), (1026, :ref:`241 <X(241)>`)
    * :ref:`X(241) <X(241)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(926) <X(926)>`\ X(1362)
    * :ref:`X(241) <X(241)>` = :ref:`X(237) <X(237)>`-of-intouch-triangle
-   * :ref:`X(241) <X(241)>` = perspector of hyperbola {A,B,C,PU(46)}
+   * :ref:`X(241) <X(241)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(46)}
    * :ref:`X(241) <X(241)>` = crossdifference of PU(112)
 
 .. toctree::

@@ -16,11 +16,11 @@ X(326) = ISOTOMIC CONJUGATE OF X(158)
    :alt: X(326) = ISOTOMIC CONJUGATE OF X(158)
    :align: center
 
-   **X(326) = ISOTOMIC CONJUGATE OF X(158)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(326) = ISOTOMIC CONJUGATE OF X(158)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\cot^{2}A : :`
+   | **Trilinears:** :math:`\cot^{2} A : :`
    | **Barycentrics:** :math:`\csc A - \sin A : :`
    | **Search Value (6, 9, 13):** :math:`4.834718495099`
 
@@ -28,11 +28,7 @@ X(326) = ISOTOMIC CONJUGATE OF X(158)
    :badge: 2 forms
 
    * **Trilinears:** :math:`b^{2} + c^{2} - S^{2} : :`
-   * **Trilinears:** (distance from A to orthic axis)\ :sup:`2` : :
-
-.. container:: note-item
-
-   :ref:`X(326) <X(326)>` lies.
+   * **Trilinears:** :math:`(distance from A to orthic axis)^{2} : :`
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines

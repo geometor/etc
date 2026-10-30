@@ -16,7 +16,7 @@ X(225) = X(4)-CEVA CONJUGATE OF X(65)
    :alt: X(225) = X(4)-CEVA CONJUGATE OF X(65)
    :align: center
 
-   **X(225) = X(4)-CEVA CONJUGATE OF X(65)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(225) = X(4)-CEVA CONJUGATE OF X(65)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,11 +27,7 @@ X(225) = X(4)-CEVA CONJUGATE OF X(65)
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`(b + c)/((b^2 + c^2 - a^2) (b + c - a)) : :`
-
-.. container:: note-item
-
-   :ref:`X(225) <X(225)>` lies.
+   * **Barycentrics:** :math:`(b + c)/((b^{2} + c^{2} - a^{2}) (b + c - a)) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 15 lines

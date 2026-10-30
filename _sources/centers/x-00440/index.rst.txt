@@ -10,22 +10,19 @@ X(440) = COMPLEMENT OF X(27)
 
 .. enunciation::
 
-   Barycentrics v + w : w + u : u + v
+   As a point on the Euler line, :ref:`X(440) <X(440)>` has Shinagawa coefficients :math:`(\$bc\$ + E - F,-\$bc\$ - E - F)`
 
 .. figure:: x-00440.svg
    :alt: X(440) = COMPLEMENT OF X(27)
    :align: center
 
-   **X(440) = COMPLEMENT OF X(27)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(440) = COMPLEMENT OF X(27)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`bc(v + w) : ca(w + u) : ab(u + v)`, where, u : v : w = :ref:`X(28) <X(28)>`; e.g., u(a,b,c) = (tan A)/(b + c)
+   | **Trilinears:** :math:`bc(v + w) : ca(w + u) : ab(u + v)`, where :math:`u : v : w` = :ref:`X(28) <X(28)>`; e.g., :math:`u(a,b,c) = (\tan A)/(b + c)`
+   | **Barycentrics:** :math:`v + w : w + u : u + v`
    | **Search Value (6, 9, 13):** :math:`5.242466206828`
-
-.. container:: note-item
-
-   :ref:`X(440) <X(440)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines
@@ -41,13 +38,6 @@ X(440) = COMPLEMENT OF X(27)
    * :ref:`X(440) <X(440)>` = :ref:`X(190) <X(190)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(525) <X(525)>`
    * :ref:`X(440) <X(440)>` = :term:`crosspoint <crosspoint>` of :ref:`X(2) <X(2)>` and :ref:`X(306) <X(306)>`
    * :ref:`X(440) <X(440)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`6 <X(6)>`, 1474), (:ref:`284 <X(284)>`, :ref:`579 <X(579)>`)
-
-Notes
------
-
-.. container:: note-item
-
-   As a point on the Euler line, :ref:`X(440) <X(440)>` has Shinagawa coefficients ($bc$ + E - F,-$bc$ - E - F)
 
 .. toctree::
    :hidden:

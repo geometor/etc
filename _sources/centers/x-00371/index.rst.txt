@@ -14,13 +14,13 @@ X(371) = KENMOTU POINT (CONGRUENT SQUARES POINT)
 
 .. enunciation::
 
-   There exist three congruent squares U, V, W positioned in ABC as follows: U has opposing vertices on segments AB and AC; V has opposing vertices on segments BC and BA; W has opposing vertices on segments CA and CB, and there is a single point common to U, V, W. The common point, :ref:`X(371) <X(371)>`, may have first been published in Kenmotu's *Collection of Sangaku Problems* in 1840, indicating that its first appearance may have been anonymously inscribed on a wooden board hung up in a Japanese shrine or temple. (The Kenmotu configuration uses only half-squares; i.e., isosceles right triangles). Trilinears were found by John Rigby.
+   There exist three congruent squares :g:`U <U>`, :g:`V <V>`, :g:`W <W>` positioned in :g:`ABC << A B C >>` as follows: U has opposing vertices on segments :g:`AB <[ A B ]>` and :g:`AC <[ A C ]>`; V has opposing vertices on segments :g:`BC <[ B C ]>` and :g:`BA <[ B A ]>`; W has opposing vertices on segments :g:`CA <[ C A ]>` and :g:`CB <[ C B ]>`, and there is a single point common to :g:`U <U>`, :g:`V <V>`, :g:`W <W>`. The common point, :ref:`X(371) <X(371)>`, may have first been published in Kenmotu's *Collection of Sangaku Problems* in 1840, indicating that its first appearance may have been anonymously inscribed on a wooden board hung up in a Japanese shrine or temple. (The Kenmotu configuration uses only half-squares; i.e., isosceles right triangles). Trilinears were found by John Rigby.
 
 .. figure:: x-00371.svg
    :alt: X(371) = KENMOTU POINT (CONGRUENT SQUARES POINT)
    :align: center
 
-   **X(371) = KENMOTU POINT (CONGRUENT SQUARES POINT)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(371) = KENMOTU POINT (CONGRUENT SQUARES POINT)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -38,9 +38,9 @@ X(371) = KENMOTU POINT (CONGRUENT SQUARES POINT)
 .. collapse:: Linear Combinations
    :badge: 4 combinations
 
-   * :ref:`X(371) <X(371)>` = L\ :sub:`A`/R\ :sub:`A` + L\ :sub:`B`/R\ :sub:`B` + L\ :sub:`C`/R\ :sub:`C` - :ref:`X(3) <X(3)>`/R, where L\ :sub:`A`, L\ :sub:`B`, L\ :sub:`C` are the centers of the Lucas circles, and R\ :sub:`A`, R\ :sub:`B`, R\ :sub:`C` their radii (:person:`Randy Hutson <randy-hutson>`, July 23, 2015)
-   * :ref:`X(371) <X(371)>` = L\ :sub:`A`/R\ :sub:`A` + L\ :sub:`B`/R\ :sub:`B` + L\ :sub:`C`/R\ :sub:`C` - L\ :sub:`R`/R\ :sub:`R`, where L\ :sub:`R` and R\ :sub:`R` are the center and radius of the Lucas radical circle (Randy Hutson, July 23, 2015)
-   * :ref:`X(371) <X(371)>` = 3 :ref:`X(2) <X(2)>` + X(43134), 2 :ref:`X(639) <X(639)>` + X(43134), 3 :ref:`X(6) <X(6)>` - 4 X(44482), 3 :ref:`X(6) <X(6)>` - 2 X(44502), X(1152) - 3 X(12963), 2 X(1504) + X(40274), X(6396) - 4 X(9675), 2 X(6398) - 5 X(41410), X(11825) - 4 X(43120), X(11825) + 2 X(45489), 3 X(35840) - 8 X(44482), 3 X(35840) - 4 X(44502), 2 X(43120) + X(45489), X(3070) - 3 X(32787), 2 X(3070) - 3 X(35822), X(3070) + 3 X(41945), 2 X(3070) + X(42266), 3 X(3070) - X(42272), 5 X(3070) + 3 X(43210), X(3070) + 6 X(52047), 2 X(7583) - 3 X(32787), 4 X(7583) - X(35820), 4 X(7583) - 3 X(35822), 2 X(7583) + 3 X(41945), 2 X(7583) + X(42258), 4 X(7583) + X(42266), 6 X(7583) - X(42272), 10 X(7583) + 3 X(43210), X(7583) + 3 X(52047), 6 X(32787) - X(35820), 3 X(32787) + X(42258), 6 X(32787) + X(42266), 9 X(32787) - X(42272), 5 X(32787) + X(43210), X(32787) + 2 X(52047), X(35820) - 3 X(35822), X(35820) + 6 X(41945), X(35820) + 2 X(42258), 3 X(35820) - 2 X(42272), 5 X(35820) + 6 X(43210), X(35820) + 12 X(52047), X(35822) + 2 X(41945), 3 X(35822) + 2 X(42258), 3 X(35822) + X(42266), 9 X(35822) - 2 X(42272), 5 X(35822) + 2 X(43210), and many others
+   * :ref:`X(371) <X(371)>` = :math:`L_{A}/R_{A} + L_{B}/R_{B} + L_{C}/R_{C} -` :ref:`X(3) <X(3)>` / :math:`R`, where :g:`L_{A} <L_A>`, :g:`L_{B} <L_B>`, :g:`L_{C} <L_C>` are the centers of the Lucas circles, and :math:`R_{A}`, :math:`R_{B}`, :math:`R_{C}` their radii (:person:`Randy Hutson <randy-hutson>`, July 23, 2015)
+   * :ref:`X(371) <X(371)>` = :math:`L_{A}/R_{A} + L_{B}/R_{B} + L_{C}/R_{C} - L_{R}/R_{R}`, where :g:`L_{R} <L_R>` and :math:`R_{R}` are the center and radius of the Lucas radical circle (Randy Hutson, July 23, 2015)
+   * :ref:`X(371) <X(371)>` = :math:`3` :ref:`X(2) <X(2)>` + X(43134), :math:`2` :ref:`X(639) <X(639)>` + X(43134), :math:`3` :ref:`X(6) <X(6)>` - :math:`4` X(44482), :math:`3` :ref:`X(6) <X(6)>` - :math:`2` X(44502), X(1152) - :math:`3` X(12963), :math:`2` X(1504) + X(40274), X(6396) - :math:`4` X(9675), :math:`2` X(6398) - :math:`5` X(41410), X(11825) - :math:`4` X(43120), X(11825) + :math:`2` X(45489), :math:`3` X(35840) - :math:`8` X(44482), :math:`3` X(35840) - :math:`4` X(44502), :math:`2` X(43120) + X(45489), X(3070) - :math:`3` X(32787), :math:`2` X(3070) - :math:`3` X(35822), X(3070) + :math:`3` X(41945), :math:`2` X(3070) + X(42266), :math:`3` X(3070) - X(42272), :math:`5` X(3070) + :math:`3` X(43210), X(3070) + :math:`6` X(52047), :math:`2` X(7583) - :math:`3` X(32787), :math:`4` X(7583) - X(35820), :math:`4` X(7583) - :math:`3` X(35822), :math:`2` X(7583) + :math:`3` X(41945), :math:`2` X(7583) + X(42258), :math:`4` X(7583) + X(42266), :math:`6` X(7583) - X(42272), :math:`10` X(7583) + :math:`3` X(43210), X(7583) + :math:`3` X(52047), :math:`6` X(32787) - X(35820), :math:`3` X(32787) + X(42258), :math:`6` X(32787) + X(42266), :math:`9` X(32787) - X(42272), :math:`5` X(32787) + X(43210), X(32787) + :math:`2` X(52047), X(35820) - :math:`3` X(35822), X(35820) + :math:`6` X(41945), X(35820) + :math:`2` X(42258), :math:`3` X(35820) - :math:`2` X(42272), :math:`5` X(35820) + :math:`6` X(43210), X(35820) + :math:`12` X(52047), X(35822) + :math:`2` X(41945), :math:`3` X(35822) + :math:`2` X(42258), :math:`3` X(35822) + X(42266), :math:`9` X(35822) - :math:`2` X(42272), :math:`5` X(35822) + :math:`2` X(43210), and many others
    * :person:`Floor van Lamoen <floor-van-lamoen>`, `Vierkanten in een driehoik: 3. Congruente vierkanten <http://home.wxs.nl/~lamoen/wiskunde/vierkant3.html>`__ Tony Rothman, with the cooperation of Hidetoshi Fukagawa, `Japanese Temple Geometry <http://www.sciam.com/1998/0598issue/0598rothman.html>`__ (feature article in *Scientific American*)
 
 .. collapse:: Functional Relations
@@ -77,14 +77,14 @@ X(371) = KENMOTU POINT (CONGRUENT SQUARES POINT)
    * :ref:`X(371) <X(371)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): {:ref:`4 <X(4)>`, 13429}, {:ref:`492 <X(492)>`, 1585}, {3387, 3388}
    * :ref:`X(371) <X(371)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): {:ref:`3 <X(3)>`, 10665}, {:ref:`6 <X(6)>`, 3155}, {:ref:`590 <X(590)>`, 8035}, {3385, 3386}, {6413, 8577}
    * :ref:`X(371) <X(371)>` = :term:`crossdifference <crossdifference>` of every pair of points on line {523, 17431}
-   * :ref:`X(371) <X(371)>` = perspector of ABC and the Lucas tangents triangle
+   * :ref:`X(371) <X(371)>` = perspector of :g:`ABC << A B C >>` and the Lucas tangents triangle
    * :ref:`X(371) <X(371)>` = perspector of the Lucas :term:`central triangle <central-triangle>` and the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(6) <X(6)>`
    * :ref:`X(371) <X(371)>` = perspector of the Lucas inner triangle and Lucas(-1:1) tangents triangle
    * :ref:`X(371) <X(371)>` = perspector of the Lucas(4:3) central triangle and the circumcevian triangle of :ref:`X(6) <X(6)>`
    * :ref:`X(371) <X(371)>` = perspector of the Lucas central triangle and the :term:`cevian triangle <cevian-triangle>` of :ref:`X(588) <X(588)>`
    * :ref:`X(371) <X(371)>` = radical center of the Lucas(2:1) circles
    * :ref:`X(371) <X(371)>` = :ref:`X(481) <X(481)>`-of-Lucas-central-triangle
-   * :ref:`X(371) <X(371)>` = perspector of ABC and 2nd Lucas(-1) secondary tangents triangle
+   * :ref:`X(371) <X(371)>` = perspector of :g:`ABC << A B C >>` and 2nd Lucas(-1) secondary tangents triangle
    * :ref:`X(371) <X(371)>` = perspector of :term:`tangential triangle <tangential-triangle>` and Lucas secondary central triangle
    * :ref:`X(371) <X(371)>` = perspector of Lucas inner tangential triangle and Lucas(-1) central triangle
    * :ref:`X(371) <X(371)>` = inverse-in-Lucas-radical-circle of X(2460)
@@ -98,7 +98,7 @@ Notes
 
 .. container:: note-item
 
-   The edgelength of the three squares is 2\ :sup:`1/2`\ abc/(a\ :sup:`2` + b\ :sup:`2` + c\ :sup:`2` + 4σ), where σ = area(ABC). (Edward Brisse, 2/12/2000)
+   The edgelength of the three squares is :math:`2^{1/2}`\ abc/(:math:`a^{2}` + :math:`b^{2}` + :math:`c^{2}` + 4σ), where σ = area(:g:`ABC << A B C >>`). (Edward Brisse, 2/12/2000)
 
 .. container:: note-item
 
@@ -106,7 +106,7 @@ Notes
 
 .. container:: note-item
 
-   :ref:`X(371) <X(371)>` is the perspector of several pairs of triangles associated with Lucas circles. Some of these triangles are defined at MathWorld; e.g. `Lucas Central Triangle <http://mathworld.wolfram.com/LucasCentralTriangle.html>`__, and others are Lucas(L:W) configurations. The latter are generalizations of configurations associated with Lucas circles, in which the squares are replaced by rectangles of length-to-width ratio L:W, with length on the corresponding sideline of ABC. A negative ratio indicates that the rectangles are directed inward; e.g. Lucas(-1:1) indicates inward-directed squares, whereas Lucas(1:1) indicates the classical case of outward-directed squares. These generalizations and the following properties of :ref:`X(371) <X(371)>` were contributed by Randy Hutson, 9/23/2011. See also :ref:`X(372) <X(372)>` and X(1084).
+   :ref:`X(371) <X(371)>` is the perspector of several pairs of triangles associated with Lucas circles. Some of these triangles are defined at MathWorld; e.g. `Lucas Central Triangle <http://mathworld.wolfram.com/LucasCentralTriangle.html>`__, and others are Lucas(L:W) configurations. The latter are generalizations of configurations associated with Lucas circles, in which the squares are replaced by rectangles of length-to-width ratio L:W, with length on the corresponding sideline of :g:`ABC << A B C >>`. A negative ratio indicates that the rectangles are directed inward; e.g. Lucas(-1:1) indicates inward-directed squares, whereas Lucas(1:1) indicates the classical case of outward-directed squares. These generalizations and the following properties of :ref:`X(371) <X(371)>` were contributed by Randy Hutson, 9/23/2011. See also :ref:`X(372) <X(372)>` and X(1084).
 
 .. container:: note-item
 
@@ -114,7 +114,7 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the Lucas central triangle. Let A″ be the cevapoint of B' and C', and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(371) <X(371)>`. (Randy Hutson, July 23, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the Lucas central triangle. Let :g:`A″ <A″>` be the cevapoint of :g:`B' <B'>` and :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(371) <X(371)>`. (Randy Hutson, July 23, 2015)
 
 .. container:: note-item
 

@@ -10,13 +10,13 @@ X(74) = ISOGONAL CONJUGATE OF EULER INFINITY POINT
 
 .. enunciation::
 
-   Let T be the triangle formed by reflecting the orthic axis in the sidelines of ABC; then T is perspective to ABC, and the perspector is :ref:`X(74) <X(74)>`. Let A' be the point of intersection of the orthic axis and line BC, and define B' and C' cyclically. Let O\ :sub:`A` be the circumcenter of AB'C', and define Let O\ :sub:`B` and O\ :sub:`C` cyclically; then the lines AO\ :sub:`A`, BO\ :sub:`B`, CO\ :sub:`C` concur in :ref:`X(74) <X(74)>`. (:person:`Randy Hutson <randy-hutson>`, August 26, 2014)
+   Let :g:`T <T>` be the triangle formed by reflecting the orthic axis in the sidelines of :g:`ABC << A B C >>`; then T is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X(74) <X(74)>`. Let :g:`A' <A'>` be the point of intersection of the orthic axis and line :g:`BC <[ B C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Let :g:`O_{A} <O_A>` be the circumcenter of :g:`AB'C' << A B' C' >>`, and define Let :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically; then the lines :g:`AO_{A} <[ A O_A ]>`, :g:`BO_{B} <[ B O_B ]>`, :g:`CO_{C} <[ C O_C ]>` concur in :ref:`X(74) <X(74)>`. (:person:`Randy Hutson <randy-hutson>`, August 26, 2014)
 
 .. figure:: x-00074.svg
    :alt: X(74) = ISOGONAL CONJUGATE OF EULER INFINITY POINT
    :align: center
 
-   **X(74) = ISOGONAL CONJUGATE OF EULER INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(74) = ISOGONAL CONJUGATE OF EULER INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -29,13 +29,13 @@ X(74) = ISOGONAL CONJUGATE OF EULER INFINITY POINT
 
    * **Trilinears:** :math:`1/(3 \cos A - 2 \sin B \sin C) : 1/(3 \cos B - 2 \sin C \sin A) : 1/(3 \cos C - 2 \sin A \sin B)`
    * **Trilinears:** :math:`a/[2a^{4} - (b^{2} - c^{2})^{2} - a^{2}(b^{2} + c^{2})] : :`
-   * **Barycentrics:** :math:`a^2/(3 S_{B}S_{C} - S^{2}) : :`
+   * **Barycentrics:** :math:`a^{2}/(3 S_{B}S_{C} - S^{2}) : :`
 
 .. collapse:: Linear Combinations
    :badge: 2 combinations
 
-   * :ref:`X(74) <X(74)>` = (r\ :sup:`2` + 2rR + s\ :sup:`2`)\*\ :ref:`X(1) <X(1)>` - R(6r + 9R)\*\ :ref:`X(2) <X(2)>` + (r\ :sup:`2` + 12rR + 18R\ :sup:`2` - 3s\ :sup:`2`)\*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-   * :ref:`X(74) <X(74)>` = 3 :ref:`X(2) <X(2)>` - 4 X(6699), 9 :ref:`X(2) <X(2)>` - 8 X(12900), 3 :ref:`X(3) <X(3)>` - :ref:`X(399) <X(399)>`, 3 :ref:`X(3) <X(3)>` - 2 X(1511), 5 :ref:`X(3) <X(3)>` - 2 X(5609), 5 :ref:`X(3) <X(3)>` - X(12308), 4 :ref:`X(3) <X(3)>` - X(14094), 10 :ref:`X(3) <X(3)>` - 7 X(15020), 2 :ref:`X(3) <X(3)>` - 5 X(15021), 22 :ref:`X(3) <X(3)>` - 19 X(15023), 8 :ref:`X(3) <X(3)>` - 5 X(15034), 4 :ref:`X(3) <X(3)>` - 3 X(15035), 8 :ref:`X(3) <X(3)>` - 7 X(15036), 13 :ref:`X(3) <X(3)>` - 7 X(15039), 7 :ref:`X(3) <X(3)>` - 5 X(15040), :ref:`X(3) <X(3)>` - 3 X(15041), 15 :ref:`X(3) <X(3)>` - 13 X(15042), 6 :ref:`X(3) <X(3)>` - 5 X(15051), 2 :ref:`X(3) <X(3)>` + X(15054), 2 :ref:`X(3) <X(3)>` - 3 X(15055), 5 :ref:`X(3) <X(3)>` - 3 X(32609), 5 :ref:`X(3) <X(3)>` + 4 X(38626), 13 :ref:`X(3) <X(3)>` - 4 X(38632), 5 :ref:`X(3) <X(3)>` - 9 X(38633), 13 :ref:`X(3) <X(3)>` - 9 X(38638), 3 :ref:`X(4) <X(4)>` - 4 X(7687), :ref:`X(4) <X(4)>` + 2 X(10990), 3 :ref:`X(4) <X(4)>` - 2 X(13202), 2 :ref:`X(4) <X(4)>` - 3 X(14644), 3 :ref:`X(4) <X(4)>` - 5 X(15081), :ref:`X(4) <X(4)>` - 4 X(20417), 4 :ref:`X(5) <X(5)>` - 7 X(15057), 4 :ref:`X(5) <X(5)>` - 5 X(15059), 2 :ref:`X(5) <X(5)>` - 3 X(15061), 3 :ref:`X(5) <X(5)>` - 4 X(40685), :ref:`X(6) <X(6)>` - 3 X(5621), 2 :ref:`X(6) <X(6)>` - 3 X(5622), :ref:`X(20) <X(20)>` + 2 X(16003), 3 :ref:`X(51) <X(51)>` - 2 X(11807), 3 :ref:`X(54) <X(54)>` - 2 X(2914), 5 :ref:`X(54) <X(54)>` - 4 X(32226), 3 :ref:`X(64) <X(64)>` + X(17812), 3 :ref:`X(110) <X(110)>` - 2 :ref:`X(399) <X(399)>`, 3 :ref:`X(110) <X(110)>` - 4 X(1511), 5 :ref:`X(110) <X(110)>` - 4 X(5609), :ref:`X(110) <X(110)>` + 2 X(10620), :ref:`X(110) <X(110)>` - 4 X(12041), 5 :ref:`X(110) <X(110)>` - 2 X(12308), 5 :ref:`X(110) <X(110)>` - 7 X(15020), :ref:`X(110) <X(110)>` - 5 X(15021), 11 :ref:`X(110) <X(110)>` - 19 X(15023), 4 :ref:`X(110) <X(110)>` - 5 X(15034), 2 :ref:`X(110) <X(110)>` - 3 X(15035), 4 :ref:`X(110) <X(110)>` - 7 X(15036), 13 :ref:`X(110) <X(110)>` - 14 X(15039), 7 :ref:`X(110) <X(110)>` - 10 X(15040), :ref:`X(110) <X(110)>` - 6 X(15041), 15 :ref:`X(110) <X(110)>` - 26 X(15042), 3 :ref:`X(110) <X(110)>` - 5 X(15051)
+   * :ref:`X(74) <X(74)>` = :math:`(r^{2} + 2rR + s^{2})` :ref:`X(1) <X(1)>` - :math:`R(6r + 9R)` :ref:`X(2) <X(2)>` + :math:`(r^{2} + 12rR + 18R^{2} - 3s^{2})` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
+   * :ref:`X(74) <X(74)>` = :math:`3` :ref:`X(2) <X(2)>` - :math:`4` X(6699), :math:`9` :ref:`X(2) <X(2)>` - :math:`8` X(12900), :math:`3` :ref:`X(3) <X(3)>` - :ref:`X(399) <X(399)>`, :math:`3` :ref:`X(3) <X(3)>` - :math:`2` X(1511), :math:`5` :ref:`X(3) <X(3)>` - :math:`2` X(5609), :math:`5` :ref:`X(3) <X(3)>` - X(12308), :math:`4` :ref:`X(3) <X(3)>` - X(14094), :math:`10` :ref:`X(3) <X(3)>` - :math:`7` X(15020), :math:`2` :ref:`X(3) <X(3)>` - :math:`5` X(15021), :math:`22` :ref:`X(3) <X(3)>` - :math:`19` X(15023), :math:`8` :ref:`X(3) <X(3)>` - :math:`5` X(15034), :math:`4` :ref:`X(3) <X(3)>` - :math:`3` X(15035), :math:`8` :ref:`X(3) <X(3)>` - :math:`7` X(15036), :math:`13` :ref:`X(3) <X(3)>` - :math:`7` X(15039), :math:`7` :ref:`X(3) <X(3)>` - :math:`5` X(15040), :ref:`X(3) <X(3)>` - :math:`3` X(15041), :math:`15` :ref:`X(3) <X(3)>` - :math:`13` X(15042), :math:`6` :ref:`X(3) <X(3)>` - :math:`5` X(15051), :math:`2` :ref:`X(3) <X(3)>` + X(15054), :math:`2` :ref:`X(3) <X(3)>` - :math:`3` X(15055), :math:`5` :ref:`X(3) <X(3)>` - :math:`3` X(32609), :math:`5` :ref:`X(3) <X(3)>` + :math:`4` X(38626), :math:`13` :ref:`X(3) <X(3)>` - :math:`4` X(38632), :math:`5` :ref:`X(3) <X(3)>` - :math:`9` X(38633), :math:`13` :ref:`X(3) <X(3)>` - :math:`9` X(38638), :math:`3` :ref:`X(4) <X(4)>` - :math:`4` X(7687), :ref:`X(4) <X(4)>` + :math:`2` X(10990), :math:`3` :ref:`X(4) <X(4)>` - :math:`2` X(13202), :math:`2` :ref:`X(4) <X(4)>` - :math:`3` X(14644), :math:`3` :ref:`X(4) <X(4)>` - :math:`5` X(15081), :ref:`X(4) <X(4)>` - :math:`4` X(20417), :math:`4` :ref:`X(5) <X(5)>` - :math:`7` X(15057), :math:`4` :ref:`X(5) <X(5)>` - :math:`5` X(15059), :math:`2` :ref:`X(5) <X(5)>` - :math:`3` X(15061), :math:`3` :ref:`X(5) <X(5)>` - :math:`4` X(40685), :ref:`X(6) <X(6)>` - :math:`3` X(5621), :math:`2` :ref:`X(6) <X(6)>` - :math:`3` X(5622), :ref:`X(20) <X(20)>` + :math:`2` X(16003), :math:`3` :ref:`X(51) <X(51)>` - :math:`2` X(11807), :math:`3` :ref:`X(54) <X(54)>` - :math:`2` X(2914), :math:`5` :ref:`X(54) <X(54)>` - :math:`4` X(32226), :math:`3` :ref:`X(64) <X(64)>` + X(17812), :math:`3` :ref:`X(110) <X(110)>` - :math:`2` :ref:`X(399) <X(399)>`, :math:`3` :ref:`X(110) <X(110)>` - :math:`4` X(1511), :math:`5` :ref:`X(110) <X(110)>` - :math:`4` X(5609), :ref:`X(110) <X(110)>` + :math:`2` X(10620), :ref:`X(110) <X(110)>` - :math:`4` X(12041), :math:`5` :ref:`X(110) <X(110)>` - :math:`2` X(12308), :math:`5` :ref:`X(110) <X(110)>` - :math:`7` X(15020), :ref:`X(110) <X(110)>` - :math:`5` X(15021), :math:`11` :ref:`X(110) <X(110)>` - :math:`19` X(15023), :math:`4` :ref:`X(110) <X(110)>` - :math:`5` X(15034), :math:`2` :ref:`X(110) <X(110)>` - :math:`3` X(15035), :math:`4` :ref:`X(110) <X(110)>` - :math:`7` X(15036), :math:`13` :ref:`X(110) <X(110)>` - :math:`14` X(15039), :math:`7` :ref:`X(110) <X(110)>` - :math:`10` X(15040), :ref:`X(110) <X(110)>` - :math:`6` X(15041), :math:`15` :ref:`X(110) <X(110)>` - :math:`26` X(15042), :math:`3` :ref:`X(110) <X(110)>` - :math:`5` X(15051)
 
 .. container:: note-item
 
@@ -79,31 +79,31 @@ X(74) = ISOGONAL CONJUGATE OF EULER INFINITY POINT
    * :ref:`X(74) <X(74)>` = X(1296)-of-circumsymmedial
    * :ref:`X(74) <X(74)>` = trilinear pole wrt circumorthic triangle of van Aubel line
    * :ref:`X(74) <X(74)>` = X(1577)-:term:`isoconjugate <isoconjugate>` of X(2420)
-   * :ref:`X(74) <X(74)>` = orthocentroidal-to-ABC :term:`similarity image <similarity-image>` of :ref:`X(4) <X(4)>`
+   * :ref:`X(74) <X(74)>` = orthocentroidal-to-:g:`ABC << A B C >>` :term:`similarity image <similarity-image>` of :ref:`X(4) <X(4)>`
    * :ref:`X(74) <X(74)>` = 4th-Brocard-to-circumsymmedial similarity image of :ref:`X(4) <X(4)>`
-   * :ref:`X(74) <X(74)>` = perspector of ABC and the reflection of the Kosnita triangle in :ref:`X(3) <X(3)>`
+   * :ref:`X(74) <X(74)>` = perspector of :g:`ABC << A B C >>` and the reflection of the Kosnita triangle in :ref:`X(3) <X(3)>`
    * :ref:`X(74) <X(74)>` = orthocenter of :ref:`X(3) <X(3)>`\ \ :ref:`X(67) <X(67)>`\ \ :ref:`X(879) <X(879)>`
    * :ref:`X(74) <X(74)>` = intersection of tangents at :ref:`X(3) <X(3)>` and :ref:`X(4) <X(4)>` to Napoleon-Feuerbach cubic, K005
-   * :ref:`X(74) <X(74)>` = X(1317)-of-tangential-triangle is ABC is acute
-   * :ref:`X(74) <X(74)>` = 2nd-Parry-to-ABC similarity image of :ref:`X(110) <X(110)>`
-   * :ref:`X(74) <X(74)>` = :ref:`X(80) <X(80)>`-of-Trinh-triangle if ABC is acute
+   * :ref:`X(74) <X(74)>` = X(1317)-of-tangential-triangle is :g:`ABC << A B C >>` is acute
+   * :ref:`X(74) <X(74)>` = 2nd-Parry-to-:g:`ABC << A B C >>` similarity image of :ref:`X(110) <X(110)>`
+   * :ref:`X(74) <X(74)>` = :ref:`X(80) <X(80)>`-of-Trinh-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(74) <X(74)>` = Trinh-isogonal conjugate of X(2071)
    * :ref:`X(74) <X(74)>` = trilinear product of PU(86)
-   * :ref:`X(74) <X(74)>` = perspector of ABC and the (degenerate) side-triangle of the (equilateral) circumcevian triangles of :ref:`X(15) <X(15)>` and :ref:`X(16) <X(16)>`
+   * :ref:`X(74) <X(74)>` = perspector of :g:`ABC << A B C >>` and the (degenerate) side-triangle of the (equilateral) circumcevian triangles of :ref:`X(15) <X(15)>` and :ref:`X(16) <X(16)>`
    * :ref:`X(74) <X(74)>` = homothetic center of :ref:`X(15) <X(15)>`- and :ref:`X(16) <X(16)>`-Ehrmann triangles; see :ref:`X(25) <X(25)>`
-   * :ref:`X(74) <X(74)>` = perspector of ABC and :ref:`X(15) <X(15)>`-Ehrmann triangle
-   * :ref:`X(74) <X(74)>` = perspector of ABC and :ref:`X(16) <X(16)>`-Ehrmann triangle
+   * :ref:`X(74) <X(74)>` = perspector of :g:`ABC << A B C >>` and :ref:`X(15) <X(15)>`-Ehrmann triangle
+   * :ref:`X(74) <X(74)>` = perspector of :g:`ABC << A B C >>` and :ref:`X(16) <X(16)>`-Ehrmann triangle
    * :ref:`X(74) <X(74)>` = 3rd-Parry-to-circumsymmedial similarity image of :ref:`X(23) <X(23)>`
-   * :ref:`X(74) <X(74)>` = perspector of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of orthocentroidal triangle
+   * :ref:`X(74) <X(74)>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of orthocentroidal triangle
    * :ref:`X(74) <X(74)>` = endo-homothetic center of :ref:`X(4) <X(4)>`-altimedial and :ref:`X(4) <X(4)>`-anti-altimedial triangles
    * :ref:`X(74) <X(74)>` = Thomson isogonal conjugate of :ref:`X(523) <X(523)>`
    * :ref:`X(74) <X(74)>` = Lucas isogonal conjugate of :ref:`X(523) <X(523)>`
-   * :ref:`X(74) <X(74)>` = :ref:`X(100) <X(100)>`-of-circumorthic-triangle if ABC is acute
-   * :ref:`X(74) <X(74)>` = perspector of ABC and 2nd anti-Parry triangle
+   * :ref:`X(74) <X(74)>` = :ref:`X(100) <X(100)>`-of-circumorthic-triangle if :g:`ABC << A B C >>` is acute
+   * :ref:`X(74) <X(74)>` = perspector of :g:`ABC << A B C >>` and 2nd anti-Parry triangle
    * :ref:`X(74) <X(74)>` = :ref:`X(110) <X(110)>`-of-2nd-anti-Parry-triangle
    * :ref:`X(74) <X(74)>` = X(9138)-of-1st-anti-Parry-triangle
-   * :ref:`X(74) <X(74)>` = excentral-to-ABC :term:`functional image <functional-image>` of X(5541)
-   * :ref:`X(74) <X(74)>` = orthic-to-ABC functional image of :ref:`X(128) <X(128)>`
+   * :ref:`X(74) <X(74)>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of X(5541)
+   * :ref:`X(74) <X(74)>` = orthic-to-:g:`ABC << A B C >>` functional image of :ref:`X(128) <X(128)>`
    * :ref:`X(74) <X(74)>` = trilinear pole wrt, Thomson triangle, of line :ref:`X(3) <X(3)>`\ X(5646)
    * :ref:`X(74) <X(74)>` = trilinear pole, wrt Lucas triangle, of line :ref:`X(4) <X(4)>`\ X(15066)
    * :ref:`X(74) <X(74)>` = BSS(a→a^2) of X(1156)
@@ -112,7 +112,7 @@ X(74) = ISOGONAL CONJUGATE OF EULER INFINITY POINT
    * :ref:`X(74) <X(74)>` = areal center of pedal triangles of PU(11)
    * :ref:`X(74) <X(74)>` = antipode of X(32111) in Walsmith rectangular hyperbola
    * :ref:`X(74) <X(74)>` = orthocenter of :ref:`X(6) <X(6)>`\ \ :ref:`X(110) <X(110)>`\ X(3569)
-   * :ref:`X(74) <X(74)>` = X(5541)-of-orthic-triangle if ABC is acute
+   * :ref:`X(74) <X(74)>` = X(5541)-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(74) <X(74)>` = perspector of circumconic centered at X(36896)
    * :ref:`X(74) <X(74)>` = trilinear pole of line :ref:`X(6) <X(6)>`\ \ :ref:`X(647) <X(647)>`
    * :ref:`X(74) <X(74)>` = :term:`crossdifference <crossdifference>` of every pair of points on line {1636, 1637}
@@ -135,31 +135,31 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the :term:`anticomplementary triangle <anticomplementary-triangle>`. Let L be the line through A' parallel to the Euler line, and define M and N cyclically. Let L' be the reflection of L in sideline BC, and define M' and N' cyclically. The lines L', M', N' concur in :ref:`X(74) <X(74)>`. (Randy Hutson, August 26, 2014)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`anticomplementary triangle <anticomplementary-triangle>`. Let :g:`L <L>` be the line through :g:`A' <A'>` parallel to the Euler line, and define M and N cyclically. Let :g:`L' <L'>` be the reflection of :g:`L <L>` in sideline :g:`BC <[ B C ]>`, and define :g:`M' <M'>` and :g:`N' <N'>` cyclically. The lines :g:`L' <L'>`, :g:`M' <M'>`, :g:`N' <N'>` concur in :ref:`X(74) <X(74)>`. (Randy Hutson, August 26, 2014)
 
 .. container:: note-item
 
-   Let A'B'C' be the :ref:`X(3) <X(3)>`-Fuhrmann triangle. Let A'' be the reflection of A in line B'C', and define B'' and C'' cyclically. Then A''B''C'' is inversely similar to ABC, with similitude center :ref:`X(265) <X(265)>`, and A''B''C'' is perspective to ABC at :ref:`X(74) <X(74)>`, which is also the orthocenter of A''B''C''. (Randy Hutson, August 26, 2014)
+   Let :g:`A'B'C' << A' B' C' >>` be the :ref:`X(3) <X(3)>`-Fuhrmann triangle. Let :g:`A″ <A″>` be the reflection of :g:`A <A>` in line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Then :g:`A″B″C″ << A″ B″ C″ >>` is inversely similar to :g:`ABC << A B C >>`, with similitude center :ref:`X(265) <X(265)>`, and :g:`A″B″C″ << A″ B″ C″ >>` is perspective to :g:`ABC << A B C >>` at :ref:`X(74) <X(74)>`, which is also the orthocenter of :g:`A″B″C″ << A″ B″ C″ >>`. (Randy Hutson, August 26, 2014)
 
 .. container:: note-item
 
-   In :cite:`Hyacinthos <hyacinthos>` 8129 (10/4/03), :person:`Floor van Lamoen <floor-van-lamoen>` noted that if :ref:`X(74) <X(74)>` is denoted by J, then each of the points A,B,C,J is J of the other three, in analogy with the well known property of orthocentric systems (that is, each of the points A,B,C,H is the orthocenter of the other three).
+   In :cite:`Hyacinthos <hyacinthos>` 8129 (10/4/03), :person:`Floor van Lamoen <floor-van-lamoen>` noted that if :ref:`X(74) <X(74)>` is denoted by J, then each of the points :g:`A <A>`, :g:`B <B>`, :g:`C <C>`,J is J of the other three, in analogy with the well known property of orthocentric systems (that is, each of the points :g:`A <A>`, :g:`B <B>`, :g:`C <C>`,H is the orthocenter of the other three).
 
 .. container:: note-item
 
-   Let A'B'C' be the orthocentroidal triangle and A″B″C″ the anti-orthocentroidal triangle. Let A\* be the reflection of A″ in B'C', and define B\* and C\* cyclically. The lines AA\*, BB\*, CC\* concur in :ref:`X(74) <X(74)>`. (Randy Hutson, December 10, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the orthocentroidal triangle and :g:`A″B″C″ << A″ B″ C″ >>` the anti-orthocentroidal triangle. Let :g:`A* <A*>` be the reflection of :g:`A″ <A″>` in :g:`B'C' <[ B' C' ]>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(74) <X(74)>`. (Randy Hutson, December 10, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the anti-orthocentroidal triangle. Let A″ be the reflection of A in line B'C', and define B″ and C″ cyclically. The lines A'A″, B'B″, C'C″ concur in :ref:`X(74) <X(74)>`. (Randy Hutson, January 15, 2019)
+   Let :g:`A'B'C' << A' B' C' >>` be the anti-orthocentroidal triangle. Let :g:`A″ <A″>` be the reflection of :g:`A <A>` in line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(74) <X(74)>`. (Randy Hutson, January 15, 2019)
 
 .. container:: note-item
 
-   The tangents at A, B, C to the Neuberg cubic K001 concur in :ref:`X(74) <X(74)>`
+   The tangents at :g:`A <A>`, :g:`B <B>`, :g:`C <C>` to the Neuberg cubic K001 concur in :ref:`X(74) <X(74)>`
 
 .. container:: note-item
 
-   Let Ea be the ellipse through :ref:`X(74) <X(74)>` having foci B and C, and define Eb and Ec cyclically. The 6 minor vertices of these three ellipses lie on a pair of lines. `Figure <https://user-images.githubusercontent.com/16231062/145801970-5f829491-b5ca-428f-9de4-26a546847521.png>`__. (:person:`Dan Reznik <dan-reznik>`, December 13, 2021)
+   Let :g:`E_{a} <E_a>` be the ellipse through :ref:`X(74) <X(74)>` having foci :g:`B <B>` and :g:`C <C>`, and define :g:`E_{b} <E_b>` and :g:`E_{c} <E_c>` cyclically. The 6 minor vertices of these three ellipses lie on a pair of lines. `Figure <https://user-images.githubusercontent.com/16231062/145801970-5f829491-b5ca-428f-9de4-26a546847521.png>`__. (:person:`Dan Reznik <dan-reznik>`, December 13, 2021)
 
 .. toctree::
    :hidden:

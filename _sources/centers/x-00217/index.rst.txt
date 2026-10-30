@@ -16,12 +16,12 @@ X(217) = X(6)-CEVA CONJUGATE OF X(51)
    :alt: X(217) = X(6)-CEVA CONJUGATE OF X(51)
    :align: center
 
-   **X(217) = X(6)-CEVA CONJUGATE OF X(51)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(217) = X(6)-CEVA CONJUGATE OF X(51)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(\sin^{3}A) \cos A \cos(B - C) : :`
-   | **Barycentrics:** :math:`a^4*(a^2 - b^2 - c^2)*(a^2*b^2 - b^4 + a^2*c^2 + 2*b^2*c^2 - c^4) : :`
+   | **Trilinears:** :math:`(\sin^{3} A) \cos A \cos(B - C) : :`
+   | **Barycentrics:** :math:`a^{4} (a^{2} - b^{2} - c^{2}) \cdot (a^{2} b^{2} - b^{4} + a^{2} c^{2} + 2 b^{2} c^{2} - c^{4}) : :`
    | **Search Value (6, 9, 13):** :math:`-0.102176669002`
 
 .. container:: note-item

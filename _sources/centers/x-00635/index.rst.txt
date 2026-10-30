@@ -10,22 +10,24 @@ X(635) = COMPLEMENT OF X(61)
 
 .. enunciation::
 
-   Trilinears F(61)/a - cos(A - π/3) : F(61)/b - cos(B - π/3) : F(61)/c - cos(C - π/3)
+   :ref:`X(635) <X(635)>` = midpoint of :ref:`X(61) <X(61)>` and :ref:`X(633) <X(633)>`
 
 .. figure:: x-00635.svg
    :alt: X(635) = COMPLEMENT OF X(61)
    :align: center
 
-   **X(635) = COMPLEMENT OF X(61)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(635) = COMPLEMENT OF X(61)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = [2S\ :sub:`B`\ S\ :sub:`C` + S\ :sub:`A`\ a\ :sup:`2` + 2 sqr(3) (b\ :sup:`2` + c\ :sup:`2`) area]/a
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = [2S_{B}S_{C} + S_{A}a^{2} + 2 \sqrt{3} (b^{2} + c^{2}) \operatorname{area}]/a`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`2.983199048303`
 
-.. container:: note-item
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-   :ref:`X(635) <X(635)>` lies.
+   * **Trilinears:** :math:`F(61)/a - \cos(A - \pi /3) : F(61)/b - \cos(B - \pi /3) : F(61)/c - \cos(C - \pi /3)`
 
 .. collapse:: Incident Central Lines
    :badge: 9 lines
@@ -39,13 +41,6 @@ X(635) = COMPLEMENT OF X(61)
    * :ref:`X(635) <X(635)>` = midpoint of :ref:`X(61) <X(61)>` and :ref:`X(633) <X(633)>`
    * :ref:`X(635) <X(635)>` = :term:`complement <complement>` of :ref:`X(61) <X(61)>`
    * :ref:`X(635) <X(635)>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X(629) <X(629)>`
-
-Notes
------
-
-.. container:: note-item
-
-   Barycentrics g(a,b,c) : g(b,c,a) : g(c,a,b), where g(a,b,c) = af(a,b,c)
 
 .. toctree::
    :hidden:
