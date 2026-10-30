@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../_static/css/styles.css?v=3d8cc37d" />
+  <link rel="stylesheet" type="text/css" href="../_static/css/styles.css?v=69acf51f" />
   <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -52,6 +52,12 @@
           <a href="../mission/index.html"  >mission</a>
         </li>
         <li>
+          <a href="#" class="is-active" aria-selected="true" aria-current="page">usage</a>
+        </li>
+        <li>
+          <a href="../log/index.html"  >log</a>
+        </li>
+        <li>
           <a href="../modules/index.html"  >modules</a>
         </li>
       </ul>
@@ -75,13 +81,31 @@
           <div class="book-nav-center">
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="../logs.html" title="logs"><span class="nav-label">Next</span> &rarr;</a>
+            <a class="book-nav-btn" href="../demos/index.html" title="demos"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </header>
       <div class="content body book-content" role="main">
         <section class="level-1" id="usage">
         <h1>usage<a class="headerlink" href="#usage" title="Link to this heading">¶</a></h1>
+        <p><code class="docutils literal notranslate"><span class="pre">geometor.etc</span></code> executes a 4-stage pipeline—<strong>Ingest</strong>, <strong>Parse</strong>, <strong>Construct</strong>, and <strong>Render</strong>—to build the <em>Encyclopedia of Triangle Centers</em> Book Codex.</p>
+        <section class="level-2" id="cli-usage">
+        <h2>CLI Usage<a class="headerlink" href="#cli-usage" title="Link to this heading">¶</a></h2>
+        <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Build the first 1,000 centers (skipping raw HTML splitting if already cached)</span>
+        python3<span class="w"> </span>-m<span class="w"> </span>geometor.etc<span class="w"> </span>--skip-ingest<span class="w"> </span>--limit<span class="w"> </span><span class="m">1000</span>
+
+        <span class="c1"># Build specific triangle centers by ID</span>
+        python3<span class="w"> </span>-m<span class="w"> </span>geometor.etc<span class="w"> </span>--skip-ingest<span class="w"> </span>--centers<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="m">6</span><span class="w"> </span><span class="m">7</span><span class="w"> </span><span class="m">8</span><span class="w"> </span><span class="m">9</span><span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="m">11</span><span class="w"> </span><span class="m">13</span>
+
+        <span class="c1"># Compile the Sphinx HTML site</span>
+        publish<span class="w"> </span>build
+        </pre></div>
+        </div>
+        </section>
+        <section class="level-2" id="composable-geometric-operations-geometor-etc-ops">
+        <h2>Composable Geometric Operations (<code class="docutils literal notranslate"><span class="pre">geometor.etc.ops</span></code>)<a class="headerlink" href="#composable-geometric-operations-geometor-etc-ops" title="Link to this heading">¶</a></h2>
+        <p>Each modeled center directory (<code class="docutils literal notranslate"><span class="pre">docsrc/centers/x-NNNNN/</span></code>) includes a standalone <code class="docutils literal notranslate"><span class="pre">model.py</span></code> script built from <code class="docutils literal notranslate"><span class="pre">geometor.etc.ops</span></code> primitives (e.g., <code class="docutils literal notranslate"><span class="pre">orthocenter</span></code>, <code class="docutils literal notranslate"><span class="pre">incenter</span></code>, <code class="docutils literal notranslate"><span class="pre">circumcenter</span></code>, <code class="docutils literal notranslate"><span class="pre">centroid</span></code>, <code class="docutils literal notranslate"><span class="pre">isogonal_conjugate</span></code>, <code class="docutils literal notranslate"><span class="pre">isotomic_conjugate</span></code>, <code class="docutils literal notranslate"><span class="pre">trilinear_pole</span></code>, <code class="docutils literal notranslate"><span class="pre">perspector</span></code>) and renders interactive SVGs across four reference triangles (<code class="docutils literal notranslate"><span class="pre">scalene</span></code>, <code class="docutils literal notranslate"><span class="pre">right</span></code>, <code class="docutils literal notranslate"><span class="pre">kepler</span></code>, and <code class="docutils literal notranslate"><span class="pre">kimberling</span></code>).</p>
+        </section>
         </section>
 
       </div>
@@ -95,7 +119,7 @@
             <a class="book-toc-link" href="../index.html">geometor • etc</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="../logs.html" title="logs"><span class="nav-label">logs</span> &rarr;</a>
+            <a class="book-nav-btn" href="../demos/index.html" title="demos"><span class="nav-label">demos</span> &rarr;</a>
           </div>
         </div>
       </footer>
@@ -120,15 +144,46 @@
         </form>
       </div>
     </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../log/26.302-183300/index.html">ETC Semantic Parser, Apparatus Registries & Multi-Triangle Codex Builder</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-tags">
+      <h3>Tags</h3>
+      <ul>
+        <li><a href="../tags/apparatus.html">apparatus</a></li>
+        <li><a href="../tags/etc.html">etc</a></li>
+        <li><a href="../tags/svg.html">svg</a></li>
+        <li><a href="../tags/triangle-centers.html">triangle-centers</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-categories">
+      <h3>Categories</h3>
+      <ul>
+        <li><a href="../categories/constructions.html">constructions</a></li>
+        <li><a href="../categories/parser.html">parser</a></li>
+      </ul>
+    </aside>
     <aside class="aside-types">
       <h3>Types</h3>
       <ul>
         <li><a href="../types/center.html">center</a></li>
         <li><a href="../types/code.html">code</a></li>
+        <li><a href="../types/log.html">log</a></li>
       </ul>
     </aside>
   </div>
   <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../about.html"  >about</a></li>
+        <li><a href="../connect.html"  >connect</a></li>
+        <li><a href="../todos/index.html"  >todos</a></li>
+        <li><a href="../changelog.html"  >changelog</a></li>
+      </ul>
+    </div>
     <hr />
     <div role="contentinfo">
       <p>

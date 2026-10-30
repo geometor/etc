@@ -1,13 +1,10 @@
 :navigation: header
-:order: 5
+:order: 10
 
+=======
 mission
 =======
 
-    modernize the Encyclopedia of Triangle Centers with structured data and semantic linking
+``geometor.etc`` is a digital reconstruction, semantic index, and symbolic construction engine for Clark Kimberling's *Encyclopedia of Triangle Centers* (ETC).
 
-goals
------
-
-.. collection::
-   :sort: order
+Our mission is to parse, structure, cross-reference, and model the 53,144 triangle centers of the ETC, transforming archival HTML volumes into a computable dependency and incidence graph ready for symbolic verification in ``geometor.model`` and visual exploration in ``geometor.explorer``.

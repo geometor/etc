@@ -1,10 +1,7 @@
 :navigation: header
-:order: 6
-
+:order: 40
 
 modules
 =======
 
 .. include:: api/geometor/etc/index.rst
-
-
