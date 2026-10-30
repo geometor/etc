@@ -10,13 +10,13 @@ X(77) = ISOGONAL CONJUGATE OF X(33)
 
 .. enunciation::
 
-   In the plane of a triangle ABC, let
+   In the plane of a triangle :g:`ABC << A B C >>`, let
 
 .. figure:: x-00077.svg
    :alt: X(77) = ISOGONAL CONJUGATE OF X(33)
    :align: center
 
-   **X(77) = ISOGONAL CONJUGATE OF X(33)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(77) = ISOGONAL CONJUGATE OF X(33)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -31,10 +31,6 @@ X(77) = ISOGONAL CONJUGATE OF X(33)
    * **Trilinears:** :math:`(b^{2} + c^{2} - a^{2})/(b + c - a) : :`
    * **Trilinears:** :math:`S_{A}(S_{A} - bc) : :`
    * **Barycentrics:** :math:`\cot A (1 - \cos A) : :`
-
-.. container:: note-item
-
-   :ref:`X(77) <X(77)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 19 lines
@@ -53,7 +49,7 @@ X(77) = ISOGONAL CONJUGATE OF X(33)
    * :ref:`X(77) <X(77)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(652) <X(652)>`\ \ :ref:`X(905) <X(905)>`
    * :ref:`X(77) <X(77)>` = {:ref:`X(175) <X(175)>`,\ :ref:`X(176) <X(176)>`}-harmonic conjugate of :ref:`X(962) <X(962)>`
    * :ref:`X(77) <X(77)>` = :ref:`X(92) <X(92)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(41) <X(41)>`
-   * :ref:`X(77) <X(77)>` = perspector of ABC and extraversion triangle of :ref:`X(78) <X(78)>`
+   * :ref:`X(77) <X(77)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(78) <X(78)>`
    * :ref:`X(77) <X(77)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`21 <X(21)>`, :ref:`990 <X(990)>`), (:ref:`69 <X(69)>`, :ref:`69 <X(69)>`), (:ref:`86 <X(86)>`, :ref:`269 <X(269)>`), (:ref:`99 <X(99)>`, :ref:`75 <X(75)>`), (:ref:`332 <X(332)>`, :ref:`326 <X(326)>`), (:ref:`336 <X(336)>`, :ref:`77 <X(77)>`), (:ref:`662 <X(662)>`, :ref:`77 <X(77)>`), (:ref:`664 <X(664)>`, :ref:`77 <X(77)>`), (:ref:`811 <X(811)>`, :ref:`77 <X(77)>`)
 
 Notes
@@ -61,12 +57,12 @@ Notes
 
 .. container:: note-item
 
-   * Ia = line through :ref:`X(7) <X(7)>` parallel to BC, and define Ib and Ic cyclically.
-      * Ac = Ia∩AB, and define Ba and Cb cyclically.
-      * Ab = Ia∩AC, and define Bc and Ca cyclically.
-      * Oa = circumcircle of A, Bc, Cb, and define Ob and Oc cyclically.
+   * :g:`I_{a} <I_a>` = line through :ref:`X(7) <X(7)>` parallel to :g:`BC <[ B C ]>`, and define :g:`I_{b} <I_b>` and :g:`I_{c} <I_c>` cyclically.
+      * :g:`A_{c} <A_c>` = :g:`I_{a} <I_a>`\ ∩\ :g:`AB <[ A B ]>`, and define :g:`B_{a} <B_a>` and :g:`C_{b} <C_b>` cyclically.
+      * :g:`A_{b} <A_b>` = :g:`I_{a} <I_a>`\ ∩\ :g:`AC <[ A C ]>`, and define :g:`B_{c} <B_c>` and :g:`C_{a} <C_a>` cyclically.
+      * :g:`O_{a} <O_a>` = circumcircle of :g:`A <A>`, :g:`B_{c} <B_c>`, :g:`C_{b} <C_b>`, and define :g:`O_{b} <O_b>` and :g:`O_{c} <O_c>` cyclically.
 
-   Then :ref:`X(77) <X(77)>` = radical center of Oa, Ob, Oc. See also :ref:`X(77) <X(77)>`. (Ivan Pavlov, April 1, 2022)
+   Then :ref:`X(77) <X(77)>` = radical center of :g:`O_{a} <O_a>`, :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>`. See also :ref:`X(77) <X(77)>`. (Ivan Pavlov, April 1, 2022)
 
 .. toctree::
    :hidden:

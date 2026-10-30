@@ -16,17 +16,13 @@ X(750) = INTERSECTION OF LINES X(1)X(88) AND X(2)X(31)
    :alt: X(750) = INTERSECTION OF LINES X(1)X(88) AND X(2)X(31)
    :align: center
 
-   **X(750) = INTERSECTION OF LINES X(1)X(88) AND X(2)X(31)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(750) = INTERSECTION OF LINES X(1)X(88) AND X(2)X(31)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`a^{2} + 2bc : b^{2} + 2ca : c^{2} + 2ab`
    | **Barycentrics:** :math:`a^{3} + 2abc : b^{3} + 2abc : c^{3} + 2abc`
    | **Search Value (6, 9, 13):** :math:`1.737657374421`
-
-.. container:: note-item
-
-   :ref:`X(750) <X(750)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 19 lines

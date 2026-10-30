@@ -10,28 +10,24 @@ X(940) = POINT ALDEBARAN
 
 .. enunciation::
 
-   Let A' be the center of the conic through the contact points of the incircle and the A- excircle with the sidelines of ABC. Define B' and C' cyclically. The triangle A'B'C' is perspective to the 4th :term:`extouch triangle <extouch-triangle>` at :ref:`X(940) <X(940)>`. See also :ref:`X(6) <X(6)>`, :ref:`X(25) <X(25)>`, :ref:`X(218) <X(218)>`, :ref:`X(222) <X(222)>`, X(1743). (:person:`Randy Hutson <randy-hutson>`, July 23, 2015)
+   Let :g:`A' <A'>` be the center of the conic through the contact points of the incircle and the A- excircle with the sidelines of :g:`ABC << A B C >>`. Define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The triangle :g:`A'B'C' << A' B' C' >>` is perspective to the 4th :term:`extouch triangle <extouch-triangle>` at :ref:`X(940) <X(940)>`. See also :ref:`X(6) <X(6)>`, :ref:`X(25) <X(25)>`, :ref:`X(218) <X(218)>`, :ref:`X(222) <X(222)>`, X(1743). (:person:`Randy Hutson <randy-hutson>`, July 23, 2015)
 
 .. figure:: x-00940.svg
    :alt: X(940) = POINT ALDEBARAN
    :align: center
 
-   **X(940) = POINT ALDEBARAN** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(940) = POINT ALDEBARAN** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = a\ :sup:`2` + a(b + c) + 2bc
-   | **Barycentrics:** :math:`a^2 + 4 R r : :`
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a^{2} + a(b + c) + 2bc`
+   | **Barycentrics:** :math:`a^{2} + 4 R r : :`
    | **Search Value (6, 9, 13):** :math:`1.556965023114`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
    * **Trilinears:** :math:`as + bc : bs + ca : cs + ab`
-
-.. container:: note-item
-
-   :ref:`X(940) <X(940)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 12 lines

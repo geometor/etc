@@ -16,7 +16,7 @@ X(902) = CROSSPOINT OF X(6) AND X(106)
    :alt: X(902) = CROSSPOINT OF X(6) AND X(106)
    :align: center
 
-   **X(902) = CROSSPOINT OF X(6) AND X(106)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(902) = CROSSPOINT OF X(6) AND X(106)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,10 +28,6 @@ X(902) = CROSSPOINT OF X(6) AND X(106)
    :badge: 1 form
 
    * **Trilinears:** :math:`1 - \cos 2A - (1 + \cos A)(\cos B + \cos C) : :`
-
-.. container:: note-item
-
-   :ref:`X(902) <X(902)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 12 lines
@@ -52,7 +48,7 @@ X(902) = CROSSPOINT OF X(6) AND X(106)
    * :ref:`X(902) <X(902)>` = :term:`trilinear pole <trilinear-pole>` of PU(99) (line X(1017)X(1960))
    * :ref:`X(902) <X(902)>` = inverse-in-Parry-isodynamic-circle of X(5029); see :ref:`X(2) <X(2)>`
    * :ref:`X(902) <X(902)>` = :ref:`X(63) <X(63)>`-:term:`isoconjugate <isoconjugate>` of X(6336)
-   * :ref:`X(902) <X(902)>` = perspector of hyperbola {A,B,C,\ :ref:`X(6) <X(6)>`,\ :ref:`X(101) <X(101)>`}}
+   * :ref:`X(902) <X(902)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(6) <X(6)>`,\ :ref:`X(101) <X(101)>`}}
    * :ref:`X(902) <X(902)>` = {:ref:`X(31) <X(31)>`,\ :ref:`X(42) <X(42)>`}-harmonic conjugate of X(2308)
    * :ref:`X(902) <X(902)>` = polar conjugate of :term:`isotomic conjugate <isotomic-conjugate>` of X(22356)
 

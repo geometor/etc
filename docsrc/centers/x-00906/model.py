@@ -11,6 +11,7 @@ from geometor.etc.ops import (
     central_line,
     construct_baseline_triangle,
     create_model,
+    eval_barycentric_point,
     eval_trilinear_point,
     promote_point_to_top,
 )
@@ -29,7 +30,7 @@ def construct_x_00906(
     X_112 = eval_trilinear_point(model, A, B, C, 'a/(sin(2*B) - sin(2*C))', ID="X(112)", classes=["center", "incident"])
     central_line(model, X_100, X_112, 100, 112, incident=True)
     X_32 = eval_trilinear_point(model, A, B, C, 'a**(3)', ID="X(32)", classes=["center", "incident"])
-    X_218 = eval_trilinear_point(model, A, B, C, '(cos(A/2))**(2)*((cos(B/2))**(4) + (cos(C/2))**(4) - (cos(A/2))**(4))', ID="X(218)", classes=["center", "incident"])
+    X_218 = eval_barycentric_point(model, A, B, C, 'a**(2)*(a**(2) + b**(2) + c**(2) - 2*a*b - 2*a*c)', ID="X(218)", classes=["center", "incident"])
     central_line(model, X_32, X_218, 32, 218, incident=True)
     return promote_point_to_top(model, X_906)
 

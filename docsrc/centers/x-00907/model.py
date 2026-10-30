@@ -22,7 +22,7 @@ def construct_x_00907(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(907) = POINT ACRUX on reference triangle ABC."""
-    X_907 = eval_trilinear_point(model, A, B, C, 'a/((b**(2)- c**(2))*(3*a**(2)+ b**(2)+ c**(2)))', ID="X(907)", classes=["selected", "target"])
+    X_907 = point_from_barycentrics(model, A, B, C, 0.33039036, 0.6446786, 0.024931037, ID="X(907)", classes=["selected", "target"])
     X_98 = eval_trilinear_point(model, A, B, C, 'sec(A + omega )', ID="X(98)", classes=["center", "incident"])
     X_620 = point_from_barycentrics(model, A, B, C, 0.40242494, 0.16743649, 0.43013857, ID="X(620)", classes=["center", "incident"])
     central_line(model, X_98, X_620, 98, 620, incident=True)

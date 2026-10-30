@@ -16,17 +16,13 @@ X(762) = TRILINEAR CUBE OF X(37)
    :alt: X(762) = TRILINEAR CUBE OF X(37)
    :align: center
 
-   **X(762) = TRILINEAR CUBE OF X(37)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(762) = TRILINEAR CUBE OF X(37)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`(b + c)^{3} : (c + a)^{3} : (a + b)^{3}`
    | **Barycentrics:** :math:`a(b + c)^{3} : b(c + a)^{3} : c(a + b)^{3}`
    | **Search Value (6, 9, 13):** :math:`2.973293097358`
-
-.. container:: note-item
-
-   :ref:`X(762) <X(762)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines

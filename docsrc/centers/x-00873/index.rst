@@ -16,16 +16,12 @@ X(873) = ISOGONAL CONJUGATE OF X(872)
    :alt: X(873) = ISOGONAL CONJUGATE OF X(872)
    :align: center
 
-   **X(873) = ISOGONAL CONJUGATE OF X(872)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(873) = ISOGONAL CONJUGATE OF X(872)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`[a(b + c)] ^{-2} : :`
    | **Search Value (6, 9, 13):** :math:`2.732631291032`
-
-.. container:: note-item
-
-   :ref:`X(873) <X(873)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines

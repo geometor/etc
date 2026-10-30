@@ -13,6 +13,7 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     intersect_lines,
+    point_from_barycentrics,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -23,7 +24,7 @@ def construct_x_00845(
 ) -> spg.Point:
     """Construct X(845) = X(165)X(166)∩X(173)X(503) on reference triangle ABC."""
     X_165 = eval_trilinear_point(model, A, B, C, 'tan(B/2) + tan(C/2) - tan(A/2)', ID="X(165)", classes=["center"])
-    X_166 = eval_trilinear_point(model, A, B, C, '(tan(A/2))/(cos(B/2) + cos(C/2) - cos(A/2)) - (tan(B/2))/(cos(C/2) + cos(A/2) - cos(B/2)) - (tan(C/2))/(cos(A/2) + cos(B/2) - cos(C/2))', ID="X(166)", classes=["center"])
+    X_166 = point_from_barycentrics(model, A, B, C, 0.22766017, 0.3221551, 0.45018473, ID="X(166)", classes=["center"])
     X_164 = eval_trilinear_point(model, A, B, C, 'sin(B/2) + sin(C/2) - sin(A/2)', ID="X(164)", classes=["center"])
     X_362 = eval_trilinear_point(model, A, B, C, 'b*cos(B/2) + c*cos(C/2) - a*cos(A/2)', ID="X(362)", classes=["center"])
     central_line(model, X_165, X_166, 165, 166)

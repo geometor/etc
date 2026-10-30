@@ -10,13 +10,13 @@ X(264) = ISOTOMIC CONJUGATE OF CIRCUMCENTER
 
 .. enunciation::
 
-   Let A' be the trilinear product of the vertices of the A-anti-altimedial triangle, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(264) <X(264)>`. (:person:`Randy Hutson <randy-hutson>`, November 2, 2017)
+   Let :g:`A' <A'>` be the trilinear product of the vertices of the A-anti-altimedial triangle, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(264) <X(264)>`. (:person:`Randy Hutson <randy-hutson>`, November 2, 2017)
 
 .. figure:: x-00264.svg
    :alt: X(264) = ISOTOMIC CONJUGATE OF CIRCUMCENTER
    :align: center
 
-   **X(264) = ISOTOMIC CONJUGATE OF CIRCUMCENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(264) = ISOTOMIC CONJUGATE OF CIRCUMCENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,7 +27,7 @@ X(264) = ISOTOMIC CONJUGATE OF CIRCUMCENTER
 .. collapse:: Alternate Coordinates
    :badge: 6 forms
 
-   * **Trilinears:** :math:`\sec A \csc^{2}A : \sec B \csc^{2}B : \sec C \csc^{2}C`
+   * **Trilinears:** :math:`\sec A \csc^{2} A : \sec B \csc^{2} B : \sec C \csc^{2} C`
    * **Trilinears:** :math:`\tan A \csc(A - \omega ) : \tan B \csc(B - \omega ) : \tan C \csc(C - \omega )`
    * **Trilinears:** :math:`\sec A + \cot A \csc A : :`
    * **Barycentrics:** :math:`1/[a^{2}(a^{2} - b^{2} - c^{2})] : :`
@@ -37,10 +37,6 @@ X(264) = ISOTOMIC CONJUGATE OF CIRCUMCENTER
 .. container:: note-item
 
    :ref:`X(264) <X(264)>` lies on these cubics: K045, K146, K183, K184, K208, K257, K276, K342a, K342b, K494, K504, K647, K674, K675, K677, K718
-
-.. container:: note-item
-
-   :ref:`X(264) <X(264)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 94 lines
@@ -61,7 +57,7 @@ X(264) = ISOTOMIC CONJUGATE OF CIRCUMCENTER
    * :ref:`X(264) <X(264)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,)}: (:ref:`2 <X(2)>`, :ref:`76 <X(76)>`), (:ref:`3 <X(3)>`, 5392), (:ref:`4 <X(4)>`, 2052), (:ref:`5 <X(5)>`, :ref:`2 <X(2)>`), (:ref:`30 <X(30)>`, :ref:`94 <X(94)>`), (:ref:`92 <X(92)>`, :ref:`331 <X(331)>`), (:ref:`235 <X(235)>`, :ref:`459 <X(459)>`), (:ref:`318 <X(318)>`, 7017), (:ref:`339 <X(339)>`, :ref:`850 <X(850)>`), (:ref:`427 <X(427)>`, :ref:`4 <X(4)>`), (:ref:`442 <X(442)>`, :ref:`321 <X(321)>`), (:ref:`523 <X(523)>`, :ref:`648 <X(648)>`), (:ref:`850 <X(850)>`, 6528), (:ref:`858 <X(858)>`, :ref:`671 <X(671)>`), (1312, 2593), (1313, 2592), (1368, 2996), (1441, :ref:`75 <X(75)>`), (1591, 5490), (1592, 5491), (1594, :ref:`275 <X(275)>`), (2072, 2986), (2450, :ref:`98 <X(98)>`), (2967, :ref:`297 <X(297)>`), (2968, 4391), (2971, 2501), (2972, :ref:`525 <X(525)>`), (3007, :ref:`903 <X(903)>`), (3134, 2394), (3136, :ref:`10 <X(10)>`), (3141, 4049), (3142, :ref:`226 <X(226)>`), (3143, 5466), (5133, :ref:`83 <X(83)>`), (5169, :ref:`598 <X(598)>`), (6530, 6330), (6563, :ref:`99 <X(99)>`)
    * :ref:`X(264) <X(264)>` = X(1988)-:term:`complementary conjugate <complementary-conjugate>` of :ref:`X(10) <X(10)>`
    * :ref:`X(264) <X(264)>` = X(i)-:term:`anticomplementary conjugate <anticomplementary-conjugate>` of X(j) for these (i,j): (:ref:`54 <X(54)>`, 6360), (:ref:`92 <X(92)>`, 2888), (:ref:`95 <X(95)>`, 4329), (:ref:`275 <X(275)>`, :ref:`8 <X(8)>`), (:ref:`276 <X(276)>`, 6327), (:ref:`933 <X(933)>`, 4560), (2148, 3164), (2167, :ref:`20 <X(20)>`), (2190, :ref:`2 <X(2)>`)
-   * :ref:`X(264) <X(264)>` = antipode of X(1972) in hyperbola {}A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(69) <X(69)>`}}
+   * :ref:`X(264) <X(264)>` = antipode of X(1972) in hyperbola {}\ :g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(69) <X(69)>`}}
    * :ref:`X(264) <X(264)>` = pole of Lemoine axis wrt polar circle
    * :ref:`X(264) <X(264)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X(6) <X(6)>`
    * :ref:`X(264) <X(264)>` = polar-circle inverse of X(5167)
@@ -82,13 +78,13 @@ Notes
 
    Five constructions by Randy Hutson, January 29, 2015:
 
-      (1) Let A'B'C' be the :term:`tangential triangle <tangential-triangle>`. Let A″ be the pole, wrt the polar circle, of line B'C', and define B″, C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(264) <X(264)>`.
+      (1) Let :g:`A'B'C' << A' B' C' >>` be the :term:`tangential triangle <tangential-triangle>`. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(264) <X(264)>`.
 
-      (2) Let A'B'C' be the symmedial triangle. Let A″ be the pole, wrt the polar circle, of line B'C', and define B″, C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(264) <X(264)>`.
+      (2) Let :g:`A'B'C' << A' B' C' >>` be the symmedial triangle. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(264) <X(264)>`.
 
-      (3) Let A'B'C' be the circumsymmedial triangle. Let A″ be the pole, wrt the polar circle, of line B'C', and define B″, C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(264) <X(264)>`.
+      (3) Let :g:`A'B'C' << A' B' C' >>` be the circumsymmedial triangle. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(264) <X(264)>`.
 
-      (4) Let A'B'C' be the Lucas(t) :term:`central triangle <central-triangle>` (for any t). Let A″ be the pole, wrt the polar circle, of line B'C', and define B″, C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(264) <X(264)>`.
+      (4) Let :g:`A'B'C' << A' B' C' >>` be the Lucas(t) :term:`central triangle <central-triangle>` (for any t). Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(264) <X(264)>`.
 
       (5) :ref:`X(264) <X(264)>` is the trilinear pole of the line :ref:`X(297) <X(297)>`\ \ :ref:`X(525) <X(525)>`. This line is the isotomic conjugate of the MacBeath circumconic, which is the isogonal conjugate of the orthic axis. The line is also the polar of :ref:`X(6) <X(6)>` wrt the polar circle, and the radical axis of the polar and orthosymmedial circles, and the polar conjugate of the circumcircle)
 

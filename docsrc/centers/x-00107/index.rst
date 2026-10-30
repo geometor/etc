@@ -16,7 +16,7 @@ X(107) = Ψ(SYMMEDIAN POINT, ORTHOCENTER)
    :alt: X(107) = Ψ(SYMMEDIAN POINT, ORTHOCENTER)
    :align: center
 
-   **X(107) = Ψ(SYMMEDIAN POINT, ORTHOCENTER)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(107) = Ψ(SYMMEDIAN POINT, ORTHOCENTER)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -30,10 +30,6 @@ X(107) = Ψ(SYMMEDIAN POINT, ORTHOCENTER)
 
    * **Trilinears:** :math:`(\sec A)/(\tan B - \tan C) : :`
    * **Trilinears:** :math:`bc/[(b^{2} - c^{2})(b^{2} + c^{2} - a^{2})^{2}] : :`
-
-.. container:: note-item
-
-   :ref:`X(107) <X(107)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 227 lines
@@ -55,7 +51,7 @@ X(107) = Ψ(SYMMEDIAN POINT, ORTHOCENTER)
    * :ref:`X(107) <X(107)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`24 <X(24)>`, :ref:`250 <X(250)>`), (:ref:`108 <X(108)>`, :ref:`162 <X(162)>`), (:ref:`523 <X(523)>`, :ref:`4 <X(4)>`)
    * :ref:`X(107) <X(107)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(4) <X(4)>`\ \ :ref:`X(6) <X(6)>`
    * :ref:`X(107) <X(107)>` = Ψ(X(i),X(j)) for these (i,j): (:ref:`1 <X(1)>`, :ref:`29 <X(29)>`), (:ref:`3 <X(3)>`, :ref:`2 <X(2)>`), (:ref:`6 <X(6)>`, :ref:`4 <X(4)>`), (:ref:`4 <X(4)>`, :ref:`51 <X(51)>`), (:ref:`54 <X(54)>`, :ref:`4 <X(4)>`), (:ref:`64 <X(64)>`, :ref:`4 <X(4)>`), (:ref:`65 <X(65)>`, :ref:`4 <X(4)>`), (:ref:`67 <X(67)>`, :ref:`4 <X(4)>`), (:ref:`69 <X(69)>`, :ref:`4 <X(4)>`)
-   * :ref:`X(107) <X(107)>` = intersection of reflections in sides of ABC of line :ref:`X(4) <X(4)>`\ \ :ref:`X(51) <X(51)>`
+   * :ref:`X(107) <X(107)>` = intersection of reflections in sides of :g:`ABC << A B C >>` of line :ref:`X(4) <X(4)>`\ \ :ref:`X(51) <X(51)>`
    * :ref:`X(107) <X(107)>` = reflection of X(1304) in the Euler line
    * :ref:`X(107) <X(107)>` = reflection of X(2713) in the Brocard axis
    * :ref:`X(107) <X(107)>` = reflection of X(2719) in line :ref:`X(1) <X(1)>`\ \ :ref:`X(3) <X(3)>`
@@ -66,7 +62,7 @@ X(107) = Ψ(SYMMEDIAN POINT, ORTHOCENTER)
    * :ref:`X(107) <X(107)>` = X(1577)-isoconjugate of :ref:`X(577) <X(577)>`
    * :ref:`X(107) <X(107)>` = :term:`crossdifference <crossdifference>` of every pair of points on line X(1636)X(2972)
    * :ref:`X(107) <X(107)>` = :ref:`X(134) <X(134)>`-of-excentral-triangle
-   * :ref:`X(107) <X(107)>` = circumcircle intercept, other than A, B, C, of conic {A,B,C,PU(157)}}
+   * :ref:`X(107) <X(107)>` = circumcircle intercept, other than :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(157)}}
    * :ref:`X(107) <X(107)>` = Thomson-isogonal conjugate of X(6000)
    * :ref:`X(107) <X(107)>` = Lucas-isogonal conjugate of X(6000)
    * :ref:`X(107) <X(107)>` = barycentric product of Steiner circumellipse intercepts of van Aubel line

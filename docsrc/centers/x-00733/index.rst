@@ -16,12 +16,12 @@ X(733) = EVEN (- 2, 2) CIRCUMCIRCLE POINT
    :alt: X(733) = EVEN (- 2, 2) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(733) = EVEN (- 2, 2) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(733) = EVEN (- 2, 2) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = 1/[a\ :sup:`-3`\ (b\ :sup:`2` + c\ :sup:`2`) - a\ :sup:`1`\ (b\ :sup:`-2` + c :sup:`-2`)]
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = 1/[a^{-3}(b^{2} + c^{2}) - a^{1}(b^{-2} + c ^{-2})]`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`-0.104982804195`
 
 .. container:: note-item

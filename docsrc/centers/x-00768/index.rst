@@ -16,16 +16,12 @@ X(768) = ODD (- 4, - 3) INFINITY POINT
    :alt: X(768) = ODD (- 4, - 3) INFINITY POINT
    :align: center
 
-   **X(768) = ODD (- 4, - 3) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(768) = ODD (- 4, - 3) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = a :sup:`-5`\ (b :sup:`-3` - c :sup:`-3`) + a :sup:`-4`\ (b :sup:`-4` - c :sup:`-4`)
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
-
-.. container:: note-item
-
-   :ref:`X(768) <X(768)>` lies.
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a ^{-5}(b ^{-3} - c ^{-3}) + a ^{-4}(b ^{-4} - c ^{-4})`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
 
 .. collapse:: Incident Central Lines
    :badge: 1 line
@@ -60,7 +56,7 @@ Notes
 
 .. container:: note-item
 
-   a\ :sup:`m-1`\ (b\ :sup:`n` - c\ :sup:`n`) + a\ :sup:`n-1`\ (b\ :sup:`m` - c\ :sup:`m`),
+   :math:`a^{m-1}(b^{n} - c^{n})` + :math:`a^{n-1}(b^{m} - c^{m})`,
 
    corresponding to an **odd** :term:`polynomial center <polynomial-center>` in case m and n are distinct integers. See the note accompanying :ref:`X(696) <X(696)>`, where even (m,n) infinity points and even (m,n) circumcircle points are introduced. [For nonzero n, "odd (m,n) circumcircle point" would be a misnomer (as the point is an even polynomial center); consequently, the prefix o- is used to distinguish this point from "even (m,n) circumcircle point" defined at :ref:`X(696) <X(696)>`.] Certain points of these classes occur prior to this section. They are as follows:
 

@@ -10,28 +10,24 @@ X(445) = EULER X(79)-10th-SUBSTITUTION POINT
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(445) <X(445)>` has Shinagawa coefficients (($aS\ :sub:`A`\ $ + 2abc)F,$a$S\ :sup:`2`).
+   As a point on the Euler line, :ref:`X(445) <X(445)>` has Shinagawa coefficients :math:`((\$aS_{A}\$ + 2abc)F,\$a\$S^{2})`.
 
 .. figure:: x-00445.svg
    :alt: X(445) = EULER X(79)-10th-SUBSTITUTION POINT
    :align: center
 
-   **X(445) = EULER X(79)-10th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(445) = EULER X(79)-10th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(v + w)\csc 2A : (w + u)\csc 2B : (u + v)\csc 2C`, where, u : v : w = :ref:`X(79) <X(79)>`; e.g., u(a,b,c) = 1/(1 + 2 cos A)
+   | **Trilinears:** :math:`(v + w)\csc 2A : (w + u)\csc 2B : (u + v)\csc 2C`, where :math:`u : v : w` = :ref:`X(79) <X(79)>`; e.g., :math:`u(a,b,c) = 1/(1 + 2 \cos A)`
    | **Barycentrics:** :math:`(v + w)\sec A : (w + u)\sec B : (u + v)\sec C`
-   | **Search Value (6, 9, 13):** :math:`3.760057866603`
+   | **Search Value (6, 9, 13):** :math:`4.705865843343`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`(a^2 + b^2 - c^2)*(a^2 - b^2 - b*c - c^2)*(a^2 - b^2 + c^2)*(a^2*b - b^3 + a^2*c + 2*a*b*c + b^2*c + b*c^2 - c^3) : :`
-
-.. container:: note-item
-
-   :ref:`X(445) <X(445)>` lies.
+   * **Barycentrics:** :math:`(a^{2} + b^{2} - c^{2}) \cdot (a^{2} - b^{2} - b c - c^{2}) \cdot (a^{2} - b^{2} + c^{2}) \cdot (a^{2} b - b^{3} + a^{2} c + 2 a b c + b^{2} c + b c^{2} - c^{3}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 25 lines

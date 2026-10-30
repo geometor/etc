@@ -10,18 +10,24 @@ X(627) = ANTICOMPLEMENT OF X(17)
 
 .. enunciation::
 
-   Erect equilateral triangles outwards on the sides of triangle ABC; the circumcenter of the apices is :ref:`X(627) <X(627)>`. (:person:`Peter Moses <peter-moses>`, 7/16,2003)
+   Erect equilateral triangles outwards on the sides of triangle :g:`ABC << A B C >>`; the circumcenter of the apices is :ref:`X(627) <X(627)>`. (:person:`Peter Moses <peter-moses>`, 7/16,2003)
 
 .. figure:: x-00627.svg
    :alt: X(627) = ANTICOMPLEMENT OF X(17)
    :align: center
 
-   **X(627) = ANTICOMPLEMENT OF X(17)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(627) = ANTICOMPLEMENT OF X(17)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = [S\ :sub:`B`\ S\ :sub:`C` + 2S\ :sub:`A`\ (a\ :sup:`2` + sqr(3) area)]/a
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = [S_{B}S_{C} + 2S_{A}(a^{2} + \sqrt{3} \operatorname{area})]/a`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`5.114797277327`
+
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
+
+   * **Trilinears:** :math:`F(17)/a - 2 \sec(A - \pi /3) : F(17)/b - 2 \sec(B - \pi /3) : F(17)/c - 2 \sec(C - \pi /3)`
 
 .. container:: note-item
 
@@ -49,19 +55,11 @@ Notes
 
 .. container:: note-item
 
-   Trilinears F(17)/a - 2 sec(A - π/3) : F(17)/b - 2 sec(B - π/3) : F(17)/c - 2 sec(C - π/3)
+   Let :g:`A' <A'>` be the isogonal conjugate of the :g:`A <A>`-vertex of the inner Napoleon triangle, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Triangle :g:`A'B'C' << A' B' C' >>` is perspective to the inner Napoleon triangle at :ref:`X(5) <X(5)>`, and to the outer Napoleon triangle at :ref:`X(627) <X(627)>`. (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
 
 .. container:: note-item
 
-   Barycentrics g(a,b,c) : g(b,c,a) : g(c,a,b), where g(a,b,c) = af(a,b,c)
-
-.. container:: note-item
-
-   Let A' be the isogonal conjugate of the A-vertex of the inner Napoleon triangle, and define B' and C' cyclically. Triangle A'B'C' is perspective to the inner Napoleon triangle at :ref:`X(5) <X(5)>`, and to the outer Napoleon triangle at :ref:`X(627) <X(627)>`. (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
-
-.. container:: note-item
-
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the outer Fermat triangle and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(627) <X(627)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (Randy Hutson, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the outer Fermat triangle and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(627) <X(627)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
 
 .. toctree::
    :hidden:

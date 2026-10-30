@@ -16,7 +16,7 @@ X(567) = ORTHOGONAL OF X(50)
    :alt: X(567) = ORTHOGONAL OF X(50)
    :align: center
 
-   **X(567) = ORTHOGONAL OF X(50)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(567) = ORTHOGONAL OF X(50)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -26,7 +26,7 @@ X(567) = ORTHOGONAL OF X(50)
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`\sin A + \cos A \cot D/2 : :`, where cot D/2 = (a\ :sup:`2` + b\ :sup:`2` + c\ :sup:`2` - 6R\ :sup:`2`)/(4\*area), where R = abc/(4\*area)
+   * **Trilinears:** :math:`\sin A + \cos A \cot D/2 : :`, where cot :math:`D/2 = (a^{2} + b^{2} + c^{2} - 6R^{2})/(4 \operatorname{area})`, where :math:`R = abc/(4 \operatorname{area})`
 
 .. container:: note-item
 

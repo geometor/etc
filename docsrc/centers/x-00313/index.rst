@@ -10,22 +10,24 @@ X(313) = ISOTOMIC CONJUGATE OF X(58)
 
 .. enunciation::
 
-   Let A\ :sub:`40`\ B\ :sub:`40`\ C\ :sub:`40` be Gemini triangle 40. Let A' be the center of conic {A,B,C,B\ :sub:`40`,C\ :sub:`40`}}, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(313) <X(313)>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
+   Let :g:`A_{40}B_{40}C_{40} << A_40 B_40 C_40 >>` be Gemini triangle 40. Let :g:`A' <A'>` be the center of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B_{40} <B_40>`,\ :g:`C_{40} <C_40>`}}, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(313) <X(313)>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
 
 .. figure:: x-00313.svg
    :alt: X(313) = ISOTOMIC CONJUGATE OF X(58)
    :align: center
 
-   **X(313) = ISOTOMIC CONJUGATE OF X(58)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(313) = ISOTOMIC CONJUGATE OF X(58)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(b + c)b^{3}c^{3} : (c + a)c^{3}a^{3} : (a + b)a^{3}b^{3}, = (b + c)\csc(A - \omega ) : (c + a)\csc(B - \omega ) : (a + b)\csc(C - \omega )`
+   | **Trilinears:** :math:`(b + c)b^{3}c^{3} : (c + a)c^{3}a^{3} : (a + b)a^{3}b^{3}`
+   | **Barycentrics:** :math:`(b + c)b^{2}c^{2} : (c + a)c^{2}a^{2} : (a + b)a^{2}b^{2}`
    | **Search Value (6, 9, 13):** :math:`5.158734620701`
 
-.. container:: note-item
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-   :ref:`X(313) <X(313)>` lies.
+   * **Trilinears:** :math:`(b + c)\csc(A - \omega ) : (c + a)\csc(B - \omega ) : (a + b)\csc(C - \omega )`
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines
@@ -45,13 +47,6 @@ X(313) = ISOTOMIC CONJUGATE OF X(58)
    * :ref:`X(313) <X(313)>` = :ref:`X(321) <X(321)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(349) <X(349)>`
    * :ref:`X(313) <X(313)>` = :term:`crosssum <crosssum>` of :ref:`X(32) <X(32)>` and :ref:`X(560) <X(560)>`
    * :ref:`X(313) <X(313)>` = polar conjugate of X(1474)
-
-Notes
------
-
-.. container:: note-item
-
-   Barycentrics (b + c)b\ :sup:`2`\ c\ :sup:`2` : (c + a)c\ :sup:`2`\ a\ :sup:`2` : (a + b)a\ :sup:`2`\ b\ :sup:`2`
 
 .. toctree::
    :hidden:

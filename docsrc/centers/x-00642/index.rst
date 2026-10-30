@@ -10,23 +10,19 @@ X(642) = COMPLEMENT OF X(486)
 
 .. enunciation::
 
-   Erect squares inwards on the sides of triangle ABC; the circumcenter of the centers of the squares is :ref:`X(642) <X(642)>`. (:person:`Peter Moses <peter-moses>`, 7/16,2003)
+   Erect squares inwards on the sides of triangle :g:`ABC << A B C >>`; the circumcenter of the centers of the squares is :ref:`X(642) <X(642)>`. (:person:`Peter Moses <peter-moses>`, 7/16,2003)
 
 .. figure:: x-00642.svg
    :alt: X(642) = COMPLEMENT OF X(486)
    :align: center
 
-   **X(642) = COMPLEMENT OF X(486)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(642) = COMPLEMENT OF X(486)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = [2S\ :sub:`B`\ S\ :sub:`C` + 3S\ :sub:`A`\ a\ :sup:`2` - 2(b\ :sup:`2` + c\ :sup:`2`) area]/a
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = [2S_{B}S_{C} + 3S_{A}a^{2} - 2(b^{2} + c^{2}) \operatorname{area}]/a`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`3.016792837794`
-
-.. container:: note-item
-
-   :ref:`X(642) <X(642)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines

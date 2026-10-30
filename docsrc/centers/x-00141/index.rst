@@ -10,13 +10,13 @@ X(141) = COMPLEMENT OF SYMMEDIAN POINT
 
 .. enunciation::
 
-   Let P be a point on the circumcircle, and let L be the line tangent to the circumcircle at P. Let P' be the :term:`trilinear pole <trilinear-pole>` of L, and let P" be the :term:`isotomic conjugate <isotomic-conjugate>` of P'. As P traces the circumcircle, P" traces an ellipse inscribed in ABC with center at :ref:`X(141) <X(141)>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
+   Let :g:`P <P>` be a point on the circumcircle, and let :g:`L <L>` be the line tangent to the circumcircle at P. Let :g:`P' <P'>` be the :term:`trilinear pole <trilinear-pole>` of :g:`L <L>`, and let :g:`P″ <P″>` be the :term:`isotomic conjugate <isotomic-conjugate>` of :g:`P' <P'>`. As P traces the circumcircle, :g:`P″ <P″>` traces an ellipse inscribed in :g:`ABC << A B C >>` with center at :ref:`X(141) <X(141)>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
 
 .. figure:: x-00141.svg
    :alt: X(141) = COMPLEMENT OF SYMMEDIAN POINT
    :align: center
 
-   **X(141) = COMPLEMENT OF SYMMEDIAN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(141) = COMPLEMENT OF SYMMEDIAN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,14 +27,14 @@ X(141) = COMPLEMENT OF SYMMEDIAN POINT
 .. collapse:: Alternate Coordinates
    :badge: 3 forms
 
-   * **Trilinears:** :math:`\csc^{2}A \sin(A + \omega ) : :`
+   * **Trilinears:** :math:`\csc^{2} A \sin(A + \omega ) : :`
    * **Barycentrics:** :math:`\cot A + \cot \omega : :`
-   * **Barycentrics:** :math:`SA + SW : :`
+   * **Barycentrics:** :math:`S_{A} + S_{\omega} : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(141) <X(141)>` = 3\*\ :ref:`X(2) <X(2)>` + :ref:`X(69) <X(69)>` = 3\*\ :ref:`X(2) <X(2)>` - :ref:`X(6) <X(6)>`
+   * :ref:`X(141) <X(141)>` = :math:`3` :ref:`X(2) <X(2)>` + :ref:`X(69) <X(69)>` = :math:`3` :ref:`X(2) <X(2)>` - :ref:`X(6) <X(6)>`
 
 .. container:: note-item
 
@@ -64,7 +64,7 @@ X(141) = COMPLEMENT OF SYMMEDIAN POINT
    * :ref:`X(141) <X(141)>` = :ref:`X(645) <X(645)>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X(141) <X(141)>`
    * :ref:`X(141) <X(141)>` = :ref:`X(6) <X(6)>`-of-:term:`medial triangle <medial-triangle>`
    * :ref:`X(141) <X(141)>` = :term:`anticomplement <anticomplement>` of X(3589)
-   * :ref:`X(141) <X(141)>` = centroid of ABC\ :ref:`X(69) <X(69)>`
+   * :ref:`X(141) <X(141)>` = centroid of :g:`ABC << A B C >>`\ :ref:`X(69) <X(69)>`
    * :ref:`X(141) <X(141)>` = Kosnita(:ref:`X(69) <X(69)>`,\ :ref:`X(2) <X(2)>`) point
    * :ref:`X(141) <X(141)>` = perspector of circumconic centered at :ref:`X(39) <X(39)>`
    * :ref:`X(141) <X(141)>` = center of circumconic that is locus of trilinear poles of lines passing through :ref:`X(39) <X(39)>`
@@ -80,7 +80,7 @@ X(141) = COMPLEMENT OF SYMMEDIAN POINT
    * :ref:`X(141) <X(141)>` = {:ref:`X(2) <X(2)>`,\ :ref:`X(6) <X(6)>`}-harmonic conjugate of X(3589)
    * :ref:`X(141) <X(141)>` = {:ref:`X(395) <X(395)>`,\ :ref:`X(396) <X(396)>`}-harmonic conjugate of X(5306)
    * :ref:`X(141) <X(141)>` = trilinear cube root of X(14125)
-   * :ref:`X(141) <X(141)>` = perspector of 2nd Brocard triangle and cross-triangle of ABC and 2nd Brocard triangle
+   * :ref:`X(141) <X(141)>` = perspector of 2nd Brocard triangle and cross-triangle of :g:`ABC << A B C >>` and 2nd Brocard triangle
    * :ref:`X(141) <X(141)>` = intersection, other than :ref:`X(3) <X(3)>`, of the orthosymmedial circles of the 1st and 2nd Ehrmann inscribed triangles
 
 Notes
@@ -88,7 +88,7 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the 2nd Brocard triangle. Let A″ be the :term:`cevapoint <cevapoint>` of B' and C', and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(141) <X(141)>`. (Randy Hutson, December 26, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the 2nd Brocard triangle. Let :g:`A″ <A″>` be the :term:`cevapoint <cevapoint>` of :g:`B' <B'>` and :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(141) <X(141)>`. (Randy Hutson, December 26, 2015)
 
 .. container:: note-item
 

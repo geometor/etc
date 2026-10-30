@@ -12,7 +12,7 @@ X(930) = ANTICOMPLEMENT OF X(137) — Code
    :alt: X(930) = ANTICOMPLEMENT OF X(137)
    :align: center
 
-   **X(930) = ANTICOMPLEMENT OF X(137)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(930) = ANTICOMPLEMENT OF X(137)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

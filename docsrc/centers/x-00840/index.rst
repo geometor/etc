@@ -10,18 +10,18 @@ X(840) = ISOGONAL CONJUGATE OF X(528)
 
 .. enunciation::
 
-   :ref:`X(840) <X(840)>` is the perspector of ABC and the (degenerate) cross-triangle of the circumcevian triangles of X(3513) and X(3514). (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
+   :ref:`X(840) <X(840)>` is the perspector of :g:`ABC << A B C >>` and the (degenerate) cross-triangle of the circumcevian triangles of X(3513) and X(3514). (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
 
 .. figure:: x-00840.svg
    :alt: X(840) = ISOGONAL CONJUGATE OF X(528)
    :align: center
 
-   **X(840) = ISOGONAL CONJUGATE OF X(528)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(840) = ISOGONAL CONJUGATE OF X(528)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = a/(2ax - by - cz), x = x(A,B,C) = 1 - cos(B - C)
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a/(2ax - by - cz)`, :math:`x = x(A,B,C) = 1 - \cos(B - C)`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`7.997672077475`
 
 .. container:: note-item

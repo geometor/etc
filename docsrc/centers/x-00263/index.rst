@@ -10,23 +10,19 @@ X(263) = ISOGONAL CONJUGATE OF X(183)
 
 .. enunciation::
 
-   Let V = U(2)-of-pedal-triangle-of-P(1), and let W = P(2)-of-pedal-triangle-of-U(1). Then :ref:`X(263) <X(263)>` = :term:`trilinear pole <trilinear-pole>` of VW. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
+   Let V = U(2)-of-pedal-triangle-of-P(1), and let W = P(2)-of-pedal-triangle-of-U(1). Then :ref:`X(263) <X(263)>` = :term:`trilinear pole <trilinear-pole>` of :g:`VW <[ V W ]>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
 
 .. figure:: x-00263.svg
    :alt: X(263) = ISOGONAL CONJUGATE OF X(183)
    :align: center
 
-   **X(263) = ISOGONAL CONJUGATE OF X(183)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(263) = ISOGONAL CONJUGATE OF X(183)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`a^{2}\sec(A - \omega ) : :`
    | **Barycentrics:** :math:`a^{3}\sec(A - \omega ) : :`
    | **Search Value (6, 9, 13):** :math:`-0.154184177668`
-
-.. container:: note-item
-
-   :ref:`X(263) <X(263)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines
@@ -45,7 +41,7 @@ Notes
 
 .. container:: note-item
 
-   Let A1B1C1 and A2B2C2 be the :term:`pedal triangles <pedal-triangle>` of PU(1). Then :ref:`X(263) <X(263)>` is the radical center of the circumcircles of AA1A2, BB1B2, CC1C2. (Randy Hutson, July 31 2018)
+   Let :g:`A_{1}B_{1}C_{1} << A_1 B_1 C_1 >>` and :g:`A_{2}B_{2}C_{2} << A_2 B_2 C_2 >>` be the :term:`pedal triangles <pedal-triangle>` of PU(1). Then :ref:`X(263) <X(263)>` is the radical center of the circumcircles of AA1A2, BB1B2, CC1C2. (Randy Hutson, July 31 2018)
 
 .. toctree::
    :hidden:

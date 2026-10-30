@@ -12,7 +12,7 @@ X(936) = INTERSECTION OF LINES X(1)X(2) AND X(3)X(9) — Code
    :alt: X(936) = INTERSECTION OF LINES X(1)X(2) AND X(3)X(9)
    :align: center
 
-   **X(936) = INTERSECTION OF LINES X(1)X(2) AND X(3)X(9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(936) = INTERSECTION OF LINES X(1)X(2) AND X(3)X(9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

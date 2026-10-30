@@ -30,7 +30,7 @@ def construct_x_00049(
     X_54 = eval_trilinear_point(model, A, B, C, 'sec(B - C)', ID="X(54)", classes=["center", "incident"])
     central_line(model, X_5, X_54, 5, 54, incident=True)
     X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
-    X_155 = eval_barycentric_point(model, A, B, C, 'a**(2)*SA*(a**(2)*(SA**(2) - SB*SC) - SA*(SB**(2) + SC**(2)))', ID="X(155)", classes=["center", "incident"])
+    X_155 = eval_barycentric_point(model, A, B, C, 'a**(2)*(a**(2) - b**(2) - c**(2))*(a**(6) - 3*a**(4)*(b**(2) + c**(2)) + a**(2)*(3*b**(4) - 2*b**(2)*c**(2) + 3*c**(4)) - (b**(2) - c**(2))**(2)*(b**(2) + c**(2)))', ID="X(155)", classes=["center", "incident"])
     central_line(model, X_3, X_155, 3, 155, incident=True)
     X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
     X_156 = eval_barycentric_point(model, A, B, C, 'a**(2)*(a**(8) - 3*a**(6)*(b**(2) + c**(2)) + a**(4)*(3*b**(4) + 2*b**(2)*c**(2) + 3*c**(4)) - a**(2)*(b**(6) + c**(6)) + b**(2)*c**(2)*(b**(2) - c**(2))**(2))', ID="X(156)", classes=["center", "incident"])

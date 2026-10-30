@@ -16,15 +16,11 @@ X(788) = ODD (- 3, 0) INFINITY POINT
    :alt: X(788) = ODD (- 3, 0) INFINITY POINT
    :align: center
 
-   **X(788) = ODD (- 3, 0) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(788) = ODD (- 3, 0) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`a^{2}(b^{3} - c^{3}) : :`
-
-.. container:: note-item
-
-   :ref:`X(788) <X(788)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines

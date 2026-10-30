@@ -10,13 +10,13 @@ X(142) = COMPLEMENT OF X(9)
 
 .. enunciation::
 
-   Let A' be the midpoint between A and :ref:`X(7) <X(7)>`, and define B' and C' cyclically; the triangle A'B'C' is homothetic to the :term:`medial triangle <medial-triangle>`, and the center of homothety is :ref:`X(142) <X(142)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   Let :g:`A' <A'>` be the midpoint between A and :ref:`X(7) <X(7)>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically; the triangle :g:`A'B'C' << A' B' C' >>` is homothetic to the :term:`medial triangle <medial-triangle>`, and the center of homothety is :ref:`X(142) <X(142)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. figure:: x-00142.svg
    :alt: X(142) = COMPLEMENT OF X(9)
    :align: center
 
-   **X(142) = COMPLEMENT OF X(9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(142) = COMPLEMENT OF X(9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,11 +27,7 @@ X(142) = COMPLEMENT OF X(9)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(142) <X(142)>` = 3\*\ :ref:`X(2) <X(2)>` + :ref:`X(7) <X(7)>` = 3\*\ :ref:`X(2) <X(2)>` - :ref:`X(9) <X(9)>`
-
-.. container:: note-item
-
-   :ref:`X(142) <X(142)>` lies.
+   * :ref:`X(142) <X(142)>` = :math:`3` :ref:`X(2) <X(2)>` + :ref:`X(7) <X(7)>` = :math:`3` :ref:`X(2) <X(2)>` - :ref:`X(9) <X(9)>`
 
 .. collapse:: Incident Central Lines
    :badge: 13 lines
@@ -56,7 +52,7 @@ X(142) = COMPLEMENT OF X(9)
    * :ref:`X(142) <X(142)>` = centroid of the set {:ref:`X(1) <X(1)>`, :ref:`X(4) <X(4)>`, :ref:`X(7) <X(7)>`, :ref:`X(40) <X(40)>`}
    * :ref:`X(142) <X(142)>` = perspector of circumconic centered at X(1212)
    * :ref:`X(142) <X(142)>` = :ref:`X(2) <X(2)>`-Ceva conjugate of X(1212)
-   * :ref:`X(142) <X(142)>` = centroid of ABC\ :ref:`X(7) <X(7)>`
+   * :ref:`X(142) <X(142)>` = centroid of :g:`ABC << A B C >>`\ :ref:`X(7) <X(7)>`
    * :ref:`X(142) <X(142)>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through X(1212)
    * :ref:`X(142) <X(142)>` = X(9969)-of-excentral-triangle
 
@@ -65,17 +61,17 @@ Notes
 
 .. container:: note-item
 
-   Let A' be the intersection of these three lines:
+   Let :g:`A' <A'>` be the intersection of these three lines:
 
-   (1) through midpoint of CA perpendicular to B\ :ref:`X(1) <X(1)>`
+   (1) through midpoint of :g:`CA <[ C A ]>` perpendicular to B\ :ref:`X(1) <X(1)>`
 
-   (2) through midpoint of AB perpendicular to C\ :ref:`X(1) <X(1)>`
+   (2) through midpoint of :g:`AB <[ A B ]>` perpendicular to C\ :ref:`X(1) <X(1)>`
 
-   (3) through midpoint of A\ :ref:`X(1) <X(1)>` perpendicular to BC.
+   (3) through midpoint of A\ :ref:`X(1) <X(1)>` perpendicular to :g:`BC <[ B C ]>`.
 
 .. container:: note-item
 
-   Define B' and C' cyclically. Then :ref:`X(142) <X(142)>` = :ref:`X(6) <X(6)>`-of-A'B'C'. The triangle A'B'C' is the complement of the :term:`excentral triangle <excentral-triangle>`, and also the extraversion triangle of :ref:`X(10) <X(10)>`. (Randy Hutson, September 14, 2016)
+   Define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Then :ref:`X(142) <X(142)>` = :ref:`X(6) <X(6)>`-of-:g:`A'B'C' << A' B' C' >>`. The triangle :g:`A'B'C' << A' B' C' >>` is the complement of the :term:`excentral triangle <excentral-triangle>`, and also the extraversion triangle of :ref:`X(10) <X(10)>`. (Randy Hutson, September 14, 2016)
 
 .. container:: note-item
 

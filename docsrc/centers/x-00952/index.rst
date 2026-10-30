@@ -16,15 +16,11 @@ X(952) = INTERSECTION OF X(1)X(5) AND X(3)X(8)
    :alt: X(952) = INTERSECTION OF X(1)X(5) AND X(3)X(8)
    :align: center
 
-   **X(952) = INTERSECTION OF X(1)X(5) AND X(3)X(8)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(952) = INTERSECTION OF X(1)X(5) AND X(3)X(8)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`bc[2a^{4} - 2a^{3}(b + c) - a^{2}(b^{2} - 4bc + c^{2}) + (2a - b - c)(b - c)(b^{2} - c^{2})] : :`
-
-.. container:: note-item
-
-   :ref:`X(952) <X(952)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 12 lines
@@ -48,11 +44,11 @@ Notes
 
 .. container:: note-item
 
-   Let Ia be the reflection of :ref:`X(1) <X(1)>` in the perpendicular bisector of BC, and define Ib and Ic cyclically. :ref:`X(952) <X(952)>` = :ref:`X(517) <X(517)>` of IaIbIc, which is the inner Garcia triangle.. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
+   Let :g:`I_{a} <I_a>` be the reflection of :ref:`X(1) <X(1)>` in the perpendicular bisector of :g:`BC <[ B C ]>`, and define :g:`I_{b} <I_b>` and :g:`I_{c} <I_c>` cyclically. :ref:`X(952) <X(952)>` = :ref:`X(517) <X(517)>` of :g:`I_{a}I_{b}I_{c} << I_a I_b I_c >>`, which is the inner Garcia triangle.. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the outer Garcia triangle and A″B″C″ the inner Garcia triangle. Let A\* be the isogonal conjugate, wrt A″B″C″, of A', and define B\* and C\* cyclically. The lines A″A\*, B″B\*, C″C\* concur in :ref:`X(952) <X(952)>`; see also :ref:`X(355) <X(355)>`. (Randy Hutson, December 2, 2017)
+   Let :g:`A'B'C' << A' B' C' >>` be the outer Garcia triangle and :g:`A″B″C″ << A″ B″ C″ >>` the inner Garcia triangle. Let :g:`A* <A*>` be the isogonal conjugate, wrt :g:`A″B″C″ << A″ B″ C″ >>`, of :g:`A' <A'>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`A″A* <[ A″ A* ]>`, :g:`B″B* <[ B″ B* ]>`, :g:`C″C* <[ C″ C* ]>` concur in :ref:`X(952) <X(952)>`; see also :ref:`X(355) <X(355)>`. (Randy Hutson, December 2, 2017)
 
 .. toctree::
    :hidden:

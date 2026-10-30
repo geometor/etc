@@ -16,7 +16,7 @@ X(798) = CROSSDIFFERENCE OF X(1) AND X(75)
    :alt: X(798) = CROSSDIFFERENCE OF X(1) AND X(75)
    :align: center
 
-   **X(798) = CROSSDIFFERENCE OF X(1) AND X(75)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(798) = CROSSDIFFERENCE OF X(1) AND X(75)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,12 +27,8 @@ X(798) = CROSSDIFFERENCE OF X(1) AND X(75)
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
-   * **Trilinears:** S\ :sub:`B`\ S\ :sub:`B` - S\ :sub:`C`\ S\ :sub:`C` : :
-   * **Trilinears:** :math:`Area(BCP(1)) - Area(BCU(1)) : :`
-
-.. container:: note-item
-
-   :ref:`X(798) <X(798)>` lies.
+   * **Trilinears:** :math:`S_{B}`\ :math:`S_{B}` - :math:`S_{C}`\ :math:`S_{C}` : :
+   * **Trilinears:** :math:`\operatorname{area}(BCP(1)) - \operatorname{area}(BCU(1)) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines
@@ -57,7 +53,7 @@ X(798) = CROSSDIFFERENCE OF X(1) AND X(75)
    * :ref:`X(798) <X(798)>` = :ref:`X(6) <X(6)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(670) <X(670)>`
    * :ref:`X(798) <X(798)>` = trilinear product of PU(105)
    * :ref:`X(798) <X(798)>` = :ref:`X(2) <X(2)>`-Ceva conjugate of X(38986)
-   * :ref:`X(798) <X(798)>` = perspector of hyperbola {A,B,C,\ :ref:`X(1) <X(1)>`,\ :ref:`X(31) <X(31)>`}}
+   * :ref:`X(798) <X(798)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(1) <X(1)>`,\ :ref:`X(31) <X(31)>`}}
    * :ref:`X(798) <X(798)>` = :term:`trilinear pole <trilinear-pole>` of line X(3121)X(4117) (the tangent to the inellipse that is the trilinear square of the Lemoine axis, at the trilinear square of :ref:`X(512) <X(512)>`)
 
 .. toctree::

@@ -10,28 +10,24 @@ X(415) = X(4)-HIRST INVERSE OF X(29)
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(415) <X(415)>` has Shinagawa coefficients 3$bcS\ :sub:`B`\ S\ :sub:`C`\ $F + (E - 2F)FS\ :sup:`2`, -(E + F)\*$bcS\ :sub:`B`\ S\ :sub:`C`\ $ + (E + F)FS\ :sup:`2` - S\ :sup:`4`).
+   As a point on the Euler line, :ref:`X(415) <X(415)>` has Shinagawa coefficients 3\ :math:`\$bcS_{B}S_{C}\$`\ F + (E - 2F)\ :math:`FS^{2}`, -(E + F)\*\ :math:`\$bcS_{B}S_{C}\$` + (E + F)\ :math:`FS^{2}` - :math:`S^{4})`.
 
 .. figure:: x-00415.svg
    :alt: X(415) = X(4)-HIRST INVERSE OF X(29)
    :align: center
 
-   **X(415) = X(4)-HIRST INVERSE OF X(29)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(415) = X(4)-HIRST INVERSE OF X(29)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(u^{2} - vw)\sec A : (v^{2} - wu)\sec B : (v^{2} - uv)\sec C`, where, u : v : w = :ref:`X(21) <X(21)>`; e.g., u = u(A,B,C) = 1/(cos B + cos C)
+   | **Trilinears:** :math:`(u^{2} - vw)\sec A : (v^{2} - wu)\sec B : (v^{2} - uv)\sec C`, where :math:`u : v : w` = :ref:`X(21) <X(21)>`; e.g., :math:`u = u(A,B,C) = 1/(\cos B + \cos C)`
    | **Barycentrics:** :math:`(u^{2} - vw)\tan A : (v^{2} - wu)\tan B : (w^{2} - uv)\tan C`
    | **Search Value (6, 9, 13):** :math:`1.593028576024`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`(a + b)*(a + c)*(a^2 + b^2 - c^2)*(a^2 - b^2 + c^2)*(a^3 - 2*a^2*b + b^3 - 2*a^2*c + a*b*c + c^3) : :`
-
-.. container:: note-item
-
-   :ref:`X(415) <X(415)>` lies.
+   * **Barycentrics:** :math:`(a + b) \cdot (a + c) \cdot (a^{2} + b^{2} - c^{2}) \cdot (a^{2} - b^{2} + c^{2}) \cdot (a^{3} - 2 a^{2} b + b^{3} - 2 a^{2} c + a b c + c^{3}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 16 lines

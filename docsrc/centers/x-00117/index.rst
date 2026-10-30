@@ -10,26 +10,23 @@ X(117) = MIDPOINT OF X(4) AND X(109)
 
 .. enunciation::
 
-   Barycentrics h(a,b,c) : h(b,c,a) : h(c,a,b) where h(a,b,c) = af(a,b,c)
+   :ref:`X(117) <X(117)>` = :ref:`X(102) <X(102)>`-of-:term:`medial triangle <medial-triangle>`.
 
 .. figure:: x-00117.svg
    :alt: X(117) = MIDPOINT OF X(4) AND X(109)
    :align: center
 
-   **X(117) = MIDPOINT OF X(4) AND X(109)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(117) = MIDPOINT OF X(4) AND X(109)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = g(b,c,a) + g(c,b,a), and, g(b,c,a) = b\ :sup:`2`\ c/[c(sec B - sec C) + a(sec B - sec A)]
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = g(b,c,a) + g(c,b,a)`, and, :math:`g(b,c,a) = b^{2}c/[c(\sec B - \sec C) + a(\sec B - \sec A)]`
+   | **Barycentrics:** :math:`h(a,b,c) : h(b,c,a) : h(c,a,b)`, where :math:`h(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`-2.757846626874`
 
 .. container:: note-item
 
    :ref:`X(117) <X(117)>` lies on the nine-point circle
-
-.. container:: note-item
-
-   :ref:`X(117) <X(117)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 7 lines
@@ -40,14 +37,14 @@ X(117) = MIDPOINT OF X(4) AND X(109)
 .. collapse:: Functional Relations
    :badge: 10 relations
 
-   * :ref:`X(117) <X(117)>` = :ref:`X(102) <X(102)>`-of-:term:`medial triangle <medial-triangle>`.
+   * :ref:`X(117) <X(117)>` = :ref:`X(102) <X(102)>`-of-medial triangle.
    * :ref:`X(117) <X(117)>` = midpoint of X(i) and X(j) for these (i,j): (:ref:`4 <X(4)>`, :ref:`109 <X(109)>`), (:ref:`102 <X(102)>`, :ref:`151 <X(151)>`)
    * :ref:`X(117) <X(117)>` = reflection of :ref:`X(124) <X(124)>` in :ref:`X(5) <X(5)>`
    * :ref:`X(117) <X(117)>` = :term:`complement <complement>` of :ref:`X(102) <X(102)>`
    * :ref:`X(117) <X(117)>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X(515) <X(515)>`
    * :ref:`X(117) <X(117)>` = :ref:`X(4) <X(4)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(515) <X(515)>`
    * :ref:`X(117) <X(117)>` = inverse-in-polar-circle of X(32706)
-   * :ref:`X(117) <X(117)>` = anticenter of cyclic quadrilateral ABC\ :ref:`X(109) <X(109)>`
+   * :ref:`X(117) <X(117)>` = anticenter of cyclic quadrilateral :g:`ABC << A B C >>`\ :ref:`X(109) <X(109)>`
    * :ref:`X(117) <X(117)>` = Λ(:ref:`X(1) <X(1)>`, :ref:`X(4) <X(4)>`), wrt :term:`orthic triangle <orthic-triangle>`
    * :ref:`X(117) <X(117)>` = Spieker-radical-circle inverse of X(34456)
 

@@ -16,25 +16,21 @@ X(269) = ISOGONAL CONJUGATE OF X(200)
    :alt: X(269) = ISOGONAL CONJUGATE OF X(200)
    :align: center
 
-   **X(269) = ISOGONAL CONJUGATE OF X(200)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(269) = ISOGONAL CONJUGATE OF X(200)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\tan^{2}A/2 : \tan^{2}B/2 : \tan^{2}C/2`
-   | **Barycentrics:** :math:`\sin A \tan^{2}A/2 : :`
+   | **Trilinears:** :math:`\tan^{2} A/2 : \tan^{2} B/2 : \tan^{2} C/2`
+   | **Barycentrics:** :math:`\sin A \tan^{2} A/2 : :`
    | **Search Value (6, 9, 13):** :math:`0.054966828794`
 
 .. collapse:: Alternate Coordinates
    :badge: 4 forms
 
    * **Trilinears:** :math:`[a^{2} - (b - c)^{2}]^{2} : :`
-   * **Trilinears:** :math:`1 - \sec^2(A/2) : :`
+   * **Trilinears:** :math:`1 - \sec^{2}(A/2) : :`
    * **Trilinears:** :math:`(1 - \cos A)/(1 + \cos A) : :`
    * **Trilinears:** :math:`(1 - \sec A)/(1 + \sec A) : :`
-
-.. container:: note-item
-
-   :ref:`X(269) <X(269)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 15 lines
@@ -61,7 +57,7 @@ Notes
 
 .. container:: note-item
 
-   Let A\ :sub:`1`\ B\ :sub:`1`\ C\ :sub:`1` be Gemini triangle 1. Let A' be the center of conic {A,B,C,B\ :sub:`1`,C\ :sub:`1`}}, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(269) <X(269)>`. (Randy Hutson, January 15, 2019)
+   Let :g:`A_{1}B_{1}C_{1} << A_1 B_1 C_1 >>` be Gemini triangle 1. Let :g:`A' <A'>` be the center of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B_{1} <B_1>`,\ :g:`C_{1} <C_1>`}}, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(269) <X(269)>`. (Randy Hutson, January 15, 2019)
 
 .. toctree::
    :hidden:

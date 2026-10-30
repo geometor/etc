@@ -10,13 +10,13 @@ X(184) = INVERSE OF X(125) IN THE BROCARD CIRCLE
 
 .. enunciation::
 
-   :ref:`X(184) <X(184)>` is the homothetic center of triangles ABC and A'B'C', the latter defined as follows: let B\ :sub:`1` and C\ :sub:`1` be the points where the perpendicular bisector BC meets sidelines CA and AB, and cyclically define C\ :sub:`2`, A\ :sub:`2`; A\ :sub:`3`, B\ :sub:`3`. Then A'B'C' is formed by the perpendicular bisectors of segments B\ :sub:`1`\ C\ :sub:`1`, C\ :sub:`2`\ A\ :sub:`2`, A\ :sub:`3`\ B\ :sub:`3`. (Fred Lang, :cite:`Hyacinthos #1190 <hyacinthos>`)
+   :ref:`X(184) <X(184)>` is the homothetic center of triangles :g:`ABC << A B C >>` and :g:`A'B'C' << A' B' C' >>`, the latter defined as follows: let :g:`B_{1} <B_1>` and :g:`C_{1} <C_1>` be the points where the perpendicular bisector :g:`BC <[ B C ]>` meets sidelines :g:`CA <[ C A ]>` and :g:`AB <[ A B ]>`, and cyclically define :g:`C_{2} <C_2>`, :g:`A_{2} <A_2>`; :g:`A_{3} <A_3>`, :g:`B_{3} <B_3>`. Then :g:`A'B'C' << A' B' C' >>` is formed by the perpendicular bisectors of segments :g:`B_{1}C_{1} <[ B_1 C_1 ]>`, :g:`C_{2}A_{2} <[ C_2 A_2 ]>`, :g:`A_{3}B_{3} <[ A_3 B_3 ]>`. (Fred Lang, :cite:`Hyacinthos #1190 <hyacinthos>`)
 
 .. figure:: x-00184.svg
    :alt: X(184) = INVERSE OF X(125) IN THE BROCARD CIRCLE
    :align: center
 
-   **X(184) = INVERSE OF X(125) IN THE BROCARD CIRCLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(184) = INVERSE OF X(125) IN THE BROCARD CIRCLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -33,10 +33,6 @@ X(184) = INVERSE OF X(125) IN THE BROCARD CIRCLE
    :badge: 1 combination
 
    * Alexei Myakishev, `On the Procircumcenter and Related Points <http://forumgeom.fau.edu/FG2003volume3/FG200302.pdf>`__, *:cite:`Forum Geometricorum <forum-geometricorum>`* 3 (2003) 29-34.
-
-.. container:: note-item
-
-   :ref:`X(184) <X(184)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 25 lines
@@ -67,8 +63,8 @@ X(184) = INVERSE OF X(125) IN THE BROCARD CIRCLE
    * :ref:`X(184) <X(184)>` = :ref:`X(75) <X(75)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(4) <X(4)>`
    * :ref:`X(184) <X(184)>` = {X(8880),X(8881)}-harmonic conjugate of :ref:`X(25) <X(25)>`
    * :ref:`X(184) <X(184)>` = homothetIc center of orthic triangle and :ref:`X(3) <X(3)>`-Ehrmann triangle; see :ref:`X(25) <X(25)>`
-   * :ref:`X(184) <X(184)>` = perspector of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of tangential-of-tangential triangle
-   * :ref:`X(184) <X(184)>` = perspector of ABC and unary cofactor triangle of MacBeath triangle
+   * :ref:`X(184) <X(184)>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of tangential-of-tangential triangle
+   * :ref:`X(184) <X(184)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of MacBeath triangle
    * :ref:`X(184) <X(184)>` = intersection of tangents to Moses-Jerabek conic at :ref:`X(6) <X(6)>` and X(34469)
    * :ref:`X(184) <X(184)>` = 1st-Brocard-isogonal conjugate of X(24270)
 
@@ -77,7 +73,7 @@ Notes
 
 .. container:: note-item
 
-   :ref:`X(184) <X(184)>` is the subject of :cite:`Hyacinthos <hyacinthos>` messages 5423-5441 (May, 2002). In #5423, Alexei Myakishev notes that :ref:`X(184) <X(184)>` serves as a common vertex of three triangles inside ABC, mutually congruent and similar to ABC. (The triangles can be labeled XB\ :sub:`C`\ C\ :sub:`B`, XC\ :sub:`A`\ A\ :sub:`C`, XA\ :sub:`B`\ B\ :sub:`A`, with B\ :sub:`C` and C\ :sub:`B` on side BC, C\ :sub:`A` and A\ :sub:`C` on side CA, and A\ :sub:`B` and B\ :sub:`A` on side AB.) See
+   :ref:`X(184) <X(184)>` is the subject of :cite:`Hyacinthos <hyacinthos>` messages 5423-5441 (May, 2002). In #5423, Alexei Myakishev notes that :ref:`X(184) <X(184)>` serves as a common vertex of three triangles inside :g:`ABC << A B C >>`, mutually congruent and similar to :g:`ABC << A B C >>`. (The triangles can be labeled :g:`XB_{C}C_{B} << X B_C C_B >>`, :g:`XC_{A}A_{C} << X C_A A_C >>`, :g:`XA_{B}B_{A} << X A_B B_A >>`, with :g:`B_{C} <B_C>` and :g:`C_{B} <C_B>` on side :g:`BC <[ B C ]>`, :g:`C_{A} <C_A>` and :g:`A_{C} <A_C>` on side :g:`CA <[ C A ]>`, and :g:`A_{B} <A_B>` and :g:`B_{A} <B_A>` on side :g:`AB <[ A B ]>`.) See
 
 .. container:: note-item
 
@@ -85,7 +81,7 @@ Notes
 
 .. container:: note-item
 
-   if ABC is acute, then :ref:`X(184) <X(184)>` = :ref:`X(63) <X(63)>`-of-the-orthic-triangle = :ref:`X(226) <X(226)>`-of-the-tangential-triangle
+   if :g:`ABC << A B C >>` is acute, then :ref:`X(184) <X(184)>` = :ref:`X(63) <X(63)>`-of-the-orthic-triangle = :ref:`X(226) <X(226)>`-of-the-tangential-triangle
 
 .. container:: note-item
 
@@ -93,23 +89,23 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the intersections, other than :ref:`X(3) <X(3)>`, of the :ref:`X(3) <X(3)>`-:term:`cevians <cevian>` and the Brocard circle. Let A″B″C″ be the intersections, other than :ref:`X(6) <X(6)>`, of the :ref:`X(6) <X(6)>`-cevians and the Brocard circle. Then A'B'C' and A″B″C″ are perspective at :ref:`X(184) <X(184)>`. Also, :ref:`X(184) <X(184)>` = U∩V, where U = isotomic conjugate of polar conjugate of Brocard axis (i.e., line :ref:`X(3) <X(3)>`\ \ :ref:`X(49) <X(49)>`), and V = polar conjugate of isotomic conjugate of Brocard axis (i.e., line :ref:`X(6) <X(6)>`\ \ :ref:`X(25) <X(25)>`). Let DEF be the orthic triangle. Let D' be the isotomic conjugate of :ref:`X(4) <X(4)>` wrt AEF, and define E' and F' cyclically; then the lines AD', BE', CF' concur in :ref:`X(184) <X(184)>`. (Randy Hutson, June 1, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the intersections, other than :ref:`X(3) <X(3)>`, of the :ref:`X(3) <X(3)>`-:term:`cevians <cevian>` and the Brocard circle. Let :g:`A″B″C″ << A″ B″ C″ >>` be the intersections, other than :ref:`X(6) <X(6)>`, of the :ref:`X(6) <X(6)>`-cevians and the Brocard circle. Then :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>` are perspective at :ref:`X(184) <X(184)>`. Also, :ref:`X(184) <X(184)>` = U∩V, where :g:`U <U>` = isotomic conjugate of polar conjugate of Brocard axis (i.e., line :ref:`X(3) <X(3)>`\ \ :ref:`X(49) <X(49)>`), and V = polar conjugate of isotomic conjugate of Brocard axis (i.e., line :ref:`X(6) <X(6)>`\ \ :ref:`X(25) <X(25)>`). Let :g:`DEF << D E F >>` be the orthic triangle. Let :g:`D' <D'>` be the isotomic conjugate of :ref:`X(4) <X(4)>` wrt :g:`AEF << A E F >>`, and define :g:`E' <E'>` and :g:`F' <F'>` cyclically; then the lines :g:`AD' <[ A D' ]>`, :g:`BE' <[ B E' ]>`, :g:`CF' <[ C F' ]>` concur in :ref:`X(184) <X(184)>`. (Randy Hutson, June 1, 2015)
 
 .. container:: note-item
 
-   Let A'B'C' be the triangle described in :cite:`ADGEOM #2697 <adgeom>` (8/26/2015, Tran Quang Hung). A'B'C' is homothetic to ABC at :ref:`X(184) <X(184)>`.
+   Let :g:`A'B'C' << A' B' C' >>` be the triangle described in :cite:`ADGEOM #2697 <adgeom>` (8/26/2015, Tran Quang Hung). :g:`A'B'C' << A' B' C' >>` is homothetic to :g:`ABC << A B C >>` at :ref:`X(184) <X(184)>`.
 
 .. container:: note-item
 
-   In the plane of a triangle ABC, let
+   In the plane of a triangle :g:`ABC << A B C >>`, let
 
-      * A'B'C' = tangential triangle;
-      * Oa = circle with diameter BC, and define Ob and Oc cyclically;
-      * Ab = A'BC'∩Oa, and define Bc and Ca cyclically;
-      * Ac = B'CA'∩Oa, and define Ba and Cb cyclically;
-      * A″= BcBa;∩CaCb, define B″ and C″ cyclically.
+      * :g:`A'B'C' << A' B' C' >>` = tangential triangle;
+      * :g:`O_{a} <O_a>` = circle with diameter :g:`BC <[ B C ]>`, and define :g:`O_{b} <O_b>` and :g:`O_{c} <O_c>` cyclically;
+      * :g:`A_{b} <A_b>` = :g:`A'BC' << A' B C' >>`\ ∩\ :g:`O_{a} <O_a>`, and define :g:`B_{c} <B_c>` and :g:`C_{a} <C_a>` cyclically;
+      * :g:`A_{c} <A_c>` = :g:`B'CA' << B' C A' >>`\ ∩\ :g:`O_{a} <O_a>`, and define :g:`B_{a} <B_a>` and :g:`C_{b} <C_b>` cyclically;
+      * :g:`A″ <A″>`\ = :g:`B_{c}B_{a} <[ B_c B_a ]>`;∩\ :g:`C_{a}C_{b} <[ C_a C_b ]>`, define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically.
 
-   The triangle A″B″C″ is perspective to ABC, and the perspector is :ref:`X(184) <X(184)>`. (:person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, April 15, 2021)
+   The triangle :g:`A″B″C″ << A″ B″ C″ >>` is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X(184) <X(184)>`. (:person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, April 15, 2021)
 
 .. container:: note-item
 

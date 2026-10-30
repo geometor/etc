@@ -16,7 +16,7 @@ X(564) = INTERSECTION OF LINES X(1)X(1048) AND X(47,91)
    :alt: X(564) = INTERSECTION OF LINES X(1)X(1048) AND X(47,91)
    :align: center
 
-   **X(564) = INTERSECTION OF LINES X(1)X(1048) AND X(47,91)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(564) = INTERSECTION OF LINES X(1)X(1048) AND X(47,91)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,11 +27,7 @@ X(564) = INTERSECTION OF LINES X(1)X(1048) AND X(47,91)
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`b^2 c^2 (a^4 (b^4 + c^4) - 2 a^2 (b^2 - c^2)^2 (b^2 + c^2) + (b^2 - c^2)^4) : :`
-
-.. container:: note-item
-
-   :ref:`X(564) <X(564)>` lies.
+   * **Trilinears:** :math:`b^{2} c^{2} (a^{4} (b^{4} + c^{4}) - 2 a^{2} (b^{2} - c^{2})^{2} (b^{2} + c^{2}) + (b^{2} - c^{2})^{4}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines

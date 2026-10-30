@@ -16,12 +16,12 @@ X(672) = CROSSDIFFERENCE OF X(1) AND X(514)
    :alt: X(672) = CROSSDIFFERENCE OF X(1) AND X(514)
    :align: center
 
-   **X(672) = CROSSDIFFERENCE OF X(1) AND X(514)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(672) = CROSSDIFFERENCE OF X(1) AND X(514)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`a[b^{2} + c^{2} - a(b + c)] : :`
-   | **Barycentrics:** :math:`a^2*(a*b - b^2 + a*c - c^2) : :`
+   | **Barycentrics:** :math:`a^{2} (a b - b^{2} + a c - c^{2}) : :`
    | **Search Value (6, 9, 13):** :math:`-5.422115840045`
 
 .. collapse:: Alternate Coordinates
@@ -33,7 +33,7 @@ X(672) = CROSSDIFFERENCE OF X(1) AND X(514)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(672) <X(672)>` = :ref:`X(672) <X(672)>` = 2 X(3693) - 3 X(14439), X(3930) - 3 X(14439)
+   * :ref:`X(672) <X(672)>` = :ref:`X(672) <X(672)>` = :math:`2` X(3693) - :math:`3` X(14439), X(3930) - :math:`3` X(14439)
 
 .. container:: note-item
 
@@ -60,7 +60,7 @@ X(672) = CROSSDIFFERENCE OF X(1) AND X(514)
    * :ref:`X(672) <X(672)>` = :term:`crossdifference <crossdifference>` of PU(i) for i in (47, 51)
    * :ref:`X(672) <X(672)>` = bicentric sum of PU(49)
    * :ref:`X(672) <X(672)>` = PU(49)-harmonic conjugate of :ref:`X(663) <X(663)>`
-   * :ref:`X(672) <X(672)>` = perspector of conic {A,B,C,\ :ref:`X(1) <X(1)>`,\ :ref:`X(101) <X(101)>`,PU(93)}
+   * :ref:`X(672) <X(672)>` = perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(1) <X(1)>`,\ :ref:`X(101) <X(101)>`,PU(93)}
    * :ref:`X(672) <X(672)>` = perspector of 4th mixtilinear triangle and :term:`unary cofactor triangle <unary-cofactor-triangle>` of 5th mixtilinear triangle
    * :ref:`X(672) <X(672)>` = :ref:`X(31) <X(31)>`-:term:`complementary conjugate <complementary-conjugate>` of X(39046)
    * :ref:`X(672) <X(672)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): {:ref:`1 <X(1)>`, 42079}, {:ref:`2 <X(2)>`, 39046}, {:ref:`9 <X(9)>`, 9502}, {:ref:`19 <X(19)>`, 17464}, {:ref:`103 <X(103)>`, :ref:`55 <X(55)>`}, {:ref:`238 <X(238)>`, 3009}, {:ref:`241 <X(241)>`, 1458}, {:ref:`291 <X(291)>`, :ref:`42 <X(42)>`}, {:ref:`292 <X(292)>`, 3252}, {:ref:`518 <X(518)>`, 2340}, {:ref:`673 <X(673)>`, :ref:`1 <X(1)>`}, {:ref:`813 <X(813)>`, :ref:`649 <X(649)>`}, {1024, 17439}, {1025, 2254}, {1861, 2356}, {2195, 9310}, {2283, :ref:`926 <X(926)>`}, {2284, :ref:`665 <X(665)>`}, {3286, 2223}, {3912, 1818}, {7096, 20589}, {9442, 2293}, {18206, :ref:`518 <X(518)>`}, {34085, 4449}, {36039, :ref:`652 <X(652)>`}, {36086, :ref:`663 <X(663)>`}, {39293, 46177}, {39979, 1193}, {43672, 14547}

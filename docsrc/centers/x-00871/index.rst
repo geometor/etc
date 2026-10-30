@@ -16,17 +16,13 @@ X(871) = ISOTOMIC CONJUGATE OF X(869)
    :alt: X(871) = ISOTOMIC CONJUGATE OF X(869)
    :align: center
 
-   **X(871) = ISOTOMIC CONJUGATE OF X(869)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(871) = ISOTOMIC CONJUGATE OF X(869)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = 1/[a\ :sup:`4`\ (b\ :sup:`2` + c\ :sup:`2` + bc)]
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = 1/[a^{4}(b^{2} + c^{2} + bc)]`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`4.944751352293`
-
-.. container:: note-item
-
-   :ref:`X(871) <X(871)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines

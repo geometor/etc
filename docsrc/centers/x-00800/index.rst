@@ -16,23 +16,19 @@ X(800) = CROSSPOINT OF X(2) AND X(64)
    :alt: X(800) = CROSSPOINT OF X(2) AND X(64)
    :align: center
 
-   **X(800) = CROSSPOINT OF X(2) AND X(64)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(800) = CROSSPOINT OF X(2) AND X(64)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\sin A (\cos^{2}B + \cos^{2}C) : :`
-   | **Barycentrics:** :math:`\sin^{2}A (\cos^{2}B + \cos^{2}C) : :`
+   | **Trilinears:** :math:`\sin A (\cos^{2} B + \cos^{2} C) : :`
+   | **Barycentrics:** :math:`\sin^{2} A (\cos^{2} B + \cos^{2} C) : :`
    | **Search Value (6, 9, 13):** :math:`0.670564699772`
 
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
-   * **Barycentrics:** :math:`a^2 (a^4 (b^2 + c^2) - 2 a^2 (b^2 - c^2)^2 + (b^2 - c^2)^2 (b^2 + c^2)) : :`
-   * **Barycentrics:** :math:`(\sin^2 A) (-2 + \sin^2 B + \sin^2 C) : :`
-
-.. container:: note-item
-
-   :ref:`X(800) <X(800)>` lies.
+   * **Barycentrics:** :math:`a^{2} (a^{4} (b^{2} + c^{2}) - 2 a^{2} (b^{2} - c^{2})^{2} + (b^{2} - c^{2})^{2} (b^{2} + c^{2})) : :`
+   * **Barycentrics:** :math:`(\sin^{2} A) (-2 + \sin^{2} B + \sin^{2} C) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 15 lines

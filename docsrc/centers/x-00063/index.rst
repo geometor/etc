@@ -10,13 +10,13 @@ X(63) = ISOGONAL CONJUGATE OF X(19)
 
 .. enunciation::
 
-   Let Oa be the A-extraversion of the Conway circle (the circle centered at the A-excenter and passing through A, with radius sqrt(r_a^2 + s^2), where r_a is the A-exradius). Let Pa be the perspector of Oa, and La the polar of Pa wrt Oa. Define Lb and Lc cyclically. Let A' = Lb∩Lc, B' = Lc∩La, C' = La∩Lb. Triangle A'B'C' is perspective to the :term:`excentral triangle <excentral-triangle>` at :ref:`X(63) <X(63)>`. (:person:`Randy Hutson <randy-hutson>`, February 10, 2016)
+   Let :g:`O_{a} <O_a>` be the A-extraversion of the Conway circle (the circle centered at the :g:`A <A>`-excenter and passing through :g:`A <A>`, with radius :math:`\sqrt{r_a^{2} + s^{2}}`, where r_a is the A-exradius). Let :g:`P_{a} <P_a>` be the perspector of :g:`O_{a} <O_a>`, and :g:`L_{a} <L_a>` the polar of :g:`P_{a} <P_a>` wrt :g:`O_{a} <O_a>`. Define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, :g:`B' <B'>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C' <C'>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. Triangle :g:`A'B'C' << A' B' C' >>` is perspective to the :term:`excentral triangle <excentral-triangle>` at :ref:`X(63) <X(63)>`. (:person:`Randy Hutson <randy-hutson>`, February 10, 2016)
 
 .. figure:: x-00063.svg
    :alt: X(63) = ISOGONAL CONJUGATE OF X(19)
    :align: center
 
-   **X(63) = ISOGONAL CONJUGATE OF X(19)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(63) = ISOGONAL CONJUGATE OF X(19)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -32,18 +32,14 @@ X(63) = ISOGONAL CONJUGATE OF X(19)
    * **Trilinears:** :math:`\csc A - \tan(A/2) : :`
    * **Trilinears:** :math:`\csc A - \cot(A/2) : :`
    * **Trilinears:** :math:`\tan(A/2) - \cot(A/2) : :`
-   * **Trilinears:** :math:`d(a,b,c) : :`, where d(a,b,c) = directed distance from A to the orthic axis
+   * **Trilinears:** :math:`d(a,b,c) : :`, where d(a,b,c) = directed distance from :g:`A <A>` to the orthic axis
    * **Trilinears:** :math:`2 \csc 2A - \tan A : :`
 
 .. collapse:: Linear Combinations
    :badge: 2 combinations
 
-   * :ref:`X(63) <X(63)>` = (r + 2R)\*\ :ref:`X(1) <X(1)>` - 3R\*\ :ref:`X(2) <X(2)>` - 2r\*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-   * :ref:`X(63) <X(63)>` = (cos A)\*[A] + (cos B)\*[B] + (cos C)\*[C], where A, B, C denote angles and [A], [B], [C] denote vertices
-
-.. container:: note-item
-
-   :ref:`X(63) <X(63)>` lies.
+   * :ref:`X(63) <X(63)>` = :math:`(r + 2R)` :ref:`X(1) <X(1)>` - :math:`3R` :ref:`X(2) <X(2)>` - :math:`2r` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
+   * :ref:`X(63) <X(63)>` = :math:`(\cos A)` :g:`A <A>` + :math:`(\cos B)` :g:`B <B>` + :math:`(\cos C)` :g:`C <C>`, where :g:`A <A>`, :g:`B <B>`, :g:`C <C>` denote angles and :g:`A <A>`, :g:`B <B>`, :g:`C <C>` denote vertices
 
 .. collapse:: Incident Central Lines
    :badge: 45 lines
@@ -87,33 +83,33 @@ X(63) = ISOGONAL CONJUGATE OF X(19)
    * :ref:`X(63) <X(63)>` = trilinear square of X(5374)
    * :ref:`X(63) <X(63)>` = perspector of excentral triangle and Gemini triangle 2
    * :ref:`X(63) <X(63)>` = homothetic center of excentral triangle and Gemini triangle 30
-   * :ref:`X(63) <X(63)>` = perspector of ABC and cross-triangle of Gemini triangles 35 and 36
-   * :ref:`X(63) <X(63)>` = perspector of ABC and cross-triangle of ABC and Gemini triangle 35
-   * :ref:`X(63) <X(63)>` = perspector of ABC and cross-triangle of ABC and Gemini triangle 36
+   * :ref:`X(63) <X(63)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of Gemini triangles 35 and 36
+   * :ref:`X(63) <X(63)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 35
+   * :ref:`X(63) <X(63)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 36
    * :ref:`X(63) <X(63)>` = barycentric product of vertices of Gemini triangle 35
    * :ref:`X(63) <X(63)>` = barycentric product of vertices of Gemini triangle 36
    * :ref:`X(63) <X(63)>` = X(i)-:term:`aleph conjugate <aleph-conjugate>` of X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`1 <X(1)>`), (:ref:`75 <X(75)>`, :ref:`63 <X(63)>`), (:ref:`92 <X(92)>`, :ref:`920 <X(920)>`), (:ref:`99 <X(99)>`, :ref:`662 <X(662)>`), (:ref:`174 <X(174)>`, :ref:`978 <X(978)>`), (:ref:`190 <X(190)>`, :ref:`100 <X(100)>`), (:ref:`333 <X(333)>`, :ref:`411 <X(411)>`), (:ref:`366 <X(366)>`, :ref:`43 <X(43)>`), (:ref:`514 <X(514)>`, 1052), (:ref:`556 <X(556)>`, :ref:`40 <X(40)>`), (:ref:`648 <X(648)>`, :ref:`162 <X(162)>`), (:ref:`664 <X(664)>`, :ref:`651 <X(651)>`), (:ref:`668 <X(668)>`, :ref:`190 <X(190)>`), (:ref:`670 <X(670)>`, :ref:`799 <X(799)>`), (:ref:`671 <X(671)>`, :ref:`897 <X(897)>`), (:ref:`903 <X(903)>`, :ref:`88 <X(88)>`)
    * :ref:`X(63) <X(63)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`63 <X(63)>`, :ref:`222 <X(222)>`), (:ref:`190 <X(190)>`, :ref:`63 <X(63)>`), (:ref:`333 <X(333)>`, :ref:`57 <X(57)>`), (:ref:`345 <X(345)>`, :ref:`345 <X(345)>`), (:ref:`643 <X(643)>`, :ref:`63 <X(63)>`), (:ref:`645 <X(645)>`, :ref:`312 <X(312)>`), (:ref:`662 <X(662)>`, :ref:`223 <X(223)>`)
-   * :ref:`X(63) <X(63)>` = perspector of ABC and extraversion triangle of :ref:`X(63) <X(63)>`, which is also the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(63) <X(63)>`
+   * :ref:`X(63) <X(63)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(63) <X(63)>`, which is also the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(63) <X(63)>`
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let A'B'C' be the 2nd Brocard triangle. Let A″ be the trilinear product B'\*C', and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(63) <X(63)>`. (Randy Hutson, February 10, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the 2nd Brocard triangle. Let :g:`A″ <A″>` be the trilinear product :g:`B' <B'>`\ \*\ :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(63) <X(63)>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the hexyl triangle. Let A″ be the trilinear pole of line B'C', and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(63) <X(63)>`. (Randy Hutson, February 10, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the hexyl triangle. Let :g:`A″ <A″>` be the trilinear pole of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(63) <X(63)>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the side-triangle of ABC and hexyl triangle. Let A″ be the {B,C}-harmonic conjugate of A', and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(63) <X(63)>`. (Randy Hutson, February 10, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the side-triangle of :g:`ABC << A B C >>` and hexyl triangle. Let :g:`A″ <A″>` be the {B,C}-harmonic conjugate of :g:`A' <A'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(63) <X(63)>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the excentral triangle. Let A″ be the isotomic conjugate, wrt triangle A'BC, of :ref:`X(1) <X(1)>`. Define B″ and C″ cyclically. The lines A'A″, B'B″, C'C″ concur in :ref:`X(63) <X(63)>`. (Randy Hutson, July 31 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the excentral triangle. Let :g:`A″ <A″>` be the isotomic conjugate, wrt triangle :g:`A'BC << A' B C >>`, of :ref:`X(1) <X(1)>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(63) <X(63)>`. (Randy Hutson, July 31 2018)
 
 .. container:: note-item
 

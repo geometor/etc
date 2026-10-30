@@ -10,23 +10,19 @@ X(333) = CEVAPOINT OF X(8) AND X(9)
 
 .. enunciation::
 
-   Let A\ :sub:`27`\ B\ :sub:`27`\ C\ :sub:`27` be Gemini triangle 27. Let A' be the perspector of conic {A,B,C,B\ :sub:`27`,C\ :sub:`27`}}, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(333) <X(333)>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
+   Let :g:`A_{27}B_{27}C_{27} << A_27 B_27 C_27 >>` be Gemini triangle 27. Let :g:`A' <A'>` be the perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B_{27} <B_27>`,\ :g:`C_{27} <C_27>`}}, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(333) <X(333)>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
 
 .. figure:: x-00333.svg
    :alt: X(333) = CEVAPOINT OF X(8) AND X(9)
    :align: center
 
-   **X(333) = CEVAPOINT OF X(8) AND X(9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(333) = CEVAPOINT OF X(8) AND X(9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`bc(b + c - a)/(b + c) : ca(c + a - b)/(c + a) : ab(a + b - c)/(a + b)`
    | **Barycentrics:** :math:`(b + c - a)/(b + c) : (c + a - b)/(c + a) : (a + b - c)/(a + b)`
    | **Search Value (6, 9, 13):** :math:`4.136357530042`
-
-.. container:: note-item
-
-   :ref:`X(333) <X(333)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 16 lines
@@ -45,14 +41,14 @@ X(333) = CEVAPOINT OF X(8) AND X(9)
    * :ref:`X(333) <X(333)>` = :term:`crosspoint <crosspoint>` of :ref:`X(274) <X(274)>` and :ref:`X(314) <X(314)>`
    * :ref:`X(333) <X(333)>` = :term:`crosssum <crosssum>` of :ref:`X(213) <X(213)>` and X(1402)
    * :ref:`X(333) <X(333)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(512) <X(512)>`\ \ :ref:`X(810) <X(810)>`
-   * :ref:`X(333) <X(333)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(522) <X(522)>`\ \ :ref:`X(663) <X(663)>` (the perspectrix of ABC and Gemini triangle 1)
+   * :ref:`X(333) <X(333)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(522) <X(522)>`\ \ :ref:`X(663) <X(663)>` (the perspectrix of :g:`ABC << A B C >>` and Gemini triangle 1)
    * :ref:`X(333) <X(333)>` = polar conjugate of :ref:`X(225) <X(225)>`
    * :ref:`X(333) <X(333)>` = crosspoint of :ref:`X(2) <X(2)>` and :ref:`X(63) <X(63)>` wrt both the excentral and :term:`anticomplementary triangles <anticomplementary-triangle>`
    * :ref:`X(333) <X(333)>` = trilinear product :ref:`X(2) <X(2)>`\ \*\ :ref:`X(21) <X(21)>`
    * :ref:`X(333) <X(333)>` = trilinear product of Feuerbach hyperbola intercepts of line :ref:`X(2) <X(2)>`\ \ :ref:`X(6) <X(6)>`
-   * :ref:`X(333) <X(333)>` = perspector of Gemini triangle 2 and cross-triangle of ABC and Gemini triangle 2
+   * :ref:`X(333) <X(333)>` = perspector of Gemini triangle 2 and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 2
    * :ref:`X(333) <X(333)>` = barycentric product of vertices of Gemini triangle 28
-   * :ref:`X(333) <X(333)>` = perspector of ABC and cross-triangle of ABC and Gemini triangle 28
+   * :ref:`X(333) <X(333)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 28
 
 .. toctree::
    :hidden:

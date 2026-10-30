@@ -11,13 +11,13 @@ X(22) = EXETER POINT
 
 .. enunciation::
 
-   :ref:`X(22) <X(22)>` is the perspector of the circummedial triangle and the :term:`tangential triangle <tangential-triangle>`; also :ref:`X(22) <X(22)>` = :ref:`X(55) <X(55)>`-of-the-tangential triangle if ABC is acute. See the note just before X(1601) for a generalization.
+   :ref:`X(22) <X(22)>` is the perspector of the circummedial triangle and the :term:`tangential triangle <tangential-triangle>`; also :ref:`X(22) <X(22)>` = :ref:`X(55) <X(55)>`-of-the-tangential triangle if :g:`ABC << A B C >>` is acute. See the note just before X(1601) for a generalization.
 
 .. figure:: x-00022.svg
    :alt: X(22) = EXETER POINT
    :align: center
 
-   **X(22) = EXETER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(22) = EXETER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,17 +28,13 @@ X(22) = EXETER POINT
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
-   * **Barycentrics:** :math:`\sin 2A - \tan \omega : \sin 2B - \tan \omega : : (M. Iliev, 5/13/07)`
-   * **Barycentrics:** :math:`\tan B + \tan C - \tan A + \tan \omega : : (R. Hutson, 10/13/15)`
+   * **Barycentrics:** :math:`\sin 2A - \tan \omega : \sin 2B - \tan \omega : :` (M. Iliev, 5/13/07)
+   * **Barycentrics:** :math:`\tan B + \tan C - \tan A + \tan \omega : :` (R. Hutson, 10/13/15)
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(22) <X(22)>` = 3 R^2 :ref:`X(2) <X(2)>` - SW :ref:`X(3) <X(3)>`
-
-.. container:: note-item
-
-   :ref:`X(22) <X(22)>` lies.
+   * :ref:`X(22) <X(22)>` = :math:`3 R^{2}` :ref:`X(2) <X(2)>` - :math:`S_{\omega}` :ref:`X(3) <X(3)>`
 
 .. collapse:: Incident Central Lines
    :badge: 659 lines
@@ -67,8 +63,8 @@ X(22) = EXETER POINT
    * :ref:`X(22) <X(22)>` = tangential isogonal conjugate of :ref:`X(6) <X(6)>`
    * :ref:`X(22) <X(22)>` = crosspoint of :ref:`X(3) <X(3)>` and :ref:`X(159) <X(159)>` wrt both the excentral and tangential triangles
    * :ref:`X(22) <X(22)>` = homothetic center of the tangential triangle and the :term:`orthic triangle <orthic-triangle>` of the :term:`anticomplementary triangle <anticomplementary-triangle>`
-   * :ref:`X(22) <X(22)>` = insimilicenter of circumcircle and tangential circle when ABC is acute
-   * :ref:`X(22) <X(22)>` = exsimilicenter of circumcircle and tangential circle when ABC is obtuse
+   * :ref:`X(22) <X(22)>` = insimilicenter of circumcircle and tangential circle when :g:`ABC << A B C >>` is acute
+   * :ref:`X(22) <X(22)>` = exsimilicenter of circumcircle and tangential circle when :g:`ABC << A B C >>` is obtuse
    * :ref:`X(22) <X(22)>` = inverse-in-de-Longchamps-circle of X(5189)
    * :ref:`X(22) <X(22)>` = inverse-in-{circumcircle, nine-point circle}-inverter of X(2072)
    * :ref:`X(22) <X(22)>` = :ref:`X(75) <X(75)>`-:term:`isoconjugate <isoconjugate>` of X(2353)
@@ -83,11 +79,11 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(22) <X(22)>` has Shinagawa coefficients (E + 2F, -2E - 2F).
+   As a point on the Euler line, :ref:`X(22) <X(22)>` has Shinagawa coefficients :math:`(E + 2F, -2E - 2F)`.
 
 .. container:: note-item
 
-   Let La be the polar of :ref:`X(3) <X(3)>` wrt the A-power circle, and define Lb, Lc cyclically. Let A' = Lb∩Lc, B' = Lc∩La, C' = La∩Lb. The triangle A'B'C' is homothetic to the anticomplementary triangle, and the center of homothety is :ref:`X(22) <X(22)>`. (:person:`Randy Hutson <randy-hutson>`, September 5, 2015)
+   Let :g:`L_{a} <L_a>` be the polar of :ref:`X(3) <X(3)>` wrt the A-power circle, and define :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, :g:`B' <B'>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C' <C'>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. The triangle :g:`A'B'C' << A' B' C' >>` is homothetic to the anticomplementary triangle, and the center of homothety is :ref:`X(22) <X(22)>`. (:person:`Randy Hutson <randy-hutson>`, September 5, 2015)
 
 .. container:: note-item
 

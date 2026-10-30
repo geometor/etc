@@ -10,17 +10,17 @@ X(47) = X(110)-BETH CONJUGATE OF X(34)
 
 .. enunciation::
 
-   Let A'B'C' be the Kosnita triangle. Let A″ be the trilinear product B'\*C', and define B″, C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(47) <X(47)>`. (:person:`Randy Hutson <randy-hutson>`, March 21, 2019)
+   Let :g:`A'B'C' << A' B' C' >>` be the Kosnita triangle. Let :g:`A″ <A″>` be the trilinear product :g:`B' <B'>`\ \*\ :g:`C' <C'>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(47) <X(47)>`. (:person:`Randy Hutson <randy-hutson>`, March 21, 2019)
 
 .. figure:: x-00047.svg
    :alt: X(47) = X(110)-BETH CONJUGATE OF X(34)
    :align: center
 
-   **X(47) = X(110)-BETH CONJUGATE OF X(34)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(47) = X(110)-BETH CONJUGATE OF X(34)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\cos 2A : \cos 2B : \cos 2C = f(a,b,c) : f(b,c,a) : f(c,a,b)`, where, f(a,b,c) = a\ :sup:`2`\ (a\ :sup:`4` + b\ :sup:`4` + c\ :sup:`4` - 2a\ :sup:`2`\ b\ :sup:`2` - 2a\ :sup:`2`\ c\ :sup:`2`)
+   | **Trilinears:** :math:`\cos 2A : \cos 2B : \cos 2C = f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a^{2}(a^{4} + b^{4} + c^{4} - 2a^{2}b^{2} - 2a^{2}c^{2})`
    | **Barycentrics:** :math:`a \cos 2A : b \cos 2B : c \cos 2C`
    | **Search Value (6, 9, 13):** :math:`-56.512488734291`
 
@@ -29,18 +29,14 @@ X(47) = X(110)-BETH CONJUGATE OF X(34)
 
    * **Trilinears:** :math:`a^{2} - 2R^{2} : b^{2} - 2R^{2} : c^{2} - 2R^{2}`
    * **Trilinears:** :math:`\tan A \cot 2A : :`
-   * **Trilinears:** :math:`\cos^2 A - \sin^2 A : :`
-   * **Trilinears:** :math:`1 - 2 \sin^2 A : :`
-   * **Trilinears:** :math:`1 - 2 \cos^2 A : :`
+   * **Trilinears:** :math:`\cos^{2} A - \sin^{2} A : :`
+   * **Trilinears:** :math:`1 - 2 \sin^{2} A : :`
+   * **Trilinears:** :math:`1 - 2 \cos^{2} A : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(47) <X(47)>` = (r\ :sup:`2` - R\ :sup:`2` + s\ :sup:`2`)\*\ :ref:`X(1) <X(1)>` - 6rR\*\ :ref:`X(2) <X(2)>` - 4r\ :sup:`2`\ \*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-
-.. container:: note-item
-
-   :ref:`X(47) <X(47)>` lies.
+   * :ref:`X(47) <X(47)>` = :math:`(r^{2} - R^{2} + s^{2})` :ref:`X(1) <X(1)>` - :math:`6rR` :ref:`X(2) <X(2)>` - :math:`4r^{2}` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. collapse:: Incident Central Lines
    :badge: 10 lines
@@ -56,7 +52,7 @@ X(47) = X(110)-BETH CONJUGATE OF X(34)
    * :ref:`X(47) <X(47)>` = :term:`anticomplement <anticomplement>` of X(34825)
    * :ref:`X(47) <X(47)>` = trilinear product :ref:`X(371) <X(371)>`\ \*\ :ref:`X(372) <X(372)>`
    * :ref:`X(47) <X(47)>` = :ref:`X(92) <X(92)>`-:term:`isoconjugate <isoconjugate>` of X(1820)
-   * :ref:`X(47) <X(47)>` = perspector of ABC and extraversion triangle of :ref:`X(47) <X(47)>` (which is also the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(47) <X(47)>`)
+   * :ref:`X(47) <X(47)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(47) <X(47)>` (which is also the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(47) <X(47)>`)
    * :ref:`X(47) <X(47)>` = :term:`eigencenter <eigencenter>` of :term:`cevian triangle <cevian-triangle>` of :ref:`X(92) <X(92)>`
    * :ref:`X(47) <X(47)>` = eigencenter of anticevian triangle of :ref:`X(48) <X(48)>`
    * :ref:`X(47) <X(47)>` = :ref:`X(92) <X(92)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(48) <X(48)>`
@@ -70,7 +66,7 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' and A″B″C″ be the Lucas and Lucas(-1) tangents triangles. Let A\* be the trilinear product A'\*A″, and define B\*, C\* cyclically. The lines AA\*, BB\*, CC\* concur in :ref:`X(47) <X(47)>`. (Randy Hutson, March 21, 2019)
+   Let :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>` be the Lucas and Lucas(-1) tangents triangles. Let :g:`A* <A*>` be the trilinear product :g:`A' <A'>`\ \*\ :g:`A″ <A″>`, and define :g:`B* <B*>`, :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(47) <X(47)>`. (Randy Hutson, March 21, 2019)
 
 .. container:: note-item
 

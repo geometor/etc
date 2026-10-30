@@ -12,7 +12,7 @@ X(974) = 2nd EHRMANN POINT — Code
    :alt: X(974) = 2nd EHRMANN POINT
    :align: center
 
-   **X(974) = 2nd EHRMANN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(974) = 2nd EHRMANN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

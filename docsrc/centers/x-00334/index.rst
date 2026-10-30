@@ -16,17 +16,13 @@ X(334) = ISOTOMIC CONJUGATE OF X(238)
    :alt: X(334) = ISOTOMIC CONJUGATE OF X(238)
    :align: center
 
-   **X(334) = ISOTOMIC CONJUGATE OF X(238)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(334) = ISOTOMIC CONJUGATE OF X(238)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`b^{2}c^{2}/(a^{2} - bc) : c^{2}a^{2}/(b^{2} - ca) : a^{2}b^{2}/(c^{2} - ab)`
-   | **Barycentrics:** bc/(a\ :sup:`2` - bc) : ca/(b\ :sup:`2` - ca) : ab/(c\ :sup:`2` - ab) Let A\ :sub:`31`\ B\ :sub:`31`\ C\ :sub:`31` be Gemini triangle 31. Let A' be the perspector of conic {A,B,C,B\ :sub:`31`,C\ :sub:`31`}}, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(334) <X(334)>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
+   | **Barycentrics:** bc/(:math:`a^{2}` - bc) : ca/(:math:`b^{2}` - ca) : ab/(:math:`c^{2}` - ab) Let :g:`A_{31}B_{31}C_{31} << A_31 B_31 C_31 >>` be Gemini triangle 31. Let :g:`A' <A'>` be the perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B_{31} <B_31>`,\ :g:`C_{31} <C_31>`}}, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(334) <X(334)>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
    | **Search Value (6, 9, 13):** :math:`-0.455299758091`
-
-.. container:: note-item
-
-   :ref:`X(334) <X(334)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 9 lines

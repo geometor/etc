@@ -16,7 +16,7 @@ X(653) = TRILINEAR POLE OF LINE X(1)X(4)
    :alt: X(653) = TRILINEAR POLE OF LINE X(1)X(4)
    :align: center
 
-   **X(653) = TRILINEAR POLE OF LINE X(1)X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(653) = TRILINEAR POLE OF LINE X(1)X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,16 +27,16 @@ X(653) = TRILINEAR POLE OF LINE X(1)X(4)
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`1/[(b - c)(b + c - a)(b^2 + c^2 - a^2)] : :`
+   * **Barycentrics:** :math:`1/[(b - c)(b + c - a)(b^{2} + c^{2} - a^{2})] : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(653) <X(653)>` = 3 :ref:`X(2) <X(2)>` - 4 X(40535)
+   * :ref:`X(653) <X(653)>` = :math:`3` :ref:`X(2) <X(2)>` - :math:`4` X(40535)
 
 .. container:: note-item
 
-   :ref:`X(653) <X(653)>` lies on the curve CC9.
+   :ref:`X(653) <X(653)>` lies on the curve :g:`CC_{9} <[ C C_9 ]>`.
 
 .. collapse:: Incident Central Lines
    :badge: 137 lines
@@ -71,7 +71,7 @@ X(653) = TRILINEAR POLE OF LINE X(1)X(4)
    * :ref:`X(653) <X(653)>` = {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): {:ref:`1 <X(1)>`, 2636, 2638}, {:ref:`46 <X(46)>`, :ref:`158 <X(158)>`, :ref:`412 <X(412)>`}, {:ref:`65 <X(65)>`, 1940, :ref:`29 <X(29)>`}, {:ref:`652 <X(652)>`, 24032, 2639}, {1118, 1788, 5125}, {1148, 8762, :ref:`3 <X(3)>`}, {1783, 32714, :ref:`651 <X(651)>`}, {2636, 2638, 23707}, {4566, 14543, :ref:`651 <X(651)>`}, {14837, 23984, 39053}, {16596, 40535, :ref:`2 <X(2)>`}
    * :ref:`X(653) <X(653)>` = cevapoint of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`652 <X(652)>`), (:ref:`57 <X(57)>`, :ref:`514 <X(514)>`), (:ref:`65 <X(65)>`, :ref:`650 <X(650)>`), (:ref:`281 <X(281)>`, :ref:`522 <X(522)>`), (:ref:`513 <X(513)>`, 1108)
    * :ref:`X(653) <X(653)>` = :ref:`X(6) <X(6)>`-isoconjugate of :ref:`X(521) <X(521)>`
-   * :ref:`X(653) <X(653)>` = perspector of conic {A,B,C,PU(76)}}
+   * :ref:`X(653) <X(653)>` = perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(76)}}
 
 .. toctree::
    :hidden:

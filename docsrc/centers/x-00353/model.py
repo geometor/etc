@@ -13,6 +13,8 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    intersect_lines,
+    point_from_barycentrics,
     promote_point_to_top,
     symmedian_point_of,
 )
@@ -23,15 +25,15 @@ def construct_x_00353(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(353) = INVERSE-IN-BROCARD-CIRCLE OF X(111) on reference triangle ABC."""
-    X_353 = eval_trilinear_point(model, A, B, C, 'a*(4*a**(4)- 2*b**(4)- 2*c**(4)- b**(2)*c**(2)- 4*a**(2)*b**(2)-4*a**(2)*c**(2))', ID="X(353)", classes=["selected", "target"])
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
-    X_23 = eval_trilinear_point(model, A, B, C, 'a*(b**(4) + c**(4) - a**(4) - b**(2)*c**(2))', ID="X(23)", classes=["center", "incident"])
-    central_line(model, X_6, X_23, 6, 23, incident=True)
-    X_111 = eval_trilinear_point(model, A, B, C, 'a/(2*a**(2) - b**(2) - c**(2))', ID="X(111)", classes=["center", "incident"])
-    X_182 = eval_trilinear_point(model, A, B, C, 'cos(A- omega )', ID="X(182)", classes=["center", "incident"])
-    central_line(model, X_111, X_182, 111, 182, incident=True)
+    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
+    X_23 = eval_trilinear_point(model, A, B, C, 'a*(b**(4) + c**(4) - a**(4) - b**(2)*c**(2))', ID="X(23)", classes=["center"])
+    X_111 = eval_trilinear_point(model, A, B, C, 'a/(2*a**(2) - b**(2) - c**(2))', ID="X(111)", classes=["center"])
+    X_182 = eval_trilinear_point(model, A, B, C, 'cos(A- omega )', ID="X(182)", classes=["center"])
+    central_line(model, X_6, X_23, 6, 23)
+    central_line(model, X_111, X_182, 111, 182)
+    X_353 = intersect_lines(model, X_6, X_23, X_111, X_182, ID="X(353)", classes=["selected", "target"])
     X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
-    X_352 = eval_trilinear_point(model, A, B, C, 'a*(-a**(4)- b**(4)- c**(4)- 5*b**(2)*c**(2)+ 4*a**(2)*b**(2)+ 4*a**(2)*c**(2))', ID="X(352)", classes=["center", "incident"])
+    X_352 = point_from_barycentrics(model, A, B, C, -2.5765986, 0.16705151, 3.4095471, ID="X(352)", classes=["center", "incident"])
     central_line(model, X_3, X_352, 3, 352, incident=True)
     return promote_point_to_top(model, X_353)
 

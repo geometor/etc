@@ -16,23 +16,23 @@ X(254) = X(3)-CROSS CONJUGATE OF X(4)
    :alt: X(254) = X(3)-CROSS CONJUGATE OF X(4)
    :align: center
 
-   **X(254) = X(3)-CROSS CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(254) = X(3)-CROSS CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(\sec A)/(\cos^{2}B + \cos^{2}C - \cos^{2}A) : :`
-   | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where g(A,B,C) = (tan A)/(cos\ :sup:`2`\ B + cos\ :sup:`2`\ C - cos\ :sup:`2`\ A)
+   | **Trilinears:** :math:`(\sec A)/(\cos^{2} B + \cos^{2} C - \cos^{2} A) : :`
+   | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where :math:`g(A,B,C) = (\tan A)/(\cos^{2} B + \cos^{2} C - \cos^{2} A)`
    | **Search Value (6, 9, 13):** :math:`7.755594037951`
 
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
-   * **Barycentrics:** :math:`1/((a^2 - b^2 - c^2) (a^6 - 3 a^4 (b^2 + c^2) + a^2 (3 b^4 - 2 b^2 c^2 + 3 c^4) - (b^2 - c^2)^2 (b^2 + c^2))) : :`
-   * **Barycentrics:** :math:`(a^2 + b^2 - c^2)*(a^2 - b^2 + c^2)*(a^6 - a^4*b^2 - a^2*b^4 + b^6 - 3*a^4*c^2 + 2*a^2*b^2*c^2 - 3*b^4*c^2 + 3*a^2*c^4 + 3*b^2*c^4 - c^6)*(a^6 - 3*a^4*b^2 + 3*a^2*b^4 - b^6 - a^4*c^2 + 2*a^2*b^2*c^2 + 3*b^4*c^2 - a^2*c^4 - 3*b^2*c^4 + c^6) : :`
+   * **Barycentrics:** :math:`1/((a^{2} - b^{2} - c^{2}) (a^{6} - 3 a^{4} (b^{2} + c^{2}) + a^{2} (3 b^{4} - 2 b^{2} c^{2} + 3 c^{4}) - (b^{2} - c^{2})^{2} (b^{2} + c^{2}))) : :`
+   * **Barycentrics:** :math:`(a^{2} + b^{2} - c^{2}) \cdot (a^{2} - b^{2} + c^{2}) \cdot (a^{6} - a^{4} b^{2} - a^{2} b^{4} + b^{6} - 3 a^{4} c^{2} + 2 a^{2} b^{2} c^{2} - 3 b^{4} c^{2} + 3 a^{2} c^{4} + 3 b^{2} c^{4} - c^{6}) \cdot (a^{6} - 3 a^{4} b^{2} + 3 a^{2} b^{4} - b^{6} - a^{4} c^{2} + 2 a^{2} b^{2} c^{2} + 3 b^{4} c^{2} - a^{2} c^{4} - 3 b^{2} c^{4} + c^{6}) : :`
 
 .. container:: note-item
 
-   :ref:`X(254) <X(254)>` lies on the following curves: the circumconics {A,B,C,G,\ :ref:`X(24) <X(24)>`}}, {A,B,C,O,\ :ref:`X(155) <X(155)>`}}, {A,B,C,H,\ :ref:`X(93) <X(93)>`}}; the cubics K006, K045, K163, K364, K491, K519, K617, K919; Q066;.
+   :ref:`X(254) <X(254)>` lies on the following curves: the circumconics {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,G,\ :ref:`X(24) <X(24)>`}}, {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,O,\ :ref:`X(155) <X(155)>`}}, {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,H,\ :ref:`X(93) <X(93)>`}}; the cubics K006, K045, K163, K364, K491, K519, K617, K919; Q066;.
 
 .. collapse:: Incident Central Lines
    :badge: 26 lines

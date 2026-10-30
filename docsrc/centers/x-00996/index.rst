@@ -16,16 +16,12 @@ X(996) = INTERSECTION OF LINES X(8)X(58) AND X(10)X(56)
    :alt: X(996) = INTERSECTION OF LINES X(8)X(58) AND X(10)X(56)
    :align: center
 
-   **X(996) = INTERSECTION OF LINES X(8)X(58) AND X(10)X(56)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(996) = INTERSECTION OF LINES X(8)X(58) AND X(10)X(56)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`1/[a(ab + ac - bc + b^{2} + c^{2})] : :`
    | **Search Value (6, 9, 13):** :math:`2.704746908115`
-
-.. container:: note-item
-
-   :ref:`X(996) <X(996)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines

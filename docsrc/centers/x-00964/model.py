@@ -14,6 +14,7 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    intersect_lines,
     nagel_point_of,
     promote_point_to_top,
     spieker_center_of,
@@ -26,13 +27,13 @@ def construct_x_00964(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(964) = INTERCEPT OF EULER LINE AND LINE X(6)X(8) on reference triangle ABC."""
-    X_964 = eval_trilinear_point(model, A, B, C, 'b*c*(a**(4)+ (b + c)*(a**(3)+ a*b**(2)+ a*c**(2)+ a*b*c + (b + c)*(a**(2)+ b*c)))', ID="X(964)", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
+    X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
-    X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center", "incident"])
-    central_line(model, X_6, X_8, 6, 8, incident=True)
+    central_line(model, X_6, X_8, 6, 8)
+    X_964 = intersect_lines(model, X_2, X_3, X_6, X_8, ID="X(964)", classes=["selected", "target"])
     X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["center", "incident"])
     X_31 = eval_trilinear_point(model, A, B, C, 'a**(2)', ID="X(31)", classes=["center", "incident"])
     central_line(model, X_10, X_31, 10, 31, incident=True)

@@ -10,18 +10,18 @@ X(153) = REFLECTION OF X(20) IN X(100)
 
 .. enunciation::
 
-   Let T be the P-Brocard triangle for any P on line :ref:`X(1) <X(1)>`\ \ :ref:`X(3) <X(3)>`. Let O\ :sub:`A` be the circle centered at the A-vertex of T and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(153) <X(153)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (:person:`Randy Hutson <randy-hutson>`, August 30, 2020)
+   Let :g:`T <T>` be the :g:`P <P>`-Brocard triangle for any P on line :ref:`X(1) <X(1)>`\ \ :ref:`X(3) <X(3)>`. Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of :g:`T <T>` and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(153) <X(153)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (:person:`Randy Hutson <randy-hutson>`, August 30, 2020)
 
 .. figure:: x-00153.svg
    :alt: X(153) = REFLECTION OF X(20) IN X(100)
    :align: center
 
-   **X(153) = REFLECTION OF X(20) IN X(100)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(153) = REFLECTION OF X(20) IN X(100)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where, f(a,b,c) = (by + cz - ax)/a, where x : y : z = :ref:`X(104) <X(104)>`
-   | **Barycentrics:** :math:`a^7 - a^6 (b + c) - a^5 (b^2 - 7 b c + c^2) + a^4 (b + c) (b^2 - 6 b c + c^2) - a^3 (b^4 + 2 b^3 c - 10 b^2 c^2 + 2 b c^3 + c^4) + a^2 (b - c)^2 (b + c) (b^2 + 6 b c + c^2) + a (b^2 - c^2)^2 (b^2 - 5 b c + c^2) - (b - c)^4 (b + c)^3 : :`
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = (by + cz - ax)/a`, where :math:`x : y : z` = :ref:`X(104) <X(104)>`
+   | **Barycentrics:** :math:`a^{7} - a^{6} (b + c) - a^{5} (b^{2} - 7 b c + c^{2}) + a^{4} (b + c) (b^{2} - 6 b c + c^{2}) - a^{3} (b^{4} + 2 b^{3} c - 10 b^{2} c^{2} + 2 b c^{3} + c^{4}) + a^{2} (b - c)^{2} (b + c) (b^{2} + 6 b c + c^{2}) + a (b^{2} - c^{2})^{2} (b^{2} - 5 b c + c^{2}) - (b - c)^{4} (b + c)^{3} : :`
    | **Search Value (6, 9, 13):** :math:`-14.037672929368`
 
 .. container:: note-item

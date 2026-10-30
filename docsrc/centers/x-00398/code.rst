@@ -12,7 +12,7 @@ X(398) = CROSSPOINT OF X(4) AND X(18) — Code
    :alt: X(398) = CROSSPOINT OF X(4) AND X(18)
    :align: center
 
-   **X(398) = CROSSPOINT OF X(4) AND X(18)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(398) = CROSSPOINT OF X(4) AND X(18)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

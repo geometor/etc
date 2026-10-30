@@ -16,15 +16,11 @@ X(912) = X(104)-CEVA CONJUGATE OF X(3)
    :alt: X(912) = X(104)-CEVA CONJUGATE OF X(3)
    :align: center
 
-   **X(912) = X(104)-CEVA CONJUGATE OF X(3)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(912) = X(104)-CEVA CONJUGATE OF X(3)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(a^2 - b^2 - c^2) (a^3 (b + c) - a^2 (b^2 + c^2) - a (b - c)^2 (b + c) + (b^2 - c^2)^2) : :`
-
-.. container:: note-item
-
-   :ref:`X(912) <X(912)>` lies.
+   | **Trilinears:** :math:`(a^{2} - b^{2} - c^{2}) (a^{3} (b + c) - a^{2} (b^{2} + c^{2}) - a (b - c)^{2} (b + c) + (b^{2} - c^{2})^{2}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 10 lines

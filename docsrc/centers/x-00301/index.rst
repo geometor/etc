@@ -16,17 +16,13 @@ X(301) = ISOTOMIC CONJUGATE OF 2nd ISODYNAMIC CENTER
    :alt: X(301) = ISOTOMIC CONJUGATE OF 2nd ISODYNAMIC CENTER
    :align: center
 
-   **X(301) = ISOTOMIC CONJUGATE OF 2nd ISODYNAMIC CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(301) = ISOTOMIC CONJUGATE OF 2nd ISODYNAMIC CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\csc^{2}A \csc(A - \pi /3) : \csc^{2}B \csc(B - \pi /3) : \csc^{2}C \csc(C - \pi /3)`
+   | **Trilinears:** :math:`\csc^{2} A \csc(A - \pi /3) : \csc^{2} B \csc(B - \pi /3) : \csc^{2} C \csc(C - \pi /3)`
    | **Barycentrics:** :math:`\csc A \csc(A - \pi /3) : \csc B \csc(B - \pi /3) : \csc C \csc(C - \pi /3)`
    | **Search Value (6, 9, 13):** :math:`4.632008428370`
-
-.. container:: note-item
-
-   :ref:`X(301) <X(301)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines

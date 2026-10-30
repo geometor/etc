@@ -12,6 +12,7 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    intersect_lines,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -21,13 +22,13 @@ def construct_x_00207(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(207) = X(1)-CEVA CONJUGATE OF X(34) on reference triangle ABC."""
-    X_207 = eval_trilinear_point(model, A, B, C, '(1 - sec(A))*(sec(B) + sec(C) - sec(A) - 1)', ID="X(207)", classes=["selected", "target"])
-    X_19 = eval_trilinear_point(model, A, B, C, 'tan(A)', ID="X(19)", classes=["center", "incident"])
-    X_56 = eval_trilinear_point(model, A, B, C, 'a/(b + c - a)', ID="X(56)", classes=["center", "incident"])
-    central_line(model, X_19, X_56, 19, 56, incident=True)
-    X_33 = eval_trilinear_point(model, A, B, C, '1 + sec(A)', ID="X(33)", classes=["center", "incident"])
-    X_64 = eval_trilinear_point(model, A, B, C, '1/(cos(A) - cos(B)*cos(C))', ID="X(64)", classes=["center", "incident"])
-    central_line(model, X_33, X_64, 33, 64, incident=True)
+    X_19 = eval_trilinear_point(model, A, B, C, 'tan(A)', ID="X(19)", classes=["center"])
+    X_56 = eval_trilinear_point(model, A, B, C, 'a/(b + c - a)', ID="X(56)", classes=["center"])
+    X_33 = eval_trilinear_point(model, A, B, C, '1 + sec(A)', ID="X(33)", classes=["center"])
+    X_64 = eval_trilinear_point(model, A, B, C, '1/(cos(A) - cos(B)*cos(C))', ID="X(64)", classes=["center"])
+    central_line(model, X_19, X_56, 19, 56)
+    central_line(model, X_33, X_64, 33, 64)
+    X_207 = intersect_lines(model, X_19, X_56, X_33, X_64, ID="X(207)", classes=["selected", "target"])
     X_40 = eval_trilinear_point(model, A, B, C, 'cos(B) + cos(C) - cos(A) - 1', ID="X(40)", classes=["center", "incident"])
     X_108 = eval_trilinear_point(model, A, B, C, 'a/(sec(B) - sec(C))', ID="X(108)", classes=["center", "incident"])
     central_line(model, X_40, X_108, 40, 108, incident=True)

@@ -16,17 +16,13 @@ X(227) = X(10)-CEVA CONJUGATE OF X(65)
    :alt: X(227) = X(10)-CEVA CONJUGATE OF X(65)
    :align: center
 
-   **X(227) = X(10)-CEVA CONJUGATE OF X(65)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(227) = X(10)-CEVA CONJUGATE OF X(65)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = (b + c)(cos B + cos C - cos A - 1)tan A/2
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = (b + c)(\cos B + \cos C - \cos A - 1)\tan A/2`
    | **Barycentrics:** :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
    | **Search Value (6, 9, 13):** :math:`-1.308770722861`
-
-.. container:: note-item
-
-   :ref:`X(227) <X(227)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 10 lines

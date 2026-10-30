@@ -17,22 +17,23 @@ X(21) = SCHIFFLER POINT
    :alt: X(21) = SCHIFFLER POINT
    :align: center
 
-   **X(21) = SCHIFFLER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(21) = SCHIFFLER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`1/(\cos B + \cos C) : 1/(\cos C + \cos A) : 1/(\cos A + \cos B), = f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = (b + c - a)/(b + c)
+   | **Trilinears:** :math:`1/(\cos B + \cos C) : 1/(\cos C + \cos A) : 1/(\cos A + \cos B)`
    | **Barycentrics:** :math:`a/(\cos B + \cos C) : b/(\cos C + \cos A) : c/(\cos A + \cos B)`
    | **Search Value (6, 9, 13):** :math:`3.177166860315`
+
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
+
+   * **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = (b + c - a)/(b + c)`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(21) <X(21)>` = 3R\*\ :ref:`X(2) <X(2)>` + 2r\*\ :ref:`X(3) <X(3)>`
-
-.. container:: note-item
-
-   :ref:`X(21) <X(21)>` lies.
+   * :ref:`X(21) <X(21)>` = :math:`3R` :ref:`X(2) <X(2)>` + :math:`2r` :ref:`X(3) <X(3)>`
 
 .. collapse:: Incident Central Lines
    :badge: 782 lines
@@ -67,11 +68,11 @@ X(21) = SCHIFFLER POINT
    * :ref:`X(21) <X(21)>` = crosspoint of :ref:`X(1) <X(1)>` and :ref:`X(3) <X(3)>` wrt the :term:`excentral triangle <excentral-triangle>`
    * :ref:`X(21) <X(21)>` = crosspoint of :ref:`X(1) <X(1)>` and :ref:`X(3) <X(3)>` wrt the :term:`tangential triangle <tangential-triangle>`
    * :ref:`X(21) <X(21)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(521) <X(521)>`\ \ :ref:`X(650) <X(650)>`
-   * :ref:`X(21) <X(21)>` = similitude center of ABC and :ref:`X(1) <X(1)>`-Brocard triangle
+   * :ref:`X(21) <X(21)>` = similitude center of :g:`ABC << A B C >>` and :ref:`X(1) <X(1)>`-Brocard triangle
    * :ref:`X(21) <X(21)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these (i,j): (:ref:`6 <X(6)>`, :ref:`226 <X(226)>`), (:ref:`75 <X(75)>`, 1402)
    * :ref:`X(21) <X(21)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(63) <X(63)>`}-harmonic conjugate of X(3868)
-   * :ref:`X(21) <X(21)>` = perspector of 2nd circumperp triangle and cross-triangle of ABC and 2nd circumperp triangle
-   * :ref:`X(21) <X(21)>` = perspector of ABC and cross-triangle of ABC and 1st Conway triangle
+   * :ref:`X(21) <X(21)>` = perspector of 2nd circumperp triangle and cross-triangle of :g:`ABC << A B C >>` and 2nd circumperp triangle
+   * :ref:`X(21) <X(21)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and 1st Conway triangle
    * :ref:`X(21) <X(21)>` = perspector of Gemini triangles 1 and 8
    * :ref:`X(21) <X(21)>` = barycentric product of Feuerbach hyperbola intercepts of line :ref:`X(2) <X(2)>`\ \ :ref:`X(6) <X(6)>`
 
@@ -80,39 +81,39 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(21) <X(21)>` has Shinagawa coefficients ($aS\ :sub:`A`\ $, abc - $aS\ :sub:`A`\ $).
+   As a point on the Euler line, :ref:`X(21) <X(21)>` has Shinagawa coefficients :math:`(\$aS_{A}\$, abc - \$aS_{A}\$)`.
 
 .. container:: note-item
 
-   Let A'B'C' be the :term:`incentral triangle <incentral-triangle>` of ABC, and let L\ :sub:`A` be the reflection of line B'C' in line BC; define L\ :sub:`B` and L\ :sub:`C` cyclically. The triangle formed by the lines L\ :sub:`A`, L\ :sub:`B`, L\ :sub:`C` is perspective to ABC, and the perspector is :ref:`X(21) <X(21)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`incentral triangle <incentral-triangle>` of :g:`ABC << A B C >>`, and let :g:`L_{A} <L_A>` be the reflection of line :g:`B'C' <[ B' C' ]>` in line :g:`BC <[ B C ]>`; define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. The triangle formed by the lines :g:`L_{A} <L_A>`, :g:`L_{B} <L_B>`, :g:`L_{C} <L_C>` is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X(21) <X(21)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. container:: note-item
 
-   Write I for the incenter; the Euler lines of the four triangles IBC, ICA, IAB, and ABC concur in :ref:`X(21) <X(21)>`. This configuration extends to Kirikami-Schiffler points and generalizations found by :person:`Peter Moses <peter-moses>`, as introduced just before X(3648).
+   Write I for the incenter; the Euler lines of the four triangles :g:`IBC << I B C >>`, :g:`ICA << I C A >>`, :g:`IAB << I A B >>`, and :g:`ABC << A B C >>` concur in :ref:`X(21) <X(21)>`. This configuration extends to Kirikami-Schiffler points and generalizations found by :person:`Peter Moses <peter-moses>`, as introduced just before X(3648).
 
 .. container:: note-item
 
-   Let A'B'C' be the 2nd circumperp triangle. Let A″ be the cevapoint of B' and C', and define B″ and C″ cyclically. The lines AA″, BB″, and CC″ concur in :ref:`X(21) <X(21)>`. (Randy Hutson, April 9, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the 2nd circumperp triangle. Let :g:`A″ <A″>` be the cevapoint of :g:`B' <B'>` and :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, and :g:`CC″ <[ C C″ ]>` concur in :ref:`X(21) <X(21)>`. (Randy Hutson, April 9, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the Feuerbach triangle. Let La be the tangent to the nine-point circle at A', and define Lb and Lc cyclically. Let A″ be the isogonal conjugate of the trilinear pole of La, and define B″ and C″ cyclically. Let A\*B\*C\* be the circumcevian triangle, wrt A″B″C″, of :ref:`X(1) <X(1)>`. The lines AA\*, BB\*, CC\* concur in :ref:`X(21) <X(21)>`. (Randy Hutson, April 9, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the Feuerbach triangle. Let :g:`L_{a} <L_a>` be the tangent to the nine-point circle at :g:`A' <A'>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` be the isogonal conjugate of the trilinear pole of :g:`L_{a} <L_a>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Let :g:`A*B*C* << A* B* C* >>` be the circumcevian triangle, wrt :g:`A″B″C″ << A″ B″ C″ >>`, of :ref:`X(1) <X(1)>`. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(21) <X(21)>`. (Randy Hutson, April 9, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the 2nd circumperp triangle. Let A″ be the trilinear product B'\*C', and define B″ and C″ cyclically. Then A″, B″, C″ are collinear on line :ref:`X(36) <X(36)>`\ \ :ref:`X(238) <X(238)>` (the :term:`trilinear polar <trilinear-polar>` of :ref:`X(81) <X(81)>`). The lines A'A″, B'B″, C'C″ concur in :ref:`X(21) <X(21)>`. (Randy Hutson, April 9, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the 2nd circumperp triangle. Let :g:`A″ <A″>` be the trilinear product :g:`B' <B'>`\ \*\ :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Then :g:`A″ <A″>`, :g:`B″ <B″>`, :g:`C″ <C″>` are collinear on line :ref:`X(36) <X(36)>`\ \ :ref:`X(238) <X(238)>` (the :term:`trilinear polar <trilinear-polar>` of :ref:`X(81) <X(81)>`). The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(21) <X(21)>`. (Randy Hutson, April 9, 2016)
 
 .. container:: note-item
 
-   Let Oa be the reflection of the A-excircle in the perpendicular bisector of BC, and define Ob, Oc cyclically. Then :ref:`X(21) <X(21)>` is the radical center of Oa, Ob, Oc. (Randy Hutson, April 9, 2016)
+   Let :g:`O_{a} <O_a>` be the reflection of the :g:`A <A>`-excircle in the perpendicular bisector of :g:`BC <[ B C ]>`, and define :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>` cyclically. Then :ref:`X(21) <X(21)>` is the radical center of :g:`O_{a} <O_a>`, :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>`. (Randy Hutson, April 9, 2016)
 
 .. container:: note-item
 
-   Let Ab, Ac, Bc, Ba, Ca, Cb be as in the construction of the Conway circle (see http://mathworld.wolfram.com/ConwayCircle.html). Let Oa be the circumcircle of AAbAc, and define Ob, Oc cyclically. :ref:`X(21) <X(21)>` is the radical center of Oa, Ob, Oc; see also :ref:`X(8) <X(8)>` and :ref:`X(274) <X(274)>`. (Randy Hutson, April 9, 2016)
+   Let :g:`A_{b} <A_b>`, :g:`A_{c} <A_c>`, :g:`B_{c} <B_c>`, :g:`B_{a} <B_a>`, :g:`C_{a} <C_a>`, :g:`C_{b} <C_b>` be as in the construction of the Conway circle (see http://mathworld.wolfram.com/ConwayCircle.html). Let :g:`O_{a} <O_a>` be the circumcircle of AAbAc, and define :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>` cyclically. :ref:`X(21) <X(21)>` is the radical center of :g:`O_{a} <O_a>`, :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>`; see also :ref:`X(8) <X(8)>` and :ref:`X(274) <X(274)>`. (Randy Hutson, April 9, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the excentral triangle. :ref:`X(21) <X(21)>` is the radical center of the circles O(3,4) of triangles A'BC, B'CA, C'AB. (Randy Hutson, July 31 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the excentral triangle. :ref:`X(21) <X(21)>` is the radical center of the circles O(3,4) of triangles :g:`A'BC << A' B C >>`, :g:`B'CA << B' C A >>`, :g:`C'AB << C' A B >>`. (Randy Hutson, July 31 2018)
 
 .. container:: note-item
 
@@ -124,12 +125,12 @@ Notes
 
 .. container:: note-item
 
-   In the plane of a triangle ABC, let
+   In the plane of a triangle :g:`ABC << A B C >>`, let
 
-      * A' = A-excenter, and define B' and C' cyclically
-      * A'' = A':ref:`X(3) <X(3)>`\ ∩BC, and define B'' and C'' cyclically.
+      * :g:`A' <A'>` = :g:`A <A>`-excenter, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically
+      * :g:`A″ <A″>` = :g:`A' <A'>`:ref:`X(3) <X(3)>`\ ∩\ :g:`BC <[ B C ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically.
 
-   The lines AA'', BB'',CC'' concur in :ref:`X(21) <X(21)>`. (Yuda Chen, April 13, 2022)
+   The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`,\ :g:`CC″ <[ C C″ ]>` concur in :ref:`X(21) <X(21)>`. (Yuda Chen, April 13, 2022)
 
 .. container:: note-item
 

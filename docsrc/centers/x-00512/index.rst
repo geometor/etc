@@ -16,7 +16,7 @@ X(512) = ISOGONAL CONJUGATE OF X(99)
    :alt: X(512) = ISOGONAL CONJUGATE OF X(99)
    :align: center
 
-   **X(512) = ISOGONAL CONJUGATE OF X(99)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(512) = ISOGONAL CONJUGATE OF X(99)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,16 +27,12 @@ X(512) = ISOGONAL CONJUGATE OF X(99)
    :badge: 2 forms
 
    * **Trilinears:** :math:`\sin A (\cos 2B - \cos 2C) : :`
-   * **Barycentrics:** :math:`SB^2 - SC^2 : :`
+   * **Barycentrics:** :math:`S_{B}^{2} - S_{C}^{2} : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(512) <X(512)>` = P(1) - U(1)
-
-.. container:: note-item
-
-   :ref:`X(512) <X(512)>` lies.
+   * :ref:`X(512) <X(512)>` = :math:`P(1) - U(1)`
 
 .. collapse:: Incident Central Lines
    :badge: 59 lines
@@ -67,10 +63,10 @@ X(512) = ISOGONAL CONJUGATE OF X(99)
    * :ref:`X(512) <X(512)>` = vertex conjugate of PU(2)
    * :ref:`X(512) <X(512)>` = vertex conjugate of :ref:`X(6) <X(6)>` and :ref:`X(187) <X(187)>`
    * :ref:`X(512) <X(512)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(351) <X(351)>`\ \ :ref:`X(865) <X(865)>` (line is tangent to Steiner inellipse at X(1084))
-   * :ref:`X(512) <X(512)>` = perspector of hyperbola {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(6) <X(6)>`} (circumconic centered at X(1084))
+   * :ref:`X(512) <X(512)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(6) <X(6)>`} (circumconic centered at X(1084))
    * :ref:`X(512) <X(512)>` = intercept of Lemoine axis and the line at infinity (:term:`trilinear polars <trilinear-polar>` of :ref:`X(6) <X(6)>` and :ref:`X(2) <X(2)>`)
    * :ref:`X(512) <X(512)>` = center of circumconic that is locus of trilinear poles of lines passing through X(1084)
-   * :ref:`X(512) <X(512)>` = perspector of ABC and the dual of the 1st Brocard triangle
+   * :ref:`X(512) <X(512)>` = perspector of :g:`ABC << A B C >>` and the dual of the 1st Brocard triangle
    * :ref:`X(512) <X(512)>` = :ref:`X(512) <X(512)>`-of-2nd-Brocard triangle
    * :ref:`X(512) <X(512)>` = :ref:`X(690) <X(690)>`-of-orthocentroidal-triangle
    * :ref:`X(512) <X(512)>` = :ref:`X(690) <X(690)>`-of :ref:`X(4) <X(4)>`-Brocard-triangle
@@ -84,7 +80,7 @@ X(512) = ISOGONAL CONJUGATE OF X(99)
    * :ref:`X(512) <X(512)>` = trilinear pole of PU(105)
    * :ref:`X(512) <X(512)>` = bicentric difference of PU(191)
    * :ref:`X(512) <X(512)>` = ideal point of PU(191)
-   * :ref:`X(512) <X(512)>` = perspector of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of Steiner triangle
+   * :ref:`X(512) <X(512)>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of Steiner triangle
    * :ref:`X(512) <X(512)>` = :ref:`X(690) <X(690)>` of 4th anti-Brocard triangle
    * :ref:`X(512) <X(512)>` = Thomson-isogonal conjugate of :ref:`X(98) <X(98)>`
    * :ref:`X(512) <X(512)>` = Lucas-isogonal conjugate of :ref:`X(98) <X(98)>`
@@ -100,7 +96,7 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the 1st Brocard triangle. Let La be the reflection of B'C' in the internal angle bisector of vertex angle A, and define Lb and Lc cyclically. Then the lines La, Lb, Lc are parallel, and they concur in :ref:`X(512) <X(512)>`. (:person:`Randy Hutson <randy-hutson>`, September 5, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the 1st Brocard triangle. Let :g:`L_{a} <L_a>` be the reflection of :g:`B'C' <[ B' C' ]>` in the internal angle bisector of vertex angle :g:`A <A>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Then the lines :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` are parallel, and they concur in :ref:`X(512) <X(512)>`. (:person:`Randy Hutson <randy-hutson>`, September 5, 2015)
 
 .. toctree::
    :hidden:

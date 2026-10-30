@@ -13,6 +13,7 @@ from geometor.etc.ops import (
     circumcenter_of,
     construct_baseline_triangle,
     create_model,
+    eval_barycentric_point,
     eval_trilinear_point,
     isogonal_conjugate,
     promote_point_to_top,
@@ -33,7 +34,7 @@ def construct_x_00097(
     X_95 = eval_trilinear_point(model, A, B, C, 'b**(2)*c**(2)*sec(B - C)', ID="X(95)", classes=["center", "incident"])
     central_line(model, X_2, X_95, 2, 95, incident=True)
     X_216 = eval_trilinear_point(model, A, B, C, 'sin(2*A)*cos(B - C)', ID="X(216)", classes=["center", "incident"])
-    X_288 = eval_trilinear_point(model, A, B, C, '(sec(B - C))/(b*cos(C - A) + c*cos(B - A))', ID="X(288)", classes=["center", "incident"])
+    X_288 = eval_barycentric_point(model, A, B, C, 'a/(b*sec(A - B) + c*sec(A - C))', ID="X(288)", classes=["center", "incident"])
     central_line(model, X_216, X_288, 216, 288, incident=True)
     return promote_point_to_top(model, X_97)
 

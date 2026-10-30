@@ -16,7 +16,7 @@ X(978) = X(56)-CEVA CONJUGATE OF X(1)
    :alt: X(978) = X(56)-CEVA CONJUGATE OF X(1)
    :align: center
 
-   **X(978) = X(56)-CEVA CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(978) = X(56)-CEVA CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -26,11 +26,7 @@ X(978) = X(56)-CEVA CONJUGATE OF X(1)
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`\csc^2(B/2) + \csc^2(C/2) - \csc^2(A/2) : :`
-
-.. container:: note-item
-
-   :ref:`X(978) <X(978)>` lies.
+   * **Trilinears:** :math:`\csc^{2}(B/2) + \csc^{2}(C/2) - \csc^{2}(A/2) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 16 lines

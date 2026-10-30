@@ -12,6 +12,7 @@ from geometor.etc.ops import (
     ceva_conjugate,
     construct_baseline_triangle,
     create_model,
+    eval_barycentric_point,
     eval_trilinear_point,
     nagel_point_of,
     promote_point_to_top,
@@ -32,7 +33,7 @@ def construct_x_00644(
     X_220 = eval_trilinear_point(model, A, B, C, 'a*(b + c - a)**(2)', ID="X(220)", classes=["center", "incident"])
     central_line(model, X_8, X_220, 8, 220, incident=True)
     X_145 = eval_trilinear_point(model, A, B, C, 'b*c*(3*a - b - c)', ID="X(145)", classes=["center", "incident"])
-    X_218 = eval_trilinear_point(model, A, B, C, '(cos(A/2))**(2)*((cos(B/2))**(4) + (cos(C/2))**(4) - (cos(A/2))**(4))', ID="X(218)", classes=["center", "incident"])
+    X_218 = eval_barycentric_point(model, A, B, C, 'a**(2)*(a**(2) + b**(2) + c**(2) - 2*a*b - 2*a*c)', ID="X(218)", classes=["center", "incident"])
     central_line(model, X_145, X_218, 145, 218, incident=True)
     return promote_point_to_top(model, X_644)
 

@@ -16,21 +16,17 @@ X(684) = CROSSDIFFERENCE OF X(4) AND X(32)
    :alt: X(684) = CROSSDIFFERENCE OF X(4) AND X(32)
    :align: center
 
-   **X(684) = CROSSDIFFERENCE OF X(4) AND X(32)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(684) = CROSSDIFFERENCE OF X(4) AND X(32)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = sec B sin\ :sup:`3` C - sec C sin\ :sup:`3` B
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = \sec B \sin^{3} C - \sec C \sin^{3} B`
    | **Search Value (6, 9, 13):** :math:`29.602152635288`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`a(b^2 + c^2 - a^2)(b^2 - c^2)(a^2b^2 + a^2c^2 - b^4 - c^4) : :`
-
-.. container:: note-item
-
-   :ref:`X(684) <X(684)>` lies.
+   * **Trilinears:** :math:`a(b^{2} + c^{2} - a^{2})(b^{2} - c^{2})(a^{2}b^{2} + a^{2}c^{2} - b^{4} - c^{4}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines
@@ -44,7 +40,7 @@ X(684) = CROSSDIFFERENCE OF X(4) AND X(32)
    * :ref:`X(684) <X(684)>` = isogonal conjugate of :ref:`X(685) <X(685)>`
    * :ref:`X(684) <X(684)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(22456)
    * :ref:`X(684) <X(684)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(39000)
-   * :ref:`X(684) <X(684)>` = perspector of hyperbola {A,B,C,\ :ref:`X(3) <X(3)>`,\ :ref:`X(511) <X(511)>`}}
+   * :ref:`X(684) <X(684)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(3) <X(3)>`,\ :ref:`X(511) <X(511)>`}}
    * :ref:`X(684) <X(684)>` = :term:`crosspoint <crosspoint>` of :ref:`X(99) <X(99)>` and :ref:`X(287) <X(287)>`
    * :ref:`X(684) <X(684)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`98 <X(98)>`, :ref:`879 <X(879)>`), (:ref:`232 <X(232)>`, :ref:`512 <X(512)>`)
    * :ref:`X(684) <X(684)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(4) <X(4)>`\ \ :ref:`X(32) <X(32)>`

@@ -10,13 +10,13 @@ X(389) = CENTER OF THE TAYLOR CIRCLE
 
 .. enunciation::
 
-   If ABC is acute then :ref:`X(389) <X(389)>` is the Spieker center of the :term:`orthic triangle <orthic-triangle>`. :person:`Peter Yff <peter-yff>` reports (Sept. 19, 2001) that since :ref:`X(389) <X(389)>` is on the Brocard axis, there must exist T for which :ref:`X(389) <X(389)>` is sin(A+T) : sin(B+T) : sin(C+T), and that tan(T) = - cot A cot B cot C.
+   If :g:`ABC << A B C >>` is acute then :ref:`X(389) <X(389)>` is the Spieker center of the :term:`orthic triangle <orthic-triangle>`. :person:`Peter Yff <peter-yff>` reports (Sept. 19, 2001) that since :ref:`X(389) <X(389)>` is on the Brocard axis, there must exist T for which :ref:`X(389) <X(389)>` is :math:`\sin(A+T) : \sin(B+T) : \sin(C+T)`, and that tan(T) = - cot A cot B cot C.
 
 .. figure:: x-00389.svg
    :alt: X(389) = CENTER OF THE TAYLOR CIRCLE
    :align: center
 
-   **X(389) = CENTER OF THE TAYLOR CIRCLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(389) = CENTER OF THE TAYLOR CIRCLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -29,11 +29,7 @@ X(389) = CENTER OF THE TAYLOR CIRCLE
 
    * **Trilinears:** :math:`\cos A - \sin A (\tan A + \tan B + \tan C) : :`
    * **Trilinears:** :math:`\cos A (\cot A \cot B \cot C) - \sin A : :`
-   * **Barycentrics:** :math:`a^2[a^6(b^2 + c^2) - 3a^4(b^4 + c^4) + 3a^2(b^2 - c^2)^2(b^2 + c^2) - (b^2 - c^2)^2(b^4 + c^4)] : :`
-
-.. container:: note-item
-
-   :ref:`X(389) <X(389)>` lies.
+   * **Barycentrics:** :math:`a^{2}[a^{6}(b^{2} + c^{2}) - 3a^{4}(b^{4} + c^{4}) + 3a^{2}(b^{2} - c^{2})^{2}(b^{2} + c^{2}) - (b^{2} - c^{2})^{2}(b^{4} + c^{4})] : :`
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines
@@ -59,9 +55,9 @@ X(389) = CENTER OF THE TAYLOR CIRCLE
    * :ref:`X(389) <X(389)>` = orthology center of half-altitude and orthic triangles
    * :ref:`X(389) <X(389)>` = complement of :ref:`X(4) <X(4)>` wrt orthic triangle
    * :ref:`X(389) <X(389)>` = :ref:`X(20) <X(20)>`-of-polar-triangle-of-complement-of-polar-circle
-   * :ref:`X(389) <X(389)>` = :ref:`X(10) <X(10)>`-of-orthic-triangle if ABC is acute
+   * :ref:`X(389) <X(389)>` = :ref:`X(10) <X(10)>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(389) <X(389)>` = :ref:`X(4) <X(4)>`-of-1st-Hyacinth-triangle
-   * :ref:`X(389) <X(389)>` = excentral-to-ABC :term:`functional image <functional-image>` of :ref:`X(10) <X(10)>`
+   * :ref:`X(389) <X(389)>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X(10) <X(10)>`
    * :ref:`X(389) <X(389)>` = {:ref:`X(61) <X(61)>`,\ :ref:`X(62) <X(62)>`}-harmonic conjugate of X(3284)
 
 Notes
@@ -69,23 +65,23 @@ Notes
 
 .. container:: note-item
 
-   Let H\ :sub:`A` be the A-altitude of triangle ABC, and let A' be the midpoint of segment AH\ :sub:`A`. Let L\ :sub:`A` be the line through A' parallel to AO, where O denotes the circumcenter. Define L\ :sub:`B` and L\ :sub:`C` cyclically. The lines L\ :sub:`A`, L\ :sub:`B`, L\ :sub:`C` concur in :ref:`X(389) <X(389)>`. (Construction by Alexei Myakishev, March 24, 2010.)
+   Let :g:`H_{A} <H_A>` be the :g:`A <A>`-altitude of triangle :g:`ABC << A B C >>`, and let :g:`A' <A'>` be the midpoint of segment :g:`AH_{A} <[ A H_A ]>`. Let :g:`L_{A} <L_A>` be the line through :g:`A' <A'>` parallel to :g:`AO <[ A O ]>`, where O denotes the circumcenter. Define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. The lines :g:`L_{A} <L_A>`, :g:`L_{B} <L_B>`, :g:`L_{C} <L_C>` concur in :ref:`X(389) <X(389)>`. (Construction by Alexei Myakishev, March 24, 2010.)
 
 .. container:: note-item
 
-   Let O\ :sub:`A` be the circle with center A tangent to line BC, and define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(389) <X(389)>` is the radical center of the three circles. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   Let :g:`O_{A} <O_A>` be the circle with center A tangent to line :g:`BC <[ B C ]>`, and define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(389) <X(389)>` is the radical center of the three circles. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. container:: note-item
 
-   Let A'B'C' be the orthic triangle, let A'' be the orthocenter of AB'C', and define B'' and C'' cyclically. Triangle A''B''C'' is the :term:`medial triangle <medial-triangle>` of the circumorthic triangle. The triangle A''B''C'' is homothetic to A'B'C', and the center of homothety is :ref:`X(389) <X(389)>`. (Randy Hutson, 9/23/2011)
+   Let :g:`A'B'C' << A' B' C' >>` be the orthic triangle, let :g:`A″ <A″>` be the orthocenter of :g:`AB'C' << A B' C' >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Triangle :g:`A″B″C″ << A″ B″ C″ >>` is the :term:`medial triangle <medial-triangle>` of the circumorthic triangle. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to :g:`A'B'C' << A' B' C' >>`, and the center of homothety is :ref:`X(389) <X(389)>`. (Randy Hutson, 9/23/2011)
 
 .. container:: note-item
 
-   Let A'B'C' be the orthic triangle. Let Oa be the circle with center A tangent to line B'C', and define Ob and Oc cyclically. The radical circle of Oa, Ob, Oc is the Taylor circle, which is also the Spieker radical circle of the orthic triangle if ABC is acute. (Randy Hutson, December 2, 2017)
+   Let :g:`A'B'C' << A' B' C' >>` be the orthic triangle. Let :g:`O_{a} <O_a>` be the circle with center A tangent to line :g:`B'C' <[ B' C' ]>`, and define :g:`O_{b} <O_b>` and :g:`O_{c} <O_c>` cyclically. The radical circle of :g:`O_{a} <O_a>`, :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>` is the Taylor circle, which is also the Spieker radical circle of the orthic triangle if :g:`ABC << A B C >>` is acute. (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 
-   Let A'B'C' be the orthic triangle. :ref:`X(389) <X(389)>` is the radical center of the polar circles of AB'C', BC'A', CA'B'. (Randy Hutson, December 2, 2017)
+   Let :g:`A'B'C' << A' B' C' >>` be the orthic triangle. :ref:`X(389) <X(389)>` is the radical center of the polar circles of :g:`AB'C' << A B' C' >>`, :g:`BC'A' << B C' A' >>`, :g:`CA'B' << C A' B' >>`. (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 
@@ -93,7 +89,7 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the midheight triangle. Let A\ :sub:`B`, A\ :sub:`C` be the orthogonal projections of A' on CA, AB, resp. Define B\ :sub:`C`, B\ :sub:`A`, C\ :sub:`A`, C\ :sub:`B` cyclically. Let A″ = C\ :sub:`A`\ A\ :sub:`C`\ ∩A\ :sub:`B`\ B\ :sub:`A`, and define B″ and C″ cyclically. Triangle A″B″C″ is homothetic to ABC at :ref:`X(6) <X(6)>`. The lines A'A″, B'B″, C'C″ concur in :ref:`X(389) <X(389)>`, which is also :ref:`X(3) <X(3)>`-of-A″B″C″. (Randy Hutson, March 29, 2020)
+   Let :g:`A'B'C' << A' B' C' >>` be the midheight triangle. Let :g:`A_{B} <A_B>`, :g:`A_{C} <A_C>` be the orthogonal projections of :g:`A' <A'>` on :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, resp. Define :g:`B_{C} <B_C>`, :g:`B_{A} <B_A>`, :g:`C_{A} <C_A>`, :g:`C_{B} <C_B>` cyclically. Let :g:`A″ <A″>` = :g:`C_{A}A_{C} <[ C_A A_C ]>`\ ∩\ :g:`A_{B}B_{A} <[ A_B B_A ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to :g:`ABC << A B C >>` at :ref:`X(6) <X(6)>`. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(389) <X(389)>`, which is also :ref:`X(3) <X(3)>`-of-:g:`A″B″C″ << A″ B″ C″ >>`. (Randy Hutson, March 29, 2020)
 
 .. toctree::
    :hidden:

@@ -16,13 +16,13 @@ X(590) = ISOGONAL CONJUGATE OF X(588)
    :alt: X(590) = ISOGONAL CONJUGATE OF X(588)
    :align: center
 
-   **X(590) = ISOGONAL CONJUGATE OF X(588)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(590) = ISOGONAL CONJUGATE OF X(588)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(a^{2} + 4*area(ABC))/a : :`
-   | **Barycentrics:** a\ :sup:`2` + 2S : : :ref:`X(590) <X(590)>` lies on these lines: 1,3302 2,6 3,485 4,1151 5,371 11,2066 12,2067 17,3389 32,640 39,642 53,1585 140,372 157,3155 393,3535 397,2045 398,2046 486,1656 493,2165 498,1335 499,1124 588,2963 605,748 606,750 631,1152 639,1504 1131,3522 1327,3534 1578,3546 1579,3547 1583,1609 1588,3090 1834,2047 3085,3298 3086,3297 3087,3536 3092,3542 3093,3541 3312,3526 3525,3594
-   | **Search Value (6, 9, 13):** :math:`1.579629854522`
+   | **Trilinears:** :math:`(a^{2} + 4 \operatorname{area}(ABC))/a : :`
+   | **Barycentrics:** :math:`a^{2}` + 2S : : :ref:`X(590) <X(590)>` lies on these lines: 1,3302 2,6 3,485 4,1151 5,371 11,2066 12,2067 17,3389 32,640 39,642 53,1585 140,372 157,3155 393,3535 397,2045 398,2046 486,1656 493,2165 498,1335 499,1124 588,2963 605,748 606,750 631,1152 639,1504 1131,3522 1327,3534 1578,3546 1579,3547 1583,1609 1588,3090 1834,2047 3085,3298 3086,3297 3087,3536 3092,3542 3093,3541 3312,3526 3525,3594
+   | **Search Value (6, 9, 13):** :math:`0.992908495066`
 
 .. collapse:: Alternate Coordinates
    :badge: 2 forms

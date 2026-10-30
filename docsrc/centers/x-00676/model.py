@@ -14,6 +14,7 @@ from geometor.etc.ops import (
     eval_barycentric_point,
     eval_trilinear_point,
     feuerbach_point_of,
+    intersect_lines,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -23,13 +24,13 @@ def construct_x_00676(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(676) = CROSSDIFFERENCE OF X(3) AND X(101) on reference triangle ABC."""
-    X_676 = eval_trilinear_point(model, A, B, C, 'b*c*(b - c)*(b**(3)+ c**(3)- 2*a**(3)+ (b + c)*(a**(2)- b*c))', ID="X(676)", classes=["selected", "target"])
-    X_11 = feuerbach_point_of(model, A, B, C, ID="X(11)", classes=["center", "incident"])
-    X_244 = eval_trilinear_point(model, A, B, C, '(b - c)**(2)', ID="X(244)", classes=["center", "incident"])
-    central_line(model, X_11, X_244, 11, 244, incident=True)
-    X_230 = eval_trilinear_point(model, A, B, C, 'b*c*(a**(2)*(2*a**(2) - b**(2) - c**(2)) + (b**(2) - c**(2))**(2))', ID="X(230)", classes=["center", "incident"])
-    X_231 = eval_barycentric_point(model, A, B, C, '2*a**(8) - 4*a**(6)*b**(2) + 3*a**(4)*b**(4) - 2*a**(2)*b**(6) + b**(8) - 4*a**(6)*c**(2) + 2*a**(2)*b**(4)*c**(2) - 4*b**(6)*c**(2) + 3*a**(4)*c**(4) + 2*a**(2)*b**(2)*c**(4) + 6*b**(4)*c**(4) - 2*a**(2)*c**(6) - 4*b**(2)*c**(6) + c**(8)', ID="X(231)", classes=["center", "incident"])
-    central_line(model, X_230, X_231, 230, 231, incident=True)
+    X_11 = feuerbach_point_of(model, A, B, C, ID="X(11)", classes=["center"])
+    X_244 = eval_trilinear_point(model, A, B, C, '(b - c)**(2)', ID="X(244)", classes=["center"])
+    X_230 = eval_trilinear_point(model, A, B, C, 'b*c*(a**(2)*(2*a**(2) - b**(2) - c**(2)) + (b**(2) - c**(2))**(2))', ID="X(230)", classes=["center"])
+    X_231 = eval_barycentric_point(model, A, B, C, '2*a**(8) - 4*a**(6)*b**(2) + 3*a**(4)*b**(4) - 2*a**(2)*b**(6) + b**(8) - 4*a**(6)*c**(2) + 2*a**(2)*b**(4)*c**(2) - 4*b**(6)*c**(2) + 3*a**(4)*c**(4) + 2*a**(2)*b**(2)*c**(4) + 6*b**(4)*c**(4) - 2*a**(2)*c**(6) - 4*b**(2)*c**(6) + c**(8)', ID="X(231)", classes=["center"])
+    central_line(model, X_11, X_244, 11, 244)
+    central_line(model, X_230, X_231, 230, 231)
+    X_676 = intersect_lines(model, X_11, X_244, X_230, X_231, ID="X(676)", classes=["selected", "target"])
     X_105 = eval_trilinear_point(model, A, B, C, '1/(b**(2) + c**(2) - a*(b + c))', ID="X(105)", classes=["center", "incident"])
     X_659 = eval_trilinear_point(model, A, B, C, '(a**(2) - b*c)*(b - c)', ID="X(659)", classes=["center", "incident"])
     central_line(model, X_105, X_659, 105, 659, incident=True)

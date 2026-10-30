@@ -16,17 +16,13 @@ X(911) = POINT ADHARA
    :alt: X(911) = POINT ADHARA
    :align: center
 
-   **X(911) = POINT ADHARA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(911) = POINT ADHARA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`a/[wb^{2} + vc^{2} - a(wb + vc)] : :`, where u : v : w = :ref:`X(3) <X(3)>`
-   | **Barycentrics:** :math:`a^3 / (2 a^3 - a^2 (b + c) - (b - c)^2 (b + c)) : :`
+   | **Trilinears:** :math:`a/[wb^{2} + vc^{2} - a(wb + vc)] : :`, where :math:`u : v : w` = :ref:`X(3) <X(3)>`
+   | **Barycentrics:** :math:`a^{3} / (2 a^{3} - a^{2} (b + c) - (b - c)^{2} (b + c)) : :`
    | **Search Value (6, 9, 13):** :math:`-9.547816221640`
-
-.. container:: note-item
-
-   :ref:`X(911) <X(911)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines

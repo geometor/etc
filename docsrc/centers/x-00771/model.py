@@ -8,6 +8,9 @@ import sympy.geometry as spg
 from geometor.model import Model
 
 from geometor.etc.ops import (
+    central_line,
+    centroid_of,
+    circumcenter_of,
     construct_baseline_triangle,
     create_model,
     isogonal_conjugate,
@@ -21,8 +24,11 @@ def construct_x_00771(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(771) = ISOGONAL CONJUGATE OF X(770) on reference triangle ABC."""
-    X_770 = point_from_barycentrics(model, A, B, C, 14.48, -40.752, 27.272, ID="X(770)", classes=["center"])
+    X_770 = point_from_barycentrics(model, A, B, C, -2.8386427, 0.81274255, 3.0259002, ID="X(770)", classes=["center"])
     X_771 = isogonal_conjugate(model, A, B, C, X_770, ID="X(771)", classes=["selected", "target"])
+    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
+    central_line(model, X_2, X_3, 2, 3)
     return promote_point_to_top(model, X_771)
 
 

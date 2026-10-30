@@ -12,6 +12,7 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    intersect_lines,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -21,13 +22,13 @@ def construct_x_00746(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(746) = EVEN (- 1, 4) INFINITY POINT on reference triangle ABC."""
-    X_746 = eval_trilinear_point(model, A, B, C, 'a**(-2)*(b**(4)+ c**(4)) - a**(3)*(b**(-1)+ c**(-1))', ID="X(746)", classes=["selected", "target"])
-    X_32 = eval_trilinear_point(model, A, B, C, 'a**(3)', ID="X(32)", classes=["center", "incident"])
-    X_75 = eval_trilinear_point(model, A, B, C, '1/a**(2)', ID="X(75)", classes=["center", "incident"])
-    central_line(model, X_32, X_75, 32, 75, incident=True)
-    X_192 = eval_trilinear_point(model, A, B, C, 'b*c*(c*a + a*b - b*c)', ID="X(192)", classes=["center", "incident"])
-    X_315 = eval_trilinear_point(model, A, B, C, 'b*c*(b**(4) + c**(4) - a**(4))', ID="X(315)", classes=["center", "incident"])
-    central_line(model, X_192, X_315, 192, 315, incident=True)
+    X_32 = eval_trilinear_point(model, A, B, C, 'a**(3)', ID="X(32)", classes=["center"])
+    X_75 = eval_trilinear_point(model, A, B, C, '1/a**(2)', ID="X(75)", classes=["center"])
+    X_192 = eval_trilinear_point(model, A, B, C, 'b*c*(c*a + a*b - b*c)', ID="X(192)", classes=["center"])
+    X_315 = eval_trilinear_point(model, A, B, C, 'b*c*(b**(4) + c**(4) - a**(4))', ID="X(315)", classes=["center"])
+    central_line(model, X_32, X_75, 32, 75)
+    central_line(model, X_192, X_315, 192, 315)
+    X_746 = intersect_lines(model, X_32, X_75, X_192, X_315, ID="X(746)", classes=["selected", "target"])
     X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X(30)", classes=["center", "incident"])
     X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X(511)", classes=["center", "incident"])
     central_line(model, X_30, X_511, 30, 511, incident=True)

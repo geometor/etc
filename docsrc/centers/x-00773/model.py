@@ -8,10 +8,13 @@ import sympy.geometry as spg
 from geometor.model import Model
 
 from geometor.etc.ops import (
+    central_line,
+    centroid_of,
+    circumcenter_of,
     construct_baseline_triangle,
     create_model,
-    eval_trilinear_point,
     isogonal_conjugate,
+    point_from_barycentrics,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -21,8 +24,11 @@ def construct_x_00773(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(773) = o-(- 4, - 1) CIRCUMCIRCLE POINT on reference triangle ABC."""
-    X_772 = eval_trilinear_point(model, A, B, C, 'a**(-5)*(b**(-1)- c**(-1)) + a**(-2)*(b**(-4)- c**(-4))', ID="X(772)", classes=["center"])
+    X_772 = point_from_barycentrics(model, A, B, C, 0.54558558, 0.25327972, -0.7988653, ID="X(772)", classes=["center"])
     X_773 = isogonal_conjugate(model, A, B, C, X_772, ID="X(773)", classes=["selected", "target"])
+    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
+    central_line(model, X_2, X_3, 2, 3)
     return promote_point_to_top(model, X_773)
 
 

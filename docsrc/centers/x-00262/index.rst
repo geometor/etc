@@ -10,13 +10,13 @@ X(262) = ISOGONAL CONJUGATE OF X(182)
 
 .. enunciation::
 
-   Let A'B'C' be the :term:`orthic triangle <orthic-triangle>`. :ref:`X(262) <X(262)>` is the radical center of the Brocard circles of AB'C', BC'A', CA'B'. (:person:`Randy Hutson <randy-hutson>`, February 10, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`orthic triangle <orthic-triangle>`. :ref:`X(262) <X(262)>` is the radical center of the Brocard circles of :g:`AB'C' << A B' C' >>`, :g:`BC'A' << B C' A' >>`, :g:`CA'B' << C A' B' >>`. (:person:`Randy Hutson <randy-hutson>`, February 10, 2016)
 
 .. figure:: x-00262.svg
    :alt: X(262) = ISOGONAL CONJUGATE OF X(182)
    :align: center
 
-   **X(262) = ISOGONAL CONJUGATE OF X(182)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(262) = ISOGONAL CONJUGATE OF X(182)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,13 +27,13 @@ X(262) = ISOGONAL CONJUGATE OF X(182)
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
-   * **Barycentrics:** :math:`1/(a^4 - a^2b^2 - a^2c^2 - 2b^2c^2) : :`
-   * **Barycentrics:** :math:`(a^2*b^2 - b^4 + 2*a^2*c^2 + b^2*c^2)*(2*a^2*b^2 + a^2*c^2 + b^2*c^2 - c^4)`
+   * **Barycentrics:** :math:`1/(a^{4} - a^{2}b^{2} - a^{2}c^{2} - 2b^{2}c^{2}) : :`
+   * **Barycentrics:** :math:`(a^{2} b^{2} - b^{4} + 2 a^{2} c^{2} + b^{2} c^{2}) \cdot (2 a^{2} b^{2} + a^{2} c^{2} + b^{2} c^{2} - c^{4})`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(262) <X(262)>` = 4 :ref:`X(2) <X(2)>` - X(33706), 2 :ref:`X(3) <X(3)>` - 5 X(7786), :ref:`X(3) <X(3)>` - 4 X(11272), :ref:`X(3) <X(3)>` + 2 X(14881), :ref:`X(4) <X(4)>` + 2 :ref:`X(39) <X(39)>`, 2 :ref:`X(4) <X(4)>` + X(11257), 4 :ref:`X(5) <X(5)>` - :ref:`X(76) <X(76)>`, 2 :ref:`X(5) <X(5)>` + X(3095), :ref:`X(20) <X(20)>` - 4 X(13334), 4 :ref:`X(39) <X(39)>` - X(11257), :ref:`X(76) <X(76)>` + 2 X(3095), :ref:`X(98) <X(98)>` - 4 X(2023), 2 :ref:`X(114) <X(114)>` + X(1916), 2 :ref:`X(119) <X(119)>` + X(32454), 4 :ref:`X(140) <X(140)>` - X(9821), :ref:`X(194) <X(194)>` + 5 X(3091), :ref:`X(194) <X(194)>` + 2 X(6248), 2 :ref:`X(355) <X(355)>` + X(7976), 2 :ref:`X(381) <X(381)>` + X(7757), 3 :ref:`X(381) <X(381)>` - 2 X(22681), 3 :ref:`X(381) <X(381)>` + X(32519), 2 :ref:`X(546) <X(546)>` + X(32448), 5 :ref:`X(631) <X(631)>` - 2 X(5188), 5 :ref:`X(631) <X(631)>` - 8 X(6683), 2 :ref:`X(946) <X(946)>` + X(12782), X(1350) - 4 X(10007), 2 X(1352) + X(32451), 7 X(3090) - 4 X(3934), 7 X(3090) - X(12251), 5 X(3091) - 2 X(6248), X(3094) + 2 X(5480), X(3146) + 5 X(32522), 5 X(3618) - 2 X(13354), X(3627) + 2 X(32516), 4 X(3628) - X(32521), 7 X(3851) - X(13108), 11 X(3855) + 4 X(32450), 4 X(3934) - X(12251), 11 X(5056) - 5 X(31276), 8 X(5066) + X(11055), 13 X(5067) - 10 X(31239), 13 X(5068) - X(20081), 5 X(5071) - 2 X(9466), 11 X(5072) + X(32520), X(5188) - 4 X(6683), 4 X(5476) - X(22486), 2 X(6194) - 3 X(22712), 4 X(6194) - 3 X(33706), 2 X(6249) + X(32476), X(6309) - 4 X(7764), X(7709) + 2 X(22682), 3 X(7757) + 4 X(22681), 3 X(7757) - 2 X(32519), X(7759) + 2 X(32189), 2 X(7775) + X(13085), 5 X(7786) - 8 X(11272), 5 X(7786) + 4 X(14881), 5 X(7786) - X(22676), 5 X(7786) + 2 X(22728), X(7823) + 2 X(32152), 5 X(7921) + X(9863), 7 X(7989) - X(9902), 5 X(8227) - 2 X(12263), 2 X(8356) + X(34733), 8 X(9300) + X(14458), 7 X(9781) - 4 X(27375), 2 X(9880) + X(11152), X(11257) + 4 X(22682), 2 X(11272) + X(14881), 8 X(11272) - X(22676), 4 X(11272) + X(22728), 4 X(12102) + 5 X(32523), X(13325) - 4 X(14633), X(13326) - 4 X(14632), 2 X(14251) + X(14265), 3 X(14561) - X(31958), 3 X(14639) + X(32469), 4 X(14881) + X(22676), 4 X(15819) - 3 X(22712), 8 X(15819) - 3 X(33706), 2 X(22475) + X(22650), 4 X(22475) - X(22713), 2 X(22650) + X(22713), X(22676) + 2 X(22728), 2 X(22681) + 3 X(32447), 2 X(22681) + X(32519), 3 X(32447) - X(32519)
+   * :ref:`X(262) <X(262)>` = :math:`4` :ref:`X(2) <X(2)>` - X(33706), :math:`2` :ref:`X(3) <X(3)>` - :math:`5` X(7786), :ref:`X(3) <X(3)>` - :math:`4` X(11272), :ref:`X(3) <X(3)>` + :math:`2` X(14881), :ref:`X(4) <X(4)>` + :math:`2` :ref:`X(39) <X(39)>`, :math:`2` :ref:`X(4) <X(4)>` + X(11257), :math:`4` :ref:`X(5) <X(5)>` - :ref:`X(76) <X(76)>`, :math:`2` :ref:`X(5) <X(5)>` + X(3095), :ref:`X(20) <X(20)>` - :math:`4` X(13334), :math:`4` :ref:`X(39) <X(39)>` - X(11257), :ref:`X(76) <X(76)>` + :math:`2` X(3095), :ref:`X(98) <X(98)>` - :math:`4` X(2023), :math:`2` :ref:`X(114) <X(114)>` + X(1916), :math:`2` :ref:`X(119) <X(119)>` + X(32454), :math:`4` :ref:`X(140) <X(140)>` - X(9821), :ref:`X(194) <X(194)>` + :math:`5` X(3091), :ref:`X(194) <X(194)>` + :math:`2` X(6248), :math:`2` :ref:`X(355) <X(355)>` + X(7976), :math:`2` :ref:`X(381) <X(381)>` + X(7757), :math:`3` :ref:`X(381) <X(381)>` - :math:`2` X(22681), :math:`3` :ref:`X(381) <X(381)>` + X(32519), :math:`2` :ref:`X(546) <X(546)>` + X(32448), :math:`5` :ref:`X(631) <X(631)>` - :math:`2` X(5188), :math:`5` :ref:`X(631) <X(631)>` - :math:`8` X(6683), :math:`2` :ref:`X(946) <X(946)>` + X(12782), X(1350) - :math:`4` X(10007), :math:`2` X(1352) + X(32451), :math:`7` X(3090) - :math:`4` X(3934), :math:`7` X(3090) - X(12251), :math:`5` X(3091) - :math:`2` X(6248), X(3094) + :math:`2` X(5480), X(3146) + :math:`5` X(32522), :math:`5` X(3618) - :math:`2` X(13354), X(3627) + :math:`2` X(32516), :math:`4` X(3628) - X(32521), :math:`7` X(3851) - X(13108), :math:`11` X(3855) + :math:`4` X(32450), :math:`4` X(3934) - X(12251), :math:`11` X(5056) - :math:`5` X(31276), :math:`8` X(5066) + X(11055), :math:`13` X(5067) - :math:`10` X(31239), :math:`13` X(5068) - X(20081), :math:`5` X(5071) - :math:`2` X(9466), :math:`11` X(5072) + X(32520), X(5188) - :math:`4` X(6683), :math:`4` X(5476) - X(22486), :math:`2` X(6194) - :math:`3` X(22712), :math:`4` X(6194) - :math:`3` X(33706), :math:`2` X(6249) + X(32476), X(6309) - :math:`4` X(7764), X(7709) + :math:`2` X(22682), :math:`3` X(7757) + :math:`4` X(22681), :math:`3` X(7757) - :math:`2` X(32519), X(7759) + :math:`2` X(32189), :math:`2` X(7775) + X(13085), :math:`5` X(7786) - :math:`8` X(11272), :math:`5` X(7786) + :math:`4` X(14881), :math:`5` X(7786) - X(22676), :math:`5` X(7786) + :math:`2` X(22728), X(7823) + :math:`2` X(32152), :math:`5` X(7921) + X(9863), :math:`7` X(7989) - X(9902), :math:`5` X(8227) - :math:`2` X(12263), :math:`2` X(8356) + X(34733), :math:`8` X(9300) + X(14458), :math:`7` X(9781) - :math:`4` X(27375), :math:`2` X(9880) + X(11152), X(11257) + :math:`4` X(22682), :math:`2` X(11272) + X(14881), :math:`8` X(11272) - X(22676), :math:`4` X(11272) + X(22728), :math:`4` X(12102) + :math:`5` X(32523), X(13325) - :math:`4` X(14633), X(13326) - :math:`4` X(14632), :math:`2` X(14251) + X(14265), :math:`3` X(14561) - X(31958), :math:`3` X(14639) + X(32469), :math:`4` X(14881) + X(22676), :math:`4` X(15819) - :math:`3` X(22712), :math:`8` X(15819) - :math:`3` X(33706), :math:`2` X(22475) + X(22650), :math:`4` X(22475) - X(22713), :math:`2` X(22650) + X(22713), X(22676) + :math:`2` X(22728), :math:`2` X(22681) + :math:`3` X(32447), :math:`2` X(22681) + X(32519), :math:`3` X(32447) - X(32519)
 
 .. container:: note-item
 
@@ -63,18 +63,18 @@ X(262) = ISOGONAL CONJUGATE OF X(182)
    * :ref:`X(262) <X(262)>` = polar conjugate of :ref:`X(458) <X(458)>`
    * :ref:`X(262) <X(262)>` = psi-transform of X(22735)
    * :ref:`X(262) <X(262)>` = antigonal conjugate of isotomic conjugate of X(39099)
-   * :ref:`X(262) <X(262)>` = perspector of ABC and Artzt triangle
+   * :ref:`X(262) <X(262)>` = perspector of :g:`ABC << A B C >>` and Artzt triangle
    * :ref:`X(262) <X(262)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): {1513, :ref:`98 <X(98)>`}, {3094, :ref:`76 <X(76)>`}, {3815, :ref:`2 <X(2)>`}, {5480, :ref:`4 <X(4)>`}, {9993, 14458}
    * :ref:`X(262) <X(262)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these (i,j): {:ref:`1 <X(1)>`, :ref:`182 <X(182)>`}, {:ref:`31 <X(31)>`, :ref:`183 <X(183)>`}, {:ref:`32 <X(32)>`, 3403}, {:ref:`48 <X(48)>`, :ref:`458 <X(458)>`}, {:ref:`63 <X(63)>`, 10311}, {:ref:`75 <X(75)>`, 34396}, {:ref:`82 <X(82)>`, 14096}, {:ref:`163 <X(163)>`, 23878}, {:ref:`255 <X(255)>`, 33971}, {:ref:`560 <X(560)>`, 20023}, {:ref:`662 <X(662)>`, 3288}, {1933, 8842}, {6784, 24041}
    * :ref:`X(262) <X(262)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these (i,j): {:ref:`2 <X(2)>`, 7774}, {:ref:`3 <X(3)>`, 19139}, {:ref:`6 <X(6)>`, 3148}, {:ref:`11 <X(11)>`, 1491}, {1689, 1690}, {2525, 12037}, {3124, 17415}
    * :ref:`X(262) <X(262)>` = :term:`crosssum <crosssum>` of X(3288) and X(6784)
-   * :ref:`X(262) <X(262)>` = radical center of (Brocard circle reflected in BC, CA, and AB)
+   * :ref:`X(262) <X(262)>` = radical center of (Brocard circle reflected in :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, and :g:`AB <[ A B ]>`)
    * :ref:`X(262) <X(262)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(458) <X(458)>`
    * :ref:`X(262) <X(262)>` = :ref:`X(48) <X(48)>`-isoconjugate (polar conjugate) of :ref:`X(458) <X(458)>`
    * :ref:`X(262) <X(262)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(523) <X(523)>`\ X(3569)
    * :ref:`X(262) <X(262)>` = pole of Lemoine axis wrt orthoptic circle of the Steiner inellipse (a.k.a. {circumcircle, nine-point circle}-inverter)
    * :ref:`X(262) <X(262)>` = perspector of orthoptic circle of the Steiner inellipse (a.k.a. {circumcircle, nine-point circle}-inverter)
-   * :ref:`X(262) <X(262)>` = perspector of ABC and 2nd Neuberg triangle
+   * :ref:`X(262) <X(262)>` = perspector of :g:`ABC << A B C >>` and 2nd Neuberg triangle
    * :ref:`X(262) <X(262)>` = trilinear product of vertices of 2nd Neuberg triangle
    * :ref:`X(262) <X(262)>` = centroid of :ref:`X(4) <X(4)>`\ PU(1)
    * :ref:`X(262) <X(262)>` = Cundy-Parry Phi transform of :ref:`X(83) <X(83)>`
@@ -88,15 +88,15 @@ Notes
 
 .. container:: note-item
 
-   Let Pa be the parabola with focus A and directrix BC. Let La be the polar of :ref:`X(3) <X(3)>` wrt Pa and define Lb and Lc cyclically. Let A' = Lb∩Lc, B' = Lc∩La, C' = La∩Lb. The lines AA', BB', CC' concur in :ref:`X(262) <X(262)>`. Also, :ref:`X(262) <X(262)>` is also the isotomic conjugate, wrt A'B'C', of :ref:`X(3) <X(3)>`.
+   Let :g:`P_{a} <P_a>` be the parabola with focus A and directrix :g:`BC <[ B C ]>`. Let :g:`L_{a} <L_a>` be the polar of :ref:`X(3) <X(3)>` wrt :g:`P_{a} <P_a>` and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, :g:`B' <B'>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C' <C'>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(262) <X(262)>`. Also, :ref:`X(262) <X(262)>` is also the isotomic conjugate, wrt :g:`A'B'C' << A' B' C' >>`, of :ref:`X(3) <X(3)>`.
 
 .. container:: note-item
 
-   Let A' be the apex of the isosceles triangle BA'C constructed outward on BC such that ∠A'BC = ∠A'CB = ω. Define B', C' cyclically. Let Ha be the orthocenter of BA'C, and define Hb, Hc cyclically. The lines AHa, BHb, CHc concur in :ref:`X(262) <X(262)>`. (Randy Hutson, July 20, 2016)
+   Let :g:`A' <A'>` be the apex of the isosceles triangle :g:`BA'C << B A' C >>` constructed outward on :g:`BC <[ B C ]>` such that ∠\ :g:`A'BC << A' B C >>` = ∠\ :g:`A'CB << A' C B >>` = ω. Define :g:`B' <B'>`, :g:`C' <C'>` cyclically. Let :g:`H_{a} <H_a>` be the orthocenter of :g:`BA'C << B A' C >>`, and define :g:`H_{b} <H_b>`, :g:`H_{c} <H_c>` cyclically. The lines :g:`AH_{a} <[ A H_a ]>`, :g:`BH_{b} <[ B H_b ]>`, :g:`CH_{c} <[ C H_c ]>` concur in :ref:`X(262) <X(262)>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
-   Let A' be the apex of the isosceles triangle BA'C constructed intward on BC such that ∠A'BC = ∠A'CB = ω/2. Define B', C' cyclically. Let Oa be the circumcenter of BA'C, and define Ob, Oc cyclically. The lines AOa, BOb, COc concur in :ref:`X(262) <X(262)>`. (Randy Hutson, July 20, 2016)
+   Let :g:`A' <A'>` be the apex of the isosceles triangle :g:`BA'C << B A' C >>` constructed intward on :g:`BC <[ B C ]>` such that ∠\ :g:`A'BC << A' B C >>` = ∠\ :g:`A'CB << A' C B >>` = ω/2. Define :g:`B' <B'>`, :g:`C' <C'>` cyclically. Let :g:`O_{a} <O_a>` be the circumcenter of :g:`BA'C << B A' C >>`, and define :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>` cyclically. The lines :g:`AO_{a} <[ A O_a ]>`, :g:`BO_{b} <[ B O_b ]>`, :g:`CO_{c} <[ C O_c ]>` concur in :ref:`X(262) <X(262)>`. (Randy Hutson, July 20, 2016)
 
 .. toctree::
    :hidden:

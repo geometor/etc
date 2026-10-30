@@ -12,6 +12,7 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    point_from_barycentrics,
     promote_point_to_top,
     reflection_in_point,
 )
@@ -22,7 +23,7 @@ def construct_x_00843(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(843) = ISOGONAL CONJUGATE OF X(543) on reference triangle ABC."""
-    X_352 = eval_trilinear_point(model, A, B, C, 'a*(-a**(4)- b**(4)- c**(4)- 5*b**(2)*c**(2)+ 4*a**(2)*b**(2)+ 4*a**(2)*c**(2))', ID="X(352)", classes=["center"])
+    X_352 = point_from_barycentrics(model, A, B, C, -2.5765986, 0.16705151, 3.4095471, ID="X(352)", classes=["center"])
     X_187 = eval_trilinear_point(model, A, B, C, 'a*(2*a**(2) - b**(2) - c**(2))', ID="X(187)", classes=["center"])
     X_843 = reflection_in_point(model, X_352, X_187, ID="X(843)", classes=["selected", "target"], guide=False)
     X_110 = eval_trilinear_point(model, A, B, C, 'csc(B - C)', ID="X(110)", classes=["center", "incident"])

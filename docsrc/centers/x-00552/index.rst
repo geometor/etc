@@ -16,7 +16,7 @@ X(552) = POINT MAIA I
    :alt: X(552) = POINT MAIA I
    :align: center
 
-   **X(552) = POINT MAIA I** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(552) = POINT MAIA I** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,7 +27,7 @@ X(552) = POINT MAIA I
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`(a + b)^2*(a + b - c)*(a + c)^2*(a - b + c) : :`
+   * **Barycentrics:** :math:`(a + b)^{2} (a + b - c) \cdot (a + c)^{2} (a - b + c) : :`
 
 .. container:: note-item
 

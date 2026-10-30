@@ -16,6 +16,7 @@ from geometor.etc.ops import (
     gergonne_point_of,
     incenter_of,
     nagel_point_of,
+    point_from_barycentrics,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -31,7 +32,7 @@ def construct_x_00176(
     X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
     X_7 = gergonne_point_of(model, A, B, C, ID="X(7)", classes=["center", "incident"])
     central_line(model, X_1, X_7, 1, 7, incident=True)
-    X_489 = eval_trilinear_point(model, A, B, C, '(cos(A))*(1 - csc(A)*sin(B)*sin(C)) - cos(B)*cos(C)', ID="X(489)", classes=["center", "incident"])
+    X_489 = point_from_barycentrics(model, A, B, C, 0.32659535, 0.072387835, 0.60101682, ID="X(489)", classes=["center", "incident"])
     X_664 = eval_trilinear_point(model, A, B, C, '1/(a*(b - c)*(b + c - a))', ID="X(664)", classes=["center", "incident"])
     central_line(model, X_489, X_664, 489, 664, incident=True)
     return promote_point_to_top(model, X_176)

@@ -10,17 +10,25 @@ X(114) = KIEPERT ANTIPODE
 
 .. enunciation::
 
-   Let A'B'C' be the :term:`orthic triangle <orthic-triangle>`. Let La be the Lemoine axis of triangle AB'C', and define Lb and Lc cyclically. Let A″ = Lb∩Lc, and define B″ and C″ cyclically. Triangle A″B″C″ is inversely similar to ABC, with similicenter :ref:`X(2) <X(2)>`. The lines A'A″, B'B″, C'C″ concur in :ref:`X(114) <X(114)>`, which is :ref:`X(3) <X(3)>`-of-A″B″C″.
+   :ref:`X(114) <X(114)>` is the :g:`QA <[ Q A ]>`-P30 center (Reflection of :g:`QA <[ Q A ]>`-:g:`P_{2} <P_2>` in :g:`QA <[ Q A ]>`-P11) of quadrangle :g:`ABC << A B C >>`\ :ref:`X(2) <X(2)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/58-qa-p30.html)
 
 .. figure:: x-00114.svg
    :alt: X(114) = KIEPERT ANTIPODE
    :align: center
 
-   **X(114) = KIEPERT ANTIPODE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(114) = KIEPERT ANTIPODE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
+   | **Trilinears:** :math:`bc[b \sec(B + \omega ) + c \sec(C + \omega )] : :`
+   | **Barycentrics:** :math:`b \sec(B + \omega ) + c \sec(C + \omega ) : :`
    | **Search Value (6, 9, 13):** :math:`-1.118944978639`
+
+.. collapse:: Alternate Coordinates
+   :badge: 2 forms
+
+   * **Trilinears:** :math:`\cos(B - C) \cos 2\omega - \sin \omega \sin(A + \omega )` (Peter J. C. Moses, 9/12/03)
+   * **Barycentrics:** :math:`(b^{4} + c^{4} - a^{2}b^{2} - a^{2}c^{2})(2a^{4} + b^{4} + c^{4} - a^{2}b^{2} - a^{2}c^{2} - 2b^{2}c^{2}) : :`
 
 .. container:: note-item
 
@@ -46,7 +54,7 @@ X(114) = KIEPERT ANTIPODE
    * :ref:`X(114) <X(114)>` = Moses-radical-circle-inverse of X(38975)
    * :ref:`X(114) <X(114)>` = nine-point-circle-antipode of :ref:`X(115) <X(115)>`
    * :ref:`X(114) <X(114)>` = :ref:`X(98) <X(98)>`-of-:term:`medial triangle <medial-triangle>`
-   * :ref:`X(114) <X(114)>` = :ref:`X(103) <X(103)>`-of-orthic triangle if ABC is acute
+   * :ref:`X(114) <X(114)>` = :ref:`X(103) <X(103)>`-of-:term:`orthic triangle <orthic-triangle>` if :g:`ABC << A B C >>` is acute
    * :ref:`X(114) <X(114)>` = perspector of circumconic centered at :ref:`X(230) <X(230)>`
    * :ref:`X(114) <X(114)>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X(230) <X(230)>`
    * :ref:`X(114) <X(114)>` = center of rectangular hyperbola {:ref:`X(4) <X(4)>`,\ :ref:`X(76) <X(76)>`,\ :ref:`X(99) <X(99)>`,\ :ref:`X(376) <X(376)>`,\ :ref:`X(487) <X(487)>`,\ :ref:`X(488) <X(488)>`}}
@@ -55,7 +63,7 @@ X(114) = KIEPERT ANTIPODE
    * :ref:`X(114) <X(114)>` = inverse-in-{circumcircle, nine-point circle}-inverter of :ref:`X(110) <X(110)>`
    * :ref:`X(114) <X(114)>` = center of inverse-in-{circumcircle, nine-point circle}-inverter of Brocard circle
    * :ref:`X(114) <X(114)>` = :ref:`X(5) <X(5)>`-of-1st-anti-Brocard-triangle
-   * :ref:`X(114) <X(114)>` = anticenter of cyclic quadrilateral ABC\ :ref:`X(99) <X(99)>`
+   * :ref:`X(114) <X(114)>` = anticenter of cyclic quadrilateral :g:`ABC << A B C >>`\ :ref:`X(99) <X(99)>`
    * :ref:`X(114) <X(114)>` = Λ(:ref:`X(3) <X(3)>`, :ref:`X(6) <X(6)>`), wrt orthic triangle
    * :ref:`X(114) <X(114)>` = orthocenter of :ref:`X(98) <X(98)>`\ \ :ref:`X(115) <X(115)>`\ X(31953)
    * :ref:`X(114) <X(114)>` = centroid of mid-triangle of :ref:`X(15) <X(15)>`- and :ref:`X(16) <X(16)>`-Fuhrmann triangles
@@ -65,17 +73,11 @@ Notes
 
 .. container:: note-item
 
-   Trilinears bc[b sec(B + ω) + c sec(C + ω)] : :
-
-      * Trilinears cos(B - C) cos 2ω - sin ω sin(A + ω) (Peter J. C. Moses, 9/12/03)
-      * Barycentrics b sec(B + ω) + c sec(C + ω) : :
-      * Barycentrics (b^4 + c^4 - a^2b^2 - a^2c^2)(2a^4 + b^4 + c^4 - a^2b^2 - a^2c^2 - 2b^2c^2) : :
-
-   :ref:`X(114) <X(114)>` is the QA-P30 center (Reflection of QA-P2 in QA-P11) of quadrangle ABC\ :ref:`X(2) <X(2)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/58-qa-p30.html)
+   Let :g:`A'B'C' << A' B' C' >>` be the orthic triangle. Let :g:`L_{a} <L_a>` be the Lemoine axis of triangle :g:`AB'C' << A B' C' >>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Triangle :g:`A″B″C″ << A″ B″ C″ >>` is inversely similar to :g:`ABC << A B C >>`, with similicenter :ref:`X(2) <X(2)>`. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(114) <X(114)>`, which is :ref:`X(3) <X(3)>`-of-:g:`A″B″C″ << A″ B″ C″ >>`.
 
 .. container:: note-item
 
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the obverse triangle of :ref:`X(69) <X(69)>` and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(114) <X(114)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (:person:`Randy Hutson <randy-hutson>`, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the obverse triangle of :ref:`X(69) <X(69)>` and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(114) <X(114)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (:person:`Randy Hutson <randy-hutson>`, August 30, 2020)
 
 .. toctree::
    :hidden:

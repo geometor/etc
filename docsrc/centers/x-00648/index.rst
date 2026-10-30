@@ -10,18 +10,18 @@ X(648) = TRILINEAR POLE OF EULER LINE
 
 .. enunciation::
 
-   :ref:`X(648) <X(648)>` is constructed as the pole of the Euler line L as follows: let A″, B″, C″ be the points where L meets the sidelines BC, CA, AB of ABC. Let A', B', C' be the harmonic conjugates of A″, B″, C″ with respect to {B,C}, {C,A}, {A,B}, respectively, The lines AA', BB', CC' concur in :ref:`X(648) <X(648)>`.
+   :ref:`X(648) <X(648)>` is constructed as the pole of the Euler line L as follows: let :g:`A″ <A″>`, :g:`B″ <B″>`, :g:`C″ <C″>` be the points where L meets the sidelines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>` of :g:`ABC << A B C >>`. Let :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>` be the harmonic conjugates of :g:`A″ <A″>`, :g:`B″ <B″>`, :g:`C″ <C″>` with respect to {B,C}, {C,A}, {A,B}, respectively, The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(648) <X(648)>`.
 
 .. figure:: x-00648.svg
    :alt: X(648) = TRILINEAR POLE OF EULER LINE
    :align: center
 
-   **X(648) = TRILINEAR POLE OF EULER LINE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(648) = TRILINEAR POLE OF EULER LINE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`1/[a(b^{2} - c^{2})(b^{2} + c^{2} - a^{2})]`
-   | **Barycentrics:** :math:`(a^2 - b^2)*(a^2 - c^2)*(a^2 + b^2 - c^2)*(a^2 - b^2 + c^2) : :`
+   | **Barycentrics:** :math:`(a^{2} - b^{2}) \cdot (a^{2} - c^{2}) \cdot (a^{2} + b^{2} - c^{2}) \cdot (a^{2} - b^{2} + c^{2}) : :`
    | **Search Value (6, 9, 13):** :math:`-0.963168126295`
 
 .. collapse:: Alternate Coordinates
@@ -33,7 +33,7 @@ X(648) = TRILINEAR POLE OF EULER LINE
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(648) <X(648)>` = 3 :ref:`X(2) <X(2)>` - 4 X(23583), 7 :ref:`X(2) <X(2)>` - 8 X(40477), 9 :ref:`X(2) <X(2)>` - 8 X(40484), 3 :ref:`X(250) <X(250)>` - 2 X(7473), 2 :ref:`X(297) <X(297)>` - 3 X(37765), :ref:`X(340) <X(340)>` - 4 X(1990), :ref:`X(340) <X(340)>` - 3 X(37765), X(1494) - 4 X(3163), 3 X(1494) - 4 X(15526), 3 X(1494) - 8 X(23583), 3 X(1494) - 2 X(39352), X(1494) + 2 X(39358), 7 X(1494) - 16 X(40477), 9 X(1494) - 16 X(40484), 4 X(1576) - 3 X(35278), 2 X(1632) - 3 X(35278), 4 X(1990) - 3 X(37765), 3 X(3163) - X(15526), 3 X(3163) - 2 X(23583), 6 X(3163) - X(39352), 2 X(3163) + X(39358), 7 X(3163) - 4 X(40477), 9 X(3163) - 4 X(40484), 3 X(6530) - 2 X(44228), 4 X(7473) - 3 X(30716), X(9410) - 4 X(36435), 2 X(15526) + 3 X(39358), 7 X(15526) - 12 X(40477), 3 X(15526) - 4 X(40484), X(16077) - 3 X(23582), 2 X(16077) - 3 X(39062), 4 X(23583) - X(39352), 4 X(23583) + 3 X(39358), 7 X(23583) - 6 X(40477), 3 X(23583) - 2 X(40484), X(35474) - 3 X(41204), X(39352) + 3 X(39358), 7 X(39352) - 24 X(40477), 3 X(39352) - 8 X(40484), 7 X(39358) + 8 X(40477), 9 X(39358) + 8 X(40484), 9 X(40477) - 7 X(40484), 3 X(44579) - 2 X(45312)
+   * :ref:`X(648) <X(648)>` = :math:`3` :ref:`X(2) <X(2)>` - :math:`4` X(23583), :math:`7` :ref:`X(2) <X(2)>` - :math:`8` X(40477), :math:`9` :ref:`X(2) <X(2)>` - :math:`8` X(40484), :math:`3` :ref:`X(250) <X(250)>` - :math:`2` X(7473), :math:`2` :ref:`X(297) <X(297)>` - :math:`3` X(37765), :ref:`X(340) <X(340)>` - :math:`4` X(1990), :ref:`X(340) <X(340)>` - :math:`3` X(37765), X(1494) - :math:`4` X(3163), :math:`3` X(1494) - :math:`4` X(15526), :math:`3` X(1494) - :math:`8` X(23583), :math:`3` X(1494) - :math:`2` X(39352), X(1494) + :math:`2` X(39358), :math:`7` X(1494) - :math:`16` X(40477), :math:`9` X(1494) - :math:`16` X(40484), :math:`4` X(1576) - :math:`3` X(35278), :math:`2` X(1632) - :math:`3` X(35278), :math:`4` X(1990) - :math:`3` X(37765), :math:`3` X(3163) - X(15526), :math:`3` X(3163) - :math:`2` X(23583), :math:`6` X(3163) - X(39352), :math:`2` X(3163) + X(39358), :math:`7` X(3163) - :math:`4` X(40477), :math:`9` X(3163) - :math:`4` X(40484), :math:`3` X(6530) - :math:`2` X(44228), :math:`4` X(7473) - :math:`3` X(30716), X(9410) - :math:`4` X(36435), :math:`2` X(15526) + :math:`3` X(39358), :math:`7` X(15526) - :math:`12` X(40477), :math:`3` X(15526) - :math:`4` X(40484), X(16077) - :math:`3` X(23582), :math:`2` X(16077) - :math:`3` X(39062), :math:`4` X(23583) - X(39352), :math:`4` X(23583) + :math:`3` X(39358), :math:`7` X(23583) - :math:`6` X(40477), :math:`3` X(23583) - :math:`2` X(40484), X(35474) - :math:`3` X(41204), X(39352) + :math:`3` X(39358), :math:`7` X(39352) - :math:`24` X(40477), :math:`3` X(39352) - :math:`8` X(40484), :math:`7` X(39358) + :math:`8` X(40477), :math:`9` X(39358) + :math:`8` X(40484), :math:`9` X(40477) - :math:`7` X(40484), :math:`3` X(44579) - :math:`2` X(45312)
 
 .. container:: note-item
 
@@ -72,9 +72,9 @@ X(648) = TRILINEAR POLE OF EULER LINE
    * :ref:`X(648) <X(648)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): {:ref:`3 <X(3)>`, 22143}, {3049, 39201}, {15451, 42293}
    * :ref:`X(648) <X(648)>` = trilinear pole of line {2, 3}
    * :ref:`X(648) <X(648)>` = crossdifference of every pair of points on line {3269, 9409}
-   * :ref:`X(648) <X(648)>` = Feuerbach image of :ref:`X(4) <X(4)>` if ABC is acute
+   * :ref:`X(648) <X(648)>` = Feuerbach image of :ref:`X(4) <X(4)>` if :g:`ABC << A B C >>` is acute
    * :ref:`X(648) <X(648)>` = Brianchon point (perspector) of inscribed parabola with focus :ref:`X(112) <X(112)>`
-   * :ref:`X(648) <X(648)>` = perspector of hyperbola {A,B,C,X(16077),X(18020),X(22456)}} (the circumconic through the polar conjugates of PU(40))
+   * :ref:`X(648) <X(648)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,X(16077),X(18020),X(22456)}} (the circumconic through the polar conjugates of PU(40))
    * :ref:`X(648) <X(648)>` = :ref:`X(92) <X(92)>`-:term:`isoconjugate <isoconjugate>` of X(39201)
    * :ref:`X(648) <X(648)>` = Steiner-circumellipse-:ref:`X(1) <X(1)>`-antipode of X(35145)
    * :ref:`X(648) <X(648)>` = Steiner-circumellipse-:ref:`X(4) <X(4)>`-antipode of :ref:`X(671) <X(671)>`
@@ -90,7 +90,7 @@ Notes
 
 .. container:: note-item
 
-   Let T be the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(4) <X(4)>`, and let U be the bianticevian conic of :ref:`X(1) <X(1)>` and :ref:`X(4) <X(4)>`. Let TT be the :term:`tangential triangle <tangential-triangle>` of U with respect to T. Then ABC and TT are perspective, and :ref:`X(648) <X(648)>` is their perspector. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
+   Let :g:`T <T>` be the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(4) <X(4)>`, and let :g:`U <U>` be the bianticevian conic of :ref:`X(1) <X(1)>` and :ref:`X(4) <X(4)>`. Let TT be the :term:`tangential triangle <tangential-triangle>` of :g:`U <U>` with respect to T. Then :g:`ABC << A B C >>` and TT are perspective, and :ref:`X(648) <X(648)>` is their perspector. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
 
 .. toctree::
    :hidden:

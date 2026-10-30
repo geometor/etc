@@ -16,17 +16,23 @@ X(373) = CENTROID OF THE PEDAL TRIANGLE OF THE CENTROID
    :alt: X(373) = CENTROID OF THE PEDAL TRIANGLE OF THE CENTROID
    :align: center
 
-   **X(373) = CENTROID OF THE PEDAL TRIANGLE OF THE CENTROID** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(373) = CENTROID OF THE PEDAL TRIANGLE OF THE CENTROID** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = 2bc + ac cos C + ab cos B, = g(a,b,c) : g(b,c,a) : g(c,a,b), where g(a,b,c) = a(b\ :sup:`4` + c\ :sup:`4` - a\ :sup:`2`\ b\ :sup:`2` - a\ :sup:`2`\ c\ :sup:`2` - 6b\ :sup:`2`\ c\ :sup:`2`)
-   | **Barycentrics:** :math:`h(a,b,c) : h(b,c,a) : h(c,a,b)`, where h(a,b,c) = 2abc + ca\ :sup:`2`\ cos C + ba\ :sup:`2`\ cos B, :ref:`X(373) <X(373)>` = 2\*\ :ref:`X(2) <X(2)>` + :ref:`X(51) <X(51)>`
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = 2bc + ac \cos C + ab \cos B`
+   | **Barycentrics:** :math:`h(a,b,c) : h(b,c,a) : h(c,a,b)`, where :math:`h(a,b,c) = 2abc + ca^{2}\cos C + ba^{2}\cos B`
    | **Search Value (6, 9, 13):** :math:`1.793121055895`
 
-.. container:: note-item
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-   :ref:`X(373) <X(373)>` lies.
+   * **Trilinears:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = a(b^{4} + c^{4} - a^{2}b^{2} - a^{2}c^{2} - 6b^{2}c^{2})`
+
+.. collapse:: Linear Combinations
+   :badge: 1 combination
+
+   * :ref:`X(373) <X(373)>` = :math:`2` :ref:`X(2) <X(2)>` + :ref:`X(51) <X(51)>`
 
 .. collapse:: Incident Central Lines
    :badge: 7 lines

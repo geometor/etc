@@ -10,13 +10,13 @@ X(1000) = ISOGONAL CONJUGATE OF X(999)
 
 .. enunciation::
 
-   Let A\* be the parabola with focus A and directrix BC, and let A\*\* be the polar of :ref:`X(1) <X(1)>` with respect to A\*. Define B\*\* and C\*\* cyclically, and let A' = B\*\*∩C\*\*, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(1000) <X(1000)>`; the centroid of A'B'C' is X(5657). (:person:`Randy Hutson <randy-hutson>`, July 7, 2014)
+   Let :g:`A* <A*>` be the parabola with focus A and directrix :g:`BC <[ B C ]>`, and let :g:`A* <A*>`\ \* be the polar of :ref:`X(1) <X(1)>` with respect to :g:`A* <A*>`. Define :g:`B* <B*>`\ \* and :g:`C* <C*>`\ \* cyclically, and let :g:`A' <A'>` = :g:`B* <B*>`\ \*∩\ :g:`C* <C*>`\ \*, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(1000) <X(1000)>`; the centroid of :g:`A'B'C' << A' B' C' >>` is X(5657). (:person:`Randy Hutson <randy-hutson>`, July 7, 2014)
 
 .. figure:: x-01000.svg
    :alt: X(1000) = ISOGONAL CONJUGATE OF X(999)
    :align: center
 
-   **X(1000) = ISOGONAL CONJUGATE OF X(999)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(1000) = ISOGONAL CONJUGATE OF X(999)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,10 +27,6 @@ X(1000) = ISOGONAL CONJUGATE OF X(999)
    :badge: 1 form
 
    * **Trilinears:** :math:`1/(2 - \cos A) : :`
-
-.. container:: note-item
-
-   :ref:`X(1000) <X(1000)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 11 lines
@@ -43,7 +39,7 @@ X(1000) = ISOGONAL CONJUGATE OF X(999)
 
    * :ref:`X(1000) <X(1000)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(999) <X(999)>`
    * :ref:`X(1000) <X(1000)>` = :ref:`X(45) <X(45)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(2) <X(2)>`
-   * :ref:`X(1000) <X(1000)>` = perspector of ABC and mid-triangle of excentral and :term:`extouch triangles <extouch-triangle>`
+   * :ref:`X(1000) <X(1000)>` = perspector of :g:`ABC << A B C >>` and mid-triangle of excentral and :term:`extouch triangles <extouch-triangle>`
    * :ref:`X(1000) <X(1000)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(650) <X(650)>`\ \ :ref:`X(900) <X(900)>`
 
 Notes

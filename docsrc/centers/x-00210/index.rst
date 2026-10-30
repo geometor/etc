@@ -16,7 +16,7 @@ X(210) = X(10)-CEVA CONJUGATE OF X(37)
    :alt: X(210) = X(10)-CEVA CONJUGATE OF X(37)
    :align: center
 
-   **X(210) = X(10)-CEVA CONJUGATE OF X(37)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(210) = X(10)-CEVA CONJUGATE OF X(37)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,11 +27,7 @@ X(210) = X(10)-CEVA CONJUGATE OF X(37)
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`(\cos B - \cos C)^2 + (\cos A + 1)(\cos B + \cos C - 2) : :`
-
-.. container:: note-item
-
-   :ref:`X(210) <X(210)>` lies.
+   * **Trilinears:** :math:`(\cos B - \cos C)^{2} + (\cos A + 1)(\cos B + \cos C - 2) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 25 lines
@@ -52,11 +48,11 @@ X(210) = X(10)-CEVA CONJUGATE OF X(37)
    * :ref:`X(210) <X(210)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`56 <X(56)>`, :ref:`57 <X(57)>`), (:ref:`58 <X(58)>`, 1412)
    * :ref:`X(210) <X(210)>` = :term:`crossdifference <crossdifference>` of every pair of points on line X(1019)X(1429)
    * :ref:`X(210) <X(210)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`200 <X(200)>`, :ref:`210 <X(210)>`), (:ref:`210 <X(210)>`, :ref:`42 <X(42)>`)
-   * :ref:`X(210) <X(210)>` = centroid of Bevan circle intercepts with sidelines of ABC
+   * :ref:`X(210) <X(210)>` = centroid of Bevan circle intercepts with sidelines of :g:`ABC << A B C >>`
    * :ref:`X(210) <X(210)>` = centroid of AbAcBcBaCaCb as defined at X(3588)
    * :ref:`X(210) <X(210)>` = centroid of AbAcBcBaCaCb as used in the construction of the inner-Conway triangle; see preamble before X(11677)
    * :ref:`X(210) <X(210)>` = :term:`trilinear pole <trilinear-pole>` of line X(3709)X(4041)
-   * :ref:`X(210) <X(210)>` = excentral-to-ABC :term:`barycentric image <barycentric-image>` of :ref:`X(2) <X(2)>`
+   * :ref:`X(210) <X(210)>` = excentral-to-:g:`ABC << A B C >>` :term:`barycentric image <barycentric-image>` of :ref:`X(2) <X(2)>`
    * :ref:`X(210) <X(210)>` = {:ref:`X(37) <X(37)>`,\ :ref:`X(42) <X(42)>`}-harmonic conjugate of X(37593)
 
 .. toctree::

@@ -27,7 +27,7 @@ def construct_x_00539(
     X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
     X_54 = eval_trilinear_point(model, A, B, C, 'sec(B - C)', ID="X(54)", classes=["center", "incident"])
     central_line(model, X_2, X_54, 2, 54, incident=True)
-    X_155 = eval_barycentric_point(model, A, B, C, 'a**(2)*SA*(a**(2)*(SA**(2) - SB*SC) - SA*(SB**(2) + SC**(2)))', ID="X(155)", classes=["center", "incident"])
+    X_155 = eval_barycentric_point(model, A, B, C, 'a**(2)*(a**(2) - b**(2) - c**(2))*(a**(6) - 3*a**(4)*(b**(2) + c**(2)) + a**(2)*(3*b**(4) - 2*b**(2)*c**(2) + 3*c**(4)) - (b**(2) - c**(2))**(2)*(b**(2) + c**(2)))', ID="X(155)", classes=["center", "incident"])
     X_195 = eval_trilinear_point(model, A, B, C, 'a*(a**(8) + b**(8) + c**(8) - 4*a**(6)*(b**(2) + c**(2)) + a**(4)*(6*b**(4) + 6*c**(4) + 5*b**(2)*c**(2)) - a**(2)*(4*b**(6) + 4*c**(6) - b**(4)*c**(2) - b**(2)*c**(4)) - 2*b**(2)*c**(2)*(b**(4) + c**(4) - b**(2)*c**(2)))', ID="X(195)", classes=["center", "incident"])
     central_line(model, X_155, X_195, 155, 195, incident=True)
     X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X(30)", classes=["center", "incident"])

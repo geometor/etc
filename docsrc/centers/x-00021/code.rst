@@ -12,7 +12,7 @@ X(21) = SCHIFFLER POINT — Code
    :alt: X(21) = SCHIFFLER POINT
    :align: center
 
-   **X(21) = SCHIFFLER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(21) = SCHIFFLER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

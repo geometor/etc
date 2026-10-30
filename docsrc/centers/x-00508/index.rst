@@ -16,7 +16,7 @@ X(508) = 6th ISOSCELIZER POINT
    :alt: X(508) = 6th ISOSCELIZER POINT
    :align: center
 
-   **X(508) = 6th ISOSCELIZER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(508) = 6th ISOSCELIZER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -40,7 +40,7 @@ Notes
 
 .. container:: note-item
 
-   have solution X = :ref:`X(508) <X(508)>`. (:person:`Peter Yff <peter-yff>`, 4/9/99)
+   have solution :g:`X <X>` = :ref:`X(508) <X(508)>`. (:person:`Peter Yff <peter-yff>`, 4/9/99)
 
 .. toctree::
    :hidden:

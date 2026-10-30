@@ -10,22 +10,18 @@ X(571) = ORTHOHARMONIC OF X(52)
 
 .. enunciation::
 
-   Let A'B'C' be the Kosnita triangle. Let A″ be the barycentric product B'\*C', and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(571) <X(571)>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
+   Let :g:`A'B'C' << A' B' C' >>` be the Kosnita triangle. Let :g:`A″ <A″>` be the barycentric product :g:`B' <B'>`\ \*\ :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(571) <X(571)>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
 
 .. figure:: x-00571.svg
    :alt: X(571) = ORTHOHARMONIC OF X(52)
    :align: center
 
-   **X(571) = ORTHOHARMONIC OF X(52)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(571) = ORTHOHARMONIC OF X(52)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\sin A \cos 2A (M. Iliev, 4/12/07)`
+   | **Trilinears:** :math:`\sin A \cos 2A` (M. Iliev, 4/12/07)
    | **Search Value (6, 9, 13):** :math:`-4.238654963023`
-
-.. container:: note-item
-
-   :ref:`X(571) <X(571)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines
@@ -42,7 +38,7 @@ X(571) = ORTHOHARMONIC OF X(52)
    * :ref:`X(571) <X(571)>` = :term:`crosspoint <crosspoint>` of :ref:`X(2) <X(2)>` and :ref:`X(70) <X(70)>`
    * :ref:`X(571) <X(571)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`6 <X(6)>`, :ref:`26 <X(26)>`), (:ref:`338 <X(338)>`, :ref:`525 <X(525)>`)
    * :ref:`X(571) <X(571)>` = barycentric product of :ref:`X(371) <X(371)>` and :ref:`X(372) <X(372)>`
-   * :ref:`X(571) <X(571)>` = :ref:`X(19) <X(19)>`-of-orthic-triangle if ABC is acute
+   * :ref:`X(571) <X(571)>` = :ref:`X(19) <X(19)>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(571) <X(571)>` = :ref:`X(2) <X(2)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(91) <X(91)>`
    * :ref:`X(571) <X(571)>` = :ref:`X(68) <X(68)>`-isoconjugate of :ref:`X(92) <X(92)>`
    * :ref:`X(571) <X(571)>` = {:ref:`X(6) <X(6)>`,\ :ref:`X(50) <X(50)>`}-harmonic conjugate of :ref:`X(577) <X(577)>`

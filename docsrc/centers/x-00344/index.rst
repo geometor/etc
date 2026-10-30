@@ -16,17 +16,13 @@ X(344) = ISOTOMIC CONJUGATE OF X(277)
    :alt: X(344) = ISOTOMIC CONJUGATE OF X(277)
    :align: center
 
-   **X(344) = ISOTOMIC CONJUGATE OF X(277)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(344) = ISOTOMIC CONJUGATE OF X(277)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(\csc^{2}A/2)[\cos^{4}(B/2) + \cos^{4}(C/2) - \cos^{4}(A/2)] : :`
-   | **Barycentrics:** :math:`a^2 + b^2 + c^2 - 2 a b - 2 a c : :`
+   | **Trilinears:** :math:`(\csc^{2} A/2)[\cos^{4}(B/2) + \cos^{4}(C/2) - \cos^{4}(A/2)] : :`
+   | **Barycentrics:** :math:`a^{2} + b^{2} + c^{2} - 2 a b - 2 a c : :`
    | **Search Value (6, 9, 13):** :math:`-1.257524205103`
-
-.. container:: note-item
-
-   :ref:`X(344) <X(344)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 9 lines
@@ -38,7 +34,7 @@ X(344) = ISOTOMIC CONJUGATE OF X(277)
    :badge: 3 relations
 
    * :ref:`X(344) <X(344)>` = isotomic conjugate of :ref:`X(277) <X(277)>`
-   * :ref:`X(344) <X(344)>` = :term:`trilinear pole <trilinear-pole>` of polar, wrt AC-incircle, of :ref:`X(7) <X(7)>` (line X(3309)X(4468))
+   * :ref:`X(344) <X(344)>` = :term:`trilinear pole <trilinear-pole>` of polar, wrt :g:`AC <[ A C ]>`-incircle, of :ref:`X(7) <X(7)>` (line X(3309)X(4468))
    * :ref:`X(344) <X(344)>` = :term:`anticomplement <anticomplement>` of X(17278)
 
 .. toctree::

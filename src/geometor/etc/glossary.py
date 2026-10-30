@@ -354,8 +354,147 @@ def clean_html_entities(text: str) -> str:
         .replace("&nbsp;", " ")
         .replace("&srarr;", "&rarr;")
         .replace("&Sum;", "&Sigma;")
+        .replace("AA'&Prime;", "AA'A&Prime;")
+        .replace("lines A&Prime;, BB&Prime;", "lines AA&Prime;, BB&Prime;")
     )
     return html.unescape(text)
+
+
+def _remove_html_tags(text: str) -> str:
+    """Remove HTML tags from text."""
+    return re.sub(r"<[^>]+>", "", text)
+
+
+def _replace_balanced_func(text: str, func_name: str, latex_cmd: str) -> str:
+    """Replace `func_name(...)` with `latex_cmd{...}` handling nested parentheses."""
+    pat = re.compile(rf"\b{func_name}\(", re.IGNORECASE)
+    while True:
+        m = pat.search(text)
+        if not m:
+            break
+        start_paren = m.end() - 1
+        depth = 0
+        end_paren = -1
+        for idx in range(start_paren, len(text)):
+            ch = text[idx]
+            if ch == "(":
+                depth += 1
+            elif ch == ")":
+                depth -= 1
+                if depth == 0:
+                    end_paren = idx
+                    break
+        if end_paren == -1:
+            break
+        inner = text[start_paren + 1 : end_paren]
+        text = f"{text[:m.start()]}{latex_cmd}{{{inner}}}{text[end_paren + 1:]}"
+    return text
+
+
+def formula_html_to_latex(formula_html: str) -> str:
+    """Convert an HTML coordinate or algebraic formula into clean LaTeX suitable for `:math:`."""
+    s = clean_html_entities(formula_html)
+    s = re.sub(r"<!--.*?-->", "", s, flags=re.DOTALL)
+
+    # Escape literal $ used for Shinagawa cyclic sums ($aS_A$)
+    s = re.sub(r"(?<!\\)\$", r"\\$", s)
+
+    # Convert <sup>...</sup> and <sub>...</sub> to LaTeX ^{...} and _{...}
+    s = re.sub(
+        r"<sup>(.*?)</sup>",
+        lambda m: f"^{{{_remove_html_tags(m.group(1)).strip()}}}",
+        s,
+        flags=re.DOTALL | re.IGNORECASE,
+    )
+    s = re.sub(
+        r"<sub>(.*?)</sub>",
+        lambda m: f"_{{{_remove_html_tags(m.group(1)).strip()}}}",
+        s,
+        flags=re.DOTALL | re.IGNORECASE,
+    )
+
+    s = _remove_html_tags(s)
+    s = " ".join(s.split())
+
+    # Brace caret exponents like a^10, a^-2, a^2, or a^(n+1)
+    s = re.sub(r"\^(-?\d+|\([0-9a-zA-Z+\-*/ ]+\))", r"^{\1}", s)
+
+    # Normalize sqr(...) -> sqrt(...) and convert Sqrt[...] / sqrt(...) to \sqrt{...}
+    s = re.sub(r"\bsqr\(", "sqrt(", s, flags=re.IGNORECASE)
+    while re.search(r"\bSqrt\[([^\[\]]+)\]", s):
+        s = re.sub(r"\bSqrt\[([^\[\]]+)\]", r"\\sqrt{\1}", s)
+    s = _replace_balanced_func(s, "sqrt", r"\sqrt")
+
+    # Convert area(ABC) and standalone area to \operatorname{area}
+    s = re.sub(r"\b[Aa]rea\b", r"\\operatorname{area}", s)
+
+    # Normalize Conway symbols (SA, SB, SC, SW, SBSC, SAa, etc.)
+    s = s.replace("SBSC", "S_{B}S_{C}").replace("SCSA", "S_{C}S_{A}").replace("SASB", "S_{A}S_{B}")
+    s = re.sub(r"\bSA(?=[a-c]\b|\^)", "S_{A}", s)
+    s = re.sub(r"\bSB(?=[a-c]\b|\^)", "S_{B}", s)
+    s = re.sub(r"\bSC(?=[a-c]\b|\^)", "S_{C}", s)
+    s = re.sub(r"\bSA\b", "S_{A}", s)
+    s = re.sub(r"\bSB\b", "S_{B}", s)
+    s = re.sub(r"\bSC\b", "S_{C}", s)
+    s = re.sub(r"\bSW\b", r"S_{\\omega}", s)
+
+    # Normalize common unsubscripted radii / symmetric polynomials in formulas
+    s = re.sub(r"\bR([abcs])\b", r"R_{\1}", s)
+    s = re.sub(r"\br([abc])\b", r"r_{\1}", s)
+    s = re.sub(r"\be([123])\b", r"e_{\1}", s)
+
+    # Replace Unicode Greek and math symbols with LaTeX commands
+    replacements = {
+        "ω": r"\omega ",
+        "Ω": r"\Omega ",
+        "π": r"\pi ",
+        "α": r"\alpha ",
+        "β": r"\beta ",
+        "γ": r"\gamma ",
+        "θ": r"\theta ",
+        "λ": r"\lambda ",
+        "μ": r"\mu ",
+        "φ": r"\phi ",
+        "Φ": r"\Phi ",
+        "ψ": r"\psi ",
+        "Ψ": r"\Psi ",
+        "σ": r"\sigma ",
+        "Δ": r"\Delta ",
+        "Γ": r"\Gamma ",
+        "Λ": r"\Lambda ",
+        "Σ": r"\Sigma ",
+        "∩": r"\cap ",
+        "∪": r"\cup ",
+        "≠": r"\neq ",
+        "≤": r"\leq ",
+        "≥": r"\geq ",
+        "±": r"\pm ",
+        "·": r"\cdot ",
+        "→": r"\to ",
+        "′": "'",
+        "″": "''",
+    }
+    for k, v in replacements.items():
+        s = s.replace(k, v)
+
+    # Standard trig functions (including sin^2, sinB, cos2A, etc.)
+    s = re.sub(
+        r"(?<!\\)\b(sin|cos|tan|cot|sec|csc)(?=\^|\s|\(|[A-Z0-9]|\\|\b)",
+        r"\\\1",
+        s,
+    )
+    s = re.sub(
+        r"(\\(?:sin|cos|tan|cot|sec|csc)(?:\^\{[^}]+\})?)(?=[A-Za-z0-9])",
+        r"\1 ",
+        s,
+    )
+
+    # Clean up multiplication *
+    s = re.sub(r"(?<=\d)\s*\*\s*(?=\d)", r" \\cdot ", s)
+    s = re.sub(r"\)\s*\*\s*\(", r") \\cdot (", s)
+    s = re.sub(r"(?<=[0-9a-zA-Z\}\)\]])\s*\*\s*(?=[0-9a-zA-Z\\\(\[])", " ", s)
+
+    return " ".join(s.split()).rstrip("\\").strip()
 
 
 def convert_inline_html_to_rst(
@@ -377,6 +516,12 @@ def convert_inline_html_to_rst(
         idx = len(placeholders)
         placeholders.append(rst_str)
         return f"\x00PH{idx}PH\x00"
+
+    def _stash_math_html(math_html: str) -> str:
+        ltx = formula_html_to_latex(math_html)
+        if not ltx:
+            return math_html
+        return _stash(f":math:`{ltx}`")
 
     # Convert <a href="...">label</a>
     def _replace_anchor(match: re.Match) -> str:
@@ -421,7 +566,166 @@ def convert_inline_html_to_rst(
         flags=re.DOTALL | re.IGNORECASE,
     )
 
-    # Convert <sup>...</sup> and <sub>...</sub> into RST :sup: and :sub:
+    # Normalize known HTML typo in X(442): N<sub>A</sub>&cap;<sub>B</sub>&cap;<sub>C</sub>
+    text = text.replace("N<sub>A</sub>∩<sub>B</sub>∩<sub>C</sub>", "N<sub>A</sub>N<sub>B</sub>N<sub>C</sub>")
+
+    # 1. Stash Shinagawa coefficients `( ... )` as :math:
+    def _repl_shinagawa(m: re.Match) -> str:
+        prefix = m.group(1)
+        shin_expr = m.group(2).strip()
+        if "\x00PH" in shin_expr:
+            return m.group(0)
+        return f"{prefix}{_stash_math_html(shin_expr)}"
+
+    text = re.sub(
+        r"(\bShinagawa\s+coefficients\s+)(\(.+?)(?=(?:\.\s*(?:\([A-Z][^()]+\)\.?\s*)?$|\s*$))",
+        _repl_shinagawa,
+        text,
+        flags=re.DOTALL | re.IGNORECASE,
+    )
+
+    # 2. Stash subscripted geometric elements (triangles, segments, points/lines/circles) as :g: roles
+    _v_html_unit = r"[A-QT-Zℓ]['′″]*(?:<sub>[^<]+</sub>)?['′″]*"
+    _v_html_item_re = re.compile(
+        r"([A-QT-Zℓ])(['′″]*)(?:<sub>([^<]+)</sub>)?(['′″]*)"
+    )
+
+    def _parse_html_vertex(v_str: str) -> tuple[str, str]:
+        vm = _v_html_item_re.fullmatch(v_str)
+        if not vm:
+            return v_str, v_str
+        base = vm.group(1)
+        pr1 = (vm.group(2) or "").replace("′", "'").replace("''", "″")
+        sub = _remove_html_tags(vm.group(3) or "").strip()
+        pr2 = (vm.group(4) or "").replace("′", "'").replace("''", "″")
+        if sub:
+            return f"{base}{pr1}_{{{sub}}}{pr2}", f"{base}{pr1}_{sub}{pr2}"
+        return f"{base}{pr1}{pr2}", f"{base}{pr1}{pr2}"
+
+    def _repl_sub_seq(m: re.Match) -> str:
+        full = m.group(0)
+        if "<sub" not in full.lower() or "\x00PH" in full:
+            return full
+        units = [u.group(0) for u in _v_html_item_re.finditer(full) if u.group(0)]
+        if len(units) == 3:
+            (d1, t1), (d2, t2), (d3, t3) = (
+                _parse_html_vertex(units[0]),
+                _parse_html_vertex(units[1]),
+                _parse_html_vertex(units[2]),
+            )
+            return _stash(f":g:`{d1}{d2}{d3} << {t1} {t2} {t3} >>`")
+        if len(units) == 2:
+            (d1, t1), (d2, t2) = (
+                _parse_html_vertex(units[0]),
+                _parse_html_vertex(units[1]),
+            )
+            return _stash(f":g:`{d1}{d2} <[ {t1} {t2} ]>`")
+        return full
+
+    text = re.sub(
+        rf"(?<![A-Za-z0-9_\\])(?:{_v_html_unit}){{2,3}}(?![A-Za-z0-9_'′″<])",
+        _repl_sub_seq,
+        text,
+    )
+
+    # Single uppercase geometric elements with <sub> (excluding S and R which are Conway / radius scalars)
+    def _repl_geom_sub(m: re.Match) -> str:
+        base = m.group(1)
+        pr1 = (m.group(2) or "").replace("′", "'").replace("''", "″")
+        sub = _remove_html_tags(m.group(3)).strip()
+        pr2 = (m.group(4) or "").replace("′", "'").replace("''", "″")
+        if not sub or "\x00PH" in sub:
+            return m.group(0)
+        disp = f"{base}{pr1}_{{{sub}}}{pr2}"
+        targ = f"{base}{pr1}_{sub}{pr2}"
+        return _stash(f":g:`{disp} <{targ}>`")
+
+    text = re.sub(
+        r"(?<![A-Za-z0-9_\\])([A-QT-Zℓ])(['′″]*)<sub>([^<]+)</sub>(['′″]*)",
+        _repl_geom_sub,
+        text,
+    )
+
+    # 3. Stash inline mathematical equations, ratios, and scalar formulas as :math:
+    # 3a. Classical inradius/circumradius/exradius equations and area/sqrt formulas
+    inline_eq_patterns = [
+        r"\b1/r\s*=\s*1/r<sub>a</sub>\s*\+\s*1/r<sub>b</sub>\s*\+\s*1/r<sub>c</sub>",
+        r"\br<sub>a</sub>\s*\+\s*r<sub>b</sub>\s*\+\s*r<sub>c</sub>\s*=\s*r\s*\+\s*4R\b",
+        r"\bR\s*=\s*a/\(2\s*sin\s*A\)\s*=\s*abc/\(4\s*\*?\s*[Aa]rea\(ABC\)\)",
+        r"\br\s*=\s*2\s*\*?\s*[Aa]rea\(ABC\)/\(a\s*\+\s*b\s*\+\s*c\)",
+        r"\b[Aa]rea\(ABC\)\s*=\s*sqrt\([^()]+\)",
+        r"\bcot\s+D/2\s*=\s*[^\s,.;]+(?:\s*[+\-*/]\s*[^\s,.;]+)*",
+        r"\b2\s*\*\s*[Aa]rea\(ABC\)/\([+\-a-c\s]+\)",
+        r"\bsqrt\((?:[^()]|\([^()]*\))+\)",
+        r"\bSqrt\[[^\[\]]+\]",
+        r"\([x-z\s:]+\)\s*\*\s*\([u-w\s:]+\)\s*=\s*xu\s*:\s*yv\s*:\s*zw",
+        r"\b\|f\([a-c,\s]+\)\|\s*≠\s*\|f\([a-c,\s]+\)\|",
+        r"\bf\(ta,\s*tb,\s*tc\)\s*=\s*t<sup>h</sup>f\(a,\s*b,\s*c\)",
+        r"\b[abc]\s*[≤≥]\s*[abc]\s*\+\s*[abc]\b",
+        r"\bx\s*\+\s*y\s*\+\s*z\s*=\s*0\b",
+        r"\[area\s+of\s+T\([ABC],\s*X\)\]\[X\([ABC]\)\]<sup>2</sup>(?:\s*=\s*\[area\s+of\s+T\([ABC],\s*X\)\]\[X\([ABC]\)\]<sup>2</sup>)+",
+        r"\(distance\s+from\s+[^()]+\)<sup>2</sup>(?:\s*:\s*:)?",
+        r"\(SB\s*-\s*SC\)\(SC\s*-\s*SA\)\(SA\s*-\s*SB\)/[^.]+",
+        r"\bF\s*=\s*x\[a<sub>4</sub>[^\n.]+",
+    ]
+    for pat_str in inline_eq_patterns:
+        text = re.sub(
+            pat_str,
+            lambda m: _stash_math_html(m.group(0)) if "\x00PH" not in m.group(0) else m.group(0),
+            text,
+        )
+
+    # 3b. Homogeneous coordinate triples in prose (e.g., p : q : r, -1 : 1 : 1, 1/a : 1/b : 1/c, csc^4(A/4) : ... : ...)
+    _coord_comp = r"-?\s*(?:[0-9a-zA-Z_'′″]+(?:\([^()]+\)|(?:<sup>[^<]+</sup>|<sub>[^<]+</sub>)+)?(?:/[0-9a-zA-Z_'′″()]+)?)"
+    _coord_triple_re = re.compile(
+        rf"(?<![A-Za-z0-9_:])({_coord_comp}\s*:\s*{_coord_comp}\s*:\s*{_coord_comp})(?![A-Za-z0-9_:])"
+    )
+    text = _coord_triple_re.sub(
+        lambda m: _stash_math_html(m.group(1)) if "\x00PH" not in m.group(1) else m.group(1),
+        text,
+    )
+
+    # 3c. Explicit function definitions in prose like `where f(p,q,r,A) = (q^2 + r^2 + 2qr cos A)^1/2`
+    def _repl_func_def(m: re.Match) -> str:
+        full = m.group(0)
+        if "\x00PH" in full or "X(" in full or "X[" in full:
+            return full
+        trail = ""
+        while full and full[-1] in ".,;":
+            trail = full[-1] + trail
+            full = full[:-1]
+        return _stash_math_html(full) + trail
+
+    text = re.sub(
+        r"\b[fghFGkH]\([a-zA-Z0-9,\s:]+\)\s*=\s*(?:(?!(?:\s+and\b|\s+where\b|\s+for\b))[0-9a-zA-Z_+\-*/^()\[\]\s<>′″'ωΩπ])+",
+        _repl_func_def,
+        text,
+    )
+
+    # 3d. Cyclic sum `$...$` notation in prose
+    text = re.sub(
+        r"\$[^\$]+\$",
+        lambda m: _stash_math_html(m.group(0)) if "\x00PH" not in m.group(0) else m.group(0),
+        text,
+    )
+
+    # 3e. Remaining scalar tokens with <sub> or non-ordinal <sup> (e.g., r_a, R_a, S_A, S^2, a^2, g(X^-1))
+    def _repl_scalar_supsub(m: re.Match) -> str:
+        tok = m.group(0)
+        if "\x00PH" in tok:
+            return tok
+        # Skip English ordinals like 1st, 2nd, 3rd, 4th
+        if re.match(r"^\d+<sup>(?:st|nd|rd|th)</sup>$", tok, flags=re.IGNORECASE):
+            return tok
+        return _stash_math_html(tok)
+
+    text = re.sub(
+        r"(?:[a-zA-Z]+\()?[a-zA-Z0-9]+(?:\s*(?:<sup>[^<]+</sup>|<sub>[^<]+</sub>))+(?:\)|['′″]|\([^()]+\))?",
+        _repl_scalar_supsub,
+        text,
+    )
+
+    # Convert any remaining <sup>...</sup> and <sub>...</sub> into RST :sup: and :sub:
     def _replace_sup(match: re.Match) -> str:
         raw_inner = match.group(1)
         trail = " " if raw_inner[-1:].isspace() else ""
@@ -564,6 +868,63 @@ def filter_center_refs(
     return re.sub(r":ref:`([^`<]+?)\s*<X\((\d+)\)>`", _check_ref, rst_text)
 
 
+def _format_eqn_line_html(ln_html: str) -> str:
+    """Format a `<p class="eqn">` line from the Glossary into `:math:` or mixed RST."""
+    raw = ln_html.strip()
+    if not raw:
+        return ""
+    plain = " ".join(clean_html_entities(_remove_html_tags(raw)).split()).strip()
+    if not plain:
+        return ""
+
+    if (
+        plain.lower().startswith("where ")
+        and "=" in plain
+        and "intersect" not in plain.lower()
+        and "conjugate" not in plain.lower()
+    ):
+        m_w = re.match(r"^\s*(where\s+)(.+)$", raw, flags=re.DOTALL | re.IGNORECASE)
+        if m_w:
+            return f"where {_format_eqn_line_html(m_w.group(2))}"
+
+    # Prose or geometric incidence lines inside <p class="eqn">
+    if (
+        plain.lower().startswith(("where ", "if ", "for "))
+        or "intersect" in plain.lower()
+        or "conjugate" in plain.lower()
+        or plain.startswith("{")
+    ):
+        return wrap_geom_refs(_wrap_x_refs_simple(convert_inline_html_to_rst(raw)))
+
+    # Trailing parenthetical note like "(barycentrics)" or "for all (a,b,c) in the domain of f;"
+    suffix_rst = ""
+    m_for = re.match(r"^(.+?)\s+(for\s+all\b.*)$", raw, flags=re.DOTALL | re.IGNORECASE)
+    if m_for:
+        raw = m_for.group(1).strip()
+        suffix_rst = f" {wrap_geom_refs(convert_inline_html_to_rst(m_for.group(2).strip()))}"
+    else:
+        m_par = re.match(r"^(.+?)\s*(\([a-zA-Z\s]+\))\s*$", raw, flags=re.DOTALL)
+        if m_par:
+            raw = m_par.group(1).strip()
+            suffix_rst = f" {m_par.group(2).strip()}"
+
+    trail_punct = ""
+    while raw and raw[-1] in ".,;":
+        trail_punct = raw[-1] + trail_punct
+        raw = raw[:-1].rstrip()
+
+    # Check if split by " and "
+    if re.search(r"\s+and\s+", raw):
+        parts = re.split(r"\s+and\s+", raw)
+        ltx_parts = [f":math:`{formula_html_to_latex(p)}`" for p in parts if p.strip()]
+        return " and ".join(ltx_parts) + trail_punct + suffix_rst
+
+    ltx = formula_html_to_latex(raw)
+    if not ltx:
+        return wrap_geom_refs(_wrap_x_refs_simple(convert_inline_html_to_rst(ln_html)))
+    return f":math:`{ltx}`{trail_punct}{suffix_rst}"
+
+
 def _convert_glossary_section_to_rst(section_html: str) -> tuple[str, str]:
     """Convert the HTML body of a glossary entry into (plain_summary, rst_body)."""
     # Strip trailing "Return to ETC" footer if present
@@ -577,21 +938,38 @@ def _convert_glossary_section_to_rst(section_html: str) -> tuple[str, str]:
 
     blocks: list[str] = []
     plain_sentences: list[str] = []
+    inline_buf: list[str] = []
+
+    def _flush_inline_buf() -> None:
+        if not inline_buf:
+            return
+        combined_html = "".join(inline_buf).strip()
+        inline_buf.clear()
+        if not combined_html:
+            return
+        plain_s = " ".join(clean_html_entities(_remove_html_tags(combined_html)).split()).strip()
+        if not plain_s:
+            return
+        conv = wrap_geom_refs(_wrap_x_refs_simple(convert_inline_html_to_rst(combined_html)))
+        if conv:
+            blocks.append(conv)
+            plain_sentences.append(plain_s)
 
     for child in soup.children:
         if isinstance(child, NavigableString):
-            raw_s = str(child).strip()
-            if raw_s:
-                conv = _wrap_x_refs_simple(convert_inline_html_to_rst(raw_s))
-                if conv:
-                    blocks.append(conv)
-                    plain_sentences.append(" ".join(raw_s.split()))
+            inline_buf.append(str(child))
             continue
 
         if not isinstance(child, Tag):
             continue
 
         tag_name = child.name.lower()
+        if tag_name in ("a", "b", "i", "var", "sup", "sub", "span"):
+            inline_buf.append(str(child))
+            continue
+
+        _flush_inline_buf()
+
         if tag_name == "h2":
             continue
 
@@ -600,10 +978,32 @@ def _convert_glossary_section_to_rst(section_html: str) -> tuple[str, str]:
             from .parser import _strip_software_and_nav_refs
 
             inner_html = child.decode_contents()
+            if "eqn" in cls:
+                raw_eq_lines = [
+                    ln.strip()
+                    for ln in re.split(r"<br\s*/?>", inner_html, flags=re.IGNORECASE)
+                    if ln.strip()
+                ]
+                # Join continuation line starting with '+' or '-' onto previous line
+                merged_eq_lines: list[str] = []
+                for rln in raw_eq_lines:
+                    plain_rln = _remove_html_tags(rln).strip()
+                    if merged_eq_lines and plain_rln.startswith(("+", "-")):
+                        merged_eq_lines[-1] = f"{merged_eq_lines[-1]} {rln}"
+                    else:
+                        merged_eq_lines.append(rln)
+                fmt_eqs = [_format_eqn_line_html(rln) for rln in merged_eq_lines]
+                fmt_eqs = [fe for fe in fmt_eqs if fe]
+                if fmt_eqs:
+                    blocks.append("\n".join(f"   {fe}" for fe in fmt_eqs))
+                continue
+
             # Split on <br> if multi-line inside <p>
             br_lines = [
-                _strip_software_and_nav_refs(
-                    _wrap_x_refs_simple(convert_inline_html_to_rst(ln))
+                wrap_geom_refs(
+                    _strip_software_and_nav_refs(
+                        _wrap_x_refs_simple(convert_inline_html_to_rst(ln))
+                    )
                 )
                 for ln in re.split(r"<br\s*/?>", inner_html, flags=re.IGNORECASE)
             ]
@@ -611,27 +1011,25 @@ def _convert_glossary_section_to_rst(section_html: str) -> tuple[str, str]:
             if not br_lines:
                 continue
 
-            if "eqn" in cls:
-                eqn_block = "\n".join(f"   {ln}" for ln in br_lines)
-                blocks.append(eqn_block)
+            if len(br_lines) == 1:
+                blocks.append(br_lines[0])
             else:
-                if len(br_lines) == 1:
-                    blocks.append(br_lines[0])
-                else:
-                    blocks.append("\n".join(f"| {ln}" for ln in br_lines))
-                plain_txt = _strip_software_and_nav_refs(
-                    " ".join(
-                        clean_html_entities(child.get_text(" ", strip=True)).split()
-                    )
+                blocks.append("\n".join(f"| {ln}" for ln in br_lines))
+            plain_txt = _strip_software_and_nav_refs(
+                " ".join(
+                    clean_html_entities(child.get_text(" ", strip=True)).split()
                 )
-                if plain_txt:
-                    plain_sentences.append(plain_txt)
+            )
+            if plain_txt:
+                plain_sentences.append(plain_txt)
 
         elif tag_name in ("ul", "ol"):
             items: list[str] = []
             for li in child.find_all("li", recursive=False):
-                li_rst = _wrap_x_refs_simple(
-                    convert_inline_html_to_rst(li.decode_contents())
+                li_rst = wrap_geom_refs(
+                    _wrap_x_refs_simple(
+                        convert_inline_html_to_rst(li.decode_contents())
+                    )
                 )
                 if li_rst:
                     items.append(f"* {li_rst}")
@@ -641,7 +1039,7 @@ def _convert_glossary_section_to_rst(section_html: str) -> tuple[str, str]:
         elif tag_name == "blockquote":
             inner_html = child.decode_contents()
             br_lines = [
-                _wrap_x_refs_simple(convert_inline_html_to_rst(ln))
+                wrap_geom_refs(_wrap_x_refs_simple(convert_inline_html_to_rst(ln)))
                 for ln in re.split(r"<br\s*/?>", inner_html, flags=re.IGNORECASE)
             ]
             br_lines = [ln for ln in br_lines if ln]
@@ -652,8 +1050,10 @@ def _convert_glossary_section_to_rst(section_html: str) -> tuple[str, str]:
             rows: list[str] = []
             for tr in child.find_all("tr"):
                 cells = [
-                    _wrap_x_refs_simple(
-                        convert_inline_html_to_rst(td.decode_contents())
+                    wrap_geom_refs(
+                        _wrap_x_refs_simple(
+                            convert_inline_html_to_rst(td.decode_contents())
+                        )
                     )
                     for td in tr.find_all(["td", "th"])
                 ]
@@ -662,6 +1062,8 @@ def _convert_glossary_section_to_rst(section_html: str) -> tuple[str, str]:
                     rows.append("   | " + "   —   ".join(cells))
             if rows:
                 blocks.append("\n".join(rows))
+
+    _flush_inline_buf()
 
     summary = " ".join(plain_sentences).strip()
     if len(summary) > 360:
@@ -708,12 +1110,15 @@ def extract_glossary_terms(html_content: str) -> dict[str, Any]:
     # Add the classical named triangles defined inside cevian, anticevian, and central triangle
     for tri_name, info in CLASSICAL_TRIANGLE_ALIASES.items():
         if tri_name not in terms:
+            def_rst = wrap_geom_refs(
+                _wrap_x_refs_simple(convert_inline_html_to_rst(info["definition"]))
+            )
             terms[tri_name] = {
                 "headword": tri_name,
                 "slug": apparatus_slug(tri_name),
                 "target_slug": info["target_slug"],
                 "definition": info["definition"],
-                "rst": f"{_wrap_x_refs_simple(info['definition'])} (See :term:`{info['target_slug'].replace('-', ' ')} <{info['target_slug']}>`.)",
+                "rst": f"{def_rst} (See :term:`{info['target_slug'].replace('-', ' ')} <{info['target_slug']}>`.)",
                 "is_alias": True,
             }
 
@@ -866,8 +1271,9 @@ def generate_persons_rst(valid_centers: set[int] | None = None) -> str:
         lines.append(heading)
         lines.append("-" * max(4, len(heading)))
         lines.append("")
-        role_rst = info["role"].replace("|", r"\|")
+        role_rst = convert_inline_html_to_rst(info["role"])
         role_rst = _wrap_x_refs_simple(role_rst, valid_centers=valid_centers)
+        role_rst = wrap_geom_refs(role_rst)
         lines.append(role_rst)
         lines.append("")
     return "\n".join(lines)
@@ -920,6 +1326,290 @@ def _apply_outside_rst_spans(text: str, transform_fn: Any) -> str:
         else:
             out.append(transform_fn(part))
     return "".join(out)
+
+
+_V_PLAIN_TOK = r"[A-Z](?:''|″|\"|'|′|\\\*|\*)?"
+_V_PLAIN_TRI_RE = re.compile(
+    rf"(?<![A-Za-z0-9_\x00])({_V_PLAIN_TOK})({_V_PLAIN_TOK})({_V_PLAIN_TOK})(?![A-Za-z0-9_'′″\"*(\x00])"
+)
+_V_PLAIN_SEG_RE = re.compile(
+    rf"(?<![A-Za-z0-9_\x00])({_V_PLAIN_TOK})({_V_PLAIN_TOK})(?![A-Za-z0-9_'′″\"*(\x00])"
+)
+_SUB_3V_UNSUB_RE = re.compile(
+    r"(?<![A-Za-z0-9_\x00])([A-QT-Z])(['′″]?)([a-c1-9]?)(['′″]?)([A-QT-Z])(['′″]?)([a-c1-9]?)(['′″]?)([A-QT-Z])(['′″]?)([a-c1-9]?)(['′″]?)(?![A-Za-z0-9_'′″\x00])"
+)
+_SUB_2V_UNSUB_RE = re.compile(
+    r"(?<![A-Za-z0-9_\x00])([A-Z])(['′″]?)([a-c1-9]?)(['′″]?)([A-Z])(['′″]?)([a-c1-9]?)(['′″]?)(?![A-Za-z0-9_'′″\x00])"
+)
+_SUB_1V_UNSUB_RE = re.compile(
+    r"(?<![A-Za-z0-9_\x00])(?:([A-QT-WYZ])(['′″]?)([a-c1-9])(['′″]?)|(S)(['′″]?)([abc])(['′″]?))(?![A-Za-z0-9_'′″\x00])"
+)
+_RADII_UNSUB_RE = re.compile(
+    r"(?<![A-Za-z0-9_\x00])R([abcs])(['′]?)(?![A-Za-z0-9_'′\x00])"
+)
+_PRIMED_1V_RE = re.compile(
+    r"(?<![A-Za-z0-9_\x00])([A-QT-Z])(''|″|\"|'|′|\\\*|\*)(?![A-Za-z0-9_'′″\"*\x00])"
+)
+_TRI_AUX_POINTS = {
+    "P", "Q", "X", "O", "H", "I", "G", "K", "N", "F", "U", "V", "S"
+}
+_NAMED_3V_TUPLES = {
+    ("D", "E", "F"),
+    ("U", "V", "W"),
+    ("P", "Q", "X"),
+    ("A", "D", "E"),
+    ("A", "E", "F"),
+}
+_SEG_AUX_POINTS = {
+    "P", "Q", "X", "O", "H", "I", "K", "D", "E", "F", "U", "V"
+}
+_NAMED_2V_PAIRS = {
+    "PQ", "PX", "PO", "PU", "OI", "OG", "OP", "QO", "IO",
+    "DE", "EF", "FD", "DU", "EV", "FW", "DV", "DW", "EU", "EW", "FU", "FV",
+    "UV", "VW", "WU", "XY",
+}
+
+
+def _norm_plain_vertex(v: str) -> tuple[str, str]:
+    v_clean = v.replace(r"\*", "*").replace("′", "'").replace("''", "″").replace('"', "″")
+    return v_clean, v_clean
+
+
+def wrap_geom_refs(text: str) -> str:
+    """Wrap geometric elements (triangles, segments, lines, circles, points) in `:g:` roles."""
+    if not text:
+        return text
+
+    def _replace_geom(seg: str) -> str:
+        stashed: list[str] = []
+
+        def _stash_g(role_str: str) -> str:
+            idx = len(stashed)
+            stashed.append(role_str)
+            return f"\x00GM{idx}GM\x00"
+
+        # 1. Bracketed vertex notation [A], [B], [C]
+        seg = re.sub(
+            r"(?<![A-Za-z0-9_\x00])\[([ABC])\](?![A-Za-z0-9_\x00])",
+            lambda m: _stash_g(f":g:`{m.group(1)} <{m.group(1)}>`"),
+            seg,
+        )
+
+        # 2. Unsubscripted 3-vertex subscripted triangles (IaIbIc, AaBaCa, A1B1C1, AbBCb, etc.)
+        def _repl_3v_unsub(m: re.Match) -> str:
+            l1, p1a, s1, p1b, l2, p2a, s2, p2b, l3, p3a, s3, p3b = (
+                m.group(1), m.group(2) or "", m.group(3) or "", m.group(4) or "",
+                m.group(5), m.group(6) or "", m.group(7) or "", m.group(8) or "",
+                m.group(9), m.group(10) or "", m.group(11) or "", m.group(12) or "",
+            )
+            if not (s1 or s2 or s3):
+                return m.group(0)
+            # Either all 3 have subscripts, or {l1, l2, l3} == {"A", "B", "C"}
+            if not ((s1 and s2 and s3) or {l1, l2, l3} == {"A", "B", "C"}):
+                return m.group(0)
+
+            def _fmt(L: str, pa: str, s: str, pb: str) -> tuple[str, str]:
+                pa = pa.replace("′", "'").replace("''", "″")
+                pb = pb.replace("′", "'").replace("''", "″")
+                if s:
+                    return f"{L}{pa}_{{{s}}}{pb}", f"{L}{pa}_{s}{pb}"
+                return f"{L}{pa}{pb}", f"{L}{pa}{pb}"
+
+            (d1, t1), (d2, t2), (d3, t3) = (
+                _fmt(l1, p1a, s1, p1b),
+                _fmt(l2, p2a, s2, p2b),
+                _fmt(l3, p3a, s3, p3b),
+            )
+            return _stash_g(f":g:`{d1}{d2}{d3} << {t1} {t2} {t3} >>`")
+
+        seg = _SUB_3V_UNSUB_RE.sub(_repl_3v_unsub, seg)
+
+        # 3. 3-vertex plain/primed triangles (ABC, A'B'C', A″B″C″, BXC, BCP, BCF, DEF, UVW, etc.)
+        def _repl_3v_plain(m: re.Match) -> str:
+            v1, v2, v3 = m.group(1), m.group(2), m.group(3)
+            b1, b2, b3 = v1[0], v2[0], v3[0]
+            has_prime = (len(v1) > 1) or (len(v2) > 1) or (len(v3) > 1)
+            abc_set = {"A", "B", "C"}
+
+            is_valid = False
+            if {b1, b2, b3} == abc_set:
+                is_valid = True
+            elif b1 in abc_set and b2 in abc_set and b3 in abc_set and has_prime:
+                is_valid = True
+            elif (b1, b2, b3) in _NAMED_3V_TUPLES:
+                is_valid = True
+            else:
+                abc_in = [b for b in (b1, b2, b3) if b in abc_set]
+                other_in = [b for b in (b1, b2, b3) if b not in abc_set]
+                if (
+                    len(abc_in) == 2
+                    and abc_in[0] != abc_in[1]
+                    and len(other_in) == 1
+                    and other_in[0] in _TRI_AUX_POINTS
+                ):
+                    is_valid = True
+
+            if not is_valid:
+                return m.group(0)
+
+            (d1, t1), (d2, t2), (d3, t3) = (
+                _norm_plain_vertex(v1),
+                _norm_plain_vertex(v2),
+                _norm_plain_vertex(v3),
+            )
+            return _stash_g(f":g:`{d1}{d2}{d3} << {t1} {t2} {t3} >>`")
+
+        seg = _V_PLAIN_TRI_RE.sub(_repl_3v_plain, seg)
+
+        # 4. 2-vertex segments/lines with unsubscripted [a-c1-9] on one or both vertices (AIa, ASa, TbTc, etc.)
+        def _repl_2v_unsub(m: re.Match) -> str:
+            l1, p1a, s1, p1b, l2, p2a, s2, p2b = (
+                m.group(1), m.group(2) or "", m.group(3) or "", m.group(4) or "",
+                m.group(5), m.group(6) or "", m.group(7) or "", m.group(8) or "",
+            )
+            if not (s1 or s2):
+                return m.group(0)
+            if (l1, s1, l2, s2) == ("S", "", "A", "a"):
+                return m.group(0)
+
+            def _fmt(L: str, pa: str, s: str, pb: str) -> tuple[str, str]:
+                pa = pa.replace("′", "'").replace("''", "″")
+                pb = pb.replace("′", "'").replace("''", "″")
+                if s:
+                    return f"{L}{pa}_{{{s}}}{pb}", f"{L}{pa}_{s}{pb}"
+                return f"{L}{pa}{pb}", f"{L}{pa}{pb}"
+
+            (d1, t1), (d2, t2) = _fmt(l1, p1a, s1, p1b), _fmt(l2, p2a, s2, p2b)
+            return _stash_g(f":g:`{d1}{d2} <[ {t1} {t2} ]>`")
+
+        seg = _SUB_2V_UNSUB_RE.sub(_repl_2v_unsub, seg)
+
+        # 5. 2-vertex plain/primed segments and sidelines (BC, CA, AB, B'C', AA', AP, BP, CP, etc.)
+        def _repl_2v_plain(m: re.Match) -> str:
+            v1, v2 = m.group(1), m.group(2)
+            b1, b2 = v1[0], v2[0]
+            has_prime = (len(v1) > 1) or (len(v2) > 1)
+            abc_set = {"A", "B", "C"}
+
+            is_valid = False
+            if has_prime:
+                is_valid = True
+            elif b1 != b2:
+                if b1 in abc_set and b2 in abc_set:
+                    is_valid = True
+                elif (b1 in abc_set and b2 in _SEG_AUX_POINTS) or (
+                    b2 in abc_set and b1 in _SEG_AUX_POINTS
+                ):
+                    is_valid = True
+                elif (b1 + b2) in _NAMED_2V_PAIRS:
+                    is_valid = True
+
+            if not is_valid:
+                return m.group(0)
+
+            (d1, t1), (d2, t2) = _norm_plain_vertex(v1), _norm_plain_vertex(v2)
+            return _stash_g(f":g:`{d1}{d2} <[ {t1} {t2} ]>`")
+
+        seg = _V_PLAIN_SEG_RE.sub(_repl_2v_plain, seg)
+
+        # 6. Unsubscripted 2-char single elements (Oa, La, Na, Ia, Ma, Ha, Ta, Ja, Pa, Sa, A1, etc.) and radii (Ra, Rb, Rc, Rs)
+        seg = _RADII_UNSUB_RE.sub(
+            lambda m: _stash_g(f":math:`R_{{{m.group(1)}}}{m.group(2) or ''}`"),
+            seg,
+        )
+
+        def _repl_1v_unsub(m: re.Match) -> str:
+            if m.group(1):
+                L, pa, s, pb = m.group(1), m.group(2) or "", m.group(3), m.group(4) or ""
+            else:
+                L, pa, s, pb = m.group(5), m.group(6) or "", m.group(7), m.group(8) or ""
+            pa = pa.replace("′", "'").replace("''", "″")
+            pb = pb.replace("′", "'").replace("''", "″")
+            return _stash_g(f":g:`{L}{pa}_{{{s}}}{pb} <{L}{pa}_{s}{pb}>`")
+
+        seg = _SUB_1V_UNSUB_RE.sub(_repl_1v_unsub, seg)
+
+        # 7. Primed single-letter elements (A', B', C', A″, B″, C″, P', Q', O', F', X', L', etc.)
+        def _repl_1v_primed(m: re.Match) -> str:
+            d, t = _norm_plain_vertex(m.group(0))
+            return _stash_g(f":g:`{d} <{t}>`")
+
+        seg = _PRIMED_1V_RE.sub(_repl_1v_primed, seg)
+
+        # 8. Unprimed single-letter vertices/points in geometric contexts
+        # 8a. Triples like "A, B, C" / "B,C,A" / "A, B, and C" / "D, E, F" / "U, V, W"
+        def _repl_abc_triple(m: re.Match) -> str:
+            v1, v2, conj, v3 = m.group(1), m.group(2), m.group(3), m.group(4)
+            if {v1, v2, v3} not in ({"A", "B", "C"}, {"D", "E", "F"}, {"U", "V", "W"}):
+                return m.group(0)
+            return (
+                f"{_stash_g(f':g:`{v1} <{v1}>`')}, "
+                f"{_stash_g(f':g:`{v2} <{v2}>`')}, "
+                + (f"{conj} " if conj else "")
+                + f"{_stash_g(f':g:`{v3} <{v3}>`')}"
+            )
+
+        seg = re.sub(
+            r"(?<![A-Za-z0-9_\x00])\b([ABCDEFUVW])\s*,\s*([ABCDEFUVW])\s*,\s*(?:(and|or)\s+)?([ABCDEFUVW])\b(?![A-Za-z0-9_'′″\x00])",
+            _repl_abc_triple,
+            seg,
+        )
+
+        # 8b. Pairs like "B and C", "C and A", "A and B", "E and F", "V and W", "P and Q"
+        seg = re.sub(
+            r"(?<![A-Za-z0-9_\x00])\b([ABCEFPVW])\s+(and|or)\s+([ABCEFQVW])\b(?![A-Za-z0-9_'′″.\x00])",
+            lambda m: (
+                f"{_stash_g(f':g:`{m.group(1)} <{m.group(1)}>`')} {m.group(2)} "
+                f"{_stash_g(f':g:`{m.group(3)} <{m.group(3)}>`')}"
+            ),
+            seg,
+        )
+
+        # 8c. Hyphenated vertex/point prefixes like A-vertex, A-excircle, P-cevian, P-Brocard, P-aleph
+        seg = re.sub(
+            r"(?<![A-Za-z0-9_\x00-])([ABCPQXU])(?=-vertex|-excircle|-excenter|-altitude|-bisector|-median|-cevian|-anticevian|-symmedian|-mixtilinear|-pedal|-antipedal|-perspector|-circumconic|-inconic|-Brocard|-isogonal|-isotomic|-Hirst|-aleph|-beth|-gimel|-he|-waw|-zayin|-ceva|-polar|-conic|-cubic|-line|-circle|-point|-triangle\b)",
+            lambda m: _stash_g(f":g:`{m.group(1)} <{m.group(1)}>`"),
+            seg,
+        )
+
+        # 8d. Single letter before `=` (e.g. `Let P = ...`, `Suppose that T = ...`, `D = E = A`)
+        seg = re.sub(
+            r"(?<![A-Za-z0-9_\x00])\b([ABCPQULOEFXTD])(?=\s*=[^=])",
+            lambda m: _stash_g(f":g:`{m.group(1)} <{m.group(1)}>`"),
+            seg,
+        )
+
+        # 8e. Single letter after geometric prepositions/nouns (excluding person initials like `A. P.`)
+        seg = re.sub(
+            r"\b(vertex|vertices|point|points|angle|angles|line|lines|circle|circles|triangle|triangles|centered\s+at|through|opposite|about|around|Let|let|at|from|of|in|on|to|with|for)\s+([ABCPQULOEFXTDHIKN])(?=(?:[,;:)—]|\.(?!\s+[A-Z])|\s+(?:and|or|is|are|be|denote|in|on|of|to|with|from|at|parallel|perpendicular|tangent|opposite|where|which|that|for|wrt)\b|$))",
+            lambda m: f"{m.group(1)} {_stash_g(f':g:`{m.group(2)} <{m.group(2)}>`')}",
+            seg,
+        )
+
+        # Restore stashed :g: / :math: roles with Docutils-safe boundary escaping
+        gm_pat = re.compile(r"\x00GM(\d+)GM\x00")
+        while True:
+            m = gm_pat.search(seg)
+            if not m:
+                break
+            idx = int(m.group(1))
+            rst_val = stashed[idx]
+            start, end = m.start(), m.end()
+            prev_ch = seg[start - 1] if start > 0 else " "
+            next_ch = seg[end] if end < len(seg) else " "
+
+            need_pre = prev_ch not in " \t\n-:/'\"<([{"
+            need_post = (
+                next_ch not in " \t\n-.,:;!?/'\")>]}"
+            ) and not seg[end:].startswith(r"\ ")
+
+            prefix = r"\ " if need_pre else ""
+            suffix = r"\ " if need_post else ""
+            seg = seg[:start] + prefix + rst_val + suffix + seg[end:]
+
+        return seg
+
+    return _apply_outside_rst_spans(text, _replace_geom)
 
 
 _GLOSSARY_PATTERN_CACHE: dict[int, tuple[dict[str, str], re.Pattern[str]]] = {}

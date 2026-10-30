@@ -11,13 +11,13 @@ X(484) = 1st EVANS PERSPECTOR
 
 .. enunciation::
 
-   :ref:`X(484) <X(484)>` is the perspector of the :term:`excentral triangle <excentral-triangle>` and the triangle A'B'C', where A' is the reflection of vertex A in sideline BC and B', C' are determined cyclically. (Lawrence Evans, 10/22/98)
+   :ref:`X(484) <X(484)>` is the perspector of the :term:`excentral triangle <excentral-triangle>` and the triangle :g:`A'B'C' << A' B' C' >>`, where :g:`A' <A'>` is the reflection of vertex :g:`A <A>` in sideline :g:`BC <[ B C ]>` and :g:`B' <B'>`, :g:`C' <C'>` are determined cyclically. (Lawrence Evans, 10/22/98)
 
 .. figure:: x-00484.svg
    :alt: X(484) = 1st EVANS PERSPECTOR
    :align: center
 
-   **X(484) = 1st EVANS PERSPECTOR** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(484) = 1st EVANS PERSPECTOR** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,7 +28,7 @@ X(484) = 1st EVANS PERSPECTOR
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`a^3 + a^2 (b + c) - a (b^2 + b c + c^2) - (b - c)^2 (b + c) : :`
+   * **Trilinears:** :math:`a^{3} + a^{2} (b + c) - a (b^{2} + b c + c^{2}) - (b - c)^{2} (b + c) : :`
 
 .. container:: note-item
 
@@ -53,7 +53,7 @@ X(484) = 1st EVANS PERSPECTOR
    * :ref:`X(484) <X(484)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(650) <X(650)>`\ X(1100)
    * :ref:`X(484) <X(484)>` = {:ref:`X(1) <X(1)>`\ \ :ref:`X(46) <X(46)>`}-harmonic conjugate of X(3336)
    * :ref:`X(484) <X(484)>` = inverse-in-incircle of X(5045)
-   * :ref:`X(484) <X(484)>` = perspector of ABC and the reflection of the :term:`incentral triangle <incentral-triangle>` in the antiorthic axis (the reflection of the :term:`cevian triangle <cevian-triangle>` of :ref:`X(1) <X(1)>` in the :term:`trilinear polar <trilinear-polar>` of :ref:`X(1) <X(1)>`)
+   * :ref:`X(484) <X(484)>` = perspector of :g:`ABC << A B C >>` and the reflection of the :term:`incentral triangle <incentral-triangle>` in the antiorthic axis (the reflection of the :term:`cevian triangle <cevian-triangle>` of :ref:`X(1) <X(1)>` in the :term:`trilinear polar <trilinear-polar>` of :ref:`X(1) <X(1)>`)
    * :ref:`X(484) <X(484)>` = reflection of :ref:`X(36) <X(36)>` in the antiorthic axis
    * :ref:`X(484) <X(484)>` = :ref:`X(30) <X(30)>`-Ceva conjugate of X(3465)
    * :ref:`X(484) <X(484)>` = :ref:`X(186) <X(186)>`-of-excentral-triangle

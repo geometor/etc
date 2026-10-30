@@ -10,23 +10,19 @@ X(475) = EULER LINE INTERCEPT OF LINE X(10)X(34)
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(475) <X(475)>` has Shinagawa coefficients ($a$F,-abc).
+   As a point on the Euler line, :ref:`X(475) <X(475)>` has Shinagawa coefficients :math:`(\$a\$F,-abc)`.
 
 .. figure:: x-00475.svg
    :alt: X(475) = EULER LINE INTERCEPT OF LINE X(10)X(34)
    :align: center
 
-   **X(475) = EULER LINE INTERCEPT OF LINE X(10)X(34)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(475) = EULER LINE INTERCEPT OF LINE X(10)X(34)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`\sec A - (a + b + c)/a : \sec B - (a + b + c)/b : \sec C - (a + b + c)/c`
    | **Barycentrics:** :math:`a \sec A - (a + b + c) : b \sec B - (a + b + c) : c \sec C - (a + b + c)`
    | **Search Value (6, 9, 13):** :math:`1.816163529168`
-
-.. container:: note-item
-
-   :ref:`X(475) <X(475)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines

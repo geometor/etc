@@ -13,6 +13,7 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     incenter_of,
+    intersect_lines,
     point_from_barycentrics,
     promote_point_to_top,
 )
@@ -23,13 +24,13 @@ def construct_x_00501(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(501) = MIQUEL ASSOCIATE OF INCENTER on reference triangle ABC."""
-    X_501 = eval_trilinear_point(model, A, B, C, 'a*(a**(3)- b**(3)- c**(3)- b*c*(a + b + c) + a*b*(a - b) + a*c*(a - c))/(b + c)', ID="X(501)", classes=["selected", "target"])
-    X_36 = eval_trilinear_point(model, A, B, C, '1 - 2*cos(A)', ID="X(36)", classes=["center", "incident"])
-    X_58 = eval_trilinear_point(model, A, B, C, 'a/(b + c)', ID="X(58)", classes=["center", "incident"])
-    central_line(model, X_36, X_58, 36, 58, incident=True)
-    X_35 = eval_trilinear_point(model, A, B, C, '1 + 2*cos(A)', ID="X(35)", classes=["center", "incident"])
-    X_110 = eval_trilinear_point(model, A, B, C, 'csc(B - C)', ID="X(110)", classes=["center", "incident"])
-    central_line(model, X_35, X_110, 35, 110, incident=True)
+    X_36 = eval_trilinear_point(model, A, B, C, '1 - 2*cos(A)', ID="X(36)", classes=["center"])
+    X_58 = eval_trilinear_point(model, A, B, C, 'a/(b + c)', ID="X(58)", classes=["center"])
+    X_35 = eval_trilinear_point(model, A, B, C, '1 + 2*cos(A)', ID="X(35)", classes=["center"])
+    X_110 = eval_trilinear_point(model, A, B, C, 'csc(B - C)', ID="X(110)", classes=["center"])
+    central_line(model, X_36, X_58, 36, 58)
+    central_line(model, X_35, X_110, 35, 110)
+    X_501 = intersect_lines(model, X_36, X_58, X_35, X_110, ID="X(501)", classes=["selected", "target"])
     X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
     X_229 = point_from_barycentrics(model, A, B, C, 0.21061481, 0.29086323, 0.49852195, ID="X(229)", classes=["center", "incident"])
     central_line(model, X_1, X_229, 1, 229, incident=True)

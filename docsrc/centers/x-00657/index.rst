@@ -16,7 +16,7 @@ X(657) = CROSSDIFFERENCE OF X(1) AND X(7)
    :alt: X(657) = CROSSDIFFERENCE OF X(1) AND X(7)
    :align: center
 
-   **X(657) = CROSSDIFFERENCE OF X(1) AND X(7)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(657) = CROSSDIFFERENCE OF X(1) AND X(7)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -26,18 +26,14 @@ X(657) = CROSSDIFFERENCE OF X(1) AND X(7)
 .. collapse:: Alternate Coordinates
    :badge: 3 forms
 
-   * **Trilinears:** :math:`\sec^2(B/2) - \sec^2(C/2) : :`
-   * **Trilinears:** :math:`\tan^2(B/2) - \tan^2(C/2) : :`
-   * **Trilinears:** :math:`a(b - c)(b + c - a)^2 : :`
+   * **Trilinears:** :math:`\sec^{2}(B/2) - \sec^{2}(C/2) : :`
+   * **Trilinears:** :math:`\tan^{2}(B/2) - \tan^{2}(C/2) : :`
+   * **Trilinears:** :math:`a(b - c)(b + c - a)^{2} : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(657) <X(657)>` = 2 :ref:`X(9) <X(9)>` + X(45755), :ref:`X(649) <X(649)>` - 4 X(22108), 2 X(4130) - 3 X(14427), X(4171) + 2 X(4827), X(4171) - 3 X(14427), 2 X(4827) + 3 X(14427), 4 X(14330) - X(42462)
-
-.. container:: note-item
-
-   :ref:`X(657) <X(657)>` lies.
+   * :ref:`X(657) <X(657)>` = :math:`2` :ref:`X(9) <X(9)>` + X(45755), :ref:`X(649) <X(649)>` - :math:`4` X(22108), :math:`2` X(4130) - :math:`3` X(14427), X(4171) + :math:`2` X(4827), X(4171) - :math:`3` X(14427), :math:`2` X(4827) + :math:`3` X(14427), :math:`4` X(14330) - X(42462)
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines

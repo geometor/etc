@@ -10,23 +10,19 @@ X(256) = 1st SHARYGIN POINT
 
 .. enunciation::
 
-   See the description at X(1281). The lines AD, BE, CF defined there concur in :ref:`X(256) <X(256)>`.
+   See the description at X(1281). The lines :g:`AD <[ A D ]>`, :g:`BE <[ B E ]>`, :g:`CF <[ C F ]>` defined there concur in :ref:`X(256) <X(256)>`.
 
 .. figure:: x-00256.svg
    :alt: X(256) = 1st SHARYGIN POINT
    :align: center
 
-   **X(256) = 1st SHARYGIN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(256) = 1st SHARYGIN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`1/(a^{2} + bc) : 1/(b^{2} + ca) : 1/(c^{2} + ab)`
    | **Barycentrics:** :math:`a/(a^{2} + bc) : b/(b^{2} + ca) : c/(c^{2} + ab)`
    | **Search Value (6, 9, 13):** :math:`2.007180702620`
-
-.. container:: note-item
-
-   :ref:`X(256) <X(256)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 15 lines
@@ -44,7 +40,7 @@ X(256) = 1st SHARYGIN POINT
    * :ref:`X(256) <X(256)>` = :ref:`X(238) <X(238)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(904) <X(904)>`
    * :ref:`X(256) <X(256)>` = :term:`cevapoint <cevapoint>` of PU(6)
    * :ref:`X(256) <X(256)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(650) <X(650)>`\ X(3250)
-   * :ref:`X(256) <X(256)>` = :term:`crossdifference <crossdifference>` of every pair of points on line X(3287)X(3805) (the perspectrix of ABC and Gemini triangle 34)
+   * :ref:`X(256) <X(256)>` = :term:`crossdifference <crossdifference>` of every pair of points on line X(3287)X(3805) (the perspectrix of :g:`ABC << A B C >>` and Gemini triangle 34)
 
 .. toctree::
    :hidden:

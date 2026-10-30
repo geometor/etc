@@ -10,22 +10,18 @@ X(280) = X(1)-CROSS CONJUGATE OF X(8)
 
 .. enunciation::
 
-   Let Ea be the ellipse passing through A, and with foci at B and C (the A-Soddy ellipse). Let La be the polar of :ref:`X(20) <X(20)>` with respect to Ea. Define Lb and Lc cyclically. Let A' = Lb∩Lc, B' = Lc∩La, C' = La∩Lb. The lines AA', BB', CC' concur in :ref:`X(280) <X(280)>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
+   Let :g:`E_{a} <E_a>` be the ellipse passing through :g:`A <A>`, and with foci at :g:`B <B>` and :g:`C <C>` (the A-Soddy ellipse). Let :g:`L_{a} <L_a>` be the polar of :ref:`X(20) <X(20)>` with respect to :g:`E_{a} <E_a>`. Define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, :g:`B' <B'>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C' <C'>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(280) <X(280)>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
 
 .. figure:: x-00280.svg
    :alt: X(280) = X(1)-CROSS CONJUGATE OF X(8)
    :align: center
 
-   **X(280) = X(1)-CROSS CONJUGATE OF X(8)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(280) = X(1)-CROSS CONJUGATE OF X(8)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(\csc^{2}A/2)/(-1 - \cos A + \cos B + \cos C)`
+   | **Trilinears:** :math:`(\csc^{2} A/2)/(-1 - \cos A + \cos B + \cos C)`
    | **Search Value (6, 9, 13):** :math:`5.034628048323`
-
-.. container:: note-item
-
-   :ref:`X(280) <X(280)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines

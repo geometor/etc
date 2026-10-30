@@ -12,7 +12,7 @@ X(196) = X(7)-CEVA CONJUGATE OF X(4) — Code
    :alt: X(196) = X(7)-CEVA CONJUGATE OF X(4)
    :align: center
 
-   **X(196) = X(7)-CEVA CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(196) = X(7)-CEVA CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

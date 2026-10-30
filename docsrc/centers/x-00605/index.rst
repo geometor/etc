@@ -16,7 +16,7 @@ X(605) = INTERSECTION OF LINES X(371)X(602) AND X(372)X(601)
    :alt: X(605) = INTERSECTION OF LINES X(371)X(602) AND X(372)X(601)
    :align: center
 
-   **X(605) = INTERSECTION OF LINES X(371)X(602) AND X(372)X(601)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(605) = INTERSECTION OF LINES X(371)X(602) AND X(372)X(601)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,10 +28,6 @@ X(605) = INTERSECTION OF LINES X(371)X(602) AND X(372)X(601)
    :badge: 1 form
 
    * **Trilinears:** :math:`a^{2}(S + bc) : b^{2}(S + ca) : c^{2}(S + ab)`
-
-.. container:: note-item
-
-   :ref:`X(605) <X(605)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines

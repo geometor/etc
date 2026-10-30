@@ -12,7 +12,6 @@ from geometor.etc.ops import (
     circumcenter_of,
     construct_baseline_triangle,
     create_model,
-    eval_barycentric_point,
     eval_trilinear_point,
     incenter_of,
     intersect_lines,
@@ -29,7 +28,7 @@ def construct_x_00820(
     X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
     X_29 = eval_trilinear_point(model, A, B, C, '(sec(A))/(cos(B) + cos(C))', ID="X(29)", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
-    X_296 = eval_barycentric_point(model, A, B, C, 'a**(2)*(a + b - c)*(a - b + c)*(a**(2) - b**(2) - c**(2))*(a**(2)*b**(2) - b**(4) + a**(3)*c - a*b**(2)*c - 2*a**(2)*c**(2) + b**(2)*c**(2) + a*c**(3))*(a**(3)*b - 2*a**(2)*b**(2) + a*b**(3) + a**(2)*c**(2) - a*b*c**(2) + b**(2)*c**(2) - c**(4))', ID="X(296)", classes=["center"])
+    X_296 = point_from_barycentrics(model, A, B, C, 0.33787725, 0.81509072, -0.15296798, ID="X(296)", classes=["center"])
     central_line(model, X_1, X_29, 1, 29)
     central_line(model, X_3, X_296, 3, 296)
     X_820 = intersect_lines(model, X_1, X_29, X_3, X_296, ID="X(820)", classes=["selected", "target"])

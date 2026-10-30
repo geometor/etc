@@ -10,13 +10,13 @@ X(72) = ISOGONAL CONJUGATE OF X(28)
 
 .. enunciation::
 
-   Let Ia be the reflection of :ref:`X(1) <X(1)>` in the perpendicular bisector of BC, and define Ib and Ic cyclically. :ref:`X(72) <X(72)>` = :ref:`X(11) <X(11)>` of IaIbIc. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
+   Let :g:`I_{a} <I_a>` be the reflection of :ref:`X(1) <X(1)>` in the perpendicular bisector of :g:`BC <[ B C ]>`, and define :g:`I_{b} <I_b>` and :g:`I_{c} <I_c>` cyclically. :ref:`X(72) <X(72)>` = :ref:`X(11) <X(11)>` of :g:`I_{a}I_{b}I_{c} << I_a I_b I_c >>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
 
 .. figure:: x-00072.svg
    :alt: X(72) = ISOGONAL CONJUGATE OF X(28)
    :align: center
 
-   **X(72) = ISOGONAL CONJUGATE OF X(28)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(72) = ISOGONAL CONJUGATE OF X(28)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -32,7 +32,7 @@ X(72) = ISOGONAL CONJUGATE OF X(28)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(72) <X(72)>` = (r + 2R)\*\ :ref:`X(1) <X(1)>` - 3R\*\ :ref:`X(2) <X(2)>` - r\*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
+   * :ref:`X(72) <X(72)>` = :math:`(r + 2R)` :ref:`X(1) <X(1)>` - :math:`3R` :ref:`X(2) <X(2)>` - :math:`r` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. container:: note-item
 
@@ -66,9 +66,9 @@ X(72) = ISOGONAL CONJUGATE OF X(28)
    * :ref:`X(72) <X(72)>` = :ref:`X(92) <X(92)>`-isoconjugate of X(1333)
    * :ref:`X(72) <X(72)>` = inverse-in-Fuhrmann-circle of X(3419)
    * :ref:`X(72) <X(72)>` = X(6146)-of-excentral-triangle
-   * :ref:`X(72) <X(72)>` = perspector of ABC and cross-triangle of ABC and 2nd :term:`extouch triangle <extouch-triangle>`
+   * :ref:`X(72) <X(72)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and 2nd :term:`extouch triangle <extouch-triangle>`
    * :ref:`X(72) <X(72)>` = trilinear product of Jerabek hyperbola intercepts of Nagel line
-   * :ref:`X(72) <X(72)>` = excentral-to-ABC :term:`barycentric image <barycentric-image>` of :ref:`X(4) <X(4)>`
+   * :ref:`X(72) <X(72)>` = excentral-to-:g:`ABC << A B C >>` :term:`barycentric image <barycentric-image>` of :ref:`X(4) <X(4)>`
    * :ref:`X(72) <X(72)>` = antipode of X(1145) in the Mandart hyperbola
    * :ref:`X(72) <X(72)>` = extouch-isogonal conjugate of X(5687)
 

@@ -16,7 +16,7 @@ X(62) = ISOGONAL CONJUGATE OF X(18)
    :alt: X(62) = ISOGONAL CONJUGATE OF X(18)
    :align: center
 
-   **X(62) = ISOGONAL CONJUGATE OF X(18)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(62) = ISOGONAL CONJUGATE OF X(18)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -45,8 +45,8 @@ X(62) = ISOGONAL CONJUGATE OF X(18)
    * :ref:`X(62) <X(62)>` = :ref:`X(13) <X(13)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(15) <X(15)>`
    * :ref:`X(62) <X(62)>` = :term:`crosspoint <crosspoint>` of :ref:`X(303) <X(303)>` and :ref:`X(472) <X(472)>`
    * :ref:`X(62) <X(62)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(523) <X(523)>`\ X(14447)
-   * :ref:`X(62) <X(62)>` = point of concurrence of Brocard axes of BC\ :ref:`X(16) <X(16)>`, CA\ :ref:`X(16) <X(16)>`, AB\ :ref:`X(16) <X(16)>`
-   * :ref:`X(62) <X(62)>` = perspector of ABC and centers of circles used in construction of X(1338)
+   * :ref:`X(62) <X(62)>` = point of concurrence of Brocard axes of :g:`BC <[ B C ]>`\ :ref:`X(16) <X(16)>`, :g:`CA <[ C A ]>`\ :ref:`X(16) <X(16)>`, :g:`AB <[ A B ]>`\ :ref:`X(16) <X(16)>`
+   * :ref:`X(62) <X(62)>` = perspector of :g:`ABC << A B C >>` and centers of circles used in construction of X(1338)
    * :ref:`X(62) <X(62)>` = :ref:`X(62) <X(62)>`-of-circumsymmedial-triangle
    * :ref:`X(62) <X(62)>` = orthocorrespondent of :ref:`X(15) <X(15)>`
    * :ref:`X(62) <X(62)>` = {:ref:`X(16) <X(16)>`,\ :ref:`X(61) <X(61)>`}-harmonic conjugate of :ref:`X(3) <X(3)>`

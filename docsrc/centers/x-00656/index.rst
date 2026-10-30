@@ -16,7 +16,7 @@ X(656) = CROSSDIFFERENCE OF X(1) AND X(19)
    :alt: X(656) = CROSSDIFFERENCE OF X(1) AND X(19)
    :align: center
 
-   **X(656) = CROSSDIFFERENCE OF X(1) AND X(19)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(656) = CROSSDIFFERENCE OF X(1) AND X(19)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -30,17 +30,13 @@ X(656) = CROSSDIFFERENCE OF X(1) AND X(19)
    * **Trilinears:** :math:`\sin 2B - \sin 2C : :`
    * **Trilinears:** :math:`\cos A \sin(B - C) : :`
    * **Trilinears:** :math:`b \cos(C - A) - c \cos(B - A) : :`
-   * **Trilinears:** :math:`(b^2 - c^2)(b^2 + c^2 - a^2) : :`
-   * **Trilinears:** :math:`d(a,b,c) : :`, where d(a,b,c) = directed distance from A to Euler line
+   * **Trilinears:** :math:`(b^{2} - c^{2})(b^{2} + c^{2} - a^{2}) : :`
+   * **Trilinears:** :math:`d(a,b,c) : :`, where d(a,b,c) = directed distance from :g:`A <A>` to Euler line
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(656) <X(656)>` = 2 X(1734) + X(1769), 3 X(2457) - 2 X(7178), 3 X(2457) - X(23752), 2 X(4036) - 3 X(21052), X(4064) - 3 X(14429), 2 X(7253) - 3 X(45686), 4 X(8062) - 3 X(45686), 3 X(11125) - 2 X(44409), 3 X(19875) - 2 X(45660), 3 X(41800) - X(44409)>
-
-.. container:: note-item
-
-   :ref:`X(656) <X(656)>` lies.
+   * :ref:`X(656) <X(656)>` = :math:`2` X(1734) + X(1769), :math:`3` X(2457) - :math:`2` X(7178), :math:`3` X(2457) - X(23752), :math:`2` X(4036) - :math:`3` X(21052), X(4064) - :math:`3` X(14429), :math:`2` X(7253) - :math:`3` X(45686), :math:`4` X(8062) - :math:`3` X(45686), :math:`3` X(11125) - :math:`2` X(44409), :math:`3` X(19875) - :math:`2` X(45660), :math:`3` X(41800) - X(44409):math:`>`
 
 .. collapse:: Incident Central Lines
    :badge: 116 lines
@@ -74,13 +70,13 @@ X(656) = CROSSDIFFERENCE OF X(1) AND X(19)
    * :ref:`X(656) <X(656)>` = trilinear product of PU(75)
    * :ref:`X(656) <X(656)>` = trilinear pole of PU(75) (line X(2631)X(2632))
    * :ref:`X(656) <X(656)>` = PU(127)-harmonic conjugate of :ref:`X(19) <X(19)>`
-   * :ref:`X(656) <X(656)>` = perspector of hyperbola {A,B,C,\ :ref:`X(1) <X(1)>`,\ :ref:`X(63) <X(63)>`}
+   * :ref:`X(656) <X(656)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(1) <X(1)>`,\ :ref:`X(63) <X(63)>`}
    * :ref:`X(656) <X(656)>` = intersection of :term:`trilinear polars <trilinear-polar>` of :ref:`X(1) <X(1)>` and :ref:`X(63) <X(63)>`
    * :ref:`X(656) <X(656)>` = pole wrt polar circle of trilinear polar of :ref:`X(823) <X(823)>` (line :ref:`X(1) <X(1)>`\ \ :ref:`X(29) <X(29)>`)
    * :ref:`X(656) <X(656)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X(823) <X(823)>`
    * :ref:`X(656) <X(656)>` = :ref:`X(92) <X(92)>`-isoconjugate of :ref:`X(163) <X(163)>`
    * :ref:`X(656) <X(656)>` = :ref:`X(6) <X(6)>`-isoconjugate of :ref:`X(648) <X(648)>`
-   * :ref:`X(656) <X(656)>` = center of conic {A,B,C,X(1021),X(2765)} (the isogonal conjugate of line :ref:`X(108) <X(108)>`\ \ :ref:`X(109) <X(109)>`)
+   * :ref:`X(656) <X(656)>` = center of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,X(1021),X(2765)} (the isogonal conjugate of line :ref:`X(108) <X(108)>`\ \ :ref:`X(109) <X(109)>`)
    * :ref:`X(656) <X(656)>` = trilinear square root of X(2632)
    * :ref:`X(656) <X(656)>` = barycentric square root of X(3269)
    * :ref:`X(656) <X(656)>` = circle-{:ref:`X(11) <X(11)>`,\ :ref:`X(36) <X(36)>`,\ :ref:`X(65) <X(65)>`}}-inverse of X(36035)

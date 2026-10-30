@@ -26,7 +26,7 @@ def construct_x_00156(
 ) -> spg.Point:
     """Construct X(156) = X(5)-OF-TANGENTIAL-TRIANGLE on reference triangle ABC."""
     X_26 = eval_trilinear_point(model, A, B, C, 'a*(b**(2)*cos(2*B) + c**(2)*cos(2*C) - a**(2)*cos(2*A))', ID="X(26)", classes=["center"])
-    X_155 = eval_barycentric_point(model, A, B, C, 'a**(2)*SA*(a**(2)*(SA**(2) - SB*SC) - SA*(SB**(2) + SC**(2)))', ID="X(155)", classes=["center"])
+    X_155 = eval_barycentric_point(model, A, B, C, 'a**(2)*(a**(2) - b**(2) - c**(2))*(a**(6) - 3*a**(4)*(b**(2) + c**(2)) + a**(2)*(3*b**(4) - 2*b**(2)*c**(2) + 3*c**(4)) - (b**(2) - c**(2))**(2)*(b**(2) + c**(2)))', ID="X(155)", classes=["center"])
     X_156 = midpoint(model, X_26, X_155, ID="X(156)", classes=["selected", "target"], guide=False)
     X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
     X_49 = eval_trilinear_point(model, A, B, C, 'cos(3*A)', ID="X(49)", classes=["center", "incident"])

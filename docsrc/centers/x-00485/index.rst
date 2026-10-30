@@ -11,7 +11,7 @@ X(485) = VECTEN POINT
 
 .. enunciation::
 
-   Erect a square outwardly from each side of triangle ABC. Let A'B'C' be the triangle formed by the respective centers of the squares. The lines AA', BB', CC' concur in :ref:`X(485) <X(485)>`. For details, visit :person:`Floor van Lamoen <floor-van-lamoen>`'s site, `Vierkanten in een driehoek: 1. Omgeschreven vierkanten <http://home.wxs.nl/~lamoen/wiskunde/vierkant.html>`__ (van Lamoen, 4/26/98) and his article "Friendship Among :term:`Triangle Centers <triangle-center>`," *:cite:`Forum Geometricorum <forum-geometricorum>`,* 1 (2001) 1-6. See also :person:`Paul Yiu <paul-yiu>`'s papers, `"Squares Erected on the Sides of a Triangle" <http://www.math.fau.edu/yiu/bottema38.pdf>`__, and `"On the Squares Erected Externally on the Sides of a Triangle" <http://www.math.fau.edu/yiu/square.pdf>`__.
+   Erect a square outwardly from each side of triangle :g:`ABC << A B C >>`. Let :g:`A'B'C' << A' B' C' >>` be the triangle formed by the respective centers of the squares. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(485) <X(485)>`. For details, visit :person:`Floor van Lamoen <floor-van-lamoen>`'s site, `Vierkanten in een driehoek: 1. Omgeschreven vierkanten <http://home.wxs.nl/~lamoen/wiskunde/vierkant.html>`__ (van Lamoen, 4/26/98) and his article "Friendship Among :term:`Triangle Centers <triangle-center>`," *:cite:`Forum Geometricorum <forum-geometricorum>`,* 1 (2001) 1-6. See also :person:`Paul Yiu <paul-yiu>`'s papers, `"Squares Erected on the Sides of a Triangle" <http://www.math.fau.edu/yiu/bottema38.pdf>`__, and `"On the Squares Erected Externally on the Sides of a Triangle" <http://www.math.fau.edu/yiu/square.pdf>`__.
 
 .. _preamble-0010:
 
@@ -24,7 +24,7 @@ X(485) = VECTEN POINT
    :alt: X(485) = VECTEN POINT
    :align: center
 
-   **X(485) = VECTEN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(485) = VECTEN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -37,12 +37,12 @@ X(485) = VECTEN POINT
 
    * **Trilinears:** :math:`1/(\sin A + \cos A) : 1/(\sin B + \cos B) : 1/(\sin C + \cos C)`
    * **Trilinears:** :math:`\sin A + \cos(B - C) : \sin B + \cos(C - A) : \sin C + \cos(A - B)`
-   * **Barycentrics:** :math:`1/(SA + S) : :`
+   * **Barycentrics:** :math:`1/(S_{A} + S) : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(485) <X(485)>` = X(7981) + 2 X(9907), X(7981) - 4 X(12269), X(9907) + 2 X(12269), 3 :ref:`X(2) <X(2)>` - 4 X(6118), 3 :ref:`X(2) <X(2)>` + X(12222), 2 :ref:`X(2) <X(2)>` + X(22485), :ref:`X(488) <X(488)>` - 4 X(6118), 2 :ref:`X(488) <X(488)>` + 3 X(22485), 2 :ref:`X(641) <X(641)>` + X(12222), 4 :ref:`X(641) <X(641)>` + 3 X(22485), 4 X(6118) + X(12222), 8 X(6118) + 3 X(22485), 2 X(6311) - 3 X(9768), 2 X(12222) - 3 X(22485), 3 X(35822) - X(35832), 3 :ref:`X(3) <X(3)>` + X(22810), X(12124) + 2 X(12602), 3 X(12124) + 2 X(22810), X(12124) - 4 X(49104), 3 X(12602) - X(22810), X(12602) + 2 X(49104), 2 X(13882) + X(22646), X(22810) + 6 X(49104), X(32495) + 2 X(32497), :ref:`X(4) <X(4)>` + 2 X(48735), 2 X(6250) + X(12257), 2 X(13879) + X(32499), X(35821) - 3 X(35831), 4 :ref:`X(5) <X(5)>` - X(6278), 4 :ref:`X(5) <X(5)>` + X(6279), 2 :ref:`X(5) <X(5)>` + X(49318), X(6278) + 2 X(49318), X(6279) + 2 X(6289), 2 X(7584) - 3 X(49221), 4 X(13881) - X(22591), 2 X(13881) + X(22592), 5 X(19102) - 4 X(19116), 3 X(19103) - 4 X(19117), X(22591) + 2 X(22592), X(49552) + 2 X(49622), 2 X(13876) + X(22630), 2 X(13875) + X(22632), X(22628) + 2 X(22925), X(22626) + 2 X(22880), 2 X(1131) + X(45076), 2 X(1151) + 3 X(1327), X(1151) - 3 X(13846), and many others
+   * :ref:`X(485) <X(485)>` = X(7981) + :math:`2` X(9907), X(7981) - :math:`4` X(12269), X(9907) + :math:`2` X(12269), :math:`3` :ref:`X(2) <X(2)>` - :math:`4` X(6118), :math:`3` :ref:`X(2) <X(2)>` + X(12222), :math:`2` :ref:`X(2) <X(2)>` + X(22485), :ref:`X(488) <X(488)>` - :math:`4` X(6118), :math:`2` :ref:`X(488) <X(488)>` + :math:`3` X(22485), :math:`2` :ref:`X(641) <X(641)>` + X(12222), :math:`4` :ref:`X(641) <X(641)>` + :math:`3` X(22485), :math:`4` X(6118) + X(12222), :math:`8` X(6118) + :math:`3` X(22485), :math:`2` X(6311) - :math:`3` X(9768), :math:`2` X(12222) - :math:`3` X(22485), :math:`3` X(35822) - X(35832), :math:`3` :ref:`X(3) <X(3)>` + X(22810), X(12124) + :math:`2` X(12602), :math:`3` X(12124) + :math:`2` X(22810), X(12124) - :math:`4` X(49104), :math:`3` X(12602) - X(22810), X(12602) + :math:`2` X(49104), :math:`2` X(13882) + X(22646), X(22810) + :math:`6` X(49104), X(32495) + :math:`2` X(32497), :ref:`X(4) <X(4)>` + :math:`2` X(48735), :math:`2` X(6250) + X(12257), :math:`2` X(13879) + X(32499), X(35821) - :math:`3` X(35831), :math:`4` :ref:`X(5) <X(5)>` - X(6278), :math:`4` :ref:`X(5) <X(5)>` + X(6279), :math:`2` :ref:`X(5) <X(5)>` + X(49318), X(6278) + :math:`2` X(49318), X(6279) + :math:`2` X(6289), :math:`2` X(7584) - :math:`3` X(49221), :math:`4` X(13881) - X(22591), :math:`2` X(13881) + X(22592), :math:`5` X(19102) - :math:`4` X(19116), :math:`3` X(19103) - :math:`4` X(19117), X(22591) + :math:`2` X(22592), X(49552) + :math:`2` X(49622), :math:`2` X(13876) + X(22630), :math:`2` X(13875) + X(22632), X(22628) + :math:`2` X(22925), X(22626) + :math:`2` X(22880), :math:`2` X(1131) + X(45076), :math:`2` X(1151) + :math:`3` X(1327), X(1151) - :math:`3` X(13846), and many others
 
 .. container:: note-item
 
@@ -84,7 +84,7 @@ X(485) = VECTEN POINT
    * :ref:`X(485) <X(485)>` = trilinear product of vertices of outer Vecten triangle
    * :ref:`X(485) <X(485)>` = :ref:`X(4) <X(4)>`-of-outer-Vecten-triangle
    * :ref:`X(485) <X(485)>` = :ref:`X(4) <X(4)>`-of-:ref:`X(2) <X(2)>`-quadsquares-triangle
-   * :ref:`X(485) <X(485)>` = perspector of ABC and inner-squares triangle
+   * :ref:`X(485) <X(485)>` = perspector of :g:`ABC << A B C >>` and inner-squares triangle
    * :ref:`X(485) <X(485)>` = perspector of 3rd tri-squares triangle and 3rd tri-squares :term:`central triangle <central-triangle>`
    * :ref:`X(485) <X(485)>` = Kosnita(:ref:`X(485) <X(485)>`,\ :ref:`X(485) <X(485)>`) point
    * :ref:`X(485) <X(485)>` = 3rd-tri-squares-isogonal conjugate of X(32497)

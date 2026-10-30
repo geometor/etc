@@ -10,24 +10,20 @@ X(105) = Λ(INCENTER, SYMMEDIAN POINT)
 
 .. enunciation::
 
-   :ref:`X(105) <X(105)>` is the perspector of ABC and the (degenerate) side-triangle of the circumcevian triangles of X(3513) and X(3514). (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
+   :ref:`X(105) <X(105)>` is the perspector of :g:`ABC << A B C >>` and the (degenerate) side-triangle of the circumcevian triangles of X(3513) and X(3514). (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
 
 .. figure:: x-00105.svg
    :alt: X(105) = Λ(INCENTER, SYMMEDIAN POINT)
    :align: center
 
-   **X(105) = Λ(INCENTER, SYMMEDIAN POINT)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(105) = Λ(INCENTER, SYMMEDIAN POINT)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`1/[b^{2} + c^{2} - a(b + c)] : 1/[c^{2} + a^{2} - b(c + a)] : 1/[a^{2} + b^{2} - c(a + b)]`
    | **Barycentrics:** :math:`a/[b^{2} + c^{2} - a(b + c)] : b/[c^{2} + a^{2} - b(c + a)] : c/[a^{2} + b^{2} - c(a + b)]`
-   | **Tripolars:** :math:`|b^2 + c^2 - a (b + c)| : :`
+   | **Tripolars:** :math:`|b^{2} + c^{2} - a (b + c)| : :`
    | **Search Value (6, 9, 13):** :math:`2.693929186947`
-
-.. container:: note-item
-
-   :ref:`X(105) <X(105)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 291 lines

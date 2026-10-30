@@ -26,7 +26,7 @@ def construct_x_00642(
 ) -> spg.Point:
     """Construct X(642) = COMPLEMENT OF X(486) on reference triangle ABC."""
     X_486 = eval_trilinear_point(model, A, B, C, 'sec(A + pi /4)', ID="X(486)", classes=["center"])
-    X_487 = eval_trilinear_point(model, A, B, C, '(cos(A))*(1 - csc(A)*sin(B)*sin(C))', ID="X(487)", classes=["center"])
+    X_487 = point_from_barycentrics(model, A, B, C, -1.1839423, 1.1273575, 1.0565848, ID="X(487)", classes=["center"])
     X_642 = midpoint(model, X_486, X_487, ID="X(642)", classes=["selected", "target"], guide=False)
     X_140 = eval_trilinear_point(model, A, B, C, '2*cos(A) + cos(B - C)', ID="X(140)", classes=["center", "incident"])
     X_141 = eval_trilinear_point(model, A, B, C, 'b*c*(b**(2) + c**(2))', ID="X(141)", classes=["center", "incident"])

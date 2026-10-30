@@ -16,16 +16,12 @@ X(900) = CROSSDIFFERENCE OF X(6) AND X(101)
    :alt: X(900) = CROSSDIFFERENCE OF X(6) AND X(101)
    :align: center
 
-   **X(900) = CROSSDIFFERENCE OF X(6) AND X(101)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(900) = CROSSDIFFERENCE OF X(6) AND X(101)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`(b - c)(b + c - 2a)/a : :`
    | **Barycentrics:** :math:`(b - c)(b + c - 2a) : (c - a)(c + a - 2b) : (a - b)(a + b - 2c)`
-
-.. container:: note-item
-
-   :ref:`X(900) <X(900)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 7 lines
@@ -58,11 +54,11 @@ Notes
 
 .. container:: note-item
 
-   Let I\ :sub:`a` be the reflection of :ref:`X(1) <X(1)>` in the perpendicular bisector of BC, and define I\ :sub:`b` and I\ :sub:`c` cyclically; then :ref:`X(900) <X(900)>` = :ref:`X(513) <X(513)>` of I\ :sub:`a`\ I\ :sub:`b`\ I\ :sub:`c`. (:person:`Randy Hutson <randy-hutson>`, February 10, 2016)
+   Let :g:`I_{a} <I_a>` be the reflection of :ref:`X(1) <X(1)>` in the perpendicular bisector of :g:`BC <[ B C ]>`, and define :g:`I_{b} <I_b>` and :g:`I_{c} <I_c>` cyclically; then :ref:`X(900) <X(900)>` = :ref:`X(513) <X(513)>` of :g:`I_{a}I_{b}I_{c} << I_a I_b I_c >>`. (:person:`Randy Hutson <randy-hutson>`, February 10, 2016)
 
 .. container:: note-item
 
-   Let Ua be the line through :ref:`X(80) <X(80)>` perpendicular to the line A\ :ref:`X(80) <X(80)>`, and define Ub and Uc cyclically. Let Va be the reflection of BC in Ua, and define Vb and Vc cyclically. The lines Va, Vb, Vc are parallel, and they concur in :ref:`X(900) <X(900)>`. (:person:`Angel Montesdeoca <angel-montesdeoca>`, June 30, 2017)
+   Let :g:`U_{a} <U_a>` be the line through :ref:`X(80) <X(80)>` perpendicular to the line A\ :ref:`X(80) <X(80)>`, and define :g:`U_{b} <U_b>` and :g:`U_{c} <U_c>` cyclically. Let :g:`V_{a} <V_a>` be the reflection of :g:`BC <[ B C ]>` in :g:`U_{a} <U_a>`, and define :g:`V_{b} <V_b>` and :g:`V_{c} <V_c>` cyclically. The lines :g:`V_{a} <V_a>`, :g:`V_{b} <V_b>`, :g:`V_{c} <V_c>` are parallel, and they concur in :ref:`X(900) <X(900)>`. (:person:`Angel Montesdeoca <angel-montesdeoca>`, June 30, 2017)
 
 .. toctree::
    :hidden:

@@ -10,13 +10,13 @@ X(69) = SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE
 
 .. enunciation::
 
-   Let A'B'C' be the :term:`anticomplementary triangle <anticomplementary-triangle>`. Let A″ be the inverse-in-anticomplementary-circle of A, and define B″ and C″ cyclically. The lines A'A″, B'B″, C'C″ concur in :ref:`X(69) <X(69)>`. (:person:`Randy Hutson <randy-hutson>`, February 10, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`anticomplementary triangle <anticomplementary-triangle>`. Let :g:`A″ <A″>` be the inverse-in-anticomplementary-circle of :g:`A <A>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(69) <X(69)>`. (:person:`Randy Hutson <randy-hutson>`, February 10, 2016)
 
 .. figure:: x-00069.svg
    :alt: X(69) = SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE
    :align: center
 
-   **X(69) = SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(69) = SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -32,13 +32,13 @@ X(69) = SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE
    * **Barycentrics:** :math:`b^{2} + c^{2} - a^{2} : c^{2} + a^{2} - b^{2} : a^{2} + b^{2} - c^{2}`
    * **Barycentrics:** :math:`\cot B + \cot C - \cot \omega : :`
    * **Barycentrics:** :math:`\cot B + \cot C - \cot A - \cot \omega : :`
-   * **Barycentrics:** :math:`SA : SB : SC`
+   * **Barycentrics:** :math:`S_{A} : S_{B} : S_{C}`
 
 .. collapse:: Linear Combinations
    :badge: 2 combinations
 
-   * :ref:`X(69) <X(69)>` = 2(r\ :sup:`2` + 2rR + s\ :sup:`2`)\*\ :ref:`X(1) <X(1)>` + 3(r\ :sup:`2` - s\ :sup:`2`)\*\ :ref:`X(2) <X(2)>` - 4r\ :sup:`2`\ \*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-   * :ref:`X(69) <X(69)>` = (cot A)\*[A] + (cot B)\*[B] + (cot C)\*[C], where A, B, C denote angles and [A], [B], [C] denote vertices
+   * :ref:`X(69) <X(69)>` = :math:`2(r^{2} + 2rR + s^{2})` :ref:`X(1) <X(1)>` + :math:`3(r^{2} - s^{2})` :ref:`X(2) <X(2)>` - :math:`4r^{2}` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
+   * :ref:`X(69) <X(69)>` = :math:`(\cot A)` :g:`A <A>` + :math:`(\cot B)` :g:`B <B>` + :math:`(\cot C)` :g:`C <C>`, where :g:`A <A>`, :g:`B <B>`, :g:`C <C>` denote angles and :g:`A <A>`, :g:`B <B>`, :g:`C <C>` denote vertices
 
 .. container:: note-item
 
@@ -71,11 +71,11 @@ X(69) = SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE
    * :ref:`X(69) <X(69)>` = bicentric sum of PU(132)
    * :ref:`X(69) <X(69)>` = midpoint of PU(132)
    * :ref:`X(69) <X(69)>` = perspector of the orthic-of-:term:`medial triangle <medial-triangle>` and the reference triangle
-   * :ref:`X(69) <X(69)>` = perspector of ABC and the :term:`pedal triangle <pedal-triangle>` of :ref:`X(20) <X(20)>`
-   * :ref:`X(69) <X(69)>` = perspector of ABC and (reflection in :ref:`X(2) <X(2)>` of the pedal triangle of :ref:`X(2) <X(2)>`)
+   * :ref:`X(69) <X(69)>` = perspector of :g:`ABC << A B C >>` and the :term:`pedal triangle <pedal-triangle>` of :ref:`X(20) <X(20)>`
+   * :ref:`X(69) <X(69)>` = perspector of :g:`ABC << A B C >>` and (reflection in :ref:`X(2) <X(2)>` of the pedal triangle of :ref:`X(2) <X(2)>`)
    * :ref:`X(69) <X(69)>` = intersection of extended sides P(11)U(45) and U(11)P(45) of the trapezoid PU(11)PU(45)
-   * :ref:`X(69) <X(69)>` = perspector of ABC and 4th :term:`extouch triangle <extouch-triangle>`
-   * :ref:`X(69) <X(69)>` = antipode of :ref:`X(287) <X(287)>` in hyperbola {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(69) <X(69)>`}}
+   * :ref:`X(69) <X(69)>` = perspector of :g:`ABC << A B C >>` and 4th :term:`extouch triangle <extouch-triangle>`
+   * :ref:`X(69) <X(69)>` = antipode of :ref:`X(287) <X(287)>` in hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(69) <X(69)>`}}
    * :ref:`X(69) <X(69)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(441) <X(441)>`\ \ :ref:`X(525) <X(525)>`
    * :ref:`X(69) <X(69)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(393) <X(393)>` (line :ref:`X(460) <X(460)>`\ \ :ref:`X(512) <X(512)>`)
    * :ref:`X(69) <X(69)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X(393) <X(393)>`
@@ -83,7 +83,7 @@ X(69) = SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE
    * :ref:`X(69) <X(69)>` = :ref:`X(92) <X(92)>`-isoconjugate of :ref:`X(32) <X(32)>`
    * :ref:`X(69) <X(69)>` = :term:`antigonal image <antigonal-image>` of :ref:`X(895) <X(895)>`
    * :ref:`X(69) <X(69)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`6 <X(6)>`, 3053), (:ref:`32 <X(32)>`, 1974)
-   * :ref:`X(69) <X(69)>` = perspector of ABC and the 2nd pedal triangle of :ref:`X(3) <X(3)>`
+   * :ref:`X(69) <X(69)>` = perspector of :g:`ABC << A B C >>` and the 2nd pedal triangle of :ref:`X(3) <X(3)>`
    * :ref:`X(69) <X(69)>` = crosspoint of :ref:`X(6) <X(6)>` and :ref:`X(159) <X(159)>` wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
    * :ref:`X(69) <X(69)>` = crosspoint of :ref:`X(2) <X(2)>` and :ref:`X(20) <X(20)>` wrt both the excentral and anticomplementary triangles
    * :ref:`X(69) <X(69)>` = homothetic center of anticomplementary triangle and 2nd :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(4) <X(4)>` (i.e., of 1st and 2nd antipedal triangles of :ref:`X(4) <X(4)>`)
@@ -92,10 +92,10 @@ X(69) = SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE
    * :ref:`X(69) <X(69)>` = pole, wrt de Longchamps circle, of trilinear polar of :ref:`X(95) <X(95)>`
    * :ref:`X(69) <X(69)>` = perspector of the extraversion triangles of :ref:`X(7) <X(7)>` and :ref:`X(8) <X(8)>`
    * :ref:`X(69) <X(69)>` = {:ref:`X(2) <X(2)>`,\ :ref:`X(6) <X(6)>`}-harmonic conjugate of X(3618)
-   * :ref:`X(69) <X(69)>` = perspector of ABC and anticomplement of submedial triangle
-   * :ref:`X(69) <X(69)>` = perspector of ABC and mid-triangle of orthic and dual of :term:`orthic triangles <orthic-triangle>`
-   * :ref:`X(69) <X(69)>` = perspector of ABC and cross-triangle of ABC and 2nd Brocard triangle
-   * :ref:`X(69) <X(69)>` = perspector of 2nd Conway triangle and cross-triangle of ABC and 2nd Conway triangle
+   * :ref:`X(69) <X(69)>` = perspector of :g:`ABC << A B C >>` and anticomplement of submedial triangle
+   * :ref:`X(69) <X(69)>` = perspector of :g:`ABC << A B C >>` and mid-triangle of orthic and dual of :term:`orthic triangles <orthic-triangle>`
+   * :ref:`X(69) <X(69)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and 2nd Brocard triangle
+   * :ref:`X(69) <X(69)>` = perspector of 2nd Conway triangle and cross-triangle of :g:`ABC << A B C >>` and 2nd Conway triangle
    * :ref:`X(69) <X(69)>` = Lucas-isogonal conjugate of :ref:`X(376) <X(376)>`
    * :ref:`X(69) <X(69)>` = anticevian-isogonal conjugate of :ref:`X(2) <X(2)>`
    * :ref:`X(69) <X(69)>` = inverse-in-MacBeath-circumconic of X(22151)
@@ -109,15 +109,15 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the anticomplementary triangle. Let A″ be the orthogonal projection of A' on line BC, and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(69) <X(69)>`. (Randy Hutson, February 10, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the anticomplementary triangle. Let :g:`A″ <A″>` be the orthogonal projection of :g:`A' <A'>` on line :g:`BC <[ B C ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(69) <X(69)>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the half-altitude triangle. Let A″ be the trilinear pole of line B'C', and define B″ and C″ cyclically. Let A\* be the trilinear pole of line B″C″, and define B\* and C\* cyclically. The lines AA\*, BB\*, CC\* concur in :ref:`X(69) <X(69)>`. (Randy Hutson, February 10, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the half-altitude triangle. Let :g:`A″ <A″>` be the trilinear pole of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Let :g:`A* <A*>` be the trilinear pole of line :g:`B″C″ <[ B″ C″ ]>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(69) <X(69)>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 
-   Let A2B2C2 be the 2nd Conway triangle. Let A' be the cevapoint of B2 and C2, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(69) <X(69)>`. (Randy Hutson, December 10, 2016)
+   Let :g:`A_{2}B_{2}C_{2} << A_2 B_2 C_2 >>` be the 2nd Conway triangle. Let :g:`A' <A'>` be the cevapoint of :g:`B_{2} <B_2>` and :g:`C_{2} <C_2>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(69) <X(69)>`. (Randy Hutson, December 10, 2016)
 
 .. container:: note-item
 
@@ -125,7 +125,7 @@ Notes
 
 .. container:: note-item
 
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the 1st Ehrmann triangle and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(69) <X(69)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (Randy Hutson, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the 1st Ehrmann triangle and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(69) <X(69)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
 
 .. container:: note-item
 

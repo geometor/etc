@@ -16,7 +16,7 @@ X(563) = TRILINEAR PRODUCT X(47)*X(48)
    :alt: X(563) = TRILINEAR PRODUCT X(47)*X(48)
    :align: center
 
-   **X(563) = TRILINEAR PRODUCT X(47)*X(48)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(563) = TRILINEAR PRODUCT X(47)*X(48)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,10 +28,6 @@ X(563) = TRILINEAR PRODUCT X(47)*X(48)
    :badge: 1 form
 
    * **Trilinears:** :math:`\tan 2B + \tan 2C : :`
-
-.. container:: note-item
-
-   :ref:`X(563) <X(563)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines

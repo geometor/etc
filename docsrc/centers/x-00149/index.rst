@@ -10,17 +10,18 @@ X(149) = REFLECTION OF X(20) IN X(104)
 
 .. enunciation::
 
-   Let A' be the reflection of the midpoint of segment BC in :ref:`X(11) <X(11)>`, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(149) <X(149)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   Let :g:`A' <A'>` be the reflection of the midpoint of segment :g:`BC <[ B C ]>` in :ref:`X(11) <X(11)>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(149) <X(149)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. figure:: x-00149.svg
    :alt: X(149) = REFLECTION OF X(20) IN X(104)
    :align: center
 
-   **X(149) = REFLECTION OF X(20) IN X(104)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(149) = REFLECTION OF X(20) IN X(104)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where, f(a,b,c) = bc[b\ :sup:`3` + c\ :sup:`3` - a\ :sup:`3` + (a\ :sup:`2` - bc)(b + c) + a(bc - b\ :sup:`2` - c\ :sup:`2`)]
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = bc[b^{3} + c^{3} - a^{3} + (a^{2} - bc)(b + c) + a(bc - b^{2} - c^{2})]`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = b^{3} + c^{3} - a^{3} + (a^{2} - bc)(b + c) + a(bc - b^{2} - c^{2})`
    | **Search Value (6, 9, 13):** :math:`2.684434107515`
 
 .. container:: note-item
@@ -43,16 +44,10 @@ X(149) = REFLECTION OF X(20) IN X(104)
    * :ref:`X(149) <X(149)>` = :term:`trilinear pole <trilinear-pole>` wrt :term:`anticomplementary triangle <anticomplementary-triangle>` of line :ref:`X(7) <X(7)>`\ \ :ref:`X(8) <X(8)>`
    * :ref:`X(149) <X(149)>` = center of conic through :ref:`X(7) <X(7)>`, :ref:`X(8) <X(8)>`, and the extraversions of :ref:`X(8) <X(8)>`
    * :ref:`X(149) <X(149)>` = :ref:`X(100) <X(100)>`-of-anticomplementary-triangle
-   * :ref:`X(149) <X(149)>` = homothetic center of 2nd Schiffler triangle and polar triangle of AC-incircle
+   * :ref:`X(149) <X(149)>` = homothetic center of 2nd Schiffler triangle and polar triangle of :g:`AC <[ A C ]>`-incircle
 
 Notes
 -----
-
-.. container:: note-item
-
-   Barycentrics g(a,b,c) : g(b,c,a) : g(c,a,b), where
-
-      * g(a,b,c) = b\ :sup:`3` + c\ :sup:`3` - a\ :sup:`3` + (a\ :sup:`2` - bc)(b + c) + a(bc - b\ :sup:`2` - c\ :sup:`2`)
 
 .. container:: note-item
 

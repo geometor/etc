@@ -16,7 +16,7 @@ X(558) = (X(1),X(57))-ANSWER TO QUESTION A
    :alt: X(558) = (X(1),X(57))-ANSWER TO QUESTION A
    :align: center
 
-   **X(558) = (X(1),X(57))-ANSWER TO QUESTION A** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(558) = (X(1),X(57))-ANSWER TO QUESTION A** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,10 +28,6 @@ X(558) = (X(1),X(57))-ANSWER TO QUESTION A
    :badge: 1 form
 
    * **Trilinears:** :math:`\csc A (1 - \cos A/2) : :`
-
-.. container:: note-item
-
-   :ref:`X(558) <X(558)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 1 line

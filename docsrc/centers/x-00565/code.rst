@@ -12,7 +12,7 @@ X(565) = INTERSECTION OF LINES X(49)X(93) AND X(143,324) — Code
    :alt: X(565) = INTERSECTION OF LINES X(49)X(93) AND X(143,324)
    :align: center
 
-   **X(565) = INTERSECTION OF LINES X(49)X(93) AND X(143,324)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(565) = INTERSECTION OF LINES X(49)X(93) AND X(143,324)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

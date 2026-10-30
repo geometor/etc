@@ -24,7 +24,7 @@ def construct_x_00612(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(612) = INTERSECTION OF LINES X(1)X(2) AND X(9)X(31) on reference triangle ABC."""
-    X_612 = eval_trilinear_point(model, A, B, C, '(1 + cos(A))*(1 + cos(B)*cos(C))', ID="X(612)", classes=["selected", "target"])
+    X_612 = eval_trilinear_point(model, A, B, C, 'a**(2) + b**(2) + c**(2) + 2*b*c', ID="X(612)", classes=["selected", "target"])
     X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
     X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
     central_line(model, X_1, X_2, 1, 2, incident=True)

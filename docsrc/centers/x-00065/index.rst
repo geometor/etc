@@ -10,13 +10,13 @@ X(65) = ORTHOCENTER OF THE INTOUCH TRIANGLE
 
 .. enunciation::
 
-   Let A' be the intersections of the tangents to the Yiu conic at the points where they meet the A-excircle. Define B' and C' similarly. The lines AA', BB', CC' concur in :ref:`X(65) <X(65)>`. (:person:`Randy Hutson <randy-hutson>`, July 20, 2016)
+   Let :g:`A' <A'>` be the intersections of the tangents to the Yiu conic at the points where they meet the :g:`A <A>`-excircle. Define :g:`B' <B'>` and :g:`C' <C'>` similarly. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(65) <X(65)>`. (:person:`Randy Hutson <randy-hutson>`, July 20, 2016)
 
 .. figure:: x-00065.svg
    :alt: X(65) = ORTHOCENTER OF THE INTOUCH TRIANGLE
    :align: center
 
-   **X(65) = ORTHOCENTER OF THE INTOUCH TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(65) = ORTHOCENTER OF THE INTOUCH TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -29,11 +29,7 @@ X(65) = ORTHOCENTER OF THE INTOUCH TRIANGLE
 
    * **Trilinears:** :math:`(b + c)/(b + c - a) : (c + a)/(c + a - b) : (a + b)/(a + b - c)`
    * **Trilinears:** :math:`\sin(A/2) \cos(B/2 - C/2) : \sin(B/2) \cos(C/2 - A/2) : \sin(C/2) \cos(A/2 - B/2)`
-   * **Trilinears:** :math:`Ra + r : Rb + r : Rc + r`, where Ra, Rb, Rc are the exradii
-
-.. container:: note-item
-
-   :ref:`X(65) <X(65)>` lies.
+   * **Trilinears:** :math:`R_{a} + r : R_{b} + r : R_{c} + r`, where :math:`R_{a}`, :math:`R_{b}`, :math:`R_{c}` are the exradii
 
 .. collapse:: Incident Central Lines
    :badge: 40 lines
@@ -64,7 +60,7 @@ X(65) = ORTHOCENTER OF THE INTOUCH TRIANGLE
    * :ref:`X(65) <X(65)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(647) <X(647)>`\ \ :ref:`X(661) <X(661)>`
    * :ref:`X(65) <X(65)>` = perspector of :term:`intouch triangle <intouch-triangle>` and inverse(n(hexyl triangle))
    * :ref:`X(65) <X(65)>` = orthologic center of inverse(n(hexyl triangle)) to hexyl triangle; the reciprocal orthologic center is :ref:`X(84) <X(84)>`
-   * :ref:`X(65) <X(65)>` = perspector of ABC and the extangents triangle
+   * :ref:`X(65) <X(65)>` = perspector of :g:`ABC << A B C >>` and the extangents triangle
    * :ref:`X(65) <X(65)>` = X(1986)-of-Fuhrmann-triangle
    * :ref:`X(65) <X(65)>` = :ref:`X(40) <X(40)>` of Mandart-incircle triangle
    * :ref:`X(65) <X(65)>` = homothetic center of intangents triangle and reflection of extangents triangle in :ref:`X(40) <X(40)>`
@@ -72,19 +68,19 @@ X(65) = ORTHOCENTER OF THE INTOUCH TRIANGLE
    * :ref:`X(65) <X(65)>` = reflection of X(3057) in :ref:`X(1) <X(1)>`
    * :ref:`X(65) <X(65)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(3) <X(3)>`}-harmonic conjugate of X(2646)
    * :ref:`X(65) <X(65)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(57) <X(57)>`}-harmonic conjugate of :ref:`X(56) <X(56)>`
-   * :ref:`X(65) <X(65)>` = {P,Q}-harmonic conjugate of X(1463), where P and Q are the intersections of the incircle and line :ref:`X(7) <X(7)>`\ \ :ref:`X(8) <X(8)>`
+   * :ref:`X(65) <X(65)>` = {P,Q}-harmonic conjugate of X(1463), where :g:`P <P>` and :g:`Q <Q>` are the intersections of the incircle and line :ref:`X(7) <X(7)>`\ \ :ref:`X(8) <X(8)>`
    * :ref:`X(65) <X(65)>` = pairwise perspector of: intouch triangle, 4th :term:`extouch triangle <extouch-triangle>`, 5th extouch triangle
    * :ref:`X(65) <X(65)>` = perspector of [reflection of :term:`incentral triangle <incentral-triangle>` in :ref:`X(1) <X(1)>`] and :term:`tangential triangle <tangential-triangle>`, wrt incentral triangle, of circumconic of incentral triangle centered at :ref:`X(1) <X(1)>` (bicevian conic of :ref:`X(1) <X(1)>` and :ref:`X(57) <X(57)>`)
    * :ref:`X(65) <X(65)>` = inverse-in-{incircle, circumcircle}-inverter of X(2078)
    * :ref:`X(65) <X(65)>` = pedal-isogonal conjugate of :ref:`X(1) <X(1)>`
    * :ref:`X(65) <X(65)>` = :ref:`X(5) <X(5)>` of reflection triangle of :ref:`X(1) <X(1)>`
    * :ref:`X(65) <X(65)>` = :term:`radical trace <radical-trace>` of circumcircle and circumcircle of reflection triangle of :ref:`X(1) <X(1)>`
-   * :ref:`X(65) <X(65)>` = :ref:`X(188) <X(188)>`-of-orthic-triangle if ABC is acute
-   * :ref:`X(65) <X(65)>` = perspector of ABC and cross-triangle of ABC and 4th extouch triangle
-   * :ref:`X(65) <X(65)>` = perspector of ABC and cross-triangle of ABC and 5th extouch triangle
+   * :ref:`X(65) <X(65)>` = :ref:`X(188) <X(188)>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
+   * :ref:`X(65) <X(65)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and 4th extouch triangle
+   * :ref:`X(65) <X(65)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and 5th extouch triangle
    * :ref:`X(65) <X(65)>` = polar conjugate of X(31623)
    * :ref:`X(65) <X(65)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X(31623) (line :ref:`X(521) <X(521)>`\ X(1948))
-   * :ref:`X(65) <X(65)>` = perspector of ABC and anti-tangential midarc triangle
+   * :ref:`X(65) <X(65)>` = perspector of :g:`ABC << A B C >>` and anti-tangential midarc triangle
    * :ref:`X(65) <X(65)>` = homothetic center of extangents triangle and anti-tangential midarc triangle
    * :ref:`X(65) <X(65)>` = excentral-to-intouch :term:`similarity image <similarity-image>` of :ref:`X(1) <X(1)>`
 
@@ -93,42 +89,42 @@ Notes
 
 .. container:: note-item
 
-   Let Ab, Ac be the points where the A-excircle touches lines CA and AB resp., and define Bc, Ba, Ca, Cb cyclically. Let Ta be the intersection of the tangents to the Yiu conic (defined at :ref:`X(478) <X(478)>`) at Bc and Ca, and define Tb, Tc cyclically. Let Ta' be the intersection of the tangents to the Yiu conic at Ba and Cb, and define Tb', Tc' cyclically. Let Sa = TbTc∩Tb'Tc', Sb = TcTa∩Tc'Ta', Sc = TaTb∩Ta'Tb'. The lines ASa, BSb, CSc concur in :ref:`X(65) <X(65)>`. (See also X(1903).) (Randy Hutson, July 20, 2016)
+   Let :g:`A_{b} <A_b>`, :g:`A_{c} <A_c>` be the points where the :g:`A <A>`-excircle touches lines :g:`CA <[ C A ]>` and :g:`AB <[ A B ]>` resp., and define :g:`B_{c} <B_c>`, :g:`B_{a} <B_a>`, :g:`C_{a} <C_a>`, :g:`C_{b} <C_b>` cyclically. Let :g:`T_{a} <T_a>` be the intersection of the tangents to the Yiu conic (defined at :ref:`X(478) <X(478)>`) at :g:`B_{c} <B_c>` and :g:`C_{a} <C_a>`, and define :g:`T_{b} <T_b>`, :g:`T_{c} <T_c>` cyclically. Let :g:`T_{a}' <T_a'>` be the intersection of the tangents to the Yiu conic at :g:`B_{a} <B_a>` and :g:`C_{b} <C_b>`, and define :g:`T_{b}' <T_b'>`, :g:`T_{c}' <T_c'>` cyclically. Let :g:`S_{a} <S_a>` = :g:`T_{b}T_{c} <[ T_b T_c ]>`\ ∩\ :g:`T_{b}'T_{c}' <[ T_b' T_c' ]>`, :g:`S_{b} <S_b>` = :g:`T_{c}T_{a} <[ T_c T_a ]>`\ ∩\ :g:`T_{c}'T_{a}' <[ T_c' T_a' ]>`, :g:`S_{c} <S_c>` = :g:`T_{a}T_{b} <[ T_a T_b ]>`\ ∩\ :g:`T_{a}'T_{b}' <[ T_a' T_b' ]>`. The lines :g:`AS_{a} <[ A S_a ]>`, :g:`BS_{b} <[ B S_b ]>`, :g:`CS_{c} <[ C S_c ]>` concur in :ref:`X(65) <X(65)>`. (See also X(1903).) (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
-   Let A' be the homothetic center of the :term:`orthic triangles <orthic-triangle>` of the intouch and A-extouch triangles, and define B' and C' cyclically. The triangle A'B'C' is perspective to the extouch triangle at :ref:`X(65) <X(65)>`. (Randy Hutson, July 20, 2016)
+   Let :g:`A' <A'>` be the homothetic center of the :term:`orthic triangles <orthic-triangle>` of the intouch and A-extouch triangles, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The triangle :g:`A'B'C' << A' B' C' >>` is perspective to the extouch triangle at :ref:`X(65) <X(65)>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the orthic triangle. Let B'C'A″ be the triangle similar to ABC such that segment A'A″ crosses the line B'C'. Define B″ and C″ cyclically. Equivalently, A″ is the reflection of A in B'C', and cyclically for B″ and C″. Let Ia be the incenter of B'C'A″, and define Ib and Ic cyclically. The circumcenter of triangle IaIbIc is :ref:`X(65) <X(65)>`. Let A\* be the intersection of lines A″Ia and B'C', and define B\* and C\* cyclically. The lines A'A\*, B'B\*, C'C\* concur in :ref:`X(65) <X(65)>`. (Randy Hutson, July 20, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the orthic triangle. Let :g:`B'C'A″ << B' C' A″ >>` be the triangle similar to :g:`ABC << A B C >>` such that segment :g:`A'A″ <[ A' A″ ]>` crosses the line :g:`B'C' <[ B' C' ]>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Equivalently, :g:`A″ <A″>` is the reflection of :g:`A <A>` in :g:`B'C' <[ B' C' ]>`, and cyclically for :g:`B″ <B″>` and :g:`C″ <C″>`. Let :g:`I_{a} <I_a>` be the incenter of :g:`B'C'A″ << B' C' A″ >>`, and define :g:`I_{b} <I_b>` and :g:`I_{c} <I_c>` cyclically. The circumcenter of triangle :g:`I_{a}I_{b}I_{c} << I_a I_b I_c >>` is :ref:`X(65) <X(65)>`. Let :g:`A* <A*>` be the intersection of lines :g:`A″I_{a} <[ A″ I_a ]>` and :g:`B'C' <[ B' C' ]>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`A'A* <[ A' A* ]>`, :g:`B'B* <[ B' B* ]>`, :g:`C'C* <[ C' C* ]>` concur in :ref:`X(65) <X(65)>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
-   Let Ab, Ac be the points where the A-excircle touches lines CA and AB resp., and define Bc, Ba, Ca, Cb cyclically. Let IaIbIc be the intouch triangle. Let Oa be the circle through Ab, Ac, Ib, Ic, and define Ob, Oc cyclically. :ref:`X(65) <X(65)>` is the radical center of Oa, Ob, Oc. (Randy Hutson, July 20, 2016)
+   Let :g:`A_{b} <A_b>`, :g:`A_{c} <A_c>` be the points where the :g:`A <A>`-excircle touches lines :g:`CA <[ C A ]>` and :g:`AB <[ A B ]>` resp., and define :g:`B_{c} <B_c>`, :g:`B_{a} <B_a>`, :g:`C_{a} <C_a>`, :g:`C_{b} <C_b>` cyclically. Let :g:`I_{a}I_{b}I_{c} << I_a I_b I_c >>` be the intouch triangle. Let :g:`O_{a} <O_a>` be the circle through :g:`A_{b} <A_b>`, :g:`A_{c} <A_c>`, :g:`I_{b} <I_b>`, :g:`I_{c} <I_c>`, and define :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>` cyclically. :ref:`X(65) <X(65)>` is the radical center of :g:`O_{a} <O_a>`, :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the intouch triangle of the extangents triangle, if ABC is acute. Then A'B'C' is perspective to the intouch triangle and 4th and 5th extouch triangles at :ref:`X(65) <X(65)>`. (Randy Hutson, December 2 2017)
+   Let :g:`A'B'C' << A' B' C' >>` be the intouch triangle of the extangents triangle, if :g:`ABC << A B C >>` is acute. Then :g:`A'B'C' << A' B' C' >>` is perspective to the intouch triangle and 4th and 5th extouch triangles at :ref:`X(65) <X(65)>`. (Randy Hutson, December 2 2017)
 
 .. container:: note-item
 
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the Wasat triangle and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(65) <X(65)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (Randy Hutson, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the Wasat triangle and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(65) <X(65)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
 
 .. container:: note-item
 
-   Let A' be the isogonal conjugate of A wrt the A-extouch triangle. Define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(65) <X(65)>`. (Randy Hutson, August 30, 2020)
+   Let :g:`A' <A'>` be the isogonal conjugate of :g:`A <A>` wrt the A-extouch triangle. Define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(65) <X(65)>`. (Randy Hutson, August 30, 2020)
 
 .. container:: note-item
 
-   In the plane of a triangle ABC, let
+   In the plane of a triangle :g:`ABC << A B C >>`, let
 
-      * Ba = reflection of A in the external angular bisector of angle B, and define Cb and Ac cyclically;
-      * Ca = reflection of A in the external angular bisector of angle C, and define Ab and Bc cyclically;
-      * Pa = AcBc∩AbCb, and define Pb and Pc cyclically;
-      * Ka = AbBa∩AcCa, and define Kb and Kc cyclically.
+      * :g:`B_{a} <B_a>` = reflection of :g:`A <A>` in the external angular bisector of angle :g:`B <B>`, and define :g:`C_{b} <C_b>` and :g:`A_{c} <A_c>` cyclically;
+      * :g:`C_{a} <C_a>` = reflection of :g:`A <A>` in the external angular bisector of angle :g:`C <C>`, and define :g:`A_{b} <A_b>` and :g:`B_{c} <B_c>` cyclically;
+      * :g:`P_{a} <P_a>` = :g:`A_{c}B_{c} <[ A_c B_c ]>`\ ∩\ :g:`A_{b}C_{b} <[ A_b C_b ]>`, and define :g:`P_{b} <P_b>` and :g:`P_{c} <P_c>` cyclically;
+      * :g:`K_{a} <K_a>` = :g:`A_{b}B_{a} <[ A_b B_a ]>`\ ∩\ :g:`A_{c}C_{a} <[ A_c C_a ]>`, and define :g:`K_{b} <K_b>` and :g:`K_{c} <K_c>` cyclically.
 
-   Then PaPbPc and ABC, and also KaKbKc and ABC, are perspective, and the perspector is :ref:`X(65) <X(65)>`. (:person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, June 19, 2021)
+   Then :g:`P_{a}P_{b}P_{c} << P_a P_b P_c >>` and :g:`ABC << A B C >>`, and also :g:`K_{a}K_{b}K_{c} << K_a K_b K_c >>` and :g:`ABC << A B C >>`, are perspective, and the perspector is :ref:`X(65) <X(65)>`. (:person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, June 19, 2021)
 
 .. container:: note-item
 

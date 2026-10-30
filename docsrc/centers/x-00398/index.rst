@@ -16,16 +16,12 @@ X(398) = CROSSPOINT OF X(4) AND X(18)
    :alt: X(398) = CROSSPOINT OF X(4) AND X(18)
    :align: center
 
-   **X(398) = CROSSPOINT OF X(4) AND X(18)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(398) = CROSSPOINT OF X(4) AND X(18)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`\cos(B - C) - 2 \cos(A - \pi /3) : :`
    | **Search Value (6, 9, 13):** :math:`2.568413278975`
-
-.. container:: note-item
-
-   :ref:`X(398) <X(398)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 13 lines

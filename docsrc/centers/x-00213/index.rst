@@ -16,7 +16,7 @@ X(213) = X(6)-CEVA CONJUGATE OF X(42)
    :alt: X(213) = X(6)-CEVA CONJUGATE OF X(42)
    :align: center
 
-   **X(213) = X(6)-CEVA CONJUGATE OF X(42)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(213) = X(6)-CEVA CONJUGATE OF X(42)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,10 +28,6 @@ X(213) = X(6)-CEVA CONJUGATE OF X(42)
    :badge: 1 form
 
    * **Trilinears:** :math:`a^{2}(ar - S) : b^{2}(br - S) : c^{2}(cr - S)`
-
-.. container:: note-item
-
-   :ref:`X(213) <X(213)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 13 lines

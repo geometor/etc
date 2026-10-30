@@ -10,13 +10,13 @@ X(847) = X(5)-CROSS CONJUGATE OF X(4)
 
 .. enunciation::
 
-   This point solves a problem posed by :person:`Antreas Hatzipolakis <antreas-hatzipolakis>` in :cite:`Hyacinthos #3130 <hyacinthos>`, June 25, 2001; see also Jean-Pierre Ehrmann, #3135, June 26, 2001. The problem and solution may be stated as follows. Let ABC be a triangle, L\ :sub:`A`, L\ :sub:`B`, L\ :sub:`C` the perpendicular bisectors of sides BC, CA, AB, and AA', BB', CC' the altitudes of ABC, respectively. Let A\ :sub:`B` be the point of intersection of AA' and L\ :sub:`B`, and let A\ :sub:`C` be the point of intersection of AA' and L\ :sub:`C`. Let A″ be the point of intersection of BA\ :sub:`B` and CA\ :sub:`C`. Define B″ and C″ cyclically. Then triangle A″B″C″ is perspective to triangle ABC, with perspector :ref:`X(847) <X(847)>`.
+   This point solves a problem posed by :person:`Antreas Hatzipolakis <antreas-hatzipolakis>` in :cite:`Hyacinthos #3130 <hyacinthos>`, June 25, 2001; see also Jean-Pierre Ehrmann, #3135, June 26, 2001. The problem and solution may be stated as follows. Let :g:`ABC << A B C >>` be a triangle, :g:`L_{A} <L_A>`, :g:`L_{B} <L_B>`, :g:`L_{C} <L_C>` the perpendicular bisectors of sides :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, and :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` the altitudes of :g:`ABC << A B C >>`, respectively. Let :g:`A_{B} <A_B>` be the point of intersection of :g:`AA' <[ A A' ]>` and :g:`L_{B} <L_B>`, and let :g:`A_{C} <A_C>` be the point of intersection of :g:`AA' <[ A A' ]>` and :g:`L_{C} <L_C>`. Let :g:`A″ <A″>` be the point of intersection of :g:`BA_{B} <[ B A_B ]>` and :g:`CA_{C} <[ C A_C ]>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Then triangle :g:`A″B″C″ << A″ B″ C″ >>` is perspective to triangle :g:`ABC << A B C >>`, with perspector :ref:`X(847) <X(847)>`.
 
 .. figure:: x-00847.svg
    :alt: X(847) = X(5)-CROSS CONJUGATE OF X(4)
    :align: center
 
-   **X(847) = X(5)-CROSS CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(847) = X(5)-CROSS CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,15 +27,11 @@ X(847) = X(5)-CROSS CONJUGATE OF X(4)
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`1/(a^2 (a^2 - b^2 - c^2) (a^4 + b^4 + c^4 - 2 a^2 b^2 - 2 a^2 c^2)) : :`
+   * **Barycentrics:** :math:`1/(a^{2} (a^{2} - b^{2} - c^{2}) (a^{4} + b^{4} + c^{4} - 2 a^{2} b^{2} - 2 a^{2} c^{2})) : :`
 
 .. container:: note-item
 
    :ref:`X(847) <X(847)>` lies on the McCay orthic cubic; see `McCay orthic cubic <http://perso.wanadoo.fr/bernard.gibert/Exemples/mccayorthic.html>`__.
-
-.. container:: note-item
-
-   :ref:`X(847) <X(847)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 7 lines
@@ -58,7 +54,7 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the :ref:`X(3) <X(3)>`-:term:`cevian triangle <cevian-triangle>` of the :term:`orthic triangle <orthic-triangle>` of triangle ABC. The lines AA', BB', CC' concur in :ref:`X(847) <X(847)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   Let :g:`A'B'C' << A' B' C' >>` be the :ref:`X(3) <X(3)>`-:term:`cevian triangle <cevian-triangle>` of the :term:`orthic triangle <orthic-triangle>` of triangle :g:`ABC << A B C >>`. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(847) <X(847)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. toctree::
    :hidden:

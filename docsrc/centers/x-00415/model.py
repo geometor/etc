@@ -13,8 +13,8 @@ from geometor.etc.ops import (
     circumcenter_of,
     construct_baseline_triangle,
     create_model,
-    eval_barycentric_point,
     eval_trilinear_point,
+    intersect_lines,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -24,13 +24,13 @@ def construct_x_00415(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(415) = X(4)-HIRST INVERSE OF X(29) on reference triangle ABC."""
-    X_415 = eval_barycentric_point(model, A, B, C, '(a + b)*(a + c)*(a**(2) + b**(2) - c**(2))*(a**(2) - b**(2) + c**(2))*(a**(3) - 2*a**(2)*b + b**(3) - 2*a**(2)*c + a*b*c + c**(3))', ID="X(415)", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
+    X_162 = eval_trilinear_point(model, A, B, C, '1/(sin(2*B) - sin(2*C))', ID="X(162)", classes=["center"])
+    X_238 = eval_trilinear_point(model, A, B, C, 'a**(2) - b*c', ID="X(238)", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
-    X_162 = eval_trilinear_point(model, A, B, C, '1/(sin(2*B) - sin(2*C))', ID="X(162)", classes=["center", "incident"])
-    X_238 = eval_trilinear_point(model, A, B, C, 'a**(2) - b*c', ID="X(238)", classes=["center", "incident"])
-    central_line(model, X_162, X_238, 162, 238, incident=True)
+    central_line(model, X_162, X_238, 162, 238)
+    X_415 = intersect_lines(model, X_2, X_3, X_162, X_238, ID="X(415)", classes=["selected", "target"])
     return promote_point_to_top(model, X_415)
 
 

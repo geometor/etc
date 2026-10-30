@@ -10,13 +10,13 @@ X(46) = X(4)-CEVA CONJUGATE OF X(1)
 
 .. enunciation::
 
-   Let Ja' be the reflection of the A-excenter in BC, and define Jb', Jc' cyclically. Let Oa be the circumcenter of AJb'Jc', and define Ob, Oc cyclically. OaObOc and ABC are perspective at :ref:`X(46) <X(46)>`. (:person:`Randy Hutson <randy-hutson>`, July 20, 2016)
+   Let :g:`J_{a}' <J_a'>` be the reflection of the :g:`A <A>`-excenter in :g:`BC <[ B C ]>`, and define :g:`J_{b}' <J_b'>`, :g:`J_{c}' <J_c'>` cyclically. Let :g:`O_{a} <O_a>` be the circumcenter of AJb':g:`J_{c}' <J_c'>`, and define :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>` cyclically. :g:`O_{a}O_{b}O_{c} << O_a O_b O_c >>` and :g:`ABC << A B C >>` are perspective at :ref:`X(46) <X(46)>`. (:person:`Randy Hutson <randy-hutson>`, July 20, 2016)
 
 .. figure:: x-00046.svg
    :alt: X(46) = X(4)-CEVA CONJUGATE OF X(1)
    :align: center
 
-   **X(46) = X(4)-CEVA CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(46) = X(4)-CEVA CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,12 +28,8 @@ X(46) = X(4)-CEVA CONJUGATE OF X(1)
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
-   * **Trilinears:** :math:`a^3 + a^2(b + c) - a(b^2 + c^2) - (b - c)^2(b + c) : :`
-   * **Trilinears:** :math:`r_{a} - R : :`, where r\ :sub:`a`, r\ :sub:`b`, r\ :sub:`c` are the exradii
-
-.. container:: note-item
-
-   :ref:`X(46) <X(46)>` lies.
+   * **Trilinears:** :math:`a^{3} + a^{2}(b + c) - a(b^{2} + c^{2}) - (b - c)^{2}(b + c) : :`
+   * **Trilinears:** :math:`r_{a} - R : :`, where :math:`r_{a}`, :math:`r_{b}`, :math:`r_{c}` are the exradii
 
 .. collapse:: Incident Central Lines
    :badge: 25 lines
@@ -59,10 +55,10 @@ X(46) = X(4)-CEVA CONJUGATE OF X(1)
    * :ref:`X(46) <X(46)>` = :ref:`X(24) <X(24)>`-of-excentral-triangle
    * :ref:`X(46) <X(46)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(3) <X(3)>`}-harmonic conjugate of X(3612)
    * :ref:`X(46) <X(46)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(40) <X(40)>`}-harmonic conjugate of X(5119)
-   * :ref:`X(46) <X(46)>` = perspector of ABC and extraversion triangle of :ref:`X(90) <X(90)>`
+   * :ref:`X(46) <X(46)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(90) <X(90)>`
    * :ref:`X(46) <X(46)>` = trilinear product of extraversions of :ref:`X(90) <X(90)>`
    * :ref:`X(46) <X(46)>` = :ref:`X(24) <X(24)>` of reflection triangle of :ref:`X(1) <X(1)>`
-   * :ref:`X(46) <X(46)>` = homothetic center of ABC and orthic triangle of reflection triangle of :ref:`X(1) <X(1)>`
+   * :ref:`X(46) <X(46)>` = homothetic center of :g:`ABC << A B C >>` and orthic triangle of reflection triangle of :ref:`X(1) <X(1)>`
    * :ref:`X(46) <X(46)>` = Cundy-Parry Phi transform of :ref:`X(46) <X(46)>`
    * :ref:`X(46) <X(46)>` = Cundy-Parry Psi transform of :ref:`X(90) <X(90)>`
    * :ref:`X(46) <X(46)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(57) <X(57)>`}-harmonic conjugate of X(3338)
@@ -72,11 +68,11 @@ Notes
 
 .. container:: note-item
 
-   Let A' be the inverse-in-Bevan-circle of the A-vertex of the hexyl triangle, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(46) <X(46)>`. (Randy Hutson, July 20, 2016)
+   Let :g:`A' <A'>` be the inverse-in-Bevan-circle of the :g:`A <A>`-vertex of the hexyl triangle, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(46) <X(46)>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
-   Let JaJbJc be the :term:`excentral triangle <excentral-triangle>`. Let A″ be the inverse-in-Bevan-circle of A, and define B″, C″ cyclically. The lines JaA″, JbB″, JcC″ concur in :ref:`X(46) <X(46)>`. (Randy Hutson, July 20, 2016)
+   Let :g:`J_{a}J_{b}J_{c} << J_a J_b J_c >>` be the :term:`excentral triangle <excentral-triangle>`. Let :g:`A″ <A″>` be the inverse-in-Bevan-circle of :g:`A <A>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`J_{a}A″ <[ J_a A″ ]>`, :g:`J_{b}B″ <[ J_b B″ ]>`, :g:`J_{c}C″ <[ J_c C″ ]>` concur in :ref:`X(46) <X(46)>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 

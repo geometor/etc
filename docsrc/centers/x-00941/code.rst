@@ -12,7 +12,7 @@ X(941) = ISOGONAL CONJUGATE OF X(940) — Code
    :alt: X(941) = ISOGONAL CONJUGATE OF X(940)
    :align: center
 
-   **X(941) = ISOGONAL CONJUGATE OF X(940)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(941) = ISOGONAL CONJUGATE OF X(940)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -12,6 +12,7 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    intersect_lines,
     promote_point_to_top,
     symmedian_point_of,
 )
@@ -22,13 +23,13 @@ def construct_x_00374(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(374) = CENTROID OF THE PEDAL TRIANGLE OF X(9) on reference triangle ABC."""
-    X_374 = eval_trilinear_point(model, A, B, C, '2*b + 2*c - 3*a + (c + a)*cos(C) + (b + a)*cos(B)', ID="X(374)", classes=["selected", "target"])
-    X_44 = eval_trilinear_point(model, A, B, C, 'b + c - 2*a', ID="X(44)", classes=["center", "incident"])
-    X_65 = eval_trilinear_point(model, A, B, C, 'cos(B) + cos(C)', ID="X(65)", classes=["center", "incident"])
-    central_line(model, X_44, X_65, 44, 65, incident=True)
-    X_51 = eval_trilinear_point(model, A, B, C, 'a**(2)*cos(B - C)', ID="X(51)", classes=["center", "incident"])
-    X_210 = eval_trilinear_point(model, A, B, C, '(b + c)*(b + c - a)', ID="X(210)", classes=["center", "incident"])
-    central_line(model, X_51, X_210, 51, 210, incident=True)
+    X_44 = eval_trilinear_point(model, A, B, C, 'b + c - 2*a', ID="X(44)", classes=["center"])
+    X_65 = eval_trilinear_point(model, A, B, C, 'cos(B) + cos(C)', ID="X(65)", classes=["center"])
+    X_51 = eval_trilinear_point(model, A, B, C, 'a**(2)*cos(B - C)', ID="X(51)", classes=["center"])
+    X_210 = eval_trilinear_point(model, A, B, C, '(b + c)*(b + c - a)', ID="X(210)", classes=["center"])
+    central_line(model, X_44, X_65, 44, 65)
+    central_line(model, X_51, X_210, 51, 210)
+    X_374 = intersect_lines(model, X_44, X_65, X_51, X_210, ID="X(374)", classes=["selected", "target"])
     X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
     X_354 = eval_trilinear_point(model, A, B, C, '(b - c)**(2) - a*b - a*c', ID="X(354)", classes=["center", "incident"])
     central_line(model, X_6, X_354, 6, 354, incident=True)

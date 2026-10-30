@@ -10,22 +10,24 @@ X(202) = X(1)-CEVA CONJUGATE OF X(15)
 
 .. enunciation::
 
-   Trilinears 1 - cos(A + π/3) : 1 - cos(B + π/3) : 1 - cos(C + π/3) (Joe Goggins, Oct. 19, 2005)
+   :ref:`X(202) <X(202)>` = :ref:`X(1) <X(1)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(15) <X(15)>`
 
 .. figure:: x-00202.svg
    :alt: X(202) = X(1)-CEVA CONJUGATE OF X(15)
    :align: center
 
-   **X(202) = X(1)-CEVA CONJUGATE OF X(15)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(202) = X(1)-CEVA CONJUGATE OF X(15)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = u(v + w - u),, u = u(A,B,C) = sin(A + π/3), v = u(B,C,A), w = u(C,A,B)
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = u(v + w - u)`, :math:`u = u(A,B,C) = \sin(A + \pi /3)`, :math:`v = u(B,C,A)`, :math:`w = u(C,A,B)`
+   | **Barycentrics:** :math:`(\sin A)f(A,B,C) : (\sin B)f(B,C,A) : (\sin C)f(C,A,B)`
    | **Search Value (6, 9, 13):** :math:`1.018294720589`
 
-.. container:: note-item
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-   :ref:`X(202) <X(202)>` lies.
+   * **Trilinears:** :math:`1 - \cos(A + \pi /3) : 1 - \cos(B + \pi /3) : 1 - \cos(C + \pi /3)` (Joe Goggins, Oct. 19, 2005)
 
 .. collapse:: Incident Central Lines
    :badge: 10 lines
@@ -36,14 +38,7 @@ X(202) = X(1)-CEVA CONJUGATE OF X(15)
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(202) <X(202)>` = :ref:`X(1) <X(1)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(15) <X(15)>`
-
-Notes
------
-
-.. container:: note-item
-
-   Barycentrics (sin A)f(A,B,C) : (sin B)f(B,C,A) : (sin C)f(C,A,B)
+   * :ref:`X(202) <X(202)>` = :ref:`X(1) <X(1)>`-Ceva conjugate of :ref:`X(15) <X(15)>`
 
 .. toctree::
    :hidden:

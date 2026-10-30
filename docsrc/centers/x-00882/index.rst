@@ -16,16 +16,12 @@ X(882) = ISOTOMIC CONJUGATE OF X(880)
    :alt: X(882) = ISOTOMIC CONJUGATE OF X(880)
    :align: center
 
-   **X(882) = ISOTOMIC CONJUGATE OF X(880)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(882) = ISOTOMIC CONJUGATE OF X(880)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`u(bv - cw)/(a^{2}u^{2} - bcvw) : :`, where u : v : w = :ref:`X(6) <X(6)>`
+   | **Trilinears:** :math:`u(bv - cw)/(a^{2}u^{2} - bcvw) : :`, where :math:`u : v : w` = :ref:`X(6) <X(6)>`
    | **Search Value (6, 9, 13):** :math:`0.089443914750`
-
-.. container:: note-item
-
-   :ref:`X(882) <X(882)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 7 lines

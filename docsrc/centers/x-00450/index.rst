@@ -10,29 +10,25 @@ X(450) = X(3)-HIRST INVERSE OF X(4)
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(450) <X(450)>` has Shinagawa coefficients ((E - 2F)F,(E + F)F - S\ :sup:`2`).
+   As a point on the Euler line, :ref:`X(450) <X(450)>` has Shinagawa coefficients :math:`((E - 2F)F,(E + F)F - S^{2})`.
 
 .. figure:: x-00450.svg
    :alt: X(450) = X(3)-HIRST INVERSE OF X(4)
    :align: center
 
-   **X(450) = X(3)-HIRST INVERSE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(450) = X(3)-HIRST INVERSE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(\sec A)[\cos^{4}A - (\cos B \cos C)^{2}] : :`
-   | **Barycentrics:** :math:`(\tan A)[\cos^{4}A - (\cos B \cos C)^{2}] : :`
+   | **Trilinears:** :math:`(\sec A)[\cos^{4} A - (\cos B \cos C)^{2}] : :`
+   | **Barycentrics:** :math:`(\tan A)[\cos^{4} A - (\cos B \cos C)^{2}] : :`
    | **Search Value (6, 9, 13):** :math:`1.524838623044`
 
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
-   * **Trilinears:** :math:`(\cos A)[\sec^{4}A - (\sec B \sec C)^{2}] : :`
-   * **Barycentrics:** :math:`(a^2 + b^2 - c^2)*(a^2 - b^2 + c^2)*(a^4 - a^2*b^2 + a^2*b*c - b^3*c - a^2*c^2 + 2*b^2*c^2 - b*c^3)*(a^4 - a^2*b^2 - a^2*b*c + b^3*c - a^2*c^2 + 2*b^2*c^2 + b*c^3) : :`
-
-.. container:: note-item
-
-   :ref:`X(450) <X(450)>` lies.
+   * **Trilinears:** :math:`(\cos A)[\sec^{4} A - (\sec B \sec C)^{2}] : :`
+   * **Barycentrics:** :math:`(a^{2} + b^{2} - c^{2}) \cdot (a^{2} - b^{2} + c^{2}) \cdot (a^{4} - a^{2} b^{2} + a^{2} b c - b^{3} c - a^{2} c^{2} + 2 b^{2} c^{2} - b c^{3}) \cdot (a^{4} - a^{2} b^{2} - a^{2} b c + b^{3} c - a^{2} c^{2} + 2 b^{2} c^{2} + b c^{3}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 28 lines
@@ -47,7 +43,7 @@ X(450) = X(3)-HIRST INVERSE OF X(4)
    * :ref:`X(450) <X(450)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(185) <X(185)>`\ \ :ref:`X(647) <X(647)>`
    * :ref:`X(450) <X(450)>` = :ref:`X(3) <X(3)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(4) <X(4)>`
    * :ref:`X(450) <X(450)>` = crossdifference of PU(17)
-   * :ref:`X(450) <X(450)>` = perspector of hyperbola {A,B,C,PU(17)}
+   * :ref:`X(450) <X(450)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(17)}
    * :ref:`X(450) <X(450)>` = intersection of :term:`trilinear polars <trilinear-polar>` of P(17) and U(17)
    * :ref:`X(450) <X(450)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(39034)
    * :ref:`X(450) <X(450)>` = inverse-in-circumconic-centered-at-:ref:`X(4) <X(4)>` of :ref:`X(25) <X(25)>`

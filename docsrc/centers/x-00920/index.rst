@@ -16,22 +16,18 @@ X(920) = X(158)-CEVA CONJUGATE OF X(1)
    :alt: X(920) = X(158)-CEVA CONJUGATE OF X(1)
    :align: center
 
-   **X(920) = X(158)-CEVA CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(920) = X(158)-CEVA CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B),`, where f(A,B,C) = cos\ :sup:`2`\ B + cos\ :sup:`2`\ C - cos\ :sup:`2`\ A\
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = \cos^{2} B + \cos^{2} C - \cos^{2} A`
    | **Search Value (6, 9, 13):** :math:`0.064033621130`
 
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
-   * **Trilinears:** :math:`SA - 2 R^2 : :`
-   * **Trilinears:** :math:`a^6 - 3 a^4 (b^2 + c^2) + a^2 (3 b^4 - 2 b^2 c^2 + 3 c^4) - (b^2 - c^2)^2 (b^2 + c^2) : :`
-
-.. container:: note-item
-
-   :ref:`X(920) <X(920)>` lies.
+   * **Trilinears:** :math:`S_{A} - 2 R^{2} : :`
+   * **Trilinears:** :math:`a^{6} - 3 a^{4} (b^{2} + c^{2}) + a^{2} (3 b^{4} - 2 b^{2} c^{2} + 3 c^{4}) - (b^{2} - c^{2})^{2} (b^{2} + c^{2}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 9 lines

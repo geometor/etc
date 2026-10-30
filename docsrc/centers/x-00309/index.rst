@@ -16,21 +16,17 @@ X(309) = ISOTOMIC CONJUGATE OF X(40)
    :alt: X(309) = ISOTOMIC CONJUGATE OF X(40)
    :align: center
 
-   **X(309) = ISOTOMIC CONJUGATE OF X(40)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(309) = ISOTOMIC CONJUGATE OF X(40)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(\csc^{2}A)/(-1 - \cos A + \cos B + \cos C) : :`
+   | **Trilinears:** :math:`(\csc^{2} A)/(-1 - \cos A + \cos B + \cos C) : :`
    | **Search Value (6, 9, 13):** :math:`6.780894052493`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`b^2 c^2 (a^2 (a^2 - (b - c)^2)^2 - (b - c)^2 (a^2 - (b + c)^2)^2) : :`
-
-.. container:: note-item
-
-   :ref:`X(309) <X(309)>` lies.
+   * **Trilinears:** :math:`b^{2} c^{2} (a^{2} (a^{2} - (b - c)^{2})^{2} - (b - c)^{2} (a^{2} - (b + c)^{2})^{2}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines

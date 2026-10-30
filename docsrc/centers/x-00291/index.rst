@@ -10,23 +10,19 @@ X(291) = 2nd SHARYGIN POINT
 
 .. enunciation::
 
-   See the description at X(1281). The lines AD', BE', CF' defined there concur in :ref:`X(291) <X(291)>`.
+   See the description at X(1281). The lines :g:`AD' <[ A D' ]>`, :g:`BE' <[ B E' ]>`, :g:`CF' <[ C F' ]>` defined there concur in :ref:`X(291) <X(291)>`.
 
 .. figure:: x-00291.svg
    :alt: X(291) = 2nd SHARYGIN POINT
    :align: center
 
-   **X(291) = 2nd SHARYGIN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(291) = 2nd SHARYGIN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`1/(a^{2} - bc) : 1/(b^{2} - ca) : 1/(c^{2} - ab)`
    | **Barycentrics:** :math:`a/(a^{2} - bc) : b/(b^{2} - ca) : c/(c^{2} - ab)`
    | **Search Value (6, 9, 13):** :math:`-0.192270503054`
-
-.. container:: note-item
-
-   :ref:`X(291) <X(291)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 14 lines
@@ -44,10 +40,10 @@ X(291) = 2nd SHARYGIN POINT
    * :ref:`X(291) <X(291)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`239 <X(239)>`, :ref:`256 <X(256)>`), (:ref:`518 <X(518)>`, :ref:`1 <X(1)>`)
    * :ref:`X(291) <X(291)>` = X(i)-:term:`Hirst inverse <hirst-inverse>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`292 <X(292)>`), (:ref:`2 <X(2)>`, :ref:`335 <X(335)>`)
    * :ref:`X(291) <X(291)>` = :term:`trilinear pole <trilinear-pole>` of PU(i) for these i: 6, 52, 53
-   * :ref:`X(291) <X(291)>` = antipode of :ref:`X(1) <X(1)>` in hyperbola {A,B,C,\ :ref:`X(1) <X(1)>`,\ :ref:`X(2) <X(2)>`}
+   * :ref:`X(291) <X(291)>` = antipode of :ref:`X(1) <X(1)>` in hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(1) <X(1)>`,\ :ref:`X(2) <X(2)>`}
    * :ref:`X(291) <X(291)>` = :ref:`X(19) <X(19)>`-:term:`isoconjugate <isoconjugate>` of X(20769)
-   * :ref:`X(291) <X(291)>` = point of intersection, other than A, B, C, of 1st and 2nd bicentrics of the circumcircle
-   * :ref:`X(291) <X(291)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(659) <X(659)>`\ X(4435) (the perspectrix of ABC and Gemini triangle 33)
+   * :ref:`X(291) <X(291)>` = point of intersection, other than :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, of 1st and 2nd bicentrics of the circumcircle
+   * :ref:`X(291) <X(291)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(659) <X(659)>`\ X(4435) (the perspectrix of :g:`ABC << A B C >>` and Gemini triangle 33)
 
 .. toctree::
    :hidden:

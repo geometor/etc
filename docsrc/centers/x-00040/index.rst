@@ -16,7 +16,7 @@ X(40) = BEVAN POINT
    :alt: X(40) = BEVAN POINT
    :align: center
 
-   **X(40) = BEVAN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(40) = BEVAN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,15 +28,15 @@ X(40) = BEVAN POINT
 
    * **Trilinears:** :math:`b/(c + a - b) + c/(a + b - c) - a/(b + c -a) : :`
    * **Trilinears:** :math:`\sin^{2}(B/2) + \sin^{2}(C/2) - \sin^{2}(A/2) : :`
-   * **Trilinears:** :math:`a^3 + a^2(b + c) - a(b + c)^2 - (b + c)(b - c)^2 : :`
+   * **Trilinears:** :math:`a^{3} + a^{2}(b + c) - a(b + c)^{2} - (b + c)(b - c)^{2} : :`
    * **Trilinears:** :math:`b(\tan B/2) + c(\tan C/2) - a(\tan A/2) : :`
    * **Trilinears:** :math:`(r/R) - 2 \cos A : :`
 
 .. collapse:: Linear Combinations
    :badge: 2 combinations
 
-   * :ref:`X(40) <X(40)>` = :ref:`X(1) <X(1)>` - 2\ :ref:`X(3) <X(3)>` = 2R\*\ :ref:`X(4) <X(4)>` - (r + 4R)\*\ :ref:`X(9) <X(9)>`
-   * :ref:`X(40) <X(40)>` = :ref:`X(1) <X(1)>` - 3 :ref:`X(165) <X(165)>` = 2 :ref:`X(3) <X(3)>` - 3 :ref:`X(165) <X(165)>` = 3 :ref:`X(376) <X(376)>` - :ref:`X(944) <X(944)>` = 5 :ref:`X(631) <X(631)>` - 4 X(1125) = 3 :ref:`X(1) <X(1)>` - 4 X(1385) = 9 :ref:`X(165) <X(165)>` - 4 X(1385) = 3 :ref:`X(3) <X(3)>` - 2 X(1385) = 3 :ref:`X(1) <X(1)>` - 2 X(1482) = 9 :ref:`X(165) <X(165)>` - 2 X(1482) = 3 :ref:`X(3) <X(3)>` - X(1482) = 4 :ref:`X(5) <X(5)>` - 5 X(1698) = 4 :ref:`X(5) <X(5)>` - 3 X(1699) = 5 X(1698) - 3 X(1699) = 2 X(3095) - 3 X(3097) = :ref:`X(145) <X(145)>` - 5 X(3522) = 2 :ref:`X(551) <X(551)>` - 3 X(3524) = 2 X(3244) - 7 X(3528) = 8 X(1385) - 9 X(3576) = 4 X(1482) - 9 X(3576) = 2 :ref:`X(1) <X(1)>` - 3 X(3576) = 4 :ref:`X(3) <X(3)>` - 3 X(3576) = 3 X(3576) - 8 X(3579)
+   * :ref:`X(40) <X(40)>` = :ref:`X(1) <X(1)>` - :math:`2` :ref:`X(3) <X(3)>` = :math:`2R` :ref:`X(4) <X(4)>` - :math:`(r + 4R)` :ref:`X(9) <X(9)>`
+   * :ref:`X(40) <X(40)>` = :ref:`X(1) <X(1)>` - :math:`3` :ref:`X(165) <X(165)>` = :math:`2` :ref:`X(3) <X(3)>` - :math:`3` :ref:`X(165) <X(165)>` = :math:`3` :ref:`X(376) <X(376)>` - :ref:`X(944) <X(944)>` = :math:`5` :ref:`X(631) <X(631)>` - :math:`4` X(1125) = :math:`3` :ref:`X(1) <X(1)>` - :math:`4` X(1385) = :math:`9` :ref:`X(165) <X(165)>` - :math:`4` X(1385) = :math:`3` :ref:`X(3) <X(3)>` - :math:`2` X(1385) = :math:`3` :ref:`X(1) <X(1)>` - :math:`2` X(1482) = :math:`9` :ref:`X(165) <X(165)>` - :math:`2` X(1482) = :math:`3` :ref:`X(3) <X(3)>` - X(1482) = :math:`4` :ref:`X(5) <X(5)>` - :math:`5` X(1698) = :math:`4` :ref:`X(5) <X(5)>` - :math:`3` X(1699) = :math:`5` X(1698) - :math:`3` X(1699) = :math:`2` X(3095) - :math:`3` X(3097) = :ref:`X(145) <X(145)>` - :math:`5` X(3522) = :math:`2` :ref:`X(551) <X(551)>` - :math:`3` X(3524) = :math:`2` X(3244) - :math:`7` X(3528) = :math:`8` X(1385) - :math:`9` X(3576) = :math:`4` X(1482) - :math:`9` X(3576) = :math:`2` :ref:`X(1) <X(1)>` - :math:`3` X(3576) = :math:`4` :ref:`X(3) <X(3)>` - :math:`3` X(3576) = :math:`3` X(3576) - :math:`8` X(3579)
 
 .. container:: note-item
 
@@ -70,7 +70,7 @@ X(40) = BEVAN POINT
    * :ref:`X(40) <X(40)>` = :term:`trilinear pole <trilinear-pole>` of line {6129, 10397}
    * :ref:`X(40) <X(40)>` = point of concurrence of the perpendiculars from the excenters to the respective sides
    * :ref:`X(40) <X(40)>` = circumcenter of the excentral triangle
-   * :ref:`X(40) <X(40)>` = incenter of the extangents triangle if triangle ABC is acute
+   * :ref:`X(40) <X(40)>` = incenter of the extangents triangle if triangle :g:`ABC << A B C >>` is acute
    * :ref:`X(40) <X(40)>` = perspector of the excentral and extangents triangles
    * :ref:`X(40) <X(40)>` = perspector of the excentral and :term:`extouch triangles <extouch-triangle>`
    * :ref:`X(40) <X(40)>` = :ref:`X(4) <X(4)>`-of-hexyl-triangle
@@ -80,32 +80,32 @@ X(40) = BEVAN POINT
    * :ref:`X(40) <X(40)>` = perspector of hexyl triangle and :term:`cevian triangle <cevian-triangle>` of :ref:`X(63) <X(63)>`
    * :ref:`X(40) <X(40)>` = perspector of hexyl triangle and :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(9) <X(9)>`
    * :ref:`X(40) <X(40)>` = perspector of hexyl triangle and :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(84) <X(84)>`
-   * :ref:`X(40) <X(40)>` = perspector of ABC and the reflection in :ref:`X(57) <X(57)>` of the antipedal triangle of :ref:`X(57) <X(57)>`
+   * :ref:`X(40) <X(40)>` = perspector of :g:`ABC << A B C >>` and the reflection in :ref:`X(57) <X(57)>` of the antipedal triangle of :ref:`X(57) <X(57)>`
    * :ref:`X(40) <X(40)>` = excentral isogonal conjugate of :ref:`X(1) <X(1)>`
    * :ref:`X(40) <X(40)>` = excentral isotomic conjugate of X(1742)
    * :ref:`X(40) <X(40)>` = hexyl isogonal conjugate of :ref:`X(1) <X(1)>`
-   * :ref:`X(40) <X(40)>` = perspector of ABC and extraversion triangle of :ref:`X(84) <X(84)>`
+   * :ref:`X(40) <X(40)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(84) <X(84)>`
    * :ref:`X(40) <X(40)>` = trilinear product of extraversions of :ref:`X(84) <X(84)>`
    * :ref:`X(40) <X(40)>` = homothetic center of extangents triangle and reflection of intangents triangle in :ref:`X(3) <X(3)>`
    * :ref:`X(40) <X(40)>` = trilinear product of centers of mixtilinear incircles
    * :ref:`X(40) <X(40)>` = intangents-to-extangents :term:`similarity image <similarity-image>` of :ref:`X(1) <X(1)>`
    * :ref:`X(40) <X(40)>` = :ref:`X(26) <X(26)>`-of-reflection-triangle of :ref:`X(1) <X(1)>`
    * :ref:`X(40) <X(40)>` = {:ref:`X(56) <X(56)>`,X(3057)}-harmonic conjugate of :ref:`X(1) <X(1)>`
-   * :ref:`X(40) <X(40)>` = perspector of extangents triangle and cross-triangle of ABC and extangents triangle
-   * :ref:`X(40) <X(40)>` = perspector of ABC and cross-triangle of ABC and hexyl triangle
+   * :ref:`X(40) <X(40)>` = perspector of extangents triangle and cross-triangle of :g:`ABC << A B C >>` and extangents triangle
+   * :ref:`X(40) <X(40)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and hexyl triangle
    * :ref:`X(40) <X(40)>` = circumcircle-inverse of X(2077)
    * :ref:`X(40) <X(40)>` = inverse-in-incircle-of-anticomplementary-triangle of X(10538)
    * :ref:`X(40) <X(40)>` = :ref:`X(1) <X(1)>`-:term:`Hirst inverse <hirst-inverse>` of X(9371)
-   * :ref:`X(40) <X(40)>` = outer-Garcia-to-ABC similarity image of :ref:`X(4) <X(4)>`
+   * :ref:`X(40) <X(40)>` = outer-Garcia-to-:g:`ABC << A B C >>` similarity image of :ref:`X(4) <X(4)>`
    * :ref:`X(40) <X(40)>` = Cundy-Parry Phi transform of :ref:`X(57) <X(57)>`
    * :ref:`X(40) <X(40)>` = Cundy-Parry Psi transform of :ref:`X(9) <X(9)>`
    * :ref:`X(40) <X(40)>` = anticevian isogonal conjugate of :ref:`X(1) <X(1)>`
    * :ref:`X(40) <X(40)>` = X(i)-:term:`vertex conjugate <vertex-conjugate>` of X(j) for these (i,j): {:ref:`3 <X(3)>`, 3345}, {:ref:`513 <X(513)>`, 2077}, {2077, :ref:`513 <X(513)>`}, {3345, :ref:`3 <X(3)>`}
    * :ref:`X(40) <X(40)>` = :ref:`X(5) <X(5)>`-of-6th-mixtilinear-triangle
-   * :ref:`X(40) <X(40)>` = orthic-to-ABC :term:`functional image <functional-image>` of :ref:`X(3) <X(3)>`, if ABC is acute
-   * :ref:`X(40) <X(40)>` = intouch-to-ABC :term:`barycentric image <barycentric-image>` of :ref:`X(4) <X(4)>`
+   * :ref:`X(40) <X(40)>` = orthic-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X(3) <X(3)>`, if :g:`ABC << A B C >>` is acute
+   * :ref:`X(40) <X(40)>` = intouch-to-:g:`ABC << A B C >>` :term:`barycentric image <barycentric-image>` of :ref:`X(4) <X(4)>`
    * :ref:`X(40) <X(40)>` = intouch-to-excentral similarity image of :ref:`X(1) <X(1)>`
-   * :ref:`X(40) <X(40)>` = ABC-to-excentral barycentric image of :ref:`X(1) <X(1)>`
+   * :ref:`X(40) <X(40)>` = :g:`ABC << A B C >>`-to-excentral barycentric image of :ref:`X(1) <X(1)>`
    * :ref:`X(40) <X(40)>` = antipode of X(12665) in the Mandart hyperbola
    * :ref:`X(40) <X(40)>` = extouch-isogonal conjugate of X(14872)
    * :ref:`X(40) <X(40)>` = X(10306)-of-Mandart-incircle-triangle
@@ -128,37 +128,37 @@ Notes
 
    Constructions received from :person:`Randy Hutson <randy-hutson>`, January 29, 2015:
 
-      * (1) Let A'B'C' be the extangents triangle. Let A″ be the reflection of A' in BC, and define B″, C″ cyclically. A'A″, B'B″, C'C″ concur in :ref:`X(40) <X(40)>`.
-      * (2) Let A'B'C' be the extangents triangle. Let A″ be the cevapoint of B' and C', and define B″, C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(40) <X(40)>`.
-      * (3) Let A'B'C' be the hexyl triangle and A″B″C″ be the side-triangle of ABC and hexyl triangle. Let A\* be the {B,C}-harmonic conjugate of A″, and define B\*, C\* cyclically. The lines A'A\*, B'B\*, C'C\* concur in :ref:`X(40) <X(40)>`.
-      * (4) Let Ia be the reflection of :ref:`X(1) <X(1)>` in the perpendicular bisector of BC, and define Ib, Ic cyclically. :ref:`X(40) <X(40)>` = :ref:`X(104) <X(104)>`-of-IaIbIc.
-      * (5) Let A'B'C' be the cevian triangle of :ref:`X(189) <X(189)>`. Let A″ be the orthocenter of AB'C', and define B″, C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(40) <X(40)>`. (6) Let A'B'C' be the mixtilinear :term:`incentral triangle <incentral-triangle>`. Let A″ be the trilinear product B'\*C', and define B″, C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(40) <X(40)>`.
+      * (1) Let :g:`A'B'C' << A' B' C' >>` be the extangents triangle. Let :g:`A″ <A″>` be the reflection of :g:`A' <A'>` in :g:`BC <[ B C ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(40) <X(40)>`.
+      * (2) Let :g:`A'B'C' << A' B' C' >>` be the extangents triangle. Let :g:`A″ <A″>` be the cevapoint of :g:`B' <B'>` and :g:`C' <C'>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(40) <X(40)>`.
+      * (3) Let :g:`A'B'C' << A' B' C' >>` be the hexyl triangle and :g:`A″B″C″ << A″ B″ C″ >>` be the side-triangle of :g:`ABC << A B C >>` and hexyl triangle. Let :g:`A* <A*>` be the {B,C}-harmonic conjugate of :g:`A″ <A″>`, and define :g:`B* <B*>`, :g:`C* <C*>` cyclically. The lines :g:`A'A* <[ A' A* ]>`, :g:`B'B* <[ B' B* ]>`, :g:`C'C* <[ C' C* ]>` concur in :ref:`X(40) <X(40)>`.
+      * (4) Let :g:`I_{a} <I_a>` be the reflection of :ref:`X(1) <X(1)>` in the perpendicular bisector of :g:`BC <[ B C ]>`, and define :g:`I_{b} <I_b>`, :g:`I_{c} <I_c>` cyclically. :ref:`X(40) <X(40)>` = :ref:`X(104) <X(104)>`-of-:g:`I_{a}I_{b}I_{c} << I_a I_b I_c >>`.
+      * (5) Let :g:`A'B'C' << A' B' C' >>` be the cevian triangle of :ref:`X(189) <X(189)>`. Let :g:`A″ <A″>` be the orthocenter of :g:`AB'C' << A B' C' >>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(40) <X(40)>`. (6) Let :g:`A'B'C' << A' B' C' >>` be the mixtilinear :term:`incentral triangle <incentral-triangle>`. Let :g:`A″ <A″>` be the trilinear product :g:`B' <B'>`\ \*\ :g:`C' <C'>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(40) <X(40)>`.
 
 .. container:: note-item
 
-   Let A'B'C' be the :term:`intouch triangle <intouch-triangle>` of the extangents triangle, if ABC is acute. Then A'B'C' is homothetic to the Aquila triangle at :ref:`X(40) <X(40)>`. (Randy Hutson, December 2, 2017)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`intouch triangle <intouch-triangle>` of the extangents triangle, if :g:`ABC << A B C >>` is acute. Then :g:`A'B'C' << A' B' C' >>` is homothetic to the Aquila triangle at :ref:`X(40) <X(40)>`. (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 
-   Let A'B'C' be the excentral triangle. Let A″ be the isogonal conjugate, wrt A'BC, of A. Define B″ and C″ cyclically. (A″ is also the reflection of A' in BC, and cyclically for B″ and C″). The lines A'A″, B'B″, C'C″ concur in :ref:`X(40) <X(40)>`. (Randy Hutson, December 2, 2017)
+   Let :g:`A'B'C' << A' B' C' >>` be the excentral triangle. Let :g:`A″ <A″>` be the isogonal conjugate, wrt :g:`A'BC << A' B C >>`, of A. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. (:g:`A″ <A″>` is also the reflection of :g:`A' <A'>` in :g:`BC <[ B C ]>`, and cyclically for :g:`B″ <B″>` and :g:`C″ <C″>`). The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(40) <X(40)>`. (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the anti-Mandart-incircle triangle and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(40) <X(40)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (Randy Hutson, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the anti-Mandart-incircle triangle and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(40) <X(40)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
 
 .. container:: note-item
 
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the Gemini triangle 4 and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(40) <X(40)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (Randy Hutson, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the Gemini triangle 4 and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(40) <X(40)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
 
 .. container:: note-item
 
-   Let I = :ref:`X(1) <X(1)>` and P = :ref:`X(40) <X(40)>`, and let
+   Let I = :ref:`X(1) <X(1)>` and :g:`P <P>` = :ref:`X(40) <X(40)>`, and let
 
-      * DEF = :term:`pedal triangle <pedal-triangle>` of P,
-      * A\ :sub:`b` = AI∩PE, and define B\ :sub:`c` and C\ :sub:`a` cyclically,
-      * A\ :sub:`c` = AI∩PF, and define B\ :sub:`a` and C\ :sub:`b` cyclically.
+      * :g:`DEF << D E F >>` = :term:`pedal triangle <pedal-triangle>` of :g:`P <P>`,
+      * :g:`A_{b} <A_b>` = :g:`AI <[ A I ]>`\ ∩PE, and define :g:`B_{c} <B_c>` and :g:`C_{a} <C_a>` cyclically,
+      * :g:`A_{c} <A_c>` = :g:`AI <[ A I ]>`\ ∩PF, and define :g:`B_{a} <B_a>` and :g:`C_{b} <C_b>` cyclically.
 
-   The centers of the circles {A\ :sub:`b`, B\ :sub:`c`, C\ :sub:`a`}} and {A\ :sub:`c`, B\ :sub:`a`, C\ :sub:`b`}} are the bicentric pair PU(44). (:person:`Angel Montesdeoca <angel-montesdeoca>`, April 12, 2021)
+   The centers of the circles {:g:`A_{b} <A_b>`, :g:`B_{c} <B_c>`, :g:`C_{a} <C_a>`}} and {:g:`A_{c} <A_c>`, :g:`B_{a} <B_a>`, :g:`C_{b} <C_b>`}} are the bicentric pair PU(44). (:person:`Angel Montesdeoca <angel-montesdeoca>`, April 12, 2021)
 
 .. toctree::
    :hidden:

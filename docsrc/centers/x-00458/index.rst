@@ -10,17 +10,17 @@ X(458) = EULER LINE INTERCEPT OF LINE X(76)X(275)
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(458) <X(458)>` has Shinagawa coefficients ((E + F)F, S\ :sup:`2`).
+   As a point on the Euler line, :ref:`X(458) <X(458)>` has Shinagawa coefficients :math:`((E + F)F, S^{2})`.
 
 .. figure:: x-00458.svg
    :alt: X(458) = EULER LINE INTERCEPT OF LINE X(76)X(275)
    :align: center
 
-   **X(458) = EULER LINE INTERCEPT OF LINE X(76)X(275)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(458) = EULER LINE INTERCEPT OF LINE X(76)X(275)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`u \csc 2A : v \csc 2B : w \csc 2C`, where, u : v : w = :ref:`X(182) <X(182)>`; e.g.; u(A,B,C) = cos(A - ω)
+   | **Trilinears:** :math:`u \csc 2A : v \csc 2B : w \csc 2C`, where :math:`u : v : w` = :ref:`X(182) <X(182)>`; e.g.; :math:`u(A,B,C) = \cos(A - \omega )`
    | **Barycentrics:** :math:`u \sec A : v \sec B : w \sec C`
    | **Search Value (6, 9, 13):** :math:`3.233562950894`
 
@@ -29,10 +29,6 @@ X(458) = EULER LINE INTERCEPT OF LINE X(76)X(275)
 
    * **Barycentrics:** :math:`\tan A + \cot \omega : :`
    * **Barycentrics:** :math:`\sec A \cos(A - \omega ) : :`
-
-.. container:: note-item
-
-   :ref:`X(458) <X(458)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines

@@ -10,27 +10,24 @@ X(728) = INTERSECTION OF LINES X(8)X(9) AND X(57)X(345)
 
 .. enunciation::
 
-   Barycentrics g(a,b,c) : g(b,c,a) : g(c,a,b), where g(a,b,c) = af(a,b,c)
+   :ref:`X(728) <X(728)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(738) <X(738)>`
 
 .. figure:: x-00728.svg
    :alt: X(728) = INTERSECTION OF LINES X(8)X(9) AND X(57)X(345)
    :align: center
 
-   **X(728) = INTERSECTION OF LINES X(8)X(9) AND X(57)X(345)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(728) = INTERSECTION OF LINES X(8)X(9) AND X(57)X(345)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = (b + c - a)\ :sup:`3`
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = (b + c - a)^{3}`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`5.755881898237`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`\cot^{3}(A/2) : \cot^{3}(B/2) : \cot^{3}(C/2) (M. Iliev, 4/12/07)`
-
-.. container:: note-item
-
-   :ref:`X(728) <X(728)>` lies.
+   * **Trilinears:** :math:`\cot^{3}(A/2) : \cot^{3}(B/2) : \cot^{3}(C/2)` (M. Iliev, 4/12/07)
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines
@@ -41,7 +38,7 @@ X(728) = INTERSECTION OF LINES X(8)X(9) AND X(57)X(345)
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X(728) <X(728)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(738) <X(738)>`
+   * :ref:`X(728) <X(728)>` = isogonal conjugate of :ref:`X(738) <X(738)>`
    * :ref:`X(728) <X(728)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(23062)
    * :ref:`X(728) <X(728)>` = :ref:`X(346) <X(346)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(200) <X(200)>`
    * :ref:`X(728) <X(728)>` = :ref:`X(480) <X(480)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(200) <X(200)>`

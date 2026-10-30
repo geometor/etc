@@ -13,6 +13,7 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     intersect_lines,
+    point_from_barycentrics,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -23,9 +24,9 @@ def construct_x_00931(
 ) -> spg.Point:
     """Construct X(931) = POINT ALCHIBA on reference triangle ABC."""
     X_101 = eval_trilinear_point(model, A, B, C, 'a/(b - c)', ID="X(101)", classes=["center"])
-    X_643 = eval_trilinear_point(model, A, B, C, '(b + c - a)/(b**(2)- c**(2))', ID="X(643)", classes=["center"])
+    X_643 = point_from_barycentrics(model, A, B, C, 0.74639525, -0.36386768, 0.61747243, ID="X(643)", classes=["center"])
     X_100 = eval_trilinear_point(model, A, B, C, '1/(b - c)', ID="X(100)", classes=["center"])
-    X_645 = eval_trilinear_point(model, A, B, C, '(b + c - a)/(a*(b**(2)- c**(2)))', ID="X(645)", classes=["center"])
+    X_645 = point_from_barycentrics(model, A, B, C, 0.8441247, -0.34292566, 0.49880096, ID="X(645)", classes=["center"])
     central_line(model, X_101, X_643, 101, 643)
     central_line(model, X_100, X_645, 100, 645)
     X_931 = intersect_lines(model, X_101, X_643, X_100, X_645, ID="X(931)", classes=["selected", "target"])

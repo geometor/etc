@@ -16,17 +16,13 @@ X(172) = TRILINEAR PRODUCT X(6)*X(171)
    :alt: X(172) = TRILINEAR PRODUCT X(6)*X(171)
    :align: center
 
-   **X(172) = TRILINEAR PRODUCT X(6)*X(171)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(172) = TRILINEAR PRODUCT X(6)*X(171)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`a^{3} + abc : b^{3} + abc : c^{3} + abc`
    | **Barycentrics:** :math:`a^{4} + bca^{2} : b^{4} + cab^{2} : c^{4} + abc^{2}`
    | **Search Value (6, 9, 13):** :math:`0.774827726345`
-
-.. container:: note-item
-
-   :ref:`X(172) <X(172)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 13 lines
@@ -41,7 +37,7 @@ X(172) = TRILINEAR PRODUCT X(6)*X(171)
    * :ref:`X(172) <X(172)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(522) <X(522)>`\ X(1491)
    * :ref:`X(172) <X(172)>` = :ref:`X(101) <X(101)>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X(172) <X(172)>`
    * :ref:`X(172) <X(172)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(32) <X(32)>`}-harmonic conjugate of X(1914)
-   * :ref:`X(172) <X(172)>` = intersection of tangents at PU(9) to hyperbola {A,B,C,\ :ref:`X(101) <X(101)>`,PU(9)}
+   * :ref:`X(172) <X(172)>` = intersection of tangents at PU(9) to hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(101) <X(101)>`,PU(9)}
    * :ref:`X(172) <X(172)>` = :term:`crosspoint <crosspoint>` of PU(9)
    * :ref:`X(172) <X(172)>` = :term:`crosssum <crosssum>` of PU(10)
    * :ref:`X(172) <X(172)>` = homothetic center of anti-tangential midarc triangle and mid-triangle of 1st and 2nd Kenmotu diagonals triangles

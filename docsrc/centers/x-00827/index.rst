@@ -10,13 +10,13 @@ X(827) = o-(0, 4) CIRCUMCIRCLE POINT
 
 .. enunciation::
 
-   Let A', B', C' be the intersections of line :ref:`X(23) <X(23)>`\ \ :ref:`X(385) <X(385)>` and lines BC, CA, AB, resp. The circumcircles of AB'C', BC'A', CA'B' concur in :ref:`X(827) <X(827)>`. Note: the line :ref:`X(23) <X(23)>`\ \ :ref:`X(385) <X(385)>` is the polar of :ref:`X(2) <X(2)>` wrt the circumcircle. (:person:`Randy Hutson <randy-hutson>`, December 10, 2016)
+   Let :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>` be the intersections of line :ref:`X(23) <X(23)>`\ \ :ref:`X(385) <X(385)>` and lines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, resp. The circumcircles of :g:`AB'C' << A B' C' >>`, :g:`BC'A' << B C' A' >>`, :g:`CA'B' << C A' B' >>` concur in :ref:`X(827) <X(827)>`. Note: the line :ref:`X(23) <X(23)>`\ \ :ref:`X(385) <X(385)>` is the polar of :ref:`X(2) <X(2)>` wrt the circumcircle. (:person:`Randy Hutson <randy-hutson>`, December 10, 2016)
 
 .. figure:: x-00827.svg
    :alt: X(827) = o-(0, 4) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(827) = o-(0, 4) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(827) = o-(0, 4) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -45,7 +45,7 @@ X(827) = o-(0, 4) CIRCUMCIRCLE POINT
    * :ref:`X(827) <X(827)>` = Ψ(:ref:`X(76) <X(76)>`, :ref:`X(6) <X(6)>`)
    * :ref:`X(827) <X(827)>` = center of bianticevian conic of :ref:`X(1) <X(1)>` and :ref:`X(31) <X(31)>`
    * :ref:`X(827) <X(827)>` = X(1577)-:term:`isoconjugate <isoconjugate>` of :ref:`X(39) <X(39)>`
-   * :ref:`X(827) <X(827)>` = perspector of circumcevian triangle of :ref:`X(23) <X(23)>` and cross-triangle of ABC and circummedial triangle
+   * :ref:`X(827) <X(827)>` = perspector of circumcevian triangle of :ref:`X(23) <X(23)>` and cross-triangle of :g:`ABC << A B C >>` and circummedial triangle
    * :ref:`X(827) <X(827)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(23285)
    * :ref:`X(827) <X(827)>` = barycentric product :ref:`X(83) <X(83)>`\ \*\ :ref:`X(110) <X(110)>`
    * :ref:`X(827) <X(827)>` = barycentric quotient :ref:`X(83) <X(83)>`/:ref:`X(850) <X(850)>`

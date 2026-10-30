@@ -16,7 +16,7 @@ X(287) = X(2)-HIRST INVERSE OF X(98)
    :alt: X(287) = X(2)-HIRST INVERSE OF X(98)
    :align: center
 
-   **X(287) = X(2)-HIRST INVERSE OF X(98)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(287) = X(2)-HIRST INVERSE OF X(98)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -45,7 +45,7 @@ X(287) = X(2)-HIRST INVERSE OF X(98)
    * :ref:`X(287) <X(287)>` = :ref:`X(248) <X(248)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(98) <X(98)>`
    * :ref:`X(287) <X(287)>` = :ref:`X(2) <X(2)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(98) <X(98)>`
    * :ref:`X(287) <X(287)>` = :term:`trilinear pole <trilinear-pole>` of PU(37) (line :ref:`X(3) <X(3)>`\ \ :ref:`X(525) <X(525)>`)
-   * :ref:`X(287) <X(287)>` = antipode of :ref:`X(69) <X(69)>` in hyperbola {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(69) <X(69)>`}
+   * :ref:`X(287) <X(287)>` = antipode of :ref:`X(69) <X(69)>` in hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(69) <X(69)>`}
    * :ref:`X(287) <X(287)>` = MacBeath circumconic antipode of :ref:`X(648) <X(648)>`
    * :ref:`X(287) <X(287)>` = :ref:`X(92) <X(92)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(237) <X(237)>`
    * :ref:`X(287) <X(287)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X(6530)

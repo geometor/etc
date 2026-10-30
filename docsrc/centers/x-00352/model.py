@@ -14,6 +14,8 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    intersect_lines,
+    point_from_barycentrics,
     promote_point_to_top,
     symmedian_point_of,
 )
@@ -24,15 +26,15 @@ def construct_x_00352(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(352) = INVERSE-IN-CIRCUMCIRCLE OF X(353) on reference triangle ABC."""
-    X_352 = eval_trilinear_point(model, A, B, C, 'a*(-a**(4)- b**(4)- c**(4)- 5*b**(2)*c**(2)+ 4*a**(2)*b**(2)+ 4*a**(2)*c**(2))', ID="X(352)", classes=["selected", "target"])
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
-    central_line(model, X_2, X_6, 2, 6, incident=True)
-    X_110 = eval_trilinear_point(model, A, B, C, 'csc(B - C)', ID="X(110)", classes=["center", "incident"])
-    X_187 = eval_trilinear_point(model, A, B, C, 'a*(2*a**(2) - b**(2) - c**(2))', ID="X(187)", classes=["center", "incident"])
-    central_line(model, X_110, X_187, 110, 187, incident=True)
+    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
+    X_110 = eval_trilinear_point(model, A, B, C, 'csc(B - C)', ID="X(110)", classes=["center"])
+    X_187 = eval_trilinear_point(model, A, B, C, 'a*(2*a**(2) - b**(2) - c**(2))', ID="X(187)", classes=["center"])
+    central_line(model, X_2, X_6, 2, 6)
+    central_line(model, X_110, X_187, 110, 187)
+    X_352 = intersect_lines(model, X_2, X_6, X_110, X_187, ID="X(352)", classes=["selected", "target"])
     X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
-    X_353 = eval_trilinear_point(model, A, B, C, 'a*(4*a**(4)- 2*b**(4)- 2*c**(4)- b**(2)*c**(2)- 4*a**(2)*b**(2)-4*a**(2)*c**(2))', ID="X(353)", classes=["center", "incident"])
+    X_353 = point_from_barycentrics(model, A, B, C, 0.31964876, 0.38714151, 0.29320973, ID="X(353)", classes=["center", "incident"])
     central_line(model, X_3, X_353, 3, 353, incident=True)
     return promote_point_to_top(model, X_352)
 

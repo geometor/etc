@@ -16,7 +16,7 @@ X(348) = ISOTOMIC CONJUGATE OF X(281)
    :alt: X(348) = ISOTOMIC CONJUGATE OF X(281)
    :align: center
 
-   **X(348) = ISOTOMIC CONJUGATE OF X(281)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(348) = ISOTOMIC CONJUGATE OF X(281)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -29,11 +29,7 @@ X(348) = ISOTOMIC CONJUGATE OF X(281)
 
    * **Trilinears:** :math:`\sec^{2}(C/2)`
    * **Trilinears:** :math:`(\csc A)/(1 + \sec A) : :`
-   * **Barycentrics:** :math:`(b^2 + c^2 - a^2)/(b + c - a) : :`
-
-.. container:: note-item
-
-   :ref:`X(348) <X(348)>` lies.
+   * **Barycentrics:** :math:`(b^{2} + c^{2} - a^{2})/(b + c - a) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 10 lines
@@ -59,7 +55,7 @@ Notes
 
 .. container:: note-item
 
-   Let A\ :sub:`36`\ B\ :sub:`36`\ C\ :sub:`36` be Gemini triangle 36. Let A' be the perspector of conic {A,B,C,B\ :sub:`36`,C\ :sub:`36`}}, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(348) <X(348)>`. (Randy Hutson, January 15, 2019)
+   Let :g:`A_{36}B_{36}C_{36} << A_36 B_36 C_36 >>` be Gemini triangle 36. Let :g:`A' <A'>` be the perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B_{36} <B_36>`,\ :g:`C_{36} <C_36>`}}, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(348) <X(348)>`. (Randy Hutson, January 15, 2019)
 
 .. toctree::
    :hidden:

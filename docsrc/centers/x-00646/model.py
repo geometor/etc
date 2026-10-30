@@ -12,6 +12,8 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    intersect_lines,
+    point_from_barycentrics,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -21,13 +23,13 @@ def construct_x_00646(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(646) = BARYCENTRIC MULTIPLIER FOR YFF PARABOLA on reference triangle ABC."""
-    X_646 = eval_trilinear_point(model, A, B, C, '(b + c - a)/(a**(2)*(b - c))', ID="X(646)", classes=["selected", "target"])
-    X_644 = eval_trilinear_point(model, A, B, C, '(b + c - a)/(b - c)', ID="X(644)", classes=["center", "incident"])
-    X_645 = eval_trilinear_point(model, A, B, C, '(b + c - a)/(a*(b**(2)- c**(2)))', ID="X(645)", classes=["center", "incident"])
-    central_line(model, X_644, X_645, 644, 645, incident=True)
-    X_190 = eval_trilinear_point(model, A, B, C, 'b*c/(b - c)', ID="X(190)", classes=["center", "incident"])
-    X_668 = eval_trilinear_point(model, A, B, C, '1/(a**(2)*(b - c))', ID="X(668)", classes=["center", "incident"])
-    central_line(model, X_190, X_668, 190, 668, incident=True)
+    X_644 = point_from_barycentrics(model, A, B, C, 0.8, -0.36, 0.56, ID="X(644)", classes=["center"])
+    X_645 = point_from_barycentrics(model, A, B, C, 0.8441247, -0.34292566, 0.49880096, ID="X(645)", classes=["center"])
+    X_190 = eval_trilinear_point(model, A, B, C, 'b*c/(b - c)', ID="X(190)", classes=["center"])
+    X_668 = eval_trilinear_point(model, A, B, C, '1/(a**(2)*(b - c))', ID="X(668)", classes=["center"])
+    central_line(model, X_644, X_645, 644, 645)
+    central_line(model, X_190, X_668, 190, 668)
+    X_646 = intersect_lines(model, X_644, X_645, X_190, X_668, ID="X(646)", classes=["selected", "target"])
     return promote_point_to_top(model, X_646)
 
 

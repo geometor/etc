@@ -16,12 +16,12 @@ X(677) = TRILINEAR POLE OF LINE X(3)X(101)
    :alt: X(677) = TRILINEAR POLE OF LINE X(3)X(101)
    :align: center
 
-   **X(677) = TRILINEAR POLE OF LINE X(3)X(101)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(677) = TRILINEAR POLE OF LINE X(3)X(101)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = a/{(b - c)[b\ :sup:`3` + c\ :sup:`3` - 2a\ :sup:`3` + (b + c)(a\ :sup:`2` - bc)]}
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a/{(b - c)[b^{3} + c^{3} - 2a^{3} + (b + c)(a^{2} - bc)]}`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`-3.168417854778`
 
 .. container:: note-item

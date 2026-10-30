@@ -13,6 +13,7 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     isogonal_conjugate,
+    point_from_barycentrics,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -22,7 +23,7 @@ def construct_x_00677(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(677) = TRILINEAR POLE OF LINE X(3)X(101) on reference triangle ABC."""
-    X_676 = eval_trilinear_point(model, A, B, C, 'b*c*(b - c)*(b**(3)+ c**(3)- 2*a**(3)+ (b + c)*(a**(2)- b*c))', ID="X(676)", classes=["center"])
+    X_676 = point_from_barycentrics(model, A, B, C, -0.61111111, 0.66666667, 0.94444444, ID="X(676)", classes=["center"])
     X_677 = isogonal_conjugate(model, A, B, C, X_676, ID="X(677)", classes=["selected", "target"])
     X_521 = eval_trilinear_point(model, A, B, C, '(sec(B) - sec(C))*(csc(A))', ID="X(521)", classes=["center", "incident"])
     X_651 = eval_trilinear_point(model, A, B, C, '1/(cos(B) - cos(C))', ID="X(651)", classes=["center", "incident"])

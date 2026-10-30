@@ -16,16 +16,12 @@ X(294) = ISOGONAL CONJUGATE OF X(241)
    :alt: X(294) = ISOGONAL CONJUGATE OF X(241)
    :align: center
 
-   **X(294) = ISOGONAL CONJUGATE OF X(241)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(294) = ISOGONAL CONJUGATE OF X(241)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = (b + c - a)/(b\ :sup:`2` + c\ :sup:`2` - ab - ac)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = (b + c - a)/(b^{2} + c^{2} - ab - ac)`
    | **Search Value (6, 9, 13):** :math:`2.052081234010`
-
-.. container:: note-item
-
-   :ref:`X(294) <X(294)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 11 lines
@@ -43,7 +39,7 @@ X(294) = ISOGONAL CONJUGATE OF X(241)
    * :ref:`X(294) <X(294)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(926) <X(926)>`\ X(1362)
    * :ref:`X(294) <X(294)>` = :ref:`X(1) <X(1)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(105) <X(105)>`
    * :ref:`X(294) <X(294)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(55) <X(55)>`\ \ :ref:`X(650) <X(650)>`
-   * :ref:`X(294) <X(294)>` = perspector of conic {A,B,C,PU(96)}
+   * :ref:`X(294) <X(294)>` = perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(96)}
    * :ref:`X(294) <X(294)>` = intersection of :term:`trilinear polars <trilinear-polar>` of P(96) and U(96)
 
 .. toctree::

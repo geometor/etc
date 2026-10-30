@@ -10,13 +10,13 @@ X(133) = INTERSECTION OF LINES X(4)X(74) AND X(5)X(122)
 
 .. enunciation::
 
-   :ref:`X(133) <X(133)>` = :ref:`X(106) <X(106)>`-of-:term:`orthic triangle <orthic-triangle>` is ABC is acute.
+   :ref:`X(133) <X(133)>` = :ref:`X(106) <X(106)>`-of-:term:`orthic triangle <orthic-triangle>` is :g:`ABC << A B C >>` is acute.
 
 .. figure:: x-00133.svg
    :alt: X(133) = INTERSECTION OF LINES X(4)X(74) AND X(5)X(122)
    :align: center
 
-   **X(133) = INTERSECTION OF LINES X(4)X(74) AND X(5)X(122)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(133) = INTERSECTION OF LINES X(4)X(74) AND X(5)X(122)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,10 +28,6 @@ X(133) = INTERSECTION OF LINES X(4)X(74) AND X(5)X(122)
 
    :ref:`X(133) <X(133)>` lies on the nine-point circle
 
-.. container:: note-item
-
-   :ref:`X(133) <X(133)>` lies.
-
 .. collapse:: Incident Central Lines
    :badge: 6 lines
    :class: line-catalog
@@ -41,7 +37,7 @@ X(133) = INTERSECTION OF LINES X(4)X(74) AND X(5)X(122)
 .. collapse:: Functional Relations
    :badge: 13 relations
 
-   * :ref:`X(133) <X(133)>` = :ref:`X(106) <X(106)>`-of-orthic triangle is ABC is acute.
+   * :ref:`X(133) <X(133)>` = :ref:`X(106) <X(106)>`-of-orthic triangle is :g:`ABC << A B C >>` is acute.
    * :ref:`X(133) <X(133)>` = midpoint of :ref:`X(4) <X(4)>` and :ref:`X(107) <X(107)>`
    * :ref:`X(133) <X(133)>` = reflection of :ref:`X(122) <X(122)>` in :ref:`X(5) <X(5)>`
    * :ref:`X(133) <X(133)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(15404)
@@ -52,7 +48,7 @@ X(133) = INTERSECTION OF LINES X(4)X(74) AND X(5)X(122)
    * :ref:`X(133) <X(133)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(1990)
    * :ref:`X(133) <X(133)>` = trilinear pole wrt Euler triangle of van Aubel line
    * :ref:`X(133) <X(133)>` = inverse-in-polar-circle of :ref:`X(74) <X(74)>`
-   * :ref:`X(133) <X(133)>` = anticenter of cyclic quadrilateral ABC\ :ref:`X(107) <X(107)>`
+   * :ref:`X(133) <X(133)>` = anticenter of cyclic quadrilateral :g:`ABC << A B C >>`\ :ref:`X(107) <X(107)>`
    * :ref:`X(133) <X(133)>` = Λ(:ref:`X(4) <X(4)>`, :ref:`X(51) <X(51)>`), wrt orthic triangle
 
 .. toctree::

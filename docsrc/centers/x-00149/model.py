@@ -14,6 +14,7 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     feuerbach_point_of,
+    intersect_lines,
     nagel_point_of,
     promote_point_to_top,
 )
@@ -24,13 +25,13 @@ def construct_x_00149(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(149) = REFLECTION OF X(20) IN X(104) on reference triangle ABC."""
-    X_149 = eval_trilinear_point(model, A, B, C, 'b*c*(b**(3)+ c**(3)- a**(3)+ (a**(2)- b*c)*(b + c) + a*(b*c - b**(2)- c**(2)))', ID="X(149)", classes=["selected", "target"])
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
-    X_11 = feuerbach_point_of(model, A, B, C, ID="X(11)", classes=["center", "incident"])
-    central_line(model, X_2, X_11, 2, 11, incident=True)
-    X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center", "incident"])
-    X_80 = eval_trilinear_point(model, A, B, C, '1/(1 - 2*cos(A))', ID="X(80)", classes=["center", "incident"])
-    central_line(model, X_8, X_80, 8, 80, incident=True)
+    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
+    X_11 = feuerbach_point_of(model, A, B, C, ID="X(11)", classes=["center"])
+    X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center"])
+    X_80 = eval_trilinear_point(model, A, B, C, '1/(1 - 2*cos(A))', ID="X(80)", classes=["center"])
+    central_line(model, X_2, X_11, 2, 11)
+    central_line(model, X_8, X_80, 8, 80)
+    X_149 = intersect_lines(model, X_2, X_11, X_8, X_80, ID="X(149)", classes=["selected", "target"])
     X_20 = eval_trilinear_point(model, A, B, C, 'cos(A) - cos(B)*cos(C)', ID="X(20)", classes=["center", "incident"])
     X_104 = eval_trilinear_point(model, A, B, C, '1/(-1 + cos(B) + cos(C))', ID="X(104)", classes=["center", "incident"])
     central_line(model, X_20, X_104, 20, 104, incident=True)

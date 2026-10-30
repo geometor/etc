@@ -8,27 +8,20 @@
 X(535) = DIRECTION OF VECTOR AX + BX + CX, where X = X(36)
 ==========================================================
 
-.. enunciation::
-
-   Barycentrics af(a,b,c) : bf(b,c,a) : cf(c,a,b)
-
 .. figure:: x-00535.svg
    :alt: X(535) = DIRECTION OF VECTOR AX + BX + CX, where X = X(36)
    :align: center
 
-   **X(535) = DIRECTION OF VECTOR AX + BX + CX, where X = X(36)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(535) = DIRECTION OF VECTOR AX + BX + CX, where X = X(36)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where, f(a,b,c) = (2ax - by - cz)/a, x = x(A,B,C) = 1 - 2 cos A, y = x(B,C,A), z = x(C,A,B)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = (2ax - by - cz)/a`, :math:`x = x(A,B,C) = 1 - 2 \cos A`, :math:`y = x(B,C,A)`, :math:`z = x(C,A,B)`
+   | **Barycentrics:** :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
 
 .. container:: note-item
 
    :ref:`X(535) <X(535)>` lies on the line at infinity.
-
-.. container:: note-item
-
-   :ref:`X(535) <X(535)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 12 lines

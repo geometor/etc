@@ -16,6 +16,7 @@ from geometor.etc.ops import (
     eval_trilinear_point,
     isotomic_conjugate,
     orthocenter_of,
+    point_from_barycentrics,
     promote_point_to_top,
     symmedian_point_of,
 )
@@ -32,10 +33,10 @@ def construct_x_00491(
     X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
     central_line(model, X_2, X_6, 2, 6, incident=True)
     X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
-    X_487 = eval_trilinear_point(model, A, B, C, '(cos(A))*(1 - csc(A)*sin(B)*sin(C))', ID="X(487)", classes=["center", "incident"])
+    X_487 = point_from_barycentrics(model, A, B, C, -1.1839423, 1.1273575, 1.0565848, ID="X(487)", classes=["center", "incident"])
     central_line(model, X_4, X_487, 4, 487, incident=True)
     X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
-    X_490 = eval_trilinear_point(model, A, B, C, '(cos(A))*(1 + csc(A)*sin(B)*sin(C)) - cos(B)*cos(C)', ID="X(490)", classes=["center", "incident"])
+    X_490 = point_from_barycentrics(model, A, B, C, 0.61185907, 0.42830629, -0.040165363, ID="X(490)", classes=["center", "incident"])
     central_line(model, X_3, X_490, 3, 490, incident=True)
     return promote_point_to_top(model, X_491)
 

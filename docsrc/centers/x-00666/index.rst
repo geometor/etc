@@ -16,18 +16,18 @@ X(666) = TRILINEAR POLE OF LINE X(2)X(11)
    :alt: X(666) = TRILINEAR POLE OF LINE X(2)X(11)
    :align: center
 
-   **X(666) = TRILINEAR POLE OF LINE X(2)X(11)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(666) = TRILINEAR POLE OF LINE X(2)X(11)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`bc/[(a - b)^{2}(a + b - c) - (c - a)^{2}(c + a - b)]`
-   | **Barycentrics:** :math:`(a - b)*(a - c)*(a^2 + b^2 - a*c - b*c)*(a^2 - a*b - b*c + c^2) : :`
+   | **Barycentrics:** :math:`(a - b) \cdot (a - c) \cdot (a^{2} + b^{2} - a c - b c) \cdot (a^{2} - a b - b c + c^{2}) : :`
    | **Search Value (6, 9, 13):** :math:`-2.629117015619`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(666) <X(666)>` = 3 :ref:`X(2) <X(2)>` - 4 X(40540), 3 X(18821) - 4 X(35094), X(18821) - 4 X(35113), 3 X(18821) - 2 X(39353), X(18821) + 2 X(39363), 3 X(18821) - 8 X(40540), 5 X(29590) - X(40868), X(35094) - 3 X(35113), 2 X(35094) + 3 X(39363), 6 X(35113) - X(39353), 2 X(35113) + X(39363), 3 X(35113) - 2 X(40540), X(39353) + 3 X(39363), X(39353) - 4 X(40540), 3 X(39363) + 4 X(40540)
+   * :ref:`X(666) <X(666)>` = :math:`3` :ref:`X(2) <X(2)>` - :math:`4` X(40540), :math:`3` X(18821) - :math:`4` X(35094), X(18821) - :math:`4` X(35113), :math:`3` X(18821) - :math:`2` X(39353), X(18821) + :math:`2` X(39363), :math:`3` X(18821) - :math:`8` X(40540), :math:`5` X(29590) - X(40868), X(35094) - :math:`3` X(35113), :math:`2` X(35094) + :math:`3` X(39363), :math:`6` X(35113) - X(39353), :math:`2` X(35113) + X(39363), :math:`3` X(35113) - :math:`2` X(40540), X(39353) + :math:`3` X(39363), X(39353) - :math:`4` X(40540), :math:`3` X(39363) + :math:`4` X(40540)
 
 .. container:: note-item
 

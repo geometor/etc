@@ -10,17 +10,17 @@ X(547) = MIDPOINT OF X(2) AND X(5)
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(547) <X(547)>` has Shinagawa coefficients (7,3).
+   As a point on the Euler line, :ref:`X(547) <X(547)>` has Shinagawa coefficients :math:`(7,3)`.
 
 .. figure:: x-00547.svg
    :alt: X(547) = MIDPOINT OF X(2) AND X(5)
    :align: center
 
-   **X(547) = MIDPOINT OF X(2) AND X(5)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(547) = MIDPOINT OF X(2) AND X(5)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`5 \cos(B - C) + 2 cosA : :`
+   | **Trilinears:** :math:`5 \cos(B - C) + 2 \cos A : :`
    | **Search Value (6, 9, 13):** :math:`1.591120267062`
 
 .. collapse:: Alternate Coordinates
@@ -31,15 +31,11 @@ X(547) = MIDPOINT OF X(2) AND X(5)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(547) <X(547)>` = :ref:`X(3) <X(3)>` + 3\*\ :ref:`X(4) <X(4)>`
+   * :ref:`X(547) <X(547)>` = :ref:`X(3) <X(3)>` + :math:`3` :ref:`X(4) <X(4)>`
 
 .. container:: note-item
 
    :ref:`X(547) <X(547)>` lies on the Euler line. (:person:`Antreas Hatzipolakis <antreas-hatzipolakis>`, 1/20/00, :cite:`Hyacinthos #201 <hyacinthos>`)
-
-.. container:: note-item
-
-   :ref:`X(547) <X(547)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines

@@ -6,13 +6,13 @@ X(245) = X(1)-LINE CONJUGATE OF X(110) — Code
 
 .. enunciation::
 
-   Barycentrics (sin A)f(A,B,C) : (sin B)f(B,C,A) : (sin C)f(C,A,B)
+   :ref:`X(245) <X(245)>` = :ref:`X(1) <X(1)>`-:term:`line conjugate <line-conjugate>` of :ref:`X(110) <X(110)>`
 
 .. figure:: x-00245.svg
    :alt: X(245) = X(1)-LINE CONJUGATE OF X(110)
    :align: center
 
-   **X(245) = X(1)-LINE CONJUGATE OF X(110)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(245) = X(1)-LINE CONJUGATE OF X(110)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -16,16 +16,12 @@ X(878) = ISOGONAL CONJUGATE OF X(877)
    :alt: X(878) = ISOGONAL CONJUGATE OF X(877)
    :align: center
 
-   **X(878) = ISOGONAL CONJUGATE OF X(877)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(878) = ISOGONAL CONJUGATE OF X(877)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`a^{2}u(bv - cw)/(a^{2}u^{2} - bcvw) : :`, where u : v : w = :ref:`X(4) <X(4)>`
+   | **Trilinears:** :math:`a^{2}u(bv - cw)/(a^{2}u^{2} - bcvw) : :`, where :math:`u : v : w` = :ref:`X(4) <X(4)>`
    | **Search Value (6, 9, 13):** :math:`-4.913745947733`
-
-.. container:: note-item
-
-   :ref:`X(878) <X(878)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines

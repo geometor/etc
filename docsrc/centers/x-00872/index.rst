@@ -16,16 +16,12 @@ X(872) = INTERSECTION OF LINES X(37)X(42) AND X(43)X(75)
    :alt: X(872) = INTERSECTION OF LINES X(37)X(42) AND X(43)X(75)
    :align: center
 
-   **X(872) = INTERSECTION OF LINES X(37)X(42) AND X(43)X(75)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(872) = INTERSECTION OF LINES X(37)X(42) AND X(43)X(75)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`[a(b + c)]^{2} : :`
    | **Search Value (6, 9, 13):** :math:`0.956633226291`
-
-.. container:: note-item
-
-   :ref:`X(872) <X(872)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines

@@ -13,6 +13,7 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     isogonal_conjugate,
+    point_from_barycentrics,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -22,7 +23,7 @@ def construct_x_00767(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(767) = EVEN (3, 4) CIRCUMCIRCLE POINT on reference triangle ABC."""
-    X_766 = eval_trilinear_point(model, A, B, C, 'a**(2)*(b**(4)+ c**(4)) - a**(3)*(b**(3)+ c**(3))', ID="X(766)", classes=["center"])
+    X_766 = point_from_barycentrics(model, A, B, C, -0.56041129, -0.23404565, 0.79445694, ID="X(766)", classes=["center"])
     X_767 = isogonal_conjugate(model, A, B, C, X_766, ID="X(767)", classes=["selected", "target"])
     X_75 = eval_trilinear_point(model, A, B, C, '1/a**(2)', ID="X(75)", classes=["center", "incident"])
     X_101 = eval_trilinear_point(model, A, B, C, 'a/(b - c)', ID="X(101)", classes=["center", "incident"])

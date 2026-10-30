@@ -16,16 +16,12 @@ X(625) = MIDPOINT OF X(623) AND X(624)
    :alt: X(625) = MIDPOINT OF X(623) AND X(624)
    :align: center
 
-   **X(625) = MIDPOINT OF X(623) AND X(624)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(625) = MIDPOINT OF X(623) AND X(624)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`[2(b^{4} + c^{4} - b^{2}c^{2}) - a^{2}(b^{2} + c^{2})]/a : :`
    | **Search Value (6, 9, 13):** :math:`4.864495057529`
-
-.. container:: note-item
-
-   :ref:`X(625) <X(625)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines

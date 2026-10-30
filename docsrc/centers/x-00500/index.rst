@@ -16,16 +16,12 @@ X(500) = ORTHOCENTER OF THE INCENTRAL TRIANGLE
    :alt: X(500) = ORTHOCENTER OF THE INCENTRAL TRIANGLE
    :align: center
 
-   **X(500) = ORTHOCENTER OF THE INCENTRAL TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(500) = ORTHOCENTER OF THE INCENTRAL TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`a(b^{2} +c^{2} - a^{2} + bc)[2abc + (b + c)(a^{2} - (b - c)^{2})] : :`
    | **Search Value (6, 9, 13):** :math:`3.085237628787`
-
-.. container:: note-item
-
-   :ref:`X(500) <X(500)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines

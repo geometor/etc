@@ -16,7 +16,7 @@ X(499) = {X(1),X(2)}-HARMONIC CONJUGATE OF X(498)
    :alt: X(499) = {X(1),X(2)}-HARMONIC CONJUGATE OF X(498)
    :align: center
 
-   **X(499) = {X(1),X(2)}-HARMONIC CONJUGATE OF X(498)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(499) = {X(1),X(2)}-HARMONIC CONJUGATE OF X(498)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,16 +27,12 @@ X(499) = {X(1),X(2)}-HARMONIC CONJUGATE OF X(498)
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`bc - 2R^2 : :`
+   * **Trilinears:** :math:`bc - 2R^{2} : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(499) <X(499)>` = R\*\ :ref:`X(1) <X(1)>` - r\*\ :ref:`X(3) <X(3)>` - 2r\*\ :ref:`X(5) <X(5)>`
-
-.. container:: note-item
-
-   :ref:`X(499) <X(499)>` lies.
+   * :ref:`X(499) <X(499)>` = :math:`R` :ref:`X(1) <X(1)>` - :math:`r` :ref:`X(3) <X(3)>` - :math:`2r` :ref:`X(5) <X(5)>`
 
 .. collapse:: Incident Central Lines
    :badge: 17 lines

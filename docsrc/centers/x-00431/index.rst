@@ -10,24 +10,24 @@ X(431) = EULER X(283)-5th-SUBSTITUTION POINT
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(431) <X(431)>` has Shinagawa coefficients ($aS\ :sub:`A`\ $F,- $aS\ :sub:`A`\ $(E - F) - 2abcF). :ref:`X(431) <X(431)>` lies on these lines: {2, 3}, {11, 40985}, {12, 1824}, {19, 50036}, {119, 135}, {136, 25640}, {225, 7363}, {388, 11401}, {1112, 12826}, {1478, 26377}, {1829, 12047}, {1834, 44113}, {1842, 5521}, {1848, 31936}, {2886, 5130}, {3485, 11396}, {3822, 39579}, {5086, 12135}, {5139, 20621}, {10572, 11363}, {10895, 11391}, {16178, 42422}, {21664, 34338}, {44092, 44545}
+   As a point on the Euler line, :ref:`X(431) <X(431)>` has Shinagawa coefficients :math:`(\$aS_{A}\$F,- \$aS_{A}\$(E - F) - 2abcF). X(431) lies on these lines: {2, 3}, {11, 40985}, {12, 1824}, {19, 50036}, {119, 135}, {136, 25640}, {225, 7363}, {388, 11401}, {1112, 12826}, {1478, 26377}, {1829, 12047}, {1834, 44113}, {1842, 5521}, {1848, 31936}, {2886, 5130}, {3485, 11396}, {3822, 39579}, {5086, 12135}, {5139, 20621}, {10572, 11363}, {10895, 11391}, {16178, 42422}, {21664, 34338}, {44092, 44545}`
 
 .. figure:: x-00431.svg
    :alt: X(431) = EULER X(283)-5th-SUBSTITUTION POINT
    :align: center
 
-   **X(431) = EULER X(283)-5th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(431) = EULER X(283)-5th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(v + w)\sec A : (w + u)\sec B : (u + v)\sec C`, where, u : v : w = :ref:`X(283) <X(283)>`; e.g., u = u(A,B,C) = (cos A)/(cos B + cos C)
+   | **Trilinears:** :math:`(v + w)\sec A : (w + u)\sec B : (u + v)\sec C`, where :math:`u : v : w` = :ref:`X(283) <X(283)>`; e.g., :math:`u = u(A,B,C) = (\cos A)/(\cos B + \cos C)`
    | **Barycentrics:** :math:`(v + w)\tan A : (w + u)\tan B : (u + v)\tan C`
-   | **Search Value (6, 9, 13):** :math:`-10.356504391821`
+   | **Search Value (6, 9, 13):** :math:`2.629368792489`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`(b + c)*(2*a + b + c)*(-a^2 + b^2 - c^2)*(a^2 + b^2 - c^2) : :(b + c)*(-a^2 + b^2 - c^2)*(a^2 + b^2 - c^2)*(a^4*b - 2*a^2*b^3 + b^5 + a^4*c + 2*a^3*b*c + 2*a^2*b^2*c - b^4*c + 2*a^2*b*c^2 - 2*a^2*c^3 - b*c^4 + c^5) : :`
+   * **Barycentrics:** :math:`(b + c) \cdot (2 a + b + c) \cdot (-a^{2} + b^{2} - c^{2}) \cdot (a^{2} + b^{2} - c^{2}) : :(b + c) \cdot (-a^{2} + b^{2} - c^{2}) \cdot (a^{2} + b^{2} - c^{2}) \cdot (a^{4} b - 2 a^{2} b^{3} + b^{5} + a^{4} c + 2 a^{3} b c + 2 a^{2} b^{2} c - b^{4} c + 2 a^{2} b c^{2} - 2 a^{2} c^{3} - b c^{4} + c^{5}) : :`
 
 .. collapse:: Functional Relations
    :badge: 6 relations

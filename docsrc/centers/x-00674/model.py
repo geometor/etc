@@ -12,6 +12,7 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    intersect_lines,
     promote_point_to_top,
     symmedian_point_of,
 )
@@ -22,13 +23,13 @@ def construct_x_00674(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(674) = CROSSDIFFERENCE OF X(6) AND X(514) on reference triangle ABC."""
-    X_674 = eval_trilinear_point(model, A, B, C, 'a*(b**(3)+ c**(3)- a*(b**(2)+ c**(2)))', ID="X(674)", classes=["selected", "target"])
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
-    X_31 = eval_trilinear_point(model, A, B, C, 'a**(2)', ID="X(31)", classes=["center", "incident"])
-    central_line(model, X_6, X_31, 6, 31, incident=True)
-    X_51 = eval_trilinear_point(model, A, B, C, 'a**(2)*cos(B - C)', ID="X(51)", classes=["center", "incident"])
-    X_210 = eval_trilinear_point(model, A, B, C, '(b + c)*(b + c - a)', ID="X(210)", classes=["center", "incident"])
-    central_line(model, X_51, X_210, 51, 210, incident=True)
+    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
+    X_31 = eval_trilinear_point(model, A, B, C, 'a**(2)', ID="X(31)", classes=["center"])
+    X_51 = eval_trilinear_point(model, A, B, C, 'a**(2)*cos(B - C)', ID="X(51)", classes=["center"])
+    X_210 = eval_trilinear_point(model, A, B, C, '(b + c)*(b + c - a)', ID="X(210)", classes=["center"])
+    central_line(model, X_6, X_31, 6, 31)
+    central_line(model, X_51, X_210, 51, 210)
+    X_674 = intersect_lines(model, X_6, X_31, X_51, X_210, ID="X(674)", classes=["selected", "target"])
     X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X(30)", classes=["center", "incident"])
     X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X(511)", classes=["center", "incident"])
     central_line(model, X_30, X_511, 30, 511, incident=True)

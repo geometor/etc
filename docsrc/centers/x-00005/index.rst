@@ -11,19 +11,19 @@ X(5) = NINE-POINT CENTER
 
 .. enunciation::
 
-   :ref:`X(5) <X(5)>` is the center of the nine-point circle. Euler showed in that this circle passes through the midpoints of the sides of ABC and the feet of the altitudes of ABC, hence six of the nine points. The other three are the midpoints of segments A-to-:ref:`X(4) <X(4)>`, B-to-:ref:`X(4) <X(4)>`, C-to-:ref:`X(4) <X(4)>`. The radius of the nine-point circle is one-half the circumradius.
+   :ref:`X(5) <X(5)>` is the center of the nine-point circle. Euler showed in that this circle passes through the midpoints of the sides of :g:`ABC << A B C >>` and the feet of the altitudes of :g:`ABC << A B C >>`, hence six of the nine points. The other three are the midpoints of segments A-to-:ref:`X(4) <X(4)>`, B-to-:ref:`X(4) <X(4)>`, C-to-:ref:`X(4) <X(4)>`. The radius of the nine-point circle is one-half the circumradius.
 
 .. figure:: x-00005.svg
    :alt: X(5) = NINE-POINT CENTER
    :align: center
 
-   **X(5) = NINE-POINT CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(5) = NINE-POINT CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`\cos(B - C) : \cos(C - A) : \cos(A - B)`
    | **Barycentrics:** :math:`a \cos(B - C) : b \cos(C - A) : c \cos(A - B)`
-   | **Tripolars:** :math:`\sqrt{a^6-3 a^4 b^2+3 a^2 b^4-b^6-3 a^4 c^2+3 a^2 b^2 c^2+b^4 c^2+3 a^2 c^4+b^2 c^4-c^6} : :`
+   | **Tripolars:** :math:`\sqrt{a^{6}-3 a^{4} b^{2}+3 a^{2} b^{4}-b^{6}-3 a^{4} c^{2}+3 a^{2} b^{2} c^{2}+b^{4} c^{2}+3 a^{2} c^{4}+b^{2} c^{4}-c^{6}} : :`
    | **Search Value (6, 9, 13):** :math:`0.552871741635`
 
 .. collapse:: Alternate Coordinates
@@ -34,18 +34,18 @@ X(5) = NINE-POINT CENTER
    * **Trilinears:** :math:`bc[a^{2}(b^{2} + c^{2}) - (b^{2} - c^{2})^{2}] : :`
    * **Trilinears:** :math:`2 \sec A + \sec B \sec C : :`
    * **Trilinears:** :math:`\cos B \cos C + \sin B \sin C : :`
-   * **Trilinears:** :math:`\cos^2(B/2 - C/2) - \sin^2(B/2 - C/2) : :`
-   * **Trilinears:** :math:`\cos A' : :`, where A' is the angle formed by internal tangents to incircle and A-excircle
-   * **Trilinears:** :math:`\cos A'' : :`, where A'' is the angle formed by external tangents to B- and C-excircles
+   * **Trilinears:** :math:`\cos^{2}(B/2 - C/2) - \sin^{2}(B/2 - C/2) : :`
+   * **Trilinears:** :math:`\cos A' : :`, where :g:`A' <A'>` is the angle formed by internal tangents to incircle and :g:`A <A>`-excircle
+   * **Trilinears:** :math:`\cos A'' : :`, where :g:`A″ <A″>` is the angle formed by external tangents to B- and :g:`C <C>`-excircles
    * **Barycentrics:** :math:`a^{2}(b^{2} + c^{2}) - (b^{2} - c^{2})^{2}`
-   * **Barycentrics:** :math:`S^2 + SB SC : :`
+   * **Barycentrics:** :math:`S^{2} + S_{B} S_{C} : :`
    * **Barycentrics:** :math:`1 + \cot B \cot C : :`
 
 .. collapse:: Linear Combinations
    :badge: 2 combinations
 
-   * :ref:`X(5) <X(5)>` = 3\*\ :ref:`X(2) <X(2)>` + :ref:`X(4) <X(4)>` = 3\*\ :ref:`X(2) <X(2)>` - :ref:`X(3) <X(3)>` = :ref:`X(3) <X(3)>` + :ref:`X(4) <X(4)>`
-   * :ref:`X(5) <X(5)>` = (2 + J) X(1113) + (2 - J) X(1114)
+   * :ref:`X(5) <X(5)>` = :math:`3` :ref:`X(2) <X(2)>` + :ref:`X(4) <X(4)>` = :math:`3` :ref:`X(2) <X(2)>` - :ref:`X(3) <X(3)>` = :ref:`X(3) <X(3)>` + :ref:`X(4) <X(4)>`
+   * :ref:`X(5) <X(5)>` = :math:`(2 + J)` X(1113) + :math:`(2 - J)` X(1114)
 
 .. container:: note-item
 
@@ -102,9 +102,9 @@ X(5) = NINE-POINT CENTER
    * :ref:`X(5) <X(5)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X(275) <X(275)>`
    * :ref:`X(5) <X(5)>` = :ref:`X(252) <X(252)>`-isoconjugate of X(2964)
    * :ref:`X(5) <X(5)>` = homothetic center of :term:`medial triangle <medial-triangle>` and Euler triangle
-   * :ref:`X(5) <X(5)>` = homothetic center of ABC and the triangle obtained by reflecting :ref:`X(3) <X(3)>` in the points A, B, C
+   * :ref:`X(5) <X(5)>` = homothetic center of :g:`ABC << A B C >>` and the triangle obtained by reflecting :ref:`X(3) <X(3)>` in the points :g:`A <A>`, :g:`B <B>`, :g:`C <C>`
    * :ref:`X(5) <X(5)>` = radical center of the Stammler circles
-   * :ref:`X(5) <X(5)>` = centroid of {A, B, C, :ref:`X(4) <X(4)>`}
+   * :ref:`X(5) <X(5)>` = centroid of {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`, :ref:`X(4) <X(4)>`}
    * :ref:`X(5) <X(5)>` = :term:`antigonal image <antigonal-image>` of X(1263)
    * :ref:`X(5) <X(5)>` = crosspoint of :ref:`X(627) <X(627)>` and :ref:`X(628) <X(628)>` wrt both the excentral and :term:`anticomplementary triangles <anticomplementary-triangle>`
    * :ref:`X(5) <X(5)>` = intersection of tangents to Evans conic at :ref:`X(15) <X(15)>` and :ref:`X(16) <X(16)>`
@@ -114,13 +114,13 @@ X(5) = NINE-POINT CENTER
    * :ref:`X(5) <X(5)>` = inverse-in-Steiner-inellipse of :ref:`X(297) <X(297)>`
    * :ref:`X(5) <X(5)>` = {X(2009),X(2010)}-harmonic conjugate of :ref:`X(39) <X(39)>`
    * :ref:`X(5) <X(5)>` = {X(2454),X(2455)}-harmonic conjugate of :ref:`X(297) <X(297)>`
-   * :ref:`X(5) <X(5)>` = perspector of medial triangles of ABC, orthic and half-altitude triangles
+   * :ref:`X(5) <X(5)>` = perspector of medial triangles of :g:`ABC << A B C >>`, orthic and half-altitude triangles
    * :ref:`X(5) <X(5)>` = :ref:`X(6) <X(6)>`-isoconjugate of X(2167)
    * :ref:`X(5) <X(5)>` = orthic-isogonal conjugate of :ref:`X(52) <X(52)>`
    * :ref:`X(5) <X(5)>` = Thomson-isogonal conjugate of X(6030)
-   * :ref:`X(5) <X(5)>` = :ref:`X(1) <X(1)>`-of-submedial triangle if ABC is acute
+   * :ref:`X(5) <X(5)>` = :ref:`X(1) <X(1)>`-of-submedial triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(5) <X(5)>` = harmonic center of circumcircles of Euler and anti-Euler triangles
-   * :ref:`X(5) <X(5)>` = perspector of Feuerbach triangle and cross-triangle of ABC and Feuerbach triangle
+   * :ref:`X(5) <X(5)>` = perspector of Feuerbach triangle and cross-triangle of :g:`ABC << A B C >>` and Feuerbach triangle
    * :ref:`X(5) <X(5)>` = Kosnita(:ref:`X(4) <X(4)>`,\ :ref:`X(2) <X(2)>`) point
    * :ref:`X(5) <X(5)>` = Kosnita(:ref:`X(4) <X(4)>`,\ :ref:`X(3) <X(3)>`) point
    * :ref:`X(5) <X(5)>` = Kosnita(:ref:`X(4) <X(4)>`,\ :ref:`X(20) <X(20)>`) point
@@ -130,15 +130,15 @@ X(5) = NINE-POINT CENTER
    * :ref:`X(5) <X(5)>` = perspector of Ehrmann mid-triangle and submedial triangle
    * :ref:`X(5) <X(5)>` = Ehrmann-side-to-orthic :term:`similarity image <similarity-image>` of :ref:`X(4) <X(4)>`
    * :ref:`X(5) <X(5)>` = Johnson-to-Ehrmann-mid similarity image of :ref:`X(3) <X(3)>`
-   * :ref:`X(5) <X(5)>` = excentral-to-ABC :term:`functional image <functional-image>` of :ref:`X(3) <X(3)>`
-   * :ref:`X(5) <X(5)>` = QA-P32 center (Centroid of the Circumcenter Quadrangle) of quadrangle ABC\ :ref:`X(4) <X(4)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/60-qa-p32.html)
+   * :ref:`X(5) <X(5)>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X(3) <X(3)>`
+   * :ref:`X(5) <X(5)>` = :g:`QA <[ Q A ]>`-P32 center (Centroid of the Circumcenter Quadrangle) of quadrangle :g:`ABC << A B C >>`\ :ref:`X(4) <X(4)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/60-qa-p32.html)
 
 Notes
 -----
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(5) <X(5)>` has Shinagawa coefficients (1, 1).
+   As a point on the Euler line, :ref:`X(5) <X(5)>` has Shinagawa coefficients :math:`(1, 1)`.
 
 .. container:: note-item
 
@@ -146,51 +146,51 @@ Notes
 
 .. container:: note-item
 
-   Let Pa be the parabola with focus A and directrix BC. Let La be the polar of :ref:`X(3) <X(3)>` wrt Pa. Define Lb and Lc cyclically. Let A' = Lb∩Lc, and define B' and C; cyclically. Then :ref:`X(5) <X(5)>` = :ref:`X(597) <X(597)>`-of-A'B'C'. (:person:`Randy Hutson <randy-hutson>`, December 10, 2016)
+   Let :g:`P_{a} <P_a>` be the parabola with focus A and directrix :g:`BC <[ B C ]>`. Let :g:`L_{a} <L_a>` be the polar of :ref:`X(3) <X(3)>` wrt :g:`P_{a} <P_a>`. Define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, and define :g:`B' <B'>` and C; cyclically. Then :ref:`X(5) <X(5)>` = :ref:`X(597) <X(597)>`-of-:g:`A'B'C' << A' B' C' >>`. (:person:`Randy Hutson <randy-hutson>`, December 10, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the half-altitude triangle. Let A″ be the trilinear pole, wrt A'B'C', of line BC, and define B″ and C″ cyclically. The lines A'″, B'B″, C'C″ concur in :ref:`X(5) <X(5)>`. (Randy Hutson, December 10, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the half-altitude triangle. Let :g:`A″ <A″>` be the trilinear pole, wrt :g:`A'B'C' << A' B' C' >>`, of line :g:`BC <[ B C ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines A'″, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(5) <X(5)>`. (Randy Hutson, December 10, 2016)
 
 .. container:: note-item
 
-   Let A' be the nine-point center of BC\ :ref:`X(13) <X(13)>`, and define B' and C' cyclically. Let A″ be the nine-point center of BC\ :ref:`X(14) <X(14)>`, and define B″ and C″ cyclically. The lines A'″, B'B″, C'C″ concur in :ref:`X(5) <X(5)>`. (Randy Hutson, December 10, 2016)
+   Let :g:`A' <A'>` be the nine-point center of :g:`BC <[ B C ]>`\ :ref:`X(13) <X(13)>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Let :g:`A″ <A″>` be the nine-point center of :g:`BC <[ B C ]>`\ :ref:`X(14) <X(14)>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines A'″, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(5) <X(5)>`. (Randy Hutson, December 10, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the Euler triangle. Let A″ be the centroid of AB'C', and define B″ and C″ cyclically. The lines A'″, B'B″, C'C″ concur in :ref:`X(5) <X(5)>`. (Randy Hutson, December 10, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the Euler triangle. Let :g:`A″ <A″>` be the centroid of :g:`AB'C' << A B' C' >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines A'″, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(5) <X(5)>`. (Randy Hutson, December 10, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be any equilateral triangle inscribed in the circumcircle of ABC. The Simson lines of A', B', C' form an equilateral triangle with center :ref:`X(5) <X(5)>`. If A'B'C' is the circumtangential triangle, the Simson lines of A', B', C' concur in :ref:`X(5) <X(5)>`. (Randy Hutson, December 10, 2016) Let O\ :sub:`A` be the circle centered at the A-vertex of the Steiner triangle and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(5) <X(5)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (Randy Hutson, August 30, 2020)
+   Let :g:`A'B'C' << A' B' C' >>` be any equilateral triangle inscribed in the circumcircle of :g:`ABC << A B C >>`. The Simson lines of :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>` form an equilateral triangle with center :ref:`X(5) <X(5)>`. If :g:`A'B'C' << A' B' C' >>` is the circumtangential triangle, the Simson lines of :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>` concur in :ref:`X(5) <X(5)>`. (Randy Hutson, December 10, 2016) Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the Steiner triangle and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(5) <X(5)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
 
 .. container:: note-item
 
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the 1st excosine triangle and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(5) <X(5)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (Randy Hutson, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the 1st excosine triangle and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(5) <X(5)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
 
 .. container:: note-item
 
-   Let A'B'C' be the Feuerbach triangle. Let A″ be the cevapoint of B' and C', and define B″ and C″ cyclically. The lines A″, BB″, CC″ concur in :ref:`X(5) <X(5)>`. (Randy Hutson, July 20, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the Feuerbach triangle. Let :g:`A″ <A″>` be the cevapoint of :g:`B' <B'>` and :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(5) <X(5)>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the reflection triangle. Let A″ be the trilinear pole of line B'C', and define B″and C″ cyclically. The lines A″, BB″, CC″ concur in :ref:`X(5) <X(5)>`. (Randy Hutson, July 20, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the reflection triangle. Let :g:`A″ <A″>` be the trilinear pole of line :g:`B'C' <[ B' C' ]>`, and define B″and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(5) <X(5)>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the triangle described in :cite:`ADGEOM #2697 <adgeom>` (8/26/2015, Tran Quang Hung). :ref:`X(5) <X(5)>` = X(6146)-of-A'B'C'.
+   Let :g:`A'B'C' << A' B' C' >>` be the triangle described in :cite:`ADGEOM #2697 <adgeom>` (8/26/2015, Tran Quang Hung). :ref:`X(5) <X(5)>` = X(6146)-of-:g:`A'B'C' << A' B' C' >>`.
 
 .. container:: note-item
 
-   Let A'B'C' be the :term:`cevian triangle <cevian-triangle>` of :ref:`X(5) <X(5)>`. Let A″ be :ref:`X(5) <X(5)>`-of-AB'C', and define B″, C″ cyclically. The lines A″, BB″, CC″ concur in :ref:`X(5) <X(5)>`. (Randy Hutson, June 27, 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`cevian triangle <cevian-triangle>` of :ref:`X(5) <X(5)>`. Let :g:`A″ <A″>` be :ref:`X(5) <X(5)>`-of-:g:`AB'C' << A B' C' >>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(5) <X(5)>`. (Randy Hutson, June 27, 2018)
 
 .. container:: note-item
 
-   Let Na, Nb, Nc be the nine-point centers of BCF, CAF, ABF, resp., where F = :ref:`X(13) <X(13)>`. Let Na', Nb', Nc' be the nine-point centers of BCF', CAF', ABF', resp., where F' = :ref:`X(14) <X(14)>`. The lines NaNa', NbNb', NcNc' concur in :ref:`X(5) <X(5)>`. (Randy Hutson, June 27, 2018)
+   Let :g:`N_{a} <N_a>`, :g:`N_{b} <N_b>`, :g:`N_{c} <N_c>` be the nine-point centers of :g:`BCF << B C F >>`, :g:`CAF << C A F >>`, :g:`ABF << A B F >>`, resp., where :g:`F <F>` = :ref:`X(13) <X(13)>`. Let :g:`N_{a}' <N_a'>`, :g:`N_{b}' <N_b'>`, :g:`N_{c}' <N_c'>` be the nine-point centers of :g:`BCF' << B C F' >>`, :g:`CAF' << C A F' >>`, :g:`ABF' << A B F' >>`, resp., where :g:`F' <F'>` = :ref:`X(14) <X(14)>`. The lines :g:`N_{a}N_{a}' <[ N_a N_a' ]>`, :g:`N_{b}N_{b}' <[ N_b N_b' ]>`, :g:`N_{c}N_{c}' <[ N_c N_c' ]>` concur in :ref:`X(5) <X(5)>`. (Randy Hutson, June 27, 2018)
 
 .. container:: note-item
 
-   Let Na, Nb, Nc be the nine-point centers of BCX, CAX, ABX, resp., where X = :ref:`X(17) <X(17)>`. Let Na', Nb', Nc' be the nine-point centers of BCX', CAX', ABX', resp., where X' = :ref:`X(18) <X(18)>`. The lines NaNa', NbNb', NcNc' concur in :ref:`X(5) <X(5)>`. (Randy Hutson, June 27, 2018)
+   Let :g:`N_{a} <N_a>`, :g:`N_{b} <N_b>`, :g:`N_{c} <N_c>` be the nine-point centers of :g:`BCX << B C X >>`, :g:`CAX << C A X >>`, :g:`ABX << A B X >>`, resp., where :g:`X <X>` = :ref:`X(17) <X(17)>`. Let :g:`N_{a}' <N_a'>`, :g:`N_{b}' <N_b'>`, :g:`N_{c}' <N_c'>` be the nine-point centers of :g:`BCX' << B C X' >>`, :g:`CAX' << C A X' >>`, :g:`ABX' << A B X' >>`, resp., where :g:`X' <X'>` = :ref:`X(18) <X(18)>`. The lines :g:`N_{a}N_{a}' <[ N_a N_a' ]>`, :g:`N_{b}N_{b}' <[ N_b N_b' ]>`, :g:`N_{c}N_{c}' <[ N_c N_c' ]>` concur in :ref:`X(5) <X(5)>`. (Randy Hutson, June 27, 2018)
 
 .. container:: note-item
 

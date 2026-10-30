@@ -16,17 +16,13 @@ X(757) = ISOGONAL CONJUGATE OF X(756)
    :alt: X(757) = ISOGONAL CONJUGATE OF X(756)
    :align: center
 
-   **X(757) = ISOGONAL CONJUGATE OF X(756)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(757) = ISOGONAL CONJUGATE OF X(756)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`(b + c) ^{-2} : (c + a) ^{-2} : (a + b) ^{-2}`
    | **Barycentrics:** :math:`a(b + c) ^{-2} : b(c + a) ^{-2} : c(a + b) ^{-2}`
    | **Search Value (6, 9, 13):** :math:`1.028192172661`
-
-.. container:: note-item
-
-   :ref:`X(757) <X(757)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines

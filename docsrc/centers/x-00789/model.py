@@ -14,6 +14,7 @@ from geometor.etc.ops import (
     eval_trilinear_point,
     incenter_of,
     isogonal_conjugate,
+    point_from_barycentrics,
     promote_point_to_top,
     symmedian_point_of,
 )
@@ -27,13 +28,13 @@ def construct_x_00789(
     X_788 = eval_trilinear_point(model, A, B, C, 'a**(2)*(b**(3) - c**(3))', ID="X(788)", classes=["center"])
     X_789 = isogonal_conjugate(model, A, B, C, X_788, ID="X(789)", classes=["selected", "target"])
     X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
-    X_717 = eval_trilinear_point(model, A, B, C, '1/(a**(-4)*(b**(0)+ c**(0)) - a**(-1)*(b**(-3)+ c**(-3)))', ID="X(717)", classes=["center", "incident"])
+    X_717 = point_from_barycentrics(model, A, B, C, -0.11378233, 0.83644215, 0.27734019, ID="X(717)", classes=["center", "incident"])
     central_line(model, X_6, X_717, 6, 717, incident=True)
     X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
-    X_731 = eval_trilinear_point(model, A, B, C, '1/(a**(-3)*(b**(1)+ c**(1)) - a**(0)*(b**(-2)+ c**(-2)))', ID="X(731)", classes=["center", "incident"])
+    X_731 = point_from_barycentrics(model, A, B, C, -0.066708688, 0.92072953, 0.14597916, ID="X(731)", classes=["center", "incident"])
     central_line(model, X_1, X_731, 1, 731, incident=True)
     X_31 = eval_trilinear_point(model, A, B, C, 'a**(2)', ID="X(31)", classes=["center", "incident"])
-    X_701 = eval_trilinear_point(model, A, B, C, '1/(a**(-5)*(b**(-1)+ c**(-1)) - a**(-2)*(b**(-4)+ c**(-4)))', ID="X(701)", classes=["center", "incident"])
+    X_701 = point_from_barycentrics(model, A, B, C, -0.1449378, 0.75165971, 0.39327809, ID="X(701)", classes=["center", "incident"])
     central_line(model, X_31, X_701, 31, 701, incident=True)
     return promote_point_to_top(model, X_789)
 

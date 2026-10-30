@@ -11,27 +11,23 @@ X(402) = ZEEMAN-GOSSARD PERSPECTOR
 
 .. enunciation::
 
-   In *A History of Mathematics,* Florian Cajori writes, "H. C. Gossard of the University of Oklahoma showed in 1916 that the three Euler lines of the triangles formed by the Euler line and the sides, taken by twos, of a given triangle, form a triangle . . . perspective with the given triangle and having the same Euler line." Let ABC be the given triangle and A'B'C' the Gossard triangle - that is, the triangle perspective with the given triangle and having the same Euler line. The lines AA', BB', CC' concur in :ref:`X(402) <X(402)>`, named the Gosssard perspector by John Conway (1998).
+   In *A History of Mathematics,* Florian Cajori writes, "H. C. Gossard of the University of Oklahoma showed in 1916 that the three Euler lines of the triangles formed by the Euler line and the sides, taken by twos, of a given triangle, form a triangle . . . perspective with the given triangle and having the same Euler line." Let :g:`ABC << A B C >>` be the given triangle and :g:`A'B'C' << A' B' C' >>` the Gossard triangle - that is, the triangle perspective with the given triangle and having the same Euler line. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(402) <X(402)>`, named the Gosssard perspector by John Conway (1998).
 
 .. figure:: x-00402.svg
    :alt: X(402) = ZEEMAN-GOSSARD PERSPECTOR
    :align: center
 
-   **X(402) = ZEEMAN-GOSSARD PERSPECTOR** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(402) = ZEEMAN-GOSSARD PERSPECTOR** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Barycentrics:** :math:`(2*a^4 - a^2*b^2 - b^4 - a^2*c^2 + 2*b^2*c^2 - c^4)*(a^8 - a^6*b^2 - 2*a^4*b^4 + 3*a^2*b^6 - b^8 - a^6*c^2 + 5*a^4*b^2*c^2 - 3*a^2*b^4*c^2 - b^6*c^2 - 2*a^4*c^4 - 3*a^2*b^2*c^4 + 4*b^4*c^4 + 3*a^2*c^6 - b^2*c^6 - c^8) : :` (:person:`Paul Yiu <paul-yiu>`, February 20, 1999)
-   | **Search Value (6, 9, 13):** :math:`2.073784975589`
+   | **Barycentrics:** :math:`(2 a^{4} - a^{2} b^{2} - b^{4} - a^{2} c^{2} + 2 b^{2} c^{2} - c^{4}) \cdot (a^{8} - a^{6} b^{2} - 2 a^{4} b^{4} + 3 a^{2} b^{6} - b^{8} - a^{6} c^{2} + 5 a^{4} b^{2} c^{2} - 3 a^{2} b^{4} c^{2} - b^{6} c^{2} - 2 a^{4} c^{4} - 3 a^{2} b^{2} c^{4} + 4 b^{4} c^{4} + 3 a^{2} c^{6} - b^{2} c^{6} - c^{8}) : :` (:person:`Paul Yiu <paul-yiu>`, February 20, 1999)
+   | **Search Value (6, 9, 13):** :math:`4.705865843343`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(402) <X(402)>` = :ref:`X(1) <X(1)>` - 3 X(11831),\ :ref:`X(1) <X(1)>` + 3 X(11852),5 :ref:`X(2) <X(2)>` + X(3081),3 :ref:`X(2) <X(2)>` + X(4240),5 :ref:`X(2) <X(2)>` - X(11050),3 :ref:`X(2) <X(2)>` - 5 X(15183),2 :ref:`X(2) <X(2)>` + X(34582),\ :ref:`X(3) <X(3)>` + 3 X(11911),\ :ref:`X(3) <X(3)>` - 3 X(26451),3 :ref:`X(3) <X(3)>` - X(35241),\ :ref:`X(4) <X(4)>` + 3 X(11845),\ :ref:`X(4) <X(4)>` - 3 X(11897),2 :ref:`X(5) <X(5)>` + X(15774),\ :ref:`X(8) <X(8)>` - 3 X(16210),\ :ref:`X(8) <X(8)>` + 3 X(16212),\ :ref:`X(20) <X(20)>` - 3 X(16190),\ :ref:`X(145) <X(145)>` - 3 X(16211),3 :ref:`X(381) <X(381)>` - X(18507),3 :ref:`X(381) <X(381)>` + X(18508),X(1650) + 3 X(1651),5 X(1650) + 3 X(3081),2 X(1650) - 3 X(11049),5 X(1650) - 3 X(11050),X(1650) - 5 X(15183),2 X(1650) + 3 X(34582),5 X(1651) - X(3081),3 X(1651) - X(4240),2 X(1651) + X(11049),5 X(1651) + X(11050),3 X(1651) + 5 X(15183),3 X(1651) + 2 X(15184),3 X(3081) - 5 X(4240),2 X(3081) + 5 X(11049),3 X(3081) + 25 X(15183),3 X(3081) + 10 X(15184),2 X(3081) - 5 X(34582),2 X(4240) + 3 X(11049),5 X(4240) + 3 X(11050),X(4240) + 5 X(15183),X(4240) + 2 X(15184),2 X(4240) - 3 X(34582),3 X(5055) + X(20128),5 X(11049) - 2 X(11050),3 X(11049) - 10 X(15183),3 X(11049) - 4 X(15184),3 X(11050) - 25 X(15183),3 X(11050) - 10 X(15184),2 X(11050) + 5 X(34582),X(11251) - 3 X(11911),X(11251) + 3 X(26451),3 X(11251) + X(35241),3 X(11831) + X(12438),3 X(11845) - X(12113),3 X(11852) - X(12438),3 X(11897) + X(12113),9 X(11911) + X(35241),X(12626) + 3 X(16210),X(12626) - 3 X(16212),5 X(15183) - 2 X(15184),10 X(15183) + 3 X(34582),4 X(15184) + 3 X(34582),9 X(26451) - X(35241) (:person:`Peter Moses <peter-moses>`, November 26,2020)
-
-.. container:: note-item
-
-   :ref:`X(402) <X(402)>` lies.
+   * :ref:`X(402) <X(402)>` = :ref:`X(1) <X(1)>` - :math:`3` X(11831), :ref:`X(1) <X(1)>` + :math:`3` X(11852), :math:`5` :ref:`X(2) <X(2)>` + X(3081), :math:`3` :ref:`X(2) <X(2)>` + X(4240), :math:`5` :ref:`X(2) <X(2)>` - X(11050), :math:`3` :ref:`X(2) <X(2)>` - :math:`5` X(15183), :math:`2` :ref:`X(2) <X(2)>` + X(34582), :ref:`X(3) <X(3)>` + :math:`3` X(11911), :ref:`X(3) <X(3)>` - :math:`3` X(26451), :math:`3` :ref:`X(3) <X(3)>` - X(35241), :ref:`X(4) <X(4)>` + :math:`3` X(11845), :ref:`X(4) <X(4)>` - :math:`3` X(11897), :math:`2` :ref:`X(5) <X(5)>` + X(15774), :ref:`X(8) <X(8)>` - :math:`3` X(16210), :ref:`X(8) <X(8)>` + :math:`3` X(16212), :ref:`X(20) <X(20)>` - :math:`3` X(16190), :ref:`X(145) <X(145)>` - :math:`3` X(16211), :math:`3` :ref:`X(381) <X(381)>` - X(18507), :math:`3` :ref:`X(381) <X(381)>` + X(18508), X(1650) + :math:`3` X(1651), :math:`5` X(1650) + :math:`3` X(3081), :math:`2` X(1650) - :math:`3` X(11049), :math:`5` X(1650) - :math:`3` X(11050), X(1650) - :math:`5` X(15183), :math:`2` X(1650) + :math:`3` X(34582), :math:`5` X(1651) - X(3081), :math:`3` X(1651) - X(4240), :math:`2` X(1651) + X(11049), :math:`5` X(1651) + X(11050), :math:`3` X(1651) + :math:`5` X(15183), :math:`3` X(1651) + :math:`2` X(15184), :math:`3` X(3081) - :math:`5` X(4240), :math:`2` X(3081) + :math:`5` X(11049), :math:`3` X(3081) + :math:`25` X(15183), :math:`3` X(3081) + :math:`10` X(15184), :math:`2` X(3081) - :math:`5` X(34582), :math:`2` X(4240) + :math:`3` X(11049), :math:`5` X(4240) + :math:`3` X(11050), X(4240) + :math:`5` X(15183), X(4240) + :math:`2` X(15184), :math:`2` X(4240) - :math:`3` X(34582), :math:`3` X(5055) + X(20128), :math:`5` X(11049) - :math:`2` X(11050), :math:`3` X(11049) - :math:`10` X(15183), :math:`3` X(11049) - :math:`4` X(15184), :math:`3` X(11050) - :math:`25` X(15183), :math:`3` X(11050) - :math:`10` X(15184), :math:`2` X(11050) + :math:`5` X(34582), X(11251) - :math:`3` X(11911), X(11251) + :math:`3` X(26451), :math:`3` X(11251) + X(35241), :math:`3` X(11831) + X(12438), :math:`3` X(11845) - X(12113), :math:`3` X(11852) - X(12438), :math:`3` X(11897) + X(12113), :math:`9` X(11911) + X(35241), X(12626) + :math:`3` X(16210), X(12626) - :math:`3` X(16212), :math:`5` X(15183) - :math:`2` X(15184), :math:`10` X(15183) + :math:`3` X(34582), :math:`4` X(15184) + :math:`3` X(34582), :math:`9` X(26451) - X(35241) (:person:`Peter Moses <peter-moses>`, November 26,2020)
 
 .. collapse:: Incident Central Lines
    :badge: 62 lines
@@ -61,13 +57,13 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(402) <X(402)>` has Shinagawa coefficients (5EF - 13F\ :sup:`2` - S\ :sup:`2`, 3EF + 3F\ :sup:`2` - S\ :sup:`2`).
+   As a point on the Euler line, :ref:`X(402) <X(402)>` has Shinagawa coefficients :math:`(5EF - 13F^{2} - S^{2}, 3EF + 3F^{2} - S^{2})`.
 
 .. container:: note-item
 
    Actually, :ref:`X(402) <X(402)>` dates back to an article by Christopher Zeeman in *Wiskundige Opgaven* 8 (1899-1902) 305. For details, see Paul Yiu's :cite:`Hyacinthos <hyacinthos>` message #7536 and others with Gossard in the subject line. (In ETC, the change of name from Gossard Perspector to Zeeman-Gossard Perspector was made on Oct. 15, 2003.) Further details are given by Wilson Stothers in :cite:`Hyacinthos #8383 <hyacinthos>`, Oct. 21, 2003.
 
-      (From :person:`Angel Montesdeoca <angel-montesdeoca>`, November 25, 2020) Let P be a variable point on the Euler line and Q its isotomic conjugate. Let TP and TQ be the :term:`cevian triangles <cevian-triangle>` of P and Q, respectively. Let F be the finite fixed point of the affine transformation that carries TP onto TQ. The envelope of the line PF is a hyperbola (H) with center :ref:`X(402) <X(402)>`, an asymptote of the Euler line. A barycentric equation for (H) follows:
+      (From :person:`Angel Montesdeoca <angel-montesdeoca>`, November 25, 2020) Let :g:`P <P>` be a variable point on the Euler line and Q its isotomic conjugate. Let TP and TQ be the :term:`cevian triangles <cevian-triangle>` of :g:`P <P>` and :g:`Q <Q>`, respectively. Let :g:`F <F>` be the finite fixed point of the affine transformation that carries TP onto TQ. The envelope of the line PF is a hyperbola (H) with center :ref:`X(402) <X(402)>`, an asymptote of the Euler line. A barycentric equation for (H) follows:
 
    cyclic sum [(-b^4+c^4+a^2 (b^2-c^2))^4 (-2 a^4+(b^2-c^2)^2+a^2 (b^2+c^2))^2x^2-2 (a^2-b^2)^2 (a^2-c^2)^2 (a^4-(b^2-c^2)^2)^2 (a^8-a^6 (b^2+c^2)+5 a^2 (b^2-c^2)^2 (b^2+c^2)+a^4 (-3 b^4+7 b^2 c^2-3 c^4)-(b^2-c^2)^2 (2 b^4+5 b^2 c^2+2 c^4))y z ] = 0.
 

@@ -13,8 +13,8 @@ from geometor.etc.ops import (
     circumcenter_of,
     construct_baseline_triangle,
     create_model,
+    eval_barycentric_point,
     eval_trilinear_point,
-    point_from_barycentrics,
     promote_point_to_top,
     spieker_center_of,
 )
@@ -25,7 +25,7 @@ def construct_x_00406(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(406) = EULER LINE INTERCEPT OF LINE X(10)X(33) on reference triangle ABC."""
-    X_406 = eval_trilinear_point(model, A, B, C, 'b*c*(a + b + c) + a*b*c*sec(A)', ID="X(406)", classes=["selected", "target"])
+    X_406 = eval_barycentric_point(model, A, B, C, 'b + c + a*(1 + sec(A))', ID="X(406)", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
@@ -33,7 +33,7 @@ def construct_x_00406(
     X_33 = eval_trilinear_point(model, A, B, C, '1 + sec(A)', ID="X(33)", classes=["center", "incident"])
     central_line(model, X_10, X_33, 10, 33, incident=True)
     X_37 = eval_trilinear_point(model, A, B, C, 'b + c', ID="X(37)", classes=["center", "incident"])
-    X_158 = point_from_barycentrics(model, A, B, C, 0.04776757, 0.099240104, 0.85299233, ID="X(158)", classes=["center", "incident"])
+    X_158 = eval_trilinear_point(model, A, B, C, '1/(1 + cos(2*A))', ID="X(158)", classes=["center", "incident"])
     central_line(model, X_37, X_158, 37, 158, incident=True)
     return promote_point_to_top(model, X_406)
 

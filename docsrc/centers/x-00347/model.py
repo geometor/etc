@@ -12,6 +12,7 @@ from geometor.etc.ops import (
     centroid_of,
     construct_baseline_triangle,
     create_model,
+    eval_barycentric_point,
     eval_trilinear_point,
     gergonne_point_of,
     incenter_of,
@@ -36,7 +37,7 @@ def construct_x_00347(
     X_92 = eval_trilinear_point(model, A, B, C, 'csc(2*A)', ID="X(92)", classes=["center", "incident"])
     central_line(model, X_2, X_92, 2, 92, incident=True)
     X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center", "incident"])
-    X_253 = point_from_barycentrics(model, A, B, C, -23.560976, -29.731707, 54.292683, ID="X(253)", classes=["center", "incident"])
+    X_253 = eval_barycentric_point(model, A, B, C, '1/(3*a**(4) - 2*a**(2)*(b**(2) + c**(2)) - (b**(2) - c**(2))**(2))', ID="X(253)", classes=["center", "incident"])
     central_line(model, X_8, X_253, 8, 253, incident=True)
     return promote_point_to_top(model, X_347)
 

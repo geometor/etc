@@ -10,23 +10,23 @@ X(934) = X(513)-CROSS CONJUGATE OF X(57)
 
 .. enunciation::
 
-   Let P be a point on line :ref:`X(4) <X(4)>`\ \ :ref:`X(7) <X(7)>` other than :ref:`X(4) <X(4)>`. Let A' be the reflection of P in BC, and define B' and C' cyclically. The circumcircles of AA'B', BC'A', and CA'B' concur at :ref:`X(934) <X(934)>`. (:person:`Randy Hutson <randy-hutson>`, July 20, 2016)
+   Let :g:`P <P>` be a point on line :ref:`X(4) <X(4)>`\ \ :ref:`X(7) <X(7)>` other than :ref:`X(4) <X(4)>`. Let :g:`A' <A'>` be the reflection of :g:`P <P>` in :g:`BC <[ B C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The circumcircles of :g:`AA'B' << A A' B' >>`, :g:`BC'A' << B C' A' >>`, and :g:`CA'B' << C A' B' >>` concur at :ref:`X(934) <X(934)>`. (:person:`Randy Hutson <randy-hutson>`, July 20, 2016)
 
 .. figure:: x-00934.svg
    :alt: X(934) = X(513)-CROSS CONJUGATE OF X(57)
    :align: center
 
-   **X(934) = X(513)-CROSS CONJUGATE OF X(57)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(934) = X(513)-CROSS CONJUGATE OF X(57)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`1/(bw - cv) : :`, where u : v : w = :ref:`X(57) <X(57)>`
+   | **Trilinears:** :math:`1/(bw - cv) : :`, where :math:`u : v : w` = :ref:`X(57) <X(57)>`
    | **Search Value (6, 9, 13):** :math:`0.042941416030`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`1/[(b - c)(b + c - a)^2] : :`
+   * **Trilinears:** :math:`1/[(b - c)(b + c - a)^{2}] : :`
 
 .. container:: note-item
 
@@ -45,8 +45,8 @@ X(934) = X(513)-CROSS CONJUGATE OF X(57)
    * :ref:`X(934) <X(934)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(3900)
    * :ref:`X(934) <X(934)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(4397)
    * :ref:`X(934) <X(934)>` = :ref:`X(513) <X(513)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(57) <X(57)>`
-   * :ref:`X(934) <X(934)>` = perspector of ABC and triangle formed by line :ref:`X(3) <X(3)>`\ \ :ref:`X(9) <X(9)>` reflected in sides of ABC
-   * :ref:`X(934) <X(934)>` = concurrence of reflections in sides of ABC of line :ref:`X(4) <X(4)>`\ \ :ref:`X(7) <X(7)>`
+   * :ref:`X(934) <X(934)>` = perspector of :g:`ABC << A B C >>` and triangle formed by line :ref:`X(3) <X(3)>`\ \ :ref:`X(9) <X(9)>` reflected in sides of :g:`ABC << A B C >>`
+   * :ref:`X(934) <X(934)>` = concurrence of reflections in sides of :g:`ABC << A B C >>` of line :ref:`X(4) <X(4)>`\ \ :ref:`X(7) <X(7)>`
    * :ref:`X(934) <X(934)>` = Λ(:ref:`X(650) <X(650)>`, :ref:`X(663) <X(663)>`) (Λ(:term:`trilinear polar <trilinear-polar>` of :ref:`X(9) <X(9)>`)
    * :ref:`X(934) <X(934)>` = Λ(X(3064), X(3700)) (Λ(trilinear polar of :ref:`X(281) <X(281)>`)
    * :ref:`X(934) <X(934)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(6) <X(6)>`\ \ :ref:`X(57) <X(57)>`

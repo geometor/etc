@@ -26,7 +26,7 @@ def construct_x_00139(
     X_52 = eval_trilinear_point(model, A, B, C, 'cos(2*A)*cos(B - C)', ID="X(52)", classes=["center"])
     X_129 = point_from_barycentrics(model, A, B, C, 0.22802261, -0.036048578, 0.80802596, ID="X(129)", classes=["center"])
     X_53 = eval_trilinear_point(model, A, B, C, 'tan(A)*cos(B - C)', ID="X(53)", classes=["center"])
-    X_128 = eval_trilinear_point(model, A, B, C, '(sec(A))*(cos(2*B) + cos(2*C))*(1 + 2*cos(2*A))*(cos(2*A) + 2*cos(2*B)*cos(2*C))', ID="X(128)", classes=["center"])
+    X_128 = point_from_barycentrics(model, A, B, C, 0.43052912, -0.045594157, 0.61506504, ID="X(128)", classes=["center"])
     central_line(model, X_52, X_129, 52, 129)
     central_line(model, X_53, X_128, 53, 128)
     X_139 = intersect_lines(model, X_52, X_129, X_53, X_128, ID="X(139)", classes=["selected", "target"])

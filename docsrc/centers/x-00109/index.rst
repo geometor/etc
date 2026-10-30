@@ -10,13 +10,13 @@ X(109) = Ψ(INCENTER, CIRCUMCENTER)
 
 .. enunciation::
 
-   If the line :ref:`X(1) <X(1)>`\ \ :ref:`X(4) <X(4)>` is reflected in every side of triangle ABC, then the reflections concur in :ref:`X(109) <X(109)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   If the line :ref:`X(1) <X(1)>`\ \ :ref:`X(4) <X(4)>` is reflected in every side of triangle :g:`ABC << A B C >>`, then the reflections concur in :ref:`X(109) <X(109)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. figure:: x-00109.svg
    :alt: X(109) = Ψ(INCENTER, CIRCUMCENTER)
    :align: center
 
-   **X(109) = Ψ(INCENTER, CIRCUMCENTER)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(109) = Ψ(INCENTER, CIRCUMCENTER)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -29,11 +29,7 @@ X(109) = Ψ(INCENTER, CIRCUMCENTER)
    :badge: 2 forms
 
    * **Trilinears:** :math:`a/[(b - c)(b + c - a)] : :`
-   * **Barycentrics:** :math:`a^2 (\cos^2 A + \cos B \cos C - \cos C \cos A - \cos A \cos B) : :`
-
-.. container:: note-item
-
-   :ref:`X(109) <X(109)>` lies.
+   * **Barycentrics:** :math:`a^{2} (\cos^{2} A + \cos B \cos C - \cos C \cos A - \cos A \cos B) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 413 lines
@@ -60,7 +56,7 @@ X(109) = Ψ(INCENTER, CIRCUMCENTER)
    * :ref:`X(109) <X(109)>` = circumcircle-antipode of :ref:`X(102) <X(102)>`
    * :ref:`X(109) <X(109)>` = trilinear product X(1381)\*X(1382)
    * :ref:`X(109) <X(109)>` = isogonal conjugate of :term:`isotomic conjugate <isotomic-conjugate>` of :term:`trilinear pole <trilinear-pole>` of line :ref:`X(2) <X(2)>`\ \ :ref:`X(7) <X(7)>`
-   * :ref:`X(109) <X(109)>` = the point of intersection, other than A, B, and C, of the circumcircle and hyperbola {A,B,C,PU(19)}
+   * :ref:`X(109) <X(109)>` = the point of intersection, other than :g:`A <A>`, :g:`B <B>`, and :g:`C <C>`, of the circumcircle and hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(19)}
    * :ref:`X(109) <X(109)>` = trilinear pole of line :ref:`X(6) <X(6)>`\ \ :ref:`X(41) <X(41)>`
    * :ref:`X(109) <X(109)>` = trilinear pole wrt 1st circumperp triangle of line :ref:`X(971) <X(971)>`\ X(1158)
    * :ref:`X(109) <X(109)>` = trilinear pole, wrt circumtangential triangle, of line :ref:`X(3) <X(3)>`\ \ :ref:`X(10) <X(10)>`
@@ -90,23 +86,23 @@ Notes
 
 .. container:: note-item
 
-   Let P be a point on line :ref:`X(1) <X(1)>`\ \ :ref:`X(4) <X(4)>` other than :ref:`X(4) <X(4)>`. Let A' be the reflection of P in BC, and define B' and C' cyclically. The circumcircles of CA'B', BC'A', and CA'B' concur in :ref:`X(109) <X(109)>`. (Randy Hutson, December 26, 2011)
+   Let :g:`P <P>` be a point on line :ref:`X(1) <X(1)>`\ \ :ref:`X(4) <X(4)>` other than :ref:`X(4) <X(4)>`. Let :g:`A' <A'>` be the reflection of :g:`P <P>` in :g:`BC <[ B C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The circumcircles of :g:`CA'B' << C A' B' >>`, :g:`BC'A' << B C' A' >>`, and :g:`CA'B' << C A' B' >>` concur in :ref:`X(109) <X(109)>`. (Randy Hutson, December 26, 2011)
 
 .. container:: note-item
 
-   Let Q be a point on line :ref:`X(2) <X(2)>`\ \ :ref:`X(7) <X(7)>` other than :ref:`X(2) <X(2)>`. Let A'B'C' be the :term:`cevian triangle <cevian-triangle>` of Q. Let A″ be the {B,C}-harmonic conjugate of A' (or equivalently, A″ = BC∩B'C'), and define B″ and C″ cyclically. The circumcircles of AB″C″, BC″A″, CA″B″ concur in :ref:`X(109) <X(109)>`. (Randy Hutson, December 26, 2011)
+   Let :g:`Q <Q>` be a point on line :ref:`X(2) <X(2)>`\ \ :ref:`X(7) <X(7)>` other than :ref:`X(2) <X(2)>`. Let :g:`A'B'C' << A' B' C' >>` be the :term:`cevian triangle <cevian-triangle>` of Q. Let :g:`A″ <A″>` be the {B,C}-harmonic conjugate of :g:`A' <A'>` (or equivalently, :g:`A″ <A″>` = :g:`BC <[ B C ]>`\ ∩\ :g:`B'C' <[ B' C' ]>`), and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The circumcircles of :g:`AB″C″ << A B″ C″ >>`, :g:`BC″A″ << B C″ A″ >>`, :g:`CA″B″ << C A″ B″ >>` concur in :ref:`X(109) <X(109)>`. (Randy Hutson, December 26, 2011)
 
 .. container:: note-item
 
-   Let A', B', C' be the Fuhrmann triangle. The circumcircles of AB'C', BC'A', CA'B' concur in :ref:`X(109) <X(109)>`. (Randy Hutson, December 26, 2011)
+   Let :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>` be the Fuhrmann triangle. The circumcircles of :g:`AB'C' << A B' C' >>`, :g:`BC'A' << B C' A' >>`, :g:`CA'B' << C A' B' >>` concur in :ref:`X(109) <X(109)>`. (Randy Hutson, December 26, 2011)
 
 .. container:: note-item
 
-   Let A', B', C' be the intersections of the Gergonne line and lines BC, CA, AB, respectively. The circumcircles of AB'C', BC'A', CA'B' concur in :ref:`X(109) <X(109)>`. (Randy Hutson, December 26, 2011)
+   Let :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>` be the intersections of the Gergonne line and lines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, respectively. The circumcircles of :g:`AB'C' << A B' C' >>`, :g:`BC'A' << B C' A' >>`, :g:`CA'B' << C A' B' >>` concur in :ref:`X(109) <X(109)>`. (Randy Hutson, December 26, 2011)
 
 .. container:: note-item
 
-   Let P and Q be the points where the line tangent to the incircle at :ref:`X(11) <X(11)>` intersects the circumcircle. Let L(P) be the line through P, other than PQ, that is tangent to the incircle; let L(Q) be the line through Q, other than PQ, that is tangent to the incircle. Then :ref:`X(109) <X(109)>` = L(P)∩L(Q). (Piotr Ambroszczyk, December 21, 2016)
+   Let :g:`P <P>` and :g:`Q <Q>` be the points where the line tangent to the incircle at :ref:`X(11) <X(11)>` intersects the circumcircle. Let L(P) be the line through :g:`P <P>`, other than :g:`PQ <[ P Q ]>`, that is tangent to the incircle; let L(Q) be the line through :g:`Q <Q>`, other than :g:`PQ <[ P Q ]>`, that is tangent to the incircle. Then :ref:`X(109) <X(109)>` = L(P)∩L(Q). (Piotr Ambroszczyk, December 21, 2016)
 
 .. toctree::
    :hidden:

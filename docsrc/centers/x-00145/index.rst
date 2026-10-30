@@ -10,13 +10,13 @@ X(145) = ANTICOMPLEMENT OF NAGEL POINT
 
 .. enunciation::
 
-   Let A' be the reflection of the midpoint of segment BC in :ref:`X(1) <X(1)>`, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(145) <X(145)>`. Let A'' be the reflection of the A in :ref:`X(1) <X(1)>`, and define B'' and C'' cyclically. Let A'''B'''C''' be the :term:`intouch triangle <intouch-triangle>`. The lines A''A''', B''B''', C''C''' concur in :ref:`X(145) <X(145)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   Let :g:`A' <A'>` be the reflection of the midpoint of segment :g:`BC <[ B C ]>` in :ref:`X(1) <X(1)>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(145) <X(145)>`. Let :g:`A″ <A″>` be the reflection of the A in :ref:`X(1) <X(1)>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Let A'''B'''C''' be the :term:`intouch triangle <intouch-triangle>`. The lines A''A''', B''B''', C''C''' concur in :ref:`X(145) <X(145)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. figure:: x-00145.svg
    :alt: X(145) = ANTICOMPLEMENT OF NAGEL POINT
    :align: center
 
-   **X(145) = ANTICOMPLEMENT OF NAGEL POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(145) = ANTICOMPLEMENT OF NAGEL POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -33,7 +33,7 @@ X(145) = ANTICOMPLEMENT OF NAGEL POINT
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(145) <X(145)>` = 4 :ref:`X(1) <X(1)>` - 3 :ref:`X(2) <X(2)>`, 3 :ref:`X(1) <X(1)>` - 2 :ref:`X(10) <X(10)>`, 7 :ref:`X(1) <X(1)>` - 6 :ref:`X(551) <X(551)>`, 5 :ref:`X(1) <X(1)>` - 4 X(1125), 7 :ref:`X(1) <X(1)>` - 5 X(1698), 2 :ref:`X(1) <X(1)>` - 3 X(3241), 6 :ref:`X(1) <X(1)>` - 5 X(3616), 8 :ref:`X(1) <X(1)>` - 5 X(3617), 4 :ref:`X(1) <X(1)>` - X(3621), 8 :ref:`X(1) <X(1)>` - 7 X(3622), 4 :ref:`X(1) <X(1)>` - 5 X(3623), 9 :ref:`X(1) <X(1)>` - 7 X(3624), 5 :ref:`X(1) <X(1)>` - 2 X(3625), 7 :ref:`X(1) <X(1)>` - 4 X(3626), 3 :ref:`X(1) <X(1)>` - X(3632), 11 :ref:`X(1) <X(1)>` - 8 X(3634), 3 :ref:`X(1) <X(1)>` - 4 X(3635), 9 :ref:`X(1) <X(1)>` - 8 X(3636), 5 :ref:`X(1) <X(1)>` - 3 X(3679), 17 :ref:`X(1) <X(1)>` - 12 X(3828), 9 :ref:`X(1) <X(1)>` - 5 X(4668), 11 :ref:`X(1) <X(1)>` - 6 X(4669), 7 :ref:`X(1) <X(1)>` - 3 X(4677), 12 :ref:`X(1) <X(1)>` - 7 X(4678), 13 :ref:`X(1) <X(1)>` - 8 X(4691), 9 :ref:`X(1) <X(1)>` - 4 X(4701), 19 :ref:`X(1) <X(1)>` - 12 X(4745), 15 :ref:`X(1) <X(1)>` - 8 X(4746), 11 :ref:`X(1) <X(1)>` - 5 X(4816), 14 :ref:`X(1) <X(1)>` - 11 X(5550), 10 :ref:`X(1) <X(1)>` - 7 X(9780), 17 :ref:`X(1) <X(1)>` - 14 X(15808), 13 :ref:`X(1) <X(1)>` - 10 X(19862), 23 :ref:`X(1) <X(1)>` - 17 X(19872), 13 :ref:`X(1) <X(1)>` - 9 X(19875), 29 :ref:`X(1) <X(1)>` - 21 X(19876), 18 :ref:`X(1) <X(1)>` - 13 X(19877), 21 :ref:`X(1) <X(1)>` - 16 X(19878), 23 :ref:`X(1) <X(1)>` - 18 X(19883), 4 :ref:`X(1) <X(1)>` + X(20014), 4 :ref:`X(1) <X(1)>` + 3 X(20049), 2 :ref:`X(1) <X(1)>` + X(20050), 12 :ref:`X(1) <X(1)>` - 5 X(20052), 6 :ref:`X(1) <X(1)>` - X(20053), 8 :ref:`X(1) <X(1)>` - X(20054), 6 :ref:`X(1) <X(1)>` - 7 X(20057), 53 :ref:`X(1) <X(1)>` - 38 X(22266), 11 :ref:`X(1) <X(1)>` - 9 X(25055), 8 :ref:`X(1) <X(1)>` - 3 X(31145), 27 :ref:`X(1) <X(1)>` - 20 X(31253), 17 :ref:`X(1) <X(1)>` - 13 X(34595), 13 :ref:`X(1) <X(1)>` - 6 X(34641), and many others
+   * :ref:`X(145) <X(145)>` = :math:`4` :ref:`X(1) <X(1)>` - :math:`3` :ref:`X(2) <X(2)>`, :math:`3` :ref:`X(1) <X(1)>` - :math:`2` :ref:`X(10) <X(10)>`, :math:`7` :ref:`X(1) <X(1)>` - :math:`6` :ref:`X(551) <X(551)>`, :math:`5` :ref:`X(1) <X(1)>` - :math:`4` X(1125), :math:`7` :ref:`X(1) <X(1)>` - :math:`5` X(1698), :math:`2` :ref:`X(1) <X(1)>` - :math:`3` X(3241), :math:`6` :ref:`X(1) <X(1)>` - :math:`5` X(3616), :math:`8` :ref:`X(1) <X(1)>` - :math:`5` X(3617), :math:`4` :ref:`X(1) <X(1)>` - X(3621), :math:`8` :ref:`X(1) <X(1)>` - :math:`7` X(3622), :math:`4` :ref:`X(1) <X(1)>` - :math:`5` X(3623), :math:`9` :ref:`X(1) <X(1)>` - :math:`7` X(3624), :math:`5` :ref:`X(1) <X(1)>` - :math:`2` X(3625), :math:`7` :ref:`X(1) <X(1)>` - :math:`4` X(3626), :math:`3` :ref:`X(1) <X(1)>` - X(3632), :math:`11` :ref:`X(1) <X(1)>` - :math:`8` X(3634), :math:`3` :ref:`X(1) <X(1)>` - :math:`4` X(3635), :math:`9` :ref:`X(1) <X(1)>` - :math:`8` X(3636), :math:`5` :ref:`X(1) <X(1)>` - :math:`3` X(3679), :math:`17` :ref:`X(1) <X(1)>` - :math:`12` X(3828), :math:`9` :ref:`X(1) <X(1)>` - :math:`5` X(4668), :math:`11` :ref:`X(1) <X(1)>` - :math:`6` X(4669), :math:`7` :ref:`X(1) <X(1)>` - :math:`3` X(4677), :math:`12` :ref:`X(1) <X(1)>` - :math:`7` X(4678), :math:`13` :ref:`X(1) <X(1)>` - :math:`8` X(4691), :math:`9` :ref:`X(1) <X(1)>` - :math:`4` X(4701), :math:`19` :ref:`X(1) <X(1)>` - :math:`12` X(4745), :math:`15` :ref:`X(1) <X(1)>` - :math:`8` X(4746), :math:`11` :ref:`X(1) <X(1)>` - :math:`5` X(4816), :math:`14` :ref:`X(1) <X(1)>` - :math:`11` X(5550), :math:`10` :ref:`X(1) <X(1)>` - :math:`7` X(9780), :math:`17` :ref:`X(1) <X(1)>` - :math:`14` X(15808), :math:`13` :ref:`X(1) <X(1)>` - :math:`10` X(19862), :math:`23` :ref:`X(1) <X(1)>` - :math:`17` X(19872), :math:`13` :ref:`X(1) <X(1)>` - :math:`9` X(19875), :math:`29` :ref:`X(1) <X(1)>` - :math:`21` X(19876), :math:`18` :ref:`X(1) <X(1)>` - :math:`13` X(19877), :math:`21` :ref:`X(1) <X(1)>` - :math:`16` X(19878), :math:`23` :ref:`X(1) <X(1)>` - :math:`18` X(19883), :math:`4` :ref:`X(1) <X(1)>` + X(20014), :math:`4` :ref:`X(1) <X(1)>` + :math:`3` X(20049), :math:`2` :ref:`X(1) <X(1)>` + X(20050), :math:`12` :ref:`X(1) <X(1)>` - :math:`5` X(20052), :math:`6` :ref:`X(1) <X(1)>` - X(20053), :math:`8` :ref:`X(1) <X(1)>` - X(20054), :math:`6` :ref:`X(1) <X(1)>` - :math:`7` X(20057), :math:`53` :ref:`X(1) <X(1)>` - :math:`38` X(22266), :math:`11` :ref:`X(1) <X(1)>` - :math:`9` X(25055), :math:`8` :ref:`X(1) <X(1)>` - :math:`3` X(31145), :math:`27` :ref:`X(1) <X(1)>` - :math:`20` X(31253), :math:`17` :ref:`X(1) <X(1)>` - :math:`13` X(34595), :math:`13` :ref:`X(1) <X(1)>` - :math:`6` X(34641), and many others
 
 .. container:: note-item
 
@@ -78,9 +78,9 @@ X(145) = ANTICOMPLEMENT OF NAGEL POINT
    * :ref:`X(145) <X(145)>` = :term:`trilinear pole <trilinear-pole>` of line {2976, 3667}
    * :ref:`X(145) <X(145)>` = :term:`crossdifference <crossdifference>` of every pair of points on line {649, 6363}
    * :ref:`X(145) <X(145)>` = :ref:`X(643) <X(643)>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X(56) <X(56)>`
-   * :ref:`X(145) <X(145)>` = exsimilicenter of incircle and AC-incircle
+   * :ref:`X(145) <X(145)>` = exsimilicenter of incircle and :g:`AC <[ A C ]>`-incircle
    * :ref:`X(145) <X(145)>` = :ref:`X(64) <X(64)>`-of-intouch-triangle
-   * :ref:`X(145) <X(145)>` = trilinear pole of line X(2976)X(3667) (radical axis of incircle and AC-incircle, and the pole of :ref:`X(2) <X(2)>` wrt the Spieker circle)
+   * :ref:`X(145) <X(145)>` = trilinear pole of line X(2976)X(3667) (radical axis of incircle and :g:`AC <[ A C ]>`-incircle, and the pole of :ref:`X(2) <X(2)>` wrt the Spieker circle)
    * :ref:`X(145) <X(145)>` = :ref:`X(8) <X(8)>`-of-anticomplementary-triangle
    * :ref:`X(145) <X(145)>` = X(11381)-of-excentral-triangle
    * :ref:`X(145) <X(145)>` = perspector of intouch triangle and Gemini triangle 29
@@ -94,15 +94,15 @@ Notes
 
 .. container:: note-item
 
-   Let O\ :sub:`A` be the circle tangent to side BC at its midpoint and to the circumcircle on the same side of BC as A. Define O\ :sub:`B`, O\ :sub:`C` cyclically. Then :ref:`X(145) <X(145)>` is the trilinear pole of the line of the exsimilicenters (the Monge line) of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. See the reference at X(1001).
+   Let :g:`O_{A} <O_A>` be the circle tangent to side :g:`BC <[ B C ]>` at its midpoint and to the circumcircle on the same side of :g:`BC <[ B C ]>` as A. Define :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>` cyclically. Then :ref:`X(145) <X(145)>` is the trilinear pole of the line of the exsimilicenters (the Monge line) of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. See the reference at X(1001).
 
 .. container:: note-item
 
-   Let Ha be the hyperbola passing through A, with foci at B and C. This is called the A-Soddy hyperbola in (:person:`Paul Yiu <paul-yiu>`, Introduction to the Geometry of the Triangle, 2002; 12.4 The Soddy hyperbolas, p. 143). Let La be the polar of :ref:`X(2) <X(2)>` with respect to Ha. Define Lb and Lc cyclically. The lines La, Lb, Lc concur in :ref:`X(145) <X(145)>`. (Randy Hutson, September 5, 2015)
+   Let :g:`H_{a} <H_a>` be the hyperbola passing through :g:`A <A>`, with foci at :g:`B <B>` and C. This is called the A-Soddy hyperbola in (:person:`Paul Yiu <paul-yiu>`, Introduction to the Geometry of the Triangle, 2002; 12.4 The Soddy hyperbolas, p. 143). Let :g:`L_{a} <L_a>` be the polar of :ref:`X(2) <X(2)>` with respect to :g:`H_{a} <H_a>`. Define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. The lines :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` concur in :ref:`X(145) <X(145)>`. (Randy Hutson, September 5, 2015)
 
 .. container:: note-item
 
-   Let A'B'C' and A″B″C″ be the intouch and :term:`extouch triangles <extouch-triangle>`. :ref:`X(145) <X(145)>` is the radical center of the circumcircles of AA'A″, BB'B″, CC'C″. (Randy Hutson, September 14, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>` be the intouch and :term:`extouch triangles <extouch-triangle>`. :ref:`X(145) <X(145)>` is the radical center of the circumcircles of :g:`AA'A″ << A A' A″ >>`, :g:`BB'B″ << B B' B″ >>`, :g:`CC'C″ << C C' C″ >>`. (Randy Hutson, September 14, 2016)
 
 .. toctree::
    :hidden:

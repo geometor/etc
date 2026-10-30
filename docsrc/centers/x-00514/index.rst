@@ -10,13 +10,13 @@ X(514) = ISOGONAL CONJUGATE OF X(101)
 
 .. enunciation::
 
-   Let A\ :sub:`7`\ B\ :sub:`7`\ C\ :sub:`7` and A\ :sub:`8`\ B\ :sub:`8`\ C\ :sub:`8` be Gemini triangles 7 and 8, resp. Let L\ :sub:`A` be the tangent at A to conic {A,B\ :sub:`7`,C\ :sub:`7`,B\ :sub:`8`,C\ :sub:`8`}}, and define L\ :sub:`B` and L\ :sub:`C` cyclically. Let A' = L\ :sub:`B`\ ∩L\ :sub:`C`, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(514) <X(514)>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
+   Let :g:`A_{7}B_{7}C_{7} << A_7 B_7 C_7 >>` and :g:`A_{8}B_{8}C_{8} << A_8 B_8 C_8 >>` be Gemini triangles 7 and 8, resp. Let :g:`L_{A} <L_A>` be the tangent at :g:`A <A>` to conic {A,\ :g:`B_{7} <B_7>`,\ :g:`C_{7} <C_7>`,\ :g:`B_{8} <B_8>`,\ :g:`C_{8} <C_8>`}}, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A' <A'>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(514) <X(514)>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
 
 .. figure:: x-00514.svg
    :alt: X(514) = ISOGONAL CONJUGATE OF X(101)
    :align: center
 
-   **X(514) = ISOGONAL CONJUGATE OF X(101)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(514) = ISOGONAL CONJUGATE OF X(101)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,12 +27,8 @@ X(514) = ISOGONAL CONJUGATE OF X(101)
    :badge: 3 forms
 
    * **Trilinears:** :math:`|AP(1)| - |AU(1)| : :`
-   * **Trilinears:** directed distance from A to line :ref:`X(1) <X(1)>`\ \ :ref:`X(6) <X(6)>` : :
+   * **Trilinears:** directed distance from :g:`A <A>` to line :ref:`X(1) <X(1)>`\ \ :ref:`X(6) <X(6)>` : :
    * **Barycentrics:** :math:`\cot B/2 - \cot C/2 : :`
-
-.. container:: note-item
-
-   :ref:`X(514) <X(514)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 49 lines
@@ -65,7 +61,7 @@ X(514) = ISOGONAL CONJUGATE OF X(101)
    * :ref:`X(514) <X(514)>` = ideal point of PU(i) for these i: 10, 47, 51
    * :ref:`X(514) <X(514)>` = trilinear product of PU(27)
    * :ref:`X(514) <X(514)>` = trilinear pole of PU(i) for these i: 121, 123
-   * :ref:`X(514) <X(514)>` = perspector of circumconic centered at X(1086) (hyperbola {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(7) <X(7)>`}})
+   * :ref:`X(514) <X(514)>` = perspector of circumconic centered at X(1086) (hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(7) <X(7)>`}})
    * :ref:`X(514) <X(514)>` = center of circumconic that is locus of trilinear poles of lines passing through X(1086)
    * :ref:`X(514) <X(514)>` = anticomplementary isotomic conjugate of :ref:`X(514) <X(514)>`
    * :ref:`X(514) <X(514)>` = Thomson-isogonal conjugate of :ref:`X(103) <X(103)>`
@@ -73,7 +69,7 @@ X(514) = ISOGONAL CONJUGATE OF X(101)
    * :ref:`X(514) <X(514)>` = barycentric square root of X(1086)
    * :ref:`X(514) <X(514)>` = :ref:`X(63) <X(63)>`-isoconjugate of X(8750)
    * :ref:`X(514) <X(514)>` = :ref:`X(92) <X(92)>`-isoconjugate of X(32656)
-   * :ref:`X(514) <X(514)>` = perspector of ABC and vertex-triangle of Gemini triangles 7 and 8
+   * :ref:`X(514) <X(514)>` = perspector of :g:`ABC << A B C >>` and vertex-triangle of Gemini triangles 7 and 8
 
 Notes
 -----

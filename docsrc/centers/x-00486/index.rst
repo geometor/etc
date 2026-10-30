@@ -11,13 +11,13 @@ X(486) = INNER VECTEN POINT
 
 .. enunciation::
 
-   :ref:`X(486) <X(486)>` is a perspector of triangles associated with squares that circumscribe ABC. For details and references, see :ref:`X(485) <X(485)>`. (:person:`Floor van Lamoen <floor-van-lamoen>`, 4/26/98)
+   :ref:`X(486) <X(486)>` is a perspector of triangles associated with squares that circumscribe :g:`ABC << A B C >>`. For details and references, see :ref:`X(485) <X(485)>`. (:person:`Floor van Lamoen <floor-van-lamoen>`, 4/26/98)
 
 .. figure:: x-00486.svg
    :alt: X(486) = INNER VECTEN POINT
    :align: center
 
-   **X(486) = INNER VECTEN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(486) = INNER VECTEN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -29,13 +29,13 @@ X(486) = INNER VECTEN POINT
    :badge: 3 forms
 
    * **Trilinears:** :math:`1/(\sin A - \cos A) : 1/(\sin B - \cos B) : 1/(\sin C - \cos C) : :`
-   * **Trilinears:** sin A - cos(B - C) : sin B - cos(C - A) : sin C - cos(A - B) (Peter J. C. Moses, 8/22/03)
-   * **Barycentrics:** :math:`1/(SA - S) : :`
+   * **Trilinears:** :math:`\sin A - \cos(B - C) : \sin B - \cos(C - A) : \sin C - \cos(A - B)` (Peter J. C. Moses, 8/22/03)
+   * **Barycentrics:** :math:`1/(S_{A} - S) : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(486) <X(486)>` = X(7980) + 2 X(9906), X(7980) - 4 X(12268), X(9906) + 2 X(12268), 3 :ref:`X(2) <X(2)>` - 4 X(6119), 3 :ref:`X(2) <X(2)>` + X(12221), 2 :ref:`X(2) <X(2)>` + X(22484), :ref:`X(487) <X(487)>` - 4 X(6119), 2 :ref:`X(487) <X(487)>` + 3 X(22484), 2 :ref:`X(642) <X(642)>` + X(12221), 4 :ref:`X(642) <X(642)>` + 3 X(22484), 4 X(6119) + X(12221), 8 X(6119) + 3 X(22484), 2 X(6315) - 3 X(9767), 2 X(12221) - 3 X(22484), 3 X(35823) - X(35833), 3 :ref:`X(3) <X(3)>` + X(22809), X(12123) + 2 X(12601), 3 X(12123) + 2 X(22809), X(12123) - 4 X(49103), 3 X(12601) - X(22809), X(12601) + 2 X(49103), 2 X(13934) + X(22617), X(22809) + 6 X(49103), X(32492) + 2 X(32494), :ref:`X(4) <X(4)>` + 2 X(48734), 2 X(6251) + X(12256), 2 X(13933) + X(32498), X(35820) - 3 X(35830), 4 :ref:`X(5) <X(5)>` + X(6280), 4 :ref:`X(5) <X(5)>` - X(6281), 2 :ref:`X(5) <X(5)>` + X(49317), X(6280) + 2 X(6290), X(6281) + 2 X(49317), 2 X(7583) - 3 X(49220), 2 X(13881) + X(22591), 4 X(13881) - X(22592), 3 X(19104) - 4 X(19116), 5 X(19105) - 4 X(19117), 2 X(22591) + X(22592), X(49551) + 2 X(49623), 2 X(13929) + X(22601), 2 X(13928) + X(22603), X(22599) + 2 X(22926), X(22597) + 2 X(22881), 2 X(1132) + X(45077), 2 X(1152) + 3 X(1328), X(1152) - 3 X(13847), and many others
+   * :ref:`X(486) <X(486)>` = X(7980) + :math:`2` X(9906), X(7980) - :math:`4` X(12268), X(9906) + :math:`2` X(12268), :math:`3` :ref:`X(2) <X(2)>` - :math:`4` X(6119), :math:`3` :ref:`X(2) <X(2)>` + X(12221), :math:`2` :ref:`X(2) <X(2)>` + X(22484), :ref:`X(487) <X(487)>` - :math:`4` X(6119), :math:`2` :ref:`X(487) <X(487)>` + :math:`3` X(22484), :math:`2` :ref:`X(642) <X(642)>` + X(12221), :math:`4` :ref:`X(642) <X(642)>` + :math:`3` X(22484), :math:`4` X(6119) + X(12221), :math:`8` X(6119) + :math:`3` X(22484), :math:`2` X(6315) - :math:`3` X(9767), :math:`2` X(12221) - :math:`3` X(22484), :math:`3` X(35823) - X(35833), :math:`3` :ref:`X(3) <X(3)>` + X(22809), X(12123) + :math:`2` X(12601), :math:`3` X(12123) + :math:`2` X(22809), X(12123) - :math:`4` X(49103), :math:`3` X(12601) - X(22809), X(12601) + :math:`2` X(49103), :math:`2` X(13934) + X(22617), X(22809) + :math:`6` X(49103), X(32492) + :math:`2` X(32494), :ref:`X(4) <X(4)>` + :math:`2` X(48734), :math:`2` X(6251) + X(12256), :math:`2` X(13933) + X(32498), X(35820) - :math:`3` X(35830), :math:`4` :ref:`X(5) <X(5)>` + X(6280), :math:`4` :ref:`X(5) <X(5)>` - X(6281), :math:`2` :ref:`X(5) <X(5)>` + X(49317), X(6280) + :math:`2` X(6290), X(6281) + :math:`2` X(49317), :math:`2` X(7583) - :math:`3` X(49220), :math:`2` X(13881) + X(22591), :math:`4` X(13881) - X(22592), :math:`3` X(19104) - :math:`4` X(19116), :math:`5` X(19105) - :math:`4` X(19117), :math:`2` X(22591) + X(22592), X(49551) + :math:`2` X(49623), :math:`2` X(13929) + X(22601), :math:`2` X(13928) + X(22603), X(22599) + :math:`2` X(22926), X(22597) + :math:`2` X(22881), :math:`2` X(1132) + X(45077), :math:`2` X(1152) + :math:`3` X(1328), X(1152) - :math:`3` X(13847), and many others
 
 .. container:: note-item
 
@@ -83,7 +83,7 @@ X(486) = INNER VECTEN POINT
    * :ref:`X(486) <X(486)>` = Kosnita(:ref:`X(486) <X(486)>`,\ :ref:`X(486) <X(486)>`) point
    * :ref:`X(486) <X(486)>` = trilinear product of vertices of inner Vecten triangle
    * :ref:`X(486) <X(486)>` = :ref:`X(4) <X(4)>` of inner Vecten triangle
-   * :ref:`X(486) <X(486)>` = perspector of ABC and outer-squares triangle
+   * :ref:`X(486) <X(486)>` = perspector of :g:`ABC << A B C >>` and outer-squares triangle
    * :ref:`X(486) <X(486)>` = perspector of 4th tri-squares triangle and 4th tri-squares :term:`central triangle <central-triangle>`
    * :ref:`X(486) <X(486)>` = 4th-tri-squares-isogonal conjugate of X(32494)
    * :ref:`X(486) <X(486)>` = 3rd-anti-tri-squares-isogonal conjugate of X(32492)

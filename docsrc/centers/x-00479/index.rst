@@ -10,13 +10,13 @@ X(479) = X(269)-CROSS CONJUGATE OF X(279)
 
 .. enunciation::
 
-   Let A' be the point in which the incircle is tangent to a circle that passes through vertices B and C, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(479) <X(479)>`. For an excircle version, see X(5423).
+   Let :g:`A' <A'>` be the point in which the incircle is tangent to a circle that passes through vertices :g:`B <B>` and :g:`C <C>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(479) <X(479)>`. For an excircle version, see X(5423).
 
 .. figure:: x-00479.svg
    :alt: X(479) = X(269)-CROSS CONJUGATE OF X(279)
    :align: center
 
-   **X(479) = X(269)-CROSS CONJUGATE OF X(279)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(479) = X(269)-CROSS CONJUGATE OF X(279)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,10 +28,6 @@ X(479) = X(269)-CROSS CONJUGATE OF X(279)
    :badge: 1 form
 
    * **Barycentrics:** :math:`1/(b + c - a)^{3} : :`
-
-.. container:: note-item
-
-   :ref:`X(479) <X(479)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 16 lines

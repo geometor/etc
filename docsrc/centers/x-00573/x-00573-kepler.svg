@@ -327,7 +327,7 @@ figure:hover .etc-svg-toolbar {
     <line data-id="{ 991, 3 }" data-name="Brocard Axis" class="line central_line" data-category="elements" x1="63.01252" y1="-128.66146" x2="-61.88762" y2="128.40440"><title>{ 991, 3 }: Brocard Axis</title></line>
     <line data-id="{ 3, 6 }" data-name="Brocard Axis" class="line central_line incident" data-category="elements" x1="-117.53399" y1="242.93414" x2="118.53399" y2="-242.93414"><title>{ 3, 6 }: Brocard Axis</title></line>
     <line data-id="{ 4, 9 }" data-name="Orthocenter–Spieker Line" class="line central_line incident" data-category="elements" x1="110.93780" y1="-376.03447" x2="-109.70174" y2="375.06273"><title>{ 4, 9 }: Orthocenter–Spieker Line</title></line>
-    <line data-id="{ 101, 102 }" data-name="Central Line L(101, 102)" class="line central_line incident" data-category="elements" x1="-163.15992" y1="-972.98592" x2="163.83292" y2="972.04090"><title>{ 101, 102 }: Central Line L(101, 102)</title></line>
+    <line data-id="{ 101, 102 }" data-name="Central Line L(101, 102)" class="line central_line incident" data-category="elements" x1="-163.16003" y1="-972.98572" x2="163.83303" y2="972.04070"><title>{ 101, 102 }: Central Line L(101, 102)</title></line>
     <line data-id="{ 43, 165 }" data-name="Central Line L(43, 165)" class="line central_line incident" data-category="elements" x1="192.76960" y1="-341.56560" x2="-191.44142" y2="341.01774"><title>{ 43, 165 }: Central Line L(43, 165)</title></line>
   </g>
   <g id="points">
@@ -355,7 +355,7 @@ figure:hover .etc-svg-toolbar {
     <text class="point-label incident" data-point-id="X(4)" data-anchor-x="0.618034" data-anchor-y="-0.485868" data-offset-x="12.0" data-offset-y="-10.5" x="0.636334" y="-0.501881" font-size="0.030881">X(4)</text>
     <text class="point-label incident" data-point-id="X(9)" data-anchor-x="0.507714" data-anchor-y="-0.110320" data-offset-x="12.0" data-offset-y="-10.5" x="0.526014" y="-0.126332" font-size="0.030881">X(9)</text>
     <text class="point-label incident" data-point-id="X(101)" data-anchor-x="0.336504" data-anchor-y="-0.472513" data-offset-x="12.0" data-offset-y="-10.5" x="0.354804" y="-0.488526" font-size="0.030881">X(101)</text>
-    <text class="point-label incident" data-point-id="X(102)" data-anchor-x="0.500000" data-anchor-y="0.500000" data-offset-x="12.0" data-offset-y="-10.5" x="0.518300" y="0.483988" font-size="0.030881">X(102)</text>
+    <text class="point-label incident" data-point-id="X(102)" data-anchor-x="0.500000" data-anchor-y="0.500000" data-offset-x="12.0" data-offset-y="-10.5" x="0.518300" y="0.483987" font-size="0.030881">X(102)</text>
     <text class="point-label incident" data-point-id="X(43)" data-anchor-x="0.664086" data-anchor-y="-0.273927" data-offset-x="12.0" data-offset-y="-10.5" x="0.682386" y="-0.289940" font-size="0.030881">X(43)</text>
     <text class="point-label incident" data-point-id="X(165)" data-anchor-x="0.471980" data-anchor-y="0.067364" data-offset-x="12.0" data-offset-y="-10.5" x="0.490280" y="0.051352" font-size="0.030881">X(165)</text>
     <text class="target-label" data-point-id="X(573)" data-anchor-x="0.437550" data-anchor-y="0.128533" data-offset-x="12.0" data-offset-y="-10.5" x="0.455850" y="0.112520" font-size="0.030881">X(573)</text>
@@ -609,9 +609,38 @@ figure:hover .etc-svg-toolbar {
                 el.style.display = 'none';
             });
         }
+        if (typeof document !== 'undefined') {
+            document.querySelectorAll('.geom-highlight-text').forEach(el => {
+                el.classList.remove('geom-highlight-text');
+            });
+        }
     }
 
-    function activateHover(id) {
+    function resolveSvgId(rawId) {
+        if (!rawId) return rawId;
+        if (svg.querySelector(`[data-id="${CSS.escape(rawId)}"]`)) return rawId;
+        const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+        if (segM) {
+            const revId = `[ ${segM[2]} ${segM[1]} ]`;
+            if (svg.querySelector(`[data-id="${CSS.escape(revId)}"]`)) return revId;
+        }
+        const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+        if (triM) {
+            const pts = [triM[1], triM[2], triM[3]];
+            if (pts.includes('A') && pts.includes('B') && pts.includes('C')) {
+                return '< A B C >';
+            }
+            const secPoly = graphicsGroup ? graphicsGroup.querySelector('polygon.secondary[data-id]') : null;
+            if (secPoly) {
+                return secPoly.getAttribute('data-id') || rawId;
+            }
+        }
+        return rawId;
+    }
+
+    function activateHover(rawId) {
+        if (!rawId) return;
+        const id = resolveSvgId(rawId);
         if (activeHoveredId === id) return;
         clearHover();
         activeHoveredId = id;
@@ -629,12 +658,70 @@ figure:hover .etc-svg-toolbar {
         }
 
         // Highlight parent/endpoint points and labels
-        const relatedPts = (info && info.related_points) ? info.related_points : [id];
+        let relatedPts = (info && info.related_points) ? info.related_points : [id];
+        if (!targetEl && relatedPts.length === 1 && relatedPts[0] === id) {
+            const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+            const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+            if (segM) relatedPts = [segM[1], segM[2]];
+            else if (triM) relatedPts = [triM[1], triM[2], triM[3]];
+        }
         relatedPts.forEach(pid => {
             const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
             if (ptEl) ptEl.classList.add('hover');
             const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
             if (lblEl) lblEl.classList.add('hover-label');
+        });
+
+        if (typeof document !== 'undefined') {
+            const sel = rawId === id
+                ? `.geom-ref[data-ref="${CSS.escape(id)}"]`
+                : `.geom-ref[data-ref="${CSS.escape(rawId)}"], .geom-ref[data-ref="${CSS.escape(id)}"]`;
+            document.querySelectorAll(sel).forEach(el => {
+                el.classList.add('geom-highlight-text');
+            });
+        }
+    }
+
+    svg._etcController.activateHover = activateHover;
+    svg._etcController.clearHover = clearHover;
+
+    if (document.body && document.documentElement.tagName.toLowerCase() === 'html' && document.body.dataset.etcGeomRefSyncInit !== '1') {
+        document.body.dataset.etcGeomRefSyncInit = '1';
+        function getActiveSvg() {
+            const activePaneSvg = document.querySelector('.etc-tab-pane.active svg.geometor-etc-drawing');
+            if (activePaneSvg && activePaneSvg._etcController) return activePaneSvg;
+            const anySvg = document.querySelector('svg.geometor-etc-drawing');
+            return (anySvg && anySvg._etcController) ? anySvg : null;
+        }
+        document.body.addEventListener('mouseover', (e) => {
+            const geomEl = e.target.closest('.geom-ref[data-ref]');
+            if (geomEl) {
+                const activeSvg = getActiveSvg();
+                if (activeSvg && activeSvg._etcController.activateHover) {
+                    activeSvg._etcController.activateHover(geomEl.getAttribute('data-ref'));
+                }
+                return;
+            }
+            const refLink = e.target.closest('a.reference.internal');
+            if (refLink) {
+                const txt = (refLink.textContent || '').trim();
+                const xm = txt.match(/^X\((\d+)\)$/);
+                if (xm) {
+                    const activeSvg = getActiveSvg();
+                    if (activeSvg && activeSvg._etcController.activateHover) {
+                        activeSvg._etcController.activateHover(`X(${xm[1]})`);
+                    }
+                }
+            }
+        });
+        document.body.addEventListener('mouseout', (e) => {
+            const geomEl = e.target.closest('.geom-ref[data-ref], a.reference.internal');
+            if (geomEl) {
+                const activeSvg = getActiveSvg();
+                if (activeSvg && activeSvg._etcController.clearHover) {
+                    activeSvg._etcController.clearHover();
+                }
+            }
         });
     }
 

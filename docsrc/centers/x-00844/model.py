@@ -23,10 +23,10 @@ def construct_x_00844(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(844) = INTERSECTION OF LINES X(166)X(167) AND X(173)X(503) on reference triangle ABC."""
-    X_166 = eval_trilinear_point(model, A, B, C, '(tan(A/2))/(cos(B/2) + cos(C/2) - cos(A/2)) - (tan(B/2))/(cos(C/2) + cos(A/2) - cos(B/2)) - (tan(C/2))/(cos(A/2) + cos(B/2) - cos(C/2))', ID="X(166)", classes=["center"])
+    X_166 = point_from_barycentrics(model, A, B, C, 0.22766017, 0.3221551, 0.45018473, ID="X(166)", classes=["center"])
     X_167 = point_from_barycentrics(model, A, B, C, 0.58849841, 0.49152493, -0.080023337, ID="X(167)", classes=["center"])
     X_173 = eval_trilinear_point(model, A, B, C, 'cos(B/2) + cos(C/2) - cos(A/2)', ID="X(173)", classes=["center"])
-    X_503 = eval_trilinear_point(model, A, B, C, 'sec(B/2) + sec(C/2) - sec(A/2)', ID="X(503)", classes=["center"])
+    X_503 = point_from_barycentrics(model, A, B, C, 0.32695379, 0.35836943, 0.31467678, ID="X(503)", classes=["center"])
     central_line(model, X_166, X_167, 166, 167)
     central_line(model, X_173, X_503, 173, 503)
     X_844 = intersect_lines(model, X_166, X_167, X_173, X_503, ID="X(844)", classes=["selected", "target"])

@@ -16,7 +16,7 @@ X(739) = EVEN (- 1, 0) CIRCUMCIRCLE POINT
    :alt: X(739) = EVEN (- 1, 0) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(739) = EVEN (- 1, 0) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(739) = EVEN (- 1, 0) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 

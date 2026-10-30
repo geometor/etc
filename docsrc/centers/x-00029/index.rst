@@ -16,7 +16,7 @@ X(29) = CEVAPOINT OF INCENTER AND ORTHOCENTER
    :alt: X(29) = CEVAPOINT OF INCENTER AND ORTHOCENTER
    :align: center
 
-   **X(29) = CEVAPOINT OF INCENTER AND ORTHOCENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(29) = CEVAPOINT OF INCENTER AND ORTHOCENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,11 +27,7 @@ X(29) = CEVAPOINT OF INCENTER AND ORTHOCENTER
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`(a - b - c)/((b + c) (a^2 - b^2 - c^2)) : :`
-
-.. container:: note-item
-
-   :ref:`X(29) <X(29)>` lies.
+   * **Barycentrics:** :math:`(a - b - c)/((b + c) (a^{2} - b^{2} - c^{2})) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 32 lines
@@ -66,7 +62,7 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(29) <X(29)>` has Shinagawa coefficients (F\*S\ :sup:`2`, $bcS\ :sub:`B`\ S\ :sub:`C`\ $ - F\*S\ :sup:`2`).
+   As a point on the Euler line, :ref:`X(29) <X(29)>` has Shinagawa coefficients :math:`(F S^{2}, \$bcS_{B}S_{C}\$ - F S^{2})`.
 
 .. toctree::
    :hidden:

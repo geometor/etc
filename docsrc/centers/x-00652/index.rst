@@ -10,13 +10,13 @@ X(652) = CROSSDIFFERENCE OF X(1) AND X(4)
 
 .. enunciation::
 
-   :ref:`X(652) <X(652)>` is the perspector of triangle ABC and the :term:`tangential triangle <tangential-triangle>` of the conic that passes through the points A, B, C, :ref:`X(1) <X(1)>`, and :ref:`X(3) <X(3)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   :ref:`X(652) <X(652)>` is the perspector of triangle :g:`ABC << A B C >>` and the :term:`tangential triangle <tangential-triangle>` of the conic that passes through the points :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, :ref:`X(1) <X(1)>`, and :ref:`X(3) <X(3)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. figure:: x-00652.svg
    :alt: X(652) = CROSSDIFFERENCE OF X(1) AND X(4)
    :align: center
 
-   **X(652) = CROSSDIFFERENCE OF X(1) AND X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(652) = CROSSDIFFERENCE OF X(1) AND X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,16 +27,12 @@ X(652) = CROSSDIFFERENCE OF X(1) AND X(4)
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`a (b - c) (b + c - a) (b^2 + c^2 - a^2) : :`
+   * **Trilinears:** :math:`a (b - c) (b + c - a) (b^{2} + c^{2} - a^{2}) : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(652) <X(652)>` = 2 X(3064) - 3 X(14400), X(8611) - 3 X(14418), 4 X(14331) - 3 X(14400)
-
-.. container:: note-item
-
-   :ref:`X(652) <X(652)>` lies.
+   * :ref:`X(652) <X(652)>` = :math:`2` X(3064) - :math:`3` X(14400), X(8611) - :math:`3` X(14418), :math:`4` X(14331) - :math:`3` X(14400)
 
 .. collapse:: Incident Central Lines
    :badge: 73 lines

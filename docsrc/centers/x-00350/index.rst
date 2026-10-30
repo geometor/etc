@@ -10,23 +10,19 @@ X(350) = X(2)-HIRST INVERSE OF X(75)
 
 .. enunciation::
 
-   :ref:`X(350) <X(350)>` is the perspector of triangle ABC and the :term:`tangential triangle <tangential-triangle>` of the conic that passes through A, B, C, and the pair P(10) and U(10) of :term:`bicentric points <bicentric-points>` (see the notes just before X(1908). (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   :ref:`X(350) <X(350)>` is the perspector of triangle :g:`ABC << A B C >>` and the :term:`tangential triangle <tangential-triangle>` of the conic that passes through :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, and the pair P(10) and U(10) of :term:`bicentric points <bicentric-points>` (see the notes just before X(1908). (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. figure:: x-00350.svg
    :alt: X(350) = X(2)-HIRST INVERSE OF X(75)
    :align: center
 
-   **X(350) = X(2)-HIRST INVERSE OF X(75)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(350) = X(2)-HIRST INVERSE OF X(75)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`(a^{2} - bc)b^{2}c^{2} : (b^{2} - ca)c^{2}a^{2} : (c^{2} - ab)a^{2}b^{2}`
    | **Barycentrics:** :math:`bc(a^{2} - bc) : ca(b^{2} - ca) : ab(c^{2} - ab)`
    | **Search Value (6, 9, 13):** :math:`24.647406574100`
-
-.. container:: note-item
-
-   :ref:`X(350) <X(350)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 19 lines
@@ -46,7 +42,7 @@ X(350) = X(2)-HIRST INVERSE OF X(75)
    * :ref:`X(350) <X(350)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(213) <X(213)>`\ \ :ref:`X(667) <X(667)>`
    * :ref:`X(350) <X(350)>` = :ref:`X(2) <X(2)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(75) <X(75)>`
    * :ref:`X(350) <X(350)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(39028)
-   * :ref:`X(350) <X(350)>` = perspector of hyperbola {A,B,C,\ :ref:`X(274) <X(274)>`,\ :ref:`X(668) <X(668)>`,\ :ref:`X(874) <X(874)>`,PU(10)}}
+   * :ref:`X(350) <X(350)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(274) <X(274)>`,\ :ref:`X(668) <X(668)>`,\ :ref:`X(874) <X(874)>`,PU(10)}}
    * :ref:`X(350) <X(350)>` = intersection of :term:`trilinear polars <trilinear-polar>` of P(10) and U(10)
 
 .. toctree::

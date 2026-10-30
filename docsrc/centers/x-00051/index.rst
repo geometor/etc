@@ -10,13 +10,13 @@ X(51) = CENTROID OF ORTHIC TRIANGLE
 
 .. enunciation::
 
-   Let A'B'C' be the :term:`anticomplementary triangle <anticomplementary-triangle>` and let Ba and Ca be the orthogonal projections of B' and C' on BC, respectively. Define Cb and Ac cyclically, and define Ab and Bc cyclically. Then :ref:`X(51) <X(51)>` is the centroid of BaCaCbAbAcBc. (:person:`Randy Hutson <randy-hutson>`, April 9, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`anticomplementary triangle <anticomplementary-triangle>` and let :g:`B_{a} <B_a>` and :g:`C_{a} <C_a>` be the orthogonal projections of :g:`B' <B'>` and :g:`C' <C'>` on :g:`BC <[ B C ]>`, respectively. Define :g:`C_{b} <C_b>` and :g:`A_{c} <A_c>` cyclically, and define :g:`A_{b} <A_b>` and :g:`B_{c} <B_c>` cyclically. Then :ref:`X(51) <X(51)>` is the centroid of BaCaCbAbAcBc. (:person:`Randy Hutson <randy-hutson>`, April 9, 2016)
 
 .. figure:: x-00051.svg
    :alt: X(51) = CENTROID OF ORTHIC TRIANGLE
    :align: center
 
-   **X(51) = CENTROID OF ORTHIC TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(51) = CENTROID OF ORTHIC TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -34,11 +34,7 @@ X(51) = CENTROID OF ORTHIC TRIANGLE
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(51) <X(51)>` = (r\ :sup:`2` + 2rR + s\ :sup:`2`)\*\ :ref:`X(1) <X(1)>` + 6R(R - r)\*\ :ref:`X(2) <X(2)>` - (r\ :sup:`2` + 4rR - s\ :sup:`2`)\*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-
-.. container:: note-item
-
-   :ref:`X(51) <X(51)>` lies.
+   * :ref:`X(51) <X(51)>` = :math:`(r^{2} + 2rR + s^{2})` :ref:`X(1) <X(1)>` + :math:`6R(R - r)` :ref:`X(2) <X(2)>` - :math:`(r^{2} + 4rR - s^{2})` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. collapse:: Incident Central Lines
    :badge: 24 lines
@@ -73,8 +69,8 @@ X(51) = CENTROID OF ORTHIC TRIANGLE
    * :ref:`X(51) <X(51)>` = PU(157)-harmonic conjugate of :ref:`X(647) <X(647)>`
    * :ref:`X(51) <X(51)>` = perspector of orthic-of-orthocentroidal triangle and orthocentroidal-of-:term:`orthic triangle <orthic-triangle>`
    * :ref:`X(51) <X(51)>` = centroid of reflection triangle of :ref:`X(125) <X(125)>`
-   * :ref:`X(51) <X(51)>` = excentral-to-ABC :term:`functional image <functional-image>` of :ref:`X(2) <X(2)>`
-   * :ref:`X(51) <X(51)>` = centroid of anticomplementary circle intercepts of sidelines of ABC
+   * :ref:`X(51) <X(51)>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X(2) <X(2)>`
+   * :ref:`X(51) <X(51)>` = centroid of anticomplementary circle intercepts of sidelines of :g:`ABC << A B C >>`
    * :ref:`X(51) <X(51)>` = {X(34221),X(34222)}-harmonic conjugate of X(5480)
 
 Notes
@@ -82,11 +78,11 @@ Notes
 
 .. container:: note-item
 
-   Let L be the van Aubel line. Let U = :ref:`X(6) <X(6)>`\ \ :ref:`X(25) <X(25)>`, the isogonal conjugate of polar conjugate of L; let V = :ref:`X(4) <X(4)>`\ \ :ref:`X(51) <X(51)>`, the polar conjugate of the isogonal conjugate of L. Then :ref:`X(51) <X(51)>` = U∩V. (Randy Hutson, April 9, 2016)
+   Let :g:`L <L>` be the van Aubel line. Let :g:`U <U>` = :ref:`X(6) <X(6)>`\ \ :ref:`X(25) <X(25)>`, the isogonal conjugate of polar conjugate of :g:`L <L>`; let V = :ref:`X(4) <X(4)>`\ \ :ref:`X(51) <X(51)>`, the polar conjugate of the isogonal conjugate of L. Then :ref:`X(51) <X(51)>` = U∩V. (Randy Hutson, April 9, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the orthic triangle. Let Oa be the A-McCay circle of triangle AB'C', and define Ob, Oc cyclically. :ref:`X(51) <X(51)>` is the radical center of circles Oa, Ob, Oc. (Randy Hutson, July 31 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the orthic triangle. Let :g:`O_{a} <O_a>` be the A-McCay circle of triangle :g:`AB'C' << A B' C' >>`, and define :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>` cyclically. :ref:`X(51) <X(51)>` is the radical center of circles :g:`O_{a} <O_a>`, :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>`. (Randy Hutson, July 31 2018)
 
 .. container:: note-item
 

@@ -13,6 +13,7 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     isogonal_conjugate,
+    point_from_barycentrics,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -22,16 +23,16 @@ def construct_x_00977(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(977) = ISOGONAL CONJUGATE OF X(976) on reference triangle ABC."""
-    X_976 = eval_trilinear_point(model, A, B, C, 'a**(3)+ (b + c)*(b**(2)+ c**(2))', ID="X(976)", classes=["center"])
+    X_976 = point_from_barycentrics(model, A, B, C, 0.30948068, 0.33333333, 0.35718599, ID="X(976)", classes=["center"])
     X_977 = isogonal_conjugate(model, A, B, C, X_976, ID="X(977)", classes=["selected", "target"])
     X_22 = eval_trilinear_point(model, A, B, C, 'a*(b**(4) + c**(4) - a**(4))', ID="X(22)", classes=["center", "incident"])
     X_56 = eval_trilinear_point(model, A, B, C, 'a/(b + c - a)', ID="X(56)", classes=["center", "incident"])
     central_line(model, X_22, X_56, 22, 56, incident=True)
     X_106 = eval_trilinear_point(model, A, B, C, 'a/(2*a - b - c)', ID="X(106)", classes=["center", "incident"])
-    X_833 = eval_trilinear_point(model, A, B, C, '1/(a**(0)*(b**(4)- c**(4)) + a**(3)*(b**(1)- c**(1)))', ID="X(833)", classes=["center", "incident"])
+    X_833 = point_from_barycentrics(model, A, B, C, 0.49267234, -0.32934075, 0.83666841, ID="X(833)", classes=["center", "incident"])
     central_line(model, X_106, X_833, 106, 833, incident=True)
     X_58 = eval_trilinear_point(model, A, B, C, 'a/(b + c)', ID="X(58)", classes=["center", "incident"])
-    X_982 = eval_trilinear_point(model, A, B, C, 'b**(2)- b*c + c**(2)', ID="X(982)", classes=["center", "incident"])
+    X_982 = point_from_barycentrics(model, A, B, C, 0.32282282, 0.35135135, 0.32582583, ID="X(982)", classes=["center", "incident"])
     central_line(model, X_58, X_982, 58, 982, incident=True)
     return promote_point_to_top(model, X_977)
 

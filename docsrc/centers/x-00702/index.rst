@@ -16,16 +16,12 @@ X(702) = EVEN (- 4, 0) INFINITY POINT
    :alt: X(702) = EVEN (- 4, 0) INFINITY POINT
    :align: center
 
-   **X(702) = EVEN (- 4, 0) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(702) = EVEN (- 4, 0) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = a :sup:`-5`\ (b\ :sup:`0` + c\ :sup:`0`) - a :sup:`-1`\ (b :sup:`-4` + c :sup:`-4`)
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
-
-.. container:: note-item
-
-   :ref:`X(702) <X(702)>` lies.
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a ^{-5}(b^{0} + c^{0}) - a ^{-1}(b ^{-4} + c ^{-4})`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines

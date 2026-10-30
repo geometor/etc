@@ -12,7 +12,7 @@ X(464) = EULER LINE INTERCEPT OF LINE X(63)X(69) — Code
    :alt: X(464) = EULER LINE INTERCEPT OF LINE X(63)X(69)
    :align: center
 
-   **X(464) = EULER LINE INTERCEPT OF LINE X(63)X(69)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(464) = EULER LINE INTERCEPT OF LINE X(63)X(69)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -13,6 +13,7 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    point_from_barycentrics,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -22,7 +23,7 @@ def construct_x_00587(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(587) = POINT ARCTURUS on reference triangle ABC."""
-    X_587 = eval_trilinear_point(model, A, B, C, 'b*c*(2*(a + b + c) + (a - b - c)*tan(A))', ID="X(587)", classes=["selected", "target"])
+    X_587 = point_from_barycentrics(model, A, B, C, 0.25159642, 0.27841635, 0.46998723, ID="X(587)", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
     X_92 = eval_trilinear_point(model, A, B, C, 'csc(2*A)', ID="X(92)", classes=["center", "incident"])
     central_line(model, X_2, X_92, 2, 92, incident=True)

@@ -16,12 +16,12 @@ X(647) = CROSSDIFFERENCE OF X(2) AND X(3)
    :alt: X(647) = CROSSDIFFERENCE OF X(2) AND X(3)
    :align: center
 
-   **X(647) = CROSSDIFFERENCE OF X(2) AND X(3)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(647) = CROSSDIFFERENCE OF X(2) AND X(3)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`a(b^{2} - c^{2})(b^{2} + c^{2} - a^{2}) : :`
-   | **Barycentrics:** :math:`a^2*(b^2 - c^2)*SA : :`
+   | **Barycentrics:** :math:`a^{2} (b^{2} - c^{2}) S_{A} : :`
    | **Search Value (6, 9, 13):** :math:`-5.076856435422`
 
 .. collapse:: Alternate Coordinates
@@ -34,7 +34,7 @@ X(647) = CROSSDIFFERENCE OF X(2) AND X(3)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(647) <X(647)>` = 9 :ref:`X(2) <X(2)>` - 5 X(31072), 6 :ref:`X(2) <X(2)>` - 5 X(31277), 3 :ref:`X(2) <X(2)>` + X(31296), 3 :ref:`X(2) <X(2)>` + 2 X(41300), 3 :ref:`X(351) <X(351)>` - :ref:`X(669) <X(669)>`, 3 :ref:`X(351) <X(351)>` + X(3005), 6 :ref:`X(351) <X(351)>` - X(3804), 3 :ref:`X(351) <X(351)>` - 2 X(8651), 9 :ref:`X(351) <X(351)>` - X(8664), 9 :ref:`X(351) <X(351)>` + X(8665), 2 :ref:`X(669) <X(669)>` - 3 X(8644), 3 :ref:`X(669) <X(669)>` - X(8664), 3 :ref:`X(669) <X(669)>` + X(8665), :ref:`X(669) <X(669)>` + 3 X(17414), 3 :ref:`X(850) <X(850)>` - 5 X(31072), 2 :ref:`X(850) <X(850)>` - 3 X(31174), 2 :ref:`X(850) <X(850)>` - 5 X(31277), :ref:`X(850) <X(850)>` + 3 X(36900), :ref:`X(850) <X(850)>` + 2 X(41300), :ref:`X(850) <X(850)>` - 6 X(44560), 3 X(1636) + X(17434), 3 X(1636) - X(32320), 3 X(1637) - 2 X(2501), 3 X(1637) - 4 X(6587), 3 X(1637) - X(12077), 9 X(1649) - X(2528), 3 X(2485) - 2 X(2492), 3 X(2489) - 4 X(2492), X(2501) - 3 X(9209), X(2525) - 3 X(14417), 2 X(3005) + X(3804), 2 X(3005) + 3 X(8644), X(3005) + 2 X(8651), 3 X(3005) + X(8664), 3 X(3005) - X(8665), X(3005) - 3 X(17414), 3 X(3050) + X(39232), 2 X(3265) - 3 X(14417), X(3288) + 3 X(9210), X(3569) - 3 X(9210), X(3804) - 3 X(8644), X(3804) - 4 X(8651), 3 X(3804) - 2 X(8664), 3 X(3804) + 2 X(8665), X(3804) + 6 X(17414), X(3806) + 9 X(9125), 3 X(5996) - X(44445), 2 X(6587) - 3 X(9209), 4 X(6587) - X(12077), 3 X(8644) - 4 X(8651), 9 X(8644) - 2 X(8664), 9 X(8644) + 2 X(8665), X(8644) + 2 X(17414), 6 X(8651) - X(8664), 6 X(8651) + X(8665), 2 X(8651) + 3 X(17414), X(8664) + 9 X(17414), X(8665) - 9 X(17414), 3 X(9147) + X(44445), 3 X(9148) - 5 X(31279), 6 X(9209) - X(12077), X(9409) + 3 X(15451), X(9409) - 3 X(39201), 2 X(9409) - 3 X(42658), 3 X(9979) + X(41298), 3 X(11176) - 2 X(44451), 2 X(15451) + X(42658), 6 X(30476) - 5 X(31072), 4 X(30476) - 3 X(31174), 4 X(30476) - 5 X(31277), 2 X(30476) + X(31296), 2 X(30476) + 3 X(36900), X(30476) - 3 X(44560), 10 X(31072) - 9 X(31174), 2 X(31072) - 3 X(31277), 5 X(31072) + 3 X(31296), 5 X(31072) + 9 X(36900), 5 X(31072) + 6 X(41300), 5 X(31072) - 18 X(44560), 3 X(31174) - 5 X(31277), 3 X(31174) + 2 X(31296), X(31174) + 2 X(36900), 3 X(31174) + 4 X(41300), X(31174) - 4 X(44560), 5 X(31277) + 2 X(31296), 5 X(31277) + 6 X(36900), 5 X(31277) + 4 X(41300), 5 X(31277) - 12 X(44560), X(31296) - 3 X(36900), X(31296) + 6 X(44560), 3 X(36900) - 2 X(41300), X(36900) + 2 X(44560), X(41300) + 3 X(44560)
+   * :ref:`X(647) <X(647)>` = :math:`9` :ref:`X(2) <X(2)>` - :math:`5` X(31072), :math:`6` :ref:`X(2) <X(2)>` - :math:`5` X(31277), :math:`3` :ref:`X(2) <X(2)>` + X(31296), :math:`3` :ref:`X(2) <X(2)>` + :math:`2` X(41300), :math:`3` :ref:`X(351) <X(351)>` - :ref:`X(669) <X(669)>`, :math:`3` :ref:`X(351) <X(351)>` + X(3005), :math:`6` :ref:`X(351) <X(351)>` - X(3804), :math:`3` :ref:`X(351) <X(351)>` - :math:`2` X(8651), :math:`9` :ref:`X(351) <X(351)>` - X(8664), :math:`9` :ref:`X(351) <X(351)>` + X(8665), :math:`2` :ref:`X(669) <X(669)>` - :math:`3` X(8644), :math:`3` :ref:`X(669) <X(669)>` - X(8664), :math:`3` :ref:`X(669) <X(669)>` + X(8665), :ref:`X(669) <X(669)>` + :math:`3` X(17414), :math:`3` :ref:`X(850) <X(850)>` - :math:`5` X(31072), :math:`2` :ref:`X(850) <X(850)>` - :math:`3` X(31174), :math:`2` :ref:`X(850) <X(850)>` - :math:`5` X(31277), :ref:`X(850) <X(850)>` + :math:`3` X(36900), :ref:`X(850) <X(850)>` + :math:`2` X(41300), :ref:`X(850) <X(850)>` - :math:`6` X(44560), :math:`3` X(1636) + X(17434), :math:`3` X(1636) - X(32320), :math:`3` X(1637) - :math:`2` X(2501), :math:`3` X(1637) - :math:`4` X(6587), :math:`3` X(1637) - X(12077), :math:`9` X(1649) - X(2528), :math:`3` X(2485) - :math:`2` X(2492), :math:`3` X(2489) - :math:`4` X(2492), X(2501) - :math:`3` X(9209), X(2525) - :math:`3` X(14417), :math:`2` X(3005) + X(3804), :math:`2` X(3005) + :math:`3` X(8644), X(3005) + :math:`2` X(8651), :math:`3` X(3005) + X(8664), :math:`3` X(3005) - X(8665), X(3005) - :math:`3` X(17414), :math:`3` X(3050) + X(39232), :math:`2` X(3265) - :math:`3` X(14417), X(3288) + :math:`3` X(9210), X(3569) - :math:`3` X(9210), X(3804) - :math:`3` X(8644), X(3804) - :math:`4` X(8651), :math:`3` X(3804) - :math:`2` X(8664), :math:`3` X(3804) + :math:`2` X(8665), X(3804) + :math:`6` X(17414), X(3806) + :math:`9` X(9125), :math:`3` X(5996) - X(44445), :math:`2` X(6587) - :math:`3` X(9209), :math:`4` X(6587) - X(12077), :math:`3` X(8644) - :math:`4` X(8651), :math:`9` X(8644) - :math:`2` X(8664), :math:`9` X(8644) + :math:`2` X(8665), X(8644) + :math:`2` X(17414), :math:`6` X(8651) - X(8664), :math:`6` X(8651) + X(8665), :math:`2` X(8651) + :math:`3` X(17414), X(8664) + :math:`9` X(17414), X(8665) - :math:`9` X(17414), :math:`3` X(9147) + X(44445), :math:`3` X(9148) - :math:`5` X(31279), :math:`6` X(9209) - X(12077), X(9409) + :math:`3` X(15451), X(9409) - :math:`3` X(39201), :math:`2` X(9409) - :math:`3` X(42658), :math:`3` X(9979) + X(41298), :math:`3` X(11176) - :math:`2` X(44451), :math:`2` X(15451) + X(42658), :math:`6` X(30476) - :math:`5` X(31072), :math:`4` X(30476) - :math:`3` X(31174), :math:`4` X(30476) - :math:`5` X(31277), :math:`2` X(30476) + X(31296), :math:`2` X(30476) + :math:`3` X(36900), X(30476) - :math:`3` X(44560), :math:`10` X(31072) - :math:`9` X(31174), :math:`2` X(31072) - :math:`3` X(31277), :math:`5` X(31072) + :math:`3` X(31296), :math:`5` X(31072) + :math:`9` X(36900), :math:`5` X(31072) + :math:`6` X(41300), :math:`5` X(31072) - :math:`18` X(44560), :math:`3` X(31174) - :math:`5` X(31277), :math:`3` X(31174) + :math:`2` X(31296), X(31174) + :math:`2` X(36900), :math:`3` X(31174) + :math:`4` X(41300), X(31174) - :math:`4` X(44560), :math:`5` X(31277) + :math:`2` X(31296), :math:`5` X(31277) + :math:`6` X(36900), :math:`5` X(31277) + :math:`4` X(41300), :math:`5` X(31277) - :math:`12` X(44560), X(31296) - :math:`3` X(36900), X(31296) + :math:`6` X(44560), :math:`3` X(36900) - :math:`2` X(41300), X(36900) + :math:`2` X(44560), X(41300) + :math:`3` X(44560)
 
 .. container:: note-item
 
@@ -50,7 +50,7 @@ X(647) = CROSSDIFFERENCE OF X(2) AND X(3)
    :badge: 57 relations
 
    * :ref:`X(647) <X(647)>` = radical center of the circumcircle, nine-point circle, and Brocard circle (Wilson Stothers, 3/13/2003)
-   * :ref:`X(647) <X(647)>` is the perspector of triangle ABC and the :term:`tangential triangle <tangential-triangle>` of the Jerabek hyperbola. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   * :ref:`X(647) <X(647)>` is the perspector of triangle :g:`ABC << A B C >>` and the :term:`tangential triangle <tangential-triangle>` of the Jerabek hyperbola. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
    * :ref:`X(647) <X(647)>` = midpoint of X(i) and X(j) for these {i,j}: {:ref:`2 <X(2)>`, 36900}, {:ref:`351 <X(351)>`, 17414}, {:ref:`649 <X(649)>`, 42664}, {:ref:`669 <X(669)>`, 3005}, {:ref:`850 <X(850)>`, 31296}, {2966, 46245}, {3267, 4580}, {3288, 3569}, {5996, 9147}, {6137, 6138}, {6563, 33294}, {8639, 42661}, {8664, 8665}, {14270, 18117}, {14618, 15412}, {15451, 39201}, {17431, 17432}, {17434, 32320}, {21731, 42660}, {30476, 41300}
    * :ref:`X(647) <X(647)>` = reflection of X(i) in X(j) for these {i,j}: {:ref:`2 <X(2)>`, 44560}, {:ref:`125 <X(125)>`, 22264}, {:ref:`669 <X(669)>`, 8651}, {:ref:`850 <X(850)>`, 30476}, {1495, 42654}, {1637, 9209}, {2489, 2485}, {2501, 6587}, {2525, 3265}, {3804, :ref:`669 <X(669)>`}, {6753, 16040}, {8644, :ref:`351 <X(351)>`}, {12077, 2501}, {31174, :ref:`2 <X(2)>`}, {31296, 41300}, {42658, 39201}, {45907, 2491}
    * :ref:`X(647) <X(647)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(648) <X(648)>`
@@ -71,7 +71,7 @@ X(647) = CROSSDIFFERENCE OF X(2) AND X(3)
    * :ref:`X(647) <X(647)>` = :term:`crossdifference <crossdifference>` of every pair of points on line {2, 3}
    * :ref:`X(647) <X(647)>` = perspector of the Jerabek hyperbola
    * :ref:`X(647) <X(647)>` = :term:`orthojoin <orthojoin>` of :ref:`X(125) <X(125)>`
-   * :ref:`X(647) <X(647)>` = perspector of ABC and the side-triangle of the :term:`cevian triangles <cevian-triangle>` of :ref:`X(3) <X(3)>` and :ref:`X(6) <X(6)>`
+   * :ref:`X(647) <X(647)>` = perspector of :g:`ABC << A B C >>` and the side-triangle of the :term:`cevian triangles <cevian-triangle>` of :ref:`X(3) <X(3)>` and :ref:`X(6) <X(6)>`
    * :ref:`X(647) <X(647)>` = PU(4)-harmonic conjugate of :ref:`X(232) <X(232)>`
    * :ref:`X(647) <X(647)>` = bicentric difference of PU(i) for these i: 17, 145, 157
    * :ref:`X(647) <X(647)>` = PU(17)-harmonic conjugate of :ref:`X(185) <X(185)>`
@@ -82,16 +82,16 @@ X(647) = CROSSDIFFERENCE OF X(2) AND X(3)
    * :ref:`X(647) <X(647)>` = intersection of :term:`trilinear polars <trilinear-polar>` of any 2 points on the Jerabek hyperbola
    * :ref:`X(647) <X(647)>` = :ref:`X(187) <X(187)>`-of-2nd-Parry-triangle
    * :ref:`X(647) <X(647)>` = :ref:`X(187) <X(187)>`-of-3rd-Parry-triangle
-   * :ref:`X(647) <X(647)>` = intersection of the Lemoine axes of ABC and the 5th Euler triangle
+   * :ref:`X(647) <X(647)>` = intersection of the Lemoine axes of :g:`ABC << A B C >>` and the 5th Euler triangle
    * :ref:`X(647) <X(647)>` = intersection of orthic and Lemoine axes (trilinear polars of :ref:`X(4) <X(4)>` and :ref:`X(6) <X(6)>`)
    * :ref:`X(647) <X(647)>` = :ref:`X(92) <X(92)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(110) <X(110)>`
    * :ref:`X(647) <X(647)>` = pole wrt polar circle of trilinear polar of X(6528)
    * :ref:`X(647) <X(647)>` = :ref:`X(48) <X(48)>`-isoconjugate (polar conjugate) of X(6528)
    * :ref:`X(647) <X(647)>` = midpoint of PU(145)
    * :ref:`X(647) <X(647)>` = PU(157)-harmonic conjugate of :ref:`X(51) <X(51)>`
-   * :ref:`X(647) <X(647)>` = :ref:`X(649) <X(649)>`-of-orthic-triangle if ABC is acute
+   * :ref:`X(647) <X(647)>` = :ref:`X(649) <X(649)>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(647) <X(647)>` = trilinear product of Jerabek hyperbola intercepts of antiorthic axis
-   * :ref:`X(647) <X(647)>` = excentral-to-ABC :term:`functional image <functional-image>` of :ref:`X(649) <X(649)>`
+   * :ref:`X(647) <X(647)>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X(649) <X(649)>`
    * :ref:`X(647) <X(647)>` = orthoptic-circle-of-Steiner-inellipse-inverse of X(34235)
    * :ref:`X(647) <X(647)>` = X(i)-:term:`anticomplementary conjugate <anticomplementary-conjugate>` of X(j) for these (i,j): {9255, 13219}, {9258, 3448}, {9292, 21221}, {9307, 21294}, {43188, 6327}
    * :ref:`X(647) <X(647)>` = X(i)-:term:`complementary conjugate <complementary-conjugate>` of X(j) for these (i,j): {:ref:`6 <X(6)>`, 21253}, {:ref:`31 <X(31)>`, :ref:`125 <X(125)>`}, {:ref:`32 <X(32)>`, 8287}, {:ref:`48 <X(48)>`, :ref:`127 <X(127)>`}, {:ref:`58 <X(58)>`, 21252}, {:ref:`99 <X(99)>`, 21235}, {:ref:`101 <X(101)>`, 21245}, {:ref:`110 <X(110)>`, 2887}, {:ref:`112 <X(112)>`, 20305}, {:ref:`162 <X(162)>`, 21243}, {:ref:`163 <X(163)>`, :ref:`141 <X(141)>`}, {:ref:`184 <X(184)>`, 34846}, {:ref:`249 <X(249)>`, 42327}, {:ref:`250 <X(250)>`, 21259}, {:ref:`560 <X(560)>`, :ref:`115 <X(115)>`}, {:ref:`662 <X(662)>`, :ref:`626 <X(626)>`}, {:ref:`669 <X(669)>`, 24040}, {:ref:`691 <X(691)>`, 21256}, {:ref:`692 <X(692)>`, 3454}, {:ref:`799 <X(799)>`, 40379}, {:ref:`827 <X(827)>`, 21238}, {:ref:`922 <X(922)>`, 5099}, {1101, :ref:`512 <X(512)>`}, {1110, 31946}, {1333, :ref:`116 <X(116)>`}, {1397, 8286}, {1408, 17059}, {1414, 17047}, {1415, 17052}, {1501, 16592}, {1576, :ref:`10 <X(10)>`}, {1755, 36471}, {1917, 1084}, {1923, 15449}, {1924, 23991}, {1933, 2679}, {2194, :ref:`124 <X(124)>`}, {2205, 6627}, {2206, :ref:`11 <X(11)>`}, {4556, 21240}, {4565, 17046}, {4567, 21262}, {4570, 21260}, {4575, 1368}, {4590, 21263}, {4602, 40380}, {4630, 1215}, {5546, 21244}, {9247, 15526}, {9417, 35088}, {14574, :ref:`37 <X(37)>`}, {14575, 16573}, {14585, 16595}, {14586, 21231}, {16947, 4904}, {23357, 4369}, {23963, 14838}, {23990, 4129}, {23995, :ref:`523 <X(523)>`}, {24041, 23301}, {32656, 21530}, {32660, 18642}, {32661, 18589}, {32676, :ref:`5 <X(5)>`}, {32678, 34827}, {32729, 4892}, {32734, 34825}, {32739, 1211}, {34072, 3934}, {36084, 21531}, {36134, 3819}, {36142, :ref:`625 <X(625)>`}, {41280, 16613}, {46289, 7668}
@@ -112,7 +112,7 @@ Notes
 
 .. container:: note-item
 
-   Let L be the line at infinity. :ref:`X(647) <X(647)>` = :ref:`X(230) <X(230)>`\ \ :ref:`X(231) <X(231)>`\ ∩\ :ref:`X(441) <X(441)>`\ \ :ref:`X(525) <X(525)>`; that is, the polar conjugate of isotomic conjugate of L and the isotomic conjugate of polar conjugate of L. (Randy Hutson, February 10, 2016)
+   Let :g:`L <L>` be the line at infinity. :ref:`X(647) <X(647)>` = :ref:`X(230) <X(230)>`\ \ :ref:`X(231) <X(231)>`\ ∩\ :ref:`X(441) <X(441)>`\ \ :ref:`X(525) <X(525)>`; that is, the polar conjugate of isotomic conjugate of :g:`L <L>` and the isotomic conjugate of polar conjugate of :g:`L <L>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 

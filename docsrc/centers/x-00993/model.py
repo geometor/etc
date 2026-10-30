@@ -15,6 +15,7 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     incenter_of,
+    intersect_lines,
     promote_point_to_top,
     spieker_center_of,
 )
@@ -25,13 +26,13 @@ def construct_x_00993(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(993) = MIDPOINT OF X(1) AND X(63) on reference triangle ABC."""
-    X_993 = eval_trilinear_point(model, A, B, C, 'a**(3)- a*(b**(2)+ c**(2)) - b*c*(b + c)', ID="X(993)", classes=["selected", "target"])
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
-    X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["center", "incident"])
-    central_line(model, X_3, X_10, 3, 10, incident=True)
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
-    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X(21)", classes=["center", "incident"])
-    central_line(model, X_1, X_21, 1, 21, incident=True)
+    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
+    X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["center"])
+    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
+    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X(21)", classes=["center"])
+    central_line(model, X_3, X_10, 3, 10)
+    central_line(model, X_1, X_21, 1, 21)
+    X_993 = intersect_lines(model, X_3, X_10, X_1, X_21, ID="X(993)", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
     X_36 = eval_trilinear_point(model, A, B, C, '1 - 2*cos(A)', ID="X(36)", classes=["center", "incident"])
     central_line(model, X_2, X_36, 2, 36, incident=True)

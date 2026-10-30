@@ -16,16 +16,12 @@ X(918) = ISOTOMIC CONJUGATE OF X(666)
    :alt: X(918) = ISOTOMIC CONJUGATE OF X(666)
    :align: center
 
-   **X(918) = ISOTOMIC CONJUGATE OF X(666)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(918) = ISOTOMIC CONJUGATE OF X(666)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = (w/b - v/c)/a\ :sup:`2`, u : v : w = :ref:`X(100) <X(100)>`
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = (b - c)(b\ :sup:`2` + c\ :sup:`2` -ab - ac)
-
-.. container:: note-item
-
-   :ref:`X(918) <X(918)>` lies.
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = (w/b - v/c)/a^{2}`,\ :math:`u : v : w` = :ref:`X(100) <X(100)>`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = (b - c)(b^{2} + c^{2} -ab - ac)`
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines

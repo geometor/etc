@@ -14,6 +14,7 @@ from geometor.etc.ops import (
     eval_trilinear_point,
     gergonne_point_of,
     isogonal_conjugate,
+    point_from_barycentrics,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -23,7 +24,7 @@ def construct_x_00272(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(272) = ISOGONAL CONJUGATE OF X(209) on reference triangle ABC."""
-    X_209 = eval_trilinear_point(model, A, B, C, '(sin(B) + sin(C))*(sin(A) + sin(A - B) + sin(A - C))', ID="X(209)", classes=["center"])
+    X_209 = point_from_barycentrics(model, A, B, C, -0.027151211, 0.26165414, 0.76549708, ID="X(209)", classes=["center"])
     X_272 = isogonal_conjugate(model, A, B, C, X_209, ID="X(272)", classes=["selected", "target"])
     X_7 = gergonne_point_of(model, A, B, C, ID="X(7)", classes=["center", "incident"])
     X_58 = eval_trilinear_point(model, A, B, C, 'a/(b + c)', ID="X(58)", classes=["center", "incident"])

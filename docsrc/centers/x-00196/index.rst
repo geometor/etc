@@ -16,17 +16,13 @@ X(196) = X(7)-CEVA CONJUGATE OF X(4)
    :alt: X(196) = X(7)-CEVA CONJUGATE OF X(4)
    :align: center
 
-   **X(196) = X(7)-CEVA CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(196) = X(7)-CEVA CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = (cos B + cos C - cos A - 1) sec A tan A/2
-   | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where g(A,B,C) = (cos B + cos C - cos A - 1) tan A tan A/2
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = (\cos B + \cos C - \cos A - 1) \sec A \tan A/2`
+   | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where :math:`g(A,B,C) = (\cos B + \cos C - \cos A - 1) \tan A \tan A/2`
    | **Search Value (6, 9, 13):** :math:`0.283379483064`
-
-.. container:: note-item
-
-   :ref:`X(196) <X(196)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 10 lines

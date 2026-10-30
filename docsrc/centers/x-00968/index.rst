@@ -16,7 +16,7 @@ X(968) = POINT ALDERAMIN
    :alt: X(968) = POINT ALDERAMIN
    :align: center
 
-   **X(968) = POINT ALDERAMIN** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(968) = POINT ALDERAMIN** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -26,11 +26,7 @@ X(968) = POINT ALDERAMIN
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`ra^{2} - sS : rb^{2} - sS : rc^{2} - sS`
-
-.. container:: note-item
-
-   :ref:`X(968) <X(968)>` lies.
+   * **Trilinears:** :math:`r_{a}^{2} - sS : r_{b}^{2} - sS : r_{c}^{2} - sS`
 
 .. collapse:: Incident Central Lines
    :badge: 9 lines

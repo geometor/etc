@@ -11,7 +11,9 @@ from geometor.etc.ops import (
     central_line,
     construct_baseline_triangle,
     create_model,
+    eval_barycentric_point,
     eval_trilinear_point,
+    point_from_barycentrics,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -21,12 +23,12 @@ def construct_x_00686(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(686) = CROSSDIFFERENCE OF X(4) AND X(110) on reference triangle ABC."""
-    X_686 = eval_trilinear_point(model, A, B, C, 'sec(B)*csc(A - B) + sec(C)*csc(A - C)', ID="X(686)", classes=["selected", "target"])
+    X_686 = eval_barycentric_point(model, A, B, C, 'a**(2)*(b**(2) - c**(2))*(a**(2) - b**(2) - c**(2))*(a**(4)*(b**(2) + c**(2)) - 2*a**(2)*(b**(4) - b**(2)*c**(2) + c**(4)) + (b**(2) - c**(2))**(2)*(b**(2) + c**(2)))', ID="X(686)", classes=["selected", "target"])
     X_115 = eval_trilinear_point(model, A, B, C, 'b*c*(b**(2) - c**(2))**(2)', ID="X(115)", classes=["center", "incident"])
     X_125 = eval_trilinear_point(model, A, B, C, 'cos(A)*(sin(B - C))**(2)', ID="X(125)", classes=["center", "incident"])
     central_line(model, X_115, X_125, 115, 125, incident=True)
     X_184 = eval_trilinear_point(model, A, B, C, 'a**(2)*cos(A)', ID="X(184)", classes=["center", "incident"])
-    X_351 = eval_trilinear_point(model, A, B, C, 'a*(b**(2)- c**(2))*(b**(2)+ c**(2)- 2*a**(2))', ID="X(351)", classes=["center", "incident"])
+    X_351 = point_from_barycentrics(model, A, B, C, -1.104798, 0.16783217, 1.9369658, ID="X(351)", classes=["center", "incident"])
     central_line(model, X_184, X_351, 184, 351, incident=True)
     X_520 = eval_trilinear_point(model, A, B, C, '(cos(A))*(sin(2*B) - sin(2*C))', ID="X(520)", classes=["center", "incident"])
     X_647 = eval_trilinear_point(model, A, B, C, 'a*(b**(2) - c**(2))*(b**(2) + c**(2) - a**(2))', ID="X(647)", classes=["center", "incident"])

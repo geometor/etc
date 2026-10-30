@@ -12,6 +12,7 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    intersect_lines,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -21,13 +22,13 @@ def construct_x_00643(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(643) = TRILINEAR MULTIPLIER FOR KIEPERT PARABOLA on reference triangle ABC."""
-    X_643 = eval_trilinear_point(model, A, B, C, '(b + c - a)/(b**(2)- c**(2))', ID="X(643)", classes=["selected", "target"])
-    X_99 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(2) - c**(2))', ID="X(99)", classes=["center", "incident"])
-    X_109 = eval_trilinear_point(model, A, B, C, 'a/(cos(B) - cos(C))', ID="X(109)", classes=["center", "incident"])
-    central_line(model, X_99, X_109, 99, 109, incident=True)
-    X_100 = eval_trilinear_point(model, A, B, C, '1/(b - c)', ID="X(100)", classes=["center", "incident"])
-    X_110 = eval_trilinear_point(model, A, B, C, 'csc(B - C)', ID="X(110)", classes=["center", "incident"])
-    central_line(model, X_100, X_110, 100, 110, incident=True)
+    X_99 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(2) - c**(2))', ID="X(99)", classes=["center"])
+    X_109 = eval_trilinear_point(model, A, B, C, 'a/(cos(B) - cos(C))', ID="X(109)", classes=["center"])
+    X_100 = eval_trilinear_point(model, A, B, C, '1/(b - c)', ID="X(100)", classes=["center"])
+    X_110 = eval_trilinear_point(model, A, B, C, 'csc(B - C)', ID="X(110)", classes=["center"])
+    central_line(model, X_99, X_109, 99, 109)
+    central_line(model, X_100, X_110, 100, 110)
+    X_643 = intersect_lines(model, X_99, X_109, X_100, X_110, ID="X(643)", classes=["selected", "target"])
     X_162 = eval_trilinear_point(model, A, B, C, '1/(sin(2*B) - sin(2*C))', ID="X(162)", classes=["center", "incident"])
     X_190 = eval_trilinear_point(model, A, B, C, 'b*c/(b - c)', ID="X(190)", classes=["center", "incident"])
     central_line(model, X_162, X_190, 162, 190, incident=True)

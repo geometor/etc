@@ -12,7 +12,7 @@ X(259) = ISOGONAL CONJUGATE OF X(174) — Code
    :alt: X(259) = ISOGONAL CONJUGATE OF X(174)
    :align: center
 
-   **X(259) = ISOGONAL CONJUGATE OF X(174)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(259) = ISOGONAL CONJUGATE OF X(174)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

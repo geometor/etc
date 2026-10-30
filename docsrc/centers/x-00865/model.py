@@ -14,8 +14,8 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_barycentric_point,
-    eval_trilinear_point,
     intersect_lines,
+    point_from_barycentrics,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -27,7 +27,7 @@ def construct_x_00865(
     """Construct X(865) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(512) on reference triangle ABC."""
     X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
-    X_351 = eval_trilinear_point(model, A, B, C, 'a*(b**(2)- c**(2))*(b**(2)+ c**(2)- 2*a**(2))', ID="X(351)", classes=["center"])
+    X_351 = point_from_barycentrics(model, A, B, C, -1.104798, 0.16783217, 1.9369658, ID="X(351)", classes=["center"])
     X_888 = eval_barycentric_point(model, A, B, C, 'a**(2)*(b**(2) - c**(2))*(a**(2)*b**(2) + a**(2)*c**(2) - 2*b**(2)*c**(2))', ID="X(888)", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
     central_line(model, X_351, X_888, 351, 888)

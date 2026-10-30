@@ -12,7 +12,7 @@ X(923) = POINT ALBIREO — Code
    :alt: X(923) = POINT ALBIREO
    :align: center
 
-   **X(923) = POINT ALBIREO** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(923) = POINT ALBIREO** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

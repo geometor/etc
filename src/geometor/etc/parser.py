@@ -5,7 +5,12 @@ from __future__ import annotations
 import re
 from typing import Any
 
-from .glossary import clean_html_entities, convert_inline_html_to_rst
+from .glossary import (
+    clean_html_entities,
+    convert_inline_html_to_rst,
+    formula_html_to_latex,
+    wrap_geom_refs,
+)
 
 
 def remove_tags(text: str) -> str:
@@ -20,89 +25,73 @@ def clean_text(text: str) -> str:
     return convert_inline_html_to_rst(text)
 
 
-def formula_html_to_latex(formula_html: str) -> str:
-    """Convert an HTML coordinate formula into clean LaTeX suitable for `:math:`."""
-    s = clean_html_entities(formula_html)
-    s = re.sub(r"<!--.*?-->", "", s, flags=re.DOTALL)
+def _format_where_clause(clause_html: str) -> str:
+    """Format a trailing `where ...` clause, wrapping algebraic definitions in `:math:`."""
+    s = clause_html.strip().lstrip(",").strip()
+    if not s:
+        return ""
 
-    # Convert <sup>...</sup> and <sub>...</sub> to LaTeX ^{...} and _{...}
-    s = re.sub(
-        r"<sup>(.*?)</sup>",
-        lambda m: f"^{{{remove_tags(m.group(1)).strip()}}}",
-        s,
-        flags=re.DOTALL | re.IGNORECASE,
-    )
-    s = re.sub(
-        r"<sub>(.*?)</sub>",
-        lambda m: f"_{{{remove_tags(m.group(1)).strip()}}}",
-        s,
-        flags=re.DOTALL | re.IGNORECASE,
-    )
+    # Match equations `LHS = RHS` inside the where-clause and convert algebraic ones to :math:
+    def _repl_eq(m: re.Match) -> str:
+        lhs = m.group(1).strip()
+        rhs = m.group(2).strip()
+        trail = ""
+        while rhs and rhs[-1] in ".,;":
+            trail = rhs[-1] + trail
+            rhs = rhs[:-1].rstrip()
+        plain_rhs = clean_html_entities(remove_tags(rhs)).strip()
+        eng_words = [
+            w
+            for w in re.findall(r"[A-Za-z]{4,}", plain_rhs)
+            if w.lower()
+            not in {
+                "sqrt",
+                "area",
+                "sin",
+                "cos",
+                "tan",
+                "cot",
+                "sec",
+                "csc",
+            }
+        ]
+        if eng_words or re.search(r"\bX[\(\[]\d+[\)\]]", plain_rhs):
+            return m.group(0)
+        ltx = formula_html_to_latex(f"{lhs} = {rhs}")
+        if not ltx:
+            return m.group(0)
+        return f":math:`{ltx}`{trail}"
 
-    s = remove_tags(s)
-    s = " ".join(s.split())
-
-    # Brace multi-character or negative caret exponents like a^10 or a^-2
-    s = re.sub(r"\^(-?\d{2,}|-\d+|\([0-9a-zA-Z+\-*/ ]+\))", r"^{\1}", s)
-
-    # Convert simple Sqrt[...] without nested brackets to \sqrt{...}
-    while re.search(r"\bSqrt\[([^\[\]]+)\]", s):
-        s = re.sub(r"\bSqrt\[([^\[\]]+)\]", r"\\sqrt{\1}", s)
-    while re.search(r"\bsqrt\(([^()]+)\)", s):
-        s = re.sub(r"\bsqrt\(([^()]+)\)", r"\\sqrt{\1}", s)
-
-    # Replace Unicode Greek and math symbols with LaTeX commands
-    replacements = {
-        "ω": r"\omega ",
-        "Ω": r"\Omega ",
-        "π": r"\pi ",
-        "α": r"\alpha ",
-        "β": r"\beta ",
-        "γ": r"\gamma ",
-        "θ": r"\theta ",
-        "λ": r"\lambda ",
-        "μ": r"\mu ",
-        "φ": r"\phi ",
-        "Φ": r"\Phi ",
-        "ψ": r"\psi ",
-        "Ψ": r"\Psi ",
-        "Δ": r"\Delta ",
-        "Γ": r"\Gamma ",
-        "Λ": r"\Lambda ",
-        "Σ": r"\Sigma ",
-        "∩": r"\cap ",
-        "∪": r"\cup ",
-        "≠": r"\neq ",
-        "≤": r"\leq ",
-        "≥": r"\geq ",
-        "±": r"\pm ",
-        "·": r"\cdot ",
-        "′": "'",
-        "″": "''",
-    }
-    for k, v in replacements.items():
-        s = s.replace(k, v)
-
-    # Standard trig functions
-    s = re.sub(
-        r"(?<!\\)\b(sin|cos|tan|cot|sec|csc)\b",
-        r"\\\1",
+    s_math = re.sub(
+        r"(?<![A-Za-z0-9_])([A-Za-z0-9_'′″<sub></sup>]+(?:\([^()]*\))?)\s*=\s*((?:[^,;()]|\([^()]*\))+?)(?=(?:\s*[,;]\s*|\s+and\s+|\s+for\s+|$))",
+        _repl_eq,
         s,
     )
-    return " ".join(s.split()).rstrip("\\").strip()
+    # Stash any `:math:` spans we just created before calling convert_inline_html_to_rst
+    stashed: list[str] = []
 
+    def _stash_m(m: re.Match) -> str:
+        idx = len(stashed)
+        stashed.append(m.group(0))
+        return f"@@WMATH{idx}@@"
+
+    s_stashed = re.sub(r":math:`[^`]+`", _stash_m, s_math)
+    rst = convert_inline_html_to_rst(s_stashed)
+    for idx, val in enumerate(stashed):
+        rst = rst.replace(f"@@WMATH{idx}@@", val)
+    return rst
 
 
 def format_coordinate_line(coord_html: str) -> str:
     """Format a single coordinate line (possibly with a trailing ', where ...' clause) into RST."""
-    raw = coord_html.strip().lstrip(":").strip()
+    raw = re.sub(r"^\s*[:=]\s*", "", clean_html_entities(coord_html).strip()).strip()
     if not raw:
         return ""
 
-    # Separate trailing parenthetical author/date attribution, e.g. "(Paul Yiu, February 20, 1999)"
+    # Separate trailing parenthetical author/date or cf. attribution
     attr_rst = ""
     attr_match = re.match(
-        r"^(.+?)\s*,?\s*(\([A-Z][A-Za-z0-9.\s,'-]+\d{4}[^()]*\))\s*$",
+        r"^(.+?)\s*,?\s*(\((?:[A-Z][A-Za-z0-9.\s,'/-]+(?:\d{4}|\d{1,2}/\d{1,2}/\d{2,4})|cf\.?\b)[^()]*\))\s*$",
         raw,
         flags=re.DOTALL,
     )
@@ -117,11 +106,11 @@ def format_coordinate_line(coord_html: str) -> str:
         flags=re.DOTALL | re.IGNORECASE,
     )
     if clause_match:
-        formula_part = clause_match.group(1).strip()
+        formula_part = clause_match.group(1).strip().rstrip(",;")
         clause_part = clause_match.group(2).strip()
-        clause_rst = f", {convert_inline_html_to_rst(clause_part.lstrip(',').strip())}"
+        clause_rst = f", {_format_where_clause(clause_part)}"
     else:
-        formula_part = raw
+        formula_part = raw.rstrip(",;")
         clause_rst = ""
 
     plain_formula = clean_html_entities(remove_tags(formula_part)).strip()
@@ -131,7 +120,8 @@ def format_coordinate_line(coord_html: str) -> str:
     english_words = [
         w
         for w in re.findall(r"[A-Za-z]{4,}", plain_formula)
-        if w.lower() not in {"sqrt", "area", "cos", "sin", "tan", "cot", "sec", "csc", "where"}
+        if w.lower()
+        not in {"sqrt", "area", "cos", "sin", "tan", "cot", "sec", "csc", "where"}
     ]
     has_x_ref = bool(re.search(r"\bX[\(\[]\d+[\)\]]", plain_formula))
 
@@ -142,6 +132,143 @@ def format_coordinate_line(coord_html: str) -> str:
     if not latex_str:
         return f"{convert_inline_html_to_rst(raw)}{attr_rst}"
     return f":math:`{latex_str}`{clause_rst}{attr_rst}"
+
+
+_COMB_TARGET_RE = re.compile(
+    r"(X[\(\[]\d+[\)\]]|\[[ABC]\]|(?<![A-Za-z0-9_])[IJONMHTP][abc](?![A-Za-z0-9_]))"
+)
+
+
+def _format_comb_coeff_html(coeff_html: str) -> str:
+    """Format an algebraic coefficient or divisor in a linear combination into `:math:`."""
+    c = coeff_html.strip()
+    if not c:
+        return ""
+    # Strip leading/trailing multiplication `*`
+    c = re.sub(r"^\*\s*|\s*\*$", "", c).strip()
+    if not c:
+        return ""
+    plain_c = clean_html_entities(remove_tags(c)).strip()
+    if not plain_c:
+        return ""
+    # If it contains English words (like "is the midpoint of"), fall back to inline RST
+    eng = [
+        w
+        for w in re.findall(r"[A-Za-z]{4,}", plain_c)
+        if w.lower()
+        not in {"sqrt", "area", "sin", "cos", "tan", "cot", "sec", "csc"}
+    ]
+    if eng:
+        return convert_inline_html_to_rst(c)
+    ltx = formula_html_to_latex(c)
+    if not ltx:
+        return convert_inline_html_to_rst(c)
+    return f":math:`{ltx}`"
+
+
+def format_combination_line(comb_html: str) -> str:
+    """Format a linear combination line (e.g., `X(6) = (r^2 + s^2 + 2rR)*X(2) - 2r^2*X(3)`) into RST."""
+    raw = clean_html_entities(comb_html).strip()
+    if not raw:
+        return ""
+
+    # Separate trailing parenthetical author/date attribution
+    attr_rst = ""
+    attr_match = re.match(
+        r"^(.+?)\s*,?\s*(\((?:[A-Z][A-Za-z0-9.\s,'/-]+(?:\d{4}|\d{1,2}/\d{1,2}/\d{2,4})|cf\.?\b)[^()]*\))\s*$",
+        raw,
+        flags=re.DOTALL,
+    )
+    if attr_match:
+        raw = attr_match.group(1).strip()
+        attr_rst = f" {convert_inline_html_to_rst(attr_match.group(2).strip())}"
+
+    # Separate trailing `, where ...` or `; ...` clause
+    clause_rst = ""
+    clause_match = re.match(
+        r"^(.+?)\s*(?:,\s*where\b|;\s*)(.*)$",
+        raw,
+        flags=re.DOTALL | re.IGNORECASE,
+    )
+    if clause_match:
+        sep_is_where = "where" in raw[clause_match.start(1) + len(clause_match.group(1)) : clause_match.start(2)].lower()
+        raw = clause_match.group(1).strip()
+        rest = clause_match.group(2).strip()
+        if sep_is_where:
+            clause_rst = f", {_format_where_clause('where ' + rest)}"
+        else:
+            clause_rst = f"; {convert_inline_html_to_rst(rest)}"
+
+    # Check if there is a trailing ratio like `, 2:1` or `, 1 : 2`
+    ratio_rst = ""
+    ratio_match = re.match(
+        r"^(.+?)\s*,\s*([0-9a-zA-Z_+\-*/^()<sub></sup>\s]+:[0-9a-zA-Z_+\-*/^()<sub></sup>\s]+)\s*$",
+        raw,
+        flags=re.DOTALL,
+    )
+    if ratio_match and "=" in ratio_match.group(1):
+        raw = ratio_match.group(1).strip()
+        r_ltx = formula_html_to_latex(ratio_match.group(2).strip())
+        if r_ltx:
+            ratio_rst = f", :math:`{r_ltx}`"
+
+    parts = _COMB_TARGET_RE.split(raw)
+    if len(parts) < 3 or "=" not in raw:
+        return f"{convert_inline_html_to_rst(raw)}{ratio_rst}{clause_rst}{attr_rst}"
+
+    out: list[str] = []
+    idx = 0
+    while idx < len(parts):
+        if idx % 2 == 1:
+            # Target point token: X(n), [A], Ja, etc.
+            tok = parts[idx]
+            if tok.startswith("[") and tok.endswith("]"):
+                v = tok[1:-1]
+                out.append(f":g:`{v} <{v}>`")
+            elif re.match(r"^[IJONMHTP][abc]$", tok):
+                out.append(f":g:`{tok[0]}_{{{tok[1]}}} <{tok[0]}_{tok[1]}>`")
+            else:
+                out.append(tok)
+            idx += 1
+            continue
+
+        sep = parts[idx]
+        if not sep.strip():
+            idx += 1
+            continue
+
+        # Check if sep starts with `/ divisor` for the preceding target point
+        div_m = re.match(
+            r"^\s*/\s*(\([^()]+\)|[A-Za-z0-9_'′″]+(?:\s*(?:<sup>[^<]+</sup>|<sub>[^<]+</sub>))*)(.*)$",
+            sep,
+            flags=re.DOTALL,
+        )
+        if div_m and idx > 0:
+            div_rst = _format_comb_coeff_html(div_m.group(1))
+            out.append(f" / {div_rst}")
+            sep = div_m.group(2)
+
+        if not sep.strip():
+            idx += 1
+            continue
+
+        # Now sep should be an operator (`=`, `+`, `-`, `,`) optionally followed by a coefficient for the next target point
+        op_m = re.match(r"^\s*([=+\-,])\s*(.*)$", sep, flags=re.DOTALL)
+        if op_m:
+            op, rem = op_m.group(1), op_m.group(2).strip()
+            out.append(f" {op} " if op != "," else ", ")
+            if rem:
+                coeff_rst = _format_comb_coeff_html(rem)
+                if coeff_rst:
+                    out.append(f"{coeff_rst} ")
+        else:
+            coeff_rst = _format_comb_coeff_html(sep)
+            if coeff_rst:
+                out.append(f"{coeff_rst} ")
+        idx += 1
+
+    res = " ".join("".join(out).split()).strip()
+    return f"{res}{ratio_rst}{clause_rst}{attr_rst}"
 
 
 def parse_h3(html_content: str) -> dict[str, Any] | None:
@@ -205,19 +332,30 @@ def parse_h3(html_content: str) -> dict[str, Any] | None:
 
 
 def _parse_header_block(header_html: str) -> dict[str, list[str]]:
-    """Parse coordinates (Trilinears, Barycentrics, Tripolars) and top <b>...</b> combinations."""
+    """Parse coordinates (Trilinears, Barycentrics, Tripolars), combinations, and header notes."""
     trilinears: list[str] = []
     barycentrics: list[str] = []
     tripolars: list[str] = []
     combinations: list[str] = []
+    extra_notes: list[str] = []
 
     # 1. Extract <b>...</b> blocks in the header (linear combinations / combos)
     def _extract_b(match: re.Match) -> str:
         b_inner = match.group(1)
         for line in re.split(r"<br\s*/?>", b_inner, flags=re.IGNORECASE):
-            cleaned = convert_inline_html_to_rst(line)
-            if cleaned:
-                combinations.append(cleaned)
+            raw_ln = line.strip()
+            if not raw_ln:
+                continue
+            plain_ln = clean_html_entities(remove_tags(raw_ln)).strip()
+            if not plain_ln:
+                continue
+            # Merge standalone parenthetical attribution onto previous combination
+            if combinations and re.match(r"^\([A-Z][^()]+\)\.?$", plain_ln):
+                combinations[-1] = f"{combinations[-1]} {convert_inline_html_to_rst(raw_ln)}"
+            else:
+                formatted_c = format_combination_line(raw_ln)
+                if formatted_c:
+                    combinations.append(formatted_c)
         return ""
 
     coord_zone = re.sub(
@@ -231,7 +369,6 @@ def _parse_header_block(header_html: str) -> dict[str, list[str]]:
 
     # 2. Split remaining coordinate zone on <br> and group continuation lines
     raw_lines = re.split(r"<br\s*/?>", coord_zone, flags=re.IGNORECASE)
-    current_type: str | None = None
     current_list: list[str] | None = None
 
     coord_prefix_re = re.compile(
@@ -243,7 +380,7 @@ def _parse_header_block(header_html: str) -> dict[str, list[str]]:
         ln_strip = raw_ln.strip()
         if not ln_strip:
             continue
-        plain_check = remove_tags(ln_strip).strip()
+        plain_check = " ".join(clean_html_entities(remove_tags(ln_strip)).split()).strip()
         if not plain_check:
             continue
 
@@ -252,25 +389,52 @@ def _parse_header_block(header_html: str) -> dict[str, list[str]]:
             ctype = m.group(1).lower()
             expr = m.group(2).strip()
             if ctype.startswith("trilinear"):
-                current_type = "trilinears"
                 current_list = trilinears
             elif ctype.startswith("barycentric"):
-                current_type = "barycentrics"
                 current_list = barycentrics
             else:
-                current_type = "tripolars"
                 current_list = tripolars
             current_list.append(expr)
+        elif re.match(r"^=\s*", plain_check) and current_list is not None:
+            # Alternate coordinate line starting with `=`
+            alt_expr = re.sub(r"^\s*=\s*", "", ln_strip).strip()
+            if alt_expr:
+                current_list.append(alt_expr)
+        elif (
+            re.match(r"^X[\(\[]\d+[\)\]]\s*=", plain_check)
+            and len(re.findall(r"X[\(\[]\d+[\)\]]", plain_check)) >= 2
+        ):
+            # Unbolded linear combination in the header
+            formatted_c = format_combination_line(ln_strip)
+            if formatted_c:
+                combinations.append(formatted_c)
+            current_list = None
+        elif re.match(
+            r"^(?:Let\s+|As\s+a\s+point\b|For\s+a\b|X[\(\[]\d+[\)\]]\s+is\b)",
+            plain_check,
+        ):
+            # Narrative note placed inside the header before the first <p>
+            cleaned_n = _strip_software_and_nav_refs(convert_inline_html_to_rst(ln_strip))
+            if cleaned_n:
+                extra_notes.append(cleaned_n)
+            current_list = None
         else:
-            # Continuation line (e.g., "= sec(A + pi/6) : ..." or "where f(a,b,c) = ...")
+            # Continuation line (e.g., "where f(a,b,c) = ...")
             if current_list:
-                current_list[-1] = f"{current_list[-1]}, {ln_strip}"
+                prev_c = current_list[-1].rstrip()
+                if prev_c.endswith((",", ";")) or re.search(
+                    r"\bwhere\s*$", prev_c, flags=re.IGNORECASE
+                ):
+                    current_list[-1] = f"{prev_c} {ln_strip}"
+                else:
+                    current_list[-1] = f"{prev_c}, {ln_strip}"
 
     return {
         "trilinears": [format_coordinate_line(c) for c in trilinears if c.strip()],
         "barycentrics": [format_coordinate_line(c) for c in barycentrics if c.strip()],
         "tripolars": [format_coordinate_line(c) for c in tripolars if c.strip()],
         "combinations": combinations,
+        "extra_notes": extra_notes,
     }
 
 
@@ -289,6 +453,12 @@ def _parse_incidence_block(raw_block: str, center_num: int) -> dict[str, Any]:
     )
     if len(lines_split) == 2:
         curves_prefix = lines_split[0].strip().rstrip(",")
+        curves_prefix = re.sub(
+            r"^\s*X[\(\[]\d+[\)\]]\s+lies(?:\s+on)?\s*$",
+            "",
+            curves_prefix,
+            flags=re.IGNORECASE,
+        ).strip()
         pairs_zone = lines_split[1].strip()
         for pm in re.finditer(r"\{?\s*(\d+)\s*,\s*(\d+)\s*\}?", pairs_zone):
             lines_pairs.append((int(pm.group(1)), int(pm.group(2))))
@@ -548,9 +718,18 @@ def parse_center(html_content: str) -> dict[str, Any] | None:
     def _extract_bold_p(match: re.Match) -> str:
         inner = match.group(1)
         for ln in re.split(r"<br\s*/?>", inner, flags=re.IGNORECASE):
-            c_ln = convert_inline_html_to_rst(ln)
-            if c_ln:
-                combinations.append(c_ln)
+            raw_ln = ln.strip()
+            if not raw_ln:
+                continue
+            plain_ln = clean_html_entities(remove_tags(raw_ln)).strip()
+            if not plain_ln:
+                continue
+            if combinations and re.match(r"^\([A-Z][^()]+\)\.?$", plain_ln):
+                combinations[-1] = f"{combinations[-1]} {convert_inline_html_to_rst(raw_ln)}"
+            else:
+                c_ln = format_combination_line(raw_ln)
+                if c_ln:
+                    combinations.append(c_ln)
         return ""
 
     body_html = re.sub(
@@ -575,7 +754,7 @@ def parse_center(html_content: str) -> dict[str, Any] | None:
     )
     raw_segments = re.split(r"</?p(?:\s+[^>]*)?>", body_html, flags=re.IGNORECASE)
 
-    raw_notes: list[str] = []
+    raw_notes: list[str] = list(header_data.get("extra_notes", []))
     incidences: list[dict[str, Any]] = []
     relations: list[str] = []
 
@@ -584,6 +763,10 @@ def parse_center(html_content: str) -> dict[str, Any] | None:
     )
     relation_re = re.compile(
         r"^\s*X[\(\[]\d+[\)\]]\s*=", re.DOTALL | re.IGNORECASE
+    )
+    coord_seg_re = re.compile(
+        r"^\s*(?:Trilinears?|Barycentrics?|Tripolars?)\b",
+        re.DOTALL | re.IGNORECASE,
     )
 
     for seg in raw_segments:
@@ -594,7 +777,14 @@ def parse_center(html_content: str) -> dict[str, Any] | None:
         if not plain_seg:
             continue
 
-        if lies_on_re.match(plain_seg):
+        if coord_seg_re.match(plain_seg):
+            extra_hdr = _parse_header_block(seg_s)
+            header_data["trilinears"].extend(extra_hdr["trilinears"])
+            header_data["barycentrics"].extend(extra_hdr["barycentrics"])
+            header_data["tripolars"].extend(extra_hdr["tripolars"])
+            combinations.extend(extra_hdr["combinations"])
+            raw_notes.extend(extra_hdr.get("extra_notes", []))
+        elif lies_on_re.match(plain_seg):
             incidences.append(_parse_incidence_block(seg_s, num))
         elif relation_re.match(plain_seg):
             relations.extend(_parse_relations_block(seg_s))

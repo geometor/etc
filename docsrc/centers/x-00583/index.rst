@@ -10,27 +10,24 @@ X(583) = ORTHOGONAL OF X(500)
 
 .. enunciation::
 
-   Barycentrics af(a,b,c) : bf(b,c,a) : cf(c,a,b)
+   :ref:`X(583) <X(583)>` = inverse-in-Brocard-circle of :ref:`X(584) <X(584)>`
 
 .. figure:: x-00583.svg
    :alt: X(583) = ORTHOGONAL OF X(500)
    :align: center
 
-   **X(583) = ORTHOGONAL OF X(500)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(583) = ORTHOGONAL OF X(500)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = a(a\ :sup:`2`\ b + a\ :sup:`2`\ c + 2abc - b\ :sup:`3` - c\ :sup:`3`) (M.Iliev, 5/13/07)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a(a^{2}b + a^{2}c + 2abc - b^{3} - c^{3})` (M.Iliev, 5/13/07)
+   | **Barycentrics:** :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
    | **Search Value (6, 9, 13):** :math:`-0.396642090479`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(583) <X(583)>` = s\*\ :ref:`X(3) <X(3)>` + (r - 3R)\*cot(ω)\*\ :ref:`X(6) <X(6)>`
-
-.. container:: note-item
-
-   :ref:`X(583) <X(583)>` lies.
+   * :ref:`X(583) <X(583)>` = :math:`s` :ref:`X(3) <X(3)>` + :math:`(r - 3R) \cot(\omega )` :ref:`X(6) <X(6)>`
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines

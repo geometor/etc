@@ -12,7 +12,7 @@ X(631) = 3/5*OG — Code
    :alt: X(631) = 3/5*OG
    :align: center
 
-   **X(631) = 3/5*OG** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(631) = 3/5*OG** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

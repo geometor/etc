@@ -17,12 +17,12 @@ X(476) = TIXIER POINT
    :alt: X(476) = TIXIER POINT
    :align: center
 
-   **X(476) = TIXIER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(476) = TIXIER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`1/[(1 + 2 \cos 2A) \sin(B - C)] : :`
-   | **Barycentrics:** :math:`1/{(b^2 - c^2)[(a^2 - b^2 - c^2)^2 - b^2c^2]} : :`
+   | **Barycentrics:** :math:`1/{(b^{2} - c^{2})[(a^{2} - b^{2} - c^{2})^{2} - b^{2}c^{2}]} : :`
    | **Search Value (6, 9, 13):** :math:`-0.026518972092`
 
 .. container:: note-item
@@ -58,11 +58,11 @@ Notes
 
 .. container:: note-item
 
-   Let La, Lb, Lc be the lines through A, B, C, respectively parallel to the Euler line. Let Ma, Mb, Mc be the reflections of BC, CA, AB in La, Lb, Lc, respectively. Let A' = Mb∩Mc, and define B' and C' cyclically. The triangle A'B'C' is inversely similar to, and 3 times the size of, ABC. The centroid of A'B'C' is :ref:`X(476) <X(476)>`; see :cite:`Hyacinthos #16741 <hyacinthos>`/16782, Sep 2008. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
+   Let :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` be the lines through :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, respectively parallel to the Euler line. Let :g:`M_{a} <M_a>`, :g:`M_{b} <M_b>`, :g:`M_{c} <M_c>` be the reflections of :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>` in :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>`, respectively. Let :g:`A' <A'>` = :g:`M_{b} <M_b>`\ ∩\ :g:`M_{c} <M_c>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The triangle :g:`A'B'C' << A' B' C' >>` is inversely similar to, and 3 times the size of, :g:`ABC << A B C >>`. The centroid of :g:`A'B'C' << A' B' C' >>` is :ref:`X(476) <X(476)>`; see :cite:`Hyacinthos #16741 <hyacinthos>`/16782, Sep 2008. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
 
 .. container:: note-item
 
-   Let La, Lb, Lc be the lines through A, B, C, respectively parallel to the orthic axis. Let Ma, Mb, Mc be the reflections of BC, CA, AB in La, Lb, Lc, respectively. Let A' = Mb∩Mc, and define B' and C' cyclically. The triangle A'B'C' is inversely similar to, and 3 times the size of, ABC. The centroid of A'B'C' is :ref:`X(476) <X(476)>`; see :cite:`Hyacinthos #16741 <hyacinthos>`/16782, Sep 2008. (Randy Hutson, November 18, 2015)
+   Let :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` be the lines through :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, respectively parallel to the orthic axis. Let :g:`M_{a} <M_a>`, :g:`M_{b} <M_b>`, :g:`M_{c} <M_c>` be the reflections of :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>` in :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>`, respectively. Let :g:`A' <A'>` = :g:`M_{b} <M_b>`\ ∩\ :g:`M_{c} <M_c>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The triangle :g:`A'B'C' << A' B' C' >>` is inversely similar to, and 3 times the size of, :g:`ABC << A B C >>`. The centroid of :g:`A'B'C' << A' B' C' >>` is :ref:`X(476) <X(476)>`; see :cite:`Hyacinthos #16741 <hyacinthos>`/16782, Sep 2008. (Randy Hutson, November 18, 2015)
 
 .. container:: note-item
 

@@ -11,13 +11,13 @@ X(190) = YFF PARABOLIC POINT
 
 .. enunciation::
 
-   In unpublished notes, Yff has studied the parabola tangent to sidelines BC, CA, AB and having focus :ref:`X(101) <X(101)>`. If A',B',C' are the respective points of tangency, then the lines AA', BB', CC' concur in :ref:`X(190) <X(190)>`.
+   In unpublished notes, Yff has studied the parabola tangent to sidelines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>` and having focus :ref:`X(101) <X(101)>`. If :g:`A' <A'>`,\ :g:`B' <B'>`,\ :g:`C' <C'>` are the respective points of tangency, then the lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(190) <X(190)>`.
 
 .. figure:: x-00190.svg
    :alt: X(190) = YFF PARABOLIC POINT
    :align: center
 
-   **X(190) = YFF PARABOLIC POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(190) = YFF PARABOLIC POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -57,10 +57,10 @@ X(190) = YFF PARABOLIC POINT
    * :ref:`X(190) <X(190)>` = trilinear product of PU(58)
    * :ref:`X(190) <X(190)>` = Steiner-circumellipse-:ref:`X(1) <X(1)>`-antipode of X(3227)
    * :ref:`X(190) <X(190)>` = Steiner-circumellipse-:ref:`X(6) <X(6)>`-antipode of X(3226)
-   * :ref:`X(190) <X(190)>` = perspector of ABC and :term:`tangential triangle <tangential-triangle>` (wrt :term:`excentral triangle <excentral-triangle>`) of hyperbola passing through :ref:`X(1) <X(1)>`, :ref:`X(9) <X(9)>` and the excenters (the Jerabek hyperbola of the excentral triangle)
+   * :ref:`X(190) <X(190)>` = perspector of :g:`ABC << A B C >>` and :term:`tangential triangle <tangential-triangle>` (wrt :term:`excentral triangle <excentral-triangle>`) of hyperbola passing through :ref:`X(1) <X(1)>`, :ref:`X(9) <X(9)>` and the excenters (the Jerabek hyperbola of the excentral triangle)
    * :ref:`X(190) <X(190)>` = :ref:`X(6) <X(6)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(513) <X(513)>`
-   * :ref:`X(190) <X(190)>` = perspector of ABC and vertex-triangle of Gemini triangles 5 and 6
-   * :ref:`X(190) <X(190)>` = ABC-to-Gemini-triangle-19 parallelogic center
+   * :ref:`X(190) <X(190)>` = perspector of :g:`ABC << A B C >>` and vertex-triangle of Gemini triangles 5 and 6
+   * :ref:`X(190) <X(190)>` = :g:`ABC << A B C >>`-to-Gemini-triangle-19 parallelogic center
    * :ref:`X(190) <X(190)>` = areal center of :term:`cevian triangles <cevian-triangle>` of PU(24)
 
 Notes
@@ -72,15 +72,15 @@ Notes
 
 .. container:: note-item
 
-   Let Ha be the hyperbola passing through A, and with foci at B and C. This is called the A-Soddy hyperbola in (:person:`Paul Yiu <paul-yiu>`, *Introduction to the Geometry of the Triangle,* 2002; 12.4 The Soddy hyperbolas, p. 143). Let La be the polar of :ref:`X(8) <X(8)>` with respect to Ha. Define Lb and Lc cyclically. Let A' = Lb∩Lc, B' = Lc∩La, C' = La∩Lb. The triangle A'B'C' is perspective to ABC, and the perspector is :ref:`X(190) <X(190)>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
+   Let :g:`H_{a} <H_a>` be the hyperbola passing through :g:`A <A>`, and with foci at :g:`B <B>` and C. This is called the A-Soddy hyperbola in (:person:`Paul Yiu <paul-yiu>`, *Introduction to the Geometry of the Triangle,* 2002; 12.4 The Soddy hyperbolas, p. 143). Let :g:`L_{a} <L_a>` be the polar of :ref:`X(8) <X(8)>` with respect to :g:`H_{a} <H_a>`. Define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, :g:`B' <B'>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C' <C'>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. The triangle :g:`A'B'C' << A' B' C' >>` is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X(190) <X(190)>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
 
 .. container:: note-item
 
-   Let Ia be the reflection of :ref:`X(1) <X(1)>` in the perpendicular bisector of BC, and define Ib and Ic cyclically. :ref:`X(190) <X(190)>` = :ref:`X(238) <X(238)>` of IaIbIc. (Randy Hutson, December 26, 2015)
+   Let :g:`I_{a} <I_a>` be the reflection of :ref:`X(1) <X(1)>` in the perpendicular bisector of :g:`BC <[ B C ]>`, and define :g:`I_{b} <I_b>` and :g:`I_{c} <I_c>` cyclically. :ref:`X(190) <X(190)>` = :ref:`X(238) <X(238)>` of :g:`I_{a}I_{b}I_{c} << I_a I_b I_c >>`. (Randy Hutson, December 26, 2015)
 
 .. container:: note-item
 
-   Let A\ :sub:`5`\ B\ :sub:`5`\ C\ :sub:`5` and A\ :sub:`6`\ B\ :sub:`6`\ C\ :sub:`6` be Gemini triangles 5 and 6, resp. Let L\ :sub:`A` be the tangent at A to conic {A,B\ :sub:`5`,C\ :sub:`5`,B\ :sub:`6`,C\ :sub:`6`}}, and define L\ :sub:`B` and L\ :sub:`C` cyclically. Let A' = L\ :sub:`B`\ ∩L\ :sub:`C`, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(190) <X(190)>`. (Randy Hutson, January 15, 2019)
+   Let :g:`A_{5}B_{5}C_{5} << A_5 B_5 C_5 >>` and :g:`A_{6}B_{6}C_{6} << A_6 B_6 C_6 >>` be Gemini triangles 5 and 6, resp. Let :g:`L_{A} <L_A>` be the tangent at :g:`A <A>` to conic {A,\ :g:`B_{5} <B_5>`,\ :g:`C_{5} <C_5>`,\ :g:`B_{6} <B_6>`,\ :g:`C_{6} <C_6>`}}, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A' <A'>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(190) <X(190)>`. (Randy Hutson, January 15, 2019)
 
 .. toctree::
    :hidden:

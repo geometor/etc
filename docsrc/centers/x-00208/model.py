@@ -12,6 +12,7 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    intersect_lines,
     orthocenter_of,
     promote_point_to_top,
 )
@@ -22,13 +23,13 @@ def construct_x_00208(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(208) = X(4)-CEVA CONJUGATE OF X(34) on reference triangle ABC."""
-    X_208 = eval_trilinear_point(model, A, B, C, '(1 - sec(A))*(cos(B) + cos(C) - cos(A) - 1)', ID="X(208)", classes=["selected", "target"])
-    X_25 = eval_trilinear_point(model, A, B, C, 'sin(A)*tan(A)', ID="X(25)", classes=["center", "incident"])
-    X_34 = eval_trilinear_point(model, A, B, C, '1 - sec(A)', ID="X(34)", classes=["center", "incident"])
-    central_line(model, X_25, X_34, 25, 34, incident=True)
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
-    X_57 = eval_trilinear_point(model, A, B, C, '1/(b + c - a)', ID="X(57)", classes=["center", "incident"])
-    central_line(model, X_4, X_57, 4, 57, incident=True)
+    X_25 = eval_trilinear_point(model, A, B, C, 'sin(A)*tan(A)', ID="X(25)", classes=["center"])
+    X_34 = eval_trilinear_point(model, A, B, C, '1 - sec(A)', ID="X(34)", classes=["center"])
+    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center"])
+    X_57 = eval_trilinear_point(model, A, B, C, '1/(b + c - a)', ID="X(57)", classes=["center"])
+    central_line(model, X_25, X_34, 25, 34)
+    central_line(model, X_4, X_57, 4, 57)
+    X_208 = intersect_lines(model, X_25, X_34, X_4, X_57, ID="X(208)", classes=["selected", "target"])
     X_33 = eval_trilinear_point(model, A, B, C, '1 + sec(A)', ID="X(33)", classes=["center", "incident"])
     X_64 = eval_trilinear_point(model, A, B, C, '1/(cos(A) - cos(B)*cos(C))', ID="X(64)", classes=["center", "incident"])
     central_line(model, X_33, X_64, 33, 64, incident=True)

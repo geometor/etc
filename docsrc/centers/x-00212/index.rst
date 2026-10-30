@@ -16,16 +16,19 @@ X(212) = X(9)-CEVA CONJUGATE OF X(41)
    :alt: X(212) = X(9)-CEVA CONJUGATE OF X(41)
    :align: center
 
-   **X(212) = X(9)-CEVA CONJUGATE OF X(41)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(212) = X(9)-CEVA CONJUGATE OF X(41)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(\cos A)(1 + \cos A) : (\cos B)(1 + \cos B) : (\cos C)(1 + \cos C), = (\cos A)\cos^{2}(A/2) : (\cos B)\cos^{2}(B/2) : (\cos C)\cos^{2}(C/2), = a^{2}(b + c - a)(b^{2} + c^{2} - a^{2}) : b^{2}(c + a - b)(c^{2} + a^{2} - b^{2}) : c^{2}(a + b - c)(a^{2} + b^{2} - c^{2})`
+   | **Trilinears:** :math:`(\cos A)(1 + \cos A) : (\cos B)(1 + \cos B) : (\cos C)(1 + \cos C)`
+   | **Barycentrics:** :math:`(\sin 2A)(1 + \cos A) : (\sin 2B)(1 + \cos B) : (\sin 2C)(1 + \cos C)`
    | **Search Value (6, 9, 13):** :math:`4.122746567678`
 
-.. container:: note-item
+.. collapse:: Alternate Coordinates
+   :badge: 2 forms
 
-   :ref:`X(212) <X(212)>` lies.
+   * **Trilinears:** :math:`(\cos A)\cos^{2}(A/2) : (\cos B)\cos^{2}(B/2) : (\cos C)\cos^{2}(C/2)`
+   * **Trilinears:** :math:`a^{2}(b + c - a)(b^{2} + c^{2} - a^{2}) : b^{2}(c + a - b)(c^{2} + a^{2} - b^{2}) : c^{2}(a + b - c)(a^{2} + b^{2} - c^{2})`
 
 .. collapse:: Incident Central Lines
    :badge: 16 lines
@@ -45,13 +48,6 @@ X(212) = X(9)-CEVA CONJUGATE OF X(41)
    * :ref:`X(212) <X(212)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`3 <X(3)>`, :ref:`219 <X(219)>`), (:ref:`9 <X(9)>`, :ref:`78 <X(78)>`)
    * :ref:`X(212) <X(212)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`4 <X(4)>`, :ref:`278 <X(278)>`), (:ref:`34 <X(34)>`, :ref:`57 <X(57)>`)
    * :ref:`X(212) <X(212)>` = :ref:`X(212) <X(212)>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X(184) <X(184)>`
-
-Notes
------
-
-.. container:: note-item
-
-   Barycentrics (sin 2A)(1 + cos A) : (sin 2B)(1 + cos B) : (sin 2C)(1 + cos C)
 
 .. toctree::
    :hidden:

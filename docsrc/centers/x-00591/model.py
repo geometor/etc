@@ -13,6 +13,8 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    intersect_lines,
+    point_from_barycentrics,
     promote_point_to_top,
     symmedian_point_of,
 )
@@ -23,13 +25,13 @@ def construct_x_00591(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(591) = 1st VAN LAMOEN PERPENDICULAR BISECTORS POINT on reference triangle ABC."""
-    X_591 = eval_trilinear_point(model, A, B, C, 'b*c*(b**(2) + c**(2) - 2*a**(2) + 4*area*(A*B*C))', ID="X(591)", classes=["selected", "target"])
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
-    central_line(model, X_2, X_6, 2, 6, incident=True)
-    X_372 = eval_trilinear_point(model, A, B, C, 'cos(A + pi /4)', ID="X(372)", classes=["center", "incident"])
-    X_754 = eval_trilinear_point(model, A, B, C, 'a**(-1)*(b**(4)+ c**(4)) - a**(3)*(b**(0)+ c**(0))', ID="X(754)", classes=["center", "incident"])
-    central_line(model, X_372, X_754, 372, 754, incident=True)
+    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
+    X_372 = eval_trilinear_point(model, A, B, C, 'cos(A + pi /4)', ID="X(372)", classes=["center"])
+    X_754 = point_from_barycentrics(model, A, B, C, -0.64313892, -0.11406714, 0.75720606, ID="X(754)", classes=["center"])
+    central_line(model, X_2, X_6, 2, 6)
+    central_line(model, X_372, X_754, 372, 754)
+    X_591 = intersect_lines(model, X_2, X_6, X_372, X_754, ID="X(591)", classes=["selected", "target"])
     return promote_point_to_top(model, X_591)
 
 

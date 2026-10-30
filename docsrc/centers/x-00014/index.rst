@@ -11,18 +11,26 @@ X(14) = 2nd ISOGONIC CENTER
 
 .. enunciation::
 
-   Let NaNbNc, Na'Nb'Nc' be the outer and inner Napoleon triangles, resp. Let A' be the :term:`isogonal conjugate <isogonal-conjugate>` of Na, wrt Na'Nb'Nc', and define B' and C' cyclically. The lines Na'A', Nb'B', Nc'C' concur in :ref:`X(14) <X(14)>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2015)
+   Construct the equilateral triangle :g:`BA'C << B A' C >>` having base :g:`BC <[ B C ]>` and vertex :g:`A' <A'>` on the positive side of :g:`BC <[ B C ]>`; similarly construct equilateral triangles :g:`CB'A << C B' A >>` and :g:`AC'B << A C' B >>` based on the other two sides. The lines :g:`AA' <[ A A' ]>`,\ :g:`BB' <[ B B' ]>`,\ :g:`CC' <[ C C' ]>` concur in :ref:`X(14) <X(14)>`. The :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(14) <X(14)>` is equilateral.
 
 .. figure:: x-00014.svg
    :alt: X(14) = 2nd ISOGONIC CENTER
    :align: center
 
-   **X(14) = 2nd ISOGONIC CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(14) = 2nd ISOGONIC CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\csc(A - \pi /3) : \csc(B - \pi /3) : \csc(C - \pi /3), = \sec(A + \pi /6) : \sec(B + \pi /6) : \sec(C + \pi /6)`
+   | **Trilinears:** :math:`\csc(A - \pi /3) : \csc(B - \pi /3) : \csc(C - \pi /3)`
+   | **Barycentrics:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a^{4} - 2(b^{2} - c^{2})^{2} + a^{2}(b^{2} + c^{2} - 4*`\ :math:`\sqrt{3}`\ \*Area(:g:`ABC << A B C >>`))
+   | **Tripolars:** :math:`1/(a^{4}+a^{2} b^{2}-2 b^{4}+a^{2} c^{2}+4 b^{2} c^{2}-2 c^{4}-2 \sqrt{3} a^{2} S) : :`
    | **Search Value (6, 9, 13):** :math:`4.373431772013`
+
+.. collapse:: Alternate Coordinates
+   :badge: 2 forms
+
+   * **Trilinears:** :math:`\sec(A + \pi /6) : \sec(B + \pi /6) : \sec(C + \pi /6)`
+   * **Barycentrics:** :math:`(S_{A} - \sqrt{3} S) (S_{B} + S_{C}) + 4 S_{B} S_{C} : :`
 
 .. container:: note-item
 
@@ -37,9 +45,9 @@ X(14) = 2nd ISOGONIC CENTER
 .. collapse:: Functional Relations
    :badge: 32 relations
 
-   * :ref:`X(14) <X(14)>` = 3\ :sup:`1/2`\ (r\ :sup:`2` + 2rR + s\ :sup:`2`)\*\ :ref:`X(1) <X(1)>` - 6r(3\ :sup:`1/2`\ R + 2s)\*\ :ref:`X(2) <X(2)>` - 2r(3\ :sup:`1/2`\ r - 3s)\*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
+   * :ref:`X(14) <X(14)>` = :math:`3^{1/2}(r^{2} + 2rR + s^{2})`\ \*\ :ref:`X(1) <X(1)>` - 6\ :math:`r(3^{1/2}`\ R + 2s)\*\ :ref:`X(2) <X(2)>` - 2\ :math:`r(3^{1/2}`\ r - 3s)\*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
    * :ref:`X(14) <X(14)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`13 <X(13)>`, :ref:`115 <X(115)>`), (:ref:`16 <X(16)>`, :ref:`395 <X(395)>`), (:ref:`99 <X(99)>`, :ref:`618 <X(618)>`), (:ref:`299 <X(299)>`, :ref:`624 <X(624)>`), (:ref:`617 <X(617)>`, :ref:`619 <X(619)>`)
-   * :ref:`X(14) <X(14)>` = isogonal conjugate of :ref:`X(16) <X(16)>`
+   * :ref:`X(14) <X(14)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(16) <X(16)>`
    * :ref:`X(14) <X(14)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(299) <X(299)>`
    * :ref:`X(14) <X(14)>` = :term:`complement <complement>` of :ref:`X(617) <X(617)>`
    * :ref:`X(14) <X(14)>` = :term:`anticomplement <anticomplement>` of :ref:`X(619) <X(619)>`
@@ -55,15 +63,15 @@ X(14) = 2nd ISOGONIC CENTER
    * :ref:`X(14) <X(14)>` = :ref:`X(16) <X(16)>`-of-4th-Brocard triangle
    * :ref:`X(14) <X(14)>` = :ref:`X(16) <X(16)>`-of-orthocentroidal-triangle
    * :ref:`X(14) <X(14)>` = orthocorrespondent of :ref:`X(14) <X(14)>`
-   * :ref:`X(14) <X(14)>` = homothetic center of inner Napoleon triangle and :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(14) <X(14)>`
+   * :ref:`X(14) <X(14)>` = homothetic center of inner Napoleon triangle and antipedal triangle of :ref:`X(14) <X(14)>`
    * :ref:`X(14) <X(14)>` = inner-Napoleon-isogonal conjugate of :ref:`X(3) <X(3)>`
    * :ref:`X(14) <X(14)>` = outer-Napoleon-to-inner-Napoleon :term:`similarity image <similarity-image>` of :ref:`X(16) <X(16)>`
    * :ref:`X(14) <X(14)>` = inner-Napoleon-to-outer-Napoleon similarity image of :ref:`X(13) <X(13)>`
    * :ref:`X(14) <X(14)>` = orthocenter of :ref:`X(13) <X(13)>`\ \ :ref:`X(98) <X(98)>`\ X(2394)
    * :ref:`X(14) <X(14)>` = :ref:`X(16) <X(16)>`-of-pedal-triangle of :ref:`X(14) <X(14)>`
    * :ref:`X(14) <X(14)>` = {:ref:`X(265) <X(265)>`,X(1989)}-harmonic Conjugate of :ref:`X(13) <X(13)>`
-   * :ref:`X(14) <X(14)>` = homothetic center of (equilateral) antipedal triangle of :ref:`X(14) <X(14)>` and triangle formed by circumcenters of BC\ :ref:`X(14) <X(14)>`, CA\ :ref:`X(14) <X(14)>`, AB\ :ref:`X(14) <X(14)>`
-   * :ref:`X(14) <X(14)>` = homothetic center of triangle formed by circumcenters of BC\ :ref:`X(13) <X(13)>`, CA\ :ref:`X(13) <X(13)>`, AB\ :ref:`X(13) <X(13)>` and triangle formed by nine-point centers of BC\ :ref:`X(14) <X(14)>`, CA\ :ref:`X(14) <X(14)>`, AB\ :ref:`X(14) <X(14)>`
+   * :ref:`X(14) <X(14)>` = homothetic center of (equilateral) antipedal triangle of :ref:`X(14) <X(14)>` and triangle formed by circumcenters of :g:`BC <[ B C ]>`\ :ref:`X(14) <X(14)>`, :g:`CA <[ C A ]>`\ :ref:`X(14) <X(14)>`, :g:`AB <[ A B ]>`\ :ref:`X(14) <X(14)>`
+   * :ref:`X(14) <X(14)>` = homothetic center of triangle formed by circumcenters of :g:`BC <[ B C ]>`\ :ref:`X(13) <X(13)>`, :g:`CA <[ C A ]>`\ :ref:`X(13) <X(13)>`, :g:`AB <[ A B ]>`\ :ref:`X(13) <X(13)>` and triangle formed by nine-point centers of :g:`BC <[ B C ]>`\ :ref:`X(14) <X(14)>`, :g:`CA <[ C A ]>`\ :ref:`X(14) <X(14)>`, :g:`AB <[ A B ]>`\ :ref:`X(14) <X(14)>`
    * :ref:`X(14) <X(14)>` = Cundy-Parry Phi transform of :ref:`X(18) <X(18)>`
    * :ref:`X(14) <X(14)>` = Cundy-Parry Psi transform of :ref:`X(62) <X(62)>`
    * :ref:`X(14) <X(14)>` = Kosnita(:ref:`X(14) <X(14)>`,\ :ref:`X(1) <X(1)>`) point
@@ -75,31 +83,25 @@ Notes
 
 .. container:: note-item
 
-   Barycentrics f(a,b,c) : f(b,c,a) : f(c,a,b), where
-
-      * f(a,b,c) = a\ :sup:`4` - 2(b\ :sup:`2` - c\ :sup:`2`)\ :sup:`2` + a\ :sup:`2`\ (b\ :sup:`2` + c\ :sup:`2` - 4\*sqrt(3)\*Area(ABC))
-      * Barycentrics (SA - Sqrt[3] S) (SB + SC) + 4 SB SC : :
-      * Tripolars 1/(a^4+a^2 b^2-2 b^4+a^2 c^2+4 b^2 c^2-2 c^4-2 Sqrt[3] a^2 S) : :
-
-   Construct the equilateral triangle BA'C having base BC and vertex A' on the positive side of BC; similarly construct equilateral triangles CB'A and AC'B based on the other two sides. The lines AA',BB',CC' concur in :ref:`X(14) <X(14)>`. The antipedal triangle of :ref:`X(14) <X(14)>` is equilateral.
+   Let :g:`N_{a}N_{b}N_{c} << N_a N_b N_c >>`, :g:`N_{a}'N_{b}'N_{c}' << N_a' N_b' N_c' >>` be the outer and inner Napoleon triangles, resp. Let :g:`A' <A'>` be the isogonal conjugate of :g:`N_{a} <N_a>`, wrt :g:`N_{a}'N_{b}'N_{c}' << N_a' N_b' N_c' >>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`N_{a}'A' <[ N_a' A' ]>`, :g:`N_{b}'B' <[ N_b' B' ]>`, :g:`N_{c}'C' <[ N_c' C' ]>` concur in :ref:`X(14) <X(14)>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2015)
 
 .. container:: note-item
 
-   Let A'B'C' be the outer Napoleon triangle and A″B″C″ the inner Napoleon triangle. Let A\* be the isogonal conjugate, wrt A″B″C″, of A', and define B\* and C\* cyclically. The lines A″A\*, B″B\*, C″C\* concur in :ref:`X(14) <X(14)>`. (Randy Hutson, December 2, 2017)
+   Let :g:`A'B'C' << A' B' C' >>` be the outer Napoleon triangle and :g:`A″B″C″ << A″ B″ C″ >>` the inner Napoleon triangle. Let :g:`A* <A*>` be the isogonal conjugate, wrt :g:`A″B″C″ << A″ B″ C″ >>`, of :g:`A' <A'>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`A″A* <[ A″ A* ]>`, :g:`B″B* <[ B″ B* ]>`, :g:`C″C* <[ C″ C* ]>` concur in :ref:`X(14) <X(14)>`. (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 
-   The line :ref:`X(14) <X(14)>`\ \ :ref:`X(16) <X(16)>` is parallel to the Euler line, and the distance between the two lines is (SB - SC)(SC - SA)(SA - SB)/\|(cot(ω) - 3\ :sup:`1/2`)\|((E - 8F)S\ :sup:`2`)\ :sup:`1/2`. (:person:`Kiminari Shinagawa <kiminari-shinagawa>`, February 20, 2018)
+   The line :ref:`X(14) <X(14)>`\ \ :ref:`X(16) <X(16)>` is parallel to the Euler line, and the distance between the two lines is :math:`(S_{B} - S_{C})(S_{C} - S_{A})(S_{A} - S_{B})/|(\cot(\omega ) - 3^{1/2})|((E - 8F)S^{2})^{1/2}`. (:person:`Kiminari Shinagawa <kiminari-shinagawa>`, February 20, 2018)
 
 .. container:: note-item
 
-   Let O be a point (not necessarily :ref:`X(3) <X(3)>`), let H=ABCDEF be a regular hexagon with center O, and let P be a point. Define 6 triangles T1=ABP, T2=BCP, ... , T6=FAP.
+   Let :g:`O <O>` be a point (not necessarily :ref:`X(3) <X(3)>`), let H=ABCDEF be a regular hexagon with center O, and let :g:`P <P>` be a point. Define 6 triangles :g:`T_{1} <T_1>`\ =\ :g:`ABP << A B P >>`, :g:`T_{2} <T_2>`\ =\ :g:`BCP << B C P >>`, ... , :g:`T_{6} <T_6>`\ =FAP.
 
-   **Claim 1:** The points :ref:`X(14) <X(14)>`-of-Ti lie on OP, i=1...6.
+   **Claim 1:** The points :ref:`X(14) <X(14)>`-of-Ti lie on :g:`OP <[ O P ]>`, i=1...6.
 
-   Next, define 6 reflection triangles T1' = reflection of T1 in AB, T2' = reflection of T2 in BC, ..., T6' = reflection of T6 in FA.
+   Next, define 6 reflection triangles :g:`T_{1}' <T_1'>` = reflection of :g:`T_{1} <T_1>` in :g:`AB <[ A B ]>`, :g:`T_{2}' <T_2'>` = reflection of :g:`T_{2} <T_2>` in :g:`BC <[ B C ]>`, ..., :g:`T_{6}' <T_6'>` = reflection of :g:`T_{6} <T_6>` in :g:`FA <[ F A ]>`.
 
-   **Claim 2:** If P is interior to H, the points :ref:`X(14) <X(14)>`-of-Ti' lie on a rectangular hyperbola centered at O: `Figure <https://user-images.githubusercontent.com/16231062/145713404-c883ed31-1c82-4658-a4c8-b5d83c429087.png>`__. (:person:`Dan Reznik <dan-reznik>`, December 10, 2021)
+   **Claim 2:** If P is interior to :g:`H <H>`, the points :ref:`X(14) <X(14)>`-of-Ti' lie on a rectangular hyperbola centered at :g:`O <O>`: `Figure <https://user-images.githubusercontent.com/16231062/145713404-c883ed31-1c82-4658-a4c8-b5d83c429087.png>`__. (:person:`Dan Reznik <dan-reznik>`, December 10, 2021)
 
 .. container:: note-item
 

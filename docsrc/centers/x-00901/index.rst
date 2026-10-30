@@ -10,13 +10,13 @@ X(901) = ISOGONAL CONJUGATE OF X(900)
 
 .. enunciation::
 
-   Let L\ :sub:`A` be the line of reflection of line :ref:`X(1) <X(1)>`\ \ :ref:`X(5) <X(5)>` in line BC, and define L\ :sub:`B` and L\ :sub:`C` cyclically. Let A' = L\ :sub:`B`\ ∩L\ :sub:`C`, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(901) <X(901)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   Let :g:`L_{A} <L_A>` be the line of reflection of line :ref:`X(1) <X(1)>`\ \ :ref:`X(5) <X(5)>` in line :g:`BC <[ B C ]>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A' <A'>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(901) <X(901)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. figure:: x-00901.svg
    :alt: X(901) = ISOGONAL CONJUGATE OF X(900)
    :align: center
 
-   **X(901) = ISOGONAL CONJUGATE OF X(900)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(901) = ISOGONAL CONJUGATE OF X(900)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -63,11 +63,11 @@ Notes
 
 .. container:: note-item
 
-   Let La, Lb, Lc be the lines through A, B, C, resp. parallel to the antiorthic axis. Let Ma, Mb, Mc be the reflections of BC, CA, AB in La, Lb, Lc, resp. Let A' = Mb∩Mc, and define B' and C' cyclically. Triangle A'B'C' is inversely similar to, and 3 times the size of, ABC. The centroid of A'B'C' is :ref:`X(901) <X(901)>`; see :cite:`Hyacinthos #16741 <hyacinthos>`/16782, Sep 2008. (Randy Hutson, March 25, 2016)
+   Let :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` be the lines through :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, resp. parallel to the antiorthic axis. Let :g:`M_{a} <M_a>`, :g:`M_{b} <M_b>`, :g:`M_{c} <M_c>` be the reflections of :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>` in :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>`, resp. Let :g:`A' <A'>` = :g:`M_{b} <M_b>`\ ∩\ :g:`M_{c} <M_c>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Triangle :g:`A'B'C' << A' B' C' >>` is inversely similar to, and 3 times the size of, :g:`ABC << A B C >>`. The centroid of :g:`A'B'C' << A' B' C' >>` is :ref:`X(901) <X(901)>`; see :cite:`Hyacinthos #16741 <hyacinthos>`/16782, Sep 2008. (Randy Hutson, March 25, 2016)
 
 .. container:: note-item
 
-   Let A', B', C' be the intersections of the Nagel line and lines BC, CA, AB, resp. The circumcircles of AB'C', BC'A', CA'B' concur in :ref:`X(901) <X(901)>`. (Randy Hutson, March 25, 2016)
+   Let :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>` be the intersections of the Nagel line and lines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, resp. The circumcircles of :g:`AB'C' << A B' C' >>`, :g:`BC'A' << B C' A' >>`, :g:`CA'B' << C A' B' >>` concur in :ref:`X(901) <X(901)>`. (Randy Hutson, March 25, 2016)
 
 .. toctree::
    :hidden:

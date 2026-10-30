@@ -16,17 +16,13 @@ X(913) = POINT AGENA
    :alt: X(913) = POINT AGENA
    :align: center
 
-   **X(913) = POINT AGENA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(913) = POINT AGENA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = a/[(wb + vc)/a - v - w], u : v : w = :ref:`X(4) <X(4)>`
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
-   | **Search Value (6, 9, 13):** :math:`-46.970810800139`
-
-.. container:: note-item
-
-   :ref:`X(913) <X(913)>` lies.
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a/[(wb + vc)/a - v - w]`,\ :math:`u : v : w` = :ref:`X(4) <X(4)>`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
+   | **Search Value (6, 9, 13):** :math:`-46.970810800138`
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines

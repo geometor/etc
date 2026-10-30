@@ -24,7 +24,7 @@ def construct_x_00137(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(137) = X(110)-OF-ORTHIC-TRIANGLE on reference triangle ABC."""
-    X_128 = eval_trilinear_point(model, A, B, C, '(sec(A))*(cos(2*B) + cos(2*C))*(1 + 2*cos(2*A))*(cos(2*A) + 2*cos(2*B)*cos(2*C))', ID="X(128)", classes=["center"])
+    X_128 = point_from_barycentrics(model, A, B, C, 0.43052912, -0.045594157, 0.61506504, ID="X(128)", classes=["center"])
     X_5 = nine_point_center_of(model, A, B, C, ID="X(5)", classes=["center"])
     X_137 = reflection_in_point(model, X_128, X_5, ID="X(137)", classes=["selected", "target"], guide=False)
     central_line(model, X_5, X_128, 5, 128, incident=True)

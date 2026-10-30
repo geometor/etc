@@ -16,21 +16,17 @@ X(890) = ISOGONAL CONJUGATE OF X(889)
    :alt: X(890) = ISOGONAL CONJUGATE OF X(889)
    :align: center
 
-   **X(890) = ISOGONAL CONJUGATE OF X(889)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(890) = ISOGONAL CONJUGATE OF X(889)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`a^{2}u(bv - cw)/(a^{2}u^{2} - bcvw) : :`, where u : v : w = :ref:`X(513) <X(513)>`
+   | **Trilinears:** :math:`a^{2}u(bv - cw)/(a^{2}u^{2} - bcvw) : :`, where :math:`u : v : w` = :ref:`X(513) <X(513)>`
    | **Search Value (6, 9, 13):** :math:`-1.700729647000`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`a^2 (b - c) (a b + a c - 2 b c) : :`
-
-.. container:: note-item
-
-   :ref:`X(890) <X(890)>` lies.
+   * **Trilinears:** :math:`a^{2} (b - c) (a b + a c - 2 b c) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines

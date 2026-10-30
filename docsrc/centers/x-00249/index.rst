@@ -23,16 +23,18 @@ X(249) = ISOGONAL CONJUGATE OF X(115)
    :alt: X(249) = ISOGONAL CONJUGATE OF X(115)
    :align: center
 
-   **X(249) = ISOGONAL CONJUGATE OF X(115)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(249) = ISOGONAL CONJUGATE OF X(115)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(\csc A)\csc^{2}(B - C) : (\csc B)\csc^{2}(C - A) : (\csc C)\csc^{2}(A - B), = a/(b^{2} - c^{2})^{2} : b/(c^{2} - a^{2})^{2} : c/(a^{2} - b^{2})^{2}`
+   | **Trilinears:** :math:`(\csc A)\csc^{2}(B - C) : (\csc B)\csc^{2}(C - A) : (\csc C)\csc^{2}(A - B)`
+   | **Barycentrics:** :math:`\csc^{2}(B - C) : \csc^{2}(C - A) : \csc^{2}(A - B)`
    | **Search Value (6, 9, 13):** :math:`0.395641663632`
 
-.. container:: note-item
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-   :ref:`X(249) <X(249)>` lies.
+   * **Trilinears:** :math:`a/(b^{2} - c^{2})^{2} : b/(c^{2} - a^{2})^{2} : c/(a^{2} - b^{2})^{2}`
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines
@@ -47,7 +49,7 @@ X(249) = ISOGONAL CONJUGATE OF X(115)
    * :ref:`X(249) <X(249)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(338) <X(338)>`
    * :ref:`X(249) <X(249)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these (i,j): (:ref:`6 <X(6)>`, :ref:`110 <X(110)>`), (:ref:`24 <X(24)>`, :ref:`112 <X(112)>`), (1379, 1380)
    * :ref:`X(249) <X(249)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`3 <X(3)>`, :ref:`99 <X(99)>`), (:ref:`6 <X(6)>`, :ref:`110 <X(110)>`)
-   * :ref:`X(249) <X(249)>` = perspector of ABC and reflection of symmedial triangle in the Brocard axis
+   * :ref:`X(249) <X(249)>` = perspector of :g:`ABC << A B C >>` and reflection of symmedial triangle in the Brocard axis
    * :ref:`X(249) <X(249)>` = polar conjugate of X(2970)
    * :ref:`X(249) <X(249)>` = :ref:`X(63) <X(63)>`-:term:`isoconjugate <isoconjugate>` of X(8754)
    * :ref:`X(249) <X(249)>` = :ref:`X(92) <X(92)>`-isoconjugate of :ref:`X(125) <X(125)>`
@@ -59,11 +61,7 @@ Notes
 
 .. container:: note-item
 
-   Barycentrics csc\ :sup:`2`\ (B - C) : csc\ :sup:`2`\ (C - A) : csc\ :sup:`2`\ (A - B)
-
-.. container:: note-item
-
-   :ref:`X(249) <X(249)>` is the :term:`trilinear pole <trilinear-pole>` of line :ref:`X(110) <X(110)>`\ \ :ref:`X(351) <X(351)>`, which is the tangent to the circumcircle at :ref:`X(110) <X(110)>`, and the locus of trilinear poles of tangents at P to hyperbola {A,B,C,\ :ref:`X(6) <X(6)>`,P}}, as P moves on the Brocard axis. (Randy Hutson, October 15, 2018)
+   :ref:`X(249) <X(249)>` is the :term:`trilinear pole <trilinear-pole>` of line :ref:`X(110) <X(110)>`\ \ :ref:`X(351) <X(351)>`, which is the tangent to the circumcircle at :ref:`X(110) <X(110)>`, and the locus of trilinear poles of tangents at :g:`P <P>` to hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(6) <X(6)>`,P}}, as P moves on the Brocard axis. (Randy Hutson, October 15, 2018)
 
 .. toctree::
    :hidden:

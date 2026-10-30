@@ -16,7 +16,7 @@ X(78) = ISOGONAL CONJUGATE OF X(34)
    :alt: X(78) = ISOGONAL CONJUGATE OF X(34)
    :align: center
 
-   **X(78) = ISOGONAL CONJUGATE OF X(34)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(78) = ISOGONAL CONJUGATE OF X(34)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -32,10 +32,6 @@ X(78) = ISOGONAL CONJUGATE OF X(34)
    * **Trilinears:** :math:`S_{A}(S_{A} + bc) : :`
    * **Trilinears:** :math:`(b + c - a) \cot A : :`
    * **Trilinears:** :math:`\cot A \cot(A/2) : :`
-
-.. container:: note-item
-
-   :ref:`X(78) <X(78)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 29 lines
@@ -58,7 +54,7 @@ X(78) = ISOGONAL CONJUGATE OF X(34)
    * :ref:`X(78) <X(78)>` = {:ref:`X(2) <X(2)>`,\ :ref:`X(145) <X(145)>`}-harmonic conjugate of :ref:`X(938) <X(938)>`
    * :ref:`X(78) <X(78)>` = :ref:`X(92) <X(92)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(604) <X(604)>`
    * :ref:`X(78) <X(78)>` = homothetic center of :term:`anticomplementary triangle <anticomplementary-triangle>` and :term:`tangential triangle <tangential-triangle>` of the hexyl triangle
-   * :ref:`X(78) <X(78)>` = perspector of ABC and extraversion triangle of :ref:`X(77) <X(77)>`
+   * :ref:`X(78) <X(78)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(77) <X(77)>`
 
 .. toctree::
    :hidden:

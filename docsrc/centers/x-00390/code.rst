@@ -12,7 +12,7 @@ X(390) = REFLECTION OF GERGONNE POINT IN INCENTER — Code
    :alt: X(390) = REFLECTION OF GERGONNE POINT IN INCENTER
    :align: center
 
-   **X(390) = REFLECTION OF GERGONNE POINT IN INCENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(390) = REFLECTION OF GERGONNE POINT IN INCENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

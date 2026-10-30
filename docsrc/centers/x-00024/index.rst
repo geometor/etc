@@ -10,13 +10,13 @@ X(24) = PERSPECTOR OF ABC AND ORTHIC-OF-ORTHIC TRIANGLE
 
 .. enunciation::
 
-   Let A'B'C' be the :term:`orthic triangle <orthic-triangle>`. Let A″ = inverse-in-circumcircle of A', and define B'' and C'' cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(24) <X(24)>`. (:person:`Randy Hutson <randy-hutson>`, September 5, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`A″ <A″>` = inverse-in-circumcircle of :g:`A' <A'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(24) <X(24)>`. (:person:`Randy Hutson <randy-hutson>`, September 5, 2015)
 
 .. figure:: x-00024.svg
    :alt: X(24) = PERSPECTOR OF ABC AND ORTHIC-OF-ORTHIC TRIANGLE
    :align: center
 
-   **X(24) = PERSPECTOR OF ABC AND ORTHIC-OF-ORTHIC TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(24) = PERSPECTOR OF ABC AND ORTHIC-OF-ORTHIC TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -29,17 +29,13 @@ X(24) = PERSPECTOR OF ABC AND ORTHIC-OF-ORTHIC TRIANGLE
 
    * **Barycentrics:** :math:`\tan A - \sin 2A : \tan B - \sin 2B : \tan C - \sin 2C`
    * **Barycentrics:** :math:`a(\sec A - 2 \cos A) : :`
-   * **Barycentrics:** :math:`a^2 (a^4 + b^4 + c^4 - 2 a^2 b^2 - 2 a^2 c^2)/(a^2 - b^2 - c^2) : :`
+   * **Barycentrics:** :math:`a^{2} (a^{4} + b^{4} + c^{4} - 2 a^{2} b^{2} - 2 a^{2} c^{2})/(a^{2} - b^{2} - c^{2}) : :`
 
 .. collapse:: Linear Combinations
    :badge: 2 combinations
 
-   * :ref:`X(24) <X(24)>` = 6 :ref:`X(2) <X(2)>` + (J^2 - 5) :ref:`X(3) <X(3)>`
-   * :ref:`X(24) <X(24)>` = (a^2 - b^2 - c^2) (a^2 + b^2 - c^2) (a^2 - b^2 + c^2) :ref:`X(3) <X(3)>` + 2 a^2 b^2 c^2 :ref:`X(4) <X(4)>`
-
-.. container:: note-item
-
-   :ref:`X(24) <X(24)>` lies.
+   * :ref:`X(24) <X(24)>` = :math:`6` :ref:`X(2) <X(2)>` + :math:`(J^{2} - 5)` :ref:`X(3) <X(3)>`
+   * :ref:`X(24) <X(24)>` = :math:`(a^{2} - b^{2} - c^{2}) (a^{2} + b^{2} - c^{2}) (a^{2} - b^{2} + c^{2})` :ref:`X(3) <X(3)>` + :math:`2 a^{2} b^{2} c^{2}` :ref:`X(4) <X(4)>`
 
 .. collapse:: Incident Central Lines
    :badge: 627 lines
@@ -50,14 +46,14 @@ X(24) = PERSPECTOR OF ABC AND ORTHIC-OF-ORTHIC TRIANGLE
 .. collapse:: Functional Relations
    :badge: 29 relations
 
-   * :ref:`X(24) <X(24)>` = homothetic center of the :term:`tangential triangle <tangential-triangle>` and the triangle obtained by reflecting :ref:`X(4) <X(4)>` in the sidelines of ABC.
+   * :ref:`X(24) <X(24)>` = homothetic center of the :term:`tangential triangle <tangential-triangle>` and the triangle obtained by reflecting :ref:`X(4) <X(4)>` in the sidelines of :g:`ABC << A B C >>`.
    * :ref:`X(24) <X(24)>` = reflection of :ref:`X(4) <X(4)>` in :ref:`X(235) <X(235)>`
    * :ref:`X(24) <X(24)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(68) <X(68)>`
    * :ref:`X(24) <X(24)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(20563)
    * :ref:`X(24) <X(24)>` = :term:`complement <complement>` of X(37444)
    * :ref:`X(24) <X(24)>` = complement of complement of X(31304)
    * :ref:`X(24) <X(24)>` = :term:`anticomplement <anticomplement>` of X(11585)
-   * :ref:`X(24) <X(24)>` = perspector of ABC and reflection of :ref:`X(4) <X(4)>` in orthic triangle
+   * :ref:`X(24) <X(24)>` = perspector of :g:`ABC << A B C >>` and reflection of :ref:`X(4) <X(4)>` in orthic triangle
    * :ref:`X(24) <X(24)>` = {:ref:`X(3) <X(3)>`,\ :ref:`X(25) <X(25)>`}-harmonic conjugate of :ref:`X(4) <X(4)>`
    * :ref:`X(24) <X(24)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(924) <X(924)>`\ X(6753)
    * :ref:`X(24) <X(24)>` = circumcircle-inverse of :ref:`X(403) <X(403)>`
@@ -70,11 +66,11 @@ X(24) = PERSPECTOR OF ABC AND ORTHIC-OF-ORTHIC TRIANGLE
    * :ref:`X(24) <X(24)>` = :term:`crosspoint <crosspoint>` of :ref:`X(107) <X(107)>` and :ref:`X(250) <X(250)>`
    * :ref:`X(24) <X(24)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`6 <X(6)>`, :ref:`161 <X(161)>`), (:ref:`125 <X(125)>`, :ref:`520 <X(520)>`), (:ref:`637 <X(637)>`, :ref:`638 <X(638)>`)
    * :ref:`X(24) <X(24)>` = :ref:`X(4) <X(4)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(421) <X(421)>`
-   * :ref:`X(24) <X(24)>` = :ref:`X(46) <X(46)>`-of-orthic-triangle if ABC is acute
-   * :ref:`X(24) <X(24)>` = :ref:`X(56) <X(56)>`-of-the-tangential triangle if ABC is acute
+   * :ref:`X(24) <X(24)>` = :ref:`X(46) <X(46)>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
+   * :ref:`X(24) <X(24)>` = :ref:`X(56) <X(56)>`-of-the-tangential triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(24) <X(24)>` = tangential isogonal conjugate of X(1498)
-   * :ref:`X(24) <X(24)>` = exsimilicenter of circumcircle and tangential circle when ABC is acute (Yuda Chen, November 7, 2021)
-   * :ref:`X(24) <X(24)>` = insimilicenter of circumcircle and tangential circle when ABC is obtuse
+   * :ref:`X(24) <X(24)>` = exsimilicenter of circumcircle and tangential circle when :g:`ABC << A B C >>` is acute (Yuda Chen, November 7, 2021)
+   * :ref:`X(24) <X(24)>` = insimilicenter of circumcircle and tangential circle when :g:`ABC << A B C >>` is obtuse
    * :ref:`X(24) <X(24)>` = inverse-in-polar-circle of X(2072)
    * :ref:`X(24) <X(24)>` = homothetic center of tangential and circumorthic triangles
    * :ref:`X(24) <X(24)>` = homothetic center of orthic and Kosnita triangles
@@ -85,7 +81,7 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(24) <X(24)>` has Shinagawa coefficients (2F, -E - 2F).
+   As a point on the Euler line, :ref:`X(24) <X(24)>` has Shinagawa coefficients :math:`(2F, -E - 2F)`.
 
 .. container:: note-item
 

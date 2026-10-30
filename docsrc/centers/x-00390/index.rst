@@ -16,7 +16,7 @@ X(390) = REFLECTION OF GERGONNE POINT IN INCENTER
    :alt: X(390) = REFLECTION OF GERGONNE POINT IN INCENTER
    :align: center
 
-   **X(390) = REFLECTION OF GERGONNE POINT IN INCENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(390) = REFLECTION OF GERGONNE POINT IN INCENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,11 +27,7 @@ X(390) = REFLECTION OF GERGONNE POINT IN INCENTER
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(390) <X(390)>` = 4(R/r)\*\ :ref:`X(1) <X(1)>` - 3\ :ref:`X(2) <X(2)>` + 4\ :ref:`X(3) <X(3)>`
-
-.. container:: note-item
-
-   :ref:`X(390) <X(390)>` lies.
+   * :ref:`X(390) <X(390)>` = :math:`4(R/r)` :ref:`X(1) <X(1)>` - :math:`3` :ref:`X(2) <X(2)>` + :math:`4` :ref:`X(3) <X(3)>`
 
 .. collapse:: Incident Central Lines
    :badge: 13 lines
@@ -56,7 +52,7 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the extangents-to-intangents :term:`similarity image <similarity-image>` of ABC. A'B'C' is homothetic to ABC at :ref:`X(55) <X(55)>` and to the :term:`anticomplementary triangle <anticomplementary-triangle>` at :ref:`X(390) <X(390)>`. (Randy Hutson, June 7, 2019)
+   Let :g:`A'B'C' << A' B' C' >>` be the extangents-to-intangents :term:`similarity image <similarity-image>` of :g:`ABC << A B C >>`. :g:`A'B'C' << A' B' C' >>` is homothetic to :g:`ABC << A B C >>` at :ref:`X(55) <X(55)>` and to the :term:`anticomplementary triangle <anticomplementary-triangle>` at :ref:`X(390) <X(390)>`. (Randy Hutson, June 7, 2019)
 
 .. toctree::
    :hidden:

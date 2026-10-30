@@ -10,24 +10,24 @@ X(568) = ORTHOHARMONIC OF X(50)
 
 .. enunciation::
 
-   Let (A) be the circle centered at A that cuts off a segment of line BC equal to the radius of (A). Define (B) and (C) cyclically. Then :ref:`X(568) <X(568)>` is the radical center of circles (A), (B), (C). (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
+   Let (A) be the circle centered at :g:`A <A>` that cuts off a segment of line :g:`BC <[ B C ]>` equal to the radius of (A). Define (B) and (C) cyclically. Then :ref:`X(568) <X(568)>` is the radical center of circles (A), (B), (C). (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
 
 .. figure:: x-00568.svg
    :alt: X(568) = ORTHOHARMONIC OF X(50)
    :align: center
 
-   **X(568) = ORTHOHARMONIC OF X(50)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(568) = ORTHOHARMONIC OF X(50)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\sin A + \cos A \cot D/2`, where where cot D/2 = (6R\ :sup:`2` - a\ :sup:`2` - b\ :sup:`2` - c\ :sup:`2`)/(4\*area) and R = abc/(4\*area)
-   | **Barycentrics:** :math:`a^2 (a^6 (b^2 + c^2) - a^4 (3 b^4 + b^2 c^2 + 3 c^4) + a^2 (3 b^6 - 2 b^4 c^2 - 2 b^2 c^4 + 3 c^6) - (b^2 - c^2)^2 (b^4 + c^4)) : :`
+   | **Trilinears:** :math:`\sin A + \cos A \cot D/2`, where where cot :math:`D/2 = (6R^{2} - a^{2} - b^{2} - c^{2})/(4 \operatorname{area})` and :math:`R = abc/(4 \operatorname{area})`
+   | **Barycentrics:** :math:`a^{2} (a^{6} (b^{2} + c^{2}) - a^{4} (3 b^{4} + b^{2} c^{2} + 3 c^{4}) + a^{2} (3 b^{6} - 2 b^{4} c^{2} - 2 b^{2} c^{4} + 3 c^{6}) - (b^{2} - c^{2})^{2} (b^{4} + c^{4})) : :`
    | **Search Value (6, 9, 13):** :math:`1.764876474634`
 
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
-   * **Trilinears:** :math:`a[3*R^{2}(b^{2} + c^{2} - a^{2}) + a^{2}b^{2} + a^{2}c^{2} - b^{4} - c^{4}]`, where R = abc/(4\*area) (Wimalasiri Perera, August 29, 2011)
+   * **Trilinears:** :math:`a[3 R^{2}(b^{2} + c^{2} - a^{2}) + a^{2}b^{2} + a^{2}c^{2} - b^{4} - c^{4}]`, where :math:`R = abc/(4 \operatorname{area})` (Wimalasiri Perera, August 29, 2011)
    * **Trilinears:** :math:`\cos A - 2 \cos 2A \cos(B - C) : :`
 
 .. collapse:: Linear Combinations

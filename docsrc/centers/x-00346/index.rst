@@ -16,7 +16,7 @@ X(346) = ISOTOMIC CONJUGATE OF X(279)
    :alt: X(346) = ISOTOMIC CONJUGATE OF X(279)
    :align: center
 
-   **X(346) = ISOTOMIC CONJUGATE OF X(279)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(346) = ISOTOMIC CONJUGATE OF X(279)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -33,7 +33,7 @@ X(346) = ISOTOMIC CONJUGATE OF X(279)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(346) <X(346)>` = 2 :ref:`X(2) <X(2)>` + 19 :ref:`X(345) <X(345)>` = X(1743) + 2 X(4072) = 17 X(4686) - 2 X(4688) = 19 X(4688) - 4 X(4788) = 5 :ref:`X(37) <X(37)>` - 14 X(4821)
+   * :ref:`X(346) <X(346)>` = :math:`2` :ref:`X(2) <X(2)>` + :math:`19` :ref:`X(345) <X(345)>` = X(1743) + :math:`2` X(4072) = :math:`17` X(4686) - :math:`2` X(4688) = :math:`19` X(4688) - :math:`4` X(4788) = :math:`5` :ref:`X(37) <X(37)>` - :math:`14` X(4821)
 
 .. container:: note-item
 
@@ -80,7 +80,7 @@ Notes
 
 .. container:: note-item
 
-   Let A' be the point where BC cuts the radical axis of the circumcircle of ABC and its A-excircle, and define B' and C' cyclically. Then A', B', C' are collinear on the tripolar of :ref:`X(346) <X(346)>`. (:person:`César Lozada <cesar-lozada>`, October 8, 2019)
+   Let :g:`A' <A'>` be the point where :g:`BC <[ B C ]>` cuts the radical axis of the circumcircle of :g:`ABC << A B C >>` and its :g:`A <A>`-excircle, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Then :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>` are collinear on the tripolar of :ref:`X(346) <X(346)>`. (:person:`César Lozada <cesar-lozada>`, October 8, 2019)
 
 .. toctree::
    :hidden:

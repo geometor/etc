@@ -13,6 +13,7 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    intersect_lines,
     orthocenter_of,
     promote_point_to_top,
 )
@@ -23,13 +24,13 @@ def construct_x_00316(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(316) = DROUSSENT PIVOT on reference triangle ABC."""
-    X_316 = eval_trilinear_point(model, A, B, C, 'b*c*(b**(4)+ c**(4)- a**(4)- b**(2)*c**(2))', ID="X(316)", classes=["selected", "target"])
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
-    X_69 = eval_trilinear_point(model, A, B, C, '(cos(A))/a**(2)', ID="X(69)", classes=["center", "incident"])
-    central_line(model, X_4, X_69, 4, 69, incident=True)
-    X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X(30)", classes=["center", "incident"])
-    X_99 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(2) - c**(2))', ID="X(99)", classes=["center", "incident"])
-    central_line(model, X_30, X_99, 30, 99, incident=True)
+    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center"])
+    X_69 = eval_trilinear_point(model, A, B, C, '(cos(A))/a**(2)', ID="X(69)", classes=["center"])
+    X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X(30)", classes=["center"])
+    X_99 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(2) - c**(2))', ID="X(99)", classes=["center"])
+    central_line(model, X_4, X_69, 4, 69)
+    central_line(model, X_30, X_99, 30, 99)
+    X_316 = intersect_lines(model, X_4, X_69, X_30, X_99, ID="X(316)", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
     X_187 = eval_trilinear_point(model, A, B, C, 'a*(2*a**(2) - b**(2) - c**(2))', ID="X(187)", classes=["center", "incident"])
     central_line(model, X_2, X_187, 2, 187, incident=True)

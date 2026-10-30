@@ -16,7 +16,7 @@ X(631) = 3/5*OG
    :alt: X(631) = 3/5*OG
    :align: center
 
-   **X(631) = 3/5*OG** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(631) = 3/5*OG** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -30,14 +30,10 @@ X(631) = 3/5*OG
    * **Trilinears:** :math:`\cos A + \sin B \sin C : \cos B + \sin C \sin A : \cos C + \sin A \sin B : :`
    * **Trilinears:** :math:`\sec A + 2 \sec B \sec C : \sec B + 2 \sec C \sec A : \sec C + 2 \sec A \sec B`
    * **Trilinears:** :math:`a/(b \sec B + c \sec C) + 2 \cos A : :`
-   * **Barycentrics:** :math:`3a^4 - 4a^2(b^2 + c^2) + (b^2 - c^2)^2 : :`
-   * **Barycentrics:** :math:`2 SA a^2 + SB SC : :`
-   * **Barycentrics:** :math:`2 S^2 - SB SC : :`
+   * **Barycentrics:** :math:`3a^{4} - 4a^{2}(b^{2} + c^{2}) + (b^{2} - c^{2})^{2} : :`
+   * **Barycentrics:** :math:`2 S_{A} a^{2} + S_{B} S_{C} : :`
+   * **Barycentrics:** :math:`2 S^{2} - S_{B} S_{C} : :`
    * **Barycentrics:** :math:`\cot B \cot C - 2 : :`
-
-.. container:: note-item
-
-   :ref:`X(631) <X(631)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 435 lines
@@ -61,7 +57,7 @@ X(631) = 3/5*OG
    * :ref:`X(631) <X(631)>` = {:ref:`X(3) <X(3)>`,\ :ref:`X(4) <X(4)>`}-harmonic conjugate of :ref:`X(376) <X(376)>`
    * :ref:`X(631) <X(631)>` = insimilicenter of circumcircles of Euler and anti-Euler triangles; the exsimilicenter is :ref:`X(4) <X(4)>`
    * :ref:`X(631) <X(631)>` = homothetic center of circumorthic triangle and mid-triangle of orthic and dual of :term:`orthic triangles <orthic-triangle>`
-   * :ref:`X(631) <X(631)>` = perspector of ABC and cross-triangle of ABC and anti-Euler triangle
+   * :ref:`X(631) <X(631)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and anti-Euler triangle
    * :ref:`X(631) <X(631)>` = orthocenter of cross-triangle of Euler and anti-Euler triangles
    * :ref:`X(631) <X(631)>` = homothetic center of :ref:`X(4) <X(4)>`-altimedial and :ref:`X(2) <X(2)>`-anti-altimedial triangles
    * :ref:`X(631) <X(631)>` = Euler line intercept, other than :ref:`X(20) <X(20)>`, of conic {:ref:`X(13) <X(13)>`,\ :ref:`X(14) <X(14)>`,\ :ref:`X(17) <X(17)>`,\ :ref:`X(18) <X(18)>`,\ :ref:`X(20) <X(20)>`}}
@@ -72,7 +68,7 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(631) <X(631)>` has Shinagawa coefficients (2,-1).
+   As a point on the Euler line, :ref:`X(631) <X(631)>` has Shinagawa coefficients :math:`(2,-1)`.
 
 .. container:: note-item
 

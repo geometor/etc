@@ -13,6 +13,7 @@ from geometor.etc.ops import (
     ceva_conjugate,
     construct_baseline_triangle,
     create_model,
+    eval_barycentric_point,
     eval_trilinear_point,
     orthocenter_of,
     point_from_barycentrics,
@@ -25,14 +26,14 @@ def construct_x_00459(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(459) = X(253)-CEVA CONJUGATE OF X(4) on reference triangle ABC."""
-    X_253 = point_from_barycentrics(model, A, B, C, -23.560976, -29.731707, 54.292683, ID="X(253)", classes=["center"])
+    X_253 = eval_barycentric_point(model, A, B, C, '1/(3*a**(4) - 2*a**(2)*(b**(2) + c**(2)) - (b**(2) - c**(2))**(2))', ID="X(253)", classes=["center"])
     X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center"])
     X_459 = ceva_conjugate(model, A, B, C, X_253, X_4, ID="X(459)", classes=["selected", "target"])
     X_64 = eval_trilinear_point(model, A, B, C, '1/(cos(A) - cos(B)*cos(C))', ID="X(64)", classes=["center", "incident"])
     central_line(model, X_4, X_64, 4, 64, incident=True)
     X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
     central_line(model, X_2, X_253, 2, 253, incident=True)
-    X_196 = eval_trilinear_point(model, A, B, C, '(cos(B) + cos(C) - cos(A) - 1)*sec(A)*tan(A/2)', ID="X(196)", classes=["center", "incident"])
+    X_196 = point_from_barycentrics(model, A, B, C, 0.56369983, 0.76788831, -0.33158813, ID="X(196)", classes=["center", "incident"])
     X_226 = eval_trilinear_point(model, A, B, C, '(csc(A))*(cos(B) + cos(C))', ID="X(226)", classes=["center", "incident"])
     central_line(model, X_196, X_226, 196, 226, incident=True)
     return promote_point_to_top(model, X_459)

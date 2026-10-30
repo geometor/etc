@@ -16,7 +16,7 @@ X(560) = 4th POWER POINT
    :alt: X(560) = 4th POWER POINT
    :align: center
 
-   **X(560) = 4th POWER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(560) = 4th POWER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,13 +28,9 @@ X(560) = 4th POWER POINT
    :badge: 4 forms
 
    * **Trilinears:** :math:`a^{2}(S_{A} - S_{\omega }) : :`
-   * **Trilinears:** :math:`(\cot B + \cot C)^2 : :`
-   * **Trilinears:** :math:`(SB + SC)^2 : :`
-   * **Trilinears:** :math:`d(a,b,c) : :`, where d(a,b,c) = (distance from A to de Longchamps line)\ :sup:`2`
-
-.. container:: note-item
-
-   :ref:`X(560) <X(560)>` lies.
+   * **Trilinears:** :math:`(\cot B + \cot C)^{2} : :`
+   * **Trilinears:** :math:`(S_{B} + S_{C})^{2} : :`
+   * **Trilinears:** :math:`d(a,b,c) : :`, where d(a,b,c) = :math:`(distance from A to de Longchamps line)^{2}`
 
 .. collapse:: Incident Central Lines
    :badge: 9 lines

@@ -10,13 +10,13 @@ X(36) = INVERSE-IN-CIRCUMCIRCLE OF INCENTER
 
 .. enunciation::
 
-   Let A' be the :term:`isogonal conjugate <isogonal-conjugate>` of A with respect to BC\ :ref:`X(1) <X(1)>`, and define B' and C' cyclically. Let A″ be the circumcenter of BC\ :ref:`X(1) <X(1)>`, and define B″ and C″ cyclically. The lines A'A″, B'B″, C'C″ concur in :ref:`X(36) <X(36)>`. Also, :ref:`X(36) <X(36)>` is the QA-P4 center (Isogonal Center) of quadrangle ABC\ :ref:`X(1) <X(1)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/25-qa-p4.html)
+   Let :g:`A' <A'>` be the :term:`isogonal conjugate <isogonal-conjugate>` of :g:`A <A>` with respect to :g:`BC <[ B C ]>`\ :ref:`X(1) <X(1)>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Let :g:`A″ <A″>` be the circumcenter of :g:`BC <[ B C ]>`\ :ref:`X(1) <X(1)>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(36) <X(36)>`. Also, :ref:`X(36) <X(36)>` is the :g:`QA <[ Q A ]>`-:g:`P_{4} <P_4>` center (Isogonal Center) of quadrangle :g:`ABC << A B C >>`\ :ref:`X(1) <X(1)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/25-qa-p4.html)
 
 .. figure:: x-00036.svg
    :alt: X(36) = INVERSE-IN-CIRCUMCIRCLE OF INCENTER
    :align: center
 
-   **X(36) = INVERSE-IN-CIRCUMCIRCLE OF INCENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(36) = INVERSE-IN-CIRCUMCIRCLE OF INCENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -31,11 +31,7 @@ X(36) = INVERSE-IN-CIRCUMCIRCLE OF INCENTER
    * **Trilinears:** :math:`a(b^{2} + c^{2} - a^{2} - bc)`
    * **Trilinears:** :math:`\sec(A/2) \cos(3A/2) : :`
    * **Barycentrics:** :math:`a^{2}(b^{2} + c^{2} - a^{2} - bc) : :`
-   * **Tripolars:** :math:`\sec A' : :`, where A'B'C' is the :term:`excentral triangle <excentral-triangle>`
-
-.. container:: note-item
-
-   :ref:`X(36) <X(36)>` lies.
+   * **Tripolars:** :math:`\sec A' : :`, where :g:`A'B'C' << A' B' C' >>` is the :term:`excentral triangle <excentral-triangle>`
 
 .. collapse:: Incident Central Lines
    :badge: 41 lines
@@ -67,18 +63,18 @@ X(36) = INVERSE-IN-CIRCUMCIRCLE OF INCENTER
    * :ref:`X(36) <X(36)>` = {:ref:`X(55) <X(55)>`,\ :ref:`X(56) <X(56)>`}-harmonic conjugate of :ref:`X(999) <X(999)>`
    * :ref:`X(36) <X(36)>` = reflection of :ref:`X(484) <X(484)>` in the antiorthic axis
    * :ref:`X(36) <X(36)>` = inverse-in-{circumcircle, nine-point circle}-inverter of :ref:`X(354) <X(354)>`
-   * :ref:`X(36) <X(36)>` = perspector of ABC and extraversion triangle of :ref:`X(35) <X(35)>`
+   * :ref:`X(36) <X(36)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(35) <X(35)>`
    * :ref:`X(36) <X(36)>` = homothetic center of intangents and Trinh triangles
-   * :ref:`X(36) <X(36)>` = perspector of ABC and the reflection of the 2nd circumperp triangle in line :ref:`X(1) <X(1)>`\ \ :ref:`X(3) <X(3)>`
+   * :ref:`X(36) <X(36)>` = perspector of :g:`ABC << A B C >>` and the reflection of the 2nd circumperp triangle in line :ref:`X(1) <X(1)>`\ \ :ref:`X(3) <X(3)>`
    * :ref:`X(36) <X(36)>` = :ref:`X(186) <X(186)>`-of-reflection-triangle-of-:ref:`X(1) <X(1)>`
    * :ref:`X(36) <X(36)>` = Cundy-Parry Psi transform of X(15446)
    * :ref:`X(36) <X(36)>` = exsimilicenter of circumcircle and circumcircle of reflection triangle of :ref:`X(1) <X(1)>`; insimilicenter is :ref:`X(35) <X(35)>`
-   * :ref:`X(36) <X(36)>` = homothetic center of :term:`medial triangle <medial-triangle>` and cross-triangle of ABC and 2nd isogonal triangle of :ref:`X(1) <X(1)>`
-   * :ref:`X(36) <X(36)>` = perspector of ABC and the reflection of the excentral triangle in the antiorthic axis (the reflection of the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(1) <X(1)>` in the :term:`trilinear polar <trilinear-polar>` of :ref:`X(1) <X(1)>`)
+   * :ref:`X(36) <X(36)>` = homothetic center of :term:`medial triangle <medial-triangle>` and cross-triangle of :g:`ABC << A B C >>` and 2nd isogonal triangle of :ref:`X(1) <X(1)>`
+   * :ref:`X(36) <X(36)>` = perspector of :g:`ABC << A B C >>` and the reflection of the excentral triangle in the antiorthic axis (the reflection of the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(1) <X(1)>` in the :term:`trilinear polar <trilinear-polar>` of :ref:`X(1) <X(1)>`)
    * :ref:`X(36) <X(36)>` = Cundy-Parry Phi transform of X(5903)
    * :ref:`X(36) <X(36)>` = homothetic center of Kosnita triangle and anti-tangential midarc triangle
-   * :ref:`X(36) <X(36)>` = orthocenter of cross-triangle of ABC and outer Yff triangle
-   * :ref:`X(36) <X(36)>` = exsimilicenter of circumcircles of ABC and outer Yff triangle; the insimilicenter is :ref:`X(1) <X(1)>`
+   * :ref:`X(36) <X(36)>` = orthocenter of cross-triangle of :g:`ABC << A B C >>` and outer Yff triangle
+   * :ref:`X(36) <X(36)>` = exsimilicenter of circumcircles of :g:`ABC << A B C >>` and outer Yff triangle; the insimilicenter is :ref:`X(1) <X(1)>`
    * :ref:`X(36) <X(36)>` = outer-Yff-isogonal conjugate of X(34789)
 
 Notes
@@ -86,11 +82,11 @@ Notes
 
 .. container:: note-item
 
-   Let P be a point in the plane of triangle ABC, not on a sideline of ABC. Let A1 be the isogonal conjugate of A with respect to triangle BCP, and define B1, C1 cyclically. Call triangle A1B1C1 the 1st isogonal triangle of P. A1B1C1 is also the reflection triangle of the isogonal conjugate of P. A1B1C1 is perspective to ABC iff P lies on the Neuberg cubic. The perspector lies on cubic K060 (pK(X1989, X265), O(X5) orthopivotal cubic). Let A2 be the isogonal conjugate of A1 with respect to triangle B1C1P, and define B2, C2 cyclically. Call triangle A2B2C2 the 2nd isogonal triangle of P. Continuing, let An be the isogonal conjugate of A(n-1) with respect to triangle B(n-1)C(n-1)P, and define B(n), C(n) cyclically. Call triangle AnBnCn the nth isogonal triangle of P. For n >= 2, all triangles AnBnCn are perspective to A(n-1)B(n-1)C(n-1). Call the perspector, Pn, the nth isogonal perspector of P. Pn is the orthocenter of A(n-1)B(n-1)C(n-1) and either the incenter or an excenter of AnBnCn. The triangles AnBnCn are all concyclic, with P as center. Call the circle the isogonal circle of P. For P = :ref:`X(1) <X(1)>`, the 2nd isogonal triangle of :ref:`X(1) <X(1)>` is homothetic to ABC at :ref:`X(36) <X(36)>`; see also :ref:`X(35) <X(35)>`, X(1478), X(1479), X(3583), X(3585), X(5903), X(7741), X(7951). (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
+   Let :g:`P <P>` be a point in the plane of triangle :g:`ABC << A B C >>`, not on a sideline of :g:`ABC << A B C >>`. Let :g:`A_{1} <A_1>` be the isogonal conjugate of :g:`A <A>` with respect to triangle :g:`BCP << B C P >>`, and define :g:`B_{1} <B_1>`, :g:`C_{1} <C_1>` cyclically. Call triangle :g:`A_{1}B_{1}C_{1} << A_1 B_1 C_1 >>` the 1st isogonal triangle of :g:`P <P>`. :g:`A_{1}B_{1}C_{1} << A_1 B_1 C_1 >>` is also the reflection triangle of the isogonal conjugate of :g:`P <P>`. :g:`A_{1}B_{1}C_{1} << A_1 B_1 C_1 >>` is perspective to :g:`ABC << A B C >>` iff P lies on the Neuberg cubic. The perspector lies on cubic K060 (pK(X1989, X265), O(X5) orthopivotal cubic). Let :g:`A_{2} <A_2>` be the isogonal conjugate of :g:`A_{1} <A_1>` with respect to triangle B1C1P, and define :g:`B_{2} <B_2>`, :g:`C_{2} <C_2>` cyclically. Call triangle :g:`A_{2}B_{2}C_{2} << A_2 B_2 C_2 >>` the 2nd isogonal triangle of P. Continuing, let An be the isogonal conjugate of A(n-1) with respect to triangle B(n-1)C(n-1)P, and define B(n), C(n) cyclically. Call triangle AnBnCn the nth isogonal triangle of P. For n >= 2, all triangles AnBnCn are perspective to A(n-1)B(n-1)C(n-1). Call the perspector, Pn, the nth isogonal perspector of P. Pn is the orthocenter of A(n-1)B(n-1)C(n-1) and either the incenter or an excenter of AnBnCn. The triangles AnBnCn are all concyclic, with P as center. Call the circle the isogonal circle of P. For :g:`P <P>` = :ref:`X(1) <X(1)>`, the 2nd isogonal triangle of :ref:`X(1) <X(1)>` is homothetic to :g:`ABC << A B C >>` at :ref:`X(36) <X(36)>`; see also :ref:`X(35) <X(35)>`, X(1478), X(1479), X(3583), X(3585), X(5903), X(7741), X(7951). (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
 
 .. container:: note-item
 
-   Let A'B'C' be the :term:`incentral triangle <incentral-triangle>`. Let A″ be the reflection of A in line B'C', and define B″, C″ cyclically. The lines A'A″, B'B″, C'C″ concur in :ref:`X(36) <X(36)>`. (Randy Hutson, June 27, 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`incentral triangle <incentral-triangle>`. Let :g:`A″ <A″>` be the reflection of :g:`A <A>` in line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(36) <X(36)>`. (Randy Hutson, June 27, 2018)
 
 .. container:: note-item
 

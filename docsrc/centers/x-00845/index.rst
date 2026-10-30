@@ -16,16 +16,12 @@ X(845) = X(165)X(166)∩X(173)X(503)
    :alt: X(845) = X(165)X(166)∩X(173)X(503)
    :align: center
 
-   **X(845) = X(165)X(166)∩X(173)X(503)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(845) = X(165)X(166)∩X(173)X(503)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`- x + y + z : :`, where x = x(A,B,C) = sin\ :sup:`2`\ (A/2) sec(A/2)
-   | **Search Value (6, 9, 13):** :math:`15.329029407711`
-
-.. container:: note-item
-
-   :ref:`X(845) <X(845)>` lies.
+   | **Trilinears:** :math:`- x + y + z : :`, where :math:`x = x(A,B,C) = \sin^{2}(A/2) \sec(A/2)`
+   | **Search Value (6, 9, 13):** :math:`9.076033456414`
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines
@@ -44,7 +40,7 @@ Notes
 
 .. container:: note-item
 
-   Let Ia, Ib, Ic be the excenters of a triangle ABC. Let A' be the Clawson point of IaBC, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(845) <X(845)>`. (:person:`Angel Montesdeoca <angel-montesdeoca>`, August 12, 2018)
+   Let :g:`I_{a} <I_a>`, :g:`I_{b} <I_b>`, :g:`I_{c} <I_c>` be the excenters of a triangle :g:`ABC << A B C >>`. Let :g:`A' <A'>` be the Clawson point of IaBC, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(845) <X(845)>`. (:person:`Angel Montesdeoca <angel-montesdeoca>`, August 12, 2018)
 
 .. toctree::
    :hidden:

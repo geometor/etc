@@ -12,7 +12,7 @@ X(25) = HOMOTHETIC CENTER OF ORTHIC AND TANGENTIAL TRIANGLES — Code
    :alt: X(25) = HOMOTHETIC CENTER OF ORTHIC AND TANGENTIAL TRIANGLES
    :align: center
 
-   **X(25) = HOMOTHETIC CENTER OF ORTHIC AND TANGENTIAL TRIANGLES** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(25) = HOMOTHETIC CENTER OF ORTHIC AND TANGENTIAL TRIANGLES** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

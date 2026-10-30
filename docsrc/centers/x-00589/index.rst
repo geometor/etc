@@ -10,23 +10,19 @@ X(589) = 2nd KENMOTU-VAN LAMOEN POINT
 
 .. enunciation::
 
-   :ref:`X(589) <X(589)>` is the perspector of triangles ABC and A'B'C', where A' is the circumcenter of :ref:`X(372) <X(372)>` and the points where the squares in the Kenmotu configuration with center :ref:`X(372) <X(372)>` meet sideline BC, and B' and C' are defined cyclically. See the reference at :ref:`X(588) <X(588)>`.
+   :ref:`X(589) <X(589)>` is the perspector of triangles :g:`ABC << A B C >>` and :g:`A'B'C' << A' B' C' >>`, where :g:`A' <A'>` is the circumcenter of :ref:`X(372) <X(372)>` and the points where the squares in the Kenmotu configuration with center :ref:`X(372) <X(372)>` meet sideline :g:`BC <[ B C ]>`, and :g:`B' <B'>` and :g:`C' <C'>` are defined cyclically. See the reference at :ref:`X(588) <X(588)>`.
 
 .. figure:: x-00589.svg
    :alt: X(589) = 2nd KENMOTU-VAN LAMOEN POINT
    :align: center
 
-   **X(589) = 2nd KENMOTU-VAN LAMOEN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(589) = 2nd KENMOTU-VAN LAMOEN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = a/(a\ :sup:`2` - 4\*area(ABC))
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
-   | **Search Value (6, 9, 13):** :math:`-7.143200881171`
-
-.. container:: note-item
-
-   :ref:`X(589) <X(589)>` lies.
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a/(a^{2} - 4 \operatorname{area}(ABC))`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
+   | **Search Value (6, 9, 13):** :math:`1.133404162873`
 
 .. collapse:: Incident Central Lines
    :badge: 1 line
@@ -46,11 +42,11 @@ Notes
 
 .. container:: note-item
 
-   :ref:`X(588) <X(588)>` is the homothetic center of triangle ABC and the Lucas(-2:1) homothetic triangle; see :ref:`X(371) <X(371)>` and :ref:`X(588) <X(588)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   :ref:`X(588) <X(588)>` is the homothetic center of triangle :g:`ABC << A B C >>` and the Lucas(-2:1) homothetic triangle; see :ref:`X(371) <X(371)>` and :ref:`X(588) <X(588)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. container:: note-item
 
-   Let A'B'C' be the Lucas(-1) :term:`central triangle <central-triangle>`. Let A″ be the :term:`trilinear pole <trilinear-pole>` of line B'C'; define B″ and C″ cyclically. Let A\* be the trilinear pole of line B″C″; define B\* and C\* cyclically. The lines AA\*, BB\*, CC\* concur in :ref:`X(589) <X(589)>`. (Randy Hutson, January 29, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the Lucas(-1) :term:`central triangle <central-triangle>`. Let :g:`A″ <A″>` be the :term:`trilinear pole <trilinear-pole>` of line :g:`B'C' <[ B' C' ]>`; define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Let :g:`A* <A*>` be the trilinear pole of line :g:`B″C″ <[ B″ C″ ]>`; define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(589) <X(589)>`. (Randy Hutson, January 29, 2015)
 
 .. toctree::
    :hidden:

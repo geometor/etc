@@ -10,28 +10,24 @@ X(942) = INCIRCLE-INVERSE OF X(36)
 
 .. enunciation::
 
-   Let A'B'C' be the :term:`incentral triangle <incentral-triangle>` of triangle ABC. Let L\ :sub:`A` be the line of reflection of line BC in line B'C', and define L\ :sub:`B` and L\ :sub:`C` cyclically. Let A'' = L\ :sub:`B`\ ∩L\ :sub:`C`, and define B'' and C'' cyclically. The lines AA'', BB'', CC'' concur in :ref:`X(942) <X(942)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`incentral triangle <incentral-triangle>` of triangle :g:`ABC << A B C >>`. Let :g:`L_{A} <L_A>` be the line of reflection of line :g:`BC <[ B C ]>` in line :g:`B'C' <[ B' C' ]>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A″ <A″>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(942) <X(942)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. figure:: x-00942.svg
    :alt: X(942) = INCIRCLE-INVERSE OF X(36)
    :align: center
 
-   **X(942) = INCIRCLE-INVERSE OF X(36)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(942) = INCIRCLE-INVERSE OF X(36)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`2abc + (b + c)(a - b + c)(a + b -c) : :`
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`1.110017411481`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
    * **Trilinears:** :math:`1 + \cos B + \cos C : :`
-
-.. container:: note-item
-
-   :ref:`X(942) <X(942)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 27 lines
@@ -62,14 +58,14 @@ X(942) = INCIRCLE-INVERSE OF X(36)
    * :ref:`X(942) <X(942)>` = excentral-to-intouch :term:`similarity image <similarity-image>` of :ref:`X(3) <X(3)>`
    * :ref:`X(942) <X(942)>` = Cundy-Parry Phi transform of :ref:`X(55) <X(55)>`
    * :ref:`X(942) <X(942)>` = Cundy-Parry Psi transform of :ref:`X(7) <X(7)>`
-   * :ref:`X(942) <X(942)>` = QA-P23 (Inscribed Square Axes Crosspoint) of quadrangle ABC\ :ref:`X(1) <X(1)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/51-qa-p23.html)
+   * :ref:`X(942) <X(942)>` = :g:`QA <[ Q A ]>`-P23 (Inscribed Square Axes Crosspoint) of quadrangle :g:`ABC << A B C >>`\ :ref:`X(1) <X(1)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/51-qa-p23.html)
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let I be the incenter of ABC. Let N\ :sub:`A` be the nine-point center of the triangle IBC, and define N\ :sub:`B` and N\ :sub:`C` cyclically. Let A\ :sub:`A` be the reflection of N\ :sub:`A` in the line AI, Let A\ :sub:`B` be the reflection of N\ :sub:`A` in the line BI, let Let A\ :sub:`C` be the reflection of N\ :sub:`A` in the line CI, and define B\ :sub:`A`, B\ :sub:`B`, and B\ :sub:`C` cyclically, and define C\ :sub:`A`, C\ :sub:`B`, and C\ :sub:`C` cyclically. Let O\ :sub:`A` be the nine-point center of the triangle A\ :sub:`A`\ A\ :sub:`B`\ A\ :sub:`C`, let O\ :sub:`B` be the nine-point center of the triangle B\ :sub:`A`\ B\ :sub:`B`\ B\ :sub:`C`, and let O\ :sub:`C` be the nine-point center of the triangle C\ :sub:`A`\ C\ :sub:`B`\ C\ :sub:`C`. The circles O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C` concur in :ref:`X(942) <X(942)>`. (:person:`Antreas Hatzipolakis <antreas-hatzipolakis>` and :person:`César Lozada <cesar-lozada>`, January 28, 2015, `Hyacinthos 23074) <http://www.hyacinthos.epizy.com/message.php?msg=23074>`__
+   Let :g:`I <I>` be the incenter of :g:`ABC << A B C >>`. Let :g:`N_{A} <N_A>` be the nine-point center of the triangle :g:`IBC << I B C >>`, and define :g:`N_{B} <N_B>` and :g:`N_{C} <N_C>` cyclically. Let :g:`A_{A} <A_A>` be the reflection of :g:`N_{A} <N_A>` in the line :g:`AI <[ A I ]>`, Let :g:`A_{B} <A_B>` be the reflection of :g:`N_{A} <N_A>` in the line :g:`BI <[ B I ]>`, let Let :g:`A_{C} <A_C>` be the reflection of :g:`N_{A} <N_A>` in the line :g:`CI <[ C I ]>`, and define :g:`B_{A} <B_A>`, :g:`B_{B} <B_B>`, and :g:`B_{C} <B_C>` cyclically, and define :g:`C_{A} <C_A>`, :g:`C_{B} <C_B>`, and :g:`C_{C} <C_C>` cyclically. Let :g:`O_{A} <O_A>` be the nine-point center of the triangle :g:`A_{A}A_{B}A_{C} << A_A A_B A_C >>`, let :g:`O_{B} <O_B>` be the nine-point center of the triangle :g:`B_{A}B_{B}B_{C} << B_A B_B B_C >>`, and let :g:`O_{C} <O_C>` be the nine-point center of the triangle :g:`C_{A}C_{B}C_{C} << C_A C_B C_C >>`. The circles :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>` concur in :ref:`X(942) <X(942)>`. (:person:`Antreas Hatzipolakis <antreas-hatzipolakis>` and :person:`César Lozada <cesar-lozada>`, January 28, 2015, `Hyacinthos 23074) <http://www.hyacinthos.epizy.com/message.php?msg=23074>`__
 
 .. container:: note-item
 
@@ -77,15 +73,15 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the :term:`intouch triangle <intouch-triangle>`. Let A″ be the orthocenter of AB'C', and define B″ and C″ cyclically. The triangle A″B″C″ is homothetic to A'B'C', and the center of homothety is :ref:`X(942) <X(942)>`. (Randy Hutson, July 20, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`intouch triangle <intouch-triangle>`. Let :g:`A″ <A″>` be the orthocenter of :g:`AB'C' << A B' C' >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to :g:`A'B'C' << A' B' C' >>`, and the center of homothety is :ref:`X(942) <X(942)>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the :term:`orthic triangle <orthic-triangle>`. Let A″ be the incenter of AB'C', and define B″ and C″ cyclically. The triangle A″B″C″ is homothetic to the intouch triangle, and the center of homothety is :ref:`X(942) <X(942)>`. (Randy Hutson, July 20, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`A″ <A″>` be the incenter of :g:`AB'C' << A B' C' >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to the intouch triangle, and the center of homothety is :ref:`X(942) <X(942)>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
-   Let A' be the homothetic center of the orthic triangles of the intouch and A-:term:`extouch triangles <extouch-triangle>`, and define B' and C' cyclically. The triangle A'B'C' is perspective to the half-altitude triangle at :ref:`X(942) <X(942)>`. In fact, A'B'C' is the :term:`cevian triangle <cevian-triangle>` of :ref:`X(942) <X(942)>`, wrt the half-altitude triangle. (Randy Hutson, July 20, 2016)
+   Let :g:`A' <A'>` be the homothetic center of the orthic triangles of the intouch and A-:term:`extouch triangles <extouch-triangle>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The triangle :g:`A'B'C' << A' B' C' >>` is perspective to the half-altitude triangle at :ref:`X(942) <X(942)>`. In fact, :g:`A'B'C' << A' B' C' >>` is the :term:`cevian triangle <cevian-triangle>` of :ref:`X(942) <X(942)>`, wrt the half-altitude triangle. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 

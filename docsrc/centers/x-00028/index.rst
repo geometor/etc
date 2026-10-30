@@ -16,7 +16,7 @@ X(28) = CEVAPOINT OF X(19) AND X(25)
    :alt: X(28) = CEVAPOINT OF X(19) AND X(25)
    :align: center
 
-   **X(28) = CEVAPOINT OF X(19) AND X(25)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(28) = CEVAPOINT OF X(19) AND X(25)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,11 +27,7 @@ X(28) = CEVAPOINT OF X(19) AND X(25)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(28) <X(28)>` = 8 sa sb sc :ref:`X(4) <X(4)>` + a b c (3 + J^2) :ref:`X(25) <X(25)>`
-
-.. container:: note-item
-
-   :ref:`X(28) <X(28)>` lies.
+   * :ref:`X(28) <X(28)>` = :math:`8 sa sb sc` :ref:`X(4) <X(4)>` + :math:`a b c (3 + J^{2})` :ref:`X(25) <X(25)>`
 
 .. collapse:: Incident Central Lines
    :badge: 47 lines
@@ -62,7 +58,7 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(28) <X(28)>` has Shinagawa coefficients ($a$F, -$a$(E + F) - abc).
+   As a point on the Euler line, :ref:`X(28) <X(28)>` has Shinagawa coefficients :math:`(\$a\$F, -\$a\$(E + F) - abc)`.
 
 .. toctree::
    :hidden:

@@ -10,23 +10,19 @@ X(842) = ISOGONAL CONJUGATE OF X(542)
 
 .. enunciation::
 
-   Let L = :ref:`X(74) <X(74)>`\ \ :ref:`X(98) <X(98)>` or any line parallel to :ref:`X(74) <X(74)>`\ \ :ref:`X(98) <X(98)>`. Let La be the line of reflection of L in line BC, and define Lb and Lc cyclically. Let A' = Lb∩Lc, and define B' and C' cyclically. Then the lines AA', BB', CC' concur in :ref:`X(842) <X(842)>`. (:person:`Randy Hutson <randy-hutson>`, February 10, 2016)
+   Let :g:`L <L>` = :ref:`X(74) <X(74)>`\ \ :ref:`X(98) <X(98)>` or any line parallel to :ref:`X(74) <X(74)>`\ \ :ref:`X(98) <X(98)>`. Let :g:`L_{a} <L_a>` be the line of reflection of :g:`L <L>` in line :g:`BC <[ B C ]>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Then the lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(842) <X(842)>`. (:person:`Randy Hutson <randy-hutson>`, February 10, 2016)
 
 .. figure:: x-00842.svg
    :alt: X(842) = ISOGONAL CONJUGATE OF X(542)
    :align: center
 
-   **X(842) = ISOGONAL CONJUGATE OF X(542)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(842) = ISOGONAL CONJUGATE OF X(542)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`a/(2ax - by - cz) : :`, where x = x(A,B,C) = sec(A + ω)
-   | **Barycentrics:** :math:`a^2/[2a^6 - 2a^4(b^2 + c^2) + a^2(b^4 + c^4) - (b^2 - c^2)^2(b^2 + c^2)] : :`
+   | **Trilinears:** :math:`a/(2ax - by - cz) : :`, where :math:`x = x(A,B,C) = \sec(A + \omega )`
+   | **Barycentrics:** :math:`a^{2}/[2a^{6} - 2a^{4}(b^{2} + c^{2}) + a^{2}(b^{4} + c^{4}) - (b^{2} - c^{2})^{2}(b^{2} + c^{2})] : :`
    | **Search Value (6, 9, 13):** :math:`14.192926745701`
-
-.. container:: note-item
-
-   :ref:`X(842) <X(842)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 11 lines
@@ -42,14 +38,14 @@ X(842) = ISOGONAL CONJUGATE OF X(542)
    * :ref:`X(842) <X(842)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(6) <X(6)>`\ \ :ref:`X(526) <X(526)>`
    * :ref:`X(842) <X(842)>` = Λ(:ref:`X(6) <X(6)>`, :ref:`X(13) <X(13)>`)
    * :ref:`X(842) <X(842)>` = Ψ(:ref:`X(6) <X(6)>`, :ref:`X(526) <X(526)>`)
-   * :ref:`X(842) <X(842)>` = intersection, other than A, B, and C, of the circumcircle and hyperbola {A,B,C,\ :ref:`X(4) <X(4)>`,\ :ref:`X(23) <X(23)>`}}
+   * :ref:`X(842) <X(842)>` = intersection, other than :g:`A <A>`, :g:`B <B>`, and :g:`C <C>`, of the circumcircle and hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(4) <X(4)>`,\ :ref:`X(23) <X(23)>`}}
    * :ref:`X(842) <X(842)>` = reflection of :ref:`X(98) <X(98)>` in the Euler line
    * :ref:`X(842) <X(842)>` = reflection of :ref:`X(74) <X(74)>` in the Brocard axis
    * :ref:`X(842) <X(842)>` = inverse-in-circle-O(15,16) of :ref:`X(112) <X(112)>`
    * :ref:`X(842) <X(842)>` = inverse-in-{circumcircle, nine-point circle}-inverter of X(3258)
    * :ref:`X(842) <X(842)>` = inverse-in-Moses-radical-circle of :ref:`X(111) <X(111)>`
    * :ref:`X(842) <X(842)>` = SR(P,U), where P and U are the circumcircle intercepts of the Fermat axis
-   * :ref:`X(842) <X(842)>` = 2nd-Parry-to-ABC :term:`similarity image <similarity-image>` of :ref:`X(23) <X(23)>`
+   * :ref:`X(842) <X(842)>` = 2nd-Parry-to-:g:`ABC << A B C >>` :term:`similarity image <similarity-image>` of :ref:`X(23) <X(23)>`
    * :ref:`X(842) <X(842)>` = 3rd-Parry-to-circumsymmedial similarity image of :ref:`X(110) <X(110)>`
    * :ref:`X(842) <X(842)>` = X(10787)-of-McCay-triangle
    * :ref:`X(842) <X(842)>` = X(2709)-of-circumsymmedial-triangle
@@ -64,7 +60,7 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the Artzt triangle. Let A″ be the reflection of A' in BC, and define B″ and C″ cyclically. Let A″' be the reflection of A in B'C', and define B″' and C″' cyclically. Let A\* = B″B″'∩C″C″', and define B\* and C\* cyclically. The lines AA\*, BB\*, CC\* concur in :ref:`X(842) <X(842)>`. (Randy Hutson, December 10, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the Artzt triangle. Let :g:`A″ <A″>` be the reflection of :g:`A' <A'>` in :g:`BC <[ B C ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Let A″' be the reflection of :g:`A <A>` in :g:`B'C' <[ B' C' ]>`, and define B″' and C″' cyclically. Let :g:`A* <A*>` = B″B″'∩C″C″', and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(842) <X(842)>`. (Randy Hutson, December 10, 2016)
 
 .. container:: note-item
 

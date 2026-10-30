@@ -16,17 +16,13 @@ X(596) = ISOGONAL CONJUGATE OF X(595)
    :alt: X(596) = ISOGONAL CONJUGATE OF X(595)
    :align: center
 
-   **X(596) = ISOGONAL CONJUGATE OF X(595)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(596) = ISOGONAL CONJUGATE OF X(595)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`1/[a(a^{2} + ab + ac - bc)] : 1/[b(b^{2} + bc + ba - ca)] : 1/[c(c^{2} + ca + cb - ab)]`
    | **Barycentrics:** :math:`1/(a^{2} + ab + ac - bc) : 1/(b^{2} + bc + ba - ca) : 1/(c^{2} + ca + cb - ab)`
    | **Search Value (6, 9, 13):** :math:`5.411635861830`
-
-.. container:: note-item
-
-   :ref:`X(596) <X(596)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines
@@ -39,7 +35,7 @@ X(596) = ISOGONAL CONJUGATE OF X(595)
 
    * :ref:`X(596) <X(596)>` = isogonal conjugate of :ref:`X(595) <X(595)>`
    * :ref:`X(596) <X(596)>` = :term:`anticomplement <anticomplement>` of X(4075)
-   * :ref:`X(596) <X(596)>` = perspector of ABC and the reflection of the :term:`incentral triangle <incentral-triangle>` in X(1125)
+   * :ref:`X(596) <X(596)>` = perspector of :g:`ABC << A B C >>` and the reflection of the :term:`incentral triangle <incentral-triangle>` in X(1125)
 
 .. toctree::
    :hidden:

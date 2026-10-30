@@ -10,17 +10,17 @@ X(323) = ISOTOMIC CONJUGATE OF X(94)
 
 .. enunciation::
 
-   Let A'B'C' be the Trinh triangle. Let A″ be the :term:`trilinear pole <trilinear-pole>` of line B'C', and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(323) <X(323)>`. (:person:`Randy Hutson <randy-hutson>`, October 13, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the Trinh triangle. Let :g:`A″ <A″>` be the :term:`trilinear pole <trilinear-pole>` of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(323) <X(323)>`. (:person:`Randy Hutson <randy-hutson>`, October 13, 2015)
 
 .. figure:: x-00323.svg
    :alt: X(323) = ISOTOMIC CONJUGATE OF X(94)
    :align: center
 
-   **X(323) = ISOTOMIC CONJUGATE OF X(94)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(323) = ISOTOMIC CONJUGATE OF X(94)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\sin 3A \csc^{2}A : \sin 3B \csc^{2}B : \sin 3C \csc^{2}C`
+   | **Trilinears:** :math:`\sin 3A \csc^{2} A : \sin 3B \csc^{2} B : \sin 3C \csc^{2} C`
    | **Barycentrics:** :math:`\sin 3A \csc A : \sin 3B \csc B : \sin 3C \csc C`
    | **Search Value (6, 9, 13):** :math:`4.868692466079`
 
@@ -28,12 +28,8 @@ X(323) = ISOTOMIC CONJUGATE OF X(94)
    :badge: 3 forms
 
    * **Trilinears:** :math:`4 \sin A - 3 \csc A :`
-   * **Barycentrics:** :math:`a^2[(a^2 - b^2 - c^2)^2 - b^2 c^2] : :`
-   * **Barycentrics:** directed distance of A to Hatzipolakis axis : :
-
-.. container:: note-item
-
-   :ref:`X(323) <X(323)>` lies.
+   * **Barycentrics:** :math:`a^{2}[(a^{2} - b^{2} - c^{2})^{2} - b^{2} c^{2}] : :`
+   * **Barycentrics:** directed distance of :g:`A <A>` to Hatzipolakis axis : :
 
 .. collapse:: Incident Central Lines
    :badge: 7 lines
@@ -57,11 +53,11 @@ X(323) = ISOTOMIC CONJUGATE OF X(94)
    * :ref:`X(323) <X(323)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(51) <X(51)>`\ \ :ref:`X(512) <X(512)>`
    * :ref:`X(323) <X(323)>` = :term:`crosspoint <crosspoint>` of :ref:`X(6) <X(6)>` and :ref:`X(399) <X(399)>` wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
    * :ref:`X(323) <X(323)>` = inverse-in-MacBeath-circumconic of :ref:`X(2) <X(2)>`
-   * :ref:`X(323) <X(323)>` = orthocentroidal-to-ABC :term:`similarity image <similarity-image>` of :ref:`X(110) <X(110)>`
+   * :ref:`X(323) <X(323)>` = orthocentroidal-to-:g:`ABC << A B C >>` :term:`similarity image <similarity-image>` of :ref:`X(110) <X(110)>`
    * :ref:`X(323) <X(323)>` = 4th-Brocard-to-circumsymmedial similarity image of :ref:`X(110) <X(110)>`
    * :ref:`X(323) <X(323)>` = X(13192)-of-circumsymmedial-triangle
    * :ref:`X(323) <X(323)>` = Vu circlecevian point V(:ref:`X(15) <X(15)>`,\ :ref:`X(16) <X(16)>`)
-   * :ref:`X(323) <X(323)>` = intersection of the tangent to hyperbola {A,B,C,\ :ref:`X(6) <X(6)>`,\ :ref:`X(13) <X(13)>`,\ :ref:`X(16) <X(16)>`}} at :ref:`X(16) <X(16)>` and the tangent to hyperbola {A,B,C,\ :ref:`X(6) <X(6)>`,\ :ref:`X(14) <X(14)>`,\ :ref:`X(15) <X(15)>`}} at :ref:`X(15) <X(15)>`
+   * :ref:`X(323) <X(323)>` = intersection of the tangent to hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(6) <X(6)>`,\ :ref:`X(13) <X(13)>`,\ :ref:`X(16) <X(16)>`}} at :ref:`X(16) <X(16)>` and the tangent to hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(6) <X(6)>`,\ :ref:`X(14) <X(14)>`,\ :ref:`X(15) <X(15)>`}} at :ref:`X(15) <X(15)>`
 
 .. toctree::
    :hidden:

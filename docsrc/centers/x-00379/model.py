@@ -15,6 +15,7 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     gergonne_point_of,
+    intersect_lines,
     promote_point_to_top,
     symmedian_point_of,
 )
@@ -25,13 +26,13 @@ def construct_x_00379(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(379) = EULER LINE INTERCEPT OF LINE X(6)X(7) on reference triangle ABC."""
-    X_379 = eval_trilinear_point(model, A, B, C, 'b*c*(a**(5)+ (b + c)*(b*c*a**(2)- (b*c + c*a + a*b)*(b - c)**(2)))', ID="X(379)", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
+    X_7 = gergonne_point_of(model, A, B, C, ID="X(7)", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
-    X_7 = gergonne_point_of(model, A, B, C, ID="X(7)", classes=["center", "incident"])
-    central_line(model, X_6, X_7, 6, 7, incident=True)
+    central_line(model, X_6, X_7, 6, 7)
+    X_379 = intersect_lines(model, X_2, X_3, X_6, X_7, ID="X(379)", classes=["selected", "target"])
     X_63 = eval_trilinear_point(model, A, B, C, 'cot(A)', ID="X(63)", classes=["center", "incident"])
     X_169 = eval_trilinear_point(model, A, B, C, '- (sin(A))*(cos(A/2))**(2) + (sin(B))*(cos(B/2))**(2) + (sin(C))*(cos(C/2))**(2)', ID="X(169)", classes=["center", "incident"])
     central_line(model, X_63, X_169, 63, 169, incident=True)

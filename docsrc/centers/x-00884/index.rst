@@ -16,16 +16,12 @@ X(884) = ISOGONAL CONJUGATE OF X(883)
    :alt: X(884) = ISOGONAL CONJUGATE OF X(883)
    :align: center
 
-   **X(884) = ISOGONAL CONJUGATE OF X(883)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(884) = ISOGONAL CONJUGATE OF X(883)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`a^{2}u(bv - cw)/(a^{2}u^{2} - bcvw) : :`, where u : v : w = :ref:`X(7) <X(7)>`
+   | **Trilinears:** :math:`a^{2}u(bv - cw)/(a^{2}u^{2} - bcvw) : :`, where :math:`u : v : w` = :ref:`X(7) <X(7)>`
    | **Search Value (6, 9, 13):** :math:`-0.961178915482`
-
-.. container:: note-item
-
-   :ref:`X(884) <X(884)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines

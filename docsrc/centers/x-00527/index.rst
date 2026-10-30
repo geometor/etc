@@ -23,20 +23,16 @@ X(527) = DIRECTION OF VECTOR AX + BX + CX, where X = X(7)
    :alt: X(527) = DIRECTION OF VECTOR AX + BX + CX, where X = X(7)
    :align: center
 
-   **X(527) = DIRECTION OF VECTOR AX + BX + CX, where X = X(7)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(527) = DIRECTION OF VECTOR AX + BX + CX, where X = X(7)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(2ax - by - cz)/a`, where x = x(a,b,c) = 1/[a(b + c - a)], y = x(b,c,a), z = x(c,a,b)
-   | **Barycentrics:** :math:`2a^2 - a(b + c) - (b - c)^2 : :`
+   | **Trilinears:** :math:`(2ax - by - cz)/a`, where :math:`x = x(a,b,c) = 1/[a(b + c - a)]`, :math:`y = x(b,c,a)`, :math:`z = x(c,a,b)`
+   | **Barycentrics:** :math:`2a^{2} - a(b + c) - (b - c)^{2} : :`
 
 .. container:: note-item
 
    :ref:`X(527) <X(527)>` lies on the line at infinity.
-
-.. container:: note-item
-
-   :ref:`X(527) <X(527)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 25 lines

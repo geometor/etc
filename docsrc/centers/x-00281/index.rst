@@ -10,13 +10,13 @@ X(281) = X(37)-CROSS CONJUGATE OF X(9)
 
 .. enunciation::
 
-   :ref:`X(281) <X(281)>`: Let A'B'C' be the :term:`intouch triangle <intouch-triangle>`. Let A″ be the pole, wrt the polar circle, of line B'C', and define B″, C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(281) <X(281)>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
+   :ref:`X(281) <X(281)>`: Let :g:`A'B'C' << A' B' C' >>` be the :term:`intouch triangle <intouch-triangle>`. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(281) <X(281)>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
 
 .. figure:: x-00281.svg
    :alt: X(281) = X(37)-CROSS CONJUGATE OF X(9)
    :align: center
 
-   **X(281) = X(37)-CROSS CONJUGATE OF X(9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(281) = X(37)-CROSS CONJUGATE OF X(9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -31,11 +31,7 @@ X(281) = X(37)-CROSS CONJUGATE OF X(9)
    * **Trilinears:** :math:`(1 + \sec A)/a : (1 + \sec B)/b : (1 + \sec C)/c`
    * **Trilinears:** :math:`(b + c - a) \sec A : :`
    * **Barycentrics:** :math:`1 + \sec A : 1 + \sec B : 1 + \sec C`
-   * **Barycentrics:** :math:`(b + c - a)/(b^2 + c^2 - a^2) : :`
-
-.. container:: note-item
-
-   :ref:`X(281) <X(281)>` lies.
+   * **Barycentrics:** :math:`(b + c - a)/(b^{2} + c^{2} - a^{2}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 23 lines
@@ -58,27 +54,27 @@ X(281) = X(37)-CROSS CONJUGATE OF X(9)
    * :ref:`X(281) <X(281)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X(7) <X(7)>`
    * :ref:`X(281) <X(281)>` = :term:`crossdifference <crossdifference>` of every pair of points on line X(1459)X(1946)
    * :ref:`X(281) <X(281)>` = :term:`trilinear pole <trilinear-pole>` of line X(3064)X(3700) (the polar of :ref:`X(7) <X(7)>` wrt polar circle)
-   * :ref:`X(281) <X(281)>` = perspector of Gemini triangle 37 and cross-triangle of ABC and Gemini triangle 37
-   * :ref:`X(281) <X(281)>` = trilinear pole of line X(3064)X(3700) (the perspectrix of ABC and Gemini triangle 38)
+   * :ref:`X(281) <X(281)>` = perspector of Gemini triangle 37 and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 37
+   * :ref:`X(281) <X(281)>` = trilinear pole of line X(3064)X(3700) (the perspectrix of :g:`ABC << A B C >>` and Gemini triangle 38)
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let A'B'C' be the 3rd :term:`extouch triangle <extouch-triangle>`. Let A″ be the pole, wrt the polar circle, of line B'C', and define B″, C″ cyclically. The triangle A'B'C' is homothetic to ABC at :ref:`X(281) <X(281)>`. (Randy Hutson, September 14, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the 3rd :term:`extouch triangle <extouch-triangle>`. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The triangle :g:`A'B'C' << A' B' C' >>` is homothetic to :g:`ABC << A B C >>` at :ref:`X(281) <X(281)>`. (Randy Hutson, September 14, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the 4th extouch triangle. Let A″ be the pole, wrt the polar circle, of line B'C', and define B″, C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(281) <X(281)>`. (Randy Hutson, September 14, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the 4th extouch triangle. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(281) <X(281)>`. (Randy Hutson, September 14, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the 5th extouch triangle. Let A″ be the pole, wrt the polar circle, of line B'C', and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(281) <X(281)>`. (Randy Hutson, September 14, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the 5th extouch triangle. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(281) <X(281)>`. (Randy Hutson, September 14, 2016)
 
 .. container:: note-item
 
-   Let Ea be the ellipse passing through A, and with foci at B and C (the A-Soddy ellipse). Let La be the polar of :ref:`X(3) <X(3)>` with respect to Ea. Define Lb and Lc cyclically. Let A' = Lb∩Lc, B' = Lc∩La, C' = La∩Lb. Triangle A'B'C' is homothetic to ABC, and the center of homothety is :ref:`X(281) <X(281)>`. (Randy Hutson, September 14, 2016)
+   Let :g:`E_{a} <E_a>` be the ellipse passing through :g:`A <A>`, and with foci at :g:`B <B>` and :g:`C <C>` (the A-Soddy ellipse). Let :g:`L_{a} <L_a>` be the polar of :ref:`X(3) <X(3)>` with respect to :g:`E_{a} <E_a>`. Define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, :g:`B' <B'>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C' <C'>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. Triangle :g:`A'B'C' << A' B' C' >>` is homothetic to :g:`ABC << A B C >>`, and the center of homothety is :ref:`X(281) <X(281)>`. (Randy Hutson, September 14, 2016)
 
 .. toctree::
    :hidden:

@@ -16,16 +16,12 @@ X(812) = ODD (- 1, 1) INFINITY POINT
    :alt: X(812) = ODD (- 1, 1) INFINITY POINT
    :align: center
 
-   **X(812) = ODD (- 1, 1) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(812) = ODD (- 1, 1) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`a ^{-2}(b^{1} - c^{1}) + a^{0}(b ^{-1} - c ^{-1}) : :`
-   | **Barycentrics:** :math:`(b - c) (a^2 - b c) : :`
-
-.. container:: note-item
-
-   :ref:`X(812) <X(812)>` lies.
+   | **Barycentrics:** :math:`(b - c) (a^{2} - b c) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines

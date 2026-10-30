@@ -16,16 +16,12 @@ X(928) = CROSSDIFFERENCE OF X(6) AND X(11)
    :alt: X(928) = CROSSDIFFERENCE OF X(6) AND X(11)
    :align: center
 
-   **X(928) = CROSSDIFFERENCE OF X(6) AND X(11)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(928) = CROSSDIFFERENCE OF X(6) AND X(11)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = bw - cv, u : v : w = :ref:`X(11) <X(11)>`
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
-
-.. container:: note-item
-
-   :ref:`X(928) <X(928)>` lies.
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = bw - cv`,\ :math:`u : v : w` = :ref:`X(11) <X(11)>`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
 
 .. collapse:: Incident Central Lines
    :badge: 7 lines
@@ -40,7 +36,7 @@ X(928) = CROSSDIFFERENCE OF X(6) AND X(11)
    * :ref:`X(928) <X(928)>` = :term:`crosssum <crosssum>` of :ref:`X(523) <X(523)>` and :ref:`X(851) <X(851)>`
    * :ref:`X(928) <X(928)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(6) <X(6)>`\ \ :ref:`X(11) <X(11)>`
    * :ref:`X(928) <X(928)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(39017)
-   * :ref:`X(928) <X(928)>` = perspector of hyperbola {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(59) <X(59)>`}}
+   * :ref:`X(928) <X(928)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(59) <X(59)>`}}
    * :ref:`X(928) <X(928)>` = barycentric square root of X(39017)
 
 .. toctree::

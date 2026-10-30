@@ -10,13 +10,13 @@ X(162) = CEVAPOINT OF X(108) AND X(109)
 
 .. enunciation::
 
-   Let La be the A-extraversion of line :ref:`X(1) <X(1)>`\ \ :ref:`X(19) <X(19)>`, and define Lb and Lc cyclically. Let A' = Lb ∩ Lc, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(162) <X(162)>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2018)
+   Let :g:`L_{a} <L_a>` be the A-extraversion of line :ref:`X(1) <X(1)>`\ \ :ref:`X(19) <X(19)>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>` ∩ :g:`L_{c} <L_c>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(162) <X(162)>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2018)
 
 .. figure:: x-00162.svg
    :alt: X(162) = CEVAPOINT OF X(108) AND X(109)
    :align: center
 
-   **X(162) = CEVAPOINT OF X(108) AND X(109)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(162) = CEVAPOINT OF X(108) AND X(109)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -30,10 +30,6 @@ X(162) = CEVAPOINT OF X(108) AND X(109)
    * **Trilinears:** :math:`1/[(b^{2} - c^{2})(b^{2} + c^{2} - a^{2})]`
    * **Trilinears:** :math:`\sec A \csc(B - C) : :`
    * **Trilinears:** :math:`1/(\tan B - \tan C) : :`
-
-.. container:: note-item
-
-   :ref:`X(162) <X(162)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 19 lines
@@ -62,7 +58,7 @@ X(162) = CEVAPOINT OF X(108) AND X(109)
    * :ref:`X(162) <X(162)>` = :ref:`X(6) <X(6)>`-isoconjugate of :ref:`X(525) <X(525)>`
    * :ref:`X(162) <X(162)>` = :term:`crosspoint <crosspoint>` of :ref:`X(811) <X(811)>` and :ref:`X(823) <X(823)>`
    * :ref:`X(162) <X(162)>` = trilinear product of PU(74)
-   * :ref:`X(162) <X(162)>` = perspector of conic {A,B,C,PU(74)}}
+   * :ref:`X(162) <X(162)>` = perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(74)}}
    * :ref:`X(162) <X(162)>` = barycentric product of circumcircle intercepts of line :ref:`X(19) <X(19)>`\ \ :ref:`X(27) <X(27)>`
 
 Notes
@@ -70,11 +66,11 @@ Notes
 
 .. container:: note-item
 
-   Let La be the A-extraversion of line :ref:`X(8) <X(8)>`\ \ :ref:`X(29) <X(29)>`, and define Lb and Lc cyclically. Let A' = Lb ∩ Lc, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(162) <X(162)>`. (Randy Hutson, January 29, 2018)
+   Let :g:`L_{a} <L_a>` be the A-extraversion of line :ref:`X(8) <X(8)>`\ \ :ref:`X(29) <X(29)>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>` ∩ :g:`L_{c} <L_c>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(162) <X(162)>`. (Randy Hutson, January 29, 2018)
 
 .. container:: note-item
 
-   Let La be the A-extraversion of line :ref:`X(9) <X(9)>`\ \ :ref:`X(21) <X(21)>`, and define Lb and Lc cyclically. Let A' = Lb ∩ Lc, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(162) <X(162)>`. (Randy Hutson, January 29, 2018)
+   Let :g:`L_{a} <L_a>` be the A-extraversion of line :ref:`X(9) <X(9)>`\ \ :ref:`X(21) <X(21)>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>` ∩ :g:`L_{c} <L_c>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(162) <X(162)>`. (Randy Hutson, January 29, 2018)
 
 .. container:: note-item
 

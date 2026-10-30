@@ -10,19 +10,19 @@ X(12) = {X(1),X(5)}-HARMONIC CONJUGATE OF X(11)
 
 .. enunciation::
 
-   Let A'B'C' be the touch points of the nine-point circle with the A-, B-, C- excircles, respectively. The lines AA', BB', CC' concur in :ref:`X(12) <X(12)>`.
+   Let :g:`A'B'C' << A' B' C' >>` be the touch points of the nine-point circle with the A-, B-, C- excircles, respectively. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(12) <X(12)>`.
 
 .. figure:: x-00012.svg
    :alt: X(12) = {X(1),X(5)}-HARMONIC CONJUGATE OF X(11)
    :align: center
 
-   **X(12) = {X(1),X(5)}-HARMONIC CONJUGATE OF X(11)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(12) = {X(1),X(5)}-HARMONIC CONJUGATE OF X(11)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`1 + \cos(B - C) : 1 + \cos(C - A) : 1 + \cos(A -B) : :`
    | **Barycentrics:** :math:`a(1 + \cos(B - C)) : :`
-   | **Tripolars:** :math:`(a-b-c) \sqrt{(a^3+a^2 b-a b^2-b^3+a^2 c+3 a b c+b^2 c-a c^2+b c^2-c^3) (a^4-2 a^2 b^2+b^4+a^2 b c-a b^2 c-2 b^3 c-2 a^2 c^2-a b c^2+2 b^2 c^2-2 b c^3+c^4)} : :`
+   | **Tripolars:** :math:`(a-b-c) \sqrt{(a^{3}+a^{2} b-a b^{2}-b^{3}+a^{2} c+3 a b c+b^{2} c-a c^{2}+b c^{2}-c^{3}) (a^{4}-2 a^{2} b^{2}+b^{4}+a^{2} b c-a b^{2} c-2 b^{3} c-2 a^{2} c^{2}-a b c^{2}+2 b^{2} c^{2}-2 b c^{3}+c^{4})} : :`
    | **Search Value (6, 9, 13):** :math:`1.334163924620`
 
 .. collapse:: Alternate Coordinates
@@ -37,8 +37,8 @@ X(12) = {X(1),X(5)}-HARMONIC CONJUGATE OF X(11)
 .. collapse:: Linear Combinations
    :badge: 2 combinations
 
-   * :ref:`X(12) <X(12)>` = R\*\ :ref:`X(1) <X(1)>` + 3r\*\ :ref:`X(2) <X(2)>` - r\*\ :ref:`X(3) <X(3)>`
-   * :ref:`X(12) <X(12)>` = :ref:`X(1) <X(1)>` - 3 X(37701), 2 :ref:`X(5) <X(5)>` - 3 X(38109), 2 :ref:`X(355) <X(355)>` - 3 X(38157), 4 :ref:`X(496) <X(496)>` - 3 X(10959), 2 X(1387) - 3 X(38063), 2 X(5901) - 3 X(38045), X(26470) - 3 X(38109), and many others
+   * :ref:`X(12) <X(12)>` = :math:`R` :ref:`X(1) <X(1)>` + :math:`3r` :ref:`X(2) <X(2)>` - :math:`r` :ref:`X(3) <X(3)>`
+   * :ref:`X(12) <X(12)>` = :ref:`X(1) <X(1)>` - :math:`3` X(37701), :math:`2` :ref:`X(5) <X(5)>` - :math:`3` X(38109), :math:`2` :ref:`X(355) <X(355)>` - :math:`3` X(38157), :math:`4` :ref:`X(496) <X(496)>` - :math:`3` X(10959), :math:`2` X(1387) - :math:`3` X(38063), :math:`2` X(5901) - :math:`3` X(38045), X(26470) - :math:`3` X(38109), and many others
 
 .. container:: note-item
 
@@ -72,10 +72,10 @@ X(12) = {X(1),X(5)}-HARMONIC CONJUGATE OF X(11)
    * :ref:`X(12) <X(12)>` = :ref:`X(6) <X(6)>`-:term:`isoconjugate <isoconjugate>` of X(2185)
    * :ref:`X(12) <X(12)>` = :term:`trilinear pole <trilinear-pole>` of line X(2610)X(4024)
    * :ref:`X(12) <X(12)>` = trilinear square of X(6724)
-   * :ref:`X(12) <X(12)>` = homothetic center of :term:`medial triangle <medial-triangle>` and cross-triangle of ABC and outer Johnson triangle
-   * :ref:`X(12) <X(12)>` = homothetic center of medial triangle and cross-triangle of ABC and 1st Johnson-Yff triangle
-   * :ref:`X(12) <X(12)>` = homothetic center of Euler triangle and cross-triangle of ABC and 2nd Johnson-Yff triangle
-   * :ref:`X(12) <X(12)>` = homothetic center of ABC and triangular hull of circumcircles of BC\ :ref:`X(4) <X(4)>`, CA\ :ref:`X(4) <X(4)>`, and AB\ :ref:`X(4) <X(4)>`; i.e., the outer Johnson triangle
+   * :ref:`X(12) <X(12)>` = homothetic center of :term:`medial triangle <medial-triangle>` and cross-triangle of :g:`ABC << A B C >>` and outer Johnson triangle
+   * :ref:`X(12) <X(12)>` = homothetic center of medial triangle and cross-triangle of :g:`ABC << A B C >>` and 1st Johnson-Yff triangle
+   * :ref:`X(12) <X(12)>` = homothetic center of Euler triangle and cross-triangle of :g:`ABC << A B C >>` and 2nd Johnson-Yff triangle
+   * :ref:`X(12) <X(12)>` = homothetic center of :g:`ABC << A B C >>` and triangular hull of circumcircles of :g:`BC <[ B C ]>`\ :ref:`X(4) <X(4)>`, :g:`CA <[ C A ]>`\ :ref:`X(4) <X(4)>`, and :g:`AB <[ A B ]>`\ :ref:`X(4) <X(4)>`; i.e., the outer Johnson triangle
    * :ref:`X(12) <X(12)>` = centroid of curvatures of nine-point circle and excircles
    * :ref:`X(12) <X(12)>` = X(18772)-:term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X(8) <X(8)>`
    * :ref:`X(12) <X(12)>` = X(i)-:term:`complementary conjugate <complementary-conjugate>` of X(j) for these (i,j): {{:ref:`649 <X(649)>`, 40624}, {2051, :ref:`141 <X(141)>`}, {20028, 3741}, {34434, :ref:`10 <X(10)>`}, {40453, 49598}, {46880, 21246}}

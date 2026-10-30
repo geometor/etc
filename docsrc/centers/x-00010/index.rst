@@ -11,19 +11,19 @@ X(10) = SPIEKER CENTER
 
 .. enunciation::
 
-   Let A' be the intersection of these three lines: the perpendicular from midpoint of CA to line B\ :ref:`X(1) <X(1)>`, the perpendicular from midpoint of AB to line C\ :ref:`X(1) <X(1)>`, the perpendicular from midpoint of A\ :ref:`X(1) <X(1)>` to line BC, and define B' and C' cyclically. The orthocenter of A'B'C' is :ref:`X(10) <X(10)>`, and :ref:`X(10) <X(10)>` is also the perspector of A'B'C' and the :term:`medial triangle <medial-triangle>`. Note that A'B'C' is the :term:`complement <complement>` of the :term:`excentral triangle <excentral-triangle>`, and the extraversion triangle of :ref:`X(10) <X(10)>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
+   Let :g:`A' <A'>` be the intersection of these three lines: the perpendicular from midpoint of :g:`CA <[ C A ]>` to line B\ :ref:`X(1) <X(1)>`, the perpendicular from midpoint of :g:`AB <[ A B ]>` to line C\ :ref:`X(1) <X(1)>`, the perpendicular from midpoint of A\ :ref:`X(1) <X(1)>` to line :g:`BC <[ B C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The orthocenter of :g:`A'B'C' << A' B' C' >>` is :ref:`X(10) <X(10)>`, and :ref:`X(10) <X(10)>` is also the perspector of :g:`A'B'C' << A' B' C' >>` and the :term:`medial triangle <medial-triangle>`. Note that :g:`A'B'C' << A' B' C' >>` is the :term:`complement <complement>` of the :term:`excentral triangle <excentral-triangle>`, and the extraversion triangle of :ref:`X(10) <X(10)>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
 
 .. figure:: x-00010.svg
    :alt: X(10) = SPIEKER CENTER
    :align: center
 
-   **X(10) = SPIEKER CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(10) = SPIEKER CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`bc(b + c) : ca(c + a) : ab(a + b)`
    | **Barycentrics:** :math:`b + c : c + a : a + b`
-   | **Tripolars:** :math:`\sqrt{a^3-2 a b^2-b^3+a b c-2 a c^2-c^3} : :`
+   | **Tripolars:** :math:`\sqrt{a^{3}-2 a b^{2}-b^{3}+a b c-2 a c^{2}-c^{3}} : :`
    | **Search Value (6, 9, 13):** :math:`3.098898934005`
 
 .. collapse:: Alternate Coordinates
@@ -40,7 +40,7 @@ X(10) = SPIEKER CENTER
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(10) <X(10)>` = :ref:`X(1) <X(1)>` - 3\ :ref:`X(2) <X(2)>` = 3\ :ref:`X(2) <X(2)>` + :ref:`X(8) <X(8)>` = :ref:`X(7) <X(7)>` + :ref:`X(8) <X(8)>` + 2 :ref:`X(9) <X(9)>`
+   * :ref:`X(10) <X(10)>` = :ref:`X(1) <X(1)>` - :math:`3` :ref:`X(2) <X(2)>` = :math:`3` :ref:`X(2) <X(2)>` + :ref:`X(8) <X(8)>` = :ref:`X(7) <X(7)>` + :ref:`X(8) <X(8)>` + :math:`2` :ref:`X(9) <X(9)>`
 
 .. container:: note-item
 
@@ -69,13 +69,13 @@ X(10) = SPIEKER CENTER
    * :ref:`X(10) <X(10)>` = X(15319)-complementary conjugate of X(32767)
    * :ref:`X(10) <X(10)>` = radical center of the excircles.
    * :ref:`X(10) <X(10)>` = radical center of extraversions of Conway circle
-   * :ref:`X(10) <X(10)>` = radical center of the polar circles of triangles BCI, CAI, ABI
+   * :ref:`X(10) <X(10)>` = radical center of the polar circles of triangles :g:`BCI << B C I >>`, :g:`CAI << C A I >>`, :g:`ABI << A B I >>`
    * :ref:`X(10) <X(10)>` = :ref:`X(20) <X(20)>`-of-3rd-Euler-triangle
    * :ref:`X(10) <X(10)>` = :ref:`X(4) <X(4)>`-of-4th-Euler-triangle
-   * :ref:`X(10) <X(10)>` = perspector of ABC and the :term:`tangential triangle <tangential-triangle>` of the Feuerbach triangle
+   * :ref:`X(10) <X(10)>` = perspector of :g:`ABC << A B C >>` and the :term:`tangential triangle <tangential-triangle>` of the Feuerbach triangle
    * :ref:`X(10) <X(10)>` = :ref:`X(2) <X(2)>`-:term:`Hirst inverse <hirst-inverse>` of X(6542)
    * :ref:`X(10) <X(10)>` = inverse-in-Steiner-circumellipse of X(6542)
-   * :ref:`X(10) <X(10)>` = SS(a→a') of :ref:`X(5) <X(5)>`, where A'B'C' is the excentral triangle (barycentric substitution)
+   * :ref:`X(10) <X(10)>` = SS(a→a') of :ref:`X(5) <X(5)>`, where :g:`A'B'C' << A' B' C' >>` is the excentral triangle (barycentric substitution)
    * :ref:`X(10) <X(10)>` = orthocenter of :ref:`X(2) <X(2)>`\ \ :ref:`X(4) <X(4)>`\ X(4049)
    * :ref:`X(10) <X(10)>` = midpoint of PU(10)
    * :ref:`X(10) <X(10)>` = bicentric sum of PU(i) for these i: 10, 66
@@ -90,12 +90,12 @@ X(10) = SPIEKER CENTER
    * :ref:`X(10) <X(10)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`191 <X(191)>`), (:ref:`6 <X(6)>`, :ref:`199 <X(199)>`), (:ref:`12 <X(12)>`, :ref:`201 <X(201)>`), (:ref:`37 <X(37)>`, :ref:`210 <X(210)>`), (:ref:`42 <X(42)>`, :ref:`71 <X(71)>`), (:ref:`65 <X(65)>`, :ref:`227 <X(227)>`)
    * :ref:`X(10) <X(10)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`37 <X(37)>`, :ref:`226 <X(226)>`), (:ref:`71 <X(71)>`, :ref:`306 <X(306)>`), (:ref:`191 <X(191)>`, :ref:`502 <X(502)>`), (:ref:`201 <X(201)>`, :ref:`72 <X(72)>`)
    * :ref:`X(10) <X(10)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`75 <X(75)>`), (:ref:`8 <X(8)>`, :ref:`318 <X(318)>`)
-   * :ref:`X(10) <X(10)>` = centroid of ABC\ :ref:`X(8) <X(8)>`
+   * :ref:`X(10) <X(10)>` = centroid of :g:`ABC << A B C >>`\ :ref:`X(8) <X(8)>`
    * :ref:`X(10) <X(10)>` = Kosnita(:ref:`X(8) <X(8)>`,\ :ref:`X(2) <X(2)>`) point
    * :ref:`X(10) <X(10)>` = :ref:`X(578) <X(578)>`-of-2nd-extouch-triangle
    * :ref:`X(10) <X(10)>` = :ref:`X(389) <X(389)>`-of-excentral triangle
    * :ref:`X(10) <X(10)>` = :ref:`X(125) <X(125)>`-of-Fuhrmann triangle
-   * :ref:`X(10) <X(10)>` = perspector of ABC and triangle formed from orthocenters of JaBC, JbCA, JcAB, where Ja, Jb, Jc are excenters
+   * :ref:`X(10) <X(10)>` = perspector of :g:`ABC << A B C >>` and triangle formed from orthocenters of JaBC, JbCA, JcAB, where :g:`J_{a} <J_a>`, :g:`J_{b} <J_b>`, :g:`J_{c} <J_c>` are excenters
    * :ref:`X(10) <X(10)>` = perspector of circumconic centered at :ref:`X(37) <X(37)>`
    * :ref:`X(10) <X(10)>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X(37) <X(37)>`
    * :ref:`X(10) <X(10)>` = trilinear pole of line :ref:`X(523) <X(523)>`\ \ :ref:`X(661) <X(661)>` (the polar of :ref:`X(27) <X(27)>` wrt polar circle)
@@ -110,7 +110,7 @@ X(10) = SPIEKER CENTER
    * :ref:`X(10) <X(10)>` = perspector of Ayme triangle and Danneels-Bevan triangle
    * :ref:`X(10) <X(10)>` = :ref:`X(1) <X(1)>`-of-Danneels-Bevan-triangle
    * :ref:`X(10) <X(10)>` = homothetic center of medial triangle and Danneels-Bevan triangle
-   * :ref:`X(10) <X(10)>` = homothetic center of ABC and :term:`anticomplementary triangle <anticomplementary-triangle>` of Danneels-Bevan triangle
+   * :ref:`X(10) <X(10)>` = homothetic center of :g:`ABC << A B C >>` and :term:`anticomplementary triangle <anticomplementary-triangle>` of Danneels-Bevan triangle
    * :ref:`X(10) <X(10)>` = {:ref:`X(2) <X(2)>`,\ :ref:`X(8) <X(8)>`}-harmonic conjugate of :ref:`X(1) <X(1)>`
    * :ref:`X(10) <X(10)>` = inverse-in-polar-circle of :ref:`X(242) <X(242)>`
    * :ref:`X(10) <X(10)>` = inverse-in-{circumcircle, nine-point circle}-inverter of X(5205)
@@ -125,25 +125,25 @@ X(10) = SPIEKER CENTER
    * :ref:`X(10) <X(10)>` = Cundy-Parry Psi transform of :ref:`X(573) <X(573)>`
    * :ref:`X(10) <X(10)>` = perspector of Ayme and 4th Euler triangles
    * :ref:`X(10) <X(10)>` = barycentric product :ref:`X(101) <X(101)>`\ \*\ :ref:`X(850) <X(850)>`
-   * :ref:`X(10) <X(10)>` = perspector of Gemini triangle 12 and cross-triangle of ABC and Gemini triangle 12
-   * :ref:`X(10) <X(10)>` = perspector of ABC and cross-triangle of ABC and Gemini triangle 15
+   * :ref:`X(10) <X(10)>` = perspector of Gemini triangle 12 and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 12
+   * :ref:`X(10) <X(10)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 15
    * :ref:`X(10) <X(10)>` = trilinear product of vertices of Gemini triangle 15
    * :ref:`X(10) <X(10)>` = homothetic center of Ayme triangle and Gemini triangle 16
-   * :ref:`X(10) <X(10)>` = center of the {ABC, Gemini 18}-circumconic
-   * :ref:`X(10) <X(10)>` = Gemini-triangle-19-to-ABC parallelogic center
+   * :ref:`X(10) <X(10)>` = center of the {:g:`ABC << A B C >>`, Gemini 18}-circumconic
+   * :ref:`X(10) <X(10)>` = Gemini-triangle-19-to-:g:`ABC << A B C >>` parallelogic center
    * :ref:`X(10) <X(10)>` = centroid of Gemini triangle 20
-   * :ref:`X(10) <X(10)>` = perspector of ABC and cross-triangle of ABC and Gemini triangle 25
-   * :ref:`X(10) <X(10)>` = perspector of ABC and Gemini triangle 26
-   * :ref:`X(10) <X(10)>` = perspector of Gemini triangle 39 and cross-triangle of ABC and Gemini triangle 39
-   * :ref:`X(10) <X(10)>` = excentral-to-ABC :term:`barycentric image <barycentric-image>` of :ref:`X(3) <X(3)>`
-   * :ref:`X(10) <X(10)>` = incentral-to-ABC barycentric image of :ref:`X(1) <X(1)>`
+   * :ref:`X(10) <X(10)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 25
+   * :ref:`X(10) <X(10)>` = perspector of :g:`ABC << A B C >>` and Gemini triangle 26
+   * :ref:`X(10) <X(10)>` = perspector of Gemini triangle 39 and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 39
+   * :ref:`X(10) <X(10)>` = excentral-to-:g:`ABC << A B C >>` :term:`barycentric image <barycentric-image>` of :ref:`X(3) <X(3)>`
+   * :ref:`X(10) <X(10)>` = incentral-to-:g:`ABC << A B C >>` barycentric image of :ref:`X(1) <X(1)>`
 
 Notes
 -----
 
 .. container:: note-item
 
-   The Spieker circle is the incircle of the medial triangle; its center, :ref:`X(10) <X(10)>`, is the centroid of the perimeter of ABC.
+   The Spieker circle is the incircle of the medial triangle; its center, :ref:`X(10) <X(10)>`, is the centroid of the perimeter of :g:`ABC << A B C >>`.
 
 .. container:: note-item
 
@@ -151,29 +151,29 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the excentral triangle. :ref:`X(10) <X(10)>` is the radical center of the polar circles of triangles A'BC, B'CA, C'AB. (Randy Hutson, July 31 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the excentral triangle. :ref:`X(10) <X(10)>` is the radical center of the polar circles of triangles :g:`A'BC << A' B C >>`, :g:`B'CA << B' C A >>`, :g:`C'AB << C' A B >>`. (Randy Hutson, July 31 2018)
 
 .. container:: note-item
 
-   Let A\ :sub:`20`\ B\ :sub:`20`\ C\ :sub:`20` be the Gemini triangle 20. Let L\ :sub:`A` be the line through A\ :sub:`20` parallel to BC, and define L\ :sub:`B` and L\ :sub:`C` cyclically. Let A':sub:`20` = L\ :sub:`B`\ ∩L\ :sub:`C`, and define B':sub:`20` and C':sub:`20` cyclically. Triangle A':sub:`20`\ B':sub:`20`\ C':sub:`20` is homothetic to ABC at :ref:`X(10) <X(10)>`. (Randy Hutson, November 30, 2018)
+   Let :g:`A_{20}B_{20}C_{20} << A_20 B_20 C_20 >>` be the Gemini triangle 20. Let :g:`L_{A} <L_A>` be the line through :g:`A_{20} <A_20>` parallel to :g:`BC <[ B C ]>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A'_{20} <A'_20>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`B'_{20} <B'_20>` and :g:`C'_{20} <C'_20>` cyclically. Triangle :g:`A'_{20}B'_{20}C'_{20} << A'_20 B'_20 C'_20 >>` is homothetic to :g:`ABC << A B C >>` at :ref:`X(10) <X(10)>`. (Randy Hutson, November 30, 2018)
 
 .. container:: note-item
 
-   Let O\ :sub:`A` be the circle centered at the A-excenter and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(10) <X(10)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (Randy Hutson, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-excenter and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(10) <X(10)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
 
 .. container:: note-item
 
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the hexyl triangle and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(10) <X(10)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (Randy Hutson, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the hexyl triangle and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(10) <X(10)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
 
 .. container:: note-item
 
-   In the plane of a triangle ABC, let
+   In the plane of a triangle :g:`ABC << A B C >>`, let
 
-      * Ba = reflection of A with in the external angular bisector of B, and define Cb and Ac cyclically;
-      * Ca = reflection of A with in the external angular bisector of C, and define Ab and Bc cyclically;
-      * Va = CBc∩BCb, and define Vb and Vc cyclically.
+      * :g:`B_{a} <B_a>` = reflection of :g:`A <A>` with in the external angular bisector of :g:`B <B>`, and define :g:`C_{b} <C_b>` and :g:`A_{c} <A_c>` cyclically;
+      * :g:`C_{a} <C_a>` = reflection of :g:`A <A>` with in the external angular bisector of :g:`C <C>`, and define :g:`A_{b} <A_b>` and :g:`B_{c} <B_c>` cyclically;
+      * :g:`V_{a} <V_a>` = :g:`CB_{c} <[ C B_c ]>`\ ∩\ :g:`BC_{b} <[ B C_b ]>`, and define :g:`V_{b} <V_b>` and :g:`V_{c} <V_c>` cyclically.
 
-   The triangle VaVbVc is perspective to ABC, and the perspector is :ref:`X(10) <X(10)>`. (:person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, April 19, 2021)
+   The triangle :g:`V_{a}V_{b}V_{c} << V_a V_b V_c >>` is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X(10) <X(10)>`. (:person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, April 19, 2021)
 
 .. container:: note-item
 
@@ -181,7 +181,7 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the 2nd :term:`extouch triangle <extouch-triangle>`. Let A″ be the trilinear product B'\*C', and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(10) <X(10)>`. Also, let A''B''C'' be the 1st circumperp triangle. The Simson lines of A'', B'', C'' concur in :ref:`X(10) <X(10)>`. (Randy Hutson, November 18, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the 2nd :term:`extouch triangle <extouch-triangle>`. Let :g:`A″ <A″>` be the trilinear product :g:`B' <B'>`\ \*\ :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(10) <X(10)>`. Also, let :g:`A″B″C″ << A″ B″ C″ >>` be the 1st circumperp triangle. The Simson lines of :g:`A″ <A″>`, :g:`B″ <B″>`, :g:`C″ <C″>` concur in :ref:`X(10) <X(10)>`. (Randy Hutson, November 18, 2015)
 
 .. toctree::
    :hidden:

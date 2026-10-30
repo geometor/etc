@@ -11,35 +11,31 @@ X(99) = STEINER POINT
 
 .. enunciation::
 
-   Let L\ :sub:`A` be the reflection of the line :ref:`X(3) <X(3)>`\ \ :ref:`X(6) <X(6)>` in line BC, and define L\ :sub:`B` and L\ :sub:`C` cyclically. Let A' = L\ :sub:`B`\ ∩L\ :sub:`C`, B' = L\ :sub:`C`\ ∩L\ :sub:`A`, C' = L\ :sub:`A`\ ∩L\ :sub:`B`. The lines AA', BB', CC' concur in :ref:`X(99) <X(99)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   Let :g:`L_{A} <L_A>` be the reflection of the line :ref:`X(3) <X(3)>`\ \ :ref:`X(6) <X(6)>` in line :g:`BC <[ B C ]>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A' <A'>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, :g:`B' <B'>` = :g:`L_{C} <L_C>`\ ∩\ :g:`L_{A} <L_A>`, :g:`C' <C'>` = :g:`L_{A} <L_A>`\ ∩\ :g:`L_{B} <L_B>`. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(99) <X(99)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. figure:: x-00099.svg
    :alt: X(99) = STEINER POINT
    :align: center
 
-   **X(99) = STEINER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(99) = STEINER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`bc/(b^{2} - c^{2}) : ca/(c^{2} - a^{2}) : ab/(a^{2} - b^{2})`
    | **Barycentrics:** :math:`1/(b^{2} - c^{2}) : 1/(c^{2} - a^{2}) : 1/(a^{2} - b^{2})`
-   | **Tripolars:** :math:`|a (b^2 - c^2)| : :`
+   | **Tripolars:** :math:`|a (b^{2} - c^{2})| : :`
    | **Search Value (6, 9, 13):** :math:`3.438729453648`
 
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
    * **Trilinears:** :math:`b^{2}c^{2} \csc(B - C) : c^{2}a^{2} \csc(C - A) : a^{2}b^{2} \csc(A - B)`
-   * **Barycentrics:** :math:`d(A,L) : :`, where d = directed distance and L = :ref:`X(115) <X(115)>`\ \ :ref:`X(125) <X(125)>`
+   * **Barycentrics:** :math:`d(A,L) : :`, where d = directed distance and :g:`L <L>` = :ref:`X(115) <X(115)>`\ \ :ref:`X(125) <X(125)>`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(99) <X(99)>` = 2(r\ :sup:`2` + 4rR - s\ :sup:`2`)(r\ :sup:`2` + 2rR + s\ :sup:`2`)\*\ :ref:`X(1) <X(1)>` - 3(r\ :sup:`4` + 4Rr\ :sup:`3` + 2r\ :sup:`2`\ s\ :sup:`2` - 4rRs\ :sup:`2` + s\ :sup:`4`)\*\ :ref:`X(2) <X(2)>` - 4r\ :sup:`2`\ (r\ :sup:`2` + 4rR + 5s\ :sup:`2`)\*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-
-.. container:: note-item
-
-   :ref:`X(99) <X(99)>` lies.
+   * :ref:`X(99) <X(99)>` = :math:`2(r^{2} + 4rR - s^{2})(r^{2} + 2rR + s^{2})` :ref:`X(1) <X(1)>` - :math:`3(r^{4} + 4Rr^{3} + 2r^{2}s^{2} - 4rRs^{2} + s^{4})` :ref:`X(2) <X(2)>` - :math:`4r^{2}(r^{2} + 4rR + 5s^{2})` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. collapse:: Incident Central Lines
    :badge: 931 lines
@@ -64,10 +60,10 @@ X(99) = STEINER POINT
    * :ref:`X(99) <X(99)>` = :ref:`X(6) <X(6)>`-of-1st-anti-Brocard-triangle
    * :ref:`X(99) <X(99)>` = :ref:`X(381) <X(381)>`-of-anti-McCay-triangle
    * :ref:`X(99) <X(99)>` = circumcircle-antipode of :ref:`X(98) <X(98)>`
-   * :ref:`X(99) <X(99)>` = point of intersection, other than A, B, and C, of the circumcircle and Steiner ellipse
+   * :ref:`X(99) <X(99)>` = point of intersection, other than :g:`A <A>`, :g:`B <B>`, and :g:`C <C>`, of the circumcircle and Steiner ellipse
    * :ref:`X(99) <X(99)>` = Ψ(X(i), X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`75 <X(75)>`), (:ref:`2 <X(2)>`, :ref:`39 <X(39)>`), (:ref:`3 <X(3)>`, :ref:`69 <X(69)>`), (:ref:`4 <X(4)>`, :ref:`69 <X(69)>`), (:ref:`37 <X(37)>`, :ref:`2 <X(2)>`), (:ref:`51 <X(51)>`, :ref:`5 <X(5)>`), (:ref:`351 <X(351)>`, :ref:`690 <X(690)>`)
-   * :ref:`X(99) <X(99)>` = point of intersection, other than A, B, C, of the circumcircle and hyperbola {A,B,C,PU(1)}}
-   * :ref:`X(99) <X(99)>` = point of intersection, other than A, B, C, of the circumcircle and hyperbola {A,B,C,PU(37)}}
+   * :ref:`X(99) <X(99)>` = point of intersection, other than :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, of the circumcircle and hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(1)}}
+   * :ref:`X(99) <X(99)>` = point of intersection, other than :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, of the circumcircle and hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(37)}}
    * :ref:`X(99) <X(99)>` = trilinear product of PU(90)
    * :ref:`X(99) <X(99)>` = similitude center of (equilateral) :term:`antipedal triangles <antipedal-triangle>` of :ref:`X(13) <X(13)>` and :ref:`X(14) <X(14)>`
    * :ref:`X(99) <X(99)>` = Steiner-circumellipse-antipode of :ref:`X(671) <X(671)>`
@@ -77,11 +73,11 @@ X(99) = STEINER POINT
    * :ref:`X(99) <X(99)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of X(2501)
    * :ref:`X(99) <X(99)>` = :ref:`X(6) <X(6)>`-isoconjugate of :ref:`X(661) <X(661)>`
    * :ref:`X(99) <X(99)>` = X(1577)-isoconjugate of :ref:`X(32) <X(32)>`
-   * :ref:`X(99) <X(99)>` = concurrence of reflections in sides of ABC of line :ref:`X(4) <X(4)>`\ \ :ref:`X(69) <X(69)>`
+   * :ref:`X(99) <X(99)>` = concurrence of reflections in sides of :g:`ABC << A B C >>` of line :ref:`X(4) <X(4)>`\ \ :ref:`X(69) <X(69)>`
    * :ref:`X(99) <X(99)>` = Λ(:ref:`X(1) <X(1)>`, :ref:`X(512) <X(512)>`)
    * :ref:`X(99) <X(99)>` = isotomic conjugate wrt 1st Brocard triangle of :ref:`X(76) <X(76)>`
-   * :ref:`X(99) <X(99)>` = perspector of ABC and the :term:`tangential triangle <tangential-triangle>`, wrt the :term:`anticomplementary triangle <anticomplementary-triangle>`, of the bianticevian conic of :ref:`X(1) <X(1)>` and :ref:`X(2) <X(2)>`
-   * :ref:`X(99) <X(99)>` = perspector of ABC and the tangential triangle, wrt the tangential triangle, of the Stammler hyperbola
+   * :ref:`X(99) <X(99)>` = perspector of :g:`ABC << A B C >>` and the :term:`tangential triangle <tangential-triangle>`, wrt the :term:`anticomplementary triangle <anticomplementary-triangle>`, of the bianticevian conic of :ref:`X(1) <X(1)>` and :ref:`X(2) <X(2)>`
+   * :ref:`X(99) <X(99)>` = perspector of :g:`ABC << A B C >>` and the tangential triangle, wrt the tangential triangle, of the Stammler hyperbola
    * :ref:`X(99) <X(99)>` = reflection of :ref:`X(691) <X(691)>` in the Euler line
    * :ref:`X(99) <X(99)>` = reflection of :ref:`X(805) <X(805)>` in the Brocard axis
    * :ref:`X(99) <X(99)>` = reflection of X(2703) in line :ref:`X(1) <X(1)>`\ \ :ref:`X(3) <X(3)>`
@@ -92,12 +88,12 @@ X(99) = STEINER POINT
    * :ref:`X(99) <X(99)>` = inverse-in-{circumcircle, nine-point circle}-inverter of :ref:`X(126) <X(126)>`
    * :ref:`X(99) <X(99)>` = inverse-in-2nd-Brocard-circle of :ref:`X(76) <X(76)>`
    * :ref:`X(99) <X(99)>` = trilinear product of vertices of circumcircle antipode of circumorthic triangle
-   * :ref:`X(99) <X(99)>` = 1st-Parry-to-ABC :term:`similarity image <similarity-image>` of :ref:`X(2) <X(2)>`
+   * :ref:`X(99) <X(99)>` = 1st-Parry-to-:g:`ABC << A B C >>` :term:`similarity image <similarity-image>` of :ref:`X(2) <X(2)>`
    * :ref:`X(99) <X(99)>` = crossdifference of PU(105)
    * :ref:`X(99) <X(99)>` = X(1691) of 6th Brocard triangle
    * :ref:`X(99) <X(99)>` = :term:`eigencenter <eigencenter>` of circummedial triangle
    * :ref:`X(99) <X(99)>` = eigencenter of circumsymmedial triangle
-   * :ref:`X(99) <X(99)>` = perspector of ABC and cross-triangle of circumcevian triangles of PU(1)
+   * :ref:`X(99) <X(99)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of circumcevian triangles of PU(1)
    * :ref:`X(99) <X(99)>` = :ref:`X(98) <X(98)>`-of-anti-Artzt-triangle
    * :ref:`X(99) <X(99)>` = :ref:`X(2) <X(2)>`-of-1st-anti-Parry-triangle
    * :ref:`X(99) <X(99)>` = Thomson-isogonal conjugate of :ref:`X(511) <X(511)>`
@@ -110,8 +106,8 @@ X(99) = STEINER POINT
    * :ref:`X(99) <X(99)>` = homothetic center of anticomplementary triangle and mid-triangle of antipedal triangles of :ref:`X(13) <X(13)>` and :ref:`X(14) <X(14)>`
    * :ref:`X(99) <X(99)>` = barycentric square root of X(4590)
    * :ref:`X(99) <X(99)>` = barycentric product of circumcircle intercepts of line :ref:`X(2) <X(2)>`\ \ :ref:`X(39) <X(39)>`
-   * :ref:`X(99) <X(99)>` = perspector of ABC and vertex triangle of 1st and 2nd isodynamic-Dao triangles
-   * :ref:`X(99) <X(99)>` = orthic-to-ABC :term:`functional image <functional-image>` of :ref:`X(130) <X(130)>`
+   * :ref:`X(99) <X(99)>` = perspector of :g:`ABC << A B C >>` and vertex triangle of 1st and 2nd isodynamic-Dao triangles
+   * :ref:`X(99) <X(99)>` = orthic-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X(130) <X(130)>`
    * :ref:`X(99) <X(99)>` = tangential-isogonal conjugate of X(33704)
    * :ref:`X(99) <X(99)>` = trilinear pole, wrt circumtangential triangle, of Brocard axis
    * :ref:`X(99) <X(99)>` = Vu circlecevian point of PU(1)
@@ -122,7 +118,7 @@ X(99) = STEINER POINT
    * :ref:`X(99) <X(99)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(31998)
    * :ref:`X(99) <X(99)>` = perspector of circumconic centered at X(31998)
    * :ref:`X(99) <X(99)>` = Cundy-Parry Psi transform of X(34157)
-   * :ref:`X(99) <X(99)>` = X(39156)-of-orthic-triangle if ABC is acute
+   * :ref:`X(99) <X(99)>` = X(39156)-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(99) <X(99)>` = Conway-circle-inverse of X(38477)
    * :ref:`X(99) <X(99)>` = Steiner-circumellipse-:ref:`X(1) <X(1)>`-antipode of X(18827)
    * :ref:`X(99) <X(99)>` = Steiner-circumellipse-:ref:`X(3) <X(3)>`-antipode of :ref:`X(290) <X(290)>`
@@ -142,31 +138,31 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the anticomplement of the Feuerbach triangle. Let A″B″C″ be the tangential triangle of A'B'C'. Let A\* be the cevapoint of B″ and C″, and define B\* and C\* cyclically. The lines AA\*, BB\*, CC\* concur in :ref:`X(99) <X(99)>`. (Randy Hutson, February 10, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the anticomplement of the Feuerbach triangle. Let :g:`A″B″C″ << A″ B″ C″ >>` be the tangential triangle of :g:`A'B'C' << A' B' C' >>`. Let :g:`A* <A*>` be the cevapoint of :g:`B″ <B″>` and :g:`C″ <C″>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(99) <X(99)>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 
-   Let La, Lb, Lc be the lines through A, B, C, resp. parallel to the Brocard axis. Let Ma, Mb, Mc be the reflections of BC, CA, AB in La, Lb, Lc, resp. Let A' = Mb∩Mc, and define B' and C' cyclically. Triangle A'B'C' is inversely similar to ABC with similarity ratio 3. Let A″B″C″ be the reflection of A'B'C' in the Brocard axis. The triangle A″B″C″ is homothetic to ABC, with center of homothety :ref:`X(115) <X(115)>` and centroid :ref:`X(99) <X(99)>`. See :cite:`Hyacinthos #16741 <hyacinthos>`/16782, Sep 2008. (Randy Hutson, February 10, 2016)
+   Let :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` be the lines through :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, resp. parallel to the Brocard axis. Let :g:`M_{a} <M_a>`, :g:`M_{b} <M_b>`, :g:`M_{c} <M_c>` be the reflections of :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>` in :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>`, resp. Let :g:`A' <A'>` = :g:`M_{b} <M_b>`\ ∩\ :g:`M_{c} <M_c>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Triangle :g:`A'B'C' << A' B' C' >>` is inversely similar to :g:`ABC << A B C >>` with similarity ratio 3. Let :g:`A″B″C″ << A″ B″ C″ >>` be the reflection of :g:`A'B'C' << A' B' C' >>` in the Brocard axis. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to :g:`ABC << A B C >>`, with center of homothety :ref:`X(115) <X(115)>` and centroid :ref:`X(99) <X(99)>`. See :cite:`Hyacinthos #16741 <hyacinthos>`/16782, Sep 2008. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 
-   Let A', B' and C' be the intersections of the de Longchamps line and lines BC, CA, AB, resp. The circumcircles of AB'C', BC'A', CA'B' concur in :ref:`X(99) <X(99)>`. (Randy Hutson, February 10, 2016)
+   Let :g:`A' <A'>`, :g:`B' <B'>` and :g:`C' <C'>` be the intersections of the de Longchamps line and lines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, resp. The circumcircles of :g:`AB'C' << A B' C' >>`, :g:`BC'A' << B C' A' >>`, :g:`CA'B' << C A' B' >>` concur in :ref:`X(99) <X(99)>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 
-   Let A', B', C' be the intersections of the Brocard axis and lines BC, CA, AB, resp. Let Oa, Ob, Oc be the circumcenters of AB'C', BC'A', CA'B', resp. The lines AOa, BOb, COc concur in :ref:`X(99) <X(99)>`. (Randy Hutson, February 10, 2016)
+   Let :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>` be the intersections of the Brocard axis and lines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, resp. Let :g:`O_{a} <O_a>`, :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>` be the circumcenters of :g:`AB'C' << A B' C' >>`, :g:`BC'A' << B C' A' >>`, :g:`CA'B' << C A' B' >>`, resp. The lines :g:`AO_{a} <[ A O_a ]>`, :g:`BO_{b} <[ B O_b ]>`, :g:`CO_{c} <[ C O_c ]>` concur in :ref:`X(99) <X(99)>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the 1st Brocard triangle. Let La be the line through A parallel to B'C', and define Lb and Lc cyclically. La, Lb, Lc concur in :ref:`X(99) <X(99)>`. (Randy Hutson, February 10, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the 1st Brocard triangle. Let :g:`L_{a} <L_a>` be the line through :g:`A <A>` parallel to :g:`B'C' <[ B' C' ]>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` concur in :ref:`X(99) <X(99)>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 
-   Let A' be the trilinear pole of the perpendicular bisector of BC, and define B' and C' cyclically. A'B'C' is also the anticomplement of the anticomplement of the midheight triangle. :ref:`X(99) <X(99)>` is the trilinear product A'\*B'\*C'. (Randy Hutson, January 29, 2018)
+   Let :g:`A' <A'>` be the trilinear pole of the perpendicular bisector of :g:`BC <[ B C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. :g:`A'B'C' << A' B' C' >>` is also the anticomplement of the anticomplement of the midheight triangle. :ref:`X(99) <X(99)>` is the trilinear product :g:`A' <A'>`\ \*\ :g:`B' <B'>`\ \*\ :g:`C' <C'>`. (Randy Hutson, January 29, 2018)
 
 .. container:: note-item
 
-   Let A'B'C' be the 1st Brocard triangle. Let A″ be the reflection of A in line B'C', and define B″, C″ cyclically. Let A″' be the reflection of A' in line BC, and define B″', C″' cyclically. Let A\* = B″B″'∩\C″C″', and define B\*, C\* cyclically. Triangle A\*B\*C\* is homothetic to A'B'C' at :ref:`X(99) <X(99)>`. (Randy Hutson, June 27, 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the 1st Brocard triangle. Let :g:`A″ <A″>` be the reflection of :g:`A <A>` in line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. Let A″' be the reflection of :g:`A' <A'>` in line :g:`BC <[ B C ]>`, and define B″', C″' cyclically. Let :g:`A* <A*>` = B″B″'∩\C″C″', and define :g:`B* <B*>`, :g:`C* <C*>` cyclically. Triangle :g:`A*B*C* << A* B* C* >>` is homothetic to :g:`A'B'C' << A' B' C' >>` at :ref:`X(99) <X(99)>`. (Randy Hutson, June 27, 2018)
 
 .. container:: note-item
 
@@ -174,7 +170,7 @@ Notes
 
 .. container:: note-item
 
-   Let N\ :sub:`A`\ N\ :sub:`B`\ N\ :sub:`C` and N':sub:`A`\ N':sub:`B`\ N':sub:`C` be the inner and outer Napoleon triangles, resp. Let A' be the reflection of N\ :sub:`A` in line N':sub:`B`\ N':sub:`C`, and define B' and C' cyclically. Let A″ be the reflection of N':sub:`A` in line N\ :sub:`B`\ N\ :sub:`C`, and define B″ and C″ cyclically. Triangles A'B'C' and A″B″C″ are equilateral and inversely similar, with similitude center :ref:`X(99) <X(99)>`. (Randy Hutson, January 17, 2020)
+   Let :g:`N_{A}N_{B}N_{C} << N_A N_B N_C >>` and :g:`N'_{A}N'_{B}N'_{C} << N'_A N'_B N'_C >>` be the inner and outer Napoleon triangles, resp. Let :g:`A' <A'>` be the reflection of :g:`N_{A} <N_A>` in line :g:`N'_{B}N'_{C} <[ N'_B N'_C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Let :g:`A″ <A″>` be the reflection of :g:`N'_{A} <N'_A>` in line :g:`N_{B}N_{C} <[ N_B N_C ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Triangles :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>` are equilateral and inversely similar, with similitude center :ref:`X(99) <X(99)>`. (Randy Hutson, January 17, 2020)
 
 .. container:: note-item
 
@@ -182,11 +178,11 @@ Notes
 
 .. container:: note-item
 
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the Moses-Steiner osculatory triangle and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(99) <X(99)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (Randy Hutson, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the Moses-Steiner osculatory triangle and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(99) <X(99)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
 
 .. container:: note-item
 
-   Let L\ :sub:`A` be the tangent at A to circle {A,PU(1)}}, and define L\ :sub:`B` and L\ :sub:`C` cyclically. The lines L\ :sub:`A`, L\ :sub:`B`, L\ :sub:`C` concur in :ref:`X(99) <X(99)>`. (Randy Hutson, August 30, 2020)
+   Let :g:`L_{A} <L_A>` be the tangent at :g:`A <A>` to circle {A,PU(1)}}, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. The lines :g:`L_{A} <L_A>`, :g:`L_{B} <L_B>`, :g:`L_{C} <L_C>` concur in :ref:`X(99) <X(99)>`. (Randy Hutson, August 30, 2020)
 
 .. container:: note-item
 
@@ -194,11 +190,11 @@ Notes
 
 .. container:: note-item
 
-   Let O be a point (not necessarily :ref:`X(3) <X(3)>`. Let Q1,Q2,...Qn be a regular n-gon with center O. Let P be a point, and define n triangles T1=Q1Q2P, T2=Q2Q3P, ..., Tn=QnQ1P.
+   Let :g:`O <O>` be a point (not necessarily :ref:`X(3) <X(3)>`. Let :g:`Q_{1} <Q_1>`,\ :g:`Q_{2} <Q_2>`,...Qn be a regular n-gon with center O. Let :g:`P <P>` be a point, and define n triangles :g:`T_{1} <T_1>`\ =Q1Q2P, :g:`T_{2} <T_2>`\ =Q2Q3P, ..., Tn=QnQ1P.
 
-   **Claim 1:** for all n, the points :ref:`X(2) <X(2)>`-of-Ti are concyclic on a first circle whose center O2 is collinear with O,P.
+   **Claim 1:** for all n, the points :ref:`X(2) <X(2)>`-of-Ti are concyclic on a first circle whose center :g:`O_{2} <O_2>` is collinear with :g:`O <O>`,P.
 
-   **Claim 2:** for all n, the lpoints :ref:`X(99) <X(99)>`-of-Ti are concyclic with P on a second circle whose center O99 is also collinear with O,P. `Figure <https://user-images.githubusercontent.com/16231062/145615241-9b09850a-6c6f-4d0c-bffc-468fbd7ec73a.png>`__. (:person:`Dan Reznik <dan-reznik>`, December 10, 2021)
+   **Claim 2:** for all n, the lpoints :ref:`X(99) <X(99)>`-of-Ti are concyclic with :g:`P <P>` on a second circle whose center O99 is also collinear with :g:`O <O>`,P. `Figure <https://user-images.githubusercontent.com/16231062/145615241-9b09850a-6c6f-4d0c-bffc-468fbd7ec73a.png>`__. (:person:`Dan Reznik <dan-reznik>`, December 10, 2021)
 
 .. container:: note-item
 

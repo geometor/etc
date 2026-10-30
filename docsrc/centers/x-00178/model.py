@@ -28,7 +28,7 @@ def construct_x_00178(
     X_188 = eval_trilinear_point(model, A, B, C, 'csc(A/2)', ID="X(188)", classes=["center", "incident"])
     central_line(model, X_2, X_188, 2, 188, incident=True)
     X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center", "incident"])
-    X_236 = eval_trilinear_point(model, A, B, C, '(csc(A/2))*(cos(B/2) + cos(C/2) - cos(A/2))', ID="X(236)", classes=["center", "incident"])
+    X_236 = eval_trilinear_point(model, A, B, C, '(1 + sin(A/2))/sin(A)', ID="X(236)", classes=["center", "incident"])
     central_line(model, X_8, X_236, 8, 236, incident=True)
     return promote_point_to_top(model, X_178)
 

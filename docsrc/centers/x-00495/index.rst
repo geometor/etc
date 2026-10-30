@@ -11,13 +11,13 @@ X(495) = JOHNSON MIDPOINT
 
 .. enunciation::
 
-   :ref:`X(495) <X(495)>` is the midpoint of segments C1-to-P1, C2-to-P2, C3-to-P3 in the Johnson four-circle configuration.
+   :ref:`X(495) <X(495)>` is the midpoint of segments :g:`C_{1} <C_1>`-to-:g:`P_{1} <P_1>`, :g:`C_{2} <C_2>`-to-:g:`P_{2} <P_2>`, :g:`C_{3} <C_3>`-to-:g:`P_{3} <P_3>` in the Johnson four-circle configuration.
 
 .. figure:: x-00495.svg
    :alt: X(495) = JOHNSON MIDPOINT
    :align: center
 
-   **X(495) = JOHNSON MIDPOINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(495) = JOHNSON MIDPOINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,11 +28,7 @@ X(495) = JOHNSON MIDPOINT
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(495) <X(495)>` = 2(R/r)\*\ :ref:`X(1) <X(1)>` + 3\ :ref:`X(2) <X(2)>` - :ref:`X(3) <X(3)>`
-
-.. container:: note-item
-
-   :ref:`X(495) <X(495)>` lies.
+   * :ref:`X(495) <X(495)>` = :math:`2(R/r)` :ref:`X(1) <X(1)>` + :math:`3` :ref:`X(2) <X(2)>` - :ref:`X(3) <X(3)>`
 
 .. collapse:: Incident Central Lines
    :badge: 18 lines

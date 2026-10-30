@@ -10,34 +10,30 @@ X(572) = ORTHOGONAL OF X(58)
 
 .. enunciation::
 
-   :ref:`X(572) <X(572)>` is the intersection of the Brocard axes of ABC, the Feuerbach triangle, and the Apollonius triangle. (:person:`Randy Hutson <randy-hutson>`, March 21, 2019)
+   :ref:`X(572) <X(572)>` is the intersection of the Brocard axes of :g:`ABC << A B C >>`, the Feuerbach triangle, and the Apollonius triangle. (:person:`Randy Hutson <randy-hutson>`, March 21, 2019)
 
 .. figure:: x-00572.svg
    :alt: X(572) = ORTHOGONAL OF X(58)
    :align: center
 
-   **X(572) = ORTHOGONAL OF X(58)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(572) = ORTHOGONAL OF X(58)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = cos(A - U), where cot U = cot(A/2) cot(B/2) cot(C/2) (Joe Goggins, 11/26/08)
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = \cos(A - U)`, where cot :math:`U = \cot(A/2) \cot(B/2) \cot(C/2)` (Joe Goggins, 11/26/08)
    | **Search Value (6, 9, 13):** :math:`5.234901251064`
 
 .. collapse:: Alternate Coordinates
    :badge: 3 forms
 
-   * **Trilinears:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where g(A,B,C) = sin A + cot D/2 cos A,, cot D/2 = (a + b + c)\ :sup:`2`/(4\*area)
+   * **Trilinears:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where :math:`g(A,B,C) = \sin A + \cot D/2 \cos A`, cot :math:`D/2 = (a + b + c)^{2}/(4 \operatorname{area})`
    * **Trilinears:** :math:`s \cos A + r \sin A : :`
-   * **Trilinears:** :math:`a (a^3 - a (b^2 - b c + c^2) - b c (b + c)) : :`
+   * **Trilinears:** :math:`a (a^{3} - a (b^{2} - b c + c^{2}) - b c (b + c)) : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(572) <X(572)>` = s\*\ :ref:`X(3) <X(3)>` + r\*cot(ω)\*\ :ref:`X(6) <X(6)>`
-
-.. container:: note-item
-
-   :ref:`X(572) <X(572)>` lies.
+   * :ref:`X(572) <X(572)>` = :math:`s` :ref:`X(3) <X(3)>` + :math:`r \cot(\omega )` :ref:`X(6) <X(6)>`
 
 .. collapse:: Incident Central Lines
    :badge: 14 lines

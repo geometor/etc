@@ -10,13 +10,13 @@ X(42) = CROSSPOINT OF INCENTER AND SYMMEDIAN POINT
 
 .. enunciation::
 
-   Let A'B'C' be the extangents triangle. Let La be the :term:`trilinear polar <trilinear-polar>` of A', and define Lb and Lc cyclically. Let A″ = Lb∩Lc, B″ = Lc∩La, C″ = La∩Lb. The lines AA″, BB″, CC″ concur in :ref:`X(42) <X(42)>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the extangents triangle. Let :g:`L_{a} <L_a>` be the :term:`trilinear polar <trilinear-polar>` of :g:`A' <A'>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, :g:`B″ <B″>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C″ <C″>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(42) <X(42)>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
 
 .. figure:: x-00042.svg
    :alt: X(42) = CROSSPOINT OF INCENTER AND SYMMEDIAN POINT
    :align: center
 
-   **X(42) = CROSSPOINT OF INCENTER AND SYMMEDIAN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(42) = CROSSPOINT OF INCENTER AND SYMMEDIAN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -31,10 +31,6 @@ X(42) = CROSSPOINT OF INCENTER AND SYMMEDIAN POINT
    * **Trilinears:** :math:`(1 + \cos A)(\cos B + \cos C) : (1 + \cos B)(\cos C + \cos A) : (1 + \cos C)(\cos A + \cos B)`
    * **Trilinears:** :math:`a(ar - S) : b(br - S): c(cr - S)`
    * **Trilinears:** :math:`\csc B + \csc C : :`
-
-.. container:: note-item
-
-   :ref:`X(42) <X(42)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 29 lines
@@ -65,10 +61,10 @@ X(42) = CROSSPOINT OF INCENTER AND SYMMEDIAN POINT
    * :ref:`X(42) <X(42)>` = :ref:`X(75) <X(75)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(58) <X(58)>`
    * :ref:`X(42) <X(42)>` = :ref:`X(92) <X(92)>`-isoconjugate of X(1790)
    * :ref:`X(42) <X(42)>` = trilinear square root of :ref:`X(872) <X(872)>`
-   * :ref:`X(42) <X(42)>` = perspector of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of 1st Conway triangle
-   * :ref:`X(42) <X(42)>` = perspector of ABC and unary cofactor triangle of 5th Conway triangle
+   * :ref:`X(42) <X(42)>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of 1st Conway triangle
+   * :ref:`X(42) <X(42)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of 5th Conway triangle
    * :ref:`X(42) <X(42)>` = perspector of unary cofactor triangles of 1st and 5th Conway triangles
-   * :ref:`X(42) <X(42)>` = perspector of ABC and unary cofactor triangle of Gemini triangle 2
+   * :ref:`X(42) <X(42)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of Gemini triangle 2
    * :ref:`X(42) <X(42)>` = barycentric product of vertices of Gemini triangle 15
 
 Notes
@@ -76,11 +72,11 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the extangents triangle. Let A″ be the trilinear product B'\*C', and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(42) <X(42)>`.(Randy Hutson, December 26, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the extangents triangle. Let :g:`A″ <A″>` be the trilinear product :g:`B' <B'>`\ \*\ :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(42) <X(42)>`.(Randy Hutson, December 26, 2015)
 
 .. container:: note-item
 
-   Let Ab, Ac, Bc, Ba, Ca, Cb be as defined at X(3588). Let A\* be the intersection of the tangents to the Myakishev conic at Ba and Ca, and define B\* and C\* cyclically. The lines AA\*, BB\*, CC\* concur in :ref:`X(42) <X(42)>`.(Randy Hutson, December 26, 2015)
+   Let :g:`A_{b} <A_b>`, :g:`A_{c} <A_c>`, :g:`B_{c} <B_c>`, :g:`B_{a} <B_a>`, :g:`C_{a} <C_a>`, :g:`C_{b} <C_b>` be as defined at X(3588). Let :g:`A* <A*>` be the intersection of the tangents to the Myakishev conic at :g:`B_{a} <B_a>` and :g:`C_{a} <C_a>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(42) <X(42)>`.(Randy Hutson, December 26, 2015)
 
 .. container:: note-item
 

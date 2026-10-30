@@ -10,22 +10,24 @@ X(618) = COMPLEMENT OF X(13)
 
 .. enunciation::
 
-   Trilinears F(13)/a - csc(A + π/3) : F(13)/b - csc(B + π/3) : F(13)/c - csc(C + π/3)
+   :ref:`X(618) <X(618)>` = reflection of :ref:`X(619) <X(619)>` in :ref:`X(620) <X(620)>`
 
 .. figure:: x-00618.svg
    :alt: X(618) = COMPLEMENT OF X(13)
    :align: center
 
-   **X(618) = COMPLEMENT OF X(13)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(618) = COMPLEMENT OF X(13)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where, f(a,b,c) = [2S\ :sub:`B`\ S\ :sub:`C` + 5S\ :sub:`A`\ a\ :sup:`2` + 2 sqr(3)(b\ :sup:`2` + c\ :sup:`2`) area]/a
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = [2S_{B}S_{C} + 5S_{A}a^{2} + 2 \sqrt{3}(b^{2} + c^{2}) \operatorname{area}]/a`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`3.906080612831`
 
-.. container:: note-item
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-   :ref:`X(618) <X(618)>` lies.
+   * **Trilinears:** :math:`F(13)/a - \csc(A + \pi /3) : F(13)/b - \csc(B + \pi /3) : F(13)/c - \csc(C + \pi /3)`
 
 .. collapse:: Incident Central Lines
    :badge: 11 lines
@@ -47,13 +49,6 @@ X(618) = COMPLEMENT OF X(13)
    * :ref:`X(618) <X(618)>` = :ref:`X(2) <X(2)>`-Ceva conjugate of :ref:`X(396) <X(396)>`
    * :ref:`X(618) <X(618)>` = :ref:`X(15) <X(15)>`-of-:ref:`X(2) <X(2)>`-Brocard-triangle
    * :ref:`X(618) <X(618)>` = outer Napoleon :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(17) <X(17)>`
-
-Notes
------
-
-.. container:: note-item
-
-   Barycentrics g(a,b,c) : g(b,c,a) : g(c,a,b), where g(a,b,c) = af(a,b,c)
 
 .. toctree::
    :hidden:

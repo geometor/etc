@@ -12,7 +12,6 @@ from geometor.etc.ops import (
     circumcenter_of,
     construct_baseline_triangle,
     create_model,
-    eval_barycentric_point,
     eval_trilinear_point,
     isogonal_conjugate,
     orthocenter_of,
@@ -26,7 +25,7 @@ def construct_x_00276(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(276) = ISOGONAL CONJUGATE OF X(217) on reference triangle ABC."""
-    X_217 = eval_barycentric_point(model, A, B, C, 'a**(4)*(a**(2) - b**(2) - c**(2))*(a**(2)*b**(2) - b**(4) + a**(2)*c**(2) + 2*b**(2)*c**(2) - c**(4))', ID="X(217)", classes=["center"])
+    X_217 = point_from_barycentrics(model, A, B, C, 0.28340965, 0.39731376, 0.31927659, ID="X(217)", classes=["center"])
     X_276 = isogonal_conjugate(model, A, B, C, X_217, ID="X(276)", classes=["selected", "target"])
     X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
     X_95 = eval_trilinear_point(model, A, B, C, 'b**(2)*c**(2)*sec(B - C)', ID="X(95)", classes=["center", "incident"])
@@ -35,7 +34,7 @@ def construct_x_00276(
     X_275 = eval_trilinear_point(model, A, B, C, 'csc(2*A)*sec(B - C)', ID="X(275)", classes=["center", "incident"])
     central_line(model, X_76, X_275, 76, 275, incident=True)
     X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
-    X_327 = point_from_barycentrics(model, A, B, C, 0.33458508, 0.30598731, 0.35942761, ID="X(327)", classes=["center", "incident"])
+    X_327 = eval_trilinear_point(model, A, B, C, 'sin(A)*csc(2*A - 2*omega )', ID="X(327)", classes=["center", "incident"])
     central_line(model, X_4, X_327, 4, 327, incident=True)
     return promote_point_to_top(model, X_276)
 

@@ -10,13 +10,13 @@ X(101) = Ψ(INCENTER, SYMMEDIAN POINT)
 
 .. enunciation::
 
-   Let L\ :sub:`A` be the reflection of the line :ref:`X(1) <X(1)>`\ \ :ref:`X(7) <X(7)>` in line BC, and define L\ :sub:`B` and L\ :sub:`C` cyclically. Let A' = L\ :sub:`B`\ ∩L\ :sub:`C`, B' = L\ :sub:`C`\ ∩L\ :sub:`A`, C' = L\ :sub:`A`\ ∩L\ :sub:`B`. The lines AA', BB', CC' concur in :ref:`X(101) <X(101)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   Let :g:`L_{A} <L_A>` be the reflection of the line :ref:`X(1) <X(1)>`\ \ :ref:`X(7) <X(7)>` in line :g:`BC <[ B C ]>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A' <A'>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, :g:`B' <B'>` = :g:`L_{C} <L_C>`\ ∩\ :g:`L_{A} <L_A>`, :g:`C' <C'>` = :g:`L_{A} <L_A>`\ ∩\ :g:`L_{B} <L_B>`. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(101) <X(101)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. figure:: x-00101.svg
    :alt: X(101) = Ψ(INCENTER, SYMMEDIAN POINT)
    :align: center
 
-   **X(101) = Ψ(INCENTER, SYMMEDIAN POINT)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(101) = Ψ(INCENTER, SYMMEDIAN POINT)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -29,16 +29,12 @@ X(101) = Ψ(INCENTER, SYMMEDIAN POINT)
    :badge: 2 forms
 
    * **Trilinears:** :math:`a(a - b)(a - c) : b(b - c)(b - a) : c(c - a)(c - b)`
-   * **Barycentrics:** :math:`a^2 (\sin^2 A + \sin B \sin C - \sin C \sin A - \sin A \sin B) : :`
+   * **Barycentrics:** :math:`a^{2} (\sin^{2} A + \sin B \sin C - \sin C \sin A - \sin A \sin B) : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(101) <X(101)>` = (r :sup:`2` + 6rR + 8R\ :sup:`2` + s\ :sup:`2`)\*\ :ref:`X(1) <X(1)>` - 6R(r + 4R)\*\ :ref:`X(2) <X(2)>` - 2(r\ :sup:`2` + 4rR - s\ :sup:`2`)\*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-
-.. container:: note-item
-
-   :ref:`X(101) <X(101)>` lies.
+   * :ref:`X(101) <X(101)>` = :math:`(r ^{2} + 6rR + 8R^{2} + s^{2})` :ref:`X(1) <X(1)>` - :math:`6R(r + 4R)` :ref:`X(2) <X(2)>` - :math:`2(r^{2} + 4rR - s^{2})` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. collapse:: Incident Central Lines
    :badge: 586 lines
@@ -67,13 +63,13 @@ X(101) = Ψ(INCENTER, SYMMEDIAN POINT)
    * :ref:`X(101) <X(101)>` = :ref:`X(114) <X(114)>`-of-the-hexyl-triangle
    * :ref:`X(101) <X(101)>` = trilinear product of PU(i) for these i: 26, 49
    * :ref:`X(101) <X(101)>` = barycentric product of PU(33)
-   * :ref:`X(101) <X(101)>` = the point of intersection, other than A, B, C, of the circumcircle and hyperbola {A,B,C,PU(9)}}
-   * :ref:`X(101) <X(101)>` = the point of intersection, other than A, B, C, of conic {A,B,C,\ :ref:`X(1) <X(1)>`,PU(93)}}
+   * :ref:`X(101) <X(101)>` = the point of intersection, other than :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, of the circumcircle and hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(9)}}
+   * :ref:`X(101) <X(101)>` = the point of intersection, other than :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(1) <X(1)>`,PU(93)}}
    * :ref:`X(101) <X(101)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(6) <X(6)>`\ \ :ref:`X(31) <X(31)>` (the isogonal conjugate of the isotomic conjugate of the Nagel line)
    * :ref:`X(101) <X(101)>` = trilinear pole wrt 1st circumperp triangle of line :ref:`X(9) <X(9)>`\ \ :ref:`X(165) <X(165)>`
    * :ref:`X(101) <X(101)>` = :ref:`X(99) <X(99)>`-of -1st-circumperp-triangle
    * :ref:`X(101) <X(101)>` = crossdifference of PU(i) for these i: 121, 123
-   * :ref:`X(101) <X(101)>` = concurrence of reflections of line :ref:`X(4) <X(4)>`\ \ :ref:`X(9) <X(9)>` in sides of ABC
+   * :ref:`X(101) <X(101)>` = concurrence of reflections of line :ref:`X(4) <X(4)>`\ \ :ref:`X(9) <X(9)>` in sides of :g:`ABC << A B C >>`
    * :ref:`X(101) <X(101)>` = isogonal conjugate of isotomic conjugate of trilinear pole of Nagel line
    * :ref:`X(101) <X(101)>` = center of Kiepert hyperbola of :term:`excentral triangle <excentral-triangle>` (i.e. :ref:`X(115) <X(115)>` of excentral triangle)
    * :ref:`X(101) <X(101)>` = reflection of X(2690) in the Euler line
@@ -99,7 +95,7 @@ X(101) = Ψ(INCENTER, SYMMEDIAN POINT)
    * :ref:`X(101) <X(101)>` = inverse-in-Stevanovic-circle of X(2222)
    * :ref:`X(101) <X(101)>` = polar conjugate of isotomic conjugate of X(1331)
    * :ref:`X(101) <X(101)>` = :ref:`X(2) <X(2)>`-Ceva conjugate of X(39026)
-   * :ref:`X(101) <X(101)>` = perspector of hyperbola {A,B,C,\ :ref:`X(59) <X(59)>`,\ :ref:`X(677) <X(677)>`}}
+   * :ref:`X(101) <X(101)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(59) <X(59)>`,\ :ref:`X(677) <X(677)>`}}
    * :ref:`X(101) <X(101)>` = :ref:`X(63) <X(63)>`-isoconjugate of X(7649)
 
 Notes
@@ -107,19 +103,19 @@ Notes
 
 .. container:: note-item
 
-   Let I\ :sub:`a`\ I\ :sub:`b`\ I\ :sub:`c` be the excentral triangle. The Brocard axes of BCI\ :sub:`a`, CAI\ :sub:`b`, ABI\ :sub:`c` concur in :ref:`X(101) <X(101)>`. (Randy Hutson, February 10, 2016)
+   Let :g:`I_{a}I_{b}I_{c} << I_a I_b I_c >>` be the excentral triangle. The Brocard axes of :g:`BCI_{a} << B C I_a >>`, :g:`CAI_{b} << C A I_b >>`, :g:`ABI_{c} << A B I_c >>` concur in :ref:`X(101) <X(101)>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 
-   Let P be a point on line :ref:`X(4) <X(4)>`\ \ :ref:`X(9) <X(9)>` other than :ref:`X(4) <X(4)>`. Let A' be the reflection of P in BC, and define B' and C' cyclically. The circumcircles of AA'B', BC'A', CA'B' concur in :ref:`X(101) <X(101)>`. (Randy Hutson, February 10, 2016)
+   Let :g:`P <P>` be a point on line :ref:`X(4) <X(4)>`\ \ :ref:`X(9) <X(9)>` other than :ref:`X(4) <X(4)>`. Let :g:`A' <A'>` be the reflection of :g:`P <P>` in :g:`BC <[ B C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The circumcircles of :g:`AA'B' << A A' B' >>`, :g:`BC'A' << B C' A' >>`, :g:`CA'B' << C A' B' >>` concur in :ref:`X(101) <X(101)>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 
-   Let Q be a point on the Nagel line other than :ref:`X(2) <X(2)>`. Let A'B'C' be the :term:`cevian triangle <cevian-triangle>` of Q. Let A″ be the {B,C}-harmonic conjugate of A' (or equivalently, A″ = BC∩B'C'), and define B″ and C″ cyclically. The circumcircles of AB″C″, BC″A″, CA″B″ concur in :ref:`X(101) <X(101)>`. (Randy Hutson, February 10, 2016)
+   Let :g:`Q <Q>` be a point on the Nagel line other than :ref:`X(2) <X(2)>`. Let :g:`A'B'C' << A' B' C' >>` be the :term:`cevian triangle <cevian-triangle>` of Q. Let :g:`A″ <A″>` be the {B,C}-harmonic conjugate of :g:`A' <A'>` (or equivalently, :g:`A″ <A″>` = :g:`BC <[ B C ]>`\ ∩\ :g:`B'C' <[ B' C' ]>`), and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The circumcircles of :g:`AB″C″ << A B″ C″ >>`, :g:`BC″A″ << B C″ A″ >>`, :g:`CA″B″ << C A″ B″ >>` concur in :ref:`X(101) <X(101)>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 
-   Let A', B', C' be the intersections of the antiorthic axis and lines BC, CA, AB, resp. The circumcircles of AB'C', BC'A', CA'B' concur in :ref:`X(101) <X(101)>`. (Randy Hutson, February 10, 2016)
+   Let :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>` be the intersections of the antiorthic axis and lines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, resp. The circumcircles of :g:`AB'C' << A B' C' >>`, :g:`BC'A' << B C' A' >>`, :g:`CA'B' << C A' B' >>` concur in :ref:`X(101) <X(101)>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 

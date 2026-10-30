@@ -17,7 +17,7 @@ X(175) = ISOPERIMETRIC POINT
    :alt: X(175) = ISOPERIMETRIC POINT
    :align: center
 
-   **X(175) = ISOPERIMETRIC POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(175) = ISOPERIMETRIC POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -29,14 +29,14 @@ X(175) = ISOPERIMETRIC POINT
    :badge: 3 forms
 
    * **Barycentrics:** :math:`-2a + (a + b + c) \tan(A/2) : :`
-   * **Barycentrics:** :math:`a - r_{a} : b - r_{b} : c - r_{c}`, where r\ :sub:`a`, r\ :sub:`b`, r\ :sub:`c` are the exradii
-   * **Barycentrics:** :math:`(a + b - c)*(a - b + c)*(a*(a - b - c) + S) : :`
+   * **Barycentrics:** :math:`a - r_{a} : b - r_{b} : c - r_{c}`, where :math:`r_{a}`, :math:`r_{b}`, :math:`r_{c}` are the exradii
+   * **Barycentrics:** :math:`(a + b - c) \cdot (a - b + c) \cdot (a (a - b - c) + S) : :`
 
 .. collapse:: Linear Combinations
    :badge: 2 combinations
 
-   * :ref:`X(175) <X(175)>` = 2s\*\ :ref:`X(1) <X(1)>` - (r + 4R)\*\ :ref:`X(7) <X(7)>` = 3\ :ref:`X(2) <X(2)>`-4X(31534)
-   * :ref:`X(175) <X(175)>` = 3 :ref:`X(2) <X(2)>` - 4 X(31534)
+   * :ref:`X(175) <X(175)>` = :math:`2s` :ref:`X(1) <X(1)>` - :math:`(r + 4R)` :ref:`X(7) <X(7)>` = :math:`3` :ref:`X(2) <X(2)>` - :math:`4` X(31534)
+   * :ref:`X(175) <X(175)>` = :math:`3` :ref:`X(2) <X(2)>` - :math:`4` X(31534)
 
 .. container:: note-item
 
@@ -86,7 +86,7 @@ Notes
 
 .. container:: note-item
 
-   A point X is defined as an isoperimetric point of triangle ABC if \|XB\| + \|XC\| + \|BC\| = \|XC\| + \|XA\| + \|CA\| = \|XA\| + \|XB\| + \|AB\|. Veldkamp established that X = :ref:`X(175) <X(175)>`, uniquely, for some triangles ABC, but the conditions he gives are not correct. Hajja and Yff proved that the condition tan(A/2) + tan(B/2) + tan(C/2) < 2 is necessary and sufficient. See also :ref:`X(176) <X(176)>` and the 1st and 2nd Eppstein points, :ref:`X(481) <X(481)>`, :ref:`X(482) <X(482)>`.
+   A point :g:`X <X>` is defined as an isoperimetric point of triangle :g:`ABC << A B C >>` if \|\ :g:`XB <[ X B ]>`\ \| + \|\ :g:`XC <[ X C ]>`\ \| + \|\ :g:`BC <[ B C ]>`\ \| = \|\ :g:`XC <[ X C ]>`\ \| + \|\ :g:`XA <[ X A ]>`\ \| + \|\ :g:`CA <[ C A ]>`\ \| = \|\ :g:`XA <[ X A ]>`\ \| + \|\ :g:`XB <[ X B ]>`\ \| + \|\ :g:`AB <[ A B ]>`\ \|. Veldkamp established that :g:`X <X>` = :ref:`X(175) <X(175)>`, uniquely, for some triangles :g:`ABC << A B C >>`, but the conditions he gives are not correct. Hajja and Yff proved that the condition tan(A/2) + tan(B/2) + tan(C/2) < 2 is necessary and sufficient. See also :ref:`X(176) <X(176)>` and the 1st and 2nd Eppstein points, :ref:`X(481) <X(481)>`, :ref:`X(482) <X(482)>`.
 
 .. container:: note-item
 
@@ -94,7 +94,7 @@ Notes
 
 .. container:: note-item
 
-   Every point on the Soddy line has barycentric coordinates of the form a + k/sa : b + k/sb : c + k/sc, where k is a symmetric function in a,b,c, and sa=(b+c-a)/2, sb=(c+a-b)/2, sc=(a+b-c)/2. Writing S for 4\*area(ABC):
+   Every point on the Soddy line has barycentric coordinates of the form a + k/sa : b + k/sb : c + k/sc, where k is a symmetric function in a,b,c, and sa=(b+c-a)/2, sb=(c+a-b)/2, sc=(a+b-c)/2. Writing S for 4\*area(:g:`ABC << A B C >>`):
 
    **Clark Kimberling and R. W. Wagner,** Problem E 3020 and Solution, *American Mathematical Monthly* 93 (1986) 650-652 [proposed 1983].
 
@@ -108,37 +108,37 @@ Notes
 
 .. container:: note-item
 
-   :person:`Randy Hutson <randy-hutson>` (August 23, 2011) noted that "There are exactly two points P such that the incircles of the triangles PBC, PCA, PAB are pairwise tangent to one another; the two points are :ref:`X(175) <X(175)>` and :ref:`X(176) <X(176)>`. There are exactly two points P such that the radical center of the incircles of PBC, PCA, PAB is P; the two points are :ref:`X(175) <X(175)>` and :ref:`X(176) <X(176)>`.'' However, an anonymous contributor noted that there are cases in which the second statement does not hold. His counterexamples and conditions for such points P to exist are quoted here:
+   :person:`Randy Hutson <randy-hutson>` (August 23, 2011) noted that "There are exactly two points P such that the incircles of the triangles :g:`PBC << P B C >>`, :g:`PCA << P C A >>`, :g:`PAB << P A B >>` are pairwise tangent to one another; the two points are :ref:`X(175) <X(175)>` and :ref:`X(176) <X(176)>`. There are exactly two points P such that the radical center of the incircles of :g:`PBC << P B C >>`, :g:`PCA << P C A >>`, :g:`PAB << P A B >>` is P; the two points are :ref:`X(175) <X(175)>` and :ref:`X(176) <X(176)>`.'' However, an anonymous contributor noted that there are cases in which the second statement does not hold. His counterexamples and conditions for such points :g:`P <P>` to exist are quoted here:
 
    For the isoperimetric point, the incircles become excircles, so really we need two separate claims, as follows:
 
-      (1) P is an isoperimetric point, in the sense that triangles PBC, PCA, and PAB have the same perimeter, if and only if P is the radical center of the excircles of triangles PBC, PCA, and PAB opposite P.
+      (1) P is an isoperimetric point, in the sense that triangles :g:`PBC << P B C >>`, :g:`PCA << P C A >>`, and :g:`PAB << P A B >>` have the same perimeter, if and only if P is the radical center of the excircles of triangles :g:`PBC << P B C >>`, :g:`PCA << P C A >>`, and :g:`PAB << P A B >>` opposite :g:`P <P>`.
 
-      (2) P is an equal detour point, in the sense that \|XB\| + \|XC\| - \|BC\| = \|XC\| + \|XA\| - \|CA\| = \|XA\| + \|XB\| - \|AB\|, if and only if P is the radical center of the incircles of triangles PBC, PCA, and PAB.'
-
-.. container:: note-item
-
-   The proofs are clear: P is these circles' radical center if and only if the tangents from P to them have the same length, and we can express these tangents explicitly in terms of the triangles' sides.
+      (2) P is an equal detour point, in the sense that \|\ :g:`XB <[ X B ]>`\ \| + \|\ :g:`XC <[ X C ]>`\ \| - \|\ :g:`BC <[ B C ]>`\ \| = \|\ :g:`XC <[ X C ]>`\ \| + \|\ :g:`XA <[ X A ]>`\ \| - \|\ :g:`CA <[ C A ]>`\ \| = \|\ :g:`XA <[ X A ]>`\ \| + \|\ :g:`XB <[ X B ]>`\ \| - \|\ :g:`AB <[ A B ]>`\ \|, if and only if P is the radical center of the incircles of triangles :g:`PBC << P B C >>`, :g:`PCA << P C A >>`, and :g:`PAB << P A B >>`.'
 
 .. container:: note-item
 
-   The claim about pairwise tangency deserves further examination. Once again we must change the incircles to excircles for the isoperimetric point, but this time around that doesn't really fix everything. It is indeed true that if P is an isoperimetric point, then the excircles are pairwise tangent and if P is an equal detour point, then so are the incircles. However, the converses do not hold. Following is a counterexample. Start with an isosceles triangle ABC where AB = AC and angle A is sufficiently small. Let M be the midpoint of side BC and let Q be some point on ray AM beyond M. Observe that the excircles omega_B and omega_C of triangles QCA and QAB are always tangent on line QA, by symmetry. When Q is close to M, the excircle omega_A of triangle QBC intersects both omega_B and omega_C. Conversely, when Q tend to infinity away from M, however, both of omega_B and omega_C are disjoint from omega_A and lie outside of it. (This step is why we need angle A to be sufficiently small.) Therefore, there exists some intermediate position of point Q such that omega_A, omega_B, and omega_C are pairwise externally tangent. But then Q cannot be an isoperimetric point because the tangency points of omega_A with omega_B and omega_C do not lie on lines QC and QB, respectively.
+   The proofs are clear: P is these circles' radical center if and only if the tangents from :g:`P <P>` to them have the same length, and we can express these tangents explicitly in terms of the triangles' sides.
 
 .. container:: note-item
 
-   A counterexample for incircles is similar. Start with an isosceles triangle ABC where AB = AC and angle A is sufficiently large. (For example, at least 60 degrees.) Let M be the midpoint of side BC and let Q be some point on ray MA beyond A. The rest of the construction is fully analogous, but here we have disjoint incircles when Q is close to A and intersecting incircles when Q tends to infinity away from A. We can still salvage some of this if we explicitly require P to be an interior point, as follows:
-
-      (1') Let point P lie in the interior of triangle ABC. Then P is an isoperimetric point, in the sense that triangles PBC, PCA, and PAB have the same perimeter, if and only if the excircles of triangles PBC, PCA, and PAB opposite P are pairwise tangent.'
-
-      (2') Let point P lie in the interior of triangle ABC. Then P is an equal detour point, in the sense that \|XB\| + \|XC\| - \|BC\| = \|XC\| + \|XA\| - \|CA\| = \|XA\| + \|XB\| - \|AB\|, if and only if the incircles of triangles PBC, PCA, PAB are pairwise tangent.'
+   The claim about pairwise tangency deserves further examination. Once again we must change the incircles to excircles for the isoperimetric point, but this time around that doesn't really fix everything. It is indeed true that if P is an isoperimetric point, then the excircles are pairwise tangent and if P is an equal detour point, then so are the incircles. However, the converses do not hold. Following is a counterexample. Start with an isosceles triangle :g:`ABC << A B C >>` where :g:`AB <[ A B ]>` = :g:`AC <[ A C ]>` and angle :g:`A <A>` is sufficiently small. Let M be the midpoint of side :g:`BC <[ B C ]>` and let :g:`Q <Q>` be some point on ray AM beyond M. Observe that the excircles omega_B and omega_C of triangles :g:`QCA << Q C A >>` and :g:`QAB << Q A B >>` are always tangent on line :g:`QA <[ Q A ]>`, by symmetry. When Q is close to M, the excircle omega_A of triangle :g:`QBC << Q B C >>` intersects both omega_B and omega_C. Conversely, when Q tend to infinity away from M, however, both of omega_B and omega_C are disjoint from omega_A and lie outside of it. (This step is why we need angle :g:`A <A>` to be sufficiently small.) Therefore, there exists some intermediate position of point Q such that omega_A, omega_B, and omega_C are pairwise externally tangent. But then Q cannot be an isoperimetric point because the tangency points of omega_A with omega_B and omega_C do not lie on lines :g:`QC <[ Q C ]>` and :g:`QB <[ Q B ]>`, respectively.
 
 .. container:: note-item
 
-   Now lines PA, PB, PC separate the incircles or excircles from one another, so that their tangency points must necessarily lie on these lines, and from here on we can finish the proofs in the exact same way as for the pair of radical center claims.
+   A counterexample for incircles is similar. Start with an isosceles triangle :g:`ABC << A B C >>` where :g:`AB <[ A B ]>` = :g:`AC <[ A C ]>` and angle :g:`A <A>` is sufficiently large. (For example, at least 60 degrees.) Let M be the midpoint of side :g:`BC <[ B C ]>` and let :g:`Q <Q>` be some point on ray MA beyond A. The rest of the construction is fully analogous, but here we have disjoint incircles when Q is close to :g:`A <A>` and intersecting incircles when Q tends to infinity away from A. We can still salvage some of this if we explicitly require P to be an interior point, as follows:
+
+      (1') Let point P lie in the interior of triangle :g:`ABC << A B C >>`. Then P is an isoperimetric point, in the sense that triangles :g:`PBC << P B C >>`, :g:`PCA << P C A >>`, and :g:`PAB << P A B >>` have the same perimeter, if and only if the excircles of triangles :g:`PBC << P B C >>`, :g:`PCA << P C A >>`, and :g:`PAB << P A B >>` opposite :g:`P <P>` are pairwise tangent.'
+
+      (2') Let point P lie in the interior of triangle :g:`ABC << A B C >>`. Then P is an equal detour point, in the sense that \|\ :g:`XB <[ X B ]>`\ \| + \|\ :g:`XC <[ X C ]>`\ \| - \|\ :g:`BC <[ B C ]>`\ \| = \|\ :g:`XC <[ X C ]>`\ \| + \|\ :g:`XA <[ X A ]>`\ \| - \|\ :g:`CA <[ C A ]>`\ \| = \|\ :g:`XA <[ X A ]>`\ \| + \|\ :g:`XB <[ X B ]>`\ \| - \|\ :g:`AB <[ A B ]>`\ \|, if and only if the incircles of triangles :g:`PBC << P B C >>`, :g:`PCA << P C A >>`, :g:`PAB << P A B >>` are pairwise tangent.'
 
 .. container:: note-item
 
-   Note that :ref:`X(175) <X(175)>` and :ref:`X(176) <X(176)>` do not correspond exactly to the isoperimetric and equal detour points! For the outer Soddy circle, whether we get equal perimeters or equal detours depends on whether this circle is tangent to the three small circles with centers A, B, and C and radii (-a + b + c)/2, etc., internally or externally. When the tangencies are internal, we get an isoperimetric point; when they are external we get an equal detour point; and when the outer Soddy circle degenerates into a straight line, :ref:`X(175) <X(175)>` is undefined.
+   Now lines :g:`PA <[ P A ]>`, :g:`PB <[ P B ]>`, :g:`PC <[ P C ]>` separate the incircles or excircles from one another, so that their tangency points must necessarily lie on these lines, and from here on we can finish the proofs in the exact same way as for the pair of radical center claims.
+
+.. container:: note-item
+
+   Note that :ref:`X(175) <X(175)>` and :ref:`X(176) <X(176)>` do not correspond exactly to the isoperimetric and equal detour points! For the outer Soddy circle, whether we get equal perimeters or equal detours depends on whether this circle is tangent to the three small circles with centers :g:`A <A>`, :g:`B <B>`, and :g:`C <C>` and radii (-a + b + c)/2, etc., internally or externally. When the tangencies are internal, we get an isoperimetric point; when they are external we get an equal detour point; and when the outer Soddy circle degenerates into a straight line, :ref:`X(175) <X(175)>` is undefined.
 
 .. container:: note-item
 
@@ -150,27 +150,27 @@ Notes
 
 .. container:: note-item
 
-   Let Ha be the hyperbola through A having foci B and C, and define Hb and Hc cyclically. The three hyperbolas meet in in two points: :ref:`X(175) <X(175)>` and :ref:`X(176) <X(176)>`. The 6 vertices of the hyperbolas lie on the Privalov conic (an ellipse). Specifically, if the vertices are labeled as A1, A2; B1, B2; C1,C2; then A1, B1, C1 are the vertices of the :term:`extouch triangle <extouch-triangle>`, and A2, B2, C2 are the vertices of the :term:`intouch triangle <intouch-triangle>`; see X(5452) and this `Figure <https://user-images.githubusercontent.com/16231062/147100386-8ab23b07-e546-48f2-a0b6-c805c1e6c964.png>`__. (Liliana Gheorghe, :person:`Dan Reznik <dan-reznik>`, :person:`Peter Moses <peter-moses>`, December, 2021)
+   Let :g:`H_{a} <H_a>` be the hyperbola through A having foci :g:`B <B>` and :g:`C <C>`, and define :g:`H_{b} <H_b>` and :g:`H_{c} <H_c>` cyclically. The three hyperbolas meet in in two points: :ref:`X(175) <X(175)>` and :ref:`X(176) <X(176)>`. The 6 vertices of the hyperbolas lie on the Privalov conic (an ellipse). Specifically, if the vertices are labeled as :g:`A_{1} <A_1>`, :g:`A_{2} <A_2>`; :g:`B_{1} <B_1>`, :g:`B_{2} <B_2>`; :g:`C_{1} <C_1>`,\ :g:`C_{2} <C_2>`; then :g:`A_{1} <A_1>`, :g:`B_{1} <B_1>`, :g:`C_{1} <C_1>` are the vertices of the :term:`extouch triangle <extouch-triangle>`, and :g:`A_{2} <A_2>`, :g:`B_{2} <B_2>`, :g:`C_{2} <C_2>` are the vertices of the :term:`intouch triangle <intouch-triangle>`; see X(5452) and this `Figure <https://user-images.githubusercontent.com/16231062/147100386-8ab23b07-e546-48f2-a0b6-c805c1e6c964.png>`__. (Liliana Gheorghe, :person:`Dan Reznik <dan-reznik>`, :person:`Peter Moses <peter-moses>`, December, 2021)
 
 .. container:: note-item
 
-   In the plane of a triangle ABC, let
+   In the plane of a triangle :g:`ABC << A B C >>`, let
 
-   Oa = circle with diameter BC
+   :g:`O_{a} <O_a>` = circle with diameter :g:`BC <[ B C ]>`
 
-   C' = the point, other than B, where Oa meets AB
+   :g:`C' <C'>` = the point, other than B, where :g:`O_{a} <O_a>` meets :g:`AB <[ A B ]>`
 
-   B' = the point, other than C, where Oa meets AC
+   :g:`B' <B'>` = the point, other than C, where :g:`O_{a} <O_a>` meets :g:`AC <[ A C ]>`
 
-   Ub = B-mixtilinear incircle of BCC'
+   :g:`U_{b} <U_b>` = :g:`B <B>`-mixtilinear incircle of :g:`BCC' << B C C' >>`
 
-   Uc = C-mixtilinear incircle of CBB'
+   :g:`U_{c} <U_c>` = :g:`C <C>`-mixtilinear incircle of :g:`CBB' << C B B' >>`
 
-   Ab = touchpoint of Ub and BC; define Bc and Ca cyclically
+   :g:`A_{b} <A_b>` = touchpoint of :g:`U_{b} <U_b>` and :g:`BC <[ B C ]>`; define :g:`B_{c} <B_c>` and :g:`C_{a} <C_a>` cyclically
 
-   Ac = touchpoint of Uc and BC; define Ba and Cb cyclically
+   :g:`A_{c} <A_c>` = touchpoint of :g:`U_{c} <U_c>` and :g:`BC <[ B C ]>`; define :g:`B_{a} <B_a>` and :g:`C_{b} <C_b>` cyclically
 
-   The points Ab, Ac, Ba, Ba, Cb, Cb line on a conic, of which the center is :ref:`X(176) <X(176)>`. A barycentric equation for this conic follows:
+   The points :g:`A_{b} <A_b>`, :g:`A_{c} <A_c>`, :g:`B_{a} <B_a>`, :g:`B_{a} <B_a>`, :g:`C_{b} <C_b>`, :g:`C_{b} <C_b>` line on a conic, of which the center is :ref:`X(176) <X(176)>`. A barycentric equation for this conic follows:
 
       2 (a-b-c) (a^2-b^2-c^2) (a^2 (b+c)-(b-c)^2 (b+c)+2 a S) x^2 - ((a+b-c) (a-b+c) (3 a^4-2 a^3 (b+c)-3 (b^2-c^2)^2+2 a (b+c) (b^2+c^2))+2 (a^4-3 (b^2-c^2)^2+2 a^2 (b^2+c^2)) S) y z + (cyclic) = 0.
 
@@ -178,15 +178,15 @@ Notes
 
    See **X(175) and X(176)** (``X(175)andX(176).png``). Continuing, let
 
-   Vb = B-mixtilinear excircle of BCC'
+   :g:`V_{b} <V_b>` = :g:`B <B>`-mixtilinear excircle of :g:`BCC' << B C C' >>`
 
-   Vc = C-mixtilinear excircle of CBB'
+   :g:`V_{c} <V_c>` = :g:`C <C>`-mixtilinear excircle of :g:`CBB' << C B B' >>`
 
-   A'b = touchpoint of Vb and BC; define B'c and C'a cyclically
+   :g:`A'_{b} <A'_b>` = touchpoint of :g:`V_{b} <V_b>` and :g:`BC <[ B C ]>`; define :g:`B'_{c} <B'_c>` and :g:`C'_{a} <C'_a>` cyclically
 
-   A'c = touchpoint of Vc and BC; define B'a and C'b cyclically
+   :g:`A'_{c} <A'_c>` = touchpoint of :g:`V_{c} <V_c>` and :g:`BC <[ B C ]>`; define :g:`B'_{a} <B'_a>` and :g:`C'_{b} <C'_b>` cyclically
 
-   The points A'b, A'c, B'a, B'c, C'a, C'b line on a conic, of which the center is :ref:`X(175) <X(175)>`. A barycentric equation for this conic follows:
+   The points :g:`A'_{b} <A'_b>`, :g:`A'_{c} <A'_c>`, :g:`B'_{a} <B'_a>`, :g:`B'_{c} <B'_c>`, :g:`C'_{a} <C'_a>`, :g:`C'_{b} <C'_b>` line on a conic, of which the center is :ref:`X(175) <X(175)>`. A barycentric equation for this conic follows:
 
       (a+b-c) (a-b+c) (2 (a-b-c) (2 a^3 b c+a^4 (b+c)-2 a b c (b+c)^2+(b-c)^2 (b+c)^3-2 a^2 (b^3+b^2 c+b c^2+c^3)+2 (a^3-2 b c (b+c)-a (b+c)^2) S) x^2 + (3 a^6-4 a^5 (b+c)-4 a (b-c)^2 (b+c)^3-3 (b-c)^2 (b+c)^4+a^2 (b+c)^2 (9 b^2+2 b c+9 c^2)-a^4 (9 b^2+14 b c+9 c^2)+8 a^3 (b^3+b^2 c+b c^2+c^3)-2 (a^4+6 a^3 (b+c)-4 a^2 (b+c)^2+3 (b^2-c^2)^2-2 a (3 b^3+7 b^2 c+7 b c^2+3 c^3)) S) y z) + (cyclic) = 0. (:person:`Angel Montesdeoca <angel-montesdeoca>`, September 9, 2022)
 

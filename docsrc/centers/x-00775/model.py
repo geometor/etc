@@ -27,11 +27,11 @@ def construct_x_00775(
     """Construct X(775) = ISOGONAL CONJUGATE OF X(774) on reference triangle ABC."""
     X_774 = eval_trilinear_point(model, A, B, C, '1 - cos(A)*cos(B - C)', ID="X(774)", classes=["center"])
     X_775 = isogonal_conjugate(model, A, B, C, X_774, ID="X(775)", classes=["selected", "target"])
-    X_158 = point_from_barycentrics(model, A, B, C, 0.04776757, 0.099240104, 0.85299233, ID="X(158)", classes=["center", "incident"])
+    X_158 = eval_trilinear_point(model, A, B, C, '1/(1 + cos(2*A))', ID="X(158)", classes=["center", "incident"])
     X_255 = eval_trilinear_point(model, A, B, C, '1 + cos(2*A)', ID="X(255)", classes=["center", "incident"])
     central_line(model, X_158, X_255, 158, 255, incident=True)
     X_225 = eval_trilinear_point(model, A, B, C, '(sec(A))*(cos(B) + cos(C))', ID="X(225)", classes=["center", "incident"])
-    X_412 = eval_barycentric_point(model, A, B, C, '(a**(2) + b**(2) - c**(2))*(a**(2) - b**(2) + c**(2))*(a**(6) + a**(5)*b - 2*a**(4)*b**(2) - 2*a**(3)*b**(3) + a**(2)*b**(4) + a*b**(5) + a**(5)*c - a**(4)*b*c - a*b**(4)*c + b**(5)*c - 2*a**(4)*c**(2) + 2*a**(2)*b**(2)*c**(2) - 2*a**(3)*c**(3) - 2*b**(3)*c**(3) + a**(2)*c**(4) - a*b*c**(4) + a*c**(5) + b*c**(5))', ID="X(412)", classes=["center", "incident"])
+    X_412 = point_from_barycentrics(model, A, B, C, 0.035155518, 0.14825745, 0.81658703, ID="X(412)", classes=["center", "incident"])
     central_line(model, X_225, X_412, 225, 412, incident=True)
     X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["center", "incident"])
     X_801 = eval_barycentric_point(model, A, B, C, '1/(a**(4)*(b**(2) + c**(2)) - 2*a**(2)*(b**(2) - c**(2))**(2) + (b**(2) - c**(2))**(2)*(b**(2) + c**(2)))', ID="X(801)", classes=["center", "incident"])

@@ -14,6 +14,7 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     isotomic_conjugate,
+    point_from_barycentrics,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -31,8 +32,8 @@ def construct_x_00310(
     X_38 = eval_trilinear_point(model, A, B, C, 'b**(2) + c**(2)', ID="X(38)", classes=["center", "incident"])
     X_75 = eval_trilinear_point(model, A, B, C, '1/a**(2)', ID="X(75)", classes=["center", "incident"])
     central_line(model, X_38, X_75, 38, 75, incident=True)
-    X_261 = eval_trilinear_point(model, A, B, C, '((csc(A))*(sec(B/2 - C/2)))**(2)', ID="X(261)", classes=["center", "incident"])
-    X_272 = eval_trilinear_point(model, A, B, C, '1/((sin(A) + sin(A - B) + sin(A - C))*(sin(B) + sin(C)))', ID="X(272)", classes=["center", "incident"])
+    X_261 = point_from_barycentrics(model, A, B, C, 0.38781404, 0.34135715, 0.27082881, ID="X(261)", classes=["center", "incident"])
+    X_272 = point_from_barycentrics(model, A, B, C, 1.2803179, -0.19131188, -0.08900606, ID="X(272)", classes=["center", "incident"])
     central_line(model, X_261, X_272, 261, 272, incident=True)
     return promote_point_to_top(model, X_310)
 

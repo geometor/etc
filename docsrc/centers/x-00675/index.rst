@@ -16,21 +16,17 @@ X(675) = TRILINEAR POLE OF LINE X(6)X(514)
    :alt: X(675) = TRILINEAR POLE OF LINE X(6)X(514)
    :align: center
 
-   **X(675) = TRILINEAR POLE OF LINE X(6)X(514)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(675) = TRILINEAR POLE OF LINE X(6)X(514)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = bc/[b\ :sup:`3` + c\ :sup:`3` - a(b\ :sup:`2` + c\ :sup:`2`)]
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = bc/[b^{3} + c^{3} - a(b^{2} + c^{2})]`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`7.622324049262`
 
 .. container:: note-item
 
    :ref:`X(675) <X(675)>` lies on the circumcircle.
-
-.. container:: note-item
-
-   :ref:`X(675) <X(675)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 12 lines

@@ -16,7 +16,7 @@ X(520) = ISOGONAL CONJUGATE OF X(107)
    :alt: X(520) = ISOGONAL CONJUGATE OF X(107)
    :align: center
 
-   **X(520) = ISOGONAL CONJUGATE OF X(107)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(520) = ISOGONAL CONJUGATE OF X(107)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,14 +27,10 @@ X(520) = ISOGONAL CONJUGATE OF X(107)
    :badge: 5 forms
 
    * **Trilinears:** :math:`(\cos A)(\tan B - \tan C) : :`
-   * **Barycentrics:** :math:`\sec^2 B - \sec^2 C : :`
-   * **Barycentrics:** :math:`\tan^2 B - \tan^2 C : :`
-   * **Barycentrics:** :math:`(\cos^2 A)(b^2 - c^2) : :`
+   * **Barycentrics:** :math:`\sec^{2} B - \sec^{2} C : :`
+   * **Barycentrics:** :math:`\tan^{2} B - \tan^{2} C : :`
+   * **Barycentrics:** :math:`(\cos^{2} A)(b^{2} - c^{2}) : :`
    * **Barycentrics:** :math:`\csc 2B - \csc 2C : :`
-
-.. container:: note-item
-
-   :ref:`X(520) <X(520)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 23 lines
@@ -53,7 +49,7 @@ X(520) = ISOGONAL CONJUGATE OF X(107)
    * :ref:`X(520) <X(520)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`4 <X(4)>`, :ref:`523 <X(523)>`), (:ref:`51 <X(51)>`, :ref:`647 <X(647)>`), (:ref:`512 <X(512)>`, :ref:`800 <X(800)>`)
    * :ref:`X(520) <X(520)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(4) <X(4)>`\ \ :ref:`X(6) <X(6)>`
    * :ref:`X(520) <X(520)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(6528)
-   * :ref:`X(520) <X(520)>` = perspector of hyperbola {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(3) <X(3)>`}}
+   * :ref:`X(520) <X(520)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(3) <X(3)>`}}
    * :ref:`X(520) <X(520)>` = intersection of :term:`trilinear polars <trilinear-polar>` of :ref:`X(2) <X(2)>` and :ref:`X(3) <X(3)>`
    * :ref:`X(520) <X(520)>` = :ref:`X(6) <X(6)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(823) <X(823)>`
    * :ref:`X(520) <X(520)>` = :ref:`X(92) <X(92)>`-isoconjugate of :ref:`X(112) <X(112)>`

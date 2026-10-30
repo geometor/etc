@@ -14,7 +14,6 @@ from geometor.etc.ops import (
     eval_trilinear_point,
     incenter_of,
     isotomic_conjugate,
-    point_from_barycentrics,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -24,7 +23,7 @@ def construct_x_00326(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(326) = ISOTOMIC CONJUGATE OF X(158) on reference triangle ABC."""
-    X_158 = point_from_barycentrics(model, A, B, C, 0.04776757, 0.099240104, 0.85299233, ID="X(158)", classes=["center"])
+    X_158 = eval_trilinear_point(model, A, B, C, '1/(1 + cos(2*A))', ID="X(158)", classes=["center"])
     X_326 = isotomic_conjugate(model, A, B, C, X_158, ID="X(326)", classes=["selected", "target"])
     X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
     X_75 = eval_trilinear_point(model, A, B, C, '1/a**(2)', ID="X(75)", classes=["center", "incident"])

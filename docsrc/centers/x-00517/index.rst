@@ -16,7 +16,7 @@ X(517) = ISOGONAL CONJUGATE OF X(104)
    :alt: X(517) = ISOGONAL CONJUGATE OF X(104)
    :align: center
 
-   **X(517) = ISOGONAL CONJUGATE OF X(104)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(517) = ISOGONAL CONJUGATE OF X(104)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,17 +27,13 @@ X(517) = ISOGONAL CONJUGATE OF X(104)
    :badge: 3 forms
 
    * **Trilinears:** :math:`(b + c)\cos A - b \cos B - c \cos C : :`
-   * **Trilinears:** :math:`b^3 + c^3 - (a^2 + bc)(b + c) + 2abc : :`
+   * **Trilinears:** :math:`b^{3} + c^{3} - (a^{2} + bc)(b + c) + 2abc : :`
    * **Barycentrics:** :math:`(a - c) \cos B + (a - b) \cos C : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
    * :ref:`X(517) <X(517)>` = :ref:`X(1) <X(1)>` - :ref:`X(3) <X(3)>`
-
-.. container:: note-item
-
-   :ref:`X(517) <X(517)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 117 lines

@@ -10,13 +10,13 @@ X(388) = X(1)X(4)∩X(7)X(8)
 
 .. enunciation::
 
-   Let A″B″C″ be the reflection of the Mandart-incircle triangle in :ref:`X(1) <X(1)>`. A″B″C″ is homothetic to the :term:`anticomplementary triangle <anticomplementary-triangle>` at :ref:`X(388) <X(388)>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
+   Let :g:`A″B″C″ << A″ B″ C″ >>` be the reflection of the Mandart-incircle triangle in :ref:`X(1) <X(1)>`. :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to the :term:`anticomplementary triangle <anticomplementary-triangle>` at :ref:`X(388) <X(388)>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
 
 .. figure:: x-00388.svg
    :alt: X(388) = X(1)X(4)∩X(7)X(8)
    :align: center
 
-   **X(388) = X(1)X(4)∩X(7)X(8)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(388) = X(1)X(4)∩X(7)X(8)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -32,11 +32,7 @@ X(388) = X(1)X(4)∩X(7)X(8)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(388) <X(388)>` = 2(R/r)\*\ :ref:`X(1) <X(1)>` + 3\ :ref:`X(2) <X(2)>` - 2\ :ref:`X(3) <X(3)>`
-
-.. container:: note-item
-
-   :ref:`X(388) <X(388)>` lies.
+   * :ref:`X(388) <X(388)>` = :math:`2(R/r)` :ref:`X(1) <X(1)>` + :math:`3` :ref:`X(2) <X(2)>` - :math:`2` :ref:`X(3) <X(3)>`
 
 .. collapse:: Incident Central Lines
    :badge: 24 lines
@@ -50,9 +46,9 @@ X(388) = X(1)X(4)∩X(7)X(8)
    * :ref:`X(388) <X(388)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(1036)
    * :ref:`X(388) <X(388)>` = :term:`anticomplement <anticomplement>` of :ref:`X(958) <X(958)>`
    * :ref:`X(388) <X(388)>` = X(1181)-of-:term:`intouch triangle <intouch-triangle>`
-   * :ref:`X(388) <X(388)>` = perspector of ABC and 5th :term:`extouch triangle <extouch-triangle>`
-   * :ref:`X(388) <X(388)>` = homothetic center of anticomplementary triangle and cross-triangle of ABC and 1st Johnson-Yff triangle
-   * :ref:`X(388) <X(388)>` = homothetic center of 1st Johnson-Yff triangle and cross-triangle of ABC and 1st Johnson-Yff triangle
+   * :ref:`X(388) <X(388)>` = perspector of :g:`ABC << A B C >>` and 5th :term:`extouch triangle <extouch-triangle>`
+   * :ref:`X(388) <X(388)>` = homothetic center of anticomplementary triangle and cross-triangle of :g:`ABC << A B C >>` and 1st Johnson-Yff triangle
+   * :ref:`X(388) <X(388)>` = homothetic center of 1st Johnson-Yff triangle and cross-triangle of :g:`ABC << A B C >>` and 1st Johnson-Yff triangle
    * :ref:`X(388) <X(388)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(30479)
    * :ref:`X(388) <X(388)>` = homothetic center of anti-inverse-in-incircle triangle and anti-tangential midarc triangle
    * :ref:`X(388) <X(388)>` = centroid of curvatures of anticomplementary circle and excircles

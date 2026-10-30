@@ -12,17 +12,13 @@ X(380) = INTERSECTION OF LINES X(1)X(19) AND X(9)X(55)
    :alt: X(380) = INTERSECTION OF LINES X(1)X(19) AND X(9)X(55)
    :align: center
 
-   **X(380) = INTERSECTION OF LINES X(1)X(19) AND X(9)X(55)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(380) = INTERSECTION OF LINES X(1)X(19) AND X(9)X(55)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = (b + c - a)[3a\ :sup:`3` + (b + c)(3a\ :sup:`2` + (b - c)\ :sup:`2` + a(b + c))]
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = (b + c - a)[3a^{3} + (b + c)(3a^{2} + (b - c)^{2} + a(b + c))]`
    | **Barycentrics:** :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
    | **Search Value (6, 9, 13):** :math:`2.331057740835`
-
-.. container:: note-item
-
-   :ref:`X(380) <X(380)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 7 lines

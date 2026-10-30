@@ -12,6 +12,7 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    point_from_barycentrics,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -23,7 +24,7 @@ def construct_x_00362(
     """Construct X(362) = CONGRUENT CIRCUMCIRCLES ISOSCELIZER POINT on reference triangle ABC."""
     X_362 = eval_trilinear_point(model, A, B, C, 'b*cos(B/2) + c*cos(C/2) - a*cos(A/2)', ID="X(362)", classes=["selected", "target"])
     X_57 = eval_trilinear_point(model, A, B, C, '1/(b + c - a)', ID="X(57)", classes=["center", "incident"])
-    X_234 = eval_trilinear_point(model, A, B, C, '(cos(B/2) + cos(C/2))*(cos(B/2)*cos(C/2))**(2)', ID="X(234)", classes=["center", "incident"])
+    X_234 = point_from_barycentrics(model, A, B, C, 0.21955649, 0.30115636, 0.47928715, ID="X(234)", classes=["center", "incident"])
     central_line(model, X_57, X_234, 57, 234, incident=True)
     return promote_point_to_top(model, X_362)
 

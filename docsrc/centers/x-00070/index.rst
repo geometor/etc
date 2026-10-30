@@ -16,18 +16,18 @@ X(70) = ISOGONAL CONJUGATE OF X(26)
    :alt: X(70) = ISOGONAL CONJUGATE OF X(26)
    :align: center
 
-   **X(70) = ISOGONAL CONJUGATE OF X(26)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(70) = ISOGONAL CONJUGATE OF X(26)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`bc/[b^{2} \cos 2B + c^{2} \cos 2C - a^{2} \cos 2A] : :`
-   | **Barycentrics:** :math:`1/(a^8 - 2 a^6 (b^2 + c^2) + 2 a^2 (b^6 + c^6) - (b^2 - c^2)^2 (b^4 + c^4)) : :`
+   | **Barycentrics:** :math:`1/(a^{8} - 2 a^{6} (b^{2} + c^{2}) + 2 a^{2} (b^{6} + c^{6}) - (b^{2} - c^{2})^{2} (b^{4} + c^{4})) : :`
    | **Search Value (6, 9, 13):** :math:`5.721069014472`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(70) <X(70)>` = (S cot ω- 2R\ :sup:`2`)/(S cot ω-3 R\ :sup:`2`)\*\ :ref:`X(3) <X(3)>` - X(8907) (:person:`Peter Moses <peter-moses>`, December 28, 2015)
+   * :ref:`X(70) <X(70)>` = :math:`(S \cot \omega - 2R^{2})/(S \cot \omega -3 R^{2})` :ref:`X(3) <X(3)>` - X(8907) (:person:`Peter Moses <peter-moses>`, December 28, 2015)
 
 .. container:: note-item
 

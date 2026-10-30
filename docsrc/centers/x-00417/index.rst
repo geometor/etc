@@ -16,22 +16,18 @@ X(417) = X(3)-CEVA CONJUGATE OF X(185)
    :alt: X(417) = X(3)-CEVA CONJUGATE OF X(185)
    :align: center
 
-   **X(417) = X(3)-CEVA CONJUGATE OF X(185)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(417) = X(3)-CEVA CONJUGATE OF X(185)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = (cos A)(sec\ :sup:`2`\ B + sec\ :sup:`2`\ C)
-   | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where g(A,B,C) = (sin 2A)(sec\ :sup:`2`\ B + sec\ :sup:`2`\ C)
-   | **Search Value (6, 9, 13):** :math:`2.941460465282`
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = (\cos A)(\sec^{2} B + \sec^{2} C)`
+   | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where :math:`g(A,B,C) = (\sin 2A)(\sec^{2} B + \sec^{2} C)`
+   | **Search Value (6, 9, 13):** :math:`4.705865843343`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`a*(a + b)*(a + c)*(a^7*b^2 - a^6*b^3 - 2*a^5*b^4 + 2*a^4*b^5 + a^3*b^6 - a^2*b^7 + a^7*b*c - a^6*b^2*c - a^5*b^3*c + 2*a^4*b^4*c - a^3*b^5*c - a^2*b^6*c + a*b^7*c + a^7*c^2 - a^6*b*c^2 + a^5*b^2*c^2 - a^4*b^3*c^2 - a^3*b^4*c^2 + a^2*b^5*c^2 - a*b^6*c^2 + b^7*c^2 - a^6*c^3 - a^5*b*c^3 - a^4*b^2*c^3 + 2*a^3*b^3*c^3 + a^2*b^4*c^3 - a*b^5*c^3 + b^6*c^3 - 2*a^5*c^4 + 2*a^4*b*c^4 - a^3*b^2*c^4 + a^2*b^3*c^4 + 2*a*b^4*c^4 - 2*b^5*c^4 + 2*a^4*c^5 - a^3*b*c^5 + a^2*b^2*c^5 - a*b^3*c^5 - 2*b^4*c^5 + a^3*c^6 - a^2*b*c^6 - a*b^2*c^6 + b^3*c^6 - a^2*c^7 + a*b*c^7 + b^2*c^7) : :`
-
-.. container:: note-item
-
-   :ref:`X(417) <X(417)>` lies.
+   * **Barycentrics:** :math:`a (a + b) \cdot (a + c) \cdot (a^{7} b^{2} - a^{6} b^{3} - 2 a^{5} b^{4} + 2 a^{4} b^{5} + a^{3} b^{6} - a^{2} b^{7} + a^{7} b c - a^{6} b^{2} c - a^{5} b^{3} c + 2 a^{4} b^{4} c - a^{3} b^{5} c - a^{2} b^{6} c + a b^{7} c + a^{7} c^{2} - a^{6} b c^{2} + a^{5} b^{2} c^{2} - a^{4} b^{3} c^{2} - a^{3} b^{4} c^{2} + a^{2} b^{5} c^{2} - a b^{6} c^{2} + b^{7} c^{2} - a^{6} c^{3} - a^{5} b c^{3} - a^{4} b^{2} c^{3} + 2 a^{3} b^{3} c^{3} + a^{2} b^{4} c^{3} - a b^{5} c^{3} + b^{6} c^{3} - 2 a^{5} c^{4} + 2 a^{4} b c^{4} - a^{3} b^{2} c^{4} + a^{2} b^{3} c^{4} + 2 a b^{4} c^{4} - 2 b^{5} c^{4} + 2 a^{4} c^{5} - a^{3} b c^{5} + a^{2} b^{2} c^{5} - a b^{3} c^{5} - 2 b^{4} c^{5} + a^{3} c^{6} - a^{2} b c^{6} - a b^{2} c^{6} + b^{3} c^{6} - a^{2} c^{7} + a b c^{7} + b^{2} c^{7}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 28 lines

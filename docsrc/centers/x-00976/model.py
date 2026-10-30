@@ -15,6 +15,7 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     incenter_of,
+    intersect_lines,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -24,13 +25,13 @@ def construct_x_00976(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(976) = INTERSECTION OF LINES X(1)X(2) AND X(3)X(38) on reference triangle ABC."""
-    X_976 = eval_trilinear_point(model, A, B, C, 'a**(3)+ (b + c)*(b**(2)+ c**(2))', ID="X(976)", classes=["selected", "target"])
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
-    central_line(model, X_1, X_2, 1, 2, incident=True)
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
-    X_38 = eval_trilinear_point(model, A, B, C, 'b**(2) + c**(2)', ID="X(38)", classes=["center", "incident"])
-    central_line(model, X_3, X_38, 3, 38, incident=True)
+    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
+    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
+    X_38 = eval_trilinear_point(model, A, B, C, 'b**(2) + c**(2)', ID="X(38)", classes=["center"])
+    central_line(model, X_1, X_2, 1, 2)
+    central_line(model, X_3, X_38, 3, 38)
+    X_976 = intersect_lines(model, X_1, X_2, X_3, X_38, ID="X(976)", classes=["selected", "target"])
     X_37 = eval_trilinear_point(model, A, B, C, 'b + c', ID="X(37)", classes=["center", "incident"])
     X_41 = eval_trilinear_point(model, A, B, C, 'a**(2)*(b + c - a)', ID="X(41)", classes=["center", "incident"])
     central_line(model, X_37, X_41, 37, 41, incident=True)

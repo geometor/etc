@@ -16,7 +16,7 @@ X(562) = TRILINEAR QUOTIENT X(2)*X(50)/X(49)
    :alt: X(562) = TRILINEAR QUOTIENT X(2)*X(50)/X(49)
    :align: center
 
-   **X(562) = TRILINEAR QUOTIENT X(2)*X(50)/X(49)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(562) = TRILINEAR QUOTIENT X(2)*X(50)/X(49)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,11 +27,7 @@ X(562) = TRILINEAR QUOTIENT X(2)*X(50)/X(49)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * = (3S\ :sup:`2` - S\ :sup:`2`\ :sub:`A`)(3S\ :sup:`2` - S\ :sup:`2`\ :sub:`B`)(3S\ :sup:`2` - S\ :sup:`2`\ :sub:`C`)\*\ :ref:`X(3) <X(3)>` - 16S\ :sub:`A`\ S\ :sub:`B`\ S\ :sub:`C`\ (5S\ :sub:`A`\ S\ :sub:`B`\ S\ :sub:`C` + 3S\ :sup:`2`\ S\ :sub:`ω`\ S)\*X(3519) (:person:`Peter Moses <peter-moses>`, January 29, 2015)
-
-.. container:: note-item
-
-   :ref:`X(562) <X(562)>` lies.
+   * = :math:`(3S^{2} - S^{2}_{A})(3S^{2} - S^{2}_{B})(3S^{2} - S^{2}_{C})` :ref:`X(3) <X(3)>` - :math:`16S_{A}`\ :math:`S_{B}`\ :math:`S_{C}(5S_{A}S_{B}S_{C} + 3S^{2}S_{\omega }S)` X(3519) (:person:`Peter Moses <peter-moses>`, January 29, 2015)
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines

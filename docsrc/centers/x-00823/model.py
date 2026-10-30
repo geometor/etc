@@ -29,7 +29,7 @@ def construct_x_00823(
     X_107 = eval_trilinear_point(model, A, B, C, '1/(cos(A)*(sin(2*B) - sin(2*C)))', ID="X(107)", classes=["center", "incident"])
     central_line(model, X_100, X_107, 100, 107, incident=True)
     X_264 = eval_trilinear_point(model, A, B, C, 'csc(A)*csc(2*A)', ID="X(264)", classes=["center", "incident"])
-    X_379 = eval_trilinear_point(model, A, B, C, 'b*c*(a**(5)+ (b + c)*(b*c*a**(2)- (b*c + c*a + a*b)*(b - c)**(2)))', ID="X(379)", classes=["center", "incident"])
+    X_379 = point_from_barycentrics(model, A, B, C, 0.23688101, 0.27346637, 0.48965262, ID="X(379)", classes=["center", "incident"])
     central_line(model, X_264, X_379, 264, 379, incident=True)
     X_110 = eval_trilinear_point(model, A, B, C, 'csc(B - C)', ID="X(110)", classes=["center", "incident"])
     X_681 = point_from_barycentrics(model, A, B, C, 0.48877447, -0.32158388, 0.83280941, ID="X(681)", classes=["center", "incident"])

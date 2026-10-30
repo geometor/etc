@@ -13,6 +13,7 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    point_from_barycentrics,
     promote_point_to_top,
     symmedian_point_of,
 )
@@ -23,7 +24,7 @@ def construct_x_00910(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(910) = CROSSPOINT OF X(57) AND X(105) on reference triangle ABC."""
-    X_294 = eval_trilinear_point(model, A, B, C, '(b + c - a)/(b**(2)+ c**(2)- a*b - a*c)', ID="X(294)", classes=["center"])
+    X_294 = point_from_barycentrics(model, A, B, C, 0.10958904, 0.98630137, -0.095890411, ID="X(294)", classes=["center"])
     X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
     X_910 = ceva_conjugate(model, A, B, C, X_294, X_6, ID="X(910)", classes=["selected", "target"])
     X_19 = eval_trilinear_point(model, A, B, C, 'tan(A)', ID="X(19)", classes=["center", "incident"])

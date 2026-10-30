@@ -16,7 +16,7 @@ X(143) = NINE-POINT CENTER OF ORTHIC TRIANGLE
    :alt: X(143) = NINE-POINT CENTER OF ORTHIC TRIANGLE
    :align: center
 
-   **X(143) = NINE-POINT CENTER OF ORTHIC TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(143) = NINE-POINT CENTER OF ORTHIC TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -29,12 +29,12 @@ X(143) = NINE-POINT CENTER OF ORTHIC TRIANGLE
 
    * **Trilinears:** :math:`(1 - 2 \cos 2A)\cos(B - C)]: :`
    * **Trilinears:** :math:`\sec A \cos(3A) \cos(B - C) : :`
-   * **Barycentrics:** :math:`a^2 (a^2 b^2 + a^2 c^2 + 2 b^2 c^2 - b^4 - c^4) (a^4 + b^4 + c^4 - 2 a^2 b^2 - 2 a^2 c^2 - b^2 c^2) : :`
+   * **Barycentrics:** :math:`a^{2} (a^{2} b^{2} + a^{2} c^{2} + 2 b^{2} c^{2} - b^{4} - c^{4}) (a^{4} + b^{4} + c^{4} - 2 a^{2} b^{2} - 2 a^{2} c^{2} - b^{2} c^{2}) : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(143) <X(143)>` = :ref:`X(5) <X(5)>` - 3 :ref:`X(51) <X(51)>` = 3 :ref:`X(51) <X(51)>` + :ref:`X(52) <X(52)>` = :ref:`X(4) <X(4)>` + 3 :ref:`X(568) <X(568)>` = :ref:`X(3) <X(3)>` + 3 X(3060) = 3 X(2979) - 7 X(3526) = :ref:`X(3) <X(3)>` - 5 X(3567) = 3 X(3060) + 5 X(3567) = 5 :ref:`X(632) <X(632)>` - 3 X(3917) = 3 :ref:`X(140) <X(140)>` - 2 X(5447) = X(5447) - 3 X(5462) = 3 :ref:`X(5) <X(5)>` - X(5562) = 9 :ref:`X(51) <X(51)>` - X(5562) = 3 :ref:`X(52) <X(52)>` + X(5562) = 5 X(1656) - 9 X(5640) = 3 :ref:`X(381) <X(381)>` - X(5876) = 3 :ref:`X(381) <X(381)>` + X(5889) = :ref:`X(382) <X(382)>` + 3 X(5890) = 5 X(5562) - 9 X(5891) = 5 :ref:`X(5) <X(5)>` - 3 X(5891) = 5 :ref:`X(51) <X(51)>` - X(5891) = 5 :ref:`X(52) <X(52)>` + 3 X(5891) = 2 X(3530) - 3 X(5892) = X(1216) - 3 X(5943) = 2 X(3628) - 3 X(5943) = :ref:`X(3) <X(3)>` - 3 X(5946) = 5 X(3567) - 3 X(5946) = 3 :ref:`X(568) <X(568)>` - X(6102) = 3 X(3830) + X(6241) = 3 :ref:`X(2) <X(2)>` + X(6243) = 3 X(5093) + X(6403) = :ref:`X(195) <X(195)>` + 3 X(7730) = 11 X(5070) - 7 X(7999)
+   * :ref:`X(143) <X(143)>` = :ref:`X(5) <X(5)>` - :math:`3` :ref:`X(51) <X(51)>` = :math:`3` :ref:`X(51) <X(51)>` + :ref:`X(52) <X(52)>` = :ref:`X(4) <X(4)>` + :math:`3` :ref:`X(568) <X(568)>` = :ref:`X(3) <X(3)>` + :math:`3` X(3060) = :math:`3` X(2979) - :math:`7` X(3526) = :ref:`X(3) <X(3)>` - :math:`5` X(3567) = :math:`3` X(3060) + :math:`5` X(3567) = :math:`5` :ref:`X(632) <X(632)>` - :math:`3` X(3917) = :math:`3` :ref:`X(140) <X(140)>` - :math:`2` X(5447) = X(5447) - :math:`3` X(5462) = :math:`3` :ref:`X(5) <X(5)>` - X(5562) = :math:`9` :ref:`X(51) <X(51)>` - X(5562) = :math:`3` :ref:`X(52) <X(52)>` + X(5562) = :math:`5` X(1656) - :math:`9` X(5640) = :math:`3` :ref:`X(381) <X(381)>` - X(5876) = :math:`3` :ref:`X(381) <X(381)>` + X(5889) = :ref:`X(382) <X(382)>` + :math:`3` X(5890) = :math:`5` X(5562) - :math:`9` X(5891) = :math:`5` :ref:`X(5) <X(5)>` - :math:`3` X(5891) = :math:`5` :ref:`X(51) <X(51)>` - X(5891) = :math:`5` :ref:`X(52) <X(52)>` + :math:`3` X(5891) = :math:`2` X(3530) - :math:`3` X(5892) = X(1216) - :math:`3` X(5943) = :math:`2` X(3628) - :math:`3` X(5943) = :ref:`X(3) <X(3)>` - :math:`3` X(5946) = :math:`5` X(3567) - :math:`3` X(5946) = :math:`3` :ref:`X(568) <X(568)>` - X(6102) = :math:`3` X(3830) + X(6241) = :math:`3` :ref:`X(2) <X(2)>` + X(6243) = :math:`3` X(5093) + X(6403) = :ref:`X(195) <X(195)>` + :math:`3` X(7730) = :math:`11` X(5070) - :math:`7` X(7999)
 
 .. container:: note-item
 
@@ -57,7 +57,7 @@ X(143) = NINE-POINT CENTER OF ORTHIC TRIANGLE
    * :ref:`X(143) <X(143)>` = :ref:`X(5) <X(5)>`-of-:term:`orthic triangle <orthic-triangle>`
    * :ref:`X(143) <X(143)>` = :ref:`X(249) <X(249)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(1625)
    * :ref:`X(143) <X(143)>` = :ref:`X(137) <X(137)>`-cross conjugate of X(1510)
-   * :ref:`X(143) <X(143)>` = excentral-to-ABC :term:`functional image <functional-image>` of :ref:`X(5) <X(5)>`
+   * :ref:`X(143) <X(143)>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X(5) <X(5)>`
    * :ref:`X(143) <X(143)>` = {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): (:ref:`2 <X(2)>`, 6243, 6101), (:ref:`3 <X(3)>`, 3567, 5946), (:ref:`4 <X(4)>`, :ref:`568 <X(568)>`, 6102), (:ref:`49 <X(49)>`, 1994, 1493), (:ref:`51 <X(51)>`, :ref:`52 <X(52)>`, :ref:`5 <X(5)>`), (:ref:`54 <X(54)>`, 2070, 5944), (:ref:`381 <X(381)>`, 5889, 5876), (1112, 6746, :ref:`4 <X(4)>`), (1216, 5943, 3628), (1994, 3518, :ref:`49 <X(49)>`), (3060, 3567, :ref:`3 <X(3)>`)
    * :ref:`X(143) <X(143)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these {i,j}: {:ref:`1 <X(1)>`, :ref:`252 <X(252)>`}, {:ref:`54 <X(54)>`, 2962}, {:ref:`93 <X(93)>`, 2169}, {:ref:`930 <X(930)>`, 2616}, {2167, 2963}, {2190, 3519}
 
@@ -66,11 +66,11 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the :term:`cevian triangle <cevian-triangle>` of :ref:`X(5) <X(5)>`. Let A″, B″, C″ be the inverse-in-circumcircle of A', B', C'. The lines AA″, BB″, CC″ concur in :ref:`X(143) <X(143)>`. Also, :ref:`X(143) <X(143)>` = intersection of the tangent to hyperbola {A,B,C,\ :ref:`X(4) <X(4)>`,\ :ref:`X(15) <X(15)>`}} at :ref:`X(61) <X(61)>` and the tangent to the hyperbola {A,B,C,\ :ref:`X(4) <X(4)>`,\ :ref:`X(16) <X(16)>`}} at :ref:`X(62) <X(62)>`. (:person:`Randy Hutson <randy-hutson>`, July 23, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`cevian triangle <cevian-triangle>` of :ref:`X(5) <X(5)>`. Let :g:`A″ <A″>`, :g:`B″ <B″>`, :g:`C″ <C″>` be the inverse-in-circumcircle of :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>`. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(143) <X(143)>`. Also, :ref:`X(143) <X(143)>` = intersection of the tangent to hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(4) <X(4)>`,\ :ref:`X(15) <X(15)>`}} at :ref:`X(61) <X(61)>` and the tangent to the hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(4) <X(4)>`,\ :ref:`X(16) <X(16)>`}} at :ref:`X(62) <X(62)>`. (:person:`Randy Hutson <randy-hutson>`, July 23, 2015)
 
 .. container:: note-item
 
-   :ref:`X(143) <X(143)>` is the QA-P13 center (Nine-point Center of the QA-Diagonal Triangle) of quadrangle ABC\ :ref:`X(4) <X(4)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/41-qa-p13.html). Also, :ref:`X(143) <X(143)>` is the QA-P22 center (Midpoint QA-P1 and QA-P20) of quadrangle ABC\ :ref:`X(4) <X(4)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/50-qa-p22.html)
+   :ref:`X(143) <X(143)>` is the :g:`QA <[ Q A ]>`-P13 center (Nine-point Center of the :g:`QA <[ Q A ]>`-Diagonal Triangle) of quadrangle :g:`ABC << A B C >>`\ :ref:`X(4) <X(4)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/41-qa-p13.html). Also, :ref:`X(143) <X(143)>` is the :g:`QA <[ Q A ]>`-P22 center (Midpoint :g:`QA <[ Q A ]>`-:g:`P_{1} <P_1>` and :g:`QA <[ Q A ]>`-P20) of quadrangle :g:`ABC << A B C >>`\ :ref:`X(4) <X(4)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/50-qa-p22.html)
 
 .. toctree::
    :hidden:

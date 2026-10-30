@@ -16,7 +16,7 @@ X(999) = MIDPOINT OF X(1) AND X(57)
    :alt: X(999) = MIDPOINT OF X(1) AND X(57)
    :align: center
 
-   **X(999) = MIDPOINT OF X(1) AND X(57)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(999) = MIDPOINT OF X(1) AND X(57)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -26,11 +26,7 @@ X(999) = MIDPOINT OF X(1) AND X(57)
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`a(a^2 + 4bc - b^2 - c^2) : :`
-
-.. container:: note-item
-
-   :ref:`X(999) <X(999)>` lies.
+   * **Trilinears:** :math:`a(a^{2} + 4bc - b^{2} - c^{2}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 23 lines
@@ -51,7 +47,7 @@ X(999) = MIDPOINT OF X(1) AND X(57)
    * :ref:`X(999) <X(999)>` = :ref:`X(25) <X(25)>`-of-incircle-circles-triangle
    * :ref:`X(999) <X(999)>` = X(1596)-of-excentral-triangle
    * :ref:`X(999) <X(999)>` = X(6644)-of-intouch-triangle
-   * :ref:`X(999) <X(999)>` = homothetic center of outer Yff triangle and cross-triangle of ABC and 1st Johnson-Yff triangle
+   * :ref:`X(999) <X(999)>` = homothetic center of outer Yff triangle and cross-triangle of :g:`ABC << A B C >>` and 1st Johnson-Yff triangle
    * :ref:`X(999) <X(999)>` = homothetic center of anti-incircle-circles triangle and anti-tangential midarc triangle
    * :ref:`X(999) <X(999)>` = polar conjugate of :term:`isotomic conjugate <isotomic-conjugate>` of X(22129)
 

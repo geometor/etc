@@ -12,7 +12,7 @@ X(569) = HARMONIC OF X(52) — Code
    :alt: X(569) = HARMONIC OF X(52)
    :align: center
 
-   **X(569) = HARMONIC OF X(52)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(569) = HARMONIC OF X(52)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

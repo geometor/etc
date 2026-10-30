@@ -11,6 +11,7 @@ from geometor.etc.ops import (
     central_line,
     construct_baseline_triangle,
     create_model,
+    eval_barycentric_point,
     eval_trilinear_point,
     gergonne_point_of,
     isogonal_conjugate,
@@ -31,10 +32,10 @@ def construct_x_00280(
     X_20 = eval_trilinear_point(model, A, B, C, 'cos(A) - cos(B)*cos(C)', ID="X(20)", classes=["center", "incident"])
     central_line(model, X_8, X_20, 8, 20, incident=True)
     X_7 = gergonne_point_of(model, A, B, C, ID="X(7)", classes=["center", "incident"])
-    X_253 = point_from_barycentrics(model, A, B, C, -23.560976, -29.731707, 54.292683, ID="X(253)", classes=["center", "incident"])
+    X_253 = eval_barycentric_point(model, A, B, C, '1/(3*a**(4) - 2*a**(2)*(b**(2) + c**(2)) - (b**(2) - c**(2))**(2))', ID="X(253)", classes=["center", "incident"])
     central_line(model, X_7, X_253, 7, 253, incident=True)
     X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X(21)", classes=["center", "incident"])
-    X_268 = eval_trilinear_point(model, A, B, C, '(cos(A)*cot(A/2))/(-1 - cos(A) + cos(B) + cos(C))', ID="X(268)", classes=["center", "incident"])
+    X_268 = point_from_barycentrics(model, A, B, C, -0.78436965, -0.82915003, 2.6135197, ID="X(268)", classes=["center", "incident"])
     central_line(model, X_21, X_268, 21, 268, incident=True)
     return promote_point_to_top(model, X_280)
 

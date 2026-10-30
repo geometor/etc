@@ -16,16 +16,12 @@ X(844) = INTERSECTION OF LINES X(166)X(167) AND X(173)X(503)
    :alt: X(844) = INTERSECTION OF LINES X(166)X(167) AND X(173)X(503)
    :align: center
 
-   **X(844) = INTERSECTION OF LINES X(166)X(167) AND X(173)X(503)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(844) = INTERSECTION OF LINES X(166)X(167) AND X(173)X(503)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`- x + y + z : :`, where x = x(A,B,C) = sin(A/2) sec\ :sup:`2`\ (A/2)
-   | **Search Value (6, 9, 13):** :math:`11.987336626371`
-
-.. container:: note-item
-
-   :ref:`X(844) <X(844)>` lies.
+   | **Trilinears:** :math:`- x + y + z : :`, where :math:`x = x(A,B,C) = \sin(A/2) \sec^{2}(A/2)`
+   | **Search Value (6, 9, 13):** :math:`-1032.620404563091`
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines

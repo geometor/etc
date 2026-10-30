@@ -17,7 +17,7 @@ X(125) = CENTER OF JERABEK HYPERBOLA
    :alt: X(125) = CENTER OF JERABEK HYPERBOLA
    :align: center
 
-   **X(125) = CENTER OF JERABEK HYPERBOLA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(125) = CENTER OF JERABEK HYPERBOLA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -60,9 +60,9 @@ X(125) = CENTER OF JERABEK HYPERBOLA
    * :ref:`X(125) <X(125)>` = orthopole of the Euler line
    * :ref:`X(125) <X(125)>` = perspector of :term:`orthic triangle <orthic-triangle>` and Schroeter triangle
    * :ref:`X(125) <X(125)>` = :ref:`X(110) <X(110)>`-of-medial triangle
-   * :ref:`X(125) <X(125)>` = :ref:`X(100) <X(100)>`-of-orthic triangle, if ABC is acute
+   * :ref:`X(125) <X(125)>` = :ref:`X(100) <X(100)>`-of-orthic triangle, if :g:`ABC << A B C >>` is acute
    * :ref:`X(125) <X(125)>` = :ref:`X(858) <X(858)>`-of-1st-Brocard triangle
-   * :ref:`X(125) <X(125)>` = anticenter of cyclic quadrilateral ABC\ :ref:`X(74) <X(74)>`
+   * :ref:`X(125) <X(125)>` = anticenter of cyclic quadrilateral :g:`ABC << A B C >>`\ :ref:`X(74) <X(74)>`
    * :ref:`X(125) <X(125)>` = Λ(:ref:`X(230) <X(230)>`, :ref:`X(231) <X(231)>`), wrt orthic triangle
    * :ref:`X(125) <X(125)>` = :term:`anticomplement <anticomplement>` of X(5972)
    * :ref:`X(125) <X(125)>` = pole of Fermat axis wrt Dao-Moses-Telv circle
@@ -79,7 +79,7 @@ X(125) = CENTER OF JERABEK HYPERBOLA
    * :ref:`X(125) <X(125)>` = inverse-in-Hutson-Parry-circle of :ref:`X(868) <X(868)>`
    * :ref:`X(125) <X(125)>` = {X(13636),X(13722)}-harmonic conjugate of :ref:`X(868) <X(868)>`
    * :ref:`X(125) <X(125)>` = crosssum of MacBeath circumconic intercepts of Brocard axis
-   * :ref:`X(125) <X(125)>` = excentral-to-ABC :term:`functional image <functional-image>` of :ref:`X(100) <X(100)>`
+   * :ref:`X(125) <X(125)>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X(100) <X(100)>`
    * :ref:`X(125) <X(125)>` = 1st-Brocard-isotomic conjugate of X(35901)
    * :ref:`X(125) <X(125)>` = antipode of X(1495) in Walsmith rectangular hyperbola
    * :ref:`X(125) <X(125)>` = orthocenter of :ref:`X(6) <X(6)>`\ \ :ref:`X(113) <X(113)>`\ X(3569)
@@ -97,11 +97,11 @@ Notes
 
 .. container:: note-item
 
-   Let La, Lb, Lc be the lines through A, B, C, resp. parallel to the Euler line. Let Ma, Mb, Mc be the reflections of BC, CA, AB in La, Lb, Lc, resp. Let A' = Mb∩Mc, and define B', C' cyclically. Triangle A'B'C' is inversely similar to, and 3 times the size of, ABC. Let A″B″C″ be the reflection of A'B'C' in the Euler line. The triangle A″B″C″ is homothetic to ABC, with center of homothety :ref:`X(125) <X(125)>`; see :cite:`Hyacinthos #16741 <hyacinthos>`/16782, Sep 2008. (Randy Hutson, March 25, 2016)
+   Let :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` be the lines through :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, resp. parallel to the Euler line. Let :g:`M_{a} <M_a>`, :g:`M_{b} <M_b>`, :g:`M_{c} <M_c>` be the reflections of :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>` in :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>`, resp. Let :g:`A' <A'>` = :g:`M_{b} <M_b>`\ ∩\ :g:`M_{c} <M_c>`, and define :g:`B' <B'>`, :g:`C' <C'>` cyclically. Triangle :g:`A'B'C' << A' B' C' >>` is inversely similar to, and 3 times the size of, :g:`ABC << A B C >>`. Let :g:`A″B″C″ << A″ B″ C″ >>` be the reflection of :g:`A'B'C' << A' B' C' >>` in the Euler line. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to :g:`ABC << A B C >>`, with center of homothety :ref:`X(125) <X(125)>`; see :cite:`Hyacinthos #16741 <hyacinthos>`/16782, Sep 2008. (Randy Hutson, March 25, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the orthic triangle. The Euler lines of AB'C', BC'A', CA'B' concur in :ref:`X(125) <X(125)>`. (Randy Hutson, March 25, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the orthic triangle. The Euler lines of :g:`AB'C' << A B' C' >>`, :g:`BC'A' << B C' A' >>`, :g:`CA'B' << C A' B' >>` concur in :ref:`X(125) <X(125)>`. (Randy Hutson, March 25, 2016)
 
 .. toctree::
    :hidden:

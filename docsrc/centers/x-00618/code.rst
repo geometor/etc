@@ -6,13 +6,13 @@ X(618) = COMPLEMENT OF X(13) — Code
 
 .. enunciation::
 
-   Trilinears F(13)/a - csc(A + π/3) : F(13)/b - csc(B + π/3) : F(13)/c - csc(C + π/3)
+   :ref:`X(618) <X(618)>` = reflection of :ref:`X(619) <X(619)>` in :ref:`X(620) <X(620)>`
 
 .. figure:: x-00618.svg
    :alt: X(618) = COMPLEMENT OF X(13)
    :align: center
 
-   **X(618) = COMPLEMENT OF X(13)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(618) = COMPLEMENT OF X(13)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -11,19 +11,19 @@ X(19) = CLAWSON POINT
 
 .. enunciation::
 
-   :ref:`X(19) <X(19)>` is the homothetic center of the orthic and extangents triangles. The Ayme triangle, constructed at X(3610), is perspective to ABC with perspector :ref:`X(19) <X(19)>`.
+   :ref:`X(19) <X(19)>` is the homothetic center of the orthic and extangents triangles. The Ayme triangle, constructed at X(3610), is perspective to :g:`ABC << A B C >>` with perspector :ref:`X(19) <X(19)>`.
 
 .. figure:: x-00019.svg
    :alt: X(19) = CLAWSON POINT
    :align: center
 
-   **X(19) = CLAWSON POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(19) = CLAWSON POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`\tan A : \tan B : \tan C`
-   | **Barycentrics:** :math:`a*(a^2 + b^2 - c^2)*(a^2 - b^2 + c^2) : :`
-   | **Tripolars:** :math:`(-a^2+b^2+c^2) \sqrt{b c (a^6-a^4 b^2-a^2 b^4+b^6-2 a^4 b c-2 b^5 c-a^4 c^2+2 a^2 b^2 c^2-b^4 c^2+4 b^3 c^3-a^2 c^4-b^2 c^4-2 b c^5+c^6)} : :`
+   | **Barycentrics:** :math:`a (a^{2} + b^{2} - c^{2}) \cdot (a^{2} - b^{2} + c^{2}) : :`
+   | **Tripolars:** :math:`(-a^{2}+b^{2}+c^{2}) \sqrt{b c (a^{6}-a^{4} b^{2}-a^{2} b^{4}+b^{6}-2 a^{4} b c-2 b^{5} c-a^{4} c^{2}+2 a^{2} b^{2} c^{2}-b^{4} c^{2}+4 b^{3} c^{3}-a^{2} c^{4}-b^{2} c^{4}-2 b c^{5}+c^{6})} : :`
    | **Search Value (6, 9, 13):** :math:`-1.480512397789`
 
 .. collapse:: Alternate Coordinates
@@ -32,14 +32,14 @@ X(19) = CLAWSON POINT
    * **Trilinears:** :math:`\sin 2B + \sin 2C - \sin 2A : :`
    * **Trilinears:** :math:`1/(b^{2} + c^{2} - a^{2}) : :`
    * **Trilinears:** :math:`a^{2} - S^{2} + S_{A} : :`
-   * **Trilinears:** :math:`SB*SC : :`
+   * **Trilinears:** :math:`S_{B} S_{C} : :`
    * **Barycentrics:** :math:`a \tan A : b \tan B : c \tan C`
 
 .. collapse:: Linear Combinations
    :badge: 2 combinations
 
-   * :ref:`X(19) <X(19)>` = (r + 2R - s)(r + 2R + s)\*\ :ref:`X(1) <X(1)>` - 6R(r + 2R)\*\ :ref:`X(2) <X(2)>` - 2(r\ :sup:`2` + 2rR - s\ :sup:`2`)\*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-   * :ref:`X(19) <X(19)>` = 3 :ref:`X(2) <X(2)>` + X(20061), 6 :ref:`X(2) <X(2)>` - 5 X(31261), 2 :ref:`X(3) <X(3)>` - 3 X(21160), 2 X(4329) - 3 X(31158), 2 X(4329) - 5 X(31261), 2 X(18589) + X(20061), 4 X(18589) - 3 X(31158), 4 X(18589) - 5 X(31261), 2 X(20061) + 3 X(31158), 2 X(20061) + 5 X(31261), 3 X(21160) - X(30265), 3 X(31158) - 5 X(31261)
+   * :ref:`X(19) <X(19)>` = :math:`(r + 2R - s)(r + 2R + s)` :ref:`X(1) <X(1)>` - :math:`6R(r + 2R)` :ref:`X(2) <X(2)>` - :math:`2(r^{2} + 2rR - s^{2})` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
+   * :ref:`X(19) <X(19)>` = :math:`3` :ref:`X(2) <X(2)>` + X(20061), :math:`6` :ref:`X(2) <X(2)>` - :math:`5` X(31261), :math:`2` :ref:`X(3) <X(3)>` - :math:`3` X(21160), :math:`2` X(4329) - :math:`3` X(31158), :math:`2` X(4329) - :math:`5` X(31261), :math:`2` X(18589) + X(20061), :math:`4` X(18589) - :math:`3` X(31158), :math:`4` X(18589) - :math:`5` X(31261), :math:`2` X(20061) + :math:`3` X(31158), :math:`2` X(20061) + :math:`5` X(31261), :math:`3` X(21160) - X(30265), :math:`3` X(31158) - :math:`5` X(31261)
 
 .. container:: note-item
 
@@ -96,7 +96,7 @@ X(19) = CLAWSON POINT
    * :ref:`X(19) <X(19)>` = inverse-in-polar-circle of X(5179)
    * :ref:`X(19) <X(19)>` = inverse-in-circumconic-centered-at-:ref:`X(9) <X(9)>` of X(1861)
    * :ref:`X(19) <X(19)>` = Zosma transform of :ref:`X(9) <X(9)>`
-   * :ref:`X(19) <X(19)>` = perspector of ABC and extraversion triangle of :ref:`X(19) <X(19)>` (which is also the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(19) <X(19)>`)
+   * :ref:`X(19) <X(19)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(19) <X(19)>` (which is also the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(19) <X(19)>`)
    * :ref:`X(19) <X(19)>` = intersection of tangents at :ref:`X(9) <X(9)>` and :ref:`X(57) <X(57)>` to Thomson cubic K002
    * :ref:`X(19) <X(19)>` = intersection of tangents at :ref:`X(40) <X(40)>` and :ref:`X(84) <X(84)>` to Darboux cubic K004
    * :ref:`X(19) <X(19)>` = trilinear product of PU(i) for these i: 4, 23, 157
@@ -104,9 +104,9 @@ X(19) = CLAWSON POINT
    * :ref:`X(19) <X(19)>` = vertex conjugate of PU(19)
    * :ref:`X(19) <X(19)>` = bicentric sum of PU(127)
    * :ref:`X(19) <X(19)>` = PU(127)-harmonic conjugate of :ref:`X(656) <X(656)>`
-   * :ref:`X(19) <X(19)>` = perspector of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of hexyl triangle
+   * :ref:`X(19) <X(19)>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of hexyl triangle
    * :ref:`X(19) <X(19)>` = perspector of unary cofactor triangles of 2nd and 4th :term:`extouch triangles <extouch-triangle>`
-   * :ref:`X(19) <X(19)>` = perspector of ABC and unary cofactor triangle of extraversion triangle of :ref:`X(9) <X(9)>`
+   * :ref:`X(19) <X(19)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of extraversion triangle of :ref:`X(9) <X(9)>`
    * :ref:`X(19) <X(19)>` = complement of X(4329)
    * :ref:`X(19) <X(19)>` = {:ref:`X(48) <X(48)>`,X(1953)}-harmonic conjugate of :ref:`X(1) <X(1)>`
    * :ref:`X(19) <X(19)>` = {:ref:`X(92) <X(92)>`,X(1748)}-harmonic conjugate of :ref:`X(63) <X(63)>`
@@ -132,35 +132,35 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the 4th Brocard triangle. Let A″ be the trilinear product B'\*C', and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(19) <X(19)>`. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the 4th Brocard triangle. Let :g:`A″ <A″>` be the trilinear product :g:`B' <B'>`\ \*\ :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(19) <X(19)>`. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
 
 .. container:: note-item
 
-   Let A'B'C' be the :term:`orthic triangle <orthic-triangle>`. Let A″ be the trilinear product of the (real or imaginary) circumcircle intercepts of line B'C'. Define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(19) <X(19)>`. (Randy Hutson, December 26, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`A″ <A″>` be the trilinear product of the (real or imaginary) circumcircle intercepts of line :g:`B'C' <[ B' C' ]>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(19) <X(19)>`. (Randy Hutson, December 26, 2015)
 
 .. container:: note-item
 
-   Let A'B'C' be the excentral triangle. Let A″ be the pole, wrt the polar circle, of line B'C', and define B″ and C″ cyclically. The lines A'A″, B'B″, C'C″ concur in :ref:`X(19) <X(19)>`. (Randy Hutson, December 2, 2017)
+   Let :g:`A'B'C' << A' B' C' >>` be the excentral triangle. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(19) <X(19)>`. (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 
-   Let A'B'C' be the hexyl triangle. Let La be the trilinear polar of A', and define Lb and Lc cyclically. Let A″ = Lb∩Lc, and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(19) <X(19)>`. (Randy Hutson, December 2, 2017)
+   Let :g:`A'B'C' << A' B' C' >>` be the hexyl triangle. Let :g:`L_{a} <L_a>` be the trilinear polar of :g:`A' <A'>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(19) <X(19)>`. (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 
-   Let A'B'C' be the hexyl triangle. Let Ab = BC∩C'A', Ac = BC∩A'B', and define Bc, Ba, Ca, Cb cyclically. Then Ab, Ac, Bc, Ba, Ca, Cb lie on an ellipse. Let A″ be the intersection of the tangents to the ellipse at Ba and Ca, and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(19) <X(19)>`. (Randy Hutson, December 2, 2017)
+   Let :g:`A'B'C' << A' B' C' >>` be the hexyl triangle. Let :g:`A_{b} <A_b>` = :g:`BC <[ B C ]>`\ ∩\ :g:`C'A' <[ C' A' ]>`, :g:`A_{c} <A_c>` = :g:`BC <[ B C ]>`\ ∩\ :g:`A'B' <[ A' B' ]>`, and define :g:`B_{c} <B_c>`, :g:`B_{a} <B_a>`, :g:`C_{a} <C_a>`, :g:`C_{b} <C_b>` cyclically. Then :g:`A_{b} <A_b>`, :g:`A_{c} <A_c>`, :g:`B_{c} <B_c>`, :g:`B_{a} <B_a>`, :g:`C_{a} <C_a>`, :g:`C_{b} <C_b>` lie on an ellipse. Let :g:`A″ <A″>` be the intersection of the tangents to the ellipse at :g:`B_{a} <B_a>` and :g:`C_{a} <C_a>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(19) <X(19)>`. (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 
-   Let A'B'C' be the :term:`intouch triangle <intouch-triangle>` of the extangents triangle, if ABC is acute. Then A'B'C' is homothetic to the anti-Ara triangle at :ref:`X(19) <X(19)>`. (Randy Hutson, December 2, 2017)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`intouch triangle <intouch-triangle>` of the extangents triangle, if :g:`ABC << A B C >>` is acute. Then :g:`A'B'C' << A' B' C' >>` is homothetic to the anti-Ara triangle at :ref:`X(19) <X(19)>`. (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 
-   Let La be the A-extraversion of line :ref:`X(650) <X(650)>`\ \ :ref:`X(663) <X(663)>` (the trilinear polar of :ref:`X(9) <X(9)>`), and define Lb and Lc cyclically. Let A' = Lb∩Lc, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(19) <X(19)>`. (Randy Hutson, December 2, 2017)
+   Let :g:`L_{a} <L_a>` be the A-extraversion of line :ref:`X(650) <X(650)>`\ \ :ref:`X(663) <X(663)>` (the trilinear polar of :ref:`X(9) <X(9)>`), and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(19) <X(19)>`. (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 
-   Let La be the A-extraversion of line :ref:`X(661) <X(661)>`\ \ :ref:`X(663) <X(663)>` (the trilinear polar of :ref:`X(19) <X(19)>`), and define Lb and Lc cyclically. Let A' = Lb∩Lc, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(19) <X(19)>`. (Randy Hutson, December 2, 2017)
+   Let :g:`L_{a} <L_a>` be the A-extraversion of line :ref:`X(661) <X(661)>`\ \ :ref:`X(663) <X(663)>` (the trilinear polar of :ref:`X(19) <X(19)>`), and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(19) <X(19)>`. (Randy Hutson, December 2, 2017)
 
 .. toctree::
    :hidden:

@@ -10,13 +10,13 @@ X(789) = o-(- 3, 0) CIRCUMCIRCLE POINT
 
 .. enunciation::
 
-   As the trilinear product of Steiner circumellipse antipodes, :ref:`X(789) <X(789)>` lies on conic {A,B,C,\ :ref:`X(668) <X(668)>`,\ :ref:`X(789) <X(789)>`}} with center X(6376) and perspector :ref:`X(75) <X(75)>`. (:person:`Randy Hutson <randy-hutson>`, July 11, 2019)
+   As the trilinear product of Steiner circumellipse antipodes, :ref:`X(789) <X(789)>` lies on conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(668) <X(668)>`,\ :ref:`X(789) <X(789)>`}} with center X(6376) and perspector :ref:`X(75) <X(75)>`. (:person:`Randy Hutson <randy-hutson>`, July 11, 2019)
 
 .. figure:: x-00789.svg
    :alt: X(789) = o-(- 3, 0) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(789) = o-(- 3, 0) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(789) = o-(- 3, 0) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -38,7 +38,7 @@ X(789) = o-(- 3, 0) CIRCUMCIRCLE POINT
 
    * :ref:`X(789) <X(789)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(788) <X(788)>`
    * :ref:`X(789) <X(789)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(1491)
-   * :ref:`X(789) <X(789)>` = intersection, other than A, B, C, of circumcircle and hyperbola {A,B,C,PU(6)}}
+   * :ref:`X(789) <X(789)>` = intersection, other than :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, of circumcircle and hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(6)}}
    * :ref:`X(789) <X(789)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(6) <X(6)>`\ \ :ref:`X(75) <X(75)>`
    * :ref:`X(789) <X(789)>` = Ψ(X(i),X(j)) for these (i,j): (:ref:`1 <X(1)>`, :ref:`76 <X(76)>`), (:ref:`6 <X(6)>`, :ref:`75 <X(75)>`), (:ref:`31 <X(31)>`, :ref:`2 <X(2)>`), (:ref:`32 <X(32)>`, :ref:`1 <X(1)>`)
    * :ref:`X(789) <X(789)>` = trilinear product of intercepts of Steiner circumellipse and line :ref:`X(2) <X(2)>`\ \ :ref:`X(31) <X(31)>`

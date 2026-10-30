@@ -16,7 +16,7 @@ X(372) = {X(3),X(6)}-HARMONIC CONJUGATE OF X(371)
    :alt: X(372) = {X(3),X(6)}-HARMONIC CONJUGATE OF X(371)
    :align: center
 
-   **X(372) = {X(3),X(6)}-HARMONIC CONJUGATE OF X(371)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(372) = {X(3),X(6)}-HARMONIC CONJUGATE OF X(371)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -34,7 +34,7 @@ X(372) = {X(3),X(6)}-HARMONIC CONJUGATE OF X(371)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(372) <X(372)>` = 3 :ref:`X(2) <X(2)>` + X(43133), 2 :ref:`X(640) <X(640)>` + X(43133), 3 :ref:`X(6) <X(6)>` - 4 X(44481), 3 :ref:`X(6) <X(6)>` - 2 X(44501), X(1151) - 3 X(12968), 2 X(1505) + X(40275), 2 X(6221) - 5 X(41411), X(11824) - 4 X(43121), X(11824) + 2 X(45488), 3 X(35841) - 8 X(44481), 3 X(35841) - 4 X(44501), 2 X(43121) + X(45488), X(3071) - 3 X(32788), 2 X(3071) - 3 X(35823), X(3071) + 3 X(41946), 2 X(3071) + X(42267), 3 X(3071) - X(42271), 5 X(3071) + 3 X(43209), X(3071) + 6 X(52048), 2 X(7584) - 3 X(32788), 4 X(7584) - X(35821), 4 X(7584) - 3 X(35823), 2 X(7584) + 3 X(41946), 2 X(7584) + X(42259), 4 X(7584) + X(42267), 6 X(7584) - X(42271), 10 X(7584) + 3 X(43209), X(7584) + 3 X(52048), 6 X(32788) - X(35821), 3 X(32788) + X(42259), 6 X(32788) + X(42267), 9 X(32788) - X(42271), 5 X(32788) + X(43209), X(32788) + 2 X(52048), X(35821) - 3 X(35823), X(35821) + 6 X(41946), X(35821) + 2 X(42259), 3 X(35821) - 2 X(42271), 5 X(35821) + 6 X(43209), X(35821) + 12 X(52048), X(35823) + 2 X(41946), 3 X(35823) + 2 X(42259), 3 X(35823) + X(42267), 9 X(35823) - 2 X(42271), 5 X(35823) + 2 X(43209), X(35823) + 4 X(52048), 3 X(41946) - X(42259), 6 X(41946) - X(42267), 9 X(41946) + X(42271), 5 X(41946) - X(43209), 3 X(42259) + X(42271), 5 X(42259) - 3 X(43209), X(42259) - 6 X(52048), 3 X(42267) + 2 X(42271), 5 X(42267) - 6 X(43209), X(42267) - 12 X(52048), 5 X(42271) + 9 X(43209), X(42271) + 18 X(52048), X(43209) - 10 X(52048), :ref:`X(489) <X(489)>` - 3 X(35948), :ref:`X(489) <X(489)>` + 3 X(45421), 2 X(7968) + X(35611), X(35642) + 2 X(49227), X(35857) + 2 X(48715), X(35883) + 2 X(48701), X(35825) + 2 X(49267), X(35879) + 2 X(49213), X(12376) + 2 X(49217), X(35827) + 2 X(49269), 3 X(11242) - X(12970), 6 X(11242) + X(35865), 3 X(11242) + X(49251), 2 X(12970) + X(35865), X(35835) - 4 X(46689), X(35829) + 2 X(49271), X(35881) + 2 X(49219)
+   * :ref:`X(372) <X(372)>` = :math:`3` :ref:`X(2) <X(2)>` + X(43133), :math:`2` :ref:`X(640) <X(640)>` + X(43133), :math:`3` :ref:`X(6) <X(6)>` - :math:`4` X(44481), :math:`3` :ref:`X(6) <X(6)>` - :math:`2` X(44501), X(1151) - :math:`3` X(12968), :math:`2` X(1505) + X(40275), :math:`2` X(6221) - :math:`5` X(41411), X(11824) - :math:`4` X(43121), X(11824) + :math:`2` X(45488), :math:`3` X(35841) - :math:`8` X(44481), :math:`3` X(35841) - :math:`4` X(44501), :math:`2` X(43121) + X(45488), X(3071) - :math:`3` X(32788), :math:`2` X(3071) - :math:`3` X(35823), X(3071) + :math:`3` X(41946), :math:`2` X(3071) + X(42267), :math:`3` X(3071) - X(42271), :math:`5` X(3071) + :math:`3` X(43209), X(3071) + :math:`6` X(52048), :math:`2` X(7584) - :math:`3` X(32788), :math:`4` X(7584) - X(35821), :math:`4` X(7584) - :math:`3` X(35823), :math:`2` X(7584) + :math:`3` X(41946), :math:`2` X(7584) + X(42259), :math:`4` X(7584) + X(42267), :math:`6` X(7584) - X(42271), :math:`10` X(7584) + :math:`3` X(43209), X(7584) + :math:`3` X(52048), :math:`6` X(32788) - X(35821), :math:`3` X(32788) + X(42259), :math:`6` X(32788) + X(42267), :math:`9` X(32788) - X(42271), :math:`5` X(32788) + X(43209), X(32788) + :math:`2` X(52048), X(35821) - :math:`3` X(35823), X(35821) + :math:`6` X(41946), X(35821) + :math:`2` X(42259), :math:`3` X(35821) - :math:`2` X(42271), :math:`5` X(35821) + :math:`6` X(43209), X(35821) + :math:`12` X(52048), X(35823) + :math:`2` X(41946), :math:`3` X(35823) + :math:`2` X(42259), :math:`3` X(35823) + X(42267), :math:`9` X(35823) - :math:`2` X(42271), :math:`5` X(35823) + :math:`2` X(43209), X(35823) + :math:`4` X(52048), :math:`3` X(41946) - X(42259), :math:`6` X(41946) - X(42267), :math:`9` X(41946) + X(42271), :math:`5` X(41946) - X(43209), :math:`3` X(42259) + X(42271), :math:`5` X(42259) - :math:`3` X(43209), X(42259) - :math:`6` X(52048), :math:`3` X(42267) + :math:`2` X(42271), :math:`5` X(42267) - :math:`6` X(43209), X(42267) - :math:`12` X(52048), :math:`5` X(42271) + :math:`9` X(43209), X(42271) + :math:`18` X(52048), X(43209) - :math:`10` X(52048), :ref:`X(489) <X(489)>` - :math:`3` X(35948), :ref:`X(489) <X(489)>` + :math:`3` X(45421), :math:`2` X(7968) + X(35611), X(35642) + :math:`2` X(49227), X(35857) + :math:`2` X(48715), X(35883) + :math:`2` X(48701), X(35825) + :math:`2` X(49267), X(35879) + :math:`2` X(49213), X(12376) + :math:`2` X(49217), X(35827) + :math:`2` X(49269), :math:`3` X(11242) - X(12970), :math:`6` X(11242) + X(35865), :math:`3` X(11242) + X(49251), :math:`2` X(12970) + X(35865), X(35835) - :math:`4` X(46689), X(35829) + :math:`2` X(49271), X(35881) + :math:`2` X(49219)
 
 .. container:: note-item
 
@@ -79,18 +79,18 @@ X(372) = {X(3),X(6)}-HARMONIC CONJUGATE OF X(371)
    * :ref:`X(372) <X(372)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): {:ref:`4 <X(4)>`, 13440}, {:ref:`491 <X(491)>`, 1586}, {3373, 3374}
    * :ref:`X(372) <X(372)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): {:ref:`3 <X(3)>`, 10666}, {:ref:`6 <X(6)>`, 3156}, {:ref:`615 <X(615)>`, 8036}, {3371, 3372}, {6414, 8576}
    * :ref:`X(372) <X(372)>` = :term:`crossdifference <crossdifference>` of every pair of points on line {523, 17432}
-   * :ref:`X(372) <X(372)>` = perspector of ABC and the Lucas(-1:1) tangents triangle
+   * :ref:`X(372) <X(372)>` = perspector of :g:`ABC << A B C >>` and the Lucas(-1:1) tangents triangle
    * :ref:`X(372) <X(372)>` = perspector of the :term:`tangential triangle <tangential-triangle>` and the Lucas(-1) :term:`central triangle <central-triangle>`
    * :ref:`X(372) <X(372)>` = perspector of the Lucas(-1:1) inner tangential triangle and the Lucas central triangle
    * :ref:`X(372) <X(372)>` = perspector of the Lucas(-4:3) central triangle and the circumcevian triangle of :ref:`X(6) <X(6)>`
    * :ref:`X(372) <X(372)>` = perspector of the Lucas(-1:1) central triangle and :term:`cevian triangle <cevian-triangle>` of :ref:`X(589) <X(589)>`
    * :ref:`X(372) <X(372)>` = radical center of the Lucas(-2:1) circles
-   * :ref:`X(372) <X(372)>` = perspector of ABC and 2nd Lucas secondary tangents triangle
+   * :ref:`X(372) <X(372)>` = perspector of :g:`ABC << A B C >>` and 2nd Lucas secondary tangents triangle
    * :ref:`X(372) <X(372)>` = perspector of tangential triangle and Lucas(-1) secondary central triangle
    * :ref:`X(372) <X(372)>` = perspector of Lucas(-1) inner triangle and Lucas tangents triangle
    * :ref:`X(372) <X(372)>` = inverse-in-2nd-Brocard-circle of X(3102)
    * :ref:`X(372) <X(372)>` = inverse-in-Lucas(-1)-radical-circle of X(2459)
-   * :ref:`X(372) <X(372)>` = perspector of ABC and the free vertices of the Kenmotu squares (described at :ref:`X(371) <X(371)>`)
+   * :ref:`X(372) <X(372)>` = perspector of :g:`ABC << A B C >>` and the free vertices of the Kenmotu squares (described at :ref:`X(371) <X(371)>`)
    * :ref:`X(372) <X(372)>` = insimilicenter of circumcircle and Lucas(-1) radical circle
    * :ref:`X(372) <X(372)>` = barycentric product of circumcircle intercepts of inner Vecten circle
    * :ref:`X(372) <X(372)>` = barycentric product X(i)\*X(j) for these {i,j}: {:ref:`3 <X(3)>`, 1586}, {:ref:`4 <X(4)>`, 5409}, {:ref:`6 <X(6)>`, :ref:`491 <X(491)>`}, {:ref:`24 <X(24)>`, 11090}, {:ref:`32 <X(32)>`, 45806}, {:ref:`52 <X(52)>`, 16032}, {:ref:`56 <X(56)>`, 13461}, {:ref:`69 <X(69)>`, 5412}, {:ref:`264 <X(264)>`, 26920}, {:ref:`317 <X(317)>`, 6413}, {:ref:`371 <X(371)>`, 13439}, {:ref:`485 <X(485)>`, 1993}, {:ref:`486 <X(486)>`, 1600}, {:ref:`492 <X(492)>`, 44192}, {:ref:`494 <X(494)>`, 39388}, {:ref:`571 <X(571)>`, 34391}, {:ref:`589 <X(589)>`, :ref:`642 <X(642)>`}, {1307, 14326}, {1585, 10665}, {5408, 13440}, {5413, 13441}, {6563, 39383}, {7763, 8577}, {9723, 41515}
@@ -102,7 +102,7 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the Lucas(-1) central triangle. Let A″ be the cevapoint of B' and C', and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(372) <X(372)>`. (:person:`Randy Hutson <randy-hutson>`, July 23, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the Lucas(-1) central triangle. Let :g:`A″ <A″>` be the cevapoint of :g:`B' <B'>` and :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(372) <X(372)>`. (:person:`Randy Hutson <randy-hutson>`, July 23, 2015)
 
 .. toctree::
    :hidden:

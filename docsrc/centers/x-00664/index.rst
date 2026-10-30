@@ -16,7 +16,7 @@ X(664) = TRILINEAR POLE OF LINE X(2)X(7)
    :alt: X(664) = TRILINEAR POLE OF LINE X(2)X(7)
    :align: center
 
-   **X(664) = TRILINEAR POLE OF LINE X(2)X(7)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(664) = TRILINEAR POLE OF LINE X(2)X(7)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -26,7 +26,7 @@ X(664) = TRILINEAR POLE OF LINE X(2)X(7)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(664) <X(664)>` = 3 :ref:`X(2) <X(2)>` - 4 X(17044), 6 :ref:`X(2) <X(2)>` - 5 X(31640), 9 :ref:`X(2) <X(2)>` - 8 X(40483), :ref:`X(150) <X(150)>` - 3 X(38941), 3 X(1121) - 4 X(1146), 3 X(1121) - 8 X(17044), 3 X(1121) - 5 X(31640), X(1121) - 4 X(35110), 3 X(1121) - 2 X(39351), X(1121) + 2 X(39357), 9 X(1121) - 16 X(40483), 4 X(1146) - 5 X(31640), X(1146) - 3 X(35110), 2 X(1146) + 3 X(39357), 3 X(1146) - 4 X(40483), 3 X(1275) - X(35157), 4 X(1323) - 3 X(17078), 2 X(1565) - 3 X(38941), 2 X(9436) - 3 X(17078), 3 X(10001) - 2 X(35157), 8 X(17044) - 5 X(31640), 2 X(17044) - 3 X(35110), 4 X(17044) - X(39351), 4 X(17044) + 3 X(39357), 3 X(17044) - 2 X(40483), 5 X(31640) - 12 X(35110), 5 X(31640) - 2 X(39351), 5 X(31640) + 6 X(39357), 15 X(31640) - 16 X(40483), 2 X(31852) - 3 X(38690), 6 X(35110) - X(39351), 2 X(35110) + X(39357), 9 X(35110) - 4 X(40483), X(39351) + 3 X(39357), 3 X(39351) - 8 X(40483), 9 X(39357) + 8 X(40483)
+   * :ref:`X(664) <X(664)>` = :math:`3` :ref:`X(2) <X(2)>` - :math:`4` X(17044), :math:`6` :ref:`X(2) <X(2)>` - :math:`5` X(31640), :math:`9` :ref:`X(2) <X(2)>` - :math:`8` X(40483), :ref:`X(150) <X(150)>` - :math:`3` X(38941), :math:`3` X(1121) - :math:`4` X(1146), :math:`3` X(1121) - :math:`8` X(17044), :math:`3` X(1121) - :math:`5` X(31640), X(1121) - :math:`4` X(35110), :math:`3` X(1121) - :math:`2` X(39351), X(1121) + :math:`2` X(39357), :math:`9` X(1121) - :math:`16` X(40483), :math:`4` X(1146) - :math:`5` X(31640), X(1146) - :math:`3` X(35110), :math:`2` X(1146) + :math:`3` X(39357), :math:`3` X(1146) - :math:`4` X(40483), :math:`3` X(1275) - X(35157), :math:`4` X(1323) - :math:`3` X(17078), :math:`2` X(1565) - :math:`3` X(38941), :math:`2` X(9436) - :math:`3` X(17078), :math:`3` X(10001) - :math:`2` X(35157), :math:`8` X(17044) - :math:`5` X(31640), :math:`2` X(17044) - :math:`3` X(35110), :math:`4` X(17044) - X(39351), :math:`4` X(17044) + :math:`3` X(39357), :math:`3` X(17044) - :math:`2` X(40483), :math:`5` X(31640) - :math:`12` X(35110), :math:`5` X(31640) - :math:`2` X(39351), :math:`5` X(31640) + :math:`6` X(39357), :math:`15` X(31640) - :math:`16` X(40483), :math:`2` X(31852) - :math:`3` X(38690), :math:`6` X(35110) - X(39351), :math:`2` X(35110) + X(39357), :math:`9` X(35110) - :math:`4` X(40483), X(39351) + :math:`3` X(39357), :math:`3` X(39351) - :math:`8` X(40483), :math:`9` X(39357) + :math:`8` X(40483)
 
 .. container:: note-item
 

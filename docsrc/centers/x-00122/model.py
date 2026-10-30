@@ -13,8 +13,8 @@ from geometor.etc.ops import (
     circumcenter_of,
     construct_baseline_triangle,
     create_model,
+    eval_barycentric_point,
     eval_trilinear_point,
-    intersect_lines,
     nine_point_center_of,
     promote_point_to_top,
 )
@@ -25,13 +25,13 @@ def construct_x_00122(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(122) = X(107)-OF-MEDIAL-TRIANGLE on reference triangle ABC."""
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
-    X_107 = eval_trilinear_point(model, A, B, C, '1/(cos(A)*(sin(2*B) - sin(2*C)))', ID="X(107)", classes=["center"])
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
-    X_113 = eval_trilinear_point(model, A, B, C, 'sin(B)*sin(C)*((sin(C))/(cos(C) - 2*cos(A)*cos(B)) + (sin(B))/(cos(B) - 2*cos(A)*cos(C)))', ID="X(113)", classes=["center"])
-    central_line(model, X_2, X_107, 2, 107)
-    central_line(model, X_3, X_113, 3, 113)
-    X_122 = intersect_lines(model, X_2, X_107, X_3, X_113, ID="X(122)", classes=["selected", "target"])
+    X_122 = eval_barycentric_point(model, A, B, C, '(b**(2) - c**(2))**(2)*(a**(2) - b**(2) - c**(2))**(2)*(3*a**(4) - 2*a**(2)*(b**(2) + c**(2)) - (b**(2) - c**(2))**(2))', ID="X(122)", classes=["selected", "target"])
+    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
+    X_107 = eval_trilinear_point(model, A, B, C, '1/(cos(A)*(sin(2*B) - sin(2*C)))', ID="X(107)", classes=["center", "incident"])
+    central_line(model, X_2, X_107, 2, 107, incident=True)
+    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
+    X_113 = eval_trilinear_point(model, A, B, C, 'sin(B)*sin(C)*((sin(C))/(cos(C) - 2*cos(A)*cos(B)) + (sin(B))/(cos(B) - 2*cos(A)*cos(C)))', ID="X(113)", classes=["center", "incident"])
+    central_line(model, X_3, X_113, 3, 113, incident=True)
     X_5 = nine_point_center_of(model, A, B, C, ID="X(5)", classes=["center", "incident"])
     X_133 = eval_trilinear_point(model, A, B, C, '(sec(A))*((sin(2*B) - sin(2*C))**(2) + (sin(2*A))*(sin(2*B)) + (sin(2*A))*(sin(2*C)) - 2*(sin(2*B))*(sin(2*C)))*(2*sin(2*A) - sin(2*B) - sin(2*C))', ID="X(133)", classes=["center", "incident"])
     central_line(model, X_5, X_133, 5, 133, incident=True)

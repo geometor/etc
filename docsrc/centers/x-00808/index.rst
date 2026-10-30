@@ -16,16 +16,12 @@ X(808) = ODD (- 2, 4) INFINITY POINT
    :alt: X(808) = ODD (- 2, 4) INFINITY POINT
    :align: center
 
-   **X(808) = ODD (- 2, 4) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(808) = ODD (- 2, 4) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = a :sup:`-3`\ (b\ :sup:`4` - c\ :sup:`4`) + a\ :sup:`3`\ (b :sup:`-2` - c :sup:`-2`)
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
-
-.. container:: note-item
-
-   :ref:`X(808) <X(808)>` lies.
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a ^{-3}(b^{4} - c^{4}) + a^{3}(b ^{-2} - c ^{-2})`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
 
 .. collapse:: Incident Central Lines
    :badge: 1 line

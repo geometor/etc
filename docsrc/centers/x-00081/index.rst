@@ -10,13 +10,13 @@ X(81) = CEVAPOINT OF INCENTER AND SYMMEDIAN POINT
 
 .. enunciation::
 
-   Let A'B'C' be the :term:`cevian triangle <cevian-triangle>` of :ref:`X(1) <X(1)>`. Let A″ be the symmedian point of triangle AB'C', and define B″ and C″ cyclically. Then the lines AA″, BB″, CC″ concur in :ref:`X(81) <X(81)>`. (Eric Danneels, :cite:`Hyacinthos <hyacinthos>` 7892, 9/13/03)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`cevian triangle <cevian-triangle>` of :ref:`X(1) <X(1)>`. Let :g:`A″ <A″>` be the symmedian point of triangle :g:`AB'C' << A B' C' >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Then the lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(81) <X(81)>`. (Eric Danneels, :cite:`Hyacinthos <hyacinthos>` 7892, 9/13/03)
 
 .. figure:: x-00081.svg
    :alt: X(81) = CEVAPOINT OF INCENTER AND SYMMEDIAN POINT
    :align: center
 
-   **X(81) = CEVAPOINT OF INCENTER AND SYMMEDIAN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(81) = CEVAPOINT OF INCENTER AND SYMMEDIAN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -32,11 +32,7 @@ X(81) = CEVAPOINT OF INCENTER AND SYMMEDIAN POINT
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(81) <X(81)>` = (r\ :sup:`2` + 2rR + s\ :sup:`2`)\*\ :ref:`X(1) <X(1)>` - 3rR\*\ :ref:`X(2) <X(2)>` - 2r\ :sup:`2`\ \*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-
-.. container:: note-item
-
-   :ref:`X(81) <X(81)>` lies.
+   * :ref:`X(81) <X(81)>` = :math:`(r^{2} + 2rR + s^{2})` :ref:`X(1) <X(1)>` - :math:`3rR` :ref:`X(2) <X(2)>` - :math:`2r^{2}` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. collapse:: Incident Central Lines
    :badge: 32 lines
@@ -65,47 +61,47 @@ X(81) = CEVAPOINT OF INCENTER AND SYMMEDIAN POINT
    * :ref:`X(81) <X(81)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(31) <X(31)>`}-harmonic conjugate of X(1621)
    * :ref:`X(81) <X(81)>` = :ref:`X(6) <X(6)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(10) <X(10)>`
    * :ref:`X(81) <X(81)>` = :ref:`X(92) <X(92)>`-isoconjugate of :ref:`X(228) <X(228)>`
-   * :ref:`X(81) <X(81)>` = perspector of ABC and cross-triangle of Gemini triangles 1 and 2
+   * :ref:`X(81) <X(81)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of Gemini triangles 1 and 2
    * :ref:`X(81) <X(81)>` = barycentric product of vertices of Gemini triangle 1
    * :ref:`X(81) <X(81)>` = barycentric product of vertices of Gemini triangle 2
    * :ref:`X(81) <X(81)>` = barycentric product of vertices of Gemini triangle 3
    * :ref:`X(81) <X(81)>` = barycentric product of vertices of Gemini triangle 4
    * :ref:`X(81) <X(81)>` = perspector of Gemini triangles 2 and 7
-   * :ref:`X(81) <X(81)>` = perspector of ABC and cross-triangle of ABC and Gemini triangle 1
-   * :ref:`X(81) <X(81)>` = perspector of ABC and cross-triangle of ABC and Gemini triangle 2
-   * :ref:`X(81) <X(81)>` = perspector of Gemini triangle 24 and cross-triangle of ABC and Gemini triangle 24
-   * :ref:`X(81) <X(81)>` = perspector of Gemini triangle 28 and cross-triangle of ABC and Gemini triangle 28
+   * :ref:`X(81) <X(81)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 1
+   * :ref:`X(81) <X(81)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 2
+   * :ref:`X(81) <X(81)>` = perspector of Gemini triangle 24 and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 24
+   * :ref:`X(81) <X(81)>` = perspector of Gemini triangle 28 and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 28
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let A'B'C' be the :term:`incentral triangle <incentral-triangle>`. Let L\ :sub:`A` be the reflection of B'C' in the internal angle bisector of vertex angle A, and define L\ :sub:`B` and L\ :sub:`C` cyclically. Let A'' = L\ :sub:`B`\ ∩L\ :sub:`C`, B'' = L\ :sub:`C`\ ∩L\ :sub:`A`, C'' = L\ :sub:`A`\ ∩L\ :sub:`B`. The lines AA'', BB'', CC'' concur in :ref:`X(81) <X(81)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`incentral triangle <incentral-triangle>`. Let :g:`L_{A} <L_A>` be the reflection of :g:`B'C' <[ B' C' ]>` in the internal angle bisector of vertex angle :g:`A <A>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A″ <A″>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, :g:`B″ <B″>` = :g:`L_{C} <L_C>`\ ∩\ :g:`L_{A} <L_A>`, :g:`C″ <C″>` = :g:`L_{A} <L_A>`\ ∩\ :g:`L_{B} <L_B>`. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(81) <X(81)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. container:: note-item
 
-   Let H\* be the Stammler hyperbola. Let A'B'C' be the tangential triangle and A″B″C″ be the :term:`excentral triangle <excentral-triangle>`. Let A\* be the intersection of the tangents to H\* at A' and A″, and define B\* and C\* cyclically. The lines AA\*, BB\*, CC\* concur in :ref:`X(81) <X(81)>`. (Randy Hutson, February 10, 2016)
+   Let :g:`H* <H*>` be the Stammler hyperbola. Let :g:`A'B'C' << A' B' C' >>` be the tangential triangle and :g:`A″B″C″ << A″ B″ C″ >>` be the :term:`excentral triangle <excentral-triangle>`. Let :g:`A* <A*>` be the intersection of the tangents to :g:`H* <H*>` at :g:`A' <A'>` and :g:`A″ <A″>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(81) <X(81)>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the 2nd circumperp triangle. Let A″ be the trilinear pole of line B'C', and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(81) <X(81)>`. (Randy Hutson, February 10, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the 2nd circumperp triangle. Let :g:`A″ <A″>` be the trilinear pole of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(81) <X(81)>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the anticomplement of the Feuerbach triangle. Let A″ be BB'∩CC', and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(81) <X(81)>`. (Randy Hutson, February 10, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the anticomplement of the Feuerbach triangle. Let :g:`A″ <A″>` be :g:`BB' <[ B B' ]>`\ ∩\ :g:`CC' <[ C C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(81) <X(81)>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 
-   Let Ba, Ca be the intersections of lines CA, AB, resp., and the antiparallel to BC through :ref:`X(1) <X(1)>`. Define Cb, Ab, Ac, Bc cyclically. Triangles ABaCa, AbBCb, AcBcC are similar to each other and inversely similar to ABC. Let Sa be the similitude center of triangles AbBCb and AcBcC. Define Sb and Sc cyclically. The lines ASa, BSb, CSc concur in :ref:`X(81) <X(81)>`. (Randy Hutson, February 10, 2016)
+   Let :g:`B_{a} <B_a>`, :g:`C_{a} <C_a>` be the intersections of lines :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, resp., and the antiparallel to :g:`BC <[ B C ]>` through :ref:`X(1) <X(1)>`. Define :g:`C_{b} <C_b>`, :g:`A_{b} <A_b>`, :g:`A_{c} <A_c>`, :g:`B_{c} <B_c>` cyclically. Triangles :g:`AB_{a}C_{a} << A B_a C_a >>`, :g:`A_{b}BC_{b} << A_b B C_b >>`, :g:`A_{c}B_{c}C << A_c B_c C >>` are similar to each other and inversely similar to :g:`ABC << A B C >>`. Let :g:`S_{a} <S_a>` be the similitude center of triangles :g:`A_{b}BC_{b} << A_b B C_b >>` and :g:`A_{c}B_{c}C << A_c B_c C >>`. Define :g:`S_{b} <S_b>` and :g:`S_{c} <S_c>` cyclically. The lines :g:`AS_{a} <[ A S_a ]>`, :g:`BS_{b} <[ B S_b ]>`, :g:`CS_{c} <[ C S_c ]>` concur in :ref:`X(81) <X(81)>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 
-   Let A\ :sub:`10`\ B\ :sub:`10`\ C\ :sub:`10` be Gemini triangle 10. Let A' be the perspector of conic {A,B,C,B\ :sub:`10`,C\ :sub:`10`}}, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(81) <X(81)>`. (Randy Hutson, January 15, 2019)
+   Let :g:`A_{10}B_{10}C_{10} << A_10 B_10 C_10 >>` be Gemini triangle 10. Let :g:`A' <A'>` be the perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B_{10} <B_10>`,\ :g:`C_{10} <C_10>`}}, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(81) <X(81)>`. (Randy Hutson, January 15, 2019)
 
 .. container:: note-item
 
-   Let A\ :sub:`11`\ B\ :sub:`11`\ C\ :sub:`11` be Gemini triangle 11. Let A' be the perspector of conic {A,B,C,B\ :sub:`11`,C\ :sub:`11`}}, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(81) <X(81)>`. (Randy Hutson, January 15, 2019)
+   Let :g:`A_{11}B_{11}C_{11} << A_11 B_11 C_11 >>` be Gemini triangle 11. Let :g:`A' <A'>` be the perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B_{11} <B_11>`,\ :g:`C_{11} <C_11>`}}, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(81) <X(81)>`. (Randy Hutson, January 15, 2019)
 
 .. toctree::
    :hidden:

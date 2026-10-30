@@ -16,7 +16,7 @@ X(405) = EULER LINE INTERCEPT OF LINE X(1)X(6)
    :alt: X(405) = EULER LINE INTERCEPT OF LINE X(1)X(6)
    :align: center
 
-   **X(405) = EULER LINE INTERCEPT OF LINE X(1)X(6)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(405) = EULER LINE INTERCEPT OF LINE X(1)X(6)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,11 +28,7 @@ X(405) = EULER LINE INTERCEPT OF LINE X(1)X(6)
    :badge: 2 forms
 
    * **Trilinears:** :math:`bcS + raS_{A} : :`
-   * **Barycentrics:** :math:`a*(a^3 - a*b^2 - 2*a*b*c - 2*b^2*c - a*c^2 - 2*b*c^2) : :`
-
-.. container:: note-item
-
-   :ref:`X(405) <X(405)>` lies.
+   * **Barycentrics:** :math:`a (a^{3} - a b^{2} - 2 a b c - 2 b^{2} c - a c^{2} - 2 b c^{2}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 359 lines
@@ -55,7 +51,7 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(405) <X(405)>` has Shinagawa coefficients (abc\*$a$ + S\ :sup:`2`, -S\ :sup:`2`).
+   As a point on the Euler line, :ref:`X(405) <X(405)>` has Shinagawa coefficients :math:`(abc \$a\$ + S^{2}, -S^{2})`.
 
 .. toctree::
    :hidden:

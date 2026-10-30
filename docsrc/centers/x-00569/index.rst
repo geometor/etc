@@ -16,21 +16,17 @@ X(569) = HARMONIC OF X(52)
    :alt: X(569) = HARMONIC OF X(52)
    :align: center
 
-   **X(569) = HARMONIC OF X(52)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(569) = HARMONIC OF X(52)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\sin A + \cot D/2 \cos A : :,`
+   | **Trilinears:** :math:`\sin A + \cot D/2 \cos A : :`
    | **Search Value (6, 9, 13):** :math:`2.078407331492`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`\cot D/2 = (2e_{3} + e_{2} - e_{1})/[64*(area)^{3}]`, where, e\ :sub:`1` = a\ :sup:`6` + b\ :sup:`6` + c\ :sup:`6`, e\ :sub:`2` = a\ :sup:`4`\ (b\ :sup:`2` + c\ :sup:`2`) + b\ :sup:`4`\ (c\ :sup:`2` + a\ :sup:`2`) + c\ :sup:`4`\ (a\ :sup:`2` + b\ :sup:`2`), e\ :sub:`3` = a\ :sup:`2`\ b\ :sup:`2`\ c\ :sup:`2`
-
-.. container:: note-item
-
-   :ref:`X(569) <X(569)>` lies.
+   * **Trilinears:** :math:`\cot D/2 = (2e_{3} + e_{2} - e_{1})/[64 (\operatorname{area})^{3}]`, where :math:`e_{1} = a^{6} + b^{6} + c^{6}`, :math:`e_{2} = a^{4}(b^{2} + c^{2}) + b^{4}(c^{2} + a^{2}) + c^{4}(a^{2} + b^{2})`, :math:`e_{3} = a^{2}b^{2}c^{2}`
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines

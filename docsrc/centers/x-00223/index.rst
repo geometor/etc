@@ -10,13 +10,13 @@ X(223) = X(2)-CEVA CONJUGATE OF X(57)
 
 .. enunciation::
 
-   Let A' be the homothetic center of ABC and the :term:`orthic triangle <orthic-triangle>` of the A-:term:`extouch triangle <extouch-triangle>` and define B' and C' cyclically. Triangle A'B'C' is perspective to the 3rd extouch triangle at :ref:`X(223) <X(223)>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
+   Let :g:`A' <A'>` be the homothetic center of :g:`ABC << A B C >>` and the :term:`orthic triangle <orthic-triangle>` of the A-:term:`extouch triangle <extouch-triangle>` and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Triangle :g:`A'B'C' << A' B' C' >>` is perspective to the 3rd extouch triangle at :ref:`X(223) <X(223)>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
 
 .. figure:: x-00223.svg
    :alt: X(223) = X(2)-CEVA CONJUGATE OF X(57)
    :align: center
 
-   **X(223) = X(2)-CEVA CONJUGATE OF X(57)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(223) = X(2)-CEVA CONJUGATE OF X(57)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,7 +27,7 @@ X(223) = X(2)-CEVA CONJUGATE OF X(57)
    :badge: 2 forms
 
    * **Trilinears:** :math:`\sec B + \sec C - \sec A + 1 : :`
-   * **Trilinears:** :math:`(a^3 + a^2 b - a b^2 - b^3 + a^2 c - 2 a b c + b^2 c - a c^2 + b c^2 - c^3)/(b + c - a) : :`
+   * **Trilinears:** :math:`(a^{3} + a^{2} b - a b^{2} - b^{3} + a^{2} c - 2 a b c + b^{2} c - a c^{2} + b c^{2} - c^{3})/(b + c - a) : :`
 
 .. container:: note-item
 
@@ -52,9 +52,9 @@ X(223) = X(2)-CEVA CONJUGATE OF X(57)
    * :ref:`X(223) <X(223)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`198 <X(198)>`, :ref:`40 <X(40)>`), (:ref:`227 <X(227)>`, :ref:`347 <X(347)>`)
    * :ref:`X(223) <X(223)>` = :term:`crosspoint <crosspoint>` of :ref:`X(2) <X(2)>` and :ref:`X(329) <X(329)>`
    * :ref:`X(223) <X(223)>` = :term:`crosssum <crosssum>` of :ref:`X(6) <X(6)>` and X(1436)
-   * :ref:`X(223) <X(223)>` = perspector of ABC and :term:`antipedal triangle <antipedal-triangle>` of X(3345)
+   * :ref:`X(223) <X(223)>` = perspector of :g:`ABC << A B C >>` and :term:`antipedal triangle <antipedal-triangle>` of X(3345)
    * :ref:`X(223) <X(223)>` = perspector of pedal and :term:`anticevian triangles <anticevian-triangle>` of X(3182)
-   * :ref:`X(223) <X(223)>` = perspector of ABC and :term:`medial triangle <medial-triangle>` of :term:`pedal triangle <pedal-triangle>` of X(1490)
+   * :ref:`X(223) <X(223)>` = perspector of :g:`ABC << A B C >>` and :term:`medial triangle <medial-triangle>` of :term:`pedal triangle <pedal-triangle>` of X(1490)
    * :ref:`X(223) <X(223)>` = perspector of circumconic centered at :ref:`X(57) <X(57)>`
    * :ref:`X(223) <X(223)>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X(57) <X(57)>`
    * :ref:`X(223) <X(223)>` = :ref:`X(92) <X(92)>`-:term:`isoconjugate <isoconjugate>` of X(2188)
@@ -71,11 +71,11 @@ Notes
 
 .. container:: note-item
 
-   Let V\ :sub:`a`, V\ :sub:`b`, V\ :sub:`c` be the antipodes of V=\ :ref:`X(40) <X(40)>` in the circles (VBC), (VCA), (VAB), respectively. The triangle V\ :sub:`a`\ V\ :sub:`b`\ V\ :sub:`c` is here named the **Bevan antipodal triangle** (:cite:`Hyacinthos #29638 <hyacinthos>`; however, see next note). The point :ref:`X(223) <X(223)>` is the unique finite fixed point of the affine transformation that maps the reference triangle ABC onto V\ :sub:`a`\ V\ :sub:`b`\ V\ :sub:`c`. (:person:`Angel Montesdeoca <angel-montesdeoca>`, October 15, 2019)
+   Let :g:`V_{a} <V_a>`, :g:`V_{b} <V_b>`, :g:`V_{c} <V_c>` be the antipodes of V=\ :ref:`X(40) <X(40)>` in the circles (:g:`VBC << V B C >>`), (:g:`VCA << V C A >>`), (:g:`VAB << V A B >>`), respectively. The triangle :g:`V_{a}V_{b}V_{c} << V_a V_b V_c >>` is here named the **Bevan antipodal triangle** (:cite:`Hyacinthos #29638 <hyacinthos>`; however, see next note). The point :ref:`X(223) <X(223)>` is the unique finite fixed point of the affine transformation that maps the reference triangle :g:`ABC << A B C >>` onto :g:`V_{a}V_{b}V_{c} << V_a V_b V_c >>`. (:person:`Angel Montesdeoca <angel-montesdeoca>`, October 15, 2019)
 
 .. container:: note-item
 
-   The construction of the triangle VaVbVc can be generalized for an arbitrary point P (instead of V=\ :ref:`X(40) <X(40)>`), and is, in fact, the antipedal triangle of P (Randy Hutson, message in :cite:`Anopolis <adgeom>` Group). Thus, "Bevan antipodal triangle" = antipedal triangle of :ref:`X(40) <X(40)>`. (Angel Montesdeoca, October 16, 2019)
+   The construction of the triangle :g:`V_{a}V_{b}V_{c} << V_a V_b V_c >>` can be generalized for an arbitrary point P (instead of V=\ :ref:`X(40) <X(40)>`), and is, in fact, the antipedal triangle of P (Randy Hutson, message in :cite:`Anopolis <adgeom>` Group). Thus, "Bevan antipodal triangle" = antipedal triangle of :ref:`X(40) <X(40)>`. (Angel Montesdeoca, October 16, 2019)
 
 .. toctree::
    :hidden:

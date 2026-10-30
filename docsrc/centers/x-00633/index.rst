@@ -10,22 +10,24 @@ X(633) = ANTICOMPLEMENT OF X(61)
 
 .. enunciation::
 
-   Trilinears F(61)/a - 2 cos(A - π/3) : F(61)/b - 2 cos(B - π/3) : F(61)/c - 2 cos(C - π/3)
+   :ref:`X(633) <X(633)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(3442)
 
 .. figure:: x-00633.svg
    :alt: X(633) = ANTICOMPLEMENT OF X(61)
    :align: center
 
-   **X(633) = ANTICOMPLEMENT OF X(61)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(633) = ANTICOMPLEMENT OF X(61)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = (S\ :sub:`B`\ S\ :sub:`C` + 2 sqr(3) S\ :sub:`A` area)/a
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = (S_{B}S_{C} + 2 \sqrt{3} S_{A} \operatorname{area})/a`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`4.044689815747`
 
-.. container:: note-item
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-   :ref:`X(633) <X(633)>` lies.
+   * **Trilinears:** :math:`F(61)/a - 2 \cos(A - \pi /3) : F(61)/b - 2 \cos(B - \pi /3) : F(61)/c - 2 \cos(C - \pi /3)`
 
 .. collapse:: Incident Central Lines
    :badge: 12 lines
@@ -36,16 +38,9 @@ X(633) = ANTICOMPLEMENT OF X(61)
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X(633) <X(633)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(3442)
+   * :ref:`X(633) <X(633)>` = isogonal conjugate of X(3442)
    * :ref:`X(633) <X(633)>` = :term:`anticomplement <anticomplement>` of :ref:`X(61) <X(61)>`
    * :ref:`X(633) <X(633)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X(627) <X(627)>`
-
-Notes
------
-
-.. container:: note-item
-
-   Barycentrics g(a,b,c) : g(b,c,a) : g(c,a,b), where g(a,b,c) = af(a,b,c)
 
 .. toctree::
    :hidden:

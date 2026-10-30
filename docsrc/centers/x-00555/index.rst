@@ -16,7 +16,7 @@ X(555) = (X(1),X(158))-ANSWER TO QUESTION A
    :alt: X(555) = (X(1),X(158))-ANSWER TO QUESTION A
    :align: center
 
-   **X(555) = (X(1),X(158))-ANSWER TO QUESTION A** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(555) = (X(1),X(158))-ANSWER TO QUESTION A** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,12 +27,8 @@ X(555) = (X(1),X(158))-ANSWER TO QUESTION A
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
-   * **Trilinears:** :math:`|AJa| : :`, where Ja = A-mixtilinear excenter
-   * **Barycentrics:** :math:`(-a + b - c)*(a + b - c)*\sqrt{b*(a + b - c)*c*(a - b + c)} : :`
-
-.. container:: note-item
-
-   :ref:`X(555) <X(555)>` lies.
+   * **Trilinears:** :math:`|AJa| : :`, where :g:`J_{a} <J_a>` = :g:`A <A>`-mixtilinear excenter
+   * **Barycentrics:** :math:`(-a + b - c) \cdot (a + b - c) \sqrt{b (a + b - c) c (a - b + c)} : :`
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines

@@ -13,6 +13,7 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     isogonal_conjugate,
+    point_from_barycentrics,
     promote_point_to_top,
     spieker_center_of,
 )
@@ -23,7 +24,7 @@ def construct_x_00502(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(502) = ISOGONAL CONJUGATE OF X(501) on reference triangle ABC."""
-    X_501 = eval_trilinear_point(model, A, B, C, 'a*(a**(3)- b**(3)- c**(3)- b*c*(a + b + c) + a*b*(a - b) + a*c*(a - c))/(b + c)', ID="X(501)", classes=["center"])
+    X_501 = point_from_barycentrics(model, A, B, C, 0.35136356, 0.37986486, 0.26877158, ID="X(501)", classes=["center"])
     X_502 = isogonal_conjugate(model, A, B, C, X_501, ID="X(502)", classes=["selected", "target"])
     X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["center", "incident"])
     X_191 = eval_trilinear_point(model, A, B, C, '(b + c - a)*(b*c + c*a + a*b) + b**(3) + c**(3) - a**(3)', ID="X(191)", classes=["center", "incident"])

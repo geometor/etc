@@ -12,7 +12,7 @@ X(360) = HOFSTADTER ZERO POINT — Code
    :alt: X(360) = HOFSTADTER ZERO POINT
    :align: center
 
-   **X(360) = HOFSTADTER ZERO POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(360) = HOFSTADTER ZERO POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

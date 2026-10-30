@@ -11,19 +11,19 @@ X(111) = PARRY POINT
 
 .. enunciation::
 
-   Let L be a line tangent to the Brocard circle. Let P be the :term:`trilinear pole <trilinear-pole>` of L, and let P' be the :term:`isogonal conjugate <isogonal-conjugate>` of P. As L varies, P' traces a parabola with focus at :ref:`X(111) <X(111)>`. The parabola meets the line at infinity at :ref:`X(524) <X(524)>`. Also, :ref:`X(111) <X(111)>` is the QA-P4 center (Isogonal Center) of quadrangle :ref:`X(13) <X(13)>`\ \ :ref:`X(14) <X(14)>`\ \ :ref:`X(15) <X(15)>`\ \ :ref:`X(16) <X(16)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/25-qa-p4.html) Also, let A' = BC∩\ :ref:`X(115) <X(115)>`\ \ :ref:`X(125) <X(125)>`, and define B' and C' cyclically. The circumcircles of AB'C', BC'A', CA'B' concur in :ref:`X(111) <X(111)>`. (:person:`Randy Hutson <randy-hutson>`, October 13, 2015)
+   Let :g:`L <L>` be a line tangent to the Brocard circle. Let :g:`P <P>` be the :term:`trilinear pole <trilinear-pole>` of :g:`L <L>`, and let :g:`P' <P'>` be the :term:`isogonal conjugate <isogonal-conjugate>` of P. As L varies, :g:`P' <P'>` traces a parabola with focus at :ref:`X(111) <X(111)>`. The parabola meets the line at infinity at :ref:`X(524) <X(524)>`. Also, :ref:`X(111) <X(111)>` is the :g:`QA <[ Q A ]>`-:g:`P_{4} <P_4>` center (Isogonal Center) of quadrangle :ref:`X(13) <X(13)>`\ \ :ref:`X(14) <X(14)>`\ \ :ref:`X(15) <X(15)>`\ \ :ref:`X(16) <X(16)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/25-qa-p4.html) Also, let :g:`A' <A'>` = :g:`BC <[ B C ]>`\ ∩\ :ref:`X(115) <X(115)>`\ \ :ref:`X(125) <X(125)>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The circumcircles of :g:`AB'C' << A B' C' >>`, :g:`BC'A' << B C' A' >>`, :g:`CA'B' << C A' B' >>` concur in :ref:`X(111) <X(111)>`. (:person:`Randy Hutson <randy-hutson>`, October 13, 2015)
 
 .. figure:: x-00111.svg
    :alt: X(111) = PARRY POINT
    :align: center
 
-   **X(111) = PARRY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(111) = PARRY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`a/(2a^{2} - b^{2} - c^{2}) : b/(2b^{2} - c^{2} - a^{2}) : c/(2c^{2} - a^{2} - b^{2})`
    | **Barycentrics:** :math:`a^{2}/(2a^{2} - b^{2} - c^{2}) : b^{2}/(2b^{2} - c^{2} - a^{2}) : c^{2}/(2c^{2} - a^{2} - b^{2})`
-   | **Tripolars:** :math:`|b c (2 a^2 - b^2 - c^2)| : :`
+   | **Tripolars:** :math:`|b c (2 a^{2} - b^{2} - c^{2})| : :`
    | **Search Value (6, 9, 13):** :math:`1.207441876625`
 
 .. container:: note-item
@@ -47,8 +47,8 @@ X(111) = PARRY POINT
    * :ref:`X(111) <X(111)>` = :term:`cevapoint <cevapoint>` of :ref:`X(6) <X(6)>` and :ref:`X(187) <X(187)>`
    * :ref:`X(111) <X(111)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`23 <X(23)>`, :ref:`251 <X(251)>`), (:ref:`187 <X(187)>`, :ref:`6 <X(6)>`), (:ref:`351 <X(351)>`, :ref:`110 <X(110)>`)
    * :ref:`X(111) <X(111)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(351) <X(351)>`\ \ :ref:`X(690) <X(690)>`
-   * :ref:`X(111) <X(111)>` = perspector of ABC and the triangle formed by the reflections of line PU(7) in the sides of ABC
-   * :ref:`X(111) <X(111)>` = point of intersection, other than A, B, C, of circumcircle and hyperbola {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(6) <X(6)>`}}
+   * :ref:`X(111) <X(111)>` = perspector of :g:`ABC << A B C >>` and the triangle formed by the reflections of line PU(7) in the sides of :g:`ABC << A B C >>`
+   * :ref:`X(111) <X(111)>` = point of intersection, other than :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, of circumcircle and hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(6) <X(6)>`}}
    * :ref:`X(111) <X(111)>` = trilinear pole of line :ref:`X(6) <X(6)>`\ \ :ref:`X(512) <X(512)>`
    * :ref:`X(111) <X(111)>` = Λ(:ref:`X(2) <X(2)>`, :ref:`X(6) <X(6)>`)
    * :ref:`X(111) <X(111)>` = Ψ(X(i),X(j)) for these (i,j): (:ref:`6 <X(6)>`, :ref:`512 <X(512)>`), (:ref:`21 <X(21)>`, :ref:`650 <X(650)>`), (:ref:`190 <X(190)>`, :ref:`10 <X(10)>`)
@@ -72,12 +72,12 @@ X(111) = PARRY POINT
    * :ref:`X(111) <X(111)>` = X(1296)-of-1st-Parry-triangle
    * :ref:`X(111) <X(111)>` = :ref:`X(111) <X(111)>`-of-2nd-Parry-triangle
    * :ref:`X(111) <X(111)>` = :ref:`X(691) <X(691)>`-of-3rd-Parry-triangle
-   * :ref:`X(111) <X(111)>` = center of similitude of ABC and 2nd Parry triangle
+   * :ref:`X(111) <X(111)>` = center of similitude of :g:`ABC << A B C >>` and 2nd Parry triangle
    * :ref:`X(111) <X(111)>` = inverse-in-Parry-isodynamic-circle of :ref:`X(110) <X(110)>`; see :ref:`X(2) <X(2)>`
    * :ref:`X(111) <X(111)>` = 3rd-Parry-to-circumsymmedial :term:`similarity image <similarity-image>` of :ref:`X(352) <X(352)>`
-   * :ref:`X(111) <X(111)>` = center of similitude of ABC and circumsymmedial triangle of Artzt triangle
+   * :ref:`X(111) <X(111)>` = center of similitude of :g:`ABC << A B C >>` and circumsymmedial triangle of Artzt triangle
    * :ref:`X(111) <X(111)>` = :term:`eigencenter <eigencenter>` of circumtangential triangle
-   * :ref:`X(111) <X(111)>` = perspector of ABC and :term:`unary cofactor triangle <unary-cofactor-triangle>` of 2nd Brocard triangle
+   * :ref:`X(111) <X(111)>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of 2nd Brocard triangle
    * :ref:`X(111) <X(111)>` = :ref:`X(2) <X(2)>`-of-4th-anti-Brocard-triangle
    * :ref:`X(111) <X(111)>` = anti-Artzt-to-4th-anti-Brocard similarity image of :ref:`X(2) <X(2)>`
    * :ref:`X(111) <X(111)>` = Thomson-isogonal conjugate of X(1499)
@@ -100,15 +100,15 @@ Notes
 
 .. container:: note-item
 
-   Let A″B″C″ be the 2nd Ehrmann triangle. Let Pa be the pole of line B″C″ wrt the A-Ehrmann circle, and define Pb and Pc cyclically. Let Pa' be the pole of line BC wrt the A-Ehrmann circle, and define Pb' and Pc' cyclically. The lines APaPa', BPbPb', CPcPc' concur in :ref:`X(111) <X(111)>`. Also, let A\* be the trilinear pole of line B″C″, and define B\*, C\* cyclically. The lines AA\*, BB\*, CC\* concur in :ref:`X(111) <X(111)>`. (Randy Hutson, November 18, 2015)
+   Let :g:`A″B″C″ << A″ B″ C″ >>` be the 2nd Ehrmann triangle. Let :g:`P_{a} <P_a>` be the pole of line :g:`B″C″ <[ B″ C″ ]>` wrt the A-Ehrmann circle, and define :g:`P_{b} <P_b>` and :g:`P_{c} <P_c>` cyclically. Let :g:`P_{a}' <P_a'>` be the pole of line :g:`BC <[ B C ]>` wrt the A-Ehrmann circle, and define :g:`P_{b}' <P_b'>` and :g:`P_{c}' <P_c'>` cyclically. The lines APaPa', BPbPb', CPcPc' concur in :ref:`X(111) <X(111)>`. Also, let :g:`A* <A*>` be the trilinear pole of line :g:`B″C″ <[ B″ C″ ]>`, and define :g:`B* <B*>`, :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(111) <X(111)>`. (Randy Hutson, November 18, 2015)
 
 .. container:: note-item
 
-   Let A1B1C1 and A3B3C3 be the 1st and 3rd Parry triangles. Let A' be the barycentric product A1\*A3, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(111) <X(111)>`. (Randy Hutson, February 10, 2016)
+   Let :g:`A_{1}B_{1}C_{1} << A_1 B_1 C_1 >>` and :g:`A_{3}B_{3}C_{3} << A_3 B_3 C_3 >>` be the 1st and 3rd Parry triangles. Let :g:`A' <A'>` be the barycentric product :g:`A_{1} <A_1>`\ \*\ :g:`A_{3} <A_3>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(111) <X(111)>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' and A″B″C″ be the 4th Brocard and 4th anti-Brocard triangles, resp. Let A\* be the barycentric product A'\*A'', and define B\* and C\* cyclically. The lines AA\*, BB\*, CC\* concur in :ref:`X(111) <X(111)>`. (Randy Hutson, December 2, 2017)
+   Let :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>` be the 4th Brocard and 4th anti-Brocard triangles, resp. Let :g:`A* <A*>` be the barycentric product :g:`A' <A'>`\ \*\ :g:`A″ <A″>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(111) <X(111)>`. (Randy Hutson, December 2, 2017)
 
 .. toctree::
    :hidden:

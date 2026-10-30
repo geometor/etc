@@ -11,13 +11,13 @@ X(355) = FUHRMANN CENTER
 
 .. enunciation::
 
-   :ref:`X(355) <X(355)>` is the homothetic center of the triangles formed by internal and external tangents of circumcircles of BC\ :ref:`X(4) <X(4)>`, CA\ :ref:`X(4) <X(4)>`, AB\ :ref:`X(4) <X(4)>`. Equivalently, the incenter of the trianglar hull of circumcircles of BC\ :ref:`X(4) <X(4)>`, CA\ :ref:`X(4) <X(4)>`, AB\ :ref:`X(4) <X(4)>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
+   :ref:`X(355) <X(355)>` is the homothetic center of the triangles formed by internal and external tangents of circumcircles of :g:`BC <[ B C ]>`\ :ref:`X(4) <X(4)>`, :g:`CA <[ C A ]>`\ :ref:`X(4) <X(4)>`, :g:`AB <[ A B ]>`\ :ref:`X(4) <X(4)>`. Equivalently, the incenter of the trianglar hull of circumcircles of :g:`BC <[ B C ]>`\ :ref:`X(4) <X(4)>`, :g:`CA <[ C A ]>`\ :ref:`X(4) <X(4)>`, :g:`AB <[ A B ]>`\ :ref:`X(4) <X(4)>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
 
 .. figure:: x-00355.svg
    :alt: X(355) = FUHRMANN CENTER
    :align: center
 
-   **X(355) = FUHRMANN CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(355) = FUHRMANN CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,13 +27,9 @@ X(355) = FUHRMANN CENTER
 .. collapse:: Alternate Coordinates
    :badge: 3 forms
 
-   * **Trilinears:** bc(b + c)[a\ :sup:`2`\ (b\ :sup:`2` + c\ :sup:`2`) - (b\ :sup:`2` - c\ :sup:`2`)\ :sup:`2`] - a\ :sup:`3`\ bc(b\ :sup:`2` + c\ :sup:`2` - a\ :sup:`2`) : : (Michel Garitte, 4/3/03)
+   * **Trilinears:** :math:`bc(b + c)[a^{2}(b^{2} + c^{2}) - (b^{2} - c^{2})^{2}] - a^{3}bc(b^{2} + c^{2} - a^{2}) : :` (Michel Garitte, 4/3/03)
    * **Trilinears:** :math:`\cos B + \cos C - 2 \cos B \cos C - 1 : :`
    * **Trilinears:** :math:`r - R \cos(B - C) : :`
-
-.. container:: note-item
-
-   :ref:`X(355) <X(355)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 13 lines
@@ -44,7 +40,7 @@ X(355) = FUHRMANN CENTER
 .. collapse:: Functional Relations
    :badge: 19 relations
 
-   * :ref:`X(355) <X(355)>` = the center of the Fuhrmann circle, defined as the circumcircle of the Fuhrmann triangle A″B″C″, where A″ is obtained as follows: let A' be the midpoint of the circumcircle-arc having endpoints B and C and not containing A; then A″ is the reflection of A' in line BC. Vertices B″ and C″ are obtained cyclically. (Other constructions of A'', and hence the Fuhrmann triangle, follow: (1) Let I\ :sub:`A` be the reflection of :ref:`X(1) <X(1)>` in BC; then A'' is the circumcenter of I\ :sub:`A`\ BC. (2) Let J\ :sub:`A` be the reflection of the A-excenter in BC; then A'' is the circumcenter of J\ :sub:`A`\ BC.
+   * :ref:`X(355) <X(355)>` = the center of the Fuhrmann circle, defined as the circumcircle of the Fuhrmann triangle :g:`A″B″C″ << A″ B″ C″ >>`, where :g:`A″ <A″>` is obtained as follows: let :g:`A' <A'>` be the midpoint of the circumcircle-arc having endpoints :g:`B <B>` and :g:`C <C>` and not containing A; then :g:`A″ <A″>` is the reflection of :g:`A' <A'>` in line :g:`BC <[ B C ]>`. Vertices :g:`B″ <B″>` and :g:`C″ <C″>` are obtained cyclically. (Other constructions of :g:`A″ <A″>`, and hence the Fuhrmann triangle, follow: (1) Let :g:`I_{A} <I_A>` be the reflection of :ref:`X(1) <X(1)>` in :g:`BC <[ B C ]>`; then :g:`A″ <A″>` is the circumcenter of :g:`I_{A}BC << I_A B C >>`. (2) Let :g:`J_{A} <J_A>` be the reflection of the :g:`A <A>`-excenter in :g:`BC <[ B C ]>`; then :g:`A″ <A″>` is the circumcenter of :g:`J_{A}BC << J_A B C >>`.
    * :ref:`X(355) <X(355)>` = midpoint of :ref:`X(4) <X(4)>` and :ref:`X(8) <X(8)>`
    * :ref:`X(355) <X(355)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(3417)
    * :ref:`X(355) <X(355)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`5 <X(5)>`), (:ref:`3 <X(3)>`, :ref:`10 <X(10)>`), (:ref:`944 <X(944)>`, 1385), (1482, :ref:`946 <X(946)>`)
@@ -57,7 +53,7 @@ X(355) = FUHRMANN CENTER
    * :ref:`X(355) <X(355)>` = X(6265)-of-inner-Garcia-triangle
    * :ref:`X(355) <X(355)>` = X(6102)-of-excentral-triangle
    * :ref:`X(355) <X(355)>` = inner-Garcia-to-outer-Garcia :term:`similarity image <similarity-image>` of :ref:`X(3) <X(3)>`
-   * :ref:`X(355) <X(355)>` = X(12844)-of-orthic-triangle if ABC is acute
+   * :ref:`X(355) <X(355)>` = X(12844)-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(355) <X(355)>` = endo-homothetic center of Ehrmann side-triangle and 4th anti-Euler triangle; the homothetic center is X(12111)
    * :ref:`X(355) <X(355)>` = reflection of X(12699) in :ref:`X(4) <X(4)>`
    * :ref:`X(355) <X(355)>` = {:ref:`X(1) <X(1)>`,X(1837)}-harmonic conjugate of X(5722)
@@ -69,15 +65,15 @@ Notes
 
 .. container:: note-item
 
-   Let Na = :ref:`X(5) <X(5)>`-of-BC\ :ref:`X(1) <X(1)>`, Nb = :ref:`X(5) <X(5)>`-of-CA\ :ref:`X(1) <X(1)>`, Nc = :ref:`X(5) <X(5)>`- of-AB\ :ref:`X(1) <X(1)>`. Then :ref:`X(355) <X(355)>` = :ref:`X(20) <X(20)>`-of-NaNbNc. (Randy Hutson, December 2, 2017)
+   Let :g:`N_{a} <N_a>` = :ref:`X(5) <X(5)>`-of-:g:`BC <[ B C ]>`\ :ref:`X(1) <X(1)>`, :g:`N_{b} <N_b>` = :ref:`X(5) <X(5)>`-of-:g:`CA <[ C A ]>`\ :ref:`X(1) <X(1)>`, :g:`N_{c} <N_c>` = :ref:`X(5) <X(5)>`- of-:g:`AB <[ A B ]>`\ :ref:`X(1) <X(1)>`. Then :ref:`X(355) <X(355)>` = :ref:`X(20) <X(20)>`-of-:g:`N_{a}N_{b}N_{c} << N_a N_b N_c >>`. (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 
-   Let A'B'C' be the :term:`anticomplementary triangle <anticomplementary-triangle>`. Then :ref:`X(355) <X(355)>` is the radical center of the incircles of A'BC, B'CA, C'AB. (Randy Hutson, December 2, 2017)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`anticomplementary triangle <anticomplementary-triangle>`. Then :ref:`X(355) <X(355)>` is the radical center of the incircles of :g:`A'BC << A' B C >>`, :g:`B'CA << B' C A >>`, :g:`C'AB << C' A B >>`. (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 
-   Let A'B'C' be the outer Garcia triangle and A″B″C″ the inner Garcia triangle. Let A\* be the isogonal conjugate, wrt A'B'C', of A″, and define B\* and C\* cyclically. The lines A'A\*, B'B\*, C'C\* concur in :ref:`X(355) <X(355)>`; see also :ref:`X(952) <X(952)>`. (Randy Hutson, December 2, 2017)
+   Let :g:`A'B'C' << A' B' C' >>` be the outer Garcia triangle and :g:`A″B″C″ << A″ B″ C″ >>` the inner Garcia triangle. Let :g:`A* <A*>` be the isogonal conjugate, wrt :g:`A'B'C' << A' B' C' >>`, of :g:`A″ <A″>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`A'A* <[ A' A* ]>`, :g:`B'B* <[ B' B* ]>`, :g:`C'C* <[ C' C* ]>` concur in :ref:`X(355) <X(355)>`; see also :ref:`X(952) <X(952)>`. (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 
@@ -85,7 +81,7 @@ Notes
 
 .. container:: note-item
 
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the Yff contact triangle and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(355) <X(355)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (Randy Hutson, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the Yff contact triangle and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(355) <X(355)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
 
 .. toctree::
    :hidden:

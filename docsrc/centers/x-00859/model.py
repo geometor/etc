@@ -15,6 +15,7 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     midpoint,
+    point_from_barycentrics,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -25,7 +26,7 @@ def construct_x_00859(
 ) -> spg.Point:
     """Construct X(859) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(81) on reference triangle ABC."""
     X_851 = eval_trilinear_point(model, A, B, C, 'sin(2*B)*sin(C - A) + sin(2*C)*sin(B - A)', ID="X(851)", classes=["center"])
-    X_855 = eval_trilinear_point(model, A, B, C, 'cot(C/2)*sin(2*B)*sin(C - A) + cot(B/2)*sin(2*C)*sin(B - A)', ID="X(855)", classes=["center"])
+    X_855 = point_from_barycentrics(model, A, B, C, -0.48325723, -0.17351598, 1.6567732, ID="X(855)", classes=["center"])
     X_859 = midpoint(model, X_851, X_855, ID="X(859)", classes=["selected", "target"], guide=False)
     X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])

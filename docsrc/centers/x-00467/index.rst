@@ -10,22 +10,19 @@ X(467) = EULER LINE INTERCEPT OF LINE X(53)X(311)
 
 .. enunciation::
 
-   Barycentrics u sec A : v sec B : w sec C
+   As a point on the Euler line, :ref:`X(467) <X(467)>` has Shinagawa coefficients :math:`((E + 2F)F,-2S^{2})`.
 
 .. figure:: x-00467.svg
    :alt: X(467) = EULER LINE INTERCEPT OF LINE X(53)X(311)
    :align: center
 
-   **X(467) = EULER LINE INTERCEPT OF LINE X(53)X(311)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(467) = EULER LINE INTERCEPT OF LINE X(53)X(311)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`u \csc 2A : v \csc 2B : w \csc 2C`, where, u : v : w = :ref:`X(52) <X(52)>`; e.g., u(A,B,C) = cos 2A cos(B - C)
+   | **Trilinears:** :math:`u \csc 2A : v \csc 2B : w \csc 2C`, where :math:`u : v : w` = :ref:`X(52) <X(52)>`; e.g., :math:`u(A,B,C) = \cos 2A \cos(B - C)`
+   | **Barycentrics:** :math:`u \sec A : v \sec B : w \sec C`
    | **Search Value (6, 9, 13):** :math:`0.742978326523`
-
-.. container:: note-item
-
-   :ref:`X(467) <X(467)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines
@@ -38,13 +35,6 @@ X(467) = EULER LINE INTERCEPT OF LINE X(53)X(311)
 
    * :ref:`X(467) <X(467)>` = :ref:`X(317) <X(317)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(52) <X(52)>`
    * :ref:`X(467) <X(467)>` = polar conjugate of :ref:`X(96) <X(96)>`
-
-Notes
------
-
-.. container:: note-item
-
-   As a point on the Euler line, :ref:`X(467) <X(467)>` has Shinagawa coefficients ((E + 2F)F,-2S\ :sup:`2`).
 
 .. toctree::
    :hidden:

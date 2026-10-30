@@ -14,6 +14,7 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    point_from_barycentrics,
     promote_point_to_top,
     symmedian_point_of,
 )
@@ -30,7 +31,7 @@ def construct_x_00193(
     X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
     central_line(model, X_2, X_6, 2, 6, incident=True)
     X_23 = eval_trilinear_point(model, A, B, C, 'a*(b**(4) + c**(4) - a**(4) - b**(2)*c**(2))', ID="X(23)", classes=["center", "incident"])
-    X_159 = eval_trilinear_point(model, A, B, C, 'a*((a**(2)+ b**(2)+ c**(2))*sin(2*A) + (c**(2)- b**(2)- a**(2))*sin(2*B) + (b**(2)- c**(2)- a**(2))*sin(2*C))', ID="X(159)", classes=["center", "incident"])
+    X_159 = point_from_barycentrics(model, A, B, C, 1.0486443, 1.1626794, -1.2113238, ID="X(159)", classes=["center", "incident"])
     central_line(model, X_23, X_159, 23, 159, incident=True)
     X_20 = eval_trilinear_point(model, A, B, C, 'cos(A) - cos(B)*cos(C)', ID="X(20)", classes=["center", "incident"])
     X_185 = eval_trilinear_point(model, A, B, C, '(cos(A))*(1 - cos(A)*cos(B - C))', ID="X(185)", classes=["center", "incident"])

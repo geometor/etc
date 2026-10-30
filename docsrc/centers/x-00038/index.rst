@@ -16,7 +16,7 @@ X(38) = CROSSPOINT OF X(1) AND X(75)
    :alt: X(38) = CROSSPOINT OF X(1) AND X(75)
    :align: center
 
-   **X(38) = CROSSPOINT OF X(1) AND X(75)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(38) = CROSSPOINT OF X(1) AND X(75)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -34,11 +34,7 @@ X(38) = CROSSPOINT OF X(1) AND X(75)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(38) <X(38)>` = (3r\ :sup:`2` + 8rR - s\ :sup:`2`)\*\ :ref:`X(1) <X(1)>` - 6rR\*\ :ref:`X(2) <X(2)>` - 4r\ :sup:`2`\ \*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-
-.. container:: note-item
-
-   :ref:`X(38) <X(38)>` lies.
+   * :ref:`X(38) <X(38)>` = :math:`(3r^{2} + 8rR - s^{2})` :ref:`X(1) <X(1)>` - :math:`6rR` :ref:`X(2) <X(2)>` - :math:`4r^{2}` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. collapse:: Incident Central Lines
    :badge: 19 lines
@@ -59,7 +55,7 @@ X(38) = CROSSPOINT OF X(1) AND X(75)
    * :ref:`X(38) <X(38)>` = bicentric sum of PU(35)
    * :ref:`X(38) <X(38)>` = PU(35)-harmonic conjugate of :ref:`X(661) <X(661)>`
    * :ref:`X(38) <X(38)>` = :term:`trilinear pole <trilinear-pole>` of line X(2084)X(2530)
-   * :ref:`X(38) <X(38)>` = perspector of ABC and extraversion triangle of :ref:`X(38) <X(38)>` (which is also the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(38) <X(38)>`)
+   * :ref:`X(38) <X(38)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(38) <X(38)>` (which is also the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(38) <X(38)>`)
    * :ref:`X(38) <X(38)>` = barycentric square root of X(8041)
 
 .. toctree::

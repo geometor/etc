@@ -16,20 +16,23 @@ X(338) = CEVAPOINT OF X(115) AND X(125)
    :alt: X(338) = CEVAPOINT OF X(115) AND X(125)
    :align: center
 
-   **X(338) = CEVAPOINT OF X(115) AND X(125)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(338) = CEVAPOINT OF X(115) AND X(125)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(b^{2} - c^{2})^{2}/a^{3} : (c^{2} - a^{2})^{2}/b^{3} : (a^{2} - b^{2})^{2}/c^{3}, = \csc A \sin^{2}(B - C) : \csc B \sin^{2}(C - A) : \csc C \sin^{2}(A - B)`
+   | **Trilinears:** :math:`(b^{2} - c^{2})^{2}/a^{3} : (c^{2} - a^{2})^{2}/b^{3} : (a^{2} - b^{2})^{2}/c^{3}`
+   | **Barycentrics:** :math:`(b^{2} - c^{2})^{2}/a^{2} : (c^{2} - a^{2})^{2}/b^{2} : (a^{2} - b^{2})^{2}/c^{2}`
    | **Search Value (6, 9, 13):** :math:`3.809002144110`
+
+.. collapse:: Alternate Coordinates
+   :badge: 2 forms
+
+   * **Trilinears:** :math:`\csc A \sin^{2}(B - C) : \csc B \sin^{2}(C - A) : \csc C \sin^{2}(A - B)`
+   * **Barycentrics:** :math:`\sin^{2}(B - C) : \sin^{2}(C - A) : \sin^{2}(A - B)`
 
 .. container:: note-item
 
    :ref:`X(338) <X(338)>` lies on the inconic with perspector X(2052).
-
-.. container:: note-item
-
-   :ref:`X(338) <X(338)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines
@@ -49,15 +52,6 @@ X(338) = CEVAPOINT OF X(115) AND X(125)
    * :ref:`X(338) <X(338)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(250) <X(250)>` (line :ref:`X(110) <X(110)>`\ \ :ref:`X(112) <X(112)>`)
    * :ref:`X(338) <X(338)>` = polar conjugate of :ref:`X(250) <X(250)>`
    * :ref:`X(338) <X(338)>` = :ref:`X(6) <X(6)>`-:term:`isoconjugate <isoconjugate>` of X(1101)
-
-Notes
------
-
-.. container:: note-item
-
-   Barycentrics (b\ :sup:`2` - c\ :sup:`2`)\ :sup:`2`/a\ :sup:`2` : (c\ :sup:`2` - a\ :sup:`2`)\ :sup:`2`/b\ :sup:`2` : (a\ :sup:`2` - b\ :sup:`2`)\ :sup:`2`/c\ :sup:`2`
-
-   = sin\ :sup:`2`\ (B - C) : sin\ :sup:`2`\ (C - A) : sin\ :sup:`2`\ (A - B)
 
 .. toctree::
    :hidden:

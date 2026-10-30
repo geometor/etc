@@ -16,12 +16,12 @@ X(879) = ISOTOMIC CONJUGATE OF X(877)
    :alt: X(879) = ISOTOMIC CONJUGATE OF X(877)
    :align: center
 
-   **X(879) = ISOTOMIC CONJUGATE OF X(877)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(879) = ISOTOMIC CONJUGATE OF X(877)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`u(bv - cw)/(a^{2}u^{2} - bcvw) : :`, where u : v : w = :ref:`X(4) <X(4)>`
-   | **Barycentrics:** :math:`(b^2 - c^2) (b^2 + c^2 - a^2)/(b^4 + c^4 - a^2 b^2 - a^2 c^2) : :`
+   | **Trilinears:** :math:`u(bv - cw)/(a^{2}u^{2} - bcvw) : :`, where :math:`u : v : w` = :ref:`X(4) <X(4)>`
+   | **Barycentrics:** :math:`(b^{2} - c^{2}) (b^{2} + c^{2} - a^{2})/(b^{4} + c^{4} - a^{2} b^{2} - a^{2} c^{2}) : :`
    | **Search Value (6, 9, 13):** :math:`-17.380419573092`
 
 .. container:: note-item

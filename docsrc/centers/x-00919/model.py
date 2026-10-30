@@ -26,7 +26,7 @@ def construct_x_00919(
     X_918 = point_from_barycentrics(model, A, B, C, -0.77151675, 0.15430335, 0.6172134, ID="X(918)", classes=["center"])
     X_919 = isogonal_conjugate(model, A, B, C, X_918, ID="X(919)", classes=["selected", "target"])
     X_104 = eval_trilinear_point(model, A, B, C, '1/(-1 + cos(B) + cos(C))', ID="X(104)", classes=["center", "incident"])
-    X_294 = eval_trilinear_point(model, A, B, C, '(b + c - a)/(b**(2)+ c**(2)- a*b - a*c)', ID="X(294)", classes=["center", "incident"])
+    X_294 = point_from_barycentrics(model, A, B, C, 0.10958904, 0.98630137, -0.095890411, ID="X(294)", classes=["center", "incident"])
     central_line(model, X_104, X_294, 104, 294, incident=True)
     X_100 = eval_trilinear_point(model, A, B, C, '1/(b - c)', ID="X(100)", classes=["center", "incident"])
     X_650 = eval_trilinear_point(model, A, B, C, 'cos(B) - cos(C)', ID="X(650)", classes=["center", "incident"])

@@ -16,11 +16,11 @@ X(892) = ISOGONAL CONJUGATE OF X(351)
    :alt: X(892) = ISOGONAL CONJUGATE OF X(351)
    :align: center
 
-   **X(892) = ISOGONAL CONJUGATE OF X(351)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(892) = ISOGONAL CONJUGATE OF X(351)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(a^{2}u^{2} - bcvw)/[a^{2}u(bv - cw)] : :`, where u : v : w = :ref:`X(523) <X(523)>`
+   | **Trilinears:** :math:`(a^{2}u^{2} - bcvw)/[a^{2}u(bv - cw)] : :`, where :math:`u : v : w` = :ref:`X(523) <X(523)>`
    | **Search Value (6, 9, 13):** :math:`-0.254661697749`
 
 .. container:: note-item

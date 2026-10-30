@@ -10,13 +10,13 @@ X(33) = PERSPECTOR OF THE ORTHIC AND INTANGENTS TRIANGLES
 
 .. enunciation::
 
-   Let L\ :sub:`A` be the reflection of line BC in the internal angle bisector of angle A, and define L\ :sub:`B` and L\ :sub:`C` cyclically. Let DEF be the triangle formed by L\ :sub:`A`, L\ :sub:`B`, L\ :sub:`C`. Then DEF (the intangents triangle) is homothetic to the :term:`orthic triangle <orthic-triangle>`, and the homothetic center is :ref:`X(33) <X(33)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   Let :g:`L_{A} <L_A>` be the reflection of line :g:`BC <[ B C ]>` in the internal angle bisector of angle :g:`A <A>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`DEF << D E F >>` be the triangle formed by :g:`L_{A} <L_A>`, :g:`L_{B} <L_B>`, :g:`L_{C} <L_C>`. Then :g:`DEF << D E F >>` (the intangents triangle) is homothetic to the :term:`orthic triangle <orthic-triangle>`, and the homothetic center is :ref:`X(33) <X(33)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. figure:: x-00033.svg
    :alt: X(33) = PERSPECTOR OF THE ORTHIC AND INTANGENTS TRIANGLES
    :align: center
 
-   **X(33) = PERSPECTOR OF THE ORTHIC AND INTANGENTS TRIANGLES** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(33) = PERSPECTOR OF THE ORTHIC AND INTANGENTS TRIANGLES** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -35,11 +35,7 @@ X(33) = PERSPECTOR OF THE ORTHIC AND INTANGENTS TRIANGLES
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(33) <X(33)>` = (r + 2R - s)(r + 2R + s)\*\ :ref:`X(1) <X(1)>` - 6rR\*\ :ref:`X(2) <X(2)>` + 4rR\*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-
-.. container:: note-item
-
-   :ref:`X(33) <X(33)>` lies.
+   * :ref:`X(33) <X(33)>` = :math:`(r + 2R - s)(r + 2R + s)` :ref:`X(1) <X(1)>` - :math:`6rR` :ref:`X(2) <X(2)>` + :math:`4rR` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. collapse:: Incident Central Lines
    :badge: 32 lines
@@ -56,7 +52,7 @@ X(33) = PERSPECTOR OF THE ORTHIC AND INTANGENTS TRIANGLES
    * :ref:`X(33) <X(33)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(657) <X(657)>`\ X(4041) (the polar of :ref:`X(85) <X(85)>` wrt polar circle)
    * :ref:`X(33) <X(33)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(85) <X(85)>` (line :ref:`X(522) <X(522)>`\ \ :ref:`X(693) <X(693)>`)
    * :ref:`X(33) <X(33)>` = polar conjugate of :ref:`X(85) <X(85)>`
-   * :ref:`X(33) <X(33)>` = perspector of ABC and extraversion triangle of :ref:`X(34) <X(34)>`
+   * :ref:`X(33) <X(33)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(34) <X(34)>`
    * :ref:`X(33) <X(33)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`4 <X(4)>`, :ref:`19 <X(19)>`), (:ref:`29 <X(29)>`, :ref:`281 <X(281)>`), (:ref:`318 <X(318)>`, :ref:`9 <X(9)>`)
    * :ref:`X(33) <X(33)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`41 <X(41)>`, :ref:`9 <X(9)>`), (:ref:`42 <X(42)>`, :ref:`55 <X(55)>`)
    * :ref:`X(33) <X(33)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`282 <X(282)>`), (:ref:`4 <X(4)>`, :ref:`281 <X(281)>`)

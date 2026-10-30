@@ -16,15 +16,11 @@ X(766) = EVEN (3, 4) INFINITY POINT
    :alt: X(766) = EVEN (3, 4) INFINITY POINT
    :align: center
 
-   **X(766) = EVEN (3, 4) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(766) = EVEN (3, 4) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = a\ :sup:`2`\ (b\ :sup:`4` + c\ :sup:`4`) - a\ :sup:`3`\ (b\ :sup:`3` + c\ :sup:`3`)
-
-.. container:: note-item
-
-   :ref:`X(766) <X(766)>` lies.
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a^{2}(b^{4} + c^{4}) - a^{3}(b^{3} + c^{3})`
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines

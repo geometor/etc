@@ -10,13 +10,13 @@ X(662) = TRILINEAR POLE OF LINE X(1)X(21)
 
 .. enunciation::
 
-   Let A'B'C' be the :term:`excentral triangle <excentral-triangle>` and H the Stammler hyperbola. Let T be the :term:`tangential triangle <tangential-triangle>`, with respect to A'B'C', of H. Then T and ABC are perspective, and their perspector is :ref:`X(662) <X(662)>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`excentral triangle <excentral-triangle>` and H the Stammler hyperbola. Let :g:`T <T>` be the :term:`tangential triangle <tangential-triangle>`, with respect to :g:`A'B'C' << A' B' C' >>`, of H. Then T and :g:`ABC << A B C >>` are perspective, and their perspector is :ref:`X(662) <X(662)>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
 
 .. figure:: x-00662.svg
    :alt: X(662) = TRILINEAR POLE OF LINE X(1)X(21)
    :align: center
 
-   **X(662) = TRILINEAR POLE OF LINE X(1)X(21)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(662) = TRILINEAR POLE OF LINE X(1)X(21)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -29,18 +29,18 @@ X(662) = TRILINEAR POLE OF LINE X(1)X(21)
 
    * **Trilinears:** :math:`1/(b^{2} - c^{2}) : :`
    * **Trilinears:** :math:`1/(\cos 2B - \cos 2C) : :`
-   * **Trilinears:** :math:`d(a,b,c) : :`, where d(a,b,c) = directed distance of A to line :ref:`X(115) <X(115)>`\ \ :ref:`X(125) <X(125)>`
+   * **Trilinears:** :math:`d(a,b,c) : :`, where d(a,b,c) = directed distance of :g:`A <A>` to line :ref:`X(115) <X(115)>`\ \ :ref:`X(125) <X(125)>`
    * **Barycentrics:** :math:`\cos(B - C) - \cos(C - A) \cos(A - B) : :`
    * **Barycentrics:** :math:`\sec(B - C) - \sec(C - A) \sec(A - B) : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(662) <X(662)>` = 6 :ref:`X(2) <X(2)>` - 5 X(31278), 3 :ref:`X(2) <X(2)>` + X(31297), 3 :ref:`X(2) <X(2)>` - 4 X(40539), 4 X(8287) - 3 X(31175), 4 X(8287) - 5 X(31278), 2 X(8287) + X(31297), 2 X(21221) - 3 X(31175), 2 X(21221) - 5 X(31278), X(21221) - 4 X(40539), 3 X(31175) - 5 X(31278), 3 X(31175) + 2 X(31297), 3 X(31175) - 8 X(40539), 5 X(31278) + 2 X(31297), 5 X(31278) - 8 X(40539), X(31297) + 4 X(40539)
+   * :ref:`X(662) <X(662)>` = :math:`6` :ref:`X(2) <X(2)>` - :math:`5` X(31278), :math:`3` :ref:`X(2) <X(2)>` + X(31297), :math:`3` :ref:`X(2) <X(2)>` - :math:`4` X(40539), :math:`4` X(8287) - :math:`3` X(31175), :math:`4` X(8287) - :math:`5` X(31278), :math:`2` X(8287) + X(31297), :math:`2` X(21221) - :math:`3` X(31175), :math:`2` X(21221) - :math:`5` X(31278), X(21221) - :math:`4` X(40539), :math:`3` X(31175) - :math:`5` X(31278), :math:`3` X(31175) + :math:`2` X(31297), :math:`3` X(31175) - :math:`8` X(40539), :math:`5` X(31278) + :math:`2` X(31297), :math:`5` X(31278) - :math:`8` X(40539), X(31297) + :math:`4` X(40539)
 
 .. container:: note-item
 
-   :ref:`X(662) <X(662)>` lies on the cubic K1004, the curve CC9.
+   :ref:`X(662) <X(662)>` lies on the cubic K1004, the curve :g:`CC_{9} <[ C C_9 ]>`.
 
 .. collapse:: Incident Central Lines
    :badge: 303 lines
@@ -74,7 +74,7 @@ X(662) = TRILINEAR POLE OF LINE X(1)X(21)
    * :ref:`X(662) <X(662)>` = trilinear product of PU(78)
    * :ref:`X(662) <X(662)>` = crossdifference of PU(79)
    * :ref:`X(662) <X(662)>` = barycentric product of PU(90)
-   * :ref:`X(662) <X(662)>` = perspector of conic {A,B,C,PU(78)}}
+   * :ref:`X(662) <X(662)>` = perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(78)}}
    * :ref:`X(662) <X(662)>` = trilinear product :ref:`X(6) <X(6)>`\ \*\ :ref:`X(99) <X(99)>`
    * :ref:`X(662) <X(662)>` = trilinear product of PU(145)
    * :ref:`X(662) <X(662)>` = trilinear product of Steiner circumellipse intercepts of Brocard axis
@@ -89,27 +89,27 @@ Notes
 
 .. container:: note-item
 
-   Let A2B2C2 and A3B3C3 be the 2nd and 3rd Parry triangles. Let A' be the trilinear product A2\*A3, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(662) <X(662)>`. (Randy Hutson, February 10, 2016)
+   Let :g:`A_{2}B_{2}C_{2} << A_2 B_2 C_2 >>` and :g:`A_{3}B_{3}C_{3} << A_3 B_3 C_3 >>` be the 2nd and 3rd Parry triangles. Let :g:`A' <A'>` be the trilinear product :g:`A_{2} <A_2>`\ \*\ :g:`A_{3} <A_3>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(662) <X(662)>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 
-   Let La be the A-extraversion of line :ref:`X(1) <X(1)>`\ \ :ref:`X(21) <X(21)>`, and define Lb, Lc cyclically. Let A' = Lb ∩ Lc, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(662) <X(662)>`. (Randy Hutson, January 29, 2018)
+   Let :g:`L_{a} <L_a>` be the A-extraversion of line :ref:`X(1) <X(1)>`\ \ :ref:`X(21) <X(21)>`, and define :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>` ∩ :g:`L_{c} <L_c>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(662) <X(662)>`. (Randy Hutson, January 29, 2018)
 
 .. container:: note-item
 
-   Let La be the A-extraversion of line :ref:`X(7) <X(7)>`\ \ :ref:`X(21) <X(21)>`, and define Lb, Lc cyclically. Let A' = Lb ∩ Lc, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(662) <X(662)>`. (Randy Hutson, January 29, 2018)
+   Let :g:`L_{a} <L_a>` be the A-extraversion of line :ref:`X(7) <X(7)>`\ \ :ref:`X(21) <X(21)>`, and define :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>` ∩ :g:`L_{c} <L_c>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(662) <X(662)>`. (Randy Hutson, January 29, 2018)
 
 .. container:: note-item
 
-   Let La be the A-extraversion of line :ref:`X(8) <X(8)>`\ \ :ref:`X(21) <X(21)>`, and define Lb, Lc cyclically. Let A' = Lb ∩ Lc, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(662) <X(662)>`. (Randy Hutson, January 29, 2018)
+   Let :g:`L_{a} <L_a>` be the A-extraversion of line :ref:`X(8) <X(8)>`\ \ :ref:`X(21) <X(21)>`, and define :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>` ∩ :g:`L_{c} <L_c>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(662) <X(662)>`. (Randy Hutson, January 29, 2018)
 
 .. container:: note-item
 
-   Let La be the A-extraversion of line :ref:`X(10) <X(10)>`\ \ :ref:`X(21) <X(21)>`, and define Lb, Lc cyclically. Let A' = Lb ∩ Lc, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(662) <X(662)>`. (Randy Hutson, January 29, 2018)
+   Let :g:`L_{a} <L_a>` be the A-extraversion of line :ref:`X(10) <X(10)>`\ \ :ref:`X(21) <X(21)>`, and define :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>` ∩ :g:`L_{c} <L_c>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(662) <X(662)>`. (Randy Hutson, January 29, 2018)
 
 .. container:: note-item
 
-   Let La be the A-extraversion of line :ref:`X(21) <X(21)>`\ \ :ref:`X(36) <X(36)>`, and define Lb, Lc cyclically. Let A' = Lb ∩ Lc, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(662) <X(662)>`. (Randy Hutson, January 29, 2018)
+   Let :g:`L_{a} <L_a>` be the A-extraversion of line :ref:`X(21) <X(21)>`\ \ :ref:`X(36) <X(36)>`, and define :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>` ∩ :g:`L_{c} <L_c>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(662) <X(662)>`. (Randy Hutson, January 29, 2018)
 
 .. toctree::
    :hidden:

@@ -10,22 +10,18 @@ X(897) = ISOGONAL CONJUGATE OF X(896)
 
 .. enunciation::
 
-   Let A1B1C1 and A3B3C3 be the 1st and 3rd Parry triangles. Let A' be the trilinear product A1\*A3, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(897) <X(897)>`. (:person:`Randy Hutson <randy-hutson>`, February 10, 2016)
+   Let :g:`A_{1}B_{1}C_{1} << A_1 B_1 C_1 >>` and :g:`A_{3}B_{3}C_{3} << A_3 B_3 C_3 >>` be the 1st and 3rd Parry triangles. Let :g:`A' <A'>` be the trilinear product :g:`A_{1} <A_1>`\ \*\ :g:`A_{3} <A_3>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(897) <X(897)>`. (:person:`Randy Hutson <randy-hutson>`, February 10, 2016)
 
 .. figure:: x-00897.svg
    :alt: X(897) = ISOGONAL CONJUGATE OF X(896)
    :align: center
 
-   **X(897) = ISOGONAL CONJUGATE OF X(896)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(897) = ISOGONAL CONJUGATE OF X(896)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`1/(2a^{2} - b^{2} - c^{2}) : :`
    | **Search Value (6, 9, 13):** :math:`1.443596535574`
-
-.. container:: note-item
-
-   :ref:`X(897) <X(897)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 9 lines
@@ -49,7 +45,7 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' and A″B″C″ be the 4th Brocard and 4th anti-Brocard triangles, resp. Let A\* be the trilinear product A'\*A″, and define B\*, C\* cyclically. The lines AA\*, BB\*, CC\* concur in :ref:`X(897) <X(897)>`. (Randy Hutson, March 21, 2019)
+   Let :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>` be the 4th Brocard and 4th anti-Brocard triangles, resp. Let :g:`A* <A*>` be the trilinear product :g:`A' <A'>`\ \*\ :g:`A″ <A″>`, and define :g:`B* <B*>`, :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(897) <X(897)>`. (Randy Hutson, March 21, 2019)
 
 .. toctree::
    :hidden:

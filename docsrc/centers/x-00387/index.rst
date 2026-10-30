@@ -16,17 +16,13 @@ X(387) = INTERSECTION OF LINES X(1,2) AND X(4,6)
    :alt: X(387) = INTERSECTION OF LINES X(1,2) AND X(4,6)
    :align: center
 
-   **X(387) = INTERSECTION OF LINES X(1,2) AND X(4,6)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(387) = INTERSECTION OF LINES X(1,2) AND X(4,6)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`bc[-a^{4} + 2a^{2}(a + b + c)^{2} + (b^{2} - c^{2})^{2}]`
    | **Barycentrics:** :math:`-a^{4} + 2a^{2}(a + b + c)^{2} + (b^{2} - c^{2})^{2}`
    | **Search Value (6, 9, 13):** :math:`1.128882560427`
-
-.. container:: note-item
-
-   :ref:`X(387) <X(387)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 107 lines

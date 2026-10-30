@@ -23,7 +23,7 @@ def construct_x_00728(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(728) = INTERSECTION OF LINES X(8)X(9) AND X(57)X(345) on reference triangle ABC."""
-    X_728 = eval_trilinear_point(model, A, B, C, '(b + c - a)**(3)', ID="X(728)", classes=["selected", "target"])
+    X_728 = eval_trilinear_point(model, A, B, C, '(cot(A/2))**(3)', ID="X(728)", classes=["selected", "target"])
     X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center", "incident"])
     X_9 = mittenpunkt_of(model, A, B, C, ID="X(9)", classes=["center", "incident"])
     central_line(model, X_8, X_9, 8, 9, incident=True)

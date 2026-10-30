@@ -10,24 +10,24 @@ X(195) = X(5)-CEVA CONJUGATE OF X(3)
 
 .. enunciation::
 
-   Let A' be the :term:`isogonal conjugate <isogonal-conjugate>` of the A-vertex of the outer Napoleon triangle, and define B' and C' cyclically. Let A″ be the isogonal conjugate of the A-vertex of the inner Napoleon triangle, and define B″ and C″ cyclically. The lines A'A″, B'B″, C'C″ concur in :ref:`X(195) <X(195)>`. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
+   Let :g:`A' <A'>` be the :term:`isogonal conjugate <isogonal-conjugate>` of the :g:`A <A>`-vertex of the outer Napoleon triangle, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Let :g:`A″ <A″>` be the isogonal conjugate of the :g:`A <A>`-vertex of the inner Napoleon triangle, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(195) <X(195)>`. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
 
 .. figure:: x-00195.svg
    :alt: X(195) = X(5)-CEVA CONJUGATE OF X(3)
    :align: center
 
-   **X(195) = X(5)-CEVA CONJUGATE OF X(3)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(195) = X(5)-CEVA CONJUGATE OF X(3)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(\cos A)(v + w - u) : :`, where u = u(A,B,C) = cos A cos(B - A) cos(C - A)
-   | **Barycentrics:** :math:`4 \cos 2A + \cot^{2}A - \cot A \cot \omega : :( (M. Iliev, 5/13/07)`
+   | **Trilinears:** :math:`(\cos A)(v + w - u) : :`, where :math:`u = u(A,B,C) = \cos A \cos(B - A) \cos(C - A)`
+   | **Barycentrics:** :math:`4 \cos 2A + \cot^{2} A - \cot A \cot \omega : :(` (M. Iliev, 5/13/07)
    | **Search Value (6, 9, 13):** :math:`-19.157880999134`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`a[a^8 + b^8 + c^8 - 4a^6(b^2 + c^2) + a^4(6b^4 + 6c^4 + 5b^2c^2) - a^2(4b^6 + 4c^6 - b^4c^2 - b^2c^4) - 2b^2c^2(b^4 + c^4 - b^2c^2)] : :`
+   * **Trilinears:** :math:`a[a^{8} + b^{8} + c^{8} - 4a^{6}(b^{2} + c^{2}) + a^{4}(6b^{4} + 6c^{4} + 5b^{2}c^{2}) - a^{2}(4b^{6} + 4c^{6} - b^{4}c^{2} - b^{2}c^{4}) - 2b^{2}c^{2}(b^{4} + c^{4} - b^{2}c^{2})] : :`
 
 .. container:: note-item
 
@@ -49,11 +49,11 @@ X(195) = X(5)-CEVA CONJUGATE OF X(3)
    * :ref:`X(195) <X(195)>` = :ref:`X(5) <X(5)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(3) <X(3)>`
    * :ref:`X(195) <X(195)>` = :term:`crosssum <crosssum>` of :ref:`X(137) <X(137)>` and :ref:`X(523) <X(523)>`
    * :ref:`X(195) <X(195)>` = :ref:`X(3) <X(3)>`-of-reflection-triangle
-   * :ref:`X(195) <X(195)>` = :ref:`X(79) <X(79)>`-of-tangential-triangle if ABC is acute
+   * :ref:`X(195) <X(195)>` = :ref:`X(79) <X(79)>`-of-tangential-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(195) <X(195)>` = tangential isogonal conjugate of X(2937)
    * :ref:`X(195) <X(195)>` = 2nd isogonal perspector of :ref:`X(5) <X(5)>`; see :ref:`X(36) <X(36)>`
    * :ref:`X(195) <X(195)>` = Yiu-isogonal conjugate of X(1157)
-   * :ref:`X(195) <X(195)>` = perspector of [cross-triangle of ABC and outer Napoleon triangle] and [cross-triangle of ABC and inner-Napoleon triangle]
+   * :ref:`X(195) <X(195)>` = perspector of [cross-triangle of :g:`ABC << A B C >>` and outer Napoleon triangle] and [cross-triangle of :g:`ABC << A B C >>` and inner-Napoleon triangle]
 
 Notes
 -----

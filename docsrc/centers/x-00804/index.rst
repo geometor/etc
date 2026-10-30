@@ -16,15 +16,11 @@ X(804) = ODD (- 2, 2) INFINITY POINT
    :alt: X(804) = ODD (- 2, 2) INFINITY POINT
    :align: center
 
-   **X(804) = ODD (- 2, 2) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(804) = ODD (- 2, 2) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`a ^{-3}(b^{2} - c^{2}) + a^{1}(b ^{-2} - c ^{-2}) : :`
-
-.. container:: note-item
-
-   :ref:`X(804) <X(804)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 7 lines

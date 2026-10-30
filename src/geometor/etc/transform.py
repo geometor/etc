@@ -10,6 +10,7 @@ from typing import Any
 from .glossary import (
     _apply_outside_rst_spans,
     filter_center_refs,
+    wrap_geom_refs,
     wrap_glossary_terms,
     wrap_persons_and_citations,
 )
@@ -47,7 +48,9 @@ def wrap_refs(
                 need_pre = (prev_ch not in " \t\n-:/'\"<([{") and not (
                     last_idx == start and out and out[-1].endswith(r"\ ")
                 )
-                need_post = next_ch not in " \t\n-.,:;!?/'\")>]}"
+                need_post = (
+                    next_ch not in " \t\n-.,:;!?/'\")>]}"
+                ) and not seg[end:].startswith(r"\ ")
                 prefix = r"\ " if need_pre else ""
                 suffix = r"\ " if need_post else ""
                 out.append(f"{prefix}:ref:`X({num_str}) <X({num_str})>`{suffix}")
@@ -103,13 +106,14 @@ def _enrich_text(
     seen_cites: set[str],
     valid_centers: set[int] | None = None,
 ) -> str:
-    """Apply X(n) reference linking, glossary `:term:` linking, and `:person:`/`:cite:` linking."""
+    """Apply X(n) reference linking, glossary `:term:` linking, `:person:`/`:cite:` linking, and `:g:` role wrapping."""
     text = wrap_refs(text, valid_centers=valid_centers)
     if glossary_terms:
         text = wrap_glossary_terms(text, glossary_terms, seen_slugs=seen_terms)
     text = wrap_persons_and_citations(
         text, seen_persons=seen_persons, seen_cites=seen_cites
     )
+    text = wrap_geom_refs(text)
     return filter_center_refs(text, valid_centers)
 
 
@@ -296,7 +300,7 @@ def transform_center_to_rst(
         lines.append("")
         lines.append(
             f"   **{full_title}** constructed on acute reference triangle "
-            r":math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`."
+            r":math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`."
         )
         lines.append("")
 
@@ -582,7 +586,7 @@ def transform_center_to_code_rst(
         lines.append("")
         lines.append(
             f"   **{full_title}** constructed on acute reference triangle "
-            r":math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`."
+            r":math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`."
         )
         lines.append("")
 

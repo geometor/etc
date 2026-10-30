@@ -16,21 +16,17 @@ X(236) = X(2)-CEVA CONJUGATE OF X(188)
    :alt: X(236) = X(2)-CEVA CONJUGATE OF X(188)
    :align: center
 
-   **X(236) = X(2)-CEVA CONJUGATE OF X(188)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(236) = X(2)-CEVA CONJUGATE OF X(188)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = (csc A/2)(cos B/2 + cos C/2 - cos A/2)
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = (\csc A/2)(\cos B/2 + \cos C/2 - \cos A/2)`
    | **Search Value (6, 9, 13):** :math:`2.169449491684`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`[1 + \sin(A/2)]/\sin A : [1 + \sin(B/2)]/\sin B : [1 + \sin(C/2)]//\sin C (M. Iliev, 4/12/07)`
-
-.. container:: note-item
-
-   :ref:`X(236) <X(236)>` lies.
+   * **Trilinears:** :math:`[1 + \sin(A/2)]/\sin A : [1 + \sin(B/2)]/\sin B : [1 + \sin(C/2)]//\sin C` (M. Iliev, 4/12/07)
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines

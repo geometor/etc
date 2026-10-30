@@ -32,7 +32,7 @@ def construct_x_00382(
     X_64 = eval_trilinear_point(model, A, B, C, '1/(cos(A) - cos(B)*cos(C))', ID="X(64)", classes=["center", "incident"])
     X_265 = eval_trilinear_point(model, A, B, C, 'sin(2*A)*csc(3*A)', ID="X(265)", classes=["center", "incident"])
     central_line(model, X_64, X_265, 64, 265, incident=True)
-    X_155 = eval_barycentric_point(model, A, B, C, 'a**(2)*SA*(a**(2)*(SA**(2) - SB*SC) - SA*(SB**(2) + SC**(2)))', ID="X(155)", classes=["center", "incident"])
+    X_155 = eval_barycentric_point(model, A, B, C, 'a**(2)*(a**(2) - b**(2) - c**(2))*(a**(6) - 3*a**(4)*(b**(2) + c**(2)) + a**(2)*(3*b**(4) - 2*b**(2)*c**(2) + 3*c**(4)) - (b**(2) - c**(2))**(2)*(b**(2) + c**(2)))', ID="X(155)", classes=["center", "incident"])
     X_399 = point_from_barycentrics(model, A, B, C, 0.35450269, -1.0108871, 1.6563844, ID="X(399)", classes=["center", "incident"])
     central_line(model, X_155, X_399, 155, 399, incident=True)
     return promote_point_to_top(model, X_382)

@@ -16,7 +16,7 @@ X(386) = INVERSE-IN-BROCARD-CIRCLE OF X(58)
    :alt: X(386) = INVERSE-IN-BROCARD-CIRCLE OF X(58)
    :align: center
 
-   **X(386) = INVERSE-IN-BROCARD-CIRCLE OF X(58)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(386) = INVERSE-IN-BROCARD-CIRCLE OF X(58)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,11 +28,7 @@ X(386) = INVERSE-IN-BROCARD-CIRCLE OF X(58)
    :badge: 2 forms
 
    * **Trilinears:** :math:`r \cos A + s \sin A : :`, where s = semiperimeter, r = inradius
-   * **Trilinears:** :math:`\sin(A + U) : :`, where cot U = cot(A/2) cot(B/2) cot(C/2)
-
-.. container:: note-item
-
-   :ref:`X(386) <X(386)>` lies.
+   * **Trilinears:** :math:`\sin(A + U) : :`, where cot :math:`U = \cot(A/2) \cot(B/2) \cot(C/2)`
 
 .. collapse:: Incident Central Lines
    :badge: 277 lines
@@ -55,7 +51,7 @@ Notes
 
 .. container:: note-item
 
-   Let A' be the inverse-in-excircles-radical-circle of the midpoint of BC, and define B' and C' cyclically. Triangle A'B'C' is inscribed in the Apollonius circle and homothetic to the 2nd circumperp triangle at :ref:`X(386) <X(386)>`. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
+   Let :g:`A' <A'>` be the inverse-in-excircles-radical-circle of the midpoint of :g:`BC <[ B C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Triangle :g:`A'B'C' << A' B' C' >>` is inscribed in the Apollonius circle and homothetic to the 2nd circumperp triangle at :ref:`X(386) <X(386)>`. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
 
 .. container:: note-item
 

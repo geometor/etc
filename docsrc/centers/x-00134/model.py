@@ -24,7 +24,7 @@ def construct_x_00134(
     """Construct X(134) = X(107)-OF-ORTHIC-TRIANGLE on reference triangle ABC."""
     X_134 = point_from_barycentrics(model, A, B, C, 0.20948933, 0.10124204, 0.68926863, ID="X(134)", classes=["selected", "target"])
     X_52 = eval_trilinear_point(model, A, B, C, 'cos(2*A)*cos(B - C)', ID="X(52)", classes=["center", "incident"])
-    X_128 = eval_trilinear_point(model, A, B, C, '(sec(A))*(cos(2*B) + cos(2*C))*(1 + 2*cos(2*A))*(cos(2*A) + 2*cos(2*B)*cos(2*C))', ID="X(128)", classes=["center", "incident"])
+    X_128 = point_from_barycentrics(model, A, B, C, 0.43052912, -0.045594157, 0.61506504, ID="X(128)", classes=["center", "incident"])
     central_line(model, X_52, X_128, 52, 128, incident=True)
     return promote_point_to_top(model, X_134)
 

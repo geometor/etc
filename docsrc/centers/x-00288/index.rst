@@ -16,17 +16,13 @@ X(288) = CEVAPOINT OF X(6) AND X(54)
    :alt: X(288) = CEVAPOINT OF X(6) AND X(54)
    :align: center
 
-   **X(288) = CEVAPOINT OF X(6) AND X(54)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(288) = CEVAPOINT OF X(6) AND X(54)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = [sec(B - C)]/[b cos(C - A) + c cos(B - A)]
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = [\sec(B - C)]/[b \cos(C - A) + c \cos(B - A)]`
    | **Barycentrics:** :math:`a/(b \sec(A - B) + c \sec(A - C)) : :`
    | **Search Value (6, 9, 13):** :math:`0.255273525396`
-
-.. container:: note-item
-
-   :ref:`X(288) <X(288)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines

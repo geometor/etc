@@ -10,22 +10,18 @@ X(95) = CEVAPOINT OF CENTROID AND CIRCUMCENTER
 
 .. enunciation::
 
-   Let A'B'C' be the symmedial triangle. Let La be the reflection of line B'C' in line BC, and define Lb and Lc cyclically. Let A″ = Lb∩Lc, and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(95) <X(95)>`. (:person:`Randy Hutson <randy-hutson>`, August 19, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the symmedial triangle. Let :g:`L_{a} <L_a>` be the reflection of line :g:`B'C' <[ B' C' ]>` in line :g:`BC <[ B C ]>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(95) <X(95)>`. (:person:`Randy Hutson <randy-hutson>`, August 19, 2015)
 
 .. figure:: x-00095.svg
    :alt: X(95) = CEVAPOINT OF CENTROID AND CIRCUMCENTER
    :align: center
 
-   **X(95) = CEVAPOINT OF CENTROID AND CIRCUMCENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(95) = CEVAPOINT OF CENTROID AND CIRCUMCENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`b^{2}c^{2}\sec(B - C) : :`
    | **Search Value (6, 9, 13):** :math:`-89.736436106389`
-
-.. container:: note-item
-
-   :ref:`X(95) <X(95)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 11 lines
@@ -54,7 +50,7 @@ Notes
 
 .. container:: note-item
 
-   Let A' be the intersection, other than A, of the circumcircle and the branch of the Lucas cubic that contains A, and define B' and C' cyclically. The triangle A'B'C' is here introduced as the Lucas triangle (not to be confused with the Lucas :term:`central triangle <central-triangle>`). The vertices A', B', C' lie on the rectangular hyperbola {:ref:`X(2) <X(2)>`,\ :ref:`X(20) <X(20)>`,\ :ref:`X(54) <X(54)>`,\ :ref:`X(69) <X(69)>`,\ :ref:`X(110) <X(110)>`,X(2574),X(2575),X(2979)}}. (See https://bernard-gibert.pagesperso-orange.fr/Exemples/k007.html.) Also, :ref:`X(95) <X(95)>` is the trilinear product of the vertices of the Lucas triangle. (Randy Hutson, August 19, 2015)
+   Let :g:`A' <A'>` be the intersection, other than A, of the circumcircle and the branch of the Lucas cubic that contains A, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The triangle :g:`A'B'C' << A' B' C' >>` is here introduced as the Lucas triangle (not to be confused with the Lucas :term:`central triangle <central-triangle>`). The vertices :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>` lie on the rectangular hyperbola {:ref:`X(2) <X(2)>`,\ :ref:`X(20) <X(20)>`,\ :ref:`X(54) <X(54)>`,\ :ref:`X(69) <X(69)>`,\ :ref:`X(110) <X(110)>`,X(2574),X(2575),X(2979)}}. (See https://bernard-gibert.pagesperso-orange.fr/Exemples/k007.html.) Also, :ref:`X(95) <X(95)>` is the trilinear product of the vertices of the Lucas triangle. (Randy Hutson, August 19, 2015)
 
 .. toctree::
    :hidden:

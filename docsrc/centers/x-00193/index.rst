@@ -10,28 +10,25 @@ X(193) = X(4)-CEVA CONJUGATE OF X(2)
 
 .. enunciation::
 
-   Let A' be the reflection of the midpoint of segment BC in :ref:`X(6) <X(6)>`, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(193) <X(193)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   Let :g:`A' <A'>` be the reflection of the midpoint of segment :g:`BC <[ B C ]>` in :ref:`X(6) <X(6)>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(193) <X(193)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. figure:: x-00193.svg
    :alt: X(193) = X(4)-CEVA CONJUGATE OF X(2)
    :align: center
 
-   **X(193) = X(4)-CEVA CONJUGATE OF X(2)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(193) = X(4)-CEVA CONJUGATE OF X(2)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`(\csc A)(\cot B + \cot C - \cot A) : (\csc B)(\cot C + \cot A - \cot B) : (\csc C)(\cot A + \cot B - \cot C)`
-   | **Barycentrics:** cot B + cot C - cot A : cot C + cot A - cot B : cot A + cot B - cot C, = 3a\ :sup:`2` - b\ :sup:`2` - c\ :sup:`2` : 3b\ :sup:`2` - c\ :sup:`2` - a\ :sup:`2` : 3c\ :sup:`2` - a\ :sup:`2` - b\ :sup:`2` (Milorad Stevanovic, 5/12/2003)
+   | **Barycentrics:** :math:`\cot B + \cot C - \cot A : \cot C + \cot A - \cot B : \cot A + \cot B - \cot C`
    | **Search Value (6, 9, 13):** :math:`-3.916472397203`
 
 .. collapse:: Alternate Coordinates
-   :badge: 1 form
+   :badge: 2 forms
 
    * **Trilinears:** :math:`(S_{A} - a^{2})/a : (S_{B} - b^{2})/b : (S_{C} - c^{2})/c`
-
-.. container:: note-item
-
-   :ref:`X(193) <X(193)>` lies.
+   * **Barycentrics:** :math:`3a^{2} - b^{2} - c^{2} : 3b^{2} - c^{2} - a^{2} : 3c^{2} - a^{2} - b^{2}` (Milorad Stevanovic, 5/12/2003)
 
 .. collapse:: Incident Central Lines
    :badge: 17 lines
@@ -68,7 +65,7 @@ Notes
 
 .. container:: note-item
 
-   Let A' be the trilinear pole of the perpendicular bisector of BC, and define B', C' cyclically. A'B'C' is also the anticomplement of the anticomplement of the midheight triangle. A'B'C' is perspective to the orthic and anticomplementary triangles at :ref:`X(193) <X(193)>`. (Randy Hutson, January 29, 2018)
+   Let :g:`A' <A'>` be the trilinear pole of the perpendicular bisector of :g:`BC <[ B C ]>`, and define :g:`B' <B'>`, :g:`C' <C'>` cyclically. :g:`A'B'C' << A' B' C' >>` is also the anticomplement of the anticomplement of the midheight triangle. :g:`A'B'C' << A' B' C' >>` is perspective to the orthic and anticomplementary triangles at :ref:`X(193) <X(193)>`. (Randy Hutson, January 29, 2018)
 
 .. toctree::
    :hidden:

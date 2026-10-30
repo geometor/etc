@@ -16,16 +16,12 @@ X(395) = MIDPOINT OF X(14) AND X(16)
    :alt: X(395) = MIDPOINT OF X(14) AND X(16)
    :align: center
 
-   **X(395) = MIDPOINT OF X(14) AND X(16)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(395) = MIDPOINT OF X(14) AND X(16)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`\cos(B - C) + 2 \cos(A + \pi /3) : :`
    | **Search Value (6, 9, 13):** :math:`-1.205389861913`
-
-.. container:: note-item
-
-   :ref:`X(395) <X(395)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 15 lines
@@ -55,7 +51,7 @@ Notes
 
 .. container:: note-item
 
-   Let F = :ref:`X(14) <X(14)>`, the 2nd Fermat point. Let Ab be the point on CA and Ac the point on AB such that FAbAc is an equilateral triangle. Let A' be the midpoint of FAbAc, and define B' and C' cyclically. The triangle A'B'C', here named the **8th Fermat-Dao equilateral triangle**, is perspective to ABC. The circumcircle of A'B'C' is the pedal circle of :ref:`X(14) <X(14)>` and (X16), and the centroid of A'B'C' is :ref:`X(395) <X(395)>`. The perspector of ABC and A'B'C' is :ref:`X(2) <X(2)>`, and the centroid of A'B'C' is :ref:`X(395) <X(395)>`. See X(16247), X(16267), and X(16459). (Based on notes from Dao Thanh Dao, March 15, 2018)
+   Let :g:`F <F>` = :ref:`X(14) <X(14)>`, the 2nd Fermat point. Let :g:`A_{b} <A_b>` be the point on :g:`CA <[ C A ]>` and :g:`A_{c} <A_c>` the point on :g:`AB <[ A B ]>` such that FAbAc is an equilateral triangle. Let :g:`A' <A'>` be the midpoint of FAbAc, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The triangle :g:`A'B'C' << A' B' C' >>`, here named the **8th Fermat-Dao equilateral triangle**, is perspective to :g:`ABC << A B C >>`. The circumcircle of :g:`A'B'C' << A' B' C' >>` is the pedal circle of :ref:`X(14) <X(14)>` and (X16), and the centroid of :g:`A'B'C' << A' B' C' >>` is :ref:`X(395) <X(395)>`. The perspector of :g:`ABC << A B C >>` and :g:`A'B'C' << A' B' C' >>` is :ref:`X(2) <X(2)>`, and the centroid of :g:`A'B'C' << A' B' C' >>` is :ref:`X(395) <X(395)>`. See X(16247), X(16267), and X(16459). (Based on notes from Dao Thanh Dao, March 15, 2018)
 
 .. container:: note-item
 

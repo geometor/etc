@@ -11,19 +11,19 @@ X(17) = 1st NAPOLEON POINT
 
 .. enunciation::
 
-   Let X,Y,Z be the centers of the equilateral triangles in the construction of :ref:`X(13) <X(13)>`. The lines AX, BY, CZ concur in :ref:`X(17) <X(17)>`.
+   Let :g:`X <X>`,Y,Z be the centers of the equilateral triangles in the construction of :ref:`X(13) <X(13)>`. The lines :g:`AX <[ A X ]>`, BY, CZ concur in :ref:`X(17) <X(17)>`.
 
 .. figure:: x-00017.svg
    :alt: X(17) = 1st NAPOLEON POINT
    :align: center
 
-   **X(17) = 1st NAPOLEON POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(17) = 1st NAPOLEON POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`\csc(A + \pi /6) : \csc(B + \pi /6) : \csc(C + \pi /6)`
    | **Barycentrics:** :math:`a \csc(A + \pi /6) : b \csc(B + \pi /6) : c \csc(C + \pi /6)`
-   | **Tripolars:** :math:`(a^2-b^2-c^2-2 \sqrt{3} S) \sqrt{(a^2-3 b^2-3 c^2-2 \sqrt{3} S)} : :`
+   | **Tripolars:** :math:`(a^{2}-b^{2}-c^{2}-2 \sqrt{3} S) \sqrt{(a^{2}-3 b^{2}-3 c^{2}-2 \sqrt{3} S)} : :`
    | **Search Value (6, 9, 13):** :math:`1.386654550070`
 
 .. collapse:: Alternate Coordinates

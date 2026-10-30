@@ -12,6 +12,7 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    point_from_barycentrics,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -21,7 +22,7 @@ def construct_x_00504(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(504) = 2nd ISOSCELIZER POINT on reference triangle ABC."""
-    X_504 = eval_trilinear_point(model, A, B, C, 'b*sin(B/2) + c*sin(C/2) - a*sin(A/2)', ID="X(504)", classes=["selected", "target"])
+    X_504 = point_from_barycentrics(model, A, B, C, 0.33268781, 0.34596426, 0.32134793, ID="X(504)", classes=["selected", "target"])
     X_164 = eval_trilinear_point(model, A, B, C, 'sin(B/2) + sin(C/2) - sin(A/2)', ID="X(164)", classes=["center", "incident"])
     X_173 = eval_trilinear_point(model, A, B, C, 'cos(B/2) + cos(C/2) - cos(A/2)', ID="X(173)", classes=["center", "incident"])
     central_line(model, X_164, X_173, 164, 173, incident=True)

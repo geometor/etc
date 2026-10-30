@@ -12,6 +12,7 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    point_from_barycentrics,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -21,7 +22,7 @@ def construct_x_00782(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(782) = ODD (- 4, 4) INFINITY POINT on reference triangle ABC."""
-    X_782 = eval_trilinear_point(model, A, B, C, 'a**(-5)*(b**(4)- c**(4)) + a**(3)*(b**(-4)- c**(-4))', ID="X(782)", classes=["selected", "target"])
+    X_782 = point_from_barycentrics(model, A, B, C, -0.66907938, -0.07073749, 0.73981687, ID="X(782)", classes=["selected", "target"])
     X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X(30)", classes=["center", "incident"])
     X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X(511)", classes=["center", "incident"])
     central_line(model, X_30, X_511, 30, 511, incident=True)

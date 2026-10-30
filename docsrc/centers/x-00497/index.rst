@@ -10,13 +10,13 @@ X(497) = CROSSPOINT OF GERGONNE POINT AND NAGEL POINT
 
 .. enunciation::
 
-   Let A'B'C' be the extangents-to-intangents :term:`similarity image <similarity-image>` of ABC. A'B'C' is homothetic to ABC at :ref:`X(55) <X(55)>` and to the :term:`medial triangle <medial-triangle>` at :ref:`X(497) <X(497)>`. (:person:`Randy Hutson <randy-hutson>`, March 21, 2019)
+   Let :g:`A'B'C' << A' B' C' >>` be the extangents-to-intangents :term:`similarity image <similarity-image>` of :g:`ABC << A B C >>`. :g:`A'B'C' << A' B' C' >>` is homothetic to :g:`ABC << A B C >>` at :ref:`X(55) <X(55)>` and to the :term:`medial triangle <medial-triangle>` at :ref:`X(497) <X(497)>`. (:person:`Randy Hutson <randy-hutson>`, March 21, 2019)
 
 .. figure:: x-00497.svg
    :alt: X(497) = CROSSPOINT OF GERGONNE POINT AND NAGEL POINT
    :align: center
 
-   **X(497) = CROSSPOINT OF GERGONNE POINT AND NAGEL POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(497) = CROSSPOINT OF GERGONNE POINT AND NAGEL POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,17 +27,13 @@ X(497) = CROSSPOINT OF GERGONNE POINT AND NAGEL POINT
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
-   * **Barycentrics:** :math:`(SW - bc)(s - a) : :`
-   * **Barycentrics:** :math:`(a - b - c)(a^2 + b^2 + c^2 - 2bc) : :`
+   * **Barycentrics:** :math:`(S_{\omega} - bc)(s - a) : :`
+   * **Barycentrics:** :math:`(a - b - c)(a^{2} + b^{2} + c^{2} - 2bc) : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(497) <X(497)>` = 2(R/r)\*\ :ref:`X(1) <X(1)>` - 3\ :ref:`X(2) <X(2)>` + 2\ :ref:`X(3) <X(3)>`
-
-.. container:: note-item
-
-   :ref:`X(497) <X(497)>` lies.
+   * :ref:`X(497) <X(497)>` = :math:`2(R/r)` :ref:`X(1) <X(1)>` - :math:`3` :ref:`X(2) <X(2)>` + :math:`2` :ref:`X(3) <X(3)>`
 
 .. collapse:: Incident Central Lines
    :badge: 20 lines
@@ -56,8 +52,8 @@ X(497) = CROSSPOINT OF GERGONNE POINT AND NAGEL POINT
    * :ref:`X(497) <X(497)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(652) <X(652)>`\ \ :ref:`X(665) <X(665)>`
    * :ref:`X(497) <X(497)>` = homothetic center of Mandart-incircle triangle and :term:`anticomplementary triangle <anticomplementary-triangle>`
    * :ref:`X(497) <X(497)>` = inverse-in-Feuerbach-hyperbola of X(2550)
-   * :ref:`X(497) <X(497)>` = homothetic center of anticomplementary triangle and cross-triangle of ABC and 2nd Johnson-Yff triangle
-   * :ref:`X(497) <X(497)>` = homothetic center of 2nd Johnson-Yff triangle triangle and cross-triangle of ABC and 2nd Johnson-Yff triangle
+   * :ref:`X(497) <X(497)>` = homothetic center of anticomplementary triangle and cross-triangle of :g:`ABC << A B C >>` and 2nd Johnson-Yff triangle
+   * :ref:`X(497) <X(497)>` = homothetic center of 2nd Johnson-Yff triangle triangle and cross-triangle of :g:`ABC << A B C >>` and 2nd Johnson-Yff triangle
    * :ref:`X(497) <X(497)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(4) <X(4)>`}-harmonic conjugate of :ref:`X(388) <X(388)>`
 
 .. toctree::

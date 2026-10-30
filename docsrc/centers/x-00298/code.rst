@@ -12,7 +12,7 @@ X(298) = ISOTOMIC CONJUGATE OF 1st ISOGONIC CENTER — Code
    :alt: X(298) = ISOTOMIC CONJUGATE OF 1st ISOGONIC CENTER
    :align: center
 
-   **X(298) = ISOTOMIC CONJUGATE OF 1st ISOGONIC CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(298) = ISOTOMIC CONJUGATE OF 1st ISOGONIC CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

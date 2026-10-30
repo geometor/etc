@@ -16,17 +16,13 @@ X(300) = ISOTOMIC CONJUGATE OF 1st ISODYNAMIC CENTER
    :alt: X(300) = ISOTOMIC CONJUGATE OF 1st ISODYNAMIC CENTER
    :align: center
 
-   **X(300) = ISOTOMIC CONJUGATE OF 1st ISODYNAMIC CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(300) = ISOTOMIC CONJUGATE OF 1st ISODYNAMIC CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\csc^{2}A \csc(A + \pi /3) : \csc^{2}B \csc(B + \pi /3) : \csc^{2}C \csc(C + \pi /3)`
+   | **Trilinears:** :math:`\csc^{2} A \csc(A + \pi /3) : \csc^{2} B \csc(B + \pi /3) : \csc^{2} C \csc(C + \pi /3)`
    | **Barycentrics:** :math:`\csc A \csc(A + \pi /3) : \csc B \csc(B + \pi /3) : \csc C \csc(C + \pi /3)`
    | **Search Value (6, 9, 13):** :math:`0.339123705308`
-
-.. container:: note-item
-
-   :ref:`X(300) <X(300)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines

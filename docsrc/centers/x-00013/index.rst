@@ -14,32 +14,31 @@ X(13) = 1st ISOGONIC CENTER (FERMAT POINT, TORRICELLI POINT)
 
 .. enunciation::
 
-   Construct the equilateral triangle BA'C having base BC and vertex A' on the negative side of BC; similarly construct equilateral triangles CB'A and AC'B based on the other two sides. The lines AA', BB', CC' concur in :ref:`X(13) <X(13)>`. If each of the angles A, B, C is < 2π/3, then :ref:`X(13) <X(13)>` is the only center X for which the angles BXC, CXA, AXB are equal, and :ref:`X(13) <X(13)>` minimizes the sum \|AX\| + \|BX\| + \|CX\|. The :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(13) <X(13)>` is equilateral.
+   Construct the equilateral triangle :g:`BA'C << B A' C >>` having base :g:`BC <[ B C ]>` and vertex :g:`A' <A'>` on the negative side of :g:`BC <[ B C ]>`; similarly construct equilateral triangles :g:`CB'A << C B' A >>` and :g:`AC'B << A C' B >>` based on the other two sides. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(13) <X(13)>`. If each of the angles :g:`A <A>`, :g:`B <B>`, :g:`C <C>` is < 2π/3, then :ref:`X(13) <X(13)>` is the only center X for which the angles :g:`BXC << B X C >>`, :g:`CXA << C X A >>`, :g:`AXB << A X B >>` are equal, and :ref:`X(13) <X(13)>` minimizes the sum \|\ :g:`AX <[ A X ]>`\ \| + \|\ :g:`BX <[ B X ]>`\ \| + \|\ :g:`CX <[ C X ]>`\ \|. The :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(13) <X(13)>` is equilateral.
 
 .. figure:: x-00013.svg
    :alt: X(13) = 1st ISOGONIC CENTER (FERMAT POINT, TORRICELLI POINT)
    :align: center
 
-   **X(13) = 1st ISOGONIC CENTER (FERMAT POINT, TORRICELLI POINT)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(13) = 1st ISOGONIC CENTER (FERMAT POINT, TORRICELLI POINT)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`\csc(A + \pi /3) : \csc(B + \pi /3) : \csc(C + \pi /3)`
-   | **Barycentrics:** :math:`a^{4} - 2(b^{2} - c^{2})^{2} + a^{2}(b^{2} + c^{2} + 4*\sqrt{3}*Area(ABC)) : :`
-   | **Tripolars:** :math:`1/(a^4+a^2 b^2-2 b^4+a^2 c^2+4 b^2 c^2-2 c^4+2 \sqrt{3} a^2 S) : :`
+   | **Barycentrics:** :math:`a^{4} - 2(b^{2} - c^{2})^{2} + a^{2}(b^{2} + c^{2} + 4 \sqrt{3} \operatorname{area}(ABC)) : :`
+   | **Tripolars:** :math:`1/(a^{4}+a^{2} b^{2}-2 b^{4}+a^{2} c^{2}+4 b^{2} c^{2}-2 c^{4}+2 \sqrt{3} a^{2} S) : :`
    | **Search Value (6, 9, 13):** :math:`0.075945151805`
 
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
    * **Trilinears:** :math:`\sec(A - \pi /6) : \sec(B - \pi /6) : \sec(C - \pi /6)`
-   * **Barycentrics:** :math:`(SA + \sqrt{3} S) (SB + SC) + 4 SB SC : :`
+   * **Barycentrics:** :math:`(S_{A} + \sqrt{3} S) (S_{B} + S_{C}) + 4 S_{B} S_{C} : :`
 
 .. collapse:: Linear Combinations
-   :badge: 2 combinations
+   :badge: 1 combination
 
-   * :ref:`X(13) <X(13)>` = 3\ :sup:`1/2`\ (r\ :sup:`2` + 2rR + s\ :sup:`2`)\*\ :ref:`X(1) <X(1)>` - 6r(3\ :sup:`1/2`\ R - 2s)\*\ :ref:`X(2) <X(2)>` - 2r(3\ :sup:`1/2`\ r + 3s)\*\ :ref:`X(3) <X(3)>`
-   * (:person:`Peter Moses <peter-moses>`, April 2, 2013)
+   * :ref:`X(13) <X(13)>` = :math:`3^{1/2}(r^{2} + 2rR + s^{2})` :ref:`X(1) <X(1)>` - :math:`6r(3^{1/2}R - 2s)` :ref:`X(2) <X(2)>` - :math:`2r(3^{1/2}r + 3s)` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. container:: note-item
 
@@ -78,8 +77,8 @@ X(13) = 1st ISOGONIC CENTER (FERMAT POINT, TORRICELLI POINT)
    * :ref:`X(13) <X(13)>` = orthocenter of :ref:`X(14) <X(14)>`\ \ :ref:`X(98) <X(98)>`\ X(2394)
    * :ref:`X(13) <X(13)>` = :ref:`X(15) <X(15)>`-of-pedal-triangle of :ref:`X(13) <X(13)>`
    * :ref:`X(13) <X(13)>` = {:ref:`X(265) <X(265)>`,X(1989)}-harmonic Conjugate of :ref:`X(14) <X(14)>`
-   * :ref:`X(13) <X(13)>` = homothetic center of (equilateral) antipedal triangle of :ref:`X(13) <X(13)>` and triangle formed by circumcenters of BC\ :ref:`X(13) <X(13)>`, CA\ :ref:`X(13) <X(13)>`, AB\ :ref:`X(13) <X(13)>`
-   * :ref:`X(13) <X(13)>` = homothetic center of triangle formed by circumcenters of BC\ :ref:`X(14) <X(14)>`, CA\ :ref:`X(14) <X(14)>`, AB\ :ref:`X(14) <X(14)>` and triangle formed by nine-point centers of BC\ :ref:`X(13) <X(13)>`, CA\ :ref:`X(13) <X(13)>`, AB\ :ref:`X(13) <X(13)>`
+   * :ref:`X(13) <X(13)>` = homothetic center of (equilateral) antipedal triangle of :ref:`X(13) <X(13)>` and triangle formed by circumcenters of :g:`BC <[ B C ]>`\ :ref:`X(13) <X(13)>`, :g:`CA <[ C A ]>`\ :ref:`X(13) <X(13)>`, :g:`AB <[ A B ]>`\ :ref:`X(13) <X(13)>`
+   * :ref:`X(13) <X(13)>` = homothetic center of triangle formed by circumcenters of :g:`BC <[ B C ]>`\ :ref:`X(14) <X(14)>`, :g:`CA <[ C A ]>`\ :ref:`X(14) <X(14)>`, :g:`AB <[ A B ]>`\ :ref:`X(14) <X(14)>` and triangle formed by nine-point centers of :g:`BC <[ B C ]>`\ :ref:`X(13) <X(13)>`, :g:`CA <[ C A ]>`\ :ref:`X(13) <X(13)>`, :g:`AB <[ A B ]>`\ :ref:`X(13) <X(13)>`
    * :ref:`X(13) <X(13)>` = Cundy-Parry Phi transform of :ref:`X(17) <X(17)>`
    * :ref:`X(13) <X(13)>` = Cundy-Parry Psi transform of :ref:`X(61) <X(61)>`
    * :ref:`X(13) <X(13)>` = Kosnita(:ref:`X(13) <X(13)>`,\ :ref:`X(1) <X(1)>`) point
@@ -91,7 +90,7 @@ Notes
 
 .. container:: note-item
 
-   If, however, A> 2π/3, then the Fermat point, defined geometrically as the minimizer of \|AX\| + \|BX\| + \|CX\|, is not the 1st isogonic center (which is defined by the above trilinears). Trilinears for the Fermat point when A> 2π/3 are simply 1:0:0. To represent the Fermat point in the form f(a,b,c) : f(b,c,a) : f(c,a,b), one must use Boolean variables, as shown at `Fermat point. <http://en.wikipedia.org/wiki/Fermat_point>`__
+   If, however, A> 2π/3, then the Fermat point, defined geometrically as the minimizer of \|\ :g:`AX <[ A X ]>`\ \| + \|\ :g:`BX <[ B X ]>`\ \| + \|\ :g:`CX <[ C X ]>`\ \|, is not the 1st isogonic center (which is defined by the above trilinears). Trilinears for the Fermat point when A> 2π/3 are simply :math:`1:0:0`. To represent the Fermat point in the form :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, one must use Boolean variables, as shown at `Fermat point. <http://en.wikipedia.org/wiki/Fermat_point>`__
 
 .. container:: note-item
 
@@ -99,27 +98,27 @@ Notes
 
 .. container:: note-item
 
-   Let NaNbNc, Na'Nb'Nc' be the outer and inner Napoleon triangles, respectively. Let A' be the isogonal conjugate of Na', wrt NaNbNc, and define B' and C' cyclically. The lines NaA', NbB', NcC' concur in :ref:`X(13) <X(13)>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2015)
+   Let :g:`N_{a}N_{b}N_{c} << N_a N_b N_c >>`, :g:`N_{a}'N_{b}'N_{c}' << N_a' N_b' N_c' >>` be the outer and inner Napoleon triangles, respectively. Let :g:`A' <A'>` be the isogonal conjugate of :g:`N_{a}' <N_a'>`, wrt :g:`N_{a}N_{b}N_{c} << N_a N_b N_c >>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`N_{a}A' <[ N_a A' ]>`, :g:`N_{b}B' <[ N_b B' ]>`, :g:`N_{c}C' <[ N_c C' ]>` concur in :ref:`X(13) <X(13)>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2015)
 
 .. container:: note-item
 
-   Let P be a point inside triangle ABC such that the line AP bisects angle BPC, and NBP bisets CPA, and CP bisects APB. Then P = :ref:`X(13) <X(13)>`. The locus of P such that AP bisects BPC is the circumcubic given by the barycentric equation c\ :sup:`2`\ xy\ :sup:`2` - b\ :sup:`2`\ xz\ :sup:`2` + (a\ :sup:`2` - b\ :sup:`2` + c\ :sup:`2`)y\ :sup:`2`\ z - (a\ :sup:`2` + b\ :sup:`2` - c\ :sup:`2`)yz\ :sup:`2` = 0, and the other two cubics are given cyclically. :person:`Bernard Gibert <bernard-gibert>` discusses these cubics as K053A, K053B, K053C; see `Apollonian strophoids. <https://bernard-gibert.pagesperso-orange.fr/Exemples/k053.html>`__ (Paul Hanna and Peter Moses, August 6, 2017)
+   Let :g:`P <P>` be a point inside triangle :g:`ABC << A B C >>` such that the line :g:`AP <[ A P ]>` bisects angle :g:`BPC << B P C >>`, and NBP bisets :g:`CPA << C P A >>`, and :g:`CP <[ C P ]>` bisects :g:`APB << A P B >>`. Then :g:`P <P>` = :ref:`X(13) <X(13)>`. The locus of P such that :g:`AP <[ A P ]>` bisects :g:`BPC << B P C >>` is the circumcubic given by the barycentric equation :math:`c^{2}`\ :math:`xy^{2}` - :math:`b^{2}`\ :math:`xz^{2}` + (:math:`a^{2}` - :math:`b^{2}` + :math:`c^{2})`\ :math:`y^{2}`\ z - (:math:`a^{2}` + :math:`b^{2}` - :math:`c^{2})`\ :math:`yz^{2}` = 0, and the other two cubics are given cyclically. :person:`Bernard Gibert <bernard-gibert>` discusses these cubics as K053A, K053B, K053C; see `Apollonian strophoids. <https://bernard-gibert.pagesperso-orange.fr/Exemples/k053.html>`__ (Paul Hanna and Peter Moses, August 6, 2017)
 
 .. container:: note-item
 
-   The line :ref:`X(13) <X(13)>`\ \ :ref:`X(15) <X(15)>` is parallel to the Euler line, and the distance between the two lines is (SB - SC)(SC - SA)(SA - SB)/\|(cot(ω) + 3\ :sup:`1/2`)\|\*((E - 8F)S\ :sup:`2`)\ :sup:`1/2`. (:person:`Kiminari Shinagawa <kiminari-shinagawa>`, February 20, 2018)
+   The line :ref:`X(13) <X(13)>`\ \ :ref:`X(15) <X(15)>` is parallel to the Euler line, and the distance between the two lines is :math:`(S_{B} - S_{C})(S_{C} - S_{A})(S_{A} - S_{B})/|(\cot(\omega ) + 3^{1/2})|*((E - 8F)S^{2})^{1/2}`. (:person:`Kiminari Shinagawa <kiminari-shinagawa>`, February 20, 2018)
 
 .. container:: note-item
 
-   Let A'B'C' be the outer Napoleon triangle and A″B″C″ the inner Napoleon triangle. Let A\* be the isogonal conjugate, wrt A'B'C', of A″, and define B\* and C\* cyclically. The lines A'A\*, B'B\*, C'C\* concur in :ref:`X(13) <X(13)>`. (Randy Hutson, December 2, 2017)
+   Let :g:`A'B'C' << A' B' C' >>` be the outer Napoleon triangle and :g:`A″B″C″ << A″ B″ C″ >>` the inner Napoleon triangle. Let :g:`A* <A*>` be the isogonal conjugate, wrt :g:`A'B'C' << A' B' C' >>`, of :g:`A″ <A″>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`A'A* <[ A' A* ]>`, :g:`B'B* <[ B' B* ]>`, :g:`C'C* <[ C' C* ]>` concur in :ref:`X(13) <X(13)>`. (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 
-   Let F be :ref:`X(13) <X(13)>` or :ref:`X(14) <X(14)>`. Let L and L' be lines through F such that the angle between them is π/3. Let L\ :sub:`BC` = L∩BC, and define L\ :sub:`CA` and L\ :sub:`AB` cyclically. Let L':sub:`BC` = L'∩BC, and define L':sub:`CA` and L':sub:`AB` cyclically. The lines L\ :sub:`BC`\ L':sub:`CA`, L\ :sub:`CA`\ L':sub:`AB`, L\ :sub:`AB`\ L':sub:`BC` concur. (:person:`Dao Thanh Oai <dao-thanh-oai>`, 2014)
+   Let :g:`F <F>` be :ref:`X(13) <X(13)>` or :ref:`X(14) <X(14)>`. Let :g:`L <L>` and :g:`L' <L'>` be lines through F such that the angle between them is π/3. Let :g:`L_{BC} <L_BC>` = L∩\ :g:`BC <[ B C ]>`, and define :g:`L_{CA} <L_CA>` and :g:`L_{AB} <L_AB>` cyclically. Let :g:`L'_{BC} <L'_BC>` = :g:`L' <L'>`\ ∩\ :g:`BC <[ B C ]>`, and define :g:`L'_{CA} <L'_CA>` and :g:`L'_{AB} <L'_AB>` cyclically. The lines :g:`L_{BC}L'_{CA} <[ L_BC L'_CA ]>`, :g:`L_{CA}L'_{AB} <[ L_CA L'_AB ]>`, :g:`L_{AB}L'_{BC} <[ L_AB L'_BC ]>` concur. (:person:`Dao Thanh Oai <dao-thanh-oai>`, 2014)
 
 .. container:: note-item
 
-   Let F be :ref:`X(13) <X(13)>` or :ref:`X(14) <X(14)>`. Let A\ :sub:`0`, B\ :sub:`0`, C\ :sub:`0` be points on BC, CA, AB, respectively, such that the directed angles FA\ :sub:`0`-to-FC\ :sub:`0` = π/3 and FC\ :sub:`0`-to-FB\ :sub:`0` = π/3. The points A\ :sub:`0`, B\ :sub:`0`, C\ :sub:`0` are collinear. (Dao Thanh Oai, 2014)
+   Let :g:`F <F>` be :ref:`X(13) <X(13)>` or :ref:`X(14) <X(14)>`. Let :g:`A_{0} <A_0>`, :g:`B_{0} <B_0>`, :g:`C_{0} <C_0>` be points on :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, respectively, such that the directed angles :g:`FA_{0} <[ F A_0 ]>`-to-:g:`FC_{0} <[ F C_0 ]>` = π/3 and :g:`FC_{0} <[ F C_0 ]>`-to-:g:`FB_{0} <[ F B_0 ]>` = π/3. The points :g:`A_{0} <A_0>`, :g:`B_{0} <B_0>`, :g:`C_{0} <C_0>` are collinear. (Dao Thanh Oai, 2014)
 
 .. container:: note-item
 

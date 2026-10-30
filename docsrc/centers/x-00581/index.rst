@@ -10,22 +10,19 @@ X(581) = ORTHOHARMONIC OF X(284)
 
 .. enunciation::
 
-   Barycentrics (sin A)f(A,B,C): (sin B)f(B,C,A) : (sin C)f(C,A,B)
+   :ref:`X(581) <X(581)>` = inverse-in-Brocard-circle of :ref:`X(580) <X(580)>`
 
 .. figure:: x-00581.svg
    :alt: X(581) = ORTHOHARMONIC OF X(284)
    :align: center
 
-   **X(581) = ORTHOHARMONIC OF X(284)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(581) = ORTHOHARMONIC OF X(284)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = sin A + cot D/2 cos A,, cot D/2 = (2abc - e\ :sub:`1` + e\ :sub:`2`)/[4\*area\*(a + b + c)], where e\ :sub:`1`, e\ :sub:`2` are as for :ref:`X(579) <X(579)>`
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = \sin A + \cot D/2 \cos A`, cot :math:`D/2 = (2abc - e_{1} + e_{2})/[4 \operatorname{area} (a + b + c)]`, where :math:`e_{1}`, :math:`e_{2}` are as for :ref:`X(579) <X(579)>`
+   | **Barycentrics:** :math:`(\sin A)f(A,B,C): (\sin B)f(B,C,A) : (\sin C)f(C,A,B)`
    | **Search Value (6, 9, 13):** :math:`2.619112999419`
-
-.. container:: note-item
-
-   :ref:`X(581) <X(581)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 10 lines

@@ -16,17 +16,13 @@ X(277) = ISOGONAL CONJUGATE OF X(218)
    :alt: X(277) = ISOGONAL CONJUGATE OF X(218)
    :align: center
 
-   **X(277) = ISOGONAL CONJUGATE OF X(218)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(277) = ISOGONAL CONJUGATE OF X(218)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where, f(A,B,C) = [sec\ :sup:`2`\ (A/2)]/[- cos\ :sup:`4`\ A/2 + cos\ :sup:`4`\ B/2 + cos\ :sup:`4`\ C/2]
-   | **Barycentrics:** :math:`1/(a^2 + b^2 + c^2 - 2 a b - 2 a c) : :`
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = [\sec^{2}(A/2)]/[- \cos^{4} A/2 + \cos^{4} B/2 + \cos^{4} C/2]`
+   | **Barycentrics:** :math:`1/(a^{2} + b^{2} + c^{2} - 2 a b - 2 a c) : :`
    | **Search Value (6, 9, 13):** :math:`19.939380009706`
-
-.. container:: note-item
-
-   :ref:`X(277) <X(277)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 7 lines

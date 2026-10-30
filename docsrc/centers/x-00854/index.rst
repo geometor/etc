@@ -10,23 +10,19 @@ X(854) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(56)
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(854) <X(854)>` has Shinagawa coefficients ([(2E-F)F-S\ :sup:`2`]S\ :sup:`2`-$abS\ :sub:`C`\ :sup:`3`\ $ -$abS\ :sub:`A`\ S\ :sub:`B`\ $(E-2F) +$abS\ :sub:`C`\ $[(E+F)\ :sup:`2`-2S\ :sup:`2`], [(E+F)F+S\ :sup:`2`]S\ :sup:`2`-$abS\ :sub:`A`\ S\ :sub:`B`\ $(E+F) +$abS\ :sub:`C`\ $S\ :sup:`2`).
+   As a point on the Euler line, :ref:`X(854) <X(854)>` has Shinagawa coefficients :math:`([(2E-F)F-S^{2}]S^{2}-\$abS_{C}^{3}\$ -\$abS_{A}S_{B}\$(E-2F) +\$abS_{C}\$[(E+F)^{2}-2S^{2}], [(E+F)F+S^{2}]S^{2}-\$abS_{A}S_{B}\$(E+F) +\$abS_{C}\$S^{2})`.
 
 .. figure:: x-00854.svg
    :alt: X(854) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(56)
    :align: center
 
-   **X(854) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(56)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(854) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(56)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B),`, where f(A,B,C) = csc\ :sup:`2`\ (C/2) sin 2B sin(C - A) + csc\ :sup:`2`\ (B/2) sin 2C sin(B - A)
-   | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where g(A,B,C) = (sin A)f(A,B,C)
-   | **Search Value (6, 9, 13):** :math:`0.087118721786`
-
-.. container:: note-item
-
-   :ref:`X(854) <X(854)>` lies.
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = \csc^{2}(C/2) \sin 2B \sin(C - A) + \csc^{2}(B/2) \sin 2C \sin(B - A)`
+   | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where :math:`g(A,B,C) = (\sin A)f(A,B,C)`
+   | **Search Value (6, 9, 13):** :math:`4.705865843343`
 
 .. collapse:: Incident Central Lines
    :badge: 1 line

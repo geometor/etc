@@ -16,29 +16,25 @@ X(575) = ORTHOGONAL OF X(187)
    :alt: X(575) = ORTHOGONAL OF X(187)
    :align: center
 
-   **X(575) = ORTHOGONAL OF X(187)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(575) = ORTHOGONAL OF X(187)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\sin A + \cot D/2 \cos A`, where cot(D/2) = (a\ :sup:`2` + b\ :sup:`2` + c\ :sup:`2`)/(12\*area)
-   | **Barycentrics:** :math:`a^2(2a^4 + b^4 + c^4 - 3a^2b^2 - 3a^2c^2 - 4b^2c^2) : :`
+   | **Trilinears:** :math:`\sin A + \cot D/2 \cos A`, where :math:`\cot(D/2) = (a^{2} + b^{2} + c^{2})/(12 \operatorname{area})`
+   | **Barycentrics:** :math:`a^{2}(2a^{4} + b^{4} + c^{4} - 3a^{2}b^{2} - 3a^{2}c^{2} - 4b^{2}c^{2}) : :`
    | **Search Value (6, 9, 13):** :math:`2.440272094848`
 
 .. collapse:: Alternate Coordinates
    :badge: 3 forms
 
-   * **Trilinears:** 3 sin A + cos A cot ω : : (Peter J. C. Moses, 7/20/03)
-   * **Trilinears:** cos A + 3 sin A tan ω : : (Peter J. C. Moses, 8/22/03)
+   * **Trilinears:** :math:`3 \sin A + \cos A \cot \omega : :` (Peter J. C. Moses, 7/20/03)
+   * **Trilinears:** :math:`\cos A + 3 \sin A \tan \omega : :` (Peter J. C. Moses, 8/22/03)
    * **Trilinears:** :math:`2 \cos(A - 2\omega ) - \cos(A + 2\omega ) + \cos A : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(575) <X(575)>` = :ref:`X(3) <X(3)>` + 3\ :ref:`X(6) <X(6)>`
-
-.. container:: note-item
-
-   :ref:`X(575) <X(575)>` lies.
+   * :ref:`X(575) <X(575)>` = :ref:`X(3) <X(3)>` + :math:`3` :ref:`X(6) <X(6)>`
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines

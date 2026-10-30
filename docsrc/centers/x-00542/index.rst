@@ -16,27 +16,23 @@ X(542) = DIRECTION OF VECTOR AX + BX + CX, where X = X(98)
    :alt: X(542) = DIRECTION OF VECTOR AX + BX + CX, where X = X(98)
    :align: center
 
-   **X(542) = DIRECTION OF VECTOR AX + BX + CX, where X = X(98)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(542) = DIRECTION OF VECTOR AX + BX + CX, where X = X(98)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(2ax - by - cz)/a : :`, where x = x(A,B,C) = sec(A + ω), y = x(B,C,A), z = x(C,A,B)
-   | **Barycentrics:** :math:`2a^6 - 2a^4(b^2 + c^2) + a^2(b^4 + c^4) - (b^2 - c^2)^2(b^2 + c^2) : :`
+   | **Trilinears:** :math:`(2ax - by - cz)/a : :`, where :math:`x = x(A,B,C) = \sec(A + \omega )`, :math:`y = x(B,C,A)`, :math:`z = x(C,A,B)`
+   | **Barycentrics:** :math:`2a^{6} - 2a^{4}(b^{2} + c^{2}) + a^{2}(b^{4} + c^{4}) - (b^{2} - c^{2})^{2}(b^{2} + c^{2}) : :`
 
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
    * **Barycentrics:** :math:`2 a \sec(A + \omega ) - b \sec(B + \omega ) - c \sec(C + \omega ) : :`
-   * **Barycentrics:** :math:`(3 SA - 2 SW) S^2 + 3 SW SB SC : :`
+   * **Barycentrics:** :math:`(3 S_{A} - 2 S_{\omega}) S^{2} + 3 S_{\omega} S_{B} S_{C} : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
    * :ref:`X(542) <X(542)>` = :ref:`X(6) <X(6)>` - :ref:`X(13) <X(13)>`
-
-.. container:: note-item
-
-   :ref:`X(542) <X(542)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 25 lines
@@ -60,7 +56,7 @@ X(542) = DIRECTION OF VECTOR AX + BX + CX, where X = X(98)
    * :ref:`X(542) <X(542)>` = :ref:`X(524) <X(524)>`-of-McCay-triangle
    * :ref:`X(542) <X(542)>` = :ref:`X(524) <X(524)>`-of-anti-McCay-triangle
    * :ref:`X(542) <X(542)>` = intercept of Fermat axis and the line at infinity
-   * :ref:`X(542) <X(542)>` = perspector of hyperbola {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(476) <X(476)>`}}
+   * :ref:`X(542) <X(542)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(476) <X(476)>`}}
    * :ref:`X(542) <X(542)>` = Cundy-Parry Phi transform of X(14357)
    * :ref:`X(542) <X(542)>` = Cundy-Parry Psi transform of X(14246)
    * :ref:`X(542) <X(542)>` = 1st-Brocard-isogonal-conjugate of X(6795)

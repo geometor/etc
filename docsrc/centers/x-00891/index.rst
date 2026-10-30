@@ -16,20 +16,16 @@ X(891) = ISOTOMIC CONJUGATE OF X(889)
    :alt: X(891) = ISOTOMIC CONJUGATE OF X(889)
    :align: center
 
-   **X(891) = ISOTOMIC CONJUGATE OF X(889)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(891) = ISOTOMIC CONJUGATE OF X(889)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`u(bv - cw)/(a^{2}u^{2} - bcvw) : :`, where u : v : w = :ref:`X(513) <X(513)>`
+   | **Trilinears:** :math:`u(bv - cw)/(a^{2}u^{2} - bcvw) : :`, where :math:`u : v : w` = :ref:`X(513) <X(513)>`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
    * **Trilinears:** :math:`(b - c) (a b + a c - 2 b c) : :`
-
-.. container:: note-item
-
-   :ref:`X(891) <X(891)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines
@@ -47,7 +43,7 @@ X(891) = ISOTOMIC CONJUGATE OF X(889)
    * :ref:`X(891) <X(891)>` = bicentric difference of PU(27)
    * :ref:`X(891) <X(891)>` = ideal point of PU(i) for i in (27, 34)
    * :ref:`X(891) <X(891)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(39011)
-   * :ref:`X(891) <X(891)>` = perspector of hyperbola {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(513) <X(513)>`}}
+   * :ref:`X(891) <X(891)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(513) <X(513)>`}}
    * :ref:`X(891) <X(891)>` = barycentric square root of X(39011)
 
 .. toctree::

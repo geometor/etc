@@ -16,7 +16,7 @@ X(559) = (X(1),X(15))-ANSWER TO QUESTION A
    :alt: X(559) = (X(1),X(15))-ANSWER TO QUESTION A
    :align: center
 
-   **X(559) = (X(1),X(15))-ANSWER TO QUESTION A** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(559) = (X(1),X(15))-ANSWER TO QUESTION A** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,7 +27,7 @@ X(559) = (X(1),X(15))-ANSWER TO QUESTION A
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`a*((a + b - c)*(a - b + c) + 2*\sqrt{3}*S) : :`
+   * **Barycentrics:** :math:`a ((a + b - c) \cdot (a - b + c) + 2 \sqrt{3} S) : :`
 
 .. container:: note-item
 

@@ -16,17 +16,13 @@ X(464) = EULER LINE INTERCEPT OF LINE X(63)X(69)
    :alt: X(464) = EULER LINE INTERCEPT OF LINE X(63)X(69)
    :align: center
 
-   **X(464) = EULER LINE INTERCEPT OF LINE X(63)X(69)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(464) = EULER LINE INTERCEPT OF LINE X(63)X(69)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`u \cot A : v \cot B : w \cot C`, where u : v : w = :ref:`X(387) <X(387)>`
+   | **Trilinears:** :math:`u \cot A : v \cot B : w \cot C`, where :math:`u : v : w` = :ref:`X(387) <X(387)>`
    | **Barycentrics:** :math:`u \cos A : v \cos B : w \cos C`
    | **Search Value (6, 9, 13):** :math:`5.837181788574`
-
-.. container:: note-item
-
-   :ref:`X(464) <X(464)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines
@@ -39,7 +35,7 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(464) <X(464)>` has Shinagawa coefficients (E + $bc$, -E - F - $bc$).
+   As a point on the Euler line, :ref:`X(464) <X(464)>` has Shinagawa coefficients :math:`(E + \$bc\$, -E - F - \$bc\$)`.
 
 .. toctree::
    :hidden:

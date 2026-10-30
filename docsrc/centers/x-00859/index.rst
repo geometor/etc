@@ -10,23 +10,19 @@ X(859) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(81)
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(859) <X(859)>` has Shinagawa coefficients ($aS\ :sub:`A`\ $ + $a$F,- $aS\ :sub:`A`\ $ - $a$(E + F)).
+   As a point on the Euler line, :ref:`X(859) <X(859)>` has Shinagawa coefficients :math:`(\$aS_{A}\$ + \$a\$F,- \$aS_{A}\$ - \$a\$(E + F))`.
 
 .. figure:: x-00859.svg
    :alt: X(859) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(81)
    :align: center
 
-   **X(859) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(81)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(859) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(81)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B),`, where f(A,B,C) = (sin A + sin B) sin 2B sin(C - A) + (sin A + sin C) sin 2C sin(B - A)
-   | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where g(A,B,C) = (sin A)f(A,B,C)
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = (\sin A + \sin B) \sin 2B \sin(C - A) + (\sin A + \sin C) \sin 2C \sin(B - A)`
+   | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where :math:`g(A,B,C) = (\sin A)f(A,B,C)`
    | **Search Value (6, 9, 13):** :math:`-1.990686716141`
-
-.. container:: note-item
-
-   :ref:`X(859) <X(859)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 7 lines

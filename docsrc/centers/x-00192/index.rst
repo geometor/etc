@@ -16,17 +16,13 @@ X(192) = X(1)-CEVA CONJUGATE OF X(2) (CONGRUENT PARALLELIANS POINT)
    :alt: X(192) = X(1)-CEVA CONJUGATE OF X(2) (CONGRUENT PARALLELIANS POINT)
    :align: center
 
-   **X(192) = X(1)-CEVA CONJUGATE OF X(2) (CONGRUENT PARALLELIANS POINT)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(192) = X(1)-CEVA CONJUGATE OF X(2) (CONGRUENT PARALLELIANS POINT)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`bc(ca + ab - bc) : ca(ab + bc - ca) : ab(bc + ca - ab)`
    | **Barycentrics:** :math:`ca + ab - bc : ab + bc - ca : bc + ca - ab`
    | **Search Value (6, 9, 13):** :math:`0.475187131173`
-
-.. container:: note-item
-
-   :ref:`X(192) <X(192)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 11 lines
@@ -51,7 +47,7 @@ X(192) = X(1)-CEVA CONJUGATE OF X(2) (CONGRUENT PARALLELIANS POINT)
    * :ref:`X(192) <X(192)>` = perspector of Gemini triangles 4 and 6
    * :ref:`X(192) <X(192)>` = :ref:`X(19) <X(19)>`-:term:`isoconjugate <isoconjugate>` of X(23086)
    * :ref:`X(192) <X(192)>` = perspector of :term:`incentral triangle <incentral-triangle>` and inverse of n(Incentral)\*n(Medial)
-   * :ref:`X(192) <X(192)>` = :term:`trilinear pole <trilinear-pole>` of line X(3835)X(4083) (the perspectrix of ABC and Gemini triangle 16)
+   * :ref:`X(192) <X(192)>` = :term:`trilinear pole <trilinear-pole>` of line X(3835)X(4083) (the perspectrix of :g:`ABC << A B C >>` and Gemini triangle 16)
    * :ref:`X(192) <X(192)>` = {:ref:`X(37) <X(37)>`,\ :ref:`X(75) <X(75)>`}-harmonic conjugate of :ref:`X(2) <X(2)>`
 
 Notes

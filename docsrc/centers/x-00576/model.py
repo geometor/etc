@@ -12,7 +12,6 @@ from geometor.etc.ops import (
     circumcenter_of,
     construct_baseline_triangle,
     create_model,
-    eval_barycentric_point,
     eval_trilinear_point,
     nine_point_center_of,
     promote_point_to_top,
@@ -25,7 +24,7 @@ def construct_x_00576(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(576) = ORTHOHARMONIC OF X(187) on reference triangle ABC."""
-    X_576 = eval_barycentric_point(model, A, B, C, 'a**(2)*(a**(4) + 2*b**(4) + 2*c**(4) - 3*a**(2)*b**(2) - 3*a**(2)*c**(2) - 2*b**(2)*c**(2))', ID="X(576)", classes=["selected", "target"])
+    X_576 = eval_trilinear_point(model, A, B, C, '3*sin(A) - cos(A)*cot(omega)', ID="X(576)", classes=["selected", "target"])
     X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
     X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
     central_line(model, X_3, X_6, 3, 6, incident=True)

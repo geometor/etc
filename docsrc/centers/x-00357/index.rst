@@ -11,23 +11,19 @@ X(357) = 1st MORLEY-TAYLOR-MARR CENTER
 
 .. enunciation::
 
-   :ref:`X(357) <X(357)>` is the perspector of Morley triangle and ABC, and also the Hofstadter 1/3 point. See
+   :ref:`X(357) <X(357)>` is the perspector of Morley triangle and :g:`ABC << A B C >>`, and also the Hofstadter 1/3 point. See
 
 .. figure:: x-00357.svg
    :alt: X(357) = 1st MORLEY-TAYLOR-MARR CENTER
    :align: center
 
-   **X(357) = 1st MORLEY-TAYLOR-MARR CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(357) = 1st MORLEY-TAYLOR-MARR CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`\sec A/3 : \sec B/3 : \sec C/3`
    | **Barycentrics:** :math:`\sin A \sec A/3 : \sin B \sec B/3 : \sin C \sec C/3`
    | **Search Value (6, 9, 13):** :math:`1.486625299299`
-
-.. container:: note-item
-
-   :ref:`X(357) <X(357)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines

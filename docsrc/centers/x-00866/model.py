@@ -14,6 +14,7 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    intersect_lines,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -23,13 +24,13 @@ def construct_x_00866(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(866) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(513) on reference triangle ABC."""
-    X_866 = eval_trilinear_point(model, A, B, C, 'sin(2*B)*sin(A - C)/(sin(A) - sin(B)) - sin(2*C)*sin(A - B)/(sin(A) - sin(C))', ID="X(866)", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
+    X_244 = eval_trilinear_point(model, A, B, C, '(b - c)**(2)', ID="X(244)", classes=["center"])
+    X_665 = eval_trilinear_point(model, A, B, C, 'a*((a - b)**(2)*(a + b - c) - (c - a)**(2)*(c + a - b))', ID="X(665)", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
-    X_244 = eval_trilinear_point(model, A, B, C, '(b - c)**(2)', ID="X(244)", classes=["center", "incident"])
-    X_665 = eval_trilinear_point(model, A, B, C, 'a*((a - b)**(2)*(a + b - c) - (c - a)**(2)*(c + a - b))', ID="X(665)", classes=["center", "incident"])
-    central_line(model, X_244, X_665, 244, 665, incident=True)
+    central_line(model, X_244, X_665, 244, 665)
+    X_866 = intersect_lines(model, X_2, X_3, X_244, X_665, ID="X(866)", classes=["selected", "target"])
     return promote_point_to_top(model, X_866)
 
 

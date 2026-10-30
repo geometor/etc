@@ -24,7 +24,7 @@ def construct_x_00738(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(738) = ISOGONAL CONJUGATE OF X(728) on reference triangle ABC."""
-    X_728 = eval_trilinear_point(model, A, B, C, '(b + c - a)**(3)', ID="X(728)", classes=["center"])
+    X_728 = eval_trilinear_point(model, A, B, C, '(cot(A/2))**(3)', ID="X(728)", classes=["center"])
     X_738 = isogonal_conjugate(model, A, B, C, X_728, ID="X(738)", classes=["selected", "target"])
     X_56 = eval_trilinear_point(model, A, B, C, 'a/(b + c - a)', ID="X(56)", classes=["center", "incident"])
     X_269 = eval_trilinear_point(model, A, B, C, '(a**(2) - (b - c)**(2))**(2)', ID="X(269)", classes=["center", "incident"])

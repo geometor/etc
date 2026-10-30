@@ -16,7 +16,7 @@ X(59) = ISOGONAL CONJUGATE OF X(11)
    :alt: X(59) = ISOGONAL CONJUGATE OF X(11)
    :align: center
 
-   **X(59) = ISOGONAL CONJUGATE OF X(11)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(59) = ISOGONAL CONJUGATE OF X(11)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,11 +27,7 @@ X(59) = ISOGONAL CONJUGATE OF X(11)
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`\csc^2 (B/2 - C/2) : :`
-
-.. container:: note-item
-
-   :ref:`X(59) <X(59)>` lies.
+   * **Trilinears:** :math:`\csc^{2} (B/2 - C/2) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines
@@ -49,8 +45,8 @@ X(59) = ISOGONAL CONJUGATE OF X(11)
    * :ref:`X(59) <X(59)>` = :term:`crossdifference <crossdifference>` of every pair of points on line X(4530)X(14393)
    * :ref:`X(59) <X(59)>` = :ref:`X(765) <X(765)>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X(765) <X(765)>`
    * :ref:`X(59) <X(59)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(101) <X(101)>`\ \ :ref:`X(109) <X(109)>`
-   * :ref:`X(59) <X(59)>` = perspector of ABC and the reflection of the :term:`intouch triangle <intouch-triangle>` in line :ref:`X(1) <X(1)>`\ \ :ref:`X(3) <X(3)>`
-   * :ref:`X(59) <X(59)>` = perspector of ABC and extraversion triangle of :ref:`X(60) <X(60)>`
+   * :ref:`X(59) <X(59)>` = perspector of :g:`ABC << A B C >>` and the reflection of the :term:`intouch triangle <intouch-triangle>` in line :ref:`X(1) <X(1)>`\ \ :ref:`X(3) <X(3)>`
+   * :ref:`X(59) <X(59)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(60) <X(60)>`
    * :ref:`X(59) <X(59)>` = :ref:`X(75) <X(75)>`-:term:`isoconjugate <isoconjugate>` of X(3271)
    * :ref:`X(59) <X(59)>` = trilinear square of X(6733)
    * :ref:`X(59) <X(59)>` = :term:`complement <complement>` of isogonal conjugate of X(36902)

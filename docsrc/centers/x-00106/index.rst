@@ -16,7 +16,7 @@ X(106) = Λ(INCENTER, CENTROID)
    :alt: X(106) = Λ(INCENTER, CENTROID)
    :align: center
 
-   **X(106) = Λ(INCENTER, CENTROID)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(106) = Λ(INCENTER, CENTROID)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -24,10 +24,6 @@ X(106) = Λ(INCENTER, CENTROID)
    | **Barycentrics:** :math:`a^{2}/(2a - b - c) : b^{2}/(2b - c - a) : c^{2}/(2c - a - b)`
    | **Tripolars:** :math:`|b c (2 a - b - c)| : :`
    | **Search Value (6, 9, 13):** :math:`0.410148388324`
-
-.. container:: note-item
-
-   :ref:`X(106) <X(106)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 245 lines

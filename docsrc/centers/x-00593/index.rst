@@ -10,23 +10,19 @@ X(593) = 1st HATZIPOLAKIS-YIU POINT
 
 .. enunciation::
 
-   Let O(A) be the circle tangent to line BC and to the circumcircle of triangle ABC at vertex A. Let A\ :sub:`B` and A\ :sub:`C` be where O(A) meets lines AB and AC, respectively. Let L(A) be the line joining A\ :sub:`B` and A\ :sub:`C`, and define L(B) and L(C) cyclically. Let A' be where L(B) and L(C) meet, and define B' and C' cyclically. Then triangle A'B'C' is homothetic to triangle ABC, and the center of homothety is :ref:`X(593) <X(593)>`. See :person:`Antreas Hatzipolakis <antreas-hatzipolakis>`, :person:`Paul Yiu <paul-yiu>`, :cite:`Hyacinthos #2070 <hyacinthos>`.
+   Let O(A) be the circle tangent to line :g:`BC <[ B C ]>` and to the circumcircle of triangle :g:`ABC << A B C >>` at vertex A. Let :g:`A_{B} <A_B>` and :g:`A_{C} <A_C>` be where O(A) meets lines :g:`AB <[ A B ]>` and :g:`AC <[ A C ]>`, respectively. Let L(A) be the line joining :g:`A_{B} <A_B>` and :g:`A_{C} <A_C>`, and define L(B) and L(C) cyclically. Let :g:`A' <A'>` be where L(B) and L(C) meet, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Then triangle :g:`A'B'C' << A' B' C' >>` is homothetic to triangle :g:`ABC << A B C >>`, and the center of homothety is :ref:`X(593) <X(593)>`. See :person:`Antreas Hatzipolakis <antreas-hatzipolakis>`, :person:`Paul Yiu <paul-yiu>`, :cite:`Hyacinthos #2070 <hyacinthos>`.
 
 .. figure:: x-00593.svg
    :alt: X(593) = 1st HATZIPOLAKIS-YIU POINT
    :align: center
 
-   **X(593) = 1st HATZIPOLAKIS-YIU POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(593) = 1st HATZIPOLAKIS-YIU POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`a/(b + c)^{2} : b/(c + a)^{2} : c/(a + b)^{2}`
    | **Barycentrics:** :math:`[a/(b + c)]^{2} : [b/(c + a)]^{2} : [c/(a + b)]^{2}`
    | **Search Value (6, 9, 13):** :math:`0.558849923867`
-
-.. container:: note-item
-
-   :ref:`X(593) <X(593)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines

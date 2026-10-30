@@ -24,7 +24,7 @@ def construct_x_00254(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(254) = X(3)-CROSS CONJUGATE OF X(4) on reference triangle ABC."""
-    X_155 = eval_barycentric_point(model, A, B, C, 'a**(2)*SA*(a**(2)*(SA**(2) - SB*SC) - SA*(SB**(2) + SC**(2)))', ID="X(155)", classes=["center"])
+    X_155 = eval_barycentric_point(model, A, B, C, 'a**(2)*(a**(2) - b**(2) - c**(2))*(a**(6) - 3*a**(4)*(b**(2) + c**(2)) + a**(2)*(3*b**(4) - 2*b**(2)*c**(2) + 3*c**(4)) - (b**(2) - c**(2))**(2)*(b**(2) + c**(2)))', ID="X(155)", classes=["center"])
     X_254 = isogonal_conjugate(model, A, B, C, X_155, ID="X(254)", classes=["selected", "target"])
     X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
     central_line(model, X_4, X_155, 4, 155, incident=True)

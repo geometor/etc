@@ -33,7 +33,7 @@ def construct_x_00882(
     X_523 = eval_trilinear_point(model, A, B, C, 'sin(B -C)', ID="X(523)", classes=["center", "incident"])
     central_line(model, X_141, X_523, 141, 523, incident=True)
     X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
-    X_688 = eval_trilinear_point(model, A, B, C, 'a**(3)*(b**(4)- c**(4))', ID="X(688)", classes=["center", "incident"])
+    X_688 = point_from_barycentrics(model, A, B, C, 0.2387104, -0.79556745, 0.55685705, ID="X(688)", classes=["center", "incident"])
     central_line(model, X_6, X_688, 6, 688, incident=True)
     return promote_point_to_top(model, X_882)
 

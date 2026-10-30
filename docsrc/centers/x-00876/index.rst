@@ -16,16 +16,12 @@ X(876) = ISOTOMIC CONJUGATE OF X(874)
    :alt: X(876) = ISOTOMIC CONJUGATE OF X(874)
    :align: center
 
-   **X(876) = ISOTOMIC CONJUGATE OF X(874)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(876) = ISOTOMIC CONJUGATE OF X(874)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`u(bv - cw)/(a^{2}u^{2} - bcvw) : :`, where u : v : w = :ref:`X(1) <X(1)>`
+   | **Trilinears:** :math:`u(bv - cw)/(a^{2}u^{2} - bcvw) : :`, where :math:`u : v : w` = :ref:`X(1) <X(1)>`
    | **Search Value (6, 9, 13):** :math:`0.111523510377`
-
-.. container:: note-item
-
-   :ref:`X(876) <X(876)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 9 lines

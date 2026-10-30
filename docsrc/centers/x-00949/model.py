@@ -35,7 +35,7 @@ def construct_x_00949(
     X_77 = eval_trilinear_point(model, A, B, C, '1/(1 + sec(A))', ID="X(77)", classes=["center", "incident"])
     central_line(model, X_6, X_77, 6, 77, incident=True)
     X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
-    X_294 = eval_trilinear_point(model, A, B, C, '(b + c - a)/(b**(2)+ c**(2)- a*b - a*c)', ID="X(294)", classes=["center", "incident"])
+    X_294 = point_from_barycentrics(model, A, B, C, 0.10958904, 0.98630137, -0.095890411, ID="X(294)", classes=["center", "incident"])
     central_line(model, X_2, X_294, 2, 294, incident=True)
     return promote_point_to_top(model, X_949)
 

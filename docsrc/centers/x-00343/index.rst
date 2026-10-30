@@ -16,7 +16,7 @@ X(343) = ISOTOMIC CONJUGATE OF X(275)
    :alt: X(343) = ISOTOMIC CONJUGATE OF X(275)
    :align: center
 
-   **X(343) = ISOTOMIC CONJUGATE OF X(275)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(343) = ISOTOMIC CONJUGATE OF X(275)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,11 +28,7 @@ X(343) = ISOTOMIC CONJUGATE OF X(275)
    :badge: 2 forms
 
    * **Barycentrics:** :math:`\tan B \tan C + 1 : :`
-   * **Barycentrics:** :math:`(b^2 + c^2 - a^2) (a^2 (b^2 + c^2) - (b^2 - c^2)^2) : :`
-
-.. container:: note-item
-
-   :ref:`X(343) <X(343)>` lies.
+   * **Barycentrics:** :math:`(b^{2} + c^{2} - a^{2}) (a^{2} (b^{2} + c^{2}) - (b^{2} - c^{2})^{2}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 13 lines
@@ -53,7 +49,7 @@ X(343) = ISOTOMIC CONJUGATE OF X(275)
    * :ref:`X(343) <X(343)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X(8884) (line :ref:`X(421) <X(421)>`\ X(2501))
    * :ref:`X(343) <X(343)>` = polar conjugate of X(8884)
    * :ref:`X(343) <X(343)>` = crosspoint of :ref:`X(6) <X(6)>` and X(2917) wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
-   * :ref:`X(343) <X(343)>` = X(7580)-of-orthic-triangle if ABC is acute
+   * :ref:`X(343) <X(343)>` = X(7580)-of-orthic-triangle if :g:`ABC << A B C >>` is acute
 
 .. toctree::
    :hidden:

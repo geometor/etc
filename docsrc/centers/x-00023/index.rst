@@ -11,25 +11,25 @@ X(23) = FAR-OUT POINT
 
 .. enunciation::
 
-   Let A'B'C' be the :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(3) <X(3)>` (the :term:`tangential triangle <tangential-triangle>`). The circumcircles of AA':ref:`X(3) <X(3)>`, BB':ref:`X(3) <X(3)>`, CC':ref:`X(3) <X(3)>` concur in two points: :ref:`X(3) <X(3)>` and :ref:`X(23) <X(23)>`. (:person:`Randy Hutson <randy-hutson>`, Octobe3r 13, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(3) <X(3)>` (the :term:`tangential triangle <tangential-triangle>`). The circumcircles of :g:`AA' <[ A A' ]>`:ref:`X(3) <X(3)>`, :g:`BB' <[ B B' ]>`:ref:`X(3) <X(3)>`, :g:`CC' <[ C C' ]>`:ref:`X(3) <X(3)>` concur in two points: :ref:`X(3) <X(3)>` and :ref:`X(23) <X(23)>`. (:person:`Randy Hutson <randy-hutson>`, Octobe3r 13, 2015)
 
 .. figure:: x-00023.svg
    :alt: X(23) = FAR-OUT POINT
    :align: center
 
-   **X(23) = FAR-OUT POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(23) = FAR-OUT POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`a[b^{4} + c^{4} - a^{4} - b^{2}c^{2}] : :`
-   | **Barycentrics:** :math:`2 \sin 2A - 3 \tan \omega : 2 \sin 2B - 3 \tan \omega : 2 \sin 2C - 3 \tan \omega (M. Iliev, 5/13/07)`
-   | **Tripolars:** :math:`\sqrt{2(b^2 + c^2) - a^2} : :`
+   | **Barycentrics:** :math:`2 \sin 2A - 3 \tan \omega : 2 \sin 2B - 3 \tan \omega : 2 \sin 2C - 3 \tan \omega` (M. Iliev, 5/13/07)
+   | **Tripolars:** :math:`\sqrt{2(b^{2} + c^{2}) - a^{2}} : :`
    | **Search Value (6, 9, 13):** :math:`-3.053566517876`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(23) <X(23)>` = 9 R^2 :ref:`X(2) <X(2)>` - 2 SW :ref:`X(3) <X(3)>`
+   * :ref:`X(23) <X(23)>` = :math:`9 R^{2}` :ref:`X(2) <X(2)>` - :math:`2 S_{\omega}` :ref:`X(3) <X(3)>`
 
 .. container:: note-item
 
@@ -54,7 +54,7 @@ X(23) = FAR-OUT POINT
    * :ref:`X(23) <X(23)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`125 <X(125)>`, :ref:`690 <X(690)>`), (:ref:`141 <X(141)>`, :ref:`524 <X(524)>`)
    * :ref:`X(23) <X(23)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(39) <X(39)>`\ \ :ref:`X(647) <X(647)>`
    * :ref:`X(23) <X(23)>` = :term:`complement <complement>` of X(5189)
-   * :ref:`X(23) <X(23)>` = perspector of ABC and reflection of circummedial triangle in the Euler line
+   * :ref:`X(23) <X(23)>` = perspector of :g:`ABC << A B C >>` and reflection of circummedial triangle in the Euler line
    * :ref:`X(23) <X(23)>` = :term:`antigonal image <antigonal-image>` of :ref:`X(316) <X(316)>`
    * :ref:`X(23) <X(23)>` = :term:`trilinear pole <trilinear-pole>` of line X(2492)X(6593)
    * :ref:`X(23) <X(23)>` = reflection of :ref:`X(858) <X(858)>` in the orthic axis
@@ -93,11 +93,11 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(23) <X(23)>` has Shinagawa coefficients (E + 4F, -4E - 4F).
+   As a point on the Euler line, :ref:`X(23) <X(23)>` has Shinagawa coefficients :math:`(E + 4F, -4E - 4F)`.
 
 .. container:: note-item
 
-   Let A'B'C' be the anti-orthocentroidal triangle. Let A″ be the reflection of A' in line BC, and define B″ and C″ cyclically. Then :ref:`X(23) <X(23)>` is the centroid of A″B″C″; see X(9140), X(11002). (Randy Hutson, December 10, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the anti-orthocentroidal triangle. Let :g:`A″ <A″>` be the reflection of :g:`A' <A'>` in line :g:`BC <[ B C ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Then :ref:`X(23) <X(23)>` is the centroid of :g:`A″B″C″ << A″ B″ C″ >>`; see X(9140), X(11002). (Randy Hutson, December 10, 2016)
 
 .. container:: note-item
 

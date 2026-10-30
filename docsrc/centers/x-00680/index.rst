@@ -16,16 +16,12 @@ X(680) = CROSSDIFFERENCE OF X(6) AND X(158)
    :alt: X(680) = CROSSDIFFERENCE OF X(6) AND X(158)
    :align: center
 
-   **X(680) = CROSSDIFFERENCE OF X(6) AND X(158)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(680) = CROSSDIFFERENCE OF X(6) AND X(158)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C): f(B,C,A) : f(C,A,B)`, where f(A,B,C) = cos\ :sup:`2`\ A (sin B cos\ :sup:`2`\ B - sin C cos\ :sup:`2`\ C)
-   | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where g(A,B,C) = sin A f(A,B,C)
-
-.. container:: note-item
-
-   :ref:`X(680) <X(680)>` lies.
+   | **Trilinears:** :math:`f(A,B,C): f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = \cos^{2} A (\sin B \cos^{2} B - \sin C \cos^{2} C)`
+   | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where :math:`g(A,B,C) = \sin A f(A,B,C)`
 
 .. collapse:: Incident Central Lines
    :badge: 1 line

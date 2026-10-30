@@ -12,7 +12,7 @@ X(287) = X(2)-HIRST INVERSE OF X(98) — Code
    :alt: X(287) = X(2)-HIRST INVERSE OF X(98)
    :align: center
 
-   **X(287) = X(2)-HIRST INVERSE OF X(98)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(287) = X(2)-HIRST INVERSE OF X(98)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

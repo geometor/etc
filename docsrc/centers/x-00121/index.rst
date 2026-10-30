@@ -10,26 +10,23 @@ X(121) = X(106)-OF-MEDIAL-TRIANGLE
 
 .. enunciation::
 
-   Barycentrics g(a,b,c) : g(b,c,a) : g(c,a,b) where g(a,b,c) = (b + c - 2a)[b\ :sup:`3` + c\ :sup:`3` + a(b\ :sup:`2` + c\ :sup:`2`) - 2bc(b + c)]
+   :ref:`X(121) <X(121)>` = :ref:`X(106) <X(106)>`-of-:term:`medial triangle <medial-triangle>`.
 
 .. figure:: x-00121.svg
    :alt: X(121) = X(106)-OF-MEDIAL-TRIANGLE
    :align: center
 
-   **X(121) = X(106)-OF-MEDIAL-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(121) = X(106)-OF-MEDIAL-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where, f(a,b,c) = bc(b + c - 2a)[b\ :sup:`3` + c\ :sup:`3` + a(b\ :sup:`2` + c\ :sup:`2`) - 2bc(b + c)]
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = bc(b + c - 2a)[b^{3} + c^{3} + a(b^{2} + c^{2}) - 2bc(b + c)]`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = (b + c - 2a)[b^{3} + c^{3} + a(b^{2} + c^{2}) - 2bc(b + c)]`
    | **Search Value (6, 9, 13):** :math:`3.738978994571`
 
 .. container:: note-item
 
    :ref:`X(121) <X(121)>` lies on the nine-point circle
-
-.. container:: note-item
-
-   :ref:`X(121) <X(121)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines
@@ -40,7 +37,7 @@ X(121) = X(106)-OF-MEDIAL-TRIANGLE
 .. collapse:: Functional Relations
    :badge: 8 relations
 
-   * :ref:`X(121) <X(121)>` = :ref:`X(106) <X(106)>`-of-:term:`medial triangle <medial-triangle>`.
+   * :ref:`X(121) <X(121)>` = :ref:`X(106) <X(106)>`-of-medial triangle.
    * :ref:`X(121) <X(121)>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X(519) <X(519)>`
    * :ref:`X(121) <X(121)>` = :ref:`X(4) <X(4)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(519) <X(519)>`
    * :ref:`X(121) <X(121)>` = :term:`complement <complement>` of :ref:`X(106) <X(106)>`

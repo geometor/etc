@@ -12,7 +12,7 @@ X(772) = ODD (- 4, - 1) INFINITY POINT — Code
    :alt: X(772) = ODD (- 4, - 1) INFINITY POINT
    :align: center
 
-   **X(772) = ODD (- 4, - 1) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(772) = ODD (- 4, - 1) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

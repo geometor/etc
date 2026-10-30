@@ -16,16 +16,12 @@ X(937) = ISOGONAL CONJUGATE OF X(936)
    :alt: X(937) = ISOGONAL CONJUGATE OF X(936)
    :align: center
 
-   **X(937) = ISOGONAL CONJUGATE OF X(936)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(937) = ISOGONAL CONJUGATE OF X(936)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`1/[a^{3} - a^{2}(b + c) - a(b - c)^{2} + (b + c)^{3}]`
    | **Search Value (6, 9, 13):** :math:`0.712526544069`
-
-.. container:: note-item
-
-   :ref:`X(937) <X(937)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines

@@ -10,25 +10,22 @@ X(529) = DIRECTION OF VECTOR AX + BX + CX, where X = X(12)
 
 .. enunciation::
 
-   Barycentrics af(a,b,c) : bf(b,c,a) : cf(c,a,b)
+   :ref:`X(529) <X(529)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(38882)
 
 .. figure:: x-00529.svg
    :alt: X(529) = DIRECTION OF VECTOR AX + BX + CX, where X = X(12)
    :align: center
 
-   **X(529) = DIRECTION OF VECTOR AX + BX + CX, where X = X(12)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(529) = DIRECTION OF VECTOR AX + BX + CX, where X = X(12)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where, f(a,b,c) = (2ax - by - cz)/a, x = x(A,B,C) = 1 + cos(B-C), y = x(B,C,A), z = x(C,A,B)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = (2ax - by - cz)/a`, :math:`x = x(A,B,C) = 1 + \cos(B-C)`, :math:`y = x(B,C,A)`, :math:`z = x(C,A,B)`
+   | **Barycentrics:** :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
 
 .. container:: note-item
 
    :ref:`X(529) <X(529)>` lies on the line at infinity.
-
-.. container:: note-item
-
-   :ref:`X(529) <X(529)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 17 lines
@@ -39,7 +36,7 @@ X(529) = DIRECTION OF VECTOR AX + BX + CX, where X = X(12)
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(529) <X(529)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(38882)
+   * :ref:`X(529) <X(529)>` = isogonal conjugate of X(38882)
 
 .. toctree::
    :hidden:

@@ -11,22 +11,25 @@ X(181) = APOLLONIUS POINT
 
 .. enunciation::
 
-   Let O(A),O(B),O(C) be the excircles. Apollonius's Problem includes the construction of the circle O tangent to the three excircles and encompassing them. (The circle is called the Apollonius circle.) Let A' = O∩O(A), B'=O∩O(B), C'=O∩O(C). The lines AA',BB',CC' concur in :ref:`X(181) <X(181)>`. Yff derived trilinears in 1992.
+   Let O(A),O(B),O(C) be the excircles. Apollonius's Problem includes the construction of the circle :g:`O <O>` tangent to the three excircles and encompassing them. (The circle is called the Apollonius circle.) Let :g:`A' <A'>` = O∩O(A), :g:`B' <B'>`\ =O∩O(B), :g:`C' <C'>`\ =O∩O(C). The lines :g:`AA' <[ A A' ]>`,\ :g:`BB' <[ B B' ]>`,\ :g:`CC' <[ C C' ]>` concur in :ref:`X(181) <X(181)>`. Yff derived trilinears in 1992.
 
 .. figure:: x-00181.svg
    :alt: X(181) = APOLLONIUS POINT
    :align: center
 
-   **X(181) = APOLLONIUS POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(181) = APOLLONIUS POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`a(b + c)^{2}/(b + c - a) : b(c + a)^{2}/(c + a - b) : c(a + b)^{2}/(a + b - c), = a^{2}\cos^{2}(B/2 - C/2) : b^{2}\cos^{2}(C/2 - A/2) : c^{2}\cos^{2}(A/2 - B/2)`
+   | **Trilinears:** :math:`a(b + c)^{2}/(b + c - a) : b(c + a)^{2}/(c + a - b) : c(a + b)^{2}/(a + b - c)`
+   | **Barycentrics:** :math:`a^{3}\cos^{2}(B/2 - C/2) : b^{3}\cos^{2}(C/2 - A/2) : c^{3}\cos^{2}(A/2 - B/2)`
    | **Search Value (6, 9, 13):** :math:`0.373069446401`
 
-.. container:: note-item
+.. collapse:: Alternate Coordinates
+   :badge: 2 forms
 
-   :ref:`X(181) <X(181)>` lies.
+   * **Trilinears:** :math:`a^{2}\cos^{2}(B/2 - C/2) : b^{2}\cos^{2}(C/2 - A/2) : c^{2}\cos^{2}(A/2 - B/2)`
+   * **Trilinears:** :math:`h(a,b,c) : h(b,c,a) : h(c,a,b)`, where :math:`h(a,b,c) = [r \cos(A/2) + s \sin(A/2)]^{2}`, s = semiperimeter, r = inradius
 
 .. collapse:: Incident Central Lines
    :badge: 55 lines
@@ -57,14 +60,6 @@ Notes
 
 .. container:: note-item
 
-   Trilinears h(a,b,c) : h(b,c,a) : h(c,a,b), where h(a,b,c) = [r cos(A/2) + s sin(A/2)]\ :sup:`2`, s = semiperimeter, r = inradius
-
-.. container:: note-item
-
-   Barycentrics a\ :sup:`3`\ cos\ :sup:`2`\ (B/2 - C/2) : b\ :sup:`3`\ cos\ :sup:`2`\ (C/2 - A/2) : c\ :sup:`3`\ cos\ :sup:`2`\ (A/2 - B/2)
-
-.. container:: note-item
-
    :ref:`X(181) <X(181)>` is the external center of similitude (or exsimilicenter) of the incircle and Apollonius circle. The internal center is X(1682). (Peter J. C. Moses, 8/22/2003)
 
 .. container:: note-item
@@ -73,19 +68,19 @@ Notes
 
 .. container:: note-item
 
-   A proof of the the concurrence of lines AA',BB',CC' follows.
+   A proof of the the concurrence of lines :g:`AA' <[ A A' ]>`,\ :g:`BB' <[ B B' ]>`,\ :g:`CC' <[ C C' ]>` follows.
 
-   A = exsimilicenter(incircle, A-excircle)
+   :g:`A <A>` = exsimilicenter(incircle, :g:`A <A>`-excircle)
 
-   A' = exsimilicenter(A-excircle, Apollonius circle)
+   :g:`A' <A'>` = exsimilicenter(:g:`A <A>`-excircle, Apollonius circle)
 
    Let J = exsimilicenter(incircle, Apollonius circle).
 
-   By Monge's theorem, the points A, A', J are collinear. In particular, J lies on line AA', and cyclically, J lies on lines BB' and CC'. Therefore, J = :ref:`X(181) <X(181)>`. (:person:`Darij Grinberg <darij-grinberg>`, :cite:`Hyacinthos <hyacinthos>`, 7461, 8/10/03)
+   By Monge's theorem, the points :g:`A <A>`, :g:`A' <A'>`, J are collinear. In particular, J lies on line :g:`AA' <[ A A' ]>`, and cyclically, J lies on lines :g:`BB' <[ B B' ]>` and :g:`CC' <[ C C' ]>`. Therefore, J = :ref:`X(181) <X(181)>`. (:person:`Darij Grinberg <darij-grinberg>`, :cite:`Hyacinthos <hyacinthos>`, 7461, 8/10/03)
 
 .. container:: note-item
 
-   Let A' be the inverse-in-excircles-radical-circle of the midpoint of BC, and define B', C' cyclically. Triangle A'B'C' is inscribed in the Apollonius circle and homothetic to the :term:`intouch triangle <intouch-triangle>` at :ref:`X(181) <X(181)>`. (:person:`Randy Hutson <randy-hutson>`, March 21, 2019)
+   Let :g:`A' <A'>` be the inverse-in-excircles-radical-circle of the midpoint of :g:`BC <[ B C ]>`, and define :g:`B' <B'>`, :g:`C' <C'>` cyclically. Triangle :g:`A'B'C' << A' B' C' >>` is inscribed in the Apollonius circle and homothetic to the :term:`intouch triangle <intouch-triangle>` at :ref:`X(181) <X(181)>`. (:person:`Randy Hutson <randy-hutson>`, March 21, 2019)
 
 .. container:: note-item
 

@@ -13,6 +13,8 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    intersect_lines,
+    point_from_barycentrics,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -22,13 +24,13 @@ def construct_x_00754(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(754) = EVEN (0, 4) INFINITY POINT on reference triangle ABC."""
-    X_754 = eval_trilinear_point(model, A, B, C, 'a**(-1)*(b**(4)+ c**(4)) - a**(3)*(b**(0)+ c**(0))', ID="X(754)", classes=["selected", "target"])
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
-    X_32 = eval_trilinear_point(model, A, B, C, 'a**(3)', ID="X(32)", classes=["center", "incident"])
-    central_line(model, X_2, X_32, 2, 32, incident=True)
-    X_115 = eval_trilinear_point(model, A, B, C, 'b*c*(b**(2) - c**(2))**(2)', ID="X(115)", classes=["center", "incident"])
-    X_316 = eval_trilinear_point(model, A, B, C, 'b*c*(b**(4)+ c**(4)- a**(4)- b**(2)*c**(2))', ID="X(316)", classes=["center", "incident"])
-    central_line(model, X_115, X_316, 115, 316, incident=True)
+    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
+    X_32 = eval_trilinear_point(model, A, B, C, 'a**(3)', ID="X(32)", classes=["center"])
+    X_115 = eval_trilinear_point(model, A, B, C, 'b*c*(b**(2) - c**(2))**(2)', ID="X(115)", classes=["center"])
+    X_316 = point_from_barycentrics(model, A, B, C, 3.0207852, 1.1662818, -3.187067, ID="X(316)", classes=["center"])
+    central_line(model, X_2, X_32, 2, 32)
+    central_line(model, X_115, X_316, 115, 316)
+    X_754 = intersect_lines(model, X_2, X_32, X_115, X_316, ID="X(754)", classes=["selected", "target"])
     X_187 = eval_trilinear_point(model, A, B, C, 'a*(2*a**(2) - b**(2) - c**(2))', ID="X(187)", classes=["center", "incident"])
     X_325 = eval_trilinear_point(model, A, B, C, 'b*c*(b**(4) + c**(4) - a**(2)*b**(2) - a**(2)*c**(2))', ID="X(325)", classes=["center", "incident"])
     central_line(model, X_187, X_325, 187, 325, incident=True)

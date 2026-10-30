@@ -12,7 +12,7 @@ X(968) = POINT ALDERAMIN — Code
    :alt: X(968) = POINT ALDERAMIN
    :align: center
 
-   **X(968) = POINT ALDERAMIN** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(968) = POINT ALDERAMIN** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

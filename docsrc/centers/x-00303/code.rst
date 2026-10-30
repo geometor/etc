@@ -12,7 +12,7 @@ X(303) = ISOTOMIC CONJUGATE OF 2nd NAPOLEON POINT — Code
    :alt: X(303) = ISOTOMIC CONJUGATE OF 2nd NAPOLEON POINT
    :align: center
 
-   **X(303) = ISOTOMIC CONJUGATE OF 2nd NAPOLEON POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(303) = ISOTOMIC CONJUGATE OF 2nd NAPOLEON POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

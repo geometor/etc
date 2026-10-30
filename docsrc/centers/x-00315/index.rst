@@ -16,17 +16,13 @@ X(315) = ISOTOMIC CONJUGATE OF X(66)
    :alt: X(315) = ISOTOMIC CONJUGATE OF X(66)
    :align: center
 
-   **X(315) = ISOTOMIC CONJUGATE OF X(66)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(315) = ISOTOMIC CONJUGATE OF X(66)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`bc(b^{4} + c^{4} - a^{4}) : ca(c^{4} + a^{4} - b^{4}) : ab(a^{4} + b^{4} - c^{4})`
    | **Barycentrics:** :math:`b^{4} + c^{4} - a^{4} : c^{4} + a^{4} - b^{4} : a^{4} + b^{4} - c^{4}`
    | **Search Value (6, 9, 13):** :math:`7.326681485094`
-
-.. container:: note-item
-
-   :ref:`X(315) <X(315)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 15 lines

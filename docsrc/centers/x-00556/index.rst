@@ -16,17 +16,13 @@ X(556) = (X(1),X(75))-ANSWER TO QUESTION A
    :alt: X(556) = (X(1),X(75))-ANSWER TO QUESTION A
    :align: center
 
-   **X(556) = (X(1),X(75))-ANSWER TO QUESTION A** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(556) = (X(1),X(75))-ANSWER TO QUESTION A** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`\csc A \csc A/2 : \csc B \csc B/2 : \csc C \csc C/2`
    | **Barycentrics:** :math:`\csc A/2 : \csc B/2 : \csc C/2`
    | **Search Value (6, 9, 13):** :math:`4.183141797943`
-
-.. container:: note-item
-
-   :ref:`X(556) <X(556)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines

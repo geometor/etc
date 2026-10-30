@@ -16,7 +16,7 @@ X(34) = X(4)-BETH CONJUGATE OF X(4)
    :alt: X(34) = X(4)-BETH CONJUGATE OF X(4)
    :align: center
 
-   **X(34) = X(4)-BETH CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(34) = X(4)-BETH CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -36,11 +36,7 @@ X(34) = X(4)-BETH CONJUGATE OF X(4)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(34) <X(34)>` = (r + 2R - s)(r + 2R + s)\*\ :ref:`X(1) <X(1)>` + 6rR\*\ :ref:`X(2) <X(2)>` - 4rR\*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-
-.. container:: note-item
-
-   :ref:`X(34) <X(34)>` lies.
+   * :ref:`X(34) <X(34)>` = :math:`(r + 2R - s)(r + 2R + s)` :ref:`X(1) <X(1)>` + :math:`6rR` :ref:`X(2) <X(2)>` - :math:`4rR` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. collapse:: Incident Central Lines
    :badge: 31 lines
@@ -63,10 +59,10 @@ X(34) = X(4)-BETH CONJUGATE OF X(4)
    * :ref:`X(34) <X(34)>` = :term:`trilinear pole <trilinear-pole>` of polar of :ref:`X(312) <X(312)>` wrt polar circle (line :ref:`X(649) <X(649)>`\ X(4017))
    * :ref:`X(34) <X(34)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(312) <X(312)>` (line :ref:`X(522) <X(522)>`\ X(3717))
    * :ref:`X(34) <X(34)>` = polar conjugate of :ref:`X(312) <X(312)>`
-   * :ref:`X(34) <X(34)>` = perspector of ABC and extraversion triangle of :ref:`X(33) <X(33)>`
+   * :ref:`X(34) <X(34)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(33) <X(33)>`
    * :ref:`X(34) <X(34)>` = homothetic center of intangents triangle and reflection of orthic triangle in :ref:`X(4) <X(4)>`
    * :ref:`X(34) <X(34)>` = homothetic center of orthic triangle and anti-tangential midarc triangle
-   * :ref:`X(34) <X(34)>` = X(8078)-of-orthic-triangle if ABC is acute
+   * :ref:`X(34) <X(34)>` = X(8078)-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(34) <X(34)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`221 <X(221)>`), (:ref:`4 <X(4)>`, :ref:`4 <X(4)>`), (:ref:`28 <X(28)>`, :ref:`34 <X(34)>`), (:ref:`29 <X(29)>`, :ref:`1 <X(1)>`), (:ref:`107 <X(107)>`, :ref:`158 <X(158)>`), (:ref:`108 <X(108)>`, :ref:`34 <X(34)>`), (:ref:`110 <X(110)>`, :ref:`47 <X(47)>`), (:ref:`162 <X(162)>`, :ref:`34 <X(34)>`), (:ref:`811 <X(811)>`, :ref:`34 <X(34)>`)
    * :ref:`X(34) <X(34)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these {i,j}: {:ref:`1 <X(1)>`, :ref:`78 <X(78)>`}, {:ref:`31 <X(31)>`, 3718}, {:ref:`48 <X(48)>`, :ref:`312 <X(312)>`}
 

@@ -10,22 +10,24 @@ X(273) = ISOGONAL CONJUGATE OF X(212)
 
 .. enunciation::
 
-   Barycentrics tan A sec\ :sup:`2`\ (A/2) : tan B sec\ :sup:`2`\ (B/2) : tan C sec\ :sup:`2`\ (C/2)
+   :ref:`X(273) <X(273)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(212) <X(212)>`
 
 .. figure:: x-00273.svg
    :alt: X(273) = ISOGONAL CONJUGATE OF X(212)
    :align: center
 
-   **X(273) = ISOGONAL CONJUGATE OF X(212)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(273) = ISOGONAL CONJUGATE OF X(212)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\sec A \sec^{2}(A/2) : \sec B \sec^{2}(B/2) : \sec C \sec^{2}(C/2), = (1- \sec A)\csc^{2}A : (1 - \sec B)\csc^{2}B : (1 - \sec C)\csc^{2}C`
+   | **Trilinears:** :math:`\sec A \sec^{2}(A/2) : \sec B \sec^{2}(B/2) : \sec C \sec^{2}(C/2)`
+   | **Barycentrics:** :math:`\tan A \sec^{2}(A/2) : \tan B \sec^{2}(B/2) : \tan C \sec^{2}(C/2)`
    | **Search Value (6, 9, 13):** :math:`-0.638485277316`
 
-.. container:: note-item
+.. collapse:: Alternate Coordinates
+   :badge: 1 form
 
-   :ref:`X(273) <X(273)>` lies.
+   * **Trilinears:** :math:`(1- \sec A)\csc^{2} A : (1 - \sec B)\csc^{2} B : (1 - \sec C)\csc^{2} C`
 
 .. collapse:: Incident Central Lines
    :badge: 14 lines
@@ -36,7 +38,7 @@ X(273) = ISOGONAL CONJUGATE OF X(212)
 .. collapse:: Functional Relations
    :badge: 8 relations
 
-   * :ref:`X(273) <X(273)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(212) <X(212)>`
+   * :ref:`X(273) <X(273)>` = isogonal conjugate of :ref:`X(212) <X(212)>`
    * :ref:`X(273) <X(273)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(78) <X(78)>`
    * :ref:`X(273) <X(273)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`264 <X(264)>`, :ref:`342 <X(342)>`), (:ref:`286 <X(286)>`, :ref:`7 <X(7)>`), (:ref:`331 <X(331)>`, :ref:`92 <X(92)>`)
    * :ref:`X(273) <X(273)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these (i,j): (:ref:`4 <X(4)>`, :ref:`278 <X(278)>`), (:ref:`34 <X(34)>`, :ref:`57 <X(57)>`)

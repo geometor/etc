@@ -12,6 +12,7 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    intersect_lines,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -21,13 +22,13 @@ def construct_x_00824(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(824) = ODD (0, 3) INFINITY POINT on reference triangle ABC."""
-    X_824 = eval_trilinear_point(model, A, B, C, 'a**(-1)*(b**(3)- c**(3)) + a**(2)*(b**(0)- c**(0))', ID="X(824)", classes=["selected", "target"])
-    X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X(30)", classes=["center", "incident"])
-    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X(511)", classes=["center", "incident"])
-    central_line(model, X_30, X_511, 30, 511, incident=True)
-    X_321 = eval_trilinear_point(model, A, B, C, '(b + c)*b**(2)*c**(2)', ID="X(321)", classes=["center", "incident"])
-    X_693 = eval_trilinear_point(model, A, B, C, '(b - c)/a**(2)', ID="X(693)", classes=["center", "incident"])
-    central_line(model, X_321, X_693, 321, 693, incident=True)
+    X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X(30)", classes=["center"])
+    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X(511)", classes=["center"])
+    X_321 = eval_trilinear_point(model, A, B, C, '(b + c)*b**(2)*c**(2)', ID="X(321)", classes=["center"])
+    X_693 = eval_trilinear_point(model, A, B, C, '(b - c)/a**(2)', ID="X(693)", classes=["center"])
+    central_line(model, X_30, X_511, 30, 511)
+    central_line(model, X_321, X_693, 321, 693)
+    X_824 = intersect_lines(model, X_30, X_511, X_321, X_693, ID="X(824)", classes=["selected", "target"])
     return promote_point_to_top(model, X_824)
 
 

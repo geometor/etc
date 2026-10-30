@@ -16,7 +16,7 @@ X(526) = ISOGONAL CONJUGATE OF X(476)
    :alt: X(526) = ISOGONAL CONJUGATE OF X(476)
    :align: center
 
-   **X(526) = ISOGONAL CONJUGATE OF X(476)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(526) = ISOGONAL CONJUGATE OF X(476)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -26,10 +26,6 @@ X(526) = ISOGONAL CONJUGATE OF X(476)
    :badge: 1 form
 
    * **Trilinears:** a(b^2 - c^2)[(b^2 + c^2 - a^2)^2 - b^2c^2] : :, As the isogonal conjugate of a point on the circumcircle, :ref:`X(526) <X(526)>` lies on the line at infinity.
-
-.. container:: note-item
-
-   :ref:`X(526) <X(526)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 10 lines
@@ -49,7 +45,7 @@ X(526) = ISOGONAL CONJUGATE OF X(476)
    * :ref:`X(526) <X(526)>` = :term:`crosssum <crosssum>` of :ref:`X(30) <X(30)>` and :ref:`X(523) <X(523)>`
    * :ref:`X(526) <X(526)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(6) <X(6)>`\ \ :ref:`X(13) <X(13)>`
    * :ref:`X(526) <X(526)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these (i,j): (:ref:`49 <X(49)>`, 2166), (:ref:`265 <X(265)>`, 2964)
-   * :ref:`X(526) <X(526)>` = perspector of hyperbola {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(15) <X(15)>`,\ :ref:`X(16) <X(16)>`}}
+   * :ref:`X(526) <X(526)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(15) <X(15)>`,\ :ref:`X(16) <X(16)>`}}
    * :ref:`X(526) <X(526)>` = intersection of :term:`trilinear polars <trilinear-polar>` of :ref:`X(2) <X(2)>`, :ref:`X(15) <X(15)>`, and :ref:`X(16) <X(16)>`
    * :ref:`X(526) <X(526)>` = :term:`trilinear pole <trilinear-pole>` of line of: X(2088), tripolar centroid of :ref:`X(15) <X(15)>`, tripolar centroid of :ref:`X(16) <X(16)>`
    * :ref:`X(526) <X(526)>` = :ref:`X(523) <X(523)>`-of-orthocentroidal-triangle

@@ -10,28 +10,24 @@ X(425) = X(4)-HIRST INVERSE OF X(21)
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(425) <X(425)>` has Shinagawa coefficients ((E-2F)\ :sup:`2`\ FS\ :sup:`2`\ +$abS\ :sub:`A`\ S\ :sub:`B`\ $(2E-7F)F +3$ab$F\ :sup:`2`\ S\ :sup:`2`, (E-2F)[(E+F)F- S\ :sup:`2`]S\ :sup:`2` +3$abS\ :sub:`A`\ S\ :sub:`B`\ $[3(E+F)F-2S\ :sup:`2`]-$ab$(E+F)FS\ :sup:`2`).
+   As a point on the Euler line, :ref:`X(425) <X(425)>` has Shinagawa coefficients :math:`((E-2F)^{2}FS^{2}+\$abS_{A}S_{B}\$(2E-7F)F +3\$ab\$F^{2}S^{2}, (E-2F)[(E+F)F- S^{2}]S^{2} +3\$abS_{A}S_{B}\$[3(E+F)F-2S^{2}]-\$ab\$(E+F)FS^{2})`.
 
 .. figure:: x-00425.svg
    :alt: X(425) = X(4)-HIRST INVERSE OF X(21)
    :align: center
 
-   **X(425) = X(4)-HIRST INVERSE OF X(21)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(425) = X(4)-HIRST INVERSE OF X(21)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(u^{2} - vw)\sec A : (v^{2} - wu)\sec B : (v^{2} - uv)\sec C`, where, u : v : w = :ref:`X(283) <X(283)>`; e.g., u = u(A,B,C) = (cos A)/(cos B + cos C)
+   | **Trilinears:** :math:`(u^{2} - vw)\sec A : (v^{2} - wu)\sec B : (v^{2} - uv)\sec C`, where :math:`u : v : w` = :ref:`X(283) <X(283)>`; e.g., :math:`u = u(A,B,C) = (\cos A)/(\cos B + \cos C)`
    | **Barycentrics:** :math:`(u^{2} - vw)\tan A : (v^{2} - wu)\tan B : (w^{2} - uv)\tan C`
    | **Search Value (6, 9, 13):** :math:`1.875882662069`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`(a + b)*(a + c)*(a^2 + b^2 - c^2)*(a^2 - b^2 + c^2)*(a^6 - a^5*b - a^4*b^2 + a^3*b^3 - a^5*c + a^4*b*c + a^3*b^2*c - b^5*c - a^4*c^2 + a^3*b*c^2 + 2*a^2*b^2*c^2 - 2*a*b^3*c^2 + a^3*c^3 - 2*a*b^2*c^3 + 2*b^3*c^3 - b*c^5) : :`
-
-.. container:: note-item
-
-   :ref:`X(425) <X(425)>` lies.
+   * **Barycentrics:** :math:`(a + b) \cdot (a + c) \cdot (a^{2} + b^{2} - c^{2}) \cdot (a^{2} - b^{2} + c^{2}) \cdot (a^{6} - a^{5} b - a^{4} b^{2} + a^{3} b^{3} - a^{5} c + a^{4} b c + a^{3} b^{2} c - b^{5} c - a^{4} c^{2} + a^{3} b c^{2} + 2 a^{2} b^{2} c^{2} - 2 a b^{3} c^{2} + a^{3} c^{3} - 2 a b^{2} c^{3} + 2 b^{3} c^{3} - b c^{5}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines

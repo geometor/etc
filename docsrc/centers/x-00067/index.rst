@@ -10,23 +10,19 @@ X(67) = ISOGONAL CONJUGATE OF X(23)
 
 .. enunciation::
 
-   Let A' be the reflection in BC of the A-vertex of the :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(6) <X(6)>`, and define B' and C' cyclically. The circumcircles of A'BC, B'CA, C'AB concur at :ref:`X(67) <X(67)>`. Also, let A' be the reflection of :ref:`X(6) <X(6)>` in BC, and define B' and C' cyclically. The circumcircles of A'BC, B'CA, C'AB concur in :ref:`X(67) <X(67)>`. Note: the above 2 sets of circumcircles are identical. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
+   Let :g:`A' <A'>` be the reflection in :g:`BC <[ B C ]>` of the :g:`A <A>`-vertex of the :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(6) <X(6)>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The circumcircles of :g:`A'BC << A' B C >>`, :g:`B'CA << B' C A >>`, :g:`C'AB << C' A B >>` concur at :ref:`X(67) <X(67)>`. Also, let :g:`A' <A'>` be the reflection of :ref:`X(6) <X(6)>` in :g:`BC <[ B C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The circumcircles of :g:`A'BC << A' B C >>`, :g:`B'CA << B' C A >>`, :g:`C'AB << C' A B >>` concur in :ref:`X(67) <X(67)>`. Note: the above 2 sets of circumcircles are identical. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
 
 .. figure:: x-00067.svg
    :alt: X(67) = ISOGONAL CONJUGATE OF X(23)
    :align: center
 
-   **X(67) = ISOGONAL CONJUGATE OF X(23)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(67) = ISOGONAL CONJUGATE OF X(23)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`bc/(b^{4} + c^{4} - a^{4} - b^{2}c^{2}) : :`
    | **Barycentrics:** :math:`1/(b^{4} + c^{4} - a^{4} - b^{2}c^{2}) : :`
    | **Search Value (6, 9, 13):** :math:`5.987634908299`
-
-.. container:: note-item
-
-   :ref:`X(67) <X(67)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 10 lines
@@ -50,7 +46,7 @@ X(67) = ISOGONAL CONJUGATE OF X(23)
    * :ref:`X(67) <X(67)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X(37765) (line X(9517)X(9979))
    * :ref:`X(67) <X(67)>` = :ref:`X(63) <X(63)>`-:term:`isoconjugate <isoconjugate>` of X(8744)
    * :ref:`X(67) <X(67)>` = orthocenter of :ref:`X(3) <X(3)>`\ \ :ref:`X(74) <X(74)>`\ \ :ref:`X(879) <X(879)>`
-   * :ref:`X(67) <X(67)>` = perspector of ABC and :ref:`X(2) <X(2)>`-Ehrmann triangle; see :ref:`X(25) <X(25)>`
+   * :ref:`X(67) <X(67)>` = perspector of :g:`ABC << A B C >>` and :ref:`X(2) <X(2)>`-Ehrmann triangle; see :ref:`X(25) <X(25)>`
    * :ref:`X(67) <X(67)>` = :ref:`X(19) <X(19)>`-isoconjugate of X(22151)
 
 .. toctree::

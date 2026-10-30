@@ -16,11 +16,11 @@ X(767) = EVEN (3, 4) CIRCUMCIRCLE POINT
    :alt: X(767) = EVEN (3, 4) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(767) = EVEN (3, 4) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(767) = EVEN (3, 4) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = 1/[a\ :sup:`2`\ (b\ :sup:`4` + c\ :sup:`4`) - a\ :sup:`3`\ (b\ :sup:`3` + c\ :sup:`3`)]
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = 1/[a^{2}(b^{4} + c^{4}) - a^{3}(b^{3} + c^{3})]`
    | **Search Value (6, 9, 13):** :math:`12.979818853253`
 
 .. container:: note-item

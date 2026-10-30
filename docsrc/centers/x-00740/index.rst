@@ -16,16 +16,12 @@ X(740) = EVEN (- 1, 1) INFINITY POINT
    :alt: X(740) = EVEN (- 1, 1) INFINITY POINT
    :align: center
 
-   **X(740) = EVEN (- 1, 1) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(740) = EVEN (- 1, 1) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`a ^{-2}(b^{1} + c^{1}) - a^{0}(b ^{-1} + c ^{-1}) : :`
-   | **Barycentrics:** :math:`(a^2 - b c) (b + c) : :`
-
-.. container:: note-item
-
-   :ref:`X(740) <X(740)>` lies.
+   | **Barycentrics:** :math:`(a^{2} - b c) (b + c) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines
@@ -51,7 +47,7 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the outer Garcia triangle and A″B″C″ the inner Garcia triangle. :ref:`X(740) <X(740)>` is the radical center of the circumcircles of AA'A″, BB'B″, CC'C″. (:person:`Randy Hutson <randy-hutson>`, January 29, 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the outer Garcia triangle and :g:`A″B″C″ << A″ B″ C″ >>` the inner Garcia triangle. :ref:`X(740) <X(740)>` is the radical center of the circumcircles of :g:`AA'A″ << A A' A″ >>`, :g:`BB'B″ << B B' B″ >>`, :g:`CC'C″ << C C' C″ >>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2018)
 
 .. toctree::
    :hidden:

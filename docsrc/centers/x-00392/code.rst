@@ -12,7 +12,7 @@ X(392) = X(1,6)∩X(10,11) — Code
    :alt: X(392) = X(1,6)∩X(10,11)
    :align: center
 
-   **X(392) = X(1,6)∩X(10,11)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(392) = X(1,6)∩X(10,11)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

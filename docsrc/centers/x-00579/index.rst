@@ -10,27 +10,24 @@ X(579) = HARMONIC OF X(284)
 
 .. enunciation::
 
-   Barycentrics af(a,b,c) : bf(b,c,a) : cf(c,a,b)
+   :ref:`X(579) <X(579)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(1751)
 
 .. figure:: x-00579.svg
    :alt: X(579) = HARMONIC OF X(284)
    :align: center
 
-   **X(579) = HARMONIC OF X(284)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(579) = HARMONIC OF X(284)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = a(a\ :sup:`2`\ b + a\ :sup:`2`\ c + abc - b\ :sup:`3` - c\ :sup:`3`) (M.Iliev, 5/13/07)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a(a^{2}b + a^{2}c + abc - b^{3} - c^{3})` (M.Iliev, 5/13/07)
+   | **Barycentrics:** :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
    | **Search Value (6, 9, 13):** :math:`-1.263414547670`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(579) <X(579)>` = s\*\ :ref:`X(3) <X(3)>` - (r + 2R)\*cot(ω)\*\ :ref:`X(6) <X(6)>`
-
-.. container:: note-item
-
-   :ref:`X(579) <X(579)>` lies.
+   * :ref:`X(579) <X(579)>` = :math:`s` :ref:`X(3) <X(3)>` - :math:`(r + 2R) \cot(\omega )` :ref:`X(6) <X(6)>`
 
 .. collapse:: Incident Central Lines
    :badge: 14 lines
@@ -41,7 +38,7 @@ X(579) = HARMONIC OF X(284)
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X(579) <X(579)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(1751)
+   * :ref:`X(579) <X(579)>` = isogonal conjugate of X(1751)
    * :ref:`X(579) <X(579)>` = :ref:`X(27) <X(27)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(1) <X(1)>`
    * :ref:`X(579) <X(579)>` = :term:`crosssum <crosssum>` of :ref:`X(11) <X(11)>` and :ref:`X(652) <X(652)>`
    * :ref:`X(579) <X(579)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(523) <X(523)>`\ \ :ref:`X(663) <X(663)>`

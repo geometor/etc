@@ -12,7 +12,7 @@ X(300) = ISOTOMIC CONJUGATE OF 1st ISODYNAMIC CENTER — Code
    :alt: X(300) = ISOTOMIC CONJUGATE OF 1st ISODYNAMIC CENTER
    :align: center
 
-   **X(300) = ISOTOMIC CONJUGATE OF 1st ISODYNAMIC CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(300) = ISOTOMIC CONJUGATE OF 1st ISODYNAMIC CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

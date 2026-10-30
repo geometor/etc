@@ -16,16 +16,12 @@ X(888) = ISOTOMIC CONJUGATE OF X(886)
    :alt: X(888) = ISOTOMIC CONJUGATE OF X(886)
    :align: center
 
-   **X(888) = ISOTOMIC CONJUGATE OF X(886)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(888) = ISOTOMIC CONJUGATE OF X(886)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`u(bv - cw)/(a^{2}u^{2} - bcvw) : :`, where u : v : w = :ref:`X(512) <X(512)>`
-   | **Barycentrics:** :math:`a^2(b^2 - c^2)(a^2b^2 + a^2c^2 - 2b^2c^2) : :`
-
-.. container:: note-item
-
-   :ref:`X(888) <X(888)>` lies.
+   | **Trilinears:** :math:`u(bv - cw)/(a^{2}u^{2} - bcvw) : :`, where :math:`u : v : w` = :ref:`X(512) <X(512)>`
+   | **Barycentrics:** :math:`a^{2}(b^{2} - c^{2})(a^{2}b^{2} + a^{2}c^{2} - 2b^{2}c^{2}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines
@@ -42,7 +38,7 @@ X(888) = ISOTOMIC CONJUGATE OF X(886)
    * :ref:`X(888) <X(888)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(6) <X(6)>`\ \ :ref:`X(99) <X(99)>`
    * :ref:`X(888) <X(888)>` = ideal point of PU(105)
    * :ref:`X(888) <X(888)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(39010)
-   * :ref:`X(888) <X(888)>` = perspector of hyperbola {A,B,C,\ :ref:`X(2) <X(2)>`,\ :ref:`X(512) <X(512)>`}}
+   * :ref:`X(888) <X(888)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(512) <X(512)>`}}
    * :ref:`X(888) <X(888)>` = barycentric square root of X(39010)
 
 .. toctree::

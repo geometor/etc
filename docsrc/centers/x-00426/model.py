@@ -23,7 +23,7 @@ def construct_x_00426(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(426) = EULER X(19)-4th-SUBSTITUTION POINT on reference triangle ABC."""
-    X_426 = eval_barycentric_point(model, A, B, C, '(a + b)*(a + c)*(a**(2) + b**(2) - c**(2))*(a**(2) - b**(2) + c**(2))*(a**(6) - a**(5)*b - a**(4)*b**(2) + a**(3)*b**(3) - a**(5)*c + a**(4)*b*c + a**(3)*b**(2)*c - b**(5)*c - a**(4)*c**(2) + a**(3)*b*c**(2) + 2*a**(2)*b**(2)*c**(2) - 2*a*b**(3)*c**(2) + a**(3)*c**(3) - 2*a*b**(2)*c**(3) + 2*b**(3)*c**(3) - b*c**(5))', ID="X(426)", classes=["selected", "target"])
+    X_426 = eval_barycentric_point(model, A, B, C, 'a**(2)*(a**(2) - b**(2) - c**(2))**(3)*(a**(4) + b**(4) - 2*b**(2)*c**(2) + c**(4))', ID="X(426)", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)

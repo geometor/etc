@@ -25,7 +25,7 @@ def construct_x_00268(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(268) = ISOGONAL CONJUGATE OF X(196) on reference triangle ABC."""
-    X_196 = eval_trilinear_point(model, A, B, C, '(cos(B) + cos(C) - cos(A) - 1)*sec(A)*tan(A/2)', ID="X(196)", classes=["center"])
+    X_196 = point_from_barycentrics(model, A, B, C, 0.56369983, 0.76788831, -0.33158813, ID="X(196)", classes=["center"])
     X_268 = isogonal_conjugate(model, A, B, C, X_196, ID="X(268)", classes=["selected", "target"])
     X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
     X_9 = mittenpunkt_of(model, A, B, C, ID="X(9)", classes=["center", "incident"])

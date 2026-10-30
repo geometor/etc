@@ -12,6 +12,7 @@ from geometor.etc.ops import (
     centroid_of,
     construct_baseline_triangle,
     create_model,
+    eval_barycentric_point,
     eval_trilinear_point,
     promote_point_to_top,
 )
@@ -22,7 +23,7 @@ def construct_x_00716(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(716) = EVEN (- 3, 0) INFINITY POINT on reference triangle ABC."""
-    X_716 = eval_trilinear_point(model, A, B, C, 'a**(-4)*(b**(0)+ c**(0)) - a**(-1)*(b**(-3)+ c**(-3))', ID="X(716)", classes=["selected", "target"])
+    X_716 = eval_barycentric_point(model, A, B, C, 'a**(3)*b**(3) + a**(3)*c**(3) - 2*b**(3)*c**(3)', ID="X(716)", classes=["selected", "target"])
     X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X(30)", classes=["center", "incident"])
     X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X(511)", classes=["center", "incident"])
     central_line(model, X_30, X_511, 30, 511, incident=True)

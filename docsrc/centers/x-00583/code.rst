@@ -6,13 +6,13 @@ X(583) = ORTHOGONAL OF X(500) — Code
 
 .. enunciation::
 
-   Barycentrics af(a,b,c) : bf(b,c,a) : cf(c,a,b)
+   :ref:`X(583) <X(583)>` = inverse-in-Brocard-circle of :ref:`X(584) <X(584)>`
 
 .. figure:: x-00583.svg
    :alt: X(583) = ORTHOGONAL OF X(500)
    :align: center
 
-   **X(583) = ORTHOGONAL OF X(500)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(583) = ORTHOGONAL OF X(500)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

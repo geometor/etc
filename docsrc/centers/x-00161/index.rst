@@ -10,22 +10,19 @@ X(161) = X(63)-OF-TANGENTIAL-TRIANGLE
 
 .. enunciation::
 
-   Barycentrics g(a,b,c) : g(b,c,a) : g(c,a,b), where g(a,b,c) = af(a,b,c)
+   :ref:`X(161) <X(161)>` = :ref:`X(63) <X(63)>`-of-:term:`tangential triangle <tangential-triangle>` if :g:`ABC << A B C >>` is acute
 
 .. figure:: x-00161.svg
    :alt: X(161) = X(63)-OF-TANGENTIAL-TRIANGLE
    :align: center
 
-   **X(161) = X(63)-OF-TANGENTIAL-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(161) = X(63)-OF-TANGENTIAL-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where, f(a,b,c) = a[(a\ :sup:`2` + b\ :sup:`2` + c\ :sup:`2`)sin\ :sup:`2`\ (2A) + (c\ :sup:`2` - b\ :sup:`2` - a\ :sup:`2`)sin\ :sup:`2`\ (2B) + (b\ :sup:`2` - c\ :sup:`2` - a\ :sup:`2`)sin\ :sup:`2`\ (2C)]
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a[(a^{2} + b^{2} + c^{2})\sin^{2}(2A) + (c^{2} - b^{2} - a^{2})\sin^{2}(2B) + (b^{2} - c^{2} - a^{2})\sin^{2}(2C)]`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`6.599863926710`
-
-.. container:: note-item
-
-   :ref:`X(161) <X(161)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines
@@ -36,7 +33,7 @@ X(161) = X(63)-OF-TANGENTIAL-TRIANGLE
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(161) <X(161)>` = :ref:`X(63) <X(63)>`-of-:term:`tangential triangle <tangential-triangle>` if ABC is acute
+   * :ref:`X(161) <X(161)>` = :ref:`X(63) <X(63)>`-of-tangential triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(161) <X(161)>` = :ref:`X(68) <X(68)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(6) <X(6)>`
 
 .. toctree::

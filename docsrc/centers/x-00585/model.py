@@ -13,6 +13,7 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     nagel_point_of,
+    point_from_barycentrics,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -22,7 +23,7 @@ def construct_x_00585(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(585) = 1st CONGRUENT SHRUNK INSQUARES POINT on reference triangle ABC."""
-    X_585 = eval_trilinear_point(model, A, B, C, '(2*area*(1/b + 1/c - 1/a) + b + c - a)/a', ID="X(585)", classes=["selected", "target"])
+    X_585 = point_from_barycentrics(model, A, B, C, 0.32969886, 0.33956386, 0.33073728, ID="X(585)", classes=["selected", "target"])
     X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center", "incident"])
     X_192 = eval_trilinear_point(model, A, B, C, 'b*c*(c*a + a*b - b*c)', ID="X(192)", classes=["center", "incident"])
     central_line(model, X_8, X_192, 8, 192, incident=True)

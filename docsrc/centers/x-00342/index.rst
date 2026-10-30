@@ -16,17 +16,13 @@ X(342) = ISOTOMIC CONJUGATE OF X(271)
    :alt: X(342) = ISOTOMIC CONJUGATE OF X(271)
    :align: center
 
-   **X(342) = ISOTOMIC CONJUGATE OF X(271)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(342) = ISOTOMIC CONJUGATE OF X(271)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = (csc 2A tan A/2)(1 + cos A - cos B - cos C)
-   | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where g(A,B,C) = (sec A tan A/2)(1 + cos A - cos B - cos C)
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = (\csc 2A \tan A/2)(1 + \cos A - \cos B - \cos C)`
+   | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where :math:`g(A,B,C) = (\sec A \tan A/2)(1 + \cos A - \cos B - \cos C)`
    | **Search Value (6, 9, 13):** :math:`0.568818365298`
-
-.. container:: note-item
-
-   :ref:`X(342) <X(342)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines

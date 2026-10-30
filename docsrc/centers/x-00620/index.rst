@@ -10,13 +10,13 @@ X(620) = MIDPOINT OF X(618) AND X(619)
 
 .. enunciation::
 
-   Let S = :ref:`X(99) <X(99)>`. Let A' be the centroid of the triangle BCS, and define B' and C' cyclically. Let D' be the centroid of ABC. The four centroids form a quadrilateral homothetic to the quadrilateral ABCS. The center of homothety is :ref:`X(620) <X(620)>`, which is the centroid of ABCS. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   Let S = :ref:`X(99) <X(99)>`. Let :g:`A' <A'>` be the centroid of the triangle :g:`BCS << B C S >>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Let :g:`D' <D'>` be the centroid of :g:`ABC << A B C >>`. The four centroids form a quadrilateral homothetic to the quadrilateral ABCS. The center of homothety is :ref:`X(620) <X(620)>`, which is the centroid of ABCS. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. figure:: x-00620.svg
    :alt: X(620) = MIDPOINT OF X(618) AND X(619)
    :align: center
 
-   **X(620) = MIDPOINT OF X(618) AND X(619)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(620) = MIDPOINT OF X(618) AND X(619)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -26,11 +26,7 @@ X(620) = MIDPOINT OF X(618) AND X(619)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(620) <X(620)>` = 3\*\ :ref:`X(2) <X(2)>` + :ref:`X(99) <X(99)>`
-
-.. container:: note-item
-
-   :ref:`X(620) <X(620)>` lies.
+   * :ref:`X(620) <X(620)>` = :math:`3` :ref:`X(2) <X(2)>` + :ref:`X(99) <X(99)>`
 
 .. collapse:: Incident Central Lines
    :badge: 7 lines
@@ -51,14 +47,14 @@ X(620) = MIDPOINT OF X(618) AND X(619)
    * :ref:`X(620) <X(620)>` = centroid of :ref:`X(2) <X(2)>`\ \ :ref:`X(3) <X(3)>`\ \ :ref:`X(114) <X(114)>`\ X(2482)
    * :ref:`X(620) <X(620)>` = Kosnita(:ref:`X(99) <X(99)>`,\ :ref:`X(2) <X(2)>`) point
    * :ref:`X(620) <X(620)>` = :term:`crosssum <crosssum>` of intersections of 1st and 2nd Lemoine circles (and the circle {X(1687),X(1688),PU(1),PU(2)}})
-   * :ref:`X(620) <X(620)>` = QA-P29 center (Complement of QA-P2 wrt the Diagonal triangle) of quadrangle ABC\ :ref:`X(2) <X(2)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/57-qa-p29.html)
+   * :ref:`X(620) <X(620)>` = :g:`QA <[ Q A ]>`-P29 center (Complement of :g:`QA <[ Q A ]>`-:g:`P_{2} <P_2>` wrt the Diagonal triangle) of quadrangle :g:`ABC << A B C >>`\ :ref:`X(2) <X(2)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/57-qa-p29.html)
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let A'B'C' and A″B″C″ be the (equilateral) :term:`antipedal triangles <antipedal-triangle>` of :ref:`X(13) <X(13)>` and :ref:`X(14) <X(14)>`, resp. Let A\* be the midpoint of A' and A″, and define B\* and C\* cyclically. The triangle A\*B\*C\* is homothetic to ABC, and the center of homothety is :ref:`X(620) <X(620)>`. (Randy Hutson, February 10, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>` be the (equilateral) :term:`antipedal triangles <antipedal-triangle>` of :ref:`X(13) <X(13)>` and :ref:`X(14) <X(14)>`, resp. Let :g:`A* <A*>` be the midpoint of :g:`A' <A'>` and :g:`A″ <A″>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The triangle :g:`A*B*C* << A* B* C* >>` is homothetic to :g:`ABC << A B C >>`, and the center of homothety is :ref:`X(620) <X(620)>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 

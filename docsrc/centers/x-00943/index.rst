@@ -16,17 +16,13 @@ X(943) = ISOGONAL CONJUGATE OF X(942)
    :alt: X(943) = ISOGONAL CONJUGATE OF X(942)
    :align: center
 
-   **X(943) = ISOGONAL CONJUGATE OF X(942)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(943) = ISOGONAL CONJUGATE OF X(942)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = 1/[2abc + (b + c)(a - b + c)(a + b - c)]
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = 1/[2abc + (b + c)(a - b + c)(a + b - c)]`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`2.303063519133`
-
-.. container:: note-item
-
-   :ref:`X(943) <X(943)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 12 lines

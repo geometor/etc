@@ -16,12 +16,12 @@ X(828) = CROSSPOINT OF X(2) AND X(255)
    :alt: X(828) = CROSSPOINT OF X(2) AND X(255)
    :align: center
 
-   **X(828) = CROSSPOINT OF X(2) AND X(255)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(828) = CROSSPOINT OF X(2) AND X(255)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = sin C sec\ :sup:`2`\ B + sin B sec\ :sup:`2`\ C
-   | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where g(A,B,C) = sin A f(A,B,C)
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = \sin C \sec^{2} B + \sin B \sec^{2} C`
+   | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where :math:`g(A,B,C) = \sin A f(A,B,C)`
    | **Search Value (6, 9, 13):** :math:`2.832303021334`
 
 .. collapse:: Functional Relations

@@ -10,22 +10,18 @@ X(984) = MIDPOINT OF X(8) AND X(192)
 
 .. enunciation::
 
-   Let A\ :sub:`15`\ B\ :sub:`15`\ C\ :sub:`15` and A\ :sub:`16`\ B\ :sub:`16`\ C\ :sub:`16` be Gemini triangles 15 and 16, resp. Let L\ :sub:`A` be the tangent at A to conic {A,B\ :sub:`15`,C\ :sub:`15`,B\ :sub:`16`,C\ :sub:`16`}}, and define L\ :sub:`B`, L\ :sub:`C` cyclically. Let A' = L\ :sub:`B`\ ∩L\ :sub:`C`, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(984) <X(984)>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
+   Let :g:`A_{15}B_{15}C_{15} << A_15 B_15 C_15 >>` and :g:`A_{16}B_{16}C_{16} << A_16 B_16 C_16 >>` be Gemini triangles 15 and 16, resp. Let :g:`L_{A} <L_A>` be the tangent at :g:`A <A>` to conic {A,\ :g:`B_{15} <B_15>`,\ :g:`C_{15} <C_15>`,\ :g:`B_{16} <B_16>`,\ :g:`C_{16} <C_16>`}}, and define :g:`L_{B} <L_B>`, :g:`L_{C} <L_C>` cyclically. Let :g:`A' <A'>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(984) <X(984)>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
 
 .. figure:: x-00984.svg
    :alt: X(984) = MIDPOINT OF X(8) AND X(192)
    :align: center
 
-   **X(984) = MIDPOINT OF X(8) AND X(192)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(984) = MIDPOINT OF X(8) AND X(192)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`b^{2} + bc + c^{2} : :`
    | **Search Value (6, 9, 13):** :math:`2.491338244862`
-
-.. container:: note-item
-
-   :ref:`X(984) <X(984)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 15 lines

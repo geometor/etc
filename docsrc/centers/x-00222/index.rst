@@ -10,22 +10,25 @@ X(222) = X(7)-CEVA CONJUGATE OF X(56)
 
 .. enunciation::
 
-   Let A' be the center of the conic through the contact points of the incircle and the A-excircle with the sidelines of ABC. Define B' and C' cyclically. The triangle A'B'C' is perspective to the :term:`intouch triangle <intouch-triangle>` at :ref:`X(222) <X(222)>`. See also :ref:`X(6) <X(6)>`, :ref:`X(25) <X(25)>`, :ref:`X(218) <X(218)>`, :ref:`X(940) <X(940)>`, X(1743). (:person:`Randy Hutson <randy-hutson>`, July 23, 2015)
+   Let :g:`A' <A'>` be the center of the conic through the contact points of the incircle and the :g:`A <A>`-excircle with the sidelines of :g:`ABC << A B C >>`. Define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The triangle :g:`A'B'C' << A' B' C' >>` is perspective to the :term:`intouch triangle <intouch-triangle>` at :ref:`X(222) <X(222)>`. See also :ref:`X(6) <X(6)>`, :ref:`X(25) <X(25)>`, :ref:`X(218) <X(218)>`, :ref:`X(940) <X(940)>`, X(1743). (:person:`Randy Hutson <randy-hutson>`, July 23, 2015)
 
 .. figure:: x-00222.svg
    :alt: X(222) = X(7)-CEVA CONJUGATE OF X(56)
    :align: center
 
-   **X(222) = X(7)-CEVA CONJUGATE OF X(56)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(222) = X(7)-CEVA CONJUGATE OF X(56)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\cos A \tan A/2 : \cos B \tan B/2 : \cos C \tan C/2, = 1/(\csc A + 2 \csc 2A) : 1/(\csc B + 2 \csc 2B) : 1/(\csc A + 2 \csc 2C), = a(b^{2} + c^{2} - a^{2})/(b + c - a) : b(c^{2} + a^{2} - b^{2})/(c + a - b) : c(a^{2} + b^{2} - c^{2})/(a + b - c)`
+   | **Trilinears:** :math:`\cos A \tan A/2 : \cos B \tan B/2 : \cos C \tan C/2`
+   | **Barycentrics:** :math:`a^{2}/(1 + \sec A) : b^{2}/(1 + \sec B) : c^{2}/(1 + \sec C)`
    | **Search Value (6, 9, 13):** :math:`-1.306049730322`
 
-.. container:: note-item
+.. collapse:: Alternate Coordinates
+   :badge: 2 forms
 
-   :ref:`X(222) <X(222)>` lies.
+   * **Trilinears:** :math:`1/(\csc A + 2 \csc 2A) : 1/(\csc B + 2 \csc 2B) : 1/(\csc A + 2 \csc 2C)`
+   * **Trilinears:** :math:`a(b^{2} + c^{2} - a^{2})/(b + c - a) : b(c^{2} + a^{2} - b^{2})/(c + a - b) : c(a^{2} + b^{2} - c^{2})/(a + b - c)`
 
 .. collapse:: Incident Central Lines
    :badge: 23 lines
@@ -49,7 +52,7 @@ X(222) = X(7)-CEVA CONJUGATE OF X(56)
    * :ref:`X(222) <X(222)>` = :ref:`X(4) <X(4)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(9) <X(9)>`
    * :ref:`X(222) <X(222)>` = intouch-isogonal conjugate of X(12723)
    * :ref:`X(222) <X(222)>` = perspector of intouch triangle and :term:`unary cofactor triangle <unary-cofactor-triangle>` of :term:`extouch triangle <extouch-triangle>`
-   * :ref:`X(222) <X(222)>` = perspector of ABC and unary cofactor triangle of Gemini triangle 38
+   * :ref:`X(222) <X(222)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of Gemini triangle 38
    * :ref:`X(222) <X(222)>` = :term:`vertex conjugate <vertex-conjugate>` of foci of inconic that is the isotomic conjugate of the polar conjugate of the incircle (centered at X(17073))
    * :ref:`X(222) <X(222)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`21 <X(21)>`, 1012), (:ref:`63 <X(63)>`, :ref:`63 <X(63)>`), (:ref:`110 <X(110)>`, :ref:`222 <X(222)>`), (:ref:`287 <X(287)>`, :ref:`222 <X(222)>`), (:ref:`648 <X(648)>`, :ref:`222 <X(222)>`), (:ref:`651 <X(651)>`, :ref:`222 <X(222)>`), (:ref:`662 <X(662)>`, :ref:`2 <X(2)>`), (:ref:`895 <X(895)>`, :ref:`222 <X(222)>`)
 
@@ -58,11 +61,7 @@ Notes
 
 .. container:: note-item
 
-   Barycentrics a\ :sup:`2`/(1 + sec A) : b\ :sup:`2`/(1 + sec B) : c\ :sup:`2`/(1 + sec C)
-
-.. container:: note-item
-
-   Let A'B'C' be the intouch triangle. Let A″ be the barycentric product of the circumcircle intercepts of line B'C', and define B″ and C″ cyclically. The lines A'A″, B'B″, C'C″ concur in :ref:`X(222) <X(222)>`. (Randy Hutson, July 31 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the intouch triangle. Let :g:`A″ <A″>` be the barycentric product of the circumcircle intercepts of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(222) <X(222)>`. (Randy Hutson, July 31 2018)
 
 .. toctree::
    :hidden:

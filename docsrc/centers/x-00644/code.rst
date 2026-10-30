@@ -12,7 +12,7 @@ X(644) = TRILINEAR MULTIPLIER FOR YFF PARABOLA — Code
    :alt: X(644) = TRILINEAR MULTIPLIER FOR YFF PARABOLA
    :align: center
 
-   **X(644) = TRILINEAR MULTIPLIER FOR YFF PARABOLA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(644) = TRILINEAR MULTIPLIER FOR YFF PARABOLA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

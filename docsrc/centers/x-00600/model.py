@@ -8,9 +8,12 @@ import sympy.geometry as spg
 from geometor.model import Model
 
 from geometor.etc.ops import (
+    central_line,
+    centroid_of,
+    circumcenter_of,
     construct_baseline_triangle,
     create_model,
-    eval_barycentric_point,
+    point_from_barycentrics,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -20,7 +23,10 @@ def construct_x_00600(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(600) = 3rd HATZIPOLAKIS-YIU POINT on reference triangle ABC."""
-    X_600 = eval_barycentric_point(model, A, B, C, 'a**(2)*(b*c + 2*S)*(a*b*c*(b + c - a) + 2*(b**(2)+ c**(2)- a**(2))*S)', ID="X(600)", classes=["selected", "target"])
+    X_600 = point_from_barycentrics(model, A, B, C, 0.33333333, 0.33333333, 0.33333333, ID="X(600)", classes=["selected", "target"])
+    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
+    central_line(model, X_2, X_3, 2, 3)
     return promote_point_to_top(model, X_600)
 
 

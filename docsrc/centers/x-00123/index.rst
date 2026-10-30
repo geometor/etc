@@ -16,18 +16,18 @@ X(123) = X(108)-OF-MEDIAL-TRIANGLE
    :alt: X(123) = X(108)-OF-MEDIAL-TRIANGLE
    :align: center
 
-   **X(123) = X(108)-OF-MEDIAL-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(123) = X(108)-OF-MEDIAL-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(\csc A)(\sec B - \sec C)[(\sec A)(\sin^{2}B - \sin^{2}C) + \sin C \tan C - \sin B \tan B] : :`
-   | **Barycentrics:** :math:`(\sec B - \sec C)[(\sec A)(\sin^{2}B - \sin^{2}C) + \sin C \tan C - \sin B \tan B]`
+   | **Trilinears:** :math:`(\csc A)(\sec B - \sec C)[(\sec A)(\sin^{2} B - \sin^{2} C) + \sin C \tan C - \sin B \tan B] : :`
+   | **Barycentrics:** :math:`(\sec B - \sec C)[(\sec A)(\sin^{2} B - \sin^{2} C) + \sin C \tan C - \sin B \tan B]`
    | **Search Value (6, 9, 13):** :math:`3.984933555176`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`(a - b - c)(b - c)^2(a^2 - b^2 - c^2)(a^4 - b^4 - c^4 + 2a^2bc - 2ab^2c - 2abc^2 + 2b^2c^2) : :`
+   * **Barycentrics:** :math:`(a - b - c)(b - c)^{2}(a^{2} - b^{2} - c^{2})(a^{4} - b^{4} - c^{4} + 2a^{2}bc - 2ab^{2}c - 2abc^{2} + 2b^{2}c^{2}) : :`
 
 .. container:: note-item
 

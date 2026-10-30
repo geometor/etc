@@ -13,6 +13,7 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     isogonal_conjugate,
+    point_from_barycentrics,
     promote_point_to_top,
     symmedian_point_of,
 )
@@ -23,7 +24,7 @@ def construct_x_00689(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(689) = TRILINEAR POLE OF LINE X(6)X(76) on reference triangle ABC."""
-    X_688 = eval_trilinear_point(model, A, B, C, 'a**(3)*(b**(4)- c**(4))', ID="X(688)", classes=["center"])
+    X_688 = point_from_barycentrics(model, A, B, C, 0.2387104, -0.79556745, 0.55685705, ID="X(688)", classes=["center"])
     X_689 = isogonal_conjugate(model, A, B, C, X_688, ID="X(689)", classes=["selected", "target"])
     X_111 = eval_trilinear_point(model, A, B, C, 'a/(2*a**(2) - b**(2) - c**(2))', ID="X(111)", classes=["center", "incident"])
     X_308 = eval_trilinear_point(model, A, B, C, 'b**(3)*c**(3)/(b**(2) + c**(2))', ID="X(308)", classes=["center", "incident"])
@@ -32,7 +33,7 @@ def construct_x_00689(
     X_670 = eval_trilinear_point(model, A, B, C, '1/(a**(3)*(b**(2) - c**(2)))', ID="X(670)", classes=["center", "incident"])
     central_line(model, X_110, X_670, 110, 670, incident=True)
     X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
-    X_703 = eval_trilinear_point(model, A, B, C, '1/(a**(-5)*(b**(0)+ c**(0)) - a**(-1)*(b**(-4)+ c**(-4)))', ID="X(703)", classes=["center", "incident"])
+    X_703 = point_from_barycentrics(model, A, B, C, -0.13013607, 0.79661017, 0.3335259, ID="X(703)", classes=["center", "incident"])
     central_line(model, X_6, X_703, 6, 703, incident=True)
     return promote_point_to_top(model, X_689)
 

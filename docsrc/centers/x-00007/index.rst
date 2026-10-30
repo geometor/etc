@@ -11,19 +11,19 @@ X(7) = GERGONNE POINT
 
 .. enunciation::
 
-   Let A', B', C' denote the points in which the incircle meets the sides BC, CA, AB, respectively. The lines AA', BB', CC' concur in :ref:`X(7) <X(7)>`.
+   Let :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>` denote the points in which the incircle meets the sides :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, respectively. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(7) <X(7)>`.
 
 .. figure:: x-00007.svg
    :alt: X(7) = GERGONNE POINT
    :align: center
 
-   **X(7) = GERGONNE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(7) = GERGONNE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`bc/(b + c - a) : ca/(c + a - b) : ab/(a + b - c)`
    | **Barycentrics:** :math:`1/(b + c - a) : 1/(c + a - b) : 1/(a + b - c)`
-   | **Tripolars:** :math:`(b+c-a) \sqrt{a (a-b-c) (a^2+a b-2 b^2+a c+4 b c-2 c^2)} : :`
+   | **Tripolars:** :math:`(b+c-a) \sqrt{a (a-b-c) (a^{2}+a b-2 b^{2}+a c+4 b c-2 c^{2})} : :`
    | **Search Value (6, 9, 13):** :math:`0.744160979006`
 
 .. collapse:: Alternate Coordinates
@@ -35,13 +35,13 @@ X(7) = GERGONNE POINT
    * **Trilinears:** :math:`(1 - \cos A)a^{-2} : :`
    * **Barycentrics:** :math:`\tan A/2 : \tan B/2 : \tan C/2`
    * **Barycentrics:** :math:`bc - S_{A} : ca - S_{B} : ab - S_{C}`
-   * **Barycentrics:** :math:`r_{a} : r_{b} : r_{c}`, where r\ :sub:`a`, r\ :sub:`b`, r\ :sub:`c` are the exradii
+   * **Barycentrics:** :math:`r_{a} : r_{b} : r_{c}`, where :math:`r_{a}`, :math:`r_{b}`, :math:`r_{c}` are the exradii
 
 .. collapse:: Linear Combinations
    :badge: 2 combinations
 
-   * :ref:`X(7) <X(7)>` = (2r + 4R)\*\ :ref:`X(1) <X(1)>` + 3r\*\ :ref:`X(2) <X(2)>` - 4r\*\ :ref:`X(3) <X(3)>`
-   * :ref:`X(7) <X(7)>` = [A]/Ra + [B]/Rb + [C]/Rc, where Ra, Rb, Rc = radii of Soddy circles
+   * :ref:`X(7) <X(7)>` = :math:`(2r + 4R)` :ref:`X(1) <X(1)>` + :math:`3r` :ref:`X(2) <X(2)>` - :math:`4r` :ref:`X(3) <X(3)>`
+   * :ref:`X(7) <X(7)>` = :g:`A <A>` / :math:`R_{a}` + :g:`B <B>` / :math:`R_{b}` + :g:`C <C>` / :math:`R_{c}`, where :math:`R_{a}`, :math:`R_{b}`, :math:`R_{c}` = radii of Soddy circles
 
 .. container:: note-item
 
@@ -83,11 +83,11 @@ X(7) = GERGONNE POINT
    * :ref:`X(7) <X(7)>` = trilinear product of PU(94)
    * :ref:`X(7) <X(7)>` = vertex conjugate of PU(95)
    * :ref:`X(7) <X(7)>` = bicentric sum of PU(120)
-   * :ref:`X(7) <X(7)>` = perspector of ABC and its :term:`intouch triangle <intouch-triangle>`.
-   * :ref:`X(7) <X(7)>` = perspector of ABC and the reflection in :ref:`X(57) <X(57)>` of the :term:`pedal triangle <pedal-triangle>` of :ref:`X(57) <X(57)>`
-   * :ref:`X(7) <X(7)>` = perspector of AC-incircle
+   * :ref:`X(7) <X(7)>` = perspector of :g:`ABC << A B C >>` and its :term:`intouch triangle <intouch-triangle>`.
+   * :ref:`X(7) <X(7)>` = perspector of :g:`ABC << A B C >>` and the reflection in :ref:`X(57) <X(57)>` of the :term:`pedal triangle <pedal-triangle>` of :ref:`X(57) <X(57)>`
+   * :ref:`X(7) <X(7)>` = perspector of :g:`AC <[ A C ]>`-incircle
    * :ref:`X(7) <X(7)>` = :ref:`X(6) <X(6)>`-of-extraversion triangle-of-:ref:`X(8) <X(8)>`
-   * :ref:`X(7) <X(7)>` = :ref:`X(6) <X(6)>`-of-intouch-triangle; :ref:`X(7) <X(7)>` is the only point X inside ABC Such that X(ABC) = X(A'B'C'), where A'B'C' = :term:`cevian triangle <cevian-triangle>` of X
+   * :ref:`X(7) <X(7)>` = :ref:`X(6) <X(6)>`-of-intouch-triangle; :ref:`X(7) <X(7)>` is the only point X inside :g:`ABC << A B C >>` Such that X(:g:`ABC << A B C >>`) = X(:g:`A'B'C' << A' B' C' >>`), where :g:`A'B'C' << A' B' C' >>` = :term:`cevian triangle <cevian-triangle>` of :g:`X <X>`
    * :ref:`X(7) <X(7)>` = {:ref:`X(2) <X(2)>`,\ :ref:`X(63) <X(63)>`}-harmonic conjugate of X(5273)
    * :ref:`X(7) <X(7)>` = {:ref:`X(9) <X(9)>`,\ :ref:`X(57) <X(57)>`}-harmonic conjugate of X(1445)
    * :ref:`X(7) <X(7)>` = {X(1371),X(1372)}-harmonic conjugate of :ref:`X(1) <X(1)>`
@@ -105,17 +105,17 @@ X(7) = GERGONNE POINT
    * :ref:`X(7) <X(7)>` = :ref:`X(2) <X(2)>`-Ceva conjugate of X(3160)
    * :ref:`X(7) <X(7)>` = :term:`antigonal image <antigonal-image>` of X(1156)
    * :ref:`X(7) <X(7)>` = homothetic center of intouch triangle and anticomplement of the :term:`excentral triangle <excentral-triangle>`
-   * :ref:`X(7) <X(7)>` = :ref:`X(6) <X(6)>`-of-intouch-triangle; :ref:`X(7) <X(7)>` is the only point X inside ABC such that X(ABC) = X(A'B'C'), where A'B'C' = cevian triangle of X
-   * :ref:`X(7) <X(7)>` = perspector of ABC and cross-triangle of inner and outer Soddy triangles
-   * :ref:`X(7) <X(7)>` = perspector of excentral triangle and cross-triangle of ABC and Honsberger triangle
-   * :ref:`X(7) <X(7)>` = perspector of inverse-in-excircles triangle and cross-triangle of ABC and inverse-in-excircles triangle
-   * :ref:`X(7) <X(7)>` = perspector of inverse-in-incircle triangle and cross-triangle of ABC and inverse-in-incircle triangle
+   * :ref:`X(7) <X(7)>` = :ref:`X(6) <X(6)>`-of-intouch-triangle; :ref:`X(7) <X(7)>` is the only point X inside :g:`ABC << A B C >>` such that X(:g:`ABC << A B C >>`) = X(:g:`A'B'C' << A' B' C' >>`), where :g:`A'B'C' << A' B' C' >>` = cevian triangle of :g:`X <X>`
+   * :ref:`X(7) <X(7)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of inner and outer Soddy triangles
+   * :ref:`X(7) <X(7)>` = perspector of excentral triangle and cross-triangle of :g:`ABC << A B C >>` and Honsberger triangle
+   * :ref:`X(7) <X(7)>` = perspector of inverse-in-excircles triangle and cross-triangle of :g:`ABC << A B C >>` and inverse-in-excircles triangle
+   * :ref:`X(7) <X(7)>` = perspector of inverse-in-incircle triangle and cross-triangle of :g:`ABC << A B C >>` and inverse-in-incircle triangle
    * :ref:`X(7) <X(7)>` = X(1843)-of-excentral-triangle
    * :ref:`X(7) <X(7)>` = Cundy-Parry Phi transform of :ref:`X(943) <X(943)>`
    * :ref:`X(7) <X(7)>` = Cundy-Parry Psi transform of :ref:`X(942) <X(942)>`
    * :ref:`X(7) <X(7)>` = {:ref:`X(1) <X(1)>`,X(1742)}-harmonic conjugate of X(2293)
    * :ref:`X(7) <X(7)>` = barycentric square of :ref:`X(508) <X(508)>`
-   * :ref:`X(7) <X(7)>` = perspector of ABC and cross-triangle of ABC and Gemini triangle 40
+   * :ref:`X(7) <X(7)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 40
    * :ref:`X(7) <X(7)>` = barycentric product of vertices of Gemini triangle 40
    * :ref:`X(7) <X(7)>` = excentral-to-intouch :term:`similarity image <similarity-image>` of :ref:`X(9) <X(9)>`
    * :ref:`X(7) <X(7)>` = circumconic-centered-at-:ref:`X(9) <X(9)>`-inverse of X(37787)
@@ -126,7 +126,7 @@ Notes
 
 .. container:: note-item
 
-   An **exarc circle** is a circle tangent to two sides of a triangle ABC and externally tangent to the circumcircle of ABC. The point whose distance to the sides BC, CA, AB are proportional to the respective radii of the exarc circles is :ref:`X(279) <X(279)>`. The point having distances to the sides proportional to the radii of the inarc circles is :ref:`X(7) <X(7)>`. See **Martin Lukarevski**, "Exarc radii and the Finsler-Hadwiger inequality", *The Mathematical Gazette* 106, issue 565, March 2022, pp. 138-143.
+   An **exarc circle** is a circle tangent to two sides of a triangle :g:`ABC << A B C >>` and externally tangent to the circumcircle of :g:`ABC << A B C >>`. The point whose distance to the sides :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>` are proportional to the respective radii of the exarc circles is :ref:`X(279) <X(279)>`. The point having distances to the sides proportional to the radii of the inarc circles is :ref:`X(7) <X(7)>`. See **Martin Lukarevski**, "Exarc radii and the Finsler-Hadwiger inequality", *The Mathematical Gazette* 106, issue 565, March 2022, pp. 138-143.
 
 .. container:: note-item
 

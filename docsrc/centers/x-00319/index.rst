@@ -16,7 +16,7 @@ X(319) = ISOTOMIC CONJUGATE OF X(79)
    :alt: X(319) = ISOTOMIC CONJUGATE OF X(79)
    :align: center
 
-   **X(319) = ISOTOMIC CONJUGATE OF X(79)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(319) = ISOTOMIC CONJUGATE OF X(79)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,12 +27,8 @@ X(319) = ISOTOMIC CONJUGATE OF X(79)
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
-   * **Barycentrics:** :math:`a^2 - b^2 - c^2 - b c : :`
-   * **Barycentrics:** :math:`b c + 2 SA : :`
-
-.. container:: note-item
-
-   :ref:`X(319) <X(319)>` lies.
+   * **Barycentrics:** :math:`a^{2} - b^{2} - c^{2} - b c : :`
+   * **Barycentrics:** :math:`b c + 2 S_{A} : :`
 
 .. collapse:: Incident Central Lines
    :badge: 16 lines
@@ -47,7 +43,7 @@ X(319) = ISOTOMIC CONJUGATE OF X(79)
    * :ref:`X(319) <X(319)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(79) <X(79)>`
    * :ref:`X(319) <X(319)>` = :term:`anticomplement <anticomplement>` of X(1100)
    * :ref:`X(319) <X(319)>` = :term:`complement <complement>` of polar conjugate of :term:`isogonal conjugate <isogonal-conjugate>` of X(23165)
-   * :ref:`X(319) <X(319)>` = :term:`trilinear pole <trilinear-pole>` of line X(4467)X(7265) (the perspectrix of ABC and Gemini triangle 25)
+   * :ref:`X(319) <X(319)>` = :term:`trilinear pole <trilinear-pole>` of line X(4467)X(7265) (the perspectrix of :g:`ABC << A B C >>` and Gemini triangle 25)
 
 .. toctree::
    :hidden:

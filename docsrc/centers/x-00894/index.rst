@@ -16,16 +16,12 @@ X(894) = ISOGONAL CONJUGATE OF X(893)
    :alt: X(894) = ISOGONAL CONJUGATE OF X(893)
    :align: center
 
-   **X(894) = ISOGONAL CONJUGATE OF X(893)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(894) = ISOGONAL CONJUGATE OF X(893)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`(a^{2} + bc)/a : :`
    | **Search Value (6, 9, 13):** :math:`2.255850982715`
-
-.. container:: note-item
-
-   :ref:`X(894) <X(894)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 19 lines
@@ -43,12 +39,12 @@ X(894) = ISOGONAL CONJUGATE OF X(893)
    * :ref:`X(894) <X(894)>` = :term:`anticomplement <anticomplement>` of X(4357)
    * :ref:`X(894) <X(894)>` = :ref:`X(291) <X(291)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(239) <X(239)>`
    * :ref:`X(894) <X(894)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(663) <X(663)>`\ \ :ref:`X(788) <X(788)>`
-   * :ref:`X(894) <X(894)>` = intersection of tangents at PU(6) to hyperbola {A,B,C,\ :ref:`X(789) <X(789)>`,PU(6)}
+   * :ref:`X(894) <X(894)>` = intersection of tangents at PU(6) to hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(789) <X(789)>`,PU(6)}
    * :ref:`X(894) <X(894)>` = :term:`crosspoint <crosspoint>` of PU(6)
    * :ref:`X(894) <X(894)>` = :term:`crosssum <crosssum>` of PU(8)
    * :ref:`X(894) <X(894)>` = :ref:`X(171) <X(171)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(385) <X(385)>`
-   * :ref:`X(894) <X(894)>` = perspector of Gemini triangle 4 and cross-triangle of ABC and Gemini triangle 4
-   * :ref:`X(894) <X(894)>` = :term:`trilinear pole <trilinear-pole>` of perspectrix of ABC and Gemini triangle 3
+   * :ref:`X(894) <X(894)>` = perspector of Gemini triangle 4 and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 4
+   * :ref:`X(894) <X(894)>` = :term:`trilinear pole <trilinear-pole>` of perspectrix of :g:`ABC << A B C >>` and Gemini triangle 3
 
 .. toctree::
    :hidden:

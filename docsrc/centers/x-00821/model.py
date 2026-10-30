@@ -26,7 +26,7 @@ def construct_x_00821(
     """Construct X(821) = ISOGONAL CONJUGATE OF X(820) on reference triangle ABC."""
     X_820 = point_from_barycentrics(model, A, B, C, 0.4160805, 0.47409113, 0.10982837, ID="X(820)", classes=["center"])
     X_821 = isogonal_conjugate(model, A, B, C, X_820, ID="X(821)", classes=["selected", "target"])
-    X_158 = point_from_barycentrics(model, A, B, C, 0.04776757, 0.099240104, 0.85299233, ID="X(158)", classes=["center", "incident"])
+    X_158 = eval_trilinear_point(model, A, B, C, '1/(1 + cos(2*A))', ID="X(158)", classes=["center", "incident"])
     X_255 = eval_trilinear_point(model, A, B, C, '1 + cos(2*A)', ID="X(255)", classes=["center", "incident"])
     central_line(model, X_158, X_255, 158, 255, incident=True)
     X_243 = eval_barycentric_point(model, A, B, C, '(a - b - c)*(a**(4) - a**(2)*(b**(2) - b*c + c**(2)) - b*c*(b - c)**(2))/(a**(2) - b**(2) - c**(2))', ID="X(243)", classes=["center", "incident"])

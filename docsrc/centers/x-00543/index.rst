@@ -16,20 +16,16 @@ X(543) = DIRECTION OF VECTOR AX + BX + CX, where X = X(99)
    :alt: X(543) = DIRECTION OF VECTOR AX + BX + CX, where X = X(99)
    :align: center
 
-   **X(543) = DIRECTION OF VECTOR AX + BX + CX, where X = X(99)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(543) = DIRECTION OF VECTOR AX + BX + CX, where X = X(99)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(2ax - by - cz)/a, x = x(a,b,c) = bc/(b^{2} - c^{2})`, where x : y : z = :ref:`X(99) <X(99)>`
-   | **Barycentrics:** :math:`2 a^4 - b^4 - c^4 - 2 a^2 b^2 - 2 a^2 c^2 + 4 b^2 c^2 : :`
+   | **Trilinears:** :math:`(2ax - by - cz)/a, x = x(a,b,c) = bc/(b^{2} - c^{2})`, where :math:`x : y : z` = :ref:`X(99) <X(99)>`
+   | **Barycentrics:** :math:`2 a^{4} - b^{4} - c^{4} - 2 a^{2} b^{2} - 2 a^{2} c^{2} + 4 b^{2} c^{2} : :`
 
 .. container:: note-item
 
    :ref:`X(543) <X(543)>` lies on the line at infinity.
-
-.. container:: note-item
-
-   :ref:`X(543) <X(543)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 15 lines

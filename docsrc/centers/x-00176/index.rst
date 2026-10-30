@@ -17,7 +17,7 @@ X(176) = EQUAL DETOUR POINT
    :alt: X(176) = EQUAL DETOUR POINT
    :align: center
 
-   **X(176) = EQUAL DETOUR POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(176) = EQUAL DETOUR POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -29,13 +29,13 @@ X(176) = EQUAL DETOUR POINT
    :badge: 3 forms
 
    * **Barycentrics:** :math:`2a + (a + b + c) \tan(A/2) : :`
-   * **Barycentrics:** :math:`a + r_{a} : b + r_{b} : c + r_{c}`, where r\ :sub:`a`, r\ :sub:`b`, r\ :sub:`c` are the exradii
-   * **Barycentrics:** :math:`(a + b - c)*(a - b + c)*(a*(a - b - c) - S) : :`
+   * **Barycentrics:** :math:`a + r_{a} : b + r_{b} : c + r_{c}`, where :math:`r_{a}`, :math:`r_{b}`, :math:`r_{c}` are the exradii
+   * **Barycentrics:** :math:`(a + b - c) \cdot (a - b + c) \cdot (a (a - b - c) - S) : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(176) <X(176)>` = 2s\*\ :ref:`X(1) <X(1)>` + (r + 4R)\*\ :ref:`X(7) <X(7)>` = 3\ :ref:`X(2) <X(2)>`-4X(31535)
+   * :ref:`X(176) <X(176)>` = :math:`2s` :ref:`X(1) <X(1)>` + :math:`(r + 4R)` :ref:`X(7) <X(7)>` = :math:`3` :ref:`X(2) <X(2)>` - :math:`4` X(31535)
 
 .. container:: note-item
 
@@ -76,11 +76,11 @@ Notes
 
 .. container:: note-item
 
-   The following construction was found by Elkies: call two circles within ABC *companion circles* if they are the incircles of two triangles formed by dividing ABC into two smaller triangles by passing a line through one of the vertices and some point on the opposite side; chain of circles O(1), O(2), ... such that O(n),O(n+1) are companion incircles for every n consists of at most six distinct circles; there is a unique chain consisting of only three distinct circles; and for this chain, the three subdividing lines concur in :ref:`X(176) <X(176)>`.
+   The following construction was found by Elkies: call two circles within :g:`ABC << A B C >>` *companion circles* if they are the incircles of two triangles formed by dividing :g:`ABC << A B C >>` into two smaller triangles by passing a line through one of the vertices and some point on the opposite side; chain of circles O(1), O(2), ... such that O(n),O(n+1) are companion incircles for every n consists of at most six distinct circles; there is a unique chain consisting of only three distinct circles; and for this chain, the three subdividing lines concur in :ref:`X(176) <X(176)>`.
 
 .. container:: note-item
 
-   A point X is defined as a point of equal detour of triangle ABC if \|XB\| + \|XC\| - \|BC\| = \|XC\| + \|XA\| - \|CA\| = \|XA\| + \|XB\| - \|AB\|. Veldkamp established that X = :ref:`X(176) <X(176)>` for some triangles ABC, but the conditions he gives are not correct. Hajja and Yff proved that the condition tan(A/2) + tan(B/2) + tan(C/2) < 2 is necessary and sufficient for the existence of exactly two points of equal detour and that the condition tan(A/2) + tan(B/2) + tan(C/2) = 2 is necessary and sufficient for the existence of exactly one point of equal detour. Yff found that :ref:`X(176) <X(176)>` is also is the center of the inner Soddy circle. See also :ref:`X(175) <X(175)>` and the 1st and 2nd Eppstein points, :ref:`X(481) <X(481)>`, :ref:`X(482) <X(482)>`.
+   A point :g:`X <X>` is defined as a point of equal detour of triangle :g:`ABC << A B C >>` if \|\ :g:`XB <[ X B ]>`\ \| + \|\ :g:`XC <[ X C ]>`\ \| - \|\ :g:`BC <[ B C ]>`\ \| = \|\ :g:`XC <[ X C ]>`\ \| + \|\ :g:`XA <[ X A ]>`\ \| - \|\ :g:`CA <[ C A ]>`\ \| = \|\ :g:`XA <[ X A ]>`\ \| + \|\ :g:`XB <[ X B ]>`\ \| - \|\ :g:`AB <[ A B ]>`\ \|. Veldkamp established that :g:`X <X>` = :ref:`X(176) <X(176)>` for some triangles :g:`ABC << A B C >>`, but the conditions he gives are not correct. Hajja and Yff proved that the condition tan(A/2) + tan(B/2) + tan(C/2) < 2 is necessary and sufficient for the existence of exactly two points of equal detour and that the condition tan(A/2) + tan(B/2) + tan(C/2) = 2 is necessary and sufficient for the existence of exactly one point of equal detour. Yff found that :ref:`X(176) <X(176)>` is also is the center of the inner Soddy circle. See also :ref:`X(175) <X(175)>` and the 1st and 2nd Eppstein points, :ref:`X(481) <X(481)>`, :ref:`X(482) <X(482)>`.
 
 .. container:: note-item
 
@@ -96,11 +96,11 @@ Notes
 
 .. container:: note-item
 
-   Let Ia, Ib, Ic be the centers of the Elkies companion incircles. Let A' be the trilinear product Ib\*Ic, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(482) <X(482)>`. The lines IaA', IbB', IcC' concur in :ref:`X(176) <X(176)>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
+   Let :g:`I_{a} <I_a>`, :g:`I_{b} <I_b>`, :g:`I_{c} <I_c>` be the centers of the Elkies companion incircles. Let :g:`A' <A'>` be the trilinear product :g:`I_{b} <I_b>`\ \*\ :g:`I_{c} <I_c>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(482) <X(482)>`. The lines :g:`I_{a}A' <[ I_a A' ]>`, :g:`I_{b}B' <[ I_b B' ]>`, :g:`I_{c}C' <[ I_c C' ]>` concur in :ref:`X(176) <X(176)>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
 
 .. container:: note-item
 
-   Let Q be a point. Let A' be the incenter of triangle BCQ, and define B' and C' cyclically. If Q is an equal detour point, in the sense that \|QB\| + \|QC\| - \|BC\| = \|QC\| + \|QA\| - \|CA\| = \|QA\| + \|QB\| - \|AB\|, then Q is either the incenter or an excenter of triangle A'B'C'. (Do there exist other points with this property?) (Randy Hutson, 9/23/2011)''
+   Let :g:`Q <Q>` be a point. Let :g:`A' <A'>` be the incenter of triangle :g:`BCQ << B C Q >>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. If Q is an equal detour point, in the sense that \|\ :g:`QB <[ Q B ]>`\ \| + \|\ :g:`QC <[ Q C ]>`\ \| - \|\ :g:`BC <[ B C ]>`\ \| = \|\ :g:`QC <[ Q C ]>`\ \| + \|\ :g:`QA <[ Q A ]>`\ \| - \|\ :g:`CA <[ C A ]>`\ \| = \|\ :g:`QA <[ Q A ]>`\ \| + \|\ :g:`QB <[ Q B ]>`\ \| - \|\ :g:`AB <[ A B ]>`\ \|, then Q is either the incenter or an excenter of triangle :g:`A'B'C' << A' B' C' >>`. (Do there exist other points with this property?) (Randy Hutson, 9/23/2011)''
 
 .. container:: note-item
 
@@ -108,23 +108,23 @@ Notes
 
 .. container:: note-item
 
-   In the plane of a triangle ABC, let
+   In the plane of a triangle :g:`ABC << A B C >>`, let
 
-   Oa = circle with diameter BC
+   :g:`O_{a} <O_a>` = circle with diameter :g:`BC <[ B C ]>`
 
-   C' = the point, other than B, where Oa meets AB
+   :g:`C' <C'>` = the point, other than B, where :g:`O_{a} <O_a>` meets :g:`AB <[ A B ]>`
 
-   B' = the point, other than C, where Oa meets AC
+   :g:`B' <B'>` = the point, other than C, where :g:`O_{a} <O_a>` meets :g:`AC <[ A C ]>`
 
-   Ub = B-mixtilinear incircle of BCC'
+   :g:`U_{b} <U_b>` = :g:`B <B>`-mixtilinear incircle of :g:`BCC' << B C C' >>`
 
-   Uc = C-mixtilinear incircle of CBC'
+   :g:`U_{c} <U_c>` = :g:`C <C>`-mixtilinear incircle of :g:`CBC' << C B C' >>`
 
-   Ab = touchpoint of Ub and BC; define Bc and Ca cyclically
+   :g:`A_{b} <A_b>` = touchpoint of :g:`U_{b} <U_b>` and :g:`BC <[ B C ]>`; define :g:`B_{c} <B_c>` and :g:`C_{a} <C_a>` cyclically
 
-   Ac = touchpoint of Uc and BC; define Ba and Cb cyclically
+   :g:`A_{c} <A_c>` = touchpoint of :g:`U_{c} <U_c>` and :g:`BC <[ B C ]>`; define :g:`B_{a} <B_a>` and :g:`C_{b} <C_b>` cyclically
 
-   The points Ab, Ac, Ba, Ba, Cb, Cb line on a conic, of which the center is :ref:`X(176) <X(176)>`. A barycentric equation for this conic follows:
+   The points :g:`A_{b} <A_b>`, :g:`A_{c} <A_c>`, :g:`B_{a} <B_a>`, :g:`B_{a} <B_a>`, :g:`C_{b} <C_b>`, :g:`C_{b} <C_b>` line on a conic, of which the center is :ref:`X(176) <X(176)>`. A barycentric equation for this conic follows:
 
       2 (a-b-c) (a^2-b^2-c^2) (a^2 (b+c)-(b-c)^2 (b+c)+2 a S) x^2 - ((a+b-c) (a-b+c) (3 a^4-2 a^3 (b+c)-3 (b^2-c^2)^2+2 a (b+c) (b^2+c^2))+2 (a^4-3 (b^2-c^2)^2+2 a^2 (b^2+c^2)) S) y z + (cyclic) = 0.
 
@@ -132,15 +132,15 @@ Notes
 
    See **X(175) and X(176)** (``X(175)andX(176).png``). Continuing, let
 
-   Vb = B-mixtilinear excircle of BCC'
+   :g:`V_{b} <V_b>` = :g:`B <B>`-mixtilinear excircle of :g:`BCC' << B C C' >>`
 
-   Vc = C-mixtilinear excircle of CBC'
+   :g:`V_{c} <V_c>` = :g:`C <C>`-mixtilinear excircle of :g:`CBC' << C B C' >>`
 
-   A'b = touchpoint of Vb and BC; define B'c and C'a cyclically
+   :g:`A'_{b} <A'_b>` = touchpoint of :g:`V_{b} <V_b>` and :g:`BC <[ B C ]>`; define :g:`B'_{c} <B'_c>` and :g:`C'_{a} <C'_a>` cyclically
 
-   A'c = touchpoint of Vc and BC; define B'a and C'b cyclically
+   :g:`A'_{c} <A'_c>` = touchpoint of :g:`V_{c} <V_c>` and :g:`BC <[ B C ]>`; define :g:`B'_{a} <B'_a>` and :g:`C'_{b} <C'_b>` cyclically
 
-   The points A'b, A'c, B'a, B'c, C'a, C'b line on a conic, of which the center is :ref:`X(175) <X(175)>`. A barycentric equation for this conic follows:
+   The points :g:`A'_{b} <A'_b>`, :g:`A'_{c} <A'_c>`, :g:`B'_{a} <B'_a>`, :g:`B'_{c} <B'_c>`, :g:`C'_{a} <C'_a>`, :g:`C'_{b} <C'_b>` line on a conic, of which the center is :ref:`X(175) <X(175)>`. A barycentric equation for this conic follows:
 
       (a+b-c) (a-b+c) (2 (a-b-c) (2 a^3 b c+a^4 (b+c)-2 a b c (b+c)^2+(b-c)^2 (b+c)^3-2 a^2 (b^3+b^2 c+b c^2+c^3)+2 (a^3-2 b c (b+c)-a (b+c)^2) S) x^2 + (3 a^6-4 a^5 (b+c)-4 a (b-c)^2 (b+c)^3-3 (b-c)^2 (b+c)^4+a^2 (b+c)^2 (9 b^2+2 b c+9 c^2)-a^4 (9 b^2+14 b c+9 c^2)+8 a^3 (b^3+b^2 c+b c^2+c^3)-2 (a^4+6 a^3 (b+c)-4 a^2 (b+c)^2+3 (b^2-c^2)^2-2 a (3 b^3+7 b^2 c+7 b c^2+3 c^3)) S) y z) + (cyclic) = 0. (:person:`Angel Montesdeoca <angel-montesdeoca>`, September 9, 2022)
 

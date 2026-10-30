@@ -12,6 +12,7 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    intersect_lines,
     point_from_barycentrics,
     promote_point_to_top,
     symmedian_point_of,
@@ -23,13 +24,13 @@ def construct_x_00688(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(688) = CROSSDIFFERENCE OF X(6) AND X(76) on reference triangle ABC."""
-    X_688 = eval_trilinear_point(model, A, B, C, 'a**(3)*(b**(4)- c**(4))', ID="X(688)", classes=["selected", "target"])
-    X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X(30)", classes=["center", "incident"])
-    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X(511)", classes=["center", "incident"])
-    central_line(model, X_30, X_511, 30, 511, incident=True)
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
-    X_882 = point_from_barycentrics(model, A, B, C, 0.023590899, 1.0060979, -0.02968882, ID="X(882)", classes=["center", "incident"])
-    central_line(model, X_6, X_882, 6, 882, incident=True)
+    X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X(30)", classes=["center"])
+    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X(511)", classes=["center"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
+    X_882 = point_from_barycentrics(model, A, B, C, 0.023590899, 1.0060979, -0.02968882, ID="X(882)", classes=["center"])
+    central_line(model, X_30, X_511, 30, 511)
+    central_line(model, X_6, X_882, 6, 882)
+    X_688 = intersect_lines(model, X_30, X_511, X_6, X_882, ID="X(688)", classes=["selected", "target"])
     X_669 = eval_trilinear_point(model, A, B, C, 'a**(3)*(b**(2) - c**(2))', ID="X(669)", classes=["center", "incident"])
     X_864 = point_from_barycentrics(model, A, B, C, -0.32864548, -0.077550067, 1.4061955, ID="X(864)", classes=["center", "incident"])
     central_line(model, X_669, X_864, 669, 864, incident=True)

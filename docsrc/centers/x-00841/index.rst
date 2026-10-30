@@ -16,21 +16,17 @@ X(841) = ISOGONAL CONJUGATE OF X(541)
    :alt: X(841) = ISOGONAL CONJUGATE OF X(541)
    :align: center
 
-   **X(841) = ISOGONAL CONJUGATE OF X(541)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(841) = ISOGONAL CONJUGATE OF X(541)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = a/(2ax - by - cz), x = x(A,B,C) = 1/(cos A - 2 cos B cos C)
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a/(2ax - by - cz)`, :math:`x = x(A,B,C) = 1/(\cos A - 2 \cos B \cos C)`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`13.270923068483`
 
 .. container:: note-item
 
    :ref:`X(841) <X(841)>` lies on the circumcircle.
-
-.. container:: note-item
-
-   :ref:`X(841) <X(841)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 1 line

@@ -10,13 +10,13 @@ X(26) = CIRCUMCENTER OF THE TANGENTIAL TRIANGLE
 
 .. enunciation::
 
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the circumorthic :term:`tangential triangle <tangential-triangle>` and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(26) <X(26)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (:person:`Randy Hutson <randy-hutson>`, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the circumorthic :term:`tangential triangle <tangential-triangle>` and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(26) <X(26)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (:person:`Randy Hutson <randy-hutson>`, August 30, 2020)
 
 .. figure:: x-00026.svg
    :alt: X(26) = CIRCUMCENTER OF THE TANGENTIAL TRIANGLE
    :align: center
 
-   **X(26) = CIRCUMCENTER OF THE TANGENTIAL TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(26) = CIRCUMCENTER OF THE TANGENTIAL TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,17 +28,13 @@ X(26) = CIRCUMCENTER OF THE TANGENTIAL TRIANGLE
    :badge: 2 forms
 
    * **Trilinears:** :math:`(J^{2} - 3) \cos A + 4 \cos B \cos C : :`, where J is as at X(1113)
-   * **Barycentrics:** :math:`a^2 (a^8 - 2 a^6 (b^2 + c^2) + 2 a^2 (b^6 + c^6) - (b^2 - c^2)^2 (b^4 + c^4)) : :`
+   * **Barycentrics:** :math:`a^{2} (a^{8} - 2 a^{6} (b^{2} + c^{2}) + 2 a^{2} (b^{6} + c^{6}) - (b^{2} - c^{2})^{2} (b^{4} + c^{4})) : :`
 
 .. collapse:: Linear Combinations
    :badge: 2 combinations
 
-   * :ref:`X(26) <X(26)>` = 6 :ref:`X(2) <X(2)>` + (J^2 - 7) :ref:`X(3) <X(3)>`
-   * :ref:`X(26) <X(26)>` = (J^2 - 3) :ref:`X(3) <X(3)>` + 2 :ref:`X(4) <X(4)>`
-
-.. container:: note-item
-
-   :ref:`X(26) <X(26)>` lies.
+   * :ref:`X(26) <X(26)>` = :math:`6` :ref:`X(2) <X(2)>` + :math:`(J^{2} - 7)` :ref:`X(3) <X(3)>`
+   * :ref:`X(26) <X(26)>` = :math:`(J^{2} - 3)` :ref:`X(3) <X(3)>` + :math:`2` :ref:`X(4) <X(4)>`
 
 .. collapse:: Incident Central Lines
    :badge: 318 lines
@@ -57,7 +53,7 @@ X(26) = CIRCUMCENTER OF THE TANGENTIAL TRIANGLE
    * :ref:`X(26) <X(26)>` = :term:`crosssum <crosssum>` of :ref:`X(125) <X(125)>` and :ref:`X(924) <X(924)>`
    * :ref:`X(26) <X(26)>` = :term:`complement <complement>` of X(14790)
    * :ref:`X(26) <X(26)>` = :term:`anticomplement <anticomplement>` of X(13371)
-   * :ref:`X(26) <X(26)>` = intouch-to-ABC :term:`functional image <functional-image>` of :ref:`X(3) <X(3)>`
+   * :ref:`X(26) <X(26)>` = intouch-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X(3) <X(3)>`
    * :ref:`X(26) <X(26)>` = orthoptic-circle-of-Steiner-inellipse-inverse of complement of X(37978)
    * :ref:`X(26) <X(26)>` = orthoptic-circle-of-Steiner-circumellipse-inverse of anticomplement of X(37978)
 
@@ -66,7 +62,7 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(26) <X(26)>` has Shinagawa coefficients (E + 4F, -3E - 4F).
+   As a point on the Euler line, :ref:`X(26) <X(26)>` has Shinagawa coefficients :math:`(E + 4F, -3E - 4F)`.
 
 .. container:: note-item
 

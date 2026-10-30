@@ -16,17 +16,13 @@ X(270) = ISOGONAL CONJUGATE OF X(201)
    :alt: X(270) = ISOGONAL CONJUGATE OF X(201)
    :align: center
 
-   **X(270) = ISOGONAL CONJUGATE OF X(201)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(270) = ISOGONAL CONJUGATE OF X(201)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`(\sec A)/[1 + \cos(B - C)] : (\sec B)/[1 + \cos(C - A)] : (\sec C)/[1 + \cos(A - B)]`
    | **Barycentrics:** :math:`(\tan A)/[1 + \cos(B - C)] : (\tan B)/[1 + \cos(C - A)] : (\tan C)/[1 + \cos(A - B)]`
    | **Search Value (6, 9, 13):** :math:`10.222825530075`
-
-.. container:: note-item
-
-   :ref:`X(270) <X(270)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines

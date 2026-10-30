@@ -14,7 +14,6 @@ from geometor.etc.ops import (
     eval_trilinear_point,
     nagel_point_of,
     orthocenter_of,
-    point_from_barycentrics,
     promote_point_to_top,
     spieker_center_of,
 )
@@ -33,7 +32,7 @@ def construct_x_00318(
     X_33 = eval_trilinear_point(model, A, B, C, '1 + sec(A)', ID="X(33)", classes=["center", "incident"])
     central_line(model, X_29, X_33, 29, 33, incident=True)
     X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["center", "incident"])
-    X_158 = point_from_barycentrics(model, A, B, C, 0.04776757, 0.099240104, 0.85299233, ID="X(158)", classes=["center", "incident"])
+    X_158 = eval_trilinear_point(model, A, B, C, '1/(1 + cos(2*A))', ID="X(158)", classes=["center", "incident"])
     central_line(model, X_10, X_158, 10, 158, incident=True)
     return promote_point_to_top(model, X_318)
 

@@ -16,7 +16,7 @@ X(513) = ISOGONAL CONJUGATE OF X(100)
    :alt: X(513) = ISOGONAL CONJUGATE OF X(100)
    :align: center
 
-   **X(513) = ISOGONAL CONJUGATE OF X(100)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(513) = ISOGONAL CONJUGATE OF X(100)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,11 +27,7 @@ X(513) = ISOGONAL CONJUGATE OF X(100)
    :badge: 2 forms
 
    * **Trilinears:** :math:`r - R \cos A : :`
-   * **Trilinears:** :math:`d(a,b,c) : :`, where d(a,b,c) = directed distance from A to the Nagel line
-
-.. container:: note-item
-
-   :ref:`X(513) <X(513)>` lies.
+   * **Trilinears:** :math:`d(a,b,c) : :`, where d(a,b,c) = directed distance from :g:`A <A>` to the Nagel line
 
 .. collapse:: Incident Central Lines
    :badge: 59 lines
@@ -63,7 +59,7 @@ X(513) = ISOGONAL CONJUGATE OF X(100)
    * :ref:`X(513) <X(513)>` = bicentric difference of PU(i) for these i: 6, 31, 33, 41, 46, 50, 52, 53, 54, 55, 56, 96, 111
    * :ref:`X(513) <X(513)>` = trilinear product of PU(34)
    * :ref:`X(513) <X(513)>` = trilinear square root of :ref:`X(244) <X(244)>`
-   * :ref:`X(513) <X(513)>` = perspector of circumconic centered at X(1015) (hyperbola {A,B,C,\ :ref:`X(1) <X(1)>`,\ :ref:`X(2) <X(2)>`}
+   * :ref:`X(513) <X(513)>` = perspector of circumconic centered at X(1015) (hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(1) <X(1)>`,\ :ref:`X(2) <X(2)>`}
    * :ref:`X(513) <X(513)>` = intercept of antiorthic axis and the line at infinity (:term:`trilinear polars <trilinear-polar>` of :ref:`X(1) <X(1)>` and :ref:`X(2) <X(2)>`)
    * :ref:`X(513) <X(513)>` = excentral isogonal conjugate of X(1768)
    * :ref:`X(513) <X(513)>` = intouch isogonal conjugate of :ref:`X(11) <X(11)>`
@@ -78,7 +74,7 @@ X(513) = ISOGONAL CONJUGATE OF X(100)
    * :ref:`X(513) <X(513)>` = Cundy-Parry Phi transform of X(39173)
    * :ref:`X(513) <X(513)>` = polar conjugate of X(6335)
    * :ref:`X(513) <X(513)>` = pole wrt polar circle of trilinear polar of X(6335) (line :ref:`X(4) <X(4)>`\ \ :ref:`X(8) <X(8)>`)
-   * :ref:`X(513) <X(513)>` = perspector of ABC and side-triangle of Gemini triangles 5 and 6
+   * :ref:`X(513) <X(513)>` = perspector of :g:`ABC << A B C >>` and side-triangle of Gemini triangles 5 and 6
 
 .. toctree::
    :hidden:

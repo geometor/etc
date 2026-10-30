@@ -10,13 +10,13 @@ X(58) = ISOGONAL CONJUGATE OF X(10)
 
 .. enunciation::
 
-   :ref:`X(58) <X(58)>` is the point of concurrence of the Brocard axes of triangles BIC, CIA, AIB, ABC, (where I denotes the incenter, :ref:`X(1) <X(1)>`), as proved in **Antreas P. Hatzipolakis, Floor van Lamoen, Barry Wolk, and Paul Yiu,** Concurrency of Four Euler Lines, *:cite:`Forum Geometricorum <forum-geometricorum>`* 1 (2001) 59-68.
+   :ref:`X(58) <X(58)>` is the point of concurrence of the Brocard axes of triangles :g:`BIC << B I C >>`, :g:`CIA << C I A >>`, :g:`AIB << A I B >>`, :g:`ABC << A B C >>`, (where I denotes the incenter, :ref:`X(1) <X(1)>`), as proved in **Antreas P. Hatzipolakis, Floor van Lamoen, Barry Wolk, and Paul Yiu,** Concurrency of Four Euler Lines, *:cite:`Forum Geometricorum <forum-geometricorum>`* 1 (2001) 59-68.
 
 .. figure:: x-00058.svg
    :alt: X(58) = ISOGONAL CONJUGATE OF X(10)
    :align: center
 
-   **X(58) = ISOGONAL CONJUGATE OF X(10)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(58) = ISOGONAL CONJUGATE OF X(10)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -34,10 +34,6 @@ X(58) = ISOGONAL CONJUGATE OF X(10)
    * **Trilinears:** :math:`(R/r) - 1/(\cos B + \cos C) : :`
    * **Trilinears:** :math:`(r/R) - \cos 2A + 1 : :`
    * **Trilinears:** eccentricity of A-Soddy ellipse : :
-
-.. container:: note-item
-
-   :ref:`X(58) <X(58)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 37 lines
@@ -72,13 +68,13 @@ X(58) = ISOGONAL CONJUGATE OF X(10)
    * :ref:`X(58) <X(58)>` = :ref:`X(42) <X(42)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(75) <X(75)>`
    * :ref:`X(58) <X(58)>` = :ref:`X(71) <X(71)>`-isoconjugate of :ref:`X(92) <X(92)>`
    * :ref:`X(58) <X(58)>` = :ref:`X(101) <X(101)>`-isoconjugate of X(1577)
-   * :ref:`X(58) <X(58)>` = homothetic center of 2nd circumperp triangle and 'Hatzipolakis-Brocard triangle' (A'B'C' as defined at X(5429))
+   * :ref:`X(58) <X(58)>` = homothetic center of 2nd circumperp triangle and 'Hatzipolakis-Brocard triangle' (:g:`A'B'C' << A' B' C' >>` as defined at X(5429))
    * :ref:`X(58) <X(58)>` = trilinear product of vertices of 2nd circumperp triangle
    * :ref:`X(58) <X(58)>` = perspector of 2nd circumperp triangle and :term:`unary cofactor triangle <unary-cofactor-triangle>` of 1st circumperp triangle
-   * :ref:`X(58) <X(58)>` = perspector of ABC and cross-triangle of ABC and 2nd circumperp triangle
+   * :ref:`X(58) <X(58)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and 2nd circumperp triangle
    * :ref:`X(58) <X(58)>` = Cundy-Parry Phi transform of :ref:`X(573) <X(573)>`
    * :ref:`X(58) <X(58)>` = Cundy-Parry Psi transform of X(13478)
-   * :ref:`X(58) <X(58)>` = perspector of ABC and unary cofactor triangle of Gemini triangle 11
+   * :ref:`X(58) <X(58)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of Gemini triangle 11
    * :ref:`X(58) <X(58)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(21) <X(21)>`}-harmonic conjugate of X(4653)
 
 Notes
@@ -86,19 +82,19 @@ Notes
 
 .. container:: note-item
 
-   Let (Sa) be the reflection of the Spieker circle in BC, and define (Sb), (Sc) cyclically. :ref:`X(58) <X(58)>` is the radical center of (Sa), (Sb), (Sc). (:person:`Randy Hutson <randy-hutson>`, July 20, 2016)
+   Let (:g:`S_{a} <S_a>`) be the reflection of the Spieker circle in :g:`BC <[ B C ]>`, and define (:g:`S_{b} <S_b>`), (:g:`S_{c} <S_c>`) cyclically. :ref:`X(58) <X(58)>` is the radical center of (:g:`S_{a} <S_a>`), (:g:`S_{b} <S_b>`), (:g:`S_{c} <S_c>`). (:person:`Randy Hutson <randy-hutson>`, July 20, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the anticomplement of the Feuerbach triangle. Let A″B″C″ be the circumcevian triangle, wrt A'B'C', of :ref:`X(1) <X(1)>`. The lines AA″, BB″, CC″ concur in :ref:`X(58) <X(58)>`. (Randy Hutson, July 20, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the anticomplement of the Feuerbach triangle. Let :g:`A″B″C″ << A″ B″ C″ >>` be the circumcevian triangle, wrt :g:`A'B'C' << A' B' C' >>`, of :ref:`X(1) <X(1)>`. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(58) <X(58)>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the Feuerbach triangle. Let La be the tangent to the nine-point circle at A', and define Lb, Lc cyclically. Let A″ be the isogonal conjugate of the trilinear pole of La, and define B″, C″ cyclically. Let A\* = BB″∩CC″, B\* = CC″∩AA″, C\* = AA″∩BB″. The lines AA\*, BB\*, CC\* concur in :ref:`X(58) <X(58)>`. (Randy Hutson, July 20, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the Feuerbach triangle. Let :g:`L_{a} <L_a>` be the tangent to the nine-point circle at :g:`A' <A'>`, and define :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` be the isogonal conjugate of the trilinear pole of :g:`L_{a} <L_a>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. Let :g:`A* <A*>` = :g:`BB″ <[ B B″ ]>`\ ∩\ :g:`CC″ <[ C C″ ]>`, :g:`B* <B*>` = :g:`CC″ <[ C C″ ]>`\ ∩\ :g:`AA″ <[ A A″ ]>`, :g:`C* <C*>` = :g:`AA″ <[ A A″ ]>`\ ∩\ :g:`BB″ <[ B B″ ]>`. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(58) <X(58)>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
-   Let A'B'C' be the 2nd circumperp triangle. Let A″ be the trilinear product B'\*C', and define B″, C″ cyclically. A″, B″, C″ are collinear on line :ref:`X(36) <X(36)>`\ \ :ref:`X(238) <X(238)>` (the :term:`trilinear polar <trilinear-polar>` of :ref:`X(81) <X(81)>`). The lines AA″, BB″, CC″ concur in :ref:`X(58) <X(58)>`. (Randy Hutson, July 20, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the 2nd circumperp triangle. Let :g:`A″ <A″>` be the trilinear product :g:`B' <B'>`\ \*\ :g:`C' <C'>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. :g:`A″ <A″>`, :g:`B″ <B″>`, :g:`C″ <C″>` are collinear on line :ref:`X(36) <X(36)>`\ \ :ref:`X(238) <X(238)>` (the :term:`trilinear polar <trilinear-polar>` of :ref:`X(81) <X(81)>`). The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(58) <X(58)>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 

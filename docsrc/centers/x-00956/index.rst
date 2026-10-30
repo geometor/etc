@@ -16,22 +16,18 @@ X(956) = INTERSECTION OF LINES X(1)X(6) AND X(3)X(8)
    :alt: X(956) = INTERSECTION OF LINES X(1)X(6) AND X(3)X(8)
    :align: center
 
-   **X(956) = INTERSECTION OF LINES X(1)X(6) AND X(3)X(8)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(956) = INTERSECTION OF LINES X(1)X(6) AND X(3)X(8)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = a\ :sup:`3` - a(b - c)\ :sup:`2` - 2bc(b + c)
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a^{3} - a(b - c)^{2} - 2bc(b + c)`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`4.929739666792`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(956) <X(956)>` = 2\ :ref:`X(1) <X(1)>` - 3\ :ref:`X(2) <X(2)>` - (r/R)\ :ref:`X(3) <X(3)>`
-
-.. container:: note-item
-
-   :ref:`X(956) <X(956)>` lies.
+   * :ref:`X(956) <X(956)>` = :math:`2` :ref:`X(1) <X(1)>` - :math:`3` :ref:`X(2) <X(2)>` - :math:`(r/R)` :ref:`X(3) <X(3)>`
 
 .. collapse:: Incident Central Lines
    :badge: 12 lines

@@ -10,13 +10,13 @@ X(79) = ISOGONAL CONJUGATE OF X(35)
 
 .. enunciation::
 
-   Let A' be the reflection of :ref:`X(1) <X(1)>` in sideline BC, and define B' and C' cyclically. Then the lines AA', BB', CC' concur in :ref:`X(79) <X(79)>`. (Eric Danneels, :cite:`Hyacinthos <hyacinthos>` 7892, 9/13/03)
+   Let :g:`A' <A'>` be the reflection of :ref:`X(1) <X(1)>` in sideline :g:`BC <[ B C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Then the lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(79) <X(79)>`. (Eric Danneels, :cite:`Hyacinthos <hyacinthos>` 7892, 9/13/03)
 
 .. figure:: x-00079.svg
    :alt: X(79) = ISOGONAL CONJUGATE OF X(35)
    :align: center
 
-   **X(79) = ISOGONAL CONJUGATE OF X(35)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(79) = ISOGONAL CONJUGATE OF X(35)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -30,16 +30,12 @@ X(79) = ISOGONAL CONJUGATE OF X(35)
    * **Trilinears:** :math:`bc/(b^{2} + c^{2} - a^{2} + bc)`
    * **Trilinears:** :math:`(\sin A/2)(\sin 3B/2)(\sin 3C/2) : :`
    * **Trilinears:** :math:`\sin(A/2) \csc(3A/2) : :`
-   * **Barycentrics:** :math:`1/(b c + 2 SA) : :`
+   * **Barycentrics:** :math:`1/(b c + 2 S_{A}) : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(79) <X(79)>` = (2r + 3R)\*\ :ref:`X(1) <X(1)>` + 6r\*\ :ref:`X(2) <X(2)>` - 6r\*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-
-.. container:: note-item
-
-   :ref:`X(79) <X(79)>` lies.
+   * :ref:`X(79) <X(79)>` = :math:`(2r + 3R)` :ref:`X(1) <X(1)>` + :math:`6r` :ref:`X(2) <X(2)>` - :math:`6r` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. collapse:: Incident Central Lines
    :badge: 14 lines
@@ -59,7 +55,7 @@ X(79) = ISOGONAL CONJUGATE OF X(35)
    * :ref:`X(79) <X(79)>` = X(2914) of Fuhrmann triangle
    * :ref:`X(79) <X(79)>` = :term:`antigonal image <antigonal-image>` of X(3065)
    * :ref:`X(79) <X(79)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(650) <X(650)>`\ X(4802)
-   * :ref:`X(79) <X(79)>` = perspector of ABC and extraversion triangle of :ref:`X(80) <X(80)>`
+   * :ref:`X(79) <X(79)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(80) <X(80)>`
    * :ref:`X(79) <X(79)>` = Hofstadter -1/2 point
    * :ref:`X(79) <X(79)>` = trilinear pole of line :ref:`X(650) <X(650)>`\ X(4802)
    * :ref:`X(79) <X(79)>` = trilinear product of vertices of reflection triangle of :ref:`X(1) <X(1)>`
@@ -70,15 +66,15 @@ Notes
 
 .. container:: note-item
 
-   A'B'C' is also the reflection triangle of :ref:`X(1) <X(1)>`. The lines AA', BB', CC' concur in :ref:`X(79) <X(79)>`. (:person:`Randy Hutson <randy-hutson>`, July 20, 2016)
+   :g:`A'B'C' << A' B' C' >>` is also the reflection triangle of :ref:`X(1) <X(1)>`. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(79) <X(79)>`. (:person:`Randy Hutson <randy-hutson>`, July 20, 2016)
 
 .. container:: note-item
 
-   Let P and Q be the intersections of line BC and circle {:ref:`X(1) <X(1)>`,2r}. Let X = :ref:`X(1) <X(1)>`. Let A' be the circumcenter of triangle PQX, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(79) <X(79)>`. (Compare to :ref:`X(592) <X(592)>`, where the circle is the 1st Lemoine circle) (Randy Hutson, July 20, 2016)
+   Let :g:`P <P>` and :g:`Q <Q>` be the intersections of line :g:`BC <[ B C ]>` and circle {:ref:`X(1) <X(1)>`,2r}. Let :g:`X <X>` = :ref:`X(1) <X(1)>`. Let :g:`A' <A'>` be the circumcenter of triangle :g:`PQX << P Q X >>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(79) <X(79)>`. (Compare to :ref:`X(592) <X(592)>`, where the circle is the 1st Lemoine circle) (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
-   Let A\ :sub:`25`\ B\ :sub:`25`\ C\ :sub:`25` be Gemini triangle 25. Let A' be the perspector of conic {A,B,C,B\ :sub:`25`,C\ :sub:`25`}}, and define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(79) <X(79)>`. (Randy Hutson, January 15, 2019)
+   Let :g:`A_{25}B_{25}C_{25} << A_25 B_25 C_25 >>` be Gemini triangle 25. Let :g:`A' <A'>` be the perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B_{25} <B_25>`,\ :g:`C_{25} <C_25>`}}, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(79) <X(79)>`. (Randy Hutson, January 15, 2019)
 
 .. container:: note-item
 

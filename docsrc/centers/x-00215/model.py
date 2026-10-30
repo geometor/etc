@@ -23,7 +23,7 @@ def construct_x_00215(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(215) = X(1)-CEVA CONJUGATE OF X(50) on reference triangle ABC."""
-    X_215 = eval_trilinear_point(model, A, B, C, '(sin(3*A))*(sin(3*B) + sin(3*C) - sin(3*A))', ID="X(215)", classes=["selected", "target"])
+    X_215 = eval_trilinear_point(model, A, B, C, '(cos(3*A/2))**(2)', ID="X(215)", classes=["selected", "target"])
     X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
     X_49 = eval_trilinear_point(model, A, B, C, 'cos(3*A)', ID="X(49)", classes=["center", "incident"])
     central_line(model, X_1, X_49, 1, 49, incident=True)

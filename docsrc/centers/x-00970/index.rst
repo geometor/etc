@@ -16,7 +16,7 @@ X(970) = CENTER OF THE APOLLONIUS CIRCLE
    :alt: X(970) = CENTER OF THE APOLLONIUS CIRCLE
    :align: center
 
-   **X(970) = CENTER OF THE APOLLONIUS CIRCLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(970) = CENTER OF THE APOLLONIUS CIRCLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,10 +27,6 @@ X(970) = CENTER OF THE APOLLONIUS CIRCLE
    :badge: 1 form
 
    * **Trilinears:** :math:`(r^{2} - s^{2}) \cos A + 2rs \sin A`
-
-.. container:: note-item
-
-   :ref:`X(970) <X(970)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines
@@ -45,7 +41,7 @@ X(970) = CENTER OF THE APOLLONIUS CIRCLE
    * :ref:`X(970) <X(970)>` = {:ref:`X(181) <X(181)>`,X(1682)}-harmonic conjugate of :ref:`X(1) <X(1)>`
    * :ref:`X(970) <X(970)>` = {:ref:`X(371) <X(371)>`,\ :ref:`X(372) <X(372)>`}-harmonic conjugate of X(5019)
    * :ref:`X(970) <X(970)>` = inverse-in-excircles-radical-circle of X(3814)
-   * :ref:`X(970) <X(970)>` = perspector of Apollonius triangle and cross-triangle of ABC and Apollonius triangle
+   * :ref:`X(970) <X(970)>` = perspector of Apollonius triangle and cross-triangle of :g:`ABC << A B C >>` and Apollonius triangle
 
 Notes
 -----

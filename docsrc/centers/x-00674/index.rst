@@ -16,16 +16,12 @@ X(674) = CROSSDIFFERENCE OF X(6) AND X(514)
    :alt: X(674) = CROSSDIFFERENCE OF X(6) AND X(514)
    :align: center
 
-   **X(674) = CROSSDIFFERENCE OF X(6) AND X(514)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(674) = CROSSDIFFERENCE OF X(6) AND X(514)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = a[b\ :sup:`3` + c\ :sup:`3` - a(b\ :sup:`2` + c\ :sup:`2`)]
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
-
-.. container:: note-item
-
-   :ref:`X(674) <X(674)>` lies.
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a[b^{3} + c^{3} - a(b^{2} + c^{2})]`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines

@@ -16,7 +16,7 @@ X(384) = THE CONWAY POINT: EULER LINE INTERCEPT OF LINE X(32)X(76)
    :alt: X(384) = THE CONWAY POINT: EULER LINE INTERCEPT OF LINE X(32)X(76)
    :align: center
 
-   **X(384) = THE CONWAY POINT: EULER LINE INTERCEPT OF LINE X(32)X(76)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(384) = THE CONWAY POINT: EULER LINE INTERCEPT OF LINE X(32)X(76)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,20 +27,16 @@ X(384) = THE CONWAY POINT: EULER LINE INTERCEPT OF LINE X(32)X(76)
 .. collapse:: Linear Combinations
    :badge: 2 combinations
 
-   * :ref:`X(384) <X(384)>` = 3 csc\ :sup:`2`\ (ω) :ref:`X(2) <X(2)>` - 4 :ref:`X(3) <X(3)>` = 3 :ref:`X(2) <X(2)>` - 4 sin\ :sup:`2`\ (ω) :ref:`X(3) <X(3)>`
-   * :ref:`X(384) <X(384)>` = 3 :ref:`X(2) <X(2)>` + X(6658), 2 X(5007) - 3 X(12150), X(6655) - 6 X(6661), 2 X(6656) + X(6658), X(6656) - 3 X(6661), X(6658) + 6 X(6661), X(7760) - 3 X(12150), 2 X(7765) - 3 X(7827), 3 X(7827) - 4 X(7829), 4 X(7849) - 3 X(7883), 2 X(7873) - 3 X(7883), 3 X(22521) - 4 X(32134)
+   * :ref:`X(384) <X(384)>` = :math:`3 \csc^{2}(\omega )` :ref:`X(2) <X(2)>` - :math:`4` :ref:`X(3) <X(3)>` = :math:`3` :ref:`X(2) <X(2)>` - :math:`4 \sin^{2}(\omega )` :ref:`X(3) <X(3)>`
+   * :ref:`X(384) <X(384)>` = :math:`3` :ref:`X(2) <X(2)>` + X(6658), :math:`2` X(5007) - :math:`3` X(12150), X(6655) - :math:`6` X(6661), :math:`2` X(6656) + X(6658), X(6656) - :math:`3` X(6661), X(6658) + :math:`6` X(6661), X(7760) - :math:`3` X(12150), :math:`2` X(7765) - :math:`3` X(7827), :math:`3` X(7827) - :math:`4` X(7829), :math:`4` X(7849) - :math:`3` X(7883), :math:`2` X(7873) - :math:`3` X(7883), :math:`3` X(22521) - :math:`4` X(32134)
 
 .. container:: note-item
 
-   :ref:`X(384) <X(384)>` lies on these lines these conics: {A,B,C,\ :ref:`X(4) <X(4)>`,\ :ref:`X(384) <X(384)>`,X(1031),X(2998),X(3114),X(9230),X(14970)}} and {A,B,C,\ :ref:`X(25) <X(25)>`,\ :ref:`X(384) <X(384)>`,\ :ref:`X(733) <X(733)>`,X(1915),X(3224),X(3407), X(11380),X(14370}}
+   :ref:`X(384) <X(384)>` lies on these lines these conics: {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(4) <X(4)>`,\ :ref:`X(384) <X(384)>`,X(1031),X(2998),X(3114),X(9230),X(14970)}} and {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(25) <X(25)>`,\ :ref:`X(384) <X(384)>`,\ :ref:`X(733) <X(733)>`,X(1915),X(3224),X(3407), X(11380),X(14370}}
 
 .. container:: note-item
 
    :ref:`X(384) <X(384)>` lies on these cubics: `K020 <https://bernard-gibert.pagesperso-orange.fr/Exemples/k020.html>`__, `K322 <https://bernard-gibert.pagesperso-orange.fr/Exemples/k322.html>`__, `K421 <https://bernard-gibert.pagesperso-orange.fr/Exemples/k421.html>`__, `K532 <https://bernard-gibert.pagesperso-orange.fr/Exemples/k532.html>`__, `K828 <https://bernard-gibert.pagesperso-orange.fr/Exemples/k828.html>`__
-
-.. container:: note-item
-
-   :ref:`X(384) <X(384)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 329 lines
@@ -66,12 +62,12 @@ X(384) = THE CONWAY POINT: EULER LINE INTERCEPT OF LINE X(32)X(76)
    * :ref:`X(384) <X(384)>` = polar conjugate of X(37892)
    * :ref:`X(384) <X(384)>` = polar conjugate of X(37892)
    * :ref:`X(384) <X(384)>` = antigonal conjugate of X(37888)
-   * :ref:`X(384) <X(384)>` = intersection of tangents at PU(1) to hyperbola {A,B,C,\ :ref:`X(99) <X(99)>`,PU(1)}
-   * :ref:`X(384) <X(384)>` = perspector of ABC and symmedial triangle of 1st Brocard triangle
+   * :ref:`X(384) <X(384)>` = intersection of tangents at PU(1) to hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(99) <X(99)>`,PU(1)}
+   * :ref:`X(384) <X(384)>` = perspector of :g:`ABC << A B C >>` and symmedial triangle of 1st Brocard triangle
    * :ref:`X(384) <X(384)>` = perspector of 1st and 3rd Brocard triangles
    * :ref:`X(384) <X(384)>` = X(4027)-of-6th-Brocard-triangle
-   * :ref:`X(384) <X(384)>` = perspector of 1st Brocard triangle and cross-triangle of ABC and 1st Brocard triangle
-   * :ref:`X(384) <X(384)>` = perspector of 3rd Brocard triangle and cross-triangle of ABC and 3rd Brocard triangle
+   * :ref:`X(384) <X(384)>` = perspector of 1st Brocard triangle and cross-triangle of :g:`ABC << A B C >>` and 1st Brocard triangle
+   * :ref:`X(384) <X(384)>` = perspector of 3rd Brocard triangle and cross-triangle of :g:`ABC << A B C >>` and 3rd Brocard triangle
    * :ref:`X(384) <X(384)>` = pole of Brocard axis wrt conic {:ref:`X(13) <X(13)>`,\ :ref:`X(14) <X(14)>`,\ :ref:`X(15) <X(15)>`,\ :ref:`X(16) <X(16)>`,\ :ref:`X(76) <X(76)>`}}
    * :ref:`X(384) <X(384)>` = homothetic center of 1st and 6th Brocard triangles
    * :ref:`X(384) <X(384)>` = endo-homothetic center of 1st and 6th anti-Brocard triangles
@@ -100,19 +96,19 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(384) <X(384)>` has Shinagawa coefficients (E + F)\ :sup:`2` - S\ :sup:`2`, 2S\ :sup:`2`).
+   As a point on the Euler line, :ref:`X(384) <X(384)>` has Shinagawa coefficients :math:`(E + F)^{2} - S^{2}, 2S^{2})`.
 
 .. container:: note-item
 
-   Let A'B'C' be the 1st Brocard triangle. Let A″ be the cevapoint of B' and C', and define B″ and C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(384) <X(384)>`. (:person:`Randy Hutson <randy-hutson>`, December 11, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the 1st Brocard triangle. Let :g:`A″ <A″>` be the cevapoint of :g:`B' <B'>` and :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(384) <X(384)>`. (:person:`Randy Hutson <randy-hutson>`, December 11, 2015)
 
 .. container:: note-item
 
-   Let La be the line through the 2nd Brocard circle intercepts (other than PU(1)) of lines AP(1) and AU(1); define Lb and Lc cyclically. Let A' = Lb∩Lc, B' = Lc∩La, C' = La∩Lb. The triangle A'B'C' is here introduced as the 6th Brocard triangle; A'B'C' is homothetic to the 1st Brocard triangle at :ref:`X(384) <X(384)>`, homothetic to the 1st anti-Brocard triangle at :ref:`X(3) <X(3)>`, and perspective to the 3rd Brocard triangle at :ref:`X(384) <X(384)>`. The 2nd Brocard circle of ABC is the 1st Lemoine circle of A'B'C'. (Randy Hutson, December 26, 2015)
+   Let :g:`L_{a} <L_a>` be the line through the 2nd Brocard circle intercepts (other than PU(1)) of lines AP(1) and AU(1); define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, :g:`B' <B'>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C' <C'>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. The triangle :g:`A'B'C' << A' B' C' >>` is here introduced as the 6th Brocard triangle; :g:`A'B'C' << A' B' C' >>` is homothetic to the 1st Brocard triangle at :ref:`X(384) <X(384)>`, homothetic to the 1st anti-Brocard triangle at :ref:`X(3) <X(3)>`, and perspective to the 3rd Brocard triangle at :ref:`X(384) <X(384)>`. The 2nd Brocard circle of :g:`ABC << A B C >>` is the 1st Lemoine circle of :g:`A'B'C' << A' B' C' >>`. (Randy Hutson, December 26, 2015)
 
 .. container:: note-item
 
-   Let A'B'C' be the 1st Brocard-reflected triangle. Let A″ be the isogonal conjugate of A', and define B″ and C″ cyclically. The lines A'A″, B'B″, C'C″ concur in :ref:`X(384) <X(384)>`. (Randy Hutson, June 7, 2019)
+   Let :g:`A'B'C' << A' B' C' >>` be the 1st Brocard-reflected triangle. Let :g:`A″ <A″>` be the isogonal conjugate of :g:`A' <A'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(384) <X(384)>`. (Randy Hutson, June 7, 2019)
 
 .. toctree::
    :hidden:

@@ -10,18 +10,18 @@ X(917) = X(516)-CROSS CONJUGATE OF X(4)
 
 .. enunciation::
 
-   Let A'B'C' be the 1st circumperp triangle. Let A″ be the pole, wrt the polar circle, of line B'C', and define B″and C″ cyclically. The lines A'A″, B'B″, C'C″ concur in :ref:`X(917) <X(917)>`. (:person:`Randy Hutson <randy-hutson>`, July 11, 2019)
+   Let :g:`A'B'C' << A' B' C' >>` be the 1st circumperp triangle. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ B' C' ]>`, and define B″and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(917) <X(917)>`. (:person:`Randy Hutson <randy-hutson>`, July 11, 2019)
 
 .. figure:: x-00917.svg
    :alt: X(917) = X(516)-CROSS CONJUGATE OF X(4)
    :align: center
 
-   **X(917) = X(516)-CROSS CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(917) = X(516)-CROSS CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`(\sec A)/((a - b) \sin 2B + (a - c) \sin 2C) : :`
-   | **Barycentrics:** :math:`1/((a^2 - b^2 - c^2) (a^3 (b^2 + c^2) - a^2 (b^3 + c^3) - a (b^2 - c^2)^2 + b^5 - b^3 c^2 - b^2 c^3 + c^5)) : :`
+   | **Barycentrics:** :math:`1/((a^{2} - b^{2} - c^{2}) (a^{3} (b^{2} + c^{2}) - a^{2} (b^{3} + c^{3}) - a (b^{2} - c^{2})^{2} + b^{5} - b^{3} c^{2} - b^{2} c^{3} + c^{5})) : :`
    | **Search Value (6, 9, 13):** :math:`14.158875247015`
 
 .. container:: note-item
@@ -43,9 +43,9 @@ X(917) = X(516)-CROSS CONJUGATE OF X(4)
    * :ref:`X(917) <X(917)>` = :ref:`X(516) <X(516)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(4) <X(4)>`
    * :ref:`X(917) <X(917)>` = polar conjugate of :term:`isotomic conjugate <isotomic-conjugate>` of X(2989)
    * :ref:`X(917) <X(917)>` = :ref:`X(63) <X(63)>`-:term:`isoconjugate <isoconjugate>` of X(8608)
-   * :ref:`X(917) <X(917)>` = antipode of :ref:`X(4) <X(4)>` in hyperbola {A,B,C,\ :ref:`X(4) <X(4)>`,\ :ref:`X(27) <X(27)>`}
+   * :ref:`X(917) <X(917)>` = antipode of :ref:`X(4) <X(4)>` in hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(4) <X(4)>`,\ :ref:`X(27) <X(27)>`}
    * :ref:`X(917) <X(917)>` = polar-circle-inverse of :ref:`X(118) <X(118)>`
-   * :ref:`X(917) <X(917)>` = the point of intersection, other than A, B, and C, of the circumcircle and hyperbola {A,B,C,\ :ref:`X(4) <X(4)>`,\ :ref:`X(27) <X(27)>`}
+   * :ref:`X(917) <X(917)>` = the point of intersection, other than :g:`A <A>`, :g:`B <B>`, and :g:`C <C>`, of the circumcircle and hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(4) <X(4)>`,\ :ref:`X(27) <X(27)>`}
 
 .. toctree::
    :hidden:

@@ -18,10 +18,10 @@ Process & Pipeline
    - Splits the raw HTML source volumes (`ETC.html`, `ETCPart2.html`–`ETCPart27.html`) into introductory sections, inter-center group preambles, and 53,144 individual center records in `resources/split/`.
 
 2. **Semantic Parsing (`parser.py`)**:
-   - Extracts canonical identifiers (`X(n)`), primary names, aliases, trilinear/barycentric/tripolar coordinates, vector/barycentric linear combinations, construction notes, incidence loci (central lines, circles, conics, cubics), and functional center relations (`X(n) = f(X(i), X(j))`).
+   - Extracts canonical identifiers (`X(n)`), primary names, aliases, trilinear/barycentric/tripolar coordinates (including `<p>Barycentrics` definitions and alternate `=` forms), vector/barycentric linear combinations, construction notes, incidence loci (central lines, circles, conics, cubics), and functional center relations (`X(n) = f(X(i), X(j))`) with comprehensive `:math:` LaTeX normalization.
 
 3. **Scholarly Apparatus & Cross-Referencing (`glossary.py`)**:
-   - Builds `resources/glossary.json`, `resources/persons.json`, and `resources/citations.json` and generates `docsrc/glossary.rst`, `docsrc/persons.rst`, and `docsrc/bibliography.rst` to power interactive `:term:`, `:person:`, `:cite:`, and `:ref:` roles across all centers.
+   - Builds `resources/glossary.json`, `resources/persons.json`, and `resources/citations.json` and generates `docsrc/glossary.rst`, `docsrc/persons.rst`, and `docsrc/bibliography.rst` to power interactive `:term:`, `:person:`, `:cite:`, `:ref:`, and Euclidean `:g:` geometric element roles across all centers, with two-way hover highlighting synchronized to the interactive SVG diagrams.
 
 4. **Composable Geometric Modeling & Multi-Triangle SVGs (`ops.py`, `construct.py`, `render.py`)**:
    - Constructs each center symbolically via composable geometric operations in `geometor.etc.ops`, emitting a standalone `model.py` script and serialized `x-NNNNN.json` model for `geometor/explorer <https://github.com/geometor/explorer>`_.

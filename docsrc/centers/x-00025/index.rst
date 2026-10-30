@@ -16,7 +16,7 @@ X(25) = HOMOTHETIC CENTER OF ORTHIC AND TANGENTIAL TRIANGLES
    :alt: X(25) = HOMOTHETIC CENTER OF ORTHIC AND TANGENTIAL TRIANGLES
    :align: center
 
-   **X(25) = HOMOTHETIC CENTER OF ORTHIC AND TANGENTIAL TRIANGLES** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(25) = HOMOTHETIC CENTER OF ORTHIC AND TANGENTIAL TRIANGLES** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -34,11 +34,7 @@ X(25) = HOMOTHETIC CENTER OF ORTHIC AND TANGENTIAL TRIANGLES
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(25) <X(25)>` = 6 R^2 :ref:`X(2) <X(2)>` - SW :ref:`X(3) <X(3)>`
-
-.. container:: note-item
-
-   :ref:`X(25) <X(25)>` lies.
+   * :ref:`X(25) <X(25)>` = :math:`6 R^{2}` :ref:`X(2) <X(2)>` - :math:`S_{\omega}` :ref:`X(3) <X(3)>`
 
 .. collapse:: Incident Central Lines
    :badge: 838 lines
@@ -80,8 +76,8 @@ X(25) = HOMOTHETIC CENTER OF ORTHIC AND TANGENTIAL TRIANGLES
    * :ref:`X(25) <X(25)>` = tangential isogonal conjugate of :ref:`X(159) <X(159)>`
    * :ref:`X(25) <X(25)>` = insimilicenter of nine-point circle and tangential circle
    * :ref:`X(25) <X(25)>` = orthic isogonal conjugate of :ref:`X(6) <X(6)>`
-   * :ref:`X(25) <X(25)>` = homothetic center of ABC and the 2nd :term:`pedal triangle <pedal-triangle>` of :ref:`X(4) <X(4)>`
-   * :ref:`X(25) <X(25)>` = homothetic center of ABC and the 2nd :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(3) <X(3)>`
+   * :ref:`X(25) <X(25)>` = homothetic center of :g:`ABC << A B C >>` and the 2nd :term:`pedal triangle <pedal-triangle>` of :ref:`X(4) <X(4)>`
+   * :ref:`X(25) <X(25)>` = homothetic center of :g:`ABC << A B C >>` and the 2nd :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(3) <X(3)>`
    * :ref:`X(25) <X(25)>` = homothetic center of the :term:`medial triangle <medial-triangle>` and the 3rd pedal triangle of :ref:`X(4) <X(4)>`
    * :ref:`X(25) <X(25)>` = homothetic center of the :term:`anticomplementary triangle <anticomplementary-triangle>` and the 3rd antipedal triangle of :ref:`X(3) <X(3)>`
    * :ref:`X(25) <X(25)>` = homothetic center of reflection of :term:`orthic triangle <orthic-triangle>` in :ref:`X(4) <X(4)>` and reflection of :term:`tangential triangle <tangential-triangle>` in :ref:`X(3) <X(3)>`
@@ -97,17 +93,17 @@ X(25) = HOMOTHETIC CENTER OF ORTHIC AND TANGENTIAL TRIANGLES
    * :ref:`X(25) <X(25)>` = vertex conjugate of foci of orthic inconic
    * :ref:`X(25) <X(25)>` = vertex conjugate of PU(112)
    * :ref:`X(25) <X(25)>` = Zosma transform of :ref:`X(63) <X(63)>`
-   * :ref:`X(25) <X(25)>` = :ref:`X(57) <X(57)>`-of-the-tangential triangle if ABC is acute
-   * :ref:`X(25) <X(25)>` = perspector of ABC and the (pedal triangle of :ref:`X(4) <X(4)>` in the orthic triangle)
-   * :ref:`X(25) <X(25)>` = :ref:`X(57) <X(57)>` of orthic triangle if ABC is acute
+   * :ref:`X(25) <X(25)>` = :ref:`X(57) <X(57)>`-of-the-tangential triangle if :g:`ABC << A B C >>` is acute
+   * :ref:`X(25) <X(25)>` = perspector of :g:`ABC << A B C >>` and the (pedal triangle of :ref:`X(4) <X(4)>` in the orthic triangle)
+   * :ref:`X(25) <X(25)>` = :ref:`X(57) <X(57)>` of orthic triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(25) <X(25)>` = intersection of tangents at :ref:`X(371) <X(371)>` and :ref:`X(372) <X(372)>` to the orthocubic K006
-   * :ref:`X(25) <X(25)>` = insimilicenter of circumcircle and incircle of orthic triangle if ABC is acute; the exsimilicenter is X(1593)
-   * :ref:`X(25) <X(25)>` = perspector of ABC and circummedial tangential triangle
-   * :ref:`X(25) <X(25)>` = homothetic center of ABC and orthocevian triangle of :ref:`X(2) <X(2)>`
+   * :ref:`X(25) <X(25)>` = insimilicenter of circumcircle and incircle of orthic triangle if :g:`ABC << A B C >>` is acute; the exsimilicenter is X(1593)
+   * :ref:`X(25) <X(25)>` = perspector of :g:`ABC << A B C >>` and circummedial tangential triangle
+   * :ref:`X(25) <X(25)>` = homothetic center of :g:`ABC << A B C >>` and orthocevian triangle of :ref:`X(2) <X(2)>`
    * :ref:`X(25) <X(25)>` = homothetic center of orthocevian triangle of :ref:`X(2) <X(2)>` and Ara triangle
    * :ref:`X(25) <X(25)>` = {X(8880),X(8881)}-harmonic conjugate of :ref:`X(184) <X(184)>`
-   * :ref:`X(25) <X(25)>` = homothetic center of medial triangle and cross-triangle of ABC and Ara triangle
-   * :ref:`X(25) <X(25)>` = perspector of ABC and cross-triangle of ABC and 4th Brocard triangle
+   * :ref:`X(25) <X(25)>` = homothetic center of medial triangle and cross-triangle of :g:`ABC << A B C >>` and Ara triangle
+   * :ref:`X(25) <X(25)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and 4th Brocard triangle
    * :ref:`X(25) <X(25)>` = harmonic center of circumcircle and circle O(PU(4))
    * :ref:`X(25) <X(25)>` = Thomson-isogonal conjugate of X(5656)
    * :ref:`X(25) <X(25)>` = homothetic center of Aries and 2nd Hyacinth triangles
@@ -115,7 +111,7 @@ X(25) = HOMOTHETIC CENTER OF ORTHIC AND TANGENTIAL TRIANGLES
    * :ref:`X(25) <X(25)>` = crosspoint, wrt orthic triangle, of :ref:`X(4) <X(4)>` and :ref:`X(193) <X(193)>`
    * :ref:`X(25) <X(25)>` = barycentric product of (real or nonreal) circumcircle intercepts of orthic axis
    * :ref:`X(25) <X(25)>` = vertex conjugate of X(24007) and X(24008) (the Kiepert hyperbola intercepts of the orthic axis)
-   * :ref:`X(25) <X(25)>` = excentral-to-ABC :term:`functional image <functional-image>` of :ref:`X(57) <X(57)>`
+   * :ref:`X(25) <X(25)>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X(57) <X(57)>`
    * :ref:`X(25) <X(25)>` = barycentric product of vertices of infinite altitude triangle
    * :ref:`X(25) <X(25)>` = intersection of tangents to Walsmith rectangular hyperbola at :ref:`X(74) <X(74)>` and :ref:`X(110) <X(110)>`
    * :ref:`X(25) <X(25)>` = {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): (:ref:`2 <X(2)>`, :ref:`3 <X(3)>`, 7484), (:ref:`2 <X(2)>`, :ref:`4 <X(4)>`, :ref:`427 <X(427)>`), (:ref:`2 <X(2)>`, :ref:`5 <X(5)>`, 7539), (:ref:`3 <X(3)>`, :ref:`4 <X(4)>`, 1593), (:ref:`3 <X(3)>`, :ref:`5 <X(5)>`, 7395), (:ref:`4 <X(4)>`, :ref:`5 <X(5)>`, 7507), (:ref:`4 <X(4)>`, :ref:`24 <X(24)>`, :ref:`3 <X(3)>`)
@@ -125,31 +121,31 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(25) <X(25)>` has Shinagawa coefficients (F, -E - F).
+   As a point on the Euler line, :ref:`X(25) <X(25)>` has Shinagawa coefficients :math:`(F, -E - F)`.
 
 .. container:: note-item
 
-   Let A' be the center of the conic through the contact points of the incircle and the A-excircle with the sidelines of ABC. Define B' and C' cyclically. Let A″ be the center of the conic through the contact points of the B- and C- excircles with the sidelines of ABC. Define B″ and C″ cyclically. Let A\* be the midpoint of A' and A″, and define B\* and C\* cyclically. The triangle A\*B\*C\* is perspective to ABC at :ref:`X(25) <X(25)>`. See also :ref:`X(6) <X(6)>`, :ref:`X(218) <X(218)>`, :ref:`X(222) <X(222)>`, :ref:`X(940) <X(940)>`, X(1743). (:person:`Randy Hutson <randy-hutson>`, July 23, 2015)
+   Let :g:`A' <A'>` be the center of the conic through the contact points of the incircle and the :g:`A <A>`-excircle with the sidelines of :g:`ABC << A B C >>`. Define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Let :g:`A″ <A″>` be the center of the conic through the contact points of the B- and C- excircles with the sidelines of :g:`ABC << A B C >>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Let :g:`A* <A*>` be the midpoint of :g:`A' <A'>` and :g:`A″ <A″>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The triangle :g:`A*B*C* << A* B* C* >>` is perspective to :g:`ABC << A B C >>` at :ref:`X(25) <X(25)>`. See also :ref:`X(6) <X(6)>`, :ref:`X(218) <X(218)>`, :ref:`X(222) <X(222)>`, :ref:`X(940) <X(940)>`, X(1743). (:person:`Randy Hutson <randy-hutson>`, July 23, 2015)
 
 .. container:: note-item
 
-   Let A' be the radical center of the nine-point circle and the B- and C-power circles. efine B' and C' cyclically. The triangle A'B'C' is homothetic with the orthic triangle, and the center of homothety is :ref:`X(25) <X(25)>`. Also :ref:`X(25) <X(25)>` is the point of intersection of these two lines: isotomic conjugate of polar conjugate of van Aubel line (i.e., line :ref:`X(2) <X(2)>`\ \ :ref:`X(3) <X(3)>`), and polar conjugate of isotomic conjugate of van Aubel line (i.e., line :ref:`X(25) <X(25)>`\ \ :ref:`X(393) <X(393)>`). Also, :ref:`X(25) <X(25)>` is the trilinear pole of line :ref:`X(512) <X(512)>`\ X(1692), this line being the isogonal conjugate of the isotomic conjugate of the orthic axis; the line :ref:`X(512) <X(512)>`\ X(1692) is also the polar of :ref:`X(76) <X(76)>` wrt polar circle, and the line is also the radical axis of circumcircle and 2nd Lemoine circle. (Randy Hutson, September 5, 2015)
+   Let :g:`A' <A'>` be the radical center of the nine-point circle and the B- and C-power circles. efine :g:`B' <B'>` and :g:`C' <C'>` cyclically. The triangle :g:`A'B'C' << A' B' C' >>` is homothetic with the orthic triangle, and the center of homothety is :ref:`X(25) <X(25)>`. Also :ref:`X(25) <X(25)>` is the point of intersection of these two lines: isotomic conjugate of polar conjugate of van Aubel line (i.e., line :ref:`X(2) <X(2)>`\ \ :ref:`X(3) <X(3)>`), and polar conjugate of isotomic conjugate of van Aubel line (i.e., line :ref:`X(25) <X(25)>`\ \ :ref:`X(393) <X(393)>`). Also, :ref:`X(25) <X(25)>` is the trilinear pole of line :ref:`X(512) <X(512)>`\ X(1692), this line being the isogonal conjugate of the isotomic conjugate of the orthic axis; the line :ref:`X(512) <X(512)>`\ X(1692) is also the polar of :ref:`X(76) <X(76)>` wrt polar circle, and the line is also the radical axis of circumcircle and 2nd Lemoine circle. (Randy Hutson, September 5, 2015)
 
 .. container:: note-item
 
-   Let A'B'C' be the orthic triangle. Let A″ be the barycentric product of the (real or imaginary) circumcircle intercepts of line B'C'. Define B″, C″ cyclically. The lines AA″, BB″, CC″ concur in :ref:`X(25) <X(25)>`. (Randy Hutson, October 27, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the orthic triangle. Let :g:`A″ <A″>` be the barycentric product of the (real or imaginary) circumcircle intercepts of line :g:`B'C' <[ B' C' ]>`. Define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(25) <X(25)>`. (Randy Hutson, October 27, 2015)
 
 .. container:: note-item
 
-   The 2nd Ehrmann triangle, defined in the preamble to X(8537), can be generalized as follows. Let P be a point in the plane of ABC and not on BC∪CA∪AB. Let Ab the the point of intersection of the circle {P,B,C}} and the line AB, and define Bc and Ca cyclically. Define Ac symmetrically, and define Ba and Cb cyclically. Let A' = BcBa∩CaCb, and define B' and C' cyclically. Triangle A'B'C', here introduced as the **P-Ehrmann triangle**, is homothetic to the orthic triangle. The :ref:`X(1) <X(1)>`-Ehrmann triangle is the intangents triangle, and the :ref:`X(6) <X(6)>`-Ehrmann triangle is the 2nd Ehrmann triangle. If P lies on the circumcircle, the P-Ehrmann triangle is the tangential triangle. If P is on the Brocard 2nd cubic K018 or the circumcircle, then the P-Ehrmann triangle is perspective to ABC. The homothetic center of the orthic triangle and the :ref:`X(4) <X(4)>`-Ehrmann triangle is :ref:`X(25) <X(25)>`. (Randy Hutson, February 10, 2016)
+   The 2nd Ehrmann triangle, defined in the preamble to X(8537), can be generalized as follows. Let :g:`P <P>` be a point in the plane of :g:`ABC << A B C >>` and not on :g:`BC <[ B C ]>`\ ∪\ :g:`CA <[ C A ]>`\ ∪\ :g:`AB <[ A B ]>`. Let :g:`A_{b} <A_b>` the the point of intersection of the circle {P,B,C}} and the line :g:`AB <[ A B ]>`, and define :g:`B_{c} <B_c>` and :g:`C_{a} <C_a>` cyclically. Define :g:`A_{c} <A_c>` symmetrically, and define :g:`B_{a} <B_a>` and :g:`C_{b} <C_b>` cyclically. Let :g:`A' <A'>` = :g:`B_{c}B_{a} <[ B_c B_a ]>`\ ∩\ :g:`C_{a}C_{b} <[ C_a C_b ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Triangle :g:`A'B'C' << A' B' C' >>`, here introduced as the **P-Ehrmann triangle**, is homothetic to the orthic triangle. The :ref:`X(1) <X(1)>`-Ehrmann triangle is the intangents triangle, and the :ref:`X(6) <X(6)>`-Ehrmann triangle is the 2nd Ehrmann triangle. If P lies on the circumcircle, the P-Ehrmann triangle is the tangential triangle. If P is on the Brocard 2nd cubic K018 or the circumcircle, then the P-Ehrmann triangle is perspective to :g:`ABC << A B C >>`. The homothetic center of the orthic triangle and the :ref:`X(4) <X(4)>`-Ehrmann triangle is :ref:`X(25) <X(25)>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 
-   Let H(X) denote hodpoint of a point X, as defined in the preamble just before X(40139). Then H(:ref:`X(2) <X(2)>`) = H(X(8115)) = H(X(8116)) = :ref:`X(25) <X(25)>`. (Radosław Żak, October 29, 2020)
+   Let H(X) denote hodpoint of a point :g:`X <X>`, as defined in the preamble just before X(40139). Then H(:ref:`X(2) <X(2)>`) = H(X(8115)) = H(X(8116)) = :ref:`X(25) <X(25)>`. (Radosław Żak, October 29, 2020)
 
 .. container:: note-item
 
-   Let Ga = reflection of :ref:`X(6) <X(6)>` in line BC, and define Gb and Gc cyclically. Let T = tangential triangle and H = orthic triangle. Then each pair of the triangles GaGbGc, T, and H are perspective, and the perspector in all three cases is :ref:`X(25) <X(25)>`. (:person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, March 14, 2021)
+   Let :g:`G_{a} <G_a>` = reflection of :ref:`X(6) <X(6)>` in line :g:`BC <[ B C ]>`, and define :g:`G_{b} <G_b>` and :g:`G_{c} <G_c>` cyclically. Let :g:`T <T>` = tangential triangle and H = orthic triangle. Then each pair of the triangles :g:`G_{a}G_{b}G_{c} << G_a G_b G_c >>`, T, and H are perspective, and the perspector in all three cases is :ref:`X(25) <X(25)>`. (:person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, March 14, 2021)
 
 .. container:: note-item
 

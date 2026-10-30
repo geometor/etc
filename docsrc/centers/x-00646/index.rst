@@ -10,23 +10,19 @@ X(646) = BARYCENTRIC MULTIPLIER FOR YFF PARABOLA
 
 .. enunciation::
 
-   :ref:`X(646) <X(646)>` satisfies the equation X\*(incircle) = Yff parabola, where \* denotes barycentric multiplication, defined by
+   :ref:`X(646) <X(646)>` satisfies the equation :g:`X* <X*>`\ (incircle) = Yff parabola, where \* denotes barycentric multiplication, defined by
 
 .. figure:: x-00646.svg
    :alt: X(646) = BARYCENTRIC MULTIPLIER FOR YFF PARABOLA
    :align: center
 
-   **X(646) = BARYCENTRIC MULTIPLIER FOR YFF PARABOLA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(646) = BARYCENTRIC MULTIPLIER FOR YFF PARABOLA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = (b + c - a)/[a\ :sup:`2`\ (b - c)]
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = (b + c - a)/[a(b - c)]
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = (b + c - a)/[a^{2}(b - c)]`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = (b + c - a)/[a(b - c)]`
    | **Search Value (6, 9, 13):** :math:`9.403725070080`
-
-.. container:: note-item
-
-   :ref:`X(646) <X(646)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines
@@ -48,7 +44,7 @@ Notes
 
 .. container:: note-item
 
-   (u : v : w) \* (x : y : z) = ux : vy : wz (barycentric coordinates, see note at :ref:`X(2) <X(2)>`).
+   (:math:`u : v : w`) \* (:math:`x : y : z`) =\ :math:`ux : vy : wz` (barycentric coordinates, see note at :ref:`X(2) <X(2)>`).
 
 .. toctree::
    :hidden:

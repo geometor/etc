@@ -11,6 +11,7 @@ from geometor.etc.ops import (
     central_line,
     construct_baseline_triangle,
     create_model,
+    eval_barycentric_point,
     eval_trilinear_point,
     isogonal_conjugate,
     promote_point_to_top,
@@ -22,7 +23,7 @@ def construct_x_00687(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(687) = TRILINEAR POLE OF LINE X(4)X(110) on reference triangle ABC."""
-    X_686 = eval_trilinear_point(model, A, B, C, 'sec(B)*csc(A - B) + sec(C)*csc(A - C)', ID="X(686)", classes=["center"])
+    X_686 = eval_barycentric_point(model, A, B, C, 'a**(2)*(b**(2) - c**(2))*(a**(2) - b**(2) - c**(2))*(a**(4)*(b**(2) + c**(2)) - 2*a**(2)*(b**(4) - b**(2)*c**(2) + c**(4)) + (b**(2) - c**(2))**(2)*(b**(2) + c**(2)))', ID="X(686)", classes=["center"])
     X_687 = isogonal_conjugate(model, A, B, C, X_686, ID="X(687)", classes=["selected", "target"])
     X_107 = eval_trilinear_point(model, A, B, C, '1/(cos(A)*(sin(2*B) - sin(2*C)))', ID="X(107)", classes=["center", "incident"])
     X_250 = eval_trilinear_point(model, A, B, C, '(sec(A))*(csc(B - C))**(2)', ID="X(250)", classes=["center", "incident"])

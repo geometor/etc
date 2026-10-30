@@ -12,7 +12,7 @@ X(456) = EULER X(195)-11th-SUBSTITUTION POINT — Code
    :alt: X(456) = EULER X(195)-11th-SUBSTITUTION POINT
    :align: center
 
-   **X(456) = EULER X(195)-11th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(456) = EULER X(195)-11th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

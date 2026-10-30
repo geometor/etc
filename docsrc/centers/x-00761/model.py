@@ -14,6 +14,7 @@ from geometor.etc.ops import (
     eval_trilinear_point,
     incenter_of,
     isogonal_conjugate,
+    point_from_barycentrics,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -23,10 +24,10 @@ def construct_x_00761(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(761) = EVEN (1, 4) CIRCUMCIRCLE POINT on reference triangle ABC."""
-    X_760 = eval_trilinear_point(model, A, B, C, 'a**(0)*(b**(4)+ c**(4)) - a**(3)*(b**(1)+ c**(1))', ID="X(760)", classes=["center"])
+    X_760 = point_from_barycentrics(model, A, B, C, -0.61673691, -0.15501766, 0.77175457, ID="X(760)", classes=["center"])
     X_761 = isogonal_conjugate(model, A, B, C, X_760, ID="X(761)", classes=["selected", "target"])
     X_665 = eval_trilinear_point(model, A, B, C, 'a*((a - b)**(2)*(a + b - c) - (c - a)**(2)*(c + a - b))', ID="X(665)", classes=["center", "incident"])
-    X_743 = eval_trilinear_point(model, A, B, C, '1/(a**(-2)*(b**(2)+ c**(2)) - a**(1)*(b**(-1)+ c**(-1)))', ID="X(743)", classes=["center", "incident"])
+    X_743 = point_from_barycentrics(model, A, B, C, -0.00071359148, 0.99931351, 0.001400079, ID="X(743)", classes=["center", "incident"])
     central_line(model, X_665, X_743, 665, 743, incident=True)
     X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
     X_825 = eval_trilinear_point(model, A, B, C, '1/(a**(-1)*(b**(3) - c**(3)) + a**(2)*(b**(0) - c**(0)))', ID="X(825)", classes=["center", "incident"])

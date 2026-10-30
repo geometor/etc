@@ -31,7 +31,7 @@ def construct_x_00479(
     X_354 = eval_trilinear_point(model, A, B, C, '(b - c)**(2) - a*b - a*c', ID="X(354)", classes=["center", "incident"])
     central_line(model, X_7, X_354, 7, 354, incident=True)
     X_269 = eval_trilinear_point(model, A, B, C, '(a**(2) - (b - c)**(2))**(2)', ID="X(269)", classes=["center", "incident"])
-    X_614 = eval_trilinear_point(model, A, B, C, '(cot(B/2))**(2) + (cot(C/2))**(2)', ID="X(614)", classes=["center", "incident"])
+    X_614 = eval_trilinear_point(model, A, B, C, 'a**(2) + b**(2) + c**(2) - 2*b*c', ID="X(614)", classes=["center", "incident"])
     central_line(model, X_269, X_614, 269, 614, incident=True)
     return promote_point_to_top(model, X_479)
 

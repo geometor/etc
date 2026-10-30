@@ -12,7 +12,7 @@ X(944) = HOFSTADTER TRAPEZOID POINT — Code
    :alt: X(944) = HOFSTADTER TRAPEZOID POINT
    :align: center
 
-   **X(944) = HOFSTADTER TRAPEZOID POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(944) = HOFSTADTER TRAPEZOID POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

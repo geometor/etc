@@ -14,6 +14,7 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     feuerbach_point_of,
+    intersect_lines,
     promote_point_to_top,
     spieker_center_of,
 )
@@ -24,13 +25,13 @@ def construct_x_00121(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(121) = X(106)-OF-MEDIAL-TRIANGLE on reference triangle ABC."""
-    X_121 = eval_trilinear_point(model, A, B, C, 'b*c*(b + c - 2*a)*(b**(3)+ c**(3)+ a*(b**(2)+ c**(2)) - 2*b*c*(b + c))', ID="X(121)", classes=["selected", "target"])
-    X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["center", "incident"])
-    X_11 = feuerbach_point_of(model, A, B, C, ID="X(11)", classes=["center", "incident"])
-    central_line(model, X_10, X_11, 10, 11, incident=True)
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
-    X_106 = eval_trilinear_point(model, A, B, C, 'a/(2*a - b - c)', ID="X(106)", classes=["center", "incident"])
-    central_line(model, X_2, X_106, 2, 106, incident=True)
+    X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["center"])
+    X_11 = feuerbach_point_of(model, A, B, C, ID="X(11)", classes=["center"])
+    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
+    X_106 = eval_trilinear_point(model, A, B, C, 'a/(2*a - b - c)', ID="X(106)", classes=["center"])
+    central_line(model, X_10, X_11, 10, 11)
+    central_line(model, X_2, X_106, 2, 106)
+    X_121 = intersect_lines(model, X_10, X_11, X_2, X_106, ID="X(121)", classes=["selected", "target"])
     X_116 = eval_trilinear_point(model, A, B, C, 'b*c*((b - c)**(2)*(b**(2) + b*c + c**(2) - a*b - a*c))', ID="X(116)", classes=["center", "incident"])
     X_141 = eval_trilinear_point(model, A, B, C, 'b*c*(b**(2) + c**(2))', ID="X(141)", classes=["center", "incident"])
     central_line(model, X_116, X_141, 116, 141, incident=True)

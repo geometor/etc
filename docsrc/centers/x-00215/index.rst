@@ -16,23 +16,20 @@ X(215) = X(1)-CEVA CONJUGATE OF X(50)
    :alt: X(215) = X(1)-CEVA CONJUGATE OF X(50)
    :align: center
 
-   **X(215) = X(1)-CEVA CONJUGATE OF X(50)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(215) = X(1)-CEVA CONJUGATE OF X(50)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = (sin 3A)(sin 3B + sin 3C - sin 3A)
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = (\sin 3A)(\sin 3B + \sin 3C - \sin 3A)`
+   | **Barycentrics:** :math:`(\sin A)f(A,B,C) : (\sin B)f(B,C,A) : (\sin C)f(C,A,B)`
    | **Search Value (6, 9, 13):** :math:`1.577243820289`
 
 .. collapse:: Alternate Coordinates
    :badge: 3 forms
 
-   * **Trilinears:** :math:`\cos^{2}(3A/2) : \cos^{2}(3B/2) : \cos^{2}(3C/2) (M. Iliev, 4/12/07)`
-   * **Trilinears:** :math:`1 + \cos 3A : 1 + \cos 3B : 1+ \cos 3C (M. Iliev, 4/12/07)`
-   * **Trilinears:** :math:`a^3 (a^2 - b^2 - c^2 + b c)^2 (a - b - c) : :`
-
-.. container:: note-item
-
-   :ref:`X(215) <X(215)>` lies.
+   * **Trilinears:** :math:`\cos^{2}(3A/2) : \cos^{2}(3B/2) : \cos^{2}(3C/2)` (M. Iliev, 4/12/07)
+   * **Trilinears:** :math:`1 + \cos 3A : 1 + \cos 3B : 1+ \cos 3C` (M. Iliev, 4/12/07)
+   * **Trilinears:** :math:`a^{3} (a^{2} - b^{2} - c^{2} + b c)^{2} (a - b - c) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines
@@ -44,13 +41,6 @@ X(215) = X(1)-CEVA CONJUGATE OF X(50)
    :badge: 1 relation
 
    * :ref:`X(215) <X(215)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`50 <X(50)>`)
-
-Notes
------
-
-.. container:: note-item
-
-   Barycentrics (sin A)f(A,B,C) : (sin B)f(B,C,A) : (sin C)f(C,A,B)
 
 .. toctree::
    :hidden:

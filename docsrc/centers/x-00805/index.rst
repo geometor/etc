@@ -10,18 +10,18 @@ X(805) = o-(- 2, 2) CIRCUMCIRCLE POINT
 
 .. enunciation::
 
-   Let A'B'C' be the vertex-triangle of the 2nd and 3rd Brocard triangles. The lines AA', BB', CC' concur in :ref:`X(805) <X(805)>`. (:person:`Randy Hutson <randy-hutson>`, March 25, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the vertex-triangle of the 2nd and 3rd Brocard triangles. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(805) <X(805)>`. (:person:`Randy Hutson <randy-hutson>`, March 25, 2016)
 
 .. figure:: x-00805.svg
    :alt: X(805) = o-(- 2, 2) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(805) = o-(- 2, 2) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(805) = o-(- 2, 2) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = 1/[a :sup:`-3`\ (b\ :sup:`2` - c\ :sup:`2`) + a\ :sup:`1`\ (b :sup:`-2` - c :sup:`-2`)]
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = 1/[a ^{-3}(b^{2} - c^{2}) + a^{1}(b ^{-2} - c ^{-2})]`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`0.223824932622`
 
 .. container:: note-item
@@ -46,18 +46,18 @@ X(805) = o-(- 2, 2) CIRCUMCIRCLE POINT
    * :ref:`X(805) <X(805)>` = Brocard-circle-inverse of X(32531)
    * :ref:`X(805) <X(805)>` = X(9831)-of-circumsymmedial-triangle
    * :ref:`X(805) <X(805)>` = intersection of antipedal lines of :ref:`X(98) <X(98)>` and :ref:`X(99) <X(99)>`
-   * :ref:`X(805) <X(805)>` = perspector of ABC and the triangle formed by reflecting line :ref:`X(5) <X(5)>`\ \ :ref:`X(39) <X(39)>` in the sides of ABC
+   * :ref:`X(805) <X(805)>` = perspector of :g:`ABC << A B C >>` and the triangle formed by reflecting line :ref:`X(5) <X(5)>`\ \ :ref:`X(39) <X(39)>` in the sides of :g:`ABC << A B C >>`
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let La, Lb, Lc be the lines through A, B, C, resp. parallel to the Brocard axis. Let Ma, Mb, Mc be the reflections of BC, CA, AB in La, Lb, Lc, resp. Let A' = Mb∩Mc, and define B' and C' cyclically. Triangle A'B'C' is inversely similar to, and 3 times the size of, ABC. The centroid of A'B'C' is :ref:`X(805) <X(805)>`; see :cite:`Hyacinthos #16741 <hyacinthos>`/16782, Sep 2008. (Randy Hutson, March 25, 2016)
+   Let :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` be the lines through :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, resp. parallel to the Brocard axis. Let :g:`M_{a} <M_a>`, :g:`M_{b} <M_b>`, :g:`M_{c} <M_c>` be the reflections of :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>` in :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>`, resp. Let :g:`A' <A'>` = :g:`M_{b} <M_b>`\ ∩\ :g:`M_{c} <M_c>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Triangle :g:`A'B'C' << A' B' C' >>` is inversely similar to, and 3 times the size of, :g:`ABC << A B C >>`. The centroid of :g:`A'B'C' << A' B' C' >>` is :ref:`X(805) <X(805)>`; see :cite:`Hyacinthos #16741 <hyacinthos>`/16782, Sep 2008. (Randy Hutson, March 25, 2016)
 
 .. container:: note-item
 
-   Let La, Lb, Lc be the lines through A, B, C, resp. parallel to the Lemoine axis. Let Ma, Mb, Mc be the reflections of BC, CA, AB in La, Lb, Lc, resp. Let A' = Mb∩Mc, and define B' and C' cyclically. Triangle A'B'C' is inversely similar to, and 3 times the size of, ABC. The centroid of A'B'C' is :ref:`X(805) <X(805)>`; see :cite:`Hyacinthos #16741 <hyacinthos>`/16782, Sep 2008. (Randy Hutson, March 25, 2016)
+   Let :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` be the lines through :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, resp. parallel to the Lemoine axis. Let :g:`M_{a} <M_a>`, :g:`M_{b} <M_b>`, :g:`M_{c} <M_c>` be the reflections of :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>` in :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>`, resp. Let :g:`A' <A'>` = :g:`M_{b} <M_b>`\ ∩\ :g:`M_{c} <M_c>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Triangle :g:`A'B'C' << A' B' C' >>` is inversely similar to, and 3 times the size of, :g:`ABC << A B C >>`. The centroid of :g:`A'B'C' << A' B' C' >>` is :ref:`X(805) <X(805)>`; see :cite:`Hyacinthos #16741 <hyacinthos>`/16782, Sep 2008. (Randy Hutson, March 25, 2016)
 
 .. toctree::
    :hidden:

@@ -16,22 +16,18 @@ X(906) = INTERSECTION OF LINES X(100)X(112) AND X(101)X(109)
    :alt: X(906) = INTERSECTION OF LINES X(100)X(112) AND X(101)X(109)
    :align: center
 
-   **X(906) = INTERSECTION OF LINES X(100)X(112) AND X(101)X(109)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(906) = INTERSECTION OF LINES X(100)X(112) AND X(101)X(109)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** (cos A)/[wb\ :sup:`2` - vc\ :sup:`2` + a(wb - vc)], u : v : w = :ref:`X(3) <X(3)>`
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = a\ :sup:`3`\ (b\ :sup:`2` + c\ :sup:`2` - a\ :sup:`2`)/(b - c)
+   | **Trilinears:** (cos A)/[:math:`wb^{2}` - :math:`vc^{2}` + a(wb - vc)],\ :math:`u : v : w` = :ref:`X(3) <X(3)>`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = a^{3}(b^{2} + c^{2} - a^{2})/(b - c)`
    | **Search Value (6, 9, 13):** :math:`-2.311286980824`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
    * **Trilinears:** :math:`(\sin 2A)/(b - c) : :`
-
-.. container:: note-item
-
-   :ref:`X(906) <X(906)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines

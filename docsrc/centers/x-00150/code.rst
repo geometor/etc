@@ -12,7 +12,7 @@ X(150) = REFLECTION OF X(20) IN X(103) — Code
    :alt: X(150) = REFLECTION OF X(20) IN X(103)
    :align: center
 
-   **X(150) = REFLECTION OF X(20) IN X(103)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(150) = REFLECTION OF X(20) IN X(103)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

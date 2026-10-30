@@ -11,25 +11,25 @@ X(98) = TARRY POINT
 
 .. enunciation::
 
-   Let A' be the apex of the isosceles triangle BA'C constructed inward on BC such that ∠A'BC = ∠A'CB = ω. Define B' nad C' cyclically. Let Ha be the orthocenter of BA'C, and define Hb and Hc cyclically. The lines AHa, BHb, CHc concur in :ref:`X(98) <X(98)>`. (:person:`Randy Hutson <randy-hutson>`, July 20, 2016)
+   Let :g:`A' <A'>` be the apex of the isosceles triangle :g:`BA'C << B A' C >>` constructed inward on :g:`BC <[ B C ]>` such that ∠\ :g:`A'BC << A' B C >>` = ∠\ :g:`A'CB << A' C B >>` = ω. Define :g:`B' <B'>` nad :g:`C' <C'>` cyclically. Let :g:`H_{a} <H_a>` be the orthocenter of :g:`BA'C << B A' C >>`, and define :g:`H_{b} <H_b>` and :g:`H_{c} <H_c>` cyclically. The lines :g:`AH_{a} <[ A H_a ]>`, :g:`BH_{b} <[ B H_b ]>`, :g:`CH_{c} <[ C H_c ]>` concur in :ref:`X(98) <X(98)>`. (:person:`Randy Hutson <randy-hutson>`, July 20, 2016)
 
 .. _preamble-0002:
 
 .. admonition:: Group Preamble — Centers on the circumcircle: X(74), X(98)-X(112)
    :class: note
 
-   Centers :ref:`X(74) <X(74)>`, :ref:`X(98) <X(98)>`-:ref:`X(112) <X(112)>`, and many others in ETC lie on the circumcircle. Mappings **Λ** and **Ψ** derived from such a point P for application to points X, are defined here:
+   Centers :ref:`X(74) <X(74)>`, :ref:`X(98) <X(98)>`-:ref:`X(112) <X(112)>`, and many others in ETC lie on the circumcircle. Mappings **Λ** and **Ψ** derived from such a point :g:`P <P>` for application to points :g:`X <X>`, are defined here:
 
-   Λ(P,X) = :term:`isogonal conjugate <isogonal-conjugate>` of the point where line PX meets the line at infinity.
+   Λ(P,X) = :term:`isogonal conjugate <isogonal-conjugate>` of the point where line :g:`PX <[ P X ]>` meets the line at infinity.
 
-   | Let Y = Λ(P,X), let Q = isogonal conjugate of P, and let Y and Z be the points where line YQ meets the circumcircle;
+   | Let Y = Λ(P,X), let :g:`Q <Q>` = isogonal conjugate of :g:`P <P>`, and let Y and Z be the points where line YQ meets the circumcircle;
    | then **Ψ(P,X) = Z.**
 
 .. figure:: x-00098.svg
    :alt: X(98) = TARRY POINT
    :align: center
 
-   **X(98) = TARRY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(98) = TARRY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -42,16 +42,12 @@ X(98) = TARRY POINT
    :badge: 2 forms
 
    * **Trilinears:** :math:`bc/(b^{4} + c^{4} - a^{2}b^{2} - a^{2}c^{2}) : :`
-   * **Tripolars:** :math:`|a (b^4 + c^4 - a^2 b^2 - a^2 c^2)| : :`
+   * **Tripolars:** :math:`|a (b^{4} + c^{4} - a^{2} b^{2} - a^{2} c^{2})| : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(98) <X(98)>` = :ref:`X(98) <X(98)>` = 2(r2 + 4rR - s2)(r2 + 2rR + s2)\*\ :ref:`X(1) <X(1)>` + 3(r4 + 4Rr3 + 2r2s2 - 4rRs2 + s4)\*\ :ref:`X(2) <X(2)>` - 2(r2 + 4rR - s2)(3r2 + 4rR - s2)\*\ :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-
-.. container:: note-item
-
-   :ref:`X(98) <X(98)>` lies.
+   * :ref:`X(98) <X(98)>` = :ref:`X(98) <X(98)>` = :math:`2(r2 + 4rR - s2)(r2 + 2rR + s2)` :ref:`X(1) <X(1)>` + :math:`3(r4 + 4Rr3 + 2r2s2 - 4rRs2 + s4)` :ref:`X(2) <X(2)>` - :math:`2(r2 + 4rR - s2)(3r2 + 4rR - s2)` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. collapse:: Incident Central Lines
    :badge: 613 lines
@@ -74,7 +70,7 @@ X(98) = TARRY POINT
    * :ref:`X(98) <X(98)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`230 <X(230)>`, :ref:`2 <X(2)>`), (:ref:`237 <X(237)>`, :ref:`6 <X(6)>`), (:ref:`248 <X(248)>`, :ref:`287 <X(287)>`), (:ref:`446 <X(446)>`, :ref:`511 <X(511)>`)
    * :ref:`X(98) <X(98)>` = :term:`crosssum <crosssum>` of :ref:`X(385) <X(385)>` and :ref:`X(401) <X(401)>`
    * :ref:`X(98) <X(98)>` = :ref:`X(2) <X(2)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(287) <X(287)>`
-   * :ref:`X(98) <X(98)>` = perspector of ABC and triangle formed by Lemoine axis (or PU(1) or PU(2)) reflected in sides of ABC
+   * :ref:`X(98) <X(98)>` = perspector of :g:`ABC << A B C >>` and triangle formed by Lemoine axis (or PU(1) or PU(2)) reflected in sides of :g:`ABC << A B C >>`
    * :ref:`X(98) <X(98)>` = Λ(:ref:`X(4) <X(4)>`, :ref:`X(69) <X(69)>`) (the line that is the isotomic conjugate of the Jerabek hyperbola)
    * :ref:`X(98) <X(98)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(6) <X(6)>`\ \ :ref:`X(523) <X(523)>` (polar of :ref:`X(297) <X(297)>` wrt polar circle, and the radical axis of circles with segments :ref:`X(13) <X(13)>`\ \ :ref:`X(16) <X(16)>` and :ref:`X(14) <X(14)>`\ \ :ref:`X(15) <X(15)>` as diameters)
    * :ref:`X(98) <X(98)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(297) <X(297)>` (line :ref:`X(114) <X(114)>`\ \ :ref:`X(132) <X(132)>`)
@@ -93,18 +89,18 @@ X(98) = TARRY POINT
    * :ref:`X(98) <X(98)>` = :ref:`X(129) <X(129)>`-of-excentral-triangle
    * :ref:`X(98) <X(98)>` = :ref:`X(130) <X(130)>`-of-hexyl-triangle
    * :ref:`X(98) <X(98)>` = :ref:`X(3) <X(3)>`-of-1st-anti-Brocard-triangle
-   * :ref:`X(98) <X(98)>` = perspector of ABC and 1st Neuberg triangle
+   * :ref:`X(98) <X(98)>` = perspector of :g:`ABC << A B C >>` and 1st Neuberg triangle
    * :ref:`X(98) <X(98)>` = trilinear product of vertices of 1st Neuberg triangle
    * :ref:`X(98) <X(98)>` = orthocenter of :ref:`X(13) <X(13)>`\ \ :ref:`X(14) <X(14)>`\ X(2394)
-   * :ref:`X(98) <X(98)>` = 2nd-Parry-to-ABC :term:`similarity image <similarity-image>` of :ref:`X(2) <X(2)>`
+   * :ref:`X(98) <X(98)>` = 2nd-Parry-to-:g:`ABC << A B C >>` :term:`similarity image <similarity-image>` of :ref:`X(2) <X(2)>`
    * :ref:`X(98) <X(98)>` = trilinear product of PU(88)
    * :ref:`X(98) <X(98)>` = X(2456) of 6th Brocard triangle
    * :ref:`X(98) <X(98)>` = midpoint of PU(135)
    * :ref:`X(98) <X(98)>` = bicentric sum of PU(135)
-   * :ref:`X(98) <X(98)>` = perspector of ABC and circumsymmedial triangle of Artzt triangle
+   * :ref:`X(98) <X(98)>` = perspector of :g:`ABC << A B C >>` and circumsymmedial triangle of Artzt triangle
    * :ref:`X(98) <X(98)>` = McCay-to-Artzt similarity image of :ref:`X(381) <X(381)>`
    * :ref:`X(98) <X(98)>` = circumcircle-antipode of :ref:`X(99) <X(99)>`
-   * :ref:`X(98) <X(98)>` = the point of intersection, other than A, B, and C, of the circumcircle and Kiepert hyperbola
+   * :ref:`X(98) <X(98)>` = the point of intersection, other than :g:`A <A>`, :g:`B <B>`, and :g:`C <C>`, of the circumcircle and Kiepert hyperbola
    * :ref:`X(98) <X(98)>` = Ψ(:ref:`X(101) <X(101)>`, :ref:`X(100) <X(100)>`
    * :ref:`X(98) <X(98)>` = Λ(:ref:`X(3) <X(3)>`, :ref:`X(6) <X(6)>`)
    * :ref:`X(98) <X(98)>` = homothetic center of 5th anti-Brocard triangle and Euler triangle
@@ -114,10 +110,10 @@ X(98) = TARRY POINT
    * :ref:`X(98) <X(98)>` = X(6233)-of-circumsymmedial-triangle
    * :ref:`X(98) <X(98)>` = Cundy-Parry Phi transform of :ref:`X(76) <X(76)>`
    * :ref:`X(98) <X(98)>` = Cundy-Parry Psi transform of :ref:`X(32) <X(32)>`
-   * :ref:`X(98) <X(98)>` = perspector of ABC and vertex-triangle of reflection triangles of PU(1)
+   * :ref:`X(98) <X(98)>` = perspector of :g:`ABC << A B C >>` and vertex-triangle of reflection triangles of PU(1)
    * :ref:`X(98) <X(98)>` = :ref:`X(2) <X(2)>`-of-2nd-anti-Parry-triangle
-   * :ref:`X(98) <X(98)>` = excentral-to-ABC :term:`functional image <functional-image>` of X(1282)
-   * :ref:`X(98) <X(98)>` = orthic-to-ABC functional image of :ref:`X(129) <X(129)>`
+   * :ref:`X(98) <X(98)>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of X(1282)
+   * :ref:`X(98) <X(98)>` = orthic-to-:g:`ABC << A B C >>` functional image of :ref:`X(129) <X(129)>`
    * :ref:`X(98) <X(98)>` = Ψ(:ref:`X(1) <X(1)>`, :ref:`X(810) <X(810)>`)
    * :ref:`X(98) <X(98)>` = Ψ(:ref:`X(811) <X(811)>`, :ref:`X(1) <X(1)>`)
    * :ref:`X(98) <X(98)>` = barycentric product of circumcircle intercepts of line :ref:`X(2) <X(2)>`\ \ :ref:`X(647) <X(647)>`
@@ -127,7 +123,7 @@ X(98) = TARRY POINT
    * :ref:`X(98) <X(98)>` = orthocenter of :ref:`X(114) <X(114)>`\ \ :ref:`X(115) <X(115)>`\ X(31953)
    * :ref:`X(98) <X(98)>` = :ref:`X(2) <X(2)>`-Ceva conjugate of X(36899)
    * :ref:`X(98) <X(98)>` = perspector of circumconic centered at X(36899)
-   * :ref:`X(98) <X(98)>` = the point of intersection, other than A, B, and C, of the circumcircle and hyperbola {A,B,C,\ :ref:`X(3) <X(3)>`,\ :ref:`X(25) <X(25)>`,\ :ref:`X(32) <X(32)>`}} (isogonal conjugate of line :ref:`X(4) <X(4)>`\ \ :ref:`X(69) <X(69)>`)
+   * :ref:`X(98) <X(98)>` = the point of intersection, other than :g:`A <A>`, :g:`B <B>`, and :g:`C <C>`, of the circumcircle and hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(3) <X(3)>`,\ :ref:`X(25) <X(25)>`,\ :ref:`X(32) <X(32)>`}} (isogonal conjugate of line :ref:`X(4) <X(4)>`\ \ :ref:`X(69) <X(69)>`)
    * :ref:`X(98) <X(98)>` = BSS(a→a^2) of :ref:`X(673) <X(673)>`
 
 Notes
@@ -135,7 +131,7 @@ Notes
 
 .. container:: note-item
 
-   Let A' be the apex of the isosceles triangle BA'C constructed outward on BC such that ∠A'BC = ∠A'CB = ω/2. Define B' and C' cyclically. Let Oa be the circumcenter of BA'C, and define Ob and Oc cyclically. The lines AOa, BOb, COc concur in :ref:`X(98) <X(98)>`. (Randy Hutson, July 20, 2016)
+   Let :g:`A' <A'>` be the apex of the isosceles triangle :g:`BA'C << B A' C >>` constructed outward on :g:`BC <[ B C ]>` such that ∠\ :g:`A'BC << A' B C >>` = ∠\ :g:`A'CB << A' C B >>` = ω/2. Define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Let :g:`O_{a} <O_a>` be the circumcenter of :g:`BA'C << B A' C >>`, and define :g:`O_{b} <O_b>` and :g:`O_{c} <O_c>` cyclically. The lines :g:`AO_{a} <[ A O_a ]>`, :g:`BO_{b} <[ B O_b ]>`, :g:`CO_{c} <[ C O_c ]>` concur in :ref:`X(98) <X(98)>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
@@ -143,15 +139,15 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the 1st Brocard triangle. Let A″ be the reflection of A in B'C', and define B″ and C″ cyclically. :ref:`X(98) <X(98)>` is the radical center of the circumcircles of AA'A″, BB'B″, CC'C″. (Randy Hutson, November 18, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the 1st Brocard triangle. Let :g:`A″ <A″>` be the reflection of :g:`A <A>` in :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. :ref:`X(98) <X(98)>` is the radical center of the circumcircles of :g:`AA'A″ << A A' A″ >>`, :g:`BB'B″ << B B' B″ >>`, :g:`CC'C″ << C C' C″ >>`. (Randy Hutson, November 18, 2015)
 
 .. container:: note-item
 
-   Let A'B'C' be the :term:`orthic triangle <orthic-triangle>`. Let La be the Lemoine axis of triangle AB'C', and define Lb and Lc cyclically. Let A″ = Lb∩Lc, and define B″ and C″ cyclically. Triangle A″B″C″ is inversely similar to ABC, with similicenter :ref:`X(2) <X(2)>`. The lines AA″, BB″, CC″ concur in :ref:`X(98) <X(98)>`, which is :ref:`X(4) <X(4)>`-of-A″B″C″. (Randy Hutson, July 31 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`L_{a} <L_a>` be the Lemoine axis of triangle :g:`AB'C' << A B' C' >>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Triangle :g:`A″B″C″ << A″ B″ C″ >>` is inversely similar to :g:`ABC << A B C >>`, with similicenter :ref:`X(2) <X(2)>`. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(98) <X(98)>`, which is :ref:`X(4) <X(4)>`-of-:g:`A″B″C″ << A″ B″ C″ >>`. (Randy Hutson, July 31 2018)
 
 .. container:: note-item
 
-   Let P be a point on the Steiner circumellipse. Let A' be the orthocenter of BCP, and define B' and C' cyclically. Let Q be the centroid of A'B'C'. The locus of Q as P varies is an ellipse similar and orthogonal to the Steiner circumellipse, and also centered at :ref:`X(2) <X(2)>`. When P = :ref:`X(671) <X(671)>`, Q = :ref:`X(98) <X(98)>`. See also X(6054) and X(24808). (Randy Hutson, October 15, 2018)
+   Let :g:`P <P>` be a point on the Steiner circumellipse. Let :g:`A' <A'>` be the orthocenter of :g:`BCP << B C P >>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Let :g:`Q <Q>` be the centroid of :g:`A'B'C' << A' B' C' >>`. The locus of Q as P varies is an ellipse similar and orthogonal to the Steiner circumellipse, and also centered at :ref:`X(2) <X(2)>`. When :g:`P <P>` = :ref:`X(671) <X(671)>`, :g:`Q <Q>` = :ref:`X(98) <X(98)>`. See also X(6054) and X(24808). (Randy Hutson, October 15, 2018)
 
 .. container:: note-item
 

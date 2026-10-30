@@ -12,6 +12,7 @@ from geometor.etc.ops import (
     centroid_of,
     construct_baseline_triangle,
     create_model,
+    eval_barycentric_point,
     eval_trilinear_point,
     isogonal_conjugate,
     promote_point_to_top,
@@ -23,7 +24,7 @@ def construct_x_00733(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(733) = EVEN (- 2, 2) CIRCUMCIRCLE POINT on reference triangle ABC."""
-    X_732 = eval_trilinear_point(model, A, B, C, 'a**(-3)*(b**(2)+ c**(2)) - a**(1)*(b**(-2)+ c**(-2))', ID="X(732)", classes=["center"])
+    X_732 = eval_barycentric_point(model, A, B, C, '(b**(2) + c**(2))*(a**(4) - b**(2)*c**(2))', ID="X(732)", classes=["center"])
     X_733 = isogonal_conjugate(model, A, B, C, X_732, ID="X(733)", classes=["selected", "target"])
     X_39 = eval_trilinear_point(model, A, B, C, 'a*(b**(2) + c**(2))', ID="X(39)", classes=["center", "incident"])
     X_83 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(2) + c**(2))', ID="X(83)", classes=["center", "incident"])

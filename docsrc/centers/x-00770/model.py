@@ -22,7 +22,7 @@ def construct_x_00770(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(770) = POINT ACAMAR on reference triangle ABC."""
-    X_770 = point_from_barycentrics(model, A, B, C, 14.48, -40.752, 27.272, ID="X(770)", classes=["selected", "target"])
+    X_770 = point_from_barycentrics(model, A, B, C, -2.8386427, 0.81274255, 3.0259002, ID="X(770)", classes=["selected", "target"])
     X_44 = eval_trilinear_point(model, A, B, C, 'b + c - 2*a', ID="X(44)", classes=["center", "incident"])
     X_513 = eval_trilinear_point(model, A, B, C, 'b - c', ID="X(513)", classes=["center", "incident"])
     central_line(model, X_44, X_513, 44, 513, incident=True)

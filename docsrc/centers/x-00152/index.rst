@@ -16,12 +16,12 @@ X(152) = REFLECTION OF X(20) IN X(101)
    :alt: X(152) = REFLECTION OF X(20) IN X(101)
    :align: center
 
-   **X(152) = REFLECTION OF X(20) IN X(101)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(152) = REFLECTION OF X(20) IN X(101)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where, f(a,b,c) = (by + cz - ax)/a, where x : y : z = :ref:`X(103) <X(103)>`
-   | **Barycentrics:** :math:`a^8 - a^7 (b + c) + a^6 (2 b^2 + b c + 2 c^2) - a^5 (5 b^3 - b^2 c - b c^2 + 5 c^3) - a^4 b c (b^2 - 6 b c + c^2) + a^3 (5 b^5 + b^4 c - 6 b^3 c^2 - 6 b^2 c^3 + b c^4 + 5 c^5) - a^2 (2 b^6 + b^5 c + 2 b^4 c^2 - 10 b^3 c^3 + 2 b^2 c^4 + b c^5 + 2 c^6) + a (b^7 - b^6 c - 3 b^5 c^2 + 3 b^4 c^3 + 3 b^3 c^4 - 3 b^2 c^5 - b c^6 + c^7) - b^8 + b^7 c + 2 b^6 c^2 - b^5 c^3 - 2 b^4 c^4 - b^3 c^5 + 2 b^2 c^6 + b c^7 - c^8 : :`
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = (by + cz - ax)/a`, where :math:`x : y : z` = :ref:`X(103) <X(103)>`
+   | **Barycentrics:** :math:`a^{8} - a^{7} (b + c) + a^{6} (2 b^{2} + b c + 2 c^{2}) - a^{5} (5 b^{3} - b^{2} c - b c^{2} + 5 c^{3}) - a^{4} b c (b^{2} - 6 b c + c^{2}) + a^{3} (5 b^{5} + b^{4} c - 6 b^{3} c^{2} - 6 b^{2} c^{3} + b c^{4} + 5 c^{5}) - a^{2} (2 b^{6} + b^{5} c + 2 b^{4} c^{2} - 10 b^{3} c^{3} + 2 b^{2} c^{4} + b c^{5} + 2 c^{6}) + a (b^{7} - b^{6} c - 3 b^{5} c^{2} + 3 b^{4} c^{3} + 3 b^{3} c^{4} - 3 b^{2} c^{5} - b c^{6} + c^{7}) - b^{8} + b^{7} c + 2 b^{6} c^{2} - b^{5} c^{3} - 2 b^{4} c^{4} - b^{3} c^{5} + 2 b^{2} c^{6} + b c^{7} - c^{8} : :`
    | **Search Value (6, 9, 13):** :math:`-16.600331726616`
 
 .. container:: note-item

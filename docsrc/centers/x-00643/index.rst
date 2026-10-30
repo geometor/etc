@@ -10,23 +10,19 @@ X(643) = TRILINEAR MULTIPLIER FOR KIEPERT PARABOLA
 
 .. enunciation::
 
-   :ref:`X(643) <X(643)>` satisfies the equation X\*(incircle) = Kiepert parabola, where \* denotes trilinear multiplication, defined by
+   :ref:`X(643) <X(643)>` satisfies the equation :g:`X* <X*>`\ (incircle) = Kiepert parabola, where \* denotes trilinear multiplication, defined by
 
 .. figure:: x-00643.svg
    :alt: X(643) = TRILINEAR MULTIPLIER FOR KIEPERT PARABOLA
    :align: center
 
-   **X(643) = TRILINEAR MULTIPLIER FOR KIEPERT PARABOLA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(643) = TRILINEAR MULTIPLIER FOR KIEPERT PARABOLA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) = (b + c - a)/(b\ :sup:`2` - c\ :sup:`2`)
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = (b + c - a)/(b^{2} - c^{2})`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`8.674646291873`
-
-.. container:: note-item
-
-   :ref:`X(643) <X(643)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines
@@ -46,7 +42,7 @@ Notes
 
 .. container:: note-item
 
-   (u : v : w) \* (x : y : z) = ux : vy : wz.
+   (:math:`u : v : w`) \* (:math:`x : y : z`) =\ :math:`ux : vy : wz`.
 
 .. toctree::
    :hidden:

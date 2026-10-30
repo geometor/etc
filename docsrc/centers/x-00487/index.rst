@@ -10,28 +10,24 @@ X(487) = ANTICOMPLEMENT OF X(486)
 
 .. enunciation::
 
-   :ref:`X(487) <X(487)>` is a perspector of triangles associated with squares that circumscribe ABC. (:person:`Floor van Lamoen <floor-van-lamoen>`, 4/29/98)
+   :ref:`X(487) <X(487)>` is a perspector of triangles associated with squares that circumscribe :g:`ABC << A B C >>`. (:person:`Floor van Lamoen <floor-van-lamoen>`, 4/29/98)
 
 .. figure:: x-00487.svg
    :alt: X(487) = ANTICOMPLEMENT OF X(486)
    :align: center
 
-   **X(487) = ANTICOMPLEMENT OF X(486)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(487) = ANTICOMPLEMENT OF X(486)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where f(A,B,C) = (cos A)(1 - csc A sin B sin C)
+   | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = (\cos A)(1 - \csc A \sin B \sin C)`
    | **Barycentrics:** :math:`(\sin A)f(A,B,C) : (\sin B)f(B,C,A) : (\sin C)f(C,A,B)`
    | **Search Value (6, 9, 13):** :math:`4.179064973709`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`(b^{2} + c^{2} - a^{2})(a^{2} - 2σ) : (c^{2} + a^{2} - b^{2})(b^{2} - 2σ) : (a^{2} + b^{2} - c^{2})(c^{2} - 2σ) (M. Iliev, 5/13/07)`
-
-.. container:: note-item
-
-   :ref:`X(487) <X(487)>` lies.
+   * **Barycentrics:** :math:`(b^{2} + c^{2} - a^{2})(a^{2} - 2\sigma ) : (c^{2} + a^{2} - b^{2})(b^{2} - 2\sigma ) : (a^{2} + b^{2} - c^{2})(c^{2} - 2\sigma )` (M. Iliev, 5/13/07)
 
 .. collapse:: Incident Central Lines
    :badge: 7 lines
@@ -55,7 +51,7 @@ Notes
 
 .. container:: note-item
 
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the inner Vecten triangle and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(487) <X(487)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (:person:`Randy Hutson <randy-hutson>`, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the inner Vecten triangle and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(487) <X(487)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (:person:`Randy Hutson <randy-hutson>`, August 30, 2020)
 
 .. toctree::
    :hidden:

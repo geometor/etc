@@ -10,13 +10,13 @@ X(200) = X(8)-CEVA CONJUGATE OF X(9)
 
 .. enunciation::
 
-   Let A'B'C' be the :term:`extouch triangle <extouch-triangle>`. Let A″ be the trilinear product of the circumcircle intercepts of line B'C', and define B″ and C″ cyclically. The lines A'A″, B'B″, C'C″ concur in :ref:`X(200) <X(200)>`. (:person:`Randy Hutson <randy-hutson>`, July 31 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`extouch triangle <extouch-triangle>`. Let :g:`A″ <A″>` be the trilinear product of the circumcircle intercepts of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(200) <X(200)>`. (:person:`Randy Hutson <randy-hutson>`, July 31 2018)
 
 .. figure:: x-00200.svg
    :alt: X(200) = X(8)-CEVA CONJUGATE OF X(9)
    :align: center
 
-   **X(200) = X(8)-CEVA CONJUGATE OF X(9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(200) = X(8)-CEVA CONJUGATE OF X(9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,13 +28,9 @@ X(200) = X(8)-CEVA CONJUGATE OF X(9)
    :badge: 4 forms
 
    * **Trilinears:** :math:`(b + c - a)^{2} : :`
-   * **Trilinears:** (1 + cos A)/(1 - cos A) : : (Randy Hutson, 9/23/2011)
-   * **Trilinears:** :math:`1 - \csc^2(A/2) : :`
-   * **Trilinears:** squared distance of A to Gergonne line : :
-
-.. container:: note-item
-
-   :ref:`X(200) <X(200)>` lies.
+   * **Trilinears:** :math:`(1 + \cos A)/(1 - \cos A) : :` (Randy Hutson, 9/23/2011)
+   * **Trilinears:** :math:`1 - \csc^{2}(A/2) : :`
+   * **Trilinears:** squared distance of :g:`A <A>` to Gergonne line : :
 
 .. collapse:: Incident Central Lines
    :badge: 18 lines
@@ -58,23 +54,23 @@ X(200) = X(8)-CEVA CONJUGATE OF X(9)
    * :ref:`X(200) <X(200)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(8) <X(8)>`}-harmonic conjugate of X(4853)
    * :ref:`X(200) <X(200)>` = {:ref:`X(2) <X(2)>`,\ :ref:`X(8) <X(8)>`}-harmonic conjugate of X(4847)
    * :ref:`X(200) <X(200)>` = homothetic center of :term:`anticomplementary triangle <anticomplementary-triangle>` and 3rd :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(1) <X(1)>`
-   * :ref:`X(200) <X(200)>` = homothetic center of ABC and :term:`medial triangle <medial-triangle>` of 3rd antipedal triangle of :ref:`X(1) <X(1)>`
+   * :ref:`X(200) <X(200)>` = homothetic center of :g:`ABC << A B C >>` and :term:`medial triangle <medial-triangle>` of 3rd antipedal triangle of :ref:`X(1) <X(1)>`
    * :ref:`X(200) <X(200)>` = Danneels point of :ref:`X(8) <X(8)>`
    * :ref:`X(200) <X(200)>` = polar conjugate of X(1847)
    * :ref:`X(200) <X(200)>` = trilinear square of :ref:`X(9) <X(9)>`
    * :ref:`X(200) <X(200)>` = trilinear product of the circumcircle intercepts with the excircles
    * :ref:`X(200) <X(200)>` = X(1899)-of-excentral-triangle
    * :ref:`X(200) <X(200)>` = complement of polar conjugate of isogonal conjugate of X(22153)
-   * :ref:`X(200) <X(200)>` = excentral-to-ABC :term:`barycentric image <barycentric-image>` of :ref:`X(57) <X(57)>`
-   * :ref:`X(200) <X(200)>` = mixtilinear-incentral-to-ABC barycentric image of :ref:`X(1) <X(1)>`
-   * :ref:`X(200) <X(200)>` = mixtilinear-excentral-to-ABC barycentric image of :ref:`X(1) <X(1)>`
+   * :ref:`X(200) <X(200)>` = excentral-to-:g:`ABC << A B C >>` :term:`barycentric image <barycentric-image>` of :ref:`X(57) <X(57)>`
+   * :ref:`X(200) <X(200)>` = mixtilinear-incentral-to-:g:`ABC << A B C >>` barycentric image of :ref:`X(1) <X(1)>`
+   * :ref:`X(200) <X(200)>` = mixtilinear-excentral-to-:g:`ABC << A B C >>` barycentric image of :ref:`X(1) <X(1)>`
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let A' be the trilinear product of the circumcircle intercepts of the A-excircle. Define B' and C' cyclically. The lines AA', BB', CC' concur in :ref:`X(200) <X(200)>`. (Randy Hutson, July 31 2018)
+   Let :g:`A' <A'>` be the trilinear product of the circumcircle intercepts of the :g:`A <A>`-excircle. Define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(200) <X(200)>`. (Randy Hutson, July 31 2018)
 
 .. container:: note-item
 

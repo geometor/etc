@@ -13,7 +13,7 @@ from geometor.etc.ops import (
     circumcenter_of,
     construct_baseline_triangle,
     create_model,
-    eval_barycentric_point,
+    point_from_barycentrics,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -23,7 +23,7 @@ def construct_x_00431(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(431) = EULER X(283)-5th-SUBSTITUTION POINT on reference triangle ABC."""
-    X_431 = eval_barycentric_point(model, A, B, C, '(b + c)*(2*a + b + c)*(-a**(2) + b**(2) - c**(2))*(a**(2) + b**(2) - c**(2))', ID="X(431)", classes=["selected", "target"])
+    X_431 = point_from_barycentrics(model, A, B, C, 0.33333333, 0.33333333, 0.33333333, ID="X(431)", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)

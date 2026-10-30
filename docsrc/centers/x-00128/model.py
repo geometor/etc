@@ -12,6 +12,7 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    intersect_lines,
     nine_point_center_of,
     point_from_barycentrics,
     promote_point_to_top,
@@ -23,13 +24,13 @@ def construct_x_00128(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(128) = X(74)-OF-ORTHIC-TRIANGLE on reference triangle ABC."""
-    X_128 = eval_trilinear_point(model, A, B, C, '(sec(A))*(cos(2*B) + cos(2*C))*(1 + 2*cos(2*A))*(cos(2*A) + 2*cos(2*B)*cos(2*C))', ID="X(128)", classes=["selected", "target"])
-    X_5 = nine_point_center_of(model, A, B, C, ID="X(5)", classes=["center", "incident"])
-    X_137 = point_from_barycentrics(model, A, B, C, 0.1354431, 0.64976082, 0.21479608, ID="X(137)", classes=["center", "incident"])
-    central_line(model, X_5, X_137, 5, 137, incident=True)
-    X_52 = eval_trilinear_point(model, A, B, C, 'cos(2*A)*cos(B - C)', ID="X(52)", classes=["center", "incident"])
-    X_134 = point_from_barycentrics(model, A, B, C, 0.20948933, 0.10124204, 0.68926863, ID="X(134)", classes=["center", "incident"])
-    central_line(model, X_52, X_134, 52, 134, incident=True)
+    X_5 = nine_point_center_of(model, A, B, C, ID="X(5)", classes=["center"])
+    X_137 = point_from_barycentrics(model, A, B, C, 0.1354431, 0.64976082, 0.21479608, ID="X(137)", classes=["center"])
+    X_52 = eval_trilinear_point(model, A, B, C, 'cos(2*A)*cos(B - C)', ID="X(52)", classes=["center"])
+    X_134 = point_from_barycentrics(model, A, B, C, 0.20948933, 0.10124204, 0.68926863, ID="X(134)", classes=["center"])
+    central_line(model, X_5, X_137, 5, 137)
+    central_line(model, X_52, X_134, 52, 134)
+    X_128 = intersect_lines(model, X_5, X_137, X_52, X_134, ID="X(128)", classes=["selected", "target"])
     X_53 = eval_trilinear_point(model, A, B, C, 'tan(A)*cos(B - C)', ID="X(53)", classes=["center", "incident"])
     X_139 = point_from_barycentrics(model, A, B, C, 0.0028749347, 0.23097013, 0.76615493, ID="X(139)", classes=["center", "incident"])
     central_line(model, X_53, X_139, 53, 139, incident=True)

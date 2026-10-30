@@ -10,34 +10,34 @@ X(155) = EIGENCENTER OF ORTHIC TRIANGLE
 
 .. enunciation::
 
-   Let (A) be the pedal circle of A wrt the :term:`tangential triangle <tangential-triangle>`, and define (B), (C) cyclically. The radical center of (A), (B), (C) = :ref:`X(155) <X(155)>`. (:person:`Randy Hutson <randy-hutson>`, December 10, 2016)
+   Let (A) be the pedal circle of :g:`A <A>` wrt the :term:`tangential triangle <tangential-triangle>`, and define (B), (C) cyclically. The radical center of (A), (B), (C) = :ref:`X(155) <X(155)>`. (:person:`Randy Hutson <randy-hutson>`, December 10, 2016)
 
 .. figure:: x-00155.svg
    :alt: X(155) = EIGENCENTER OF ORTHIC TRIANGLE
    :align: center
 
-   **X(155) = EIGENCENTER OF ORTHIC TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(155) = EIGENCENTER OF ORTHIC TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(\cos A)[\cos^{2}B + \cos^{2}C - \cos^{2}A] : :`
-   | **Barycentrics:** :math:`a^2 SA [a^2 (SA^2 - SB SC) - SA (SB^2 + SC^2)] : :`
+   | **Trilinears:** :math:`(\cos A)[\cos^{2} B + \cos^{2} C - \cos^{2} A] : :`
+   | **Barycentrics:** :math:`a^{2} S_{A} [a^{2} (S_{A}^{2} - S_{B} S_{C}) - S_{A} (S_{B}^{2} + S_{C}^{2})] : :`
    | **Search Value (6, 9, 13):** :math:`-0.264320420299`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`a^2 (a^2 - b^2 - c^2) (a^6 - 3 a^4 (b^2 + c^2) + a^2 (3 b^4 - 2 b^2 c^2 + 3 c^4) - (b^2 - c^2)^2 (b^2 + c^2)) : :`
+   * **Barycentrics:** :math:`a^{2} (a^{2} - b^{2} - c^{2}) (a^{6} - 3 a^{4} (b^{2} + c^{2}) + a^{2} (3 b^{4} - 2 b^{2} c^{2} + 3 c^{4}) - (b^{2} - c^{2})^{2} (b^{2} + c^{2})) : :`
 
 .. collapse:: Linear Combinations
    :badge: 2 combinations
 
-   * :ref:`X(155) <X(155)>` = 4 R^2 :ref:`X(5) <X(5)>` - SW :ref:`X(6) <X(6)>`, (J^2 - 3) :ref:`X(3) <X(3)>` - 2(J^2 - 2) :ref:`X(49) <X(49)>`, (J^2 + 1) :ref:`X(24) <X(24)>` - 2 J^2 :ref:`X(110) <X(110)>`, (J^2 + 3) :ref:`X(25) <X(25)>` - 4 :ref:`X(52) <X(52)>`
+   * :ref:`X(155) <X(155)>` = :math:`4 R^{2}` :ref:`X(5) <X(5)>` - :math:`S_{\omega}` :ref:`X(6) <X(6)>`, :math:`(J^{2} - 3)` :ref:`X(3) <X(3)>` - :math:`2(J^{2} - 2)` :ref:`X(49) <X(49)>`, :math:`(J^{2} + 1)` :ref:`X(24) <X(24)>` - :math:`2 J^{2}` :ref:`X(110) <X(110)>`, :math:`(J^{2} + 3)` :ref:`X(25) <X(25)>` - :math:`4` :ref:`X(52) <X(52)>`
    * 3 :ref:`X(2) <X(2)>` - 4 X(9820),\ :ref:`X(3) <X(3)>` - 3 X(3167),3 :ref:`X(3) <X(3)>` - 2 X(7689),3 :ref:`X(3) <X(3)>` - 4 X(12038),\ :ref:`X(3) <X(3)>` + 2 X(15083),2 :ref:`X(5) <X(5)>` - 3 X(5654),2 :ref:`X(5) <X(5)>` + X(9936),4 :ref:`X(5) <X(5)>` - 3 X(14852),3 :ref:`X(6) <X(6)>` - 2 X(8548),2 :ref:`X(26) <X(26)>` - 3 :ref:`X(154) <X(154)>`,3 :ref:`X(51) <X(51)>` - 2 X(12235),3 :ref:`X(51) <X(51)>` - X(21651),\ :ref:`X(68) <X(68)>` - 3 X(5654),2 :ref:`X(68) <X(68)>` - 3 X(14852),4 :ref:`X(110) <X(110)>` - X(15085),3 :ref:`X(154) <X(154)>` - 4 :ref:`X(156) <X(156)>`,3 :ref:`X(154) <X(154)>` - X(17834),4 :ref:`X(156) <X(156)>` - X(17834),3 :ref:`X(381) <X(381)>` - 4 X(5448),3 :ref:`X(381) <X(381)>` - 2 X(9927),3 :ref:`X(381) <X(381)>` - X(12429),2 X(1147) - 3 X(3167),3 X(1147) - X(7689),3 X(1147) - 2 X(12038),4 X(1147) - X(12163),2 X(1147) + X(12164),X(1498) + 2 X(16266),5 X(1656) - 4 X(5449),4 X(1658) - 5 X(17821),3 X(1853) - 4 X(13371),3 X(1853) - 2 X(32140),3 X(3060) + X(12271),9 X(3167) - 2 X(7689),9 X(3167) - 4 X(12038),6 X(3167) - X(12163),3 X(3167) + X(12164),3 X(3167) + 2 X(15083),5 X(3567) - X(12282),9 X(5054) - 8 X(20191),3 X(5093) - X(6391),4 X(5448) - X(12429),3 X(5587) - X(9896),3 X(5654) + X(9936),3 X(5886) - 2 X(12259),2 X(6193) + X(12293),X(6193) + 2 X(22660),4 X(7689) - 3 X(12163),2 X(7689) + 3 X(12164),X(7689) + 3 X(15083),X(8548) - 3 X(19139),5 X(8567) - 4 X(32138),4 X(9820) - X(11411),3 X(9909) - 5 X(14530),2 X(9925) + X(11477),2 X(9936) + 3 X(14852),4 X(10282) - 3 X(14070),3 X(10606) - 4 X(11250),3 X(11206) - X(31305),4 X(11255) - 3 X(17813),8 X(12038) - 3 X(12163),4 X(12038) + 3 X(12164),2 X(12038) + 3 X(15083),X(12163) + 2 X(12164),X(12163) + 4 X(15083),X(12293) - 4 X(22660),2 X(12893) - 3 X(32609),4 X(13561) - 5 X(31283),3 X(18324) - 4 X(32171),4 X(18377) - 3 X(18405),5 X(19132) - 4 X(19154)
 
 .. container:: note-item
 
-   :ref:`X(155) <X(155)>` lies on the following curves: Feuerbach hyperbola of T, Jerabek hyperbola of T, Kiepert circumhyperbola of T, where T = tangential triangle; the Feuerbach circumhyperbola of the :term:`orthic triangle <orthic-triangle>`; the cubics K006, K044, K176, K339, K364, K389, K500, K742;.
+   :ref:`X(155) <X(155)>` lies on the following curves: Feuerbach hyperbola of :g:`T <T>`, Jerabek hyperbola of :g:`T <T>`, Kiepert circumhyperbola of :g:`T <T>`, where :g:`T <T>` = tangential triangle; the Feuerbach circumhyperbola of the :term:`orthic triangle <orthic-triangle>`; the cubics K006, K044, K176, K339, K364, K389, K500, K742;.
 
 .. collapse:: Incident Central Lines
    :badge: 298 lines
@@ -48,7 +48,7 @@ X(155) = EIGENCENTER OF ORTHIC TRIANGLE
 .. collapse:: Functional Relations
    :badge: 30 relations
 
-   * :ref:`X(155) <X(155)>` = :ref:`X(4) <X(4)>`-of-tangential-triangle. This point is also the center of the circle which cuts (extended) lines BC, CA, AB in pairs of points A' and A″, B' and B″, C' and C″, respectively, such that angles A'AA″, B'BB″, C'CC″ are all right angles. This is the **Dou circle,** described in **Jordi Dou,** Problem 1140, *Crux Mathematicorum,* 28 (2002) 461-462.
+   * :ref:`X(155) <X(155)>` = :ref:`X(4) <X(4)>`-of-tangential-triangle. This point is also the center of the circle which cuts (extended) lines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>` in pairs of points :g:`A' <A'>` and :g:`A″ <A″>`, :g:`B' <B'>` and :g:`B″ <B″>`, :g:`C' <C'>` and :g:`C″ <C″>`, respectively, such that angles :g:`A'AA″ << A' A A″ >>`, :g:`B'BB″ << B' B B″ >>`, :g:`C'CC″ << C' C C″ >>` are all right angles. This is the **Dou circle,** described in **Jordi Dou,** Problem 1140, *Crux Mathematicorum,* 28 (2002) 461-462.
    * :ref:`X(155) <X(155)>` = midpoint of X(i) and X(j) for these {i,j}: {:ref:`3 <X(3)>`, 12164}, {:ref:`4 <X(4)>`, 6193}, {:ref:`68 <X(68)>`, 9936}, {1147, 15083}, {1351, 19588}, {6237, 6238}, {12160, 12166}, {12319, 14683}, {12422, 12423}, {16266, 32139}, {17838, 17847}
    * :ref:`X(155) <X(155)>` = reflection of X(i) in X(j) for these {i,j}: {:ref:`3 <X(3)>`, 1147}, {:ref:`4 <X(4)>`, 22660}, {:ref:`6 <X(6)>`, 19139}, {:ref:`26 <X(26)>`, :ref:`156 <X(156)>`}, {:ref:`64 <X(64)>`, 12084}, {:ref:`68 <X(68)>`, :ref:`5 <X(5)>`}, {1498, 32139}, {2931, :ref:`110 <X(110)>`}, {3448, 23306}, {7387, 6759}, {7689, 12038}, {9927, 5448}, {10620, 12901}, {11411, 12359}, {12085, 13346}, {12163, :ref:`3 <X(3)>`}, {12164, 15083}, {12293, :ref:`4 <X(4)>`}, {12302, 5504}, {12359, 9820}, {12421, 13292}, {12429, 9927}, {12902, 19479}, {14216, 23335}, {14852, 5654}, {15085, 2931}, {15136, 3292}, {16003, 15115}, {17834, :ref:`26 <X(26)>`}, {18356, 10224}, {19458, 12161}, {21651, 12235}, {32140, 13371}
    * :ref:`X(155) <X(155)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(254) <X(254)>`
@@ -70,11 +70,11 @@ X(155) = EIGENCENTER OF ORTHIC TRIANGLE
    * :ref:`X(155) <X(155)>` = :term:`crossdifference <crossdifference>` of every pair of points on line {924, 2501}
    * :ref:`X(155) <X(155)>` = :term:`eigencenter <eigencenter>` of :term:`cevian triangle <cevian-triangle>` of :ref:`X(4) <X(4)>`
    * :ref:`X(155) <X(155)>` = eigencenter of :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(3) <X(3)>`
-   * :ref:`X(155) <X(155)>` = :ref:`X(84) <X(84)>`-of-orthic triangle if ABC is acute
+   * :ref:`X(155) <X(155)>` = :ref:`X(84) <X(84)>`-of-orthic triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X(155) <X(155)>` = perspector of orthic triangle and tangential triangle of the MacBeath circumconic, which is also the anticevian triangle of :ref:`X(3) <X(3)>`
-   * :ref:`X(155) <X(155)>` = perspector of orthic triangle and cross-triangle of ABC and 2nd Hyacinth triangle
-   * :ref:`X(155) <X(155)>` = orthic-to-ABC :term:`barycentric image <barycentric-image>` of :ref:`X(3) <X(3)>`
-   * :ref:`X(155) <X(155)>` = intouch-to-ABC :term:`functional image <functional-image>` of :ref:`X(4) <X(4)>`
+   * :ref:`X(155) <X(155)>` = perspector of orthic triangle and cross-triangle of :g:`ABC << A B C >>` and 2nd Hyacinth triangle
+   * :ref:`X(155) <X(155)>` = orthic-to-:g:`ABC << A B C >>` :term:`barycentric image <barycentric-image>` of :ref:`X(3) <X(3)>`
+   * :ref:`X(155) <X(155)>` = intouch-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X(4) <X(4)>`
    * :ref:`X(155) <X(155)>` = barycentric product X(i)\*X(j) for these {i,j}: {:ref:`3 <X(3)>`, 6515}, {:ref:`4 <X(4)>`, 6503}, {:ref:`48 <X(48)>`, 33808}, {:ref:`63 <X(63)>`, :ref:`920 <X(920)>`}, {:ref:`69 <X(69)>`, 1609}, {:ref:`343 <X(343)>`, 8883}, {:ref:`394 <X(394)>`, 3542}, {:ref:`454 <X(454)>`, 6504}, {3580, 15478}
    * :ref:`X(155) <X(155)>` = barycentric quotient X(i)/X(j) for these {i,j}: {:ref:`3 <X(3)>`, 6504}, {:ref:`6 <X(6)>`, :ref:`254 <X(254)>`}, {:ref:`48 <X(48)>`, :ref:`921 <X(921)>`}, {:ref:`216 <X(216)>`, 8800}, {:ref:`454 <X(454)>`, 6515}, {:ref:`577 <X(577)>`, 15316}, {:ref:`920 <X(920)>`, :ref:`92 <X(92)>`}, {1609, :ref:`4 <X(4)>`}, {3003, 16172}, {3542, 2052}, {6503, :ref:`69 <X(69)>`}, {6515, :ref:`264 <X(264)>`}, {8883, :ref:`275 <X(275)>`}, {15478, 2986}, {18126, 13579}, {32661, 13398}, {33808, 1969}
    * :ref:`X(155) <X(155)>` = {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): {:ref:`2 <X(2)>`, 11411, 12359}, {:ref:`3 <X(3)>`, :ref:`49 <X(49)>`, 19357}, {:ref:`3 <X(3)>`, 3167, 1147}, {:ref:`3 <X(3)>`, 18445, 1181}, {:ref:`4 <X(4)>`, 11441, 18451}, {:ref:`5 <X(5)>`, :ref:`68 <X(68)>`, 14852}, {:ref:`5 <X(5)>`, 12161, :ref:`6 <X(6)>`}, {:ref:`5 <X(5)>`, 15068, 17814}, {:ref:`5 <X(5)>`, 31831, 1352}, {:ref:`6 <X(6)>`, 17814, :ref:`5 <X(5)>`}, {:ref:`6 <X(6)>`, 17836, 19458}, {:ref:`24 <X(24)>`, 9932, 2931}, {:ref:`25 <X(25)>`, 12160, :ref:`52 <X(52)>`}, {:ref:`25 <X(25)>`, 12166, 9937}, {:ref:`26 <X(26)>`, :ref:`156 <X(156)>`, :ref:`154 <X(154)>`}, {:ref:`49 <X(49)>`, 18436, :ref:`3 <X(3)>`}, {:ref:`51 <X(51)>`, 21651, 12235}, {:ref:`52 <X(52)>`, 10539, :ref:`25 <X(25)>`}, {:ref:`54 <X(54)>`, 11459, 7503}, {:ref:`68 <X(68)>`, 5654, :ref:`5 <X(5)>`}, {:ref:`110 <X(110)>`, 5889, :ref:`24 <X(24)>`}, {:ref:`143 <X(143)>`, 13861, 17810}, {:ref:`154 <X(154)>`, 17834, :ref:`26 <X(26)>`}, {:ref:`182 <X(182)>`, 11793, 7393}, {:ref:`184 <X(184)>`, 5562, :ref:`3 <X(3)>`}, {:ref:`185 <X(185)>`, 1092, :ref:`3 <X(3)>`}, {:ref:`185 <X(185)>`, 3292, 1092}, {:ref:`381 <X(381)>`, 12429, 9927}, {:ref:`389 <X(389)>`, 9306, 6642}, {:ref:`394 <X(394)>`, 1181, :ref:`3 <X(3)>`}, {:ref:`485 <X(485)>`, :ref:`486 <X(486)>`, 9722}, {:ref:`568 <X(568)>`, 18350, 7506}, {:ref:`569 <X(569)>`, 5891, 7395}, {:ref:`578 <X(578)>`, 5907, 9818}, {1069, 3157, :ref:`1 <X(1)>`}, {1147, 7689, 12038}, {1147, 12164, 12163}, {1147, 19908, 19357}, {1199, 3090, 5422}, {1351, 1598, 5446}, {1593, 12162, 11472}, {1598, 19588, 12309}, {1614, 11412, :ref:`22 <X(22)>`}, {1993, 6193, 15316}, {1993, 11441, :ref:`4 <X(4)>`}, {3167, 12164, :ref:`3 <X(3)>`}, {3167, 15083, 12163}, {3917, 10984, :ref:`3 <X(3)>`}, {5012, 11444, 7509}, {5020, 11432, 5462}, {5448, 9927, :ref:`381 <X(381)>`}, {5562, 9908, 12163}, {5654, 9936, :ref:`68 <X(68)>`}, {6102, 6644, 9786}, {6193, 22660, 12293}, {6243, 7517, 33586}, {6243, 10540, 7517}, {7395, 11402, :ref:`569 <X(569)>`}, {7488, 9544, 9707}, {7689, 12038, :ref:`3 <X(3)>`}, {9820, 12359, :ref:`2 <X(2)>`}, {10661, 10662, :ref:`6 <X(6)>`}, {10665, 10666, :ref:`6 <X(6)>`}, {11422, 15056, 13434}, {11591, 32046, 7514}, {12161, 15068, :ref:`5 <X(5)>`}, {12162, 13352, 1593}, {12174, 21312, 10575}, {13371, 32140, 1853}, {14516, 22661, 12293}, {15068, 19139, 5654}, {15316, 18451, 12293}, {17814, 17836, :ref:`68 <X(68)>`}, {17814, 19458, 14852}, {18436, 19908, 12163}
@@ -84,11 +84,11 @@ Notes
 
 .. container:: note-item
 
-   Let A' be the isogonal conjugate of A with respect to the triangle BC\ :ref:`X(4) <X(4)>`, and define B' and C' cyclically. Let A''B''C'' be the orthic triangle. Then the lines A'A'', B'B'', C'C'' concur in :ref:`X(155) <X(155)>`. (Randy Hutson, 9/23/2011)
+   Let :g:`A' <A'>` be the isogonal conjugate of :g:`A <A>` with respect to the triangle :g:`BC <[ B C ]>`\ :ref:`X(4) <X(4)>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Let :g:`A″B″C″ << A″ B″ C″ >>` be the orthic triangle. Then the lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(155) <X(155)>`. (Randy Hutson, 9/23/2011)
 
 .. container:: note-item
 
-   Let O\ :sub:`A` be the circle centered at the A-vertex of the 2nd anti-:term:`extouch triangle <extouch-triangle>` and passing through A; define O\ :sub:`B` and O\ :sub:`C` cyclically. :ref:`X(155) <X(155)>` is the radical center of O\ :sub:`A`, O\ :sub:`B`, O\ :sub:`C`. (Randy Hutson, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the 2nd anti-:term:`extouch triangle <extouch-triangle>` and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(155) <X(155)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
 
 .. toctree::
    :hidden:

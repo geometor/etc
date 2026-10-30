@@ -12,7 +12,7 @@ X(395) = MIDPOINT OF X(14) AND X(16) — Code
    :alt: X(395) = MIDPOINT OF X(14) AND X(16)
    :align: center
 
-   **X(395) = MIDPOINT OF X(14) AND X(16)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(395) = MIDPOINT OF X(14) AND X(16)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

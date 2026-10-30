@@ -12,7 +12,7 @@ X(71) = ISOGONAL CONJUGATE OF X(27) — Code
    :alt: X(71) = ISOGONAL CONJUGATE OF X(27)
    :align: center
 
-   **X(71) = ISOGONAL CONJUGATE OF X(27)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(71) = ISOGONAL CONJUGATE OF X(27)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

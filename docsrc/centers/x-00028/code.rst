@@ -12,7 +12,7 @@ X(28) = CEVAPOINT OF X(19) AND X(25) — Code
    :alt: X(28) = CEVAPOINT OF X(19) AND X(25)
    :align: center
 
-   **X(28) = CEVAPOINT OF X(19) AND X(25)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(28) = CEVAPOINT OF X(19) AND X(25)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

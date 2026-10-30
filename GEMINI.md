@@ -13,9 +13,9 @@ To parse, structure, cross-reference, and model the *Encyclopedia of Triangle Ce
 It is responsible for:
 
 - **Ingestion**: Splitting raw HTML source volumes (`ETC.html`, `ETCPart2.html`–`ETCPart27.html`) into introductory sections, inter-center group preambles, and individual center records (`resources/split/`).
-- **Semantic Parsing**: Extracting canonical identifiers, primary names, aliases, trilinear/barycentric/tripolar coordinates, vector/barycentric linear combinations, construction notes, incidence loci (lines, circles, conics, cubics), and functional center relations (`X(n) = f(X(i), X(j))`).
-- **Apparatus & Cross-Referencing**: Building `resources/glossary.json`, `resources/persons.json`, and `resources/citations.json` to power interactive `:term:`, `:person:`, `:cite:`, and `:ref:` roles across all centers.
-- **Composable Geometric Modeling**: Constructing each center via `src/geometor/etc/ops.py` and generating standalone per-center `model.py` scripts, `geometor.model` JSON files, and two-layer Explorer-styled SVGs (primary defining construction + toggleable incident central lines).
+- **Semantic Parsing**: Extracting canonical identifiers, primary names, aliases, trilinear/barycentric/tripolar coordinates (including `<p>Barycentrics` blocks and `=` continuation lines), vector/barycentric linear combinations, construction notes, incidence loci (lines, circles, conics, cubics), and functional center relations (`X(n) = f(X(i), X(j))`) with comprehensive `:math:` LaTeX normalization.
+- **Apparatus & Cross-Referencing**: Building `resources/glossary.json`, `resources/persons.json`, and `resources/citations.json` to power interactive `:term:`, `:person:`, `:cite:`, `:ref:`, and Euclidean `:g:` geometric element roles (`:g:`ABC << A B C >>``, `:g:`BC <[ B C ]>``, `:g:`A``) across all centers.
+- **Composable Geometric Modeling**: Constructing each center via `src/geometor/etc/ops.py` and generating standalone per-center `model.py` scripts, `geometor.model` JSON files, and two-layer Explorer-styled SVGs (primary defining construction + toggleable incident central lines) with two-way text ↔ SVG hover synchronization.
 - **RST Generation**: Generating Book Codex (`:layout: book`) 2-track documentation per center (`docsrc/centers/x-NNNNN/index.rst` Overview track with `.. enunciation::`, `.. signature:: center`, and `.. collapse::` sections, plus `code.rst` Code track) alongside `docsrc/glossary.rst`, `docsrc/persons.rst`, and `docsrc/bibliography.rst`.
 
 ## Repository Layout

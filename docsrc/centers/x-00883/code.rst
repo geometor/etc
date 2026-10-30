@@ -12,7 +12,7 @@ X(883) = INTERSECTION OF LINES X(7)X(8) AND X(190)X(644) — Code
    :alt: X(883) = INTERSECTION OF LINES X(7)X(8) AND X(190)X(644)
    :align: center
 
-   **X(883) = INTERSECTION OF LINES X(7)X(8) AND X(190)X(644)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(883) = INTERSECTION OF LINES X(7)X(8) AND X(190)X(644)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

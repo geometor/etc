@@ -16,7 +16,7 @@ X(391) = INTERSECTION OF LINES X(2,6) AND X(8,9)
    :alt: X(391) = INTERSECTION OF LINES X(2,6) AND X(8,9)
    :align: center
 
-   **X(391) = INTERSECTION OF LINES X(2,6) AND X(8,9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(391) = INTERSECTION OF LINES X(2,6) AND X(8,9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,10 +28,6 @@ X(391) = INTERSECTION OF LINES X(2,6) AND X(8,9)
    :badge: 1 form
 
    * **Barycentrics:** :math:`a^{2} - s^{2} : b^{2} - s^{2} : c^{2} - s^{2}`
-
-.. container:: note-item
-
-   :ref:`X(391) <X(391)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines

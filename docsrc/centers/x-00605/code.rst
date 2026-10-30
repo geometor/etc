@@ -12,7 +12,7 @@ X(605) = INTERSECTION OF LINES X(371)X(602) AND X(372)X(601) — Code
    :alt: X(605) = INTERSECTION OF LINES X(371)X(602) AND X(372)X(601)
    :align: center
 
-   **X(605) = INTERSECTION OF LINES X(371)X(602) AND X(372)X(601)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(605) = INTERSECTION OF LINES X(371)X(602) AND X(372)X(601)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

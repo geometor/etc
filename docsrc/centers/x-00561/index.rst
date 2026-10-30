@@ -16,7 +16,7 @@ X(561) = ISOGONAL CONJUGATE OF 4th POWER POINT
    :alt: X(561) = ISOGONAL CONJUGATE OF 4th POWER POINT
    :align: center
 
-   **X(561) = ISOGONAL CONJUGATE OF 4th POWER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(561) = ISOGONAL CONJUGATE OF 4th POWER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,12 +27,8 @@ X(561) = ISOGONAL CONJUGATE OF 4th POWER POINT
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
-   * **Trilinears:** :math:`[\sec^2(A/2) + \csc^2(A/2)]^2 : :`
-   * **Trilinears:** :math:`d(a,b,c) : :`, where d(a,b,c) = (distance from A to Lemoine axis)\ :sup:`2` : :
-
-.. container:: note-item
-
-   :ref:`X(561) <X(561)>` lies.
+   * **Trilinears:** :math:`[\sec^{2}(A/2) + \csc^{2}(A/2)]^{2} : :`
+   * **Trilinears:** :math:`d(a,b,c) : :`, where d(a,b,c) = :math:`(distance from A to Lemoine axis)^{2} : :`
 
 .. collapse:: Incident Central Lines
    :badge: 11 lines
@@ -57,9 +53,9 @@ X(561) = ISOGONAL CONJUGATE OF 4th POWER POINT
    * :ref:`X(561) <X(561)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of X(1973)
    * :ref:`X(561) <X(561)>` = trilinear product of vertices of Gemini triangle 21
    * :ref:`X(561) <X(561)>` = trilinear product of vertices of Gemini triangle 22
-   * :ref:`X(561) <X(561)>` = perspector of ABC and cross-triangle of Gemini triangles 31 and 32
-   * :ref:`X(561) <X(561)>` = perspector of ABC and cross-triangle of ABC and Gemini triangle 31
-   * :ref:`X(561) <X(561)>` = perspector of ABC and cross-triangle of ABC and Gemini triangle 32
+   * :ref:`X(561) <X(561)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of Gemini triangles 31 and 32
+   * :ref:`X(561) <X(561)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 31
+   * :ref:`X(561) <X(561)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 32
    * :ref:`X(561) <X(561)>` = barycentric product of vertices of Gemini triangle 31
    * :ref:`X(561) <X(561)>` = barycentric product of vertices of Gemini triangle 32
 
@@ -68,7 +64,7 @@ Notes
 
 .. container:: note-item
 
-   Let A'B'C' be the obverse triangle of :ref:`X(1) <X(1)>`. Let A″B″C″ be the N-obverse triangle of :ref:`X(1) <X(1)>`. Let A\* be the trilinear product A'\*A″, and define B\* and C\* cyclically. The lines AA\*, BB\*, CC\* concur in :ref:`X(561) <X(561)>`. (Randy Hutson, October 15, 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the obverse triangle of :ref:`X(1) <X(1)>`. Let :g:`A″B″C″ << A″ B″ C″ >>` be the N-obverse triangle of :ref:`X(1) <X(1)>`. Let :g:`A* <A*>` be the trilinear product :g:`A' <A'>`\ \*\ :g:`A″ <A″>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(561) <X(561)>`. (Randy Hutson, October 15, 2018)
 
 .. toctree::
    :hidden:

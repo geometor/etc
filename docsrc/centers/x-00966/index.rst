@@ -16,17 +16,13 @@ X(966) = INTERSECTION OF LINES X(2)X(6) AND X(4)X(9)
    :alt: X(966) = INTERSECTION OF LINES X(2)X(6) AND X(4)X(9)
    :align: center
 
-   **X(966) = INTERSECTION OF LINES X(2)X(6) AND X(4)X(9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(966) = INTERSECTION OF LINES X(2)X(6) AND X(4)X(9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`bc[a^{2} - 2a(b + c) - (b + c)^{2}] : :`
-   | **Barycentrics:** :math:`a^2 - 2s^2 : :`
+   | **Barycentrics:** :math:`a^{2} - 2s^{2} : :`
    | **Search Value (6, 9, 13):** :math:`3.155242550986`
-
-.. container:: note-item
-
-   :ref:`X(966) <X(966)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 10 lines

@@ -16,16 +16,12 @@ X(752) = EVEN (0, 3) INFINITY POINT
    :alt: X(752) = EVEN (0, 3) INFINITY POINT
    :align: center
 
-   **X(752) = EVEN (0, 3) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(752) = EVEN (0, 3) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
    | **Trilinears:** :math:`a ^{-1}(b^{3} + c^{3}) - a^{2}(b^{0} + c^{0}) : :`
-   | **Barycentrics:** :math:`2 a^3 - b^3 - c^3 : :`
-
-.. container:: note-item
-
-   :ref:`X(752) <X(752)>` lies.
+   | **Barycentrics:** :math:`2 a^{3} - b^{3} - c^{3} : :`
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines

@@ -16,17 +16,13 @@ X(955) = ISOGONAL CONJUGATE OF X(954)
    :alt: X(955) = ISOGONAL CONJUGATE OF X(954)
    :align: center
 
-   **X(955) = ISOGONAL CONJUGATE OF X(954)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(955) = ISOGONAL CONJUGATE OF X(954)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = 1/[a\ :sup:`5` + (b + c)[2a\ :sup:`2`\ (b\ :sup:`2` + c\ :sup:`2` - a\ :sup:`2` + bc) - (b - c)\ :sup:`2`\ (2bc + ab + ac)]]
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = 1/[a^{5} + (b + c)[2a^{2}(b^{2} + c^{2} - a^{2} + bc) - (b - c)^{2}(2bc + ab + ac)]]`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`1.524901641842`
-
-.. container:: note-item
-
-   :ref:`X(955) <X(955)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines

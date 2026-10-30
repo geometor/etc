@@ -16,22 +16,18 @@ X(299) = ISOTOMIC CONJUGATE OF 2nd ISOGONIC CENTER
    :alt: X(299) = ISOTOMIC CONJUGATE OF 2nd ISOGONIC CENTER
    :align: center
 
-   **X(299) = ISOTOMIC CONJUGATE OF 2nd ISOGONIC CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(299) = ISOTOMIC CONJUGATE OF 2nd ISOGONIC CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\csc^{2}A \sin(A - \pi /3) : \csc^{2}B \sin(B - \pi /3) : \csc^{2}C \sin(C - \pi /3)`
+   | **Trilinears:** :math:`\csc^{2} A \sin(A - \pi /3) : \csc^{2} B \sin(B - \pi /3) : \csc^{2} C \sin(C - \pi /3)`
    | **Barycentrics:** :math:`\csc A \sin(A - \pi /3) : \csc B \sin(B - \pi /3) : \csc C \sin(C - \pi /3)`
    | **Search Value (6, 9, 13):** :math:`10.298886101292`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`S - \sqrt{3}*SA : :`
-
-.. container:: note-item
-
-   :ref:`X(299) <X(299)>` lies.
+   * **Barycentrics:** :math:`S - \sqrt{3} S_{A} : :`
 
 .. collapse:: Incident Central Lines
    :badge: 18 lines

@@ -16,17 +16,13 @@ X(910) = CROSSPOINT OF X(57) AND X(105)
    :alt: X(910) = CROSSPOINT OF X(57) AND X(105)
    :align: center
 
-   **X(910) = CROSSPOINT OF X(57) AND X(105)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(910) = CROSSPOINT OF X(57) AND X(105)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b),`, where f(a,b,c) = a[wb\ :sup:`2` + vc\ :sup:`2` - a(wb + vc)], u : v : w = :ref:`X(3) <X(3)>`
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where g(a,b,c) = af(a,b,c)
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = a[wb^{2} + vc^{2} - a(wb + vc)]`,\ :math:`u : v : w` = :ref:`X(3) <X(3)>`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
    | **Search Value (6, 9, 13):** :math:`-3.730955540803`
-
-.. container:: note-item
-
-   :ref:`X(910) <X(910)>` lies.
 
 .. collapse:: Incident Central Lines
    :badge: 16 lines

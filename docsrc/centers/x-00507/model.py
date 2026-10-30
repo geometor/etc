@@ -10,7 +10,7 @@ from geometor.model import Model
 from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
-    eval_trilinear_point,
+    point_from_barycentrics,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -20,7 +20,7 @@ def construct_x_00507(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X(507) = 5th ISOSCELIZER POINT on reference triangle ABC."""
-    X_507 = eval_trilinear_point(model, A, B, C, '(cos(A/2))**(-1/2)', ID="X(507)", classes=["selected", "target"])
+    X_507 = point_from_barycentrics(model, A, B, C, 0.26577372, 0.32744069, 0.40678559, ID="X(507)", classes=["selected", "target"])
     return promote_point_to_top(model, X_507)
 
 

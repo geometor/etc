@@ -10,13 +10,13 @@ X(297) = X(2)-HIRST INVERSE OF X(4)
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(297) <X(297)>` has Shinagawa coefficients (EF + F\ :sup:`2`, - S\ :sup:`2`).
+   As a point on the Euler line, :ref:`X(297) <X(297)>` has Shinagawa coefficients :math:`(EF + F^{2}, - S^{2})`.
 
 .. figure:: x-00297.svg
    :alt: X(297) = X(2)-HIRST INVERSE OF X(4)
    :align: center
 
-   **X(297) = X(2)-HIRST INVERSE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(297) = X(2)-HIRST INVERSE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,17 +28,13 @@ X(297) = X(2)-HIRST INVERSE OF X(4)
    :badge: 3 forms
 
    * **Barycentrics:** :math:`\tan A - \cot \omega : :`
-   * **Barycentrics:** :math:`SB*SC(-SA^2 + SB*SC) : :`
-   * **Barycentrics:** :math:`(b^4 + c^4 - a^2 b^2 - a^2 c^2)/(b^2 + c^2 - a^2) : :`
+   * **Barycentrics:** :math:`S_{B} S_{C}(-S_{A}^{2} + S_{B} S_{C}) : :`
+   * **Barycentrics:** :math:`(b^{4} + c^{4} - a^{2} b^{2} - a^{2} c^{2})/(b^{2} + c^{2} - a^{2}) : :`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(297) <X(297)>` = :ref:`X(340) <X(340)>` + 2X(1990)
-
-.. container:: note-item
-
-   :ref:`X(297) <X(297)>` lies.
+   * :ref:`X(297) <X(297)>` = :ref:`X(340) <X(340)>` + :math:`2` X(1990)
 
 .. collapse:: Incident Central Lines
    :badge: 37 lines
@@ -63,7 +59,7 @@ X(297) = X(2)-HIRST INVERSE OF X(4)
    * :ref:`X(297) <X(297)>` = X(i)-:term:`Hirst inverse <hirst-inverse>` of X(j) for (i,j) = (2,4), (193,1249)
    * :ref:`X(297) <X(297)>` = X(i)-:term:`complementary conjugate <complementary-conjugate>` of X(j) for these (i,j): (1953, :ref:`129 <X(129)>`), (1956, :ref:`141 <X(141)>`), (1972, 2887), (1987, :ref:`10 <X(10)>`)
    * :ref:`X(297) <X(297)>` = X(i)-:term:`anticomplementary conjugate <anticomplementary-conjugate>` of X(j) for these (i,j): (1297, 4329), (6330, 6327}
-   * :ref:`X(297) <X(297)>` = perspector of conic {A,B,C,PU(45)}
+   * :ref:`X(297) <X(297)>` = perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(45)}
    * :ref:`X(297) <X(297)>` = intersection of :term:`trilinear polars <trilinear-polar>` of P(45) and U(45)
    * :ref:`X(297) <X(297)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(114) <X(114)>`\ \ :ref:`X(132) <X(132)>` (the polar of :ref:`X(98) <X(98)>` wrt polar circle)
    * :ref:`X(297) <X(297)>` = pole wrt polar circle of trilinear polar of :ref:`X(98) <X(98)>` (line :ref:`X(6) <X(6)>`\ \ :ref:`X(523) <X(523)>`)

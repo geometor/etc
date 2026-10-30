@@ -16,7 +16,7 @@ X(232) = X(2)-CEVA CONJUGATE OF X(132)
    :alt: X(232) = X(2)-CEVA CONJUGATE OF X(132)
    :align: center
 
-   **X(232) = X(2)-CEVA CONJUGATE OF X(132)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(232) = X(2)-CEVA CONJUGATE OF X(132)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,7 +27,7 @@ X(232) = X(2)-CEVA CONJUGATE OF X(132)
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`a^2*(a^2 + b^2 - c^2)*(a^2 - b^2 + c^2)*(a^2*b^2 - b^4 + a^2*c^2 - c^4) : :`
+   * **Barycentrics:** :math:`a^{2} (a^{2} + b^{2} - c^{2}) \cdot (a^{2} - b^{2} + c^{2}) \cdot (a^{2} b^{2} - b^{4} + a^{2} c^{2} - c^{4}) : :`
 
 .. container:: note-item
 
@@ -69,7 +69,7 @@ X(232) = X(2)-CEVA CONJUGATE OF X(132)
    * :ref:`X(232) <X(232)>` = :term:`orthojoin <orthojoin>` of :ref:`X(132) <X(132)>`
    * :ref:`X(232) <X(232)>` = :ref:`X(6) <X(6)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(25) <X(25)>`
    * :ref:`X(232) <X(232)>` = :ref:`X(281) <X(281)>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X(232) <X(232)>`
-   * :ref:`X(232) <X(232)>` = perspector of hyperbola {A,B,C,\ :ref:`X(4) <X(4)>`,\ :ref:`X(112) <X(112)>`,PU(39)}} (centered at :ref:`X(132) <X(132)>`)
+   * :ref:`X(232) <X(232)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(4) <X(4)>`,\ :ref:`X(112) <X(112)>`,PU(39)}} (centered at :ref:`X(132) <X(132)>`)
    * :ref:`X(232) <X(232)>` = center of circumconic that is locus of trilinear poles of lines passing through :ref:`X(132) <X(132)>`
    * :ref:`X(232) <X(232)>` = intersection of :term:`trilinear polars <trilinear-polar>` of :ref:`X(112) <X(112)>`, P(39), and U(39)
    * :ref:`X(232) <X(232)>` = crossdifference of PU(37)

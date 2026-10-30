@@ -16,22 +16,18 @@ X(340) = ISOTOMIC CONJUGATE OF X(265)
    :alt: X(340) = ISOTOMIC CONJUGATE OF X(265)
    :align: center
 
-   **X(340) = ISOTOMIC CONJUGATE OF X(265)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :math:`AB = 1`.
+   **X(340) = ISOTOMIC CONJUGATE OF X(265)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
-   | **Trilinears:** :math:`\sec A \sin 3A \csc^{3}A : :`
-   | **Barycentrics:** :math:`\sec A \sin 3A \csc^{2}A : :`
+   | **Trilinears:** :math:`\sec A \sin 3A \csc^{3} A : :`
+   | **Barycentrics:** :math:`\sec A \sin 3A \csc^{2} A : :`
    | **Search Value (6, 9, 13):** :math:`5.166990648448`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Barycentrics:** :math:`((a^2 - b^2 - c^2)^2 - b^2 c^2)/(b^2 + c^2 - a^2) : :`
-
-.. container:: note-item
-
-   :ref:`X(340) <X(340)>` lies.
+   * **Barycentrics:** :math:`((a^{2} - b^{2} - c^{2})^{2} - b^{2} c^{2})/(b^{2} + c^{2} - a^{2}) : :`
 
 .. collapse:: Incident Central Lines
    :badge: 10 lines
