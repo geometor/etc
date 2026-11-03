@@ -1,18 +1,21 @@
-:canonical_id: X(12)
+:canonical_id: X_12
 :type: code
+:subtitle: {X_1,X_5}-HARMONIC CONJUGATE OF X_11
 
-X(12) = {X(1),X(5)}-HARMONIC CONJUGATE OF X(11) — Code
-======================================================
+X_12
+====
+
+.. rubric:: {X_1,X_5}-HARMONIC CONJUGATE OF X_11
 
 .. enunciation::
 
-   Let :g:`A'B'C' << A' B' C' >>` be the touch points of the nine-point circle with the A-, B-, C- excircles, respectively. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(12) <X(12)>`.
+   Let :g:`A'B'C' << A' B' C' >>` be the touch points of the nine-point circle with the A-, B-, C- excircles, respectively. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X_12 <X_12>`.
 
 .. figure:: x-00012.svg
-   :alt: X(12) = {X(1),X(5)}-HARMONIC CONJUGATE OF X(11)
+   :alt: X_12 — {X_1,X_5}-HARMONIC CONJUGATE OF X_11
    :align: center
 
-   **X(12) = {X(1),X(5)}-HARMONIC CONJUGATE OF X(11)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_12** (*{X_1,X_5}-HARMONIC CONJUGATE OF X_11*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,22 +1,31 @@
 :order: 394
 :type: center
-:canonical_id: X(394)
-:dependencies: X(2), X(3), X(4), X(6), X(20), X(22), X(25), X(48), X(49), X(63), X(69), X(72), X(76), X(77), X(78), X(92), X(110), X(271), X(275), X(287), X(297), X(305), X(315), X(329), X(393), X(399), X(459), X(460), X(470), X(471), X(472), X(473), X(493), X(494), X(511), X(512), X(541), X(611), X(612), X(613), X(614), X(621), X(622), X(633), X(634), X(651), X(837), X(1032), X(1060), X(1062), X(1069), X(1093), X(1498), X(1504), X(1505), X(2052), X(5412), X(5413), X(6515), X(11090), X(11091)
+:canonical_id: X_394
+:subtitle: X_69-CEVA CONJUGATE OF X_3
+:dependencies: X_2, X_3, X_4, X_6, X_20, X_22, X_25, X_48, X_49, X_63, X_69, X_72, X_76, X_77, X_78, X_92, X_110, X_271, X_275, X_287, X_297, X_305, X_315, X_329, X_393, X_399, X_459, X_460, X_470, X_471, X_472, X_473, X_493, X_494, X_511, X_512, X_541, X_611, X_612, X_613, X_614, X_621, X_622, X_633, X_634, X_651, X_837, X_1032, X_1060, X_1062, X_1069, X_1093, X_1498, X_1504, X_1505, X_2052, X_5412, X_5413, X_6515, X_11090, X_11091
 
-.. _X(394):
+.. _X_394:
 
-X(394) = X(69)-CEVA CONJUGATE OF X(3)
-=====================================
+X_394
+=====
+
+.. rubric:: X_69-CEVA CONJUGATE OF X_3
 
 .. enunciation::
 
-   Let :g:`A' <A'>` be the :term:`trilinear pole <trilinear-pole>` of the tangent to the circumcircle at the antipode of :g:`A <A>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(394) <X(394)>`. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
+   :ref:`X_394 <X_394>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_393 <X_393>`
 
 .. figure:: x-00394.svg
-   :alt: X(394) = X(69)-CEVA CONJUGATE OF X(3)
+   :alt: X_394 — X_69-CEVA CONJUGATE OF X_3
    :align: center
 
-   **X(394) = X(69)-CEVA CONJUGATE OF X(3)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_394** (*X_69-CEVA CONJUGATE OF X_3*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 6} <{ 2, 6 }>`, :g:`{3, 49} <{ 3, 49 }>`
+   * **Related Centers:** :g:`X_393 <X_393>` (:ref:`-CROSS CONJUGATE OF X(4) <X_393>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_49 <X_49>` (:ref:`CENTER OF SINE-TRIPLE-ANGLE CIRCLE <X_49>`)
 
 .. signature:: center
 
@@ -36,35 +45,39 @@ X(394) = X(69)-CEVA CONJUGATE OF X(3)
    :badge: 23 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`6 <X(6)>`}, {:ref:`3 <X(3)>`, :ref:`49 <X(49)>`}, {:ref:`20 <X(20)>`, 1032}, {:ref:`22 <X(22)>`, :ref:`110 <X(110)>`}, {:ref:`25 <X(25)>`, :ref:`511 <X(511)>`}, {:ref:`63 <X(63)>`, :ref:`77 <X(77)>`}, {:ref:`72 <X(72)>`, 1060}, {:ref:`76 <X(76)>`, :ref:`275 <X(275)>`}, {:ref:`78 <X(78)>`, :ref:`271 <X(271)>`}, {:ref:`287 <X(287)>`, :ref:`305 <X(305)>`}, {:ref:`297 <X(297)>`, :ref:`315 <X(315)>`}, {:ref:`329 <X(329)>`, :ref:`651 <X(651)>`}, {:ref:`393 <X(393)>`, :ref:`837 <X(837)>`}, {:ref:`399 <X(399)>`, :ref:`541 <X(541)>`}, {:ref:`470 <X(470)>`, :ref:`633 <X(633)>`}, {:ref:`471 <X(471)>`, :ref:`634 <X(634)>`}, {:ref:`472 <X(472)>`, :ref:`622 <X(622)>`}, {:ref:`473 <X(473)>`, :ref:`621 <X(621)>`}, {:ref:`493 <X(493)>`, 1504}, {:ref:`494 <X(494)>`, 1505}, {:ref:`611 <X(611)>`, :ref:`612 <X(612)>`}, {:ref:`613 <X(613)>`, :ref:`614 <X(614)>`}, {1062, 1069}
+   {:ref:`2 <X_2>`, :ref:`6 <X_6>`}, {:ref:`3 <X_3>`, :ref:`49 <X_49>`}, {:ref:`20 <X_20>`, 1032}, {:ref:`22 <X_22>`, :ref:`110 <X_110>`}, {:ref:`25 <X_25>`, :ref:`511 <X_511>`}, {:ref:`63 <X_63>`, :ref:`77 <X_77>`}, {:ref:`72 <X_72>`, 1060}, {:ref:`76 <X_76>`, :ref:`275 <X_275>`}, {:ref:`78 <X_78>`, :ref:`271 <X_271>`}, {:ref:`287 <X_287>`, :ref:`305 <X_305>`}, {:ref:`297 <X_297>`, :ref:`315 <X_315>`}, {:ref:`329 <X_329>`, :ref:`651 <X_651>`}, {:ref:`393 <X_393>`, :ref:`837 <X_837>`}, {:ref:`399 <X_399>`, :ref:`541 <X_541>`}, {:ref:`470 <X_470>`, :ref:`633 <X_633>`}, {:ref:`471 <X_471>`, :ref:`634 <X_634>`}, {:ref:`472 <X_472>`, :ref:`622 <X_622>`}, {:ref:`473 <X_473>`, :ref:`621 <X_621>`}, {:ref:`493 <X_493>`, 1504}, {:ref:`494 <X_494>`, 1505}, {:ref:`611 <X_611>`, :ref:`612 <X_612>`}, {:ref:`613 <X_613>`, :ref:`614 <X_614>`}, {1062, 1069}
 
 .. collapse:: Functional Relations
    :badge: 17 relations
 
-   * :ref:`X(394) <X(394)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(393) <X(393)>`
-   * :ref:`X(394) <X(394)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(2052)
-   * :ref:`X(394) <X(394)>` = :term:`complement <complement>` of X(6515)
-   * :ref:`X(394) <X(394)>` = :term:`crosssum <crosssum>` of X(5412) and X(5413)
-   * :ref:`X(394) <X(394)>` = :term:`crosspoint <crosspoint>` of :ref:`X(6) <X(6)>` and X(1498) wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
-   * :ref:`X(394) <X(394)>` = :ref:`X(69) <X(69)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(3) <X(3)>`
-   * :ref:`X(394) <X(394)>` = crosspoint of :ref:`X(493) <X(493)>` and :ref:`X(494) <X(494)>`
-   * :ref:`X(394) <X(394)>` = crosspoint of X(11090) and X(11091)
-   * :ref:`X(394) <X(394)>` = crosssum of :ref:`X(4) <X(4)>` and :ref:`X(459) <X(459)>`
-   * :ref:`X(394) <X(394)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(460) <X(460)>`\ \ :ref:`X(512) <X(512)>`
-   * :ref:`X(394) <X(394)>` = intersection of tangents to hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(6) <X(6)>`}} at :ref:`X(493) <X(493)>` and :ref:`X(494) <X(494)>`
-   * :ref:`X(394) <X(394)>` = Danneels point of :ref:`X(69) <X(69)>`
-   * :ref:`X(394) <X(394)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X(1093)
-   * :ref:`X(394) <X(394)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of X(1093)
-   * :ref:`X(394) <X(394)>` = :ref:`X(92) <X(92)>`-isoconjugate of :ref:`X(25) <X(25)>`
-   * :ref:`X(394) <X(394)>` = intersection of tangents at :ref:`X(2) <X(2)>` and :ref:`X(20) <X(20)>` to Lucas cubic K007
-   * :ref:`X(394) <X(394)>` = barycentric square of :ref:`X(63) <X(63)>`
+   * :ref:`X_394 <X_394>` = isogonal conjugate of :ref:`X_393 <X_393>`
+   * :ref:`X_394 <X_394>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_2052
+   * :ref:`X_394 <X_394>` = :term:`complement <complement>` of X_6515
+   * :ref:`X_394 <X_394>` = :term:`crosssum <crosssum>` of X_5412 and X_5413
+   * :ref:`X_394 <X_394>` = :term:`crosspoint <crosspoint>` of :ref:`X_6 <X_6>` and X_1498 wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
+   * :ref:`X_394 <X_394>` = :ref:`X_69 <X_69>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_3 <X_3>`
+   * :ref:`X_394 <X_394>` = crosspoint of :ref:`X_493 <X_493>` and :ref:`X_494 <X_494>`
+   * :ref:`X_394 <X_394>` = crosspoint of X_11090 and X_11091
+   * :ref:`X_394 <X_394>` = crosssum of :ref:`X_4 <X_4>` and :ref:`X_459 <X_459>`
+   * :ref:`X_394 <X_394>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_460 <X_460>`\ \ :ref:`X_512 <X_512>`
+   * :ref:`X_394 <X_394>` = intersection of tangents to hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_2 <X_2>`,\ :ref:`X_6 <X_6>`}} at :ref:`X_493 <X_493>` and :ref:`X_494 <X_494>`
+   * :ref:`X_394 <X_394>` = Danneels point of :ref:`X_69 <X_69>`
+   * :ref:`X_394 <X_394>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X_1093
+   * :ref:`X_394 <X_394>` = :ref:`X_48 <X_48>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of X_1093
+   * :ref:`X_394 <X_394>` = :ref:`X_92 <X_92>`-isoconjugate of :ref:`X_25 <X_25>`
+   * :ref:`X_394 <X_394>` = intersection of tangents at :ref:`X_2 <X_2>` and :ref:`X_20 <X_20>` to Lucas cubic K007
+   * :ref:`X_394 <X_394>` = barycentric square of :ref:`X_63 <X_63>`
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`A″ <A″>` be the crosssum of the (real or imaginary) circumcircle intercepts of line :g:`B'C' <[ B' C' ]>`. Define :g:`B″ <B″>` andC″ cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(393) <X(393)>`. (Randy Hutson, July 31 2018)
+   Let :g:`A' <A'>` be the :term:`trilinear pole <trilinear-pole>` of the tangent to the circumcircle at the antipode of :g:`A <A>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X_394 <X_394>`. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
+
+.. container:: note-item
+
+   Let :g:`A'B'C' << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`A″ <A″>` be the crosssum of the (real or imaginary) circumcircle intercepts of line :g:`B'C' <[ H_b H_c ]>`. Define :g:`B″ <B″>` andC″ cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_393 <X_393>`. (Randy Hutson, July 31 2018)
 
 .. toctree::
    :hidden:

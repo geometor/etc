@@ -1,22 +1,31 @@
 :order: 156
 :type: center
-:canonical_id: X(156)
-:dependencies: X(3), X(4), X(5), X(25), X(26), X(49), X(54), X(74), X(110), X(143), X(154), X(155), X(184), X(381), X(546), X(550), X(578), X(1092), X(1614)
+:canonical_id: X_156
+:subtitle: X_5-OF-TANGENTIAL-TRIANGLE
+:dependencies: X_3, X_4, X_5, X_25, X_26, X_49, X_54, X_74, X_110, X_143, X_154, X_155, X_184, X_381, X_546, X_550, X_578, X_1092, X_1614
 
-.. _X(156):
+.. _X_156:
 
-X(156) = X(5)-OF-TANGENTIAL-TRIANGLE
-====================================
+X_156
+=====
+
+.. rubric:: X_5-OF-TANGENTIAL-TRIANGLE
 
 .. enunciation::
 
-   Let :g:`O_{A} <O_A>` be the reflection of :ref:`X(3) <X(3)>` in :g:`BC <[ B C ]>`, and define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. Let :g:`O'_{A} <O'_A>` be the circumcenter of :g:`AO_{B}O_{C} << A O_B O_C >>`, and define :g:`O'_{B} <O'_B>` and :g:`O'_{C} <O'_C>` cyclically. :ref:`X(156) <X(156)>` is the circumcenter of :g:`O'_{A}O'_{B}O'_{C} << O'_A O'_B O'_C >>`. (:person:`Randy Hutson <randy-hutson>`, July 11, 2019)
+   :ref:`X_156 <X_156>` is the {:ref:`X_154 <X_154>`,\ :ref:`X_155 <X_155>`}-harmonic conjugate of :ref:`X_26 <X_26>`. For a list of harmonic conjugates, click **Tables** at the top of this page.
 
 .. figure:: x-00156.svg
-   :alt: X(156) = X(5)-OF-TANGENTIAL-TRIANGLE
+   :alt: X_156 — X_5-OF-TANGENTIAL-TRIANGLE
    :align: center
 
-   **X(156) = X(5)-OF-TANGENTIAL-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_156** (*X_5-OF-TANGENTIAL-TRIANGLE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{26, 155} <{ 26, 155 }>`
+   * **Related Centers:** :g:`X_26 <X_26>` (:ref:`CIRCUMCENTER OF THE TANGENTIAL TRIANGLE <X_26>`), :g:`X_155 <X_155>` (:ref:`EIGENCENTER OF ORTHIC TRIANGLE <X_155>`)
 
 .. signature:: center
 
@@ -28,26 +37,26 @@ X(156) = X(5)-OF-TANGENTIAL-TRIANGLE
    :badge: 8 lines
    :class: line-catalog
 
-   {:ref:`3 <X(3)>`, :ref:`74 <X(74)>`}, {:ref:`4 <X(4)>`, :ref:`49 <X(49)>`}, {:ref:`5 <X(5)>`, :ref:`184 <X(184)>`}, {:ref:`25 <X(25)>`, :ref:`143 <X(143)>`}, {:ref:`26 <X(26)>`, :ref:`154 <X(154)>`}, {:ref:`54 <X(54)>`, :ref:`381 <X(381)>`}, {:ref:`546 <X(546)>`, :ref:`578 <X(578)>`}, {:ref:`550 <X(550)>`, 1092}
+   {:ref:`3 <X_3>`, :ref:`74 <X_74>`}, {:ref:`4 <X_4>`, :ref:`49 <X_49>`}, {:ref:`5 <X_5>`, :ref:`184 <X_184>`}, {:ref:`25 <X_25>`, :ref:`143 <X_143>`}, {:ref:`26 <X_26>`, :ref:`154 <X_154>`}, {:ref:`54 <X_54>`, :ref:`381 <X_381>`}, {:ref:`546 <X_546>`, :ref:`578 <X_578>`}, {:ref:`550 <X_550>`, 1092}
 
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X(156) <X(156)>` = midpoint of :ref:`X(26) <X(26)>` and :ref:`X(155) <X(155)>`
-   * :ref:`X(156) <X(156)>` = :ref:`X(5) <X(5)>`-of-tangential-triangle
-   * :ref:`X(156) <X(156)>` = {:ref:`X(110) <X(110)>`,X(1614)}-harmonic conjugate of :ref:`X(3) <X(3)>`
-   * :ref:`X(156) <X(156)>` = intouch-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X(5) <X(5)>`
+   * :ref:`X_156 <X_156>` = midpoint of :ref:`X_26 <X_26>` and :ref:`X_155 <X_155>`
+   * :ref:`X_156 <X_156>` = :ref:`X_5 <X_5>`-of-tangential-triangle
+   * :ref:`X_156 <X_156>` = {:ref:`X_110 <X_110>`,X_1614}-harmonic conjugate of :ref:`X_3 <X_3>`
+   * :ref:`X_156 <X_156>` = intouch-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X_5 <X_5>`
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the triangle described in :cite:`ADGEOM #2697 <adgeom>` (8/26/2015, Tran Quang Hung). Then :ref:`X(156) <X(156)>` = :ref:`X(5) <X(5)>`-of-:g:`A'B'C' << A' B' C' >>`. (Randy Hutson, July 11, 2019)
+   Let :g:`O_{A} <O_A>` be the reflection of :ref:`X_3 <X_3>` in :g:`BC <[ B C ]>`, and define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. Let :g:`O'_{A} <O'_A>` be the circumcenter of :g:`AO_{B}O_{C} << A O_B O_C >>`, and define :g:`O'_{B} <O'_B>` and :g:`O'_{C} <O'_C>` cyclically. :ref:`X_156 <X_156>` is the circumcenter of :g:`O'_{A}O'_{B}O'_{C} << O'_A O'_B O'_C >>`. (:person:`Randy Hutson <randy-hutson>`, July 11, 2019)
 
 .. container:: note-item
 
-   :ref:`X(156) <X(156)>` is the {:ref:`X(154) <X(154)>`,\ :ref:`X(155) <X(155)>`}-harmonic conjugate of :ref:`X(26) <X(26)>`. For a list of harmonic conjugates, click **Tables** at the top of this page.
+   Let :g:`A'B'C' << A' B' C' >>` be the triangle described in :cite:`ADGEOM #2697 <adgeom>` (8/26/2015, Tran Quang Hung). Then :ref:`X_156 <X_156>` = :ref:`X_5 <X_5>`-of-:g:`A'B'C' << A' B' C' >>`. (Randy Hutson, July 11, 2019)
 
 .. toctree::
    :hidden:

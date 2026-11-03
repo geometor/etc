@@ -1,18 +1,21 @@
-:canonical_id: X(122)
+:canonical_id: X_122
 :type: code
+:subtitle: X_107-OF-MEDIAL-TRIANGLE
 
-X(122) = X(107)-OF-MEDIAL-TRIANGLE — Code
-=========================================
+X_122
+=====
+
+.. rubric:: X_107-OF-MEDIAL-TRIANGLE
 
 .. enunciation::
 
-   :ref:`X(122) <X(122)>` = reflection of :ref:`X(133) <X(133)>` in :ref:`X(5) <X(5)>`
+   :ref:`X_122 <X_122>` = reflection of :ref:`X_133 <X_133>` in :ref:`X_5 <X_5>`
 
 .. figure:: x-00122.svg
-   :alt: X(122) = X(107)-OF-MEDIAL-TRIANGLE
+   :alt: X_122 — X_107-OF-MEDIAL-TRIANGLE
    :align: center
 
-   **X(122) = X(107)-OF-MEDIAL-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_122** (*X_107-OF-MEDIAL-TRIANGLE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,14 +1,17 @@
-:canonical_id: X(609)
+:canonical_id: X_609
 :type: code
+:subtitle: INTERSECTION OF LINES X_1X_32 AND X_6X_36
 
-X(609) = INTERSECTION OF LINES X(1)X(32) AND X(6)X(36) — Code
-=============================================================
+X_609
+=====
+
+.. rubric:: INTERSECTION OF LINES X_1X_32 AND X_6X_36
 
 .. figure:: x-00609.svg
-   :alt: X(609) = INTERSECTION OF LINES X(1)X(32) AND X(6)X(36)
+   :alt: X_609 — INTERSECTION OF LINES X_1X_32 AND X_6X_36
    :align: center
 
-   **X(609) = INTERSECTION OF LINES X(1)X(32) AND X(6)X(36)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_609** (*INTERSECTION OF LINES X_1X_32 AND X_6X_36*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

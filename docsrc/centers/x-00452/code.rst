@@ -1,18 +1,21 @@
-:canonical_id: X(452)
+:canonical_id: X_452
 :type: code
+:subtitle: X_2-HIRST INVERSE OF X_449
 
-X(452) = X(2)-HIRST INVERSE OF X(449) — Code
-============================================
+X_452
+=====
+
+.. rubric:: X_2-HIRST INVERSE OF X_449
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(452) <X(452)>` has Shinagawa coefficients :math:`(abc \$a\$ + S^{2},-2S^{2})`.
+   :ref:`X_452 <X_452>` is the :ref:`X_2 <X_2>`-:term:`hirst inverse <hirst-inverse>` of :ref:`X_449 <X_449>`.
 
 .. figure:: x-00452.svg
-   :alt: X(452) = X(2)-HIRST INVERSE OF X(449)
+   :alt: X_452 — X_2-HIRST INVERSE OF X_449
    :align: center
 
-   **X(452) = X(2)-HIRST INVERSE OF X(449)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_452** (*X_2-HIRST INVERSE OF X_449*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

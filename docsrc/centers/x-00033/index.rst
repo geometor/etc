@@ -1,22 +1,31 @@
 :order: 33
 :type: center
-:canonical_id: X(33)
-:dependencies: X(1), X(2), X(3), X(4), X(5), X(6), X(7), X(8), X(9), X(10), X(11), X(12), X(19), X(20), X(24), X(25), X(28), X(29), X(30), X(34), X(35), X(36), X(40), X(41), X(42), X(47), X(55), X(56), X(57), X(63), X(64), X(65), X(73), X(77), X(78), X(79), X(80), X(84), X(85), X(90), X(103), X(112), X(200), X(201), X(204), X(210), X(212), X(220), X(222), X(223), X(235), X(264), X(281), X(282), X(318), X(350), X(378), X(393), X(406), X(427), X(522), X(603), X(609), X(652), X(657), X(693), X(905), X(963), X(971), X(975), X(1013), X(1038), X(1039), X(1040), X(1041), X(1060), X(1061), X(1062), X(1063), X(1214), X(1394), X(4041), X(7182), X(34822)
+:canonical_id: X_33
+:subtitle: PERSPECTOR OF THE ORTHIC AND INTANGENTS TRIANGLES
+:dependencies: X_1, X_2, X_3, X_4, X_5, X_6, X_7, X_8, X_9, X_10, X_11, X_12, X_19, X_20, X_24, X_25, X_28, X_29, X_30, X_34, X_35, X_36, X_40, X_41, X_42, X_47, X_55, X_56, X_57, X_63, X_64, X_65, X_73, X_77, X_78, X_79, X_80, X_84, X_85, X_90, X_103, X_112, X_200, X_201, X_204, X_210, X_212, X_220, X_222, X_223, X_235, X_264, X_281, X_282, X_318, X_350, X_378, X_393, X_406, X_427, X_522, X_603, X_609, X_652, X_657, X_693, X_905, X_963, X_971, X_975, X_1013, X_1038, X_1039, X_1040, X_1041, X_1060, X_1061, X_1062, X_1063, X_1214, X_1394, X_4041, X_7182, X_34822
 
-.. _X(33):
+.. _X_33:
 
-X(33) = PERSPECTOR OF THE ORTHIC AND INTANGENTS TRIANGLES
-=========================================================
+X_33
+====
+
+.. rubric:: PERSPECTOR OF THE ORTHIC AND INTANGENTS TRIANGLES
 
 .. enunciation::
 
-   Let :g:`L_{A} <L_A>` be the reflection of line :g:`BC <[ B C ]>` in the internal angle bisector of angle :g:`A <A>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`DEF << D E F >>` be the triangle formed by :g:`L_{A} <L_A>`, :g:`L_{B} <L_B>`, :g:`L_{C} <L_C>`. Then :g:`DEF << D E F >>` (the intangents triangle) is homothetic to the :term:`orthic triangle <orthic-triangle>`, and the homothetic center is :ref:`X(33) <X(33)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   :ref:`X_33 <X_33>` is the {:ref:`X_1 <X_1>`,\ :ref:`X_4 <X_4>`}-harmonic conjugate of :ref:`X_34 <X_34>`. For a list of other harmonic conjugates, click **Tables** at the top of this page.
 
 .. figure:: x-00033.svg
-   :alt: X(33) = PERSPECTOR OF THE ORTHIC AND INTANGENTS TRIANGLES
+   :alt: X_33 — PERSPECTOR OF THE ORTHIC AND INTANGENTS TRIANGLES
    :align: center
 
-   **X(33) = PERSPECTOR OF THE ORTHIC AND INTANGENTS TRIANGLES** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_33** (*PERSPECTOR OF THE ORTHIC AND INTANGENTS TRIANGLES*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 4} <{ 1, 4 }>`, :g:`{19, 25} <{ 19, 25 }>`
+   * **Related Centers:** :g:`X_77 <X_77>` (:ref:`ISOGONAL CONJUGATE OF X(33) <X_77>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_19 <X_19>` (:ref:`CLAWSON POINT <X_19>`), :g:`X_25 <X_25>` (:ref:`HOMOTHETIC CENTER OF ORTHIC AND TANGENTIAL TRIANGLES <X_25>`)
 
 .. signature:: center
 
@@ -35,38 +44,38 @@ X(33) = PERSPECTOR OF THE ORTHIC AND INTANGENTS TRIANGLES
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(33) <X(33)>` = :math:`(r + 2R - s)(r + 2R + s)` :ref:`X(1) <X(1)>` - :math:`6rR` :ref:`X(2) <X(2)>` + :math:`4rR` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
+   * :ref:`X_33 <X_33>` = :math:`(r + 2R - s)(r + 2R + s)` :ref:`X_1 <X_1>` - :math:`6rR` :ref:`X_2 <X_2>` + :math:`4rR` :ref:`X_3 <X_3>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. collapse:: Incident Central Lines
    :badge: 32 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`4 <X(4)>`}, {:ref:`2 <X(2)>`, 1040}, {:ref:`5 <X(5)>`, 1062}, {:ref:`6 <X(6)>`, :ref:`204 <X(204)>`}, {:ref:`7 <X(7)>`, 1041}, {:ref:`8 <X(8)>`, 1039}, {:ref:`9 <X(9)>`, :ref:`212 <X(212)>`}, {:ref:`10 <X(10)>`, :ref:`406 <X(406)>`}, {:ref:`11 <X(11)>`, :ref:`427 <X(427)>`}, {:ref:`12 <X(12)>`, :ref:`235 <X(235)>`}, {:ref:`19 <X(19)>`, :ref:`25 <X(25)>`}, {:ref:`20 <X(20)>`, 1038}, {:ref:`24 <X(24)>`, :ref:`35 <X(35)>`}, {:ref:`28 <X(28)>`, :ref:`975 <X(975)>`}, {:ref:`29 <X(29)>`, :ref:`78 <X(78)>`}, {:ref:`30 <X(30)>`, 1060}, {:ref:`36 <X(36)>`, :ref:`378 <X(378)>`}, {:ref:`40 <X(40)>`, :ref:`201 <X(201)>`}, {:ref:`42 <X(42)>`, :ref:`393 <X(393)>`}, {:ref:`47 <X(47)>`, :ref:`90 <X(90)>`}, {:ref:`56 <X(56)>`, :ref:`963 <X(963)>`}, {:ref:`57 <X(57)>`, :ref:`103 <X(103)>`}, {:ref:`63 <X(63)>`, 1013}, {:ref:`64 <X(64)>`, :ref:`65 <X(65)>`}, {:ref:`79 <X(79)>`, 1063}, {:ref:`80 <X(80)>`, 1061}, {:ref:`84 <X(84)>`, :ref:`603 <X(603)>`}, {:ref:`112 <X(112)>`, :ref:`609 <X(609)>`}, {:ref:`200 <X(200)>`, :ref:`281 <X(281)>`}, {:ref:`210 <X(210)>`, :ref:`220 <X(220)>`}, {:ref:`222 <X(222)>`, :ref:`971 <X(971)>`}, {:ref:`264 <X(264)>`, :ref:`350 <X(350)>`}
+   {:ref:`1 <X_1>`, :ref:`4 <X_4>`}, {:ref:`2 <X_2>`, 1040}, {:ref:`5 <X_5>`, 1062}, {:ref:`6 <X_6>`, :ref:`204 <X_204>`}, {:ref:`7 <X_7>`, 1041}, {:ref:`8 <X_8>`, 1039}, {:ref:`9 <X_9>`, :ref:`212 <X_212>`}, {:ref:`10 <X_10>`, :ref:`406 <X_406>`}, {:ref:`11 <X_11>`, :ref:`427 <X_427>`}, {:ref:`12 <X_12>`, :ref:`235 <X_235>`}, {:ref:`19 <X_19>`, :ref:`25 <X_25>`}, {:ref:`20 <X_20>`, 1038}, {:ref:`24 <X_24>`, :ref:`35 <X_35>`}, {:ref:`28 <X_28>`, :ref:`975 <X_975>`}, {:ref:`29 <X_29>`, :ref:`78 <X_78>`}, {:ref:`30 <X_30>`, 1060}, {:ref:`36 <X_36>`, :ref:`378 <X_378>`}, {:ref:`40 <X_40>`, :ref:`201 <X_201>`}, {:ref:`42 <X_42>`, :ref:`393 <X_393>`}, {:ref:`47 <X_47>`, :ref:`90 <X_90>`}, {:ref:`56 <X_56>`, :ref:`963 <X_963>`}, {:ref:`57 <X_57>`, :ref:`103 <X_103>`}, {:ref:`63 <X_63>`, 1013}, {:ref:`64 <X_64>`, :ref:`65 <X_65>`}, {:ref:`79 <X_79>`, 1063}, {:ref:`80 <X_80>`, 1061}, {:ref:`84 <X_84>`, :ref:`603 <X_603>`}, {:ref:`112 <X_112>`, :ref:`609 <X_609>`}, {:ref:`200 <X_200>`, :ref:`281 <X_281>`}, {:ref:`210 <X_210>`, :ref:`220 <X_220>`}, {:ref:`222 <X_222>`, :ref:`971 <X_971>`}, {:ref:`264 <X_264>`, :ref:`350 <X_350>`}
 
 .. collapse:: Functional Relations
    :badge: 14 relations
 
-   * :ref:`X(33) <X(33)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(77) <X(77)>`
-   * :ref:`X(33) <X(33)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(7182)
-   * :ref:`X(33) <X(33)>` = :term:`anticomplement <anticomplement>` of X(34822)
-   * :ref:`X(33) <X(33)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(657) <X(657)>`\ X(4041) (the polar of :ref:`X(85) <X(85)>` wrt polar circle)
-   * :ref:`X(33) <X(33)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(85) <X(85)>` (line :ref:`X(522) <X(522)>`\ \ :ref:`X(693) <X(693)>`)
-   * :ref:`X(33) <X(33)>` = polar conjugate of :ref:`X(85) <X(85)>`
-   * :ref:`X(33) <X(33)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(34) <X(34)>`
-   * :ref:`X(33) <X(33)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`4 <X(4)>`, :ref:`19 <X(19)>`), (:ref:`29 <X(29)>`, :ref:`281 <X(281)>`), (:ref:`318 <X(318)>`, :ref:`9 <X(9)>`)
-   * :ref:`X(33) <X(33)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`41 <X(41)>`, :ref:`9 <X(9)>`), (:ref:`42 <X(42)>`, :ref:`55 <X(55)>`)
-   * :ref:`X(33) <X(33)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`282 <X(282)>`), (:ref:`4 <X(4)>`, :ref:`281 <X(281)>`)
-   * :ref:`X(33) <X(33)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`223 <X(223)>`), (:ref:`3 <X(3)>`, :ref:`222 <X(222)>`), (:ref:`57 <X(57)>`, 1394), (:ref:`73 <X(73)>`, 1214)
-   * :ref:`X(33) <X(33)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(652) <X(652)>`\ \ :ref:`X(905) <X(905)>`
-   * :ref:`X(33) <X(33)>` = :ref:`X(33) <X(33)>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X(25) <X(25)>`
-   * :ref:`X(33) <X(33)>` = homothetic center of anti-excenters-incenter reflections triangle and anti-tangential midarc triangle
+   * :ref:`X_33 <X_33>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_77 <X_77>`
+   * :ref:`X_33 <X_33>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_7182
+   * :ref:`X_33 <X_33>` = :term:`anticomplement <anticomplement>` of X_34822
+   * :ref:`X_33 <X_33>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_657 <X_657>`\ X_4041 (the polar of :ref:`X_85 <X_85>` wrt polar circle)
+   * :ref:`X_33 <X_33>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_85 <X_85>` (line :ref:`X_522 <X_522>`\ \ :ref:`X_693 <X_693>`)
+   * :ref:`X_33 <X_33>` = polar conjugate of :ref:`X_85 <X_85>`
+   * :ref:`X_33 <X_33>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X_34 <X_34>`
+   * :ref:`X_33 <X_33>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`19 <X_19>`), (:ref:`29 <X_29>`, :ref:`281 <X_281>`), (:ref:`318 <X_318>`, :ref:`9 <X_9>`)
+   * :ref:`X_33 <X_33>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`41 <X_41>`, :ref:`9 <X_9>`), (:ref:`42 <X_42>`, :ref:`55 <X_55>`)
+   * :ref:`X_33 <X_33>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`282 <X_282>`), (:ref:`4 <X_4>`, :ref:`281 <X_281>`)
+   * :ref:`X_33 <X_33>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`223 <X_223>`), (:ref:`3 <X_3>`, :ref:`222 <X_222>`), (:ref:`57 <X_57>`, 1394), (:ref:`73 <X_73>`, 1214)
+   * :ref:`X_33 <X_33>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_652 <X_652>`\ \ :ref:`X_905 <X_905>`
+   * :ref:`X_33 <X_33>` = :ref:`X_33 <X_33>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X_25 <X_25>`
+   * :ref:`X_33 <X_33>` = homothetic center of anti-excenters-incenter reflections triangle and anti-tangential midarc triangle
 
 Notes
 -----
 
 .. container:: note-item
 
-   :ref:`X(33) <X(33)>` is the {:ref:`X(1) <X(1)>`,\ :ref:`X(4) <X(4)>`}-harmonic conjugate of :ref:`X(34) <X(34)>`. For a list of other harmonic conjugates, click **Tables** at the top of this page.
+   Let :g:`L_{A} <L_A>` be the reflection of line :g:`BC <[ B C ]>` in the internal angle bisector of angle :g:`A <A>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`DEF << D E F >>` be the triangle formed by :g:`L_{A} <L_A>`, :g:`L_{B} <L_B>`, :g:`L_{C} <L_C>`. Then :g:`DEF << D E F >>` (the :term:`intangents triangle <intangents-triangle>`) is homothetic to the :term:`orthic triangle <orthic-triangle>`, and the homothetic center is :ref:`X_33 <X_33>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. toctree::
    :hidden:

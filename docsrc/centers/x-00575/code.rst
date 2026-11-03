@@ -1,18 +1,21 @@
-:canonical_id: X(575)
+:canonical_id: X_575
 :type: code
+:subtitle: ORTHOGONAL OF X_187
 
-X(575) = ORTHOGONAL OF X(187) — Code
-====================================
+X_575
+=====
+
+.. rubric:: ORTHOGONAL OF X_187
 
 .. enunciation::
 
-   :ref:`X(575) <X(575)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(7608)
+   :ref:`X_575 <X_575>` = Brocard-circle-invertse of :ref:`X_576 <X_576>`
 
 .. figure:: x-00575.svg
-   :alt: X(575) = ORTHOGONAL OF X(187)
+   :alt: X_575 — ORTHOGONAL OF X_187
    :align: center
 
-   **X(575) = ORTHOGONAL OF X(187)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_575** (*ORTHOGONAL OF X_187*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

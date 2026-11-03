@@ -1,18 +1,21 @@
-:canonical_id: X(124)
+:canonical_id: X_124
 :type: code
+:subtitle: X_109-OF-MEDIAL-TRIANGLE
 
-X(124) = X(109)-OF-MEDIAL-TRIANGLE — Code
-=========================================
+X_124
+=====
+
+.. rubric:: X_109-OF-MEDIAL-TRIANGLE
 
 .. enunciation::
 
-   :ref:`X(124) <X(124)>` = :ref:`X(109) <X(109)>`-of-:term:`medial triangle <medial-triangle>`
+   :ref:`X_124 <X_124>` = :ref:`X_109 <X_109>`-of-:term:`medial triangle <medial-triangle>`
 
 .. figure:: x-00124.svg
-   :alt: X(124) = X(109)-OF-MEDIAL-TRIANGLE
+   :alt: X_124 — X_109-OF-MEDIAL-TRIANGLE
    :align: center
 
-   **X(124) = X(109)-OF-MEDIAL-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_124** (*X_109-OF-MEDIAL-TRIANGLE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

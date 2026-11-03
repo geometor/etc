@@ -1,22 +1,31 @@
 :order: 584
 :type: center
-:canonical_id: X(584)
-:dependencies: X(3), X(6), X(37), X(41), X(42), X(48), X(354), X(500), X(560), X(583)
+:canonical_id: X_584
+:subtitle: ORTHOHARMONIC OF X_500
+:dependencies: X_3, X_6, X_37, X_41, X_42, X_48, X_354, X_560, X_583
 
-.. _X(584):
+.. _X_584:
 
-X(584) = ORTHOHARMONIC OF X(500)
-================================
+X_584
+=====
+
+.. rubric:: ORTHOHARMONIC OF X_500
 
 .. enunciation::
 
-   :ref:`X(584) <X(584)>` = inverse-in-Brocard-circle of :ref:`X(583) <X(583)>`
+   :ref:`X_584 <X_584>` = inverse-in-Brocard-circle of :ref:`X_583 <X_583>`
 
 .. figure:: x-00584.svg
-   :alt: X(584) = ORTHOHARMONIC OF X(500)
+   :alt: X_584 — ORTHOHARMONIC OF X_500
    :align: center
 
-   **X(584) = ORTHOHARMONIC OF X(500)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_584** (*ORTHOHARMONIC OF X_500*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{3, 6} <{ 3, 6 }>`, :g:`{37, 41} <{ 37, 41 }>`
+   * **Related Centers:** :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_37 <X_37>` (:ref:`CROSSPOINT OF INCENTER AND CENTROID <X_37>`), :g:`X_41 <X_41>` (:ref:`-CEVA CONJUGATE OF X(31) <X_41>`)
 
 .. signature:: center
 
@@ -27,18 +36,18 @@ X(584) = ORTHOHARMONIC OF X(500)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(584) <X(584)>` = :math:`s` :ref:`X(3) <X(3)>` + :math:`(r + 3R) \cot(\omega )` :ref:`X(6) <X(6)>`
+   * :ref:`X_584 <X_584>` = :math:`s` :ref:`X_3 <X_3>` + :math:`(r + 3R) \cot(\omega )` :ref:`X_6 <X_6>`
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines
    :class: line-catalog
 
-   {:ref:`3 <X(3)>`, :ref:`6 <X(6)>`}, {:ref:`37 <X(37)>`, :ref:`41 <X(41)>`}, {:ref:`42 <X(42)>`, :ref:`560 <X(560)>`}, {:ref:`48 <X(48)>`, :ref:`354 <X(354)>`}
+   {:ref:`3 <X_3>`, :ref:`6 <X_6>`}, {:ref:`37 <X_37>`, :ref:`41 <X_41>`}, {:ref:`42 <X_42>`, :ref:`560 <X_560>`}, {:ref:`48 <X_48>`, :ref:`354 <X_354>`}
 
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(584) <X(584)>` = inverse-in-Brocard-circle of :ref:`X(583) <X(583)>`
+   * :ref:`X_584 <X_584>` = inverse-in-Brocard-circle of :ref:`X_583 <X_583>`
 
 .. toctree::
    :hidden:

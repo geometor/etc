@@ -1,18 +1,21 @@
-:canonical_id: X(21)
+:canonical_id: X_21
 :type: code
+:subtitle: SCHIFFLER POINT
 
-X(21) = SCHIFFLER POINT — Code
-==============================
+X_21
+====
+
+.. rubric:: SCHIFFLER POINT
 
 .. enunciation::
 
-   The name of this point honors **Kurt Schiffler** (``../bstud/schiffler.html``).
+   Write I for the incenter; the Euler lines of the four triangles :g:`IBC << X_1 B C >>`, :g:`ICA << X_1 C A >>`, :g:`IAB << X_1 A B >>`, and :g:`ABC << A B C >>` concur in :ref:`X_21 <X_21>`. This configuration extends to Kirikami-Schiffler points and generalizations found by :person:`Peter Moses <peter-moses>`, as introduced just before X_3648.
 
 .. figure:: x-00021.svg
-   :alt: X(21) = SCHIFFLER POINT
+   :alt: X_21 — SCHIFFLER POINT
    :align: center
 
-   **X(21) = SCHIFFLER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_21** (*SCHIFFLER POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

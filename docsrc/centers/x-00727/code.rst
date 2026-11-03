@@ -1,18 +1,21 @@
-:canonical_id: X(727)
+:canonical_id: X_727
 :type: code
+:subtitle: EVEN (- 2, -1) CIRCUMCIRCLE POINT
 
-X(727) = EVEN (- 2, -1) CIRCUMCIRCLE POINT — Code
-=================================================
+X_727
+=====
+
+.. rubric:: EVEN (- 2, -1) CIRCUMCIRCLE POINT
 
 .. enunciation::
 
-   :ref:`X(727) <X(727)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(726) <X(726)>`
+   :ref:`X_727 <X_727>` = :ref:`X_238 <X_238>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_58 <X_58>`
 
 .. figure:: x-00727.svg
-   :alt: X(727) = EVEN (- 2, -1) CIRCUMCIRCLE POINT
+   :alt: X_727 — EVEN (- 2, -1) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(727) = EVEN (- 2, -1) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_727** (*EVEN (- 2, -1) CIRCUMCIRCLE POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

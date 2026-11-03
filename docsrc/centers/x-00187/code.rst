@@ -1,18 +1,21 @@
-:canonical_id: X(187)
+:canonical_id: X_187
 :type: code
+:subtitle: INVERSE-IN-CIRCUMCIRCLE OF X_6 (SCHOUTE CENTER)
 
-X(187) = INVERSE-IN-CIRCUMCIRCLE OF X(6) (SCHOUTE CENTER) — Code
-================================================================
+X_187
+=====
+
+.. rubric:: INVERSE-IN-CIRCUMCIRCLE OF X_6 (SCHOUTE CENTER)
 
 .. enunciation::
 
-   Let :g:`L <L>` denote the line having trilinears of :ref:`X(187) <X(187)>` as coefficients. Then L is the line passing through :ref:`X(2) <X(2)>` perpendicular to the Euler line.
+   Let :g:`L <L>` denote the line having trilinears of :ref:`X_187 <X_187>` as coefficients. Then L is the line passing through :ref:`X_2 <X_2>` perpendicular to the Euler line.
 
 .. figure:: x-00187.svg
-   :alt: X(187) = INVERSE-IN-CIRCUMCIRCLE OF X(6) (SCHOUTE CENTER)
+   :alt: X_187 — INVERSE-IN-CIRCUMCIRCLE OF X_6 (SCHOUTE CENTER)
    :align: center
 
-   **X(187) = INVERSE-IN-CIRCUMCIRCLE OF X(6) (SCHOUTE CENTER)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_187** (*INVERSE-IN-CIRCUMCIRCLE OF X_6 (SCHOUTE CENTER)*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

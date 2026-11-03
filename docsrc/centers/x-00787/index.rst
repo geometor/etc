@@ -1,22 +1,31 @@
 :order: 787
 :type: center
-:canonical_id: X(787)
-:dependencies: X(662), X(689), X(786), X(35560)
+:canonical_id: X_787
+:subtitle: o-(- 3, - 1) CIRCUMCIRCLE POINT
+:dependencies: X_662, X_689, X_786, X_35560
 
-.. _X(787):
+.. _X_787:
 
-X(787) = o-(- 3, - 1) CIRCUMCIRCLE POINT
-========================================
+X_787
+=====
+
+.. rubric:: o-(- 3, - 1) CIRCUMCIRCLE POINT
 
 .. enunciation::
 
-   :ref:`X(787) <X(787)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(786) <X(786)>`
+   :ref:`X_787 <X_787>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_786 <X_786>`
 
 .. figure:: x-00787.svg
-   :alt: X(787) = o-(- 3, - 1) CIRCUMCIRCLE POINT
+   :alt: X_787 — o-(- 3, - 1) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(787) = o-(- 3, - 1) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_787** (*o-(- 3, - 1) CIRCUMCIRCLE POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{662, 689} <{ 662, 689 }>`
+   * **Related Centers:** :g:`X_786 <X_786>` (:ref:`ODD (- 3, - 1) INFINITY POINT <X_786>`), :g:`X_662 <X_662>` (:ref:`TRILINEAR POLE OF LINE X(1)X(21) <X_662>`), :g:`X_689 <X_689>` (:ref:`TRILINEAR POLE OF LINE X(6)X(76) <X_689>`)
 
 .. signature:: center
 
@@ -26,19 +35,19 @@ X(787) = o-(- 3, - 1) CIRCUMCIRCLE POINT
 
 .. container:: note-item
 
-   :ref:`X(787) <X(787)>` lies on the circumcircle.
+   :ref:`X_787 <X_787>` lies on the circumcircle.
 
 .. collapse:: Incident Central Lines
    :badge: 1 line
    :class: line-catalog
 
-   {:ref:`662 <X(662)>`, :ref:`689 <X(689)>`}
+   {:ref:`662 <X_662>`, :ref:`689 <X_689>`}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(787) <X(787)>` = isogonal conjugate of :ref:`X(786) <X(786)>`
-   * :ref:`X(787) <X(787)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(35560)
+   * :ref:`X_787 <X_787>` = isogonal conjugate of :ref:`X_786 <X_786>`
+   * :ref:`X_787 <X_787>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_35560
 
 .. toctree::
    :hidden:

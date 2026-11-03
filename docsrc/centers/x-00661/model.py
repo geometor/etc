@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(661) = CROSSDIFFERENCE OF X(1) AND X(21)."""
+"""GEOMETOR construction model for X_661 = CROSSDIFFERENCE OF X_1 AND X_21."""
 
 from __future__ import annotations
 
@@ -20,16 +20,16 @@ from geometor.etc.render import write_center_svg
 def construct_x_00661(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(661) = CROSSDIFFERENCE OF X(1) AND X(21) on reference triangle ABC."""
-    X_661 = eval_trilinear_point(model, A, B, C, 'cot(B) - cot(C)', ID="X(661)", classes=["selected", "target"])
-    X_44 = eval_trilinear_point(model, A, B, C, 'b + c - 2*a', ID="X(44)", classes=["center", "incident"])
-    X_513 = eval_trilinear_point(model, A, B, C, 'b - c', ID="X(513)", classes=["center", "incident"])
+    """Construct X_661 = CROSSDIFFERENCE OF X_1 AND X_21 on reference triangle ABC."""
+    X_661 = eval_trilinear_point(model, A, B, C, 'cot(B) - cot(C)', ID="X_661", classes=["selected", "target"])
+    X_44 = eval_trilinear_point(model, A, B, C, 'b + c - 2*a', ID="X_44", classes=["center", "incident"])
+    X_513 = eval_trilinear_point(model, A, B, C, 'b - c', ID="X_513", classes=["center", "incident"])
     central_line(model, X_44, X_513, 44, 513, incident=True)
-    X_514 = eval_trilinear_point(model, A, B, C, '(b - c)/a', ID="X(514)", classes=["center", "incident"])
-    X_693 = eval_trilinear_point(model, A, B, C, '(b - c)/a**(2)', ID="X(693)", classes=["center", "incident"])
+    X_514 = eval_trilinear_point(model, A, B, C, '(b - c)/a', ID="X_514", classes=["center", "incident"])
+    X_693 = eval_trilinear_point(model, A, B, C, '(b - c)/a**(2)', ID="X_693", classes=["center", "incident"])
     central_line(model, X_514, X_693, 514, 693, incident=True)
-    X_663 = eval_trilinear_point(model, A, B, C, 'a*(b - c)*(b + c - a)', ID="X(663)", classes=["center", "incident"])
-    X_810 = eval_trilinear_point(model, A, B, C, 'a**(2)*(b**(2) - c**(2))*(b**(2) + c**(2) - a**(2))', ID="X(810)", classes=["center", "incident"])
+    X_663 = eval_trilinear_point(model, A, B, C, 'a*(b - c)*(b + c - a)', ID="X_663", classes=["center", "incident"])
+    X_810 = eval_trilinear_point(model, A, B, C, 'a**(2)*(b**(2) - c**(2))*(b**(2) + c**(2) - a**(2))', ID="X_810", classes=["center", "incident"])
     central_line(model, X_663, X_810, 663, 810, incident=True)
     return promote_point_to_top(model, X_661)
 
@@ -38,8 +38,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(661) on the given reference triangle."""
-    model = create_model('X(661) = CROSSDIFFERENCE OF X(1) AND X(21)')
+    """Build a `geometor.model.Model` for X_661 on the given reference triangle."""
+    model = create_model('X_661 = CROSSDIFFERENCE OF X_1 AND X_21')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00661(model, A, B, C)
     return model

@@ -1,22 +1,31 @@
 :order: 558
 :type: center
-:canonical_id: X(558)
-:dependencies: X(1), X(2), X(57), X(178), X(39122)
+:canonical_id: X_558
+:subtitle: (X_1,X_57)-ANSWER TO QUESTION A
+:dependencies: X_2, X_178, X_39122
 
-.. _X(558):
+.. _X_558:
 
-X(558) = (X(1),X(57))-ANSWER TO QUESTION A
-==========================================
+X_558
+=====
+
+.. rubric:: (X_1,X_57)-ANSWER TO QUESTION A
 
 .. enunciation::
 
-   :ref:`X(558) <X(558)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(39122)
+   :ref:`X_558 <X_558>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of X_39122
 
 .. figure:: x-00558.svg
-   :alt: X(558) = (X(1),X(57))-ANSWER TO QUESTION A
+   :alt: X_558 — (X_1,X_57)-ANSWER TO QUESTION A
    :align: center
 
-   **X(558) = (X(1),X(57))-ANSWER TO QUESTION A** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_558** (*(X_1,X_57)-ANSWER TO QUESTION A*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 178} <{ 2, 178 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_178 <X_178>` (:ref:`2nd MID-ARC POINT <X_178>`)
 
 .. signature:: center
 
@@ -33,12 +42,12 @@ X(558) = (X(1),X(57))-ANSWER TO QUESTION A
    :badge: 1 line
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`178 <X(178)>`}
+   {:ref:`2 <X_2>`, :ref:`178 <X_178>`}
 
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(558) <X(558)>` = :ref:`X(2) <X(2)>`-Ceva conjugate of X(39122)
+   * :ref:`X_558 <X_558>` = :ref:`X_2 <X_2>`-Ceva conjugate of X_39122
 
 .. toctree::
    :hidden:

@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(123) = X(108)-OF-MEDIAL-TRIANGLE."""
+"""GEOMETOR construction model for X_123 = X_108-OF-MEDIAL-TRIANGLE."""
 
 from __future__ import annotations
 
@@ -20,9 +20,9 @@ from geometor.etc.render import write_center_svg
 def construct_x_00123(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(123) = X(108)-OF-MEDIAL-TRIANGLE on reference triangle ABC."""
-    X_108 = eval_trilinear_point(model, A, B, C, 'a/(sec(B) - sec(C))', ID="X(108)", classes=["center"])
-    X_123 = complement(model, A, B, C, X_108, ID="X(123)", classes=["selected", "target"])
+    """Construct X_123 = X_108-OF-MEDIAL-TRIANGLE on reference triangle ABC."""
+    X_108 = eval_trilinear_point(model, A, B, C, 'a/(sec(B) - sec(C))', ID="X_108", classes=["center"])
+    X_123 = complement(model, A, B, C, X_108, ID="X_123", classes=["selected", "target"])
     return promote_point_to_top(model, X_123)
 
 
@@ -30,8 +30,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(123) on the given reference triangle."""
-    model = create_model('X(123) = X(108)-OF-MEDIAL-TRIANGLE')
+    """Build a `geometor.model.Model` for X_123 on the given reference triangle."""
+    model = create_model('X_123 = X_108-OF-MEDIAL-TRIANGLE')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00123(model, A, B, C)
     return model

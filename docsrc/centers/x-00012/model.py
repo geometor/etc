@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(12) = {X(1),X(5)}-HARMONIC CONJUGATE OF X(11)."""
+"""GEOMETOR construction model for X_12 = {X_1,X_5}-HARMONIC CONJUGATE OF X_11."""
 
 from __future__ import annotations
 
@@ -24,16 +24,16 @@ from geometor.etc.render import write_center_svg
 def construct_x_00012(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(12) = {X(1),X(5)}-HARMONIC CONJUGATE OF X(11) on reference triangle ABC."""
-    X_12 = eval_trilinear_point(model, A, B, C, '1 + cos(B - C)', ID="X(12)", classes=["selected", "target"])
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
-    X_5 = nine_point_center_of(model, A, B, C, ID="X(5)", classes=["center", "incident"])
+    """Construct X_12 = {X_1,X_5}-HARMONIC CONJUGATE OF X_11 on reference triangle ABC."""
+    X_12 = eval_trilinear_point(model, A, B, C, '1 + cos(B - C)', ID="X_12", classes=["selected", "target"])
+    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
+    X_5 = nine_point_center_of(model, A, B, C, ID="X_5", classes=["center", "incident"])
     central_line(model, X_1, X_5, 1, 5, incident=True)
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
-    X_56 = eval_trilinear_point(model, A, B, C, 'a/(b + c - a)', ID="X(56)", classes=["center", "incident"])
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
+    X_56 = eval_trilinear_point(model, A, B, C, 'a/(b + c - a)', ID="X_56", classes=["center", "incident"])
     central_line(model, X_2, X_56, 2, 56, incident=True)
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
-    X_55 = eval_trilinear_point(model, A, B, C, 'a*(b + c - a)', ID="X(55)", classes=["center", "incident"])
+    X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
+    X_55 = eval_trilinear_point(model, A, B, C, 'a*(b + c - a)', ID="X_55", classes=["center", "incident"])
     central_line(model, X_4, X_55, 4, 55, incident=True)
     return promote_point_to_top(model, X_12)
 
@@ -42,8 +42,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(12) on the given reference triangle."""
-    model = create_model('X(12) = {X(1),X(5)}-HARMONIC CONJUGATE OF X(11)')
+    """Build a `geometor.model.Model` for X_12 on the given reference triangle."""
+    model = create_model('X_12 = {X_1,X_5}-HARMONIC CONJUGATE OF X_11')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00012(model, A, B, C)
     return model

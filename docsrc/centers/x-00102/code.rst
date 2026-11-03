@@ -1,18 +1,21 @@
-:canonical_id: X(102)
+:canonical_id: X_102
 :type: code
+:subtitle: Λ(INCENTER, ORTHOCENTER)
 
-X(102) = Λ(INCENTER, ORTHOCENTER) — Code
-========================================
+X_102
+=====
+
+.. rubric:: Λ(INCENTER, ORTHOCENTER)
 
 .. enunciation::
 
-   :ref:`X(102) <X(102)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(515) <X(515)>`
+   :ref:`X_102 <X_102>` = :term:`anticomplement <anticomplement>` of :ref:`X_117 <X_117>`
 
 .. figure:: x-00102.svg
-   :alt: X(102) = Λ(INCENTER, ORTHOCENTER)
+   :alt: X_102 — Λ(INCENTER, ORTHOCENTER)
    :align: center
 
-   **X(102) = Λ(INCENTER, ORTHOCENTER)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_102** (*Λ(INCENTER, ORTHOCENTER)*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

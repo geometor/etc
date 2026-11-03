@@ -1,18 +1,21 @@
-:canonical_id: X(612)
+:canonical_id: X_612
 :type: code
+:subtitle: INTERSECTION OF LINES X_1X_2 AND X_9X_31
 
-X(612) = INTERSECTION OF LINES X(1)X(2) AND X(9)X(31) — Code
-============================================================
+X_612
+=====
+
+.. rubric:: INTERSECTION OF LINES X_1X_2 AND X_9X_31
 
 .. enunciation::
 
-   :ref:`X(612) <X(612)>` is the homothetic center of the :term:`incentral triangle <incentral-triangle>` and the Ayme triangle; see X(3610).
+   :ref:`X_612 <X_612>` is the homothetic center of the :term:`incentral triangle <incentral-triangle>` and the Ayme triangle; see X_3610.
 
 .. figure:: x-00612.svg
-   :alt: X(612) = INTERSECTION OF LINES X(1)X(2) AND X(9)X(31)
+   :alt: X_612 — INTERSECTION OF LINES X_1X_2 AND X_9X_31
    :align: center
 
-   **X(612) = INTERSECTION OF LINES X(1)X(2) AND X(9)X(31)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_612** (*INTERSECTION OF LINES X_1X_2 AND X_9X_31*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

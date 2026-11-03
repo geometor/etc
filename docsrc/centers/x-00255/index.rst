@@ -1,22 +1,31 @@
 :order: 255
 :type: center
-:canonical_id: X(255)
-:dependencies: X(1), X(2), X(3), X(4), X(19), X(21), X(31), X(35), X(36), X(40), X(48), X(55), X(56), X(57), X(63), X(73), X(91), X(92), X(109), X(158), X(162), X(165), X(200), X(201), X(219), X(244), X(268), X(271), X(283), X(290), X(293), X(304), X(326), X(411), X(498), X(499), X(563), X(580), X(601), X(602), X(651), X(680), X(748), X(750), X(775), X(822), X(991), X(1060), X(1068), X(1087), X(1096), X(1099), X(1102), X(1103), X(1105), X(1106), X(1109), X(1124), X(1335), X(1497), X(3074), X(3075), X(6521)
+:canonical_id: X_255
+:subtitle: ISOGONAL CONJUGATE OF X_158
+:dependencies: X_1, X_2, X_3, X_4, X_19, X_21, X_31, X_35, X_36, X_40, X_48, X_55, X_56, X_57, X_63, X_73, X_91, X_92, X_109, X_158, X_162, X_165, X_200, X_201, X_219, X_244, X_268, X_271, X_283, X_290, X_293, X_304, X_326, X_411, X_498, X_499, X_563, X_580, X_601, X_602, X_651, X_680, X_748, X_750, X_775, X_822, X_991, X_1060, X_1068, X_1087, X_1096, X_1099, X_1102, X_1103, X_1105, X_1106, X_1109, X_1124, X_1335, X_1497, X_3074, X_3075, X_6521
 
-.. _X(255):
+.. _X_255:
 
-X(255) = ISOGONAL CONJUGATE OF X(158)
-=====================================
+X_255
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_158
 
 .. enunciation::
 
-   Let :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>` be the Lucas and Lucas(-1) :term:`central triangles <central-triangle>`. Let :g:`A* <A*>` be the trilinear product :g:`A' <A'>`\ \*\ :g:`A″ <A″>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(255) <X(255)>`. (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
+   :ref:`X_255 <X_255>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_158 <X_158>`.
 
 .. figure:: x-00255.svg
-   :alt: X(255) = ISOGONAL CONJUGATE OF X(158)
+   :alt: X_255 — ISOGONAL CONJUGATE OF X_158
    :align: center
 
-   **X(255) = ISOGONAL CONJUGATE OF X(158)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_255** (*ISOGONAL CONJUGATE OF X_158*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 21} <{ 1, 21 }>`, :g:`{3, 73} <{ 3, 73 }>`
+   * **Related Centers:** :g:`X_158 <X_158>` (:ref:`-CROSS CONJUGATE OF X(92) <X_158>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_21 <X_21>` (:ref:`SCHIFFLER POINT <X_21>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_73 <X_73>` (:ref:`CROSSPOINT OF INCENTER AND CIRCUMCENTER <X_73>`)
 
 .. signature:: center
 
@@ -34,35 +43,39 @@ X(255) = ISOGONAL CONJUGATE OF X(158)
    :badge: 22 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`21 <X(21)>`}, {:ref:`3 <X(3)>`, :ref:`73 <X(73)>`}, {:ref:`35 <X(35)>`, :ref:`991 <X(991)>`}, {:ref:`36 <X(36)>`, 1106}, {:ref:`40 <X(40)>`, :ref:`109 <X(109)>`}, {:ref:`48 <X(48)>`, :ref:`563 <X(563)>`}, {:ref:`55 <X(55)>`, :ref:`601 <X(601)>`}, {:ref:`56 <X(56)>`, :ref:`602 <X(602)>`}, {:ref:`57 <X(57)>`, :ref:`580 <X(580)>`}, {:ref:`91 <X(91)>`, 1109}, {:ref:`92 <X(92)>`, 1087}, {:ref:`158 <X(158)>`, :ref:`775 <X(775)>`}, {:ref:`162 <X(162)>`, 1099}, {:ref:`165 <X(165)>`, 1103}, {:ref:`200 <X(200)>`, :ref:`271 <X(271)>`}, {:ref:`201 <X(201)>`, 1060}, {:ref:`219 <X(219)>`, :ref:`268 <X(268)>`}, {:ref:`293 <X(293)>`, :ref:`304 <X(304)>`}, {:ref:`326 <X(326)>`, 1102}, {:ref:`411 <X(411)>`, :ref:`651 <X(651)>`}, {:ref:`498 <X(498)>`, :ref:`750 <X(750)>`}, {:ref:`499 <X(499)>`, :ref:`748 <X(748)>`}
+   {:ref:`1 <X_1>`, :ref:`21 <X_21>`}, {:ref:`3 <X_3>`, :ref:`73 <X_73>`}, {:ref:`35 <X_35>`, :ref:`991 <X_991>`}, {:ref:`36 <X_36>`, 1106}, {:ref:`40 <X_40>`, :ref:`109 <X_109>`}, {:ref:`48 <X_48>`, :ref:`563 <X_563>`}, {:ref:`55 <X_55>`, :ref:`601 <X_601>`}, {:ref:`56 <X_56>`, :ref:`602 <X_602>`}, {:ref:`57 <X_57>`, :ref:`580 <X_580>`}, {:ref:`91 <X_91>`, 1109}, {:ref:`92 <X_92>`, 1087}, {:ref:`158 <X_158>`, :ref:`775 <X_775>`}, {:ref:`162 <X_162>`, 1099}, {:ref:`165 <X_165>`, 1103}, {:ref:`200 <X_200>`, :ref:`271 <X_271>`}, {:ref:`201 <X_201>`, 1060}, {:ref:`219 <X_219>`, :ref:`268 <X_268>`}, {:ref:`293 <X_293>`, :ref:`304 <X_304>`}, {:ref:`326 <X_326>`, 1102}, {:ref:`411 <X_411>`, :ref:`651 <X_651>`}, {:ref:`498 <X_498>`, :ref:`750 <X_750>`}, {:ref:`499 <X_499>`, :ref:`748 <X_748>`}
 
 .. collapse:: Functional Relations
    :badge: 13 relations
 
-   * :ref:`X(255) <X(255)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(158) <X(158)>`
-   * :ref:`X(255) <X(255)>` = :term:`isotomic conjugate <isotomic-conjugate>` of polar conjugate of :ref:`X(48) <X(48)>`
-   * :ref:`X(255) <X(255)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`63 <X(63)>`, :ref:`48 <X(48)>`), (:ref:`283 <X(283)>`, :ref:`3 <X(3)>`)
-   * :ref:`X(255) <X(255)>` = :term:`crosspoint <crosspoint>` of :ref:`X(63) <X(63)>` and :ref:`X(326) <X(326)>`
-   * :ref:`X(255) <X(255)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`290 <X(290)>`), (:ref:`4 <X(4)>`, 1068), (:ref:`19 <X(19)>`, 1096)
-   * :ref:`X(255) <X(255)>` = X(i)-:term:`aleph conjugate <aleph-conjugate>` of X(j) for these (i,j): (:ref:`775 <X(775)>`, :ref:`255 <X(255)>`), (1105, :ref:`158 <X(158)>`)
-   * :ref:`X(255) <X(255)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(680) <X(680)>`\ \ :ref:`X(822) <X(822)>`
-   * :ref:`X(255) <X(255)>` = trilinear product X(1124)\*X(1335)
-   * :ref:`X(255) <X(255)>` = trilinear square of :ref:`X(3) <X(3)>`
-   * :ref:`X(255) <X(255)>` = polar conjugate of X(6521)
-   * :ref:`X(255) <X(255)>` = :ref:`X(19) <X(19)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(92) <X(92)>`
-   * :ref:`X(255) <X(255)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(31) <X(31)>`}-harmonic conjugate of X(1497)
-   * :ref:`X(255) <X(255)>` = {X(3074),X(3075)}-harmonic conjugate of :ref:`X(2) <X(2)>`
+   * :ref:`X_255 <X_255>` = isogonal conjugate of :ref:`X_158 <X_158>`
+   * :ref:`X_255 <X_255>` = :term:`isotomic conjugate <isotomic-conjugate>` of polar conjugate of :ref:`X_48 <X_48>`
+   * :ref:`X_255 <X_255>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`63 <X_63>`, :ref:`48 <X_48>`), (:ref:`283 <X_283>`, :ref:`3 <X_3>`)
+   * :ref:`X_255 <X_255>` = :term:`crosspoint <crosspoint>` of :ref:`X_63 <X_63>` and :ref:`X_326 <X_326>`
+   * :ref:`X_255 <X_255>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`290 <X_290>`), (:ref:`4 <X_4>`, 1068), (:ref:`19 <X_19>`, 1096)
+   * :ref:`X_255 <X_255>` = X_i-:term:`aleph conjugate <aleph-conjugate>` of X_j for these (i,j): (:ref:`775 <X_775>`, :ref:`255 <X_255>`), (1105, :ref:`158 <X_158>`)
+   * :ref:`X_255 <X_255>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_680 <X_680>`\ \ :ref:`X_822 <X_822>`
+   * :ref:`X_255 <X_255>` = trilinear product X_1124\*X_1335
+   * :ref:`X_255 <X_255>` = trilinear square of :ref:`X_3 <X_3>`
+   * :ref:`X_255 <X_255>` = polar conjugate of X_6521
+   * :ref:`X_255 <X_255>` = :ref:`X_19 <X_19>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_92 <X_92>`
+   * :ref:`X_255 <X_255>` = {:ref:`X_1 <X_1>`,\ :ref:`X_31 <X_31>`}-harmonic conjugate of X_1497
+   * :ref:`X_255 <X_255>` = {X_3074,X_3075}-harmonic conjugate of :ref:`X_2 <X_2>`
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>` be the Lucas and Lucas(-1) antipodal triangles. Let :g:`A* <A*>` be the trilinear product :g:`A' <A'>`\ \*\ :g:`A″ <A″>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(255) <X(255)>`. (Randy Hutson, October 15, 2018)
+   Let :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>` be the Lucas and Lucas(-1) :term:`central triangles <central-triangle>`. Let :g:`A* <A*>` be the trilinear product :g:`A' <A'>`\ \*\ :g:`A″ <A″>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X_255 <X_255>`. (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
 
 .. container:: note-item
 
-   For an artistic design generated by :ref:`X(255) <X(255)>`, see :ref:`X(244) <X(244)>`.
+   Let :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>` be the Lucas and Lucas(-1) antipodal triangles. Let :g:`A* <A*>` be the trilinear product :g:`A' <A'>`\ \*\ :g:`A″ <A″>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X_255 <X_255>`. (Randy Hutson, October 15, 2018)
+
+.. container:: note-item
+
+   For an artistic design generated by :ref:`X_255 <X_255>`, see :ref:`X_244 <X_244>`.
 
 .. toctree::
    :hidden:

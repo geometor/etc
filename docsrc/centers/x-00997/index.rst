@@ -1,22 +1,31 @@
 :order: 997
 :type: center
-:canonical_id: X(997)
-:dependencies: X(1), X(2), X(3), X(9), X(21), X(34), X(36), X(46), X(48), X(55), X(56), X(57), X(63), X(65), X(72), X(90), X(141), X(200), X(210), X(392), X(404), X(474), X(518), X(758), X(860), X(956), X(960), X(998), X(999), X(1060), X(3421), X(3476)
+:canonical_id: X_997
+:subtitle: MIDPOINT OF X_1 AND X_200
+:dependencies: X_1, X_2, X_3, X_9, X_21, X_34, X_36, X_46, X_48, X_55, X_56, X_57, X_63, X_65, X_72, X_90, X_141, X_200, X_210, X_392, X_404, X_474, X_518, X_758, X_860, X_956, X_960, X_998, X_999, X_1060, X_3421, X_3476
 
-.. _X(997):
+.. _X_997:
 
-X(997) = MIDPOINT OF X(1) AND X(200)
-====================================
+X_997
+=====
+
+.. rubric:: MIDPOINT OF X_1 AND X_200
 
 .. enunciation::
 
-   :ref:`X(997) <X(997)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(998) <X(998)>`
+   :ref:`X_997 <X_997>` is the midpoint of :ref:`X_1 <X_1>` and :ref:`X_200 <X_200>`.
 
 .. figure:: x-00997.svg
-   :alt: X(997) = MIDPOINT OF X(1) AND X(200)
+   :alt: X_997 — MIDPOINT OF X_1 AND X_200
    :align: center
 
-   **X(997) = MIDPOINT OF X(1) AND X(200)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_997** (*MIDPOINT OF X_1 AND X_200*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 2} <{ 1, 2 }>`, :g:`{9, 48} <{ 9, 48 }>`
+   * **Related Centers:** :g:`X_998 <X_998>` (:ref:`ISOGONAL CONJUGATE OF X(997) <X_998>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_9 <X_9>` (:ref:`MITTENPUNKT <X_9>`), :g:`X_48 <X_48>` (:ref:`CROSSPOINT OF X(1) AND X(63) <X_48>`)
 
 .. signature:: center
 
@@ -28,13 +37,13 @@ X(997) = MIDPOINT OF X(1) AND X(200)
    :badge: 14 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`2 <X(2)>`}, {:ref:`3 <X(3)>`, :ref:`960 <X(960)>`}, {:ref:`9 <X(9)>`, :ref:`48 <X(48)>`}, {:ref:`21 <X(21)>`, :ref:`90 <X(90)>`}, {:ref:`34 <X(34)>`, :ref:`860 <X(860)>`}, {:ref:`36 <X(36)>`, :ref:`63 <X(63)>`}, {:ref:`46 <X(46)>`, :ref:`404 <X(404)>`}, {:ref:`55 <X(55)>`, :ref:`392 <X(392)>`}, {:ref:`56 <X(56)>`, :ref:`72 <X(72)>`}, {:ref:`57 <X(57)>`, :ref:`758 <X(758)>`}, {:ref:`65 <X(65)>`, :ref:`474 <X(474)>`}, {:ref:`141 <X(141)>`, 1060}, {:ref:`210 <X(210)>`, :ref:`956 <X(956)>`}, {:ref:`518 <X(518)>`, :ref:`999 <X(999)>`}
+   {:ref:`1 <X_1>`, :ref:`2 <X_2>`}, {:ref:`3 <X_3>`, :ref:`960 <X_960>`}, {:ref:`9 <X_9>`, :ref:`48 <X_48>`}, {:ref:`21 <X_21>`, :ref:`90 <X_90>`}, {:ref:`34 <X_34>`, :ref:`860 <X_860>`}, {:ref:`36 <X_36>`, :ref:`63 <X_63>`}, {:ref:`46 <X_46>`, :ref:`404 <X_404>`}, {:ref:`55 <X_55>`, :ref:`392 <X_392>`}, {:ref:`56 <X_56>`, :ref:`72 <X_72>`}, {:ref:`57 <X_57>`, :ref:`758 <X_758>`}, {:ref:`65 <X_65>`, :ref:`474 <X_474>`}, {:ref:`141 <X_141>`, 1060}, {:ref:`210 <X_210>`, :ref:`956 <X_956>`}, {:ref:`518 <X_518>`, :ref:`999 <X_999>`}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(997) <X(997)>` = midpoint of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`200 <X(200)>`), (3421, 3476)
-   * :ref:`X(997) <X(997)>` = isogonal conjugate of :ref:`X(998) <X(998)>`
+   * :ref:`X_997 <X_997>` = midpoint of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`200 <X_200>`), (3421, 3476)
+   * :ref:`X_997 <X_997>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_998 <X_998>`
 
 .. toctree::
    :hidden:

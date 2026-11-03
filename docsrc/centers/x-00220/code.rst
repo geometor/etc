@@ -1,18 +1,21 @@
-:canonical_id: X(220)
+:canonical_id: X_220
 :type: code
+:subtitle: X_9-CEVA CONJUGATE OF X_55
 
-X(220) = X(9)-CEVA CONJUGATE OF X(55) — Code
-============================================
+X_220
+=====
+
+.. rubric:: X_9-CEVA CONJUGATE OF X_55
 
 .. enunciation::
 
-   The :term:`trilinear polar <trilinear-polar>` of :ref:`X(220) <X(220)>` passes through :ref:`X(657) <X(657)>` (:person:`Randy Hutson <randy-hutson>`, July 20, 2016)
+   :ref:`X_220 <X_220>` = :term:`cevapoint <cevapoint>` of :ref:`X_1 <X_1>` and :ref:`X_170 <X_170>`
 
 .. figure:: x-00220.svg
-   :alt: X(220) = X(9)-CEVA CONJUGATE OF X(55)
+   :alt: X_220 — X_9-CEVA CONJUGATE OF X_55
    :align: center
 
-   **X(220) = X(9)-CEVA CONJUGATE OF X(55)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_220** (*X_9-CEVA CONJUGATE OF X_55*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,26 +1,35 @@
 :order: 908
 :type: center
-:canonical_id: X(908)
-:dependencies: X(1), X(2), X(3), X(4), X(5), X(7), X(8), X(9), X(10), X(11), X(12), X(19), X(31), X(41), X(63), X(72), X(78), X(80), X(92), X(100), X(119), X(153), X(214), X(224), X(264), X(377), X(392), X(495), X(514), X(515), X(516), X(517), X(518), X(519), X(535), X(649), X(661), X(663), X(902), X(909), X(936), X(946), X(960), X(994), X(998), X(1079), X(1145), X(1512), X(1769), X(3218), X(3306), X(3911), X(34234), X(36123)
+:canonical_id: X_908
+:subtitle: POINT ACUBENS
+:dependencies: X_1, X_2, X_3, X_4, X_5, X_7, X_8, X_9, X_10, X_11, X_12, X_19, X_31, X_41, X_63, X_72, X_78, X_80, X_92, X_100, X_119, X_153, X_214, X_224, X_264, X_377, X_392, X_495, X_514, X_515, X_516, X_517, X_518, X_519, X_535, X_649, X_661, X_663, X_902, X_909, X_936, X_946, X_960, X_994, X_998, X_1079, X_1145, X_1512, X_1769, X_3218, X_3306, X_3911, X_34234, X_36123
 
-.. _X(908):
+.. _X_908:
 
-X(908) = POINT ACUBENS
-======================
+X_908
+=====
+
+.. rubric:: POINT ACUBENS
 
 .. enunciation::
 
-   Let :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` be the lines through :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, resp. parallel to the antiorthic axis. Let :g:`M_{a} <M_a>`, :g:`M_{b} <M_b>`, :g:`M_{c} <M_c>` be the reflections of :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>` in :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>`, resp. Let :g:`A' <A'>` = :g:`M_{b} <M_b>`\ ∩\ :g:`M_{c} <M_c>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Triangle :g:`A'B'C' << A' B' C' >>` is inversely similar to, and 3 times the size of, :g:`ABC << A B C >>`. Let :g:`A″B″C″ << A″ B″ C″ >>` be the reflection of :g:`A'B'C' << A' B' C' >>` in the antiorthic axis. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to :g:`ABC << A B C >>`, with center of homothety :ref:`X(908) <X(908)>`; see :cite:`Hyacinthos #16741 <hyacinthos>`/16782, Sep 2008. (:person:`Randy Hutson <randy-hutson>`, March 25, 2016)
+   :ref:`X_908 <X_908>` = :term:`crosssum <crosssum>` of :ref:`X_41 <X_41>` and :ref:`X_902 <X_902>`
 
 .. figure:: x-00908.svg
-   :alt: X(908) = POINT ACUBENS
+   :alt: X_908 — POINT ACUBENS
    :align: center
 
-   **X(908) = POINT ACUBENS** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_908** (*POINT ACUBENS*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 7} <{ 2, 7 }>`, :g:`{5, 72} <{ 5, 72 }>`
+   * **Related Centers:** :g:`X_909 <X_909>` (:ref:`POINT ADHAFERA <X_909>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_7 <X_7>` (:ref:`GERGONNE POINT <X_7>`), :g:`X_5 <X_5>` (:ref:`NINE-POINT CENTER <X_5>`), :g:`X_72 <X_72>` (:ref:`ISOGONAL CONJUGATE OF X(28) <X_72>`)
 
 .. signature:: center
 
-   | **Trilinears:** :math:`[(wb + vc)/a - v - w]/a`, where :math:`u : v : w` = :ref:`X(3) <X(3)>`
+   | **Trilinears:** :math:`[(wb + vc)/a - v - w]/a`, where :math:`u : v : w` = :ref:`X_3 <X_3>`
    | **Barycentrics:** :math:`\cos B + \cos C - 1 : :`
    | **Search Value (6, 9, 13):** :math:`9.953055690939`
 
@@ -33,24 +42,31 @@ X(908) = POINT ACUBENS
    :badge: 18 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`998 <X(998)>`}, {:ref:`2 <X(2)>`, :ref:`7 <X(7)>`}, {:ref:`4 <X(4)>`, :ref:`78 <X(78)>`}, {:ref:`5 <X(5)>`, :ref:`72 <X(72)>`}, {:ref:`8 <X(8)>`, :ref:`946 <X(946)>`}, {:ref:`10 <X(10)>`, :ref:`994 <X(994)>`}, {:ref:`11 <X(11)>`, :ref:`518 <X(518)>`}, {:ref:`12 <X(12)>`, :ref:`960 <X(960)>`}, {:ref:`80 <X(80)>`, :ref:`519 <X(519)>`}, {:ref:`92 <X(92)>`, :ref:`264 <X(264)>`}, {:ref:`100 <X(100)>`, :ref:`516 <X(516)>`}, {:ref:`119 <X(119)>`, :ref:`517 <X(517)>`}, {:ref:`153 <X(153)>`, :ref:`515 <X(515)>`}, {:ref:`214 <X(214)>`, :ref:`535 <X(535)>`}, {:ref:`224 <X(224)>`, 1079}, {:ref:`377 <X(377)>`, :ref:`936 <X(936)>`}, {:ref:`392 <X(392)>`, :ref:`495 <X(495)>`}, {:ref:`514 <X(514)>`, :ref:`661 <X(661)>`}
+   {:ref:`1 <X_1>`, :ref:`998 <X_998>`}, {:ref:`2 <X_2>`, :ref:`7 <X_7>`}, {:ref:`4 <X_4>`, :ref:`78 <X_78>`}, {:ref:`5 <X_5>`, :ref:`72 <X_72>`}, {:ref:`8 <X_8>`, :ref:`946 <X_946>`}, {:ref:`10 <X_10>`, :ref:`994 <X_994>`}, {:ref:`11 <X_11>`, :ref:`518 <X_518>`}, {:ref:`12 <X_12>`, :ref:`960 <X_960>`}, {:ref:`80 <X_80>`, :ref:`519 <X_519>`}, {:ref:`92 <X_92>`, :ref:`264 <X_264>`}, {:ref:`100 <X_100>`, :ref:`516 <X_516>`}, {:ref:`119 <X_119>`, :ref:`517 <X_517>`}, {:ref:`153 <X_153>`, :ref:`515 <X_515>`}, {:ref:`214 <X_214>`, :ref:`535 <X_535>`}, {:ref:`224 <X_224>`, 1079}, {:ref:`377 <X_377>`, :ref:`936 <X_936>`}, {:ref:`392 <X_392>`, :ref:`495 <X_495>`}, {:ref:`514 <X_514>`, :ref:`661 <X_661>`}
 
 .. collapse:: Functional Relations
    :badge: 13 relations
 
-   * :ref:`X(908) <X(908)>` = reflection of X(1512) in :ref:`X(119) <X(119)>`
-   * :ref:`X(908) <X(908)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(909) <X(909)>`
-   * :ref:`X(908) <X(908)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(34234)
-   * :ref:`X(908) <X(908)>` = :term:`anticomplement <anticomplement>` of X(3911)
-   * :ref:`X(908) <X(908)>` = :term:`complement <complement>` of X(3218)
-   * :ref:`X(908) <X(908)>` = :term:`crosssum <crosssum>` of :ref:`X(41) <X(41)>` and :ref:`X(902) <X(902)>`
-   * :ref:`X(908) <X(908)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(31) <X(31)>`\ \ :ref:`X(663) <X(663)>`
-   * :ref:`X(908) <X(908)>` = inverse-in-circumconic-centered-at-:ref:`X(9) <X(9)>` of :ref:`X(63) <X(63)>`
-   * :ref:`X(908) <X(908)>` = :term:`trilinear pole <trilinear-pole>` of line X(1145)X(1769)
-   * :ref:`X(908) <X(908)>` = {:ref:`X(2) <X(2)>`,\ :ref:`X(7) <X(7)>`}-harmonic conjugate of X(3306)
-   * :ref:`X(908) <X(908)>` = polar conjugate of X(36123)
-   * :ref:`X(908) <X(908)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X(36123) (line :ref:`X(19) <X(19)>`\ \ :ref:`X(649) <X(649)>`)
-   * :ref:`X(908) <X(908)>` = homothetic center of the complement of the :term:`excentral triangle <excentral-triangle>` and the anticomplement of the :term:`intouch triangle <intouch-triangle>`
+   * :ref:`X_908 <X_908>` = reflection of X_1512 in :ref:`X_119 <X_119>`
+   * :ref:`X_908 <X_908>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_909 <X_909>`
+   * :ref:`X_908 <X_908>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_34234
+   * :ref:`X_908 <X_908>` = :term:`anticomplement <anticomplement>` of X_3911
+   * :ref:`X_908 <X_908>` = :term:`complement <complement>` of X_3218
+   * :ref:`X_908 <X_908>` = crosssum of :ref:`X_41 <X_41>` and :ref:`X_902 <X_902>`
+   * :ref:`X_908 <X_908>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_31 <X_31>`\ \ :ref:`X_663 <X_663>`
+   * :ref:`X_908 <X_908>` = inverse-in-circumconic-centered-at-:ref:`X_9 <X_9>` of :ref:`X_63 <X_63>`
+   * :ref:`X_908 <X_908>` = :term:`trilinear pole <trilinear-pole>` of line X_1145X_1769
+   * :ref:`X_908 <X_908>` = {:ref:`X_2 <X_2>`,\ :ref:`X_7 <X_7>`}-harmonic conjugate of X_3306
+   * :ref:`X_908 <X_908>` = polar conjugate of X_36123
+   * :ref:`X_908 <X_908>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X_36123 (line :ref:`X_19 <X_19>`\ \ :ref:`X_649 <X_649>`)
+   * :ref:`X_908 <X_908>` = homothetic center of the complement of the :term:`excentral triangle <excentral-triangle>` and the anticomplement of the :term:`intouch triangle <intouch-triangle>`
+
+Notes
+-----
+
+.. container:: note-item
+
+   Let :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` be the lines through :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, resp. parallel to the antiorthic axis. Let :g:`M_{a} <M_a>`, :g:`M_{b} <M_b>`, :g:`M_{c} <M_c>` be the reflections of :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>` in :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>`, resp. Let :g:`A' <A'>` = :g:`M_{b} <M_b>`\ ∩\ :g:`M_{c} <M_c>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Triangle :g:`A'B'C' << A' B' C' >>` is inversely similar to, and 3 times the size of, :g:`ABC << A B C >>`. Let :g:`A″B″C″ << A″ B″ C″ >>` be the reflection of :g:`A'B'C' << A' B' C' >>` in the antiorthic axis. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to :g:`ABC << A B C >>`, with center of homothety :ref:`X_908 <X_908>`; see :cite:`Hyacinthos #16741 <hyacinthos>`/16782, Sep 2008. (:person:`Randy Hutson <randy-hutson>`, March 25, 2016)
 
 .. toctree::
    :hidden:

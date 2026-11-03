@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(922) = POINT ALBALI."""
+"""GEOMETOR construction model for X_922 = POINT ALBALI."""
 
 from __future__ import annotations
 
@@ -20,13 +20,13 @@ from geometor.etc.render import write_center_svg
 def construct_x_00922(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(922) = POINT ALBALI on reference triangle ABC."""
-    X_922 = eval_trilinear_point(model, A, B, C, 'a**(2)*(b**(2) + c**(2) - 2*a**(2))', ID="X(922)", classes=["selected", "target"])
-    X_31 = eval_trilinear_point(model, A, B, C, 'a**(2)', ID="X(31)", classes=["center", "incident"])
-    X_48 = eval_trilinear_point(model, A, B, C, 'tan(B) + tan(C)', ID="X(48)", classes=["center", "incident"])
+    """Construct X_922 = POINT ALBALI on reference triangle ABC."""
+    X_922 = eval_trilinear_point(model, A, B, C, 'a**(2)*(b**(2) + c**(2) - 2*a**(2))', ID="X_922", classes=["selected", "target"])
+    X_31 = eval_trilinear_point(model, A, B, C, 'a**(2)', ID="X_31", classes=["center", "incident"])
+    X_48 = eval_trilinear_point(model, A, B, C, 'tan(B) + tan(C)', ID="X_48", classes=["center", "incident"])
     central_line(model, X_31, X_48, 31, 48, incident=True)
-    X_667 = eval_trilinear_point(model, A, B, C, 'a**(2)*(b - c)', ID="X(667)", classes=["center", "incident"])
-    X_788 = eval_trilinear_point(model, A, B, C, 'a**(2)*(b**(3) - c**(3))', ID="X(788)", classes=["center", "incident"])
+    X_667 = eval_trilinear_point(model, A, B, C, 'a**(2)*(b - c)', ID="X_667", classes=["center", "incident"])
+    X_788 = eval_trilinear_point(model, A, B, C, 'a**(2)*(b**(3) - c**(3))', ID="X_788", classes=["center", "incident"])
     central_line(model, X_667, X_788, 667, 788, incident=True)
     return promote_point_to_top(model, X_922)
 
@@ -35,8 +35,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(922) on the given reference triangle."""
-    model = create_model('X(922) = POINT ALBALI')
+    """Build a `geometor.model.Model` for X_922 on the given reference triangle."""
+    model = create_model('X_922 = POINT ALBALI')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00922(model, A, B, C)
     return model

@@ -1,22 +1,31 @@
 :order: 617
 :type: center
-:canonical_id: X(617)
-:dependencies: X(2), X(3), X(4), X(13), X(14), X(16), X(20), X(30), X(69), X(74), X(99), X(148), X(298), X(299), X(302), X(303), X(381), X(533), X(549), X(616), X(619), X(622), X(628), X(634), X(3441), X(39133)
+:canonical_id: X_617
+:subtitle: ANTICOMPLEMENT OF X_14
+:dependencies: X_2, X_3, X_4, X_13, X_14, X_16, X_20, X_30, X_69, X_74, X_99, X_148, X_298, X_299, X_302, X_303, X_381, X_533, X_549, X_616, X_619, X_622, X_628, X_634, X_3441, X_39133
 
-.. _X(617):
+.. _X_617:
 
-X(617) = ANTICOMPLEMENT OF X(14)
-================================
+X_617
+=====
+
+.. rubric:: ANTICOMPLEMENT OF X_14
 
 .. enunciation::
 
-   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the inner Napoleon triangle and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(617) <X(617)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (:person:`Randy Hutson <randy-hutson>`, August 30, 2020)
+   :ref:`X_617 <X_617>` is the :term:`anticomplement <anticomplement>` of :ref:`X_14 <X_14>`.
 
 .. figure:: x-00617.svg
-   :alt: X(617) = ANTICOMPLEMENT OF X(14)
+   :alt: X_617 — ANTICOMPLEMENT OF X_14
    :align: center
 
-   **X(617) = ANTICOMPLEMENT OF X(14)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_617** (*ANTICOMPLEMENT OF X_14*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 14} <{ 2, 14 }>`, :g:`{69, 74} <{ 69, 74 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_14 <X_14>` (:ref:`2nd ISOGONIC CENTER <X_14>`), :g:`X_69 <X_69>` (:ref:`SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE <X_69>`), :g:`X_74 <X_74>` (:ref:`ISOGONAL CONJUGATE OF EULER INFINITY POINT <X_74>`)
 
 .. signature:: center
 
@@ -30,24 +39,31 @@ X(617) = ANTICOMPLEMENT OF X(14)
 
 .. container:: note-item
 
-   :ref:`X(617) <X(617)>` lies on the Neuberg cubic.
+   :ref:`X_617 <X_617>` lies on the Neuberg cubic.
 
 .. collapse:: Incident Central Lines
    :badge: 10 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`14 <X(14)>`}, {:ref:`3 <X(3)>`, :ref:`298 <X(298)>`}, {:ref:`4 <X(4)>`, :ref:`628 <X(628)>`}, {:ref:`13 <X(13)>`, :ref:`148 <X(148)>`}, {:ref:`16 <X(16)>`, :ref:`533 <X(533)>`}, {:ref:`20 <X(20)>`, :ref:`634 <X(634)>`}, {:ref:`30 <X(30)>`, :ref:`299 <X(299)>`}, {:ref:`69 <X(69)>`, :ref:`74 <X(74)>`}, {:ref:`302 <X(302)>`, :ref:`549 <X(549)>`}, {:ref:`303 <X(303)>`, :ref:`381 <X(381)>`}
+   {:ref:`2 <X_2>`, :ref:`14 <X_14>`}, {:ref:`3 <X_3>`, :ref:`298 <X_298>`}, {:ref:`4 <X_4>`, :ref:`628 <X_628>`}, {:ref:`13 <X_13>`, :ref:`148 <X_148>`}, {:ref:`16 <X_16>`, :ref:`533 <X_533>`}, {:ref:`20 <X_20>`, :ref:`634 <X_634>`}, {:ref:`30 <X_30>`, :ref:`299 <X_299>`}, {:ref:`69 <X_69>`, :ref:`74 <X_74>`}, {:ref:`302 <X_302>`, :ref:`549 <X_549>`}, {:ref:`303 <X_303>`, :ref:`381 <X_381>`}
 
 .. collapse:: Functional Relations
    :badge: 7 relations
 
-   * :ref:`X(617) <X(617)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`14 <X(14)>`, :ref:`619 <X(619)>`), (:ref:`148 <X(148)>`, :ref:`13 <X(13)>`), (:ref:`616 <X(616)>`, :ref:`99 <X(99)>`), (:ref:`622 <X(622)>`, :ref:`299 <X(299)>`)
-   * :ref:`X(617) <X(617)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(3441)
-   * :ref:`X(617) <X(617)>` = :term:`anticomplement <anticomplement>` of :ref:`X(14) <X(14)>`
-   * :ref:`X(617) <X(617)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X(622) <X(622)>`
-   * :ref:`X(617) <X(617)>` = antigonal conjugate of X(39133)
-   * :ref:`X(617) <X(617)>` = :ref:`X(30) <X(30)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(616) <X(616)>`
-   * :ref:`X(617) <X(617)>` = :ref:`X(299) <X(299)>`-Ceva conjugate of :ref:`X(2) <X(2)>`
+   * :ref:`X_617 <X_617>` = reflection of X_i in X_j for these (i,j): (:ref:`14 <X_14>`, :ref:`619 <X_619>`), (:ref:`148 <X_148>`, :ref:`13 <X_13>`), (:ref:`616 <X_616>`, :ref:`99 <X_99>`), (:ref:`622 <X_622>`, :ref:`299 <X_299>`)
+   * :ref:`X_617 <X_617>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3441
+   * :ref:`X_617 <X_617>` = anticomplement of :ref:`X_14 <X_14>`
+   * :ref:`X_617 <X_617>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X_622 <X_622>`
+   * :ref:`X_617 <X_617>` = antigonal conjugate of X_39133
+   * :ref:`X_617 <X_617>` = :ref:`X_30 <X_30>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_616 <X_616>`
+   * :ref:`X_617 <X_617>` = :ref:`X_299 <X_299>`-Ceva conjugate of :ref:`X_2 <X_2>`
+
+Notes
+-----
+
+.. container:: note-item
+
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the :term:`inner Napoleon triangle <inner-napoleon-triangle>` and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X_617 <X_617>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (:person:`Randy Hutson <randy-hutson>`, August 30, 2020)
 
 .. toctree::
    :hidden:

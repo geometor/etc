@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(18) = 2nd NAPOLEON POINT."""
+"""GEOMETOR construction model for X_18 = 2nd NAPOLEON POINT."""
 
 from __future__ import annotations
 
@@ -25,17 +25,17 @@ from geometor.etc.render import write_center_svg
 def construct_x_00018(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(18) = 2nd NAPOLEON POINT on reference triangle ABC."""
+    """Construct X_18 = 2nd NAPOLEON POINT on reference triangle ABC."""
     Na, Nb, Nc = inner_napoleon_triangle(model, A, B, C)
-    X_18 = perspector(model, A, B, C, Na, Nb, Nc, ID="X(18)", classes=["selected", "target"])
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
-    X_14 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /3)', ID="X(14)", classes=["center", "incident"])
+    X_18 = perspector(model, A, B, C, Na, Nb, Nc, ID="X_18", classes=["selected", "target"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
+    X_14 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /3)', ID="X_14", classes=["center", "incident"])
     central_line(model, X_3, X_14, 3, 14, incident=True)
-    X_5 = nine_point_center_of(model, A, B, C, ID="X(5)", classes=["center", "incident"])
-    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /3)', ID="X(13)", classes=["center", "incident"])
+    X_5 = nine_point_center_of(model, A, B, C, ID="X_5", classes=["center", "incident"])
+    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /3)', ID="X_13", classes=["center", "incident"])
     central_line(model, X_5, X_13, 5, 13, incident=True)
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
-    X_16 = eval_trilinear_point(model, A, B, C, 'sin(A- pi /3)', ID="X(16)", classes=["center", "incident"])
+    X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
+    X_16 = eval_trilinear_point(model, A, B, C, 'sin(A- pi /3)', ID="X_16", classes=["center", "incident"])
     central_line(model, X_4, X_16, 4, 16, incident=True)
     return promote_point_to_top(model, X_18)
 
@@ -44,8 +44,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(18) on the given reference triangle."""
-    model = create_model('X(18) = 2nd NAPOLEON POINT')
+    """Build a `geometor.model.Model` for X_18 on the given reference triangle."""
+    model = create_model('X_18 = 2nd NAPOLEON POINT')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00018(model, A, B, C)
     return model

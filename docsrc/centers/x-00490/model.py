@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(490) = CEVAPOINT OF X(20) AND X(488)."""
+"""GEOMETOR construction model for X_490 = CEVAPOINT OF X_20 AND X_488."""
 
 from __future__ import annotations
 
@@ -23,16 +23,16 @@ from geometor.etc.render import write_center_svg
 def construct_x_00490(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(490) = CEVAPOINT OF X(20) AND X(488) on reference triangle ABC."""
-    X_20 = eval_trilinear_point(model, A, B, C, 'cos(A) - cos(B)*cos(C)', ID="X(20)", classes=["center"])
-    X_488 = point_from_barycentrics(model, A, B, C, 0.48788658, 0.37148244, 0.14063098, ID="X(488)", classes=["center"])
-    X_490 = cevapoint(model, A, B, C, X_20, X_488, ID="X(490)", classes=["selected", "target"])
-    X_64 = eval_trilinear_point(model, A, B, C, '1/(cos(A) - cos(B)*cos(C))', ID="X(64)", classes=["center", "incident"])
+    """Construct X_490 = CEVAPOINT OF X_20 AND X_488 on reference triangle ABC."""
+    X_20 = eval_trilinear_point(model, A, B, C, 'cos(A) - cos(B)*cos(C)', ID="X_20", classes=["center"])
+    X_488 = point_from_barycentrics(model, A, B, C, 0.48788658, 0.37148244, 0.14063098, ID="X_488", classes=["center"])
+    X_490 = cevapoint(model, A, B, C, X_20, X_488, ID="X_490", classes=["selected", "target"])
+    X_64 = eval_trilinear_point(model, A, B, C, '1/(cos(A) - cos(B)*cos(C))', ID="X_64", classes=["center", "incident"])
     central_line(model, X_20, X_64, 20, 64, incident=True)
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
+    X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
     central_line(model, X_4, X_488, 4, 488, incident=True)
-    X_376 = eval_trilinear_point(model, A, B, C, '5*cos(A) - cos(B - C)', ID="X(376)", classes=["center", "incident"])
-    X_487 = point_from_barycentrics(model, A, B, C, -1.1839423, 1.1273575, 1.0565848, ID="X(487)", classes=["center", "incident"])
+    X_376 = eval_trilinear_point(model, A, B, C, '5*cos(A) - cos(B - C)', ID="X_376", classes=["center", "incident"])
+    X_487 = point_from_barycentrics(model, A, B, C, -1.1839423, 1.1273575, 1.0565848, ID="X_487", classes=["center", "incident"])
     central_line(model, X_376, X_487, 376, 487, incident=True)
     return promote_point_to_top(model, X_490)
 
@@ -41,8 +41,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(490) on the given reference triangle."""
-    model = create_model('X(490) = CEVAPOINT OF X(20) AND X(488)')
+    """Build a `geometor.model.Model` for X_490 on the given reference triangle."""
+    model = create_model('X_490 = CEVAPOINT OF X_20 AND X_488')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00490(model, A, B, C)
     return model

@@ -1,18 +1,21 @@
-:canonical_id: X(408)
+:canonical_id: X_408
 :type: code
+:subtitle: EULER LINE INTERCEPT OF LINE X_73X_228
 
-X(408) = EULER LINE INTERCEPT OF LINE X(73)X(228) — Code
-========================================================
+X_408
+=====
+
+.. rubric:: EULER LINE INTERCEPT OF LINE X_73X_228
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(408) <X(408)>` has Shinagawa coefficients :math:`((\$bcS_{B}S_{C}\$)^{2}, -(\$bcS_{B}S_{C}\$)^{2} + EFS^{4})`.
+   :ref:`X_408 <X_408>` = :term:`crosssum <crosssum>` of :ref:`X_29 <X_29>` and :ref:`X_412 <X_412>`
 
 .. figure:: x-00408.svg
-   :alt: X(408) = EULER LINE INTERCEPT OF LINE X(73)X(228)
+   :alt: X_408 — EULER LINE INTERCEPT OF LINE X_73X_228
    :align: center
 
-   **X(408) = EULER LINE INTERCEPT OF LINE X(73)X(228)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_408** (*EULER LINE INTERCEPT OF LINE X_73X_228*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,18 +1,21 @@
-:canonical_id: X(968)
+:canonical_id: X_968
 :type: code
+:subtitle: POINT ALDERAMIN
 
-X(968) = POINT ALDERAMIN — Code
-===============================
+X_968
+=====
+
+.. rubric:: POINT ALDERAMIN
 
 .. enunciation::
 
-   :ref:`X(968) <X(968)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(969) <X(969)>`
+   :ref:`X_968 <X_968>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_661 <X_661>`\ \ :ref:`X_905 <X_905>`
 
 .. figure:: x-00968.svg
-   :alt: X(968) = POINT ALDERAMIN
+   :alt: X_968 — POINT ALDERAMIN
    :align: center
 
-   **X(968) = POINT ALDERAMIN** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_968** (*POINT ALDERAMIN*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

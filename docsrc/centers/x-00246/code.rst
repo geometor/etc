@@ -1,18 +1,21 @@
-:canonical_id: X(246)
+:canonical_id: X_246
 :type: code
+:subtitle: X_3-LINE CONJUGATE OF X_110
 
-X(246) = X(3)-LINE CONJUGATE OF X(110) — Code
-=============================================
+X_246
+=====
+
+.. rubric:: X_3-LINE CONJUGATE OF X_110
 
 .. enunciation::
 
-   :ref:`X(246) <X(246)>` = :ref:`X(3) <X(3)>`-:term:`line conjugate <line-conjugate>` of :ref:`X(110) <X(110)>`
+   :ref:`X_246 <X_246>` = :ref:`X_3 <X_3>`-:term:`line conjugate <line-conjugate>` of :ref:`X_110 <X_110>`
 
 .. figure:: x-00246.svg
-   :alt: X(246) = X(3)-LINE CONJUGATE OF X(110)
+   :alt: X_246 — X_3-LINE CONJUGATE OF X_110
    :align: center
 
-   **X(246) = X(3)-LINE CONJUGATE OF X(110)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_246** (*X_3-LINE CONJUGATE OF X_110*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

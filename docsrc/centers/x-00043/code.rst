@@ -1,18 +1,21 @@
-:canonical_id: X(43)
+:canonical_id: X_43
 :type: code
+:subtitle: X_6-CEVA CONJUGATE OF X_1
 
-X(43) = X(6)-CEVA CONJUGATE OF X(1) — Code
-==========================================
+X_43
+====
+
+.. rubric:: X_6-CEVA CONJUGATE OF X_1
 
 .. enunciation::
 
-   Let :g:`A' <A'>` be the inverse-in-excircles-radical-circle of the midpoint of :g:`BC <[ B C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Triangle :g:`A'B'C' << A' B' C' >>` is inscribed in the Apollonius circle and homothetic to the :term:`excentral triangle <excentral-triangle>` at :ref:`X(43) <X(43)>`. (:person:`Randy Hutson <randy-hutson>`, November 30, 2018)
+   :ref:`X_43 <X_43>` is the {:ref:`X_2 <X_2>`,\ :ref:`X_42 <X_42>`}-harmonic conjugate of :ref:`X_1 <X_1>`. :ref:`X_43 <X_43>` is the external center of similitude of the Bevan circle and Apollonius circle; the internal center is X_1695.
 
 .. figure:: x-00043.svg
-   :alt: X(43) = X(6)-CEVA CONJUGATE OF X(1)
+   :alt: X_43 — X_6-CEVA CONJUGATE OF X_1
    :align: center
 
-   **X(43) = X(6)-CEVA CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_43** (*X_6-CEVA CONJUGATE OF X_1*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -298,7 +298,7 @@ def parse_h3(html_content: str) -> dict[str, Any] | None:
         return None
 
     num = int(key_match.group(1))
-    key = f"X({num})"
+    key = f"X_{num}"
 
     title = re.sub(
         r"^(?:X[\(\[]\d+[\)\]]\s*=\s*)+", "", clean_h3, flags=re.IGNORECASE
@@ -307,8 +307,10 @@ def parse_h3(html_content: str) -> dict[str, Any] | None:
         title = re.sub(
             r"^X[\(\[]\d+[\)\]]\s*", "", clean_h3, flags=re.IGNORECASE
         ).strip()
+    title = title.lstrip("=").strip()
     if not title:
-        title = clean_h3
+        title = key
+    title = re.sub(r"\bX[\(\[](\d+)[\)\]]", r"X_\1", title, flags=re.IGNORECASE)
 
     # Extract parenthetical aliases at the end of the title if present, e.g.
     # "SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)" -> primary="SYMMEDIAN POINT", aliases=["LEMOINE POINT", "GREBE POINT"]
@@ -441,6 +443,12 @@ def _parse_header_block(header_html: str) -> dict[str, list[str]]:
 def _parse_incidence_block(raw_block: str, center_num: int) -> dict[str, Any]:
     """Parse an 'X(n) lies on ...' paragraph into structured curves, line pairs, and RST."""
     cleaned = convert_inline_html_to_rst(raw_block)
+    cleaned = re.sub(
+        r"^(\s*X[\(\[]\d+[\)\]]\s+lies)\s+the\b",
+        r"\1 on the",
+        cleaned,
+        flags=re.IGNORECASE,
+    )
 
     # Extract line pairs after "these lines:", "this line:", "the following lines:", etc.
     lines_pairs: list[tuple[int, int]] = []
@@ -759,7 +767,8 @@ def parse_center(html_content: str) -> dict[str, Any] | None:
     relations: list[str] = []
 
     lies_on_re = re.compile(
-        r"^\s*X[\(\[]\d+[\)\]]\s+lies\s+on\b", re.DOTALL | re.IGNORECASE
+        r"^\s*X[\(\[]\d+[\)\]]\s+lies\s+(?:on\b|the\b.*?\blines\s*:)",
+        re.DOTALL | re.IGNORECASE,
     )
     relation_re = re.compile(
         r"^\s*X[\(\[]\d+[\)\]]\s*=", re.DOTALL | re.IGNORECASE
@@ -837,7 +846,7 @@ def parse_center(html_content: str) -> dict[str, Any] | None:
                     dep_nums.add(int(tm.group(3)))
 
     dep_nums.discard(num)
-    dependencies = [f"X({d})" for d in sorted(dep_nums)]
+    dependencies = [f"X_{d}" for d in sorted(dep_nums)]
 
     return {
         "key": key,

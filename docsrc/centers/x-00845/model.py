@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(845) = X(165)X(166)∩X(173)X(503)."""
+"""GEOMETOR construction model for X_845 = X_165X_166∩X_173X_503."""
 
 from __future__ import annotations
 
@@ -22,14 +22,14 @@ from geometor.etc.render import write_center_svg
 def construct_x_00845(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(845) = X(165)X(166)∩X(173)X(503) on reference triangle ABC."""
-    X_165 = eval_trilinear_point(model, A, B, C, 'tan(B/2) + tan(C/2) - tan(A/2)', ID="X(165)", classes=["center"])
-    X_166 = point_from_barycentrics(model, A, B, C, 0.22766017, 0.3221551, 0.45018473, ID="X(166)", classes=["center"])
-    X_164 = eval_trilinear_point(model, A, B, C, 'sin(B/2) + sin(C/2) - sin(A/2)', ID="X(164)", classes=["center"])
-    X_362 = eval_trilinear_point(model, A, B, C, 'b*cos(B/2) + c*cos(C/2) - a*cos(A/2)', ID="X(362)", classes=["center"])
+    """Construct X_845 = X_165X_166∩X_173X_503 on reference triangle ABC."""
+    X_165 = eval_trilinear_point(model, A, B, C, 'tan(B/2) + tan(C/2) - tan(A/2)', ID="X_165", classes=["center"])
+    X_166 = point_from_barycentrics(model, A, B, C, 0.22766017, 0.3221551, 0.45018473, ID="X_166", classes=["center"])
+    X_164 = eval_trilinear_point(model, A, B, C, 'sin(B/2) + sin(C/2) - sin(A/2)', ID="X_164", classes=["center"])
+    X_362 = eval_trilinear_point(model, A, B, C, 'b*cos(B/2) + c*cos(C/2) - a*cos(A/2)', ID="X_362", classes=["center"])
     central_line(model, X_165, X_166, 165, 166)
     central_line(model, X_164, X_362, 164, 362)
-    X_845 = intersect_lines(model, X_165, X_166, X_164, X_362, ID="X(845)", classes=["selected", "target"])
+    X_845 = intersect_lines(model, X_165, X_166, X_164, X_362, ID="X_845", classes=["selected", "target"])
     return promote_point_to_top(model, X_845)
 
 
@@ -37,8 +37,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(845) on the given reference triangle."""
-    model = create_model('X(845) = X(165)X(166)∩X(173)X(503)')
+    """Build a `geometor.model.Model` for X_845 on the given reference triangle."""
+    model = create_model('X_845 = X_165X_166∩X_173X_503')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00845(model, A, B, C)
     return model

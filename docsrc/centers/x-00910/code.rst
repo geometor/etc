@@ -1,18 +1,21 @@
-:canonical_id: X(910)
+:canonical_id: X_910
 :type: code
+:subtitle: CROSSPOINT OF X_57 AND X_105
 
-X(910) = CROSSPOINT OF X(57) AND X(105) — Code
-==============================================
+X_910
+=====
+
+.. rubric:: CROSSPOINT OF X_57 AND X_105
 
 .. enunciation::
 
-   :ref:`X(910) <X(910)>` = reflection of X(1530) in :ref:`X(118) <X(118)>`
+   :ref:`X_910 <X_910>` is the :term:`crosspoint <crosspoint>` of :ref:`X_57 <X_57>` and :ref:`X_105 <X_105>`.
 
 .. figure:: x-00910.svg
-   :alt: X(910) = CROSSPOINT OF X(57) AND X(105)
+   :alt: X_910 — CROSSPOINT OF X_57 AND X_105
    :align: center
 
-   **X(910) = CROSSPOINT OF X(57) AND X(105)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_910** (*CROSSPOINT OF X_57 AND X_105*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

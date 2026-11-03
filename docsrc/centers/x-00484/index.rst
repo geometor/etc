@@ -1,23 +1,32 @@
 :order: 484
 :type: center
-:canonical_id: X(484)
-:dependencies: X(1), X(3), X(4), X(10), X(12), X(13), X(14), X(30), X(35), X(36), X(46), X(63), X(74), X(79), X(80), X(100), X(186), X(191), X(499), X(535), X(650), X(758), X(759), X(901), X(962), X(1046), X(1048), X(1100), X(1138), X(1155), X(1276), X(1277), X(3065), X(3153), X(3245), X(3336), X(3464), X(3465), X(3466), X(3483), X(3484), X(5045), X(35631), X(37616)
+:canonical_id: X_484
+:subtitle: 1st EVANS PERSPECTOR
+:dependencies: X_1, X_3, X_4, X_10, X_12, X_13, X_14, X_30, X_35, X_36, X_46, X_63, X_74, X_79, X_80, X_100, X_186, X_191, X_499, X_535, X_650, X_758, X_759, X_901, X_962, X_1046, X_1048, X_1100, X_1138, X_1155, X_1276, X_1277, X_3065, X_3153, X_3245, X_3336, X_3464, X_3465, X_3466, X_3483, X_3484, X_5045, X_35631, X_37616
 
-.. _X(484):
+.. _X_484:
 .. _1st-EvansPerspector:
 
-X(484) = 1st EVANS PERSPECTOR
-=============================
+X_484
+=====
+
+.. rubric:: 1st EVANS PERSPECTOR
 
 .. enunciation::
 
-   :ref:`X(484) <X(484)>` is the perspector of the :term:`excentral triangle <excentral-triangle>` and the triangle :g:`A'B'C' << A' B' C' >>`, where :g:`A' <A'>` is the reflection of vertex :g:`A <A>` in sideline :g:`BC <[ B C ]>` and :g:`B' <B'>`, :g:`C' <C'>` are determined cyclically. (Lawrence Evans, 10/22/98)
+   :ref:`X_484 <X_484>` is the perspector of the :term:`excentral triangle <excentral-triangle>` and the triangle :g:`A'B'C' << A' B' C' >>`, where :g:`A' <A'>` is the reflection of vertex :g:`A <A>` in sideline :g:`BC <[ B C ]>` and :g:`B' <B'>`, :g:`C' <C'>` are determined cyclically. (Lawrence Evans, 10/22/98)
 
 .. figure:: x-00484.svg
-   :alt: X(484) = 1st EVANS PERSPECTOR
+   :alt: X_484 — 1st EVANS PERSPECTOR
    :align: center
 
-   **X(484) = 1st EVANS PERSPECTOR** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_484** (*1st EVANS PERSPECTOR*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 3} <{ 1, 3 }>`, :g:`{12, 79} <{ 12, 79 }>`
+   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_12 <X_12>` (:ref:`{X <X_12>`), :g:`X_79 <X_79>` (:ref:`ISOGONAL CONJUGATE OF X(35) <X_79>`)
 
 .. signature:: center
 
@@ -32,33 +41,33 @@ X(484) = 1st EVANS PERSPECTOR
 
 .. container:: note-item
 
-   :ref:`X(484) <X(484)>` lies on the Neuberg cubic.
+   :ref:`X_484 <X_484>` lies on the Neuberg cubic.
 
 .. collapse:: Incident Central Lines
    :badge: 15 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`3 <X(3)>`}, {:ref:`4 <X(4)>`, 3483}, {:ref:`10 <X(10)>`, :ref:`191 <X(191)>`}, {:ref:`12 <X(12)>`, :ref:`79 <X(79)>`}, {:ref:`13 <X(13)>`, 1277}, {:ref:`14 <X(14)>`, 1276}, {:ref:`30 <X(30)>`, :ref:`80 <X(80)>`}, {:ref:`63 <X(63)>`, :ref:`535 <X(535)>`}, {:ref:`74 <X(74)>`, 3465}, {:ref:`100 <X(100)>`, :ref:`758 <X(758)>`}, {:ref:`499 <X(499)>`, :ref:`962 <X(962)>`}, {:ref:`759 <X(759)>`, :ref:`901 <X(901)>`}, {1046, 1048}, {1138, 3464}, {3466, 3484}
+   {:ref:`1 <X_1>`, :ref:`3 <X_3>`}, {:ref:`4 <X_4>`, 3483}, {:ref:`10 <X_10>`, :ref:`191 <X_191>`}, {:ref:`12 <X_12>`, :ref:`79 <X_79>`}, {:ref:`13 <X_13>`, 1277}, {:ref:`14 <X_14>`, 1276}, {:ref:`30 <X_30>`, :ref:`80 <X_80>`}, {:ref:`63 <X_63>`, :ref:`535 <X_535>`}, {:ref:`74 <X_74>`, 3465}, {:ref:`100 <X_100>`, :ref:`758 <X_758>`}, {:ref:`499 <X_499>`, :ref:`962 <X_962>`}, {:ref:`759 <X_759>`, :ref:`901 <X_901>`}, {1046, 1048}, {1138, 3464}, {3466, 3484}
 
 .. collapse:: Functional Relations
    :badge: 16 relations
 
-   * :ref:`X(484) <X(484)>` = midpoint of :ref:`X(36) <X(36)>` and X(3245)
-   * :ref:`X(484) <X(484)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`36 <X(36)>`), (:ref:`36 <X(36)>`, 1155)
-   * :ref:`X(484) <X(484)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(3065)
-   * :ref:`X(484) <X(484)>` = inverse-in-circumcircle of :ref:`X(35) <X(35)>`
-   * :ref:`X(484) <X(484)>` = inverse-in-Bevan-circle of :ref:`X(1) <X(1)>`
-   * :ref:`X(484) <X(484)>` = Conway-circle-inverse of X(35631)
-   * :ref:`X(484) <X(484)>` = :ref:`X(80) <X(80)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(1) <X(1)>`
-   * :ref:`X(484) <X(484)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(650) <X(650)>`\ X(1100)
-   * :ref:`X(484) <X(484)>` = {:ref:`X(1) <X(1)>`\ \ :ref:`X(46) <X(46)>`}-harmonic conjugate of X(3336)
-   * :ref:`X(484) <X(484)>` = inverse-in-incircle of X(5045)
-   * :ref:`X(484) <X(484)>` = perspector of :g:`ABC << A B C >>` and the reflection of the :term:`incentral triangle <incentral-triangle>` in the antiorthic axis (the reflection of the :term:`cevian triangle <cevian-triangle>` of :ref:`X(1) <X(1)>` in the :term:`trilinear polar <trilinear-polar>` of :ref:`X(1) <X(1)>`)
-   * :ref:`X(484) <X(484)>` = reflection of :ref:`X(36) <X(36)>` in the antiorthic axis
-   * :ref:`X(484) <X(484)>` = :ref:`X(30) <X(30)>`-Ceva conjugate of X(3465)
-   * :ref:`X(484) <X(484)>` = :ref:`X(186) <X(186)>`-of-excentral-triangle
-   * :ref:`X(484) <X(484)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(3) <X(3)>`}-harmonic conjugate of X(37616)
-   * :ref:`X(484) <X(484)>` = endo-homothetic center of Ehrmann vertex-triangle and dual of :term:`orthic triangle <orthic-triangle>`; the homothetic center of is X(3153)
+   * :ref:`X_484 <X_484>` = midpoint of :ref:`X_36 <X_36>` and X_3245
+   * :ref:`X_484 <X_484>` = reflection of X_i in X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`36 <X_36>`), (:ref:`36 <X_36>`, 1155)
+   * :ref:`X_484 <X_484>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3065
+   * :ref:`X_484 <X_484>` = inverse-in-circumcircle of :ref:`X_35 <X_35>`
+   * :ref:`X_484 <X_484>` = inverse-in-Bevan-circle of :ref:`X_1 <X_1>`
+   * :ref:`X_484 <X_484>` = Conway-circle-inverse of X_35631
+   * :ref:`X_484 <X_484>` = :ref:`X_80 <X_80>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_1 <X_1>`
+   * :ref:`X_484 <X_484>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_650 <X_650>`\ X_1100
+   * :ref:`X_484 <X_484>` = {:ref:`X_1 <X_1>`\ \ :ref:`X_46 <X_46>`}-harmonic conjugate of X_3336
+   * :ref:`X_484 <X_484>` = inverse-in-incircle of X_5045
+   * :ref:`X_484 <X_484>` = perspector of :g:`ABC << A B C >>` and the reflection of the :term:`incentral triangle <incentral-triangle>` in the antiorthic axis (the reflection of the :term:`cevian triangle <cevian-triangle>` of :ref:`X_1 <X_1>` in the :term:`trilinear polar <trilinear-polar>` of :ref:`X_1 <X_1>`)
+   * :ref:`X_484 <X_484>` = reflection of :ref:`X_36 <X_36>` in the antiorthic axis
+   * :ref:`X_484 <X_484>` = :ref:`X_30 <X_30>`-Ceva conjugate of X_3465
+   * :ref:`X_484 <X_484>` = :ref:`X_186 <X_186>`-of-excentral-triangle
+   * :ref:`X_484 <X_484>` = {:ref:`X_1 <X_1>`,\ :ref:`X_3 <X_3>`}-harmonic conjugate of X_37616
+   * :ref:`X_484 <X_484>` = endo-homothetic center of Ehrmann vertex-triangle and dual of :term:`orthic triangle <orthic-triangle>`; the homothetic center of is X_3153
 
 .. toctree::
    :hidden:

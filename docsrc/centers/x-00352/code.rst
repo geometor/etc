@@ -1,18 +1,21 @@
-:canonical_id: X(352)
+:canonical_id: X_352
 :type: code
+:subtitle: INVERSE-IN-CIRCUMCIRCLE OF X_353
 
-X(352) = INVERSE-IN-CIRCUMCIRCLE OF X(353) — Code
-=================================================
+X_352
+=====
+
+.. rubric:: INVERSE-IN-CIRCUMCIRCLE OF X_353
 
 .. enunciation::
 
-   :ref:`X(352) <X(352)>` = reflection of :ref:`X(843) <X(843)>` in :ref:`X(187) <X(187)>`
+   :ref:`X_352 <X_352>` = inverse-in-circumcircle of :ref:`X_353 <X_353>`
 
 .. figure:: x-00352.svg
-   :alt: X(352) = INVERSE-IN-CIRCUMCIRCLE OF X(353)
+   :alt: X_352 — INVERSE-IN-CIRCUMCIRCLE OF X_353
    :align: center
 
-   **X(352) = INVERSE-IN-CIRCUMCIRCLE OF X(353)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_352** (*INVERSE-IN-CIRCUMCIRCLE OF X_353*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

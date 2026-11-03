@@ -1,22 +1,31 @@
 :order: 129
 :type: center
-:canonical_id: X(129)
-:dependencies: X(5), X(51), X(52), X(53), X(98), X(115), X(130), X(137), X(139), X(389), X(1298), X(32428), X(34838)
+:canonical_id: X_129
+:subtitle: X_98-OF-ORTHIC-TRIANGLE
+:dependencies: X_5, X_51, X_52, X_53, X_98, X_115, X_130, X_137, X_139, X_389, X_1298, X_32428, X_34838
 
-.. _X(129):
+.. _X_129:
 
-X(129) = X(98)-OF-ORTHIC-TRIANGLE
-=================================
+X_129
+=====
+
+.. rubric:: X_98-OF-ORTHIC-TRIANGLE
 
 .. enunciation::
 
-   :ref:`X(129) <X(129)>` = :ref:`X(98) <X(98)>`-of-:term:`orthic triangle <orthic-triangle>`.
+   :ref:`X_129 <X_129>` = :ref:`X_98 <X_98>`-of-:term:`orthic triangle <orthic-triangle>`.
 
 .. figure:: x-00129.svg
-   :alt: X(129) = X(98)-OF-ORTHIC-TRIANGLE
+   :alt: X_129 — X_98-OF-ORTHIC-TRIANGLE
    :align: center
 
-   **X(129) = X(98)-OF-ORTHIC-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_129** (*X_98-OF-ORTHIC-TRIANGLE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{130, 5} <{ 130, 5 }>`
+   * **Related Centers:** :g:`X_130 <X_130>` (:ref:`-OF-ORTHIC-TRIANGLE <X_130>`), :g:`X_5 <X_5>` (:ref:`NINE-POINT CENTER <X_5>`)
 
 .. signature:: center
 
@@ -26,24 +35,24 @@ X(129) = X(98)-OF-ORTHIC-TRIANGLE
 
 .. container:: note-item
 
-   :ref:`X(129) <X(129)>` lies on the nine-point circle
+   :ref:`X_129 <X_129>` lies on the nine-point circle
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines
    :class: line-catalog
 
-   {:ref:`5 <X(5)>`, :ref:`130 <X(130)>`}, {:ref:`51 <X(51)>`, :ref:`137 <X(137)>`}, {:ref:`52 <X(52)>`, :ref:`139 <X(139)>`}, {:ref:`115 <X(115)>`, :ref:`389 <X(389)>`}
+   {:ref:`5 <X_5>`, :ref:`130 <X_130>`}, {:ref:`51 <X_51>`, :ref:`137 <X_137>`}, {:ref:`52 <X_52>`, :ref:`139 <X_139>`}, {:ref:`115 <X_115>`, :ref:`389 <X_389>`}
 
 .. collapse:: Functional Relations
    :badge: 7 relations
 
-   * :ref:`X(129) <X(129)>` = :ref:`X(98) <X(98)>`-of-orthic triangle.
-   * :ref:`X(129) <X(129)>` = reflection of :ref:`X(130) <X(130)>` in :ref:`X(5) <X(5)>`
-   * :ref:`X(129) <X(129)>` = :term:`complement <complement>` of X(1298)
-   * :ref:`X(129) <X(129)>` = :term:`anticomplement <anticomplement>` of X(34838)
-   * :ref:`X(129) <X(129)>` = :term:`complementary conjugate <complementary-conjugate>` of X(32428)
-   * :ref:`X(129) <X(129)>` = Λ(:ref:`X(5) <X(5)>`, :ref:`X(53) <X(53)>`), wrt orthic triangle
-   * :ref:`X(129) <X(129)>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X(98) <X(98)>`
+   * :ref:`X_129 <X_129>` = :ref:`X_98 <X_98>`-of-orthic triangle.
+   * :ref:`X_129 <X_129>` = reflection of :ref:`X_130 <X_130>` in :ref:`X_5 <X_5>`
+   * :ref:`X_129 <X_129>` = :term:`complement <complement>` of X_1298
+   * :ref:`X_129 <X_129>` = :term:`anticomplement <anticomplement>` of X_34838
+   * :ref:`X_129 <X_129>` = :term:`complementary conjugate <complementary-conjugate>` of X_32428
+   * :ref:`X_129 <X_129>` = Λ(:ref:`X_5 <X_5>`, :ref:`X_53 <X_53>`), wrt orthic triangle
+   * :ref:`X_129 <X_129>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X_98 <X_98>`
 
 .. toctree::
    :hidden:

@@ -1,23 +1,33 @@
 :order: 18
 :type: center
-:canonical_id: X(18)
-:dependencies: X(2), X(3), X(4), X(5), X(6), X(12), X(13), X(14), X(15), X(16), X(17), X(61), X(62), X(63), X(76), X(83), X(140), X(202), X(203), X(231), X(275), X(298), X(302), X(303), X(398), X(470), X(472), X(499), X(523), X(623), X(624), X(628), X(630), X(634), X(636), X(1209), X(10641), X(14447), X(32628)
+:canonical_id: X_18
+:subtitle: 2nd NAPOLEON POINT
+:dependencies: X_2, X_3, X_4, X_5, X_6, X_12, X_13, X_14, X_15, X_16, X_17, X_61, X_62, X_63, X_76, X_83, X_140, X_202, X_203, X_231, X_275, X_298, X_302, X_303, X_398, X_470, X_472, X_499, X_523, X_623, X_624, X_628, X_630, X_634, X_636, X_1209, X_10641, X_14447, X_32628
 
-.. _X(18):
+.. _X_18:
 .. _SecondNapoleonPoint:
 
-X(18) = 2nd NAPOLEON POINT
-==========================
+X_18
+====
+
+.. rubric:: 2nd NAPOLEON POINT
 
 .. enunciation::
 
-   Let :g:`X <X>`,Y,Z be the centers of the equilateral triangles in the construction of :ref:`X(14) <X(14)>`. The lines :g:`AX <[ A X ]>`, BY, CZ concur in :ref:`X(18) <X(18)>`.
+   Let :g:`X <Nap'_a>`, :g:`Y <Nap'_b>`, :g:`Z <Nap'_c>` be the centers of the equilateral triangles in the construction of :ref:`X_14 <X_14>`. The lines :g:`AX <[ A Nap'_a ]>`, :g:`BY <[ B Nap'_b ]>`, :g:`CZ <[ C Nap'_c ]>` concur in :ref:`X_18 <X_18>`.
 
 .. figure:: x-00018.svg
-   :alt: X(18) = 2nd NAPOLEON POINT
+   :alt: X_18 — 2nd NAPOLEON POINT
    :align: center
 
-   **X(18) = 2nd NAPOLEON POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_18** (*2nd NAPOLEON POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Equilateral Side Triangles:** :g:`△BCA' << B C A' >>`, :g:`△CAB' << C A B' >>`, :g:`△ABC' << A B C' >>` erected on sidelines with apexes :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>`
+   * **Derived Triangle:** :term:`Outer Napoleon Triangle <outer napoleon triangle>` :g:`△Nap_aNap_bNap_c << Nap_a Nap_b Nap_c >>` (denoted :g:`△XYZ << Nap_a Nap_b Nap_c >>` in enunciation) — vertices :g:`Nap_a <Nap_a>` (:g:`X <Nap_a>`), :g:`Nap_b <Nap_b>` (:g:`Y <Nap_b>`), :g:`Nap_c <Nap_c>` (:g:`Z <Nap_c>`) (Equilateral triangle formed by centers of outward side equilateral triangles)
+   * **Concurrence Lines:** :g:`A–Nap_a <[ A Nap_a ]>`, :g:`B–Nap_b <[ B Nap_b ]>`, :g:`C–Nap_c <[ C Nap_c ]>` concurring at :g:`X_18 <X_18>`
 
 .. signature:: center
 
@@ -33,38 +43,38 @@ X(18) = 2nd NAPOLEON POINT
 
 .. container:: note-item
 
-   :ref:`X(18) <X(18)>` lies on the Napoleon cubic.
+   :ref:`X_18 <X_18>` lies on the Napoleon cubic.
 
 .. collapse:: Incident Central Lines
    :badge: 13 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`61 <X(61)>`}, {:ref:`3 <X(3)>`, :ref:`14 <X(14)>`}, {:ref:`4 <X(4)>`, :ref:`16 <X(16)>`}, {:ref:`5 <X(5)>`, :ref:`13 <X(13)>`}, {:ref:`6 <X(6)>`, :ref:`17 <X(17)>`}, {:ref:`12 <X(12)>`, :ref:`202 <X(202)>`}, {:ref:`15 <X(15)>`, :ref:`140 <X(140)>`}, {:ref:`76 <X(76)>`, :ref:`302 <X(302)>`}, {:ref:`83 <X(83)>`, :ref:`623 <X(623)>`}, {:ref:`203 <X(203)>`, :ref:`499 <X(499)>`}, {:ref:`275 <X(275)>`, :ref:`470 <X(470)>`}, {:ref:`298 <X(298)>`, :ref:`636 <X(636)>`}, {:ref:`624 <X(624)>`, :ref:`634 <X(634)>`}
+   {:ref:`2 <X_2>`, :ref:`61 <X_61>`}, {:ref:`3 <X_3>`, :ref:`14 <X_14>`}, {:ref:`4 <X_4>`, :ref:`16 <X_16>`}, {:ref:`5 <X_5>`, :ref:`13 <X_13>`}, {:ref:`6 <X_6>`, :ref:`17 <X_17>`}, {:ref:`12 <X_12>`, :ref:`202 <X_202>`}, {:ref:`15 <X_15>`, :ref:`140 <X_140>`}, {:ref:`76 <X_76>`, :ref:`302 <X_302>`}, {:ref:`83 <X_83>`, :ref:`623 <X_623>`}, {:ref:`203 <X_203>`, :ref:`499 <X_499>`}, {:ref:`275 <X_275>`, :ref:`470 <X_470>`}, {:ref:`298 <X_298>`, :ref:`636 <X_636>`}, {:ref:`624 <X_624>`, :ref:`634 <X_634>`}
 
 .. collapse:: Functional Relations
    :badge: 14 relations
 
-   * :ref:`X(18) <X(18)>` = reflection of :ref:`X(628) <X(628)>` in :ref:`X(630) <X(630)>`
-   * :ref:`X(18) <X(18)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(62) <X(62)>`
-   * :ref:`X(18) <X(18)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(303) <X(303)>`
-   * :ref:`X(18) <X(18)>` = :term:`complement <complement>` of :ref:`X(628) <X(628)>`
-   * :ref:`X(18) <X(18)>` = :term:`anticomplement <anticomplement>` of :ref:`X(630) <X(630)>`
-   * :ref:`X(18) <X(18)>` = circumcircle-inverse of X(32628)
-   * :ref:`X(18) <X(18)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`15 <X(15)>`, :ref:`13 <X(13)>`), (:ref:`140 <X(140)>`, :ref:`17 <X(17)>`), (:ref:`398 <X(398)>`, :ref:`4 <X(4)>`)
-   * :ref:`X(18) <X(18)>` = polar conjugate of :ref:`X(472) <X(472)>`
-   * :ref:`X(18) <X(18)>` = trilinear product of vertices of inner Napoleon triangle
-   * :ref:`X(18) <X(18)>` = Kosnita(:ref:`X(14) <X(14)>`,\ :ref:`X(3) <X(3)>`) point
-   * :ref:`X(18) <X(18)>` = Cundy-Parry Phi transform of :ref:`X(14) <X(14)>`
-   * :ref:`X(18) <X(18)>` = Cundy-Parry Psi transform of :ref:`X(16) <X(16)>`
-   * :ref:`X(18) <X(18)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(523) <X(523)>`\ X(14447)
-   * :ref:`X(18) <X(18)>` = :ref:`X(63) <X(63)>`-:term:`isoconjugate <isoconjugate>` of X(10641)
+   * :ref:`X_18 <X_18>` = reflection of :ref:`X_628 <X_628>` in :ref:`X_630 <X_630>`
+   * :ref:`X_18 <X_18>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_62 <X_62>`
+   * :ref:`X_18 <X_18>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_303 <X_303>`
+   * :ref:`X_18 <X_18>` = :term:`complement <complement>` of :ref:`X_628 <X_628>`
+   * :ref:`X_18 <X_18>` = :term:`anticomplement <anticomplement>` of :ref:`X_630 <X_630>`
+   * :ref:`X_18 <X_18>` = circumcircle-inverse of X_32628
+   * :ref:`X_18 <X_18>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`15 <X_15>`, :ref:`13 <X_13>`), (:ref:`140 <X_140>`, :ref:`17 <X_17>`), (:ref:`398 <X_398>`, :ref:`4 <X_4>`)
+   * :ref:`X_18 <X_18>` = polar conjugate of :ref:`X_472 <X_472>`
+   * :ref:`X_18 <X_18>` = trilinear product of vertices of :term:`inner Napoleon triangle <inner-napoleon-triangle>`
+   * :ref:`X_18 <X_18>` = Kosnita(:ref:`X_14 <X_14>`,\ :ref:`X_3 <X_3>`) point
+   * :ref:`X_18 <X_18>` = Cundy-Parry Phi transform of :ref:`X_14 <X_14>`
+   * :ref:`X_18 <X_18>` = Cundy-Parry Psi transform of :ref:`X_16 <X_16>`
+   * :ref:`X_18 <X_18>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_523 <X_523>`\ X_14447
+   * :ref:`X_18 <X_18>` = :ref:`X_63 <X_63>`-:term:`isoconjugate <isoconjugate>` of X_10641
 
 Notes
 -----
 
 .. container:: note-item
 
-   :ref:`X(18) <X(18)>` is the {:ref:`X(231) <X(231)>`,X(1209)}-harmonic conjugate of :ref:`X(17) <X(17)>`.
+   :ref:`X_18 <X_18>` is the {:ref:`X_231 <X_231>`,X_1209}-harmonic conjugate of :ref:`X_17 <X_17>`.
 
 .. toctree::
    :hidden:

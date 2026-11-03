@@ -1,22 +1,31 @@
 :order: 28
 :type: center
-:canonical_id: X(28)
-:dependencies: X(1), X(2), X(3), X(4), X(6), X(10), X(11), X(19), X(25), X(27), X(29), X(33), X(34), X(35), X(36), X(46), X(54), X(56), X(57), X(58), X(60), X(65), X(72), X(75), X(81), X(88), X(104), X(105), X(107), X(108), X(110), X(112), X(142), X(162), X(225), X(228), X(242), X(261), X(270), X(272), X(273), X(278), X(279), X(281), X(286), X(291), X(306), X(321), X(422), X(501), X(513), X(579), X(580), X(607), X(608), X(614), X(647), X(656), X(915), X(943), X(956), X(957), X(958), X(959), X(961), X(975), X(1002), X(1014), X(1104), X(1125), X(1155), X(1169), X(1170), X(1175), X(1178), X(1191), X(1219), X(1224), X(1243), X(1255), X(1257), X(1295), X(1301), X(1333), X(1385), X(1412), X(1422), X(1430), X(1432), X(1472), X(1633), X(1710), X(1724), X(1725), X(1730), X(1770), X(1780), X(1783), X(1824), X(1826), X(1831), X(1838), X(1848), X(1852), X(1869), X(1871), X(1876), X(1888), X(1890), X(1891), X(2074), X(20336), X(21530)
+:canonical_id: X_28
+:subtitle: CEVAPOINT OF X_19 AND X_25
+:dependencies: X_1, X_2, X_3, X_4, X_6, X_10, X_11, X_19, X_25, X_27, X_29, X_33, X_34, X_35, X_36, X_46, X_54, X_56, X_57, X_58, X_60, X_65, X_72, X_75, X_81, X_88, X_104, X_105, X_107, X_108, X_110, X_112, X_142, X_162, X_225, X_228, X_242, X_261, X_270, X_272, X_273, X_278, X_279, X_281, X_286, X_291, X_306, X_321, X_422, X_501, X_513, X_579, X_580, X_607, X_608, X_614, X_647, X_656, X_915, X_943, X_956, X_957, X_958, X_959, X_961, X_975, X_1002, X_1014, X_1104, X_1125, X_1155, X_1169, X_1170, X_1175, X_1178, X_1191, X_1219, X_1224, X_1243, X_1255, X_1257, X_1295, X_1301, X_1333, X_1385, X_1412, X_1422, X_1430, X_1432, X_1472, X_1633, X_1710, X_1724, X_1725, X_1730, X_1770, X_1780, X_1783, X_1824, X_1826, X_1831, X_1838, X_1848, X_1852, X_1869, X_1871, X_1876, X_1888, X_1890, X_1891, X_2074, X_20336, X_21530
 
-.. _X(28):
+.. _X_28:
 
-X(28) = CEVAPOINT OF X(19) AND X(25)
-====================================
+X_28
+====
+
+.. rubric:: CEVAPOINT OF X_19 AND X_25
 
 .. enunciation::
 
-   :ref:`X(28) <X(28)>` is the {:ref:`X(27) <X(27)>`,\ :ref:`X(29) <X(29)>`}-harmonic conjugate of :ref:`X(4) <X(4)>`.
+   :ref:`X_28 <X_28>` is the :term:`cevapoint <cevapoint>` of :ref:`X_19 <X_19>` and :ref:`X_25 <X_25>`.
 
 .. figure:: x-00028.svg
-   :alt: X(28) = CEVAPOINT OF X(19) AND X(25)
+   :alt: X_28 — CEVAPOINT OF X_19 AND X_25
    :align: center
 
-   **X(28) = CEVAPOINT OF X(19) AND X(25)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_28** (*CEVAPOINT OF X_19 AND X_25*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`), :g:`{1, 19} <{ 1, 19 }>`
+   * **Related Centers:** :g:`X_72 <X_72>` (:ref:`ISOGONAL CONJUGATE OF X(28) <X_72>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_19 <X_19>` (:ref:`CLAWSON POINT <X_19>`)
 
 .. signature:: center
 
@@ -27,38 +36,42 @@ X(28) = CEVAPOINT OF X(19) AND X(25)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(28) <X(28)>` = :math:`8 sa sb sc` :ref:`X(4) <X(4)>` + :math:`a b c (3 + J^{2})` :ref:`X(25) <X(25)>`
+   * :ref:`X_28 <X_28>` = :math:`8 sa sb sc` :ref:`X_4 <X_4>` + :math:`a b c (3 + J^{2})` :ref:`X_25 <X_25>`
 
 .. collapse:: Incident Central Lines
    :badge: 47 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`19 <X(19)>`}, {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`10 <X(10)>`, 1891}, {:ref:`11 <X(11)>`, 1852}, {:ref:`33 <X(33)>`, :ref:`975 <X(975)>`}, {:ref:`34 <X(34)>`, :ref:`57 <X(57)>`}, {:ref:`35 <X(35)>`, 1869}, {:ref:`36 <X(36)>`, 1838}, {:ref:`46 <X(46)>`, 1780}, {:ref:`54 <X(54)>`, 1243}, {:ref:`56 <X(56)>`, :ref:`278 <X(278)>`}, {:ref:`60 <X(60)>`, :ref:`81 <X(81)>`}, {:ref:`65 <X(65)>`, 1175}, {:ref:`72 <X(72)>`, 1257}, {:ref:`88 <X(88)>`, :ref:`162 <X(162)>`}, {:ref:`104 <X(104)>`, :ref:`107 <X(107)>`}, {:ref:`105 <X(105)>`, :ref:`112 <X(112)>`}, {:ref:`108 <X(108)>`, :ref:`225 <X(225)>`}, {:ref:`110 <X(110)>`, :ref:`915 <X(915)>`}, {:ref:`142 <X(142)>`, 1890}, {:ref:`228 <X(228)>`, :ref:`943 <X(943)>`}, {:ref:`242 <X(242)>`, :ref:`261 <X(261)>`}, {:ref:`272 <X(272)>`, :ref:`273 <X(273)>`}, {:ref:`279 <X(279)>`, 1014}, {:ref:`281 <X(281)>`, :ref:`958 <X(958)>`}, {:ref:`291 <X(291)>`, 1783}, {:ref:`501 <X(501)>`, 1831}, {:ref:`579 <X(579)>`, 1724}, {:ref:`580 <X(580)>`, 1730}, {:ref:`607 <X(607)>`, 1002}, {:ref:`608 <X(608)>`, :ref:`959 <X(959)>`}, {:ref:`614 <X(614)>`, 1472}, {:ref:`956 <X(956)>`, 1219}, {:ref:`957 <X(957)>`, 1191}, {:ref:`961 <X(961)>`, 1169}, {1104, 1333}, {1125, 1848}, {1155, 1888}, {1170, 1876}, {1178, 1432}, {1224, 1826}, {1255, 1824}, {1295, 1301}, {1385, 1871}, {1412, 1422}, {1633, 1770}, {1710, 1725}
+   {:ref:`1 <X_1>`, :ref:`19 <X_19>`}, {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`10 <X_10>`, 1891}, {:ref:`11 <X_11>`, 1852}, {:ref:`33 <X_33>`, :ref:`975 <X_975>`}, {:ref:`34 <X_34>`, :ref:`57 <X_57>`}, {:ref:`35 <X_35>`, 1869}, {:ref:`36 <X_36>`, 1838}, {:ref:`46 <X_46>`, 1780}, {:ref:`54 <X_54>`, 1243}, {:ref:`56 <X_56>`, :ref:`278 <X_278>`}, {:ref:`60 <X_60>`, :ref:`81 <X_81>`}, {:ref:`65 <X_65>`, 1175}, {:ref:`72 <X_72>`, 1257}, {:ref:`88 <X_88>`, :ref:`162 <X_162>`}, {:ref:`104 <X_104>`, :ref:`107 <X_107>`}, {:ref:`105 <X_105>`, :ref:`112 <X_112>`}, {:ref:`108 <X_108>`, :ref:`225 <X_225>`}, {:ref:`110 <X_110>`, :ref:`915 <X_915>`}, {:ref:`142 <X_142>`, 1890}, {:ref:`228 <X_228>`, :ref:`943 <X_943>`}, {:ref:`242 <X_242>`, :ref:`261 <X_261>`}, {:ref:`272 <X_272>`, :ref:`273 <X_273>`}, {:ref:`279 <X_279>`, 1014}, {:ref:`281 <X_281>`, :ref:`958 <X_958>`}, {:ref:`291 <X_291>`, 1783}, {:ref:`501 <X_501>`, 1831}, {:ref:`579 <X_579>`, 1724}, {:ref:`580 <X_580>`, 1730}, {:ref:`607 <X_607>`, 1002}, {:ref:`608 <X_608>`, :ref:`959 <X_959>`}, {:ref:`614 <X_614>`, 1472}, {:ref:`956 <X_956>`, 1219}, {:ref:`957 <X_957>`, 1191}, {:ref:`961 <X_961>`, 1169}, {1104, 1333}, {1125, 1848}, {1155, 1888}, {1170, 1876}, {1178, 1432}, {1224, 1826}, {1255, 1824}, {1295, 1301}, {1385, 1871}, {1412, 1422}, {1633, 1770}, {1710, 1725}
 
 .. collapse:: Functional Relations
    :badge: 14 relations
 
-   * :ref:`X(28) <X(28)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(72) <X(72)>`
-   * :ref:`X(28) <X(28)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(20336)
-   * :ref:`X(28) <X(28)>` = :term:`anticomplement <anticomplement>` of X(21530)
-   * :ref:`X(28) <X(28)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(513) <X(513)>`\ X(1430) (the polar of :ref:`X(321) <X(321)>` wrt polar circle)
-   * :ref:`X(28) <X(28)>` = polar conjugate of :ref:`X(321) <X(321)>`
-   * :ref:`X(28) <X(28)>` = :ref:`X(6) <X(6)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(306) <X(306)>`
-   * :ref:`X(28) <X(28)>` = :ref:`X(75) <X(75)>`-isoconjugate of :ref:`X(228) <X(228)>`
-   * :ref:`X(28) <X(28)>` = circumcircle-inverse of X(2074)
-   * :ref:`X(28) <X(28)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`270 <X(270)>`, :ref:`58 <X(58)>`), (:ref:`286 <X(286)>`, :ref:`81 <X(81)>`)
-   * :ref:`X(28) <X(28)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these (i,j): (:ref:`19 <X(19)>`, :ref:`25 <X(25)>`), (:ref:`34 <X(34)>`, :ref:`56 <X(56)>`)
-   * :ref:`X(28) <X(28)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`19 <X(19)>`, :ref:`27 <X(27)>`), (:ref:`58 <X(58)>`, :ref:`58 <X(58)>`)
-   * :ref:`X(28) <X(28)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(647) <X(647)>`\ \ :ref:`X(656) <X(656)>`
-   * :ref:`X(28) <X(28)>` = :ref:`X(4) <X(4)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(422) <X(422)>`
-   * :ref:`X(28) <X(28)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`29 <X(29)>`, :ref:`29 <X(29)>`), (:ref:`107 <X(107)>`, :ref:`28 <X(28)>`), (:ref:`162 <X(162)>`, :ref:`28 <X(28)>`), (:ref:`270 <X(270)>`, :ref:`28 <X(28)>`)
+   * :ref:`X_28 <X_28>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_72 <X_72>`
+   * :ref:`X_28 <X_28>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_20336
+   * :ref:`X_28 <X_28>` = :term:`anticomplement <anticomplement>` of X_21530
+   * :ref:`X_28 <X_28>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_513 <X_513>`\ X_1430 (the polar of :ref:`X_321 <X_321>` wrt polar circle)
+   * :ref:`X_28 <X_28>` = polar conjugate of :ref:`X_321 <X_321>`
+   * :ref:`X_28 <X_28>` = :ref:`X_6 <X_6>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_306 <X_306>`
+   * :ref:`X_28 <X_28>` = :ref:`X_75 <X_75>`-isoconjugate of :ref:`X_228 <X_228>`
+   * :ref:`X_28 <X_28>` = circumcircle-inverse of X_2074
+   * :ref:`X_28 <X_28>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`270 <X_270>`, :ref:`58 <X_58>`), (:ref:`286 <X_286>`, :ref:`81 <X_81>`)
+   * :ref:`X_28 <X_28>` = cevapoint of X_i and X_j for these (i,j): (:ref:`19 <X_19>`, :ref:`25 <X_25>`), (:ref:`34 <X_34>`, :ref:`56 <X_56>`)
+   * :ref:`X_28 <X_28>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`19 <X_19>`, :ref:`27 <X_27>`), (:ref:`58 <X_58>`, :ref:`58 <X_58>`)
+   * :ref:`X_28 <X_28>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_647 <X_647>`\ \ :ref:`X_656 <X_656>`
+   * :ref:`X_28 <X_28>` = :ref:`X_4 <X_4>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X_422 <X_422>`
+   * :ref:`X_28 <X_28>` = X_i-:term:`beth conjugate <beth-conjugate>` of X_j for these (i,j): (:ref:`29 <X_29>`, :ref:`29 <X_29>`), (:ref:`107 <X_107>`, :ref:`28 <X_28>`), (:ref:`162 <X_162>`, :ref:`28 <X_28>`), (:ref:`270 <X_270>`, :ref:`28 <X_28>`)
 
 Notes
 -----
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(28) <X(28)>` has Shinagawa coefficients :math:`(\$a\$F, -\$a\$(E + F) - abc)`.
+   As a point on the Euler line, :ref:`X_28 <X_28>` has Shinagawa coefficients :math:`(\$a\$F, -\$a\$(E + F) - abc)`.
+
+.. container:: note-item
+
+   :ref:`X_28 <X_28>` is the {:ref:`X_27 <X_27>`,\ :ref:`X_29 <X_29>`}-harmonic conjugate of :ref:`X_4 <X_4>`.
 
 .. toctree::
    :hidden:

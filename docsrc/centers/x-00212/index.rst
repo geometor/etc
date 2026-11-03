@@ -1,22 +1,31 @@
 :order: 212
 :type: center
-:canonical_id: X(212)
-:dependencies: X(1), X(3), X(4), X(6), X(7), X(9), X(11), X(31), X(33), X(34), X(35), X(40), X(41), X(47), X(48), X(55), X(56), X(57), X(63), X(73), X(78), X(92), X(109), X(154), X(165), X(184), X(198), X(201), X(219), X(228), X(238), X(273), X(278), X(283), X(312), X(497), X(514), X(582), X(643), X(748), X(939), X(942), X(1040), X(1946), X(3064)
+:canonical_id: X_212
+:subtitle: X_9-CEVA CONJUGATE OF X_41
+:dependencies: X_1, X_3, X_4, X_6, X_7, X_9, X_11, X_31, X_33, X_34, X_35, X_40, X_41, X_47, X_48, X_55, X_56, X_57, X_63, X_73, X_78, X_92, X_109, X_154, X_165, X_184, X_198, X_201, X_219, X_228, X_238, X_273, X_278, X_283, X_312, X_497, X_514, X_582, X_643, X_748, X_939, X_942, X_1040, X_1946, X_3064
 
-.. _X(212):
+.. _X_212:
 
-X(212) = X(9)-CEVA CONJUGATE OF X(41)
-=====================================
+X_212
+=====
+
+.. rubric:: X_9-CEVA CONJUGATE OF X_41
 
 .. enunciation::
 
-   The :term:`trilinear polar <trilinear-polar>` of :ref:`X(212) <X(212)>` passes through X(1946). (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
+   :ref:`X_212 <X_212>` = :ref:`X_4 <X_4>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_7 <X_7>`
 
 .. figure:: x-00212.svg
-   :alt: X(212) = X(9)-CEVA CONJUGATE OF X(41)
+   :alt: X_212 — X_9-CEVA CONJUGATE OF X_41
    :align: center
 
-   **X(212) = X(9)-CEVA CONJUGATE OF X(41)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_212** (*X_9-CEVA CONJUGATE OF X_41*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{6, 31} <{ 6, 31 }>`, :g:`{9, 33} <{ 9, 33 }>`
+   * **Related Centers:** :g:`X_273 <X_273>` (:ref:`ISOGONAL CONJUGATE OF X(212) <X_273>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_31 <X_31>` (:ref:`2nd POWER POINT <X_31>`), :g:`X_9 <X_9>` (:ref:`MITTENPUNKT <X_9>`), :g:`X_33 <X_33>` (:ref:`PERSPECTOR OF THE ORTHIC AND INTANGENTS TRIANGLES <X_33>`)
 
 .. signature:: center
 
@@ -34,20 +43,27 @@ X(212) = X(9)-CEVA CONJUGATE OF X(41)
    :badge: 16 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`201 <X(201)>`}, {:ref:`3 <X(3)>`, :ref:`73 <X(73)>`}, {:ref:`6 <X(6)>`, :ref:`31 <X(31)>`}, {:ref:`9 <X(9)>`, :ref:`33 <X(33)>`}, {:ref:`11 <X(11)>`, :ref:`748 <X(748)>`}, {:ref:`34 <X(34)>`, :ref:`40 <X(40)>`}, {:ref:`35 <X(35)>`, :ref:`47 <X(47)>`}, {:ref:`48 <X(48)>`, :ref:`184 <X(184)>`}, {:ref:`56 <X(56)>`, :ref:`939 <X(939)>`}, {:ref:`63 <X(63)>`, 1040}, {:ref:`78 <X(78)>`, :ref:`283 <X(283)>`}, {:ref:`109 <X(109)>`, :ref:`165 <X(165)>`}, {:ref:`154 <X(154)>`, :ref:`198 <X(198)>`}, {:ref:`238 <X(238)>`, :ref:`497 <X(497)>`}, {:ref:`312 <X(312)>`, :ref:`643 <X(643)>`}, {:ref:`582 <X(582)>`, :ref:`942 <X(942)>`}
+   {:ref:`1 <X_1>`, :ref:`201 <X_201>`}, {:ref:`3 <X_3>`, :ref:`73 <X_73>`}, {:ref:`6 <X_6>`, :ref:`31 <X_31>`}, {:ref:`9 <X_9>`, :ref:`33 <X_33>`}, {:ref:`11 <X_11>`, :ref:`748 <X_748>`}, {:ref:`34 <X_34>`, :ref:`40 <X_40>`}, {:ref:`35 <X_35>`, :ref:`47 <X_47>`}, {:ref:`48 <X_48>`, :ref:`184 <X_184>`}, {:ref:`56 <X_56>`, :ref:`939 <X_939>`}, {:ref:`63 <X_63>`, 1040}, {:ref:`78 <X_78>`, :ref:`283 <X_283>`}, {:ref:`109 <X_109>`, :ref:`165 <X_165>`}, {:ref:`154 <X_154>`, :ref:`198 <X_198>`}, {:ref:`238 <X_238>`, :ref:`497 <X_497>`}, {:ref:`312 <X_312>`, :ref:`643 <X_643>`}, {:ref:`582 <X_582>`, :ref:`942 <X_942>`}
 
 .. collapse:: Functional Relations
    :badge: 9 relations
 
-   * :ref:`X(212) <X(212)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(273) <X(273)>`
-   * :ref:`X(212) <X(212)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(514) <X(514)>`\ X(3064)
-   * :ref:`X(212) <X(212)>` = :ref:`X(4) <X(4)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(7) <X(7)>`
-   * :ref:`X(212) <X(212)>` = :ref:`X(57) <X(57)>`-isoconjugate of :ref:`X(92) <X(92)>`
-   * :ref:`X(212) <X(212)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`3 <X(3)>`, :ref:`48 <X(48)>`), (:ref:`9 <X(9)>`, :ref:`41 <X(41)>`), (:ref:`283 <X(283)>`, :ref:`219 <X(219)>`)
-   * :ref:`X(212) <X(212)>` = :ref:`X(228) <X(228)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(55) <X(55)>`
-   * :ref:`X(212) <X(212)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`3 <X(3)>`, :ref:`219 <X(219)>`), (:ref:`9 <X(9)>`, :ref:`78 <X(78)>`)
-   * :ref:`X(212) <X(212)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`4 <X(4)>`, :ref:`278 <X(278)>`), (:ref:`34 <X(34)>`, :ref:`57 <X(57)>`)
-   * :ref:`X(212) <X(212)>` = :ref:`X(212) <X(212)>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X(184) <X(184)>`
+   * :ref:`X_212 <X_212>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_273 <X_273>`
+   * :ref:`X_212 <X_212>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_514 <X_514>`\ X_3064
+   * :ref:`X_212 <X_212>` = :ref:`X_4 <X_4>`-isoconjugate of :ref:`X_7 <X_7>`
+   * :ref:`X_212 <X_212>` = :ref:`X_57 <X_57>`-isoconjugate of :ref:`X_92 <X_92>`
+   * :ref:`X_212 <X_212>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`48 <X_48>`), (:ref:`9 <X_9>`, :ref:`41 <X_41>`), (:ref:`283 <X_283>`, :ref:`219 <X_219>`)
+   * :ref:`X_212 <X_212>` = :ref:`X_228 <X_228>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_55 <X_55>`
+   * :ref:`X_212 <X_212>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`219 <X_219>`), (:ref:`9 <X_9>`, :ref:`78 <X_78>`)
+   * :ref:`X_212 <X_212>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`278 <X_278>`), (:ref:`34 <X_34>`, :ref:`57 <X_57>`)
+   * :ref:`X_212 <X_212>` = :ref:`X_212 <X_212>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X_184 <X_184>`
+
+Notes
+-----
+
+.. container:: note-item
+
+   The :term:`trilinear polar <trilinear-polar>` of :ref:`X_212 <X_212>` passes through X_1946. (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
 
 .. toctree::
    :hidden:

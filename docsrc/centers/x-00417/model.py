@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(417) = X(3)-CEVA CONJUGATE OF X(185)."""
+"""GEOMETOR construction model for X_417 = X_3-CEVA CONJUGATE OF X_185."""
 
 from __future__ import annotations
 
@@ -22,10 +22,10 @@ from geometor.etc.render import write_center_svg
 def construct_x_00417(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(417) = X(3)-CEVA CONJUGATE OF X(185) on reference triangle ABC."""
-    X_417 = point_from_barycentrics(model, A, B, C, 0.38368056, 0.36458333, 0.25173611, ID="X(417)", classes=["selected", "target"])
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
+    """Construct X_417 = X_3-CEVA CONJUGATE OF X_185 on reference triangle ABC."""
+    X_417 = point_from_barycentrics(model, A, B, C, 0.38368056, 0.36458333, 0.25173611, ID="X_417", classes=["selected", "target"])
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
     return promote_point_to_top(model, X_417)
 
@@ -34,8 +34,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(417) on the given reference triangle."""
-    model = create_model('X(417) = X(3)-CEVA CONJUGATE OF X(185)')
+    """Build a `geometor.model.Model` for X_417 on the given reference triangle."""
+    model = create_model('X_417 = X_3-CEVA CONJUGATE OF X_185')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00417(model, A, B, C)
     return model

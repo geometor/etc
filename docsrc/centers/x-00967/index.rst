@@ -1,22 +1,31 @@
 :order: 967
 :type: center
-:canonical_id: X(967)
-:dependencies: X(3), X(25), X(27), X(37), X(42), X(58), X(63), X(81), X(393), X(512), X(941), X(966), X(1459)
+:canonical_id: X_967
+:subtitle: ISOGONAL CONJUGATE OF X_966
+:dependencies: X_3, X_25, X_27, X_37, X_42, X_58, X_63, X_81, X_393, X_512, X_941, X_966, X_1459
 
-.. _X(967):
+.. _X_967:
 
-X(967) = ISOGONAL CONJUGATE OF X(966)
-=====================================
+X_967
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_966
 
 .. enunciation::
 
-   :ref:`X(967) <X(967)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(966) <X(966)>`
+   :ref:`X_967 <X_967>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_966 <X_966>`.
 
 .. figure:: x-00967.svg
-   :alt: X(967) = ISOGONAL CONJUGATE OF X(966)
+   :alt: X_967 — ISOGONAL CONJUGATE OF X_966
    :align: center
 
-   **X(967) = ISOGONAL CONJUGATE OF X(966)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_967** (*ISOGONAL CONJUGATE OF X_966*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{3, 42} <{ 3, 42 }>`, :g:`{25, 58} <{ 25, 58 }>`
+   * **Related Centers:** :g:`X_966 <X_966>` (:ref:`INTERSECTION OF LINES X <X_966>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_42 <X_42>` (:ref:`CROSSPOINT OF INCENTER AND SYMMEDIAN POINT <X_42>`), :g:`X_25 <X_25>` (:ref:`HOMOTHETIC CENTER OF ORTHIC AND TANGENTIAL TRIANGLES <X_25>`), :g:`X_58 <X_58>` (:ref:`ISOGONAL CONJUGATE OF X(10) <X_58>`)
 
 .. signature:: center
 
@@ -28,13 +37,13 @@ X(967) = ISOGONAL CONJUGATE OF X(966)
    :badge: 5 lines
    :class: line-catalog
 
-   {:ref:`3 <X(3)>`, :ref:`42 <X(42)>`}, {:ref:`25 <X(25)>`, :ref:`58 <X(58)>`}, {:ref:`27 <X(27)>`, :ref:`393 <X(393)>`}, {:ref:`37 <X(37)>`, :ref:`63 <X(63)>`}, {:ref:`81 <X(81)>`, :ref:`941 <X(941)>`}
+   {:ref:`3 <X_3>`, :ref:`42 <X_42>`}, {:ref:`25 <X_25>`, :ref:`58 <X_58>`}, {:ref:`27 <X_27>`, :ref:`393 <X_393>`}, {:ref:`37 <X_37>`, :ref:`63 <X_63>`}, {:ref:`81 <X_81>`, :ref:`941 <X_941>`}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(967) <X(967)>` = isogonal conjugate of :ref:`X(966) <X(966)>`
-   * :ref:`X(967) <X(967)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(512) <X(512)>`\ X(1459)
+   * :ref:`X_967 <X_967>` = isogonal conjugate of :ref:`X_966 <X_966>`
+   * :ref:`X_967 <X_967>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_512 <X_512>`\ X_1459
 
 .. toctree::
    :hidden:

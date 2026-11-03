@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(678) = CROSSPOINT OF X(1) AND X(44)."""
+"""GEOMETOR construction model for X_678 = CROSSPOINT OF X_1 AND X_44."""
 
 from __future__ import annotations
 
@@ -22,16 +22,16 @@ from geometor.etc.render import write_center_svg
 def construct_x_00678(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(678) = CROSSPOINT OF X(1) AND X(44) on reference triangle ABC."""
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
-    X_88 = eval_trilinear_point(model, A, B, C, '1/(b + c - 2*a)', ID="X(88)", classes=["center"])
-    X_45 = eval_trilinear_point(model, A, B, C, '2*b + 2*c - a', ID="X(45)", classes=["center"])
-    X_55 = eval_trilinear_point(model, A, B, C, 'a*(b + c - a)', ID="X(55)", classes=["center"])
+    """Construct X_678 = CROSSPOINT OF X_1 AND X_44 on reference triangle ABC."""
+    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center"])
+    X_88 = eval_trilinear_point(model, A, B, C, '1/(b + c - 2*a)', ID="X_88", classes=["center"])
+    X_45 = eval_trilinear_point(model, A, B, C, '2*b + 2*c - a', ID="X_45", classes=["center"])
+    X_55 = eval_trilinear_point(model, A, B, C, 'a*(b + c - a)', ID="X_55", classes=["center"])
     central_line(model, X_1, X_88, 1, 88)
     central_line(model, X_45, X_55, 45, 55)
-    X_678 = intersect_lines(model, X_1, X_88, X_45, X_55, ID="X(678)", classes=["selected", "target"])
-    X_44 = eval_trilinear_point(model, A, B, C, 'b + c - 2*a', ID="X(44)", classes=["center", "incident"])
-    X_902 = eval_trilinear_point(model, A, B, C, 'a*(b + c - 2*a)', ID="X(902)", classes=["center", "incident"])
+    X_678 = intersect_lines(model, X_1, X_88, X_45, X_55, ID="X_678", classes=["selected", "target"])
+    X_44 = eval_trilinear_point(model, A, B, C, 'b + c - 2*a', ID="X_44", classes=["center", "incident"])
+    X_902 = eval_trilinear_point(model, A, B, C, 'a*(b + c - 2*a)', ID="X_902", classes=["center", "incident"])
     central_line(model, X_44, X_902, 44, 902, incident=True)
     return promote_point_to_top(model, X_678)
 
@@ -40,8 +40,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(678) on the given reference triangle."""
-    model = create_model('X(678) = CROSSPOINT OF X(1) AND X(44)')
+    """Build a `geometor.model.Model` for X_678 on the given reference triangle."""
+    model = create_model('X_678 = CROSSPOINT OF X_1 AND X_44')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00678(model, A, B, C)
     return model

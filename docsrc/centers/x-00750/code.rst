@@ -1,18 +1,21 @@
-:canonical_id: X(750)
+:canonical_id: X_750
 :type: code
+:subtitle: INTERSECTION OF LINES X_1X_88 AND X_2X_31
 
-X(750) = INTERSECTION OF LINES X(1)X(88) AND X(2)X(31) — Code
-=============================================================
+X_750
+=====
+
+.. rubric:: INTERSECTION OF LINES X_1X_88 AND X_2X_31
 
 .. enunciation::
 
-   :ref:`X(750) <X(750)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(751) <X(751)>`
+   :ref:`X_750 <X_750>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_751 <X_751>`
 
 .. figure:: x-00750.svg
-   :alt: X(750) = INTERSECTION OF LINES X(1)X(88) AND X(2)X(31)
+   :alt: X_750 — INTERSECTION OF LINES X_1X_88 AND X_2X_31
    :align: center
 
-   **X(750) = INTERSECTION OF LINES X(1)X(88) AND X(2)X(31)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_750** (*INTERSECTION OF LINES X_1X_88 AND X_2X_31*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

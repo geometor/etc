@@ -1,22 +1,31 @@
 :order: 547
 :type: center
-:canonical_id: X(547)
-:dependencies: X(2), X(3), X(4), X(5), X(13), X(14), X(15), X(16), X(140), X(381), X(549), X(551), X(952), X(3627), X(35231), X(35232), X(37923), X(37952)
+:canonical_id: X_547
+:subtitle: MIDPOINT OF X_2 AND X_5
+:dependencies: X_2, X_3, X_4, X_5, X_13, X_14, X_15, X_16, X_140, X_381, X_549, X_551, X_952, X_3627, X_35231, X_35232, X_37923, X_37952
 
-.. _X(547):
+.. _X_547:
 
-X(547) = MIDPOINT OF X(2) AND X(5)
-==================================
+X_547
+=====
+
+.. rubric:: MIDPOINT OF X_2 AND X_5
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(547) <X(547)>` has Shinagawa coefficients :math:`(7,3)`.
+   :ref:`X_547 <X_547>` is the midpoint of :ref:`X_2 <X_2>` and :ref:`X_5 <X_5>`.
 
 .. figure:: x-00547.svg
-   :alt: X(547) = MIDPOINT OF X(2) AND X(5)
+   :alt: X_547 — MIDPOINT OF X_2 AND X_5
    :align: center
 
-   **X(547) = MIDPOINT OF X(2) AND X(5)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_547** (*MIDPOINT OF X_2 AND X_5*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{140, 2} <{ 140, 2 }>`, :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`)
+   * **Related Centers:** :g:`X_140 <X_140>` (:ref:`MIDPOINT OF X(3) AND X(5) <X_140>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`)
 
 .. signature:: center
 
@@ -31,29 +40,36 @@ X(547) = MIDPOINT OF X(2) AND X(5)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(547) <X(547)>` = :ref:`X(3) <X(3)>` + :math:`3` :ref:`X(4) <X(4)>`
+   * :ref:`X_547 <X_547>` = :ref:`X_3 <X_3>` + :math:`3` :ref:`X_4 <X_4>`
 
 .. container:: note-item
 
-   :ref:`X(547) <X(547)>` lies on the Euler line. (:person:`Antreas Hatzipolakis <antreas-hatzipolakis>`, 1/20/00, :cite:`Hyacinthos #201 <hyacinthos>`)
+   :ref:`X_547 <X_547>` lies on the Euler line. (:person:`Antreas Hatzipolakis <antreas-hatzipolakis>`, 1/20/00, :cite:`Hyacinthos #201 <hyacinthos>`)
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`551 <X(551)>`, :ref:`952 <X(952)>`}
+   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`551 <X_551>`, :ref:`952 <X_952>`}
 
 .. collapse:: Functional Relations
    :badge: 8 relations
 
-   * :ref:`X(547) <X(547)>` = midpoint of X(i) and X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`5 <X(5)>`), (:ref:`381 <X(381)>`, :ref:`549 <X(549)>`)
-   * :ref:`X(547) <X(547)>` = reflection of :ref:`X(140) <X(140)>` in :ref:`X(2) <X(2)>`
-   * :ref:`X(547) <X(547)>` = :term:`complement <complement>` of :ref:`X(549) <X(549)>`
-   * :ref:`X(547) <X(547)>` = circumcircle-inverse of X(37923)
-   * :ref:`X(547) <X(547)>` = center of the Vu pedal-centroidal circle of :ref:`X(5) <X(5)>`
-   * :ref:`X(547) <X(547)>` = {X(35231),X(35232)}-harmonic conjugate of X(37952)
-   * :ref:`X(547) <X(547)>` = pole of Fermat axis wrt conic {:ref:`X(5) <X(5)>`,\ :ref:`X(13) <X(13)>`,\ :ref:`X(14) <X(14)>`,\ :ref:`X(15) <X(15)>`,\ :ref:`X(16) <X(16)>`}}
-   * :ref:`X(547) <X(547)>` = {:ref:`X(3) <X(3)>`,\ :ref:`X(4) <X(4)>`}-harmonic conjugate of X(3627)
+   * :ref:`X_547 <X_547>` = midpoint of X_i and X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`5 <X_5>`), (:ref:`381 <X_381>`, :ref:`549 <X_549>`)
+   * :ref:`X_547 <X_547>` = reflection of :ref:`X_140 <X_140>` in :ref:`X_2 <X_2>`
+   * :ref:`X_547 <X_547>` = :term:`complement <complement>` of :ref:`X_549 <X_549>`
+   * :ref:`X_547 <X_547>` = circumcircle-inverse of X_37923
+   * :ref:`X_547 <X_547>` = center of the Vu pedal-centroidal circle of :ref:`X_5 <X_5>`
+   * :ref:`X_547 <X_547>` = {X_35231,X_35232}-harmonic conjugate of X_37952
+   * :ref:`X_547 <X_547>` = pole of Fermat axis wrt conic {:ref:`X_5 <X_5>`,\ :ref:`X_13 <X_13>`,\ :ref:`X_14 <X_14>`,\ :ref:`X_15 <X_15>`,\ :ref:`X_16 <X_16>`}}
+   * :ref:`X_547 <X_547>` = {:ref:`X_3 <X_3>`,\ :ref:`X_4 <X_4>`}-harmonic conjugate of X_3627
+
+Notes
+-----
+
+.. container:: note-item
+
+   As a point on the Euler line, :ref:`X_547 <X_547>` has Shinagawa coefficients :math:`(7,3)`.
 
 .. toctree::
    :hidden:

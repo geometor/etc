@@ -1,18 +1,21 @@
-:canonical_id: X(16)
+:canonical_id: X_16
 :type: code
+:subtitle: 2nd ISODYNAMIC POINT
 
-X(16) = 2nd ISODYNAMIC POINT — Code
-===================================
+X_16
+====
+
+.. rubric:: 2nd ISODYNAMIC POINT
 
 .. enunciation::
 
-   Let :g:`U <U>` and V be the points on sideline :g:`BC <[ B C ]>` met by the interior and exterior bisectors of angle A. The circle having diameter :g:`UV <[ U V ]>` is the A-Apollonian circle. The B- and C- Apollonian circles are similarly constructed. Each circle passes through a vertex and both isodynamic points. The :term:`pedal triangle <pedal-triangle>` of :ref:`X(16) <X(16)>` is equilateral.
+   Let :g:`U <U>` and :g:`V <V>` be the points on sideline :g:`BC <[ B C ]>` met by the interior and exterior bisectors of angle :g:`A <A>`. The circle having diameter :g:`UV <[ U V ]>` is the A-Apollonian circle. The B- and C- Apollonian circles are similarly constructed. Each circle passes through a vertex and both isodynamic points. The :term:`pedal triangle <pedal-triangle>` of :ref:`X_16 <X_16>` is equilateral.
 
 .. figure:: x-00016.svg
-   :alt: X(16) = 2nd ISODYNAMIC POINT
+   :alt: X_16 — 2nd ISODYNAMIC POINT
    :align: center
 
-   **X(16) = 2nd ISODYNAMIC POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_16** (*2nd ISODYNAMIC POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

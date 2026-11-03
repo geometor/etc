@@ -1,18 +1,21 @@
-:canonical_id: X(542)
+:canonical_id: X_542
 :type: code
+:subtitle: DIRECTION OF VECTOR AX + BX + CX, where X = X_98
 
-X(542) = DIRECTION OF VECTOR AX + BX + CX, where X = X(98) — Code
-=================================================================
+X_542
+=====
+
+.. rubric:: DIRECTION OF VECTOR AX + BX + CX, where X = X_98
 
 .. enunciation::
 
-   :ref:`X(542) <X(542)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(842) <X(842)>`
+   :ref:`X_542 <X_542>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_6 <X_6>`\ \ :ref:`X_526 <X_526>`
 
 .. figure:: x-00542.svg
-   :alt: X(542) = DIRECTION OF VECTOR AX + BX + CX, where X = X(98)
+   :alt: X_542 — DIRECTION OF VECTOR AX + BX + CX, where X = X_98
    :align: center
 
-   **X(542) = DIRECTION OF VECTOR AX + BX + CX, where X = X(98)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_542** (*DIRECTION OF VECTOR AX + BX + CX, where X = X_98*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

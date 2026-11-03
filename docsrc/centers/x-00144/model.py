@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(144) = ANTICOMPLEMENT OF X(7)."""
+"""GEOMETOR construction model for X_144 = ANTICOMPLEMENT OF X_7."""
 
 from __future__ import annotations
 
@@ -23,16 +23,16 @@ from geometor.etc.render import write_center_svg
 def construct_x_00144(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(144) = ANTICOMPLEMENT OF X(7) on reference triangle ABC."""
-    X_7 = gergonne_point_of(model, A, B, C, ID="X(7)", classes=["center"])
-    X_144 = anticomplement(model, A, B, C, X_7, ID="X(144)", classes=["selected", "target"])
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
+    """Construct X_144 = ANTICOMPLEMENT OF X_7 on reference triangle ABC."""
+    X_7 = gergonne_point_of(model, A, B, C, ID="X_7", classes=["center"])
+    X_144 = anticomplement(model, A, B, C, X_7, ID="X_144", classes=["selected", "target"])
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
     central_line(model, X_2, X_7, 2, 7, incident=True)
-    X_20 = eval_trilinear_point(model, A, B, C, 'cos(A) - cos(B)*cos(C)', ID="X(20)", classes=["center", "incident"])
-    X_72 = eval_trilinear_point(model, A, B, C, '(b + c)*cot(A)', ID="X(72)", classes=["center", "incident"])
+    X_20 = eval_trilinear_point(model, A, B, C, 'cos(A) - cos(B)*cos(C)', ID="X_20", classes=["center", "incident"])
+    X_72 = eval_trilinear_point(model, A, B, C, '(b + c)*cot(A)', ID="X_72", classes=["center", "incident"])
     central_line(model, X_20, X_72, 20, 72, incident=True)
-    X_69 = eval_trilinear_point(model, A, B, C, '(cos(A))/a**(2)', ID="X(69)", classes=["center", "incident"])
-    X_190 = eval_trilinear_point(model, A, B, C, 'b*c/(b - c)', ID="X(190)", classes=["center", "incident"])
+    X_69 = eval_trilinear_point(model, A, B, C, '(cos(A))/a**(2)', ID="X_69", classes=["center", "incident"])
+    X_190 = eval_trilinear_point(model, A, B, C, 'b*c/(b - c)', ID="X_190", classes=["center", "incident"])
     central_line(model, X_69, X_190, 69, 190, incident=True)
     return promote_point_to_top(model, X_144)
 
@@ -41,8 +41,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(144) on the given reference triangle."""
-    model = create_model('X(144) = ANTICOMPLEMENT OF X(7)')
+    """Build a `geometor.model.Model` for X_144 on the given reference triangle."""
+    model = create_model('X_144 = ANTICOMPLEMENT OF X_7')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00144(model, A, B, C)
     return model

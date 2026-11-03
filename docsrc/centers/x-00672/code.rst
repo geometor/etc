@@ -1,18 +1,21 @@
-:canonical_id: X(672)
+:canonical_id: X_672
 :type: code
+:subtitle: CROSSDIFFERENCE OF X_1 AND X_514
 
-X(672) = CROSSDIFFERENCE OF X(1) AND X(514) — Code
-==================================================
+X_672
+=====
+
+.. rubric:: CROSSDIFFERENCE OF X_1 AND X_514
 
 .. enunciation::
 
-   :ref:`X(672) <X(672)>` = midpoint of X(1018) and X(45751)
+   :ref:`X_672 <X_672>` = :ref:`X_232 <X_232>`-of-excentral-triangle
 
 .. figure:: x-00672.svg
-   :alt: X(672) = CROSSDIFFERENCE OF X(1) AND X(514)
+   :alt: X_672 — CROSSDIFFERENCE OF X_1 AND X_514
    :align: center
 
-   **X(672) = CROSSDIFFERENCE OF X(1) AND X(514)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_672** (*CROSSDIFFERENCE OF X_1 AND X_514*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

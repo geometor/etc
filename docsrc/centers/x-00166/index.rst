@@ -1,22 +1,31 @@
 :order: 166
 :type: center
-:canonical_id: X(166)
-:dependencies: X(1), X(7), X(57), X(165), X(167), X(168), X(188), X(266), X(289), X(1488)
+:canonical_id: X_166
+:subtitle: GERGONNE POINT OF EXCENTRAL TRIANGLE
+:dependencies: X_1, X_7, X_57, X_165, X_167, X_168, X_188, X_266, X_289, X_1488
 
-.. _X(166):
+.. _X_166:
 
-X(166) = GERGONNE POINT OF EXCENTRAL TRIANGLE
-=============================================
+X_166
+=====
+
+.. rubric:: GERGONNE POINT OF EXCENTRAL TRIANGLE
 
 .. enunciation::
 
-   :ref:`X(166) <X(166)>` = :ref:`X(7) <X(7)>`-of-:term:`excentral triangle <excentral-triangle>`
+   :ref:`X_166 <X_166>` = :ref:`X_7 <X_7>`-of-:term:`excentral triangle <excentral-triangle>`
 
 .. figure:: x-00166.svg
-   :alt: X(166) = GERGONNE POINT OF EXCENTRAL TRIANGLE
+   :alt: X_166 — GERGONNE POINT OF EXCENTRAL TRIANGLE
    :align: center
 
-   **X(166) = GERGONNE POINT OF EXCENTRAL TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_166** (*GERGONNE POINT OF EXCENTRAL TRIANGLE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{165, 168} <{ 165, 168 }>`, :g:`{167, 188} <{ 167, 188 }>`
+   * **Related Centers:** :g:`X_266 <X_266>` (:ref:`ISOGONAL CONJUGATE OF X(188) <X_266>`), :g:`X_57 <X_57>` (:ref:`ISOGONAL CONJUGATE OF X(9) <X_57>`), :g:`X_165 <X_165>` (:ref:`CENTROID OF THE EXCENTRAL TRIANGLE <X_165>`), :g:`X_168 <X_168>` (:ref:`MITTENPUNKT OF EXCENTRAL TRIANGLE <X_168>`), :g:`X_167 <X_167>` (:ref:`NAGEL POINT OF EXCENTRAL TRIANGLE <X_167>`), :g:`X_188 <X_188>` (:ref:`2nd MID-ARC POINT OF ANTICOMPLEMENTARY TRIANGLE <X_188>`)
 
 .. signature:: center
 
@@ -28,14 +37,14 @@ X(166) = GERGONNE POINT OF EXCENTRAL TRIANGLE
    :badge: 3 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, 1488}, {:ref:`165 <X(165)>`, :ref:`168 <X(168)>`}, {:ref:`167 <X(167)>`, :ref:`188 <X(188)>`}
+   {:ref:`1 <X_1>`, 1488}, {:ref:`165 <X_165>`, :ref:`168 <X_168>`}, {:ref:`167 <X_167>`, :ref:`188 <X_188>`}
 
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X(166) <X(166)>` = :ref:`X(7) <X(7)>`-of-excentral triangle
-   * :ref:`X(166) <X(166)>` = :ref:`X(266) <X(266)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(57) <X(57)>`
-   * :ref:`X(166) <X(166)>` = :term:`cevapoint <cevapoint>` of :ref:`X(266) <X(266)>` and :ref:`X(289) <X(289)>`
+   * :ref:`X_166 <X_166>` = :ref:`X_7 <X_7>`-of-excentral triangle
+   * :ref:`X_166 <X_166>` = :ref:`X_266 <X_266>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_57 <X_57>`
+   * :ref:`X_166 <X_166>` = :term:`cevapoint <cevapoint>` of :ref:`X_266 <X_266>` and :ref:`X_289 <X_289>`
 
 .. toctree::
    :hidden:

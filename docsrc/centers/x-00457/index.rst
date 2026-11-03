@@ -1,26 +1,35 @@
 :order: 457
 :type: center
-:canonical_id: X(457)
-:dependencies: X(2), X(3), X(399), X(1138), X(1272), X(14993), X(15766), X(15773), X(16240), X(37496), X(47215), X(51345), X(52166)
+:canonical_id: X_457
+:subtitle: EULER X_399-11th-SUBSTITUTION POINT
+:dependencies: X_2, X_3, X_399, X_1138, X_1272, X_14993, X_15766, X_15773, X_16240, X_37496, X_47215, X_51345, X_52166
 
-.. _X(457):
+.. _X_457:
 
-X(457) = EULER X(399)-11th-SUBSTITUTION POINT
-=============================================
+X_457
+=====
+
+.. rubric:: EULER X_399-11th-SUBSTITUTION POINT
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(457) <X(457)>` has Shinagawa coefficients :math:`(9(E + 16F)EF - 64FS^{2},-81E^{2}F + 16(E + 4F)S^{2})`.
+   :ref:`X_457 <X_457>` = barycentric product X_1272\*X_52166
 
 .. figure:: x-00457.svg
-   :alt: X(457) = EULER X(399)-11th-SUBSTITUTION POINT
+   :alt: X_457 — EULER X_399-11th-SUBSTITUTION POINT
    :align: center
 
-   **X(457) = EULER X(399)-11th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_457** (*EULER X_399-11th-SUBSTITUTION POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`)
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`)
 
 .. signature:: center
 
-   | **Trilinears:** :math:`u^{2}\sec A : v^{2}\sec B : w^{2}\sec C`, where :math:`u : v : w` = :ref:`X(399) <X(399)>`
+   | **Trilinears:** :math:`u^{2}\sec A : v^{2}\sec B : w^{2}\sec C`, where :math:`u : v : w` = :ref:`X_399 <X_399>`
    | **Barycentrics:** :math:`u^{2}\tan A : v^{2}\tan B : w^{2}\tan C`
    | **Search Value (6, 9, 13):** :math:`4.705865843343`
 
@@ -33,14 +42,21 @@ X(457) = EULER X(399)-11th-SUBSTITUTION POINT
    :badge: 4 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {14993, 52166}, {16240, 51345}, {37496, 47215}
+   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {14993, 52166}, {16240, 51345}, {37496, 47215}
 
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X(457) <X(457)>` = barycentric product X(1272)\*X(52166)
-   * :ref:`X(457) <X(457)>` = barycentric quotient X(52166)/X(1138)
-   * :ref:`X(457) <X(457)>` = {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): {15766, 15773, :ref:`3 <X(3)>`}
+   * :ref:`X_457 <X_457>` = barycentric product X_1272\*X_52166
+   * :ref:`X_457 <X_457>` = barycentric quotient X_52166/X_1138
+   * :ref:`X_457 <X_457>` = {X_i,X_j}-harmonic conjugate of X_k for these (i,j,k): {15766, 15773, :ref:`3 <X_3>`}
+
+Notes
+-----
+
+.. container:: note-item
+
+   As a point on the Euler line, :ref:`X_457 <X_457>` has Shinagawa coefficients :math:`(9(E + 16F)EF - 64FS^{2},-81E^{2}F + 16(E + 4F)S^{2})`.
 
 .. toctree::
    :hidden:

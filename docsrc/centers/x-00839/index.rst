@@ -1,22 +1,31 @@
 :order: 839
 :type: center
-:canonical_id: X(839)
-:dependencies: X(6), X(110), X(321), X(334), X(668), X(741), X(838)
+:canonical_id: X_839
+:subtitle: o-(3, 4) CIRCUMCIRCLE POINT
+:dependencies: X_6, X_110, X_321, X_334, X_668, X_741, X_838
 
-.. _X(839):
+.. _X_839:
 
-X(839) = o-(3, 4) CIRCUMCIRCLE POINT
-====================================
+X_839
+=====
+
+.. rubric:: o-(3, 4) CIRCUMCIRCLE POINT
 
 .. enunciation::
 
-   :ref:`X(839) <X(839)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(838) <X(838)>`
+   :ref:`X_839 <X_839>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_6 <X_6>`\ \ :ref:`X_321 <X_321>`
 
 .. figure:: x-00839.svg
-   :alt: X(839) = o-(3, 4) CIRCUMCIRCLE POINT
+   :alt: X_839 — o-(3, 4) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(839) = o-(3, 4) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_839** (*o-(3, 4) CIRCUMCIRCLE POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{110, 668} <{ 110, 668 }>`, :g:`{334, 741} <{ 334, 741 }>`
+   * **Related Centers:** :g:`X_838 <X_838>` (:ref:`ODD (3, 4) INFINITY POINT <X_838>`), :g:`X_110 <X_110>` (:ref:`FOCUS OF KIEPERT PARABOLA <X_110>`), :g:`X_668 <X_668>` (:ref:`TRILINEAR POLE OF LINE X(2)X(37) <X_668>`), :g:`X_334 <X_334>` (:ref:`ISOTOMIC CONJUGATE OF X(238) <X_334>`), :g:`X_741 <X_741>` (:ref:`EVEN (- 1, 1) CIRCUMCIRCLE POINT <X_741>`)
 
 .. signature:: center
 
@@ -26,20 +35,20 @@ X(839) = o-(3, 4) CIRCUMCIRCLE POINT
 
 .. container:: note-item
 
-   :ref:`X(839) <X(839)>` lies on the circumcircle.
+   :ref:`X_839 <X_839>` lies on the circumcircle.
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`110 <X(110)>`, :ref:`668 <X(668)>`}, {:ref:`334 <X(334)>`, :ref:`741 <X(741)>`}
+   {:ref:`110 <X_110>`, :ref:`668 <X_668>`}, {:ref:`334 <X_334>`, :ref:`741 <X_741>`}
 
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X(839) <X(839)>` = isogonal conjugate of :ref:`X(838) <X(838)>`
-   * :ref:`X(839) <X(839)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(6) <X(6)>`\ \ :ref:`X(321) <X(321)>`
-   * :ref:`X(839) <X(839)>` = Ψ(:ref:`X(6) <X(6)>`, :ref:`X(321) <X(321)>`)
+   * :ref:`X_839 <X_839>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_838 <X_838>`
+   * :ref:`X_839 <X_839>` = trilinear pole of line :ref:`X_6 <X_6>`\ \ :ref:`X_321 <X_321>`
+   * :ref:`X_839 <X_839>` = Ψ(:ref:`X_6 <X_6>`, :ref:`X_321 <X_321>`)
 
 .. toctree::
    :hidden:

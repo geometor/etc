@@ -1,23 +1,32 @@
 :order: 974
 :type: center
-:canonical_id: X(974)
-:dependencies: X(3), X(5), X(6), X(74), X(113), X(125), X(185), X(389), X(973), X(1112), X(1145)
+:canonical_id: X_974
+:subtitle: 2nd EHRMANN POINT
+:dependencies: X_3, X_5, X_6, X_74, X_113, X_125, X_185, X_389, X_973, X_1112, X_1145
 
-.. _X(974):
+.. _X_974:
 .. _SecondEhrmannPoint:
 
-X(974) = 2nd EHRMANN POINT
-==========================
+X_974
+=====
+
+.. rubric:: 2nd EHRMANN POINT
 
 .. enunciation::
 
-   For constructions of :ref:`X(973) <X(973)>` and :ref:`X(974) <X(974)>`, see :cite:`Hyacinthos <hyacinthos>` message 3695, Sept. 1, 2001, and related messages.
+   :ref:`X_974 <X_974>` = midpoint of :ref:`X_125 <X_125>` and :ref:`X_185 <X_185>`
 
 .. figure:: x-00974.svg
-   :alt: X(974) = 2nd EHRMANN POINT
+   :alt: X_974 — 2nd EHRMANN POINT
    :align: center
 
-   **X(974) = 2nd EHRMANN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_974** (*2nd EHRMANN POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{125, 185} <{ 125, 185 }>`
+   * **Related Centers:** :g:`X_125 <X_125>` (:ref:`CENTER OF JERABEK HYPERBOLA <X_125>`), :g:`X_185 <X_185>` (:ref:`NAGEL POINT OF THE ORTHIC TRIANGLE <X_185>`)
 
 .. signature:: center
 
@@ -28,26 +37,30 @@ X(974) = 2nd EHRMANN POINT
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`5 <X(5)>`, :ref:`113 <X(113)>`}, {:ref:`6 <X(6)>`, :ref:`74 <X(74)>`}
+   {:ref:`5 <X_5>`, :ref:`113 <X_113>`}, {:ref:`6 <X_6>`, :ref:`74 <X_74>`}
 
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X(974) <X(974)>` = midpoint of :ref:`X(125) <X(125)>` and :ref:`X(185) <X(185)>`
-   * :ref:`X(974) <X(974)>` = reflection of X(1112) in :ref:`X(389) <X(389)>`
-   * :ref:`X(974) <X(974)>` = :term:`crosssum <crosssum>` of :ref:`X(3) <X(3)>` and :ref:`X(113) <X(113)>`
-   * :ref:`X(974) <X(974)>` = X(1145)-of-orthic-triangle if :g:`ABC << A B C >>` is acute
+   * :ref:`X_974 <X_974>` = midpoint of :ref:`X_125 <X_125>` and :ref:`X_185 <X_185>`
+   * :ref:`X_974 <X_974>` = reflection of X_1112 in :ref:`X_389 <X_389>`
+   * :ref:`X_974 <X_974>` = :term:`crosssum <crosssum>` of :ref:`X_3 <X_3>` and :ref:`X_113 <X_113>`
+   * :ref:`X_974 <X_974>` = X_1145-of-orthic-triangle if :g:`ABC << A B C >>` is acute
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`L_{a} <L_a>` be the orthic axis of :g:`AB'C' << A B' C' >>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`. :g:`B″ <B″>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C″ <C″>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. Triangle :g:`A″B″C″ << A″ B″ C″ >>` is inversely similar to :g:`ABC << A B C >>`, with similitude center :ref:`X(6) <X(6)>`. The orthocenter of triangle :g:`A″B″C″ << A″ B″ C″ >>` is :ref:`X(974) <X(974)>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2018)
+   For constructions of :ref:`X_973 <X_973>` and :ref:`X_974 <X_974>`, see :cite:`Hyacinthos <hyacinthos>` message 3695, Sept. 1, 2001, and related messages.
 
 .. container:: note-item
 
-   The :term:`pedal triangles <pedal-triangle>` of circumcenter and orthocenter with respect to orthic and :term:`medial triangles <medial-triangle>`, respectively, are perspective, with perspector :ref:`X(974) <X(974)>`. (:person:`Angel Montesdeoca <angel-montesdeoca>`, August 29, 2019)
+   Let :g:`A'B'C' << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`L_{a} <L_a>` be the orthic axis of :g:`AB'C' << A H_b H_c >>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`. :g:`B″ <B″>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C″ <C″>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. Triangle :g:`A″B″C″ << A″ B″ C″ >>` is inversely similar to :g:`ABC << A B C >>`, with similitude center :ref:`X_6 <X_6>`. The orthocenter of triangle :g:`A″B″C″ << A″ B″ C″ >>` is :ref:`X_974 <X_974>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2018)
+
+.. container:: note-item
+
+   The :term:`pedal triangles <pedal-triangle>` of circumcenter and orthocenter with respect to orthic and :term:`medial triangles <medial-triangle>`, respectively, are perspective, with perspector :ref:`X_974 <X_974>`. (:person:`Angel Montesdeoca <angel-montesdeoca>`, August 29, 2019)
 
 .. toctree::
    :hidden:

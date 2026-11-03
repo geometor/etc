@@ -1,18 +1,21 @@
-:canonical_id: X(216)
+:canonical_id: X_216
 :type: code
+:subtitle: X_5-CEVA CONJUGATE OF X_51
 
-X(216) = X(5)-CEVA CONJUGATE OF X(51) — Code
-============================================
+X_216
+=====
+
+.. rubric:: X_5-CEVA CONJUGATE OF X_51
 
 .. enunciation::
 
-   :ref:`X(216) <X(216)>` is the perspector of triangle ABCand the :term:`tangential triangle <tangential-triangle>` of the Johnson circumconic. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   :ref:`X_216 <X_216>` = :ref:`X_217 <X_217>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_51 <X_51>`
 
 .. figure:: x-00216.svg
-   :alt: X(216) = X(5)-CEVA CONJUGATE OF X(51)
+   :alt: X_216 — X_5-CEVA CONJUGATE OF X_51
    :align: center
 
-   **X(216) = X(5)-CEVA CONJUGATE OF X(51)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_216** (*X_5-CEVA CONJUGATE OF X_51*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

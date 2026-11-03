@@ -1,18 +1,21 @@
-:canonical_id: X(392)
+:canonical_id: X_392
 :type: code
+:subtitle: X(1,6)∩X(10,11)
 
-X(392) = X(1,6)∩X(10,11) — Code
-===============================
+X_392
+=====
+
+.. rubric:: X(1,6)∩X(10,11)
 
 .. enunciation::
 
-   :ref:`X(392) <X(392)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(9) <X(9)>`}-harmonic conjugate of :ref:`X(956) <X(956)>`
+   :ref:`X_392 <X_392>` = :ref:`X_2 <X_2>`-of-:ref:`X_1 <X_1>`-Brocard-triangle
 
 .. figure:: x-00392.svg
-   :alt: X(392) = X(1,6)∩X(10,11)
+   :alt: X_392 — X(1,6)∩X(10,11)
    :align: center
 
-   **X(392) = X(1,6)∩X(10,11)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_392** (*X(1,6)∩X(10,11)*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

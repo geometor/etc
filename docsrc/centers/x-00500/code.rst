@@ -1,18 +1,21 @@
-:canonical_id: X(500)
+:canonical_id: X_500
 :type: code
+:subtitle: ORTHOCENTER OF THE INCENTRAL TRIANGLE
 
-X(500) = ORTHOCENTER OF THE INCENTRAL TRIANGLE — Code
-=====================================================
+X_500
+=====
+
+.. rubric:: ORTHOCENTER OF THE INCENTRAL TRIANGLE
 
 .. enunciation::
 
-   :ref:`X(500) <X(500)>` = inverse-in-Brocard-circle of :ref:`X(582) <X(582)>`
+   :ref:`X_500 <X_500>` is the orthocenter of the :term:`incentral triangle <incentral-triangle>`.
 
 .. figure:: x-00500.svg
-   :alt: X(500) = ORTHOCENTER OF THE INCENTRAL TRIANGLE
+   :alt: X_500 — ORTHOCENTER OF THE INCENTRAL TRIANGLE
    :align: center
 
-   **X(500) = ORTHOCENTER OF THE INCENTRAL TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_500** (*ORTHOCENTER OF THE INCENTRAL TRIANGLE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

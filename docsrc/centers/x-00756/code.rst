@@ -1,18 +1,21 @@
-:canonical_id: X(756)
+:canonical_id: X_756
 :type: code
+:subtitle: CROSSPOINT OF X_10 AND X_37
 
-X(756) = CROSSPOINT OF X(10) AND X(37) — Code
-=============================================
+X_756
+=====
+
+.. rubric:: CROSSPOINT OF X_10 AND X_37
 
 .. enunciation::
 
-   :ref:`X(756) <X(756)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(757) <X(757)>`
+   :ref:`X_756 <X_756>` is the :term:`crosspoint <crosspoint>` of :ref:`X_10 <X_10>` and :ref:`X_37 <X_37>`.
 
 .. figure:: x-00756.svg
-   :alt: X(756) = CROSSPOINT OF X(10) AND X(37)
+   :alt: X_756 — CROSSPOINT OF X_10 AND X_37
    :align: center
 
-   **X(756) = CROSSPOINT OF X(10) AND X(37)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_756** (*CROSSPOINT OF X_10 AND X_37*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

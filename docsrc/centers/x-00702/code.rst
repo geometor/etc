@@ -1,18 +1,21 @@
-:canonical_id: X(702)
+:canonical_id: X_702
 :type: code
+:subtitle: EVEN (- 4, 0) INFINITY POINT
 
-X(702) = EVEN (- 4, 0) INFINITY POINT — Code
-============================================
+X_702
+=====
+
+.. rubric:: EVEN (- 4, 0) INFINITY POINT
 
 .. enunciation::
 
-   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X(702) <X(702)>` lies on the line at infinity.
+   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X_702 <X_702>` lies on the line at infinity.
 
 .. figure:: x-00702.svg
-   :alt: X(702) = EVEN (- 4, 0) INFINITY POINT
+   :alt: X_702 — EVEN (- 4, 0) INFINITY POINT
    :align: center
 
-   **X(702) = EVEN (- 4, 0) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_702** (*EVEN (- 4, 0) INFINITY POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,18 +1,21 @@
-:canonical_id: X(758)
+:canonical_id: X_758
 :type: code
+:subtitle: EVEN (1, 3) INFINITY POINT
 
-X(758) = EVEN (1, 3) INFINITY POINT — Code
-==========================================
+X_758
+=====
+
+.. rubric:: EVEN (1, 3) INFINITY POINT
 
 .. enunciation::
 
-   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X(758) <X(758)>` lies on the line at infinity.
+   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X_758 <X_758>` lies on the line at infinity.
 
 .. figure:: x-00758.svg
-   :alt: X(758) = EVEN (1, 3) INFINITY POINT
+   :alt: X_758 — EVEN (1, 3) INFINITY POINT
    :align: center
 
-   **X(758) = EVEN (1, 3) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_758** (*EVEN (1, 3) INFINITY POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

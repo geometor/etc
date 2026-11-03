@@ -1,22 +1,31 @@
 :order: 91
 :type: center
-:canonical_id: X(91)
-:dependencies: X(19), X(31), X(37), X(47), X(48), X(63), X(65), X(68), X(92), X(225), X(255), X(485), X(486), X(498), X(563), X(661), X(759), X(847), X(920), X(921), X(925), X(1087), X(1109), X(1748), X(2618)
+:canonical_id: X_91
+:subtitle: ISOGONAL CONJUGATE OF X_47
+:dependencies: X_19, X_31, X_37, X_47, X_48, X_63, X_65, X_68, X_92, X_225, X_255, X_485, X_486, X_498, X_563, X_661, X_759, X_847, X_920, X_921, X_925, X_1087, X_1109, X_1748, X_2618
 
-.. _X(91):
+.. _X_91:
 
-X(91) = ISOGONAL CONJUGATE OF X(47)
-===================================
+X_91
+====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_47
 
 .. enunciation::
 
-   :ref:`X(91) <X(91)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(47) <X(47)>`
+   :ref:`X_91 <X_91>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_47 <X_47>`.
 
 .. figure:: x-00091.svg
-   :alt: X(91) = ISOGONAL CONJUGATE OF X(47)
+   :alt: X_91 — ISOGONAL CONJUGATE OF X_47
    :align: center
 
-   **X(91) = ISOGONAL CONJUGATE OF X(47)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_91** (*ISOGONAL CONJUGATE OF X_47*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{65, 68} <{ 65, 68 }>`, :g:`{47, 92} <{ 47, 92 }>`
+   * **Related Centers:** :g:`X_48 <X_48>` (:ref:`CROSSPOINT OF X(1) AND X(63) <X_48>`), :g:`X_92 <X_92>` (:ref:`CEVAPOINT OF INCENTER AND CLAWSON POINT <X_92>`), :g:`X_65 <X_65>` (:ref:`ORTHOCENTER OF THE INTOUCH TRIANGLE <X_65>`), :g:`X_68 <X_68>` (:ref:`PRASOLOV POINT <X_68>`), :g:`X_47 <X_47>` (:ref:`-BETH CONJUGATE OF X(34) <X_47>`)
 
 .. signature:: center
 
@@ -33,19 +42,19 @@ X(91) = ISOGONAL CONJUGATE OF X(47)
    :badge: 9 lines
    :class: line-catalog
 
-   {:ref:`19 <X(19)>`, :ref:`920 <X(920)>`}, {:ref:`31 <X(31)>`, 1087}, {:ref:`37 <X(37)>`, :ref:`498 <X(498)>`}, {:ref:`47 <X(47)>`, :ref:`92 <X(92)>`}, {:ref:`63 <X(63)>`, :ref:`921 <X(921)>`}, {:ref:`65 <X(65)>`, :ref:`68 <X(68)>`}, {:ref:`225 <X(225)>`, :ref:`847 <X(847)>`}, {:ref:`255 <X(255)>`, 1109}, {:ref:`759 <X(759)>`, :ref:`925 <X(925)>`}
+   {:ref:`19 <X_19>`, :ref:`920 <X_920>`}, {:ref:`31 <X_31>`, 1087}, {:ref:`37 <X_37>`, :ref:`498 <X_498>`}, {:ref:`47 <X_47>`, :ref:`92 <X_92>`}, {:ref:`63 <X_63>`, :ref:`921 <X_921>`}, {:ref:`65 <X_65>`, :ref:`68 <X_68>`}, {:ref:`225 <X_225>`, :ref:`847 <X_847>`}, {:ref:`255 <X_255>`, 1109}, {:ref:`759 <X_759>`, :ref:`925 <X_925>`}
 
 .. collapse:: Functional Relations
    :badge: 8 relations
 
-   * :ref:`X(91) <X(91)>` = isogonal conjugate of :ref:`X(47) <X(47)>`
-   * :ref:`X(91) <X(91)>` = :ref:`X(48) <X(48)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(92) <X(92)>`
-   * :ref:`X(91) <X(91)>` = trilinear product of :ref:`X(485) <X(485)>` and :ref:`X(486) <X(486)>`
-   * :ref:`X(91) <X(91)>` = polar conjugate of X(1748)
-   * :ref:`X(91) <X(91)>` = :ref:`X(92) <X(92)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(563) <X(563)>`
-   * :ref:`X(91) <X(91)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(661) <X(661)>`\ X(2618)
-   * :ref:`X(91) <X(91)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(91) <X(91)>` (which is also the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(91) <X(91)>`)
-   * :ref:`X(91) <X(91)>` = trilinear product of vertices of outer and inner Vecten triangles
+   * :ref:`X_91 <X_91>` = isogonal conjugate of :ref:`X_47 <X_47>`
+   * :ref:`X_91 <X_91>` = :ref:`X_48 <X_48>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_92 <X_92>`
+   * :ref:`X_91 <X_91>` = trilinear product of :ref:`X_485 <X_485>` and :ref:`X_486 <X_486>`
+   * :ref:`X_91 <X_91>` = polar conjugate of X_1748
+   * :ref:`X_91 <X_91>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_563 <X_563>`
+   * :ref:`X_91 <X_91>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_661 <X_661>`\ X_2618
+   * :ref:`X_91 <X_91>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X_91 <X_91>` (which is also the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X_91 <X_91>`)
+   * :ref:`X_91 <X_91>` = trilinear product of vertices of outer and inner Vecten triangles
 
 .. toctree::
    :hidden:

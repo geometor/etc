@@ -1,18 +1,21 @@
-:canonical_id: X(265)
+:canonical_id: X_265
 :type: code
+:subtitle: REFLECTION OF X_3 IN X_125
 
-X(265) = REFLECTION OF X(3) IN X(125) — Code
-============================================
+X_265
+=====
+
+.. rubric:: REFLECTION OF X_3 IN X_125
 
 .. enunciation::
 
-   Let :g:`P <P>` = :ref:`X(74) <X(74)>`, H = :ref:`X(4) <X(4)>`, :g:`H' <H'>` =H-of-:g:`BCP << B C P >>`, :g:`H″ <H″>` = H-of-:g:`CAP << C A P >>`, and H''' = H-of :g:`ABP << A B P >>`. Then :ref:`X(265) <X(265)>` is the circumcenter of the cyclic quadrilateral HH'H''H'''. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   :ref:`X_265 <X_265>` is the reflection of :ref:`X_3 <X_3>` in :ref:`X_125 <X_125>`.
 
 .. figure:: x-00265.svg
-   :alt: X(265) = REFLECTION OF X(3) IN X(125)
+   :alt: X_265 — REFLECTION OF X_3 IN X_125
    :align: center
 
-   **X(265) = REFLECTION OF X(3) IN X(125)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_265** (*REFLECTION OF X_3 IN X_125*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

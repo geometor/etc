@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(118) = MIDPOINT OF X(4) AND X(101)."""
+"""GEOMETOR construction model for X_118 = MIDPOINT OF X_4 AND X_101."""
 
 from __future__ import annotations
 
@@ -24,15 +24,15 @@ from geometor.etc.render import write_center_svg
 def construct_x_00118(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(118) = MIDPOINT OF X(4) AND X(101) on reference triangle ABC."""
-    X_116 = eval_trilinear_point(model, A, B, C, 'b*c*((b - c)**(2)*(b**(2) + b*c + c**(2) - a*b - a*c))', ID="X(116)", classes=["center"])
-    X_5 = nine_point_center_of(model, A, B, C, ID="X(5)", classes=["center"])
-    X_118 = reflection_in_point(model, X_116, X_5, ID="X(118)", classes=["selected", "target"], guide=False)
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
-    X_103 = eval_trilinear_point(model, A, B, C, 'a/((a - b)*cot(C) + (a - c)*cot(B))', ID="X(103)", classes=["center", "incident"])
+    """Construct X_118 = MIDPOINT OF X_4 AND X_101 on reference triangle ABC."""
+    X_116 = eval_trilinear_point(model, A, B, C, 'b*c*((b - c)**(2)*(b**(2) + b*c + c**(2) - a*b - a*c))', ID="X_116", classes=["center"])
+    X_5 = nine_point_center_of(model, A, B, C, ID="X_5", classes=["center"])
+    X_118 = reflection_in_point(model, X_116, X_5, ID="X_118", classes=["selected", "target"], guide=False)
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
+    X_103 = eval_trilinear_point(model, A, B, C, 'a/((a - b)*cot(C) + (a - c)*cot(B))', ID="X_103", classes=["center", "incident"])
     central_line(model, X_2, X_103, 2, 103, incident=True)
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
-    X_101 = eval_trilinear_point(model, A, B, C, 'a/(b - c)', ID="X(101)", classes=["center", "incident"])
+    X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
+    X_101 = eval_trilinear_point(model, A, B, C, 'a/(b - c)', ID="X_101", classes=["center", "incident"])
     central_line(model, X_4, X_101, 4, 101, incident=True)
     central_line(model, X_5, X_116, 5, 116, incident=True)
     return promote_point_to_top(model, X_118)
@@ -42,8 +42,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(118) on the given reference triangle."""
-    model = create_model('X(118) = MIDPOINT OF X(4) AND X(101)')
+    """Build a `geometor.model.Model` for X_118 on the given reference triangle."""
+    model = create_model('X_118 = MIDPOINT OF X_4 AND X_101')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00118(model, A, B, C)
     return model

@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(688) = CROSSDIFFERENCE OF X(6) AND X(76)."""
+"""GEOMETOR construction model for X_688 = CROSSDIFFERENCE OF X_6 AND X_76."""
 
 from __future__ import annotations
 
@@ -23,16 +23,16 @@ from geometor.etc.render import write_center_svg
 def construct_x_00688(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(688) = CROSSDIFFERENCE OF X(6) AND X(76) on reference triangle ABC."""
-    X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X(30)", classes=["center"])
-    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X(511)", classes=["center"])
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
-    X_882 = point_from_barycentrics(model, A, B, C, 0.023590899, 1.0060979, -0.02968882, ID="X(882)", classes=["center"])
+    """Construct X_688 = CROSSDIFFERENCE OF X_6 AND X_76 on reference triangle ABC."""
+    X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X_30", classes=["center"])
+    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X_511", classes=["center"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center"])
+    X_882 = point_from_barycentrics(model, A, B, C, 0.023590899, 1.0060979, -0.02968882, ID="X_882", classes=["center"])
     central_line(model, X_30, X_511, 30, 511)
     central_line(model, X_6, X_882, 6, 882)
-    X_688 = intersect_lines(model, X_30, X_511, X_6, X_882, ID="X(688)", classes=["selected", "target"])
-    X_669 = eval_trilinear_point(model, A, B, C, 'a**(3)*(b**(2) - c**(2))', ID="X(669)", classes=["center", "incident"])
-    X_864 = point_from_barycentrics(model, A, B, C, -0.32864548, -0.077550067, 1.4061955, ID="X(864)", classes=["center", "incident"])
+    X_688 = intersect_lines(model, X_30, X_511, X_6, X_882, ID="X_688", classes=["selected", "target"])
+    X_669 = eval_trilinear_point(model, A, B, C, 'a**(3)*(b**(2) - c**(2))', ID="X_669", classes=["center", "incident"])
+    X_864 = point_from_barycentrics(model, A, B, C, -0.32864548, -0.077550067, 1.4061955, ID="X_864", classes=["center", "incident"])
     central_line(model, X_669, X_864, 669, 864, incident=True)
     return promote_point_to_top(model, X_688)
 
@@ -41,8 +41,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(688) on the given reference triangle."""
-    model = create_model('X(688) = CROSSDIFFERENCE OF X(6) AND X(76)')
+    """Build a `geometor.model.Model` for X_688 on the given reference triangle."""
+    model = create_model('X_688 = CROSSDIFFERENCE OF X_6 AND X_76')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00688(model, A, B, C)
     return model

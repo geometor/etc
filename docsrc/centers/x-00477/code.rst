@@ -1,18 +1,21 @@
-:canonical_id: X(477)
+:canonical_id: X_477
 :type: code
+:subtitle: TIXIER ANTIPODE
 
-X(477) = TIXIER ANTIPODE — Code
-===============================
+X_477
+=====
+
+.. rubric:: TIXIER ANTIPODE
 
 .. enunciation::
 
-   :ref:`X(477) <X(477)>` = reflection of :ref:`X(476) <X(476)>` in :ref:`X(3) <X(3)>`
+   :ref:`X_477 <X_477>` = reflection of :ref:`X_476 <X_476>` in :ref:`X_3 <X_3>`
 
 .. figure:: x-00477.svg
-   :alt: X(477) = TIXIER ANTIPODE
+   :alt: X_477 — TIXIER ANTIPODE
    :align: center
 
-   **X(477) = TIXIER ANTIPODE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_477** (*TIXIER ANTIPODE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

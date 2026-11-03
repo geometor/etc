@@ -1,18 +1,21 @@
-:canonical_id: X(770)
+:canonical_id: X_770
 :type: code
+:subtitle: POINT ACAMAR
 
-X(770) = POINT ACAMAR — Code
-============================
+X_770
+=====
+
+.. rubric:: POINT ACAMAR
 
 .. enunciation::
 
-   :ref:`X(770) <X(770)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(771) <X(771)>`
+   :ref:`X_770 <X_770>` = :term:`crosssum <crosssum>` of :ref:`X_1 <X_1>` and :ref:`X_770 <X_770>`
 
 .. figure:: x-00770.svg
-   :alt: X(770) = POINT ACAMAR
+   :alt: X_770 — POINT ACAMAR
    :align: center
 
-   **X(770) = POINT ACAMAR** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_770** (*POINT ACAMAR*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

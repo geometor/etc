@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(392) = X(1,6)∩X(10,11)."""
+"""GEOMETOR construction model for X_392 = X(1,6)∩X(10,11)."""
 
 from __future__ import annotations
 
@@ -19,8 +19,8 @@ from geometor.etc.render import write_center_svg
 def construct_x_00392(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(392) = X(1,6)∩X(10,11) on reference triangle ABC."""
-    X_392 = eval_trilinear_point(model, A, B, C, '(b + c)*(b**(2) + c**(2) - a**(2)) + 4*a*b*c', ID="X(392)", classes=["selected", "target"])
+    """Construct X_392 = X(1,6)∩X(10,11) on reference triangle ABC."""
+    X_392 = eval_trilinear_point(model, A, B, C, '(b + c)*(b**(2) + c**(2) - a**(2)) + 4*a*b*c', ID="X_392", classes=["selected", "target"])
     return promote_point_to_top(model, X_392)
 
 
@@ -28,8 +28,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(392) on the given reference triangle."""
-    model = create_model('X(392) = X(1,6)∩X(10,11)')
+    """Build a `geometor.model.Model` for X_392 on the given reference triangle."""
+    model = create_model('X_392 = X(1,6)∩X(10,11)')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00392(model, A, B, C)
     return model

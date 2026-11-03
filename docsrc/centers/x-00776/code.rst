@@ -1,18 +1,21 @@
-:canonical_id: X(776)
+:canonical_id: X_776
 :type: code
+:subtitle: ODD (- 4, 1) INFINITY POINT
 
-X(776) = ODD (- 4, 1) INFINITY POINT — Code
-===========================================
+X_776
+=====
+
+.. rubric:: ODD (- 4, 1) INFINITY POINT
 
 .. enunciation::
 
-   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X(776) <X(776)>` lies on the line at infinity.
+   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X_776 <X_776>` lies on the line at infinity.
 
 .. figure:: x-00776.svg
-   :alt: X(776) = ODD (- 4, 1) INFINITY POINT
+   :alt: X_776 — ODD (- 4, 1) INFINITY POINT
    :align: center
 
-   **X(776) = ODD (- 4, 1) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_776** (*ODD (- 4, 1) INFINITY POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,23 +1,26 @@
 :order: 360
 :type: center
-:canonical_id: X(360)
-:dependencies: X(1), X(2), X(3), X(4), X(6), X(8), X(35), X(69), X(75), X(79), X(80), X(186), X(265), X(357), X(358), X(359), X(1028), X(1049), X(1077), X(1085), X(1115), X(1127), X(1129), X(3065), X(5457), X(5458), X(5961), X(5962), X(5963), X(5964), X(7021), X(7041)
+:canonical_id: X_360
+:subtitle: HOFSTADTER ZERO POINT
+:dependencies: X_1, X_2, X_3, X_4, X_6, X_8, X_35, X_69, X_75, X_79, X_80, X_186, X_265, X_357, X_358, X_359, X_1028, X_1049, X_1077, X_1085, X_1115, X_1127, X_1129, X_3065, X_5457, X_5458, X_5961, X_5962, X_5963, X_5964, X_7021, X_7041
 
-.. _X(360):
+.. _X_360:
 .. _HofstadterZeroPoint:
 
-X(360) = HOFSTADTER ZERO POINT
-==============================
+X_360
+=====
+
+.. rubric:: HOFSTADTER ZERO POINT
 
 .. enunciation::
 
-   The limit of this point as r approaches 0 is :ref:`X(360) <X(360)>`. The two Hofstadter points, :ref:`X(359) <X(359)>` and :ref:`X(360) <X(360)>` are examples of transcendental :term:`triangle centers <triangle-center>`, since they have no trilinear or barycentric representation using only algebraic functions of a,b,c (or sin A, sin B, sin C).
+   The limit of this point as r approaches 0 is :ref:`X_360 <X_360>`. The two Hofstadter points, :ref:`X_359 <X_359>` and :ref:`X_360 <X_360>` are examples of transcendental :term:`triangle centers <triangle-center>`, since they have no trilinear or barycentric representation using only algebraic functions of a,b,c (or sin A, sin B, sin C).
 
 .. figure:: x-00360.svg
-   :alt: X(360) = HOFSTADTER ZERO POINT
+   :alt: X_360 — HOFSTADTER ZERO POINT
    :align: center
 
-   **X(360) = HOFSTADTER ZERO POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_360** (*HOFSTADTER ZERO POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -28,42 +31,42 @@ X(360) = HOFSTADTER ZERO POINT
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(360) <X(360)>` = :math:`A` :g:`A <A>` + :math:`B` :g:`B <B>` + :math:`C` :g:`C <C>`, where :g:`A <A>`, :g:`B <B>`, :g:`C <C>` are the angles and :g:`A <A>`, :g:`B <B>`, :g:`C <C>` are the vertices
+   * :ref:`X_360 <X_360>` = :math:`A` :g:`A <A>` + :math:`B` :g:`B <B>` + :math:`C` :g:`C <C>`, where :g:`A <A>`, :g:`B <B>`, :g:`C <C>` are the angles and :g:`A <A>`, :g:`B <B>`, :g:`C <C>` are the vertices
 
 .. collapse:: Incident Central Lines
    :badge: 1 line
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, 1115}
+   {:ref:`2 <X_2>`, 1115}
 
 .. collapse:: Functional Relations
    :badge: 25 relations
 
-   * :ref:`X(1) <X(1)>` = Hofstadter 1/2 point = :term:`antigonal image <antigonal-image>` of :ref:`X(80) <X(80)>`
-   * :ref:`X(3) <X(3)>` = Hofstadter 2 point = antigonal image of :ref:`X(265) <X(265)>`
-   * :ref:`X(4) <X(4)>` = Hofstadter -1 point
-   * :ref:`X(35) <X(35)>` = Hofstadter 3/2 point
-   * :ref:`X(79) <X(79)>` = Hofstadter -1/2 point = antigonal image of X(3065)
-   * :ref:`X(186) <X(186)>` = Hofstadter 3 point = antigonal image of X(5962)
-   * :ref:`X(265) <X(265)>` = Hofstadter -2 point = antigonal image of :ref:`X(3) <X(3)>`
-   * :ref:`X(357) <X(357)>` = Hofstadter 1/3 point
-   * :ref:`X(358) <X(358)>` = Hofstadter 2/3 point
-   * :ref:`X(359) <X(359)>` = Hofstadter 0 point
-   * :ref:`X(360) <X(360)>` = Hofstadter 1 point
-   * X(1127) = Hofstadter 1/4 point
-   * X(1129) = Hofstadter 3/4 point
-   * X(5457) = Hofstadter -1/3 point
-   * X(5458) = Hofstadter -2/3 point
-   * X(5961) = Hofstadter 4 point = antigonal image of X(5964)
-   * X(5962) = Hofstadter -3 point = antigonal image of :ref:`X(186) <X(186)>`
-   * X(5963) = Hofstadter 5 point
-   * X(5964) = Hofstadter -4 point = antigonal image of X(5961)
-   * :ref:`X(360) <X(360)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(359) <X(359)>`
-   * :ref:`X(360) <X(360)>` = :term:`anticomplement <anticomplement>` of X(1115)
-   * :ref:`X(360) <X(360)>` = X(i)-:term:`anticomplementary conjugate <anticomplementary-conjugate>` of X(j) for these (i,j): {7021, :ref:`8 <X(8)>`}, {7041, :ref:`69 <X(69)>`}
-   * :ref:`X(360) <X(360)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these (i,j): {:ref:`1 <X(1)>`, :ref:`359 <X(359)>`}, {:ref:`6 <X(6)>`, 1077}
-   * :ref:`X(360) <X(360)>` = barycentric product :ref:`X(75) <X(75)>`\ \*X(1049)
-   * :ref:`X(360) <X(360)>` = barycentric quotient X(i)/X(j) for these {i,j}: {:ref:`1 <X(1)>`, 1077}, {:ref:`6 <X(6)>`, :ref:`359 <X(359)>`}, {1049, :ref:`1 <X(1)>`}, {1077, 1028}, {1085, 1049}
+   * :ref:`X_1 <X_1>` = Hofstadter 1/2 point = :term:`antigonal image <antigonal-image>` of :ref:`X_80 <X_80>`
+   * :ref:`X_3 <X_3>` = Hofstadter 2 point = antigonal image of :ref:`X_265 <X_265>`
+   * :ref:`X_4 <X_4>` = Hofstadter -1 point
+   * :ref:`X_35 <X_35>` = Hofstadter 3/2 point
+   * :ref:`X_79 <X_79>` = Hofstadter -1/2 point = antigonal image of X_3065
+   * :ref:`X_186 <X_186>` = Hofstadter 3 point = antigonal image of X_5962
+   * :ref:`X_265 <X_265>` = Hofstadter -2 point = antigonal image of :ref:`X_3 <X_3>`
+   * :ref:`X_357 <X_357>` = Hofstadter 1/3 point
+   * :ref:`X_358 <X_358>` = Hofstadter 2/3 point
+   * :ref:`X_359 <X_359>` = Hofstadter 0 point
+   * :ref:`X_360 <X_360>` = Hofstadter 1 point
+   * X_1127 = Hofstadter 1/4 point
+   * X_1129 = Hofstadter 3/4 point
+   * X_5457 = Hofstadter -1/3 point
+   * X_5458 = Hofstadter -2/3 point
+   * X_5961 = Hofstadter 4 point = antigonal image of X_5964
+   * X_5962 = Hofstadter -3 point = antigonal image of :ref:`X_186 <X_186>`
+   * X_5963 = Hofstadter 5 point
+   * X_5964 = Hofstadter -4 point = antigonal image of X_5961
+   * :ref:`X_360 <X_360>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_359 <X_359>`
+   * :ref:`X_360 <X_360>` = :term:`anticomplement <anticomplement>` of X_1115
+   * :ref:`X_360 <X_360>` = X_i-:term:`anticomplementary conjugate <anticomplementary-conjugate>` of X_j for these (i,j): {7021, :ref:`8 <X_8>`}, {7041, :ref:`69 <X_69>`}
+   * :ref:`X_360 <X_360>` = X_i-:term:`isoconjugate <isoconjugate>` of X_j for these (i,j): {:ref:`1 <X_1>`, :ref:`359 <X_359>`}, {:ref:`6 <X_6>`, 1077}
+   * :ref:`X_360 <X_360>` = barycentric product :ref:`X_75 <X_75>`\ \*X_1049
+   * :ref:`X_360 <X_360>` = barycentric quotient X_i/X_j for these {i,j}: {:ref:`1 <X_1>`, 1077}, {:ref:`6 <X_6>`, :ref:`359 <X_359>`}, {1049, :ref:`1 <X_1>`}, {1077, 1028}, {1085, 1049}
 
 Notes
 -----

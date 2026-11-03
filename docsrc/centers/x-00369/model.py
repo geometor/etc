@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(369) = 1st TRISECTED PERIMETER POINT."""
+"""GEOMETOR construction model for X_369 = 1st TRISECTED PERIMETER POINT."""
 
 from __future__ import annotations
 
@@ -19,8 +19,8 @@ from geometor.etc.render import write_center_svg
 def construct_x_00369(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(369) = 1st TRISECTED PERIMETER POINT on reference triangle ABC."""
-    X_369 = point_from_barycentrics(model, A, B, C, 0.35886745, 0.73098184, -0.089849297, ID="X(369)", classes=["selected", "target"])
+    """Construct X_369 = 1st TRISECTED PERIMETER POINT on reference triangle ABC."""
+    X_369 = point_from_barycentrics(model, A, B, C, 0.35886745, 0.73098184, -0.089849297, ID="X_369", classes=["selected", "target"])
     return promote_point_to_top(model, X_369)
 
 
@@ -28,8 +28,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(369) on the given reference triangle."""
-    model = create_model('X(369) = 1st TRISECTED PERIMETER POINT')
+    """Build a `geometor.model.Model` for X_369 on the given reference triangle."""
+    model = create_model('X_369 = 1st TRISECTED PERIMETER POINT')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00369(model, A, B, C)
     return model

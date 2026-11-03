@@ -1,23 +1,32 @@
 :order: 362
 :type: center
-:canonical_id: X(362)
-:dependencies: X(31), X(57), X(234)
+:canonical_id: X_362
+:subtitle: CONGRUENT CIRCUMCIRCLES ISOSCELIZER POINT
+:dependencies: X_31, X_57, X_234
 
-.. _X(362):
+.. _X_362:
 .. _CongruentCircumcirclesIsoscelizerPoint:
 
-X(362) = CONGRUENT CIRCUMCIRCLES ISOSCELIZER POINT
-==================================================
+X_362
+=====
+
+.. rubric:: CONGRUENT CIRCUMCIRCLES ISOSCELIZER POINT
 
 .. enunciation::
 
-   The :term:`isoscelizer <isoscelizer>` equations u(X)/a = v(X)/b = w(X)/c have solution :g:`X <X>` = :ref:`X(362) <X(362)>`.
+   The :term:`isoscelizer <isoscelizer>` equations u(X)/a = v(X)/b = w(X)/c have solution :g:`X <X>` = :ref:`X_362 <X_362>`.
 
 .. figure:: x-00362.svg
-   :alt: X(362) = CONGRUENT CIRCUMCIRCLES ISOSCELIZER POINT
+   :alt: X_362 — CONGRUENT CIRCUMCIRCLES ISOSCELIZER POINT
    :align: center
 
-   **X(362) = CONGRUENT CIRCUMCIRCLES ISOSCELIZER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_362** (*CONGRUENT CIRCUMCIRCLES ISOSCELIZER POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{57, 234} <{ 57, 234 }>`
+   * **Related Centers:** :g:`X_57 <X_57>` (:ref:`ISOGONAL CONJUGATE OF X(9) <X_57>`), :g:`X_234 <X_234>` (:ref:`-CEVA CONJUGATE OF X(177) <X_234>`)
 
 .. signature:: center
 
@@ -28,12 +37,12 @@ X(362) = CONGRUENT CIRCUMCIRCLES ISOSCELIZER POINT
    :badge: 1 line
    :class: line-catalog
 
-   {:ref:`57 <X(57)>`, :ref:`234 <X(234)>`}
+   {:ref:`57 <X_57>`, :ref:`234 <X_234>`}
 
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(362) <X(362)>` = :ref:`X(31) <X(31)>`-of-:term:`excentral triangle <excentral-triangle>`
+   * :ref:`X_362 <X_362>` = :ref:`X_31 <X_31>`-of-:term:`excentral triangle <excentral-triangle>`
 
 .. toctree::
    :hidden:

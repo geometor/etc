@@ -1,22 +1,31 @@
 :order: 775
 :type: center
-:canonical_id: X(775)
-:dependencies: X(1), X(10), X(31), X(158), X(225), X(255), X(412), X(662), X(774), X(801), X(820), X(1097)
+:canonical_id: X_775
+:subtitle: ISOGONAL CONJUGATE OF X_774
+:dependencies: X_1, X_10, X_31, X_158, X_225, X_255, X_412, X_662, X_774, X_801, X_820, X_1097
 
-.. _X(775):
+.. _X_775:
 
-X(775) = ISOGONAL CONJUGATE OF X(774)
-=====================================
+X_775
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_774
 
 .. enunciation::
 
-   :ref:`X(775) <X(775)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(774) <X(774)>`
+   :ref:`X_775 <X_775>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_774 <X_774>`.
 
 .. figure:: x-00775.svg
-   :alt: X(775) = ISOGONAL CONJUGATE OF X(774)
+   :alt: X_775 — ISOGONAL CONJUGATE OF X_774
    :align: center
 
-   **X(775) = ISOGONAL CONJUGATE OF X(774)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_775** (*ISOGONAL CONJUGATE OF X_774*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{158, 255} <{ 158, 255 }>`, :g:`{225, 412} <{ 225, 412 }>`
+   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_255 <X_255>` (:ref:`ISOGONAL CONJUGATE OF X(158) <X_255>`), :g:`X_158 <X_158>` (:ref:`-CROSS CONJUGATE OF X(92) <X_158>`), :g:`X_225 <X_225>` (:ref:`-CEVA CONJUGATE OF X(65) <X_225>`), :g:`X_412 <X_412>` (:ref:`EULER X(29)-2nd-SUBSTITUTION POINT <X_412>`)
 
 .. signature:: center
 
@@ -28,13 +37,13 @@ X(775) = ISOGONAL CONJUGATE OF X(774)
    :badge: 5 lines
    :class: line-catalog
 
-   {:ref:`10 <X(10)>`, :ref:`801 <X(801)>`}, {:ref:`31 <X(31)>`, 1097}, {:ref:`158 <X(158)>`, :ref:`255 <X(255)>`}, {:ref:`225 <X(225)>`, :ref:`412 <X(412)>`}, {:ref:`662 <X(662)>`, :ref:`820 <X(820)>`}
+   {:ref:`10 <X_10>`, :ref:`801 <X_801>`}, {:ref:`31 <X_31>`, 1097}, {:ref:`158 <X_158>`, :ref:`255 <X_255>`}, {:ref:`225 <X_225>`, :ref:`412 <X_412>`}, {:ref:`662 <X_662>`, :ref:`820 <X_820>`}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(775) <X(775)>` = isogonal conjugate of :ref:`X(774) <X(774)>`
-   * :ref:`X(775) <X(775)>` = :term:`cevapoint <cevapoint>` of :ref:`X(1) <X(1)>` and :ref:`X(255) <X(255)>`
+   * :ref:`X_775 <X_775>` = isogonal conjugate of :ref:`X_774 <X_774>`
+   * :ref:`X_775 <X_775>` = :term:`cevapoint <cevapoint>` of :ref:`X_1 <X_1>` and :ref:`X_255 <X_255>`
 
 .. toctree::
    :hidden:

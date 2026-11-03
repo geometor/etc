@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(143) = NINE-POINT CENTER OF ORTHIC TRIANGLE."""
+"""GEOMETOR construction model for X_143 = NINE-POINT CENTER OF ORTHIC TRIANGLE."""
 
 from __future__ import annotations
 
@@ -23,16 +23,16 @@ from geometor.etc.render import write_center_svg
 def construct_x_00143(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(143) = NINE-POINT CENTER OF ORTHIC TRIANGLE on reference triangle ABC."""
-    X_143 = eval_trilinear_point(model, A, B, C, '(sec(A))*(cos(2*C - 2*A) + cos(2*A - 2*B))', ID="X(143)", classes=["selected", "target"])
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
-    X_26 = eval_trilinear_point(model, A, B, C, 'a*(b**(2)*cos(2*B) + c**(2)*cos(2*C) - a**(2)*cos(2*A))', ID="X(26)", classes=["center", "incident"])
+    """Construct X_143 = NINE-POINT CENTER OF ORTHIC TRIANGLE on reference triangle ABC."""
+    X_143 = eval_trilinear_point(model, A, B, C, '(sec(A))*(cos(2*C - 2*A) + cos(2*A - 2*B))', ID="X_143", classes=["selected", "target"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
+    X_26 = eval_trilinear_point(model, A, B, C, 'a*(b**(2)*cos(2*B) + c**(2)*cos(2*C) - a**(2)*cos(2*A))', ID="X_26", classes=["center", "incident"])
     central_line(model, X_6, X_26, 6, 26, incident=True)
-    X_5 = nine_point_center_of(model, A, B, C, ID="X(5)", classes=["center", "incident"])
-    X_51 = eval_trilinear_point(model, A, B, C, 'a**(2)*cos(B - C)', ID="X(51)", classes=["center", "incident"])
+    X_5 = nine_point_center_of(model, A, B, C, ID="X_5", classes=["center", "incident"])
+    X_51 = eval_trilinear_point(model, A, B, C, 'a**(2)*cos(B - C)', ID="X_51", classes=["center", "incident"])
     central_line(model, X_5, X_51, 5, 51, incident=True)
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
-    X_94 = eval_trilinear_point(model, A, B, C, 'csc(3*A)', ID="X(94)", classes=["center", "incident"])
+    X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
+    X_94 = eval_trilinear_point(model, A, B, C, 'csc(3*A)', ID="X_94", classes=["center", "incident"])
     central_line(model, X_4, X_94, 4, 94, incident=True)
     return promote_point_to_top(model, X_143)
 
@@ -41,8 +41,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(143) on the given reference triangle."""
-    model = create_model('X(143) = NINE-POINT CENTER OF ORTHIC TRIANGLE')
+    """Build a `geometor.model.Model` for X_143 on the given reference triangle."""
+    model = create_model('X_143 = NINE-POINT CENTER OF ORTHIC TRIANGLE')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00143(model, A, B, C)
     return model

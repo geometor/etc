@@ -1,18 +1,21 @@
-:canonical_id: X(133)
+:canonical_id: X_133
 :type: code
+:subtitle: INTERSECTION OF LINES X_4X_74 AND X_5X_122
 
-X(133) = INTERSECTION OF LINES X(4)X(74) AND X(5)X(122) — Code
-==============================================================
+X_133
+=====
+
+.. rubric:: INTERSECTION OF LINES X_4X_74 AND X_5X_122
 
 .. enunciation::
 
-   :ref:`X(133) <X(133)>` = :ref:`X(106) <X(106)>`-of-:term:`orthic triangle <orthic-triangle>` is :g:`ABC << A B C >>` is acute.
+   :ref:`X_133 <X_133>` = :ref:`X_106 <X_106>`-of-:term:`orthic triangle <orthic-triangle>` is :g:`ABC << A B C >>` is acute.
 
 .. figure:: x-00133.svg
-   :alt: X(133) = INTERSECTION OF LINES X(4)X(74) AND X(5)X(122)
+   :alt: X_133 — INTERSECTION OF LINES X_4X_74 AND X_5X_122
    :align: center
 
-   **X(133) = INTERSECTION OF LINES X(4)X(74) AND X(5)X(122)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_133** (*INTERSECTION OF LINES X_4X_74 AND X_5X_122*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

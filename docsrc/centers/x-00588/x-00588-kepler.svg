@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.110000 -0.700434 1.220000 0.915000" data-initial-viewbox="-0.110000 -0.700434 1.220000 0.915000" preserveAspectRatio="xMidYMid meet">
+<svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.110000 -0.718072 1.220000 0.915000" data-initial-viewbox="-0.110000 -0.718072 1.220000 0.915000" preserveAspectRatio="xMidYMid meet">
   <style>
 :root {
     --background-color: #121212;
@@ -27,6 +27,7 @@ svg.geometor-etc-drawing.is-panning {
 }
 
 svg.geometor-etc-drawing.hide-labels #labels .point-label,
+svg.geometor-etc-drawing.hide-labels #labels .guide-label,
 svg.geometor-etc-drawing.hide-labels #labels .target-label,
 svg.geometor-etc-drawing.hide-labels #labels .given-label {
     display: none;
@@ -188,12 +189,19 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
     font-weight: 600;
     paint-order: stroke;
     stroke: var(--accent-color);
-    stroke-width: 3px;
+    stroke-width: 0.15em;
     stroke-linecap: round;
     stroke-linejoin: round;
-    vector-effect: non-scaling-stroke;
     user-select: none;
     pointer-events: none;
+}
+
+#labels tspan {
+    paint-order: stroke;
+    stroke: var(--accent-color);
+    stroke-width: 0.15em;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 #labels text.target-label {
@@ -203,6 +211,11 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
 
 #labels text.given-label {
     fill: #8f8;
+}
+
+#labels text.guide-label {
+    fill: #ffb74d;
+    font-weight: 600;
 }
 
 #labels text.hover-label {
@@ -314,45 +327,36 @@ figure:hover .etc-svg-toolbar {
     <polyline data-highlight-for="[ A B ]" class="highlight-segment" points="0.000000,-0.000000 1.000000,-0.000000" style="display: none;" />
     <polyline data-highlight-for="[ B C ]" class="highlight-segment" points="1.000000,-0.000000 0.618034,-0.485868" style="display: none;" />
     <polyline data-highlight-for="[ C A ]" class="highlight-segment" points="0.618034,-0.485868 0.000000,-0.000000" style="display: none;" />
-    <polyline data-highlight-for="[ A P_a ]" class="highlight-segment" points="0.000000,-0.000000 0.783776,-0.275042" style="display: none;" />
-    <polyline data-highlight-for="[ B P_b ]" class="highlight-segment" points="1.000000,-0.000000 0.397104,-0.312184" style="display: none;" />
-    <polyline data-highlight-for="[ C P_c ]" class="highlight-segment" points="0.618034,-0.485868 0.579438,-0.000000" style="display: none;" />
     <polyline data-highlight-for="{ 39, 589 }" class="highlight-segment" points="0.595491,-0.196538 0.609935,-0.521145" style="display: none;" />
   </g>
   <g id="elements">
     <line data-id="[ A B ]" data-name="Sideline AB (Base c = 1)" class="line given sideline" data-category="elements" x1="-1000.00000" y1="-0.00000" x2="1000.00000" y2="-0.00000"><title>[ A B ]: Sideline AB (Base c = 1)</title></line>
     <line data-id="[ B C ]" data-name="Sideline BC (Side a)" class="line sideline" data-category="elements" x1="382.96601" y1="485.86827" x2="-380.96601" y2="-485.86827"><title>[ B C ]: Sideline BC (Side a)</title></line>
     <line data-id="[ C A ]" data-name="Sideline CA (Side b)" class="line sideline" data-category="elements" x1="618.65202" y1="-486.35414" x2="-617.41596" y2="485.38240"><title>[ C A ]: Sideline CA (Side b)</title></line>
-    <line data-id="[ A P_a ]" data-name="A-Cevian A–P_a" class="line bisector" data-category="elements" x1="-783.77559" y1="275.04170" x2="783.77559" y2="-275.04170"><title>[ A P_a ]: A-Cevian A–P_a</title></line>
-    <line data-id="[ B P_b ]" data-name="B-Cevian B–P_b" class="line bisector" data-category="elements" x1="603.89598" y1="312.18387" x2="-601.89598" y2="-312.18387"><title>[ B P_b ]: B-Cevian B–P_b</title></line>
-    <line data-id="[ C P_c ]" data-name="C-Cevian C–P_c" class="line bisector" data-category="elements" x1="39.21430" y1="-486.35414" x2="-37.97824" y2="485.38240"><title>[ C P_c ]: C-Cevian C–P_c</title></line>
-    <line data-id="{ 39, 589 }" data-name="Central Line L(39, 589)" class="line central_line incident" data-category="elements" x1="-13.84825" y1="324.41038" x2="15.03923" y2="-324.80346"><title>{ 39, 589 }: Central Line L(39, 589)</title></line>
+    <line data-id="{ 39, 589 }" data-name="Central Line L(39, 589)" class="line central_line" data-category="elements" x1="-13.84825" y1="324.41038" x2="15.03923" y2="-324.80346"><title>{ 39, 589 }: Central Line L(39, 589)</title></line>
   </g>
   <g id="points">
     <circle data-id="A" data-name="Vertex A" class="point given vertex" data-category="points" cx="0.000000" cy="-0.000000" r="0.011437"><title>A = Vertex A (0.0000, 0.0000)</title></circle>
     <circle data-id="B" data-name="Vertex B" class="point given vertex" data-category="points" cx="1.000000" cy="-0.000000" r="0.011437"><title>B = Vertex B (1.0000, 0.0000)</title></circle>
     <circle data-id="C" data-name="Vertex C" class="point vertex" data-category="points" cx="0.618034" cy="-0.485868" r="0.011437"><title>C = Vertex C (0.6180, 0.4859)</title></circle>
-    <circle data-id="X(6)" data-name="SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)" class="point center" data-category="points" cx="0.618034" cy="-0.242934" r="0.011437"><title>X(6) = SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT) (0.6180, 0.2429)</title></circle>
-    <circle data-id="X(371)" data-name="KENMOTU POINT (CONGRUENT SQUARES POINT)" class="point center" data-category="points" cx="0.579438" cy="-0.163496" r="0.011437"><title>X(371) = KENMOTU POINT (CONGRUENT SQUARES POINT) (0.5794, 0.1635)</title></circle>
-    <circle data-id="P_a" data-name="Cevian Trace P_a on BC" class="point foot guide" data-category="points" cx="0.783776" cy="-0.275042" r="0.007320"><title>P_a = Cevian Trace P_a on BC (0.7838, 0.2750)</title></circle>
-    <circle data-id="P_b" data-name="Cevian Trace P_b on CA" class="point foot guide" data-category="points" cx="0.397104" cy="-0.312184" r="0.007320"><title>P_b = Cevian Trace P_b on CA (0.3971, 0.3122)</title></circle>
-    <circle data-id="P_c" data-name="Cevian Trace P_c on AB" class="point foot guide" data-category="points" cx="0.579438" cy="-0.000000" r="0.007320"><title>P_c = Cevian Trace P_c on AB (0.5794, 0.0000)</title></circle>
-    <circle data-id="X(39)" data-name="BROCARD MIDPOINT" class="point center incident" data-category="points" cx="0.595491" cy="-0.196538" r="0.011437"><title>X(39) = BROCARD MIDPOINT (0.5955, 0.1965)</title></circle>
-    <circle data-id="X(589)" data-name="2nd KENMOTU-VAN LAMOEN POINT" class="point center incident" data-category="points" cx="0.609935" cy="-0.521145" r="0.011437"><title>X(589) = 2nd KENMOTU-VAN LAMOEN POINT (0.6099, 0.5211)</title></circle>
-    <circle data-id="X(588)" data-name="1st KENMOTU-VAN LAMOEN POINT" class="point selected target" data-category="points" cx="0.596053" cy="-0.209166" r="0.016012"><title>X(588) = 1st KENMOTU-VAN LAMOEN POINT (0.5961, 0.2092)</title></circle>
+    <circle data-id="X_6" data-name="SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)" class="point center" data-category="points" cx="0.618034" cy="-0.242934" r="0.011437"><title>X_6 = SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT) (0.6180, 0.2429)</title></circle>
+    <circle data-id="X_371" data-name="KENMOTU POINT (CONGRUENT SQUARES POINT)" class="point center" data-category="points" cx="0.579438" cy="-0.163496" r="0.011437"><title>X_371 = KENMOTU POINT (CONGRUENT SQUARES POINT) (0.5794, 0.1635)</title></circle>
+    <circle data-id="X_39" data-name="BROCARD MIDPOINT" class="point center" data-category="points" cx="0.595491" cy="-0.196538" r="0.011437"><title>X_39 = BROCARD MIDPOINT (0.5955, 0.1965)</title></circle>
+    <circle data-id="X_589" data-name="2nd KENMOTU-VAN LAMOEN POINT" class="point center" data-category="points" cx="0.609935" cy="-0.521145" r="0.011437"><title>X_589 = 2nd KENMOTU-VAN LAMOEN POINT (0.6099, 0.5211)</title></circle>
+    <circle data-id="X_588" data-name="1st KENMOTU-VAN LAMOEN POINT" class="point selected target" data-category="points" cx="0.596053" cy="-0.209166" r="0.016012"><title>X_588 = 1st KENMOTU-VAN LAMOEN POINT (0.5961, 0.2092)</title></circle>
   </g>
   <g id="labels">
     <text class="given-label" data-point-id="A" data-anchor-x="0.000000" data-anchor-y="-0.000000" data-offset-x="-24.0" data-offset-y="22.5" x="-0.036600" y="0.034312" font-size="0.030881">A</text>
     <text class="given-label" data-point-id="B" data-anchor-x="1.000000" data-anchor-y="-0.000000" data-offset-x="12.0" data-offset-y="22.5" x="1.018300" y="0.034312" font-size="0.030881">B</text>
     <text class="point-label" data-point-id="C" data-anchor-x="0.618034" data-anchor-y="-0.485868" data-offset-x="-7.5" data-offset-y="-15.0" x="0.606596" y="-0.508743" font-size="0.030881">C</text>
-    <text class="point-label" data-point-id="X(6)" data-anchor-x="0.618034" data-anchor-y="-0.242934" data-offset-x="12.0" data-offset-y="-10.5" x="0.636334" y="-0.258947" font-size="0.030881">X(6)</text>
-    <text class="point-label" data-point-id="X(371)" data-anchor-x="0.579438" data-anchor-y="-0.163496" data-offset-x="12.0" data-offset-y="-10.5" x="0.597738" y="-0.179509" font-size="0.030881">X(371)</text>
-    <text class="point-label incident" data-point-id="X(39)" data-anchor-x="0.595491" data-anchor-y="-0.196538" data-offset-x="12.0" data-offset-y="-10.5" x="0.613791" y="-0.212550" font-size="0.030881">X(39)</text>
-    <text class="point-label incident" data-point-id="X(589)" data-anchor-x="0.609935" data-anchor-y="-0.521145" data-offset-x="12.0" data-offset-y="-10.5" x="0.628235" y="-0.537157" font-size="0.030881">X(589)</text>
-    <text class="target-label" data-point-id="X(588)" data-anchor-x="0.596053" data-anchor-y="-0.209166" data-offset-x="12.0" data-offset-y="-10.5" x="0.614353" y="-0.225179" font-size="0.030881">X(588)</text>
-    <text class="subtitle-label" x="-0.079500" y="0.187116" font-size="0.026306" fill="#999">Kepler (1, √φ, φ) | AB = 1</text>
+    <text class="point-label" data-point-id="X_6" data-anchor-x="0.618034" data-anchor-y="-0.242934" data-offset-x="12.0" data-offset-y="-10.5" x="0.636334" y="-0.258947" font-size="0.030881">X<tspan dy="0.3em" font-size="75%">6</tspan></text>
+    <text class="point-label" data-point-id="X_371" data-anchor-x="0.579438" data-anchor-y="-0.163496" data-offset-x="12.0" data-offset-y="-10.5" x="0.597738" y="-0.179509" font-size="0.030881">X<tspan dy="0.3em" font-size="75%">371</tspan></text>
+    <text class="point-label" data-point-id="X_39" data-anchor-x="0.595491" data-anchor-y="-0.196538" data-offset-x="12.0" data-offset-y="-10.5" x="0.613791" y="-0.212550" font-size="0.030881">X<tspan dy="0.3em" font-size="75%">39</tspan></text>
+    <text class="point-label" data-point-id="X_589" data-anchor-x="0.609935" data-anchor-y="-0.521145" data-offset-x="12.0" data-offset-y="-10.5" x="0.628235" y="-0.537157" font-size="0.030881">X<tspan dy="0.3em" font-size="75%">589</tspan></text>
+    <text class="target-label" data-point-id="X_588" data-anchor-x="0.596053" data-anchor-y="-0.209166" data-offset-x="12.0" data-offset-y="-10.5" x="0.614353" y="-0.225179" font-size="0.030881">X<tspan dy="0.3em" font-size="75%">588</tspan></text>
+    <text class="subtitle-label" x="-0.079500" y="0.169478" font-size="0.026306" fill="#999">Kepler (1, √φ, φ) | AB = 1</text>
   </g>
-  <script type="application/json" class="etc-elements-meta">{"A":{"ID":"A","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex A","subtitle":"Reference triangle vertex at origin (0, 0)","rows":[["x","0.0000"],["y","0.0000"],["bary","1.0000 : 0.0000 : 0.0000"]],"related_points":["A"]},"B":{"ID":"B","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex B","subtitle":"Reference triangle vertex at unit base (1, 0)","rows":[["x","1.0000"],["y","0.0000"],["bary","0.0000 : 1.0000 : 0.0000"]],"related_points":["B"]},"[ A B ]":{"ID":"[ A B ]","type":"line","classes":["given","sideline"],"color":"#aaa","name":"Sideline AB (Base c = 1)","subtitle":"Reference triangle baseline through A and B","rows":[["pts","A (Vertex A), B (Vertex B)"],["len","1.0000"],["eq","0.0000x + 1.0000y + 0.0000 = 0"]],"related_points":["A","B"]},"C":{"ID":"C","type":"point","classes":["vertex"],"color":"#0ff","name":"Vertex C","subtitle":"Reference triangle apex constructed by Euclid I.22","rows":[["x","0.6180"],["y","0.4859"],["bary","-0.0000 : 0.0000 : 1.0000"]],"related_points":["C"]},"[ B C ]":{"ID":"[ B C ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline BC (Side a)","subtitle":"Reference triangle sideline opposite vertex A","rows":[["pts","B (Vertex B), C (Vertex C)"],["len","0.6180"],["eq","0.7862x + 0.6180y - 0.7862 = 0"]],"related_points":["B","C"]},"[ C A ]":{"ID":"[ C A ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline CA (Side b)","subtitle":"Reference triangle sideline opposite vertex B","rows":[["pts","C (Vertex C), A (Vertex A)"],["len","0.7862"],["eq","0.6180x - 0.7862y + 0.0000 = 0"]],"related_points":["C","A"]},"\u003c A B C \u003e":{"ID":"\u003c A B C \u003e","type":"polygon","classes":["reference"],"color":"#58a6ff","name":"Reference Triangle △ABC","subtitle":"Primary reference triangle with unit baseline AB = 1","rows":[["verts","A, B, C"],["sides","0.6180, 0.7862, 1.0000"],["area","0.2429"]],"related_points":["A","B","C"]},"X(6)":{"ID":"X(6)","type":"point","classes":["center"],"color":"#0ff","name":"SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6180"],["y","0.2429"],["bary","0.1910 : 0.3090 : 0.5000"]],"related_points":["X(6)"]},"X(371)":{"ID":"X(371)","type":"point","classes":["center"],"color":"#0ff","name":"KENMOTU POINT (CONGRUENT SQUARES POINT)","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5794"],["y","0.1635"],["bary","0.2920 : 0.3715 : 0.3365"]],"related_points":["X(371)"]},"P_a":{"ID":"P_a","type":"point","classes":["foot"],"color":"orange","name":"Cevian Trace P_a on BC","subtitle":"Intersection of cevian from A with sideline BC","rows":[["x","0.7838"],["y","0.2750"],["bary","-0.0000 : 0.4339 : 0.5661"]],"related_points":["P_a"]},"[ A P_a ]":{"ID":"[ A P_a ]","type":"line","classes":["bisector"],"color":"#aaa","name":"A-Cevian A–P_a","subtitle":"Cevian from vertex A through target center to trace P_a on BC","rows":[["pts","A (Vertex A), P_a (Cevian Trace P_a on BC)"],["len","0.8306"],["eq","0.3311x - 0.9436y + 0.0000 = 0"]],"related_points":["A","P_a"]},"P_b":{"ID":"P_b","type":"point","classes":["foot"],"color":"orange","name":"Cevian Trace P_b on CA","subtitle":"Intersection of cevian from B with sideline CA","rows":[["x","0.3971"],["y","0.3122"],["bary","0.3575 : 0.0000 : 0.6425"]],"related_points":["P_b"]},"[ B P_b ]":{"ID":"[ B P_b ]","type":"line","classes":["bisector"],"color":"#aaa","name":"B-Cevian B–P_b","subtitle":"Cevian from vertex B through target center to trace P_b on CA","rows":[["pts","B (Vertex B), P_b (Cevian Trace P_b on CA)"],["len","0.6789"],["eq","0.4598x + 0.8880y - 0.4598 = 0"]],"related_points":["B","P_b"]},"P_c":{"ID":"P_c","type":"point","classes":["foot"],"color":"orange","name":"Cevian Trace P_c on AB","subtitle":"Intersection of cevian from C with sideline AB","rows":[["x","0.5794"],["y","0.0000"],["bary","0.4206 : 0.5794 : 0.0000"]],"related_points":["P_c"]},"[ C P_c ]":{"ID":"[ C P_c ]","type":"line","classes":["bisector"],"color":"#aaa","name":"C-Cevian C–P_c","subtitle":"Cevian from vertex C through target center to trace P_c on AB","rows":[["pts","C (Vertex C), P_c (Cevian Trace P_c on AB)"],["len","0.4874"],["eq","0.9969x - 0.0792y - 0.5776 = 0"]],"related_points":["C","P_c"]},"X(39)":{"ID":"X(39)","type":"point","classes":["center","incident"],"color":"#0ff","name":"BROCARD MIDPOINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5955"],["y","0.1965"],["bary","0.2500 : 0.3455 : 0.4045"]],"related_points":["X(39)"]},"X(589)":{"ID":"X(589)","type":"point","classes":["center","incident"],"color":"#0ff","name":"2nd KENMOTU-VAN LAMOEN POINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6099"],["y","0.5211"],["bary","-0.0196 : -0.0530 : 1.0726"]],"related_points":["X(589)"]},"{ 39, 589 }":{"ID":"{ 39, 589 }","type":"line","classes":["central_line","incident"],"color":"#0bd","name":"Central Line L(39, 589)","subtitle":"Through X(39) (BROCARD MIDPOINT) and X(589) (2nd KENMOTU-VAN LAMOEN POINT)","rows":[["pts","X(39) (BROCARD MIDPOINT), X(589) (2nd KENMOTU-VAN LAMOEN POINT)"],["len","0.3249"],["eq","0.9990x - 0.0445y - 0.5862 = 0"]],"related_points":["X(39)","X(589)"]},"X(588)":{"ID":"X(588)","type":"point","classes":["selected","target"],"color":"gold","name":"1st KENMOTU-VAN LAMOEN POINT","subtitle":"Target Triangle Center","rows":[["x","0.5961"],["y","0.2092"],["bary","0.2395 : 0.3300 : 0.4305"]],"related_points":["X(588)"]}}</script>
+  <script type="application/json" class="etc-elements-meta">{"A":{"ID":"A","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex A","subtitle":"Reference triangle vertex at origin (0, 0)","rows":[["x","0.0000"],["y","0.0000"],["bary","1.0000 : 0.0000 : 0.0000"]],"related_points":["A"]},"B":{"ID":"B","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex B","subtitle":"Reference triangle vertex at unit base (1, 0)","rows":[["x","1.0000"],["y","0.0000"],["bary","0.0000 : 1.0000 : 0.0000"]],"related_points":["B"]},"[ A B ]":{"ID":"[ A B ]","type":"line","classes":["given","sideline"],"color":"#aaa","name":"Sideline AB (Base c = 1)","subtitle":"Reference triangle baseline through A and B","rows":[["pts","A (Vertex A), B (Vertex B)"],["len","1.0000"],["eq","0.0000x + 1.0000y + 0.0000 = 0"]],"related_points":["A","B"]},"C":{"ID":"C","type":"point","classes":["vertex"],"color":"#0ff","name":"Vertex C","subtitle":"Reference triangle apex constructed by Euclid I.22","rows":[["x","0.6180"],["y","0.4859"],["bary","-0.0000 : 0.0000 : 1.0000"]],"related_points":["C"]},"[ B C ]":{"ID":"[ B C ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline BC (Side a)","subtitle":"Reference triangle sideline opposite vertex A","rows":[["pts","B (Vertex B), C (Vertex C)"],["len","0.6180"],["eq","0.7862x + 0.6180y - 0.7862 = 0"]],"related_points":["B","C"]},"[ C A ]":{"ID":"[ C A ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline CA (Side b)","subtitle":"Reference triangle sideline opposite vertex B","rows":[["pts","C (Vertex C), A (Vertex A)"],["len","0.7862"],["eq","0.6180x - 0.7862y + 0.0000 = 0"]],"related_points":["C","A"]},"\u003c A B C \u003e":{"ID":"\u003c A B C \u003e","type":"polygon","classes":["reference"],"color":"#58a6ff","name":"Reference Triangle △ABC","subtitle":"Primary reference triangle with unit baseline AB = 1","rows":[["verts","A, B, C"],["sides","0.6180, 0.7862, 1.0000"],["area","0.2429"]],"related_points":["A","B","C"]},"X_6":{"ID":"X_6","type":"point","classes":["center"],"color":"#0ff","name":"SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6180"],["y","0.2429"],["bary","0.1910 : 0.3090 : 0.5000"]],"related_points":["X_6"]},"X_371":{"ID":"X_371","type":"point","classes":["center"],"color":"#0ff","name":"KENMOTU POINT (CONGRUENT SQUARES POINT)","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5794"],["y","0.1635"],["bary","0.2920 : 0.3715 : 0.3365"]],"related_points":["X_371"]},"X_39":{"ID":"X_39","type":"point","classes":["center"],"color":"#0ff","name":"BROCARD MIDPOINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5955"],["y","0.1965"],["bary","0.2500 : 0.3455 : 0.4045"]],"related_points":["X_39"]},"X_589":{"ID":"X_589","type":"point","classes":["center"],"color":"#0ff","name":"2nd KENMOTU-VAN LAMOEN POINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6099"],["y","0.5211"],["bary","-0.0196 : -0.0530 : 1.0726"]],"related_points":["X_589"]},"{ 39, 589 }":{"ID":"{ 39, 589 }","type":"line","classes":["central_line"],"color":"#0bd","name":"Central Line L(39, 589)","subtitle":"Through X_39 (BROCARD MIDPOINT) and X_589 (2nd KENMOTU-VAN LAMOEN POINT)","rows":[["pts","X_39 (BROCARD MIDPOINT), X_589 (2nd KENMOTU-VAN LAMOEN POINT)"],["len","0.3249"],["eq","0.9990x - 0.0445y - 0.5862 = 0"]],"related_points":["X_39","X_589"]},"X_588":{"ID":"X_588","type":"point","classes":["selected","target"],"color":"gold","name":"1st KENMOTU-VAN LAMOEN POINT","subtitle":"Target Triangle Center","rows":[["x","0.5961"],["y","0.2092"],["bary","0.2395 : 0.3300 : 0.4305"]],"related_points":["X_588"]}}</script>
   <script>//<![CDATA[
 
 (function () {
@@ -404,14 +408,16 @@ figure:hover .etc-svg-toolbar {
         });
 
         const fontSize = 20.25 * unitsPerPx;
+        const guideFontSize = 17.5 * unitsPerPx;
         labelEls.forEach(lbl => {
             const cx = parseFloat(lbl.getAttribute('data-anchor-x') || '0');
             const cy = parseFloat(lbl.getAttribute('data-anchor-y') || '0');
             const oxPx = parseFloat(lbl.getAttribute('data-offset-x') || '12');
             const oyPx = parseFloat(lbl.getAttribute('data-offset-y') || '-10.5');
+            const isGuideLbl = lbl.classList.contains('guide-label');
             lbl.setAttribute('x', (cx + oxPx * unitsPerPx).toFixed(6));
             lbl.setAttribute('y', (cy + oyPx * unitsPerPx).toFixed(6));
-            lbl.setAttribute('font-size', fontSize.toFixed(6));
+            lbl.setAttribute('font-size', (isGuideLbl ? guideFontSize : fontSize).toFixed(6));
         });
 
         if (subtitleEl) {
@@ -696,11 +702,11 @@ figure:hover .etc-svg-toolbar {
             const refLink = e.target.closest('a.reference.internal');
             if (refLink) {
                 const txt = (refLink.textContent || '').trim();
-                const xm = txt.match(/^X\((\d+)\)$/);
+                const xm = txt.match(/^X(?:_|\()?(\d+)\)?$/);
                 if (xm) {
                     const activeSvg = getActiveSvg();
                     if (activeSvg && activeSvg._etcController.activateHover) {
-                        activeSvg._etcController.activateHover(`X(${xm[1]})`);
+                        activeSvg._etcController.activateHover(`X_${xm[1]}`);
                     }
                 }
             }

@@ -1,22 +1,31 @@
 :order: 678
 :type: center
-:canonical_id: X(678)
-:dependencies: X(1), X(44), X(45), X(55), X(88), X(244), X(679), X(902), X(1022)
+:canonical_id: X_678
+:subtitle: CROSSPOINT OF X_1 AND X_44
+:dependencies: X_1, X_44, X_45, X_55, X_88, X_244, X_679, X_902, X_1022
 
-.. _X(678):
+.. _X_678:
 
-X(678) = CROSSPOINT OF X(1) AND X(44)
-=====================================
+X_678
+=====
+
+.. rubric:: CROSSPOINT OF X_1 AND X_44
 
 .. enunciation::
 
-   :ref:`X(678) <X(678)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(679) <X(679)>`
+   :ref:`X_678 <X_678>` is the :term:`crosspoint <crosspoint>` of :ref:`X_1 <X_1>` and :ref:`X_44 <X_44>`.
 
 .. figure:: x-00678.svg
-   :alt: X(678) = CROSSPOINT OF X(1) AND X(44)
+   :alt: X_678 — CROSSPOINT OF X_1 AND X_44
    :align: center
 
-   **X(678) = CROSSPOINT OF X(1) AND X(44)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_678** (*CROSSPOINT OF X_1 AND X_44*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 88} <{ 1, 88 }>`, :g:`{45, 55} <{ 45, 55 }>`
+   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_44 <X_44>` (:ref:`-LINE CONJUGATE OF X(1) <X_44>`), :g:`X_88 <X_88>` (:ref:`ISOGONAL CONJUGATE OF X(44) <X_88>`), :g:`X_45 <X_45>` (:ref:`-BETH CONJUGATE OF X(1) <X_45>`), :g:`X_55 <X_55>` (:ref:`INSIMILICENTER <X_55>`)
 
 .. signature:: center
 
@@ -26,23 +35,23 @@ X(678) = CROSSPOINT OF X(1) AND X(44)
 
 .. container:: note-item
 
-   :ref:`X(678) <X(678)>` lies on the incentral inellipse (a.k.a. Hofstadter ellipse E(1/2)).
+   :ref:`X_678 <X_678>` lies on the incentral inellipse (a.k.a. Hofstadter ellipse E(1/2)).
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`88 <X(88)>`}, {:ref:`44 <X(44)>`, :ref:`902 <X(902)>`}, {:ref:`45 <X(45)>`, :ref:`55 <X(55)>`}
+   {:ref:`1 <X_1>`, :ref:`88 <X_88>`}, {:ref:`44 <X_44>`, :ref:`902 <X_902>`}, {:ref:`45 <X_45>`, :ref:`55 <X_55>`}
 
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X(678) <X(678)>` = isogonal conjugate of :ref:`X(679) <X(679)>`
-   * :ref:`X(678) <X(678)>` = :ref:`X(1) <X(1)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(44) <X(44)>`
-   * :ref:`X(678) <X(678)>` = :term:`crosspoint <crosspoint>` of :ref:`X(1) <X(1)>` and :ref:`X(44) <X(44)>`
-   * :ref:`X(678) <X(678)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`88 <X(88)>`), (:ref:`244 <X(244)>`, 1022)
-   * :ref:`X(678) <X(678)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(88) <X(88)>`\ X(1022)
-   * :ref:`X(678) <X(678)>` = trilinear square of :ref:`X(44) <X(44)>`
+   * :ref:`X_678 <X_678>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_679 <X_679>`
+   * :ref:`X_678 <X_678>` = :ref:`X_1 <X_1>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_44 <X_44>`
+   * :ref:`X_678 <X_678>` = crosspoint of :ref:`X_1 <X_1>` and :ref:`X_44 <X_44>`
+   * :ref:`X_678 <X_678>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`88 <X_88>`), (:ref:`244 <X_244>`, 1022)
+   * :ref:`X_678 <X_678>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_88 <X_88>`\ X_1022
+   * :ref:`X_678 <X_678>` = trilinear square of :ref:`X_44 <X_44>`
 
 .. toctree::
    :hidden:

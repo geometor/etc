@@ -1,18 +1,21 @@
-:canonical_id: X(564)
+:canonical_id: X_564
 :type: code
+:subtitle: INTERSECTION OF LINES X_1X_1048 AND X(47,91)
 
-X(564) = INTERSECTION OF LINES X(1)X(1048) AND X(47,91) — Code
-==============================================================
+X_564
+=====
+
+.. rubric:: INTERSECTION OF LINES X_1X_1048 AND X(47,91)
 
 .. enunciation::
 
-   :ref:`X(564) <X(564)>` = {:ref:`X(91) <X(91)>`,\ :ref:`X(92) <X(92)>`}-harmonic conjugate of :ref:`X(47) <X(47)>`
+   :ref:`X_564 <X_564>` = {:ref:`X_91 <X_91>`,\ :ref:`X_92 <X_92>`}-harmonic conjugate of :ref:`X_47 <X_47>`
 
 .. figure:: x-00564.svg
-   :alt: X(564) = INTERSECTION OF LINES X(1)X(1048) AND X(47,91)
+   :alt: X_564 — INTERSECTION OF LINES X_1X_1048 AND X(47,91)
    :align: center
 
-   **X(564) = INTERSECTION OF LINES X(1)X(1048) AND X(47,91)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_564** (*INTERSECTION OF LINES X_1X_1048 AND X(47,91)*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

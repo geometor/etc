@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(461) = EULER LINE INTERCEPT OF LINE X(33)X(200)."""
+"""GEOMETOR construction model for X_461 = EULER LINE INTERCEPT OF LINE X_33X_200."""
 
 from __future__ import annotations
 
@@ -23,14 +23,14 @@ from geometor.etc.render import write_center_svg
 def construct_x_00461(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(461) = EULER LINE INTERCEPT OF LINE X(33)X(200) on reference triangle ABC."""
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
-    X_33 = eval_trilinear_point(model, A, B, C, '1 + sec(A)', ID="X(33)", classes=["center"])
-    X_200 = eval_trilinear_point(model, A, B, C, '(cot(A/2))**(2)', ID="X(200)", classes=["center"])
+    """Construct X_461 = EULER LINE INTERCEPT OF LINE X_33X_200 on reference triangle ABC."""
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
+    X_33 = eval_trilinear_point(model, A, B, C, '1 + sec(A)', ID="X_33", classes=["center"])
+    X_200 = eval_trilinear_point(model, A, B, C, '(cot(A/2))**(2)', ID="X_200", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
     central_line(model, X_33, X_200, 33, 200)
-    X_461 = intersect_lines(model, X_2, X_3, X_33, X_200, ID="X(461)", classes=["selected", "target"])
+    X_461 = intersect_lines(model, X_2, X_3, X_33, X_200, ID="X_461", classes=["selected", "target"])
     return promote_point_to_top(model, X_461)
 
 
@@ -38,8 +38,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(461) on the given reference triangle."""
-    model = create_model('X(461) = EULER LINE INTERCEPT OF LINE X(33)X(200)')
+    """Build a `geometor.model.Model` for X_461 on the given reference triangle."""
+    model = create_model('X_461 = EULER LINE INTERCEPT OF LINE X_33X_200')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00461(model, A, B, C)
     return model

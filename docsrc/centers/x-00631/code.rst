@@ -1,18 +1,21 @@
-:canonical_id: X(631)
+:canonical_id: X_631
 :type: code
+:subtitle: 3/5*OG
 
-X(631) = 3/5*OG — Code
-======================
+X_631
+=====
+
+.. rubric:: 3/5*OG
 
 .. enunciation::
 
-   Let AeBeCe and AiBiCi be the Ae and Ai triangles (aka K798e and K798i triangles). :ref:`X(631) <X(631)>` is the radical center of the circumcircles of triangles AAeAi, BBeBi, CCeCi. (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
+   :ref:`X_631 <X_631>` = reflection of :ref:`X_632 <X_632>` in :ref:`X_140 <X_140>`
 
 .. figure:: x-00631.svg
-   :alt: X(631) = 3/5*OG
+   :alt: X_631 — 3/5*OG
    :align: center
 
-   **X(631) = 3/5*OG** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_631** (*3/5*OG*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

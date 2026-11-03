@@ -1,18 +1,21 @@
-:canonical_id: X(320)
+:canonical_id: X_320
 :type: code
+:subtitle: ISOTOMIC CONJUGATE OF X_80
 
-X(320) = ISOTOMIC CONJUGATE OF X(80) — Code
-===========================================
+X_320
+=====
+
+.. rubric:: ISOTOMIC CONJUGATE OF X_80
 
 .. enunciation::
 
-   :ref:`X(320) <X(320)>` = midpoint of X(4440) and X(6542)
+   :ref:`X_320 <X_320>` is the :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_80 <X_80>`.
 
 .. figure:: x-00320.svg
-   :alt: X(320) = ISOTOMIC CONJUGATE OF X(80)
+   :alt: X_320 — ISOTOMIC CONJUGATE OF X_80
    :align: center
 
-   **X(320) = ISOTOMIC CONJUGATE OF X(80)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_320** (*ISOTOMIC CONJUGATE OF X_80*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,22 +1,31 @@
 :order: 370
 :type: center
-:canonical_id: X(370)
+:canonical_id: X_370
+:subtitle: EQUILATERAL CEVIAN TRIANGLE POINT
 
-.. _X(370):
+.. _X_370:
 .. _EquilateralCevianTrianglePoint:
 
-X(370) = EQUILATERAL CEVIAN TRIANGLE POINT
-==========================================
+X_370
+=====
+
+.. rubric:: EQUILATERAL CEVIAN TRIANGLE POINT
 
 .. enunciation::
 
    A point :g:`P <P>` is an equilateral :term:`cevian triangle <cevian-triangle>` point if the cevian triangle of :g:`P <P>` is equilateral. Jiang Huanxin introduced this notion in 1997.
 
 .. figure:: x-00370.svg
-   :alt: X(370) = EQUILATERAL CEVIAN TRIANGLE POINT
+   :alt: X_370 — EQUILATERAL CEVIAN TRIANGLE POINT
    :align: center
 
-   **X(370) = EQUILATERAL CEVIAN TRIANGLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_370** (*EQUILATERAL CEVIAN TRIANGLE POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Derived Triangle:** :term:`Cevian Triangle <cevian triangle>` :g:`△P_aP_bP_c << P_a P_b P_c >>` — vertices :g:`P_a <P_a>`, :g:`P_b <P_b>`, :g:`P_c <P_c>` (Traces of cevians through target center on BC, CA, AB)
+   * **Concurrence Lines:** :g:`A–P_a <[ A P_a ]>`, :g:`B–P_b <[ B P_b ]>`, :g:`C–P_c <[ C P_c ]>` concurring at :g:`X_370 <X_370>`
 
 .. signature:: center
 
@@ -26,14 +35,14 @@ X(370) = EQUILATERAL CEVIAN TRIANGLE POINT
 
 .. container:: note-item
 
-   :ref:`X(370) <X(370)>` lies on the Neuberg cubic.
+   :ref:`X_370 <X_370>` lies on the Neuberg cubic.
 
 Notes
 -----
 
 .. container:: note-item
 
-   Jean-Pierre Ehrmann notes (11/6/02) that the normalized barycentric coordinates (x,y,z) of :ref:`X(370) <X(370)>` are the unique solution of this system:
+   Jean-Pierre Ehrmann notes (11/6/02) that the normalized barycentric coordinates (x,y,z) of :ref:`X_370 <X_370>` are the unique solution of this system:
 
    y(1 - y)\ :math:`S_{B}` + z(1 - z)\ :math:`S_{C}` = x(1 + x)F
 

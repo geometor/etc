@@ -1,18 +1,21 @@
-:canonical_id: X(510)
+:canonical_id: X_510
 :type: code
+:subtitle: 8th ISOSCELIZER POINT
 
-X(510) = 8th ISOSCELIZER POINT — Code
-=====================================
+X_510
+=====
+
+.. rubric:: 8th ISOSCELIZER POINT
 
 .. enunciation::
 
-   have solution :g:`X <X>` = :ref:`X(510) <X(510)>`. (:person:`Peter Yff <peter-yff>`, 4/9/99)
+   The :term:`isoscelizer <isoscelizer>` equations
 
 .. figure:: x-00510.svg
-   :alt: X(510) = 8th ISOSCELIZER POINT
+   :alt: X_510 — 8th ISOSCELIZER POINT
    :align: center
 
-   **X(510) = 8th ISOSCELIZER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_510** (*8th ISOSCELIZER POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

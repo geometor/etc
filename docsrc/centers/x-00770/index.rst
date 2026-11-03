@@ -1,22 +1,31 @@
 :order: 770
 :type: center
-:canonical_id: X(770)
-:dependencies: X(1), X(44), X(513), X(771), X(1092)
+:canonical_id: X_770
+:subtitle: POINT ACAMAR
+:dependencies: X_1, X_44, X_513, X_771, X_1092
 
-.. _X(770):
+.. _X_770:
 
-X(770) = POINT ACAMAR
-=====================
+X_770
+=====
+
+.. rubric:: POINT ACAMAR
 
 .. enunciation::
 
-   :ref:`X(770) <X(770)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(771) <X(771)>`
+   :ref:`X_770 <X_770>` = :term:`crosssum <crosssum>` of :ref:`X_1 <X_1>` and :ref:`X_770 <X_770>`
 
 .. figure:: x-00770.svg
-   :alt: X(770) = POINT ACAMAR
+   :alt: X_770 — POINT ACAMAR
    :align: center
 
-   **X(770) = POINT ACAMAR** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_770** (*POINT ACAMAR*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{44, 513} <{ 44, 513 }>`
+   * **Related Centers:** :g:`X_771 <X_771>` (:ref:`ISOGONAL CONJUGATE OF X(770) <X_771>`), :g:`X_44 <X_44>` (:ref:`-LINE CONJUGATE OF X(1) <X_44>`), :g:`X_513 <X_513>` (:ref:`ISOGONAL CONJUGATE OF X(100) <X_513>`)
 
 .. signature:: center
 
@@ -28,14 +37,14 @@ X(770) = POINT ACAMAR
    :badge: 1 line
    :class: line-catalog
 
-   {:ref:`44 <X(44)>`, :ref:`513 <X(513)>`}
+   {:ref:`44 <X_44>`, :ref:`513 <X_513>`}
 
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X(770) <X(770)>` = isogonal conjugate of :ref:`X(771) <X(771)>`
-   * :ref:`X(770) <X(770)>` = :term:`crosssum <crosssum>` of :ref:`X(1) <X(1)>` and :ref:`X(770) <X(770)>`
-   * :ref:`X(770) <X(770)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(1) <X(1)>`\ X(1092)
+   * :ref:`X_770 <X_770>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_771 <X_771>`
+   * :ref:`X_770 <X_770>` = crosssum of :ref:`X_1 <X_1>` and :ref:`X_770 <X_770>`
+   * :ref:`X_770 <X_770>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_1 <X_1>`\ X_1092
 
 .. toctree::
    :hidden:

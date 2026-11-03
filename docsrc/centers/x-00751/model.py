@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(751) = ISOGONAL CONJUGATE OF X(750)."""
+"""GEOMETOR construction model for X_751 = ISOGONAL CONJUGATE OF X_750."""
 
 from __future__ import annotations
 
@@ -21,11 +21,11 @@ from geometor.etc.render import write_center_svg
 def construct_x_00751(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(751) = ISOGONAL CONJUGATE OF X(750) on reference triangle ABC."""
-    X_750 = eval_trilinear_point(model, A, B, C, 'a**(2) + 2*b*c', ID="X(750)", classes=["center"])
-    X_751 = isogonal_conjugate(model, A, B, C, X_750, ID="X(751)", classes=["selected", "target"])
-    X_519 = eval_trilinear_point(model, A, B, C, '(2*a - b - c)/a', ID="X(519)", classes=["center", "incident"])
-    X_984 = eval_trilinear_point(model, A, B, C, 'b**(2) + b*c + c**(2)', ID="X(984)", classes=["center", "incident"])
+    """Construct X_751 = ISOGONAL CONJUGATE OF X_750 on reference triangle ABC."""
+    X_750 = eval_trilinear_point(model, A, B, C, 'a**(2) + 2*b*c', ID="X_750", classes=["center"])
+    X_751 = isogonal_conjugate(model, A, B, C, X_750, ID="X_751", classes=["selected", "target"])
+    X_519 = eval_trilinear_point(model, A, B, C, '(2*a - b - c)/a', ID="X_519", classes=["center", "incident"])
+    X_984 = eval_trilinear_point(model, A, B, C, 'b**(2) + b*c + c**(2)', ID="X_984", classes=["center", "incident"])
     central_line(model, X_519, X_984, 519, 984, incident=True)
     return promote_point_to_top(model, X_751)
 
@@ -34,8 +34,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(751) on the given reference triangle."""
-    model = create_model('X(751) = ISOGONAL CONJUGATE OF X(750)')
+    """Build a `geometor.model.Model` for X_751 on the given reference triangle."""
+    model = create_model('X_751 = ISOGONAL CONJUGATE OF X_750')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00751(model, A, B, C)
     return model

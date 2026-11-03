@@ -1,18 +1,21 @@
-:canonical_id: X(298)
+:canonical_id: X_298
 :type: code
+:subtitle: ISOTOMIC CONJUGATE OF 1st ISOGONIC CENTER
 
-X(298) = ISOTOMIC CONJUGATE OF 1st ISOGONIC CENTER — Code
-=========================================================
+X_298
+=====
+
+.. rubric:: ISOTOMIC CONJUGATE OF 1st ISOGONIC CENTER
 
 .. enunciation::
 
-   :ref:`X(298) <X(298)>` = midpoint of :ref:`X(616) <X(616)>` and :ref:`X(621) <X(621)>`
+   :ref:`X_298 <X_298>` is the :term:`isotomic conjugate <isotomic-conjugate>` of 1st isogonic center.
 
 .. figure:: x-00298.svg
-   :alt: X(298) = ISOTOMIC CONJUGATE OF 1st ISOGONIC CENTER
+   :alt: X_298 — ISOTOMIC CONJUGATE OF 1st ISOGONIC CENTER
    :align: center
 
-   **X(298) = ISOTOMIC CONJUGATE OF 1st ISOGONIC CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_298** (*ISOTOMIC CONJUGATE OF 1st ISOGONIC CENTER*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

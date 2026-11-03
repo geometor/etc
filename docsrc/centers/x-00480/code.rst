@@ -1,18 +1,21 @@
-:canonical_id: X(480)
+:canonical_id: X_480
 :type: code
+:subtitle: X_200-CEVA CONJUGATE OF X_220
 
-X(480) = X(200)-CEVA CONJUGATE OF X(220) — Code
-===============================================
+X_480
+=====
+
+.. rubric:: X_200-CEVA CONJUGATE OF X_220
 
 .. enunciation::
 
-   :ref:`X(480) <X(480)>` = radical center of the three circles used to construct :ref:`X(57) <X(57)>`. (:person:`Peter Yff <peter-yff>`, 5/6/98)
+   :ref:`X_480 <X_480>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_479 <X_479>`
 
 .. figure:: x-00480.svg
-   :alt: X(480) = X(200)-CEVA CONJUGATE OF X(220)
+   :alt: X_480 — X_200-CEVA CONJUGATE OF X_220
    :align: center
 
-   **X(480) = X(200)-CEVA CONJUGATE OF X(220)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_480** (*X_200-CEVA CONJUGATE OF X_220*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

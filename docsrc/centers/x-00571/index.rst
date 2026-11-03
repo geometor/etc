@@ -1,22 +1,31 @@
 :order: 571
 :type: center
-:canonical_id: X(571)
-:dependencies: X(2), X(3), X(4), X(6), X(19), X(26), X(50), X(52), X(66), X(68), X(70), X(91), X(92), X(96), X(112), X(160), X(184), X(206), X(230), X(237), X(248), X(338), X(371), X(372), X(393), X(427), X(525), X(570), X(577), X(608), X(913), X(5392), X(5412), X(5413)
+:canonical_id: X_571
+:subtitle: ORTHOHARMONIC OF X_52
+:dependencies: X_2, X_3, X_4, X_6, X_19, X_26, X_50, X_52, X_66, X_68, X_70, X_91, X_92, X_96, X_112, X_160, X_184, X_206, X_230, X_237, X_248, X_338, X_371, X_372, X_393, X_427, X_525, X_570, X_577, X_608, X_913, X_5392, X_5412, X_5413
 
-.. _X(571):
+.. _X_571:
 
-X(571) = ORTHOHARMONIC OF X(52)
-===============================
+X_571
+=====
+
+.. rubric:: ORTHOHARMONIC OF X_52
 
 .. enunciation::
 
-   Let :g:`A'B'C' << A' B' C' >>` be the Kosnita triangle. Let :g:`A″ <A″>` be the barycentric product :g:`B' <B'>`\ \*\ :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(571) <X(571)>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
+   :ref:`X_571 <X_571>` = inverse-in-Brocard-circle of :ref:`X_570 <X_570>`
 
 .. figure:: x-00571.svg
-   :alt: X(571) = ORTHOHARMONIC OF X(52)
+   :alt: X_571 — ORTHOHARMONIC OF X_52
    :align: center
 
-   **X(571) = ORTHOHARMONIC OF X(52)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_571** (*ORTHOHARMONIC OF X_52*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{3, 6} <{ 3, 6 }>`, :g:`{4, 96} <{ 4, 96 }>`
+   * **Related Centers:** :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_96 <X_96>` (:ref:`ISOGONAL CONJUGATE OF X(52) <X_96>`)
 
 .. signature:: center
 
@@ -27,24 +36,31 @@ X(571) = ORTHOHARMONIC OF X(52)
    :badge: 8 lines
    :class: line-catalog
 
-   {:ref:`3 <X(3)>`, :ref:`6 <X(6)>`}, {:ref:`4 <X(4)>`, :ref:`96 <X(96)>`}, {:ref:`66 <X(66)>`, :ref:`248 <X(248)>`}, {:ref:`112 <X(112)>`, :ref:`393 <X(393)>`}, {:ref:`160 <X(160)>`, :ref:`184 <X(184)>`}, {:ref:`206 <X(206)>`, :ref:`237 <X(237)>`}, {:ref:`230 <X(230)>`, :ref:`427 <X(427)>`}, {:ref:`608 <X(608)>`, :ref:`913 <X(913)>`}
+   {:ref:`3 <X_3>`, :ref:`6 <X_6>`}, {:ref:`4 <X_4>`, :ref:`96 <X_96>`}, {:ref:`66 <X_66>`, :ref:`248 <X_248>`}, {:ref:`112 <X_112>`, :ref:`393 <X_393>`}, {:ref:`160 <X_160>`, :ref:`184 <X_184>`}, {:ref:`206 <X_206>`, :ref:`237 <X_237>`}, {:ref:`230 <X_230>`, :ref:`427 <X_427>`}, {:ref:`608 <X_608>`, :ref:`913 <X_913>`}
 
 .. collapse:: Functional Relations
    :badge: 13 relations
 
-   * :ref:`X(571) <X(571)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(5392)
-   * :ref:`X(571) <X(571)>` = inverse-in-Brocard-circle of :ref:`X(570) <X(570)>`
-   * :ref:`X(571) <X(571)>` = :ref:`X(4) <X(4)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(184) <X(184)>`
-   * :ref:`X(571) <X(571)>` = :term:`crosspoint <crosspoint>` of :ref:`X(2) <X(2)>` and :ref:`X(70) <X(70)>`
-   * :ref:`X(571) <X(571)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`6 <X(6)>`, :ref:`26 <X(26)>`), (:ref:`338 <X(338)>`, :ref:`525 <X(525)>`)
-   * :ref:`X(571) <X(571)>` = barycentric product of :ref:`X(371) <X(371)>` and :ref:`X(372) <X(372)>`
-   * :ref:`X(571) <X(571)>` = :ref:`X(19) <X(19)>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
-   * :ref:`X(571) <X(571)>` = :ref:`X(2) <X(2)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(91) <X(91)>`
-   * :ref:`X(571) <X(571)>` = :ref:`X(68) <X(68)>`-isoconjugate of :ref:`X(92) <X(92)>`
-   * :ref:`X(571) <X(571)>` = {:ref:`X(6) <X(6)>`,\ :ref:`X(50) <X(50)>`}-harmonic conjugate of :ref:`X(577) <X(577)>`
-   * :ref:`X(571) <X(571)>` = crosspoint of X(5412) and X(5413)
-   * :ref:`X(571) <X(571)>` = Cundy-Parry Phi transform of :ref:`X(52) <X(52)>`
-   * :ref:`X(571) <X(571)>` = Cundy-Parry Psi transform of :ref:`X(96) <X(96)>`
+   * :ref:`X_571 <X_571>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_5392
+   * :ref:`X_571 <X_571>` = inverse-in-Brocard-circle of :ref:`X_570 <X_570>`
+   * :ref:`X_571 <X_571>` = :ref:`X_4 <X_4>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_184 <X_184>`
+   * :ref:`X_571 <X_571>` = :term:`crosspoint <crosspoint>` of :ref:`X_2 <X_2>` and :ref:`X_70 <X_70>`
+   * :ref:`X_571 <X_571>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`26 <X_26>`), (:ref:`338 <X_338>`, :ref:`525 <X_525>`)
+   * :ref:`X_571 <X_571>` = barycentric product of :ref:`X_371 <X_371>` and :ref:`X_372 <X_372>`
+   * :ref:`X_571 <X_571>` = :ref:`X_19 <X_19>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
+   * :ref:`X_571 <X_571>` = :ref:`X_2 <X_2>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_91 <X_91>`
+   * :ref:`X_571 <X_571>` = :ref:`X_68 <X_68>`-isoconjugate of :ref:`X_92 <X_92>`
+   * :ref:`X_571 <X_571>` = {:ref:`X_6 <X_6>`,\ :ref:`X_50 <X_50>`}-harmonic conjugate of :ref:`X_577 <X_577>`
+   * :ref:`X_571 <X_571>` = crosspoint of X_5412 and X_5413
+   * :ref:`X_571 <X_571>` = Cundy-Parry Phi transform of :ref:`X_52 <X_52>`
+   * :ref:`X_571 <X_571>` = Cundy-Parry Psi transform of :ref:`X_96 <X_96>`
+
+Notes
+-----
+
+.. container:: note-item
+
+   Let :g:`A'B'C' << O_A O_B O_C >>` be the :term:`Kosnita triangle <kosnita-triangle>`. Let :g:`A″ <A″>` be the barycentric product :g:`B' <O_B>`\ \*\ :g:`C' <O_C>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_571 <X_571>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
 
 .. toctree::
    :hidden:

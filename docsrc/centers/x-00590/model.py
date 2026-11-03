@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(590) = ISOGONAL CONJUGATE OF X(588)."""
+"""GEOMETOR construction model for X_590 = ISOGONAL CONJUGATE OF X_588."""
 
 from __future__ import annotations
 
@@ -20,9 +20,9 @@ from geometor.etc.render import write_center_svg
 def construct_x_00590(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(590) = ISOGONAL CONJUGATE OF X(588) on reference triangle ABC."""
-    X_588 = point_from_barycentrics(model, A, B, C, 0.26340212, 0.33528188, 0.401316, ID="X(588)", classes=["center"])
-    X_590 = isogonal_conjugate(model, A, B, C, X_588, ID="X(590)", classes=["selected", "target"])
+    """Construct X_590 = ISOGONAL CONJUGATE OF X_588 on reference triangle ABC."""
+    X_588 = point_from_barycentrics(model, A, B, C, 0.26340212, 0.33528188, 0.401316, ID="X_588", classes=["center"])
+    X_590 = isogonal_conjugate(model, A, B, C, X_588, ID="X_590", classes=["selected", "target"])
     return promote_point_to_top(model, X_590)
 
 
@@ -30,8 +30,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(590) on the given reference triangle."""
-    model = create_model('X(590) = ISOGONAL CONJUGATE OF X(588)')
+    """Build a `geometor.model.Model` for X_590 on the given reference triangle."""
+    model = create_model('X_590 = ISOGONAL CONJUGATE OF X_588')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00590(model, A, B, C)
     return model

@@ -1,18 +1,21 @@
-:canonical_id: X(684)
+:canonical_id: X_684
 :type: code
+:subtitle: CROSSDIFFERENCE OF X_4 AND X_32
 
-X(684) = CROSSDIFFERENCE OF X(4) AND X(32) — Code
-=================================================
+X_684
+=====
+
+.. rubric:: CROSSDIFFERENCE OF X_4 AND X_32
 
 .. enunciation::
 
-   :ref:`X(684) <X(684)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(685) <X(685)>`
+   :ref:`X_684 <X_684>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_3 <X_3>`,\ :ref:`X_511 <X_511>`}}
 
 .. figure:: x-00684.svg
-   :alt: X(684) = CROSSDIFFERENCE OF X(4) AND X(32)
+   :alt: X_684 — CROSSDIFFERENCE OF X_4 AND X_32
    :align: center
 
-   **X(684) = CROSSDIFFERENCE OF X(4) AND X(32)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_684** (*CROSSDIFFERENCE OF X_4 AND X_32*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

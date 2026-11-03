@@ -1,18 +1,21 @@
-:canonical_id: X(242)
+:canonical_id: X_242
 :type: code
+:subtitle: X_4-LINE CONJUGATE OF X_71
 
-X(242) = X(4)-LINE CONJUGATE OF X(71) — Code
-============================================
+X_242
+=====
+
+.. rubric:: X_4-LINE CONJUGATE OF X_71
 
 .. enunciation::
 
-   :ref:`X(242) <X(242)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(295) <X(295)>`
+   :ref:`X_242 <X_242>` = :ref:`X_4 <X_4>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X_19 <X_19>`
 
 .. figure:: x-00242.svg
-   :alt: X(242) = X(4)-LINE CONJUGATE OF X(71)
+   :alt: X_242 — X_4-LINE CONJUGATE OF X_71
    :align: center
 
-   **X(242) = X(4)-LINE CONJUGATE OF X(71)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_242** (*X_4-LINE CONJUGATE OF X_71*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

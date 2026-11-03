@@ -1,18 +1,21 @@
-:canonical_id: X(27)
+:canonical_id: X_27
 :type: code
+:subtitle: CEVAPOINT OF ORTHOCENTER AND CLAWSON CENTER
 
-X(27) = CEVAPOINT OF ORTHOCENTER AND CLAWSON CENTER — Code
-==========================================================
+X_27
+====
+
+.. rubric:: CEVAPOINT OF ORTHOCENTER AND CLAWSON CENTER
 
 .. enunciation::
 
-   :ref:`X(27) <X(27)>` is the {:ref:`X(2) <X(2)>`,\ :ref:`X(4) <X(4)>`}-harmonic conjugate of :ref:`X(469) <X(469)>`.
+   :ref:`X_27 <X_27>` is the :term:`cevapoint <cevapoint>` of orthocenter and Clawson center.
 
 .. figure:: x-00027.svg
-   :alt: X(27) = CEVAPOINT OF ORTHOCENTER AND CLAWSON CENTER
+   :alt: X_27 — CEVAPOINT OF ORTHOCENTER AND CLAWSON CENTER
    :align: center
 
-   **X(27) = CEVAPOINT OF ORTHOCENTER AND CLAWSON CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_27** (*CEVAPOINT OF ORTHOCENTER AND CLAWSON CENTER*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

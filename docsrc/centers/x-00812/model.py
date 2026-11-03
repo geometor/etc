@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(812) = ODD (- 1, 1) INFINITY POINT."""
+"""GEOMETOR construction model for X_812 = ODD (- 1, 1) INFINITY POINT."""
 
 from __future__ import annotations
 
@@ -21,16 +21,16 @@ from geometor.etc.render import write_center_svg
 def construct_x_00812(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(812) = ODD (- 1, 1) INFINITY POINT on reference triangle ABC."""
-    X_812 = eval_trilinear_point(model, A, B, C, 'a **(-2)*(b**(1) - c**(1)) + a**(0)*(b **(-1) - c **(-1))', ID="X(812)", classes=["selected", "target"])
-    X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X(30)", classes=["center", "incident"])
-    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X(511)", classes=["center", "incident"])
+    """Construct X_812 = ODD (- 1, 1) INFINITY POINT on reference triangle ABC."""
+    X_812 = eval_trilinear_point(model, A, B, C, 'a **(-2)*(b**(1) - c**(1)) + a**(0)*(b **(-1) - c **(-1))', ID="X_812", classes=["selected", "target"])
+    X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X_30", classes=["center", "incident"])
+    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X_511", classes=["center", "incident"])
     central_line(model, X_30, X_511, 30, 511, incident=True)
-    X_190 = eval_trilinear_point(model, A, B, C, 'b*c/(b - c)', ID="X(190)", classes=["center", "incident"])
-    X_646 = point_from_barycentrics(model, A, B, C, 0.95726496, -0.2991453, 0.34188034, ID="X(646)", classes=["center", "incident"])
+    X_190 = eval_trilinear_point(model, A, B, C, 'b*c/(b - c)', ID="X_190", classes=["center", "incident"])
+    X_646 = point_from_barycentrics(model, A, B, C, 0.95726496, -0.2991453, 0.34188034, ID="X_646", classes=["center", "incident"])
     central_line(model, X_190, X_646, 190, 646, incident=True)
-    X_649 = eval_trilinear_point(model, A, B, C, 'a*(b - c)', ID="X(649)", classes=["center", "incident"])
-    X_693 = eval_trilinear_point(model, A, B, C, '(b - c)/a**(2)', ID="X(693)", classes=["center", "incident"])
+    X_649 = eval_trilinear_point(model, A, B, C, 'a*(b - c)', ID="X_649", classes=["center", "incident"])
+    X_693 = eval_trilinear_point(model, A, B, C, '(b - c)/a**(2)', ID="X_693", classes=["center", "incident"])
     central_line(model, X_649, X_693, 649, 693, incident=True)
     return promote_point_to_top(model, X_812)
 
@@ -39,8 +39,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(812) on the given reference triangle."""
-    model = create_model('X(812) = ODD (- 1, 1) INFINITY POINT')
+    """Build a `geometor.model.Model` for X_812 on the given reference triangle."""
+    model = create_model('X_812 = ODD (- 1, 1) INFINITY POINT')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00812(model, A, B, C)
     return model

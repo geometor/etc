@@ -1,18 +1,21 @@
-:canonical_id: X(196)
+:canonical_id: X_196
 :type: code
+:subtitle: X_7-CEVA CONJUGATE OF X_4
 
-X(196) = X(7)-CEVA CONJUGATE OF X(4) — Code
-===========================================
+X_196
+=====
+
+.. rubric:: X_7-CEVA CONJUGATE OF X_4
 
 .. enunciation::
 
-   :ref:`X(196) <X(196)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(268) <X(268)>`
+   :ref:`X_196 <X_196>` = :term:`cevapoint <cevapoint>` of :ref:`X_19 <X_19>` and :ref:`X_207 <X_207>`
 
 .. figure:: x-00196.svg
-   :alt: X(196) = X(7)-CEVA CONJUGATE OF X(4)
+   :alt: X_196 — X_7-CEVA CONJUGATE OF X_4
    :align: center
 
-   **X(196) = X(7)-CEVA CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_196** (*X_7-CEVA CONJUGATE OF X_4*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

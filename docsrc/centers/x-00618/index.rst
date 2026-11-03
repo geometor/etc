@@ -1,22 +1,31 @@
 :order: 618
 :type: center
-:canonical_id: X(618)
-:dependencies: X(2), X(3), X(5), X(13), X(14), X(15), X(17), X(30), X(39), X(61), X(99), X(140), X(141), X(298), X(395), X(396), X(532), X(542), X(616), X(619), X(620), X(623), X(627), X(629), X(630), X(635)
+:canonical_id: X_618
+:subtitle: COMPLEMENT OF X_13
+:dependencies: X_2, X_3, X_5, X_13, X_14, X_15, X_17, X_30, X_39, X_61, X_99, X_140, X_141, X_298, X_395, X_396, X_532, X_542, X_616, X_619, X_620, X_623, X_627, X_629, X_630, X_635
 
-.. _X(618):
+.. _X_618:
 
-X(618) = COMPLEMENT OF X(13)
-============================
+X_618
+=====
+
+.. rubric:: COMPLEMENT OF X_13
 
 .. enunciation::
 
-   :ref:`X(618) <X(618)>` = reflection of :ref:`X(619) <X(619)>` in :ref:`X(620) <X(620)>`
+   :ref:`X_618 <X_618>` is the :term:`complement <complement>` of :ref:`X_13 <X_13>`.
 
 .. figure:: x-00618.svg
-   :alt: X(618) = COMPLEMENT OF X(13)
+   :alt: X_618 — COMPLEMENT OF X_13
    :align: center
 
-   **X(618) = COMPLEMENT OF X(13)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_618** (*COMPLEMENT OF X_13*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{619, 620} <{ 619, 620 }>`
+   * **Related Centers:** :g:`X_619 <X_619>` (:ref:`COMPLEMENT OF X(14) <X_619>`), :g:`X_620 <X_620>` (:ref:`MIDPOINT OF X(618) AND X(619) <X_620>`)
 
 .. signature:: center
 
@@ -33,22 +42,22 @@ X(618) = COMPLEMENT OF X(13)
    :badge: 11 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`13 <X(13)>`}, {:ref:`3 <X(3)>`, :ref:`635 <X(635)>`}, {:ref:`5 <X(5)>`, :ref:`629 <X(629)>`}, {:ref:`14 <X(14)>`, :ref:`99 <X(99)>`}, {:ref:`15 <X(15)>`, :ref:`298 <X(298)>`}, {:ref:`30 <X(30)>`, :ref:`623 <X(623)>`}, {:ref:`39 <X(39)>`, :ref:`395 <X(395)>`}, {:ref:`61 <X(61)>`, :ref:`627 <X(627)>`}, {:ref:`140 <X(140)>`, :ref:`630 <X(630)>`}, {:ref:`141 <X(141)>`, :ref:`542 <X(542)>`}, {:ref:`396 <X(396)>`, :ref:`532 <X(532)>`}
+   {:ref:`2 <X_2>`, :ref:`13 <X_13>`}, {:ref:`3 <X_3>`, :ref:`635 <X_635>`}, {:ref:`5 <X_5>`, :ref:`629 <X_629>`}, {:ref:`14 <X_14>`, :ref:`99 <X_99>`}, {:ref:`15 <X_15>`, :ref:`298 <X_298>`}, {:ref:`30 <X_30>`, :ref:`623 <X_623>`}, {:ref:`39 <X_39>`, :ref:`395 <X_395>`}, {:ref:`61 <X_61>`, :ref:`627 <X_627>`}, {:ref:`140 <X_140>`, :ref:`630 <X_630>`}, {:ref:`141 <X_141>`, :ref:`542 <X_542>`}, {:ref:`396 <X_396>`, :ref:`532 <X_532>`}
 
 .. collapse:: Functional Relations
    :badge: 11 relations
 
-   * :ref:`X(618) <X(618)>` = midpoint of X(i) and X(j) for these (i,j): (:ref:`13 <X(13)>`, :ref:`616 <X(616)>`), (:ref:`14 <X(14)>`, :ref:`99 <X(99)>`), (:ref:`15 <X(15)>`, :ref:`298 <X(298)>`)
-   * :ref:`X(618) <X(618)>` = reflection of :ref:`X(619) <X(619)>` in :ref:`X(620) <X(620)>`
-   * :ref:`X(618) <X(618)>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X(623) <X(623)>`
-   * :ref:`X(618) <X(618)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(396) <X(396)>`
-   * :ref:`X(618) <X(618)>` = :term:`crosspoint <crosspoint>` of :ref:`X(2) <X(2)>` and :ref:`X(298) <X(298)>`
-   * :ref:`X(618) <X(618)>` = :ref:`X(13) <X(13)>`-of-medial-triangle
-   * :ref:`X(618) <X(618)>` = perspector of circumconic centered at :ref:`X(396) <X(396)>`
-   * :ref:`X(618) <X(618)>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X(396) <X(396)>`
-   * :ref:`X(618) <X(618)>` = :ref:`X(2) <X(2)>`-Ceva conjugate of :ref:`X(396) <X(396)>`
-   * :ref:`X(618) <X(618)>` = :ref:`X(15) <X(15)>`-of-:ref:`X(2) <X(2)>`-Brocard-triangle
-   * :ref:`X(618) <X(618)>` = outer Napoleon :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(17) <X(17)>`
+   * :ref:`X_618 <X_618>` = midpoint of X_i and X_j for these (i,j): (:ref:`13 <X_13>`, :ref:`616 <X_616>`), (:ref:`14 <X_14>`, :ref:`99 <X_99>`), (:ref:`15 <X_15>`, :ref:`298 <X_298>`)
+   * :ref:`X_618 <X_618>` = reflection of :ref:`X_619 <X_619>` in :ref:`X_620 <X_620>`
+   * :ref:`X_618 <X_618>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X_623 <X_623>`
+   * :ref:`X_618 <X_618>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_396 <X_396>`
+   * :ref:`X_618 <X_618>` = :term:`crosspoint <crosspoint>` of :ref:`X_2 <X_2>` and :ref:`X_298 <X_298>`
+   * :ref:`X_618 <X_618>` = :ref:`X_13 <X_13>`-of-medial-triangle
+   * :ref:`X_618 <X_618>` = perspector of circumconic centered at :ref:`X_396 <X_396>`
+   * :ref:`X_618 <X_618>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X_396 <X_396>`
+   * :ref:`X_618 <X_618>` = :ref:`X_2 <X_2>`-Ceva conjugate of :ref:`X_396 <X_396>`
+   * :ref:`X_618 <X_618>` = :ref:`X_15 <X_15>`-of-:ref:`X_2 <X_2>`-Brocard-triangle
+   * :ref:`X_618 <X_618>` = outer Napoleon :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_17 <X_17>`
 
 .. toctree::
    :hidden:

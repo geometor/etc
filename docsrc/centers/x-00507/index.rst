@@ -1,22 +1,25 @@
 :order: 507
 :type: center
-:canonical_id: X(507)
-:dependencies: X(174)
+:canonical_id: X_507
+:subtitle: 5th ISOSCELIZER POINT
+:dependencies: X_174
 
-.. _X(507):
+.. _X_507:
 
-X(507) = 5th ISOSCELIZER POINT
-==============================
+X_507
+=====
+
+.. rubric:: 5th ISOSCELIZER POINT
 
 .. enunciation::
 
    The :term:`isoscelizer <isoscelizer>` equations
 
 .. figure:: x-00507.svg
-   :alt: X(507) = 5th ISOSCELIZER POINT
+   :alt: X_507 — 5th ISOSCELIZER POINT
    :align: center
 
-   **X(507) = 5th ISOSCELIZER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_507** (*5th ISOSCELIZER POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,7 +30,7 @@ X(507) = 5th ISOSCELIZER POINT
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(507) <X(507)>` = trilinear square root of :ref:`X(174) <X(174)>`
+   * :ref:`X_507 <X_507>` = trilinear square root of :ref:`X_174 <X_174>`
 
 Notes
 -----
@@ -38,7 +41,7 @@ Notes
 
 .. container:: note-item
 
-   have solution :g:`X <X>` = :ref:`X(507) <X(507)>`. (:person:`Peter Yff <peter-yff>`, 4/9/99)
+   have solution :g:`X <X>` = :ref:`X_507 <X_507>`. (:person:`Peter Yff <peter-yff>`, 4/9/99)
 
 .. toctree::
    :hidden:

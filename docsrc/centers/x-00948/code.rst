@@ -1,18 +1,21 @@
-:canonical_id: X(948)
+:canonical_id: X_948
 :type: code
+:subtitle: INTERSECTION OF LINES X_1X_4 AND X_6X_7
 
-X(948) = INTERSECTION OF LINES X(1)X(4) AND X(6)X(7) — Code
-===========================================================
+X_948
+=====
+
+.. rubric:: INTERSECTION OF LINES X_1X_4 AND X_6X_7
 
 .. enunciation::
 
-   :ref:`X(948) <X(948)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(949) <X(949)>`
+   :ref:`X_948 <X_948>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_652 <X_652>`\ \ :ref:`X_926 <X_926>`
 
 .. figure:: x-00948.svg
-   :alt: X(948) = INTERSECTION OF LINES X(1)X(4) AND X(6)X(7)
+   :alt: X_948 — INTERSECTION OF LINES X_1X_4 AND X_6X_7
    :align: center
 
-   **X(948) = INTERSECTION OF LINES X(1)X(4) AND X(6)X(7)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_948** (*INTERSECTION OF LINES X_1X_4 AND X_6X_7*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

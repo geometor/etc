@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(612) = INTERSECTION OF LINES X(1)X(2) AND X(9)X(31)."""
+"""GEOMETOR construction model for X_612 = INTERSECTION OF LINES X_1X_2 AND X_9X_31."""
 
 from __future__ import annotations
 
@@ -23,16 +23,16 @@ from geometor.etc.render import write_center_svg
 def construct_x_00612(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(612) = INTERSECTION OF LINES X(1)X(2) AND X(9)X(31) on reference triangle ABC."""
-    X_612 = eval_trilinear_point(model, A, B, C, 'a**(2) + b**(2) + c**(2) + 2*b*c', ID="X(612)", classes=["selected", "target"])
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
+    """Construct X_612 = INTERSECTION OF LINES X_1X_2 AND X_9X_31 on reference triangle ABC."""
+    X_612 = eval_trilinear_point(model, A, B, C, 'a**(2) + b**(2) + c**(2) + 2*b*c', ID="X_612", classes=["selected", "target"])
+    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
     central_line(model, X_1, X_2, 1, 2, incident=True)
-    X_9 = mittenpunkt_of(model, A, B, C, ID="X(9)", classes=["center", "incident"])
-    X_31 = eval_trilinear_point(model, A, B, C, 'a**(2)', ID="X(31)", classes=["center", "incident"])
+    X_9 = mittenpunkt_of(model, A, B, C, ID="X_9", classes=["center", "incident"])
+    X_31 = eval_trilinear_point(model, A, B, C, 'a**(2)', ID="X_31", classes=["center", "incident"])
     central_line(model, X_9, X_31, 9, 31, incident=True)
-    X_19 = eval_trilinear_point(model, A, B, C, 'tan(A)', ID="X(19)", classes=["center", "incident"])
-    X_25 = eval_trilinear_point(model, A, B, C, 'sin(A)*tan(A)', ID="X(25)", classes=["center", "incident"])
+    X_19 = eval_trilinear_point(model, A, B, C, 'tan(A)', ID="X_19", classes=["center", "incident"])
+    X_25 = eval_trilinear_point(model, A, B, C, 'sin(A)*tan(A)', ID="X_25", classes=["center", "incident"])
     central_line(model, X_19, X_25, 19, 25, incident=True)
     return promote_point_to_top(model, X_612)
 
@@ -41,8 +41,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(612) on the given reference triangle."""
-    model = create_model('X(612) = INTERSECTION OF LINES X(1)X(2) AND X(9)X(31)')
+    """Build a `geometor.model.Model` for X_612 on the given reference triangle."""
+    model = create_model('X_612 = INTERSECTION OF LINES X_1X_2 AND X_9X_31')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00612(model, A, B, C)
     return model

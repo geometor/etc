@@ -1,18 +1,21 @@
-:canonical_id: X(269)
+:canonical_id: X_269
 :type: code
+:subtitle: ISOGONAL CONJUGATE OF X_200
 
-X(269) = ISOGONAL CONJUGATE OF X(200) — Code
-============================================
+X_269
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_200
 
 .. enunciation::
 
-   :ref:`X(269) <X(269)>` is the :term:`vertex conjugate <vertex-conjugate>` of the foci of the inellipse that is the trilinear square of the Gergonne line. The center of this inellipse is X(11019), and the Brianchon point (perspector) is X(1088). (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
+   :ref:`X_269 <X_269>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_200 <X_200>`.
 
 .. figure:: x-00269.svg
-   :alt: X(269) = ISOGONAL CONJUGATE OF X(200)
+   :alt: X_269 — ISOGONAL CONJUGATE OF X_200
    :align: center
 
-   **X(269) = ISOGONAL CONJUGATE OF X(200)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_269** (*ISOGONAL CONJUGATE OF X_200*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

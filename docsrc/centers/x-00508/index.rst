@@ -1,22 +1,25 @@
 :order: 508
 :type: center
-:canonical_id: X(508)
-:dependencies: X(7), X(85), X(174), X(366)
+:canonical_id: X_508
+:subtitle: 6th ISOSCELIZER POINT
+:dependencies: X_7, X_85, X_174, X_366
 
-.. _X(508):
+.. _X_508:
 
-X(508) = 6th ISOSCELIZER POINT
-==============================
+X_508
+=====
+
+.. rubric:: 6th ISOSCELIZER POINT
 
 .. enunciation::
 
    The :term:`isoscelizer <isoscelizer>` equations
 
 .. figure:: x-00508.svg
-   :alt: X(508) = 6th ISOSCELIZER POINT
+   :alt: X_508 — 6th ISOSCELIZER POINT
    :align: center
 
-   **X(508) = 6th ISOSCELIZER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_508** (*6th ISOSCELIZER POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,9 +30,9 @@ X(508) = 6th ISOSCELIZER POINT
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X(508) <X(508)>` = trilinear product :ref:`X(366) <X(366)>`\ \*\ :ref:`X(174) <X(174)>`
-   * :ref:`X(508) <X(508)>` = trilinear square root of :ref:`X(85) <X(85)>`
-   * :ref:`X(508) <X(508)>` = barycentric square root of :ref:`X(7) <X(7)>`
+   * :ref:`X_508 <X_508>` = trilinear product :ref:`X_366 <X_366>`\ \*\ :ref:`X_174 <X_174>`
+   * :ref:`X_508 <X_508>` = trilinear square root of :ref:`X_85 <X_85>`
+   * :ref:`X_508 <X_508>` = barycentric square root of :ref:`X_7 <X_7>`
 
 Notes
 -----
@@ -40,7 +43,7 @@ Notes
 
 .. container:: note-item
 
-   have solution :g:`X <X>` = :ref:`X(508) <X(508)>`. (:person:`Peter Yff <peter-yff>`, 4/9/99)
+   have solution :g:`X <X>` = :ref:`X_508 <X_508>`. (:person:`Peter Yff <peter-yff>`, 4/9/99)
 
 .. toctree::
    :hidden:

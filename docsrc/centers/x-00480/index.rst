@@ -1,22 +1,31 @@
 :order: 480
 :type: center
-:canonical_id: X(480)
-:dependencies: X(8), X(9), X(10), X(55), X(56), X(57), X(78), X(100), X(144), X(200), X(220), X(269), X(344), X(479), X(738), X(954), X(6726)
+:canonical_id: X_480
+:subtitle: X_200-CEVA CONJUGATE OF X_220
+:dependencies: X_8, X_9, X_10, X_55, X_56, X_57, X_78, X_100, X_144, X_200, X_220, X_269, X_344, X_479, X_738, X_954, X_6726
 
-.. _X(480):
+.. _X_480:
 
-X(480) = X(200)-CEVA CONJUGATE OF X(220)
-========================================
+X_480
+=====
+
+.. rubric:: X_200-CEVA CONJUGATE OF X_220
 
 .. enunciation::
 
-   :ref:`X(480) <X(480)>` = radical center of the three circles used to construct :ref:`X(57) <X(57)>`. (:person:`Peter Yff <peter-yff>`, 5/6/98)
+   :ref:`X_480 <X_480>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_479 <X_479>`
 
 .. figure:: x-00480.svg
-   :alt: X(480) = X(200)-CEVA CONJUGATE OF X(220)
+   :alt: X_480 — X_200-CEVA CONJUGATE OF X_220
    :align: center
 
-   **X(480) = X(200)-CEVA CONJUGATE OF X(220)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_480** (*X_200-CEVA CONJUGATE OF X_220*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{9, 55} <{ 9, 55 }>`, :g:`{56, 78} <{ 56, 78 }>`
+   * **Related Centers:** :g:`X_479 <X_479>` (:ref:`-CROSS CONJUGATE OF X(279) <X_479>`), :g:`X_9 <X_9>` (:ref:`MITTENPUNKT <X_9>`), :g:`X_55 <X_55>` (:ref:`INSIMILICENTER <X_55>`), :g:`X_56 <X_56>` (:ref:`EXSIMILICENTER <X_56>`), :g:`X_78 <X_78>` (:ref:`ISOGONAL CONJUGATE OF X(34) <X_78>`)
 
 .. signature:: center
 
@@ -33,16 +42,16 @@ X(480) = X(200)-CEVA CONJUGATE OF X(220)
    :badge: 5 lines
    :class: line-catalog
 
-   {:ref:`8 <X(8)>`, :ref:`344 <X(344)>`}, {:ref:`9 <X(9)>`, :ref:`55 <X(55)>`}, {:ref:`10 <X(10)>`, :ref:`954 <X(954)>`}, {:ref:`56 <X(56)>`, :ref:`78 <X(78)>`}, {:ref:`100 <X(100)>`, :ref:`144 <X(144)>`}
+   {:ref:`8 <X_8>`, :ref:`344 <X_344>`}, {:ref:`9 <X_9>`, :ref:`55 <X_55>`}, {:ref:`10 <X_10>`, :ref:`954 <X_954>`}, {:ref:`56 <X_56>`, :ref:`78 <X_78>`}, {:ref:`100 <X_100>`, :ref:`144 <X_144>`}
 
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X(480) <X(480)>` = radical center of the three circles used to construct :ref:`X(57) <X(57)>`. (Peter Yff, 5/6/98)
-   * :ref:`X(480) <X(480)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(479) <X(479)>`
-   * :ref:`X(480) <X(480)>` = :ref:`X(200) <X(200)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(220) <X(220)>`
-   * :ref:`X(480) <X(480)>` = :term:`crosssum <crosssum>` of :ref:`X(269) <X(269)>` and :ref:`X(738) <X(738)>`
-   * :ref:`X(480) <X(480)>` = trilinear square of X(6726)
+   * :ref:`X_480 <X_480>` = radical center of the three circles used to construct :ref:`X_57 <X_57>`. (:person:`Peter Yff <peter-yff>`, 5/6/98)
+   * :ref:`X_480 <X_480>` = isogonal conjugate of :ref:`X_479 <X_479>`
+   * :ref:`X_480 <X_480>` = :ref:`X_200 <X_200>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_220 <X_220>`
+   * :ref:`X_480 <X_480>` = :term:`crosssum <crosssum>` of :ref:`X_269 <X_269>` and :ref:`X_738 <X_738>`
+   * :ref:`X_480 <X_480>` = trilinear square of X_6726
 
 .. toctree::
    :hidden:

@@ -1,18 +1,21 @@
-:canonical_id: X(686)
+:canonical_id: X_686
 :type: code
+:subtitle: CROSSDIFFERENCE OF X_4 AND X_110
 
-X(686) = CROSSDIFFERENCE OF X(4) AND X(110) — Code
-==================================================
+X_686
+=====
+
+.. rubric:: CROSSDIFFERENCE OF X_4 AND X_110
 
 .. enunciation::
 
-   :ref:`X(686) <X(686)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(687) <X(687)>`
+   :ref:`X_686 <X_686>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_3 <X_3>`,\ :ref:`X_523 <X_523>`}}
 
 .. figure:: x-00686.svg
-   :alt: X(686) = CROSSDIFFERENCE OF X(4) AND X(110)
+   :alt: X_686 — CROSSDIFFERENCE OF X_4 AND X_110
    :align: center
 
-   **X(686) = CROSSDIFFERENCE OF X(4) AND X(110)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_686** (*CROSSDIFFERENCE OF X_4 AND X_110*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

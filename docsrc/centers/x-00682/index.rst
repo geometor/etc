@@ -1,22 +1,31 @@
 :order: 682
 :type: center
-:canonical_id: X(682)
-:dependencies: X(3), X(4), X(32), X(69), X(76), X(154), X(237), X(248), X(683), X(695)
+:canonical_id: X_682
+:subtitle: POINT ARNEB
+:dependencies: X_3, X_4, X_32, X_69, X_76, X_154, X_237, X_248, X_683, X_695
 
-.. _X(682):
+.. _X_682:
 
-X(682) = POINT ARNEB
-====================
+X_682
+=====
+
+.. rubric:: POINT ARNEB
 
 .. enunciation::
 
-   :ref:`X(682) <X(682)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(683) <X(683)>`
+   :ref:`X_682 <X_682>` = :term:`crosspoint <crosspoint>` of :ref:`X_3 <X_3>` and :ref:`X_32 <X_32>`
 
 .. figure:: x-00682.svg
-   :alt: X(682) = POINT ARNEB
+   :alt: X_682 — POINT ARNEB
    :align: center
 
-   **X(682) = POINT ARNEB** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_682** (*POINT ARNEB*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{3, 69} <{ 3, 69 }>`, :g:`{154, 237} <{ 154, 237 }>`
+   * **Related Centers:** :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_32 <X_32>` (:ref:`3rd POWER POINT <X_32>`), :g:`X_69 <X_69>` (:ref:`SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE <X_69>`), :g:`X_154 <X_154>` (:ref:`-CEVA CONJUGATE OF X(6) <X_154>`), :g:`X_237 <X_237>` (:ref:`-LINE CONJUGATE OF X(2) <X_237>`)
 
 .. signature:: center
 
@@ -28,14 +37,14 @@ X(682) = POINT ARNEB
    :badge: 3 lines
    :class: line-catalog
 
-   {:ref:`3 <X(3)>`, :ref:`69 <X(69)>`}, {:ref:`154 <X(154)>`, :ref:`237 <X(237)>`}, {:ref:`248 <X(248)>`, :ref:`695 <X(695)>`}
+   {:ref:`3 <X_3>`, :ref:`69 <X_69>`}, {:ref:`154 <X_154>`, :ref:`237 <X_237>`}, {:ref:`248 <X_248>`, :ref:`695 <X_695>`}
 
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X(682) <X(682)>` = isogonal conjugate of :ref:`X(683) <X(683)>`
-   * :ref:`X(682) <X(682)>` = :term:`crosspoint <crosspoint>` of :ref:`X(3) <X(3)>` and :ref:`X(32) <X(32)>`
-   * :ref:`X(682) <X(682)>` = :term:`crosssum <crosssum>` of :ref:`X(4) <X(4)>` and :ref:`X(76) <X(76)>`
+   * :ref:`X_682 <X_682>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_683 <X_683>`
+   * :ref:`X_682 <X_682>` = crosspoint of :ref:`X_3 <X_3>` and :ref:`X_32 <X_32>`
+   * :ref:`X_682 <X_682>` = :term:`crosssum <crosssum>` of :ref:`X_4 <X_4>` and :ref:`X_76 <X_76>`
 
 .. toctree::
    :hidden:

@@ -1,22 +1,31 @@
 :order: 789
 :type: center
-:canonical_id: X(789)
-:dependencies: X(1), X(2), X(6), X(31), X(32), X(75), X(76), X(86), X(100), X(101), X(106), X(110), X(112), X(190), X(668), X(675), X(701), X(717), X(727), X(731), X(741), X(743), X(753), X(761), X(788), X(799), X(811), X(813), X(870), X(871), X(874), X(985), X(1491), X(6376)
+:canonical_id: X_789
+:subtitle: o-(- 3, 0) CIRCUMCIRCLE POINT
+:dependencies: X_1, X_2, X_6, X_31, X_32, X_75, X_76, X_86, X_100, X_101, X_106, X_110, X_112, X_190, X_668, X_675, X_701, X_717, X_727, X_731, X_741, X_743, X_753, X_761, X_788, X_799, X_811, X_813, X_870, X_871, X_874, X_985, X_1491, X_6376
 
-.. _X(789):
+.. _X_789:
 
-X(789) = o-(- 3, 0) CIRCUMCIRCLE POINT
-======================================
+X_789
+=====
+
+.. rubric:: o-(- 3, 0) CIRCUMCIRCLE POINT
 
 .. enunciation::
 
-   As the trilinear product of Steiner circumellipse antipodes, :ref:`X(789) <X(789)>` lies on conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(668) <X(668)>`,\ :ref:`X(789) <X(789)>`}} with center X(6376) and perspector :ref:`X(75) <X(75)>`. (:person:`Randy Hutson <randy-hutson>`, July 11, 2019)
+   :ref:`X_789 <X_789>` = intersection, other than :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, of circumcircle and hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(6)}}
 
 .. figure:: x-00789.svg
-   :alt: X(789) = o-(- 3, 0) CIRCUMCIRCLE POINT
+   :alt: X_789 — o-(- 3, 0) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(789) = o-(- 3, 0) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_789** (*o-(- 3, 0) CIRCUMCIRCLE POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{6, 717} <{ 6, 717 }>`, :g:`{1, 731} <{ 1, 731 }>`
+   * **Related Centers:** :g:`X_788 <X_788>` (:ref:`ODD (- 3, 0) INFINITY POINT <X_788>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_717 <X_717>` (:ref:`EVEN (- 3, 0) CIRCUMCIRCLE POINT <X_717>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_731 <X_731>` (:ref:`EVEN (- 2, 1) CIRCUMCIRCLE POINT <X_731>`)
 
 .. signature:: center
 
@@ -25,23 +34,30 @@ X(789) = o-(- 3, 0) CIRCUMCIRCLE POINT
 
 .. container:: note-item
 
-   :ref:`X(789) <X(789)>` lies on the circumcircle.
+   :ref:`X_789 <X_789>` lies on the circumcircle.
 
 .. collapse:: Incident Central Lines
    :badge: 15 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`731 <X(731)>`}, {:ref:`2 <X(2)>`, :ref:`743 <X(743)>`}, {:ref:`6 <X(6)>`, :ref:`717 <X(717)>`}, {:ref:`31 <X(31)>`, :ref:`701 <X(701)>`}, {:ref:`75 <X(75)>`, :ref:`753 <X(753)>`}, {:ref:`76 <X(76)>`, :ref:`761 <X(761)>`}, {:ref:`86 <X(86)>`, :ref:`741 <X(741)>`}, {:ref:`100 <X(100)>`, :ref:`874 <X(874)>`}, {:ref:`101 <X(101)>`, :ref:`668 <X(668)>`}, {:ref:`106 <X(106)>`, :ref:`870 <X(870)>`}, {:ref:`110 <X(110)>`, :ref:`799 <X(799)>`}, {:ref:`112 <X(112)>`, :ref:`811 <X(811)>`}, {:ref:`190 <X(190)>`, :ref:`813 <X(813)>`}, {:ref:`675 <X(675)>`, :ref:`871 <X(871)>`}, {:ref:`727 <X(727)>`, :ref:`985 <X(985)>`}
+   {:ref:`1 <X_1>`, :ref:`731 <X_731>`}, {:ref:`2 <X_2>`, :ref:`743 <X_743>`}, {:ref:`6 <X_6>`, :ref:`717 <X_717>`}, {:ref:`31 <X_31>`, :ref:`701 <X_701>`}, {:ref:`75 <X_75>`, :ref:`753 <X_753>`}, {:ref:`76 <X_76>`, :ref:`761 <X_761>`}, {:ref:`86 <X_86>`, :ref:`741 <X_741>`}, {:ref:`100 <X_100>`, :ref:`874 <X_874>`}, {:ref:`101 <X_101>`, :ref:`668 <X_668>`}, {:ref:`106 <X_106>`, :ref:`870 <X_870>`}, {:ref:`110 <X_110>`, :ref:`799 <X_799>`}, {:ref:`112 <X_112>`, :ref:`811 <X_811>`}, {:ref:`190 <X_190>`, :ref:`813 <X_813>`}, {:ref:`675 <X_675>`, :ref:`871 <X_871>`}, {:ref:`727 <X_727>`, :ref:`985 <X_985>`}
 
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X(789) <X(789)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(788) <X(788)>`
-   * :ref:`X(789) <X(789)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(1491)
-   * :ref:`X(789) <X(789)>` = intersection, other than :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, of circumcircle and hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(6)}}
-   * :ref:`X(789) <X(789)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(6) <X(6)>`\ \ :ref:`X(75) <X(75)>`
-   * :ref:`X(789) <X(789)>` = Ψ(X(i),X(j)) for these (i,j): (:ref:`1 <X(1)>`, :ref:`76 <X(76)>`), (:ref:`6 <X(6)>`, :ref:`75 <X(75)>`), (:ref:`31 <X(31)>`, :ref:`2 <X(2)>`), (:ref:`32 <X(32)>`, :ref:`1 <X(1)>`)
-   * :ref:`X(789) <X(789)>` = trilinear product of intercepts of Steiner circumellipse and line :ref:`X(2) <X(2)>`\ \ :ref:`X(31) <X(31)>`
+   * :ref:`X_789 <X_789>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_788 <X_788>`
+   * :ref:`X_789 <X_789>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_1491
+   * :ref:`X_789 <X_789>` = intersection, other than :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, of circumcircle and hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(6)}}
+   * :ref:`X_789 <X_789>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_6 <X_6>`\ \ :ref:`X_75 <X_75>`
+   * :ref:`X_789 <X_789>` = Ψ(X_i,X_j) for these (i,j): (:ref:`1 <X_1>`, :ref:`76 <X_76>`), (:ref:`6 <X_6>`, :ref:`75 <X_75>`), (:ref:`31 <X_31>`, :ref:`2 <X_2>`), (:ref:`32 <X_32>`, :ref:`1 <X_1>`)
+   * :ref:`X_789 <X_789>` = trilinear product of intercepts of Steiner circumellipse and line :ref:`X_2 <X_2>`\ \ :ref:`X_31 <X_31>`
+
+Notes
+-----
+
+.. container:: note-item
+
+   As the trilinear product of Steiner circumellipse antipodes, :ref:`X_789 <X_789>` lies on conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_668 <X_668>`,\ :ref:`X_789 <X_789>`}} with center X_6376 and perspector :ref:`X_75 <X_75>`. (:person:`Randy Hutson <randy-hutson>`, July 11, 2019)
 
 .. toctree::
    :hidden:

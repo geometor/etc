@@ -1,26 +1,31 @@
 :order: 432
 :type: center
-:canonical_id: X(432)
-:dependencies: X(2), X(3), X(135), X(155), X(12359)
+:canonical_id: X_432
+:subtitle: EULER X_155-6th-SUBSTITUTION POINT
+:dependencies: X_2, X_3, X_135, X_155, X_12359
 
-.. _X(432):
+.. _X_432:
 
-X(432) = EULER X(155)-6th-SUBSTITUTION POINT
-============================================
+X_432
+=====
 
-.. enunciation::
-
-   As a point on the Euler line, :ref:`X(432) <X(432)>` has Shinagawa coefficients :math:`((E^{2} + 4EF - 4S^{2})F, -E^{3} - 3E^{2}F - 4EF^{2} + 4(E - F)S^{2})`.
+.. rubric:: EULER X_155-6th-SUBSTITUTION POINT
 
 .. figure:: x-00432.svg
-   :alt: X(432) = EULER X(155)-6th-SUBSTITUTION POINT
+   :alt: X_432 — EULER X_155-6th-SUBSTITUTION POINT
    :align: center
 
-   **X(432) = EULER X(155)-6th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_432** (*EULER X_155-6th-SUBSTITUTION POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`)
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`)
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(v^{2} + w^{2})\sec A : (w^{2} + u^{2})\sec B : (u^{2} + v^{2})\sec C`, where :math:`u : v : w` = :ref:`X(155) <X(155)>`; e.g., :math:`u = u(A,B,C) = (\cos A)(\cos^{2} B + \cos^{2} C - \cos^{2} A)`
+   | **Trilinears:** :math:`(v^{2} + w^{2})\sec A : (w^{2} + u^{2})\sec B : (u^{2} + v^{2})\sec C`, where :math:`u : v : w` = :ref:`X_155 <X_155>`; e.g., :math:`u = u(A,B,C) = (\cos A)(\cos^{2} B + \cos^{2} C - \cos^{2} A)`
    | **Barycentrics:** :math:`(v^{2} + w^{2})\tan A : (w^{2} + u^{2})\tan B : (u^{2} + v^{2})\tan C`
    | **Search Value (6, 9, 13):** :math:`4.705865843343`
 
@@ -33,7 +38,14 @@ X(432) = EULER X(155)-6th-SUBSTITUTION POINT
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`135 <X(135)>`, 12359}
+   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`135 <X_135>`, 12359}
+
+Notes
+-----
+
+.. container:: note-item
+
+   As a point on the Euler line, :ref:`X_432 <X_432>` has Shinagawa coefficients :math:`((E^{2} + 4EF - 4S^{2})F, -E^{3} - 3E^{2}F - 4EF^{2} + 4(E - F)S^{2})`.
 
 .. toctree::
    :hidden:

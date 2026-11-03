@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(174) = YFF CENTER OF CONGRUENCE."""
+"""GEOMETOR construction model for X_174 = YFF CENTER OF CONGRUENCE."""
 
 from __future__ import annotations
 
@@ -23,16 +23,16 @@ from geometor.etc.render import write_center_svg
 def construct_x_00174(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(174) = YFF CENTER OF CONGRUENCE on reference triangle ABC."""
-    X_174 = eval_trilinear_point(model, A, B, C, 'sec(A/2)', ID="X(174)", classes=["selected", "target"])
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
-    X_167 = point_from_barycentrics(model, A, B, C, 0.58849841, 0.49152493, -0.080023337, ID="X(167)", classes=["center", "incident"])
+    """Construct X_174 = YFF CENTER OF CONGRUENCE on reference triangle ABC."""
+    X_174 = eval_trilinear_point(model, A, B, C, 'sec(A/2)', ID="X_174", classes=["selected", "target"])
+    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
+    X_167 = point_from_barycentrics(model, A, B, C, 0.58849841, 0.49152493, -0.080023337, ID="X_167", classes=["center", "incident"])
     central_line(model, X_1, X_167, 1, 167, incident=True)
-    X_57 = eval_trilinear_point(model, A, B, C, '1/(b + c - a)', ID="X(57)", classes=["center", "incident"])
-    X_173 = eval_trilinear_point(model, A, B, C, 'cos(B/2) + cos(C/2) - cos(A/2)', ID="X(173)", classes=["center", "incident"])
+    X_57 = eval_trilinear_point(model, A, B, C, '1/(b + c - a)', ID="X_57", classes=["center", "incident"])
+    X_173 = eval_trilinear_point(model, A, B, C, 'cos(B/2) + cos(C/2) - cos(A/2)', ID="X_173", classes=["center", "incident"])
     central_line(model, X_57, X_173, 57, 173, incident=True)
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
-    X_236 = eval_trilinear_point(model, A, B, C, '(1 + sin(A/2))/sin(A)', ID="X(236)", classes=["center", "incident"])
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
+    X_236 = eval_trilinear_point(model, A, B, C, '(1 + sin(A/2))/sin(A)', ID="X_236", classes=["center", "incident"])
     central_line(model, X_2, X_236, 2, 236, incident=True)
     return promote_point_to_top(model, X_174)
 
@@ -41,8 +41,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(174) on the given reference triangle."""
-    model = create_model('X(174) = YFF CENTER OF CONGRUENCE')
+    """Build a `geometor.model.Model` for X_174 on the given reference triangle."""
+    model = create_model('X_174 = YFF CENTER OF CONGRUENCE')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00174(model, A, B, C)
     return model

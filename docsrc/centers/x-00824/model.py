@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(824) = ODD (0, 3) INFINITY POINT."""
+"""GEOMETOR construction model for X_824 = ODD (0, 3) INFINITY POINT."""
 
 from __future__ import annotations
 
@@ -21,14 +21,14 @@ from geometor.etc.render import write_center_svg
 def construct_x_00824(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(824) = ODD (0, 3) INFINITY POINT on reference triangle ABC."""
-    X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X(30)", classes=["center"])
-    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X(511)", classes=["center"])
-    X_321 = eval_trilinear_point(model, A, B, C, '(b + c)*b**(2)*c**(2)', ID="X(321)", classes=["center"])
-    X_693 = eval_trilinear_point(model, A, B, C, '(b - c)/a**(2)', ID="X(693)", classes=["center"])
+    """Construct X_824 = ODD (0, 3) INFINITY POINT on reference triangle ABC."""
+    X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X_30", classes=["center"])
+    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X_511", classes=["center"])
+    X_321 = eval_trilinear_point(model, A, B, C, '(b + c)*b**(2)*c**(2)', ID="X_321", classes=["center"])
+    X_693 = eval_trilinear_point(model, A, B, C, '(b - c)/a**(2)', ID="X_693", classes=["center"])
     central_line(model, X_30, X_511, 30, 511)
     central_line(model, X_321, X_693, 321, 693)
-    X_824 = intersect_lines(model, X_30, X_511, X_321, X_693, ID="X(824)", classes=["selected", "target"])
+    X_824 = intersect_lines(model, X_30, X_511, X_321, X_693, ID="X_824", classes=["selected", "target"])
     return promote_point_to_top(model, X_824)
 
 
@@ -36,8 +36,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(824) on the given reference triangle."""
-    model = create_model('X(824) = ODD (0, 3) INFINITY POINT')
+    """Build a `geometor.model.Model` for X_824 on the given reference triangle."""
+    model = create_model('X_824 = ODD (0, 3) INFINITY POINT')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00824(model, A, B, C)
     return model

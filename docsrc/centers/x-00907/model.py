@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(907) = POINT ACRUX."""
+"""GEOMETOR construction model for X_907 = POINT ACRUX."""
 
 from __future__ import annotations
 
@@ -21,10 +21,10 @@ from geometor.etc.render import write_center_svg
 def construct_x_00907(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(907) = POINT ACRUX on reference triangle ABC."""
-    X_907 = point_from_barycentrics(model, A, B, C, 0.33039036, 0.6446786, 0.024931037, ID="X(907)", classes=["selected", "target"])
-    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A + omega )', ID="X(98)", classes=["center", "incident"])
-    X_620 = point_from_barycentrics(model, A, B, C, 0.40242494, 0.16743649, 0.43013857, ID="X(620)", classes=["center", "incident"])
+    """Construct X_907 = POINT ACRUX on reference triangle ABC."""
+    X_907 = point_from_barycentrics(model, A, B, C, 0.33039036, 0.6446786, 0.024931037, ID="X_907", classes=["selected", "target"])
+    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A + omega )', ID="X_98", classes=["center", "incident"])
+    X_620 = point_from_barycentrics(model, A, B, C, 0.40242494, 0.16743649, 0.43013857, ID="X_620", classes=["center", "incident"])
     central_line(model, X_98, X_620, 98, 620, incident=True)
     return promote_point_to_top(model, X_907)
 
@@ -33,8 +33,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(907) on the given reference triangle."""
-    model = create_model('X(907) = POINT ACRUX')
+    """Build a `geometor.model.Model` for X_907 on the given reference triangle."""
+    model = create_model('X_907 = POINT ACRUX')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00907(model, A, B, C)
     return model

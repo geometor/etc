@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(833) = o-(1, 4) CIRCUMCIRCLE POINT."""
+"""GEOMETOR construction model for X_833 = o-(1, 4) CIRCUMCIRCLE POINT."""
 
 from __future__ import annotations
 
@@ -22,11 +22,11 @@ from geometor.etc.render import write_center_svg
 def construct_x_00833(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(833) = o-(1, 4) CIRCUMCIRCLE POINT on reference triangle ABC."""
-    X_832 = point_from_barycentrics(model, A, B, C, 0.37871181, -0.81580065, 0.43708885, ID="X(832)", classes=["center"])
-    X_833 = isogonal_conjugate(model, A, B, C, X_832, ID="X(833)", classes=["selected", "target"])
-    X_106 = eval_trilinear_point(model, A, B, C, 'a/(2*a - b - c)', ID="X(106)", classes=["center", "incident"])
-    X_977 = point_from_barycentrics(model, A, B, C, 0.24782024, 0.33132497, 0.42085479, ID="X(977)", classes=["center", "incident"])
+    """Construct X_833 = o-(1, 4) CIRCUMCIRCLE POINT on reference triangle ABC."""
+    X_832 = point_from_barycentrics(model, A, B, C, 0.37871181, -0.81580065, 0.43708885, ID="X_832", classes=["center"])
+    X_833 = isogonal_conjugate(model, A, B, C, X_832, ID="X_833", classes=["selected", "target"])
+    X_106 = eval_trilinear_point(model, A, B, C, 'a/(2*a - b - c)', ID="X_106", classes=["center", "incident"])
+    X_977 = point_from_barycentrics(model, A, B, C, 0.24782024, 0.33132497, 0.42085479, ID="X_977", classes=["center", "incident"])
     central_line(model, X_106, X_977, 106, 977, incident=True)
     return promote_point_to_top(model, X_833)
 
@@ -35,8 +35,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(833) on the given reference triangle."""
-    model = create_model('X(833) = o-(1, 4) CIRCUMCIRCLE POINT')
+    """Build a `geometor.model.Model` for X_833 on the given reference triangle."""
+    model = create_model('X_833 = o-(1, 4) CIRCUMCIRCLE POINT')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00833(model, A, B, C)
     return model

@@ -1,18 +1,21 @@
-:canonical_id: X(566)
+:canonical_id: X_566
 :type: code
+:subtitle: HARMONIC OF X_50
 
-X(566) = HARMONIC OF X(50) — Code
-=================================
+X_566
+=====
+
+.. rubric:: HARMONIC OF X_50
 
 .. enunciation::
 
-   :ref:`X(566) <X(566)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(7578)
+   :ref:`X_566 <X_566>` = Brocard-circle-inverse of :ref:`X_50 <X_50>`
 
 .. figure:: x-00566.svg
-   :alt: X(566) = HARMONIC OF X(50)
+   :alt: X_566 — HARMONIC OF X_50
    :align: center
 
-   **X(566) = HARMONIC OF X(50)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_566** (*HARMONIC OF X_50*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

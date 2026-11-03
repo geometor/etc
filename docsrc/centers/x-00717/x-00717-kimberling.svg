@@ -27,6 +27,7 @@ svg.geometor-etc-drawing.is-panning {
 }
 
 svg.geometor-etc-drawing.hide-labels #labels .point-label,
+svg.geometor-etc-drawing.hide-labels #labels .guide-label,
 svg.geometor-etc-drawing.hide-labels #labels .target-label,
 svg.geometor-etc-drawing.hide-labels #labels .given-label {
     display: none;
@@ -188,12 +189,19 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
     font-weight: 600;
     paint-order: stroke;
     stroke: var(--accent-color);
-    stroke-width: 3px;
+    stroke-width: 0.15em;
     stroke-linecap: round;
     stroke-linejoin: round;
-    vector-effect: non-scaling-stroke;
     user-select: none;
     pointer-events: none;
+}
+
+#labels tspan {
+    paint-order: stroke;
+    stroke: var(--accent-color);
+    stroke-width: 0.15em;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 #labels text.target-label {
@@ -203,6 +211,11 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
 
 #labels text.given-label {
     fill: #8f8;
+}
+
+#labels text.guide-label {
+    fill: #ffb74d;
+    font-weight: 600;
 }
 
 #labels text.hover-label {
@@ -314,9 +327,6 @@ figure:hover .etc-svg-toolbar {
     <polyline data-highlight-for="[ A B ]" class="highlight-segment" points="0.000000,-0.000000 1.000000,-0.000000" style="display: none;" />
     <polyline data-highlight-for="[ B C ]" class="highlight-segment" points="1.000000,-0.000000 0.633136,-0.280051" style="display: none;" />
     <polyline data-highlight-for="[ C A ]" class="highlight-segment" points="0.633136,-0.280051 0.000000,-0.000000" style="display: none;" />
-    <polyline data-highlight-for="[ A P_a ]" class="highlight-segment" points="0.000000,-0.000000 0.820357,-0.137133" style="display: none;" />
-    <polyline data-highlight-for="[ B P_b ]" class="highlight-segment" points="1.000000,-0.000000 0.741302,-0.327896" style="display: none;" />
-    <polyline data-highlight-for="[ C P_c ]" class="highlight-segment" points="0.633136,-0.280051 1.162800,-0.000000" style="display: none;" />
     <polyline data-highlight-for="{ 6, 789 }" class="highlight-segment" points="0.657343,-0.165485 0.187320,-0.202481" style="display: none;" />
     <polyline data-highlight-for="{ 560, 825 }" class="highlight-segment" points="0.671344,-0.237336 0.535627,-0.294690" style="display: none;" />
   </g>
@@ -324,39 +334,33 @@ figure:hover .etc-svg-toolbar {
     <line data-id="[ A B ]" data-name="Sideline AB (Base c = 1)" class="line given sideline" data-category="elements" x1="-1000.00000" y1="-0.00000" x2="1000.00000" y2="-0.00000"><title>[ A B ]: Sideline AB (Base c = 1)</title></line>
     <line data-id="[ B C ]" data-name="Sideline BC (Side a)" class="line sideline" data-category="elements" x1="367.86391" y1="280.05111" x2="-365.86391" y2="-280.05111"><title>[ B C ]: Sideline BC (Side a)</title></line>
     <line data-id="[ C A ]" data-name="Sideline CA (Side b)" class="line sideline" data-category="elements" x1="633.76923" y1="-280.33116" x2="-632.50295" y2="279.77106"><title>[ C A ]: Sideline CA (Side b)</title></line>
-    <line data-id="[ A P_a ]" data-name="A-Cevian A–P_a" class="line bisector" data-category="elements" x1="-820.35732" y1="137.13296" x2="820.35732" y2="-137.13296"><title>[ A P_a ]: A-Cevian A–P_a</title></line>
-    <line data-id="[ B P_b ]" data-name="B-Cevian B–P_b" class="line bisector" data-category="elements" x1="259.69776" y1="327.89557" x2="-257.69776" y2="-327.89557"><title>[ B P_b ]: B-Cevian B–P_b</title></line>
-    <line data-id="[ C P_c ]" data-name="C-Cevian C–P_c" class="line bisector" data-category="elements" x1="-529.03125" y1="-280.33116" x2="530.29753" y2="279.77106"><title>[ C P_c ]: C-Cevian C–P_c</title></line>
-    <line data-id="{ 6, 789 }" data-name="Central Line L(6, 789)" class="line central_line incident" data-category="elements" x1="470.67966" y1="36.83065" x2="-469.36498" y2="-37.16161"><title>{ 6, 789 }: Central Line L(6, 789)</title></line>
-    <line data-id="{ 560, 825 }" data-name="Central Line L(560, 825)" class="line central_line incident" data-category="elements" x1="136.38819" y1="57.11742" x2="-135.04551" y2="-57.59210"><title>{ 560, 825 }: Central Line L(560, 825)</title></line>
+    <line data-id="{ 6, 789 }" data-name="Central Line L(6, 789)" class="line central_line" data-category="elements" x1="470.67966" y1="36.83065" x2="-469.36498" y2="-37.16161"><title>{ 6, 789 }: Central Line L(6, 789)</title></line>
+    <line data-id="{ 560, 825 }" data-name="Central Line L(560, 825)" class="line central_line" data-category="elements" x1="136.38819" y1="57.11742" x2="-135.04551" y2="-57.59210"><title>{ 560, 825 }: Central Line L(560, 825)</title></line>
   </g>
   <g id="points">
     <circle data-id="A" data-name="Vertex A" class="point given vertex" data-category="points" cx="0.000000" cy="-0.000000" r="0.013495"><title>A = Vertex A (0.0000, 0.0000)</title></circle>
     <circle data-id="B" data-name="Vertex B" class="point given vertex" data-category="points" cx="1.000000" cy="-0.000000" r="0.013495"><title>B = Vertex B (1.0000, 0.0000)</title></circle>
     <circle data-id="C" data-name="Vertex C" class="point vertex" data-category="points" cx="0.633136" cy="-0.280051" r="0.013495"><title>C = Vertex C (0.6331, 0.2801)</title></circle>
-    <circle data-id="X(716)" data-name="EVEN (- 3, 0) INFINITY POINT" class="point center" data-category="points" cx="1.179901" cy="-0.256182" r="0.013495"><title>X(716) = EVEN (- 3, 0) INFINITY POINT (1.1799, 0.2562)</title></circle>
-    <circle data-id="P_a" data-name="Cevian Trace P_a on BC" class="point foot guide" data-category="points" cx="0.820357" cy="-0.137133" r="0.008637"><title>P_a = Cevian Trace P_a on BC (0.8204, 0.1371)</title></circle>
-    <circle data-id="P_b" data-name="Cevian Trace P_b on CA" class="point foot guide" data-category="points" cx="0.741302" cy="-0.327896" r="0.008637"><title>P_b = Cevian Trace P_b on CA (0.7413, 0.3279)</title></circle>
-    <circle data-id="P_c" data-name="Cevian Trace P_c on AB" class="point foot guide" data-category="points" cx="1.162800" cy="-0.000000" r="0.008637"><title>P_c = Cevian Trace P_c on AB (1.1628, 0.0000)</title></circle>
-    <circle data-id="X(6)" data-name="SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)" class="point center incident" data-category="points" cx="0.657343" cy="-0.165485" r="0.013495"><title>X(6) = SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT) (0.6573, 0.1655)</title></circle>
-    <circle data-id="X(789)" data-name="o-(- 3, 0) CIRCUMCIRCLE POINT" class="point center incident" data-category="points" cx="0.187320" cy="-0.202481" r="0.013495"><title>X(789) = o-(- 3, 0) CIRCUMCIRCLE POINT (0.1873, 0.2025)</title></circle>
-    <circle data-id="X(560)" data-name="4th POWER POINT" class="point center incident" data-category="points" cx="0.671344" cy="-0.237336" r="0.013495"><title>X(560) = 4th POWER POINT (0.6713, 0.2373)</title></circle>
-    <circle data-id="X(825)" data-name="o-(0, 3) CIRCUMCIRCLE POINT" class="point center incident" data-category="points" cx="0.535627" cy="-0.294690" r="0.013495"><title>X(825) = o-(0, 3) CIRCUMCIRCLE POINT (0.5356, 0.2947)</title></circle>
-    <circle data-id="X(717)" data-name="EVEN (- 3, 0) CIRCUMCIRCLE POINT" class="point selected target" data-category="points" cx="0.883482" cy="-0.147685" r="0.018893"><title>X(717) = EVEN (- 3, 0) CIRCUMCIRCLE POINT (0.8835, 0.1477)</title></circle>
+    <circle data-id="X_716" data-name="EVEN (- 3, 0) INFINITY POINT" class="point center" data-category="points" cx="1.179901" cy="-0.256182" r="0.013495"><title>X_716 = EVEN (- 3, 0) INFINITY POINT (1.1799, 0.2562)</title></circle>
+    <circle data-id="X_6" data-name="SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)" class="point center" data-category="points" cx="0.657343" cy="-0.165485" r="0.013495"><title>X_6 = SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT) (0.6573, 0.1655)</title></circle>
+    <circle data-id="X_789" data-name="o-(- 3, 0) CIRCUMCIRCLE POINT" class="point center" data-category="points" cx="0.187320" cy="-0.202481" r="0.013495"><title>X_789 = o-(- 3, 0) CIRCUMCIRCLE POINT (0.1873, 0.2025)</title></circle>
+    <circle data-id="X_560" data-name="4th POWER POINT" class="point center" data-category="points" cx="0.671344" cy="-0.237336" r="0.013495"><title>X_560 = 4th POWER POINT (0.6713, 0.2373)</title></circle>
+    <circle data-id="X_825" data-name="o-(0, 3) CIRCUMCIRCLE POINT" class="point center" data-category="points" cx="0.535627" cy="-0.294690" r="0.013495"><title>X_825 = o-(0, 3) CIRCUMCIRCLE POINT (0.5356, 0.2947)</title></circle>
+    <circle data-id="X_717" data-name="EVEN (- 3, 0) CIRCUMCIRCLE POINT" class="point selected target" data-category="points" cx="0.883482" cy="-0.147685" r="0.018893"><title>X_717 = EVEN (- 3, 0) CIRCUMCIRCLE POINT (0.8835, 0.1477)</title></circle>
   </g>
   <g id="labels">
     <text class="given-label" data-point-id="A" data-anchor-x="0.000000" data-anchor-y="-0.000000" data-offset-x="-24.0" data-offset-y="22.5" x="-0.043184" y="0.040485" font-size="0.036437">A</text>
     <text class="given-label" data-point-id="B" data-anchor-x="1.000000" data-anchor-y="-0.000000" data-offset-x="12.0" data-offset-y="22.5" x="1.021592" y="0.040485" font-size="0.036437">B</text>
     <text class="point-label" data-point-id="C" data-anchor-x="0.633136" data-anchor-y="-0.280051" data-offset-x="-7.5" data-offset-y="-15.0" x="0.619641" y="-0.307041" font-size="0.036437">C</text>
-    <text class="point-label" data-point-id="X(716)" data-anchor-x="1.179901" data-anchor-y="-0.256182" data-offset-x="12.0" data-offset-y="-10.5" x="1.201493" y="-0.275075" font-size="0.036437">X(716)</text>
-    <text class="point-label incident" data-point-id="X(6)" data-anchor-x="0.657343" data-anchor-y="-0.165485" data-offset-x="12.0" data-offset-y="-10.5" x="0.678935" y="-0.184378" font-size="0.036437">X(6)</text>
-    <text class="point-label incident" data-point-id="X(789)" data-anchor-x="0.187320" data-anchor-y="-0.202481" data-offset-x="12.0" data-offset-y="-10.5" x="0.208913" y="-0.221374" font-size="0.036437">X(789)</text>
-    <text class="point-label incident" data-point-id="X(560)" data-anchor-x="0.671344" data-anchor-y="-0.237336" data-offset-x="12.0" data-offset-y="-10.5" x="0.692936" y="-0.256229" font-size="0.036437">X(560)</text>
-    <text class="point-label incident" data-point-id="X(825)" data-anchor-x="0.535627" data-anchor-y="-0.294690" data-offset-x="12.0" data-offset-y="-10.5" x="0.557220" y="-0.313584" font-size="0.036437">X(825)</text>
-    <text class="target-label" data-point-id="X(717)" data-anchor-x="0.883482" data-anchor-y="-0.147685" data-offset-x="12.0" data-offset-y="-10.5" x="0.905074" y="-0.166578" font-size="0.036437">X(717)</text>
+    <text class="point-label" data-point-id="X_716" data-anchor-x="1.179901" data-anchor-y="-0.256182" data-offset-x="12.0" data-offset-y="-10.5" x="1.201493" y="-0.275075" font-size="0.036437">X<tspan dy="0.3em" font-size="75%">716</tspan></text>
+    <text class="point-label" data-point-id="X_6" data-anchor-x="0.657343" data-anchor-y="-0.165485" data-offset-x="12.0" data-offset-y="-10.5" x="0.678935" y="-0.184378" font-size="0.036437">X<tspan dy="0.3em" font-size="75%">6</tspan></text>
+    <text class="point-label" data-point-id="X_789" data-anchor-x="0.187320" data-anchor-y="-0.202481" data-offset-x="12.0" data-offset-y="-10.5" x="0.208913" y="-0.221374" font-size="0.036437">X<tspan dy="0.3em" font-size="75%">789</tspan></text>
+    <text class="point-label" data-point-id="X_560" data-anchor-x="0.671344" data-anchor-y="-0.237336" data-offset-x="12.0" data-offset-y="-10.5" x="0.692936" y="-0.256229" font-size="0.036437">X<tspan dy="0.3em" font-size="75%">560</tspan></text>
+    <text class="point-label" data-point-id="X_825" data-anchor-x="0.535627" data-anchor-y="-0.294690" data-offset-x="12.0" data-offset-y="-10.5" x="0.557220" y="-0.313584" font-size="0.036437">X<tspan dy="0.3em" font-size="75%">825</tspan></text>
+    <text class="target-label" data-point-id="X_717" data-anchor-x="0.883482" data-anchor-y="-0.147685" data-offset-x="12.0" data-offset-y="-10.5" x="0.905074" y="-0.166578" font-size="0.036437">X<tspan dy="0.3em" font-size="75%">717</tspan></text>
     <text class="subtitle-label" x="-0.093802" y="0.307417" font-size="0.031039" fill="#999">Kimberling (6, 9, 13) | AB = 1</text>
   </g>
-  <script type="application/json" class="etc-elements-meta">{"A":{"ID":"A","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex A","subtitle":"Reference triangle vertex at origin (0, 0)","rows":[["x","0.0000"],["y","0.0000"],["bary","1.0000 : 0.0000 : 0.0000"]],"related_points":["A"]},"B":{"ID":"B","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex B","subtitle":"Reference triangle vertex at unit base (1, 0)","rows":[["x","1.0000"],["y","0.0000"],["bary","0.0000 : 1.0000 : 0.0000"]],"related_points":["B"]},"[ A B ]":{"ID":"[ A B ]","type":"line","classes":["given","sideline"],"color":"#aaa","name":"Sideline AB (Base c = 1)","subtitle":"Reference triangle baseline through A and B","rows":[["pts","A (Vertex A), B (Vertex B)"],["len","1.0000"],["eq","0.0000x + 1.0000y + 0.0000 = 0"]],"related_points":["A","B"]},"C":{"ID":"C","type":"point","classes":["vertex"],"color":"#0ff","name":"Vertex C","subtitle":"Reference triangle apex constructed by Euclid I.22","rows":[["x","0.6331"],["y","0.2801"],["bary","-0.0000 : 0.0000 : 1.0000"]],"related_points":["C"]},"[ B C ]":{"ID":"[ B C ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline BC (Side a)","subtitle":"Reference triangle sideline opposite vertex A","rows":[["pts","B (Vertex B), C (Vertex C)"],["len","0.4615"],["eq","0.6068x + 0.7949y - 0.6068 = 0"]],"related_points":["B","C"]},"[ C A ]":{"ID":"[ C A ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline CA (Side b)","subtitle":"Reference triangle sideline opposite vertex B","rows":[["pts","C (Vertex C), A (Vertex A)"],["len","0.6923"],["eq","0.4045x - 0.9145y + 0.0000 = 0"]],"related_points":["C","A"]},"\u003c A B C \u003e":{"ID":"\u003c A B C \u003e","type":"polygon","classes":["reference"],"color":"#58a6ff","name":"Reference Triangle △ABC","subtitle":"Primary reference triangle with unit baseline AB = 1","rows":[["verts","A, B, C"],["sides","0.4615, 0.6923, 1.0000"],["area","0.1400"]],"related_points":["A","B","C"]},"X(716)":{"ID":"X(716)","type":"point","classes":["center"],"color":"#0ff","name":"EVEN (- 3, 0) INFINITY POINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","1.1799"],["y","0.2562"],["bary","-0.5155 : 0.6007 : 0.9148"]],"related_points":["X(716)"]},"P_a":{"ID":"P_a","type":"point","classes":["foot"],"color":"orange","name":"Cevian Trace P_a on BC","subtitle":"Intersection of cevian from A with sideline BC","rows":[["x","0.8204"],["y","0.1371"],["bary","-0.0000 : 0.5103 : 0.4897"]],"related_points":["P_a"]},"[ A P_a ]":{"ID":"[ A P_a ]","type":"line","classes":["bisector"],"color":"#aaa","name":"A-Cevian A–P_a","subtitle":"Cevian from vertex A through target center to trace P_a on BC","rows":[["pts","A (Vertex A), P_a (Cevian Trace P_a on BC)"],["len","0.8317"],["eq","0.1649x - 0.9863y + 0.0000 = 0"]],"related_points":["A","P_a"]},"P_b":{"ID":"P_b","type":"point","classes":["foot"],"color":"orange","name":"Cevian Trace P_b on CA","subtitle":"Intersection of cevian from B with sideline CA","rows":[["x","0.7413"],["y","0.3279"],["bary","-0.1708 : -0.0000 : 1.1708"]],"related_points":["P_b"]},"[ B P_b ]":{"ID":"[ B P_b ]","type":"line","classes":["bisector"],"color":"#aaa","name":"B-Cevian B–P_b","subtitle":"Cevian from vertex B through target center to trace P_b on CA","rows":[["pts","B (Vertex B), P_b (Cevian Trace P_b on CA)"],["len","0.4177"],["eq","0.7851x + 0.6194y - 0.7851 = 0"]],"related_points":["B","P_b"]},"P_c":{"ID":"P_c","type":"point","classes":["foot"],"color":"orange","name":"Cevian Trace P_c on AB","subtitle":"Intersection of cevian from C with sideline AB","rows":[["x","1.1628"],["y","0.0000"],["bary","-0.1628 : 1.1628 : 0.0000"]],"related_points":["P_c"]},"[ C P_c ]":{"ID":"[ C P_c ]","type":"line","classes":["bisector"],"color":"#aaa","name":"C-Cevian C–P_c","subtitle":"Cevian from vertex C through target center to trace P_c on AB","rows":[["pts","C (Vertex C), P_c (Cevian Trace P_c on AB)"],["len","0.5991"],["eq","0.4674x + 0.8840y - 0.5435 = 0"]],"related_points":["C","P_c"]},"X(6)":{"ID":"X(6)","type":"point","classes":["center","incident"],"color":"#0ff","name":"SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6573"],["y","0.1655"],["bary","0.1259 : 0.2832 : 0.5909"]],"related_points":["X(6)"]},"X(789)":{"ID":"X(789)","type":"point","classes":["center","incident"],"color":"#0ff","name":"o-(- 3, 0) CIRCUMCIRCLE POINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.1873"],["y","0.2025"],["bary","0.5474 : -0.2704 : 0.7230"]],"related_points":["X(789)"]},"{ 6, 789 }":{"ID":"{ 6, 789 }","type":"line","classes":["central_line","incident"],"color":"#0bd","name":"Central Line L(6, 789)","subtitle":"Through X(6) (SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)) and X(789) (o-(- 3, 0) CIRCUMCIRCLE POINT)","rows":[["pts","X(6) (SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)), X(789) (o-(- 3, 0) CIRCUMCIRCLE POINT)"],["len","0.4715"],["eq","0.0785x + 0.9969y - 0.2166 = 0"]],"related_points":["X(6)","X(789)"]},"X(560)":{"ID":"X(560)","type":"point","classes":["center","incident"],"color":"#0ff","name":"4th POWER POINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6713"],["y","0.2373"],["bary","0.0177 : 0.1348 : 0.8475"]],"related_points":["X(560)"]},"X(825)":{"ID":"X(825)","type":"point","classes":["center","incident"],"color":"#0ff","name":"o-(0, 3) CIRCUMCIRCLE POINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5356"],["y","0.2947"],["bary","0.0783 : -0.1306 : 1.0523"]],"related_points":["X(825)"]},"{ 560, 825 }":{"ID":"{ 560, 825 }","type":"line","classes":["central_line","incident"],"color":"#0bd","name":"Central Line L(560, 825)","subtitle":"Through X(560) (4th POWER POINT) and X(825) (o-(0, 3) CIRCUMCIRCLE POINT)","rows":[["pts","X(560) (4th POWER POINT), X(825) (o-(0, 3) CIRCUMCIRCLE POINT)"],["len","0.1473"],["eq","0.3893x + 0.9211y - 0.4800 = 0"]],"related_points":["X(560)","X(825)"]},"X(717)":{"ID":"X(717)","type":"point","classes":["selected","target"],"color":"gold","name":"EVEN (- 3, 0) CIRCUMCIRCLE POINT","subtitle":"Target Triangle Center","rows":[["x","0.8835"],["y","0.1477"],["bary","-0.0769 : 0.5496 : 0.5274"]],"related_points":["X(717)"]}}</script>
+  <script type="application/json" class="etc-elements-meta">{"A":{"ID":"A","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex A","subtitle":"Reference triangle vertex at origin (0, 0)","rows":[["x","0.0000"],["y","0.0000"],["bary","1.0000 : 0.0000 : 0.0000"]],"related_points":["A"]},"B":{"ID":"B","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex B","subtitle":"Reference triangle vertex at unit base (1, 0)","rows":[["x","1.0000"],["y","0.0000"],["bary","0.0000 : 1.0000 : 0.0000"]],"related_points":["B"]},"[ A B ]":{"ID":"[ A B ]","type":"line","classes":["given","sideline"],"color":"#aaa","name":"Sideline AB (Base c = 1)","subtitle":"Reference triangle baseline through A and B","rows":[["pts","A (Vertex A), B (Vertex B)"],["len","1.0000"],["eq","0.0000x + 1.0000y + 0.0000 = 0"]],"related_points":["A","B"]},"C":{"ID":"C","type":"point","classes":["vertex"],"color":"#0ff","name":"Vertex C","subtitle":"Reference triangle apex constructed by Euclid I.22","rows":[["x","0.6331"],["y","0.2801"],["bary","-0.0000 : 0.0000 : 1.0000"]],"related_points":["C"]},"[ B C ]":{"ID":"[ B C ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline BC (Side a)","subtitle":"Reference triangle sideline opposite vertex A","rows":[["pts","B (Vertex B), C (Vertex C)"],["len","0.4615"],["eq","0.6068x + 0.7949y - 0.6068 = 0"]],"related_points":["B","C"]},"[ C A ]":{"ID":"[ C A ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline CA (Side b)","subtitle":"Reference triangle sideline opposite vertex B","rows":[["pts","C (Vertex C), A (Vertex A)"],["len","0.6923"],["eq","0.4045x - 0.9145y + 0.0000 = 0"]],"related_points":["C","A"]},"\u003c A B C \u003e":{"ID":"\u003c A B C \u003e","type":"polygon","classes":["reference"],"color":"#58a6ff","name":"Reference Triangle △ABC","subtitle":"Primary reference triangle with unit baseline AB = 1","rows":[["verts","A, B, C"],["sides","0.4615, 0.6923, 1.0000"],["area","0.1400"]],"related_points":["A","B","C"]},"X_716":{"ID":"X_716","type":"point","classes":["center"],"color":"#0ff","name":"EVEN (- 3, 0) INFINITY POINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","1.1799"],["y","0.2562"],["bary","-0.5155 : 0.6007 : 0.9148"]],"related_points":["X_716"]},"X_6":{"ID":"X_6","type":"point","classes":["center"],"color":"#0ff","name":"SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6573"],["y","0.1655"],["bary","0.1259 : 0.2832 : 0.5909"]],"related_points":["X_6"]},"X_789":{"ID":"X_789","type":"point","classes":["center"],"color":"#0ff","name":"o-(- 3, 0) CIRCUMCIRCLE POINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.1873"],["y","0.2025"],["bary","0.5474 : -0.2704 : 0.7230"]],"related_points":["X_789"]},"{ 6, 789 }":{"ID":"{ 6, 789 }","type":"line","classes":["central_line"],"color":"#0bd","name":"Central Line L(6, 789)","subtitle":"Through X_6 (SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)) and X_789 (o-(- 3, 0) CIRCUMCIRCLE POINT)","rows":[["pts","X_6 (SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)), X_789 (o-(- 3, 0) CIRCUMCIRCLE POINT)"],["len","0.4715"],["eq","0.0785x + 0.9969y - 0.2166 = 0"]],"related_points":["X_6","X_789"]},"X_560":{"ID":"X_560","type":"point","classes":["center"],"color":"#0ff","name":"4th POWER POINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6713"],["y","0.2373"],["bary","0.0177 : 0.1348 : 0.8475"]],"related_points":["X_560"]},"X_825":{"ID":"X_825","type":"point","classes":["center"],"color":"#0ff","name":"o-(0, 3) CIRCUMCIRCLE POINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5356"],["y","0.2947"],["bary","0.0783 : -0.1306 : 1.0523"]],"related_points":["X_825"]},"{ 560, 825 }":{"ID":"{ 560, 825 }","type":"line","classes":["central_line"],"color":"#0bd","name":"Central Line L(560, 825)","subtitle":"Through X_560 (4th POWER POINT) and X_825 (o-(0, 3) CIRCUMCIRCLE POINT)","rows":[["pts","X_560 (4th POWER POINT), X_825 (o-(0, 3) CIRCUMCIRCLE POINT)"],["len","0.1473"],["eq","0.3893x + 0.9211y - 0.4800 = 0"]],"related_points":["X_560","X_825"]},"X_717":{"ID":"X_717","type":"point","classes":["selected","target"],"color":"gold","name":"EVEN (- 3, 0) CIRCUMCIRCLE POINT","subtitle":"Target Triangle Center","rows":[["x","0.8835"],["y","0.1477"],["bary","-0.0769 : 0.5496 : 0.5274"]],"related_points":["X_717"]}}</script>
   <script>//<![CDATA[
 
 (function () {
@@ -408,14 +412,16 @@ figure:hover .etc-svg-toolbar {
         });
 
         const fontSize = 20.25 * unitsPerPx;
+        const guideFontSize = 17.5 * unitsPerPx;
         labelEls.forEach(lbl => {
             const cx = parseFloat(lbl.getAttribute('data-anchor-x') || '0');
             const cy = parseFloat(lbl.getAttribute('data-anchor-y') || '0');
             const oxPx = parseFloat(lbl.getAttribute('data-offset-x') || '12');
             const oyPx = parseFloat(lbl.getAttribute('data-offset-y') || '-10.5');
+            const isGuideLbl = lbl.classList.contains('guide-label');
             lbl.setAttribute('x', (cx + oxPx * unitsPerPx).toFixed(6));
             lbl.setAttribute('y', (cy + oyPx * unitsPerPx).toFixed(6));
-            lbl.setAttribute('font-size', fontSize.toFixed(6));
+            lbl.setAttribute('font-size', (isGuideLbl ? guideFontSize : fontSize).toFixed(6));
         });
 
         if (subtitleEl) {
@@ -700,11 +706,11 @@ figure:hover .etc-svg-toolbar {
             const refLink = e.target.closest('a.reference.internal');
             if (refLink) {
                 const txt = (refLink.textContent || '').trim();
-                const xm = txt.match(/^X\((\d+)\)$/);
+                const xm = txt.match(/^X(?:_|\()?(\d+)\)?$/);
                 if (xm) {
                     const activeSvg = getActiveSvg();
                     if (activeSvg && activeSvg._etcController.activateHover) {
-                        activeSvg._etcController.activateHover(`X(${xm[1]})`);
+                        activeSvg._etcController.activateHover(`X_${xm[1]}`);
                     }
                 }
             }

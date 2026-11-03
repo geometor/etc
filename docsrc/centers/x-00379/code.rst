@@ -1,18 +1,21 @@
-:canonical_id: X(379)
+:canonical_id: X_379
 :type: code
+:subtitle: EULER LINE INTERCEPT OF LINE X_6X_7
 
-X(379) = EULER LINE INTERCEPT OF LINE X(6)X(7) — Code
-=====================================================
+X_379
+=====
+
+.. rubric:: EULER LINE INTERCEPT OF LINE X_6X_7
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(379) <X(379)>` has Shinagawa coefficients :math:`(\$a S_{B}S_{C}\$, \$a\$S^{2})`.
+   :ref:`X_379 <X_379>` = :term:`complement <complement>` of X_31015
 
 .. figure:: x-00379.svg
-   :alt: X(379) = EULER LINE INTERCEPT OF LINE X(6)X(7)
+   :alt: X_379 — EULER LINE INTERCEPT OF LINE X_6X_7
    :align: center
 
-   **X(379) = EULER LINE INTERCEPT OF LINE X(6)X(7)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_379** (*EULER LINE INTERCEPT OF LINE X_6X_7*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

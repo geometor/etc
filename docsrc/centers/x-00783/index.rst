@@ -1,22 +1,30 @@
 :order: 783
 :type: center
-:canonical_id: X(783)
-:dependencies: X(733), X(782), X(881), X(35558)
+:canonical_id: X_783
+:subtitle: o-(- 4, 4) CIRCUMCIRCLE POINT
+:dependencies: X_733, X_782, X_881, X_35558
 
-.. _X(783):
+.. _X_783:
 
-X(783) = o-(- 4, 4) CIRCUMCIRCLE POINT
-======================================
+X_783
+=====
+
+.. rubric:: o-(- 4, 4) CIRCUMCIRCLE POINT
 
 .. enunciation::
 
-   :ref:`X(783) <X(783)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(782) <X(782)>`
+   :ref:`X_783 <X_783>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_782 <X_782>`
 
 .. figure:: x-00783.svg
-   :alt: X(783) = o-(- 4, 4) CIRCUMCIRCLE POINT
+   :alt: X_783 — o-(- 4, 4) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(783) = o-(- 4, 4) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_783** (*o-(- 4, 4) CIRCUMCIRCLE POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Related Centers:** :g:`X_782 <X_782>` (:ref:`ODD (- 4, 4) INFINITY POINT <X_782>`)
 
 .. signature:: center
 
@@ -26,14 +34,14 @@ X(783) = o-(- 4, 4) CIRCUMCIRCLE POINT
 
 .. container:: note-item
 
-   :ref:`X(783) <X(783)>` lies on the circumcircle.
+   :ref:`X_783 <X_783>` lies on the circumcircle.
 
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X(783) <X(783)>` = isogonal conjugate of :ref:`X(782) <X(782)>`
-   * :ref:`X(783) <X(783)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(35558)
-   * :ref:`X(783) <X(783)>` = :term:`cevapoint <cevapoint>` of :ref:`X(733) <X(733)>` and :ref:`X(881) <X(881)>`
+   * :ref:`X_783 <X_783>` = isogonal conjugate of :ref:`X_782 <X_782>`
+   * :ref:`X_783 <X_783>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_35558
+   * :ref:`X_783 <X_783>` = :term:`cevapoint <cevapoint>` of :ref:`X_733 <X_733>` and :ref:`X_881 <X_881>`
 
 .. toctree::
    :hidden:

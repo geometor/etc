@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(645) = BARYCENTRIC MULTIPLIER FOR KIEPERT PARABOLA."""
+"""GEOMETOR construction model for X_645 = BARYCENTRIC MULTIPLIER FOR KIEPERT PARABOLA."""
 
 from __future__ import annotations
 
@@ -23,16 +23,16 @@ from geometor.etc.render import write_center_svg
 def construct_x_00645(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(645) = BARYCENTRIC MULTIPLIER FOR KIEPERT PARABOLA on reference triangle ABC."""
-    X_99 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(2) - c**(2))', ID="X(99)", classes=["center"])
-    X_101 = eval_trilinear_point(model, A, B, C, 'a/(b - c)', ID="X(101)", classes=["center"])
-    X_9 = mittenpunkt_of(model, A, B, C, ID="X(9)", classes=["center"])
-    X_261 = point_from_barycentrics(model, A, B, C, 0.38781404, 0.34135715, 0.27082881, ID="X(261)", classes=["center"])
+    """Construct X_645 = BARYCENTRIC MULTIPLIER FOR KIEPERT PARABOLA on reference triangle ABC."""
+    X_99 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(2) - c**(2))', ID="X_99", classes=["center"])
+    X_101 = eval_trilinear_point(model, A, B, C, 'a/(b - c)', ID="X_101", classes=["center"])
+    X_9 = mittenpunkt_of(model, A, B, C, ID="X_9", classes=["center"])
+    X_261 = point_from_barycentrics(model, A, B, C, 0.38781404, 0.34135715, 0.27082881, ID="X_261", classes=["center"])
     central_line(model, X_99, X_101, 99, 101)
     central_line(model, X_9, X_261, 9, 261)
-    X_645 = intersect_lines(model, X_99, X_101, X_9, X_261, ID="X(645)", classes=["selected", "target"])
-    X_294 = point_from_barycentrics(model, A, B, C, 0.10958904, 0.98630137, -0.095890411, ID="X(294)", classes=["center", "incident"])
-    X_314 = point_from_barycentrics(model, A, B, C, 0.47638074, 0.32254946, 0.20106979, ID="X(314)", classes=["center", "incident"])
+    X_645 = intersect_lines(model, X_99, X_101, X_9, X_261, ID="X_645", classes=["selected", "target"])
+    X_294 = point_from_barycentrics(model, A, B, C, 0.10958904, 0.98630137, -0.095890411, ID="X_294", classes=["center", "incident"])
+    X_314 = point_from_barycentrics(model, A, B, C, 0.47638074, 0.32254946, 0.20106979, ID="X_314", classes=["center", "incident"])
     central_line(model, X_294, X_314, 294, 314, incident=True)
     return promote_point_to_top(model, X_645)
 
@@ -41,8 +41,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(645) on the given reference triangle."""
-    model = create_model('X(645) = BARYCENTRIC MULTIPLIER FOR KIEPERT PARABOLA')
+    """Build a `geometor.model.Model` for X_645 on the given reference triangle."""
+    model = create_model('X_645 = BARYCENTRIC MULTIPLIER FOR KIEPERT PARABOLA')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00645(model, A, B, C)
     return model

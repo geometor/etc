@@ -1,18 +1,21 @@
-:canonical_id: X(811)
+:canonical_id: X_811
 :type: code
+:subtitle: ISOGONAL CONJUGATE OF X_810
 
-X(811) = ISOGONAL CONJUGATE OF X(810) — Code
-============================================
+X_811
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_810
 
 .. enunciation::
 
-   Let :g:`L_{a} <L_a>` be the A-extraversion of line :ref:`X(19) <X(19)>`\ \ :ref:`X(27) <X(27)>`, and define :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>` ∩ :g:`L_{c} <L_c>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(811) <X(811)>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2018)
+   :ref:`X_811 <X_811>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_810 <X_810>`.
 
 .. figure:: x-00811.svg
-   :alt: X(811) = ISOGONAL CONJUGATE OF X(810)
+   :alt: X_811 — ISOGONAL CONJUGATE OF X_810
    :align: center
 
-   **X(811) = ISOGONAL CONJUGATE OF X(810)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_811** (*ISOGONAL CONJUGATE OF X_810*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

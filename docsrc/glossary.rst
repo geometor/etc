@@ -24,6 +24,38 @@ The words "defined cyclically" apply after an "A-object" has been defined: if th
 
 ----
 
+.. _1st-brocard-triangle:
+.. _term-1st-brocard-triangle:
+
+1st Brocard triangle
+--------------------
+
+Triangle inscribed in the Brocard circle whose vertices are the projections of the symmedian point :ref:`X_6 <X_6>` onto the perpendicular bisectors of the sides. (See :term:`central triangle <central-triangle>`.)
+
+.. _1st-euler-triangle:
+.. _term-1st-euler-triangle:
+
+1st Euler triangle
+------------------
+
+The triangle whose vertices are the midpoints of the segments joining :g:`A <A>`, :g:`B <B>`, :g:`C <C>` to the orthocenter :ref:`X_4 <X_4>` (also called the Euler or Feuerbach triangle). (See :term:`euler triangle <euler-triangle>`.)
+
+.. _2nd-brocard-triangle:
+.. _term-2nd-brocard-triangle:
+
+2nd Brocard triangle
+--------------------
+
+Triangle inscribed in the Brocard circle whose vertices are the intersections of the symmedians with the Brocard circle. (See :term:`central triangle <central-triangle>`.)
+
+.. _2nd-euler-triangle:
+.. _term-2nd-euler-triangle:
+
+2nd Euler triangle
+------------------
+
+Triangle associated with the nine-point circle and orthic configuration, perspective to :g:`ABC << A B C >>` at the Prasolov point :ref:`X_68 <X_68>`. (See :term:`euler triangle <euler-triangle>`.)
+
 .. _aleph-conjugate:
 .. _term-aleph-conjugate:
 
@@ -56,9 +88,9 @@ Let :g:`P <P>` be a point not on a sideline of :g:`ABC << A B C >>`. Let :g:`A' 
 
 Examples of anticevian triangles
 
-* excentral; :g:`P <P>` = incenter = :ref:`X(1) <X(1)>` =\ :math:`1 : 1 : 1`
-* anticomplementary; :g:`P <P>` = centroid = :ref:`X(2) <X(2)>` =\ :math:`1/a : 1/b : 1/c`
-* tangential; :g:`P <P>` = symmedian point = :ref:`X(6) <X(6)>` =\ :math:`a : b : c`
+* excentral; :g:`P <P>` = incenter = :ref:`X_1 <X_1>` =\ :math:`1 : 1 : 1`
+* anticomplementary; :g:`P <P>` = centroid = :ref:`X_2 <X_2>` =\ :math:`1/a : 1/b : 1/c`
+* tangential; :g:`P <P>` = symmedian point = :ref:`X_6 <X_6>` =\ :math:`a : b : c`
 
 .. _anticomplement:
 .. _term-anticomplement:
@@ -104,7 +136,7 @@ Let L(A) be the line through vertex :g:`A <A>` parallel to side :g:`BC <[ B C ]>
 antigonal image
 ---------------
 
-Let :g:`P <P>` =\ :math:`p : q : r` (barycentric coordinates) be a point not on a sideline of :g:`ABC << A B C >>` and not :ref:`X(4) <X(4)>`. The antigonal image of :g:`P <P>` is the point h(P) given by barycentyrics
+Let :g:`P <P>` =\ :math:`p : q : r` (barycentric coordinates) be a point not on a sideline of :g:`ABC << A B C >>` and not :ref:`X_4 <X_4>`. The antigonal image of :g:`P <P>` is the point h(P) given by barycentyrics
 
    :math:`h(a,b,c,p,q,r) : h(b,c,a,q,r,p) : h(c,a,b,r,p,q)`,
 
@@ -112,7 +144,7 @@ where
 
    :math:`h(a,b,c,p,q,r) = p/[(b^{2} + c^{2} - a^{2})p^{2} - a^{2}qr + (b^{2} - a^{2})pq + (c^{2} - a^{2})pr]`.
 
-The point h(P) is the isogonal conjugate of the inverse-in-circumcircle of the isogonal conjugate of P. If P lies on the circumcircle then h(P)=\ :ref:`X(4) <X(4)>`; otherwise, h(h(P))=P, so that h(P), in such a case, is called the antigonal conjugate of P. If P lies on the line at infinity, then :math:`h(P)=P`.
+The point h(P) is the isogonal conjugate of the inverse-in-circumcircle of the isogonal conjugate of P. If P lies on the circumcircle then h(P)=\ :ref:`X_4 <X_4>`; otherwise, h(h(P))=P, so that h(P), in such a case, is called the antigonal conjugate of P. If P lies on the line at infinity, then :math:`h(P)=P`.
 
 Antigonal pairs of points are discussed in Jan Van Yzeren, "Pairs of Points: Antigonal, Isogonal, and Inverse," *Mathematics Magazine* 65 (1992) 339-347.
 
@@ -132,7 +164,7 @@ For a point :g:`P <P>`, the triangle :g:`A'B'C' << A' B' C' >>` formed by the li
 antitomic conjugate
 -------------------
 
-Let :g:`P <P>` be a point not on a sideline of :g:`ABC << A B C >>`. Let :g:`T <T>` = isotomic conjugate and S = Steiner- circumellipse-inverse (this ellipse is T of the line at infinity). The antitomic conjugate of :g:`P <P>` is the point T(S(T(P))). Source: Preamble just before X(14941).
+Let :g:`P <P>` be a point not on a sideline of :g:`ABC << A B C >>`. Let :g:`T <T>` = isotomic conjugate and S = Steiner- circumellipse-inverse (this ellipse is T of the line at infinity). The antitomic conjugate of :g:`P <P>` is the point T(S(T(P))). Source: Preamble just before X_14941.
 
 .. _barycentric-image:
 .. _term-barycentric-image:
@@ -211,7 +243,7 @@ Next, suppose f and g are as for type 1 except that g(a,b,c) ≠ g(a,c,b). Let
 
 Then :g:`A'B'C' << A' B' C' >>` is the *(f,g)-central triangle of type 2*. A *central triangle of type 2* is any triangle :g:`A'B'C' << A' B' C' >>` for some choice of center function f and function g as described. Note that the coordinates in the definitions can be read as barycentrics without changing the classes of triangles called central, central of type 1, and central of type 2.
 
-A form for compact notation for a central triangle is T(f(a,b,c), g(b,c,a)), where the triangle is of type 1 if :math:`g(b,c,a ) = g(b`,a,c) and of type 2 otherwise; see the preamble to X(3758) in ETC.
+A form for compact notation for a central triangle is T(f(a,b,c), g(b,c,a)), where the triangle is of type 1 if :math:`g(b,c,a ) = g(b`,a,c) and of type 2 otherwise; see the preamble to X_3758 in ETC.
 
 Examples: :g:`ABC << A B C >>`, the medial, orthic, excentral, anticomplementary, and tangential triangles are central of type 1; in fact, if X is a center, then the cevian and anticevian triangles of :g:`X <X>` are central of type 1. The pedal triangle of :g:`X <X>` is of type 2 if the triangle is not also a cevian triangle.
 
@@ -288,11 +320,19 @@ Let :g:`P <P>` be a point not on a sideline of :g:`ABC << A B C >>`. Let :g:`A' 
 
 Examples of cevian triangles:
 
-   | incentral triangle; :g:`P <P>` = incenter = :ref:`X(1) <X(1)>` =\ :math:`1 : 1 : 1`
-   | medial triangle; :g:`P <P>` = centroid = :ref:`X(2) <X(2)>` =\ :math:`1/a : 1/b : 1/c`
-   | orthic triangle; :g:`P <P>` = orthocenter = :ref:`X(4) <X(4)>` = sec A : sec B : sec C
-   | intouch triangle; :g:`P <P>` = Gergonne point = :ref:`X(7) <X(7)>` = :math:`\sec^{2}(A/2)` : :math:`\sec^{2}(B/2)` : :math:`\sec^{2}(C/2)`
-   | extouch triangle; :g:`P <P>` = Nagel point = :ref:`X(8) <X(8)>` = :math:`\csc^{2}(A/2)` : :math:`\csc^{2}(B/2)` : :math:`\csc^{2}(C/2)`
+   | incentral triangle; :g:`P <P>` = incenter = :ref:`X_1 <X_1>` =\ :math:`1 : 1 : 1`
+   | medial triangle; :g:`P <P>` = centroid = :ref:`X_2 <X_2>` =\ :math:`1/a : 1/b : 1/c`
+   | orthic triangle; :g:`P <P>` = orthocenter = :ref:`X_4 <X_4>` = sec A : sec B : sec C
+   | intouch triangle; :g:`P <P>` = Gergonne point = :ref:`X_7 <X_7>` = :math:`\sec^{2}(A/2)` : :math:`\sec^{2}(B/2)` : :math:`\sec^{2}(C/2)`
+   | extouch triangle; :g:`P <P>` = Nagel point = :ref:`X_8 <X_8>` = :math:`\csc^{2}(A/2)` : :math:`\csc^{2}(B/2)` : :math:`\csc^{2}(C/2)`
+
+.. _circummedial-triangle:
+.. _term-circummedial-triangle:
+
+circummedial triangle
+---------------------
+
+The circumcevian triangle of the centroid :ref:`X_2 <X_2>`, whose vertices are the second intersections of the medians of :g:`ABC << A B C >>` with the circumcircle. (See :term:`central triangle <central-triangle>`.)
 
 .. _circumperp-conjugate:
 .. _term-circumperp-conjugate:
@@ -300,7 +340,7 @@ Examples of cevian triangles:
 circumperp conjugate
 --------------------
 
-Let :g:`P <P>` =\ :math:`p : q : r` be a point distinct from :ref:`X(3) <X(3)>`. The circumperp conjugate of :g:`P <P>` is the point
+Let :g:`P <P>` =\ :math:`p : q : r` be a point distinct from :ref:`X_3 <X_3>`. The circumperp conjugate of :g:`P <P>` is the point
 
    :math:`f(p,q,r,a,b,c,S_{A},S_{B},S_{C}) : f(q,r,p,b,c,a,S_{B},S_{C},S_{A}) : f(r,p,q,c,a,b,S_{C},S_{A},S_{B})`,
 
@@ -308,7 +348,7 @@ where
 
    :math:`f(p,q,r,a,b,c,S_{A},S_{B},S_{C}) = (-a (-b c S_{C} S_{B} p^{2}+2 r q S_{A}^{3})-S_{A} a b c (b^{2} q^{2}+c^{2} r^{2})+b ((S_{A}+S_{B}) S^{2}-2 S_{A} S_{B}^{2}) r p+c ((S_{C}+S_{A}) S^{2}-2 S_{A} S_{C}^{2}) p q) a`.
 
-Let :g:`ABC << A B C >>` be a triangle and P a point. The perpendicular bisectors of :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>` intersect the circumcircle at (:g:`A_{1} <A_1>`, :g:`A_{2} <A_2>`), (:g:`B_{1} <B_1>`, :g:`B_{2} <B_2>`), (:g:`C_{1} <C_1>`, :g:`C_{2} <C_2>`), respectively. Then the circumcircles of :g:`PA_{1}A_{2} << P A_1 A_2 >>`, :g:`PB_{1}B_{2} << P B_1 B_2 >>`, :g:`PC_{1}C_{2} << P C_1 C_2 >>` are coaxial. The other than P point of intersection of these circles is the circumperp conjugate of :g:`P <P>`, as :g:`A_{1} <A_1>`, :g:`A_{2} <A_2>`, :g:`B_{1} <B_1>`, :g:`B_{2} <B_2>`, :g:`C_{1} <C_1>`, :g:`C_{2} <C_2>` are the vertices of the circumperp triangles. (See preamble just before X(18859))
+Let :g:`ABC << A B C >>` be a triangle and P a point. The perpendicular bisectors of :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>` intersect the circumcircle at (:g:`A_{1} <A_1>`, :g:`A_{2} <A_2>`), (:g:`B_{1} <B_1>`, :g:`B_{2} <B_2>`), (:g:`C_{1} <C_1>`, :g:`C_{2} <C_2>`), respectively. Then the circumcircles of :g:`PA_{1}A_{2} << P A_1 A_2 >>`, :g:`PB_{1}B_{2} << P B_1 B_2 >>`, :g:`PC_{1}C_{2} << P C_1 C_2 >>` are coaxial. The other than P point of intersection of these circles is the circumperp conjugate of :g:`P <P>`, as :g:`A_{1} <A_1>`, :g:`A_{2} <A_2>`, :g:`B_{1} <B_1>`, :g:`B_{2} <B_2>`, :g:`C_{1} <C_1>`, :g:`C_{2} <C_2>` are the vertices of the circumperp triangles. (See preamble just before X_18859)
 
 .. _cocevian-triangle:
 .. _term-cocevian-triangle:
@@ -326,7 +366,7 @@ combo
 
 Let :g:`P <P>` and U be finite points having normalized barycentric coordinates (p,q,r) and (u,v,w). Suppose that f = f(a,b,c) and g = g(a,b,c) are nonzero homogeneous functions having the same degree of homogeneity. Let x = fp + gu, y = fq + gv, z = fr + gw. The (f,g) combo of :g:`P <P>` and U, denoted by f\*P + g\*U, is the point :g:`X <X>` =\ :math:`x : y : z`; the normalized barycentric coordinates of :g:`X <X>` are (kx,ky,kz), where k=1/(x+y+z).
 
-The definition of combo readily extends to finite sets of finite points. In particular, the (f,g,h) combo of :g:`P <P>` = (p,q,r), :g:`U <U>` = (u,v,w), J = (j,k,m) is given by fp + gu + hj : fq + gv + hk : fr + gw + hm and denoted by f\*P + g\*U + h\*J. Suppose that T is a (central) triangle with vertices :g:`A' <A'>`,\ :g:`B' <B'>`,\ :g:`C' <C'>` given by normalize barycentrics. Then T is represented by a 3x3 matrix with row sums equal to 1. Let NT denote the set of these matrices and let \* denote matrix multiplication. Then NT is closed under \*. Also, NT is closed under matrix inversion, so that (NT, \*) is a group. Once normalized, any central T can be used to produce triangle centers as combos of the form Xcom(nT); see the preambles to X(3663), X(3739), and X(3758) in ETC.
+The definition of combo readily extends to finite sets of finite points. In particular, the (f,g,h) combo of :g:`P <P>` = (p,q,r), :g:`U <U>` = (u,v,w), J = (j,k,m) is given by fp + gu + hj : fq + gv + hk : fr + gw + hm and denoted by f\*P + g\*U + h\*J. Suppose that T is a (central) triangle with vertices :g:`A' <A'>`,\ :g:`B' <B'>`,\ :g:`C' <C'>` given by normalize barycentrics. Then T is represented by a 3x3 matrix with row sums equal to 1. Let NT denote the set of these matrices and let \* denote matrix multiplication. Then NT is closed under \*. Also, NT is closed under matrix inversion, so that (NT, \*) is a group. Once normalized, any central T can be used to produce triangle centers as combos of the form Xcom(nT); see the preambles to X_3663, X_3739, and X_3758 in ETC.
 
 .. _complement:
 .. _term-complement:
@@ -357,6 +397,14 @@ Let f(X) be the complement of :g:`X <X>`, given by
 and let k be P-isoconjugation. The P-complementary conjugate of :g:`U <U>` is "what you do to f(X) to make f(k(X)) when :math:`f(X) = U`."
 
 If :g:`P <P>` = incenter, then P-complementary conjugate is shortened to "complementary conjugate."
+
+.. _contact-triangle:
+.. _term-contact-triangle:
+
+contact triangle
+----------------
+
+Synonym for the intouch triangle, whose vertices are the contact points of the incircle with sides :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`. (See :term:`intouch triangle <intouch-triangle>`.)
 
 .. _cross-conjugate:
 .. _term-cross-conjugate:
@@ -398,9 +446,9 @@ constructible as the isogonal conjugate of the trilinear pole of the line :g:`PU
 
 A point :g:`X <X>` is the crossdifference of distinct points :g:`P <P>` and U if and only if the line :g:`PU <[ P U ]>` is the trilinear polar of the isogonal conjugate of X. Examples:
 
-| :ref:`X(1) <X(1)>` = crossdifference of :ref:`X(44) <X(44)>` and :ref:`X(513) <X(513)>`
-| :ref:`X(2) <X(2)>` = crossdifference of :ref:`X(187) <X(187)>` and :ref:`X(512) <X(512)>`
-| :ref:`X(3) <X(3)>` = crossdifference of :ref:`X(230) <X(230)>` and :ref:`X(231) <X(231)>`.
+| :ref:`X_1 <X_1>` = crossdifference of :ref:`X_44 <X_44>` and :ref:`X_513 <X_513>`
+| :ref:`X_2 <X_2>` = crossdifference of :ref:`X_187 <X_187>` and :ref:`X_512 <X_512>`
+| :ref:`X_3 <X_3>` = crossdifference of :ref:`X_230 <X_230>` and :ref:`X_231 <X_231>`.
 
 Let W be the side-triangle of these two triangles: the cevian triangle of the isogonal conjugate of :g:`P <P>` and the cevian triangle of the isogonal conjugate of U. Then W is perspective to :g:`ABC << A B C >>`, and the perspector is the crossdifference of :g:`P <P>` and U; see also :term:`crosspoint <crosspoint>`. (Randy Hutson, April 9, 2016)
 
@@ -427,7 +475,7 @@ This point is introduced in `TCCT <http://faculty.evansville.edu/ck6/tcenters/tc
 
 Figure 7.3 in TCCT with ":g:`Q″ <Q″>` replaced by ":g:`U″ <U″>` can be used to visualize the nine lines concurring in :g:`X <X>`.
 
-The lines tangent to the conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,P,U} at :g:`P <P>` and U intersect in :g:`X <X>`. (Randy Hutson, September 10, 2012)
+The lines tangent to the conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`P <P>`,\ :g:`U <U>`} at :g:`P <P>` and U intersect in :g:`X <X>`. (Randy Hutson, September 10, 2012)
 
 Let W be the side-triangle of these two triangles: the cevian triangle of :g:`P <P>` and the cevian triangle of U. Let :g:`W' <W'>` be the vertex-triangle of the anticevian triangle of :g:`P <P>` and the anticevian triangle of U. Then W is perspective to :g:`W' <W'>`, and the perspector is the crosspoint of :g:`P <P>` and U; see also :term:`crossdifference <crossdifference>`. (Randy Hutson, April 9, 2016)
 
@@ -495,7 +543,7 @@ where
 dual triangle
 -------------
 
-Let :g:`DEF << D E F >>` be a triangle in the plane of triangle :g:`ABC << A B C >>`. Let :g:`D' <D'>` be the isogonal conjugate of the point of intersection of line :g:`EF <[ E F ]>` and the line at infinity. Define :g:`E' <E'>` and :g:`F' <F'>` cyclically. The triangle :g:`D'E'F' << D' E' F' >>` is the *dual* of :g:`DEF << D E F >>`. The vertices of :g:`D'E'F' << D' E' F' >>` lie on the circumcircle, and :g:`D'E'F' << D' E' F' >>` is similar to :g:`DEF << D E F >>`. The duality is between the sidelines :g:`EF <[ E F ]>`, :g:`FD <[ F D ]>`, :g:`DE <[ D E ]>` and the points :g:`D' <D'>`, :g:`E' <E'>`, :g:`F' <F'>`, respectively. For example, if :g:`E <E>` and :g:`F <F>` remain fixed and D varies, then :g:`D' <D'>` remains fixed, while :g:`E'F' <[ E' F' ]>` varies. (From the preamble to X(2979) in ETC.)
+Let :g:`DEF << D E F >>` be a triangle in the plane of triangle :g:`ABC << A B C >>`. Let :g:`D' <D'>` be the isogonal conjugate of the point of intersection of line :g:`EF <[ E F ]>` and the line at infinity. Define :g:`E' <E'>` and :g:`F' <F'>` cyclically. The triangle :g:`D'E'F' << D' E' F' >>` is the *dual* of :g:`DEF << D E F >>`. The vertices of :g:`D'E'F' << D' E' F' >>` lie on the circumcircle, and :g:`D'E'F' << D' E' F' >>` is similar to :g:`DEF << D E F >>`. The duality is between the sidelines :g:`EF <[ E F ]>`, :g:`FD <[ F D ]>`, :g:`DE <[ D E ]>` and the points :g:`D' <D'>`, :g:`E' <E'>`, :g:`F' <F'>`, respectively. For example, if :g:`E <E>` and :g:`F <F>` remain fixed and D varies, then :g:`D' <D'>` remains fixed, while :g:`E'F' <[ E' F' ]>` varies. (From the preamble to X_2979 in ETC.)
 
 .. _eigencenter:
 .. _term-eigencenter:
@@ -517,13 +565,29 @@ Suppose the A-, B-, C- vertices of :g:`T <T>` are :g:`P_{i} <P_i>` =\ :math:`x_{
 
 Let x = st - uv, and define y and z cyclically. Then the eigencenter of :g:`T <T>` is the point :math:`x : y : z`.
 
+.. _euler-triangle:
+.. _term-euler-triangle:
+
+Euler triangle
+--------------
+
+Also called the 1st Euler triangle or Feuerbach triangle; its vertices are the midpoints of the segments joining :g:`A <A>`, :g:`B <B>`, :g:`C <C>` to the orthocenter :ref:`X_4 <X_4>`. (See :term:`central triangle <central-triangle>`.)
+
 .. _excentral-triangle:
 .. _term-excentral-triangle:
 
 excentral triangle
 ------------------
 
-The anticevian triangle of the incenter :ref:`X(1) <X(1)>` =\ :math:`1 : 1 : 1`, whose vertices are the three excenters of :g:`ABC << A B C >>`. (See :term:`anticevian triangle <anticevian-triangle>`.)
+The anticevian triangle of the incenter :ref:`X_1 <X_1>` =\ :math:`1 : 1 : 1`, whose vertices are the three excenters of :g:`ABC << A B C >>`. (See :term:`anticevian triangle <anticevian-triangle>`.)
+
+.. _extangents-triangle:
+.. _term-extangents-triangle:
+
+extangents triangle
+-------------------
+
+The triangle bounded by the external common tangents to pairs of excircles (equivalently, reflections of sidelines in the exterior angle bisectors). (See :term:`central triangle <central-triangle>`.)
 
 .. _extouch-triangle:
 .. _term-extouch-triangle:
@@ -531,7 +595,23 @@ The anticevian triangle of the incenter :ref:`X(1) <X(1)>` =\ :math:`1 : 1 : 1`,
 extouch triangle
 ----------------
 
-The cevian triangle of the Nagel point :ref:`X(8) <X(8)>`, whose vertices are the points of tangency of the A-, B-, :g:`C <C>`-excircles with sides :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`. (See :term:`cevian triangle <cevian-triangle>`.)
+The cevian triangle of the Nagel point :ref:`X_8 <X_8>`, whose vertices are the points of tangency of the A-, B-, :g:`C <C>`-excircles with sides :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`. (See :term:`cevian triangle <cevian-triangle>`.)
+
+.. _feuerbach-triangle:
+.. _term-feuerbach-triangle:
+
+Feuerbach triangle
+------------------
+
+The triangle formed by the three points of tangency of the nine-point circle with the A-, B-, :g:`C <C>`-excircles (or in some notes, the 1st Euler triangle). (See :term:`euler triangle <euler-triangle>`.)
+
+.. _fuhrmann-triangle:
+.. _term-fuhrmann-triangle:
+
+Fuhrmann triangle
+-----------------
+
+The triangle formed by reflecting the midpoints of the minor arcs :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>` of the circumcircle across the sidelines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`. (See :term:`central triangle <central-triangle>`.)
 
 .. _functional-image:
 .. _term-functional-image:
@@ -557,6 +637,14 @@ where
 
 where S = (bq + cr)u + (cr + ap)v + (ap + bq)w and σ = area of :g:`ABC << A B C >>`.
 
+.. _half-altitude-triangle:
+.. _term-half-altitude-triangle:
+
+half-altitude triangle
+----------------------
+
+The triangle whose vertices are the midpoints of the altitudes AA_h, BB_h, CC_h of triangle :g:`ABC << A B C >>`. (See :term:`central triangle <central-triangle>`.)
+
 .. _he-conjugate:
 .. _term-he-conjugate:
 
@@ -570,6 +658,14 @@ Let :g:`P <P>` =\ :math:`p : q : r` and :g:`U <U>` =\ :math:`u : v : w` be point
 where
 
    :math:`h(p,q,r,u,v,w) = -p(y + z)^{2} + q(z + x)^{2} + r(x + y)^{2} + (qr/p)(x + y)(x + z) - (rp/q)(y + z)(y + x) - (pq/r)(z + x)(z + y)`.
+
+.. _hexyl-triangle:
+.. _term-hexyl-triangle:
+
+hexyl triangle
+--------------
+
+The triangle formed by the intersections of the lines through the excenters perpendicular to the corresponding interior angle bisectors. (See :term:`central triangle <central-triangle>`.)
 
 .. _hirst-inverse:
 .. _term-hirst-inverse:
@@ -601,7 +697,7 @@ Suppose that P has trilinears :math:`x : y : z` wrt :g:`T_{1} <T_1>`. Then the :
 
 Suppose that P has barycentrics :math:`x : y : z` wrt :g:`T_{1} <T_1>`. Then the :g:`T_{1} <T_1>`-to-:g:`T_{2} <T_2>` barycentric image of :g:`P <P>` is the point :g:`P' <P'>` with barycentrics :math:`x : y : z` wrt :g:`T_{2} <T_2>`. This is an affine collineation, preserving collinearities as well as ratios of distances between collinear points. Parallel lines remain parallel under this mapping, so that the line at infinity maps to itself. Conics map to conics of the same type (ellipses, including circles, map to ellipses, parabolas to parabolas, hyperbolas to hyperbolas). Circumconics of :g:`T_{1} <T_1>` map to circumconics of :g:`T_{2} <T_2>` and inconics of :g:`T_{1} <T_1>` map to inconics of :g:`T_{2} <T_2>`.
 
-Let the sidelengths of :g:`T_{1} <T_1>` be denoted :math:`a_{1}`, :math:`b_{1}`, :math:`c_{1}` and the sidelengths of :g:`T_{2} <T_2>` be denoted :math:`a_{2}`, :math:`b_{2}`, :math:`c_{2}`. Suppose that P has coordinates :math:`f(a_{1},b_{1},c_{1}) : g(b_{1},c_{1},a_{1}) : h(c_{1},a_{1},b_{1})` with respect to :g:`T_{1} <T_1>`, where f, g, h either have the same degree of homogeneity, or else one is the zero function and the other two have the same degree of homogeneity. (If P is a center of :g:`T_{1} <T_1>`, then f = g = h.) Then the :g:`T_{1} <T_1>`-to-:g:`T_{2} <T_2>`-functional image of :g:`P <P>` is the point :g:`P' <P'>` with coordinates :math:`f(a_{2},b_{2},c_{2}) : g(b_{2},c_{2},a_{2}) : h(c_{2},a_{2},b_{2})` with respect to :g:`T_{2} <T_2>`. Coordinates here can be trilinears or barycentrics, as long as the same system is used for :g:`T_{1} <T_1>` and :g:`T_{2} <T_2>`. :g:`P' <P'>` serves the same 'function' wrt :g:`T_{2} <T_2>` (e.g., centroid, circumcenter, 1st Brocard point, :g:`A <A>`-vertex of orthic triangle, etc.) as P serves wrt :g:`T_{1} <T_1>`. For example, the orthic-to-excentral functional image of :ref:`X(5) <X(5)>` is :ref:`X(40) <X(40)>`, since :ref:`X(5) <X(5)>` and :ref:`X(40) <X(40)>` are the respective circumcenters of the orthic and excentral triangles. This is a non-affine collineation, preserving collinearities, but not ratios of distances between collinear points (except where these distance ratios define the point, such as midpoints, reflections, etc.). Parallel lines remain parallel under this mapping, so that the line at infinity maps to itself. Circles map to circles. Other conics map to conics, but not necessarily of the same type (e.g., the MacBeath circumconic of :g:`T_{1} <T_1>` may be an ellipse, but maps to the MacBeath circumconic of :g:`T_{2} <T_2>`, which may be a hyperbola.) Circumconics of :g:`T_{1} <T_1>` map to circumconics of :g:`T_{2} <T_2>` and inconics of :g:`T_{1} <T_1>` map to inconics of :g:`T_{2} <T_2>`.
+Let the sidelengths of :g:`T_{1} <T_1>` be denoted :math:`a_{1}`, :math:`b_{1}`, :math:`c_{1}` and the sidelengths of :g:`T_{2} <T_2>` be denoted :math:`a_{2}`, :math:`b_{2}`, :math:`c_{2}`. Suppose that P has coordinates :math:`f(a_{1},b_{1},c_{1}) : g(b_{1},c_{1},a_{1}) : h(c_{1},a_{1},b_{1})` with respect to :g:`T_{1} <T_1>`, where f, g, h either have the same degree of homogeneity, or else one is the zero function and the other two have the same degree of homogeneity. (If P is a center of :g:`T_{1} <T_1>`, then f = g = h.) Then the :g:`T_{1} <T_1>`-to-:g:`T_{2} <T_2>`-functional image of :g:`P <P>` is the point :g:`P' <P'>` with coordinates :math:`f(a_{2},b_{2},c_{2}) : g(b_{2},c_{2},a_{2}) : h(c_{2},a_{2},b_{2})` with respect to :g:`T_{2} <T_2>`. Coordinates here can be trilinears or barycentrics, as long as the same system is used for :g:`T_{1} <T_1>` and :g:`T_{2} <T_2>`. :g:`P' <P'>` serves the same 'function' wrt :g:`T_{2} <T_2>` (e.g., centroid, circumcenter, 1st Brocard point, :g:`A <A>`-vertex of orthic triangle, etc.) as P serves wrt :g:`T_{1} <T_1>`. For example, the orthic-to-excentral functional image of :ref:`X_5 <X_5>` is :ref:`X_40 <X_40>`, since :ref:`X_5 <X_5>` and :ref:`X_40 <X_40>` are the respective circumcenters of the orthic and excentral triangles. This is a non-affine collineation, preserving collinearities, but not ratios of distances between collinear points (except where these distance ratios define the point, such as midpoints, reflections, etc.). Parallel lines remain parallel under this mapping, so that the line at infinity maps to itself. Circles map to circles. Other conics map to conics, but not necessarily of the same type (e.g., the MacBeath circumconic of :g:`T_{1} <T_1>` may be an ellipse, but maps to the MacBeath circumconic of :g:`T_{2} <T_2>`, which may be a hyperbola.) Circumconics of :g:`T_{1} <T_1>` map to circumconics of :g:`T_{2} <T_2>` and inconics of :g:`T_{1} <T_1>` map to inconics of :g:`T_{2} <T_2>`.
 
 .. _incentral-triangle:
 .. _term-incentral-triangle:
@@ -609,7 +705,23 @@ Let the sidelengths of :g:`T_{1} <T_1>` be denoted :math:`a_{1}`, :math:`b_{1}`,
 incentral triangle
 ------------------
 
-The cevian triangle of the incenter :ref:`X(1) <X(1)>` =\ :math:`1 : 1 : 1`, whose vertices are the points where the interior angle bisectors of :g:`ABC << A B C >>` meet the opposite sidelines. (See :term:`cevian triangle <cevian-triangle>`.)
+The cevian triangle of the incenter :ref:`X_1 <X_1>` =\ :math:`1 : 1 : 1`, whose vertices are the points where the interior angle bisectors of :g:`ABC << A B C >>` meet the opposite sidelines. (See :term:`cevian triangle <cevian-triangle>`.)
+
+.. _inner-napoleon-triangle:
+.. _term-inner-napoleon-triangle:
+
+inner Napoleon triangle
+-----------------------
+
+The equilateral triangle formed by the centers of the equilateral triangles erected inward on sides :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`; perspective to :g:`ABC << A B C >>` at :ref:`X_18 <X_18>`. (See :term:`central triangle <central-triangle>`.)
+
+.. _intangents-triangle:
+.. _term-intangents-triangle:
+
+intangents triangle
+-------------------
+
+The triangle bounded by the non-sideline tangents to the incircle that are reflections of the sidelines in the interior angle bisectors. (See :term:`central triangle <central-triangle>`.)
 
 .. _intouch-triangle:
 .. _term-intouch-triangle:
@@ -617,7 +729,7 @@ The cevian triangle of the incenter :ref:`X(1) <X(1)>` =\ :math:`1 : 1 : 1`, who
 intouch triangle
 ----------------
 
-The cevian triangle of the Gergonne point :ref:`X(7) <X(7)>` (also the pedal triangle of the incenter :ref:`X(1) <X(1)>`), whose vertices are the points of tangency of the incircle with the sides of :g:`ABC << A B C >>`. (See :term:`cevian triangle <cevian-triangle>`.)
+The cevian triangle of the Gergonne point :ref:`X_7 <X_7>` (also the pedal triangle of the incenter :ref:`X_1 <X_1>`), whose vertices are the points of tangency of the incircle with the sides of :g:`ABC << A B C >>`. (See :term:`cevian triangle <cevian-triangle>`.)
 
 .. _isoconjugate:
 .. _term-isoconjugate:
@@ -629,7 +741,7 @@ Let :g:`P <P>` =\ :math:`p : q : r` and :g:`U <U>` =\ :math:`u : v : w` be point
 
    :math:`qrvw : rpwu : pquv`.
 
-Examples: the *isogonal conjugate* of :g:`U <U>` is the :ref:`X(1) <X(1)>`-isoconjugate of :g:`U <U>`, and the *isotomic conjugate* of :g:`U <U>` is the :ref:`X(31) <X(31)>`-isoconjugate of :g:`U <U>`.
+Examples: the *isogonal conjugate* of :g:`U <U>` is the :ref:`X_1 <X_1>`-isoconjugate of :g:`U <U>`, and the *isotomic conjugate* of :g:`U <U>` is the :ref:`X_31 <X_31>`-isoconjugate of :g:`U <U>`.
 
 As suggested by the meaning of the prefix "iso",
 
@@ -647,7 +759,7 @@ Thereafter the term "isoconjugate" was sometimes used for *reciprocal conjugate*
 isogonal conjugate
 ------------------
 
-Let :g:`P <P>` =\ :math:`p : q : r` be a point not on a sideline of :g:`ABC << A B C >>`. Let L(A) be the line obtained by reflecting line :g:`AP <[ A P ]>` in the internal bisector of angle A. Define L(B) and L(B) cyclically. The lines L(A), L(B), L(C) concur in the isogonal conjugate of :g:`P <P>`, which has trilinears :math:`1/p : 1/q : 1/r` and is denoted by :math:`P^{-1}`. See :term:`isoconjugate <isoconjugate>`.
+Let :g:`P <P>` =\ :math:`p : q : r` be a point not on a sideline of :g:`ABC << A B C >>`. Let L(A) be the line obtained by reflecting line :g:`AP <[ A P ]>` in the internal bisector of angle :g:`A <A>`. Define L(B) and L(B) cyclically. The lines L(A), L(B), L(C) concur in the isogonal conjugate of :g:`P <P>`, which has trilinears :math:`1/p : 1/q : 1/r` and is denoted by :math:`P^{-1}`. See :term:`isoconjugate <isoconjugate>`.
 
 .. _isoscelizer:
 .. _term-isoscelizer:
@@ -666,6 +778,14 @@ isotomic conjugate
 ------------------
 
 Let :g:`P <P>` =\ :math:`p : q : r` be a point not on a sideline of :g:`ABC << A B C >>`. Let :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>` be the points where lines :g:`AP <[ A P ]>`, :g:`BP <[ B P ]>`, :g:`CP <[ C P ]>` meet lines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, respectively. Reflect :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>` about the midpoints of sides :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, respectively, to obtain points :g:`A″ <A″>`, :g:`B″ <B″>`, :g:`C″ <C″>`. Then lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in the isotomic conjugate of :g:`P <P>`, which has trilinears 1/(:math:`pa^{2})` : 1/(:math:`qb^{2})` : 1/(:math:`r_{c}^{2})`. See :term:`isoconjugate <isoconjugate>`.
+
+.. _kosnita-triangle:
+.. _term-kosnita-triangle:
+
+Kosnita triangle
+----------------
+
+The triangle whose vertices are the circumcenters O_A, O_B, O_C of triangles :g:`BOC << B O C >>`, :g:`COA << C O A >>`, :g:`AOB << A O B >>`, where :g:`O <O>` = :ref:`X_3 <X_3>` is the circumcenter of :g:`ABC << A B C >>`; perspective to :g:`ABC << A B C >>` at the Kosnita point :ref:`X_54 <X_54>`. (See :term:`central triangle <central-triangle>`.)
 
 .. _line:
 .. _term-line:
@@ -722,7 +842,7 @@ This point is the :g:`A <A>`-vertex of the line-polar triangle. The B- and C- ve
 major center
 ------------
 
-A major center is a triangle center X for which there exists a function f(A) such that :g:`X <X>` =\ :math:`f(A) : f(B) : f(C)`. Examples: :ref:`X(1) <X(1)>`, :ref:`X(2) <X(2)>`, :ref:`X(3) <X(3)>`, :ref:`X(4) <X(4)>`, :ref:`X(6) <X(6)>`. Major centers solve certain problems in functional equations; click `here (AeqMath) <http://www.link.springer.de/link/service/journals/00010/bibs/8055003/80550251.htm>`__ or `here (AMM) <http://www.maa.org/pubs/monthly_may97_toc.html>`__ for more.
+A major center is a triangle center X for which there exists a function f(A) such that :g:`X <X>` =\ :math:`f(A) : f(B) : f(C)`. Examples: :ref:`X_1 <X_1>`, :ref:`X_2 <X_2>`, :ref:`X_3 <X_3>`, :ref:`X_4 <X_4>`, :ref:`X_6 <X_6>`. Major centers solve certain problems in functional equations; click `here (AeqMath) <http://www.link.springer.de/link/service/journals/00010/bibs/8055003/80550251.htm>`__ or `here (AMM) <http://www.maa.org/pubs/monthly_may97_toc.html>`__ for more.
 
 .. _medial-triangle:
 .. _term-medial-triangle:
@@ -730,7 +850,7 @@ A major center is a triangle center X for which there exists a function f(A) suc
 medial triangle
 ---------------
 
-The cevian triangle of the centroid :ref:`X(2) <X(2)>` =\ :math:`1/a : 1/b : 1/c`, whose vertices are the midpoints of sides :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`. (See :term:`cevian triangle <cevian-triangle>`.)
+The cevian triangle of the centroid :ref:`X_2 <X_2>` =\ :math:`1/a : 1/b : 1/c`, whose vertices are the midpoints of sides :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`. (See :term:`cevian triangle <cevian-triangle>`.)
 
 .. _orthic-triangle:
 .. _term-orthic-triangle:
@@ -738,7 +858,7 @@ The cevian triangle of the centroid :ref:`X(2) <X(2)>` =\ :math:`1/a : 1/b : 1/c
 orthic triangle
 ---------------
 
-The cevian (and pedal) triangle of the orthocenter :ref:`X(4) <X(4)>` = sec A : sec B : sec C, whose vertices are the feet of the altitudes of :g:`ABC << A B C >>`. (See :term:`cevian triangle <cevian-triangle>`.)
+The cevian (and pedal) triangle of the orthocenter :ref:`X_4 <X_4>` = sec A : sec B : sec C, whose vertices are the feet of the altitudes of :g:`ABC << A B C >>`. (See :term:`cevian triangle <cevian-triangle>`.)
 
 .. _orthojoin:
 .. _term-orthojoin:
@@ -781,7 +901,15 @@ Each point :g:`X <X>` on the line at infinity is the point common to every line 
 
    :math:`H(X) = cy \cos B - bz \cos C : az \cos C - cx \cos A : bx \cos A - ay \cos B`.
 
-For any X on the line at infinity, the isogonal conjugates of :g:`X <X>` and H(X) are circumcircle-antipodes; i.e., each is the :ref:`X(3) <X(3)>`-reflection of the other.
+For any X on the line at infinity, the isogonal conjugates of :g:`X <X>` and H(X) are circumcircle-antipodes; i.e., each is the :ref:`X_3 <X_3>`-reflection of the other.
+
+.. _outer-napoleon-triangle:
+.. _term-outer-napoleon-triangle:
+
+outer Napoleon triangle
+-----------------------
+
+The equilateral triangle formed by the centers of the equilateral triangles erected outward on sides :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`; perspective to :g:`ABC << A B C >>` at :ref:`X_17 <X_17>`. (See :term:`central triangle <central-triangle>`.)
 
 .. _pedal-triangle:
 .. _term-pedal-triangle:
@@ -857,7 +985,7 @@ A triangle center X is a polynomial center if there exists a polynomial f(a,b,c)
 
    :math:`X = f(a,b,c) : f(b,c,a) : f(c,a,b)`.
 
-Examples: :ref:`X(1) <X(1)>`, :ref:`X(2) <X(2)>`, . . . , :ref:`X(12) <X(12)>`, but not :ref:`X(13) <X(13)>`.
+Examples: :ref:`X_1 <X_1>`, :ref:`X_2 <X_2>`, . . . , :ref:`X_12 <X_12>`, but not :ref:`X_13 <X_13>`.
 
 .. _radical-trace:
 .. _term-radical-trace:
@@ -887,6 +1015,14 @@ The term *reciprocal conjugate* was introduced in Keith Dean and Floor van Lamoe
 
 See also :term:`isoconjugate. <isoconjugate>`
 
+.. _reflection-triangle:
+.. _term-reflection-triangle:
+
+reflection triangle
+-------------------
+
+The triangle whose vertices are the reflections of vertices :g:`A <A>`, :g:`B <B>`, :g:`C <C>` across their opposite sidelines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`. (See :term:`central triangle <central-triangle>`.)
+
 .. _similarity-image:
 .. _term-similarity-image:
 
@@ -911,13 +1047,21 @@ Example: The symbolic substitution (a, b, c) →(1/a, 1/b, 1/c) maps every trian
 
 Symbolic substitutions are introduced in C. Kimberling, "Symbolic substitutions in the transfigured plane of a triangle," *Aequationes Mathematicae* 73 (2007) 156-171.
 
+.. _symmedial-triangle:
+.. _term-symmedial-triangle:
+
+symmedial triangle
+------------------
+
+The cevian triangle of the symmedian point :ref:`X_6 <X_6>` =\ :math:`a : b : c`, whose vertices are the intersections of the symmedians with sidelines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`. (See :term:`cevian triangle <cevian-triangle>`.)
+
 .. _syngonal-image:
 .. _term-syngonal-image:
 
 syngonal image
 --------------
 
-Let :g:`P <P>` =\ :math:`p : q : r` (barycentric coordinates) be a point not on a sideline of :g:`ABC << A B C >>`, not :ref:`X(3) <X(3)>`, and not on the circumcircle of :g:`ABC << A B C >>`. The syngonal image of :g:`P <P>` is the point k(P) given by barycentyrics
+Let :g:`P <P>` =\ :math:`p : q : r` (barycentric coordinates) be a point not on a sideline of :g:`ABC << A B C >>`, not :ref:`X_3 <X_3>`, and not on the circumcircle of :g:`ABC << A B C >>`. The syngonal image of :g:`P <P>` is the point k(P) given by barycentyrics
 
    :math:`k(a,b,c,p,q,r) : k(b,c,a,q,r,p) : k(c,a,b,r,p,q)`,
 
@@ -933,7 +1077,7 @@ The point k(P) is the antigonal image of the anticomplement of P. For further de
 tangential triangle
 -------------------
 
-The anticevian triangle of the symmedian point :ref:`X(6) <X(6)>` =\ :math:`a : b : c`, formed by the lines tangent to the circumcircle of :g:`ABC << A B C >>` at vertices :g:`A <A>`, :g:`B <B>`, :g:`C <C>`. (See :term:`anticevian triangle <anticevian-triangle>`.)
+The anticevian triangle of the symmedian point :ref:`X_6 <X_6>` =\ :math:`a : b : c`, formed by the lines tangent to the circumcircle of :g:`ABC << A B C >>` at vertices :g:`A <A>`, :g:`B <B>`, :g:`C <C>`. (See :term:`anticevian triangle <anticevian-triangle>`.)
 
 .. _term-transcendental-center:
 .. _transcendental-center:
@@ -941,7 +1085,7 @@ The anticevian triangle of the symmedian point :ref:`X(6) <X(6)>` =\ :math:`a : 
 transcendental center
 ---------------------
 
-A triangle center X is a transcendental center if there exists no algebraic function f(a,b,c) such that :g:`X <X>` =\ :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`. Examples: :ref:`X(359) <X(359)>` and :ref:`X(360) <X(360)>`.
+A triangle center X is a transcendental center if there exists no algebraic function f(a,b,c) such that :g:`X <X>` =\ :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`. Examples: :ref:`X_359 <X_359>` and :ref:`X_360 <X_360>`.
 
 .. _term-triangle-center:
 .. _triangle-center:
@@ -1041,4 +1185,4 @@ where
 
    :math:`h(p,q,r,u,v,w) = p(y + z)^{2} - ry^{2} - qz^{2} + (p - r)xy + (p - q)xz`.
 
-Note that :ref:`X(1) <X(1)>`-zayin conjugacy is simply isogonal conjugacy.
+Note that :ref:`X_1 <X_1>`-zayin conjugacy is simply isogonal conjugacy.

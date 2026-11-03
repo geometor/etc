@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(384) = THE CONWAY POINT: EULER LINE INTERCEPT OF LINE X(32)X(76)."""
+"""GEOMETOR construction model for X_384 = THE CONWAY POINT: EULER LINE INTERCEPT OF LINE X_32X_76."""
 
 from __future__ import annotations
 
@@ -22,16 +22,16 @@ from geometor.etc.render import write_center_svg
 def construct_x_00384(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(384) = THE CONWAY POINT: EULER LINE INTERCEPT OF LINE X(32)X(76) on reference triangle ABC."""
-    X_384 = eval_trilinear_point(model, A, B, C, 'b*c*(a**(4) + b**(2)*c**(2))', ID="X(384)", classes=["selected", "target"])
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
+    """Construct X_384 = THE CONWAY POINT: EULER LINE INTERCEPT OF LINE X_32X_76 on reference triangle ABC."""
+    X_384 = eval_trilinear_point(model, A, B, C, 'b*c*(a**(4) + b**(2)*c**(2))', ID="X_384", classes=["selected", "target"])
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
-    X_32 = eval_trilinear_point(model, A, B, C, 'a**(3)', ID="X(32)", classes=["center", "incident"])
-    X_76 = eval_trilinear_point(model, A, B, C, '1/a**(3)', ID="X(76)", classes=["center", "incident"])
+    X_32 = eval_trilinear_point(model, A, B, C, 'a**(3)', ID="X_32", classes=["center", "incident"])
+    X_76 = eval_trilinear_point(model, A, B, C, '1/a**(3)', ID="X_76", classes=["center", "incident"])
     central_line(model, X_32, X_76, 32, 76, incident=True)
-    X_39 = eval_trilinear_point(model, A, B, C, 'a*(b**(2) + c**(2))', ID="X(39)", classes=["center", "incident"])
-    X_83 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(2) + c**(2))', ID="X(83)", classes=["center", "incident"])
+    X_39 = eval_trilinear_point(model, A, B, C, 'a*(b**(2) + c**(2))', ID="X_39", classes=["center", "incident"])
+    X_83 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(2) + c**(2))', ID="X_83", classes=["center", "incident"])
     central_line(model, X_39, X_83, 39, 83, incident=True)
     return promote_point_to_top(model, X_384)
 
@@ -40,8 +40,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(384) on the given reference triangle."""
-    model = create_model('X(384) = THE CONWAY POINT: EULER LINE INTERCEPT OF LINE X(32)X(76)')
+    """Build a `geometor.model.Model` for X_384 on the given reference triangle."""
+    model = create_model('X_384 = THE CONWAY POINT: EULER LINE INTERCEPT OF LINE X_32X_76')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00384(model, A, B, C)
     return model

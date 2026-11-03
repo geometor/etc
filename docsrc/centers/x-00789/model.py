@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(789) = o-(- 3, 0) CIRCUMCIRCLE POINT."""
+"""GEOMETOR construction model for X_789 = o-(- 3, 0) CIRCUMCIRCLE POINT."""
 
 from __future__ import annotations
 
@@ -24,17 +24,17 @@ from geometor.etc.render import write_center_svg
 def construct_x_00789(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(789) = o-(- 3, 0) CIRCUMCIRCLE POINT on reference triangle ABC."""
-    X_788 = eval_trilinear_point(model, A, B, C, 'a**(2)*(b**(3) - c**(3))', ID="X(788)", classes=["center"])
-    X_789 = isogonal_conjugate(model, A, B, C, X_788, ID="X(789)", classes=["selected", "target"])
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
-    X_717 = point_from_barycentrics(model, A, B, C, -0.11378233, 0.83644215, 0.27734019, ID="X(717)", classes=["center", "incident"])
+    """Construct X_789 = o-(- 3, 0) CIRCUMCIRCLE POINT on reference triangle ABC."""
+    X_788 = eval_trilinear_point(model, A, B, C, 'a**(2)*(b**(3) - c**(3))', ID="X_788", classes=["center"])
+    X_789 = isogonal_conjugate(model, A, B, C, X_788, ID="X_789", classes=["selected", "target"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
+    X_717 = point_from_barycentrics(model, A, B, C, -0.11378233, 0.83644215, 0.27734019, ID="X_717", classes=["center", "incident"])
     central_line(model, X_6, X_717, 6, 717, incident=True)
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
-    X_731 = point_from_barycentrics(model, A, B, C, -0.066708688, 0.92072953, 0.14597916, ID="X(731)", classes=["center", "incident"])
+    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
+    X_731 = point_from_barycentrics(model, A, B, C, -0.066708688, 0.92072953, 0.14597916, ID="X_731", classes=["center", "incident"])
     central_line(model, X_1, X_731, 1, 731, incident=True)
-    X_31 = eval_trilinear_point(model, A, B, C, 'a**(2)', ID="X(31)", classes=["center", "incident"])
-    X_701 = point_from_barycentrics(model, A, B, C, -0.1449378, 0.75165971, 0.39327809, ID="X(701)", classes=["center", "incident"])
+    X_31 = eval_trilinear_point(model, A, B, C, 'a**(2)', ID="X_31", classes=["center", "incident"])
+    X_701 = point_from_barycentrics(model, A, B, C, -0.1449378, 0.75165971, 0.39327809, ID="X_701", classes=["center", "incident"])
     central_line(model, X_31, X_701, 31, 701, incident=True)
     return promote_point_to_top(model, X_789)
 
@@ -43,8 +43,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(789) on the given reference triangle."""
-    model = create_model('X(789) = o-(- 3, 0) CIRCUMCIRCLE POINT')
+    """Build a `geometor.model.Model` for X_789 on the given reference triangle."""
+    model = create_model('X_789 = o-(- 3, 0) CIRCUMCIRCLE POINT')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00789(model, A, B, C)
     return model

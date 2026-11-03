@@ -1,18 +1,21 @@
-:canonical_id: X(436)
+:canonical_id: X_436
 :type: code
+:subtitle: EULER X_48-7th-SUBSTITUTION POINT
 
-X(436) = EULER X(48)-7th-SUBSTITUTION POINT — Code
-==================================================
+X_436
+=====
+
+.. rubric:: EULER X_48-7th-SUBSTITUTION POINT
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(436) <X(436)>` has Shinagawa coefficients :math:`(2F^{2},-(E + F)F + S^{2})`.
+   :ref:`X_436 <X_436>` = orthocentroidal-circle-inverse of X_52249
 
 .. figure:: x-00436.svg
-   :alt: X(436) = EULER X(48)-7th-SUBSTITUTION POINT
+   :alt: X_436 — EULER X_48-7th-SUBSTITUTION POINT
    :align: center
 
-   **X(436) = EULER X(48)-7th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_436** (*EULER X_48-7th-SUBSTITUTION POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

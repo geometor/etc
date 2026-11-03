@@ -1,22 +1,31 @@
 :order: 470
 :type: center
-:canonical_id: X(470)
-:dependencies: X(2), X(3), X(4), X(6), X(13), X(15), X(18), X(63), X(264), X(275), X(298), X(301), X(302), X(317), X(340), X(343), X(394), X(395), X(471), X(523), X(633), X(634), X(3457), X(6110), X(6111), X(6137), X(6782), X(8739), X(11243), X(19772), X(19774), X(23714), X(30465), X(32461), X(36296)
+:canonical_id: X_470
+:subtitle: X_15-CROSS CONJUGATE OF X_298
+:dependencies: X_2, X_3, X_4, X_6, X_13, X_15, X_18, X_63, X_264, X_275, X_298, X_301, X_302, X_317, X_340, X_343, X_394, X_395, X_471, X_523, X_633, X_634, X_3457, X_6110, X_6111, X_6137, X_6782, X_8739, X_11243, X_19772, X_19774, X_23714, X_30465, X_32461, X_36296
 
-.. _X(470):
+.. _X_470:
 
-X(470) = X(15)-CROSS CONJUGATE OF X(298)
-========================================
+X_470
+=====
+
+.. rubric:: X_15-CROSS CONJUGATE OF X_298
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(470) <X(470)>` has Shinagawa coefficients :math:`(3^{1/2}F, S)`.
+   :ref:`X_470 <X_470>` = orthocentroidal-circle-inverse of :ref:`X_471 <X_471>`
 
 .. figure:: x-00470.svg
-   :alt: X(470) = X(15)-CROSS CONJUGATE OF X(298)
+   :alt: X_470 — X_15-CROSS CONJUGATE OF X_298
    :align: center
 
-   **X(470) = X(15)-CROSS CONJUGATE OF X(298)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_470** (*X_15-CROSS CONJUGATE OF X_298*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`), :g:`{18, 275} <{ 18, 275 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_18 <X_18>` (:ref:`2nd NAPOLEON POINT <X_18>`), :g:`X_275 <X_275>` (:ref:`CEVAPOINT OF ORTHOCENTER AND SYMMEDIAN POINT <X_275>`)
 
 .. signature:: center
 
@@ -33,25 +42,32 @@ X(470) = X(15)-CROSS CONJUGATE OF X(298)
    :badge: 7 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`18 <X(18)>`, :ref:`275 <X(275)>`}, {:ref:`264 <X(264)>`, :ref:`301 <X(301)>`}, {:ref:`298 <X(298)>`, :ref:`340 <X(340)>`}, {:ref:`302 <X(302)>`, :ref:`317 <X(317)>`}, {:ref:`343 <X(343)>`, :ref:`634 <X(634)>`}, {:ref:`394 <X(394)>`, :ref:`633 <X(633)>`}
+   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`18 <X_18>`, :ref:`275 <X_275>`}, {:ref:`264 <X_264>`, :ref:`301 <X_301>`}, {:ref:`298 <X_298>`, :ref:`340 <X_340>`}, {:ref:`302 <X_302>`, :ref:`317 <X_317>`}, {:ref:`343 <X_343>`, :ref:`634 <X_634>`}, {:ref:`394 <X_394>`, :ref:`633 <X_633>`}
 
 .. collapse:: Functional Relations
    :badge: 14 relations
 
-   * :ref:`X(470) <X(470)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(36296)
-   * :ref:`X(470) <X(470)>` = :term:`complement <complement>` of X(19772)
-   * :ref:`X(470) <X(470)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these {i,j}: {:ref:`15 <X(15)>`, 8739}, {6111, 23714}, {6137, 30465}
-   * :ref:`X(470) <X(470)>` = :term:`crosspoint <crosspoint>` of :ref:`X(2) <X(2)>` and X(19774)
-   * :ref:`X(470) <X(470)>` = :term:`crosssum <crosssum>` of :ref:`X(6) <X(6)>` and X(11243)
-   * :ref:`X(470) <X(470)>` = :term:`trilinear pole <trilinear-pole>` of line X(6110)X(6782)
-   * :ref:`X(470) <X(470)>` = orthocentroidal-circle-inverse of :ref:`X(471) <X(471)>`
-   * :ref:`X(470) <X(470)>` = polar-circle-inverse of X(32461)
-   * :ref:`X(470) <X(470)>` = :ref:`X(15) <X(15)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(298) <X(298)>`
-   * :ref:`X(470) <X(470)>` = :ref:`X(4) <X(4)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(471) <X(471)>`
-   * :ref:`X(470) <X(470)>` = :ref:`X(63) <X(63)>`-:term:`isoconjugate <isoconjugate>` of X(3457)
-   * :ref:`X(470) <X(470)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(13) <X(13)>` (line :ref:`X(395) <X(395)>`\ \ :ref:`X(523) <X(523)>`)
-   * :ref:`X(470) <X(470)>` = polar conjugate of :ref:`X(13) <X(13)>`
-   * :ref:`X(470) <X(470)>` = {:ref:`X(2) <X(2)>`,\ :ref:`X(4) <X(4)>`}-harmonic conjugate of :ref:`X(471) <X(471)>`
+   * :ref:`X_470 <X_470>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_36296
+   * :ref:`X_470 <X_470>` = :term:`complement <complement>` of X_19772
+   * :ref:`X_470 <X_470>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these {i,j}: {:ref:`15 <X_15>`, 8739}, {6111, 23714}, {6137, 30465}
+   * :ref:`X_470 <X_470>` = :term:`crosspoint <crosspoint>` of :ref:`X_2 <X_2>` and X_19774
+   * :ref:`X_470 <X_470>` = :term:`crosssum <crosssum>` of :ref:`X_6 <X_6>` and X_11243
+   * :ref:`X_470 <X_470>` = :term:`trilinear pole <trilinear-pole>` of line X_6110X_6782
+   * :ref:`X_470 <X_470>` = orthocentroidal-circle-inverse of :ref:`X_471 <X_471>`
+   * :ref:`X_470 <X_470>` = polar-circle-inverse of X_32461
+   * :ref:`X_470 <X_470>` = :ref:`X_15 <X_15>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_298 <X_298>`
+   * :ref:`X_470 <X_470>` = :ref:`X_4 <X_4>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X_471 <X_471>`
+   * :ref:`X_470 <X_470>` = :ref:`X_63 <X_63>`-:term:`isoconjugate <isoconjugate>` of X_3457
+   * :ref:`X_470 <X_470>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_13 <X_13>` (line :ref:`X_395 <X_395>`\ \ :ref:`X_523 <X_523>`)
+   * :ref:`X_470 <X_470>` = polar conjugate of :ref:`X_13 <X_13>`
+   * :ref:`X_470 <X_470>` = {:ref:`X_2 <X_2>`,\ :ref:`X_4 <X_4>`}-harmonic conjugate of :ref:`X_471 <X_471>`
+
+Notes
+-----
+
+.. container:: note-item
+
+   As a point on the Euler line, :ref:`X_470 <X_470>` has Shinagawa coefficients :math:`(3^{1/2}F, S)`.
 
 .. toctree::
    :hidden:

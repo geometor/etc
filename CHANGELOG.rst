@@ -3,6 +3,19 @@ changelog
 
 :project: geometor.etc
 
+0.1.5
+-----
+
+- Standardized triangle center identifiers and references from `X(n)` to subscripted `X_n` (`X_1`, `X_2`, …, rendered as `X<sub>n</sub>` in HTML and `<tspan>` subscripts in SVG).
+- Added contextual `A'B'C'` classical triangle resolution in prose so `:g:` roles bind `A'`, `B'`, `C'` to their model IDs (`M_a`, `H_a`, `T_a`, `I_a`, etc.) when constructed on the canvas.
+- Rendered underscore point labels (`M_a`, `H_a`, `I_a`, `X_n`) with `<tspan>` subscripts and font-relative `0.15em` strokes in Explorer-styled SVGs.
+- Redesigned center page headings as two centered lines (`X_n` over bold non-italic subtitle rubric, with `position: absolute` headerlink alignment).
+
+0.1.4
+-----
+
+- Added semantic math normalization and `:g:` geometric element roles across parsed center descriptions, notes, and glossary entries.
+
 0.1.3
 -----
 

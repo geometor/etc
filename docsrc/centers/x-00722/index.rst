@@ -1,22 +1,31 @@
 :order: 722
 :type: center
-:canonical_id: X(722)
-:dependencies: X(30), X(511), X(723)
+:canonical_id: X_722
+:subtitle: EVEN (- 3, 3) INFINITY POINT
+:dependencies: X_30, X_511, X_723
 
-.. _X(722):
+.. _X_722:
 
-X(722) = EVEN (- 3, 3) INFINITY POINT
-=====================================
+X_722
+=====
+
+.. rubric:: EVEN (- 3, 3) INFINITY POINT
 
 .. enunciation::
 
-   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X(722) <X(722)>` lies on the line at infinity.
+   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X_722 <X_722>` lies on the line at infinity.
 
 .. figure:: x-00722.svg
-   :alt: X(722) = EVEN (- 3, 3) INFINITY POINT
+   :alt: X_722 — EVEN (- 3, 3) INFINITY POINT
    :align: center
 
-   **X(722) = EVEN (- 3, 3) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_722** (*EVEN (- 3, 3) INFINITY POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{30, 511} <{ 30, 511 }>`
+   * **Related Centers:** :g:`X_723 <X_723>` (:ref:`EVEN (- 3, 3) CIRCUMCIRCLE POINT <X_723>`), :g:`X_30 <X_30>` (:ref:`EULER INFINITY POINT <X_30>`), :g:`X_511 <X_511>` (:ref:`ISOGONAL CONJUGATE OF X(98) <X_511>`)
 
 .. signature:: center
 
@@ -27,12 +36,12 @@ X(722) = EVEN (- 3, 3) INFINITY POINT
    :badge: 1 line
    :class: line-catalog
 
-   {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}
+   {:ref:`30 <X_30>`, :ref:`511 <X_511>`}
 
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(722) <X(722)>` = isogonal conjugate of :ref:`X(723) <X(723)>`
+   * :ref:`X_722 <X_722>` = isogonal conjugate of :ref:`X_723 <X_723>`
 
 .. toctree::
    :hidden:

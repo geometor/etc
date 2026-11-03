@@ -1,22 +1,31 @@
 :order: 799
 :type: center
-:canonical_id: X(799)
-:dependencies: X(1), X(2), X(6), X(39), X(63), X(75), X(88), X(99), X(100), X(110), X(162), X(190), X(274), X(310), X(333), X(512), X(561), X(645), X(651), X(661), X(668), X(670), X(689), X(789), X(798), X(811), X(813), X(873), X(897), X(6189), X(6190), X(6376), X(16592), X(21220)
+:canonical_id: X_799
+:subtitle: ISOGONAL CONJUGATE OF X_798
+:dependencies: X_1, X_2, X_6, X_39, X_63, X_75, X_88, X_99, X_100, X_110, X_162, X_190, X_274, X_310, X_333, X_512, X_561, X_645, X_651, X_661, X_668, X_670, X_689, X_789, X_798, X_811, X_813, X_873, X_897, X_6189, X_6190, X_6376, X_16592, X_21220
 
-.. _X(799):
+.. _X_799:
 
-X(799) = ISOGONAL CONJUGATE OF X(798)
-=====================================
+X_799
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_798
 
 .. enunciation::
 
-   Let :g:`L_{a} <L_a>` be the A-extraversion of line :ref:`X(1) <X(1)>`\ \ :ref:`X(75) <X(75)>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>` ∩ :g:`L_{c} <L_c>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(799) <X(799)>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2018)
+   :ref:`X_799 <X_799>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_798 <X_798>`.
 
 .. figure:: x-00799.svg
-   :alt: X(799) = ISOGONAL CONJUGATE OF X(798)
+   :alt: X_799 — ISOGONAL CONJUGATE OF X_798
    :align: center
 
-   **X(799) = ISOGONAL CONJUGATE OF X(798)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_799** (*ISOGONAL CONJUGATE OF X_798*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{99, 100} <{ 99, 100 }>`, :g:`{88, 274} <{ 88, 274 }>`
+   * **Related Centers:** :g:`X_798 <X_798>` (:ref:`CROSSDIFFERENCE OF X(1) AND X(75) <X_798>`), :g:`X_99 <X_99>` (:ref:`STEINER POINT <X_99>`), :g:`X_100 <X_100>` (:ref:`ANTICOMPLEMENT OF FEUERBACH POINT <X_100>`), :g:`X_88 <X_88>` (:ref:`ISOGONAL CONJUGATE OF X(44) <X_88>`), :g:`X_274 <X_274>` (:ref:`ISOGONAL CONJUGATE OF X(213) <X_274>`)
 
 .. signature:: center
 
@@ -33,28 +42,32 @@ X(799) = ISOGONAL CONJUGATE OF X(798)
    :badge: 11 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`873 <X(873)>`}, {:ref:`63 <X(63)>`, :ref:`561 <X(561)>`}, {:ref:`75 <X(75)>`, :ref:`897 <X(897)>`}, {:ref:`88 <X(88)>`, :ref:`274 <X(274)>`}, {:ref:`99 <X(99)>`, :ref:`100 <X(100)>`}, {:ref:`110 <X(110)>`, :ref:`789 <X(789)>`}, {:ref:`162 <X(162)>`, :ref:`811 <X(811)>`}, {:ref:`190 <X(190)>`, :ref:`670 <X(670)>`}, {:ref:`310 <X(310)>`, :ref:`333 <X(333)>`}, {:ref:`645 <X(645)>`, :ref:`651 <X(651)>`}, {:ref:`689 <X(689)>`, :ref:`813 <X(813)>`}
+   {:ref:`2 <X_2>`, :ref:`873 <X_873>`}, {:ref:`63 <X_63>`, :ref:`561 <X_561>`}, {:ref:`75 <X_75>`, :ref:`897 <X_897>`}, {:ref:`88 <X_88>`, :ref:`274 <X_274>`}, {:ref:`99 <X_99>`, :ref:`100 <X_100>`}, {:ref:`110 <X_110>`, :ref:`789 <X_789>`}, {:ref:`162 <X_162>`, :ref:`811 <X_811>`}, {:ref:`190 <X_190>`, :ref:`670 <X_670>`}, {:ref:`310 <X_310>`, :ref:`333 <X_333>`}, {:ref:`645 <X_645>`, :ref:`651 <X_651>`}, {:ref:`689 <X_689>`, :ref:`813 <X_813>`}
 
 .. collapse:: Functional Relations
    :badge: 10 relations
 
-   * :ref:`X(799) <X(799)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(798) <X(798)>`
-   * :ref:`X(799) <X(799)>` = :term:`complement <complement>` of X(21220)
-   * :ref:`X(799) <X(799)>` = :term:`anticomplement <anticomplement>` of X(16592)
-   * :ref:`X(799) <X(799)>` = :ref:`X(190) <X(190)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(99) <X(99)>`
-   * :ref:`X(799) <X(799)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(1) <X(1)>`\ \ :ref:`X(75) <X(75)>`
-   * :ref:`X(799) <X(799)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(661) <X(661)>`
-   * :ref:`X(799) <X(799)>` = perspector of :g:`ABC << A B C >>` and the :term:`tangential triangle <tangential-triangle>`, wrt the :term:`excentral triangle <excentral-triangle>`, of the bianticevian conic of :ref:`X(1) <X(1)>` and :ref:`X(2) <X(2)>` (see :ref:`X(99) <X(99)>`)
-   * :ref:`X(799) <X(799)>` = :ref:`X(6) <X(6)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(512) <X(512)>`
-   * :ref:`X(799) <X(799)>` = trilinear product of circumcircle intercepts of line :ref:`X(2) <X(2)>`\ \ :ref:`X(39) <X(39)>`
-   * :ref:`X(799) <X(799)>` = trilinear product X(6189)\*X(6190) (the intercepts of Steiner circumellipse and line :ref:`X(2) <X(2)>`\ \ :ref:`X(6) <X(6)>`)
+   * :ref:`X_799 <X_799>` = isogonal conjugate of :ref:`X_798 <X_798>`
+   * :ref:`X_799 <X_799>` = :term:`complement <complement>` of X_21220
+   * :ref:`X_799 <X_799>` = :term:`anticomplement <anticomplement>` of X_16592
+   * :ref:`X_799 <X_799>` = :ref:`X_190 <X_190>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_99 <X_99>`
+   * :ref:`X_799 <X_799>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_1 <X_1>`\ \ :ref:`X_75 <X_75>`
+   * :ref:`X_799 <X_799>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_661 <X_661>`
+   * :ref:`X_799 <X_799>` = perspector of :g:`ABC << A B C >>` and the :term:`tangential triangle <tangential-triangle>`, wrt the :term:`excentral triangle <excentral-triangle>`, of the bianticevian conic of :ref:`X_1 <X_1>` and :ref:`X_2 <X_2>` (see :ref:`X_99 <X_99>`)
+   * :ref:`X_799 <X_799>` = :ref:`X_6 <X_6>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_512 <X_512>`
+   * :ref:`X_799 <X_799>` = trilinear product of circumcircle intercepts of line :ref:`X_2 <X_2>`\ \ :ref:`X_39 <X_39>`
+   * :ref:`X_799 <X_799>` = trilinear product X_6189\*X_6190 (the intercepts of Steiner circumellipse and line :ref:`X_2 <X_2>`\ \ :ref:`X_6 <X_6>`)
 
 Notes
 -----
 
 .. container:: note-item
 
-   As the trilinear product of Steiner circumellipse antipodes, :ref:`X(799) <X(799)>` lies on conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(668) <X(668)>`,\ :ref:`X(789) <X(789)>`}} with center X(6376) and perspector :ref:`X(75) <X(75)>`. (Randy Hutson, July 11, 2019)
+   Let :g:`L_{a} <L_a>` be the A-extraversion of line :ref:`X_1 <X_1>`\ \ :ref:`X_75 <X_75>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>` ∩ :g:`L_{c} <L_c>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X_799 <X_799>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2018)
+
+.. container:: note-item
+
+   As the trilinear product of Steiner circumellipse antipodes, :ref:`X_799 <X_799>` lies on conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_668 <X_668>`,\ :ref:`X_789 <X_789>`}} with center X_6376 and perspector :ref:`X_75 <X_75>`. (Randy Hutson, July 11, 2019)
 
 .. toctree::
    :hidden:

@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(69) = SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE."""
+"""GEOMETOR construction model for X_69 = SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE."""
 
 from __future__ import annotations
 
@@ -25,17 +25,17 @@ from geometor.etc.render import write_center_svg
 def construct_x_00069(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(69) = SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE on reference triangle ABC."""
-    X_25 = eval_trilinear_point(model, A, B, C, 'sin(A)*tan(A)', ID="X(25)", classes=["center"])
-    X_69 = isogonal_conjugate(model, A, B, C, X_25, ID="X(69)", classes=["selected", "target"])
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
+    """Construct X_69 = SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE on reference triangle ABC."""
+    X_25 = eval_trilinear_point(model, A, B, C, 'sin(A)*tan(A)', ID="X_25", classes=["center"])
+    X_69 = isogonal_conjugate(model, A, B, C, X_25, ID="X_69", classes=["selected", "target"])
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
     central_line(model, X_2, X_6, 2, 6, incident=True)
-    X_7 = gergonne_point_of(model, A, B, C, ID="X(7)", classes=["center", "incident"])
-    X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center", "incident"])
+    X_7 = gergonne_point_of(model, A, B, C, ID="X_7", classes=["center", "incident"])
+    X_8 = nagel_point_of(model, A, B, C, ID="X_8", classes=["center", "incident"])
     central_line(model, X_7, X_8, 7, 8, incident=True)
-    X_20 = eval_trilinear_point(model, A, B, C, 'cos(A) - cos(B)*cos(C)', ID="X(20)", classes=["center", "incident"])
-    X_64 = eval_trilinear_point(model, A, B, C, '1/(cos(A) - cos(B)*cos(C))', ID="X(64)", classes=["center", "incident"])
+    X_20 = eval_trilinear_point(model, A, B, C, 'cos(A) - cos(B)*cos(C)', ID="X_20", classes=["center", "incident"])
+    X_64 = eval_trilinear_point(model, A, B, C, '1/(cos(A) - cos(B)*cos(C))', ID="X_64", classes=["center", "incident"])
     central_line(model, X_20, X_64, 20, 64, incident=True)
     return promote_point_to_top(model, X_69)
 
@@ -44,8 +44,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(69) on the given reference triangle."""
-    model = create_model('X(69) = SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE')
+    """Build a `geometor.model.Model` for X_69 on the given reference triangle."""
+    model = create_model('X_69 = SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00069(model, A, B, C)
     return model

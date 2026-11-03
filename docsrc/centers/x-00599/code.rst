@@ -1,18 +1,21 @@
-:canonical_id: X(599)
+:canonical_id: X_599
 :type: code
+:subtitle: ISOTOMIC CONJUGATE OF X_598
 
-X(599) = ISOTOMIC CONJUGATE OF X(598) — Code
-============================================
+X_599
+=====
+
+.. rubric:: ISOTOMIC CONJUGATE OF X_598
 
 .. enunciation::
 
-   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the Artzt triangle and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(599) <X(599)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (:person:`Randy Hutson <randy-hutson>`, August 30, 2020)
+   :ref:`X_599 <X_599>` is the :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_598 <X_598>`.
 
 .. figure:: x-00599.svg
-   :alt: X(599) = ISOTOMIC CONJUGATE OF X(598)
+   :alt: X_599 — ISOTOMIC CONJUGATE OF X_598
    :align: center
 
-   **X(599) = ISOTOMIC CONJUGATE OF X(598)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_599** (*ISOTOMIC CONJUGATE OF X_598*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

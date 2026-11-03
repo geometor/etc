@@ -1,26 +1,31 @@
 :order: 433
 :type: center
-:canonical_id: X(433)
-:dependencies: X(2), X(3), X(159)
+:canonical_id: X_433
+:subtitle: EULER X_159-6th-SUBSTITUTION POINT
+:dependencies: X_2, X_3, X_159
 
-.. _X(433):
+.. _X_433:
 
-X(433) = EULER X(159)-6th-SUBSTITUTION POINT
-============================================
+X_433
+=====
 
-.. enunciation::
-
-   As a point on the Euler line, :ref:`X(433) <X(433)>` has Shinagawa coefficients :math:`(4(E + F)^{3}F^{2} - E^{2}FS^{2}, (E + F)[4(E + F)^{3}F - (E + 8F)ES^{2}])`.
+.. rubric:: EULER X_159-6th-SUBSTITUTION POINT
 
 .. figure:: x-00433.svg
-   :alt: X(433) = EULER X(159)-6th-SUBSTITUTION POINT
+   :alt: X_433 — EULER X_159-6th-SUBSTITUTION POINT
    :align: center
 
-   **X(433) = EULER X(159)-6th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_433** (*EULER X_159-6th-SUBSTITUTION POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`)
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`)
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(v^{2} + w^{2})\sec A : (w^{2} + u^{2})\sec B : (u^{2} + v^{2})\sec C`, where :math:`u : v : w` = :ref:`X(159) <X(159)>`
+   | **Trilinears:** :math:`(v^{2} + w^{2})\sec A : (w^{2} + u^{2})\sec B : (u^{2} + v^{2})\sec C`, where :math:`u : v : w` = :ref:`X_159 <X_159>`
    | **Barycentrics:** :math:`(v^{2} + w^{2})\tan A : (w^{2} + u^{2})\tan B : (u^{2} + v^{2})\tan C`
    | **Search Value (6, 9, 13):** :math:`4.705865843343`
 
@@ -33,7 +38,14 @@ X(433) = EULER X(159)-6th-SUBSTITUTION POINT
    :badge: 1 line
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}
+   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}
+
+Notes
+-----
+
+.. container:: note-item
+
+   As a point on the Euler line, :ref:`X_433 <X_433>` has Shinagawa coefficients :math:`(4(E + F)^{3}F^{2} - E^{2}FS^{2}, (E + F)[4(E + F)^{3}F - (E + 8F)ES^{2}])`.
 
 .. toctree::
    :hidden:

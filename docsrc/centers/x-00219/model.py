@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(219) = X(8)-CEVA CONJUGATE OF X(55)."""
+"""GEOMETOR construction model for X_219 = X_8-CEVA CONJUGATE OF X_55."""
 
 from __future__ import annotations
 
@@ -24,16 +24,16 @@ from geometor.etc.render import write_center_svg
 def construct_x_00219(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(219) = X(8)-CEVA CONJUGATE OF X(55) on reference triangle ABC."""
-    X_219 = eval_trilinear_point(model, A, B, C, 'cos(A)*cot(A/2)', ID="X(219)", classes=["selected", "target"])
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
+    """Construct X_219 = X_8-CEVA CONJUGATE OF X_55 on reference triangle ABC."""
+    X_219 = eval_trilinear_point(model, A, B, C, 'cos(A)*cot(A/2)', ID="X_219", classes=["selected", "target"])
+    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
     central_line(model, X_1, X_6, 1, 6, incident=True)
-    X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center", "incident"])
-    X_29 = eval_trilinear_point(model, A, B, C, '(sec(A))/(cos(B) + cos(C))', ID="X(29)", classes=["center", "incident"])
+    X_8 = nagel_point_of(model, A, B, C, ID="X_8", classes=["center", "incident"])
+    X_29 = eval_trilinear_point(model, A, B, C, '(sec(A))/(cos(B) + cos(C))', ID="X_29", classes=["center", "incident"])
     central_line(model, X_8, X_29, 8, 29, incident=True)
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
-    X_48 = eval_trilinear_point(model, A, B, C, 'tan(B) + tan(C)', ID="X(48)", classes=["center", "incident"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
+    X_48 = eval_trilinear_point(model, A, B, C, 'tan(B) + tan(C)', ID="X_48", classes=["center", "incident"])
     central_line(model, X_3, X_48, 3, 48, incident=True)
     return promote_point_to_top(model, X_219)
 
@@ -42,8 +42,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(219) on the given reference triangle."""
-    model = create_model('X(219) = X(8)-CEVA CONJUGATE OF X(55)')
+    """Build a `geometor.model.Model` for X_219 on the given reference triangle."""
+    model = create_model('X_219 = X_8-CEVA CONJUGATE OF X_55')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00219(model, A, B, C)
     return model

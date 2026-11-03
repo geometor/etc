@@ -1,18 +1,21 @@
-:canonical_id: X(654)
+:canonical_id: X_654
 :type: code
+:subtitle: CROSSDIFFERENCE OF X_1 AND X_5
 
-X(654) = CROSSDIFFERENCE OF X(1) AND X(5) — Code
-================================================
+X_654
+=====
+
+.. rubric:: CROSSDIFFERENCE OF X_1 AND X_5
 
 .. enunciation::
 
-   :ref:`X(654) <X(654)>` = reflection of :ref:`X(55) <X(55)>` in X(6139)
+   :ref:`X_654 <X_654>` = reflection of :ref:`X_654 <X_654>` in the anti-orthic axis
 
 .. figure:: x-00654.svg
-   :alt: X(654) = CROSSDIFFERENCE OF X(1) AND X(5)
+   :alt: X_654 — CROSSDIFFERENCE OF X_1 AND X_5
    :align: center
 
-   **X(654) = CROSSDIFFERENCE OF X(1) AND X(5)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_654** (*CROSSDIFFERENCE OF X_1 AND X_5*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

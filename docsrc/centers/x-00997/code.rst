@@ -1,18 +1,21 @@
-:canonical_id: X(997)
+:canonical_id: X_997
 :type: code
+:subtitle: MIDPOINT OF X_1 AND X_200
 
-X(997) = MIDPOINT OF X(1) AND X(200) — Code
-===========================================
+X_997
+=====
+
+.. rubric:: MIDPOINT OF X_1 AND X_200
 
 .. enunciation::
 
-   :ref:`X(997) <X(997)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(998) <X(998)>`
+   :ref:`X_997 <X_997>` is the midpoint of :ref:`X_1 <X_1>` and :ref:`X_200 <X_200>`.
 
 .. figure:: x-00997.svg
-   :alt: X(997) = MIDPOINT OF X(1) AND X(200)
+   :alt: X_997 — MIDPOINT OF X_1 AND X_200
    :align: center
 
-   **X(997) = MIDPOINT OF X(1) AND X(200)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_997** (*MIDPOINT OF X_1 AND X_200*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

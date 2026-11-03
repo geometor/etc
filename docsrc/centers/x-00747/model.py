@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(747) = EVEN (- 1, 4) CIRCUMCIRCLE POINT."""
+"""GEOMETOR construction model for X_747 = EVEN (- 1, 4) CIRCUMCIRCLE POINT."""
 
 from __future__ import annotations
 
@@ -20,9 +20,9 @@ from geometor.etc.render import write_center_svg
 def construct_x_00747(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(747) = EVEN (- 1, 4) CIRCUMCIRCLE POINT on reference triangle ABC."""
-    X_746 = point_from_barycentrics(model, A, B, C, 0.66756997, 0.073354731, -0.7409247, ID="X(746)", classes=["center"])
-    X_747 = isogonal_conjugate(model, A, B, C, X_746, ID="X(747)", classes=["selected", "target"])
+    """Construct X_747 = EVEN (- 1, 4) CIRCUMCIRCLE POINT on reference triangle ABC."""
+    X_746 = point_from_barycentrics(model, A, B, C, 0.66756997, 0.073354731, -0.7409247, ID="X_746", classes=["center"])
+    X_747 = isogonal_conjugate(model, A, B, C, X_746, ID="X_747", classes=["selected", "target"])
     return promote_point_to_top(model, X_747)
 
 
@@ -30,8 +30,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(747) on the given reference triangle."""
-    model = create_model('X(747) = EVEN (- 1, 4) CIRCUMCIRCLE POINT')
+    """Build a `geometor.model.Model` for X_747 on the given reference triangle."""
+    model = create_model('X_747 = EVEN (- 1, 4) CIRCUMCIRCLE POINT')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00747(model, A, B, C)
     return model

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.360618 -0.760795 1.495454 1.121591" data-initial-viewbox="-0.360618 -0.760795 1.495454 1.121591" preserveAspectRatio="xMidYMid meet">
+<svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.522966 -0.827709 1.673891 1.255418" data-initial-viewbox="-0.522966 -0.827709 1.673891 1.255418" preserveAspectRatio="xMidYMid meet">
   <style>
 :root {
     --background-color: #121212;
@@ -27,6 +27,7 @@ svg.geometor-etc-drawing.is-panning {
 }
 
 svg.geometor-etc-drawing.hide-labels #labels .point-label,
+svg.geometor-etc-drawing.hide-labels #labels .guide-label,
 svg.geometor-etc-drawing.hide-labels #labels .target-label,
 svg.geometor-etc-drawing.hide-labels #labels .given-label {
     display: none;
@@ -188,12 +189,19 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
     font-weight: 600;
     paint-order: stroke;
     stroke: var(--accent-color);
-    stroke-width: 3px;
+    stroke-width: 0.15em;
     stroke-linecap: round;
     stroke-linejoin: round;
-    vector-effect: non-scaling-stroke;
     user-select: none;
     pointer-events: none;
+}
+
+#labels tspan {
+    paint-order: stroke;
+    stroke: var(--accent-color);
+    stroke-width: 0.15em;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 #labels text.target-label {
@@ -203,6 +211,11 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
 
 #labels text.given-label {
     fill: #8f8;
+}
+
+#labels text.guide-label {
+    fill: #ffb74d;
+    font-weight: 600;
 }
 
 #labels text.hover-label {
@@ -314,9 +327,6 @@ figure:hover .etc-svg-toolbar {
     <polyline data-highlight-for="[ A B ]" class="highlight-segment" points="0.000000,-0.000000 1.000000,-0.000000" style="display: none;" />
     <polyline data-highlight-for="[ B C ]" class="highlight-segment" points="1.000000,-0.000000 0.633136,-0.280051" style="display: none;" />
     <polyline data-highlight-for="[ C A ]" class="highlight-segment" points="0.633136,-0.280051 0.000000,-0.000000" style="display: none;" />
-    <polyline data-highlight-for="[ A P_a ]" class="highlight-segment" points="0.000000,-0.000000 1.175094,0.133661" style="display: none;" />
-    <polyline data-highlight-for="[ B P_b ]" class="highlight-segment" points="1.000000,-0.000000 0.045224,-0.020004" style="display: none;" />
-    <polyline data-highlight-for="[ C P_c ]" class="highlight-segment" points="0.633136,-0.280051 -0.312500,-0.000000" style="display: none;" />
     <polyline data-highlight-for="{ 644, 645 }" class="highlight-segment" points="-0.372041,-0.122522 -0.311426,-0.082388" style="display: none;" />
     <polyline data-highlight-for="{ 190, 668 }" class="highlight-segment" points="0.154806,-0.211931 0.007023,-0.139610" style="display: none;" />
   </g>
@@ -324,37 +334,31 @@ figure:hover .etc-svg-toolbar {
     <line data-id="[ A B ]" data-name="Sideline AB (Base c = 1)" class="line given sideline" data-category="elements" x1="-1000.00000" y1="-0.00000" x2="1000.00000" y2="-0.00000"><title>[ A B ]: Sideline AB (Base c = 1)</title></line>
     <line data-id="[ B C ]" data-name="Sideline BC (Side a)" class="line sideline" data-category="elements" x1="367.86391" y1="280.05111" x2="-365.86391" y2="-280.05111"><title>[ B C ]: Sideline BC (Side a)</title></line>
     <line data-id="[ C A ]" data-name="Sideline CA (Side b)" class="line sideline" data-category="elements" x1="633.76923" y1="-280.33116" x2="-632.50295" y2="279.77106"><title>[ C A ]: Sideline CA (Side b)</title></line>
-    <line data-id="[ A P_a ]" data-name="A-Cevian A–P_a" class="line bisector" data-category="elements" x1="-1175.09414" y1="-133.66076" x2="1175.09414" y2="133.66076"><title>[ A P_a ]: A-Cevian A–P_a</title></line>
-    <line data-id="[ B P_b ]" data-name="B-Cevian B–P_b" class="line bisector" data-category="elements" x1="955.77599" y1="20.00365" x2="-953.77599" y2="-20.00365"><title>[ B P_b ]: B-Cevian B–P_b</title></line>
-    <line data-id="[ C P_c ]" data-name="C-Cevian C–P_c" class="line bisector" data-category="elements" x1="946.26923" y1="-280.33116" x2="-945.00295" y2="279.77106"><title>[ C P_c ]: C-Cevian C–P_c</title></line>
-    <line data-id="{ 644, 645 }" data-name="Central Line L(644, 645)" class="line central_line incident" data-category="elements" x1="-60.98738" y1="-40.25703" x2="60.24330" y2="40.01199"><title>{ 644, 645 }: Central Line L(644, 645)</title></line>
-    <line data-id="{ 190, 668 }" data-name="Central Line L(190, 668)" class="line central_line incident" data-category="elements" x1="147.93716" y1="-72.53245" x2="-147.62754" y2="72.10859"><title>{ 190, 668 }: Central Line L(190, 668)</title></line>
+    <line data-id="{ 644, 645 }" data-name="Central Line L(644, 645)" class="line central_line" data-category="elements" x1="-60.98738" y1="-40.25703" x2="60.24330" y2="40.01199"><title>{ 644, 645 }: Central Line L(644, 645)</title></line>
+    <line data-id="{ 190, 668 }" data-name="Central Line L(190, 668)" class="line central_line" data-category="elements" x1="147.93716" y1="-72.53245" x2="-147.62754" y2="72.10859"><title>{ 190, 668 }: Central Line L(190, 668)</title></line>
   </g>
   <g id="points">
-    <circle data-id="A" data-name="Vertex A" class="point given vertex" data-category="points" cx="0.000000" cy="-0.000000" r="0.014020"><title>A = Vertex A (0.0000, 0.0000)</title></circle>
-    <circle data-id="B" data-name="Vertex B" class="point given vertex" data-category="points" cx="1.000000" cy="-0.000000" r="0.014020"><title>B = Vertex B (1.0000, 0.0000)</title></circle>
-    <circle data-id="C" data-name="Vertex C" class="point vertex" data-category="points" cx="0.633136" cy="-0.280051" r="0.014020"><title>C = Vertex C (0.6331, 0.2801)</title></circle>
-    <circle data-id="P_a" data-name="Cevian Trace P_a on BC" class="point foot guide" data-category="points" cx="1.175094" cy="0.133661" r="0.008973"><title>P_a = Cevian Trace P_a on BC (1.1751, -0.1337)</title></circle>
-    <circle data-id="P_b" data-name="Cevian Trace P_b on CA" class="point foot guide" data-category="points" cx="0.045224" cy="-0.020004" r="0.008973"><title>P_b = Cevian Trace P_b on CA (0.0452, 0.0200)</title></circle>
-    <circle data-id="P_c" data-name="Cevian Trace P_c on AB" class="point foot guide" data-category="points" cx="-0.312500" cy="-0.000000" r="0.008973"><title>P_c = Cevian Trace P_c on AB (-0.3125, 0.0000)</title></circle>
-    <circle data-id="X(644)" data-name="TRILINEAR MULTIPLIER FOR YFF PARABOLA" class="point center incident" data-category="points" cx="-0.372041" cy="-0.122522" r="0.014020"><title>X(644) = TRILINEAR MULTIPLIER FOR YFF PARABOLA (-0.3720, 0.1225)</title></circle>
-    <circle data-id="X(645)" data-name="BARYCENTRIC MULTIPLIER FOR KIEPERT PARABOLA" class="point center incident" data-category="points" cx="-0.311426" cy="-0.082388" r="0.014020"><title>X(645) = BARYCENTRIC MULTIPLIER FOR KIEPERT PARABOLA (-0.3114, 0.0824)</title></circle>
-    <circle data-id="X(190)" data-name="YFF PARABOLIC POINT" class="point center incident" data-category="points" cx="0.154806" cy="-0.211931" r="0.014020"><title>X(190) = YFF PARABOLIC POINT (0.1548, 0.2119)</title></circle>
-    <circle data-id="X(668)" data-name="TRILINEAR POLE OF LINE X(2)X(37)" class="point center incident" data-category="points" cx="0.007023" cy="-0.139610" r="0.014020"><title>X(668) = TRILINEAR POLE OF LINE X(2)X(37) (0.0070, 0.1396)</title></circle>
-    <circle data-id="X(646)" data-name="BARYCENTRIC MULTIPLIER FOR YFF PARABOLA" class="point selected target" data-category="points" cx="-0.225782" cy="-0.025682" r="0.019628"><title>X(646) = BARYCENTRIC MULTIPLIER FOR YFF PARABOLA (-0.2258, 0.0257)</title></circle>
+    <circle data-id="A" data-name="Vertex A" class="point given vertex" data-category="points" cx="0.000000" cy="-0.000000" r="0.015693"><title>A = Vertex A (0.0000, 0.0000)</title></circle>
+    <circle data-id="B" data-name="Vertex B" class="point given vertex" data-category="points" cx="1.000000" cy="-0.000000" r="0.015693"><title>B = Vertex B (1.0000, 0.0000)</title></circle>
+    <circle data-id="C" data-name="Vertex C" class="point vertex" data-category="points" cx="0.633136" cy="-0.280051" r="0.015693"><title>C = Vertex C (0.6331, 0.2801)</title></circle>
+    <circle data-id="X_644" data-name="TRILINEAR MULTIPLIER FOR YFF PARABOLA" class="point center" data-category="points" cx="-0.372041" cy="-0.122522" r="0.015693"><title>X_644 = TRILINEAR MULTIPLIER FOR YFF PARABOLA (-0.3720, 0.1225)</title></circle>
+    <circle data-id="X_645" data-name="BARYCENTRIC MULTIPLIER FOR KIEPERT PARABOLA" class="point center" data-category="points" cx="-0.311426" cy="-0.082388" r="0.015693"><title>X_645 = BARYCENTRIC MULTIPLIER FOR KIEPERT PARABOLA (-0.3114, 0.0824)</title></circle>
+    <circle data-id="X_190" data-name="YFF PARABOLIC POINT" class="point center" data-category="points" cx="0.154806" cy="-0.211931" r="0.015693"><title>X_190 = YFF PARABOLIC POINT (0.1548, 0.2119)</title></circle>
+    <circle data-id="X_668" data-name="TRILINEAR POLE OF LINE X(2)X(37)" class="point center" data-category="points" cx="0.007023" cy="-0.139610" r="0.015693"><title>X_668 = TRILINEAR POLE OF LINE X(2)X(37) (0.0070, 0.1396)</title></circle>
+    <circle data-id="X_646" data-name="BARYCENTRIC MULTIPLIER FOR YFF PARABOLA" class="point selected target" data-category="points" cx="-0.225782" cy="-0.025682" r="0.021970"><title>X_646 = BARYCENTRIC MULTIPLIER FOR YFF PARABOLA (-0.2258, 0.0257)</title></circle>
   </g>
   <g id="labels">
-    <text class="given-label" data-point-id="A" data-anchor-x="0.000000" data-anchor-y="-0.000000" data-offset-x="-24.0" data-offset-y="22.5" x="-0.044864" y="0.042060" font-size="0.037854">A</text>
-    <text class="given-label" data-point-id="B" data-anchor-x="1.000000" data-anchor-y="-0.000000" data-offset-x="12.0" data-offset-y="22.5" x="1.022432" y="0.042060" font-size="0.037854">B</text>
-    <text class="point-label" data-point-id="C" data-anchor-x="0.633136" data-anchor-y="-0.280051" data-offset-x="-7.5" data-offset-y="-15.0" x="0.619116" y="-0.308091" font-size="0.037854">C</text>
-    <text class="point-label incident" data-point-id="X(644)" data-anchor-x="-0.372041" data-anchor-y="-0.122522" data-offset-x="12.0" data-offset-y="-10.5" x="-0.349610" y="-0.142150" font-size="0.037854">X(644)</text>
-    <text class="point-label incident" data-point-id="X(645)" data-anchor-x="-0.311426" data-anchor-y="-0.082388" data-offset-x="12.0" data-offset-y="-10.5" x="-0.288994" y="-0.102016" font-size="0.037854">X(645)</text>
-    <text class="point-label incident" data-point-id="X(190)" data-anchor-x="0.154806" data-anchor-y="-0.211931" data-offset-x="12.0" data-offset-y="-10.5" x="0.177238" y="-0.231558" font-size="0.037854">X(190)</text>
-    <text class="point-label incident" data-point-id="X(668)" data-anchor-x="0.007023" data-anchor-y="-0.139610" data-offset-x="12.0" data-offset-y="-10.5" x="0.029455" y="-0.159238" font-size="0.037854">X(668)</text>
-    <text class="target-label" data-point-id="X(646)" data-anchor-x="-0.225782" data-anchor-y="-0.025682" data-offset-x="12.0" data-offset-y="-10.5" x="-0.203350" y="-0.045309" font-size="0.037854">X(646)</text>
-    <text class="subtitle-label" x="-0.323232" y="0.327148" font-size="0.032246" fill="#999">Kimberling (6, 9, 13) | AB = 1</text>
+    <text class="given-label" data-point-id="A" data-anchor-x="0.000000" data-anchor-y="-0.000000" data-offset-x="-24.0" data-offset-y="22.5" x="-0.050217" y="0.047078" font-size="0.042370">A</text>
+    <text class="given-label" data-point-id="B" data-anchor-x="1.000000" data-anchor-y="-0.000000" data-offset-x="12.0" data-offset-y="22.5" x="1.025108" y="0.047078" font-size="0.042370">B</text>
+    <text class="point-label" data-point-id="C" data-anchor-x="0.633136" data-anchor-y="-0.280051" data-offset-x="-7.5" data-offset-y="-15.0" x="0.617443" y="-0.311437" font-size="0.042370">C</text>
+    <text class="point-label" data-point-id="X_644" data-anchor-x="-0.372041" data-anchor-y="-0.122522" data-offset-x="12.0" data-offset-y="-10.5" x="-0.346933" y="-0.144492" font-size="0.042370">X<tspan dy="0.3em" font-size="75%">644</tspan></text>
+    <text class="point-label" data-point-id="X_645" data-anchor-x="-0.311426" data-anchor-y="-0.082388" data-offset-x="12.0" data-offset-y="-10.5" x="-0.286318" y="-0.104358" font-size="0.042370">X<tspan dy="0.3em" font-size="75%">645</tspan></text>
+    <text class="point-label" data-point-id="X_190" data-anchor-x="0.154806" data-anchor-y="-0.211931" data-offset-x="12.0" data-offset-y="-10.5" x="0.179914" y="-0.233900" font-size="0.042370">X<tspan dy="0.3em" font-size="75%">190</tspan></text>
+    <text class="point-label" data-point-id="X_668" data-anchor-x="0.007023" data-anchor-y="-0.139610" data-offset-x="12.0" data-offset-y="-10.5" x="0.032132" y="-0.161580" font-size="0.042370">X<tspan dy="0.3em" font-size="75%">668</tspan></text>
+    <text class="target-label" data-point-id="X_646" data-anchor-x="-0.225782" data-anchor-y="-0.025682" data-offset-x="12.0" data-offset-y="-10.5" x="-0.200674" y="-0.047651" font-size="0.042370">X<tspan dy="0.3em" font-size="75%">646</tspan></text>
+    <text class="subtitle-label" x="-0.481119" y="0.390046" font-size="0.036093" fill="#999">Kimberling (6, 9, 13) | AB = 1</text>
   </g>
-  <script type="application/json" class="etc-elements-meta">{"A":{"ID":"A","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex A","subtitle":"Reference triangle vertex at origin (0, 0)","rows":[["x","0.0000"],["y","0.0000"],["bary","1.0000 : 0.0000 : 0.0000"]],"related_points":["A"]},"B":{"ID":"B","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex B","subtitle":"Reference triangle vertex at unit base (1, 0)","rows":[["x","1.0000"],["y","0.0000"],["bary","0.0000 : 1.0000 : 0.0000"]],"related_points":["B"]},"[ A B ]":{"ID":"[ A B ]","type":"line","classes":["given","sideline"],"color":"#aaa","name":"Sideline AB (Base c = 1)","subtitle":"Reference triangle baseline through A and B","rows":[["pts","A (Vertex A), B (Vertex B)"],["len","1.0000"],["eq","0.0000x + 1.0000y + 0.0000 = 0"]],"related_points":["A","B"]},"C":{"ID":"C","type":"point","classes":["vertex"],"color":"#0ff","name":"Vertex C","subtitle":"Reference triangle apex constructed by Euclid I.22","rows":[["x","0.6331"],["y","0.2801"],["bary","-0.0000 : 0.0000 : 1.0000"]],"related_points":["C"]},"[ B C ]":{"ID":"[ B C ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline BC (Side a)","subtitle":"Reference triangle sideline opposite vertex A","rows":[["pts","B (Vertex B), C (Vertex C)"],["len","0.4615"],["eq","0.6068x + 0.7949y - 0.6068 = 0"]],"related_points":["B","C"]},"[ C A ]":{"ID":"[ C A ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline CA (Side b)","subtitle":"Reference triangle sideline opposite vertex B","rows":[["pts","C (Vertex C), A (Vertex A)"],["len","0.6923"],["eq","0.4045x - 0.9145y + 0.0000 = 0"]],"related_points":["C","A"]},"\u003c A B C \u003e":{"ID":"\u003c A B C \u003e","type":"polygon","classes":["reference"],"color":"#58a6ff","name":"Reference Triangle △ABC","subtitle":"Primary reference triangle with unit baseline AB = 1","rows":[["verts","A, B, C"],["sides","0.4615, 0.6923, 1.0000"],["area","0.1400"]],"related_points":["A","B","C"]},"P_a":{"ID":"P_a","type":"point","classes":["foot"],"color":"orange","name":"Cevian Trace P_a on BC","subtitle":"Intersection of cevian from A with sideline BC","rows":[["x","1.1751"],["y","-0.1337"],["bary","0.0000 : 1.4773 : -0.4773"]],"related_points":["P_a"]},"[ A P_a ]":{"ID":"[ A P_a ]","type":"line","classes":["bisector"],"color":"#aaa","name":"A-Cevian A–P_a","subtitle":"Cevian from vertex A through target center to trace P_a on BC","rows":[["pts","A (Vertex A), P_a (Cevian Trace P_a on BC)"],["len","1.1827"],["eq","0.1130x + 0.9936y + 0.0000 = 0"]],"related_points":["A","P_a"]},"P_b":{"ID":"P_b","type":"point","classes":["foot"],"color":"orange","name":"Cevian Trace P_b on CA","subtitle":"Intersection of cevian from B with sideline CA","rows":[["x","0.0452"],["y","0.0200"],["bary","0.9286 : 0.0000 : 0.0714"]],"related_points":["P_b"]},"[ B P_b ]":{"ID":"[ B P_b ]","type":"line","classes":["bisector"],"color":"#aaa","name":"B-Cevian B–P_b","subtitle":"Cevian from vertex B through target center to trace P_b on CA","rows":[["pts","B (Vertex B), P_b (Cevian Trace P_b on CA)"],["len","0.9550"],["eq","0.0209x + 0.9998y - 0.0209 = 0"]],"related_points":["B","P_b"]},"P_c":{"ID":"P_c","type":"point","classes":["foot"],"color":"orange","name":"Cevian Trace P_c on AB","subtitle":"Intersection of cevian from C with sideline AB","rows":[["x","-0.3125"],["y","0.0000"],["bary","1.3125 : -0.3125 : -0.0000"]],"related_points":["P_c"]},"[ C P_c ]":{"ID":"[ C P_c ]","type":"line","classes":["bisector"],"color":"#aaa","name":"C-Cevian C–P_c","subtitle":"Cevian from vertex C through target center to trace P_c on AB","rows":[["pts","C (Vertex C), P_c (Cevian Trace P_c on AB)"],["len","0.9862"],["eq","0.2840x - 0.9588y + 0.0887 = 0"]],"related_points":["C","P_c"]},"X(644)":{"ID":"X(644)","type":"point","classes":["center","incident"],"color":"#0ff","name":"TRILINEAR MULTIPLIER FOR YFF PARABOLA","subtitle":"Incident / Reference Triangle Center","rows":[["x","-0.3720"],["y","0.1225"],["bary","1.2115 : -0.6490 : 0.4375"]],"related_points":["X(644)"]},"X(645)":{"ID":"X(645)","type":"point","classes":["center","incident"],"color":"#0ff","name":"BARYCENTRIC MULTIPLIER FOR KIEPERT PARABOLA","subtitle":"Incident / Reference Triangle Center","rows":[["x","-0.3114"],["y","0.0824"],["bary","1.2035 : -0.4977 : 0.2942"]],"related_points":["X(645)"]},"{ 644, 645 }":{"ID":"{ 644, 645 }","type":"line","classes":["central_line","incident"],"color":"#0bd","name":"Central Line L(644, 645)","subtitle":"Through X(644) (TRILINEAR MULTIPLIER FOR YFF PARABOLA) and X(645) (BARYCENTRIC MULTIPLIER FOR KIEPERT PARABOLA)","rows":[["pts","X(644) (TRILINEAR MULTIPLIER FOR YFF PARABOLA), X(645) (BARYCENTRIC MULTIPLIER FOR KIEPERT PARABOLA)"],["len","0.0727"],["eq","0.5521x + 0.8338y + 0.1032 = 0"]],"related_points":["X(644)","X(645)"]},"X(190)":{"ID":"X(190)","type":"point","classes":["center","incident"],"color":"#0ff","name":"YFF PARABOLIC POINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.1548"],["y","0.2119"],["bary","0.5676 : -0.3243 : 0.7568"]],"related_points":["X(190)"]},"X(668)":{"ID":"X(668)","type":"point","classes":["center","incident"],"color":"#0ff","name":"TRILINEAR POLE OF LINE X(2)X(37)","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.0070"],["y","0.1396"],["bary","0.8101 : -0.3086 : 0.4985"]],"related_points":["X(668)"]},"{ 190, 668 }":{"ID":"{ 190, 668 }","type":"line","classes":["central_line","incident"],"color":"#0bd","name":"Central Line L(190, 668)","subtitle":"Through X(190) (YFF PARABOLIC POINT) and X(668) (TRILINEAR POLE OF LINE X(2)X(37))","rows":[["pts","X(190) (YFF PARABOLIC POINT), X(668) (TRILINEAR POLE OF LINE X(2)X(37))"],["len","0.1645"],["eq","0.4396x - 0.8982y + 0.1223 = 0"]],"related_points":["X(190)","X(668)"]},"X(646)":{"ID":"X(646)","type":"point","classes":["selected","target"],"color":"gold","name":"BARYCENTRIC MULTIPLIER FOR YFF PARABOLA","subtitle":"Target Triangle Center","rows":[["x","-0.2258"],["y","0.0257"],["bary","1.1921 : -0.2838 : 0.0917"]],"related_points":["X(646)"]}}</script>
+  <script type="application/json" class="etc-elements-meta">{"A":{"ID":"A","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex A","subtitle":"Reference triangle vertex at origin (0, 0)","rows":[["x","0.0000"],["y","0.0000"],["bary","1.0000 : 0.0000 : 0.0000"]],"related_points":["A"]},"B":{"ID":"B","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex B","subtitle":"Reference triangle vertex at unit base (1, 0)","rows":[["x","1.0000"],["y","0.0000"],["bary","0.0000 : 1.0000 : 0.0000"]],"related_points":["B"]},"[ A B ]":{"ID":"[ A B ]","type":"line","classes":["given","sideline"],"color":"#aaa","name":"Sideline AB (Base c = 1)","subtitle":"Reference triangle baseline through A and B","rows":[["pts","A (Vertex A), B (Vertex B)"],["len","1.0000"],["eq","0.0000x + 1.0000y + 0.0000 = 0"]],"related_points":["A","B"]},"C":{"ID":"C","type":"point","classes":["vertex"],"color":"#0ff","name":"Vertex C","subtitle":"Reference triangle apex constructed by Euclid I.22","rows":[["x","0.6331"],["y","0.2801"],["bary","-0.0000 : 0.0000 : 1.0000"]],"related_points":["C"]},"[ B C ]":{"ID":"[ B C ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline BC (Side a)","subtitle":"Reference triangle sideline opposite vertex A","rows":[["pts","B (Vertex B), C (Vertex C)"],["len","0.4615"],["eq","0.6068x + 0.7949y - 0.6068 = 0"]],"related_points":["B","C"]},"[ C A ]":{"ID":"[ C A ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline CA (Side b)","subtitle":"Reference triangle sideline opposite vertex B","rows":[["pts","C (Vertex C), A (Vertex A)"],["len","0.6923"],["eq","0.4045x - 0.9145y + 0.0000 = 0"]],"related_points":["C","A"]},"\u003c A B C \u003e":{"ID":"\u003c A B C \u003e","type":"polygon","classes":["reference"],"color":"#58a6ff","name":"Reference Triangle △ABC","subtitle":"Primary reference triangle with unit baseline AB = 1","rows":[["verts","A, B, C"],["sides","0.4615, 0.6923, 1.0000"],["area","0.1400"]],"related_points":["A","B","C"]},"X_644":{"ID":"X_644","type":"point","classes":["center"],"color":"#0ff","name":"TRILINEAR MULTIPLIER FOR YFF PARABOLA","subtitle":"Incident / Reference Triangle Center","rows":[["x","-0.3720"],["y","0.1225"],["bary","1.2115 : -0.6490 : 0.4375"]],"related_points":["X_644"]},"X_645":{"ID":"X_645","type":"point","classes":["center"],"color":"#0ff","name":"BARYCENTRIC MULTIPLIER FOR KIEPERT PARABOLA","subtitle":"Incident / Reference Triangle Center","rows":[["x","-0.3114"],["y","0.0824"],["bary","1.2035 : -0.4977 : 0.2942"]],"related_points":["X_645"]},"{ 644, 645 }":{"ID":"{ 644, 645 }","type":"line","classes":["central_line"],"color":"#0bd","name":"Central Line L(644, 645)","subtitle":"Through X_644 (TRILINEAR MULTIPLIER FOR YFF PARABOLA) and X_645 (BARYCENTRIC MULTIPLIER FOR KIEPERT PARABOLA)","rows":[["pts","X_644 (TRILINEAR MULTIPLIER FOR YFF PARABOLA), X_645 (BARYCENTRIC MULTIPLIER FOR KIEPERT PARABOLA)"],["len","0.0727"],["eq","0.5521x + 0.8338y + 0.1032 = 0"]],"related_points":["X_644","X_645"]},"X_190":{"ID":"X_190","type":"point","classes":["center"],"color":"#0ff","name":"YFF PARABOLIC POINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.1548"],["y","0.2119"],["bary","0.5676 : -0.3243 : 0.7568"]],"related_points":["X_190"]},"X_668":{"ID":"X_668","type":"point","classes":["center"],"color":"#0ff","name":"TRILINEAR POLE OF LINE X(2)X(37)","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.0070"],["y","0.1396"],["bary","0.8101 : -0.3086 : 0.4985"]],"related_points":["X_668"]},"{ 190, 668 }":{"ID":"{ 190, 668 }","type":"line","classes":["central_line"],"color":"#0bd","name":"Central Line L(190, 668)","subtitle":"Through X_190 (YFF PARABOLIC POINT) and X_668 (TRILINEAR POLE OF LINE X(2)X(37))","rows":[["pts","X_190 (YFF PARABOLIC POINT), X_668 (TRILINEAR POLE OF LINE X(2)X(37))"],["len","0.1645"],["eq","0.4396x - 0.8982y + 0.1223 = 0"]],"related_points":["X_190","X_668"]},"X_646":{"ID":"X_646","type":"point","classes":["selected","target"],"color":"gold","name":"BARYCENTRIC MULTIPLIER FOR YFF PARABOLA","subtitle":"Target Triangle Center","rows":[["x","-0.2258"],["y","0.0257"],["bary","1.1921 : -0.2838 : 0.0917"]],"related_points":["X_646"]}}</script>
   <script>//<![CDATA[
 
 (function () {
@@ -406,14 +410,16 @@ figure:hover .etc-svg-toolbar {
         });
 
         const fontSize = 20.25 * unitsPerPx;
+        const guideFontSize = 17.5 * unitsPerPx;
         labelEls.forEach(lbl => {
             const cx = parseFloat(lbl.getAttribute('data-anchor-x') || '0');
             const cy = parseFloat(lbl.getAttribute('data-anchor-y') || '0');
             const oxPx = parseFloat(lbl.getAttribute('data-offset-x') || '12');
             const oyPx = parseFloat(lbl.getAttribute('data-offset-y') || '-10.5');
+            const isGuideLbl = lbl.classList.contains('guide-label');
             lbl.setAttribute('x', (cx + oxPx * unitsPerPx).toFixed(6));
             lbl.setAttribute('y', (cy + oyPx * unitsPerPx).toFixed(6));
-            lbl.setAttribute('font-size', fontSize.toFixed(6));
+            lbl.setAttribute('font-size', (isGuideLbl ? guideFontSize : fontSize).toFixed(6));
         });
 
         if (subtitleEl) {
@@ -698,11 +704,11 @@ figure:hover .etc-svg-toolbar {
             const refLink = e.target.closest('a.reference.internal');
             if (refLink) {
                 const txt = (refLink.textContent || '').trim();
-                const xm = txt.match(/^X\((\d+)\)$/);
+                const xm = txt.match(/^X(?:_|\()?(\d+)\)?$/);
                 if (xm) {
                     const activeSvg = getActiveSvg();
                     if (activeSvg && activeSvg._etcController.activateHover) {
-                        activeSvg._etcController.activateHover(`X(${xm[1]})`);
+                        activeSvg._etcController.activateHover(`X_${xm[1]}`);
                     }
                 }
             }

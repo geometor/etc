@@ -1,18 +1,21 @@
-:canonical_id: X(810)
+:canonical_id: X_810
 :type: code
+:subtitle: CROSSPOINT OF X_1 AND X_163
 
-X(810) = CROSSPOINT OF X(1) AND X(163) — Code
-=============================================
+X_810
+=====
+
+.. rubric:: CROSSPOINT OF X_1 AND X_163
 
 .. enunciation::
 
-   Let V = :ref:`X(521) <X(521)>`\ \ :ref:`X(656) <X(656)>` = :term:`isotomic conjugate <isotomic-conjugate>` of polar conjugate of antiorthic axis and let W = :ref:`X(514) <X(514)>`\ \ :ref:`X(661) <X(661)>` = polar conjugate of isotomic conjugate of antiorthic axis; then X(810 = V∩W. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
+   :ref:`X_810 <X_810>` is the :term:`crosspoint <crosspoint>` of :ref:`X_1 <X_1>` and :ref:`X_163 <X_163>`.
 
 .. figure:: x-00810.svg
-   :alt: X(810) = CROSSPOINT OF X(1) AND X(163)
+   :alt: X_810 — CROSSPOINT OF X_1 AND X_163
    :align: center
 
-   **X(810) = CROSSPOINT OF X(1) AND X(163)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_810** (*CROSSPOINT OF X_1 AND X_163*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

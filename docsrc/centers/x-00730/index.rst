@@ -1,22 +1,31 @@
 :order: 730
 :type: center
-:canonical_id: X(730)
-:dependencies: X(1), X(8), X(10), X(30), X(39), X(76), X(194), X(511), X(731)
+:canonical_id: X_730
+:subtitle: EVEN (- 2, 1) INFINITY POINT
+:dependencies: X_1, X_8, X_10, X_30, X_39, X_76, X_194, X_511, X_731
 
-.. _X(730):
+.. _X_730:
 
-X(730) = EVEN (- 2, 1) INFINITY POINT
-=====================================
+X_730
+=====
+
+.. rubric:: EVEN (- 2, 1) INFINITY POINT
 
 .. enunciation::
 
-   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X(730) <X(730)>` lies on the line at infinity.
+   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X_730 <X_730>` lies on the line at infinity.
 
 .. figure:: x-00730.svg
-   :alt: X(730) = EVEN (- 2, 1) INFINITY POINT
+   :alt: X_730 — EVEN (- 2, 1) INFINITY POINT
    :align: center
 
-   **X(730) = EVEN (- 2, 1) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_730** (*EVEN (- 2, 1) INFINITY POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{10, 39} <{ 10, 39 }>`, :g:`{1, 76} <{ 1, 76 }>`
+   * **Related Centers:** :g:`X_731 <X_731>` (:ref:`EVEN (- 2, 1) CIRCUMCIRCLE POINT <X_731>`), :g:`X_10 <X_10>` (:ref:`SPIEKER CENTER <X_10>`), :g:`X_39 <X_39>` (:ref:`BROCARD MIDPOINT <X_39>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_76 <X_76>` (:ref:`3rd BROCARD POINT <X_76>`)
 
 .. signature:: center
 
@@ -27,12 +36,12 @@ X(730) = EVEN (- 2, 1) INFINITY POINT
    :badge: 4 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`76 <X(76)>`}, {:ref:`8 <X(8)>`, :ref:`194 <X(194)>`}, {:ref:`10 <X(10)>`, :ref:`39 <X(39)>`}, {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}
+   {:ref:`1 <X_1>`, :ref:`76 <X_76>`}, {:ref:`8 <X_8>`, :ref:`194 <X_194>`}, {:ref:`10 <X_10>`, :ref:`39 <X_39>`}, {:ref:`30 <X_30>`, :ref:`511 <X_511>`}
 
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(730) <X(730)>` = isogonal conjugate of :ref:`X(731) <X(731)>`
+   * :ref:`X_730 <X_730>` = isogonal conjugate of :ref:`X_731 <X_731>`
 
 .. toctree::
    :hidden:

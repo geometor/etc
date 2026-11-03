@@ -1,18 +1,21 @@
-:canonical_id: X(247)
+:canonical_id: X_247
 :type: code
+:subtitle: X_4-LINE CONJUGATE OF X_110
 
-X(247) = X(4)-LINE CONJUGATE OF X(110) — Code
-=============================================
+X_247
+=====
+
+.. rubric:: X_4-LINE CONJUGATE OF X_110
 
 .. enunciation::
 
-   :ref:`X(247) <X(247)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(110) <X(110)>`\ \ :ref:`X(686) <X(686)>`
+   :ref:`X_247 <X_247>` = :ref:`X_4 <X_4>`-:term:`line conjugate <line-conjugate>` of :ref:`X_110 <X_110>`
 
 .. figure:: x-00247.svg
-   :alt: X(247) = X(4)-LINE CONJUGATE OF X(110)
+   :alt: X_247 — X_4-LINE CONJUGATE OF X_110
    :align: center
 
-   **X(247) = X(4)-LINE CONJUGATE OF X(110)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_247** (*X_4-LINE CONJUGATE OF X_110*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

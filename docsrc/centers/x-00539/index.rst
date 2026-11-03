@@ -1,22 +1,31 @@
 :order: 539
 :type: center
-:canonical_id: X(539)
-:dependencies: X(2), X(3), X(5), X(30), X(54), X(113), X(155), X(195), X(265), X(511), X(1493), X(1568), X(2072), X(2383), X(2914), X(3292), X(3519)
+:canonical_id: X_539
+:subtitle: DIRECTION OF VECTOR AX + BX + CX, where X = X_54
+:dependencies: X_2, X_3, X_5, X_30, X_54, X_113, X_155, X_195, X_265, X_511, X_1493, X_1568, X_2072, X_2383, X_2914, X_3292, X_3519
 
-.. _X(539):
+.. _X_539:
 
-X(539) = DIRECTION OF VECTOR AX + BX + CX, where X = X(54)
-==========================================================
+X_539
+=====
+
+.. rubric:: DIRECTION OF VECTOR AX + BX + CX, where X = X_54
 
 .. enunciation::
 
-   :ref:`X(539) <X(539)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(2383)
+   :ref:`X_539 <X_539>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2383
 
 .. figure:: x-00539.svg
-   :alt: X(539) = DIRECTION OF VECTOR AX + BX + CX, where X = X(54)
+   :alt: X_539 — DIRECTION OF VECTOR AX + BX + CX, where X = X_54
    :align: center
 
-   **X(539) = DIRECTION OF VECTOR AX + BX + CX, where X = X(54)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_539** (*DIRECTION OF VECTOR AX + BX + CX, where X = X_54*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 54} <{ 2, 54 }>`, :g:`{155, 195} <{ 155, 195 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_54 <X_54>` (:ref:`KOSNITA POINT <X_54>`), :g:`X_155 <X_155>` (:ref:`EIGENCENTER OF ORTHIC TRIANGLE <X_155>`), :g:`X_195 <X_195>` (:ref:`-CEVA CONJUGATE OF X(3) <X_195>`)
 
 .. signature:: center
 
@@ -25,18 +34,18 @@ X(539) = DIRECTION OF VECTOR AX + BX + CX, where X = X(54)
 
 .. container:: note-item
 
-   :ref:`X(539) <X(539)>` lies on the line at infinity.
+   :ref:`X_539 <X_539>` lies on the line at infinity.
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`54 <X(54)>`}, {:ref:`3 <X(3)>`, 3519}, {:ref:`5 <X(5)>`, 1493}, {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}, {:ref:`113 <X(113)>`, 2914}, {:ref:`155 <X(155)>`, :ref:`195 <X(195)>`}, {:ref:`265 <X(265)>`, 1568}, {2072, 3292}
+   {:ref:`2 <X_2>`, :ref:`54 <X_54>`}, {:ref:`3 <X_3>`, 3519}, {:ref:`5 <X_5>`, 1493}, {:ref:`30 <X_30>`, :ref:`511 <X_511>`}, {:ref:`113 <X_113>`, 2914}, {:ref:`155 <X_155>`, :ref:`195 <X_195>`}, {:ref:`265 <X_265>`, 1568}, {2072, 3292}
 
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(539) <X(539)>` = isogonal conjugate of X(2383)
+   * :ref:`X_539 <X_539>` = isogonal conjugate of X_2383
 
 .. toctree::
    :hidden:

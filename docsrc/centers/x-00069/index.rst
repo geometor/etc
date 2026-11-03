@@ -1,22 +1,31 @@
 :order: 69
 :type: center
-:canonical_id: X(69)
-:dependencies: X(1), X(2), X(3), X(4), X(5), X(6), X(7), X(8), X(9), X(10), X(19), X(20), X(22), X(25), X(32), X(48), X(54), X(63), X(64), X(71), X(72), X(73), X(74), X(75), X(76), X(77), X(78), X(92), X(95), X(99), X(110), X(125), X(140), X(141), X(144), X(150), X(159), X(189), X(190), X(192), X(193), X(194), X(200), X(206), X(219), X(248), X(253), X(263), X(265), X(269), X(274), X(287), X(290), X(297), X(304), X(305), X(306), X(307), X(308), X(309), X(314), X(325), X(326), X(328), X(329), X(332), X(343), X(344), X(345), X(347), X(348), X(350), X(376), X(393), X(394), X(404), X(441), X(443), X(460), X(478), X(485), X(486), X(497), X(512), X(520), X(525), X(599), X(639), X(640), X(645), X(651), X(664), X(668), X(670), X(695), X(742), X(879), X(895), X(969), X(1014), X(1225), X(1332), X(1350), X(1351), X(1352), X(1353), X(1369), X(1974), X(2888), X(2996), X(3053), X(3410), X(3618), X(5866), X(19583), X(22151)
+:canonical_id: X_69
+:subtitle: SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE
+:dependencies: X_1, X_2, X_3, X_4, X_5, X_6, X_7, X_8, X_9, X_10, X_19, X_20, X_22, X_25, X_32, X_48, X_54, X_63, X_64, X_71, X_72, X_73, X_74, X_75, X_76, X_77, X_78, X_92, X_95, X_99, X_110, X_125, X_140, X_141, X_144, X_150, X_159, X_189, X_190, X_192, X_193, X_194, X_200, X_206, X_219, X_248, X_253, X_263, X_265, X_269, X_274, X_287, X_290, X_297, X_304, X_305, X_306, X_307, X_308, X_309, X_314, X_325, X_326, X_328, X_329, X_332, X_343, X_344, X_345, X_347, X_348, X_350, X_376, X_393, X_394, X_404, X_441, X_443, X_460, X_478, X_485, X_486, X_497, X_512, X_520, X_525, X_599, X_639, X_640, X_645, X_651, X_664, X_668, X_670, X_695, X_742, X_879, X_895, X_969, X_1014, X_1225, X_1332, X_1350, X_1351, X_1352, X_1353, X_1369, X_1974, X_2888, X_2996, X_3053, X_3410, X_3618, X_5866, X_19583, X_22151
 
-.. _X(69):
+.. _X_69:
 
-X(69) = SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE
-=========================================================
+X_69
+====
+
+.. rubric:: SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE
 
 .. enunciation::
 
-   Let :g:`A'B'C' << A' B' C' >>` be the :term:`anticomplementary triangle <anticomplementary-triangle>`. Let :g:`A″ <A″>` be the inverse-in-anticomplementary-circle of :g:`A <A>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(69) <X(69)>`. (:person:`Randy Hutson <randy-hutson>`, February 10, 2016)
+   :ref:`X_69 <X_69>` is the symmedian point of the :term:`anticomplementary triangle <anticomplementary-triangle>`.
 
 .. figure:: x-00069.svg
-   :alt: X(69) = SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE
+   :alt: X_69 — SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE
    :align: center
 
-   **X(69) = SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_69** (*SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Derived Triangle:** :term:`Anticomplementary Triangle <anticomplementary triangle>` :g:`△K_aK_bK_c << K_a K_b K_c >>` — vertices :g:`K_a <K_a>`, :g:`K_b <K_b>`, :g:`K_c <K_c>` (Formed by lines through A, B, C parallel to opposite sides)
+   * **Concurrence Lines:** :g:`K_a–X_69 <[ K_a X_69 ]>`, :g:`K_b–X_69 <[ K_b X_69 ]>`, :g:`K_c–X_69 <[ K_c X_69 ]>` concurring at :g:`X_69 <X_69>`
 
 .. signature:: center
 
@@ -37,99 +46,103 @@ X(69) = SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE
 .. collapse:: Linear Combinations
    :badge: 2 combinations
 
-   * :ref:`X(69) <X(69)>` = :math:`2(r^{2} + 2rR + s^{2})` :ref:`X(1) <X(1)>` + :math:`3(r^{2} - s^{2})` :ref:`X(2) <X(2)>` - :math:`4r^{2}` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
-   * :ref:`X(69) <X(69)>` = :math:`(\cot A)` :g:`A <A>` + :math:`(\cot B)` :g:`B <B>` + :math:`(\cot C)` :g:`C <C>`, where :g:`A <A>`, :g:`B <B>`, :g:`C <C>` denote angles and :g:`A <A>`, :g:`B <B>`, :g:`C <C>` denote vertices
+   * :ref:`X_69 <X_69>` = :math:`2(r^{2} + 2rR + s^{2})` :ref:`X_1 <X_1>` + :math:`3(r^{2} - s^{2})` :ref:`X_2 <X_2>` - :math:`4r^{2}` :ref:`X_3 <X_3>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
+   * :ref:`X_69 <X_69>` = :math:`(\cot A)` :g:`A <A>` + :math:`(\cot B)` :g:`B <B>` + :math:`(\cot C)` :g:`C <C>`, where :g:`A <A>`, :g:`B <B>`, :g:`C <C>` denote angles and :g:`A <A>`, :g:`B <B>`, :g:`C <C>` denote vertices
 
 .. container:: note-item
 
-   :ref:`X(69) <X(69)>` lies on the Lucas cubic.
+   :ref:`X_69 <X_69>` lies on the Lucas cubic.
 
 .. collapse:: Incident Central Lines
    :badge: 37 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`6 <X(6)>`}, {:ref:`3 <X(3)>`, :ref:`332 <X(332)>`}, {:ref:`4 <X(4)>`, :ref:`76 <X(76)>`}, {:ref:`7 <X(7)>`, :ref:`8 <X(8)>`}, {:ref:`9 <X(9)>`, :ref:`344 <X(344)>`}, {:ref:`10 <X(10)>`, :ref:`969 <X(969)>`}, {:ref:`20 <X(20)>`, :ref:`64 <X(64)>`}, {:ref:`22 <X(22)>`, :ref:`159 <X(159)>`}, {:ref:`54 <X(54)>`, :ref:`95 <X(95)>`}, {:ref:`63 <X(63)>`, :ref:`71 <X(71)>`}, {:ref:`72 <X(72)>`, :ref:`304 <X(304)>`}, {:ref:`73 <X(73)>`, :ref:`77 <X(77)>`}, {:ref:`74 <X(74)>`, :ref:`99 <X(99)>`}, {:ref:`110 <X(110)>`, :ref:`206 <X(206)>`}, {:ref:`125 <X(125)>`, :ref:`895 <X(895)>`}, {:ref:`144 <X(144)>`, :ref:`190 <X(190)>`}, {:ref:`150 <X(150)>`, :ref:`668 <X(668)>`}, {:ref:`189 <X(189)>`, :ref:`309 <X(309)>`}, {:ref:`192 <X(192)>`, :ref:`742 <X(742)>`}, {:ref:`194 <X(194)>`, :ref:`695 <X(695)>`}, {:ref:`200 <X(200)>`, :ref:`269 <X(269)>`}, {:ref:`219 <X(219)>`, 1332}, {:ref:`248 <X(248)>`, :ref:`287 <X(287)>`}, {:ref:`263 <X(263)>`, :ref:`308 <X(308)>`}, {:ref:`265 <X(265)>`, :ref:`328 <X(328)>`}, {:ref:`274 <X(274)>`, :ref:`443 <X(443)>`}, {:ref:`290 <X(290)>`, :ref:`670 <X(670)>`}, {:ref:`297 <X(297)>`, :ref:`393 <X(393)>`}, {:ref:`347 <X(347)>`, :ref:`664 <X(664)>`}, {:ref:`350 <X(350)>`, :ref:`497 <X(497)>`}, {:ref:`404 <X(404)>`, 1014}, {:ref:`478 <X(478)>`, :ref:`651 <X(651)>`}, {:ref:`485 <X(485)>`, :ref:`639 <X(639)>`}, {:ref:`486 <X(486)>`, :ref:`640 <X(640)>`}, {:ref:`520 <X(520)>`, :ref:`879 <X(879)>`}, {1225, 2888}, {1369, 3410}
+   {:ref:`2 <X_2>`, :ref:`6 <X_6>`}, {:ref:`3 <X_3>`, :ref:`332 <X_332>`}, {:ref:`4 <X_4>`, :ref:`76 <X_76>`}, {:ref:`7 <X_7>`, :ref:`8 <X_8>`}, {:ref:`9 <X_9>`, :ref:`344 <X_344>`}, {:ref:`10 <X_10>`, :ref:`969 <X_969>`}, {:ref:`20 <X_20>`, :ref:`64 <X_64>`}, {:ref:`22 <X_22>`, :ref:`159 <X_159>`}, {:ref:`54 <X_54>`, :ref:`95 <X_95>`}, {:ref:`63 <X_63>`, :ref:`71 <X_71>`}, {:ref:`72 <X_72>`, :ref:`304 <X_304>`}, {:ref:`73 <X_73>`, :ref:`77 <X_77>`}, {:ref:`74 <X_74>`, :ref:`99 <X_99>`}, {:ref:`110 <X_110>`, :ref:`206 <X_206>`}, {:ref:`125 <X_125>`, :ref:`895 <X_895>`}, {:ref:`144 <X_144>`, :ref:`190 <X_190>`}, {:ref:`150 <X_150>`, :ref:`668 <X_668>`}, {:ref:`189 <X_189>`, :ref:`309 <X_309>`}, {:ref:`192 <X_192>`, :ref:`742 <X_742>`}, {:ref:`194 <X_194>`, :ref:`695 <X_695>`}, {:ref:`200 <X_200>`, :ref:`269 <X_269>`}, {:ref:`219 <X_219>`, 1332}, {:ref:`248 <X_248>`, :ref:`287 <X_287>`}, {:ref:`263 <X_263>`, :ref:`308 <X_308>`}, {:ref:`265 <X_265>`, :ref:`328 <X_328>`}, {:ref:`274 <X_274>`, :ref:`443 <X_443>`}, {:ref:`290 <X_290>`, :ref:`670 <X_670>`}, {:ref:`297 <X_297>`, :ref:`393 <X_393>`}, {:ref:`347 <X_347>`, :ref:`664 <X_664>`}, {:ref:`350 <X_350>`, :ref:`497 <X_497>`}, {:ref:`404 <X_404>`, 1014}, {:ref:`478 <X_478>`, :ref:`651 <X_651>`}, {:ref:`485 <X_485>`, :ref:`639 <X_639>`}, {:ref:`486 <X_486>`, :ref:`640 <X_640>`}, {:ref:`520 <X_520>`, :ref:`879 <X_879>`}, {1225, 2888}, {1369, 3410}
 
 .. collapse:: Functional Relations
    :badge: 50 relations
 
-   * :ref:`X(69) <X(69)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`599 <X(599)>`), (:ref:`4 <X(4)>`, 1352), (:ref:`6 <X(6)>`, :ref:`141 <X(141)>`), (:ref:`20 <X(20)>`, 1350), (:ref:`193 <X(193)>`, :ref:`6 <X(6)>`), (:ref:`895 <X(895)>`, :ref:`125 <X(125)>`), (1351, :ref:`5 <X(5)>`), (1353, :ref:`140 <X(140)>`)
-   * :ref:`X(69) <X(69)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(25) <X(25)>`
-   * :ref:`X(69) <X(69)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(4) <X(4)>`
-   * :ref:`X(69) <X(69)>` = :term:`complement <complement>` of :ref:`X(193) <X(193)>`
-   * :ref:`X(69) <X(69)>` = :term:`anticomplement <anticomplement>` of :ref:`X(6) <X(6)>`
-   * :ref:`X(69) <X(69)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X(2) <X(2)>`
-   * :ref:`X(69) <X(69)>` = circumcircle-inverse of X(5866)
-   * :ref:`X(69) <X(69)>` = :term:`cyclocevian conjugate <cyclocevian-conjugate>` of :ref:`X(253) <X(253)>`
-   * :ref:`X(69) <X(69)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`76 <X(76)>`, :ref:`2 <X(2)>`), (:ref:`304 <X(304)>`, :ref:`345 <X(345)>`), (:ref:`314 <X(314)>`, :ref:`75 <X(75)>`), (:ref:`332 <X(332)>`, :ref:`326 <X(326)>`)
-   * :ref:`X(69) <X(69)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`20 <X(20)>`), (:ref:`3 <X(3)>`, :ref:`394 <X(394)>`), (:ref:`6 <X(6)>`, :ref:`159 <X(159)>`), (:ref:`8 <X(8)>`, :ref:`329 <X(329)>`), (:ref:`63 <X(63)>`, :ref:`78 <X(78)>`), (:ref:`72 <X(72)>`, :ref:`306 <X(306)>`), (:ref:`125 <X(125)>`, :ref:`525 <X(525)>`)
-   * :ref:`X(69) <X(69)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`3 <X(3)>`, :ref:`2 <X(2)>`), (:ref:`63 <X(63)>`, :ref:`348 <X(348)>`), (:ref:`72 <X(72)>`, :ref:`63 <X(63)>`), (:ref:`78 <X(78)>`, :ref:`345 <X(345)>`), (:ref:`125 <X(125)>`, :ref:`525 <X(525)>`), (:ref:`306 <X(306)>`, :ref:`304 <X(304)>`), (:ref:`307 <X(307)>`, :ref:`75 <X(75)>`), (:ref:`343 <X(343)>`, :ref:`76 <X(76)>`)
-   * :ref:`X(69) <X(69)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`2 <X(2)>`, 2996), (:ref:`76 <X(76)>`, :ref:`305 <X(305)>`), (:ref:`314 <X(314)>`, :ref:`332 <X(332)>`)
-   * :ref:`X(69) <X(69)>` = :ref:`X(2) <X(2)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(325) <X(325)>`
-   * :ref:`X(69) <X(69)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`69 <X(69)>`, :ref:`77 <X(77)>`), (:ref:`99 <X(99)>`, :ref:`347 <X(347)>`), (:ref:`314 <X(314)>`, :ref:`7 <X(7)>`), (:ref:`332 <X(332)>`, :ref:`69 <X(69)>`), (:ref:`645 <X(645)>`, :ref:`69 <X(69)>`), (:ref:`668 <X(668)>`, :ref:`69 <X(69)>`)
-   * :ref:`X(69) <X(69)>` = barycentric product of PU(37)
-   * :ref:`X(69) <X(69)>` = bicentric sum of PU(132)
-   * :ref:`X(69) <X(69)>` = midpoint of PU(132)
-   * :ref:`X(69) <X(69)>` = perspector of the orthic-of-:term:`medial triangle <medial-triangle>` and the reference triangle
-   * :ref:`X(69) <X(69)>` = perspector of :g:`ABC << A B C >>` and the :term:`pedal triangle <pedal-triangle>` of :ref:`X(20) <X(20)>`
-   * :ref:`X(69) <X(69)>` = perspector of :g:`ABC << A B C >>` and (reflection in :ref:`X(2) <X(2)>` of the pedal triangle of :ref:`X(2) <X(2)>`)
-   * :ref:`X(69) <X(69)>` = intersection of extended sides P(11)U(45) and U(11)P(45) of the trapezoid PU(11)PU(45)
-   * :ref:`X(69) <X(69)>` = perspector of :g:`ABC << A B C >>` and 4th :term:`extouch triangle <extouch-triangle>`
-   * :ref:`X(69) <X(69)>` = antipode of :ref:`X(287) <X(287)>` in hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(69) <X(69)>`}}
-   * :ref:`X(69) <X(69)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(441) <X(441)>`\ \ :ref:`X(525) <X(525)>`
-   * :ref:`X(69) <X(69)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(393) <X(393)>` (line :ref:`X(460) <X(460)>`\ \ :ref:`X(512) <X(512)>`)
-   * :ref:`X(69) <X(69)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X(393) <X(393)>`
-   * :ref:`X(69) <X(69)>` = :ref:`X(6) <X(6)>`-isoconjugate of :ref:`X(19) <X(19)>`
-   * :ref:`X(69) <X(69)>` = :ref:`X(92) <X(92)>`-isoconjugate of :ref:`X(32) <X(32)>`
-   * :ref:`X(69) <X(69)>` = :term:`antigonal image <antigonal-image>` of :ref:`X(895) <X(895)>`
-   * :ref:`X(69) <X(69)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`6 <X(6)>`, 3053), (:ref:`32 <X(32)>`, 1974)
-   * :ref:`X(69) <X(69)>` = perspector of :g:`ABC << A B C >>` and the 2nd pedal triangle of :ref:`X(3) <X(3)>`
-   * :ref:`X(69) <X(69)>` = crosspoint of :ref:`X(6) <X(6)>` and :ref:`X(159) <X(159)>` wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
-   * :ref:`X(69) <X(69)>` = crosspoint of :ref:`X(2) <X(2)>` and :ref:`X(20) <X(20)>` wrt both the excentral and anticomplementary triangles
-   * :ref:`X(69) <X(69)>` = homothetic center of anticomplementary triangle and 2nd :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(4) <X(4)>` (i.e., of 1st and 2nd antipedal triangles of :ref:`X(4) <X(4)>`)
-   * :ref:`X(69) <X(69)>` = perspector of the complement of the polar circle
-   * :ref:`X(69) <X(69)>` = perspector of the inconic with center :ref:`X(3) <X(3)>`
-   * :ref:`X(69) <X(69)>` = pole, wrt de Longchamps circle, of trilinear polar of :ref:`X(95) <X(95)>`
-   * :ref:`X(69) <X(69)>` = perspector of the extraversion triangles of :ref:`X(7) <X(7)>` and :ref:`X(8) <X(8)>`
-   * :ref:`X(69) <X(69)>` = {:ref:`X(2) <X(2)>`,\ :ref:`X(6) <X(6)>`}-harmonic conjugate of X(3618)
-   * :ref:`X(69) <X(69)>` = perspector of :g:`ABC << A B C >>` and anticomplement of submedial triangle
-   * :ref:`X(69) <X(69)>` = perspector of :g:`ABC << A B C >>` and mid-triangle of orthic and dual of :term:`orthic triangles <orthic-triangle>`
-   * :ref:`X(69) <X(69)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and 2nd Brocard triangle
-   * :ref:`X(69) <X(69)>` = perspector of 2nd Conway triangle and cross-triangle of :g:`ABC << A B C >>` and 2nd Conway triangle
-   * :ref:`X(69) <X(69)>` = Lucas-isogonal conjugate of :ref:`X(376) <X(376)>`
-   * :ref:`X(69) <X(69)>` = anticevian-isogonal conjugate of :ref:`X(2) <X(2)>`
-   * :ref:`X(69) <X(69)>` = inverse-in-MacBeath-circumconic of X(22151)
-   * :ref:`X(69) <X(69)>` = {:ref:`X(7) <X(7)>`,\ :ref:`X(8) <X(8)>`}-harmonic conjugate of :ref:`X(75) <X(75)>`
-   * :ref:`X(69) <X(69)>` = intersection of van Aubel lines of outer and inner Vecten triangles
-   * :ref:`X(69) <X(69)>` = orthic-isogonal conjugate of X(19583)
-   * :ref:`X(69) <X(69)>` = :ref:`X(4) <X(4)>`-Ceva conjugate of X(19583)
+   * :ref:`X_69 <X_69>` = reflection of X_i in X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`599 <X_599>`), (:ref:`4 <X_4>`, 1352), (:ref:`6 <X_6>`, :ref:`141 <X_141>`), (:ref:`20 <X_20>`, 1350), (:ref:`193 <X_193>`, :ref:`6 <X_6>`), (:ref:`895 <X_895>`, :ref:`125 <X_125>`), (1351, :ref:`5 <X_5>`), (1353, :ref:`140 <X_140>`)
+   * :ref:`X_69 <X_69>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_25 <X_25>`
+   * :ref:`X_69 <X_69>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_4 <X_4>`
+   * :ref:`X_69 <X_69>` = :term:`complement <complement>` of :ref:`X_193 <X_193>`
+   * :ref:`X_69 <X_69>` = :term:`anticomplement <anticomplement>` of :ref:`X_6 <X_6>`
+   * :ref:`X_69 <X_69>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X_2 <X_2>`
+   * :ref:`X_69 <X_69>` = circumcircle-inverse of X_5866
+   * :ref:`X_69 <X_69>` = :term:`cyclocevian conjugate <cyclocevian-conjugate>` of :ref:`X_253 <X_253>`
+   * :ref:`X_69 <X_69>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`76 <X_76>`, :ref:`2 <X_2>`), (:ref:`304 <X_304>`, :ref:`345 <X_345>`), (:ref:`314 <X_314>`, :ref:`75 <X_75>`), (:ref:`332 <X_332>`, :ref:`326 <X_326>`)
+   * :ref:`X_69 <X_69>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`20 <X_20>`), (:ref:`3 <X_3>`, :ref:`394 <X_394>`), (:ref:`6 <X_6>`, :ref:`159 <X_159>`), (:ref:`8 <X_8>`, :ref:`329 <X_329>`), (:ref:`63 <X_63>`, :ref:`78 <X_78>`), (:ref:`72 <X_72>`, :ref:`306 <X_306>`), (:ref:`125 <X_125>`, :ref:`525 <X_525>`)
+   * :ref:`X_69 <X_69>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`2 <X_2>`), (:ref:`63 <X_63>`, :ref:`348 <X_348>`), (:ref:`72 <X_72>`, :ref:`63 <X_63>`), (:ref:`78 <X_78>`, :ref:`345 <X_345>`), (:ref:`125 <X_125>`, :ref:`525 <X_525>`), (:ref:`306 <X_306>`, :ref:`304 <X_304>`), (:ref:`307 <X_307>`, :ref:`75 <X_75>`), (:ref:`343 <X_343>`, :ref:`76 <X_76>`)
+   * :ref:`X_69 <X_69>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`2 <X_2>`, 2996), (:ref:`76 <X_76>`, :ref:`305 <X_305>`), (:ref:`314 <X_314>`, :ref:`332 <X_332>`)
+   * :ref:`X_69 <X_69>` = :ref:`X_2 <X_2>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X_325 <X_325>`
+   * :ref:`X_69 <X_69>` = X_i-:term:`beth conjugate <beth-conjugate>` of X_j for these (i,j): (:ref:`69 <X_69>`, :ref:`77 <X_77>`), (:ref:`99 <X_99>`, :ref:`347 <X_347>`), (:ref:`314 <X_314>`, :ref:`7 <X_7>`), (:ref:`332 <X_332>`, :ref:`69 <X_69>`), (:ref:`645 <X_645>`, :ref:`69 <X_69>`), (:ref:`668 <X_668>`, :ref:`69 <X_69>`)
+   * :ref:`X_69 <X_69>` = barycentric product of PU(37)
+   * :ref:`X_69 <X_69>` = bicentric sum of PU(132)
+   * :ref:`X_69 <X_69>` = midpoint of PU(132)
+   * :ref:`X_69 <X_69>` = perspector of the orthic-of-:term:`medial triangle <medial-triangle>` and the reference triangle
+   * :ref:`X_69 <X_69>` = perspector of :g:`ABC << A B C >>` and the :term:`pedal triangle <pedal-triangle>` of :ref:`X_20 <X_20>`
+   * :ref:`X_69 <X_69>` = perspector of :g:`ABC << A B C >>` and (reflection in :ref:`X_2 <X_2>` of the pedal triangle of :ref:`X_2 <X_2>`)
+   * :ref:`X_69 <X_69>` = intersection of extended sides P(11)U(45) and U(11)P(45) of the trapezoid PU(11)PU(45)
+   * :ref:`X_69 <X_69>` = perspector of :g:`ABC << A B C >>` and 4th :term:`extouch triangle <extouch-triangle>`
+   * :ref:`X_69 <X_69>` = antipode of :ref:`X_287 <X_287>` in hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_2 <X_2>`,\ :ref:`X_69 <X_69>`}}
+   * :ref:`X_69 <X_69>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_441 <X_441>`\ \ :ref:`X_525 <X_525>`
+   * :ref:`X_69 <X_69>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_393 <X_393>` (line :ref:`X_460 <X_460>`\ \ :ref:`X_512 <X_512>`)
+   * :ref:`X_69 <X_69>` = :ref:`X_48 <X_48>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X_393 <X_393>`
+   * :ref:`X_69 <X_69>` = :ref:`X_6 <X_6>`-isoconjugate of :ref:`X_19 <X_19>`
+   * :ref:`X_69 <X_69>` = :ref:`X_92 <X_92>`-isoconjugate of :ref:`X_32 <X_32>`
+   * :ref:`X_69 <X_69>` = :term:`antigonal image <antigonal-image>` of :ref:`X_895 <X_895>`
+   * :ref:`X_69 <X_69>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, 3053), (:ref:`32 <X_32>`, 1974)
+   * :ref:`X_69 <X_69>` = perspector of :g:`ABC << A B C >>` and the 2nd pedal triangle of :ref:`X_3 <X_3>`
+   * :ref:`X_69 <X_69>` = crosspoint of :ref:`X_6 <X_6>` and :ref:`X_159 <X_159>` wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
+   * :ref:`X_69 <X_69>` = crosspoint of :ref:`X_2 <X_2>` and :ref:`X_20 <X_20>` wrt both the excentral and anticomplementary triangles
+   * :ref:`X_69 <X_69>` = homothetic center of anticomplementary triangle and 2nd :term:`antipedal triangle <antipedal-triangle>` of :ref:`X_4 <X_4>` (i.e., of 1st and 2nd antipedal triangles of :ref:`X_4 <X_4>`)
+   * :ref:`X_69 <X_69>` = perspector of the complement of the polar circle
+   * :ref:`X_69 <X_69>` = perspector of the inconic with center :ref:`X_3 <X_3>`
+   * :ref:`X_69 <X_69>` = pole, wrt de Longchamps circle, of trilinear polar of :ref:`X_95 <X_95>`
+   * :ref:`X_69 <X_69>` = perspector of the extraversion triangles of :ref:`X_7 <X_7>` and :ref:`X_8 <X_8>`
+   * :ref:`X_69 <X_69>` = {:ref:`X_2 <X_2>`,\ :ref:`X_6 <X_6>`}-harmonic conjugate of X_3618
+   * :ref:`X_69 <X_69>` = perspector of :g:`ABC << A B C >>` and anticomplement of submedial triangle
+   * :ref:`X_69 <X_69>` = perspector of :g:`ABC << A B C >>` and mid-triangle of orthic and dual of :term:`orthic triangles <orthic-triangle>`
+   * :ref:`X_69 <X_69>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and :term:`2nd Brocard triangle <2nd-brocard-triangle>`
+   * :ref:`X_69 <X_69>` = perspector of 2nd Conway triangle and cross-triangle of :g:`ABC << A B C >>` and 2nd Conway triangle
+   * :ref:`X_69 <X_69>` = Lucas-isogonal conjugate of :ref:`X_376 <X_376>`
+   * :ref:`X_69 <X_69>` = anticevian-isogonal conjugate of :ref:`X_2 <X_2>`
+   * :ref:`X_69 <X_69>` = inverse-in-MacBeath-circumconic of X_22151
+   * :ref:`X_69 <X_69>` = {:ref:`X_7 <X_7>`,\ :ref:`X_8 <X_8>`}-harmonic conjugate of :ref:`X_75 <X_75>`
+   * :ref:`X_69 <X_69>` = intersection of van Aubel lines of outer and inner Vecten triangles
+   * :ref:`X_69 <X_69>` = orthic-isogonal conjugate of X_19583
+   * :ref:`X_69 <X_69>` = :ref:`X_4 <X_4>`-Ceva conjugate of X_19583
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the anticomplementary triangle. Let :g:`A″ <A″>` be the orthogonal projection of :g:`A' <A'>` on line :g:`BC <[ B C ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(69) <X(69)>`. (Randy Hutson, February 10, 2016)
+   Let :g:`A'B'C' << K_a K_b K_c >>` be the anticomplementary triangle. Let :g:`A″ <A″>` be the inverse-in-anticomplementary-circle of :g:`A <A>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ K_a A″ ]>`, :g:`B'B″ <[ K_b B″ ]>`, :g:`C'C″ <[ K_c C″ ]>` concur in :ref:`X_69 <X_69>`. (:person:`Randy Hutson <randy-hutson>`, February 10, 2016)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the half-altitude triangle. Let :g:`A″ <A″>` be the trilinear pole of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Let :g:`A* <A*>` be the trilinear pole of line :g:`B″C″ <[ B″ C″ ]>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(69) <X(69)>`. (Randy Hutson, February 10, 2016)
+   Let :g:`A'B'C' << K_a K_b K_c >>` be the anticomplementary triangle. Let :g:`A″ <A″>` be the orthogonal projection of :g:`A' <K_a>` on line :g:`BC <[ B C ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_69 <X_69>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 
-   Let :g:`A_{2}B_{2}C_{2} << A_2 B_2 C_2 >>` be the 2nd Conway triangle. Let :g:`A' <A'>` be the cevapoint of :g:`B_{2} <B_2>` and :g:`C_{2} <C_2>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(69) <X(69)>`. (Randy Hutson, December 10, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`half-altitude triangle <half-altitude-triangle>`. Let :g:`A″ <A″>` be the trilinear pole of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Let :g:`A* <A*>` be the trilinear pole of line :g:`B″C″ <[ B″ C″ ]>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X_69 <X_69>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 
-   :ref:`X(69) <X(69)>` is the barycentric multiplier for the MacBeath circumconic. (The barycentric product of :ref:`X(69) <X(69)>` and the circumcircle is the MacBeath circumconic.) (Randy Hutson, August 19, 2019)
+   Let :g:`A_{2}B_{2}C_{2} << A_2 B_2 C_2 >>` be the 2nd Conway triangle. Let :g:`A' <A'>` be the cevapoint of :g:`B_{2} <B_2>` and :g:`C_{2} <C_2>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X_69 <X_69>`. (Randy Hutson, December 10, 2016)
 
 .. container:: note-item
 
-   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the 1st Ehrmann triangle and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(69) <X(69)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
+   :ref:`X_69 <X_69>` is the barycentric multiplier for the MacBeath circumconic. (The barycentric product of :ref:`X_69 <X_69>` and the circumcircle is the MacBeath circumconic.) (Randy Hutson, August 19, 2019)
 
 .. container:: note-item
 
-   :ref:`X(69) <X(69)>` is the {:ref:`X(7) <X(7)>`,\ :ref:`X(8) <X(8)>`}-harmonic conjugate of :ref:`X(75) <X(75)>`.
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the 1st Ehrmann triangle and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X_69 <X_69>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
+
+.. container:: note-item
+
+   :ref:`X_69 <X_69>` is the {:ref:`X_7 <X_7>`,\ :ref:`X_8 <X_8>`}-harmonic conjugate of :ref:`X_75 <X_75>`.
 
 .. toctree::
    :hidden:

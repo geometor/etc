@@ -1,18 +1,21 @@
-:canonical_id: X(165)
+:canonical_id: X_165
 :type: code
+:subtitle: CENTROID OF THE EXCENTRAL TRIANGLE
 
-X(165) = CENTROID OF THE EXCENTRAL TRIANGLE — Code
-==================================================
+X_165
+=====
+
+.. rubric:: CENTROID OF THE EXCENTRAL TRIANGLE
 
 .. enunciation::
 
-   If :g:`DEF << D E F >>` is the :term:`pedal triangle <pedal-triangle>` of :ref:`X(165) <X(165)>`, then \|\ :g:`AE <[ A E ]>`\ \| + \|\ :g:`AF <[ A F ]>`\ \| = \|\ :g:`BF <[ B F ]>`\ \| + \|\ :g:`BD <[ B D ]>`\ \| = \|\ :g:`CD <[ C D ]>`\ \| + \|\ :g:`CE <[ C E ]>`\ \|. (Seiichi Kirikami, October 8, 2010.)
+   :ref:`X_165 <X_165>` is the {:ref:`X_3 <X_3>`,\ :ref:`X_40 <X_40>`}-harmonic conjugate of :ref:`X_1 <X_1>`. For a list of harmonic conjugates of :ref:`X_165 <X_165>`, click **Tables** at the top of this page.
 
 .. figure:: x-00165.svg
-   :alt: X(165) = CENTROID OF THE EXCENTRAL TRIANGLE
+   :alt: X_165 — CENTROID OF THE EXCENTRAL TRIANGLE
    :align: center
 
-   **X(165) = CENTROID OF THE EXCENTRAL TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_165** (*CENTROID OF THE EXCENTRAL TRIANGLE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

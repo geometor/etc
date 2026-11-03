@@ -1,18 +1,21 @@
-:canonical_id: X(892)
+:canonical_id: X_892
 :type: code
+:subtitle: ISOGONAL CONJUGATE OF X_351
 
-X(892) = ISOGONAL CONJUGATE OF X(351) — Code
-============================================
+X_892
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_351
 
 .. enunciation::
 
-   The osculating circle of the Steiner circumellipse at :ref:`X(99) <X(99)>` intersects the Steiner circumellipse in two points: :ref:`X(99) <X(99)>` and :ref:`X(892) <X(892)>`. See `Osculating circle of Steiner circumellipse at X(99). <https://groups.io/g/euclid/message/2988>`__ (:person:`Randy Hutson <randy-hutson>`, November 5, 2021)
+   :ref:`X_892 <X_892>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_351 <X_351>`.
 
 .. figure:: x-00892.svg
-   :alt: X(892) = ISOGONAL CONJUGATE OF X(351)
+   :alt: X_892 — ISOGONAL CONJUGATE OF X_351
    :align: center
 
-   **X(892) = ISOGONAL CONJUGATE OF X(351)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_892** (*ISOGONAL CONJUGATE OF X_351*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

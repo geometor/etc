@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(831) = o-(1, 3) CIRCUMCIRCLE POINT."""
+"""GEOMETOR construction model for X_831 = o-(1, 3) CIRCUMCIRCLE POINT."""
 
 from __future__ import annotations
 
@@ -22,11 +22,11 @@ from geometor.etc.render import write_center_svg
 def construct_x_00831(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(831) = o-(1, 3) CIRCUMCIRCLE POINT on reference triangle ABC."""
-    X_830 = point_from_barycentrics(model, A, B, C, 0.54558558, 0.25327972, -0.7988653, ID="X(830)", classes=["center"])
-    X_831 = isogonal_conjugate(model, A, B, C, X_830, ID="X(831)", classes=["selected", "target"])
-    X_662 = eval_trilinear_point(model, A, B, C, '1/(cot(B) - cot(C))', ID="X(662)", classes=["center", "incident"])
-    X_827 = eval_trilinear_point(model, A, B, C, '1/(a**(-1)*(b**(4) - c**(4)) + a**(3)*(b**(0) - c**(0)))', ID="X(827)", classes=["center", "incident"])
+    """Construct X_831 = o-(1, 3) CIRCUMCIRCLE POINT on reference triangle ABC."""
+    X_830 = point_from_barycentrics(model, A, B, C, 0.54558558, 0.25327972, -0.7988653, ID="X_830", classes=["center"])
+    X_831 = isogonal_conjugate(model, A, B, C, X_830, ID="X_831", classes=["selected", "target"])
+    X_662 = eval_trilinear_point(model, A, B, C, '1/(cot(B) - cot(C))', ID="X_662", classes=["center", "incident"])
+    X_827 = eval_trilinear_point(model, A, B, C, '1/(a**(-1)*(b**(4) - c**(4)) + a**(3)*(b**(0) - c**(0)))', ID="X_827", classes=["center", "incident"])
     central_line(model, X_662, X_827, 662, 827, incident=True)
     return promote_point_to_top(model, X_831)
 
@@ -35,8 +35,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(831) on the given reference triangle."""
-    model = create_model('X(831) = o-(1, 3) CIRCUMCIRCLE POINT')
+    """Build a `geometor.model.Model` for X_831 on the given reference triangle."""
+    model = create_model('X_831 = o-(1, 3) CIRCUMCIRCLE POINT')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00831(model, A, B, C)
     return model

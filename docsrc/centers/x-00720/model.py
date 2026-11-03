@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(720) = EVEN (- 3, 2) INFINITY POINT."""
+"""GEOMETOR construction model for X_720 = EVEN (- 3, 2) INFINITY POINT."""
 
 from __future__ import annotations
 
@@ -22,14 +22,14 @@ from geometor.etc.render import write_center_svg
 def construct_x_00720(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(720) = EVEN (- 3, 2) INFINITY POINT on reference triangle ABC."""
-    X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X(30)", classes=["center"])
-    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X(511)", classes=["center"])
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
-    X_561 = eval_trilinear_point(model, A, B, C, 'a **(- 4)', ID="X(561)", classes=["center"])
+    """Construct X_720 = EVEN (- 3, 2) INFINITY POINT on reference triangle ABC."""
+    X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X_30", classes=["center"])
+    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X_511", classes=["center"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center"])
+    X_561 = eval_trilinear_point(model, A, B, C, 'a **(- 4)', ID="X_561", classes=["center"])
     central_line(model, X_30, X_511, 30, 511)
     central_line(model, X_6, X_561, 6, 561)
-    X_720 = intersect_lines(model, X_30, X_511, X_6, X_561, ID="X(720)", classes=["selected", "target"])
+    X_720 = intersect_lines(model, X_30, X_511, X_6, X_561, ID="X_720", classes=["selected", "target"])
     return promote_point_to_top(model, X_720)
 
 
@@ -37,8 +37,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(720) on the given reference triangle."""
-    model = create_model('X(720) = EVEN (- 3, 2) INFINITY POINT')
+    """Build a `geometor.model.Model` for X_720 on the given reference triangle."""
+    model = create_model('X_720 = EVEN (- 3, 2) INFINITY POINT')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00720(model, A, B, C)
     return model

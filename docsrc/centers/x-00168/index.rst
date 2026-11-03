@@ -1,22 +1,31 @@
 :order: 168
 :type: center
-:canonical_id: X(168)
-:dependencies: X(1), X(7), X(9), X(164), X(165), X(166), X(173), X(188), X(363)
+:canonical_id: X_168
+:subtitle: MITTENPUNKT OF EXCENTRAL TRIANGLE
+:dependencies: X_1, X_7, X_9, X_164, X_165, X_166, X_173, X_188, X_363
 
-.. _X(168):
+.. _X_168:
 
-X(168) = MITTENPUNKT OF EXCENTRAL TRIANGLE
-==========================================
+X_168
+=====
+
+.. rubric:: MITTENPUNKT OF EXCENTRAL TRIANGLE
 
 .. enunciation::
 
-   :ref:`X(168) <X(168)>` = :ref:`X(188) <X(188)>`-:term:`aleph conjugate <aleph-conjugate>` of :ref:`X(363) <X(363)>`
+   :ref:`X_168 <X_168>` = :ref:`X_9 <X_9>`-of-:term:`excentral triangle <excentral-triangle>`
 
 .. figure:: x-00168.svg
-   :alt: X(168) = MITTENPUNKT OF EXCENTRAL TRIANGLE
+   :alt: X_168 — MITTENPUNKT OF EXCENTRAL TRIANGLE
    :align: center
 
-   **X(168) = MITTENPUNKT OF EXCENTRAL TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_168** (*MITTENPUNKT OF EXCENTRAL TRIANGLE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Derived Triangle:** :term:`Excentral Triangle <excentral triangle>` :g:`△J_aJ_bJ_c << J_a J_b J_c >>` — vertices :g:`J_a <J_a>`, :g:`J_b <J_b>`, :g:`J_c <J_c>` (Anticevian triangle of Incenter X_1 (the three excenters))
+   * **Concurrence Lines:** :g:`J_a–X_168 <[ J_a X_168 ]>`, :g:`J_b–X_168 <[ J_b X_168 ]>`, :g:`J_c–X_168 <[ J_c X_168 ]>` concurring at :g:`X_168 <X_168>`
 
 .. signature:: center
 
@@ -32,16 +41,16 @@ X(168) = MITTENPUNKT OF EXCENTRAL TRIANGLE
    :badge: 3 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`173 <X(173)>`}, {:ref:`9 <X(9)>`, :ref:`164 <X(164)>`}, {:ref:`165 <X(165)>`, :ref:`166 <X(166)>`}
+   {:ref:`1 <X_1>`, :ref:`173 <X_173>`}, {:ref:`9 <X_9>`, :ref:`164 <X_164>`}, {:ref:`165 <X_165>`, :ref:`166 <X_166>`}
 
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X(168) <X(168)>` = :ref:`X(188) <X(188)>`-aleph conjugate of :ref:`X(363) <X(363)>`
-   * :ref:`X(168) <X(168)>` = :ref:`X(9) <X(9)>`-of-:term:`excentral triangle <excentral-triangle>`
-   * :ref:`X(168) <X(168)>` = homothetic center of the excentral and outer Hutson triangles; see :ref:`X(363) <X(363)>`.
-   * :ref:`X(168) <X(168)>` = :ref:`X(7) <X(7)>`-of-1st-circumperp-triangle
-   * :ref:`X(168) <X(168)>` = homothetic center of :g:`ABC << A B C >>` and :term:`orthic triangle <orthic-triangle>` of outer Hutson triangle
+   * :ref:`X_168 <X_168>` = :ref:`X_188 <X_188>`-:term:`aleph conjugate <aleph-conjugate>` of :ref:`X_363 <X_363>`
+   * :ref:`X_168 <X_168>` = :ref:`X_9 <X_9>`-of-excentral triangle
+   * :ref:`X_168 <X_168>` = homothetic center of the excentral and outer Hutson triangles; see :ref:`X_363 <X_363>`.
+   * :ref:`X_168 <X_168>` = :ref:`X_7 <X_7>`-of-1st-circumperp-triangle
+   * :ref:`X_168 <X_168>` = homothetic center of :g:`ABC << A B C >>` and :term:`orthic triangle <orthic-triangle>` of outer Hutson triangle
 
 .. toctree::
    :hidden:

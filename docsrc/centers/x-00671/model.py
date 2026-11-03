@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(671) = TRILINEAR POLE OF LINE X(2)X(523)."""
+"""GEOMETOR construction model for X_671 = TRILINEAR POLE OF LINE X_2X_523."""
 
 from __future__ import annotations
 
@@ -23,17 +23,17 @@ from geometor.etc.render import write_center_svg
 def construct_x_00671(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(671) = TRILINEAR POLE OF LINE X(2)X(523) on reference triangle ABC."""
-    X_187 = eval_trilinear_point(model, A, B, C, 'a*(2*a**(2) - b**(2) - c**(2))', ID="X(187)", classes=["center"])
-    X_671 = isogonal_conjugate(model, A, B, C, X_187, ID="X(671)", classes=["selected", "target"])
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
-    X_99 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(2) - c**(2))', ID="X(99)", classes=["center", "incident"])
+    """Construct X_671 = TRILINEAR POLE OF LINE X_2X_523 on reference triangle ABC."""
+    X_187 = eval_trilinear_point(model, A, B, C, 'a*(2*a**(2) - b**(2) - c**(2))', ID="X_187", classes=["center"])
+    X_671 = isogonal_conjugate(model, A, B, C, X_187, ID="X_671", classes=["selected", "target"])
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
+    X_99 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(2) - c**(2))', ID="X_99", classes=["center", "incident"])
     central_line(model, X_2, X_99, 2, 99, incident=True)
-    X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X(30)", classes=["center", "incident"])
-    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A + omega )', ID="X(98)", classes=["center", "incident"])
+    X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X_30", classes=["center", "incident"])
+    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A + omega )', ID="X_98", classes=["center", "incident"])
     central_line(model, X_30, X_98, 30, 98, incident=True)
-    X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["center", "incident"])
-    X_190 = eval_trilinear_point(model, A, B, C, 'b*c/(b - c)', ID="X(190)", classes=["center", "incident"])
+    X_10 = spieker_center_of(model, A, B, C, ID="X_10", classes=["center", "incident"])
+    X_190 = eval_trilinear_point(model, A, B, C, 'b*c/(b - c)', ID="X_190", classes=["center", "incident"])
     central_line(model, X_10, X_190, 10, 190, incident=True)
     return promote_point_to_top(model, X_671)
 
@@ -42,8 +42,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(671) on the given reference triangle."""
-    model = create_model('X(671) = TRILINEAR POLE OF LINE X(2)X(523)')
+    """Build a `geometor.model.Model` for X_671 on the given reference triangle."""
+    model = create_model('X_671 = TRILINEAR POLE OF LINE X_2X_523')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00671(model, A, B, C)
     return model

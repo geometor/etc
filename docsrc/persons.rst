@@ -32,7 +32,7 @@ Mathematician who introduced Conway triangle notation (S, S_A, S_B, S_C, S_ω) a
 Jean-Gaston Darboux (1842–1917)
 -------------------------------
 
-French geometer after whom the Darboux cubic (K004) and Darboux point :ref:`X(20) <X(20)>` (with De Longchamps) are named.
+French geometer after whom the Darboux cubic (K004) and Darboux point :ref:`X_20 <X_20>` (with De Longchamps) are named.
 
 .. _person-leonhard-euler:
 .. _leonhard-euler:
@@ -40,7 +40,7 @@ French geometer after whom the Darboux cubic (K004) and Darboux point :ref:`X(20
 Leonhard Euler (1707–1783)
 --------------------------
 
-Swiss mathematician who proved in 1765 that the orthocenter :ref:`X(4) <X(4)>`, circumcenter :ref:`X(3) <X(3)>`, centroid :ref:`X(2) <X(2)>`, and nine-point center :ref:`X(5) <X(5)>` are collinear on the Euler line.
+Swiss mathematician who proved in 1765 that the orthocenter :ref:`X_4 <X_4>`, circumcenter :ref:`X_3 <X_3>`, centroid :ref:`X_2 <X_2>`, and nine-point center :ref:`X_5 <X_5>` are collinear on the Euler line.
 
 .. _person-pierre-de-fermat:
 .. _pierre-de-fermat:
@@ -48,7 +48,7 @@ Swiss mathematician who proved in 1765 that the orthocenter :ref:`X(4) <X(4)>`, 
 Pierre de Fermat (1607–1665)
 ----------------------------
 
-French mathematician who posed the problem of finding the point :ref:`X(13) <X(13)>` minimizing the sum of distances \|\ :g:`AX <[ A X ]>`\ \| + \|\ :g:`BX <[ B X ]>`\ \| + \|\ :g:`CX <[ C X ]>`\ \| to the vertices of :g:`ABC << A B C >>`.
+French mathematician who posed the problem of finding the point :ref:`X_13 <X_13>` minimizing the sum of distances \|\ :g:`AX <[ A X ]>`\ \| + \|\ :g:`BX <[ B X ]>`\ \| + \|\ :g:`CX <[ C X ]>`\ \| to the vertices of :g:`ABC << A B C >>`.
 
 .. _person-karl-wilhelm-feuerbach:
 .. _karl-wilhelm-feuerbach:
@@ -56,7 +56,7 @@ French mathematician who posed the problem of finding the point :ref:`X(13) <X(1
 Karl Wilhelm Feuerbach (1800–1834)
 ----------------------------------
 
-German geometer who proved in 1822 that the nine-point circle is tangent to the incircle at the Feuerbach point :ref:`X(11) <X(11)>` and to the three excircles.
+German geometer who proved in 1822 that the nine-point circle is tangent to the incircle at the Feuerbach point :ref:`X_11 <X_11>` and to the three excircles.
 
 .. _person-joseph-diaz-gergonne:
 .. _joseph-diaz-gergonne:
@@ -64,7 +64,7 @@ German geometer who proved in 1822 that the nine-point circle is tangent to the 
 Joseph Diaz Gergonne (1771–1859)
 --------------------------------
 
-French geometer after whom the Gergonne point :ref:`X(7) <X(7)>` (perspector of the intouch triangle) and Gergonne line are named.
+French geometer after whom the Gergonne point :ref:`X_7 <X_7>` (perspector of the intouch triangle) and Gergonne line are named.
 
 .. _person-bernard-gibert:
 .. _bernard-gibert:
@@ -80,7 +80,7 @@ Creator of Cubics in the Triangle Plane (CTC), cataloging and analyzing over 1,2
 Ernst Wilhelm Grebe (1804–1874)
 -------------------------------
 
-German mathematician who investigated the symmedian point :ref:`X(6) <X(6)>` (Grebe point) in 1847.
+German mathematician who investigated the symmedian point :ref:`X_6 <X_6>` (Grebe point) in 1847.
 
 .. _person-darij-grinberg:
 .. _darij-grinberg:
@@ -104,7 +104,7 @@ Founder of the Hyacinthos, Anopolis, and Euclid geometry research forums; propos
 Douglas Richard Hofstadter (b. 1945)
 ------------------------------------
 
-Cognitive scientist and geometer who discovered the Hofstadter points, including the Hofstadter zero point :ref:`X(359) <X(359)>` and one point :ref:`X(360) <X(360)>`.
+Cognitive scientist and geometer who discovered the Hofstadter points, including the Hofstadter zero point :ref:`X_359 <X_359>` and one point :ref:`X_360 <X_360>`.
 
 .. _person-randy-hutson:
 .. _randy-hutson:
@@ -144,7 +144,7 @@ Dutch mathematician and triangle geometer, discoverer of the van Lamoen circle a
 Émile Michel Hyacinthe Lemoine (1840–1912)
 ------------------------------------------
 
-French mathematician and co-founder of modern triangle geometry; studied the symmedian point :ref:`X(6) <X(6)>` (Lemoine point) and Lemoine circles.
+French mathematician and co-founder of modern triangle geometry; studied the symmedian point :ref:`X_6 <X_6>` (Lemoine point) and Lemoine circles.
 
 .. _person-gohier-de-longchamps:
 .. _gohier-de-longchamps:
@@ -152,7 +152,7 @@ French mathematician and co-founder of modern triangle geometry; studied the sym
 Gaston Albert Gohier de Longchamps (1842–1906)
 ----------------------------------------------
 
-French mathematician who studied the De Longchamps point :ref:`X(20) <X(20)>` (reflection of the orthocenter in the circumcenter) and De Longchamps line.
+French mathematician who studied the De Longchamps point :ref:`X_20 <X_20>` (reflection of the orthocenter in the circumcenter) and De Longchamps line.
 
 .. _person-cesar-lozada:
 .. _cesar-lozada:
@@ -184,7 +184,7 @@ Computational geometer and principal collaborator on the ETC, discoverer of thou
 Christian Heinrich von Nagel (1803–1882)
 ----------------------------------------
 
-German geometer who studied the Nagel point :ref:`X(8) <X(8)>` (perspector of the extouch triangle) and Nagel line in 1836.
+German geometer who studied the Nagel point :ref:`X_8 <X_8>` (perspector of the extouch triangle) and Nagel line in 1836.
 
 .. _person-joseph-neuberg:
 .. _joseph-neuberg:
@@ -208,7 +208,7 @@ Geometer and discoverer of generalizations of the Simson line, Napoleon configur
 Cyril F. Parry (1915–1999)
 --------------------------
 
-British geometer who discovered the Parry point :ref:`X(111) <X(111)>`, the Parry circle, and the Parry reflection property.
+British geometer who discovered the Parry point :ref:`X_111 <X_111>`, the Parry circle, and the Parry reflection property.
 
 .. _person-stanley-rabinowitz:
 .. _stanley-rabinowitz:
@@ -240,7 +240,7 @@ Geometer who introduced the Shinagawa coefficients :math:`(G, H) for triangle ce
 Theodor Spieker (1823–1913)
 ---------------------------
 
-German geometer who discovered the Spieker center :ref:`X(10) <X(10)>` (incenter of the medial triangle and center of mass of the perimeter of :g:`ABC << A B C >>`).
+German geometer who discovered the Spieker center :ref:`X_10 <X_10>` (incenter of the medial triangle and center of mass of the perimeter of :g:`ABC << A B C >>`).
 
 .. _person-evangelista-torricelli:
 .. _evangelista-torricelli:
@@ -248,7 +248,7 @@ German geometer who discovered the Spieker center :ref:`X(10) <X(10)>` (incenter
 Evangelista Torricelli (1608–1647)
 ----------------------------------
 
-Italian physicist and mathematician who solved Fermat's problem via equilateral triangles erected on the sides of :g:`ABC << A B C >>`, locating :ref:`X(13) <X(13)>` and :ref:`X(14) <X(14)>`.
+Italian physicist and mathematician who solved Fermat's problem via equilateral triangles erected on the sides of :g:`ABC << A B C >>`, locating :ref:`X_13 <X_13>` and :ref:`X_14 <X_14>`.
 
 .. _person-eric-weisstein:
 .. _eric-weisstein:
@@ -264,7 +264,7 @@ Creator of MathWorld, providing extensive cross-linked articles and illustration
 Peter Yff (1924–2016)
 ---------------------
 
-Geometer who discovered the Yff center of congruence :ref:`X(174) <X(174)>`, Yff parabolic point :ref:`X(190) <X(190)>`, and Yff central triangles.
+Geometer who discovered the Yff center of congruence :ref:`X_174 <X_174>`, Yff parabolic point :ref:`X_190 <X_190>`, and Yff central triangles.
 
 .. _person-paul-yiu:
 .. _paul-yiu:

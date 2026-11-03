@@ -1,18 +1,21 @@
-:canonical_id: X(913)
+:canonical_id: X_913
 :type: code
+:subtitle: POINT AGENA
 
-X(913) = POINT AGENA — Code
-===========================
+X_913
+=====
+
+.. rubric:: POINT AGENA
 
 .. enunciation::
 
-   :ref:`X(913) <X(913)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(914) <X(914)>`
+   :ref:`X_913 <X_913>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_914 <X_914>`
 
 .. figure:: x-00913.svg
-   :alt: X(913) = POINT AGENA
+   :alt: X_913 — POINT AGENA
    :align: center
 
-   **X(913) = POINT AGENA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_913** (*POINT AGENA*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

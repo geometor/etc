@@ -1,18 +1,21 @@
-:canonical_id: X(157)
+:canonical_id: X_157
 :type: code
+:subtitle: X_6-OF-TANGENTIAL-TRIANGLE
 
-X(157) = X(6)-OF-TANGENTIAL-TRIANGLE — Code
-===========================================
+X_157
+=====
+
+.. rubric:: X_6-OF-TANGENTIAL-TRIANGLE
 
 .. enunciation::
 
-   :ref:`X(157) <X(157)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :term:`anticomplement <anticomplement>` of X(22391)
+   :ref:`X_157 <X_157>` = :ref:`X_6 <X_6>`-of-tangential-triangle
 
 .. figure:: x-00157.svg
-   :alt: X(157) = X(6)-OF-TANGENTIAL-TRIANGLE
+   :alt: X_157 — X_6-OF-TANGENTIAL-TRIANGLE
    :align: center
 
-   **X(157) = X(6)-OF-TANGENTIAL-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_157** (*X_6-OF-TANGENTIAL-TRIANGLE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

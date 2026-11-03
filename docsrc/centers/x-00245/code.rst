@@ -1,18 +1,21 @@
-:canonical_id: X(245)
+:canonical_id: X_245
 :type: code
+:subtitle: X_1-LINE CONJUGATE OF X_110
 
-X(245) = X(1)-LINE CONJUGATE OF X(110) — Code
-=============================================
+X_245
+=====
+
+.. rubric:: X_1-LINE CONJUGATE OF X_110
 
 .. enunciation::
 
-   :ref:`X(245) <X(245)>` = :ref:`X(1) <X(1)>`-:term:`line conjugate <line-conjugate>` of :ref:`X(110) <X(110)>`
+   :ref:`X_245 <X_245>` = :ref:`X_1 <X_1>`-:term:`line conjugate <line-conjugate>` of :ref:`X_110 <X_110>`
 
 .. figure:: x-00245.svg
-   :alt: X(245) = X(1)-LINE CONJUGATE OF X(110)
+   :alt: X_245 — X_1-LINE CONJUGATE OF X_110
    :align: center
 
-   **X(245) = X(1)-LINE CONJUGATE OF X(110)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_245** (*X_1-LINE CONJUGATE OF X_110*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

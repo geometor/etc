@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(644) = TRILINEAR MULTIPLIER FOR YFF PARABOLA."""
+"""GEOMETOR construction model for X_644 = TRILINEAR MULTIPLIER FOR YFF PARABOLA."""
 
 from __future__ import annotations
 
@@ -23,17 +23,17 @@ from geometor.etc.render import write_center_svg
 def construct_x_00644(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(644) = TRILINEAR MULTIPLIER FOR YFF PARABOLA on reference triangle ABC."""
-    X_190 = eval_trilinear_point(model, A, B, C, 'b*c/(b - c)', ID="X(190)", classes=["center"])
-    X_100 = eval_trilinear_point(model, A, B, C, '1/(b - c)', ID="X(100)", classes=["center"])
-    X_644 = ceva_conjugate(model, A, B, C, X_190, X_100, ID="X(644)", classes=["selected", "target"])
-    X_101 = eval_trilinear_point(model, A, B, C, 'a/(b - c)', ID="X(101)", classes=["center", "incident"])
+    """Construct X_644 = TRILINEAR MULTIPLIER FOR YFF PARABOLA on reference triangle ABC."""
+    X_190 = eval_trilinear_point(model, A, B, C, 'b*c/(b - c)', ID="X_190", classes=["center"])
+    X_100 = eval_trilinear_point(model, A, B, C, '1/(b - c)', ID="X_100", classes=["center"])
+    X_644 = ceva_conjugate(model, A, B, C, X_190, X_100, ID="X_644", classes=["selected", "target"])
+    X_101 = eval_trilinear_point(model, A, B, C, 'a/(b - c)', ID="X_101", classes=["center", "incident"])
     central_line(model, X_100, X_101, 100, 101, incident=True)
-    X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center", "incident"])
-    X_220 = eval_trilinear_point(model, A, B, C, 'a*(b + c - a)**(2)', ID="X(220)", classes=["center", "incident"])
+    X_8 = nagel_point_of(model, A, B, C, ID="X_8", classes=["center", "incident"])
+    X_220 = eval_trilinear_point(model, A, B, C, 'a*(b + c - a)**(2)', ID="X_220", classes=["center", "incident"])
     central_line(model, X_8, X_220, 8, 220, incident=True)
-    X_145 = eval_trilinear_point(model, A, B, C, 'b*c*(3*a - b - c)', ID="X(145)", classes=["center", "incident"])
-    X_218 = eval_barycentric_point(model, A, B, C, 'a**(2)*(a**(2) + b**(2) + c**(2) - 2*a*b - 2*a*c)', ID="X(218)", classes=["center", "incident"])
+    X_145 = eval_trilinear_point(model, A, B, C, 'b*c*(3*a - b - c)', ID="X_145", classes=["center", "incident"])
+    X_218 = eval_barycentric_point(model, A, B, C, 'a**(2)*(a**(2) + b**(2) + c**(2) - 2*a*b - 2*a*c)', ID="X_218", classes=["center", "incident"])
     central_line(model, X_145, X_218, 145, 218, incident=True)
     return promote_point_to_top(model, X_644)
 
@@ -42,8 +42,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(644) on the given reference triangle."""
-    model = create_model('X(644) = TRILINEAR MULTIPLIER FOR YFF PARABOLA')
+    """Build a `geometor.model.Model` for X_644 on the given reference triangle."""
+    model = create_model('X_644 = TRILINEAR MULTIPLIER FOR YFF PARABOLA')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00644(model, A, B, C)
     return model

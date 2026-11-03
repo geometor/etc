@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(630) = COMPLEMENT OF X(18)."""
+"""GEOMETOR construction model for X_630 = COMPLEMENT OF X_18."""
 
 from __future__ import annotations
 
@@ -25,17 +25,17 @@ from geometor.etc.render import write_center_svg
 def construct_x_00630(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(630) = COMPLEMENT OF X(18) on reference triangle ABC."""
-    X_18 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /6)', ID="X(18)", classes=["center"])
-    X_628 = point_from_barycentrics(model, A, B, C, 0.057011511, 0.38206086, 0.56092763, ID="X(628)", classes=["center"])
-    X_630 = midpoint(model, X_18, X_628, ID="X(630)", classes=["selected", "target"], guide=False)
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
+    """Construct X_630 = COMPLEMENT OF X_18 on reference triangle ABC."""
+    X_18 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /6)', ID="X_18", classes=["center"])
+    X_628 = point_from_barycentrics(model, A, B, C, 0.057011511, 0.38206086, 0.56092763, ID="X_628", classes=["center"])
+    X_630 = midpoint(model, X_18, X_628, ID="X_630", classes=["selected", "target"], guide=False)
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
     central_line(model, X_2, X_18, 2, 18, incident=True)
-    X_62 = eval_trilinear_point(model, A, B, C, 'sin(A - pi /6)', ID="X(62)", classes=["center", "incident"])
-    X_303 = eval_barycentric_point(model, A, B, C, 'csc(A)*sin(A - pi /6)', ID="X(303)", classes=["center", "incident"])
+    X_62 = eval_trilinear_point(model, A, B, C, 'sin(A - pi /6)', ID="X_62", classes=["center", "incident"])
+    X_303 = eval_barycentric_point(model, A, B, C, 'csc(A)*sin(A - pi /6)', ID="X_303", classes=["center", "incident"])
     central_line(model, X_62, X_303, 62, 303, incident=True)
-    X_5 = nine_point_center_of(model, A, B, C, ID="X(5)", classes=["center", "incident"])
-    X_619 = point_from_barycentrics(model, A, B, C, 0.419776, -0.015055849, 0.59527985, ID="X(619)", classes=["center", "incident"])
+    X_5 = nine_point_center_of(model, A, B, C, ID="X_5", classes=["center", "incident"])
+    X_619 = point_from_barycentrics(model, A, B, C, 0.419776, -0.015055849, 0.59527985, ID="X_619", classes=["center", "incident"])
     central_line(model, X_5, X_619, 5, 619, incident=True)
     return promote_point_to_top(model, X_630)
 
@@ -44,8 +44,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(630) on the given reference triangle."""
-    model = create_model('X(630) = COMPLEMENT OF X(18)')
+    """Build a `geometor.model.Model` for X_630 on the given reference triangle."""
+    model = create_model('X_630 = COMPLEMENT OF X_18')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00630(model, A, B, C)
     return model

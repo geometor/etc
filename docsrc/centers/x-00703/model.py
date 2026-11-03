@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(703) = EVEN (- 4, 0) CIRCUMCIRCLE POINT."""
+"""GEOMETOR construction model for X_703 = EVEN (- 4, 0) CIRCUMCIRCLE POINT."""
 
 from __future__ import annotations
 
@@ -23,11 +23,11 @@ from geometor.etc.render import write_center_svg
 def construct_x_00703(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(703) = EVEN (- 4, 0) CIRCUMCIRCLE POINT on reference triangle ABC."""
-    X_702 = point_from_barycentrics(model, A, B, C, 0.78082265, -0.18368206, -0.5971406, ID="X(702)", classes=["center"])
-    X_703 = isogonal_conjugate(model, A, B, C, X_702, ID="X(703)", classes=["selected", "target"])
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
-    X_689 = eval_trilinear_point(model, A, B, C, '1/(a**(3)*(b**(4) - c**(4)))', ID="X(689)", classes=["center", "incident"])
+    """Construct X_703 = EVEN (- 4, 0) CIRCUMCIRCLE POINT on reference triangle ABC."""
+    X_702 = point_from_barycentrics(model, A, B, C, 0.78082265, -0.18368206, -0.5971406, ID="X_702", classes=["center"])
+    X_703 = isogonal_conjugate(model, A, B, C, X_702, ID="X_703", classes=["selected", "target"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
+    X_689 = eval_trilinear_point(model, A, B, C, '1/(a**(3)*(b**(4) - c**(4)))', ID="X_689", classes=["center", "incident"])
     central_line(model, X_6, X_689, 6, 689, incident=True)
     return promote_point_to_top(model, X_703)
 
@@ -36,8 +36,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(703) on the given reference triangle."""
-    model = create_model('X(703) = EVEN (- 4, 0) CIRCUMCIRCLE POINT')
+    """Build a `geometor.model.Model` for X_703 on the given reference triangle."""
+    model = create_model('X_703 = EVEN (- 4, 0) CIRCUMCIRCLE POINT')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00703(model, A, B, C)
     return model

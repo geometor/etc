@@ -1,18 +1,27 @@
 :order: 613
 :type: center
-:canonical_id: X(613)
-:dependencies: X(1), X(6), X(55), X(56), X(141), X(182), X(222), X(240), X(394), X(496), X(499), X(511), X(608), X(614), X(982), X(1069)
+:canonical_id: X_613
+:subtitle: INTERSECTION OF LINES X_1X_6 AND X_56X_511
+:dependencies: X_1, X_6, X_55, X_56, X_141, X_182, X_222, X_240, X_394, X_496, X_499, X_511, X_608, X_614, X_982, X_1069
 
-.. _X(613):
+.. _X_613:
 
-X(613) = INTERSECTION OF LINES X(1)X(6) AND X(56)X(511)
-=======================================================
+X_613
+=====
+
+.. rubric:: INTERSECTION OF LINES X_1X_6 AND X_56X_511
 
 .. figure:: x-00613.svg
-   :alt: X(613) = INTERSECTION OF LINES X(1)X(6) AND X(56)X(511)
+   :alt: X_613 — INTERSECTION OF LINES X_1X_6 AND X_56X_511
    :align: center
 
-   **X(613) = INTERSECTION OF LINES X(1)X(6) AND X(56)X(511)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_613** (*INTERSECTION OF LINES X_1X_6 AND X_56X_511*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 6} <{ 1, 6 }>`, :g:`{55, 182} <{ 55, 182 }>`
+   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_55 <X_55>` (:ref:`INSIMILICENTER <X_55>`), :g:`X_182 <X_182>` (:ref:`MIDPOINT OF BROCARD DIAMETER <X_182>`)
 
 .. signature:: center
 
@@ -29,7 +38,7 @@ X(613) = INTERSECTION OF LINES X(1)X(6) AND X(56)X(511)
    :badge: 8 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`6 <X(6)>`}, {:ref:`55 <X(55)>`, :ref:`182 <X(182)>`}, {:ref:`56 <X(56)>`, :ref:`511 <X(511)>`}, {:ref:`141 <X(141)>`, :ref:`499 <X(499)>`}, {:ref:`222 <X(222)>`, :ref:`982 <X(982)>`}, {:ref:`240 <X(240)>`, :ref:`608 <X(608)>`}, {:ref:`394 <X(394)>`, :ref:`614 <X(614)>`}, {:ref:`496 <X(496)>`, 1069}
+   {:ref:`1 <X_1>`, :ref:`6 <X_6>`}, {:ref:`55 <X_55>`, :ref:`182 <X_182>`}, {:ref:`56 <X_56>`, :ref:`511 <X_511>`}, {:ref:`141 <X_141>`, :ref:`499 <X_499>`}, {:ref:`222 <X_222>`, :ref:`982 <X_982>`}, {:ref:`240 <X_240>`, :ref:`608 <X_608>`}, {:ref:`394 <X_394>`, :ref:`614 <X_614>`}, {:ref:`496 <X_496>`, 1069}
 
 .. toctree::
    :hidden:

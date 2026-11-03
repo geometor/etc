@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(504) = 2nd ISOSCELIZER POINT."""
+"""GEOMETOR construction model for X_504 = 2nd ISOSCELIZER POINT."""
 
 from __future__ import annotations
 
@@ -21,10 +21,10 @@ from geometor.etc.render import write_center_svg
 def construct_x_00504(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(504) = 2nd ISOSCELIZER POINT on reference triangle ABC."""
-    X_504 = point_from_barycentrics(model, A, B, C, 0.33268781, 0.34596426, 0.32134793, ID="X(504)", classes=["selected", "target"])
-    X_164 = eval_trilinear_point(model, A, B, C, 'sin(B/2) + sin(C/2) - sin(A/2)', ID="X(164)", classes=["center", "incident"])
-    X_173 = eval_trilinear_point(model, A, B, C, 'cos(B/2) + cos(C/2) - cos(A/2)', ID="X(173)", classes=["center", "incident"])
+    """Construct X_504 = 2nd ISOSCELIZER POINT on reference triangle ABC."""
+    X_504 = point_from_barycentrics(model, A, B, C, 0.33268781, 0.34596426, 0.32134793, ID="X_504", classes=["selected", "target"])
+    X_164 = eval_trilinear_point(model, A, B, C, 'sin(B/2) + sin(C/2) - sin(A/2)', ID="X_164", classes=["center", "incident"])
+    X_173 = eval_trilinear_point(model, A, B, C, 'cos(B/2) + cos(C/2) - cos(A/2)', ID="X_173", classes=["center", "incident"])
     central_line(model, X_164, X_173, 164, 173, incident=True)
     return promote_point_to_top(model, X_504)
 
@@ -33,8 +33,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(504) on the given reference triangle."""
-    model = create_model('X(504) = 2nd ISOSCELIZER POINT')
+    """Build a `geometor.model.Model` for X_504 on the given reference triangle."""
+    model = create_model('X_504 = 2nd ISOSCELIZER POINT')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00504(model, A, B, C)
     return model

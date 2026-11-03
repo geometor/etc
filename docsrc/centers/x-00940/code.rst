@@ -1,18 +1,21 @@
-:canonical_id: X(940)
+:canonical_id: X_940
 :type: code
+:subtitle: POINT ALDEBARAN
 
-X(940) = POINT ALDEBARAN — Code
-===============================
+X_940
+=====
+
+.. rubric:: POINT ALDEBARAN
 
 .. enunciation::
 
-   Let :g:`A' <A'>` be the center of the conic through the contact points of the incircle and the A- excircle with the sidelines of :g:`ABC << A B C >>`. Define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The triangle :g:`A'B'C' << A' B' C' >>` is perspective to the 4th :term:`extouch triangle <extouch-triangle>` at :ref:`X(940) <X(940)>`. See also :ref:`X(6) <X(6)>`, :ref:`X(25) <X(25)>`, :ref:`X(218) <X(218)>`, :ref:`X(222) <X(222)>`, X(1743). (:person:`Randy Hutson <randy-hutson>`, July 23, 2015)
+   :ref:`X_940 <X_940>` = :term:`crosssum <crosssum>` of :ref:`X_11 <X_11>` and :ref:`X_784 <X_784>`
 
 .. figure:: x-00940.svg
-   :alt: X(940) = POINT ALDEBARAN
+   :alt: X_940 — POINT ALDEBARAN
    :align: center
 
-   **X(940) = POINT ALDEBARAN** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_940** (*POINT ALDEBARAN*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

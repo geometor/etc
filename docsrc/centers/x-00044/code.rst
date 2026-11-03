@@ -1,18 +1,21 @@
-:canonical_id: X(44)
+:canonical_id: X_44
 :type: code
+:subtitle: X_6-LINE CONJUGATE OF X_1
 
-X(44) = X(6)-LINE CONJUGATE OF X(1) — Code
-==========================================
+X_44
+====
+
+.. rubric:: X_6-LINE CONJUGATE OF X_1
 
 .. enunciation::
 
-   :ref:`X(44) <X(44)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(88) <X(88)>`
+   :ref:`X_44 <X_44>` = :term:`crossdifference <crossdifference>` of PU(55)
 
 .. figure:: x-00044.svg
-   :alt: X(44) = X(6)-LINE CONJUGATE OF X(1)
+   :alt: X_44 — X_6-LINE CONJUGATE OF X_1
    :align: center
 
-   **X(44) = X(6)-LINE CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_44** (*X_6-LINE CONJUGATE OF X_1*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

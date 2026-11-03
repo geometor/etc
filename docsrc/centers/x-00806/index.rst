@@ -1,22 +1,31 @@
 :order: 806
 :type: center
-:canonical_id: X(806)
-:dependencies: X(30), X(511), X(807)
+:canonical_id: X_806
+:subtitle: ODD (- 2, 3) INFINITY POINT
+:dependencies: X_30, X_511, X_807
 
-.. _X(806):
+.. _X_806:
 
-X(806) = ODD (- 2, 3) INFINITY POINT
-====================================
+X_806
+=====
+
+.. rubric:: ODD (- 2, 3) INFINITY POINT
 
 .. enunciation::
 
-   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X(806) <X(806)>` lies on the line at infinity.
+   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X_806 <X_806>` lies on the line at infinity.
 
 .. figure:: x-00806.svg
-   :alt: X(806) = ODD (- 2, 3) INFINITY POINT
+   :alt: X_806 — ODD (- 2, 3) INFINITY POINT
    :align: center
 
-   **X(806) = ODD (- 2, 3) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_806** (*ODD (- 2, 3) INFINITY POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{30, 511} <{ 30, 511 }>`
+   * **Related Centers:** :g:`X_807 <X_807>` (:ref:`o-(- 2, 3) CIRCUMCIRCLE POINT <X_807>`), :g:`X_30 <X_30>` (:ref:`EULER INFINITY POINT <X_30>`), :g:`X_511 <X_511>` (:ref:`ISOGONAL CONJUGATE OF X(98) <X_511>`)
 
 .. signature:: center
 
@@ -27,12 +36,12 @@ X(806) = ODD (- 2, 3) INFINITY POINT
    :badge: 1 line
    :class: line-catalog
 
-   {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}
+   {:ref:`30 <X_30>`, :ref:`511 <X_511>`}
 
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(806) <X(806)>` = isogonal conjugate of :ref:`X(807) <X(807)>`
+   * :ref:`X_806 <X_806>` = isogonal conjugate of :ref:`X_807 <X_807>`
 
 .. toctree::
    :hidden:

@@ -1,18 +1,21 @@
-:canonical_id: X(925)
+:canonical_id: X_925
 :type: code
+:subtitle: ANTICOMPLEMENT OF X_136
 
-X(925) = ANTICOMPLEMENT OF X(136) — Code
-========================================
+X_925
+=====
+
+.. rubric:: ANTICOMPLEMENT OF X_136
 
 .. enunciation::
 
-   :ref:`X(925) <X(925)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(924) <X(924)>`
+   :ref:`X_925 <X_925>` is the :term:`anticomplement <anticomplement>` of :ref:`X_136 <X_136>`.
 
 .. figure:: x-00925.svg
-   :alt: X(925) = ANTICOMPLEMENT OF X(136)
+   :alt: X_925 — ANTICOMPLEMENT OF X_136
    :align: center
 
-   **X(925) = ANTICOMPLEMENT OF X(136)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_925** (*ANTICOMPLEMENT OF X_136*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

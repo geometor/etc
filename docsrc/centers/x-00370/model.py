@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(370) = EQUILATERAL CEVIAN TRIANGLE POINT."""
+"""GEOMETOR construction model for X_370 = EQUILATERAL CEVIAN TRIANGLE POINT."""
 
 from __future__ import annotations
 
@@ -19,8 +19,8 @@ from geometor.etc.render import write_center_svg
 def construct_x_00370(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(370) = EQUILATERAL CEVIAN TRIANGLE POINT on reference triangle ABC."""
-    X_370 = point_from_barycentrics(model, A, B, C, 0.2620507, 0.3232068, 0.4147425, ID="X(370)", classes=["selected", "target"])
+    """Construct X_370 = EQUILATERAL CEVIAN TRIANGLE POINT on reference triangle ABC."""
+    X_370 = point_from_barycentrics(model, A, B, C, 0.2620507, 0.3232068, 0.4147425, ID="X_370", classes=["selected", "target"])
     return promote_point_to_top(model, X_370)
 
 
@@ -28,8 +28,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(370) on the given reference triangle."""
-    model = create_model('X(370) = EQUILATERAL CEVIAN TRIANGLE POINT')
+    """Build a `geometor.model.Model` for X_370 on the given reference triangle."""
+    model = create_model('X_370 = EQUILATERAL CEVIAN TRIANGLE POINT')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00370(model, A, B, C)
     return model

@@ -1,26 +1,31 @@
 :order: 414
 :type: center
-:canonical_id: X(414)
-:dependencies: X(21), X(29), X(410)
+:canonical_id: X_414
+:subtitle: EULER X_29-3rd-SUBSTITUTION POINT
+:dependencies: X_21, X_29, X_410
 
-.. _X(414):
+.. _X_414:
 
-X(414) = EULER X(29)-3rd-SUBSTITUTION POINT
-===========================================
+X_414
+=====
 
-.. enunciation::
-
-   As a point on the Euler line, :ref:`X(414) <X(414)>` has Shinagawa coefficients :math:`([(2E-F)F-S^{2}]FS^{4} -\$abS_{A}S_{B}\$F^{2}S^{2} +\$ab\$F^{2}S^{4}, -[(3E-F)F-S^{2}]FS^{4} -\$ab(S_{A}S_{B})^{3}\$ +2\$abS_{C}^{3}\$FS^{2} -4\$abS_{A}S_{B}\$F^{2}S^{2} -2\$abS_{C}\$[(E+F)^{2}-2S^{2}]FS^{2} -\$ab\$F^{2}S^{4})`.
+.. rubric:: EULER X_29-3rd-SUBSTITUTION POINT
 
 .. figure:: x-00414.svg
-   :alt: X(414) = EULER X(29)-3rd-SUBSTITUTION POINT
+   :alt: X_414 — EULER X_29-3rd-SUBSTITUTION POINT
    :align: center
 
-   **X(414) = EULER X(29)-3rd-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_414** (*EULER X_29-3rd-SUBSTITUTION POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`)
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`)
 
 .. signature:: center
 
-   | **Trilinears:** :math:`u^{3}(v^{2} + w^{2} - vw) : v^{3}(w^{2} + u^{2} - wu) : w^{3}(u^{2} + v^{2} - uv)`, where :math:`u : v : w` = :ref:`X(29) <X(29)>`; e.g., :math:`u = u(A,B,C) = (\sec A)1/(\cos B + \cos C)`
+   | **Trilinears:** :math:`u^{3}(v^{2} + w^{2} - vw) : v^{3}(w^{2} + u^{2} - wu) : w^{3}(u^{2} + v^{2} - uv)`, where :math:`u : v : w` = :ref:`X_29 <X_29>`; e.g., :math:`u = u(A,B,C) = (\sec A)1/(\cos B + \cos C)`
    | **Barycentrics:** :math:`au^{3}(v^{2} + w^{2} - vw) : bv^{3}(w^{2} + u^{2} - wu) : cw^{3}(u^{2} + v^{2} - uv)`
    | **Search Value (6, 9, 13):** :math:`2.629368792489`
 
@@ -32,7 +37,14 @@ X(414) = EULER X(29)-3rd-SUBSTITUTION POINT
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(414) <X(414)>` = {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): {:ref:`21 <X(21)>`, :ref:`29 <X(29)>`, :ref:`410 <X(410)>`}
+   * :ref:`X_414 <X_414>` = {X_i,X_j}-harmonic conjugate of X_k for these (i,j,k): {:ref:`21 <X_21>`, :ref:`29 <X_29>`, :ref:`410 <X_410>`}
+
+Notes
+-----
+
+.. container:: note-item
+
+   As a point on the Euler line, :ref:`X_414 <X_414>` has Shinagawa coefficients :math:`([(2E-F)F-S^{2}]FS^{4} -\$abS_{A}S_{B}\$F^{2}S^{2} +\$ab\$F^{2}S^{4}, -[(3E-F)F-S^{2}]FS^{4} -\$ab(S_{A}S_{B})^{3}\$ +2\$abS_{C}^{3}\$FS^{2} -4\$abS_{A}S_{B}\$F^{2}S^{2} -2\$abS_{C}\$[(E+F)^{2}-2S^{2}]FS^{2} -\$ab\$F^{2}S^{4})`.
 
 .. toctree::
    :hidden:

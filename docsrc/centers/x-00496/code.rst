@@ -1,18 +1,21 @@
-:canonical_id: X(496)
+:canonical_id: X_496
 :type: code
+:subtitle: {X_1,X_5}-HARMONIC CONJUGATE OF X_495
 
-X(496) = {X(1),X(5)}-HARMONIC CONJUGATE OF X(495) — Code
-========================================================
+X_496
+=====
+
+.. rubric:: {X_1,X_5}-HARMONIC CONJUGATE OF X_495
 
 .. enunciation::
 
-   :ref:`X(496) <X(496)>` = :ref:`X(235) <X(235)>`-of-Fuhrmann-triangle
+   :ref:`X_496 <X_496>` is the {:ref:`X_1 <X_1>`,\ :ref:`X_5 <X_5>`}-harmonic conjugate of :ref:`X_495 <X_495>`.
 
 .. figure:: x-00496.svg
-   :alt: X(496) = {X(1),X(5)}-HARMONIC CONJUGATE OF X(495)
+   :alt: X_496 — {X_1,X_5}-HARMONIC CONJUGATE OF X_495
    :align: center
 
-   **X(496) = {X(1),X(5)}-HARMONIC CONJUGATE OF X(495)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_496** (*{X_1,X_5}-HARMONIC CONJUGATE OF X_495*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

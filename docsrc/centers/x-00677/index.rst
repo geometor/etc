@@ -1,22 +1,31 @@
 :order: 677
 :type: center
-:canonical_id: X(677)
-:dependencies: X(3), X(59), X(101), X(103), X(518), X(521), X(651), X(676), X(765), X(883), X(901), X(1252), X(1331), X(1332), X(1813), X(1814), X(1815), X(2323), X(2338), X(2340), X(2398), X(32642)
+:canonical_id: X_677
+:subtitle: TRILINEAR POLE OF LINE X_3X_101
+:dependencies: X_59, X_103, X_518, X_521, X_651, X_676, X_765, X_883, X_901, X_1252, X_1331, X_1332, X_1813, X_1814, X_1815, X_2323, X_2338, X_2340, X_2398, X_32642
 
-.. _X(677):
+.. _X_677:
 
-X(677) = TRILINEAR POLE OF LINE X(3)X(101)
-==========================================
+X_677
+=====
+
+.. rubric:: TRILINEAR POLE OF LINE X_3X_101
 
 .. enunciation::
 
-   :ref:`X(677) <X(677)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(676) <X(676)>`
+   :ref:`X_677 <X_677>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_676 <X_676>`
 
 .. figure:: x-00677.svg
-   :alt: X(677) = TRILINEAR POLE OF LINE X(3)X(101)
+   :alt: X_677 — TRILINEAR POLE OF LINE X_3X_101
    :align: center
 
-   **X(677) = TRILINEAR POLE OF LINE X(3)X(101)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_677** (*TRILINEAR POLE OF LINE X_3X_101*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{521, 651} <{ 521, 651 }>`, :g:`{103, 901} <{ 103, 901 }>`
+   * **Related Centers:** :g:`X_676 <X_676>` (:ref:`CROSSDIFFERENCE OF X(3) AND X(101) <X_676>`), :g:`X_521 <X_521>` (:ref:`ISOGONAL CONJUGATE OF X(108) <X_521>`), :g:`X_651 <X_651>` (:ref:`TRILINEAR POLE OF LINE X(1)X(3) <X_651>`), :g:`X_103 <X_103>` (:ref:`ANTIPODE OF X(101) <X_103>`), :g:`X_901 <X_901>` (:ref:`ISOGONAL CONJUGATE OF X(900) <X_901>`)
 
 .. signature:: center
 
@@ -26,19 +35,19 @@ X(677) = TRILINEAR POLE OF LINE X(3)X(101)
 
 .. container:: note-item
 
-   :ref:`X(677) <X(677)>` lies on the MacBeath circumconic.
+   :ref:`X_677 <X_677>` lies on the MacBeath circumconic.
 
 .. collapse:: Incident Central Lines
    :badge: 9 lines
    :class: line-catalog
 
-   {:ref:`59 <X(59)>`, 1813}, {:ref:`103 <X(103)>`, :ref:`901 <X(901)>`}, {:ref:`518 <X(518)>`, 1814}, {:ref:`521 <X(521)>`, :ref:`651 <X(651)>`}, {:ref:`765 <X(765)>`, 1332}, {:ref:`883 <X(883)>`, 2398}, {1252, 1331}, {1815, 2340}, {2323, 2338}
+   {:ref:`59 <X_59>`, 1813}, {:ref:`103 <X_103>`, :ref:`901 <X_901>`}, {:ref:`518 <X_518>`, 1814}, {:ref:`521 <X_521>`, :ref:`651 <X_651>`}, {:ref:`765 <X_765>`, 1332}, {:ref:`883 <X_883>`, 2398}, {1252, 1331}, {1815, 2340}, {2323, 2338}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(677) <X(677)>` = isogonal conjugate of :ref:`X(676) <X(676)>`
-   * :ref:`X(677) <X(677)>` = :term:`isotomic conjugate <isotomic-conjugate>` of isogonal conjugate of X(32642)
+   * :ref:`X_677 <X_677>` = isogonal conjugate of :ref:`X_676 <X_676>`
+   * :ref:`X_677 <X_677>` = :term:`isotomic conjugate <isotomic-conjugate>` of isogonal conjugate of X_32642
 
 .. toctree::
    :hidden:

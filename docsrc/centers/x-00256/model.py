@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(256) = 1st SHARYGIN POINT."""
+"""GEOMETOR construction model for X_256 = 1st SHARYGIN POINT."""
 
 from __future__ import annotations
 
@@ -24,17 +24,17 @@ from geometor.etc.render import write_center_svg
 def construct_x_00256(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(256) = 1st SHARYGIN POINT on reference triangle ABC."""
-    X_171 = eval_trilinear_point(model, A, B, C, 'a**(2) + b*c', ID="X(171)", classes=["center"])
-    X_256 = isogonal_conjugate(model, A, B, C, X_171, ID="X(256)", classes=["selected", "target"])
-    X_9 = mittenpunkt_of(model, A, B, C, ID="X(9)", classes=["center", "incident"])
-    X_43 = eval_trilinear_point(model, A, B, C, 'a*b + a*c - b*c', ID="X(43)", classes=["center", "incident"])
+    """Construct X_256 = 1st SHARYGIN POINT on reference triangle ABC."""
+    X_171 = eval_trilinear_point(model, A, B, C, 'a**(2) + b*c', ID="X_171", classes=["center"])
+    X_256 = isogonal_conjugate(model, A, B, C, X_171, ID="X_256", classes=["selected", "target"])
+    X_9 = mittenpunkt_of(model, A, B, C, ID="X_9", classes=["center", "incident"])
+    X_43 = eval_trilinear_point(model, A, B, C, 'a*b + a*c - b*c', ID="X_43", classes=["center", "incident"])
     central_line(model, X_9, X_43, 9, 43, incident=True)
-    X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center", "incident"])
-    X_192 = eval_trilinear_point(model, A, B, C, 'b*c*(c*a + a*b - b*c)', ID="X(192)", classes=["center", "incident"])
+    X_8 = nagel_point_of(model, A, B, C, ID="X_8", classes=["center", "incident"])
+    X_192 = eval_trilinear_point(model, A, B, C, 'b*c*(c*a + a*b - b*c)', ID="X_192", classes=["center", "incident"])
     central_line(model, X_8, X_192, 8, 192, incident=True)
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
-    X_240 = eval_trilinear_point(model, A, B, C, 'sec(A)*cos(A + omega )', ID="X(240)", classes=["center", "incident"])
+    X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
+    X_240 = eval_trilinear_point(model, A, B, C, 'sec(A)*cos(A + omega )', ID="X_240", classes=["center", "incident"])
     central_line(model, X_4, X_240, 4, 240, incident=True)
     return promote_point_to_top(model, X_256)
 
@@ -43,8 +43,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(256) on the given reference triangle."""
-    model = create_model('X(256) = 1st SHARYGIN POINT')
+    """Build a `geometor.model.Model` for X_256 on the given reference triangle."""
+    model = create_model('X_256 = 1st SHARYGIN POINT')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00256(model, A, B, C)
     return model

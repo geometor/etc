@@ -1,18 +1,21 @@
-:canonical_id: X(923)
+:canonical_id: X_923
 :type: code
+:subtitle: POINT ALBIREO
 
-X(923) = POINT ALBIREO — Code
-=============================
+X_923
+=====
+
+.. rubric:: POINT ALBIREO
 
 .. enunciation::
 
-   :ref:`X(923) <X(923)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(14210)
+   :ref:`X_923 <X_923>` = barycentric product :ref:`X_1 <X_1>`\ \*\ :ref:`X_111 <X_111>`
 
 .. figure:: x-00923.svg
-   :alt: X(923) = POINT ALBIREO
+   :alt: X_923 — POINT ALBIREO
    :align: center
 
-   **X(923) = POINT ALBIREO** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_923** (*POINT ALBIREO*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

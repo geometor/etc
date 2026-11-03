@@ -1,22 +1,31 @@
 :order: 537
 :type: center
-:canonical_id: X(537)
-:dependencies: X(1), X(2), X(10), X(30), X(37), X(38), X(75), X(190), X(192), X(511), X(513), X(519), X(551), X(668), X(1086), X(2382), X(3241), X(35123)
+:canonical_id: X_537
+:subtitle: DIRECTION OF VECTOR AX + BX + CX, where X = X_38
+:dependencies: X_1, X_2, X_10, X_30, X_37, X_38, X_75, X_190, X_192, X_511, X_513, X_519, X_551, X_668, X_1086, X_2382, X_3241, X_35123
 
-.. _X(537):
+.. _X_537:
 
-X(537) = DIRECTION OF VECTOR AX + BX + CX, where X = X(38)
-==========================================================
+X_537
+=====
+
+.. rubric:: DIRECTION OF VECTOR AX + BX + CX, where X = X_38
 
 .. enunciation::
 
-   :ref:`X(537) <X(537)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(2382)
+   :ref:`X_537 <X_537>` = :ref:`X_513 <X_513>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X_519 <X_519>`
 
 .. figure:: x-00537.svg
-   :alt: X(537) = DIRECTION OF VECTOR AX + BX + CX, where X = X(38)
+   :alt: X_537 — DIRECTION OF VECTOR AX + BX + CX, where X = X_38
    :align: center
 
-   **X(537) = DIRECTION OF VECTOR AX + BX + CX, where X = X(38)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_537** (*DIRECTION OF VECTOR AX + BX + CX, where X = X_38*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 38} <{ 2, 38 }>`, :g:`{1, 190} <{ 1, 190 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_38 <X_38>` (:ref:`CROSSPOINT OF X(1) AND X(75) <X_38>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_190 <X_190>` (:ref:`YFF PARABOLIC POINT <X_190>`)
 
 .. signature:: center
 
@@ -25,21 +34,21 @@ X(537) = DIRECTION OF VECTOR AX + BX + CX, where X = X(38)
 
 .. container:: note-item
 
-   :ref:`X(537) <X(537)>` lies on the line at infinity.
+   :ref:`X_537 <X_537>` lies on the line at infinity.
 
 .. collapse:: Incident Central Lines
    :badge: 7 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`190 <X(190)>`}, {:ref:`2 <X(2)>`, :ref:`38 <X(38)>`}, {:ref:`10 <X(10)>`, 1086}, {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}, {:ref:`37 <X(37)>`, :ref:`551 <X(551)>`}, {:ref:`75 <X(75)>`, :ref:`668 <X(668)>`}, {:ref:`192 <X(192)>`, 3241}
+   {:ref:`1 <X_1>`, :ref:`190 <X_190>`}, {:ref:`2 <X_2>`, :ref:`38 <X_38>`}, {:ref:`10 <X_10>`, 1086}, {:ref:`30 <X_30>`, :ref:`511 <X_511>`}, {:ref:`37 <X_37>`, :ref:`551 <X_551>`}, {:ref:`75 <X_75>`, :ref:`668 <X_668>`}, {:ref:`192 <X_192>`, 3241}
 
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X(537) <X(537)>` = isogonal conjugate of X(2382)
-   * :ref:`X(537) <X(537)>` = perspector of circumconic centered at X(35123)
-   * :ref:`X(537) <X(537)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(35123)
-   * :ref:`X(537) <X(537)>` = :ref:`X(513) <X(513)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(519) <X(519)>`
+   * :ref:`X_537 <X_537>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2382
+   * :ref:`X_537 <X_537>` = perspector of circumconic centered at X_35123
+   * :ref:`X_537 <X_537>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of X_35123
+   * :ref:`X_537 <X_537>` = :ref:`X_513 <X_513>`-Hirst inverse of :ref:`X_519 <X_519>`
 
 .. toctree::
    :hidden:

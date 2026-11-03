@@ -1,22 +1,31 @@
 :order: 556
 :type: center
-:canonical_id: X(556)
-:dependencies: X(1), X(8), X(75), X(174), X(177), X(234), X(312), X(2090)
+:canonical_id: X_556
+:subtitle: (X_1,X_75)-ANSWER TO QUESTION A
+:dependencies: X_8, X_75, X_174, X_177, X_234, X_312, X_2090
 
-.. _X(556):
+.. _X_556:
 
-X(556) = (X(1),X(75))-ANSWER TO QUESTION A
-==========================================
+X_556
+=====
+
+.. rubric:: (X_1,X_75)-ANSWER TO QUESTION A
 
 .. enunciation::
 
-   :ref:`X(556) <X(556)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(174) <X(174)>`
+   :ref:`X_556 <X_556>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_174 <X_174>`
 
 .. figure:: x-00556.svg
-   :alt: X(556) = (X(1),X(75))-ANSWER TO QUESTION A
+   :alt: X_556 — (X_1,X_75)-ANSWER TO QUESTION A
    :align: center
 
-   **X(556) = (X(1),X(75))-ANSWER TO QUESTION A** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_556** (*(X_1,X_75)-ANSWER TO QUESTION A*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{8, 177} <{ 8, 177 }>`, :g:`{75, 234} <{ 75, 234 }>`
+   * **Related Centers:** :g:`X_174 <X_174>` (:ref:`YFF CENTER OF CONGRUENCE <X_174>`), :g:`X_8 <X_8>` (:ref:`NAGEL POINT <X_8>`), :g:`X_177 <X_177>` (:ref:`1st MID-ARC POINT <X_177>`), :g:`X_75 <X_75>` (:ref:`ISOTOMIC CONJUGATE OF INCENTER <X_75>`), :g:`X_234 <X_234>` (:ref:`-CEVA CONJUGATE OF X(177) <X_234>`)
 
 .. signature:: center
 
@@ -28,12 +37,12 @@ X(556) = (X(1),X(75))-ANSWER TO QUESTION A
    :badge: 3 lines
    :class: line-catalog
 
-   {:ref:`8 <X(8)>`, :ref:`177 <X(177)>`}, {:ref:`75 <X(75)>`, :ref:`234 <X(234)>`}, {:ref:`312 <X(312)>`, 2090}
+   {:ref:`8 <X_8>`, :ref:`177 <X_177>`}, {:ref:`75 <X_75>`, :ref:`234 <X_234>`}, {:ref:`312 <X_312>`, 2090}
 
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(556) <X(556)>` = isotomic conjugate of :ref:`X(174) <X(174)>`
+   * :ref:`X_556 <X_556>` = isotomic conjugate of :ref:`X_174 <X_174>`
 
 .. toctree::
    :hidden:

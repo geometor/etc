@@ -1,22 +1,31 @@
 :order: 242
 :type: center
-:canonical_id: X(242)
-:dependencies: X(4), X(9), X(10), X(19), X(25), X(28), X(29), X(34), X(48), X(71), X(87), X(92), X(162), X(238), X(257), X(261), X(278), X(295), X(335), X(337), X(419), X(422), X(459), X(514), X(915), X(929), X(1459)
+:canonical_id: X_242
+:subtitle: X_4-LINE CONJUGATE OF X_71
+:dependencies: X_4, X_9, X_10, X_19, X_25, X_28, X_29, X_34, X_48, X_71, X_87, X_92, X_162, X_238, X_257, X_261, X_278, X_295, X_335, X_337, X_419, X_422, X_459, X_514, X_915, X_929, X_1459
 
-.. _X(242):
+.. _X_242:
 
-X(242) = X(4)-LINE CONJUGATE OF X(71)
-=====================================
+X_242
+=====
+
+.. rubric:: X_4-LINE CONJUGATE OF X_71
 
 .. enunciation::
 
-   :ref:`X(242) <X(242)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(295) <X(295)>`
+   :ref:`X_242 <X_242>` = :ref:`X_4 <X_4>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X_19 <X_19>`
 
 .. figure:: x-00242.svg
-   :alt: X(242) = X(4)-LINE CONJUGATE OF X(71)
+   :alt: X_242 — X_4-LINE CONJUGATE OF X_71
    :align: center
 
-   **X(242) = X(4)-LINE CONJUGATE OF X(71)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_242** (*X_4-LINE CONJUGATE OF X_71*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{4, 9} <{ 4, 9 }>`, :g:`{25, 92} <{ 25, 92 }>`
+   * **Related Centers:** :g:`X_295 <X_295>` (:ref:`ISOGONAL CONJUGATE OF X(242) <X_295>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_9 <X_9>` (:ref:`MITTENPUNKT <X_9>`), :g:`X_25 <X_25>` (:ref:`HOMOTHETIC CENTER OF ORTHIC AND TANGENTIAL TRIANGLES <X_25>`), :g:`X_92 <X_92>` (:ref:`CEVAPOINT OF INCENTER AND CLAWSON POINT <X_92>`)
 
 .. signature:: center
 
@@ -28,19 +37,19 @@ X(242) = X(4)-LINE CONJUGATE OF X(71)
    :badge: 9 lines
    :class: line-catalog
 
-   {:ref:`4 <X(4)>`, :ref:`9 <X(9)>`}, {:ref:`25 <X(25)>`, :ref:`92 <X(92)>`}, {:ref:`28 <X(28)>`, :ref:`261 <X(261)>`}, {:ref:`29 <X(29)>`, :ref:`257 <X(257)>`}, {:ref:`34 <X(34)>`, :ref:`87 <X(87)>`}, {:ref:`162 <X(162)>`, :ref:`422 <X(422)>`}, {:ref:`238 <X(238)>`, :ref:`419 <X(419)>`}, {:ref:`278 <X(278)>`, :ref:`459 <X(459)>`}, {:ref:`915 <X(915)>`, :ref:`929 <X(929)>`}
+   {:ref:`4 <X_4>`, :ref:`9 <X_9>`}, {:ref:`25 <X_25>`, :ref:`92 <X_92>`}, {:ref:`28 <X_28>`, :ref:`261 <X_261>`}, {:ref:`29 <X_29>`, :ref:`257 <X_257>`}, {:ref:`34 <X_34>`, :ref:`87 <X_87>`}, {:ref:`162 <X_162>`, :ref:`422 <X_422>`}, {:ref:`238 <X_238>`, :ref:`419 <X_419>`}, {:ref:`278 <X_278>`, :ref:`459 <X_459>`}, {:ref:`915 <X_915>`, :ref:`929 <X_929>`}
 
 .. collapse:: Functional Relations
    :badge: 8 relations
 
-   * :ref:`X(242) <X(242)>` = isogonal conjugate of :ref:`X(295) <X(295)>`
-   * :ref:`X(242) <X(242)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(337) <X(337)>`
-   * :ref:`X(242) <X(242)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(71) <X(71)>`\ X(1459)
-   * :ref:`X(242) <X(242)>` = :ref:`X(4) <X(4)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(19) <X(19)>`
-   * :ref:`X(242) <X(242)>` = :ref:`X(4) <X(4)>`-:term:`line conjugate <line-conjugate>` of :ref:`X(71) <X(71)>`
-   * :ref:`X(242) <X(242)>` = inverse-in-polar-circle of :ref:`X(10) <X(10)>`
-   * :ref:`X(242) <X(242)>` = pole wrt polar circle of the line :ref:`X(10) <X(10)>`\ \ :ref:`X(514) <X(514)>`
-   * :ref:`X(242) <X(242)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X(335) <X(335)>`
+   * :ref:`X_242 <X_242>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_295 <X_295>`
+   * :ref:`X_242 <X_242>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_337 <X_337>`
+   * :ref:`X_242 <X_242>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_71 <X_71>`\ X_1459
+   * :ref:`X_242 <X_242>` = :ref:`X_4 <X_4>`-Hirst inverse of :ref:`X_19 <X_19>`
+   * :ref:`X_242 <X_242>` = :ref:`X_4 <X_4>`-:term:`line conjugate <line-conjugate>` of :ref:`X_71 <X_71>`
+   * :ref:`X_242 <X_242>` = inverse-in-polar-circle of :ref:`X_10 <X_10>`
+   * :ref:`X_242 <X_242>` = pole wrt polar circle of the line :ref:`X_10 <X_10>`\ \ :ref:`X_514 <X_514>`
+   * :ref:`X_242 <X_242>` = :ref:`X_48 <X_48>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X_335 <X_335>`
 
 .. toctree::
    :hidden:

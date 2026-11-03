@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(360) = HOFSTADTER ZERO POINT."""
+"""GEOMETOR construction model for X_360 = HOFSTADTER ZERO POINT."""
 
 from __future__ import annotations
 
@@ -20,9 +20,9 @@ from geometor.etc.render import write_center_svg
 def construct_x_00360(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(360) = HOFSTADTER ZERO POINT on reference triangle ABC."""
-    X_359 = eval_trilinear_point(model, A, B, C, 'a/A', ID="X(359)", classes=["center"])
-    X_360 = isogonal_conjugate(model, A, B, C, X_359, ID="X(360)", classes=["selected", "target"])
+    """Construct X_360 = HOFSTADTER ZERO POINT on reference triangle ABC."""
+    X_359 = eval_trilinear_point(model, A, B, C, 'a/A', ID="X_359", classes=["center"])
+    X_360 = isogonal_conjugate(model, A, B, C, X_359, ID="X_360", classes=["selected", "target"])
     return promote_point_to_top(model, X_360)
 
 
@@ -30,8 +30,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(360) on the given reference triangle."""
-    model = create_model('X(360) = HOFSTADTER ZERO POINT')
+    """Build a `geometor.model.Model` for X_360 on the given reference triangle."""
+    model = create_model('X_360 = HOFSTADTER ZERO POINT')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00360(model, A, B, C)
     return model

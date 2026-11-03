@@ -1,18 +1,21 @@
-:canonical_id: X(508)
+:canonical_id: X_508
 :type: code
+:subtitle: 6th ISOSCELIZER POINT
 
-X(508) = 6th ISOSCELIZER POINT — Code
-=====================================
+X_508
+=====
+
+.. rubric:: 6th ISOSCELIZER POINT
 
 .. enunciation::
 
    The :term:`isoscelizer <isoscelizer>` equations
 
 .. figure:: x-00508.svg
-   :alt: X(508) = 6th ISOSCELIZER POINT
+   :alt: X_508 — 6th ISOSCELIZER POINT
    :align: center
 
-   **X(508) = 6th ISOSCELIZER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_508** (*6th ISOSCELIZER POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

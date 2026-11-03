@@ -1,18 +1,21 @@
-:canonical_id: X(661)
+:canonical_id: X_661
 :type: code
+:subtitle: CROSSDIFFERENCE OF X_1 AND X_21
 
-X(661) = CROSSDIFFERENCE OF X(1) AND X(21) — Code
-=================================================
+X_661
+=====
+
+.. rubric:: CROSSDIFFERENCE OF X_1 AND X_21
 
 .. enunciation::
 
-   :ref:`X(661) <X(661)>` is the perspector of triangle :g:`ABC << A B C >>` and the :term:`tangential triangle <tangential-triangle>` of the conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`, :ref:`X(1) <X(1)>`, :ref:`X(10) <X(10)>`}}. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   :ref:`X_661 <X_661>` = barycentric product of PU(71)
 
 .. figure:: x-00661.svg
-   :alt: X(661) = CROSSDIFFERENCE OF X(1) AND X(21)
+   :alt: X_661 — CROSSDIFFERENCE OF X_1 AND X_21
    :align: center
 
-   **X(661) = CROSSDIFFERENCE OF X(1) AND X(21)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_661** (*CROSSDIFFERENCE OF X_1 AND X_21*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

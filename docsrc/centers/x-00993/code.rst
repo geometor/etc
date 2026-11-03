@@ -1,18 +1,21 @@
-:canonical_id: X(993)
+:canonical_id: X_993
 :type: code
+:subtitle: MIDPOINT OF X_1 AND X_63
 
-X(993) = MIDPOINT OF X(1) AND X(63) — Code
-==========================================
+X_993
+=====
+
+.. rubric:: MIDPOINT OF X_1 AND X_63
 
 .. enunciation::
 
-   :ref:`X(993) <X(993)>` = reflection of :ref:`X(226) <X(226)>` in X(1125)
+   :ref:`X_993 <X_993>` is the midpoint of :ref:`X_1 <X_1>` and :ref:`X_63 <X_63>`.
 
 .. figure:: x-00993.svg
-   :alt: X(993) = MIDPOINT OF X(1) AND X(63)
+   :alt: X_993 — MIDPOINT OF X_1 AND X_63
    :align: center
 
-   **X(993) = MIDPOINT OF X(1) AND X(63)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_993** (*MIDPOINT OF X_1 AND X_63*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

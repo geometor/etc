@@ -1,5 +1,5 @@
 {
-    "name": "X(370) = EQUILATERAL CEVIAN TRIANGLE POINT",
+    "name": "X_370 = EQUILATERAL CEVIAN TRIANGLE POINT",
     "use_point_subscript": false,
     "last_point_id": "",
     "elements": {
@@ -145,9 +145,22 @@
             ],
             "guide": false
         },
-        "X(370)": {
+        "< P_a P_b P_c >": {
+            "sympy_obj": "Triangle(Point2D(Float('0.78207375000000001', precision=53), Float('0.33714196000000002', precision=53)), Point2D(Float('0.37518696000000001', precision=53), Float('0.36760663999999998', precision=53)), Point2D(Float('0.55224717000000001', precision=53), Float('0.0', precision=53)))",
+            "ID": "< P_a P_b P_c >",
+            "classes": [
+                "secondary"
+            ],
+            "parents": [
+                "P_a",
+                "P_b",
+                "P_c"
+            ],
+            "guide": false
+        },
+        "X_370": {
             "sympy_obj": "Point2D(Float('0.57713077999999995', precision=53), Float('0.24879367999999999', precision=53))",
-            "ID": "X(370)",
+            "ID": "X_370",
             "classes": [
                 "selected",
                 "target"

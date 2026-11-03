@@ -1,18 +1,21 @@
-:canonical_id: X(189)
+:canonical_id: X_189
 :type: code
+:subtitle: CYCLOCEVIAN CONJUGATE OF X_8
 
-X(189) = CYCLOCEVIAN CONJUGATE OF X(8) — Code
-=============================================
+X_189
+=====
+
+.. rubric:: CYCLOCEVIAN CONJUGATE OF X_8
 
 .. enunciation::
 
-   :ref:`X(189) <X(189)>` is the perspector of triangle :g:`ABC << A B C >>` and the :term:`pedal triangle <pedal-triangle>` of :ref:`X(84) <X(84)>`.
+   :ref:`X_189 <X_189>` is the perspector of triangle :g:`ABC << A B C >>` and the :term:`pedal triangle <pedal-triangle>` of :ref:`X_84 <X_84>`.
 
 .. figure:: x-00189.svg
-   :alt: X(189) = CYCLOCEVIAN CONJUGATE OF X(8)
+   :alt: X_189 — CYCLOCEVIAN CONJUGATE OF X_8
    :align: center
 
-   **X(189) = CYCLOCEVIAN CONJUGATE OF X(8)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_189** (*CYCLOCEVIAN CONJUGATE OF X_8*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

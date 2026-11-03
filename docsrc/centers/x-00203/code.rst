@@ -1,18 +1,21 @@
-:canonical_id: X(203)
+:canonical_id: X_203
 :type: code
+:subtitle: X_1-CEVA CONJUGATE OF X_16
 
-X(203) = X(1)-CEVA CONJUGATE OF X(16) — Code
-============================================
+X_203
+=====
+
+.. rubric:: X_1-CEVA CONJUGATE OF X_16
 
 .. enunciation::
 
-   :ref:`X(203) <X(203)>` = :ref:`X(1) <X(1)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(16) <X(16)>`
+   :ref:`X_203 <X_203>` = :ref:`X_1 <X_1>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_16 <X_16>`
 
 .. figure:: x-00203.svg
-   :alt: X(203) = X(1)-CEVA CONJUGATE OF X(16)
+   :alt: X_203 — X_1-CEVA CONJUGATE OF X_16
    :align: center
 
-   **X(203) = X(1)-CEVA CONJUGATE OF X(16)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_203** (*X_1-CEVA CONJUGATE OF X_16*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,22 +1,31 @@
 :order: 681
 :type: center
-:canonical_id: X(681)
-:dependencies: X(6), X(110), X(158), X(680), X(823), X(1612), X(1924), X(35521), X(35970), X(38969)
+:canonical_id: X_681
+:subtitle: TRILINEAR POLE OF LINE X_6X_158
+:dependencies: X_110, X_680, X_823, X_1612, X_1924, X_35521, X_35970, X_38969
 
-.. _X(681):
+.. _X_681:
 
-X(681) = TRILINEAR POLE OF LINE X(6)X(158)
-==========================================
+X_681
+=====
+
+.. rubric:: TRILINEAR POLE OF LINE X_6X_158
 
 .. enunciation::
 
-   :ref:`X(681) <X(681)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(680) <X(680)>`
+   :ref:`X_681 <X_681>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_680 <X_680>`
 
 .. figure:: x-00681.svg
-   :alt: X(681) = TRILINEAR POLE OF LINE X(6)X(158)
+   :alt: X_681 — TRILINEAR POLE OF LINE X_6X_158
    :align: center
 
-   **X(681) = TRILINEAR POLE OF LINE X(6)X(158)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_681** (*TRILINEAR POLE OF LINE X_6X_158*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{110, 823} <{ 110, 823 }>`
+   * **Related Centers:** :g:`X_680 <X_680>` (:ref:`CROSSDIFFERENCE OF X(6) AND X(158) <X_680>`), :g:`X_110 <X_110>` (:ref:`FOCUS OF KIEPERT PARABOLA <X_110>`), :g:`X_823 <X_823>` (:ref:`ISOGONAL CONJUGATE OF X(822) <X_823>`)
 
 .. signature:: center
 
@@ -26,21 +35,21 @@ X(681) = TRILINEAR POLE OF LINE X(6)X(158)
 
 .. container:: note-item
 
-   :ref:`X(681) <X(681)>` lies on the circumcircle.
+   :ref:`X_681 <X_681>` lies on the circumcircle.
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`110 <X(110)>`, :ref:`823 <X(823)>`}, {1612, 1924}
+   {:ref:`110 <X_110>`, :ref:`823 <X_823>`}, {1612, 1924}
 
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X(681) <X(681)>` = isogonal conjugate of :ref:`X(680) <X(680)>`
-   * :ref:`X(681) <X(681)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(35521)
-   * :ref:`X(681) <X(681)>` = :term:`anticomplement <anticomplement>` of X(35970)
-   * :ref:`X(681) <X(681)>` = polar-circle-inverse of X(38969)
+   * :ref:`X_681 <X_681>` = isogonal conjugate of :ref:`X_680 <X_680>`
+   * :ref:`X_681 <X_681>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_35521
+   * :ref:`X_681 <X_681>` = :term:`anticomplement <anticomplement>` of X_35970
+   * :ref:`X_681 <X_681>` = polar-circle-inverse of X_38969
 
 .. toctree::
    :hidden:

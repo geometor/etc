@@ -1,18 +1,21 @@
-:canonical_id: X(852)
+:canonical_id: X_852
 :type: code
+:subtitle: X_2-LINE CONJUGATE OF X_4
 
-X(852) = X(2)-LINE CONJUGATE OF X(4) — Code
-===========================================
+X_852
+=====
+
+.. rubric:: X_2-LINE CONJUGATE OF X_4
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(852) <X(852)>` has Shinagawa coefficients :math:`((2E - F)F - S^{2},(E + F)F + S^{2})`.
+   :ref:`X_852 <X_852>` = :ref:`X_2 <X_2>`-:term:`line conjugate <line-conjugate>` of :ref:`X_4 <X_4>`
 
 .. figure:: x-00852.svg
-   :alt: X(852) = X(2)-LINE CONJUGATE OF X(4)
+   :alt: X_852 — X_2-LINE CONJUGATE OF X_4
    :align: center
 
-   **X(852) = X(2)-LINE CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_852** (*X_2-LINE CONJUGATE OF X_4*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

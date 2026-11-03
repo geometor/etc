@@ -1,22 +1,31 @@
 :order: 728
 :type: center
-:canonical_id: X(728)
-:dependencies: X(8), X(9), X(40), X(57), X(78), X(200), X(220), X(345), X(346), X(480), X(644), X(738), X(1018), X(23062)
+:canonical_id: X_728
+:subtitle: INTERSECTION OF LINES X_8X_9 AND X_57X_345
+:dependencies: X_8, X_9, X_40, X_57, X_78, X_200, X_220, X_345, X_346, X_480, X_644, X_738, X_1018, X_23062
 
-.. _X(728):
+.. _X_728:
 
-X(728) = INTERSECTION OF LINES X(8)X(9) AND X(57)X(345)
-=======================================================
+X_728
+=====
+
+.. rubric:: INTERSECTION OF LINES X_8X_9 AND X_57X_345
 
 .. enunciation::
 
-   :ref:`X(728) <X(728)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(738) <X(738)>`
+   :ref:`X_728 <X_728>` = :ref:`X_346 <X_346>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_200 <X_200>`
 
 .. figure:: x-00728.svg
-   :alt: X(728) = INTERSECTION OF LINES X(8)X(9) AND X(57)X(345)
+   :alt: X_728 — INTERSECTION OF LINES X_8X_9 AND X_57X_345
    :align: center
 
-   **X(728) = INTERSECTION OF LINES X(8)X(9) AND X(57)X(345)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_728** (*INTERSECTION OF LINES X_8X_9 AND X_57X_345*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{8, 9} <{ 8, 9 }>`, :g:`{57, 345} <{ 57, 345 }>`
+   * **Related Centers:** :g:`X_738 <X_738>` (:ref:`ISOGONAL CONJUGATE OF X(728) <X_738>`), :g:`X_8 <X_8>` (:ref:`NAGEL POINT <X_8>`), :g:`X_9 <X_9>` (:ref:`MITTENPUNKT <X_9>`), :g:`X_57 <X_57>` (:ref:`ISOGONAL CONJUGATE OF X(9) <X_57>`), :g:`X_345 <X_345>` (:ref:`ISOTOMIC CONJUGATE OF X(278) <X_345>`)
 
 .. signature:: center
 
@@ -33,15 +42,15 @@ X(728) = INTERSECTION OF LINES X(8)X(9) AND X(57)X(345)
    :badge: 5 lines
    :class: line-catalog
 
-   {:ref:`8 <X(8)>`, :ref:`9 <X(9)>`}, {:ref:`40 <X(40)>`, 1018}, {:ref:`57 <X(57)>`, :ref:`345 <X(345)>`}, {:ref:`78 <X(78)>`, :ref:`644 <X(644)>`}, {:ref:`200 <X(200)>`, :ref:`220 <X(220)>`}
+   {:ref:`8 <X_8>`, :ref:`9 <X_9>`}, {:ref:`40 <X_40>`, 1018}, {:ref:`57 <X_57>`, :ref:`345 <X_345>`}, {:ref:`78 <X_78>`, :ref:`644 <X_644>`}, {:ref:`200 <X_200>`, :ref:`220 <X_220>`}
 
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X(728) <X(728)>` = isogonal conjugate of :ref:`X(738) <X(738)>`
-   * :ref:`X(728) <X(728)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(23062)
-   * :ref:`X(728) <X(728)>` = :ref:`X(346) <X(346)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(200) <X(200)>`
-   * :ref:`X(728) <X(728)>` = :ref:`X(480) <X(480)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(200) <X(200)>`
+   * :ref:`X_728 <X_728>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_738 <X_738>`
+   * :ref:`X_728 <X_728>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_23062
+   * :ref:`X_728 <X_728>` = :ref:`X_346 <X_346>`-Ceva conjugate of :ref:`X_200 <X_200>`
+   * :ref:`X_728 <X_728>` = :ref:`X_480 <X_480>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_200 <X_200>`
 
 .. toctree::
    :hidden:

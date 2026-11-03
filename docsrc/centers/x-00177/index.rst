@@ -1,23 +1,32 @@
 :order: 177
 :type: center
-:canonical_id: X(177)
-:dependencies: X(1), X(4), X(7), X(8), X(9), X(10), X(55), X(57), X(65), X(164), X(167), X(173), X(174), X(234), X(259), X(260), X(555), X(556), X(1829)
+:canonical_id: X_177
+:subtitle: 1st MID-ARC POINT
+:dependencies: X_1, X_4, X_7, X_8, X_9, X_10, X_55, X_57, X_65, X_164, X_167, X_173, X_174, X_234, X_259, X_260, X_555, X_556, X_1829
 
-.. _X(177):
+.. _X_177:
 .. _FirstMidArcPoint:
 
-X(177) = 1st MID-ARC POINT
-==========================
+X_177
+=====
+
+.. rubric:: 1st MID-ARC POINT
 
 .. enunciation::
 
-   Let :g:`A' <A'>`,\ :g:`B' <B'>`,\ :g:`C' <C'>` be the first points of intersection of the angle bisectors of :g:`ABC << A B C >>` with its incircle. The tangents at :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>` form a triangle :g:`A″B″C″ << A″ B″ C″ >>`, and the lines :g:`AA″ <[ A A″ ]>`,\ :g:`BB″ <[ B B″ ]>`,\ :g:`CC″ <[ C C″ ]>` concur in :ref:`X(177) <X(177)>`. Also, :ref:`X(177) <X(177)>` = :ref:`X(1) <X(1)>` of the :term:`intouch triangle <intouch-triangle>`.
+   :ref:`X_177 <X_177>` = :term:`crosspoint <crosspoint>` of :ref:`X_7 <X_7>` and :ref:`X_174 <X_174>`
 
 .. figure:: x-00177.svg
-   :alt: X(177) = 1st MID-ARC POINT
+   :alt: X_177 — 1st MID-ARC POINT
    :align: center
 
-   **X(177) = 1st MID-ARC POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_177** (*1st MID-ARC POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 167} <{ 1, 167 }>`, :g:`{9, 173} <{ 9, 173 }>`
+   * **Related Centers:** :g:`X_7 <X_7>` (:ref:`GERGONNE POINT <X_7>`), :g:`X_234 <X_234>` (:ref:`-CEVA CONJUGATE OF X(177) <X_234>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_167 <X_167>` (:ref:`NAGEL POINT OF EXCENTRAL TRIANGLE <X_167>`), :g:`X_9 <X_9>` (:ref:`MITTENPUNKT <X_9>`), :g:`X_173 <X_173>` (:ref:`CONGRUENT ISOSCELIZERS POINT <X_173>`)
 
 .. signature:: center
 
@@ -34,22 +43,26 @@ X(177) = 1st MID-ARC POINT
    :badge: 5 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`167 <X(167)>`}, {:ref:`7 <X(7)>`, :ref:`555 <X(555)>`}, {:ref:`8 <X(8)>`, :ref:`556 <X(556)>`}, {:ref:`9 <X(9)>`, :ref:`173 <X(173)>`}, {:ref:`57 <X(57)>`, :ref:`164 <X(164)>`}
+   {:ref:`1 <X_1>`, :ref:`167 <X_167>`}, {:ref:`7 <X_7>`, :ref:`555 <X_555>`}, {:ref:`8 <X_8>`, :ref:`556 <X_556>`}, {:ref:`9 <X_9>`, :ref:`173 <X_173>`}, {:ref:`57 <X_57>`, :ref:`164 <X_164>`}
 
 .. collapse:: Functional Relations
    :badge: 8 relations
 
-   * :ref:`X(177) <X(177)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(260) <X(260)>`
-   * :ref:`X(177) <X(177)>` = :ref:`X(7) <X(7)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(234) <X(234)>`
-   * :ref:`X(177) <X(177)>` = :term:`crosspoint <crosspoint>` of :ref:`X(7) <X(7)>` and :ref:`X(174) <X(174)>`
-   * :ref:`X(177) <X(177)>` = :term:`crosssum <crosssum>` of :ref:`X(55) <X(55)>` and :ref:`X(259) <X(259)>`
-   * :ref:`X(177) <X(177)>` = SS(A→\ :g:`A' <A'>`)-of-:ref:`X(10) <X(10)>`, where :g:`A'B'C' << A' B' C' >>` is the excentral triangle
-   * :ref:`X(177) <X(177)>` = :ref:`X(4) <X(4)>`-of-mid-arc triangle
-   * :ref:`X(177) <X(177)>` = X(1829)-of-excentral triangle
-   * :ref:`X(177) <X(177)>` = perspector of :g:`ABC << A B C >>` and mid-triangle of 1st tangential mid-arc triangle and Yff :term:`central triangle <central-triangle>`
+   * :ref:`X_177 <X_177>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_260 <X_260>`
+   * :ref:`X_177 <X_177>` = :ref:`X_7 <X_7>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_234 <X_234>`
+   * :ref:`X_177 <X_177>` = crosspoint of :ref:`X_7 <X_7>` and :ref:`X_174 <X_174>`
+   * :ref:`X_177 <X_177>` = :term:`crosssum <crosssum>` of :ref:`X_55 <X_55>` and :ref:`X_259 <X_259>`
+   * :ref:`X_177 <X_177>` = SS(A→\ :g:`A' <A'>`)-of-:ref:`X_10 <X_10>`, where :g:`A'B'C' << A' B' C' >>` is the excentral triangle
+   * :ref:`X_177 <X_177>` = :ref:`X_4 <X_4>`-of-mid-arc triangle
+   * :ref:`X_177 <X_177>` = X_1829-of-excentral triangle
+   * :ref:`X_177 <X_177>` = perspector of :g:`ABC << A B C >>` and mid-triangle of 1st tangential mid-arc triangle and Yff :term:`central triangle <central-triangle>`
 
 Notes
 -----
+
+.. container:: note-item
+
+   Let :g:`A' <A'>`,\ :g:`B' <B'>`,\ :g:`C' <C'>` be the first points of intersection of the angle bisectors of :g:`ABC << A B C >>` with its incircle. The tangents at :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>` form a triangle :g:`A″B″C″ << A″ B″ C″ >>`, and the lines :g:`AA″ <[ A A″ ]>`,\ :g:`BB″ <[ B B″ ]>`,\ :g:`CC″ <[ C C″ ]>` concur in :ref:`X_177 <X_177>`. Also, :ref:`X_177 <X_177>` = :ref:`X_1 <X_1>` of the :term:`intouch triangle <intouch-triangle>`.
 
 .. container:: note-item
 
@@ -57,7 +70,7 @@ Notes
 
 .. container:: note-item
 
-   :ref:`X(177) <X(177)>` is the perspector of :g:`ABC << A B C >>` and the Yff central triangle, and :ref:`X(177) <X(177)>` is :ref:`X(65) <X(65)>`-of-the-Yff-central-triangle . (:person:`Darij Grinberg <darij-grinberg>`, :cite:`Hyacinthos #7689 <hyacinthos>`, 8/25/2003)
+   :ref:`X_177 <X_177>` is the perspector of :g:`ABC << A B C >>` and the Yff central triangle, and :ref:`X_177 <X_177>` is :ref:`X_65 <X_65>`-of-the-Yff-central-triangle . (:person:`Darij Grinberg <darij-grinberg>`, :cite:`Hyacinthos #7689 <hyacinthos>`, 8/25/2003)
 
 .. toctree::
    :hidden:

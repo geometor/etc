@@ -1,18 +1,21 @@
-:canonical_id: X(528)
+:canonical_id: X_528
 :type: code
+:subtitle: DIRECTION OF VECTOR AX + BX + CX, where X = X_11
 
-X(528) = DIRECTION OF VECTOR AX + BX + CX, where X = X(11) — Code
-=================================================================
+X_528
+=====
+
+.. rubric:: DIRECTION OF VECTOR AX + BX + CX, where X = X_11
 
 .. enunciation::
 
-   Let :g:`I_{a} <I_a>` be the reflection of :ref:`X(1) <X(1)>` in the perpendicular bisector of :g:`BC <[ B C ]>`, and define :g:`I_{b} <I_b>` and :g:`I_{c} <I_c>` cyclically. :ref:`X(528) <X(528)>` = :ref:`X(518) <X(518)>` of :g:`I_{a}I_{b}I_{c} << I_a I_b I_c >>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2018)
+   :ref:`X_528 <X_528>` = :ref:`X_519 <X_519>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X_522 <X_522>`
 
 .. figure:: x-00528.svg
-   :alt: X(528) = DIRECTION OF VECTOR AX + BX + CX, where X = X(11)
+   :alt: X_528 — DIRECTION OF VECTOR AX + BX + CX, where X = X_11
    :align: center
 
-   **X(528) = DIRECTION OF VECTOR AX + BX + CX, where X = X(11)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_528** (*DIRECTION OF VECTOR AX + BX + CX, where X = X_11*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

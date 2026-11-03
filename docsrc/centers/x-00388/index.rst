@@ -1,22 +1,32 @@
 :order: 388
 :type: center
-:canonical_id: X(388)
-:dependencies: X(1), X(2), X(3), X(4), X(5), X(7), X(8), X(10), X(11), X(12), X(20), X(29), X(35), X(36), X(55), X(57), X(65), X(79), X(108), X(153), X(171), X(201), X(329), X(354), X(355), X(376), X(381), X(406), X(442), X(452), X(495), X(496), X(498), X(603), X(612), X(750), X(938), X(942), X(956), X(958), X(960), X(984), X(999), X(1000), X(1001), X(1036), X(1037), X(1038), X(1059), X(1067), X(1106), X(1181), X(30479)
+:canonical_id: X_388
+:subtitle: X_1X_4∩X_7X_8
+:dependencies: X_1, X_2, X_3, X_4, X_5, X_7, X_8, X_10, X_11, X_12, X_20, X_29, X_35, X_36, X_55, X_57, X_65, X_79, X_108, X_153, X_171, X_201, X_329, X_354, X_355, X_376, X_381, X_406, X_442, X_452, X_495, X_496, X_498, X_603, X_612, X_750, X_938, X_942, X_956, X_958, X_960, X_984, X_999, X_1000, X_1001, X_1036, X_1037, X_1038, X_1059, X_1067, X_1106, X_1181, X_30479
 
-.. _X(388):
+.. _X_388:
 
-X(388) = X(1)X(4)∩X(7)X(8)
-==========================
+X_388
+=====
+
+.. rubric:: X_1X_4∩X_7X_8
 
 .. enunciation::
 
-   Let :g:`A″B″C″ << A″ B″ C″ >>` be the reflection of the Mandart-incircle triangle in :ref:`X(1) <X(1)>`. :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to the :term:`anticomplementary triangle <anticomplementary-triangle>` at :ref:`X(388) <X(388)>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
+   :ref:`X_388 <X_388>` = perspector of :g:`ABC << A B C >>` and 5th :term:`extouch triangle <extouch-triangle>`
 
 .. figure:: x-00388.svg
-   :alt: X(388) = X(1)X(4)∩X(7)X(8)
+   :alt: X_388 — X_1X_4∩X_7X_8
    :align: center
 
-   **X(388) = X(1)X(4)∩X(7)X(8)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_388** (*X_1X_4∩X_7X_8*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Derived Triangle:** :term:`Anticomplementary Triangle <anticomplementary triangle>` :g:`△K_aK_bK_c << K_a K_b K_c >>` — vertices :g:`K_a <K_a>`, :g:`K_b <K_b>`, :g:`K_c <K_c>` (Formed by lines through A, B, C parallel to opposite sides)
+   * **Central Lines:** :g:`{2, 958} <{ 2, 958 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_958 <X_958>` (:ref:`INTERSECTION OF LINES X <X_958>`)
 
 .. signature:: center
 
@@ -32,33 +42,37 @@ X(388) = X(1)X(4)∩X(7)X(8)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(388) <X(388)>` = :math:`2(R/r)` :ref:`X(1) <X(1)>` + :math:`3` :ref:`X(2) <X(2)>` - :math:`2` :ref:`X(3) <X(3)>`
+   * :ref:`X_388 <X_388>` = :math:`2(R/r)` :ref:`X_1 <X_1>` + :math:`3` :ref:`X_2 <X_2>` - :math:`2` :ref:`X_3 <X_3>`
 
 .. collapse:: Incident Central Lines
    :badge: 24 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`4 <X(4)>`}, {:ref:`2 <X(2)>`, :ref:`12 <X(12)>`}, {:ref:`3 <X(3)>`, :ref:`495 <X(495)>`}, {:ref:`5 <X(5)>`, :ref:`999 <X(999)>`}, {:ref:`7 <X(7)>`, :ref:`8 <X(8)>`}, {:ref:`10 <X(10)>`, :ref:`57 <X(57)>`}, {:ref:`11 <X(11)>`, :ref:`153 <X(153)>`}, {:ref:`20 <X(20)>`, :ref:`55 <X(55)>`}, {:ref:`29 <X(29)>`, 1037}, {:ref:`35 <X(35)>`, :ref:`376 <X(376)>`}, {:ref:`36 <X(36)>`, :ref:`498 <X(498)>`}, {:ref:`79 <X(79)>`, :ref:`1000 <X(1000)>`}, {:ref:`108 <X(108)>`, :ref:`406 <X(406)>`}, {:ref:`171 <X(171)>`, :ref:`603 <X(603)>`}, {:ref:`201 <X(201)>`, :ref:`984 <X(984)>`}, {:ref:`329 <X(329)>`, :ref:`960 <X(960)>`}, {:ref:`354 <X(354)>`, :ref:`938 <X(938)>`}, {:ref:`355 <X(355)>`, :ref:`942 <X(942)>`}, {:ref:`381 <X(381)>`, :ref:`496 <X(496)>`}, {:ref:`442 <X(442)>`, :ref:`956 <X(956)>`}, {:ref:`452 <X(452)>`, 1001}, {:ref:`612 <X(612)>`, 1038}, {:ref:`750 <X(750)>`, 1106}, {1059, 1067}
+   {:ref:`1 <X_1>`, :ref:`4 <X_4>`}, {:ref:`2 <X_2>`, :ref:`12 <X_12>`}, {:ref:`3 <X_3>`, :ref:`495 <X_495>`}, {:ref:`5 <X_5>`, :ref:`999 <X_999>`}, {:ref:`7 <X_7>`, :ref:`8 <X_8>`}, {:ref:`10 <X_10>`, :ref:`57 <X_57>`}, {:ref:`11 <X_11>`, :ref:`153 <X_153>`}, {:ref:`20 <X_20>`, :ref:`55 <X_55>`}, {:ref:`29 <X_29>`, 1037}, {:ref:`35 <X_35>`, :ref:`376 <X_376>`}, {:ref:`36 <X_36>`, :ref:`498 <X_498>`}, {:ref:`79 <X_79>`, :ref:`1000 <X_1000>`}, {:ref:`108 <X_108>`, :ref:`406 <X_406>`}, {:ref:`171 <X_171>`, :ref:`603 <X_603>`}, {:ref:`201 <X_201>`, :ref:`984 <X_984>`}, {:ref:`329 <X_329>`, :ref:`960 <X_960>`}, {:ref:`354 <X_354>`, :ref:`938 <X_938>`}, {:ref:`355 <X_355>`, :ref:`942 <X_942>`}, {:ref:`381 <X_381>`, :ref:`496 <X_496>`}, {:ref:`442 <X_442>`, :ref:`956 <X_956>`}, {:ref:`452 <X_452>`, 1001}, {:ref:`612 <X_612>`, 1038}, {:ref:`750 <X_750>`, 1106}, {1059, 1067}
 
 .. collapse:: Functional Relations
    :badge: 9 relations
 
-   * :ref:`X(388) <X(388)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(1036)
-   * :ref:`X(388) <X(388)>` = :term:`anticomplement <anticomplement>` of :ref:`X(958) <X(958)>`
-   * :ref:`X(388) <X(388)>` = X(1181)-of-:term:`intouch triangle <intouch-triangle>`
-   * :ref:`X(388) <X(388)>` = perspector of :g:`ABC << A B C >>` and 5th :term:`extouch triangle <extouch-triangle>`
-   * :ref:`X(388) <X(388)>` = homothetic center of anticomplementary triangle and cross-triangle of :g:`ABC << A B C >>` and 1st Johnson-Yff triangle
-   * :ref:`X(388) <X(388)>` = homothetic center of 1st Johnson-Yff triangle and cross-triangle of :g:`ABC << A B C >>` and 1st Johnson-Yff triangle
-   * :ref:`X(388) <X(388)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(30479)
-   * :ref:`X(388) <X(388)>` = homothetic center of anti-inverse-in-incircle triangle and anti-tangential midarc triangle
-   * :ref:`X(388) <X(388)>` = centroid of curvatures of anticomplementary circle and excircles
+   * :ref:`X_388 <X_388>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_1036
+   * :ref:`X_388 <X_388>` = :term:`anticomplement <anticomplement>` of :ref:`X_958 <X_958>`
+   * :ref:`X_388 <X_388>` = X_1181-of-:term:`intouch triangle <intouch-triangle>`
+   * :ref:`X_388 <X_388>` = perspector of :g:`ABC << A B C >>` and 5th extouch triangle
+   * :ref:`X_388 <X_388>` = homothetic center of :term:`anticomplementary triangle <anticomplementary-triangle>` and cross-triangle of :g:`ABC << A B C >>` and 1st Johnson-Yff triangle
+   * :ref:`X_388 <X_388>` = homothetic center of 1st Johnson-Yff triangle and cross-triangle of :g:`ABC << A B C >>` and 1st Johnson-Yff triangle
+   * :ref:`X_388 <X_388>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_30479
+   * :ref:`X_388 <X_388>` = homothetic center of anti-inverse-in-incircle triangle and anti-tangential midarc triangle
+   * :ref:`X_388 <X_388>` = centroid of curvatures of anticomplementary circle and excircles
 
 Notes
 -----
 
 .. container:: note-item
 
-   :ref:`X(388) <X(388)>` is the {:ref:`X(7) <X(7)>`,\ :ref:`X(8) <X(8)>`}-harmonic conjugate of :ref:`X(65) <X(65)>`.
+   Let :g:`A″B″C″ << A″ B″ C″ >>` be the reflection of the Mandart-incircle triangle in :ref:`X_1 <X_1>`. :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to the anticomplementary triangle at :ref:`X_388 <X_388>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
+
+.. container:: note-item
+
+   :ref:`X_388 <X_388>` is the {:ref:`X_7 <X_7>`,\ :ref:`X_8 <X_8>`}-harmonic conjugate of :ref:`X_65 <X_65>`.
 
 .. toctree::
    :hidden:

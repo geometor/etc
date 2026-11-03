@@ -1,18 +1,21 @@
-:canonical_id: X(855)
+:canonical_id: X_855
 :type: code
+:subtitle: INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X_57
 
-X(855) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(57) — Code
-====================================================================
+X_855
+=====
+
+.. rubric:: INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X_57
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(855) <X(855)>` has Shinagawa coefficients :math:`(ES^{2}+\$abS_{C}^{2}\$+\$abS_{A}S_{B}\$ -\$abS_{C}\$(E+F), -3ES^{2}-3\$abS_{A}S_{B}\$ +2\$ab\$S^{2})`.
+   :ref:`X_855 <X_855>` = reflection of :ref:`X_851 <X_851>` in :ref:`X_859 <X_859>`
 
 .. figure:: x-00855.svg
-   :alt: X(855) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(57)
+   :alt: X_855 — INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X_57
    :align: center
 
-   **X(855) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(57)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_855** (*INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X_57*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

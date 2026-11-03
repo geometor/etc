@@ -1,18 +1,21 @@
-:canonical_id: X(467)
+:canonical_id: X_467
 :type: code
+:subtitle: EULER LINE INTERCEPT OF LINE X_53X_311
 
-X(467) = EULER LINE INTERCEPT OF LINE X(53)X(311) — Code
-========================================================
+X_467
+=====
+
+.. rubric:: EULER LINE INTERCEPT OF LINE X_53X_311
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(467) <X(467)>` has Shinagawa coefficients :math:`((E + 2F)F,-2S^{2})`.
+   :ref:`X_467 <X_467>` = :ref:`X_317 <X_317>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_52 <X_52>`
 
 .. figure:: x-00467.svg
-   :alt: X(467) = EULER LINE INTERCEPT OF LINE X(53)X(311)
+   :alt: X_467 — EULER LINE INTERCEPT OF LINE X_53X_311
    :align: center
 
-   **X(467) = EULER LINE INTERCEPT OF LINE X(53)X(311)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_467** (*EULER LINE INTERCEPT OF LINE X_53X_311*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

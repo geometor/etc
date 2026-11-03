@@ -1,22 +1,31 @@
 :order: 260
 :type: center
-:canonical_id: X(260)
-:dependencies: X(1), X(3), X(55), X(177), X(259), X(266)
+:canonical_id: X_260
+:subtitle: ISOGONAL CONJUGATE OF X_177
+:dependencies: X_1, X_3, X_55, X_177, X_259, X_266
 
-.. _X(260):
+.. _X_260:
 
-X(260) = ISOGONAL CONJUGATE OF X(177)
-=====================================
+X_260
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_177
 
 .. enunciation::
 
-   :ref:`X(260) <X(260)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(177) <X(177)>`
+   :ref:`X_260 <X_260>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_177 <X_177>`.
 
 .. figure:: x-00260.svg
-   :alt: X(260) = ISOGONAL CONJUGATE OF X(177)
+   :alt: X_260 — ISOGONAL CONJUGATE OF X_177
    :align: center
 
-   **X(260) = ISOGONAL CONJUGATE OF X(177)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_260** (*ISOGONAL CONJUGATE OF X_177*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 3} <{ 1, 3 }>`, :g:`{259, 266} <{ 259, 266 }>`
+   * **Related Centers:** :g:`X_55 <X_55>` (:ref:`INSIMILICENTER <X_55>`), :g:`X_259 <X_259>` (:ref:`ISOGONAL CONJUGATE OF X(174) <X_259>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_266 <X_266>` (:ref:`ISOGONAL CONJUGATE OF X(188) <X_266>`)
 
 .. signature:: center
 
@@ -28,13 +37,13 @@ X(260) = ISOGONAL CONJUGATE OF X(177)
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`3 <X(3)>`}, {:ref:`259 <X(259)>`, :ref:`266 <X(266)>`}
+   {:ref:`1 <X_1>`, :ref:`3 <X_3>`}, {:ref:`259 <X_259>`, :ref:`266 <X_266>`}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(260) <X(260)>` = isogonal conjugate of :ref:`X(177) <X(177)>`
-   * :ref:`X(260) <X(260)>` = :term:`cevapoint <cevapoint>` of :ref:`X(55) <X(55)>` and :ref:`X(259) <X(259)>`
+   * :ref:`X_260 <X_260>` = isogonal conjugate of :ref:`X_177 <X_177>`
+   * :ref:`X_260 <X_260>` = :term:`cevapoint <cevapoint>` of :ref:`X_55 <X_55>` and :ref:`X_259 <X_259>`
 
 .. toctree::
    :hidden:

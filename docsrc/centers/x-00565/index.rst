@@ -1,22 +1,31 @@
 :order: 565
 :type: center
-:canonical_id: X(565)
-:dependencies: X(49), X(93), X(143), X(324)
+:canonical_id: X_565
+:subtitle: INTERSECTION OF LINES X_49X_93 AND X(143,324)
+:dependencies: X_49, X_93, X_143, X_324
 
-.. _X(565):
+.. _X_565:
 
-X(565) = INTERSECTION OF LINES X(49)X(93) AND X(143,324)
-========================================================
+X_565
+=====
+
+.. rubric:: INTERSECTION OF LINES X_49X_93 AND X(143,324)
 
 .. enunciation::
 
    :person:`Clark Kimberling <clark-kimberling>` and :person:`Cyril Parry <cyril-parry>`, "Products, Square Roots, and Layers in Triangle Geometry," Mathematics and Informatics Quarterly 10 (2000) 9-22; on page 21, section 8.
 
 .. figure:: x-00565.svg
-   :alt: X(565) = INTERSECTION OF LINES X(49)X(93) AND X(143,324)
+   :alt: X_565 — INTERSECTION OF LINES X_49X_93 AND X(143,324)
    :align: center
 
-   **X(565) = INTERSECTION OF LINES X(49)X(93) AND X(143,324)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_565** (*INTERSECTION OF LINES X_49X_93 AND X(143,324)*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{49, 93} <{ 49, 93 }>`, :g:`{143, 324} <{ 143, 324 }>`
+   * **Related Centers:** :g:`X_49 <X_49>` (:ref:`CENTER OF SINE-TRIPLE-ANGLE CIRCLE <X_49>`), :g:`X_93 <X_93>` (:ref:`ISOGONAL CONJUGATE OF X(49) <X_93>`), :g:`X_143 <X_143>` (:ref:`NINE-POINT CENTER OF ORTHIC TRIANGLE <X_143>`), :g:`X_324 <X_324>` (:ref:`ISOTOMIC CONJUGATE OF X(97) <X_324>`)
 
 .. signature:: center
 
@@ -28,7 +37,7 @@ X(565) = INTERSECTION OF LINES X(49)X(93) AND X(143,324)
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`49 <X(49)>`, :ref:`93 <X(93)>`}, {:ref:`143 <X(143)>`, :ref:`324 <X(324)>`}
+   {:ref:`49 <X_49>`, :ref:`93 <X_93>`}, {:ref:`143 <X_143>`, :ref:`324 <X_324>`}
 
 .. toctree::
    :hidden:

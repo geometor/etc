@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(546) = MIDPOINT OF X(4) AND X(5)."""
+"""GEOMETOR construction model for X_546 = MIDPOINT OF X_4 AND X_5."""
 
 from __future__ import annotations
 
@@ -23,16 +23,16 @@ from geometor.etc.render import write_center_svg
 def construct_x_00546(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(546) = MIDPOINT OF X(4) AND X(5) on reference triangle ABC."""
-    X_546 = eval_trilinear_point(model, A, B, C, '3*cos(B - C) - 2*cos(A)', ID="X(546)", classes=["selected", "target"])
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
+    """Construct X_546 = MIDPOINT OF X_4 AND X_5 on reference triangle ABC."""
+    X_546 = eval_trilinear_point(model, A, B, C, '3*cos(B - C) - 2*cos(A)', ID="X_546", classes=["selected", "target"])
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
-    X_113 = eval_trilinear_point(model, A, B, C, 'sin(B)*sin(C)*((sin(C))/(cos(C) - 2*cos(A)*cos(B)) + (sin(B))/(cos(B) - 2*cos(A)*cos(C)))', ID="X(113)", classes=["center", "incident"])
-    X_137 = point_from_barycentrics(model, A, B, C, 0.1354431, 0.64976082, 0.21479608, ID="X(137)", classes=["center", "incident"])
+    X_113 = eval_trilinear_point(model, A, B, C, 'sin(B)*sin(C)*((sin(C))/(cos(C) - 2*cos(A)*cos(B)) + (sin(B))/(cos(B) - 2*cos(A)*cos(C)))', ID="X_113", classes=["center", "incident"])
+    X_137 = point_from_barycentrics(model, A, B, C, 0.1354431, 0.64976082, 0.21479608, ID="X_137", classes=["center", "incident"])
     central_line(model, X_113, X_137, 113, 137, incident=True)
-    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /3)', ID="X(13)", classes=["center", "incident"])
-    X_398 = eval_trilinear_point(model, A, B, C, 'cos(B - C) - 2*cos(A - pi /3)', ID="X(398)", classes=["center", "incident"])
+    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /3)', ID="X_13", classes=["center", "incident"])
+    X_398 = eval_trilinear_point(model, A, B, C, 'cos(B - C) - 2*cos(A - pi /3)', ID="X_398", classes=["center", "incident"])
     central_line(model, X_13, X_398, 13, 398, incident=True)
     return promote_point_to_top(model, X_546)
 
@@ -41,8 +41,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(546) on the given reference triangle."""
-    model = create_model('X(546) = MIDPOINT OF X(4) AND X(5)')
+    """Build a `geometor.model.Model` for X_546 on the given reference triangle."""
+    model = create_model('X_546 = MIDPOINT OF X_4 AND X_5')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00546(model, A, B, C)
     return model

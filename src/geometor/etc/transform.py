@@ -9,6 +9,7 @@ from typing import Any
 
 from .glossary import (
     _apply_outside_rst_spans,
+    extract_local_symbol_map,
     filter_center_refs,
     wrap_geom_refs,
     wrap_glossary_terms,
@@ -26,22 +27,22 @@ def format_rst_header(title: str, char: str = "=") -> str:
 def wrap_refs(
     text: str, valid_centers: set[int] | None = None
 ) -> str:
-    """Wrap X(n) and X[n] references in `:ref:`X(n) <X(n)>`` outside existing RST roles."""
+    """Wrap X(n), X[n], and X_n references in `:ref:`X_n <X_n>`` outside existing RST roles."""
     if not text:
         return ""
 
-    pattern = re.compile(r"(?<![a-z])X[\(\[](\d+)[\)\]]")
+    pattern = re.compile(r"(?<![a-z])X(?:[\(\[](\d+)[\)\]]|_(\d+))")
 
     def _repl_seg(seg: str) -> str:
         out: list[str] = []
         last_idx = 0
         for m in pattern.finditer(seg):
-            num_str = m.group(1)
+            num_str = m.group(1) or m.group(2)
             num = int(num_str)
             start, end = m.start(), m.end()
             out.append(seg[last_idx:start])
             if valid_centers is not None and num not in valid_centers:
-                out.append(f"X({num_str})")
+                out.append(f"X_{num_str}")
             else:
                 prev_ch = seg[start - 1] if start > 0 else " "
                 next_ch = seg[end] if end < len(seg) else " "
@@ -53,10 +54,11 @@ def wrap_refs(
                 ) and not seg[end:].startswith(r"\ ")
                 prefix = r"\ " if need_pre else ""
                 suffix = r"\ " if need_post else ""
-                out.append(f"{prefix}:ref:`X({num_str}) <X({num_str})>`{suffix}")
+                out.append(f"{prefix}:ref:`X_{num_str} <X_{num_str}>`{suffix}")
             last_idx = end
         out.append(seg[last_idx:])
-        return "".join(out)
+        joined = "".join(out)
+        return re.sub(r"(?<![a-z])X[\(\[]([ijkn])[\)\]]", r"X_\1", joined)
 
     return _apply_outside_rst_spans(text, _repl_seg)
 
@@ -79,7 +81,7 @@ def _wrap_relation_tuples(
     def _fmt_num(n_str: str) -> str:
         n_int = int(n_str)
         if valid_centers is None or n_int in valid_centers:
-            return f":ref:`{n_str} <X({n_str})>`"
+            return f":ref:`{n_str} <X_{n_str}>`"
         return n_str
 
     def _tuple_repl(m: re.Match) -> str:
@@ -117,57 +119,489 @@ def _enrich_text(
     return filter_center_refs(text, valid_centers)
 
 
-def _extract_primary_enunciation(
-    notes: list[str], relations: list[str]
-) -> tuple[str, list[str]]:
-    """Extract a concise primary defining statement for ``.. enunciation::`` and return remaining notes."""
-    skip_prefixes = (
-        "as a point on the euler line",
-        "barycentrics ",
-        "trilinears ",
-        "tripolars ",
-        "*",
-    )
-    remaining = list(notes)
+_NON_DEFINING_NOTE_RE = re.compile(
+    r"^\s*(?:"
+    r"as\s+a\s+point\s+on\s+the\s+euler\s+line|"
+    r"barycentrics\s+|trilinears\s+|tripolars\s+|"
+    r"\*|"
+    r"see\s+|"
+    r"the\s+name\s+of\s+this\s+point|"
+    r"this\s+point\s+is\s+mentioned|"
+    r"for\s+an\s+artistic|"
+    r"a\s+construction\s+of\s+x\(\d+\)|"
+    r"x\(\d+\)\s+lies\s+(?:on\s+)?the\b|"
+    r"if,?\s+however\b|"
+    r"however\s*,|"
+    r"the\s+above\s+construction|"
+    r"similarly\s*,|"
+    r"more\s+generally\s*,|"
+    r"although\s+|"
+    r"constructions\s+received\s+from"
+    r")",
+    re.IGNORECASE,
+)
 
-    for idx, note in enumerate(remaining):
+
+def _is_non_defining_note(s: str) -> bool:
+    s_str = s.strip()
+    if not s_str or len(s_str) <= 10:
+        return True
+    if _NON_DEFINING_NOTE_RE.match(s_str):
+        return True
+    if "../bstud/" in s_str.lower():
+        return True
+    # Pure bibliographic / citation-only short note ending in a year
+    if len(s_str) < 95 and re.search(r"\b(?:19|20)\d{2}\.?\s*$", s_str):
+        if not re.search(
+            r"\b(?:let|is\s+the|concur|perspector|intersection|center|triangle|circle|conjugate|midpoint|reflection)\b",
+            s_str,
+            re.IGNORECASE,
+        ):
+            return True
+    return False
+
+
+_PROPER_TITLE_NAMES: dict[str, str] = {
+    "feuerbach": "Feuerbach",
+    "gergonne": "Gergonne",
+    "nagel": "Nagel",
+    "spieker": "Spieker",
+    "euler": "Euler",
+    "fermat": "Fermat",
+    "apollonius": "Apollonius",
+    "napoleon": "Napoleon",
+    "mittenpunkt": "Mittenpunkt",
+    "lemoine": "Lemoine",
+    "brocard": "Brocard",
+    "steiner": "Steiner",
+    "tarry": "Tarry",
+    "clawson": "Clawson",
+    "longchamps": "Longchamps",
+    "schiffler": "Schiffler",
+    "exeter": "Exeter",
+    "bevan": "Bevan",
+    "kosnita": "Kosnita",
+    "monge": "Monge",
+}
+
+
+def _format_title_as_prose(title: str) -> str:
+    """Convert an ALL-CAPS ETC title into readable prose while preserving X_n, ABC, and proper names."""
+    s = title.strip().lower()
+    s = re.sub(r"\bx(?:_|\()(\d+)\)?", lambda m: f"X_{m.group(1)}", s)
+    s = re.sub(r"\babc\b", "ABC", s)
+    for low_k, cap_v in _PROPER_TITLE_NAMES.items():
+        s = re.sub(rf"\b{low_k}\b", cap_v, s)
+    return s
+
+
+def _extract_primary_enunciation(
+    notes: list[str],
+    relations: list[str],
+    num: int | None = None,
+    title: str = "",
+) -> tuple[str, list[str]]:
+    """Extract a consistent primary defining statement for ``.. enunciation::`` and return remaining notes."""
+    remaining = list(notes)
+    title_clean = (title or "").strip()
+    title_low = title_clean.lower()
+
+    # Check if the title itself is an explicit operator/triangle definition (e.g. "CENTROID OF ORTHIC TRIANGLE",
+    # "INSIMILICENTER(CIRCUMCIRCLE, INCIRCLE)", "X(6)-BETH CONJUGATE OF X(4)")
+    title_is_operator = bool(
+        re.search(
+            r"\b(?:centroid|orthocenter|incenter|circumcenter|symmedian\s+point|nine-point\s+center|"
+            r"reflection|midpoint|complement|anticomplement|cevapoint|crosspoint|isogonal\s+conjugate|"
+            r"isotomic\s+conjugate|insimilicenter|exsimilicenter|homothetic\s+center|perspector|"
+            r"inverse|antipode|harmonic\s+conjugate)\s+(?:of|in)\b|"
+            r"\b(?:insimilicenter|exsimilicenter|homothetic\s+center)\s*\(|"
+            r"\bx\(\d+\)-[a-z]+\s+conjugate\s+of\b",
+            title_low,
+        )
+    )
+
+    # Extract distinctive proper-name words from title (e.g. "spieker", "longchamps", "schiffler", "kosnita")
+    generic_words = {
+        "point", "center", "first", "second", "third", "1st", "2nd", "3rd", "4th",
+        "triangle", "circle", "line", "the", "and", "of", "in", "on", "to", "for",
+        "with", "isogonal", "isotomic", "conjugate", "complement", "anticomplement",
+        "midpoint", "reflection", "perspector", "centroid", "orthocenter", "incenter",
+        "circumcenter", "symmedian", "euler", "homothetic", "insimilicenter", "exsimilicenter",
+        "inverse", "antipode", "crosspoint", "cevapoint", "circumcircle", "incircle",
+        "excircle", "nine", "harmonic",
+    }
+    eponym_words = [
+        w for w in re.findall(r"[a-z]{4,}", title_low)
+        if w not in generic_words
+    ]
+
+    # Score candidate notes among the first 7 notes
+    best_idx: int | None = None
+    best_score = -999
+    for idx, note in enumerate(remaining[:7]):
         s = note.strip()
-        if not s:
+        if _is_non_defining_note(s):
             continue
         low = s.lower()
-        if any(low.startswith(p) for p in skip_prefixes):
-            continue
-        if "\n" not in s and len(s) > 10:
-            del remaining[idx]
-            return s, remaining
+        score = 0
+        # Prefer notes without multi-paragraph breaks, or whose paragraphs are self-contained
+        if "\n" not in s:
+            score += 20
+        else:
+            paras = [p.strip() for p in s.split("\n\n") if p.strip()]
+            first_p = paras[0] if paras else ""
+            if first_p.rstrip().lower().endswith(("let", "where", "as", "follows", ":", ";", ",", "=")):
+                score -= 15
+            elif len(paras) > 1 and paras[1].lstrip().startswith("*"):
+                score -= 10
+        # Penalize dated contributor notes "(Author, Month DD, YYYY)" or "MM/DD/YY"
+        has_date = bool(re.search(r"\b(?:199\d|20[0-2]\d)\b|\b\d{1,2}/\d{1,2}/\d{2,4}\b", s))
+        if has_date:
+            score -= 60
+        else:
+            score += 25
+        # Penalize secondary multi-step contributor constructions (A″ / A'' / hexyl / half-altitude)
+        if re.search(r"[A-Z][″\"]|[A-Z]''|\b(?:hexyl|half-altitude|ara|johnson)\s+triangle\b", s, re.IGNORECASE):
+            score -= 55
+        # Penalize secondary one-line "{X(i),X(j)}-harmonic conjugate of X(k)" notes when title is not a harmonic conjugate
+        if "harmonic conjugate" not in title_low and re.match(
+            r"^x\(\d+\)\s+is\s+the\s+\{x\(\d+\)\s*,\s*x\(\d+\)\}-harmonic\s+conjugate\s+of\s+x\(\d+\)\.?$",
+            low,
+        ):
+            score -= 50
+        # Strong bonus if note mentions the center's proper eponym (e.g. "Spieker", "De Longchamps", "Schiffler", "Kosnita")
+        if eponym_words and any(ew in low for ew in eponym_words):
+            score += 45
+        # If title is an explicit operator (e.g. "CENTROID OF ORTHIC TRIANGLE"), penalize a note that starts with
+        # "Let A'B'C' be the <different triangle>" unrelated to the title
+        if title_is_operator and low.startswith("let "):
+            title_tris = re.findall(r"\b([a-z\-]+)\s+triangle\b", title_low)
+            note_tris = re.findall(r"\b([a-z\-]+)\s+triangle\b", low[:120])
+            if title_tris and note_tris and title_tris[0] != note_tris[0]:
+                score -= 60
+            elif not title_tris and note_tris:
+                score -= 50
+        # Slight preference for earlier position
+        score -= idx * 4
+        if score > best_score:
+            best_score = score
+            best_idx = idx
 
-    for idx, note in enumerate(remaining):
-        paras = [p.strip() for p in note.split("\n\n") if p.strip()]
-        if not paras:
-            continue
+    # If no canonical un-dated note scored >= 0, prefer the explicit operator title or canonical low-numbered relation
+    if best_score < 0:
+        if title_is_operator and num is not None:
+            return f"X_{num} is the {_format_title_as_prose(title_clean)}.", remaining
+        max_k_allowed = max((num or 1) + 15, 50)
+        for rel in relations:
+            r_s = rel.strip()
+            r_low = r_s.lower()
+            if not r_s or "for these" in r_low or "\n" in r_s:
+                continue
+            if re.search(r"\b(?:199\d|20[0-2]\d)\b|\b\d{1,2}/\d{1,2}/\d{2,4}\b", r_s):
+                continue
+            if "harmonic conjugate" in r_low and "harmonic conjugate" not in title_low:
+                continue
+            ref_nums = [
+                int(m_n)
+                for m_n in re.findall(r"X(?:_|\()(\d+)\)?|\{\s*(\d+)\s*,\s*(\d+)\s*\}", r_s)
+                for m_n in (m_n if isinstance(m_n, tuple) else (m_n,))
+                if m_n
+            ]
+            if any(k_n > max_k_allowed for k_n in ref_nums):
+                continue
+            if (
+                len(relations) > 1
+                and re.search(r"=\s*(?:isogonal|isotomic)\s+conjugate\s+of\b", r_low)
+                and "conjugate" not in title_low
+            ):
+                continue
+            return r_s, remaining
+
+    if best_idx is not None:
+        chosen = remaining[best_idx].strip()
+        if "\n" not in chosen:
+            del remaining[best_idx]
+            chosen = re.sub(
+                r"\s*For\s+details\s+and\s+generalization,\s+see\s*$",
+                "",
+                chosen,
+                flags=re.IGNORECASE,
+            ).strip()
+            return chosen, remaining
+        paras = [p.strip() for p in chosen.split("\n\n") if p.strip()]
         first_p = paras[0]
-        low = first_p.lower()
-        if any(low.startswith(p) for p in skip_prefixes):
-            continue
-        if "\n" not in first_p and len(first_p) > 10:
-            if len(paras) == 1:
-                del remaining[idx]
-            else:
-                remaining[idx] = "\n\n".join(paras[1:])
+        # Only split off `first_p` if it is a complete sentence and doesn't introduce bullet items
+        can_split = (
+            len(paras) > 1
+            and "\n" not in first_p
+            and not first_p.rstrip().lower().endswith(("let", "where", "as", "follows", ":", ";", ",", "="))
+            and not paras[1].lstrip().startswith("*")
+        )
+        if can_split:
+            remaining[best_idx] = "\n\n".join(paras[1:])
+            first_p = re.sub(
+                r"\s*For\s+details\s+and\s+generalization,\s+see\s*$",
+                "",
+                first_p,
+                flags=re.IGNORECASE,
+            ).strip()
             return first_p, remaining
-
-    for idx, note in enumerate(remaining):
-        s = note.strip()
-        if s and "\n" not in s and not s.startswith("*"):
-            del remaining[idx]
-            return s, remaining
+        del remaining[best_idx]
+        return chosen, remaining
 
     for rel in relations:
         r_s = rel.strip()
         if r_s and "for these" not in r_s.lower() and "\n" not in r_s:
             return r_s, remaining
 
+    if title_is_operator and num is not None:
+        return f"X_{num} is the {_format_title_as_prose(title_clean)}.", remaining
+
     return "", remaining
+
+
+_POLYGON_TERM_SLUGS: dict[str, tuple[str, str]] = {
+    "< M_a M_b M_c >": ("Medial Triangle", "medial triangle"),
+    "< H_a H_b H_c >": ("Orthic Triangle", "orthic triangle"),
+    "< T_a T_b T_c >": ("Intouch (Contact) Triangle", "intouch triangle"),
+    "< N_a N_b N_c >": ("Extouch Triangle", "extouch triangle"),
+    "< I_a I_b I_c >": ("Incentral Triangle", "incentral triangle"),
+    "< J_a J_b J_c >": ("Excentral Triangle", "excentral triangle"),
+    "< K_a K_b K_c >": ("Anticomplementary Triangle", "anticomplementary triangle"),
+    "< Tan_a Tan_b Tan_c >": ("Tangential Triangle", "tangential triangle"),
+    "< Sym_a Sym_b Sym_c >": ("Symmedial Triangle", "symmedial triangle"),
+    "< Eu_a Eu_b Eu_c >": ("Euler (Feuerbach) Triangle", "euler triangle"),
+    "< Ref_a Ref_b Ref_c >": ("Reflection Triangle", "reflection triangle"),
+    "< Cm_a Cm_b Cm_c >": ("Circummedial Triangle", "circummedial triangle"),
+    "< H'_a H'_b H'_c >": ("Orthic-of-Orthic Triangle", "orthic triangle"),
+    "< O_A O_B O_C >": ("Kosnita Triangle", "kosnita triangle"),
+    "< Nap_a Nap_b Nap_c >": ("Outer Napoleon Triangle", "outer napoleon triangle"),
+    "< Nap'_a Nap'_b Nap'_c >": ("Inner Napoleon Triangle", "inner napoleon triangle"),
+    "< P_a P_b P_c >": ("Cevian Triangle", "cevian triangle"),
+}
+
+_CIRCLE_TERM_SLUGS: dict[str, tuple[str, str]] = {
+    "circumcircle": ("Circumcircle", "circumcircle"),
+    "incircle": ("Incircle", "incircle"),
+    "nine_point_circle": ("Nine-Point Circle", "nine-point circle"),
+    "spieker_circle": ("Spieker Circle", "spieker circle"),
+    "bevan_circle": ("Bevan Circle", "bevan circle"),
+}
+
+_CONCURRENCE_KIND_LABELS: dict[str, str] = {
+    "Cevian": " (Cevians)",
+    "Median": " (Medians)",
+    "Altitude": " (Altitudes)",
+    "Angle": " (Angle Bisectors)",
+    "Symmedian": " (Symmedians)",
+    "Perpendicular": " (Perpendicular Bisectors)",
+    "Perspectivity": " (Perspectivity Lines)",
+}
+
+
+def _format_constructed_elements_rst(
+    model: Any,
+    data: dict[str, Any],
+    enun_raw: str,
+    valid_centers: set[int] | None = None,
+) -> list[str]:
+    """Build a 'Constructed Elements' summary block documenting all primary elements shown in the SVG figure."""
+    if model is None:
+        return []
+    from .render import (
+        _CONSTRUCTION_LINE_INFO,
+        _KNOWN_CIRCLE_INFO,
+        _KNOWN_POLYGON_INFO,
+        _load_center_names,
+        model_to_elements_list,
+    )
+
+    elements = model_to_elements_list(model)
+    if not elements:
+        return []
+
+    target_key = data.get("key", "")
+    sym_map = extract_local_symbol_map(enun_raw or "")
+    # Reverse map from canonical ID -> enunciation symbol (e.g. "T_a" -> "A'", "< T_a T_b T_c >" -> "△A'B'C'")
+    rev_sym: dict[str, str] = {}
+    for k_sym, v_id in sym_map.items():
+        if v_id not in rev_sym:
+            rev_sym[v_id] = k_sym
+    if all(k in sym_map for k in ("A'", "B'", "C'")):
+        poly_key = f"< {sym_map['A\'']} {sym_map['B\'']} {sym_map['C\'']} >"
+        rev_sym[poly_key] = "△A'B'C'"
+    if all(k in sym_map for k in ("X", "Y", "Z")):
+        poly_key = f"< {sym_map['X']} {sym_map['Y']} {sym_map['Z']} >"
+        rev_sym[poly_key] = "△XYZ"
+
+    center_names = _load_center_names()
+    bullets: list[str] = []
+
+    # 1. Derived Triangles (Polygons other than < A B C >)
+    covered_guide_pts: set[str] = {"R_a", "R_b"}
+    equil_polys = [
+        el for el in elements
+        if el["type"] == "polygon" and el["ID"] in {"< B C A' >", "< C A B' >", "< A B C' >"}
+    ]
+    if len(equil_polys) == 3:
+        covered_guide_pts.update({"A'", "B'", "C'"})
+        bullets.append(
+            "* **Equilateral Side Triangles:** "
+            ":g:`△BCA' << B C A' >>`, :g:`△CAB' << C A B' >>`, :g:`△ABC' << A B C' >>` "
+            "erected on sidelines with apexes :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>`"
+        )
+
+    for el in elements:
+        if el["type"] != "polygon" or "incident" in el["classes"]:
+            continue
+        pid = el["ID"]
+        if pid in {"< A B C >", "< B C A' >", "< C A B' >", "< A B C' >"}:
+            continue
+        v_ids = el.get("points") or []
+        covered_guide_pts.update(v_ids)
+        inner_id = pid[2:-2].strip()
+        p_info = _KNOWN_POLYGON_INFO.get(pid)
+        desc = p_info[1] if p_info else "Constructed derived triangle"
+
+        if pid in _POLYGON_TERM_SLUGS:
+            t_lbl, t_slug = _POLYGON_TERM_SLUGS[pid]
+            title_part = f":term:`{t_lbl} <{t_slug}>` :g:`△{''.join(v_ids)} << {inner_id} >>`"
+        else:
+            p_title = p_info[0] if p_info else f"Triangle {pid}"
+            title_part = f"**{p_title}** :g:`{pid} << {inner_id} >>`"
+
+        alias_str = ""
+        if pid in rev_sym:
+            alias_str = f" (denoted :g:`{rev_sym[pid]} << {inner_id} >>` in enunciation)"
+
+        v_chips: list[str] = []
+        for vid in v_ids:
+            if vid in rev_sym and rev_sym[vid] != vid:
+                v_chips.append(f":g:`{vid} <{vid}>` (:g:`{rev_sym[vid]} <{vid}>`)")
+            else:
+                v_chips.append(f":g:`{vid} <{vid}>`")
+        verts_part = f" — vertices {', '.join(v_chips)}" if v_chips else ""
+        bullets.append(f"* **Derived Triangle:** {title_part}{alias_str}{verts_part} ({desc})")
+
+    # 2. Auxiliary Guide Points not already part of a drawn polygon (e.g. M_a..c in X(3)/X(5), H_a..c in X(5), I_a..c in X(1))
+    rem_guides = [
+        el["ID"] for el in elements
+        if el["type"] == "point" and el["guide"] and "incident" not in el["classes"] and el["ID"] not in covered_guide_pts
+    ]
+    if rem_guides:
+        groups: list[tuple[str, list[str], str]] = [
+            ("M_", ["M_a", "M_b", "M_c"], "Side midpoints of :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`"),
+            ("H_", ["H_a", "H_b", "H_c"], "Altitude feet on :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`"),
+            ("I_", ["I_a", "I_b", "I_c"], "Internal angle bisector feet on :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`"),
+            ("Sym_", ["Sym_a", "Sym_b", "Sym_c"], "Symmedian feet on :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`"),
+            ("P_", ["P_a", "P_b", "P_c"], "Sideline cevian traces on :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`"),
+        ]
+        used_g: set[str] = set()
+        for _, g_ids, g_desc in groups:
+            present = [gid for gid in g_ids if gid in rem_guides]
+            if len(present) == 3:
+                used_g.update(present)
+                chips = [
+                    f":g:`{gid} <{gid}>`" + (f" (:g:`{rev_sym[gid]} <{gid}>`)" if gid in rev_sym and rev_sym[gid] != gid else "")
+                    for gid in present
+                ]
+                bullets.append(f"* **Auxiliary Points:** {', '.join(chips)} — {g_desc}")
+        other_g = [gid for gid in rem_guides if gid not in used_g]
+        if other_g:
+            chips = [f":g:`{gid} <{gid}>`" for gid in other_g]
+            bullets.append(f"* **Auxiliary Points:** {', '.join(chips)}")
+
+    # 3. Circles
+    for el in elements:
+        if el["type"] != "circle" or el["guide"] or "incident" in el["classes"]:
+            continue
+        cid = el["ID"]
+        c_info = _KNOWN_CIRCLE_INFO.get(cid)
+        c_desc = c_info[1] if c_info else f"Centered at {el.get('center', '')}"
+        if cid in _CIRCLE_TERM_SLUGS:
+            c_lbl, c_slug = _CIRCLE_TERM_SLUGS[cid]
+            c_head = f":term:`{c_lbl} <{c_slug}>` (:g:`{cid} <{cid}>`)"
+        else:
+            c_title = c_info[0] if c_info else cid
+            c_head = f":g:`{c_title} <{cid}>`"
+        bullets.append(f"* **Circle:** {c_head} — {c_desc}")
+
+    # 4. Concurrence Lines & Central Lines
+    concur_lines: list[str] = []
+    central_lines: list[str] = []
+    for el in elements:
+        if el["type"] != "line" or el["guide"] or "incident" in el["classes"]:
+            continue
+        lid = el["ID"]
+        if lid in {"[ A B ]", "[ B C ]", "[ C A ]"}:
+            continue
+        m_cl = re.match(r"^\{\s*(\d+)\s*,\s*(\d+)\s*\}$", lid)
+        if m_cl:
+            i_n, j_n = int(m_cl.group(1)), int(m_cl.group(2))
+            is_euler = {i_n, j_n} <= {2, 3, 4, 5, 20, 30}
+            e_tag = " (:term:`Euler line <euler line>`)" if is_euler else ""
+            central_lines.append(f":g:`{{{i_n}, {j_n}}} <{lid}>`{e_tag}")
+        else:
+            inner_l = lid[2:-2].strip() if lid.startswith("[") and lid.endswith("]") else lid
+            pts_l = inner_l.split()
+            disp_l = f"{pts_l[0]}–{pts_l[1]}" if len(pts_l) == 2 else lid
+            concur_lines.append(f":g:`{disp_l} <{lid}>`")
+
+    if concur_lines:
+        l_first = next(
+            (el["ID"] for el in elements if el["type"] == "line" and el["ID"] not in {"[ A B ]", "[ B C ]", "[ C A ]"} and not el["ID"].startswith("{")),
+            "",
+        )
+        l_desc = _CONSTRUCTION_LINE_INFO.get(l_first, ("", ""))[0]
+        first_w = l_desc.split()[0] if l_desc else ""
+        kind_prefix = _CONCURRENCE_KIND_LABELS.get(first_w, "")
+        bullets.append(
+            f"* **Concurrence Lines{kind_prefix}:** {', '.join(concur_lines)} concurring at :g:`{target_key} <{target_key}>`"
+        )
+    if central_lines:
+        bullets.append(f"* **Central Lines:** {', '.join(central_lines)}")
+
+    # 5. Related Centers Shown in Construction
+    rel_centers: list[str] = []
+    for el in elements:
+        if el["type"] != "point" or el["guide"] or "incident" in el["classes"]:
+            continue
+        pid = el["ID"]
+        if pid in {"A", "B", "C", target_key}:
+            continue
+        m_x = re.match(r"^X(?:_|\()(\d+)\)?$", pid)
+        if m_x:
+            c_num = int(m_x.group(1))
+            c_title = center_names.get(str(c_num), "")
+            if len(c_title) > 36 and "(" in c_title:
+                c_title = c_title.split("(")[0].strip()
+            can_ref = valid_centers is None or c_num in valid_centers
+            sym_alias = f" (denoted :g:`{rev_sym[pid]} <{pid}>`)" if pid in rev_sym and rev_sym[pid] != pid else ""
+            if c_title and can_ref:
+                title_suffix = f" (:ref:`{c_title} <{pid}>`)"
+            elif c_title:
+                title_suffix = f" ({c_title})"
+            elif can_ref:
+                title_suffix = f" (:ref:`page <{pid}>`)"
+            else:
+                title_suffix = ""
+            rel_centers.append(f":g:`{pid} <{pid}>`{title_suffix}{sym_alias}")
+
+    if rel_centers:
+        bullets.append(f"* **Related Centers:** {', '.join(rel_centers)}")
+
+    if not bullets:
+        return []
+
+    out = [
+        ".. admonition:: Constructed Elements",
+        "   :class: note",
+        "",
+    ]
+    for b in bullets:
+        out.append(f"   {b}")
+    out.append("")
+    return out
 
 
 def transform_center_to_rst(
@@ -179,6 +613,7 @@ def transform_center_to_rst(
     kimberling_figure_uri: str | None = None,
     search_value: float | None = None,
     include_model_py: bool = False,
+    model: Any = None,
 ) -> str:
     """Transform a parsed center dictionary into the Book Codex Overview track (`index.rst`)."""
     if not data or not data.get("key"):
@@ -189,15 +624,19 @@ def transform_center_to_rst(
     num = data.get("num")
     if num is None:
         try:
-            num = int(key.replace("X(", "").replace(")", ""))
+            num = int(re.sub(r"[^0-9]", "", key))
         except ValueError:
             num = 0
+    if num > 0:
+        key = f"X_{num}"
 
     lines: list[str] = [
         f":order: {num}",
         ":type: center",
         f":canonical_id: {key}",
     ]
+    if title and title != key:
+        lines.append(f":subtitle: {title}")
 
     aliases = data.get("aliases") or []
     if aliases:
@@ -209,20 +648,20 @@ def transform_center_to_rst(
     lines.append("")
 
     # Anchors
-    lines.append(f".. _X({num}):")
+    lines.append(f".. _X_{num}:")
     anchor_id = data.get("anchor_id")
-    if anchor_id and anchor_id != f"X({num})":
+    if anchor_id and anchor_id not in {f"X_{num}", f"X({num})"}:
         lines.append(f".. _{anchor_id}:")
     lines.append("")
 
-    # Document Title (=)
-    full_title = f"{key} = {title}" if title else key
-    lines.append(full_title)
-    lines.append("=" * max(4, len(full_title)))
+    # Document Title (=) — Line 1: X_n (centered)
+    lines.append(key)
+    lines.append("=" * max(4, len(key)))
     lines.append("")
 
-    if aliases:
-        lines.append(f".. rubric:: {' • '.join(aliases)}")
+    # Subtitle — Line 2: centered .. rubric:: subtitle
+    if title and title != key:
+        lines.append(f".. rubric:: {title}")
         lines.append("")
 
     seen_terms: set[str] = set()
@@ -232,7 +671,7 @@ def transform_center_to_rst(
     raw_notes = data.get("notes") or []
     raw_relations = data.get("relations") or []
     enun_raw, remaining_notes = _extract_primary_enunciation(
-        raw_notes, raw_relations
+        raw_notes, raw_relations, num=num, title=title
     )
 
     if enun_raw:
@@ -293,16 +732,26 @@ def transform_center_to_rst(
                 lines.append("")
 
     # 1. Primary Geometric Construction Figure (4-Tab Interactive Panel)
+    alt_title = f"{key} — {title}" if title and title != key else key
+    cap_title = f"**{key}** (*{title}*)" if title and title != key else f"**{key}**"
     if figure_uri:
         lines.append(f".. figure:: {figure_uri}")
-        lines.append(f"   :alt: {full_title}")
+        lines.append(f"   :alt: {alt_title}")
         lines.append("   :align: center")
         lines.append("")
         lines.append(
-            f"   **{full_title}** constructed on acute reference triangle "
+            f"   {cap_title} constructed on acute reference triangle "
             r":math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`."
         )
         lines.append("")
+
+    # 1b. Constructed Elements Card (links prose symbols & derived triangles/circles/lines to SVG elements)
+    if model is not None:
+        lines.extend(
+            _format_constructed_elements_rst(
+                model, data, enun_raw, valid_centers=valid_centers
+            )
+        )
 
     # 2. Compact Coordinate Signature Card (.. signature:: center) + Alternate Coordinates
     has_coords = any(
@@ -404,7 +853,7 @@ def transform_center_to_rst(
                     ).strip()
                     is_bare_key = bool(
                         re.match(
-                            r"^(?::ref:`X\(\d+\) <X\(\d+\)>`|X\(\d+\))\s*$",
+                            r"^(?::ref:`X(?:_|\()\d+\)? <X(?:_|\()\d+\)?>`|X(?:_|\()\d+\)?)\s*$",
                             enriched_prefix,
                         )
                     )
@@ -417,7 +866,7 @@ def transform_center_to_rst(
 
                     def _fmt_inc_pt(pt: int) -> str:
                         if valid_centers is None or pt in valid_centers:
-                            return f":ref:`{pt} <X({pt})>`"
+                            return f":ref:`{pt} <X_{pt}>`"
                         return str(pt)
 
                     formatted_pairs = [
@@ -497,7 +946,7 @@ def transform_center_to_rst(
             idx_str = m.group(1)
             idx_int = int(idx_str)
             if valid_centers is None or idx_int in valid_centers:
-                return f":ref:`{idx_str} <X({idx_str})>`"
+                return f":ref:`{idx_str} <X_{idx_str}>`"
             return idx_str
 
         for note in remaining_notes:
@@ -543,26 +992,37 @@ def transform_center_to_code_rst(
         return ""
 
     key = data["key"]
+    num = data.get("num")
+    if num and num > 0:
+        key = f"X_{num}"
     title = data.get("title", "")
-    full_title = f"{key} = {title}" if title else key
-    code_heading = f"{full_title} — Code"
+    alt_title = f"{key} — {title}" if title and title != key else key
+    cap_title = f"**{key}** (*{title}*)" if title and title != key else f"**{key}**"
 
     lines: list[str] = [
         f":canonical_id: {key}",
         ":type: code",
-        "",
-        code_heading,
-        "=" * max(4, len(code_heading)),
-        "",
     ]
+    if title and title != key:
+        lines.append(f":subtitle: {title}")
+    lines.extend(
+        [
+            "",
+            key,
+            "=" * max(4, len(key)),
+            "",
+        ]
+    )
 
-    aliases = data.get("aliases") or []
-    if aliases:
-        lines.append(f".. rubric:: {' • '.join(aliases)}")
+    if title and title != key:
+        lines.append(f".. rubric:: {title}")
         lines.append("")
 
     enun_raw, _ = _extract_primary_enunciation(
-        data.get("notes") or [], data.get("relations") or []
+        data.get("notes") or [],
+        data.get("relations") or [],
+        num=data.get("num"),
+        title=title,
     )
     if enun_raw:
         enriched_enun = _enrich_text(
@@ -581,11 +1041,11 @@ def transform_center_to_code_rst(
 
     if figure_uri:
         lines.append(f".. figure:: {figure_uri}")
-        lines.append(f"   :alt: {full_title}")
+        lines.append(f"   :alt: {alt_title}")
         lines.append("   :align: center")
         lines.append("")
         lines.append(
-            f"   **{full_title}** constructed on acute reference triangle "
+            f"   {cap_title} constructed on acute reference triangle "
             r":math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`."
         )
         lines.append("")
@@ -625,9 +1085,11 @@ def _process_center_index(idx: int) -> None:
     num = center.get("num")
     if num is None:
         try:
-            num = int(key.replace("X(", "").replace(")", ""))
+            num = int(re.sub(r"[^0-9]", "", key))
         except ValueError:
             num = 0
+    if num > 0:
+        key = f"X_{num}"
 
     folder_name = f"x-{num:05d}" if num > 0 else key
     entry_dir = out_path / folder_name
@@ -639,6 +1101,7 @@ def _process_center_index(idx: int) -> None:
     figure_uri: str | None = None
     search_val: float | None = None
     has_model_py = False
+    model_acute = None
 
     if num in kimb_reg.bary_cache:
         kb = kimb_reg.bary_cache[num]
@@ -654,9 +1117,9 @@ def _process_center_index(idx: int) -> None:
         model_py_code = generate_center_model_py(center, acute_reg)
         model_py_path.write_text(model_py_code, encoding="utf-8")
         has_model_py = True
-
-    if render_graphics and num in acute_reg.xy_cache:
         model_acute = build_center_model(center, acute_reg)
+
+    if render_graphics and model_acute is not None:
         write_center_svg(
             model_acute,
             entry_dir / svg_name,
@@ -694,9 +1157,12 @@ def _process_center_index(idx: int) -> None:
         if model_py_path.exists():
             has_model_py = True
 
-    center_preambles = (
-        preambles_by_center.get(key) if preambles_by_center else None
-    )
+    center_preambles = None
+    if preambles_by_center:
+        center_preambles = (
+            preambles_by_center.get(key)
+            or preambles_by_center.get(f"X({num})")
+        )
     rst_content = transform_center_to_rst(
         center,
         glossary_terms=glossary_terms,
@@ -705,6 +1171,7 @@ def _process_center_index(idx: int) -> None:
         figure_uri=figure_uri,
         search_value=search_val,
         include_model_py=has_model_py,
+        model=model_acute,
     )
     filepath.write_text(rst_content, encoding="utf-8")
 
@@ -744,7 +1211,7 @@ def generate_rst_files(
             cnum = c.get("num")
             if cnum is None and c.get("key"):
                 try:
-                    cnum = int(c["key"].replace("X(", "").replace(")", ""))
+                    cnum = int(re.sub(r"[^0-9]", "", c["key"]))
                 except ValueError:
                     cnum = None
             if cnum:

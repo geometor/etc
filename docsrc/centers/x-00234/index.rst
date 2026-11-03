@@ -1,22 +1,31 @@
 :order: 234
 :type: center
-:canonical_id: X(234)
-:dependencies: X(2), X(7), X(31), X(57), X(75), X(174), X(177), X(178), X(362), X(555), X(556), X(1088)
+:canonical_id: X_234
+:subtitle: X_7-CEVA CONJUGATE OF X_177
+:dependencies: X_2, X_7, X_31, X_57, X_75, X_174, X_177, X_178, X_362, X_555, X_556, X_1088
 
-.. _X(234):
+.. _X_234:
 
-X(234) = X(7)-CEVA CONJUGATE OF X(177)
-======================================
+X_234
+=====
+
+.. rubric:: X_7-CEVA CONJUGATE OF X_177
 
 .. enunciation::
 
-   :ref:`X(234) <X(234)>` = :ref:`X(7) <X(7)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(177) <X(177)>`
+   :ref:`X_234 <X_234>` = :ref:`X_7 <X_7>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_177 <X_177>`
 
 .. figure:: x-00234.svg
-   :alt: X(234) = X(7)-CEVA CONJUGATE OF X(177)
+   :alt: X_234 — X_7-CEVA CONJUGATE OF X_177
    :align: center
 
-   **X(234) = X(7)-CEVA CONJUGATE OF X(177)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_234** (*X_7-CEVA CONJUGATE OF X_177*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 178} <{ 2, 178 }>`, :g:`{7, 174} <{ 7, 174 }>`
+   * **Related Centers:** :g:`X_7 <X_7>` (:ref:`GERGONNE POINT <X_7>`), :g:`X_177 <X_177>` (:ref:`1st MID-ARC POINT <X_177>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_178 <X_178>` (:ref:`2nd MID-ARC POINT <X_178>`), :g:`X_174 <X_174>` (:ref:`YFF CENTER OF CONGRUENCE <X_174>`)
 
 .. signature:: center
 
@@ -28,13 +37,13 @@ X(234) = X(7)-CEVA CONJUGATE OF X(177)
    :badge: 5 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`178 <X(178)>`}, {:ref:`7 <X(7)>`, :ref:`174 <X(174)>`}, {:ref:`57 <X(57)>`, :ref:`362 <X(362)>`}, {:ref:`75 <X(75)>`, :ref:`556 <X(556)>`}, {:ref:`555 <X(555)>`, 1088}
+   {:ref:`2 <X_2>`, :ref:`178 <X_178>`}, {:ref:`7 <X_7>`, :ref:`174 <X_174>`}, {:ref:`57 <X_57>`, :ref:`362 <X_362>`}, {:ref:`75 <X_75>`, :ref:`556 <X_556>`}, {:ref:`555 <X_555>`, 1088}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(234) <X(234)>` = :ref:`X(7) <X(7)>`-Ceva conjugate of :ref:`X(177) <X(177)>`
-   * :ref:`X(234) <X(234)>` = :ref:`X(31) <X(31)>`-of-intouch-triangle
+   * :ref:`X_234 <X_234>` = :ref:`X_7 <X_7>`-Ceva conjugate of :ref:`X_177 <X_177>`
+   * :ref:`X_234 <X_234>` = :ref:`X_31 <X_31>`-of-intouch-triangle
 
 .. toctree::
    :hidden:

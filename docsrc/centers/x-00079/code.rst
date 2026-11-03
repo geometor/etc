@@ -1,18 +1,21 @@
-:canonical_id: X(79)
+:canonical_id: X_79
 :type: code
+:subtitle: ISOGONAL CONJUGATE OF X_35
 
-X(79) = ISOGONAL CONJUGATE OF X(35) — Code
-==========================================
+X_79
+====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_35
 
 .. enunciation::
 
-   Let :g:`A' <A'>` be the reflection of :ref:`X(1) <X(1)>` in sideline :g:`BC <[ B C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Then the lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(79) <X(79)>`. (Eric Danneels, :cite:`Hyacinthos <hyacinthos>` 7892, 9/13/03)
+   A construction for :ref:`X_79 <X_79>` appears in :person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, `On the Feuerbach Triangle <http://forumgeom.fau.edu/FG2017volume17/FG201731.pdf>`__.
 
 .. figure:: x-00079.svg
-   :alt: X(79) = ISOGONAL CONJUGATE OF X(35)
+   :alt: X_79 — ISOGONAL CONJUGATE OF X_35
    :align: center
 
-   **X(79) = ISOGONAL CONJUGATE OF X(35)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_79** (*ISOGONAL CONJUGATE OF X_35*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

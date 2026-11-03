@@ -1,18 +1,21 @@
-:canonical_id: X(628)
+:canonical_id: X_628
 :type: code
+:subtitle: ANTICOMPLEMENT OF X_18
 
-X(628) = ANTICOMPLEMENT OF X(18) — Code
-=======================================
+X_628
+=====
+
+.. rubric:: ANTICOMPLEMENT OF X_18
 
 .. enunciation::
 
-   Erect equilateral triangles inwards on the sides of triangle :g:`ABC << A B C >>`; the circumcenter of the apices is :ref:`X(628) <X(628)>`. (:person:`Peter Moses <peter-moses>`, 7/16,2003)
+   :ref:`X_628 <X_628>` is the :term:`anticomplement <anticomplement>` of :ref:`X_18 <X_18>`.
 
 .. figure:: x-00628.svg
-   :alt: X(628) = ANTICOMPLEMENT OF X(18)
+   :alt: X_628 — ANTICOMPLEMENT OF X_18
    :align: center
 
-   **X(628) = ANTICOMPLEMENT OF X(18)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_628** (*ANTICOMPLEMENT OF X_18*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

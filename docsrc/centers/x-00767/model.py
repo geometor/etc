@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(767) = EVEN (3, 4) CIRCUMCIRCLE POINT."""
+"""GEOMETOR construction model for X_767 = EVEN (3, 4) CIRCUMCIRCLE POINT."""
 
 from __future__ import annotations
 
@@ -22,17 +22,17 @@ from geometor.etc.render import write_center_svg
 def construct_x_00767(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(767) = EVEN (3, 4) CIRCUMCIRCLE POINT on reference triangle ABC."""
-    X_766 = point_from_barycentrics(model, A, B, C, -0.56041129, -0.23404565, 0.79445694, ID="X(766)", classes=["center"])
-    X_767 = isogonal_conjugate(model, A, B, C, X_766, ID="X(767)", classes=["selected", "target"])
-    X_75 = eval_trilinear_point(model, A, B, C, '1/a**(2)', ID="X(75)", classes=["center", "incident"])
-    X_101 = eval_trilinear_point(model, A, B, C, 'a/(b - c)', ID="X(101)", classes=["center", "incident"])
+    """Construct X_767 = EVEN (3, 4) CIRCUMCIRCLE POINT on reference triangle ABC."""
+    X_766 = point_from_barycentrics(model, A, B, C, -0.56041129, -0.23404565, 0.79445694, ID="X_766", classes=["center"])
+    X_767 = isogonal_conjugate(model, A, B, C, X_766, ID="X_767", classes=["selected", "target"])
+    X_75 = eval_trilinear_point(model, A, B, C, '1/a**(2)', ID="X_75", classes=["center", "incident"])
+    X_101 = eval_trilinear_point(model, A, B, C, 'a/(b - c)', ID="X_101", classes=["center", "incident"])
     central_line(model, X_75, X_101, 75, 101, incident=True)
-    X_76 = eval_trilinear_point(model, A, B, C, '1/a**(3)', ID="X(76)", classes=["center", "incident"])
-    X_100 = eval_trilinear_point(model, A, B, C, '1/(b - c)', ID="X(100)", classes=["center", "incident"])
+    X_76 = eval_trilinear_point(model, A, B, C, '1/a**(3)', ID="X_76", classes=["center", "incident"])
+    X_100 = eval_trilinear_point(model, A, B, C, '1/(b - c)', ID="X_100", classes=["center", "incident"])
     central_line(model, X_76, X_100, 76, 100, incident=True)
-    X_85 = eval_trilinear_point(model, A, B, C, 'b**(2)*c**(2)/(b + c - a)', ID="X(85)", classes=["center", "incident"])
-    X_109 = eval_trilinear_point(model, A, B, C, 'a/(cos(B) - cos(C))', ID="X(109)", classes=["center", "incident"])
+    X_85 = eval_trilinear_point(model, A, B, C, 'b**(2)*c**(2)/(b + c - a)', ID="X_85", classes=["center", "incident"])
+    X_109 = eval_trilinear_point(model, A, B, C, 'a/(cos(B) - cos(C))', ID="X_109", classes=["center", "incident"])
     central_line(model, X_85, X_109, 85, 109, incident=True)
     return promote_point_to_top(model, X_767)
 
@@ -41,8 +41,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(767) on the given reference triangle."""
-    model = create_model('X(767) = EVEN (3, 4) CIRCUMCIRCLE POINT')
+    """Build a `geometor.model.Model` for X_767 on the given reference triangle."""
+    model = create_model('X_767 = EVEN (3, 4) CIRCUMCIRCLE POINT')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00767(model, A, B, C)
     return model

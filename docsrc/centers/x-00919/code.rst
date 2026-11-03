@@ -1,18 +1,21 @@
-:canonical_id: X(919)
+:canonical_id: X_919
 :type: code
+:subtitle: ISOGONAL CONJUGATE OF X_918
 
-X(919) = ISOGONAL CONJUGATE OF X(918) — Code
-============================================
+X_919
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_918
 
 .. enunciation::
 
-   Let :g:`Q <Q>` be a point on line :ref:`X(2) <X(2)>`\ \ :ref:`X(11) <X(11)>` other than :ref:`X(2) <X(2)>`. Let :g:`A'B'C' << A' B' C' >>` be the :term:`cevian triangle <cevian-triangle>` of Q. Let :g:`A″ <A″>` be the {B,C}-harmonic conjugate of :g:`A' <A'>` (or equivalently, :g:`A″ <A″>` = :g:`BC <[ B C ]>`\ ∩\ :g:`B'C' <[ B' C' ]>`), and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The circumcircles of :g:`AB″C″ << A B″ C″ >>`, :g:`BC″A″ << B C″ A″ >>`, :g:`CA″B″ << C A″ B″ >>` concur in :ref:`X(919) <X(919)>`. (:person:`Randy Hutson <randy-hutson>`, February 10, 2016)
+   :ref:`X_919 <X_919>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_918 <X_918>`.
 
 .. figure:: x-00919.svg
-   :alt: X(919) = ISOGONAL CONJUGATE OF X(918)
+   :alt: X_919 — ISOGONAL CONJUGATE OF X_918
    :align: center
 
-   **X(919) = ISOGONAL CONJUGATE OF X(918)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_919** (*ISOGONAL CONJUGATE OF X_918*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

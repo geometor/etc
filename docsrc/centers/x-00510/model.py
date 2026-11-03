@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(510) = 8th ISOSCELIZER POINT."""
+"""GEOMETOR construction model for X_510 = 8th ISOSCELIZER POINT."""
 
 from __future__ import annotations
 
@@ -19,8 +19,8 @@ from geometor.etc.render import write_center_svg
 def construct_x_00510(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(510) = 8th ISOSCELIZER POINT on reference triangle ABC."""
-    X_510 = eval_trilinear_point(model, A, B, C, 'b**(3/2) + c**(3/2) - a**(3/2)', ID="X(510)", classes=["selected", "target"])
+    """Construct X_510 = 8th ISOSCELIZER POINT on reference triangle ABC."""
+    X_510 = eval_trilinear_point(model, A, B, C, 'b**(3/2) + c**(3/2) - a**(3/2)', ID="X_510", classes=["selected", "target"])
     return promote_point_to_top(model, X_510)
 
 
@@ -28,8 +28,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(510) on the given reference triangle."""
-    model = create_model('X(510) = 8th ISOSCELIZER POINT')
+    """Build a `geometor.model.Model` for X_510 on the given reference triangle."""
+    model = create_model('X_510 = 8th ISOSCELIZER POINT')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00510(model, A, B, C)
     return model

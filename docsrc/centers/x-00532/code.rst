@@ -1,18 +1,21 @@
-:canonical_id: X(532)
+:canonical_id: X_532
 :type: code
+:subtitle: DIRECTION OF VECTOR AX + BX + CX, where X = X_17
 
-X(532) = DIRECTION OF VECTOR AX + BX + CX, where X = X(17) — Code
-=================================================================
+X_532
+=====
+
+.. rubric:: DIRECTION OF VECTOR AX + BX + CX, where X = X_17
 
 .. enunciation::
 
-   :ref:`X(532) <X(532)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(2380)
+   :ref:`X_532 <X_532>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2380
 
 .. figure:: x-00532.svg
-   :alt: X(532) = DIRECTION OF VECTOR AX + BX + CX, where X = X(17)
+   :alt: X_532 — DIRECTION OF VECTOR AX + BX + CX, where X = X_17
    :align: center
 
-   **X(532) = DIRECTION OF VECTOR AX + BX + CX, where X = X(17)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_532** (*DIRECTION OF VECTOR AX + BX + CX, where X = X_17*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

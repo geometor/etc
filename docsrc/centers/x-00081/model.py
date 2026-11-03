@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(81) = CEVAPOINT OF INCENTER AND SYMMEDIAN POINT."""
+"""GEOMETOR construction model for X_81 = CEVAPOINT OF INCENTER AND SYMMEDIAN POINT."""
 
 from __future__ import annotations
 
@@ -25,17 +25,17 @@ from geometor.etc.render import write_center_svg
 def construct_x_00081(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(81) = CEVAPOINT OF INCENTER AND SYMMEDIAN POINT on reference triangle ABC."""
-    X_37 = eval_trilinear_point(model, A, B, C, 'b + c', ID="X(37)", classes=["center"])
-    X_81 = isogonal_conjugate(model, A, B, C, X_37, ID="X(81)", classes=["selected", "target"])
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
+    """Construct X_81 = CEVAPOINT OF INCENTER AND SYMMEDIAN POINT on reference triangle ABC."""
+    X_37 = eval_trilinear_point(model, A, B, C, 'b + c', ID="X_37", classes=["center"])
+    X_81 = isogonal_conjugate(model, A, B, C, X_37, ID="X_81", classes=["selected", "target"])
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
     central_line(model, X_2, X_6, 2, 6, incident=True)
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
-    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X(21)", classes=["center", "incident"])
+    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
+    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X_21", classes=["center", "incident"])
     central_line(model, X_1, X_21, 1, 21, incident=True)
-    X_7 = gergonne_point_of(model, A, B, C, ID="X(7)", classes=["center", "incident"])
-    X_27 = eval_trilinear_point(model, A, B, C, '(sec(A))/(b + c)', ID="X(27)", classes=["center", "incident"])
+    X_7 = gergonne_point_of(model, A, B, C, ID="X_7", classes=["center", "incident"])
+    X_27 = eval_trilinear_point(model, A, B, C, '(sec(A))/(b + c)', ID="X_27", classes=["center", "incident"])
     central_line(model, X_7, X_27, 7, 27, incident=True)
     return promote_point_to_top(model, X_81)
 
@@ -44,8 +44,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(81) on the given reference triangle."""
-    model = create_model('X(81) = CEVAPOINT OF INCENTER AND SYMMEDIAN POINT')
+    """Build a `geometor.model.Model` for X_81 on the given reference triangle."""
+    model = create_model('X_81 = CEVAPOINT OF INCENTER AND SYMMEDIAN POINT')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00081(model, A, B, C)
     return model

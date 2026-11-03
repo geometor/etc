@@ -1,18 +1,21 @@
-:canonical_id: X(137)
+:canonical_id: X_137
 :type: code
+:subtitle: X_110-OF-ORTHIC-TRIANGLE
 
-X(137) = X(110)-OF-ORTHIC-TRIANGLE — Code
-=========================================
+X_137
+=====
+
+.. rubric:: X_110-OF-ORTHIC-TRIANGLE
 
 .. enunciation::
 
-   :ref:`X(137) <X(137)>` = :ref:`X(110) <X(110)>`-of-:term:`orthic triangle <orthic-triangle>`
+   :ref:`X_137 <X_137>` = :ref:`X_110 <X_110>`-of-:term:`orthic triangle <orthic-triangle>`
 
 .. figure:: x-00137.svg
-   :alt: X(137) = X(110)-OF-ORTHIC-TRIANGLE
+   :alt: X_137 — X_110-OF-ORTHIC-TRIANGLE
    :align: center
 
-   **X(137) = X(110)-OF-ORTHIC-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_137** (*X_110-OF-ORTHIC-TRIANGLE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

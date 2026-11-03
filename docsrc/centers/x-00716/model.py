@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(716) = EVEN (- 3, 0) INFINITY POINT."""
+"""GEOMETOR construction model for X_716 = EVEN (- 3, 0) INFINITY POINT."""
 
 from __future__ import annotations
 
@@ -22,13 +22,13 @@ from geometor.etc.render import write_center_svg
 def construct_x_00716(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(716) = EVEN (- 3, 0) INFINITY POINT on reference triangle ABC."""
-    X_716 = eval_barycentric_point(model, A, B, C, 'a**(3)*b**(3) + a**(3)*c**(3) - 2*b**(3)*c**(3)', ID="X(716)", classes=["selected", "target"])
-    X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X(30)", classes=["center", "incident"])
-    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X(511)", classes=["center", "incident"])
+    """Construct X_716 = EVEN (- 3, 0) INFINITY POINT on reference triangle ABC."""
+    X_716 = eval_barycentric_point(model, A, B, C, 'a**(3)*b**(3) + a**(3)*c**(3) - 2*b**(3)*c**(3)', ID="X_716", classes=["selected", "target"])
+    X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X_30", classes=["center", "incident"])
+    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X_511", classes=["center", "incident"])
     central_line(model, X_30, X_511, 30, 511, incident=True)
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
-    X_561 = eval_trilinear_point(model, A, B, C, 'a **(- 4)', ID="X(561)", classes=["center", "incident"])
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
+    X_561 = eval_trilinear_point(model, A, B, C, 'a **(- 4)', ID="X_561", classes=["center", "incident"])
     central_line(model, X_2, X_561, 2, 561, incident=True)
     return promote_point_to_top(model, X_716)
 
@@ -37,8 +37,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(716) on the given reference triangle."""
-    model = create_model('X(716) = EVEN (- 3, 0) INFINITY POINT')
+    """Build a `geometor.model.Model` for X_716 on the given reference triangle."""
+    model = create_model('X_716 = EVEN (- 3, 0) INFINITY POINT')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00716(model, A, B, C)
     return model

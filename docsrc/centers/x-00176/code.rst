@@ -1,18 +1,21 @@
-:canonical_id: X(176)
+:canonical_id: X_176
 :type: code
+:subtitle: EQUAL DETOUR POINT
 
-X(176) = EQUAL DETOUR POINT — Code
-==================================
+X_176
+=====
+
+.. rubric:: EQUAL DETOUR POINT
 
 .. enunciation::
 
-   The points :ref:`X(175) <X(175)>` and :ref:`X(176) <X(176)>` are discussed in an 1890 article by :person:`Emile Lemoine <emile-lemoine>`, accessible at `Gallica <http://gallica.bnf.fr/ark:/12148/bpt6k201173h>`__. The article begins on page 111, and the two points are considered beginning on page 128.
+   A point :g:`X <X>` is defined as a point of equal detour of triangle :g:`ABC << A B C >>` if \|\ :g:`XB <[ X B ]>`\ \| + \|\ :g:`XC <[ X C ]>`\ \| - \|\ :g:`BC <[ B C ]>`\ \| = \|\ :g:`XC <[ X C ]>`\ \| + \|\ :g:`XA <[ X A ]>`\ \| - \|\ :g:`CA <[ C A ]>`\ \| = \|\ :g:`XA <[ X A ]>`\ \| + \|\ :g:`XB <[ X B ]>`\ \| - \|\ :g:`AB <[ A B ]>`\ \|. Veldkamp established that :g:`X <X>` = :ref:`X_176 <X_176>` for some triangles :g:`ABC << A B C >>`, but the conditions he gives are not correct. Hajja and Yff proved that the condition tan(A/2) + tan(B/2) + tan(C/2) < 2 is necessary and sufficient for the existence of exactly two points of equal detour and that the condition tan(A/2) + tan(B/2) + tan(C/2) = 2 is necessary and sufficient for the existence of exactly one point of equal detour. Yff found that :ref:`X_176 <X_176>` is also is the center of the inner Soddy circle. See also :ref:`X_175 <X_175>` and the 1st and 2nd Eppstein points, :ref:`X_481 <X_481>`, :ref:`X_482 <X_482>`.
 
 .. figure:: x-00176.svg
-   :alt: X(176) = EQUAL DETOUR POINT
+   :alt: X_176 — EQUAL DETOUR POINT
    :align: center
 
-   **X(176) = EQUAL DETOUR POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_176** (*EQUAL DETOUR POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

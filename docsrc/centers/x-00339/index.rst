@@ -1,22 +1,31 @@
 :order: 339
 :type: center
-:canonical_id: X(339)
-:dependencies: X(3), X(25), X(69), X(76), X(115), X(125), X(127), X(250), X(264), X(265), X(305), X(338), X(381), X(525), X(1101), X(3267)
+:canonical_id: X_339
+:subtitle: ISOTOMIC CONJUGATE OF X_250
+:dependencies: X_3, X_25, X_69, X_76, X_115, X_125, X_127, X_250, X_264, X_265, X_305, X_338, X_381, X_525, X_1101, X_3267
 
-.. _X(339):
+.. _X_339:
 
-X(339) = ISOTOMIC CONJUGATE OF X(250)
-=====================================
+X_339
+=====
+
+.. rubric:: ISOTOMIC CONJUGATE OF X_250
 
 .. enunciation::
 
-   :ref:`X(339) <X(339)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(250) <X(250)>`
+   :ref:`X_339 <X_339>` is the :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_250 <X_250>`.
 
 .. figure:: x-00339.svg
-   :alt: X(339) = ISOTOMIC CONJUGATE OF X(250)
+   :alt: X_339 — ISOTOMIC CONJUGATE OF X_250
    :align: center
 
-   **X(339) = ISOTOMIC CONJUGATE OF X(250)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_339** (*ISOTOMIC CONJUGATE OF X_250*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{3, 76} <{ 3, 76 }>`, :g:`{115, 127} <{ 115, 127 }>`
+   * **Related Centers:** :g:`X_250 <X_250>` (:ref:`ISOGONAL CONJUGATE OF X(125) <X_250>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_76 <X_76>` (:ref:`3rd BROCARD POINT <X_76>`), :g:`X_115 <X_115>` (:ref:`CENTER OF KIEPERT HYPERBOLA <X_115>`), :g:`X_127 <X_127>` (:ref:`-OF-MEDIAL-TRIANGLE <X_127>`)
 
 .. signature:: center
 
@@ -33,22 +42,22 @@ X(339) = ISOTOMIC CONJUGATE OF X(250)
 
 .. container:: note-item
 
-   :ref:`X(339) <X(339)>` lies on the MacBeath inconic.
+   :ref:`X_339 <X_339>` lies on the MacBeath inconic.
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines
    :class: line-catalog
 
-   {:ref:`3 <X(3)>`, :ref:`76 <X(76)>`}, {:ref:`69 <X(69)>`, :ref:`265 <X(265)>`}, {:ref:`115 <X(115)>`, :ref:`127 <X(127)>`}, {:ref:`264 <X(264)>`, :ref:`381 <X(381)>`}
+   {:ref:`3 <X_3>`, :ref:`76 <X_76>`}, {:ref:`69 <X_69>`, :ref:`265 <X_265>`}, {:ref:`115 <X_115>`, :ref:`127 <X_127>`}, {:ref:`264 <X_264>`, :ref:`381 <X_381>`}
 
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X(339) <X(339)>` = isotomic conjugate of :ref:`X(250) <X(250)>`
-   * :ref:`X(339) <X(339)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`76 <X(76)>`, :ref:`525 <X(525)>`), (:ref:`305 <X(305)>`, 3267)
-   * :ref:`X(339) <X(339)>` = :ref:`X(125) <X(125)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(338) <X(338)>`
-   * :ref:`X(339) <X(339)>` = :ref:`X(25) <X(25)>`-:term:`isoconjugate <isoconjugate>` of X(1101)
-   * :ref:`X(339) <X(339)>` = :term:`crosspoint <crosspoint>` of :ref:`X(305) <X(305)>` and X(3267)
+   * :ref:`X_339 <X_339>` = isotomic conjugate of :ref:`X_250 <X_250>`
+   * :ref:`X_339 <X_339>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`76 <X_76>`, :ref:`525 <X_525>`), (:ref:`305 <X_305>`, 3267)
+   * :ref:`X_339 <X_339>` = :ref:`X_125 <X_125>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_338 <X_338>`
+   * :ref:`X_339 <X_339>` = :ref:`X_25 <X_25>`-:term:`isoconjugate <isoconjugate>` of X_1101
+   * :ref:`X_339 <X_339>` = :term:`crosspoint <crosspoint>` of :ref:`X_305 <X_305>` and X_3267
 
 .. toctree::
    :hidden:

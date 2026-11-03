@@ -1,18 +1,17 @@
-:canonical_id: X(462)
+:canonical_id: X_462
 :type: code
+:subtitle: EULER LINE INTERCEPT OF LINE X_51X_397
 
-X(462) = EULER LINE INTERCEPT OF LINE X(51)X(397) — Code
-========================================================
+X_462
+=====
 
-.. enunciation::
-
-   As a point on the Euler line, :ref:`X(462) <X(462)>` has Shinagawa coefficients :math:`(3^{1/2}F, -3^{1/2}(E + F) + 2S)`.
+.. rubric:: EULER LINE INTERCEPT OF LINE X_51X_397
 
 .. figure:: x-00462.svg
-   :alt: X(462) = EULER LINE INTERCEPT OF LINE X(51)X(397)
+   :alt: X_462 — EULER LINE INTERCEPT OF LINE X_51X_397
    :align: center
 
-   **X(462) = EULER LINE INTERCEPT OF LINE X(51)X(397)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_462** (*EULER LINE INTERCEPT OF LINE X_51X_397*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

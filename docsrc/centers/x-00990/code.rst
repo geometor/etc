@@ -1,18 +1,21 @@
-:canonical_id: X(990)
+:canonical_id: X_990
 :type: code
+:subtitle: INTERSECTION OF LINES X_1X_7 AND X_3X_37
 
-X(990) = INTERSECTION OF LINES X(1)X(7) AND X(3)X(37) — Code
-============================================================
+X_990
+=====
+
+.. rubric:: INTERSECTION OF LINES X_1X_7 AND X_3X_37
 
 .. enunciation::
 
-   :ref:`X(990) <X(990)>` = :term:`complement <complement>`, wrt hexyl triangle, of X(12717)
+   :ref:`X_990 <X_990>` = :term:`complement <complement>`, wrt :term:`hexyl triangle <hexyl-triangle>`, of X_12717
 
 .. figure:: x-00990.svg
-   :alt: X(990) = INTERSECTION OF LINES X(1)X(7) AND X(3)X(37)
+   :alt: X_990 — INTERSECTION OF LINES X_1X_7 AND X_3X_37
    :align: center
 
-   **X(990) = INTERSECTION OF LINES X(1)X(7) AND X(3)X(37)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_990** (*INTERSECTION OF LINES X_1X_7 AND X_3X_37*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

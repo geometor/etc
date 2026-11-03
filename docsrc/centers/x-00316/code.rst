@@ -1,18 +1,21 @@
-:canonical_id: X(316)
+:canonical_id: X_316
 :type: code
+:subtitle: DROUSSENT PIVOT
 
-X(316) = DROUSSENT PIVOT — Code
-===============================
+X_316
+=====
+
+.. rubric:: DROUSSENT PIVOT
 
 .. enunciation::
 
-   Let :g:`A'B'C' << A' B' C' >>` be the :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(4) <X(4)>` (the :term:`anticomplementary triangle <anticomplementary-triangle>`). The circumcircles of :g:`AA' <[ A A' ]>`:ref:`X(4) <X(4)>`, :g:`BB' <[ B B' ]>`:ref:`X(4) <X(4)>`, :g:`CC' <[ C C' ]>`:ref:`X(4) <X(4)>` concur, other than :ref:`X(4) <X(4)>`, in :ref:`X(316) <X(316)>`. (:person:`Randy Hutson <randy-hutson>`, June 27, 2018)
+   :ref:`X_316 <X_316>` = :term:`anticomplement <anticomplement>` of :ref:`X_187 <X_187>`
 
 .. figure:: x-00316.svg
-   :alt: X(316) = DROUSSENT PIVOT
+   :alt: X_316 — DROUSSENT PIVOT
    :align: center
 
-   **X(316) = DROUSSENT PIVOT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_316** (*DROUSSENT PIVOT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

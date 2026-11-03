@@ -1,18 +1,21 @@
-:canonical_id: X(406)
+:canonical_id: X_406
 :type: code
+:subtitle: EULER LINE INTERCEPT OF LINE X_10X_33
 
-X(406) = EULER LINE INTERCEPT OF LINE X(10)X(33) — Code
-=======================================================
+X_406
+=====
+
+.. rubric:: EULER LINE INTERCEPT OF LINE X_10X_33
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(406) <X(406)>` has Shinagawa coefficients :math:`(\$a\$F, abc)`.
+   :ref:`X_406 <X_406>` = :term:`anticomplement <anticomplement>` of X_34120
 
 .. figure:: x-00406.svg
-   :alt: X(406) = EULER LINE INTERCEPT OF LINE X(10)X(33)
+   :alt: X_406 — EULER LINE INTERCEPT OF LINE X_10X_33
    :align: center
 
-   **X(406) = EULER LINE INTERCEPT OF LINE X(10)X(33)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_406** (*EULER LINE INTERCEPT OF LINE X_10X_33*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,22 +1,31 @@
 :order: 830
 :type: center
-:canonical_id: X(830)
-:dependencies: X(6), X(30), X(38), X(511), X(661), X(831), X(1580)
+:canonical_id: X_830
+:subtitle: ODD (1, 3) INFINITY POINT
+:dependencies: X_6, X_30, X_38, X_511, X_661, X_831, X_1580
 
-.. _X(830):
+.. _X_830:
 
-X(830) = ODD (1, 3) INFINITY POINT
-==================================
+X_830
+=====
+
+.. rubric:: ODD (1, 3) INFINITY POINT
 
 .. enunciation::
 
-   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X(830) <X(830)>` lies on the line at infinity.
+   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X_830 <X_830>` lies on the line at infinity.
 
 .. figure:: x-00830.svg
-   :alt: X(830) = ODD (1, 3) INFINITY POINT
+   :alt: X_830 — ODD (1, 3) INFINITY POINT
    :align: center
 
-   **X(830) = ODD (1, 3) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_830** (*ODD (1, 3) INFINITY POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{30, 511} <{ 30, 511 }>`
+   * **Related Centers:** :g:`X_831 <X_831>` (:ref:`o-(1, 3) CIRCUMCIRCLE POINT <X_831>`), :g:`X_30 <X_30>` (:ref:`EULER INFINITY POINT <X_30>`), :g:`X_511 <X_511>` (:ref:`ISOGONAL CONJUGATE OF X(98) <X_511>`)
 
 .. signature:: center
 
@@ -27,13 +36,13 @@ X(830) = ODD (1, 3) INFINITY POINT
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}, {:ref:`661 <X(661)>`, 1580}
+   {:ref:`30 <X_30>`, :ref:`511 <X_511>`}, {:ref:`661 <X_661>`, 1580}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(830) <X(830)>` = isogonal conjugate of :ref:`X(831) <X(831)>`
-   * :ref:`X(830) <X(830)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(6) <X(6)>`\ \ :ref:`X(38) <X(38)>`
+   * :ref:`X_830 <X_830>` = isogonal conjugate of :ref:`X_831 <X_831>`
+   * :ref:`X_830 <X_830>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_6 <X_6>`\ \ :ref:`X_38 <X_38>`
 
 .. toctree::
    :hidden:

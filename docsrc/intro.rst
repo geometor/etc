@@ -1,4 +1,4 @@
-**Digital reconstruction, semantic index, and composable geometric modeling of Clark Kimberling's *Encyclopedia of Triangle Centers* (`X(1)`–`X(53144)`).**
+**Digital reconstruction, semantic index, and composable geometric modeling of Clark Kimberling's *Encyclopedia of Triangle Centers* (X_1–X_53144).**
 
 ``geometor.etc`` transforms the archival HTML volumes of Clark Kimberling's *Encyclopedia of Triangle Centers* and its supporting *Glossary* into structured registries, executable ``geometor.model`` construction scripts, interactive multi-triangle SVG diagrams, and a 2-track **Book Codex** edition powered by ``photon-platform/publish``.
 

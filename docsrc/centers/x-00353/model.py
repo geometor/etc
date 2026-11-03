@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(353) = INVERSE-IN-BROCARD-CIRCLE OF X(111)."""
+"""GEOMETOR construction model for X_353 = INVERSE-IN-BROCARD-CIRCLE OF X_111."""
 
 from __future__ import annotations
 
@@ -24,16 +24,16 @@ from geometor.etc.render import write_center_svg
 def construct_x_00353(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(353) = INVERSE-IN-BROCARD-CIRCLE OF X(111) on reference triangle ABC."""
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
-    X_23 = eval_trilinear_point(model, A, B, C, 'a*(b**(4) + c**(4) - a**(4) - b**(2)*c**(2))', ID="X(23)", classes=["center"])
-    X_111 = eval_trilinear_point(model, A, B, C, 'a/(2*a**(2) - b**(2) - c**(2))', ID="X(111)", classes=["center"])
-    X_182 = eval_trilinear_point(model, A, B, C, 'cos(A- omega )', ID="X(182)", classes=["center"])
+    """Construct X_353 = INVERSE-IN-BROCARD-CIRCLE OF X_111 on reference triangle ABC."""
+    X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center"])
+    X_23 = eval_trilinear_point(model, A, B, C, 'a*(b**(4) + c**(4) - a**(4) - b**(2)*c**(2))', ID="X_23", classes=["center"])
+    X_111 = eval_trilinear_point(model, A, B, C, 'a/(2*a**(2) - b**(2) - c**(2))', ID="X_111", classes=["center"])
+    X_182 = eval_trilinear_point(model, A, B, C, 'cos(A- omega )', ID="X_182", classes=["center"])
     central_line(model, X_6, X_23, 6, 23)
     central_line(model, X_111, X_182, 111, 182)
-    X_353 = intersect_lines(model, X_6, X_23, X_111, X_182, ID="X(353)", classes=["selected", "target"])
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
-    X_352 = point_from_barycentrics(model, A, B, C, -2.5765986, 0.16705151, 3.4095471, ID="X(352)", classes=["center", "incident"])
+    X_353 = intersect_lines(model, X_6, X_23, X_111, X_182, ID="X_353", classes=["selected", "target"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
+    X_352 = point_from_barycentrics(model, A, B, C, -2.5765986, 0.16705151, 3.4095471, ID="X_352", classes=["center", "incident"])
     central_line(model, X_3, X_352, 3, 352, incident=True)
     return promote_point_to_top(model, X_353)
 
@@ -42,8 +42,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(353) on the given reference triangle."""
-    model = create_model('X(353) = INVERSE-IN-BROCARD-CIRCLE OF X(111)')
+    """Build a `geometor.model.Model` for X_353 on the given reference triangle."""
+    model = create_model('X_353 = INVERSE-IN-BROCARD-CIRCLE OF X_111')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00353(model, A, B, C)
     return model

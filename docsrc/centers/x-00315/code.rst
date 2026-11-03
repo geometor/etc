@@ -1,18 +1,21 @@
-:canonical_id: X(315)
+:canonical_id: X_315
 :type: code
+:subtitle: ISOTOMIC CONJUGATE OF X_66
 
-X(315) = ISOTOMIC CONJUGATE OF X(66) — Code
-===========================================
+X_315
+=====
+
+.. rubric:: ISOTOMIC CONJUGATE OF X_66
 
 .. enunciation::
 
-   :ref:`X(315) <X(315)>` = midpoint of :ref:`X(637) <X(637)>` and :ref:`X(638) <X(638)>`
+   :ref:`X_315 <X_315>` is the :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_66 <X_66>`.
 
 .. figure:: x-00315.svg
-   :alt: X(315) = ISOTOMIC CONJUGATE OF X(66)
+   :alt: X_315 — ISOTOMIC CONJUGATE OF X_66
    :align: center
 
-   **X(315) = ISOTOMIC CONJUGATE OF X(66)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_315** (*ISOTOMIC CONJUGATE OF X_66*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

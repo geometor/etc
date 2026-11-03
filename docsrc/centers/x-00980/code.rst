@@ -1,18 +1,21 @@
-:canonical_id: X(980)
+:canonical_id: X_980
 :type: code
+:subtitle: INTERSECTION OF LINES X_1X_3 AND X_2X_39
 
-X(980) = INTERSECTION OF LINES X(1)X(3) AND X(2)X(39) — Code
-============================================================
+X_980
+=====
+
+.. rubric:: INTERSECTION OF LINES X_1X_3 AND X_2X_39
 
 .. enunciation::
 
-   :ref:`X(980) <X(980)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(981) <X(981)>`
+   :ref:`X_980 <X_980>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_650 <X_650>`\ \ :ref:`X_669 <X_669>`
 
 .. figure:: x-00980.svg
-   :alt: X(980) = INTERSECTION OF LINES X(1)X(3) AND X(2)X(39)
+   :alt: X_980 — INTERSECTION OF LINES X_1X_3 AND X_2X_39
    :align: center
 
-   **X(980) = INTERSECTION OF LINES X(1)X(3) AND X(2)X(39)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_980** (*INTERSECTION OF LINES X_1X_3 AND X_2X_39*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

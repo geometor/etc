@@ -1,18 +1,21 @@
-:canonical_id: X(345)
+:canonical_id: X_345
 :type: code
+:subtitle: ISOTOMIC CONJUGATE OF X_278
 
-X(345) = ISOTOMIC CONJUGATE OF X(278) — Code
-============================================
+X_345
+=====
+
+.. rubric:: ISOTOMIC CONJUGATE OF X_278
 
 .. enunciation::
 
-   Let :g:`A_{35}B_{35}C_{35} << A_35 B_35 C_35 >>` be Gemini triangle 35. Let :g:`A' <A'>` be the perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B_{35} <B_35>`,\ :g:`C_{35} <C_35>`}}, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(345) <X(345)>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
+   :ref:`X_345 <X_345>` is the :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_278 <X_278>`.
 
 .. figure:: x-00345.svg
-   :alt: X(345) = ISOTOMIC CONJUGATE OF X(278)
+   :alt: X_345 — ISOTOMIC CONJUGATE OF X_278
    :align: center
 
-   **X(345) = ISOTOMIC CONJUGATE OF X(278)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_345** (*ISOTOMIC CONJUGATE OF X_278*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

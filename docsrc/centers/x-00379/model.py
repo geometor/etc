@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(379) = EULER LINE INTERCEPT OF LINE X(6)X(7)."""
+"""GEOMETOR construction model for X_379 = EULER LINE INTERCEPT OF LINE X_6X_7."""
 
 from __future__ import annotations
 
@@ -25,16 +25,16 @@ from geometor.etc.render import write_center_svg
 def construct_x_00379(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(379) = EULER LINE INTERCEPT OF LINE X(6)X(7) on reference triangle ABC."""
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
-    X_7 = gergonne_point_of(model, A, B, C, ID="X(7)", classes=["center"])
+    """Construct X_379 = EULER LINE INTERCEPT OF LINE X_6X_7 on reference triangle ABC."""
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center"])
+    X_7 = gergonne_point_of(model, A, B, C, ID="X_7", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
     central_line(model, X_6, X_7, 6, 7)
-    X_379 = intersect_lines(model, X_2, X_3, X_6, X_7, ID="X(379)", classes=["selected", "target"])
-    X_63 = eval_trilinear_point(model, A, B, C, 'cot(A)', ID="X(63)", classes=["center", "incident"])
-    X_169 = eval_trilinear_point(model, A, B, C, '- (sin(A))*(cos(A/2))**(2) + (sin(B))*(cos(B/2))**(2) + (sin(C))*(cos(C/2))**(2)', ID="X(169)", classes=["center", "incident"])
+    X_379 = intersect_lines(model, X_2, X_3, X_6, X_7, ID="X_379", classes=["selected", "target"])
+    X_63 = eval_trilinear_point(model, A, B, C, 'cot(A)', ID="X_63", classes=["center", "incident"])
+    X_169 = eval_trilinear_point(model, A, B, C, '- (sin(A))*(cos(A/2))**(2) + (sin(B))*(cos(B/2))**(2) + (sin(C))*(cos(C/2))**(2)', ID="X_169", classes=["center", "incident"])
     central_line(model, X_63, X_169, 63, 169, incident=True)
     return promote_point_to_top(model, X_379)
 
@@ -43,8 +43,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(379) on the given reference triangle."""
-    model = create_model('X(379) = EULER LINE INTERCEPT OF LINE X(6)X(7)')
+    """Build a `geometor.model.Model` for X_379 on the given reference triangle."""
+    model = create_model('X_379 = EULER LINE INTERCEPT OF LINE X_6X_7')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00379(model, A, B, C)
     return model

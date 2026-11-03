@@ -1,23 +1,32 @@
 :order: 258
 :type: center
-:canonical_id: X(258)
-:dependencies: X(1), X(33), X(57), X(164), X(173), X(259), X(289), X(363), X(366), X(8078)
+:canonical_id: X_258
+:subtitle: CONGRUENT INCIRCLES ISOSCELIZER POINT
+:dependencies: X_1, X_33, X_57, X_164, X_173, X_259, X_289, X_363, X_366, X_8078
 
-.. _X(258):
+.. _X_258:
 .. _CongruentIncirclesIsoscelizerPoint:
 
-X(258) = CONGRUENT INCIRCLES ISOSCELIZER POINT
-==============================================
+X_258
+=====
+
+.. rubric:: CONGRUENT INCIRCLES ISOSCELIZER POINT
 
 .. enunciation::
 
-   In Yff's :term:`isoscelizer <isoscelizer>` configuration, if :g:`X <X>` = :ref:`X(258) <X(258)>`, then the isosceles triangles :g:`T_{A} <T_A>`, :g:`T_{B} <T_B>`, :g:`T_{C} <T_C>` have congruent incircles.
+   In Yff's :term:`isoscelizer <isoscelizer>` configuration, if :g:`X <X>` = :ref:`X_258 <X_258>`, then the isosceles triangles :g:`T_{A} <T_A>`, :g:`T_{B} <T_B>`, :g:`T_{C} <T_C>` have congruent incircles.
 
 .. figure:: x-00258.svg
-   :alt: X(258) = CONGRUENT INCIRCLES ISOSCELIZER POINT
+   :alt: X_258 — CONGRUENT INCIRCLES ISOSCELIZER POINT
    :align: center
 
-   **X(258) = CONGRUENT INCIRCLES ISOSCELIZER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_258** (*CONGRUENT INCIRCLES ISOSCELIZER POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 164} <{ 1, 164 }>`, :g:`{57, 173} <{ 57, 173 }>`
+   * **Related Centers:** :g:`X_259 <X_259>` (:ref:`ISOGONAL CONJUGATE OF X(174) <X_259>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_164 <X_164>` (:ref:`INCENTER OF EXCENTRAL TRIANGLE <X_164>`), :g:`X_57 <X_57>` (:ref:`ISOGONAL CONJUGATE OF X(9) <X_57>`), :g:`X_173 <X_173>` (:ref:`CONGRUENT ISOSCELIZERS POINT <X_173>`)
 
 .. signature:: center
 
@@ -39,20 +48,20 @@ X(258) = CONGRUENT INCIRCLES ISOSCELIZER POINT
    :badge: 3 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`164 <X(164)>`}, {:ref:`57 <X(57)>`, :ref:`173 <X(173)>`}, {:ref:`259 <X(259)>`, :ref:`289 <X(289)>`}
+   {:ref:`1 <X_1>`, :ref:`164 <X_164>`}, {:ref:`57 <X_57>`, :ref:`173 <X_173>`}, {:ref:`259 <X_259>`, :ref:`289 <X_289>`}
 
 .. collapse:: Functional Relations
    :badge: 9 relations
 
-   * :ref:`X(258) <X(258)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(173) <X(173)>`
-   * :ref:`X(258) <X(258)>` = :ref:`X(259) <X(259)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(1) <X(1)>`
-   * :ref:`X(258) <X(258)>` = :ref:`X(366) <X(366)>`-:term:`aleph conjugate <aleph-conjugate>` of :ref:`X(363) <X(363)>`
-   * :ref:`X(258) <X(258)>` = SS(a→a') of :ref:`X(57) <X(57)>`, where :g:`A'B'C' << A' B' C' >>` is the excentral triangle (trilinear substitution)
-   * :ref:`X(258) <X(258)>` = :ref:`X(33) <X(33)>`-of-excentral-triangle
-   * :ref:`X(258) <X(258)>` = homothetic center of :g:`ABC << A B C >>` and intangents triangle of excentral triangle
-   * :ref:`X(258) <X(258)>` = insimilicenter of incircle and incircle of excentral triangle
-   * :ref:`X(258) <X(258)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(164) <X(164)>`}-harmonic conjugate of X(8078)
-   * :ref:`X(258) <X(258)>` = perspector of :g:`ABC << A B C >>` and the :term:`extouch triangle <extouch-triangle>` of the :term:`intouch triangle <intouch-triangle>`
+   * :ref:`X_258 <X_258>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_173 <X_173>`
+   * :ref:`X_258 <X_258>` = :ref:`X_259 <X_259>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_1 <X_1>`
+   * :ref:`X_258 <X_258>` = :ref:`X_366 <X_366>`-:term:`aleph conjugate <aleph-conjugate>` of :ref:`X_363 <X_363>`
+   * :ref:`X_258 <X_258>` = SS(a→a') of :ref:`X_57 <X_57>`, where :g:`A'B'C' << A' B' C' >>` is the excentral triangle (trilinear substitution)
+   * :ref:`X_258 <X_258>` = :ref:`X_33 <X_33>`-of-excentral-triangle
+   * :ref:`X_258 <X_258>` = homothetic center of :g:`ABC << A B C >>` and :term:`intangents triangle <intangents-triangle>` of excentral triangle
+   * :ref:`X_258 <X_258>` = insimilicenter of incircle and incircle of excentral triangle
+   * :ref:`X_258 <X_258>` = {:ref:`X_1 <X_1>`,\ :ref:`X_164 <X_164>`}-harmonic conjugate of X_8078
+   * :ref:`X_258 <X_258>` = perspector of :g:`ABC << A B C >>` and the :term:`extouch triangle <extouch-triangle>` of the :term:`intouch triangle <intouch-triangle>`
 
 .. toctree::
    :hidden:

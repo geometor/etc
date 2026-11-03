@@ -1,29 +1,38 @@
 :order: 191
 :type: center
-:canonical_id: X(191)
-:dependencies: X(1), X(2), X(3), X(6), X(8), X(9), X(10), X(20), X(21), X(30), X(35), X(36), X(37), X(40), X(46), X(54), X(58), X(72), X(79), X(109), X(165), X(188), X(190), X(201), X(267), X(329), X(366), X(442), X(498), X(501), X(502), X(643), X(661), X(960), X(1045), X(1079), X(1089), X(2605), X(5426), X(5506), X(11263), X(14450)
+:canonical_id: X_191
+:subtitle: X_10-CEVA CONJUGATE OF X_1
+:dependencies: X_1, X_2, X_3, X_6, X_8, X_9, X_10, X_20, X_21, X_30, X_35, X_36, X_37, X_40, X_46, X_54, X_58, X_72, X_79, X_109, X_165, X_188, X_190, X_201, X_267, X_329, X_366, X_442, X_498, X_501, X_502, X_643, X_661, X_960, X_1045, X_1079, X_1089, X_2605, X_5426, X_5506, X_11263, X_14450
 
-.. _X(191):
+.. _X_191:
 
-X(191) = X(10)-CEVA CONJUGATE OF X(1)
-=====================================
+X_191
+=====
+
+.. rubric:: X_10-CEVA CONJUGATE OF X_1
 
 .. enunciation::
 
-   Let :g:`I_{a} <I_a>` be the reflection of :ref:`X(1) <X(1)>` in the perpendicular bisector of :g:`BC <[ B C ]>`, and define :g:`I_{b} <I_b>` and :g:`I_{c} <I_c>` cyclically. :ref:`X(191) <X(191)>` = :ref:`X(21) <X(21)>` of :g:`I_{a}I_{b}I_{c} << I_a I_b I_c >>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
+   :ref:`X_191 <X_191>` = :ref:`X_10 <X_10>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_1 <X_1>`
 
 .. _preamble-0005:
 
 .. admonition:: Group Preamble — Centers X(191)-X(236)
    :class: note
 
-   Centers :ref:`X(191) <X(191)>`-:ref:`X(236) <X(236)>` are :term:`Ceva conjugates <ceva-conjugate>`. (The P-Ceva conjugate of :g:`Q <Q>` is the perspector of the :term:`cevian triangle <cevian-triangle>` of :g:`P <P>` and the :term:`anticevian triangle <anticevian-triangle>` of :g:`Q <Q>`.)
+   Centers :ref:`X_191 <X_191>`-:ref:`X_236 <X_236>` are Ceva conjugates. (The P-Ceva conjugate of :g:`Q <Q>` is the perspector of the :term:`cevian triangle <cevian-triangle>` of :g:`P <P>` and the :term:`anticevian triangle <anticevian-triangle>` of :g:`Q <Q>`.)
 
 .. figure:: x-00191.svg
-   :alt: X(191) = X(10)-CEVA CONJUGATE OF X(1)
+   :alt: X_191 — X_10-CEVA CONJUGATE OF X_1
    :align: center
 
-   **X(191) = X(10)-CEVA CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_191** (*X_10-CEVA CONJUGATE OF X_1*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 21} <{ 1, 21 }>`, :g:`{9, 46} <{ 9, 46 }>`
+   * **Related Centers:** :g:`X_267 <X_267>` (:ref:`ISOGONAL CONJUGATE OF X(191) <X_267>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_21 <X_21>` (:ref:`SCHIFFLER POINT <X_21>`), :g:`X_9 <X_9>` (:ref:`MITTENPUNKT <X_9>`), :g:`X_46 <X_46>` (:ref:`-CEVA CONJUGATE OF X(1) <X_46>`)
 
 .. signature:: center
 
@@ -38,39 +47,43 @@ X(191) = X(10)-CEVA CONJUGATE OF X(1)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(191) <X(191)>` = :ref:`X(1) <X(1)>` - :math:`2` :ref:`X(21) <X(21)>`
+   * :ref:`X_191 <X_191>` = :ref:`X_1 <X_1>` - :math:`2` :ref:`X_21 <X_21>`
 
 .. collapse:: Incident Central Lines
    :badge: 10 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`21 <X(21)>`}, {:ref:`9 <X(9)>`, :ref:`46 <X(46)>`}, {:ref:`10 <X(10)>`, :ref:`267 <X(267)>`}, {:ref:`30 <X(30)>`, :ref:`40 <X(40)>`}, {:ref:`35 <X(35)>`, :ref:`72 <X(72)>`}, {:ref:`36 <X(36)>`, :ref:`960 <X(960)>`}, {:ref:`109 <X(109)>`, :ref:`201 <X(201)>`}, {:ref:`165 <X(165)>`, 1079}, {:ref:`190 <X(190)>`, 1089}, {:ref:`329 <X(329)>`, :ref:`498 <X(498)>`}
+   {:ref:`1 <X_1>`, :ref:`21 <X_21>`}, {:ref:`9 <X_9>`, :ref:`46 <X_46>`}, {:ref:`10 <X_10>`, :ref:`267 <X_267>`}, {:ref:`30 <X_30>`, :ref:`40 <X_40>`}, {:ref:`35 <X_35>`, :ref:`72 <X_72>`}, {:ref:`36 <X_36>`, :ref:`960 <X_960>`}, {:ref:`109 <X_109>`, :ref:`201 <X_201>`}, {:ref:`165 <X_165>`, 1079}, {:ref:`190 <X_190>`, 1089}, {:ref:`329 <X_329>`, :ref:`498 <X_498>`}
 
 .. collapse:: Functional Relations
    :badge: 15 relations
 
-   * :ref:`X(191) <X(191)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`21 <X(21)>`), (:ref:`79 <X(79)>`, :ref:`442 <X(442)>`)
-   * :ref:`X(191) <X(191)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(267) <X(267)>`
-   * :ref:`X(191) <X(191)>` = :ref:`X(10) <X(10)>`-Ceva conjugate of :ref:`X(1) <X(1)>`
-   * :ref:`X(191) <X(191)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`10 <X(10)>`, :ref:`502 <X(502)>`)
-   * :ref:`X(191) <X(191)>` = :term:`crosssum <crosssum>` of :ref:`X(58) <X(58)>` and :ref:`X(501) <X(501)>`
-   * :ref:`X(191) <X(191)>` = excentral-isogonal conjugate of :ref:`X(3) <X(3)>`
-   * :ref:`X(191) <X(191)>` = X(i)-:term:`aleph conjugate <aleph-conjugate>` of X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`2 <X(2)>`), (:ref:`8 <X(8)>`, :ref:`20 <X(20)>`), (:ref:`10 <X(10)>`, :ref:`191 <X(191)>`), (:ref:`37 <X(37)>`, 1045), (:ref:`188 <X(188)>`, :ref:`3 <X(3)>`), (:ref:`366 <X(366)>`, :ref:`6 <X(6)>`)
-   * :ref:`X(191) <X(191)>` = :ref:`X(643) <X(643)>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X(191) <X(191)>`
-   * :ref:`X(191) <X(191)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(661) <X(661)>`\ X(2605)
-   * :ref:`X(191) <X(191)>` = :ref:`X(54) <X(54)>`-of-excentral-triangle
-   * :ref:`X(191) <X(191)>` = perspector of :term:`excentral triangle <excentral-triangle>` and Fuhrmann triangle
-   * :ref:`X(191) <X(191)>` = intersection of Euler lines of outer and inner Garcia triangles
-   * :ref:`X(191) <X(191)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(21) <X(21)>`}-harmonic conjugate of X(5426)
-   * :ref:`X(191) <X(191)>` = :term:`complement <complement>` of X(14450)
-   * :ref:`X(191) <X(191)>` = :term:`anticomplement <anticomplement>` of X(11263)
+   * :ref:`X_191 <X_191>` = reflection of X_i in X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`21 <X_21>`), (:ref:`79 <X_79>`, :ref:`442 <X_442>`)
+   * :ref:`X_191 <X_191>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_267 <X_267>`
+   * :ref:`X_191 <X_191>` = :ref:`X_10 <X_10>`-Ceva conjugate of :ref:`X_1 <X_1>`
+   * :ref:`X_191 <X_191>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`10 <X_10>`, :ref:`502 <X_502>`)
+   * :ref:`X_191 <X_191>` = :term:`crosssum <crosssum>` of :ref:`X_58 <X_58>` and :ref:`X_501 <X_501>`
+   * :ref:`X_191 <X_191>` = excentral-isogonal conjugate of :ref:`X_3 <X_3>`
+   * :ref:`X_191 <X_191>` = X_i-:term:`aleph conjugate <aleph-conjugate>` of X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`2 <X_2>`), (:ref:`8 <X_8>`, :ref:`20 <X_20>`), (:ref:`10 <X_10>`, :ref:`191 <X_191>`), (:ref:`37 <X_37>`, 1045), (:ref:`188 <X_188>`, :ref:`3 <X_3>`), (:ref:`366 <X_366>`, :ref:`6 <X_6>`)
+   * :ref:`X_191 <X_191>` = :ref:`X_643 <X_643>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X_191 <X_191>`
+   * :ref:`X_191 <X_191>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_661 <X_661>`\ X_2605
+   * :ref:`X_191 <X_191>` = :ref:`X_54 <X_54>`-of-excentral-triangle
+   * :ref:`X_191 <X_191>` = perspector of :term:`excentral triangle <excentral-triangle>` and :term:`Fuhrmann triangle <fuhrmann-triangle>`
+   * :ref:`X_191 <X_191>` = intersection of Euler lines of outer and inner Garcia triangles
+   * :ref:`X_191 <X_191>` = {:ref:`X_1 <X_1>`,\ :ref:`X_21 <X_21>`}-harmonic conjugate of X_5426
+   * :ref:`X_191 <X_191>` = :term:`complement <complement>` of X_14450
+   * :ref:`X_191 <X_191>` = :term:`anticomplement <anticomplement>` of X_11263
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let :g:`I_{a}I_{b}I_{c} << I_a I_b I_c >>` be the excentral triangle. Let :g:`N_{a} <N_a>` be the nine-point center of BCIa, and define :g:`N_{b} <N_b>` and :g:`N_{c} <N_c>` cyclically. The lines :g:`I_{a}N_{a} <[ I_a N_a ]>`, :g:`I_{b}N_{b} <[ I_b N_b ]>`, :g:`I_{c}N_{c} <[ I_c N_c ]>` concur in :ref:`X(191) <X(191)>`; c.f. X(5506). (Randy Hutson, December 2, 2017)
+   Let :g:`I_{a} <I_a>` be the reflection of :ref:`X_1 <X_1>` in the perpendicular bisector of :g:`BC <[ B C ]>`, and define :g:`I_{b} <I_b>` and :g:`I_{c} <I_c>` cyclically. :ref:`X_191 <X_191>` = :ref:`X_21 <X_21>` of :g:`I_{a}I_{b}I_{c} << I_a I_b I_c >>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
+
+.. container:: note-item
+
+   Let :g:`I_{a}I_{b}I_{c} << I_a I_b I_c >>` be the excentral triangle. Let :g:`N_{a} <N_a>` be the nine-point center of BCIa, and define :g:`N_{b} <N_b>` and :g:`N_{c} <N_c>` cyclically. The lines :g:`I_{a}N_{a} <[ I_a N_a ]>`, :g:`I_{b}N_{b} <[ I_b N_b ]>`, :g:`I_{c}N_{c} <[ I_c N_c ]>` concur in :ref:`X_191 <X_191>`; c.f. X_5506. (Randy Hutson, December 2, 2017)
 
 .. toctree::
    :hidden:

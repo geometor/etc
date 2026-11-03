@@ -1,22 +1,31 @@
 :order: 771
 :type: center
-:canonical_id: X(771)
-:dependencies: X(1), X(6), X(770), X(823), X(1092), X(4558)
+:canonical_id: X_771
+:subtitle: ISOGONAL CONJUGATE OF X_770
+:dependencies: X_1, X_6, X_770, X_823, X_1092, X_4558
 
-.. _X(771):
+.. _X_771:
 
-X(771) = ISOGONAL CONJUGATE OF X(770)
-=====================================
+X_771
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_770
 
 .. enunciation::
 
-   :ref:`X(771) <X(771)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(770) <X(770)>`
+   :ref:`X_771 <X_771>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_770 <X_770>`.
 
 .. figure:: x-00771.svg
-   :alt: X(771) = ISOGONAL CONJUGATE OF X(770)
+   :alt: X_771 — ISOGONAL CONJUGATE OF X_770
    :align: center
 
-   **X(771) = ISOGONAL CONJUGATE OF X(770)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_771** (*ISOGONAL CONJUGATE OF X_770*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`)
+   * **Related Centers:** :g:`X_770 <X_770>` (:ref:`POINT ACAMAR <X_770>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`)
 
 .. signature:: center
 
@@ -28,16 +37,16 @@ X(771) = ISOGONAL CONJUGATE OF X(770)
    :badge: 1 line
    :class: line-catalog
 
-   {:ref:`823 <X(823)>`, 4558}
+   {:ref:`823 <X_823>`, 4558}
 
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X(771) <X(771)>` = isogonal conjugate of :ref:`X(770) <X(770)>`
-   * :ref:`X(771) <X(771)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(1) <X(1)>`\ X(1092)
-   * :ref:`X(771) <X(771)>` = :ref:`X(770) <X(770)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(1) <X(1)>`
-   * :ref:`X(771) <X(771)>` = :term:`cevapoint <cevapoint>` of :ref:`X(1) <X(1)>` and :ref:`X(770) <X(770)>`
-   * :ref:`X(771) <X(771)>` = barycentric quotient :ref:`X(6) <X(6)>`/:ref:`X(770) <X(770)>`
+   * :ref:`X_771 <X_771>` = isogonal conjugate of :ref:`X_770 <X_770>`
+   * :ref:`X_771 <X_771>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_1 <X_1>`\ X_1092
+   * :ref:`X_771 <X_771>` = :ref:`X_770 <X_770>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_1 <X_1>`
+   * :ref:`X_771 <X_771>` = :term:`cevapoint <cevapoint>` of :ref:`X_1 <X_1>` and :ref:`X_770 <X_770>`
+   * :ref:`X_771 <X_771>` = barycentric quotient :ref:`X_6 <X_6>`/:ref:`X_770 <X_770>`
 
 .. toctree::
    :hidden:

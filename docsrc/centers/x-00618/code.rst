@@ -1,18 +1,21 @@
-:canonical_id: X(618)
+:canonical_id: X_618
 :type: code
+:subtitle: COMPLEMENT OF X_13
 
-X(618) = COMPLEMENT OF X(13) — Code
-===================================
+X_618
+=====
+
+.. rubric:: COMPLEMENT OF X_13
 
 .. enunciation::
 
-   :ref:`X(618) <X(618)>` = reflection of :ref:`X(619) <X(619)>` in :ref:`X(620) <X(620)>`
+   :ref:`X_618 <X_618>` is the :term:`complement <complement>` of :ref:`X_13 <X_13>`.
 
 .. figure:: x-00618.svg
-   :alt: X(618) = COMPLEMENT OF X(13)
+   :alt: X_618 — COMPLEMENT OF X_13
    :align: center
 
-   **X(618) = COMPLEMENT OF X(13)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_618** (*COMPLEMENT OF X_13*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

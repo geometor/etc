@@ -1,18 +1,21 @@
-:canonical_id: X(403)
+:canonical_id: X_403
 :type: code
+:subtitle: X_36 OF THE ORTHIC TRIANGLE
 
-X(403) = X(36) OF THE ORTHIC TRIANGLE — Code
-============================================
+X_403
+=====
+
+.. rubric:: X_36 OF THE ORTHIC TRIANGLE
 
 .. enunciation::
 
-   :ref:`X(403) <X(403)>` is centroid of the triangle having vertices :ref:`X(4) <X(4)>`, P(4), U(4). (Regarding the bicentric pair P(4) and U(4), see the notes just before X(1908)). (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   :ref:`X_403 <X_403>` = midpoint of :ref:`X_4 <X_4>` and :ref:`X_186 <X_186>`
 
 .. figure:: x-00403.svg
-   :alt: X(403) = X(36) OF THE ORTHIC TRIANGLE
+   :alt: X_403 — X_36 OF THE ORTHIC TRIANGLE
    :align: center
 
-   **X(403) = X(36) OF THE ORTHIC TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_403** (*X_36 OF THE ORTHIC TRIANGLE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

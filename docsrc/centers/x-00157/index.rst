@@ -1,22 +1,31 @@
 :order: 157
 :type: center
-:canonical_id: X(157)
-:dependencies: X(3), X(6), X(22), X(25), X(53), X(66), X(127), X(161), X(183), X(206), X(216), X(248), X(264), X(418), X(520), X(2909), X(22391)
+:canonical_id: X_157
+:subtitle: X_6-OF-TANGENTIAL-TRIANGLE
+:dependencies: X_3, X_6, X_22, X_25, X_53, X_66, X_127, X_161, X_183, X_206, X_216, X_248, X_264, X_418, X_520, X_2909, X_22391
 
-.. _X(157):
+.. _X_157:
 
-X(157) = X(6)-OF-TANGENTIAL-TRIANGLE
-====================================
+X_157
+=====
+
+.. rubric:: X_6-OF-TANGENTIAL-TRIANGLE
 
 .. enunciation::
 
-   :ref:`X(157) <X(157)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :term:`anticomplement <anticomplement>` of X(22391)
+   :ref:`X_157 <X_157>` = :ref:`X_6 <X_6>`-of-tangential-triangle
 
 .. figure:: x-00157.svg
-   :alt: X(157) = X(6)-OF-TANGENTIAL-TRIANGLE
+   :alt: X_157 — X_6-OF-TANGENTIAL-TRIANGLE
    :align: center
 
-   **X(157) = X(6)-OF-TANGENTIAL-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_157** (*X_6-OF-TANGENTIAL-TRIANGLE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{3, 66} <{ 3, 66 }>`, :g:`{25, 53} <{ 25, 53 }>`
+   * **Related Centers:** :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_66 <X_66>` (:ref:`ISOGONAL CONJUGATE OF X(22) <X_66>`), :g:`X_25 <X_25>` (:ref:`HOMOTHETIC CENTER OF ORTHIC AND TANGENTIAL TRIANGLES <X_25>`), :g:`X_53 <X_53>` (:ref:`SYMMEDIAN POINT OF ORTHIC TRIANGLE <X_53>`)
 
 .. signature:: center
 
@@ -33,19 +42,19 @@ X(157) = X(6)-OF-TANGENTIAL-TRIANGLE
    :badge: 6 lines
    :class: line-catalog
 
-   {:ref:`3 <X(3)>`, :ref:`66 <X(66)>`}, {:ref:`6 <X(6)>`, :ref:`248 <X(248)>`}, {:ref:`22 <X(22)>`, :ref:`183 <X(183)>`}, {:ref:`25 <X(25)>`, :ref:`53 <X(53)>`}, {:ref:`161 <X(161)>`, :ref:`418 <X(418)>`}, {:ref:`206 <X(206)>`, :ref:`216 <X(216)>`}
+   {:ref:`3 <X_3>`, :ref:`66 <X_66>`}, {:ref:`6 <X_6>`, :ref:`248 <X_248>`}, {:ref:`22 <X_22>`, :ref:`183 <X_183>`}, {:ref:`25 <X_25>`, :ref:`53 <X_53>`}, {:ref:`161 <X_161>`, :ref:`418 <X_418>`}, {:ref:`206 <X_206>`, :ref:`216 <X_216>`}
 
 .. collapse:: Functional Relations
    :badge: 8 relations
 
-   * :ref:`X(157) <X(157)>` = isogonal conjugate of anticomplement of X(22391)
-   * :ref:`X(157) <X(157)>` = :term:`isotomic conjugate <isotomic-conjugate>` of isogonal conjugate of X(2909)
-   * :ref:`X(157) <X(157)>` = :ref:`X(264) <X(264)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(6) <X(6)>`
-   * :ref:`X(157) <X(157)>` = :term:`crosssum <crosssum>` of :ref:`X(127) <X(127)>` and :ref:`X(520) <X(520)>`
-   * :ref:`X(157) <X(157)>` = :ref:`X(6) <X(6)>`-of-tangential-triangle
-   * :ref:`X(157) <X(157)>` = perspector of circumcircle wrt Schroeter triangle
-   * :ref:`X(157) <X(157)>` = perspector of polar circle wrt :term:`tangential triangle <tangential-triangle>`
-   * :ref:`X(157) <X(157)>` = intouch-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X(6) <X(6)>`
+   * :ref:`X_157 <X_157>` = :term:`isogonal conjugate <isogonal-conjugate>` of :term:`anticomplement <anticomplement>` of X_22391
+   * :ref:`X_157 <X_157>` = :term:`isotomic conjugate <isotomic-conjugate>` of isogonal conjugate of X_2909
+   * :ref:`X_157 <X_157>` = :ref:`X_264 <X_264>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_6 <X_6>`
+   * :ref:`X_157 <X_157>` = :term:`crosssum <crosssum>` of :ref:`X_127 <X_127>` and :ref:`X_520 <X_520>`
+   * :ref:`X_157 <X_157>` = :ref:`X_6 <X_6>`-of-tangential-triangle
+   * :ref:`X_157 <X_157>` = perspector of circumcircle wrt Schroeter triangle
+   * :ref:`X_157 <X_157>` = perspector of polar circle wrt :term:`tangential triangle <tangential-triangle>`
+   * :ref:`X_157 <X_157>` = intouch-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X_6 <X_6>`
 
 .. toctree::
    :hidden:

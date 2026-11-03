@@ -1,22 +1,30 @@
 :order: 721
 :type: center
-:canonical_id: X(721)
-:dependencies: X(720), X(35535)
+:canonical_id: X_721
+:subtitle: EVEN (- 3, 0) CIRCUMCIRCLE POINT
+:dependencies: X_720, X_35535
 
-.. _X(721):
+.. _X_721:
 
-X(721) = EVEN (- 3, 0) CIRCUMCIRCLE POINT
-=========================================
+X_721
+=====
+
+.. rubric:: EVEN (- 3, 0) CIRCUMCIRCLE POINT
 
 .. enunciation::
 
-   :ref:`X(721) <X(721)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(720) <X(720)>`
+   :ref:`X_721 <X_721>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_720 <X_720>`
 
 .. figure:: x-00721.svg
-   :alt: X(721) = EVEN (- 3, 0) CIRCUMCIRCLE POINT
+   :alt: X_721 — EVEN (- 3, 0) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(721) = EVEN (- 3, 0) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_721** (*EVEN (- 3, 0) CIRCUMCIRCLE POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Related Centers:** :g:`X_720 <X_720>` (:ref:`EVEN (- 3, 2) INFINITY POINT <X_720>`)
 
 .. signature:: center
 
@@ -26,13 +34,13 @@ X(721) = EVEN (- 3, 0) CIRCUMCIRCLE POINT
 
 .. container:: note-item
 
-   :ref:`X(721) <X(721)>` lies on the circumcircle.
+   :ref:`X_721 <X_721>` lies on the circumcircle.
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(721) <X(721)>` = isogonal conjugate of :ref:`X(720) <X(720)>`
-   * :ref:`X(721) <X(721)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(35535)
+   * :ref:`X_721 <X_721>` = isogonal conjugate of :ref:`X_720 <X_720>`
+   * :ref:`X_721 <X_721>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_35535
 
 .. toctree::
    :hidden:

@@ -1,18 +1,21 @@
-:canonical_id: X(286)
+:canonical_id: X_286
 :type: code
+:subtitle: X_4-CROSS CONJUGATE OF X_27
 
-X(286) = X(4)-CROSS CONJUGATE OF X(27) — Code
-=============================================
+X_286
+=====
+
+.. rubric:: X_4-CROSS CONJUGATE OF X_27
 
 .. enunciation::
 
-   :ref:`X(286) <X(286)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(228) <X(228)>`
+   :ref:`X_286 <X_286>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_228 <X_228>`
 
 .. figure:: x-00286.svg
-   :alt: X(286) = X(4)-CROSS CONJUGATE OF X(27)
+   :alt: X_286 — X_4-CROSS CONJUGATE OF X_27
    :align: center
 
-   **X(286) = X(4)-CROSS CONJUGATE OF X(27)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_286** (*X_4-CROSS CONJUGATE OF X_27*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

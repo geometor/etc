@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(185) = NAGEL POINT OF THE ORTHIC TRIANGLE."""
+"""GEOMETOR construction model for X_185 = NAGEL POINT OF THE ORTHIC TRIANGLE."""
 
 from __future__ import annotations
 
@@ -24,16 +24,16 @@ from geometor.etc.render import write_center_svg
 def construct_x_00185(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(185) = NAGEL POINT OF THE ORTHIC TRIANGLE on reference triangle ABC."""
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center"])
-    X_185 = crosspoint(model, A, B, C, X_3, X_4, ID="X(185)", classes=["selected", "target"])
-    X_49 = eval_trilinear_point(model, A, B, C, 'cos(3*A)', ID="X(49)", classes=["center", "incident"])
+    """Construct X_185 = NAGEL POINT OF THE ORTHIC TRIANGLE on reference triangle ABC."""
+    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
+    X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center"])
+    X_185 = crosspoint(model, A, B, C, X_3, X_4, ID="X_185", classes=["selected", "target"])
+    X_49 = eval_trilinear_point(model, A, B, C, 'cos(3*A)', ID="X_49", classes=["center", "incident"])
     central_line(model, X_3, X_49, 3, 49, incident=True)
-    X_51 = eval_trilinear_point(model, A, B, C, 'a**(2)*cos(B - C)', ID="X(51)", classes=["center", "incident"])
+    X_51 = eval_trilinear_point(model, A, B, C, 'a**(2)*cos(B - C)', ID="X_51", classes=["center", "incident"])
     central_line(model, X_4, X_51, 4, 51, incident=True)
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
-    X_64 = eval_trilinear_point(model, A, B, C, '1/(cos(A) - cos(B)*cos(C))', ID="X(64)", classes=["center", "incident"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
+    X_64 = eval_trilinear_point(model, A, B, C, '1/(cos(A) - cos(B)*cos(C))', ID="X_64", classes=["center", "incident"])
     central_line(model, X_6, X_64, 6, 64, incident=True)
     return promote_point_to_top(model, X_185)
 
@@ -42,8 +42,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(185) on the given reference triangle."""
-    model = create_model('X(185) = NAGEL POINT OF THE ORTHIC TRIANGLE')
+    """Build a `geometor.model.Model` for X_185 on the given reference triangle."""
+    model = create_model('X_185 = NAGEL POINT OF THE ORTHIC TRIANGLE')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00185(model, A, B, C)
     return model

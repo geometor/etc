@@ -1,18 +1,21 @@
-:canonical_id: X(608)
+:canonical_id: X_608
 :type: code
+:subtitle: ISOGONAL CONJUGATE OF X_345
 
-X(608) = ISOGONAL CONJUGATE OF X(345) — Code
-============================================
+X_608
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_345
 
 .. enunciation::
 
-   :ref:`X(608) <X(608)>` is the :term:`vertex conjugate <vertex-conjugate>` of the foci of the inconic that is the polar conjugate of the :term:`isotomic conjugate <isotomic-conjugate>` of the incircle. (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
+   :ref:`X_608 <X_608>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_345 <X_345>`.
 
 .. figure:: x-00608.svg
-   :alt: X(608) = ISOGONAL CONJUGATE OF X(345)
+   :alt: X_608 — ISOGONAL CONJUGATE OF X_345
    :align: center
 
-   **X(608) = ISOGONAL CONJUGATE OF X(345)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_608** (*ISOGONAL CONJUGATE OF X_345*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

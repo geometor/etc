@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(368) = EQUI-BROCARD CENTER."""
+"""GEOMETOR construction model for X_368 = EQUI-BROCARD CENTER."""
 
 from __future__ import annotations
 
@@ -19,8 +19,8 @@ from geometor.etc.render import write_center_svg
 def construct_x_00368(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(368) = EQUI-BROCARD CENTER on reference triangle ABC."""
-    X_368 = point_from_barycentrics(model, A, B, C, 0.3279321, 0.34259259, 0.32947531, ID="X(368)", classes=["selected", "target"])
+    """Construct X_368 = EQUI-BROCARD CENTER on reference triangle ABC."""
+    X_368 = point_from_barycentrics(model, A, B, C, 0.3279321, 0.34259259, 0.32947531, ID="X_368", classes=["selected", "target"])
     return promote_point_to_top(model, X_368)
 
 
@@ -28,8 +28,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(368) on the given reference triangle."""
-    model = create_model('X(368) = EQUI-BROCARD CENTER')
+    """Build a `geometor.model.Model` for X_368 on the given reference triangle."""
+    model = create_model('X_368 = EQUI-BROCARD CENTER')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00368(model, A, B, C)
     return model

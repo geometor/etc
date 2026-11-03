@@ -1,26 +1,35 @@
 :order: 410
 :type: center
-:canonical_id: X(410)
-:dependencies: X(1), X(2), X(3), X(21), X(29), X(73), X(414), X(823), X(1214), X(1248), X(2654), X(2656), X(2659), X(2660), X(2662), X(31623)
+:canonical_id: X_410
+:subtitle: EULER X_29-1st-SUBSTITUTION POINT
+:dependencies: X_1, X_2, X_3, X_21, X_29, X_73, X_414, X_823, X_1214, X_1248, X_2654, X_2656, X_2659, X_2660, X_2662, X_31623
 
-.. _X(410):
+.. _X_410:
 
-X(410) = EULER X(29)-1st-SUBSTITUTION POINT
-===========================================
+X_410
+=====
+
+.. rubric:: EULER X_29-1st-SUBSTITUTION POINT
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(410) <X(410)>` has Shinagawa coefficients :math:`([S^{6} - (2E - F)FS^{4} + 3\$bc\$FS^{4} - 3\$bcS_{B}S_{C}\$FS^{2}]F, -[S^{4} - 4(E - F)FS^{2} + 3\$bc\$FS^{2}]FS^{2} + \$bcS_{B}S_{C}\$[S^{4} - 2(E - 2F)F S^{2} + abc\$aS_{A}\$F])`.
+   :ref:`X_410 <X_410>` = :term:`crosspoint <crosspoint>` of PU(82)
 
 .. figure:: x-00410.svg
-   :alt: X(410) = EULER X(29)-1st-SUBSTITUTION POINT
+   :alt: X_410 — EULER X_29-1st-SUBSTITUTION POINT
    :align: center
 
-   **X(410) = EULER X(29)-1st-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_410** (*EULER X_29-1st-SUBSTITUTION POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`)
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`)
 
 .. signature:: center
 
-   | **Trilinears:** :math:`u^{2} + vw : v^{2} + wu : w^{2} + uv`, where :math:`u : v : w` = :ref:`X(29) <X(29)>`; e.g., :math:`u = u(A,B,C) = (\sec A)/(\cos B + \cos C)`
+   | **Trilinears:** :math:`u^{2} + vw : v^{2} + wu : w^{2} + uv`, where :math:`u : v : w` = :ref:`X_29 <X_29>`; e.g., :math:`u = u(A,B,C) = (\sec A)/(\cos B + \cos C)`
    | **Barycentrics:** :math:`a(u^{2} + vw) : b(v^{2} + wu) : c(w^{2} + uv)`
    | **Search Value (6, 9, 13):** :math:`4.705865843343`
 
@@ -33,22 +42,29 @@ X(410) = EULER X(29)-1st-SUBSTITUTION POINT
    :badge: 3 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`73 <X(73)>`, 2659}, {:ref:`823 <X(823)>`, 2660}
+   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`73 <X_73>`, 2659}, {:ref:`823 <X_823>`, 2660}
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, 1248}, {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`73 <X(73)>`, 2659}, {:ref:`823 <X(823)>`, 2654}
+   {:ref:`1 <X_1>`, 1248}, {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`73 <X_73>`, 2659}, {:ref:`823 <X_823>`, 2654}
 
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X(410) <X(410)>` = X(2656)-:term:`Ceva conjugate <ceva-conjugate>` of X(2659)
-   * :ref:`X(410) <X(410)>` = barycentric product X(2662)\*X(31623)
-   * :ref:`X(410) <X(410)>` = barycentric quotient X(2662)/X(1214)
-   * :ref:`X(410) <X(410)>` = {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): {:ref:`21 <X(21)>`, :ref:`29 <X(29)>`, :ref:`414 <X(414)>`}
-   * :ref:`X(410) <X(410)>` = :term:`crosspoint <crosspoint>` of PU(82)
+   * :ref:`X_410 <X_410>` = X_2656-:term:`Ceva conjugate <ceva-conjugate>` of X_2659
+   * :ref:`X_410 <X_410>` = barycentric product X_2662\*X_31623
+   * :ref:`X_410 <X_410>` = barycentric quotient X_2662/X_1214
+   * :ref:`X_410 <X_410>` = {X_i,X_j}-harmonic conjugate of X_k for these (i,j,k): {:ref:`21 <X_21>`, :ref:`29 <X_29>`, :ref:`414 <X_414>`}
+   * :ref:`X_410 <X_410>` = crosspoint of PU(82)
+
+Notes
+-----
+
+.. container:: note-item
+
+   As a point on the Euler line, :ref:`X_410 <X_410>` has Shinagawa coefficients :math:`([S^{6} - (2E - F)FS^{4} + 3\$bc\$FS^{4} - 3\$bcS_{B}S_{C}\$FS^{2}]F, -[S^{4} - 4(E - F)FS^{2} + 3\$bc\$FS^{2}]FS^{2} + \$bcS_{B}S_{C}\$[S^{4} - 2(E - 2F)F S^{2} + abc\$aS_{A}\$F])`.
 
 .. toctree::
    :hidden:

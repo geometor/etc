@@ -1,18 +1,21 @@
-:canonical_id: X(649)
+:canonical_id: X_649
 :type: code
+:subtitle: CROSSDIFFERENCE OF X_1 and X_2
 
-X(649) = CROSSDIFFERENCE OF X(1) and X(2) — Code
-================================================
+X_649
+=====
+
+.. rubric:: CROSSDIFFERENCE OF X_1 and X_2
 
 .. enunciation::
 
-   :ref:`X(649) <X(649)>` is the perspector of triangle :g:`ABC << A B C >>` and the :term:`tangential triangle <tangential-triangle>` of the conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`, :ref:`X(1) <X(1)>`, :ref:`X(6) <X(6)>`}}. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   :ref:`X_649 <X_649>` = :term:`crossdifference <crossdifference>` of every pair of points on line {1, 2}
 
 .. figure:: x-00649.svg
-   :alt: X(649) = CROSSDIFFERENCE OF X(1) and X(2)
+   :alt: X_649 — CROSSDIFFERENCE OF X_1 and X_2
    :align: center
 
-   **X(649) = CROSSDIFFERENCE OF X(1) and X(2)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_649** (*CROSSDIFFERENCE OF X_1 and X_2*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

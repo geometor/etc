@@ -1,18 +1,21 @@
-:canonical_id: X(237)
+:canonical_id: X_237
 :type: code
+:subtitle: X_3-LINE CONJUGATE OF X_2
 
-X(237) = X(3)-LINE CONJUGATE OF X(2) — Code
-===========================================
+X_237
+=====
+
+.. rubric:: X_3-LINE CONJUGATE OF X_2
 
 .. enunciation::
 
-   :ref:`X(237) <X(237)>` is the point of intersection of the Euler line and the Lemoine axis (defined as the radical axis of the circumcircle and the Brocard circle).
+   :ref:`X_237 <X_237>` is the point of intersection of the Euler line and the Lemoine axis (defined as the radical axis of the circumcircle and the Brocard circle).
 
 .. figure:: x-00237.svg
-   :alt: X(237) = X(3)-LINE CONJUGATE OF X(2)
+   :alt: X_237 — X_3-LINE CONJUGATE OF X_2
    :align: center
 
-   **X(237) = X(3)-LINE CONJUGATE OF X(2)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_237** (*X_3-LINE CONJUGATE OF X_2*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

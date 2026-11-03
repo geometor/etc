@@ -1,22 +1,31 @@
 :order: 229
 :type: center
-:canonical_id: X(229)
-:dependencies: X(1), X(7), X(21), X(28), X(36), X(58), X(60), X(65), X(81), X(110), X(244), X(267), X(593), X(1104)
+:canonical_id: X_229
+:subtitle: X_7-CEVA CONJUGATE OF X_81
+:dependencies: X_1, X_7, X_21, X_28, X_36, X_58, X_60, X_65, X_81, X_110, X_244, X_267, X_593, X_1104
 
-.. _X(229):
+.. _X_229:
 
-X(229) = X(7)-CEVA CONJUGATE OF X(81)
-=====================================
+X_229
+=====
+
+.. rubric:: X_7-CEVA CONJUGATE OF X_81
 
 .. enunciation::
 
-   :ref:`X(229) <X(229)>` = midpoint of :ref:`X(1) <X(1)>` and :ref:`X(267) <X(267)>`
+   :ref:`X_229 <X_229>` = :ref:`X_7 <X_7>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_81 <X_81>`
 
 .. figure:: x-00229.svg
-   :alt: X(229) = X(7)-CEVA CONJUGATE OF X(81)
+   :alt: X_229 — X_7-CEVA CONJUGATE OF X_81
    :align: center
 
-   **X(229) = X(7)-CEVA CONJUGATE OF X(81)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_229** (*X_7-CEVA CONJUGATE OF X_81*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 267} <{ 1, 267 }>`
+   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_267 <X_267>` (:ref:`ISOGONAL CONJUGATE OF X(191) <X_267>`)
 
 .. signature:: center
 
@@ -28,13 +37,13 @@ X(229) = X(7)-CEVA CONJUGATE OF X(81)
    :badge: 6 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`267 <X(267)>`}, {:ref:`21 <X(21)>`, :ref:`36 <X(36)>`}, {:ref:`28 <X(28)>`, :ref:`60 <X(60)>`}, {:ref:`58 <X(58)>`, :ref:`244 <X(244)>`}, {:ref:`65 <X(65)>`, :ref:`110 <X(110)>`}, {:ref:`593 <X(593)>`, 1104}
+   {:ref:`1 <X_1>`, :ref:`267 <X_267>`}, {:ref:`21 <X_21>`, :ref:`36 <X_36>`}, {:ref:`28 <X_28>`, :ref:`60 <X_60>`}, {:ref:`58 <X_58>`, :ref:`244 <X_244>`}, {:ref:`65 <X_65>`, :ref:`110 <X_110>`}, {:ref:`593 <X_593>`, 1104}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(229) <X(229)>` = midpoint of :ref:`X(1) <X(1)>` and :ref:`X(267) <X(267)>`
-   * :ref:`X(229) <X(229)>` = :ref:`X(7) <X(7)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(81) <X(81)>`
+   * :ref:`X_229 <X_229>` = midpoint of :ref:`X_1 <X_1>` and :ref:`X_267 <X_267>`
+   * :ref:`X_229 <X_229>` = :ref:`X_7 <X_7>`-Ceva conjugate of :ref:`X_81 <X_81>`
 
 .. toctree::
    :hidden:

@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(2) = CENTROID."""
+"""GEOMETOR construction model for X_2 = CENTROID."""
 
 from __future__ import annotations
 
@@ -26,16 +26,16 @@ from geometor.etc.render import write_center_svg
 def construct_x_00002(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(2) = CENTROID on reference triangle ABC."""
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["selected", "target"], draw_medians=True)
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center"])
+    """Construct X_2 = CENTROID on reference triangle ABC."""
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["selected", "target"], draw_medians=True)
+    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
+    X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center"])
     central_line(model, X_3, X_4, 3, 4)
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
-    X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center", "incident"])
+    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
+    X_8 = nagel_point_of(model, A, B, C, ID="X_8", classes=["center", "incident"])
     central_line(model, X_1, X_8, 1, 8, incident=True)
-    X_7 = gergonne_point_of(model, A, B, C, ID="X(7)", classes=["center", "incident"])
-    X_9 = mittenpunkt_of(model, A, B, C, ID="X(9)", classes=["center", "incident"])
+    X_7 = gergonne_point_of(model, A, B, C, ID="X_7", classes=["center", "incident"])
+    X_9 = mittenpunkt_of(model, A, B, C, ID="X_9", classes=["center", "incident"])
     central_line(model, X_7, X_9, 7, 9, incident=True)
     return promote_point_to_top(model, X_2)
 
@@ -44,8 +44,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(2) on the given reference triangle."""
-    model = create_model('X(2) = CENTROID')
+    """Build a `geometor.model.Model` for X_2 on the given reference triangle."""
+    model = create_model('X_2 = CENTROID')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00002(model, A, B, C)
     return model

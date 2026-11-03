@@ -27,6 +27,7 @@ svg.geometor-etc-drawing.is-panning {
 }
 
 svg.geometor-etc-drawing.hide-labels #labels .point-label,
+svg.geometor-etc-drawing.hide-labels #labels .guide-label,
 svg.geometor-etc-drawing.hide-labels #labels .target-label,
 svg.geometor-etc-drawing.hide-labels #labels .given-label {
     display: none;
@@ -188,12 +189,19 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
     font-weight: 600;
     paint-order: stroke;
     stroke: var(--accent-color);
-    stroke-width: 3px;
+    stroke-width: 0.15em;
     stroke-linecap: round;
     stroke-linejoin: round;
-    vector-effect: non-scaling-stroke;
     user-select: none;
     pointer-events: none;
+}
+
+#labels tspan {
+    paint-order: stroke;
+    stroke: var(--accent-color);
+    stroke-width: 0.15em;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 #labels text.target-label {
@@ -203,6 +211,11 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
 
 #labels text.given-label {
     fill: #8f8;
+}
+
+#labels text.guide-label {
+    fill: #ffb74d;
+    font-weight: 600;
 }
 
 #labels text.hover-label {
@@ -330,28 +343,28 @@ figure:hover .etc-svg-toolbar {
     <circle data-id="A" data-name="Vertex A" class="point given vertex" data-category="points" cx="0.000000" cy="-0.000000" r="0.038061"><title>A = Vertex A (0.0000, 0.0000)</title></circle>
     <circle data-id="B" data-name="Vertex B" class="point given vertex" data-category="points" cx="1.000000" cy="-0.000000" r="0.038061"><title>B = Vertex B (1.0000, 0.0000)</title></circle>
     <circle data-id="C" data-name="Vertex C" class="point vertex" data-category="points" cx="0.612245" cy="-0.599875" r="0.038061"><title>C = Vertex C (0.6122, 0.5999)</title></circle>
-    <circle data-id="X(851)" data-name="-HIRST INVERSE OF X(73)" class="point center" data-category="points" cx="1.414873" cy="-2.495827" r="0.038061"><title>X(851) = -HIRST INVERSE OF X(73) (1.4149, 2.4958)</title></circle>
-    <circle data-id="X(859)" data-name="INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(81)" class="point center" data-category="points" cx="1.127854" cy="-1.744842" r="0.038061"><title>X(859) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(81) (1.1279, 1.7448)</title></circle>
-    <circle data-id="X(2)" data-name="CENTROID" class="point center" data-category="points" cx="0.537415" cy="-0.199958" r="0.038061"><title>X(2) = CENTROID (0.5374, 0.2000)</title></circle>
-    <circle data-id="X(3)" data-name="CIRCUMCENTER" class="point center" data-category="points" cx="0.500000" cy="-0.102062" r="0.038061"><title>X(3) = CIRCUMCENTER (0.5000, 0.1021)</title></circle>
-    <circle data-id="X(513)" data-name="ISOGONAL CONJUGATE OF X(100)" class="point center incident" data-category="points" cx="1.052857" cy="0.080613" r="0.038061"><title>X(513) = ISOGONAL CONJUGATE OF X(100) (1.0529, -0.0806)</title></circle>
-    <circle data-id="X(663)" data-name="CROSSDIFFERENCE OF X(2) AND X(7)" class="point center incident" data-category="points" cx="8.666667" cy="3.265986" r="0.038061"><title>X(663) = CROSSDIFFERENCE OF X(2) AND X(7) (8.6667, -3.2660)</title></circle>
-    <circle data-id="X(855)" data-name="INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(57)" class="point selected target" data-category="points" cx="0.840835" cy="-0.993857" r="0.053286"><title>X(855) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(57) (0.8408, 0.9939)</title></circle>
+    <circle data-id="X_851" data-name="-HIRST INVERSE OF X(73)" class="point center" data-category="points" cx="1.414873" cy="-2.495827" r="0.038061"><title>X_851 = -HIRST INVERSE OF X(73) (1.4149, 2.4958)</title></circle>
+    <circle data-id="X_859" data-name="INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(81)" class="point center" data-category="points" cx="1.127854" cy="-1.744842" r="0.038061"><title>X_859 = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(81) (1.1279, 1.7448)</title></circle>
+    <circle data-id="X_2" data-name="CENTROID" class="point center" data-category="points" cx="0.537415" cy="-0.199958" r="0.038061"><title>X_2 = CENTROID (0.5374, 0.2000)</title></circle>
+    <circle data-id="X_3" data-name="CIRCUMCENTER" class="point center" data-category="points" cx="0.500000" cy="-0.102062" r="0.038061"><title>X_3 = CIRCUMCENTER (0.5000, 0.1021)</title></circle>
+    <circle data-id="X_513" data-name="ISOGONAL CONJUGATE OF X(100)" class="point center incident" data-category="points" cx="1.052857" cy="0.080613" r="0.038061"><title>X_513 = ISOGONAL CONJUGATE OF X(100) (1.0529, -0.0806)</title></circle>
+    <circle data-id="X_663" data-name="CROSSDIFFERENCE OF X(2) AND X(7)" class="point center incident" data-category="points" cx="8.666667" cy="3.265986" r="0.038061"><title>X_663 = CROSSDIFFERENCE OF X(2) AND X(7) (8.6667, -3.2660)</title></circle>
+    <circle data-id="X_855" data-name="INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(57)" class="point selected target" data-category="points" cx="0.840835" cy="-0.993857" r="0.053286"><title>X_855 = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(57) (0.8408, 0.9939)</title></circle>
   </g>
   <g id="labels">
     <text class="given-label" data-point-id="A" data-anchor-x="0.000000" data-anchor-y="-0.000000" data-offset-x="-24.0" data-offset-y="22.5" x="-0.121796" y="0.114184" font-size="0.102766">A</text>
     <text class="given-label" data-point-id="B" data-anchor-x="1.000000" data-anchor-y="-0.000000" data-offset-x="12.0" data-offset-y="22.5" x="1.060898" y="0.114184" font-size="0.102766">B</text>
     <text class="point-label" data-point-id="C" data-anchor-x="0.612245" data-anchor-y="-0.599875" data-offset-x="-7.5" data-offset-y="-15.0" x="0.574184" y="-0.675998" font-size="0.102766">C</text>
-    <text class="point-label" data-point-id="X(851)" data-anchor-x="1.414873" data-anchor-y="-2.495827" data-offset-x="12.0" data-offset-y="-10.5" x="1.475771" y="-2.549113" font-size="0.102766">X(851)</text>
-    <text class="point-label" data-point-id="X(859)" data-anchor-x="1.127854" data-anchor-y="-1.744842" data-offset-x="12.0" data-offset-y="-10.5" x="1.188752" y="-1.798128" font-size="0.102766">X(859)</text>
-    <text class="point-label" data-point-id="X(2)" data-anchor-x="0.537415" data-anchor-y="-0.199958" data-offset-x="12.0" data-offset-y="-10.5" x="0.598313" y="-0.253244" font-size="0.102766">X(2)</text>
-    <text class="point-label" data-point-id="X(3)" data-anchor-x="0.500000" data-anchor-y="-0.102062" data-offset-x="12.0" data-offset-y="-10.5" x="0.560898" y="-0.155348" font-size="0.102766">X(3)</text>
-    <text class="point-label incident" data-point-id="X(513)" data-anchor-x="1.052857" data-anchor-y="0.080613" data-offset-x="12.0" data-offset-y="-10.5" x="1.113755" y="0.027327" font-size="0.102766">X(513)</text>
-    <text class="point-label incident" data-point-id="X(663)" data-anchor-x="8.666667" data-anchor-y="3.265986" data-offset-x="12.0" data-offset-y="-10.5" x="8.727565" y="3.212700" font-size="0.102766">X(663)</text>
-    <text class="target-label" data-point-id="X(855)" data-anchor-x="0.840835" data-anchor-y="-0.993857" data-offset-x="12.0" data-offset-y="-10.5" x="0.901733" y="-1.047143" font-size="0.102766">X(855)</text>
+    <text class="point-label" data-point-id="X_851" data-anchor-x="1.414873" data-anchor-y="-2.495827" data-offset-x="12.0" data-offset-y="-10.5" x="1.475771" y="-2.549113" font-size="0.102766">X<tspan dy="0.3em" font-size="75%">851</tspan></text>
+    <text class="point-label" data-point-id="X_859" data-anchor-x="1.127854" data-anchor-y="-1.744842" data-offset-x="12.0" data-offset-y="-10.5" x="1.188752" y="-1.798128" font-size="0.102766">X<tspan dy="0.3em" font-size="75%">859</tspan></text>
+    <text class="point-label" data-point-id="X_2" data-anchor-x="0.537415" data-anchor-y="-0.199958" data-offset-x="12.0" data-offset-y="-10.5" x="0.598313" y="-0.253244" font-size="0.102766">X<tspan dy="0.3em" font-size="75%">2</tspan></text>
+    <text class="point-label" data-point-id="X_3" data-anchor-x="0.500000" data-anchor-y="-0.102062" data-offset-x="12.0" data-offset-y="-10.5" x="0.560898" y="-0.155348" font-size="0.102766">X<tspan dy="0.3em" font-size="75%">3</tspan></text>
+    <text class="point-label incident" data-point-id="X_513" data-anchor-x="1.052857" data-anchor-y="0.080613" data-offset-x="12.0" data-offset-y="-10.5" x="1.113755" y="0.027327" font-size="0.102766">X<tspan dy="0.3em" font-size="75%">513</tspan></text>
+    <text class="point-label incident" data-point-id="X_663" data-anchor-x="8.666667" data-anchor-y="3.265986" data-offset-x="12.0" data-offset-y="-10.5" x="8.727565" y="3.212700" font-size="0.102766">X<tspan dy="0.3em" font-size="75%">663</tspan></text>
+    <text class="target-label" data-point-id="X_855" data-anchor-x="0.840835" data-anchor-y="-0.993857" data-offset-x="12.0" data-offset-y="-10.5" x="0.901733" y="-1.047143" font-size="0.102766">X<tspan dy="0.3em" font-size="75%">855</tspan></text>
     <text class="subtitle-label" x="-1.221006" y="0.183194" font-size="0.087541" fill="#999">(a, b, c) = (5, 6, 7) | AB = 1</text>
   </g>
-  <script type="application/json" class="etc-elements-meta">{"A":{"ID":"A","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex A","subtitle":"Reference triangle vertex at origin (0, 0)","rows":[["x","0.0000"],["y","0.0000"],["bary","1.0000 : 0.0000 : 0.0000"]],"related_points":["A"]},"B":{"ID":"B","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex B","subtitle":"Reference triangle vertex at unit base (1, 0)","rows":[["x","1.0000"],["y","0.0000"],["bary","0.0000 : 1.0000 : 0.0000"]],"related_points":["B"]},"[ A B ]":{"ID":"[ A B ]","type":"line","classes":["given","sideline"],"color":"#aaa","name":"Sideline AB (Base c = 1)","subtitle":"Reference triangle baseline through A and B","rows":[["pts","A (Vertex A), B (Vertex B)"],["len","1.0000"],["eq","0.0000x + 1.0000y + 0.0000 = 0"]],"related_points":["A","B"]},"C":{"ID":"C","type":"point","classes":["vertex"],"color":"#0ff","name":"Vertex C","subtitle":"Reference triangle apex constructed by Euclid I.22","rows":[["x","0.6122"],["y","0.5999"],["bary","-0.0000 : 0.0000 : 1.0000"]],"related_points":["C"]},"[ B C ]":{"ID":"[ B C ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline BC (Side a)","subtitle":"Reference triangle sideline opposite vertex A","rows":[["pts","B (Vertex B), C (Vertex C)"],["len","0.7143"],["eq","0.8398x + 0.5429y - 0.8398 = 0"]],"related_points":["B","C"]},"[ C A ]":{"ID":"[ C A ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline CA (Side b)","subtitle":"Reference triangle sideline opposite vertex B","rows":[["pts","C (Vertex C), A (Vertex A)"],["len","0.8571"],["eq","0.6999x - 0.7143y + 0.0000 = 0"]],"related_points":["C","A"]},"\u003c A B C \u003e":{"ID":"\u003c A B C \u003e","type":"polygon","classes":["reference"],"color":"#58a6ff","name":"Reference Triangle △ABC","subtitle":"Primary reference triangle with unit baseline AB = 1","rows":[["verts","A, B, C"],["sides","0.7143, 0.8571, 1.0000"],["area","0.2999"]],"related_points":["A","B","C"]},"X(851)":{"ID":"X(851)","type":"point","classes":["center"],"color":"#0ff","name":"-HIRST INVERSE OF X(73)","subtitle":"Incident / Reference Triangle Center","rows":[["x","1.4149"],["y","2.4958"],["bary","-2.0282 : -1.1324 : 4.1606"]],"related_points":["X(851)"]},"X(859)":{"ID":"X(859)","type":"point","classes":["center"],"color":"#0ff","name":"INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(81)","subtitle":"Incident / Reference Triangle Center","rows":[["x","1.1279"],["y","1.7448"],["bary","-1.2557 : -0.6530 : 2.9087"]],"related_points":["X(859)"]},"{ 851, 859 }":{"ID":"{ 851, 859 }","type":"line","classes":["central_line"],"color":"#0bd","name":"Euler Line","subtitle":"Collinear line of X(2) Centroid, X(3) Circumcenter, X(4) Orthocenter, X(5) Nine-Point Center, X(20), X(30)","rows":[["pts","X(851) (-HIRST INVERSE OF X(73)), X(859) (INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X)"],["len","0.8040"],["eq","0.9341x - 0.3570y - 0.4306 = 0"]],"related_points":["X(851)","X(859)"]},"X(2)":{"ID":"X(2)","type":"point","classes":["center"],"color":"#0ff","name":"CENTROID","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5374"],["y","0.2000"],["bary","0.3333 : 0.3333 : 0.3333"]],"related_points":["X(2)"]},"X(3)":{"ID":"X(3)","type":"point","classes":["center"],"color":"#0ff","name":"CIRCUMCENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5000"],["y","0.1021"],["bary","0.4340 : 0.3958 : 0.1701"]],"related_points":["X(3)"]},"{ 2, 3 }":{"ID":"{ 2, 3 }","type":"line","classes":["golden","euler"],"color":"gold","name":"Euler Line","subtitle":"Collinear line of X(2) Centroid, X(3) Circumcenter, X(4) Orthocenter, X(5) Nine-Point Center, X(20), X(30)","rows":[["pts","X(2) (CENTROID), X(3) (CIRCUMCENTER)"],["len","0.1048"],["eq","0.9341x - 0.3570y - 0.4306 = 0"]],"related_points":["X(2)","X(3)"]},"X(513)":{"ID":"X(513)","type":"point","classes":["center","incident"],"color":"#0ff","name":"ISOGONAL CONJUGATE OF X(100)","subtitle":"Incident / Reference Triangle Center","rows":[["x","1.0529"],["y","-0.0806"],["bary","-0.0007 : 1.1351 : -0.1344"]],"related_points":["X(513)"]},"X(663)":{"ID":"X(663)","type":"point","classes":["center","incident"],"color":"#0ff","name":"CROSSDIFFERENCE OF X(2) AND X(7)","subtitle":"Incident / Reference Triangle Center","rows":[["x","8.6667"],["y","-3.2660"],["bary","-5.5556 : 12.0000 : -5.4444"]],"related_points":["X(663)"]},"{ 513, 663 }":{"ID":"{ 513, 663 }","type":"line","classes":["central_line","incident"],"color":"#0bd","name":"Central Line L(513, 663)","subtitle":"Through X(513) (ISOGONAL CONJUGATE OF X(100)) and X(663) (CROSSDIFFERENCE OF X(2) AND X(7))","rows":[["pts","X(513) (ISOGONAL CONJUGATE OF X(100)), X(663) (CROSSDIFFERENCE OF X(2) AND X(7))"],["len","8.2533"],["eq","0.3860x + 0.9225y - 0.3320 = 0"]],"related_points":["X(513)","X(663)"]},"X(855)":{"ID":"X(855)","type":"point","classes":["selected","target"],"color":"gold","name":"INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(57)","subtitle":"Target Triangle Center","rows":[["x","0.8408"],["y","0.9939"],["bary","-0.4833 : -0.1735 : 1.6568"]],"related_points":["X(855)"]}}</script>
+  <script type="application/json" class="etc-elements-meta">{"A":{"ID":"A","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex A","subtitle":"Reference triangle vertex at origin (0, 0)","rows":[["x","0.0000"],["y","0.0000"],["bary","1.0000 : 0.0000 : 0.0000"]],"related_points":["A"]},"B":{"ID":"B","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex B","subtitle":"Reference triangle vertex at unit base (1, 0)","rows":[["x","1.0000"],["y","0.0000"],["bary","0.0000 : 1.0000 : 0.0000"]],"related_points":["B"]},"[ A B ]":{"ID":"[ A B ]","type":"line","classes":["given","sideline"],"color":"#aaa","name":"Sideline AB (Base c = 1)","subtitle":"Reference triangle baseline through A and B","rows":[["pts","A (Vertex A), B (Vertex B)"],["len","1.0000"],["eq","0.0000x + 1.0000y + 0.0000 = 0"]],"related_points":["A","B"]},"C":{"ID":"C","type":"point","classes":["vertex"],"color":"#0ff","name":"Vertex C","subtitle":"Reference triangle apex constructed by Euclid I.22","rows":[["x","0.6122"],["y","0.5999"],["bary","-0.0000 : 0.0000 : 1.0000"]],"related_points":["C"]},"[ B C ]":{"ID":"[ B C ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline BC (Side a)","subtitle":"Reference triangle sideline opposite vertex A","rows":[["pts","B (Vertex B), C (Vertex C)"],["len","0.7143"],["eq","0.8398x + 0.5429y - 0.8398 = 0"]],"related_points":["B","C"]},"[ C A ]":{"ID":"[ C A ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline CA (Side b)","subtitle":"Reference triangle sideline opposite vertex B","rows":[["pts","C (Vertex C), A (Vertex A)"],["len","0.8571"],["eq","0.6999x - 0.7143y + 0.0000 = 0"]],"related_points":["C","A"]},"\u003c A B C \u003e":{"ID":"\u003c A B C \u003e","type":"polygon","classes":["reference"],"color":"#58a6ff","name":"Reference Triangle △ABC","subtitle":"Primary reference triangle with unit baseline AB = 1","rows":[["verts","A, B, C"],["sides","0.7143, 0.8571, 1.0000"],["area","0.2999"]],"related_points":["A","B","C"]},"X_851":{"ID":"X_851","type":"point","classes":["center"],"color":"#0ff","name":"-HIRST INVERSE OF X(73)","subtitle":"Incident / Reference Triangle Center","rows":[["x","1.4149"],["y","2.4958"],["bary","-2.0282 : -1.1324 : 4.1606"]],"related_points":["X_851"]},"X_859":{"ID":"X_859","type":"point","classes":["center"],"color":"#0ff","name":"INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(81)","subtitle":"Incident / Reference Triangle Center","rows":[["x","1.1279"],["y","1.7448"],["bary","-1.2557 : -0.6530 : 2.9087"]],"related_points":["X_859"]},"{ 851, 859 }":{"ID":"{ 851, 859 }","type":"line","classes":["central_line"],"color":"#0bd","name":"Euler Line","subtitle":"Collinear line of X_2 Centroid, X_3 Circumcenter, X_4 Orthocenter, X_5 Nine-Point Center, X_20, X_30","rows":[["pts","X_851 (-HIRST INVERSE OF X(73)), X_859 (INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X)"],["len","0.8040"],["eq","0.9341x - 0.3570y - 0.4306 = 0"]],"related_points":["X_851","X_859"]},"X_2":{"ID":"X_2","type":"point","classes":["center"],"color":"#0ff","name":"CENTROID","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5374"],["y","0.2000"],["bary","0.3333 : 0.3333 : 0.3333"]],"related_points":["X_2"]},"X_3":{"ID":"X_3","type":"point","classes":["center"],"color":"#0ff","name":"CIRCUMCENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5000"],["y","0.1021"],["bary","0.4340 : 0.3958 : 0.1701"]],"related_points":["X_3"]},"{ 2, 3 }":{"ID":"{ 2, 3 }","type":"line","classes":["golden","euler"],"color":"gold","name":"Euler Line","subtitle":"Collinear line of X_2 Centroid, X_3 Circumcenter, X_4 Orthocenter, X_5 Nine-Point Center, X_20, X_30","rows":[["pts","X_2 (CENTROID), X_3 (CIRCUMCENTER)"],["len","0.1048"],["eq","0.9341x - 0.3570y - 0.4306 = 0"]],"related_points":["X_2","X_3"]},"X_513":{"ID":"X_513","type":"point","classes":["center","incident"],"color":"#0ff","name":"ISOGONAL CONJUGATE OF X(100)","subtitle":"Incident / Reference Triangle Center","rows":[["x","1.0529"],["y","-0.0806"],["bary","-0.0007 : 1.1351 : -0.1344"]],"related_points":["X_513"]},"X_663":{"ID":"X_663","type":"point","classes":["center","incident"],"color":"#0ff","name":"CROSSDIFFERENCE OF X(2) AND X(7)","subtitle":"Incident / Reference Triangle Center","rows":[["x","8.6667"],["y","-3.2660"],["bary","-5.5556 : 12.0000 : -5.4444"]],"related_points":["X_663"]},"{ 513, 663 }":{"ID":"{ 513, 663 }","type":"line","classes":["central_line","incident"],"color":"#0bd","name":"Central Line L(513, 663)","subtitle":"Through X_513 (ISOGONAL CONJUGATE OF X(100)) and X_663 (CROSSDIFFERENCE OF X(2) AND X(7))","rows":[["pts","X_513 (ISOGONAL CONJUGATE OF X(100)), X_663 (CROSSDIFFERENCE OF X(2) AND X(7))"],["len","8.2533"],["eq","0.3860x + 0.9225y - 0.3320 = 0"]],"related_points":["X_513","X_663"]},"X_855":{"ID":"X_855","type":"point","classes":["selected","target"],"color":"gold","name":"INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(57)","subtitle":"Target Triangle Center","rows":[["x","0.8408"],["y","0.9939"],["bary","-0.4833 : -0.1735 : 1.6568"]],"related_points":["X_855"]}}</script>
   <script>//<![CDATA[
 
 (function () {
@@ -403,14 +416,16 @@ figure:hover .etc-svg-toolbar {
         });
 
         const fontSize = 20.25 * unitsPerPx;
+        const guideFontSize = 17.5 * unitsPerPx;
         labelEls.forEach(lbl => {
             const cx = parseFloat(lbl.getAttribute('data-anchor-x') || '0');
             const cy = parseFloat(lbl.getAttribute('data-anchor-y') || '0');
             const oxPx = parseFloat(lbl.getAttribute('data-offset-x') || '12');
             const oyPx = parseFloat(lbl.getAttribute('data-offset-y') || '-10.5');
+            const isGuideLbl = lbl.classList.contains('guide-label');
             lbl.setAttribute('x', (cx + oxPx * unitsPerPx).toFixed(6));
             lbl.setAttribute('y', (cy + oyPx * unitsPerPx).toFixed(6));
-            lbl.setAttribute('font-size', fontSize.toFixed(6));
+            lbl.setAttribute('font-size', (isGuideLbl ? guideFontSize : fontSize).toFixed(6));
         });
 
         if (subtitleEl) {
@@ -695,11 +710,11 @@ figure:hover .etc-svg-toolbar {
             const refLink = e.target.closest('a.reference.internal');
             if (refLink) {
                 const txt = (refLink.textContent || '').trim();
-                const xm = txt.match(/^X\((\d+)\)$/);
+                const xm = txt.match(/^X(?:_|\()?(\d+)\)?$/);
                 if (xm) {
                     const activeSvg = getActiveSvg();
                     if (activeSvg && activeSvg._etcController.activateHover) {
-                        activeSvg._etcController.activateHover(`X(${xm[1]})`);
+                        activeSvg._etcController.activateHover(`X_${xm[1]}`);
                     }
                 }
             }

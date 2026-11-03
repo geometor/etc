@@ -1,18 +1,21 @@
-:canonical_id: X(319)
+:canonical_id: X_319
 :type: code
+:subtitle: ISOTOMIC CONJUGATE OF X_79
 
-X(319) = ISOTOMIC CONJUGATE OF X(79) — Code
-===========================================
+X_319
+=====
+
+.. rubric:: ISOTOMIC CONJUGATE OF X_79
 
 .. enunciation::
 
-   :ref:`X(319) <X(319)>` = reflection of :ref:`X(894) <X(894)>` in :ref:`X(594) <X(594)>`
+   :ref:`X_319 <X_319>` is the :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_79 <X_79>`.
 
 .. figure:: x-00319.svg
-   :alt: X(319) = ISOTOMIC CONJUGATE OF X(79)
+   :alt: X_319 — ISOTOMIC CONJUGATE OF X_79
    :align: center
 
-   **X(319) = ISOTOMIC CONJUGATE OF X(79)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_319** (*ISOTOMIC CONJUGATE OF X_79*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(565) = INTERSECTION OF LINES X(49)X(93) AND X(143,324)."""
+"""GEOMETOR construction model for X_565 = INTERSECTION OF LINES X_49X_93 AND X(143,324)."""
 
 from __future__ import annotations
 
@@ -20,13 +20,13 @@ from geometor.etc.render import write_center_svg
 def construct_x_00565(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(565) = INTERSECTION OF LINES X(49)X(93) AND X(143,324) on reference triangle ABC."""
-    X_565 = eval_trilinear_point(model, A, B, C, 'cos(3*B - 3*C)', ID="X(565)", classes=["selected", "target"])
-    X_49 = eval_trilinear_point(model, A, B, C, 'cos(3*A)', ID="X(49)", classes=["center", "incident"])
-    X_93 = eval_trilinear_point(model, A, B, C, 'sec(3*A)', ID="X(93)", classes=["center", "incident"])
+    """Construct X_565 = INTERSECTION OF LINES X_49X_93 AND X(143,324) on reference triangle ABC."""
+    X_565 = eval_trilinear_point(model, A, B, C, 'cos(3*B - 3*C)', ID="X_565", classes=["selected", "target"])
+    X_49 = eval_trilinear_point(model, A, B, C, 'cos(3*A)', ID="X_49", classes=["center", "incident"])
+    X_93 = eval_trilinear_point(model, A, B, C, 'sec(3*A)', ID="X_93", classes=["center", "incident"])
     central_line(model, X_49, X_93, 49, 93, incident=True)
-    X_143 = eval_trilinear_point(model, A, B, C, '(sec(A))*(cos(2*C - 2*A) + cos(2*A - 2*B))', ID="X(143)", classes=["center", "incident"])
-    X_324 = eval_trilinear_point(model, A, B, C, 'b*c*sec(A)*cos(B - C)', ID="X(324)", classes=["center", "incident"])
+    X_143 = eval_trilinear_point(model, A, B, C, '(sec(A))*(cos(2*C - 2*A) + cos(2*A - 2*B))', ID="X_143", classes=["center", "incident"])
+    X_324 = eval_trilinear_point(model, A, B, C, 'b*c*sec(A)*cos(B - C)', ID="X_324", classes=["center", "incident"])
     central_line(model, X_143, X_324, 143, 324, incident=True)
     return promote_point_to_top(model, X_565)
 
@@ -35,8 +35,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(565) on the given reference triangle."""
-    model = create_model('X(565) = INTERSECTION OF LINES X(49)X(93) AND X(143,324)')
+    """Build a `geometor.model.Model` for X_565 on the given reference triangle."""
+    model = create_model('X_565 = INTERSECTION OF LINES X_49X_93 AND X(143,324)')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00565(model, A, B, C)
     return model

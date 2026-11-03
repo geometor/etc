@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(820) = CROSSPOINT OF X(1) AND X(255)."""
+"""GEOMETOR construction model for X_820 = CROSSPOINT OF X_1 AND X_255."""
 
 from __future__ import annotations
 
@@ -24,16 +24,16 @@ from geometor.etc.render import write_center_svg
 def construct_x_00820(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(820) = CROSSPOINT OF X(1) AND X(255) on reference triangle ABC."""
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
-    X_29 = eval_trilinear_point(model, A, B, C, '(sec(A))/(cos(B) + cos(C))', ID="X(29)", classes=["center"])
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
-    X_296 = point_from_barycentrics(model, A, B, C, 0.33787725, 0.81509072, -0.15296798, ID="X(296)", classes=["center"])
+    """Construct X_820 = CROSSPOINT OF X_1 AND X_255 on reference triangle ABC."""
+    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center"])
+    X_29 = eval_trilinear_point(model, A, B, C, '(sec(A))/(cos(B) + cos(C))', ID="X_29", classes=["center"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
+    X_296 = point_from_barycentrics(model, A, B, C, 0.33787725, 0.81509072, -0.15296798, ID="X_296", classes=["center"])
     central_line(model, X_1, X_29, 1, 29)
     central_line(model, X_3, X_296, 3, 296)
-    X_820 = intersect_lines(model, X_1, X_29, X_3, X_296, ID="X(820)", classes=["selected", "target"])
-    X_662 = eval_trilinear_point(model, A, B, C, '1/(cot(B) - cot(C))', ID="X(662)", classes=["center", "incident"])
-    X_775 = point_from_barycentrics(model, A, B, C, 0.43250342, 0.31571467, 0.25178191, ID="X(775)", classes=["center", "incident"])
+    X_820 = intersect_lines(model, X_1, X_29, X_3, X_296, ID="X_820", classes=["selected", "target"])
+    X_662 = eval_trilinear_point(model, A, B, C, '1/(cot(B) - cot(C))', ID="X_662", classes=["center", "incident"])
+    X_775 = point_from_barycentrics(model, A, B, C, 0.43250342, 0.31571467, 0.25178191, ID="X_775", classes=["center", "incident"])
     central_line(model, X_662, X_775, 662, 775, incident=True)
     return promote_point_to_top(model, X_820)
 
@@ -42,8 +42,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(820) on the given reference triangle."""
-    model = create_model('X(820) = CROSSPOINT OF X(1) AND X(255)')
+    """Build a `geometor.model.Model` for X_820 on the given reference triangle."""
+    model = create_model('X_820 = CROSSPOINT OF X_1 AND X_255')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00820(model, A, B, C)
     return model

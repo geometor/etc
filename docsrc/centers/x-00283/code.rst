@@ -1,18 +1,21 @@
-:canonical_id: X(283)
+:canonical_id: X_283
 :type: code
+:subtitle: X_3-CROSS CONJUGATE OF X_21
 
-X(283) = X(3)-CROSS CONJUGATE OF X(21) — Code
-=============================================
+X_283
+=====
+
+.. rubric:: X_3-CROSS CONJUGATE OF X_21
 
 .. enunciation::
 
-   :ref:`X(283) <X(283)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(225) <X(225)>`
+   :ref:`X_283 <X_283>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_225 <X_225>`
 
 .. figure:: x-00283.svg
-   :alt: X(283) = X(3)-CROSS CONJUGATE OF X(21)
+   :alt: X_283 — X_3-CROSS CONJUGATE OF X_21
    :align: center
 
-   **X(283) = X(3)-CROSS CONJUGATE OF X(21)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_283** (*X_3-CROSS CONJUGATE OF X_21*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(986) = INTERSECTION OF LINES X(1)X(3) AND X(8)X(38)."""
+"""GEOMETOR construction model for X_986 = INTERSECTION OF LINES X_1X_3 AND X_8X_38."""
 
 from __future__ import annotations
 
@@ -25,16 +25,16 @@ from geometor.etc.render import write_center_svg
 def construct_x_00986(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(986) = INTERSECTION OF LINES X(1)X(3) AND X(8)X(38) on reference triangle ABC."""
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center"])
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
-    X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center"])
-    X_38 = eval_trilinear_point(model, A, B, C, 'b**(2) + c**(2)', ID="X(38)", classes=["center"])
+    """Construct X_986 = INTERSECTION OF LINES X_1X_3 AND X_8X_38 on reference triangle ABC."""
+    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
+    X_8 = nagel_point_of(model, A, B, C, ID="X_8", classes=["center"])
+    X_38 = eval_trilinear_point(model, A, B, C, 'b**(2) + c**(2)', ID="X_38", classes=["center"])
     central_line(model, X_1, X_3, 1, 3)
     central_line(model, X_8, X_38, 8, 38)
-    X_986 = intersect_lines(model, X_1, X_3, X_8, X_38, ID="X(986)", classes=["selected", "target"])
-    X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["center", "incident"])
-    X_75 = eval_trilinear_point(model, A, B, C, '1/a**(2)', ID="X(75)", classes=["center", "incident"])
+    X_986 = intersect_lines(model, X_1, X_3, X_8, X_38, ID="X_986", classes=["selected", "target"])
+    X_10 = spieker_center_of(model, A, B, C, ID="X_10", classes=["center", "incident"])
+    X_75 = eval_trilinear_point(model, A, B, C, '1/a**(2)', ID="X_75", classes=["center", "incident"])
     central_line(model, X_10, X_75, 10, 75, incident=True)
     return promote_point_to_top(model, X_986)
 
@@ -43,8 +43,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(986) on the given reference triangle."""
-    model = create_model('X(986) = INTERSECTION OF LINES X(1)X(3) AND X(8)X(38)')
+    """Build a `geometor.model.Model` for X_986 on the given reference triangle."""
+    model = create_model('X_986 = INTERSECTION OF LINES X_1X_3 AND X_8X_38')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00986(model, A, B, C)
     return model

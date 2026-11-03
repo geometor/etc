@@ -42,6 +42,7 @@ svg.geometor-etc-drawing.is-panning {
 }
 
 svg.geometor-etc-drawing.hide-labels #labels .point-label,
+svg.geometor-etc-drawing.hide-labels #labels .guide-label,
 svg.geometor-etc-drawing.hide-labels #labels .target-label,
 svg.geometor-etc-drawing.hide-labels #labels .given-label {
     display: none;
@@ -203,12 +204,19 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
     font-weight: 600;
     paint-order: stroke;
     stroke: var(--accent-color);
-    stroke-width: 3px;
+    stroke-width: 0.15em;
     stroke-linecap: round;
     stroke-linejoin: round;
-    vector-effect: non-scaling-stroke;
     user-select: none;
     pointer-events: none;
+}
+
+#labels tspan {
+    paint-order: stroke;
+    stroke: var(--accent-color);
+    stroke-width: 0.15em;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 #labels text.target-label {
@@ -218,6 +226,11 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
 
 #labels text.given-label {
     fill: #8f8;
+}
+
+#labels text.guide-label {
+    fill: #ffb74d;
+    font-weight: 600;
 }
 
 #labels text.hover-label {
@@ -369,14 +382,16 @@ INTERACTIVE_SVG_JS = r"""
         });
 
         const fontSize = 20.25 * unitsPerPx;
+        const guideFontSize = 17.5 * unitsPerPx;
         labelEls.forEach(lbl => {
             const cx = parseFloat(lbl.getAttribute('data-anchor-x') || '0');
             const cy = parseFloat(lbl.getAttribute('data-anchor-y') || '0');
             const oxPx = parseFloat(lbl.getAttribute('data-offset-x') || '12');
             const oyPx = parseFloat(lbl.getAttribute('data-offset-y') || '-10.5');
+            const isGuideLbl = lbl.classList.contains('guide-label');
             lbl.setAttribute('x', (cx + oxPx * unitsPerPx).toFixed(6));
             lbl.setAttribute('y', (cy + oyPx * unitsPerPx).toFixed(6));
-            lbl.setAttribute('font-size', fontSize.toFixed(6));
+            lbl.setAttribute('font-size', (isGuideLbl ? guideFontSize : fontSize).toFixed(6));
         });
 
         if (subtitleEl) {
@@ -661,11 +676,11 @@ INTERACTIVE_SVG_JS = r"""
             const refLink = e.target.closest('a.reference.internal');
             if (refLink) {
                 const txt = (refLink.textContent || '').trim();
-                const xm = txt.match(/^X\((\d+)\)$/);
+                const xm = txt.match(/^X(?:_|\()?(\d+)\)?$/);
                 if (xm) {
                     const activeSvg = getActiveSvg();
                     if (activeSvg && activeSvg._etcController.activateHover) {
-                        activeSvg._etcController.activateHover(`X(${xm[1]})`);
+                        activeSvg._etcController.activateHover(`X_${xm[1]}`);
                     }
                 }
             }
@@ -811,9 +826,9 @@ _CLASSICAL_POINT_INFO: dict[str, tuple[str, str]] = {
     "Sym_a": ("Symmedian Foot Sym_a on BC", "Symmedial triangle vertex opposite A"),
     "Sym_b": ("Symmedian Foot Sym_b on CA", "Symmedial triangle vertex opposite B"),
     "Sym_c": ("Symmedian Foot Sym_c on AB", "Symmedial triangle vertex opposite C"),
-    "Eu_a": ("Euler Vertex Eu_a", "Midpoint of segment A–X(4) (Euler triangle vertex)"),
-    "Eu_b": ("Euler Vertex Eu_b", "Midpoint of segment B–X(4) (Euler triangle vertex)"),
-    "Eu_c": ("Euler Vertex Eu_c", "Midpoint of segment C–X(4) (Euler triangle vertex)"),
+    "Eu_a": ("Euler Vertex Eu_a", "Midpoint of segment A–X_4 (Euler triangle vertex)"),
+    "Eu_b": ("Euler Vertex Eu_b", "Midpoint of segment B–X_4 (Euler triangle vertex)"),
+    "Eu_c": ("Euler Vertex Eu_c", "Midpoint of segment C–X_4 (Euler triangle vertex)"),
     "Ref_a": ("Reflection Ref_a of A in BC", "Vertex of reflection triangle opposite A"),
     "Ref_b": ("Reflection Ref_b of B in CA", "Vertex of reflection triangle opposite B"),
     "Ref_c": ("Reflection Ref_c of C in AB", "Vertex of reflection triangle opposite C"),
@@ -826,9 +841,21 @@ _CLASSICAL_POINT_INFO: dict[str, tuple[str, str]] = {
     "Nap_a": ("Napoleon Center Nap_a", "Centroid of equilateral triangle on BC"),
     "Nap_b": ("Napoleon Center Nap_b", "Centroid of equilateral triangle on CA"),
     "Nap_c": ("Napoleon Center Nap_c", "Centroid of equilateral triangle on AB"),
+    "Nap'_a": ("Inner Napoleon Center Nap'_a", "Centroid of inward equilateral triangle on BC"),
+    "Nap'_b": ("Inner Napoleon Center Nap'_b", "Centroid of inward equilateral triangle on CA"),
+    "Nap'_c": ("Inner Napoleon Center Nap'_c", "Centroid of inward equilateral triangle on AB"),
     "N_A": ("Napoleon Center N_A", "Centroid of equilateral triangle on BC"),
     "N_B": ("Napoleon Center N_B", "Centroid of equilateral triangle on CA"),
     "N_C": ("Napoleon Center N_C", "Centroid of equilateral triangle on AB"),
+    "Cm_a": ("Circummedial Vertex Cm_a", "Second intersection of A-median with circumcircle"),
+    "Cm_b": ("Circummedial Vertex Cm_b", "Second intersection of B-median with circumcircle"),
+    "Cm_c": ("Circummedial Vertex Cm_c", "Second intersection of C-median with circumcircle"),
+    "H'_a": ("Orthic-of-Orthic Foot H'_a", "Altitude foot of orthic triangle △H_a H_b H_c opposite H_a"),
+    "H'_b": ("Orthic-of-Orthic Foot H'_b", "Altitude foot of orthic triangle △H_a H_b H_c opposite H_b"),
+    "H'_c": ("Orthic-of-Orthic Foot H'_c", "Altitude foot of orthic triangle △H_a H_b H_c opposite H_c"),
+    "O_A": ("Kosnita Circumcenter O_A", "Circumcenter of subtriangle △BOC (O = X_3)"),
+    "O_B": ("Kosnita Circumcenter O_B", "Circumcenter of subtriangle △COA (O = X_3)"),
+    "O_C": ("Kosnita Circumcenter O_C", "Circumcenter of subtriangle △AOB (O = X_3)"),
     "S_c": ("Spieker Touchpoint S_c", "Tangency point of Spieker circle on medial side M_a M_b"),
     "R_a": ("Radius Point R_a", "Euclid I.22 baseline guide point (distance a/c from B)"),
     "R_b": ("Radius Point R_b", "Euclid I.22 baseline guide point (distance b/c from A)"),
@@ -844,12 +871,12 @@ _CONSTRUCTION_LINE_INFO: dict[str, tuple[str, str]] = {
     "[ A H_a ]": ("A-Altitude", "Altitude from vertex A perpendicular to BC at H_a"),
     "[ B H_b ]": ("B-Altitude", "Altitude from vertex B perpendicular to CA at H_b"),
     "[ C H_c ]": ("C-Altitude", "Altitude from vertex C perpendicular to AB at H_c"),
-    "[ X(3) M_a ]": ("Perpendicular Bisector of BC", "Perpendicular bisector through M_a and Circumcenter X(3)"),
-    "[ X(3) M_b ]": ("Perpendicular Bisector of CA", "Perpendicular bisector through M_b and Circumcenter X(3)"),
-    "[ X(3) M_c ]": ("Perpendicular Bisector of AB", "Perpendicular bisector through M_c and Circumcenter X(3)"),
-    "[ A X(1) ]": ("Internal Angle Bisector of ∠A", "Bisector of interior angle A through Incenter X(1)"),
-    "[ B X(1) ]": ("Internal Angle Bisector of ∠B", "Bisector of interior angle B through Incenter X(1)"),
-    "[ C X(1) ]": ("Internal Angle Bisector of ∠C", "Bisector of interior angle C through Incenter X(1)"),
+    "[ X_3 M_a ]": ("Perpendicular Bisector of BC", "Perpendicular bisector through M_a and Circumcenter X_3"),
+    "[ X_3 M_b ]": ("Perpendicular Bisector of CA", "Perpendicular bisector through M_b and Circumcenter X_3"),
+    "[ X_3 M_c ]": ("Perpendicular Bisector of AB", "Perpendicular bisector through M_c and Circumcenter X_3"),
+    "[ A X_1 ]": ("Internal Angle Bisector of ∠A", "Bisector of interior angle A through Incenter X_1"),
+    "[ B X_1 ]": ("Internal Angle Bisector of ∠B", "Bisector of interior angle B through Incenter X_1"),
+    "[ C X_1 ]": ("Internal Angle Bisector of ∠C", "Bisector of interior angle C through Incenter X_1"),
     "[ A I_a ]": ("Internal Angle Bisector of ∠A", "Bisector of interior angle A meeting BC at I_a"),
     "[ B I_b ]": ("Internal Angle Bisector of ∠B", "Bisector of interior angle B meeting CA at I_b"),
     "[ C I_c ]": ("Internal Angle Bisector of ∠C", "Bisector of interior angle C meeting AB at I_c"),
@@ -874,40 +901,55 @@ _CONSTRUCTION_LINE_INFO: dict[str, tuple[str, str]] = {
     "[ A A' ]": ("Apex Cevian A–A'", "Cevian joining vertex A to constructed apex A'"),
     "[ B B' ]": ("Apex Cevian B–B'", "Cevian joining vertex B to constructed apex B'"),
     "[ C C' ]": ("Apex Cevian C–C'", "Cevian joining vertex C to constructed apex C'"),
+    "[ A O_A ]": ("Kosnita Cevian A–O_A", "Line from vertex A to circumcenter O_A of △BOC"),
+    "[ B O_B ]": ("Kosnita Cevian B–O_B", "Line from vertex B to circumcenter O_B of △COA"),
+    "[ C O_C ]": ("Kosnita Cevian C–O_C", "Line from vertex C to circumcenter O_C of △AOB"),
+    "[ Cm_a Tan_a ]": ("Exeter Perspectrix Line Cm_a–Tan_a", "Line joining circummedial vertex Cm_a to tangential vertex Tan_a"),
+    "[ Cm_b Tan_b ]": ("Exeter Perspectrix Line Cm_b–Tan_b", "Line joining circummedial vertex Cm_b to tangential vertex Tan_b"),
+    "[ Cm_c Tan_c ]": ("Exeter Perspectrix Line Cm_c–Tan_c", "Line joining circummedial vertex Cm_c to tangential vertex Tan_c"),
+    "[ A H'_a ]": ("Orthic-of-Orthic Cevian A–H'_a", "Line from vertex A to orthic-of-orthic foot H'_a"),
+    "[ B H'_b ]": ("Orthic-of-Orthic Cevian B–H'_b", "Line from vertex B to orthic-of-orthic foot H'_b"),
+    "[ C H'_c ]": ("Orthic-of-Orthic Cevian C–H'_c", "Line from vertex C to orthic-of-orthic foot H'_c"),
+    "[ A Nap_a ]": ("Outer Napoleon Cevian A–Nap_a", "Line from vertex A to outer Napoleon center Nap_a"),
+    "[ B Nap_b ]": ("Outer Napoleon Cevian B–Nap_b", "Line from vertex B to outer Napoleon center Nap_b"),
+    "[ C Nap_c ]": ("Outer Napoleon Cevian C–Nap_c", "Line from vertex C to outer Napoleon center Nap_c"),
+    "[ A Nap'_a ]": ("Inner Napoleon Cevian A–Nap'_a", "Line from vertex A to inner Napoleon center Nap'_a"),
+    "[ B Nap'_b ]": ("Inner Napoleon Cevian B–Nap'_b", "Line from vertex B to inner Napoleon center Nap'_b"),
+    "[ C Nap'_c ]": ("Inner Napoleon Cevian C–Nap'_c", "Line from vertex C to inner Napoleon center Nap'_c"),
 }
 
 _KNOWN_CIRCLE_INFO: dict[str, tuple[str, str]] = {
     "circumcircle": (
         "Circumcircle of △ABC",
-        "Passes through vertices A, B, C; centered at X(3) CIRCUMCENTER",
+        "Passes through vertices A, B, C; centered at X_3 CIRCUMCENTER",
     ),
     "incircle": (
         "Incircle of △ABC",
-        "Inscribed circle tangent to sidelines at T_a, T_b, T_c; centered at X(1) INCENTER",
+        "Inscribed circle tangent to sidelines at T_a, T_b, T_c; centered at X_1 INCENTER",
     ),
     "nine_point_circle": (
         "Nine-Point Circle (Euler / Feuerbach Circle)",
-        "Passes through side midpoints M_a, M_b, M_c and altitude feet H_a, H_b, H_c; centered at X(5)",
+        "Passes through side midpoints M_a, M_b, M_c and altitude feet H_a, H_b, H_c; centered at X_5",
     ),
     "spieker_circle": (
         "Spieker Circle",
-        "Incircle of the medial triangle △M_a M_b M_c; centered at X(10) SPIEKER CENTER",
+        "Incircle of the medial triangle △M_a M_b M_c; centered at X_10 SPIEKER CENTER",
     ),
     "bevan_circle": (
         "Bevan Circle",
-        "Circumcircle of the excentral triangle △J_a J_b J_c; centered at X(40) BEVAN POINT",
+        "Circumcircle of the excentral triangle △J_a J_b J_c; centered at X_40 BEVAN POINT",
     ),
     "brocard_circle": (
         "Brocard Circle (Seven-Point Circle)",
-        "Circle on diameter X(3)X(6) passing through Brocard points and X(15), X(16); centered at X(182)",
+        "Circle on diameter X_3–X_6 passing through Brocard points and X_15, X_16; centered at X_182",
     ),
     "orthocentroidal_circle": (
         "Orthocentroidal Circle",
-        "Circle on diameter X(2)X(4) (Centroid to Orthocenter); centered at X(381)",
+        "Circle on diameter X_2–X_4 (Centroid to Orthocenter); centered at X_381",
     ),
     "fuhrmann_circle": (
         "Fuhrmann Circle",
-        "Circle on diameter X(4)X(8) (Orthocenter to Nagel Point); centered at X(427)",
+        "Circle on diameter X_4–X_8 (Orthocenter to Nagel Point); centered at X_427",
     ),
     "A-Apollonian circle": (
         "A-Apollonian Circle",
@@ -934,16 +976,19 @@ _KNOWN_CIRCLE_INFO: dict[str, tuple[str, str]] = {
 _KNOWN_POLYGON_INFO: dict[str, tuple[str, str]] = {
     "< A B C >": ("Reference Triangle △ABC", "Primary reference triangle with unit baseline AB = 1"),
     "< M_a M_b M_c >": ("Medial Triangle △M_a M_b M_c", "Formed by the midpoints of sides BC, CA, AB"),
-    "< H_a H_b H_c >": ("Orthic Triangle △H_a H_b H_c", "Pedal triangle of Orthocenter X(4) (altitude feet)"),
+    "< H_a H_b H_c >": ("Orthic Triangle △H_a H_b H_c", "Pedal triangle of Orthocenter X_4 (altitude feet)"),
     "< T_a T_b T_c >": ("Intouch (Contact) Triangle △T_a T_b T_c", "Contact triangle of Incircle touchpoints on BC, CA, AB"),
     "< N_a N_b N_c >": ("Extouch Triangle △N_a N_b N_c", "Contact triangle of Excircle touchpoints on BC, CA, AB"),
-    "< I_a I_b I_c >": ("Incentral Triangle △I_a I_b I_c", "Cevian triangle of Incenter X(1) (angle bisector feet)"),
-    "< J_a J_b J_c >": ("Excentral Triangle △J_a J_b J_c", "Anticevian triangle of Incenter X(1) (the three excenters)"),
+    "< I_a I_b I_c >": ("Incentral Triangle △I_a I_b I_c", "Cevian triangle of Incenter X_1 (angle bisector feet)"),
+    "< J_a J_b J_c >": ("Excentral Triangle △J_a J_b J_c", "Anticevian triangle of Incenter X_1 (the three excenters)"),
     "< K_a K_b K_c >": ("Anticomplementary Triangle △K_a K_b K_c", "Formed by lines through A, B, C parallel to opposite sides"),
     "< Tan_a Tan_b Tan_c >": ("Tangential Triangle △Tan_a Tan_b Tan_c", "Bounded by tangents to the circumcircle at A, B, C"),
-    "< Sym_a Sym_b Sym_c >": ("Symmedial Triangle △Sym_a Sym_b Sym_c", "Cevian triangle of Symmedian Point X(6)"),
-    "< Eu_a Eu_b Eu_c >": ("Euler (Feuerbach) Triangle △Eu_a Eu_b Eu_c", "Midpoints of segments joining A, B, C to Orthocenter X(4)"),
+    "< Sym_a Sym_b Sym_c >": ("Symmedial Triangle △Sym_a Sym_b Sym_c", "Cevian triangle of Symmedian Point X_6"),
+    "< Eu_a Eu_b Eu_c >": ("Euler (Feuerbach) Triangle △Eu_a Eu_b Eu_c", "Midpoints of segments joining A, B, C to Orthocenter X_4"),
     "< Ref_a Ref_b Ref_c >": ("Reflection Triangle △Ref_a Ref_b Ref_c", "Reflections of vertices A, B, C across opposite sidelines"),
+    "< Cm_a Cm_b Cm_c >": ("Circummedial Triangle △Cm_a Cm_b Cm_c", "Endpoints of medians of △ABC extended to the circumcircle"),
+    "< H'_a H'_b H'_c >": ("Orthic-of-Orthic Triangle △H'_a H'_b H'_c", "Orthic triangle of the orthic triangle △H_a H_b H_c"),
+    "< O_A O_B O_C >": ("Kosnita Triangle △O_A O_B O_C", "Circumcenters of △BOC, △COA, △AOB where O = X_3"),
     "< P_a P_b P_c >": ("Cevian Triangle △P_a P_b P_c", "Traces of cevians through target center on BC, CA, AB"),
     "< A' B' C' >": ("Auxiliary Triangle △A'B'C'", "Derived triangle"),
     "< Nap_a Nap_b Nap_c >": ("Outer Napoleon Triangle △Nap_a Nap_b Nap_c", "Equilateral triangle formed by centers of outward side equilateral triangles"),
@@ -956,8 +1001,8 @@ _KNOWN_POLYGON_INFO: dict[str, tuple[str, str]] = {
 
 
 def _short_point_name(pid: str, center_names: dict[str, str]) -> str:
-    """Return a concise human-readable name for a point ID (`X(n)` or classical vertex)."""
-    m = re.match(r"^X\((\d+)\)$", pid)
+    """Return a concise human-readable name for a point ID (`X_n` or classical vertex)."""
+    m = re.match(r"^X(?:_|\()(\d+)\)?$", pid)
     if m:
         num_str = m.group(1)
         raw = center_names.get(num_str, "")
@@ -966,7 +1011,7 @@ def _short_point_name(pid: str, center_names: dict[str, str]) -> str:
             if len(raw) > 48 and "(" in raw:
                 raw = raw.split("(")[0].strip()
             return raw
-        return f"Triangle Center X({num_str})"
+        return f"Triangle Center X_{num_str}"
     if pid in _CLASSICAL_POINT_INFO:
         return _CLASSICAL_POINT_INFO[pid][0]
     return pid
@@ -1033,21 +1078,21 @@ def _build_named_central_lines_xy(
     }
 
     named_specs = [
-        ("Euler Line", "Collinear line of X(2) Centroid, X(3) Circumcenter, X(4) Orthocenter, X(5) Nine-Point Center, X(20), X(30)", 2, 3),
-        ("Nagel Line", "Collinear line of X(1) Incenter, X(2) Centroid, X(8) Nagel Point, X(10) Spieker Center", 1, 2),
-        ("OI Line (Incenter–Circumcenter Line)", "Collinear line of X(1) Incenter, X(3) Circumcenter, X(40) Bevan Point, X(55), X(56)", 1, 3),
-        ("Brocard Axis", "Collinear line of X(3) Circumcenter, X(6) Symmedian Point, X(15) & X(16) Isodynamic Points", 3, 6),
-        ("Soddy Line", "Collinear line of X(1) Incenter, X(7) Gergonne Point, X(20) de Longchamps Point, X(175), X(176)", 1, 7),
-        ("Feuerbach Line", "Collinear line of X(1) Incenter, X(5) Nine-Point Center, X(11) Feuerbach Point", 1, 5),
-        ("Van Aubel Line", "Collinear line of X(4) Orthocenter and X(6) Symmedian Point", 4, 6),
-        ("Incenter–Symmedian Line", "Collinear line of X(1) Incenter, X(6) Symmedian Point, X(9) Mittenpunkt", 1, 6),
-        ("Centroid–Symmedian Line", "Collinear line of X(2) Centroid, X(6) Symmedian Point, X(39) Brocard Midpoint", 2, 6),
-        ("Nine-Point–Symmedian Line", "Collinear line of X(5) Nine-Point Center and X(6) Symmedian Point", 5, 6),
-        ("Incenter–Orthocenter Line", "Collinear line of X(1) Incenter and X(4) Orthocenter", 1, 4),
-        ("Centroid–Gergonne Line", "Collinear line of X(2) Centroid, X(7) Gergonne Point, X(9) Mittenpunkt", 2, 7),
-        ("Gergonne–Nagel Line", "Collinear line of X(7) Gergonne Point and X(8) Nagel Point", 7, 8),
-        ("Fuhrmann Line", "Collinear line of X(4) Orthocenter and X(8) Nagel Point", 4, 8),
-        ("Orthocenter–Spieker Line", "Collinear line of X(4) Orthocenter and X(10) Spieker Center", 4, 10),
+        ("Euler Line", "Collinear line of X_2 Centroid, X_3 Circumcenter, X_4 Orthocenter, X_5 Nine-Point Center, X_20, X_30", 2, 3),
+        ("Nagel Line", "Collinear line of X_1 Incenter, X_2 Centroid, X_8 Nagel Point, X_10 Spieker Center", 1, 2),
+        ("OI Line (Incenter–Circumcenter Line)", "Collinear line of X_1 Incenter, X_3 Circumcenter, X_40 Bevan Point, X_55, X_56", 1, 3),
+        ("Brocard Axis", "Collinear line of X_3 Circumcenter, X_6 Symmedian Point, X_15 & X_16 Isodynamic Points", 3, 6),
+        ("Soddy Line", "Collinear line of X_1 Incenter, X_7 Gergonne Point, X_20 de Longchamps Point, X_175, X_176", 1, 7),
+        ("Feuerbach Line", "Collinear line of X_1 Incenter, X_5 Nine-Point Center, X_11 Feuerbach Point", 1, 5),
+        ("Van Aubel Line", "Collinear line of X_4 Orthocenter and X_6 Symmedian Point", 4, 6),
+        ("Incenter–Symmedian Line", "Collinear line of X_1 Incenter, X_6 Symmedian Point, X_9 Mittenpunkt", 1, 6),
+        ("Centroid–Symmedian Line", "Collinear line of X_2 Centroid, X_6 Symmedian Point, X_39 Brocard Midpoint", 2, 6),
+        ("Nine-Point–Symmedian Line", "Collinear line of X_5 Nine-Point Center and X_6 Symmedian Point", 5, 6),
+        ("Incenter–Orthocenter Line", "Collinear line of X_1 Incenter and X_4 Orthocenter", 1, 4),
+        ("Centroid–Gergonne Line", "Collinear line of X_2 Centroid, X_7 Gergonne Point, X_9 Mittenpunkt", 2, 7),
+        ("Gergonne–Nagel Line", "Collinear line of X_7 Gergonne Point and X_8 Nagel Point", 7, 8),
+        ("Fuhrmann Line", "Collinear line of X_4 Orthocenter and X_8 Nagel Point", 4, 8),
+        ("Orthocenter–Spieker Line", "Collinear line of X_4 Orthocenter and X_10 Spieker Center", 4, 10),
     ]
 
     result = []
@@ -1107,10 +1152,10 @@ def _enrich_elements_catalog(
             is_given = "given" in classes
             color = "gold" if is_target else ("#6F6" if is_given else ("orange" if el["guide"] else "#0ff"))
 
-            m = re.match(r"^X\((\d+)\)$", eid)
+            m = re.match(r"^X(?:_|\()(\d+)\)?$", eid)
             if m:
                 c_num_str = m.group(1)
-                c_name = center_names.get(c_num_str, f"Triangle Center X({c_num_str})")
+                c_name = center_names.get(c_num_str, f"Triangle Center X_{c_num_str}")
                 subtitle = "Target Triangle Center" if is_target else "Incident / Reference Triangle Center"
             elif eid in _CLASSICAL_POINT_INFO:
                 c_name, subtitle = _CLASSICAL_POINT_INFO[eid]
@@ -1166,7 +1211,7 @@ def _enrich_elements_catalog(
                     if m_brace:
                         i_s, j_s = m_brace.group(1), m_brace.group(2)
                         line_name = f"Central Line L({i_s}, {j_s})"
-                        subtitle = f"Through X({i_s}) ({p1_short}) and X({j_s}) ({p2_short})"
+                        subtitle = f"Through X_{i_s} ({p1_short}) and X_{j_s} ({p2_short})"
                     else:
                         line_name = f"Line {eid}"
 
@@ -1314,7 +1359,7 @@ def model_to_elements_list(model: Model) -> list[dict[str, Any]]:
             base.update(
                 {
                     "type": "polygon",
-                    "points": [model[p].ID for p in el.vertices],
+                    "points": [model[p].ID for p in el.vertices if p in model],
                 }
             )
         elif isinstance(el, spg.Segment):
@@ -1328,6 +1373,19 @@ def model_to_elements_list(model: Model) -> list[dict[str, Any]]:
             continue
         elements.append(base)
     return elements
+
+
+def _format_svg_label(label: str) -> str:
+    """Convert an algebraic label like `X_13`, `M_a`, or `H'_a` into SVG `<tspan>` subscript markup."""
+    clean = label.strip()
+    m_x = re.match(r"^X\((\d+)\)$", clean)
+    if m_x:
+        return f'X<tspan dy="0.3em" font-size="75%">{html.escape(m_x.group(1))}</tspan>'
+    if "_" in clean:
+        base, sub = clean.split("_", 1)
+        sub = sub.strip("{}")
+        return f'{html.escape(base)}<tspan dy="0.3em" font-size="75%">{html.escape(sub)}</tspan>'
+    return html.escape(clean)
 
 
 def render_model_svg(
@@ -1349,7 +1407,14 @@ def render_model_svg(
     min_y, max_y = float("inf"), float("-inf")
 
     for p in points_by_id.values():
-        if p["guide"] or "incident" in p["classes"]:
+        if "incident" in p["classes"]:
+            continue
+        if p["guide"]:
+            if p["ID"] not in {"R_a", "R_b"} and abs(p["x"]) <= 3.0 and abs(p["y"]) <= 3.0:
+                min_x = min(min_x, p["x"])
+                max_x = max(max_x, p["x"])
+                min_y = min(min_y, p["y"])
+                max_y = max(max_y, p["y"])
             continue
         # Guard against extreme far-out points dwarfing the reference triangle
         if abs(p["x"]) <= 4.5 and abs(p["y"]) <= 4.5:
@@ -1409,6 +1474,7 @@ def render_model_svg(
     target_radius = 10.5 * units_per_px
     guide_radius = 4.8 * units_per_px
     font_size = 20.25 * units_per_px
+    guide_font_size = 17.5 * units_per_px
 
     graphics_nodes: list[str] = []
     highlights_nodes: list[str] = []
@@ -1497,15 +1563,19 @@ def render_model_svg(
                 f"<title>{el_id} = {el_name} ({cx:.4f}, {el['y']:.4f})</title></circle>"
             )
 
-            # Label vertices A, B, C and centers X(k)
-            if show_labels and not el["guide"]:
-                lbl_cls = (
-                    "target-label"
-                    if is_target
-                    else ("given-label" if "given" in el["classes"] else "point-label")
-                )
+            # Label vertices A, B, C, centers X(k), and auxiliary guide vertices (except baseline R_a, R_b)
+            if show_labels and raw_id not in {"R_a", "R_b"}:
+                if el["guide"]:
+                    lbl_cls = "guide-label guide"
+                elif is_target:
+                    lbl_cls = "target-label"
+                elif "given" in el["classes"]:
+                    lbl_cls = "given-label"
+                else:
+                    lbl_cls = "point-label"
                 if "incident" in el["classes"]:
                     lbl_cls += " incident"
+
                 ox_px = 12.0
                 oy_px = -10.5
                 if raw_id == "A":
@@ -1514,14 +1584,25 @@ def render_model_svg(
                     ox_px, oy_px = 12.0, 22.5
                 elif raw_id == "C":
                     ox_px, oy_px = -7.5, -15.0
+                elif el["guide"]:
+                    if raw_id.endswith(("_a", "_A")) or raw_id == "A'":
+                        ox_px, oy_px = 10.0, -7.0
+                    elif raw_id.endswith(("_b", "_B")) or raw_id == "B'":
+                        ox_px, oy_px = -30.0, -7.0
+                    elif raw_id.endswith(("_c", "_C")) or raw_id == "C'":
+                        ox_px, oy_px = -8.0, 19.0
+                    else:
+                        ox_px, oy_px = 9.0, -8.5
+
                 offset_x = ox_px * units_per_px
                 offset_y = oy_px * units_per_px
+                cur_font = guide_font_size if el["guide"] else font_size
                 labels_nodes.append(
                     f'    <text class="{lbl_cls}" data-point-id="{el_id}" '
                     f'data-anchor-x="{cx:.6f}" data-anchor-y="{cy:.6f}" '
                     f'data-offset-x="{ox_px:.1f}" data-offset-y="{oy_px:.1f}" '
                     f'x="{cx + offset_x:.6f}" y="{cy + offset_y:.6f}" '
-                    f'font-size="{font_size:.6f}">{el_id}</text>'
+                    f'font-size="{cur_font:.6f}">{_format_svg_label(raw_id)}</text>'
                 )
 
     if subtitle:

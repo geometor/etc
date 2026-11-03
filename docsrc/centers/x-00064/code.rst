@@ -1,18 +1,21 @@
-:canonical_id: X(64)
+:canonical_id: X_64
 :type: code
+:subtitle: ISOGONAL CONJUGATE OF X_20
 
-X(64) = ISOGONAL CONJUGATE OF X(20) — Code
-==========================================
+X_64
+====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_20
 
 .. enunciation::
 
-   A construction of :ref:`X(64) <X(64)>` appears in Lemoine's 1886 paper cited at :ref:`X(19) <X(19)>`.
+   :ref:`X_64 <X_64>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_20 <X_20>`.
 
 .. figure:: x-00064.svg
-   :alt: X(64) = ISOGONAL CONJUGATE OF X(20)
+   :alt: X_64 — ISOGONAL CONJUGATE OF X_20
    :align: center
 
-   **X(64) = ISOGONAL CONJUGATE OF X(20)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_64** (*ISOGONAL CONJUGATE OF X_20*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

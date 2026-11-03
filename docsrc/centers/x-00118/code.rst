@@ -1,18 +1,21 @@
-:canonical_id: X(118)
+:canonical_id: X_118
 :type: code
+:subtitle: MIDPOINT OF X_4 AND X_101
 
-X(118) = MIDPOINT OF X(4) AND X(101) — Code
-===========================================
+X_118
+=====
+
+.. rubric:: MIDPOINT OF X_4 AND X_101
 
 .. enunciation::
 
-   Let :g:`A'B'C' << A' B' C' >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`L_{a} <L_a>` be the Gergonne line of triangle :g:`AB'C' << A B' C' >>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(118) <X(118)>`, which is :ref:`X(3) <X(3)>`-of-:g:`A″B″C″ << A″ B″ C″ >>`. (:person:`Randy Hutson <randy-hutson>`, July 31 2018)
+   :ref:`X_118 <X_118>` is the midpoint of :ref:`X_4 <X_4>` and :ref:`X_101 <X_101>`.
 
 .. figure:: x-00118.svg
-   :alt: X(118) = MIDPOINT OF X(4) AND X(101)
+   :alt: X_118 — MIDPOINT OF X_4 AND X_101
    :align: center
 
-   **X(118) = MIDPOINT OF X(4) AND X(101)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_118** (*MIDPOINT OF X_4 AND X_101*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

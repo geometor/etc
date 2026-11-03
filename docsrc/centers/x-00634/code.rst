@@ -1,18 +1,21 @@
-:canonical_id: X(634)
+:canonical_id: X_634
 :type: code
+:subtitle: ANTICOMPLEMENT OF X_62
 
-X(634) = ANTICOMPLEMENT OF X(62) — Code
-=======================================
+X_634
+=====
+
+.. rubric:: ANTICOMPLEMENT OF X_62
 
 .. enunciation::
 
-   :ref:`X(634) <X(634)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(3443)
+   :ref:`X_634 <X_634>` is the :term:`anticomplement <anticomplement>` of :ref:`X_62 <X_62>`.
 
 .. figure:: x-00634.svg
-   :alt: X(634) = ANTICOMPLEMENT OF X(62)
+   :alt: X_634 — ANTICOMPLEMENT OF X_62
    :align: center
 
-   **X(634) = ANTICOMPLEMENT OF X(62)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_634** (*ANTICOMPLEMENT OF X_62*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

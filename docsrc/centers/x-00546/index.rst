@@ -1,22 +1,31 @@
 :order: 546
 :type: center
-:canonical_id: X(546)
-:dependencies: X(2), X(3), X(4), X(5), X(13), X(14), X(113), X(137), X(140), X(156), X(382), X(397), X(398), X(548), X(550), X(578), X(946), X(952), X(1385), X(3530), X(3628), X(37922)
+:canonical_id: X_546
+:subtitle: MIDPOINT OF X_4 AND X_5
+:dependencies: X_2, X_3, X_4, X_5, X_13, X_14, X_113, X_137, X_140, X_156, X_382, X_397, X_398, X_548, X_550, X_578, X_946, X_952, X_1385, X_3530, X_3628, X_37922
 
-.. _X(546):
+.. _X_546:
 
-X(546) = MIDPOINT OF X(4) AND X(5)
-==================================
+X_546
+=====
+
+.. rubric:: MIDPOINT OF X_4 AND X_5
 
 .. enunciation::
 
-   Let :g:`A'B'C' << A' B' C' >>`, :g:`A″B″C″ << A″ B″ C″ >>` be the outer and inner Vecten triangles, resp. Let (:g:`O_{a} <O_a>`) be the circle inscribed in square A':g:`BA″C << B A″ C >>`, and define (:g:`O_{b} <O_b>`) and (:g:`O_{c} <O_c>`) cyclically. :ref:`X(546) <X(546)>` is the radical center of circles (:g:`O_{a} <O_a>`), (:g:`O_{b} <O_b>`), (:g:`O_{c} <O_c>`). (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
+   :ref:`X_546 <X_546>` is the midpoint of :ref:`X_4 <X_4>` and :ref:`X_5 <X_5>`.
 
 .. figure:: x-00546.svg
-   :alt: X(546) = MIDPOINT OF X(4) AND X(5)
+   :alt: X_546 — MIDPOINT OF X_4 AND X_5
    :align: center
 
-   **X(546) = MIDPOINT OF X(4) AND X(5)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_546** (*MIDPOINT OF X_4 AND X_5*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`), :g:`{113, 137} <{ 113, 137 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_113 <X_113>` (:ref:`JERABEK ANTIPODE <X_113>`), :g:`X_137 <X_137>` (:ref:`-OF-ORTHIC-TRIANGLE <X_137>`)
 
 .. signature:: center
 
@@ -32,42 +41,46 @@ X(546) = MIDPOINT OF X(4) AND X(5)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(546) <X(546)>` = :ref:`X(3) <X(3)>` - :math:`3` :ref:`X(5) <X(5)>` = :ref:`X(4) <X(4)>` + :ref:`X(5) <X(5)>` = :ref:`X(3) <X(3)>` + :math:`3` :ref:`X(4) <X(4)>`
+   * :ref:`X_546 <X_546>` = :ref:`X_3 <X_3>` - :math:`3` :ref:`X_5 <X_5>` = :ref:`X_4 <X_4>` + :ref:`X_5 <X_5>` = :ref:`X_3 <X_3>` + :math:`3` :ref:`X_4 <X_4>`
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`13 <X(13)>`, :ref:`398 <X(398)>`}, {:ref:`14 <X(14)>`, :ref:`397 <X(397)>`}, {:ref:`113 <X(113)>`, :ref:`137 <X(137)>`}, {:ref:`156 <X(156)>`, :ref:`578 <X(578)>`}, {:ref:`946 <X(946)>`, :ref:`952 <X(952)>`}
+   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`13 <X_13>`, :ref:`398 <X_398>`}, {:ref:`14 <X_14>`, :ref:`397 <X_397>`}, {:ref:`113 <X_113>`, :ref:`137 <X_137>`}, {:ref:`156 <X_156>`, :ref:`578 <X_578>`}, {:ref:`946 <X_946>`, :ref:`952 <X_952>`}
 
 .. collapse:: Functional Relations
    :badge: 14 relations
 
-   * :ref:`X(546) <X(546)>` = midpoint of X(i) and X(j) for these (i,j): (:ref:`4 <X(4)>`, :ref:`5 <X(5)>`), (:ref:`382 <X(382)>`, :ref:`550 <X(550)>`)
-   * :ref:`X(546) <X(546)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`140 <X(140)>`, :ref:`5 <X(5)>`), (:ref:`548 <X(548)>`, :ref:`140 <X(140)>`)
-   * :ref:`X(546) <X(546)>` = :term:`complement <complement>` of :ref:`X(550) <X(550)>`
-   * :ref:`X(546) <X(546)>` = :term:`anticomplement <anticomplement>` of X(3530)
-   * :ref:`X(546) <X(546)>` = circumcircle-inverse of X(37922)
-   * :ref:`X(546) <X(546)>` = orthocentroidal-circle-inverse of :ref:`X(382) <X(382)>`
-   * :ref:`X(546) <X(546)>` = X(1385)-of-orthic-triangle if :g:`ABC << A B C >>` is acute
-   * :ref:`X(546) <X(546)>` = :ref:`X(5) <X(5)>`-of-Euler-triangle
-   * :ref:`X(546) <X(546)>` = {:ref:`X(3) <X(3)>`,\ :ref:`X(5) <X(5)>`}-harmonic conjugate of X(3628)
-   * :ref:`X(546) <X(546)>` = :ref:`X(5) <X(5)>`-of-Ehrmann-mid-triangle
-   * :ref:`X(546) <X(546)>` = Ehrmann-side-to-orthic :term:`similarity image <similarity-image>` of :ref:`X(5) <X(5)>`
-   * :ref:`X(546) <X(546)>` = Johnson-to-Ehrmann-mid similarity image of :ref:`X(5) <X(5)>`
-   * :ref:`X(546) <X(546)>` = homothetic center of Ehrmann mid-triangle and Euler triangle
-   * :ref:`X(546) <X(546)>` = radical center of de Longchamps circles of :g:`ABC << A B C >>` and 1st and 2nd Ehrmann inscribed triangles
+   * :ref:`X_546 <X_546>` = midpoint of X_i and X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`5 <X_5>`), (:ref:`382 <X_382>`, :ref:`550 <X_550>`)
+   * :ref:`X_546 <X_546>` = reflection of X_i in X_j for these (i,j): (:ref:`140 <X_140>`, :ref:`5 <X_5>`), (:ref:`548 <X_548>`, :ref:`140 <X_140>`)
+   * :ref:`X_546 <X_546>` = :term:`complement <complement>` of :ref:`X_550 <X_550>`
+   * :ref:`X_546 <X_546>` = :term:`anticomplement <anticomplement>` of X_3530
+   * :ref:`X_546 <X_546>` = circumcircle-inverse of X_37922
+   * :ref:`X_546 <X_546>` = orthocentroidal-circle-inverse of :ref:`X_382 <X_382>`
+   * :ref:`X_546 <X_546>` = X_1385-of-orthic-triangle if :g:`ABC << A B C >>` is acute
+   * :ref:`X_546 <X_546>` = :ref:`X_5 <X_5>`-of-Euler-triangle
+   * :ref:`X_546 <X_546>` = {:ref:`X_3 <X_3>`,\ :ref:`X_5 <X_5>`}-harmonic conjugate of X_3628
+   * :ref:`X_546 <X_546>` = :ref:`X_5 <X_5>`-of-Ehrmann-mid-triangle
+   * :ref:`X_546 <X_546>` = Ehrmann-side-to-orthic :term:`similarity image <similarity-image>` of :ref:`X_5 <X_5>`
+   * :ref:`X_546 <X_546>` = Johnson-to-Ehrmann-mid similarity image of :ref:`X_5 <X_5>`
+   * :ref:`X_546 <X_546>` = homothetic center of Ehrmann mid-triangle and :term:`Euler triangle <euler-triangle>`
+   * :ref:`X_546 <X_546>` = radical center of de Longchamps circles of :g:`ABC << A B C >>` and 1st and 2nd Ehrmann inscribed triangles
 
 Notes
 -----
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(546) <X(546)>` has Shinagawa coefficients :math:`(1,5)`.
+   As a point on the Euler line, :ref:`X_546 <X_546>` has Shinagawa coefficients :math:`(1,5)`.
 
 .. container:: note-item
 
-   Let :g:`M_{A} <M_A>` denote the point in which the :g:`A <A>`-median meets side :g:`BC <[ B C ]>`. On 11/05/03, Andrew Crane noted that :ref:`X(546) <X(546)>` is the radical center of circles (A), (B), (C), where (A) denotes the circle centered at :g:`A <A>` and passing through :g:`M_{A} <M_A>`, and (B) and (C) are defined cyclically.
+   Let :g:`A'B'C' << A' B' C' >>`, :g:`A″B″C″ << A″ B″ C″ >>` be the outer and inner Vecten triangles, resp. Let (:g:`O_{a} <O_a>`) be the circle inscribed in square A':g:`BA″C << B A″ C >>`, and define (:g:`O_{b} <O_b>`) and (:g:`O_{c} <O_c>`) cyclically. :ref:`X_546 <X_546>` is the radical center of circles (:g:`O_{a} <O_a>`), (:g:`O_{b} <O_b>`), (:g:`O_{c} <O_c>`). (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
+
+.. container:: note-item
+
+   Let :g:`M_{A} <M_A>` denote the point in which the :g:`A <A>`-median meets side :g:`BC <[ B C ]>`. On 11/05/03, Andrew Crane noted that :ref:`X_546 <X_546>` is the radical center of circles (A), (B), (C), where (A) denotes the circle centered at :g:`A <A>` and passing through :g:`M_{A} <M_A>`, and (B) and (C) are defined cyclically.
 
 .. toctree::
    :hidden:

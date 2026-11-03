@@ -1,18 +1,21 @@
-:canonical_id: X(899)
+:canonical_id: X_899
 :type: code
+:subtitle: INTERSECTION OF LINES X_1X_2 AND X_6X_750
 
-X(899) = INTERSECTION OF LINES X(1)X(2) AND X(6)X(750) — Code
-=============================================================
+X_899
+=====
+
+.. rubric:: INTERSECTION OF LINES X_1X_2 AND X_6X_750
 
 .. enunciation::
 
-   :ref:`X(899) <X(899)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(37129)
+   :ref:`X_899 <X_899>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_1 <X_1>`\ \ :ref:`X_649 <X_649>`
 
 .. figure:: x-00899.svg
-   :alt: X(899) = INTERSECTION OF LINES X(1)X(2) AND X(6)X(750)
+   :alt: X_899 — INTERSECTION OF LINES X_1X_2 AND X_6X_750
    :align: center
 
-   **X(899) = INTERSECTION OF LINES X(1)X(2) AND X(6)X(750)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_899** (*INTERSECTION OF LINES X_1X_2 AND X_6X_750*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

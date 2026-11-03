@@ -1,22 +1,31 @@
 :order: 635
 :type: center
-:canonical_id: X(635)
-:dependencies: X(2), X(3), X(5), X(13), X(16), X(17), X(18), X(61), X(62), X(140), X(141), X(298), X(299), X(397), X(532), X(618), X(619), X(627), X(629), X(633), X(634)
+:canonical_id: X_635
+:subtitle: COMPLEMENT OF X_61
+:dependencies: X_2, X_3, X_5, X_13, X_16, X_17, X_18, X_61, X_62, X_140, X_141, X_298, X_299, X_397, X_532, X_618, X_619, X_627, X_629, X_633, X_634
 
-.. _X(635):
+.. _X_635:
 
-X(635) = COMPLEMENT OF X(61)
-============================
+X_635
+=====
+
+.. rubric:: COMPLEMENT OF X_61
 
 .. enunciation::
 
-   :ref:`X(635) <X(635)>` = midpoint of :ref:`X(61) <X(61)>` and :ref:`X(633) <X(633)>`
+   :ref:`X_635 <X_635>` is the :term:`complement <complement>` of :ref:`X_61 <X_61>`.
 
 .. figure:: x-00635.svg
-   :alt: X(635) = COMPLEMENT OF X(61)
+   :alt: X_635 — COMPLEMENT OF X_61
    :align: center
 
-   **X(635) = COMPLEMENT OF X(61)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_635** (*COMPLEMENT OF X_61*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{61, 633} <{ 61, 633 }>`
+   * **Related Centers:** :g:`X_61 <X_61>` (:ref:`ISOGONAL CONJUGATE OF X(17) <X_61>`), :g:`X_633 <X_633>` (:ref:`ANTICOMPLEMENT OF X(61) <X_633>`)
 
 .. signature:: center
 
@@ -33,14 +42,14 @@ X(635) = COMPLEMENT OF X(61)
    :badge: 9 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`18 <X(18)>`}, {:ref:`3 <X(3)>`, :ref:`618 <X(618)>`}, {:ref:`5 <X(5)>`, :ref:`141 <X(141)>`}, {:ref:`13 <X(13)>`, :ref:`634 <X(634)>`}, {:ref:`16 <X(16)>`, :ref:`627 <X(627)>`}, {:ref:`17 <X(17)>`, :ref:`299 <X(299)>`}, {:ref:`62 <X(62)>`, :ref:`298 <X(298)>`}, {:ref:`140 <X(140)>`, :ref:`619 <X(619)>`}, {:ref:`397 <X(397)>`, :ref:`532 <X(532)>`}
+   {:ref:`2 <X_2>`, :ref:`18 <X_18>`}, {:ref:`3 <X_3>`, :ref:`618 <X_618>`}, {:ref:`5 <X_5>`, :ref:`141 <X_141>`}, {:ref:`13 <X_13>`, :ref:`634 <X_634>`}, {:ref:`16 <X_16>`, :ref:`627 <X_627>`}, {:ref:`17 <X_17>`, :ref:`299 <X_299>`}, {:ref:`62 <X_62>`, :ref:`298 <X_298>`}, {:ref:`140 <X_140>`, :ref:`619 <X_619>`}, {:ref:`397 <X_397>`, :ref:`532 <X_532>`}
 
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X(635) <X(635)>` = midpoint of :ref:`X(61) <X(61)>` and :ref:`X(633) <X(633)>`
-   * :ref:`X(635) <X(635)>` = :term:`complement <complement>` of :ref:`X(61) <X(61)>`
-   * :ref:`X(635) <X(635)>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X(629) <X(629)>`
+   * :ref:`X_635 <X_635>` = midpoint of :ref:`X_61 <X_61>` and :ref:`X_633 <X_633>`
+   * :ref:`X_635 <X_635>` = complement of :ref:`X_61 <X_61>`
+   * :ref:`X_635 <X_635>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X_629 <X_629>`
 
 .. toctree::
    :hidden:

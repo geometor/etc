@@ -1,18 +1,21 @@
-:canonical_id: X(354)
+:canonical_id: X_354
 :type: code
+:subtitle: WEILL POINT
 
-X(354) = WEILL POINT — Code
-===========================
+X_354
+=====
+
+.. rubric:: WEILL POINT
 
 .. enunciation::
 
-   :ref:`X(354) <X(354)>` is the perspector of the intangents triangle and the triangle :g:`Q_{A}Q_{B}Q_{C} << Q_A Q_B Q_C >>` described at X(3598). (:person:`Peter Moses <peter-moses>`, Nov. 4, 2010)
+   :ref:`X_354 <X_354>` = :term:`crosspoint <crosspoint>` of :ref:`X_1 <X_1>` and :ref:`X_7 <X_7>`
 
 .. figure:: x-00354.svg
-   :alt: X(354) = WEILL POINT
+   :alt: X_354 — WEILL POINT
    :align: center
 
-   **X(354) = WEILL POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_354** (*WEILL POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

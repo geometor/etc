@@ -1,18 +1,21 @@
-:canonical_id: X(367)
+:canonical_id: X_367
 :type: code
+:subtitle: CROSSPOINT OF X_1 AND X_366
 
-X(367) = CROSSPOINT OF X(1) AND X(366) — Code
-=============================================
+X_367
+=====
+
+.. rubric:: CROSSPOINT OF X_1 AND X_366
 
 .. enunciation::
 
-   :ref:`X(367) <X(367)>` = :term:`crosspoint <crosspoint>` of :ref:`X(1) <X(1)>` and :ref:`X(366) <X(366)>`
+   :ref:`X_367 <X_367>` is the :term:`crosspoint <crosspoint>` of :ref:`X_1 <X_1>` and :ref:`X_366 <X_366>`.
 
 .. figure:: x-00367.svg
-   :alt: X(367) = CROSSPOINT OF X(1) AND X(366)
+   :alt: X_367 — CROSSPOINT OF X_1 AND X_366
    :align: center
 
-   **X(367) = CROSSPOINT OF X(1) AND X(366)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_367** (*CROSSPOINT OF X_1 AND X_366*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,18 +1,21 @@
-:canonical_id: X(511)
+:canonical_id: X_511
 :type: code
+:subtitle: ISOGONAL CONJUGATE OF X_98
 
-X(511) = ISOGONAL CONJUGATE OF X(98) — Code
-===========================================
+X_511
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_98
 
 .. enunciation::
 
-   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X(511) <X(511)>` lies on the line at infinity.
+   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X_511 <X_511>` lies on the line at infinity.
 
 .. figure:: x-00511.svg
-   :alt: X(511) = ISOGONAL CONJUGATE OF X(98)
+   :alt: X_511 — ISOGONAL CONJUGATE OF X_98
    :align: center
 
-   **X(511) = ISOGONAL CONJUGATE OF X(98)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_511** (*ISOGONAL CONJUGATE OF X_98*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

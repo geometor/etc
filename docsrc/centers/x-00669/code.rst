@@ -1,18 +1,21 @@
-:canonical_id: X(669)
+:canonical_id: X_669
 :type: code
+:subtitle: CROSSDIFFERENCE OF X_2 AND X_39
 
-X(669) = CROSSDIFFERENCE OF X(2) AND X(39) — Code
-=================================================
+X_669
+=====
+
+.. rubric:: CROSSDIFFERENCE OF X_2 AND X_39
 
 .. enunciation::
 
-   :ref:`X(669) <X(669)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(670) <X(670)>`
+   :ref:`X_669 <X_669>` = :term:`crossdifference <crossdifference>` of every pair of points on line {2, 39}
 
 .. figure:: x-00669.svg
-   :alt: X(669) = CROSSDIFFERENCE OF X(2) AND X(39)
+   :alt: X_669 — CROSSDIFFERENCE OF X_2 AND X_39
    :align: center
 
-   **X(669) = CROSSDIFFERENCE OF X(2) AND X(39)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_669** (*CROSSDIFFERENCE OF X_2 AND X_39*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

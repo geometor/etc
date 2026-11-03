@@ -1,18 +1,21 @@
-:canonical_id: X(548)
+:canonical_id: X_548
 :type: code
+:subtitle: MIDPOINT OF X_5 AND X_20
 
-X(548) = MIDPOINT OF X(5) AND X(20) — Code
-==========================================
+X_548
+=====
+
+.. rubric:: MIDPOINT OF X_5 AND X_20
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(548) <X(548)>` has Shinagawa coefficients :math:`(5,-7)`.
+   :ref:`X_548 <X_548>` is the midpoint of :ref:`X_5 <X_5>` and :ref:`X_20 <X_20>`.
 
 .. figure:: x-00548.svg
-   :alt: X(548) = MIDPOINT OF X(5) AND X(20)
+   :alt: X_548 — MIDPOINT OF X_5 AND X_20
    :align: center
 
-   **X(548) = MIDPOINT OF X(5) AND X(20)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_548** (*MIDPOINT OF X_5 AND X_20*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

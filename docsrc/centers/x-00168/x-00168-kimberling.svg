@@ -27,6 +27,7 @@ svg.geometor-etc-drawing.is-panning {
 }
 
 svg.geometor-etc-drawing.hide-labels #labels .point-label,
+svg.geometor-etc-drawing.hide-labels #labels .guide-label,
 svg.geometor-etc-drawing.hide-labels #labels .target-label,
 svg.geometor-etc-drawing.hide-labels #labels .given-label {
     display: none;
@@ -188,12 +189,19 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
     font-weight: 600;
     paint-order: stroke;
     stroke: var(--accent-color);
-    stroke-width: 3px;
+    stroke-width: 0.15em;
     stroke-linecap: round;
     stroke-linejoin: round;
-    vector-effect: non-scaling-stroke;
     user-select: none;
     pointer-events: none;
+}
+
+#labels tspan {
+    paint-order: stroke;
+    stroke: var(--accent-color);
+    stroke-width: 0.15em;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 #labels text.target-label {
@@ -203,6 +211,11 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
 
 #labels text.given-label {
     fill: #8f8;
+}
+
+#labels text.guide-label {
+    fill: #ffb74d;
+    font-weight: 600;
 }
 
 #labels text.hover-label {
@@ -315,6 +328,9 @@ figure:hover .etc-svg-toolbar {
     <polyline data-highlight-for="[ A B ]" class="highlight-segment" points="0.000000,-0.000000 1.000000,-0.000000" style="display: none;" />
     <polyline data-highlight-for="[ B C ]" class="highlight-segment" points="1.000000,-0.000000 0.633136,-0.280051" style="display: none;" />
     <polyline data-highlight-for="[ C A ]" class="highlight-segment" points="0.633136,-0.280051 0.000000,-0.000000" style="display: none;" />
+    <polyline data-highlight-for="[ J_a X_168 ]" class="highlight-segment" points="1.076923,-0.227542 0.436141,0.599817" style="display: none;" />
+    <polyline data-highlight-for="[ J_b X_168 ]" class="highlight-segment" points="-0.076923,-0.364066 0.436141,0.599817" style="display: none;" />
+    <polyline data-highlight-for="[ J_c X_168 ]" class="highlight-segment" points="0.384615,1.820332 0.436141,0.599817" style="display: none;" />
     <polyline data-highlight-for="{ 9, 164 }" class="highlight-segment" points="0.502177,-0.034346 0.483233,0.147583" style="display: none;" />
     <polyline data-highlight-for="{ 165, 166 }" class="highlight-segment" points="0.461538,0.409575 0.649413,-0.182564" style="display: none;" />
     <polyline data-highlight-for="{ 1, 173 }" class="highlight-segment" points="0.615385,-0.130024 0.631894,-0.197246" style="display: none;" />
@@ -323,8 +339,11 @@ figure:hover .etc-svg-toolbar {
     <line data-id="[ A B ]" data-name="Sideline AB (Base c = 1)" class="line given sideline" data-category="elements" x1="-1000.00000" y1="-0.00000" x2="1000.00000" y2="-0.00000"><title>[ A B ]: Sideline AB (Base c = 1)</title></line>
     <line data-id="[ B C ]" data-name="Sideline BC (Side a)" class="line sideline" data-category="elements" x1="367.86391" y1="280.05111" x2="-365.86391" y2="-280.05111"><title>[ B C ]: Sideline BC (Side a)</title></line>
     <line data-id="[ C A ]" data-name="Sideline CA (Side b)" class="line sideline" data-category="elements" x1="633.76923" y1="-280.33116" x2="-632.50295" y2="279.77106"><title>[ C A ]: Sideline CA (Side b)</title></line>
-    <line data-id="{ 9, 164 }" data-name="Central Line L(9, 164)" class="line central_line" data-category="elements" x1="19.44663" y1="-181.96297" x2="-18.44227" y2="181.89427"><title>{ 9, 164 }: Central Line L(9, 164)</title></line>
-    <line data-id="{ 165, 166 }" data-name="Central Line L(165, 166)" class="line central_line" data-category="elements" x1="-187.41264" y1="592.54830" x2="188.33572" y2="-591.72916"><title>{ 165, 166 }: Central Line L(165, 166)</title></line>
+    <line data-id="[ J_a X_168 ]" data-name="Line [ J_a X_168 ]" class="line bisector" data-category="elements" x1="641.85910" y1="-827.58617" x2="-639.70526" y2="827.13109"><title>[ J_a X_168 ]: Line [ J_a X_168 ]</title></line>
+    <line data-id="[ J_b X_168 ]" data-name="Line [ J_b X_168 ]" class="line bisector" data-category="elements" x1="-513.14090" y1="-964.24762" x2="512.98706" y2="963.51948"><title>[ J_b X_168 ]: Line [ J_b X_168 ]</title></line>
+    <line data-id="[ J_c X_168 ]" data-name="Line [ J_c X_168 ]" class="line bisector" data-category="elements" x1="-51.14090" y1="1222.33547" x2="51.91014" y2="-1218.69481"><title>[ J_c X_168 ]: Line [ J_c X_168 ]</title></line>
+    <line data-id="{ 9, 164 }" data-name="Central Line L(9, 164)" class="line central_line incident" data-category="elements" x1="19.44663" y1="-181.96297" x2="-18.44227" y2="181.89427"><title>{ 9, 164 }: Central Line L(9, 164)</title></line>
+    <line data-id="{ 165, 166 }" data-name="Central Line L(165, 166)" class="line central_line incident" data-category="elements" x1="-187.41264" y1="592.54830" x2="188.33572" y2="-591.72916"><title>{ 165, 166 }: Central Line L(165, 166)</title></line>
     <line data-id="{ 1, 173 }" data-name="Central Line L(1, 173)" class="line central_line incident" data-category="elements" x1="-15.89391" y1="67.09219" x2="17.12467" y2="-67.35223"><title>{ 1, 173 }: Central Line L(1, 173)</title></line>
   </g>
   <g id="points">
@@ -334,28 +353,31 @@ figure:hover .etc-svg-toolbar {
     <circle data-id="J_a" data-name="A-Excenter J_a" class="point guide" data-category="points" cx="1.076923" cy="-0.227542" r="0.021320"><title>J_a = A-Excenter J_a (1.0769, 0.2275)</title></circle>
     <circle data-id="J_b" data-name="B-Excenter J_b" class="point guide" data-category="points" cx="-0.076923" cy="-0.364066" r="0.021320"><title>J_b = B-Excenter J_b (-0.0769, 0.3641)</title></circle>
     <circle data-id="J_c" data-name="C-Excenter J_c" class="point guide" data-category="points" cx="0.384615" cy="1.820332" r="0.021320"><title>J_c = C-Excenter J_c (0.3846, -1.8203)</title></circle>
-    <circle data-id="X(9)" data-name="MITTENPUNKT" class="point center" data-category="points" cx="0.502177" cy="-0.034346" r="0.033312"><title>X(9) = MITTENPUNKT (0.5022, 0.0343)</title></circle>
-    <circle data-id="X(164)" data-name="INCENTER OF EXCENTRAL TRIANGLE" class="point center" data-category="points" cx="0.483233" cy="0.147583" r="0.033312"><title>X(164) = INCENTER OF EXCENTRAL TRIANGLE (0.4832, -0.1476)</title></circle>
-    <circle data-id="X(165)" data-name="CENTROID OF THE EXCENTRAL TRIANGLE" class="point center" data-category="points" cx="0.461538" cy="0.409575" r="0.033312"><title>X(165) = CENTROID OF THE EXCENTRAL TRIANGLE (0.4615, -0.4096)</title></circle>
-    <circle data-id="X(166)" data-name="GERGONNE POINT OF EXCENTRAL TRIANGLE" class="point center" data-category="points" cx="0.649413" cy="-0.182564" r="0.033312"><title>X(166) = GERGONNE POINT OF EXCENTRAL TRIANGLE (0.6494, 0.1826)</title></circle>
-    <circle data-id="X(1)" data-name="INCENTER" class="point center incident" data-category="points" cx="0.615385" cy="-0.130024" r="0.033312"><title>X(1) = INCENTER (0.6154, 0.1300)</title></circle>
-    <circle data-id="X(173)" data-name="CONGRUENT ISOSCELIZERS POINT" class="point center incident" data-category="points" cx="0.631894" cy="-0.197246" r="0.033312"><title>X(173) = CONGRUENT ISOSCELIZERS POINT (0.6319, 0.1972)</title></circle>
-    <circle data-id="X(168)" data-name="MITTENPUNKT OF EXCENTRAL TRIANGLE" class="point selected target" data-category="points" cx="0.436141" cy="0.599817" r="0.046637"><title>X(168) = MITTENPUNKT OF EXCENTRAL TRIANGLE (0.4361, -0.5998)</title></circle>
+    <circle data-id="X_9" data-name="MITTENPUNKT" class="point center incident" data-category="points" cx="0.502177" cy="-0.034346" r="0.033312"><title>X_9 = MITTENPUNKT (0.5022, 0.0343)</title></circle>
+    <circle data-id="X_164" data-name="INCENTER OF EXCENTRAL TRIANGLE" class="point center incident" data-category="points" cx="0.483233" cy="0.147583" r="0.033312"><title>X_164 = INCENTER OF EXCENTRAL TRIANGLE (0.4832, -0.1476)</title></circle>
+    <circle data-id="X_165" data-name="CENTROID OF THE EXCENTRAL TRIANGLE" class="point center incident" data-category="points" cx="0.461538" cy="0.409575" r="0.033312"><title>X_165 = CENTROID OF THE EXCENTRAL TRIANGLE (0.4615, -0.4096)</title></circle>
+    <circle data-id="X_166" data-name="GERGONNE POINT OF EXCENTRAL TRIANGLE" class="point center incident" data-category="points" cx="0.649413" cy="-0.182564" r="0.033312"><title>X_166 = GERGONNE POINT OF EXCENTRAL TRIANGLE (0.6494, 0.1826)</title></circle>
+    <circle data-id="X_1" data-name="INCENTER" class="point center incident" data-category="points" cx="0.615385" cy="-0.130024" r="0.033312"><title>X_1 = INCENTER (0.6154, 0.1300)</title></circle>
+    <circle data-id="X_173" data-name="CONGRUENT ISOSCELIZERS POINT" class="point center incident" data-category="points" cx="0.631894" cy="-0.197246" r="0.033312"><title>X_173 = CONGRUENT ISOSCELIZERS POINT (0.6319, 0.1972)</title></circle>
+    <circle data-id="X_168" data-name="MITTENPUNKT OF EXCENTRAL TRIANGLE" class="point selected target" data-category="points" cx="0.436141" cy="0.599817" r="0.046637"><title>X_168 = MITTENPUNKT OF EXCENTRAL TRIANGLE (0.4361, -0.5998)</title></circle>
   </g>
   <g id="labels">
     <text class="given-label" data-point-id="A" data-anchor-x="0.000000" data-anchor-y="-0.000000" data-offset-x="-24.0" data-offset-y="22.5" x="-0.106599" y="0.099936" font-size="0.089943">A</text>
     <text class="given-label" data-point-id="B" data-anchor-x="1.000000" data-anchor-y="-0.000000" data-offset-x="12.0" data-offset-y="22.5" x="1.053299" y="0.099936" font-size="0.089943">B</text>
     <text class="point-label" data-point-id="C" data-anchor-x="0.633136" data-anchor-y="-0.280051" data-offset-x="-7.5" data-offset-y="-15.0" x="0.599824" y="-0.346675" font-size="0.089943">C</text>
-    <text class="point-label" data-point-id="X(9)" data-anchor-x="0.502177" data-anchor-y="-0.034346" data-offset-x="12.0" data-offset-y="-10.5" x="0.555476" y="-0.080983" font-size="0.089943">X(9)</text>
-    <text class="point-label" data-point-id="X(164)" data-anchor-x="0.483233" data-anchor-y="0.147583" data-offset-x="12.0" data-offset-y="-10.5" x="0.536532" y="0.100946" font-size="0.089943">X(164)</text>
-    <text class="point-label" data-point-id="X(165)" data-anchor-x="0.461538" data-anchor-y="0.409575" data-offset-x="12.0" data-offset-y="-10.5" x="0.514838" y="0.362938" font-size="0.089943">X(165)</text>
-    <text class="point-label" data-point-id="X(166)" data-anchor-x="0.649413" data-anchor-y="-0.182564" data-offset-x="12.0" data-offset-y="-10.5" x="0.702712" y="-0.229201" font-size="0.089943">X(166)</text>
-    <text class="point-label incident" data-point-id="X(1)" data-anchor-x="0.615385" data-anchor-y="-0.130024" data-offset-x="12.0" data-offset-y="-10.5" x="0.668684" y="-0.176661" font-size="0.089943">X(1)</text>
-    <text class="point-label incident" data-point-id="X(173)" data-anchor-x="0.631894" data-anchor-y="-0.197246" data-offset-x="12.0" data-offset-y="-10.5" x="0.685193" y="-0.243883" font-size="0.089943">X(173)</text>
-    <text class="target-label" data-point-id="X(168)" data-anchor-x="0.436141" data-anchor-y="0.599817" data-offset-x="12.0" data-offset-y="-10.5" x="0.489440" y="0.553180" font-size="0.089943">X(168)</text>
+    <text class="guide-label guide" data-point-id="J_a" data-anchor-x="1.076923" data-anchor-y="-0.227542" data-offset-x="10.0" data-offset-y="-7.0" x="1.121339" y="-0.258633" font-size="0.077728">J<tspan dy="0.3em" font-size="75%">a</tspan></text>
+    <text class="guide-label guide" data-point-id="J_b" data-anchor-x="-0.076923" data-anchor-y="-0.364066" data-offset-x="-30.0" data-offset-y="-7.0" x="-0.210171" y="-0.395158" font-size="0.077728">J<tspan dy="0.3em" font-size="75%">b</tspan></text>
+    <text class="guide-label guide" data-point-id="J_c" data-anchor-x="0.384615" data-anchor-y="1.820332" data-offset-x="-8.0" data-offset-y="19.0" x="0.349082" y="1.904723" font-size="0.077728">J<tspan dy="0.3em" font-size="75%">c</tspan></text>
+    <text class="point-label incident" data-point-id="X_9" data-anchor-x="0.502177" data-anchor-y="-0.034346" data-offset-x="12.0" data-offset-y="-10.5" x="0.555476" y="-0.080983" font-size="0.089943">X<tspan dy="0.3em" font-size="75%">9</tspan></text>
+    <text class="point-label incident" data-point-id="X_164" data-anchor-x="0.483233" data-anchor-y="0.147583" data-offset-x="12.0" data-offset-y="-10.5" x="0.536532" y="0.100946" font-size="0.089943">X<tspan dy="0.3em" font-size="75%">164</tspan></text>
+    <text class="point-label incident" data-point-id="X_165" data-anchor-x="0.461538" data-anchor-y="0.409575" data-offset-x="12.0" data-offset-y="-10.5" x="0.514838" y="0.362938" font-size="0.089943">X<tspan dy="0.3em" font-size="75%">165</tspan></text>
+    <text class="point-label incident" data-point-id="X_166" data-anchor-x="0.649413" data-anchor-y="-0.182564" data-offset-x="12.0" data-offset-y="-10.5" x="0.702712" y="-0.229201" font-size="0.089943">X<tspan dy="0.3em" font-size="75%">166</tspan></text>
+    <text class="point-label incident" data-point-id="X_1" data-anchor-x="0.615385" data-anchor-y="-0.130024" data-offset-x="12.0" data-offset-y="-10.5" x="0.668684" y="-0.176661" font-size="0.089943">X<tspan dy="0.3em" font-size="75%">1</tspan></text>
+    <text class="point-label incident" data-point-id="X_173" data-anchor-x="0.631894" data-anchor-y="-0.197246" data-offset-x="12.0" data-offset-y="-10.5" x="0.685193" y="-0.243883" font-size="0.089943">X<tspan dy="0.3em" font-size="75%">173</tspan></text>
+    <text class="target-label" data-point-id="X_168" data-anchor-x="0.436141" data-anchor-y="0.599817" data-offset-x="12.0" data-offset-y="-10.5" x="0.489440" y="0.553180" font-size="0.089943">X<tspan dy="0.3em" font-size="75%">168</tspan></text>
     <text class="subtitle-label" x="-1.187812" y="1.980667" font-size="0.076618" fill="#999">Kimberling (6, 9, 13) | AB = 1</text>
   </g>
-  <script type="application/json" class="etc-elements-meta">{"A":{"ID":"A","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex A","subtitle":"Reference triangle vertex at origin (0, 0)","rows":[["x","0.0000"],["y","0.0000"],["bary","1.0000 : 0.0000 : 0.0000"]],"related_points":["A"]},"B":{"ID":"B","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex B","subtitle":"Reference triangle vertex at unit base (1, 0)","rows":[["x","1.0000"],["y","0.0000"],["bary","0.0000 : 1.0000 : 0.0000"]],"related_points":["B"]},"[ A B ]":{"ID":"[ A B ]","type":"line","classes":["given","sideline"],"color":"#aaa","name":"Sideline AB (Base c = 1)","subtitle":"Reference triangle baseline through A and B","rows":[["pts","A (Vertex A), B (Vertex B)"],["len","1.0000"],["eq","0.0000x + 1.0000y + 0.0000 = 0"]],"related_points":["A","B"]},"C":{"ID":"C","type":"point","classes":["vertex"],"color":"#0ff","name":"Vertex C","subtitle":"Reference triangle apex constructed by Euclid I.22","rows":[["x","0.6331"],["y","0.2801"],["bary","-0.0000 : 0.0000 : 1.0000"]],"related_points":["C"]},"[ B C ]":{"ID":"[ B C ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline BC (Side a)","subtitle":"Reference triangle sideline opposite vertex A","rows":[["pts","B (Vertex B), C (Vertex C)"],["len","0.4615"],["eq","0.6068x + 0.7949y - 0.6068 = 0"]],"related_points":["B","C"]},"[ C A ]":{"ID":"[ C A ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline CA (Side b)","subtitle":"Reference triangle sideline opposite vertex B","rows":[["pts","C (Vertex C), A (Vertex A)"],["len","0.6923"],["eq","0.4045x - 0.9145y + 0.0000 = 0"]],"related_points":["C","A"]},"\u003c A B C \u003e":{"ID":"\u003c A B C \u003e","type":"polygon","classes":["reference"],"color":"#58a6ff","name":"Reference Triangle △ABC","subtitle":"Primary reference triangle with unit baseline AB = 1","rows":[["verts","A, B, C"],["sides","0.4615, 0.6923, 1.0000"],["area","0.1400"]],"related_points":["A","B","C"]},"J_a":{"ID":"J_a","type":"point","classes":[],"color":"orange","name":"A-Excenter J_a","subtitle":"Excentral triangle vertex opposite A","rows":[["x","1.0769"],["y","0.2275"],["bary","-0.3750 : 0.5625 : 0.8125"]],"related_points":["J_a"]},"J_b":{"ID":"J_b","type":"point","classes":[],"color":"orange","name":"B-Excenter J_b","subtitle":"Excentral triangle vertex opposite B","rows":[["x","-0.0769"],["y","0.3641"],["bary","0.6000 : -0.9000 : 1.3000"]],"related_points":["J_b"]},"J_c":{"ID":"J_c","type":"point","classes":[],"color":"orange","name":"C-Excenter J_c","subtitle":"Excentral triangle vertex opposite C","rows":[["x","0.3846"],["y","-1.8203"],["bary","3.0000 : 4.5000 : -6.5000"]],"related_points":["J_c"]},"\u003c J_a J_b J_c \u003e":{"ID":"\u003c J_a J_b J_c \u003e","type":"polygon","classes":["secondary"],"color":"#90ee90","name":"Excentral Triangle △J_a J_b J_c","subtitle":"Anticevian triangle of Incenter X(1) (the three excenters)","rows":[["verts","J_a, J_b, J_c"],["sides","2.2326, 2.1617, 1.1619"],["area","1.2287"]],"related_points":["J_a","J_b","J_c"]},"X(9)":{"ID":"X(9)","type":"point","classes":["center"],"color":"#0ff","name":"MITTENPUNKT","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5022"],["y","0.0343"],["bary","0.4528 : 0.4245 : 0.1226"]],"related_points":["X(9)"]},"X(164)":{"ID":"X(164)","type":"point","classes":["center"],"color":"#0ff","name":"INCENTER OF EXCENTRAL TRIANGLE","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.4832"],["y","-0.1476"],["bary","0.7101 : 0.8169 : -0.5270"]],"related_points":["X(164)"]},"{ 9, 164 }":{"ID":"{ 9, 164 }","type":"line","classes":["central_line"],"color":"#0bd","name":"Central Line L(9, 164)","subtitle":"Through X(9) (MITTENPUNKT) and X(164) (INCENTER OF EXCENTRAL TRIANGLE)","rows":[["pts","X(9) (MITTENPUNKT), X(164) (INCENTER OF EXCENTRAL TRIANGLE)"],["len","0.1829"],["eq","0.9946x - 0.1036y - 0.4959 = 0"]],"related_points":["X(9)","X(164)"]},"X(165)":{"ID":"X(165)","type":"point","classes":["center"],"color":"#0ff","name":"CENTROID OF THE EXCENTRAL TRIANGLE","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.4615"],["y","-0.4096"],["bary","1.0750 : 1.3875 : -1.4625"]],"related_points":["X(165)"]},"X(166)":{"ID":"X(166)","type":"point","classes":["center"],"color":"#0ff","name":"GERGONNE POINT OF EXCENTRAL TRIANGLE","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6494"],["y","0.1826"],["bary","0.1114 : 0.2367 : 0.6519"]],"related_points":["X(166)"]},"{ 165, 166 }":{"ID":"{ 165, 166 }","type":"line","classes":["central_line"],"color":"#0bd","name":"Central Line L(165, 166)","subtitle":"Through X(165) (CENTROID OF THE EXCENTRAL TRIANGLE) and X(166) (GERGONNE POINT OF EXCENTRAL TRIANGLE)","rows":[["pts","X(165) (CENTROID OF THE EXCENTRAL TRIANGLE), X(166) (GERGONNE POINT OF EXCENTRAL TRIANGLE)"],["len","0.6212"],["eq","0.9532x - 0.3024y - 0.5638 = 0"]],"related_points":["X(165)","X(166)"]},"X(1)":{"ID":"X(1)","type":"point","classes":["center","incident"],"color":"#0ff","name":"INCENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6154"],["y","0.1300"],["bary","0.2143 : 0.3214 : 0.4643"]],"related_points":["X(1)"]},"X(173)":{"ID":"X(173)","type":"point","classes":["center","incident"],"color":"#0ff","name":"CONGRUENT ISOSCELIZERS POINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6319"],["y","0.1972"],["bary","0.1097 : 0.1860 : 0.7043"]],"related_points":["X(173)"]},"{ 1, 173 }":{"ID":"{ 1, 173 }","type":"line","classes":["central_line","incident"],"color":"#0bd","name":"Central Line L(1, 173)","subtitle":"Through X(1) (INCENTER) and X(173) (CONGRUENT ISOSCELIZERS POINT)","rows":[["pts","X(1) (INCENTER), X(173) (CONGRUENT ISOSCELIZERS POINT)"],["len","0.0692"],["eq","0.9711x - 0.2385y - 0.5666 = 0"]],"related_points":["X(1)","X(173)"]},"X(168)":{"ID":"X(168)","type":"point","classes":["selected","target"],"color":"gold","name":"MITTENPUNKT OF EXCENTRAL TRIANGLE","subtitle":"Target Triangle Center","rows":[["x","0.4361"],["y","-0.5998"],["bary","1.3496 : 1.7922 : -2.1418"]],"related_points":["X(168)"]}}</script>
+  <script type="application/json" class="etc-elements-meta">{"A":{"ID":"A","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex A","subtitle":"Reference triangle vertex at origin (0, 0)","rows":[["x","0.0000"],["y","0.0000"],["bary","1.0000 : 0.0000 : 0.0000"]],"related_points":["A"]},"B":{"ID":"B","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex B","subtitle":"Reference triangle vertex at unit base (1, 0)","rows":[["x","1.0000"],["y","0.0000"],["bary","0.0000 : 1.0000 : 0.0000"]],"related_points":["B"]},"[ A B ]":{"ID":"[ A B ]","type":"line","classes":["given","sideline"],"color":"#aaa","name":"Sideline AB (Base c = 1)","subtitle":"Reference triangle baseline through A and B","rows":[["pts","A (Vertex A), B (Vertex B)"],["len","1.0000"],["eq","0.0000x + 1.0000y + 0.0000 = 0"]],"related_points":["A","B"]},"C":{"ID":"C","type":"point","classes":["vertex"],"color":"#0ff","name":"Vertex C","subtitle":"Reference triangle apex constructed by Euclid I.22","rows":[["x","0.6331"],["y","0.2801"],["bary","-0.0000 : 0.0000 : 1.0000"]],"related_points":["C"]},"[ B C ]":{"ID":"[ B C ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline BC (Side a)","subtitle":"Reference triangle sideline opposite vertex A","rows":[["pts","B (Vertex B), C (Vertex C)"],["len","0.4615"],["eq","0.6068x + 0.7949y - 0.6068 = 0"]],"related_points":["B","C"]},"[ C A ]":{"ID":"[ C A ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline CA (Side b)","subtitle":"Reference triangle sideline opposite vertex B","rows":[["pts","C (Vertex C), A (Vertex A)"],["len","0.6923"],["eq","0.4045x - 0.9145y + 0.0000 = 0"]],"related_points":["C","A"]},"\u003c A B C \u003e":{"ID":"\u003c A B C \u003e","type":"polygon","classes":["reference"],"color":"#58a6ff","name":"Reference Triangle △ABC","subtitle":"Primary reference triangle with unit baseline AB = 1","rows":[["verts","A, B, C"],["sides","0.4615, 0.6923, 1.0000"],["area","0.1400"]],"related_points":["A","B","C"]},"J_a":{"ID":"J_a","type":"point","classes":[],"color":"orange","name":"A-Excenter J_a","subtitle":"Excentral triangle vertex opposite A","rows":[["x","1.0769"],["y","0.2275"],["bary","-0.3750 : 0.5625 : 0.8125"]],"related_points":["J_a"]},"J_b":{"ID":"J_b","type":"point","classes":[],"color":"orange","name":"B-Excenter J_b","subtitle":"Excentral triangle vertex opposite B","rows":[["x","-0.0769"],["y","0.3641"],["bary","0.6000 : -0.9000 : 1.3000"]],"related_points":["J_b"]},"J_c":{"ID":"J_c","type":"point","classes":[],"color":"orange","name":"C-Excenter J_c","subtitle":"Excentral triangle vertex opposite C","rows":[["x","0.3846"],["y","-1.8203"],["bary","3.0000 : 4.5000 : -6.5000"]],"related_points":["J_c"]},"\u003c J_a J_b J_c \u003e":{"ID":"\u003c J_a J_b J_c \u003e","type":"polygon","classes":["secondary"],"color":"#90ee90","name":"Excentral Triangle △J_a J_b J_c","subtitle":"Anticevian triangle of Incenter X_1 (the three excenters)","rows":[["verts","J_a, J_b, J_c"],["sides","2.2326, 2.1617, 1.1619"],["area","1.2287"]],"related_points":["J_a","J_b","J_c"]},"[ J_a X_168 ]":{"ID":"[ J_a X_168 ]","type":"line","classes":["bisector"],"color":"#aaa","name":"Line [ J_a X_168 ]","subtitle":"Line through J_a and X_168","rows":[["pts","J_a (A-Excenter J_a), X_168 (MITTENPUNKT OF EXCENTRAL TRIANGLE)"],["len","1.0465"],["eq","0.7906x - 0.6123y - 0.7121 = 0"]],"related_points":["J_a","X_168"]},"[ J_b X_168 ]":{"ID":"[ J_b X_168 ]","type":"line","classes":["bisector"],"color":"#aaa","name":"Line [ J_b X_168 ]","subtitle":"Line through J_b and X_168","rows":[["pts","J_b (B-Excenter J_b), X_168 (MITTENPUNKT OF EXCENTRAL TRIANGLE)"],["len","1.0919"],["eq","0.8827x + 0.4699y - 0.1032 = 0"]],"related_points":["J_b","X_168"]},"[ J_c X_168 ]":{"ID":"[ J_c X_168 ]","type":"line","classes":["bisector"],"color":"#aaa","name":"Line [ J_c X_168 ]","subtitle":"Line through J_c and X_168","rows":[["pts","J_c (C-Excenter J_c), X_168 (MITTENPUNKT OF EXCENTRAL TRIANGLE)"],["len","1.2216"],["eq","0.9991x - 0.0422y - 0.4611 = 0"]],"related_points":["J_c","X_168"]},"X_9":{"ID":"X_9","type":"point","classes":["center","incident"],"color":"#0ff","name":"MITTENPUNKT","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5022"],["y","0.0343"],["bary","0.4528 : 0.4245 : 0.1226"]],"related_points":["X_9"]},"X_164":{"ID":"X_164","type":"point","classes":["center","incident"],"color":"#0ff","name":"INCENTER OF EXCENTRAL TRIANGLE","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.4832"],["y","-0.1476"],["bary","0.7101 : 0.8169 : -0.5270"]],"related_points":["X_164"]},"{ 9, 164 }":{"ID":"{ 9, 164 }","type":"line","classes":["central_line","incident"],"color":"#0bd","name":"Central Line L(9, 164)","subtitle":"Through X_9 (MITTENPUNKT) and X_164 (INCENTER OF EXCENTRAL TRIANGLE)","rows":[["pts","X_9 (MITTENPUNKT), X_164 (INCENTER OF EXCENTRAL TRIANGLE)"],["len","0.1829"],["eq","0.9946x - 0.1036y - 0.4959 = 0"]],"related_points":["X_9","X_164"]},"X_165":{"ID":"X_165","type":"point","classes":["center","incident"],"color":"#0ff","name":"CENTROID OF THE EXCENTRAL TRIANGLE","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.4615"],["y","-0.4096"],["bary","1.0750 : 1.3875 : -1.4625"]],"related_points":["X_165"]},"X_166":{"ID":"X_166","type":"point","classes":["center","incident"],"color":"#0ff","name":"GERGONNE POINT OF EXCENTRAL TRIANGLE","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6494"],["y","0.1826"],["bary","0.1114 : 0.2367 : 0.6519"]],"related_points":["X_166"]},"{ 165, 166 }":{"ID":"{ 165, 166 }","type":"line","classes":["central_line","incident"],"color":"#0bd","name":"Central Line L(165, 166)","subtitle":"Through X_165 (CENTROID OF THE EXCENTRAL TRIANGLE) and X_166 (GERGONNE POINT OF EXCENTRAL TRIANGLE)","rows":[["pts","X_165 (CENTROID OF THE EXCENTRAL TRIANGLE), X_166 (GERGONNE POINT OF EXCENTRAL TRIANGLE)"],["len","0.6212"],["eq","0.9532x - 0.3024y - 0.5638 = 0"]],"related_points":["X_165","X_166"]},"X_1":{"ID":"X_1","type":"point","classes":["center","incident"],"color":"#0ff","name":"INCENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6154"],["y","0.1300"],["bary","0.2143 : 0.3214 : 0.4643"]],"related_points":["X_1"]},"X_173":{"ID":"X_173","type":"point","classes":["center","incident"],"color":"#0ff","name":"CONGRUENT ISOSCELIZERS POINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6319"],["y","0.1972"],["bary","0.1097 : 0.1860 : 0.7043"]],"related_points":["X_173"]},"{ 1, 173 }":{"ID":"{ 1, 173 }","type":"line","classes":["central_line","incident"],"color":"#0bd","name":"Central Line L(1, 173)","subtitle":"Through X_1 (INCENTER) and X_173 (CONGRUENT ISOSCELIZERS POINT)","rows":[["pts","X_1 (INCENTER), X_173 (CONGRUENT ISOSCELIZERS POINT)"],["len","0.0692"],["eq","0.9711x - 0.2385y - 0.5666 = 0"]],"related_points":["X_1","X_173"]},"X_168":{"ID":"X_168","type":"point","classes":["selected","target"],"color":"gold","name":"MITTENPUNKT OF EXCENTRAL TRIANGLE","subtitle":"Target Triangle Center","rows":[["x","0.4361"],["y","-0.5998"],["bary","1.3496 : 1.7922 : -2.1418"]],"related_points":["X_168"]}}</script>
   <script>//<![CDATA[
 
 (function () {
@@ -407,14 +429,16 @@ figure:hover .etc-svg-toolbar {
         });
 
         const fontSize = 20.25 * unitsPerPx;
+        const guideFontSize = 17.5 * unitsPerPx;
         labelEls.forEach(lbl => {
             const cx = parseFloat(lbl.getAttribute('data-anchor-x') || '0');
             const cy = parseFloat(lbl.getAttribute('data-anchor-y') || '0');
             const oxPx = parseFloat(lbl.getAttribute('data-offset-x') || '12');
             const oyPx = parseFloat(lbl.getAttribute('data-offset-y') || '-10.5');
+            const isGuideLbl = lbl.classList.contains('guide-label');
             lbl.setAttribute('x', (cx + oxPx * unitsPerPx).toFixed(6));
             lbl.setAttribute('y', (cy + oyPx * unitsPerPx).toFixed(6));
-            lbl.setAttribute('font-size', fontSize.toFixed(6));
+            lbl.setAttribute('font-size', (isGuideLbl ? guideFontSize : fontSize).toFixed(6));
         });
 
         if (subtitleEl) {
@@ -699,11 +723,11 @@ figure:hover .etc-svg-toolbar {
             const refLink = e.target.closest('a.reference.internal');
             if (refLink) {
                 const txt = (refLink.textContent || '').trim();
-                const xm = txt.match(/^X\((\d+)\)$/);
+                const xm = txt.match(/^X(?:_|\()?(\d+)\)?$/);
                 if (xm) {
                     const activeSvg = getActiveSvg();
                     if (activeSvg && activeSvg._etcController.activateHover) {
-                        activeSvg._etcController.activateHover(`X(${xm[1]})`);
+                        activeSvg._etcController.activateHover(`X_${xm[1]}`);
                     }
                 }
             }

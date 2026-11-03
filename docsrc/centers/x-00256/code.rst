@@ -1,18 +1,21 @@
-:canonical_id: X(256)
+:canonical_id: X_256
 :type: code
+:subtitle: 1st SHARYGIN POINT
 
-X(256) = 1st SHARYGIN POINT — Code
-==================================
+X_256
+=====
+
+.. rubric:: 1st SHARYGIN POINT
 
 .. enunciation::
 
-   See the description at X(1281). The lines :g:`AD <[ A D ]>`, :g:`BE <[ B E ]>`, :g:`CF <[ C F ]>` defined there concur in :ref:`X(256) <X(256)>`.
+   :ref:`X_256 <X_256>` = :term:`cevapoint <cevapoint>` of PU(6)
 
 .. figure:: x-00256.svg
-   :alt: X(256) = 1st SHARYGIN POINT
+   :alt: X_256 — 1st SHARYGIN POINT
    :align: center
 
-   **X(256) = 1st SHARYGIN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_256** (*1st SHARYGIN POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

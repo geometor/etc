@@ -1,18 +1,21 @@
-:canonical_id: X(645)
+:canonical_id: X_645
 :type: code
+:subtitle: BARYCENTRIC MULTIPLIER FOR KIEPERT PARABOLA
 
-X(645) = BARYCENTRIC MULTIPLIER FOR KIEPERT PARABOLA — Code
-===========================================================
+X_645
+=====
+
+.. rubric:: BARYCENTRIC MULTIPLIER FOR KIEPERT PARABOLA
 
 .. enunciation::
 
-   :ref:`X(645) <X(645)>` satisfies the equation :g:`X* <X*>`\ (incircle) = Kiepert parabola, where \* denotes barycentric multiplication, defined by
+   :ref:`X_645 <X_645>` satisfies the equation :g:`X* <X*>`\ (incircle) = Kiepert parabola, where \* denotes barycentric multiplication, defined by
 
 .. figure:: x-00645.svg
-   :alt: X(645) = BARYCENTRIC MULTIPLIER FOR KIEPERT PARABOLA
+   :alt: X_645 — BARYCENTRIC MULTIPLIER FOR KIEPERT PARABOLA
    :align: center
 
-   **X(645) = BARYCENTRIC MULTIPLIER FOR KIEPERT PARABOLA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_645** (*BARYCENTRIC MULTIPLIER FOR KIEPERT PARABOLA*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

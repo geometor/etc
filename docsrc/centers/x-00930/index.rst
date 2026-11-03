@@ -1,52 +1,61 @@
 :order: 930
 :type: center
-:canonical_id: X(930)
-:dependencies: X(2), X(3), X(4), X(6), X(17), X(49), X(74), X(95), X(128), X(137), X(140), X(252), X(523), X(550), X(1141), X(1263), X(1487), X(1510), X(32737)
+:canonical_id: X_930
+:subtitle: ANTICOMPLEMENT OF X_137
+:dependencies: X_2, X_3, X_4, X_6, X_17, X_49, X_74, X_95, X_128, X_137, X_140, X_252, X_523, X_550, X_1141, X_1263, X_1487, X_1510, X_32737
 
-.. _X(930):
+.. _X_930:
 
-X(930) = ANTICOMPLEMENT OF X(137)
-=================================
+X_930
+=====
+
+.. rubric:: ANTICOMPLEMENT OF X_137
 
 .. enunciation::
 
-   :ref:`X(930) <X(930)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(1510)
+   :ref:`X_930 <X_930>` is the :term:`anticomplement <anticomplement>` of :ref:`X_137 <X_137>`.
 
 .. figure:: x-00930.svg
-   :alt: X(930) = ANTICOMPLEMENT OF X(137)
+   :alt: X_930 — ANTICOMPLEMENT OF X_137
    :align: center
 
-   **X(930) = ANTICOMPLEMENT OF X(137)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_930** (*ANTICOMPLEMENT OF X_137*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{4, 128} <{ 4, 128 }>`, :g:`{2, 137} <{ 2, 137 }>`
+   * **Related Centers:** :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_128 <X_128>` (:ref:`-OF-ORTHIC-TRIANGLE <X_128>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_137 <X_137>` (:ref:`-OF-ORTHIC-TRIANGLE <X_137>`)
 
 .. signature:: center
 
-   | **Trilinears:** :math:`1/(bw - cv) : :`, where :math:`u : v : w` = :ref:`X(17) <X(17)>`
+   | **Trilinears:** :math:`1/(bw - cv) : :`, where :math:`u : v : w` = :ref:`X_17 <X_17>`
    | **Barycentrics:** :math:`1/((b^{2} - c^{2}) (a^{4} + b^{4} + c^{4} - 2 a^{2} b^{2} - 2 a^{2} c^{2} - b^{2} c^{2})) : :`
    | **Search Value (6, 9, 13):** :math:`14.139603531276`
 
 .. container:: note-item
 
-   :ref:`X(930) <X(930)>` lies on the circumcircle.
+   :ref:`X_930 <X_930>` lies on the circumcircle.
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`137 <X(137)>`}, {:ref:`3 <X(3)>`, :ref:`252 <X(252)>`}, {:ref:`4 <X(4)>`, :ref:`128 <X(128)>`}, {:ref:`74 <X(74)>`, :ref:`550 <X(550)>`}
+   {:ref:`2 <X_2>`, :ref:`137 <X_137>`}, {:ref:`3 <X_3>`, :ref:`252 <X_252>`}, {:ref:`4 <X_4>`, :ref:`128 <X_128>`}, {:ref:`74 <X_74>`, :ref:`550 <X_550>`}
 
 .. collapse:: Functional Relations
    :badge: 10 relations
 
-   * :ref:`X(930) <X(930)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`4 <X(4)>`, :ref:`128 <X(128)>`), (1141, :ref:`3 <X(3)>`), (1263, :ref:`140 <X(140)>`)
-   * :ref:`X(930) <X(930)>` = isogonal conjugate of X(1510)
-   * :ref:`X(930) <X(930)>` = :term:`isotomic conjugate <isotomic-conjugate>` of isogonal conjugate of X(32737)
-   * :ref:`X(930) <X(930)>` = :term:`anticomplement <anticomplement>` of :ref:`X(137) <X(137)>`
-   * :ref:`X(930) <X(930)>` = :ref:`X(523) <X(523)>`-:term:`cross conjugate <cross-conjugate>` of X(1487)
-   * :ref:`X(930) <X(930)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(6) <X(6)>`\ \ :ref:`X(17) <X(17)>` (Napoleon axis)
-   * :ref:`X(930) <X(930)>` = Ψ(:ref:`X(6) <X(6)>`, :ref:`X(17) <X(17)>`)
-   * :ref:`X(930) <X(930)>` = Ψ(:ref:`X(49) <X(49)>`, :ref:`X(3) <X(3)>`)
-   * :ref:`X(930) <X(930)>` = :ref:`X(74) <X(74)>`-of-Lucas-triangle (defined at :ref:`X(95) <X(95)>`)
-   * :ref:`X(930) <X(930)>` = :ref:`X(74) <X(74)>`-of-circumorthic-triangle
+   * :ref:`X_930 <X_930>` = reflection of X_i in X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`128 <X_128>`), (1141, :ref:`3 <X_3>`), (1263, :ref:`140 <X_140>`)
+   * :ref:`X_930 <X_930>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_1510
+   * :ref:`X_930 <X_930>` = :term:`isotomic conjugate <isotomic-conjugate>` of isogonal conjugate of X_32737
+   * :ref:`X_930 <X_930>` = anticomplement of :ref:`X_137 <X_137>`
+   * :ref:`X_930 <X_930>` = :ref:`X_523 <X_523>`-:term:`cross conjugate <cross-conjugate>` of X_1487
+   * :ref:`X_930 <X_930>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_6 <X_6>`\ \ :ref:`X_17 <X_17>` (Napoleon axis)
+   * :ref:`X_930 <X_930>` = Ψ(:ref:`X_6 <X_6>`, :ref:`X_17 <X_17>`)
+   * :ref:`X_930 <X_930>` = Ψ(:ref:`X_49 <X_49>`, :ref:`X_3 <X_3>`)
+   * :ref:`X_930 <X_930>` = :ref:`X_74 <X_74>`-of-Lucas-triangle (defined at :ref:`X_95 <X_95>`)
+   * :ref:`X_930 <X_930>` = :ref:`X_74 <X_74>`-of-circumorthic-triangle
 
 .. toctree::
    :hidden:

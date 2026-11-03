@@ -1,22 +1,31 @@
 :order: 564
 :type: center
-:canonical_id: X(564)
-:dependencies: X(1), X(47), X(91), X(92), X(1048)
+:canonical_id: X_564
+:subtitle: INTERSECTION OF LINES X_1X_1048 AND X(47,91)
+:dependencies: X_1, X_47, X_91, X_92, X_1048
 
-.. _X(564):
+.. _X_564:
 
-X(564) = INTERSECTION OF LINES X(1)X(1048) AND X(47,91)
-=======================================================
+X_564
+=====
+
+.. rubric:: INTERSECTION OF LINES X_1X_1048 AND X(47,91)
 
 .. enunciation::
 
-   :ref:`X(564) <X(564)>` = {:ref:`X(91) <X(91)>`,\ :ref:`X(92) <X(92)>`}-harmonic conjugate of :ref:`X(47) <X(47)>`
+   :ref:`X_564 <X_564>` = {:ref:`X_91 <X_91>`,\ :ref:`X_92 <X_92>`}-harmonic conjugate of :ref:`X_47 <X_47>`
 
 .. figure:: x-00564.svg
-   :alt: X(564) = INTERSECTION OF LINES X(1)X(1048) AND X(47,91)
+   :alt: X_564 — INTERSECTION OF LINES X_1X_1048 AND X(47,91)
    :align: center
 
-   **X(564) = INTERSECTION OF LINES X(1)X(1048) AND X(47,91)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_564** (*INTERSECTION OF LINES X_1X_1048 AND X(47,91)*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{91, 92} <{ 91, 92 }>`
+   * **Related Centers:** :g:`X_47 <X_47>` (:ref:`-BETH CONJUGATE OF X(34) <X_47>`), :g:`X_91 <X_91>` (:ref:`ISOGONAL CONJUGATE OF X(47) <X_91>`), :g:`X_92 <X_92>` (:ref:`CEVAPOINT OF INCENTER AND CLAWSON POINT <X_92>`)
 
 .. signature:: center
 
@@ -33,12 +42,12 @@ X(564) = INTERSECTION OF LINES X(1)X(1048) AND X(47,91)
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, 1048}, {:ref:`47 <X(47)>`, :ref:`91 <X(91)>`}
+   {:ref:`1 <X_1>`, 1048}, {:ref:`47 <X_47>`, :ref:`91 <X_91>`}
 
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(564) <X(564)>` = {:ref:`X(91) <X(91)>`,\ :ref:`X(92) <X(92)>`}-harmonic conjugate of :ref:`X(47) <X(47)>`
+   * :ref:`X_564 <X_564>` = {:ref:`X_91 <X_91>`,\ :ref:`X_92 <X_92>`}-harmonic conjugate of :ref:`X_47 <X_47>`
 
 Notes
 -----

@@ -1,22 +1,31 @@
 :order: 317
 :type: center
-:canonical_id: X(317)
-:dependencies: X(2), X(4), X(6), X(25), X(52), X(53), X(66), X(68), X(69), X(95), X(141), X(183), X(193), X(261), X(273), X(290), X(297), X(298), X(299), X(302), X(303), X(318), X(319), X(320), X(325), X(393), X(406), X(427), X(458), X(467), X(470), X(471), X(472), X(473), X(524), X(577), X(1007), X(1721), X(2165), X(2351), X(6353)
+:canonical_id: X_317
+:subtitle: ISOTOMIC CONJUGATE OF X_68
+:dependencies: X_2, X_4, X_6, X_25, X_52, X_53, X_66, X_68, X_69, X_95, X_141, X_183, X_193, X_261, X_273, X_290, X_297, X_298, X_299, X_302, X_303, X_318, X_319, X_320, X_325, X_393, X_406, X_427, X_458, X_467, X_470, X_471, X_472, X_473, X_524, X_577, X_1007, X_1721, X_2165, X_2351, X_6353
 
-.. _X(317):
+.. _X_317:
 
-X(317) = ISOTOMIC CONJUGATE OF X(68)
-====================================
+X_317
+=====
+
+.. rubric:: ISOTOMIC CONJUGATE OF X_68
 
 .. enunciation::
 
-   :ref:`X(317) <X(317)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(2351)
+   :ref:`X_317 <X_317>` is the :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_68 <X_68>`.
 
 .. figure:: x-00317.svg
-   :alt: X(317) = ISOTOMIC CONJUGATE OF X(68)
+   :alt: X_317 — ISOTOMIC CONJUGATE OF X_68
    :align: center
 
-   **X(317) = ISOTOMIC CONJUGATE OF X(68)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_317** (*ISOTOMIC CONJUGATE OF X_68*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{4, 69} <{ 4, 69 }>`, :g:`{2, 95} <{ 2, 95 }>`
+   * **Related Centers:** :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_69 <X_69>` (:ref:`SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE <X_69>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_95 <X_95>` (:ref:`CEVAPOINT OF CENTROID AND CIRCUMCENTER <X_95>`)
 
 .. signature:: center
 
@@ -38,17 +47,17 @@ X(317) = ISOTOMIC CONJUGATE OF X(68)
    :badge: 17 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`95 <X(95)>`}, {:ref:`4 <X(4)>`, :ref:`69 <X(69)>`}, {:ref:`6 <X(6)>`, :ref:`297 <X(297)>`}, {:ref:`25 <X(25)>`, :ref:`325 <X(325)>`}, {:ref:`53 <X(53)>`, :ref:`524 <X(524)>`}, {:ref:`66 <X(66)>`, :ref:`290 <X(290)>`}, {:ref:`141 <X(141)>`, :ref:`458 <X(458)>`}, {:ref:`183 <X(183)>`, :ref:`427 <X(427)>`}, {:ref:`193 <X(193)>`, :ref:`393 <X(393)>`}, {:ref:`261 <X(261)>`, :ref:`406 <X(406)>`}, {:ref:`273 <X(273)>`, :ref:`320 <X(320)>`}, {:ref:`298 <X(298)>`, :ref:`473 <X(473)>`}, {:ref:`299 <X(299)>`, :ref:`472 <X(472)>`}, {:ref:`302 <X(302)>`, :ref:`470 <X(470)>`}, {:ref:`303 <X(303)>`, :ref:`471 <X(471)>`}, {:ref:`318 <X(318)>`, :ref:`319 <X(319)>`}, {1007, 6353}
+   {:ref:`2 <X_2>`, :ref:`95 <X_95>`}, {:ref:`4 <X_4>`, :ref:`69 <X_69>`}, {:ref:`6 <X_6>`, :ref:`297 <X_297>`}, {:ref:`25 <X_25>`, :ref:`325 <X_325>`}, {:ref:`53 <X_53>`, :ref:`524 <X_524>`}, {:ref:`66 <X_66>`, :ref:`290 <X_290>`}, {:ref:`141 <X_141>`, :ref:`458 <X_458>`}, {:ref:`183 <X_183>`, :ref:`427 <X_427>`}, {:ref:`193 <X_193>`, :ref:`393 <X_393>`}, {:ref:`261 <X_261>`, :ref:`406 <X_406>`}, {:ref:`273 <X_273>`, :ref:`320 <X_320>`}, {:ref:`298 <X_298>`, :ref:`473 <X_473>`}, {:ref:`299 <X_299>`, :ref:`472 <X_472>`}, {:ref:`302 <X_302>`, :ref:`470 <X_470>`}, {:ref:`303 <X_303>`, :ref:`471 <X_471>`}, {:ref:`318 <X_318>`, :ref:`319 <X_319>`}, {1007, 6353}
 
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X(317) <X(317)>` = isogonal conjugate of X(2351)
-   * :ref:`X(317) <X(317)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(68) <X(68)>`
-   * :ref:`X(317) <X(317)>` = :term:`anticomplement <anticomplement>` of :ref:`X(577) <X(577)>`
-   * :ref:`X(317) <X(317)>` = :term:`cevapoint <cevapoint>` of :ref:`X(52) <X(52)>` and :ref:`X(467) <X(467)>`
-   * :ref:`X(317) <X(317)>` = polar conjugate of X(2165)
-   * :ref:`X(317) <X(317)>` = X(1721)-of-orthic-triangle if :g:`ABC << A B C >>` is acute
+   * :ref:`X_317 <X_317>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2351
+   * :ref:`X_317 <X_317>` = isotomic conjugate of :ref:`X_68 <X_68>`
+   * :ref:`X_317 <X_317>` = :term:`anticomplement <anticomplement>` of :ref:`X_577 <X_577>`
+   * :ref:`X_317 <X_317>` = :term:`cevapoint <cevapoint>` of :ref:`X_52 <X_52>` and :ref:`X_467 <X_467>`
+   * :ref:`X_317 <X_317>` = polar conjugate of X_2165
+   * :ref:`X_317 <X_317>` = X_1721-of-orthic-triangle if :g:`ABC << A B C >>` is acute
 
 .. toctree::
    :hidden:

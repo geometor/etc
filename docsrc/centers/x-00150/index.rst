@@ -1,22 +1,31 @@
 :order: 150
 :type: center
-:canonical_id: X(150)
-:dependencies: X(1), X(2), X(4), X(7), X(20), X(69), X(80), X(85), X(101), X(103), X(116), X(147), X(152), X(295), X(334), X(348), X(355), X(514), X(664), X(668), X(944), X(952), X(1565), X(20999), X(22145), X(34179), X(39026)
+:canonical_id: X_150
+:subtitle: REFLECTION OF X_20 IN X_103
+:dependencies: X_1, X_2, X_4, X_7, X_20, X_69, X_80, X_85, X_101, X_103, X_116, X_147, X_152, X_295, X_334, X_348, X_355, X_514, X_664, X_668, X_944, X_952, X_1565, X_20999, X_22145, X_34179, X_39026
 
-.. _X(150):
+.. _X_150:
 
-X(150) = REFLECTION OF X(20) IN X(103)
-======================================
+X_150
+=====
+
+.. rubric:: REFLECTION OF X_20 IN X_103
 
 .. enunciation::
 
-   :ref:`X(150) <X(150)>` = :ref:`X(101) <X(101)>`-of-:term:`anticomplementary triangle <anticomplementary-triangle>`
+   :ref:`X_150 <X_150>` is the reflection of :ref:`X_20 <X_20>` in :ref:`X_103 <X_103>`.
 
 .. figure:: x-00150.svg
-   :alt: X(150) = REFLECTION OF X(20) IN X(103)
+   :alt: X_150 — REFLECTION OF X_20 IN X_103
    :align: center
 
-   **X(150) = REFLECTION OF X(20) IN X(103)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_150** (*REFLECTION OF X_20 IN X_103*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{7, 80} <{ 7, 80 }>`, :g:`{2, 101} <{ 2, 101 }>`
+   * **Related Centers:** :g:`X_7 <X_7>` (:ref:`GERGONNE POINT <X_7>`), :g:`X_80 <X_80>` (:ref:`REFLECTION OF INCENTER IN FEUERBACH POINT <X_80>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_101 <X_101>` (:ref:`Ψ(INCENTER, SYMMEDIAN POINT) <X_101>`)
 
 .. signature:: center
 
@@ -26,24 +35,24 @@ X(150) = REFLECTION OF X(20) IN X(103)
 
 .. container:: note-item
 
-   :ref:`X(150) <X(150)>` lies on the anticomplementary circle.
+   :ref:`X_150 <X_150>` lies on the anticomplementary circle.
 
 .. collapse:: Incident Central Lines
    :badge: 10 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`147 <X(147)>`}, {:ref:`2 <X(2)>`, :ref:`101 <X(101)>`}, {:ref:`4 <X(4)>`, :ref:`152 <X(152)>`}, {:ref:`7 <X(7)>`, :ref:`80 <X(80)>`}, {:ref:`20 <X(20)>`, :ref:`103 <X(103)>`}, {:ref:`69 <X(69)>`, :ref:`668 <X(668)>`}, {:ref:`85 <X(85)>`, :ref:`355 <X(355)>`}, {:ref:`295 <X(295)>`, :ref:`334 <X(334)>`}, {:ref:`348 <X(348)>`, :ref:`944 <X(944)>`}, {:ref:`664 <X(664)>`, :ref:`952 <X(952)>`}
+   {:ref:`1 <X_1>`, :ref:`147 <X_147>`}, {:ref:`2 <X_2>`, :ref:`101 <X_101>`}, {:ref:`4 <X_4>`, :ref:`152 <X_152>`}, {:ref:`7 <X_7>`, :ref:`80 <X_80>`}, {:ref:`20 <X_20>`, :ref:`103 <X_103>`}, {:ref:`69 <X_69>`, :ref:`668 <X_668>`}, {:ref:`85 <X_85>`, :ref:`355 <X_355>`}, {:ref:`295 <X_295>`, :ref:`334 <X_334>`}, {:ref:`348 <X_348>`, :ref:`944 <X_944>`}, {:ref:`664 <X_664>`, :ref:`952 <X_952>`}
 
 .. collapse:: Functional Relations
    :badge: 7 relations
 
-   * :ref:`X(150) <X(150)>` = :ref:`X(101) <X(101)>`-of-anticomplementary triangle
-   * :ref:`X(150) <X(150)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`20 <X(20)>`, :ref:`103 <X(103)>`), (:ref:`101 <X(101)>`, :ref:`116 <X(116)>`), (:ref:`152 <X(152)>`, :ref:`4 <X(4)>`), (:ref:`664 <X(664)>`, 1565)
-   * :ref:`X(150) <X(150)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(34179)
-   * :ref:`X(150) <X(150)>` = :term:`isotomic conjugate <isotomic-conjugate>` of isogonal conjugate of X(20999)
-   * :ref:`X(150) <X(150)>` = isotomic conjugate of :term:`anticomplement <anticomplement>` of X(39026)
-   * :ref:`X(150) <X(150)>` = polar conjugate of isogonal conjugate of X(22145)
-   * :ref:`X(150) <X(150)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X(514) <X(514)>`
+   * :ref:`X_150 <X_150>` = :ref:`X_101 <X_101>`-of-:term:`anticomplementary triangle <anticomplementary-triangle>`
+   * :ref:`X_150 <X_150>` = reflection of X_i in X_j for these (i,j): (:ref:`20 <X_20>`, :ref:`103 <X_103>`), (:ref:`101 <X_101>`, :ref:`116 <X_116>`), (:ref:`152 <X_152>`, :ref:`4 <X_4>`), (:ref:`664 <X_664>`, 1565)
+   * :ref:`X_150 <X_150>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_34179
+   * :ref:`X_150 <X_150>` = :term:`isotomic conjugate <isotomic-conjugate>` of isogonal conjugate of X_20999
+   * :ref:`X_150 <X_150>` = isotomic conjugate of :term:`anticomplement <anticomplement>` of X_39026
+   * :ref:`X_150 <X_150>` = polar conjugate of isogonal conjugate of X_22145
+   * :ref:`X_150 <X_150>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X_514 <X_514>`
 
 .. toctree::
    :hidden:

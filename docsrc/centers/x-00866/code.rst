@@ -1,18 +1,21 @@
-:canonical_id: X(866)
+:canonical_id: X_866
 :type: code
+:subtitle: INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X_513
 
-X(866) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(513) — Code
-=====================================================================
+X_866
+=====
+
+.. rubric:: INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X_513
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(866) <X(866)>` has Shinagawa coefficients :math:`([(E+F)F+S^{2}]S^{2}+\$abS_{C}^{3}\$ -\$abS_{B}^{2}S_{C}\$+\$abS_{A}S_{B}\$(E+F) -\$abS_{C}\$[(E+F)^{2}-2S^{2}]-3\$ab\$FS^{2}, -[(E+F)^{2}+S^{2}]S^{2}-\$abS_{C}\$S^{2} +\$abS_{B}\$S^{2}+\$ab\$(E+F)S^{2})`.
+   :ref:`X_866 <X_866>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_100 <X_100>`\ \ :ref:`X_647 <X_647>`
 
 .. figure:: x-00866.svg
-   :alt: X(866) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(513)
+   :alt: X_866 — INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X_513
    :align: center
 
-   **X(866) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(513)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_866** (*INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X_513*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

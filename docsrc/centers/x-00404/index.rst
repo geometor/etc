@@ -1,22 +1,32 @@
 :order: 404
 :type: center
-:canonical_id: X(404)
-:dependencies: X(1), X(2), X(3), X(8), X(10), X(21), X(31), X(36), X(46), X(56), X(57), X(60), X(63), X(69), X(78), X(81), X(88), X(104), X(108), X(145), X(149), X(318), X(320), X(355), X(386), X(496), X(603), X(612), X(651), X(662), X(936), X(976), X(978), X(982), X(988), X(997), X(999), X(1014), X(4187), X(37919)
+:canonical_id: X_404
+:subtitle: {X_2,X_3}-HARMONIC CONJUGATE OF X_21
+:dependencies: X_1, X_2, X_3, X_8, X_10, X_21, X_31, X_36, X_46, X_56, X_57, X_60, X_63, X_69, X_78, X_81, X_88, X_104, X_108, X_145, X_149, X_318, X_320, X_355, X_386, X_496, X_603, X_612, X_651, X_662, X_936, X_976, X_978, X_982, X_988, X_997, X_999, X_1014, X_4187, X_37919
 
-.. _X(404):
+.. _X_404:
 
-X(404) = {X(2),X(3)}-HARMONIC CONJUGATE OF X(21)
-================================================
+X_404
+=====
+
+.. rubric:: {X_2,X_3}-HARMONIC CONJUGATE OF X_21
 
 .. enunciation::
 
-   :ref:`X(404) <X(404)>` is the {:ref:`X(2) <X(2)>`,\ :ref:`X(3) <X(3)>`}-harmonic conjugate of :ref:`X(21) <X(21)>`. For a list of harmonic conjugates of :ref:`X(404) <X(404)>`, click **Tables** at the top of this page.
+   :ref:`X_404 <X_404>` is the {:ref:`X_2 <X_2>`,\ :ref:`X_3 <X_3>`}-harmonic conjugate of :ref:`X_21 <X_21>`. For a list of harmonic conjugates of :ref:`X_404 <X_404>`, click **Tables** at the top of this page.
 
 .. figure:: x-00404.svg
-   :alt: X(404) = {X(2),X(3)}-HARMONIC CONJUGATE OF X(21)
+   :alt: X_404 — {X_2,X_3}-HARMONIC CONJUGATE OF X_21
    :align: center
 
-   **X(404) = {X(2),X(3)}-HARMONIC CONJUGATE OF X(21)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_404** (*{X_2,X_3}-HARMONIC CONJUGATE OF X_21*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Derived Triangle:** :term:`Medial Triangle <medial triangle>` :g:`△M_aM_bM_c << M_a M_b M_c >>` — vertices :g:`M_a <M_a>`, :g:`M_b <M_b>`, :g:`M_c <M_c>` (Formed by the midpoints of sides BC, CA, AB)
+   * **Central Lines:** :g:`{2, 320} <{ 2, 320 }>`, :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`)
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_320 <X_320>` (:ref:`ISOTOMIC CONJUGATE OF X(80) <X_320>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`)
 
 .. signature:: center
 
@@ -28,21 +38,21 @@ X(404) = {X(2),X(3)}-HARMONIC CONJUGATE OF X(21)
    :badge: 18 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`88 <X(88)>`}, {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`8 <X(8)>`, :ref:`56 <X(56)>`}, {:ref:`10 <X(10)>`, :ref:`36 <X(36)>`}, {:ref:`31 <X(31)>`, :ref:`978 <X(978)>`}, {:ref:`46 <X(46)>`, :ref:`997 <X(997)>`}, {:ref:`57 <X(57)>`, :ref:`78 <X(78)>`}, {:ref:`60 <X(60)>`, :ref:`662 <X(662)>`}, {:ref:`63 <X(63)>`, :ref:`936 <X(936)>`}, {:ref:`69 <X(69)>`, 1014}, {:ref:`81 <X(81)>`, :ref:`386 <X(386)>`}, {:ref:`104 <X(104)>`, :ref:`355 <X(355)>`}, {:ref:`108 <X(108)>`, :ref:`318 <X(318)>`}, {:ref:`145 <X(145)>`, :ref:`999 <X(999)>`}, {:ref:`149 <X(149)>`, :ref:`496 <X(496)>`}, {:ref:`603 <X(603)>`, :ref:`651 <X(651)>`}, {:ref:`612 <X(612)>`, :ref:`988 <X(988)>`}, {:ref:`976 <X(976)>`, :ref:`982 <X(982)>`}
+   {:ref:`1 <X_1>`, :ref:`88 <X_88>`}, {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`8 <X_8>`, :ref:`56 <X_56>`}, {:ref:`10 <X_10>`, :ref:`36 <X_36>`}, {:ref:`31 <X_31>`, :ref:`978 <X_978>`}, {:ref:`46 <X_46>`, :ref:`997 <X_997>`}, {:ref:`57 <X_57>`, :ref:`78 <X_78>`}, {:ref:`60 <X_60>`, :ref:`662 <X_662>`}, {:ref:`63 <X_63>`, :ref:`936 <X_936>`}, {:ref:`69 <X_69>`, 1014}, {:ref:`81 <X_81>`, :ref:`386 <X_386>`}, {:ref:`104 <X_104>`, :ref:`355 <X_355>`}, {:ref:`108 <X_108>`, :ref:`318 <X_318>`}, {:ref:`145 <X_145>`, :ref:`999 <X_999>`}, {:ref:`149 <X_149>`, :ref:`496 <X_496>`}, {:ref:`603 <X_603>`, :ref:`651 <X_651>`}, {:ref:`612 <X_612>`, :ref:`988 <X_988>`}, {:ref:`976 <X_976>`, :ref:`982 <X_982>`}
 
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X(404) <X(404)>` = :term:`complement <complement>` of :ref:`X(320) <X(320)>`
-   * :ref:`X(404) <X(404)>` = :term:`anticomplement <anticomplement>` of X(4187)
-   * :ref:`X(404) <X(404)>` = circumcircle-inverse of X(37919)
+   * :ref:`X_404 <X_404>` = :term:`complement <complement>` of :ref:`X_320 <X_320>`
+   * :ref:`X_404 <X_404>` = :term:`anticomplement <anticomplement>` of X_4187
+   * :ref:`X_404 <X_404>` = circumcircle-inverse of X_37919
 
 Notes
 -----
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(404) <X(404)>` has Shinagawa coefficients :math:`(abc \$a\$ - 2S^{2}, 2S^{2})`.
+   As a point on the Euler line, :ref:`X_404 <X_404>` has Shinagawa coefficients :math:`(abc \$a\$ - 2S^{2}, 2S^{2})`.
 
 .. toctree::
    :hidden:

@@ -1,22 +1,31 @@
 :order: 146
 :type: center
-:canonical_id: X(146)
-:dependencies: X(2), X(4), X(20), X(30), X(74), X(94), X(110), X(113), X(147), X(148), X(193), X(265), X(323), X(399), X(690), X(1539), X(2935), X(34178), X(36896)
+:canonical_id: X_146
+:subtitle: REFLECTION OF X_20 IN X_110
+:dependencies: X_2, X_4, X_20, X_30, X_74, X_94, X_110, X_113, X_147, X_148, X_193, X_265, X_323, X_399, X_690, X_1539, X_2935, X_34178, X_36896
 
-.. _X(146):
+.. _X_146:
 
-X(146) = REFLECTION OF X(20) IN X(110)
-======================================
+X_146
+=====
+
+.. rubric:: REFLECTION OF X_20 IN X_110
 
 .. enunciation::
 
-   Let :g:`T <T>` be the :g:`P <P>`-Brocard triangle for any P on the Euler line. Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of :g:`T <T>` and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(146) <X(146)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (:person:`Randy Hutson <randy-hutson>`, August 30, 2020)
+   :ref:`X_146 <X_146>` is the {:ref:`X_74 <X_74>`,\ :ref:`X_113 <X_113>`}-harmonic conjugate of :ref:`X_2 <X_2>`. For a list of harmonic conjugates, click **Tables** at the top of this page.
 
 .. figure:: x-00146.svg
-   :alt: X(146) = REFLECTION OF X(20) IN X(110)
+   :alt: X_146 — REFLECTION OF X_20 IN X_110
    :align: center
 
-   **X(146) = REFLECTION OF X(20) IN X(110)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_146** (*REFLECTION OF X_20 IN X_110*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{74, 113} <{ 74, 113 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_74 <X_74>` (:ref:`ISOGONAL CONJUGATE OF EULER INFINITY POINT <X_74>`), :g:`X_113 <X_113>` (:ref:`JERABEK ANTIPODE <X_113>`)
 
 .. signature:: center
 
@@ -31,30 +40,30 @@ X(146) = REFLECTION OF X(20) IN X(110)
 
 .. container:: note-item
 
-   :ref:`X(146) <X(146)>` lies on the anticomplementary circle.
+   :ref:`X_146 <X_146>` lies on the anticomplementary circle.
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`74 <X(74)>`}, {:ref:`4 <X(4)>`, :ref:`94 <X(94)>`}, {:ref:`20 <X(20)>`, :ref:`110 <X(110)>`}, {:ref:`30 <X(30)>`, :ref:`323 <X(323)>`}, {:ref:`147 <X(147)>`, :ref:`690 <X(690)>`}, {:ref:`148 <X(148)>`, :ref:`193 <X(193)>`}
+   {:ref:`2 <X_2>`, :ref:`74 <X_74>`}, {:ref:`4 <X_4>`, :ref:`94 <X_94>`}, {:ref:`20 <X_20>`, :ref:`110 <X_110>`}, {:ref:`30 <X_30>`, :ref:`323 <X_323>`}, {:ref:`147 <X_147>`, :ref:`690 <X_690>`}, {:ref:`148 <X_148>`, :ref:`193 <X_193>`}
 
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X(146) <X(146)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`20 <X(20)>`, :ref:`110 <X(110)>`), (:ref:`74 <X(74)>`, :ref:`113 <X(113)>`), (:ref:`265 <X(265)>`, 1539)
-   * :ref:`X(146) <X(146)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(34178)
-   * :ref:`X(146) <X(146)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :term:`anticomplement <anticomplement>` of X(36896)
-   * :ref:`X(146) <X(146)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X(30) <X(30)>`
-   * :ref:`X(146) <X(146)>` = :ref:`X(74) <X(74)>`-of-:term:`anticomplementary triangle <anticomplementary-triangle>`
-   * :ref:`X(146) <X(146)>` = :term:`crosspoint <crosspoint>` of :ref:`X(399) <X(399)>` and X(2935) wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
+   * :ref:`X_146 <X_146>` = reflection of X_i in X_j for these (i,j): (:ref:`20 <X_20>`, :ref:`110 <X_110>`), (:ref:`74 <X_74>`, :ref:`113 <X_113>`), (:ref:`265 <X_265>`, 1539)
+   * :ref:`X_146 <X_146>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_34178
+   * :ref:`X_146 <X_146>` = :term:`isotomic conjugate <isotomic-conjugate>` of :term:`anticomplement <anticomplement>` of X_36896
+   * :ref:`X_146 <X_146>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X_30 <X_30>`
+   * :ref:`X_146 <X_146>` = :ref:`X_74 <X_74>`-of-:term:`anticomplementary triangle <anticomplementary-triangle>`
+   * :ref:`X_146 <X_146>` = :term:`crosspoint <crosspoint>` of :ref:`X_399 <X_399>` and X_2935 wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
 
 Notes
 -----
 
 .. container:: note-item
 
-   :ref:`X(146) <X(146)>` is the {:ref:`X(74) <X(74)>`,\ :ref:`X(113) <X(113)>`}-harmonic conjugate of :ref:`X(2) <X(2)>`. For a list of harmonic conjugates, click **Tables** at the top of this page.
+   Let :g:`T <T>` be the :g:`P <P>`-Brocard triangle for any P on the Euler line. Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of :g:`T <T>` and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X_146 <X_146>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (:person:`Randy Hutson <randy-hutson>`, August 30, 2020)
 
 .. toctree::
    :hidden:

@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(740) = EVEN (- 1, 1) INFINITY POINT."""
+"""GEOMETOR construction model for X_740 = EVEN (- 1, 1) INFINITY POINT."""
 
 from __future__ import annotations
 
@@ -23,16 +23,16 @@ from geometor.etc.render import write_center_svg
 def construct_x_00740(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(740) = EVEN (- 1, 1) INFINITY POINT on reference triangle ABC."""
-    X_740 = eval_trilinear_point(model, A, B, C, 'a **(-2)*(b**(1) + c**(1)) - a**(0)*(b **(-1) + c **(-1))', ID="X(740)", classes=["selected", "target"])
-    X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["center", "incident"])
-    X_37 = eval_trilinear_point(model, A, B, C, 'b + c', ID="X(37)", classes=["center", "incident"])
+    """Construct X_740 = EVEN (- 1, 1) INFINITY POINT on reference triangle ABC."""
+    X_740 = eval_trilinear_point(model, A, B, C, 'a **(-2)*(b**(1) + c**(1)) - a**(0)*(b **(-1) + c **(-1))', ID="X_740", classes=["selected", "target"])
+    X_10 = spieker_center_of(model, A, B, C, ID="X_10", classes=["center", "incident"])
+    X_37 = eval_trilinear_point(model, A, B, C, 'b + c', ID="X_37", classes=["center", "incident"])
     central_line(model, X_10, X_37, 10, 37, incident=True)
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
-    X_75 = eval_trilinear_point(model, A, B, C, '1/a**(2)', ID="X(75)", classes=["center", "incident"])
+    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
+    X_75 = eval_trilinear_point(model, A, B, C, '1/a**(2)', ID="X_75", classes=["center", "incident"])
     central_line(model, X_1, X_75, 1, 75, incident=True)
-    X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center", "incident"])
-    X_192 = eval_trilinear_point(model, A, B, C, 'b*c*(c*a + a*b - b*c)', ID="X(192)", classes=["center", "incident"])
+    X_8 = nagel_point_of(model, A, B, C, ID="X_8", classes=["center", "incident"])
+    X_192 = eval_trilinear_point(model, A, B, C, 'b*c*(c*a + a*b - b*c)', ID="X_192", classes=["center", "incident"])
     central_line(model, X_8, X_192, 8, 192, incident=True)
     return promote_point_to_top(model, X_740)
 
@@ -41,8 +41,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(740) on the given reference triangle."""
-    model = create_model('X(740) = EVEN (- 1, 1) INFINITY POINT')
+    """Build a `geometor.model.Model` for X_740 on the given reference triangle."""
+    model = create_model('X_740 = EVEN (- 1, 1) INFINITY POINT')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00740(model, A, B, C)
     return model

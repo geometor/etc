@@ -1,18 +1,21 @@
-:canonical_id: X(275)
+:canonical_id: X_275
 :type: code
+:subtitle: CEVAPOINT OF ORTHOCENTER AND SYMMEDIAN POINT
 
-X(275) = CEVAPOINT OF ORTHOCENTER AND SYMMEDIAN POINT — Code
-============================================================
+X_275
+=====
+
+.. rubric:: CEVAPOINT OF ORTHOCENTER AND SYMMEDIAN POINT
 
 .. enunciation::
 
-   Let :g:`A'B'C' << A' B' C' >>` be the circumorthic triangle. Let :g:`A″ <A″>` be the :term:`trilinear pole <trilinear-pole>` of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(275) <X(275)>`. (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
+   :ref:`X_275 <X_275>` is the :term:`cevapoint <cevapoint>` of orthocenter and symmedian point.
 
 .. figure:: x-00275.svg
-   :alt: X(275) = CEVAPOINT OF ORTHOCENTER AND SYMMEDIAN POINT
+   :alt: X_275 — CEVAPOINT OF ORTHOCENTER AND SYMMEDIAN POINT
    :align: center
 
-   **X(275) = CEVAPOINT OF ORTHOCENTER AND SYMMEDIAN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_275** (*CEVAPOINT OF ORTHOCENTER AND SYMMEDIAN POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

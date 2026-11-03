@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(558) = (X(1),X(57))-ANSWER TO QUESTION A."""
+"""GEOMETOR construction model for X_558 = (X_1,X_57)-ANSWER TO QUESTION A."""
 
 from __future__ import annotations
 
@@ -21,10 +21,10 @@ from geometor.etc.render import write_center_svg
 def construct_x_00558(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(558) = (X(1),X(57))-ANSWER TO QUESTION A on reference triangle ABC."""
-    X_558 = eval_trilinear_point(model, A, B, C, 'sec(A/2)*tan(A/4)', ID="X(558)", classes=["selected", "target"])
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
-    X_178 = eval_trilinear_point(model, A, B, C, '(cos(B/2) + cos(C/2))*csc(A)', ID="X(178)", classes=["center", "incident"])
+    """Construct X_558 = (X_1,X_57)-ANSWER TO QUESTION A on reference triangle ABC."""
+    X_558 = eval_trilinear_point(model, A, B, C, 'sec(A/2)*tan(A/4)', ID="X_558", classes=["selected", "target"])
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
+    X_178 = eval_trilinear_point(model, A, B, C, '(cos(B/2) + cos(C/2))*csc(A)', ID="X_178", classes=["center", "incident"])
     central_line(model, X_2, X_178, 2, 178, incident=True)
     return promote_point_to_top(model, X_558)
 
@@ -33,8 +33,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(558) on the given reference triangle."""
-    model = create_model('X(558) = (X(1),X(57))-ANSWER TO QUESTION A')
+    """Build a `geometor.model.Model` for X_558 on the given reference triangle."""
+    model = create_model('X_558 = (X_1,X_57)-ANSWER TO QUESTION A')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00558(model, A, B, C)
     return model

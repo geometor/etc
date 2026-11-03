@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(486) = INNER VECTEN POINT."""
+"""GEOMETOR construction model for X_486 = INNER VECTEN POINT."""
 
 from __future__ import annotations
 
@@ -25,16 +25,16 @@ from geometor.etc.render import write_center_svg
 def construct_x_00486(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(486) = INNER VECTEN POINT on reference triangle ABC."""
-    X_372 = eval_trilinear_point(model, A, B, C, 'cos(A + pi /4)', ID="X(372)", classes=["center"])
-    X_486 = isogonal_conjugate(model, A, B, C, X_372, ID="X(486)", classes=["selected", "target"])
-    X_5 = nine_point_center_of(model, A, B, C, ID="X(5)", classes=["center", "incident"])
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
+    """Construct X_486 = INNER VECTEN POINT on reference triangle ABC."""
+    X_372 = eval_trilinear_point(model, A, B, C, 'cos(A + pi /4)', ID="X_372", classes=["center"])
+    X_486 = isogonal_conjugate(model, A, B, C, X_372, ID="X_486", classes=["selected", "target"])
+    X_5 = nine_point_center_of(model, A, B, C, ID="X_5", classes=["center", "incident"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
     central_line(model, X_5, X_6, 5, 6, incident=True)
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
-    X_371 = eval_trilinear_point(model, A, B, C, 'cos(A - pi /4)', ID="X(371)", classes=["center", "incident"])
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
+    X_371 = eval_trilinear_point(model, A, B, C, 'cos(A - pi /4)', ID="X_371", classes=["center", "incident"])
     central_line(model, X_2, X_371, 2, 371, incident=True)
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
+    X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
     central_line(model, X_4, X_372, 4, 372, incident=True)
     return promote_point_to_top(model, X_486)
 
@@ -43,8 +43,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(486) on the given reference triangle."""
-    model = create_model('X(486) = INNER VECTEN POINT')
+    """Build a `geometor.model.Model` for X_486 on the given reference triangle."""
+    model = create_model('X_486 = INNER VECTEN POINT')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00486(model, A, B, C)
     return model

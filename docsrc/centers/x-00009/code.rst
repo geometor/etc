@@ -1,18 +1,21 @@
-:canonical_id: X(9)
+:canonical_id: X_9
 :type: code
+:subtitle: MITTENPUNKT
 
-X(9) = MITTENPUNKT — Code
-=========================
+X_9
+====
+
+.. rubric:: MITTENPUNKT
 
 .. enunciation::
 
-   :ref:`X(9) <X(9)>` is the symmedian point of the :term:`excentral triangle <excentral-triangle>`.
+   :ref:`X_9 <X_9>` is the symmedian point of the :term:`excentral triangle <excentral-triangle>`.
 
 .. figure:: x-00009.svg
-   :alt: X(9) = MITTENPUNKT
+   :alt: X_9 — MITTENPUNKT
    :align: center
 
-   **X(9) = MITTENPUNKT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_9** (*MITTENPUNKT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

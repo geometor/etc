@@ -1,22 +1,31 @@
 :order: 208
 :type: center
-:canonical_id: X(208)
-:dependencies: X(1), X(3), X(4), X(19), X(25), X(33), X(34), X(40), X(57), X(64), X(102), X(108), X(162), X(196), X(198), X(223), X(225), X(226), X(227), X(271), X(318), X(342), X(406), X(653), X(1433), X(34404)
+:canonical_id: X_208
+:subtitle: X_4-CEVA CONJUGATE OF X_34
+:dependencies: X_1, X_3, X_4, X_19, X_25, X_33, X_34, X_40, X_57, X_64, X_102, X_108, X_162, X_196, X_198, X_223, X_225, X_226, X_227, X_271, X_318, X_342, X_406, X_653, X_1433, X_34404
 
-.. _X(208):
+.. _X_208:
 
-X(208) = X(4)-CEVA CONJUGATE OF X(34)
-=====================================
+X_208
+=====
+
+.. rubric:: X_4-CEVA CONJUGATE OF X_34
 
 .. enunciation::
 
-   :ref:`X(208) <X(208)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(271) <X(271)>`
+   :ref:`X_208 <X_208>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_271 <X_271>`
 
 .. figure:: x-00208.svg
-   :alt: X(208) = X(4)-CEVA CONJUGATE OF X(34)
+   :alt: X_208 — X_4-CEVA CONJUGATE OF X_34
    :align: center
 
-   **X(208) = X(4)-CEVA CONJUGATE OF X(34)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_208** (*X_4-CEVA CONJUGATE OF X_34*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{25, 34} <{ 25, 34 }>`, :g:`{4, 57} <{ 4, 57 }>`
+   * **Related Centers:** :g:`X_271 <X_271>` (:ref:`ISOGONAL CONJUGATE OF X(208) <X_271>`), :g:`X_25 <X_25>` (:ref:`HOMOTHETIC CENTER OF ORTHIC AND TANGENTIAL TRIANGLES <X_25>`), :g:`X_34 <X_34>` (:ref:`-BETH CONJUGATE OF X(4) <X_34>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_57 <X_57>` (:ref:`ISOGONAL CONJUGATE OF X(9) <X_57>`)
 
 .. signature:: center
 
@@ -28,16 +37,16 @@ X(208) = X(4)-CEVA CONJUGATE OF X(34)
    :badge: 9 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`102 <X(102)>`}, {:ref:`4 <X(4)>`, :ref:`57 <X(57)>`}, {:ref:`19 <X(19)>`, :ref:`225 <X(225)>`}, {:ref:`25 <X(25)>`, :ref:`34 <X(34)>`}, {:ref:`33 <X(33)>`, :ref:`64 <X(64)>`}, {:ref:`40 <X(40)>`, :ref:`196 <X(196)>`}, {:ref:`198 <X(198)>`, :ref:`227 <X(227)>`}, {:ref:`226 <X(226)>`, :ref:`406 <X(406)>`}, {:ref:`318 <X(318)>`, :ref:`653 <X(653)>`}
+   {:ref:`1 <X_1>`, :ref:`102 <X_102>`}, {:ref:`4 <X_4>`, :ref:`57 <X_57>`}, {:ref:`19 <X_19>`, :ref:`225 <X_225>`}, {:ref:`25 <X_25>`, :ref:`34 <X_34>`}, {:ref:`33 <X_33>`, :ref:`64 <X_64>`}, {:ref:`40 <X_40>`, :ref:`196 <X_196>`}, {:ref:`198 <X_198>`, :ref:`227 <X_227>`}, {:ref:`226 <X_226>`, :ref:`406 <X_406>`}, {:ref:`318 <X_318>`, :ref:`653 <X_653>`}
 
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X(208) <X(208)>` = isogonal conjugate of :ref:`X(271) <X(271)>`
-   * :ref:`X(208) <X(208)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`4 <X(4)>`, :ref:`34 <X(34)>`), (:ref:`57 <X(57)>`, :ref:`19 <X(19)>`), (:ref:`342 <X(342)>`, :ref:`223 <X(223)>`)
-   * :ref:`X(208) <X(208)>` = :term:`crosssum <crosssum>` of :ref:`X(3) <X(3)>` and X(1433)
-   * :ref:`X(208) <X(208)>` = polar conjugate of X(34404)
-   * :ref:`X(208) <X(208)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`108 <X(108)>`, :ref:`208 <X(208)>`), (:ref:`162 <X(162)>`, :ref:`1 <X(1)>`)
+   * :ref:`X_208 <X_208>` = isogonal conjugate of :ref:`X_271 <X_271>`
+   * :ref:`X_208 <X_208>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`34 <X_34>`), (:ref:`57 <X_57>`, :ref:`19 <X_19>`), (:ref:`342 <X_342>`, :ref:`223 <X_223>`)
+   * :ref:`X_208 <X_208>` = :term:`crosssum <crosssum>` of :ref:`X_3 <X_3>` and X_1433
+   * :ref:`X_208 <X_208>` = polar conjugate of X_34404
+   * :ref:`X_208 <X_208>` = X_i-:term:`beth conjugate <beth-conjugate>` of X_j for these (i,j): (:ref:`108 <X_108>`, :ref:`208 <X_208>`), (:ref:`162 <X_162>`, :ref:`1 <X_1>`)
 
 .. toctree::
    :hidden:

@@ -1,5 +1,17 @@
 from pathlib import Path
 import re
+import sys
+
+_REPO_ROOT = Path(__file__).resolve().parents[1]
+_WORKSPACE_ROOT = _REPO_ROOT.parent
+for _extra_path in (
+    _REPO_ROOT / "src",
+    _WORKSPACE_ROOT / "model" / "src",
+    _WORKSPACE_ROOT / ".venv" / "lib" / "python3.13" / "site-packages",
+):
+    if _extra_path.exists() and str(_extra_path) not in sys.path:
+        sys.path.insert(0, str(_extra_path))
+
 from photon_platform.publish.global_conf import *
 import geometor.etc as module
 
@@ -14,6 +26,7 @@ repo_name = "etc"
 setup_globals(org, org_name, repo, repo_name)
 
 html_theme = "foundation"
+suppress_warnings = ["autoapi.python_import_resolution", "toc.not_included"]
 
 
 def _read_clean_svg(svg_path: Path) -> str | None:
@@ -23,13 +36,120 @@ def _read_clean_svg(svg_path: Path) -> str | None:
     return re.sub(r"^<\?xml[^>]*\?>\s*", "", raw_svg)
 
 
+_HTML_SKIP_SUB_RE = re.compile(
+    r"(<(?:pre|code|svg|script|style)\b[^>]*>.*?</(?:pre|code|svg|script|style)>|<[^>]+>)",
+    flags=re.DOTALL | re.IGNORECASE,
+)
+_X_SUB_TEXT_RE = re.compile(r"(?<![A-Za-z0-9_])X(?:_(\d+|[ijkn])|\((\d+|[ijkn])\))")
+
+
+def _format_html_x_subscripts(html_str: str) -> str:
+    """Convert X_n and X(n) in HTML text nodes (outside tags, <pre>, <code>, <svg>) to X<sub>n</sub>."""
+    if not html_str or "X" not in html_str:
+        return html_str
+    parts = _HTML_SKIP_SUB_RE.split(html_str)
+    for idx in range(0, len(parts), 2):
+        if "X" in parts[idx]:
+            parts[idx] = _X_SUB_TEXT_RE.sub(
+                lambda m: f"X<sub>{m.group(1) or m.group(2)}</sub>",
+                parts[idx],
+            )
+    return "".join(parts)
+
+
+def _fix_etc_ref_tooltips(app, doctree, fromdocname):
+    """Set clean triangle center tooltips on internal #x-N references before Euclid's book X fallback."""
+    from docutils import nodes
+    from geometor.etc.render import _load_center_names
+
+    center_names = _load_center_names()
+    for ref_node in doctree.findall(nodes.reference):
+        refuri = ref_node.get("refuri", "")
+        m = re.search(r"#x-(\d+)$", refuri)
+        if m:
+            cnum = m.group(1)
+            cname = center_names.get(cnum, "")
+            cname_clean = re.sub(r"\bX\((\d+)\)", r"X_\1", cname)
+            ref_node["reftitle"] = f"X_{cnum} — {cname_clean}" if cname_clean else f"X_{cnum}"
+
+
+_ETC_HEADING_CSS = """<style id="etc-heading-styles">
+.book-reading-pane .book-content h1,
+.folio-book-page h1 {
+    position: relative;
+    text-align: center !important;
+    text-indent: 0 !important;
+    margin-bottom: 0.35rem !important;
+}
+.book-reading-pane .book-content h1 a.headerlink,
+.book-reading-pane .book-content h2 a.headerlink,
+.folio-book-page h1 a.headerlink,
+.folio-book-page h2 a.headerlink {
+    position: absolute;
+}
+.book-reading-pane .book-content p.rubric,
+.folio-book-page p.rubric {
+    font-style: normal !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+    text-indent: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 1.4rem !important;
+}
+</style>
+"""
+
+
 def _inline_etc_svgs(app, pagename, templatename, context, doctree):
-    """Inline interactive triangle SVGs into a unified 4-tab graphics panel on center pages."""
+    """Format X_n subscripts across HTML pages and inline interactive 4-tab SVGs on center pages."""
+    import html as _html
+    from geometor.etc.render import _load_center_names
+
+    if context.get("title"):
+        context["title"] = _format_html_x_subscripts(str(context["title"]))
+    for nav_key in ("prev", "next"):
+        nav_obj = context.get(nav_key)
+        if isinstance(nav_obj, dict) and nav_obj.get("title"):
+            nav_obj["title"] = _format_html_x_subscripts(str(nav_obj["title"]))
+
     body = context.get("body")
-    if not body or not pagename.startswith("centers/x-"):
+    if not body:
         return
 
-    import html as _html
+    # On the centers collection index, append the center subtitle as a second line inside each card's <h2><a>
+    if pagename == "centers/index":
+        center_names = _load_center_names()
+
+        def _card_h2_repl(m: re.Match) -> str:
+            href, num_s, inner = m.group(1), str(int(m.group(2))), m.group(3)
+            sub = center_names.get(num_s, "").lstrip("=").strip()
+            sub = re.sub(r"\bX\((\d+)\)", r"X_\1", sub)
+            if sub and sub not in inner:
+                sub_esc = _html.escape(sub)
+                return (
+                    f'<h2><a href="{href}">{inner}'
+                    f'<span class="etc-card-subtitle" style="display: block; font-size: 0.82em; '
+                    f'font-weight: 700; font-style: normal; color: var(--book-text-muted); '
+                    f'margin-top: 0.12rem;">{sub_esc}</span></a></h2>'
+                )
+            return m.group(0)
+
+        body = re.sub(
+            r'<h2><a href="(x-(\d+)/index\.html)">(.*?)</a></h2>',
+            _card_h2_repl,
+            body,
+        )
+
+    # Convert X_n -> X<sub>n</sub> in HTML text nodes before inlining raw SVGs
+    body = _ETC_HEADING_CSS + _format_html_x_subscripts(body)
+
+    if not pagename.startswith("centers/x-"):
+        context["body"] = body
+        return
 
     srcdir = Path(app.srcdir)
     page_dir = srcdir / Path(pagename).parent
@@ -38,7 +158,7 @@ def _inline_etc_svgs(app, pagename, templatename, context, doctree):
         full_img = match.group(0)
         stem = match.group(1)
         alt_m = re.search(r'\balt="([^"]*)"', full_img)
-        title_str = alt_m.group(1) if alt_m else stem
+        title_str = _format_html_x_subscripts(alt_m.group(1) if alt_m else stem)
 
         ab_badge = '<span class="geom-ref geom-segment" data-ref="[ A B ]">AB</span>'
         tab_specs = [
@@ -119,5 +239,6 @@ def _inline_etc_svgs(app, pagename, templatename, context, doctree):
 
 
 def setup(app):
+    app.connect("doctree-resolved", _fix_etc_ref_tooltips, priority=400)
     app.connect("html-page-context", _inline_etc_svgs)
 

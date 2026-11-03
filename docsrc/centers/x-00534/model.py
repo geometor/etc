@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(534) = DIRECTION OF VECTOR AX + BX + CX, where X = X(19)."""
+"""GEOMETOR construction model for X_534 = DIRECTION OF VECTOR AX + BX + CX, where X = X_19."""
 
 from __future__ import annotations
 
@@ -22,14 +22,14 @@ from geometor.etc.render import write_center_svg
 def construct_x_00534(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(534) = DIRECTION OF VECTOR AX + BX + CX, where X = X(19) on reference triangle ABC."""
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
-    X_19 = eval_trilinear_point(model, A, B, C, 'tan(A)', ID="X(19)", classes=["center"])
-    X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X(30)", classes=["center"])
-    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X(511)", classes=["center"])
+    """Construct X_534 = DIRECTION OF VECTOR AX + BX + CX, where X = X_19 on reference triangle ABC."""
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
+    X_19 = eval_trilinear_point(model, A, B, C, 'tan(A)', ID="X_19", classes=["center"])
+    X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X_30", classes=["center"])
+    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X_511", classes=["center"])
     central_line(model, X_2, X_19, 2, 19)
     central_line(model, X_30, X_511, 30, 511)
-    X_534 = intersect_lines(model, X_2, X_19, X_30, X_511, ID="X(534)", classes=["selected", "target"])
+    X_534 = intersect_lines(model, X_2, X_19, X_30, X_511, ID="X_534", classes=["selected", "target"])
     return promote_point_to_top(model, X_534)
 
 
@@ -37,8 +37,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(534) on the given reference triangle."""
-    model = create_model('X(534) = DIRECTION OF VECTOR AX + BX + CX, where X = X(19)')
+    """Build a `geometor.model.Model` for X_534 on the given reference triangle."""
+    model = create_model('X_534 = DIRECTION OF VECTOR AX + BX + CX, where X = X_19')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00534(model, A, B, C)
     return model

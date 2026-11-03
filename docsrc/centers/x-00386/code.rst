@@ -1,18 +1,21 @@
-:canonical_id: X(386)
+:canonical_id: X_386
 :type: code
+:subtitle: INVERSE-IN-BROCARD-CIRCLE OF X_58
 
-X(386) = INVERSE-IN-BROCARD-CIRCLE OF X(58) — Code
-==================================================
+X_386
+=====
+
+.. rubric:: INVERSE-IN-BROCARD-CIRCLE OF X_58
 
 .. enunciation::
 
-   :ref:`X(386) <X(386)>` is the external center of similitude of the circumcircle and Apollonius circle. The internal center is :ref:`X(573) <X(573)>`. (Peter J. C. Moses, 8/22/03)
+   :ref:`X_386 <X_386>` = Brocard-circle-inverse of :ref:`X_58 <X_58>`
 
 .. figure:: x-00386.svg
-   :alt: X(386) = INVERSE-IN-BROCARD-CIRCLE OF X(58)
+   :alt: X_386 — INVERSE-IN-BROCARD-CIRCLE OF X_58
    :align: center
 
-   **X(386) = INVERSE-IN-BROCARD-CIRCLE OF X(58)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_386** (*INVERSE-IN-BROCARD-CIRCLE OF X_58*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

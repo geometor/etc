@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(552) = POINT MAIA I."""
+"""GEOMETOR construction model for X_552 = POINT MAIA I."""
 
 from __future__ import annotations
 
@@ -19,8 +19,8 @@ from geometor.etc.render import write_center_svg
 def construct_x_00552(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(552) = POINT MAIA I on reference triangle ABC."""
-    X_552 = eval_trilinear_point(model, A, B, C, '1/(a*(b + c - a)*(b + c)**(2))', ID="X(552)", classes=["selected", "target"])
+    """Construct X_552 = POINT MAIA I on reference triangle ABC."""
+    X_552 = eval_trilinear_point(model, A, B, C, '1/(a*(b + c - a)*(b + c)**(2))', ID="X_552", classes=["selected", "target"])
     return promote_point_to_top(model, X_552)
 
 
@@ -28,8 +28,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(552) on the given reference triangle."""
-    model = create_model('X(552) = POINT MAIA I')
+    """Build a `geometor.model.Model` for X_552 on the given reference triangle."""
+    model = create_model('X_552 = POINT MAIA I')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00552(model, A, B, C)
     return model

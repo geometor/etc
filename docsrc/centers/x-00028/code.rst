@@ -1,18 +1,21 @@
-:canonical_id: X(28)
+:canonical_id: X_28
 :type: code
+:subtitle: CEVAPOINT OF X_19 AND X_25
 
-X(28) = CEVAPOINT OF X(19) AND X(25) — Code
-===========================================
+X_28
+====
+
+.. rubric:: CEVAPOINT OF X_19 AND X_25
 
 .. enunciation::
 
-   :ref:`X(28) <X(28)>` is the {:ref:`X(27) <X(27)>`,\ :ref:`X(29) <X(29)>`}-harmonic conjugate of :ref:`X(4) <X(4)>`.
+   :ref:`X_28 <X_28>` is the :term:`cevapoint <cevapoint>` of :ref:`X_19 <X_19>` and :ref:`X_25 <X_25>`.
 
 .. figure:: x-00028.svg
-   :alt: X(28) = CEVAPOINT OF X(19) AND X(25)
+   :alt: X_28 — CEVAPOINT OF X_19 AND X_25
    :align: center
 
-   **X(28) = CEVAPOINT OF X(19) AND X(25)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_28** (*CEVAPOINT OF X_19 AND X_25*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

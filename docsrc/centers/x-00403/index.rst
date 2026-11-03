@@ -1,22 +1,31 @@
 :order: 403
 :type: center
-:canonical_id: X(403)
-:dependencies: X(2), X(3), X(4), X(5), X(24), X(25), X(36), X(48), X(112), X(113), X(115), X(186), X(230), X(232), X(378), X(468), X(577), X(647), X(847), X(858), X(1093), X(1594), X(1908), X(2071), X(2986), X(5504), X(10257), X(34938)
+:canonical_id: X_403
+:subtitle: X_36 OF THE ORTHIC TRIANGLE
+:dependencies: X_2, X_3, X_4, X_5, X_24, X_25, X_36, X_48, X_112, X_113, X_115, X_186, X_230, X_232, X_378, X_468, X_577, X_647, X_847, X_858, X_1093, X_1594, X_1908, X_2071, X_2986, X_5504, X_10257, X_34938
 
-.. _X(403):
+.. _X_403:
 
-X(403) = X(36) OF THE ORTHIC TRIANGLE
-=====================================
+X_403
+=====
+
+.. rubric:: X_36 OF THE ORTHIC TRIANGLE
 
 .. enunciation::
 
-   :ref:`X(403) <X(403)>` is centroid of the triangle having vertices :ref:`X(4) <X(4)>`, P(4), U(4). (Regarding the bicentric pair P(4) and U(4), see the notes just before X(1908)). (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   :ref:`X_403 <X_403>` = midpoint of :ref:`X_4 <X_4>` and :ref:`X_186 <X_186>`
 
 .. figure:: x-00403.svg
-   :alt: X(403) = X(36) OF THE ORTHIC TRIANGLE
+   :alt: X_403 — X_36 OF THE ORTHIC TRIANGLE
    :align: center
 
-   **X(403) = X(36) OF THE ORTHIC TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_403** (*X_36 OF THE ORTHIC TRIANGLE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{4, 186} <{ 4, 186 }>`, :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`)
+   * **Related Centers:** :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_186 <X_186>` (:ref:`INVERSE-IN-CIRCUMCIRCLE OF X(4) <X_186>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`)
 
 .. signature:: center
 
@@ -28,46 +37,50 @@ X(403) = X(36) OF THE ORTHIC TRIANGLE
    :badge: 4 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`112 <X(112)>`, :ref:`230 <X(230)>`}, {:ref:`115 <X(115)>`, :ref:`232 <X(232)>`}, {:ref:`847 <X(847)>`, 1093}
+   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`112 <X_112>`, :ref:`230 <X_230>`}, {:ref:`115 <X_115>`, :ref:`232 <X_232>`}, {:ref:`847 <X_847>`, 1093}
 
 .. collapse:: Functional Relations
    :badge: 24 relations
 
-   * :ref:`X(403) <X(403)>` = midpoint of :ref:`X(4) <X(4)>` and :ref:`X(186) <X(186)>`
-   * :ref:`X(403) <X(403)>` = reflection of :ref:`X(186) <X(186)>` in :ref:`X(468) <X(468)>`
-   * :ref:`X(403) <X(403)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(5504)
-   * :ref:`X(403) <X(403)>` = :term:`complement <complement>` of X(2071)
-   * :ref:`X(403) <X(403)>` = :term:`anticomplement <anticomplement>` of X(10257)
-   * :ref:`X(403) <X(403)>` = inverse-in-circumcircle of :ref:`X(24) <X(24)>`
-   * :ref:`X(403) <X(403)>` = inverse-in-nine-point-circle of :ref:`X(4) <X(4)>`
-   * :ref:`X(403) <X(403)>` = inverse-in-orthocentroidal-circle of :ref:`X(378) <X(378)>`
-   * :ref:`X(403) <X(403)>` = anticomplementary-circle-inverse of X(34938)
-   * :ref:`X(403) <X(403)>` = :ref:`X(113) <X(113)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(4) <X(4)>`
-   * :ref:`X(403) <X(403)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(577) <X(577)>`\ \ :ref:`X(647) <X(647)>`
-   * :ref:`X(403) <X(403)>` = :ref:`X(36) <X(36)>`-of-orthic-triangle if and only if :g:`ABC << A B C >>` is acute
-   * :ref:`X(403) <X(403)>` = :ref:`X(186) <X(186)>`-of Euler-triangle
-   * :ref:`X(403) <X(403)>` = {:ref:`X(4) <X(4)>`,\ :ref:`X(5) <X(5)>`}-harmonic conjugate of X(1594)
-   * :ref:`X(403) <X(403)>` = inverse-in-polar-circle of :ref:`X(3) <X(3)>`
-   * :ref:`X(403) <X(403)>` = inverse-in-{circumcircle, nine-point circle}}-inverter of :ref:`X(25) <X(25)>`
-   * :ref:`X(403) <X(403)>` = reflection of :ref:`X(186) <X(186)>` in the orthic axis
-   * :ref:`X(403) <X(403)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X(2986)
-   * :ref:`X(403) <X(403)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of X(2986)
-   * :ref:`X(403) <X(403)>` = perspector of the :term:`orthic triangle <orthic-triangle>` and the reflection of the Euler triangle in the Euler line
-   * :ref:`X(403) <X(403)>` = :term:`radical trace <radical-trace>` of polar and second Droz-Farny circles
-   * :ref:`X(403) <X(403)>` = inverse-in-second-Droz-Farny-circle of :ref:`X(4) <X(4)>`
-   * :ref:`X(403) <X(403)>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X(36) <X(36)>`
-   * :ref:`X(403) <X(403)>` = Euler line intercept, other than :ref:`X(403) <X(403)>`, of circle {:ref:`X(403) <X(403)>`,\ :ref:`X(858) <X(858)>`,PU(4)}
+   * :ref:`X_403 <X_403>` = midpoint of :ref:`X_4 <X_4>` and :ref:`X_186 <X_186>`
+   * :ref:`X_403 <X_403>` = reflection of :ref:`X_186 <X_186>` in :ref:`X_468 <X_468>`
+   * :ref:`X_403 <X_403>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_5504
+   * :ref:`X_403 <X_403>` = :term:`complement <complement>` of X_2071
+   * :ref:`X_403 <X_403>` = :term:`anticomplement <anticomplement>` of X_10257
+   * :ref:`X_403 <X_403>` = inverse-in-circumcircle of :ref:`X_24 <X_24>`
+   * :ref:`X_403 <X_403>` = inverse-in-nine-point-circle of :ref:`X_4 <X_4>`
+   * :ref:`X_403 <X_403>` = inverse-in-orthocentroidal-circle of :ref:`X_378 <X_378>`
+   * :ref:`X_403 <X_403>` = anticomplementary-circle-inverse of X_34938
+   * :ref:`X_403 <X_403>` = :ref:`X_113 <X_113>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_4 <X_4>`
+   * :ref:`X_403 <X_403>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_577 <X_577>`\ \ :ref:`X_647 <X_647>`
+   * :ref:`X_403 <X_403>` = :ref:`X_36 <X_36>`-of-orthic-triangle if and only if :g:`ABC << A B C >>` is acute
+   * :ref:`X_403 <X_403>` = :ref:`X_186 <X_186>`-of Euler-triangle
+   * :ref:`X_403 <X_403>` = {:ref:`X_4 <X_4>`,\ :ref:`X_5 <X_5>`}-harmonic conjugate of X_1594
+   * :ref:`X_403 <X_403>` = inverse-in-polar-circle of :ref:`X_3 <X_3>`
+   * :ref:`X_403 <X_403>` = inverse-in-{circumcircle, nine-point circle}}-inverter of :ref:`X_25 <X_25>`
+   * :ref:`X_403 <X_403>` = reflection of :ref:`X_186 <X_186>` in the orthic axis
+   * :ref:`X_403 <X_403>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X_2986
+   * :ref:`X_403 <X_403>` = :ref:`X_48 <X_48>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of X_2986
+   * :ref:`X_403 <X_403>` = perspector of the :term:`orthic triangle <orthic-triangle>` and the reflection of the :term:`Euler triangle <euler-triangle>` in the Euler line
+   * :ref:`X_403 <X_403>` = :term:`radical trace <radical-trace>` of polar and second Droz-Farny circles
+   * :ref:`X_403 <X_403>` = inverse-in-second-Droz-Farny-circle of :ref:`X_4 <X_4>`
+   * :ref:`X_403 <X_403>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X_36 <X_36>`
+   * :ref:`X_403 <X_403>` = Euler line intercept, other than :ref:`X_403 <X_403>`, of circle {:ref:`X_403 <X_403>`,\ :ref:`X_858 <X_858>`,PU(4)}
 
 Notes
 -----
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(403) <X(403)>` has Shinagawa coefficients :math:`(2F, 2F - E)`.
+   As a point on the Euler line, :ref:`X_403 <X_403>` has Shinagawa coefficients :math:`(2F, 2F - E)`.
 
 .. container:: note-item
 
-   Let :g:`A' <A'>` be the reflection in :g:`BC <[ B C ]>` of the :g:`A <A>`-vertex of the :term:`tangential triangle <tangential-triangle>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The circumcircles of :g:`AB'C' << A B' C' >>`, :g:`BC'A' << B C' A' >>`, and :g:`CA'B' << C A' B' >>` concur at the isogonal conjugate of :ref:`X(403) <X(403)>`. Also, :ref:`X(403) <X(403)>` is the perspector of :g:`ABC << A B C >>` and the reflection of the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(4) <X(4)>` in the orthic axis (trilinear polar of :ref:`X(4) <X(4)>`). (Randy Hutson, July 23, 2015)
+   :ref:`X_403 <X_403>` is centroid of the triangle having vertices :ref:`X_4 <X_4>`, P(4), U(4). (Regarding the bicentric pair P(4) and U(4), see the notes just before X_1908). (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+
+.. container:: note-item
+
+   Let :g:`A' <A'>` be the reflection in :g:`BC <[ B C ]>` of the :g:`A <A>`-vertex of the :term:`tangential triangle <tangential-triangle>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The circumcircles of :g:`AB'C' << A B' C' >>`, :g:`BC'A' << B C' A' >>`, and :g:`CA'B' << C A' B' >>` concur at the isogonal conjugate of :ref:`X_403 <X_403>`. Also, :ref:`X_403 <X_403>` is the perspector of :g:`ABC << A B C >>` and the reflection of the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X_4 <X_4>` in the orthic axis (trilinear polar of :ref:`X_4 <X_4>`). (Randy Hutson, July 23, 2015)
 
 .. toctree::
    :hidden:

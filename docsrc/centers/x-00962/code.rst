@@ -1,18 +1,21 @@
-:canonical_id: X(962)
+:canonical_id: X_962
 :type: code
+:subtitle: LONGUET-HIGGINS POINT
 
-X(962) = LONGUET-HIGGINS POINT — Code
-=====================================
+X_962
+=====
+
+.. rubric:: LONGUET-HIGGINS POINT
 
 .. enunciation::
 
-   :ref:`X(962) <X(962)>` is shown in **Michael S. Longuet-Higgins,** "On the principal centers of a triangle," *Elemente der Mathematik* 56 (2001) 122-129, to complete a simple pattern of collinearities.
+   :ref:`X_962 <X_962>` is the radical center of the circles centered at :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, with respective
 
 .. figure:: x-00962.svg
-   :alt: X(962) = LONGUET-HIGGINS POINT
+   :alt: X_962 — LONGUET-HIGGINS POINT
    :align: center
 
-   **X(962) = LONGUET-HIGGINS POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_962** (*LONGUET-HIGGINS POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

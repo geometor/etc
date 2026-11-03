@@ -1,18 +1,21 @@
-:canonical_id: X(229)
+:canonical_id: X_229
 :type: code
+:subtitle: X_7-CEVA CONJUGATE OF X_81
 
-X(229) = X(7)-CEVA CONJUGATE OF X(81) — Code
-============================================
+X_229
+=====
+
+.. rubric:: X_7-CEVA CONJUGATE OF X_81
 
 .. enunciation::
 
-   :ref:`X(229) <X(229)>` = midpoint of :ref:`X(1) <X(1)>` and :ref:`X(267) <X(267)>`
+   :ref:`X_229 <X_229>` = :ref:`X_7 <X_7>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_81 <X_81>`
 
 .. figure:: x-00229.svg
-   :alt: X(229) = X(7)-CEVA CONJUGATE OF X(81)
+   :alt: X_229 — X_7-CEVA CONJUGATE OF X_81
    :align: center
 
-   **X(229) = X(7)-CEVA CONJUGATE OF X(81)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_229** (*X_7-CEVA CONJUGATE OF X_81*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

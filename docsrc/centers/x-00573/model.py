@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(573) = ORTHOHARMONIC OF X(58)."""
+"""GEOMETOR construction model for X_573 = ORTHOHARMONIC OF X_58."""
 
 from __future__ import annotations
 
@@ -24,16 +24,16 @@ from geometor.etc.render import write_center_svg
 def construct_x_00573(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(573) = ORTHOHARMONIC OF X(58) on reference triangle ABC."""
-    X_573 = eval_trilinear_point(model, A, B, C, '(c - a)*cos(B)*sin(A - B) - (a - b)*cos(C)*sin(C - A)', ID="X(573)", classes=["selected", "target"])
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
+    """Construct X_573 = ORTHOHARMONIC OF X_58 on reference triangle ABC."""
+    X_573 = eval_trilinear_point(model, A, B, C, '(c - a)*cos(B)*sin(A - B) - (a - b)*cos(C)*sin(C - A)', ID="X_573", classes=["selected", "target"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
     central_line(model, X_3, X_6, 3, 6, incident=True)
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
-    X_9 = mittenpunkt_of(model, A, B, C, ID="X(9)", classes=["center", "incident"])
+    X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
+    X_9 = mittenpunkt_of(model, A, B, C, ID="X_9", classes=["center", "incident"])
     central_line(model, X_4, X_9, 4, 9, incident=True)
-    X_101 = eval_trilinear_point(model, A, B, C, 'a/(b - c)', ID="X(101)", classes=["center", "incident"])
-    X_102 = eval_trilinear_point(model, A, B, C, '1/(sin(B)*(sec(A) - sec(B)) + sin(C)*(sec(A) - sec(C)))', ID="X(102)", classes=["center", "incident"])
+    X_101 = eval_trilinear_point(model, A, B, C, 'a/(b - c)', ID="X_101", classes=["center", "incident"])
+    X_102 = eval_trilinear_point(model, A, B, C, '1/(sin(B)*(sec(A) - sec(B)) + sin(C)*(sec(A) - sec(C)))', ID="X_102", classes=["center", "incident"])
     central_line(model, X_101, X_102, 101, 102, incident=True)
     return promote_point_to_top(model, X_573)
 
@@ -42,8 +42,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(573) on the given reference triangle."""
-    model = create_model('X(573) = ORTHOHARMONIC OF X(58)')
+    """Build a `geometor.model.Model` for X_573 on the given reference triangle."""
+    model = create_model('X_573 = ORTHOHARMONIC OF X_58')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00573(model, A, B, C)
     return model

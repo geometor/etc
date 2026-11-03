@@ -1,18 +1,21 @@
-:canonical_id: X(584)
+:canonical_id: X_584
 :type: code
+:subtitle: ORTHOHARMONIC OF X_500
 
-X(584) = ORTHOHARMONIC OF X(500) — Code
-=======================================
+X_584
+=====
+
+.. rubric:: ORTHOHARMONIC OF X_500
 
 .. enunciation::
 
-   :ref:`X(584) <X(584)>` = inverse-in-Brocard-circle of :ref:`X(583) <X(583)>`
+   :ref:`X_584 <X_584>` = inverse-in-Brocard-circle of :ref:`X_583 <X_583>`
 
 .. figure:: x-00584.svg
-   :alt: X(584) = ORTHOHARMONIC OF X(500)
+   :alt: X_584 — ORTHOHARMONIC OF X_500
    :align: center
 
-   **X(584) = ORTHOHARMONIC OF X(500)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_584** (*ORTHOHARMONIC OF X_500*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

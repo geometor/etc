@@ -1,22 +1,31 @@
 :order: 248
 :type: center
-:canonical_id: X(248)
-:dependencies: X(2), X(3), X(4), X(6), X(32), X(39), X(50), X(54), X(65), X(66), X(67), X(69), X(72), X(74), X(92), X(98), X(114), X(132), X(157), X(172), X(184), X(187), X(232), X(287), X(290), X(293), X(297), X(385), X(511), X(525), X(571), X(647), X(682), X(685), X(695), X(2065), X(2715), X(15407), X(17932), X(39085)
+:canonical_id: X_248
+:subtitle: X_4-LINE CONJUGATE OF X_132
+:dependencies: X_2, X_3, X_4, X_6, X_32, X_39, X_50, X_54, X_65, X_66, X_67, X_69, X_72, X_74, X_92, X_98, X_114, X_132, X_157, X_172, X_184, X_187, X_232, X_287, X_290, X_293, X_297, X_385, X_511, X_525, X_571, X_647, X_682, X_685, X_695, X_2065, X_2715, X_15407, X_17932, X_39085
 
-.. _X(248):
+.. _X_248:
 
-X(248) = X(4)-LINE CONJUGATE OF X(132)
-======================================
+X_248
+=====
+
+.. rubric:: X_4-LINE CONJUGATE OF X_132
 
 .. enunciation::
 
-   :ref:`X(248) <X(248)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(297) <X(297)>`
+   :ref:`X_248 <X_248>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_114 <X_114>`\ \ :ref:`X_132 <X_132>`
 
 .. figure:: x-00248.svg
-   :alt: X(248) = X(4)-LINE CONJUGATE OF X(132)
+   :alt: X_248 — X_4-LINE CONJUGATE OF X_132
    :align: center
 
-   **X(248) = X(4)-LINE CONJUGATE OF X(132)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_248** (*X_4-LINE CONJUGATE OF X_132*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{4, 32} <{ 4, 32 }>`, :g:`{39, 54} <{ 39, 54 }>`
+   * **Related Centers:** :g:`X_98 <X_98>` (:ref:`TARRY POINT <X_98>`), :g:`X_287 <X_287>` (:ref:`-HIRST INVERSE OF X(98) <X_287>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_32 <X_32>` (:ref:`3rd POWER POINT <X_32>`), :g:`X_39 <X_39>` (:ref:`BROCARD MIDPOINT <X_39>`), :g:`X_54 <X_54>` (:ref:`KOSNITA POINT <X_54>`)
 
 .. signature:: center
 
@@ -33,23 +42,23 @@ X(248) = X(4)-LINE CONJUGATE OF X(132)
    :badge: 11 lines
    :class: line-catalog
 
-   {:ref:`4 <X(4)>`, :ref:`32 <X(32)>`}, {:ref:`6 <X(6)>`, :ref:`157 <X(157)>`}, {:ref:`39 <X(39)>`, :ref:`54 <X(54)>`}, {:ref:`50 <X(50)>`, :ref:`67 <X(67)>`}, {:ref:`65 <X(65)>`, :ref:`172 <X(172)>`}, {:ref:`66 <X(66)>`, :ref:`571 <X(571)>`}, {:ref:`69 <X(69)>`, :ref:`287 <X(287)>`}, {:ref:`72 <X(72)>`, :ref:`293 <X(293)>`}, {:ref:`74 <X(74)>`, :ref:`187 <X(187)>`}, {:ref:`290 <X(290)>`, :ref:`385 <X(385)>`}, {:ref:`682 <X(682)>`, :ref:`695 <X(695)>`}
+   {:ref:`4 <X_4>`, :ref:`32 <X_32>`}, {:ref:`6 <X_6>`, :ref:`157 <X_157>`}, {:ref:`39 <X_39>`, :ref:`54 <X_54>`}, {:ref:`50 <X_50>`, :ref:`67 <X_67>`}, {:ref:`65 <X_65>`, :ref:`172 <X_172>`}, {:ref:`66 <X_66>`, :ref:`571 <X_571>`}, {:ref:`69 <X_69>`, :ref:`287 <X_287>`}, {:ref:`72 <X_72>`, :ref:`293 <X_293>`}, {:ref:`74 <X_74>`, :ref:`187 <X_187>`}, {:ref:`290 <X_290>`, :ref:`385 <X_385>`}, {:ref:`682 <X_682>`, :ref:`695 <X_695>`}
 
 .. collapse:: Functional Relations
    :badge: 12 relations
 
-   * :ref:`X(248) <X(248)>` = isogonal conjugate of :ref:`X(297) <X(297)>`
-   * :ref:`X(248) <X(248)>` = :term:`crosspoint <crosspoint>` of :ref:`X(98) <X(98)>` and :ref:`X(287) <X(287)>`
-   * :ref:`X(248) <X(248)>` = :term:`crosssum <crosssum>` of :ref:`X(232) <X(232)>` and :ref:`X(511) <X(511)>`
-   * :ref:`X(248) <X(248)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(114) <X(114)>`\ \ :ref:`X(132) <X(132)>`
-   * :ref:`X(248) <X(248)>` = :ref:`X(4) <X(4)>`-:term:`line conjugate <line-conjugate>` of :ref:`X(132) <X(132)>`
-   * :ref:`X(248) <X(248)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(184) <X(184)>`\ \ :ref:`X(647) <X(647)>`
-   * :ref:`X(248) <X(248)>` = crossdifference of every pair of points on line :ref:`X(114) <X(114)>`\ \ :ref:`X(132) <X(132)>`
-   * :ref:`X(248) <X(248)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(39085)
-   * :ref:`X(248) <X(248)>` = :ref:`X(92) <X(92)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(511) <X(511)>`
-   * :ref:`X(248) <X(248)>` = perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(685) <X(685)>`,X(2065),X(2715),X(15407),X(17932)}}
-   * :ref:`X(248) <X(248)>` = barycentric product :ref:`X(3) <X(3)>`\ \*\ :ref:`X(98) <X(98)>`
-   * :ref:`X(248) <X(248)>` = barycentric product of circumcircle intercepts of line :ref:`X(3) <X(3)>`\ \ :ref:`X(525) <X(525)>`
+   * :ref:`X_248 <X_248>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_297 <X_297>`
+   * :ref:`X_248 <X_248>` = :term:`crosspoint <crosspoint>` of :ref:`X_98 <X_98>` and :ref:`X_287 <X_287>`
+   * :ref:`X_248 <X_248>` = :term:`crosssum <crosssum>` of :ref:`X_232 <X_232>` and :ref:`X_511 <X_511>`
+   * :ref:`X_248 <X_248>` = crossdifference of every pair of points on line :ref:`X_114 <X_114>`\ \ :ref:`X_132 <X_132>`
+   * :ref:`X_248 <X_248>` = :ref:`X_4 <X_4>`-:term:`line conjugate <line-conjugate>` of :ref:`X_132 <X_132>`
+   * :ref:`X_248 <X_248>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_184 <X_184>`\ \ :ref:`X_647 <X_647>`
+   * :ref:`X_248 <X_248>` = crossdifference of every pair of points on line :ref:`X_114 <X_114>`\ \ :ref:`X_132 <X_132>`
+   * :ref:`X_248 <X_248>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of X_39085
+   * :ref:`X_248 <X_248>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_511 <X_511>`
+   * :ref:`X_248 <X_248>` = perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_685 <X_685>`,X_2065,X_2715,X_15407,X_17932}}
+   * :ref:`X_248 <X_248>` = barycentric product :ref:`X_3 <X_3>`\ \*\ :ref:`X_98 <X_98>`
+   * :ref:`X_248 <X_248>` = barycentric product of circumcircle intercepts of line :ref:`X_3 <X_3>`\ \ :ref:`X_525 <X_525>`
 
 .. toctree::
    :hidden:

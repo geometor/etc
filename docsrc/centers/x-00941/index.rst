@@ -1,22 +1,31 @@
 :order: 941
 :type: center
-:canonical_id: X(941)
-:dependencies: X(1), X(2), X(6), X(8), X(9), X(21), X(37), X(42), X(63), X(81), X(84), X(111), X(314), X(512), X(573), X(581), X(650), X(931), X(940), X(967), X(4185), X(10472), X(34259), X(34284)
+:canonical_id: X_941
+:subtitle: ISOGONAL CONJUGATE OF X_940
+:dependencies: X_1, X_2, X_6, X_8, X_9, X_21, X_37, X_42, X_63, X_81, X_84, X_111, X_314, X_512, X_573, X_581, X_650, X_931, X_940, X_967, X_4185, X_10472, X_34259, X_34284
 
-.. _X(941):
+.. _X_941:
 
-X(941) = ISOGONAL CONJUGATE OF X(940)
-=====================================
+X_941
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_940
 
 .. enunciation::
 
-   :ref:`X(941) <X(941)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(940) <X(940)>`
+   :ref:`X_941 <X_941>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_940 <X_940>`.
 
 .. figure:: x-00941.svg
-   :alt: X(941) = ISOGONAL CONJUGATE OF X(940)
+   :alt: X_941 — ISOGONAL CONJUGATE OF X_940
    :align: center
 
-   **X(941) = ISOGONAL CONJUGATE OF X(940)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_941** (*ISOGONAL CONJUGATE OF X_940*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{6, 21} <{ 6, 21 }>`, :g:`{8, 37} <{ 8, 37 }>`
+   * **Related Centers:** :g:`X_940 <X_940>` (:ref:`POINT ALDEBARAN <X_940>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_21 <X_21>` (:ref:`SCHIFFLER POINT <X_21>`), :g:`X_8 <X_8>` (:ref:`NAGEL POINT <X_8>`), :g:`X_37 <X_37>` (:ref:`CROSSPOINT OF INCENTER AND CENTROID <X_37>`)
 
 .. signature:: center
 
@@ -28,17 +37,17 @@ X(941) = ISOGONAL CONJUGATE OF X(940)
    :badge: 8 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`573 <X(573)>`}, {:ref:`2 <X(2)>`, :ref:`314 <X(314)>`}, {:ref:`6 <X(6)>`, :ref:`21 <X(21)>`}, {:ref:`8 <X(8)>`, :ref:`37 <X(37)>`}, {:ref:`9 <X(9)>`, :ref:`42 <X(42)>`}, {:ref:`81 <X(81)>`, :ref:`967 <X(967)>`}, {:ref:`84 <X(84)>`, :ref:`581 <X(581)>`}, {:ref:`111 <X(111)>`, :ref:`931 <X(931)>`}
+   {:ref:`1 <X_1>`, :ref:`573 <X_573>`}, {:ref:`2 <X_2>`, :ref:`314 <X_314>`}, {:ref:`6 <X_6>`, :ref:`21 <X_21>`}, {:ref:`8 <X_8>`, :ref:`37 <X_37>`}, {:ref:`9 <X_9>`, :ref:`42 <X_42>`}, {:ref:`81 <X_81>`, :ref:`967 <X_967>`}, {:ref:`84 <X_84>`, :ref:`581 <X_581>`}, {:ref:`111 <X_111>`, :ref:`931 <X_931>`}
 
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X(941) <X(941)>` = isogonal conjugate of :ref:`X(940) <X(940)>`
-   * :ref:`X(941) <X(941)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(34284)
-   * :ref:`X(941) <X(941)>` = :term:`anticomplement <anticomplement>` of X(10472)
-   * :ref:`X(941) <X(941)>` = polar conjugate of isotomic conjugate of X(34259)
-   * :ref:`X(941) <X(941)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(512) <X(512)>`\ \ :ref:`X(650) <X(650)>`
-   * :ref:`X(941) <X(941)>` = :ref:`X(63) <X(63)>`-:term:`isoconjugate <isoconjugate>` of X(4185)
+   * :ref:`X_941 <X_941>` = isogonal conjugate of :ref:`X_940 <X_940>`
+   * :ref:`X_941 <X_941>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_34284
+   * :ref:`X_941 <X_941>` = :term:`anticomplement <anticomplement>` of X_10472
+   * :ref:`X_941 <X_941>` = polar conjugate of isotomic conjugate of X_34259
+   * :ref:`X_941 <X_941>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_512 <X_512>`\ \ :ref:`X_650 <X_650>`
+   * :ref:`X_941 <X_941>` = :ref:`X_63 <X_63>`-:term:`isoconjugate <isoconjugate>` of X_4185
 
 .. toctree::
    :hidden:

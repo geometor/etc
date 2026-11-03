@@ -1,18 +1,21 @@
-:canonical_id: X(741)
+:canonical_id: X_741
 :type: code
+:subtitle: EVEN (- 1, 1) CIRCUMCIRCLE POINT
 
-X(741) = EVEN (- 1, 1) CIRCUMCIRCLE POINT — Code
-================================================
+X_741
+=====
+
+.. rubric:: EVEN (- 1, 1) CIRCUMCIRCLE POINT
 
 .. enunciation::
 
-   :ref:`X(741) <X(741)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(740) <X(740)>`
+   :ref:`X_741 <X_741>` = Ψ(:ref:`X_190 <X_190>`, :ref:`X_37 <X_37>`)
 
 .. figure:: x-00741.svg
-   :alt: X(741) = EVEN (- 1, 1) CIRCUMCIRCLE POINT
+   :alt: X_741 — EVEN (- 1, 1) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(741) = EVEN (- 1, 1) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_741** (*EVEN (- 1, 1) CIRCUMCIRCLE POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

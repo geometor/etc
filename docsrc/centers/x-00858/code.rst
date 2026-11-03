@@ -1,18 +1,21 @@
-:canonical_id: X(858)
+:canonical_id: X_858
 :type: code
+:subtitle: COMPLEMENT OF X_23
 
-X(858) = COMPLEMENT OF X(23) — Code
-===================================
+X_858
+=====
+
+.. rubric:: COMPLEMENT OF X_23
 
 .. enunciation::
 
-   Let :g:`P <P>` and :g:`P' <P'>` be circumcircle antipodes. Let :g:`Q <Q>` and :g:`Q' <Q'>` be the :term:`anticomplements <anticomplement>` of :g:`P <P>` and :g:`P' <P'>`, resp. The rectangular hyperbola passing through :g:`P <P>`, :g:`P' <P'>`, Q, :g:`Q' <Q'>` has center :ref:`X(858) <X(858)>` for all P. (:person:`Randy Hutson <randy-hutson>`, March 29, 2020)
+   :ref:`X_858 <X_858>` is the :term:`complement <complement>` of :ref:`X_23 <X_23>`.
 
 .. figure:: x-00858.svg
-   :alt: X(858) = COMPLEMENT OF X(23)
+   :alt: X_858 — COMPLEMENT OF X_23
    :align: center
 
-   **X(858) = COMPLEMENT OF X(23)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_858** (*COMPLEMENT OF X_23*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

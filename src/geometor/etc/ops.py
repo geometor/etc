@@ -96,29 +96,44 @@ def add_line(
 def add_circle(
     model: Model,
     pt_center: spg.Point,
-    pt_radius: spg.Point,
+    pt_radius: spg.Point | float,
     ID: str = "",
     classes: list[str] | None = None,
     guide: bool = False,
 ) -> spg.Circle | None:
-    """Add a `CircleElement` centered at `pt_center` passing through `pt_radius`."""
-    r_val = math.hypot(
-        float(pt_center.x) - float(pt_radius.x),
-        float(pt_center.y) - float(pt_radius.y),
-    )
+    """Add a `CircleElement` (or `Element` if radius is numeric/unregistered) centered at `pt_center`."""
+    if isinstance(pt_radius, (int, float)):
+        r_val = float(pt_radius)
+        rad_in_model = False
+    else:
+        r_val = math.hypot(
+            float(pt_center.x) - float(pt_radius.x),
+            float(pt_center.y) - float(pt_radius.y),
+        )
+        rad_in_model = pt_radius in model
     if r_val < 1e-7:
         return None
     if not ID:
-        ID = f"( {model[pt_center].ID} {model[pt_radius].ID} )"
+        rad_id = model[pt_radius].ID if rad_in_model else f"{r_val:.4f}"
+        ID = f"( {model[pt_center].ID} {rad_id} )"
     circ = spg.Circle(pt_center, sp.Float(round(r_val, 8)), evaluate=False)
-    el = CircleElement(
-        circ,
-        pt_radius=pt_radius,
-        parents=[pt_center, pt_radius],
-        classes=classes or [],
-        ID=ID,
-        guide=guide,
-    )
+    if rad_in_model and isinstance(pt_radius, spg.Point):
+        el: Element = CircleElement(
+            circ,
+            pt_radius=pt_radius,
+            parents=[pt_center, pt_radius],
+            classes=classes or [],
+            ID=ID,
+            guide=guide,
+        )
+    else:
+        el = Element(
+            circ,
+            parents=[pt_center],
+            classes=classes or [],
+            ID=ID,
+            guide=guide,
+        )
     super(Model, model).__setitem__(circ, el)
     return circ
 
@@ -621,7 +636,7 @@ def intouch_triangle(
 ) -> tuple[spg.Point, spg.Point, spg.Point]:
     """Construct the intouch (contact) triangle T_a T_b T_c of the incircle on BC, CA, AB."""
     a, b, c = triangle_side_lengths(A, B, C)
-    X1 = point_from_barycentrics(model, A, B, C, a, b, c, ID="X(1)", classes=["center"])
+    X1 = point_from_barycentrics(model, A, B, C, a, b, c, ID="X_1", classes=["center"])
     Ta = perpendicular_foot(model, X1, B, C, ID="T_a", guide=True)
     Tb = perpendicular_foot(model, X1, C, A, ID="T_b", guide=True)
     Tc = perpendicular_foot(model, X1, A, B, ID="T_c", guide=True)
@@ -826,19 +841,22 @@ def incenter_of(
     A: spg.Point,
     B: spg.Point,
     C: spg.Point,
-    ID: str = "X(1)",
+    ID: str = "X_1",
     classes: list[str] | None = None,
     draw_bisectors: bool = False,
     draw_incircle: bool = False,
 ) -> spg.Point:
-    """Construct the incenter X(1) of triangle ABC (concurrency of internal angle bisectors, Euclid IV.4)."""
+    """Construct the incenter X_1 of triangle ABC (concurrency of internal angle bisectors, Euclid IV.4)."""
     a, b, c = triangle_side_lengths(A, B, C)
     X1 = point_from_barycentrics(
         model, A, B, C, a, b, c, ID=ID, classes=classes or ["center"]
     )
     if draw_incircle:
-        Tc = perpendicular_foot(model, X1, A, B, ID="T_c", guide=True)
-        add_circle(model, X1, Tc, ID="incircle", classes=["incircle"])
+        s = 0.5 * (a + b + c)
+        area = math.sqrt(max(1e-16, s * (s - a) * (s - b) * (s - c)))
+        r_in = area / s
+        tc_pt = model.get_element_by_ID("T_c")
+        add_circle(model, X1, tc_pt if isinstance(tc_pt, spg.Point) else r_in, ID="incircle", classes=["incircle"])
     if draw_bisectors:
         add_line(model, A, X1, ID=f"[ {model[A].ID} {ID} ]", classes=["bisector"])
         add_line(model, B, X1, ID=f"[ {model[B].ID} {ID} ]", classes=["bisector"])
@@ -851,11 +869,11 @@ def centroid_of(
     A: spg.Point,
     B: spg.Point,
     C: spg.Point,
-    ID: str = "X(2)",
+    ID: str = "X_2",
     classes: list[str] | None = None,
     draw_medians: bool = False,
 ) -> spg.Point:
-    """Construct the centroid X(2) of triangle ABC (perspector of the medial triangle)."""
+    """Construct the centroid X_2 of triangle ABC (perspector of the medial triangle)."""
     if draw_medians:
         Ma, Mb, Mc = medial_triangle(model, A, B, C, draw_polygon=True)
         add_line(model, A, Ma, ID="[ A M_a ]", classes=["bisector"])
@@ -871,12 +889,12 @@ def circumcenter_of(
     A: spg.Point,
     B: spg.Point,
     C: spg.Point,
-    ID: str = "X(3)",
+    ID: str = "X_3",
     classes: list[str] | None = None,
     draw_bisectors: bool = False,
     draw_circumcircle: bool = False,
 ) -> spg.Point:
-    """Construct the circumcenter X(3) of triangle ABC (concurrency of perpendicular bisectors, Euclid IV.5)."""
+    """Construct the circumcenter X_3 of triangle ABC (concurrency of perpendicular bisectors, Euclid IV.5)."""
     a, b, c = triangle_side_lengths(A, B, C)
     sa = b**2 + c**2 - a**2
     sb = c**2 + a**2 - b**2
@@ -901,11 +919,11 @@ def orthocenter_of(
     A: spg.Point,
     B: spg.Point,
     C: spg.Point,
-    ID: str = "X(4)",
+    ID: str = "X_4",
     classes: list[str] | None = None,
     draw_altitudes: bool = False,
 ) -> spg.Point:
-    """Construct the orthocenter X(4) of triangle ABC (concurrency of altitudes / perspector of orthic triangle)."""
+    """Construct the orthocenter X_4 of triangle ABC (concurrency of altitudes / perspector of orthic triangle)."""
     a, b, c = triangle_side_lengths(A, B, C)
     sa = b**2 + c**2 - a**2
     sb = c**2 + a**2 - b**2
@@ -925,17 +943,21 @@ def nine_point_center_of(
     A: spg.Point,
     B: spg.Point,
     C: spg.Point,
-    ID: str = "X(5)",
+    ID: str = "X_5",
     classes: list[str] | None = None,
     draw_circle: bool = False,
 ) -> spg.Point:
-    """Construct the nine-point center X(5) of triangle ABC (midpoint of X(3) and X(4))."""
-    X3 = circumcenter_of(model, A, B, C, ID="X(3)")
-    X4 = orthocenter_of(model, A, B, C, ID="X(4)")
+    """Construct the nine-point center X_5 of triangle ABC (midpoint of X_3 and X_4)."""
+    X3 = circumcenter_of(model, A, B, C, ID="X_3")
+    X4 = orthocenter_of(model, A, B, C, ID="X_4")
     X5 = midpoint(model, X3, X4, ID=ID, classes=classes or ["center"], guide=False)
     if draw_circle:
-        Mc = midpoint(model, A, B, ID="M_c", guide=True)
-        add_circle(model, X5, Mc, ID="nine_point_circle", classes=["nine_point_circle"])
+        a, b, c = triangle_side_lengths(A, B, C)
+        s = 0.5 * (a + b + c)
+        area = math.sqrt(max(1e-16, s * (s - a) * (s - b) * (s - c)))
+        r_np = (a * b * c) / (8.0 * area)
+        mc_pt = model.get_element_by_ID("M_c")
+        add_circle(model, X5, mc_pt if isinstance(mc_pt, spg.Point) else r_np, ID="nine_point_circle", classes=["nine_point_circle"])
     return X5
 
 
@@ -944,11 +966,11 @@ def symmedian_point_of(
     A: spg.Point,
     B: spg.Point,
     C: spg.Point,
-    ID: str = "X(6)",
+    ID: str = "X_6",
     classes: list[str] | None = None,
     draw_symmedians: bool = False,
 ) -> spg.Point:
-    """Construct the symmedian (Lemoine) point X(6) of triangle ABC (isogonal conjugate of X(2))."""
+    """Construct the symmedian (Lemoine) point X_6 of triangle ABC (isogonal conjugate of X_2)."""
     a, b, c = triangle_side_lengths(A, B, C)
     if draw_symmedians:
         Ta, Tb, Tc = tangential_triangle(model, A, B, C, draw_polygon=True, draw_circumcircle=True)
@@ -965,11 +987,11 @@ def gergonne_point_of(
     A: spg.Point,
     B: spg.Point,
     C: spg.Point,
-    ID: str = "X(7)",
+    ID: str = "X_7",
     classes: list[str] | None = None,
     draw_cevians: bool = False,
 ) -> spg.Point:
-    """Construct the Gergonne point X(7) of triangle ABC (perspector of the intouch triangle)."""
+    """Construct the Gergonne point X_7 of triangle ABC (perspector of the intouch triangle)."""
     Ta, Tb, Tc = intouch_triangle(model, A, B, C, draw_polygon=True, draw_incircle=True)
     if draw_cevians:
         add_line(model, A, Ta, ID="[ A T_a ]", classes=["bisector"])
@@ -995,11 +1017,11 @@ def nagel_point_of(
     A: spg.Point,
     B: spg.Point,
     C: spg.Point,
-    ID: str = "X(8)",
+    ID: str = "X_8",
     classes: list[str] | None = None,
     draw_cevians: bool = False,
 ) -> spg.Point:
-    """Construct the Nagel point X(8) of triangle ABC (perspector of the extouch triangle)."""
+    """Construct the Nagel point X_8 of triangle ABC (perspector of the extouch triangle)."""
     Na, Nb, Nc = extouch_triangle(model, A, B, C, draw_polygon=True)
     if draw_cevians:
         add_line(model, A, Na, ID="[ A N_a ]", classes=["bisector"])
@@ -1017,10 +1039,10 @@ def mittenpunkt_of(
     A: spg.Point,
     B: spg.Point,
     C: spg.Point,
-    ID: str = "X(9)",
+    ID: str = "X_9",
     classes: list[str] | None = None,
 ) -> spg.Point:
-    """Construct the Mittenpunkt X(9) of triangle ABC (symmedian point of the excentral triangle)."""
+    """Construct the Mittenpunkt X_9 of triangle ABC (symmedian point of the excentral triangle)."""
     a, b, c = triangle_side_lengths(A, B, C)
     s = 0.5 * (a + b + c)
     return point_from_barycentrics(
@@ -1041,19 +1063,21 @@ def spieker_center_of(
     A: spg.Point,
     B: spg.Point,
     C: spg.Point,
-    ID: str = "X(10)",
+    ID: str = "X_10",
     classes: list[str] | None = None,
     draw_circle: bool = False,
 ) -> spg.Point:
-    """Construct the Spieker center X(10) of triangle ABC (incenter of the medial triangle)."""
-    Ma, Mb, Mc = medial_triangle(model, A, B, C, draw_polygon=True)
+    """Construct the Spieker center X_10 of triangle ABC (incenter of the medial triangle)."""
+    medial_triangle(model, A, B, C, draw_polygon=True)
     a, b, c = triangle_side_lengths(A, B, C)
     X10 = point_from_barycentrics(
         model, A, B, C, b + c, c + a, a + b, ID=ID, classes=classes or ["center"]
     )
     if draw_circle:
-        Sc = perpendicular_foot(model, X10, Ma, Mb, ID="S_c", guide=True)
-        add_circle(model, X10, Sc, ID="spieker_circle", classes=["incircle"])
+        s = 0.5 * (a + b + c)
+        area = math.sqrt(max(1e-16, s * (s - a) * (s - b) * (s - c)))
+        r_sp = 0.5 * (area / s)
+        add_circle(model, X10, r_sp, ID="spieker_circle", classes=["incircle"])
     return X10
 
 
@@ -1062,11 +1086,11 @@ def feuerbach_point_of(
     A: spg.Point,
     B: spg.Point,
     C: spg.Point,
-    ID: str = "X(11)",
+    ID: str = "X_11",
     classes: list[str] | None = None,
     draw_circles: bool = False,
 ) -> spg.Point:
-    """Construct the Feuerbach point X(11) of triangle ABC (tangency point of incircle and nine-point circle)."""
+    """Construct the Feuerbach point X_11 of triangle ABC (tangency point of incircle and nine-point circle)."""
     if draw_circles:
         incircle(model, A, B, C)
         nine_point_circle(model, A, B, C)
@@ -1088,37 +1112,48 @@ def feuerbach_point_of(
 def circumcircle(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Circle:
-    """Construct the circumcircle of triangle ABC centered at X(3)."""
-    X3 = circumcenter_of(model, A, B, C, ID="X(3)")
+    """Construct the circumcircle of triangle ABC centered at X_3."""
+    X3 = circumcenter_of(model, A, B, C, ID="X_3")
     return add_circle(model, X3, A, ID="circumcircle", classes=["circumcircle"])
 
 
 def incircle(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Circle:
-    """Construct the incircle of triangle ABC centered at X(1)."""
-    X1 = incenter_of(model, A, B, C, ID="X(1)")
-    Tc = perpendicular_foot(model, X1, A, B, ID="T_c", guide=True)
-    return add_circle(model, X1, Tc, ID="incircle", classes=["incircle"])
+    """Construct the incircle of triangle ABC centered at X_1."""
+    X1 = incenter_of(model, A, B, C, ID="X_1")
+    a, b, c = triangle_side_lengths(A, B, C)
+    s = 0.5 * (a + b + c)
+    area = math.sqrt(max(1e-16, s * (s - a) * (s - b) * (s - c)))
+    r_in = area / s
+    tc_pt = model.get_element_by_ID("T_c")
+    return add_circle(model, X1, tc_pt if isinstance(tc_pt, spg.Point) else r_in, ID="incircle", classes=["incircle"])
 
 
 def nine_point_circle(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Circle:
-    """Construct the nine-point circle of triangle ABC centered at X(5)."""
-    X5 = nine_point_center_of(model, A, B, C, ID="X(5)")
-    Mc = midpoint(model, A, B, ID="M_c", guide=True)
-    return add_circle(model, X5, Mc, ID="nine_point_circle", classes=["nine_point_circle"])
+    """Construct the nine-point circle of triangle ABC centered at X_5."""
+    X5 = nine_point_center_of(model, A, B, C, ID="X_5")
+    a, b, c = triangle_side_lengths(A, B, C)
+    s = 0.5 * (a + b + c)
+    area = math.sqrt(max(1e-16, s * (s - a) * (s - b) * (s - c)))
+    r_np = (a * b * c) / (8.0 * area)
+    mc_pt = model.get_element_by_ID("M_c")
+    return add_circle(model, X5, mc_pt if isinstance(mc_pt, spg.Point) else r_np, ID="nine_point_circle", classes=["nine_point_circle"])
 
 
 def spieker_circle(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Circle:
-    """Construct the Spieker circle (incircle of the medial triangle) centered at X(10)."""
-    Ma, Mb, _ = medial_triangle(model, A, B, C, draw_polygon=True)
-    X10 = spieker_center_of(model, A, B, C, ID="X(10)")
-    Sc = perpendicular_foot(model, X10, Ma, Mb, ID="S_c", guide=True)
-    return add_circle(model, X10, Sc, ID="spieker_circle", classes=["incircle"])
+    """Construct the Spieker circle (incircle of the medial triangle) centered at X_10."""
+    medial_triangle(model, A, B, C, draw_polygon=True)
+    X10 = spieker_center_of(model, A, B, C, ID="X_10")
+    a, b, c = triangle_side_lengths(A, B, C)
+    s = 0.5 * (a + b + c)
+    area = math.sqrt(max(1e-16, s * (s - a) * (s - b) * (s - c)))
+    r_sp = 0.5 * (area / s)
+    return add_circle(model, X10, r_sp, ID="spieker_circle", classes=["incircle"])
 
 
 # ---------------------------------------------------------------------------

@@ -1,18 +1,21 @@
-:canonical_id: X(139)
+:canonical_id: X_139
 :type: code
+:subtitle: X_112-OF-ORTHIC-TRIANGLE
 
-X(139) = X(112)-OF-ORTHIC-TRIANGLE — Code
-=========================================
+X_139
+=====
+
+.. rubric:: X_112-OF-ORTHIC-TRIANGLE
 
 .. enunciation::
 
-   :ref:`X(139) <X(139)>` = inverse-in-polar-circle of X(32692)
+   :ref:`X_139 <X_139>` = :ref:`X_112 <X_112>`-of-orthic-triangle
 
 .. figure:: x-00139.svg
-   :alt: X(139) = X(112)-OF-ORTHIC-TRIANGLE
+   :alt: X_139 — X_112-OF-ORTHIC-TRIANGLE
    :align: center
 
-   **X(139) = X(112)-OF-ORTHIC-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_139** (*X_112-OF-ORTHIC-TRIANGLE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

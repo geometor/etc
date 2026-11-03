@@ -1,22 +1,31 @@
 :order: 46
 :type: center
-:canonical_id: X(46)
-:dependencies: X(1), X(3), X(4), X(9), X(10), X(19), X(24), X(34), X(36), X(40), X(43), X(47), X(56), X(57), X(58), X(63), X(65), X(78), X(79), X(80), X(84), X(90), X(100), X(158), X(169), X(174), X(188), X(200), X(218), X(222), X(223), X(224), X(225), X(226), X(227), X(254), X(269), X(366), X(404), X(412), X(474), X(498), X(499), X(579), X(595), X(610), X(614), X(653), X(672), X(750), X(758), X(851), X(910), X(946), X(960), X(975), X(978), X(997), X(998), X(1004), X(1020), X(1054), X(1069), X(1079), X(1103), X(1210), X(1479), X(1490), X(3338), X(3612), X(5119), X(20570), X(32760)
+:canonical_id: X_46
+:subtitle: X_4-CEVA CONJUGATE OF X_1
+:dependencies: X_1, X_3, X_4, X_9, X_10, X_19, X_24, X_34, X_36, X_40, X_43, X_47, X_56, X_57, X_58, X_63, X_65, X_78, X_79, X_80, X_84, X_90, X_100, X_158, X_169, X_174, X_188, X_200, X_218, X_222, X_223, X_224, X_225, X_226, X_227, X_254, X_269, X_366, X_404, X_412, X_474, X_498, X_499, X_579, X_595, X_610, X_614, X_653, X_672, X_750, X_758, X_851, X_910, X_946, X_960, X_975, X_978, X_997, X_998, X_1004, X_1020, X_1054, X_1069, X_1079, X_1103, X_1210, X_1479, X_1490, X_3338, X_3612, X_5119, X_20570, X_32760
 
-.. _X(46):
+.. _X_46:
 
-X(46) = X(4)-CEVA CONJUGATE OF X(1)
-===================================
+X_46
+====
+
+.. rubric:: X_4-CEVA CONJUGATE OF X_1
 
 .. enunciation::
 
-   Let :g:`J_{a}' <J_a'>` be the reflection of the :g:`A <A>`-excenter in :g:`BC <[ B C ]>`, and define :g:`J_{b}' <J_b'>`, :g:`J_{c}' <J_c'>` cyclically. Let :g:`O_{a} <O_a>` be the circumcenter of AJb':g:`J_{c}' <J_c'>`, and define :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>` cyclically. :g:`O_{a}O_{b}O_{c} << O_a O_b O_c >>` and :g:`ABC << A B C >>` are perspective at :ref:`X(46) <X(46)>`. (:person:`Randy Hutson <randy-hutson>`, July 20, 2016)
+   :ref:`X_46 <X_46>` = Bevan-circle-inverse of :ref:`X_36 <X_36>`
 
 .. figure:: x-00046.svg
-   :alt: X(46) = X(4)-CEVA CONJUGATE OF X(1)
+   :alt: X_46 — X_4-CEVA CONJUGATE OF X_1
    :align: center
 
-   **X(46) = X(4)-CEVA CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_46** (*X_4-CEVA CONJUGATE OF X_1*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 3} <{ 1, 3 }>`, :g:`{10, 63} <{ 10, 63 }>`
+   * **Related Centers:** :g:`X_90 <X_90>` (:ref:`-CROSS CONJUGATE OF X(1) <X_90>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_10 <X_10>` (:ref:`SPIEKER CENTER <X_10>`), :g:`X_63 <X_63>` (:ref:`ISOGONAL CONJUGATE OF X(19) <X_63>`)
 
 .. signature:: center
 
@@ -35,48 +44,52 @@ X(46) = X(4)-CEVA CONJUGATE OF X(1)
    :badge: 25 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`3 <X(3)>`}, {:ref:`4 <X(4)>`, :ref:`90 <X(90)>`}, {:ref:`9 <X(9)>`, :ref:`79 <X(79)>`}, {:ref:`10 <X(10)>`, :ref:`63 <X(63)>`}, {:ref:`19 <X(19)>`, :ref:`579 <X(579)>`}, {:ref:`34 <X(34)>`, :ref:`47 <X(47)>`}, {:ref:`43 <X(43)>`, :ref:`851 <X(851)>`}, {:ref:`58 <X(58)>`, :ref:`998 <X(998)>`}, {:ref:`78 <X(78)>`, :ref:`758 <X(758)>`}, {:ref:`80 <X(80)>`, :ref:`84 <X(84)>`}, {:ref:`100 <X(100)>`, :ref:`224 <X(224)>`}, {:ref:`158 <X(158)>`, :ref:`412 <X(412)>`}, {:ref:`169 <X(169)>`, :ref:`672 <X(672)>`}, {:ref:`200 <X(200)>`, 1004}, {:ref:`218 <X(218)>`, :ref:`910 <X(910)>`}, {:ref:`222 <X(222)>`, :ref:`227 <X(227)>`}, {:ref:`225 <X(225)>`, :ref:`254 <X(254)>`}, {:ref:`226 <X(226)>`, :ref:`498 <X(498)>`}, {:ref:`269 <X(269)>`, 1103}, {:ref:`404 <X(404)>`, :ref:`997 <X(997)>`}, {:ref:`474 <X(474)>`, :ref:`960 <X(960)>`}, {:ref:`499 <X(499)>`, :ref:`946 <X(946)>`}, {:ref:`595 <X(595)>`, :ref:`614 <X(614)>`}, {:ref:`750 <X(750)>`, :ref:`975 <X(975)>`}, {:ref:`978 <X(978)>`, 1054}
+   {:ref:`1 <X_1>`, :ref:`3 <X_3>`}, {:ref:`4 <X_4>`, :ref:`90 <X_90>`}, {:ref:`9 <X_9>`, :ref:`79 <X_79>`}, {:ref:`10 <X_10>`, :ref:`63 <X_63>`}, {:ref:`19 <X_19>`, :ref:`579 <X_579>`}, {:ref:`34 <X_34>`, :ref:`47 <X_47>`}, {:ref:`43 <X_43>`, :ref:`851 <X_851>`}, {:ref:`58 <X_58>`, :ref:`998 <X_998>`}, {:ref:`78 <X_78>`, :ref:`758 <X_758>`}, {:ref:`80 <X_80>`, :ref:`84 <X_84>`}, {:ref:`100 <X_100>`, :ref:`224 <X_224>`}, {:ref:`158 <X_158>`, :ref:`412 <X_412>`}, {:ref:`169 <X_169>`, :ref:`672 <X_672>`}, {:ref:`200 <X_200>`, 1004}, {:ref:`218 <X_218>`, :ref:`910 <X_910>`}, {:ref:`222 <X_222>`, :ref:`227 <X_227>`}, {:ref:`225 <X_225>`, :ref:`254 <X_254>`}, {:ref:`226 <X_226>`, :ref:`498 <X_498>`}, {:ref:`269 <X_269>`, 1103}, {:ref:`404 <X_404>`, :ref:`997 <X_997>`}, {:ref:`474 <X_474>`, :ref:`960 <X_960>`}, {:ref:`499 <X_499>`, :ref:`946 <X_946>`}, {:ref:`595 <X_595>`, :ref:`614 <X_614>`}, {:ref:`750 <X_750>`, :ref:`975 <X_975>`}, {:ref:`978 <X_978>`, 1054}
 
 .. collapse:: Functional Relations
    :badge: 22 relations
 
-   * :ref:`X(46) <X(46)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`56 <X(56)>`), (1479, 1210)
-   * :ref:`X(46) <X(46)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(90) <X(90)>`
-   * :ref:`X(46) <X(46)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(20570)
-   * :ref:`X(46) <X(46)>` = circumcircle-inverse of X(32760)
-   * :ref:`X(46) <X(46)>` = Bevan-circle-inverse of :ref:`X(36) <X(36)>`
-   * :ref:`X(46) <X(46)>` = :ref:`X(4) <X(4)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(1) <X(1)>`
-   * :ref:`X(46) <X(46)>` = :term:`crosssum <crosssum>` of :ref:`X(3) <X(3)>` and X(1069)
-   * :ref:`X(46) <X(46)>` = X(i)-:term:`aleph conjugate <aleph-conjugate>` of X(j) for these (i,j): (:ref:`4 <X(4)>`, :ref:`46 <X(46)>`), (:ref:`174 <X(174)>`, :ref:`223 <X(223)>`), (:ref:`188 <X(188)>`, 1079), (:ref:`366 <X(366)>`, :ref:`610 <X(610)>`), (:ref:`653 <X(653)>`, 1020)
-   * :ref:`X(46) <X(46)>` = :ref:`X(100) <X(100)>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X(46) <X(46)>`
-   * :ref:`X(46) <X(46)>` = perspector of excentral and :term:`orthic triangles <orthic-triangle>`
-   * :ref:`X(46) <X(46)>` = orthic isogonal conjugate of :ref:`X(1) <X(1)>`
-   * :ref:`X(46) <X(46)>` = excentral isogonal conjugate of X(1490)
-   * :ref:`X(46) <X(46)>` = :ref:`X(24) <X(24)>`-of-excentral-triangle
-   * :ref:`X(46) <X(46)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(3) <X(3)>`}-harmonic conjugate of X(3612)
-   * :ref:`X(46) <X(46)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(40) <X(40)>`}-harmonic conjugate of X(5119)
-   * :ref:`X(46) <X(46)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(90) <X(90)>`
-   * :ref:`X(46) <X(46)>` = trilinear product of extraversions of :ref:`X(90) <X(90)>`
-   * :ref:`X(46) <X(46)>` = :ref:`X(24) <X(24)>` of reflection triangle of :ref:`X(1) <X(1)>`
-   * :ref:`X(46) <X(46)>` = homothetic center of :g:`ABC << A B C >>` and orthic triangle of reflection triangle of :ref:`X(1) <X(1)>`
-   * :ref:`X(46) <X(46)>` = Cundy-Parry Phi transform of :ref:`X(46) <X(46)>`
-   * :ref:`X(46) <X(46)>` = Cundy-Parry Psi transform of :ref:`X(90) <X(90)>`
-   * :ref:`X(46) <X(46)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(57) <X(57)>`}-harmonic conjugate of X(3338)
+   * :ref:`X_46 <X_46>` = reflection of X_i in X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`56 <X_56>`), (1479, 1210)
+   * :ref:`X_46 <X_46>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_90 <X_90>`
+   * :ref:`X_46 <X_46>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_20570
+   * :ref:`X_46 <X_46>` = circumcircle-inverse of X_32760
+   * :ref:`X_46 <X_46>` = Bevan-circle-inverse of :ref:`X_36 <X_36>`
+   * :ref:`X_46 <X_46>` = :ref:`X_4 <X_4>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_1 <X_1>`
+   * :ref:`X_46 <X_46>` = :term:`crosssum <crosssum>` of :ref:`X_3 <X_3>` and X_1069
+   * :ref:`X_46 <X_46>` = X_i-:term:`aleph conjugate <aleph-conjugate>` of X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`46 <X_46>`), (:ref:`174 <X_174>`, :ref:`223 <X_223>`), (:ref:`188 <X_188>`, 1079), (:ref:`366 <X_366>`, :ref:`610 <X_610>`), (:ref:`653 <X_653>`, 1020)
+   * :ref:`X_46 <X_46>` = :ref:`X_100 <X_100>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X_46 <X_46>`
+   * :ref:`X_46 <X_46>` = perspector of excentral and :term:`orthic triangles <orthic-triangle>`
+   * :ref:`X_46 <X_46>` = orthic isogonal conjugate of :ref:`X_1 <X_1>`
+   * :ref:`X_46 <X_46>` = excentral isogonal conjugate of X_1490
+   * :ref:`X_46 <X_46>` = :ref:`X_24 <X_24>`-of-excentral-triangle
+   * :ref:`X_46 <X_46>` = {:ref:`X_1 <X_1>`,\ :ref:`X_3 <X_3>`}-harmonic conjugate of X_3612
+   * :ref:`X_46 <X_46>` = {:ref:`X_1 <X_1>`,\ :ref:`X_40 <X_40>`}-harmonic conjugate of X_5119
+   * :ref:`X_46 <X_46>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X_90 <X_90>`
+   * :ref:`X_46 <X_46>` = trilinear product of extraversions of :ref:`X_90 <X_90>`
+   * :ref:`X_46 <X_46>` = :ref:`X_24 <X_24>` of :term:`reflection triangle <reflection-triangle>` of :ref:`X_1 <X_1>`
+   * :ref:`X_46 <X_46>` = homothetic center of :g:`ABC << A B C >>` and orthic triangle of reflection triangle of :ref:`X_1 <X_1>`
+   * :ref:`X_46 <X_46>` = Cundy-Parry Phi transform of :ref:`X_46 <X_46>`
+   * :ref:`X_46 <X_46>` = Cundy-Parry Psi transform of :ref:`X_90 <X_90>`
+   * :ref:`X_46 <X_46>` = {:ref:`X_1 <X_1>`,\ :ref:`X_57 <X_57>`}-harmonic conjugate of X_3338
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let :g:`A' <A'>` be the inverse-in-Bevan-circle of the :g:`A <A>`-vertex of the hexyl triangle, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(46) <X(46)>`. (Randy Hutson, July 20, 2016)
+   Let :g:`J_{a}' <J_a'>` be the reflection of the :g:`A <A>`-excenter in :g:`BC <[ B C ]>`, and define :g:`J_{b}' <J_b'>`, :g:`J_{c}' <J_c'>` cyclically. Let :g:`O_{a} <O_a>` be the circumcenter of AJb':g:`J_{c}' <J_c'>`, and define :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>` cyclically. :g:`O_{a}O_{b}O_{c} << O_a O_b O_c >>` and :g:`ABC << A B C >>` are perspective at :ref:`X_46 <X_46>`. (:person:`Randy Hutson <randy-hutson>`, July 20, 2016)
 
 .. container:: note-item
 
-   Let :g:`J_{a}J_{b}J_{c} << J_a J_b J_c >>` be the :term:`excentral triangle <excentral-triangle>`. Let :g:`A″ <A″>` be the inverse-in-Bevan-circle of :g:`A <A>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`J_{a}A″ <[ J_a A″ ]>`, :g:`J_{b}B″ <[ J_b B″ ]>`, :g:`J_{c}C″ <[ J_c C″ ]>` concur in :ref:`X(46) <X(46)>`. (Randy Hutson, July 20, 2016)
+   Let :g:`A' <A'>` be the inverse-in-Bevan-circle of the :g:`A <A>`-vertex of the :term:`hexyl triangle <hexyl-triangle>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X_46 <X_46>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
-   :ref:`X(46) <X(46)>` is the {:ref:`X(3) <X(3)>`,\ :ref:`X(65) <X(65)>`}-harmonic conjugate of :ref:`X(1) <X(1)>`.
+   Let :g:`J_{a}J_{b}J_{c} << J_a J_b J_c >>` be the :term:`excentral triangle <excentral-triangle>`. Let :g:`A″ <A″>` be the inverse-in-Bevan-circle of :g:`A <A>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`J_{a}A″ <[ J_a A″ ]>`, :g:`J_{b}B″ <[ J_b B″ ]>`, :g:`J_{c}C″ <[ J_c C″ ]>` concur in :ref:`X_46 <X_46>`. (Randy Hutson, July 20, 2016)
+
+.. container:: note-item
+
+   :ref:`X_46 <X_46>` is the {:ref:`X_3 <X_3>`,\ :ref:`X_65 <X_65>`}-harmonic conjugate of :ref:`X_1 <X_1>`.
 
 .. toctree::
    :hidden:

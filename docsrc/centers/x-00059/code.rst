@@ -1,18 +1,21 @@
-:canonical_id: X(59)
+:canonical_id: X_59
 :type: code
+:subtitle: ISOGONAL CONJUGATE OF X_11
 
-X(59) = ISOGONAL CONJUGATE OF X(11) — Code
-==========================================
+X_59
+====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_11
 
 .. enunciation::
 
-   :ref:`X(59) <X(59)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(11) <X(11)>`
+   :ref:`X_59 <X_59>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_11 <X_11>`.
 
 .. figure:: x-00059.svg
-   :alt: X(59) = ISOGONAL CONJUGATE OF X(11)
+   :alt: X_59 — ISOGONAL CONJUGATE OF X_11
    :align: center
 
-   **X(59) = ISOGONAL CONJUGATE OF X(11)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_59** (*ISOGONAL CONJUGATE OF X_11*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

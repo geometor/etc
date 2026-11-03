@@ -1,22 +1,31 @@
 :order: 272
 :type: center
-:canonical_id: X(272)
-:dependencies: X(2), X(3), X(7), X(21), X(28), X(58), X(60), X(75), X(81), X(86), X(209), X(261), X(273), X(284), X(310), X(1014), X(1088)
+:canonical_id: X_272
+:subtitle: ISOGONAL CONJUGATE OF X_209
+:dependencies: X_2, X_3, X_7, X_21, X_28, X_58, X_60, X_75, X_81, X_86, X_209, X_261, X_273, X_284, X_310, X_1014, X_1088
 
-.. _X(272):
+.. _X_272:
 
-X(272) = ISOGONAL CONJUGATE OF X(209)
-=====================================
+X_272
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_209
 
 .. enunciation::
 
-   :ref:`X(272) <X(272)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(209) <X(209)>`
+   :ref:`X_272 <X_272>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_209 <X_209>`.
 
 .. figure:: x-00272.svg
-   :alt: X(272) = ISOGONAL CONJUGATE OF X(209)
+   :alt: X_272 — ISOGONAL CONJUGATE OF X_209
    :align: center
 
-   **X(272) = ISOGONAL CONJUGATE OF X(209)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_272** (*ISOGONAL CONJUGATE OF X_209*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{7, 58} <{ 7, 58 }>`, :g:`{21, 75} <{ 21, 75 }>`
+   * **Related Centers:** :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_81 <X_81>` (:ref:`CEVAPOINT OF INCENTER AND SYMMEDIAN POINT <X_81>`), :g:`X_7 <X_7>` (:ref:`GERGONNE POINT <X_7>`), :g:`X_58 <X_58>` (:ref:`ISOGONAL CONJUGATE OF X(10) <X_58>`), :g:`X_21 <X_21>` (:ref:`SCHIFFLER POINT <X_21>`), :g:`X_75 <X_75>` (:ref:`ISOTOMIC CONJUGATE OF INCENTER <X_75>`)
 
 .. signature:: center
 
@@ -28,13 +37,13 @@ X(272) = ISOGONAL CONJUGATE OF X(209)
    :badge: 7 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`284 <X(284)>`}, {:ref:`7 <X(7)>`, :ref:`58 <X(58)>`}, {:ref:`21 <X(21)>`, :ref:`75 <X(75)>`}, {:ref:`28 <X(28)>`, :ref:`273 <X(273)>`}, {:ref:`60 <X(60)>`, :ref:`86 <X(86)>`}, {:ref:`261 <X(261)>`, :ref:`310 <X(310)>`}, {1014, 1088}
+   {:ref:`2 <X_2>`, :ref:`284 <X_284>`}, {:ref:`7 <X_7>`, :ref:`58 <X_58>`}, {:ref:`21 <X_21>`, :ref:`75 <X_75>`}, {:ref:`28 <X_28>`, :ref:`273 <X_273>`}, {:ref:`60 <X_60>`, :ref:`86 <X_86>`}, {:ref:`261 <X_261>`, :ref:`310 <X_310>`}, {1014, 1088}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(272) <X(272)>` = isogonal conjugate of :ref:`X(209) <X(209)>`
-   * :ref:`X(272) <X(272)>` = :ref:`X(3) <X(3)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(81) <X(81)>`
+   * :ref:`X_272 <X_272>` = isogonal conjugate of :ref:`X_209 <X_209>`
+   * :ref:`X_272 <X_272>` = :ref:`X_3 <X_3>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_81 <X_81>`
 
 .. toctree::
    :hidden:

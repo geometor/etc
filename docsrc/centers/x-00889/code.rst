@@ -1,18 +1,21 @@
-:canonical_id: X(889)
+:canonical_id: X_889
 :type: code
+:subtitle: INTERSECTION OF LINES X_99X_898 AND X_190X_649
 
-X(889) = INTERSECTION OF LINES X(99)X(898) AND X(190)X(649) — Code
-==================================================================
+X_889
+=====
+
+.. rubric:: INTERSECTION OF LINES X_99X_898 AND X_190X_649
 
 .. enunciation::
 
-   :ref:`X(889) <X(889)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(890) <X(890)>`
+   :ref:`X_889 <X_889>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_2 <X_2>`\ \ :ref:`X_668 <X_668>`
 
 .. figure:: x-00889.svg
-   :alt: X(889) = INTERSECTION OF LINES X(99)X(898) AND X(190)X(649)
+   :alt: X_889 — INTERSECTION OF LINES X_99X_898 AND X_190X_649
    :align: center
 
-   **X(889) = INTERSECTION OF LINES X(99)X(898) AND X(190)X(649)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_889** (*INTERSECTION OF LINES X_99X_898 AND X_190X_649*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

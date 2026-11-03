@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(324) = ISOTOMIC CONJUGATE OF X(97)."""
+"""GEOMETOR construction model for X_324 = ISOTOMIC CONJUGATE OF X_97."""
 
 from __future__ import annotations
 
@@ -24,17 +24,17 @@ from geometor.etc.render import write_center_svg
 def construct_x_00324(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(324) = ISOTOMIC CONJUGATE OF X(97) on reference triangle ABC."""
-    X_97 = eval_trilinear_point(model, A, B, C, 'cot(A)*sec(B - C)', ID="X(97)", classes=["center"])
-    X_324 = isotomic_conjugate(model, A, B, C, X_97, ID="X(324)", classes=["selected", "target"])
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
-    X_52 = eval_trilinear_point(model, A, B, C, 'cos(2*A)*cos(B - C)', ID="X(52)", classes=["center", "incident"])
+    """Construct X_324 = ISOTOMIC CONJUGATE OF X_97 on reference triangle ABC."""
+    X_97 = eval_trilinear_point(model, A, B, C, 'cot(A)*sec(B - C)', ID="X_97", classes=["center"])
+    X_324 = isotomic_conjugate(model, A, B, C, X_97, ID="X_324", classes=["selected", "target"])
+    X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
+    X_52 = eval_trilinear_point(model, A, B, C, 'cos(2*A)*cos(B - C)', ID="X_52", classes=["center", "incident"])
     central_line(model, X_4, X_52, 4, 52, incident=True)
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
-    X_216 = eval_trilinear_point(model, A, B, C, 'sin(2*A)*cos(B - C)', ID="X(216)", classes=["center", "incident"])
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
+    X_216 = eval_trilinear_point(model, A, B, C, 'sin(2*A)*cos(B - C)', ID="X_216", classes=["center", "incident"])
     central_line(model, X_2, X_216, 2, 216, incident=True)
-    X_53 = eval_trilinear_point(model, A, B, C, 'tan(A)*cos(B - C)', ID="X(53)", classes=["center", "incident"])
-    X_311 = eval_barycentric_point(model, A, B, C, 'csc(A)*cos(B - C)', ID="X(311)", classes=["center", "incident"])
+    X_53 = eval_trilinear_point(model, A, B, C, 'tan(A)*cos(B - C)', ID="X_53", classes=["center", "incident"])
+    X_311 = eval_barycentric_point(model, A, B, C, 'csc(A)*cos(B - C)', ID="X_311", classes=["center", "incident"])
     central_line(model, X_53, X_311, 53, 311, incident=True)
     return promote_point_to_top(model, X_324)
 
@@ -43,8 +43,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(324) on the given reference triangle."""
-    model = create_model('X(324) = ISOTOMIC CONJUGATE OF X(97)')
+    """Build a `geometor.model.Model` for X_324 on the given reference triangle."""
+    model = create_model('X_324 = ISOTOMIC CONJUGATE OF X_97')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00324(model, A, B, C)
     return model

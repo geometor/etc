@@ -1,22 +1,31 @@
 :order: 287
 :type: center
-:canonical_id: X(287)
-:dependencies: X(2), X(3), X(6), X(48), X(63), X(69), X(83), X(92), X(95), X(98), X(141), X(185), X(193), X(217), X(232), X(237), X(248), X(253), X(264), X(290), X(293), X(297), X(305), X(306), X(384), X(394), X(401), X(511), X(525), X(648), X(651), X(685), X(879), X(894), X(895), X(6530), X(34854)
+:canonical_id: X_287
+:subtitle: X_2-HIRST INVERSE OF X_98
+:dependencies: X_2, X_3, X_6, X_48, X_63, X_69, X_83, X_92, X_95, X_98, X_141, X_185, X_193, X_217, X_232, X_237, X_248, X_253, X_264, X_290, X_293, X_297, X_305, X_306, X_384, X_394, X_401, X_511, X_525, X_648, X_651, X_685, X_879, X_894, X_895, X_6530, X_34854
 
-.. _X(287):
+.. _X_287:
 
-X(287) = X(2)-HIRST INVERSE OF X(98)
-====================================
+X_287
+=====
+
+.. rubric:: X_2-HIRST INVERSE OF X_98
 
 .. enunciation::
 
-   :ref:`X(287) <X(287)>` = reflection of :ref:`X(648) <X(648)>` in :ref:`X(6) <X(6)>`
+   :ref:`X_287 <X_287>` is the :ref:`X_2 <X_2>`-:term:`hirst inverse <hirst-inverse>` of :ref:`X_98 <X_98>`.
 
 .. figure:: x-00287.svg
-   :alt: X(287) = X(2)-HIRST INVERSE OF X(98)
+   :alt: X_287 — X_2-HIRST INVERSE OF X_98
    :align: center
 
-   **X(287) = X(2)-HIRST INVERSE OF X(98)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_287** (*X_2-HIRST INVERSE OF X_98*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{648, 6} <{ 648, 6 }>`
+   * **Related Centers:** :g:`X_648 <X_648>` (:ref:`TRILINEAR POLE OF EULER LINE <X_648>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`)
 
 .. signature:: center
 
@@ -26,32 +35,32 @@ X(287) = X(2)-HIRST INVERSE OF X(98)
 
 .. container:: note-item
 
-   :ref:`X(287) <X(287)>` lies on the MacBeath circumconic.
+   :ref:`X_287 <X_287>` lies on the MacBeath circumconic.
 
 .. collapse:: Incident Central Lines
    :badge: 13 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`98 <X(98)>`}, {:ref:`6 <X(6)>`, :ref:`264 <X(264)>`}, {:ref:`69 <X(69)>`, :ref:`248 <X(248)>`}, {:ref:`83 <X(83)>`, :ref:`217 <X(217)>`}, {:ref:`95 <X(95)>`, :ref:`141 <X(141)>`}, {:ref:`185 <X(185)>`, :ref:`384 <X(384)>`}, {:ref:`193 <X(193)>`, :ref:`253 <X(253)>`}, {:ref:`293 <X(293)>`, :ref:`306 <X(306)>`}, {:ref:`297 <X(297)>`, :ref:`685 <X(685)>`}, {:ref:`305 <X(305)>`, :ref:`394 <X(394)>`}, {:ref:`401 <X(401)>`, :ref:`511 <X(511)>`}, {:ref:`651 <X(651)>`, :ref:`894 <X(894)>`}, {:ref:`879 <X(879)>`, :ref:`895 <X(895)>`}
+   {:ref:`2 <X_2>`, :ref:`98 <X_98>`}, {:ref:`6 <X_6>`, :ref:`264 <X_264>`}, {:ref:`69 <X_69>`, :ref:`248 <X_248>`}, {:ref:`83 <X_83>`, :ref:`217 <X_217>`}, {:ref:`95 <X_95>`, :ref:`141 <X_141>`}, {:ref:`185 <X_185>`, :ref:`384 <X_384>`}, {:ref:`193 <X_193>`, :ref:`253 <X_253>`}, {:ref:`293 <X_293>`, :ref:`306 <X_306>`}, {:ref:`297 <X_297>`, :ref:`685 <X_685>`}, {:ref:`305 <X_305>`, :ref:`394 <X_394>`}, {:ref:`401 <X_401>`, :ref:`511 <X_511>`}, {:ref:`651 <X_651>`, :ref:`894 <X_894>`}, {:ref:`879 <X_879>`, :ref:`895 <X_895>`}
 
 .. collapse:: Functional Relations
    :badge: 15 relations
 
-   * :ref:`X(287) <X(287)>` = reflection of :ref:`X(648) <X(648)>` in :ref:`X(6) <X(6)>`
-   * :ref:`X(287) <X(287)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(232) <X(232)>`
-   * :ref:`X(287) <X(287)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(297) <X(297)>`
-   * :ref:`X(287) <X(287)>` = :ref:`X(290) <X(290)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(98) <X(98)>`
-   * :ref:`X(287) <X(287)>` = :term:`cevapoint <cevapoint>` of :ref:`X(2) <X(2)>` and :ref:`X(401) <X(401)>`
-   * :ref:`X(287) <X(287)>` = :ref:`X(248) <X(248)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(98) <X(98)>`
-   * :ref:`X(287) <X(287)>` = :ref:`X(2) <X(2)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(98) <X(98)>`
-   * :ref:`X(287) <X(287)>` = :term:`trilinear pole <trilinear-pole>` of PU(37) (line :ref:`X(3) <X(3)>`\ \ :ref:`X(525) <X(525)>`)
-   * :ref:`X(287) <X(287)>` = antipode of :ref:`X(69) <X(69)>` in hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(2) <X(2)>`,\ :ref:`X(69) <X(69)>`}
-   * :ref:`X(287) <X(287)>` = MacBeath circumconic antipode of :ref:`X(648) <X(648)>`
-   * :ref:`X(287) <X(287)>` = :ref:`X(92) <X(92)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(237) <X(237)>`
-   * :ref:`X(287) <X(287)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X(6530)
-   * :ref:`X(287) <X(287)>` = :ref:`X(48) <X(48)>`-isoconjugate (polar conjugate) of X(6530)
-   * :ref:`X(287) <X(287)>` = :ref:`X(63) <X(63)>`-isoconjugate of X(34854)
-   * :ref:`X(287) <X(287)>` = inverse-in-Steiner-circumellipse of :ref:`X(98) <X(98)>`
+   * :ref:`X_287 <X_287>` = reflection of :ref:`X_648 <X_648>` in :ref:`X_6 <X_6>`
+   * :ref:`X_287 <X_287>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_232 <X_232>`
+   * :ref:`X_287 <X_287>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_297 <X_297>`
+   * :ref:`X_287 <X_287>` = :ref:`X_290 <X_290>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_98 <X_98>`
+   * :ref:`X_287 <X_287>` = :term:`cevapoint <cevapoint>` of :ref:`X_2 <X_2>` and :ref:`X_401 <X_401>`
+   * :ref:`X_287 <X_287>` = :ref:`X_248 <X_248>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_98 <X_98>`
+   * :ref:`X_287 <X_287>` = :ref:`X_2 <X_2>`-Hirst inverse of :ref:`X_98 <X_98>`
+   * :ref:`X_287 <X_287>` = :term:`trilinear pole <trilinear-pole>` of PU(37) (line :ref:`X_3 <X_3>`\ \ :ref:`X_525 <X_525>`)
+   * :ref:`X_287 <X_287>` = antipode of :ref:`X_69 <X_69>` in hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_2 <X_2>`,\ :ref:`X_69 <X_69>`}
+   * :ref:`X_287 <X_287>` = MacBeath circumconic antipode of :ref:`X_648 <X_648>`
+   * :ref:`X_287 <X_287>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_237 <X_237>`
+   * :ref:`X_287 <X_287>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X_6530
+   * :ref:`X_287 <X_287>` = :ref:`X_48 <X_48>`-isoconjugate (polar conjugate) of X_6530
+   * :ref:`X_287 <X_287>` = :ref:`X_63 <X_63>`-isoconjugate of X_34854
+   * :ref:`X_287 <X_287>` = inverse-in-Steiner-circumellipse of :ref:`X_98 <X_98>`
 
 .. toctree::
    :hidden:

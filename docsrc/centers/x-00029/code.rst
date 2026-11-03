@@ -1,18 +1,21 @@
-:canonical_id: X(29)
+:canonical_id: X_29
 :type: code
+:subtitle: CEVAPOINT OF INCENTER AND ORTHOCENTER
 
-X(29) = CEVAPOINT OF INCENTER AND ORTHOCENTER — Code
-====================================================
+X_29
+====
+
+.. rubric:: CEVAPOINT OF INCENTER AND ORTHOCENTER
 
 .. enunciation::
 
-   :ref:`X(29) <X(29)>` is the {:ref:`X(3) <X(3)>`,\ :ref:`X(4) <X(4)>`}-harmonic conjugate of :ref:`X(412) <X(412)>`.
+   :ref:`X_29 <X_29>` is the :term:`cevapoint <cevapoint>` of incenter and orthocenter.
 
 .. figure:: x-00029.svg
-   :alt: X(29) = CEVAPOINT OF INCENTER AND ORTHOCENTER
+   :alt: X_29 — CEVAPOINT OF INCENTER AND ORTHOCENTER
    :align: center
 
-   **X(29) = CEVAPOINT OF INCENTER AND ORTHOCENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_29** (*CEVAPOINT OF INCENTER AND ORTHOCENTER*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

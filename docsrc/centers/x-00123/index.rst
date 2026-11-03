@@ -1,22 +1,32 @@
 :order: 123
 :type: center
-:canonical_id: X(123)
-:dependencies: X(2), X(4), X(108), X(521), X(1415), X(2443), X(3436), X(6332), X(6588), X(7004), X(15385), X(34455), X(38972)
+:canonical_id: X_123
+:subtitle: X_108-OF-MEDIAL-TRIANGLE
+:dependencies: X_2, X_4, X_108, X_521, X_1415, X_2443, X_3436, X_6332, X_6588, X_7004, X_15385, X_34455, X_38972
 
-.. _X(123):
+.. _X_123:
 
-X(123) = X(108)-OF-MEDIAL-TRIANGLE
-==================================
+X_123
+=====
+
+.. rubric:: X_108-OF-MEDIAL-TRIANGLE
 
 .. enunciation::
 
-   :ref:`X(123) <X(123)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(15385)
+   :ref:`X_123 <X_123>` = :term:`complement <complement>` of :ref:`X_108 <X_108>`
 
 .. figure:: x-00123.svg
-   :alt: X(123) = X(108)-OF-MEDIAL-TRIANGLE
+   :alt: X_123 — X_108-OF-MEDIAL-TRIANGLE
    :align: center
 
-   **X(123) = X(108)-OF-MEDIAL-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_123** (*X_108-OF-MEDIAL-TRIANGLE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Derived Triangle:** :term:`Medial Triangle <medial triangle>` :g:`△M_aM_bM_c << M_a M_b M_c >>` — vertices :g:`M_a <M_a>`, :g:`M_b <M_b>`, :g:`M_c <M_c>` (Formed by the midpoints of sides BC, CA, AB)
+   * **Central Lines:** :g:`{2, 108} <{ 2, 108 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_108 <X_108>` (:ref:`Ψ(CIRCUMCENTER, INCENTER) <X_108>`)
 
 .. signature:: center
 
@@ -31,21 +41,21 @@ X(123) = X(108)-OF-MEDIAL-TRIANGLE
 
 .. container:: note-item
 
-   :ref:`X(123) <X(123)>` lies on the nine-point circle and hese lines: 2,108 3,119 10,117 113,960
+   :ref:`X_123 <X_123>` lies on the nine-point circle and hese lines: 2,108 3,119 10,117 113,960
 
 .. collapse:: Functional Relations
    :badge: 10 relations
 
-   * :ref:`X(123) <X(123)>` = isogonal conjugate of X(15385)
-   * :ref:`X(123) <X(123)>` = :term:`complement <complement>` of :ref:`X(108) <X(108)>`
-   * :ref:`X(123) <X(123)>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X(521) <X(521)>`
-   * :ref:`X(123) <X(123)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(6588)
-   * :ref:`X(123) <X(123)>` = :ref:`X(4) <X(4)>`-Ceva conjugate of :ref:`X(521) <X(521)>`
-   * :ref:`X(123) <X(123)>` = Spieker-radical-circle-inverse of X(34455)
-   * :ref:`X(123) <X(123)>` = :ref:`X(108) <X(108)>`-of-:term:`medial triangle <medial-triangle>`
-   * :ref:`X(123) <X(123)>` = Stevanovic-circle-inverse of X(38972)
-   * :ref:`X(123) <X(123)>` = :term:`crossdifference <crossdifference>` of every pair of points on line X(1415)X(2443)
-   * :ref:`X(123) <X(123)>` = trilinear product X(i)\*X(j) for these {i,j}: {3436, 7004}, {6332, 6588}
+   * :ref:`X_123 <X_123>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_15385
+   * :ref:`X_123 <X_123>` = complement of :ref:`X_108 <X_108>`
+   * :ref:`X_123 <X_123>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X_521 <X_521>`
+   * :ref:`X_123 <X_123>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of X_6588
+   * :ref:`X_123 <X_123>` = :ref:`X_4 <X_4>`-Ceva conjugate of :ref:`X_521 <X_521>`
+   * :ref:`X_123 <X_123>` = Spieker-radical-circle-inverse of X_34455
+   * :ref:`X_123 <X_123>` = :ref:`X_108 <X_108>`-of-:term:`medial triangle <medial-triangle>`
+   * :ref:`X_123 <X_123>` = Stevanovic-circle-inverse of X_38972
+   * :ref:`X_123 <X_123>` = :term:`crossdifference <crossdifference>` of every pair of points on line X_1415X_2443
+   * :ref:`X_123 <X_123>` = trilinear product X_i\*X_j for these {i,j}: {3436, 7004}, {6332, 6588}
 
 .. toctree::
    :hidden:

@@ -1,18 +1,21 @@
-:canonical_id: X(489)
+:canonical_id: X_489
 :type: code
+:subtitle: CEVAPOINT OF X_20 AND X_487
 
-X(489) = CEVAPOINT OF X(20) AND X(487) — Code
-=============================================
+X_489
+=====
+
+.. rubric:: CEVAPOINT OF X_20 AND X_487
 
 .. enunciation::
 
-   :ref:`X(489) <X(489)>` is a perspector of triangles associated with squares that circumscribe :g:`ABC << A B C >>`. For details and reference, see :ref:`X(488) <X(488)>`. (:person:`Floor van Lamoen <floor-van-lamoen>`, 4/29/98)
+   :ref:`X_489 <X_489>` is the :term:`cevapoint <cevapoint>` of :ref:`X_20 <X_20>` and :ref:`X_487 <X_487>`.
 
 .. figure:: x-00489.svg
-   :alt: X(489) = CEVAPOINT OF X(20) AND X(487)
+   :alt: X_489 — CEVAPOINT OF X_20 AND X_487
    :align: center
 
-   **X(489) = CEVAPOINT OF X(20) AND X(487)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_489** (*CEVAPOINT OF X_20 AND X_487*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

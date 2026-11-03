@@ -1,18 +1,21 @@
-:canonical_id: X(446)
+:canonical_id: X_446
 :type: code
+:subtitle: CROSSPOINT OF X_98 AND X_511
 
-X(446) = CROSSPOINT OF X(98) AND X(511) — Code
-==============================================
+X_446
+=====
+
+.. rubric:: CROSSPOINT OF X_98 AND X_511
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(446) <X(446)>` has Shinagawa coefficients :math:`((E + F)^{3}F - (E + F)(E - 2F)S^{2} + S^{4}, (E - F)(E + F)^{3} - 2(E + F)^{2}S^{2} - S^{4})`.
+   :ref:`X_446 <X_446>` is the :term:`crosspoint <crosspoint>` of :ref:`X_98 <X_98>` and :ref:`X_511 <X_511>`.
 
 .. figure:: x-00446.svg
-   :alt: X(446) = CROSSPOINT OF X(98) AND X(511)
+   :alt: X_446 — CROSSPOINT OF X_98 AND X_511
    :align: center
 
-   **X(446) = CROSSPOINT OF X(98) AND X(511)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_446** (*CROSSPOINT OF X_98 AND X_511*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

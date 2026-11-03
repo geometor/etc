@@ -1,18 +1,21 @@
-:canonical_id: X(846)
+:canonical_id: X_846
 :type: code
+:subtitle: 4th SHARYGIN POINT
 
-X(846) = 4th SHARYGIN POINT — Code
-==================================
+X_846
+=====
+
+.. rubric:: 4th SHARYGIN POINT
 
 .. enunciation::
 
-   This point solves a problem posed by :person:`Antreas Hatzipolakis <antreas-hatzipolakis>` in :cite:`Hyacinthos #3001 <hyacinthos>`, June 11, 2001. For the construction as a Sharygin point, see the description at X(1281).
+   This point solves a problem posed by :person:`Antreas Hatzipolakis <antreas-hatzipolakis>` in :cite:`Hyacinthos #3001 <hyacinthos>`, June 11, 2001. For the construction as a Sharygin point, see the description at X_1281.
 
 .. figure:: x-00846.svg
-   :alt: X(846) = 4th SHARYGIN POINT
+   :alt: X_846 — 4th SHARYGIN POINT
    :align: center
 
-   **X(846) = 4th SHARYGIN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_846** (*4th SHARYGIN POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

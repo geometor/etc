@@ -1,18 +1,21 @@
-:canonical_id: X(486)
+:canonical_id: X_486
 :type: code
+:subtitle: INNER VECTEN POINT
 
-X(486) = INNER VECTEN POINT — Code
-==================================
+X_486
+=====
+
+.. rubric:: INNER VECTEN POINT
 
 .. enunciation::
 
-   :ref:`X(486) <X(486)>` is a perspector of triangles associated with squares that circumscribe :g:`ABC << A B C >>`. For details and references, see :ref:`X(485) <X(485)>`. (:person:`Floor van Lamoen <floor-van-lamoen>`, 4/26/98)
+   :ref:`X_486 <X_486>` = :term:`complement <complement>` of :ref:`X_487 <X_487>`
 
 .. figure:: x-00486.svg
-   :alt: X(486) = INNER VECTEN POINT
+   :alt: X_486 — INNER VECTEN POINT
    :align: center
 
-   **X(486) = INNER VECTEN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_486** (*INNER VECTEN POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

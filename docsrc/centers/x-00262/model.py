@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(262) = ISOGONAL CONJUGATE OF X(182)."""
+"""GEOMETOR construction model for X_262 = ISOGONAL CONJUGATE OF X_182."""
 
 from __future__ import annotations
 
@@ -24,17 +24,17 @@ from geometor.etc.render import write_center_svg
 def construct_x_00262(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(262) = ISOGONAL CONJUGATE OF X(182) on reference triangle ABC."""
-    X_182 = eval_trilinear_point(model, A, B, C, 'cos(A- omega )', ID="X(182)", classes=["center"])
-    X_262 = isogonal_conjugate(model, A, B, C, X_182, ID="X(262)", classes=["selected", "target"])
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
-    X_39 = eval_trilinear_point(model, A, B, C, 'a*(b**(2) + c**(2))', ID="X(39)", classes=["center", "incident"])
+    """Construct X_262 = ISOGONAL CONJUGATE OF X_182 on reference triangle ABC."""
+    X_182 = eval_trilinear_point(model, A, B, C, 'cos(A- omega )', ID="X_182", classes=["center"])
+    X_262 = isogonal_conjugate(model, A, B, C, X_182, ID="X_262", classes=["selected", "target"])
+    X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
+    X_39 = eval_trilinear_point(model, A, B, C, 'a*(b**(2) + c**(2))', ID="X_39", classes=["center", "incident"])
     central_line(model, X_4, X_39, 4, 39, incident=True)
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
-    X_51 = eval_trilinear_point(model, A, B, C, 'a**(2)*cos(B - C)', ID="X(51)", classes=["center", "incident"])
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
+    X_51 = eval_trilinear_point(model, A, B, C, 'a**(2)*cos(B - C)', ID="X_51", classes=["center", "incident"])
     central_line(model, X_2, X_51, 2, 51, incident=True)
-    X_5 = nine_point_center_of(model, A, B, C, ID="X(5)", classes=["center", "incident"])
-    X_76 = eval_trilinear_point(model, A, B, C, '1/a**(3)', ID="X(76)", classes=["center", "incident"])
+    X_5 = nine_point_center_of(model, A, B, C, ID="X_5", classes=["center", "incident"])
+    X_76 = eval_trilinear_point(model, A, B, C, '1/a**(3)', ID="X_76", classes=["center", "incident"])
     central_line(model, X_5, X_76, 5, 76, incident=True)
     return promote_point_to_top(model, X_262)
 
@@ -43,8 +43,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(262) on the given reference triangle."""
-    model = create_model('X(262) = ISOGONAL CONJUGATE OF X(182)')
+    """Build a `geometor.model.Model` for X_262 on the given reference triangle."""
+    model = create_model('X_262 = ISOGONAL CONJUGATE OF X_182')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00262(model, A, B, C)
     return model

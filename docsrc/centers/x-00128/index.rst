@@ -1,22 +1,31 @@
 :order: 128
 :type: center
-:canonical_id: X(128)
-:dependencies: X(2), X(5), X(52), X(53), X(74), X(115), X(125), X(134), X(137), X(139), X(140), X(231), X(233), X(1141), X(2383), X(15401), X(34837)
+:canonical_id: X_128
+:subtitle: X_74-OF-ORTHIC-TRIANGLE
+:dependencies: X_2, X_5, X_52, X_53, X_74, X_115, X_125, X_134, X_137, X_139, X_140, X_231, X_233, X_1141, X_2383, X_15401, X_34837
 
-.. _X(128):
+.. _X_128:
 
-X(128) = X(74)-OF-ORTHIC-TRIANGLE
-=================================
+X_128
+=====
+
+.. rubric:: X_74-OF-ORTHIC-TRIANGLE
 
 .. enunciation::
 
-   :ref:`X(128) <X(128)>` = :ref:`X(74) <X(74)>`-of-:term:`orthic triangle <orthic-triangle>`.
+   :ref:`X_128 <X_128>` = :ref:`X_74 <X_74>`-of-:term:`orthic triangle <orthic-triangle>`.
 
 .. figure:: x-00128.svg
-   :alt: X(128) = X(74)-OF-ORTHIC-TRIANGLE
+   :alt: X_128 — X_74-OF-ORTHIC-TRIANGLE
    :align: center
 
-   **X(128) = X(74)-OF-ORTHIC-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_128** (*X_74-OF-ORTHIC-TRIANGLE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{137, 5} <{ 137, 5 }>`
+   * **Related Centers:** :g:`X_137 <X_137>` (:ref:`-OF-ORTHIC-TRIANGLE <X_137>`), :g:`X_5 <X_5>` (:ref:`NINE-POINT CENTER <X_5>`)
 
 .. signature:: center
 
@@ -26,28 +35,28 @@ X(128) = X(74)-OF-ORTHIC-TRIANGLE
 
 .. container:: note-item
 
-   :ref:`X(128) <X(128)>` lies on the nine-point circle
+   :ref:`X_128 <X_128>` lies on the nine-point circle
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines
    :class: line-catalog
 
-   {:ref:`5 <X(5)>`, :ref:`137 <X(137)>`}, {:ref:`52 <X(52)>`, :ref:`134 <X(134)>`}, {:ref:`53 <X(53)>`, :ref:`139 <X(139)>`}, {:ref:`115 <X(115)>`, :ref:`233 <X(233)>`}, {:ref:`125 <X(125)>`, :ref:`140 <X(140)>`}
+   {:ref:`5 <X_5>`, :ref:`137 <X_137>`}, {:ref:`52 <X_52>`, :ref:`134 <X_134>`}, {:ref:`53 <X_53>`, :ref:`139 <X_139>`}, {:ref:`115 <X_115>`, :ref:`233 <X_233>`}, {:ref:`125 <X_125>`, :ref:`140 <X_140>`}
 
 .. collapse:: Functional Relations
    :badge: 11 relations
 
-   * :ref:`X(128) <X(128)>` = :ref:`X(74) <X(74)>`-of-orthic triangle.
-   * :ref:`X(128) <X(128)>` = reflection of :ref:`X(137) <X(137)>` in :ref:`X(5) <X(5)>`
-   * :ref:`X(128) <X(128)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(15401)
-   * :ref:`X(128) <X(128)>` = :term:`complement <complement>` of X(1141)
-   * :ref:`X(128) <X(128)>` = :term:`anticomplement <anticomplement>` of X(34837)
-   * :ref:`X(128) <X(128)>` = perspector of circumconic centered at :ref:`X(231) <X(231)>`
-   * :ref:`X(128) <X(128)>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X(231) <X(231)>`
-   * :ref:`X(128) <X(128)>` = inverse-in-polar-circle of X(2383)
-   * :ref:`X(128) <X(128)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(231) <X(231)>`
-   * :ref:`X(128) <X(128)>` = :term:`orthojoin <orthojoin>` of :ref:`X(231) <X(231)>`
-   * :ref:`X(128) <X(128)>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X(74) <X(74)>`
+   * :ref:`X_128 <X_128>` = :ref:`X_74 <X_74>`-of-orthic triangle.
+   * :ref:`X_128 <X_128>` = reflection of :ref:`X_137 <X_137>` in :ref:`X_5 <X_5>`
+   * :ref:`X_128 <X_128>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_15401
+   * :ref:`X_128 <X_128>` = :term:`complement <complement>` of X_1141
+   * :ref:`X_128 <X_128>` = :term:`anticomplement <anticomplement>` of X_34837
+   * :ref:`X_128 <X_128>` = perspector of circumconic centered at :ref:`X_231 <X_231>`
+   * :ref:`X_128 <X_128>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X_231 <X_231>`
+   * :ref:`X_128 <X_128>` = inverse-in-polar-circle of X_2383
+   * :ref:`X_128 <X_128>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_231 <X_231>`
+   * :ref:`X_128 <X_128>` = :term:`orthojoin <orthojoin>` of :ref:`X_231 <X_231>`
+   * :ref:`X_128 <X_128>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X_74 <X_74>`
 
 .. toctree::
    :hidden:

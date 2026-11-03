@@ -1,22 +1,31 @@
 :order: 239
 :type: center
-:canonical_id: X(239)
-:dependencies: X(1), X(2), X(3), X(6), X(7), X(9), X(42), X(44), X(57), X(63), X(75), X(81), X(83), X(86), X(92), X(141), X(171), X(190), X(192), X(193), X(194), X(212), X(213), X(219), X(238), X(241), X(255), X(256), X(257), X(274), X(291), X(292), X(294), X(318), X(319), X(320), X(330), X(333), X(335), X(458), X(514), X(518), X(524), X(607), X(645), X(649), X(659), X(664), X(665), X(666), X(740), X(812), X(1015), X(1043), X(1086), X(1100), X(1104), X(1908), X(3912), X(4366), X(6542), X(6651), X(39044)
+:canonical_id: X_239
+:subtitle: X_1-LINE CONJUGATE OF X_42
+:dependencies: X_1, X_2, X_3, X_6, X_7, X_9, X_42, X_44, X_57, X_63, X_75, X_81, X_83, X_86, X_92, X_141, X_171, X_190, X_192, X_193, X_194, X_212, X_213, X_219, X_238, X_241, X_255, X_256, X_257, X_274, X_291, X_292, X_294, X_318, X_319, X_320, X_330, X_333, X_335, X_458, X_514, X_518, X_524, X_607, X_645, X_649, X_659, X_664, X_665, X_666, X_740, X_812, X_1015, X_1043, X_1086, X_1100, X_1104, X_1908, X_3912, X_4366, X_6542, X_6651, X_39044
 
-.. _X(239):
+.. _X_239:
 
-X(239) = X(1)-LINE CONJUGATE OF X(42)
-=====================================
+X_239
+=====
+
+.. rubric:: X_1-LINE CONJUGATE OF X_42
 
 .. enunciation::
 
-   :ref:`X(239) <X(239)>` is the perspector of triangle :g:`ABC << A B C >>` and the :term:`tangential triangle <tangential-triangle>` of the conic that passes through :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, and the pair P(6) and U(6) of :term:`bicentric points <bicentric-points>` (see the notes just before X(1908). (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   :ref:`X_239 <X_239>` = :ref:`X_1 <X_1>`-:term:`line conjugate <line-conjugate>` of :ref:`X_42 <X_42>`
 
 .. figure:: x-00239.svg
-   :alt: X(239) = X(1)-LINE CONJUGATE OF X(42)
+   :alt: X_239 — X_1-LINE CONJUGATE OF X_42
    :align: center
 
-   **X(239) = X(1)-LINE CONJUGATE OF X(42)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_239** (*X_1-LINE CONJUGATE OF X_42*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 2} <{ 1, 2 }>`, :g:`{6, 75} <{ 6, 75 }>`
+   * **Related Centers:** :g:`X_292 <X_292>` (:ref:`-HIRST INVERSE OF X(291) <X_292>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_75 <X_75>` (:ref:`ISOTOMIC CONJUGATE OF INCENTER <X_75>`)
 
 .. signature:: center
 
@@ -28,42 +37,46 @@ X(239) = X(1)-LINE CONJUGATE OF X(42)
    :badge: 21 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`2 <X(2)>`}, {:ref:`6 <X(6)>`, :ref:`75 <X(75)>`}, {:ref:`7 <X(7)>`, :ref:`193 <X(193)>`}, {:ref:`9 <X(9)>`, :ref:`192 <X(192)>`}, {:ref:`44 <X(44)>`, :ref:`190 <X(190)>`}, {:ref:`57 <X(57)>`, :ref:`330 <X(330)>`}, {:ref:`63 <X(63)>`, :ref:`194 <X(194)>`}, {:ref:`81 <X(81)>`, :ref:`274 <X(274)>`}, {:ref:`83 <X(83)>`, :ref:`213 <X(213)>`}, {:ref:`86 <X(86)>`, 1100}, {:ref:`92 <X(92)>`, :ref:`607 <X(607)>`}, {:ref:`141 <X(141)>`, :ref:`319 <X(319)>`}, {:ref:`238 <X(238)>`, :ref:`740 <X(740)>`}, {:ref:`241 <X(241)>`, :ref:`664 <X(664)>`}, {:ref:`257 <X(257)>`, :ref:`333 <X(333)>`}, {:ref:`294 <X(294)>`, :ref:`666 <X(666)>`}, {:ref:`318 <X(318)>`, :ref:`458 <X(458)>`}, {:ref:`320 <X(320)>`, :ref:`524 <X(524)>`}, {:ref:`335 <X(335)>`, :ref:`518 <X(518)>`}, {:ref:`514 <X(514)>`, :ref:`649 <X(649)>`}, {1043, 1104}
+   {:ref:`1 <X_1>`, :ref:`2 <X_2>`}, {:ref:`6 <X_6>`, :ref:`75 <X_75>`}, {:ref:`7 <X_7>`, :ref:`193 <X_193>`}, {:ref:`9 <X_9>`, :ref:`192 <X_192>`}, {:ref:`44 <X_44>`, :ref:`190 <X_190>`}, {:ref:`57 <X_57>`, :ref:`330 <X_330>`}, {:ref:`63 <X_63>`, :ref:`194 <X_194>`}, {:ref:`81 <X_81>`, :ref:`274 <X_274>`}, {:ref:`83 <X_83>`, :ref:`213 <X_213>`}, {:ref:`86 <X_86>`, 1100}, {:ref:`92 <X_92>`, :ref:`607 <X_607>`}, {:ref:`141 <X_141>`, :ref:`319 <X_319>`}, {:ref:`238 <X_238>`, :ref:`740 <X_740>`}, {:ref:`241 <X_241>`, :ref:`664 <X_664>`}, {:ref:`257 <X_257>`, :ref:`333 <X_333>`}, {:ref:`294 <X_294>`, :ref:`666 <X_666>`}, {:ref:`318 <X_318>`, :ref:`458 <X_458>`}, {:ref:`320 <X_320>`, :ref:`524 <X_524>`}, {:ref:`335 <X_335>`, :ref:`518 <X_518>`}, {:ref:`514 <X_514>`, :ref:`649 <X_649>`}, {1043, 1104}
 
 .. collapse:: Functional Relations
    :badge: 20 relations
 
-   * :ref:`X(239) <X(239)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`190 <X(190)>`, :ref:`44 <X(44)>`), (:ref:`320 <X(320)>`, 1086)
-   * :ref:`X(239) <X(239)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(292) <X(292)>`
-   * :ref:`X(239) <X(239)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(335) <X(335)>`
-   * :ref:`X(239) <X(239)>` = :term:`complement <complement>` of X(6542)
-   * :ref:`X(239) <X(239)>` = :term:`anticomplement <anticomplement>` of X(3912)
-   * :ref:`X(239) <X(239)>` = :term:`crosspoint <crosspoint>` of :ref:`X(256) <X(256)>` and :ref:`X(291) <X(291)>`
-   * :ref:`X(239) <X(239)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`3 <X(3)>`, :ref:`255 <X(255)>`), (:ref:`212 <X(212)>`, :ref:`219 <X(219)>`)
-   * :ref:`X(239) <X(239)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(42) <X(42)>`\ \ :ref:`X(649) <X(649)>`
-   * :ref:`X(239) <X(239)>` = X(i)-:term:`Hirst inverse <hirst-inverse>` of X(j) for these (i,j): (:ref:`171 <X(171)>`, :ref:`238 <X(238)>`), (:ref:`665 <X(665)>`, 1015)
-   * :ref:`X(239) <X(239)>` = :ref:`X(1) <X(1)>`-:term:`line conjugate <line-conjugate>` of :ref:`X(42) <X(42)>`
-   * :ref:`X(239) <X(239)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`333 <X(333)>`, :ref:`239 <X(239)>`), (:ref:`645 <X(645)>`, :ref:`44 <X(44)>`)
-   * :ref:`X(239) <X(239)>` = perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(86) <X(86)>`,\ :ref:`X(190) <X(190)>`}
-   * :ref:`X(239) <X(239)>` = inverse-in-Steiner-circumellipse of :ref:`X(1) <X(1)>`
-   * :ref:`X(239) <X(239)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(659) <X(659)>`\ \ :ref:`X(812) <X(812)>`
-   * :ref:`X(239) <X(239)>` = crossdifference of PU(8)
-   * :ref:`X(239) <X(239)>` = intersection of :term:`trilinear polars <trilinear-polar>` of PU(6) (the 1st and 2nd bicentrics of the Lemoine axis)
-   * :ref:`X(239) <X(239)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(6651)
-   * :ref:`X(239) <X(239)>` = trilinear pole of PU(134)
-   * :ref:`X(239) <X(239)>` = trilinear square root of X(39044)
-   * :ref:`X(239) <X(239)>` = barycentric square root of X(4366)
+   * :ref:`X_239 <X_239>` = reflection of X_i in X_j for these (i,j): (:ref:`190 <X_190>`, :ref:`44 <X_44>`), (:ref:`320 <X_320>`, 1086)
+   * :ref:`X_239 <X_239>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_292 <X_292>`
+   * :ref:`X_239 <X_239>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_335 <X_335>`
+   * :ref:`X_239 <X_239>` = :term:`complement <complement>` of X_6542
+   * :ref:`X_239 <X_239>` = :term:`anticomplement <anticomplement>` of X_3912
+   * :ref:`X_239 <X_239>` = :term:`crosspoint <crosspoint>` of :ref:`X_256 <X_256>` and :ref:`X_291 <X_291>`
+   * :ref:`X_239 <X_239>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`255 <X_255>`), (:ref:`212 <X_212>`, :ref:`219 <X_219>`)
+   * :ref:`X_239 <X_239>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_42 <X_42>`\ \ :ref:`X_649 <X_649>`
+   * :ref:`X_239 <X_239>` = X_i-:term:`Hirst inverse <hirst-inverse>` of X_j for these (i,j): (:ref:`171 <X_171>`, :ref:`238 <X_238>`), (:ref:`665 <X_665>`, 1015)
+   * :ref:`X_239 <X_239>` = :ref:`X_1 <X_1>`-line conjugate of :ref:`X_42 <X_42>`
+   * :ref:`X_239 <X_239>` = X_i-:term:`beth conjugate <beth-conjugate>` of X_j for these (i,j): (:ref:`333 <X_333>`, :ref:`239 <X_239>`), (:ref:`645 <X_645>`, :ref:`44 <X_44>`)
+   * :ref:`X_239 <X_239>` = perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_86 <X_86>`,\ :ref:`X_190 <X_190>`}
+   * :ref:`X_239 <X_239>` = inverse-in-Steiner-circumellipse of :ref:`X_1 <X_1>`
+   * :ref:`X_239 <X_239>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_659 <X_659>`\ \ :ref:`X_812 <X_812>`
+   * :ref:`X_239 <X_239>` = crossdifference of PU(8)
+   * :ref:`X_239 <X_239>` = intersection of :term:`trilinear polars <trilinear-polar>` of PU(6) (the 1st and 2nd bicentrics of the Lemoine axis)
+   * :ref:`X_239 <X_239>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of X_6651
+   * :ref:`X_239 <X_239>` = trilinear pole of PU(134)
+   * :ref:`X_239 <X_239>` = trilinear square root of X_39044
+   * :ref:`X_239 <X_239>` = barycentric square root of X_4366
 
 Notes
 -----
 
 .. container:: note-item
 
-   :ref:`X(239) <X(239)>` is the point of intersection of the following lines:
+   :ref:`X_239 <X_239>` is the perspector of triangle :g:`ABC << A B C >>` and the :term:`tangential triangle <tangential-triangle>` of the conic that passes through :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, and the pair P(6) and U(6) of :term:`bicentric points <bicentric-points>` (see the notes just before X_1908. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
-      * :ref:`X(1) <X(1)>`\ \ :ref:`X(2) <X(2)>` = trilinear polar of :ref:`X(190) <X(190)>`
-      * trilinear polar of :term:`cevapoint <cevapoint>`{:ref:`X(1) <X(1)>`, :ref:`X(2) <X(2)>`}, which is :ref:`X(239) <X(239)>`\ \ :ref:`X(514) <X(514)>`
-      * :g:`UV <[ U V ]>`, where :g:`U <U>` = :ref:`X(1) <X(1)>`-Ceva-conjugate-of-(2) = :ref:`X(192) <X(192)>`, and V = :ref:`X(2) <X(2)>`-Ceva-conjugate-of-:ref:`X(1) <X(1)>` = :ref:`X(9) <X(9)>` (Randy Hutson, December 26, 2015)
+.. container:: note-item
+
+   :ref:`X_239 <X_239>` is the point of intersection of the following lines:
+
+      * :ref:`X_1 <X_1>`\ \ :ref:`X_2 <X_2>` = trilinear polar of :ref:`X_190 <X_190>`
+      * trilinear polar of :term:`cevapoint <cevapoint>`{:ref:`X_1 <X_1>`, :ref:`X_2 <X_2>`}, which is :ref:`X_239 <X_239>`\ \ :ref:`X_514 <X_514>`
+      * :g:`UV <[ U V ]>`, where :g:`U <U>` = :ref:`X_1 <X_1>`-Ceva-conjugate-of-(2) = :ref:`X_192 <X_192>`, and V = :ref:`X_2 <X_2>`-Ceva-conjugate-of-:ref:`X_1 <X_1>` = :ref:`X_9 <X_9>` (Randy Hutson, December 26, 2015)
 
 .. toctree::
    :hidden:

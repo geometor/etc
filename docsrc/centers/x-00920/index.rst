@@ -1,22 +1,31 @@
 :order: 920
 :type: center
-:canonical_id: X(920)
-:dependencies: X(1), X(4), X(9), X(19), X(21), X(46), X(57), X(78), X(91), X(158), X(201), X(243), X(498), X(499), X(601), X(921), X(1075)
+:canonical_id: X_920
+:subtitle: X_158-CEVA CONJUGATE OF X_1
+:dependencies: X_1, X_4, X_9, X_19, X_21, X_46, X_57, X_78, X_91, X_158, X_201, X_243, X_498, X_499, X_601, X_921, X_1075
 
-.. _X(920):
+.. _X_920:
 
-X(920) = X(158)-CEVA CONJUGATE OF X(1)
-======================================
+X_920
+=====
+
+.. rubric:: X_158-CEVA CONJUGATE OF X_1
 
 .. enunciation::
 
-   :ref:`X(920) <X(920)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(921) <X(921)>`
+   :ref:`X_920 <X_920>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_921 <X_921>`
 
 .. figure:: x-00920.svg
-   :alt: X(920) = X(158)-CEVA CONJUGATE OF X(1)
+   :alt: X_920 — X_158-CEVA CONJUGATE OF X_1
    :align: center
 
-   **X(920) = X(158)-CEVA CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_920** (*X_158-CEVA CONJUGATE OF X_1*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 21} <{ 1, 21 }>`, :g:`{4, 46} <{ 4, 46 }>`
+   * **Related Centers:** :g:`X_158 <X_158>` (:ref:`-CROSS CONJUGATE OF X(92) <X_158>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_21 <X_21>` (:ref:`SCHIFFLER POINT <X_21>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_46 <X_46>` (:ref:`-CEVA CONJUGATE OF X(1) <X_46>`)
 
 .. signature:: center
 
@@ -33,13 +42,13 @@ X(920) = X(158)-CEVA CONJUGATE OF X(1)
    :badge: 9 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`21 <X(21)>`}, {:ref:`4 <X(4)>`, :ref:`46 <X(46)>`}, {:ref:`4 <X(4)>`, :ref:`78 <X(78)>`}, {:ref:`9 <X(9)>`, :ref:`498 <X(498)>`}, {:ref:`19 <X(19)>`, :ref:`91 <X(91)>`}, {:ref:`57 <X(57)>`, :ref:`499 <X(499)>`}, {:ref:`158 <X(158)>`, :ref:`921 <X(921)>`}, {:ref:`201 <X(201)>`, :ref:`601 <X(601)>`}, {:ref:`243 <X(243)>`, 1075}
+   {:ref:`1 <X_1>`, :ref:`21 <X_21>`}, {:ref:`4 <X_4>`, :ref:`46 <X_46>`}, {:ref:`4 <X_4>`, :ref:`78 <X_78>`}, {:ref:`9 <X_9>`, :ref:`498 <X_498>`}, {:ref:`19 <X_19>`, :ref:`91 <X_91>`}, {:ref:`57 <X_57>`, :ref:`499 <X_499>`}, {:ref:`158 <X_158>`, :ref:`921 <X_921>`}, {:ref:`201 <X_201>`, :ref:`601 <X_601>`}, {:ref:`243 <X_243>`, 1075}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(920) <X(920)>` = isogonal conjugate of :ref:`X(921) <X(921)>`
-   * :ref:`X(920) <X(920)>` = :ref:`X(158) <X(158)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(1) <X(1)>`
+   * :ref:`X_920 <X_920>` = isogonal conjugate of :ref:`X_921 <X_921>`
+   * :ref:`X_920 <X_920>` = :ref:`X_158 <X_158>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_1 <X_1>`
 
 .. toctree::
    :hidden:

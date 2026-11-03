@@ -1,22 +1,32 @@
 :order: 637
 :type: center
-:canonical_id: X(637)
-:dependencies: X(2), X(3), X(4), X(5), X(20), X(30), X(69), X(315), X(371), X(488), X(489), X(490), X(491), X(638), X(639)
+:canonical_id: X_637
+:subtitle: ANTICOMPLEMENT OF X_371
+:dependencies: X_2, X_3, X_4, X_5, X_20, X_30, X_69, X_315, X_371, X_488, X_489, X_490, X_491, X_638, X_639
 
-.. _X(637):
+.. _X_637:
 
-X(637) = ANTICOMPLEMENT OF X(371)
-=================================
+X_637
+=====
+
+.. rubric:: ANTICOMPLEMENT OF X_371
 
 .. enunciation::
 
-   :ref:`X(637) <X(637)>` = :term:`anticomplement <anticomplement>` of :ref:`X(371) <X(371)>`
+   :ref:`X_637 <X_637>` is the :term:`anticomplement <anticomplement>` of :ref:`X_371 <X_371>`.
 
 .. figure:: x-00637.svg
-   :alt: X(637) = ANTICOMPLEMENT OF X(371)
+   :alt: X_637 — ANTICOMPLEMENT OF X_371
    :align: center
 
-   **X(637) = ANTICOMPLEMENT OF X(371)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_637** (*ANTICOMPLEMENT OF X_371*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Derived Triangle:** :term:`Anticomplementary Triangle <anticomplementary triangle>` :g:`△K_aK_bK_c << K_a K_b K_c >>` — vertices :g:`K_a <K_a>`, :g:`K_b <K_b>`, :g:`K_c <K_c>` (Formed by lines through A, B, C parallel to opposite sides)
+   * **Central Lines:** :g:`{2, 371} <{ 2, 371 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_371 <X_371>` (:ref:`KENMOTU POINT <X_371>`)
 
 .. signature:: center
 
@@ -28,14 +38,14 @@ X(637) = ANTICOMPLEMENT OF X(371)
    :badge: 6 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`371 <X(371)>`}, {:ref:`3 <X(3)>`, :ref:`489 <X(489)>`}, {:ref:`4 <X(4)>`, :ref:`69 <X(69)>`}, {:ref:`5 <X(5)>`, :ref:`491 <X(491)>`}, {:ref:`20 <X(20)>`, :ref:`488 <X(488)>`}, {:ref:`30 <X(30)>`, :ref:`490 <X(490)>`}
+   {:ref:`2 <X_2>`, :ref:`371 <X_371>`}, {:ref:`3 <X_3>`, :ref:`489 <X_489>`}, {:ref:`4 <X_4>`, :ref:`69 <X_69>`}, {:ref:`5 <X_5>`, :ref:`491 <X_491>`}, {:ref:`20 <X_20>`, :ref:`488 <X_488>`}, {:ref:`30 <X_30>`, :ref:`490 <X_490>`}
 
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X(637) <X(637)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`371 <X(371)>`, :ref:`639 <X(639)>`), (:ref:`638 <X(638)>`, :ref:`315 <X(315)>`)
-   * :ref:`X(637) <X(637)>` = anticomplement of :ref:`X(371) <X(371)>`
-   * :ref:`X(637) <X(637)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X(488) <X(488)>`
+   * :ref:`X_637 <X_637>` = reflection of X_i in X_j for these (i,j): (:ref:`371 <X_371>`, :ref:`639 <X_639>`), (:ref:`638 <X_638>`, :ref:`315 <X_315>`)
+   * :ref:`X_637 <X_637>` = anticomplement of :ref:`X_371 <X_371>`
+   * :ref:`X_637 <X_637>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X_488 <X_488>`
 
 .. toctree::
    :hidden:

@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(65) = ORTHOCENTER OF THE INTOUCH TRIANGLE."""
+"""GEOMETOR construction model for X_65 = ORTHOCENTER OF THE INTOUCH TRIANGLE."""
 
 from __future__ import annotations
 
@@ -26,17 +26,17 @@ from geometor.etc.render import write_center_svg
 def construct_x_00065(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(65) = ORTHOCENTER OF THE INTOUCH TRIANGLE on reference triangle ABC."""
-    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X(21)", classes=["center"])
-    X_65 = isogonal_conjugate(model, A, B, C, X_21, ID="X(65)", classes=["selected", "target"])
-    X_1 = incenter_of(model, A, B, C, ID="X(1)", classes=["center", "incident"])
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
+    """Construct X_65 = ORTHOCENTER OF THE INTOUCH TRIANGLE on reference triangle ABC."""
+    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X_21", classes=["center"])
+    X_65 = isogonal_conjugate(model, A, B, C, X_21, ID="X_65", classes=["selected", "target"])
+    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
     central_line(model, X_1, X_3, 1, 3, incident=True)
-    X_7 = gergonne_point_of(model, A, B, C, ID="X(7)", classes=["center", "incident"])
-    X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center", "incident"])
+    X_7 = gergonne_point_of(model, A, B, C, ID="X_7", classes=["center", "incident"])
+    X_8 = nagel_point_of(model, A, B, C, ID="X_8", classes=["center", "incident"])
     central_line(model, X_7, X_8, 7, 8, incident=True)
-    X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["center", "incident"])
-    X_12 = eval_trilinear_point(model, A, B, C, '1 + cos(B - C)', ID="X(12)", classes=["center", "incident"])
+    X_10 = spieker_center_of(model, A, B, C, ID="X_10", classes=["center", "incident"])
+    X_12 = eval_trilinear_point(model, A, B, C, '1 + cos(B - C)', ID="X_12", classes=["center", "incident"])
     central_line(model, X_10, X_12, 10, 12, incident=True)
     return promote_point_to_top(model, X_65)
 
@@ -45,8 +45,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(65) on the given reference triangle."""
-    model = create_model('X(65) = ORTHOCENTER OF THE INTOUCH TRIANGLE')
+    """Build a `geometor.model.Model` for X_65 on the given reference triangle."""
+    model = create_model('X_65 = ORTHOCENTER OF THE INTOUCH TRIANGLE')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00065(model, A, B, C)
     return model

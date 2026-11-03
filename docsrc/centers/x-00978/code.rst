@@ -1,18 +1,21 @@
-:canonical_id: X(978)
+:canonical_id: X_978
 :type: code
+:subtitle: X_56-CEVA CONJUGATE OF X_1
 
-X(978) = X(56)-CEVA CONJUGATE OF X(1) — Code
-============================================
+X_978
+=====
+
+.. rubric:: X_56-CEVA CONJUGATE OF X_1
 
 .. enunciation::
 
-   :ref:`X(978) <X(978)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(979) <X(979)>`
+   :ref:`X_978 <X_978>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_979 <X_979>`
 
 .. figure:: x-00978.svg
-   :alt: X(978) = X(56)-CEVA CONJUGATE OF X(1)
+   :alt: X_978 — X_56-CEVA CONJUGATE OF X_1
    :align: center
 
-   **X(978) = X(56)-CEVA CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_978** (*X_56-CEVA CONJUGATE OF X_1*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

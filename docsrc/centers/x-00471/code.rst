@@ -1,18 +1,21 @@
-:canonical_id: X(471)
+:canonical_id: X_471
 :type: code
+:subtitle: X_16-CROSS CONJUGATE OF X_299
 
-X(471) = X(16)-CROSS CONJUGATE OF X(299) — Code
-===============================================
+X_471
+=====
+
+.. rubric:: X_16-CROSS CONJUGATE OF X_299
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(471) <X(471)>` has Shinagawa coefficients :math:`(3^{1/2}F, -S)`.
+   :ref:`X_471 <X_471>` = inverse-in-orthocentroidal-circle of :ref:`X_470 <X_470>`
 
 .. figure:: x-00471.svg
-   :alt: X(471) = X(16)-CROSS CONJUGATE OF X(299)
+   :alt: X_471 — X_16-CROSS CONJUGATE OF X_299
    :align: center
 
-   **X(471) = X(16)-CROSS CONJUGATE OF X(299)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_471** (*X_16-CROSS CONJUGATE OF X_299*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

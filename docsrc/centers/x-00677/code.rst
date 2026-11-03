@@ -1,18 +1,21 @@
-:canonical_id: X(677)
+:canonical_id: X_677
 :type: code
+:subtitle: TRILINEAR POLE OF LINE X_3X_101
 
-X(677) = TRILINEAR POLE OF LINE X(3)X(101) — Code
-=================================================
+X_677
+=====
+
+.. rubric:: TRILINEAR POLE OF LINE X_3X_101
 
 .. enunciation::
 
-   :ref:`X(677) <X(677)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(676) <X(676)>`
+   :ref:`X_677 <X_677>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_676 <X_676>`
 
 .. figure:: x-00677.svg
-   :alt: X(677) = TRILINEAR POLE OF LINE X(3)X(101)
+   :alt: X_677 — TRILINEAR POLE OF LINE X_3X_101
    :align: center
 
-   **X(677) = TRILINEAR POLE OF LINE X(3)X(101)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_677** (*TRILINEAR POLE OF LINE X_3X_101*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

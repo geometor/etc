@@ -1,18 +1,21 @@
-:canonical_id: X(263)
+:canonical_id: X_263
 :type: code
+:subtitle: ISOGONAL CONJUGATE OF X_183
 
-X(263) = ISOGONAL CONJUGATE OF X(183) — Code
-============================================
+X_263
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_183
 
 .. enunciation::
 
-   Let V = U(2)-of-pedal-triangle-of-P(1), and let W = P(2)-of-pedal-triangle-of-U(1). Then :ref:`X(263) <X(263)>` = :term:`trilinear pole <trilinear-pole>` of :g:`VW <[ V W ]>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
+   :ref:`X_263 <X_263>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_183 <X_183>`.
 
 .. figure:: x-00263.svg
-   :alt: X(263) = ISOGONAL CONJUGATE OF X(183)
+   :alt: X_263 — ISOGONAL CONJUGATE OF X_183
    :align: center
 
-   **X(263) = ISOGONAL CONJUGATE OF X(183)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_263** (*ISOGONAL CONJUGATE OF X_183*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

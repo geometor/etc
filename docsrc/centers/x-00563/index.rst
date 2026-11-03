@@ -1,22 +1,31 @@
 :order: 563
 :type: center
-:canonical_id: X(563)
-:dependencies: X(1), X(19), X(47), X(48), X(91), X(92), X(163), X(255), X(1820)
+:canonical_id: X_563
+:subtitle: TRILINEAR PRODUCT X_47*X_48
+:dependencies: X_1, X_19, X_48, X_91, X_92, X_163, X_255, X_1820
 
-.. _X(563):
+.. _X_563:
 
-X(563) = TRILINEAR PRODUCT X(47)*X(48)
-======================================
+X_563
+=====
+
+.. rubric:: TRILINEAR PRODUCT X_47*X_48
 
 .. enunciation::
 
-   :ref:`X(563) <X(563)>` = :ref:`X(91) <X(91)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(92) <X(92)>`
+   :ref:`X_563 <X_563>` = :ref:`X_91 <X_91>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_92 <X_92>`
 
 .. figure:: x-00563.svg
-   :alt: X(563) = TRILINEAR PRODUCT X(47)*X(48)
+   :alt: X_563 — TRILINEAR PRODUCT X_47*X_48
    :align: center
 
-   **X(563) = TRILINEAR PRODUCT X(47)*X(48)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_563** (*TRILINEAR PRODUCT X_47*X_48*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{19, 163} <{ 19, 163 }>`, :g:`{48, 255} <{ 48, 255 }>`
+   * **Related Centers:** :g:`X_19 <X_19>` (:ref:`CLAWSON POINT <X_19>`), :g:`X_163 <X_163>` (:ref:`TRILINEAR PRODUCT X(6)*X(110) <X_163>`), :g:`X_48 <X_48>` (:ref:`CROSSPOINT OF X(1) AND X(63) <X_48>`), :g:`X_255 <X_255>` (:ref:`ISOGONAL CONJUGATE OF X(158) <X_255>`)
 
 .. signature:: center
 
@@ -33,12 +42,12 @@ X(563) = TRILINEAR PRODUCT X(47)*X(48)
    :badge: 3 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, 1820}, {:ref:`19 <X(19)>`, :ref:`163 <X(163)>`}, {:ref:`48 <X(48)>`, :ref:`255 <X(255)>`}
+   {:ref:`1 <X_1>`, 1820}, {:ref:`19 <X_19>`, :ref:`163 <X_163>`}, {:ref:`48 <X_48>`, :ref:`255 <X_255>`}
 
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(563) <X(563)>` = :ref:`X(91) <X(91)>`-isoconjugate of :ref:`X(92) <X(92)>`
+   * :ref:`X_563 <X_563>` = :ref:`X_91 <X_91>`-isoconjugate of :ref:`X_92 <X_92>`
 
 Notes
 -----

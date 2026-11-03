@@ -1,22 +1,31 @@
 :order: 332
 :type: center
-:canonical_id: X(332)
-:dependencies: X(1), X(3), X(21), X(69), X(75), X(78), X(99), X(102), X(219), X(225), X(261), X(283), X(284), X(314), X(326), X(333), X(345), X(652), X(1014), X(1036), X(1037), X(6332), X(28660)
+:canonical_id: X_332
+:subtitle: ISOTOMIC CONJUGATE OF X_225
+:dependencies: X_1, X_3, X_21, X_69, X_75, X_78, X_99, X_102, X_219, X_225, X_261, X_283, X_284, X_314, X_326, X_333, X_345, X_652, X_1014, X_1036, X_1037, X_6332, X_28660
 
-.. _X(332):
+.. _X_332:
 
-X(332) = ISOTOMIC CONJUGATE OF X(225)
-=====================================
+X_332
+=====
+
+.. rubric:: ISOTOMIC CONJUGATE OF X_225
 
 .. enunciation::
 
-   :ref:`X(332) <X(332)>` = :term:`isogonal conjugate <isogonal-conjugate>` of polar conjugate of X(28660)
+   :ref:`X_332 <X_332>` is the :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_225 <X_225>`.
 
 .. figure:: x-00332.svg
-   :alt: X(332) = ISOTOMIC CONJUGATE OF X(225)
+   :alt: X_332 — ISOTOMIC CONJUGATE OF X_225
    :align: center
 
-   **X(332) = ISOTOMIC CONJUGATE OF X(225)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_332** (*ISOTOMIC CONJUGATE OF X_225*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{3, 69} <{ 3, 69 }>`, :g:`{1, 75} <{ 1, 75 }>`
+   * **Related Centers:** :g:`X_225 <X_225>` (:ref:`-CEVA CONJUGATE OF X(65) <X_225>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_69 <X_69>` (:ref:`SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE <X_69>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_75 <X_75>` (:ref:`ISOTOMIC CONJUGATE OF INCENTER <X_75>`)
 
 .. signature:: center
 
@@ -33,16 +42,16 @@ X(332) = ISOTOMIC CONJUGATE OF X(225)
    :badge: 7 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`75 <X(75)>`}, {:ref:`3 <X(3)>`, :ref:`69 <X(69)>`}, {:ref:`21 <X(21)>`, 1036}, {:ref:`99 <X(99)>`, :ref:`102 <X(102)>`}, {:ref:`219 <X(219)>`, :ref:`345 <X(345)>`}, {:ref:`261 <X(261)>`, :ref:`284 <X(284)>`}, {1014, 1037}
+   {:ref:`1 <X_1>`, :ref:`75 <X_75>`}, {:ref:`3 <X_3>`, :ref:`69 <X_69>`}, {:ref:`21 <X_21>`, 1036}, {:ref:`99 <X_99>`, :ref:`102 <X_102>`}, {:ref:`219 <X_219>`, :ref:`345 <X_345>`}, {:ref:`261 <X_261>`, :ref:`284 <X_284>`}, {1014, 1037}
 
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X(332) <X(332)>` = isogonal conjugate of polar conjugate of X(28660)
-   * :ref:`X(332) <X(332)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(225) <X(225)>`
-   * :ref:`X(332) <X(332)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these (i,j): (:ref:`69 <X(69)>`, :ref:`326 <X(326)>`), (:ref:`78 <X(78)>`, :ref:`345 <X(345)>`)
-   * :ref:`X(332) <X(332)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`69 <X(69)>`, :ref:`314 <X(314)>`), (:ref:`283 <X(283)>`, :ref:`333 <X(333)>`)
-   * :ref:`X(332) <X(332)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(652) <X(652)>`\ X(6332)
+   * :ref:`X_332 <X_332>` = :term:`isogonal conjugate <isogonal-conjugate>` of polar conjugate of X_28660
+   * :ref:`X_332 <X_332>` = isotomic conjugate of :ref:`X_225 <X_225>`
+   * :ref:`X_332 <X_332>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`69 <X_69>`, :ref:`326 <X_326>`), (:ref:`78 <X_78>`, :ref:`345 <X_345>`)
+   * :ref:`X_332 <X_332>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`69 <X_69>`, :ref:`314 <X_314>`), (:ref:`283 <X_283>`, :ref:`333 <X_333>`)
+   * :ref:`X_332 <X_332>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_652 <X_652>`\ X_6332
 
 .. toctree::
    :hidden:

@@ -885,29 +885,44 @@ def _add_line(
 def _add_circle(
     model: Model,
     pt_center: spg.Point,
-    pt_radius: spg.Point,
+    pt_radius: spg.Point | float,
     ID: str = "",
     classes: list[str] | None = None,
     guide: bool = False,
 ) -> spg.Circle | None:
-    """Add a CircleElement to `model` defined by center point and radius point."""
-    r_val = math.hypot(
-        float(pt_center.x) - float(pt_radius.x),
-        float(pt_center.y) - float(pt_radius.y),
-    )
+    """Add a CircleElement (or Element if radius is numeric/unregistered) to `model`."""
+    if isinstance(pt_radius, (int, float)):
+        r_val = float(pt_radius)
+        rad_in_model = False
+    else:
+        r_val = math.hypot(
+            float(pt_center.x) - float(pt_radius.x),
+            float(pt_center.y) - float(pt_radius.y),
+        )
+        rad_in_model = pt_radius in model
     if r_val < 1e-7:
         return None
     if not ID:
-        ID = f"( {model[pt_center].ID} {model[pt_radius].ID} )"
+        rad_id = model[pt_radius].ID if rad_in_model else f"{r_val:.4f}"
+        ID = f"( {model[pt_center].ID} {rad_id} )"
     circ = spg.Circle(pt_center, sp.Float(round(r_val, 8)), evaluate=False)
-    el = CircleElement(
-        circ,
-        pt_radius=pt_radius,
-        parents=[pt_center, pt_radius],
-        classes=classes or [],
-        ID=ID,
-        guide=guide,
-    )
+    if rad_in_model and isinstance(pt_radius, spg.Point):
+        el: Element = CircleElement(
+            circ,
+            pt_radius=pt_radius,
+            parents=[pt_center, pt_radius],
+            classes=classes or [],
+            ID=ID,
+            guide=guide,
+        )
+    else:
+        el = Element(
+            circ,
+            parents=[pt_center],
+            classes=classes or [],
+            ID=ID,
+            guide=guide,
+        )
     super(Model, model).__setitem__(circ, el)
     return circ
 
@@ -973,21 +988,76 @@ def _foot_of_perp(
     return (x1 + t * dx, y1 + t * dy)
 
 
+def _pt_on_line(
+    px: float, py: float, x1: float, y1: float, x2: float, y2: float, tol: float = 1e-3
+) -> bool:
+    """Return True if (px, py) is collinear with (x1, y1) and (x2, y2) within `tol`."""
+    dx, dy = x2 - x1, y2 - y1
+    length = math.hypot(dx, dy)
+    if length < 1e-7:
+        return False
+    return abs(dy * px - dx * py + x2 * y1 - y2 * x1) / length < tol
+
+
 _NAMED_TRIANGLE_PATTERNS: list[tuple[str, re.Pattern]] = [
+    ("orthic_of_orthic", re.compile(r"\borthic\s+triangle\s+of\s+(?:the\s+)?orthic\s+triangle\b|\borthic-of-orthic\s+triangle\b", re.IGNORECASE)),
     ("medial", re.compile(r"\bmedial\s+triangle\b", re.IGNORECASE)),
     ("anticomplementary", re.compile(r"\banticomplementary\s+triangle\b", re.IGNORECASE)),
-    ("orthic", re.compile(r"\borthic\s+triangle\b", re.IGNORECASE)),
+    ("orthic", re.compile(r"(?<!orthic-)(?<!orthic\striangle\sof\s)(?<!orthic\striangle\sof\sthe\s)\borthic\s+triangle\b(?!\s+of\s+(?:the\s+)?orthic)", re.IGNORECASE)),
     ("intouch", re.compile(r"\b(?:intouch|contact)\s+triangle\b", re.IGNORECASE)),
     ("extouch", re.compile(r"\bextouch\s+triangle\b", re.IGNORECASE)),
     ("excentral", re.compile(r"\bexcentral\s+triangle\b", re.IGNORECASE)),
     ("tangential", re.compile(r"\btangential\s+triangle\b", re.IGNORECASE)),
+    ("circummedial", re.compile(r"\bcircummedial\s+triangle\b", re.IGNORECASE)),
     ("incentral", re.compile(r"\bincentral\s+triangle\b", re.IGNORECASE)),
     ("symmedial", re.compile(r"\bsymmedial\s+triangle\b", re.IGNORECASE)),
-    ("euler", re.compile(r"\b(?:1st\s+)?euler\s+triangle\b|\bfeuerbach\s+triangle\b", re.IGNORECASE)),
-    ("reflection", re.compile(r"\breflection\s+triangle\b", re.IGNORECASE)),
+    ("euler", re.compile(r"(?<!2nd )(?<!3rd )\b(?:1st\s+)?euler\s+triangle\b|\bfeuerbach\s+triangle\b", re.IGNORECASE)),
+    ("reflection", re.compile(r"\breflection\s+triangle\b|\btriangle\s+of\s+reflections\s+of\s+A\s*,\s*B\s*,\s*C\s+in\s+(?:the\s+)?opposite\s+sidelines\b", re.IGNORECASE)),
+    ("kosnita", re.compile(r"\bkosnita\s+triangle\b", re.IGNORECASE)),
     ("outer_napoleon", re.compile(r"\b(?:outer|1st)\s+napoleon\s+triangle\b", re.IGNORECASE)),
     ("inner_napoleon", re.compile(r"\b(?:inner|2nd)\s+napoleon\s+triangle\b", re.IGNORECASE)),
 ]
+
+_CLASSICAL_NAME_TO_NUM: dict[str, int] = {
+    "incenter": 1,
+    "centroid": 2,
+    "circumcenter": 3,
+    "orthocenter": 4,
+    "nine-point center": 5,
+    "symmedian point": 6,
+    "lemoine point": 6,
+    "grebe point": 6,
+    "gergonne point": 7,
+    "nagel point": 8,
+    "mittenpunkt": 9,
+    "spieker center": 10,
+    "spieker point": 10,
+    "feuerbach point": 11,
+    "1st isogonic center": 13,
+    "fermat point": 13,
+    "2nd isogonic center": 14,
+    "1st isodynamic point": 15,
+    "2nd isodynamic point": 16,
+    "1st napoleon point": 17,
+    "2nd napoleon point": 18,
+    "clawson point": 19,
+    "clawson center": 19,
+    "de longchamps point": 20,
+    "schiffler point": 21,
+    "exeter point": 22,
+    "far-out point": 23,
+    "bevan point": 40,
+    "kosnita point": 54,
+}
+
+
+def _resolve_center_token(tok: str) -> int | None:
+    s = tok.strip().lower()
+    m = re.match(r"^x\((\d+)\)$", s)
+    if m:
+        return int(m.group(1))
+    s = re.sub(r"^the\s+", "", s)
+    return _CLASSICAL_NAME_TO_NUM.get(s)
 
 
 def _detect_clues(center_data: dict[str, Any]) -> dict[str, bool]:
@@ -1069,7 +1139,7 @@ def build_center_model(
         cls = ["selected", "target"] if is_target else ["center"]
         if incident and not is_target:
             cls.append("incident")
-        pt = _add_point(model, xy[0], xy[1], ID=f"X({c_num})", classes=cls)
+        pt = _add_point(model, xy[0], xy[1], ID=f"X_{c_num}", classes=cls)
         added_centers[c_num] = pt
         return pt
 
@@ -1092,17 +1162,29 @@ def build_center_model(
     def add_incircle() -> spg.Point | None:
         X1 = get_or_add_center_pt(1, is_target=(num == 1), incident=False)
         if X1 is not None and model.get_element_by_ID("incircle") is None:
-            x1_xy = registry.xy_cache[1]
-            Tc_xy = _foot_of_perp(x1_xy[0], x1_xy[1], Ax, Ay, Bx, By)
-            Tc = _add_point(model, Tc_xy[0], Tc_xy[1], ID="T_c", guide=True)
-            _add_circle(model, X1, Tc, ID="incircle", classes=["incircle"])
+            tc_existing = model.get_element_by_ID("T_c")
+            r_in = ctx.r * ctx.scale
+            _add_circle(
+                model,
+                X1,
+                tc_existing if isinstance(tc_existing, spg.Point) else r_in,
+                ID="incircle",
+                classes=["incircle"],
+            )
         return X1
 
     def add_nine_point_circle() -> spg.Point | None:
         X5 = get_or_add_center_pt(5, is_target=(num == 5), incident=False)
         if X5 is not None and model.get_element_by_ID("nine_point_circle") is None:
-            Mc = _add_point(model, 0.5 * (Ax + Bx), 0.5 * (Ay + By), ID="M_c", guide=True)
-            _add_circle(model, X5, Mc, ID="nine_point_circle", classes=["nine_point_circle"])
+            mc_existing = model.get_element_by_ID("M_c")
+            r_np = 0.5 * ctx.R * ctx.scale
+            _add_circle(
+                model,
+                X5,
+                mc_existing if isinstance(mc_existing, spg.Point) else r_np,
+                ID="nine_point_circle",
+                classes=["nine_point_circle"],
+            )
         return X5
 
     def add_equilateral_side_triangles(outward: bool = True) -> tuple[spg.Point, spg.Point, spg.Point]:
@@ -1154,8 +1236,21 @@ def build_center_model(
             Hb = _add_point(model, Hb_xy[0], Hb_xy[1], ID="H_b", classes=["foot"], guide=True)
             Hc = _add_point(model, Hc_xy[0], Hc_xy[1], ID="H_c", classes=["foot"], guide=True)
             pts, poly_id = (Ha, Hb, Hc), "< H_a H_b H_c >"
+        elif t_key == "orthic_of_orthic":
+            orth = add_named_triangle("orthic", draw_polygon=draw_polygon)
+            if orth:
+                Ha, Hb, Hc = orth
+                hax, hay = float(Ha.x), float(Ha.y)
+                hbx, hby = float(Hb.x), float(Hb.y)
+                hcx, hcy = float(Hc.x), float(Hc.y)
+                H2a_xy = _foot_of_perp(hax, hay, hbx, hby, hcx, hcy)
+                H2b_xy = _foot_of_perp(hbx, hby, hcx, hcy, hax, hay)
+                H2c_xy = _foot_of_perp(hcx, hcy, hax, hay, hbx, hby)
+                H2a = _add_point(model, H2a_xy[0], H2a_xy[1], ID="H'_a", classes=["foot"], guide=True)
+                H2b = _add_point(model, H2b_xy[0], H2b_xy[1], ID="H'_b", classes=["foot"], guide=True)
+                H2c = _add_point(model, H2c_xy[0], H2c_xy[1], ID="H'_c", classes=["foot"], guide=True)
+                pts, poly_id = (H2a, H2b, H2c), "< H'_a H'_b H'_c >"
         elif t_key == "intouch":
-            add_incircle()
             x1_xy = registry.xy_cache[1]
             Ta_xy = _foot_of_perp(x1_xy[0], x1_xy[1], Bx, By, Cx, Cy)
             Tb_xy = _foot_of_perp(x1_xy[0], x1_xy[1], Cx, Cy, Ax, Ay)
@@ -1163,6 +1258,7 @@ def build_center_model(
             Ta = _add_point(model, Ta_xy[0], Ta_xy[1], ID="T_a", guide=True)
             Tb = _add_point(model, Tb_xy[0], Tb_xy[1], ID="T_b", guide=True)
             Tc = _add_point(model, Tc_xy[0], Tc_xy[1], ID="T_c", guide=True)
+            add_incircle()
             pts, poly_id = (Ta, Tb, Tc), "< T_a T_b T_c >"
         elif t_key == "extouch":
             Na_xy = ctx.bary_to_cartesian(0.0, s - c, s - b)
@@ -1192,6 +1288,16 @@ def build_center_model(
                 Tb = _add_point(model, Tb_xy[0], Tb_xy[1], ID="Tan_b", guide=True)
                 Tc = _add_point(model, Tc_xy[0], Tc_xy[1], ID="Tan_c", guide=True)
                 pts, poly_id = (Ta, Tb, Tc), "< Tan_a Tan_b Tan_c >"
+        elif t_key == "circummedial":
+            add_circumcircle()
+            Cma_xy = ctx.bary_to_cartesian(-(a**2), b**2 + c**2, b**2 + c**2)
+            Cmb_xy = ctx.bary_to_cartesian(c**2 + a**2, -(b**2), c**2 + a**2)
+            Cmc_xy = ctx.bary_to_cartesian(a**2 + b**2, a**2 + b**2, -(c**2))
+            if Cma_xy and Cmb_xy and Cmc_xy:
+                Cma = _add_point(model, Cma_xy[0], Cma_xy[1], ID="Cm_a", guide=True)
+                Cmb = _add_point(model, Cmb_xy[0], Cmb_xy[1], ID="Cm_b", guide=True)
+                Cmc = _add_point(model, Cmc_xy[0], Cmc_xy[1], ID="Cm_c", guide=True)
+                pts, poly_id = (Cma, Cmb, Cmc), "< Cm_a Cm_b Cm_c >"
         elif t_key == "incentral":
             Ia_xy = ctx.bary_to_cartesian(0.0, b, c)
             Ib_xy = ctx.bary_to_cartesian(a, 0.0, c)
@@ -1225,6 +1331,25 @@ def build_center_model(
             Rb = _add_point(model, 2.0 * Hb_xy[0] - Bx, 2.0 * Hb_xy[1] - By, ID="Ref_b", guide=True)
             Rc = _add_point(model, 2.0 * Hc_xy[0] - Cx, 2.0 * Hc_xy[1] - Cy, ID="Ref_c", guide=True)
             pts, poly_id = (Ra, Rb, Rc), "< Ref_a Ref_b Ref_c >"
+        elif t_key == "kosnita":
+            get_or_add_center_pt(3, is_target=(num == 3), incident=False)
+            x3_xy = registry.xy_cache.get(3)
+            if x3_xy:
+                def _circumcenter_xy(x1: float, y1: float, x2: float, y2: float, x3: float, y3: float) -> tuple[float, float] | None:
+                    d = 2.0 * (x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2))
+                    if abs(d) < 1e-12:
+                        return None
+                    ux = ((x1**2 + y1**2) * (y2 - y3) + (x2**2 + y2**2) * (y3 - y1) + (x3**2 + y3**2) * (y1 - y2)) / d
+                    uy = ((x1**2 + y1**2) * (x3 - x2) + (x2**2 + y2**2) * (x1 - x3) + (x3**2 + y3**2) * (x2 - x1)) / d
+                    return (ux, uy)
+                Oa_xy = _circumcenter_xy(x3_xy[0], x3_xy[1], Bx, By, Cx, Cy)
+                Ob_xy = _circumcenter_xy(x3_xy[0], x3_xy[1], Cx, Cy, Ax, Ay)
+                Oc_xy = _circumcenter_xy(x3_xy[0], x3_xy[1], Ax, Ay, Bx, By)
+                if Oa_xy and Ob_xy and Oc_xy:
+                    Oa = _add_point(model, Oa_xy[0], Oa_xy[1], ID="O_A", guide=True)
+                    Ob = _add_point(model, Ob_xy[0], Ob_xy[1], ID="O_B", guide=True)
+                    Oc = _add_point(model, Oc_xy[0], Oc_xy[1], ID="O_C", guide=True)
+                    pts, poly_id = (Oa, Ob, Oc), "< O_A O_B O_C >"
         elif t_key in {"outer_napoleon", "inner_napoleon"}:
             Ea, Eb, Ec = add_equilateral_side_triangles(outward=(t_key == "outer_napoleon"))
             Na = _add_point(
@@ -1274,7 +1399,7 @@ def build_center_model(
                 trace_pts.append(tp)
                 _add_line(model, v_pt, tp, ID=f"[ {v_lbl} {prefix}_{sub} ]", classes=["bisector"])
             else:
-                _add_line(model, v_pt, c_pt, ID=f"[ {v_lbl} X({c_num}) ]", classes=["bisector"])
+                _add_line(model, v_pt, c_pt, ID=f"[ {v_lbl} X_{c_num} ]", classes=["bisector"])
         if draw_polygon and len(trace_pts) == 3:
             _add_polygon(model, trace_pts, ID=f"< {prefix}_a {prefix}_b {prefix}_c >", classes=["secondary"])
         return True
@@ -1295,13 +1420,15 @@ def build_center_model(
     # -----------------------------------------------------------------------
     title_str = center_data.get("title") or ""
     notes_list = center_data.get("notes") or []
-    # Skip "As a point on the Euler line, X(k) has Shinagawa coefficients..." when choosing primary note
-    primary_notes = [
-        n for n in notes_list
-        if not re.match(r"^\s*As\s+a\s+point\s+on\s+the\s+Euler\s+line\b", n, flags=re.IGNORECASE)
-    ]
-    note0 = primary_notes[0] if primary_notes else (notes_list[0] if notes_list else "")
+    relations_list = center_data.get("relations") or []
+    from .transform import _extract_primary_enunciation
+    enun_text, _ = _extract_primary_enunciation(
+        notes_list, relations_list, num=num, title=title_str
+    )
+    note0 = enun_text or (notes_list[0] if notes_list else "")
     combined_primary_text = f"{title_str} . {note0}"
+    title_and_rels = title_str + " . " + " . ".join(relations_list[:2])
+    xn, yn = registry.xy_cache.get(num, (0.5, 0.25))
 
     constructed_primary = False
 
@@ -1332,9 +1459,9 @@ def build_center_model(
         medial = add_named_triangle("medial", draw_polygon=False)
         if X3 is not None and medial:
             Ma, Mb, Mc = medial
-            _add_line(model, X3, Ma, ID="[ X(3) M_a ]", classes=["bisector"])
-            _add_line(model, X3, Mb, ID="[ X(3) M_b ]", classes=["bisector"])
-            _add_line(model, X3, Mc, ID="[ X(3) M_c ]", classes=["bisector"])
+            _add_line(model, X3, Ma, ID="[ X_3 M_a ]", classes=["bisector"])
+            _add_line(model, X3, Mb, ID="[ X_3 M_b ]", classes=["bisector"])
+            _add_line(model, X3, Mc, ID="[ X_3 M_c ]", classes=["bisector"])
         constructed_primary = True
 
     elif num == 4:
@@ -1411,13 +1538,11 @@ def build_center_model(
         X10 = get_or_add_center_pt(10, is_target=True)
         if med and X10 is not None:
             Ma, Mb, Mc = med
-            _add_line(model, Ma, X10, ID="[ M_a X(10) ]", classes=["bisector"])
-            _add_line(model, Mb, X10, ID="[ M_b X(10) ]", classes=["bisector"])
-            _add_line(model, Mc, X10, ID="[ M_c X(10) ]", classes=["bisector"])
-            x10_xy = registry.xy_cache[10]
-            sp_foot = _foot_of_perp(x10_xy[0], x10_xy[1], float(Ma.x), float(Ma.y), float(Mb.x), float(Mb.y))
-            Sp_r = _add_point(model, sp_foot[0], sp_foot[1], ID="S_c", guide=True)
-            _add_circle(model, X10, Sp_r, ID="spieker_circle", classes=["incircle"])
+            _add_line(model, Ma, X10, ID="[ M_a X_10 ]", classes=["bisector"])
+            _add_line(model, Mb, X10, ID="[ M_b X_10 ]", classes=["bisector"])
+            _add_line(model, Mc, X10, ID="[ M_c X_10 ]", classes=["bisector"])
+            r_sp = 0.5 * ctx.r * ctx.scale
+            _add_circle(model, X10, r_sp, ID="spieker_circle", classes=["incircle"])
         constructed_primary = True
 
     elif num == 11:
@@ -1428,12 +1553,15 @@ def build_center_model(
         constructed_primary = True
 
     elif num == 12:
-        # X(12) {X(1),X(5)}-harmonic conjugate of X(11): incircle + nine-point circle + line {1,5} + cevians
-        add_incircle()
+        # X(12) {X(1),X(5)}-harmonic conjugate of X(11): incircle + nine-point circle + intouch + medial/orthic
+        intouch = add_named_triangle("intouch", draw_polygon=True)
+        med = add_named_triangle("medial", draw_polygon=True)
         add_nine_point_circle()
         get_or_add_center_pt(11)
         add_primary_central_line(1, 5)
-        add_cevians_for_center(12, prefix="P")
+        if intouch and med:
+            for p_t, p_m in zip(intouch, med):
+                _add_line(model, p_t, p_m, classes=["bisector"])
         constructed_primary = True
 
     elif num in {13, 14}:
@@ -1480,6 +1608,50 @@ def build_center_model(
             _add_line(model, C, Nc, ID="[ C Nap_c ]", classes=["bisector"])
         constructed_primary = True
 
+    elif num == 20:
+        # X(20) De Longchamps Point: orthocenter of anticomplementary triangle + reflection of X(4) in X(3)
+        anti = add_named_triangle("anticomplementary", draw_polygon=True)
+        X20 = get_or_add_center_pt(20, is_target=True)
+        if anti and X20 is not None:
+            for kp in anti:
+                _add_line(model, kp, X20, classes=["bisector"])
+        get_or_add_center_pt(3)
+        get_or_add_center_pt(4)
+        add_primary_central_line(2, 3)
+        constructed_primary = True
+
+    elif num == 21:
+        # X(21) Schiffler Point: concurrence of Euler lines of ABC, IBC, ICA, IAB
+        X1 = get_or_add_center_pt(1)
+        if X1 is not None:
+            _add_segment(model, A, X1, ID="/ A X_1 /")
+            _add_segment(model, B, X1, ID="/ B X_1 /")
+            _add_segment(model, C, X1, ID="/ C X_1 /")
+        add_primary_central_line(2, 3)
+        for i_num, j_num in line_pairs:
+            if {i_num, j_num} <= {2, 3, 4, 5, 20, 30}:
+                continue
+            add_primary_central_line(i_num, j_num)
+            break
+        constructed_primary = True
+
+    elif num == 22:
+        # X(22) Exeter Point: perspector of circummedial triangle and tangential triangle
+        cm = add_named_triangle("circummedial", draw_polygon=True)
+        tang = add_named_triangle("tangential", draw_polygon=True)
+        if cm and tang:
+            for p_cm, p_t, sub in zip(cm, tang, ("a", "b", "c")):
+                _add_line(model, p_cm, p_t, ID=f"[ Cm_{sub} Tan_{sub} ]", classes=["bisector"])
+        constructed_primary = True
+
+    elif num == 24:
+        # X(24) Perspector of ABC and Orthic-of-Orthic Triangle
+        oo = add_named_triangle("orthic_of_orthic", draw_polygon=True)
+        if oo:
+            for v_pt, v_lbl, p_oo, sub in zip((A, B, C), ("A", "B", "C"), oo, ("a", "b", "c")):
+                _add_line(model, v_pt, p_oo, ID=f"[ {v_lbl} H'_{sub} ]", classes=["bisector"])
+        constructed_primary = True
+
     elif num == 40:
         # X(40) Bevan Point: circumcenter of excentral triangle + Bevan circle + perpendiculars to sides
         exc = add_named_triangle("excentral", draw_polygon=True)
@@ -1487,9 +1659,22 @@ def build_center_model(
         if exc and X40 is not None:
             Ja, Jb, Jc = exc
             _add_circle(model, X40, Ja, ID="bevan_circle", classes=["secondary_circle"])
-            _add_line(model, Ja, X40, ID="[ J_a X(40) ]", classes=["bisector"])
-            _add_line(model, Jb, X40, ID="[ J_b X(40) ]", classes=["bisector"])
-            _add_line(model, Jc, X40, ID="[ J_c X(40) ]", classes=["bisector"])
+            _add_line(model, Ja, X40, ID="[ J_a X_40 ]", classes=["bisector"])
+            _add_line(model, Jb, X40, ID="[ J_b X_40 ]", classes=["bisector"])
+            _add_line(model, Jc, X40, ID="[ J_c X_40 ]", classes=["bisector"])
+        constructed_primary = True
+
+    elif num == 54:
+        # X(54) Kosnita Point: perspector of ABC and Kosnita triangle (circumcenters of BOC, COA, AOB)
+        X3 = get_or_add_center_pt(3)
+        if X3 is not None:
+            _add_segment(model, A, X3, ID="/ A X_3 /")
+            _add_segment(model, B, X3, ID="/ B X_3 /")
+            _add_segment(model, C, X3, ID="/ C X_3 /")
+        kos = add_named_triangle("kosnita", draw_polygon=True)
+        if kos:
+            for v_pt, v_lbl, p_k in zip((A, B, C), ("A", "B", "C"), kos):
+                _add_line(model, v_pt, p_k, ID=f"[ {v_lbl} O_{v_lbl} ]", classes=["bisector"])
         constructed_primary = True
 
     elif num in {55, 56}:
@@ -1504,115 +1689,100 @@ def build_center_model(
                 _add_line(model, t_pt, i_pt, ID=f"[ Tan_{sub} T_{sub} ]", classes=["bisector"])
         constructed_primary = True
 
-    # General Rule A: Perspector / Homothetic center of two named triangles T1 and T2, or X(k) of a named triangle
+    # General Rule A1: Named triangle(s) explicitly in the center's TITLE
     if not constructed_primary:
-        matched_tris: list[str] = []
+        title_tris: list[str] = []
         for t_key, pat in _NAMED_TRIANGLE_PATTERNS:
-            if pat.search(combined_primary_text) and t_key not in matched_tris:
-                matched_tris.append(t_key)
+            if pat.search(title_str) and t_key not in title_tris:
+                title_tris.append(t_key)
 
-        if len(matched_tris) >= 2:
-            t1 = add_named_triangle(matched_tris[0], draw_polygon=True)
-            t2 = add_named_triangle(matched_tris[1], draw_polygon=True)
+        if len(title_tris) >= 2:
+            t1 = add_named_triangle(title_tris[0], draw_polygon=False)
+            t2 = add_named_triangle(title_tris[1], draw_polygon=False)
             if t1 and t2:
-                for p1, p2 in zip(t1, t2):
-                    _add_line(model, p1, p2, classes=["bisector"])
+                _add_polygon(model, list(t1), classes=["secondary"])
+                _add_polygon(model, list(t2), classes=["secondary"])
+                if all(
+                    _pt_on_line(xn, yn, float(p1.x), float(p1.y), float(p2.x), float(p2.y))
+                    for p1, p2 in zip(t1, t2)
+                ):
+                    for p1, p2 in zip(t1, t2):
+                        _add_line(model, p1, p2, classes=["bisector"])
                 constructed_primary = True
-        elif len(matched_tris) == 1:
-            t1_key = matched_tris[0]
-            t1 = add_named_triangle(t1_key, draw_polygon=True)
+            else:
+                for t_k in title_tris[:2]:
+                    for pt_rm in constructed_triangles.pop(t_k, ()):
+                        model.pop(pt_rm, None)
+        elif len(title_tris) == 1:
+            t1_key = title_tris[0]
+            t1 = add_named_triangle(t1_key, draw_polygon=False)
             target_pt = get_or_add_center_pt(num, is_target=True)
             if t1 and target_pt is not None:
-                # Check if X(n) is a center OF T1 (e.g. "centroid of orthic triangle", "X(k)-of-medial-triangle")
                 if re.search(
-                    r"\b(?:centroid|orthocenter|incenter|circumcenter|symmedian\s+point|nine-point\s+center|X\(\d+\))(?:\s+|-)+of(?:\s+|-)+(?:the\s+)?[a-z\-]+\s+triangle",
-                    combined_primary_text,
+                    r"\b(?:centroid|orthocenter|incenter|circumcenter|symmedian\s+point|nine-point\s+center|de\s+longchamps\s+point|bevan\s+point|X\(\d+\))(?:\s+|-)+of(?:\s+|-)+(?:the\s+)?[a-z\-]+\s+triangle",
+                    title_str,
                     re.IGNORECASE,
                 ):
+                    _add_polygon(model, list(t1), classes=["secondary"])
                     if "circumcenter" in title_str.lower():
                         _add_circle(model, target_pt, t1[0], ID=f"circumcircle_of_{t1_key}", classes=["secondary_circle"])
                     for p1 in t1:
                         _add_line(model, p1, target_pt, classes=["bisector"])
                     constructed_primary = True
-                elif re.search(r"\b(?:concur\s+in|perspector)\b", combined_primary_text, re.IGNORECASE):
-                    # Perspector of ABC and T1
+                elif all(
+                    _pt_on_line(xn, yn, float(v_pt.x), float(v_pt.y), float(p1.x), float(p1.y))
+                    for v_pt, p1 in zip((A, B, C), t1)
+                ):
+                    _add_polygon(model, list(t1), classes=["secondary"])
                     for v_pt, p1 in zip((A, B, C), t1):
                         _add_line(model, v_pt, p1, classes=["bisector"])
                     constructed_primary = True
+                else:
+                    for pt_rm in constructed_triangles.pop(t1_key, ()):
+                        model.pop(pt_rm, None)
+                    if t1_key == "orthic_of_orthic":
+                        for pt_rm in constructed_triangles.pop("orthic", ()):
+                            model.pop(pt_rm, None)
 
-    # General Rule B: Explicit Midpoint, Reflection, Harmonic Conjugate, Complement, Anticomplement, Circle Inverse, Antipode
+    # General Rule B: Explicit Title / Canonical Relation Operators
+    # (Midpoint, Reflection, Harmonic Conjugate, Complement, Anticomplement, Circle Inverse, Antipode,
+    #  Crosspoint, Cevapoint, Ceva/Beth/Line Conjugate, Isogonal/Isotomic Conjugate)
     if not constructed_primary:
-        # Midpoint of X(i) and X(j) / Reflection of X(i) in X(j)
         m_pair = re.search(
-            r"\b(?:midpoint\s+of|reflection\s+of)\s+X\((\d+)\)\s+(?:and|in)\s+X\((\d+)\)",
-            title_str + " " + " ".join((center_data.get("relations") or [])[:2]),
+            r"\b(?:midpoint|reflection)\s+of\s+(X\(\d+\)|[a-z\-\s]+?)\s+(?:and|in)\s+(X\(\d+\)|[a-z\-\s]+?)(?:\s*$|\s*\.)",
+            title_and_rels,
             re.IGNORECASE,
         )
-        if not m_pair:
-            # Also check named classical centers in title, e.g. "REFLECTION OF INCENTER IN FEUERBACH POINT"
-            name_to_num = {
-                "incenter": 1, "centroid": 2, "circumcenter": 3, "orthocenter": 4,
-                "nine-point center": 5, "symmedian point": 6, "gergonne point": 7,
-                "nagel point": 8, "mittenpunkt": 9, "spieker center": 10, "feuerbach point": 11,
-            }
-            m_named = re.search(
-                r"\b(?:midpoint|reflection)\s+of\s+([a-z\-\s]+?)\s+(?:and|in)\s+([a-z\-\s]+)$",
-                title_str.strip(),
-                re.IGNORECASE,
-            )
-            if m_named:
-                n1 = name_to_num.get(m_named.group(1).strip().lower())
-                n2 = name_to_num.get(m_named.group(2).strip().lower())
-                if n1 and n2:
-                    add_primary_central_line(n1, n2)
-                    constructed_primary = True
-        else:
-            i_k, j_k = int(m_pair.group(1)), int(m_pair.group(2))
-            if i_k in registry.xy_cache and j_k in registry.xy_cache:
+        if m_pair:
+            i_k = _resolve_center_token(m_pair.group(1))
+            j_k = _resolve_center_token(m_pair.group(2))
+            if i_k and j_k and i_k in registry.xy_cache and j_k in registry.xy_cache:
                 add_primary_central_line(i_k, j_k)
                 constructed_primary = True
 
     if not constructed_primary:
-        # Harmonic conjugate: {X(i),X(j)}-harmonic conjugate of X(k)
-        m_harm = re.search(
-            r"\{\s*X\((\d+)\)\s*,\s*X\((\d+)\)\s*\}\s*-?\s*harmonic\s+conjugate\s+of\s+X\((\d+)\)",
-            combined_primary_text,
-            re.IGNORECASE,
-        )
-        if m_harm:
-            i_k, j_k, k_k = int(m_harm.group(1)), int(m_harm.group(2)), int(m_harm.group(3))
-            get_or_add_center_pt(k_k)
-            add_primary_central_line(i_k, j_k)
-            if re.search(r"\bconcur\s+in\b", note0, re.IGNORECASE):
-                add_cevians_for_center(num, prefix="P")
-            constructed_primary = True
-
-    if not constructed_primary:
-        # Complement / Anticomplement of X(k)
         m_comp = re.search(
-            r"\b(anticomplement|complement)\s+of\s+(?:X\((\d+)\)|feuerbach\s+point|incenter|orthocenter|circumcenter|symmedian\s+point)",
-            title_str + " " + " ".join((center_data.get("relations") or [])[:2]),
+            r"\b(anticomplement|complement)\s+of\s+(X\(\d+\)|feuerbach\s+point|incenter|orthocenter|circumcenter|symmedian\s+point|gergonne\s+point|nagel\s+point)",
+            title_and_rels,
             re.IGNORECASE,
         )
         if m_comp:
             kind_c = m_comp.group(1).lower()
-            k_str = m_comp.group(2)
-            k_num = int(k_str) if k_str else (11 if "feuerbach" in title_str.lower() else 1)
-            if k_num in registry.xy_cache:
+            k_num = _resolve_center_token(m_comp.group(2))
+            if k_num and k_num in registry.xy_cache:
                 add_named_triangle("anticomplementary" if kind_c == "anticomplement" else "medial", draw_polygon=True)
                 add_primary_central_line(2, k_num)
                 constructed_primary = True
 
     if not constructed_primary:
-        # Inverse in circumcircle / incircle / nine-point circle
         m_inv = re.search(
-            r"\binverse\s*-?\s*in\s*-?\s*(circumcircle|incircle|nine-point\s+circle)\s+of\s+(?:X\((\d+)\)|incenter|centroid|orthocenter|symmedian\s+point)",
-            title_str + " " + " ".join((center_data.get("relations") or [])[:2]),
+            r"\binverse\s*-?\s*in\s*-?\s*(circumcircle|incircle|nine-point\s+circle)\s+of\s+(X\(\d+\)|incenter|centroid|orthocenter|circumcenter|symmedian\s+point|feuerbach\s+point)",
+            title_and_rels,
             re.IGNORECASE,
         )
         if m_inv:
             c_kind = m_inv.group(1).lower()
-            k_num = int(m_inv.group(2)) if m_inv.group(2) else 1
+            k_num = _resolve_center_token(m_inv.group(2)) or 1
             if "circumcircle" in c_kind:
                 add_circumcircle()
                 add_primary_central_line(3, k_num)
@@ -1625,7 +1795,6 @@ def build_center_model(
             constructed_primary = True
 
     if not constructed_primary:
-        # Antipode on circumcircle or nine-point circle
         if "antipode" in title_str.lower() or num in {98, 99, 100, 103, 104, 110, 111, 113, 114, 115, 119}:
             if num in {115, 119} or "nine-point" in combined_primary_text.lower() or "feuerbach antipode" in title_str.lower():
                 add_nine_point_circle()
@@ -1633,75 +1802,144 @@ def build_center_model(
                     add_primary_central_line(5, 11)
             else:
                 add_circumcircle()
-                m_ant = re.search(r"\bantipode\s+of\s+X\((\d+)\)", title_str, re.IGNORECASE)
+                m_ant = re.search(r"\bantipode\s+of\s+(X\(\d+\)|[a-z\-\s]+)", title_str, re.IGNORECASE)
                 if m_ant:
-                    add_primary_central_line(3, int(m_ant.group(1)))
+                    k_ant = _resolve_center_token(m_ant.group(1))
+                    if k_ant:
+                        add_primary_central_line(3, k_ant)
                 elif num == 98:
                     add_primary_central_line(3, 99)
                 elif num == 99:
                     add_primary_central_line(3, 98)
-            if re.search(r"\bconcur\s+in\b|\bperspector\b", note0, re.IGNORECASE):
-                add_cevians_for_center(num, prefix="P")
             constructed_primary = True
 
-    # General Rule C: Cevian Concurrence ("concur in X(n)", Crosspoint, Cevapoint, Ceva/Beth/Line Conjugate, Isogonal/Isotomic Conjugate)
     if not constructed_primary:
         m_pair_op = re.search(
-            r"\b(?:crosspoint|cevapoint)\s+of\s+X\((\d+)\)\s+and\s+X\((\d+)\)|X\((\d+)\)\s*-\s*(?:ceva|beth|line|cross)\s+conjugate\s+of\s+X\((\d+)\)",
-            title_str + " " + " ".join((center_data.get("relations") or [])[:2]),
+            r"\b(?:crosspoint|cevapoint)\s+of\s+(X\(\d+\)|[a-z\-\s]+?)\s+and\s+(X\(\d+\)|[a-z\-\s]+?)(?:\s*$|\s*\.)|(X\(\d+\))\s*-\s*(?:ceva|beth|line|cross)\s+conjugate\s+of\s+(X\(\d+\))",
+            title_and_rels,
             re.IGNORECASE,
         )
         if m_pair_op:
             g = m_pair_op.groups()
-            i_k = int(g[0] or g[2])
-            j_k = int(g[1] or g[3])
-            get_or_add_center_pt(i_k)
-            get_or_add_center_pt(j_k)
-            add_cevians_for_center(num, prefix="P")
-            constructed_primary = True
+            i_k = _resolve_center_token(g[0] or g[2] or "")
+            j_k = _resolve_center_token(g[1] or g[3] or "")
+            if i_k and j_k:
+                get_or_add_center_pt(i_k)
+                get_or_add_center_pt(j_k)
+                for p_i, p_j in line_pairs[:2]:
+                    add_primary_central_line(p_i, p_j)
+                constructed_primary = True
 
     if not constructed_primary:
         m_conj = re.search(
-            r"\b(isogonal|isotomic)\s+conjugate\s+of\s+X\((\d+)\)",
-            title_str + " " + " ".join((center_data.get("relations") or [])[:2]),
+            r"\b(isogonal|isotomic)\s+conjugate\s+of\s+(X\(\d+\)|[a-z\-\s]+?)(?:\s*$|\s*\.)",
+            title_and_rels,
             re.IGNORECASE,
         )
         if m_conj:
-            k_num = int(m_conj.group(2))
-            if k_num in registry.xy_cache and k_num != num:
+            k_num = _resolve_center_token(m_conj.group(2))
+            if k_num and k_num in registry.xy_cache and k_num != num:
                 get_or_add_center_pt(k_num)
-            add_cevians_for_center(num, prefix="P")
-            constructed_primary = True
+                for p_i, p_j in line_pairs[:2]:
+                    add_primary_central_line(p_i, p_j)
+                constructed_primary = True
 
     if not constructed_primary:
-        if re.search(r"\bconcur\s+in\s+X\(\d+\)|\bperspector\b|\bcevian\b", combined_primary_text, re.IGNORECASE):
-            add_cevians_for_center(num, prefix="P")
+        m_harm = re.search(
+            r"\{\s*X\((\d+)\)\s*,\s*X\((\d+)\)\s*\}\s*-?\s*harmonic\s+conjugate\s+of\s+X\((\d+)\)",
+            combined_primary_text,
+            re.IGNORECASE,
+        )
+        if m_harm:
+            i_k, j_k, k_k = int(m_harm.group(1)), int(m_harm.group(2)), int(m_harm.group(3))
+            get_or_add_center_pt(k_k)
+            add_primary_central_line(i_k, j_k)
             constructed_primary = True
 
-    # General Rule D: Euler Line points & Circle Centers
+    # General Rule A2: Named triangle(s) in primary note `note0`, with strict intermediate-step & collinearity verification
+    if not constructed_primary and note0:
+        has_unconstructed_intermediate = bool(
+            re.search(
+                r"\bLet\s+(?:[A-Z]''|L_[abcABC]|O_[abcABC]|[A-Z]_[23])\b|\b(?:Euler\s+line|nine-point\s+center|radical\s+axis|poles)\s+of\b",
+                note0,
+                re.IGNORECASE,
+            )
+        )
+        if not has_unconstructed_intermediate:
+            matched_tris: list[str] = []
+            for t_key, pat in _NAMED_TRIANGLE_PATTERNS:
+                if pat.search(note0) and t_key not in matched_tris:
+                    matched_tris.append(t_key)
+
+            if len(matched_tris) >= 2:
+                t1 = add_named_triangle(matched_tris[0], draw_polygon=False)
+                t2 = add_named_triangle(matched_tris[1], draw_polygon=False)
+                if t1 and t2 and all(
+                    _pt_on_line(xn, yn, float(p1.x), float(p1.y), float(p2.x), float(p2.y))
+                    for p1, p2 in zip(t1, t2)
+                ):
+                    _add_polygon(model, list(t1), classes=["secondary"])
+                    _add_polygon(model, list(t2), classes=["secondary"])
+                    for p1, p2 in zip(t1, t2):
+                        _add_line(model, p1, p2, classes=["bisector"])
+                    constructed_primary = True
+                else:
+                    # Remove tentative points if they did not form a valid perspectivity at X(num)
+                    for t_k in matched_tris[:2]:
+                        for pt_rm in constructed_triangles.pop(t_k, ()):
+                            model.pop(pt_rm, None)
+            elif len(matched_tris) == 1:
+                t1_key = matched_tris[0]
+                t1 = add_named_triangle(t1_key, draw_polygon=False)
+                target_pt = get_or_add_center_pt(num, is_target=True)
+                if t1 and target_pt is not None:
+                    if re.search(
+                        r"\b(?:centroid|orthocenter|incenter|circumcenter|symmedian\s+point|nine-point\s+center|X\(\d+\))(?:\s+|-)+of(?:\s+|-)+(?:the\s+)?[a-z\-]+\s+triangle",
+                        note0,
+                        re.IGNORECASE,
+                    ):
+                        _add_polygon(model, list(t1), classes=["secondary"])
+                        for p1 in t1:
+                            _add_line(model, p1, target_pt, classes=["bisector"])
+                        constructed_primary = True
+                    elif all(
+                        _pt_on_line(xn, yn, float(v_pt.x), float(v_pt.y), float(p1.x), float(p1.y))
+                        for v_pt, p1 in zip((A, B, C), t1)
+                    ):
+                        _add_polygon(model, list(t1), classes=["secondary"])
+                        for v_pt, p1 in zip((A, B, C), t1):
+                            _add_line(model, v_pt, p1, classes=["bisector"])
+                        constructed_primary = True
+                    else:
+                        for pt_rm in constructed_triangles.pop(t1_key, ()):
+                            model.pop(pt_rm, None)
+
+    # General Rule C: Explicit Sideline Cevian Definition ("cevian triangle" or "A', B', C' on BC, CA, AB ... concur in X(n)")
+    if not constructed_primary:
+        if re.search(
+            r"\bcevian\s+triangle\b|\bon\s+(?:the\s+)?(?:sidelines|sides)\s+BC\s*,\s*CA\s*,\s*AB\b.*\bconcur\s+in\s+X\(\d+\)",
+            combined_primary_text,
+            re.IGNORECASE | re.DOTALL,
+        ):
+            add_cevians_for_center(num, prefix="P", draw_polygon=("cevian triangle" in combined_primary_text.lower()))
+            constructed_primary = True
+
+    # General Rule D: Euler Line points
     if not constructed_primary:
         if any("As a point on the Euler line" in n for n in notes_list):
             add_primary_central_line(2, 3)
             get_or_add_center_pt(4)
-            # Add one intersecting line that locates X(n) on the Euler line
             for i_num, j_num in line_pairs:
                 if {i_num, j_num} <= {2, 3, 4, 5, 20, 30}:
                     continue
                 add_primary_central_line(i_num, j_num)
                 break
-            else:
-                add_cevians_for_center(num, prefix="P")
             constructed_primary = True
 
-    # General Rule E: Fallback to 2 intersecting central lines (or 3 cevians)
+    # General Rule E: Fallback to 2 intersecting central lines (never unrelated P_a, P_b, P_c cevians)
     if not constructed_primary:
-        if len(line_pairs) >= 2:
-            for i_num, j_num in line_pairs[:2]:
-                add_primary_central_line(i_num, j_num)
-        else:
-            add_cevians_for_center(num, prefix="P")
-            for i_num, j_num in line_pairs[:1]:
-                add_primary_central_line(i_num, j_num)
+        for i_num, j_num in line_pairs[:2]:
+            add_primary_central_line(i_num, j_num)
 
     # Ensure target center X(n) is added as a primary (non-incident) point
     target_pt = get_or_add_center_pt(num, is_target=True, incident=False)
@@ -1897,7 +2135,7 @@ def generate_center_model_py(
                 elif c_num == 11:
                     extra = ", draw_circles=True"
             body_lines.append(
-                f'    {var_name} = {op_fn}(model, A, B, C, ID="X({c_num})", classes={cls_arg}{extra})'
+                f'    {var_name} = {op_fn}(model, A, B, C, ID="X_{c_num}", classes={cls_arg}{extra})'
             )
             defined_vars.add(c_num)
             return var_name
@@ -1910,7 +2148,7 @@ def generate_center_model_py(
                 eval_fn = "eval_trilinear_point" if kind == "trilinear" else "eval_barycentric_point"
                 ops_imports.add(eval_fn)
                 body_lines.append(
-                    f'    {var_name} = {eval_fn}(model, A, B, C, {expr_str!r}, ID="X({c_num})", classes={cls_arg})'
+                    f'    {var_name} = {eval_fn}(model, A, B, C, {expr_str!r}, ID="X_{c_num}", classes={cls_arg})'
                 )
                 defined_vars.add(c_num)
                 return var_name
@@ -1918,7 +2156,7 @@ def generate_center_model_py(
         bary = registry.bary_cache.get(c_num, (1.0, 1.0, 1.0))
         ops_imports.add("point_from_barycentrics")
         body_lines.append(
-            f'    {var_name} = point_from_barycentrics(model, A, B, C, {bary[0]:.8g}, {bary[1]:.8g}, {bary[2]:.8g}, ID="X({c_num})", classes={cls_arg})'
+            f'    {var_name} = point_from_barycentrics(model, A, B, C, {bary[0]:.8g}, {bary[1]:.8g}, {bary[2]:.8g}, ID="X_{c_num}", classes={cls_arg})'
         )
         defined_vars.add(c_num)
         return var_name
@@ -1935,7 +2173,7 @@ def generate_center_model_py(
     line_pairs.sort(key=lambda pair: (max(pair) > max(num, 6), pair[0] + pair[1]))
     chosen_lines = line_pairs[:3]
 
-    # 1. Construct primary target center X(num)
+    # 1. Construct primary target center X_num
     target_var = f"X_{num}"
     used_primary_lines: set[tuple[int, int]] = set()
     if num in _CLASSICAL_CONSTRUCTOR_NAMES:
@@ -1945,7 +2183,7 @@ def generate_center_model_py(
         ops_imports.update({tri_fn, "perspector"})
         body_lines.append(f"    Ea, Eb, Ec = {tri_fn}(model, A, B, C)")
         body_lines.append(
-            f'    {target_var} = perspector(model, A, B, C, Ea, Eb, Ec, ID="X({num})", classes=["selected", "target"])'
+            f'    {target_var} = perspector(model, A, B, C, Ea, Eb, Ec, ID="X_{num}", classes=["selected", "target"])'
         )
         defined_vars.add(num)
     elif num in {17, 18}:
@@ -1953,7 +2191,7 @@ def generate_center_model_py(
         ops_imports.update({tri_fn, "perspector"})
         body_lines.append(f"    Na, Nb, Nc = {tri_fn}(model, A, B, C)")
         body_lines.append(
-            f'    {target_var} = perspector(model, A, B, C, Na, Nb, Nc, ID="X({num})", classes=["selected", "target"])'
+            f'    {target_var} = perspector(model, A, B, C, Na, Nb, Nc, ID="X_{num}", classes=["selected", "target"])'
         )
         defined_vars.add(num)
     else:
@@ -1964,15 +2202,15 @@ def generate_center_model_py(
             ops_imports.add(op_name)
             if op_name in {"midpoint", "reflection_in_point"}:
                 body_lines.append(
-                    f'    {target_var} = {op_name}(model, {arg_vars[0]}, {arg_vars[1]}, ID="X({num})", classes=["selected", "target"], guide=False)'
+                    f'    {target_var} = {op_name}(model, {arg_vars[0]}, {arg_vars[1]}, ID="X_{num}", classes=["selected", "target"], guide=False)'
                 )
             elif len(arg_vars) == 1:
                 body_lines.append(
-                    f'    {target_var} = {op_name}(model, A, B, C, {arg_vars[0]}, ID="X({num})", classes=["selected", "target"])'
+                    f'    {target_var} = {op_name}(model, A, B, C, {arg_vars[0]}, ID="X_{num}", classes=["selected", "target"])'
                 )
             else:
                 body_lines.append(
-                    f'    {target_var} = {op_name}(model, A, B, C, {arg_vars[0]}, {arg_vars[1]}, ID="X({num})", classes=["selected", "target"])'
+                    f'    {target_var} = {op_name}(model, A, B, C, {arg_vars[0]}, {arg_vars[1]}, ID="X_{num}", classes=["selected", "target"])'
                 )
             defined_vars.add(num)
         else:
@@ -1982,7 +2220,7 @@ def generate_center_model_py(
                 eval_fn = "eval_trilinear_point" if kind == "trilinear" else "eval_barycentric_point"
                 ops_imports.add(eval_fn)
                 body_lines.append(
-                    f'    {target_var} = {eval_fn}(model, A, B, C, {expr_str!r}, ID="X({num})", classes=["selected", "target"])'
+                    f'    {target_var} = {eval_fn}(model, A, B, C, {expr_str!r}, ID="X_{num}", classes=["selected", "target"])'
                 )
                 defined_vars.add(num)
             elif len(chosen_lines) >= 2:
@@ -1995,7 +2233,7 @@ def generate_center_model_py(
                 body_lines.append(f"    central_line(model, {vi1}, {vj1}, {i1}, {j1})")
                 body_lines.append(f"    central_line(model, {vi2}, {vj2}, {i2}, {j2})")
                 body_lines.append(
-                    f'    {target_var} = intersect_lines(model, {vi1}, {vj1}, {vi2}, {vj2}, ID="X({num})", classes=["selected", "target"])'
+                    f'    {target_var} = intersect_lines(model, {vi1}, {vj1}, {vi2}, {vj2}, ID="X_{num}", classes=["selected", "target"])'
                 )
                 used_primary_lines.add((i1, j1))
                 used_primary_lines.add((i2, j2))

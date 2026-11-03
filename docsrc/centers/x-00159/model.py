@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(159) = X(9)-OF-TANGENTIAL-TRIANGLE."""
+"""GEOMETOR construction model for X_159 = X_9-OF-TANGENTIAL-TRIANGLE."""
 
 from __future__ import annotations
 
@@ -23,16 +23,16 @@ from geometor.etc.render import write_center_svg
 def construct_x_00159(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(159) = X(9)-OF-TANGENTIAL-TRIANGLE on reference triangle ABC."""
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center"])
-    X_25 = eval_trilinear_point(model, A, B, C, 'sin(A)*tan(A)', ID="X(25)", classes=["center"])
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
-    X_66 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(4) + c**(4) - a**(4))', ID="X(66)", classes=["center"])
+    """Construct X_159 = X_9-OF-TANGENTIAL-TRIANGLE on reference triangle ABC."""
+    X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center"])
+    X_25 = eval_trilinear_point(model, A, B, C, 'sin(A)*tan(A)', ID="X_25", classes=["center"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
+    X_66 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(4) + c**(4) - a**(4))', ID="X_66", classes=["center"])
     central_line(model, X_6, X_25, 6, 25)
     central_line(model, X_3, X_66, 3, 66)
-    X_159 = intersect_lines(model, X_6, X_25, X_3, X_66, ID="X(159)", classes=["selected", "target"])
-    X_22 = eval_trilinear_point(model, A, B, C, 'a*(b**(4) + c**(4) - a**(4))', ID="X(22)", classes=["center", "incident"])
-    X_69 = eval_trilinear_point(model, A, B, C, '(cos(A))/a**(2)', ID="X(69)", classes=["center", "incident"])
+    X_159 = intersect_lines(model, X_6, X_25, X_3, X_66, ID="X_159", classes=["selected", "target"])
+    X_22 = eval_trilinear_point(model, A, B, C, 'a*(b**(4) + c**(4) - a**(4))', ID="X_22", classes=["center", "incident"])
+    X_69 = eval_trilinear_point(model, A, B, C, '(cos(A))/a**(2)', ID="X_69", classes=["center", "incident"])
     central_line(model, X_22, X_69, 22, 69, incident=True)
     return promote_point_to_top(model, X_159)
 
@@ -41,8 +41,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(159) on the given reference triangle."""
-    model = create_model('X(159) = X(9)-OF-TANGENTIAL-TRIANGLE')
+    """Build a `geometor.model.Model` for X_159 on the given reference triangle."""
+    model = create_model('X_159 = X_9-OF-TANGENTIAL-TRIANGLE')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00159(model, A, B, C)
     return model

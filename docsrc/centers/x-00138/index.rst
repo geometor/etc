@@ -1,22 +1,31 @@
 :order: 138
 :type: center
-:canonical_id: X(138)
-:dependencies: X(51), X(53), X(111), X(122), X(130), X(137), X(233)
+:canonical_id: X_138
+:subtitle: X_111-OF-ORTHIC-TRIANGLE
+:dependencies: X_51, X_53, X_111, X_122, X_130, X_137, X_233
 
-.. _X(138):
+.. _X_138:
 
-X(138) = X(111)-OF-ORTHIC-TRIANGLE
-==================================
+X_138
+=====
+
+.. rubric:: X_111-OF-ORTHIC-TRIANGLE
 
 .. enunciation::
 
-   :ref:`X(138) <X(138)>` = :ref:`X(111) <X(111)>`-of-:term:`orthic triangle <orthic-triangle>`
+   :ref:`X_138 <X_138>` = :ref:`X_111 <X_111>`-of-:term:`orthic triangle <orthic-triangle>`
 
 .. figure:: x-00138.svg
-   :alt: X(138) = X(111)-OF-ORTHIC-TRIANGLE
+   :alt: X_138 — X_111-OF-ORTHIC-TRIANGLE
    :align: center
 
-   **X(138) = X(111)-OF-ORTHIC-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_138** (*X_111-OF-ORTHIC-TRIANGLE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Derived Triangle:** :term:`Orthic Triangle <orthic triangle>` :g:`△H_aH_bH_c << H_a H_b H_c >>` — vertices :g:`H_a <H_a>`, :g:`H_b <H_b>`, :g:`H_c <H_c>` (Pedal triangle of Orthocenter X_4 (altitude feet))
+   * **Concurrence Lines:** :g:`H_a–X_138 <[ H_a X_138 ]>`, :g:`H_b–X_138 <[ H_b X_138 ]>`, :g:`H_c–X_138 <[ H_c X_138 ]>` concurring at :g:`X_138 <X_138>`
 
 .. signature:: center
 
@@ -26,19 +35,19 @@ X(138) = X(111)-OF-ORTHIC-TRIANGLE
 
 .. container:: note-item
 
-   :ref:`X(138) <X(138)>` lies on the nine-point circle
+   :ref:`X_138 <X_138>` lies on the nine-point circle
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines
    :class: line-catalog
 
-   {:ref:`51 <X(51)>`, :ref:`130 <X(130)>`}, {:ref:`53 <X(53)>`, :ref:`137 <X(137)>`}, {:ref:`122 <X(122)>`, :ref:`233 <X(233)>`}
+   {:ref:`51 <X_51>`, :ref:`130 <X_130>`}, {:ref:`53 <X_53>`, :ref:`137 <X_137>`}, {:ref:`122 <X_122>`, :ref:`233 <X_233>`}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(138) <X(138)>` = :ref:`X(111) <X(111)>`-of-orthic triangle
-   * :ref:`X(138) <X(138)>` = Λ(:ref:`X(51) <X(51)>`, :ref:`X(53) <X(53)>`), wrt orthic triangle
+   * :ref:`X_138 <X_138>` = :ref:`X_111 <X_111>`-of-orthic triangle
+   * :ref:`X_138 <X_138>` = Λ(:ref:`X_51 <X_51>`, :ref:`X_53 <X_53>`), wrt orthic triangle
 
 .. toctree::
    :hidden:

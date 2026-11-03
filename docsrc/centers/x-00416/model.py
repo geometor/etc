@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(416) = X(3)-HIRST INVERSE OF X(21)."""
+"""GEOMETOR construction model for X_416 = X_3-HIRST INVERSE OF X_21."""
 
 from __future__ import annotations
 
@@ -22,10 +22,10 @@ from geometor.etc.render import write_center_svg
 def construct_x_00416(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(416) = X(3)-HIRST INVERSE OF X(21) on reference triangle ABC."""
-    X_416 = point_from_barycentrics(model, A, B, C, 0.38368056, 0.36458333, 0.25173611, ID="X(416)", classes=["selected", "target"])
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
+    """Construct X_416 = X_3-HIRST INVERSE OF X_21 on reference triangle ABC."""
+    X_416 = point_from_barycentrics(model, A, B, C, 0.38368056, 0.36458333, 0.25173611, ID="X_416", classes=["selected", "target"])
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
     return promote_point_to_top(model, X_416)
 
@@ -34,8 +34,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(416) on the given reference triangle."""
-    model = create_model('X(416) = X(3)-HIRST INVERSE OF X(21)')
+    """Build a `geometor.model.Model` for X_416 on the given reference triangle."""
+    model = create_model('X_416 = X_3-HIRST INVERSE OF X_21')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00416(model, A, B, C)
     return model

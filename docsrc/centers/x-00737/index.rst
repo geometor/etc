@@ -1,22 +1,30 @@
 :order: 737
 :type: center
-:canonical_id: X(737)
-:dependencies: X(736), X(35542)
+:canonical_id: X_737
+:subtitle: EVEN (- 2, 4) CIRCUMCIRCLE POINT
+:dependencies: X_736, X_35542
 
-.. _X(737):
+.. _X_737:
 
-X(737) = EVEN (- 2, 4) CIRCUMCIRCLE POINT
-=========================================
+X_737
+=====
+
+.. rubric:: EVEN (- 2, 4) CIRCUMCIRCLE POINT
 
 .. enunciation::
 
-   :ref:`X(737) <X(737)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(736) <X(736)>`
+   :ref:`X_737 <X_737>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_736 <X_736>`
 
 .. figure:: x-00737.svg
-   :alt: X(737) = EVEN (- 2, 4) CIRCUMCIRCLE POINT
+   :alt: X_737 — EVEN (- 2, 4) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(737) = EVEN (- 2, 4) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_737** (*EVEN (- 2, 4) CIRCUMCIRCLE POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Related Centers:** :g:`X_736 <X_736>` (:ref:`EVEN (- 2, 4) INFINITY POINT <X_736>`)
 
 .. signature:: center
 
@@ -26,13 +34,13 @@ X(737) = EVEN (- 2, 4) CIRCUMCIRCLE POINT
 
 .. container:: note-item
 
-   :ref:`X(737) <X(737)>` lies on the circumcircle.
+   :ref:`X_737 <X_737>` lies on the circumcircle.
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(737) <X(737)>` = isogonal conjugate of :ref:`X(736) <X(736)>`
-   * :ref:`X(737) <X(737)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(35542)
+   * :ref:`X_737 <X_737>` = isogonal conjugate of :ref:`X_736 <X_736>`
+   * :ref:`X_737 <X_737>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_35542
 
 .. toctree::
    :hidden:

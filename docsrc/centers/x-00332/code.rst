@@ -1,18 +1,21 @@
-:canonical_id: X(332)
+:canonical_id: X_332
 :type: code
+:subtitle: ISOTOMIC CONJUGATE OF X_225
 
-X(332) = ISOTOMIC CONJUGATE OF X(225) — Code
-============================================
+X_332
+=====
+
+.. rubric:: ISOTOMIC CONJUGATE OF X_225
 
 .. enunciation::
 
-   :ref:`X(332) <X(332)>` = :term:`isogonal conjugate <isogonal-conjugate>` of polar conjugate of X(28660)
+   :ref:`X_332 <X_332>` is the :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_225 <X_225>`.
 
 .. figure:: x-00332.svg
-   :alt: X(332) = ISOTOMIC CONJUGATE OF X(225)
+   :alt: X_332 — ISOTOMIC CONJUGATE OF X_225
    :align: center
 
-   **X(332) = ISOTOMIC CONJUGATE OF X(225)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_332** (*ISOTOMIC CONJUGATE OF X_225*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

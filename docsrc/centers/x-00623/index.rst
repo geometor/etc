@@ -1,22 +1,31 @@
 :order: 623
 :type: center
-:canonical_id: X(623)
-:dependencies: X(2), X(3), X(5), X(13), X(14), X(15), X(16), X(17), X(18), X(30), X(83), X(141), X(298), X(300), X(302), X(316), X(396), X(533), X(618), X(621), X(624), X(625), X(629), X(633)
+:canonical_id: X_623
+:subtitle: COMPLEMENT OF X_15
+:dependencies: X_2, X_3, X_5, X_13, X_14, X_15, X_16, X_17, X_18, X_30, X_83, X_141, X_298, X_300, X_302, X_316, X_396, X_533, X_618, X_621, X_624, X_625, X_629, X_633
 
-.. _X(623):
+.. _X_623:
 
-X(623) = COMPLEMENT OF X(15)
-============================
+X_623
+=====
+
+.. rubric:: COMPLEMENT OF X_15
 
 .. enunciation::
 
-   :ref:`X(623) <X(623)>` = reflection of :ref:`X(624) <X(624)>` in :ref:`X(625) <X(625)>`
+   :ref:`X_623 <X_623>` is the :term:`complement <complement>` of :ref:`X_15 <X_15>`.
 
 .. figure:: x-00623.svg
-   :alt: X(623) = COMPLEMENT OF X(15)
+   :alt: X_623 — COMPLEMENT OF X_15
    :align: center
 
-   **X(623) = COMPLEMENT OF X(15)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_623** (*COMPLEMENT OF X_15*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{624, 625} <{ 624, 625 }>`
+   * **Related Centers:** :g:`X_624 <X_624>` (:ref:`COMPLEMENT OF X(16) <X_624>`), :g:`X_625 <X_625>` (:ref:`MIDPOINT OF X(623) AND X(624) <X_625>`)
 
 .. signature:: center
 
@@ -33,18 +42,18 @@ X(623) = COMPLEMENT OF X(15)
    :badge: 9 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`14 <X(14)>`}, {:ref:`3 <X(3)>`, :ref:`629 <X(629)>`}, {:ref:`5 <X(5)>`, :ref:`141 <X(141)>`}, {:ref:`13 <X(13)>`, :ref:`298 <X(298)>`}, {:ref:`16 <X(16)>`, :ref:`302 <X(302)>`}, {:ref:`17 <X(17)>`, :ref:`633 <X(633)>`}, {:ref:`18 <X(18)>`, :ref:`83 <X(83)>`}, {:ref:`30 <X(30)>`, :ref:`618 <X(618)>`}, {:ref:`396 <X(396)>`, :ref:`533 <X(533)>`}
+   {:ref:`2 <X_2>`, :ref:`14 <X_14>`}, {:ref:`3 <X_3>`, :ref:`629 <X_629>`}, {:ref:`5 <X_5>`, :ref:`141 <X_141>`}, {:ref:`13 <X_13>`, :ref:`298 <X_298>`}, {:ref:`16 <X_16>`, :ref:`302 <X_302>`}, {:ref:`17 <X_17>`, :ref:`633 <X_633>`}, {:ref:`18 <X_18>`, :ref:`83 <X_83>`}, {:ref:`30 <X_30>`, :ref:`618 <X_618>`}, {:ref:`396 <X_396>`, :ref:`533 <X_533>`}
 
 .. collapse:: Functional Relations
    :badge: 7 relations
 
-   * :ref:`X(623) <X(623)>` = midpoint of X(i) and X(j) for these (i,j): (:ref:`13 <X(13)>`, :ref:`298 <X(298)>`), (:ref:`15 <X(15)>`, :ref:`621 <X(621)>`), (:ref:`16 <X(16)>`, :ref:`316 <X(316)>`)
-   * :ref:`X(623) <X(623)>` = reflection of :ref:`X(624) <X(624)>` in :ref:`X(625) <X(625)>`
-   * :ref:`X(623) <X(623)>` = inverse-in-nine-point-circle of :ref:`X(624) <X(624)>`
-   * :ref:`X(623) <X(623)>` = :term:`complement <complement>` of :ref:`X(15) <X(15)>`
-   * :ref:`X(623) <X(623)>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X(618) <X(618)>`
-   * :ref:`X(623) <X(623)>` = :term:`crosspoint <crosspoint>` of :ref:`X(2) <X(2)>` and :ref:`X(300) <X(300)>`
-   * :ref:`X(623) <X(623)>` = intersection of diagonals of trapezoid PU(5)PU(11); i.e., the lines P(5)P(11) and U(5)U(11))
+   * :ref:`X_623 <X_623>` = midpoint of X_i and X_j for these (i,j): (:ref:`13 <X_13>`, :ref:`298 <X_298>`), (:ref:`15 <X_15>`, :ref:`621 <X_621>`), (:ref:`16 <X_16>`, :ref:`316 <X_316>`)
+   * :ref:`X_623 <X_623>` = reflection of :ref:`X_624 <X_624>` in :ref:`X_625 <X_625>`
+   * :ref:`X_623 <X_623>` = inverse-in-nine-point-circle of :ref:`X_624 <X_624>`
+   * :ref:`X_623 <X_623>` = complement of :ref:`X_15 <X_15>`
+   * :ref:`X_623 <X_623>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X_618 <X_618>`
+   * :ref:`X_623 <X_623>` = :term:`crosspoint <crosspoint>` of :ref:`X_2 <X_2>` and :ref:`X_300 <X_300>`
+   * :ref:`X_623 <X_623>` = intersection of diagonals of trapezoid PU(5)PU(11); i.e., the lines P(5)P(11) and U(5)U(11))
 
 .. toctree::
    :hidden:

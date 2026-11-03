@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(981) = ISOGONAL CONJUGATE OF X(980)."""
+"""GEOMETOR construction model for X_981 = ISOGONAL CONJUGATE OF X_980."""
 
 from __future__ import annotations
 
@@ -24,17 +24,17 @@ from geometor.etc.render import write_center_svg
 def construct_x_00981(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(981) = ISOGONAL CONJUGATE OF X(980) on reference triangle ABC."""
-    X_980 = point_from_barycentrics(model, A, B, C, 0.29311432, 0.33946795, 0.36741773, ID="X(980)", classes=["center"])
-    X_981 = isogonal_conjugate(model, A, B, C, X_980, ID="X(981)", classes=["selected", "target"])
-    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X(21)", classes=["center", "incident"])
-    X_32 = eval_trilinear_point(model, A, B, C, 'a**(3)', ID="X(32)", classes=["center", "incident"])
+    """Construct X_981 = ISOGONAL CONJUGATE OF X_980 on reference triangle ABC."""
+    X_980 = point_from_barycentrics(model, A, B, C, 0.29311432, 0.33946795, 0.36741773, ID="X_980", classes=["center"])
+    X_981 = isogonal_conjugate(model, A, B, C, X_980, ID="X_981", classes=["selected", "target"])
+    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X_21", classes=["center", "incident"])
+    X_32 = eval_trilinear_point(model, A, B, C, 'a**(3)', ID="X_32", classes=["center", "incident"])
     central_line(model, X_21, X_32, 21, 32, incident=True)
-    X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center", "incident"])
-    X_213 = eval_trilinear_point(model, A, B, C, '(b + c)*a**(2)', ID="X(213)", classes=["center", "incident"])
+    X_8 = nagel_point_of(model, A, B, C, ID="X_8", classes=["center", "incident"])
+    X_213 = eval_trilinear_point(model, A, B, C, '(b + c)*a**(2)', ID="X_213", classes=["center", "incident"])
     central_line(model, X_8, X_213, 8, 213, incident=True)
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
-    X_314 = point_from_barycentrics(model, A, B, C, 0.47638074, 0.32254946, 0.20106979, ID="X(314)", classes=["center", "incident"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
+    X_314 = point_from_barycentrics(model, A, B, C, 0.47638074, 0.32254946, 0.20106979, ID="X_314", classes=["center", "incident"])
     central_line(model, X_6, X_314, 6, 314, incident=True)
     return promote_point_to_top(model, X_981)
 
@@ -43,8 +43,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(981) on the given reference triangle."""
-    model = create_model('X(981) = ISOGONAL CONJUGATE OF X(980)')
+    """Build a `geometor.model.Model` for X_981 on the given reference triangle."""
+    model = create_model('X_981 = ISOGONAL CONJUGATE OF X_980')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00981(model, A, B, C)
     return model

@@ -1,22 +1,25 @@
 :order: 509
 :type: center
-:canonical_id: X(509)
-:dependencies: X(57)
+:canonical_id: X_509
+:subtitle: 7th ISOSCELIZER POINT
+:dependencies: X_57
 
-.. _X(509):
+.. _X_509:
 
-X(509) = 7th ISOSCELIZER POINT
-==============================
+X_509
+=====
+
+.. rubric:: 7th ISOSCELIZER POINT
 
 .. enunciation::
 
-   have solution :g:`X <X>` = :ref:`X(509) <X(509)>`. (:person:`Peter Yff <peter-yff>`, 4/9/99)
+   The :term:`isoscelizer <isoscelizer>` equations
 
 .. figure:: x-00509.svg
-   :alt: X(509) = 7th ISOSCELIZER POINT
+   :alt: X_509 — 7th ISOSCELIZER POINT
    :align: center
 
-   **X(509) = 7th ISOSCELIZER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_509** (*7th ISOSCELIZER POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -31,16 +34,18 @@ X(509) = 7th ISOSCELIZER POINT
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(509) <X(509)>` = trilinear square root of :ref:`X(57) <X(57)>`
+   * :ref:`X_509 <X_509>` = trilinear square root of :ref:`X_57 <X_57>`
 
 Notes
 -----
 
 .. container:: note-item
 
-   The :term:`isoscelizer <isoscelizer>` equations
+   [area of T(A,X)]/a = [area of T(B,X)]/b = [area of T(C,X)]/c
 
-      [area of T(A,X)]/a = [area of T(B,X)]/b = [area of T(C,X)]/c
+.. container:: note-item
+
+   have solution :g:`X <X>` = :ref:`X_509 <X_509>`. (:person:`Peter Yff <peter-yff>`, 4/9/99)
 
 .. toctree::
    :hidden:

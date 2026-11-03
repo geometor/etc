@@ -1,22 +1,31 @@
 :order: 60
 :type: center
-:canonical_id: X(60)
-:dependencies: X(1), X(12), X(21), X(28), X(36), X(58), X(59), X(75), X(81), X(86), X(110), X(181), X(270), X(272), X(283), X(284), X(404), X(662), X(757), X(849), X(960), X(1014), X(1098), X(1101), X(2610), X(4024), X(6727), X(34388), X(34829), X(36903)
+:canonical_id: X_60
+:subtitle: ISOGONAL CONJUGATE OF X_12
+:dependencies: X_1, X_12, X_21, X_28, X_36, X_58, X_59, X_75, X_81, X_86, X_110, X_181, X_270, X_272, X_283, X_284, X_404, X_662, X_757, X_849, X_960, X_1014, X_1098, X_1101, X_2610, X_4024, X_6727, X_34388, X_34829, X_36903
 
-.. _X(60):
+.. _X_60:
 
-X(60) = ISOGONAL CONJUGATE OF X(12)
-===================================
+X_60
+====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_12
 
 .. enunciation::
 
-   Let :g:`A'B'C' << A' B' C' >>` be the :term:`cevian triangle <cevian-triangle>` of :ref:`X(21) <X(21)>`. Let :g:`A″ <A″>`, :g:`B″ <B″>`, :g:`C″ <C″>` be the inverse-in-circumcircle of :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>`. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(60) <X(60)>`. (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
+   :ref:`X_60 <X_60>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_12 <X_12>`.
 
 .. figure:: x-00060.svg
-   :alt: X(60) = ISOGONAL CONJUGATE OF X(12)
+   :alt: X_60 — ISOGONAL CONJUGATE OF X_12
    :align: center
 
-   **X(60) = ISOGONAL CONJUGATE OF X(12)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_60** (*ISOGONAL CONJUGATE OF X_12*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{36, 58} <{ 36, 58 }>`, :g:`{28, 81} <{ 28, 81 }>`
+   * **Related Centers:** :g:`X_12 <X_12>` (:ref:`{X <X_12>`), :g:`X_36 <X_36>` (:ref:`INVERSE-IN-CIRCUMCIRCLE OF INCENTER <X_36>`), :g:`X_58 <X_58>` (:ref:`ISOGONAL CONJUGATE OF X(10) <X_58>`), :g:`X_28 <X_28>` (:ref:`CEVAPOINT OF X(19) AND X(25) <X_28>`), :g:`X_81 <X_81>` (:ref:`CEVAPOINT OF INCENTER AND SYMMEDIAN POINT <X_81>`)
 
 .. signature:: center
 
@@ -33,21 +42,28 @@ X(60) = ISOGONAL CONJUGATE OF X(12)
    :badge: 9 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`110 <X(110)>`}, {:ref:`21 <X(21)>`, :ref:`960 <X(960)>`}, {:ref:`28 <X(28)>`, :ref:`81 <X(81)>`}, {:ref:`36 <X(36)>`, :ref:`58 <X(58)>`}, {:ref:`59 <X(59)>`, 1101}, {:ref:`86 <X(86)>`, :ref:`272 <X(272)>`}, {:ref:`283 <X(283)>`, :ref:`284 <X(284)>`}, {:ref:`404 <X(404)>`, :ref:`662 <X(662)>`}, {:ref:`757 <X(757)>`, 1014}
+   {:ref:`1 <X_1>`, :ref:`110 <X_110>`}, {:ref:`21 <X_21>`, :ref:`960 <X_960>`}, {:ref:`28 <X_28>`, :ref:`81 <X_81>`}, {:ref:`36 <X_36>`, :ref:`58 <X_58>`}, {:ref:`59 <X_59>`, 1101}, {:ref:`86 <X_86>`, :ref:`272 <X_272>`}, {:ref:`283 <X_283>`, :ref:`284 <X_284>`}, {:ref:`404 <X_404>`, :ref:`662 <X_662>`}, {:ref:`757 <X_757>`, 1014}
 
 .. collapse:: Functional Relations
    :badge: 10 relations
 
-   * :ref:`X(60) <X(60)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(12) <X(12)>`
-   * :ref:`X(60) <X(60)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(34388)
-   * :ref:`X(60) <X(60)>` = :term:`anticomplement <anticomplement>` of X(34829)
-   * :ref:`X(60) <X(60)>` = :ref:`X(58) <X(58)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(270) <X(270)>`
-   * :ref:`X(60) <X(60)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`60 <X(60)>`, :ref:`849 <X(849)>`), (1098, 1098)
-   * :ref:`X(60) <X(60)>` = :term:`crossdifference <crossdifference>` of every pair of points on line X(2610)X(4024)
-   * :ref:`X(60) <X(60)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(59) <X(59)>`
-   * :ref:`X(60) <X(60)>` = :ref:`X(75) <X(75)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(181) <X(181)>`
-   * :ref:`X(60) <X(60)>` = trilinear square of X(6727)
-   * :ref:`X(60) <X(60)>` = :term:`complement <complement>` of isogonal conjugate of X(36903)
+   * :ref:`X_60 <X_60>` = isogonal conjugate of :ref:`X_12 <X_12>`
+   * :ref:`X_60 <X_60>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_34388
+   * :ref:`X_60 <X_60>` = :term:`anticomplement <anticomplement>` of X_34829
+   * :ref:`X_60 <X_60>` = :ref:`X_58 <X_58>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_270 <X_270>`
+   * :ref:`X_60 <X_60>` = X_i-:term:`beth conjugate <beth-conjugate>` of X_j for these (i,j): (:ref:`60 <X_60>`, :ref:`849 <X_849>`), (1098, 1098)
+   * :ref:`X_60 <X_60>` = :term:`crossdifference <crossdifference>` of every pair of points on line X_2610X_4024
+   * :ref:`X_60 <X_60>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X_59 <X_59>`
+   * :ref:`X_60 <X_60>` = :ref:`X_75 <X_75>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_181 <X_181>`
+   * :ref:`X_60 <X_60>` = trilinear square of X_6727
+   * :ref:`X_60 <X_60>` = :term:`complement <complement>` of isogonal conjugate of X_36903
+
+Notes
+-----
+
+.. container:: note-item
+
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`cevian triangle <cevian-triangle>` of :ref:`X_21 <X_21>`. Let :g:`A″ <A″>`, :g:`B″ <B″>`, :g:`C″ <C″>` be the inverse-in-circumcircle of :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>`. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_60 <X_60>`. (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
 
 .. toctree::
    :hidden:

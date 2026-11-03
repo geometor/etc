@@ -1,18 +1,21 @@
-:canonical_id: X(614)
+:canonical_id: X_614
 :type: code
+:subtitle: INTERSECTION OF LINES X_1X_2 AND X_11X_33
 
-X(614) = INTERSECTION OF LINES X(1)X(2) AND X(11)X(33) — Code
-=============================================================
+X_614
+=====
+
+.. rubric:: INTERSECTION OF LINES X_1X_2 AND X_11X_33
 
 .. enunciation::
 
-   :ref:`X(614) <X(614)>` = :term:`crosssum <crosssum>` of :ref:`X(42) <X(42)>` and :ref:`X(72) <X(72)>`
+   :ref:`X_614 <X_614>` = :term:`crosssum <crosssum>` of :ref:`X_42 <X_42>` and :ref:`X_72 <X_72>`
 
 .. figure:: x-00614.svg
-   :alt: X(614) = INTERSECTION OF LINES X(1)X(2) AND X(11)X(33)
+   :alt: X_614 — INTERSECTION OF LINES X_1X_2 AND X_11X_33
    :align: center
 
-   **X(614) = INTERSECTION OF LINES X(1)X(2) AND X(11)X(33)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_614** (*INTERSECTION OF LINES X_1X_2 AND X_11X_33*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

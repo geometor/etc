@@ -1,22 +1,31 @@
 :order: 321
 :type: center
-:canonical_id: X(321)
-:dependencies: X(1), X(2), X(4), X(8), X(10), X(28), X(31), X(32), X(37), X(38), X(42), X(72), X(75), X(76), X(81), X(83), X(98), X(100), X(190), X(213), X(226), X(264), X(306), X(310), X(313), X(314), X(319), X(333), X(335), X(349), X(442), X(513), X(523), X(561), X(594), X(667), X(668), X(671), X(693), X(726), X(756), X(824), X(838), X(850), X(964), X(1029), X(1215), X(1333), X(1430), X(1577), X(3666), X(5016)
+:canonical_id: X_321
+:subtitle: ISOTOMIC CONJUGATE OF X_81
+:dependencies: X_1, X_2, X_4, X_8, X_10, X_28, X_31, X_32, X_37, X_38, X_42, X_72, X_75, X_76, X_81, X_83, X_98, X_100, X_190, X_213, X_226, X_264, X_306, X_310, X_313, X_314, X_319, X_333, X_335, X_349, X_442, X_513, X_523, X_561, X_594, X_667, X_668, X_671, X_693, X_726, X_756, X_824, X_838, X_850, X_964, X_1029, X_1215, X_1333, X_1430, X_1577, X_3666, X_5016
 
-.. _X(321):
+.. _X_321:
 
-X(321) = ISOTOMIC CONJUGATE OF X(81)
-====================================
+X_321
+=====
+
+.. rubric:: ISOTOMIC CONJUGATE OF X_81
 
 .. enunciation::
 
-   Let :g:`A_{26}B_{26}C_{26} << A_26 B_26 C_26 >>` be Gemini triangle 26. Let :g:`A' <A'>` be the perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B_{26} <B_26>`,\ :g:`C_{26} <C_26>`}}, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(321) <X(321)>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
+   :ref:`X_321 <X_321>` is the :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_81 <X_81>`.
 
 .. figure:: x-00321.svg
-   :alt: X(321) = ISOTOMIC CONJUGATE OF X(81)
+   :alt: X_321 — ISOTOMIC CONJUGATE OF X_81
    :align: center
 
-   **X(321) = ISOTOMIC CONJUGATE OF X(81)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_321** (*ISOTOMIC CONJUGATE OF X_81*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{4, 8} <{ 4, 8 }>`, :g:`{2, 37} <{ 2, 37 }>`
+   * **Related Centers:** :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_8 <X_8>` (:ref:`NAGEL POINT <X_8>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_37 <X_37>` (:ref:`CROSSPOINT OF INCENTER AND CENTROID <X_37>`)
 
 .. signature:: center
 
@@ -32,41 +41,48 @@ X(321) = ISOTOMIC CONJUGATE OF X(81)
 
 .. container:: note-item
 
-   :ref:`X(321) <X(321)>` lies on the Kiepert hyperbola.
+   :ref:`X_321 <X_321>` lies on the Kiepert hyperbola.
 
 .. collapse:: Incident Central Lines
    :badge: 16 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`964 <X(964)>`}, {:ref:`2 <X(2)>`, :ref:`37 <X(37)>`}, {:ref:`4 <X(4)>`, :ref:`8 <X(8)>`}, {:ref:`10 <X(10)>`, :ref:`756 <X(756)>`}, {:ref:`38 <X(38)>`, :ref:`726 <X(726)>`}, {:ref:`76 <X(76)>`, :ref:`561 <X(561)>`}, {:ref:`81 <X(81)>`, :ref:`314 <X(314)>`}, {:ref:`83 <X(83)>`, :ref:`213 <X(213)>`}, {:ref:`98 <X(98)>`, :ref:`100 <X(100)>`}, {:ref:`190 <X(190)>`, :ref:`333 <X(333)>`}, {:ref:`226 <X(226)>`, :ref:`306 <X(306)>`}, {:ref:`310 <X(310)>`, :ref:`335 <X(335)>`}, {:ref:`313 <X(313)>`, :ref:`594 <X(594)>`}, {:ref:`319 <X(319)>`, 1029}, {:ref:`668 <X(668)>`, :ref:`671 <X(671)>`}, {:ref:`693 <X(693)>`, :ref:`824 <X(824)>`}
+   {:ref:`1 <X_1>`, :ref:`964 <X_964>`}, {:ref:`2 <X_2>`, :ref:`37 <X_37>`}, {:ref:`4 <X_4>`, :ref:`8 <X_8>`}, {:ref:`10 <X_10>`, :ref:`756 <X_756>`}, {:ref:`38 <X_38>`, :ref:`726 <X_726>`}, {:ref:`76 <X_76>`, :ref:`561 <X_561>`}, {:ref:`81 <X_81>`, :ref:`314 <X_314>`}, {:ref:`83 <X_83>`, :ref:`213 <X_213>`}, {:ref:`98 <X_98>`, :ref:`100 <X_100>`}, {:ref:`190 <X_190>`, :ref:`333 <X_333>`}, {:ref:`226 <X_226>`, :ref:`306 <X_306>`}, {:ref:`310 <X_310>`, :ref:`335 <X_335>`}, {:ref:`313 <X_313>`, :ref:`594 <X_594>`}, {:ref:`319 <X_319>`, 1029}, {:ref:`668 <X_668>`, :ref:`671 <X_671>`}, {:ref:`693 <X_693>`, :ref:`824 <X_824>`}
 
 .. collapse:: Functional Relations
    :badge: 24 relations
 
-   * :ref:`X(321) <X(321)>` = reflection of :ref:`X(42) <X(42)>` in X(1215)
-   * :ref:`X(321) <X(321)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(1333)
-   * :ref:`X(321) <X(321)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(81) <X(81)>`
-   * :ref:`X(321) <X(321)>` = :term:`anticomplement <anticomplement>` of X(3666)
-   * :ref:`X(321) <X(321)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for (i,j) = (75,10), (76,313), (312,306)
-   * :ref:`X(321) <X(321)>` = :term:`cevapoint <cevapoint>` of :ref:`X(37) <X(37)>` and :ref:`X(72) <X(72)>`
-   * :ref:`X(321) <X(321)>` = :ref:`X(442) <X(442)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(264) <X(264)>`
-   * :ref:`X(321) <X(321)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`75 <X(75)>`, :ref:`76 <X(76)>`), (:ref:`313 <X(313)>`, :ref:`349 <X(349)>`)
-   * :ref:`X(321) <X(321)>` = :term:`crosssum <crosssum>` of :ref:`X(31) <X(31)>` and :ref:`X(32) <X(32)>`
-   * :ref:`X(321) <X(321)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(667) <X(667)>`\ \ :ref:`X(838) <X(838)>`
-   * :ref:`X(321) <X(321)>` = homothetic center of :g:`ABC << A B C >>` and inverse of n(Medial)\*n(Incentral) triangle
-   * :ref:`X(321) <X(321)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(28) <X(28)>` (line :ref:`X(513) <X(513)>`\ X(1430))
-   * :ref:`X(321) <X(321)>` = polar conjugate of :ref:`X(28) <X(28)>`
-   * :ref:`X(321) <X(321)>` = Danneels point of :ref:`X(75) <X(75)>`
-   * :ref:`X(321) <X(321)>` = inverse-in-Fuhrmann-circle of X(5016)
-   * :ref:`X(321) <X(321)>` = barycentric product :ref:`X(100) <X(100)>`\ \*\ :ref:`X(850) <X(850)>`
-   * :ref:`X(321) <X(321)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of Gemini triangles 13 and 14
-   * :ref:`X(321) <X(321)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 13
-   * :ref:`X(321) <X(321)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 14
-   * :ref:`X(321) <X(321)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 20
-   * :ref:`X(321) <X(321)>` = barycentric product of vertices of Gemini triangle 16
-   * :ref:`X(321) <X(321)>` = barycentric product of vertices of Gemini triangle 20
-   * :ref:`X(321) <X(321)>` = perspector of Gemini triangle 22 and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 22
-   * :ref:`X(321) <X(321)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(523) <X(523)>`\ X(1577) (the perspectrix of :g:`ABC << A B C >>` and Gemini triangles 21 and 27)
+   * :ref:`X_321 <X_321>` = reflection of :ref:`X_42 <X_42>` in X_1215
+   * :ref:`X_321 <X_321>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_1333
+   * :ref:`X_321 <X_321>` = isotomic conjugate of :ref:`X_81 <X_81>`
+   * :ref:`X_321 <X_321>` = :term:`anticomplement <anticomplement>` of X_3666
+   * :ref:`X_321 <X_321>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for (i,j) = (75,10), (76,313), (312,306)
+   * :ref:`X_321 <X_321>` = :term:`cevapoint <cevapoint>` of :ref:`X_37 <X_37>` and :ref:`X_72 <X_72>`
+   * :ref:`X_321 <X_321>` = :ref:`X_442 <X_442>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_264 <X_264>`
+   * :ref:`X_321 <X_321>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`75 <X_75>`, :ref:`76 <X_76>`), (:ref:`313 <X_313>`, :ref:`349 <X_349>`)
+   * :ref:`X_321 <X_321>` = :term:`crosssum <crosssum>` of :ref:`X_31 <X_31>` and :ref:`X_32 <X_32>`
+   * :ref:`X_321 <X_321>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_667 <X_667>`\ \ :ref:`X_838 <X_838>`
+   * :ref:`X_321 <X_321>` = homothetic center of :g:`ABC << A B C >>` and inverse of n(Medial)\*n(Incentral) triangle
+   * :ref:`X_321 <X_321>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_28 <X_28>` (line :ref:`X_513 <X_513>`\ X_1430)
+   * :ref:`X_321 <X_321>` = polar conjugate of :ref:`X_28 <X_28>`
+   * :ref:`X_321 <X_321>` = Danneels point of :ref:`X_75 <X_75>`
+   * :ref:`X_321 <X_321>` = inverse-in-Fuhrmann-circle of X_5016
+   * :ref:`X_321 <X_321>` = barycentric product :ref:`X_100 <X_100>`\ \*\ :ref:`X_850 <X_850>`
+   * :ref:`X_321 <X_321>` = perspector of :g:`ABC << A B C >>` and cross-triangle of Gemini triangles 13 and 14
+   * :ref:`X_321 <X_321>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 13
+   * :ref:`X_321 <X_321>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 14
+   * :ref:`X_321 <X_321>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 20
+   * :ref:`X_321 <X_321>` = barycentric product of vertices of Gemini triangle 16
+   * :ref:`X_321 <X_321>` = barycentric product of vertices of Gemini triangle 20
+   * :ref:`X_321 <X_321>` = perspector of Gemini triangle 22 and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 22
+   * :ref:`X_321 <X_321>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_523 <X_523>`\ X_1577 (the perspectrix of :g:`ABC << A B C >>` and Gemini triangles 21 and 27)
+
+Notes
+-----
+
+.. container:: note-item
+
+   Let :g:`A_{26}B_{26}C_{26} << A_26 B_26 C_26 >>` be Gemini triangle 26. Let :g:`A' <A'>` be the perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B_{26} <B_26>`,\ :g:`C_{26} <C_26>`}}, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X_321 <X_321>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
 
 .. toctree::
    :hidden:

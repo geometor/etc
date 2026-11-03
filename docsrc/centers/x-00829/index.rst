@@ -1,22 +1,30 @@
 :order: 829
 :type: center
-:canonical_id: X(829)
-:dependencies: X(6), X(158), X(828)
+:canonical_id: X_829
+:subtitle: ISOGONAL CONJUGATE OF X_828
+:dependencies: X_6, X_158, X_828
 
-.. _X(829):
+.. _X_829:
 
-X(829) = ISOGONAL CONJUGATE OF X(828)
-=====================================
+X_829
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_828
 
 .. enunciation::
 
-   :ref:`X(829) <X(829)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(828) <X(828)>`
+   :ref:`X_829 <X_829>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_828 <X_828>`.
 
 .. figure:: x-00829.svg
-   :alt: X(829) = ISOGONAL CONJUGATE OF X(828)
+   :alt: X_829 — ISOGONAL CONJUGATE OF X_828
    :align: center
 
-   **X(829) = ISOGONAL CONJUGATE OF X(828)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_829** (*ISOGONAL CONJUGATE OF X_828*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Related Centers:** :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_158 <X_158>` (:ref:`-CROSS CONJUGATE OF X(92) <X_158>`)
 
 .. signature:: center
 
@@ -27,8 +35,8 @@ X(829) = ISOGONAL CONJUGATE OF X(828)
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(829) <X(829)>` = isogonal conjugate of :ref:`X(828) <X(828)>`
-   * :ref:`X(829) <X(829)>` = :term:`cevapoint <cevapoint>` of :ref:`X(6) <X(6)>` and :ref:`X(158) <X(158)>`
+   * :ref:`X_829 <X_829>` = isogonal conjugate of :ref:`X_828 <X_828>`
+   * :ref:`X_829 <X_829>` = :term:`cevapoint <cevapoint>` of :ref:`X_6 <X_6>` and :ref:`X_158 <X_158>`
 
 .. toctree::
    :hidden:

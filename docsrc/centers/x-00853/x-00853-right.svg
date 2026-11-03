@@ -27,6 +27,7 @@ svg.geometor-etc-drawing.is-panning {
 }
 
 svg.geometor-etc-drawing.hide-labels #labels .point-label,
+svg.geometor-etc-drawing.hide-labels #labels .guide-label,
 svg.geometor-etc-drawing.hide-labels #labels .target-label,
 svg.geometor-etc-drawing.hide-labels #labels .given-label {
     display: none;
@@ -188,12 +189,19 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
     font-weight: 600;
     paint-order: stroke;
     stroke: var(--accent-color);
-    stroke-width: 3px;
+    stroke-width: 0.15em;
     stroke-linecap: round;
     stroke-linejoin: round;
-    vector-effect: non-scaling-stroke;
     user-select: none;
     pointer-events: none;
+}
+
+#labels tspan {
+    paint-order: stroke;
+    stroke: var(--accent-color);
+    stroke-width: 0.15em;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 #labels text.target-label {
@@ -203,6 +211,11 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
 
 #labels text.given-label {
     fill: #8f8;
+}
+
+#labels text.guide-label {
+    fill: #ffb74d;
+    font-weight: 600;
 }
 
 #labels text.hover-label {
@@ -328,26 +341,26 @@ figure:hover .etc-svg-toolbar {
     <circle data-id="A" data-name="Vertex A" class="point given vertex" data-category="points" cx="0.000000" cy="-0.000000" r="0.049996"><title>A = Vertex A (0.0000, 0.0000)</title></circle>
     <circle data-id="B" data-name="Vertex B" class="point given vertex" data-category="points" cx="1.000000" cy="-0.000000" r="0.049996"><title>B = Vertex B (1.0000, 0.0000)</title></circle>
     <circle data-id="C" data-name="Vertex C" class="point vertex" data-category="points" cx="0.640000" cy="-0.480000" r="0.049996"><title>C = Vertex C (0.6400, 0.4800)</title></circle>
-    <circle data-id="X(2)" data-name="CENTROID" class="point center" data-category="points" cx="0.546667" cy="-0.160000" r="0.049996"><title>X(2) = CENTROID (0.5467, 0.1600)</title></circle>
-    <circle data-id="X(3)" data-name="CIRCUMCENTER" class="point center" data-category="points" cx="0.500000" cy="-0.000000" r="0.049996"><title>X(3) = CIRCUMCENTER (0.5000, 0.0000)</title></circle>
-    <circle data-id="X(4)" data-name="ORTHOCENTER" class="point center" data-category="points" cx="0.640000" cy="-0.480000" r="0.049996"><title>X(4) = ORTHOCENTER (0.6400, 0.4800)</title></circle>
-    <circle data-id="X(657)" data-name="CROSSDIFFERENCE OF X(1) AND X(7)" class="point center" data-category="points" cx="5.090909" cy="0.545455" r="0.049996"><title>X(657) = CROSSDIFFERENCE OF X(1) AND X(7) (5.0909, -0.5455)</title></circle>
-    <circle data-id="X(663)" data-name="CROSSDIFFERENCE OF X(2) AND X(7)" class="point center" data-category="points" cx="4.000000" cy="1.000000" r="0.049996"><title>X(663) = CROSSDIFFERENCE OF X(2) AND X(7) (4.0000, -1.0000)</title></circle>
-    <circle data-id="X(853)" data-name="INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(55)" class="point selected target" data-category="points" cx="-0.316206" cy="2.798419" r="0.069994"><title>X(853) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(55) (-0.3162, -2.7984)</title></circle>
+    <circle data-id="X_2" data-name="CENTROID" class="point center" data-category="points" cx="0.546667" cy="-0.160000" r="0.049996"><title>X_2 = CENTROID (0.5467, 0.1600)</title></circle>
+    <circle data-id="X_3" data-name="CIRCUMCENTER" class="point center" data-category="points" cx="0.500000" cy="-0.000000" r="0.049996"><title>X_3 = CIRCUMCENTER (0.5000, 0.0000)</title></circle>
+    <circle data-id="X_4" data-name="ORTHOCENTER" class="point center" data-category="points" cx="0.640000" cy="-0.480000" r="0.049996"><title>X_4 = ORTHOCENTER (0.6400, 0.4800)</title></circle>
+    <circle data-id="X_657" data-name="CROSSDIFFERENCE OF X(1) AND X(7)" class="point center" data-category="points" cx="5.090909" cy="0.545455" r="0.049996"><title>X_657 = CROSSDIFFERENCE OF X(1) AND X(7) (5.0909, -0.5455)</title></circle>
+    <circle data-id="X_663" data-name="CROSSDIFFERENCE OF X(2) AND X(7)" class="point center" data-category="points" cx="4.000000" cy="1.000000" r="0.049996"><title>X_663 = CROSSDIFFERENCE OF X(2) AND X(7) (4.0000, -1.0000)</title></circle>
+    <circle data-id="X_853" data-name="INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(55)" class="point selected target" data-category="points" cx="-0.316206" cy="2.798419" r="0.069994"><title>X_853 = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(55) (-0.3162, -2.7984)</title></circle>
   </g>
   <g id="labels">
     <text class="given-label" data-point-id="A" data-anchor-x="0.000000" data-anchor-y="-0.000000" data-offset-x="-24.0" data-offset-y="22.5" x="-0.159987" y="0.149988" font-size="0.134989">A</text>
     <text class="given-label" data-point-id="B" data-anchor-x="1.000000" data-anchor-y="-0.000000" data-offset-x="12.0" data-offset-y="22.5" x="1.079993" y="0.149988" font-size="0.134989">B</text>
     <text class="point-label" data-point-id="C" data-anchor-x="0.640000" data-anchor-y="-0.480000" data-offset-x="-7.5" data-offset-y="-15.0" x="0.590004" y="-0.579992" font-size="0.134989">C</text>
-    <text class="point-label" data-point-id="X(2)" data-anchor-x="0.546667" data-anchor-y="-0.160000" data-offset-x="12.0" data-offset-y="-10.5" x="0.626660" y="-0.229994" font-size="0.134989">X(2)</text>
-    <text class="point-label" data-point-id="X(3)" data-anchor-x="0.500000" data-anchor-y="-0.000000" data-offset-x="12.0" data-offset-y="-10.5" x="0.579993" y="-0.069994" font-size="0.134989">X(3)</text>
-    <text class="point-label" data-point-id="X(4)" data-anchor-x="0.640000" data-anchor-y="-0.480000" data-offset-x="12.0" data-offset-y="-10.5" x="0.719994" y="-0.549994" font-size="0.134989">X(4)</text>
-    <text class="point-label" data-point-id="X(657)" data-anchor-x="5.090909" data-anchor-y="0.545455" data-offset-x="12.0" data-offset-y="-10.5" x="5.170903" y="0.475460" font-size="0.134989">X(657)</text>
-    <text class="point-label" data-point-id="X(663)" data-anchor-x="4.000000" data-anchor-y="1.000000" data-offset-x="12.0" data-offset-y="-10.5" x="4.079993" y="0.930006" font-size="0.134989">X(663)</text>
-    <text class="target-label" data-point-id="X(853)" data-anchor-x="-0.316206" data-anchor-y="2.798419" data-offset-x="12.0" data-offset-y="-10.5" x="-0.236212" y="2.728425" font-size="0.134989">X(853)</text>
+    <text class="point-label" data-point-id="X_2" data-anchor-x="0.546667" data-anchor-y="-0.160000" data-offset-x="12.0" data-offset-y="-10.5" x="0.626660" y="-0.229994" font-size="0.134989">X<tspan dy="0.3em" font-size="75%">2</tspan></text>
+    <text class="point-label" data-point-id="X_3" data-anchor-x="0.500000" data-anchor-y="-0.000000" data-offset-x="12.0" data-offset-y="-10.5" x="0.579993" y="-0.069994" font-size="0.134989">X<tspan dy="0.3em" font-size="75%">3</tspan></text>
+    <text class="point-label" data-point-id="X_4" data-anchor-x="0.640000" data-anchor-y="-0.480000" data-offset-x="12.0" data-offset-y="-10.5" x="0.719994" y="-0.549994" font-size="0.134989">X<tspan dy="0.3em" font-size="75%">4</tspan></text>
+    <text class="point-label" data-point-id="X_657" data-anchor-x="5.090909" data-anchor-y="0.545455" data-offset-x="12.0" data-offset-y="-10.5" x="5.170903" y="0.475460" font-size="0.134989">X<tspan dy="0.3em" font-size="75%">657</tspan></text>
+    <text class="point-label" data-point-id="X_663" data-anchor-x="4.000000" data-anchor-y="1.000000" data-offset-x="12.0" data-offset-y="-10.5" x="4.079993" y="0.930006" font-size="0.134989">X<tspan dy="0.3em" font-size="75%">663</tspan></text>
+    <text class="target-label" data-point-id="X_853" data-anchor-x="-0.316206" data-anchor-y="2.798419" data-offset-x="12.0" data-offset-y="-10.5" x="-0.236212" y="2.728425" font-size="0.134989">X<tspan dy="0.3em" font-size="75%">853</tspan></text>
     <text class="subtitle-label" x="-0.691228" y="3.039055" font-size="0.114991" fill="#999">(a, b, c) = (3, 4, 5) | AB = 1</text>
   </g>
-  <script type="application/json" class="etc-elements-meta">{"A":{"ID":"A","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex A","subtitle":"Reference triangle vertex at origin (0, 0)","rows":[["x","0.0000"],["y","0.0000"],["bary","1.0000 : 0.0000 : 0.0000"]],"related_points":["A"]},"B":{"ID":"B","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex B","subtitle":"Reference triangle vertex at unit base (1, 0)","rows":[["x","1.0000"],["y","0.0000"],["bary","0.0000 : 1.0000 : 0.0000"]],"related_points":["B"]},"[ A B ]":{"ID":"[ A B ]","type":"line","classes":["given","sideline"],"color":"#aaa","name":"Sideline AB (Base c = 1)","subtitle":"Reference triangle baseline through A and B","rows":[["pts","A (Vertex A), B (Vertex B)"],["len","1.0000"],["eq","0.0000x + 1.0000y + 0.0000 = 0"]],"related_points":["A","B"]},"C":{"ID":"C","type":"point","classes":["vertex"],"color":"#0ff","name":"Vertex C","subtitle":"Reference triangle apex constructed by Euclid I.22","rows":[["x","0.6400"],["y","0.4800"],["bary","-0.0000 : 0.0000 : 1.0000"]],"related_points":["C"]},"[ B C ]":{"ID":"[ B C ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline BC (Side a)","subtitle":"Reference triangle sideline opposite vertex A","rows":[["pts","B (Vertex B), C (Vertex C)"],["len","0.6000"],["eq","0.8000x + 0.6000y - 0.8000 = 0"]],"related_points":["B","C"]},"[ C A ]":{"ID":"[ C A ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline CA (Side b)","subtitle":"Reference triangle sideline opposite vertex B","rows":[["pts","C (Vertex C), A (Vertex A)"],["len","0.8000"],["eq","0.6000x - 0.8000y + 0.0000 = 0"]],"related_points":["C","A"]},"\u003c A B C \u003e":{"ID":"\u003c A B C \u003e","type":"polygon","classes":["reference"],"color":"#58a6ff","name":"Reference Triangle △ABC","subtitle":"Primary reference triangle with unit baseline AB = 1","rows":[["verts","A, B, C"],["sides","0.6000, 0.8000, 1.0000"],["area","0.2400"]],"related_points":["A","B","C"]},"X(2)":{"ID":"X(2)","type":"point","classes":["center"],"color":"#0ff","name":"CENTROID","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5467"],["y","0.1600"],["bary","0.3333 : 0.3333 : 0.3333"]],"related_points":["X(2)"]},"X(3)":{"ID":"X(3)","type":"point","classes":["center"],"color":"#0ff","name":"CIRCUMCENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5000"],["y","0.0000"],["bary","0.5000 : 0.5000 : 0.0000"]],"related_points":["X(3)"]},"{ 2, 3 }":{"ID":"{ 2, 3 }","type":"line","classes":["golden","euler"],"color":"gold","name":"Euler Line","subtitle":"Collinear line of X(2) Centroid, X(3) Circumcenter, X(4) Orthocenter, X(5) Nine-Point Center, X(20), X(30)","rows":[["pts","X(2) (CENTROID), X(3) (CIRCUMCENTER)"],["len","0.1667"],["eq","0.9600x - 0.2800y - 0.4800 = 0"]],"related_points":["X(2)","X(3)"]},"X(4)":{"ID":"X(4)","type":"point","classes":["center"],"color":"#0ff","name":"ORTHOCENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6400"],["y","0.4800"],["bary","-0.0000 : 0.0000 : 1.0000"]],"related_points":["X(4)"]},"X(657)":{"ID":"X(657)","type":"point","classes":["center"],"color":"#0ff","name":"CROSSDIFFERENCE OF X(1) AND X(7)","subtitle":"Incident / Reference Triangle Center","rows":[["x","5.0909"],["y","-0.5455"],["bary","-3.6818 : 5.8182 : -1.1364"]],"related_points":["X(657)"]},"X(663)":{"ID":"X(663)","type":"point","classes":["center"],"color":"#0ff","name":"CROSSDIFFERENCE OF X(2) AND X(7)","subtitle":"Incident / Reference Triangle Center","rows":[["x","4.0000"],["y","-1.0000"],["bary","-2.2500 : 5.3333 : -2.0833"]],"related_points":["X(663)"]},"{ 657, 663 }":{"ID":"{ 657, 663 }","type":"line","classes":["central_line"],"color":"#0bd","name":"Central Line L(657, 663)","subtitle":"Through X(657) (CROSSDIFFERENCE OF X(1) AND X(7)) and X(663) (CROSSDIFFERENCE OF X(2) AND X(7))","rows":[["pts","X(657) (CROSSDIFFERENCE OF X(1) AND X(7)), X(663) (CROSSDIFFERENCE OF X(2) AND X(7))"],["len","1.1818"],["eq","0.3846x - 0.9231y - 2.4615 = 0"]],"related_points":["X(657)","X(663)"]},"X(853)":{"ID":"X(853)","type":"point","classes":["selected","target"],"color":"gold","name":"INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(55)","subtitle":"Target Triangle Center","rows":[["x","-0.3162"],["y","-2.7984"],["bary","3.4150 : 3.4150 : -5.8300"]],"related_points":["X(853)"]}}</script>
+  <script type="application/json" class="etc-elements-meta">{"A":{"ID":"A","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex A","subtitle":"Reference triangle vertex at origin (0, 0)","rows":[["x","0.0000"],["y","0.0000"],["bary","1.0000 : 0.0000 : 0.0000"]],"related_points":["A"]},"B":{"ID":"B","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex B","subtitle":"Reference triangle vertex at unit base (1, 0)","rows":[["x","1.0000"],["y","0.0000"],["bary","0.0000 : 1.0000 : 0.0000"]],"related_points":["B"]},"[ A B ]":{"ID":"[ A B ]","type":"line","classes":["given","sideline"],"color":"#aaa","name":"Sideline AB (Base c = 1)","subtitle":"Reference triangle baseline through A and B","rows":[["pts","A (Vertex A), B (Vertex B)"],["len","1.0000"],["eq","0.0000x + 1.0000y + 0.0000 = 0"]],"related_points":["A","B"]},"C":{"ID":"C","type":"point","classes":["vertex"],"color":"#0ff","name":"Vertex C","subtitle":"Reference triangle apex constructed by Euclid I.22","rows":[["x","0.6400"],["y","0.4800"],["bary","-0.0000 : 0.0000 : 1.0000"]],"related_points":["C"]},"[ B C ]":{"ID":"[ B C ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline BC (Side a)","subtitle":"Reference triangle sideline opposite vertex A","rows":[["pts","B (Vertex B), C (Vertex C)"],["len","0.6000"],["eq","0.8000x + 0.6000y - 0.8000 = 0"]],"related_points":["B","C"]},"[ C A ]":{"ID":"[ C A ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline CA (Side b)","subtitle":"Reference triangle sideline opposite vertex B","rows":[["pts","C (Vertex C), A (Vertex A)"],["len","0.8000"],["eq","0.6000x - 0.8000y + 0.0000 = 0"]],"related_points":["C","A"]},"\u003c A B C \u003e":{"ID":"\u003c A B C \u003e","type":"polygon","classes":["reference"],"color":"#58a6ff","name":"Reference Triangle △ABC","subtitle":"Primary reference triangle with unit baseline AB = 1","rows":[["verts","A, B, C"],["sides","0.6000, 0.8000, 1.0000"],["area","0.2400"]],"related_points":["A","B","C"]},"X_2":{"ID":"X_2","type":"point","classes":["center"],"color":"#0ff","name":"CENTROID","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5467"],["y","0.1600"],["bary","0.3333 : 0.3333 : 0.3333"]],"related_points":["X_2"]},"X_3":{"ID":"X_3","type":"point","classes":["center"],"color":"#0ff","name":"CIRCUMCENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5000"],["y","0.0000"],["bary","0.5000 : 0.5000 : 0.0000"]],"related_points":["X_3"]},"{ 2, 3 }":{"ID":"{ 2, 3 }","type":"line","classes":["golden","euler"],"color":"gold","name":"Euler Line","subtitle":"Collinear line of X_2 Centroid, X_3 Circumcenter, X_4 Orthocenter, X_5 Nine-Point Center, X_20, X_30","rows":[["pts","X_2 (CENTROID), X_3 (CIRCUMCENTER)"],["len","0.1667"],["eq","0.9600x - 0.2800y - 0.4800 = 0"]],"related_points":["X_2","X_3"]},"X_4":{"ID":"X_4","type":"point","classes":["center"],"color":"#0ff","name":"ORTHOCENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6400"],["y","0.4800"],["bary","-0.0000 : 0.0000 : 1.0000"]],"related_points":["X_4"]},"X_657":{"ID":"X_657","type":"point","classes":["center"],"color":"#0ff","name":"CROSSDIFFERENCE OF X(1) AND X(7)","subtitle":"Incident / Reference Triangle Center","rows":[["x","5.0909"],["y","-0.5455"],["bary","-3.6818 : 5.8182 : -1.1364"]],"related_points":["X_657"]},"X_663":{"ID":"X_663","type":"point","classes":["center"],"color":"#0ff","name":"CROSSDIFFERENCE OF X(2) AND X(7)","subtitle":"Incident / Reference Triangle Center","rows":[["x","4.0000"],["y","-1.0000"],["bary","-2.2500 : 5.3333 : -2.0833"]],"related_points":["X_663"]},"{ 657, 663 }":{"ID":"{ 657, 663 }","type":"line","classes":["central_line"],"color":"#0bd","name":"Central Line L(657, 663)","subtitle":"Through X_657 (CROSSDIFFERENCE OF X(1) AND X(7)) and X_663 (CROSSDIFFERENCE OF X(2) AND X(7))","rows":[["pts","X_657 (CROSSDIFFERENCE OF X(1) AND X(7)), X_663 (CROSSDIFFERENCE OF X(2) AND X(7))"],["len","1.1818"],["eq","0.3846x - 0.9231y - 2.4615 = 0"]],"related_points":["X_657","X_663"]},"X_853":{"ID":"X_853","type":"point","classes":["selected","target"],"color":"gold","name":"INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(55)","subtitle":"Target Triangle Center","rows":[["x","-0.3162"],["y","-2.7984"],["bary","3.4150 : 3.4150 : -5.8300"]],"related_points":["X_853"]}}</script>
   <script>//<![CDATA[
 
 (function () {
@@ -399,14 +412,16 @@ figure:hover .etc-svg-toolbar {
         });
 
         const fontSize = 20.25 * unitsPerPx;
+        const guideFontSize = 17.5 * unitsPerPx;
         labelEls.forEach(lbl => {
             const cx = parseFloat(lbl.getAttribute('data-anchor-x') || '0');
             const cy = parseFloat(lbl.getAttribute('data-anchor-y') || '0');
             const oxPx = parseFloat(lbl.getAttribute('data-offset-x') || '12');
             const oyPx = parseFloat(lbl.getAttribute('data-offset-y') || '-10.5');
+            const isGuideLbl = lbl.classList.contains('guide-label');
             lbl.setAttribute('x', (cx + oxPx * unitsPerPx).toFixed(6));
             lbl.setAttribute('y', (cy + oyPx * unitsPerPx).toFixed(6));
-            lbl.setAttribute('font-size', fontSize.toFixed(6));
+            lbl.setAttribute('font-size', (isGuideLbl ? guideFontSize : fontSize).toFixed(6));
         });
 
         if (subtitleEl) {
@@ -691,11 +706,11 @@ figure:hover .etc-svg-toolbar {
             const refLink = e.target.closest('a.reference.internal');
             if (refLink) {
                 const txt = (refLink.textContent || '').trim();
-                const xm = txt.match(/^X\((\d+)\)$/);
+                const xm = txt.match(/^X(?:_|\()?(\d+)\)?$/);
                 if (xm) {
                     const activeSvg = getActiveSvg();
                     if (activeSvg && activeSvg._etcController.activateHover) {
-                        activeSvg._etcController.activateHover(`X(${xm[1]})`);
+                        activeSvg._etcController.activateHover(`X_${xm[1]}`);
                     }
                 }
             }

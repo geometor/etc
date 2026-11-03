@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(724) = EVEN (- 3, 4) INFINITY POINT."""
+"""GEOMETOR construction model for X_724 = EVEN (- 3, 4) INFINITY POINT."""
 
 from __future__ import annotations
 
@@ -21,10 +21,10 @@ from geometor.etc.render import write_center_svg
 def construct_x_00724(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(724) = EVEN (- 3, 4) INFINITY POINT on reference triangle ABC."""
-    X_724 = point_from_barycentrics(model, A, B, C, 0.54558558, 0.25327972, -0.7988653, ID="X(724)", classes=["selected", "target"])
-    X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X(30)", classes=["center", "incident"])
-    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X(511)", classes=["center", "incident"])
+    """Construct X_724 = EVEN (- 3, 4) INFINITY POINT on reference triangle ABC."""
+    X_724 = point_from_barycentrics(model, A, B, C, 0.54558558, 0.25327972, -0.7988653, ID="X_724", classes=["selected", "target"])
+    X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X_30", classes=["center", "incident"])
+    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X_511", classes=["center", "incident"])
     central_line(model, X_30, X_511, 30, 511, incident=True)
     return promote_point_to_top(model, X_724)
 
@@ -33,8 +33,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(724) on the given reference triangle."""
-    model = create_model('X(724) = EVEN (- 3, 4) INFINITY POINT')
+    """Build a `geometor.model.Model` for X_724 on the given reference triangle."""
+    model = create_model('X_724 = EVEN (- 3, 4) INFINITY POINT')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00724(model, A, B, C)
     return model

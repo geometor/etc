@@ -1,22 +1,31 @@
 :order: 196
 :type: center
-:canonical_id: X(196)
-:dependencies: X(1), X(2), X(4), X(7), X(19), X(34), X(40), X(55), X(57), X(65), X(92), X(108), X(207), X(208), X(221), X(226), X(268), X(278), X(280), X(281), X(329), X(342), X(347), X(521), X(648), X(653), X(937), X(3239)
+:canonical_id: X_196
+:subtitle: X_7-CEVA CONJUGATE OF X_4
+:dependencies: X_1, X_2, X_4, X_7, X_19, X_34, X_40, X_55, X_57, X_65, X_92, X_108, X_207, X_208, X_221, X_226, X_268, X_278, X_280, X_281, X_329, X_342, X_347, X_521, X_648, X_653, X_937, X_3239
 
-.. _X(196):
+.. _X_196:
 
-X(196) = X(7)-CEVA CONJUGATE OF X(4)
-====================================
+X_196
+=====
+
+.. rubric:: X_7-CEVA CONJUGATE OF X_4
 
 .. enunciation::
 
-   :ref:`X(196) <X(196)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(268) <X(268)>`
+   :ref:`X_196 <X_196>` = :term:`cevapoint <cevapoint>` of :ref:`X_19 <X_19>` and :ref:`X_207 <X_207>`
 
 .. figure:: x-00196.svg
-   :alt: X(196) = X(7)-CEVA CONJUGATE OF X(4)
+   :alt: X_196 — X_7-CEVA CONJUGATE OF X_4
    :align: center
 
-   **X(196) = X(7)-CEVA CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_196** (*X_7-CEVA CONJUGATE OF X_4*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{4, 65} <{ 4, 65 }>`, :g:`{19, 57} <{ 19, 57 }>`
+   * **Related Centers:** :g:`X_268 <X_268>` (:ref:`ISOGONAL CONJUGATE OF X(196) <X_268>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_65 <X_65>` (:ref:`ORTHOCENTER OF THE INTOUCH TRIANGLE <X_65>`), :g:`X_19 <X_19>` (:ref:`CLAWSON POINT <X_19>`), :g:`X_57 <X_57>` (:ref:`ISOGONAL CONJUGATE OF X(9) <X_57>`)
 
 .. signature:: center
 
@@ -28,19 +37,19 @@ X(196) = X(7)-CEVA CONJUGATE OF X(4)
    :badge: 10 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`207 <X(207)>`}, {:ref:`2 <X(2)>`, :ref:`653 <X(653)>`}, {:ref:`4 <X(4)>`, :ref:`65 <X(65)>`}, {:ref:`7 <X(7)>`, :ref:`92 <X(92)>`}, {:ref:`19 <X(19)>`, :ref:`57 <X(57)>`}, {:ref:`34 <X(34)>`, :ref:`937 <X(937)>`}, {:ref:`40 <X(40)>`, :ref:`208 <X(208)>`}, {:ref:`55 <X(55)>`, :ref:`108 <X(108)>`}, {:ref:`226 <X(226)>`, :ref:`281 <X(281)>`}, {:ref:`329 <X(329)>`, :ref:`342 <X(342)>`}
+   {:ref:`1 <X_1>`, :ref:`207 <X_207>`}, {:ref:`2 <X_2>`, :ref:`653 <X_653>`}, {:ref:`4 <X_4>`, :ref:`65 <X_65>`}, {:ref:`7 <X_7>`, :ref:`92 <X_92>`}, {:ref:`19 <X_19>`, :ref:`57 <X_57>`}, {:ref:`34 <X_34>`, :ref:`937 <X_937>`}, {:ref:`40 <X_40>`, :ref:`208 <X_208>`}, {:ref:`55 <X_55>`, :ref:`108 <X_108>`}, {:ref:`226 <X_226>`, :ref:`281 <X_281>`}, {:ref:`329 <X_329>`, :ref:`342 <X_342>`}
 
 .. collapse:: Functional Relations
    :badge: 8 relations
 
-   * :ref:`X(196) <X(196)>` = isogonal conjugate of :ref:`X(268) <X(268)>`
-   * :ref:`X(196) <X(196)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`7 <X(7)>`, :ref:`4 <X(4)>`), (:ref:`92 <X(92)>`, :ref:`278 <X(278)>`)
-   * :ref:`X(196) <X(196)>` = :term:`cevapoint <cevapoint>` of :ref:`X(19) <X(19)>` and :ref:`X(207) <X(207)>`
-   * :ref:`X(196) <X(196)>` = :ref:`X(221) <X(221)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(347) <X(347)>`
-   * :ref:`X(196) <X(196)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`648 <X(648)>`, :ref:`2 <X(2)>`), (:ref:`653 <X(653)>`, :ref:`196 <X(196)>`)
-   * :ref:`X(196) <X(196)>` = Danneels point of :ref:`X(653) <X(653)>`
-   * :ref:`X(196) <X(196)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(280) <X(280)>` (line :ref:`X(521) <X(521)>`\ X(3239))
-   * :ref:`X(196) <X(196)>` = polar conjugate of :ref:`X(280) <X(280)>`
+   * :ref:`X_196 <X_196>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_268 <X_268>`
+   * :ref:`X_196 <X_196>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`7 <X_7>`, :ref:`4 <X_4>`), (:ref:`92 <X_92>`, :ref:`278 <X_278>`)
+   * :ref:`X_196 <X_196>` = cevapoint of :ref:`X_19 <X_19>` and :ref:`X_207 <X_207>`
+   * :ref:`X_196 <X_196>` = :ref:`X_221 <X_221>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_347 <X_347>`
+   * :ref:`X_196 <X_196>` = X_i-:term:`beth conjugate <beth-conjugate>` of X_j for these (i,j): (:ref:`648 <X_648>`, :ref:`2 <X_2>`), (:ref:`653 <X_653>`, :ref:`196 <X_196>`)
+   * :ref:`X_196 <X_196>` = Danneels point of :ref:`X_653 <X_653>`
+   * :ref:`X_196 <X_196>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_280 <X_280>` (line :ref:`X_521 <X_521>`\ X_3239)
+   * :ref:`X_196 <X_196>` = polar conjugate of :ref:`X_280 <X_280>`
 
 .. toctree::
    :hidden:

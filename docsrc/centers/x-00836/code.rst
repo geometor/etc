@@ -1,18 +1,21 @@
-:canonical_id: X(836)
+:canonical_id: X_836
 :type: code
+:subtitle: CROSSPOINT OF X_1 AND X_394
 
-X(836) = CROSSPOINT OF X(1) AND X(394) — Code
-=============================================
+X_836
+=====
+
+.. rubric:: CROSSPOINT OF X_1 AND X_394
 
 .. enunciation::
 
-   :ref:`X(836) <X(836)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(837) <X(837)>`
+   :ref:`X_836 <X_836>` is the :term:`crosspoint <crosspoint>` of :ref:`X_1 <X_1>` and :ref:`X_394 <X_394>`.
 
 .. figure:: x-00836.svg
-   :alt: X(836) = CROSSPOINT OF X(1) AND X(394)
+   :alt: X_836 — CROSSPOINT OF X_1 AND X_394
    :align: center
 
-   **X(836) = CROSSPOINT OF X(1) AND X(394)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_836** (*CROSSPOINT OF X_1 AND X_394*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

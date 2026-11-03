@@ -1,18 +1,21 @@
-:canonical_id: X(869)
+:canonical_id: X_869
 :type: code
+:subtitle: INTERSECTION OF LINES X_1X_2 AND X_31X_32
 
-X(869) = INTERSECTION OF LINES X(1)X(2) AND X(31)X(32) — Code
-=============================================================
+X_869
+=====
+
+.. rubric:: INTERSECTION OF LINES X_1X_2 AND X_31X_32
 
 .. enunciation::
 
-   :ref:`X(869) <X(869)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(870) <X(870)>`
+   :ref:`X_869 <X_869>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_649 <X_649>`\ \ :ref:`X_693 <X_693>`
 
 .. figure:: x-00869.svg
-   :alt: X(869) = INTERSECTION OF LINES X(1)X(2) AND X(31)X(32)
+   :alt: X_869 — INTERSECTION OF LINES X_1X_2 AND X_31X_32
    :align: center
 
-   **X(869) = INTERSECTION OF LINES X(1)X(2) AND X(31)X(32)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_869** (*INTERSECTION OF LINES X_1X_2 AND X_31X_32*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

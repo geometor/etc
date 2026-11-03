@@ -1,18 +1,21 @@
-:canonical_id: X(874)
+:canonical_id: X_874
 :type: code
+:subtitle: INTERSECTION OF LINES X_1X_75 AND X_99X_670
 
-X(874) = INTERSECTION OF LINES X(1)X(75) AND X(99)X(670) — Code
-===============================================================
+X_874
+=====
+
+.. rubric:: INTERSECTION OF LINES X_1X_75 AND X_99X_670
 
 .. enunciation::
 
-   :ref:`X(874) <X(874)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(875) <X(875)>`
+   :ref:`X_874 <X_874>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_239 <X_239>`\ \ :ref:`X_350 <X_350>`
 
 .. figure:: x-00874.svg
-   :alt: X(874) = INTERSECTION OF LINES X(1)X(75) AND X(99)X(670)
+   :alt: X_874 — INTERSECTION OF LINES X_1X_75 AND X_99X_670
    :align: center
 
-   **X(874) = INTERSECTION OF LINES X(1)X(75) AND X(99)X(670)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_874** (*INTERSECTION OF LINES X_1X_75 AND X_99X_670*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

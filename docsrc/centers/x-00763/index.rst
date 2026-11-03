@@ -1,22 +1,30 @@
 :order: 763
 :type: center
-:canonical_id: X(763)
-:dependencies: X(762)
+:canonical_id: X_763
+:subtitle: ISOGONAL CONJUGATE OF X_762
+:dependencies: X_762
 
-.. _X(763):
+.. _X_763:
 
-X(763) = ISOGONAL CONJUGATE OF X(762)
-=====================================
+X_763
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_762
 
 .. enunciation::
 
-   :ref:`X(763) <X(763)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(762) <X(762)>`
+   :ref:`X_763 <X_763>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_762 <X_762>`.
 
 .. figure:: x-00763.svg
-   :alt: X(763) = ISOGONAL CONJUGATE OF X(762)
+   :alt: X_763 — ISOGONAL CONJUGATE OF X_762
    :align: center
 
-   **X(763) = ISOGONAL CONJUGATE OF X(762)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_763** (*ISOGONAL CONJUGATE OF X_762*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Related Centers:** :g:`X_762 <X_762>` (:ref:`TRILINEAR CUBE OF X(37) <X_762>`)
 
 .. signature:: center
 
@@ -26,12 +34,12 @@ X(763) = ISOGONAL CONJUGATE OF X(762)
 
 .. container:: note-item
 
-   :ref:`X(763) <X(763)>` lies on line 757,849
+   :ref:`X_763 <X_763>` lies on line 757,849
 
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(763) <X(763)>` = isogonal conjugate of :ref:`X(762) <X(762)>`
+   * :ref:`X_763 <X_763>` = isogonal conjugate of :ref:`X_762 <X_762>`
 
 .. toctree::
    :hidden:

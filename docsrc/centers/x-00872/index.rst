@@ -1,22 +1,31 @@
 :order: 872
 :type: center
-:canonical_id: X(872)
-:dependencies: X(6), X(37), X(41), X(42), X(43), X(75), X(86), X(190), X(213), X(274), X(292), X(386), X(560), X(688), X(740), X(798), X(812), X(873), X(984), X(1019), X(1045), X(1089)
+:canonical_id: X_872
+:subtitle: INTERSECTION OF LINES X_37X_42 AND X_43X_75
+:dependencies: X_6, X_37, X_41, X_42, X_43, X_75, X_86, X_190, X_213, X_274, X_292, X_386, X_560, X_688, X_740, X_798, X_812, X_873, X_984, X_1019, X_1045, X_1089
 
-.. _X(872):
+.. _X_872:
 
-X(872) = INTERSECTION OF LINES X(37)X(42) AND X(43)X(75)
-========================================================
+X_872
+=====
+
+.. rubric:: INTERSECTION OF LINES X_37X_42 AND X_43X_75
 
 .. enunciation::
 
-   :ref:`X(872) <X(872)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(873) <X(873)>`
+   :ref:`X_872 <X_872>` = :ref:`X_42 <X_42>`-:term:`Ceva conjugate <ceva-conjugate>` of (1500)
 
 .. figure:: x-00872.svg
-   :alt: X(872) = INTERSECTION OF LINES X(37)X(42) AND X(43)X(75)
+   :alt: X_872 — INTERSECTION OF LINES X_37X_42 AND X_43X_75
    :align: center
 
-   **X(872) = INTERSECTION OF LINES X(37)X(42) AND X(43)X(75)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_872** (*INTERSECTION OF LINES X_37X_42 AND X_43X_75*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{37, 42} <{ 37, 42 }>`, :g:`{43, 75} <{ 43, 75 }>`
+   * **Related Centers:** :g:`X_873 <X_873>` (:ref:`ISOGONAL CONJUGATE OF X(872) <X_873>`), :g:`X_37 <X_37>` (:ref:`CROSSPOINT OF INCENTER AND CENTROID <X_37>`), :g:`X_42 <X_42>` (:ref:`CROSSPOINT OF INCENTER AND SYMMEDIAN POINT <X_42>`), :g:`X_43 <X_43>` (:ref:`-CEVA CONJUGATE OF X(1) <X_43>`), :g:`X_75 <X_75>` (:ref:`ISOTOMIC CONJUGATE OF INCENTER <X_75>`)
 
 .. signature:: center
 
@@ -27,17 +36,17 @@ X(872) = INTERSECTION OF LINES X(37)X(42) AND X(43)X(75)
    :badge: 8 lines
    :class: line-catalog
 
-   {:ref:`6 <X(6)>`, :ref:`292 <X(292)>`}, {:ref:`37 <X(37)>`, :ref:`42 <X(42)>`}, {:ref:`41 <X(41)>`, :ref:`560 <X(560)>`}, {:ref:`43 <X(43)>`, :ref:`75 <X(75)>`}, {:ref:`190 <X(190)>`, 1045}, {:ref:`386 <X(386)>`, :ref:`984 <X(984)>`}, {:ref:`688 <X(688)>`, :ref:`798 <X(798)>`}, {:ref:`740 <X(740)>`, 1089}
+   {:ref:`6 <X_6>`, :ref:`292 <X_292>`}, {:ref:`37 <X_37>`, :ref:`42 <X_42>`}, {:ref:`41 <X_41>`, :ref:`560 <X_560>`}, {:ref:`43 <X_43>`, :ref:`75 <X_75>`}, {:ref:`190 <X_190>`, 1045}, {:ref:`386 <X_386>`, :ref:`984 <X_984>`}, {:ref:`688 <X_688>`, :ref:`798 <X_798>`}, {:ref:`740 <X_740>`, 1089}
 
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X(872) <X(872)>` = isogonal conjugate of :ref:`X(873) <X(873)>`
-   * :ref:`X(872) <X(872)>` = :ref:`X(42) <X(42)>`-:term:`Ceva conjugate <ceva-conjugate>` of (1500)
-   * :ref:`X(872) <X(872)>` = :term:`crosspoint <crosspoint>` of :ref:`X(42) <X(42)>` and :ref:`X(213) <X(213)>`
-   * :ref:`X(872) <X(872)>` = :term:`crosssum <crosssum>` of :ref:`X(86) <X(86)>` and :ref:`X(274) <X(274)>`
-   * :ref:`X(872) <X(872)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(812) <X(812)>`\ X(1019)
-   * :ref:`X(872) <X(872)>` = trilinear square of :ref:`X(42) <X(42)>`
+   * :ref:`X_872 <X_872>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_873 <X_873>`
+   * :ref:`X_872 <X_872>` = :ref:`X_42 <X_42>`-Ceva conjugate of (1500)
+   * :ref:`X_872 <X_872>` = :term:`crosspoint <crosspoint>` of :ref:`X_42 <X_42>` and :ref:`X_213 <X_213>`
+   * :ref:`X_872 <X_872>` = :term:`crosssum <crosssum>` of :ref:`X_86 <X_86>` and :ref:`X_274 <X_274>`
+   * :ref:`X_872 <X_872>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_812 <X_812>`\ X_1019
+   * :ref:`X_872 <X_872>` = trilinear square of :ref:`X_42 <X_42>`
 
 .. toctree::
    :hidden:

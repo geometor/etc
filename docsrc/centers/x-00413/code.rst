@@ -1,18 +1,17 @@
-:canonical_id: X(413)
+:canonical_id: X_413
 :type: code
+:subtitle: EULER X_21-3rd-SUBSTITUTION POINT
 
-X(413) = EULER X(21)-3rd-SUBSTITUTION POINT — Code
-==================================================
+X_413
+=====
 
-.. enunciation::
-
-   As a point on the Euler line, :ref:`X(413) <X(413)>` has Shinagawa coefficients :math:`(\$aS_{A}\$[(\$aS_{A}\$)^{2} - \$bcS_{B}S_{C}\$] - 2abcFS^{2}, -(\$aS_{A}\$ - abc)[(\$aS_{A}\$)^{2} - \$bcS_{B}S_{C}\$] - 2[\$bcS_{B}S_{C}\$ + \$aS_{A}\$F - abcF]S^{2})`.
+.. rubric:: EULER X_21-3rd-SUBSTITUTION POINT
 
 .. figure:: x-00413.svg
-   :alt: X(413) = EULER X(21)-3rd-SUBSTITUTION POINT
+   :alt: X_413 — EULER X_21-3rd-SUBSTITUTION POINT
    :align: center
 
-   **X(413) = EULER X(21)-3rd-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_413** (*EULER X_21-3rd-SUBSTITUTION POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

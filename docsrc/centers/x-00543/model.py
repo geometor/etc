@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(543) = DIRECTION OF VECTOR AX + BX + CX, where X = X(99)."""
+"""GEOMETOR construction model for X_543 = DIRECTION OF VECTOR AX + BX + CX, where X = X_99."""
 
 from __future__ import annotations
 
@@ -22,16 +22,16 @@ from geometor.etc.render import write_center_svg
 def construct_x_00543(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(543) = DIRECTION OF VECTOR AX + BX + CX, where X = X(99) on reference triangle ABC."""
-    X_543 = eval_barycentric_point(model, A, B, C, '2*a**(4) - b**(4) - c**(4) - 2*a**(2)*b**(2) - 2*a**(2)*c**(2) + 4*b**(2)*c**(2)', ID="X(543)", classes=["selected", "target"])
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
-    X_99 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(2) - c**(2))', ID="X(99)", classes=["center", "incident"])
+    """Construct X_543 = DIRECTION OF VECTOR AX + BX + CX, where X = X_99 on reference triangle ABC."""
+    X_543 = eval_barycentric_point(model, A, B, C, '2*a**(4) - b**(4) - c**(4) - 2*a**(2)*b**(2) - 2*a**(2)*c**(2) + 4*b**(2)*c**(2)', ID="X_543", classes=["selected", "target"])
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
+    X_99 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(2) - c**(2))', ID="X_99", classes=["center", "incident"])
     central_line(model, X_2, X_99, 2, 99, incident=True)
-    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A + omega )', ID="X(98)", classes=["center", "incident"])
-    X_376 = eval_trilinear_point(model, A, B, C, '5*cos(A) - cos(B - C)', ID="X(376)", classes=["center", "incident"])
+    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A + omega )', ID="X_98", classes=["center", "incident"])
+    X_376 = eval_trilinear_point(model, A, B, C, '5*cos(A) - cos(B - C)', ID="X_376", classes=["center", "incident"])
     central_line(model, X_98, X_376, 98, 376, incident=True)
-    X_114 = eval_trilinear_point(model, A, B, C, 'b*c*(b*sec(B + omega ) + c*sec(C + omega ))', ID="X(114)", classes=["center", "incident"])
-    X_381 = eval_trilinear_point(model, A, B, C, '2*cos(B - C) - cos(A)', ID="X(381)", classes=["center", "incident"])
+    X_114 = eval_trilinear_point(model, A, B, C, 'b*c*(b*sec(B + omega ) + c*sec(C + omega ))', ID="X_114", classes=["center", "incident"])
+    X_381 = eval_trilinear_point(model, A, B, C, '2*cos(B - C) - cos(A)', ID="X_381", classes=["center", "incident"])
     central_line(model, X_114, X_381, 114, 381, incident=True)
     return promote_point_to_top(model, X_543)
 
@@ -40,8 +40,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(543) on the given reference triangle."""
-    model = create_model('X(543) = DIRECTION OF VECTOR AX + BX + CX, where X = X(99)')
+    """Build a `geometor.model.Model` for X_543 on the given reference triangle."""
+    model = create_model('X_543 = DIRECTION OF VECTOR AX + BX + CX, where X = X_99')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00543(model, A, B, C)
     return model

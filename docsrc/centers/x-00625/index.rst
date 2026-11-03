@@ -1,22 +1,31 @@
 :order: 625
 :type: center
-:canonical_id: X(625)
-:dependencies: X(2), X(5), X(30), X(115), X(126), X(141), X(187), X(230), X(316), X(325), X(620), X(623), X(624), X(754), X(858), X(2482), X(20977), X(22087)
+:canonical_id: X_625
+:subtitle: MIDPOINT OF X_623 AND X_624
+:dependencies: X_2, X_5, X_30, X_115, X_126, X_141, X_187, X_230, X_316, X_325, X_620, X_623, X_624, X_754, X_858, X_2482, X_20977, X_22087
 
-.. _X(625):
+.. _X_625:
 
-X(625) = MIDPOINT OF X(623) AND X(624)
-======================================
+X_625
+=====
+
+.. rubric:: MIDPOINT OF X_623 AND X_624
 
 .. enunciation::
 
-   A construction of :ref:`X(625) <X(625)>` is given at `Hyacinthos 27519 <http://www.hyacinthos.epizy.com/message.php?msg=27519>`__. (:person:`Antreas Hatzipolakis <antreas-hatzipolakis>` and :person:`Peter Moses <peter-moses>`, April 16, 2018)
+   :ref:`X_625 <X_625>` is the midpoint of :ref:`X_623 <X_623>` and :ref:`X_624 <X_624>`.
 
 .. figure:: x-00625.svg
-   :alt: X(625) = MIDPOINT OF X(623) AND X(624)
+   :alt: X_625 — MIDPOINT OF X_623 AND X_624
    :align: center
 
-   **X(625) = MIDPOINT OF X(623) AND X(624)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_625** (*MIDPOINT OF X_623 AND X_624*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{5, 141} <{ 5, 141 }>`, :g:`{2, 187} <{ 2, 187 }>`
+   * **Related Centers:** :g:`X_5 <X_5>` (:ref:`NINE-POINT CENTER <X_5>`), :g:`X_141 <X_141>` (:ref:`COMPLEMENT OF SYMMEDIAN POINT <X_141>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_187 <X_187>` (:ref:`INVERSE-IN-CIRCUMCIRCLE OF X <X_187>`)
 
 .. signature:: center
 
@@ -27,17 +36,24 @@ X(625) = MIDPOINT OF X(623) AND X(624)
    :badge: 6 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`187 <X(187)>`}, {:ref:`5 <X(5)>`, :ref:`141 <X(141)>`}, {:ref:`30 <X(30)>`, :ref:`620 <X(620)>`}, {:ref:`115 <X(115)>`, :ref:`325 <X(325)>`}, {:ref:`126 <X(126)>`, :ref:`858 <X(858)>`}, {:ref:`230 <X(230)>`, :ref:`754 <X(754)>`}
+   {:ref:`2 <X_2>`, :ref:`187 <X_187>`}, {:ref:`5 <X_5>`, :ref:`141 <X_141>`}, {:ref:`30 <X_30>`, :ref:`620 <X_620>`}, {:ref:`115 <X_115>`, :ref:`325 <X_325>`}, {:ref:`126 <X_126>`, :ref:`858 <X_858>`}, {:ref:`230 <X_230>`, :ref:`754 <X_754>`}
 
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X(625) <X(625)>` = midpoint of X(i) and X(j) for these (i,j): (:ref:`115 <X(115)>`, :ref:`325 <X(325)>`), (:ref:`187 <X(187)>`, :ref:`316 <X(316)>`), (:ref:`623 <X(623)>`, :ref:`624 <X(624)>`)
-   * :ref:`X(625) <X(625)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :term:`isogonal conjugate <isogonal-conjugate>` of X(20977)
-   * :ref:`X(625) <X(625)>` = polar conjugate of isogonal conjugate of X(22087)
-   * :ref:`X(625) <X(625)>` = inverse-in-nine-point-circle of :ref:`X(141) <X(141)>`
-   * :ref:`X(625) <X(625)>` = :term:`complement <complement>` of :ref:`X(187) <X(187)>`
-   * :ref:`X(625) <X(625)>` = :term:`complementary conjugate <complementary-conjugate>` of X(2482)
+   * :ref:`X_625 <X_625>` = midpoint of X_i and X_j for these (i,j): (:ref:`115 <X_115>`, :ref:`325 <X_325>`), (:ref:`187 <X_187>`, :ref:`316 <X_316>`), (:ref:`623 <X_623>`, :ref:`624 <X_624>`)
+   * :ref:`X_625 <X_625>` = :term:`isotomic conjugate <isotomic-conjugate>` of :term:`isogonal conjugate <isogonal-conjugate>` of X_20977
+   * :ref:`X_625 <X_625>` = polar conjugate of isogonal conjugate of X_22087
+   * :ref:`X_625 <X_625>` = inverse-in-nine-point-circle of :ref:`X_141 <X_141>`
+   * :ref:`X_625 <X_625>` = :term:`complement <complement>` of :ref:`X_187 <X_187>`
+   * :ref:`X_625 <X_625>` = :term:`complementary conjugate <complementary-conjugate>` of X_2482
+
+Notes
+-----
+
+.. container:: note-item
+
+   A construction of :ref:`X_625 <X_625>` is given at `Hyacinthos 27519 <http://www.hyacinthos.epizy.com/message.php?msg=27519>`__. (:person:`Antreas Hatzipolakis <antreas-hatzipolakis>` and :person:`Peter Moses <peter-moses>`, April 16, 2018)
 
 .. toctree::
    :hidden:

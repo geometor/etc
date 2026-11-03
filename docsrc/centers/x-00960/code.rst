@@ -1,18 +1,21 @@
-:canonical_id: X(960)
+:canonical_id: X_960
 :type: code
+:subtitle: INTERSECTION OF LINES X_1X_6 AND X_5X_10
 
-X(960) = INTERSECTION OF LINES X(1)X(6) AND X(5)X(10) — Code
-============================================================
+X_960
+=====
+
+.. rubric:: INTERSECTION OF LINES X_1X_6 AND X_5X_10
 
 .. enunciation::
 
-   :ref:`X(960) <X(960)>` = midpoint of :ref:`X(1) <X(1)>` and :ref:`X(72) <X(72)>`
+   :ref:`X_960 <X_960>` = midpoint of :ref:`X_1 <X_1>` and :ref:`X_72 <X_72>`
 
 .. figure:: x-00960.svg
-   :alt: X(960) = INTERSECTION OF LINES X(1)X(6) AND X(5)X(10)
+   :alt: X_960 — INTERSECTION OF LINES X_1X_6 AND X_5X_10
    :align: center
 
-   **X(960) = INTERSECTION OF LINES X(1)X(6) AND X(5)X(10)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_960** (*INTERSECTION OF LINES X_1X_6 AND X_5X_10*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,18 +1,21 @@
-:canonical_id: X(206)
+:canonical_id: X_206
 :type: code
+:subtitle: X_2-CEVA CONJUGATE OF X_32
 
-X(206) = X(2)-CEVA CONJUGATE OF X(32) — Code
-============================================
+X_206
+=====
+
+.. rubric:: X_2-CEVA CONJUGATE OF X_32
 
 .. enunciation::
 
-   Let :g:`A'B'C' << A' B' C' >>` be the triangle described in :cite:`ADGEOM #2697 <adgeom>` (8/26/2015, Tran Quang Hung); then :ref:`X(206) <X(206)>` = :ref:`X(6) <X(6)>`-of-:g:`A'B'C' << A' B' C' >>`. (:person:`Randy Hutson <randy-hutson>`, July 31 2018)
+   For another construction see Antreas P. Hatzipolakis and :person:`Peter Moses <peter-moses>`, `Euclid 1713 <https://groups.io/g/euclid/message/1713>`__.
 
 .. figure:: x-00206.svg
-   :alt: X(206) = X(2)-CEVA CONJUGATE OF X(32)
+   :alt: X_206 — X_2-CEVA CONJUGATE OF X_32
    :align: center
 
-   **X(206) = X(2)-CEVA CONJUGATE OF X(32)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_206** (*X_2-CEVA CONJUGATE OF X_32*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,18 +1,21 @@
-:canonical_id: X(439)
+:canonical_id: X_439
 :type: code
+:subtitle: EULER X_193-9th-SUBSTITUTION POINT
 
-X(439) = EULER X(193)-9th-SUBSTITUTION POINT — Code
-===================================================
+X_439
+=====
+
+.. rubric:: EULER X_193-9th-SUBSTITUTION POINT
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(439) <X(439)>` has Shinagawa coefficients :math:`((E + F) ^{2} - 4S^{2},4S^{2})`
+   :ref:`X_439 <X_439>` = reflection of X_32972 in X_32970
 
 .. figure:: x-00439.svg
-   :alt: X(439) = EULER X(193)-9th-SUBSTITUTION POINT
+   :alt: X_439 — EULER X_193-9th-SUBSTITUTION POINT
    :align: center
 
-   **X(439) = EULER X(193)-9th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_439** (*EULER X_193-9th-SUBSTITUTION POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

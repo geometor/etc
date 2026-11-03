@@ -1,22 +1,31 @@
 :order: 977
 :type: center
-:canonical_id: X(977)
-:dependencies: X(22), X(56), X(58), X(106), X(833), X(976), X(982)
+:canonical_id: X_977
+:subtitle: ISOGONAL CONJUGATE OF X_976
+:dependencies: X_22, X_56, X_58, X_106, X_833, X_976, X_982
 
-.. _X(977):
+.. _X_977:
 
-X(977) = ISOGONAL CONJUGATE OF X(976)
-=====================================
+X_977
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_976
 
 .. enunciation::
 
-   :ref:`X(977) <X(977)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(976) <X(976)>`
+   :ref:`X_977 <X_977>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_976 <X_976>`.
 
 .. figure:: x-00977.svg
-   :alt: X(977) = ISOGONAL CONJUGATE OF X(976)
+   :alt: X_977 — ISOGONAL CONJUGATE OF X_976
    :align: center
 
-   **X(977) = ISOGONAL CONJUGATE OF X(976)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_977** (*ISOGONAL CONJUGATE OF X_976*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{22, 56} <{ 22, 56 }>`, :g:`{106, 833} <{ 106, 833 }>`
+   * **Related Centers:** :g:`X_976 <X_976>` (:ref:`INTERSECTION OF LINES X <X_976>`), :g:`X_22 <X_22>` (:ref:`EXETER POINT <X_22>`), :g:`X_56 <X_56>` (:ref:`EXSIMILICENTER <X_56>`), :g:`X_106 <X_106>` (:ref:`Λ(INCENTER, CENTROID) <X_106>`), :g:`X_833 <X_833>` (:ref:`o-(1, 4) CIRCUMCIRCLE POINT <X_833>`)
 
 .. signature:: center
 
@@ -28,12 +37,12 @@ X(977) = ISOGONAL CONJUGATE OF X(976)
    :badge: 3 lines
    :class: line-catalog
 
-   {:ref:`22 <X(22)>`, :ref:`56 <X(56)>`}, {:ref:`58 <X(58)>`, :ref:`982 <X(982)>`}, {:ref:`106 <X(106)>`, :ref:`833 <X(833)>`}
+   {:ref:`22 <X_22>`, :ref:`56 <X_56>`}, {:ref:`58 <X_58>`, :ref:`982 <X_982>`}, {:ref:`106 <X_106>`, :ref:`833 <X_833>`}
 
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(977) <X(977)>` = isogonal conjugate of :ref:`X(976) <X(976)>`
+   * :ref:`X_977 <X_977>` = isogonal conjugate of :ref:`X_976 <X_976>`
 
 .. toctree::
    :hidden:

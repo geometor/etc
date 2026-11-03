@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(632) = 9/10*OG."""
+"""GEOMETOR construction model for X_632 = 9/10*OG."""
 
 from __future__ import annotations
 
@@ -23,15 +23,15 @@ from geometor.etc.render import write_center_svg
 def construct_x_00632(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(632) = 9/10*OG on reference triangle ABC."""
-    X_631 = eval_trilinear_point(model, A, B, C, '2*cos(A) + cos(B)*cos(C)', ID="X(631)", classes=["center"])
-    X_140 = eval_trilinear_point(model, A, B, C, '2*cos(A) + cos(B - C)', ID="X(140)", classes=["center"])
-    X_632 = reflection_in_point(model, X_631, X_140, ID="X(632)", classes=["selected", "target"], guide=False)
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
+    """Construct X_632 = 9/10*OG on reference triangle ABC."""
+    X_631 = eval_trilinear_point(model, A, B, C, '2*cos(A) + cos(B)*cos(C)', ID="X_631", classes=["center"])
+    X_140 = eval_trilinear_point(model, A, B, C, '2*cos(A) + cos(B - C)', ID="X_140", classes=["center"])
+    X_632 = reflection_in_point(model, X_631, X_140, ID="X_632", classes=["selected", "target"], guide=False)
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
-    X_141 = eval_trilinear_point(model, A, B, C, 'b*c*(b**(2) + c**(2))', ID="X(141)", classes=["center", "incident"])
-    X_575 = eval_trilinear_point(model, A, B, C, '3*sin(A) + cos(A)*cot(omega)', ID="X(575)", classes=["center", "incident"])
+    X_141 = eval_trilinear_point(model, A, B, C, 'b*c*(b**(2) + c**(2))', ID="X_141", classes=["center", "incident"])
+    X_575 = eval_trilinear_point(model, A, B, C, '3*sin(A) + cos(A)*cot(omega)', ID="X_575", classes=["center", "incident"])
     central_line(model, X_141, X_575, 141, 575, incident=True)
     return promote_point_to_top(model, X_632)
 
@@ -40,8 +40,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(632) on the given reference triangle."""
-    model = create_model('X(632) = 9/10*OG')
+    """Build a `geometor.model.Model` for X_632 on the given reference triangle."""
+    model = create_model('X_632 = 9/10*OG')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00632(model, A, B, C)
     return model

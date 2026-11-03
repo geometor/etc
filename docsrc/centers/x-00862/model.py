@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(862) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(19)."""
+"""GEOMETOR construction model for X_862 = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X_19."""
 
 from __future__ import annotations
 
@@ -23,14 +23,14 @@ from geometor.etc.render import write_center_svg
 def construct_x_00862(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(862) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(19) on reference triangle ABC."""
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center"])
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center"])
-    X_661 = eval_trilinear_point(model, A, B, C, 'cot(B) - cot(C)', ID="X(661)", classes=["center"])
-    X_663 = eval_trilinear_point(model, A, B, C, 'a*(b - c)*(b + c - a)', ID="X(663)", classes=["center"])
+    """Construct X_862 = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X_19 on reference triangle ABC."""
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
+    X_661 = eval_trilinear_point(model, A, B, C, 'cot(B) - cot(C)', ID="X_661", classes=["center"])
+    X_663 = eval_trilinear_point(model, A, B, C, 'a*(b - c)*(b + c - a)', ID="X_663", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
     central_line(model, X_661, X_663, 661, 663)
-    X_862 = intersect_lines(model, X_2, X_3, X_661, X_663, ID="X(862)", classes=["selected", "target"])
+    X_862 = intersect_lines(model, X_2, X_3, X_661, X_663, ID="X_862", classes=["selected", "target"])
     return promote_point_to_top(model, X_862)
 
 
@@ -38,8 +38,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(862) on the given reference triangle."""
-    model = create_model('X(862) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(19)')
+    """Build a `geometor.model.Model` for X_862 on the given reference triangle."""
+    model = create_model('X_862 = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X_19')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00862(model, A, B, C)
     return model

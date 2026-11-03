@@ -1,22 +1,32 @@
 :order: 491
 :type: center
-:canonical_id: X(491)
-:dependencies: X(2), X(3), X(4), X(5), X(6), X(69), X(76), X(264), X(315), X(371), X(372), X(485), X(486), X(487), X(488), X(490), X(492), X(615), X(631), X(637), X(642)
+:canonical_id: X_491
+:subtitle: CEVAPOINT OF X_2 AND X_487
+:dependencies: X_2, X_3, X_4, X_5, X_6, X_69, X_76, X_264, X_315, X_371, X_372, X_485, X_486, X_487, X_488, X_490, X_492, X_615, X_631, X_637, X_642
 
-.. _X(491):
+.. _X_491:
 
-X(491) = CEVAPOINT OF X(2) AND X(487)
-=====================================
+X_491
+=====
+
+.. rubric:: CEVAPOINT OF X_2 AND X_487
 
 .. enunciation::
 
-   :ref:`X(491) <X(491)>` is a pole associated with squares that circumscribe :g:`ABC << A B C >>`. For details and reference, see :ref:`X(488) <X(488)>`. (:person:`Floor van Lamoen <floor-van-lamoen>`, 4/26/98)
+   :ref:`X_491 <X_491>` is the :term:`cevapoint <cevapoint>` of :ref:`X_2 <X_2>` and :ref:`X_487 <X_487>`.
 
 .. figure:: x-00491.svg
-   :alt: X(491) = CEVAPOINT OF X(2) AND X(487)
+   :alt: X_491 — CEVAPOINT OF X_2 AND X_487
    :align: center
 
-   **X(491) = CEVAPOINT OF X(2) AND X(487)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_491** (*CEVAPOINT OF X_2 AND X_487*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Derived Triangle:** :term:`Anticomplementary Triangle <anticomplementary triangle>` :g:`△K_aK_bK_c << K_a K_b K_c >>` — vertices :g:`K_a <K_a>`, :g:`K_b <K_b>`, :g:`K_c <K_c>` (Formed by lines through A, B, C parallel to opposite sides)
+   * **Central Lines:** :g:`{2, 615} <{ 2, 615 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_615 <X_615>` (:ref:`ISOGONAL CONJUGATE OF X(589) <X_615>`)
 
 .. signature:: center
 
@@ -36,18 +46,25 @@ X(491) = CEVAPOINT OF X(2) AND X(487)
    :badge: 8 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`6 <X(6)>`}, {:ref:`3 <X(3)>`, :ref:`490 <X(490)>`}, {:ref:`4 <X(4)>`, :ref:`487 <X(487)>`}, {:ref:`5 <X(5)>`, :ref:`637 <X(637)>`}, {:ref:`76 <X(76)>`, :ref:`485 <X(485)>`}, {:ref:`315 <X(315)>`, :ref:`371 <X(371)>`}, {:ref:`372 <X(372)>`, :ref:`642 <X(642)>`}, {:ref:`488 <X(488)>`, :ref:`631 <X(631)>`}
+   {:ref:`2 <X_2>`, :ref:`6 <X_6>`}, {:ref:`3 <X_3>`, :ref:`490 <X_490>`}, {:ref:`4 <X_4>`, :ref:`487 <X_487>`}, {:ref:`5 <X_5>`, :ref:`637 <X_637>`}, {:ref:`76 <X_76>`, :ref:`485 <X_485>`}, {:ref:`315 <X_315>`, :ref:`371 <X_371>`}, {:ref:`372 <X_372>`, :ref:`642 <X_642>`}, {:ref:`488 <X_488>`, :ref:`631 <X_631>`}
 
 .. collapse:: Functional Relations
    :badge: 7 relations
 
-   * :ref:`X(491) <X(491)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(486) <X(486)>`
-   * :ref:`X(491) <X(491)>` = :term:`anticomplement <anticomplement>` of :ref:`X(615) <X(615)>`
-   * :ref:`X(491) <X(491)>` = :ref:`X(264) <X(264)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(492) <X(492)>`
-   * :ref:`X(491) <X(491)>` = :term:`cevapoint <cevapoint>` of :ref:`X(2) <X(2)>` and :ref:`X(487) <X(487)>`
-   * :ref:`X(491) <X(491)>` = :term:`crosspoint <crosspoint>` of :ref:`X(2) <X(2)>` and :ref:`X(487) <X(487)>` wrt both the excentral and :term:`anticomplementary triangles <anticomplementary-triangle>`
-   * :ref:`X(491) <X(491)>` = {:ref:`X(2) <X(2)>`,\ :ref:`X(69) <X(69)>`}-harmonic conjugate of :ref:`X(492) <X(492)>`
-   * :ref:`X(491) <X(491)>` = homothetic center of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of 2nd Kenmotu diagonals triangle
+   * :ref:`X_491 <X_491>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_486 <X_486>`
+   * :ref:`X_491 <X_491>` = :term:`anticomplement <anticomplement>` of :ref:`X_615 <X_615>`
+   * :ref:`X_491 <X_491>` = :ref:`X_264 <X_264>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_492 <X_492>`
+   * :ref:`X_491 <X_491>` = cevapoint of :ref:`X_2 <X_2>` and :ref:`X_487 <X_487>`
+   * :ref:`X_491 <X_491>` = :term:`crosspoint <crosspoint>` of :ref:`X_2 <X_2>` and :ref:`X_487 <X_487>` wrt both the excentral and :term:`anticomplementary triangles <anticomplementary-triangle>`
+   * :ref:`X_491 <X_491>` = {:ref:`X_2 <X_2>`,\ :ref:`X_69 <X_69>`}-harmonic conjugate of :ref:`X_492 <X_492>`
+   * :ref:`X_491 <X_491>` = homothetic center of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of 2nd Kenmotu diagonals triangle
+
+Notes
+-----
+
+.. container:: note-item
+
+   :ref:`X_491 <X_491>` is a pole associated with squares that circumscribe :g:`ABC << A B C >>`. For details and reference, see :ref:`X_488 <X_488>`. (:person:`Floor van Lamoen <floor-van-lamoen>`, 4/26/98)
 
 .. toctree::
    :hidden:

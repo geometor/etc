@@ -1,18 +1,21 @@
-:canonical_id: X(570)
+:canonical_id: X_570
 :type: code
+:subtitle: ORTHOGONAL OF X_52
 
-X(570) = ORTHOGONAL OF X(52) — Code
-===================================
+X_570
+=====
+
+.. rubric:: ORTHOGONAL OF X_52
 
 .. enunciation::
 
-   :ref:`X(570) <X(570)>` = inverse-in-Brocard-circle of :ref:`X(571) <X(571)>`
+   :ref:`X_570 <X_570>` = inverse-in-Brocard-circle of :ref:`X_571 <X_571>`
 
 .. figure:: x-00570.svg
-   :alt: X(570) = ORTHOGONAL OF X(52)
+   :alt: X_570 — ORTHOGONAL OF X_52
    :align: center
 
-   **X(570) = ORTHOGONAL OF X(52)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_570** (*ORTHOGONAL OF X_52*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

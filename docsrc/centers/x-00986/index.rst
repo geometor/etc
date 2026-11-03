@@ -1,22 +1,31 @@
 :order: 986
 :type: center
-:canonical_id: X(986)
-:dependencies: X(1), X(3), X(4), X(6), X(8), X(10), X(38), X(43), X(72), X(75), X(100), X(194), X(240), X(257), X(291), X(337), X(386), X(405), X(474), X(758), X(774), X(846), X(938), X(960), X(976), X(978), X(987), X(1046), X(1054)
+:canonical_id: X_986
+:subtitle: INTERSECTION OF LINES X_1X_3 AND X_8X_38
+:dependencies: X_1, X_3, X_4, X_6, X_8, X_10, X_38, X_43, X_72, X_75, X_100, X_194, X_240, X_257, X_291, X_337, X_386, X_405, X_474, X_758, X_774, X_846, X_938, X_960, X_976, X_978, X_987, X_1046, X_1054
 
-.. _X(986):
+.. _X_986:
 
-X(986) = INTERSECTION OF LINES X(1)X(3) AND X(8)X(38)
-=====================================================
+X_986
+=====
+
+.. rubric:: INTERSECTION OF LINES X_1X_3 AND X_8X_38
 
 .. enunciation::
 
-   :ref:`X(986) <X(986)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(987) <X(987)>`
+   :ref:`X_986 <X_986>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_987 <X_987>`
 
 .. figure:: x-00986.svg
-   :alt: X(986) = INTERSECTION OF LINES X(1)X(3) AND X(8)X(38)
+   :alt: X_986 — INTERSECTION OF LINES X_1X_3 AND X_8X_38
    :align: center
 
-   **X(986) = INTERSECTION OF LINES X(1)X(3) AND X(8)X(38)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_986** (*INTERSECTION OF LINES X_1X_3 AND X_8X_38*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 3} <{ 1, 3 }>`, :g:`{8, 38} <{ 8, 38 }>`
+   * **Related Centers:** :g:`X_987 <X_987>` (:ref:`ISOGONAL CONJUGATE OF X(986) <X_987>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_8 <X_8>` (:ref:`NAGEL POINT <X_8>`), :g:`X_38 <X_38>` (:ref:`CROSSPOINT OF X(1) AND X(75) <X_38>`)
 
 .. signature:: center
 
@@ -28,12 +37,12 @@ X(986) = INTERSECTION OF LINES X(1)X(3) AND X(8)X(38)
    :badge: 14 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`3 <X(3)>`}, {:ref:`4 <X(4)>`, :ref:`240 <X(240)>`}, {:ref:`6 <X(6)>`, 1046}, {:ref:`8 <X(8)>`, :ref:`38 <X(38)>`}, {:ref:`10 <X(10)>`, :ref:`75 <X(75)>`}, {:ref:`43 <X(43)>`, :ref:`72 <X(72)>`}, {:ref:`100 <X(100)>`, :ref:`976 <X(976)>`}, {:ref:`194 <X(194)>`, :ref:`257 <X(257)>`}, {:ref:`291 <X(291)>`, :ref:`337 <X(337)>`}, {:ref:`386 <X(386)>`, :ref:`758 <X(758)>`}, {:ref:`405 <X(405)>`, :ref:`846 <X(846)>`}, {:ref:`474 <X(474)>`, 1054}, {:ref:`774 <X(774)>`, :ref:`938 <X(938)>`}, {:ref:`960 <X(960)>`, :ref:`978 <X(978)>`}
+   {:ref:`1 <X_1>`, :ref:`3 <X_3>`}, {:ref:`4 <X_4>`, :ref:`240 <X_240>`}, {:ref:`6 <X_6>`, 1046}, {:ref:`8 <X_8>`, :ref:`38 <X_38>`}, {:ref:`10 <X_10>`, :ref:`75 <X_75>`}, {:ref:`43 <X_43>`, :ref:`72 <X_72>`}, {:ref:`100 <X_100>`, :ref:`976 <X_976>`}, {:ref:`194 <X_194>`, :ref:`257 <X_257>`}, {:ref:`291 <X_291>`, :ref:`337 <X_337>`}, {:ref:`386 <X_386>`, :ref:`758 <X_758>`}, {:ref:`405 <X_405>`, :ref:`846 <X_846>`}, {:ref:`474 <X_474>`, 1054}, {:ref:`774 <X_774>`, :ref:`938 <X_938>`}, {:ref:`960 <X_960>`, :ref:`978 <X_978>`}
 
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(986) <X(986)>` = isogonal conjugate of :ref:`X(987) <X(987)>`
+   * :ref:`X_986 <X_986>` = isogonal conjugate of :ref:`X_987 <X_987>`
 
 .. toctree::
    :hidden:

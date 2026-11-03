@@ -1,18 +1,21 @@
-:canonical_id: X(191)
+:canonical_id: X_191
 :type: code
+:subtitle: X_10-CEVA CONJUGATE OF X_1
 
-X(191) = X(10)-CEVA CONJUGATE OF X(1) — Code
-============================================
+X_191
+=====
+
+.. rubric:: X_10-CEVA CONJUGATE OF X_1
 
 .. enunciation::
 
-   Let :g:`I_{a} <I_a>` be the reflection of :ref:`X(1) <X(1)>` in the perpendicular bisector of :g:`BC <[ B C ]>`, and define :g:`I_{b} <I_b>` and :g:`I_{c} <I_c>` cyclically. :ref:`X(191) <X(191)>` = :ref:`X(21) <X(21)>` of :g:`I_{a}I_{b}I_{c} << I_a I_b I_c >>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
+   :ref:`X_191 <X_191>` = :ref:`X_10 <X_10>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_1 <X_1>`
 
 .. figure:: x-00191.svg
-   :alt: X(191) = X(10)-CEVA CONJUGATE OF X(1)
+   :alt: X_191 — X_10-CEVA CONJUGATE OF X_1
    :align: center
 
-   **X(191) = X(10)-CEVA CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_191** (*X_10-CEVA CONJUGATE OF X_1*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

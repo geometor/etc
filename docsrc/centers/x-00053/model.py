@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(53) = SYMMEDIAN POINT OF ORTHIC TRIANGLE."""
+"""GEOMETOR construction model for X_53 = SYMMEDIAN POINT OF ORTHIC TRIANGLE."""
 
 from __future__ import annotations
 
@@ -24,16 +24,16 @@ from geometor.etc.render import write_center_svg
 def construct_x_00053(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(53) = SYMMEDIAN POINT OF ORTHIC TRIANGLE on reference triangle ABC."""
-    X_53 = eval_trilinear_point(model, A, B, C, 'tan(A)*cos(B - C)', ID="X(53)", classes=["selected", "target"])
-    X_4 = orthocenter_of(model, A, B, C, ID="X(4)", classes=["center", "incident"])
-    X_6 = symmedian_point_of(model, A, B, C, ID="X(6)", classes=["center", "incident"])
+    """Construct X_53 = SYMMEDIAN POINT OF ORTHIC TRIANGLE on reference triangle ABC."""
+    X_53 = eval_trilinear_point(model, A, B, C, 'tan(A)*cos(B - C)', ID="X_53", classes=["selected", "target"])
+    X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
     central_line(model, X_4, X_6, 4, 6, incident=True)
-    X_25 = eval_trilinear_point(model, A, B, C, 'sin(A)*tan(A)', ID="X(25)", classes=["center", "incident"])
-    X_157 = point_from_barycentrics(model, A, B, C, 0.22698945, 0.13751531, 0.63549524, ID="X(157)", classes=["center", "incident"])
+    X_25 = eval_trilinear_point(model, A, B, C, 'sin(A)*tan(A)', ID="X_25", classes=["center", "incident"])
+    X_157 = point_from_barycentrics(model, A, B, C, 0.22698945, 0.13751531, 0.63549524, ID="X_157", classes=["center", "incident"])
     central_line(model, X_25, X_157, 25, 157, incident=True)
-    X_5 = nine_point_center_of(model, A, B, C, ID="X(5)", classes=["center", "incident"])
-    X_216 = eval_trilinear_point(model, A, B, C, 'sin(2*A)*cos(B - C)', ID="X(216)", classes=["center", "incident"])
+    X_5 = nine_point_center_of(model, A, B, C, ID="X_5", classes=["center", "incident"])
+    X_216 = eval_trilinear_point(model, A, B, C, 'sin(2*A)*cos(B - C)', ID="X_216", classes=["center", "incident"])
     central_line(model, X_5, X_216, 5, 216, incident=True)
     return promote_point_to_top(model, X_53)
 
@@ -42,8 +42,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(53) on the given reference triangle."""
-    model = create_model('X(53) = SYMMEDIAN POINT OF ORTHIC TRIANGLE')
+    """Build a `geometor.model.Model` for X_53 on the given reference triangle."""
+    model = create_model('X_53 = SYMMEDIAN POINT OF ORTHIC TRIANGLE')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00053(model, A, B, C)
     return model

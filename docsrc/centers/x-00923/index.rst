@@ -1,22 +1,31 @@
 :order: 923
 :type: center
-:canonical_id: X(923)
-:dependencies: X(1), X(6), X(31), X(42), X(101), X(111), X(163), X(213), X(512), X(662), X(691), X(692), X(741), X(14210), X(36060)
+:canonical_id: X_923
+:subtitle: POINT ALBIREO
+:dependencies: X_1, X_6, X_31, X_42, X_101, X_111, X_163, X_213, X_512, X_662, X_691, X_692, X_741, X_14210, X_36060
 
-.. _X(923):
+.. _X_923:
 
-X(923) = POINT ALBIREO
-======================
+X_923
+=====
+
+.. rubric:: POINT ALBIREO
 
 .. enunciation::
 
-   :ref:`X(923) <X(923)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(14210)
+   :ref:`X_923 <X_923>` = barycentric product :ref:`X_1 <X_1>`\ \*\ :ref:`X_111 <X_111>`
 
 .. figure:: x-00923.svg
-   :alt: X(923) = POINT ALBIREO
+   :alt: X_923 — POINT ALBIREO
    :align: center
 
-   **X(923) = POINT ALBIREO** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_923** (*POINT ALBIREO*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{42, 101} <{ 42, 101 }>`, :g:`{31, 163} <{ 31, 163 }>`
+   * **Related Centers:** :g:`X_42 <X_42>` (:ref:`CROSSPOINT OF INCENTER AND SYMMEDIAN POINT <X_42>`), :g:`X_101 <X_101>` (:ref:`Ψ(INCENTER, SYMMEDIAN POINT) <X_101>`), :g:`X_31 <X_31>` (:ref:`2nd POWER POINT <X_31>`), :g:`X_163 <X_163>` (:ref:`TRILINEAR PRODUCT X(6)*X(110) <X_163>`)
 
 .. signature:: center
 
@@ -28,17 +37,17 @@ X(923) = POINT ALBIREO
    :badge: 5 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`662 <X(662)>`}, {:ref:`31 <X(31)>`, :ref:`163 <X(163)>`}, {:ref:`42 <X(42)>`, :ref:`101 <X(101)>`}, {:ref:`213 <X(213)>`, :ref:`692 <X(692)>`}, {:ref:`691 <X(691)>`, :ref:`741 <X(741)>`}
+   {:ref:`1 <X_1>`, :ref:`662 <X_662>`}, {:ref:`31 <X_31>`, :ref:`163 <X_163>`}, {:ref:`42 <X_42>`, :ref:`101 <X_101>`}, {:ref:`213 <X_213>`, :ref:`692 <X_692>`}, {:ref:`691 <X_691>`, :ref:`741 <X_741>`}
 
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X(923) <X(923)>` = isogonal conjugate of X(14210)
-   * :ref:`X(923) <X(923)>` = barycentric product :ref:`X(1) <X(1)>`\ \*\ :ref:`X(111) <X(111)>`
-   * :ref:`X(923) <X(923)>` = trilinear product of circumcircle intercepts of Schoute circle
-   * :ref:`X(923) <X(923)>` = trilinear product of circumcircle intercepts of line :ref:`X(6) <X(6)>`\ \ :ref:`X(512) <X(512)>`
-   * :ref:`X(923) <X(923)>` = trilinear product :ref:`X(6) <X(6)>`\ \*\ :ref:`X(111) <X(111)>`
-   * :ref:`X(923) <X(923)>` = polar conjugate of :term:`isotomic conjugate <isotomic-conjugate>` of X(36060)
+   * :ref:`X_923 <X_923>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_14210
+   * :ref:`X_923 <X_923>` = barycentric product :ref:`X_1 <X_1>`\ \*\ :ref:`X_111 <X_111>`
+   * :ref:`X_923 <X_923>` = trilinear product of circumcircle intercepts of Schoute circle
+   * :ref:`X_923 <X_923>` = trilinear product of circumcircle intercepts of line :ref:`X_6 <X_6>`\ \ :ref:`X_512 <X_512>`
+   * :ref:`X_923 <X_923>` = trilinear product :ref:`X_6 <X_6>`\ \*\ :ref:`X_111 <X_111>`
+   * :ref:`X_923 <X_923>` = polar conjugate of :term:`isotomic conjugate <isotomic-conjugate>` of X_36060
 
 .. toctree::
    :hidden:

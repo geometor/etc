@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(100) = ANTICOMPLEMENT OF FEUERBACH POINT."""
+"""GEOMETOR construction model for X_100 = ANTICOMPLEMENT OF FEUERBACH POINT."""
 
 from __future__ import annotations
 
@@ -25,16 +25,16 @@ from geometor.etc.render import write_center_svg
 def construct_x_00100(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(100) = ANTICOMPLEMENT OF FEUERBACH POINT on reference triangle ABC."""
-    X_100 = eval_trilinear_point(model, A, B, C, '1/(b - c)', ID="X(100)", classes=["selected", "target"])
-    X_3 = circumcenter_of(model, A, B, C, ID="X(3)", classes=["center", "incident"])
-    X_8 = nagel_point_of(model, A, B, C, ID="X(8)", classes=["center", "incident"])
+    """Construct X_100 = ANTICOMPLEMENT OF FEUERBACH POINT on reference triangle ABC."""
+    X_100 = eval_trilinear_point(model, A, B, C, '1/(b - c)', ID="X_100", classes=["selected", "target"])
+    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
+    X_8 = nagel_point_of(model, A, B, C, ID="X_8", classes=["center", "incident"])
     central_line(model, X_3, X_8, 3, 8, incident=True)
-    X_2 = centroid_of(model, A, B, C, ID="X(2)", classes=["center", "incident"])
-    X_11 = feuerbach_point_of(model, A, B, C, ID="X(11)", classes=["center", "incident"])
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
+    X_11 = feuerbach_point_of(model, A, B, C, ID="X_11", classes=["center", "incident"])
     central_line(model, X_2, X_11, 2, 11, incident=True)
-    X_10 = spieker_center_of(model, A, B, C, ID="X(10)", classes=["center", "incident"])
-    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X(21)", classes=["center", "incident"])
+    X_10 = spieker_center_of(model, A, B, C, ID="X_10", classes=["center", "incident"])
+    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X_21", classes=["center", "incident"])
     central_line(model, X_10, X_21, 10, 21, incident=True)
     return promote_point_to_top(model, X_100)
 
@@ -43,8 +43,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(100) on the given reference triangle."""
-    model = create_model('X(100) = ANTICOMPLEMENT OF FEUERBACH POINT')
+    """Build a `geometor.model.Model` for X_100 on the given reference triangle."""
+    model = create_model('X_100 = ANTICOMPLEMENT OF FEUERBACH POINT')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00100(model, A, B, C)
     return model

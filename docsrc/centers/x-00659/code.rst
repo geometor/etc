@@ -1,18 +1,21 @@
-:canonical_id: X(659)
+:canonical_id: X_659
 :type: code
+:subtitle: CROSSDIFFERENCE OF X_1 AND X_39
 
-X(659) = CROSSDIFFERENCE OF X(1) AND X(39) — Code
-=================================================
+X_659
+=====
+
+.. rubric:: CROSSDIFFERENCE OF X_1 AND X_39
 
 .. enunciation::
 
-   :ref:`X(659) <X(659)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(660) <X(660)>`
+   :ref:`X_659 <X_659>` = :ref:`X_98 <X_98>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_11 <X_11>`
 
 .. figure:: x-00659.svg
-   :alt: X(659) = CROSSDIFFERENCE OF X(1) AND X(39)
+   :alt: X_659 — CROSSDIFFERENCE OF X_1 AND X_39
    :align: center
 
-   **X(659) = CROSSDIFFERENCE OF X(1) AND X(39)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_659** (*CROSSDIFFERENCE OF X_1 AND X_39*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

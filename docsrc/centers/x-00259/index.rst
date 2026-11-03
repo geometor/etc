@@ -1,22 +1,31 @@
 :order: 259
 :type: center
-:canonical_id: X(259)
-:dependencies: X(1), X(6), X(7), X(9), X(55), X(168), X(173), X(174), X(188), X(258), X(260), X(266), X(289), X(503)
+:canonical_id: X_259
+:subtitle: ISOGONAL CONJUGATE OF X_174
+:dependencies: X_1, X_6, X_7, X_9, X_55, X_168, X_173, X_174, X_188, X_258, X_260, X_266, X_289, X_503
 
-.. _X(259):
+.. _X_259:
 
-X(259) = ISOGONAL CONJUGATE OF X(174)
-=====================================
+X_259
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_174
 
 .. enunciation::
 
-   :ref:`X(259) <X(259)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(174) <X(174)>`
+   :ref:`X_259 <X_259>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_174 <X_174>`.
 
 .. figure:: x-00259.svg
-   :alt: X(259) = ISOGONAL CONJUGATE OF X(174)
+   :alt: X_259 — ISOGONAL CONJUGATE OF X_174
    :align: center
 
-   **X(259) = ISOGONAL CONJUGATE OF X(174)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_259** (*ISOGONAL CONJUGATE OF X_174*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 168} <{ 1, 168 }>`, :g:`{260, 266} <{ 260, 266 }>`
+   * **Related Centers:** :g:`X_174 <X_174>` (:ref:`YFF CENTER OF CONGRUENCE <X_174>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_168 <X_168>` (:ref:`MITTENPUNKT OF EXCENTRAL TRIANGLE <X_168>`), :g:`X_260 <X_260>` (:ref:`ISOGONAL CONJUGATE OF X(177) <X_260>`), :g:`X_266 <X_266>` (:ref:`ISOGONAL CONJUGATE OF X(188) <X_266>`)
 
 .. signature:: center
 
@@ -37,21 +46,21 @@ X(259) = ISOGONAL CONJUGATE OF X(174)
    :badge: 3 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`168 <X(168)>`}, {:ref:`258 <X(258)>`, :ref:`289 <X(289)>`}, {:ref:`260 <X(260)>`, :ref:`266 <X(266)>`}
+   {:ref:`1 <X_1>`, :ref:`168 <X_168>`}, {:ref:`258 <X_258>`, :ref:`289 <X_289>`}, {:ref:`260 <X_260>`, :ref:`266 <X_266>`}
 
 .. collapse:: Functional Relations
    :badge: 10 relations
 
-   * :ref:`X(259) <X(259)>` = isogonal conjugate of :ref:`X(174) <X(174)>`
-   * :ref:`X(259) <X(259)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`174 <X(174)>`, :ref:`266 <X(266)>`), (:ref:`260 <X(260)>`, :ref:`55 <X(55)>`)
-   * :ref:`X(259) <X(259)>` = :term:`cevapoint <cevapoint>` of :ref:`X(1) <X(1)>` and :ref:`X(503) <X(503)>`
-   * :ref:`X(259) <X(259)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`258 <X(258)>`), (:ref:`174 <X(174)>`, :ref:`188 <X(188)>`)
-   * :ref:`X(259) <X(259)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`173 <X(173)>`), (:ref:`259 <X(259)>`, :ref:`266 <X(266)>`)
-   * :ref:`X(259) <X(259)>` = SS(A→\ :g:`A' <A'>`) of :ref:`X(6) <X(6)>`, where :g:`A'B'C' << A' B' C' >>` is the excentral triangle
-   * :ref:`X(259) <X(259)>` = trilinear square root of :ref:`X(55) <X(55)>`
-   * :ref:`X(259) <X(259)>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of tangential mid-arc triangle
-   * :ref:`X(259) <X(259)>` = excentral-to-:g:`ABC << A B C >>` :term:`trilinear image <trilinear-image>` of :ref:`X(9) <X(9)>`
-   * :ref:`X(259) <X(259)>` = intouch-to-:g:`ABC << A B C >>` trilinear image of :ref:`X(7) <X(7)>`
+   * :ref:`X_259 <X_259>` = isogonal conjugate of :ref:`X_174 <X_174>`
+   * :ref:`X_259 <X_259>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`174 <X_174>`, :ref:`266 <X_266>`), (:ref:`260 <X_260>`, :ref:`55 <X_55>`)
+   * :ref:`X_259 <X_259>` = :term:`cevapoint <cevapoint>` of :ref:`X_1 <X_1>` and :ref:`X_503 <X_503>`
+   * :ref:`X_259 <X_259>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`258 <X_258>`), (:ref:`174 <X_174>`, :ref:`188 <X_188>`)
+   * :ref:`X_259 <X_259>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`173 <X_173>`), (:ref:`259 <X_259>`, :ref:`266 <X_266>`)
+   * :ref:`X_259 <X_259>` = SS(A→\ :g:`A' <A'>`) of :ref:`X_6 <X_6>`, where :g:`A'B'C' << A' B' C' >>` is the excentral triangle
+   * :ref:`X_259 <X_259>` = trilinear square root of :ref:`X_55 <X_55>`
+   * :ref:`X_259 <X_259>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of tangential mid-arc triangle
+   * :ref:`X_259 <X_259>` = excentral-to-:g:`ABC << A B C >>` :term:`trilinear image <trilinear-image>` of :ref:`X_9 <X_9>`
+   * :ref:`X_259 <X_259>` = intouch-to-:g:`ABC << A B C >>` trilinear image of :ref:`X_7 <X_7>`
 
 .. toctree::
    :hidden:

@@ -1,18 +1,21 @@
-:canonical_id: X(711)
+:canonical_id: X_711
 :type: code
+:subtitle: EVEN (- 4, 4) CIRCUMCIRCLE POINT
 
-X(711) = EVEN (- 4, 4) CIRCUMCIRCLE POINT — Code
-================================================
+X_711
+=====
+
+.. rubric:: EVEN (- 4, 4) CIRCUMCIRCLE POINT
 
 .. enunciation::
 
-   :ref:`X(711) <X(711)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(710) <X(710)>`
+   :ref:`X_711 <X_711>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_710 <X_710>`
 
 .. figure:: x-00711.svg
-   :alt: X(711) = EVEN (- 4, 4) CIRCUMCIRCLE POINT
+   :alt: X_711 — EVEN (- 4, 4) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(711) = EVEN (- 4, 4) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_711** (*EVEN (- 4, 4) CIRCUMCIRCLE POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

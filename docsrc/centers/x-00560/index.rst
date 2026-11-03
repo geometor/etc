@@ -1,22 +1,31 @@
 :order: 560
 :type: center
-:canonical_id: X(560)
-:dependencies: X(1), X(31), X(41), X(42), X(48), X(75), X(82), X(92), X(100), X(101), X(110), X(304), X(561), X(584), X(697), X(713), X(715), X(717), X(719), X(825), X(827), X(872), X(1928), X(16584), X(21235), X(21275), X(37843), X(38827)
+:canonical_id: X_560
+:subtitle: 4th POWER POINT
+:dependencies: X_1, X_31, X_41, X_42, X_48, X_75, X_82, X_92, X_100, X_101, X_110, X_304, X_561, X_584, X_697, X_713, X_715, X_717, X_719, X_825, X_827, X_872, X_1928, X_16584, X_21235, X_21275, X_37843, X_38827
 
-.. _X(560):
+.. _X_560:
 
-X(560) = 4th POWER POINT
-========================
+X_560
+=====
+
+.. rubric:: 4th POWER POINT
 
 .. enunciation::
 
-   :ref:`X(560) <X(560)>` is the :term:`vertex conjugate <vertex-conjugate>` of the foci of the inellipse that is the trilinear square of the Lemoine axis. The center of the inellipse is X(16584) and its Brianchon point (perspector) is :ref:`X(31) <X(31)>`. (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
+   :ref:`X_560 <X_560>` = :term:`crosssum <crosssum>` of :ref:`X_75 <X_75>` and :ref:`X_304 <X_304>`
 
 .. figure:: x-00560.svg
-   :alt: X(560) = 4th POWER POINT
+   :alt: X_560 — 4th POWER POINT
    :align: center
 
-   **X(560) = 4th POWER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_560** (*4th POWER POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{31, 48} <{ 31, 48 }>`, :g:`{1, 82} <{ 1, 82 }>`
+   * **Related Centers:** :g:`X_561 <X_561>` (:ref:`ISOGONAL CONJUGATE OF 4th POWER POINT <X_561>`), :g:`X_31 <X_31>` (:ref:`2nd POWER POINT <X_31>`), :g:`X_48 <X_48>` (:ref:`CROSSPOINT OF X(1) AND X(63) <X_48>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_82 <X_82>` (:ref:`ISOGONAL CONJUGATE OF X(38) <X_82>`)
 
 .. signature:: center
 
@@ -36,20 +45,27 @@ X(560) = 4th POWER POINT
    :badge: 9 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`82 <X(82)>`}, {:ref:`31 <X(31)>`, :ref:`48 <X(48)>`}, {:ref:`41 <X(41)>`, :ref:`872 <X(872)>`}, {:ref:`42 <X(42)>`, :ref:`584 <X(584)>`}, {:ref:`100 <X(100)>`, :ref:`697 <X(697)>`}, {:ref:`101 <X(101)>`, :ref:`713 <X(713)>`}, {:ref:`110 <X(110)>`, :ref:`715 <X(715)>`}, {:ref:`717 <X(717)>`, :ref:`825 <X(825)>`}, {:ref:`719 <X(719)>`, :ref:`827 <X(827)>`}
+   {:ref:`1 <X_1>`, :ref:`82 <X_82>`}, {:ref:`31 <X_31>`, :ref:`48 <X_48>`}, {:ref:`41 <X_41>`, :ref:`872 <X_872>`}, {:ref:`42 <X_42>`, :ref:`584 <X_584>`}, {:ref:`100 <X_100>`, :ref:`697 <X_697>`}, {:ref:`101 <X_101>`, :ref:`713 <X_713>`}, {:ref:`110 <X_110>`, :ref:`715 <X_715>`}, {:ref:`717 <X_717>`, :ref:`825 <X_825>`}, {:ref:`719 <X_719>`, :ref:`827 <X_827>`}
 
 .. collapse:: Functional Relations
    :badge: 9 relations
 
-   * :ref:`X(560) <X(560)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(561) <X(561)>`
-   * :ref:`X(560) <X(560)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(1928)
-   * :ref:`X(560) <X(560)>` = :term:`complement <complement>` of X(21275)
-   * :ref:`X(560) <X(560)>` = :term:`anticomplement <anticomplement>` of X(21235)
-   * :ref:`X(560) <X(560)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of anticomplement of X(38827)
-   * :ref:`X(560) <X(560)>` = :term:`crosssum <crosssum>` of :ref:`X(75) <X(75)>` and :ref:`X(304) <X(304)>`
-   * :ref:`X(560) <X(560)>` = antigonal conjugate of X(37843)
-   * :ref:`X(560) <X(560)>` = barycentric product of PU(9)
-   * :ref:`X(560) <X(560)>` = :ref:`X(92) <X(92)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(304) <X(304)>`
+   * :ref:`X_560 <X_560>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_561 <X_561>`
+   * :ref:`X_560 <X_560>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_1928
+   * :ref:`X_560 <X_560>` = :term:`complement <complement>` of X_21275
+   * :ref:`X_560 <X_560>` = :term:`anticomplement <anticomplement>` of X_21235
+   * :ref:`X_560 <X_560>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of anticomplement of X_38827
+   * :ref:`X_560 <X_560>` = crosssum of :ref:`X_75 <X_75>` and :ref:`X_304 <X_304>`
+   * :ref:`X_560 <X_560>` = antigonal conjugate of X_37843
+   * :ref:`X_560 <X_560>` = barycentric product of PU(9)
+   * :ref:`X_560 <X_560>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_304 <X_304>`
+
+Notes
+-----
+
+.. container:: note-item
+
+   :ref:`X_560 <X_560>` is the :term:`vertex conjugate <vertex-conjugate>` of the foci of the inellipse that is the trilinear square of the Lemoine axis. The center of the inellipse is X_16584 and its Brianchon point (perspector) is :ref:`X_31 <X_31>`. (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
 
 .. toctree::
    :hidden:

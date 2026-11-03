@@ -1,18 +1,21 @@
-:canonical_id: X(429)
+:canonical_id: X_429
 :type: code
+:subtitle: EULER X_58-5th-SUBSTITUTION POINT
 
-X(429) = EULER X(58)-5th-SUBSTITUTION POINT — Code
-==================================================
+X_429
+=====
+
+.. rubric:: EULER X_58-5th-SUBSTITUTION POINT
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(429) <X(429)>` has Shinagawa coefficients :math:`(\$a\$F,\$a\$(E + F) + 2abc)`.
+   :ref:`X_429 <X_429>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_1798
 
 .. figure:: x-00429.svg
-   :alt: X(429) = EULER X(58)-5th-SUBSTITUTION POINT
+   :alt: X_429 — EULER X_58-5th-SUBSTITUTION POINT
    :align: center
 
-   **X(429) = EULER X(58)-5th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_429** (*EULER X_58-5th-SUBSTITUTION POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

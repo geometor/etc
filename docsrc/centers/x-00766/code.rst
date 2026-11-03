@@ -1,18 +1,21 @@
-:canonical_id: X(766)
+:canonical_id: X_766
 :type: code
+:subtitle: EVEN (3, 4) INFINITY POINT
 
-X(766) = EVEN (3, 4) INFINITY POINT — Code
-==========================================
+X_766
+=====
+
+.. rubric:: EVEN (3, 4) INFINITY POINT
 
 .. enunciation::
 
-   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X(766) <X(766)>` lies on the line at infinity.
+   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X_766 <X_766>` lies on the line at infinity.
 
 .. figure:: x-00766.svg
-   :alt: X(766) = EVEN (3, 4) INFINITY POINT
+   :alt: X_766 — EVEN (3, 4) INFINITY POINT
    :align: center
 
-   **X(766) = EVEN (3, 4) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_766** (*EVEN (3, 4) INFINITY POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

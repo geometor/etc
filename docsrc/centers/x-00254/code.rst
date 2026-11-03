@@ -1,18 +1,21 @@
-:canonical_id: X(254)
+:canonical_id: X_254
 :type: code
+:subtitle: X_3-CROSS CONJUGATE OF X_4
 
-X(254) = X(3)-CROSS CONJUGATE OF X(4) — Code
-============================================
+X_254
+=====
+
+.. rubric:: X_3-CROSS CONJUGATE OF X_4
 
 .. enunciation::
 
-   :ref:`X(254) <X(254)>` = reflection of X(33495) in :ref:`X(3) <X(3)>`
+   :ref:`X_254 <X_254>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_155 <X_155>`
 
 .. figure:: x-00254.svg
-   :alt: X(254) = X(3)-CROSS CONJUGATE OF X(4)
+   :alt: X_254 — X_3-CROSS CONJUGATE OF X_4
    :align: center
 
-   **X(254) = X(3)-CROSS CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_254** (*X_3-CROSS CONJUGATE OF X_4*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,14 +1,17 @@
-:canonical_id: X(557)
+:canonical_id: X_557
 :type: code
+:subtitle: (X_1,X_9)-ANSWER TO QUESTION A
 
-X(557) = (X(1),X(9))-ANSWER TO QUESTION A — Code
-================================================
+X_557
+=====
+
+.. rubric:: (X_1,X_9)-ANSWER TO QUESTION A
 
 .. figure:: x-00557.svg
-   :alt: X(557) = (X(1),X(9))-ANSWER TO QUESTION A
+   :alt: X_557 — (X_1,X_9)-ANSWER TO QUESTION A
    :align: center
 
-   **X(557) = (X(1),X(9))-ANSWER TO QUESTION A** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_557** (*(X_1,X_9)-ANSWER TO QUESTION A*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

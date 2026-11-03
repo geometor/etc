@@ -1,18 +1,21 @@
-:canonical_id: X(307)
+:canonical_id: X_307
 :type: code
+:subtitle: ISOTOMIC CONJUGATE OF X_29
 
-X(307) = ISOTOMIC CONJUGATE OF X(29) — Code
-===========================================
+X_307
+=====
+
+.. rubric:: ISOTOMIC CONJUGATE OF X_29
 
 .. enunciation::
 
-   :ref:`X(307) <X(307)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(2299)
+   :ref:`X_307 <X_307>` is the :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_29 <X_29>`.
 
 .. figure:: x-00307.svg
-   :alt: X(307) = ISOTOMIC CONJUGATE OF X(29)
+   :alt: X_307 — ISOTOMIC CONJUGATE OF X_29
    :align: center
 
-   **X(307) = ISOTOMIC CONJUGATE OF X(29)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_307** (*ISOTOMIC CONJUGATE OF X_29*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

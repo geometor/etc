@@ -1,4 +1,4 @@
-"""GEOMETOR construction model for X(166) = GERGONNE POINT OF EXCENTRAL TRIANGLE."""
+"""GEOMETOR construction model for X_166 = GERGONNE POINT OF EXCENTRAL TRIANGLE."""
 
 from __future__ import annotations
 
@@ -22,14 +22,14 @@ from geometor.etc.render import write_center_svg
 def construct_x_00166(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
-    """Construct X(166) = GERGONNE POINT OF EXCENTRAL TRIANGLE on reference triangle ABC."""
-    X_165 = eval_trilinear_point(model, A, B, C, 'tan(B/2) + tan(C/2) - tan(A/2)', ID="X(165)", classes=["center"])
-    X_168 = eval_trilinear_point(model, A, B, C, 'sin(A) - sin(B) - sin(C) + 2*(cos(A/2) + sin(B/2 - A/2) + sin(C/2 - A/2))', ID="X(168)", classes=["center"])
-    X_167 = point_from_barycentrics(model, A, B, C, 0.58849841, 0.49152493, -0.080023337, ID="X(167)", classes=["center"])
-    X_188 = eval_trilinear_point(model, A, B, C, 'csc(A/2)', ID="X(188)", classes=["center"])
+    """Construct X_166 = GERGONNE POINT OF EXCENTRAL TRIANGLE on reference triangle ABC."""
+    X_165 = eval_trilinear_point(model, A, B, C, 'tan(B/2) + tan(C/2) - tan(A/2)', ID="X_165", classes=["center"])
+    X_168 = eval_trilinear_point(model, A, B, C, 'sin(A) - sin(B) - sin(C) + 2*(cos(A/2) + sin(B/2 - A/2) + sin(C/2 - A/2))', ID="X_168", classes=["center"])
+    X_167 = point_from_barycentrics(model, A, B, C, 0.58849841, 0.49152493, -0.080023337, ID="X_167", classes=["center"])
+    X_188 = eval_trilinear_point(model, A, B, C, 'csc(A/2)', ID="X_188", classes=["center"])
     central_line(model, X_165, X_168, 165, 168)
     central_line(model, X_167, X_188, 167, 188)
-    X_166 = intersect_lines(model, X_165, X_168, X_167, X_188, ID="X(166)", classes=["selected", "target"])
+    X_166 = intersect_lines(model, X_165, X_168, X_167, X_188, ID="X_166", classes=["selected", "target"])
     return promote_point_to_top(model, X_166)
 
 
@@ -37,8 +37,8 @@ def build_model(
     sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
     show_guides: bool = False,
 ) -> Model:
-    """Build a `geometor.model.Model` for X(166) on the given reference triangle."""
-    model = create_model('X(166) = GERGONNE POINT OF EXCENTRAL TRIANGLE')
+    """Build a `geometor.model.Model` for X_166 on the given reference triangle."""
+    model = create_model('X_166 = GERGONNE POINT OF EXCENTRAL TRIANGLE')
     A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
     construct_x_00166(model, A, B, C)
     return model

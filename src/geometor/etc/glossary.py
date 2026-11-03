@@ -39,23 +39,31 @@ CLASSICAL_TRIANGLE_ALIASES: dict[str, dict[str, str]] = {
     },
     "orthic triangle": {
         "target_slug": "cevian-triangle",
-        "definition": "The cevian (and pedal) triangle of the orthocenter X(4) = sec A : sec B : sec C, whose vertices are the feet of the altitudes of ABC.",
+        "definition": "The cevian (and pedal) triangle of the orthocenter X_4 = sec A : sec B : sec C, whose vertices are the feet of the altitudes of ABC.",
     },
     "intouch triangle": {
         "target_slug": "cevian-triangle",
-        "definition": "The cevian triangle of the Gergonne point X(7) (also the pedal triangle of the incenter X(1)), whose vertices are the points of tangency of the incircle with the sides of ABC.",
+        "definition": "The cevian triangle of the Gergonne point X_7 (also the pedal triangle of the incenter X_1), whose vertices are the points of tangency of the incircle with the sides of ABC.",
+    },
+    "contact triangle": {
+        "target_slug": "intouch-triangle",
+        "definition": "Synonym for the intouch triangle, whose vertices are the contact points of the incircle with sides BC, CA, AB.",
     },
     "extouch triangle": {
         "target_slug": "cevian-triangle",
-        "definition": "The cevian triangle of the Nagel point X(8), whose vertices are the points of tangency of the A-, B-, C-excircles with sides BC, CA, AB.",
+        "definition": "The cevian triangle of the Nagel point X_8, whose vertices are the points of tangency of the A-, B-, C-excircles with sides BC, CA, AB.",
+    },
+    "symmedial triangle": {
+        "target_slug": "cevian-triangle",
+        "definition": "The cevian triangle of the symmedian point X_6 = a : b : c, whose vertices are the intersections of the symmedians with sidelines BC, CA, AB.",
     },
     "excentral triangle": {
         "target_slug": "anticevian-triangle",
-        "definition": "The anticevian triangle of the incenter X(1) = 1 : 1 : 1, whose vertices are the three excenters of ABC.",
+        "definition": "The anticevian triangle of the incenter X_1 = 1 : 1 : 1, whose vertices are the three excenters of ABC.",
     },
     "tangential triangle": {
         "target_slug": "anticevian-triangle",
-        "definition": "The anticevian triangle of the symmedian point X(6) = a : b : c, formed by the lines tangent to the circumcircle of ABC at vertices A, B, C.",
+        "definition": "The anticevian triangle of the symmedian point X_6 = a : b : c, formed by the lines tangent to the circumcircle of ABC at vertices A, B, C.",
     },
     "pedal triangle": {
         "target_slug": "central-triangle",
@@ -64,6 +72,70 @@ CLASSICAL_TRIANGLE_ALIASES: dict[str, dict[str, str]] = {
     "antipedal triangle": {
         "target_slug": "central-triangle",
         "definition": "For a point P, the triangle A'B'C' formed by the lines through A, B, C perpendicular to AP, BP, CP respectively.",
+    },
+    "circummedial triangle": {
+        "target_slug": "central-triangle",
+        "definition": "The circumcevian triangle of the centroid X_2, whose vertices are the second intersections of the medians of ABC with the circumcircle.",
+    },
+    "Euler triangle": {
+        "target_slug": "central-triangle",
+        "definition": "Also called the 1st Euler triangle or Feuerbach triangle; its vertices are the midpoints of the segments joining A, B, C to the orthocenter X_4.",
+    },
+    "1st Euler triangle": {
+        "target_slug": "euler-triangle",
+        "definition": "The triangle whose vertices are the midpoints of the segments joining A, B, C to the orthocenter X_4 (also called the Euler or Feuerbach triangle).",
+    },
+    "2nd Euler triangle": {
+        "target_slug": "euler-triangle",
+        "definition": "Triangle associated with the nine-point circle and orthic configuration, perspective to ABC at the Prasolov point X_68.",
+    },
+    "Feuerbach triangle": {
+        "target_slug": "euler-triangle",
+        "definition": "The triangle formed by the three points of tangency of the nine-point circle with the A-, B-, C-excircles (or in some notes, the 1st Euler triangle).",
+    },
+    "reflection triangle": {
+        "target_slug": "central-triangle",
+        "definition": "The triangle whose vertices are the reflections of vertices A, B, C across their opposite sidelines BC, CA, AB.",
+    },
+    "Kosnita triangle": {
+        "target_slug": "central-triangle",
+        "definition": "The triangle whose vertices are the circumcenters O_A, O_B, O_C of triangles BOC, COA, AOB, where O = X_3 is the circumcenter of ABC; perspective to ABC at the Kosnita point X_54.",
+    },
+    "Fuhrmann triangle": {
+        "target_slug": "central-triangle",
+        "definition": "The triangle formed by reflecting the midpoints of the minor arcs BC, CA, AB of the circumcircle across the sidelines BC, CA, AB.",
+    },
+    "intangents triangle": {
+        "target_slug": "central-triangle",
+        "definition": "The triangle bounded by the non-sideline tangents to the incircle that are reflections of the sidelines in the interior angle bisectors.",
+    },
+    "extangents triangle": {
+        "target_slug": "central-triangle",
+        "definition": "The triangle bounded by the external common tangents to pairs of excircles (equivalently, reflections of sidelines in the exterior angle bisectors).",
+    },
+    "1st Brocard triangle": {
+        "target_slug": "central-triangle",
+        "definition": "Triangle inscribed in the Brocard circle whose vertices are the projections of the symmedian point X_6 onto the perpendicular bisectors of the sides.",
+    },
+    "2nd Brocard triangle": {
+        "target_slug": "central-triangle",
+        "definition": "Triangle inscribed in the Brocard circle whose vertices are the intersections of the symmedians with the Brocard circle.",
+    },
+    "outer Napoleon triangle": {
+        "target_slug": "central-triangle",
+        "definition": "The equilateral triangle formed by the centers of the equilateral triangles erected outward on sides BC, CA, AB; perspective to ABC at X_17.",
+    },
+    "inner Napoleon triangle": {
+        "target_slug": "central-triangle",
+        "definition": "The equilateral triangle formed by the centers of the equilateral triangles erected inward on sides BC, CA, AB; perspective to ABC at X_18.",
+    },
+    "hexyl triangle": {
+        "target_slug": "central-triangle",
+        "definition": "The triangle formed by the intersections of the lines through the excenters perpendicular to the corresponding interior angle bisectors.",
+    },
+    "half-altitude triangle": {
+        "target_slug": "central-triangle",
+        "definition": "The triangle whose vertices are the midpoints of the altitudes AA_h, BB_h, CC_h of triangle ABC.",
     },
 }
 
@@ -175,55 +247,55 @@ PERSONS_REGISTRY: dict[str, dict[str, str]] = {
     "leonhard-euler": {
         "name": "Leonhard Euler",
         "dates": "1707–1783",
-        "role": "Swiss mathematician who proved in 1765 that the orthocenter X(4), circumcenter X(3), centroid X(2), and nine-point center X(5) are collinear on the Euler line.",
+        "role": "Swiss mathematician who proved in 1765 that the orthocenter X_4, circumcenter X_3, centroid X_2, and nine-point center X_5 are collinear on the Euler line.",
         "aliases": ["Leonhard Euler"],
     },
     "karl-wilhelm-feuerbach": {
         "name": "Karl Wilhelm Feuerbach",
         "dates": "1800–1834",
-        "role": "German geometer who proved in 1822 that the nine-point circle is tangent to the incircle at the Feuerbach point X(11) and to the three excircles.",
+        "role": "German geometer who proved in 1822 that the nine-point circle is tangent to the incircle at the Feuerbach point X_11 and to the three excircles.",
         "aliases": ["Karl Wilhelm Feuerbach"],
     },
     "emile-lemoine": {
         "name": "Émile Michel Hyacinthe Lemoine",
         "dates": "1840–1912",
-        "role": "French mathematician and co-founder of modern triangle geometry; studied the symmedian point X(6) (Lemoine point) and Lemoine circles.",
+        "role": "French mathematician and co-founder of modern triangle geometry; studied the symmedian point X_6 (Lemoine point) and Lemoine circles.",
         "aliases": ["Émile Lemoine", "Emile Lemoine"],
     },
     "ernst-wilhelm-grebe": {
         "name": "Ernst Wilhelm Grebe",
         "dates": "1804–1874",
-        "role": "German mathematician who investigated the symmedian point X(6) (Grebe point) in 1847.",
+        "role": "German mathematician who investigated the symmedian point X_6 (Grebe point) in 1847.",
         "aliases": ["Ernst Wilhelm Grebe"],
     },
     "joseph-diaz-gergonne": {
         "name": "Joseph Diaz Gergonne",
         "dates": "1771–1859",
-        "role": "French geometer after whom the Gergonne point X(7) (perspector of the intouch triangle) and Gergonne line are named.",
+        "role": "French geometer after whom the Gergonne point X_7 (perspector of the intouch triangle) and Gergonne line are named.",
         "aliases": ["Joseph Diaz Gergonne"],
     },
     "christian-heinrich-von-nagel": {
         "name": "Christian Heinrich von Nagel",
         "dates": "1803–1882",
-        "role": "German geometer who studied the Nagel point X(8) (perspector of the extouch triangle) and Nagel line in 1836.",
+        "role": "German geometer who studied the Nagel point X_8 (perspector of the extouch triangle) and Nagel line in 1836.",
         "aliases": ["Christian Heinrich von Nagel"],
     },
     "theodor-spieker": {
         "name": "Theodor Spieker",
         "dates": "1823–1913",
-        "role": "German geometer who discovered the Spieker center X(10) (incenter of the medial triangle and center of mass of the perimeter of ABC).",
+        "role": "German geometer who discovered the Spieker center X_10 (incenter of the medial triangle and center of mass of the perimeter of ABC).",
         "aliases": ["Theodor Spieker"],
     },
     "pierre-de-fermat": {
         "name": "Pierre de Fermat",
         "dates": "1607–1665",
-        "role": "French mathematician who posed the problem of finding the point X(13) minimizing the sum of distances |AX| + |BX| + |CX| to the vertices of ABC.",
+        "role": "French mathematician who posed the problem of finding the point X_13 minimizing the sum of distances |AX| + |BX| + |CX| to the vertices of ABC.",
         "aliases": ["Pierre de Fermat"],
     },
     "evangelista-torricelli": {
         "name": "Evangelista Torricelli",
         "dates": "1608–1647",
-        "role": "Italian physicist and mathematician who solved Fermat's problem via equilateral triangles erected on the sides of ABC, locating X(13) and X(14).",
+        "role": "Italian physicist and mathematician who solved Fermat's problem via equilateral triangles erected on the sides of ABC, locating X_13 and X_14.",
         "aliases": ["Evangelista Torricelli"],
     },
     "henri-brocard": {
@@ -241,31 +313,31 @@ PERSONS_REGISTRY: dict[str, dict[str, str]] = {
     "gaston-darboux": {
         "name": "Jean-Gaston Darboux",
         "dates": "1842–1917",
-        "role": "French geometer after whom the Darboux cubic (K004) and Darboux point X(20) (with De Longchamps) are named.",
+        "role": "French geometer after whom the Darboux cubic (K004) and Darboux point X_20 (with De Longchamps) are named.",
         "aliases": ["Gaston Darboux"],
     },
     "gohier-de-longchamps": {
         "name": "Gaston Albert Gohier de Longchamps",
         "dates": "1842–1906",
-        "role": "French mathematician who studied the De Longchamps point X(20) (reflection of the orthocenter in the circumcenter) and De Longchamps line.",
+        "role": "French mathematician who studied the De Longchamps point X_20 (reflection of the orthocenter in the circumcenter) and De Longchamps line.",
         "aliases": ["De Longchamps"],
     },
     "kurt-hofstadter": {
         "name": "Douglas Richard Hofstadter",
         "dates": "b. 1945",
-        "role": "Cognitive scientist and geometer who discovered the Hofstadter points, including the Hofstadter zero point X(359) and one point X(360).",
+        "role": "Cognitive scientist and geometer who discovered the Hofstadter points, including the Hofstadter zero point X_359 and one point X_360.",
         "aliases": ["Douglas Hofstadter"],
     },
     "cyril-parry": {
         "name": "Cyril F. Parry",
         "dates": "1915–1999",
-        "role": "British geometer who discovered the Parry point X(111), the Parry circle, and the Parry reflection property.",
+        "role": "British geometer who discovered the Parry point X_111, the Parry circle, and the Parry reflection property.",
         "aliases": ["Cyril Parry", "C. F. Parry"],
     },
     "peter-yff": {
         "name": "Peter Yff",
         "dates": "1924–2016",
-        "role": "Geometer who discovered the Yff center of congruence X(174), Yff parabolic point X(190), and Yff central triangles.",
+        "role": "Geometer who discovered the Yff center of congruence X_174, Yff parabolic point X_190, and Yff central triangles.",
         "aliases": ["Peter Yff"],
     },
 }
@@ -283,7 +355,7 @@ CITATIONS_REGISTRY: dict[str, dict[str, str]] = {
         "author": "Clark Kimberling",
         "work": "Central Points and Central Lines in the Plane of a Triangle",
         "locus": "Mathematics Magazine 67 (1994), 163–187",
-        "notes": "Landmark paper introducing the systematic indexing of triangle centers X(n) and central lines L(n).",
+        "notes": "Landmark paper introducing the systematic indexing of triangle centers X_n and central lines L(n).",
     },
     "kimberling-2002-fg": {
         "author": "Clark Kimberling",
@@ -541,9 +613,11 @@ def convert_inline_html_to_rst(
         xm = re.search(r"#X(\d+)$", href, re.IGNORECASE)
         if xm:
             xnum = int(xm.group(1))
+            inner_norm = re.sub(r"\bX\((\d+)\)", r"X_\1", inner_clean)
+            inner_norm_esc = re.sub(r"\bX\((\d+)\)", r"X_\1", inner_escaped)
             if valid_centers is None or xnum in valid_centers:
-                return _stash(f":ref:`{inner_clean} <X({xnum})>`")
-            return _stash(f"**{inner_escaped}**")
+                return _stash(f":ref:`{inner_norm} <X_{xnum}>`")
+            return _stash(f"**{inner_norm_esc}**")
 
         # Internal glossary anchor (#term)
         if "glossary.html#" in href.lower() or href.startswith("#"):
@@ -585,9 +659,9 @@ def convert_inline_html_to_rst(
     )
 
     # 2. Stash subscripted geometric elements (triangles, segments, points/lines/circles) as :g: roles
-    _v_html_unit = r"[A-QT-Zℓ]['′″]*(?:<sub>[^<]+</sub>)?['′″]*"
+    _v_html_unit = r"[A-QT-Zℓ]['′″]*(?:<sub>[^<]+</sub>|[a-c1-9])?['′″]*"
     _v_html_item_re = re.compile(
-        r"([A-QT-Zℓ])(['′″]*)(?:<sub>([^<]+)</sub>)?(['′″]*)"
+        r"([A-QT-Zℓ])(['′″]*)(?:<sub>([^<]+)</sub>|([a-c1-9]))?(['′″]*)"
     )
 
     def _parse_html_vertex(v_str: str) -> tuple[str, str]:
@@ -596,8 +670,8 @@ def convert_inline_html_to_rst(
             return v_str, v_str
         base = vm.group(1)
         pr1 = (vm.group(2) or "").replace("′", "'").replace("''", "″")
-        sub = _remove_html_tags(vm.group(3) or "").strip()
-        pr2 = (vm.group(4) or "").replace("′", "'").replace("''", "″")
+        sub = _remove_html_tags(vm.group(3) or vm.group(4) or "").strip()
+        pr2 = (vm.group(5) or "").replace("′", "'").replace("''", "″")
         if sub:
             return f"{base}{pr1}_{{{sub}}}{pr2}", f"{base}{pr1}_{sub}{pr2}"
         return f"{base}{pr1}{pr2}", f"{base}{pr1}{pr2}"
@@ -818,22 +892,22 @@ def convert_inline_html_to_rst(
 def _wrap_x_refs_simple(
     text: str, valid_centers: set[int] | None = None
 ) -> str:
-    """Wrap X(n) and X[n] references in :ref:`X(n) <X(n)>` when n is in valid_centers."""
+    """Wrap X(n), X[n], and X_n references in :ref:`X_n <X_n>` when n is in valid_centers."""
     if not text:
         return ""
 
-    pattern = re.compile(r"(?<![a-z`:])X[\(\[](\d+)[\)\]](?!`)")
+    pattern = re.compile(r"(?<![a-z`:])X(?:[\(\[](\d+)[\)\]]|_(\d+))(?!`)")
 
     def _repl_seg(seg: str) -> str:
         out: list[str] = []
         last_idx = 0
         for m in pattern.finditer(seg):
-            num_str = m.group(1)
+            num_str = m.group(1) or m.group(2)
             num = int(num_str)
             start, end = m.start(), m.end()
             out.append(seg[last_idx:start])
             if valid_centers is not None and num not in valid_centers:
-                out.append(f"X({num_str})")
+                out.append(f"X_{num_str}")
             else:
                 prev_ch = seg[start - 1] if start > 0 else " "
                 next_ch = seg[end] if end < len(seg) else " "
@@ -843,7 +917,7 @@ def _wrap_x_refs_simple(
                 need_post = next_ch not in " \t\n-.,:;!?/'\")>]}"
                 prefix = r"\ " if need_pre else ""
                 suffix = r"\ " if need_post else ""
-                out.append(f"{prefix}:ref:`X({num_str}) <X({num_str})>`{suffix}")
+                out.append(f"{prefix}:ref:`X_{num_str} <X_{num_str}>`{suffix}")
             last_idx = end
         out.append(seg[last_idx:])
         return "".join(out)
@@ -854,7 +928,7 @@ def _wrap_x_refs_simple(
 def filter_center_refs(
     rst_text: str, valid_centers: set[int] | None
 ) -> str:
-    """Downgrade any `:ref:`label <X(n)>`` to plain `label` when `n` is not in `valid_centers`."""
+    """Downgrade any `:ref:`label <X_n>`` to plain `label` when `n` is not in `valid_centers`."""
     if not rst_text or valid_centers is None:
         return rst_text
 
@@ -865,7 +939,7 @@ def filter_center_refs(
             return m.group(0)
         return label
 
-    return re.sub(r":ref:`([^`<]+?)\s*<X\((\d+)\)>`", _check_ref, rst_text)
+    return re.sub(r":ref:`([^`<]+?)\s*<X(?:_|\()(\d+)\)?\>`", _check_ref, rst_text)
 
 
 def _format_eqn_line_html(ln_html: str) -> str:
@@ -1348,25 +1422,26 @@ _RADII_UNSUB_RE = re.compile(
     r"(?<![A-Za-z0-9_\x00])R([abcs])(['′]?)(?![A-Za-z0-9_'′\x00])"
 )
 _PRIMED_1V_RE = re.compile(
-    r"(?<![A-Za-z0-9_\x00])([A-QT-Z])(''|″|\"|'|′|\\\*|\*)(?![A-Za-z0-9_'′″\"*\x00])"
+    r"(?<![A-Za-z0-9_\x00])([A-Z])(''|″|\"|'|′|\\\*|\*)(?![A-Za-z0-9_'′″\"*\x00])"
 )
 _TRI_AUX_POINTS = {
-    "P", "Q", "X", "O", "H", "I", "G", "K", "N", "F", "U", "V", "S"
+    "P", "Q", "X", "Y", "Z", "O", "H", "I", "G", "K", "N", "F", "U", "V", "S"
 }
 _NAMED_3V_TUPLES = {
     ("D", "E", "F"),
     ("U", "V", "W"),
+    ("X", "Y", "Z"),
     ("P", "Q", "X"),
     ("A", "D", "E"),
     ("A", "E", "F"),
 }
 _SEG_AUX_POINTS = {
-    "P", "Q", "X", "O", "H", "I", "K", "D", "E", "F", "U", "V"
+    "P", "Q", "X", "Y", "Z", "O", "H", "I", "K", "D", "E", "F", "U", "V"
 }
 _NAMED_2V_PAIRS = {
     "PQ", "PX", "PO", "PU", "OI", "OG", "OP", "QO", "IO",
     "DE", "EF", "FD", "DU", "EV", "FW", "DV", "DW", "EU", "EW", "FU", "FV",
-    "UV", "VW", "WU", "XY",
+    "UV", "VW", "WU", "XY", "YZ", "ZX",
 }
 
 
@@ -1375,10 +1450,141 @@ def _norm_plain_vertex(v: str) -> tuple[str, str]:
     return v_clean, v_clean
 
 
+_LOCAL_TRIANGLE_BINDING_RULES: list[tuple[re.Pattern[str], tuple[str, str, str], str]] = [
+    (re.compile(r"\borthic\s+triangle\b", re.I), ("H_a", "H_b", "H_c"), "orthic"),
+    (re.compile(r"\bmedial\s+triangle\b", re.I), ("M_a", "M_b", "M_c"), "medial"),
+    (re.compile(r"\b(?:intouch|contact)\s+triangle\b", re.I), ("T_a", "T_b", "T_c"), "intouch"),
+    (re.compile(r"\bextouch\s+triangle\b", re.I), ("N_a", "N_b", "N_c"), "extouch"),
+    (re.compile(r"\bexcentral\s+triangle\b", re.I), ("J_a", "J_b", "J_c"), "excentral"),
+    (re.compile(r"\b(?:tangential\s+triangle|antipedal\s+triangle\s+of\s+X\(3\))\b", re.I), ("Tan_a", "Tan_b", "Tan_c"), "tangential"),
+    (re.compile(r"\banticomplementary\s+triangle\b", re.I), ("K_a", "K_b", "K_c"), "anticomplementary"),
+    (re.compile(r"\b(?:incentral\s+triangle|cevian\s+triangle\s+of\s+(?:X\(1\)|the\s+incenter))\b", re.I), ("I_a", "I_b", "I_c"), "incentral"),
+    (re.compile(r"\b(?:symmedial\s+triangle|cevian\s+triangle\s+of\s+(?:X\(6\)|K|the\s+symmedian\s+point))\b", re.I), ("Sym_a", "Sym_b", "Sym_c"), "symmedial"),
+    (re.compile(r"(?<!2nd )(?<!3rd )(?<!anticomplement of the )\b(?:(?:1st\s+)?euler|feuerbach)\s+triangle\b", re.I), ("Eu_a", "Eu_b", "Eu_c"), "euler"),
+    (re.compile(r"\breflection\s+triangle\b", re.I), ("Ref_a", "Ref_b", "Ref_c"), "reflection"),
+    (re.compile(r"\bcircummedial\s+triangle\b", re.I), ("Cm_a", "Cm_b", "Cm_c"), "circummedial"),
+    (re.compile(r"\bkosnita\s+triangle\b", re.I), ("O_A", "O_B", "O_C"), "kosnita"),
+]
+
+
+def extract_local_symbol_map(text: str) -> dict[str, str]:
+    """Extract paragraph-local symbol bindings (e.g. `A'B'C'` -> `H_a, H_b, H_c`, `I` -> `X(1)`) from `text`."""
+    if not text:
+        return {}
+    plain = re.sub(r":[a-zA-Z0-9_]+:`([^`<]+?)(?:\s*<[^>]+>)?`", r"\1", text)
+    plain = plain.replace("′", "'").replace("''", "″")
+    sym_map: dict[str, str] = {}
+
+    # 1. "Let A'B'C' be the <named triangle>" (excluding "Let A'B'C' and A''B''C'' be...")
+    m_let_abc = re.search(
+        r"\bLet\s+(?:T\s*=\s*)?A'B'C'\s+be\s+([^.;\n]+)",
+        plain,
+        flags=re.IGNORECASE,
+    )
+    if m_let_abc:
+        rhs = m_let_abc.group(1)
+        if " or " not in rhs.lower():
+            for pat, (va, vb, vc), _ in _LOCAL_TRIANGLE_BINDING_RULES:
+                if pat.search(rhs):
+                    sym_map.update({"A'": va, "B'": vb, "C'": vc})
+                    break
+
+    # 2. Explicit point-set definitions of A', B', C'
+    if "A'" not in sym_map:
+        if re.search(
+            r"\bLet\s+A'\s*,\s*B'\s*,\s*C'\s+(?:denote|be)\s+the\s+points\s+in\s+which\s+the\s+incircle\s+meets\b",
+            plain,
+            flags=re.IGNORECASE,
+        ):
+            sym_map.update({"A'": "T_a", "B'": "T_b", "C'": "T_c"})
+        elif re.search(
+            r"\bLet\s+(?:A'B'C'|A'\s*,\s*B'\s*,\s*C')\s+(?:denote|be)\s+the\s+points\s+in\s+which\s+the\s+A-excircle\s+meets\b",
+            plain,
+            flags=re.IGNORECASE,
+        ):
+            sym_map.update({"A'": "N_a", "B'": "N_b", "C'": "N_c"})
+        elif re.search(
+            r"\bLet\s+A'\s*,\s*B'\s*,\s*C'\s+(?:denote|be)\s+the\s+excenters\b",
+            plain,
+            flags=re.IGNORECASE,
+        ):
+            sym_map.update({"A'": "J_a", "B'": "J_b", "C'": "J_c"})
+
+    # 3. Napoleon centers X, Y, Z
+    if re.search(
+        r"\bLet\s+X\s*,\s*Y\s*,\s*Z\s+be\s+the\s+centers\s+of\s+the\s+equilateral\s+triangles\b",
+        plain,
+        flags=re.IGNORECASE,
+    ):
+        if re.search(r"\b(?:X\(14\)|X_14|inner|2nd\s+isogonic)\b", plain, flags=re.IGNORECASE):
+            sym_map.update({"X": "Nap'_a", "Y": "Nap'_b", "Z": "Nap'_c"})
+        else:
+            sym_map.update({"X": "Nap_a", "Y": "Nap_b", "Z": "Nap_c"})
+
+    # 4. Classical center single-letter bindings (I, O, K, H, G)
+    if re.search(
+        r"\b(?:Let\s+I\s+(?:denote|be|=)\s+(?:the\s+)?(?:incenter|X\(1\)|X_1)|Write\s+I\s+for\s+the\s+incenter|where\s+I\s+denotes\s+the\s+incenter|and\s+I\s+the\s+incenter)\b",
+        plain,
+        flags=re.IGNORECASE,
+    ):
+        sym_map["I"] = "X_1"
+    if re.search(
+        r"\b(?:Let\s+O\s+(?:denote|be|=)\s+(?:the\s+)?(?:circumcenter|X\(3\)|X_3)|Write\s+O\s+for\s+the\s+circumcenter|where\s+O\s+denotes\s+the\s+circumcenter)\b",
+        plain,
+        flags=re.IGNORECASE,
+    ):
+        sym_map["O"] = "X_3"
+    if re.search(
+        r"\b(?:Let\s+K\s+(?:denote|be)\s+the\s+symmedian\s+point|where\s+K\s+denotes\s+the\s+symmedian\s+point)\b",
+        plain,
+        flags=re.IGNORECASE,
+    ):
+        sym_map["K"] = "X_6"
+    if re.search(
+        r"\b(?:Let\s+H\s+(?:denote|be)\s+the\s+orthocenter|where\s+H\s+denotes\s+the\s+orthocenter)\b",
+        plain,
+        flags=re.IGNORECASE,
+    ):
+        sym_map["H"] = "X_4"
+    if re.search(
+        r"\b(?:Let\s+G\s+(?:denote|be)\s+the\s+centroid|where\s+G\s+denotes\s+the\s+centroid)\b",
+        plain,
+        flags=re.IGNORECASE,
+    ):
+        sym_map["G"] = "X_2"
+
+    return sym_map
+
+
+def _remap_g_role_targets(text: str, sym_map: dict[str, str]) -> str:
+    """Remap local variable targets inside `:g:`display <target>`` using `sym_map` while keeping `display` intact."""
+    if not sym_map or ":g:`" not in text:
+        return text
+
+    def _repl_g(m: re.Match) -> str:
+        disp = m.group(1)
+        targ = m.group(2).strip()
+        if targ.startswith("<") and targ.endswith(">"):
+            inner = targ[1:-1].strip()
+            toks = [sym_map.get(tok, tok) for tok in inner.split()]
+            return f":g:`{disp} << {' '.join(toks)} >>`"
+        if targ.startswith("[") and targ.endswith("]"):
+            inner = targ[1:-1].strip()
+            toks = [sym_map.get(tok, tok) for tok in inner.split()]
+            return f":g:`{disp} <[ {' '.join(toks)} ]>`"
+        if targ in sym_map:
+            return f":g:`{disp} <{sym_map[targ]}>`"
+        return m.group(0)
+
+    return re.sub(r":g:`([^`<]+?)\s*<(.+?)>`", _repl_g, text)
+
+
 def wrap_geom_refs(text: str) -> str:
     """Wrap geometric elements (triangles, segments, lines, circles, points) in `:g:` roles."""
     if not text:
         return text
+
+    sym_map = extract_local_symbol_map(text)
 
     def _replace_geom(seg: str) -> str:
         stashed: list[str] = []
@@ -1424,7 +1630,7 @@ def wrap_geom_refs(text: str) -> str:
 
         seg = _SUB_3V_UNSUB_RE.sub(_repl_3v_unsub, seg)
 
-        # 3. 3-vertex plain/primed triangles (ABC, A'B'C', A″B″C″, BXC, BCP, BCF, DEF, UVW, etc.)
+        # 3. 3-vertex plain/primed triangles (ABC, A'B'C', A″B″C″, BXC, BCP, BCF, DEF, UVW, XYZ, etc.)
         def _repl_3v_plain(m: re.Match) -> str:
             v1, v2, v3 = m.group(1), m.group(2), m.group(3)
             b1, b2, b3 = v1[0], v2[0], v3[0]
@@ -1484,7 +1690,7 @@ def wrap_geom_refs(text: str) -> str:
 
         seg = _SUB_2V_UNSUB_RE.sub(_repl_2v_unsub, seg)
 
-        # 5. 2-vertex plain/primed segments and sidelines (BC, CA, AB, B'C', AA', AP, BP, CP, etc.)
+        # 5. 2-vertex plain/primed segments and sidelines (BC, CA, AB, B'C', AA', AP, BP, CP, AX, BY, CZ, etc.)
         def _repl_2v_plain(m: re.Match) -> str:
             v1, v2 = m.group(1), m.group(2)
             b1, b2 = v1[0], v2[0]
@@ -1529,7 +1735,7 @@ def wrap_geom_refs(text: str) -> str:
 
         seg = _SUB_1V_UNSUB_RE.sub(_repl_1v_unsub, seg)
 
-        # 7. Primed single-letter elements (A', B', C', A″, B″, C″, P', Q', O', F', X', L', etc.)
+        # 7. Primed single-letter elements (A', B', C', A″, B″, C″, P', Q', O', F', X', L', R', S', etc.)
         def _repl_1v_primed(m: re.Match) -> str:
             d, t = _norm_plain_vertex(m.group(0))
             return _stash_g(f":g:`{d} <{t}>`")
@@ -1537,10 +1743,10 @@ def wrap_geom_refs(text: str) -> str:
         seg = _PRIMED_1V_RE.sub(_repl_1v_primed, seg)
 
         # 8. Unprimed single-letter vertices/points in geometric contexts
-        # 8a. Triples like "A, B, C" / "B,C,A" / "A, B, and C" / "D, E, F" / "U, V, W"
+        # 8a. Triples like "A, B, C" / "B,C,A" / "A, B, and C" / "D, E, F" / "U, V, W" / "X, Y, Z"
         def _repl_abc_triple(m: re.Match) -> str:
             v1, v2, conj, v3 = m.group(1), m.group(2), m.group(3), m.group(4)
-            if {v1, v2, v3} not in ({"A", "B", "C"}, {"D", "E", "F"}, {"U", "V", "W"}):
+            if {v1, v2, v3} not in ({"A", "B", "C"}, {"D", "E", "F"}, {"U", "V", "W"}, {"X", "Y", "Z"}):
                 return m.group(0)
             return (
                 f"{_stash_g(f':g:`{v1} <{v1}>`')}, "
@@ -1550,14 +1756,14 @@ def wrap_geom_refs(text: str) -> str:
             )
 
         seg = re.sub(
-            r"(?<![A-Za-z0-9_\x00])\b([ABCDEFUVW])\s*,\s*([ABCDEFUVW])\s*,\s*(?:(and|or)\s+)?([ABCDEFUVW])\b(?![A-Za-z0-9_'′″\x00])",
+            r"(?<![A-Za-z0-9_\x00])\b([ABCDEFUVWXYZ])\s*,\s*([ABCDEFUVWXYZ])\s*,\s*(?:(and|or)\s+)?([ABCDEFUVWXYZ])\b(?![A-Za-z0-9_'′″\x00])",
             _repl_abc_triple,
             seg,
         )
 
-        # 8b. Pairs like "B and C", "C and A", "A and B", "E and F", "V and W", "P and Q"
+        # 8b. Pairs like "B and C", "C and A", "A and B", "E and F", "U and V", "V and W", "P and Q"
         seg = re.sub(
-            r"(?<![A-Za-z0-9_\x00])\b([ABCEFPVW])\s+(and|or)\s+([ABCEFQVW])\b(?![A-Za-z0-9_'′″.\x00])",
+            r"(?<![A-Za-z0-9_\x00])\b([ABCEFPUVW])\s+(and|or)\s+([ABCEFQVW])\b(?![A-Za-z0-9_'′″.\x00])",
             lambda m: (
                 f"{_stash_g(f':g:`{m.group(1)} <{m.group(1)}>`')} {m.group(2)} "
                 f"{_stash_g(f':g:`{m.group(3)} <{m.group(3)}>`')}"
@@ -1579,12 +1785,27 @@ def wrap_geom_refs(text: str) -> str:
             seg,
         )
 
-        # 8e. Single letter after geometric prepositions/nouns (excluding person initials like `A. P.`)
+        # 8e. Single letter after explicit geometric nouns (even before sentence-ending `.`)
         seg = re.sub(
-            r"\b(vertex|vertices|point|points|angle|angles|line|lines|circle|circles|triangle|triangles|centered\s+at|through|opposite|about|around|Let|let|at|from|of|in|on|to|with|for)\s+([ABCPQULOEFXTDHIKN])(?=(?:[,;:)—]|\.(?!\s+[A-Z])|\s+(?:and|or|is|are|be|denote|in|on|of|to|with|from|at|parallel|perpendicular|tangent|opposite|where|which|that|for|wrt)\b|$))",
+            r"\b(vertex|vertices|point|points|angle|angles|line|lines|circle|circles|triangle|triangles|sideline|sidelines|centered\s+at)\s+([ABCPQULOEFXTDHIKNGJYZ])(?=(?:[.,;:)—]|\s+(?:and|or|is|are|be|denote|in|on|of|to|with|from|at|parallel|perpendicular|tangent|opposite|where|which|that|for|wrt)\b|$))",
             lambda m: f"{m.group(1)} {_stash_g(f':g:`{m.group(2)} <{m.group(2)}>`')}",
             seg,
         )
+
+        # 8f. Single letter after geometric prepositions/verbs (excluding person initials like `A. P.`)
+        seg = re.sub(
+            r"\b(through|opposite|about|around|Let|let|at|from|of|in|on|to|with|for)\s+([ABCPQULOEFXTDHIKN])(?=(?:[,;:)—]|\.(?!\s+[A-Z])|\s+(?:and|or|is|are|be|denote|in|on|of|to|with|from|at|parallel|perpendicular|tangent|opposite|where|which|that|for|wrt)\b|$))",
+            lambda m: f"{m.group(1)} {_stash_g(f':g:`{m.group(2)} <{m.group(2)}>`')}",
+            seg,
+        )
+
+        # 8g. Trailing comma-separated single-letter points after a stashed :g: point (e.g. "A, B, C, P", "{A, B, C, G, ...}", "O, P")
+        for _ in range(2):
+            seg = re.sub(
+                r"(\x00GM\d+GM\x00\s*,\s*)([ABCPQULOEFXTDHIKNGJYZ])\b(?![A-Za-z0-9_'′″.\x00])",
+                lambda m: f"{m.group(1)}{_stash_g(f':g:`{m.group(2)} <{m.group(2)}>`')}",
+                seg,
+            )
 
         # Restore stashed :g: / :math: roles with Docutils-safe boundary escaping
         gm_pat = re.compile(r"\x00GM(\d+)GM\x00")
@@ -1609,7 +1830,10 @@ def wrap_geom_refs(text: str) -> str:
 
         return seg
 
-    return _apply_outside_rst_spans(text, _replace_geom)
+    wrapped = _apply_outside_rst_spans(text, _replace_geom)
+    if sym_map:
+        wrapped = _remap_g_role_targets(wrapped, sym_map)
+    return wrapped
 
 
 _GLOSSARY_PATTERN_CACHE: dict[int, tuple[dict[str, str], re.Pattern[str]]] = {}

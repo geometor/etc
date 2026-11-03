@@ -1,18 +1,21 @@
-:canonical_id: X(222)
+:canonical_id: X_222
 :type: code
+:subtitle: X_7-CEVA CONJUGATE OF X_56
 
-X(222) = X(7)-CEVA CONJUGATE OF X(56) — Code
-============================================
+X_222
+=====
+
+.. rubric:: X_7-CEVA CONJUGATE OF X_56
 
 .. enunciation::
 
-   Let :g:`A' <A'>` be the center of the conic through the contact points of the incircle and the :g:`A <A>`-excircle with the sidelines of :g:`ABC << A B C >>`. Define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The triangle :g:`A'B'C' << A' B' C' >>` is perspective to the :term:`intouch triangle <intouch-triangle>` at :ref:`X(222) <X(222)>`. See also :ref:`X(6) <X(6)>`, :ref:`X(25) <X(25)>`, :ref:`X(218) <X(218)>`, :ref:`X(940) <X(940)>`, X(1743). (:person:`Randy Hutson <randy-hutson>`, July 23, 2015)
+   :ref:`X_222 <X_222>` = :term:`cevapoint <cevapoint>` of :ref:`X_6 <X_6>` and :ref:`X_221 <X_221>`
 
 .. figure:: x-00222.svg
-   :alt: X(222) = X(7)-CEVA CONJUGATE OF X(56)
+   :alt: X_222 — X_7-CEVA CONJUGATE OF X_56
    :align: center
 
-   **X(222) = X(7)-CEVA CONJUGATE OF X(56)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_222** (*X_7-CEVA CONJUGATE OF X_56*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python
