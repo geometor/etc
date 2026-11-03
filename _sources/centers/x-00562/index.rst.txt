@@ -1,22 +1,31 @@
 :order: 562
 :type: center
-:canonical_id: X(562)
-:dependencies: X(2), X(3), X(4), X(49), X(50), X(93), X(252), X(3519), X(6143), X(30529)
+:canonical_id: X_562
+:subtitle: TRILINEAR QUOTIENT X_2*X_50/X_49
+:dependencies: X_3, X_4, X_93, X_252, X_3519, X_6143, X_30529
 
-.. _X(562):
+.. _X_562:
 
-X(562) = TRILINEAR QUOTIENT X(2)*X(50)/X(49)
-============================================
+X_562
+=====
+
+.. rubric:: TRILINEAR QUOTIENT X_2*X_50/X_49
 
 .. enunciation::
 
-   :ref:`X(562) <X(562)>` = polar conjugate of X(30529)
+   :ref:`X_562 <X_562>` = polar conjugate of X_30529
 
 .. figure:: x-00562.svg
-   :alt: X(562) = TRILINEAR QUOTIENT X(2)*X(50)/X(49)
+   :alt: X_562 — TRILINEAR QUOTIENT X_2*X_50/X_49
    :align: center
 
-   **X(562) = TRILINEAR QUOTIENT X(2)*X(50)/X(49)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_562** (*TRILINEAR QUOTIENT X_2*X_50/X_49*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{4, 93} <{ 4, 93 }>`
+   * **Related Centers:** :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_93 <X_93>` (:ref:`ISOGONAL CONJUGATE OF X(49) <X_93>`)
 
 .. signature:: center
 
@@ -27,18 +36,18 @@ X(562) = TRILINEAR QUOTIENT X(2)*X(50)/X(49)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * = :math:`(3S^{2} - S^{2}_{A})(3S^{2} - S^{2}_{B})(3S^{2} - S^{2}_{C})` :ref:`X(3) <X(3)>` - :math:`16S_{A}`\ :math:`S_{B}`\ :math:`S_{C}(5S_{A}S_{B}S_{C} + 3S^{2}S_{\omega }S)` X(3519) (:person:`Peter Moses <peter-moses>`, January 29, 2015)
+   * = :math:`(3S^{2} - S^{2}_{A})(3S^{2} - S^{2}_{B})(3S^{2} - S^{2}_{C})` :ref:`X_3 <X_3>` - :math:`16S_{A}`\ :math:`S_{B}`\ :math:`S_{C}(5S_{A}S_{B}S_{C} + 3S^{2}S_{\omega }S)` X_3519 (:person:`Peter Moses <peter-moses>`, January 29, 2015)
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`4 <X(4)>`, :ref:`93 <X(93)>`}, {:ref:`252 <X(252)>`, 6143}
+   {:ref:`4 <X_4>`, :ref:`93 <X_93>`}, {:ref:`252 <X_252>`, 6143}
 
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(562) <X(562)>` = polar conjugate of X(30529)
+   * :ref:`X_562 <X_562>` = polar conjugate of X_30529
 
 Notes
 -----

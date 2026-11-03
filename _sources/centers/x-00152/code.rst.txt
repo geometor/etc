@@ -1,18 +1,21 @@
-:canonical_id: X(152)
+:canonical_id: X_152
 :type: code
+:subtitle: REFLECTION OF X_20 IN X_101
 
-X(152) = REFLECTION OF X(20) IN X(101) — Code
-=============================================
+X_152
+=====
+
+.. rubric:: REFLECTION OF X_20 IN X_101
 
 .. enunciation::
 
-   :ref:`X(152) <X(152)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(34181)
+   :ref:`X_152 <X_152>` is the reflection of :ref:`X_20 <X_20>` in :ref:`X_101 <X_101>`.
 
 .. figure:: x-00152.svg
-   :alt: X(152) = REFLECTION OF X(20) IN X(101)
+   :alt: X_152 — REFLECTION OF X_20 IN X_101
    :align: center
 
-   **X(152) = REFLECTION OF X(20) IN X(101)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_152** (*REFLECTION OF X_20 IN X_101*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

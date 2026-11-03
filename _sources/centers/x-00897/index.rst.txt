@@ -1,22 +1,31 @@
 :order: 897
 :type: center
-:canonical_id: X(897)
-:dependencies: X(1), X(2), X(6), X(10), X(19), X(37), X(65), X(75), X(100), X(158), X(162), X(190), X(225), X(523), X(524), X(651), X(653), X(661), X(662), X(691), X(759), X(799), X(823), X(896), X(14210), X(16597), X(36060)
+:canonical_id: X_897
+:subtitle: ISOGONAL CONJUGATE OF X_896
+:dependencies: X_1, X_2, X_6, X_10, X_19, X_37, X_65, X_75, X_100, X_158, X_162, X_190, X_225, X_523, X_524, X_651, X_653, X_661, X_662, X_691, X_759, X_799, X_823, X_896, X_14210, X_16597, X_36060
 
-.. _X(897):
+.. _X_897:
 
-X(897) = ISOGONAL CONJUGATE OF X(896)
-=====================================
+X_897
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_896
 
 .. enunciation::
 
-   Let :g:`A_{1}B_{1}C_{1} << A_1 B_1 C_1 >>` and :g:`A_{3}B_{3}C_{3} << A_3 B_3 C_3 >>` be the 1st and 3rd Parry triangles. Let :g:`A' <A'>` be the trilinear product :g:`A_{1} <A_1>`\ \*\ :g:`A_{3} <A_3>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(897) <X(897)>`. (:person:`Randy Hutson <randy-hutson>`, February 10, 2016)
+   :ref:`X_897 <X_897>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_896 <X_896>`.
 
 .. figure:: x-00897.svg
-   :alt: X(897) = ISOGONAL CONJUGATE OF X(896)
+   :alt: X_897 — ISOGONAL CONJUGATE OF X_896
    :align: center
 
-   **X(897) = ISOGONAL CONJUGATE OF X(896)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_897** (*ISOGONAL CONJUGATE OF X_896*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{37, 100} <{ 37, 100 }>`, :g:`{19, 162} <{ 19, 162 }>`
+   * **Related Centers:** :g:`X_896 <X_896>` (:ref:`INTERSECTION OF LINES X <X_896>`), :g:`X_37 <X_37>` (:ref:`CROSSPOINT OF INCENTER AND CENTROID <X_37>`), :g:`X_100 <X_100>` (:ref:`ANTICOMPLEMENT OF FEUERBACH POINT <X_100>`), :g:`X_19 <X_19>` (:ref:`CLAWSON POINT <X_19>`), :g:`X_162 <X_162>` (:ref:`CEVAPOINT OF X(108) AND X(109) <X_162>`)
 
 .. signature:: center
 
@@ -27,25 +36,29 @@ X(897) = ISOGONAL CONJUGATE OF X(896)
    :badge: 9 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`662 <X(662)>`}, {:ref:`10 <X(10)>`, :ref:`190 <X(190)>`}, {:ref:`19 <X(19)>`, :ref:`162 <X(162)>`}, {:ref:`37 <X(37)>`, :ref:`100 <X(100)>`}, {:ref:`65 <X(65)>`, :ref:`651 <X(651)>`}, {:ref:`75 <X(75)>`, :ref:`799 <X(799)>`}, {:ref:`158 <X(158)>`, :ref:`823 <X(823)>`}, {:ref:`225 <X(225)>`, :ref:`653 <X(653)>`}, {:ref:`691 <X(691)>`, :ref:`759 <X(759)>`}
+   {:ref:`1 <X_1>`, :ref:`662 <X_662>`}, {:ref:`10 <X_10>`, :ref:`190 <X_190>`}, {:ref:`19 <X_19>`, :ref:`162 <X_162>`}, {:ref:`37 <X_37>`, :ref:`100 <X_100>`}, {:ref:`65 <X_65>`, :ref:`651 <X_651>`}, {:ref:`75 <X_75>`, :ref:`799 <X_799>`}, {:ref:`158 <X_158>`, :ref:`823 <X_823>`}, {:ref:`225 <X_225>`, :ref:`653 <X_653>`}, {:ref:`691 <X_691>`, :ref:`759 <X_759>`}
 
 .. collapse:: Functional Relations
    :badge: 7 relations
 
-   * :ref:`X(897) <X(897)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(896) <X(896)>`
-   * :ref:`X(897) <X(897)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(14210)
-   * :ref:`X(897) <X(897)>` = :term:`anticomplement <anticomplement>` of X(16597)
-   * :ref:`X(897) <X(897)>` = trilinear product of circumcircle intercepts of line :ref:`X(2) <X(2)>`\ \ :ref:`X(523) <X(523)>`
-   * :ref:`X(897) <X(897)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(1) <X(1)>`\ \ :ref:`X(661) <X(661)>`
-   * :ref:`X(897) <X(897)>` = polar conjugate of isogonal conjugate of X(36060)
-   * :ref:`X(897) <X(897)>` = :ref:`X(6) <X(6)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(524) <X(524)>`
+   * :ref:`X_897 <X_897>` = isogonal conjugate of :ref:`X_896 <X_896>`
+   * :ref:`X_897 <X_897>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_14210
+   * :ref:`X_897 <X_897>` = :term:`anticomplement <anticomplement>` of X_16597
+   * :ref:`X_897 <X_897>` = trilinear product of circumcircle intercepts of line :ref:`X_2 <X_2>`\ \ :ref:`X_523 <X_523>`
+   * :ref:`X_897 <X_897>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_1 <X_1>`\ \ :ref:`X_661 <X_661>`
+   * :ref:`X_897 <X_897>` = polar conjugate of isogonal conjugate of X_36060
+   * :ref:`X_897 <X_897>` = :ref:`X_6 <X_6>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_524 <X_524>`
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>` be the 4th Brocard and 4th anti-Brocard triangles, resp. Let :g:`A* <A*>` be the trilinear product :g:`A' <A'>`\ \*\ :g:`A″ <A″>`, and define :g:`B* <B*>`, :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(897) <X(897)>`. (Randy Hutson, March 21, 2019)
+   Let :g:`A_{1}B_{1}C_{1} << A_1 B_1 C_1 >>` and :g:`A_{3}B_{3}C_{3} << A_3 B_3 C_3 >>` be the 1st and 3rd Parry triangles. Let :g:`A' <A'>` be the trilinear product :g:`A_{1} <A_1>`\ \*\ :g:`A_{3} <A_3>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X_897 <X_897>`. (:person:`Randy Hutson <randy-hutson>`, February 10, 2016)
+
+.. container:: note-item
+
+   Let :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>` be the 4th Brocard and 4th anti-Brocard triangles, resp. Let :g:`A* <A*>` be the trilinear product :g:`A' <A'>`\ \*\ :g:`A″ <A″>`, and define :g:`B* <B*>`, :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X_897 <X_897>`. (Randy Hutson, March 21, 2019)
 
 .. toctree::
    :hidden:

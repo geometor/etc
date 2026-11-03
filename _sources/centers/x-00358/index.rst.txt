@@ -1,23 +1,32 @@
 :order: 358
 :type: center
-:canonical_id: X(358)
-:dependencies: X(16), X(356), X(357), X(1135)
+:canonical_id: X_358
+:subtitle: 2nd MORLEY-TAYLOR-MARR CENTER
+:dependencies: X_16, X_356, X_357, X_1135
 
-.. _X(358):
+.. _X_358:
 .. _2ndMorleyTaylorMarrCenter:
 
-X(358) = 2nd MORLEY-TAYLOR-MARR CENTER
-======================================
+X_358
+=====
+
+.. rubric:: 2nd MORLEY-TAYLOR-MARR CENTER
 
 .. enunciation::
 
-   :ref:`X(358) <X(358)>` is the perspector of the adjunct Morley triangle and :g:`ABC << A B C >>`, and also the Hofstadter 2/3 point.
+   :ref:`X_358 <X_358>` is the perspector of the adjunct Morley triangle and :g:`ABC << A B C >>`, and also the Hofstadter 2/3 point.
 
 .. figure:: x-00358.svg
-   :alt: X(358) = 2nd MORLEY-TAYLOR-MARR CENTER
+   :alt: X_358 — 2nd MORLEY-TAYLOR-MARR CENTER
    :align: center
 
-   **X(358) = 2nd MORLEY-TAYLOR-MARR CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_358** (*2nd MORLEY-TAYLOR-MARR CENTER*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{356, 357} <{ 356, 357 }>`
+   * **Related Centers:** :g:`X_357 <X_357>` (:ref:`1st MORLEY-TAYLOR-MARR CENTER <X_357>`), :g:`X_356 <X_356>` (:ref:`MORLEY CENTER <X_356>`)
 
 .. signature:: center
 
@@ -29,13 +38,13 @@ X(358) = 2nd MORLEY-TAYLOR-MARR CENTER
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`356 <X(356)>`, :ref:`357 <X(357)>`}, {:ref:`16 <X(16)>`, 1135}
+   {:ref:`356 <X_356>`, :ref:`357 <X_357>`}, {:ref:`16 <X_16>`, 1135}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(358) <X(358)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(357) <X(357)>`
-   * :ref:`X(358) <X(358)>` = trilinear product of vertices of 1st Morley adjunct triangle
+   * :ref:`X_358 <X_358>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_357 <X_357>`
+   * :ref:`X_358 <X_358>` = trilinear product of vertices of 1st Morley adjunct triangle
 
 .. toctree::
    :hidden:

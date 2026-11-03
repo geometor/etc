@@ -1,26 +1,35 @@
 :order: 455
 :type: center
-:canonical_id: X(455)
-:dependencies: X(2), X(3), X(25), X(159), X(1370), X(2386), X(3162), X(13575), X(17407), X(23115), X(39733), X(40009), X(40144), X(41361), X(41766), X(52041)
+:canonical_id: X_455
+:subtitle: EULER X_159-11th-SUBSTITUTION POINT
+:dependencies: X_2, X_3, X_25, X_159, X_1370, X_2386, X_3162, X_13575, X_17407, X_23115, X_39733, X_40009, X_40144, X_41361, X_41766, X_52041
 
-.. _X(455):
+.. _X_455:
 
-X(455) = EULER X(159)-11th-SUBSTITUTION POINT
-=============================================
+X_455
+=====
+
+.. rubric:: EULER X_159-11th-SUBSTITUTION POINT
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(455) <X(455)>` has Shinagawa coefficients :math:`(4(E + F)^{3}F^{2} - E^{2}FS^{2}, -4(E + F)^{4}F + (E + F)(E + 4F)ES^{2})`.
+   :ref:`X_455 <X_455>` = X_1370-:term:`Ceva conjugate <ceva-conjugate>` of X_3162
 
 .. figure:: x-00455.svg
-   :alt: X(455) = EULER X(159)-11th-SUBSTITUTION POINT
+   :alt: X_455 — EULER X_159-11th-SUBSTITUTION POINT
    :align: center
 
-   **X(455) = EULER X(159)-11th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_455** (*EULER X_159-11th-SUBSTITUTION POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`)
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`)
 
 .. signature:: center
 
-   | **Trilinears:** :math:`u^{2}\sec A : v^{2}\sec B : w^{2}\sec C`, where :math:`u : v : w` = :ref:`X(159) <X(159)>`
+   | **Trilinears:** :math:`u^{2}\sec A : v^{2}\sec B : w^{2}\sec C`, where :math:`u : v : w` = :ref:`X_159 <X_159>`
    | **Barycentrics:** :math:`u^{2}\tan A : v^{2}\tan B : w^{2}\tan C`
    | **Search Value (6, 9, 13):** :math:`4.705865843343`
 
@@ -33,17 +42,24 @@ X(455) = EULER X(159)-11th-SUBSTITUTION POINT
    :badge: 3 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`159 <X(159)>`, 17407}, {2386, 40144}
+   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`159 <X_159>`, 17407}, {2386, 40144}
 
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X(455) <X(455)>` = X(1370)-:term:`Ceva conjugate <ceva-conjugate>` of X(3162)
-   * :ref:`X(455) <X(455)>` = X(39733)-:term:`isoconjugate <isoconjugate>` of X(52041)
-   * :ref:`X(455) <X(455)>` = :ref:`X(25) <X(25)>`-Dao conjugate of X(13575)
-   * :ref:`X(455) <X(455)>` = barycentric product X(i)\*X(j) for these {i,j}: {:ref:`159 <X(159)>`, 41361}, {1370, 3162}, {23115, 41766}
-   * :ref:`X(455) <X(455)>` = barycentric quotient X(i)/X(j) for these {i,j}: {3162, 13575}, {41361, 40009}
-   * :ref:`X(455) <X(455)>` = {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): {}
+   * :ref:`X_455 <X_455>` = X_1370-Ceva conjugate of X_3162
+   * :ref:`X_455 <X_455>` = X_39733-:term:`isoconjugate <isoconjugate>` of X_52041
+   * :ref:`X_455 <X_455>` = :ref:`X_25 <X_25>`-Dao conjugate of X_13575
+   * :ref:`X_455 <X_455>` = barycentric product X_i\*X_j for these {i,j}: {:ref:`159 <X_159>`, 41361}, {1370, 3162}, {23115, 41766}
+   * :ref:`X_455 <X_455>` = barycentric quotient X_i/X_j for these {i,j}: {3162, 13575}, {41361, 40009}
+   * :ref:`X_455 <X_455>` = {X_i,X_j}-harmonic conjugate of X_k for these (i,j,k): {}
+
+Notes
+-----
+
+.. container:: note-item
+
+   As a point on the Euler line, :ref:`X_455 <X_455>` has Shinagawa coefficients :math:`(4(E + F)^{3}F^{2} - E^{2}FS^{2}, -4(E + F)^{4}F + (E + F)(E + 4F)ES^{2})`.
 
 .. toctree::
    :hidden:

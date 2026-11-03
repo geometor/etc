@@ -1,18 +1,21 @@
-:canonical_id: X(620)
+:canonical_id: X_620
 :type: code
+:subtitle: MIDPOINT OF X_618 AND X_619
 
-X(620) = MIDPOINT OF X(618) AND X(619) — Code
-=============================================
+X_620
+=====
+
+.. rubric:: MIDPOINT OF X_618 AND X_619
 
 .. enunciation::
 
-   Let S = :ref:`X(99) <X(99)>`. Let :g:`A' <A'>` be the centroid of the triangle :g:`BCS << B C S >>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Let :g:`D' <D'>` be the centroid of :g:`ABC << A B C >>`. The four centroids form a quadrilateral homothetic to the quadrilateral ABCS. The center of homothety is :ref:`X(620) <X(620)>`, which is the centroid of ABCS. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   :ref:`X_620 <X_620>` is the midpoint of :ref:`X_618 <X_618>` and :ref:`X_619 <X_619>`.
 
 .. figure:: x-00620.svg
-   :alt: X(620) = MIDPOINT OF X(618) AND X(619)
+   :alt: X_620 — MIDPOINT OF X_618 AND X_619
    :align: center
 
-   **X(620) = MIDPOINT OF X(618) AND X(619)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_620** (*MIDPOINT OF X_618 AND X_619*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

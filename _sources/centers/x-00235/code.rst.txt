@@ -1,18 +1,21 @@
-:canonical_id: X(235)
+:canonical_id: X_235
 :type: code
+:subtitle: X_4-CEVA CONJUGATE OF X_185
 
-X(235) = X(4)-CEVA CONJUGATE OF X(185) — Code
-=============================================
+X_235
+=====
+
+.. rubric:: X_4-CEVA CONJUGATE OF X_185
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(235) <X(235)>` has Shinagawa coefficients :math:`(F, F - E)`.
+   :ref:`X_235 <X_235>` = midpoint of :ref:`X_4 <X_4>` and :ref:`X_24 <X_24>`
 
 .. figure:: x-00235.svg
-   :alt: X(235) = X(4)-CEVA CONJUGATE OF X(185)
+   :alt: X_235 — X_4-CEVA CONJUGATE OF X_185
    :align: center
 
-   **X(235) = X(4)-CEVA CONJUGATE OF X(185)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_235** (*X_4-CEVA CONJUGATE OF X_185*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

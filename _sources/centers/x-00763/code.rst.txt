@@ -1,18 +1,21 @@
-:canonical_id: X(763)
+:canonical_id: X_763
 :type: code
+:subtitle: ISOGONAL CONJUGATE OF X_762
 
-X(763) = ISOGONAL CONJUGATE OF X(762) — Code
-============================================
+X_763
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_762
 
 .. enunciation::
 
-   :ref:`X(763) <X(763)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(762) <X(762)>`
+   :ref:`X_763 <X_763>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_762 <X_762>`.
 
 .. figure:: x-00763.svg
-   :alt: X(763) = ISOGONAL CONJUGATE OF X(762)
+   :alt: X_763 — ISOGONAL CONJUGATE OF X_762
    :align: center
 
-   **X(763) = ISOGONAL CONJUGATE OF X(762)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_763** (*ISOGONAL CONJUGATE OF X_762*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,22 +1,31 @@
 :order: 629
 :type: center
-:canonical_id: X(629)
-:dependencies: X(2), X(3), X(5), X(17), X(61), X(140), X(141), X(302), X(575), X(618), X(619), X(623), X(627), X(635)
+:canonical_id: X_629
+:subtitle: COMPLEMENT OF X_17
+:dependencies: X_2, X_3, X_5, X_17, X_61, X_140, X_141, X_302, X_575, X_618, X_619, X_623, X_627, X_635
 
-.. _X(629):
+.. _X_629:
 
-X(629) = COMPLEMENT OF X(17)
-============================
+X_629
+=====
+
+.. rubric:: COMPLEMENT OF X_17
 
 .. enunciation::
 
-   :ref:`X(629) <X(629)>` = midpoint of :ref:`X(17) <X(17)>` and :ref:`X(627) <X(627)>`
+   :ref:`X_629 <X_629>` is the :term:`complement <complement>` of :ref:`X_17 <X_17>`.
 
 .. figure:: x-00629.svg
-   :alt: X(629) = COMPLEMENT OF X(17)
+   :alt: X_629 — COMPLEMENT OF X_17
    :align: center
 
-   **X(629) = COMPLEMENT OF X(17)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_629** (*COMPLEMENT OF X_17*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{17, 627} <{ 17, 627 }>`
+   * **Related Centers:** :g:`X_17 <X_17>` (:ref:`1st NAPOLEON POINT <X_17>`), :g:`X_627 <X_627>` (:ref:`ANTICOMPLEMENT OF X(17) <X_627>`)
 
 .. signature:: center
 
@@ -33,15 +42,15 @@ X(629) = COMPLEMENT OF X(17)
    :badge: 6 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`17 <X(17)>`}, {:ref:`3 <X(3)>`, :ref:`623 <X(623)>`}, {:ref:`5 <X(5)>`, :ref:`618 <X(618)>`}, {:ref:`61 <X(61)>`, :ref:`302 <X(302)>`}, {:ref:`140 <X(140)>`, :ref:`619 <X(619)>`}, {:ref:`141 <X(141)>`, :ref:`575 <X(575)>`}
+   {:ref:`2 <X_2>`, :ref:`17 <X_17>`}, {:ref:`3 <X_3>`, :ref:`623 <X_623>`}, {:ref:`5 <X_5>`, :ref:`618 <X_618>`}, {:ref:`61 <X_61>`, :ref:`302 <X_302>`}, {:ref:`140 <X_140>`, :ref:`619 <X_619>`}, {:ref:`141 <X_141>`, :ref:`575 <X_575>`}
 
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X(629) <X(629)>` = midpoint of :ref:`X(17) <X(17)>` and :ref:`X(627) <X(627)>`
-   * :ref:`X(629) <X(629)>` = :term:`complement <complement>` of :ref:`X(17) <X(17)>`
-   * :ref:`X(629) <X(629)>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X(635) <X(635)>`
-   * :ref:`X(629) <X(629)>` = :term:`crosspoint <crosspoint>` of :ref:`X(2) <X(2)>` and :ref:`X(302) <X(302)>`
+   * :ref:`X_629 <X_629>` = midpoint of :ref:`X_17 <X_17>` and :ref:`X_627 <X_627>`
+   * :ref:`X_629 <X_629>` = complement of :ref:`X_17 <X_17>`
+   * :ref:`X_629 <X_629>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X_635 <X_635>`
+   * :ref:`X_629 <X_629>` = :term:`crosspoint <crosspoint>` of :ref:`X_2 <X_2>` and :ref:`X_302 <X_302>`
 
 .. toctree::
    :hidden:

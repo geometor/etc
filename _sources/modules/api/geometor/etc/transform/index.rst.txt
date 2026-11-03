@@ -31,10 +31,10 @@ Module Contents
 
 .. py:function:: wrap_refs(text: str, valid_centers: set[int] | None = None) -> str
 
-   Wrap X(n) and X[n] references in `:ref:`X(n) <X(n)>`` outside existing RST roles.
+   Wrap X(n), X[n], and X_n references in `:ref:`X_n <X_n>`` outside existing RST roles.
 
 
-.. py:function:: transform_center_to_rst(data: dict[str, Any], glossary_terms: dict[str, Any] | list[str] | None = None, preambles: list[dict[str, Any]] | None = None, valid_centers: set[int] | None = None, figure_uri: str | None = None, kimberling_figure_uri: str | None = None, search_value: float | None = None, include_model_py: bool = False) -> str
+.. py:function:: transform_center_to_rst(data: dict[str, Any], glossary_terms: dict[str, Any] | list[str] | None = None, preambles: list[dict[str, Any]] | None = None, valid_centers: set[int] | None = None, figure_uri: str | None = None, kimberling_figure_uri: str | None = None, search_value: float | None = None, include_model_py: bool = False, model: Any = None) -> str
 
    Transform a parsed center dictionary into the Book Codex Overview track (`index.rst`).
 

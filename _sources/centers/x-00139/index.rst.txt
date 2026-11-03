@@ -1,22 +1,31 @@
 :order: 139
 :type: center
-:canonical_id: X(139)
-:dependencies: X(52), X(53), X(112), X(128), X(129), X(32692)
+:canonical_id: X_139
+:subtitle: X_112-OF-ORTHIC-TRIANGLE
+:dependencies: X_52, X_53, X_112, X_128, X_129, X_32692
 
-.. _X(139):
+.. _X_139:
 
-X(139) = X(112)-OF-ORTHIC-TRIANGLE
-==================================
+X_139
+=====
+
+.. rubric:: X_112-OF-ORTHIC-TRIANGLE
 
 .. enunciation::
 
-   :ref:`X(139) <X(139)>` = inverse-in-polar-circle of X(32692)
+   :ref:`X_139 <X_139>` = :ref:`X_112 <X_112>`-of-orthic-triangle
 
 .. figure:: x-00139.svg
-   :alt: X(139) = X(112)-OF-ORTHIC-TRIANGLE
+   :alt: X_139 — X_112-OF-ORTHIC-TRIANGLE
    :align: center
 
-   **X(139) = X(112)-OF-ORTHIC-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_139** (*X_112-OF-ORTHIC-TRIANGLE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{52, 129} <{ 52, 129 }>`, :g:`{53, 128} <{ 53, 128 }>`
+   * **Related Centers:** :g:`X_52 <X_52>` (:ref:`ORTHOCENTER OF ORTHIC TRIANGLE <X_52>`), :g:`X_129 <X_129>` (:ref:`-OF-ORTHIC-TRIANGLE <X_129>`), :g:`X_53 <X_53>` (:ref:`SYMMEDIAN POINT OF ORTHIC TRIANGLE <X_53>`), :g:`X_128 <X_128>` (:ref:`-OF-ORTHIC-TRIANGLE <X_128>`)
 
 .. signature:: center
 
@@ -25,19 +34,19 @@ X(139) = X(112)-OF-ORTHIC-TRIANGLE
 
 .. container:: note-item
 
-   :ref:`X(139) <X(139)>` lies on the nine-point circle.
+   :ref:`X_139 <X_139>` lies on the nine-point circle.
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`52 <X(52)>`, :ref:`129 <X(129)>`}, {:ref:`53 <X(53)>`, :ref:`128 <X(128)>`}
+   {:ref:`52 <X_52>`, :ref:`129 <X_129>`}, {:ref:`53 <X_53>`, :ref:`128 <X_128>`}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(139) <X(139)>` = inverse-in-polar-circle of X(32692)
-   * :ref:`X(139) <X(139)>` = :ref:`X(112) <X(112)>`-of-orthic-triangle
+   * :ref:`X_139 <X_139>` = inverse-in-polar-circle of X_32692
+   * :ref:`X_139 <X_139>` = :ref:`X_112 <X_112>`-of-orthic-triangle
 
 .. toctree::
    :hidden:

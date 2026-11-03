@@ -1,23 +1,32 @@
 :order: 482
 :type: center
-:canonical_id: X(482)
-:dependencies: X(1), X(7), X(79), X(175), X(176), X(226), X(481), X(486), X(1374), X(32057)
+:canonical_id: X_482
+:subtitle: 2nd EPPSTEIN POINT
+:dependencies: X_1, X_7, X_79, X_175, X_176, X_226, X_481, X_486, X_1374, X_32057
 
-.. _X(482):
+.. _X_482:
 .. _SecondEppsteinPoint:
 
-X(482) = 2nd EPPSTEIN POINT
-===========================
+X_482
+=====
+
+.. rubric:: 2nd EPPSTEIN POINT
 
 .. enunciation::
 
-   Let S' be the outer Soddy circle and :math:`S_{A}`, :math:`S_{B}`, :math:`S_{C}` the Soddy circles tangent to S. Let :g:`J_{A} <J_A>` = S'∩\ :math:`S_{A}`, :g:`E_{A} <E_A>` = :math:`S_{B}`\ ∩\ :math:`S_{C}`, and determine :g:`J_{B} <J_B>`, :g:`J_{C} <J_C>`, :g:`E_{B} <E_B>`, :g:`E_{C} <E_C>` cyclically. Then :ref:`X(482) <X(482)>` is the point of concurrence of lines :g:`J_{A} <J_A>`-to-:g:`E_{A} <E_A>`, :g:`J_{B} <J_B>`-to-:g:`E_{B} <E_B>`, :g:`J_{C} <J_C>`-to-:g:`E_{C} <E_C>`.
+   Let :g:`S' <S'>` be the outer Soddy circle and :math:`S_{A}`, :math:`S_{B}`, :math:`S_{C}` the Soddy circles tangent to S. Let :g:`J_{A} <J_A>` = :g:`S' <S'>`\ ∩\ :math:`S_{A}`, :g:`E_{A} <E_A>` = :math:`S_{B}`\ ∩\ :math:`S_{C}`, and determine :g:`J_{B} <J_B>`, :g:`J_{C} <J_C>`, :g:`E_{B} <E_B>`, :g:`E_{C} <E_C>` cyclically. Then :ref:`X_482 <X_482>` is the point of concurrence of lines :g:`J_{A} <J_A>`-to-:g:`E_{A} <E_A>`, :g:`J_{B} <J_B>`-to-:g:`E_{B} <E_B>`, :g:`J_{C} <J_C>`-to-:g:`E_{C} <E_C>`.
 
 .. figure:: x-00482.svg
-   :alt: X(482) = 2nd EPPSTEIN POINT
+   :alt: X_482 — 2nd EPPSTEIN POINT
    :align: center
 
-   **X(482) = 2nd EPPSTEIN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_482** (*2nd EPPSTEIN POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 7} <{ 1, 7 }>`, :g:`{226, 486} <{ 226, 486 }>`
+   * **Related Centers:** :g:`X_79 <X_79>` (:ref:`ISOGONAL CONJUGATE OF X(35) <X_79>`), :g:`X_481 <X_481>` (:ref:`1st EPPSTEIN POINT <X_481>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_7 <X_7>` (:ref:`GERGONNE POINT <X_7>`), :g:`X_226 <X_226>` (:ref:`-CEVA CONJUGATE OF X(65) <X_226>`), :g:`X_486 <X_486>` (:ref:`INNER VECTEN POINT <X_486>`)
 
 .. signature:: center
 
@@ -33,26 +42,26 @@ X(482) = 2nd EPPSTEIN POINT
 .. collapse:: Linear Combinations
    :badge: 3 combinations
 
-   * :ref:`X(482) <X(482)>` = :math:`s` :ref:`X(1) <X(1)>` + :math:`(r + 4R)` :ref:`X(7) <X(7)>`
-   * :ref:`X(482) <X(482)>` = :g:`A <A>` / :math:`R_{a}` + :g:`B <B>` / :math:`R_{b}` + :g:`C <C>` / :math:`R_{c}` + :ref:`X(1) <X(1)>` / :math:`r`, where :math:`R_{a}`, :math:`R_{b}`, :math:`R_{c}` = radii of Soddy circles
-   * :ref:`X(482) <X(482)>` = :g:`A <A>` / :math:`R_{a}` + :g:`B <B>` / :math:`R_{b}` + :g:`C <C>` / :math:`R_{c}` + :ref:`X(176) <X(176)>` / :math:`R_{s}`, where :math:`R_{a}`, :math:`R_{b}`, :math:`R_{c}` = radii of Soddy circles, and :math:`R_{s}` = radius of inner Soddy circle
+   * :ref:`X_482 <X_482>` = :math:`s` :ref:`X_1 <X_1>` + :math:`(r + 4R)` :ref:`X_7 <X_7>`
+   * :ref:`X_482 <X_482>` = :g:`A <A>` / :math:`R_{a}` + :g:`B <B>` / :math:`R_{b}` + :g:`C <C>` / :math:`R_{c}` + :ref:`X_1 <X_1>` / :math:`r`, where :math:`R_{a}`, :math:`R_{b}`, :math:`R_{c}` = radii of Soddy circles
+   * :ref:`X_482 <X_482>` = :g:`A <A>` / :math:`R_{a}` + :g:`B <B>` / :math:`R_{b}` + :g:`C <C>` / :math:`R_{c}` + :ref:`X_176 <X_176>` / :math:`R_{s}`, where :math:`R_{a}`, :math:`R_{b}`, :math:`R_{c}` = radii of Soddy circles, and :math:`R_{s}` = radius of inner Soddy circle
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`7 <X(7)>`}, {:ref:`226 <X(226)>`, :ref:`486 <X(486)>`}
+   {:ref:`1 <X_1>`, :ref:`7 <X_7>`}, {:ref:`226 <X_226>`, :ref:`486 <X_486>`}
 
 .. collapse:: Functional Relations
    :badge: 7 relations
 
-   * :ref:`X(482) <X(482)>` = :ref:`X(79) <X(79)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(481) <X(481)>`
-   * :ref:`X(482) <X(482)>` = trilinear product of centers of Elkies companion incircles
-   * :ref:`X(482) <X(482)>` = Kosnita(:ref:`X(176) <X(176)>`,\ :ref:`X(7) <X(7)>`) point
-   * :ref:`X(482) <X(482)>` = Kosnita(:ref:`X(176) <X(176)>`,\ :ref:`X(176) <X(176)>`) point
-   * :ref:`X(482) <X(482)>` = {:ref:`X(7) <X(7)>`,\ :ref:`X(175) <X(175)>`}-harmonic conjugate of X(1374)
-   * :ref:`X(482) <X(482)>` = 2nd-inner-Soddy-:term:`isogonal conjugate <isogonal-conjugate>` of X(32057)
-   * :ref:`X(482) <X(482)>` = perspector of :g:`ABC << A B C >>` and the intangents triangle of the three Elkies companion incircles; see :ref:`X(176) <X(176)>`
+   * :ref:`X_482 <X_482>` = :ref:`X_79 <X_79>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_481 <X_481>`
+   * :ref:`X_482 <X_482>` = trilinear product of centers of Elkies companion incircles
+   * :ref:`X_482 <X_482>` = Kosnita(:ref:`X_176 <X_176>`,\ :ref:`X_7 <X_7>`) point
+   * :ref:`X_482 <X_482>` = Kosnita(:ref:`X_176 <X_176>`,\ :ref:`X_176 <X_176>`) point
+   * :ref:`X_482 <X_482>` = {:ref:`X_7 <X_7>`,\ :ref:`X_175 <X_175>`}-harmonic conjugate of X_1374
+   * :ref:`X_482 <X_482>` = 2nd-inner-Soddy-:term:`isogonal conjugate <isogonal-conjugate>` of X_32057
+   * :ref:`X_482 <X_482>` = perspector of :g:`ABC << A B C >>` and the :term:`intangents triangle <intangents-triangle>` of the three Elkies companion incircles; see :ref:`X_176 <X_176>`
 
 Notes
 -----
@@ -63,15 +72,15 @@ Notes
 
 .. container:: note-item
 
-   Let S be the inner Soddy center, :ref:`X(176) <X(176)>`. :ref:`X(482) <X(482)>` is the point of concurrence of the Soddy lines of :g:`BSC << B S C >>`, :g:`CSA << C S A >>`, and :g:`ASB << A S B >>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
+   Let S be the inner Soddy center, :ref:`X_176 <X_176>`. :ref:`X_482 <X_482>` is the point of concurrence of the Soddy lines of :g:`BSC << B S C >>`, :g:`CSA << C S A >>`, and :g:`ASB << A S B >>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
 
 .. container:: note-item
 
-   Let :g:`I_{a} <I_a>`, :g:`I_{b} <I_b>`, :g:`I_{c} <I_c>` be the centers of the Elkies companion incircles. Let :g:`A' <A'>` be the trilinear product :g:`I_{b} <I_b>`\ \*\ :g:`I_{c} <I_c>`, and define :g:`B' <B'>` and C'cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(482) <X(482)>`. The lines :g:`I_{a}A' <[ I_a A' ]>`, :g:`I_{b}B' <[ I_b B' ]>`, :g:`I_{c}C' <[ I_c C' ]>` concur in :ref:`X(176) <X(176)>`. (Randy Hutson, September 14, 2016)
+   Let :g:`I_{a} <I_a>`, :g:`I_{b} <I_b>`, :g:`I_{c} <I_c>` be the centers of the Elkies companion incircles. Let :g:`A' <A'>` be the trilinear product :g:`I_{b} <I_b>`\ \*\ :g:`I_{c} <I_c>`, and define :g:`B' <B'>` and C'cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X_482 <X_482>`. The lines :g:`I_{a}A' <[ I_a A' ]>`, :g:`I_{b}B' <[ I_b B' ]>`, :g:`I_{c}C' <[ I_c C' ]>` concur in :ref:`X_176 <X_176>`. (Randy Hutson, September 14, 2016)
 
 .. container:: note-item
 
-   Let :g:`L_{a} <L_a>` be the line tangent to the inner Soddy circle at the touchpoint with the A-Soddy circle. Define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>` and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Triangle :g:`A'B'C' << A' B' C' >>`, here introduced as the **inner Soddy tangential triangle**, is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X(482) <X(482)>`. (Randy Hutson, September 14, 2016)
+   Let :g:`L_{a} <L_a>` be the line tangent to the inner Soddy circle at the touchpoint with the A-Soddy circle. Define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>` and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Triangle :g:`A'B'C' << A' B' C' >>`, here introduced as the **inner Soddy tangential triangle**, is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X_482 <X_482>`. (Randy Hutson, September 14, 2016)
 
 .. toctree::
    :hidden:

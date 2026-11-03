@@ -1,18 +1,21 @@
-:canonical_id: X(294)
+:canonical_id: X_294
 :type: code
+:subtitle: ISOGONAL CONJUGATE OF X_241
 
-X(294) = ISOGONAL CONJUGATE OF X(241) — Code
-============================================
+X_294
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_241
 
 .. enunciation::
 
-   :ref:`X(294) <X(294)>` is the perspector of the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(105) <X(105)>` and the :term:`unary cofactor triangle <unary-cofactor-triangle>` of the intangents triangle. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
+   :ref:`X_294 <X_294>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_241 <X_241>`.
 
 .. figure:: x-00294.svg
-   :alt: X(294) = ISOGONAL CONJUGATE OF X(241)
+   :alt: X_294 — ISOGONAL CONJUGATE OF X_241
    :align: center
 
-   **X(294) = ISOGONAL CONJUGATE OF X(241)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_294** (*ISOGONAL CONJUGATE OF X_241*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

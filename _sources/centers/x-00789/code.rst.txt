@@ -1,18 +1,21 @@
-:canonical_id: X(789)
+:canonical_id: X_789
 :type: code
+:subtitle: o-(- 3, 0) CIRCUMCIRCLE POINT
 
-X(789) = o-(- 3, 0) CIRCUMCIRCLE POINT — Code
-=============================================
+X_789
+=====
+
+.. rubric:: o-(- 3, 0) CIRCUMCIRCLE POINT
 
 .. enunciation::
 
-   As the trilinear product of Steiner circumellipse antipodes, :ref:`X(789) <X(789)>` lies on conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(668) <X(668)>`,\ :ref:`X(789) <X(789)>`}} with center X(6376) and perspector :ref:`X(75) <X(75)>`. (:person:`Randy Hutson <randy-hutson>`, July 11, 2019)
+   :ref:`X_789 <X_789>` = intersection, other than :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, of circumcircle and hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(6)}}
 
 .. figure:: x-00789.svg
-   :alt: X(789) = o-(- 3, 0) CIRCUMCIRCLE POINT
+   :alt: X_789 — o-(- 3, 0) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(789) = o-(- 3, 0) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_789** (*o-(- 3, 0) CIRCUMCIRCLE POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

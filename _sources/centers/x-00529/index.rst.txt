@@ -1,22 +1,31 @@
 :order: 529
 :type: center
-:canonical_id: X(529)
-:dependencies: X(2), X(8), X(12), X(30), X(36), X(46), X(329), X(428), X(484), X(495), X(511), X(908), X(956), X(993), X(1001), X(1056), X(1145), X(1146), X(1319), X(1376), X(1478), X(1706), X(1828), X(2098), X(2478), X(3035), X(3036), X(3058), X(3218), X(3304), X(3421), X(3474), X(3476), X(3509), X(38882)
+:canonical_id: X_529
+:subtitle: DIRECTION OF VECTOR AX + BX + CX, where X = X_12
+:dependencies: X_2, X_8, X_12, X_30, X_36, X_46, X_329, X_428, X_484, X_495, X_511, X_908, X_956, X_993, X_1001, X_1056, X_1145, X_1146, X_1319, X_1376, X_1478, X_1706, X_1828, X_2098, X_2478, X_3035, X_3036, X_3058, X_3218, X_3304, X_3421, X_3474, X_3476, X_3509, X_38882
 
-.. _X(529):
+.. _X_529:
 
-X(529) = DIRECTION OF VECTOR AX + BX + CX, where X = X(12)
-==========================================================
+X_529
+=====
+
+.. rubric:: DIRECTION OF VECTOR AX + BX + CX, where X = X_12
 
 .. enunciation::
 
-   :ref:`X(529) <X(529)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(38882)
+   :ref:`X_529 <X_529>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_38882
 
 .. figure:: x-00529.svg
-   :alt: X(529) = DIRECTION OF VECTOR AX + BX + CX, where X = X(12)
+   :alt: X_529 — DIRECTION OF VECTOR AX + BX + CX, where X = X_12
    :align: center
 
-   **X(529) = DIRECTION OF VECTOR AX + BX + CX, where X = X(12)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_529** (*DIRECTION OF VECTOR AX + BX + CX, where X = X_12*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 12} <{ 2, 12 }>`, :g:`{30, 511} <{ 30, 511 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_12 <X_12>` (:ref:`{X <X_12>`), :g:`X_30 <X_30>` (:ref:`EULER INFINITY POINT <X_30>`), :g:`X_511 <X_511>` (:ref:`ISOGONAL CONJUGATE OF X(98) <X_511>`)
 
 .. signature:: center
 
@@ -25,18 +34,18 @@ X(529) = DIRECTION OF VECTOR AX + BX + CX, where X = X(12)
 
 .. container:: note-item
 
-   :ref:`X(529) <X(529)>` lies on the line at infinity.
+   :ref:`X_529 <X_529>` lies on the line at infinity.
 
 .. collapse:: Incident Central Lines
    :badge: 17 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`12 <X(12)>`}, {:ref:`8 <X(8)>`, 3474}, {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}, {:ref:`36 <X(36)>`, 3035}, {:ref:`46 <X(46)>`, 1706}, {:ref:`329 <X(329)>`, 3476}, {:ref:`428 <X(428)>`, 1828}, {:ref:`484 <X(484)>`, 1145}, {:ref:`495 <X(495)>`, :ref:`993 <X(993)>`}, {:ref:`908 <X(908)>`, 1319}, {:ref:`956 <X(956)>`, 1478}, {1001, 1056}, {1146, 3509}, {1376, 3421}, {2098, 3058}, {2478, 3304}, {3036, 3218}
+   {:ref:`2 <X_2>`, :ref:`12 <X_12>`}, {:ref:`8 <X_8>`, 3474}, {:ref:`30 <X_30>`, :ref:`511 <X_511>`}, {:ref:`36 <X_36>`, 3035}, {:ref:`46 <X_46>`, 1706}, {:ref:`329 <X_329>`, 3476}, {:ref:`428 <X_428>`, 1828}, {:ref:`484 <X_484>`, 1145}, {:ref:`495 <X_495>`, :ref:`993 <X_993>`}, {:ref:`908 <X_908>`, 1319}, {:ref:`956 <X_956>`, 1478}, {1001, 1056}, {1146, 3509}, {1376, 3421}, {2098, 3058}, {2478, 3304}, {3036, 3218}
 
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(529) <X(529)>` = isogonal conjugate of X(38882)
+   * :ref:`X_529 <X_529>` = isogonal conjugate of X_38882
 
 .. toctree::
    :hidden:

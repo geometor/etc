@@ -1,18 +1,21 @@
-:canonical_id: X(60)
+:canonical_id: X_60
 :type: code
+:subtitle: ISOGONAL CONJUGATE OF X_12
 
-X(60) = ISOGONAL CONJUGATE OF X(12) — Code
-==========================================
+X_60
+====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_12
 
 .. enunciation::
 
-   Let :g:`A'B'C' << A' B' C' >>` be the :term:`cevian triangle <cevian-triangle>` of :ref:`X(21) <X(21)>`. Let :g:`A″ <A″>`, :g:`B″ <B″>`, :g:`C″ <C″>` be the inverse-in-circumcircle of :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>`. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(60) <X(60)>`. (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
+   :ref:`X_60 <X_60>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_12 <X_12>`.
 
 .. figure:: x-00060.svg
-   :alt: X(60) = ISOGONAL CONJUGATE OF X(12)
+   :alt: X_60 — ISOGONAL CONJUGATE OF X_12
    :align: center
 
-   **X(60) = ISOGONAL CONJUGATE OF X(12)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_60** (*ISOGONAL CONJUGATE OF X_12*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

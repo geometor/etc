@@ -1,22 +1,31 @@
 :order: 169
 :type: center
-:canonical_id: X(169)
-:dependencies: X(1), X(2), X(3), X(4), X(6), X(9), X(41), X(43), X(46), X(57), X(63), X(65), X(85), X(86), X(101), X(165), X(170), X(174), X(188), X(218), X(220), X(277), X(379), X(508), X(514), X(517), X(572), X(610), X(664), X(672), X(910), X(942), X(1053), X(1473), X(17170), X(34847)
+:canonical_id: X_169
+:subtitle: X_85-CEVA CONJUGATE OF X_1
+:dependencies: X_1, X_2, X_3, X_4, X_6, X_9, X_41, X_43, X_46, X_57, X_63, X_65, X_85, X_86, X_101, X_165, X_170, X_174, X_188, X_218, X_220, X_277, X_379, X_508, X_514, X_517, X_572, X_610, X_664, X_672, X_910, X_942, X_1053, X_1473, X_17170, X_34847
 
-.. _X(169):
+.. _X_169:
 
-X(169) = X(85)-CEVA CONJUGATE OF X(1)
-=====================================
+X_169
+=====
+
+.. rubric:: X_85-CEVA CONJUGATE OF X_1
 
 .. enunciation::
 
-   :ref:`X(169) <X(169)>` = :term:`complement <complement>` of X(17170)
+   :ref:`X_169 <X_169>` = :ref:`X_85 <X_85>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_1 <X_1>`
 
 .. figure:: x-00169.svg
-   :alt: X(169) = X(85)-CEVA CONJUGATE OF X(1)
+   :alt: X_169 — X_85-CEVA CONJUGATE OF X_1
    :align: center
 
-   **X(169) = X(85)-CEVA CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_169** (*X_85-CEVA CONJUGATE OF X_1*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{4, 9} <{ 4, 9 }>`, :g:`{1, 41} <{ 1, 41 }>`
+   * **Related Centers:** :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_9 <X_9>` (:ref:`MITTENPUNKT <X_9>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_41 <X_41>` (:ref:`-CEVA CONJUGATE OF X(31) <X_41>`)
 
 .. signature:: center
 
@@ -32,16 +41,16 @@ X(169) = X(85)-CEVA CONJUGATE OF X(1)
    :badge: 10 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`41 <X(41)>`}, {:ref:`3 <X(3)>`, :ref:`910 <X(910)>`}, {:ref:`4 <X(4)>`, :ref:`9 <X(9)>`}, {:ref:`6 <X(6)>`, :ref:`942 <X(942)>`}, {:ref:`46 <X(46)>`, :ref:`672 <X(672)>`}, {:ref:`57 <X(57)>`, :ref:`277 <X(277)>`}, {:ref:`63 <X(63)>`, :ref:`379 <X(379)>`}, {:ref:`65 <X(65)>`, :ref:`218 <X(218)>`}, {:ref:`220 <X(220)>`, :ref:`517 <X(517)>`}, {:ref:`572 <X(572)>`, :ref:`610 <X(610)>`}
+   {:ref:`1 <X_1>`, :ref:`41 <X_41>`}, {:ref:`3 <X_3>`, :ref:`910 <X_910>`}, {:ref:`4 <X_4>`, :ref:`9 <X_9>`}, {:ref:`6 <X_6>`, :ref:`942 <X_942>`}, {:ref:`46 <X_46>`, :ref:`672 <X_672>`}, {:ref:`57 <X_57>`, :ref:`277 <X_277>`}, {:ref:`63 <X_63>`, :ref:`379 <X_379>`}, {:ref:`65 <X_65>`, :ref:`218 <X_218>`}, {:ref:`220 <X_220>`, :ref:`517 <X_517>`}, {:ref:`572 <X_572>`, :ref:`610 <X_610>`}
 
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X(169) <X(169)>` = complement of X(17170)
-   * :ref:`X(169) <X(169)>` = :term:`anticomplement <anticomplement>` of X(34847)
-   * :ref:`X(169) <X(169)>` = :ref:`X(85) <X(85)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(1) <X(1)>`
-   * :ref:`X(169) <X(169)>` = :term:`crosssum <crosssum>` of :ref:`X(6) <X(6)>` and X(1473)
-   * :ref:`X(169) <X(169)>` = X(i)-:term:`aleph conjugate <aleph-conjugate>` of X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`165 <X(165)>`), (:ref:`85 <X(85)>`, :ref:`169 <X(169)>`), (:ref:`86 <X(86)>`, :ref:`572 <X(572)>`), (:ref:`174 <X(174)>`, :ref:`43 <X(43)>`), (:ref:`188 <X(188)>`, :ref:`170 <X(170)>`), (:ref:`508 <X(508)>`, :ref:`1 <X(1)>`), (:ref:`514 <X(514)>`, 1053), (:ref:`664 <X(664)>`, :ref:`101 <X(101)>`)
+   * :ref:`X_169 <X_169>` = :term:`complement <complement>` of X_17170
+   * :ref:`X_169 <X_169>` = :term:`anticomplement <anticomplement>` of X_34847
+   * :ref:`X_169 <X_169>` = :ref:`X_85 <X_85>`-Ceva conjugate of :ref:`X_1 <X_1>`
+   * :ref:`X_169 <X_169>` = :term:`crosssum <crosssum>` of :ref:`X_6 <X_6>` and X_1473
+   * :ref:`X_169 <X_169>` = X_i-:term:`aleph conjugate <aleph-conjugate>` of X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`165 <X_165>`), (:ref:`85 <X_85>`, :ref:`169 <X_169>`), (:ref:`86 <X_86>`, :ref:`572 <X_572>`), (:ref:`174 <X_174>`, :ref:`43 <X_43>`), (:ref:`188 <X_188>`, :ref:`170 <X_170>`), (:ref:`508 <X_508>`, :ref:`1 <X_1>`), (:ref:`514 <X_514>`, 1053), (:ref:`664 <X_664>`, :ref:`101 <X_101>`)
 
 .. toctree::
    :hidden:

@@ -1,18 +1,21 @@
-:canonical_id: X(30)
+:canonical_id: X_30
 :type: code
+:subtitle: EULER INFINITY POINT
 
-X(30) = EULER INFINITY POINT — Code
-===================================
+X_30
+====
+
+.. rubric:: EULER INFINITY POINT
 
 .. enunciation::
 
-   Let :g:`A'B'C' << A' B' C' >>` be the reflection triangle. Let :g:`A″ <A″>` be the :term:`cevapoint <cevapoint>` of :g:`B' <B'>` and :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` are parallel to the Euler line, and therefore concur in :ref:`X(30) <X(30)>`. (:person:`Randy Hutson <randy-hutson>`, December 10, 2016)
+   :ref:`X_30 <X_30>` is the point of intersection of the Euler line and the line at infinity. Thus, each of the lines listed below is parallel to the Euler line.
 
 .. figure:: x-00030.svg
-   :alt: X(30) = EULER INFINITY POINT
+   :alt: X_30 — EULER INFINITY POINT
    :align: center
 
-   **X(30) = EULER INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_30** (*EULER INFINITY POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

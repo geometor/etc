@@ -1,41 +1,50 @@
 :order: 916
 :type: center
-:canonical_id: X(916)
-:dependencies: X(3), X(4), X(19), X(30), X(48), X(72), X(103), X(185), X(511), X(917), X(1037), X(1069), X(2989), X(8608)
+:canonical_id: X_916
+:subtitle: X_103-CEVA CONJUGATE OF X_3
+:dependencies: X_3, X_4, X_19, X_30, X_48, X_72, X_103, X_185, X_511, X_917, X_1037, X_1069, X_2989, X_8608
 
-.. _X(916):
+.. _X_916:
 
-X(916) = X(103)-CEVA CONJUGATE OF X(3)
-======================================
+X_916
+=====
+
+.. rubric:: X_103-CEVA CONJUGATE OF X_3
 
 .. enunciation::
 
-   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X(916) <X(916)>` lies on the line at infinity.
+   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X_916 <X_916>` lies on the line at infinity.
 
 .. figure:: x-00916.svg
-   :alt: X(916) = X(103)-CEVA CONJUGATE OF X(3)
+   :alt: X_916 — X_103-CEVA CONJUGATE OF X_3
    :align: center
 
-   **X(916) = X(103)-CEVA CONJUGATE OF X(3)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_916** (*X_103-CEVA CONJUGATE OF X_3*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{3, 48} <{ 3, 48 }>`, :g:`{72, 185} <{ 72, 185 }>`
+   * **Related Centers:** :g:`X_917 <X_917>` (:ref:`-CROSS CONJUGATE OF X(4) <X_917>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_48 <X_48>` (:ref:`CROSSPOINT OF X(1) AND X(63) <X_48>`), :g:`X_72 <X_72>` (:ref:`ISOGONAL CONJUGATE OF X(28) <X_72>`), :g:`X_185 <X_185>` (:ref:`NAGEL POINT OF THE ORTHIC TRIANGLE <X_185>`)
 
 .. signature:: center
 
-   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = wb^{2} + vc^{2} - a(wb + vc)`,\ :math:`u : v : w` = :ref:`X(4) <X(4)>`
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = wb^{2} + vc^{2} - a(wb + vc)`,\ :math:`u : v : w` = :ref:`X_4 <X_4>`
    | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines
    :class: line-catalog
 
-   {:ref:`3 <X(3)>`, :ref:`48 <X(48)>`}, {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}, {:ref:`72 <X(72)>`, :ref:`185 <X(185)>`}, {1037, 1069}
+   {:ref:`3 <X_3>`, :ref:`48 <X_48>`}, {:ref:`30 <X_30>`, :ref:`511 <X_511>`}, {:ref:`72 <X_72>`, :ref:`185 <X_185>`}, {1037, 1069}
 
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X(916) <X(916)>` = isogonal conjugate of :ref:`X(917) <X(917)>`
-   * :ref:`X(916) <X(916)>` = :term:`isotomic conjugate <isotomic-conjugate>` of polar conjugate of X(8608)
-   * :ref:`X(916) <X(916)>` = :ref:`X(19) <X(19)>`-:term:`isoconjugate <isoconjugate>` of X(2989)
-   * :ref:`X(916) <X(916)>` = :ref:`X(103) <X(103)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(3) <X(3)>`
+   * :ref:`X_916 <X_916>` = isogonal conjugate of :ref:`X_917 <X_917>`
+   * :ref:`X_916 <X_916>` = :term:`isotomic conjugate <isotomic-conjugate>` of polar conjugate of X_8608
+   * :ref:`X_916 <X_916>` = :ref:`X_19 <X_19>`-:term:`isoconjugate <isoconjugate>` of X_2989
+   * :ref:`X_916 <X_916>` = :ref:`X_103 <X_103>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_3 <X_3>`
 
 .. toctree::
    :hidden:

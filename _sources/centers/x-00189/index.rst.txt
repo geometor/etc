@@ -1,22 +1,31 @@
 :order: 189
 :type: center
-:canonical_id: X(189)
-:dependencies: X(2), X(4), X(7), X(8), X(20), X(29), X(57), X(69), X(77), X(81), X(84), X(92), X(198), X(222), X(223), X(280), X(281), X(282), X(309), X(329), X(522), X(905)
+:canonical_id: X_189
+:subtitle: CYCLOCEVIAN CONJUGATE OF X_8
+:dependencies: X_2, X_4, X_7, X_8, X_20, X_29, X_57, X_69, X_77, X_81, X_84, X_92, X_198, X_222, X_223, X_280, X_281, X_282, X_309, X_329, X_522, X_905
 
-.. _X(189):
+.. _X_189:
 
-X(189) = CYCLOCEVIAN CONJUGATE OF X(8)
-======================================
+X_189
+=====
+
+.. rubric:: CYCLOCEVIAN CONJUGATE OF X_8
 
 .. enunciation::
 
-   :ref:`X(189) <X(189)>` is the perspector of triangle :g:`ABC << A B C >>` and the :term:`pedal triangle <pedal-triangle>` of :ref:`X(84) <X(84)>`.
+   :ref:`X_189 <X_189>` is the perspector of triangle :g:`ABC << A B C >>` and the :term:`pedal triangle <pedal-triangle>` of :ref:`X_84 <X_84>`.
 
 .. figure:: x-00189.svg
-   :alt: X(189) = CYCLOCEVIAN CONJUGATE OF X(8)
+   :alt: X_189 — CYCLOCEVIAN CONJUGATE OF X_8
    :align: center
 
-   **X(189) = CYCLOCEVIAN CONJUGATE OF X(8)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_189** (*CYCLOCEVIAN CONJUGATE OF X_8*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{8, 20} <{ 8, 20 }>`, :g:`{2, 77} <{ 2, 77 }>`
+   * **Related Centers:** :g:`X_198 <X_198>` (:ref:`-CEVA CONJUGATE OF X(6) <X_198>`), :g:`X_8 <X_8>` (:ref:`NAGEL POINT <X_8>`), :g:`X_20 <X_20>` (:ref:`DE LONGCHAMPS POINT <X_20>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_77 <X_77>` (:ref:`ISOGONAL CONJUGATE OF X(33) <X_77>`)
 
 .. signature:: center
 
@@ -26,26 +35,26 @@ X(189) = CYCLOCEVIAN CONJUGATE OF X(8)
 
 .. container:: note-item
 
-   :ref:`X(189) <X(189)>` lies on the Lucas cubic.
+   :ref:`X_189 <X_189>` lies on the Lucas cubic.
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`77 <X(77)>`}, {:ref:`7 <X(7)>`, :ref:`92 <X(92)>`}, {:ref:`8 <X(8)>`, :ref:`20 <X(20)>`}, {:ref:`29 <X(29)>`, :ref:`81 <X(81)>`}, {:ref:`69 <X(69)>`, :ref:`309 <X(309)>`}, {:ref:`222 <X(222)>`, :ref:`281 <X(281)>`}
+   {:ref:`2 <X_2>`, :ref:`77 <X_77>`}, {:ref:`7 <X_7>`, :ref:`92 <X_92>`}, {:ref:`8 <X_8>`, :ref:`20 <X_20>`}, {:ref:`29 <X_29>`, :ref:`81 <X_81>`}, {:ref:`69 <X_69>`, :ref:`309 <X_309>`}, {:ref:`222 <X_222>`, :ref:`281 <X_281>`}
 
 .. collapse:: Functional Relations
    :badge: 9 relations
 
-   * :ref:`X(189) <X(189)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(198) <X(198)>`
-   * :ref:`X(189) <X(189)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(329) <X(329)>`
-   * :ref:`X(189) <X(189)>` = :term:`cyclocevian conjugate <cyclocevian-conjugate>` of :ref:`X(8) <X(8)>`
-   * :ref:`X(189) <X(189)>` = :term:`anticomplement <anticomplement>` of :ref:`X(223) <X(223)>`
-   * :ref:`X(189) <X(189)>` = :ref:`X(309) <X(309)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(280) <X(280)>`
-   * :ref:`X(189) <X(189)>` = :term:`cevapoint <cevapoint>` of :ref:`X(84) <X(84)>` and :ref:`X(282) <X(282)>`
-   * :ref:`X(189) <X(189)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`4 <X(4)>`, :ref:`7 <X(7)>`), (:ref:`57 <X(57)>`, :ref:`2 <X(2)>`), (:ref:`282 <X(282)>`, :ref:`280 <X(280)>`)
-   * :ref:`X(189) <X(189)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(522) <X(522)>`\ \ :ref:`X(905) <X(905)>`
-   * :ref:`X(189) <X(189)>` = perspector of :g:`ABC << A B C >>` and the reflection in :ref:`X(282) <X(282)>` of the pedal triangle of :ref:`X(282) <X(282)>`
+   * :ref:`X_189 <X_189>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_198 <X_198>`
+   * :ref:`X_189 <X_189>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_329 <X_329>`
+   * :ref:`X_189 <X_189>` = :term:`cyclocevian conjugate <cyclocevian-conjugate>` of :ref:`X_8 <X_8>`
+   * :ref:`X_189 <X_189>` = :term:`anticomplement <anticomplement>` of :ref:`X_223 <X_223>`
+   * :ref:`X_189 <X_189>` = :ref:`X_309 <X_309>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_280 <X_280>`
+   * :ref:`X_189 <X_189>` = :term:`cevapoint <cevapoint>` of :ref:`X_84 <X_84>` and :ref:`X_282 <X_282>`
+   * :ref:`X_189 <X_189>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`7 <X_7>`), (:ref:`57 <X_57>`, :ref:`2 <X_2>`), (:ref:`282 <X_282>`, :ref:`280 <X_280>`)
+   * :ref:`X_189 <X_189>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_522 <X_522>`\ \ :ref:`X_905 <X_905>`
+   * :ref:`X_189 <X_189>` = perspector of :g:`ABC << A B C >>` and the reflection in :ref:`X_282 <X_282>` of the pedal triangle of :ref:`X_282 <X_282>`
 
 .. toctree::
    :hidden:

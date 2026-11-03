@@ -1,22 +1,31 @@
 :order: 215
 :type: center
-:canonical_id: X(215)
-:dependencies: X(1), X(11), X(12), X(49), X(50), X(54), X(55), X(110), X(184)
+:canonical_id: X_215
+:subtitle: X_1-CEVA CONJUGATE OF X_50
+:dependencies: X_1, X_11, X_12, X_49, X_50, X_54, X_55, X_110, X_184
 
-.. _X(215):
+.. _X_215:
 
-X(215) = X(1)-CEVA CONJUGATE OF X(50)
-=====================================
+X_215
+=====
+
+.. rubric:: X_1-CEVA CONJUGATE OF X_50
 
 .. enunciation::
 
-   :ref:`X(215) <X(215)>` is the insimilicenter of the incircle and the sine-triple-angle circle. (:person:`Randy Hutson <randy-hutson>`, December 14, 2014)
+   :ref:`X_215 <X_215>` is the insimilicenter of the incircle and the sine-triple-angle circle. (:person:`Randy Hutson <randy-hutson>`, December 14, 2014)
 
 .. figure:: x-00215.svg
-   :alt: X(215) = X(1)-CEVA CONJUGATE OF X(50)
+   :alt: X_215 — X_1-CEVA CONJUGATE OF X_50
    :align: center
 
-   **X(215) = X(1)-CEVA CONJUGATE OF X(50)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_215** (*X_1-CEVA CONJUGATE OF X_50*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 49} <{ 1, 49 }>`, :g:`{12, 54} <{ 12, 54 }>`
+   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_49 <X_49>` (:ref:`CENTER OF SINE-TRIPLE-ANGLE CIRCLE <X_49>`), :g:`X_12 <X_12>` (:ref:`{X <X_12>`), :g:`X_54 <X_54>` (:ref:`KOSNITA POINT <X_54>`)
 
 .. signature:: center
 
@@ -35,12 +44,12 @@ X(215) = X(1)-CEVA CONJUGATE OF X(50)
    :badge: 4 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`49 <X(49)>`}, {:ref:`11 <X(11)>`, :ref:`110 <X(110)>`}, {:ref:`12 <X(12)>`, :ref:`54 <X(54)>`}, {:ref:`55 <X(55)>`, :ref:`184 <X(184)>`}
+   {:ref:`1 <X_1>`, :ref:`49 <X_49>`}, {:ref:`11 <X_11>`, :ref:`110 <X_110>`}, {:ref:`12 <X_12>`, :ref:`54 <X_54>`}, {:ref:`55 <X_55>`, :ref:`184 <X_184>`}
 
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(215) <X(215)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`50 <X(50)>`)
+   * :ref:`X_215 <X_215>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`50 <X_50>`)
 
 .. toctree::
    :hidden:

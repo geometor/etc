@@ -1,18 +1,21 @@
-:canonical_id: X(642)
+:canonical_id: X_642
 :type: code
+:subtitle: COMPLEMENT OF X_486
 
-X(642) = COMPLEMENT OF X(486) — Code
-====================================
+X_642
+=====
+
+.. rubric:: COMPLEMENT OF X_486
 
 .. enunciation::
 
-   Erect squares inwards on the sides of triangle :g:`ABC << A B C >>`; the circumcenter of the centers of the squares is :ref:`X(642) <X(642)>`. (:person:`Peter Moses <peter-moses>`, 7/16,2003)
+   :ref:`X_642 <X_642>` is the :term:`complement <complement>` of :ref:`X_486 <X_486>`.
 
 .. figure:: x-00642.svg
-   :alt: X(642) = COMPLEMENT OF X(486)
+   :alt: X_642 — COMPLEMENT OF X_486
    :align: center
 
-   **X(642) = COMPLEMENT OF X(486)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_642** (*COMPLEMENT OF X_486*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

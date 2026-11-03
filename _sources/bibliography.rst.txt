@@ -71,7 +71,7 @@ Clark Kimberling — Central Points and Central Lines in the Plane of a Triangle
 ------------------------------------------------------------------------------
 
 * **Locus**: Mathematics Magazine 67 (1994), 163–187
-* **Notes**: Landmark paper introducing the systematic indexing of triangle centers X(n) and central lines L(n).
+* **Notes**: Landmark paper introducing the systematic indexing of triangle centers X_n and central lines L(n).
 
 .. _cite-kimberling-2002-fg:
 .. _kimberling-2002-fg:

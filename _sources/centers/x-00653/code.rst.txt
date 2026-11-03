@@ -1,18 +1,21 @@
-:canonical_id: X(653)
+:canonical_id: X_653
 :type: code
+:subtitle: TRILINEAR POLE OF LINE X_1X_4
 
-X(653) = TRILINEAR POLE OF LINE X(1)X(4) — Code
-===============================================
+X_653
+=====
+
+.. rubric:: TRILINEAR POLE OF LINE X_1X_4
 
 .. enunciation::
 
-   :ref:`X(653) <X(653)>` = reflection of X(16596) in X(40535)
+   :ref:`X_653 <X_653>` = polar conjugate of :ref:`X_522 <X_522>`
 
 .. figure:: x-00653.svg
-   :alt: X(653) = TRILINEAR POLE OF LINE X(1)X(4)
+   :alt: X_653 — TRILINEAR POLE OF LINE X_1X_4
    :align: center
 
-   **X(653) = TRILINEAR POLE OF LINE X(1)X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_653** (*TRILINEAR POLE OF LINE X_1X_4*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

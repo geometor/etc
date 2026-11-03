@@ -1,18 +1,21 @@
-:canonical_id: X(91)
+:canonical_id: X_91
 :type: code
+:subtitle: ISOGONAL CONJUGATE OF X_47
 
-X(91) = ISOGONAL CONJUGATE OF X(47) — Code
-==========================================
+X_91
+====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_47
 
 .. enunciation::
 
-   :ref:`X(91) <X(91)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(47) <X(47)>`
+   :ref:`X_91 <X_91>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_47 <X_47>`.
 
 .. figure:: x-00091.svg
-   :alt: X(91) = ISOGONAL CONJUGATE OF X(47)
+   :alt: X_91 — ISOGONAL CONJUGATE OF X_47
    :align: center
 
-   **X(91) = ISOGONAL CONJUGATE OF X(47)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_91** (*ISOGONAL CONJUGATE OF X_47*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

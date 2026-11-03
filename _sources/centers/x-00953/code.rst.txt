@@ -1,18 +1,21 @@
-:canonical_id: X(953)
+:canonical_id: X_953
 :type: code
+:subtitle: ISOGONAL CONJUGATE OF X_952
 
-X(953) = ISOGONAL CONJUGATE OF X(952) — Code
-============================================
+X_953
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_952
 
 .. enunciation::
 
-   Let :g:`L <L>` be the line tangent to the incircle and the nine-point circle; i.e., the line :ref:`X(11) <X(11)>`\ \ :ref:`X(244) <X(244)>`, called the Feuerbach tangent line. Let :g:`L_{A} <L_A>` be the reflection of :g:`L <L>` in :g:`BC <[ B C ]>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A″ <A″>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(953) <X(953)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   For a construction of :ref:`X_953 <X_953>` involving the Euler line and :ref:`X_110 <X_110>`, see :person:`Antreas Hatzipolakis <antreas-hatzipolakis>` and :person:`César Lozada <cesar-lozada>`, `Hyacinthos 26050 <http://www.hyacinthos.epizy.com/message.php?msg=26959>`__.
 
 .. figure:: x-00953.svg
-   :alt: X(953) = ISOGONAL CONJUGATE OF X(952)
+   :alt: X_953 — ISOGONAL CONJUGATE OF X_952
    :align: center
 
-   **X(953) = ISOGONAL CONJUGATE OF X(952)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_953** (*ISOGONAL CONJUGATE OF X_952*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

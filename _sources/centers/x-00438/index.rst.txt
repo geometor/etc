@@ -1,26 +1,31 @@
 :order: 438
 :type: center
-:canonical_id: X(438)
-:dependencies: X(2), X(3), X(204), X(5895), X(6330), X(35711), X(42287)
+:canonical_id: X_438
+:subtitle: EULER X_204-8th-SUBSTITUTION POINT
+:dependencies: X_2, X_3, X_204, X_5895, X_6330, X_35711, X_42287
 
-.. _X(438):
+.. _X_438:
 
-X(438) = EULER X(204)-8th-SUBSTITUTION POINT
-============================================
+X_438
+=====
 
-.. enunciation::
-
-   As a point on the Euler line, :ref:`X(438) <X(438)>` has Shinagawa coefficients :math:`(4(E + F)^{2}F^{2} - (E + 3F)FS^{2}, -[4(E - F)F - S^{2}]S^{2})`
+.. rubric:: EULER X_204-8th-SUBSTITUTION POINT
 
 .. figure:: x-00438.svg
-   :alt: X(438) = EULER X(204)-8th-SUBSTITUTION POINT
+   :alt: X_438 — EULER X_204-8th-SUBSTITUTION POINT
    :align: center
 
-   **X(438) = EULER X(204)-8th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_438** (*EULER X_204-8th-SUBSTITUTION POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`)
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`)
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(u^{2} + vw)\csc A : (v^{2} + wu)\csc B : (w^{2} + uv)\csc C`, where :math:`u : v : w` = :ref:`X(204) <X(204)>`; e.g., :math:`u(A,B,C) = (\tan A)(\tan B + \tan C - \tan A)`
+   | **Trilinears:** :math:`(u^{2} + vw)\csc A : (v^{2} + wu)\csc B : (w^{2} + uv)\csc C`, where :math:`u : v : w` = :ref:`X_204 <X_204>`; e.g., :math:`u(A,B,C) = (\tan A)(\tan B + \tan C - \tan A)`
    | **Barycentrics:** :math:`u^{2} + vw : v^{2} + wu : w^{2} + uv`
    | **Search Value (6, 9, 13):** :math:`4.705865843343`
 
@@ -33,7 +38,14 @@ X(438) = EULER X(204)-8th-SUBSTITUTION POINT
    :badge: 3 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {5895, 6330}, {35711, 42287}
+   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {5895, 6330}, {35711, 42287}
+
+Notes
+-----
+
+.. container:: note-item
+
+   As a point on the Euler line, :ref:`X_438 <X_438>` has Shinagawa coefficients :math:`(4(E + F)^{2}F^{2} - (E + 3F)FS^{2}, -[4(E - F)F - S^{2}]S^{2})`
 
 .. toctree::
    :hidden:

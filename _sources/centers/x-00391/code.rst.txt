@@ -1,18 +1,21 @@
-:canonical_id: X(391)
+:canonical_id: X_391
 :type: code
+:subtitle: INTERSECTION OF LINES X(2,6) AND X(8,9)
 
-X(391) = INTERSECTION OF LINES X(2,6) AND X(8,9) — Code
-=======================================================
+X_391
+=====
+
+.. rubric:: INTERSECTION OF LINES X(2,6) AND X(8,9)
 
 .. enunciation::
 
-   :ref:`X(391) <X(391)>` is the {:ref:`X(8) <X(8)>`,\ :ref:`X(9) <X(9)>`}-harmonic conjugate of :ref:`X(346) <X(346)>`.
+   :ref:`X_391 <X_391>` is the {:ref:`X_8 <X_8>`,\ :ref:`X_9 <X_9>`}-harmonic conjugate of :ref:`X_346 <X_346>`.
 
 .. figure:: x-00391.svg
-   :alt: X(391) = INTERSECTION OF LINES X(2,6) AND X(8,9)
+   :alt: X_391 — INTERSECTION OF LINES X(2,6) AND X(8,9)
    :align: center
 
-   **X(391) = INTERSECTION OF LINES X(2,6) AND X(8,9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_391** (*INTERSECTION OF LINES X(2,6) AND X(8,9)*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

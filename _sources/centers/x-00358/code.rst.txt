@@ -1,18 +1,21 @@
-:canonical_id: X(358)
+:canonical_id: X_358
 :type: code
+:subtitle: 2nd MORLEY-TAYLOR-MARR CENTER
 
-X(358) = 2nd MORLEY-TAYLOR-MARR CENTER — Code
-=============================================
+X_358
+=====
+
+.. rubric:: 2nd MORLEY-TAYLOR-MARR CENTER
 
 .. enunciation::
 
-   :ref:`X(358) <X(358)>` is the perspector of the adjunct Morley triangle and :g:`ABC << A B C >>`, and also the Hofstadter 2/3 point.
+   :ref:`X_358 <X_358>` is the perspector of the adjunct Morley triangle and :g:`ABC << A B C >>`, and also the Hofstadter 2/3 point.
 
 .. figure:: x-00358.svg
-   :alt: X(358) = 2nd MORLEY-TAYLOR-MARR CENTER
+   :alt: X_358 — 2nd MORLEY-TAYLOR-MARR CENTER
    :align: center
 
-   **X(358) = 2nd MORLEY-TAYLOR-MARR CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_358** (*2nd MORLEY-TAYLOR-MARR CENTER*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

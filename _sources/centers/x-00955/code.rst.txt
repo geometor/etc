@@ -1,18 +1,21 @@
-:canonical_id: X(955)
+:canonical_id: X_955
 :type: code
+:subtitle: ISOGONAL CONJUGATE OF X_954
 
-X(955) = ISOGONAL CONJUGATE OF X(954) — Code
-============================================
+X_955
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_954
 
 .. enunciation::
 
-   :ref:`X(955) <X(955)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(954) <X(954)>`
+   :ref:`X_955 <X_955>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_954 <X_954>`.
 
 .. figure:: x-00955.svg
-   :alt: X(955) = ISOGONAL CONJUGATE OF X(954)
+   :alt: X_955 — ISOGONAL CONJUGATE OF X_954
    :align: center
 
-   **X(955) = ISOGONAL CONJUGATE OF X(954)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_955** (*ISOGONAL CONJUGATE OF X_954*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

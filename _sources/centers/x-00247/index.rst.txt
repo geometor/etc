@@ -1,22 +1,31 @@
 :order: 247
 :type: center
-:canonical_id: X(247)
-:dependencies: X(4), X(110), X(115), X(125), X(686)
+:canonical_id: X_247
+:subtitle: X_4-LINE CONJUGATE OF X_110
+:dependencies: X_4, X_110, X_115, X_125, X_686
 
-.. _X(247):
+.. _X_247:
 
-X(247) = X(4)-LINE CONJUGATE OF X(110)
-======================================
+X_247
+=====
+
+.. rubric:: X_4-LINE CONJUGATE OF X_110
 
 .. enunciation::
 
-   :ref:`X(247) <X(247)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(110) <X(110)>`\ \ :ref:`X(686) <X(686)>`
+   :ref:`X_247 <X_247>` = :ref:`X_4 <X_4>`-:term:`line conjugate <line-conjugate>` of :ref:`X_110 <X_110>`
 
 .. figure:: x-00247.svg
-   :alt: X(247) = X(4)-LINE CONJUGATE OF X(110)
+   :alt: X_247 — X_4-LINE CONJUGATE OF X_110
    :align: center
 
-   **X(247) = X(4)-LINE CONJUGATE OF X(110)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_247** (*X_4-LINE CONJUGATE OF X_110*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{4, 110} <{ 4, 110 }>`, :g:`{115, 125} <{ 115, 125 }>`
+   * **Related Centers:** :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_110 <X_110>` (:ref:`FOCUS OF KIEPERT PARABOLA <X_110>`), :g:`X_115 <X_115>` (:ref:`CENTER OF KIEPERT HYPERBOLA <X_115>`), :g:`X_125 <X_125>` (:ref:`CENTER OF JERABEK HYPERBOLA <X_125>`)
 
 .. signature:: center
 
@@ -28,13 +37,13 @@ X(247) = X(4)-LINE CONJUGATE OF X(110)
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`4 <X(4)>`, :ref:`110 <X(110)>`}, {:ref:`115 <X(115)>`, :ref:`125 <X(125)>`}
+   {:ref:`4 <X_4>`, :ref:`110 <X_110>`}, {:ref:`115 <X_115>`, :ref:`125 <X_125>`}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(247) <X(247)>` = crossdifference of every pair of points on line :ref:`X(110) <X(110)>`\ \ :ref:`X(686) <X(686)>`
-   * :ref:`X(247) <X(247)>` = :ref:`X(4) <X(4)>`-:term:`line conjugate <line-conjugate>` of :ref:`X(110) <X(110)>`
+   * :ref:`X_247 <X_247>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_110 <X_110>`\ \ :ref:`X_686 <X_686>`
+   * :ref:`X_247 <X_247>` = :ref:`X_4 <X_4>`-line conjugate of :ref:`X_110 <X_110>`
 
 .. toctree::
    :hidden:

@@ -1,18 +1,21 @@
-:canonical_id: X(447)
+:canonical_id: X_447
 :type: code
+:subtitle: X_2-HIRST INVERSE OF X_27
 
-X(447) = X(2)-HIRST INVERSE OF X(27) — Code
-===========================================
+X_447
+=====
+
+.. rubric:: X_2-HIRST INVERSE OF X_27
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(447) <X(447)>` has Shinagawa coefficients :math:`(2(E+F)^{3}FS^{2}-2\$abS_{C}\$(E+F)F +\$ab\$[4(E+F)^{2}-S^{2}]F, -(E+F)(2E-F)S^{2}-S^{4} + 2(\$abS_{C}\$S^{2}-\$ab\$(4E+F)S^{2})`.
+   :ref:`X_447 <X_447>` is the :ref:`X_2 <X_2>`-:term:`hirst inverse <hirst-inverse>` of :ref:`X_27 <X_27>`.
 
 .. figure:: x-00447.svg
-   :alt: X(447) = X(2)-HIRST INVERSE OF X(27)
+   :alt: X_447 — X_2-HIRST INVERSE OF X_27
    :align: center
 
-   **X(447) = X(2)-HIRST INVERSE OF X(27)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_447** (*X_2-HIRST INVERSE OF X_27*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

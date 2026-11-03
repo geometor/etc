@@ -1,22 +1,31 @@
 :order: 703
 :type: center
-:canonical_id: X(703)
-:dependencies: X(6), X(689), X(702), X(35526)
+:canonical_id: X_703
+:subtitle: EVEN (- 4, 0) CIRCUMCIRCLE POINT
+:dependencies: X_6, X_689, X_702, X_35526
 
-.. _X(703):
+.. _X_703:
 
-X(703) = EVEN (- 4, 0) CIRCUMCIRCLE POINT
-=========================================
+X_703
+=====
+
+.. rubric:: EVEN (- 4, 0) CIRCUMCIRCLE POINT
 
 .. enunciation::
 
-   :ref:`X(703) <X(703)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(702) <X(702)>`
+   :ref:`X_703 <X_703>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_702 <X_702>`
 
 .. figure:: x-00703.svg
-   :alt: X(703) = EVEN (- 4, 0) CIRCUMCIRCLE POINT
+   :alt: X_703 — EVEN (- 4, 0) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(703) = EVEN (- 4, 0) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_703** (*EVEN (- 4, 0) CIRCUMCIRCLE POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{6, 689} <{ 6, 689 }>`
+   * **Related Centers:** :g:`X_702 <X_702>` (:ref:`EVEN (- 4, 0) INFINITY POINT <X_702>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_689 <X_689>` (:ref:`TRILINEAR POLE OF LINE X(6)X(76) <X_689>`)
 
 .. signature:: center
 
@@ -26,19 +35,19 @@ X(703) = EVEN (- 4, 0) CIRCUMCIRCLE POINT
 
 .. container:: note-item
 
-   :ref:`X(703) <X(703)>` lies on the circumcircle.
+   :ref:`X_703 <X_703>` lies on the circumcircle.
 
 .. collapse:: Incident Central Lines
    :badge: 1 line
    :class: line-catalog
 
-   {:ref:`6 <X(6)>`, :ref:`689 <X(689)>`}
+   {:ref:`6 <X_6>`, :ref:`689 <X_689>`}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(703) <X(703)>` = isogonal conjugate of :ref:`X(702) <X(702)>`
-   * :ref:`X(703) <X(703)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(35526)
+   * :ref:`X_703 <X_703>` = isogonal conjugate of :ref:`X_702 <X_702>`
+   * :ref:`X_703 <X_703>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_35526
 
 .. toctree::
    :hidden:

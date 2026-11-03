@@ -1,22 +1,31 @@
 :order: 680
 :type: center
-:canonical_id: X(680)
-:dependencies: X(4), X(6), X(30), X(158), X(511), X(681), X(35970)
+:canonical_id: X_680
+:subtitle: CROSSDIFFERENCE OF X_6 AND X_158
+:dependencies: X_4, X_6, X_30, X_158, X_511, X_681, X_35970
 
-.. _X(680):
+.. _X_680:
 
-X(680) = CROSSDIFFERENCE OF X(6) AND X(158)
-===========================================
+X_680
+=====
+
+.. rubric:: CROSSDIFFERENCE OF X_6 AND X_158
 
 .. enunciation::
 
-   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X(680) <X(680)>` lies on the line at infinity.
+   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X_680 <X_680>` lies on the line at infinity.
 
 .. figure:: x-00680.svg
-   :alt: X(680) = CROSSDIFFERENCE OF X(6) AND X(158)
+   :alt: X_680 — CROSSDIFFERENCE OF X_6 AND X_158
    :align: center
 
-   **X(680) = CROSSDIFFERENCE OF X(6) AND X(158)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_680** (*CROSSDIFFERENCE OF X_6 AND X_158*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{30, 511} <{ 30, 511 }>`
+   * **Related Centers:** :g:`X_681 <X_681>` (:ref:`TRILINEAR POLE OF LINE X(6)X(158) <X_681>`), :g:`X_30 <X_30>` (:ref:`EULER INFINITY POINT <X_30>`), :g:`X_511 <X_511>` (:ref:`ISOGONAL CONJUGATE OF X(98) <X_511>`)
 
 .. signature:: center
 
@@ -27,15 +36,15 @@ X(680) = CROSSDIFFERENCE OF X(6) AND X(158)
    :badge: 1 line
    :class: line-catalog
 
-   {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}
+   {:ref:`30 <X_30>`, :ref:`511 <X_511>`}
 
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X(680) <X(680)>` = isogonal conjugate of :ref:`X(681) <X(681)>`
-   * :ref:`X(680) <X(680)>` = :term:`complementary conjugate <complementary-conjugate>` of X(35970)
-   * :ref:`X(680) <X(680)>` = :ref:`X(4) <X(4)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(35970)
-   * :ref:`X(680) <X(680)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(6) <X(6)>`\ \ :ref:`X(158) <X(158)>`
+   * :ref:`X_680 <X_680>` = isogonal conjugate of :ref:`X_681 <X_681>`
+   * :ref:`X_680 <X_680>` = :term:`complementary conjugate <complementary-conjugate>` of X_35970
+   * :ref:`X_680 <X_680>` = :ref:`X_4 <X_4>`-:term:`Ceva conjugate <ceva-conjugate>` of X_35970
+   * :ref:`X_680 <X_680>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_6 <X_6>`\ \ :ref:`X_158 <X_158>`
 
 .. toctree::
    :hidden:

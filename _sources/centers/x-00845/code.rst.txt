@@ -1,18 +1,21 @@
-:canonical_id: X(845)
+:canonical_id: X_845
 :type: code
+:subtitle: X_165X_166∩X_173X_503
 
-X(845) = X(165)X(166)∩X(173)X(503) — Code
-=========================================
+X_845
+=====
+
+.. rubric:: X_165X_166∩X_173X_503
 
 .. enunciation::
 
-   This point solves a problem posed by :person:`Antreas Hatzipolakis <antreas-hatzipolakis>` in :cite:`Hyacinthos #2768 <hyacinthos>`, May 3, 2001.
+   :ref:`X_845 <X_845>` = :ref:`X_63 <X_63>`-of-excentral-triangle
 
 .. figure:: x-00845.svg
-   :alt: X(845) = X(165)X(166)∩X(173)X(503)
+   :alt: X_845 — X_165X_166∩X_173X_503
    :align: center
 
-   **X(845) = X(165)X(166)∩X(173)X(503)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_845** (*X_165X_166∩X_173X_503*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

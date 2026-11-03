@@ -1,22 +1,31 @@
 :order: 942
 :type: center
-:canonical_id: X(942)
-:dependencies: X(1), X(2), X(3), X(4), X(5), X(6), X(7), X(8), X(10), X(11), X(28), X(30), X(34), X(35), X(36), X(37), X(40), X(42), X(55), X(58), X(60), X(63), X(65), X(72), X(78), X(79), X(81), X(113), X(141), X(169), X(212), X(222), X(226), X(228), X(238), X(277), X(279), X(284), X(286), X(355), X(388), X(405), X(443), X(474), X(496), X(500), X(501), X(553), X(579), X(582), X(750), X(758), X(943), X(946), X(955), X(960), X(962), X(976), X(1002), X(1042), X(1046), X(1058), X(1064), X(1066), X(1104), X(1112), X(1125), X(3295), X(5044), X(6756), X(21530), X(38483)
+:canonical_id: X_942
+:subtitle: INCIRCLE-INVERSE OF X_36
+:dependencies: X_1, X_2, X_3, X_4, X_5, X_6, X_7, X_8, X_10, X_11, X_28, X_30, X_34, X_35, X_36, X_37, X_40, X_42, X_55, X_58, X_60, X_63, X_65, X_72, X_78, X_79, X_81, X_113, X_141, X_169, X_212, X_222, X_226, X_228, X_238, X_277, X_279, X_284, X_286, X_355, X_388, X_405, X_443, X_474, X_496, X_500, X_501, X_553, X_579, X_582, X_750, X_758, X_943, X_946, X_955, X_960, X_962, X_976, X_1002, X_1042, X_1046, X_1058, X_1064, X_1066, X_1104, X_1112, X_1125, X_3295, X_5044, X_6756, X_21530, X_38483
 
-.. _X(942):
+.. _X_942:
 
-X(942) = INCIRCLE-INVERSE OF X(36)
-==================================
+X_942
+=====
+
+.. rubric:: INCIRCLE-INVERSE OF X_36
 
 .. enunciation::
 
-   Let :g:`A'B'C' << A' B' C' >>` be the :term:`incentral triangle <incentral-triangle>` of triangle :g:`ABC << A B C >>`. Let :g:`L_{A} <L_A>` be the line of reflection of line :g:`BC <[ B C ]>` in line :g:`B'C' <[ B' C' ]>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A″ <A″>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(942) <X(942)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   :ref:`X_942 <X_942>` is the incircle-inverse of :ref:`X_36 <X_36>`.
 
 .. figure:: x-00942.svg
-   :alt: X(942) = INCIRCLE-INVERSE OF X(36)
+   :alt: X_942 — INCIRCLE-INVERSE OF X_36
    :align: center
 
-   **X(942) = INCIRCLE-INVERSE OF X(36)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_942** (*INCIRCLE-INVERSE OF X_36*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 65} <{ 1, 65 }>`
+   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_65 <X_65>` (:ref:`ORTHOCENTER OF THE INTOUCH TRIANGLE <X_65>`)
 
 .. signature:: center
 
@@ -33,59 +42,63 @@ X(942) = INCIRCLE-INVERSE OF X(36)
    :badge: 27 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`3 <X(3)>`}, {:ref:`2 <X(2)>`, :ref:`72 <X(72)>`}, {:ref:`4 <X(4)>`, :ref:`7 <X(7)>`}, {:ref:`5 <X(5)>`, :ref:`226 <X(226)>`}, {:ref:`6 <X(6)>`, :ref:`169 <X(169)>`}, {:ref:`8 <X(8)>`, :ref:`443 <X(443)>`}, {:ref:`10 <X(10)>`, :ref:`141 <X(141)>`}, {:ref:`11 <X(11)>`, :ref:`113 <X(113)>`}, {:ref:`28 <X(28)>`, :ref:`60 <X(60)>`}, {:ref:`30 <X(30)>`, :ref:`553 <X(553)>`}, {:ref:`34 <X(34)>`, :ref:`222 <X(222)>`}, {:ref:`37 <X(37)>`, :ref:`579 <X(579)>`}, {:ref:`42 <X(42)>`, 1066}, {:ref:`58 <X(58)>`, 1104}, {:ref:`63 <X(63)>`, :ref:`405 <X(405)>`}, {:ref:`78 <X(78)>`, :ref:`474 <X(474)>`}, {:ref:`212 <X(212)>`, :ref:`582 <X(582)>`}, {:ref:`238 <X(238)>`, 1046}, {:ref:`277 <X(277)>`, 1002}, {:ref:`279 <X(279)>`, :ref:`955 <X(955)>`}, {:ref:`284 <X(284)>`, :ref:`501 <X(501)>`}, {:ref:`355 <X(355)>`, :ref:`388 <X(388)>`}, {:ref:`496 <X(496)>`, :ref:`946 <X(946)>`}, {:ref:`750 <X(750)>`, :ref:`976 <X(976)>`}, {:ref:`758 <X(758)>`, :ref:`960 <X(960)>`}, {:ref:`962 <X(962)>`, 1058}, {1042, 1064}
+   {:ref:`1 <X_1>`, :ref:`3 <X_3>`}, {:ref:`2 <X_2>`, :ref:`72 <X_72>`}, {:ref:`4 <X_4>`, :ref:`7 <X_7>`}, {:ref:`5 <X_5>`, :ref:`226 <X_226>`}, {:ref:`6 <X_6>`, :ref:`169 <X_169>`}, {:ref:`8 <X_8>`, :ref:`443 <X_443>`}, {:ref:`10 <X_10>`, :ref:`141 <X_141>`}, {:ref:`11 <X_11>`, :ref:`113 <X_113>`}, {:ref:`28 <X_28>`, :ref:`60 <X_60>`}, {:ref:`30 <X_30>`, :ref:`553 <X_553>`}, {:ref:`34 <X_34>`, :ref:`222 <X_222>`}, {:ref:`37 <X_37>`, :ref:`579 <X_579>`}, {:ref:`42 <X_42>`, 1066}, {:ref:`58 <X_58>`, 1104}, {:ref:`63 <X_63>`, :ref:`405 <X_405>`}, {:ref:`78 <X_78>`, :ref:`474 <X_474>`}, {:ref:`212 <X_212>`, :ref:`582 <X_582>`}, {:ref:`238 <X_238>`, 1046}, {:ref:`277 <X_277>`, 1002}, {:ref:`279 <X_279>`, :ref:`955 <X_955>`}, {:ref:`284 <X_284>`, :ref:`501 <X_501>`}, {:ref:`355 <X_355>`, :ref:`388 <X_388>`}, {:ref:`496 <X_496>`, :ref:`946 <X_946>`}, {:ref:`750 <X_750>`, :ref:`976 <X_976>`}, {:ref:`758 <X_758>`, :ref:`960 <X_960>`}, {:ref:`962 <X_962>`, 1058}, {1042, 1064}
 
 .. collapse:: Functional Relations
    :badge: 21 relations
 
-   * :ref:`X(942) <X(942)>` = midpoint of :ref:`X(1) <X(1)>` and :ref:`X(65) <X(65)>`
-   * :ref:`X(942) <X(942)>` = reflection of :ref:`X(960) <X(960)>` in X(1125)
-   * :ref:`X(942) <X(942)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(943) <X(943)>`
-   * :ref:`X(942) <X(942)>` = :term:`complement <complement>` of :ref:`X(72) <X(72)>`
-   * :ref:`X(942) <X(942)>` = :term:`anticomplement <anticomplement>` of X(5044)
-   * :ref:`X(942) <X(942)>` = :term:`complementary conjugate <complementary-conjugate>` of X(21530)
-   * :ref:`X(942) <X(942)>` = incircle-inverse of :ref:`X(36) <X(36)>`
-   * :ref:`X(942) <X(942)>` = Conway-circle-inverse of X(38483)
-   * :ref:`X(942) <X(942)>` = :ref:`X(1) <X(1)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(500) <X(500)>`
-   * :ref:`X(942) <X(942)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`79 <X(79)>`), (:ref:`2 <X(2)>`, :ref:`286 <X(286)>`), (:ref:`7 <X(7)>`, :ref:`81 <X(81)>`)
-   * :ref:`X(942) <X(942)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`35 <X(35)>`), (:ref:`6 <X(6)>`, :ref:`228 <X(228)>`), (:ref:`37 <X(37)>`, :ref:`55 <X(55)>`)
-   * :ref:`X(942) <X(942)>` = :ref:`X(5) <X(5)>`-of-the-intouch-triangle
-   * :ref:`X(942) <X(942)>` = X(1112) of Fuhrmann triangle
-   * :ref:`X(942) <X(942)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(40) <X(40)>`}-harmonic conjugate of X(3295)
-   * :ref:`X(942) <X(942)>` = :ref:`X(3) <X(3)>`-of-inverse-in-incircle-triangle
-   * :ref:`X(942) <X(942)>` = :ref:`X(4) <X(4)>`-of-incircle-circles-triangle
-   * :ref:`X(942) <X(942)>` = X(6756)-of-excentral-triangle
-   * :ref:`X(942) <X(942)>` = excentral-to-intouch :term:`similarity image <similarity-image>` of :ref:`X(3) <X(3)>`
-   * :ref:`X(942) <X(942)>` = Cundy-Parry Phi transform of :ref:`X(55) <X(55)>`
-   * :ref:`X(942) <X(942)>` = Cundy-Parry Psi transform of :ref:`X(7) <X(7)>`
-   * :ref:`X(942) <X(942)>` = :g:`QA <[ Q A ]>`-P23 (Inscribed Square Axes Crosspoint) of quadrangle :g:`ABC << A B C >>`\ :ref:`X(1) <X(1)>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/51-qa-p23.html)
+   * :ref:`X_942 <X_942>` = midpoint of :ref:`X_1 <X_1>` and :ref:`X_65 <X_65>`
+   * :ref:`X_942 <X_942>` = reflection of :ref:`X_960 <X_960>` in X_1125
+   * :ref:`X_942 <X_942>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_943 <X_943>`
+   * :ref:`X_942 <X_942>` = :term:`complement <complement>` of :ref:`X_72 <X_72>`
+   * :ref:`X_942 <X_942>` = :term:`anticomplement <anticomplement>` of X_5044
+   * :ref:`X_942 <X_942>` = :term:`complementary conjugate <complementary-conjugate>` of X_21530
+   * :ref:`X_942 <X_942>` = incircle-inverse of :ref:`X_36 <X_36>`
+   * :ref:`X_942 <X_942>` = Conway-circle-inverse of X_38483
+   * :ref:`X_942 <X_942>` = :ref:`X_1 <X_1>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_500 <X_500>`
+   * :ref:`X_942 <X_942>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`79 <X_79>`), (:ref:`2 <X_2>`, :ref:`286 <X_286>`), (:ref:`7 <X_7>`, :ref:`81 <X_81>`)
+   * :ref:`X_942 <X_942>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`35 <X_35>`), (:ref:`6 <X_6>`, :ref:`228 <X_228>`), (:ref:`37 <X_37>`, :ref:`55 <X_55>`)
+   * :ref:`X_942 <X_942>` = :ref:`X_5 <X_5>`-of-the-intouch-triangle
+   * :ref:`X_942 <X_942>` = X_1112 of :term:`Fuhrmann triangle <fuhrmann-triangle>`
+   * :ref:`X_942 <X_942>` = {:ref:`X_1 <X_1>`,\ :ref:`X_40 <X_40>`}-harmonic conjugate of X_3295
+   * :ref:`X_942 <X_942>` = :ref:`X_3 <X_3>`-of-inverse-in-incircle-triangle
+   * :ref:`X_942 <X_942>` = :ref:`X_4 <X_4>`-of-incircle-circles-triangle
+   * :ref:`X_942 <X_942>` = X_6756-of-excentral-triangle
+   * :ref:`X_942 <X_942>` = excentral-to-intouch :term:`similarity image <similarity-image>` of :ref:`X_3 <X_3>`
+   * :ref:`X_942 <X_942>` = Cundy-Parry Phi transform of :ref:`X_55 <X_55>`
+   * :ref:`X_942 <X_942>` = Cundy-Parry Psi transform of :ref:`X_7 <X_7>`
+   * :ref:`X_942 <X_942>` = :g:`QA <[ Q A ]>`-P23 (Inscribed Square Axes Crosspoint) of quadrangle :g:`ABC << A B C >>`\ :ref:`X_1 <X_1>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/51-qa-p23.html)
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let :g:`I <I>` be the incenter of :g:`ABC << A B C >>`. Let :g:`N_{A} <N_A>` be the nine-point center of the triangle :g:`IBC << I B C >>`, and define :g:`N_{B} <N_B>` and :g:`N_{C} <N_C>` cyclically. Let :g:`A_{A} <A_A>` be the reflection of :g:`N_{A} <N_A>` in the line :g:`AI <[ A I ]>`, Let :g:`A_{B} <A_B>` be the reflection of :g:`N_{A} <N_A>` in the line :g:`BI <[ B I ]>`, let Let :g:`A_{C} <A_C>` be the reflection of :g:`N_{A} <N_A>` in the line :g:`CI <[ C I ]>`, and define :g:`B_{A} <B_A>`, :g:`B_{B} <B_B>`, and :g:`B_{C} <B_C>` cyclically, and define :g:`C_{A} <C_A>`, :g:`C_{B} <C_B>`, and :g:`C_{C} <C_C>` cyclically. Let :g:`O_{A} <O_A>` be the nine-point center of the triangle :g:`A_{A}A_{B}A_{C} << A_A A_B A_C >>`, let :g:`O_{B} <O_B>` be the nine-point center of the triangle :g:`B_{A}B_{B}B_{C} << B_A B_B B_C >>`, and let :g:`O_{C} <O_C>` be the nine-point center of the triangle :g:`C_{A}C_{B}C_{C} << C_A C_B C_C >>`. The circles :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>` concur in :ref:`X(942) <X(942)>`. (:person:`Antreas Hatzipolakis <antreas-hatzipolakis>` and :person:`César Lozada <cesar-lozada>`, January 28, 2015, `Hyacinthos 23074) <http://www.hyacinthos.epizy.com/message.php?msg=23074>`__
+   Let :g:`A'B'C' << I_a I_b I_c >>` be the :term:`incentral triangle <incentral-triangle>` of triangle :g:`ABC << A B C >>`. Let :g:`L_{A} <L_A>` be the line of reflection of line :g:`BC <[ B C ]>` in line :g:`B'C' <[ I_b I_c ]>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A″ <A″>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_942 <X_942>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. container:: note-item
 
-   :ref:`X(942) <X(942)>` is the center of the conic which is the locus of poles, wrt the incircle, of tangents to the circumcircle. This conic has foci at :ref:`X(1) <X(1)>` and :ref:`X(65) <X(65)>`. (Randy Hutson, July 20, 2016)
+   Let :g:`I <X_1>` be the incenter of :g:`ABC << A B C >>`. Let :g:`N_{A} <N_A>` be the nine-point center of the triangle :g:`IBC << X_1 B C >>`, and define :g:`N_{B} <N_B>` and :g:`N_{C} <N_C>` cyclically. Let :g:`A_{A} <A_A>` be the reflection of :g:`N_{A} <N_A>` in the line :g:`AI <[ A X_1 ]>`, Let :g:`A_{B} <A_B>` be the reflection of :g:`N_{A} <N_A>` in the line :g:`BI <[ B X_1 ]>`, let Let :g:`A_{C} <A_C>` be the reflection of :g:`N_{A} <N_A>` in the line :g:`CI <[ C X_1 ]>`, and define :g:`B_{A} <B_A>`, :g:`B_{B} <B_B>`, and :g:`B_{C} <B_C>` cyclically, and define :g:`C_{A} <C_A>`, :g:`C_{B} <C_B>`, and :g:`C_{C} <C_C>` cyclically. Let :g:`O_{A} <O_A>` be the nine-point center of the triangle :g:`A_{A}A_{B}A_{C} << A_A A_B A_C >>`, let :g:`O_{B} <O_B>` be the nine-point center of the triangle :g:`B_{A}B_{B}B_{C} << B_A B_B B_C >>`, and let :g:`O_{C} <O_C>` be the nine-point center of the triangle :g:`C_{A}C_{B}C_{C} << C_A C_B C_C >>`. The circles :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>` concur in :ref:`X_942 <X_942>`. (:person:`Antreas Hatzipolakis <antreas-hatzipolakis>` and :person:`César Lozada <cesar-lozada>`, January 28, 2015, `Hyacinthos 23074) <http://www.hyacinthos.epizy.com/message.php?msg=23074>`__
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the :term:`intouch triangle <intouch-triangle>`. Let :g:`A″ <A″>` be the orthocenter of :g:`AB'C' << A B' C' >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to :g:`A'B'C' << A' B' C' >>`, and the center of homothety is :ref:`X(942) <X(942)>`. (Randy Hutson, July 20, 2016)
+   :ref:`X_942 <X_942>` is the center of the conic which is the locus of poles, wrt the incircle, of tangents to the circumcircle. This conic has foci at :ref:`X_1 <X_1>` and :ref:`X_65 <X_65>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`A″ <A″>` be the incenter of :g:`AB'C' << A B' C' >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to the intouch triangle, and the center of homothety is :ref:`X(942) <X(942)>`. (Randy Hutson, July 20, 2016)
+   Let :g:`A'B'C' << T_a T_b T_c >>` be the :term:`intouch triangle <intouch-triangle>`. Let :g:`A″ <A″>` be the orthocenter of :g:`AB'C' << A T_b T_c >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to :g:`A'B'C' << T_a T_b T_c >>`, and the center of homothety is :ref:`X_942 <X_942>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
-   Let :g:`A' <A'>` be the homothetic center of the orthic triangles of the intouch and A-:term:`extouch triangles <extouch-triangle>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The triangle :g:`A'B'C' << A' B' C' >>` is perspective to the half-altitude triangle at :ref:`X(942) <X(942)>`. In fact, :g:`A'B'C' << A' B' C' >>` is the :term:`cevian triangle <cevian-triangle>` of :ref:`X(942) <X(942)>`, wrt the half-altitude triangle. (Randy Hutson, July 20, 2016)
+   Let :g:`A'B'C' << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`A″ <A″>` be the incenter of :g:`AB'C' << A H_b H_c >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to the intouch triangle, and the center of homothety is :ref:`X_942 <X_942>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
-   A construction of :ref:`X(942) <X(942)>` is given at `24080 <http://www.hyacinthos.epizy.com/message.php?msg=24090>`__. (Antreas Hatzipolakis, August 29, 2016)
+   Let :g:`A' <A'>` be the homothetic center of the orthic triangles of the intouch and A-:term:`extouch triangles <extouch-triangle>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The triangle :g:`A'B'C' << A' B' C' >>` is perspective to the :term:`half-altitude triangle <half-altitude-triangle>` at :ref:`X_942 <X_942>`. In fact, :g:`A'B'C' << A' B' C' >>` is the :term:`cevian triangle <cevian-triangle>` of :ref:`X_942 <X_942>`, wrt the half-altitude triangle. (Randy Hutson, July 20, 2016)
+
+.. container:: note-item
+
+   A construction of :ref:`X_942 <X_942>` is given at `24080 <http://www.hyacinthos.epizy.com/message.php?msg=24090>`__. (Antreas Hatzipolakis, August 29, 2016)
 
 .. toctree::
    :hidden:

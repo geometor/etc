@@ -1,18 +1,21 @@
-:canonical_id: X(775)
+:canonical_id: X_775
 :type: code
+:subtitle: ISOGONAL CONJUGATE OF X_774
 
-X(775) = ISOGONAL CONJUGATE OF X(774) — Code
-============================================
+X_775
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_774
 
 .. enunciation::
 
-   :ref:`X(775) <X(775)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(774) <X(774)>`
+   :ref:`X_775 <X_775>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_774 <X_774>`.
 
 .. figure:: x-00775.svg
-   :alt: X(775) = ISOGONAL CONJUGATE OF X(774)
+   :alt: X_775 — ISOGONAL CONJUGATE OF X_774
    :align: center
 
-   **X(775) = ISOGONAL CONJUGATE OF X(774)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_775** (*ISOGONAL CONJUGATE OF X_774*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

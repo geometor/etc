@@ -1,18 +1,21 @@
-:canonical_id: X(415)
+:canonical_id: X_415
 :type: code
+:subtitle: X_4-HIRST INVERSE OF X_29
 
-X(415) = X(4)-HIRST INVERSE OF X(29) — Code
-===========================================
+X_415
+=====
+
+.. rubric:: X_4-HIRST INVERSE OF X_29
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(415) <X(415)>` has Shinagawa coefficients 3\ :math:`\$bcS_{B}S_{C}\$`\ F + (E - 2F)\ :math:`FS^{2}`, -(E + F)\*\ :math:`\$bcS_{B}S_{C}\$` + (E + F)\ :math:`FS^{2}` - :math:`S^{4})`.
+   :ref:`X_415 <X_415>` is the :ref:`X_4 <X_4>`-:term:`hirst inverse <hirst-inverse>` of :ref:`X_29 <X_29>`.
 
 .. figure:: x-00415.svg
-   :alt: X(415) = X(4)-HIRST INVERSE OF X(29)
+   :alt: X_415 — X_4-HIRST INVERSE OF X_29
    :align: center
 
-   **X(415) = X(4)-HIRST INVERSE OF X(29)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_415** (*X_4-HIRST INVERSE OF X_29*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

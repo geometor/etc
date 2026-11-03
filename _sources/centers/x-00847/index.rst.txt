@@ -1,22 +1,31 @@
 :order: 847
 :type: center
-:canonical_id: X(847)
-:dependencies: X(2), X(3), X(4), X(5), X(24), X(52), X(91), X(92), X(96), X(225), X(254), X(378), X(403), X(485), X(486), X(925), X(1093), X(1105), X(1147), X(1993), X(9723)
+:canonical_id: X_847
+:subtitle: X_5-CROSS CONJUGATE OF X_4
+:dependencies: X_2, X_3, X_4, X_5, X_24, X_52, X_91, X_92, X_96, X_225, X_254, X_378, X_403, X_485, X_486, X_925, X_1093, X_1105, X_1147, X_1993, X_9723
 
-.. _X(847):
+.. _X_847:
 
-X(847) = X(5)-CROSS CONJUGATE OF X(4)
-=====================================
+X_847
+=====
+
+.. rubric:: X_5-CROSS CONJUGATE OF X_4
 
 .. enunciation::
 
-   This point solves a problem posed by :person:`Antreas Hatzipolakis <antreas-hatzipolakis>` in :cite:`Hyacinthos #3130 <hyacinthos>`, June 25, 2001; see also Jean-Pierre Ehrmann, #3135, June 26, 2001. The problem and solution may be stated as follows. Let :g:`ABC << A B C >>` be a triangle, :g:`L_{A} <L_A>`, :g:`L_{B} <L_B>`, :g:`L_{C} <L_C>` the perpendicular bisectors of sides :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, and :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` the altitudes of :g:`ABC << A B C >>`, respectively. Let :g:`A_{B} <A_B>` be the point of intersection of :g:`AA' <[ A A' ]>` and :g:`L_{B} <L_B>`, and let :g:`A_{C} <A_C>` be the point of intersection of :g:`AA' <[ A A' ]>` and :g:`L_{C} <L_C>`. Let :g:`A″ <A″>` be the point of intersection of :g:`BA_{B} <[ B A_B ]>` and :g:`CA_{C} <[ C A_C ]>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Then triangle :g:`A″B″C″ << A″ B″ C″ >>` is perspective to triangle :g:`ABC << A B C >>`, with perspector :ref:`X(847) <X(847)>`.
+   :ref:`X_847 <X_847>` = barycentric product :ref:`X_91 <X_91>`\ \*\ :ref:`X_92 <X_92>`
 
 .. figure:: x-00847.svg
-   :alt: X(847) = X(5)-CROSS CONJUGATE OF X(4)
+   :alt: X_847 — X_5-CROSS CONJUGATE OF X_4
    :align: center
 
-   **X(847) = X(5)-CROSS CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_847** (*X_5-CROSS CONJUGATE OF X_4*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{4, 52} <{ 4, 52 }>`, :g:`{24, 96} <{ 24, 96 }>`
+   * **Related Centers:** :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_52 <X_52>` (:ref:`ORTHOCENTER OF ORTHIC TRIANGLE <X_52>`), :g:`X_24 <X_24>` (:ref:`PERSPECTOR OF ABC AND ORTHIC-OF-ORTHIC TRIANGLE <X_24>`), :g:`X_96 <X_96>` (:ref:`ISOGONAL CONJUGATE OF X(52) <X_96>`)
 
 .. signature:: center
 
@@ -31,30 +40,34 @@ X(847) = X(5)-CROSS CONJUGATE OF X(4)
 
 .. container:: note-item
 
-   :ref:`X(847) <X(847)>` lies on the McCay orthic cubic; see `McCay orthic cubic <http://perso.wanadoo.fr/bernard.gibert/Exemples/mccayorthic.html>`__.
+   :ref:`X_847 <X_847>` lies on the McCay orthic cubic; see `McCay orthic cubic <http://perso.wanadoo.fr/bernard.gibert/Exemples/mccayorthic.html>`__.
 
 .. collapse:: Incident Central Lines
    :badge: 7 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`254 <X(254)>`}, {:ref:`3 <X(3)>`, :ref:`925 <X(925)>`}, {:ref:`4 <X(4)>`, :ref:`52 <X(52)>`}, {:ref:`24 <X(24)>`, :ref:`96 <X(96)>`}, {:ref:`91 <X(91)>`, :ref:`225 <X(225)>`}, {:ref:`378 <X(378)>`, 1105}, {:ref:`403 <X(403)>`, 1093}
+   {:ref:`2 <X_2>`, :ref:`254 <X_254>`}, {:ref:`3 <X_3>`, :ref:`925 <X_925>`}, {:ref:`4 <X_4>`, :ref:`52 <X_52>`}, {:ref:`24 <X_24>`, :ref:`96 <X_96>`}, {:ref:`91 <X_91>`, :ref:`225 <X_225>`}, {:ref:`378 <X_378>`, 1105}, {:ref:`403 <X_403>`, 1093}
 
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X(847) <X(847)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(1147)
-   * :ref:`X(847) <X(847)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(9723)
-   * :ref:`X(847) <X(847)>` = polar conjugate of X(1993)
-   * :ref:`X(847) <X(847)>` = barycentric product :ref:`X(91) <X(91)>`\ \*\ :ref:`X(92) <X(92)>`
-   * :ref:`X(847) <X(847)>` = :ref:`X(5) <X(5)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(4) <X(4)>`
-   * :ref:`X(847) <X(847)>` = :term:`cevapoint <cevapoint>` of :ref:`X(485) <X(485)>` and :ref:`X(486) <X(486)>`
+   * :ref:`X_847 <X_847>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_1147
+   * :ref:`X_847 <X_847>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_9723
+   * :ref:`X_847 <X_847>` = polar conjugate of X_1993
+   * :ref:`X_847 <X_847>` = barycentric product :ref:`X_91 <X_91>`\ \*\ :ref:`X_92 <X_92>`
+   * :ref:`X_847 <X_847>` = :ref:`X_5 <X_5>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_4 <X_4>`
+   * :ref:`X_847 <X_847>` = :term:`cevapoint <cevapoint>` of :ref:`X_485 <X_485>` and :ref:`X_486 <X_486>`
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the :ref:`X(3) <X(3)>`-:term:`cevian triangle <cevian-triangle>` of the :term:`orthic triangle <orthic-triangle>` of triangle :g:`ABC << A B C >>`. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(847) <X(847)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   This point solves a problem posed by :person:`Antreas Hatzipolakis <antreas-hatzipolakis>` in :cite:`Hyacinthos #3130 <hyacinthos>`, June 25, 2001; see also Jean-Pierre Ehrmann, #3135, June 26, 2001. The problem and solution may be stated as follows. Let :g:`ABC << A B C >>` be a triangle, :g:`L_{A} <L_A>`, :g:`L_{B} <L_B>`, :g:`L_{C} <L_C>` the perpendicular bisectors of sides :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, and :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` the altitudes of :g:`ABC << A B C >>`, respectively. Let :g:`A_{B} <A_B>` be the point of intersection of :g:`AA' <[ A A' ]>` and :g:`L_{B} <L_B>`, and let :g:`A_{C} <A_C>` be the point of intersection of :g:`AA' <[ A A' ]>` and :g:`L_{C} <L_C>`. Let :g:`A″ <A″>` be the point of intersection of :g:`BA_{B} <[ B A_B ]>` and :g:`CA_{C} <[ C A_C ]>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Then triangle :g:`A″B″C″ << A″ B″ C″ >>` is perspective to triangle :g:`ABC << A B C >>`, with perspector :ref:`X_847 <X_847>`.
+
+.. container:: note-item
+
+   Let :g:`A'B'C' << H_a H_b H_c >>` be the :ref:`X_3 <X_3>`-:term:`cevian triangle <cevian-triangle>` of the :term:`orthic triangle <orthic-triangle>` of triangle :g:`ABC << A B C >>`. The lines :g:`AA' <[ A H_a ]>`, :g:`BB' <[ B H_b ]>`, :g:`CC' <[ C H_c ]>` concur in :ref:`X_847 <X_847>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. toctree::
    :hidden:

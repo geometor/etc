@@ -1,22 +1,31 @@
 :order: 64
 :type: center
-:canonical_id: X(64)
-:dependencies: X(1), X(3), X(4), X(6), X(19), X(20), X(24), X(25), X(30), X(33), X(40), X(54), X(55), X(65), X(68), X(69), X(71), X(72), X(73), X(74), X(84), X(154), X(185), X(198), X(207), X(265), X(378), X(382), X(459), X(647), X(657), X(1498), X(2136), X(2184), X(2435), X(2883), X(3182), X(3183), X(3345), X(3346), X(3353), X(3355), X(3472), X(6225), X(8905), X(11589), X(14615)
+:canonical_id: X_64
+:subtitle: ISOGONAL CONJUGATE OF X_20
+:dependencies: X_1, X_3, X_4, X_6, X_19, X_20, X_24, X_25, X_30, X_33, X_40, X_54, X_55, X_65, X_68, X_69, X_71, X_72, X_73, X_74, X_84, X_154, X_185, X_198, X_207, X_265, X_378, X_382, X_459, X_647, X_657, X_1498, X_2136, X_2184, X_2435, X_2883, X_3182, X_3183, X_3345, X_3346, X_3353, X_3355, X_3472, X_6225, X_8905, X_11589, X_14615
 
-.. _X(64):
+.. _X_64:
 
-X(64) = ISOGONAL CONJUGATE OF X(20)
-===================================
+X_64
+====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_20
 
 .. enunciation::
 
-   A construction of :ref:`X(64) <X(64)>` appears in Lemoine's 1886 paper cited at :ref:`X(19) <X(19)>`.
+   :ref:`X_64 <X_64>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_20 <X_20>`.
 
 .. figure:: x-00064.svg
-   :alt: X(64) = ISOGONAL CONJUGATE OF X(20)
+   :alt: X_64 — ISOGONAL CONJUGATE OF X_20
    :align: center
 
-   **X(64) = ISOGONAL CONJUGATE OF X(20)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_64** (*ISOGONAL CONJUGATE OF X_20*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{20, 69} <{ 20, 69 }>`, :g:`{24, 74} <{ 24, 74 }>`
+   * **Related Centers:** :g:`X_20 <X_20>` (:ref:`DE LONGCHAMPS POINT <X_20>`), :g:`X_69 <X_69>` (:ref:`SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE <X_69>`), :g:`X_24 <X_24>` (:ref:`PERSPECTOR OF ABC AND ORTHIC-OF-ORTHIC TRIANGLE <X_24>`), :g:`X_74 <X_74>` (:ref:`ISOGONAL CONJUGATE OF EULER INFINITY POINT <X_74>`)
 
 .. signature:: center
 
@@ -31,64 +40,68 @@ X(64) = ISOGONAL CONJUGATE OF X(20)
 
 .. container:: note-item
 
-   :ref:`X(64) <X(64)>` lies on the Darboux cubic.
+   :ref:`X_64 <X_64>` lies on the Darboux cubic.
 
 .. collapse:: Incident Central Lines
    :badge: 16 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, 3182}, {:ref:`3 <X(3)>`, :ref:`154 <X(154)>`}, {:ref:`4 <X(4)>`, 3183}, {:ref:`6 <X(6)>`, :ref:`185 <X(185)>`}, {:ref:`20 <X(20)>`, :ref:`69 <X(69)>`}, {:ref:`24 <X(24)>`, :ref:`74 <X(74)>`}, {:ref:`30 <X(30)>`, :ref:`68 <X(68)>`}, {:ref:`33 <X(33)>`, :ref:`65 <X(65)>`}, {:ref:`40 <X(40)>`, :ref:`72 <X(72)>`}, {:ref:`54 <X(54)>`, :ref:`378 <X(378)>`}, {:ref:`55 <X(55)>`, :ref:`73 <X(73)>`}, {:ref:`71 <X(71)>`, :ref:`198 <X(198)>`}, {:ref:`84 <X(84)>`, 3353}, {:ref:`265 <X(265)>`, :ref:`382 <X(382)>`}, {3345, 3472}, {3346, 3355}
+   {:ref:`1 <X_1>`, 3182}, {:ref:`3 <X_3>`, :ref:`154 <X_154>`}, {:ref:`4 <X_4>`, 3183}, {:ref:`6 <X_6>`, :ref:`185 <X_185>`}, {:ref:`20 <X_20>`, :ref:`69 <X_69>`}, {:ref:`24 <X_24>`, :ref:`74 <X_74>`}, {:ref:`30 <X_30>`, :ref:`68 <X_68>`}, {:ref:`33 <X_33>`, :ref:`65 <X_65>`}, {:ref:`40 <X_40>`, :ref:`72 <X_72>`}, {:ref:`54 <X_54>`, :ref:`378 <X_378>`}, {:ref:`55 <X_55>`, :ref:`73 <X_73>`}, {:ref:`71 <X_71>`, :ref:`198 <X_198>`}, {:ref:`84 <X_84>`, 3353}, {:ref:`265 <X_265>`, :ref:`382 <X_382>`}, {3345, 3472}, {3346, 3355}
 
 .. collapse:: Functional Relations
    :badge: 24 relations
 
-   * :ref:`X(64) <X(64)>` = reflection of X(1498) in :ref:`X(3) <X(3)>`
-   * :ref:`X(64) <X(64)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(20) <X(20)>`
-   * :ref:`X(64) <X(64)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(14615)
-   * :ref:`X(64) <X(64)>` = :term:`complement <complement>` of X(6225)
-   * :ref:`X(64) <X(64)>` = :term:`anticomplement <anticomplement>` of X(2883)
-   * :ref:`X(64) <X(64)>` = circumcircle-inverse of X(11589)
-   * :ref:`X(64) <X(64)>` = :ref:`X(25) <X(25)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(6) <X(6)>`
-   * :ref:`X(64) <X(64)>` = :ref:`X(1) <X(1)>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X(207) <X(207)>`
-   * :ref:`X(64) <X(64)>` = :term:`crosspoint <crosspoint>` of :ref:`X(4) <X(4)>` and X(3346)
-   * :ref:`X(64) <X(64)>` = :term:`crosssum <crosssum>` of :ref:`X(3) <X(3)>` and X(1498)
-   * :ref:`X(64) <X(64)>` = perspector of hexyl triangle and :term:`anticevian triangle <anticevian-triangle>` of X(2184)
-   * :ref:`X(64) <X(64)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(647) <X(647)>`\ \ :ref:`X(657) <X(657)>`
-   * :ref:`X(64) <X(64)>` = concurrence of normals to MacBeath circumconic at :g:`A <A>`, :g:`B <B>`, :g:`C <C>`
-   * :ref:`X(64) <X(64)>` = isogonal conjugate, wrt :term:`tangential triangle <tangential-triangle>` of MacBeath circumconic (or anticevian triangle of :ref:`X(3) <X(3)>`), of X(1498)
-   * :ref:`X(64) <X(64)>` = orthocenter of x(3)\ :ref:`X(6) <X(6)>`\ X(2435)
-   * :ref:`X(64) <X(64)>` = orthology center of :g:`ABC << A B C >>` and half-altitude triangle
-   * :ref:`X(64) <X(64)>` = intersection of tangents at :ref:`X(3) <X(3)>` and :ref:`X(4) <X(4)>` to Thomson cubic K002
-   * :ref:`X(64) <X(64)>` = intersection of tangents at :ref:`X(20) <X(20)>` and :ref:`X(64) <X(64)>` to Darboux cubic K004
-   * :ref:`X(64) <X(64)>` = perspector of :g:`ABC << A B C >>` and the reflection in :ref:`X(3) <X(3)>` of the :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(3) <X(3)>` (tangential triangle)
-   * :ref:`X(64) <X(64)>` = perspector of :g:`ABC << A B C >>` and circumcircle antipode of circumanticevian triangle of :ref:`X(3) <X(3)>`
-   * :ref:`X(64) <X(64)>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of half-altitude triangle
-   * :ref:`X(64) <X(64)>` = X(2136)-of-orthic-triangle if :g:`ABC << A B C >>` is acute
-   * :ref:`X(64) <X(64)>` = X(8905)-of-excentral-triangle
-   * :ref:`X(64) <X(64)>` = :ref:`X(3) <X(3)>`-:term:`vertex conjugate <vertex-conjugate>` of :ref:`X(3) <X(3)>`
+   * :ref:`X_64 <X_64>` = reflection of X_1498 in :ref:`X_3 <X_3>`
+   * :ref:`X_64 <X_64>` = isogonal conjugate of :ref:`X_20 <X_20>`
+   * :ref:`X_64 <X_64>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_14615
+   * :ref:`X_64 <X_64>` = :term:`complement <complement>` of X_6225
+   * :ref:`X_64 <X_64>` = :term:`anticomplement <anticomplement>` of X_2883
+   * :ref:`X_64 <X_64>` = circumcircle-inverse of X_11589
+   * :ref:`X_64 <X_64>` = :ref:`X_25 <X_25>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_6 <X_6>`
+   * :ref:`X_64 <X_64>` = :ref:`X_1 <X_1>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X_207 <X_207>`
+   * :ref:`X_64 <X_64>` = :term:`crosspoint <crosspoint>` of :ref:`X_4 <X_4>` and X_3346
+   * :ref:`X_64 <X_64>` = :term:`crosssum <crosssum>` of :ref:`X_3 <X_3>` and X_1498
+   * :ref:`X_64 <X_64>` = perspector of :term:`hexyl triangle <hexyl-triangle>` and :term:`anticevian triangle <anticevian-triangle>` of X_2184
+   * :ref:`X_64 <X_64>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_647 <X_647>`\ \ :ref:`X_657 <X_657>`
+   * :ref:`X_64 <X_64>` = concurrence of normals to MacBeath circumconic at :g:`A <A>`, :g:`B <B>`, :g:`C <C>`
+   * :ref:`X_64 <X_64>` = isogonal conjugate, wrt :term:`tangential triangle <tangential-triangle>` of MacBeath circumconic (or anticevian triangle of :ref:`X_3 <X_3>`), of X_1498
+   * :ref:`X_64 <X_64>` = orthocenter of x(3)\ :ref:`X_6 <X_6>`\ X_2435
+   * :ref:`X_64 <X_64>` = orthology center of :g:`ABC << A B C >>` and :term:`half-altitude triangle <half-altitude-triangle>`
+   * :ref:`X_64 <X_64>` = intersection of tangents at :ref:`X_3 <X_3>` and :ref:`X_4 <X_4>` to Thomson cubic K002
+   * :ref:`X_64 <X_64>` = intersection of tangents at :ref:`X_20 <X_20>` and :ref:`X_64 <X_64>` to Darboux cubic K004
+   * :ref:`X_64 <X_64>` = perspector of :g:`ABC << A B C >>` and the reflection in :ref:`X_3 <X_3>` of the :term:`antipedal triangle <antipedal-triangle>` of :ref:`X_3 <X_3>` (tangential triangle)
+   * :ref:`X_64 <X_64>` = perspector of :g:`ABC << A B C >>` and circumcircle antipode of circumanticevian triangle of :ref:`X_3 <X_3>`
+   * :ref:`X_64 <X_64>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of half-altitude triangle
+   * :ref:`X_64 <X_64>` = X_2136-of-orthic-triangle if :g:`ABC << A B C >>` is acute
+   * :ref:`X_64 <X_64>` = X_8905-of-excentral-triangle
+   * :ref:`X_64 <X_64>` = :ref:`X_3 <X_3>`-:term:`vertex conjugate <vertex-conjugate>` of :ref:`X_3 <X_3>`
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the half-altitude triangle. Let :g:`L_{a} <L_a>` be the :term:`trilinear polar <trilinear-polar>` of :g:`A' <A'>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(64) <X(64)>`. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
+   A construction of :ref:`X_64 <X_64>` appears in Lemoine's 1886 paper cited at :ref:`X_19 <X_19>`.
 
 .. container:: note-item
 
-   Let :g:`O_{a} <O_a>` be the circle with segment :g:`BC <[ B C ]>` as diameter. Let :g:`A' <A'>` be the perspector of :g:`O_{a} <O_a>`. Let :g:`L_{a} <L_a>` be the polar of :g:`A' <A'>` wrt :g:`O_{a} <O_a>`. Define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, :g:`B″ <B″>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C″ <C″>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(64) <X(64)>`. (Randy Hutson, November 18, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the half-altitude triangle. Let :g:`L_{a} <L_a>` be the :term:`trilinear polar <trilinear-polar>` of :g:`A' <A'>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_64 <X_64>`. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the :term:`cevian triangle <cevian-triangle>` of :ref:`X(69) <X(69)>`. Let :g:`A″ <A″>` be the orthocenter of :g:`AB'C' << A B' C' >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(64) <X(64)>`. (Randy Hutson, November 18, 2015)
+   Let :g:`O_{a} <O_a>` be the circle with segment :g:`BC <[ B C ]>` as diameter. Let :g:`A' <A'>` be the perspector of :g:`O_{a} <O_a>`. Let :g:`L_{a} <L_a>` be the polar of :g:`A' <A'>` wrt :g:`O_{a} <O_a>`. Define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, :g:`B″ <B″>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C″ <C″>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_64 <X_64>`. (Randy Hutson, November 18, 2015)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the reflection of the :term:`orthic triangle <orthic-triangle>` in :ref:`X(4) <X(4)>`. Let :g:`A″B″C″ << A″ B″ C″ >>` be the trangential triangle, with respect ot the orthic triangle, of the circumconic of the orthic triangle with center :ref:`X(4) <X(4)>`; i.e., the bicevian conic of :ref:`X(4) <X(4)>` and :ref:`X(459) <X(459)>`. Then :ref:`X(64) <X(64)>` is the perspector of :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>`. (Randy Hutson, November 18, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`cevian triangle <cevian-triangle>` of :ref:`X_69 <X_69>`. Let :g:`A″ <A″>` be the orthocenter of :g:`AB'C' << A B' C' >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_64 <X_64>`. (Randy Hutson, November 18, 2015)
 
 .. container:: note-item
 
-   The tangents at :g:`A <A>`, :g:`B <B>`, :g:`C <C>` to the Darboux cubic K004 concur in :ref:`X(64) <X(64)>`. (Randy Hutson, November 18, 2015)
+   Let :g:`A'B'C' << H_a H_b H_c >>` be the reflection of the :term:`orthic triangle <orthic-triangle>` in :ref:`X_4 <X_4>`. Let :g:`A″B″C″ << A″ B″ C″ >>` be the trangential triangle, with respect ot the orthic triangle, of the circumconic of the orthic triangle with center :ref:`X_4 <X_4>`; i.e., the bicevian conic of :ref:`X_4 <X_4>` and :ref:`X_459 <X_459>`. Then :ref:`X_64 <X_64>` is the perspector of :g:`A'B'C' << H_a H_b H_c >>` and :g:`A″B″C″ << A″ B″ C″ >>`. (Randy Hutson, November 18, 2015)
+
+.. container:: note-item
+
+   The tangents at :g:`A <A>`, :g:`B <B>`, :g:`C <C>` to the Darboux cubic K004 concur in :ref:`X_64 <X_64>`. (Randy Hutson, November 18, 2015)
 
 .. toctree::
    :hidden:

@@ -1,14 +1,17 @@
-:canonical_id: X(602)
+:canonical_id: X_602
 :type: code
+:subtitle: INTERSECTION OF LINES X_3X_31 AND X_56X_255
 
-X(602) = INTERSECTION OF LINES X(3)X(31) AND X(56)X(255) — Code
-===============================================================
+X_602
+=====
+
+.. rubric:: INTERSECTION OF LINES X_3X_31 AND X_56X_255
 
 .. figure:: x-00602.svg
-   :alt: X(602) = INTERSECTION OF LINES X(3)X(31) AND X(56)X(255)
+   :alt: X_602 — INTERSECTION OF LINES X_3X_31 AND X_56X_255
    :align: center
 
-   **X(602) = INTERSECTION OF LINES X(3)X(31) AND X(56)X(255)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_602** (*INTERSECTION OF LINES X_3X_31 AND X_56X_255*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

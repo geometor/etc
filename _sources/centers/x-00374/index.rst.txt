@@ -1,18 +1,31 @@
 :order: 374
 :type: center
-:canonical_id: X(374)
-:dependencies: X(6), X(9), X(44), X(51), X(65), X(210), X(354), X(517), X(966), X(3740)
+:canonical_id: X_374
+:subtitle: CENTROID OF THE PEDAL TRIANGLE OF X_9
+:dependencies: X_6, X_9, X_44, X_51, X_65, X_210, X_354, X_517, X_966, X_3740
 
-.. _X(374):
+.. _X_374:
 
-X(374) = CENTROID OF THE PEDAL TRIANGLE OF X(9)
-===============================================
+X_374
+=====
+
+.. rubric:: CENTROID OF THE PEDAL TRIANGLE OF X_9
+
+.. enunciation::
+
+   :ref:`X_374 <X_374>` is the centroid of the :term:`pedal triangle <pedal-triangle>` of :ref:`X_9 <X_9>`.
 
 .. figure:: x-00374.svg
-   :alt: X(374) = CENTROID OF THE PEDAL TRIANGLE OF X(9)
+   :alt: X_374 — CENTROID OF THE PEDAL TRIANGLE OF X_9
    :align: center
 
-   **X(374) = CENTROID OF THE PEDAL TRIANGLE OF X(9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_374** (*CENTROID OF THE PEDAL TRIANGLE OF X_9*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{44, 65} <{ 44, 65 }>`, :g:`{51, 210} <{ 51, 210 }>`
+   * **Related Centers:** :g:`X_44 <X_44>` (:ref:`-LINE CONJUGATE OF X(1) <X_44>`), :g:`X_65 <X_65>` (:ref:`ORTHOCENTER OF THE INTOUCH TRIANGLE <X_65>`), :g:`X_51 <X_51>` (:ref:`CENTROID OF ORTHIC TRIANGLE <X_51>`), :g:`X_210 <X_210>` (:ref:`-CEVA CONJUGATE OF X(37) <X_210>`)
 
 .. signature:: center
 
@@ -24,7 +37,7 @@ X(374) = CENTROID OF THE PEDAL TRIANGLE OF X(9)
    :badge: 5 lines
    :class: line-catalog
 
-   {:ref:`6 <X(6)>`, :ref:`354 <X(354)>`}, {:ref:`9 <X(9)>`, :ref:`517 <X(517)>`}, {:ref:`44 <X(44)>`, :ref:`65 <X(65)>`}, {:ref:`51 <X(51)>`, :ref:`210 <X(210)>`}, {:ref:`966 <X(966)>`, 3740}
+   {:ref:`6 <X_6>`, :ref:`354 <X_354>`}, {:ref:`9 <X_9>`, :ref:`517 <X_517>`}, {:ref:`44 <X_44>`, :ref:`65 <X_65>`}, {:ref:`51 <X_51>`, :ref:`210 <X_210>`}, {:ref:`966 <X_966>`, 3740}
 
 .. toctree::
    :hidden:

@@ -1,18 +1,21 @@
-:canonical_id: X(401)
+:canonical_id: X_401
 :type: code
+:subtitle: BAILEY POINT
 
-X(401) = BAILEY POINT — Code
-============================
+X_401
+=====
+
+.. rubric:: BAILEY POINT
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(401) <X(401)>` has Shinagawa coefficients :math:`(EF + F^{2} - S^{2}, 2S^{2})`.
+   :ref:`X_401 <X_401>` = :term:`anticomplement <anticomplement>` of :ref:`X_297 <X_297>`
 
 .. figure:: x-00401.svg
-   :alt: X(401) = BAILEY POINT
+   :alt: X_401 — BAILEY POINT
    :align: center
 
-   **X(401) = BAILEY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_401** (*BAILEY POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

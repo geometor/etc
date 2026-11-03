@@ -1,22 +1,31 @@
 :order: 450
 :type: center
-:canonical_id: X(450)
-:dependencies: X(2), X(3), X(4), X(25), X(107), X(155), X(184), X(185), X(264), X(275), X(511), X(647), X(648), X(653), X(685), X(1069), X(1075), X(1092), X(1093), X(1148), X(1897), X(1935), X(1940), X(1942), X(1993), X(2052), X(2451), X(2501), X(3157), X(3168), X(3260), X(3291), X(3292), X(3462), X(5651), X(5943), X(5972), X(6090), X(6331), X(6335), X(6530), X(6531), X(7049), X(8062), X(8764), X(9306), X(9308), X(9820), X(11064), X(12215), X(13346), X(14165), X(14249), X(15466), X(17973), X(17974), X(17975), X(17976), X(17977), X(18020), X(22382), X(39034)
+:canonical_id: X_450
+:subtitle: X_3-HIRST INVERSE OF X_4
+:dependencies: X_2, X_3, X_4, X_25, X_107, X_155, X_184, X_185, X_264, X_275, X_511, X_647, X_648, X_653, X_685, X_1069, X_1075, X_1092, X_1093, X_1148, X_1897, X_1935, X_1940, X_1942, X_1993, X_2052, X_2451, X_2501, X_3157, X_3168, X_3260, X_3291, X_3292, X_3462, X_5651, X_5943, X_5972, X_6090, X_6331, X_6335, X_6530, X_6531, X_7049, X_8062, X_8764, X_9306, X_9308, X_9820, X_11064, X_12215, X_13346, X_14165, X_14249, X_15466, X_17973, X_17974, X_17975, X_17976, X_17977, X_18020, X_22382, X_39034
 
-.. _X(450):
+.. _X_450:
 
-X(450) = X(3)-HIRST INVERSE OF X(4)
-===================================
+X_450
+=====
+
+.. rubric:: X_3-HIRST INVERSE OF X_4
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(450) <X(450)>` has Shinagawa coefficients :math:`((E - 2F)F,(E + F)F - S^{2})`.
+   :ref:`X_450 <X_450>` is the :ref:`X_3 <X_3>`-:term:`hirst inverse <hirst-inverse>` of :ref:`X_4 <X_4>`.
 
 .. figure:: x-00450.svg
-   :alt: X(450) = X(3)-HIRST INVERSE OF X(4)
+   :alt: X_450 — X_3-HIRST INVERSE OF X_4
    :align: center
 
-   **X(450) = X(3)-HIRST INVERSE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_450** (*X_3-HIRST INVERSE OF X_4*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`), :g:`{107, 511} <{ 107, 511 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_107 <X_107>` (:ref:`Ψ(SYMMEDIAN POINT, ORTHOCENTER) <X_107>`), :g:`X_511 <X_511>` (:ref:`ISOGONAL CONJUGATE OF X(98) <X_511>`)
 
 .. signature:: center
 
@@ -34,19 +43,26 @@ X(450) = X(3)-HIRST INVERSE OF X(4)
    :badge: 28 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`107 <X(107)>`, :ref:`511 <X(511)>`}, {:ref:`155 <X(155)>`, 1075}, {:ref:`184 <X(184)>`, 15466}, {:ref:`264 <X(264)>`, 5651}, {:ref:`275 <X(275)>`, 5943}, {:ref:`648 <X(648)>`, 3292}, {:ref:`653 <X(653)>`, 17975}, {:ref:`685 <X(685)>`, 17974}, {1069, 7049}, {1092, 1093}, {1148, 3157}, {1897, 17976}, {1935, 1940}, {1993, 3168}, {2052, 9306}, {2451, 2501}, {3260, 18020}, {3291, 6531}, {3462, 9820}, {5972, 14165}, {6090, 9308}, {6331, 12215}, {6335, 17977}, {6530, 11064}, {8062, 22382}, {8764, 17973}, {13346, 14249}
+   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`107 <X_107>`, :ref:`511 <X_511>`}, {:ref:`155 <X_155>`, 1075}, {:ref:`184 <X_184>`, 15466}, {:ref:`264 <X_264>`, 5651}, {:ref:`275 <X_275>`, 5943}, {:ref:`648 <X_648>`, 3292}, {:ref:`653 <X_653>`, 17975}, {:ref:`685 <X_685>`, 17974}, {1069, 7049}, {1092, 1093}, {1148, 3157}, {1897, 17976}, {1935, 1940}, {1993, 3168}, {2052, 9306}, {2451, 2501}, {3260, 18020}, {3291, 6531}, {3462, 9820}, {5972, 14165}, {6090, 9308}, {6331, 12215}, {6335, 17977}, {6530, 11064}, {8062, 22382}, {8764, 17973}, {13346, 14249}
 
 .. collapse:: Functional Relations
    :badge: 8 relations
 
-   * :ref:`X(450) <X(450)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(1942)
-   * :ref:`X(450) <X(450)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(185) <X(185)>`\ \ :ref:`X(647) <X(647)>`
-   * :ref:`X(450) <X(450)>` = :ref:`X(3) <X(3)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(4) <X(4)>`
-   * :ref:`X(450) <X(450)>` = crossdifference of PU(17)
-   * :ref:`X(450) <X(450)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(17)}
-   * :ref:`X(450) <X(450)>` = intersection of :term:`trilinear polars <trilinear-polar>` of P(17) and U(17)
-   * :ref:`X(450) <X(450)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(39034)
-   * :ref:`X(450) <X(450)>` = inverse-in-circumconic-centered-at-:ref:`X(4) <X(4)>` of :ref:`X(25) <X(25)>`
+   * :ref:`X_450 <X_450>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_1942
+   * :ref:`X_450 <X_450>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_185 <X_185>`\ \ :ref:`X_647 <X_647>`
+   * :ref:`X_450 <X_450>` = :ref:`X_3 <X_3>`-Hirst inverse of :ref:`X_4 <X_4>`
+   * :ref:`X_450 <X_450>` = crossdifference of PU(17)
+   * :ref:`X_450 <X_450>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(17)}
+   * :ref:`X_450 <X_450>` = intersection of :term:`trilinear polars <trilinear-polar>` of P(17) and U(17)
+   * :ref:`X_450 <X_450>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of X_39034
+   * :ref:`X_450 <X_450>` = inverse-in-circumconic-centered-at-:ref:`X_4 <X_4>` of :ref:`X_25 <X_25>`
+
+Notes
+-----
+
+.. container:: note-item
+
+   As a point on the Euler line, :ref:`X_450 <X_450>` has Shinagawa coefficients :math:`((E - 2F)F,(E + F)F - S^{2})`.
 
 .. toctree::
    :hidden:

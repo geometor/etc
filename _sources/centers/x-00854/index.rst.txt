@@ -1,22 +1,31 @@
 :order: 854
 :type: center
-:canonical_id: X(854)
-:dependencies: X(2), X(3), X(8), X(56), X(647)
+:canonical_id: X_854
+:subtitle: INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X_56
+:dependencies: X_2, X_3, X_8, X_647
 
-.. _X(854):
+.. _X_854:
 
-X(854) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(56)
-=============================================================
+X_854
+=====
+
+.. rubric:: INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X_56
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(854) <X(854)>` has Shinagawa coefficients :math:`([(2E-F)F-S^{2}]S^{2}-\$abS_{C}^{3}\$ -\$abS_{A}S_{B}\$(E-2F) +\$abS_{C}\$[(E+F)^{2}-2S^{2}], [(E+F)F+S^{2}]S^{2}-\$abS_{A}S_{B}\$(E+F) +\$abS_{C}\$S^{2})`.
+   :ref:`X_854 <X_854>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_8 <X_8>`\ \ :ref:`X_647 <X_647>`
 
 .. figure:: x-00854.svg
-   :alt: X(854) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(56)
+   :alt: X_854 — INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X_56
    :align: center
 
-   **X(854) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(56)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_854** (*INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X_56*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`)
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`)
 
 .. signature:: center
 
@@ -28,12 +37,19 @@ X(854) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(56)
    :badge: 1 line
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}
+   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}
 
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(854) <X(854)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(8) <X(8)>`\ \ :ref:`X(647) <X(647)>`
+   * :ref:`X_854 <X_854>` = crossdifference of every pair of points on line :ref:`X_8 <X_8>`\ \ :ref:`X_647 <X_647>`
+
+Notes
+-----
+
+.. container:: note-item
+
+   As a point on the Euler line, :ref:`X_854 <X_854>` has Shinagawa coefficients :math:`([(2E-F)F-S^{2}]S^{2}-\$abS_{C}^{3}\$ -\$abS_{A}S_{B}\$(E-2F) +\$abS_{C}\$[(E+F)^{2}-2S^{2}], [(E+F)F+S^{2}]S^{2}-\$abS_{A}S_{B}\$(E+F) +\$abS_{C}\$S^{2})`.
 
 .. toctree::
    :hidden:

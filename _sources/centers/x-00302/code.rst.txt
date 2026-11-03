@@ -1,18 +1,21 @@
-:canonical_id: X(302)
+:canonical_id: X_302
 :type: code
+:subtitle: ISOTOMIC CONJUGATE OF 1st NAPOLEON POINT
 
-X(302) = ISOTOMIC CONJUGATE OF 1st NAPOLEON POINT — Code
-========================================================
+X_302
+=====
+
+.. rubric:: ISOTOMIC CONJUGATE OF 1st NAPOLEON POINT
 
 .. enunciation::
 
-   :ref:`X(302) <X(302)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(17) <X(17)>`
+   :ref:`X_302 <X_302>` is the :term:`isotomic conjugate <isotomic-conjugate>` of 1st Napoleon point.
 
 .. figure:: x-00302.svg
-   :alt: X(302) = ISOTOMIC CONJUGATE OF 1st NAPOLEON POINT
+   :alt: X_302 — ISOTOMIC CONJUGATE OF 1st NAPOLEON POINT
    :align: center
 
-   **X(302) = ISOTOMIC CONJUGATE OF 1st NAPOLEON POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_302** (*ISOTOMIC CONJUGATE OF 1st NAPOLEON POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

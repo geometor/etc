@@ -1,22 +1,31 @@
 :order: 988
 :type: center
-:canonical_id: X(988)
-:dependencies: X(1), X(3), X(9), X(21), X(38), X(39), X(77), X(78), X(84), X(256), X(404), X(612), X(614), X(936), X(984), X(989), X(1106), X(37552)
+:canonical_id: X_988
+:subtitle: INTERSECTION OF LINES X_1X_3 AND X_9X_39
+:dependencies: X_1, X_3, X_9, X_21, X_38, X_39, X_77, X_78, X_84, X_256, X_404, X_612, X_614, X_936, X_984, X_989, X_1106, X_37552
 
-.. _X(988):
+.. _X_988:
 
-X(988) = INTERSECTION OF LINES X(1)X(3) AND X(9)X(39)
-=====================================================
+X_988
+=====
+
+.. rubric:: INTERSECTION OF LINES X_1X_3 AND X_9X_39
 
 .. enunciation::
 
-   :ref:`X(988) <X(988)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(989) <X(989)>`
+   :ref:`X_988 <X_988>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_989 <X_989>`
 
 .. figure:: x-00988.svg
-   :alt: X(988) = INTERSECTION OF LINES X(1)X(3) AND X(9)X(39)
+   :alt: X_988 — INTERSECTION OF LINES X_1X_3 AND X_9X_39
    :align: center
 
-   **X(988) = INTERSECTION OF LINES X(1)X(3) AND X(9)X(39)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_988** (*INTERSECTION OF LINES X_1X_3 AND X_9X_39*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 3} <{ 1, 3 }>`, :g:`{9, 39} <{ 9, 39 }>`
+   * **Related Centers:** :g:`X_989 <X_989>` (:ref:`ISOGONAL CONJUGATE OF X(988) <X_989>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_9 <X_9>` (:ref:`MITTENPUNKT <X_9>`), :g:`X_39 <X_39>` (:ref:`BROCARD MIDPOINT <X_39>`)
 
 .. signature:: center
 
@@ -28,13 +37,13 @@ X(988) = INTERSECTION OF LINES X(1)X(3) AND X(9)X(39)
    :badge: 8 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`3 <X(3)>`}, {:ref:`9 <X(9)>`, :ref:`39 <X(39)>`}, {:ref:`21 <X(21)>`, :ref:`614 <X(614)>`}, {:ref:`38 <X(38)>`, :ref:`78 <X(78)>`}, {:ref:`77 <X(77)>`, 1106}, {:ref:`84 <X(84)>`, :ref:`256 <X(256)>`}, {:ref:`404 <X(404)>`, :ref:`612 <X(612)>`}, {:ref:`936 <X(936)>`, :ref:`984 <X(984)>`}
+   {:ref:`1 <X_1>`, :ref:`3 <X_3>`}, {:ref:`9 <X_9>`, :ref:`39 <X_39>`}, {:ref:`21 <X_21>`, :ref:`614 <X_614>`}, {:ref:`38 <X_38>`, :ref:`78 <X_78>`}, {:ref:`77 <X_77>`, 1106}, {:ref:`84 <X_84>`, :ref:`256 <X_256>`}, {:ref:`404 <X_404>`, :ref:`612 <X_612>`}, {:ref:`936 <X_936>`, :ref:`984 <X_984>`}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(988) <X(988)>` = isogonal conjugate of :ref:`X(989) <X(989)>`
-   * :ref:`X(988) <X(988)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(3) <X(3)>`}-harmonic conjugate of X(37552)
+   * :ref:`X_988 <X_988>` = isogonal conjugate of :ref:`X_989 <X_989>`
+   * :ref:`X_988 <X_988>` = {:ref:`X_1 <X_1>`,\ :ref:`X_3 <X_3>`}-harmonic conjugate of X_37552
 
 .. toctree::
    :hidden:

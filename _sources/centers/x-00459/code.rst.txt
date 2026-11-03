@@ -1,18 +1,21 @@
-:canonical_id: X(459)
+:canonical_id: X_459
 :type: code
+:subtitle: X_253-CEVA CONJUGATE OF X_4
 
-X(459) = X(253)-CEVA CONJUGATE OF X(4) — Code
-=============================================
+X_459
+=====
+
+.. rubric:: X_253-CEVA CONJUGATE OF X_4
 
 .. enunciation::
 
-   Let :g:`A'B'C' << A' B' C' >>` be the midheight triangle. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(459) <X(459)>`. (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
+   :ref:`X_459 <X_459>` = :ref:`X_253 <X_253>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_4 <X_4>`
 
 .. figure:: x-00459.svg
-   :alt: X(459) = X(253)-CEVA CONJUGATE OF X(4)
+   :alt: X_459 — X_253-CEVA CONJUGATE OF X_4
    :align: center
 
-   **X(459) = X(253)-CEVA CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_459** (*X_253-CEVA CONJUGATE OF X_4*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

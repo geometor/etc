@@ -1,22 +1,31 @@
 :order: 42
 :type: center
-:canonical_id: X(42)
-:dependencies: X(1), X(2), X(3), X(6), X(7), X(9), X(10), X(21), X(25), X(31), X(33), X(35), X(37), X(38), X(40), X(41), X(43), X(48), X(55), X(57), X(58), X(65), X(71), X(73), X(75), X(77), X(81), X(86), X(92), X(100), X(101), X(111), X(165), X(171), X(172), X(181), X(197), X(199), X(210), X(213), X(226), X(228), X(239), X(244), X(308), X(310), X(313), X(321), X(354), X(393), X(512), X(514), X(517), X(518), X(551), X(560), X(581), X(584), X(643), X(649), X(694), X(740), X(748), X(750), X(788), X(798), X(872), X(893), X(894), X(940), X(941), X(942), X(967), X(991), X(1001), X(1045), X(1064), X(1066), X(1215), X(1790), X(3588), X(3720), X(32759)
+:canonical_id: X_42
+:subtitle: CROSSPOINT OF INCENTER AND SYMMEDIAN POINT
+:dependencies: X_1, X_2, X_3, X_6, X_7, X_9, X_10, X_21, X_25, X_31, X_33, X_35, X_37, X_38, X_40, X_41, X_43, X_48, X_55, X_57, X_58, X_65, X_71, X_73, X_75, X_77, X_81, X_86, X_92, X_100, X_101, X_111, X_165, X_171, X_172, X_181, X_197, X_199, X_210, X_213, X_226, X_228, X_239, X_244, X_308, X_310, X_313, X_321, X_354, X_393, X_512, X_514, X_517, X_518, X_551, X_560, X_581, X_584, X_643, X_649, X_694, X_740, X_748, X_750, X_788, X_798, X_872, X_893, X_894, X_940, X_941, X_942, X_967, X_991, X_1001, X_1045, X_1064, X_1066, X_1215, X_1790, X_3588, X_3720, X_32759
 
-.. _X(42):
+.. _X_42:
 
-X(42) = CROSSPOINT OF INCENTER AND SYMMEDIAN POINT
-==================================================
+X_42
+====
+
+.. rubric:: CROSSPOINT OF INCENTER AND SYMMEDIAN POINT
 
 .. enunciation::
 
-   Let :g:`A'B'C' << A' B' C' >>` be the extangents triangle. Let :g:`L_{a} <L_a>` be the :term:`trilinear polar <trilinear-polar>` of :g:`A' <A'>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, :g:`B″ <B″>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C″ <C″>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(42) <X(42)>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
+   :ref:`X_42 <X_42>` is the :term:`crosspoint <crosspoint>` of incenter and symmedian point.
 
 .. figure:: x-00042.svg
-   :alt: X(42) = CROSSPOINT OF INCENTER AND SYMMEDIAN POINT
+   :alt: X_42 — CROSSPOINT OF INCENTER AND SYMMEDIAN POINT
    :align: center
 
-   **X(42) = CROSSPOINT OF INCENTER AND SYMMEDIAN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_42** (*CROSSPOINT OF INCENTER AND SYMMEDIAN POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 2} <{ 1, 2 }>`, :g:`{6, 31} <{ 6, 31 }>`
+   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_31 <X_31>` (:ref:`2nd POWER POINT <X_31>`)
 
 .. signature:: center
 
@@ -36,51 +45,55 @@ X(42) = CROSSPOINT OF INCENTER AND SYMMEDIAN POINT
    :badge: 29 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`2 <X(2)>`}, {:ref:`3 <X(3)>`, :ref:`967 <X(967)>`}, {:ref:`6 <X(6)>`, :ref:`31 <X(31)>`}, {:ref:`9 <X(9)>`, :ref:`941 <X(941)>`}, {:ref:`25 <X(25)>`, :ref:`41 <X(41)>`}, {:ref:`33 <X(33)>`, :ref:`393 <X(393)>`}, {:ref:`35 <X(35)>`, :ref:`58 <X(58)>`}, {:ref:`37 <X(37)>`, :ref:`210 <X(210)>`}, {:ref:`38 <X(38)>`, :ref:`518 <X(518)>`}, {:ref:`40 <X(40)>`, :ref:`581 <X(581)>`}, {:ref:`48 <X(48)>`, :ref:`197 <X(197)>`}, {:ref:`57 <X(57)>`, 1001}, {:ref:`65 <X(65)>`, :ref:`73 <X(73)>`}, {:ref:`81 <X(81)>`, :ref:`100 <X(100)>`}, {:ref:`101 <X(101)>`, :ref:`111 <X(111)>`}, {:ref:`165 <X(165)>`, :ref:`991 <X(991)>`}, {:ref:`172 <X(172)>`, :ref:`199 <X(199)>`}, {:ref:`181 <X(181)>`, :ref:`228 <X(228)>`}, {:ref:`244 <X(244)>`, :ref:`354 <X(354)>`}, {:ref:`308 <X(308)>`, :ref:`313 <X(313)>`}, {:ref:`321 <X(321)>`, :ref:`740 <X(740)>`}, {:ref:`517 <X(517)>`, 1064}, {:ref:`560 <X(560)>`, :ref:`584 <X(584)>`}, {:ref:`649 <X(649)>`, :ref:`788 <X(788)>`}, {:ref:`694 <X(694)>`, :ref:`893 <X(893)>`}, {:ref:`748 <X(748)>`, 1001}, {:ref:`750 <X(750)>`, :ref:`940 <X(940)>`}, {:ref:`894 <X(894)>`, 1045}, {:ref:`942 <X(942)>`, 1066}
+   {:ref:`1 <X_1>`, :ref:`2 <X_2>`}, {:ref:`3 <X_3>`, :ref:`967 <X_967>`}, {:ref:`6 <X_6>`, :ref:`31 <X_31>`}, {:ref:`9 <X_9>`, :ref:`941 <X_941>`}, {:ref:`25 <X_25>`, :ref:`41 <X_41>`}, {:ref:`33 <X_33>`, :ref:`393 <X_393>`}, {:ref:`35 <X_35>`, :ref:`58 <X_58>`}, {:ref:`37 <X_37>`, :ref:`210 <X_210>`}, {:ref:`38 <X_38>`, :ref:`518 <X_518>`}, {:ref:`40 <X_40>`, :ref:`581 <X_581>`}, {:ref:`48 <X_48>`, :ref:`197 <X_197>`}, {:ref:`57 <X_57>`, 1001}, {:ref:`65 <X_65>`, :ref:`73 <X_73>`}, {:ref:`81 <X_81>`, :ref:`100 <X_100>`}, {:ref:`101 <X_101>`, :ref:`111 <X_111>`}, {:ref:`165 <X_165>`, :ref:`991 <X_991>`}, {:ref:`172 <X_172>`, :ref:`199 <X_199>`}, {:ref:`181 <X_181>`, :ref:`228 <X_228>`}, {:ref:`244 <X_244>`, :ref:`354 <X_354>`}, {:ref:`308 <X_308>`, :ref:`313 <X_313>`}, {:ref:`321 <X_321>`, :ref:`740 <X_740>`}, {:ref:`517 <X_517>`, 1064}, {:ref:`560 <X_560>`, :ref:`584 <X_584>`}, {:ref:`649 <X_649>`, :ref:`788 <X_788>`}, {:ref:`694 <X_694>`, :ref:`893 <X_893>`}, {:ref:`748 <X_748>`, 1001}, {:ref:`750 <X_750>`, :ref:`940 <X_940>`}, {:ref:`894 <X_894>`, 1045}, {:ref:`942 <X_942>`, 1066}
 
 .. collapse:: Functional Relations
    :badge: 25 relations
 
-   * :ref:`X(42) <X(42)>` = reflection of :ref:`X(321) <X(321)>` in X(1215)
-   * :ref:`X(42) <X(42)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(86) <X(86)>`
-   * :ref:`X(42) <X(42)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(310) <X(310)>`
-   * :ref:`X(42) <X(42)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`37 <X(37)>`), (:ref:`6 <X(6)>`, :ref:`213 <X(213)>`), (:ref:`10 <X(10)>`, :ref:`71 <X(71)>`), (:ref:`55 <X(55)>`, :ref:`228 <X(228)>`)
-   * :ref:`X(42) <X(42)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`6 <X(6)>`), (:ref:`33 <X(33)>`, :ref:`55 <X(55)>`), (:ref:`37 <X(37)>`, :ref:`65 <X(65)>`)
-   * :ref:`X(42) <X(42)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`2 <X(2)>`), (:ref:`7 <X(7)>`, :ref:`77 <X(77)>`), (:ref:`21 <X(21)>`, :ref:`81 <X(81)>`)
-   * :ref:`X(42) <X(42)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(239) <X(239)>`\ \ :ref:`X(514) <X(514)>`
-   * :ref:`X(42) <X(42)>` = circumcircle-inverse of X(32759)
-   * :ref:`X(42) <X(42)>` = :ref:`X(1) <X(1)>`-:term:`line conjugate <line-conjugate>` of :ref:`X(239) <X(239)>`
-   * :ref:`X(42) <X(42)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`21 <X(21)>`, :ref:`551 <X(551)>`), (:ref:`55 <X(55)>`, :ref:`42 <X(42)>`), (:ref:`100 <X(100)>`, :ref:`226 <X(226)>`), (:ref:`210 <X(210)>`, :ref:`210 <X(210)>`), (:ref:`643 <X(643)>`, :ref:`171 <X(171)>`)
-   * :ref:`X(42) <X(42)>` = bicentric sum of PU(8)
-   * :ref:`X(42) <X(42)>` = PU(8)-harmonic conjugate of :ref:`X(649) <X(649)>`
-   * :ref:`X(42) <X(42)>` = barycentric product of PU(32)
-   * :ref:`X(42) <X(42)>` = trilinear product of PU(85)
-   * :ref:`X(42) <X(42)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(512) <X(512)>`\ \ :ref:`X(798) <X(798)>`
-   * :ref:`X(42) <X(42)>` = Danneels point of :ref:`X(1) <X(1)>`
-   * :ref:`X(42) <X(42)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(2) <X(2)>`}-harmonic conjugate of X(3720)
-   * :ref:`X(42) <X(42)>` = :ref:`X(75) <X(75)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(58) <X(58)>`
-   * :ref:`X(42) <X(42)>` = :ref:`X(92) <X(92)>`-isoconjugate of X(1790)
-   * :ref:`X(42) <X(42)>` = trilinear square root of :ref:`X(872) <X(872)>`
-   * :ref:`X(42) <X(42)>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of 1st Conway triangle
-   * :ref:`X(42) <X(42)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of 5th Conway triangle
-   * :ref:`X(42) <X(42)>` = perspector of unary cofactor triangles of 1st and 5th Conway triangles
-   * :ref:`X(42) <X(42)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of Gemini triangle 2
-   * :ref:`X(42) <X(42)>` = barycentric product of vertices of Gemini triangle 15
+   * :ref:`X_42 <X_42>` = reflection of :ref:`X_321 <X_321>` in X_1215
+   * :ref:`X_42 <X_42>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_86 <X_86>`
+   * :ref:`X_42 <X_42>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_310 <X_310>`
+   * :ref:`X_42 <X_42>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`37 <X_37>`), (:ref:`6 <X_6>`, :ref:`213 <X_213>`), (:ref:`10 <X_10>`, :ref:`71 <X_71>`), (:ref:`55 <X_55>`, :ref:`228 <X_228>`)
+   * :ref:`X_42 <X_42>` = crosspoint of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`6 <X_6>`), (:ref:`33 <X_33>`, :ref:`55 <X_55>`), (:ref:`37 <X_37>`, :ref:`65 <X_65>`)
+   * :ref:`X_42 <X_42>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`2 <X_2>`), (:ref:`7 <X_7>`, :ref:`77 <X_77>`), (:ref:`21 <X_21>`, :ref:`81 <X_81>`)
+   * :ref:`X_42 <X_42>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_239 <X_239>`\ \ :ref:`X_514 <X_514>`
+   * :ref:`X_42 <X_42>` = circumcircle-inverse of X_32759
+   * :ref:`X_42 <X_42>` = :ref:`X_1 <X_1>`-:term:`line conjugate <line-conjugate>` of :ref:`X_239 <X_239>`
+   * :ref:`X_42 <X_42>` = X_i-:term:`beth conjugate <beth-conjugate>` of X_j for these (i,j): (:ref:`21 <X_21>`, :ref:`551 <X_551>`), (:ref:`55 <X_55>`, :ref:`42 <X_42>`), (:ref:`100 <X_100>`, :ref:`226 <X_226>`), (:ref:`210 <X_210>`, :ref:`210 <X_210>`), (:ref:`643 <X_643>`, :ref:`171 <X_171>`)
+   * :ref:`X_42 <X_42>` = bicentric sum of PU(8)
+   * :ref:`X_42 <X_42>` = PU(8)-harmonic conjugate of :ref:`X_649 <X_649>`
+   * :ref:`X_42 <X_42>` = barycentric product of PU(32)
+   * :ref:`X_42 <X_42>` = trilinear product of PU(85)
+   * :ref:`X_42 <X_42>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_512 <X_512>`\ \ :ref:`X_798 <X_798>`
+   * :ref:`X_42 <X_42>` = Danneels point of :ref:`X_1 <X_1>`
+   * :ref:`X_42 <X_42>` = {:ref:`X_1 <X_1>`,\ :ref:`X_2 <X_2>`}-harmonic conjugate of X_3720
+   * :ref:`X_42 <X_42>` = :ref:`X_75 <X_75>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_58 <X_58>`
+   * :ref:`X_42 <X_42>` = :ref:`X_92 <X_92>`-isoconjugate of X_1790
+   * :ref:`X_42 <X_42>` = trilinear square root of :ref:`X_872 <X_872>`
+   * :ref:`X_42 <X_42>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of 1st Conway triangle
+   * :ref:`X_42 <X_42>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of 5th Conway triangle
+   * :ref:`X_42 <X_42>` = perspector of unary cofactor triangles of 1st and 5th Conway triangles
+   * :ref:`X_42 <X_42>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of Gemini triangle 2
+   * :ref:`X_42 <X_42>` = barycentric product of vertices of Gemini triangle 15
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the extangents triangle. Let :g:`A″ <A″>` be the trilinear product :g:`B' <B'>`\ \*\ :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(42) <X(42)>`.(Randy Hutson, December 26, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`extangents triangle <extangents-triangle>`. Let :g:`L_{a} <L_a>` be the :term:`trilinear polar <trilinear-polar>` of :g:`A' <A'>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, :g:`B″ <B″>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C″ <C″>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_42 <X_42>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
 
 .. container:: note-item
 
-   Let :g:`A_{b} <A_b>`, :g:`A_{c} <A_c>`, :g:`B_{c} <B_c>`, :g:`B_{a} <B_a>`, :g:`C_{a} <C_a>`, :g:`C_{b} <C_b>` be as defined at X(3588). Let :g:`A* <A*>` be the intersection of the tangents to the Myakishev conic at :g:`B_{a} <B_a>` and :g:`C_{a} <C_a>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(42) <X(42)>`.(Randy Hutson, December 26, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the extangents triangle. Let :g:`A″ <A″>` be the trilinear product :g:`B' <B'>`\ \*\ :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_42 <X_42>`.(Randy Hutson, December 26, 2015)
 
 .. container:: note-item
 
-   :ref:`X(42) <X(42)>` is the {:ref:`X(1) <X(1)>`,\ :ref:`X(43) <X(43)>`}-harmonic conjugate of :ref:`X(2) <X(2)>`.
+   Let :g:`A_{b} <A_b>`, :g:`A_{c} <A_c>`, :g:`B_{c} <B_c>`, :g:`B_{a} <B_a>`, :g:`C_{a} <C_a>`, :g:`C_{b} <C_b>` be as defined at X_3588. Let :g:`A* <A*>` be the intersection of the tangents to the Myakishev conic at :g:`B_{a} <B_a>` and :g:`C_{a} <C_a>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X_42 <X_42>`.(Randy Hutson, December 26, 2015)
+
+.. container:: note-item
+
+   :ref:`X_42 <X_42>` is the {:ref:`X_1 <X_1>`,\ :ref:`X_43 <X_43>`}-harmonic conjugate of :ref:`X_2 <X_2>`.
 
 .. toctree::
    :hidden:

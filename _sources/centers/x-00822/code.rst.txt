@@ -1,18 +1,21 @@
-:canonical_id: X(822)
+:canonical_id: X_822
 :type: code
+:subtitle: CROSSDIFFERENCE OF X_1 AND X_29
 
-X(822) = CROSSDIFFERENCE OF X(1) AND X(29) — Code
-=================================================
+X_822
+=====
+
+.. rubric:: CROSSDIFFERENCE OF X_1 AND X_29
 
 .. enunciation::
 
-   :ref:`X(822) <X(822)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(823) <X(823)>`
+   :ref:`X_822 <X_822>` = :ref:`X_163 <X_163>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_48 <X_48>`
 
 .. figure:: x-00822.svg
-   :alt: X(822) = CROSSDIFFERENCE OF X(1) AND X(29)
+   :alt: X_822 — CROSSDIFFERENCE OF X_1 AND X_29
    :align: center
 
-   **X(822) = CROSSDIFFERENCE OF X(1) AND X(29)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_822** (*CROSSDIFFERENCE OF X_1 AND X_29*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

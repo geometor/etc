@@ -1,22 +1,31 @@
 :order: 277
 :type: center
-:canonical_id: X(277)
-:dependencies: X(1), X(3), X(7), X(55), X(57), X(105), X(142), X(169), X(218), X(220), X(241), X(278), X(344), X(942), X(1002), X(1086)
+:canonical_id: X_277
+:subtitle: ISOGONAL CONJUGATE OF X_218
+:dependencies: X_1, X_3, X_7, X_55, X_57, X_105, X_142, X_169, X_218, X_220, X_241, X_278, X_344, X_942, X_1002, X_1086
 
-.. _X(277):
+.. _X_277:
 
-X(277) = ISOGONAL CONJUGATE OF X(218)
-=====================================
+X_277
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_218
 
 .. enunciation::
 
-   :ref:`X(277) <X(277)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(218) <X(218)>`
+   :ref:`X_277 <X_277>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_218 <X_218>`.
 
 .. figure:: x-00277.svg
-   :alt: X(277) = ISOGONAL CONJUGATE OF X(218)
+   :alt: X_277 — ISOGONAL CONJUGATE OF X_218
    :align: center
 
-   **X(277) = ISOGONAL CONJUGATE OF X(218)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_277** (*ISOGONAL CONJUGATE OF X_218*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{3, 105} <{ 3, 105 }>`, :g:`{1, 142} <{ 1, 142 }>`
+   * **Related Centers:** :g:`X_218 <X_218>` (:ref:`-CEVA CONJUGATE OF X(55) <X_218>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_105 <X_105>` (:ref:`Λ(INCENTER, SYMMEDIAN POINT) <X_105>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_142 <X_142>` (:ref:`COMPLEMENT OF X(9) <X_142>`)
 
 .. signature:: center
 
@@ -28,15 +37,15 @@ X(277) = ISOGONAL CONJUGATE OF X(218)
    :badge: 7 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`142 <X(142)>`}, {:ref:`3 <X(3)>`, :ref:`105 <X(105)>`}, {:ref:`7 <X(7)>`, :ref:`218 <X(218)>`}, {:ref:`57 <X(57)>`, :ref:`169 <X(169)>`}, {:ref:`220 <X(220)>`, 1086}, {:ref:`241 <X(241)>`, :ref:`278 <X(278)>`}, {:ref:`942 <X(942)>`, 1002}
+   {:ref:`1 <X_1>`, :ref:`142 <X_142>`}, {:ref:`3 <X_3>`, :ref:`105 <X_105>`}, {:ref:`7 <X_7>`, :ref:`218 <X_218>`}, {:ref:`57 <X_57>`, :ref:`169 <X_169>`}, {:ref:`220 <X_220>`, 1086}, {:ref:`241 <X_241>`, :ref:`278 <X_278>`}, {:ref:`942 <X_942>`, 1002}
 
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X(277) <X(277)>` = isogonal conjugate of :ref:`X(218) <X(218)>`
-   * :ref:`X(277) <X(277)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(344) <X(344)>`
-   * :ref:`X(277) <X(277)>` = :ref:`X(55) <X(55)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(7) <X(7)>`
-   * :ref:`X(277) <X(277)>` = :term:`trilinear pole <trilinear-pole>` of de Longchamps line of :term:`intouch triangle <intouch-triangle>`
+   * :ref:`X_277 <X_277>` = isogonal conjugate of :ref:`X_218 <X_218>`
+   * :ref:`X_277 <X_277>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_344 <X_344>`
+   * :ref:`X_277 <X_277>` = :ref:`X_55 <X_55>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_7 <X_7>`
+   * :ref:`X_277 <X_277>` = :term:`trilinear pole <trilinear-pole>` of de Longchamps line of :term:`intouch triangle <intouch-triangle>`
 
 .. toctree::
    :hidden:

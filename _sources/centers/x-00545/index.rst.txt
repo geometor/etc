@@ -1,22 +1,31 @@
 :order: 545
 :type: center
-:canonical_id: X(545)
-:dependencies: X(2), X(30), X(44), X(45), X(63), X(190), X(321), X(511), X(514), X(519), X(1227), X(1266), X(2161), X(2384), X(35121), X(35168)
+:canonical_id: X_545
+:subtitle: DIRECTION OF VECTOR AX + BX + CX, where X = X_190
+:dependencies: X_2, X_30, X_44, X_45, X_63, X_321, X_511, X_514, X_519, X_1227, X_1266, X_2161, X_2384, X_35121, X_35168
 
-.. _X(545):
+.. _X_545:
 
-X(545) = DIRECTION OF VECTOR AX + BX + CX, where X = X(190)
-===========================================================
+X_545
+=====
+
+.. rubric:: DIRECTION OF VECTOR AX + BX + CX, where X = X_190
 
 .. enunciation::
 
-   :ref:`X(545) <X(545)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(2384)
+   :ref:`X_545 <X_545>` = :ref:`X_514 <X_514>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X_519 <X_519>`
 
 .. figure:: x-00545.svg
-   :alt: X(545) = DIRECTION OF VECTOR AX + BX + CX, where X = X(190)
+   :alt: X_545 — DIRECTION OF VECTOR AX + BX + CX, where X = X_190
    :align: center
 
-   **X(545) = DIRECTION OF VECTOR AX + BX + CX, where X = X(190)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_545** (*DIRECTION OF VECTOR AX + BX + CX, where X = X_190*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 45} <{ 2, 45 }>`, :g:`{30, 511} <{ 30, 511 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_45 <X_45>` (:ref:`-BETH CONJUGATE OF X(1) <X_45>`), :g:`X_30 <X_30>` (:ref:`EULER INFINITY POINT <X_30>`), :g:`X_511 <X_511>` (:ref:`ISOGONAL CONJUGATE OF X(98) <X_511>`)
 
 .. signature:: center
 
@@ -25,22 +34,22 @@ X(545) = DIRECTION OF VECTOR AX + BX + CX, where X = X(190)
 
 .. container:: note-item
 
-   :ref:`X(545) <X(545)>` lies on the line at infinity.
+   :ref:`X_545 <X_545>` lies on the line at infinity.
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`45 <X(45)>`}, {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}, {:ref:`44 <X(44)>`, 1266}, {:ref:`63 <X(63)>`, 2161}, {:ref:`321 <X(321)>`, 1227}
+   {:ref:`2 <X_2>`, :ref:`45 <X_45>`}, {:ref:`30 <X_30>`, :ref:`511 <X_511>`}, {:ref:`44 <X_44>`, 1266}, {:ref:`63 <X_63>`, 2161}, {:ref:`321 <X_321>`, 1227}
 
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X(545) <X(545)>` = isogonal conjugate of X(2384)
-   * :ref:`X(545) <X(545)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(35168)
-   * :ref:`X(545) <X(545)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(35121)
-   * :ref:`X(545) <X(545)>` = :ref:`X(514) <X(514)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(519) <X(519)>`
-   * :ref:`X(545) <X(545)>` = perspector of circumconic centered at X(35121)
+   * :ref:`X_545 <X_545>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2384
+   * :ref:`X_545 <X_545>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_35168
+   * :ref:`X_545 <X_545>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of X_35121
+   * :ref:`X_545 <X_545>` = :ref:`X_514 <X_514>`-Hirst inverse of :ref:`X_519 <X_519>`
+   * :ref:`X_545 <X_545>` = perspector of circumconic centered at X_35121
 
 .. toctree::
    :hidden:

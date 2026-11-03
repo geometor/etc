@@ -1,22 +1,31 @@
 :order: 705
 :type: center
-:canonical_id: X(705)
-:dependencies: X(704), X(35527)
+:canonical_id: X_705
+:subtitle: EVEN (- 4, 1) CIRCUMCIRCLE POINT
+:dependencies: X_704, X_35527
 
-.. _X(705):
+.. _X_705:
 
-X(705) = EVEN (- 4, 1) CIRCUMCIRCLE POINT
-=========================================
+X_705
+=====
+
+.. rubric:: EVEN (- 4, 1) CIRCUMCIRCLE POINT
 
 .. enunciation::
 
-   :ref:`X(705) <X(705)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(704) <X(704)>`
+   :ref:`X_705 <X_705>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_704 <X_704>`
 
 .. figure:: x-00705.svg
-   :alt: X(705) = EVEN (- 4, 1) CIRCUMCIRCLE POINT
+   :alt: X_705 — EVEN (- 4, 1) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(705) = EVEN (- 4, 1) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_705** (*EVEN (- 4, 1) CIRCUMCIRCLE POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`)
+   * **Related Centers:** :g:`X_704 <X_704>` (:ref:`EVEN (- 4, 1) INFINITY POINT <X_704>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`)
 
 .. signature:: center
 
@@ -26,13 +35,13 @@ X(705) = EVEN (- 4, 1) CIRCUMCIRCLE POINT
 
 .. container:: note-item
 
-   :ref:`X(705) <X(705)>` lies on the circumcircle.
+   :ref:`X_705 <X_705>` lies on the circumcircle.
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(705) <X(705)>` = isogonal conjugate of :ref:`X(704) <X(704)>`
-   * :ref:`X(705) <X(705)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(35527)
+   * :ref:`X_705 <X_705>` = isogonal conjugate of :ref:`X_704 <X_704>`
+   * :ref:`X_705 <X_705>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_35527
 
 .. toctree::
    :hidden:

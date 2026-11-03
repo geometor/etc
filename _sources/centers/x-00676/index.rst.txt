@@ -1,22 +1,31 @@
 :order: 676
 :type: center
-:canonical_id: X(676)
-:dependencies: X(2), X(3), X(6), X(11), X(25), X(101), X(105), X(108), X(230), X(231), X(244), X(518), X(521), X(659), X(677), X(926), X(928), X(942), X(1566)
+:canonical_id: X_676
+:subtitle: CROSSDIFFERENCE OF X_3 AND X_101
+:dependencies: X_2, X_3, X_6, X_11, X_25, X_101, X_105, X_108, X_230, X_231, X_244, X_518, X_521, X_659, X_677, X_926, X_928, X_942, X_1566
 
-.. _X(676):
+.. _X_676:
 
-X(676) = CROSSDIFFERENCE OF X(3) AND X(101)
-===========================================
+X_676
+=====
+
+.. rubric:: CROSSDIFFERENCE OF X_3 AND X_101
 
 .. enunciation::
 
-   :ref:`X(676) <X(676)>` = radical center of the circumcircle, nine-point circle, and incircle (Wilson Stothers, 3/31/2003)
+   :ref:`X_676 <X_676>` = :term:`crosspoint <crosspoint>` of :ref:`X_105 <X_105>` and :ref:`X_108 <X_108>`
 
 .. figure:: x-00676.svg
-   :alt: X(676) = CROSSDIFFERENCE OF X(3) AND X(101)
+   :alt: X_676 — CROSSDIFFERENCE OF X_3 AND X_101
    :align: center
 
-   **X(676) = CROSSDIFFERENCE OF X(3) AND X(101)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_676** (*CROSSDIFFERENCE OF X_3 AND X_101*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{11, 244} <{ 11, 244 }>`, :g:`{230, 231} <{ 230, 231 }>`
+   * **Related Centers:** :g:`X_677 <X_677>` (:ref:`TRILINEAR POLE OF LINE X(3)X(101) <X_677>`), :g:`X_11 <X_11>` (:ref:`FEUERBACH POINT <X_11>`), :g:`X_244 <X_244>` (:ref:`-LINE CONJUGATE OF X(100) <X_244>`), :g:`X_230 <X_230>` (:ref:`-CEVA CONJUGATE OF X(114) <X_230>`), :g:`X_231 <X_231>` (:ref:`-CEVA CONJUGATE OF X(128) <X_231>`)
 
 .. signature:: center
 
@@ -28,22 +37,22 @@ X(676) = CROSSDIFFERENCE OF X(3) AND X(101)
    :badge: 4 lines
    :class: line-catalog
 
-   {:ref:`11 <X(11)>`, :ref:`244 <X(244)>`}, {:ref:`105 <X(105)>`, :ref:`659 <X(659)>`}, {:ref:`230 <X(230)>`, :ref:`231 <X(231)>`}, {:ref:`928 <X(928)>`, :ref:`942 <X(942)>`}
+   {:ref:`11 <X_11>`, :ref:`244 <X_244>`}, {:ref:`105 <X_105>`, :ref:`659 <X_659>`}, {:ref:`230 <X_230>`, :ref:`231 <X_231>`}, {:ref:`928 <X_928>`, :ref:`942 <X_942>`}
 
 .. collapse:: Functional Relations
    :badge: 11 relations
 
-   * :ref:`X(676) <X(676)>` = radical center of the circumcircle, nine-point circle, and incircle (Wilson Stothers, 3/31/2003)
-   * :ref:`X(676) <X(676)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(677) <X(677)>`
-   * :ref:`X(676) <X(676)>` = :term:`crosspoint <crosspoint>` of :ref:`X(105) <X(105)>` and :ref:`X(108) <X(108)>`
-   * :ref:`X(676) <X(676)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`6 <X(6)>`, :ref:`926 <X(926)>`), (:ref:`518 <X(518)>`, :ref:`521 <X(521)>`)
-   * :ref:`X(676) <X(676)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(3) <X(3)>`\ \ :ref:`X(101) <X(101)>`
-   * :ref:`X(676) <X(676)>` = circumcenter of :ref:`X(11) <X(11)>`\ \ :ref:`X(105) <X(105)>`\ \ :ref:`X(108) <X(108)>`
-   * :ref:`X(676) <X(676)>` = intersection of tangents to circumcircle at :ref:`X(105) <X(105)>` and :ref:`X(108) <X(108)>`, and to nine-point-circle at :ref:`X(11) <X(11)>`
-   * :ref:`X(676) <X(676)>` = pole of line :ref:`X(25) <X(25)>`\ \ :ref:`X(105) <X(105)>` wrt circumcircle
-   * :ref:`X(676) <X(676)>` = perspector of circumconic centered at X(1566)
-   * :ref:`X(676) <X(676)>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through X(1566)
-   * :ref:`X(676) <X(676)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(1566)
+   * :ref:`X_676 <X_676>` = radical center of the circumcircle, nine-point circle, and incircle (Wilson Stothers, 3/31/2003)
+   * :ref:`X_676 <X_676>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_677 <X_677>`
+   * :ref:`X_676 <X_676>` = crosspoint of :ref:`X_105 <X_105>` and :ref:`X_108 <X_108>`
+   * :ref:`X_676 <X_676>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`926 <X_926>`), (:ref:`518 <X_518>`, :ref:`521 <X_521>`)
+   * :ref:`X_676 <X_676>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_3 <X_3>`\ \ :ref:`X_101 <X_101>`
+   * :ref:`X_676 <X_676>` = circumcenter of :ref:`X_11 <X_11>`\ \ :ref:`X_105 <X_105>`\ \ :ref:`X_108 <X_108>`
+   * :ref:`X_676 <X_676>` = intersection of tangents to circumcircle at :ref:`X_105 <X_105>` and :ref:`X_108 <X_108>`, and to nine-point-circle at :ref:`X_11 <X_11>`
+   * :ref:`X_676 <X_676>` = pole of line :ref:`X_25 <X_25>`\ \ :ref:`X_105 <X_105>` wrt circumcircle
+   * :ref:`X_676 <X_676>` = perspector of circumconic centered at X_1566
+   * :ref:`X_676 <X_676>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through X_1566
+   * :ref:`X_676 <X_676>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of X_1566
 
 .. toctree::
    :hidden:

@@ -1,18 +1,21 @@
-:canonical_id: X(954)
+:canonical_id: X_954
 :type: code
+:subtitle: INTERSECTION OF LINES X_1X_6 AND X_3X_7
 
-X(954) = INTERSECTION OF LINES X(1)X(6) AND X(3)X(7) — Code
-===========================================================
+X_954
+=====
+
+.. rubric:: INTERSECTION OF LINES X_1X_6 AND X_3X_7
 
 .. enunciation::
 
-   :ref:`X(954) <X(954)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(955) <X(955)>`
+   :ref:`X_954 <X_954>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_955 <X_955>`
 
 .. figure:: x-00954.svg
-   :alt: X(954) = INTERSECTION OF LINES X(1)X(6) AND X(3)X(7)
+   :alt: X_954 — INTERSECTION OF LINES X_1X_6 AND X_3X_7
    :align: center
 
-   **X(954) = INTERSECTION OF LINES X(1)X(6) AND X(3)X(7)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_954** (*INTERSECTION OF LINES X_1X_6 AND X_3X_7*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

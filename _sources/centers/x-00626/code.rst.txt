@@ -1,18 +1,21 @@
-:canonical_id: X(626)
+:canonical_id: X_626
 :type: code
+:subtitle: COMPLEMENT OF X_32
 
-X(626) = COMPLEMENT OF X(32) — Code
-===================================
+X_626
+=====
+
+.. rubric:: COMPLEMENT OF X_32
 
 .. enunciation::
 
-   :ref:`X(626) <X(626)>` is the center of the inellipse that is the barycentric square of the de Longchamps line. The Brianchon point (perspector) of the inellipse is X(1502). (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
+   :ref:`X_626 <X_626>` is the :term:`complement <complement>` of :ref:`X_32 <X_32>`.
 
 .. figure:: x-00626.svg
-   :alt: X(626) = COMPLEMENT OF X(32)
+   :alt: X_626 — COMPLEMENT OF X_32
    :align: center
 
-   **X(626) = COMPLEMENT OF X(32)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_626** (*COMPLEMENT OF X_32*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,22 +1,31 @@
 :order: 90
 :type: center
-:canonical_id: X(90)
-:dependencies: X(1), X(2), X(3), X(4), X(9), X(21), X(33), X(35), X(36), X(40), X(46), X(47), X(57), X(79), X(80), X(84), X(155), X(224), X(20930)
+:canonical_id: X_90
+:subtitle: X_3-CROSS CONJUGATE OF X_1
+:dependencies: X_1, X_2, X_3, X_4, X_9, X_21, X_33, X_35, X_36, X_40, X_46, X_47, X_57, X_79, X_80, X_84, X_155, X_224, X_20930
 
-.. _X(90):
+.. _X_90:
 
-X(90) = X(3)-CROSS CONJUGATE OF X(1)
-====================================
+X_90
+====
+
+.. rubric:: X_3-CROSS CONJUGATE OF X_1
 
 .. enunciation::
 
-   :ref:`X(90) <X(90)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(46) <X(46)>`
+   :ref:`X_90 <X_90>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_46 <X_46>`
 
 .. figure:: x-00090.svg
-   :alt: X(90) = X(3)-CROSS CONJUGATE OF X(1)
+   :alt: X_90 — X_3-CROSS CONJUGATE OF X_1
    :align: center
 
-   **X(90) = X(3)-CROSS CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_90** (*X_3-CROSS CONJUGATE OF X_1*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{9, 35} <{ 9, 35 }>`, :g:`{4, 46} <{ 4, 46 }>`
+   * **Related Centers:** :g:`X_46 <X_46>` (:ref:`-CEVA CONJUGATE OF X(1) <X_46>`), :g:`X_9 <X_9>` (:ref:`MITTENPUNKT <X_9>`), :g:`X_35 <X_35>` (:ref:`{X <X_35>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`)
 
 .. signature:: center
 
@@ -32,25 +41,25 @@ X(90) = X(3)-CROSS CONJUGATE OF X(1)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(90) <X(90)>` = :math:`(r + R)^{2}` :ref:`X(1) <X(1)>` - :math:`6rR` :ref:`X(2) <X(2)>` - :math:`2r(r - R)` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
+   * :ref:`X_90 <X_90>` = :math:`(r + R)^{2}` :ref:`X_1 <X_1>` - :math:`6rR` :ref:`X_2 <X_2>` - :math:`2r(r - R)` :ref:`X_3 <X_3>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`155 <X(155)>`}, {:ref:`4 <X(4)>`, :ref:`46 <X(46)>`}, {:ref:`9 <X(9)>`, :ref:`35 <X(35)>`}, {:ref:`21 <X(21)>`, :ref:`224 <X(224)>`}, {:ref:`33 <X(33)>`, :ref:`47 <X(47)>`}, {:ref:`36 <X(36)>`, :ref:`84 <X(84)>`}, {:ref:`40 <X(40)>`, :ref:`80 <X(80)>`}, {:ref:`57 <X(57)>`, :ref:`79 <X(79)>`}
+   {:ref:`1 <X_1>`, :ref:`155 <X_155>`}, {:ref:`4 <X_4>`, :ref:`46 <X_46>`}, {:ref:`9 <X_9>`, :ref:`35 <X_35>`}, {:ref:`21 <X_21>`, :ref:`224 <X_224>`}, {:ref:`33 <X_33>`, :ref:`47 <X_47>`}, {:ref:`36 <X_36>`, :ref:`84 <X_84>`}, {:ref:`40 <X_40>`, :ref:`80 <X_80>`}, {:ref:`57 <X_57>`, :ref:`79 <X_79>`}
 
 .. collapse:: Functional Relations
    :badge: 8 relations
 
-   * :ref:`X(90) <X(90)>` = isogonal conjugate of :ref:`X(46) <X(46)>`
-   * :ref:`X(90) <X(90)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(20930)
-   * :ref:`X(90) <X(90)>` = :ref:`X(3) <X(3)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(1) <X(1)>`
-   * :ref:`X(90) <X(90)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(46) <X(46)>`
-   * :ref:`X(90) <X(90)>` = trilinear product of the extraversions of :ref:`X(46) <X(46)>`, which is also the cross-triangle of the orthic and :term:`excentral triangles <excentral-triangle>`
-   * :ref:`X(90) <X(90)>` = trilinear product of PU(125)
-   * :ref:`X(90) <X(90)>` = Cundy-Parry Phi transform of :ref:`X(90) <X(90)>`
-   * :ref:`X(90) <X(90)>` = Cundy-Parry Psi transform of :ref:`X(46) <X(46)>`
+   * :ref:`X_90 <X_90>` = isogonal conjugate of :ref:`X_46 <X_46>`
+   * :ref:`X_90 <X_90>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_20930
+   * :ref:`X_90 <X_90>` = :ref:`X_3 <X_3>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_1 <X_1>`
+   * :ref:`X_90 <X_90>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X_46 <X_46>`
+   * :ref:`X_90 <X_90>` = trilinear product of the extraversions of :ref:`X_46 <X_46>`, which is also the cross-triangle of the orthic and :term:`excentral triangles <excentral-triangle>`
+   * :ref:`X_90 <X_90>` = trilinear product of PU(125)
+   * :ref:`X_90 <X_90>` = Cundy-Parry Phi transform of :ref:`X_90 <X_90>`
+   * :ref:`X_90 <X_90>` = Cundy-Parry Psi transform of :ref:`X_46 <X_46>`
 
 .. toctree::
    :hidden:

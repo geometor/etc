@@ -1,18 +1,21 @@
-:canonical_id: X(215)
+:canonical_id: X_215
 :type: code
+:subtitle: X_1-CEVA CONJUGATE OF X_50
 
-X(215) = X(1)-CEVA CONJUGATE OF X(50) — Code
-============================================
+X_215
+=====
+
+.. rubric:: X_1-CEVA CONJUGATE OF X_50
 
 .. enunciation::
 
-   :ref:`X(215) <X(215)>` is the insimilicenter of the incircle and the sine-triple-angle circle. (:person:`Randy Hutson <randy-hutson>`, December 14, 2014)
+   :ref:`X_215 <X_215>` is the insimilicenter of the incircle and the sine-triple-angle circle. (:person:`Randy Hutson <randy-hutson>`, December 14, 2014)
 
 .. figure:: x-00215.svg
-   :alt: X(215) = X(1)-CEVA CONJUGATE OF X(50)
+   :alt: X_215 — X_1-CEVA CONJUGATE OF X_50
    :align: center
 
-   **X(215) = X(1)-CEVA CONJUGATE OF X(50)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_215** (*X_1-CEVA CONJUGATE OF X_50*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../_static/css/styles.css?v=69acf51f" />
+  <link rel="stylesheet" type="text/css" href="../_static/css/styles.css?v=66998e95" />
   <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -76,7 +76,7 @@
         </div>
         <div class="book-header-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../log/26.302-183300/index.html" title="ETC Semantic Parser, Apparatus Registries &amp; Multi-Triangle Codex Builder">&larr; <span class="nav-label">Prev</span></a>
+            <a class="book-nav-btn" href="../mission/index.html" title="mission">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
           </div>
@@ -86,6 +86,34 @@
         </div>
       </header>
       <div class="content body book-content" role="main">
+        <style id="etc-heading-styles">
+        .book-reading-pane .book-content h1,
+        .folio-book-page h1 {
+            position: relative;
+            text-align: center !important;
+            text-indent: 0 !important;
+            margin-bottom: 0.35rem !important;
+        }
+        .book-reading-pane .book-content h1 a.headerlink,
+        .book-reading-pane .book-content h2 a.headerlink,
+        .folio-book-page h1 a.headerlink,
+        .folio-book-page h2 a.headerlink {
+            position: absolute;
+        }
+        .book-reading-pane .book-content p.rubric,
+        .folio-book-page p.rubric {
+            font-style: normal !important;
+            font-weight: 700 !important;
+            text-align: center !important;
+            text-indent: 0 !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            margin-top: 0 !important;
+            margin-bottom: 1.4rem !important;
+        }
+        </style>
         <section class="level-1" id="modules">
         <h1>modules<a class="headerlink" href="#modules" title="Link to this heading">¶</a></h1>
         </section>
@@ -127,19 +155,19 @@
         <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
         <table class="autosummary longtable docutils align-default">
         <tbody>
-        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.ingest_folder" title="geometor.etc.ingest_folder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ingest_folder</span></code></a>(→ dict[str, Any])</p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.ingest_folder" title="geometor.etc.ingest_folder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ingest_folder</span></code></a>(input_folder, output_folder) → dict[str, Any]</p></td>
         <td><p>Ingest all ETC volume HTML files in <cite>input_folder</cite> and write split files to <cite>output_folder</cite>.</p></td>
         </tr>
-        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.parse_center" title="geometor.etc.parse_center"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_center</span></code></a>(→ dict[str, Any] | None)</p></td>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.parse_center" title="geometor.etc.parse_center"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_center</span></code></a>(html_content) → dict[str, Any] | None</p></td>
         <td><p>Parse a center's HTML content into a rich structured dictionary.</p></td>
         </tr>
-        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.generate_rst_files" title="geometor.etc.generate_rst_files"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_rst_files</span></code></a>(→ None)</p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.generate_rst_files" title="geometor.etc.generate_rst_files"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_rst_files</span></code></a>(centers, output_dir[, ...]) → None</p></td>
         <td><p>Generate per-center folders (<cite>x-NNNNN/</cite>) with <cite>index.rst</cite>, <cite>code.rst</cite>, <cite>model.py</cite>, SVGs, and <cite>geometor.model</cite> JSONs.</p></td>
         </tr>
-        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.extract_glossary_terms" title="geometor.etc.extract_glossary_terms"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extract_glossary_terms</span></code></a>(→ dict[str, Any])</p></td>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.extract_glossary_terms" title="geometor.etc.extract_glossary_terms"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extract_glossary_terms</span></code></a>(html_content) → dict[str, Any]</p></td>
         <td><p>Extract all glossary terms, their rich RST bodies, and plain-text summaries from GLOSSARY HTML.</p></td>
         </tr>
-        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.generate_glossary_rst" title="geometor.etc.generate_glossary_rst"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_glossary_rst</span></code></a>(→ str)</p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.generate_glossary_rst" title="geometor.etc.generate_glossary_rst"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_glossary_rst</span></code></a>(terms[, intro_rst, valid_centers]) → str</p></td>
         <td><p>Generate rich <cite>docsrc/glossary.rst</cite> with deterministic <cite>#term-&lt;slug&gt;</cite> anchors.</p></td>
         </tr>
         </tbody>
@@ -186,7 +214,7 @@
         <div class="book-footer-ornament">&#10086;</div>
         <div class="book-footer-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../log/26.302-183300/index.html" title="ETC Semantic Parser, Apparatus Registries &amp; Multi-Triangle Codex Builder">&larr; <span class="nav-label">ETC Semantic Parser, Apparatus Registries & Multi-Triangle Codex Builder</span></a>
+            <a class="book-nav-btn" href="../mission/index.html" title="mission">&larr; <span class="nav-label">mission</span></a>
           </div>
           <div class="book-nav-center">
             <a class="book-toc-link" href="../index.html">geometor • etc</a>
@@ -267,11 +295,11 @@
 
   <script src="../_static/jquery.js?v=5d32c60e"></script>
   <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../_static/documentation_options.js?v=fd825880"></script>
+  <script src="../_static/documentation_options.js?v=59fadc99"></script>
   <script src="../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="../_static/js/geometor_interactive.js?v=4430a5d4"></script>
+  <script src="../_static/js/geometor_interactive.js?v=b2892320"></script>
   <script src="../_static/js/search_highlight.js"></script>
 
 </body>

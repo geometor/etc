@@ -1,18 +1,21 @@
-:canonical_id: X(828)
+:canonical_id: X_828
 :type: code
+:subtitle: CROSSPOINT OF X_2 AND X_255
 
-X(828) = CROSSPOINT OF X(2) AND X(255) — Code
-=============================================
+X_828
+=====
+
+.. rubric:: CROSSPOINT OF X_2 AND X_255
 
 .. enunciation::
 
-   :ref:`X(828) <X(828)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(829) <X(829)>`
+   :ref:`X_828 <X_828>` is the :term:`crosspoint <crosspoint>` of :ref:`X_2 <X_2>` and :ref:`X_255 <X_255>`.
 
 .. figure:: x-00828.svg
-   :alt: X(828) = CROSSPOINT OF X(2) AND X(255)
+   :alt: X_828 — CROSSPOINT OF X_2 AND X_255
    :align: center
 
-   **X(828) = CROSSPOINT OF X(2) AND X(255)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_828** (*CROSSPOINT OF X_2 AND X_255*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

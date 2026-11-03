@@ -1,18 +1,17 @@
-:canonical_id: X(433)
+:canonical_id: X_433
 :type: code
+:subtitle: EULER X_159-6th-SUBSTITUTION POINT
 
-X(433) = EULER X(159)-6th-SUBSTITUTION POINT — Code
-===================================================
+X_433
+=====
 
-.. enunciation::
-
-   As a point on the Euler line, :ref:`X(433) <X(433)>` has Shinagawa coefficients :math:`(4(E + F)^{3}F^{2} - E^{2}FS^{2}, (E + F)[4(E + F)^{3}F - (E + 8F)ES^{2}])`.
+.. rubric:: EULER X_159-6th-SUBSTITUTION POINT
 
 .. figure:: x-00433.svg
-   :alt: X(433) = EULER X(159)-6th-SUBSTITUTION POINT
+   :alt: X_433 — EULER X_159-6th-SUBSTITUTION POINT
    :align: center
 
-   **X(433) = EULER X(159)-6th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_433** (*EULER X_159-6th-SUBSTITUTION POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,23 +1,32 @@
 :order: 481
 :type: center
-:canonical_id: X(481)
-:dependencies: X(1), X(7), X(54), X(79), X(174), X(175), X(176), X(226), X(482), X(485), X(1127), X(1373), X(32058)
+:canonical_id: X_481
+:subtitle: 1st EPPSTEIN POINT
+:dependencies: X_1, X_7, X_54, X_79, X_174, X_175, X_176, X_226, X_482, X_485, X_1127, X_1373, X_32058
 
-.. _X(481):
+.. _X_481:
 .. _FirstEppsteinPoint:
 
-X(481) = 1st EPPSTEIN POINT
-===========================
+X_481
+=====
+
+.. rubric:: 1st EPPSTEIN POINT
 
 .. enunciation::
 
-   Let S be the inner Soddy circle and :math:`S_{A}`, :math:`S_{B}`, :math:`S_{C}` the Soddy circles tangent to S. Let :g:`I_{a} <I_a>` = S∩\ :math:`S_{A}`, :g:`E_{a} <E_a>` = :math:`S_{B}`\ ∩\ :math:`S_{C}`, and determine :g:`I_{b} <I_b>`, :g:`I_{c} <I_c>`, :g:`E_{b} <E_b>`, :g:`E_{c} <E_c>` cyclically. Then :ref:`X(481) <X(481)>` is the point of concurrence of lines :g:`I_{A} <I_A>`-to-:g:`E_{A} <E_A>`, :g:`I_{B} <I_B>`-to-:g:`E_{B} <E_B>`, :g:`I_{C} <I_C>`-to-:g:`E_{C} <E_C>`.
+   Let S be the inner Soddy circle and :math:`S_{A}`, :math:`S_{B}`, :math:`S_{C}` the Soddy circles tangent to S. Let :g:`I_{a} <I_a>` = S∩\ :math:`S_{A}`, :g:`E_{a} <E_a>` = :math:`S_{B}`\ ∩\ :math:`S_{C}`, and determine :g:`I_{b} <I_b>`, :g:`I_{c} <I_c>`, :g:`E_{b} <E_b>`, :g:`E_{c} <E_c>` cyclically. Then :ref:`X_481 <X_481>` is the point of concurrence of lines :g:`I_{A} <I_A>`-to-:g:`E_{A} <E_A>`, :g:`I_{B} <I_B>`-to-:g:`E_{B} <E_B>`, :g:`I_{C} <I_C>`-to-:g:`E_{C} <E_C>`.
 
 .. figure:: x-00481.svg
-   :alt: X(481) = 1st EPPSTEIN POINT
+   :alt: X_481 — 1st EPPSTEIN POINT
    :align: center
 
-   **X(481) = 1st EPPSTEIN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_481** (*1st EPPSTEIN POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 7} <{ 1, 7 }>`, :g:`{226, 485} <{ 226, 485 }>`
+   * **Related Centers:** :g:`X_79 <X_79>` (:ref:`ISOGONAL CONJUGATE OF X(35) <X_79>`), :g:`X_482 <X_482>` (:ref:`2nd EPPSTEIN POINT <X_482>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_7 <X_7>` (:ref:`GERGONNE POINT <X_7>`), :g:`X_226 <X_226>` (:ref:`-CEVA CONJUGATE OF X(65) <X_226>`), :g:`X_485 <X_485>` (:ref:`VECTEN POINT <X_485>`)
 
 .. signature:: center
 
@@ -32,25 +41,25 @@ X(481) = 1st EPPSTEIN POINT
 .. collapse:: Linear Combinations
    :badge: 3 combinations
 
-   * :ref:`X(481) <X(481)>` = :math:`s` :ref:`X(1) <X(1)>` - :math:`(r + 4R)` :ref:`X(7) <X(7)>`
-   * :ref:`X(481) <X(481)>` = :g:`A <A>` / :math:`R_{a}` + :g:`B <B>` / :math:`R_{b}` + :g:`C <C>` / :math:`R_{c}` - :ref:`X(1) <X(1)>` / :math:`r`, where :math:`R_{a}`, :math:`R_{b}`, :math:`R_{c}` = radii of Soddy circles
-   * :ref:`X(481) <X(481)>` = :g:`A <A>` / :math:`R_{a}` + :g:`B <B>` / :math:`R_{b}` + :g:`C <C>` / :math:`R_{c}` + :ref:`X(175) <X(175)>` / :math:`R_{s}'`, where :math:`R_{a}`, :math:`R_{b}`, :math:`R_{c}` = radii of Soddy circles, and :math:`R_{s}'` = radius of outer Soddy circle
+   * :ref:`X_481 <X_481>` = :math:`s` :ref:`X_1 <X_1>` - :math:`(r + 4R)` :ref:`X_7 <X_7>`
+   * :ref:`X_481 <X_481>` = :g:`A <A>` / :math:`R_{a}` + :g:`B <B>` / :math:`R_{b}` + :g:`C <C>` / :math:`R_{c}` - :ref:`X_1 <X_1>` / :math:`r`, where :math:`R_{a}`, :math:`R_{b}`, :math:`R_{c}` = radii of Soddy circles
+   * :ref:`X_481 <X_481>` = :g:`A <A>` / :math:`R_{a}` + :g:`B <B>` / :math:`R_{b}` + :g:`C <C>` / :math:`R_{c}` + :ref:`X_175 <X_175>` / :math:`R_{s}'`, where :math:`R_{a}`, :math:`R_{b}`, :math:`R_{c}` = radii of Soddy circles, and :math:`R_{s}'` = radius of outer Soddy circle
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`7 <X(7)>`}, {:ref:`174 <X(174)>`, 1127}, {:ref:`226 <X(226)>`, :ref:`485 <X(485)>`}
+   {:ref:`1 <X_1>`, :ref:`7 <X_7>`}, {:ref:`174 <X_174>`, 1127}, {:ref:`226 <X_226>`, :ref:`485 <X_485>`}
 
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X(481) <X(481)>` = :ref:`X(79) <X(79)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(482) <X(482)>`
-   * :ref:`X(481) <X(481)>` = Kosnita(:ref:`X(175) <X(175)>`,\ :ref:`X(1) <X(1)>`) point; see :ref:`X(54) <X(54)>`
-   * :ref:`X(481) <X(481)>` = Kosnita(:ref:`X(175) <X(175)>`,\ :ref:`X(7) <X(7)>`) point
-   * :ref:`X(481) <X(481)>` = Kosnita(:ref:`X(176) <X(176)>`,\ :ref:`X(175) <X(175)>`) point
-   * :ref:`X(481) <X(481)>` = {:ref:`X(7) <X(7)>`,\ :ref:`X(176) <X(176)>`}-harmonic conjugate of X(1373)
-   * :ref:`X(481) <X(481)>` = 2nd-outer-Soddy-:term:`isogonal conjugate <isogonal-conjugate>` of X(32058)
+   * :ref:`X_481 <X_481>` = :ref:`X_79 <X_79>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_482 <X_482>`
+   * :ref:`X_481 <X_481>` = Kosnita(:ref:`X_175 <X_175>`,\ :ref:`X_1 <X_1>`) point; see :ref:`X_54 <X_54>`
+   * :ref:`X_481 <X_481>` = Kosnita(:ref:`X_175 <X_175>`,\ :ref:`X_7 <X_7>`) point
+   * :ref:`X_481 <X_481>` = Kosnita(:ref:`X_176 <X_176>`,\ :ref:`X_175 <X_175>`) point
+   * :ref:`X_481 <X_481>` = {:ref:`X_7 <X_7>`,\ :ref:`X_176 <X_176>`}-harmonic conjugate of X_1373
+   * :ref:`X_481 <X_481>` = 2nd-outer-Soddy-:term:`isogonal conjugate <isogonal-conjugate>` of X_32058
 
 Notes
 -----
@@ -61,11 +70,11 @@ Notes
 
 .. container:: note-item
 
-   Let S' be the outer Soddy center, :ref:`X(175) <X(175)>`. :ref:`X(481) <X(481)>` is the point of concurrence of the Soddy lines of :g:`BS'C << B S' C >>`, :g:`CS'A << C S' A >>`, and :g:`AS'B << A S' B >>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
+   Let :g:`S' <S'>` be the outer Soddy center, :ref:`X_175 <X_175>`. :ref:`X_481 <X_481>` is the point of concurrence of the Soddy lines of :g:`BS'C << B S' C >>`, :g:`CS'A << C S' A >>`, and :g:`AS'B << A S' B >>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
 
 .. container:: note-item
 
-   Let :g:`L_{a} <L_a>` be the line tangent to the outer Soddy circle at the touchpoint with the A-Soddy circle. Define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>` and define :g:`B' <B'>` and C'cyclically. Triangle :g:`A'B'C' << A' B' C' >>`, here introduced as the outer Soddy :term:`tangential triangle <tangential-triangle>`, is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X(481) <X(481)>`. (Randy Hutson, September 14, 2016)
+   Let :g:`L_{a} <L_a>` be the line tangent to the outer Soddy circle at the touchpoint with the A-Soddy circle. Define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>` and define :g:`B' <B'>` and C'cyclically. Triangle :g:`A'B'C' << A' B' C' >>`, here introduced as the outer Soddy :term:`tangential triangle <tangential-triangle>`, is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X_481 <X_481>`. (Randy Hutson, September 14, 2016)
 
 .. toctree::
    :hidden:

@@ -1,22 +1,31 @@
 :order: 522
 :type: center
-:canonical_id: X(522)
-:dependencies: X(1), X(2), X(3), X(4), X(6), X(7), X(8), X(9), X(10), X(11), X(21), X(30), X(31), X(41), X(48), X(55), X(65), X(74), X(75), X(92), X(100), X(101), X(102), X(103), X(104), X(105), X(106), X(107), X(108), X(109), X(110), X(111), X(112), X(124), X(142), X(190), X(240), X(243), X(511), X(513), X(514), X(515), X(519), X(528), X(603), X(649), X(650), X(651), X(652), X(653), X(655), X(656), X(657), X(663), X(664), X(666), X(692), X(693), X(918), X(929), X(1026), X(1027), X(1090), X(1146), X(1266), X(1275), X(1292), X(1293), X(1294), X(1295), X(1296), X(1309), X(1317), X(1364), X(1415), X(1459), X(1639), X(1944), X(2310), X(2397), X(2400), X(2402), X(2490), X(2496), X(2526), X(2689), X(2695), X(2716), X(2723), X(2730), X(2731), X(2732), X(2733), X(2734), X(2735), X(2751), X(2757), X(2762), X(2765), X(2768), X(2769), X(2968), X(3004), X(3063), X(3126), X(3261), X(3287), X(3319), X(3326), X(3509), X(32660)
+:canonical_id: X_522
+:subtitle: ISOGONAL CONJUGATE OF X_109
+:dependencies: X_1, X_2, X_3, X_4, X_6, X_7, X_8, X_9, X_10, X_11, X_21, X_30, X_31, X_41, X_48, X_55, X_65, X_74, X_75, X_92, X_100, X_101, X_102, X_103, X_104, X_105, X_106, X_107, X_108, X_109, X_110, X_111, X_112, X_124, X_142, X_190, X_240, X_243, X_511, X_513, X_514, X_515, X_519, X_528, X_603, X_649, X_650, X_651, X_652, X_653, X_655, X_656, X_657, X_663, X_664, X_666, X_692, X_693, X_918, X_929, X_1026, X_1027, X_1090, X_1146, X_1266, X_1275, X_1292, X_1293, X_1294, X_1295, X_1296, X_1309, X_1317, X_1364, X_1415, X_1459, X_1639, X_1944, X_2310, X_2397, X_2400, X_2402, X_2490, X_2496, X_2526, X_2689, X_2695, X_2716, X_2723, X_2730, X_2731, X_2732, X_2733, X_2734, X_2735, X_2751, X_2757, X_2762, X_2765, X_2768, X_2769, X_2968, X_3004, X_3063, X_3126, X_3261, X_3287, X_3319, X_3326, X_3509, X_32660
 
-.. _X(522):
+.. _X_522:
 
-X(522) = ISOGONAL CONJUGATE OF X(109)
-=====================================
+X_522
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_109
 
 .. enunciation::
 
-   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X(522) <X(522)>` lies on the line at infinity.
+   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X_522 <X_522>` lies on the line at infinity.
 
 .. figure:: x-00522.svg
-   :alt: X(522) = ISOGONAL CONJUGATE OF X(109)
+   :alt: X_522 — ISOGONAL CONJUGATE OF X_109
    :align: center
 
-   **X(522) = ISOGONAL CONJUGATE OF X(109)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_522** (*ISOGONAL CONJUGATE OF X_109*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{30, 511} <{ 30, 511 }>`, :g:`{9, 657} <{ 9, 657 }>`
+   * **Related Centers:** :g:`X_109 <X_109>` (:ref:`Ψ(INCENTER, CIRCUMCENTER) <X_109>`), :g:`X_30 <X_30>` (:ref:`EULER INFINITY POINT <X_30>`), :g:`X_511 <X_511>` (:ref:`ISOGONAL CONJUGATE OF X(98) <X_511>`), :g:`X_9 <X_9>` (:ref:`MITTENPUNKT <X_9>`), :g:`X_657 <X_657>` (:ref:`CROSSDIFFERENCE OF X(1) AND X(7) <X_657>`)
 
 .. signature:: center
 
@@ -26,7 +35,7 @@ X(522) = ISOGONAL CONJUGATE OF X(109)
 .. collapse:: Alternate Coordinates
    :badge: 3 forms
 
-   * **Trilinears:** :math:`d(a,b,c) : :`, where d(a,b,c) = directed distance from :g:`A <A>` to line :ref:`X(1) <X(1)>`\ \ :ref:`X(3) <X(3)>`
+   * **Trilinears:** :math:`d(a,b,c) : :`, where d(a,b,c) = directed distance from :g:`A <A>` to line :ref:`X_1 <X_1>`\ \ :ref:`X_3 <X_3>`
    * **Barycentrics:** :math:`(b - c)(b + c - a) : :`
    * **Barycentrics:** :math:`\tan B/2 - \tan C/2 : :`
 
@@ -34,36 +43,36 @@ X(522) = ISOGONAL CONJUGATE OF X(109)
    :badge: 42 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, 1459}, {:ref:`7 <X(7)>`, 2400}, {:ref:`9 <X(9)>`, :ref:`657 <X(657)>`}, {:ref:`11 <X(11)>`, 3326}, {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}, {:ref:`74 <X(74)>`, 2695}, {:ref:`75 <X(75)>`, 3261}, {:ref:`100 <X(100)>`, :ref:`655 <X(655)>`}, {:ref:`101 <X(101)>`, :ref:`929 <X(929)>`}, {:ref:`102 <X(102)>`, 2734}, {:ref:`103 <X(103)>`, 2723}, {:ref:`104 <X(104)>`, 2716}, {:ref:`105 <X(105)>`, 2751}, {:ref:`106 <X(106)>`, 2757}, {:ref:`107 <X(107)>`, 2762}, {:ref:`108 <X(108)>`, 2765}, {:ref:`109 <X(109)>`, 1309}, {:ref:`110 <X(110)>`, 2689}, {:ref:`111 <X(111)>`, 2768}, {:ref:`112 <X(112)>`, 2769}, {:ref:`124 <X(124)>`, 2968}, {:ref:`142 <X(142)>`, 3126}, {:ref:`190 <X(190)>`, :ref:`666 <X(666)>`}, {:ref:`240 <X(240)>`, :ref:`656 <X(656)>`}, {:ref:`243 <X(243)>`, :ref:`652 <X(652)>`}, {:ref:`649 <X(649)>`, 3509}, {:ref:`650 <X(650)>`, 1639}, {:ref:`663 <X(663)>`, 1944}, {:ref:`664 <X(664)>`, 1275}, {:ref:`693 <X(693)>`, 1266}, {1026, 2397}, {1027, 2402}, {1090, 2310}, {1292, 2730}, {1293, 2731}, {1294, 2732}, {1295, 2733}, {1296, 2735}, {1317, 3319}, {2490, 2496}, {2526, 3004}, {3063, 3287}
+   {:ref:`1 <X_1>`, 1459}, {:ref:`7 <X_7>`, 2400}, {:ref:`9 <X_9>`, :ref:`657 <X_657>`}, {:ref:`11 <X_11>`, 3326}, {:ref:`30 <X_30>`, :ref:`511 <X_511>`}, {:ref:`74 <X_74>`, 2695}, {:ref:`75 <X_75>`, 3261}, {:ref:`100 <X_100>`, :ref:`655 <X_655>`}, {:ref:`101 <X_101>`, :ref:`929 <X_929>`}, {:ref:`102 <X_102>`, 2734}, {:ref:`103 <X_103>`, 2723}, {:ref:`104 <X_104>`, 2716}, {:ref:`105 <X_105>`, 2751}, {:ref:`106 <X_106>`, 2757}, {:ref:`107 <X_107>`, 2762}, {:ref:`108 <X_108>`, 2765}, {:ref:`109 <X_109>`, 1309}, {:ref:`110 <X_110>`, 2689}, {:ref:`111 <X_111>`, 2768}, {:ref:`112 <X_112>`, 2769}, {:ref:`124 <X_124>`, 2968}, {:ref:`142 <X_142>`, 3126}, {:ref:`190 <X_190>`, :ref:`666 <X_666>`}, {:ref:`240 <X_240>`, :ref:`656 <X_656>`}, {:ref:`243 <X_243>`, :ref:`652 <X_652>`}, {:ref:`649 <X_649>`, 3509}, {:ref:`650 <X_650>`, 1639}, {:ref:`663 <X_663>`, 1944}, {:ref:`664 <X_664>`, 1275}, {:ref:`693 <X_693>`, 1266}, {1026, 2397}, {1027, 2402}, {1090, 2310}, {1292, 2730}, {1293, 2731}, {1294, 2732}, {1295, 2733}, {1296, 2735}, {1317, 3319}, {2490, 2496}, {2526, 3004}, {3063, 3287}
 
 .. collapse:: Functional Relations
    :badge: 25 relations
 
-   * :ref:`X(522) <X(522)>` = isogonal conjugate of :ref:`X(109) <X(109)>`
-   * :ref:`X(522) <X(522)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(664) <X(664)>`
-   * :ref:`X(522) <X(522)>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X(124) <X(124)>`
-   * :ref:`X(522) <X(522)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`4 <X(4)>`, :ref:`124 <X(124)>`), (:ref:`8 <X(8)>`, :ref:`11 <X(11)>`), (:ref:`100 <X(100)>`, :ref:`10 <X(10)>`), (:ref:`190 <X(190)>`, :ref:`9 <X(9)>`)
-   * :ref:`X(522) <X(522)>` = :ref:`X(11) <X(11)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(8) <X(8)>`
-   * :ref:`X(522) <X(522)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`21 <X(21)>`, :ref:`100 <X(100)>`), (:ref:`75 <X(75)>`, :ref:`190 <X(190)>`)
-   * :ref:`X(522) <X(522)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`6 <X(6)>`, :ref:`663 <X(663)>`), (:ref:`31 <X(31)>`, :ref:`649 <X(649)>`), (:ref:`55 <X(55)>`, :ref:`652 <X(652)>`), (:ref:`65 <X(65)>`, :ref:`513 <X(513)>`), (:ref:`603 <X(603)>`, 1459), (:ref:`692 <X(692)>`, 1415)
-   * :ref:`X(522) <X(522)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(6) <X(6)>`\ \ :ref:`X(41) <X(41)>`
-   * :ref:`X(522) <X(522)>` = :term:`orthopoint <orthopoint>` of :ref:`X(515) <X(515)>`
-   * :ref:`X(522) <X(522)>` = X(i)-:term:`Hirst inverse <hirst-inverse>` of X(j) for these (i,j): (:ref:`514 <X(514)>`, :ref:`918 <X(918)>`), (:ref:`519 <X(519)>`, :ref:`528 <X(528)>`)
-   * :ref:`X(522) <X(522)>` = isotomic conjugate of :ref:`X(664) <X(664)>`
-   * :ref:`X(522) <X(522)>` = bicentric difference of PU(i) for these i: 20, 129
-   * :ref:`X(522) <X(522)>` = ideal point of PU(i) for these i: 20, 129
-   * :ref:`X(522) <X(522)>` = perspector of circumconic centered at X(1146)
-   * :ref:`X(522) <X(522)>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through X(1146)
-   * :ref:`X(522) <X(522)>` = :ref:`X(2) <X(2)>`-Ceva conjugate of X(1146)
-   * :ref:`X(522) <X(522)>` = trilinear pole of line :ref:`X(11) <X(11)>`\ X(1146)
-   * :ref:`X(522) <X(522)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(653) <X(653)>`
-   * :ref:`X(522) <X(522)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X(653) <X(653)>`
-   * :ref:`X(522) <X(522)>` = :ref:`X(6) <X(6)>`-isoconjugate of :ref:`X(651) <X(651)>`
-   * :ref:`X(522) <X(522)>` = extouch isogonal conjugate of X(1364)
-   * :ref:`X(522) <X(522)>` = Thomson-isogonal conjugate of :ref:`X(102) <X(102)>`
-   * :ref:`X(522) <X(522)>` = Lucas-isogonal conjugate of :ref:`X(102) <X(102)>`
-   * :ref:`X(522) <X(522)>` = barycentric square root of X(1146)
-   * :ref:`X(522) <X(522)>` = :ref:`X(92) <X(92)>`-isoconjugate of X(32660)
+   * :ref:`X_522 <X_522>` = isogonal conjugate of :ref:`X_109 <X_109>`
+   * :ref:`X_522 <X_522>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_664 <X_664>`
+   * :ref:`X_522 <X_522>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X_124 <X_124>`
+   * :ref:`X_522 <X_522>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`124 <X_124>`), (:ref:`8 <X_8>`, :ref:`11 <X_11>`), (:ref:`100 <X_100>`, :ref:`10 <X_10>`), (:ref:`190 <X_190>`, :ref:`9 <X_9>`)
+   * :ref:`X_522 <X_522>` = :ref:`X_11 <X_11>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_8 <X_8>`
+   * :ref:`X_522 <X_522>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`21 <X_21>`, :ref:`100 <X_100>`), (:ref:`75 <X_75>`, :ref:`190 <X_190>`)
+   * :ref:`X_522 <X_522>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`663 <X_663>`), (:ref:`31 <X_31>`, :ref:`649 <X_649>`), (:ref:`55 <X_55>`, :ref:`652 <X_652>`), (:ref:`65 <X_65>`, :ref:`513 <X_513>`), (:ref:`603 <X_603>`, 1459), (:ref:`692 <X_692>`, 1415)
+   * :ref:`X_522 <X_522>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_6 <X_6>`\ \ :ref:`X_41 <X_41>`
+   * :ref:`X_522 <X_522>` = :term:`orthopoint <orthopoint>` of :ref:`X_515 <X_515>`
+   * :ref:`X_522 <X_522>` = X_i-:term:`Hirst inverse <hirst-inverse>` of X_j for these (i,j): (:ref:`514 <X_514>`, :ref:`918 <X_918>`), (:ref:`519 <X_519>`, :ref:`528 <X_528>`)
+   * :ref:`X_522 <X_522>` = isotomic conjugate of :ref:`X_664 <X_664>`
+   * :ref:`X_522 <X_522>` = bicentric difference of PU(i) for these i: 20, 129
+   * :ref:`X_522 <X_522>` = ideal point of PU(i) for these i: 20, 129
+   * :ref:`X_522 <X_522>` = perspector of circumconic centered at X_1146
+   * :ref:`X_522 <X_522>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through X_1146
+   * :ref:`X_522 <X_522>` = :ref:`X_2 <X_2>`-Ceva conjugate of X_1146
+   * :ref:`X_522 <X_522>` = trilinear pole of line :ref:`X_11 <X_11>`\ X_1146
+   * :ref:`X_522 <X_522>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_653 <X_653>`
+   * :ref:`X_522 <X_522>` = :ref:`X_48 <X_48>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X_653 <X_653>`
+   * :ref:`X_522 <X_522>` = :ref:`X_6 <X_6>`-isoconjugate of :ref:`X_651 <X_651>`
+   * :ref:`X_522 <X_522>` = extouch isogonal conjugate of X_1364
+   * :ref:`X_522 <X_522>` = Thomson-isogonal conjugate of :ref:`X_102 <X_102>`
+   * :ref:`X_522 <X_522>` = Lucas-isogonal conjugate of :ref:`X_102 <X_102>`
+   * :ref:`X_522 <X_522>` = barycentric square root of X_1146
+   * :ref:`X_522 <X_522>` = :ref:`X_92 <X_92>`-isoconjugate of X_32660
 
 .. toctree::
    :hidden:

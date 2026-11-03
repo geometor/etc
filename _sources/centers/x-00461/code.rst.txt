@@ -1,18 +1,17 @@
-:canonical_id: X(461)
+:canonical_id: X_461
 :type: code
+:subtitle: EULER LINE INTERCEPT OF LINE X_33X_200
 
-X(461) = EULER LINE INTERCEPT OF LINE X(33)X(200) — Code
-========================================================
+X_461
+=====
 
-.. enunciation::
-
-   As a point on the Euler line, :ref:`X(461) <X(461)>` has Shinagawa coefficients :math:`(2F,\$bc\$ - E - F)`.
+.. rubric:: EULER LINE INTERCEPT OF LINE X_33X_200
 
 .. figure:: x-00461.svg
-   :alt: X(461) = EULER LINE INTERCEPT OF LINE X(33)X(200)
+   :alt: X_461 — EULER LINE INTERCEPT OF LINE X_33X_200
    :align: center
 
-   **X(461) = EULER LINE INTERCEPT OF LINE X(33)X(200)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_461** (*EULER LINE INTERCEPT OF LINE X_33X_200*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,18 +1,21 @@
-:canonical_id: X(922)
+:canonical_id: X_922
 :type: code
+:subtitle: POINT ALBALI
 
-X(922) = POINT ALBALI — Code
-============================
+X_922
+=====
+
+.. rubric:: POINT ALBALI
 
 .. enunciation::
 
-   :ref:`X(922) <X(922)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(896) <X(896)>`
+   :ref:`X_922 <X_922>` = trilinear product of PU(107)
 
 .. figure:: x-00922.svg
-   :alt: X(922) = POINT ALBALI
+   :alt: X_922 — POINT ALBALI
    :align: center
 
-   **X(922) = POINT ALBALI** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_922** (*POINT ALBALI*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,18 +1,21 @@
-:canonical_id: X(644)
+:canonical_id: X_644
 :type: code
+:subtitle: TRILINEAR MULTIPLIER FOR YFF PARABOLA
 
-X(644) = TRILINEAR MULTIPLIER FOR YFF PARABOLA — Code
-=====================================================
+X_644
+=====
+
+.. rubric:: TRILINEAR MULTIPLIER FOR YFF PARABOLA
 
 .. enunciation::
 
-   :ref:`X(644) <X(644)>` is the perspector of the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(100) <X(100)>` and the :term:`unary cofactor triangle <unary-cofactor-triangle>` of the intangents triangle. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
+   :ref:`X_644 <X_644>` satisfies the equation :g:`X* <X*>`\ (incircle) = Yff parabola, where \* denotes trilinear multiplication, defined by
 
 .. figure:: x-00644.svg
-   :alt: X(644) = TRILINEAR MULTIPLIER FOR YFF PARABOLA
+   :alt: X_644 — TRILINEAR MULTIPLIER FOR YFF PARABOLA
    :align: center
 
-   **X(644) = TRILINEAR MULTIPLIER FOR YFF PARABOLA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_644** (*TRILINEAR MULTIPLIER FOR YFF PARABOLA*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

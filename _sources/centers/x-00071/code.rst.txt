@@ -1,18 +1,21 @@
-:canonical_id: X(71)
+:canonical_id: X_71
 :type: code
+:subtitle: ISOGONAL CONJUGATE OF X_27
 
-X(71) = ISOGONAL CONJUGATE OF X(27) — Code
-==========================================
+X_71
+====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_27
 
 .. enunciation::
 
-   :ref:`X(71) <X(71)>` is the intersection of the :term:`isotomic conjugate <isotomic-conjugate>` of the polar conjugate of the Nagel line (i.e., line :ref:`X(63) <X(63)>`\ \ :ref:`X(69) <X(69)>`), and the polar conjugate of the isotomic conjugate of the Nagel line (i.e., line :ref:`X(4) <X(4)>`\ \ :ref:`X(9) <X(9)>`). (:person:`Randy Hutson <randy-hutson>`, July 11, 2019)
+   :ref:`X_71 <X_71>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_27 <X_27>`.
 
 .. figure:: x-00071.svg
-   :alt: X(71) = ISOGONAL CONJUGATE OF X(27)
+   :alt: X_71 — ISOGONAL CONJUGATE OF X_27
    :align: center
 
-   **X(71) = ISOGONAL CONJUGATE OF X(27)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_71** (*ISOGONAL CONJUGATE OF X_27*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

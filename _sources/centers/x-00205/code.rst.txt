@@ -1,18 +1,21 @@
-:canonical_id: X(205)
+:canonical_id: X_205
 :type: code
+:subtitle: X_9-CEVA CONJUGATE OF X_31
 
-X(205) = X(9)-CEVA CONJUGATE OF X(31) — Code
-============================================
+X_205
+=====
+
+.. rubric:: X_9-CEVA CONJUGATE OF X_31
 
 .. enunciation::
 
-   :ref:`X(205) <X(205)>` = :ref:`X(9) <X(9)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(31) <X(31)>`
+   :ref:`X_205 <X_205>` = :ref:`X_9 <X_9>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_31 <X_31>`
 
 .. figure:: x-00205.svg
-   :alt: X(205) = X(9)-CEVA CONJUGATE OF X(31)
+   :alt: X_205 — X_9-CEVA CONJUGATE OF X_31
    :align: center
 
-   **X(205) = X(9)-CEVA CONJUGATE OF X(31)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_205** (*X_9-CEVA CONJUGATE OF X_31*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

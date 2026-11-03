@@ -1,18 +1,21 @@
-:canonical_id: X(764)
+:canonical_id: X_764
 :type: code
+:subtitle: TRILINEAR CUBE OF X_513
 
-X(764) = TRILINEAR CUBE OF X(513) — Code
-========================================
+X_764
+=====
+
+.. rubric:: TRILINEAR CUBE OF X_513
 
 .. enunciation::
 
-   :ref:`X(764) <X(764)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :term:`isogonal conjugate <isogonal-conjugate>` of X(8027)
+   :ref:`X_764 <X_764>` = :term:`crosspoint <crosspoint>` of :ref:`X_244 <X_244>` and :ref:`X_513 <X_513>`
 
 .. figure:: x-00764.svg
-   :alt: X(764) = TRILINEAR CUBE OF X(513)
+   :alt: X_764 — TRILINEAR CUBE OF X_513
    :align: center
 
-   **X(764) = TRILINEAR CUBE OF X(513)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_764** (*TRILINEAR CUBE OF X_513*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

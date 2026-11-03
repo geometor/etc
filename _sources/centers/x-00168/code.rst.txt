@@ -1,18 +1,21 @@
-:canonical_id: X(168)
+:canonical_id: X_168
 :type: code
+:subtitle: MITTENPUNKT OF EXCENTRAL TRIANGLE
 
-X(168) = MITTENPUNKT OF EXCENTRAL TRIANGLE — Code
-=================================================
+X_168
+=====
+
+.. rubric:: MITTENPUNKT OF EXCENTRAL TRIANGLE
 
 .. enunciation::
 
-   :ref:`X(168) <X(168)>` = :ref:`X(188) <X(188)>`-:term:`aleph conjugate <aleph-conjugate>` of :ref:`X(363) <X(363)>`
+   :ref:`X_168 <X_168>` = :ref:`X_9 <X_9>`-of-:term:`excentral triangle <excentral-triangle>`
 
 .. figure:: x-00168.svg
-   :alt: X(168) = MITTENPUNKT OF EXCENTRAL TRIANGLE
+   :alt: X_168 — MITTENPUNKT OF EXCENTRAL TRIANGLE
    :align: center
 
-   **X(168) = MITTENPUNKT OF EXCENTRAL TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_168** (*MITTENPUNKT OF EXCENTRAL TRIANGLE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

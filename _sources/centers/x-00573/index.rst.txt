@@ -1,22 +1,31 @@
 :order: 573
 :type: center
-:canonical_id: X(573)
-:dependencies: X(1), X(3), X(4), X(6), X(9), X(10), X(11), X(20), X(36), X(37), X(43), X(51), X(55), X(58), X(59), X(101), X(102), X(109), X(165), X(181), X(184), X(190), X(199), X(216), X(256), X(333), X(346), X(347), X(386), X(391), X(478), X(517), X(523), X(572), X(604), X(649), X(941), X(981), X(991), X(1011), X(1018), X(1020), X(1459), X(5179), X(13478)
+:canonical_id: X_573
+:subtitle: ORTHOHARMONIC OF X_58
+:dependencies: X_1, X_3, X_4, X_6, X_9, X_10, X_11, X_20, X_36, X_37, X_43, X_51, X_55, X_58, X_59, X_101, X_102, X_109, X_165, X_181, X_184, X_190, X_199, X_216, X_256, X_333, X_346, X_347, X_386, X_391, X_478, X_517, X_523, X_572, X_604, X_649, X_941, X_981, X_991, X_1011, X_1018, X_1020, X_1459, X_5179, X_13478
 
-.. _X(573):
+.. _X_573:
 
-X(573) = ORTHOHARMONIC OF X(58)
-===============================
+X_573
+=====
+
+.. rubric:: ORTHOHARMONIC OF X_58
 
 .. enunciation::
 
-   :ref:`X(573) <X(573)>` is the internal center of similitude of the circumcircle and Apollonius circle. The external center is :ref:`X(386) <X(386)>`. (Peter J. C. Moses, 8/22/03)
+   :ref:`X_573 <X_573>` = inverse-in-Brocard-circle of :ref:`X_572 <X_572>`
 
 .. figure:: x-00573.svg
-   :alt: X(573) = ORTHOHARMONIC OF X(58)
+   :alt: X_573 — ORTHOHARMONIC OF X_58
    :align: center
 
-   **X(573) = ORTHOHARMONIC OF X(58)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_573** (*ORTHOHARMONIC OF X_58*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{991, 3} <{ 991, 3 }>`
+   * **Related Centers:** :g:`X_991 <X_991>` (:ref:`INTERSECTION OF LINES X <X_991>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`)
 
 .. signature:: center
 
@@ -33,36 +42,40 @@ X(573) = ORTHOHARMONIC OF X(58)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(573) <X(573)>` = :math:`s` :ref:`X(3) <X(3)>` - :math:`r \cot(\omega )` :ref:`X(6) <X(6)>`
+   * :ref:`X_573 <X_573>` = :math:`s` :ref:`X_3 <X_3>` - :math:`r \cot(\omega )` :ref:`X_6 <X_6>`
 
 .. collapse:: Incident Central Lines
    :badge: 16 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`941 <X(941)>`}, {:ref:`3 <X(3)>`, :ref:`6 <X(6)>`}, {:ref:`4 <X(4)>`, :ref:`9 <X(9)>`}, {:ref:`10 <X(10)>`, 5179}, {:ref:`20 <X(20)>`, :ref:`391 <X(391)>`}, {:ref:`36 <X(36)>`, :ref:`604 <X(604)>`}, {:ref:`37 <X(37)>`, :ref:`517 <X(517)>`}, {:ref:`43 <X(43)>`, :ref:`165 <X(165)>`}, {:ref:`51 <X(51)>`, 1011}, {:ref:`55 <X(55)>`, :ref:`181 <X(181)>`}, {:ref:`101 <X(101)>`, :ref:`102 <X(102)>`}, {:ref:`109 <X(109)>`, :ref:`478 <X(478)>`}, {:ref:`184 <X(184)>`, :ref:`199 <X(199)>`}, {:ref:`256 <X(256)>`, :ref:`981 <X(981)>`}, {:ref:`346 <X(346)>`, 1018}, {:ref:`347 <X(347)>`, 1020}
+   {:ref:`1 <X_1>`, :ref:`941 <X_941>`}, {:ref:`3 <X_3>`, :ref:`6 <X_6>`}, {:ref:`4 <X_4>`, :ref:`9 <X_9>`}, {:ref:`10 <X_10>`, 5179}, {:ref:`20 <X_20>`, :ref:`391 <X_391>`}, {:ref:`36 <X_36>`, :ref:`604 <X_604>`}, {:ref:`37 <X_37>`, :ref:`517 <X_517>`}, {:ref:`43 <X_43>`, :ref:`165 <X_165>`}, {:ref:`51 <X_51>`, 1011}, {:ref:`55 <X_55>`, :ref:`181 <X_181>`}, {:ref:`101 <X_101>`, :ref:`102 <X_102>`}, {:ref:`109 <X_109>`, :ref:`478 <X_478>`}, {:ref:`184 <X_184>`, :ref:`199 <X_199>`}, {:ref:`256 <X_256>`, :ref:`981 <X_981>`}, {:ref:`346 <X_346>`, 1018}, {:ref:`347 <X_347>`, 1020}
 
 .. collapse:: Functional Relations
    :badge: 12 relations
 
-   * :ref:`X(573) <X(573)>` = reflection of :ref:`X(991) <X(991)>` in :ref:`X(3) <X(3)>`
-   * :ref:`X(573) <X(573)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(13478)
-   * :ref:`X(573) <X(573)>` = inverse-in-Brocard-circle of :ref:`X(572) <X(572)>`
-   * :ref:`X(573) <X(573)>` = :ref:`X(333) <X(333)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(1) <X(1)>`
-   * :ref:`X(573) <X(573)>` = :term:`crosspoint <crosspoint>` of :ref:`X(59) <X(59)>` and :ref:`X(190) <X(190)>`
-   * :ref:`X(573) <X(573)>` = :term:`crosssum <crosssum>` of :ref:`X(11) <X(11)>` and :ref:`X(649) <X(649)>`
-   * :ref:`X(573) <X(573)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(523) <X(523)>`\ X(1459)
-   * :ref:`X(573) <X(573)>` = :ref:`X(216) <X(216)>`-of-excentral-triangle
-   * :ref:`X(573) <X(573)>` = perspector, wrt :term:`excentral triangle <excentral-triangle>`, of the excentral-hexyl ellipse
-   * :ref:`X(573) <X(573)>` = inverse-in-excircles-radical-circle of X(5179)
-   * :ref:`X(573) <X(573)>` = Cundy-Parry Phi transform of :ref:`X(58) <X(58)>`
-   * :ref:`X(573) <X(573)>` = Cundy-Parry Psi transform of :ref:`X(10) <X(10)>`
+   * :ref:`X_573 <X_573>` = reflection of :ref:`X_991 <X_991>` in :ref:`X_3 <X_3>`
+   * :ref:`X_573 <X_573>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_13478
+   * :ref:`X_573 <X_573>` = inverse-in-Brocard-circle of :ref:`X_572 <X_572>`
+   * :ref:`X_573 <X_573>` = :ref:`X_333 <X_333>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_1 <X_1>`
+   * :ref:`X_573 <X_573>` = :term:`crosspoint <crosspoint>` of :ref:`X_59 <X_59>` and :ref:`X_190 <X_190>`
+   * :ref:`X_573 <X_573>` = :term:`crosssum <crosssum>` of :ref:`X_11 <X_11>` and :ref:`X_649 <X_649>`
+   * :ref:`X_573 <X_573>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_523 <X_523>`\ X_1459
+   * :ref:`X_573 <X_573>` = :ref:`X_216 <X_216>`-of-excentral-triangle
+   * :ref:`X_573 <X_573>` = perspector, wrt :term:`excentral triangle <excentral-triangle>`, of the excentral-hexyl ellipse
+   * :ref:`X_573 <X_573>` = inverse-in-excircles-radical-circle of X_5179
+   * :ref:`X_573 <X_573>` = Cundy-Parry Phi transform of :ref:`X_58 <X_58>`
+   * :ref:`X_573 <X_573>` = Cundy-Parry Psi transform of :ref:`X_10 <X_10>`
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let :g:`A' <A'>` be the inverse-in-excircles-radical-circle of the midpoint of :g:`BC <[ B C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Triangle :g:`A'B'C' << A' B' C' >>` is inscribed in the Apollonius circle and homothetic to the 1st circumperp triangle at :ref:`X(573) <X(573)>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
+   :ref:`X_573 <X_573>` is the internal center of similitude of the circumcircle and Apollonius circle. The external center is :ref:`X_386 <X_386>`. (Peter J. C. Moses, 8/22/03)
+
+.. container:: note-item
+
+   Let :g:`A' <A'>` be the inverse-in-excircles-radical-circle of the midpoint of :g:`BC <[ B C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Triangle :g:`A'B'C' << A' B' C' >>` is inscribed in the Apollonius circle and homothetic to the 1st circumperp triangle at :ref:`X_573 <X_573>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
 
 .. toctree::
    :hidden:

@@ -1,18 +1,21 @@
-:canonical_id: X(469)
+:canonical_id: X_469
 :type: code
+:subtitle: EULER LINE INTERCEPT OF LINE X_92X_264
 
-X(469) = EULER LINE INTERCEPT OF LINE X(92)X(264) — Code
-========================================================
+X_469
+=====
+
+.. rubric:: EULER LINE INTERCEPT OF LINE X_92X_264
 
 .. enunciation::
 
-   :ref:`X(469) <X(469)>` is the {:ref:`X(2) <X(2)>`,\ :ref:`X(4) <X(4)>`}-harmonic conjugate of :ref:`X(27) <X(27)>`.
+   :ref:`X_469 <X_469>` = inverse-in-orthocentroidal-circle of :ref:`X_27 <X_27>`
 
 .. figure:: x-00469.svg
-   :alt: X(469) = EULER LINE INTERCEPT OF LINE X(92)X(264)
+   :alt: X_469 — EULER LINE INTERCEPT OF LINE X_92X_264
    :align: center
 
-   **X(469) = EULER LINE INTERCEPT OF LINE X(92)X(264)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_469** (*EULER LINE INTERCEPT OF LINE X_92X_264*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

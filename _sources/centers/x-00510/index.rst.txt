@@ -1,21 +1,24 @@
 :order: 510
 :type: center
-:canonical_id: X(510)
+:canonical_id: X_510
+:subtitle: 8th ISOSCELIZER POINT
 
-.. _X(510):
+.. _X_510:
 
-X(510) = 8th ISOSCELIZER POINT
-==============================
+X_510
+=====
+
+.. rubric:: 8th ISOSCELIZER POINT
 
 .. enunciation::
 
-   have solution :g:`X <X>` = :ref:`X(510) <X(510)>`. (:person:`Peter Yff <peter-yff>`, 4/9/99)
+   The :term:`isoscelizer <isoscelizer>` equations
 
 .. figure:: x-00510.svg
-   :alt: X(510) = 8th ISOSCELIZER POINT
+   :alt: X_510 — 8th ISOSCELIZER POINT
    :align: center
 
-   **X(510) = 8th ISOSCELIZER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_510** (*8th ISOSCELIZER POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -27,9 +30,11 @@ Notes
 
 .. container:: note-item
 
-   The :term:`isoscelizer <isoscelizer>` equations
+   [area of T(A,X)]/:math:`a^{2}` = [area of T(B,X)]/:math:`b^{2}` = [area of T(C,X)]/:math:`c^{2}`
 
-      [area of T(A,X)]/:math:`a^{2}` = [area of T(B,X)]/:math:`b^{2}` = [area of T(C,X)]/:math:`c^{2}`
+.. container:: note-item
+
+   have solution :g:`X <X>` = :ref:`X_510 <X_510>`. (:person:`Peter Yff <peter-yff>`, 4/9/99)
 
 .. toctree::
    :hidden:

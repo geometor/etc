@@ -1,18 +1,21 @@
-:canonical_id: X(871)
+:canonical_id: X_871
 :type: code
+:subtitle: ISOTOMIC CONJUGATE OF X_869
 
-X(871) = ISOTOMIC CONJUGATE OF X(869) — Code
-============================================
+X_871
+=====
+
+.. rubric:: ISOTOMIC CONJUGATE OF X_869
 
 .. enunciation::
 
-   :ref:`X(871) <X(871)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(869) <X(869)>`
+   :ref:`X_871 <X_871>` is the :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_869 <X_869>`.
 
 .. figure:: x-00871.svg
-   :alt: X(871) = ISOTOMIC CONJUGATE OF X(869)
+   :alt: X_871 — ISOTOMIC CONJUGATE OF X_869
    :align: center
 
-   **X(871) = ISOTOMIC CONJUGATE OF X(869)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_871** (*ISOTOMIC CONJUGATE OF X_869*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,18 +1,21 @@
-:canonical_id: X(558)
+:canonical_id: X_558
 :type: code
+:subtitle: (X_1,X_57)-ANSWER TO QUESTION A
 
-X(558) = (X(1),X(57))-ANSWER TO QUESTION A — Code
-=================================================
+X_558
+=====
+
+.. rubric:: (X_1,X_57)-ANSWER TO QUESTION A
 
 .. enunciation::
 
-   :ref:`X(558) <X(558)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(39122)
+   :ref:`X_558 <X_558>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of X_39122
 
 .. figure:: x-00558.svg
-   :alt: X(558) = (X(1),X(57))-ANSWER TO QUESTION A
+   :alt: X_558 — (X_1,X_57)-ANSWER TO QUESTION A
    :align: center
 
-   **X(558) = (X(1),X(57))-ANSWER TO QUESTION A** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_558** (*(X_1,X_57)-ANSWER TO QUESTION A*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

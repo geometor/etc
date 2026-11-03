@@ -1,22 +1,31 @@
 :order: 782
 :type: center
-:canonical_id: X(782)
-:dependencies: X(30), X(511), X(733), X(783), X(881)
+:canonical_id: X_782
+:subtitle: ODD (- 4, 4) INFINITY POINT
+:dependencies: X_30, X_511, X_733, X_783, X_881
 
-.. _X(782):
+.. _X_782:
 
-X(782) = ODD (- 4, 4) INFINITY POINT
-====================================
+X_782
+=====
+
+.. rubric:: ODD (- 4, 4) INFINITY POINT
 
 .. enunciation::
 
-   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X(782) <X(782)>` lies on the line at infinity.
+   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X_782 <X_782>` lies on the line at infinity.
 
 .. figure:: x-00782.svg
-   :alt: X(782) = ODD (- 4, 4) INFINITY POINT
+   :alt: X_782 — ODD (- 4, 4) INFINITY POINT
    :align: center
 
-   **X(782) = ODD (- 4, 4) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_782** (*ODD (- 4, 4) INFINITY POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{30, 511} <{ 30, 511 }>`
+   * **Related Centers:** :g:`X_783 <X_783>` (:ref:`o-(- 4, 4) CIRCUMCIRCLE POINT <X_783>`), :g:`X_30 <X_30>` (:ref:`EULER INFINITY POINT <X_30>`), :g:`X_511 <X_511>` (:ref:`ISOGONAL CONJUGATE OF X(98) <X_511>`)
 
 .. signature:: center
 
@@ -27,13 +36,13 @@ X(782) = ODD (- 4, 4) INFINITY POINT
    :badge: 1 line
    :class: line-catalog
 
-   {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}
+   {:ref:`30 <X_30>`, :ref:`511 <X_511>`}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(782) <X(782)>` = isogonal conjugate of :ref:`X(783) <X(783)>`
-   * :ref:`X(782) <X(782)>` = :term:`crosssum <crosssum>` of :ref:`X(733) <X(733)>` and :ref:`X(881) <X(881)>`
+   * :ref:`X_782 <X_782>` = isogonal conjugate of :ref:`X_783 <X_783>`
+   * :ref:`X_782 <X_782>` = :term:`crosssum <crosssum>` of :ref:`X_733 <X_733>` and :ref:`X_881 <X_881>`
 
 .. toctree::
    :hidden:

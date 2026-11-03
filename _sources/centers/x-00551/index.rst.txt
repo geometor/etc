@@ -1,22 +1,31 @@
 :order: 551
 :type: center
-:canonical_id: X(551)
-:dependencies: X(1), X(2), X(8), X(10), X(13), X(14), X(30), X(37), X(56), X(86), X(99), X(142), X(148), X(214), X(226), X(299), X(354), X(376), X(381), X(392), X(514), X(515), X(516), X(517), X(518), X(527), X(535), X(537), X(547), X(549), X(553), X(597), X(616), X(619), X(622), X(676), X(946), X(952), X(993), X(1125), X(3679), X(3828), X(21251), X(21747), X(22357)
+:canonical_id: X_551
+:subtitle: MIDPOINT OF X_1 AND X_2
+:dependencies: X_1, X_2, X_8, X_10, X_13, X_14, X_30, X_37, X_56, X_86, X_99, X_142, X_148, X_214, X_226, X_299, X_354, X_376, X_381, X_392, X_514, X_515, X_516, X_517, X_518, X_527, X_535, X_537, X_547, X_549, X_553, X_597, X_616, X_619, X_622, X_676, X_946, X_952, X_993, X_1125, X_3679, X_3828, X_21251, X_21747, X_22357
 
-.. _X(551):
+.. _X_551:
 
-X(551) = MIDPOINT OF X(1) AND X(2)
-==================================
+X_551
+=====
+
+.. rubric:: MIDPOINT OF X_1 AND X_2
 
 .. enunciation::
 
-   (:person:`Antreas Hatzipolakis <antreas-hatzipolakis>`, 1/24/00, :cite:`Hyacinthos #223 <hyacinthos>`)
+   :ref:`X_551 <X_551>` is the midpoint of :ref:`X_1 <X_1>` and :ref:`X_2 <X_2>`.
 
 .. figure:: x-00551.svg
-   :alt: X(551) = MIDPOINT OF X(1) AND X(2)
+   :alt: X_551 — MIDPOINT OF X_1 AND X_2
    :align: center
 
-   **X(551) = MIDPOINT OF X(1) AND X(2)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_551** (*MIDPOINT OF X_1 AND X_2*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 2} <{ 1, 2 }>`, :g:`{86, 99} <{ 86, 99 }>`
+   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_86 <X_86>` (:ref:`CEVAPOINT OF INCENTER AND CENTROID <X_86>`), :g:`X_99 <X_99>` (:ref:`STEINER POINT <X_99>`)
 
 .. signature:: center
 
@@ -32,24 +41,31 @@ X(551) = MIDPOINT OF X(1) AND X(2)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(551) <X(551)>` = :ref:`X(1) <X(1)>` + :ref:`X(2) <X(2)>` = :math:`2` :ref:`X(8) <X(8)>` - :math:`5` :ref:`X(10) <X(10)>`
+   * :ref:`X_551 <X_551>` = :ref:`X_1 <X_1>` + :ref:`X_2 <X_2>` = :math:`2` :ref:`X_8 <X_8>` - :math:`5` :ref:`X_10 <X_10>`
 
 .. collapse:: Incident Central Lines
    :badge: 15 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`2 <X(2)>`}, {:ref:`30 <X(30)>`, :ref:`946 <X(946)>`}, {:ref:`37 <X(37)>`, :ref:`537 <X(537)>`}, {:ref:`56 <X(56)>`, :ref:`553 <X(553)>`}, {:ref:`86 <X(86)>`, :ref:`99 <X(99)>`}, {:ref:`142 <X(142)>`, :ref:`214 <X(214)>`}, {:ref:`226 <X(226)>`, :ref:`535 <X(535)>`}, {:ref:`354 <X(354)>`, :ref:`392 <X(392)>`}, {:ref:`376 <X(376)>`, :ref:`516 <X(516)>`}, {:ref:`381 <X(381)>`, :ref:`515 <X(515)>`}, {:ref:`514 <X(514)>`, :ref:`676 <X(676)>`}, {:ref:`517 <X(517)>`, :ref:`549 <X(549)>`}, {:ref:`518 <X(518)>`, :ref:`597 <X(597)>`}, {:ref:`527 <X(527)>`, :ref:`993 <X(993)>`}, {:ref:`547 <X(547)>`, :ref:`952 <X(952)>`}
+   {:ref:`1 <X_1>`, :ref:`2 <X_2>`}, {:ref:`30 <X_30>`, :ref:`946 <X_946>`}, {:ref:`37 <X_37>`, :ref:`537 <X_537>`}, {:ref:`56 <X_56>`, :ref:`553 <X_553>`}, {:ref:`86 <X_86>`, :ref:`99 <X_99>`}, {:ref:`142 <X_142>`, :ref:`214 <X_214>`}, {:ref:`226 <X_226>`, :ref:`535 <X_535>`}, {:ref:`354 <X_354>`, :ref:`392 <X_392>`}, {:ref:`376 <X_376>`, :ref:`516 <X_516>`}, {:ref:`381 <X_381>`, :ref:`515 <X_515>`}, {:ref:`514 <X_514>`, :ref:`676 <X_676>`}, {:ref:`517 <X_517>`, :ref:`549 <X_549>`}, {:ref:`518 <X_518>`, :ref:`597 <X_597>`}, {:ref:`527 <X_527>`, :ref:`993 <X_993>`}, {:ref:`547 <X_547>`, :ref:`952 <X_952>`}
 
 .. collapse:: Functional Relations
    :badge: 7 relations
 
-   * :ref:`X(551) <X(551)>` = midpoint of X(i) and X(j) for these (i,j): (:ref:`2 <X(2)>`, 1125), (:ref:`10 <X(10)>`, :ref:`2 <X(2)>`)
-   * :ref:`X(551) <X(551)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`14 <X(14)>`, :ref:`619 <X(619)>`), (:ref:`148 <X(148)>`, :ref:`13 <X(13)>`), (:ref:`616 <X(616)>`, :ref:`99 <X(99)>`), (:ref:`622 <X(622)>`, :ref:`299 <X(299)>`)
-   * :ref:`X(551) <X(551)>` = :term:`complement <complement>` of X(3679)
-   * :ref:`X(551) <X(551)>` = :term:`anticomplement <anticomplement>` of X(3828)
-   * :ref:`X(551) <X(551)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :term:`isogonal conjugate <isogonal-conjugate>` of X(21747)
-   * :ref:`X(551) <X(551)>` = :term:`complementary conjugate <complementary-conjugate>` of X(21251)
-   * :ref:`X(551) <X(551)>` = polar conjugate of isogonal conjugate of X(22357)
+   * :ref:`X_551 <X_551>` = midpoint of X_i and X_j for these (i,j): (:ref:`2 <X_2>`, 1125), (:ref:`10 <X_10>`, :ref:`2 <X_2>`)
+   * :ref:`X_551 <X_551>` = reflection of X_i in X_j for these (i,j): (:ref:`14 <X_14>`, :ref:`619 <X_619>`), (:ref:`148 <X_148>`, :ref:`13 <X_13>`), (:ref:`616 <X_616>`, :ref:`99 <X_99>`), (:ref:`622 <X_622>`, :ref:`299 <X_299>`)
+   * :ref:`X_551 <X_551>` = :term:`complement <complement>` of X_3679
+   * :ref:`X_551 <X_551>` = :term:`anticomplement <anticomplement>` of X_3828
+   * :ref:`X_551 <X_551>` = :term:`isotomic conjugate <isotomic-conjugate>` of :term:`isogonal conjugate <isogonal-conjugate>` of X_21747
+   * :ref:`X_551 <X_551>` = :term:`complementary conjugate <complementary-conjugate>` of X_21251
+   * :ref:`X_551 <X_551>` = polar conjugate of isogonal conjugate of X_22357
+
+Notes
+-----
+
+.. container:: note-item
+
+   (:person:`Antreas Hatzipolakis <antreas-hatzipolakis>`, 1/24/00, :cite:`Hyacinthos #223 <hyacinthos>`)
 
 .. toctree::
    :hidden:

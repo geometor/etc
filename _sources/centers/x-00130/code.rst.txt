@@ -1,18 +1,21 @@
-:canonical_id: X(130)
+:canonical_id: X_130
 :type: code
+:subtitle: X_99-OF-ORTHIC-TRIANGLE
 
-X(130) = X(99)-OF-ORTHIC-TRIANGLE — Code
-========================================
+X_130
+=====
+
+.. rubric:: X_99-OF-ORTHIC-TRIANGLE
 
 .. enunciation::
 
    X(130 lies on the nine-point circle
 
 .. figure:: x-00130.svg
-   :alt: X(130) = X(99)-OF-ORTHIC-TRIANGLE
+   :alt: X_130 — X_99-OF-ORTHIC-TRIANGLE
    :align: center
 
-   **X(130) = X(99)-OF-ORTHIC-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_130** (*X_99-OF-ORTHIC-TRIANGLE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,18 +1,21 @@
-:canonical_id: X(33)
+:canonical_id: X_33
 :type: code
+:subtitle: PERSPECTOR OF THE ORTHIC AND INTANGENTS TRIANGLES
 
-X(33) = PERSPECTOR OF THE ORTHIC AND INTANGENTS TRIANGLES — Code
-================================================================
+X_33
+====
+
+.. rubric:: PERSPECTOR OF THE ORTHIC AND INTANGENTS TRIANGLES
 
 .. enunciation::
 
-   Let :g:`L_{A} <L_A>` be the reflection of line :g:`BC <[ B C ]>` in the internal angle bisector of angle :g:`A <A>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`DEF << D E F >>` be the triangle formed by :g:`L_{A} <L_A>`, :g:`L_{B} <L_B>`, :g:`L_{C} <L_C>`. Then :g:`DEF << D E F >>` (the intangents triangle) is homothetic to the :term:`orthic triangle <orthic-triangle>`, and the homothetic center is :ref:`X(33) <X(33)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   :ref:`X_33 <X_33>` is the {:ref:`X_1 <X_1>`,\ :ref:`X_4 <X_4>`}-harmonic conjugate of :ref:`X_34 <X_34>`. For a list of other harmonic conjugates, click **Tables** at the top of this page.
 
 .. figure:: x-00033.svg
-   :alt: X(33) = PERSPECTOR OF THE ORTHIC AND INTANGENTS TRIANGLES
+   :alt: X_33 — PERSPECTOR OF THE ORTHIC AND INTANGENTS TRIANGLES
    :align: center
 
-   **X(33) = PERSPECTOR OF THE ORTHIC AND INTANGENTS TRIANGLES** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_33** (*PERSPECTOR OF THE ORTHIC AND INTANGENTS TRIANGLES*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

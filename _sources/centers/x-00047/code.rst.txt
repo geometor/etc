@@ -1,18 +1,21 @@
-:canonical_id: X(47)
+:canonical_id: X_47
 :type: code
+:subtitle: X_110-BETH CONJUGATE OF X_34
 
-X(47) = X(110)-BETH CONJUGATE OF X(34) — Code
-=============================================
+X_47
+====
+
+.. rubric:: X_110-BETH CONJUGATE OF X_34
 
 .. enunciation::
 
-   Let :g:`A'B'C' << A' B' C' >>` be the Kosnita triangle. Let :g:`A″ <A″>` be the trilinear product :g:`B' <B'>`\ \*\ :g:`C' <C'>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(47) <X(47)>`. (:person:`Randy Hutson <randy-hutson>`, March 21, 2019)
+   :ref:`X_47 <X_47>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X_47 <X_47>` (which is also the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X_47 <X_47>`)
 
 .. figure:: x-00047.svg
-   :alt: X(47) = X(110)-BETH CONJUGATE OF X(34)
+   :alt: X_47 — X_110-BETH CONJUGATE OF X_34
    :align: center
 
-   **X(47) = X(110)-BETH CONJUGATE OF X(34)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_47** (*X_110-BETH CONJUGATE OF X_34*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

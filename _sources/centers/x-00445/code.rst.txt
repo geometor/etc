@@ -1,18 +1,21 @@
-:canonical_id: X(445)
+:canonical_id: X_445
 :type: code
+:subtitle: EULER X_79-10th-SUBSTITUTION POINT
 
-X(445) = EULER X(79)-10th-SUBSTITUTION POINT — Code
-===================================================
+X_445
+=====
+
+.. rubric:: EULER X_79-10th-SUBSTITUTION POINT
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(445) <X(445)>` has Shinagawa coefficients :math:`((\$aS_{A}\$ + 2abc)F,\$a\$S^{2})`.
+   :ref:`X_445 <X_445>` = :term:`isotomic conjugate <isotomic-conjugate>` of the :term:`isogonal conjugate <isogonal-conjugate>` of X_44095
 
 .. figure:: x-00445.svg
-   :alt: X(445) = EULER X(79)-10th-SUBSTITUTION POINT
+   :alt: X_445 — EULER X_79-10th-SUBSTITUTION POINT
    :align: center
 
-   **X(445) = EULER X(79)-10th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_445** (*EULER X_79-10th-SUBSTITUTION POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

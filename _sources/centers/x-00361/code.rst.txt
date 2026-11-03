@@ -1,18 +1,21 @@
-:canonical_id: X(361)
+:canonical_id: X_361
 :type: code
+:subtitle: X_266-CEVA CONJUGATE OF X_1
 
-X(361) = X(266)-CEVA CONJUGATE OF X(1) — Code
-=============================================
+X_361
+=====
+
+.. rubric:: X_266-CEVA CONJUGATE OF X_1
 
 .. enunciation::
 
-   The :term:`isoscelizer <isoscelizer>` equation au(X) = bv(X) = cw(X) has solution :g:`X <X>` = :ref:`X(361) <X(361)>`.
+   The :term:`isoscelizer <isoscelizer>` equation au(X) = bv(X) = cw(X) has solution :g:`X <X>` = :ref:`X_361 <X_361>`.
 
 .. figure:: x-00361.svg
-   :alt: X(361) = X(266)-CEVA CONJUGATE OF X(1)
+   :alt: X_361 — X_266-CEVA CONJUGATE OF X_1
    :align: center
 
-   **X(361) = X(266)-CEVA CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_361** (*X_266-CEVA CONJUGATE OF X_1*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

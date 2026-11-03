@@ -1,22 +1,31 @@
 :order: 160
 :type: center
-:canonical_id: X(160)
-:dependencies: X(3), X(6), X(22), X(37), X(57), X(66), X(95), X(154), X(206), X(237), X(325), X(327), X(338), X(418), X(512), X(34845)
+:canonical_id: X_160
+:subtitle: X_37-OF-TANGENTIAL-TRIANGLE
+:dependencies: X_3, X_6, X_22, X_37, X_57, X_66, X_95, X_154, X_206, X_237, X_325, X_327, X_338, X_418, X_512, X_34845
 
-.. _X(160):
+.. _X_160:
 
-X(160) = X(37)-OF-TANGENTIAL-TRIANGLE
-=====================================
+X_160
+=====
+
+.. rubric:: X_37-OF-TANGENTIAL-TRIANGLE
 
 .. enunciation::
 
-   :ref:`X(160) <X(160)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :term:`anticomplement <anticomplement>` of :term:`complementary conjugate <complementary-conjugate>` of X(34845)
+   :ref:`X_160 <X_160>` = :ref:`X_95 <X_95>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_6 <X_6>`
 
 .. figure:: x-00160.svg
-   :alt: X(160) = X(37)-OF-TANGENTIAL-TRIANGLE
+   :alt: X_160 — X_37-OF-TANGENTIAL-TRIANGLE
    :align: center
 
-   **X(160) = X(37)-OF-TANGENTIAL-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_160** (*X_37-OF-TANGENTIAL-TRIANGLE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{3, 66} <{ 3, 66 }>`, :g:`{6, 237} <{ 6, 237 }>`
+   * **Related Centers:** :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_66 <X_66>` (:ref:`ISOGONAL CONJUGATE OF X(22) <X_66>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_237 <X_237>` (:ref:`-LINE CONJUGATE OF X(2) <X_237>`)
 
 .. signature:: center
 
@@ -28,16 +37,16 @@ X(160) = X(37)-OF-TANGENTIAL-TRIANGLE
    :badge: 6 lines
    :class: line-catalog
 
-   {:ref:`3 <X(3)>`, :ref:`66 <X(66)>`}, {:ref:`6 <X(6)>`, :ref:`237 <X(237)>`}, {:ref:`22 <X(22)>`, :ref:`325 <X(325)>`}, {:ref:`95 <X(95)>`, :ref:`327 <X(327)>`}, {:ref:`154 <X(154)>`, :ref:`418 <X(418)>`}, {:ref:`206 <X(206)>`, :ref:`57 <X(57)>`}
+   {:ref:`3 <X_3>`, :ref:`66 <X_66>`}, {:ref:`6 <X_6>`, :ref:`237 <X_237>`}, {:ref:`22 <X_22>`, :ref:`325 <X_325>`}, {:ref:`95 <X_95>`, :ref:`327 <X_327>`}, {:ref:`154 <X_154>`, :ref:`418 <X_418>`}, {:ref:`206 <X_206>`, :ref:`57 <X_57>`}
 
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X(160) <X(160)>` = isogonal conjugate of anticomplement of complementary conjugate of X(34845)
-   * :ref:`X(160) <X(160)>` = anticomplement of X(34845)
-   * :ref:`X(160) <X(160)>` = :ref:`X(95) <X(95)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(6) <X(6)>`
-   * :ref:`X(160) <X(160)>` = :term:`crosssum <crosssum>` of :ref:`X(338) <X(338)>` and :ref:`X(512) <X(512)>`
-   * :ref:`X(160) <X(160)>` = :ref:`X(37) <X(37)>`-of-:term:`tangential triangle <tangential-triangle>` if :g:`ABC << A B C >>` is acute
+   * :ref:`X_160 <X_160>` = :term:`isogonal conjugate <isogonal-conjugate>` of :term:`anticomplement <anticomplement>` of :term:`complementary conjugate <complementary-conjugate>` of X_34845
+   * :ref:`X_160 <X_160>` = anticomplement of X_34845
+   * :ref:`X_160 <X_160>` = :ref:`X_95 <X_95>`-Ceva conjugate of :ref:`X_6 <X_6>`
+   * :ref:`X_160 <X_160>` = :term:`crosssum <crosssum>` of :ref:`X_338 <X_338>` and :ref:`X_512 <X_512>`
+   * :ref:`X_160 <X_160>` = :ref:`X_37 <X_37>`-of-:term:`tangential triangle <tangential-triangle>` if :g:`ABC << A B C >>` is acute
 
 .. toctree::
    :hidden:

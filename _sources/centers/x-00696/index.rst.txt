@@ -1,22 +1,31 @@
 :order: 696
 :type: center
-:canonical_id: X(696)
-:dependencies: X(30), X(98), X(105), X(106), X(111), X(313), X(511), X(518), X(519), X(524), X(536), X(538), X(561), X(674), X(675), X(697), X(768)
+:canonical_id: X_696
+:subtitle: EVEN (- 4, - 3) INFINITY POINT
+:dependencies: X_30, X_98, X_105, X_106, X_111, X_313, X_511, X_518, X_519, X_524, X_536, X_538, X_561, X_674, X_675, X_697, X_768
 
-.. _X(696):
+.. _X_696:
 
-X(696) = EVEN (- 4, - 3) INFINITY POINT
-=======================================
+X_696
+=====
+
+.. rubric:: EVEN (- 4, - 3) INFINITY POINT
 
 .. enunciation::
 
-   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X(696) <X(696)>` lies on the line at infinity. The first trilinear coordinate has the form
+   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X_696 <X_696>` lies on the line at infinity. The first trilinear coordinate has the form
 
 .. figure:: x-00696.svg
-   :alt: X(696) = EVEN (- 4, - 3) INFINITY POINT
+   :alt: X_696 — EVEN (- 4, - 3) INFINITY POINT
    :align: center
 
-   **X(696) = EVEN (- 4, - 3) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_696** (*EVEN (- 4, - 3) INFINITY POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{30, 511} <{ 30, 511 }>`, :g:`{313, 561} <{ 313, 561 }>`
+   * **Related Centers:** :g:`X_30 <X_30>` (:ref:`EULER INFINITY POINT <X_30>`), :g:`X_511 <X_511>` (:ref:`ISOGONAL CONJUGATE OF X(98) <X_511>`), :g:`X_313 <X_313>` (:ref:`ISOTOMIC CONJUGATE OF X(58) <X_313>`), :g:`X_561 <X_561>` (:ref:`ISOGONAL CONJUGATE OF 4th POWER POINT <X_561>`)
 
 .. signature:: center
 
@@ -27,24 +36,24 @@ X(696) = EVEN (- 4, - 3) INFINITY POINT
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}, {:ref:`313 <X(313)>`, :ref:`561 <X(561)>`}
+   {:ref:`30 <X_30>`, :ref:`511 <X_511>`}, {:ref:`313 <X_313>`, :ref:`561 <X_561>`}
 
 .. collapse:: Functional Relations
    :badge: 13 relations
 
-   * :ref:`X(538) <X(538)>` = even (- 2, 0) infinity point
-   * :ref:`X(536) <X(536)>` = even (- 1, 0) infinity point
-   * :ref:`X(519) <X(519)>` = even (0, 1) infinity point
-   * :ref:`X(106) <X(106)>` = even (0, 1) circumcircle point
-   * :ref:`X(524) <X(524)>` = even (0, 2) infinity point
-   * :ref:`X(111) <X(111)>` = even (0, 2) circumcircle point
-   * :ref:`X(518) <X(518)>` = even (1, 2) infinity point
-   * :ref:`X(105) <X(105)>` = even (1, 2) circumcircle point
-   * :ref:`X(674) <X(674)>` = even (2, 3) infinity point
-   * :ref:`X(675) <X(675)>` = even (2, 3) circumcircle point
-   * :ref:`X(511) <X(511)>` = even (2, 4) infinity point
-   * :ref:`X(98) <X(98)>` = even (2, 4) circumcircle point
-   * :ref:`X(696) <X(696)>` = isogonal conjugate of :ref:`X(697) <X(697)>`\ \
+   * :ref:`X_538 <X_538>` = even (- 2, 0) infinity point
+   * :ref:`X_536 <X_536>` = even (- 1, 0) infinity point
+   * :ref:`X_519 <X_519>` = even (0, 1) infinity point
+   * :ref:`X_106 <X_106>` = even (0, 1) circumcircle point
+   * :ref:`X_524 <X_524>` = even (0, 2) infinity point
+   * :ref:`X_111 <X_111>` = even (0, 2) circumcircle point
+   * :ref:`X_518 <X_518>` = even (1, 2) infinity point
+   * :ref:`X_105 <X_105>` = even (1, 2) circumcircle point
+   * :ref:`X_674 <X_674>` = even (2, 3) infinity point
+   * :ref:`X_675 <X_675>` = even (2, 3) circumcircle point
+   * :ref:`X_511 <X_511>` = even (2, 4) infinity point
+   * :ref:`X_98 <X_98>` = even (2, 4) circumcircle point
+   * :ref:`X_696 <X_696>` = isogonal conjugate of :ref:`X_697 <X_697>`\ \
 
 Notes
 -----
@@ -55,7 +64,7 @@ Notes
 
 .. container:: note-item
 
-   If m and n are distinct integers, this form fits the definition of **even** :term:`polynomial center <polynomial-center>` as in :person:`Clark Kimberling <clark-kimberling>`, "Functional equations associated with triangle geometry," *Aequationes Mathematicae* 45 (1993) 127-152. This form, perhaps appearing initially here (July 7, 2001) defines a :term:`triangle center <triangle-center>` for arbitrary distinct real numbers m and n. Selected even infinity and circumcircle points begin at :ref:`X(696) <X(696)>`; odd ones begin at :ref:`X(768) <X(768)>`.
+   If m and n are distinct integers, this form fits the definition of **even** :term:`polynomial center <polynomial-center>` as in :person:`Clark Kimberling <clark-kimberling>`, "Functional equations associated with triangle geometry," *Aequationes Mathematicae* 45 (1993) 127-152. This form, perhaps appearing initially here (July 7, 2001) defines a :term:`triangle center <triangle-center>` for arbitrary distinct real numbers m and n. Selected even infinity and circumcircle points begin at :ref:`X_696 <X_696>`; odd ones begin at :ref:`X_768 <X_768>`.
 
 .. container:: note-item
 

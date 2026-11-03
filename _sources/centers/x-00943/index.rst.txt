@@ -1,22 +1,31 @@
 :order: 943
 :type: center
-:canonical_id: X(943)
-:dependencies: X(1), X(3), X(4), X(6), X(7), X(8), X(12), X(21), X(28), X(35), X(37), X(55), X(72), X(79), X(80), X(100), X(201), X(228), X(405), X(442), X(500), X(523), X(651), X(942), X(950), X(968), X(1001), X(1039), X(1058)
+:canonical_id: X_943
+:subtitle: ISOGONAL CONJUGATE OF X_942
+:dependencies: X_1, X_3, X_4, X_6, X_7, X_8, X_12, X_21, X_28, X_35, X_37, X_55, X_72, X_79, X_80, X_100, X_201, X_228, X_405, X_442, X_500, X_523, X_651, X_942, X_950, X_968, X_1001, X_1039, X_1058
 
-.. _X(943):
+.. _X_943:
 
-X(943) = ISOGONAL CONJUGATE OF X(942)
-=====================================
+X_943
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_942
 
 .. enunciation::
 
-   :ref:`X(943) <X(943)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(942) <X(942)>`
+   :ref:`X_943 <X_943>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_942 <X_942>`.
 
 .. figure:: x-00943.svg
-   :alt: X(943) = ISOGONAL CONJUGATE OF X(942)
+   :alt: X_943 — ISOGONAL CONJUGATE OF X_942
    :align: center
 
-   **X(943) = ISOGONAL CONJUGATE OF X(942)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_943** (*ISOGONAL CONJUGATE OF X_942*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{3, 7} <{ 3, 7 }>`, :g:`{4, 12} <{ 4, 12 }>`
+   * **Related Centers:** :g:`X_942 <X_942>` (:ref:`INCIRCLE-INVERSE OF X(36) <X_942>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_7 <X_7>` (:ref:`GERGONNE POINT <X_7>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_12 <X_12>` (:ref:`{X <X_12>`)
 
 .. signature:: center
 
@@ -28,16 +37,16 @@ X(943) = ISOGONAL CONJUGATE OF X(942)
    :badge: 12 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`201 <X(201)>`}, {:ref:`3 <X(3)>`, :ref:`7 <X(7)>`}, {:ref:`4 <X(4)>`, :ref:`12 <X(12)>`}, {:ref:`8 <X(8)>`, :ref:`405 <X(405)>`}, {:ref:`21 <X(21)>`, :ref:`72 <X(72)>`}, {:ref:`28 <X(28)>`, :ref:`228 <X(228)>`}, {:ref:`35 <X(35)>`, :ref:`79 <X(79)>`}, {:ref:`80 <X(80)>`, :ref:`950 <X(950)>`}, {:ref:`100 <X(100)>`, :ref:`442 <X(442)>`}, {:ref:`500 <X(500)>`, :ref:`651 <X(651)>`}, {:ref:`968 <X(968)>`, 1039}, {1001, 1058}
+   {:ref:`1 <X_1>`, :ref:`201 <X_201>`}, {:ref:`3 <X_3>`, :ref:`7 <X_7>`}, {:ref:`4 <X_4>`, :ref:`12 <X_12>`}, {:ref:`8 <X_8>`, :ref:`405 <X_405>`}, {:ref:`21 <X_21>`, :ref:`72 <X_72>`}, {:ref:`28 <X_28>`, :ref:`228 <X_228>`}, {:ref:`35 <X_35>`, :ref:`79 <X_79>`}, {:ref:`80 <X_80>`, :ref:`950 <X_950>`}, {:ref:`100 <X_100>`, :ref:`442 <X_442>`}, {:ref:`500 <X_500>`, :ref:`651 <X_651>`}, {:ref:`968 <X_968>`, 1039}, {1001, 1058}
 
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X(943) <X(943)>` = isogonal conjugate of :ref:`X(942) <X(942)>`
-   * :ref:`X(943) <X(943)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`35 <X(35)>`), (:ref:`6 <X(6)>`, :ref:`228 <X(228)>`), (:ref:`37 <X(37)>`, :ref:`55 <X(55)>`)
-   * :ref:`X(943) <X(943)>` = :ref:`X(523) <X(523)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(100) <X(100)>`
-   * :ref:`X(943) <X(943)>` = Cundy-Parry Phi transform of :ref:`X(7) <X(7)>`
-   * :ref:`X(943) <X(943)>` = Cundy-Parry Psi transform of :ref:`X(55) <X(55)>`
+   * :ref:`X_943 <X_943>` = isogonal conjugate of :ref:`X_942 <X_942>`
+   * :ref:`X_943 <X_943>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`35 <X_35>`), (:ref:`6 <X_6>`, :ref:`228 <X_228>`), (:ref:`37 <X_37>`, :ref:`55 <X_55>`)
+   * :ref:`X_943 <X_943>` = :ref:`X_523 <X_523>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_100 <X_100>`
+   * :ref:`X_943 <X_943>` = Cundy-Parry Phi transform of :ref:`X_7 <X_7>`
+   * :ref:`X_943 <X_943>` = Cundy-Parry Psi transform of :ref:`X_55 <X_55>`
 
 .. toctree::
    :hidden:

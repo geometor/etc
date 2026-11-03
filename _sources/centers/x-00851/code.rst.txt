@@ -1,18 +1,21 @@
-:canonical_id: X(851)
+:canonical_id: X_851
 :type: code
+:subtitle: X_65-HIRST INVERSE OF X_73
 
-X(851) = X(65)-HIRST INVERSE OF X(73) — Code
-============================================
+X_851
+=====
+
+.. rubric:: X_65-HIRST INVERSE OF X_73
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(851) <X(851)>` has Shinagawa coefficients :math:`(\$bcS_{B}S_{C}\$,-\$bc\$S^{2})`.
+   :ref:`X_851 <X_851>` is the :ref:`X_65 <X_65>`-:term:`hirst inverse <hirst-inverse>` of :ref:`X_73 <X_73>`.
 
 .. figure:: x-00851.svg
-   :alt: X(851) = X(65)-HIRST INVERSE OF X(73)
+   :alt: X_851 — X_65-HIRST INVERSE OF X_73
    :align: center
 
-   **X(851) = X(65)-HIRST INVERSE OF X(73)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_851** (*X_65-HIRST INVERSE OF X_73*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

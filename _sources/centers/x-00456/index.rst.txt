@@ -1,26 +1,35 @@
 :order: 456
 :type: center
-:canonical_id: X(456)
-:dependencies: X(195)
+:canonical_id: X_456
+:subtitle: EULER X_195-11th-SUBSTITUTION POINT
+:dependencies: X_195
 
-.. _X(456):
+.. _X_456:
 
-X(456) = EULER X(195)-11th-SUBSTITUTION POINT
-=============================================
+X_456
+=====
+
+.. rubric:: EULER X_195-11th-SUBSTITUTION POINT
 
 .. enunciation::
 
-   {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): {15770, 15779, 3}
+   {X_i,X_j}-harmonic conjugate of X_k for these (i,j,k): {15770, 15779, 3}
 
 .. figure:: x-00456.svg
-   :alt: X(456) = EULER X(195)-11th-SUBSTITUTION POINT
+   :alt: X_456 — EULER X_195-11th-SUBSTITUTION POINT
    :align: center
 
-   **X(456) = EULER X(195)-11th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_456** (*EULER X_195-11th-SUBSTITUTION POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`)
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`)
 
 .. signature:: center
 
-   | **Trilinears:** :math:`u^{2}\sec A : v^{2}\sec B : w^{2}\sec C`, where :math:`u : v : w` = :ref:`X(195) <X(195)>`
+   | **Trilinears:** :math:`u^{2}\sec A : v^{2}\sec B : w^{2}\sec C`, where :math:`u : v : w` = :ref:`X_195 <X_195>`
    | **Barycentrics:** :math:`u^{2}\tan A : v^{2}\tan B : w^{2}\tan C`
    | **Search Value (6, 9, 13):** :math:`2.629368792489`
 
@@ -34,7 +43,7 @@ Notes
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(456) <X(456)>` has Shinagawa coefficients :math:`((9E + 16F)EF^{2} - 64F^{2}S^{2}, -E^{2}F^{2} + 16(E + 4F)FS^{2})`.
+   As a point on the Euler line, :ref:`X_456 <X_456>` has Shinagawa coefficients :math:`((9E + 16F)EF^{2} - 64F^{2}S^{2}, -E^{2}F^{2} + 16(E + 4F)FS^{2})`.
 
 .. toctree::
    :hidden:

@@ -1,22 +1,31 @@
 :order: 305
 :type: center
-:canonical_id: X(305)
-:dependencies: X(2), X(22), X(25), X(39), X(48), X(63), X(69), X(76), X(92), X(95), X(99), X(183), X(264), X(287), X(304), X(306), X(311), X(325), X(339), X(341), X(350), X(394), X(525), X(561), X(614), X(683), X(1007), X(1088), X(1196), X(1441), X(1501), X(1974), X(2207), X(3267), X(36417)
+:canonical_id: X_305
+:subtitle: ISOTOMIC CONJUGATE OF X_25
+:dependencies: X_2, X_22, X_25, X_39, X_48, X_63, X_69, X_76, X_92, X_95, X_99, X_183, X_264, X_287, X_304, X_306, X_311, X_325, X_339, X_341, X_350, X_394, X_525, X_561, X_614, X_683, X_1007, X_1088, X_1196, X_1441, X_1501, X_1974, X_2207, X_3267, X_36417
 
-.. _X(305):
+.. _X_305:
 
-X(305) = ISOTOMIC CONJUGATE OF X(25)
-====================================
+X_305
+=====
+
+.. rubric:: ISOTOMIC CONJUGATE OF X_25
 
 .. enunciation::
 
-   :ref:`X(305) <X(305)>` = trilinear-pole-of-line-:ref:`X(525) <X(525)>`\ X(3267) = pole-with-respect-to-polar-circle-of trilinear-polar-of-X(2207) = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>`-of-X(2207) = :ref:`X(92) <X(92)>`-isoconjugate-of-X(1501) :person:`Randy Hutson <randy-hutson>`, August 15, 2013
+   :ref:`X_305 <X_305>` is the :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_25 <X_25>`.
 
 .. figure:: x-00305.svg
-   :alt: X(305) = ISOTOMIC CONJUGATE OF X(25)
+   :alt: X_305 — ISOTOMIC CONJUGATE OF X_25
    :align: center
 
-   **X(305) = ISOTOMIC CONJUGATE OF X(25)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_305** (*ISOTOMIC CONJUGATE OF X_25*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 39} <{ 2, 39 }>`, :g:`{22, 99} <{ 22, 99 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_39 <X_39>` (:ref:`BROCARD MIDPOINT <X_39>`), :g:`X_22 <X_22>` (:ref:`EXETER POINT <X_22>`), :g:`X_99 <X_99>` (:ref:`STEINER POINT <X_99>`)
 
 .. signature:: center
 
@@ -33,18 +42,18 @@ X(305) = ISOTOMIC CONJUGATE OF X(25)
    :badge: 11 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`39 <X(39)>`}, {:ref:`22 <X(22)>`, :ref:`99 <X(99)>`}, {:ref:`25 <X(25)>`, :ref:`683 <X(683)>`}, {:ref:`95 <X(95)>`, :ref:`183 <X(183)>`}, {:ref:`264 <X(264)>`, :ref:`325 <X(325)>`}, {:ref:`287 <X(287)>`, :ref:`394 <X(394)>`}, {:ref:`304 <X(304)>`, :ref:`306 <X(306)>`}, {:ref:`311 <X(311)>`, 1007}, {:ref:`341 <X(341)>`, 1088}, {:ref:`350 <X(350)>`, :ref:`614 <X(614)>`}, {:ref:`561 <X(561)>`, 1441}
+   {:ref:`2 <X_2>`, :ref:`39 <X_39>`}, {:ref:`22 <X_22>`, :ref:`99 <X_99>`}, {:ref:`25 <X_25>`, :ref:`683 <X_683>`}, {:ref:`95 <X_95>`, :ref:`183 <X_183>`}, {:ref:`264 <X_264>`, :ref:`325 <X_325>`}, {:ref:`287 <X_287>`, :ref:`394 <X_394>`}, {:ref:`304 <X_304>`, :ref:`306 <X_306>`}, {:ref:`311 <X_311>`, 1007}, {:ref:`341 <X_341>`, 1088}, {:ref:`350 <X_350>`, :ref:`614 <X_614>`}, {:ref:`561 <X_561>`, 1441}
 
 .. collapse:: Functional Relations
    :badge: 7 relations
 
-   * :ref:`X(305) <X(305)>` = trilinear-pole-of-line-:ref:`X(525) <X(525)>`\ X(3267) = pole-with-respect-to-polar-circle-of trilinear-polar-of-X(2207) = :ref:`X(48) <X(48)>`-isoconjugate-of-X(2207) = :ref:`X(92) <X(92)>`-isoconjugate-of-X(1501) Randy Hutson, August 15, 2013
-   * :ref:`X(305) <X(305)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(1974)
-   * :ref:`X(305) <X(305)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(25) <X(25)>`
-   * :ref:`X(305) <X(305)>` = :term:`anticomplement <anticomplement>` of X(1196)
-   * :ref:`X(305) <X(305)>` = :ref:`X(63) <X(63)>`-isoconjugate of X(36417)
-   * :ref:`X(305) <X(305)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`69 <X(69)>`, :ref:`76 <X(76)>`), (339, (3267)
-   * :ref:`X(305) <X(305)>` = cevapont of :ref:`X(339) <X(339)>` and X(3267)
+   * :ref:`X_305 <X_305>` = trilinear-pole-of-line-:ref:`X_525 <X_525>`\ X_3267 = pole-with-respect-to-polar-circle-of trilinear-polar-of-X_2207 = :ref:`X_48 <X_48>`-:term:`isoconjugate <isoconjugate>`-of-X_2207 = :ref:`X_92 <X_92>`-isoconjugate-of-X_1501 :person:`Randy Hutson <randy-hutson>`, August 15, 2013
+   * :ref:`X_305 <X_305>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_1974
+   * :ref:`X_305 <X_305>` = isotomic conjugate of :ref:`X_25 <X_25>`
+   * :ref:`X_305 <X_305>` = :term:`anticomplement <anticomplement>` of X_1196
+   * :ref:`X_305 <X_305>` = :ref:`X_63 <X_63>`-isoconjugate of X_36417
+   * :ref:`X_305 <X_305>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`69 <X_69>`, :ref:`76 <X_76>`), (339, (3267)
+   * :ref:`X_305 <X_305>` = cevapont of :ref:`X_339 <X_339>` and X_3267
 
 .. toctree::
    :hidden:

@@ -1,18 +1,21 @@
-:canonical_id: X(665)
+:canonical_id: X_665
 :type: code
+:subtitle: CROSSDIFFERENCE OF X_2 AND X_11
 
-X(665) = CROSSDIFFERENCE OF X(2) AND X(11) — Code
-=================================================
+X_665
+=====
+
+.. rubric:: CROSSDIFFERENCE OF X_2 AND X_11
 
 .. enunciation::
 
-   :ref:`X(665) <X(665)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(666) <X(666)>`
+   :ref:`X_665 <X_665>` = :term:`crossdifference <crossdifference>` of every pair of points on line {2, 11}
 
 .. figure:: x-00665.svg
-   :alt: X(665) = CROSSDIFFERENCE OF X(2) AND X(11)
+   :alt: X_665 — CROSSDIFFERENCE OF X_2 AND X_11
    :align: center
 
-   **X(665) = CROSSDIFFERENCE OF X(2) AND X(11)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_665** (*CROSSDIFFERENCE OF X_2 AND X_11*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

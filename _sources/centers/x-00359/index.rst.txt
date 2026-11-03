@@ -1,23 +1,31 @@
 :order: 359
 :type: center
-:canonical_id: X(359)
-:dependencies: X(1), X(2), X(6), X(31), X(37), X(75), X(360), X(512), X(1028), X(1049), X(1077), X(3067), X(4094), X(4895), X(5945), X(9036), X(42074)
+:canonical_id: X_359
+:subtitle: HOFSTADTER ONE POINT
+:dependencies: X_1, X_2, X_6, X_31, X_37, X_75, X_360, X_512, X_1028, X_1049, X_1077, X_3067, X_4094, X_4895, X_5945, X_9036, X_42074
 
-.. _X(359):
+.. _X_359:
 .. _HofstadterOnePoint:
 
-X(359) = HOFSTADTER ONE POINT
-=============================
+X_359
+=====
+
+.. rubric:: HOFSTADTER ONE POINT
 
 .. enunciation::
 
-   The Hofstadter ellipse E(1/2), given by :math:`x^{2}` + :math:`y^{2}` + :math:`z^{2}` - 2yz - 2xz - 2xy = 0, has center :ref:`X(37) <X(37)>` and passes through X(i) for these i: 244, 678, 2310, 2632, 2638, 2643, 3248, 4094, 4117, 10501, 23063, 24012.
+   The Hofstadter ellipse E(1/2), given by :math:`x^{2}` + :math:`y^{2}` + :math:`z^{2}` - 2yz - 2xz - 2xy = 0, has center :ref:`X_37 <X_37>` and passes through X_i for these i: 244, 678, 2310, 2632, 2638, 2643, 3248, 4094, 4117, 10501, 23063, 24012.
 
 .. figure:: x-00359.svg
-   :alt: X(359) = HOFSTADTER ONE POINT
+   :alt: X_359 — HOFSTADTER ONE POINT
    :align: center
 
-   **X(359) = HOFSTADTER ONE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_359** (*HOFSTADTER ONE POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`)
 
 .. signature:: center
 
@@ -29,24 +37,24 @@ X(359) = HOFSTADTER ONE POINT
    :badge: 1 line
    :class: line-catalog
 
-   {:ref:`6 <X(6)>`, 9036}
+   {:ref:`6 <X_6>`, 9036}
 
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X(359) <X(359)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(360) <X(360)>`
-   * :ref:`X(359) <X(359)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(5945)
-   * :ref:`X(359) <X(359)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these (i,j): {:ref:`1 <X(1)>`, :ref:`360 <X(360)>`}, {:ref:`2 <X(2)>`, 1049}
-   * :ref:`X(359) <X(359)>` = barycentric product X(i)\*X(j) for these {i,j}: {:ref:`1 <X(1)>`, 1077}, {1028, 1049}
-   * :ref:`X(359) <X(359)>` = barycentric quotient X(i)/X(j) for these {i,j}: {:ref:`6 <X(6)>`, :ref:`360 <X(360)>`}, {:ref:`31 <X(31)>`, 1049}, {1077, :ref:`75 <X(75)>`}
-   * :ref:`X(359) <X(359)>` = perspector of Hofstadter 0-ellipse
+   * :ref:`X_359 <X_359>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_360 <X_360>`
+   * :ref:`X_359 <X_359>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of X_5945
+   * :ref:`X_359 <X_359>` = X_i-:term:`isoconjugate <isoconjugate>` of X_j for these (i,j): {:ref:`1 <X_1>`, :ref:`360 <X_360>`}, {:ref:`2 <X_2>`, 1049}
+   * :ref:`X_359 <X_359>` = barycentric product X_i\*X_j for these {i,j}: {:ref:`1 <X_1>`, 1077}, {1028, 1049}
+   * :ref:`X_359 <X_359>` = barycentric quotient X_i/X_j for these {i,j}: {:ref:`6 <X_6>`, :ref:`360 <X_360>`}, {:ref:`31 <X_31>`, 1049}, {1077, :ref:`75 <X_75>`}
+   * :ref:`X_359 <X_359>` = perspector of Hofstadter 0-ellipse
 
 Notes
 -----
 
 .. container:: note-item
 
-   This point is the limit as r approaches 1 of the Hofstadter r point. See :ref:`X(360) <X(360)>` for details.
+   This point is the limit as r approaches 1 of the Hofstadter r point. See :ref:`X_360 <X_360>` for details.
 
       :math:`x^{2}` + :math:`y^{2}` + :math:`z^{2}` + yz(D + 1/D) + zx(E + 1/E) + xy(F + 1/F) = 0, where :g:`D <D>` = cos A - sin A cot rA, :g:`E <E>` = cos B - sin B cot rB, :g:`F <F>` = cos C - sin C cot rC.
 
@@ -56,13 +64,13 @@ Notes
 
    Equation: ayz/A + bzx/B + cxy/:g:`C <C>` = 0
 
-   Center: X(5945) = (a/A)(:math:`b^{2}`/B + :math:`c^{2}`/C - :math:`a^{2}`/A) : (b/B)(:math:`c^{2}`/C + :math:`a^{2}`/A - :math:`b^{2}`/B) : (c/C)(:math:`a^{2}`/A + :math:`b^{2}`/B - :math:`c^{2}`/C)
+   Center: X_5945 = (a/A)(:math:`b^{2}`/B + :math:`c^{2}`/C - :math:`a^{2}`/A) : (b/B)(:math:`c^{2}`/C + :math:`a^{2}`/A - :math:`b^{2}`/B) : (c/C)(:math:`a^{2}`/A + :math:`b^{2}`/B - :math:`c^{2}`/C)
 
-   Intersection with circumcircle (other than :g:`A <A>`, :g:`B <B>`, :g:`C <C>`): X(3067) = a/[A(B - C)] : b/[B(C - A)] : c/[C(A - B)]
+   Intersection with circumcircle (other than :g:`A <A>`, :g:`B <B>`, :g:`C <C>`): X_3067 = a/[A(B - C)] : b/[B(C - A)] : c/[C(A - B)]
 
 .. container:: note-item
 
-   The Hofstadter ellipse E(1/2) is also the incentral inellipse, centered at :ref:`X(37) <X(37)>`, and touching :g:`ABC << A B C >>` at the traces of :ref:`X(1) <X(1)>`. The ellipse also passes through X(4094), and is the incentral :term:`isotomic conjugate <isotomic-conjugate>` of line :ref:`X(512) <X(512)>`\ X(4895). (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
+   The Hofstadter ellipse E(1/2) is also the incentral inellipse, centered at :ref:`X_37 <X_37>`, and touching :g:`ABC << A B C >>` at the traces of :ref:`X_1 <X_1>`. The ellipse also passes through X_4094, and is the incentral :term:`isotomic conjugate <isotomic-conjugate>` of line :ref:`X_512 <X_512>`\ X_4895. (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
 
 .. container:: note-item
 
@@ -70,7 +78,7 @@ Notes
 
 .. container:: note-item
 
-   See also the preamble just before X(42074).
+   See also the preamble just before X_42074.
 
 .. toctree::
    :hidden:

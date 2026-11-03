@@ -1,22 +1,31 @@
 :order: 622
 :type: center
-:canonical_id: X(622)
-:dependencies: X(2), X(3), X(4), X(5), X(13), X(14), X(16), X(20), X(30), X(69), X(183), X(265), X(298), X(299), X(301), X(302), X(303), X(316), X(325), X(343), X(381), X(383), X(394), X(472), X(473), X(532), X(617), X(621), X(624), X(627), X(628), X(1080), X(2993), X(3439)
+:canonical_id: X_622
+:subtitle: ANTICOMPLEMENT OF X_16
+:dependencies: X_2, X_3, X_4, X_5, X_13, X_14, X_16, X_20, X_30, X_69, X_183, X_265, X_298, X_299, X_301, X_302, X_303, X_316, X_325, X_343, X_381, X_383, X_394, X_472, X_473, X_532, X_617, X_621, X_624, X_627, X_628, X_1080, X_2993, X_3439
 
-.. _X(622):
+.. _X_622:
 
-X(622) = ANTICOMPLEMENT OF X(16)
-================================
+X_622
+=====
+
+.. rubric:: ANTICOMPLEMENT OF X_16
 
 .. enunciation::
 
-   :ref:`X(622) <X(622)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(3439)
+   :ref:`X_622 <X_622>` is the :term:`anticomplement <anticomplement>` of :ref:`X_16 <X_16>`.
 
 .. figure:: x-00622.svg
-   :alt: X(622) = ANTICOMPLEMENT OF X(16)
+   :alt: X_622 — ANTICOMPLEMENT OF X_16
    :align: center
 
-   **X(622) = ANTICOMPLEMENT OF X(16)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_622** (*ANTICOMPLEMENT OF X_16*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 13} <{ 2, 13 }>`, :g:`{4, 69} <{ 4, 69 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_13 <X_13>` (:ref:`1st ISOGONIC CENTER <X_13>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_69 <X_69>` (:ref:`SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE <X_69>`)
 
 .. signature:: center
 
@@ -33,18 +42,18 @@ X(622) = ANTICOMPLEMENT OF X(16)
    :badge: 13 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`13 <X(13)>`}, {:ref:`3 <X(3)>`, :ref:`303 <X(303)>`}, {:ref:`4 <X(4)>`, :ref:`69 <X(69)>`}, {:ref:`5 <X(5)>`, :ref:`302 <X(302)>`}, {:ref:`14 <X(14)>`, :ref:`532 <X(532)>`}, {:ref:`20 <X(20)>`, :ref:`628 <X(628)>`}, {:ref:`30 <X(30)>`, :ref:`299 <X(299)>`}, {:ref:`183 <X(183)>`, 1080}, {:ref:`265 <X(265)>`, :ref:`301 <X(301)>`}, {:ref:`298 <X(298)>`, :ref:`381 <X(381)>`}, {:ref:`325 <X(325)>`, :ref:`383 <X(383)>`}, {:ref:`343 <X(343)>`, :ref:`473 <X(473)>`}, {:ref:`394 <X(394)>`, :ref:`472 <X(472)>`}
+   {:ref:`2 <X_2>`, :ref:`13 <X_13>`}, {:ref:`3 <X_3>`, :ref:`303 <X_303>`}, {:ref:`4 <X_4>`, :ref:`69 <X_69>`}, {:ref:`5 <X_5>`, :ref:`302 <X_302>`}, {:ref:`14 <X_14>`, :ref:`532 <X_532>`}, {:ref:`20 <X_20>`, :ref:`628 <X_628>`}, {:ref:`30 <X_30>`, :ref:`299 <X_299>`}, {:ref:`183 <X_183>`, 1080}, {:ref:`265 <X_265>`, :ref:`301 <X_301>`}, {:ref:`298 <X_298>`, :ref:`381 <X_381>`}, {:ref:`325 <X_325>`, :ref:`383 <X_383>`}, {:ref:`343 <X_343>`, :ref:`473 <X_473>`}, {:ref:`394 <X_394>`, :ref:`472 <X_472>`}
 
 .. collapse:: Functional Relations
    :badge: 7 relations
 
-   * :ref:`X(622) <X(622)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`16 <X(16)>`, :ref:`624 <X(624)>`), (:ref:`617 <X(617)>`, :ref:`299 <X(299)>`), (:ref:`621 <X(621)>`, :ref:`316 <X(316)>`)
-   * :ref:`X(622) <X(622)>` = isogonal conjugate of X(3439)
-   * :ref:`X(622) <X(622)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(2993)
-   * :ref:`X(622) <X(622)>` = :term:`anticomplement <anticomplement>` of :ref:`X(16) <X(16)>`
-   * :ref:`X(622) <X(622)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X(617) <X(617)>`
-   * :ref:`X(622) <X(622)>` = :ref:`X(301) <X(301)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(2) <X(2)>`
-   * :ref:`X(622) <X(622)>` = :term:`crosspoint <crosspoint>` of :ref:`X(617) <X(617)>` and :ref:`X(627) <X(627)>` wrt both the excentral and :term:`anticomplementary triangles <anticomplementary-triangle>`
+   * :ref:`X_622 <X_622>` = reflection of X_i in X_j for these (i,j): (:ref:`16 <X_16>`, :ref:`624 <X_624>`), (:ref:`617 <X_617>`, :ref:`299 <X_299>`), (:ref:`621 <X_621>`, :ref:`316 <X_316>`)
+   * :ref:`X_622 <X_622>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3439
+   * :ref:`X_622 <X_622>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_2993
+   * :ref:`X_622 <X_622>` = anticomplement of :ref:`X_16 <X_16>`
+   * :ref:`X_622 <X_622>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X_617 <X_617>`
+   * :ref:`X_622 <X_622>` = :ref:`X_301 <X_301>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_2 <X_2>`
+   * :ref:`X_622 <X_622>` = :term:`crosspoint <crosspoint>` of :ref:`X_617 <X_617>` and :ref:`X_627 <X_627>` wrt both the excentral and :term:`anticomplementary triangles <anticomplementary-triangle>`
 
 .. toctree::
    :hidden:

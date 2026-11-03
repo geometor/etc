@@ -1,18 +1,21 @@
-:canonical_id: X(333)
+:canonical_id: X_333
 :type: code
+:subtitle: CEVAPOINT OF X_8 AND X_9
 
-X(333) = CEVAPOINT OF X(8) AND X(9) — Code
-==========================================
+X_333
+=====
+
+.. rubric:: CEVAPOINT OF X_8 AND X_9
 
 .. enunciation::
 
-   Let :g:`A_{27}B_{27}C_{27} << A_27 B_27 C_27 >>` be Gemini triangle 27. Let :g:`A' <A'>` be the perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B_{27} <B_27>`,\ :g:`C_{27} <C_27>`}}, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(333) <X(333)>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
+   :ref:`X_333 <X_333>` is the :term:`cevapoint <cevapoint>` of :ref:`X_8 <X_8>` and :ref:`X_9 <X_9>`.
 
 .. figure:: x-00333.svg
-   :alt: X(333) = CEVAPOINT OF X(8) AND X(9)
+   :alt: X_333 — CEVAPOINT OF X_8 AND X_9
    :align: center
 
-   **X(333) = CEVAPOINT OF X(8) AND X(9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_333** (*CEVAPOINT OF X_8 AND X_9*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

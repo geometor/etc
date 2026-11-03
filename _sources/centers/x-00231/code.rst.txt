@@ -1,18 +1,21 @@
-:canonical_id: X(231)
+:canonical_id: X_231
 :type: code
+:subtitle: X_2-CEVA CONJUGATE OF X_128
 
-X(231) = X(2)-CEVA CONJUGATE OF X(128) — Code
-=============================================
+X_231
+=====
+
+.. rubric:: X_2-CEVA CONJUGATE OF X_128
 
 .. enunciation::
 
-   :ref:`X(231) <X(231)>` = :term:`complement <complement>` of X(1273)
+   :ref:`X_231 <X_231>` = radical center of cirumcircle, nine-point circle and Hutson-Parry circle
 
 .. figure:: x-00231.svg
-   :alt: X(231) = X(2)-CEVA CONJUGATE OF X(128)
+   :alt: X_231 — X_2-CEVA CONJUGATE OF X_128
    :align: center
 
-   **X(231) = X(2)-CEVA CONJUGATE OF X(128)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_231** (*X_2-CEVA CONJUGATE OF X_128*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

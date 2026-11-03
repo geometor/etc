@@ -1,22 +1,31 @@
 :order: 575
 :type: center
-:canonical_id: X(575)
-:dependencies: X(3), X(4), X(5), X(6), X(23), X(39), X(51), X(54), X(61), X(62), X(110), X(140), X(141), X(182), X(187), X(373), X(524), X(542), X(576), X(598), X(629), X(895), X(1687), X(1688), X(5038), X(7608), X(32447)
+:canonical_id: X_575
+:subtitle: ORTHOGONAL OF X_187
+:dependencies: X_3, X_4, X_5, X_6, X_23, X_39, X_51, X_54, X_61, X_62, X_110, X_140, X_141, X_182, X_373, X_524, X_542, X_576, X_598, X_629, X_895, X_1687, X_1688, X_5038, X_7608, X_32447
 
-.. _X(575):
+.. _X_575:
 
-X(575) = ORTHOGONAL OF X(187)
-=============================
+X_575
+=====
+
+.. rubric:: ORTHOGONAL OF X_187
 
 .. enunciation::
 
-   :ref:`X(575) <X(575)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(7608)
+   :ref:`X_575 <X_575>` = Brocard-circle-invertse of :ref:`X_576 <X_576>`
 
 .. figure:: x-00575.svg
-   :alt: X(575) = ORTHOGONAL OF X(187)
+   :alt: X_575 — ORTHOGONAL OF X_187
    :align: center
 
-   **X(575) = ORTHOGONAL OF X(187)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_575** (*ORTHOGONAL OF X_187*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{3, 6} <{ 3, 6 }>`, :g:`{23, 51} <{ 23, 51 }>`
+   * **Related Centers:** :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_23 <X_23>` (:ref:`FAR-OUT POINT <X_23>`), :g:`X_51 <X_51>` (:ref:`CENTROID OF ORTHIC TRIANGLE <X_51>`)
 
 .. signature:: center
 
@@ -34,24 +43,24 @@ X(575) = ORTHOGONAL OF X(187)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(575) <X(575)>` = :ref:`X(3) <X(3)>` + :math:`3` :ref:`X(6) <X(6)>`
+   * :ref:`X_575 <X_575>` = :ref:`X_3 <X_3>` + :math:`3` :ref:`X_6 <X_6>`
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines
    :class: line-catalog
 
-   {:ref:`3 <X(3)>`, :ref:`6 <X(6)>`}, {:ref:`4 <X(4)>`, :ref:`598 <X(598)>`}, {:ref:`5 <X(5)>`, :ref:`542 <X(542)>`}, {:ref:`23 <X(23)>`, :ref:`51 <X(51)>`}, {:ref:`54 <X(54)>`, :ref:`895 <X(895)>`}, {:ref:`110 <X(110)>`, :ref:`373 <X(373)>`}, {:ref:`140 <X(140)>`, :ref:`524 <X(524)>`}, {:ref:`141 <X(141)>`, :ref:`629 <X(629)>`}
+   {:ref:`3 <X_3>`, :ref:`6 <X_6>`}, {:ref:`4 <X_4>`, :ref:`598 <X_598>`}, {:ref:`5 <X_5>`, :ref:`542 <X_542>`}, {:ref:`23 <X_23>`, :ref:`51 <X_51>`}, {:ref:`54 <X_54>`, :ref:`895 <X_895>`}, {:ref:`110 <X_110>`, :ref:`373 <X_373>`}, {:ref:`140 <X_140>`, :ref:`524 <X_524>`}, {:ref:`141 <X_141>`, :ref:`629 <X_629>`}
 
 .. collapse:: Functional Relations
    :badge: 7 relations
 
-   * :ref:`X(575) <X(575)>` = midpoint of X(i) and X(j) for these (i,j): (:ref:`3 <X(3)>`, :ref:`576 <X(576)>`), (:ref:`6 <X(6)>`, :ref:`182 <X(182)>`)
-   * :ref:`X(575) <X(575)>` = isogonal conjugate of X(7608)
-   * :ref:`X(575) <X(575)>` = Brocard-circle-invertse of :ref:`X(576) <X(576)>`
-   * :ref:`X(575) <X(575)>` = 2nd-Brocard-circle-inverse of X(32447)
-   * :ref:`X(575) <X(575)>` = {:ref:`X(61) <X(61)>`,\ :ref:`X(62) <X(62)>`}-harmonic conjugate of :ref:`X(39) <X(39)>`
-   * :ref:`X(575) <X(575)>` = {X(1687),X(1688)}-harmonic conjugate of X(5038)
-   * :ref:`X(575) <X(575)>` = homothetic center of Kosnita and 2nd Ehrmann triangles
+   * :ref:`X_575 <X_575>` = midpoint of X_i and X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`576 <X_576>`), (:ref:`6 <X_6>`, :ref:`182 <X_182>`)
+   * :ref:`X_575 <X_575>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_7608
+   * :ref:`X_575 <X_575>` = Brocard-circle-invertse of :ref:`X_576 <X_576>`
+   * :ref:`X_575 <X_575>` = 2nd-Brocard-circle-inverse of X_32447
+   * :ref:`X_575 <X_575>` = {:ref:`X_61 <X_61>`,\ :ref:`X_62 <X_62>`}-harmonic conjugate of :ref:`X_39 <X_39>`
+   * :ref:`X_575 <X_575>` = {X_1687,X_1688}-harmonic conjugate of X_5038
+   * :ref:`X_575 <X_575>` = homothetic center of Kosnita and 2nd Ehrmann triangles
 
 .. toctree::
    :hidden:

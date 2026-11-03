@@ -1,18 +1,21 @@
-:canonical_id: X(4)
+:canonical_id: X_4
 :type: code
+:subtitle: ORTHOCENTER
 
-X(4) = ORTHOCENTER — Code
-=========================
+X_4
+====
+
+.. rubric:: ORTHOCENTER
 
 .. enunciation::
 
-   :ref:`X(4) <X(4)>` is the point of concurrence of the altitudes of :g:`ABC << A B C >>`.
+   :ref:`X_4 <X_4>` is the point of concurrence of the altitudes of :g:`ABC << A B C >>`.
 
 .. figure:: x-00004.svg
-   :alt: X(4) = ORTHOCENTER
+   :alt: X_4 — ORTHOCENTER
    :align: center
 
-   **X(4) = ORTHOCENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_4** (*ORTHOCENTER*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

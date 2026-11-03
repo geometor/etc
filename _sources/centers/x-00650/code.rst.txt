@@ -1,18 +1,21 @@
-:canonical_id: X(650)
+:canonical_id: X_650
 :type: code
+:subtitle: CROSSDIFFERENCE OF X_1 AND X_3
 
-X(650) = CROSSDIFFERENCE OF X(1) AND X(3) — Code
-================================================
+X_650
+=====
+
+.. rubric:: CROSSDIFFERENCE OF X_1 AND X_3
 
 .. enunciation::
 
-   :ref:`X(650) <X(650)>` is the perspector of triangle :g:`ABC << A B C >>` and the :term:`tangential triangle <tangential-triangle>` of the Feuerbach hyperbola. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   :ref:`X_650 <X_650>` = :term:`crossdifference <crossdifference>` of every pair of points on line {1, 3}
 
 .. figure:: x-00650.svg
-   :alt: X(650) = CROSSDIFFERENCE OF X(1) AND X(3)
+   :alt: X_650 — CROSSDIFFERENCE OF X_1 AND X_3
    :align: center
 
-   **X(650) = CROSSDIFFERENCE OF X(1) AND X(3)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_650** (*CROSSDIFFERENCE OF X_1 AND X_3*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

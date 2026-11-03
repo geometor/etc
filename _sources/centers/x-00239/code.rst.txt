@@ -1,18 +1,21 @@
-:canonical_id: X(239)
+:canonical_id: X_239
 :type: code
+:subtitle: X_1-LINE CONJUGATE OF X_42
 
-X(239) = X(1)-LINE CONJUGATE OF X(42) — Code
-============================================
+X_239
+=====
+
+.. rubric:: X_1-LINE CONJUGATE OF X_42
 
 .. enunciation::
 
-   :ref:`X(239) <X(239)>` is the perspector of triangle :g:`ABC << A B C >>` and the :term:`tangential triangle <tangential-triangle>` of the conic that passes through :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, and the pair P(6) and U(6) of :term:`bicentric points <bicentric-points>` (see the notes just before X(1908). (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   :ref:`X_239 <X_239>` = :ref:`X_1 <X_1>`-:term:`line conjugate <line-conjugate>` of :ref:`X_42 <X_42>`
 
 .. figure:: x-00239.svg
-   :alt: X(239) = X(1)-LINE CONJUGATE OF X(42)
+   :alt: X_239 — X_1-LINE CONJUGATE OF X_42
    :align: center
 
-   **X(239) = X(1)-LINE CONJUGATE OF X(42)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_239** (*X_1-LINE CONJUGATE OF X_42*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

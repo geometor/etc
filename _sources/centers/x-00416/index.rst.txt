@@ -1,26 +1,35 @@
 :order: 416
 :type: center
-:canonical_id: X(416)
-:dependencies: X(2), X(3), X(4), X(21), X(29), X(48), X(63), X(65), X(92), X(226), X(255), X(284), X(296), X(333), X(415), X(820), X(851), X(1248), X(1441), X(1936), X(1982), X(2651), X(2655), X(2656), X(2659), X(2660), X(3562), X(23090), X(32320), X(36033), X(40602), X(44354), X(52240)
+:canonical_id: X_416
+:subtitle: X_3-HIRST INVERSE OF X_21
+:dependencies: X_2, X_3, X_4, X_21, X_29, X_48, X_63, X_65, X_92, X_226, X_255, X_284, X_296, X_333, X_415, X_820, X_851, X_1248, X_1441, X_1936, X_1982, X_2651, X_2655, X_2656, X_2659, X_2660, X_3562, X_23090, X_32320, X_36033, X_40602, X_44354, X_52240
 
-.. _X(416):
+.. _X_416:
 
-X(416) = X(3)-HIRST INVERSE OF X(21)
-====================================
+X_416
+=====
+
+.. rubric:: X_3-HIRST INVERSE OF X_21
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(416) <X(416)>` has Shinagawa coefficients :math:`(abc[(E - 2F)FS^{4} + 2(\$aS_{A}\$)^{2}F]S^{2} + \$aS_{A}\$(\$bcS_{B}S_{C}\$)^{2}, -abc[S^{4} - (E+ F)FS^{2} + 2(\$aS_{A}\$)^{2}F]S^{2} - \$aS_{A}\$[3EFS^{4} + (\$bcS_{B}S_{C}\$)^{2}])`.
+   :ref:`X_416 <X_416>` is the :ref:`X_3 <X_3>`-:term:`hirst inverse <hirst-inverse>` of :ref:`X_21 <X_21>`.
 
 .. figure:: x-00416.svg
-   :alt: X(416) = X(3)-HIRST INVERSE OF X(21)
+   :alt: X_416 — X_3-HIRST INVERSE OF X_21
    :align: center
 
-   **X(416) = X(3)-HIRST INVERSE OF X(21)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_416** (*X_3-HIRST INVERSE OF X_21*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`)
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`)
 
 .. signature:: center
 
-   | **Trilinears:** :math:`(u^{2} - vw)\cos A : (v^{2} - wu)\cos B : (v^{2} - uv)\cos C`, where :math:`u : v : w` = :ref:`X(29) <X(29)>`; e.g., :math:`u = u(A,B,C) = (\sec A)/(\cos B + \cos C)`
+   | **Trilinears:** :math:`(u^{2} - vw)\cos A : (v^{2} - wu)\cos B : (v^{2} - uv)\cos C`, where :math:`u : v : w` = :ref:`X_29 <X_29>`; e.g., :math:`u = u(A,B,C) = (\sec A)/(\cos B + \cos C)`
    | **Barycentrics:** :math:`(u^{2} - vw)\sin(2A) : (v^{2} - wu)\sin(2B) : (w^{2} - uv)\sin(2C)`
    | **Search Value (6, 9, 13):** :math:`4.705865843343`
 
@@ -33,18 +42,25 @@ X(416) = X(3)-HIRST INVERSE OF X(21)
    :badge: 7 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`255 <X(255)>`, 1248}, {:ref:`296 <X(296)>`, 2651}, {:ref:`820 <X(820)>`, 3562}, {1936, 2660}, {2659, 44354}, {23090, 32320}
+   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`255 <X_255>`, 1248}, {:ref:`296 <X_296>`, 2651}, {:ref:`820 <X_820>`, 3562}, {1936, 2660}, {2659, 44354}, {23090, 32320}
 
 .. collapse:: Functional Relations
    :badge: 7 relations
 
-   * :ref:`X(416) <X(416)>` = X(1936)-:term:`Ceva conjugate <ceva-conjugate>` of X(2651)
-   * X(2655)-:term:`cross conjugate <cross-conjugate>` of X(2659)
-   * :ref:`X(416) <X(416)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these (i,j): {:ref:`4 <X(4)>`, 2660}, {:ref:`65 <X(65)>`, 2656}
-   * :ref:`X(416) <X(416)>` = X(i)-Dao conjugate of X(j) for these (i,j): {2656, 40602}, {2660, 36033}
-   * :ref:`X(416) <X(416)>` = barycentric product X(i)\*X(j) for these {i,j}: {:ref:`21 <X(21)>`, 44354}, {:ref:`63 <X(63)>`, 2659}, {:ref:`333 <X(333)>`, 2655}
-   * :ref:`X(416) <X(416)>` = barycentric quotient X(i)/X(j) for these {i,j}: {:ref:`48 <X(48)>`, 2660}, {:ref:`284 <X(284)>`, 2656}, {2655, :ref:`226 <X(226)>`}, {2659, :ref:`92 <X(92)>`}, {44354, 1441}
-   * :ref:`X(416) <X(416)>` = {X(i),X(j)}-harmonic conjugate of X(k) for these (i,j,k): {:ref:`3 <X(3)>`, 1982, :ref:`21 <X(21)>`}, {:ref:`851 <X(851)>`, 52240, :ref:`415 <X(415)>`}
+   * :ref:`X_416 <X_416>` = X_1936-:term:`Ceva conjugate <ceva-conjugate>` of X_2651
+   * X_2655-:term:`cross conjugate <cross-conjugate>` of X_2659
+   * :ref:`X_416 <X_416>` = X_i-:term:`isoconjugate <isoconjugate>` of X_j for these (i,j): {:ref:`4 <X_4>`, 2660}, {:ref:`65 <X_65>`, 2656}
+   * :ref:`X_416 <X_416>` = X_i-Dao conjugate of X_j for these (i,j): {2656, 40602}, {2660, 36033}
+   * :ref:`X_416 <X_416>` = barycentric product X_i\*X_j for these {i,j}: {:ref:`21 <X_21>`, 44354}, {:ref:`63 <X_63>`, 2659}, {:ref:`333 <X_333>`, 2655}
+   * :ref:`X_416 <X_416>` = barycentric quotient X_i/X_j for these {i,j}: {:ref:`48 <X_48>`, 2660}, {:ref:`284 <X_284>`, 2656}, {2655, :ref:`226 <X_226>`}, {2659, :ref:`92 <X_92>`}, {44354, 1441}
+   * :ref:`X_416 <X_416>` = {X_i,X_j}-harmonic conjugate of X_k for these (i,j,k): {:ref:`3 <X_3>`, 1982, :ref:`21 <X_21>`}, {:ref:`851 <X_851>`, 52240, :ref:`415 <X_415>`}
+
+Notes
+-----
+
+.. container:: note-item
+
+   As a point on the Euler line, :ref:`X_416 <X_416>` has Shinagawa coefficients :math:`(abc[(E - 2F)FS^{4} + 2(\$aS_{A}\$)^{2}F]S^{2} + \$aS_{A}\$(\$bcS_{B}S_{C}\$)^{2}, -abc[S^{4} - (E+ F)FS^{2} + 2(\$aS_{A}\$)^{2}F]S^{2} - \$aS_{A}\$[3EFS^{4} + (\$bcS_{B}S_{C}\$)^{2}])`.
 
 .. toctree::
    :hidden:

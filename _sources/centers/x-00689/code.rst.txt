@@ -1,18 +1,21 @@
-:canonical_id: X(689)
+:canonical_id: X_689
 :type: code
+:subtitle: TRILINEAR POLE OF LINE X_6X_76
 
-X(689) = TRILINEAR POLE OF LINE X(6)X(76) — Code
-================================================
+X_689
+=====
+
+.. rubric:: TRILINEAR POLE OF LINE X_6X_76
 
 .. enunciation::
 
-   :ref:`X(689) <X(689)>` is the center of the bianticevian conic of :ref:`X(1) <X(1)>` and :ref:`X(75) <X(75)>`. This conic is a rectangular hyperbola passing through :ref:`X(1) <X(1)>`, :ref:`X(75) <X(75)>`, the excenters and their :term:`isotomic conjugates <isotomic-conjugate>`. (:person:`Randy Hutson <randy-hutson>`, July 11, 2019)
+   :ref:`X_689 <X_689>` = Ψ(:ref:`X_32 <X_32>`, :ref:`X_2 <X_2>`)
 
 .. figure:: x-00689.svg
-   :alt: X(689) = TRILINEAR POLE OF LINE X(6)X(76)
+   :alt: X_689 — TRILINEAR POLE OF LINE X_6X_76
    :align: center
 
-   **X(689) = TRILINEAR POLE OF LINE X(6)X(76)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_689** (*TRILINEAR POLE OF LINE X_6X_76*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

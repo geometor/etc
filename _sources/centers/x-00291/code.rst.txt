@@ -1,18 +1,21 @@
-:canonical_id: X(291)
+:canonical_id: X_291
 :type: code
+:subtitle: 2nd SHARYGIN POINT
 
-X(291) = 2nd SHARYGIN POINT — Code
-==================================
+X_291
+=====
+
+.. rubric:: 2nd SHARYGIN POINT
 
 .. enunciation::
 
-   See the description at X(1281). The lines :g:`AD' <[ A D' ]>`, :g:`BE' <[ B E' ]>`, :g:`CF' <[ C F' ]>` defined there concur in :ref:`X(291) <X(291)>`.
+   :ref:`X_291 <X_291>` = antipode of :ref:`X_1 <X_1>` in hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_1 <X_1>`,\ :ref:`X_2 <X_2>`}
 
 .. figure:: x-00291.svg
-   :alt: X(291) = 2nd SHARYGIN POINT
+   :alt: X_291 — 2nd SHARYGIN POINT
    :align: center
 
-   **X(291) = 2nd SHARYGIN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_291** (*2nd SHARYGIN POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,22 +1,33 @@
 :order: 697
 :type: center
-:canonical_id: X(697)
-:dependencies: X(100), X(560), X(696), X(35523)
+:canonical_id: X_697
+:subtitle: EVEN (- 4, - 3) CIRCUMCIRCLE POINT
+:dependencies: X_100, X_560, X_696, X_35523
 
-.. _X(697):
+.. _X_697:
 
-X(697) = EVEN (- 4, - 3) CIRCUMCIRCLE POINT
-===========================================
+X_697
+=====
+
+.. rubric:: EVEN (- 4, - 3) CIRCUMCIRCLE POINT
 
 .. enunciation::
 
    1/[:math:`a^{m-1}(b^{n} + c^{n})` - :math:`a^{n-1}(b^{m} + c^{m})`],
 
+   hence the name "(m, n)-circumcircle point".
+
 .. figure:: x-00697.svg
-   :alt: X(697) = EVEN (- 4, - 3) CIRCUMCIRCLE POINT
+   :alt: X_697 — EVEN (- 4, - 3) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(697) = EVEN (- 4, - 3) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_697** (*EVEN (- 4, - 3) CIRCUMCIRCLE POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{100, 560} <{ 100, 560 }>`
+   * **Related Centers:** :g:`X_696 <X_696>` (:ref:`EVEN (- 4, - 3) INFINITY POINT <X_696>`), :g:`X_100 <X_100>` (:ref:`ANTICOMPLEMENT OF FEUERBACH POINT <X_100>`), :g:`X_560 <X_560>` (:ref:`4th POWER POINT <X_560>`)
 
 .. signature:: center
 
@@ -26,26 +37,19 @@ X(697) = EVEN (- 4, - 3) CIRCUMCIRCLE POINT
 
 .. container:: note-item
 
-   :ref:`X(697) <X(697)>` lies on the circumcircle. This is one of several points of the form given by first trilinear
+   :ref:`X_697 <X_697>` lies on the circumcircle. This is one of several points of the form given by first trilinear
 
 .. collapse:: Incident Central Lines
    :badge: 1 line
    :class: line-catalog
 
-   {:ref:`100 <X(100)>`, :ref:`560 <X(560)>`}
+   {:ref:`100 <X_100>`, :ref:`560 <X_560>`}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(697) <X(697)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(696) <X(696)>`
-   * :ref:`X(697) <X(697)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(35523)
-
-Notes
------
-
-.. container:: note-item
-
-   hence the name "(m, n)-circumcircle point".
+   * :ref:`X_697 <X_697>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_696 <X_696>`
+   * :ref:`X_697 <X_697>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_35523
 
 .. toctree::
    :hidden:

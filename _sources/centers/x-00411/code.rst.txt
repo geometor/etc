@@ -1,18 +1,21 @@
-:canonical_id: X(411)
+:canonical_id: X_411
 :type: code
+:subtitle: EULER X_21-2nd-SUBSTITUTION POINT
 
-X(411) = EULER X(21)-2nd-SUBSTITUTION POINT — Code
-==================================================
+X_411
+=====
+
+.. rubric:: EULER X_21-2nd-SUBSTITUTION POINT
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(411) <X(411)>` has Shinagawa coefficients :math:`(\$aS_{A}\$, -\$aS_{A}\$ - abc)`.
+   :ref:`X_411 <X_411>` = :g:`ABC << A B C >>`-to-excentral :term:`barycentric image <barycentric-image>` of :ref:`X_12 <X_12>`
 
 .. figure:: x-00411.svg
-   :alt: X(411) = EULER X(21)-2nd-SUBSTITUTION POINT
+   :alt: X_411 — EULER X_21-2nd-SUBSTITUTION POINT
    :align: center
 
-   **X(411) = EULER X(21)-2nd-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_411** (*EULER X_21-2nd-SUBSTITUTION POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

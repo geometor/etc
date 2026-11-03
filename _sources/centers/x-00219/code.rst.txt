@@ -1,18 +1,21 @@
-:canonical_id: X(219)
+:canonical_id: X_219
 :type: code
+:subtitle: X_8-CEVA CONJUGATE OF X_55
 
-X(219) = X(8)-CEVA CONJUGATE OF X(55) — Code
-============================================
+X_219
+=====
+
+.. rubric:: X_8-CEVA CONJUGATE OF X_55
 
 .. enunciation::
 
-   Let :g:`A'B'C' << A' B' C' >>` be the :term:`extouch triangle <extouch-triangle>`. Let :g:`A″ <A″>` be the barycentric product of the circumcircle intercepts of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(219) <X(219)>`. (:person:`Randy Hutson <randy-hutson>`, July 31 2018)
+   :ref:`X_219 <X_219>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_56 <X_56>`
 
 .. figure:: x-00219.svg
-   :alt: X(219) = X(8)-CEVA CONJUGATE OF X(55)
+   :alt: X_219 — X_8-CEVA CONJUGATE OF X_55
    :align: center
 
-   **X(219) = X(8)-CEVA CONJUGATE OF X(55)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_219** (*X_8-CEVA CONJUGATE OF X_55*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

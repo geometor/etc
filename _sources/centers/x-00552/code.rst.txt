@@ -1,18 +1,21 @@
-:canonical_id: X(552)
+:canonical_id: X_552
 :type: code
+:subtitle: POINT MAIA I
 
-X(552) = POINT MAIA I — Code
-============================
+X_552
+=====
+
+.. rubric:: POINT MAIA I
 
 .. enunciation::
 
-   :ref:`X(552) <X(552)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(7064)
+   :ref:`X_552 <X_552>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_7064
 
 .. figure:: x-00552.svg
-   :alt: X(552) = POINT MAIA I
+   :alt: X_552 — POINT MAIA I
    :align: center
 
-   **X(552) = POINT MAIA I** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_552** (*POINT MAIA I*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

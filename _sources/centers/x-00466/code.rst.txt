@@ -1,18 +1,21 @@
-:canonical_id: X(466)
+:canonical_id: X_466
 :type: code
+:subtitle: EULER LINE INTERCEPT OF LINE X_216X_396
 
-X(466) = EULER LINE INTERCEPT OF LINE X(216)X(396) — Code
-=========================================================
+X_466
+=====
+
+.. rubric:: EULER LINE INTERCEPT OF LINE X_216X_396
 
 .. enunciation::
 
-   :ref:`X(466) <X(466)>` is the {:ref:`X(2) <X(2)>`,\ :ref:`X(3) <X(3)>`}-harmonic conjugate of :ref:`X(465) <X(465)>`.
+   :ref:`X_446 <X_446>` = :term:`complement <complement>` of :ref:`X_472 <X_472>`
 
 .. figure:: x-00466.svg
-   :alt: X(466) = EULER LINE INTERCEPT OF LINE X(216)X(396)
+   :alt: X_466 — EULER LINE INTERCEPT OF LINE X_216X_396
    :align: center
 
-   **X(466) = EULER LINE INTERCEPT OF LINE X(216)X(396)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_466** (*EULER LINE INTERCEPT OF LINE X_216X_396*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

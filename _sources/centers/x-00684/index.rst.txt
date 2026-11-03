@@ -1,22 +1,31 @@
 :order: 684
 :type: center
-:canonical_id: X(684)
-:dependencies: X(2), X(3), X(4), X(32), X(92), X(98), X(99), X(110), X(114), X(122), X(125), X(132), X(147), X(232), X(287), X(325), X(351), X(511), X(512), X(520), X(523), X(647), X(669), X(685), X(804), X(879), X(924), X(2491), X(2715), X(3569), X(22456), X(39000)
+:canonical_id: X_684
+:subtitle: CROSSDIFFERENCE OF X_4 AND X_32
+:dependencies: X_2, X_3, X_4, X_32, X_92, X_98, X_99, X_110, X_114, X_122, X_125, X_132, X_147, X_232, X_287, X_325, X_351, X_511, X_512, X_520, X_523, X_647, X_669, X_685, X_804, X_879, X_924, X_2491, X_2715, X_3569, X_22456, X_39000
 
-.. _X(684):
+.. _X_684:
 
-X(684) = CROSSDIFFERENCE OF X(4) AND X(32)
-==========================================
+X_684
+=====
+
+.. rubric:: CROSSDIFFERENCE OF X_4 AND X_32
 
 .. enunciation::
 
-   :ref:`X(684) <X(684)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(685) <X(685)>`
+   :ref:`X_684 <X_684>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_3 <X_3>`,\ :ref:`X_511 <X_511>`}}
 
 .. figure:: x-00684.svg
-   :alt: X(684) = CROSSDIFFERENCE OF X(4) AND X(32)
+   :alt: X_684 — CROSSDIFFERENCE OF X_4 AND X_32
    :align: center
 
-   **X(684) = CROSSDIFFERENCE OF X(4) AND X(32)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_684** (*CROSSDIFFERENCE OF X_4 AND X_32*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{114, 132} <{ 114, 132 }>`, :g:`{122, 125} <{ 122, 125 }>`
+   * **Related Centers:** :g:`X_685 <X_685>` (:ref:`TRILINEAR POLE OF LINE X(4)X(98) <X_685>`), :g:`X_114 <X_114>` (:ref:`KIEPERT ANTIPODE <X_114>`), :g:`X_132 <X_132>` (:ref:`∩X(4)X(32) <X_132>`), :g:`X_122 <X_122>` (:ref:`-OF-MEDIAL-TRIANGLE <X_122>`), :g:`X_125 <X_125>` (:ref:`CENTER OF JERABEK HYPERBOLA <X_125>`)
 
 .. signature:: center
 
@@ -32,19 +41,19 @@ X(684) = CROSSDIFFERENCE OF X(4) AND X(32)
    :badge: 8 lines
    :class: line-catalog
 
-   {:ref:`110 <X(110)>`, :ref:`351 <X(351)>`}, {:ref:`114 <X(114)>`, :ref:`132 <X(132)>`}, {:ref:`122 <X(122)>`, :ref:`125 <X(125)>`}, {:ref:`147 <X(147)>`, :ref:`804 <X(804)>`}, {:ref:`325 <X(325)>`, :ref:`523 <X(523)>`}, {:ref:`520 <X(520)>`, :ref:`647 <X(647)>`}, {:ref:`669 <X(669)>`, :ref:`924 <X(924)>`}, {2491, 3569}
+   {:ref:`110 <X_110>`, :ref:`351 <X_351>`}, {:ref:`114 <X_114>`, :ref:`132 <X_132>`}, {:ref:`122 <X_122>`, :ref:`125 <X_125>`}, {:ref:`147 <X_147>`, :ref:`804 <X_804>`}, {:ref:`325 <X_325>`, :ref:`523 <X_523>`}, {:ref:`520 <X_520>`, :ref:`647 <X_647>`}, {:ref:`669 <X_669>`, :ref:`924 <X_924>`}, {2491, 3569}
 
 .. collapse:: Functional Relations
    :badge: 8 relations
 
-   * :ref:`X(684) <X(684)>` = isogonal conjugate of :ref:`X(685) <X(685)>`
-   * :ref:`X(684) <X(684)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(22456)
-   * :ref:`X(684) <X(684)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(39000)
-   * :ref:`X(684) <X(684)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(3) <X(3)>`,\ :ref:`X(511) <X(511)>`}}
-   * :ref:`X(684) <X(684)>` = :term:`crosspoint <crosspoint>` of :ref:`X(99) <X(99)>` and :ref:`X(287) <X(287)>`
-   * :ref:`X(684) <X(684)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`98 <X(98)>`, :ref:`879 <X(879)>`), (:ref:`232 <X(232)>`, :ref:`512 <X(512)>`)
-   * :ref:`X(684) <X(684)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(4) <X(4)>`\ \ :ref:`X(32) <X(32)>`
-   * :ref:`X(684) <X(684)>` = :ref:`X(92) <X(92)>`-:term:`isoconjugate <isoconjugate>` of X(2715)
+   * :ref:`X_684 <X_684>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_685 <X_685>`
+   * :ref:`X_684 <X_684>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_22456
+   * :ref:`X_684 <X_684>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of X_39000
+   * :ref:`X_684 <X_684>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_3 <X_3>`,\ :ref:`X_511 <X_511>`}}
+   * :ref:`X_684 <X_684>` = :term:`crosspoint <crosspoint>` of :ref:`X_99 <X_99>` and :ref:`X_287 <X_287>`
+   * :ref:`X_684 <X_684>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`98 <X_98>`, :ref:`879 <X_879>`), (:ref:`232 <X_232>`, :ref:`512 <X_512>`)
+   * :ref:`X_684 <X_684>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_4 <X_4>`\ \ :ref:`X_32 <X_32>`
+   * :ref:`X_684 <X_684>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of X_2715
 
 .. toctree::
    :hidden:

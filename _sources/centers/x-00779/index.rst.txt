@@ -1,22 +1,31 @@
 :order: 779
 :type: center
-:canonical_id: X(779)
-:dependencies: X(778), X(35556)
+:canonical_id: X_779
+:subtitle: o-(- 4, 2) CIRCUMCIRCLE POINT
+:dependencies: X_778, X_35556
 
-.. _X(779):
+.. _X_779:
 
-X(779) = o-(- 4, 2) CIRCUMCIRCLE POINT
-======================================
+X_779
+=====
+
+.. rubric:: o-(- 4, 2) CIRCUMCIRCLE POINT
 
 .. enunciation::
 
-   :ref:`X(779) <X(779)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(778) <X(778)>`
+   :ref:`X_779 <X_779>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_778 <X_778>`
 
 .. figure:: x-00779.svg
-   :alt: X(779) = o-(- 4, 2) CIRCUMCIRCLE POINT
+   :alt: X_779 — o-(- 4, 2) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(779) = o-(- 4, 2) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_779** (*o-(- 4, 2) CIRCUMCIRCLE POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`)
+   * **Related Centers:** :g:`X_778 <X_778>` (:ref:`ODD (- 4, 2) INFINITY POINT <X_778>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`)
 
 .. signature:: center
 
@@ -26,13 +35,13 @@ X(779) = o-(- 4, 2) CIRCUMCIRCLE POINT
 
 .. container:: note-item
 
-   :ref:`X(779) <X(779)>` lies on the circumcircle.
+   :ref:`X_779 <X_779>` lies on the circumcircle.
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(779) <X(779)>` = isogonal conjugate of :ref:`X(778) <X(778)>`
-   * :ref:`X(779) <X(779)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(35556)
+   * :ref:`X_779 <X_779>` = isogonal conjugate of :ref:`X_778 <X_778>`
+   * :ref:`X_779 <X_779>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_35556
 
 .. toctree::
    :hidden:

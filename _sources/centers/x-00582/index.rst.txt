@@ -1,22 +1,31 @@
 :order: 582
 :type: center
-:canonical_id: X(582)
-:dependencies: X(3), X(6), X(212), X(283), X(474), X(500), X(517), X(602), X(942)
+:canonical_id: X_582
+:subtitle: HARMONIC OF X_500
+:dependencies: X_3, X_6, X_212, X_283, X_474, X_500, X_517, X_602, X_942
 
-.. _X(582):
+.. _X_582:
 
-X(582) = HARMONIC OF X(500)
-===========================
+X_582
+=====
+
+.. rubric:: HARMONIC OF X_500
 
 .. enunciation::
 
-   :ref:`X(582) <X(582)>` = inverse-in-Brocard-circle of :ref:`X(500) <X(500)>`
+   :ref:`X_582 <X_582>` = inverse-in-Brocard-circle of :ref:`X_500 <X_500>`
 
 .. figure:: x-00582.svg
-   :alt: X(582) = HARMONIC OF X(500)
+   :alt: X_582 — HARMONIC OF X_500
    :align: center
 
-   **X(582) = HARMONIC OF X(500)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_582** (*HARMONIC OF X_500*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{3, 6} <{ 3, 6 }>`, :g:`{283, 474} <{ 283, 474 }>`
+   * **Related Centers:** :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_283 <X_283>` (:ref:`-CROSS CONJUGATE OF X(21) <X_283>`), :g:`X_474 <X_474>` (:ref:`EULER LINE INTERCEPT OF LINE X <X_474>`)
 
 .. signature:: center
 
@@ -28,12 +37,12 @@ X(582) = HARMONIC OF X(500)
    :badge: 4 lines
    :class: line-catalog
 
-   {:ref:`3 <X(3)>`, :ref:`6 <X(6)>`}, {:ref:`212 <X(212)>`, :ref:`942 <X(942)>`}, {:ref:`283 <X(283)>`, :ref:`474 <X(474)>`}, {:ref:`517 <X(517)>`, :ref:`602 <X(602)>`}
+   {:ref:`3 <X_3>`, :ref:`6 <X_6>`}, {:ref:`212 <X_212>`, :ref:`942 <X_942>`}, {:ref:`283 <X_283>`, :ref:`474 <X_474>`}, {:ref:`517 <X_517>`, :ref:`602 <X_602>`}
 
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(582) <X(582)>` = inverse-in-Brocard-circle of :ref:`X(500) <X(500)>`
+   * :ref:`X_582 <X_582>` = inverse-in-Brocard-circle of :ref:`X_500 <X_500>`
 
 .. toctree::
    :hidden:

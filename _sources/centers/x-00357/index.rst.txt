@@ -1,23 +1,32 @@
 :order: 357
 :type: center
-:canonical_id: X(357)
-:dependencies: X(356), X(358), X(1134), X(1135), X(3272), X(3275), X(3280), X(3603), X(5454)
+:canonical_id: X_357
+:subtitle: 1st MORLEY-TAYLOR-MARR CENTER
+:dependencies: X_356, X_358, X_1134, X_1135, X_3272, X_3275, X_3280, X_3603, X_5454
 
-.. _X(357):
+.. _X_357:
 .. _1stMorleyTaylorMarrCenter:
 
-X(357) = 1st MORLEY-TAYLOR-MARR CENTER
-======================================
+X_357
+=====
+
+.. rubric:: 1st MORLEY-TAYLOR-MARR CENTER
 
 .. enunciation::
 
-   :ref:`X(357) <X(357)>` is the perspector of Morley triangle and :g:`ABC << A B C >>`, and also the Hofstadter 1/3 point. See
+   :ref:`X_357 <X_357>` is the perspector of Morley triangle and :g:`ABC << A B C >>`, and also the Hofstadter 1/3 point. See
 
 .. figure:: x-00357.svg
-   :alt: X(357) = 1st MORLEY-TAYLOR-MARR CENTER
+   :alt: X_357 — 1st MORLEY-TAYLOR-MARR CENTER
    :align: center
 
-   **X(357) = 1st MORLEY-TAYLOR-MARR CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_357** (*1st MORLEY-TAYLOR-MARR CENTER*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{356, 358} <{ 356, 358 }>`
+   * **Related Centers:** :g:`X_358 <X_358>` (:ref:`2nd MORLEY-TAYLOR-MARR CENTER <X_358>`), :g:`X_356 <X_356>` (:ref:`MORLEY CENTER <X_356>`)
 
 .. signature:: center
 
@@ -29,14 +38,14 @@ X(357) = 1st MORLEY-TAYLOR-MARR CENTER
    :badge: 3 lines
    :class: line-catalog
 
-   {:ref:`356 <X(356)>`, :ref:`358 <X(358)>`}, {1134, 3275}, {3280, 5454}
+   {:ref:`356 <X_356>`, :ref:`358 <X_358>`}, {1134, 3275}, {3280, 5454}
 
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X(357) <X(357)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(358) <X(358)>`
-   * :ref:`X(357) <X(357)>` = {X(1135),X(3272)}-harmonic conjugate of X(3603)
-   * :ref:`X(357) <X(357)>` = trilinear product of vertices of 1st Morley triangle
+   * :ref:`X_357 <X_357>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_358 <X_358>`
+   * :ref:`X_357 <X_357>` = {X_1135,X_3272}-harmonic conjugate of X_3603
+   * :ref:`X_357 <X_357>` = trilinear product of vertices of 1st Morley triangle
 
 Notes
 -----

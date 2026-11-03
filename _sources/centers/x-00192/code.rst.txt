@@ -1,18 +1,21 @@
-:canonical_id: X(192)
+:canonical_id: X_192
 :type: code
+:subtitle: X_1-CEVA CONJUGATE OF X_2 (CONGRUENT PARALLELIANS POINT)
 
-X(192) = X(1)-CEVA CONJUGATE OF X(2) (CONGRUENT PARALLELIANS POINT) — Code
-==========================================================================
+X_192
+=====
+
+.. rubric:: X_1-CEVA CONJUGATE OF X_2 (CONGRUENT PARALLELIANS POINT)
 
 .. enunciation::
 
-   The segments through :ref:`X(192) <X(192)>` parallel to the sidelines with endpoints on the sidelines have equal length. For references as early as 1881, see :cite:`Hyacinthos <hyacinthos>` message 2929 (:person:`Paul Yiu <paul-yiu>`, May 29, 2001). See also
+   :ref:`X_192 <X_192>` = :term:`anticomplement <anticomplement>` of :ref:`X_75 <X_75>`
 
 .. figure:: x-00192.svg
-   :alt: X(192) = X(1)-CEVA CONJUGATE OF X(2) (CONGRUENT PARALLELIANS POINT)
+   :alt: X_192 — X_1-CEVA CONJUGATE OF X_2 (CONGRUENT PARALLELIANS POINT)
    :align: center
 
-   **X(192) = X(1)-CEVA CONJUGATE OF X(2) (CONGRUENT PARALLELIANS POINT)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_192** (*X_1-CEVA CONJUGATE OF X_2 (CONGRUENT PARALLELIANS POINT)*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

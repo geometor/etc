@@ -1,18 +1,21 @@
-:canonical_id: X(571)
+:canonical_id: X_571
 :type: code
+:subtitle: ORTHOHARMONIC OF X_52
 
-X(571) = ORTHOHARMONIC OF X(52) — Code
-======================================
+X_571
+=====
+
+.. rubric:: ORTHOHARMONIC OF X_52
 
 .. enunciation::
 
-   Let :g:`A'B'C' << A' B' C' >>` be the Kosnita triangle. Let :g:`A″ <A″>` be the barycentric product :g:`B' <B'>`\ \*\ :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(571) <X(571)>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
+   :ref:`X_571 <X_571>` = inverse-in-Brocard-circle of :ref:`X_570 <X_570>`
 
 .. figure:: x-00571.svg
-   :alt: X(571) = ORTHOHARMONIC OF X(52)
+   :alt: X_571 — ORTHOHARMONIC OF X_52
    :align: center
 
-   **X(571) = ORTHOHARMONIC OF X(52)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_571** (*ORTHOHARMONIC OF X_52*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

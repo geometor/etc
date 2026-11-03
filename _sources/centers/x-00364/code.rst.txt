@@ -1,20 +1,21 @@
-:canonical_id: X(364)
+:canonical_id: X_364
 :type: code
+:subtitle: WABASH CENTER (EQUAL AREAS ISOSCELIZER POINT)
 
-X(364) = WABASH CENTER (EQUAL AREAS ISOSCELIZER POINT) — Code
-=============================================================
+X_364
+=====
 
-.. rubric:: EQUAL AREAS ISOSCELIZER POINT
+.. rubric:: WABASH CENTER (EQUAL AREAS ISOSCELIZER POINT)
 
 .. enunciation::
 
-   If :g:`X <X>` = :ref:`X(364) <X(364)>`, the :term:`isoscelizer <isoscelizer>` triangles T(X,a), T(X,b), T(X,c) have equal areas.
+   If :g:`X <X>` = :ref:`X_364 <X_364>`, the :term:`isoscelizer <isoscelizer>` triangles T(X,a), T(X,b), T(X,c) have equal areas.
 
 .. figure:: x-00364.svg
-   :alt: X(364) = WABASH CENTER (EQUAL AREAS ISOSCELIZER POINT)
+   :alt: X_364 — WABASH CENTER (EQUAL AREAS ISOSCELIZER POINT)
    :align: center
 
-   **X(364) = WABASH CENTER (EQUAL AREAS ISOSCELIZER POINT)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_364** (*WABASH CENTER (EQUAL AREAS ISOSCELIZER POINT)*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,18 +1,21 @@
-:canonical_id: X(603)
+:canonical_id: X_603
 :type: code
+:subtitle: X_58-CEVA CONJUGATE OF X_56
 
-X(603) = X(58)-CEVA CONJUGATE OF X(56) — Code
-=============================================
+X_603
+=====
+
+.. rubric:: X_58-CEVA CONJUGATE OF X_56
 
 .. enunciation::
 
-   :ref:`X(603) <X(603)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(318) <X(318)>`
+   :ref:`X_603 <X_603>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_318 <X_318>`
 
 .. figure:: x-00603.svg
-   :alt: X(603) = X(58)-CEVA CONJUGATE OF X(56)
+   :alt: X_603 — X_58-CEVA CONJUGATE OF X_56
    :align: center
 
-   **X(603) = X(58)-CEVA CONJUGATE OF X(56)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_603** (*X_58-CEVA CONJUGATE OF X_56*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

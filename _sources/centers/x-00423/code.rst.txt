@@ -1,18 +1,21 @@
-:canonical_id: X(423)
+:canonical_id: X_423
 :type: code
+:subtitle: X_4-HIRST INVERSE OF X_27
 
-X(423) = X(4)-HIRST INVERSE OF X(27) — Code
-===========================================
+X_423
+=====
+
+.. rubric:: X_4-HIRST INVERSE OF X_27
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(423) <X(423)>` has Shinagawa coefficients :math:`(2(E + F)F + 3\$bc\$F,-(E + F)^{2} - \$bc\$(E + F) + S^{2})`.
+   :ref:`X_423 <X_423>` is the :ref:`X_4 <X_4>`-:term:`hirst inverse <hirst-inverse>` of :ref:`X_27 <X_27>`.
 
 .. figure:: x-00423.svg
-   :alt: X(423) = X(4)-HIRST INVERSE OF X(27)
+   :alt: X_423 — X_4-HIRST INVERSE OF X_27
    :align: center
 
-   **X(423) = X(4)-HIRST INVERSE OF X(27)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_423** (*X_4-HIRST INVERSE OF X_27*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=69acf51f" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=66998e95" />
   <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -89,6 +89,34 @@
         </div>
       </header>
       <div class="content body book-content" role="main">
+        <style id="etc-heading-styles">
+        .book-reading-pane .book-content h1,
+        .folio-book-page h1 {
+            position: relative;
+            text-align: center !important;
+            text-indent: 0 !important;
+            margin-bottom: 0.35rem !important;
+        }
+        .book-reading-pane .book-content h1 a.headerlink,
+        .book-reading-pane .book-content h2 a.headerlink,
+        .folio-book-page h1 a.headerlink,
+        .folio-book-page h2 a.headerlink {
+            position: absolute;
+        }
+        .book-reading-pane .book-content p.rubric,
+        .folio-book-page p.rubric {
+            font-style: normal !important;
+            font-weight: 700 !important;
+            text-align: center !important;
+            text-indent: 0 !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            margin-top: 0 !important;
+            margin-bottom: 1.4rem !important;
+        }
+        </style>
         <section class="level-1" id="module-geometor.etc.glossary">
         <span id="geometor-etc-glossary"></span><h1>geometor.etc.glossary<a class="headerlink" href="#module-geometor.etc.glossary" title="Link to this heading">¶</a></h1>
         <p>Glossary, biographical (persons), and bibliographic (citations) extraction and apparatus generation for ETC.</p>
@@ -115,52 +143,55 @@
         <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
         <table class="autosummary longtable docutils align-default">
         <tbody>
-        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.glossary.apparatus_slug" title="geometor.etc.glossary.apparatus_slug"><code class="xref py py-obj docutils literal notranslate"><span class="pre">apparatus_slug</span></code></a>(→ str)</p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.glossary.apparatus_slug" title="geometor.etc.glossary.apparatus_slug"><code class="xref py py-obj docutils literal notranslate"><span class="pre">apparatus_slug</span></code></a>(key) → str</p></td>
         <td><p>Create a deterministic anchor slug matching photon-platform/publish.</p></td>
         </tr>
-        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.glossary.clean_html_entities" title="geometor.etc.glossary.clean_html_entities"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clean_html_entities</span></code></a>(→ str)</p></td>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.glossary.clean_html_entities" title="geometor.etc.glossary.clean_html_entities"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clean_html_entities</span></code></a>(text) → str</p></td>
         <td><p>Fix common entity typos in ETC HTML and unescape all HTML entities to UTF-8.</p></td>
         </tr>
-        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.glossary.formula_html_to_latex" title="geometor.etc.glossary.formula_html_to_latex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">formula_html_to_latex</span></code></a>(→ str)</p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.glossary.formula_html_to_latex" title="geometor.etc.glossary.formula_html_to_latex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">formula_html_to_latex</span></code></a>(formula_html) → str</p></td>
         <td><p>Convert an HTML coordinate or algebraic formula into clean LaTeX suitable for <cite>:math:</cite>.</p></td>
         </tr>
-        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.glossary.convert_inline_html_to_rst" title="geometor.etc.glossary.convert_inline_html_to_rst"><code class="xref py py-obj docutils literal notranslate"><span class="pre">convert_inline_html_to_rst</span></code></a>(→ str)</p></td>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.glossary.convert_inline_html_to_rst" title="geometor.etc.glossary.convert_inline_html_to_rst"><code class="xref py py-obj docutils literal notranslate"><span class="pre">convert_inline_html_to_rst</span></code></a>(fragment[, valid_centers]) → str</p></td>
         <td><p>Convert inline HTML tags (sup, sub, b, i, a, br) to clean ReStructuredText.</p></td>
         </tr>
-        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.glossary.filter_center_refs" title="geometor.etc.glossary.filter_center_refs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">filter_center_refs</span></code></a>(→ str)</p></td>
-        <td><p>Downgrade any <cite>:ref:`label &lt;X(n)&gt;`</cite> to plain <cite>label</cite> when <cite>n</cite> is not in <cite>valid_centers</cite>.</p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.glossary.filter_center_refs" title="geometor.etc.glossary.filter_center_refs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">filter_center_refs</span></code></a>(rst_text, valid_centers) → str</p></td>
+        <td><p>Downgrade any <cite>:ref:`label &lt;X<sub>n</sub>&gt;`</cite> to plain <cite>label</cite> when <cite>n</cite> is not in <cite>valid_centers</cite>.</p></td>
         </tr>
-        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.glossary.extract_glossary_terms" title="geometor.etc.glossary.extract_glossary_terms"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extract_glossary_terms</span></code></a>(→ dict[str, Any])</p></td>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.glossary.extract_glossary_terms" title="geometor.etc.glossary.extract_glossary_terms"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extract_glossary_terms</span></code></a>(html_content) → dict[str, Any]</p></td>
         <td><p>Extract all glossary terms, their rich RST bodies, and plain-text summaries from GLOSSARY HTML.</p></td>
         </tr>
-        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.glossary.extract_glossary_intro_rst" title="geometor.etc.glossary.extract_glossary_intro_rst"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extract_glossary_intro_rst</span></code></a>(→ str)</p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.glossary.extract_glossary_intro_rst" title="geometor.etc.glossary.extract_glossary_intro_rst"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extract_glossary_intro_rst</span></code></a>(html_content) → str</p></td>
         <td><p>Extract the introductory methodology section from GLOSSARY HTML as RST.</p></td>
         </tr>
-        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.glossary.generate_glossary_rst" title="geometor.etc.glossary.generate_glossary_rst"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_glossary_rst</span></code></a>(→ str)</p></td>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.glossary.generate_glossary_rst" title="geometor.etc.glossary.generate_glossary_rst"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_glossary_rst</span></code></a>(terms[, intro_rst, valid_centers]) → str</p></td>
         <td><p>Generate rich <cite>docsrc/glossary.rst</cite> with deterministic <cite>#term-&lt;slug&gt;</cite> anchors.</p></td>
         </tr>
-        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.glossary.build_glossary_json" title="geometor.etc.glossary.build_glossary_json"><code class="xref py py-obj docutils literal notranslate"><span class="pre">build_glossary_json</span></code></a>(→ dict[str, dict[str, str]])</p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.glossary.build_glossary_json" title="geometor.etc.glossary.build_glossary_json"><code class="xref py py-obj docutils literal notranslate"><span class="pre">build_glossary_json</span></code></a>(terms) → dict[str, dict[str, str]]</p></td>
         <td><p>Build the <cite>resources/glossary.json</cite> dictionary keyed by both slug and headword.</p></td>
         </tr>
-        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.glossary.build_persons_json" title="geometor.etc.glossary.build_persons_json"><code class="xref py py-obj docutils literal notranslate"><span class="pre">build_persons_json</span></code></a>(→ dict[str, dict[str, Any]])</p></td>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.glossary.build_persons_json" title="geometor.etc.glossary.build_persons_json"><code class="xref py py-obj docutils literal notranslate"><span class="pre">build_persons_json</span></code></a>() → dict[str, dict[str, Any]]</p></td>
         <td><p>Build the <cite>resources/persons.json</cite> dictionary keyed by slug and alias.</p></td>
         </tr>
-        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.glossary.build_citations_json" title="geometor.etc.glossary.build_citations_json"><code class="xref py py-obj docutils literal notranslate"><span class="pre">build_citations_json</span></code></a>(→ dict[str, dict[str, str]])</p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.glossary.build_citations_json" title="geometor.etc.glossary.build_citations_json"><code class="xref py py-obj docutils literal notranslate"><span class="pre">build_citations_json</span></code></a>() → dict[str, dict[str, str]]</p></td>
         <td><p>Build the <cite>resources/citations.json</cite> dictionary.</p></td>
         </tr>
-        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.glossary.generate_persons_rst" title="geometor.etc.glossary.generate_persons_rst"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_persons_rst</span></code></a>(→ str)</p></td>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.glossary.generate_persons_rst" title="geometor.etc.glossary.generate_persons_rst"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_persons_rst</span></code></a>([valid_centers]) → str</p></td>
         <td><p>Generate <cite>docsrc/persons.rst</cite> with <cite>#person-&lt;slug&gt;</cite> anchors for all <cite>:person:</cite> links.</p></td>
         </tr>
-        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.glossary.generate_bibliography_rst" title="geometor.etc.glossary.generate_bibliography_rst"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_bibliography_rst</span></code></a>(→ str)</p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.glossary.generate_bibliography_rst" title="geometor.etc.glossary.generate_bibliography_rst"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_bibliography_rst</span></code></a>() → str</p></td>
         <td><p>Generate <cite>docsrc/bibliography.rst</cite> with <cite>#cite-&lt;slug&gt;</cite> anchors for all <cite>:cite:</cite> links.</p></td>
         </tr>
-        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.glossary.wrap_geom_refs" title="geometor.etc.glossary.wrap_geom_refs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">wrap_geom_refs</span></code></a>(→ str)</p></td>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.glossary.extract_local_symbol_map" title="geometor.etc.glossary.extract_local_symbol_map"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extract_local_symbol_map</span></code></a>(text) → dict[str, str]</p></td>
+        <td><p>Extract paragraph-local symbol bindings (e.g. <cite>A'B'C'</cite> -&gt; <cite>H_a, H_b, H_c</cite>, <cite>I</cite> -&gt; <cite>X<sub>1</sub></cite>) from <cite>text</cite>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.glossary.wrap_geom_refs" title="geometor.etc.glossary.wrap_geom_refs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">wrap_geom_refs</span></code></a>(text) → str</p></td>
         <td><p>Wrap geometric elements (triangles, segments, lines, circles, points) in <cite>:g:</cite> roles.</p></td>
         </tr>
-        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.glossary.wrap_glossary_terms" title="geometor.etc.glossary.wrap_glossary_terms"><code class="xref py py-obj docutils literal notranslate"><span class="pre">wrap_glossary_terms</span></code></a>(→ str)</p></td>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.glossary.wrap_glossary_terms" title="geometor.etc.glossary.wrap_glossary_terms"><code class="xref py py-obj docutils literal notranslate"><span class="pre">wrap_glossary_terms</span></code></a>(text, terms[, seen_slugs]) → str</p></td>
         <td><p>Wrap technical glossary terms in <cite>:term:`matched &lt;slug&gt;`</cite>, avoiding existing RST markup.</p></td>
         </tr>
-        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.glossary.wrap_persons_and_citations" title="geometor.etc.glossary.wrap_persons_and_citations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">wrap_persons_and_citations</span></code></a>(→ str)</p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.glossary.wrap_persons_and_citations" title="geometor.etc.glossary.wrap_persons_and_citations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">wrap_persons_and_citations</span></code></a>(text[, seen_persons, ...]) → str</p></td>
         <td><p>Wrap contributor names in <cite>:person:</cite> and standard citations (TCCT, Hyacinthos, ADGEOM) in <cite>:cite:</cite>.</p></td>
         </tr>
         </tbody>
@@ -215,7 +246,7 @@
         <dl class="py function">
         <dt class="sig sig-object py" id="geometor.etc.glossary.filter_center_refs">
         <span class="sig-prename descclassname"><span class="pre">geometor.etc.glossary.</span></span><span class="sig-name descname"><span class="pre">filter_center_refs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rst_text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">valid_centers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#set" title="(in Python v3.13)"><span class="pre">set</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.glossary.filter_center_refs" title="Link to this definition">¶</a></dt>
-        <dd><p>Downgrade any <cite>:ref:`label &lt;X(n)&gt;`</cite> to plain <cite>label</cite> when <cite>n</cite> is not in <cite>valid_centers</cite>.</p>
+        <dd><p>Downgrade any <cite>:ref:`label &lt;X<sub>n</sub>&gt;`</cite> to plain <cite>label</cite> when <cite>n</cite> is not in <cite>valid_centers</cite>.</p>
         </dd></dl>
 
         <dl class="py function">
@@ -264,6 +295,12 @@
         <dt class="sig sig-object py" id="geometor.etc.glossary.generate_bibliography_rst">
         <span class="sig-prename descclassname"><span class="pre">geometor.etc.glossary.</span></span><span class="sig-name descname"><span class="pre">generate_bibliography_rst</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.glossary.generate_bibliography_rst" title="Link to this definition">¶</a></dt>
         <dd><p>Generate <cite>docsrc/bibliography.rst</cite> with <cite>#cite-&lt;slug&gt;</cite> anchors for all <cite>:cite:</cite> links.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.etc.glossary.extract_local_symbol_map">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.glossary.</span></span><span class="sig-name descname"><span class="pre">extract_local_symbol_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.glossary.extract_local_symbol_map" title="Link to this definition">¶</a></dt>
+        <dd><p>Extract paragraph-local symbol bindings (e.g. <cite>A’B’C’</cite> -&gt; <cite>H_a, H_b, H_c</cite>, <cite>I</cite> -&gt; <cite>X<sub>1</sub></cite>) from <cite>text</cite>.</p>
         </dd></dl>
 
         <dl class="py function">
@@ -373,11 +410,11 @@
 
   <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../../../../_static/documentation_options.js?v=fd825880"></script>
+  <script src="../../../../../_static/documentation_options.js?v=59fadc99"></script>
   <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="../../../../../_static/js/geometor_interactive.js?v=4430a5d4"></script>
+  <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
   <script src="../../../../../_static/js/search_highlight.js"></script>
 
 </body>

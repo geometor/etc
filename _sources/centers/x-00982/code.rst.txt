@@ -1,18 +1,21 @@
-:canonical_id: X(982)
+:canonical_id: X_982
 :type: code
+:subtitle: INTERSECTION OF LINES X_1X_3 AND X_2X_38
 
-X(982) = INTERSECTION OF LINES X(1)X(3) AND X(2)X(38) — Code
-============================================================
+X_982
+=====
+
+.. rubric:: INTERSECTION OF LINES X_1X_3 AND X_2X_38
 
 .. enunciation::
 
-   :ref:`X(982) <X(982)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(983) <X(983)>`
+   :ref:`X_982 <X_982>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_983 <X_983>`
 
 .. figure:: x-00982.svg
-   :alt: X(982) = INTERSECTION OF LINES X(1)X(3) AND X(2)X(38)
+   :alt: X_982 — INTERSECTION OF LINES X_1X_3 AND X_2X_38
    :align: center
 
-   **X(982) = INTERSECTION OF LINES X(1)X(3) AND X(2)X(38)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_982** (*INTERSECTION OF LINES X_1X_3 AND X_2X_38*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

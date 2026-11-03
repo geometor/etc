@@ -1,18 +1,21 @@
-:canonical_id: X(909)
+:canonical_id: X_909
 :type: code
+:subtitle: POINT ADHAFERA
 
-X(909) = POINT ADHAFERA — Code
-==============================
+X_909
+=====
+
+.. rubric:: POINT ADHAFERA
 
 .. enunciation::
 
-   :ref:`X(909) <X(909)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(908) <X(908)>`
+   :ref:`X_909 <X_909>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_31 <X_31>`\ \ :ref:`X_663 <X_663>`
 
 .. figure:: x-00909.svg
-   :alt: X(909) = POINT ADHAFERA
+   :alt: X_909 — POINT ADHAFERA
    :align: center
 
-   **X(909) = POINT ADHAFERA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_909** (*POINT ADHAFERA*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,22 +1,31 @@
 :order: 186
 :type: center
-:canonical_id: X(186)
-:dependencies: X(2), X(3), X(4), X(5), X(15), X(16), X(20), X(23), X(24), X(30), X(48), X(50), X(54), X(74), X(93), X(94), X(98), X(107), X(112), X(187), X(216), X(249), X(250), X(252), X(265), X(323), X(328), X(340), X(389), X(403), X(468), X(477), X(484), X(523), X(621), X(622), X(647), X(935), X(2072), X(2931), X(3153), X(3520), X(3580), X(5962), X(15131), X(37444), X(38534)
+:canonical_id: X_186
+:subtitle: INVERSE-IN-CIRCUMCIRCLE OF X_4
+:dependencies: X_2, X_3, X_4, X_5, X_15, X_16, X_20, X_23, X_24, X_30, X_48, X_50, X_54, X_74, X_93, X_94, X_98, X_107, X_112, X_187, X_216, X_249, X_250, X_252, X_265, X_323, X_328, X_340, X_389, X_403, X_468, X_477, X_484, X_523, X_621, X_622, X_647, X_935, X_2072, X_2931, X_3153, X_3520, X_3580, X_5962, X_15131, X_37444, X_38534
 
-.. _X(186):
+.. _X_186:
 
-X(186) = INVERSE-IN-CIRCUMCIRCLE OF X(4)
-========================================
+X_186
+=====
+
+.. rubric:: INVERSE-IN-CIRCUMCIRCLE OF X_4
 
 .. enunciation::
 
-   Let :g:`AA_{1}A_{2} << A A_1 A_2 >>`, :g:`BB_{1}B_{2} << B B_1 B_2 >>`, :g:`CC_{1}C_{2} << C C_1 C_2 >>` be the circumcircle-inscribed equilateral triangles used in the construction of the Trinh triangle. Let :g:`A' <A'>` be the :term:`cevapoint <cevapoint>` of :g:`A_{1} <A_1>` and :g:`A_{2} <A_2>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(186) <X(186)>`. (:person:`Randy Hutson <randy-hutson>`, October 8, 2019
+   :ref:`X_186 <X_186>` = circumcircle-inverse of :ref:`X_4 <X_4>`
 
 .. figure:: x-00186.svg
-   :alt: X(186) = INVERSE-IN-CIRCUMCIRCLE OF X(4)
+   :alt: X_186 — INVERSE-IN-CIRCUMCIRCLE OF X_4
    :align: center
 
-   **X(186) = INVERSE-IN-CIRCUMCIRCLE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_186** (*INVERSE-IN-CIRCUMCIRCLE OF X_4*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`), :g:`{112, 187} <{ 112, 187 }>`
+   * **Related Centers:** :g:`X_265 <X_265>` (:ref:`REFLECTION OF X(3) IN X(125) <X_265>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_112 <X_112>` (:ref:`Ψ(ORTHOCENTER, SYMMEDIAN POINT) <X_112>`), :g:`X_187 <X_187>` (:ref:`INVERSE-IN-CIRCUMCIRCLE OF X <X_187>`)
 
 .. signature:: center
 
@@ -34,63 +43,67 @@ X(186) = INVERSE-IN-CIRCUMCIRCLE OF X(4)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(186) <X(186)>` = :math:`3` :ref:`X(2) <X(2)>` + :math:`(J^{2} - 3)` :ref:`X(3) <X(3)>` = :math:`2` :ref:`X(3) <X(3)>` + :ref:`X(23) <X(23)>` = :math:`(a^{2} - b^{2} - c^{2})(a^{2} + b^{2} - c^{2})(a^{2} - b^{2} + c^{2})` :ref:`X(3) <X(3)>` + :math:`(a^{2}b^{2}c^{2})` :ref:`X(4) <X(4)>`
+   * :ref:`X_186 <X_186>` = :math:`3` :ref:`X_2 <X_2>` + :math:`(J^{2} - 3)` :ref:`X_3 <X_3>` = :math:`2` :ref:`X_3 <X_3>` + :ref:`X_23 <X_23>` = :math:`(a^{2} - b^{2} - c^{2})(a^{2} + b^{2} - c^{2})(a^{2} - b^{2} + c^{2})` :ref:`X_3 <X_3>` + :math:`(a^{2}b^{2}c^{2})` :ref:`X_4 <X_4>`
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`54 <X(54)>`, :ref:`389 <X(389)>`}, {:ref:`93 <X(93)>`, :ref:`252 <X(252)>`}, {:ref:`98 <X(98)>`, :ref:`935 <X(935)>`}, {:ref:`107 <X(107)>`, :ref:`477 <X(477)>`}, {:ref:`112 <X(112)>`, :ref:`187 <X(187)>`}, {:ref:`249 <X(249)>`, :ref:`250 <X(250)>`}, {2931, 3580}
+   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`54 <X_54>`, :ref:`389 <X_389>`}, {:ref:`93 <X_93>`, :ref:`252 <X_252>`}, {:ref:`98 <X_98>`, :ref:`935 <X_935>`}, {:ref:`107 <X_107>`, :ref:`477 <X_477>`}, {:ref:`112 <X_112>`, :ref:`187 <X_187>`}, {:ref:`249 <X_249>`, :ref:`250 <X_250>`}, {2931, 3580}
 
 .. collapse:: Functional Relations
    :badge: 31 relations
 
-   * :ref:`X(186) <X(186)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`4 <X(4)>`, :ref:`403 <X(403)>`), (:ref:`403 <X(403)>`, :ref:`468 <X(468)>`)
-   * :ref:`X(186) <X(186)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(265) <X(265)>`
-   * :ref:`X(186) <X(186)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(328) <X(328)>`
-   * :ref:`X(186) <X(186)>` = :term:`complement <complement>` of X(3153)
-   * :ref:`X(186) <X(186)>` = :term:`anticomplement <anticomplement>` of X(2072)
-   * :ref:`X(186) <X(186)>` = circumcircle-inverse of :ref:`X(4) <X(4)>`
-   * :ref:`X(186) <X(186)>` = polar-circle-inverse of :ref:`X(5) <X(5)>`
-   * :ref:`X(186) <X(186)>` = Kosnita-circle-inverse of :ref:`X(3) <X(3)>`
-   * :ref:`X(186) <X(186)>` = de-Longchamps-circle-inverse of X(37444)
-   * :ref:`X(186) <X(186)>` = :ref:`X(340) <X(340)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(323) <X(323)>`
-   * :ref:`X(186) <X(186)>` = :ref:`X(50) <X(50)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(323) <X(323)>`
-   * :ref:`X(186) <X(186)>` = :term:`crosspoint <crosspoint>` of :ref:`X(54) <X(54)>` and :ref:`X(74) <X(74)>`
-   * :ref:`X(186) <X(186)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`5 <X(5)>`, :ref:`30 <X(30)>`), (:ref:`621 <X(621)>`, :ref:`622 <X(622)>`)
-   * :ref:`X(186) <X(186)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(216) <X(216)>`\ \ :ref:`X(647) <X(647)>`
-   * :ref:`X(186) <X(186)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of anticomplement of X(38534)
-   * :ref:`X(186) <X(186)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(94) <X(94)>` (line :ref:`X(5) <X(5)>`\ \ :ref:`X(523) <X(523)>`)
-   * :ref:`X(186) <X(186)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X(94) <X(94)>`
-   * :ref:`X(186) <X(186)>` = perspector of :g:`ABC << A B C >>` and the reflection of the circumorthic triangle in the Euler line
-   * :ref:`X(186) <X(186)>` = perspector of :g:`ABC << A B C >>` and the reflection of the Kosnita triangle in the Euler line
-   * :ref:`X(186) <X(186)>` = perspector of :g:`ABC << A B C >>` and the reflection of the :term:`orthic triangle <orthic-triangle>` in the orthic axis
-   * :ref:`X(186) <X(186)>` = reflection of :ref:`X(403) <X(403)>` in the orthic axis
-   * :ref:`X(186) <X(186)>` = crosspoint of :ref:`X(3) <X(3)>` and X(2931) wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
-   * :ref:`X(186) <X(186)>` = homothetic center of circumorthic and Kosnita triangles
-   * :ref:`X(186) <X(186)>` = perspector of circumconic through polar conjugates of PU(5)
-   * :ref:`X(186) <X(186)>` = Hofstadter 3 point
-   * :ref:`X(186) <X(186)>` = :term:`antigonal image <antigonal-image>` of X(5962)
-   * :ref:`X(186) <X(186)>` = :ref:`X(484) <X(484)>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
-   * :ref:`X(186) <X(186)>` = Thomson-isogonal conjugate of X(15131)
-   * :ref:`X(186) <X(186)>` = Ehrmann-vertex-to-orthic :term:`similarity image <similarity-image>` of X(3153)
-   * :ref:`X(186) <X(186)>` = {:ref:`X(3) <X(3)>`,\ :ref:`X(4) <X(4)>`}-harmonic conjugate of X(3520)
-   * :ref:`X(186) <X(186)>` = intersection of the tangent to hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(3) <X(3)>`,\ :ref:`X(15) <X(15)>`}} at :ref:`X(15) <X(15)>` and the tangent to hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(3) <X(3)>`,\ :ref:`X(16) <X(16)>`}} at :ref:`X(16) <X(16)>`
+   * :ref:`X_186 <X_186>` = reflection of X_i in X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`403 <X_403>`), (:ref:`403 <X_403>`, :ref:`468 <X_468>`)
+   * :ref:`X_186 <X_186>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_265 <X_265>`
+   * :ref:`X_186 <X_186>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_328 <X_328>`
+   * :ref:`X_186 <X_186>` = :term:`complement <complement>` of X_3153
+   * :ref:`X_186 <X_186>` = :term:`anticomplement <anticomplement>` of X_2072
+   * :ref:`X_186 <X_186>` = circumcircle-inverse of :ref:`X_4 <X_4>`
+   * :ref:`X_186 <X_186>` = polar-circle-inverse of :ref:`X_5 <X_5>`
+   * :ref:`X_186 <X_186>` = Kosnita-circle-inverse of :ref:`X_3 <X_3>`
+   * :ref:`X_186 <X_186>` = de-Longchamps-circle-inverse of X_37444
+   * :ref:`X_186 <X_186>` = :ref:`X_340 <X_340>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_323 <X_323>`
+   * :ref:`X_186 <X_186>` = :ref:`X_50 <X_50>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_323 <X_323>`
+   * :ref:`X_186 <X_186>` = :term:`crosspoint <crosspoint>` of :ref:`X_54 <X_54>` and :ref:`X_74 <X_74>`
+   * :ref:`X_186 <X_186>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`5 <X_5>`, :ref:`30 <X_30>`), (:ref:`621 <X_621>`, :ref:`622 <X_622>`)
+   * :ref:`X_186 <X_186>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_216 <X_216>`\ \ :ref:`X_647 <X_647>`
+   * :ref:`X_186 <X_186>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of anticomplement of X_38534
+   * :ref:`X_186 <X_186>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_94 <X_94>` (line :ref:`X_5 <X_5>`\ \ :ref:`X_523 <X_523>`)
+   * :ref:`X_186 <X_186>` = :ref:`X_48 <X_48>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X_94 <X_94>`
+   * :ref:`X_186 <X_186>` = perspector of :g:`ABC << A B C >>` and the reflection of the circumorthic triangle in the Euler line
+   * :ref:`X_186 <X_186>` = perspector of :g:`ABC << A B C >>` and the reflection of the :term:`Kosnita triangle <kosnita-triangle>` in the Euler line
+   * :ref:`X_186 <X_186>` = perspector of :g:`ABC << A B C >>` and the reflection of the :term:`orthic triangle <orthic-triangle>` in the orthic axis
+   * :ref:`X_186 <X_186>` = reflection of :ref:`X_403 <X_403>` in the orthic axis
+   * :ref:`X_186 <X_186>` = crosspoint of :ref:`X_3 <X_3>` and X_2931 wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
+   * :ref:`X_186 <X_186>` = homothetic center of circumorthic and Kosnita triangles
+   * :ref:`X_186 <X_186>` = perspector of circumconic through polar conjugates of PU(5)
+   * :ref:`X_186 <X_186>` = Hofstadter 3 point
+   * :ref:`X_186 <X_186>` = :term:`antigonal image <antigonal-image>` of X_5962
+   * :ref:`X_186 <X_186>` = :ref:`X_484 <X_484>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
+   * :ref:`X_186 <X_186>` = Thomson-isogonal conjugate of X_15131
+   * :ref:`X_186 <X_186>` = Ehrmann-vertex-to-orthic :term:`similarity image <similarity-image>` of X_3153
+   * :ref:`X_186 <X_186>` = {:ref:`X_3 <X_3>`,\ :ref:`X_4 <X_4>`}-harmonic conjugate of X_3520
+   * :ref:`X_186 <X_186>` = intersection of the tangent to hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_3 <X_3>`,\ :ref:`X_15 <X_15>`}} at :ref:`X_15 <X_15>` and the tangent to hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_3 <X_3>`,\ :ref:`X_16 <X_16>`}} at :ref:`X_16 <X_16>`
 
 Notes
 -----
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(186) <X(186)>` has Shinagawa coefficients :math:`(4F, -E - 4F)`.
+   As a point on the Euler line, :ref:`X_186 <X_186>` has Shinagawa coefficients :math:`(4F, -E - 4F)`.
 
 .. container:: note-item
 
-   Let :g:`P <P>` and :g:`Q <Q>` be circumcircle antipodes. :ref:`X(186) <X(186)>` is the Euler line intercept, other than :ref:`X(20) <X(20)>`, of circle {:ref:`X(20) <X(20)>`,P,Q}} for all P, Q. (Randy Hutson, August 30, 2020)
+   Let :g:`AA_{1}A_{2} << A A_1 A_2 >>`, :g:`BB_{1}B_{2} << B B_1 B_2 >>`, :g:`CC_{1}C_{2} << C C_1 C_2 >>` be the circumcircle-inscribed equilateral triangles used in the construction of the Trinh triangle. Let :g:`A' <A'>` be the :term:`cevapoint <cevapoint>` of :g:`A_{1} <A_1>` and :g:`A_{2} <A_2>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X_186 <X_186>`. (:person:`Randy Hutson <randy-hutson>`, October 8, 2019
 
 .. container:: note-item
 
-   :ref:`X(186) <X(186)>` is the {:ref:`X(3) <X(3)>`,\ :ref:`X(24) <X(24)>`}-harmonic conjugate of :ref:`X(4) <X(4)>`.
+   Let :g:`P <P>` and :g:`Q <Q>` be circumcircle antipodes. :ref:`X_186 <X_186>` is the Euler line intercept, other than :ref:`X_20 <X_20>`, of circle {:ref:`X_20 <X_20>`,P,Q}} for all P, Q. (Randy Hutson, August 30, 2020)
+
+.. container:: note-item
+
+   :ref:`X_186 <X_186>` is the {:ref:`X_3 <X_3>`,\ :ref:`X_24 <X_24>`}-harmonic conjugate of :ref:`X_4 <X_4>`.
 
 .. toctree::
    :hidden:

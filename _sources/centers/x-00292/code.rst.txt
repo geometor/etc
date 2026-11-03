@@ -1,18 +1,21 @@
-:canonical_id: X(292)
+:canonical_id: X_292
 :type: code
+:subtitle: X_1-HIRST INVERSE OF X_291
 
-X(292) = X(1)-HIRST INVERSE OF X(291) — Code
-============================================
+X_292
+=====
+
+.. rubric:: X_1-HIRST INVERSE OF X_291
 
 .. enunciation::
 
-   Let :g:`A_{33}B_{33}C_{33} << A_33 B_33 C_33 >>` be Gemini triangle 33. Let :g:`A' <A'>` be the perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B_{33} <B_33>`,\ :g:`C_{33} <C_33>`}}, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(292) <X(292)>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
+   :ref:`X_292 <X_292>` is the :ref:`X_1 <X_1>`-:term:`hirst inverse <hirst-inverse>` of :ref:`X_291 <X_291>`.
 
 .. figure:: x-00292.svg
-   :alt: X(292) = X(1)-HIRST INVERSE OF X(291)
+   :alt: X_292 — X_1-HIRST INVERSE OF X_291
    :align: center
 
-   **X(292) = X(1)-HIRST INVERSE OF X(291)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_292** (*X_1-HIRST INVERSE OF X_291*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

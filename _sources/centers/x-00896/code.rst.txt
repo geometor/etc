@@ -1,18 +1,21 @@
-:canonical_id: X(896)
+:canonical_id: X_896
 :type: code
+:subtitle: INTERSECTION OF LINES X_1X_21 AND X_9X_750
 
-X(896) = INTERSECTION OF LINES X(1)X(21) AND X(9)X(750) — Code
-==============================================================
+X_896
+=====
+
+.. rubric:: INTERSECTION OF LINES X_1X_21 AND X_9X_750
 
 .. enunciation::
 
-   :ref:`X(896) <X(896)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(897) <X(897)>`
+   :ref:`X_896 <X_896>` = :term:`crosssum <crosssum>` of :ref:`X_1 <X_1>` and :ref:`X_896 <X_896>`
 
 .. figure:: x-00896.svg
-   :alt: X(896) = INTERSECTION OF LINES X(1)X(21) AND X(9)X(750)
+   :alt: X_896 — INTERSECTION OF LINES X_1X_21 AND X_9X_750
    :align: center
 
-   **X(896) = INTERSECTION OF LINES X(1)X(21) AND X(9)X(750)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_896** (*INTERSECTION OF LINES X_1X_21 AND X_9X_750*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

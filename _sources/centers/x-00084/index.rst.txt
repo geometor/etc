@@ -1,22 +1,31 @@
 :order: 84
 :type: center
-:canonical_id: X(84)
-:dependencies: X(1), X(2), X(3), X(4), X(7), X(8), X(9), X(19), X(20), X(21), X(33), X(36), X(40), X(46), X(56), X(57), X(58), X(64), X(65), X(68), X(80), X(90), X(110), X(171), X(189), X(221), X(256), X(271), X(280), X(282), X(285), X(294), X(309), X(314), X(322), X(580), X(581), X(603), X(650), X(941), X(944), X(946), X(988), X(989), X(990), X(1000), X(1158), X(1459), X(1490), X(2130), X(3345), X(3346), X(3347), X(3353), X(3355), X(3472), X(12717)
+:canonical_id: X_84
+:subtitle: ISOGONAL CONJUGATE OF X_40
+:dependencies: X_1, X_2, X_3, X_4, X_7, X_8, X_9, X_19, X_20, X_21, X_33, X_36, X_40, X_46, X_56, X_57, X_58, X_64, X_65, X_68, X_80, X_90, X_110, X_171, X_189, X_221, X_256, X_271, X_280, X_282, X_285, X_294, X_309, X_314, X_322, X_580, X_581, X_603, X_650, X_941, X_944, X_946, X_988, X_989, X_990, X_1000, X_1158, X_1459, X_1490, X_2130, X_3345, X_3346, X_3347, X_3353, X_3355, X_3472, X_12717
 
-.. _X(84):
+.. _X_84:
 
-X(84) = ISOGONAL CONJUGATE OF X(40)
-===================================
+X_84
+====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_40
 
 .. enunciation::
 
-   Let :g:`A' <A'>`,\ :g:`B' <B'>`,\ :g:`C' <C'>` be the excenters. The perpendiculars from :g:`B' <B'>` to :g:`AB <[ A B ]>` and from :g:`C' <C'>` to :g:`AC <[ A C ]>` meet in a point :g:`A″ <A″>`. Points :g:`B″ <B″>` and :g:`C″ <C″>` are determined cyclically. The hexyl triangle, :g:`A″B″C″ << A″ B″ C″ >>`, is perspective to :g:`ABC << A B C >>`, and :ref:`X(84) <X(84)>` is the perspector.
+   :ref:`X_84 <X_84>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_40 <X_40>`.
 
 .. figure:: x-00084.svg
-   :alt: X(84) = ISOGONAL CONJUGATE OF X(40)
+   :alt: X_84 — ISOGONAL CONJUGATE OF X_40
    :align: center
 
-   **X(84) = ISOGONAL CONJUGATE OF X(40)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_84** (*ISOGONAL CONJUGATE OF X_40*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{3, 9} <{ 3, 9 }>`, :g:`{8, 20} <{ 8, 20 }>`
+   * **Related Centers:** :g:`X_40 <X_40>` (:ref:`BEVAN POINT <X_40>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_9 <X_9>` (:ref:`MITTENPUNKT <X_9>`), :g:`X_8 <X_8>` (:ref:`NAGEL POINT <X_8>`), :g:`X_20 <X_20>` (:ref:`DE LONGCHAMPS POINT <X_20>`)
 
 .. signature:: center
 
@@ -31,50 +40,54 @@ X(84) = ISOGONAL CONJUGATE OF X(40)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(84) <X(84)>` = :math:`(r + 2R)` :ref:`X(1) <X(1)>` - :math:`6R` :ref:`X(2) <X(2)>` + :math:`(4R - 2r)` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
+   * :ref:`X_84 <X_84>` = :math:`(r + 2R)` :ref:`X_1 <X_1>` - :math:`6R` :ref:`X_2 <X_2>` + :math:`(4R - 2r)` :ref:`X_3 <X_3>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. container:: note-item
 
-   :ref:`X(84) <X(84)>` lies on the Darboux cubic, the circumellipse with center :ref:`X(9) <X(9)>`.
+   :ref:`X_84 <X_84>` lies on the Darboux cubic, the circumellipse with center :ref:`X_9 <X_9>`.
 
 .. collapse:: Incident Central Lines
    :badge: 20 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`221 <X(221)>`}, {:ref:`3 <X(3)>`, :ref:`9 <X(9)>`}, {:ref:`4 <X(4)>`, :ref:`57 <X(57)>`}, {:ref:`7 <X(7)>`, :ref:`946 <X(946)>`}, {:ref:`8 <X(8)>`, :ref:`20 <X(20)>`}, {:ref:`21 <X(21)>`, :ref:`285 <X(285)>`}, {:ref:`33 <X(33)>`, :ref:`603 <X(603)>`}, {:ref:`36 <X(36)>`, :ref:`90 <X(90)>`}, {:ref:`46 <X(46)>`, :ref:`80 <X(80)>`}, {:ref:`58 <X(58)>`, :ref:`990 <X(990)>`}, {:ref:`64 <X(64)>`, 3353}, {:ref:`171 <X(171)>`, :ref:`989 <X(989)>`}, {:ref:`256 <X(256)>`, :ref:`988 <X(988)>`}, {:ref:`294 <X(294)>`, :ref:`580 <X(580)>`}, {:ref:`309 <X(309)>`, :ref:`314 <X(314)>`}, {:ref:`581 <X(581)>`, :ref:`941 <X(941)>`}, {:ref:`944 <X(944)>`, :ref:`1000 <X(1000)>`}, {2130, 3345}, {3346, 3472}, {3347, 3355}
+   {:ref:`1 <X_1>`, :ref:`221 <X_221>`}, {:ref:`3 <X_3>`, :ref:`9 <X_9>`}, {:ref:`4 <X_4>`, :ref:`57 <X_57>`}, {:ref:`7 <X_7>`, :ref:`946 <X_946>`}, {:ref:`8 <X_8>`, :ref:`20 <X_20>`}, {:ref:`21 <X_21>`, :ref:`285 <X_285>`}, {:ref:`33 <X_33>`, :ref:`603 <X_603>`}, {:ref:`36 <X_36>`, :ref:`90 <X_90>`}, {:ref:`46 <X_46>`, :ref:`80 <X_80>`}, {:ref:`58 <X_58>`, :ref:`990 <X_990>`}, {:ref:`64 <X_64>`, 3353}, {:ref:`171 <X_171>`, :ref:`989 <X_989>`}, {:ref:`256 <X_256>`, :ref:`988 <X_988>`}, {:ref:`294 <X_294>`, :ref:`580 <X_580>`}, {:ref:`309 <X_309>`, :ref:`314 <X_314>`}, {:ref:`581 <X_581>`, :ref:`941 <X_941>`}, {:ref:`944 <X_944>`, :ref:`1000 <X_1000>`}, {2130, 3345}, {3346, 3472}, {3347, 3355}
 
 .. collapse:: Functional Relations
    :badge: 18 relations
 
-   * :ref:`X(84) <X(84)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`40 <X(40)>`, 1158), (1490, :ref:`3 <X(3)>`)
-   * :ref:`X(84) <X(84)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(40) <X(40)>`
-   * :ref:`X(84) <X(84)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(322) <X(322)>`
-   * :ref:`X(84) <X(84)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`189 <X(189)>`, :ref:`282 <X(282)>`), (:ref:`280 <X(280)>`, :ref:`1 <X(1)>`)
-   * :ref:`X(84) <X(84)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`19 <X(19)>`, :ref:`57 <X(57)>`), (:ref:`56 <X(56)>`, :ref:`1 <X(1)>`)
-   * :ref:`X(84) <X(84)>` = :ref:`X(280) <X(280)>`-:term:`aleph conjugate <aleph-conjugate>` of :ref:`X(84) <X(84)>`
-   * :ref:`X(84) <X(84)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`271 <X(271)>`, :ref:`3 <X(3)>`), (:ref:`280 <X(280)>`, :ref:`280 <X(280)>`), (:ref:`285 <X(285)>`, :ref:`84 <X(84)>`)
-   * :ref:`X(84) <X(84)>` = :ref:`X(68) <X(68)>`-of-the-hexyl-triangle
-   * :ref:`X(84) <X(84)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(650) <X(650)>`\ X(1459)
-   * :ref:`X(84) <X(84)>` = perspector of :g:`ABC << A B C >>` and the reflection in :ref:`X(9) <X(9)>` of the :term:`antipedal triangle <antipedal-triangle>` of :ref:`X(9) <X(9)>`
-   * :ref:`X(84) <X(84)>` = Danneels point of :ref:`X(110) <X(110)>`
-   * :ref:`X(84) <X(84)>` = trilinear product of vertices of hexyl triangle (i.e., the extraversions of :ref:`X(40) <X(40)>`)
-   * :ref:`X(84) <X(84)>` = hexyl-isotomic conjugate of X(12717)
-   * :ref:`X(84) <X(84)>` = orthologic center of hexyl triangle to inverse(n(hexyl triangle)); the reciprocal orthologic center is :ref:`X(65) <X(65)>`
-   * :ref:`X(84) <X(84)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of extouch and Hutson-:term:`extouch triangles <extouch-triangle>`
-   * :ref:`X(84) <X(84)>` = Cundy-Parry Phi transform of :ref:`X(9) <X(9)>`
-   * :ref:`X(84) <X(84)>` = Cundy-Parry Psi transform of :ref:`X(57) <X(57)>`
-   * :ref:`X(84) <X(84)>` = intouch-to-excentral :term:`similarity image <similarity-image>` of :ref:`X(4) <X(4)>`
+   * :ref:`X_84 <X_84>` = reflection of X_i in X_j for these (i,j): (:ref:`40 <X_40>`, 1158), (1490, :ref:`3 <X_3>`)
+   * :ref:`X_84 <X_84>` = isogonal conjugate of :ref:`X_40 <X_40>`
+   * :ref:`X_84 <X_84>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_322 <X_322>`
+   * :ref:`X_84 <X_84>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`189 <X_189>`, :ref:`282 <X_282>`), (:ref:`280 <X_280>`, :ref:`1 <X_1>`)
+   * :ref:`X_84 <X_84>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`19 <X_19>`, :ref:`57 <X_57>`), (:ref:`56 <X_56>`, :ref:`1 <X_1>`)
+   * :ref:`X_84 <X_84>` = :ref:`X_280 <X_280>`-:term:`aleph conjugate <aleph-conjugate>` of :ref:`X_84 <X_84>`
+   * :ref:`X_84 <X_84>` = X_i-:term:`beth conjugate <beth-conjugate>` of X_j for these (i,j): (:ref:`271 <X_271>`, :ref:`3 <X_3>`), (:ref:`280 <X_280>`, :ref:`280 <X_280>`), (:ref:`285 <X_285>`, :ref:`84 <X_84>`)
+   * :ref:`X_84 <X_84>` = :ref:`X_68 <X_68>`-of-the-hexyl-triangle
+   * :ref:`X_84 <X_84>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_650 <X_650>`\ X_1459
+   * :ref:`X_84 <X_84>` = perspector of :g:`ABC << A B C >>` and the reflection in :ref:`X_9 <X_9>` of the :term:`antipedal triangle <antipedal-triangle>` of :ref:`X_9 <X_9>`
+   * :ref:`X_84 <X_84>` = Danneels point of :ref:`X_110 <X_110>`
+   * :ref:`X_84 <X_84>` = trilinear product of vertices of :term:`hexyl triangle <hexyl-triangle>` (i.e., the extraversions of :ref:`X_40 <X_40>`)
+   * :ref:`X_84 <X_84>` = hexyl-isotomic conjugate of X_12717
+   * :ref:`X_84 <X_84>` = orthologic center of hexyl triangle to inverse(n(hexyl triangle)); the reciprocal orthologic center is :ref:`X_65 <X_65>`
+   * :ref:`X_84 <X_84>` = perspector of :g:`ABC << A B C >>` and cross-triangle of extouch and Hutson-:term:`extouch triangles <extouch-triangle>`
+   * :ref:`X_84 <X_84>` = Cundy-Parry Phi transform of :ref:`X_9 <X_9>`
+   * :ref:`X_84 <X_84>` = Cundy-Parry Psi transform of :ref:`X_57 <X_57>`
+   * :ref:`X_84 <X_84>` = intouch-to-excentral :term:`similarity image <similarity-image>` of :ref:`X_4 <X_4>`
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the extouch triangle. Let :g:`A″ <A″>` be the orthocenter of :g:`AB'C' << A B' C' >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(84) <X(84)>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
+   Let :g:`A' <J_a>`,\ :g:`B' <J_b>`,\ :g:`C' <J_c>` be the excenters. The perpendiculars from :g:`B' <J_b>` to :g:`AB <[ A B ]>` and from :g:`C' <J_c>` to :g:`AC <[ A C ]>` meet in a point :g:`A″ <A″>`. Points :g:`B″ <B″>` and :g:`C″ <C″>` are determined cyclically. The hexyl triangle, :g:`A″B″C″ << A″ B″ C″ >>`, is perspective to :g:`ABC << A B C >>`, and :ref:`X_84 <X_84>` is the perspector.
 
 .. container:: note-item
 
-   Let :g:`A_{1}B_{1}C_{1} << A_1 B_1 C_1 >>` be the 1st Conway triangle. Let :g:`A' <A'>` be the :term:`crosspoint <crosspoint>` of :g:`B_{1} <B_1>` and :g:`C_{1} <C_1>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(84) <X(84)>`. (Randy Hutson, December 2, 2017)
+   Let :g:`A'B'C' << N_a N_b N_c >>` be the extouch triangle. Let :g:`A″ <A″>` be the orthocenter of :g:`AB'C' << A N_b N_c >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_84 <X_84>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
+
+.. container:: note-item
+
+   Let :g:`A_{1}B_{1}C_{1} << A_1 B_1 C_1 >>` be the 1st Conway triangle. Let :g:`A' <A'>` be the :term:`crosspoint <crosspoint>` of :g:`B_{1} <B_1>` and :g:`C_{1} <C_1>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X_84 <X_84>`. (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 

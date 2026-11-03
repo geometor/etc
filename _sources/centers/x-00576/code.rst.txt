@@ -1,18 +1,21 @@
-:canonical_id: X(576)
+:canonical_id: X_576
 :type: code
+:subtitle: ORTHOHARMONIC OF X_187
 
-X(576) = ORTHOHARMONIC OF X(187) — Code
-=======================================
+X_576
+=====
+
+.. rubric:: ORTHOHARMONIC OF X_187
 
 .. enunciation::
 
-   :ref:`X(576) <X(576)>` = circumcircle-inverse of X(38225)
+   :ref:`X_576 <X_576>` = Brocard-circle-inverse of :ref:`X_575 <X_575>`
 
 .. figure:: x-00576.svg
-   :alt: X(576) = ORTHOHARMONIC OF X(187)
+   :alt: X_576 — ORTHOHARMONIC OF X_187
    :align: center
 
-   **X(576) = ORTHOHARMONIC OF X(187)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_576** (*ORTHOHARMONIC OF X_187*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,18 +1,21 @@
-:canonical_id: X(32)
+:canonical_id: X_32
 :type: code
+:subtitle: 3rd POWER POINT
 
-X(32) = 3rd POWER POINT — Code
-==============================
+X_32
+====
+
+.. rubric:: 3rd POWER POINT
 
 .. enunciation::
 
-   The 5th Brocard triangle is here introduced as the vertex triangle of the circumcevian triangles of the 1st and 2nd Brocard points. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
+   :ref:`X_32 <X_32>` = Brocard-circle-inverse of :ref:`X_39 <X_39>`
 
 .. figure:: x-00032.svg
-   :alt: X(32) = 3rd POWER POINT
+   :alt: X_32 — 3rd POWER POINT
    :align: center
 
-   **X(32) = 3rd POWER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_32** (*3rd POWER POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

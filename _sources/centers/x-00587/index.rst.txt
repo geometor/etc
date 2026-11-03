@@ -1,18 +1,27 @@
 :order: 587
 :type: center
-:canonical_id: X(587)
-:dependencies: X(2), X(92)
+:canonical_id: X_587
+:subtitle: POINT ARCTURUS
+:dependencies: X_2, X_92
 
-.. _X(587):
+.. _X_587:
 
-X(587) = POINT ARCTURUS
-=======================
+X_587
+=====
+
+.. rubric:: POINT ARCTURUS
 
 .. figure:: x-00587.svg
-   :alt: X(587) = POINT ARCTURUS
+   :alt: X_587 — POINT ARCTURUS
    :align: center
 
-   **X(587) = POINT ARCTURUS** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_587** (*POINT ARCTURUS*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 92} <{ 2, 92 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_92 <X_92>` (:ref:`CEVAPOINT OF INCENTER AND CLAWSON POINT <X_92>`)
 
 .. signature:: center
 
@@ -24,7 +33,7 @@ X(587) = POINT ARCTURUS
    :badge: 1 line
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`92 <X(92)>`}
+   {:ref:`2 <X_2>`, :ref:`92 <X_92>`}
 
 .. toctree::
    :hidden:

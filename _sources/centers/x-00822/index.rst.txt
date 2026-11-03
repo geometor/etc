@@ -1,22 +1,31 @@
 :order: 822
 :type: center
-:canonical_id: X(822)
-:dependencies: X(1), X(2), X(4), X(29), X(44), X(48), X(63), X(92), X(162), X(163), X(513), X(661), X(774), X(823), X(1021), X(2658), X(36126), X(38985)
+:canonical_id: X_822
+:subtitle: CROSSDIFFERENCE OF X_1 AND X_29
+:dependencies: X_1, X_2, X_4, X_29, X_44, X_48, X_63, X_92, X_162, X_163, X_513, X_661, X_774, X_823, X_1021, X_2658, X_36126, X_38985
 
-.. _X(822):
+.. _X_822:
 
-X(822) = CROSSDIFFERENCE OF X(1) AND X(29)
-==========================================
+X_822
+=====
+
+.. rubric:: CROSSDIFFERENCE OF X_1 AND X_29
 
 .. enunciation::
 
-   :ref:`X(822) <X(822)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(823) <X(823)>`
+   :ref:`X_822 <X_822>` = :ref:`X_163 <X_163>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_48 <X_48>`
 
 .. figure:: x-00822.svg
-   :alt: X(822) = CROSSDIFFERENCE OF X(1) AND X(29)
+   :alt: X_822 — CROSSDIFFERENCE OF X_1 AND X_29
    :align: center
 
-   **X(822) = CROSSDIFFERENCE OF X(1) AND X(29)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_822** (*CROSSDIFFERENCE OF X_1 AND X_29*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{44, 513} <{ 44, 513 }>`
+   * **Related Centers:** :g:`X_163 <X_163>` (:ref:`TRILINEAR PRODUCT X(6)*X(110) <X_163>`), :g:`X_48 <X_48>` (:ref:`CROSSPOINT OF X(1) AND X(63) <X_48>`), :g:`X_44 <X_44>` (:ref:`-LINE CONJUGATE OF X(1) <X_44>`), :g:`X_513 <X_513>` (:ref:`ISOGONAL CONJUGATE OF X(100) <X_513>`)
 
 .. signature:: center
 
@@ -36,24 +45,24 @@ X(822) = CROSSDIFFERENCE OF X(1) AND X(29)
    :badge: 1 line
    :class: line-catalog
 
-   {:ref:`44 <X(44)>`, :ref:`513 <X(513)>`}
+   {:ref:`44 <X_44>`, :ref:`513 <X_513>`}
 
 .. collapse:: Functional Relations
    :badge: 13 relations
 
-   * :ref:`X(822) <X(822)>` = isogonal conjugate of :ref:`X(823) <X(823)>`
-   * :ref:`X(822) <X(822)>` = :ref:`X(163) <X(163)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(48) <X(48)>`
-   * :ref:`X(822) <X(822)>` = :term:`crosspoint <crosspoint>` of :ref:`X(48) <X(48)>` and :ref:`X(163) <X(163)>`
-   * :ref:`X(822) <X(822)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`822 <X(822)>`), (:ref:`29 <X(29)>`, 1021), (:ref:`661 <X(661)>`, :ref:`774 <X(774)>`)
-   * :ref:`X(822) <X(822)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(1) <X(1)>`\ \ :ref:`X(29) <X(29)>`
-   * :ref:`X(822) <X(822)>` = perspector, wrt :term:`excentral triangle <excentral-triangle>`, of bianticevian conic of :ref:`X(1) <X(1)>` and :ref:`X(4) <X(4)>`
-   * :ref:`X(822) <X(822)>` = :ref:`X(92) <X(92)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(162) <X(162)>`
-   * :ref:`X(822) <X(822)>` = bicentric difference of PU(83)
-   * :ref:`X(822) <X(822)>` = polar conjugate of :term:`isotomic conjugate <isotomic-conjugate>` of isogonal conjugate of X(36126)
-   * :ref:`X(822) <X(822)>` = PU(83)-harmonic conjugate of X(2658)
-   * :ref:`X(822) <X(822)>` = :ref:`X(63) <X(63)>`-isoconjugate of X(36126)
-   * :ref:`X(822) <X(822)>` = :ref:`X(2) <X(2)>`-Ceva conjugate of X(38985)
-   * :ref:`X(822) <X(822)>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(1) <X(1)>`,\ :ref:`X(48) <X(48)>`}}
+   * :ref:`X_822 <X_822>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_823 <X_823>`
+   * :ref:`X_822 <X_822>` = :ref:`X_163 <X_163>`-Ceva conjugate of :ref:`X_48 <X_48>`
+   * :ref:`X_822 <X_822>` = :term:`crosspoint <crosspoint>` of :ref:`X_48 <X_48>` and :ref:`X_163 <X_163>`
+   * :ref:`X_822 <X_822>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`822 <X_822>`), (:ref:`29 <X_29>`, 1021), (:ref:`661 <X_661>`, :ref:`774 <X_774>`)
+   * :ref:`X_822 <X_822>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_1 <X_1>`\ \ :ref:`X_29 <X_29>`
+   * :ref:`X_822 <X_822>` = perspector, wrt :term:`excentral triangle <excentral-triangle>`, of bianticevian conic of :ref:`X_1 <X_1>` and :ref:`X_4 <X_4>`
+   * :ref:`X_822 <X_822>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_162 <X_162>`
+   * :ref:`X_822 <X_822>` = bicentric difference of PU(83)
+   * :ref:`X_822 <X_822>` = polar conjugate of :term:`isotomic conjugate <isotomic-conjugate>` of isogonal conjugate of X_36126
+   * :ref:`X_822 <X_822>` = PU(83)-harmonic conjugate of X_2658
+   * :ref:`X_822 <X_822>` = :ref:`X_63 <X_63>`-isoconjugate of X_36126
+   * :ref:`X_822 <X_822>` = :ref:`X_2 <X_2>`-Ceva conjugate of X_38985
+   * :ref:`X_822 <X_822>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_1 <X_1>`,\ :ref:`X_48 <X_48>`}}
 
 .. toctree::
    :hidden:

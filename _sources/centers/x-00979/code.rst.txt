@@ -1,18 +1,21 @@
-:canonical_id: X(979)
+:canonical_id: X_979
 :type: code
+:subtitle: X_8-CROSS CONJUGATE OF X_1
 
-X(979) = X(8)-CROSS CONJUGATE OF X(1) — Code
-============================================
+X_979
+=====
+
+.. rubric:: X_8-CROSS CONJUGATE OF X_1
 
 .. enunciation::
 
-   :ref:`X(979) <X(979)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(978) <X(978)>`
+   :ref:`X_979 <X_979>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_978 <X_978>`
 
 .. figure:: x-00979.svg
-   :alt: X(979) = X(8)-CROSS CONJUGATE OF X(1)
+   :alt: X_979 — X_8-CROSS CONJUGATE OF X_1
    :align: center
 
-   **X(979) = X(8)-CROSS CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_979** (*X_8-CROSS CONJUGATE OF X_1*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

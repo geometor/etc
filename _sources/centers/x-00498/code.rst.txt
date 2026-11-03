@@ -1,18 +1,21 @@
-:canonical_id: X(498)
+:canonical_id: X_498
 :type: code
+:subtitle: YFF CONCURRENT CONGRUENT CIRCLES POINT
 
-X(498) = YFF CONCURRENT CONGRUENT CIRCLES POINT — Code
-======================================================
+X_498
+=====
+
+.. rubric:: YFF CONCURRENT CONGRUENT CIRCLES POINT
 
 .. enunciation::
 
-   :ref:`X(498) <X(498)>` and :ref:`X(499) <X(499)>` are harmonic conjugate points with respect to :ref:`X(1) <X(1)>` and :ref:`X(2) <X(2)>`, in analogy with such pairs with respect to :ref:`X(1) <X(1)>`, :ref:`X(4) <X(4)>` and with respect to :ref:`X(1) <X(1)>`, :ref:`X(5) <X(5)>`.
+   :ref:`X_498 <X_498>` and :ref:`X_499 <X_499>` are harmonic conjugate points with respect to :ref:`X_1 <X_1>` and :ref:`X_2 <X_2>`, in analogy with such pairs with respect to :ref:`X_1 <X_1>`, :ref:`X_4 <X_4>` and with respect to :ref:`X_1 <X_1>`, :ref:`X_5 <X_5>`.
 
 .. figure:: x-00498.svg
-   :alt: X(498) = YFF CONCURRENT CONGRUENT CIRCLES POINT
+   :alt: X_498 — YFF CONCURRENT CONGRUENT CIRCLES POINT
    :align: center
 
-   **X(498) = YFF CONCURRENT CONGRUENT CIRCLES POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_498** (*YFF CONCURRENT CONGRUENT CIRCLES POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,18 +1,21 @@
-:canonical_id: X(313)
+:canonical_id: X_313
 :type: code
+:subtitle: ISOTOMIC CONJUGATE OF X_58
 
-X(313) = ISOTOMIC CONJUGATE OF X(58) — Code
-===========================================
+X_313
+=====
+
+.. rubric:: ISOTOMIC CONJUGATE OF X_58
 
 .. enunciation::
 
-   Let :g:`A_{40}B_{40}C_{40} << A_40 B_40 C_40 >>` be Gemini triangle 40. Let :g:`A' <A'>` be the center of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B_{40} <B_40>`,\ :g:`C_{40} <C_40>`}}, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(313) <X(313)>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
+   :ref:`X_313 <X_313>` is the :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_58 <X_58>`.
 
 .. figure:: x-00313.svg
-   :alt: X(313) = ISOTOMIC CONJUGATE OF X(58)
+   :alt: X_313 — ISOTOMIC CONJUGATE OF X_58
    :align: center
 
-   **X(313) = ISOTOMIC CONJUGATE OF X(58)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_313** (*ISOTOMIC CONJUGATE OF X_58*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

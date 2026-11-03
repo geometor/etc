@@ -1,18 +1,21 @@
-:canonical_id: X(881)
+:canonical_id: X_881
 :type: code
+:subtitle: ISOGONAL CONJUGATE OF X_880
 
-X(881) = ISOGONAL CONJUGATE OF X(880) — Code
-============================================
+X_881
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_880
 
 .. enunciation::
 
-   :ref:`X(881) <X(881)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(880) <X(880)>`
+   :ref:`X_881 <X_881>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_880 <X_880>`.
 
 .. figure:: x-00881.svg
-   :alt: X(881) = ISOGONAL CONJUGATE OF X(880)
+   :alt: X_881 — ISOGONAL CONJUGATE OF X_880
    :align: center
 
-   **X(881) = ISOGONAL CONJUGATE OF X(880)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_881** (*ISOGONAL CONJUGATE OF X_880*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

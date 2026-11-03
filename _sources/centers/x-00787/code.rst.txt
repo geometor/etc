@@ -1,18 +1,21 @@
-:canonical_id: X(787)
+:canonical_id: X_787
 :type: code
+:subtitle: o-(- 3, - 1) CIRCUMCIRCLE POINT
 
-X(787) = o-(- 3, - 1) CIRCUMCIRCLE POINT — Code
-===============================================
+X_787
+=====
+
+.. rubric:: o-(- 3, - 1) CIRCUMCIRCLE POINT
 
 .. enunciation::
 
-   :ref:`X(787) <X(787)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(786) <X(786)>`
+   :ref:`X_787 <X_787>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_786 <X_786>`
 
 .. figure:: x-00787.svg
-   :alt: X(787) = o-(- 3, - 1) CIRCUMCIRCLE POINT
+   :alt: X_787 — o-(- 3, - 1) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(787) = o-(- 3, - 1) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_787** (*o-(- 3, - 1) CIRCUMCIRCLE POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

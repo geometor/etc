@@ -1,18 +1,21 @@
-:canonical_id: X(417)
+:canonical_id: X_417
 :type: code
+:subtitle: X_3-CEVA CONJUGATE OF X_185
 
-X(417) = X(3)-CEVA CONJUGATE OF X(185) — Code
-=============================================
+X_417
+=====
+
+.. rubric:: X_3-CEVA CONJUGATE OF X_185
 
 .. enunciation::
 
-   :ref:`X(417) <X(417)>` = :term:`isogonal conjugate <isogonal-conjugate>` of the polar conjugate of X(6509)
+   :ref:`X_417 <X_417>` = :term:`isogonal conjugate <isogonal-conjugate>` of the polar conjugate of X_6509
 
 .. figure:: x-00417.svg
-   :alt: X(417) = X(3)-CEVA CONJUGATE OF X(185)
+   :alt: X_417 — X_3-CEVA CONJUGATE OF X_185
    :align: center
 
-   **X(417) = X(3)-CEVA CONJUGATE OF X(185)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_417** (*X_3-CEVA CONJUGATE OF X_185*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

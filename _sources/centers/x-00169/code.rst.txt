@@ -1,18 +1,21 @@
-:canonical_id: X(169)
+:canonical_id: X_169
 :type: code
+:subtitle: X_85-CEVA CONJUGATE OF X_1
 
-X(169) = X(85)-CEVA CONJUGATE OF X(1) — Code
-============================================
+X_169
+=====
+
+.. rubric:: X_85-CEVA CONJUGATE OF X_1
 
 .. enunciation::
 
-   :ref:`X(169) <X(169)>` = :term:`complement <complement>` of X(17170)
+   :ref:`X_169 <X_169>` = :ref:`X_85 <X_85>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_1 <X_1>`
 
 .. figure:: x-00169.svg
-   :alt: X(169) = X(85)-CEVA CONJUGATE OF X(1)
+   :alt: X_169 — X_85-CEVA CONJUGATE OF X_1
    :align: center
 
-   **X(169) = X(85)-CEVA CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_169** (*X_85-CEVA CONJUGATE OF X_1*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

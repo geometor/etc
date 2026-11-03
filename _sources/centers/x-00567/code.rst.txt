@@ -1,18 +1,21 @@
-:canonical_id: X(567)
+:canonical_id: X_567
 :type: code
+:subtitle: ORTHOGONAL OF X_50
 
-X(567) = ORTHOGONAL OF X(50) — Code
-===================================
+X_567
+=====
+
+.. rubric:: ORTHOGONAL OF X_50
 
 .. enunciation::
 
-   :ref:`X(567) <X(567)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(9221)
+   :ref:`X_567 <X_567>` = Brocard-circle-inverse of :ref:`X_568 <X_568>`
 
 .. figure:: x-00567.svg
-   :alt: X(567) = ORTHOGONAL OF X(50)
+   :alt: X_567 — ORTHOGONAL OF X_50
    :align: center
 
-   **X(567) = ORTHOGONAL OF X(50)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_567** (*ORTHOGONAL OF X_50*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

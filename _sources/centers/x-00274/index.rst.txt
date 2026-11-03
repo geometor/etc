@@ -1,22 +1,31 @@
 :order: 274
 :type: center
-:canonical_id: X(274)
-:dependencies: X(1), X(2), X(7), X(8), X(10), X(21), X(28), X(37), X(39), X(48), X(57), X(58), X(69), X(75), X(81), X(85), X(86), X(88), X(99), X(110), X(183), X(213), X(239), X(242), X(264), X(278), X(286), X(291), X(310), X(314), X(315), X(320), X(325), X(331), X(333), X(348), X(350), X(377), X(442), X(443), X(474), X(475), X(669), X(767), X(798), X(799), X(870), X(894), X(959), X(961), X(1014), X(1655), X(1824)
+:canonical_id: X_274
+:subtitle: ISOGONAL CONJUGATE OF X_213
+:dependencies: X_1, X_2, X_7, X_8, X_10, X_21, X_28, X_37, X_39, X_48, X_57, X_58, X_69, X_75, X_81, X_85, X_86, X_88, X_99, X_110, X_183, X_213, X_239, X_242, X_264, X_278, X_286, X_291, X_310, X_314, X_315, X_320, X_325, X_331, X_333, X_348, X_350, X_377, X_442, X_443, X_474, X_475, X_669, X_767, X_798, X_799, X_870, X_894, X_959, X_961, X_1014, X_1655, X_1824
 
-.. _X(274):
+.. _X_274:
 
-X(274) = ISOGONAL CONJUGATE OF X(213)
-=====================================
+X_274
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_213
 
 .. enunciation::
 
-   Let :g:`A_{b} <A_b>`, :g:`A_{c} <A_c>`, :g:`B_{c} <B_c>`, :g:`B_{a} <B_a>`, :g:`C_{a} <C_a>`, :g:`C_{b} <C_b>` be as in the construction of the Conway circle; see http://mathworld.wolfram.com/ConwayCircle.html. Let :g:`O_{a} <O_a>` be the circumcircle of :g:`AB_{a}C_{a} << A B_a C_a >>`, and define :g:`O_{b} <O_b>` and :g:`O_{c} <O_c>` cyclically. Then :ref:`X(274) <X(274)>` is the radical center of :g:`O_{a} <O_a>`, :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>`. see also :ref:`X(8) <X(8)>` and :ref:`X(21) <X(21)>`. (:person:`Randy Hutson <randy-hutson>`, April 9, 2016)
+   :ref:`X_274 <X_274>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_213 <X_213>`.
 
 .. figure:: x-00274.svg
-   :alt: X(274) = ISOGONAL CONJUGATE OF X(213)
+   :alt: X_274 — ISOGONAL CONJUGATE OF X_213
    :align: center
 
-   **X(274) = ISOGONAL CONJUGATE OF X(213)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_274** (*ISOGONAL CONJUGATE OF X_213*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 39} <{ 2, 39 }>`, :g:`{1, 75} <{ 1, 75 }>`
+   * **Related Centers:** :g:`X_213 <X_213>` (:ref:`-CEVA CONJUGATE OF X(42) <X_213>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_39 <X_39>` (:ref:`BROCARD MIDPOINT <X_39>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_75 <X_75>` (:ref:`ISOTOMIC CONJUGATE OF INCENTER <X_75>`)
 
 .. signature:: center
 
@@ -33,25 +42,32 @@ X(274) = ISOGONAL CONJUGATE OF X(213)
    :badge: 19 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`75 <X(75)>`}, {:ref:`2 <X(2)>`, :ref:`39 <X(39)>`}, {:ref:`7 <X(7)>`, :ref:`959 <X(959)>`}, {:ref:`10 <X(10)>`, :ref:`291 <X(291)>`}, {:ref:`21 <X(21)>`, :ref:`99 <X(99)>`}, {:ref:`28 <X(28)>`, :ref:`242 <X(242)>`}, {:ref:`57 <X(57)>`, :ref:`85 <X(85)>`}, {:ref:`58 <X(58)>`, :ref:`870 <X(870)>`}, {:ref:`69 <X(69)>`, :ref:`443 <X(443)>`}, {:ref:`81 <X(81)>`, :ref:`239 <X(239)>`}, {:ref:`88 <X(88)>`, :ref:`799 <X(799)>`}, {:ref:`110 <X(110)>`, :ref:`767 <X(767)>`}, {:ref:`183 <X(183)>`, :ref:`474 <X(474)>`}, {:ref:`213 <X(213)>`, :ref:`894 <X(894)>`}, {:ref:`264 <X(264)>`, :ref:`475 <X(475)>`}, {:ref:`278 <X(278)>`, :ref:`331 <X(331)>`}, {:ref:`315 <X(315)>`, :ref:`377 <X(377)>`}, {:ref:`325 <X(325)>`, :ref:`442 <X(442)>`}, {:ref:`961 <X(961)>`, 1014}
+   {:ref:`1 <X_1>`, :ref:`75 <X_75>`}, {:ref:`2 <X_2>`, :ref:`39 <X_39>`}, {:ref:`7 <X_7>`, :ref:`959 <X_959>`}, {:ref:`10 <X_10>`, :ref:`291 <X_291>`}, {:ref:`21 <X_21>`, :ref:`99 <X_99>`}, {:ref:`28 <X_28>`, :ref:`242 <X_242>`}, {:ref:`57 <X_57>`, :ref:`85 <X_85>`}, {:ref:`58 <X_58>`, :ref:`870 <X_870>`}, {:ref:`69 <X_69>`, :ref:`443 <X_443>`}, {:ref:`81 <X_81>`, :ref:`239 <X_239>`}, {:ref:`88 <X_88>`, :ref:`799 <X_799>`}, {:ref:`110 <X_110>`, :ref:`767 <X_767>`}, {:ref:`183 <X_183>`, :ref:`474 <X_474>`}, {:ref:`213 <X_213>`, :ref:`894 <X_894>`}, {:ref:`264 <X_264>`, :ref:`475 <X_475>`}, {:ref:`278 <X_278>`, :ref:`331 <X_331>`}, {:ref:`315 <X_315>`, :ref:`377 <X_377>`}, {:ref:`325 <X_325>`, :ref:`442 <X_442>`}, {:ref:`961 <X_961>`, 1014}
 
 .. collapse:: Functional Relations
    :badge: 14 relations
 
-   * :ref:`X(274) <X(274)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(213) <X(213)>`
-   * :ref:`X(274) <X(274)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(37) <X(37)>`
-   * :ref:`X(274) <X(274)>` = :term:`complement <complement>` of X(1655)
-   * :ref:`X(274) <X(274)>` = :ref:`X(310) <X(310)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(314) <X(314)>`
-   * :ref:`X(274) <X(274)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`75 <X(75)>`), (:ref:`85 <X(85)>`, :ref:`348 <X(348)>`), (:ref:`86 <X(86)>`, :ref:`333 <X(333)>`)
-   * :ref:`X(274) <X(274)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`86 <X(86)>`), (:ref:`75 <X(75)>`, :ref:`310 <X(310)>`), (:ref:`81 <X(81)>`, :ref:`286 <X(286)>`), (:ref:`333 <X(333)>`, :ref:`314 <X(314)>`)
-   * :ref:`X(274) <X(274)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(669) <X(669)>`\ \ :ref:`X(798) <X(798)>`
-   * :ref:`X(274) <X(274)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(320) <X(320)>`\ \ :ref:`X(350) <X(350)>` (:term:`anticomplement <anticomplement>` of antiorthic axis)
-   * :ref:`X(274) <X(274)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X(1824)
-   * :ref:`X(274) <X(274)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of X(1824)
-   * :ref:`X(274) <X(274)>` = trilinear product of vertices of Gemini triangle 1
-   * :ref:`X(274) <X(274)>` = trilinear product of vertices of Gemini triangle 2
-   * :ref:`X(274) <X(274)>` = trilinear product of vertices of Gemini triangle 3
-   * :ref:`X(274) <X(274)>` = trilinear product of vertices of Gemini triangle 4
+   * :ref:`X_274 <X_274>` = isogonal conjugate of :ref:`X_213 <X_213>`
+   * :ref:`X_274 <X_274>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_37 <X_37>`
+   * :ref:`X_274 <X_274>` = :term:`complement <complement>` of X_1655
+   * :ref:`X_274 <X_274>` = :ref:`X_310 <X_310>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_314 <X_314>`
+   * :ref:`X_274 <X_274>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`75 <X_75>`), (:ref:`85 <X_85>`, :ref:`348 <X_348>`), (:ref:`86 <X_86>`, :ref:`333 <X_333>`)
+   * :ref:`X_274 <X_274>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`86 <X_86>`), (:ref:`75 <X_75>`, :ref:`310 <X_310>`), (:ref:`81 <X_81>`, :ref:`286 <X_286>`), (:ref:`333 <X_333>`, :ref:`314 <X_314>`)
+   * :ref:`X_274 <X_274>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_669 <X_669>`\ \ :ref:`X_798 <X_798>`
+   * :ref:`X_274 <X_274>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_320 <X_320>`\ \ :ref:`X_350 <X_350>` (:term:`anticomplement <anticomplement>` of antiorthic axis)
+   * :ref:`X_274 <X_274>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X_1824
+   * :ref:`X_274 <X_274>` = :ref:`X_48 <X_48>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of X_1824
+   * :ref:`X_274 <X_274>` = trilinear product of vertices of Gemini triangle 1
+   * :ref:`X_274 <X_274>` = trilinear product of vertices of Gemini triangle 2
+   * :ref:`X_274 <X_274>` = trilinear product of vertices of Gemini triangle 3
+   * :ref:`X_274 <X_274>` = trilinear product of vertices of Gemini triangle 4
+
+Notes
+-----
+
+.. container:: note-item
+
+   Let :g:`A_{b} <A_b>`, :g:`A_{c} <A_c>`, :g:`B_{c} <B_c>`, :g:`B_{a} <B_a>`, :g:`C_{a} <C_a>`, :g:`C_{b} <C_b>` be as in the construction of the Conway circle; see http://mathworld.wolfram.com/ConwayCircle.html. Let :g:`O_{a} <O_a>` be the circumcircle of :g:`AB_{a}C_{a} << A B_a C_a >>`, and define :g:`O_{b} <O_b>` and :g:`O_{c} <O_c>` cyclically. Then :ref:`X_274 <X_274>` is the radical center of :g:`O_{a} <O_a>`, :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>`. see also :ref:`X_8 <X_8>` and :ref:`X_21 <X_21>`. (:person:`Randy Hutson <randy-hutson>`, April 9, 2016)
 
 .. toctree::
    :hidden:

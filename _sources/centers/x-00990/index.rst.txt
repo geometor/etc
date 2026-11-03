@@ -1,22 +1,31 @@
 :order: 990
 :type: center
-:canonical_id: X(990)
-:dependencies: X(1), X(3), X(6), X(7), X(33), X(37), X(57), X(58), X(84), X(165), X(226), X(612), X(971), X(1040), X(12717)
+:canonical_id: X_990
+:subtitle: INTERSECTION OF LINES X_1X_7 AND X_3X_37
+:dependencies: X_1, X_3, X_6, X_7, X_33, X_37, X_57, X_58, X_84, X_165, X_226, X_612, X_971, X_1040, X_12717
 
-.. _X(990):
+.. _X_990:
 
-X(990) = INTERSECTION OF LINES X(1)X(7) AND X(3)X(37)
-=====================================================
+X_990
+=====
+
+.. rubric:: INTERSECTION OF LINES X_1X_7 AND X_3X_37
 
 .. enunciation::
 
-   :ref:`X(990) <X(990)>` = :term:`complement <complement>`, wrt hexyl triangle, of X(12717)
+   :ref:`X_990 <X_990>` = :term:`complement <complement>`, wrt :term:`hexyl triangle <hexyl-triangle>`, of X_12717
 
 .. figure:: x-00990.svg
-   :alt: X(990) = INTERSECTION OF LINES X(1)X(7) AND X(3)X(37)
+   :alt: X_990 — INTERSECTION OF LINES X_1X_7 AND X_3X_37
    :align: center
 
-   **X(990) = INTERSECTION OF LINES X(1)X(7) AND X(3)X(37)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_990** (*INTERSECTION OF LINES X_1X_7 AND X_3X_37*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 7} <{ 1, 7 }>`, :g:`{3, 37} <{ 3, 37 }>`
+   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_7 <X_7>` (:ref:`GERGONNE POINT <X_7>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_37 <X_37>` (:ref:`CROSSPOINT OF INCENTER AND CENTROID <X_37>`)
 
 .. signature:: center
 
@@ -28,12 +37,12 @@ X(990) = INTERSECTION OF LINES X(1)X(7) AND X(3)X(37)
    :badge: 7 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`7 <X(7)>`}, {:ref:`3 <X(3)>`, :ref:`37 <X(37)>`}, {:ref:`6 <X(6)>`, :ref:`971 <X(971)>`}, {:ref:`33 <X(33)>`, :ref:`57 <X(57)>`}, {:ref:`58 <X(58)>`, :ref:`84 <X(84)>`}, {:ref:`165 <X(165)>`, :ref:`612 <X(612)>`}, {:ref:`226 <X(226)>`, 1040}
+   {:ref:`1 <X_1>`, :ref:`7 <X_7>`}, {:ref:`3 <X_3>`, :ref:`37 <X_37>`}, {:ref:`6 <X_6>`, :ref:`971 <X_971>`}, {:ref:`33 <X_33>`, :ref:`57 <X_57>`}, {:ref:`58 <X_58>`, :ref:`84 <X_84>`}, {:ref:`165 <X_165>`, :ref:`612 <X_612>`}, {:ref:`226 <X_226>`, 1040}
 
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(990) <X(990)>` = complement, wrt hexyl triangle, of X(12717)
+   * :ref:`X_990 <X_990>` = complement, wrt hexyl triangle, of X_12717
 
 .. toctree::
    :hidden:

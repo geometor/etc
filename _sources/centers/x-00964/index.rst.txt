@@ -1,22 +1,27 @@
 :order: 964
 :type: center
-:canonical_id: X(964)
-:dependencies: X(1), X(2), X(3), X(6), X(8), X(10), X(31), X(321)
+:canonical_id: X_964
+:subtitle: INTERCEPT OF EULER LINE AND LINE X_6X_8
+:dependencies: X_1, X_2, X_3, X_6, X_8, X_10, X_31, X_321
 
-.. _X(964):
+.. _X_964:
 
-X(964) = INTERCEPT OF EULER LINE AND LINE X(6)X(8)
-==================================================
+X_964
+=====
 
-.. enunciation::
-
-   As a point on the Euler line, :ref:`X(964) <X(964)>` has Shinagawa coefficients :math:`(2(E + F)^{2} + 2(E + F) \$bc\$ + abc \$a\$, 2S^{2})`.
+.. rubric:: INTERCEPT OF EULER LINE AND LINE X_6X_8
 
 .. figure:: x-00964.svg
-   :alt: X(964) = INTERCEPT OF EULER LINE AND LINE X(6)X(8)
+   :alt: X_964 — INTERCEPT OF EULER LINE AND LINE X_6X_8
    :align: center
 
-   **X(964) = INTERCEPT OF EULER LINE AND LINE X(6)X(8)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_964** (*INTERCEPT OF EULER LINE AND LINE X_6X_8*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`), :g:`{6, 8} <{ 6, 8 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_8 <X_8>` (:ref:`NAGEL POINT <X_8>`)
 
 .. signature:: center
 
@@ -28,7 +33,14 @@ X(964) = INTERCEPT OF EULER LINE AND LINE X(6)X(8)
    :badge: 4 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`321 <X(321)>`}, {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`6 <X(6)>`, :ref:`8 <X(8)>`}, {:ref:`10 <X(10)>`, :ref:`31 <X(31)>`}
+   {:ref:`1 <X_1>`, :ref:`321 <X_321>`}, {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`6 <X_6>`, :ref:`8 <X_8>`}, {:ref:`10 <X_10>`, :ref:`31 <X_31>`}
+
+Notes
+-----
+
+.. container:: note-item
+
+   As a point on the Euler line, :ref:`X_964 <X_964>` has Shinagawa coefficients :math:`(2(E + F)^{2} + 2(E + F) \$bc\$ + abc \$a\$, 2S^{2})`.
 
 .. toctree::
    :hidden:

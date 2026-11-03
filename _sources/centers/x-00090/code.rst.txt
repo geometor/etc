@@ -1,18 +1,21 @@
-:canonical_id: X(90)
+:canonical_id: X_90
 :type: code
+:subtitle: X_3-CROSS CONJUGATE OF X_1
 
-X(90) = X(3)-CROSS CONJUGATE OF X(1) — Code
-===========================================
+X_90
+====
+
+.. rubric:: X_3-CROSS CONJUGATE OF X_1
 
 .. enunciation::
 
-   :ref:`X(90) <X(90)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(46) <X(46)>`
+   :ref:`X_90 <X_90>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_46 <X_46>`
 
 .. figure:: x-00090.svg
-   :alt: X(90) = X(3)-CROSS CONJUGATE OF X(1)
+   :alt: X_90 — X_3-CROSS CONJUGATE OF X_1
    :align: center
 
-   **X(90) = X(3)-CROSS CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_90** (*X_3-CROSS CONJUGATE OF X_1*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

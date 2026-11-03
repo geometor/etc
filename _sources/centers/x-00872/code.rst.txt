@@ -1,18 +1,21 @@
-:canonical_id: X(872)
+:canonical_id: X_872
 :type: code
+:subtitle: INTERSECTION OF LINES X_37X_42 AND X_43X_75
 
-X(872) = INTERSECTION OF LINES X(37)X(42) AND X(43)X(75) — Code
-===============================================================
+X_872
+=====
+
+.. rubric:: INTERSECTION OF LINES X_37X_42 AND X_43X_75
 
 .. enunciation::
 
-   :ref:`X(872) <X(872)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(873) <X(873)>`
+   :ref:`X_872 <X_872>` = :ref:`X_42 <X_42>`-:term:`Ceva conjugate <ceva-conjugate>` of (1500)
 
 .. figure:: x-00872.svg
-   :alt: X(872) = INTERSECTION OF LINES X(37)X(42) AND X(43)X(75)
+   :alt: X_872 — INTERSECTION OF LINES X_37X_42 AND X_43X_75
    :align: center
 
-   **X(872) = INTERSECTION OF LINES X(37)X(42) AND X(43)X(75)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_872** (*INTERSECTION OF LINES X_37X_42 AND X_43X_75*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

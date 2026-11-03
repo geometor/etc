@@ -1,18 +1,21 @@
-:canonical_id: X(678)
+:canonical_id: X_678
 :type: code
+:subtitle: CROSSPOINT OF X_1 AND X_44
 
-X(678) = CROSSPOINT OF X(1) AND X(44) — Code
-============================================
+X_678
+=====
+
+.. rubric:: CROSSPOINT OF X_1 AND X_44
 
 .. enunciation::
 
-   :ref:`X(678) <X(678)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(679) <X(679)>`
+   :ref:`X_678 <X_678>` is the :term:`crosspoint <crosspoint>` of :ref:`X_1 <X_1>` and :ref:`X_44 <X_44>`.
 
 .. figure:: x-00678.svg
-   :alt: X(678) = CROSSPOINT OF X(1) AND X(44)
+   :alt: X_678 — CROSSPOINT OF X_1 AND X_44
    :align: center
 
-   **X(678) = CROSSPOINT OF X(1) AND X(44)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_678** (*CROSSPOINT OF X_1 AND X_44*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

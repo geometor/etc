@@ -1,22 +1,25 @@
 :order: 392
 :type: center
-:canonical_id: X(392)
-:dependencies: X(1), X(2), X(9), X(956), X(4220)
+:canonical_id: X_392
+:subtitle: X(1,6)∩X(10,11)
+:dependencies: X_1, X_2, X_9, X_956, X_4220
 
-.. _X(392):
+.. _X_392:
 
-X(392) = X(1,6)∩X(10,11)
-========================
+X_392
+=====
+
+.. rubric:: X(1,6)∩X(10,11)
 
 .. enunciation::
 
-   :ref:`X(392) <X(392)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(9) <X(9)>`}-harmonic conjugate of :ref:`X(956) <X(956)>`
+   :ref:`X_392 <X_392>` = :ref:`X_2 <X_2>`-of-:ref:`X_1 <X_1>`-Brocard-triangle
 
 .. figure:: x-00392.svg
-   :alt: X(392) = X(1,6)∩X(10,11)
+   :alt: X_392 — X(1,6)∩X(10,11)
    :align: center
 
-   **X(392) = X(1,6)∩X(10,11)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_392** (*X(1,6)∩X(10,11)*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. signature:: center
 
@@ -25,14 +28,14 @@ X(392) = X(1,6)∩X(10,11)
 
 .. container:: note-item
 
-   :ref:`X(392) <X(392)>` lies on the Thomson-Gibert-Moses hyperbola and these lines: (pending)
+   :ref:`X_392 <X_392>` lies on the Thomson-Gibert-Moses hyperbola and these lines: (pending)
 
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X(392) <X(392)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(9) <X(9)>`}-harmonic conjugate of :ref:`X(956) <X(956)>`
-   * :ref:`X(392) <X(392)>` = :ref:`X(2) <X(2)>`-of-:ref:`X(1) <X(1)>`-Brocard-triangle
-   * :ref:`X(392) <X(392)>` = Thomson-:term:`isogonal conjugate <isogonal-conjugate>` of X(4220)
+   * :ref:`X_392 <X_392>` = {:ref:`X_1 <X_1>`,\ :ref:`X_9 <X_9>`}-harmonic conjugate of :ref:`X_956 <X_956>`
+   * :ref:`X_392 <X_392>` = :ref:`X_2 <X_2>`-of-:ref:`X_1 <X_1>`-Brocard-triangle
+   * :ref:`X_392 <X_392>` = Thomson-:term:`isogonal conjugate <isogonal-conjugate>` of X_4220
 
 .. toctree::
    :hidden:

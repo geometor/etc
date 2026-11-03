@@ -1,22 +1,31 @@
 :order: 79
 :type: center
-:canonical_id: X(79)
-:dependencies: X(1), X(2), X(3), X(8), X(9), X(12), X(21), X(30), X(33), X(34), X(35), X(36), X(46), X(55), X(57), X(65), X(80), X(90), X(104), X(191), X(226), X(314), X(319), X(320), X(388), X(442), X(481), X(482), X(484), X(592), X(650), X(758), X(946), X(1000), X(1030), X(1061), X(1063), X(2914), X(3065), X(3647), X(4802), X(6152)
+:canonical_id: X_79
+:subtitle: ISOGONAL CONJUGATE OF X_35
+:dependencies: X_1, X_2, X_3, X_8, X_9, X_12, X_21, X_30, X_33, X_34, X_35, X_36, X_46, X_55, X_57, X_65, X_80, X_90, X_104, X_191, X_226, X_314, X_319, X_320, X_388, X_442, X_481, X_482, X_484, X_592, X_650, X_758, X_946, X_1000, X_1030, X_1061, X_1063, X_2914, X_3065, X_3647, X_4802, X_6152
 
-.. _X(79):
+.. _X_79:
 
-X(79) = ISOGONAL CONJUGATE OF X(35)
-===================================
+X_79
+====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_35
 
 .. enunciation::
 
-   Let :g:`A' <A'>` be the reflection of :ref:`X(1) <X(1)>` in sideline :g:`BC <[ B C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Then the lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(79) <X(79)>`. (Eric Danneels, :cite:`Hyacinthos <hyacinthos>` 7892, 9/13/03)
+   A construction for :ref:`X_79 <X_79>` appears in :person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, `On the Feuerbach Triangle <http://forumgeom.fau.edu/FG2017volume17/FG201731.pdf>`__.
 
 .. figure:: x-00079.svg
-   :alt: X(79) = ISOGONAL CONJUGATE OF X(35)
+   :alt: X_79 — ISOGONAL CONJUGATE OF X_35
    :align: center
 
-   **X(79) = ISOGONAL CONJUGATE OF X(35)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_79** (*ISOGONAL CONJUGATE OF X_35*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{191, 442} <{ 191, 442 }>`
+   * **Related Centers:** :g:`X_191 <X_191>` (:ref:`-CEVA CONJUGATE OF X(1) <X_191>`), :g:`X_442 <X_442>` (:ref:`COMPLEMENT OF SCHIFFLER POINT <X_442>`)
 
 .. signature:: center
 
@@ -35,50 +44,50 @@ X(79) = ISOGONAL CONJUGATE OF X(35)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(79) <X(79)>` = :math:`(2r + 3R)` :ref:`X(1) <X(1)>` + :math:`6r` :ref:`X(2) <X(2)>` - :math:`6r` :ref:`X(3) <X(3)>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
+   * :ref:`X_79 <X_79>` = :math:`(2r + 3R)` :ref:`X_1 <X_1>` + :math:`6r` :ref:`X_2 <X_2>` - :math:`6r` :ref:`X_3 <X_3>` (:person:`Peter Moses <peter-moses>`, April 2, 2013)
 
 .. collapse:: Incident Central Lines
    :badge: 14 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`30 <X(30)>`}, {:ref:`2 <X(2)>`, 3647}, {:ref:`8 <X(8)>`, :ref:`758 <X(758)>`}, {:ref:`9 <X(9)>`, :ref:`46 <X(46)>`}, {:ref:`12 <X(12)>`, :ref:`484 <X(484)>`}, {:ref:`21 <X(21)>`, :ref:`36 <X(36)>`}, {:ref:`33 <X(33)>`, 1063}, {:ref:`34 <X(34)>`, 1061}, {:ref:`35 <X(35)>`, :ref:`226 <X(226)>`}, {:ref:`57 <X(57)>`, :ref:`90 <X(90)>`}, {:ref:`65 <X(65)>`, :ref:`80 <X(80)>`}, {:ref:`104 <X(104)>`, :ref:`946 <X(946)>`}, {:ref:`314 <X(314)>`, :ref:`320 <X(320)>`}, {:ref:`388 <X(388)>`, :ref:`1000 <X(1000)>`}
+   {:ref:`1 <X_1>`, :ref:`30 <X_30>`}, {:ref:`2 <X_2>`, 3647}, {:ref:`8 <X_8>`, :ref:`758 <X_758>`}, {:ref:`9 <X_9>`, :ref:`46 <X_46>`}, {:ref:`12 <X_12>`, :ref:`484 <X_484>`}, {:ref:`21 <X_21>`, :ref:`36 <X_36>`}, {:ref:`33 <X_33>`, 1063}, {:ref:`34 <X_34>`, 1061}, {:ref:`35 <X_35>`, :ref:`226 <X_226>`}, {:ref:`57 <X_57>`, :ref:`90 <X_90>`}, {:ref:`65 <X_65>`, :ref:`80 <X_80>`}, {:ref:`104 <X_104>`, :ref:`946 <X_946>`}, {:ref:`314 <X_314>`, :ref:`320 <X_320>`}, {:ref:`388 <X_388>`, :ref:`1000 <X_1000>`}
 
 .. collapse:: Functional Relations
    :badge: 14 relations
 
-   * :ref:`X(79) <X(79)>` = reflection of :ref:`X(191) <X(191)>` in :ref:`X(442) <X(442)>`
-   * :ref:`X(79) <X(79)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(35) <X(35)>`
-   * :ref:`X(79) <X(79)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(319) <X(319)>`
-   * :ref:`X(79) <X(79)>` = :term:`cevapoint <cevapoint>` of :ref:`X(481) <X(481)>` and :ref:`X(482) <X(482)>`
-   * :ref:`X(79) <X(79)>` = :term:`crosssum <crosssum>` of :ref:`X(55) <X(55)>` and X(1030)
-   * :ref:`X(79) <X(79)>` = :term:`anticomplement <anticomplement>` of X(3647)
-   * :ref:`X(79) <X(79)>` = X(2914) of Fuhrmann triangle
-   * :ref:`X(79) <X(79)>` = :term:`antigonal image <antigonal-image>` of X(3065)
-   * :ref:`X(79) <X(79)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(650) <X(650)>`\ X(4802)
-   * :ref:`X(79) <X(79)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(80) <X(80)>`
-   * :ref:`X(79) <X(79)>` = Hofstadter -1/2 point
-   * :ref:`X(79) <X(79)>` = trilinear pole of line :ref:`X(650) <X(650)>`\ X(4802)
-   * :ref:`X(79) <X(79)>` = trilinear product of vertices of reflection triangle of :ref:`X(1) <X(1)>`
-   * :ref:`X(79) <X(79)>` = X(6152)-of-excentral-triangle
+   * :ref:`X_79 <X_79>` = reflection of :ref:`X_191 <X_191>` in :ref:`X_442 <X_442>`
+   * :ref:`X_79 <X_79>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_35 <X_35>`
+   * :ref:`X_79 <X_79>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_319 <X_319>`
+   * :ref:`X_79 <X_79>` = :term:`cevapoint <cevapoint>` of :ref:`X_481 <X_481>` and :ref:`X_482 <X_482>`
+   * :ref:`X_79 <X_79>` = :term:`crosssum <crosssum>` of :ref:`X_55 <X_55>` and X_1030
+   * :ref:`X_79 <X_79>` = :term:`anticomplement <anticomplement>` of X_3647
+   * :ref:`X_79 <X_79>` = X_2914 of :term:`Fuhrmann triangle <fuhrmann-triangle>`
+   * :ref:`X_79 <X_79>` = :term:`antigonal image <antigonal-image>` of X_3065
+   * :ref:`X_79 <X_79>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_650 <X_650>`\ X_4802
+   * :ref:`X_79 <X_79>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X_80 <X_80>`
+   * :ref:`X_79 <X_79>` = Hofstadter -1/2 point
+   * :ref:`X_79 <X_79>` = trilinear pole of line :ref:`X_650 <X_650>`\ X_4802
+   * :ref:`X_79 <X_79>` = trilinear product of vertices of :term:`reflection triangle <reflection-triangle>` of :ref:`X_1 <X_1>`
+   * :ref:`X_79 <X_79>` = X_6152-of-excentral-triangle
 
 Notes
 -----
 
 .. container:: note-item
 
-   :g:`A'B'C' << A' B' C' >>` is also the reflection triangle of :ref:`X(1) <X(1)>`. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(79) <X(79)>`. (:person:`Randy Hutson <randy-hutson>`, July 20, 2016)
+   Let :g:`A' <A'>` be the reflection of :ref:`X_1 <X_1>` in sideline :g:`BC <[ B C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Then the lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X_79 <X_79>`. (Eric Danneels, :cite:`Hyacinthos <hyacinthos>` 7892, 9/13/03)
 
 .. container:: note-item
 
-   Let :g:`P <P>` and :g:`Q <Q>` be the intersections of line :g:`BC <[ B C ]>` and circle {:ref:`X(1) <X(1)>`,2r}. Let :g:`X <X>` = :ref:`X(1) <X(1)>`. Let :g:`A' <A'>` be the circumcenter of triangle :g:`PQX << P Q X >>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(79) <X(79)>`. (Compare to :ref:`X(592) <X(592)>`, where the circle is the 1st Lemoine circle) (Randy Hutson, July 20, 2016)
+   :g:`A'B'C' << A' B' C' >>` is also the reflection triangle of :ref:`X_1 <X_1>`. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X_79 <X_79>`. (:person:`Randy Hutson <randy-hutson>`, July 20, 2016)
 
 .. container:: note-item
 
-   Let :g:`A_{25}B_{25}C_{25} << A_25 B_25 C_25 >>` be Gemini triangle 25. Let :g:`A' <A'>` be the perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B_{25} <B_25>`,\ :g:`C_{25} <C_25>`}}, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(79) <X(79)>`. (Randy Hutson, January 15, 2019)
+   Let :g:`P <P>` and :g:`Q <Q>` be the intersections of line :g:`BC <[ B C ]>` and circle {:ref:`X_1 <X_1>`,2r}. Let :g:`X <X>` = :ref:`X_1 <X_1>`. Let :g:`A' <A'>` be the circumcenter of triangle :g:`PQX << P Q X >>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X_79 <X_79>`. (Compare to :ref:`X_592 <X_592>`, where the circle is the 1st Lemoine circle) (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
-   A construction for :ref:`X(79) <X(79)>` appears in :person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, `On the Feuerbach Triangle <http://forumgeom.fau.edu/FG2017volume17/FG201731.pdf>`__.
+   Let :g:`A_{25}B_{25}C_{25} << A_25 B_25 C_25 >>` be Gemini triangle 25. Let :g:`A' <A'>` be the perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B_{25} <B_25>`,\ :g:`C_{25} <C_25>`}}, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X_79 <X_79>`. (Randy Hutson, January 15, 2019)
 
 .. toctree::
    :hidden:

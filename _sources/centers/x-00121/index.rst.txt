@@ -1,22 +1,31 @@
 :order: 121
 :type: center
-:canonical_id: X(121)
-:dependencies: X(1), X(2), X(4), X(10), X(11), X(106), X(116), X(141), X(519), X(3032), X(22428), X(23644)
+:canonical_id: X_121
+:subtitle: X_106-OF-MEDIAL-TRIANGLE
+:dependencies: X_1, X_2, X_4, X_10, X_11, X_106, X_116, X_141, X_519, X_3032, X_22428, X_23644
 
-.. _X(121):
+.. _X_121:
 
-X(121) = X(106)-OF-MEDIAL-TRIANGLE
-==================================
+X_121
+=====
+
+.. rubric:: X_106-OF-MEDIAL-TRIANGLE
 
 .. enunciation::
 
-   :ref:`X(121) <X(121)>` = :ref:`X(106) <X(106)>`-of-:term:`medial triangle <medial-triangle>`.
+   :ref:`X_121 <X_121>` = :ref:`X_106 <X_106>`-of-:term:`medial triangle <medial-triangle>`.
 
 .. figure:: x-00121.svg
-   :alt: X(121) = X(106)-OF-MEDIAL-TRIANGLE
+   :alt: X_121 — X_106-OF-MEDIAL-TRIANGLE
    :align: center
 
-   **X(121) = X(106)-OF-MEDIAL-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_121** (*X_106-OF-MEDIAL-TRIANGLE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Derived Triangle:** :term:`Medial Triangle <medial triangle>` :g:`△M_aM_bM_c << M_a M_b M_c >>` — vertices :g:`M_a <M_a>`, :g:`M_b <M_b>`, :g:`M_c <M_c>` (Formed by the midpoints of sides BC, CA, AB)
+   * **Concurrence Lines:** :g:`M_a–X_121 <[ M_a X_121 ]>`, :g:`M_c–X_121 <[ M_c X_121 ]>` concurring at :g:`X_121 <X_121>`
 
 .. signature:: center
 
@@ -26,25 +35,25 @@ X(121) = X(106)-OF-MEDIAL-TRIANGLE
 
 .. container:: note-item
 
-   :ref:`X(121) <X(121)>` lies on the nine-point circle
+   :ref:`X_121 <X_121>` lies on the nine-point circle
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`106 <X(106)>`}, {:ref:`10 <X(10)>`, :ref:`11 <X(11)>`}, {:ref:`116 <X(116)>`, :ref:`141 <X(141)>`}
+   {:ref:`2 <X_2>`, :ref:`106 <X_106>`}, {:ref:`10 <X_10>`, :ref:`11 <X_11>`}, {:ref:`116 <X_116>`, :ref:`141 <X_141>`}
 
 .. collapse:: Functional Relations
    :badge: 8 relations
 
-   * :ref:`X(121) <X(121)>` = :ref:`X(106) <X(106)>`-of-medial triangle.
-   * :ref:`X(121) <X(121)>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X(519) <X(519)>`
-   * :ref:`X(121) <X(121)>` = :ref:`X(4) <X(4)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(519) <X(519)>`
-   * :ref:`X(121) <X(121)>` = :term:`complement <complement>` of :ref:`X(106) <X(106)>`
-   * :ref:`X(121) <X(121)>` = polar conjugate of :term:`isogonal conjugate <isogonal-conjugate>` of X(22428)
-   * :ref:`X(121) <X(121)>` = inverse-in-excircles-radical-circle of X(3032)
-   * :ref:`X(121) <X(121)>` = Λ(:ref:`X(1) <X(1)>`, :ref:`X(2) <X(2)>`), wrt :term:`orthic triangle <orthic-triangle>`
-   * :ref:`X(121) <X(121)>` = :term:`isotomic conjugate <isotomic-conjugate>` of isogonal conjugate of X(23644)
+   * :ref:`X_121 <X_121>` = :ref:`X_106 <X_106>`-of-medial triangle.
+   * :ref:`X_121 <X_121>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X_519 <X_519>`
+   * :ref:`X_121 <X_121>` = :ref:`X_4 <X_4>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_519 <X_519>`
+   * :ref:`X_121 <X_121>` = :term:`complement <complement>` of :ref:`X_106 <X_106>`
+   * :ref:`X_121 <X_121>` = polar conjugate of :term:`isogonal conjugate <isogonal-conjugate>` of X_22428
+   * :ref:`X_121 <X_121>` = inverse-in-excircles-radical-circle of X_3032
+   * :ref:`X_121 <X_121>` = Λ(:ref:`X_1 <X_1>`, :ref:`X_2 <X_2>`), wrt :term:`orthic triangle <orthic-triangle>`
+   * :ref:`X_121 <X_121>` = :term:`isotomic conjugate <isotomic-conjugate>` of isogonal conjugate of X_23644
 
 .. toctree::
    :hidden:

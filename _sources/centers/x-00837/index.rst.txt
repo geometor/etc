@@ -1,22 +1,31 @@
 :order: 837
 :type: center
-:canonical_id: X(837)
-:dependencies: X(1), X(393), X(394), X(836)
+:canonical_id: X_837
+:subtitle: ISOGONAL CONJUGATE OF X_836
+:dependencies: X_1, X_393, X_394, X_836
 
-.. _X(837):
+.. _X_837:
 
-X(837) = ISOGONAL CONJUGATE OF X(836)
-=====================================
+X_837
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_836
 
 .. enunciation::
 
-   :ref:`X(837) <X(837)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(836) <X(836)>`
+   :ref:`X_837 <X_837>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_836 <X_836>`.
 
 .. figure:: x-00837.svg
-   :alt: X(837) = ISOGONAL CONJUGATE OF X(836)
+   :alt: X_837 — ISOGONAL CONJUGATE OF X_836
    :align: center
 
-   **X(837) = ISOGONAL CONJUGATE OF X(836)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_837** (*ISOGONAL CONJUGATE OF X_836*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{393, 394} <{ 393, 394 }>`
+   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_393 <X_393>` (:ref:`-CROSS CONJUGATE OF X(4) <X_393>`), :g:`X_394 <X_394>` (:ref:`-CEVA CONJUGATE OF X(3) <X_394>`)
 
 .. signature:: center
 
@@ -28,13 +37,13 @@ X(837) = ISOGONAL CONJUGATE OF X(836)
    :badge: 1 line
    :class: line-catalog
 
-   {:ref:`393 <X(393)>`, :ref:`394 <X(394)>`}
+   {:ref:`393 <X_393>`, :ref:`394 <X_394>`}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(837) <X(837)>` = isogonal conjugate of :ref:`X(836) <X(836)>`
-   * :ref:`X(837) <X(837)>` = :term:`cevapoint <cevapoint>` of :ref:`X(1) <X(1)>` and :ref:`X(393) <X(393)>`
+   * :ref:`X_837 <X_837>` = isogonal conjugate of :ref:`X_836 <X_836>`
+   * :ref:`X_837 <X_837>` = :term:`cevapoint <cevapoint>` of :ref:`X_1 <X_1>` and :ref:`X_393 <X_393>`
 
 .. toctree::
    :hidden:

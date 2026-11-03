@@ -1,22 +1,31 @@
 :order: 687
 :type: center
-:canonical_id: X(687)
-:dependencies: X(4), X(107), X(110), X(249), X(250), X(648), X(686), X(6334)
+:canonical_id: X_687
+:subtitle: TRILINEAR POLE OF LINE X_4X_110
+:dependencies: X_107, X_249, X_250, X_648, X_686, X_6334
 
-.. _X(687):
+.. _X_687:
 
-X(687) = TRILINEAR POLE OF LINE X(4)X(110)
-==========================================
+X_687
+=====
+
+.. rubric:: TRILINEAR POLE OF LINE X_4X_110
 
 .. enunciation::
 
-   :ref:`X(687) <X(687)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(686) <X(686)>`
+   :ref:`X_687 <X_687>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_686 <X_686>`
 
 .. figure:: x-00687.svg
-   :alt: X(687) = TRILINEAR POLE OF LINE X(4)X(110)
+   :alt: X_687 — TRILINEAR POLE OF LINE X_4X_110
    :align: center
 
-   **X(687) = TRILINEAR POLE OF LINE X(4)X(110)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_687** (*TRILINEAR POLE OF LINE X_4X_110*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{107, 250} <{ 107, 250 }>`, :g:`{249, 648} <{ 249, 648 }>`
+   * **Related Centers:** :g:`X_686 <X_686>` (:ref:`CROSSDIFFERENCE OF X(4) AND X(110) <X_686>`), :g:`X_107 <X_107>` (:ref:`Ψ(SYMMEDIAN POINT, ORTHOCENTER) <X_107>`), :g:`X_250 <X_250>` (:ref:`ISOGONAL CONJUGATE OF X(125) <X_250>`), :g:`X_249 <X_249>` (:ref:`ISOGONAL CONJUGATE OF X(115) <X_249>`), :g:`X_648 <X_648>` (:ref:`TRILINEAR POLE OF EULER LINE <X_648>`)
 
 .. signature:: center
 
@@ -28,13 +37,13 @@ X(687) = TRILINEAR POLE OF LINE X(4)X(110)
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`107 <X(107)>`, :ref:`250 <X(250)>`}, {:ref:`249 <X(249)>`, :ref:`648 <X(648)>`}
+   {:ref:`107 <X_107>`, :ref:`250 <X_250>`}, {:ref:`249 <X_249>`, :ref:`648 <X_648>`}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(687) <X(687)>` = isogonal conjugate of :ref:`X(686) <X(686)>`
-   * :ref:`X(687) <X(687)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(6334)
+   * :ref:`X_687 <X_687>` = isogonal conjugate of :ref:`X_686 <X_686>`
+   * :ref:`X_687 <X_687>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_6334
 
 .. toctree::
    :hidden:

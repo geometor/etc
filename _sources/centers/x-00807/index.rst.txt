@@ -1,22 +1,31 @@
 :order: 807
 :type: center
-:canonical_id: X(807)
-:dependencies: X(806)
+:canonical_id: X_807
+:subtitle: o-(- 2, 3) CIRCUMCIRCLE POINT
+:dependencies: X_806
 
-.. _X(807):
+.. _X_807:
 
-X(807) = o-(- 2, 3) CIRCUMCIRCLE POINT
-======================================
+X_807
+=====
+
+.. rubric:: o-(- 2, 3) CIRCUMCIRCLE POINT
 
 .. enunciation::
 
-   :ref:`X(807) <X(807)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(806) <X(806)>`
+   :ref:`X_807 <X_807>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_806 <X_806>`
 
 .. figure:: x-00807.svg
-   :alt: X(807) = o-(- 2, 3) CIRCUMCIRCLE POINT
+   :alt: X_807 — o-(- 2, 3) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(807) = o-(- 2, 3) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_807** (*o-(- 2, 3) CIRCUMCIRCLE POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`)
+   * **Related Centers:** :g:`X_806 <X_806>` (:ref:`ODD (- 2, 3) INFINITY POINT <X_806>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`)
 
 .. signature:: center
 
@@ -26,12 +35,12 @@ X(807) = o-(- 2, 3) CIRCUMCIRCLE POINT
 
 .. container:: note-item
 
-   :ref:`X(807) <X(807)>` lies on the circumcircle.
+   :ref:`X_807 <X_807>` lies on the circumcircle.
 
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(807) <X(807)>` = isogonal conjugate of :ref:`X(806) <X(806)>`
+   * :ref:`X_807 <X_807>` = isogonal conjugate of :ref:`X_806 <X_806>`
 
 .. toctree::
    :hidden:

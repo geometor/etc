@@ -1,23 +1,33 @@
 :order: 10
 :type: center
-:canonical_id: X(10)
-:dependencies: X(1), X(2), X(3), X(4), X(5), X(6), X(7), X(8), X(9), X(11), X(12), X(20), X(21), X(27), X(28), X(29), X(31), X(33), X(34), X(35), X(36), X(37), X(38), X(39), X(40), X(42), X(44), X(46), X(48), X(55), X(56), X(57), X(58), X(63), X(65), X(69), X(71), X(72), X(73), X(75), X(76), X(80), X(81), X(82), X(83), X(86), X(87), X(92), X(98), X(100), X(101), X(106), X(116), X(117), X(119), X(120), X(121), X(123), X(124), X(125), X(140), X(141), X(142), X(150), X(153), X(158), X(165), X(171), X(182), X(190), X(191), X(197), X(199), X(201), X(210), X(214), X(219), X(225), X(226), X(227), X(235), X(242), X(255), X(257), X(261), X(267), X(274), X(291), X(306), X(307), X(313), X(318), X(319), X(321), X(348), X(349), X(351), X(355), X(388), X(389), X(391), X(404), X(405), X(406), X(407), X(427), X(429), X(474), X(475), X(480), X(485), X(486), X(497), X(502), X(514), X(517), X(519), X(522), X(523), X(535), X(537), X(551), X(572), X(573), X(578), X(594), X(596), X(603), X(626), X(631), X(632), X(643), X(649), X(661), X(668), X(671), X(730), X(750), X(752), X(756), X(760), X(764), X(774), X(775), X(801), X(834), X(846), X(850), X(894), X(908), X(944), X(946), X(954), X(962), X(964), X(965), X(969), X(979), X(994), X(1018), X(1046), X(1074), X(1086), X(1101), X(1125), X(1146), X(1150), X(1155), X(1212), X(1214), X(1222), X(1224), X(1247), X(1254), X(1282), X(1323), X(1324), X(1326), X(1334), X(1377), X(1385), X(1482), X(1483), X(1581), X(1587), X(1588), X(1656), X(1678), X(1685), X(1686), X(1695), X(1697), X(1702), X(1703), X(1735), X(1736), X(1743), X(1762), X(1768), X(1771), X(1782), X(1794), X(1824), X(1828), X(1829), X(1838), X(1867), X(1883), X(1891), X(1900), X(1902), X(1904), X(2206), X(2891), X(2948), X(3057), X(3120), X(3416), X(3419), X(3421), X(3448), X(3814), X(3912), X(4049), X(5205), X(6542), X(13478), X(15319), X(32767), X(38476)
+:canonical_id: X_10
+:subtitle: SPIEKER CENTER
+:dependencies: X_1, X_2, X_3, X_4, X_5, X_6, X_7, X_8, X_9, X_11, X_12, X_20, X_21, X_27, X_28, X_29, X_31, X_33, X_34, X_35, X_36, X_37, X_38, X_39, X_40, X_42, X_44, X_46, X_48, X_55, X_56, X_57, X_58, X_63, X_65, X_69, X_71, X_72, X_73, X_75, X_76, X_80, X_81, X_82, X_83, X_86, X_87, X_92, X_98, X_100, X_101, X_106, X_116, X_117, X_119, X_120, X_121, X_123, X_124, X_125, X_140, X_141, X_142, X_150, X_153, X_158, X_165, X_171, X_182, X_190, X_191, X_197, X_199, X_201, X_210, X_214, X_219, X_225, X_226, X_227, X_235, X_242, X_255, X_257, X_261, X_267, X_274, X_291, X_306, X_307, X_313, X_318, X_319, X_321, X_348, X_349, X_351, X_355, X_388, X_389, X_391, X_404, X_405, X_406, X_407, X_427, X_429, X_474, X_475, X_480, X_485, X_486, X_497, X_502, X_514, X_517, X_519, X_522, X_523, X_535, X_537, X_551, X_572, X_573, X_578, X_594, X_596, X_603, X_626, X_631, X_632, X_643, X_649, X_661, X_668, X_671, X_730, X_750, X_752, X_756, X_760, X_764, X_774, X_775, X_801, X_834, X_846, X_850, X_894, X_908, X_944, X_946, X_954, X_962, X_964, X_965, X_969, X_979, X_994, X_1018, X_1046, X_1074, X_1086, X_1101, X_1125, X_1146, X_1150, X_1155, X_1212, X_1214, X_1222, X_1224, X_1247, X_1254, X_1282, X_1323, X_1324, X_1326, X_1334, X_1377, X_1385, X_1482, X_1483, X_1581, X_1587, X_1588, X_1656, X_1678, X_1685, X_1686, X_1695, X_1697, X_1702, X_1703, X_1735, X_1736, X_1743, X_1762, X_1768, X_1771, X_1782, X_1794, X_1824, X_1828, X_1829, X_1838, X_1867, X_1883, X_1891, X_1900, X_1902, X_1904, X_2206, X_2891, X_2948, X_3057, X_3120, X_3416, X_3419, X_3421, X_3448, X_3814, X_3912, X_4049, X_5205, X_6542, X_13478, X_15319, X_32767, X_38476
 
-.. _X(10):
+.. _X_10:
 .. _SpiekerCenter:
 
-X(10) = SPIEKER CENTER
-======================
+X_10
+====
+
+.. rubric:: SPIEKER CENTER
 
 .. enunciation::
 
-   Let :g:`A' <A'>` be the intersection of these three lines: the perpendicular from midpoint of :g:`CA <[ C A ]>` to line B\ :ref:`X(1) <X(1)>`, the perpendicular from midpoint of :g:`AB <[ A B ]>` to line C\ :ref:`X(1) <X(1)>`, the perpendicular from midpoint of A\ :ref:`X(1) <X(1)>` to line :g:`BC <[ B C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The orthocenter of :g:`A'B'C' << A' B' C' >>` is :ref:`X(10) <X(10)>`, and :ref:`X(10) <X(10)>` is also the perspector of :g:`A'B'C' << A' B' C' >>` and the :term:`medial triangle <medial-triangle>`. Note that :g:`A'B'C' << A' B' C' >>` is the :term:`complement <complement>` of the :term:`excentral triangle <excentral-triangle>`, and the extraversion triangle of :ref:`X(10) <X(10)>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
+   The Spieker circle is the incircle of the :term:`medial triangle <medial-triangle>`; its center, :ref:`X_10 <X_10>`, is the centroid of the perimeter of :g:`ABC << A B C >>`.
 
 .. figure:: x-00010.svg
-   :alt: X(10) = SPIEKER CENTER
+   :alt: X_10 — SPIEKER CENTER
    :align: center
 
-   **X(10) = SPIEKER CENTER** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_10** (*SPIEKER CENTER*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Derived Triangle:** :term:`Medial Triangle <medial triangle>` :g:`△M_aM_bM_c << M_a M_b M_c >>` — vertices :g:`M_a <M_a>`, :g:`M_b <M_b>`, :g:`M_c <M_c>` (Formed by the midpoints of sides BC, CA, AB)
+   * **Circle:** :term:`Spieker Circle <spieker circle>` (:g:`spieker_circle <spieker_circle>`) — Incircle of the medial triangle △M_a M_b M_c; centered at X_10 SPIEKER CENTER
+   * **Concurrence Lines:** :g:`M_a–X_10 <[ M_a X_10 ]>`, :g:`M_b–X_10 <[ M_b X_10 ]>`, :g:`M_c–X_10 <[ M_c X_10 ]>` concurring at :g:`X_10 <X_10>`
 
 .. signature:: center
 
@@ -30,7 +40,7 @@ X(10) = SPIEKER CENTER
    :badge: 7 forms
 
    * **Trilinears:** :math:`1/(r \cos A - s \sin A) : :`
-   * **Trilinears:** :math:`\csc(A - U) : :`, U as at :ref:`X(572) <X(572)>` and :ref:`X(573) <X(573)>`
+   * **Trilinears:** :math:`\csc(A - U) : :`, U as at :ref:`X_572 <X_572>` and :ref:`X_573 <X_573>`
    * **Trilinears:** :math:`(\cos B + \cos C)/(1 - \cos A) : :`
    * **Trilinears:** :math:`1 + 2 \csc A/2 \sin B/2 \sin C/2 : :`
    * **Trilinears:** :math:`|AP(1)| + |AU(1)| : :`
@@ -40,130 +50,130 @@ X(10) = SPIEKER CENTER
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(10) <X(10)>` = :ref:`X(1) <X(1)>` - :math:`3` :ref:`X(2) <X(2)>` = :math:`3` :ref:`X(2) <X(2)>` + :ref:`X(8) <X(8)>` = :ref:`X(7) <X(7)>` + :ref:`X(8) <X(8)>` + :math:`2` :ref:`X(9) <X(9)>`
+   * :ref:`X_10 <X_10>` = :ref:`X_1 <X_1>` - :math:`3` :ref:`X_2 <X_2>` = :math:`3` :ref:`X_2 <X_2>` + :ref:`X_8 <X_8>` = :ref:`X_7 <X_7>` + :ref:`X_8 <X_8>` + :math:`2` :ref:`X_9 <X_9>`
 
 .. container:: note-item
 
-   :ref:`X(10) <X(10)>` lies on the Kiepert hyperbola.
+   :ref:`X_10 <X_10>` lies on the Kiepert hyperbola.
 
 .. collapse:: Incident Central Lines
    :badge: 85 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`2 <X(2)>`}, {:ref:`3 <X(3)>`, :ref:`197 <X(197)>`}, {:ref:`4 <X(4)>`, :ref:`9 <X(9)>`}, {:ref:`5 <X(5)>`, :ref:`517 <X(517)>`}, {:ref:`6 <X(6)>`, 1377}, {:ref:`11 <X(11)>`, :ref:`121 <X(121)>`}, {:ref:`12 <X(12)>`, :ref:`65 <X(65)>`}, {:ref:`20 <X(20)>`, :ref:`165 <X(165)>`}, {:ref:`21 <X(21)>`, :ref:`35 <X(35)>`}, {:ref:`28 <X(28)>`, 1891}, {:ref:`29 <X(29)>`, 1794}, {:ref:`31 <X(31)>`, :ref:`964 <X(964)>`}, {:ref:`33 <X(33)>`, :ref:`406 <X(406)>`}, {:ref:`34 <X(34)>`, :ref:`475 <X(475)>`}, {:ref:`36 <X(36)>`, :ref:`404 <X(404)>`}, {:ref:`37 <X(37)>`, :ref:`594 <X(594)>`}, {:ref:`38 <X(38)>`, :ref:`596 <X(596)>`}, {:ref:`39 <X(39)>`, :ref:`730 <X(730)>`}, {:ref:`44 <X(44)>`, :ref:`752 <X(752)>`}, {:ref:`46 <X(46)>`, :ref:`63 <X(63)>`}, {:ref:`55 <X(55)>`, :ref:`405 <X(405)>`}, {:ref:`56 <X(56)>`, :ref:`474 <X(474)>`}, {:ref:`57 <X(57)>`, :ref:`388 <X(388)>`}, {:ref:`58 <X(58)>`, :ref:`171 <X(171)>`}, {:ref:`69 <X(69)>`, :ref:`969 <X(969)>`}, {:ref:`75 <X(75)>`, :ref:`76 <X(76)>`}, {:ref:`81 <X(81)>`, 1224}, {:ref:`82 <X(82)>`, :ref:`83 <X(83)>`}, {:ref:`86 <X(86)>`, :ref:`319 <X(319)>`}, {:ref:`87 <X(87)>`, :ref:`979 <X(979)>`}, {:ref:`92 <X(92)>`, 1838}, {:ref:`98 <X(98)>`, :ref:`101 <X(101)>`}, {:ref:`106 <X(106)>`, 1222}, {:ref:`116 <X(116)>`, :ref:`120 <X(120)>`}, {:ref:`117 <X(117)>`, :ref:`123 <X(123)>`}, {:ref:`119 <X(119)>`, :ref:`124 <X(124)>`}, {:ref:`140 <X(140)>`, :ref:`214 <X(214)>`}, {:ref:`141 <X(141)>`, :ref:`142 <X(142)>`}, {:ref:`150 <X(150)>`, 1282}, {:ref:`153 <X(153)>`, 1768}, {:ref:`158 <X(158)>`, :ref:`318 <X(318)>`}, {:ref:`182 <X(182)>`, 1678}, {:ref:`190 <X(190)>`, :ref:`671 <X(671)>`}, {:ref:`191 <X(191)>`, :ref:`267 <X(267)>`}, {:ref:`201 <X(201)>`, :ref:`225 <X(225)>`}, {:ref:`219 <X(219)>`, :ref:`965 <X(965)>`}, {:ref:`227 <X(227)>`, 1214}, {:ref:`235 <X(235)>`, 1902}, {:ref:`255 <X(255)>`, 1771}, {:ref:`257 <X(257)>`, 1581}, {:ref:`261 <X(261)>`, 1326}, {:ref:`274 <X(274)>`, :ref:`291 <X(291)>`}, {:ref:`307 <X(307)>`, 1254}, {:ref:`321 <X(321)>`, :ref:`756 <X(756)>`}, {:ref:`348 <X(348)>`, 1323}, {:ref:`391 <X(391)>`, 1743}, {:ref:`407 <X(407)>`, 1867}, {:ref:`427 <X(427)>`, 1829}, {:ref:`429 <X(429)>`, 1824}, {:ref:`480 <X(480)>`, :ref:`954 <X(954)>`}, {:ref:`485 <X(485)>`, 1686}, {:ref:`486 <X(486)>`, 1685}, {:ref:`497 <X(497)>`, 1697}, {:ref:`514 <X(514)>`, :ref:`764 <X(764)>`}, {:ref:`535 <X(535)>`, 1155}, {:ref:`537 <X(537)>`, 1086}, {:ref:`626 <X(626)>`, :ref:`760 <X(760)>`}, {:ref:`631 <X(631)>`, :ref:`944 <X(944)>`}, {:ref:`632 <X(632)>`, 1483}, {:ref:`750 <X(750)>`, 1150}, {:ref:`774 <X(774)>`, 1736}, {:ref:`775 <X(775)>`, :ref:`801 <X(801)>`}, {:ref:`846 <X(846)>`, 1247}, {:ref:`894 <X(894)>`, 1046}, {:ref:`908 <X(908)>`, :ref:`994 <X(994)>`}, {:ref:`962 <X(962)>`, 1695}, {1018, 1334}, {1074, 1735}, {1146, 1212}, {1482, 1656}, {1587, 1703}, {1588, 1702}, {1762, 1782}, {1828, 1883}, {1900, 1904}
+   {:ref:`1 <X_1>`, :ref:`2 <X_2>`}, {:ref:`3 <X_3>`, :ref:`197 <X_197>`}, {:ref:`4 <X_4>`, :ref:`9 <X_9>`}, {:ref:`5 <X_5>`, :ref:`517 <X_517>`}, {:ref:`6 <X_6>`, 1377}, {:ref:`11 <X_11>`, :ref:`121 <X_121>`}, {:ref:`12 <X_12>`, :ref:`65 <X_65>`}, {:ref:`20 <X_20>`, :ref:`165 <X_165>`}, {:ref:`21 <X_21>`, :ref:`35 <X_35>`}, {:ref:`28 <X_28>`, 1891}, {:ref:`29 <X_29>`, 1794}, {:ref:`31 <X_31>`, :ref:`964 <X_964>`}, {:ref:`33 <X_33>`, :ref:`406 <X_406>`}, {:ref:`34 <X_34>`, :ref:`475 <X_475>`}, {:ref:`36 <X_36>`, :ref:`404 <X_404>`}, {:ref:`37 <X_37>`, :ref:`594 <X_594>`}, {:ref:`38 <X_38>`, :ref:`596 <X_596>`}, {:ref:`39 <X_39>`, :ref:`730 <X_730>`}, {:ref:`44 <X_44>`, :ref:`752 <X_752>`}, {:ref:`46 <X_46>`, :ref:`63 <X_63>`}, {:ref:`55 <X_55>`, :ref:`405 <X_405>`}, {:ref:`56 <X_56>`, :ref:`474 <X_474>`}, {:ref:`57 <X_57>`, :ref:`388 <X_388>`}, {:ref:`58 <X_58>`, :ref:`171 <X_171>`}, {:ref:`69 <X_69>`, :ref:`969 <X_969>`}, {:ref:`75 <X_75>`, :ref:`76 <X_76>`}, {:ref:`81 <X_81>`, 1224}, {:ref:`82 <X_82>`, :ref:`83 <X_83>`}, {:ref:`86 <X_86>`, :ref:`319 <X_319>`}, {:ref:`87 <X_87>`, :ref:`979 <X_979>`}, {:ref:`92 <X_92>`, 1838}, {:ref:`98 <X_98>`, :ref:`101 <X_101>`}, {:ref:`106 <X_106>`, 1222}, {:ref:`116 <X_116>`, :ref:`120 <X_120>`}, {:ref:`117 <X_117>`, :ref:`123 <X_123>`}, {:ref:`119 <X_119>`, :ref:`124 <X_124>`}, {:ref:`140 <X_140>`, :ref:`214 <X_214>`}, {:ref:`141 <X_141>`, :ref:`142 <X_142>`}, {:ref:`150 <X_150>`, 1282}, {:ref:`153 <X_153>`, 1768}, {:ref:`158 <X_158>`, :ref:`318 <X_318>`}, {:ref:`182 <X_182>`, 1678}, {:ref:`190 <X_190>`, :ref:`671 <X_671>`}, {:ref:`191 <X_191>`, :ref:`267 <X_267>`}, {:ref:`201 <X_201>`, :ref:`225 <X_225>`}, {:ref:`219 <X_219>`, :ref:`965 <X_965>`}, {:ref:`227 <X_227>`, 1214}, {:ref:`235 <X_235>`, 1902}, {:ref:`255 <X_255>`, 1771}, {:ref:`257 <X_257>`, 1581}, {:ref:`261 <X_261>`, 1326}, {:ref:`274 <X_274>`, :ref:`291 <X_291>`}, {:ref:`307 <X_307>`, 1254}, {:ref:`321 <X_321>`, :ref:`756 <X_756>`}, {:ref:`348 <X_348>`, 1323}, {:ref:`391 <X_391>`, 1743}, {:ref:`407 <X_407>`, 1867}, {:ref:`427 <X_427>`, 1829}, {:ref:`429 <X_429>`, 1824}, {:ref:`480 <X_480>`, :ref:`954 <X_954>`}, {:ref:`485 <X_485>`, 1686}, {:ref:`486 <X_486>`, 1685}, {:ref:`497 <X_497>`, 1697}, {:ref:`514 <X_514>`, :ref:`764 <X_764>`}, {:ref:`535 <X_535>`, 1155}, {:ref:`537 <X_537>`, 1086}, {:ref:`626 <X_626>`, :ref:`760 <X_760>`}, {:ref:`631 <X_631>`, :ref:`944 <X_944>`}, {:ref:`632 <X_632>`, 1483}, {:ref:`750 <X_750>`, 1150}, {:ref:`774 <X_774>`, 1736}, {:ref:`775 <X_775>`, :ref:`801 <X_801>`}, {:ref:`846 <X_846>`, 1247}, {:ref:`894 <X_894>`, 1046}, {:ref:`908 <X_908>`, :ref:`994 <X_994>`}, {:ref:`962 <X_962>`, 1695}, {1018, 1334}, {1074, 1735}, {1146, 1212}, {1482, 1656}, {1587, 1703}, {1588, 1702}, {1762, 1782}, {1828, 1883}, {1900, 1904}
 
 .. collapse:: Functional Relations
    :badge: 82 relations
 
-   * :ref:`X(10) <X(10)>` = midpoint of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`8 <X(8)>`), (:ref:`3 <X(3)>`, :ref:`355 <X(355)>`), (:ref:`4 <X(4)>`, :ref:`40 <X(40)>`), (:ref:`6 <X(6)>`, 3416), (:ref:`10 <X(10)>`, 3421), (:ref:`55 <X(55)>`, 3419), (:ref:`65 <X(65)>`, :ref:`72 <X(72)>`), (:ref:`80 <X(80)>`, :ref:`100 <X(100)>`), (2948, 3448)
-   * :ref:`X(10) <X(10)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`1 <X(1)>`, 1125), (:ref:`551 <X(551)>`, :ref:`2 <X(2)>`), (:ref:`946 <X(946)>`, :ref:`5 <X(5)>`), (1385, :ref:`140 <X(140)>`)
-   * :ref:`X(10) <X(10)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(58) <X(58)>`
-   * :ref:`X(10) <X(10)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(86) <X(86)>`
-   * :ref:`X(10) <X(10)>` = circumcircle-inverse of X(1324)
-   * :ref:`X(10) <X(10)>` = nine-point-circle-inverse of X(3814)
-   * :ref:`X(10) <X(10)>` = Conway-circle-inverse of X(38476)
-   * :ref:`X(10) <X(10)>` = complement of :ref:`X(1) <X(1)>`
-   * :ref:`X(10) <X(10)>` = :term:`anticomplement <anticomplement>` of X(1125)
-   * :ref:`X(10) <X(10)>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X(10) <X(10)>`
-   * :ref:`X(10) <X(10)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of X(2891)
-   * :ref:`X(10) <X(10)>` = X(15319)-complementary conjugate of X(32767)
-   * :ref:`X(10) <X(10)>` = radical center of the excircles.
-   * :ref:`X(10) <X(10)>` = radical center of extraversions of Conway circle
-   * :ref:`X(10) <X(10)>` = radical center of the polar circles of triangles :g:`BCI << B C I >>`, :g:`CAI << C A I >>`, :g:`ABI << A B I >>`
-   * :ref:`X(10) <X(10)>` = :ref:`X(20) <X(20)>`-of-3rd-Euler-triangle
-   * :ref:`X(10) <X(10)>` = :ref:`X(4) <X(4)>`-of-4th-Euler-triangle
-   * :ref:`X(10) <X(10)>` = perspector of :g:`ABC << A B C >>` and the :term:`tangential triangle <tangential-triangle>` of the Feuerbach triangle
-   * :ref:`X(10) <X(10)>` = :ref:`X(2) <X(2)>`-:term:`Hirst inverse <hirst-inverse>` of X(6542)
-   * :ref:`X(10) <X(10)>` = inverse-in-Steiner-circumellipse of X(6542)
-   * :ref:`X(10) <X(10)>` = SS(a→a') of :ref:`X(5) <X(5)>`, where :g:`A'B'C' << A' B' C' >>` is the excentral triangle (barycentric substitution)
-   * :ref:`X(10) <X(10)>` = orthocenter of :ref:`X(2) <X(2)>`\ \ :ref:`X(4) <X(4)>`\ X(4049)
-   * :ref:`X(10) <X(10)>` = midpoint of PU(10)
-   * :ref:`X(10) <X(10)>` = bicentric sum of PU(i) for these i: 10, 66
-   * :ref:`X(10) <X(10)>` = PU(66)-harmonic conjugate of :ref:`X(351) <X(351)>`
-   * :ref:`X(10) <X(10)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`6 <X(6)>`, :ref:`31 <X(31)>`), (:ref:`56 <X(56)>`, :ref:`603 <X(603)>`)
-   * :ref:`X(10) <X(10)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(649) <X(649)>`\ \ :ref:`X(834) <X(834)>`
-   * :ref:`X(10) <X(10)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`8 <X(8)>`, :ref:`10 <X(10)>`), (:ref:`10 <X(10)>`, :ref:`65 <X(65)>`), (:ref:`100 <X(100)>`, :ref:`73 <X(73)>`), (:ref:`318 <X(318)>`, :ref:`225 <X(225)>`), (:ref:`643 <X(643)>`, :ref:`35 <X(35)>`), (:ref:`668 <X(668)>`, :ref:`349 <X(349)>`)
-   * :ref:`X(10) <X(10)>` = :term:`radical trace <radical-trace>` of Bevan circle and anticomplementary circle
-   * :ref:`X(10) <X(10)>` = insimilicenter of Bevan circle and anticomplementary circle
-   * :ref:`X(10) <X(10)>` = insimilicenter of nine-point circle and Apollonius circle
-   * :ref:`X(10) <X(10)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`37 <X(37)>`), (:ref:`8 <X(8)>`, :ref:`72 <X(72)>`), (:ref:`75 <X(75)>`, :ref:`321 <X(321)>`), (:ref:`80 <X(80)>`, :ref:`519 <X(519)>`), (:ref:`100 <X(100)>`, :ref:`522 <X(522)>`), (:ref:`313 <X(313)>`, :ref:`306 <X(306)>`)
-   * :ref:`X(10) <X(10)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`191 <X(191)>`), (:ref:`6 <X(6)>`, :ref:`199 <X(199)>`), (:ref:`12 <X(12)>`, :ref:`201 <X(201)>`), (:ref:`37 <X(37)>`, :ref:`210 <X(210)>`), (:ref:`42 <X(42)>`, :ref:`71 <X(71)>`), (:ref:`65 <X(65)>`, :ref:`227 <X(227)>`)
-   * :ref:`X(10) <X(10)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`37 <X(37)>`, :ref:`226 <X(226)>`), (:ref:`71 <X(71)>`, :ref:`306 <X(306)>`), (:ref:`191 <X(191)>`, :ref:`502 <X(502)>`), (:ref:`201 <X(201)>`, :ref:`72 <X(72)>`)
-   * :ref:`X(10) <X(10)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`75 <X(75)>`), (:ref:`8 <X(8)>`, :ref:`318 <X(318)>`)
-   * :ref:`X(10) <X(10)>` = centroid of :g:`ABC << A B C >>`\ :ref:`X(8) <X(8)>`
-   * :ref:`X(10) <X(10)>` = Kosnita(:ref:`X(8) <X(8)>`,\ :ref:`X(2) <X(2)>`) point
-   * :ref:`X(10) <X(10)>` = :ref:`X(578) <X(578)>`-of-2nd-extouch-triangle
-   * :ref:`X(10) <X(10)>` = :ref:`X(389) <X(389)>`-of-excentral triangle
-   * :ref:`X(10) <X(10)>` = :ref:`X(125) <X(125)>`-of-Fuhrmann triangle
-   * :ref:`X(10) <X(10)>` = perspector of :g:`ABC << A B C >>` and triangle formed from orthocenters of JaBC, JbCA, JcAB, where :g:`J_{a} <J_a>`, :g:`J_{b} <J_b>`, :g:`J_{c} <J_c>` are excenters
-   * :ref:`X(10) <X(10)>` = perspector of circumconic centered at :ref:`X(37) <X(37)>`
-   * :ref:`X(10) <X(10)>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X(37) <X(37)>`
-   * :ref:`X(10) <X(10)>` = trilinear pole of line :ref:`X(523) <X(523)>`\ \ :ref:`X(661) <X(661)>` (the polar of :ref:`X(27) <X(27)>` wrt polar circle)
-   * :ref:`X(10) <X(10)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(27) <X(27)>` (line :ref:`X(242) <X(242)>`\ \ :ref:`X(514) <X(514)>`)
-   * :ref:`X(10) <X(10)>` = :ref:`X(48) <X(48)>`-:term:`isoconjugate <isoconjugate>` (polar conjugate)-of-:ref:`X(27) <X(27)>`
-   * :ref:`X(10) <X(10)>` = :ref:`X(6) <X(6)>`-isoconjugate of :ref:`X(81) <X(81)>`
-   * :ref:`X(10) <X(10)>` = :ref:`X(75) <X(75)>`-isoconjugate of X(2206)
-   * :ref:`X(10) <X(10)>` = X(1101)-isoconjugate of X(3120)
-   * :ref:`X(10) <X(10)>` = :ref:`X(1) <X(1)>`-of-:ref:`X(1) <X(1)>`-Brocard triangle
-   * :ref:`X(10) <X(10)>` = perspector of medial triangle and Ayme triangle
-   * :ref:`X(10) <X(10)>` = homothetic center of Ayme triangle and :term:`anticevian triangle <anticevian-triangle>` of :ref:`X(37) <X(37)>`
-   * :ref:`X(10) <X(10)>` = perspector of Ayme triangle and Danneels-Bevan triangle
-   * :ref:`X(10) <X(10)>` = :ref:`X(1) <X(1)>`-of-Danneels-Bevan-triangle
-   * :ref:`X(10) <X(10)>` = homothetic center of medial triangle and Danneels-Bevan triangle
-   * :ref:`X(10) <X(10)>` = homothetic center of :g:`ABC << A B C >>` and :term:`anticomplementary triangle <anticomplementary-triangle>` of Danneels-Bevan triangle
-   * :ref:`X(10) <X(10)>` = {:ref:`X(2) <X(2)>`,\ :ref:`X(8) <X(8)>`}-harmonic conjugate of :ref:`X(1) <X(1)>`
-   * :ref:`X(10) <X(10)>` = inverse-in-polar-circle of :ref:`X(242) <X(242)>`
-   * :ref:`X(10) <X(10)>` = inverse-in-{circumcircle, nine-point circle}-inverter of X(5205)
-   * :ref:`X(10) <X(10)>` = inverse-in-Steiner-inellipse of X(3912)
-   * :ref:`X(10) <X(10)>` = inverse-in-Feuerbach-hyperbola of X(3057)
-   * :ref:`X(10) <X(10)>` = perspector of Feuerbach and Apollonius triangles
-   * :ref:`X(10) <X(10)>` = perspector of symmedial triangles of Feuerbach and Apollonius triangles
-   * :ref:`X(10) <X(10)>` = perspector of circumsymmedial triangles of Feuerbach and Apollonius triangles
-   * :ref:`X(10) <X(10)>` = perspector of tangential triangles of Feuerbach and Apollonius triangles
-   * :ref:`X(10) <X(10)>` = :ref:`X(214) <X(214)>`-of-inner-Garcia-triangle
-   * :ref:`X(10) <X(10)>` = Cundy-Parry Phi transform of X(13478)
-   * :ref:`X(10) <X(10)>` = Cundy-Parry Psi transform of :ref:`X(573) <X(573)>`
-   * :ref:`X(10) <X(10)>` = perspector of Ayme and 4th Euler triangles
-   * :ref:`X(10) <X(10)>` = barycentric product :ref:`X(101) <X(101)>`\ \*\ :ref:`X(850) <X(850)>`
-   * :ref:`X(10) <X(10)>` = perspector of Gemini triangle 12 and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 12
-   * :ref:`X(10) <X(10)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 15
-   * :ref:`X(10) <X(10)>` = trilinear product of vertices of Gemini triangle 15
-   * :ref:`X(10) <X(10)>` = homothetic center of Ayme triangle and Gemini triangle 16
-   * :ref:`X(10) <X(10)>` = center of the {:g:`ABC << A B C >>`, Gemini 18}-circumconic
-   * :ref:`X(10) <X(10)>` = Gemini-triangle-19-to-:g:`ABC << A B C >>` parallelogic center
-   * :ref:`X(10) <X(10)>` = centroid of Gemini triangle 20
-   * :ref:`X(10) <X(10)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 25
-   * :ref:`X(10) <X(10)>` = perspector of :g:`ABC << A B C >>` and Gemini triangle 26
-   * :ref:`X(10) <X(10)>` = perspector of Gemini triangle 39 and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 39
-   * :ref:`X(10) <X(10)>` = excentral-to-:g:`ABC << A B C >>` :term:`barycentric image <barycentric-image>` of :ref:`X(3) <X(3)>`
-   * :ref:`X(10) <X(10)>` = incentral-to-:g:`ABC << A B C >>` barycentric image of :ref:`X(1) <X(1)>`
+   * :ref:`X_10 <X_10>` = midpoint of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`8 <X_8>`), (:ref:`3 <X_3>`, :ref:`355 <X_355>`), (:ref:`4 <X_4>`, :ref:`40 <X_40>`), (:ref:`6 <X_6>`, 3416), (:ref:`10 <X_10>`, 3421), (:ref:`55 <X_55>`, 3419), (:ref:`65 <X_65>`, :ref:`72 <X_72>`), (:ref:`80 <X_80>`, :ref:`100 <X_100>`), (2948, 3448)
+   * :ref:`X_10 <X_10>` = reflection of X_i in X_j for these (i,j): (:ref:`1 <X_1>`, 1125), (:ref:`551 <X_551>`, :ref:`2 <X_2>`), (:ref:`946 <X_946>`, :ref:`5 <X_5>`), (1385, :ref:`140 <X_140>`)
+   * :ref:`X_10 <X_10>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_58 <X_58>`
+   * :ref:`X_10 <X_10>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_86 <X_86>`
+   * :ref:`X_10 <X_10>` = circumcircle-inverse of X_1324
+   * :ref:`X_10 <X_10>` = nine-point-circle-inverse of X_3814
+   * :ref:`X_10 <X_10>` = Conway-circle-inverse of X_38476
+   * :ref:`X_10 <X_10>` = :term:`complement <complement>` of :ref:`X_1 <X_1>`
+   * :ref:`X_10 <X_10>` = :term:`anticomplement <anticomplement>` of X_1125
+   * :ref:`X_10 <X_10>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X_10 <X_10>`
+   * :ref:`X_10 <X_10>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of X_2891
+   * :ref:`X_10 <X_10>` = X_15319-complementary conjugate of X_32767
+   * :ref:`X_10 <X_10>` = radical center of the excircles.
+   * :ref:`X_10 <X_10>` = radical center of extraversions of Conway circle
+   * :ref:`X_10 <X_10>` = radical center of the polar circles of triangles :g:`BCI << B C I >>`, :g:`CAI << C A I >>`, :g:`ABI << A B I >>`
+   * :ref:`X_10 <X_10>` = :ref:`X_20 <X_20>`-of-3rd-Euler-triangle
+   * :ref:`X_10 <X_10>` = :ref:`X_4 <X_4>`-of-4th-Euler-triangle
+   * :ref:`X_10 <X_10>` = perspector of :g:`ABC << A B C >>` and the :term:`tangential triangle <tangential-triangle>` of the :term:`Feuerbach triangle <feuerbach-triangle>`
+   * :ref:`X_10 <X_10>` = :ref:`X_2 <X_2>`-:term:`Hirst inverse <hirst-inverse>` of X_6542
+   * :ref:`X_10 <X_10>` = inverse-in-Steiner-circumellipse of X_6542
+   * :ref:`X_10 <X_10>` = SS(a→a') of :ref:`X_5 <X_5>`, where :g:`A'B'C' << A' B' C' >>` is the :term:`excentral triangle <excentral-triangle>` (barycentric substitution)
+   * :ref:`X_10 <X_10>` = orthocenter of :ref:`X_2 <X_2>`\ \ :ref:`X_4 <X_4>`\ X_4049
+   * :ref:`X_10 <X_10>` = midpoint of PU(10)
+   * :ref:`X_10 <X_10>` = bicentric sum of PU(i) for these i: 10, 66
+   * :ref:`X_10 <X_10>` = PU(66)-harmonic conjugate of :ref:`X_351 <X_351>`
+   * :ref:`X_10 <X_10>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`31 <X_31>`), (:ref:`56 <X_56>`, :ref:`603 <X_603>`)
+   * :ref:`X_10 <X_10>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_649 <X_649>`\ \ :ref:`X_834 <X_834>`
+   * :ref:`X_10 <X_10>` = X_i-:term:`beth conjugate <beth-conjugate>` of X_j for these (i,j): (:ref:`8 <X_8>`, :ref:`10 <X_10>`), (:ref:`10 <X_10>`, :ref:`65 <X_65>`), (:ref:`100 <X_100>`, :ref:`73 <X_73>`), (:ref:`318 <X_318>`, :ref:`225 <X_225>`), (:ref:`643 <X_643>`, :ref:`35 <X_35>`), (:ref:`668 <X_668>`, :ref:`349 <X_349>`)
+   * :ref:`X_10 <X_10>` = :term:`radical trace <radical-trace>` of Bevan circle and anticomplementary circle
+   * :ref:`X_10 <X_10>` = insimilicenter of Bevan circle and anticomplementary circle
+   * :ref:`X_10 <X_10>` = insimilicenter of nine-point circle and Apollonius circle
+   * :ref:`X_10 <X_10>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`37 <X_37>`), (:ref:`8 <X_8>`, :ref:`72 <X_72>`), (:ref:`75 <X_75>`, :ref:`321 <X_321>`), (:ref:`80 <X_80>`, :ref:`519 <X_519>`), (:ref:`100 <X_100>`, :ref:`522 <X_522>`), (:ref:`313 <X_313>`, :ref:`306 <X_306>`)
+   * :ref:`X_10 <X_10>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`191 <X_191>`), (:ref:`6 <X_6>`, :ref:`199 <X_199>`), (:ref:`12 <X_12>`, :ref:`201 <X_201>`), (:ref:`37 <X_37>`, :ref:`210 <X_210>`), (:ref:`42 <X_42>`, :ref:`71 <X_71>`), (:ref:`65 <X_65>`, :ref:`227 <X_227>`)
+   * :ref:`X_10 <X_10>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`37 <X_37>`, :ref:`226 <X_226>`), (:ref:`71 <X_71>`, :ref:`306 <X_306>`), (:ref:`191 <X_191>`, :ref:`502 <X_502>`), (:ref:`201 <X_201>`, :ref:`72 <X_72>`)
+   * :ref:`X_10 <X_10>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`75 <X_75>`), (:ref:`8 <X_8>`, :ref:`318 <X_318>`)
+   * :ref:`X_10 <X_10>` = centroid of :g:`ABC << A B C >>`\ :ref:`X_8 <X_8>`
+   * :ref:`X_10 <X_10>` = Kosnita(:ref:`X_8 <X_8>`,\ :ref:`X_2 <X_2>`) point
+   * :ref:`X_10 <X_10>` = :ref:`X_578 <X_578>`-of-2nd-extouch-triangle
+   * :ref:`X_10 <X_10>` = :ref:`X_389 <X_389>`-of-excentral triangle
+   * :ref:`X_10 <X_10>` = :ref:`X_125 <X_125>`-of-:term:`Fuhrmann triangle <fuhrmann-triangle>`
+   * :ref:`X_10 <X_10>` = perspector of :g:`ABC << A B C >>` and triangle formed from orthocenters of JaBC, JbCA, JcAB, where :g:`J_{a} <J_a>`, :g:`J_{b} <J_b>`, :g:`J_{c} <J_c>` are excenters
+   * :ref:`X_10 <X_10>` = perspector of circumconic centered at :ref:`X_37 <X_37>`
+   * :ref:`X_10 <X_10>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X_37 <X_37>`
+   * :ref:`X_10 <X_10>` = trilinear pole of line :ref:`X_523 <X_523>`\ \ :ref:`X_661 <X_661>` (the polar of :ref:`X_27 <X_27>` wrt polar circle)
+   * :ref:`X_10 <X_10>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_27 <X_27>` (line :ref:`X_242 <X_242>`\ \ :ref:`X_514 <X_514>`)
+   * :ref:`X_10 <X_10>` = :ref:`X_48 <X_48>`-:term:`isoconjugate <isoconjugate>` (polar conjugate)-of-:ref:`X_27 <X_27>`
+   * :ref:`X_10 <X_10>` = :ref:`X_6 <X_6>`-isoconjugate of :ref:`X_81 <X_81>`
+   * :ref:`X_10 <X_10>` = :ref:`X_75 <X_75>`-isoconjugate of X_2206
+   * :ref:`X_10 <X_10>` = X_1101-isoconjugate of X_3120
+   * :ref:`X_10 <X_10>` = :ref:`X_1 <X_1>`-of-:ref:`X_1 <X_1>`-Brocard triangle
+   * :ref:`X_10 <X_10>` = perspector of medial triangle and Ayme triangle
+   * :ref:`X_10 <X_10>` = homothetic center of Ayme triangle and :term:`anticevian triangle <anticevian-triangle>` of :ref:`X_37 <X_37>`
+   * :ref:`X_10 <X_10>` = perspector of Ayme triangle and Danneels-Bevan triangle
+   * :ref:`X_10 <X_10>` = :ref:`X_1 <X_1>`-of-Danneels-Bevan-triangle
+   * :ref:`X_10 <X_10>` = homothetic center of medial triangle and Danneels-Bevan triangle
+   * :ref:`X_10 <X_10>` = homothetic center of :g:`ABC << A B C >>` and :term:`anticomplementary triangle <anticomplementary-triangle>` of Danneels-Bevan triangle
+   * :ref:`X_10 <X_10>` = {:ref:`X_2 <X_2>`,\ :ref:`X_8 <X_8>`}-harmonic conjugate of :ref:`X_1 <X_1>`
+   * :ref:`X_10 <X_10>` = inverse-in-polar-circle of :ref:`X_242 <X_242>`
+   * :ref:`X_10 <X_10>` = inverse-in-{circumcircle, nine-point circle}-inverter of X_5205
+   * :ref:`X_10 <X_10>` = inverse-in-Steiner-inellipse of X_3912
+   * :ref:`X_10 <X_10>` = inverse-in-Feuerbach-hyperbola of X_3057
+   * :ref:`X_10 <X_10>` = perspector of Feuerbach and Apollonius triangles
+   * :ref:`X_10 <X_10>` = perspector of :term:`symmedial triangles <symmedial-triangle>` of Feuerbach and Apollonius triangles
+   * :ref:`X_10 <X_10>` = perspector of circumsymmedial triangles of Feuerbach and Apollonius triangles
+   * :ref:`X_10 <X_10>` = perspector of tangential triangles of Feuerbach and Apollonius triangles
+   * :ref:`X_10 <X_10>` = :ref:`X_214 <X_214>`-of-inner-Garcia-triangle
+   * :ref:`X_10 <X_10>` = Cundy-Parry Phi transform of X_13478
+   * :ref:`X_10 <X_10>` = Cundy-Parry Psi transform of :ref:`X_573 <X_573>`
+   * :ref:`X_10 <X_10>` = perspector of Ayme and 4th :term:`Euler triangles <euler-triangle>`
+   * :ref:`X_10 <X_10>` = barycentric product :ref:`X_101 <X_101>`\ \*\ :ref:`X_850 <X_850>`
+   * :ref:`X_10 <X_10>` = perspector of Gemini triangle 12 and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 12
+   * :ref:`X_10 <X_10>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 15
+   * :ref:`X_10 <X_10>` = trilinear product of vertices of Gemini triangle 15
+   * :ref:`X_10 <X_10>` = homothetic center of Ayme triangle and Gemini triangle 16
+   * :ref:`X_10 <X_10>` = center of the {:g:`ABC << A B C >>`, Gemini 18}-circumconic
+   * :ref:`X_10 <X_10>` = Gemini-triangle-19-to-:g:`ABC << A B C >>` parallelogic center
+   * :ref:`X_10 <X_10>` = centroid of Gemini triangle 20
+   * :ref:`X_10 <X_10>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 25
+   * :ref:`X_10 <X_10>` = perspector of :g:`ABC << A B C >>` and Gemini triangle 26
+   * :ref:`X_10 <X_10>` = perspector of Gemini triangle 39 and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 39
+   * :ref:`X_10 <X_10>` = excentral-to-:g:`ABC << A B C >>` :term:`barycentric image <barycentric-image>` of :ref:`X_3 <X_3>`
+   * :ref:`X_10 <X_10>` = incentral-to-:g:`ABC << A B C >>` barycentric image of :ref:`X_1 <X_1>`
 
 Notes
 -----
 
 .. container:: note-item
 
-   The Spieker circle is the incircle of the medial triangle; its center, :ref:`X(10) <X(10)>`, is the centroid of the perimeter of :g:`ABC << A B C >>`.
+   Let :g:`A' <A'>` be the intersection of these three lines: the perpendicular from midpoint of :g:`CA <[ C A ]>` to line B\ :ref:`X_1 <X_1>`, the perpendicular from midpoint of :g:`AB <[ A B ]>` to line C\ :ref:`X_1 <X_1>`, the perpendicular from midpoint of A\ :ref:`X_1 <X_1>` to line :g:`BC <[ B C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The orthocenter of :g:`A'B'C' << A' B' C' >>` is :ref:`X_10 <X_10>`, and :ref:`X_10 <X_10>` is also the perspector of :g:`A'B'C' << A' B' C' >>` and the medial triangle. Note that :g:`A'B'C' << A' B' C' >>` is the complement of the excentral triangle, and the extraversion triangle of :ref:`X_10 <X_10>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
 
 .. container:: note-item
 
-   A construction of :ref:`X(10) <X(10)>` is given at `24163 <http://www.hyacinthos.epizy.com/message.php?msg=24163>`__. (:person:`Antreas Hatzipolakis <antreas-hatzipolakis>`, August 29, 2016)
+   A construction of :ref:`X_10 <X_10>` is given at `24163 <http://www.hyacinthos.epizy.com/message.php?msg=24163>`__. (:person:`Antreas Hatzipolakis <antreas-hatzipolakis>`, August 29, 2016)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the excentral triangle. :ref:`X(10) <X(10)>` is the radical center of the polar circles of triangles :g:`A'BC << A' B C >>`, :g:`B'CA << B' C A >>`, :g:`C'AB << C' A B >>`. (Randy Hutson, July 31 2018)
+   Let :g:`A'B'C' << J_a J_b J_c >>` be the excentral triangle. :ref:`X_10 <X_10>` is the radical center of the polar circles of triangles :g:`A'BC << J_a B C >>`, :g:`B'CA << J_b C A >>`, :g:`C'AB << J_c A B >>`. (Randy Hutson, July 31 2018)
 
 .. container:: note-item
 
-   Let :g:`A_{20}B_{20}C_{20} << A_20 B_20 C_20 >>` be the Gemini triangle 20. Let :g:`L_{A} <L_A>` be the line through :g:`A_{20} <A_20>` parallel to :g:`BC <[ B C ]>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A'_{20} <A'_20>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`B'_{20} <B'_20>` and :g:`C'_{20} <C'_20>` cyclically. Triangle :g:`A'_{20}B'_{20}C'_{20} << A'_20 B'_20 C'_20 >>` is homothetic to :g:`ABC << A B C >>` at :ref:`X(10) <X(10)>`. (Randy Hutson, November 30, 2018)
+   Let :g:`A_{20}B_{20}C_{20} << A_20 B_20 C_20 >>` be the Gemini triangle 20. Let :g:`L_{A} <L_A>` be the line through :g:`A_{20} <A_20>` parallel to :g:`BC <[ B C ]>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A'_{20} <A'_20>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`B'_{20} <B'_20>` and :g:`C'_{20} <C'_20>` cyclically. Triangle :g:`A'_{20}B'_{20}C'_{20} << A'_20 B'_20 C'_20 >>` is homothetic to :g:`ABC << A B C >>` at :ref:`X_10 <X_10>`. (Randy Hutson, November 30, 2018)
 
 .. container:: note-item
 
-   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-excenter and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(10) <X(10)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-excenter and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X_10 <X_10>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
 
 .. container:: note-item
 
-   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the hexyl triangle and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X(10) <X(10)>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
+   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the :term:`hexyl triangle <hexyl-triangle>` and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X_10 <X_10>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
 
 .. container:: note-item
 
@@ -173,15 +183,15 @@ Notes
       * :g:`C_{a} <C_a>` = reflection of :g:`A <A>` with in the external angular bisector of :g:`C <C>`, and define :g:`A_{b} <A_b>` and :g:`B_{c} <B_c>` cyclically;
       * :g:`V_{a} <V_a>` = :g:`CB_{c} <[ C B_c ]>`\ ∩\ :g:`BC_{b} <[ B C_b ]>`, and define :g:`V_{b} <V_b>` and :g:`V_{c} <V_c>` cyclically.
 
-   The triangle :g:`V_{a}V_{b}V_{c} << V_a V_b V_c >>` is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X(10) <X(10)>`. (:person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, April 19, 2021)
+   The triangle :g:`V_{a}V_{b}V_{c} << V_a V_b V_c >>` is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X_10 <X_10>`. (:person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, April 19, 2021)
 
 .. container:: note-item
 
-   :ref:`X(10) <X(10)>` is the {:ref:`X(1) <X(1)>`,\ :ref:`X(2) <X(2)>`}-harmonic conjugate of X(1125). :ref:`X(10) <X(10)>` is the internal center of similitude of the Apollonius and nine-points circles.
+   :ref:`X_10 <X_10>` is the {:ref:`X_1 <X_1>`,\ :ref:`X_2 <X_2>`}-harmonic conjugate of X_1125. :ref:`X_10 <X_10>` is the internal center of similitude of the Apollonius and nine-points circles.
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the 2nd :term:`extouch triangle <extouch-triangle>`. Let :g:`A″ <A″>` be the trilinear product :g:`B' <B'>`\ \*\ :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(10) <X(10)>`. Also, let :g:`A″B″C″ << A″ B″ C″ >>` be the 1st circumperp triangle. The Simson lines of :g:`A″ <A″>`, :g:`B″ <B″>`, :g:`C″ <C″>` concur in :ref:`X(10) <X(10)>`. (Randy Hutson, November 18, 2015)
+   Let :g:`A'B'C' << N_a N_b N_c >>` be the 2nd :term:`extouch triangle <extouch-triangle>`. Let :g:`A″ <A″>` be the trilinear product :g:`B' <N_b>`\ \*\ :g:`C' <N_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_10 <X_10>`. Also, let :g:`A″B″C″ << A″ B″ C″ >>` be the 1st circumperp triangle. The Simson lines of :g:`A″ <A″>`, :g:`B″ <B″>`, :g:`C″ <C″>` concur in :ref:`X_10 <X_10>`. (Randy Hutson, November 18, 2015)
 
 .. toctree::
    :hidden:

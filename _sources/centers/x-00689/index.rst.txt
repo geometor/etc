@@ -1,22 +1,31 @@
 :order: 689
 :type: center
-:canonical_id: X(689)
-:dependencies: X(1), X(2), X(6), X(32), X(39), X(75), X(76), X(82), X(83), X(110), X(111), X(251), X(308), X(662), X(670), X(688), X(699), X(703), X(715), X(719), X(729), X(733), X(741), X(745), X(755), X(787), X(799), X(813), X(873), X(3005), X(4577), X(35971)
+:canonical_id: X_689
+:subtitle: TRILINEAR POLE OF LINE X_6X_76
+:dependencies: X_1, X_2, X_6, X_32, X_39, X_75, X_76, X_82, X_83, X_110, X_111, X_251, X_308, X_662, X_670, X_688, X_699, X_703, X_715, X_719, X_729, X_733, X_741, X_745, X_755, X_787, X_799, X_813, X_873, X_3005, X_4577, X_35971
 
-.. _X(689):
+.. _X_689:
 
-X(689) = TRILINEAR POLE OF LINE X(6)X(76)
-=========================================
+X_689
+=====
+
+.. rubric:: TRILINEAR POLE OF LINE X_6X_76
 
 .. enunciation::
 
-   :ref:`X(689) <X(689)>` is the center of the bianticevian conic of :ref:`X(1) <X(1)>` and :ref:`X(75) <X(75)>`. This conic is a rectangular hyperbola passing through :ref:`X(1) <X(1)>`, :ref:`X(75) <X(75)>`, the excenters and their :term:`isotomic conjugates <isotomic-conjugate>`. (:person:`Randy Hutson <randy-hutson>`, July 11, 2019)
+   :ref:`X_689 <X_689>` = Ψ(:ref:`X_32 <X_32>`, :ref:`X_2 <X_2>`)
 
 .. figure:: x-00689.svg
-   :alt: X(689) = TRILINEAR POLE OF LINE X(6)X(76)
+   :alt: X_689 — TRILINEAR POLE OF LINE X_6X_76
    :align: center
 
-   **X(689) = TRILINEAR POLE OF LINE X(6)X(76)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_689** (*TRILINEAR POLE OF LINE X_6X_76*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{111, 308} <{ 111, 308 }>`, :g:`{110, 670} <{ 110, 670 }>`
+   * **Related Centers:** :g:`X_688 <X_688>` (:ref:`CROSSDIFFERENCE OF X(6) AND X(76) <X_688>`), :g:`X_111 <X_111>` (:ref:`PARRY POINT <X_111>`), :g:`X_308 <X_308>` (:ref:`ISOTOMIC CONJUGATE OF X(39) <X_308>`), :g:`X_110 <X_110>` (:ref:`FOCUS OF KIEPERT PARABOLA <X_110>`), :g:`X_670 <X_670>` (:ref:`TRILINEAR POLE OF LINE X(2)X(39) <X_670>`)
 
 .. signature:: center
 
@@ -25,23 +34,30 @@ X(689) = TRILINEAR POLE OF LINE X(6)X(76)
 
 .. container:: note-item
 
-   :ref:`X(689) <X(689)>` lies on the circumcircle.
+   :ref:`X_689 <X_689>` lies on the circumcircle.
 
 .. collapse:: Incident Central Lines
    :badge: 13 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`719 <X(719)>`}, {:ref:`2 <X(2)>`, :ref:`733 <X(733)>`}, {:ref:`6 <X(6)>`, :ref:`703 <X(703)>`}, {:ref:`75 <X(75)>`, :ref:`745 <X(745)>`}, {:ref:`76 <X(76)>`, :ref:`755 <X(755)>`}, {:ref:`82 <X(82)>`, :ref:`715 <X(715)>`}, {:ref:`83 <X(83)>`, :ref:`729 <X(729)>`}, {:ref:`110 <X(110)>`, :ref:`670 <X(670)>`}, {:ref:`111 <X(111)>`, :ref:`308 <X(308)>`}, {:ref:`251 <X(251)>`, :ref:`699 <X(699)>`}, {:ref:`662 <X(662)>`, :ref:`787 <X(787)>`}, {:ref:`741 <X(741)>`, :ref:`873 <X(873)>`}, {:ref:`799 <X(799)>`, :ref:`813 <X(813)>`}
+   {:ref:`1 <X_1>`, :ref:`719 <X_719>`}, {:ref:`2 <X_2>`, :ref:`733 <X_733>`}, {:ref:`6 <X_6>`, :ref:`703 <X_703>`}, {:ref:`75 <X_75>`, :ref:`745 <X_745>`}, {:ref:`76 <X_76>`, :ref:`755 <X_755>`}, {:ref:`82 <X_82>`, :ref:`715 <X_715>`}, {:ref:`83 <X_83>`, :ref:`729 <X_729>`}, {:ref:`110 <X_110>`, :ref:`670 <X_670>`}, {:ref:`111 <X_111>`, :ref:`308 <X_308>`}, {:ref:`251 <X_251>`, :ref:`699 <X_699>`}, {:ref:`662 <X_662>`, :ref:`787 <X_787>`}, {:ref:`741 <X_741>`, :ref:`873 <X_873>`}, {:ref:`799 <X_799>`, :ref:`813 <X_813>`}
 
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X(689) <X(689)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(688) <X(688)>`
-   * :ref:`X(689) <X(689)>` = isotomic conjugate of X(3005)
-   * :ref:`X(689) <X(689)>` = :term:`anticomplement <anticomplement>` of X(35971)
-   * :ref:`X(689) <X(689)>` = Ψ(:ref:`X(32) <X(32)>`, :ref:`X(2) <X(2)>`)
-   * :ref:`X(689) <X(689)>` = Ψ(:ref:`X(39) <X(39)>`, :ref:`X(2) <X(2)>`)
-   * :ref:`X(689) <X(689)>` = perspector of :g:`ABC << A B C >>` and the :term:`tangential triangle <tangential-triangle>`, wrt the tangential triangle, of the bianticevian conic of :ref:`X(2) <X(2)>` and :ref:`X(6) <X(6)>` (see X(4577))
+   * :ref:`X_689 <X_689>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_688 <X_688>`
+   * :ref:`X_689 <X_689>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3005
+   * :ref:`X_689 <X_689>` = :term:`anticomplement <anticomplement>` of X_35971
+   * :ref:`X_689 <X_689>` = Ψ(:ref:`X_32 <X_32>`, :ref:`X_2 <X_2>`)
+   * :ref:`X_689 <X_689>` = Ψ(:ref:`X_39 <X_39>`, :ref:`X_2 <X_2>`)
+   * :ref:`X_689 <X_689>` = perspector of :g:`ABC << A B C >>` and the :term:`tangential triangle <tangential-triangle>`, wrt the tangential triangle, of the bianticevian conic of :ref:`X_2 <X_2>` and :ref:`X_6 <X_6>` (see X_4577)
+
+Notes
+-----
+
+.. container:: note-item
+
+   :ref:`X_689 <X_689>` is the center of the bianticevian conic of :ref:`X_1 <X_1>` and :ref:`X_75 <X_75>`. This conic is a rectangular hyperbola passing through :ref:`X_1 <X_1>`, :ref:`X_75 <X_75>`, the excenters and their isotomic conjugates. (:person:`Randy Hutson <randy-hutson>`, July 11, 2019)
 
 .. toctree::
    :hidden:

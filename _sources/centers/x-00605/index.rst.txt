@@ -1,22 +1,31 @@
 :order: 605
 :type: center
-:canonical_id: X(605)
-:dependencies: X(6), X(31), X(371), X(372), X(590), X(601), X(602), X(615), X(748), X(750), X(3083), X(6212), X(37881), X(40651)
+:canonical_id: X_605
+:subtitle: INTERSECTION OF LINES X_371X_602 AND X_372X_601
+:dependencies: X_6, X_31, X_371, X_372, X_590, X_601, X_602, X_615, X_748, X_750, X_3083, X_6212, X_37881, X_40651
 
-.. _X(605):
+.. _X_605:
 
-X(605) = INTERSECTION OF LINES X(371)X(602) AND X(372)X(601)
-============================================================
+X_605
+=====
+
+.. rubric:: INTERSECTION OF LINES X_371X_602 AND X_372X_601
 
 .. enunciation::
 
-   :ref:`X(605) <X(605)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :term:`isotomic conjugate <isotomic-conjugate>` of X(3083)
+   :ref:`X_605 <X_605>` = :term:`isogonal conjugate <isogonal-conjugate>` of :term:`isotomic conjugate <isotomic-conjugate>` of X_3083
 
 .. figure:: x-00605.svg
-   :alt: X(605) = INTERSECTION OF LINES X(371)X(602) AND X(372)X(601)
+   :alt: X_605 — INTERSECTION OF LINES X_371X_602 AND X_372X_601
    :align: center
 
-   **X(605) = INTERSECTION OF LINES X(371)X(602) AND X(372)X(601)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_605** (*INTERSECTION OF LINES X_371X_602 AND X_372X_601*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{6, 31} <{ 6, 31 }>`, :g:`{371, 602} <{ 371, 602 }>`
+   * **Related Centers:** :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_31 <X_31>` (:ref:`2nd POWER POINT <X_31>`), :g:`X_371 <X_371>` (:ref:`KENMOTU POINT <X_371>`), :g:`X_602 <X_602>` (:ref:`INTERSECTION OF LINES X <X_602>`)
 
 .. signature:: center
 
@@ -33,15 +42,15 @@ X(605) = INTERSECTION OF LINES X(371)X(602) AND X(372)X(601)
    :badge: 5 lines
    :class: line-catalog
 
-   {:ref:`6 <X(6)>`, :ref:`31 <X(31)>`}, {:ref:`371 <X(371)>`, :ref:`602 <X(602)>`}, {:ref:`372 <X(372)>`, :ref:`601 <X(601)>`}, {:ref:`590 <X(590)>`, :ref:`748 <X(748)>`}, {:ref:`615 <X(615)>`, :ref:`750 <X(750)>`}
+   {:ref:`6 <X_6>`, :ref:`31 <X_31>`}, {:ref:`371 <X_371>`, :ref:`602 <X_602>`}, {:ref:`372 <X_372>`, :ref:`601 <X_601>`}, {:ref:`590 <X_590>`, :ref:`748 <X_748>`}, {:ref:`615 <X_615>`, :ref:`750 <X_750>`}
 
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X(605) <X(605)>` = isogonal conjugate of isotomic conjugate of X(3083)
-   * :ref:`X(605) <X(605)>` = isogonal conjugate of polar conjugate of X(6212)
-   * :ref:`X(605) <X(605)>` = isogonal conjugate of :term:`complement <complement>` of X(37881)
-   * :ref:`X(605) <X(605)>` = isogonal conjugate of :term:`anticomplement <anticomplement>` of X(40651)
+   * :ref:`X_605 <X_605>` = isogonal conjugate of isotomic conjugate of X_3083
+   * :ref:`X_605 <X_605>` = isogonal conjugate of polar conjugate of X_6212
+   * :ref:`X_605 <X_605>` = isogonal conjugate of :term:`complement <complement>` of X_37881
+   * :ref:`X_605 <X_605>` = isogonal conjugate of :term:`anticomplement <anticomplement>` of X_40651
 
 .. toctree::
    :hidden:

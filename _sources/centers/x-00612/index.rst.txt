@@ -1,22 +1,31 @@
 :order: 612
 :type: center
-:canonical_id: X(612)
-:dependencies: X(1), X(2), X(6), X(9), X(12), X(19), X(21), X(22), X(25), X(31), X(33), X(34), X(35), X(38), X(55), X(57), X(63), X(165), X(171), X(210), X(388), X(394), X(404), X(495), X(518), X(611), X(649), X(905), X(940), X(988), X(989), X(990), X(1038), X(1060), X(3610)
+:canonical_id: X_612
+:subtitle: INTERSECTION OF LINES X_1X_2 AND X_9X_31
+:dependencies: X_1, X_2, X_6, X_9, X_12, X_19, X_21, X_22, X_25, X_31, X_33, X_34, X_35, X_38, X_55, X_57, X_63, X_165, X_171, X_210, X_388, X_394, X_404, X_495, X_518, X_611, X_649, X_905, X_940, X_988, X_989, X_990, X_1038, X_1060, X_3610
 
-.. _X(612):
+.. _X_612:
 
-X(612) = INTERSECTION OF LINES X(1)X(2) AND X(9)X(31)
-=====================================================
+X_612
+=====
+
+.. rubric:: INTERSECTION OF LINES X_1X_2 AND X_9X_31
 
 .. enunciation::
 
-   :ref:`X(612) <X(612)>` is the homothetic center of the :term:`incentral triangle <incentral-triangle>` and the Ayme triangle; see X(3610).
+   :ref:`X_612 <X_612>` is the homothetic center of the :term:`incentral triangle <incentral-triangle>` and the Ayme triangle; see X_3610.
 
 .. figure:: x-00612.svg
-   :alt: X(612) = INTERSECTION OF LINES X(1)X(2) AND X(9)X(31)
+   :alt: X_612 — INTERSECTION OF LINES X_1X_2 AND X_9X_31
    :align: center
 
-   **X(612) = INTERSECTION OF LINES X(1)X(2) AND X(9)X(31)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_612** (*INTERSECTION OF LINES X_1X_2 AND X_9X_31*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 2} <{ 1, 2 }>`, :g:`{9, 31} <{ 9, 31 }>`
+   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_9 <X_9>` (:ref:`MITTENPUNKT <X_9>`), :g:`X_31 <X_31>` (:ref:`2nd POWER POINT <X_31>`)
 
 .. signature:: center
 
@@ -34,14 +43,14 @@ X(612) = INTERSECTION OF LINES X(1)X(2) AND X(9)X(31)
    :badge: 14 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`2 <X(2)>`}, {:ref:`6 <X(6)>`, :ref:`210 <X(210)>`}, {:ref:`9 <X(9)>`, :ref:`31 <X(31)>`}, {:ref:`12 <X(12)>`, :ref:`34 <X(34)>`}, {:ref:`19 <X(19)>`, :ref:`25 <X(25)>`}, {:ref:`21 <X(21)>`, :ref:`989 <X(989)>`}, {:ref:`22 <X(22)>`, :ref:`35 <X(35)>`}, {:ref:`38 <X(38)>`, :ref:`57 <X(57)>`}, {:ref:`63 <X(63)>`, :ref:`171 <X(171)>`}, {:ref:`165 <X(165)>`, :ref:`990 <X(990)>`}, {:ref:`394 <X(394)>`, :ref:`611 <X(611)>`}, {:ref:`404 <X(404)>`, :ref:`988 <X(988)>`}, {:ref:`495 <X(495)>`, 1060}, {:ref:`518 <X(518)>`, :ref:`940 <X(940)>`}
+   {:ref:`1 <X_1>`, :ref:`2 <X_2>`}, {:ref:`6 <X_6>`, :ref:`210 <X_210>`}, {:ref:`9 <X_9>`, :ref:`31 <X_31>`}, {:ref:`12 <X_12>`, :ref:`34 <X_34>`}, {:ref:`19 <X_19>`, :ref:`25 <X_25>`}, {:ref:`21 <X_21>`, :ref:`989 <X_989>`}, {:ref:`22 <X_22>`, :ref:`35 <X_35>`}, {:ref:`38 <X_38>`, :ref:`57 <X_57>`}, {:ref:`63 <X_63>`, :ref:`171 <X_171>`}, {:ref:`165 <X_165>`, :ref:`990 <X_990>`}, {:ref:`394 <X_394>`, :ref:`611 <X_611>`}, {:ref:`404 <X_404>`, :ref:`988 <X_988>`}, {:ref:`495 <X_495>`, 1060}, {:ref:`518 <X_518>`, :ref:`940 <X_940>`}
 
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X(612) <X(612)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(649) <X(649)>`\ \ :ref:`X(905) <X(905)>`
-   * :ref:`X(612) <X(612)>` = trilinear product :ref:`X(33) <X(33)>`\ \*X(1038)
-   * :ref:`X(612) <X(612)>` = trilinear product :ref:`X(55) <X(55)>`\ \*\ :ref:`X(388) <X(388)>`
+   * :ref:`X_612 <X_612>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_649 <X_649>`\ \ :ref:`X_905 <X_905>`
+   * :ref:`X_612 <X_612>` = trilinear product :ref:`X_33 <X_33>`\ \*X_1038
+   * :ref:`X_612 <X_612>` = trilinear product :ref:`X_55 <X_55>`\ \*\ :ref:`X_388 <X_388>`
 
 .. toctree::
    :hidden:

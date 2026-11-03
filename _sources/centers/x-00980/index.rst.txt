@@ -1,22 +1,31 @@
 :order: 980
 :type: center
-:canonical_id: X(980)
-:dependencies: X(1), X(2), X(3), X(32), X(38), X(39), X(63), X(81), X(213), X(650), X(669), X(869), X(981)
+:canonical_id: X_980
+:subtitle: INTERSECTION OF LINES X_1X_3 AND X_2X_39
+:dependencies: X_1, X_2, X_3, X_32, X_38, X_39, X_63, X_81, X_213, X_650, X_669, X_869, X_981
 
-.. _X(980):
+.. _X_980:
 
-X(980) = INTERSECTION OF LINES X(1)X(3) AND X(2)X(39)
-=====================================================
+X_980
+=====
+
+.. rubric:: INTERSECTION OF LINES X_1X_3 AND X_2X_39
 
 .. enunciation::
 
-   :ref:`X(980) <X(980)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(981) <X(981)>`
+   :ref:`X_980 <X_980>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_650 <X_650>`\ \ :ref:`X_669 <X_669>`
 
 .. figure:: x-00980.svg
-   :alt: X(980) = INTERSECTION OF LINES X(1)X(3) AND X(2)X(39)
+   :alt: X_980 — INTERSECTION OF LINES X_1X_3 AND X_2X_39
    :align: center
 
-   **X(980) = INTERSECTION OF LINES X(1)X(3) AND X(2)X(39)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_980** (*INTERSECTION OF LINES X_1X_3 AND X_2X_39*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 3} <{ 1, 3 }>`, :g:`{2, 39} <{ 2, 39 }>`
+   * **Related Centers:** :g:`X_981 <X_981>` (:ref:`ISOGONAL CONJUGATE OF X(980) <X_981>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_39 <X_39>` (:ref:`BROCARD MIDPOINT <X_39>`)
 
 .. signature:: center
 
@@ -28,13 +37,13 @@ X(980) = INTERSECTION OF LINES X(1)X(3) AND X(2)X(39)
    :badge: 5 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`3 <X(3)>`}, {:ref:`2 <X(2)>`, :ref:`39 <X(39)>`}, {:ref:`32 <X(32)>`, :ref:`81 <X(81)>`}, {:ref:`38 <X(38)>`, :ref:`869 <X(869)>`}, {:ref:`63 <X(63)>`, :ref:`213 <X(213)>`}
+   {:ref:`1 <X_1>`, :ref:`3 <X_3>`}, {:ref:`2 <X_2>`, :ref:`39 <X_39>`}, {:ref:`32 <X_32>`, :ref:`81 <X_81>`}, {:ref:`38 <X_38>`, :ref:`869 <X_869>`}, {:ref:`63 <X_63>`, :ref:`213 <X_213>`}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(980) <X(980)>` = isogonal conjugate of :ref:`X(981) <X(981)>`
-   * :ref:`X(980) <X(980)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(650) <X(650)>`\ \ :ref:`X(669) <X(669)>`
+   * :ref:`X_980 <X_980>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_981 <X_981>`
+   * :ref:`X_980 <X_980>` = crossdifference of every pair of points on line :ref:`X_650 <X_650>`\ \ :ref:`X_669 <X_669>`
 
 .. toctree::
    :hidden:

@@ -1,18 +1,21 @@
-:canonical_id: X(270)
+:canonical_id: X_270
 :type: code
+:subtitle: ISOGONAL CONJUGATE OF X_201
 
-X(270) = ISOGONAL CONJUGATE OF X(201) — Code
-============================================
+X_270
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_201
 
 .. enunciation::
 
-   :ref:`X(270) <X(270)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(201) <X(201)>`
+   :ref:`X_270 <X_270>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_201 <X_201>`.
 
 .. figure:: x-00270.svg
-   :alt: X(270) = ISOGONAL CONJUGATE OF X(201)
+   :alt: X_270 — ISOGONAL CONJUGATE OF X_201
    :align: center
 
-   **X(270) = ISOGONAL CONJUGATE OF X(201)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_270** (*ISOGONAL CONJUGATE OF X_201*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

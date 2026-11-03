@@ -1,18 +1,21 @@
-:canonical_id: X(330)
+:canonical_id: X_330
 :type: code
+:subtitle: ISOTOMIC CONJUGATE OF X_192
 
-X(330) = ISOTOMIC CONJUGATE OF X(192) — Code
-============================================
+X_330
+=====
+
+.. rubric:: ISOTOMIC CONJUGATE OF X_192
 
 .. enunciation::
 
-   :ref:`X(330) <X(330)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(2176)
+   :ref:`X_330 <X_330>` is the :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_192 <X_192>`.
 
 .. figure:: x-00330.svg
-   :alt: X(330) = ISOTOMIC CONJUGATE OF X(192)
+   :alt: X_330 — ISOTOMIC CONJUGATE OF X_192
    :align: center
 
-   **X(330) = ISOTOMIC CONJUGATE OF X(192)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_330** (*ISOTOMIC CONJUGATE OF X_192*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

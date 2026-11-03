@@ -1,22 +1,31 @@
 :order: 227
 :type: center
-:canonical_id: X(227)
-:dependencies: X(10), X(12), X(34), X(37), X(40), X(42), X(46), X(55), X(56), X(65), X(72), X(84), X(100), X(197), X(198), X(201), X(208), X(210), X(221), X(222), X(223), X(225), X(285), X(322), X(347), X(607), X(910), X(1433), X(20220)
+:canonical_id: X_227
+:subtitle: X_10-CEVA CONJUGATE OF X_65
+:dependencies: X_10, X_12, X_34, X_37, X_40, X_42, X_46, X_55, X_56, X_65, X_72, X_84, X_100, X_197, X_198, X_201, X_208, X_210, X_221, X_222, X_223, X_225, X_285, X_322, X_347, X_607, X_910, X_1433, X_20220
 
-.. _X(227):
+.. _X_227:
 
-X(227) = X(10)-CEVA CONJUGATE OF X(65)
-======================================
+X_227
+=====
+
+.. rubric:: X_10-CEVA CONJUGATE OF X_65
 
 .. enunciation::
 
-   :ref:`X(227) <X(227)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(285) <X(285)>`
+   :ref:`X_227 <X_227>` = :ref:`X_10 <X_10>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_65 <X_65>`
 
 .. figure:: x-00227.svg
-   :alt: X(227) = X(10)-CEVA CONJUGATE OF X(65)
+   :alt: X_227 — X_10-CEVA CONJUGATE OF X_65
    :align: center
 
-   **X(227) = X(10)-CEVA CONJUGATE OF X(65)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_227** (*X_10-CEVA CONJUGATE OF X_65*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{12, 37} <{ 12, 37 }>`, :g:`{34, 55} <{ 34, 55 }>`
+   * **Related Centers:** :g:`X_285 <X_285>` (:ref:`-CROSS CONJUGATE OF X(21) <X_285>`), :g:`X_12 <X_12>` (:ref:`{X <X_12>`), :g:`X_37 <X_37>` (:ref:`CROSSPOINT OF INCENTER AND CENTROID <X_37>`), :g:`X_34 <X_34>` (:ref:`-BETH CONJUGATE OF X(4) <X_34>`), :g:`X_55 <X_55>` (:ref:`INSIMILICENTER <X_55>`)
 
 .. signature:: center
 
@@ -28,17 +37,17 @@ X(227) = X(10)-CEVA CONJUGATE OF X(65)
    :badge: 10 lines
    :class: line-catalog
 
-   {:ref:`12 <X(12)>`, :ref:`37 <X(37)>`}, {:ref:`34 <X(34)>`, :ref:`55 <X(55)>`}, {:ref:`40 <X(40)>`, :ref:`221 <X(221)>`}, {:ref:`42 <X(42)>`, :ref:`65 <X(65)>`}, {:ref:`46 <X(46)>`, :ref:`222 <X(222)>`}, {:ref:`56 <X(56)>`, :ref:`197 <X(197)>`}, {:ref:`198 <X(198)>`, :ref:`208 <X(208)>`}, {:ref:`201 <X(201)>`, :ref:`210 <X(210)>`}, {:ref:`322 <X(322)>`, :ref:`347 <X(347)>`}, {:ref:`607 <X(607)>`, :ref:`910 <X(910)>`}
+   {:ref:`12 <X_12>`, :ref:`37 <X_37>`}, {:ref:`34 <X_34>`, :ref:`55 <X_55>`}, {:ref:`40 <X_40>`, :ref:`221 <X_221>`}, {:ref:`42 <X_42>`, :ref:`65 <X_65>`}, {:ref:`46 <X_46>`, :ref:`222 <X_222>`}, {:ref:`56 <X_56>`, :ref:`197 <X_197>`}, {:ref:`198 <X_198>`, :ref:`208 <X_208>`}, {:ref:`201 <X_201>`, :ref:`210 <X_210>`}, {:ref:`322 <X_322>`, :ref:`347 <X_347>`}, {:ref:`607 <X_607>`, :ref:`910 <X_910>`}
 
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X(227) <X(227)>` = isogonal conjugate of :ref:`X(285) <X(285)>`
-   * :ref:`X(227) <X(227)>` = :term:`complement <complement>` of X(20220)
-   * :ref:`X(227) <X(227)>` = :ref:`X(10) <X(10)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(65) <X(65)>`
-   * :ref:`X(227) <X(227)>` = :term:`crosspoint <crosspoint>` of :ref:`X(223) <X(223)>` and :ref:`X(347) <X(347)>`
-   * :ref:`X(227) <X(227)>` = :term:`crosssum <crosssum>` of :ref:`X(84) <X(84)>` and X(1433)
-   * :ref:`X(227) <X(227)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`10 <X(10)>`, :ref:`225 <X(225)>`), (:ref:`40 <X(40)>`, :ref:`227 <X(227)>`), (:ref:`100 <X(100)>`, :ref:`72 <X(72)>`)
+   * :ref:`X_227 <X_227>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_285 <X_285>`
+   * :ref:`X_227 <X_227>` = :term:`complement <complement>` of X_20220
+   * :ref:`X_227 <X_227>` = :ref:`X_10 <X_10>`-Ceva conjugate of :ref:`X_65 <X_65>`
+   * :ref:`X_227 <X_227>` = :term:`crosspoint <crosspoint>` of :ref:`X_223 <X_223>` and :ref:`X_347 <X_347>`
+   * :ref:`X_227 <X_227>` = :term:`crosssum <crosssum>` of :ref:`X_84 <X_84>` and X_1433
+   * :ref:`X_227 <X_227>` = X_i-:term:`beth conjugate <beth-conjugate>` of X_j for these (i,j): (:ref:`10 <X_10>`, :ref:`225 <X_225>`), (:ref:`40 <X_40>`, :ref:`227 <X_227>`), (:ref:`100 <X_100>`, :ref:`72 <X_72>`)
 
 .. toctree::
    :hidden:

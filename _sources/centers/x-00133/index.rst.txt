@@ -1,22 +1,31 @@
 :order: 133
 :type: center
-:canonical_id: X(133)
-:dependencies: X(2), X(4), X(5), X(51), X(53), X(74), X(106), X(107), X(115), X(122), X(127), X(136), X(235), X(381), X(1294), X(1990), X(15404), X(34842)
+:canonical_id: X_133
+:subtitle: INTERSECTION OF LINES X_4X_74 AND X_5X_122
+:dependencies: X_2, X_4, X_5, X_51, X_53, X_74, X_106, X_107, X_115, X_122, X_127, X_136, X_235, X_381, X_1294, X_1990, X_15404, X_34842
 
-.. _X(133):
+.. _X_133:
 
-X(133) = INTERSECTION OF LINES X(4)X(74) AND X(5)X(122)
-=======================================================
+X_133
+=====
+
+.. rubric:: INTERSECTION OF LINES X_4X_74 AND X_5X_122
 
 .. enunciation::
 
-   :ref:`X(133) <X(133)>` = :ref:`X(106) <X(106)>`-of-:term:`orthic triangle <orthic-triangle>` is :g:`ABC << A B C >>` is acute.
+   :ref:`X_133 <X_133>` = :ref:`X_106 <X_106>`-of-:term:`orthic triangle <orthic-triangle>` is :g:`ABC << A B C >>` is acute.
 
 .. figure:: x-00133.svg
-   :alt: X(133) = INTERSECTION OF LINES X(4)X(74) AND X(5)X(122)
+   :alt: X_133 — INTERSECTION OF LINES X_4X_74 AND X_5X_122
    :align: center
 
-   **X(133) = INTERSECTION OF LINES X(4)X(74) AND X(5)X(122)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_133** (*INTERSECTION OF LINES X_4X_74 AND X_5X_122*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{4, 107} <{ 4, 107 }>`
+   * **Related Centers:** :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_107 <X_107>` (:ref:`Ψ(SYMMEDIAN POINT, ORTHOCENTER) <X_107>`)
 
 .. signature:: center
 
@@ -26,30 +35,30 @@ X(133) = INTERSECTION OF LINES X(4)X(74) AND X(5)X(122)
 
 .. container:: note-item
 
-   :ref:`X(133) <X(133)>` lies on the nine-point circle
+   :ref:`X_133 <X_133>` lies on the nine-point circle
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, 1294}, {:ref:`4 <X(4)>`, :ref:`74 <X(74)>`}, {:ref:`5 <X(5)>`, :ref:`122 <X(122)>`}, {:ref:`53 <X(53)>`, :ref:`115 <X(115)>`}, {:ref:`127 <X(127)>`, :ref:`381 <X(381)>`}, {:ref:`136 <X(136)>`, :ref:`235 <X(235)>`}
+   {:ref:`2 <X_2>`, 1294}, {:ref:`4 <X_4>`, :ref:`74 <X_74>`}, {:ref:`5 <X_5>`, :ref:`122 <X_122>`}, {:ref:`53 <X_53>`, :ref:`115 <X_115>`}, {:ref:`127 <X_127>`, :ref:`381 <X_381>`}, {:ref:`136 <X_136>`, :ref:`235 <X_235>`}
 
 .. collapse:: Functional Relations
    :badge: 13 relations
 
-   * :ref:`X(133) <X(133)>` = :ref:`X(106) <X(106)>`-of-orthic triangle is :g:`ABC << A B C >>` is acute.
-   * :ref:`X(133) <X(133)>` = midpoint of :ref:`X(4) <X(4)>` and :ref:`X(107) <X(107)>`
-   * :ref:`X(133) <X(133)>` = reflection of :ref:`X(122) <X(122)>` in :ref:`X(5) <X(5)>`
-   * :ref:`X(133) <X(133)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(15404)
-   * :ref:`X(133) <X(133)>` = :term:`complement <complement>` of X(1294)
-   * :ref:`X(133) <X(133)>` = :term:`anticomplement <anticomplement>` of X(34842)
-   * :ref:`X(133) <X(133)>` = perspector of circumconic centered at X(1990)
-   * :ref:`X(133) <X(133)>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through X(1990)
-   * :ref:`X(133) <X(133)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(1990)
-   * :ref:`X(133) <X(133)>` = trilinear pole wrt Euler triangle of van Aubel line
-   * :ref:`X(133) <X(133)>` = inverse-in-polar-circle of :ref:`X(74) <X(74)>`
-   * :ref:`X(133) <X(133)>` = anticenter of cyclic quadrilateral :g:`ABC << A B C >>`\ :ref:`X(107) <X(107)>`
-   * :ref:`X(133) <X(133)>` = Λ(:ref:`X(4) <X(4)>`, :ref:`X(51) <X(51)>`), wrt orthic triangle
+   * :ref:`X_133 <X_133>` = :ref:`X_106 <X_106>`-of-orthic triangle is :g:`ABC << A B C >>` is acute.
+   * :ref:`X_133 <X_133>` = midpoint of :ref:`X_4 <X_4>` and :ref:`X_107 <X_107>`
+   * :ref:`X_133 <X_133>` = reflection of :ref:`X_122 <X_122>` in :ref:`X_5 <X_5>`
+   * :ref:`X_133 <X_133>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_15404
+   * :ref:`X_133 <X_133>` = :term:`complement <complement>` of X_1294
+   * :ref:`X_133 <X_133>` = :term:`anticomplement <anticomplement>` of X_34842
+   * :ref:`X_133 <X_133>` = perspector of circumconic centered at X_1990
+   * :ref:`X_133 <X_133>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through X_1990
+   * :ref:`X_133 <X_133>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of X_1990
+   * :ref:`X_133 <X_133>` = trilinear pole wrt :term:`Euler triangle <euler-triangle>` of van Aubel line
+   * :ref:`X_133 <X_133>` = inverse-in-polar-circle of :ref:`X_74 <X_74>`
+   * :ref:`X_133 <X_133>` = anticenter of cyclic quadrilateral :g:`ABC << A B C >>`\ :ref:`X_107 <X_107>`
+   * :ref:`X_133 <X_133>` = Λ(:ref:`X_4 <X_4>`, :ref:`X_51 <X_51>`), wrt orthic triangle
 
 .. toctree::
    :hidden:

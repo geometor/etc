@@ -1,18 +1,21 @@
-:canonical_id: X(712)
+:canonical_id: X_712
 :type: code
+:subtitle: EVEN (- 3, - 2) INFINITY POINT
 
-X(712) = EVEN (- 3, - 2) INFINITY POINT — Code
-==============================================
+X_712
+=====
+
+.. rubric:: EVEN (- 3, - 2) INFINITY POINT
 
 .. enunciation::
 
-   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X(712) <X(712)>` lies on the line at infinity.
+   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X_712 <X_712>` lies on the line at infinity.
 
 .. figure:: x-00712.svg
-   :alt: X(712) = EVEN (- 3, - 2) INFINITY POINT
+   :alt: X_712 — EVEN (- 3, - 2) INFINITY POINT
    :align: center
 
-   **X(712) = EVEN (- 3, - 2) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_712** (*EVEN (- 3, - 2) INFINITY POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

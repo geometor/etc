@@ -1,18 +1,21 @@
-:canonical_id: X(639)
+:canonical_id: X_639
 :type: code
+:subtitle: COMPLEMENT OF X_371
 
-X(639) = COMPLEMENT OF X(371) — Code
-====================================
+X_639
+=====
+
+.. rubric:: COMPLEMENT OF X_371
 
 .. enunciation::
 
-   :ref:`X(639) <X(639)>` = reflection of :ref:`X(640) <X(640)>` in :ref:`X(626) <X(626)>`
+   :ref:`X_639 <X_639>` is the :term:`complement <complement>` of :ref:`X_371 <X_371>`.
 
 .. figure:: x-00639.svg
-   :alt: X(639) = COMPLEMENT OF X(371)
+   :alt: X_639 — COMPLEMENT OF X_371
    :align: center
 
-   **X(639) = COMPLEMENT OF X(371)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_639** (*COMPLEMENT OF X_371*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

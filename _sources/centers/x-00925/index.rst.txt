@@ -1,22 +1,31 @@
 :order: 925
 :type: center
-:canonical_id: X(925)
-:dependencies: X(1), X(2), X(3), X(4), X(5), X(6), X(20), X(21), X(22), X(24), X(26), X(52), X(68), X(91), X(94), X(96), X(98), X(131), X(135), X(136), X(250), X(648), X(759), X(842), X(847), X(858), X(915), X(924), X(933), X(1300), X(6563), X(34952)
+:canonical_id: X_925
+:subtitle: ANTICOMPLEMENT OF X_136
+:dependencies: X_1, X_2, X_3, X_4, X_5, X_6, X_20, X_21, X_22, X_24, X_26, X_52, X_68, X_91, X_94, X_96, X_98, X_131, X_135, X_136, X_250, X_648, X_759, X_842, X_847, X_858, X_915, X_924, X_933, X_1300, X_6563, X_34952
 
-.. _X(925):
+.. _X_925:
 
-X(925) = ANTICOMPLEMENT OF X(136)
-=================================
+X_925
+=====
+
+.. rubric:: ANTICOMPLEMENT OF X_136
 
 .. enunciation::
 
-   :ref:`X(925) <X(925)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(924) <X(924)>`
+   :ref:`X_925 <X_925>` is the :term:`anticomplement <anticomplement>` of :ref:`X_136 <X_136>`.
 
 .. figure:: x-00925.svg
-   :alt: X(925) = ANTICOMPLEMENT OF X(136)
+   :alt: X_925 — ANTICOMPLEMENT OF X_136
    :align: center
 
-   **X(925) = ANTICOMPLEMENT OF X(136)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_925** (*ANTICOMPLEMENT OF X_136*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{20, 68} <{ 20, 68 }>`, :g:`{22, 98} <{ 22, 98 }>`
+   * **Related Centers:** :g:`X_924 <X_924>` (:ref:`CROSSDIFFERENCE OF X(5) AND X(6) <X_924>`), :g:`X_20 <X_20>` (:ref:`DE LONGCHAMPS POINT <X_20>`), :g:`X_68 <X_68>` (:ref:`PRASOLOV POINT <X_68>`), :g:`X_22 <X_22>` (:ref:`EXETER POINT <X_22>`), :g:`X_98 <X_98>` (:ref:`TARRY POINT <X_98>`)
 
 .. signature:: center
 
@@ -31,31 +40,31 @@ X(925) = ANTICOMPLEMENT OF X(136)
 
 .. container:: note-item
 
-   :ref:`X(925) <X(925)>` lies on the circumcircle.
+   :ref:`X_925 <X_925>` lies on the circumcircle.
 
 .. collapse:: Incident Central Lines
    :badge: 10 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`136 <X(136)>`}, {:ref:`3 <X(3)>`, :ref:`847 <X(847)>`}, {:ref:`4 <X(4)>`, :ref:`131 <X(131)>`}, {:ref:`20 <X(20)>`, :ref:`68 <X(68)>`}, {:ref:`21 <X(21)>`, :ref:`915 <X(915)>`}, {:ref:`22 <X(22)>`, :ref:`98 <X(98)>`}, {:ref:`91 <X(91)>`, :ref:`759 <X(759)>`}, {:ref:`94 <X(94)>`, :ref:`96 <X(96)>`}, {:ref:`648 <X(648)>`, :ref:`933 <X(933)>`}, {:ref:`842 <X(842)>`, :ref:`858 <X(858)>`}
+   {:ref:`2 <X_2>`, :ref:`136 <X_136>`}, {:ref:`3 <X_3>`, :ref:`847 <X_847>`}, {:ref:`4 <X_4>`, :ref:`131 <X_131>`}, {:ref:`20 <X_20>`, :ref:`68 <X_68>`}, {:ref:`21 <X_21>`, :ref:`915 <X_915>`}, {:ref:`22 <X_22>`, :ref:`98 <X_98>`}, {:ref:`91 <X_91>`, :ref:`759 <X_759>`}, {:ref:`94 <X_94>`, :ref:`96 <X_96>`}, {:ref:`648 <X_648>`, :ref:`933 <X_933>`}, {:ref:`842 <X_842>`, :ref:`858 <X_858>`}
 
 .. collapse:: Functional Relations
    :badge: 14 relations
 
-   * :ref:`X(925) <X(925)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`4 <X(4)>`, :ref:`131 <X(131)>`), (1300, :ref:`3 <X(3)>`)
-   * :ref:`X(925) <X(925)>` = isogonal conjugate of :ref:`X(924) <X(924)>`
-   * :ref:`X(925) <X(925)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(6563)
-   * :ref:`X(925) <X(925)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(5) <X(5)>`\ \ :ref:`X(6) <X(6)>`
-   * :ref:`X(925) <X(925)>` = concurrence of reflections in sides of :g:`ABC << A B C >>` of line :ref:`X(4) <X(4)>`\ \ :ref:`X(52) <X(52)>`
-   * :ref:`X(925) <X(925)>` = Ψ(:ref:`X(1) <X(1)>`, :ref:`X(91) <X(91)>`)
-   * :ref:`X(925) <X(925)>` = Ψ(:ref:`X(3) <X(3)>`, :ref:`X(68) <X(68)>`)
-   * :ref:`X(925) <X(925)>` = Ψ(:ref:`X(4) <X(4)>`, :ref:`X(52) <X(52)>`)
-   * :ref:`X(925) <X(925)>` = Ψ(:ref:`X(6) <X(6)>`, :ref:`X(5) <X(5)>`)
-   * :ref:`X(925) <X(925)>` = Λ(:term:`trilinear polar <trilinear-polar>` of :ref:`X(24) <X(24)>`)
-   * :ref:`X(925) <X(925)>` = inverse-in-polar-circle of :ref:`X(135) <X(135)>`
-   * :ref:`X(925) <X(925)>` = :term:`anticomplement <anticomplement>` of :ref:`X(136) <X(136)>`
-   * :ref:`X(925) <X(925)>` = :ref:`X(26) <X(26)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(250) <X(250)>`
-   * :ref:`X(925) <X(925)>` = Gibert-circumtangential conjugate of X(34952)
+   * :ref:`X_925 <X_925>` = reflection of X_i in X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`131 <X_131>`), (1300, :ref:`3 <X_3>`)
+   * :ref:`X_925 <X_925>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_924 <X_924>`
+   * :ref:`X_925 <X_925>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_6563
+   * :ref:`X_925 <X_925>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_5 <X_5>`\ \ :ref:`X_6 <X_6>`
+   * :ref:`X_925 <X_925>` = concurrence of reflections in sides of :g:`ABC << A B C >>` of line :ref:`X_4 <X_4>`\ \ :ref:`X_52 <X_52>`
+   * :ref:`X_925 <X_925>` = Ψ(:ref:`X_1 <X_1>`, :ref:`X_91 <X_91>`)
+   * :ref:`X_925 <X_925>` = Ψ(:ref:`X_3 <X_3>`, :ref:`X_68 <X_68>`)
+   * :ref:`X_925 <X_925>` = Ψ(:ref:`X_4 <X_4>`, :ref:`X_52 <X_52>`)
+   * :ref:`X_925 <X_925>` = Ψ(:ref:`X_6 <X_6>`, :ref:`X_5 <X_5>`)
+   * :ref:`X_925 <X_925>` = Λ(:term:`trilinear polar <trilinear-polar>` of :ref:`X_24 <X_24>`)
+   * :ref:`X_925 <X_925>` = inverse-in-polar-circle of :ref:`X_135 <X_135>`
+   * :ref:`X_925 <X_925>` = anticomplement of :ref:`X_136 <X_136>`
+   * :ref:`X_925 <X_925>` = :ref:`X_26 <X_26>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_250 <X_250>`
+   * :ref:`X_925 <X_925>` = Gibert-circumtangential conjugate of X_34952
 
 .. toctree::
    :hidden:

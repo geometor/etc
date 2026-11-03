@@ -1,18 +1,21 @@
-:canonical_id: X(583)
+:canonical_id: X_583
 :type: code
+:subtitle: ORTHOGONAL OF X_500
 
-X(583) = ORTHOGONAL OF X(500) — Code
-====================================
+X_583
+=====
+
+.. rubric:: ORTHOGONAL OF X_500
 
 .. enunciation::
 
-   :ref:`X(583) <X(583)>` = inverse-in-Brocard-circle of :ref:`X(584) <X(584)>`
+   :ref:`X_583 <X_583>` = inverse-in-Brocard-circle of :ref:`X_584 <X_584>`
 
 .. figure:: x-00583.svg
-   :alt: X(583) = ORTHOGONAL OF X(500)
+   :alt: X_583 — ORTHOGONAL OF X_500
    :align: center
 
-   **X(583) = ORTHOGONAL OF X(500)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_583** (*ORTHOGONAL OF X_500*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

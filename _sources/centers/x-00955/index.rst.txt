@@ -1,22 +1,31 @@
 :order: 955
 :type: center
-:canonical_id: X(955)
-:dependencies: X(57), X(278), X(279), X(354), X(942), X(954), X(991)
+:canonical_id: X_955
+:subtitle: ISOGONAL CONJUGATE OF X_954
+:dependencies: X_57, X_278, X_279, X_354, X_942, X_954, X_991
 
-.. _X(955):
+.. _X_955:
 
-X(955) = ISOGONAL CONJUGATE OF X(954)
-=====================================
+X_955
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_954
 
 .. enunciation::
 
-   :ref:`X(955) <X(955)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(954) <X(954)>`
+   :ref:`X_955 <X_955>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_954 <X_954>`.
 
 .. figure:: x-00955.svg
-   :alt: X(955) = ISOGONAL CONJUGATE OF X(954)
+   :alt: X_955 — ISOGONAL CONJUGATE OF X_954
    :align: center
 
-   **X(955) = ISOGONAL CONJUGATE OF X(954)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_955** (*ISOGONAL CONJUGATE OF X_954*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{278, 354} <{ 278, 354 }>`, :g:`{279, 942} <{ 279, 942 }>`
+   * **Related Centers:** :g:`X_954 <X_954>` (:ref:`INTERSECTION OF LINES X <X_954>`), :g:`X_278 <X_278>` (:ref:`ISOGONAL CONJUGATE OF X(219) <X_278>`), :g:`X_354 <X_354>` (:ref:`WEILL POINT <X_354>`), :g:`X_279 <X_279>` (:ref:`ISOGONAL CONJUGATE OF X(220) <X_279>`), :g:`X_942 <X_942>` (:ref:`INCIRCLE-INVERSE OF X(36) <X_942>`)
 
 .. signature:: center
 
@@ -28,12 +37,12 @@ X(955) = ISOGONAL CONJUGATE OF X(954)
    :badge: 3 lines
    :class: line-catalog
 
-   {:ref:`57 <X(57)>`, :ref:`991 <X(991)>`}, {:ref:`278 <X(278)>`, :ref:`354 <X(354)>`}, {:ref:`279 <X(279)>`, :ref:`942 <X(942)>`}
+   {:ref:`57 <X_57>`, :ref:`991 <X_991>`}, {:ref:`278 <X_278>`, :ref:`354 <X_354>`}, {:ref:`279 <X_279>`, :ref:`942 <X_942>`}
 
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(955) <X(955)>` = isogonal conjugate of :ref:`X(954) <X(954)>`
+   * :ref:`X_955 <X_955>` = isogonal conjugate of :ref:`X_954 <X_954>`
 
 .. toctree::
    :hidden:

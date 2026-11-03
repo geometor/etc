@@ -1,22 +1,31 @@
 :order: 184
 :type: center
-:canonical_id: X(184)
-:dependencies: X(2), X(3), X(4), X(5), X(6), X(22), X(23), X(24), X(25), X(26), X(31), X(32), X(48), X(49), X(50), X(51), X(52), X(54), X(55), X(63), X(74), X(75), X(92), X(98), X(125), X(156), X(157), X(160), X(199), X(205), X(211), X(212), X(213), X(215), X(217), X(226), X(237), X(251), X(263), X(264), X(273), X(297), X(318), X(324), X(338), X(339), X(342), X(351), X(381), X(389), X(397), X(398), X(418), X(427), X(462), X(463), X(491), X(492), X(511), X(523), X(525), X(567), X(570), X(571), X(572), X(573), X(576), X(577), X(604), X(647), X(686), X(692), X(850), X(878), X(1011), X(1147), X(1235), X(3049), X(8880), X(8881), X(11442), X(18022), X(22391), X(24270), X(34469), X(39201)
+:canonical_id: X_184
+:subtitle: INVERSE OF X_125 IN THE BROCARD CIRCLE
+:dependencies: X_2, X_3, X_4, X_5, X_6, X_22, X_23, X_24, X_25, X_26, X_31, X_32, X_48, X_49, X_50, X_51, X_52, X_54, X_55, X_63, X_74, X_75, X_92, X_98, X_125, X_156, X_157, X_160, X_199, X_205, X_211, X_212, X_213, X_215, X_217, X_226, X_237, X_251, X_263, X_264, X_273, X_297, X_318, X_324, X_338, X_339, X_342, X_351, X_381, X_389, X_397, X_398, X_418, X_427, X_462, X_463, X_491, X_492, X_511, X_523, X_525, X_567, X_570, X_571, X_572, X_573, X_576, X_577, X_604, X_647, X_686, X_692, X_850, X_878, X_1011, X_1147, X_1235, X_3049, X_8880, X_8881, X_11442, X_18022, X_22391, X_24270, X_34469, X_39201
 
-.. _X(184):
+.. _X_184:
 
-X(184) = INVERSE OF X(125) IN THE BROCARD CIRCLE
-================================================
+X_184
+=====
+
+.. rubric:: INVERSE OF X_125 IN THE BROCARD CIRCLE
 
 .. enunciation::
 
-   :ref:`X(184) <X(184)>` is the homothetic center of triangles :g:`ABC << A B C >>` and :g:`A'B'C' << A' B' C' >>`, the latter defined as follows: let :g:`B_{1} <B_1>` and :g:`C_{1} <C_1>` be the points where the perpendicular bisector :g:`BC <[ B C ]>` meets sidelines :g:`CA <[ C A ]>` and :g:`AB <[ A B ]>`, and cyclically define :g:`C_{2} <C_2>`, :g:`A_{2} <A_2>`; :g:`A_{3} <A_3>`, :g:`B_{3} <B_3>`. Then :g:`A'B'C' << A' B' C' >>` is formed by the perpendicular bisectors of segments :g:`B_{1}C_{1} <[ B_1 C_1 ]>`, :g:`C_{2}A_{2} <[ C_2 A_2 ]>`, :g:`A_{3}B_{3} <[ A_3 B_3 ]>`. (Fred Lang, :cite:`Hyacinthos #1190 <hyacinthos>`)
+   :ref:`X_184 <X_184>` is the homothetic center of triangles :g:`ABC << A B C >>` and :g:`A'B'C' << A' B' C' >>`, the latter defined as follows: let :g:`B_{1} <B_1>` and :g:`C_{1} <C_1>` be the points where the perpendicular bisector :g:`BC <[ B C ]>` meets sidelines :g:`CA <[ C A ]>` and :g:`AB <[ A B ]>`, and cyclically define :g:`C_{2} <C_2>`, :g:`A_{2} <A_2>`; :g:`A_{3} <A_3>`, :g:`B_{3} <B_3>`. Then :g:`A'B'C' << A' B' C' >>` is formed by the perpendicular bisectors of segments :g:`B_{1}C_{1} <[ B_1 C_1 ]>`, :g:`C_{2}A_{2} <[ C_2 A_2 ]>`, :g:`A_{3}B_{3} <[ A_3 B_3 ]>`. (Fred Lang, :cite:`Hyacinthos #1190 <hyacinthos>`)
 
 .. figure:: x-00184.svg
-   :alt: X(184) = INVERSE OF X(125) IN THE BROCARD CIRCLE
+   :alt: X_184 — INVERSE OF X_125 IN THE BROCARD CIRCLE
    :align: center
 
-   **X(184) = INVERSE OF X(125) IN THE BROCARD CIRCLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_184** (*INVERSE OF X_125 IN THE BROCARD CIRCLE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{6, 25} <{ 6, 25 }>`, :g:`{3, 49} <{ 3, 49 }>`
+   * **Related Centers:** :g:`X_264 <X_264>` (:ref:`ISOTOMIC CONJUGATE OF CIRCUMCENTER <X_264>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_25 <X_25>` (:ref:`HOMOTHETIC CENTER OF ORTHIC AND TANGENTIAL TRIANGLES <X_25>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_49 <X_49>` (:ref:`CENTER OF SINE-TRIPLE-ANGLE CIRCLE <X_49>`)
 
 .. signature:: center
 
@@ -38,62 +47,62 @@ X(184) = INVERSE OF X(125) IN THE BROCARD CIRCLE
    :badge: 25 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`98 <X(98)>`}, {:ref:`3 <X(3)>`, :ref:`49 <X(49)>`}, {:ref:`4 <X(4)>`, :ref:`54 <X(54)>`}, {:ref:`5 <X(5)>`, :ref:`156 <X(156)>`}, {:ref:`6 <X(6)>`, :ref:`25 <X(25)>`}, {:ref:`23 <X(23)>`, :ref:`576 <X(576)>`}, {:ref:`24 <X(24)>`, :ref:`389 <X(389)>`}, {:ref:`26 <X(26)>`, :ref:`52 <X(52)>`}, {:ref:`22 <X(22)>`, :ref:`511 <X(511)>`}, {:ref:`31 <X(31)>`, :ref:`604 <X(604)>`}, {:ref:`32 <X(32)>`, :ref:`211 <X(211)>`}, {:ref:`48 <X(48)>`, :ref:`212 <X(212)>`}, {:ref:`55 <X(55)>`, :ref:`215 <X(215)>`}, {:ref:`157 <X(157)>`, :ref:`570 <X(570)>`}, {:ref:`160 <X(160)>`, :ref:`571 <X(571)>`}, {:ref:`199 <X(199)>`, :ref:`573 <X(573)>`}, {:ref:`205 <X(205)>`, :ref:`213 <X(213)>`}, {:ref:`251 <X(251)>`, :ref:`263 <X(263)>`}, {:ref:`351 <X(351)>`, :ref:`686 <X(686)>`}, {:ref:`381 <X(381)>`, :ref:`567 <X(567)>`}, {:ref:`397 <X(397)>`, :ref:`463 <X(463)>`}, {:ref:`398 <X(398)>`, :ref:`462 <X(462)>`}, {:ref:`418 <X(418)>`, :ref:`577 <X(577)>`}, {:ref:`572 <X(572)>`, 1011}, {:ref:`647 <X(647)>`, :ref:`878 <X(878)>`}
+   {:ref:`2 <X_2>`, :ref:`98 <X_98>`}, {:ref:`3 <X_3>`, :ref:`49 <X_49>`}, {:ref:`4 <X_4>`, :ref:`54 <X_54>`}, {:ref:`5 <X_5>`, :ref:`156 <X_156>`}, {:ref:`6 <X_6>`, :ref:`25 <X_25>`}, {:ref:`23 <X_23>`, :ref:`576 <X_576>`}, {:ref:`24 <X_24>`, :ref:`389 <X_389>`}, {:ref:`26 <X_26>`, :ref:`52 <X_52>`}, {:ref:`22 <X_22>`, :ref:`511 <X_511>`}, {:ref:`31 <X_31>`, :ref:`604 <X_604>`}, {:ref:`32 <X_32>`, :ref:`211 <X_211>`}, {:ref:`48 <X_48>`, :ref:`212 <X_212>`}, {:ref:`55 <X_55>`, :ref:`215 <X_215>`}, {:ref:`157 <X_157>`, :ref:`570 <X_570>`}, {:ref:`160 <X_160>`, :ref:`571 <X_571>`}, {:ref:`199 <X_199>`, :ref:`573 <X_573>`}, {:ref:`205 <X_205>`, :ref:`213 <X_213>`}, {:ref:`251 <X_251>`, :ref:`263 <X_263>`}, {:ref:`351 <X_351>`, :ref:`686 <X_686>`}, {:ref:`381 <X_381>`, :ref:`567 <X_567>`}, {:ref:`397 <X_397>`, :ref:`463 <X_463>`}, {:ref:`398 <X_398>`, :ref:`462 <X_462>`}, {:ref:`418 <X_418>`, :ref:`577 <X_577>`}, {:ref:`572 <X_572>`, 1011}, {:ref:`647 <X_647>`, :ref:`878 <X_878>`}
 
 .. collapse:: Functional Relations
    :badge: 24 relations
 
-   * :ref:`X(184) <X(184)>` = homothetic center of the :term:`orthic triangle <orthic-triangle>` and the :term:`medial triangle <medial-triangle>` of the :term:`tangential triangle <tangential-triangle>`.
-   * :ref:`X(184) <X(184)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(264) <X(264)>`
-   * :ref:`X(184) <X(184)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(18022)
-   * :ref:`X(184) <X(184)>` = :term:`complement <complement>` of X(11442)
-   * :ref:`X(184) <X(184)>` = inverse-in-Brocard-circle of :ref:`X(125) <X(125)>`
-   * :ref:`X(184) <X(184)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`2 <X(2)>`, 22391), (:ref:`6 <X(6)>`, :ref:`32 <X(32)>`), (:ref:`54 <X(54)>`, :ref:`6 <X(6)>`), (:ref:`74 <X(74)>`, :ref:`50 <X(50)>`)
-   * :ref:`X(184) <X(184)>` = :ref:`X(217) <X(217)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(6) <X(6)>`
-   * :ref:`X(184) <X(184)>` = :term:`crosspoint <crosspoint>` of :ref:`X(3) <X(3)>` and :ref:`X(6) <X(6)>`
-   * :ref:`X(184) <X(184)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`4 <X(4)>`), (:ref:`5 <X(5)>`, :ref:`324 <X(324)>`), (:ref:`6 <X(6)>`, :ref:`157 <X(157)>`), (:ref:`92 <X(92)>`, :ref:`318 <X(318)>`), (:ref:`273 <X(273)>`, :ref:`342 <X(342)>`), (:ref:`338 <X(338)>`, :ref:`523 <X(523)>`), (:ref:`339 <X(339)>`, :ref:`850 <X(850)>`), (:ref:`427 <X(427)>`, 1235), (:ref:`491 <X(491)>`, :ref:`492 <X(492)>`)
-   * :ref:`X(184) <X(184)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(297) <X(297)>`\ \ :ref:`X(525) <X(525)>`
-   * :ref:`X(184) <X(184)>` = :ref:`X(32) <X(32)>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X(237) <X(237)>`
-   * :ref:`X(184) <X(184)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`212 <X(212)>`, :ref:`212 <X(212)>`), (:ref:`692 <X(692)>`, :ref:`184 <X(184)>`)
-   * :ref:`X(184) <X(184)>` = :ref:`X(22) <X(22)>` of 1st Brocard triangle
-   * :ref:`X(184) <X(184)>` = trilinear product of PU(19)
-   * :ref:`X(184) <X(184)>` = :term:`trilinear pole <trilinear-pole>` of line X(3049)X(39201)
-   * :ref:`X(184) <X(184)>` = {:ref:`X(3) <X(3)>`,\ :ref:`X(49) <X(49)>`}-harmonic conjugate of X(1147)
-   * :ref:`X(184) <X(184)>` = :term:`vertex conjugate <vertex-conjugate>` of PU(157) (the polar conjugates of PU(38)
-   * :ref:`X(184) <X(184)>` = :ref:`X(75) <X(75)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(4) <X(4)>`
-   * :ref:`X(184) <X(184)>` = {X(8880),X(8881)}-harmonic conjugate of :ref:`X(25) <X(25)>`
-   * :ref:`X(184) <X(184)>` = homothetIc center of orthic triangle and :ref:`X(3) <X(3)>`-Ehrmann triangle; see :ref:`X(25) <X(25)>`
-   * :ref:`X(184) <X(184)>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of tangential-of-tangential triangle
-   * :ref:`X(184) <X(184)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of MacBeath triangle
-   * :ref:`X(184) <X(184)>` = intersection of tangents to Moses-Jerabek conic at :ref:`X(6) <X(6)>` and X(34469)
-   * :ref:`X(184) <X(184)>` = 1st-Brocard-isogonal conjugate of X(24270)
+   * :ref:`X_184 <X_184>` = homothetic center of the :term:`orthic triangle <orthic-triangle>` and the :term:`medial triangle <medial-triangle>` of the :term:`tangential triangle <tangential-triangle>`.
+   * :ref:`X_184 <X_184>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_264 <X_264>`
+   * :ref:`X_184 <X_184>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_18022
+   * :ref:`X_184 <X_184>` = :term:`complement <complement>` of X_11442
+   * :ref:`X_184 <X_184>` = inverse-in-Brocard-circle of :ref:`X_125 <X_125>`
+   * :ref:`X_184 <X_184>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`2 <X_2>`, 22391), (:ref:`6 <X_6>`, :ref:`32 <X_32>`), (:ref:`54 <X_54>`, :ref:`6 <X_6>`), (:ref:`74 <X_74>`, :ref:`50 <X_50>`)
+   * :ref:`X_184 <X_184>` = :ref:`X_217 <X_217>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_6 <X_6>`
+   * :ref:`X_184 <X_184>` = :term:`crosspoint <crosspoint>` of :ref:`X_3 <X_3>` and :ref:`X_6 <X_6>`
+   * :ref:`X_184 <X_184>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`4 <X_4>`), (:ref:`5 <X_5>`, :ref:`324 <X_324>`), (:ref:`6 <X_6>`, :ref:`157 <X_157>`), (:ref:`92 <X_92>`, :ref:`318 <X_318>`), (:ref:`273 <X_273>`, :ref:`342 <X_342>`), (:ref:`338 <X_338>`, :ref:`523 <X_523>`), (:ref:`339 <X_339>`, :ref:`850 <X_850>`), (:ref:`427 <X_427>`, 1235), (:ref:`491 <X_491>`, :ref:`492 <X_492>`)
+   * :ref:`X_184 <X_184>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_297 <X_297>`\ \ :ref:`X_525 <X_525>`
+   * :ref:`X_184 <X_184>` = :ref:`X_32 <X_32>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X_237 <X_237>`
+   * :ref:`X_184 <X_184>` = X_i-:term:`beth conjugate <beth-conjugate>` of X_j for these (i,j): (:ref:`212 <X_212>`, :ref:`212 <X_212>`), (:ref:`692 <X_692>`, :ref:`184 <X_184>`)
+   * :ref:`X_184 <X_184>` = :ref:`X_22 <X_22>` of :term:`1st Brocard triangle <1st-brocard-triangle>`
+   * :ref:`X_184 <X_184>` = trilinear product of PU(19)
+   * :ref:`X_184 <X_184>` = :term:`trilinear pole <trilinear-pole>` of line X_3049X_39201
+   * :ref:`X_184 <X_184>` = {:ref:`X_3 <X_3>`,\ :ref:`X_49 <X_49>`}-harmonic conjugate of X_1147
+   * :ref:`X_184 <X_184>` = :term:`vertex conjugate <vertex-conjugate>` of PU(157) (the polar conjugates of PU(38)
+   * :ref:`X_184 <X_184>` = :ref:`X_75 <X_75>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_4 <X_4>`
+   * :ref:`X_184 <X_184>` = {X_8880,X_8881}-harmonic conjugate of :ref:`X_25 <X_25>`
+   * :ref:`X_184 <X_184>` = homothetIc center of orthic triangle and :ref:`X_3 <X_3>`-Ehrmann triangle; see :ref:`X_25 <X_25>`
+   * :ref:`X_184 <X_184>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of tangential-of-tangential triangle
+   * :ref:`X_184 <X_184>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of MacBeath triangle
+   * :ref:`X_184 <X_184>` = intersection of tangents to Moses-Jerabek conic at :ref:`X_6 <X_6>` and X_34469
+   * :ref:`X_184 <X_184>` = 1st-Brocard-isogonal conjugate of X_24270
 
 Notes
 -----
 
 .. container:: note-item
 
-   :ref:`X(184) <X(184)>` is the subject of :cite:`Hyacinthos <hyacinthos>` messages 5423-5441 (May, 2002). In #5423, Alexei Myakishev notes that :ref:`X(184) <X(184)>` serves as a common vertex of three triangles inside :g:`ABC << A B C >>`, mutually congruent and similar to :g:`ABC << A B C >>`. (The triangles can be labeled :g:`XB_{C}C_{B} << X B_C C_B >>`, :g:`XC_{A}A_{C} << X C_A A_C >>`, :g:`XA_{B}B_{A} << X A_B B_A >>`, with :g:`B_{C} <B_C>` and :g:`C_{B} <C_B>` on side :g:`BC <[ B C ]>`, :g:`C_{A} <C_A>` and :g:`A_{C} <A_C>` on side :g:`CA <[ C A ]>`, and :g:`A_{B} <A_B>` and :g:`B_{A} <B_A>` on side :g:`AB <[ A B ]>`.) See
+   :ref:`X_184 <X_184>` is the subject of :cite:`Hyacinthos <hyacinthos>` messages 5423-5441 (May, 2002). In #5423, Alexei Myakishev notes that :ref:`X_184 <X_184>` serves as a common vertex of three triangles inside :g:`ABC << A B C >>`, mutually congruent and similar to :g:`ABC << A B C >>`. (The triangles can be labeled :g:`XB_{C}C_{B} << X B_C C_B >>`, :g:`XC_{A}A_{C} << X C_A A_C >>`, :g:`XA_{B}B_{A} << X A_B B_A >>`, with :g:`B_{C} <B_C>` and :g:`C_{B} <C_B>` on side :g:`BC <[ B C ]>`, :g:`C_{A} <C_A>` and :g:`A_{C} <A_C>` on side :g:`CA <[ C A ]>`, and :g:`A_{B} <A_B>` and :g:`B_{A} <B_A>` on side :g:`AB <[ A B ]>`.) See
 
 .. container:: note-item
 
-   In #5435, :person:`Paul Yiu <paul-yiu>` cites Fred Lang's construction of :ref:`X(184) <X(184)>` and notes that the three triangles are then easily constructed from :ref:`X(184) <X(184)>`. The triangles determine three other triangles with common vertex :ref:`X(184) <X(184)>`; in #5437, Nikos Dergiades notes that the vertex angles of these are 4A - π, 4B - π, 4C - π, and that
+   In #5435, :person:`Paul Yiu <paul-yiu>` cites Fred Lang's construction of :ref:`X_184 <X_184>` and notes that the three triangles are then easily constructed from :ref:`X_184 <X_184>`. The triangles determine three other triangles with common vertex :ref:`X_184 <X_184>`; in #5437, Nikos Dergiades notes that the vertex angles of these are 4A - π, 4B - π, 4C - π, and that
 
 .. container:: note-item
 
-   if :g:`ABC << A B C >>` is acute, then :ref:`X(184) <X(184)>` = :ref:`X(63) <X(63)>`-of-the-orthic-triangle = :ref:`X(226) <X(226)>`-of-the-tangential-triangle
+   if :g:`ABC << A B C >>` is acute, then :ref:`X_184 <X_184>` = :ref:`X_63 <X_63>`-of-the-orthic-triangle = :ref:`X_226 <X_226>`-of-the-tangential-triangle
 
 .. container:: note-item
 
-   :person:`Randy Hutson <randy-hutson>` notes that :ref:`X(184) <X(184)>` is the exsimilicenter of the circumcircle and sine-triple-angle circle. (December 14, 2014)
+   :person:`Randy Hutson <randy-hutson>` notes that :ref:`X_184 <X_184>` is the exsimilicenter of the circumcircle and sine-triple-angle circle. (December 14, 2014)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the intersections, other than :ref:`X(3) <X(3)>`, of the :ref:`X(3) <X(3)>`-:term:`cevians <cevian>` and the Brocard circle. Let :g:`A″B″C″ << A″ B″ C″ >>` be the intersections, other than :ref:`X(6) <X(6)>`, of the :ref:`X(6) <X(6)>`-cevians and the Brocard circle. Then :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>` are perspective at :ref:`X(184) <X(184)>`. Also, :ref:`X(184) <X(184)>` = U∩V, where :g:`U <U>` = isotomic conjugate of polar conjugate of Brocard axis (i.e., line :ref:`X(3) <X(3)>`\ \ :ref:`X(49) <X(49)>`), and V = polar conjugate of isotomic conjugate of Brocard axis (i.e., line :ref:`X(6) <X(6)>`\ \ :ref:`X(25) <X(25)>`). Let :g:`DEF << D E F >>` be the orthic triangle. Let :g:`D' <D'>` be the isotomic conjugate of :ref:`X(4) <X(4)>` wrt :g:`AEF << A E F >>`, and define :g:`E' <E'>` and :g:`F' <F'>` cyclically; then the lines :g:`AD' <[ A D' ]>`, :g:`BE' <[ B E' ]>`, :g:`CF' <[ C F' ]>` concur in :ref:`X(184) <X(184)>`. (Randy Hutson, June 1, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the intersections, other than :ref:`X_3 <X_3>`, of the :ref:`X_3 <X_3>`-:term:`cevians <cevian>` and the Brocard circle. Let :g:`A″B″C″ << A″ B″ C″ >>` be the intersections, other than :ref:`X_6 <X_6>`, of the :ref:`X_6 <X_6>`-cevians and the Brocard circle. Then :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>` are perspective at :ref:`X_184 <X_184>`. Also, :ref:`X_184 <X_184>` = U∩V, where :g:`U <U>` = isotomic conjugate of polar conjugate of Brocard axis (i.e., line :ref:`X_3 <X_3>`\ \ :ref:`X_49 <X_49>`), and V = polar conjugate of isotomic conjugate of Brocard axis (i.e., line :ref:`X_6 <X_6>`\ \ :ref:`X_25 <X_25>`). Let :g:`DEF << D E F >>` be the orthic triangle. Let :g:`D' <D'>` be the isotomic conjugate of :ref:`X_4 <X_4>` wrt :g:`AEF << A E F >>`, and define :g:`E' <E'>` and :g:`F' <F'>` cyclically; then the lines :g:`AD' <[ A D' ]>`, :g:`BE' <[ B E' ]>`, :g:`CF' <[ C F' ]>` concur in :ref:`X_184 <X_184>`. (Randy Hutson, June 1, 2015)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the triangle described in :cite:`ADGEOM #2697 <adgeom>` (8/26/2015, Tran Quang Hung). :g:`A'B'C' << A' B' C' >>` is homothetic to :g:`ABC << A B C >>` at :ref:`X(184) <X(184)>`.
+   Let :g:`A'B'C' << A' B' C' >>` be the triangle described in :cite:`ADGEOM #2697 <adgeom>` (8/26/2015, Tran Quang Hung). :g:`A'B'C' << A' B' C' >>` is homothetic to :g:`ABC << A B C >>` at :ref:`X_184 <X_184>`.
 
 .. container:: note-item
 
@@ -105,11 +114,11 @@ Notes
       * :g:`A_{c} <A_c>` = :g:`B'CA' << B' C A' >>`\ ∩\ :g:`O_{a} <O_a>`, and define :g:`B_{a} <B_a>` and :g:`C_{b} <C_b>` cyclically;
       * :g:`A″ <A″>`\ = :g:`B_{c}B_{a} <[ B_c B_a ]>`;∩\ :g:`C_{a}C_{b} <[ C_a C_b ]>`, define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically.
 
-   The triangle :g:`A″B″C″ << A″ B″ C″ >>` is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X(184) <X(184)>`. (:person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, April 15, 2021)
+   The triangle :g:`A″B″C″ << A″ B″ C″ >>` is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X_184 <X_184>`. (:person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, April 15, 2021)
 
 .. container:: note-item
 
-   :ref:`X(184) <X(184)>` is the {:ref:`X(6) <X(6)>`,\ :ref:`X(25) <X(25)>`}-harmonic conjugate of :ref:`X(51) <X(51)>`.
+   :ref:`X_184 <X_184>` is the {:ref:`X_6 <X_6>`,\ :ref:`X_25 <X_25>`}-harmonic conjugate of :ref:`X_51 <X_51>`.
 
 .. toctree::
    :hidden:

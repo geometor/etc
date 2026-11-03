@@ -1,22 +1,31 @@
 :order: 870
 :type: center
-:canonical_id: X(870)
-:dependencies: X(1), X(2), X(6), X(34), X(56), X(58), X(75), X(76), X(85), X(86), X(106), X(274), X(292), X(331), X(649), X(693), X(767), X(789), X(825), X(869), X(871), X(984)
+:canonical_id: X_870
+:subtitle: ISOGONAL CONJUGATE OF X_869
+:dependencies: X_1, X_2, X_6, X_34, X_56, X_58, X_75, X_76, X_85, X_86, X_106, X_274, X_292, X_331, X_649, X_693, X_767, X_789, X_825, X_869, X_871, X_984
 
-.. _X(870):
+.. _X_870:
 
-X(870) = ISOGONAL CONJUGATE OF X(869)
-=====================================
+X_870
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_869
 
 .. enunciation::
 
-   Let :g:`A'B'C' << A' B' C' >>` be the trilinear obverse triangle of :ref:`X(2) <X(2)>`. Let :g:`L_{A} <L_A>` be the line through :g:`A' <A'>` parallel to :g:`BC <[ B C ]>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A″ <A″>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to :g:`ABC << A B C >>` at :ref:`X(870) <X(870)>`. (:person:`Randy Hutson <randy-hutson>`, November 30, 2018)
+   :ref:`X_870 <X_870>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_869 <X_869>`.
 
 .. figure:: x-00870.svg
-   :alt: X(870) = ISOGONAL CONJUGATE OF X(869)
+   :alt: X_870 — ISOGONAL CONJUGATE OF X_869
    :align: center
 
-   **X(870) = ISOGONAL CONJUGATE OF X(869)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_870** (*ISOGONAL CONJUGATE OF X_869*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 76} <{ 1, 76 }>`, :g:`{6, 75} <{ 6, 75 }>`
+   * **Related Centers:** :g:`X_869 <X_869>` (:ref:`INTERSECTION OF LINES X <X_869>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_76 <X_76>` (:ref:`3rd BROCARD POINT <X_76>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_75 <X_75>` (:ref:`ISOTOMIC CONJUGATE OF INCENTER <X_75>`)
 
 .. signature:: center
 
@@ -27,14 +36,21 @@ X(870) = ISOGONAL CONJUGATE OF X(869)
    :badge: 9 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`76 <X(76)>`}, {:ref:`2 <X(2)>`, :ref:`292 <X(292)>`}, {:ref:`6 <X(6)>`, :ref:`75 <X(75)>`}, {:ref:`34 <X(34)>`, :ref:`331 <X(331)>`}, {:ref:`56 <X(56)>`, :ref:`85 <X(85)>`}, {:ref:`58 <X(58)>`, :ref:`274 <X(274)>`}, {:ref:`86 <X(86)>`, :ref:`871 <X(871)>`}, {:ref:`106 <X(106)>`, :ref:`789 <X(789)>`}, {:ref:`767 <X(767)>`, :ref:`825 <X(825)>`}
+   {:ref:`1 <X_1>`, :ref:`76 <X_76>`}, {:ref:`2 <X_2>`, :ref:`292 <X_292>`}, {:ref:`6 <X_6>`, :ref:`75 <X_75>`}, {:ref:`34 <X_34>`, :ref:`331 <X_331>`}, {:ref:`56 <X_56>`, :ref:`85 <X_85>`}, {:ref:`58 <X_58>`, :ref:`274 <X_274>`}, {:ref:`86 <X_86>`, :ref:`871 <X_871>`}, {:ref:`106 <X_106>`, :ref:`789 <X_789>`}, {:ref:`767 <X_767>`, :ref:`825 <X_825>`}
 
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X(870) <X(870)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(869) <X(869)>`
-   * :ref:`X(870) <X(870)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(984) <X(984)>`
-   * :ref:`X(870) <X(870)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(649) <X(649)>`\ \ :ref:`X(693) <X(693)>`
+   * :ref:`X_870 <X_870>` = isogonal conjugate of :ref:`X_869 <X_869>`
+   * :ref:`X_870 <X_870>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_984 <X_984>`
+   * :ref:`X_870 <X_870>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_649 <X_649>`\ \ :ref:`X_693 <X_693>`
+
+Notes
+-----
+
+.. container:: note-item
+
+   Let :g:`A'B'C' << A' B' C' >>` be the trilinear obverse triangle of :ref:`X_2 <X_2>`. Let :g:`L_{A} <L_A>` be the line through :g:`A' <A'>` parallel to :g:`BC <[ B C ]>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A″ <A″>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to :g:`ABC << A B C >>` at :ref:`X_870 <X_870>`. (:person:`Randy Hutson <randy-hutson>`, November 30, 2018)
 
 .. toctree::
    :hidden:

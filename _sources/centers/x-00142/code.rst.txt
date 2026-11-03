@@ -1,18 +1,21 @@
-:canonical_id: X(142)
+:canonical_id: X_142
 :type: code
+:subtitle: COMPLEMENT OF X_9
 
-X(142) = COMPLEMENT OF X(9) — Code
-==================================
+X_142
+=====
+
+.. rubric:: COMPLEMENT OF X_9
 
 .. enunciation::
 
-   Let :g:`A' <A'>` be the midpoint between A and :ref:`X(7) <X(7)>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically; the triangle :g:`A'B'C' << A' B' C' >>` is homothetic to the :term:`medial triangle <medial-triangle>`, and the center of homothety is :ref:`X(142) <X(142)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   :ref:`X_142 <X_142>` is the {:ref:`X_2 <X_2>`,\ :ref:`X_7 <X_7>`}-harmonic conjugate of :ref:`X_9 <X_9>`. For a list of other harmonic conjugates, click **Tables** at the top of this page.
 
 .. figure:: x-00142.svg
-   :alt: X(142) = COMPLEMENT OF X(9)
+   :alt: X_142 — COMPLEMENT OF X_9
    :align: center
 
-   **X(142) = COMPLEMENT OF X(9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_142** (*COMPLEMENT OF X_9*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

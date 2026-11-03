@@ -1,22 +1,31 @@
 :order: 757
 :type: center
-:canonical_id: X(757)
-:dependencies: X(6), X(58), X(60), X(81), X(86), X(171), X(319), X(593), X(662), X(756), X(763), X(849), X(1014), X(1089), X(1509)
+:canonical_id: X_757
+:subtitle: ISOGONAL CONJUGATE OF X_756
+:dependencies: X_6, X_58, X_60, X_81, X_86, X_171, X_319, X_593, X_662, X_756, X_763, X_849, X_1014, X_1089, X_1509
 
-.. _X(757):
+.. _X_757:
 
-X(757) = ISOGONAL CONJUGATE OF X(756)
-=====================================
+X_757
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_756
 
 .. enunciation::
 
-   :ref:`X(757) <X(757)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(756) <X(756)>`
+   :ref:`X_757 <X_757>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_756 <X_756>`.
 
 .. figure:: x-00757.svg
-   :alt: X(757) = ISOGONAL CONJUGATE OF X(756)
+   :alt: X_757 — ISOGONAL CONJUGATE OF X_756
    :align: center
 
-   **X(757) = ISOGONAL CONJUGATE OF X(756)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_757** (*ISOGONAL CONJUGATE OF X_756*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{58, 86} <{ 58, 86 }>`, :g:`{171, 319} <{ 171, 319 }>`
+   * **Related Centers:** :g:`X_756 <X_756>` (:ref:`CROSSPOINT OF X(10) AND X(37) <X_756>`), :g:`X_58 <X_58>` (:ref:`ISOGONAL CONJUGATE OF X(10) <X_58>`), :g:`X_86 <X_86>` (:ref:`CEVAPOINT OF INCENTER AND CENTROID <X_86>`), :g:`X_171 <X_171>` (:ref:`{X <X_171>`), :g:`X_319 <X_319>` (:ref:`ISOTOMIC CONJUGATE OF X(79) <X_319>`)
 
 .. signature:: center
 
@@ -28,16 +37,16 @@ X(757) = ISOGONAL CONJUGATE OF X(756)
    :badge: 6 lines
    :class: line-catalog
 
-   {:ref:`6 <X(6)>`, :ref:`662 <X(662)>`}, {:ref:`58 <X(58)>`, :ref:`86 <X(86)>`}, {:ref:`60 <X(60)>`, 1014}, {:ref:`81 <X(81)>`, :ref:`593 <X(593)>`}, {:ref:`171 <X(171)>`, :ref:`319 <X(319)>`}, {:ref:`763 <X(763)>`, :ref:`849 <X(849)>`}
+   {:ref:`6 <X_6>`, :ref:`662 <X_662>`}, {:ref:`58 <X_58>`, :ref:`86 <X_86>`}, {:ref:`60 <X_60>`, 1014}, {:ref:`81 <X_81>`, :ref:`593 <X_593>`}, {:ref:`171 <X_171>`, :ref:`319 <X_319>`}, {:ref:`763 <X_763>`, :ref:`849 <X_849>`}
 
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X(757) <X(757)>` = isogonal conjugate of :ref:`X(756) <X(756)>`
-   * :ref:`X(757) <X(757)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(1089)
-   * :ref:`X(757) <X(757)>` = :term:`cevapoint <cevapoint>` of :ref:`X(58) <X(58)>` and :ref:`X(81) <X(81)>`
-   * :ref:`X(757) <X(757)>` = :ref:`X(81) <X(81)>`-:term:`cross conjugate <cross-conjugate>` of X(1509)
-   * :ref:`X(757) <X(757)>` = trilinear square of :ref:`X(81) <X(81)>`
+   * :ref:`X_757 <X_757>` = isogonal conjugate of :ref:`X_756 <X_756>`
+   * :ref:`X_757 <X_757>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_1089
+   * :ref:`X_757 <X_757>` = :term:`cevapoint <cevapoint>` of :ref:`X_58 <X_58>` and :ref:`X_81 <X_81>`
+   * :ref:`X_757 <X_757>` = :ref:`X_81 <X_81>`-:term:`cross conjugate <cross-conjugate>` of X_1509
+   * :ref:`X_757 <X_757>` = trilinear square of :ref:`X_81 <X_81>`
 
 .. toctree::
    :hidden:

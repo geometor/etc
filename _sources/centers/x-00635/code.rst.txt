@@ -1,18 +1,21 @@
-:canonical_id: X(635)
+:canonical_id: X_635
 :type: code
+:subtitle: COMPLEMENT OF X_61
 
-X(635) = COMPLEMENT OF X(61) — Code
-===================================
+X_635
+=====
+
+.. rubric:: COMPLEMENT OF X_61
 
 .. enunciation::
 
-   :ref:`X(635) <X(635)>` = midpoint of :ref:`X(61) <X(61)>` and :ref:`X(633) <X(633)>`
+   :ref:`X_635 <X_635>` is the :term:`complement <complement>` of :ref:`X_61 <X_61>`.
 
 .. figure:: x-00635.svg
-   :alt: X(635) = COMPLEMENT OF X(61)
+   :alt: X_635 — COMPLEMENT OF X_61
    :align: center
 
-   **X(635) = COMPLEMENT OF X(61)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_635** (*COMPLEMENT OF X_61*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

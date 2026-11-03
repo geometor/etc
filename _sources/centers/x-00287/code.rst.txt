@@ -1,18 +1,21 @@
-:canonical_id: X(287)
+:canonical_id: X_287
 :type: code
+:subtitle: X_2-HIRST INVERSE OF X_98
 
-X(287) = X(2)-HIRST INVERSE OF X(98) — Code
-===========================================
+X_287
+=====
+
+.. rubric:: X_2-HIRST INVERSE OF X_98
 
 .. enunciation::
 
-   :ref:`X(287) <X(287)>` = reflection of :ref:`X(648) <X(648)>` in :ref:`X(6) <X(6)>`
+   :ref:`X_287 <X_287>` is the :ref:`X_2 <X_2>`-:term:`hirst inverse <hirst-inverse>` of :ref:`X_98 <X_98>`.
 
 .. figure:: x-00287.svg
-   :alt: X(287) = X(2)-HIRST INVERSE OF X(98)
+   :alt: X_287 — X_2-HIRST INVERSE OF X_98
    :align: center
 
-   **X(287) = X(2)-HIRST INVERSE OF X(98)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_287** (*X_2-HIRST INVERSE OF X_98*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

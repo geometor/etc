@@ -1,18 +1,21 @@
-:canonical_id: X(443)
+:canonical_id: X_443
 :type: code
+:subtitle: COMPLEMENT OF X_452
 
-X(443) = COMPLEMENT OF X(452) — Code
-====================================
+X_443
+=====
+
+.. rubric:: COMPLEMENT OF X_452
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(443) <X(443)>` has Shinagawa coefficients :math:`(abc \$a\$, S^{2})`.
+   :ref:`X_443 <X_443>` is the :term:`complement <complement>` of :ref:`X_452 <X_452>`.
 
 .. figure:: x-00443.svg
-   :alt: X(443) = COMPLEMENT OF X(452)
+   :alt: X_443 — COMPLEMENT OF X_452
    :align: center
 
-   **X(443) = COMPLEMENT OF X(452)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_443** (*COMPLEMENT OF X_452*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,18 +1,21 @@
-:canonical_id: X(407)
+:canonical_id: X_407
 :type: code
+:subtitle: CROSSPOINT OF X_4 AND X_225
 
-X(407) = CROSSPOINT OF X(4) AND X(225) — Code
-=============================================
+X_407
+=====
+
+.. rubric:: CROSSPOINT OF X_4 AND X_225
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(407) <X(407)>` has Shinagawa coefficients :math:`(FS^{2}, -(\$aS_{A}\$)^{2} - FS^{2})`.
+   :ref:`X_407 <X_407>` is the :term:`crosspoint <crosspoint>` of :ref:`X_4 <X_4>` and :ref:`X_225 <X_225>`.
 
 .. figure:: x-00407.svg
-   :alt: X(407) = CROSSPOINT OF X(4) AND X(225)
+   :alt: X_407 — CROSSPOINT OF X_4 AND X_225
    :align: center
 
-   **X(407) = CROSSPOINT OF X(4) AND X(225)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_407** (*CROSSPOINT OF X_4 AND X_225*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

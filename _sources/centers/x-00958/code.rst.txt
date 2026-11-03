@@ -1,18 +1,21 @@
-:canonical_id: X(958)
+:canonical_id: X_958
 :type: code
+:subtitle: INTERSECTION OF LINES X_1X_6 AND X_2X_12
 
-X(958) = INTERSECTION OF LINES X(1)X(6) AND X(2)X(12) — Code
-============================================================
+X_958
+=====
+
+.. rubric:: INTERSECTION OF LINES X_1X_6 AND X_2X_12
 
 .. enunciation::
 
-   :ref:`X(958) <X(958)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(959) <X(959)>`
+   :ref:`X_958 <X_958>` = :term:`complement <complement>` of :ref:`X_388 <X_388>`
 
 .. figure:: x-00958.svg
-   :alt: X(958) = INTERSECTION OF LINES X(1)X(6) AND X(2)X(12)
+   :alt: X_958 — INTERSECTION OF LINES X_1X_6 AND X_2X_12
    :align: center
 
-   **X(958) = INTERSECTION OF LINES X(1)X(6) AND X(2)X(12)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_958** (*INTERSECTION OF LINES X_1X_6 AND X_2X_12*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

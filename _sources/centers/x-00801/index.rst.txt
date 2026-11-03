@@ -1,22 +1,31 @@
 :order: 801
 :type: center
-:canonical_id: X(801)
-:dependencies: X(2), X(4), X(6), X(10), X(20), X(99), X(235), X(394), X(520), X(523), X(775), X(800), X(1092), X(2071), X(13567)
+:canonical_id: X_801
+:subtitle: ISOGONAL CONJUGATE OF X_800
+:dependencies: X_2, X_4, X_6, X_10, X_20, X_99, X_235, X_394, X_520, X_523, X_775, X_800, X_1092, X_2071, X_13567
 
-.. _X(801):
+.. _X_801:
 
-X(801) = ISOGONAL CONJUGATE OF X(800)
-=====================================
+X_801
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_800
 
 .. enunciation::
 
-   :ref:`X(801) <X(801)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(800) <X(800)>`
+   :ref:`X_801 <X_801>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_800 <X_800>`.
 
 .. figure:: x-00801.svg
-   :alt: X(801) = ISOGONAL CONJUGATE OF X(800)
+   :alt: X_801 — ISOGONAL CONJUGATE OF X_800
    :align: center
 
-   **X(801) = ISOGONAL CONJUGATE OF X(800)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_801** (*ISOGONAL CONJUGATE OF X_800*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{10, 775} <{ 10, 775 }>`
+   * **Related Centers:** :g:`X_800 <X_800>` (:ref:`CROSSPOINT OF X(2) AND X(64) <X_800>`), :g:`X_10 <X_10>` (:ref:`SPIEKER CENTER <X_10>`), :g:`X_775 <X_775>` (:ref:`ISOGONAL CONJUGATE OF X(774) <X_775>`)
 
 .. signature:: center
 
@@ -28,17 +37,17 @@ X(801) = ISOGONAL CONJUGATE OF X(800)
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`4 <X(4)>`, 1092}, {:ref:`10 <X(10)>`, :ref:`775 <X(775)>`}
+   {:ref:`4 <X_4>`, 1092}, {:ref:`10 <X_10>`, :ref:`775 <X_775>`}
 
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X(801) <X(801)>` = isogonal conjugate of :ref:`X(800) <X(800)>`
-   * :ref:`X(801) <X(801)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(13567)
-   * :ref:`X(801) <X(801)>` = polar conjugate of :ref:`X(235) <X(235)>`
-   * :ref:`X(801) <X(801)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(523) <X(523)>`\ X(2071) (the polar of :ref:`X(20) <X(20)>` wrt circumcircle)
-   * :ref:`X(801) <X(801)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`394 <X(394)>`), (:ref:`6 <X(6)>`, :ref:`20 <X(20)>`)
-   * :ref:`X(801) <X(801)>` = :ref:`X(520) <X(520)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(99) <X(99)>`
+   * :ref:`X_801 <X_801>` = isogonal conjugate of :ref:`X_800 <X_800>`
+   * :ref:`X_801 <X_801>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_13567
+   * :ref:`X_801 <X_801>` = polar conjugate of :ref:`X_235 <X_235>`
+   * :ref:`X_801 <X_801>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_523 <X_523>`\ X_2071 (the polar of :ref:`X_20 <X_20>` wrt circumcircle)
+   * :ref:`X_801 <X_801>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`394 <X_394>`), (:ref:`6 <X_6>`, :ref:`20 <X_20>`)
+   * :ref:`X_801 <X_801>` = :ref:`X_520 <X_520>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_99 <X_99>`
 
 .. toctree::
    :hidden:

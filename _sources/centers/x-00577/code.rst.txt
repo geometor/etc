@@ -1,18 +1,21 @@
-:canonical_id: X(577)
+:canonical_id: X_577
 :type: code
+:subtitle: HARMONIC OF X_216
 
-X(577) = HARMONIC OF X(216) — Code
-==================================
+X_577
+=====
+
+.. rubric:: HARMONIC OF X_216
 
 .. enunciation::
 
-   :ref:`X(577) <X(577)>` = reflection of X(36426) in X(23583)
+   :ref:`X_577 <X_577>` = :term:`complement <complement>` of :ref:`X_317 <X_317>`
 
 .. figure:: x-00577.svg
-   :alt: X(577) = HARMONIC OF X(216)
+   :alt: X_577 — HARMONIC OF X_216
    :align: center
 
-   **X(577) = HARMONIC OF X(216)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_577** (*HARMONIC OF X_216*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

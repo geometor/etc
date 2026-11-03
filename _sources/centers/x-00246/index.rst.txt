@@ -1,22 +1,31 @@
 :order: 246
 :type: center
-:canonical_id: X(246)
-:dependencies: X(3), X(74), X(110), X(115), X(125)
+:canonical_id: X_246
+:subtitle: X_3-LINE CONJUGATE OF X_110
+:dependencies: X_3, X_74, X_110, X_115, X_125
 
-.. _X(246):
+.. _X_246:
 
-X(246) = X(3)-LINE CONJUGATE OF X(110)
-======================================
+X_246
+=====
+
+.. rubric:: X_3-LINE CONJUGATE OF X_110
 
 .. enunciation::
 
-   :ref:`X(246) <X(246)>` = :ref:`X(3) <X(3)>`-:term:`line conjugate <line-conjugate>` of :ref:`X(110) <X(110)>`
+   :ref:`X_246 <X_246>` = :ref:`X_3 <X_3>`-:term:`line conjugate <line-conjugate>` of :ref:`X_110 <X_110>`
 
 .. figure:: x-00246.svg
-   :alt: X(246) = X(3)-LINE CONJUGATE OF X(110)
+   :alt: X_246 — X_3-LINE CONJUGATE OF X_110
    :align: center
 
-   **X(246) = X(3)-LINE CONJUGATE OF X(110)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_246** (*X_3-LINE CONJUGATE OF X_110*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{3, 74} <{ 3, 74 }>`, :g:`{115, 125} <{ 115, 125 }>`
+   * **Related Centers:** :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_110 <X_110>` (:ref:`FOCUS OF KIEPERT PARABOLA <X_110>`), :g:`X_74 <X_74>` (:ref:`ISOGONAL CONJUGATE OF EULER INFINITY POINT <X_74>`), :g:`X_115 <X_115>` (:ref:`CENTER OF KIEPERT HYPERBOLA <X_115>`), :g:`X_125 <X_125>` (:ref:`CENTER OF JERABEK HYPERBOLA <X_125>`)
 
 .. signature:: center
 
@@ -28,12 +37,12 @@ X(246) = X(3)-LINE CONJUGATE OF X(110)
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`3 <X(3)>`, :ref:`74 <X(74)>`}, {:ref:`115 <X(115)>`, :ref:`125 <X(125)>`}
+   {:ref:`3 <X_3>`, :ref:`74 <X_74>`}, {:ref:`115 <X_115>`, :ref:`125 <X_125>`}
 
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X(246) <X(246)>` = :ref:`X(3) <X(3)>`-line conjugate of :ref:`X(110) <X(110)>`
+   * :ref:`X_246 <X_246>` = :ref:`X_3 <X_3>`-line conjugate of :ref:`X_110 <X_110>`
 
 .. toctree::
    :hidden:

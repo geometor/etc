@@ -1,22 +1,31 @@
 :order: 972
 :type: center
-:canonical_id: X(972)
-:dependencies: X(3), X(4), X(40), X(55), X(57), X(100), X(101), X(108), X(109), X(165), X(329), X(934), X(971), X(7367), X(14256), X(32622), X(32623)
+:canonical_id: X_972
+:subtitle: ISOGONAL CONJUGATE OF X_971
+:dependencies: X_3, X_4, X_40, X_55, X_57, X_100, X_101, X_108, X_109, X_165, X_329, X_934, X_971, X_7367, X_14256, X_32622, X_32623
 
-.. _X(972):
+.. _X_972:
 
-X(972) = ISOGONAL CONJUGATE OF X(971)
-=====================================
+X_972
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_971
 
 .. enunciation::
 
-   :ref:`X(972) <X(972)>` = reflection of :ref:`X(934) <X(934)>` in :ref:`X(3) <X(3)>`
+   :ref:`X_972 <X_972>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_971 <X_971>`.
 
 .. figure:: x-00972.svg
-   :alt: X(972) = ISOGONAL CONJUGATE OF X(971)
+   :alt: X_972 — ISOGONAL CONJUGATE OF X_971
    :align: center
 
-   **X(972) = ISOGONAL CONJUGATE OF X(971)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_972** (*ISOGONAL CONJUGATE OF X_971*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{934, 3} <{ 934, 3 }>`
+   * **Related Centers:** :g:`X_934 <X_934>` (:ref:`-CROSS CONJUGATE OF X(57) <X_934>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`)
 
 .. signature:: center
 
@@ -25,23 +34,23 @@ X(972) = ISOGONAL CONJUGATE OF X(971)
 
 .. container:: note-item
 
-   :ref:`X(972) <X(972)>` lies on the circumcircle.
+   :ref:`X_972 <X_972>` lies on the circumcircle.
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines
    :class: line-catalog
 
-   {:ref:`3 <X(3)>`, :ref:`934 <X(934)>`}, {:ref:`40 <X(40)>`, :ref:`101 <X(101)>`}, {:ref:`55 <X(55)>`, :ref:`108 <X(108)>`}, {:ref:`100 <X(100)>`, :ref:`329 <X(329)>`}, {:ref:`109 <X(109)>`, :ref:`165 <X(165)>`}
+   {:ref:`3 <X_3>`, :ref:`934 <X_934>`}, {:ref:`40 <X_40>`, :ref:`101 <X_101>`}, {:ref:`55 <X_55>`, :ref:`108 <X_108>`}, {:ref:`100 <X_100>`, :ref:`329 <X_329>`}, {:ref:`109 <X_109>`, :ref:`165 <X_165>`}
 
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X(972) <X(972)>` = reflection of :ref:`X(934) <X(934)>` in :ref:`X(3) <X(3)>`
-   * :ref:`X(972) <X(972)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(971) <X(971)>`
-   * :ref:`X(972) <X(972)>` = :term:`cevapoint <cevapoint>` of X(32622) and X(32623)
-   * :ref:`X(972) <X(972)>` = the point of intersection, other than :g:`A <A>`, :g:`B <B>`, and :g:`C <C>`, of the circumcircle and hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X(4) <X(4)>`,\ :ref:`X(40) <X(40)>`,\ :ref:`X(57) <X(57)>`}}
-   * :ref:`X(972) <X(972)>` = Cundy-Parry Phi transform of X(14256)
-   * :ref:`X(972) <X(972)>` = Cundy-Parry Psi transform of X(7367)
+   * :ref:`X_972 <X_972>` = reflection of :ref:`X_934 <X_934>` in :ref:`X_3 <X_3>`
+   * :ref:`X_972 <X_972>` = isogonal conjugate of :ref:`X_971 <X_971>`
+   * :ref:`X_972 <X_972>` = :term:`cevapoint <cevapoint>` of X_32622 and X_32623
+   * :ref:`X_972 <X_972>` = the point of intersection, other than :g:`A <A>`, :g:`B <B>`, and :g:`C <C>`, of the circumcircle and hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_4 <X_4>`,\ :ref:`X_40 <X_40>`,\ :ref:`X_57 <X_57>`}}
+   * :ref:`X_972 <X_972>` = Cundy-Parry Phi transform of X_14256
+   * :ref:`X_972 <X_972>` = Cundy-Parry Psi transform of X_7367
 
 .. toctree::
    :hidden:

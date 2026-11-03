@@ -1,22 +1,31 @@
 :order: 685
 :type: center
-:canonical_id: X(685)
-:dependencies: X(4), X(31), X(32), X(92), X(98), X(110), X(250), X(287), X(297), X(468), X(523), X(684), X(850), X(2799), X(6333)
+:canonical_id: X_685
+:subtitle: TRILINEAR POLE OF LINE X_4X_98
+:dependencies: X_4, X_31, X_32, X_92, X_98, X_110, X_250, X_287, X_297, X_468, X_523, X_684, X_850, X_2799, X_6333
 
-.. _X(685):
+.. _X_685:
 
-X(685) = TRILINEAR POLE OF LINE X(4)X(98)
-=========================================
+X_685
+=====
+
+.. rubric:: TRILINEAR POLE OF LINE X_4X_98
 
 .. enunciation::
 
-   :ref:`X(685) <X(685)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(684) <X(684)>`
+   :ref:`X_685 <X_685>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_4 <X_4>`\ \ :ref:`X_32 <X_32>`
 
 .. figure:: x-00685.svg
-   :alt: X(685) = TRILINEAR POLE OF LINE X(4)X(98)
+   :alt: X_685 — TRILINEAR POLE OF LINE X_4X_98
    :align: center
 
-   **X(685) = TRILINEAR POLE OF LINE X(4)X(98)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_685** (*TRILINEAR POLE OF LINE X_4X_98*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{98, 468} <{ 98, 468 }>`, :g:`{287, 297} <{ 287, 297 }>`
+   * **Related Centers:** :g:`X_684 <X_684>` (:ref:`CROSSDIFFERENCE OF X(4) AND X(32) <X_684>`), :g:`X_98 <X_98>` (:ref:`TARRY POINT <X_98>`), :g:`X_468 <X_468>` (:ref:`-LINE CONJUGATE OF X(3) <X_468>`), :g:`X_287 <X_287>` (:ref:`-HIRST INVERSE OF X(98) <X_287>`), :g:`X_297 <X_297>` (:ref:`-HIRST INVERSE OF X(4) <X_297>`)
 
 .. signature:: center
 
@@ -28,17 +37,17 @@ X(685) = TRILINEAR POLE OF LINE X(4)X(98)
    :badge: 4 lines
    :class: line-catalog
 
-   {:ref:`98 <X(98)>`, :ref:`468 <X(468)>`}, {:ref:`110 <X(110)>`, :ref:`850 <X(850)>`}, {:ref:`250 <X(250)>`, :ref:`523 <X(523)>`}, {:ref:`287 <X(287)>`, :ref:`297 <X(297)>`}
+   {:ref:`98 <X_98>`, :ref:`468 <X_468>`}, {:ref:`110 <X_110>`, :ref:`850 <X_850>`}, {:ref:`250 <X_250>`, :ref:`523 <X_523>`}, {:ref:`287 <X_287>`, :ref:`297 <X_297>`}
 
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X(685) <X(685)>` = isogonal conjugate of :ref:`X(684) <X(684)>`
-   * :ref:`X(685) <X(685)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(6333)
-   * :ref:`X(685) <X(685)>` = polar conjugate of X(2799)
-   * :ref:`X(685) <X(685)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(4) <X(4)>`\ \ :ref:`X(32) <X(32)>`
-   * :ref:`X(685) <X(685)>` = trilinear product of circumcircle intercepts of line :ref:`X(31) <X(31)>`\ \ :ref:`X(92) <X(92)>`
-   * :ref:`X(685) <X(685)>` = :term:`vertex conjugate <vertex-conjugate>` of MacBeath circumconic intercepts of Euler line
+   * :ref:`X_685 <X_685>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_684 <X_684>`
+   * :ref:`X_685 <X_685>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_6333
+   * :ref:`X_685 <X_685>` = polar conjugate of X_2799
+   * :ref:`X_685 <X_685>` = trilinear pole of line :ref:`X_4 <X_4>`\ \ :ref:`X_32 <X_32>`
+   * :ref:`X_685 <X_685>` = trilinear product of circumcircle intercepts of line :ref:`X_31 <X_31>`\ \ :ref:`X_92 <X_92>`
+   * :ref:`X_685 <X_685>` = :term:`vertex conjugate <vertex-conjugate>` of MacBeath circumconic intercepts of Euler line
 
 .. toctree::
    :hidden:

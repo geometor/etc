@@ -1,22 +1,31 @@
 :order: 739
 :type: center
-:canonical_id: X(739)
-:dependencies: X(1), X(2), X(6), X(8), X(31), X(81), X(99), X(100), X(101), X(108), X(109), X(190), X(513), X(536), X(604), X(608), X(650), X(667), X(813), X(902), X(35543)
+:canonical_id: X_739
+:subtitle: EVEN (- 1, 0) CIRCUMCIRCLE POINT
+:dependencies: X_1, X_2, X_6, X_8, X_31, X_81, X_99, X_100, X_101, X_108, X_109, X_190, X_513, X_536, X_604, X_608, X_650, X_667, X_813, X_902, X_35543
 
-.. _X(739):
+.. _X_739:
 
-X(739) = EVEN (- 1, 0) CIRCUMCIRCLE POINT
-=========================================
+X_739
+=====
+
+.. rubric:: EVEN (- 1, 0) CIRCUMCIRCLE POINT
 
 .. enunciation::
 
-   :ref:`X(739) <X(739)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(536) <X(536)>`
+   :ref:`X_739 <X_739>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_6 <X_6>`\ \ :ref:`X_667 <X_667>`
 
 .. figure:: x-00739.svg
-   :alt: X(739) = EVEN (- 1, 0) CIRCUMCIRCLE POINT
+   :alt: X_739 — EVEN (- 1, 0) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(739) = EVEN (- 1, 0) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_739** (*EVEN (- 1, 0) CIRCUMCIRCLE POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{6, 100} <{ 6, 100 }>`, :g:`{31, 101} <{ 31, 101 }>`
+   * **Related Centers:** :g:`X_536 <X_536>` (:ref:`DIRECTION OF VECTOR AX + BX + CX, where X = X <X_536>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_100 <X_100>` (:ref:`ANTICOMPLEMENT OF FEUERBACH POINT <X_100>`), :g:`X_31 <X_31>` (:ref:`2nd POWER POINT <X_31>`), :g:`X_101 <X_101>` (:ref:`Ψ(INCENTER, SYMMEDIAN POINT) <X_101>`)
 
 .. signature:: center
 
@@ -30,25 +39,25 @@ X(739) = EVEN (- 1, 0) CIRCUMCIRCLE POINT
 
 .. container:: note-item
 
-   :ref:`X(739) <X(739)>` lies on the circumcircle.
+   :ref:`X_739 <X_739>` lies on the circumcircle.
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines
    :class: line-catalog
 
-   {:ref:`6 <X(6)>`, :ref:`100 <X(100)>`}, {:ref:`31 <X(31)>`, :ref:`101 <X(101)>`}, {:ref:`81 <X(81)>`, :ref:`99 <X(99)>`}, {:ref:`108 <X(108)>`, :ref:`608 <X(608)>`}, {:ref:`109 <X(109)>`, :ref:`604 <X(604)>`}, {:ref:`813 <X(813)>`, :ref:`902 <X(902)>`}
+   {:ref:`6 <X_6>`, :ref:`100 <X_100>`}, {:ref:`31 <X_31>`, :ref:`101 <X_101>`}, {:ref:`81 <X_81>`, :ref:`99 <X_99>`}, {:ref:`108 <X_108>`, :ref:`608 <X_608>`}, {:ref:`109 <X_109>`, :ref:`604 <X_604>`}, {:ref:`813 <X_813>`, :ref:`902 <X_902>`}
 
 .. collapse:: Functional Relations
    :badge: 8 relations
 
-   * :ref:`X(739) <X(739)>` = isogonal conjugate of :ref:`X(536) <X(536)>`
-   * :ref:`X(739) <X(739)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(35543)
-   * :ref:`X(739) <X(739)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(6) <X(6)>`\ \ :ref:`X(667) <X(667)>`
-   * :ref:`X(739) <X(739)>` = Ψ(:ref:`X(6) <X(6)>`, :ref:`X(667) <X(667)>`)
-   * :ref:`X(739) <X(739)>` = Ψ(:ref:`X(190) <X(190)>`, :ref:`X(1) <X(1)>`)
-   * :ref:`X(739) <X(739)>` = Ψ(:ref:`X(8) <X(8)>`, :ref:`X(650) <X(650)>`)
-   * :ref:`X(739) <X(739)>` = barycentric product of circumcircle intercepts of line :ref:`X(2) <X(2)>`\ \ :ref:`X(513) <X(513)>`
-   * :ref:`X(739) <X(739)>` = trilinear pole wrt circumsymmedial triangle of line :ref:`X(1) <X(1)>`\ \ :ref:`X(6) <X(6)>`
+   * :ref:`X_739 <X_739>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_536 <X_536>`
+   * :ref:`X_739 <X_739>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_35543
+   * :ref:`X_739 <X_739>` = trilinear pole of line :ref:`X_6 <X_6>`\ \ :ref:`X_667 <X_667>`
+   * :ref:`X_739 <X_739>` = Ψ(:ref:`X_6 <X_6>`, :ref:`X_667 <X_667>`)
+   * :ref:`X_739 <X_739>` = Ψ(:ref:`X_190 <X_190>`, :ref:`X_1 <X_1>`)
+   * :ref:`X_739 <X_739>` = Ψ(:ref:`X_8 <X_8>`, :ref:`X_650 <X_650>`)
+   * :ref:`X_739 <X_739>` = barycentric product of circumcircle intercepts of line :ref:`X_2 <X_2>`\ \ :ref:`X_513 <X_513>`
+   * :ref:`X_739 <X_739>` = trilinear pole wrt circumsymmedial triangle of line :ref:`X_1 <X_1>`\ \ :ref:`X_6 <X_6>`
 
 .. toctree::
    :hidden:

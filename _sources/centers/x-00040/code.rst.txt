@@ -1,18 +1,21 @@
-:canonical_id: X(40)
+:canonical_id: X_40
 :type: code
+:subtitle: BEVAN POINT
 
-X(40) = BEVAN POINT — Code
-==========================
+X_40
+====
+
+.. rubric:: BEVAN POINT
 
 .. enunciation::
 
-   This point is mentioned in a problem proposal by Benjamin Bevan, published in Leybourn's *Mathematical Repository*, 1804, p. 18.
+   :ref:`X_40 <X_40>` = point of concurrence of the perpendiculars from the excenters to the respective sides
 
 .. figure:: x-00040.svg
-   :alt: X(40) = BEVAN POINT
+   :alt: X_40 — BEVAN POINT
    :align: center
 
-   **X(40) = BEVAN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_40** (*BEVAN POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

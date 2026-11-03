@@ -1,18 +1,21 @@
-:canonical_id: X(155)
+:canonical_id: X_155
 :type: code
+:subtitle: EIGENCENTER OF ORTHIC TRIANGLE
 
-X(155) = EIGENCENTER OF ORTHIC TRIANGLE — Code
-==============================================
+X_155
+=====
+
+.. rubric:: EIGENCENTER OF ORTHIC TRIANGLE
 
 .. enunciation::
 
-   Let (A) be the pedal circle of :g:`A <A>` wrt the :term:`tangential triangle <tangential-triangle>`, and define (B), (C) cyclically. The radical center of (A), (B), (C) = :ref:`X(155) <X(155)>`. (:person:`Randy Hutson <randy-hutson>`, December 10, 2016)
+   :ref:`X_155 <X_155>` = :ref:`X_4 <X_4>`-of-tangential-triangle
 
 .. figure:: x-00155.svg
-   :alt: X(155) = EIGENCENTER OF ORTHIC TRIANGLE
+   :alt: X_155 — EIGENCENTER OF ORTHIC TRIANGLE
    :align: center
 
-   **X(155) = EIGENCENTER OF ORTHIC TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_155** (*EIGENCENTER OF ORTHIC TRIANGLE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

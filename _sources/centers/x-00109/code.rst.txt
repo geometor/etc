@@ -1,18 +1,21 @@
-:canonical_id: X(109)
+:canonical_id: X_109
 :type: code
+:subtitle: Ψ(INCENTER, CIRCUMCENTER)
 
-X(109) = Ψ(INCENTER, CIRCUMCENTER) — Code
-=========================================
+X_109
+=====
+
+.. rubric:: Ψ(INCENTER, CIRCUMCENTER)
 
 .. enunciation::
 
-   If the line :ref:`X(1) <X(1)>`\ \ :ref:`X(4) <X(4)>` is reflected in every side of triangle :g:`ABC << A B C >>`, then the reflections concur in :ref:`X(109) <X(109)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   :ref:`X_109 <X_109>` = :term:`anticomplement <anticomplement>` of :ref:`X_124 <X_124>`
 
 .. figure:: x-00109.svg
-   :alt: X(109) = Ψ(INCENTER, CIRCUMCENTER)
+   :alt: X_109 — Ψ(INCENTER, CIRCUMCENTER)
    :align: center
 
-   **X(109) = Ψ(INCENTER, CIRCUMCENTER)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_109** (*Ψ(INCENTER, CIRCUMCENTER)*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,22 +1,31 @@
 :order: 459
 :type: center
-:canonical_id: X(459)
-:dependencies: X(2), X(3), X(4), X(6), X(10), X(19), X(20), X(25), X(34), X(48), X(63), X(64), X(69), X(92), X(96), X(98), X(110), X(115), X(122), X(125), X(154), X(158), X(196), X(204), X(219), X(225), X(226), X(235), X(253), X(255), X(262), X(264), X(297), X(326), X(332), X(393), X(394), X(458), X(485), X(486), X(523), X(577), X(610), X(801), X(850), X(1073), X(1075), X(1096), X(1097), X(1101), X(1131), X(1132), X(1249), X(1259), X(1301), X(1394), X(1446), X(1503), X(1562), X(1577), X(1585), X(1586), X(1790), X(1824), X(1880), X(1895), X(1969), X(2052), X(2060), X(2155), X(2184), X(2193), X(2207), X(2501), X(2883), X(2996), X(3079), X(3090), X(3147), X(3168), X(3172), X(3176), X(3183), X(3198), X(3213), X(3350), X(3424), X(3515), X(3535), X(3536), X(5395), X(5485), X(5523), X(5922), X(5930), X(5931), X(37669)
+:canonical_id: X_459
+:subtitle: X_253-CEVA CONJUGATE OF X_4
+:dependencies: X_2, X_3, X_4, X_6, X_10, X_19, X_20, X_25, X_34, X_48, X_63, X_64, X_69, X_92, X_96, X_98, X_110, X_115, X_122, X_125, X_154, X_158, X_196, X_204, X_219, X_225, X_226, X_235, X_253, X_255, X_262, X_264, X_297, X_326, X_332, X_393, X_394, X_458, X_485, X_486, X_523, X_577, X_610, X_801, X_850, X_1073, X_1075, X_1096, X_1097, X_1101, X_1131, X_1132, X_1249, X_1259, X_1301, X_1394, X_1446, X_1503, X_1562, X_1577, X_1585, X_1586, X_1790, X_1824, X_1880, X_1895, X_1969, X_2052, X_2060, X_2155, X_2184, X_2193, X_2207, X_2501, X_2883, X_2996, X_3079, X_3090, X_3147, X_3168, X_3172, X_3176, X_3183, X_3198, X_3213, X_3350, X_3424, X_3515, X_3535, X_3536, X_5395, X_5485, X_5523, X_5922, X_5930, X_5931, X_37669
 
-.. _X(459):
+.. _X_459:
 
-X(459) = X(253)-CEVA CONJUGATE OF X(4)
-======================================
+X_459
+=====
+
+.. rubric:: X_253-CEVA CONJUGATE OF X_4
 
 .. enunciation::
 
-   Let :g:`A'B'C' << A' B' C' >>` be the midheight triangle. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(459) <X(459)>`. (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
+   :ref:`X_459 <X_459>` = :ref:`X_253 <X_253>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_4 <X_4>`
 
 .. figure:: x-00459.svg
-   :alt: X(459) = X(253)-CEVA CONJUGATE OF X(4)
+   :alt: X_459 — X_253-CEVA CONJUGATE OF X_4
    :align: center
 
-   **X(459) = X(253)-CEVA CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_459** (*X_253-CEVA CONJUGATE OF X_4*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{4, 64} <{ 4, 64 }>`, :g:`{2, 253} <{ 2, 253 }>`
+   * **Related Centers:** :g:`X_253 <X_253>` (:ref:`-CROSS CONJUGATE OF X(2) <X_253>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_64 <X_64>` (:ref:`ISOGONAL CONJUGATE OF X(20) <X_64>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`)
 
 .. signature:: center
 
@@ -27,33 +36,40 @@ X(459) = X(253)-CEVA CONJUGATE OF X(4)
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
 
-   * **Trilinears:** :math:`|A'A''| : :`, where :g:`A'B'C' << A' B' C' >>`, :g:`A″B″C″ << A″ B″ C″ >>` are the :term:`cevian <cevian>` and :term:`anticevian triangles <anticevian-triangle>` of :ref:`X(4) <X(4)>`
+   * **Trilinears:** :math:`|A'A''| : :`, where :g:`A'B'C' << A' B' C' >>`, :g:`A″B″C″ << A″ B″ C″ >>` are the :term:`cevian <cevian>` and :term:`anticevian triangles <anticevian-triangle>` of :ref:`X_4 <X_4>`
    * **Barycentrics:** :math:`1/(S_{A}(S^{2} - 2S_{B}S_{C})) : :`
 
 .. container:: note-item
 
-   :ref:`X(459) <X(459)>` lies on the Kiepert hyperbola.
+   :ref:`X_459 <X_459>` lies on the Kiepert hyperbola.
 
 .. collapse:: Incident Central Lines
    :badge: 20 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`253 <X(253)>`}, {:ref:`4 <X(4)>`, :ref:`64 <X(64)>`}, {:ref:`10 <X(10)>`, 3176}, {:ref:`25 <X(25)>`, 3424}, {:ref:`69 <X(69)>`, :ref:`801 <X(801)>`}, {:ref:`92 <X(92)>`, 1446}, {:ref:`96 <X(96)>`, 3147}, {:ref:`98 <X(98)>`, 1301}, {:ref:`154 <X(154)>`, 5922}, {:ref:`196 <X(196)>`, :ref:`226 <X(226)>`}, {:ref:`262 <X(262)>`, 3168}, {:ref:`297 <X(297)>`, 2996}, {:ref:`458 <X(458)>`, 5395}, {:ref:`485 <X(485)>`, 3535}, {:ref:`486 <X(486)>`, 3536}, {1075, 3090}, {1131, 1585}, {1132, 1586}, {1503, 3079}, {5485, 5523}
+   {:ref:`2 <X_2>`, :ref:`253 <X_253>`}, {:ref:`4 <X_4>`, :ref:`64 <X_64>`}, {:ref:`10 <X_10>`, 3176}, {:ref:`25 <X_25>`, 3424}, {:ref:`69 <X_69>`, :ref:`801 <X_801>`}, {:ref:`92 <X_92>`, 1446}, {:ref:`96 <X_96>`, 3147}, {:ref:`98 <X_98>`, 1301}, {:ref:`154 <X_154>`, 5922}, {:ref:`196 <X_196>`, :ref:`226 <X_226>`}, {:ref:`262 <X_262>`, 3168}, {:ref:`297 <X_297>`, 2996}, {:ref:`458 <X_458>`, 5395}, {:ref:`485 <X_485>`, 3535}, {:ref:`486 <X_486>`, 3536}, {1075, 3090}, {1131, 1585}, {1132, 1586}, {1503, 3079}, {5485, 5523}
 
 .. collapse:: Functional Relations
    :badge: 11 relations
 
-   * :ref:`X(459) <X(459)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(37669)
-   * :ref:`X(459) <X(459)>` = :ref:`X(253) <X(253)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(4) <X(4)>`
-   * :ref:`X(459) <X(459)>` = X(2155)-:term:`complementary conjugate <complementary-conjugate>` of X(3350)
-   * :ref:`X(459) <X(459)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these {i,j}: {:ref:`6 <X(6)>`, 3515}, {:ref:`125 <X(125)>`, 2501}, {:ref:`459 <X(459)>`, :ref:`459 <X(459)>`}, {:ref:`523 <X(523)>`, 1562}
-   * :ref:`X(459) <X(459)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`64 <X(64)>`, :ref:`253 <X(253)>`), (:ref:`235 <X(235)>`, :ref:`264 <X(264)>`), (:ref:`393 <X(393)>`, :ref:`4 <X(4)>`), (1562, :ref:`523 <X(523)>`)
-   * :ref:`X(459) <X(459)>` = polar conjugate of :ref:`X(20) <X(20)>`
-   * :ref:`X(459) <X(459)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these {i,j}: {:ref:`3 <X(3)>`, :ref:`610 <X(610)>`}, {:ref:`20 <X(20)>`, :ref:`48 <X(48)>`}, {:ref:`63 <X(63)>`, :ref:`154 <X(154)>`}, {:ref:`204 <X(204)>`, :ref:`394 <X(394)>`}, {:ref:`219 <X(219)>`, 1394}, {:ref:`255 <X(255)>`, 1249}, {:ref:`326 <X(326)>`, 3172}, {:ref:`577 <X(577)>`, 1895}, {1101, 1562}, {1259, 3213}, {1790, 3198}, {2193, 5930}
-   * :ref:`X(459) <X(459)>` = {:ref:`X(2) <X(2)>`,\ :ref:`X(253) <X(253)>`}-harmonic conjugate of X(1073)
-   * :ref:`X(459) <X(459)>` = trilinear product X(i)\*X(j) for these {i,j}: {:ref:`4 <X(4)>`, 2184}, {:ref:`19 <X(19)>`, :ref:`253 <X(253)>`}, {:ref:`64 <X(64)>`, :ref:`92 <X(92)>`}, {:ref:`158 <X(158)>`, 1073}, {:ref:`264 <X(264)>`, 2155}, {1301, 1577}, {1880, 5931}}
-   * :ref:`X(459) <X(459)>` = barycentric product X(i)\*X(j) for these {i,j}: {:ref:`4 <X(4)>`, :ref:`253 <X(253)>`}, {:ref:`64 <X(64)>`, :ref:`264 <X(264)>`}, {:ref:`92 <X(92)>`, 2184}, {:ref:`225 <X(225)>`, 5931}, {:ref:`850 <X(850)>`, 1301}, {1073, 2052}, {1969, 2155}
-   * :ref:`X(459) <X(459)>` = barycentric quotient X(i)/X(j) for these {i,j}: {:ref:`4 <X(4)>`, :ref:`20 <X(20)>`}, {:ref:`19 <X(19)>`, :ref:`610 <X(610)>`}, {:ref:`25 <X(25)>`, :ref:`154 <X(154)>`}, {:ref:`34 <X(34)>`, 1394}, {:ref:`64 <X(64)>`, :ref:`3 <X(3)>`}, {:ref:`115 <X(115)>`, 1562}, {:ref:`125 <X(125)>`, :ref:`122 <X(122)>`}, {:ref:`158 <X(158)>`, 1895}, {:ref:`225 <X(225)>`, 5930}, {:ref:`235 <X(235)>`, 2883}, {:ref:`253 <X(253)>`, :ref:`69 <X(69)>`}, {:ref:`393 <X(393)>`, 1249}, {:ref:`459 <X(459)>`, :ref:`2 <X(2)>`}, {1073, :ref:`394 <X(394)>`}, {1096, :ref:`204 <X(204)>`}, {1301, :ref:`110 <X(110)>`}, {1824, 3198}, {1895, 1097}, {2155, :ref:`48 <X(48)>`}, {2184, :ref:`63 <X(63)>`}, {2207, 3172}, {3183, 2060}, {5931, :ref:`332 <X(332)>`}
+   * :ref:`X_459 <X_459>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_37669
+   * :ref:`X_459 <X_459>` = :ref:`X_253 <X_253>`-Ceva conjugate of :ref:`X_4 <X_4>`
+   * :ref:`X_459 <X_459>` = X_2155-:term:`complementary conjugate <complementary-conjugate>` of X_3350
+   * :ref:`X_459 <X_459>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these {i,j}: {:ref:`6 <X_6>`, 3515}, {:ref:`125 <X_125>`, 2501}, {:ref:`459 <X_459>`, :ref:`459 <X_459>`}, {:ref:`523 <X_523>`, 1562}
+   * :ref:`X_459 <X_459>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`64 <X_64>`, :ref:`253 <X_253>`), (:ref:`235 <X_235>`, :ref:`264 <X_264>`), (:ref:`393 <X_393>`, :ref:`4 <X_4>`), (1562, :ref:`523 <X_523>`)
+   * :ref:`X_459 <X_459>` = polar conjugate of :ref:`X_20 <X_20>`
+   * :ref:`X_459 <X_459>` = X_i-:term:`isoconjugate <isoconjugate>` of X_j for these {i,j}: {:ref:`3 <X_3>`, :ref:`610 <X_610>`}, {:ref:`20 <X_20>`, :ref:`48 <X_48>`}, {:ref:`63 <X_63>`, :ref:`154 <X_154>`}, {:ref:`204 <X_204>`, :ref:`394 <X_394>`}, {:ref:`219 <X_219>`, 1394}, {:ref:`255 <X_255>`, 1249}, {:ref:`326 <X_326>`, 3172}, {:ref:`577 <X_577>`, 1895}, {1101, 1562}, {1259, 3213}, {1790, 3198}, {2193, 5930}
+   * :ref:`X_459 <X_459>` = {:ref:`X_2 <X_2>`,\ :ref:`X_253 <X_253>`}-harmonic conjugate of X_1073
+   * :ref:`X_459 <X_459>` = trilinear product X_i\*X_j for these {i,j}: {:ref:`4 <X_4>`, 2184}, {:ref:`19 <X_19>`, :ref:`253 <X_253>`}, {:ref:`64 <X_64>`, :ref:`92 <X_92>`}, {:ref:`158 <X_158>`, 1073}, {:ref:`264 <X_264>`, 2155}, {1301, 1577}, {1880, 5931}}
+   * :ref:`X_459 <X_459>` = barycentric product X_i\*X_j for these {i,j}: {:ref:`4 <X_4>`, :ref:`253 <X_253>`}, {:ref:`64 <X_64>`, :ref:`264 <X_264>`}, {:ref:`92 <X_92>`, 2184}, {:ref:`225 <X_225>`, 5931}, {:ref:`850 <X_850>`, 1301}, {1073, 2052}, {1969, 2155}
+   * :ref:`X_459 <X_459>` = barycentric quotient X_i/X_j for these {i,j}: {:ref:`4 <X_4>`, :ref:`20 <X_20>`}, {:ref:`19 <X_19>`, :ref:`610 <X_610>`}, {:ref:`25 <X_25>`, :ref:`154 <X_154>`}, {:ref:`34 <X_34>`, 1394}, {:ref:`64 <X_64>`, :ref:`3 <X_3>`}, {:ref:`115 <X_115>`, 1562}, {:ref:`125 <X_125>`, :ref:`122 <X_122>`}, {:ref:`158 <X_158>`, 1895}, {:ref:`225 <X_225>`, 5930}, {:ref:`235 <X_235>`, 2883}, {:ref:`253 <X_253>`, :ref:`69 <X_69>`}, {:ref:`393 <X_393>`, 1249}, {:ref:`459 <X_459>`, :ref:`2 <X_2>`}, {1073, :ref:`394 <X_394>`}, {1096, :ref:`204 <X_204>`}, {1301, :ref:`110 <X_110>`}, {1824, 3198}, {1895, 1097}, {2155, :ref:`48 <X_48>`}, {2184, :ref:`63 <X_63>`}, {2207, 3172}, {3183, 2060}, {5931, :ref:`332 <X_332>`}
+
+Notes
+-----
+
+.. container:: note-item
+
+   Let :g:`A'B'C' << A' B' C' >>` be the midheight triangle. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_459 <X_459>`. (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
 
 .. toctree::
    :hidden:

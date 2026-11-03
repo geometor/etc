@@ -1,22 +1,31 @@
 :order: 222
 :type: center
-:canonical_id: X(222)
-:dependencies: X(1), X(2), X(3), X(4), X(6), X(7), X(9), X(21), X(25), X(27), X(33), X(34), X(46), X(48), X(55), X(56), X(57), X(58), X(63), X(72), X(73), X(77), X(81), X(84), X(103), X(110), X(171), X(189), X(218), X(221), X(226), X(227), X(241), X(268), X(281), X(287), X(348), X(478), X(581), X(601), X(607), X(611), X(613), X(648), X(650), X(651), X(662), X(895), X(912), X(940), X(942), X(971), X(982), X(1012), X(1035), X(1038), X(1060), X(1066), X(1073), X(1146), X(1355), X(1363), X(1459), X(1743), X(1946), X(1993), X(3064), X(3078), X(3218), X(3700), X(7017), X(12723), X(17073)
+:canonical_id: X_222
+:subtitle: X_7-CEVA CONJUGATE OF X_56
+:dependencies: X_1, X_2, X_3, X_4, X_6, X_7, X_9, X_21, X_25, X_27, X_33, X_34, X_46, X_48, X_55, X_56, X_57, X_58, X_63, X_72, X_73, X_77, X_81, X_84, X_103, X_110, X_171, X_189, X_218, X_221, X_226, X_227, X_241, X_268, X_281, X_287, X_348, X_478, X_581, X_601, X_607, X_611, X_613, X_648, X_650, X_651, X_662, X_895, X_912, X_940, X_942, X_971, X_982, X_1012, X_1035, X_1038, X_1060, X_1066, X_1073, X_1146, X_1355, X_1363, X_1459, X_1743, X_1946, X_1993, X_3064, X_3078, X_3218, X_3700, X_7017, X_12723, X_17073
 
-.. _X(222):
+.. _X_222:
 
-X(222) = X(7)-CEVA CONJUGATE OF X(56)
-=====================================
+X_222
+=====
+
+.. rubric:: X_7-CEVA CONJUGATE OF X_56
 
 .. enunciation::
 
-   Let :g:`A' <A'>` be the center of the conic through the contact points of the incircle and the :g:`A <A>`-excircle with the sidelines of :g:`ABC << A B C >>`. Define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The triangle :g:`A'B'C' << A' B' C' >>` is perspective to the :term:`intouch triangle <intouch-triangle>` at :ref:`X(222) <X(222)>`. See also :ref:`X(6) <X(6)>`, :ref:`X(25) <X(25)>`, :ref:`X(218) <X(218)>`, :ref:`X(940) <X(940)>`, X(1743). (:person:`Randy Hutson <randy-hutson>`, July 23, 2015)
+   :ref:`X_222 <X_222>` = :term:`cevapoint <cevapoint>` of :ref:`X_6 <X_6>` and :ref:`X_221 <X_221>`
 
 .. figure:: x-00222.svg
-   :alt: X(222) = X(7)-CEVA CONJUGATE OF X(56)
+   :alt: X_222 — X_7-CEVA CONJUGATE OF X_56
    :align: center
 
-   **X(222) = X(7)-CEVA CONJUGATE OF X(56)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_222** (*X_7-CEVA CONJUGATE OF X_56*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{7, 27} <{ 7, 27 }>`, :g:`{6, 57} <{ 6, 57 }>`
+   * **Related Centers:** :g:`X_281 <X_281>` (:ref:`-CROSS CONJUGATE OF X(9) <X_281>`), :g:`X_7 <X_7>` (:ref:`GERGONNE POINT <X_7>`), :g:`X_27 <X_27>` (:ref:`CEVAPOINT OF ORTHOCENTER AND CLAWSON CENTER <X_27>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_57 <X_57>` (:ref:`ISOGONAL CONJUGATE OF X(9) <X_57>`)
 
 .. signature:: center
 
@@ -34,34 +43,38 @@ X(222) = X(7)-CEVA CONJUGATE OF X(56)
    :badge: 23 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`84 <X(84)>`}, {:ref:`2 <X(2)>`, :ref:`651 <X(651)>`}, {:ref:`3 <X(3)>`, :ref:`73 <X(73)>`}, {:ref:`6 <X(6)>`, :ref:`57 <X(57)>`}, {:ref:`7 <X(7)>`, :ref:`27 <X(27)>`}, {:ref:`33 <X(33)>`, :ref:`971 <X(971)>`}, {:ref:`34 <X(34)>`, :ref:`942 <X(942)>`}, {:ref:`46 <X(46)>`, :ref:`227 <X(227)>`}, {:ref:`55 <X(55)>`, :ref:`103 <X(103)>`}, {:ref:`56 <X(56)>`, :ref:`58 <X(58)>`}, {:ref:`63 <X(63)>`, :ref:`77 <X(77)>`}, {:ref:`72 <X(72)>`, 1038}, {:ref:`171 <X(171)>`, :ref:`611 <X(611)>`}, {:ref:`189 <X(189)>`, :ref:`281 <X(281)>`}, {:ref:`218 <X(218)>`, :ref:`241 <X(241)>`}, {:ref:`226 <X(226)>`, :ref:`478 <X(478)>`}, {:ref:`268 <X(268)>`, 1073}, {:ref:`581 <X(581)>`, 1035}, {:ref:`601 <X(601)>`, 1066}, {:ref:`613 <X(613)>`, :ref:`982 <X(982)>`}, {:ref:`912 <X(912)>`, 1060}, {1355, 1363}, {1993, 3218}
+   {:ref:`1 <X_1>`, :ref:`84 <X_84>`}, {:ref:`2 <X_2>`, :ref:`651 <X_651>`}, {:ref:`3 <X_3>`, :ref:`73 <X_73>`}, {:ref:`6 <X_6>`, :ref:`57 <X_57>`}, {:ref:`7 <X_7>`, :ref:`27 <X_27>`}, {:ref:`33 <X_33>`, :ref:`971 <X_971>`}, {:ref:`34 <X_34>`, :ref:`942 <X_942>`}, {:ref:`46 <X_46>`, :ref:`227 <X_227>`}, {:ref:`55 <X_55>`, :ref:`103 <X_103>`}, {:ref:`56 <X_56>`, :ref:`58 <X_58>`}, {:ref:`63 <X_63>`, :ref:`77 <X_77>`}, {:ref:`72 <X_72>`, 1038}, {:ref:`171 <X_171>`, :ref:`611 <X_611>`}, {:ref:`189 <X_189>`, :ref:`281 <X_281>`}, {:ref:`218 <X_218>`, :ref:`241 <X_241>`}, {:ref:`226 <X_226>`, :ref:`478 <X_478>`}, {:ref:`268 <X_268>`, 1073}, {:ref:`581 <X_581>`, 1035}, {:ref:`601 <X_601>`, 1066}, {:ref:`613 <X_613>`, :ref:`982 <X_982>`}, {:ref:`912 <X_912>`, 1060}, {1355, 1363}, {1993, 3218}
 
 .. collapse:: Functional Relations
    :badge: 16 relations
 
-   * :ref:`X(222) <X(222)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(281) <X(281)>`
-   * :ref:`X(222) <X(222)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(7017)
-   * :ref:`X(222) <X(222)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`7 <X(7)>`, :ref:`56 <X(56)>`), (:ref:`77 <X(77)>`, :ref:`3 <X(3)>`), (:ref:`81 <X(81)>`, :ref:`57 <X(57)>`)
-   * :ref:`X(222) <X(222)>` = :term:`cevapoint <cevapoint>` of :ref:`X(6) <X(6)>` and :ref:`X(221) <X(221)>`
-   * :ref:`X(222) <X(222)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`48 <X(48)>`, :ref:`3 <X(3)>`), (:ref:`73 <X(73)>`, :ref:`77 <X(77)>`)
-   * :ref:`X(222) <X(222)>` = :term:`crosspoint <crosspoint>` of :ref:`X(7) <X(7)>` and :ref:`X(348) <X(348)>`
-   * :ref:`X(222) <X(222)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`55 <X(55)>`, :ref:`607 <X(607)>`), (:ref:`650 <X(650)>`, 1146)
-   * :ref:`X(222) <X(222)>` = :term:`crossdifference <crossdifference>` of every pair of points on line X(3064)X(3700)
-   * :ref:`X(222) <X(222)>` = :term:`trilinear pole <trilinear-pole>` of line X(1459)X(1946)
-   * :ref:`X(222) <X(222)>` = Danneels point of :ref:`X(651) <X(651)>` (see notes at X(3078))
-   * :ref:`X(222) <X(222)>` = :ref:`X(4) <X(4)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(9) <X(9)>`
-   * :ref:`X(222) <X(222)>` = intouch-isogonal conjugate of X(12723)
-   * :ref:`X(222) <X(222)>` = perspector of intouch triangle and :term:`unary cofactor triangle <unary-cofactor-triangle>` of :term:`extouch triangle <extouch-triangle>`
-   * :ref:`X(222) <X(222)>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of Gemini triangle 38
-   * :ref:`X(222) <X(222)>` = :term:`vertex conjugate <vertex-conjugate>` of foci of inconic that is the isotomic conjugate of the polar conjugate of the incircle (centered at X(17073))
-   * :ref:`X(222) <X(222)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`21 <X(21)>`, 1012), (:ref:`63 <X(63)>`, :ref:`63 <X(63)>`), (:ref:`110 <X(110)>`, :ref:`222 <X(222)>`), (:ref:`287 <X(287)>`, :ref:`222 <X(222)>`), (:ref:`648 <X(648)>`, :ref:`222 <X(222)>`), (:ref:`651 <X(651)>`, :ref:`222 <X(222)>`), (:ref:`662 <X(662)>`, :ref:`2 <X(2)>`), (:ref:`895 <X(895)>`, :ref:`222 <X(222)>`)
+   * :ref:`X_222 <X_222>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_281 <X_281>`
+   * :ref:`X_222 <X_222>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_7017
+   * :ref:`X_222 <X_222>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`7 <X_7>`, :ref:`56 <X_56>`), (:ref:`77 <X_77>`, :ref:`3 <X_3>`), (:ref:`81 <X_81>`, :ref:`57 <X_57>`)
+   * :ref:`X_222 <X_222>` = cevapoint of :ref:`X_6 <X_6>` and :ref:`X_221 <X_221>`
+   * :ref:`X_222 <X_222>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`48 <X_48>`, :ref:`3 <X_3>`), (:ref:`73 <X_73>`, :ref:`77 <X_77>`)
+   * :ref:`X_222 <X_222>` = :term:`crosspoint <crosspoint>` of :ref:`X_7 <X_7>` and :ref:`X_348 <X_348>`
+   * :ref:`X_222 <X_222>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`55 <X_55>`, :ref:`607 <X_607>`), (:ref:`650 <X_650>`, 1146)
+   * :ref:`X_222 <X_222>` = :term:`crossdifference <crossdifference>` of every pair of points on line X_3064X_3700
+   * :ref:`X_222 <X_222>` = :term:`trilinear pole <trilinear-pole>` of line X_1459X_1946
+   * :ref:`X_222 <X_222>` = Danneels point of :ref:`X_651 <X_651>` (see notes at X_3078)
+   * :ref:`X_222 <X_222>` = :ref:`X_4 <X_4>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_9 <X_9>`
+   * :ref:`X_222 <X_222>` = intouch-isogonal conjugate of X_12723
+   * :ref:`X_222 <X_222>` = perspector of :term:`intouch triangle <intouch-triangle>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of :term:`extouch triangle <extouch-triangle>`
+   * :ref:`X_222 <X_222>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of Gemini triangle 38
+   * :ref:`X_222 <X_222>` = :term:`vertex conjugate <vertex-conjugate>` of foci of inconic that is the isotomic conjugate of the polar conjugate of the incircle (centered at X_17073)
+   * :ref:`X_222 <X_222>` = X_i-:term:`beth conjugate <beth-conjugate>` of X_j for these (i,j): (:ref:`21 <X_21>`, 1012), (:ref:`63 <X_63>`, :ref:`63 <X_63>`), (:ref:`110 <X_110>`, :ref:`222 <X_222>`), (:ref:`287 <X_287>`, :ref:`222 <X_222>`), (:ref:`648 <X_648>`, :ref:`222 <X_222>`), (:ref:`651 <X_651>`, :ref:`222 <X_222>`), (:ref:`662 <X_662>`, :ref:`2 <X_2>`), (:ref:`895 <X_895>`, :ref:`222 <X_222>`)
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the intouch triangle. Let :g:`A″ <A″>` be the barycentric product of the circumcircle intercepts of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(222) <X(222)>`. (Randy Hutson, July 31 2018)
+   Let :g:`A' <A'>` be the center of the conic through the contact points of the incircle and the :g:`A <A>`-excircle with the sidelines of :g:`ABC << A B C >>`. Define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The triangle :g:`A'B'C' << A' B' C' >>` is perspective to the intouch triangle at :ref:`X_222 <X_222>`. See also :ref:`X_6 <X_6>`, :ref:`X_25 <X_25>`, :ref:`X_218 <X_218>`, :ref:`X_940 <X_940>`, X_1743. (:person:`Randy Hutson <randy-hutson>`, July 23, 2015)
+
+.. container:: note-item
+
+   Let :g:`A'B'C' << T_a T_b T_c >>` be the intouch triangle. Let :g:`A″ <A″>` be the barycentric product of the circumcircle intercepts of line :g:`B'C' <[ T_b T_c ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ T_a A″ ]>`, :g:`B'B″ <[ T_b B″ ]>`, :g:`C'C″ <[ T_c C″ ]>` concur in :ref:`X_222 <X_222>`. (Randy Hutson, July 31 2018)
 
 .. toctree::
    :hidden:

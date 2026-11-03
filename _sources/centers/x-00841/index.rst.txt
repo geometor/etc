@@ -1,22 +1,31 @@
 :order: 841
 :type: center
-:canonical_id: X(841)
-:dependencies: X(6), X(30), X(376), X(476), X(541)
+:canonical_id: X_841
+:subtitle: ISOGONAL CONJUGATE OF X_541
+:dependencies: X_6, X_30, X_376, X_476, X_541
 
-.. _X(841):
+.. _X_841:
 
-X(841) = ISOGONAL CONJUGATE OF X(541)
-=====================================
+X_841
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_541
 
 .. enunciation::
 
-   :ref:`X(841) <X(841)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(541) <X(541)>`
+   :ref:`X_841 <X_841>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_541 <X_541>`.
 
 .. figure:: x-00841.svg
-   :alt: X(841) = ISOGONAL CONJUGATE OF X(541)
+   :alt: X_841 — ISOGONAL CONJUGATE OF X_541
    :align: center
 
-   **X(841) = ISOGONAL CONJUGATE OF X(541)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_841** (*ISOGONAL CONJUGATE OF X_541*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{376, 476} <{ 376, 476 }>`
+   * **Related Centers:** :g:`X_541 <X_541>` (:ref:`DIRECTION OF VECTOR AX + BX + CX, where X = X <X_541>`), :g:`X_376 <X_376>` (:ref:`CENTROID OF THE ANTIPEDAL TRIANGLE OF X <X_376>`), :g:`X_476 <X_476>` (:ref:`TIXIER POINT <X_476>`)
 
 .. signature:: center
 
@@ -26,19 +35,19 @@ X(841) = ISOGONAL CONJUGATE OF X(541)
 
 .. container:: note-item
 
-   :ref:`X(841) <X(841)>` lies on the circumcircle.
+   :ref:`X_841 <X_841>` lies on the circumcircle.
 
 .. collapse:: Incident Central Lines
    :badge: 1 line
    :class: line-catalog
 
-   {:ref:`376 <X(376)>`, :ref:`476 <X(476)>`}
+   {:ref:`376 <X_376>`, :ref:`476 <X_476>`}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(841) <X(841)>` = isogonal conjugate of :ref:`X(541) <X(541)>`
-   * :ref:`X(841) <X(841)>` = :term:`trilinear pole <trilinear-pole>`, wrt circumcevian triangle of :ref:`X(30) <X(30)>`, of line :ref:`X(6) <X(6)>`\ \ :ref:`X(30) <X(30)>`
+   * :ref:`X_841 <X_841>` = isogonal conjugate of :ref:`X_541 <X_541>`
+   * :ref:`X_841 <X_841>` = :term:`trilinear pole <trilinear-pole>`, wrt circumcevian triangle of :ref:`X_30 <X_30>`, of line :ref:`X_6 <X_6>`\ \ :ref:`X_30 <X_30>`
 
 .. toctree::
    :hidden:

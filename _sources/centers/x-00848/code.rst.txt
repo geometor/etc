@@ -1,18 +1,21 @@
-:canonical_id: X(848)
+:canonical_id: X_848
 :type: code
+:subtitle: YIU ANGLE POINT
 
-X(848) = YIU ANGLE POINT — Code
-===============================
+X_848
+=====
+
+.. rubric:: YIU ANGLE POINT
 
 .. enunciation::
 
-   :ref:`X(848) <X(848)>` point is introduced by :person:`Paul Yiu <paul-yiu>` in :cite:`Hyacinthos #2704 <hyacinthos>`, April 7, 2001 (see also #2708, April 10, 2001) as the solution X of the equation
+   angle :g:`BXC << B X C >>` : angle :g:`CXA << C X A >>` : angle :g:`AXB << A X B >>` =\ :math:`a : b : c`.
 
 .. figure:: x-00848.svg
-   :alt: X(848) = YIU ANGLE POINT
+   :alt: X_848 — YIU ANGLE POINT
    :align: center
 
-   **X(848) = YIU ANGLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_848** (*YIU ANGLE POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

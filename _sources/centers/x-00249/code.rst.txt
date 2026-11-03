@@ -1,18 +1,21 @@
-:canonical_id: X(249)
+:canonical_id: X_249
 :type: code
+:subtitle: ISOGONAL CONJUGATE OF X_115
 
-X(249) = ISOGONAL CONJUGATE OF X(115) — Code
-============================================
+X_249
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_115
 
 .. enunciation::
 
-   :ref:`X(249) <X(249)>` is the :term:`vertex conjugate <vertex-conjugate>` of the foci of the inellipse that is the barycentric square of line :ref:`X(2) <X(2)>`\ \ :ref:`X(6) <X(6)>`. The center of this inellipse is :ref:`X(620) <X(620)>`, and its perspector is X(4590). (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
+   :ref:`X_249 <X_249>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_115 <X_115>`.
 
 .. figure:: x-00249.svg
-   :alt: X(249) = ISOGONAL CONJUGATE OF X(115)
+   :alt: X_249 — ISOGONAL CONJUGATE OF X_115
    :align: center
 
-   **X(249) = ISOGONAL CONJUGATE OF X(115)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_249** (*ISOGONAL CONJUGATE OF X_115*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,18 +1,21 @@
-:canonical_id: X(397)
+:canonical_id: X_397
 :type: code
+:subtitle: CROSSPOINT OF X_4 AND X_17
 
-X(397) = CROSSPOINT OF X(4) AND X(17) — Code
-============================================
+X_397
+=====
+
+.. rubric:: CROSSPOINT OF X_4 AND X_17
 
 .. enunciation::
 
-   :ref:`X(397) <X(397)>` is the pole of the Euler line wrt every conic passing through :ref:`X(13) <X(13)>`, :ref:`X(16) <X(16)>`, :ref:`X(17) <X(17)>` and :ref:`X(62) <X(62)>`. (:person:`Randy Hutson <randy-hutson>`, January 17, 2020)
+   :ref:`X_397 <X_397>` is the :term:`crosspoint <crosspoint>` of :ref:`X_4 <X_4>` and :ref:`X_17 <X_17>`.
 
 .. figure:: x-00397.svg
-   :alt: X(397) = CROSSPOINT OF X(4) AND X(17)
+   :alt: X_397 — CROSSPOINT OF X_4 AND X_17
    :align: center
 
-   **X(397) = CROSSPOINT OF X(4) AND X(17)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_397** (*CROSSPOINT OF X_4 AND X_17*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

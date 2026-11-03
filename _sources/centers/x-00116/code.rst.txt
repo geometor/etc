@@ -1,18 +1,21 @@
-:canonical_id: X(116)
+:canonical_id: X_116
 :type: code
+:subtitle: MIDPOINT OF X_4 AND X_103
 
-X(116) = MIDPOINT OF X(4) AND X(103) — Code
-===========================================
+X_116
+=====
+
+.. rubric:: MIDPOINT OF X_4 AND X_103
 
 .. enunciation::
 
-   Let :g:`A'B'C' << A' B' C' >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`L_{a} <L_a>` be the Soddy line of triangle :g:`AB'C' << A B' C' >>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(116) <X(116)>`, which is :ref:`X(3) <X(3)>`-of-:g:`A″B″C″ << A″ B″ C″ >>`. (:person:`Randy Hutson <randy-hutson>`, July 31 2018)
+   :ref:`X_116 <X_116>` is the midpoint of :ref:`X_4 <X_4>` and :ref:`X_103 <X_103>`.
 
 .. figure:: x-00116.svg
-   :alt: X(116) = MIDPOINT OF X(4) AND X(103)
+   :alt: X_116 — MIDPOINT OF X_4 AND X_103
    :align: center
 
-   **X(116) = MIDPOINT OF X(4) AND X(103)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_116** (*MIDPOINT OF X_4 AND X_103*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

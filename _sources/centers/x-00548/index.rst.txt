@@ -1,22 +1,31 @@
 :order: 548
 :type: center
-:canonical_id: X(548)
-:dependencies: X(2), X(3), X(5), X(20), X(140), X(546), X(550), X(3530), X(15712)
+:canonical_id: X_548
+:subtitle: MIDPOINT OF X_5 AND X_20
+:dependencies: X_2, X_3, X_5, X_20, X_140, X_546, X_550, X_3530, X_15712
 
-.. _X(548):
+.. _X_548:
 
-X(548) = MIDPOINT OF X(5) AND X(20)
-===================================
+X_548
+=====
+
+.. rubric:: MIDPOINT OF X_5 AND X_20
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(548) <X(548)>` has Shinagawa coefficients :math:`(5,-7)`.
+   :ref:`X_548 <X_548>` is the midpoint of :ref:`X_5 <X_5>` and :ref:`X_20 <X_20>`.
 
 .. figure:: x-00548.svg
-   :alt: X(548) = MIDPOINT OF X(5) AND X(20)
+   :alt: X_548 — MIDPOINT OF X_5 AND X_20
    :align: center
 
-   **X(548) = MIDPOINT OF X(5) AND X(20)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_548** (*MIDPOINT OF X_5 AND X_20*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`)
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`)
 
 .. signature:: center
 
@@ -32,20 +41,27 @@ X(548) = MIDPOINT OF X(5) AND X(20)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(548) <X(548)>` = :math:`3` :ref:`X(2) <X(2)>` - :math:`7` :ref:`X(3) <X(3)>` = :math:`3` :ref:`X(3) <X(3)>` - :ref:`X(5) <X(5)>`
+   * :ref:`X_548 <X_548>` = :math:`3` :ref:`X_2 <X_2>` - :math:`7` :ref:`X_3 <X_3>` = :math:`3` :ref:`X_3 <X_3>` - :ref:`X_5 <X_5>`
 
 .. container:: note-item
 
-   :ref:`X(548) <X(548)>` lies on the Euler line. (:person:`Antreas Hatzipolakis <antreas-hatzipolakis>`, 1/20/00, :cite:`Hyacinthos #201 <hyacinthos>`)
+   :ref:`X_548 <X_548>` lies on the Euler line. (:person:`Antreas Hatzipolakis <antreas-hatzipolakis>`, 1/20/00, :cite:`Hyacinthos #201 <hyacinthos>`)
 
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X(548) <X(548)>` = midpoint of X(i) and X(j) for these (i,j): (:ref:`3 <X(3)>`, :ref:`550 <X(550)>`), (:ref:`5 <X(5)>`, :ref:`20 <X(20)>`)
-   * :ref:`X(548) <X(548)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`140 <X(140)>`, :ref:`3 <X(3)>`), (:ref:`546 <X(546)>`, :ref:`140 <X(140)>`)
-   * :ref:`X(548) <X(548)>` = {:ref:`X(2) <X(2)>`,\ :ref:`X(3) <X(3)>`}-harmonic conjugate of X(15712)
-   * :ref:`X(548) <X(548)>` = {:ref:`X(3) <X(3)>`,\ :ref:`X(5) <X(5)>`}-harmonic conjugate of X(3530)
-   * :ref:`X(548) <X(548)>` = radical center of circles centered at vertices of :g:`ABC << A B C >>` with diameter equal to opposite side
+   * :ref:`X_548 <X_548>` = midpoint of X_i and X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`550 <X_550>`), (:ref:`5 <X_5>`, :ref:`20 <X_20>`)
+   * :ref:`X_548 <X_548>` = reflection of X_i in X_j for these (i,j): (:ref:`140 <X_140>`, :ref:`3 <X_3>`), (:ref:`546 <X_546>`, :ref:`140 <X_140>`)
+   * :ref:`X_548 <X_548>` = {:ref:`X_2 <X_2>`,\ :ref:`X_3 <X_3>`}-harmonic conjugate of X_15712
+   * :ref:`X_548 <X_548>` = {:ref:`X_3 <X_3>`,\ :ref:`X_5 <X_5>`}-harmonic conjugate of X_3530
+   * :ref:`X_548 <X_548>` = radical center of circles centered at vertices of :g:`ABC << A B C >>` with diameter equal to opposite side
+
+Notes
+-----
+
+.. container:: note-item
+
+   As a point on the Euler line, :ref:`X_548 <X_548>` has Shinagawa coefficients :math:`(5,-7)`.
 
 .. toctree::
    :hidden:

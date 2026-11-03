@@ -1,18 +1,21 @@
-:canonical_id: X(656)
+:canonical_id: X_656
 :type: code
+:subtitle: CROSSDIFFERENCE OF X_1 AND X_19
 
-X(656) = CROSSDIFFERENCE OF X(1) AND X(19) — Code
-=================================================
+X_656
+=====
+
+.. rubric:: CROSSDIFFERENCE OF X_1 AND X_19
 
 .. enunciation::
 
-   :ref:`X(656) <X(656)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(162) <X(162)>`
+   :ref:`X_656 <X_656>` = :term:`crossdifference <crossdifference>` of every pair of points on line {1, 19}
 
 .. figure:: x-00656.svg
-   :alt: X(656) = CROSSDIFFERENCE OF X(1) AND X(19)
+   :alt: X_656 — CROSSDIFFERENCE OF X_1 AND X_19
    :align: center
 
-   **X(656) = CROSSDIFFERENCE OF X(1) AND X(19)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_656** (*CROSSDIFFERENCE OF X_1 AND X_19*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

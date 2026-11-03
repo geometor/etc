@@ -1,18 +1,21 @@
-:canonical_id: X(72)
+:canonical_id: X_72
 :type: code
+:subtitle: ISOGONAL CONJUGATE OF X_28
 
-X(72) = ISOGONAL CONJUGATE OF X(28) — Code
-==========================================
+X_72
+====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_28
 
 .. enunciation::
 
-   Let :g:`I_{a} <I_a>` be the reflection of :ref:`X(1) <X(1)>` in the perpendicular bisector of :g:`BC <[ B C ]>`, and define :g:`I_{b} <I_b>` and :g:`I_{c} <I_c>` cyclically. :ref:`X(72) <X(72)>` = :ref:`X(11) <X(11)>` of :g:`I_{a}I_{b}I_{c} << I_a I_b I_c >>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
+   :ref:`X_72 <X_72>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_28 <X_28>`.
 
 .. figure:: x-00072.svg
-   :alt: X(72) = ISOGONAL CONJUGATE OF X(28)
+   :alt: X_72 — ISOGONAL CONJUGATE OF X_28
    :align: center
 
-   **X(72) = ISOGONAL CONJUGATE OF X(28)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_72** (*ISOGONAL CONJUGATE OF X_28*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,22 +1,31 @@
 :order: 269
 :type: center
-:canonical_id: X(269)
-:dependencies: X(1), X(3), X(6), X(7), X(9), X(46), X(56), X(57), X(69), X(86), X(92), X(106), X(142), X(200), X(220), X(241), X(273), X(279), X(292), X(307), X(320), X(326), X(341), X(479), X(480), X(614), X(738), X(934), X(936), X(939), X(948), X(1020), X(1088), X(1103), X(1111), X(1802), X(4328), X(7101), X(11019)
+:canonical_id: X_269
+:subtitle: ISOGONAL CONJUGATE OF X_200
+:dependencies: X_1, X_3, X_6, X_7, X_9, X_46, X_56, X_57, X_69, X_86, X_92, X_106, X_142, X_200, X_220, X_241, X_273, X_279, X_292, X_307, X_320, X_326, X_341, X_479, X_480, X_614, X_738, X_934, X_936, X_939, X_948, X_1020, X_1088, X_1103, X_1111, X_1802, X_4328, X_7101, X_11019
 
-.. _X(269):
+.. _X_269:
 
-X(269) = ISOGONAL CONJUGATE OF X(200)
-=====================================
+X_269
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_200
 
 .. enunciation::
 
-   :ref:`X(269) <X(269)>` is the :term:`vertex conjugate <vertex-conjugate>` of the foci of the inellipse that is the trilinear square of the Gergonne line. The center of this inellipse is X(11019), and the Brianchon point (perspector) is X(1088). (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
+   :ref:`X_269 <X_269>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_200 <X_200>`.
 
 .. figure:: x-00269.svg
-   :alt: X(269) = ISOGONAL CONJUGATE OF X(200)
+   :alt: X_269 — ISOGONAL CONJUGATE OF X_200
    :align: center
 
-   **X(269) = ISOGONAL CONJUGATE OF X(200)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_269** (*ISOGONAL CONJUGATE OF X_200*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 7} <{ 1, 7 }>`, :g:`{6, 57} <{ 6, 57 }>`
+   * **Related Centers:** :g:`X_200 <X_200>` (:ref:`-CEVA CONJUGATE OF X(9) <X_200>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_7 <X_7>` (:ref:`GERGONNE POINT <X_7>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_57 <X_57>` (:ref:`ISOGONAL CONJUGATE OF X(9) <X_57>`)
 
 .. signature:: center
 
@@ -36,28 +45,32 @@ X(269) = ISOGONAL CONJUGATE OF X(200)
    :badge: 15 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`7 <X(7)>`}, {:ref:`3 <X(3)>`, :ref:`939 <X(939)>`}, {:ref:`6 <X(6)>`, :ref:`57 <X(57)>`}, {:ref:`9 <X(9)>`, :ref:`241 <X(241)>`}, {:ref:`46 <X(46)>`, 1103}, {:ref:`56 <X(56)>`, :ref:`738 <X(738)>`}, {:ref:`69 <X(69)>`, :ref:`200 <X(200)>`}, {:ref:`86 <X(86)>`, 1088}, {:ref:`106 <X(106)>`, :ref:`934 <X(934)>`}, {:ref:`142 <X(142)>`, :ref:`948 <X(948)>`}, {:ref:`273 <X(273)>`, 1111}, {:ref:`292 <X(292)>`, 1020}, {:ref:`307 <X(307)>`, :ref:`936 <X(936)>`}, {:ref:`320 <X(320)>`, :ref:`326 <X(326)>`}, {:ref:`479 <X(479)>`, :ref:`614 <X(614)>`}
+   {:ref:`1 <X_1>`, :ref:`7 <X_7>`}, {:ref:`3 <X_3>`, :ref:`939 <X_939>`}, {:ref:`6 <X_6>`, :ref:`57 <X_57>`}, {:ref:`9 <X_9>`, :ref:`241 <X_241>`}, {:ref:`46 <X_46>`, 1103}, {:ref:`56 <X_56>`, :ref:`738 <X_738>`}, {:ref:`69 <X_69>`, :ref:`200 <X_200>`}, {:ref:`86 <X_86>`, 1088}, {:ref:`106 <X_106>`, :ref:`934 <X_934>`}, {:ref:`142 <X_142>`, :ref:`948 <X_948>`}, {:ref:`273 <X_273>`, 1111}, {:ref:`292 <X_292>`, 1020}, {:ref:`307 <X_307>`, :ref:`936 <X_936>`}, {:ref:`320 <X_320>`, :ref:`326 <X_326>`}, {:ref:`479 <X_479>`, :ref:`614 <X_614>`}
 
 .. collapse:: Functional Relations
    :badge: 10 relations
 
-   * :ref:`X(269) <X(269)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(200) <X(200)>`
-   * :ref:`X(269) <X(269)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(341) <X(341)>`
-   * :ref:`X(269) <X(269)>` = :ref:`X(279) <X(279)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(57) <X(57)>`
-   * :ref:`X(269) <X(269)>` = :ref:`X(56) <X(56)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(57) <X(57)>`
-   * :ref:`X(269) <X(269)>` = :term:`crosspoint <crosspoint>` of :ref:`X(279) <X(279)>` and :ref:`X(479) <X(479)>`
-   * :ref:`X(269) <X(269)>` = :term:`crosssum <crosssum>` of :ref:`X(220) <X(220)>` and :ref:`X(480) <X(480)>`
-   * :ref:`X(269) <X(269)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(7) <X(7)>`}-harmonic conjugate of X(4328)
-   * :ref:`X(269) <X(269)>` = polar conjugate of X(7101)
-   * :ref:`X(269) <X(269)>` = :ref:`X(92) <X(92)>`-:term:`isoconjugate <isoconjugate>` of X(1802)
-   * :ref:`X(269) <X(269)>` = trilinear square of :ref:`X(57) <X(57)>`
+   * :ref:`X_269 <X_269>` = isogonal conjugate of :ref:`X_200 <X_200>`
+   * :ref:`X_269 <X_269>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_341 <X_341>`
+   * :ref:`X_269 <X_269>` = :ref:`X_279 <X_279>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_57 <X_57>`
+   * :ref:`X_269 <X_269>` = :ref:`X_56 <X_56>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_57 <X_57>`
+   * :ref:`X_269 <X_269>` = :term:`crosspoint <crosspoint>` of :ref:`X_279 <X_279>` and :ref:`X_479 <X_479>`
+   * :ref:`X_269 <X_269>` = :term:`crosssum <crosssum>` of :ref:`X_220 <X_220>` and :ref:`X_480 <X_480>`
+   * :ref:`X_269 <X_269>` = {:ref:`X_1 <X_1>`,\ :ref:`X_7 <X_7>`}-harmonic conjugate of X_4328
+   * :ref:`X_269 <X_269>` = polar conjugate of X_7101
+   * :ref:`X_269 <X_269>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of X_1802
+   * :ref:`X_269 <X_269>` = trilinear square of :ref:`X_57 <X_57>`
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let :g:`A_{1}B_{1}C_{1} << A_1 B_1 C_1 >>` be Gemini triangle 1. Let :g:`A' <A'>` be the center of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B_{1} <B_1>`,\ :g:`C_{1} <C_1>`}}, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(269) <X(269)>`. (Randy Hutson, January 15, 2019)
+   :ref:`X_269 <X_269>` is the :term:`vertex conjugate <vertex-conjugate>` of the foci of the inellipse that is the trilinear square of the Gergonne line. The center of this inellipse is X_11019, and the Brianchon point (perspector) is X_1088. (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
+
+.. container:: note-item
+
+   Let :g:`A_{1}B_{1}C_{1} << A_1 B_1 C_1 >>` be Gemini triangle 1. Let :g:`A' <A'>` be the center of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B_{1} <B_1>`,\ :g:`C_{1} <C_1>`}}, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X_269 <X_269>`. (Randy Hutson, January 15, 2019)
 
 .. toctree::
    :hidden:

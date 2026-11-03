@@ -1,22 +1,31 @@
 :order: 87
 :type: center
-:canonical_id: X(87)
-:dependencies: X(1), X(2), X(6), X(9), X(10), X(34), X(43), X(56), X(58), X(106), X(192), X(238), X(242), X(292), X(330), X(932), X(978), X(979), X(6376), X(34832)
+:canonical_id: X_87
+:subtitle: X_2-CROSS CONJUGATE OF X_1
+:dependencies: X_1, X_2, X_6, X_9, X_10, X_34, X_43, X_56, X_58, X_106, X_192, X_238, X_242, X_292, X_330, X_932, X_978, X_979, X_6376, X_34832
 
-.. _X(87):
+.. _X_87:
 
-X(87) = X(2)-CROSS CONJUGATE OF X(1)
-====================================
+X_87
+====
+
+.. rubric:: X_2-CROSS CONJUGATE OF X_1
 
 .. enunciation::
 
-   :ref:`X(87) <X(87)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(43) <X(43)>`
+   :ref:`X_87 <X_87>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_43 <X_43>`
 
 .. figure:: x-00087.svg
-   :alt: X(87) = X(2)-CROSS CONJUGATE OF X(1)
+   :alt: X_87 — X_2-CROSS CONJUGATE OF X_1
    :align: center
 
-   **X(87) = X(2)-CROSS CONJUGATE OF X(1)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_87** (*X_2-CROSS CONJUGATE OF X_1*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{6, 43} <{ 6, 43 }>`, :g:`{1, 192} <{ 1, 192 }>`
+   * **Related Centers:** :g:`X_43 <X_43>` (:ref:`-CEVA CONJUGATE OF X(1) <X_43>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_192 <X_192>` (:ref:`-CEVA CONJUGATE OF X <X_192>`)
 
 .. signature:: center
 
@@ -28,19 +37,19 @@ X(87) = X(2)-CROSS CONJUGATE OF X(1)
    :badge: 8 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`192 <X(192)>`}, {:ref:`6 <X(6)>`, :ref:`43 <X(43)>`}, {:ref:`9 <X(9)>`, :ref:`292 <X(292)>`}, {:ref:`10 <X(10)>`, :ref:`979 <X(979)>`}, {:ref:`34 <X(34)>`, :ref:`242 <X(242)>`}, {:ref:`56 <X(56)>`, :ref:`238 <X(238)>`}, {:ref:`58 <X(58)>`, :ref:`978 <X(978)>`}, {:ref:`106 <X(106)>`, :ref:`932 <X(932)>`}
+   {:ref:`1 <X_1>`, :ref:`192 <X_192>`}, {:ref:`6 <X_6>`, :ref:`43 <X_43>`}, {:ref:`9 <X_9>`, :ref:`292 <X_292>`}, {:ref:`10 <X_10>`, :ref:`979 <X_979>`}, {:ref:`34 <X_34>`, :ref:`242 <X_242>`}, {:ref:`56 <X_56>`, :ref:`238 <X_238>`}, {:ref:`58 <X_58>`, :ref:`978 <X_978>`}, {:ref:`106 <X_106>`, :ref:`932 <X_932>`}
 
 .. collapse:: Functional Relations
    :badge: 8 relations
 
-   * :ref:`X(87) <X(87)>` = isogonal conjugate of :ref:`X(43) <X(43)>`
-   * :ref:`X(87) <X(87)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(6376)
-   * :ref:`X(87) <X(87)>` = :term:`anticomplement <anticomplement>` of X(34832)
-   * :ref:`X(87) <X(87)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(43) <X(43)>`
-   * :ref:`X(87) <X(87)>` = trilinear product of extraversions of :ref:`X(43) <X(43)>`
-   * :ref:`X(87) <X(87)>` = :term:`cevapoint <cevapoint>` of :ref:`X(2) <X(2)>` and :ref:`X(330) <X(330)>`
-   * :ref:`X(87) <X(87)>` = :ref:`X(2) <X(2)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(1) <X(1)>`
-   * :ref:`X(87) <X(87)>` = :ref:`X(932) <X(932)>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X(87) <X(87)>`
+   * :ref:`X_87 <X_87>` = isogonal conjugate of :ref:`X_43 <X_43>`
+   * :ref:`X_87 <X_87>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_6376
+   * :ref:`X_87 <X_87>` = :term:`anticomplement <anticomplement>` of X_34832
+   * :ref:`X_87 <X_87>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X_43 <X_43>`
+   * :ref:`X_87 <X_87>` = trilinear product of extraversions of :ref:`X_43 <X_43>`
+   * :ref:`X_87 <X_87>` = :term:`cevapoint <cevapoint>` of :ref:`X_2 <X_2>` and :ref:`X_330 <X_330>`
+   * :ref:`X_87 <X_87>` = :ref:`X_2 <X_2>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_1 <X_1>`
+   * :ref:`X_87 <X_87>` = :ref:`X_932 <X_932>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X_87 <X_87>`
 
 .. toctree::
    :hidden:

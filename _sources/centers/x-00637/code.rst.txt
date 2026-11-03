@@ -1,18 +1,21 @@
-:canonical_id: X(637)
+:canonical_id: X_637
 :type: code
+:subtitle: ANTICOMPLEMENT OF X_371
 
-X(637) = ANTICOMPLEMENT OF X(371) — Code
-========================================
+X_637
+=====
+
+.. rubric:: ANTICOMPLEMENT OF X_371
 
 .. enunciation::
 
-   :ref:`X(637) <X(637)>` = :term:`anticomplement <anticomplement>` of :ref:`X(371) <X(371)>`
+   :ref:`X_637 <X_637>` is the :term:`anticomplement <anticomplement>` of :ref:`X_371 <X_371>`.
 
 .. figure:: x-00637.svg
-   :alt: X(637) = ANTICOMPLEMENT OF X(371)
+   :alt: X_637 — ANTICOMPLEMENT OF X_371
    :align: center
 
-   **X(637) = ANTICOMPLEMENT OF X(371)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_637** (*ANTICOMPLEMENT OF X_371*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

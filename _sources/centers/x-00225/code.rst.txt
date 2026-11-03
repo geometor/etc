@@ -1,18 +1,21 @@
-:canonical_id: X(225)
+:canonical_id: X_225
 :type: code
+:subtitle: X_4-CEVA CONJUGATE OF X_65
 
-X(225) = X(4)-CEVA CONJUGATE OF X(65) — Code
-============================================
+X_225
+=====
+
+.. rubric:: X_4-CEVA CONJUGATE OF X_65
 
 .. enunciation::
 
-   :ref:`X(225) <X(225)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(283) <X(283)>`
+   :ref:`X_225 <X_225>` = :ref:`X_4 <X_4>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_65 <X_65>`
 
 .. figure:: x-00225.svg
-   :alt: X(225) = X(4)-CEVA CONJUGATE OF X(65)
+   :alt: X_225 — X_4-CEVA CONJUGATE OF X_65
    :align: center
 
-   **X(225) = X(4)-CEVA CONJUGATE OF X(65)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_225** (*X_4-CEVA CONJUGATE OF X_65*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

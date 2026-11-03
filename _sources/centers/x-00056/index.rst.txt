@@ -1,22 +1,35 @@
 :order: 56
 :type: center
-:canonical_id: X(56)
-:dependencies: X(1), X(2), X(3), X(4), X(5), X(6), X(7), X(8), X(9), X(10), X(11), X(12), X(19), X(20), X(21), X(22), X(25), X(28), X(30), X(31), X(32), X(33), X(34), X(38), X(40), X(41), X(46), X(48), X(55), X(57), X(58), X(59), X(61), X(62), X(63), X(65), X(72), X(77), X(78), X(81), X(84), X(85), X(87), X(92), X(100), X(101), X(104), X(105), X(106), X(108), X(109), X(140), X(144), X(145), X(154), X(175), X(176), X(181), X(182), X(197), X(200), X(201), X(202), X(203), X(207), X(212), X(218), X(219), X(220), X(221), X(222), X(223), X(226), X(227), X(238), X(255), X(266), X(269), X(278), X(279), X(289), X(330), X(376), X(385), X(386), X(404), X(405), X(411), X(474), X(480), X(495), X(496), X(497), X(499), X(511), X(513), X(517), X(519), X(522), X(551), X(553), X(579), X(602), X(604), X(607), X(611), X(613), X(631), X(649), X(650), X(667), X(672), X(738), X(764), X(854), X(870), X(911), X(937), X(938), X(939), X(946), X(959), X(960), X(963), X(977), X(978), X(979), X(997), X(1012), X(1015), X(1025), X(1036), X(1050), X(1056), X(1058), X(1070), X(1072), X(1074), X(1076), X(1083), X(1106), X(1145), X(1319), X(1329), X(1345), X(1416), X(1428), X(1429), X(1430), X(1438), X(1458), X(1479), X(2098), X(2464), X(2804), X(3057), X(3436), X(3513), X(3514), X(3596), X(3660), X(4397), X(7017), X(17101)
+:canonical_id: X_56
+:subtitle: EXSIMILICENTER(CIRCUMCIRCLE, INCIRCLE)
+:dependencies: X_1, X_2, X_3, X_4, X_5, X_6, X_7, X_8, X_9, X_10, X_11, X_12, X_19, X_20, X_21, X_22, X_25, X_28, X_30, X_31, X_32, X_33, X_34, X_38, X_40, X_41, X_46, X_48, X_55, X_57, X_58, X_59, X_61, X_62, X_63, X_65, X_72, X_77, X_78, X_81, X_84, X_85, X_87, X_92, X_100, X_101, X_104, X_105, X_106, X_108, X_109, X_140, X_144, X_145, X_154, X_175, X_176, X_181, X_182, X_197, X_200, X_201, X_202, X_203, X_207, X_212, X_218, X_219, X_220, X_221, X_222, X_223, X_226, X_227, X_238, X_255, X_266, X_269, X_278, X_279, X_289, X_330, X_376, X_385, X_386, X_404, X_405, X_411, X_474, X_480, X_495, X_496, X_497, X_499, X_511, X_513, X_517, X_519, X_522, X_551, X_553, X_579, X_602, X_604, X_607, X_611, X_613, X_631, X_649, X_650, X_667, X_672, X_738, X_764, X_854, X_870, X_911, X_937, X_938, X_939, X_946, X_959, X_960, X_963, X_977, X_978, X_979, X_997, X_1012, X_1015, X_1025, X_1036, X_1050, X_1056, X_1058, X_1070, X_1072, X_1074, X_1076, X_1083, X_1106, X_1145, X_1319, X_1329, X_1345, X_1416, X_1428, X_1429, X_1430, X_1438, X_1458, X_1479, X_2098, X_2464, X_2804, X_3057, X_3436, X_3513, X_3514, X_3596, X_3660, X_4397, X_7017, X_17101
 
-.. _X(56):
+.. _X_56:
 
-X(56) = EXSIMILICENTER(CIRCUMCIRCLE, INCIRCLE)
-==============================================
+X_56
+====
+
+.. rubric:: EXSIMILICENTER(CIRCUMCIRCLE, INCIRCLE)
 
 .. enunciation::
 
-   :ref:`X(56) <X(56)>` is the perspector of the :term:`tangential triangle <tangential-triangle>` and the reflection of the intangents triangle in :ref:`X(1) <X(1)>`.
+   :ref:`X_56 <X_56>` is the perspector of the :term:`tangential triangle <tangential-triangle>` and the reflection of the :term:`intangents triangle <intangents-triangle>` in :ref:`X_1 <X_1>`.
 
 .. figure:: x-00056.svg
-   :alt: X(56) = EXSIMILICENTER(CIRCUMCIRCLE, INCIRCLE)
+   :alt: X_56 — EXSIMILICENTER(CIRCUMCIRCLE, INCIRCLE)
    :align: center
 
-   **X(56) = EXSIMILICENTER(CIRCUMCIRCLE, INCIRCLE)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_56** (*EXSIMILICENTER(CIRCUMCIRCLE, INCIRCLE)*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Derived Triangle:** :term:`Tangential Triangle <tangential triangle>` :g:`△Tan_aTan_bTan_c << Tan_a Tan_b Tan_c >>` — vertices :g:`Tan_a <Tan_a>`, :g:`Tan_b <Tan_b>`, :g:`Tan_c <Tan_c>` (Bounded by tangents to the circumcircle at A, B, C)
+   * **Derived Triangle:** :term:`Intouch (Contact) Triangle <intouch triangle>` :g:`△T_aT_bT_c << T_a T_b T_c >>` — vertices :g:`T_a <T_a>`, :g:`T_b <T_b>`, :g:`T_c <T_c>` (Contact triangle of Incircle touchpoints on BC, CA, AB)
+   * **Circle:** :term:`Circumcircle <circumcircle>` (:g:`circumcircle <circumcircle>`) — Passes through vertices A, B, C; centered at X_3 CIRCUMCENTER
+   * **Circle:** :term:`Incircle <incircle>` (:g:`incircle <incircle>`) — Inscribed circle tangent to sidelines at T_a, T_b, T_c; centered at X_1 INCENTER
+   * **Central Lines:** :g:`{1, 3} <{ 1, 3 }>`
+   * **Related Centers:** :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`)
 
 .. signature:: center
 
@@ -38,77 +51,77 @@ X(56) = EXSIMILICENTER(CIRCUMCIRCLE, INCIRCLE)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(56) <X(56)>` = :math:`R` :ref:`X(1) <X(1)>` - :math:`r` :ref:`X(3) <X(3)>`
+   * :ref:`X_56 <X_56>` = :math:`R` :ref:`X_1 <X_1>` - :math:`r` :ref:`X_3 <X_3>`
 
 .. collapse:: Incident Central Lines
    :badge: 58 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`3 <X(3)>`}, {:ref:`2 <X(2)>`, :ref:`12 <X(12)>`}, {:ref:`4 <X(4)>`, :ref:`11 <X(11)>`}, {:ref:`5 <X(5)>`, :ref:`499 <X(499)>`}, {:ref:`6 <X(6)>`, :ref:`41 <X(41)>`}, {:ref:`7 <X(7)>`, :ref:`21 <X(21)>`}, {:ref:`8 <X(8)>`, :ref:`404 <X(404)>`}, {:ref:`10 <X(10)>`, :ref:`474 <X(474)>`}, {:ref:`19 <X(19)>`, :ref:`207 <X(207)>`}, {:ref:`20 <X(20)>`, :ref:`497 <X(497)>`}, {:ref:`22 <X(22)>`, :ref:`977 <X(977)>`}, {:ref:`25 <X(25)>`, :ref:`34 <X(34)>`}, {:ref:`28 <X(28)>`, :ref:`278 <X(278)>`}, {:ref:`30 <X(30)>`, :ref:`496 <X(496)>`}, {:ref:`31 <X(31)>`, :ref:`154 <X(154)>`}, {:ref:`32 <X(32)>`, 1015}, {:ref:`33 <X(33)>`, :ref:`963 <X(963)>`}, {:ref:`38 <X(38)>`, :ref:`201 <X(201)>`}, {:ref:`58 <X(58)>`, :ref:`222 <X(222)>`}, {:ref:`61 <X(61)>`, :ref:`202 <X(202)>`}, {:ref:`62 <X(62)>`, :ref:`203 <X(203)>`}, {:ref:`63 <X(63)>`, :ref:`960 <X(960)>`}, {:ref:`72 <X(72)>`, :ref:`997 <X(997)>`}, {:ref:`77 <X(77)>`, 1036}, {:ref:`78 <X(78)>`, :ref:`480 <X(480)>`}, {:ref:`81 <X(81)>`, :ref:`959 <X(959)>`}, {:ref:`85 <X(85)>`, :ref:`870 <X(870)>`}, {:ref:`87 <X(87)>`, :ref:`238 <X(238)>`}, {:ref:`100 <X(100)>`, :ref:`145 <X(145)>`}, {:ref:`101 <X(101)>`, :ref:`218 <X(218)>`}, {:ref:`105 <X(105)>`, :ref:`279 <X(279)>`}, {:ref:`106 <X(106)>`, :ref:`109 <X(109)>`}, {:ref:`140 <X(140)>`, :ref:`495 <X(495)>`}, {:ref:`181 <X(181)>`, :ref:`386 <X(386)>`}, {:ref:`182 <X(182)>`, :ref:`611 <X(611)>`}, {:ref:`197 <X(197)>`, :ref:`227 <X(227)>`}, {:ref:`212 <X(212)>`, :ref:`939 <X(939)>`}, {:ref:`219 <X(219)>`, :ref:`579 <X(579)>`}, {:ref:`220 <X(220)>`, :ref:`672 <X(672)>`}, {:ref:`223 <X(223)>`, :ref:`937 <X(937)>`}, {:ref:`226 <X(226)>`, :ref:`405 <X(405)>`}, {:ref:`255 <X(255)>`, :ref:`602 <X(602)>`}, {:ref:`266 <X(266)>`, :ref:`289 <X(289)>`}, {:ref:`269 <X(269)>`, :ref:`738 <X(738)>`}, {:ref:`330 <X(330)>`, :ref:`385 <X(385)>`}, {:ref:`376 <X(376)>`, 1058}, {:ref:`411 <X(411)>`, :ref:`938 <X(938)>`}, {:ref:`511 <X(511)>`, :ref:`613 <X(613)>`}, {:ref:`551 <X(551)>`, :ref:`553 <X(553)>`}, {:ref:`607 <X(607)>`, :ref:`911 <X(911)>`}, {:ref:`631 <X(631)>`, 1056}, {:ref:`667 <X(667)>`, :ref:`764 <X(764)>`}, {:ref:`946 <X(946)>`, 1012}, {:ref:`978 <X(978)>`, :ref:`979 <X(979)>`}, {1025, 1083}, {1070, 1074}, {1072, 1076}, {1345, 2464}
+   {:ref:`1 <X_1>`, :ref:`3 <X_3>`}, {:ref:`2 <X_2>`, :ref:`12 <X_12>`}, {:ref:`4 <X_4>`, :ref:`11 <X_11>`}, {:ref:`5 <X_5>`, :ref:`499 <X_499>`}, {:ref:`6 <X_6>`, :ref:`41 <X_41>`}, {:ref:`7 <X_7>`, :ref:`21 <X_21>`}, {:ref:`8 <X_8>`, :ref:`404 <X_404>`}, {:ref:`10 <X_10>`, :ref:`474 <X_474>`}, {:ref:`19 <X_19>`, :ref:`207 <X_207>`}, {:ref:`20 <X_20>`, :ref:`497 <X_497>`}, {:ref:`22 <X_22>`, :ref:`977 <X_977>`}, {:ref:`25 <X_25>`, :ref:`34 <X_34>`}, {:ref:`28 <X_28>`, :ref:`278 <X_278>`}, {:ref:`30 <X_30>`, :ref:`496 <X_496>`}, {:ref:`31 <X_31>`, :ref:`154 <X_154>`}, {:ref:`32 <X_32>`, 1015}, {:ref:`33 <X_33>`, :ref:`963 <X_963>`}, {:ref:`38 <X_38>`, :ref:`201 <X_201>`}, {:ref:`58 <X_58>`, :ref:`222 <X_222>`}, {:ref:`61 <X_61>`, :ref:`202 <X_202>`}, {:ref:`62 <X_62>`, :ref:`203 <X_203>`}, {:ref:`63 <X_63>`, :ref:`960 <X_960>`}, {:ref:`72 <X_72>`, :ref:`997 <X_997>`}, {:ref:`77 <X_77>`, 1036}, {:ref:`78 <X_78>`, :ref:`480 <X_480>`}, {:ref:`81 <X_81>`, :ref:`959 <X_959>`}, {:ref:`85 <X_85>`, :ref:`870 <X_870>`}, {:ref:`87 <X_87>`, :ref:`238 <X_238>`}, {:ref:`100 <X_100>`, :ref:`145 <X_145>`}, {:ref:`101 <X_101>`, :ref:`218 <X_218>`}, {:ref:`105 <X_105>`, :ref:`279 <X_279>`}, {:ref:`106 <X_106>`, :ref:`109 <X_109>`}, {:ref:`140 <X_140>`, :ref:`495 <X_495>`}, {:ref:`181 <X_181>`, :ref:`386 <X_386>`}, {:ref:`182 <X_182>`, :ref:`611 <X_611>`}, {:ref:`197 <X_197>`, :ref:`227 <X_227>`}, {:ref:`212 <X_212>`, :ref:`939 <X_939>`}, {:ref:`219 <X_219>`, :ref:`579 <X_579>`}, {:ref:`220 <X_220>`, :ref:`672 <X_672>`}, {:ref:`223 <X_223>`, :ref:`937 <X_937>`}, {:ref:`226 <X_226>`, :ref:`405 <X_405>`}, {:ref:`255 <X_255>`, :ref:`602 <X_602>`}, {:ref:`266 <X_266>`, :ref:`289 <X_289>`}, {:ref:`269 <X_269>`, :ref:`738 <X_738>`}, {:ref:`330 <X_330>`, :ref:`385 <X_385>`}, {:ref:`376 <X_376>`, 1058}, {:ref:`411 <X_411>`, :ref:`938 <X_938>`}, {:ref:`511 <X_511>`, :ref:`613 <X_613>`}, {:ref:`551 <X_551>`, :ref:`553 <X_553>`}, {:ref:`607 <X_607>`, :ref:`911 <X_911>`}, {:ref:`631 <X_631>`, 1056}, {:ref:`667 <X_667>`, :ref:`764 <X_764>`}, {:ref:`946 <X_946>`, 1012}, {:ref:`978 <X_978>`, :ref:`979 <X_979>`}, {1025, 1083}, {1070, 1074}, {1072, 1076}, {1345, 2464}
 
 .. collapse:: Functional Relations
    :badge: 49 relations
 
-   * :ref:`X(56) <X(56)>` = midpoint of :ref:`X(1) <X(1)>` and :ref:`X(46) <X(46)>`
-   * :ref:`X(56) <X(56)>` = reflection of X(i) in X(j) for these (i,j): (1479, :ref:`496 <X(496)>`), (2098, :ref:`1 <X(1)>`)
-   * :ref:`X(56) <X(56)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(8) <X(8)>`
-   * :ref:`X(56) <X(56)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(3596)
-   * :ref:`X(56) <X(56)>` = :term:`complement <complement>` of X(3436)
-   * :ref:`X(56) <X(56)>` = :term:`anticomplement <anticomplement>` of X(1329)
-   * :ref:`X(56) <X(56)>` = circumcircle-inverse of X(1319)
-   * :ref:`X(56) <X(56)>` = antigonal conjugate of X(17101)
-   * :ref:`X(56) <X(56)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`221 <X(221)>`), (:ref:`7 <X(7)>`, :ref:`222 <X(222)>`), (:ref:`28 <X(28)>`, :ref:`34 <X(34)>`), (:ref:`57 <X(57)>`, :ref:`6 <X(6)>`), (:ref:`59 <X(59)>`, :ref:`109 <X(109)>`), (:ref:`108 <X(108)>`, :ref:`513 <X(513)>`)
-   * :ref:`X(56) <X(56)>` = :ref:`X(31) <X(31)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(6) <X(6)>`
-   * :ref:`X(56) <X(56)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`84 <X(84)>`), (:ref:`7 <X(7)>`, :ref:`278 <X(278)>`), (:ref:`28 <X(28)>`, :ref:`58 <X(58)>`), (:ref:`57 <X(57)>`, :ref:`269 <X(269)>`), (:ref:`59 <X(59)>`, :ref:`109 <X(109)>`)
-   * :ref:`X(56) <X(56)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`40 <X(40)>`), (:ref:`2 <X(2)>`, :ref:`144 <X(144)>`), (:ref:`6 <X(6)>`, :ref:`197 <X(197)>`), (:ref:`9 <X(9)>`, :ref:`200 <X(200)>`), (:ref:`10 <X(10)>`, :ref:`72 <X(72)>`), (:ref:`11 <X(11)>`, :ref:`522 <X(522)>`), (:ref:`55 <X(55)>`, :ref:`219 <X(219)>`), (:ref:`175 <X(175)>`, :ref:`176 <X(176)>`), (:ref:`519 <X(519)>`, 1145)
-   * :ref:`X(56) <X(56)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(522) <X(522)>`\ \ :ref:`X(650) <X(650)>`
-   * :ref:`X(56) <X(56)>` = X(i)-:term:`Hirst inverse <hirst-inverse>` of X(j) for these (i,j): (:ref:`6 <X(6)>`, 1458), (:ref:`34 <X(34)>`, 1430), (:ref:`57 <X(57)>`, 1429), (:ref:`604 <X(604)>`, 1428), (1416, 1438)
-   * :ref:`X(56) <X(56)>` = :ref:`X(266) <X(266)>`-:term:`aleph conjugate <aleph-conjugate>` of X(1050)
-   * :ref:`X(56) <X(56)>` = X(i)-:term:`beth conjugate <beth-conjugate>` of X(j) for these (i,j): (:ref:`1 <X(1)>`, :ref:`1 <X(1)>`), (:ref:`21 <X(21)>`, :ref:`3 <X(3)>`), (:ref:`56 <X(56)>`, 1106), (:ref:`58 <X(58)>`, :ref:`56 <X(56)>`), and (P,57) for all P on the circumcircle
-   * :ref:`X(56) <X(56)>` = homothetic center of the :term:`intouch triangle <intouch-triangle>` and the circumcevian triangle of :ref:`X(1) <X(1)>`
-   * :ref:`X(56) <X(56)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(649) <X(649)>`\ \ :ref:`X(854) <X(854)>` (the isogonal conjugate of the isotomic conjugate of the Gergonne line)
-   * :ref:`X(56) <X(56)>` = homothetic center of :g:`ABC << A B C >>` and the reflection of the Mandart-incircle triangle in :ref:`X(1) <X(1)>`
-   * :ref:`X(56) <X(56)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(40) <X(40)>`}-harmonic conjugate of X(3057)
-   * :ref:`X(56) <X(56)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(57) <X(57)>`}-harmonic conjugate of :ref:`X(65) <X(65)>`
-   * :ref:`X(56) <X(56)>` = trilinear square of :ref:`X(266) <X(266)>`
-   * :ref:`X(56) <X(56)>` = trilinear square root of X(1106)
-   * :ref:`X(56) <X(56)>` = :ref:`X(92) <X(92)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(219) <X(219)>`
-   * :ref:`X(56) <X(56)>` = :term:`vertex conjugate <vertex-conjugate>` of PU(93)
-   * :ref:`X(56) <X(56)>` = inverse-in-{circumcircle, incircle}-inverter of X(3660)
-   * :ref:`X(56) <X(56)>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X(55) <X(55)>`
-   * :ref:`X(56) <X(56)>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of Gemini triangle 15
-   * :ref:`X(56) <X(56)>` = homothetic center of intangents triangle and reflection of tangential triangle in :ref:`X(3) <X(3)>`
-   * :ref:`X(56) <X(56)>` = homothetic center of tangential triangle and reflection of intangents triangle in :ref:`X(1) <X(1)>`
-   * :ref:`X(56) <X(56)>` = Brianchon point (perspector) of inellipse that is isogonal conjugate of isotomic conjugate of incircle
-   * :ref:`X(56) <X(56)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X(7017) (line X(2804)X(4397))
-   * :ref:`X(56) <X(56)>` = :ref:`X(48) <X(48)>`-isoconjugate (polar conjugate) of X(7017)
-   * :ref:`X(56) <X(56)>` = barycentric product of PU(46)
-   * :ref:`X(56) <X(56)>` = bicentric sum of PU(60)
-   * :ref:`X(56) <X(56)>` = PU(60)-harmonic conjugate of :ref:`X(650) <X(650)>`
-   * :ref:`X(56) <X(56)>` = trilinear product of PU(92)
-   * :ref:`X(56) <X(56)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Apus triangle
-   * :ref:`X(56) <X(56)>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Hutson intouch triangle
-   * :ref:`X(56) <X(56)>` = homothetic center of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and 1st Johnson-Yff triangle
-   * :ref:`X(56) <X(56)>` = homothetic center of midarc triangle and 1st-circumperp-of-1st-circumperp triangle (which is also 2nd-circumperp-of-2nd-circumperp triangle)
-   * :ref:`X(56) <X(56)>` = homothetic center of 2nd midarc triangle and 2nd-circumperp-of-1st-circumperp triangle (which is also 1st-circumperp-of-2nd-circumperp triangle)
-   * :ref:`X(56) <X(56)>` = Cundy-Parry Phi transform of :ref:`X(517) <X(517)>`
-   * :ref:`X(56) <X(56)>` = Cundy-Parry Psi transform of :ref:`X(104) <X(104)>`
-   * :ref:`X(56) <X(56)>` = {X(3513),X(3514)}-harmonic conjugate of :ref:`X(55) <X(55)>`
-   * :ref:`X(56) <X(56)>` = :ref:`X(4) <X(4)>`-of-2nd-Johnson-Yff-triangle
-   * :ref:`X(56) <X(56)>` = homothetic center of tangential triangle and anti-tangential midarc triangle
-   * :ref:`X(56) <X(56)>` = Ursa-major-to-Ursa-minor :term:`similarity image <similarity-image>` of :ref:`X(4) <X(4)>`
-   * :ref:`X(56) <X(56)>` = barycentric product of (nonreal) circumcircle intercepts of the Gergonne line
+   * :ref:`X_56 <X_56>` = midpoint of :ref:`X_1 <X_1>` and :ref:`X_46 <X_46>`
+   * :ref:`X_56 <X_56>` = reflection of X_i in X_j for these (i,j): (1479, :ref:`496 <X_496>`), (2098, :ref:`1 <X_1>`)
+   * :ref:`X_56 <X_56>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_8 <X_8>`
+   * :ref:`X_56 <X_56>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3596
+   * :ref:`X_56 <X_56>` = :term:`complement <complement>` of X_3436
+   * :ref:`X_56 <X_56>` = :term:`anticomplement <anticomplement>` of X_1329
+   * :ref:`X_56 <X_56>` = circumcircle-inverse of X_1319
+   * :ref:`X_56 <X_56>` = antigonal conjugate of X_17101
+   * :ref:`X_56 <X_56>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`221 <X_221>`), (:ref:`7 <X_7>`, :ref:`222 <X_222>`), (:ref:`28 <X_28>`, :ref:`34 <X_34>`), (:ref:`57 <X_57>`, :ref:`6 <X_6>`), (:ref:`59 <X_59>`, :ref:`109 <X_109>`), (:ref:`108 <X_108>`, :ref:`513 <X_513>`)
+   * :ref:`X_56 <X_56>` = :ref:`X_31 <X_31>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_6 <X_6>`
+   * :ref:`X_56 <X_56>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`84 <X_84>`), (:ref:`7 <X_7>`, :ref:`278 <X_278>`), (:ref:`28 <X_28>`, :ref:`58 <X_58>`), (:ref:`57 <X_57>`, :ref:`269 <X_269>`), (:ref:`59 <X_59>`, :ref:`109 <X_109>`)
+   * :ref:`X_56 <X_56>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`40 <X_40>`), (:ref:`2 <X_2>`, :ref:`144 <X_144>`), (:ref:`6 <X_6>`, :ref:`197 <X_197>`), (:ref:`9 <X_9>`, :ref:`200 <X_200>`), (:ref:`10 <X_10>`, :ref:`72 <X_72>`), (:ref:`11 <X_11>`, :ref:`522 <X_522>`), (:ref:`55 <X_55>`, :ref:`219 <X_219>`), (:ref:`175 <X_175>`, :ref:`176 <X_176>`), (:ref:`519 <X_519>`, 1145)
+   * :ref:`X_56 <X_56>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_522 <X_522>`\ \ :ref:`X_650 <X_650>`
+   * :ref:`X_56 <X_56>` = X_i-:term:`Hirst inverse <hirst-inverse>` of X_j for these (i,j): (:ref:`6 <X_6>`, 1458), (:ref:`34 <X_34>`, 1430), (:ref:`57 <X_57>`, 1429), (:ref:`604 <X_604>`, 1428), (1416, 1438)
+   * :ref:`X_56 <X_56>` = :ref:`X_266 <X_266>`-:term:`aleph conjugate <aleph-conjugate>` of X_1050
+   * :ref:`X_56 <X_56>` = X_i-:term:`beth conjugate <beth-conjugate>` of X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`1 <X_1>`), (:ref:`21 <X_21>`, :ref:`3 <X_3>`), (:ref:`56 <X_56>`, 1106), (:ref:`58 <X_58>`, :ref:`56 <X_56>`), and (P,57) for all P on the circumcircle
+   * :ref:`X_56 <X_56>` = homothetic center of the :term:`intouch triangle <intouch-triangle>` and the circumcevian triangle of :ref:`X_1 <X_1>`
+   * :ref:`X_56 <X_56>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_649 <X_649>`\ \ :ref:`X_854 <X_854>` (the isogonal conjugate of the isotomic conjugate of the Gergonne line)
+   * :ref:`X_56 <X_56>` = homothetic center of :g:`ABC << A B C >>` and the reflection of the Mandart-incircle triangle in :ref:`X_1 <X_1>`
+   * :ref:`X_56 <X_56>` = {:ref:`X_1 <X_1>`,\ :ref:`X_40 <X_40>`}-harmonic conjugate of X_3057
+   * :ref:`X_56 <X_56>` = {:ref:`X_1 <X_1>`,\ :ref:`X_57 <X_57>`}-harmonic conjugate of :ref:`X_65 <X_65>`
+   * :ref:`X_56 <X_56>` = trilinear square of :ref:`X_266 <X_266>`
+   * :ref:`X_56 <X_56>` = trilinear square root of X_1106
+   * :ref:`X_56 <X_56>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_219 <X_219>`
+   * :ref:`X_56 <X_56>` = :term:`vertex conjugate <vertex-conjugate>` of PU(93)
+   * :ref:`X_56 <X_56>` = inverse-in-{circumcircle, incircle}-inverter of X_3660
+   * :ref:`X_56 <X_56>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X_55 <X_55>`
+   * :ref:`X_56 <X_56>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of Gemini triangle 15
+   * :ref:`X_56 <X_56>` = homothetic center of intangents triangle and reflection of tangential triangle in :ref:`X_3 <X_3>`
+   * :ref:`X_56 <X_56>` = homothetic center of tangential triangle and reflection of intangents triangle in :ref:`X_1 <X_1>`
+   * :ref:`X_56 <X_56>` = Brianchon point (perspector) of inellipse that is isogonal conjugate of isotomic conjugate of incircle
+   * :ref:`X_56 <X_56>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X_7017 (line X_2804X_4397)
+   * :ref:`X_56 <X_56>` = :ref:`X_48 <X_48>`-isoconjugate (polar conjugate) of X_7017
+   * :ref:`X_56 <X_56>` = barycentric product of PU(46)
+   * :ref:`X_56 <X_56>` = bicentric sum of PU(60)
+   * :ref:`X_56 <X_56>` = PU(60)-harmonic conjugate of :ref:`X_650 <X_650>`
+   * :ref:`X_56 <X_56>` = trilinear product of PU(92)
+   * :ref:`X_56 <X_56>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Apus triangle
+   * :ref:`X_56 <X_56>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Hutson intouch triangle
+   * :ref:`X_56 <X_56>` = homothetic center of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and 1st Johnson-Yff triangle
+   * :ref:`X_56 <X_56>` = homothetic center of midarc triangle and 1st-circumperp-of-1st-circumperp triangle (which is also 2nd-circumperp-of-2nd-circumperp triangle)
+   * :ref:`X_56 <X_56>` = homothetic center of 2nd midarc triangle and 2nd-circumperp-of-1st-circumperp triangle (which is also 1st-circumperp-of-2nd-circumperp triangle)
+   * :ref:`X_56 <X_56>` = Cundy-Parry Phi transform of :ref:`X_517 <X_517>`
+   * :ref:`X_56 <X_56>` = Cundy-Parry Psi transform of :ref:`X_104 <X_104>`
+   * :ref:`X_56 <X_56>` = {X_3513,X_3514}-harmonic conjugate of :ref:`X_55 <X_55>`
+   * :ref:`X_56 <X_56>` = :ref:`X_4 <X_4>`-of-2nd-Johnson-Yff-triangle
+   * :ref:`X_56 <X_56>` = homothetic center of tangential triangle and anti-tangential midarc triangle
+   * :ref:`X_56 <X_56>` = Ursa-major-to-Ursa-minor :term:`similarity image <similarity-image>` of :ref:`X_4 <X_4>`
+   * :ref:`X_56 <X_56>` = barycentric product of (nonreal) circumcircle intercepts of the Gergonne line
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the Fuhrmann triangle. Let :g:`L_{a} <L_a>` be the line through :g:`A' <A'>` parallel to :g:`BC <[ B C ]>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, :g:`B″ <B″>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C″ <C″>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(56) <X(56)>`. Also, let :g:`A_{a}B_{a}C_{a} << A_a B_a C_a >>` be the poristic triangle (i.e., a triangle with common circumcircle and incircle as :g:`ABC << A B C >>`) such that :g:`B_{a}C_{a} <[ B_a C_a ]>` is parallel to :g:`BC <[ B C ]>`. Define :g:`A_{b}B_{b}C_{b} << A_b B_b C_b >>` and :g:`A_{c}B_{c}C_{c} << A_c B_c C_c >>` cyclically. The lines :g:`AA_{a} <[ A A_a ]>`, :g:`BB_{b} <[ B B_b ]>`, :g:`CC_{c} <[ C C_c ]>` concur in :ref:`X(56) <X(56)>`. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`Fuhrmann triangle <fuhrmann-triangle>`. Let :g:`L_{a} <L_a>` be the line through :g:`A' <A'>` parallel to :g:`BC <[ B C ]>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, :g:`B″ <B″>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C″ <C″>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_56 <X_56>`. Also, let :g:`A_{a}B_{a}C_{a} << A_a B_a C_a >>` be the poristic triangle (i.e., a triangle with common circumcircle and incircle as :g:`ABC << A B C >>`) such that :g:`B_{a}C_{a} <[ B_a C_a ]>` is parallel to :g:`BC <[ B C ]>`. Define :g:`A_{b}B_{b}C_{b} << A_b B_b C_b >>` and :g:`A_{c}B_{c}C_{c} << A_c B_c C_c >>` cyclically. The lines :g:`AA_{a} <[ A A_a ]>`, :g:`BB_{b} <[ B B_b ]>`, :g:`CC_{c} <[ C C_c ]>` concur in :ref:`X_56 <X_56>`. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the intouch triangle. Let :g:`A″ <A″>` be the barycentric product of the circumcircle intercepts of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(56) <X(56)>`. (Randy Hutson, June 27, 2018)
+   Let :g:`A'B'C' << T_a T_b T_c >>` be the intouch triangle. Let :g:`A″ <A″>` be the barycentric product of the circumcircle intercepts of line :g:`B'C' <[ T_b T_c ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_56 <X_56>`. (Randy Hutson, June 27, 2018)
 
 .. container:: note-item
 
@@ -118,19 +131,19 @@ Notes
 
    In the plane of a triangle :g:`ABC << A B C >>`, let
 
-      * :g:`A'B'C' << A' B' C' >>` = circumcevian triangle of :ref:`X(1) <X(1)>`;
+      * :g:`A'B'C' << A' B' C' >>` = circumcevian triangle of :ref:`X_1 <X_1>`;
       * :g:`T_{a} <T_a>` = line tangent to circumcircle at :g:`A' <A'>`, and define :g:`T_{b} <T_b>` and :g:`T_{c} <T_c>` cyclically;
       * :g:`V_{a} <V_a>` = :g:`T_{b} <T_b>`\ ∩\ :g:`T_{c} <T_c>`, and define :g:`V_{b} <V_b>` and :g:`V_{c} <V_c>` cyclically.
 
-   The triangle :g:`V_{a}V_{b}V_{c} << V_a V_b V_c >>` is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X(56) <X(56)>`. (Dasari Naga Vijay Krishna, June 19, 2021)
+   The triangle :g:`V_{a}V_{b}V_{c} << V_a V_b V_c >>` is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X_56 <X_56>`. (Dasari Naga Vijay Krishna, June 19, 2021)
 
 .. container:: note-item
 
-   In the plane of a triangle :g:`ABC << A B C >>`, let (:g:`O_{a} <O_a>`) be the circle tangent internally to the incircle and tangent internally to the circumcircle at A. Define (:g:`O_{b} <O_b>`) and (:g:`O_{c} <O_c>`) cyclically. The radical center of (:g:`O_{a} <O_a>`), (:g:`O_{b} <O_b>`), (:g:`O_{c} <O_c>`) is :ref:`X(56) <X(56)>`. (Ivan Pavlov, February 24, 2022)
+   In the plane of a triangle :g:`ABC << A B C >>`, let (:g:`O_{a} <O_a>`) be the circle tangent internally to the incircle and tangent internally to the circumcircle at A. Define (:g:`O_{b} <O_b>`) and (:g:`O_{c} <O_c>`) cyclically. The radical center of (:g:`O_{a} <O_a>`), (:g:`O_{b} <O_b>`), (:g:`O_{c} <O_c>`) is :ref:`X_56 <X_56>`. (Ivan Pavlov, February 24, 2022)
 
 .. container:: note-item
 
-   :ref:`X(56) <X(56)>` is the {:ref:`X(1) <X(1)>`,\ :ref:`X(3) <X(3)>`}-harmonic conjugate of :ref:`X(55) <X(55)>`.
+   :ref:`X_56 <X_56>` is the {:ref:`X_1 <X_1>`,\ :ref:`X_3 <X_3>`}-harmonic conjugate of :ref:`X_55 <X_55>`.
 
 .. toctree::
    :hidden:

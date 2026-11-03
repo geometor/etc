@@ -1,22 +1,31 @@
 :order: 343
 :type: center
-:canonical_id: X(343)
-:dependencies: X(2), X(3), X(5), X(6), X(22), X(25), X(32), X(51), X(53), X(68), X(69), X(76), X(140), X(161), X(216), X(275), X(297), X(311), X(315), X(421), X(427), X(458), X(470), X(471), X(472), X(473), X(511), X(569), X(571), X(621), X(622), X(633), X(634), X(1993), X(2501), X(2917), X(7580), X(8882), X(8884)
+:canonical_id: X_343
+:subtitle: ISOTOMIC CONJUGATE OF X_275
+:dependencies: X_2, X_3, X_5, X_6, X_22, X_25, X_32, X_51, X_53, X_68, X_69, X_76, X_140, X_161, X_216, X_275, X_297, X_311, X_315, X_421, X_427, X_458, X_470, X_471, X_472, X_473, X_511, X_569, X_571, X_621, X_622, X_633, X_634, X_1993, X_2501, X_2917, X_7580, X_8882, X_8884
 
-.. _X(343):
+.. _X_343:
 
-X(343) = ISOTOMIC CONJUGATE OF X(275)
-=====================================
+X_343
+=====
+
+.. rubric:: ISOTOMIC CONJUGATE OF X_275
 
 .. enunciation::
 
-   :ref:`X(343) <X(343)>` is the barycentric multiplier for the Johnson circumconic. (The barycentric product of :ref:`X(343) <X(343)>` and the circumcircle is the Johnson circumconic.) (:person:`Randy Hutson <randy-hutson>`, August 19, 2019)
+   :ref:`X_343 <X_343>` is the :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_275 <X_275>`.
 
 .. figure:: x-00343.svg
-   :alt: X(343) = ISOTOMIC CONJUGATE OF X(275)
+   :alt: X_343 — ISOTOMIC CONJUGATE OF X_275
    :align: center
 
-   **X(343) = ISOTOMIC CONJUGATE OF X(275)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_343** (*ISOTOMIC CONJUGATE OF X_275*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 6} <{ 2, 6 }>`, :g:`{5, 51} <{ 5, 51 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_5 <X_5>` (:ref:`NINE-POINT CENTER <X_5>`), :g:`X_51 <X_51>` (:ref:`CENTROID OF ORTHIC TRIANGLE <X_51>`)
 
 .. signature:: center
 
@@ -34,22 +43,29 @@ X(343) = ISOTOMIC CONJUGATE OF X(275)
    :badge: 13 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`6 <X(6)>`}, {:ref:`3 <X(3)>`, :ref:`68 <X(68)>`}, {:ref:`5 <X(5)>`, :ref:`51 <X(51)>`}, {:ref:`22 <X(22)>`, :ref:`161 <X(161)>`}, {:ref:`53 <X(53)>`, :ref:`311 <X(311)>`}, {:ref:`76 <X(76)>`, :ref:`297 <X(297)>`}, {:ref:`140 <X(140)>`, :ref:`569 <X(569)>`}, {:ref:`315 <X(315)>`, :ref:`458 <X(458)>`}, {:ref:`427 <X(427)>`, :ref:`511 <X(511)>`}, {:ref:`470 <X(470)>`, :ref:`634 <X(634)>`}, {:ref:`471 <X(471)>`, :ref:`633 <X(633)>`}, {:ref:`472 <X(472)>`, :ref:`621 <X(621)>`}, {:ref:`473 <X(473)>`, :ref:`622 <X(622)>`}
+   {:ref:`2 <X_2>`, :ref:`6 <X_6>`}, {:ref:`3 <X_3>`, :ref:`68 <X_68>`}, {:ref:`5 <X_5>`, :ref:`51 <X_51>`}, {:ref:`22 <X_22>`, :ref:`161 <X_161>`}, {:ref:`53 <X_53>`, :ref:`311 <X_311>`}, {:ref:`76 <X_76>`, :ref:`297 <X_297>`}, {:ref:`140 <X_140>`, :ref:`569 <X_569>`}, {:ref:`315 <X_315>`, :ref:`458 <X_458>`}, {:ref:`427 <X_427>`, :ref:`511 <X_511>`}, {:ref:`470 <X_470>`, :ref:`634 <X_634>`}, {:ref:`471 <X_471>`, :ref:`633 <X_633>`}, {:ref:`472 <X_472>`, :ref:`621 <X_621>`}, {:ref:`473 <X_473>`, :ref:`622 <X_622>`}
 
 .. collapse:: Functional Relations
    :badge: 11 relations
 
-   * :ref:`X(343) <X(343)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(8882)
-   * :ref:`X(343) <X(343)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(275) <X(275)>`
-   * :ref:`X(343) <X(343)>` = :term:`complement <complement>` of X(1993)
-   * :ref:`X(343) <X(343)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`76 <X(76)>`, :ref:`311 <X(311)>`), (:ref:`311 <X(311)>`, :ref:`5 <X(5)>`)
-   * :ref:`X(343) <X(343)>` = :ref:`X(216) <X(216)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(5) <X(5)>`
-   * :ref:`X(343) <X(343)>` = :term:`crosspoint <crosspoint>` of :ref:`X(69) <X(69)>` and :ref:`X(76) <X(76)>`
-   * :ref:`X(343) <X(343)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`6 <X(6)>`, :ref:`571 <X(571)>`), (:ref:`25 <X(25)>`, :ref:`32 <X(32)>`)
-   * :ref:`X(343) <X(343)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X(8884) (line :ref:`X(421) <X(421)>`\ X(2501))
-   * :ref:`X(343) <X(343)>` = polar conjugate of X(8884)
-   * :ref:`X(343) <X(343)>` = crosspoint of :ref:`X(6) <X(6)>` and X(2917) wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
-   * :ref:`X(343) <X(343)>` = X(7580)-of-orthic-triangle if :g:`ABC << A B C >>` is acute
+   * :ref:`X_343 <X_343>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_8882
+   * :ref:`X_343 <X_343>` = isotomic conjugate of :ref:`X_275 <X_275>`
+   * :ref:`X_343 <X_343>` = :term:`complement <complement>` of X_1993
+   * :ref:`X_343 <X_343>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`76 <X_76>`, :ref:`311 <X_311>`), (:ref:`311 <X_311>`, :ref:`5 <X_5>`)
+   * :ref:`X_343 <X_343>` = :ref:`X_216 <X_216>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_5 <X_5>`
+   * :ref:`X_343 <X_343>` = :term:`crosspoint <crosspoint>` of :ref:`X_69 <X_69>` and :ref:`X_76 <X_76>`
+   * :ref:`X_343 <X_343>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`571 <X_571>`), (:ref:`25 <X_25>`, :ref:`32 <X_32>`)
+   * :ref:`X_343 <X_343>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X_8884 (line :ref:`X_421 <X_421>`\ X_2501)
+   * :ref:`X_343 <X_343>` = polar conjugate of X_8884
+   * :ref:`X_343 <X_343>` = crosspoint of :ref:`X_6 <X_6>` and X_2917 wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
+   * :ref:`X_343 <X_343>` = X_7580-of-orthic-triangle if :g:`ABC << A B C >>` is acute
+
+Notes
+-----
+
+.. container:: note-item
+
+   :ref:`X_343 <X_343>` is the barycentric multiplier for the Johnson circumconic. (The barycentric product of :ref:`X_343 <X_343>` and the circumcircle is the Johnson circumconic.) (:person:`Randy Hutson <randy-hutson>`, August 19, 2019)
 
 .. toctree::
    :hidden:

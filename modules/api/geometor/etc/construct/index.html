@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=69acf51f" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=66998e95" />
   <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -89,6 +89,34 @@
         </div>
       </header>
       <div class="content body book-content" role="main">
+        <style id="etc-heading-styles">
+        .book-reading-pane .book-content h1,
+        .folio-book-page h1 {
+            position: relative;
+            text-align: center !important;
+            text-indent: 0 !important;
+            margin-bottom: 0.35rem !important;
+        }
+        .book-reading-pane .book-content h1 a.headerlink,
+        .book-reading-pane .book-content h2 a.headerlink,
+        .folio-book-page h1 a.headerlink,
+        .folio-book-page h2 a.headerlink {
+            position: absolute;
+        }
+        .book-reading-pane .book-content p.rubric,
+        .folio-book-page p.rubric {
+            font-style: normal !important;
+            font-weight: 700 !important;
+            text-align: center !important;
+            text-indent: 0 !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            margin-top: 0 !important;
+            margin-bottom: 1.4rem !important;
+        }
+        </style>
         <section class="level-1" id="module-geometor.etc.construct">
         <span id="geometor-etc-construct"></span><h1>geometor.etc.construct<a class="headerlink" href="#module-geometor.etc.construct" title="Link to this heading">¶</a></h1>
         <p>Symbolic and numerical geometric construction engine for ETC triangle centers using <cite>geometor.model</cite>.</p>
@@ -119,10 +147,10 @@
         <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
         <table class="autosummary longtable docutils align-default">
         <tbody>
-        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.construct.build_center_model" title="geometor.etc.construct.build_center_model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">build_center_model</span></code></a>(→ geometor.model.Model)</p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.construct.build_center_model" title="geometor.etc.construct.build_center_model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">build_center_model</span></code></a>(center_data, registry[, ...]) → geometor.model.Model</p></td>
         <td><p>Build a <cite>geometor.model.Model</cite> for <cite>center_data</cite> with a clean primary construction and toggleable <cite>.incident</cite> lines.</p></td>
         </tr>
-        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.construct.generate_center_model_py" title="geometor.etc.construct.generate_center_model_py"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_center_model_py</span></code></a>(→ str)</p></td>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.construct.generate_center_model_py" title="geometor.etc.construct.generate_center_model_py"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_center_model_py</span></code></a>(center_data, registry) → str</p></td>
         <td><p>Generate a standalone, composable <cite>geometor.model</cite> Python script (<cite>model.py</cite>) for <cite>center_data</cite>.</p></td>
         </tr>
         </tbody>
@@ -260,7 +288,7 @@
         <dl class="py method">
         <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.kimberling_search_value">
         <span class="sig-name descname"><span class="pre">kimberling_search_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">u</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">v</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">w</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.kimberling_search_value" title="Link to this definition">¶</a></dt>
-        <dd><p>Compute Kimberling’s signed distance h_a from X(n) to side BC for raw (a, b, c).</p>
+        <dd><p>Compute Kimberling’s signed distance h_a from X<sub>n</sub> to side BC for raw (a, b, c).</p>
         </dd></dl>
 
         </dd></dl>
@@ -392,11 +420,11 @@
 
   <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../../../../_static/documentation_options.js?v=fd825880"></script>
+  <script src="../../../../../_static/documentation_options.js?v=59fadc99"></script>
   <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="../../../../../_static/js/geometor_interactive.js?v=4430a5d4"></script>
+  <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
   <script src="../../../../../_static/js/search_highlight.js"></script>
 
 </body>

@@ -1,18 +1,21 @@
-:canonical_id: X(685)
+:canonical_id: X_685
 :type: code
+:subtitle: TRILINEAR POLE OF LINE X_4X_98
 
-X(685) = TRILINEAR POLE OF LINE X(4)X(98) — Code
-================================================
+X_685
+=====
+
+.. rubric:: TRILINEAR POLE OF LINE X_4X_98
 
 .. enunciation::
 
-   :ref:`X(685) <X(685)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(684) <X(684)>`
+   :ref:`X_685 <X_685>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_4 <X_4>`\ \ :ref:`X_32 <X_32>`
 
 .. figure:: x-00685.svg
-   :alt: X(685) = TRILINEAR POLE OF LINE X(4)X(98)
+   :alt: X_685 — TRILINEAR POLE OF LINE X_4X_98
    :align: center
 
-   **X(685) = TRILINEAR POLE OF LINE X(4)X(98)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_685** (*TRILINEAR POLE OF LINE X_4X_98*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

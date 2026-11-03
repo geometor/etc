@@ -1,22 +1,32 @@
 :order: 119
 :type: center
-:canonical_id: X(119)
-:dependencies: X(1), X(2), X(3), X(4), X(5), X(8), X(9), X(10), X(11), X(100), X(104), X(116), X(123), X(124), X(125), X(135), X(136), X(142), X(153), X(214), X(381), X(429), X(431), X(442), X(515), X(517), X(528), X(908), X(915), X(2071), X(2072), X(3035), X(3657), X(15381), X(34459)
+:canonical_id: X_119
+:subtitle: FEUERBACH ANTIPODE
+:dependencies: X_1, X_2, X_3, X_4, X_5, X_8, X_9, X_10, X_11, X_100, X_104, X_116, X_123, X_124, X_125, X_135, X_136, X_142, X_153, X_214, X_381, X_429, X_431, X_442, X_515, X_517, X_528, X_908, X_915, X_2071, X_2072, X_3035, X_3657, X_15381, X_34459
 
-.. _X(119):
+.. _X_119:
 
-X(119) = FEUERBACH ANTIPODE
-===========================
+X_119
+=====
+
+.. rubric:: FEUERBACH ANTIPODE
 
 .. enunciation::
 
-   Let :g:`N_{a} <N_a>` = :ref:`X(5) <X(5)>`-:g:`BC <[ B C ]>`\ :ref:`X(1) <X(1)>`, :g:`N_{b} <N_b>` = :ref:`X(5) <X(5)>`-of-:g:`CA <[ C A ]>`\ :ref:`X(1) <X(1)>`, :g:`N_{c} <N_c>` = :ref:`X(5) <X(5)>`-of-:g:`AB <[ A B ]>`\ :ref:`X(1) <X(1)>`. Then :ref:`X(119) <X(119)>` = X(2071)-of-:g:`N_{a}N_{b}N_{c} << N_a N_b N_c >>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2018)
+   :ref:`X_119 <X_119>` = :term:`complement <complement>` of :ref:`X_104 <X_104>`
 
 .. figure:: x-00119.svg
-   :alt: X(119) = FEUERBACH ANTIPODE
+   :alt: X_119 — FEUERBACH ANTIPODE
    :align: center
 
-   **X(119) = FEUERBACH ANTIPODE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_119** (*FEUERBACH ANTIPODE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Circle:** :term:`Nine-Point Circle <nine-point circle>` (:g:`nine_point_circle <nine_point_circle>`) — Passes through side midpoints M_a, M_b, M_c and altitude feet H_a, H_b, H_c; centered at X_5
+   * **Central Lines:** :g:`{5, 11} <{ 5, 11 }>`
+   * **Related Centers:** :g:`X_5 <X_5>` (:ref:`NINE-POINT CENTER <X_5>`), :g:`X_11 <X_11>` (:ref:`FEUERBACH POINT <X_11>`)
 
 .. signature:: center
 
@@ -28,33 +38,37 @@ X(119) = FEUERBACH ANTIPODE
    :badge: 12 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`5 <X(5)>`}, {:ref:`2 <X(2)>`, :ref:`104 <X(104)>`}, {:ref:`3 <X(3)>`, :ref:`123 <X(123)>`}, {:ref:`4 <X(4)>`, :ref:`100 <X(100)>`}, {:ref:`10 <X(10)>`, :ref:`124 <X(124)>`}, {:ref:`116 <X(116)>`, :ref:`142 <X(142)>`}, {:ref:`125 <X(125)>`, :ref:`442 <X(442)>`}, {:ref:`135 <X(135)>`, :ref:`431 <X(431)>`}, {:ref:`136 <X(136)>`, :ref:`429 <X(429)>`}, {:ref:`214 <X(214)>`, :ref:`515 <X(515)>`}, {:ref:`381 <X(381)>`, :ref:`528 <X(528)>`}, {:ref:`517 <X(517)>`, :ref:`908 <X(908)>`}
+   {:ref:`1 <X_1>`, :ref:`5 <X_5>`}, {:ref:`2 <X_2>`, :ref:`104 <X_104>`}, {:ref:`3 <X_3>`, :ref:`123 <X_123>`}, {:ref:`4 <X_4>`, :ref:`100 <X_100>`}, {:ref:`10 <X_10>`, :ref:`124 <X_124>`}, {:ref:`116 <X_116>`, :ref:`142 <X_142>`}, {:ref:`125 <X_125>`, :ref:`442 <X_442>`}, {:ref:`135 <X_135>`, :ref:`431 <X_431>`}, {:ref:`136 <X_136>`, :ref:`429 <X_429>`}, {:ref:`214 <X_214>`, :ref:`515 <X_515>`}, {:ref:`381 <X_381>`, :ref:`528 <X_528>`}, {:ref:`517 <X_517>`, :ref:`908 <X_908>`}
 
 .. collapse:: Functional Relations
    :badge: 15 relations
 
-   * :ref:`X(119) <X(119)>` = midpoint of X(i) and X(j) for these (i,j): (:ref:`4 <X(4)>`, :ref:`100 <X(100)>`), (:ref:`104 <X(104)>`, :ref:`153 <X(153)>`)
-   * :ref:`X(119) <X(119)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`11 <X(11)>`, :ref:`5 <X(5)>`), (:ref:`3 <X(3)>`, 3035)
-   * :ref:`X(119) <X(119)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(15381)
-   * :ref:`X(119) <X(119)>` = :term:`complement <complement>` of :ref:`X(104) <X(104)>`
-   * :ref:`X(119) <X(119)>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X(517) <X(517)>`
-   * :ref:`X(119) <X(119)>` = :ref:`X(4) <X(4)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(517) <X(517)>`
-   * :ref:`X(119) <X(119)>` = nine-point-circle-antipode of :ref:`X(11) <X(11)>`
-   * :ref:`X(119) <X(119)>` = :ref:`X(104) <X(104)>`-of-:term:`medial triangle <medial-triangle>`
-   * :ref:`X(119) <X(119)>` = X(2072)-of-Fuhrmann-triangle
-   * :ref:`X(119) <X(119)>` = inverse-in-polar-circle of :ref:`X(915) <X(915)>`
-   * :ref:`X(119) <X(119)>` = anticenter of cyclic quadrilateral :g:`ABC << A B C >>`\ :ref:`X(100) <X(100)>`
-   * :ref:`X(119) <X(119)>` = Λ(:ref:`X(1) <X(1)>`, :ref:`X(3) <X(3)>`), wrt :term:`orthic triangle <orthic-triangle>`
-   * :ref:`X(119) <X(119)>` = Λ(:ref:`X(4) <X(4)>`, :ref:`X(8) <X(8)>`), wrt orthic triangle
-   * :ref:`X(119) <X(119)>` = Spieker-radical-circle-inverse of X(34459)
-   * :ref:`X(119) <X(119)>` = center of rectangular circumhyperbola passing through isogonal and :term:`isotomic conjugates <isotomic-conjugate>` of X(3657)
+   * :ref:`X_119 <X_119>` = midpoint of X_i and X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`100 <X_100>`), (:ref:`104 <X_104>`, :ref:`153 <X_153>`)
+   * :ref:`X_119 <X_119>` = reflection of X_i in X_j for these (i,j): (:ref:`11 <X_11>`, :ref:`5 <X_5>`), (:ref:`3 <X_3>`, 3035)
+   * :ref:`X_119 <X_119>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_15381
+   * :ref:`X_119 <X_119>` = complement of :ref:`X_104 <X_104>`
+   * :ref:`X_119 <X_119>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X_517 <X_517>`
+   * :ref:`X_119 <X_119>` = :ref:`X_4 <X_4>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_517 <X_517>`
+   * :ref:`X_119 <X_119>` = nine-point-circle-antipode of :ref:`X_11 <X_11>`
+   * :ref:`X_119 <X_119>` = :ref:`X_104 <X_104>`-of-:term:`medial triangle <medial-triangle>`
+   * :ref:`X_119 <X_119>` = X_2072-of-Fuhrmann-triangle
+   * :ref:`X_119 <X_119>` = inverse-in-polar-circle of :ref:`X_915 <X_915>`
+   * :ref:`X_119 <X_119>` = anticenter of cyclic quadrilateral :g:`ABC << A B C >>`\ :ref:`X_100 <X_100>`
+   * :ref:`X_119 <X_119>` = Λ(:ref:`X_1 <X_1>`, :ref:`X_3 <X_3>`), wrt :term:`orthic triangle <orthic-triangle>`
+   * :ref:`X_119 <X_119>` = Λ(:ref:`X_4 <X_4>`, :ref:`X_8 <X_8>`), wrt orthic triangle
+   * :ref:`X_119 <X_119>` = Spieker-radical-circle-inverse of X_34459
+   * :ref:`X_119 <X_119>` = center of rectangular circumhyperbola passing through isogonal and :term:`isotomic conjugates <isotomic-conjugate>` of X_3657
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the orthic triangle. Let :g:`L_{a} <L_a>` be the antiorthic axis of :g:`AB'C' << A B' C' >>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, :g:`B″ <B″>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C″ <C″>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. Then triangle :g:`A″B″C″ << A″ B″ C″ >>` is inversely similar to :g:`ABC << A B C >>`, with similicenter :ref:`X(9) <X(9)>`. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(119) <X(119)>`. Also, :ref:`X(119) <X(119)>` = :ref:`X(3) <X(3)>` of :g:`A″B″C″ << A″ B″ C″ >>`. (Randy Hutson, January 29, 2018)
+   Let :g:`N_{a} <N_a>` = :ref:`X_5 <X_5>`-:g:`BC <[ B C ]>`\ :ref:`X_1 <X_1>`, :g:`N_{b} <N_b>` = :ref:`X_5 <X_5>`-of-:g:`CA <[ C A ]>`\ :ref:`X_1 <X_1>`, :g:`N_{c} <N_c>` = :ref:`X_5 <X_5>`-of-:g:`AB <[ A B ]>`\ :ref:`X_1 <X_1>`. Then :ref:`X_119 <X_119>` = X_2071-of-:g:`N_{a}N_{b}N_{c} << N_a N_b N_c >>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2018)
+
+.. container:: note-item
+
+   Let :g:`A'B'C' << H_a H_b H_c >>` be the orthic triangle. Let :g:`L_{a} <L_a>` be the antiorthic axis of :g:`AB'C' << A H_b H_c >>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, :g:`B″ <B″>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C″ <C″>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. Then triangle :g:`A″B″C″ << A″ B″ C″ >>` is inversely similar to :g:`ABC << A B C >>`, with similicenter :ref:`X_9 <X_9>`. The lines :g:`A'A″ <[ H_a A″ ]>`, :g:`B'B″ <[ H_b B″ ]>`, :g:`C'C″ <[ H_c C″ ]>` concur in :ref:`X_119 <X_119>`. Also, :ref:`X_119 <X_119>` = :ref:`X_3 <X_3>` of :g:`A″B″C″ << A″ B″ C″ >>`. (Randy Hutson, January 29, 2018)
 
 .. toctree::
    :hidden:

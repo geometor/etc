@@ -1,18 +1,21 @@
-:canonical_id: X(578)
+:canonical_id: X_578
 :type: code
+:subtitle: ORTHOHARMONIC OF X_216
 
-X(578) = ORTHOHARMONIC OF X(216) — Code
-=======================================
+X_578
+=====
+
+.. rubric:: ORTHOHARMONIC OF X_216
 
 .. enunciation::
 
-   Joe Goggins notes (10/1/2008), in connection with the note at :ref:`X(389) <X(389)>`, that trilinears for :ref:`X(578) <X(578)>` are :math:`\sin(A-T) : \sin(B-T) : \sin(C-T)`, where tan(T) = - cot A cot B cot C.
+   :ref:`X_578 <X_578>` = inverse-in-Brocard-circle of :ref:`X_389 <X_389>`
 
 .. figure:: x-00578.svg
-   :alt: X(578) = ORTHOHARMONIC OF X(216)
+   :alt: X_578 — ORTHOHARMONIC OF X_216
    :align: center
 
-   **X(578) = ORTHOHARMONIC OF X(216)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_578** (*ORTHOHARMONIC OF X_216*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

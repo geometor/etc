@@ -1,22 +1,31 @@
 :order: 170
 :type: center
-:canonical_id: X(170)
-:dependencies: X(1), X(7), X(9), X(43), X(55), X(76), X(169), X(188), X(218), X(220), X(644), X(664), X(1018), X(34848)
+:canonical_id: X_170
+:subtitle: X_9-ALEPH CONJUGATE OF X_9
+:dependencies: X_1, X_7, X_9, X_43, X_55, X_76, X_169, X_188, X_218, X_220, X_644, X_664, X_1018, X_34848
 
-.. _X(170):
+.. _X_170:
 
-X(170) = X(9)-ALEPH CONJUGATE OF X(9)
-=====================================
+X_170
+=====
+
+.. rubric:: X_9-ALEPH CONJUGATE OF X_9
 
 .. enunciation::
 
-   :ref:`X(170) <X(170)>` = :ref:`X(76) <X(76)>`-of-:term:`excentral triangle <excentral-triangle>`
+   :ref:`X_170 <X_170>` = :ref:`X_76 <X_76>`-of-:term:`excentral triangle <excentral-triangle>`
 
 .. figure:: x-00170.svg
-   :alt: X(170) = X(9)-ALEPH CONJUGATE OF X(9)
+   :alt: X_170 — X_9-ALEPH CONJUGATE OF X_9
    :align: center
 
-   **X(170) = X(9)-ALEPH CONJUGATE OF X(9)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_170** (*X_9-ALEPH CONJUGATE OF X_9*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Derived Triangle:** :term:`Excentral Triangle <excentral triangle>` :g:`△J_aJ_bJ_c << J_a J_b J_c >>` — vertices :g:`J_a <J_a>`, :g:`J_b <J_b>`, :g:`J_c <J_c>` (Anticevian triangle of Incenter X_1 (the three excenters))
+   * **Concurrence Lines:** :g:`J_a–X_170 <[ J_a X_170 ]>`, :g:`J_b–X_170 <[ J_b X_170 ]>`, :g:`J_c–X_170 <[ J_c X_170 ]>` concurring at :g:`X_170 <X_170>`
 
 .. signature:: center
 
@@ -28,16 +37,16 @@ X(170) = X(9)-ALEPH CONJUGATE OF X(9)
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`7 <X(7)>`}, {:ref:`43 <X(43)>`, :ref:`218 <X(218)>`}
+   {:ref:`1 <X_1>`, :ref:`7 <X_7>`}, {:ref:`43 <X_43>`, :ref:`218 <X_218>`}
 
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X(170) <X(170)>` = :ref:`X(76) <X(76)>`-of-excentral triangle
-   * :ref:`X(170) <X(170)>` = :term:`anticomplement <anticomplement>` of X(34848)
-   * :ref:`X(170) <X(170)>` = :ref:`X(220) <X(220)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(1) <X(1)>`
-   * :ref:`X(170) <X(170)>` = X(i)-:term:`aleph conjugate <aleph-conjugate>` of X(j) for these (i,j): (:ref:`9 <X(9)>`, :ref:`9 <X(9)>`), (:ref:`55 <X(55)>`, :ref:`43 <X(43)>`), (:ref:`188 <X(188)>`, :ref:`169 <X(169)>`), (:ref:`220 <X(220)>`, :ref:`170 <X(170)>`), (:ref:`644 <X(644)>`, 1018)
-   * :ref:`X(170) <X(170)>` = :ref:`X(664) <X(664)>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X(170) <X(170)>`
+   * :ref:`X_170 <X_170>` = :ref:`X_76 <X_76>`-of-excentral triangle
+   * :ref:`X_170 <X_170>` = :term:`anticomplement <anticomplement>` of X_34848
+   * :ref:`X_170 <X_170>` = :ref:`X_220 <X_220>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_1 <X_1>`
+   * :ref:`X_170 <X_170>` = X_i-:term:`aleph conjugate <aleph-conjugate>` of X_j for these (i,j): (:ref:`9 <X_9>`, :ref:`9 <X_9>`), (:ref:`55 <X_55>`, :ref:`43 <X_43>`), (:ref:`188 <X_188>`, :ref:`169 <X_169>`), (:ref:`220 <X_220>`, :ref:`170 <X_170>`), (:ref:`644 <X_644>`, 1018)
+   * :ref:`X_170 <X_170>` = :ref:`X_664 <X_664>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X_170 <X_170>`
 
 .. toctree::
    :hidden:

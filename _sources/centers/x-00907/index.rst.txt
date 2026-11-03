@@ -1,22 +1,31 @@
 :order: 907
 :type: center
-:canonical_id: X(907)
-:dependencies: X(98), X(111), X(112), X(419), X(620), X(1180), X(1634), X(2501), X(3800)
+:canonical_id: X_907
+:subtitle: POINT ACRUX
+:dependencies: X_98, X_111, X_112, X_419, X_620, X_1180, X_1634, X_2501, X_3800
 
-.. _X(907):
+.. _X_907:
 
-X(907) = POINT ACRUX
-====================
+X_907
+=====
+
+.. rubric:: POINT ACRUX
 
 .. enunciation::
 
-   :ref:`X(907) <X(907)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(3800)
+   :ref:`X_907 <X_907>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3800
 
 .. figure:: x-00907.svg
-   :alt: X(907) = POINT ACRUX
+   :alt: X_907 — POINT ACRUX
    :align: center
 
-   **X(907) = POINT ACRUX** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_907** (*POINT ACRUX*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{98, 620} <{ 98, 620 }>`
+   * **Related Centers:** :g:`X_98 <X_98>` (:ref:`TARRY POINT <X_98>`), :g:`X_620 <X_620>` (:ref:`MIDPOINT OF X(618) AND X(619) <X_620>`)
 
 .. signature:: center
 
@@ -26,19 +35,19 @@ X(907) = POINT ACRUX
 
 .. container:: note-item
 
-   :ref:`X(907) <X(907)>` lies on the circumcircle.
+   :ref:`X_907 <X_907>` lies on the circumcircle.
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines
    :class: line-catalog
 
-   {:ref:`98 <X(98)>`, :ref:`620 <X(620)>`}, {:ref:`111 <X(111)>`, 1180}, {:ref:`112 <X(112)>`, 1634}
+   {:ref:`98 <X_98>`, :ref:`620 <X_620>`}, {:ref:`111 <X_111>`, 1180}, {:ref:`112 <X_112>`, 1634}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(907) <X(907)>` = isogonal conjugate of X(3800)
-   * :ref:`X(907) <X(907)>` = Λ(:ref:`X(419) <X(419)>`, X(2501)) (line is radical axis of circumcircle and orthosymmedial circle)
+   * :ref:`X_907 <X_907>` = isogonal conjugate of X_3800
+   * :ref:`X_907 <X_907>` = Λ(:ref:`X_419 <X_419>`, X_2501) (line is radical axis of circumcircle and orthosymmedial circle)
 
 .. toctree::
    :hidden:

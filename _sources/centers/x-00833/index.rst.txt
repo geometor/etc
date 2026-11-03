@@ -1,22 +1,31 @@
 :order: 833
 :type: center
-:canonical_id: X(833)
-:dependencies: X(6), X(106), X(759), X(832), X(977), X(1010)
+:canonical_id: X_833
+:subtitle: o-(1, 4) CIRCUMCIRCLE POINT
+:dependencies: X_6, X_106, X_759, X_832, X_977, X_1010
 
-.. _X(833):
+.. _X_833:
 
-X(833) = o-(1, 4) CIRCUMCIRCLE POINT
-====================================
+X_833
+=====
+
+.. rubric:: o-(1, 4) CIRCUMCIRCLE POINT
 
 .. enunciation::
 
-   :ref:`X(833) <X(833)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(832) <X(832)>`
+   :ref:`X_833 <X_833>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_832 <X_832>`
 
 .. figure:: x-00833.svg
-   :alt: X(833) = o-(1, 4) CIRCUMCIRCLE POINT
+   :alt: X_833 — o-(1, 4) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(833) = o-(1, 4) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_833** (*o-(1, 4) CIRCUMCIRCLE POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{106, 977} <{ 106, 977 }>`
+   * **Related Centers:** :g:`X_832 <X_832>` (:ref:`ODD (1, 4) INFINITY POINT <X_832>`), :g:`X_106 <X_106>` (:ref:`Λ(INCENTER, CENTROID) <X_106>`), :g:`X_977 <X_977>` (:ref:`ISOGONAL CONJUGATE OF X(976) <X_977>`)
 
 .. signature:: center
 
@@ -26,20 +35,20 @@ X(833) = o-(1, 4) CIRCUMCIRCLE POINT
 
 .. container:: note-item
 
-   :ref:`X(833) <X(833)>` lies on the circumcircle.
+   :ref:`X_833 <X_833>` lies on the circumcircle.
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`106 <X(106)>`, :ref:`977 <X(977)>`}, {:ref:`759 <X(759)>`, 1010}
+   {:ref:`106 <X_106>`, :ref:`977 <X_977>`}, {:ref:`759 <X_759>`, 1010}
 
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X(833) <X(833)>` = isogonal conjugate of :ref:`X(832) <X(832)>`
-   * :ref:`X(833) <X(833)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(6) <X(6)>`\ \ :ref:`X(977) <X(977)>`
-   * :ref:`X(833) <X(833)>` = Ψ(:ref:`X(6) <X(6)>`, :ref:`X(977) <X(977)>`)
+   * :ref:`X_833 <X_833>` = isogonal conjugate of :ref:`X_832 <X_832>`
+   * :ref:`X_833 <X_833>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_6 <X_6>`\ \ :ref:`X_977 <X_977>`
+   * :ref:`X_833 <X_833>` = Ψ(:ref:`X_6 <X_6>`, :ref:`X_977 <X_977>`)
 
 .. toctree::
    :hidden:

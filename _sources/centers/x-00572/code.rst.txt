@@ -1,18 +1,21 @@
-:canonical_id: X(572)
+:canonical_id: X_572
 :type: code
+:subtitle: ORTHOGONAL OF X_58
 
-X(572) = ORTHOGONAL OF X(58) — Code
-===================================
+X_572
+=====
+
+.. rubric:: ORTHOGONAL OF X_58
 
 .. enunciation::
 
-   :ref:`X(572) <X(572)>` is the intersection of the Brocard axes of :g:`ABC << A B C >>`, the Feuerbach triangle, and the Apollonius triangle. (:person:`Randy Hutson <randy-hutson>`, March 21, 2019)
+   :ref:`X_572 <X_572>` = inverse-in-Brocard-circle of :ref:`X_573 <X_573>`
 
 .. figure:: x-00572.svg
-   :alt: X(572) = ORTHOGONAL OF X(58)
+   :alt: X_572 — ORTHOGONAL OF X_58
    :align: center
 
-   **X(572) = ORTHOGONAL OF X(58)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_572** (*ORTHOGONAL OF X_58*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

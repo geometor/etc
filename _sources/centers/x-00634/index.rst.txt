@@ -1,22 +1,31 @@
 :order: 634
 :type: center
-:canonical_id: X(634)
-:dependencies: X(2), X(3), X(4), X(5), X(13), X(17), X(18), X(20), X(61), X(62), X(69), X(140), X(141), X(298), X(299), X(303), X(343), X(394), X(397), X(398), X(470), X(471), X(524), X(617), X(624), X(628), X(635), X(636), X(3443)
+:canonical_id: X_634
+:subtitle: ANTICOMPLEMENT OF X_62
+:dependencies: X_2, X_3, X_4, X_5, X_13, X_17, X_18, X_20, X_61, X_62, X_69, X_140, X_141, X_298, X_299, X_303, X_343, X_394, X_397, X_398, X_470, X_471, X_524, X_617, X_624, X_628, X_635, X_636, X_3443
 
-.. _X(634):
+.. _X_634:
 
-X(634) = ANTICOMPLEMENT OF X(62)
-================================
+X_634
+=====
+
+.. rubric:: ANTICOMPLEMENT OF X_62
 
 .. enunciation::
 
-   :ref:`X(634) <X(634)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(3443)
+   :ref:`X_634 <X_634>` is the :term:`anticomplement <anticomplement>` of :ref:`X_62 <X_62>`.
 
 .. figure:: x-00634.svg
-   :alt: X(634) = ANTICOMPLEMENT OF X(62)
+   :alt: X_634 — ANTICOMPLEMENT OF X_62
    :align: center
 
-   **X(634) = ANTICOMPLEMENT OF X(62)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_634** (*ANTICOMPLEMENT OF X_62*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 17} <{ 2, 17 }>`, :g:`{4, 69} <{ 4, 69 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_17 <X_17>` (:ref:`1st NAPOLEON POINT <X_17>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_69 <X_69>` (:ref:`SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE <X_69>`)
 
 .. signature:: center
 
@@ -33,15 +42,15 @@ X(634) = ANTICOMPLEMENT OF X(62)
    :badge: 12 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`17 <X(17)>`}, {:ref:`3 <X(3)>`, :ref:`299 <X(299)>`}, {:ref:`4 <X(4)>`, :ref:`69 <X(69)>`}, {:ref:`5 <X(5)>`, :ref:`298 <X(298)>`}, {:ref:`13 <X(13)>`, :ref:`635 <X(635)>`}, {:ref:`18 <X(18)>`, :ref:`624 <X(624)>`}, {:ref:`20 <X(20)>`, :ref:`617 <X(617)>`}, {:ref:`140 <X(140)>`, :ref:`303 <X(303)>`}, {:ref:`141 <X(141)>`, :ref:`397 <X(397)>`}, {:ref:`343 <X(343)>`, :ref:`470 <X(470)>`}, {:ref:`394 <X(394)>`, :ref:`471 <X(471)>`}, {:ref:`398 <X(398)>`, :ref:`524 <X(524)>`}
+   {:ref:`2 <X_2>`, :ref:`17 <X_17>`}, {:ref:`3 <X_3>`, :ref:`299 <X_299>`}, {:ref:`4 <X_4>`, :ref:`69 <X_69>`}, {:ref:`5 <X_5>`, :ref:`298 <X_298>`}, {:ref:`13 <X_13>`, :ref:`635 <X_635>`}, {:ref:`18 <X_18>`, :ref:`624 <X_624>`}, {:ref:`20 <X_20>`, :ref:`617 <X_617>`}, {:ref:`140 <X_140>`, :ref:`303 <X_303>`}, {:ref:`141 <X_141>`, :ref:`397 <X_397>`}, {:ref:`343 <X_343>`, :ref:`470 <X_470>`}, {:ref:`394 <X_394>`, :ref:`471 <X_471>`}, {:ref:`398 <X_398>`, :ref:`524 <X_524>`}
 
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X(634) <X(634)>` = reflection of X(i) in X(j) for these (i,j): (:ref:`62 <X(62)>`, :ref:`636 <X(636)>`), (:ref:`61 <X(61)>`, :ref:`635 <X(635)>`)
-   * :ref:`X(634) <X(634)>` = isogonal conjugate of X(3443)
-   * :ref:`X(634) <X(634)>` = :term:`anticomplement <anticomplement>` of :ref:`X(62) <X(62)>`
-   * :ref:`X(634) <X(634)>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X(628) <X(628)>`
+   * :ref:`X_634 <X_634>` = reflection of X_i in X_j for these (i,j): (:ref:`62 <X_62>`, :ref:`636 <X_636>`), (:ref:`61 <X_61>`, :ref:`635 <X_635>`)
+   * :ref:`X_634 <X_634>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3443
+   * :ref:`X_634 <X_634>` = anticomplement of :ref:`X_62 <X_62>`
+   * :ref:`X_634 <X_634>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X_628 <X_628>`
 
 .. toctree::
    :hidden:

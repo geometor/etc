@@ -1,18 +1,21 @@
-:canonical_id: X(969)
+:canonical_id: X_969
 :type: code
+:subtitle: INTERSECTION OF LINES X_10X_69 AND X_19X_81
 
-X(969) = INTERSECTION OF LINES X(10)X(69) AND X(19)X(81) — Code
-===============================================================
+X_969
+=====
+
+.. rubric:: INTERSECTION OF LINES X_10X_69 AND X_19X_81
 
 .. enunciation::
 
-   :ref:`X(969) <X(969)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(968) <X(968)>`
+   :ref:`X_969 <X_969>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_661 <X_661>`\ \ :ref:`X_905 <X_905>`
 
 .. figure:: x-00969.svg
-   :alt: X(969) = INTERSECTION OF LINES X(10)X(69) AND X(19)X(81)
+   :alt: X_969 — INTERSECTION OF LINES X_10X_69 AND X_19X_81
    :align: center
 
-   **X(969) = INTERSECTION OF LINES X(10)X(69) AND X(19)X(81)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_969** (*INTERSECTION OF LINES X_10X_69 AND X_19X_81*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

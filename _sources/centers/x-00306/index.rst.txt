@@ -1,22 +1,31 @@
 :order: 306
 :type: center
-:canonical_id: X(306)
-:dependencies: X(1), X(2), X(6), X(10), X(27), X(28), X(63), X(69), X(71), X(72), X(92), X(209), X(226), X(253), X(264), X(287), X(293), X(304), X(305), X(307), X(312), X(313), X(319), X(321), X(329), X(333), X(345), X(440), X(518), X(525), X(604), X(608), X(649), X(656), X(1043), X(1474), X(2206), X(3187), X(7649), X(8747)
+:canonical_id: X_306
+:subtitle: ISOTOMIC CONJUGATE OF X_27
+:dependencies: X_1, X_2, X_6, X_10, X_27, X_28, X_63, X_69, X_71, X_72, X_92, X_209, X_226, X_253, X_264, X_287, X_293, X_304, X_305, X_307, X_312, X_313, X_319, X_321, X_329, X_333, X_345, X_440, X_518, X_525, X_604, X_608, X_649, X_656, X_1043, X_1474, X_2206, X_3187, X_7649, X_8747
 
-.. _X(306):
+.. _X_306:
 
-X(306) = ISOTOMIC CONJUGATE OF X(27)
-====================================
+X_306
+=====
+
+.. rubric:: ISOTOMIC CONJUGATE OF X_27
 
 .. enunciation::
 
-   :ref:`X(306) <X(306)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(1474)
+   :ref:`X_306 <X_306>` is the :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_27 <X_27>`.
 
 .. figure:: x-00306.svg
-   :alt: X(306) = ISOTOMIC CONJUGATE OF X(27)
+   :alt: X_306 — ISOTOMIC CONJUGATE OF X_27
    :align: center
 
-   **X(306) = ISOTOMIC CONJUGATE OF X(27)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_306** (*ISOTOMIC CONJUGATE OF X_27*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 2} <{ 1, 2 }>`, :g:`{63, 69} <{ 63, 69 }>`
+   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_63 <X_63>` (:ref:`ISOGONAL CONJUGATE OF X(19) <X_63>`), :g:`X_69 <X_69>` (:ref:`SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE <X_69>`)
 
 .. signature:: center
 
@@ -28,23 +37,23 @@ X(306) = ISOTOMIC CONJUGATE OF X(27)
    :badge: 11 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`2 <X(2)>`}, {:ref:`27 <X(27)>`, 1043}, {:ref:`63 <X(63)>`, :ref:`69 <X(69)>`}, {:ref:`72 <X(72)>`, :ref:`440 <X(440)>`}, {:ref:`92 <X(92)>`, :ref:`264 <X(264)>`}, {:ref:`209 <X(209)>`, :ref:`518 <X(518)>`}, {:ref:`226 <X(226)>`, :ref:`321 <X(321)>`}, {:ref:`253 <X(253)>`, :ref:`329 <X(329)>`}, {:ref:`287 <X(287)>`, :ref:`293 <X(293)>`}, {:ref:`304 <X(304)>`, :ref:`305 <X(305)>`}, {:ref:`319 <X(319)>`, :ref:`333 <X(333)>`}
+   {:ref:`1 <X_1>`, :ref:`2 <X_2>`}, {:ref:`27 <X_27>`, 1043}, {:ref:`63 <X_63>`, :ref:`69 <X_69>`}, {:ref:`72 <X_72>`, :ref:`440 <X_440>`}, {:ref:`92 <X_92>`, :ref:`264 <X_264>`}, {:ref:`209 <X_209>`, :ref:`518 <X_518>`}, {:ref:`226 <X_226>`, :ref:`321 <X_321>`}, {:ref:`253 <X_253>`, :ref:`329 <X_329>`}, {:ref:`287 <X_287>`, :ref:`293 <X_293>`}, {:ref:`304 <X_304>`, :ref:`305 <X_305>`}, {:ref:`319 <X_319>`, :ref:`333 <X_333>`}
 
 .. collapse:: Functional Relations
    :badge: 12 relations
 
-   * :ref:`X(306) <X(306)>` = isogonal conjugate of X(1474)
-   * :ref:`X(306) <X(306)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(27) <X(27)>`
-   * :ref:`X(306) <X(306)>` = :term:`complement <complement>` of X(3187)
-   * :ref:`X(306) <X(306)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`69 <X(69)>`, :ref:`72 <X(72)>`), (:ref:`312 <X(312)>`, :ref:`321 <X(321)>`), (:ref:`313 <X(313)>`, :ref:`10 <X(10)>`)
-   * :ref:`X(306) <X(306)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`71 <X(71)>`, :ref:`10 <X(10)>`), (:ref:`72 <X(72)>`, :ref:`307 <X(307)>`), (:ref:`440 <X(440)>`, :ref:`2 <X(2)>`)
-   * :ref:`X(306) <X(306)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`69 <X(69)>`, :ref:`304 <X(304)>`), (:ref:`312 <X(312)>`, :ref:`345 <X(345)>`)
-   * :ref:`X(306) <X(306)>` = :term:`crosssum <crosssum>` of :ref:`X(604) <X(604)>` and :ref:`X(608) <X(608)>`
-   * :ref:`X(306) <X(306)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(525) <X(525)>`\ \ :ref:`X(656) <X(656)>`
-   * :ref:`X(306) <X(306)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X(8747) (line :ref:`X(649) <X(649)>`\ X(7649))
-   * :ref:`X(306) <X(306)>` = polar conjugate of X(8747)
-   * :ref:`X(306) <X(306)>` = :ref:`X(6) <X(6)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(28) <X(28)>`
-   * :ref:`X(306) <X(306)>` = :ref:`X(92) <X(92)>`-isoconjugate of X(2206)
+   * :ref:`X_306 <X_306>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_1474
+   * :ref:`X_306 <X_306>` = isotomic conjugate of :ref:`X_27 <X_27>`
+   * :ref:`X_306 <X_306>` = :term:`complement <complement>` of X_3187
+   * :ref:`X_306 <X_306>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`69 <X_69>`, :ref:`72 <X_72>`), (:ref:`312 <X_312>`, :ref:`321 <X_321>`), (:ref:`313 <X_313>`, :ref:`10 <X_10>`)
+   * :ref:`X_306 <X_306>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`71 <X_71>`, :ref:`10 <X_10>`), (:ref:`72 <X_72>`, :ref:`307 <X_307>`), (:ref:`440 <X_440>`, :ref:`2 <X_2>`)
+   * :ref:`X_306 <X_306>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`69 <X_69>`, :ref:`304 <X_304>`), (:ref:`312 <X_312>`, :ref:`345 <X_345>`)
+   * :ref:`X_306 <X_306>` = :term:`crosssum <crosssum>` of :ref:`X_604 <X_604>` and :ref:`X_608 <X_608>`
+   * :ref:`X_306 <X_306>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_525 <X_525>`\ \ :ref:`X_656 <X_656>`
+   * :ref:`X_306 <X_306>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X_8747 (line :ref:`X_649 <X_649>`\ X_7649)
+   * :ref:`X_306 <X_306>` = polar conjugate of X_8747
+   * :ref:`X_306 <X_306>` = :ref:`X_6 <X_6>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_28 <X_28>`
+   * :ref:`X_306 <X_306>` = :ref:`X_92 <X_92>`-isoconjugate of X_2206
 
 .. toctree::
    :hidden:

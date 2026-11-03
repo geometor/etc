@@ -1,22 +1,31 @@
 :order: 373
 :type: center
-:canonical_id: X(373)
-:dependencies: X(2), X(5), X(51), X(110), X(113), X(181), X(216), X(352), X(354), X(375), X(575), X(597), X(748), X(852), X(1499), X(2854), X(3917), X(11169), X(33842)
+:canonical_id: X_373
+:subtitle: CENTROID OF THE PEDAL TRIANGLE OF THE CENTROID
+:dependencies: X_2, X_5, X_51, X_110, X_113, X_181, X_216, X_352, X_354, X_375, X_575, X_597, X_748, X_852, X_1499, X_2854, X_3917, X_11169, X_33842
 
-.. _X(373):
+.. _X_373:
 
-X(373) = CENTROID OF THE PEDAL TRIANGLE OF THE CENTROID
-=======================================================
+X_373
+=====
+
+.. rubric:: CENTROID OF THE PEDAL TRIANGLE OF THE CENTROID
 
 .. enunciation::
 
-   :ref:`X(373) <X(373)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(11169)
+   :ref:`X_373 <X_373>` is the centroid of the :term:`pedal triangle <pedal-triangle>` of the centroid.
 
 .. figure:: x-00373.svg
-   :alt: X(373) = CENTROID OF THE PEDAL TRIANGLE OF THE CENTROID
+   :alt: X_373 — CENTROID OF THE PEDAL TRIANGLE OF THE CENTROID
    :align: center
 
-   **X(373) = CENTROID OF THE PEDAL TRIANGLE OF THE CENTROID** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_373** (*CENTROID OF THE PEDAL TRIANGLE OF THE CENTROID*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 51} <{ 2, 51 }>`, :g:`{5, 113} <{ 5, 113 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_51 <X_51>` (:ref:`CENTROID OF ORTHIC TRIANGLE <X_51>`), :g:`X_5 <X_5>` (:ref:`NINE-POINT CENTER <X_5>`), :g:`X_113 <X_113>` (:ref:`JERABEK ANTIPODE <X_113>`)
 
 .. signature:: center
 
@@ -32,21 +41,21 @@ X(373) = CENTROID OF THE PEDAL TRIANGLE OF THE CENTROID
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(373) <X(373)>` = :math:`2` :ref:`X(2) <X(2)>` + :ref:`X(51) <X(51)>`
+   * :ref:`X_373 <X_373>` = :math:`2` :ref:`X_2 <X_2>` + :ref:`X_51 <X_51>`
 
 .. collapse:: Incident Central Lines
    :badge: 7 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`51 <X(51)>`}, {:ref:`5 <X(5)>`, :ref:`113 <X(113)>`}, {:ref:`110 <X(110)>`, :ref:`575 <X(575)>`}, {:ref:`181 <X(181)>`, :ref:`748 <X(748)>`}, {:ref:`216 <X(216)>`, :ref:`852 <X(852)>`}, {:ref:`354 <X(354)>`, :ref:`375 <X(375)>`}, {:ref:`597 <X(597)>`, 2854}
+   {:ref:`2 <X_2>`, :ref:`51 <X_51>`}, {:ref:`5 <X_5>`, :ref:`113 <X_113>`}, {:ref:`110 <X_110>`, :ref:`575 <X_575>`}, {:ref:`181 <X_181>`, :ref:`748 <X_748>`}, {:ref:`216 <X_216>`, :ref:`852 <X_852>`}, {:ref:`354 <X_354>`, :ref:`375 <X_375>`}, {:ref:`597 <X_597>`, 2854}
 
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X(373) <X(373)>` = isogonal conjugate of X(11169)
-   * :ref:`X(373) <X(373)>` = :term:`isotomic conjugate <isotomic-conjugate>` of polar conjugate of X(33842)
-   * :ref:`X(373) <X(373)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(352) <X(352)>`\ X(1499)
-   * :ref:`X(373) <X(373)>` = {:ref:`X(2) <X(2)>`,\ :ref:`X(51) <X(51)>`}-harmonic conjugate of X(3917)
+   * :ref:`X_373 <X_373>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_11169
+   * :ref:`X_373 <X_373>` = :term:`isotomic conjugate <isotomic-conjugate>` of polar conjugate of X_33842
+   * :ref:`X_373 <X_373>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_352 <X_352>`\ X_1499
+   * :ref:`X_373 <X_373>` = {:ref:`X_2 <X_2>`,\ :ref:`X_51 <X_51>`}-harmonic conjugate of X_3917
 
 .. toctree::
    :hidden:

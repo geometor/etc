@@ -1,18 +1,21 @@
-:canonical_id: X(377)
+:canonical_id: X_377
 :type: code
+:subtitle: EULER LINE INTERCEPT OF LINE X_7X_8
 
-X(377) = EULER LINE INTERCEPT OF LINE X(7)X(8) — Code
-=====================================================
+X_377
+=====
+
+.. rubric:: EULER LINE INTERCEPT OF LINE X_7X_8
 
 .. enunciation::
 
-   :ref:`X(377) <X(377)>` is the {:ref:`X(3) <X(3)>`,\ :ref:`X(20) <X(20)>`}-harmonic conjugate of :ref:`X(21) <X(21)>`.
+   :ref:`X_377 <X_377>` is the {:ref:`X_3 <X_3>`,\ :ref:`X_20 <X_20>`}-harmonic conjugate of :ref:`X_21 <X_21>`.
 
 .. figure:: x-00377.svg
-   :alt: X(377) = EULER LINE INTERCEPT OF LINE X(7)X(8)
+   :alt: X_377 — EULER LINE INTERCEPT OF LINE X_7X_8
    :align: center
 
-   **X(377) = EULER LINE INTERCEPT OF LINE X(7)X(8)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_377** (*EULER LINE INTERCEPT OF LINE X_7X_8*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

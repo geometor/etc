@@ -1,22 +1,31 @@
 :order: 745
 :type: center
-:canonical_id: X(745)
-:dependencies: X(31), X(38), X(75), X(99), X(689), X(744), X(827), X(35546)
+:canonical_id: X_745
+:subtitle: EVEN (- 1, 3) CIRCUMCIRCLE POINT
+:dependencies: X_31, X_38, X_75, X_99, X_689, X_744, X_827, X_35546
 
-.. _X(745):
+.. _X_745:
 
-X(745) = EVEN (- 1, 3) CIRCUMCIRCLE POINT
-=========================================
+X_745
+=====
+
+.. rubric:: EVEN (- 1, 3) CIRCUMCIRCLE POINT
 
 .. enunciation::
 
-   :ref:`X(745) <X(745)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(744) <X(744)>`
+   :ref:`X_745 <X_745>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_744 <X_744>`
 
 .. figure:: x-00745.svg
-   :alt: X(745) = EVEN (- 1, 3) CIRCUMCIRCLE POINT
+   :alt: X_745 — EVEN (- 1, 3) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(745) = EVEN (- 1, 3) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_745** (*EVEN (- 1, 3) CIRCUMCIRCLE POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{38, 99} <{ 38, 99 }>`, :g:`{75, 689} <{ 75, 689 }>`
+   * **Related Centers:** :g:`X_744 <X_744>` (:ref:`EVEN (- 1, 3) INFINITY POINT <X_744>`), :g:`X_38 <X_38>` (:ref:`CROSSPOINT OF X(1) AND X(75) <X_38>`), :g:`X_99 <X_99>` (:ref:`STEINER POINT <X_99>`), :g:`X_75 <X_75>` (:ref:`ISOTOMIC CONJUGATE OF INCENTER <X_75>`), :g:`X_689 <X_689>` (:ref:`TRILINEAR POLE OF LINE X(6)X(76) <X_689>`)
 
 .. signature:: center
 
@@ -26,19 +35,19 @@ X(745) = EVEN (- 1, 3) CIRCUMCIRCLE POINT
 
 .. container:: note-item
 
-   :ref:`X(745) <X(745)>` lies on the circumcircle.
+   :ref:`X_745 <X_745>` lies on the circumcircle.
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines
    :class: line-catalog
 
-   {:ref:`31 <X(31)>`, :ref:`827 <X(827)>`}, {:ref:`38 <X(38)>`, :ref:`99 <X(99)>`}, {:ref:`75 <X(75)>`, :ref:`689 <X(689)>`}
+   {:ref:`31 <X_31>`, :ref:`827 <X_827>`}, {:ref:`38 <X_38>`, :ref:`99 <X_99>`}, {:ref:`75 <X_75>`, :ref:`689 <X_689>`}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(745) <X(745)>` = isogonal conjugate of :ref:`X(744) <X(744)>`
-   * :ref:`X(745) <X(745)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(35546)
+   * :ref:`X_745 <X_745>` = isogonal conjugate of :ref:`X_744 <X_744>`
+   * :ref:`X_745 <X_745>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_35546
 
 .. toctree::
    :hidden:

@@ -1,18 +1,21 @@
-:canonical_id: X(363)
+:canonical_id: X_363
 :type: code
+:subtitle: EQUAL PERIMETERS ISOSCELIZER POINT
 
-X(363) = EQUAL PERIMETERS ISOSCELIZER POINT — Code
-==================================================
+X_363
+=====
+
+.. rubric:: EQUAL PERIMETERS ISOSCELIZER POINT
 
 .. enunciation::
 
-   If :g:`X <X>` = :ref:`X(363) <X(363)>`, the :term:`isoscelizer <isoscelizer>` triangles of X have equal perimeters.
+   If :g:`X <X>` = :ref:`X_363 <X_363>`, the :term:`isoscelizer <isoscelizer>` triangles of X have equal perimeters.
 
 .. figure:: x-00363.svg
-   :alt: X(363) = EQUAL PERIMETERS ISOSCELIZER POINT
+   :alt: X_363 — EQUAL PERIMETERS ISOSCELIZER POINT
    :align: center
 
-   **X(363) = EQUAL PERIMETERS ISOSCELIZER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_363** (*EQUAL PERIMETERS ISOSCELIZER POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

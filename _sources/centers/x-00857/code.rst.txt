@@ -1,18 +1,21 @@
-:canonical_id: X(857)
+:canonical_id: X_857
 :type: code
+:subtitle: INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X_75
 
-X(857) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(75) — Code
-====================================================================
+X_857
+=====
+
+.. rubric:: INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X_75
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(857) <X(857)>` has Shinagawa coefficients :math:`(\$aS_{B}S_{C}\$, - \$a\$S^{2})`.
+   :ref:`X_857 <X_857>` = inverse-in-orthocentroidal-circle of :ref:`X_379 <X_379>`
 
 .. figure:: x-00857.svg
-   :alt: X(857) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(75)
+   :alt: X_857 — INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X_75
    :align: center
 
-   **X(857) = INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X(75)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_857** (*INTERCEPT OF EULER LINE AND TRILINEAR POLAR OF X_75*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

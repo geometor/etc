@@ -1,23 +1,32 @@
 :order: 365
 :type: center
-:canonical_id: X(365)
-:dependencies: X(1), X(2), X(6), X(43), X(292), X(364), X(366), X(2068), X(2110), X(2118), X(2119), X(2144), X(2146), X(2147), X(20334), X(20346)
+:canonical_id: X_365
+:subtitle: SQUARE ROOT POINT
+:dependencies: X_1, X_2, X_6, X_43, X_292, X_364, X_366, X_2068, X_2110, X_2118, X_2119, X_2144, X_2146, X_2147, X_20334, X_20346
 
-.. _X(365):
+.. _X_365:
 .. _SquareRootPoint:
 
-X(365) = SQUARE ROOT POINT
-==========================
+X_365
+=====
+
+.. rubric:: SQUARE ROOT POINT
 
 .. enunciation::
 
-   For a construction of :ref:`X(365) <X(365)>`, see the note at :ref:`X(2) <X(2)>`, which provides for a construction barycentric square roots which one can easily extend to a construction for trilinear square roots.
+   For a construction of :ref:`X_365 <X_365>`, see the note at :ref:`X_2 <X_2>`, which provides for a construction barycentric square roots which one can easily extend to a construction for trilinear square roots.
 
 .. figure:: x-00365.svg
-   :alt: X(365) = SQUARE ROOT POINT
+   :alt: X_365 — SQUARE ROOT POINT
    :align: center
 
-   **X(365) = SQUARE ROOT POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_365** (*SQUARE ROOT POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 364} <{ 1, 364 }>`
+   * **Related Centers:** :g:`X_366 <X_366>` (:ref:`ISOGONAL CONJUGATE OF X(365) <X_366>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_364 <X_364>` (:ref:`WABASH CENTER <X_364>`)
 
 .. signature:: center
 
@@ -29,16 +38,16 @@ X(365) = SQUARE ROOT POINT
    :badge: 6 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`364 <X(364)>`}, {:ref:`6 <X(6)>`, 2118}, {:ref:`43 <X(43)>`, 2068}, {:ref:`292 <X(292)>`, 2146}, {2110, 2119}, {2144, 2147}
+   {:ref:`1 <X_1>`, :ref:`364 <X_364>`}, {:ref:`6 <X_6>`, 2118}, {:ref:`43 <X_43>`, 2068}, {:ref:`292 <X_292>`, 2146}, {2110, 2119}, {2144, 2147}
 
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X(365) <X(365)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(366) <X(366)>`
-   * :ref:`X(365) <X(365)>` = :term:`complement <complement>` of X(20346)
-   * :ref:`X(365) <X(365)>` = :term:`anticomplement <anticomplement>` of X(20334)
-   * :ref:`X(365) <X(365)>` = :term:`crosssum <crosssum>` of :ref:`X(1) <X(1)>` and :ref:`X(364) <X(364)>`
-   * :ref:`X(365) <X(365)>` = trilinear square root of :ref:`X(6) <X(6)>`
+   * :ref:`X_365 <X_365>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_366 <X_366>`
+   * :ref:`X_365 <X_365>` = :term:`complement <complement>` of X_20346
+   * :ref:`X_365 <X_365>` = :term:`anticomplement <anticomplement>` of X_20334
+   * :ref:`X_365 <X_365>` = :term:`crosssum <crosssum>` of :ref:`X_1 <X_1>` and :ref:`X_364 <X_364>`
+   * :ref:`X_365 <X_365>` = trilinear square root of :ref:`X_6 <X_6>`
 
 .. toctree::
    :hidden:

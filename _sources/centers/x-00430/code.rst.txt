@@ -1,18 +1,21 @@
-:canonical_id: X(430)
+:canonical_id: X_430
 :type: code
+:subtitle: EULER X_81-5th-SUBSTITUTION POINT
 
-X(430) = EULER X(81)-5th-SUBSTITUTION POINT — Code
-==================================================
+X_430
+=====
+
+.. rubric:: EULER X_81-5th-SUBSTITUTION POINT
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(430) <X(430)>` has Shinagawa coefficients :math:`(F,2\$bc\$ + E + F)`.
+   :ref:`X_430 <X_430>` = tangential-to-orthic :term:`similarity image <similarity-image>` of :ref:`X_199 <X_199>`
 
 .. figure:: x-00430.svg
-   :alt: X(430) = EULER X(81)-5th-SUBSTITUTION POINT
+   :alt: X_430 — EULER X_81-5th-SUBSTITUTION POINT
    :align: center
 
-   **X(430) = EULER X(81)-5th-SUBSTITUTION POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_430** (*EULER X_81-5th-SUBSTITUTION POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

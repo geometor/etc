@@ -1,22 +1,31 @@
 :order: 496
 :type: center
-:canonical_id: X(496)
-:dependencies: X(1), X(2), X(3), X(4), X(5), X(30), X(35), X(36), X(55), X(56), X(140), X(149), X(202), X(203), X(235), X(381), X(388), X(390), X(397), X(398), X(404), X(495), X(497), X(549), X(550), X(613), X(614), X(631), X(942), X(946), X(999), X(1058), X(1062), X(1069)
+:canonical_id: X_496
+:subtitle: {X_1,X_5}-HARMONIC CONJUGATE OF X_495
+:dependencies: X_1, X_2, X_3, X_4, X_5, X_30, X_35, X_36, X_55, X_56, X_140, X_149, X_202, X_203, X_235, X_381, X_388, X_390, X_397, X_398, X_404, X_497, X_549, X_550, X_613, X_614, X_631, X_942, X_946, X_999, X_1058, X_1062, X_1069
 
-.. _X(496):
+.. _X_496:
 
-X(496) = {X(1),X(5)}-HARMONIC CONJUGATE OF X(495)
-=================================================
+X_496
+=====
+
+.. rubric:: {X_1,X_5}-HARMONIC CONJUGATE OF X_495
 
 .. enunciation::
 
-   :ref:`X(496) <X(496)>` = :ref:`X(235) <X(235)>`-of-Fuhrmann-triangle
+   :ref:`X_496 <X_496>` is the {:ref:`X_1 <X_1>`,\ :ref:`X_5 <X_5>`}-harmonic conjugate of :ref:`X_495 <X_495>`.
 
 .. figure:: x-00496.svg
-   :alt: X(496) = {X(1),X(5)}-HARMONIC CONJUGATE OF X(495)
+   :alt: X_496 — {X_1,X_5}-HARMONIC CONJUGATE OF X_495
    :align: center
 
-   **X(496) = {X(1),X(5)}-HARMONIC CONJUGATE OF X(495)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_496** (*{X_1,X_5}-HARMONIC CONJUGATE OF X_495*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 5} <{ 1, 5 }>`, :g:`{30, 56} <{ 30, 56 }>`
+   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_5 <X_5>` (:ref:`NINE-POINT CENTER <X_5>`), :g:`X_30 <X_30>` (:ref:`EULER INFINITY POINT <X_30>`), :g:`X_56 <X_56>` (:ref:`EXSIMILICENTER <X_56>`)
 
 .. signature:: center
 
@@ -27,27 +36,27 @@ X(496) = {X(1),X(5)}-HARMONIC CONJUGATE OF X(495)
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X(496) <X(496)>` = :math:`2(R/r)` :ref:`X(1) <X(1)>` - :math:`3` :ref:`X(2) <X(2)>` + :ref:`X(3) <X(3)>`
+   * :ref:`X_496 <X_496>` = :math:`2(R/r)` :ref:`X_1 <X_1>` - :math:`3` :ref:`X_2 <X_2>` + :ref:`X_3 <X_3>`
 
 .. collapse:: Incident Central Lines
    :badge: 16 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`5 <X(5)>`}, {:ref:`2 <X(2)>`, 1058}, {:ref:`3 <X(3)>`, :ref:`497 <X(497)>`}, {:ref:`4 <X(4)>`, :ref:`999 <X(999)>`}, {:ref:`30 <X(30)>`, :ref:`56 <X(56)>`}, {:ref:`35 <X(35)>`, :ref:`549 <X(549)>`}, {:ref:`36 <X(36)>`, :ref:`550 <X(550)>`}, {:ref:`55 <X(55)>`, :ref:`140 <X(140)>`}, {:ref:`149 <X(149)>`, :ref:`404 <X(404)>`}, {:ref:`202 <X(202)>`, :ref:`397 <X(397)>`}, {:ref:`203 <X(203)>`, :ref:`398 <X(398)>`}, {:ref:`381 <X(381)>`, :ref:`388 <X(388)>`}, {:ref:`390 <X(390)>`, :ref:`631 <X(631)>`}, {:ref:`613 <X(613)>`, 1069}, {:ref:`614 <X(614)>`, 1062}, {:ref:`942 <X(942)>`, :ref:`946 <X(946)>`}
+   {:ref:`1 <X_1>`, :ref:`5 <X_5>`}, {:ref:`2 <X_2>`, 1058}, {:ref:`3 <X_3>`, :ref:`497 <X_497>`}, {:ref:`4 <X_4>`, :ref:`999 <X_999>`}, {:ref:`30 <X_30>`, :ref:`56 <X_56>`}, {:ref:`35 <X_35>`, :ref:`549 <X_549>`}, {:ref:`36 <X_36>`, :ref:`550 <X_550>`}, {:ref:`55 <X_55>`, :ref:`140 <X_140>`}, {:ref:`149 <X_149>`, :ref:`404 <X_404>`}, {:ref:`202 <X_202>`, :ref:`397 <X_397>`}, {:ref:`203 <X_203>`, :ref:`398 <X_398>`}, {:ref:`381 <X_381>`, :ref:`388 <X_388>`}, {:ref:`390 <X_390>`, :ref:`631 <X_631>`}, {:ref:`613 <X_613>`, 1069}, {:ref:`614 <X_614>`, 1062}, {:ref:`942 <X_942>`, :ref:`946 <X_946>`}
 
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X(496) <X(496)>` = :ref:`X(235) <X(235)>`-of-Fuhrmann-triangle
-   * :ref:`X(496) <X(496)>` = center of inverse-in-incircle-of-nine-point-circle
-   * :ref:`X(496) <X(496)>` = Ursa-major-to-Ursa-minor :term:`similarity image <similarity-image>` of :ref:`X(5) <X(5)>`
+   * :ref:`X_496 <X_496>` = :ref:`X_235 <X_235>`-of-Fuhrmann-triangle
+   * :ref:`X_496 <X_496>` = center of inverse-in-incircle-of-nine-point-circle
+   * :ref:`X_496 <X_496>` = Ursa-major-to-Ursa-minor :term:`similarity image <similarity-image>` of :ref:`X_5 <X_5>`
 
 Notes
 -----
 
 .. container:: note-item
 
-   **Peter Yff,** "Three concurrent congruent circles 'inscribed' in a triangle," manuscript, 1998; :ref:`X(496) <X(496)>` is the point R' on page 5.
+   **Peter Yff,** "Three concurrent congruent circles 'inscribed' in a triangle," manuscript, 1998; :ref:`X_496 <X_496>` is the point :g:`R' <R'>` on page 5.
 
 .. toctree::
    :hidden:

@@ -1,22 +1,31 @@
 :order: 643
 :type: center
-:canonical_id: X(643)
-:dependencies: X(8), X(9), X(21), X(99), X(100), X(101), X(109), X(110), X(162), X(163), X(190), X(212), X(283), X(312), X(931), X(1018), X(1043), X(1098), X(4017), X(4077)
+:canonical_id: X_643
+:subtitle: TRILINEAR MULTIPLIER FOR KIEPERT PARABOLA
+:dependencies: X_8, X_9, X_21, X_99, X_100, X_101, X_109, X_110, X_162, X_163, X_190, X_212, X_283, X_312, X_931, X_1018, X_1043, X_1098, X_4017, X_4077
 
-.. _X(643):
+.. _X_643:
 
-X(643) = TRILINEAR MULTIPLIER FOR KIEPERT PARABOLA
-==================================================
+X_643
+=====
+
+.. rubric:: TRILINEAR MULTIPLIER FOR KIEPERT PARABOLA
 
 .. enunciation::
 
-   :ref:`X(643) <X(643)>` satisfies the equation :g:`X* <X*>`\ (incircle) = Kiepert parabola, where \* denotes trilinear multiplication, defined by
+   :ref:`X_643 <X_643>` satisfies the equation :g:`X* <X*>`\ (incircle) = Kiepert parabola, where \* denotes trilinear multiplication, defined by
 
 .. figure:: x-00643.svg
-   :alt: X(643) = TRILINEAR MULTIPLIER FOR KIEPERT PARABOLA
+   :alt: X_643 — TRILINEAR MULTIPLIER FOR KIEPERT PARABOLA
    :align: center
 
-   **X(643) = TRILINEAR MULTIPLIER FOR KIEPERT PARABOLA** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_643** (*TRILINEAR MULTIPLIER FOR KIEPERT PARABOLA*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{99, 109} <{ 99, 109 }>`, :g:`{100, 110} <{ 100, 110 }>`
+   * **Related Centers:** :g:`X_99 <X_99>` (:ref:`STEINER POINT <X_99>`), :g:`X_109 <X_109>` (:ref:`Ψ(INCENTER, CIRCUMCENTER) <X_109>`), :g:`X_100 <X_100>` (:ref:`ANTICOMPLEMENT OF FEUERBACH POINT <X_100>`), :g:`X_110 <X_110>` (:ref:`FOCUS OF KIEPERT PARABOLA <X_110>`)
 
 .. signature:: center
 
@@ -28,14 +37,14 @@ X(643) = TRILINEAR MULTIPLIER FOR KIEPERT PARABOLA
    :badge: 8 lines
    :class: line-catalog
 
-   {:ref:`8 <X(8)>`, 1098}, {:ref:`99 <X(99)>`, :ref:`109 <X(109)>`}, {:ref:`100 <X(100)>`, :ref:`110 <X(110)>`}, {:ref:`101 <X(101)>`, :ref:`931 <X(931)>`}, {:ref:`162 <X(162)>`, :ref:`190 <X(190)>`}, {:ref:`163 <X(163)>`, 1018}, {:ref:`212 <X(212)>`, :ref:`312 <X(312)>`}, {:ref:`283 <X(283)>`, 1043}
+   {:ref:`8 <X_8>`, 1098}, {:ref:`99 <X_99>`, :ref:`109 <X_109>`}, {:ref:`100 <X_100>`, :ref:`110 <X_110>`}, {:ref:`101 <X_101>`, :ref:`931 <X_931>`}, {:ref:`162 <X_162>`, :ref:`190 <X_190>`}, {:ref:`163 <X_163>`, 1018}, {:ref:`212 <X_212>`, :ref:`312 <X_312>`}, {:ref:`283 <X_283>`, 1043}
 
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X(643) <X(643)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(4017)
-   * :ref:`X(643) <X(643)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(4077)
-   * :ref:`X(643) <X(643)>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X(9) <X(9)>`\ \ :ref:`X(21) <X(21)>`
+   * :ref:`X_643 <X_643>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_4017
+   * :ref:`X_643 <X_643>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_4077
+   * :ref:`X_643 <X_643>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_9 <X_9>`\ \ :ref:`X_21 <X_21>`
 
 Notes
 -----

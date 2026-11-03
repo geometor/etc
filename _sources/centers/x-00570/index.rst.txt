@@ -1,22 +1,32 @@
 :order: 570
 :type: center
-:canonical_id: X(570)
-:dependencies: X(2), X(3), X(5), X(6), X(39), X(52), X(53), X(54), X(63), X(71), X(115), X(128), X(140), X(157), X(184), X(231), X(232), X(311), X(523), X(571), X(1179), X(1209), X(1216), X(2070), X(5421), X(23195)
+:canonical_id: X_570
+:subtitle: ORTHOGONAL OF X_52
+:dependencies: X_2, X_3, X_5, X_6, X_39, X_53, X_54, X_63, X_71, X_115, X_128, X_140, X_157, X_184, X_231, X_232, X_311, X_523, X_571, X_1179, X_1209, X_1216, X_2070, X_5421, X_23195
 
-.. _X(570):
+.. _X_570:
 
-X(570) = ORTHOGONAL OF X(52)
-============================
+X_570
+=====
+
+.. rubric:: ORTHOGONAL OF X_52
 
 .. enunciation::
 
-   :ref:`X(570) <X(570)>` = inverse-in-Brocard-circle of :ref:`X(571) <X(571)>`
+   :ref:`X_570 <X_570>` = inverse-in-Brocard-circle of :ref:`X_571 <X_571>`
 
 .. figure:: x-00570.svg
-   :alt: X(570) = ORTHOGONAL OF X(52)
+   :alt: X_570 — ORTHOGONAL OF X_52
    :align: center
 
-   **X(570) = ORTHOGONAL OF X(52)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_570** (*ORTHOGONAL OF X_52*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Derived Triangle:** :term:`Medial Triangle <medial triangle>` :g:`△M_aM_bM_c << M_a M_b M_c >>` — vertices :g:`M_a <M_a>`, :g:`M_b <M_b>`, :g:`M_c <M_c>` (Formed by the midpoints of sides BC, CA, AB)
+   * **Central Lines:** :g:`{2, 311} <{ 2, 311 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_311 <X_311>` (:ref:`ISOTOMIC CONJUGATE OF X(54) <X_311>`)
 
 .. signature:: center
 
@@ -32,24 +42,24 @@ X(570) = ORTHOGONAL OF X(52)
    :badge: 6 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`311 <X(311)>`}, {:ref:`3 <X(3)>`, :ref:`6 <X(6)>`}, {:ref:`53 <X(53)>`, :ref:`232 <X(232)>`}, {:ref:`115 <X(115)>`, :ref:`128 <X(128)>`}, {:ref:`140 <X(140)>`, :ref:`231 <X(231)>`}, {:ref:`157 <X(157)>`, :ref:`184 <X(184)>`}
+   {:ref:`2 <X_2>`, :ref:`311 <X_311>`}, {:ref:`3 <X_3>`, :ref:`6 <X_6>`}, {:ref:`53 <X_53>`, :ref:`232 <X_232>`}, {:ref:`115 <X_115>`, :ref:`128 <X_128>`}, {:ref:`140 <X_140>`, :ref:`231 <X_231>`}, {:ref:`157 <X_157>`, :ref:`184 <X_184>`}
 
 .. collapse:: Functional Relations
    :badge: 13 relations
 
-   * :ref:`X(570) <X(570)>` = inverse-in-Brocard-circle of :ref:`X(571) <X(571)>`
-   * :ref:`X(570) <X(570)>` = :term:`complement <complement>` of :ref:`X(311) <X(311)>`
-   * :ref:`X(570) <X(570)>` = :term:`crosspoint <crosspoint>` of :ref:`X(2) <X(2)>` and :ref:`X(54) <X(54)>`
-   * :ref:`X(570) <X(570)>` = :term:`crosssum <crosssum>` of :ref:`X(5) <X(5)>` and :ref:`X(6) <X(6)>`
-   * :ref:`X(570) <X(570)>` = :ref:`X(71) <X(71)>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
-   * :ref:`X(570) <X(570)>` = {:ref:`X(6) <X(6)>`,\ :ref:`X(39) <X(39)>`}-harmonic conjugate of X(5421)
-   * :ref:`X(570) <X(570)>` = perspector of circumconic centered at X(1209)
-   * :ref:`X(570) <X(570)>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through X(1209)
-   * :ref:`X(570) <X(570)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(1209)
-   * :ref:`X(570) <X(570)>` = polar conjugate of :term:`isogonal conjugate <isogonal-conjugate>` of X(23195)
-   * :ref:`X(570) <X(570)>` = polar conjugate of :term:`isotomic conjugate <isotomic-conjugate>` of X(1216)
-   * :ref:`X(570) <X(570)>` = :ref:`X(63) <X(63)>`-:term:`isoconjugate <isoconjugate>` of X(1179)
-   * :ref:`X(570) <X(570)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(523) <X(523)>`\ X(2070) (the polar of :ref:`X(5) <X(5)>` wrt the circumcircle)
+   * :ref:`X_570 <X_570>` = inverse-in-Brocard-circle of :ref:`X_571 <X_571>`
+   * :ref:`X_570 <X_570>` = :term:`complement <complement>` of :ref:`X_311 <X_311>`
+   * :ref:`X_570 <X_570>` = :term:`crosspoint <crosspoint>` of :ref:`X_2 <X_2>` and :ref:`X_54 <X_54>`
+   * :ref:`X_570 <X_570>` = :term:`crosssum <crosssum>` of :ref:`X_5 <X_5>` and :ref:`X_6 <X_6>`
+   * :ref:`X_570 <X_570>` = :ref:`X_71 <X_71>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
+   * :ref:`X_570 <X_570>` = {:ref:`X_6 <X_6>`,\ :ref:`X_39 <X_39>`}-harmonic conjugate of X_5421
+   * :ref:`X_570 <X_570>` = perspector of circumconic centered at X_1209
+   * :ref:`X_570 <X_570>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through X_1209
+   * :ref:`X_570 <X_570>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of X_1209
+   * :ref:`X_570 <X_570>` = polar conjugate of :term:`isogonal conjugate <isogonal-conjugate>` of X_23195
+   * :ref:`X_570 <X_570>` = polar conjugate of :term:`isotomic conjugate <isotomic-conjugate>` of X_1216
+   * :ref:`X_570 <X_570>` = :ref:`X_63 <X_63>`-:term:`isoconjugate <isoconjugate>` of X_1179
+   * :ref:`X_570 <X_570>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_523 <X_523>`\ X_2070 (the polar of :ref:`X_5 <X_5>` wrt the circumcircle)
 
 .. toctree::
    :hidden:

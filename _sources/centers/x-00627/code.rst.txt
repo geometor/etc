@@ -1,18 +1,21 @@
-:canonical_id: X(627)
+:canonical_id: X_627
 :type: code
+:subtitle: ANTICOMPLEMENT OF X_17
 
-X(627) = ANTICOMPLEMENT OF X(17) — Code
-=======================================
+X_627
+=====
+
+.. rubric:: ANTICOMPLEMENT OF X_17
 
 .. enunciation::
 
-   Erect equilateral triangles outwards on the sides of triangle :g:`ABC << A B C >>`; the circumcenter of the apices is :ref:`X(627) <X(627)>`. (:person:`Peter Moses <peter-moses>`, 7/16,2003)
+   :ref:`X_627 <X_627>` is the :term:`anticomplement <anticomplement>` of :ref:`X_17 <X_17>`.
 
 .. figure:: x-00627.svg
-   :alt: X(627) = ANTICOMPLEMENT OF X(17)
+   :alt: X_627 — ANTICOMPLEMENT OF X_17
    :align: center
 
-   **X(627) = ANTICOMPLEMENT OF X(17)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_627** (*ANTICOMPLEMENT OF X_17*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

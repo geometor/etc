@@ -1,18 +1,21 @@
-:canonical_id: X(61)
+:canonical_id: X_61
 :type: code
+:subtitle: ISOGONAL CONJUGATE OF X_17
 
-X(61) = ISOGONAL CONJUGATE OF X(17) — Code
-==========================================
+X_61
+====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_17
 
 .. enunciation::
 
-   :ref:`X(61) <X(61)>` is the {:ref:`X(3) <X(3)>`,\ :ref:`X(6) <X(6)>`}-harmonic conjugate of :ref:`X(62) <X(62)>`.
+   :ref:`X_61 <X_61>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_17 <X_17>`.
 
 .. figure:: x-00061.svg
-   :alt: X(61) = ISOGONAL CONJUGATE OF X(17)
+   :alt: X_61 — ISOGONAL CONJUGATE OF X_17
    :align: center
 
-   **X(61) = ISOGONAL CONJUGATE OF X(17)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_61** (*ISOGONAL CONJUGATE OF X_17*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

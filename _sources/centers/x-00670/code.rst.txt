@@ -1,18 +1,21 @@
-:canonical_id: X(670)
+:canonical_id: X_670
 :type: code
+:subtitle: TRILINEAR POLE OF LINE X_2X_39
 
-X(670) = TRILINEAR POLE OF LINE X(2)X(39) — Code
-================================================
+X_670
+=====
+
+.. rubric:: TRILINEAR POLE OF LINE X_2X_39
 
 .. enunciation::
 
-   :ref:`X(670) <X(670)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(669) <X(669)>`
+   :ref:`X_670 <X_670>` = :term:`trilinear pole <trilinear-pole>` of line {2, 39}
 
 .. figure:: x-00670.svg
-   :alt: X(670) = TRILINEAR POLE OF LINE X(2)X(39)
+   :alt: X_670 — TRILINEAR POLE OF LINE X_2X_39
    :align: center
 
-   **X(670) = TRILINEAR POLE OF LINE X(2)X(39)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_670** (*TRILINEAR POLE OF LINE X_2X_39*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

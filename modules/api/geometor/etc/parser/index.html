@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=69acf51f" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=66998e95" />
   <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -89,6 +89,34 @@
         </div>
       </header>
       <div class="content body book-content" role="main">
+        <style id="etc-heading-styles">
+        .book-reading-pane .book-content h1,
+        .folio-book-page h1 {
+            position: relative;
+            text-align: center !important;
+            text-indent: 0 !important;
+            margin-bottom: 0.35rem !important;
+        }
+        .book-reading-pane .book-content h1 a.headerlink,
+        .book-reading-pane .book-content h2 a.headerlink,
+        .folio-book-page h1 a.headerlink,
+        .folio-book-page h2 a.headerlink {
+            position: absolute;
+        }
+        .book-reading-pane .book-content p.rubric,
+        .folio-book-page p.rubric {
+            font-style: normal !important;
+            font-weight: 700 !important;
+            text-align: center !important;
+            text-indent: 0 !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            margin-top: 0 !important;
+            margin-bottom: 1.4rem !important;
+        }
+        </style>
         <section class="level-1" id="module-geometor.etc.parser">
         <span id="geometor-etc-parser"></span><h1>geometor.etc.parser<a class="headerlink" href="#module-geometor.etc.parser" title="Link to this heading">¶</a></h1>
         <p>Semantic HTML parser for Encyclopedia of Triangle Centers (ETC) entries and preambles.</p>
@@ -96,25 +124,25 @@
         <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
         <table class="autosummary longtable docutils align-default">
         <tbody>
-        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.parser.remove_tags" title="geometor.etc.parser.remove_tags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">remove_tags</span></code></a>(→ str)</p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.parser.remove_tags" title="geometor.etc.parser.remove_tags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">remove_tags</span></code></a>(text) → str</p></td>
         <td><p>Remove HTML tags from text.</p></td>
         </tr>
-        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.parser.clean_text" title="geometor.etc.parser.clean_text"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clean_text</span></code></a>(→ str)</p></td>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.parser.clean_text" title="geometor.etc.parser.clean_text"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clean_text</span></code></a>(text) → str</p></td>
         <td><p>Clean up inline HTML text into single-line RST-safe text.</p></td>
         </tr>
-        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.parser.format_coordinate_line" title="geometor.etc.parser.format_coordinate_line"><code class="xref py py-obj docutils literal notranslate"><span class="pre">format_coordinate_line</span></code></a>(→ str)</p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.parser.format_coordinate_line" title="geometor.etc.parser.format_coordinate_line"><code class="xref py py-obj docutils literal notranslate"><span class="pre">format_coordinate_line</span></code></a>(coord_html) → str</p></td>
         <td><p>Format a single coordinate line (possibly with a trailing ', where ...' clause) into RST.</p></td>
         </tr>
-        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.parser.format_combination_line" title="geometor.etc.parser.format_combination_line"><code class="xref py py-obj docutils literal notranslate"><span class="pre">format_combination_line</span></code></a>(→ str)</p></td>
-        <td><p>Format a linear combination line (e.g., <cite>X(6) = (r^2 + s^2 + 2rR)*X(2) - 2r^2*X(3)</cite>) into RST.</p></td>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.parser.format_combination_line" title="geometor.etc.parser.format_combination_line"><code class="xref py py-obj docutils literal notranslate"><span class="pre">format_combination_line</span></code></a>(comb_html) → str</p></td>
+        <td><p>Format a linear combination line (e.g., <cite>X<sub>6</sub> = (r^2 + s^2 + 2rR)*X<sub>2</sub> - 2r^2*X<sub>3</sub></cite>) into RST.</p></td>
         </tr>
-        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.parser.parse_h3" title="geometor.etc.parser.parse_h3"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_h3</span></code></a>(→ dict[str, Any] | None)</p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.parser.parse_h3" title="geometor.etc.parser.parse_h3"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_h3</span></code></a>(html_content) → dict[str, Any] | None</p></td>
         <td><p>Parse the &lt;h3&gt; tag to extract key, num, title, aliases, and named HTML anchor.</p></td>
         </tr>
-        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.parser.parse_center" title="geometor.etc.parser.parse_center"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_center</span></code></a>(→ dict[str, Any] | None)</p></td>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.parser.parse_center" title="geometor.etc.parser.parse_center"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_center</span></code></a>(html_content) → dict[str, Any] | None</p></td>
         <td><p>Parse a center's HTML content into a rich structured dictionary.</p></td>
         </tr>
-        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.parser.parse_preamble" title="geometor.etc.parser.parse_preamble"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_preamble</span></code></a>(→ dict[str, Any])</p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.parser.parse_preamble" title="geometor.etc.parser.parse_preamble"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_preamble</span></code></a>(preamble_html) → dict[str, Any]</p></td>
         <td><p>Parse an inter-center preamble HTML block into a title and list of RST paragraphs.</p></td>
         </tr>
         </tbody>
@@ -143,7 +171,7 @@
         <dl class="py function">
         <dt class="sig sig-object py" id="geometor.etc.parser.format_combination_line">
         <span class="sig-prename descclassname"><span class="pre">geometor.etc.parser.</span></span><span class="sig-name descname"><span class="pre">format_combination_line</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">comb_html</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.parser.format_combination_line" title="Link to this definition">¶</a></dt>
-        <dd><p>Format a linear combination line (e.g., <cite>X(6) = (r^2 + s^2 + 2rR)*X(2) - 2r^2*X(3)</cite>) into RST.</p>
+        <dd><p>Format a linear combination line (e.g., <cite>X<sub>6</sub> = (r^2 + s^2 + 2rR)*X<sub>2</sub> - 2r^2*X<sub>3</sub></cite>) into RST.</p>
         </dd></dl>
 
         <dl class="py function">
@@ -253,11 +281,11 @@
 
   <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../../../../_static/documentation_options.js?v=fd825880"></script>
+  <script src="../../../../../_static/documentation_options.js?v=59fadc99"></script>
   <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="../../../../../_static/js/geometor_interactive.js?v=4430a5d4"></script>
+  <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
   <script src="../../../../../_static/js/search_highlight.js"></script>
 
 </body>

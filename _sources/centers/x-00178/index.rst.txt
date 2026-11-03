@@ -1,23 +1,33 @@
 :order: 178
 :type: center
-:canonical_id: X(178)
-:dependencies: X(2), X(8), X(188), X(236), X(508)
+:canonical_id: X_178
+:subtitle: 2nd MID-ARC POINT
+:dependencies: X_2, X_8, X_188, X_236, X_508
 
-.. _X(178):
+.. _X_178:
 .. _SecondMidArcPoint:
 
-X(178) = 2nd MID-ARC POINT
-==========================
+X_178
+=====
+
+.. rubric:: 2nd MID-ARC POINT
 
 .. enunciation::
 
-   Let :g:`A' <A'>`,\ :g:`B' <B'>`,\ :g:`C' <C'>` be the first points of intersection of the angle bisectors of :g:`ABC << A B C >>` with its incircle. Let :g:`A″ <A″>`,\ :g:`B″ <B″>`,\ :g:`C″ <C″>` be the midpoints of segments :g:`BC <[ B C ]>`,\ :g:`CA <[ C A ]>`,\ :g:`AB <[ A B ]>`, respectively. The lines :g:`A'A″ <[ A' A″ ]>`,\ :g:`B'B″ <[ B' B″ ]>`,\ :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X(178) <X(178)>`.
+   :ref:`X_178 <X_178>` = :term:`complement <complement>` of :ref:`X_188 <X_188>`
 
 .. figure:: x-00178.svg
-   :alt: X(178) = 2nd MID-ARC POINT
+   :alt: X_178 — 2nd MID-ARC POINT
    :align: center
 
-   **X(178) = 2nd MID-ARC POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_178** (*2nd MID-ARC POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Derived Triangle:** :term:`Medial Triangle <medial triangle>` :g:`△M_aM_bM_c << M_a M_b M_c >>` — vertices :g:`M_a <M_a>`, :g:`M_b <M_b>`, :g:`M_c <M_c>` (Formed by the midpoints of sides BC, CA, AB)
+   * **Central Lines:** :g:`{2, 188} <{ 2, 188 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_188 <X_188>` (:ref:`2nd MID-ARC POINT OF ANTICOMPLEMENTARY TRIANGLE <X_188>`)
 
 .. signature:: center
 
@@ -29,16 +39,20 @@ X(178) = 2nd MID-ARC POINT
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`188 <X(188)>`}, {:ref:`8 <X(8)>`, :ref:`236 <X(236)>`}
+   {:ref:`2 <X_2>`, :ref:`188 <X_188>`}, {:ref:`8 <X_8>`, :ref:`236 <X_236>`}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(178) <X(178)>` = :term:`complement <complement>` of :ref:`X(188) <X(188)>`
-   * :ref:`X(178) <X(178)>` = :term:`crosspoint <crosspoint>` of :ref:`X(2) <X(2)>` and :ref:`X(508) <X(508)>`
+   * :ref:`X_178 <X_178>` = complement of :ref:`X_188 <X_188>`
+   * :ref:`X_178 <X_178>` = :term:`crosspoint <crosspoint>` of :ref:`X_2 <X_2>` and :ref:`X_508 <X_508>`
 
 Notes
 -----
+
+.. container:: note-item
+
+   Let :g:`A' <A'>`,\ :g:`B' <B'>`,\ :g:`C' <C'>` be the first points of intersection of the angle bisectors of :g:`ABC << A B C >>` with its incircle. Let :g:`A″ <A″>`,\ :g:`B″ <B″>`,\ :g:`C″ <C″>` be the midpoints of segments :g:`BC <[ B C ]>`,\ :g:`CA <[ C A ]>`,\ :g:`AB <[ A B ]>`, respectively. The lines :g:`A'A″ <[ A' A″ ]>`,\ :g:`B'B″ <[ B' B″ ]>`,\ :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X_178 <X_178>`.
 
 .. container:: note-item
 

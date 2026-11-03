@@ -1,18 +1,21 @@
-:canonical_id: X(255)
+:canonical_id: X_255
 :type: code
+:subtitle: ISOGONAL CONJUGATE OF X_158
 
-X(255) = ISOGONAL CONJUGATE OF X(158) — Code
-============================================
+X_255
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_158
 
 .. enunciation::
 
-   Let :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>` be the Lucas and Lucas(-1) :term:`central triangles <central-triangle>`. Let :g:`A* <A*>` be the trilinear product :g:`A' <A'>`\ \*\ :g:`A″ <A″>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(255) <X(255)>`. (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
+   :ref:`X_255 <X_255>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_158 <X_158>`.
 
 .. figure:: x-00255.svg
-   :alt: X(255) = ISOGONAL CONJUGATE OF X(158)
+   :alt: X_255 — ISOGONAL CONJUGATE OF X_158
    :align: center
 
-   **X(255) = ISOGONAL CONJUGATE OF X(158)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_255** (*ISOGONAL CONJUGATE OF X_158*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

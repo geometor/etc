@@ -1,18 +1,21 @@
-:canonical_id: X(907)
+:canonical_id: X_907
 :type: code
+:subtitle: POINT ACRUX
 
-X(907) = POINT ACRUX — Code
-===========================
+X_907
+=====
+
+.. rubric:: POINT ACRUX
 
 .. enunciation::
 
-   :ref:`X(907) <X(907)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(3800)
+   :ref:`X_907 <X_907>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3800
 
 .. figure:: x-00907.svg
-   :alt: X(907) = POINT ACRUX
+   :alt: X_907 — POINT ACRUX
    :align: center
 
-   **X(907) = POINT ACRUX** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_907** (*POINT ACRUX*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

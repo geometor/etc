@@ -1,22 +1,31 @@
 :order: 800
 :type: center
-:canonical_id: X(800)
-:dependencies: X(2), X(3), X(6), X(19), X(20), X(41), X(53), X(64), X(115), X(232), X(393), X(394), X(801), X(1015), X(1033), X(1093), X(1194), X(1195), X(1196), X(1409), X(1500), X(1713), X(1945), X(2197), X(2207), X(2238), X(2257), X(2277), X(2331), X(2883), X(3289), X(3553), X(3554), X(3787), X(5065), X(5304), X(5336), X(14615)
+:canonical_id: X_800
+:subtitle: CROSSPOINT OF X_2 AND X_64
+:dependencies: X_2, X_3, X_6, X_19, X_20, X_41, X_53, X_64, X_115, X_232, X_393, X_394, X_801, X_1015, X_1033, X_1093, X_1194, X_1195, X_1196, X_1409, X_1500, X_1713, X_1945, X_2197, X_2207, X_2238, X_2257, X_2277, X_2331, X_2883, X_3289, X_3553, X_3554, X_3787, X_5065, X_5304, X_5336, X_14615
 
-.. _X(800):
+.. _X_800:
 
-X(800) = CROSSPOINT OF X(2) AND X(64)
-=====================================
+X_800
+=====
+
+.. rubric:: CROSSPOINT OF X_2 AND X_64
 
 .. enunciation::
 
-   :ref:`X(800) <X(800)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(801) <X(801)>`
+   :ref:`X_800 <X_800>` is the :term:`crosspoint <crosspoint>` of :ref:`X_2 <X_2>` and :ref:`X_64 <X_64>`.
 
 .. figure:: x-00800.svg
-   :alt: X(800) = CROSSPOINT OF X(2) AND X(64)
+   :alt: X_800 — CROSSPOINT OF X_2 AND X_64
    :align: center
 
-   **X(800) = CROSSPOINT OF X(2) AND X(64)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_800** (*CROSSPOINT OF X_2 AND X_64*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{3, 6} <{ 3, 6 }>`, :g:`{53, 115} <{ 53, 115 }>`
+   * **Related Centers:** :g:`X_801 <X_801>` (:ref:`ISOGONAL CONJUGATE OF X(800) <X_801>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_53 <X_53>` (:ref:`SYMMEDIAN POINT OF ORTHIC TRIANGLE <X_53>`), :g:`X_115 <X_115>` (:ref:`CENTER OF KIEPERT HYPERBOLA <X_115>`)
 
 .. signature:: center
 
@@ -34,19 +43,19 @@ X(800) = CROSSPOINT OF X(2) AND X(64)
    :badge: 15 lines
    :class: line-catalog
 
-   {:ref:`3 <X(3)>`, :ref:`6 <X(6)>`}, {:ref:`19 <X(19)>`, 1945}, {:ref:`41 <X(41)>`, 2197}, {:ref:`53 <X(53)>`, :ref:`115 <X(115)>`}, {:ref:`232 <X(232)>`, 1196}, {:ref:`393 <X(393)>`, 1093}, {1015, 3554}, {1033, 2207}, {1194, 5304}, {1195, 1409}, {1500, 3553}, {1713, 2238}, {2257, 2277}, {2331, 5336}, {3289, 3787}
+   {:ref:`3 <X_3>`, :ref:`6 <X_6>`}, {:ref:`19 <X_19>`, 1945}, {:ref:`41 <X_41>`, 2197}, {:ref:`53 <X_53>`, :ref:`115 <X_115>`}, {:ref:`232 <X_232>`, 1196}, {:ref:`393 <X_393>`, 1093}, {1015, 3554}, {1033, 2207}, {1194, 5304}, {1195, 1409}, {1500, 3553}, {1713, 2238}, {2257, 2277}, {2331, 5336}, {3289, 3787}
 
 .. collapse:: Functional Relations
    :badge: 8 relations
 
-   * :ref:`X(800) <X(800)>` = isogonal conjugate of :ref:`X(801) <X(801)>`
-   * :ref:`X(800) <X(800)>` = :term:`complement <complement>` of X(14615)
-   * :ref:`X(800) <X(800)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`64 <X(64)>`), (:ref:`6 <X(6)>`, :ref:`393 <X(393)>`)
-   * :ref:`X(800) <X(800)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`394 <X(394)>`), (:ref:`6 <X(6)>`, :ref:`20 <X(20)>`)
-   * :ref:`X(800) <X(800)>` = perspector of circumconic centered at X(2883)
-   * :ref:`X(800) <X(800)>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through X(2883)
-   * :ref:`X(800) <X(800)>` = :ref:`X(2) <X(2)>`-:term:`Ceva conjugate <ceva-conjugate>` of X(2883)
-   * :ref:`X(800) <X(800)>` = {:ref:`X(3) <X(3)>`,\ :ref:`X(6) <X(6)>`}-harmonic conjugate of X(5065)
+   * :ref:`X_800 <X_800>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_801 <X_801>`
+   * :ref:`X_800 <X_800>` = :term:`complement <complement>` of X_14615
+   * :ref:`X_800 <X_800>` = crosspoint of X_i and X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`64 <X_64>`), (:ref:`6 <X_6>`, :ref:`393 <X_393>`)
+   * :ref:`X_800 <X_800>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`394 <X_394>`), (:ref:`6 <X_6>`, :ref:`20 <X_20>`)
+   * :ref:`X_800 <X_800>` = perspector of circumconic centered at X_2883
+   * :ref:`X_800 <X_800>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through X_2883
+   * :ref:`X_800 <X_800>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of X_2883
+   * :ref:`X_800 <X_800>` = {:ref:`X_3 <X_3>`,\ :ref:`X_6 <X_6>`}-harmonic conjugate of X_5065
 
 .. toctree::
    :hidden:

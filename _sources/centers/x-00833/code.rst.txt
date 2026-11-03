@@ -1,18 +1,21 @@
-:canonical_id: X(833)
+:canonical_id: X_833
 :type: code
+:subtitle: o-(1, 4) CIRCUMCIRCLE POINT
 
-X(833) = o-(1, 4) CIRCUMCIRCLE POINT — Code
-===========================================
+X_833
+=====
+
+.. rubric:: o-(1, 4) CIRCUMCIRCLE POINT
 
 .. enunciation::
 
-   :ref:`X(833) <X(833)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(832) <X(832)>`
+   :ref:`X_833 <X_833>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_832 <X_832>`
 
 .. figure:: x-00833.svg
-   :alt: X(833) = o-(1, 4) CIRCUMCIRCLE POINT
+   :alt: X_833 — o-(1, 4) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(833) = o-(1, 4) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_833** (*o-(1, 4) CIRCUMCIRCLE POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

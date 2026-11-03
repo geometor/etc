@@ -1,18 +1,21 @@
-:canonical_id: X(974)
+:canonical_id: X_974
 :type: code
+:subtitle: 2nd EHRMANN POINT
 
-X(974) = 2nd EHRMANN POINT — Code
-=================================
+X_974
+=====
+
+.. rubric:: 2nd EHRMANN POINT
 
 .. enunciation::
 
-   For constructions of :ref:`X(973) <X(973)>` and :ref:`X(974) <X(974)>`, see :cite:`Hyacinthos <hyacinthos>` message 3695, Sept. 1, 2001, and related messages.
+   :ref:`X_974 <X_974>` = midpoint of :ref:`X_125 <X_125>` and :ref:`X_185 <X_185>`
 
 .. figure:: x-00974.svg
-   :alt: X(974) = 2nd EHRMANN POINT
+   :alt: X_974 — 2nd EHRMANN POINT
    :align: center
 
-   **X(974) = 2nd EHRMANN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_974** (*2nd EHRMANN POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

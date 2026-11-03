@@ -67,6 +67,7 @@ Module Contents
       }
       
       svg.geometor-etc-drawing.hide-labels #labels .point-label,
+      svg.geometor-etc-drawing.hide-labels #labels .guide-label,
       svg.geometor-etc-drawing.hide-labels #labels .target-label,
       svg.geometor-etc-drawing.hide-labels #labels .given-label {
           display: none;
@@ -228,12 +229,19 @@ Module Contents
           font-weight: 600;
           paint-order: stroke;
           stroke: var(--accent-color);
-          stroke-width: 3px;
+          stroke-width: 0.15em;
           stroke-linecap: round;
           stroke-linejoin: round;
-          vector-effect: non-scaling-stroke;
           user-select: none;
           pointer-events: none;
+      }
+      
+      #labels tspan {
+          paint-order: stroke;
+          stroke: var(--accent-color);
+          stroke-width: 0.15em;
+          stroke-linecap: round;
+          stroke-linejoin: round;
       }
       
       #labels text.target-label {
@@ -243,6 +251,11 @@ Module Contents
       
       #labels text.given-label {
           fill: #8f8;
+      }
+      
+      #labels text.guide-label {
+          fill: #ffb74d;
+          font-weight: 600;
       }
       
       #labels text.hover-label {
@@ -408,14 +421,16 @@ Module Contents
               });
       
               const fontSize = 20.25 * unitsPerPx;
+              const guideFontSize = 17.5 * unitsPerPx;
               labelEls.forEach(lbl => {
                   const cx = parseFloat(lbl.getAttribute('data-anchor-x') || '0');
                   const cy = parseFloat(lbl.getAttribute('data-anchor-y') || '0');
                   const oxPx = parseFloat(lbl.getAttribute('data-offset-x') || '12');
                   const oyPx = parseFloat(lbl.getAttribute('data-offset-y') || '-10.5');
+                  const isGuideLbl = lbl.classList.contains('guide-label');
                   lbl.setAttribute('x', (cx + oxPx * unitsPerPx).toFixed(6));
                   lbl.setAttribute('y', (cy + oyPx * unitsPerPx).toFixed(6));
-                  lbl.setAttribute('font-size', fontSize.toFixed(6));
+                  lbl.setAttribute('font-size', (isGuideLbl ? guideFontSize : fontSize).toFixed(6));
               });
       
               if (subtitleEl) {
@@ -700,11 +715,11 @@ Module Contents
                   const refLink = e.target.closest('a.reference.internal');
                   if (refLink) {
                       const txt = (refLink.textContent || '').trim();
-                      const xm = txt.match(/^X\((\d+)\)$/);
+                      const xm = txt.match(/^X(?:_|\()?(\d+)\)?$/);
                       if (xm) {
                           const activeSvg = getActiveSvg();
                           if (activeSvg && activeSvg._etcController.activateHover) {
-                              activeSvg._etcController.activateHover(`X(${xm[1]})`);
+                              activeSvg._etcController.activateHover(`X_${xm[1]}`);
                           }
                       }
                   }

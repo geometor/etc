@@ -1,26 +1,36 @@
 :order: 440
 :type: center
-:canonical_id: X(440)
-:dependencies: X(2), X(3), X(6), X(27), X(28), X(37), X(72), X(118), X(122), X(190), X(226), X(284), X(306), X(525), X(579), X(950), X(1104), X(1474), X(34830)
+:canonical_id: X_440
+:subtitle: COMPLEMENT OF X_27
+:dependencies: X_2, X_3, X_6, X_27, X_28, X_37, X_72, X_118, X_122, X_190, X_226, X_284, X_306, X_525, X_579, X_950, X_1104, X_1474, X_34830
 
-.. _X(440):
+.. _X_440:
 
-X(440) = COMPLEMENT OF X(27)
-============================
+X_440
+=====
+
+.. rubric:: COMPLEMENT OF X_27
 
 .. enunciation::
 
-   As a point on the Euler line, :ref:`X(440) <X(440)>` has Shinagawa coefficients :math:`(\$bc\$ + E - F,-\$bc\$ - E - F)`
+   :ref:`X_440 <X_440>` is the :term:`complement <complement>` of :ref:`X_27 <X_27>`.
 
 .. figure:: x-00440.svg
-   :alt: X(440) = COMPLEMENT OF X(27)
+   :alt: X_440 — COMPLEMENT OF X_27
    :align: center
 
-   **X(440) = COMPLEMENT OF X(27)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_440** (*COMPLEMENT OF X_27*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Derived Triangle:** :term:`Medial Triangle <medial triangle>` :g:`△M_aM_bM_c << M_a M_b M_c >>` — vertices :g:`M_a <M_a>`, :g:`M_b <M_b>`, :g:`M_c <M_c>` (Formed by the midpoints of sides BC, CA, AB)
+   * **Central Lines:** :g:`{2, 27} <{ 2, 27 }>`, :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`)
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_27 <X_27>` (:ref:`CEVAPOINT OF ORTHOCENTER AND CLAWSON CENTER <X_27>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`)
 
 .. signature:: center
 
-   | **Trilinears:** :math:`bc(v + w) : ca(w + u) : ab(u + v)`, where :math:`u : v : w` = :ref:`X(28) <X(28)>`; e.g., :math:`u(a,b,c) = (\tan A)/(b + c)`
+   | **Trilinears:** :math:`bc(v + w) : ca(w + u) : ab(u + v)`, where :math:`u : v : w` = :ref:`X_28 <X_28>`; e.g., :math:`u(a,b,c) = (\tan A)/(b + c)`
    | **Barycentrics:** :math:`v + w : w + u : u + v`
    | **Search Value (6, 9, 13):** :math:`5.242466206828`
 
@@ -28,16 +38,23 @@ X(440) = COMPLEMENT OF X(27)
    :badge: 5 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`37 <X(37)>`, :ref:`226 <X(226)>`}, {:ref:`72 <X(72)>`, :ref:`306 <X(306)>`}, {:ref:`118 <X(118)>`, :ref:`122 <X(122)>`}, {:ref:`950 <X(950)>`, 1104}
+   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`37 <X_37>`, :ref:`226 <X_226>`}, {:ref:`72 <X_72>`, :ref:`306 <X_306>`}, {:ref:`118 <X_118>`, :ref:`122 <X_122>`}, {:ref:`950 <X_950>`, 1104}
 
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X(440) <X(440)>` = :term:`complement <complement>` of :ref:`X(27) <X(27)>`
-   * :ref:`X(440) <X(440)>` = :term:`complementary conjugate <complementary-conjugate>` of X(34830)
-   * :ref:`X(440) <X(440)>` = :ref:`X(190) <X(190)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(525) <X(525)>`
-   * :ref:`X(440) <X(440)>` = :term:`crosspoint <crosspoint>` of :ref:`X(2) <X(2)>` and :ref:`X(306) <X(306)>`
-   * :ref:`X(440) <X(440)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`6 <X(6)>`, 1474), (:ref:`284 <X(284)>`, :ref:`579 <X(579)>`)
+   * :ref:`X_440 <X_440>` = complement of :ref:`X_27 <X_27>`
+   * :ref:`X_440 <X_440>` = :term:`complementary conjugate <complementary-conjugate>` of X_34830
+   * :ref:`X_440 <X_440>` = :ref:`X_190 <X_190>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_525 <X_525>`
+   * :ref:`X_440 <X_440>` = :term:`crosspoint <crosspoint>` of :ref:`X_2 <X_2>` and :ref:`X_306 <X_306>`
+   * :ref:`X_440 <X_440>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, 1474), (:ref:`284 <X_284>`, :ref:`579 <X_579>`)
+
+Notes
+-----
+
+.. container:: note-item
+
+   As a point on the Euler line, :ref:`X_440 <X_440>` has Shinagawa coefficients :math:`(\$bc\$ + E - F,-\$bc\$ - E - F)`
 
 .. toctree::
    :hidden:

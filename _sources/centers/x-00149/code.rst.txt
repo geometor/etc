@@ -1,18 +1,21 @@
-:canonical_id: X(149)
+:canonical_id: X_149
 :type: code
+:subtitle: REFLECTION OF X_20 IN X_104
 
-X(149) = REFLECTION OF X(20) IN X(104) — Code
-=============================================
+X_149
+=====
+
+.. rubric:: REFLECTION OF X_20 IN X_104
 
 .. enunciation::
 
-   Let :g:`A' <A'>` be the reflection of the midpoint of segment :g:`BC <[ B C ]>` in :ref:`X(11) <X(11)>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(149) <X(149)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   :ref:`X_149 <X_149>` is the {:ref:`X_11 <X_11>`,\ :ref:`X_100 <X_100>`}-harmonic conjugate of :ref:`X_2 <X_2>`. For a list of harmonic conjugates, click **Tables** at the top of this page.
 
 .. figure:: x-00149.svg
-   :alt: X(149) = REFLECTION OF X(20) IN X(104)
+   :alt: X_149 — REFLECTION OF X_20 IN X_104
    :align: center
 
-   **X(149) = REFLECTION OF X(20) IN X(104)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_149** (*REFLECTION OF X_20 IN X_104*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

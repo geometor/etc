@@ -1,22 +1,31 @@
 :order: 253
 :type: center
-:canonical_id: X(253)
-:dependencies: X(2), X(4), X(7), X(8), X(20), X(64), X(69), X(122), X(154), X(193), X(280), X(287), X(306), X(307), X(318), X(322), X(329), X(341), X(342), X(441), X(459), X(525), X(1073), X(1249)
+:canonical_id: X_253
+:subtitle: X_4-CROSS CONJUGATE OF X_2
+:dependencies: X_2, X_4, X_7, X_8, X_20, X_64, X_69, X_122, X_154, X_193, X_280, X_287, X_306, X_307, X_318, X_322, X_329, X_341, X_342, X_441, X_459, X_525, X_1073, X_1249
 
-.. _X(253):
+.. _X_253:
 
-X(253) = X(4)-CROSS CONJUGATE OF X(2)
-=====================================
+X_253
+=====
+
+.. rubric:: X_4-CROSS CONJUGATE OF X_2
 
 .. enunciation::
 
-   :ref:`X(253) <X(253)>` is the unique point whose :term:`complement <complement>` is also its polar conjugate (X(1249)). (:person:`Randy Hutson <randy-hutson>`, July 11, 2019)
+   :ref:`X_253 <X_253>` is the perspector of :g:`ABC << A B C >>` and the :term:`pedal triangle <pedal-triangle>` of :ref:`X_64 <X_64>`.
 
 .. figure:: x-00253.svg
-   :alt: X(253) = X(4)-CROSS CONJUGATE OF X(2)
+   :alt: X_253 — X_4-CROSS CONJUGATE OF X_2
    :align: center
 
-   **X(253) = X(4)-CROSS CONJUGATE OF X(2)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_253** (*X_4-CROSS CONJUGATE OF X_2*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{20, 64} <{ 20, 64 }>`, :g:`{7, 280} <{ 7, 280 }>`
+   * **Related Centers:** :g:`X_154 <X_154>` (:ref:`-CEVA CONJUGATE OF X(6) <X_154>`), :g:`X_20 <X_20>` (:ref:`DE LONGCHAMPS POINT <X_20>`), :g:`X_64 <X_64>` (:ref:`ISOGONAL CONJUGATE OF X(20) <X_64>`), :g:`X_7 <X_7>` (:ref:`GERGONNE POINT <X_7>`), :g:`X_280 <X_280>` (:ref:`-CROSS CONJUGATE OF X(8) <X_280>`)
 
 .. signature:: center
 
@@ -32,34 +41,34 @@ X(253) = X(4)-CROSS CONJUGATE OF X(2)
 
 .. container:: note-item
 
-   :ref:`X(253) <X(253)>` lies on the Lucas cubic.
+   :ref:`X_253 <X_253>` lies on the Lucas cubic.
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, 1073}, {:ref:`7 <X(7)>`, :ref:`280 <X(280)>`}, {:ref:`8 <X(8)>`, :ref:`307 <X(307)>`}, {:ref:`20 <X(20)>`, :ref:`64 <X(64)>`}, {:ref:`193 <X(193)>`, :ref:`287 <X(287)>`}, {:ref:`306 <X(306)>`, :ref:`329 <X(329)>`}, {:ref:`318 <X(318)>`, :ref:`342 <X(342)>`}, {:ref:`322 <X(322)>`, :ref:`341 <X(341)>`}
+   {:ref:`2 <X_2>`, 1073}, {:ref:`7 <X_7>`, :ref:`280 <X_280>`}, {:ref:`8 <X_8>`, :ref:`307 <X_307>`}, {:ref:`20 <X_20>`, :ref:`64 <X_64>`}, {:ref:`193 <X_193>`, :ref:`287 <X_287>`}, {:ref:`306 <X_306>`, :ref:`329 <X_329>`}, {:ref:`318 <X_318>`, :ref:`342 <X_342>`}, {:ref:`322 <X_322>`, :ref:`341 <X_341>`}
 
 .. collapse:: Functional Relations
    :badge: 10 relations
 
-   * :ref:`X(253) <X(253)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(154) <X(154)>`
-   * :ref:`X(253) <X(253)>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X(20) <X(20)>`
-   * :ref:`X(253) <X(253)>` = :term:`cyclocevian conjugate <cyclocevian-conjugate>` of :ref:`X(69) <X(69)>`
-   * :ref:`X(253) <X(253)>` = :term:`cevapoint <cevapoint>` of X(i) and X(j) for these (i,j): (:ref:`4 <X(4)>`, :ref:`459 <X(459)>`), (:ref:`122 <X(122)>`, :ref:`525 <X(525)>`)
-   * :ref:`X(253) <X(253)>` = X(i)-:term:`cross conjugate <cross-conjugate>` of X(j) for these (i,j): (:ref:`4 <X(4)>`, :ref:`2 <X(2)>`), (:ref:`122 <X(122)>`, :ref:`525 <X(525)>`)
-   * :ref:`X(253) <X(253)>` = :term:`anticomplement <anticomplement>` of X(1249)
-   * :ref:`X(253) <X(253)>` = polar conjugate of X(1249)
-   * :ref:`X(253) <X(253)>` = perspector of :g:`ABC << A B C >>` and the reflection in X(1073) of the :term:`pedal triangle <pedal-triangle>` of X(1073)
-   * :ref:`X(253) <X(253)>` = perspector of de Longchamps circle
-   * :ref:`X(253) <X(253)>` = pole, wrt de Longchamps circle, of :term:`trilinear polar <trilinear-polar>` of :ref:`X(69) <X(69)>` (line :ref:`X(441) <X(441)>`\ \ :ref:`X(525) <X(525)>`)
+   * :ref:`X_253 <X_253>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_154 <X_154>`
+   * :ref:`X_253 <X_253>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_20 <X_20>`
+   * :ref:`X_253 <X_253>` = :term:`cyclocevian conjugate <cyclocevian-conjugate>` of :ref:`X_69 <X_69>`
+   * :ref:`X_253 <X_253>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`459 <X_459>`), (:ref:`122 <X_122>`, :ref:`525 <X_525>`)
+   * :ref:`X_253 <X_253>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`2 <X_2>`), (:ref:`122 <X_122>`, :ref:`525 <X_525>`)
+   * :ref:`X_253 <X_253>` = :term:`anticomplement <anticomplement>` of X_1249
+   * :ref:`X_253 <X_253>` = polar conjugate of X_1249
+   * :ref:`X_253 <X_253>` = perspector of :g:`ABC << A B C >>` and the reflection in X_1073 of the pedal triangle of X_1073
+   * :ref:`X_253 <X_253>` = perspector of de Longchamps circle
+   * :ref:`X_253 <X_253>` = pole, wrt de Longchamps circle, of :term:`trilinear polar <trilinear-polar>` of :ref:`X_69 <X_69>` (line :ref:`X_441 <X_441>`\ \ :ref:`X_525 <X_525>`)
 
 Notes
 -----
 
 .. container:: note-item
 
-   :ref:`X(253) <X(253)>` is the perspector of :g:`ABC << A B C >>` and the pedal triangle of :ref:`X(64) <X(64)>`.
+   :ref:`X_253 <X_253>` is the unique point whose :term:`complement <complement>` is also its polar conjugate (X_1249). (:person:`Randy Hutson <randy-hutson>`, July 11, 2019)
 
 .. toctree::
    :hidden:

@@ -1,18 +1,21 @@
-:canonical_id: X(506)
+:canonical_id: X_506
 :type: code
+:subtitle: 4th ISOSCELIZER POINT
 
-X(506) = 4th ISOSCELIZER POINT — Code
-=====================================
+X_506
+=====
+
+.. rubric:: 4th ISOSCELIZER POINT
 
 .. enunciation::
 
    The :term:`isoscelizer <isoscelizer>` equations
 
 .. figure:: x-00506.svg
-   :alt: X(506) = 4th ISOSCELIZER POINT
+   :alt: X_506 — 4th ISOSCELIZER POINT
    :align: center
 
-   **X(506) = 4th ISOSCELIZER POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_506** (*4th ISOSCELIZER POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

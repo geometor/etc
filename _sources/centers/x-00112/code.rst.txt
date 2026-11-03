@@ -1,18 +1,21 @@
-:canonical_id: X(112)
+:canonical_id: X_112
 :type: code
+:subtitle: Ψ(ORTHOCENTER, SYMMEDIAN POINT)
 
-X(112) = Ψ(ORTHOCENTER, SYMMEDIAN POINT) — Code
-===============================================
+X_112
+=====
+
+.. rubric:: Ψ(ORTHOCENTER, SYMMEDIAN POINT)
 
 .. enunciation::
 
-   If the line :ref:`X(4) <X(4)>`\ \ :ref:`X(6) <X(6)>` is reflected in every side of triangle :g:`ABC << A B C >>`, then the reflections concur in :ref:`X(112) <X(112)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   :ref:`X_112 <X_112>` = :term:`anticomplement <anticomplement>` of :ref:`X_127 <X_127>`
 
 .. figure:: x-00112.svg
-   :alt: X(112) = Ψ(ORTHOCENTER, SYMMEDIAN POINT)
+   :alt: X_112 — Ψ(ORTHOCENTER, SYMMEDIAN POINT)
    :align: center
 
-   **X(112) = Ψ(ORTHOCENTER, SYMMEDIAN POINT)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_112** (*Ψ(ORTHOCENTER, SYMMEDIAN POINT)*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

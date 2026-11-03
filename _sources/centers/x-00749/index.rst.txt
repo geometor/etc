@@ -1,22 +1,30 @@
 :order: 749
 :type: center
-:canonical_id: X(749)
-:dependencies: X(748), X(3760)
+:canonical_id: X_749
+:subtitle: ISOGONAL CONJUGATE OF X_748
+:dependencies: X_748, X_3760
 
-.. _X(749):
+.. _X_749:
 
-X(749) = ISOGONAL CONJUGATE OF X(748)
-=====================================
+X_749
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_748
 
 .. enunciation::
 
-   :ref:`X(749) <X(749)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(748) <X(748)>`
+   :ref:`X_749 <X_749>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_748 <X_748>`.
 
 .. figure:: x-00749.svg
-   :alt: X(749) = ISOGONAL CONJUGATE OF X(748)
+   :alt: X_749 — ISOGONAL CONJUGATE OF X_748
    :align: center
 
-   **X(749) = ISOGONAL CONJUGATE OF X(748)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_749** (*ISOGONAL CONJUGATE OF X_748*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Related Centers:** :g:`X_748 <X_748>` (:ref:`INTERSECTION OF LINES X <X_748>`)
 
 .. signature:: center
 
@@ -32,8 +40,8 @@ X(749) = ISOGONAL CONJUGATE OF X(748)
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(749) <X(749)>` = isogonal conjugate of :ref:`X(748) <X(748)>`
-   * :ref:`X(749) <X(749)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(3760)
+   * :ref:`X_749 <X_749>` = isogonal conjugate of :ref:`X_748 <X_748>`
+   * :ref:`X_749 <X_749>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3760
 
 .. toctree::
    :hidden:

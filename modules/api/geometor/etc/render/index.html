@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=69acf51f" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=66998e95" />
   <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -89,6 +89,34 @@
         </div>
       </header>
       <div class="content body book-content" role="main">
+        <style id="etc-heading-styles">
+        .book-reading-pane .book-content h1,
+        .folio-book-page h1 {
+            position: relative;
+            text-align: center !important;
+            text-indent: 0 !important;
+            margin-bottom: 0.35rem !important;
+        }
+        .book-reading-pane .book-content h1 a.headerlink,
+        .book-reading-pane .book-content h2 a.headerlink,
+        .folio-book-page h1 a.headerlink,
+        .folio-book-page h2 a.headerlink {
+            position: absolute;
+        }
+        .book-reading-pane .book-content p.rubric,
+        .folio-book-page p.rubric {
+            font-style: normal !important;
+            font-weight: 700 !important;
+            text-align: center !important;
+            text-indent: 0 !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            margin-top: 0 !important;
+            margin-bottom: 1.4rem !important;
+        }
+        </style>
         <section class="level-1" id="module-geometor.etc.render">
         <span id="geometor-etc-render"></span><h1>geometor.etc.render<a class="headerlink" href="#module-geometor.etc.render" title="Link to this heading">¶</a></h1>
         <p>Render <cite>geometor.model.Model</cite> instances into interactive Explorer-styled SVGs.</p>
@@ -109,13 +137,13 @@
         <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
         <table class="autosummary longtable docutils align-default">
         <tbody>
-        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.render.model_to_elements_list" title="geometor.etc.render.model_to_elements_list"><code class="xref py py-obj docutils literal notranslate"><span class="pre">model_to_elements_list</span></code></a>(→ list[dict[str, Any]])</p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.render.model_to_elements_list" title="geometor.etc.render.model_to_elements_list"><code class="xref py py-obj docutils literal notranslate"><span class="pre">model_to_elements_list</span></code></a>(model) → list[dict[str, Any]]</p></td>
         <td><p>Convert a <cite>geometor.model.Model</cite> into a chronological list of browser-ready element dicts.</p></td>
         </tr>
-        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.render.render_model_svg" title="geometor.etc.render.render_model_svg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">render_model_svg</span></code></a>(→ str)</p></td>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.render.render_model_svg" title="geometor.etc.render.render_model_svg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">render_model_svg</span></code></a>(model[, svg_width, svg_height, ...]) → str</p></td>
         <td><p>Render a <cite>geometor.model.Model</cite> to an interactive Explorer-compatible SVG string.</p></td>
         </tr>
-        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.render.write_center_svg" title="geometor.etc.render.write_center_svg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">write_center_svg</span></code></a>(→ pathlib.Path)</p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.render.write_center_svg" title="geometor.etc.render.write_center_svg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">write_center_svg</span></code></a>(model, output_path[, subtitle]) → pathlib.Path</p></td>
         <td><p>Render and write a center's <cite>Model</cite> SVG to <cite>output_path</cite>.</p></td>
         </tr>
         </tbody>
@@ -153,6 +181,7 @@
         <span class="sd">}</span>
 
         <span class="sd">svg.geometor-etc-drawing.hide-labels #labels .point-label,</span>
+        <span class="sd">svg.geometor-etc-drawing.hide-labels #labels .guide-label,</span>
         <span class="sd">svg.geometor-etc-drawing.hide-labels #labels .target-label,</span>
         <span class="sd">svg.geometor-etc-drawing.hide-labels #labels .given-label {</span>
         <span class="sd">    display: none;</span>
@@ -314,12 +343,19 @@
         <span class="sd">    font-weight: 600;</span>
         <span class="sd">    paint-order: stroke;</span>
         <span class="sd">    stroke: var(--accent-color);</span>
-        <span class="sd">    stroke-width: 3px;</span>
+        <span class="sd">    stroke-width: 0.15em;</span>
         <span class="sd">    stroke-linecap: round;</span>
         <span class="sd">    stroke-linejoin: round;</span>
-        <span class="sd">    vector-effect: non-scaling-stroke;</span>
         <span class="sd">    user-select: none;</span>
         <span class="sd">    pointer-events: none;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">#labels tspan {</span>
+        <span class="sd">    paint-order: stroke;</span>
+        <span class="sd">    stroke: var(--accent-color);</span>
+        <span class="sd">    stroke-width: 0.15em;</span>
+        <span class="sd">    stroke-linecap: round;</span>
+        <span class="sd">    stroke-linejoin: round;</span>
         <span class="sd">}</span>
 
         <span class="sd">#labels text.target-label {</span>
@@ -329,6 +365,11 @@
 
         <span class="sd">#labels text.given-label {</span>
         <span class="sd">    fill: #8f8;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">#labels text.guide-label {</span>
+        <span class="sd">    fill: #ffb74d;</span>
+        <span class="sd">    font-weight: 600;</span>
         <span class="sd">}</span>
 
         <span class="sd">#labels text.hover-label {</span>
@@ -485,14 +526,16 @@
         <span class="sd">        });</span>
 
         <span class="sd">        const fontSize = 20.25 * unitsPerPx;</span>
+        <span class="sd">        const guideFontSize = 17.5 * unitsPerPx;</span>
         <span class="sd">        labelEls.forEach(lbl =&gt; {</span>
         <span class="sd">            const cx = parseFloat(lbl.getAttribute('data-anchor-x') || '0');</span>
         <span class="sd">            const cy = parseFloat(lbl.getAttribute('data-anchor-y') || '0');</span>
         <span class="sd">            const oxPx = parseFloat(lbl.getAttribute('data-offset-x') || '12');</span>
         <span class="sd">            const oyPx = parseFloat(lbl.getAttribute('data-offset-y') || '-10.5');</span>
+        <span class="sd">            const isGuideLbl = lbl.classList.contains('guide-label');</span>
         <span class="sd">            lbl.setAttribute('x', (cx + oxPx * unitsPerPx).toFixed(6));</span>
         <span class="sd">            lbl.setAttribute('y', (cy + oyPx * unitsPerPx).toFixed(6));</span>
-        <span class="sd">            lbl.setAttribute('font-size', fontSize.toFixed(6));</span>
+        <span class="sd">            lbl.setAttribute('font-size', (isGuideLbl ? guideFontSize : fontSize).toFixed(6));</span>
         <span class="sd">        });</span>
 
         <span class="sd">        if (subtitleEl) {</span>
@@ -777,11 +820,11 @@
         <span class="sd">            const refLink = e.target.closest('a.reference.internal');</span>
         <span class="sd">            if (refLink) {</span>
         <span class="sd">                const txt = (refLink.textContent || '').trim();</span>
-        <span class="sd">                const xm = txt.match(/^X\((\d+)\)$/);</span>
+        <span class="sd">                const xm = txt.match(/^X(?:_|\()?(\d+)\)?$/);</span>
         <span class="sd">                if (xm) {</span>
         <span class="sd">                    const activeSvg = getActiveSvg();</span>
         <span class="sd">                    if (activeSvg &amp;&amp; activeSvg._etcController.activateHover) {</span>
-        <span class="sd">                        activeSvg._etcController.activateHover(`X(${xm[1]})`);</span>
+        <span class="sd">                        activeSvg._etcController.activateHover(`X_${xm[1]}`);</span>
         <span class="sd">                    }</span>
         <span class="sd">                }</span>
         <span class="sd">            }</span>
@@ -985,11 +1028,11 @@
 
   <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../../../../_static/documentation_options.js?v=fd825880"></script>
+  <script src="../../../../../_static/documentation_options.js?v=59fadc99"></script>
   <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="../../../../../_static/js/geometor_interactive.js?v=4430a5d4"></script>
+  <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
   <script src="../../../../../_static/js/search_highlight.js"></script>
 
 </body>

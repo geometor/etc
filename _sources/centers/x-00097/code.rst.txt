@@ -1,18 +1,21 @@
-:canonical_id: X(97)
+:canonical_id: X_97
 :type: code
+:subtitle: ISOGONAL CONJUGATE OF X_53
 
-X(97) = ISOGONAL CONJUGATE OF X(53) — Code
-==========================================
+X_97
+====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_53
 
 .. enunciation::
 
-   In the plane of a triangle :g:`ABC << A B C >>`, let
+   :ref:`X_97 <X_97>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_53 <X_53>`.
 
 .. figure:: x-00097.svg
-   :alt: X(97) = ISOGONAL CONJUGATE OF X(53)
+   :alt: X_97 — ISOGONAL CONJUGATE OF X_53
    :align: center
 
-   **X(97) = ISOGONAL CONJUGATE OF X(53)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_97** (*ISOGONAL CONJUGATE OF X_53*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

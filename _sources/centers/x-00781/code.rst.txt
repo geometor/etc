@@ -1,18 +1,21 @@
-:canonical_id: X(781)
+:canonical_id: X_781
 :type: code
+:subtitle: o-(- 4, 3) CIRCUMCIRCLE POINT
 
-X(781) = o-(- 4, 3) CIRCUMCIRCLE POINT — Code
-=============================================
+X_781
+=====
+
+.. rubric:: o-(- 4, 3) CIRCUMCIRCLE POINT
 
 .. enunciation::
 
-   :ref:`X(781) <X(781)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(780) <X(780)>`
+   :ref:`X_781 <X_781>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_780 <X_780>`
 
 .. figure:: x-00781.svg
-   :alt: X(781) = o-(- 4, 3) CIRCUMCIRCLE POINT
+   :alt: X_781 — o-(- 4, 3) CIRCUMCIRCLE POINT
    :align: center
 
-   **X(781) = o-(- 4, 3) CIRCUMCIRCLE POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_781** (*o-(- 4, 3) CIRCUMCIRCLE POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

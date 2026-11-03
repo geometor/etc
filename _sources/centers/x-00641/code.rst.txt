@@ -1,18 +1,21 @@
-:canonical_id: X(641)
+:canonical_id: X_641
 :type: code
+:subtitle: COMPLEMENT OF X_485
 
-X(641) = COMPLEMENT OF X(485) — Code
-====================================
+X_641
+=====
+
+.. rubric:: COMPLEMENT OF X_485
 
 .. enunciation::
 
-   Erect squares outwards on the sides of triangle :g:`ABC << A B C >>`; the circumcenter of the centers of the squares is :ref:`X(641) <X(641)>`. (:person:`Peter Moses <peter-moses>`, 7/16,2003)
+   :ref:`X_641 <X_641>` is the :term:`complement <complement>` of :ref:`X_485 <X_485>`.
 
 .. figure:: x-00641.svg
-   :alt: X(641) = COMPLEMENT OF X(485)
+   :alt: X_641 — COMPLEMENT OF X_485
    :align: center
 
-   **X(641) = COMPLEMENT OF X(485)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_641** (*COMPLEMENT OF X_485*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

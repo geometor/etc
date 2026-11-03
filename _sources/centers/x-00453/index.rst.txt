@@ -1,22 +1,27 @@
 :order: 453
 :type: center
-:canonical_id: X(453)
-:dependencies: X(2), X(3), X(46), X(1014), X(1454), X(1800)
+:canonical_id: X_453
+:subtitle: POINT ALSHAIN
+:dependencies: X_2, X_3, X_46, X_1014, X_1454, X_1800
 
-.. _X(453):
+.. _X_453:
 
-X(453) = POINT ALSHAIN
-======================
+X_453
+=====
 
-.. enunciation::
-
-   As a point on the Euler line, :ref:`X(453) <X(453)>` has Shinagawa coefficients :math:`(2\$aS_{B}S_{C}\$+\$aS_{A}\$(E+2F)-2\$a\$S^{2}-2abcF, -\$aS_{A}\$E+2\$a\$S^{2}+abcE)`.
+.. rubric:: POINT ALSHAIN
 
 .. figure:: x-00453.svg
-   :alt: X(453) = POINT ALSHAIN
+   :alt: X_453 — POINT ALSHAIN
    :align: center
 
-   **X(453) = POINT ALSHAIN** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_453** (*POINT ALSHAIN*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`)
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`)
 
 .. signature:: center
 
@@ -28,7 +33,14 @@ X(453) = POINT ALSHAIN
    :badge: 3 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`46 <X(46)>`, 1800}, {1014, 1454}
+   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`46 <X_46>`, 1800}, {1014, 1454}
+
+Notes
+-----
+
+.. container:: note-item
+
+   As a point on the Euler line, :ref:`X_453 <X_453>` has Shinagawa coefficients :math:`(2\$aS_{B}S_{C}\$+\$aS_{A}\$(E+2F)-2\$a\$S^{2}-2abcF, -\$aS_{A}\$E+2\$a\$S^{2}+abcE)`.
 
 .. toctree::
    :hidden:

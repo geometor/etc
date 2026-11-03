@@ -1,18 +1,21 @@
-:canonical_id: X(971)
+:canonical_id: X_971
 :type: code
+:subtitle: INTERSECTION OF LINES X_3X_9 AND X_4X_7
 
-X(971) = INTERSECTION OF LINES X(3)X(9) AND X(4)X(7) — Code
-===========================================================
+X_971
+=====
+
+.. rubric:: INTERSECTION OF LINES X_3X_9 AND X_4X_7
 
 .. enunciation::
 
-   :ref:`X(971) <X(971)>` is the perspector of triangle :g:`ABC << A B C >>` and the :term:`tangential triangle <tangential-triangle>` of the conic that passes through the points :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, :ref:`X(2) <X(2)>`, and :ref:`X(9) <X(9)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X_971 <X_971>` lies on the line at infinity.
 
 .. figure:: x-00971.svg
-   :alt: X(971) = INTERSECTION OF LINES X(3)X(9) AND X(4)X(7)
+   :alt: X_971 — INTERSECTION OF LINES X_3X_9 AND X_4X_7
    :align: center
 
-   **X(971) = INTERSECTION OF LINES X(3)X(9) AND X(4)X(7)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_971** (*INTERSECTION OF LINES X_3X_9 AND X_4X_7*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

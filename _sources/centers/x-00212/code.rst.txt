@@ -1,18 +1,21 @@
-:canonical_id: X(212)
+:canonical_id: X_212
 :type: code
+:subtitle: X_9-CEVA CONJUGATE OF X_41
 
-X(212) = X(9)-CEVA CONJUGATE OF X(41) — Code
-============================================
+X_212
+=====
+
+.. rubric:: X_9-CEVA CONJUGATE OF X_41
 
 .. enunciation::
 
-   The :term:`trilinear polar <trilinear-polar>` of :ref:`X(212) <X(212)>` passes through X(1946). (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
+   :ref:`X_212 <X_212>` = :ref:`X_4 <X_4>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_7 <X_7>`
 
 .. figure:: x-00212.svg
-   :alt: X(212) = X(9)-CEVA CONJUGATE OF X(41)
+   :alt: X_212 — X_9-CEVA CONJUGATE OF X_41
    :align: center
 
-   **X(212) = X(9)-CEVA CONJUGATE OF X(41)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_212** (*X_9-CEVA CONJUGATE OF X_41*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

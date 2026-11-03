@@ -1,22 +1,31 @@
 :order: 134
 :type: center
-:canonical_id: X(134)
-:dependencies: X(3), X(52), X(53), X(96), X(107), X(128)
+:canonical_id: X_134
+:subtitle: X_107-OF-ORTHIC-TRIANGLE
+:dependencies: X_3, X_52, X_53, X_96, X_107, X_128
 
-.. _X(134):
+.. _X_134:
 
-X(134) = X(107)-OF-ORTHIC-TRIANGLE
-==================================
+X_134
+=====
+
+.. rubric:: X_107-OF-ORTHIC-TRIANGLE
 
 .. enunciation::
 
-   :ref:`X(134) <X(134)>` = :ref:`X(107) <X(107)>`-of-:term:`orthic triangle <orthic-triangle>`
+   :ref:`X_134 <X_134>` = :ref:`X_107 <X_107>`-of-:term:`orthic triangle <orthic-triangle>`
 
 .. figure:: x-00134.svg
-   :alt: X(134) = X(107)-OF-ORTHIC-TRIANGLE
+   :alt: X_134 — X_107-OF-ORTHIC-TRIANGLE
    :align: center
 
-   **X(134) = X(107)-OF-ORTHIC-TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_134** (*X_107-OF-ORTHIC-TRIANGLE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Derived Triangle:** :term:`Orthic Triangle <orthic triangle>` :g:`△H_aH_bH_c << H_a H_b H_c >>` — vertices :g:`H_a <H_a>`, :g:`H_b <H_b>`, :g:`H_c <H_c>` (Pedal triangle of Orthocenter X_4 (altitude feet))
+   * **Concurrence Lines:** :g:`H_a–X_134 <[ H_a X_134 ]>`, :g:`H_b–X_134 <[ H_b X_134 ]>`, :g:`H_c–X_134 <[ H_c X_134 ]>` concurring at :g:`X_134 <X_134>`
 
 .. signature:: center
 
@@ -26,23 +35,23 @@ X(134) = X(107)-OF-ORTHIC-TRIANGLE
 
 .. container:: note-item
 
-   :ref:`X(134) <X(134)>` lies on the nine-point circle
+   :ref:`X_134 <X_134>` lies on the nine-point circle
 
 .. collapse:: Incident Central Lines
    :badge: 1 line
    :class: line-catalog
 
-   {:ref:`52 <X(52)>`, :ref:`128 <X(128)>`}
+   {:ref:`52 <X_52>`, :ref:`128 <X_128>`}
 
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X(134) <X(134)>` = :ref:`X(107) <X(107)>`-of-orthic triangle
-   * :ref:`X(134) <X(134)>` = center of the rectangular hyperbola that passes through :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, and :ref:`X(52) <X(52)>`
-   * :ref:`X(134) <X(134)>` = :term:`trilinear pole <trilinear-pole>` wrt orthic triangle of line :ref:`X(52) <X(52)>`\ \ :ref:`X(53) <X(53)>`
-   * :ref:`X(134) <X(134)>` = :term:`crosssum <crosssum>` of circumcircle intercepts of line :ref:`X(3) <X(3)>`\ \ :ref:`X(96) <X(96)>`
-   * :ref:`X(134) <X(134)>` = orthopole of line :ref:`X(3) <X(3)>`\ \ :ref:`X(96) <X(96)>`
-   * :ref:`X(134) <X(134)>` = Kirikami-six-circles-image of :ref:`X(52) <X(52)>`
+   * :ref:`X_134 <X_134>` = :ref:`X_107 <X_107>`-of-orthic triangle
+   * :ref:`X_134 <X_134>` = center of the rectangular hyperbola that passes through :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, and :ref:`X_52 <X_52>`
+   * :ref:`X_134 <X_134>` = :term:`trilinear pole <trilinear-pole>` wrt orthic triangle of line :ref:`X_52 <X_52>`\ \ :ref:`X_53 <X_53>`
+   * :ref:`X_134 <X_134>` = :term:`crosssum <crosssum>` of circumcircle intercepts of line :ref:`X_3 <X_3>`\ \ :ref:`X_96 <X_96>`
+   * :ref:`X_134 <X_134>` = orthopole of line :ref:`X_3 <X_3>`\ \ :ref:`X_96 <X_96>`
+   * :ref:`X_134 <X_134>` = Kirikami-six-circles-image of :ref:`X_52 <X_52>`
 
 .. toctree::
    :hidden:

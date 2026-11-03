@@ -1,18 +1,21 @@
-:canonical_id: X(171)
+:canonical_id: X_171
 :type: code
+:subtitle: {X_2, X_31}-HARMONIC CONJUGATE OF X_238
 
-X(171) = {X(2), X(31)}-HARMONIC CONJUGATE OF X(238) — Code
-==========================================================
+X_171
+=====
+
+.. rubric:: {X_2, X_31}-HARMONIC CONJUGATE OF X_238
 
 .. enunciation::
 
-   :ref:`X(171) <X(171)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(256) <X(256)>`
+   :ref:`X_171 <X_171>` is the {:ref:`X_2 <X_2>`, :ref:`X_31 <X_31>`}-harmonic conjugate of :ref:`X_238 <X_238>`.
 
 .. figure:: x-00171.svg
-   :alt: X(171) = {X(2), X(31)}-HARMONIC CONJUGATE OF X(238)
+   :alt: X_171 — {X_2, X_31}-HARMONIC CONJUGATE OF X_238
    :align: center
 
-   **X(171) = {X(2), X(31)}-HARMONIC CONJUGATE OF X(238)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_171** (*{X_2, X_31}-HARMONIC CONJUGATE OF X_238*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

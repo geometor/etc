@@ -1,18 +1,21 @@
-:canonical_id: X(210)
+:canonical_id: X_210
 :type: code
+:subtitle: X_10-CEVA CONJUGATE OF X_37
 
-X(210) = X(10)-CEVA CONJUGATE OF X(37) — Code
-=============================================
+X_210
+=====
+
+.. rubric:: X_10-CEVA CONJUGATE OF X_37
 
 .. enunciation::
 
-   :ref:`X(210) <X(210)>` = :ref:`X(2) <X(2)>`-of-:term:`extouch triangle <extouch-triangle>`, so that :ref:`X(210) <X(210)>`\ X(1158) = Euler line of the extouch triangle
+   :ref:`X_210 <X_210>` = :ref:`X_10 <X_10>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_37 <X_37>`
 
 .. figure:: x-00210.svg
-   :alt: X(210) = X(10)-CEVA CONJUGATE OF X(37)
+   :alt: X_210 — X_10-CEVA CONJUGATE OF X_37
    :align: center
 
-   **X(210) = X(10)-CEVA CONJUGATE OF X(37)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_210** (*X_10-CEVA CONJUGATE OF X_37*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

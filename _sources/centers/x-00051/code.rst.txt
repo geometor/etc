@@ -1,18 +1,21 @@
-:canonical_id: X(51)
+:canonical_id: X_51
 :type: code
+:subtitle: CENTROID OF ORTHIC TRIANGLE
 
-X(51) = CENTROID OF ORTHIC TRIANGLE — Code
-==========================================
+X_51
+====
+
+.. rubric:: CENTROID OF ORTHIC TRIANGLE
 
 .. enunciation::
 
-   Let :g:`A'B'C' << A' B' C' >>` be the :term:`anticomplementary triangle <anticomplementary-triangle>` and let :g:`B_{a} <B_a>` and :g:`C_{a} <C_a>` be the orthogonal projections of :g:`B' <B'>` and :g:`C' <C'>` on :g:`BC <[ B C ]>`, respectively. Define :g:`C_{b} <C_b>` and :g:`A_{c} <A_c>` cyclically, and define :g:`A_{b} <A_b>` and :g:`B_{c} <B_c>` cyclically. Then :ref:`X(51) <X(51)>` is the centroid of BaCaCbAbAcBc. (:person:`Randy Hutson <randy-hutson>`, April 9, 2016)
+   :ref:`X_51 <X_51>` is the centroid of :term:`orthic triangle <orthic-triangle>`.
 
 .. figure:: x-00051.svg
-   :alt: X(51) = CENTROID OF ORTHIC TRIANGLE
+   :alt: X_51 — CENTROID OF ORTHIC TRIANGLE
    :align: center
 
-   **X(51) = CENTROID OF ORTHIC TRIANGLE** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_51** (*CENTROID OF ORTHIC TRIANGLE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

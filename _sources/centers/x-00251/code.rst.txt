@@ -1,18 +1,21 @@
-:canonical_id: X(251)
+:canonical_id: X_251
 :type: code
+:subtitle: ISOGONAL CONJUGATE OF X_141
 
-X(251) = ISOGONAL CONJUGATE OF X(141) — Code
-============================================
+X_251
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_141
 
 .. enunciation::
 
-   Let :g:`K <K>` be the symmedian point of :g:`ABC << A B C >>` and let :g:`A' <A'>` be the symmedian point of the triangle :g:`BCK << B C K >>`; define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(251) <X(251)>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   :ref:`X_251 <X_251>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_141 <X_141>`.
 
 .. figure:: x-00251.svg
-   :alt: X(251) = ISOGONAL CONJUGATE OF X(141)
+   :alt: X_251 — ISOGONAL CONJUGATE OF X_141
    :align: center
 
-   **X(251) = ISOGONAL CONJUGATE OF X(141)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_251** (*ISOGONAL CONJUGATE OF X_141*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

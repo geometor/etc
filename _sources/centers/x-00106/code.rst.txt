@@ -1,18 +1,21 @@
-:canonical_id: X(106)
+:canonical_id: X_106
 :type: code
+:subtitle: Λ(INCENTER, CENTROID)
 
-X(106) = Λ(INCENTER, CENTROID) — Code
-=====================================
+X_106
+=====
+
+.. rubric:: Λ(INCENTER, CENTROID)
 
 .. enunciation::
 
-   :ref:`X(106) <X(106)>` = reflection of X(1293) in :ref:`X(3) <X(3)>`
+   :ref:`X_106 <X_106>` = :term:`anticomplement <anticomplement>` of :ref:`X_121 <X_121>`
 
 .. figure:: x-00106.svg
-   :alt: X(106) = Λ(INCENTER, CENTROID)
+   :alt: X_106 — Λ(INCENTER, CENTROID)
    :align: center
 
-   **X(106) = Λ(INCENTER, CENTROID)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_106** (*Λ(INCENTER, CENTROID)*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

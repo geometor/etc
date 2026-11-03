@@ -1,18 +1,21 @@
-:canonical_id: X(573)
+:canonical_id: X_573
 :type: code
+:subtitle: ORTHOHARMONIC OF X_58
 
-X(573) = ORTHOHARMONIC OF X(58) — Code
-======================================
+X_573
+=====
+
+.. rubric:: ORTHOHARMONIC OF X_58
 
 .. enunciation::
 
-   :ref:`X(573) <X(573)>` is the internal center of similitude of the circumcircle and Apollonius circle. The external center is :ref:`X(386) <X(386)>`. (Peter J. C. Moses, 8/22/03)
+   :ref:`X_573 <X_573>` = inverse-in-Brocard-circle of :ref:`X_572 <X_572>`
 
 .. figure:: x-00573.svg
-   :alt: X(573) = ORTHOHARMONIC OF X(58)
+   :alt: X_573 — ORTHOHARMONIC OF X_58
    :align: center
 
-   **X(573) = ORTHOHARMONIC OF X(58)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_573** (*ORTHOHARMONIC OF X_58*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

@@ -1,18 +1,21 @@
-:canonical_id: X(194)
+:canonical_id: X_194
 :type: code
+:subtitle: X_6-CEVA CONJUGATE OF X_2
 
-X(194) = X(6)-CEVA CONJUGATE OF X(2) — Code
-===========================================
+X_194
+=====
+
+.. rubric:: X_6-CEVA CONJUGATE OF X_2
 
 .. enunciation::
 
-   Let :g:`O_{a} <O_a>` be the circle through :g:`A <A>` and tangent to :g:`BC <[ B C ]>` at its midpoint. Define :g:`O_{b} <O_b>` and :g:`O_{c} <O_c>` cyclically. The radical center of :g:`O_{a} <O_a>`, :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>` is :ref:`X(194) <X(194)>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
+   :ref:`X_194 <X_194>` = reflection of :ref:`X_76 <X_76>` in :ref:`X_39 <X_39>`
 
 .. figure:: x-00194.svg
-   :alt: X(194) = X(6)-CEVA CONJUGATE OF X(2)
+   :alt: X_194 — X_6-CEVA CONJUGATE OF X_2
    :align: center
 
-   **X(194) = X(6)-CEVA CONJUGATE OF X(2)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_194** (*X_6-CEVA CONJUGATE OF X_2*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

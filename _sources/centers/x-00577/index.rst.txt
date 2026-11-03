@@ -1,22 +1,31 @@
 :order: 577
 :type: center
-:canonical_id: X(577)
-:dependencies: X(2), X(3), X(4), X(6), X(20), X(22), X(24), X(30), X(48), X(50), X(53), X(68), X(69), X(92), X(95), X(97), X(107), X(112), X(141), X(160), X(172), X(184), X(198), X(206), X(216), X(219), X(220), X(232), X(248), X(264), X(268), X(317), X(324), X(371), X(372), X(376), X(389), X(393), X(394), X(395), X(396), X(401), X(403), X(418), X(441), X(465), X(466), X(467), X(478), X(523), X(571), X(603), X(906), X(1038), X(1147), X(1577), X(2052), X(18027), X(23583), X(36426)
+:canonical_id: X_577
+:subtitle: HARMONIC OF X_216
+:dependencies: X_2, X_3, X_4, X_6, X_20, X_22, X_24, X_30, X_48, X_50, X_53, X_68, X_69, X_92, X_95, X_97, X_107, X_112, X_141, X_160, X_172, X_184, X_198, X_206, X_216, X_219, X_220, X_232, X_248, X_264, X_268, X_317, X_324, X_371, X_372, X_376, X_389, X_393, X_394, X_395, X_396, X_401, X_403, X_418, X_441, X_465, X_466, X_467, X_478, X_523, X_571, X_603, X_906, X_1038, X_1147, X_1577, X_2052, X_18027, X_23583, X_36426
 
-.. _X(577):
+.. _X_577:
 
-X(577) = HARMONIC OF X(216)
-===========================
+X_577
+=====
+
+.. rubric:: HARMONIC OF X_216
 
 .. enunciation::
 
-   :ref:`X(577) <X(577)>` = reflection of X(36426) in X(23583)
+   :ref:`X_577 <X_577>` = :term:`complement <complement>` of :ref:`X_317 <X_317>`
 
 .. figure:: x-00577.svg
-   :alt: X(577) = HARMONIC OF X(216)
+   :alt: X_577 — HARMONIC OF X_216
    :align: center
 
-   **X(577) = HARMONIC OF X(216)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_577** (*HARMONIC OF X_216*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{3, 6} <{ 3, 6 }>`, :g:`{30, 53} <{ 30, 53 }>`
+   * **Related Centers:** :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_30 <X_30>` (:ref:`EULER INFINITY POINT <X_30>`), :g:`X_53 <X_53>` (:ref:`SYMMEDIAN POINT OF ORTHIC TRIANGLE <X_53>`)
 
 .. signature:: center
 
@@ -30,7 +39,7 @@ X(577) = HARMONIC OF X(216)
    * **Trilinears:** :math:`\cos A (\tan A + \tan B + \tan C) - \sin A : :`
    * **Trilinears:** :math:`\cos A - \sin A (\cot A \cot B \cot C) : :`
    * **Trilinears:** :math:`\cos A \sin 2A : :`
-   * **Trilinears:** :math:`\cos(A - T) : :`, T as at :ref:`X(389) <X(389)>`
+   * **Trilinears:** :math:`\cos(A - T) : :`, T as at :ref:`X_389 <X_389>`
    * **Trilinears:** :math:`\sec B \sec C - \csc B \csc C : :`
    * **Barycentrics:** :math:`\sin^{2} 2A : :`
 
@@ -38,33 +47,33 @@ X(577) = HARMONIC OF X(216)
    :badge: 18 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`95 <X(95)>`}, {:ref:`3 <X(3)>`, :ref:`6 <X(6)>`}, {:ref:`20 <X(20)>`, :ref:`393 <X(393)>`}, {:ref:`22 <X(22)>`, :ref:`232 <X(232)>`}, {:ref:`30 <X(30)>`, :ref:`53 <X(53)>`}, {:ref:`48 <X(48)>`, :ref:`603 <X(603)>`}, {:ref:`69 <X(69)>`, :ref:`248 <X(248)>`}, {:ref:`112 <X(112)>`, :ref:`376 <X(376)>`}, {:ref:`141 <X(141)>`, :ref:`441 <X(441)>`}, {:ref:`160 <X(160)>`, :ref:`206 <X(206)>`}, {:ref:`172 <X(172)>`, 1038}, {:ref:`184 <X(184)>`, :ref:`418 <X(418)>`}, {:ref:`198 <X(198)>`, :ref:`478 <X(478)>`}, {:ref:`219 <X(219)>`, :ref:`906 <X(906)>`}, {:ref:`220 <X(220)>`, :ref:`268 <X(268)>`}, {:ref:`264 <X(264)>`, :ref:`401 <X(401)>`}, {:ref:`395 <X(395)>`, :ref:`466 <X(466)>`}, {:ref:`396 <X(396)>`, :ref:`465 <X(465)>`}
+   {:ref:`2 <X_2>`, :ref:`95 <X_95>`}, {:ref:`3 <X_3>`, :ref:`6 <X_6>`}, {:ref:`20 <X_20>`, :ref:`393 <X_393>`}, {:ref:`22 <X_22>`, :ref:`232 <X_232>`}, {:ref:`30 <X_30>`, :ref:`53 <X_53>`}, {:ref:`48 <X_48>`, :ref:`603 <X_603>`}, {:ref:`69 <X_69>`, :ref:`248 <X_248>`}, {:ref:`112 <X_112>`, :ref:`376 <X_376>`}, {:ref:`141 <X_141>`, :ref:`441 <X_441>`}, {:ref:`160 <X_160>`, :ref:`206 <X_206>`}, {:ref:`172 <X_172>`, 1038}, {:ref:`184 <X_184>`, :ref:`418 <X_418>`}, {:ref:`198 <X_198>`, :ref:`478 <X_478>`}, {:ref:`219 <X_219>`, :ref:`906 <X_906>`}, {:ref:`220 <X_220>`, :ref:`268 <X_268>`}, {:ref:`264 <X_264>`, :ref:`401 <X_401>`}, {:ref:`395 <X_395>`, :ref:`466 <X_466>`}, {:ref:`396 <X_396>`, :ref:`465 <X_465>`}
 
 .. collapse:: Functional Relations
    :badge: 22 relations
 
-   * :ref:`X(577) <X(577)>` = reflection of X(36426) in X(23583)
-   * :ref:`X(577) <X(577)>` = :term:`isogonal conjugate <isogonal-conjugate>` of X(2052)
-   * :ref:`X(577) <X(577)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(18027)
-   * :ref:`X(577) <X(577)>` = :term:`complement <complement>` of :ref:`X(317) <X(317)>`
-   * :ref:`X(577) <X(577)>` = X(i)-:term:`Ceva conjugate <ceva-conjugate>` of X(j) for these (i,j): (:ref:`3 <X(3)>`, :ref:`184 <X(184)>`), (:ref:`97 <X(97)>`, :ref:`3 <X(3)>`)
-   * :ref:`X(577) <X(577)>` = :ref:`X(418) <X(418)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(3) <X(3)>`
-   * :ref:`X(577) <X(577)>` = :term:`crosspoint <crosspoint>` of X(i) and X(j) for these (i,j): (:ref:`2 <X(2)>`, :ref:`68 <X(68)>`), (:ref:`3 <X(3)>`, :ref:`394 <X(394)>`)
-   * :ref:`X(577) <X(577)>` = :term:`crosssum <crosssum>` of X(i) and X(j) for these (i,j): (:ref:`4 <X(4)>`, :ref:`393 <X(393)>`), (:ref:`6 <X(6)>`, :ref:`24 <X(24)>`), (:ref:`324 <X(324)>`, :ref:`467 <X(467)>`)
-   * :ref:`X(577) <X(577)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(403) <X(403)>`\ \ :ref:`X(523) <X(523)>`
-   * :ref:`X(577) <X(577)>` = inverse-in-Brocard-circle of :ref:`X(216) <X(216)>`
-   * :ref:`X(577) <X(577)>` = perspector of circumconic centered at X(1147)
-   * :ref:`X(577) <X(577)>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through X(1147)
-   * :ref:`X(577) <X(577)>` = :ref:`X(2) <X(2)>`-Ceva conjugate of X(1147)
-   * :ref:`X(577) <X(577)>` = :ref:`X(92) <X(92)>`-:term:`isoconjugate <isoconjugate>` of :ref:`X(4) <X(4)>`
-   * :ref:`X(577) <X(577)>` = X(1577)-isoconjugate of :ref:`X(107) <X(107)>`
-   * :ref:`X(577) <X(577)>` = {:ref:`X(6) <X(6)>`,\ :ref:`X(50) <X(50)>`}-harmonic conjugate of :ref:`X(571) <X(571)>`
-   * :ref:`X(577) <X(577)>` = barycentric square of :ref:`X(3) <X(3)>`
-   * :ref:`X(577) <X(577)>` = orthic-to-:g:`ABC << A B C >>` :term:`barycentric image <barycentric-image>` of :ref:`X(53) <X(53)>`
-   * :ref:`X(577) <X(577)>` = antipode of X(36426) in barycentric Euler inellipse
-   * :ref:`X(577) <X(577)>` = circle-{:ref:`X(371) <X(371)>`,\ :ref:`X(372) <X(372)>`,PU(1),PU(39)}}-inverse of :ref:`X(389) <X(389)>`
-   * :ref:`X(577) <X(577)>` = {:ref:`X(371) <X(371)>`,\ :ref:`X(372) <X(372)>`}-harmonic conjugate of :ref:`X(389) <X(389)>`
-   * :ref:`X(577) <X(577)>` = homothetic center of [mid-triangle of 1st & 2nd Kenmotu diagonals triangles] and [mid-triangle of orthic and dual of :term:`orthic triangles <orthic-triangle>`]
+   * :ref:`X_577 <X_577>` = reflection of X_36426 in X_23583
+   * :ref:`X_577 <X_577>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2052
+   * :ref:`X_577 <X_577>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_18027
+   * :ref:`X_577 <X_577>` = complement of :ref:`X_317 <X_317>`
+   * :ref:`X_577 <X_577>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`184 <X_184>`), (:ref:`97 <X_97>`, :ref:`3 <X_3>`)
+   * :ref:`X_577 <X_577>` = :ref:`X_418 <X_418>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_3 <X_3>`
+   * :ref:`X_577 <X_577>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`68 <X_68>`), (:ref:`3 <X_3>`, :ref:`394 <X_394>`)
+   * :ref:`X_577 <X_577>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`393 <X_393>`), (:ref:`6 <X_6>`, :ref:`24 <X_24>`), (:ref:`324 <X_324>`, :ref:`467 <X_467>`)
+   * :ref:`X_577 <X_577>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_403 <X_403>`\ \ :ref:`X_523 <X_523>`
+   * :ref:`X_577 <X_577>` = inverse-in-Brocard-circle of :ref:`X_216 <X_216>`
+   * :ref:`X_577 <X_577>` = perspector of circumconic centered at X_1147
+   * :ref:`X_577 <X_577>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through X_1147
+   * :ref:`X_577 <X_577>` = :ref:`X_2 <X_2>`-Ceva conjugate of X_1147
+   * :ref:`X_577 <X_577>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_4 <X_4>`
+   * :ref:`X_577 <X_577>` = X_1577-isoconjugate of :ref:`X_107 <X_107>`
+   * :ref:`X_577 <X_577>` = {:ref:`X_6 <X_6>`,\ :ref:`X_50 <X_50>`}-harmonic conjugate of :ref:`X_571 <X_571>`
+   * :ref:`X_577 <X_577>` = barycentric square of :ref:`X_3 <X_3>`
+   * :ref:`X_577 <X_577>` = orthic-to-:g:`ABC << A B C >>` :term:`barycentric image <barycentric-image>` of :ref:`X_53 <X_53>`
+   * :ref:`X_577 <X_577>` = antipode of X_36426 in barycentric Euler inellipse
+   * :ref:`X_577 <X_577>` = circle-{:ref:`X_371 <X_371>`,\ :ref:`X_372 <X_372>`,PU(1),PU(39)}}-inverse of :ref:`X_389 <X_389>`
+   * :ref:`X_577 <X_577>` = {:ref:`X_371 <X_371>`,\ :ref:`X_372 <X_372>`}-harmonic conjugate of :ref:`X_389 <X_389>`
+   * :ref:`X_577 <X_577>` = homothetic center of [mid-triangle of 1st & 2nd Kenmotu diagonals triangles] and [mid-triangle of orthic and dual of :term:`orthic triangles <orthic-triangle>`]
 
 .. toctree::
    :hidden:

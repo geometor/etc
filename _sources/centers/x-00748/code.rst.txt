@@ -1,18 +1,21 @@
-:canonical_id: X(748)
+:canonical_id: X_748
 :type: code
+:subtitle: INTERSECTION OF LINES X_2X_31 AND X_9X_38
 
-X(748) = INTERSECTION OF LINES X(2)X(31) AND X(9)X(38) — Code
-=============================================================
+X_748
+=====
+
+.. rubric:: INTERSECTION OF LINES X_2X_31 AND X_9X_38
 
 .. enunciation::
 
-   :ref:`X(748) <X(748)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(749) <X(749)>`
+   :ref:`X_748 <X_748>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_749 <X_749>`
 
 .. figure:: x-00748.svg
-   :alt: X(748) = INTERSECTION OF LINES X(2)X(31) AND X(9)X(38)
+   :alt: X_748 — INTERSECTION OF LINES X_2X_31 AND X_9X_38
    :align: center
 
-   **X(748) = INTERSECTION OF LINES X(2)X(31) AND X(9)X(38)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_748** (*INTERSECTION OF LINES X_2X_31 AND X_9X_38*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

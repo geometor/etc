@@ -1,22 +1,31 @@
 :order: 742
 :type: center
-:canonical_id: X(742)
-:dependencies: X(6), X(30), X(37), X(69), X(75), X(141), X(192), X(320), X(335), X(511), X(743), X(788)
+:canonical_id: X_742
+:subtitle: EVEN (- 1, 2) INFINITY POINT
+:dependencies: X_6, X_30, X_37, X_69, X_75, X_141, X_192, X_320, X_335, X_511, X_743, X_788
 
-.. _X(742):
+.. _X_742:
 
-X(742) = EVEN (- 1, 2) INFINITY POINT
-=====================================
+X_742
+=====
+
+.. rubric:: EVEN (- 1, 2) INFINITY POINT
 
 .. enunciation::
 
-   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X(742) <X(742)>` lies on the line at infinity.
+   As the :term:`isogonal conjugate <isogonal-conjugate>` of a point on the circumcircle, :ref:`X_742 <X_742>` lies on the line at infinity.
 
 .. figure:: x-00742.svg
-   :alt: X(742) = EVEN (- 1, 2) INFINITY POINT
+   :alt: X_742 — EVEN (- 1, 2) INFINITY POINT
    :align: center
 
-   **X(742) = EVEN (- 1, 2) INFINITY POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_742** (*EVEN (- 1, 2) INFINITY POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{6, 75} <{ 6, 75 }>`, :g:`{37, 141} <{ 37, 141 }>`
+   * **Related Centers:** :g:`X_743 <X_743>` (:ref:`EVEN (- 1, 2) CIRCUMCIRCLE POINT <X_743>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_75 <X_75>` (:ref:`ISOTOMIC CONJUGATE OF INCENTER <X_75>`), :g:`X_37 <X_37>` (:ref:`CROSSPOINT OF INCENTER AND CENTROID <X_37>`), :g:`X_141 <X_141>` (:ref:`COMPLEMENT OF SYMMEDIAN POINT <X_141>`)
 
 .. signature:: center
 
@@ -27,13 +36,13 @@ X(742) = EVEN (- 1, 2) INFINITY POINT
    :badge: 5 lines
    :class: line-catalog
 
-   {:ref:`6 <X(6)>`, :ref:`75 <X(75)>`}, {:ref:`30 <X(30)>`, :ref:`511 <X(511)>`}, {:ref:`37 <X(37)>`, :ref:`141 <X(141)>`}, {:ref:`69 <X(69)>`, :ref:`192 <X(192)>`}, {:ref:`320 <X(320)>`, :ref:`335 <X(335)>`}
+   {:ref:`6 <X_6>`, :ref:`75 <X_75>`}, {:ref:`30 <X_30>`, :ref:`511 <X_511>`}, {:ref:`37 <X_37>`, :ref:`141 <X_141>`}, {:ref:`69 <X_69>`, :ref:`192 <X_192>`}, {:ref:`320 <X_320>`, :ref:`335 <X_335>`}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(742) <X(742)>` = isogonal conjugate of :ref:`X(743) <X(743)>`
-   * :ref:`X(742) <X(742)>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X(6) <X(6)>`\ \ :ref:`X(788) <X(788)>`
+   * :ref:`X_742 <X_742>` = isogonal conjugate of :ref:`X_743 <X_743>`
+   * :ref:`X_742 <X_742>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_6 <X_6>`\ \ :ref:`X_788 <X_788>`
 
 .. toctree::
    :hidden:

@@ -1,22 +1,31 @@
 :order: 820
 :type: center
-:canonical_id: X(820)
-:dependencies: X(1), X(3), X(29), X(158), X(255), X(296), X(662), X(775), X(821), X(836), X(1100)
+:canonical_id: X_820
+:subtitle: CROSSPOINT OF X_1 AND X_255
+:dependencies: X_1, X_3, X_29, X_158, X_255, X_296, X_662, X_775, X_821, X_836, X_1100
 
-.. _X(820):
+.. _X_820:
 
-X(820) = CROSSPOINT OF X(1) AND X(255)
-======================================
+X_820
+=====
+
+.. rubric:: CROSSPOINT OF X_1 AND X_255
 
 .. enunciation::
 
-   :ref:`X(820) <X(820)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(821) <X(821)>`
+   :ref:`X_820 <X_820>` is the :term:`crosspoint <crosspoint>` of :ref:`X_1 <X_1>` and :ref:`X_255 <X_255>`.
 
 .. figure:: x-00820.svg
-   :alt: X(820) = CROSSPOINT OF X(1) AND X(255)
+   :alt: X_820 — CROSSPOINT OF X_1 AND X_255
    :align: center
 
-   **X(820) = CROSSPOINT OF X(1) AND X(255)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_820** (*CROSSPOINT OF X_1 AND X_255*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 29} <{ 1, 29 }>`, :g:`{3, 296} <{ 3, 296 }>`
+   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_255 <X_255>` (:ref:`ISOGONAL CONJUGATE OF X(158) <X_255>`), :g:`X_29 <X_29>` (:ref:`CEVAPOINT OF INCENTER AND ORTHOCENTER <X_29>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_296 <X_296>` (:ref:`ISOGONAL CONJUGATE OF X(243) <X_296>`)
 
 .. signature:: center
 
@@ -28,14 +37,14 @@ X(820) = CROSSPOINT OF X(1) AND X(255)
    :badge: 4 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`29 <X(29)>`}, {:ref:`3 <X(3)>`, :ref:`296 <X(296)>`}, {:ref:`662 <X(662)>`, :ref:`775 <X(775)>`}, {:ref:`836 <X(836)>`, 1100}
+   {:ref:`1 <X_1>`, :ref:`29 <X_29>`}, {:ref:`3 <X_3>`, :ref:`296 <X_296>`}, {:ref:`662 <X_662>`, :ref:`775 <X_775>`}, {:ref:`836 <X_836>`, 1100}
 
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X(820) <X(820)>` = isogonal conjugate of :ref:`X(821) <X(821)>`
-   * :ref:`X(820) <X(820)>` = :term:`crosspoint <crosspoint>` of :ref:`X(1) <X(1)>` and :ref:`X(255) <X(255)>`
-   * :ref:`X(820) <X(820)>` = :term:`crosssum <crosssum>` of :ref:`X(1) <X(1)>` and :ref:`X(158) <X(158)>`
+   * :ref:`X_820 <X_820>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_821 <X_821>`
+   * :ref:`X_820 <X_820>` = crosspoint of :ref:`X_1 <X_1>` and :ref:`X_255 <X_255>`
+   * :ref:`X_820 <X_820>` = :term:`crosssum <crosssum>` of :ref:`X_1 <X_1>` and :ref:`X_158 <X_158>`
 
 .. toctree::
    :hidden:

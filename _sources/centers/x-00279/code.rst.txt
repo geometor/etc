@@ -1,18 +1,21 @@
-:canonical_id: X(279)
+:canonical_id: X_279
 :type: code
+:subtitle: ISOGONAL CONJUGATE OF X_220
 
-X(279) = ISOGONAL CONJUGATE OF X(220) — Code
-============================================
+X_279
+=====
+
+.. rubric:: ISOGONAL CONJUGATE OF X_220
 
 .. enunciation::
 
-   :ref:`X(279) <X(279)>` is the Brianchon point (perspector) of the inellipse that is the barycentric square of the Gergonne line. The center of the inellipse is X(4000). (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
+   :ref:`X_279 <X_279>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_220 <X_220>`.
 
 .. figure:: x-00279.svg
-   :alt: X(279) = ISOGONAL CONJUGATE OF X(220)
+   :alt: X_279 — ISOGONAL CONJUGATE OF X_220
    :align: center
 
-   **X(279) = ISOGONAL CONJUGATE OF X(220)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_279** (*ISOGONAL CONJUGATE OF X_220*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

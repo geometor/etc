@@ -1,18 +1,21 @@
-:canonical_id: X(660)
+:canonical_id: X_660
 :type: code
+:subtitle: TRILINEAR POLE OF LINE X_1X_39
 
-X(660) = TRILINEAR POLE OF LINE X(1)X(39) — Code
-================================================
+X_660
+=====
+
+.. rubric:: TRILINEAR POLE OF LINE X_1X_39
 
 .. enunciation::
 
-   :ref:`X(660) <X(660)>` = reflection of X(38989) in X(40538)
+   :ref:`X_660 <X_660>` = :term:`trilinear pole <trilinear-pole>` of line {1, 39}
 
 .. figure:: x-00660.svg
-   :alt: X(660) = TRILINEAR POLE OF LINE X(1)X(39)
+   :alt: X_660 — TRILINEAR POLE OF LINE X_1X_39
    :align: center
 
-   **X(660) = TRILINEAR POLE OF LINE X(1)X(39)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_660** (*TRILINEAR POLE OF LINE X_1X_39*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

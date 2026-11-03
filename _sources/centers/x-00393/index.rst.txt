@@ -1,22 +1,31 @@
 :order: 393
 :type: center
-:canonical_id: X(393)
-:dependencies: X(1), X(2), X(4), X(6), X(19), X(20), X(24), X(25), X(27), X(31), X(33), X(37), X(42), X(48), X(69), X(92), X(107), X(111), X(158), X(193), X(208), X(216), X(230), X(254), X(278), X(297), X(317), X(342), X(394), X(441), X(459), X(460), X(512), X(525), X(577), X(800), X(836), X(837), X(948), X(967), X(1033), X(1092), X(1093), X(1108), X(1743), X(2052), X(3146), X(3284), X(3767), X(3926), X(5412), X(5413), X(6389)
+:canonical_id: X_393
+:subtitle: X_25-CROSS CONJUGATE OF X_4
+:dependencies: X_1, X_2, X_4, X_6, X_19, X_20, X_24, X_25, X_27, X_31, X_33, X_37, X_42, X_48, X_69, X_92, X_107, X_111, X_158, X_193, X_208, X_216, X_230, X_254, X_278, X_297, X_317, X_342, X_394, X_441, X_459, X_460, X_512, X_525, X_577, X_800, X_836, X_837, X_948, X_967, X_1033, X_1092, X_1093, X_1108, X_1743, X_2052, X_3146, X_3284, X_3767, X_3926, X_5412, X_5413, X_6389
 
-.. _X(393):
+.. _X_393:
 
-X(393) = X(25)-CROSS CONJUGATE OF X(4)
-======================================
+X_393
+=====
+
+.. rubric:: X_25-CROSS CONJUGATE OF X_4
 
 .. enunciation::
 
-   Let :g:`H_{a} <H_a>` be the foot of the :g:`A <A>`-altitude of :g:`ABC << A B C >>`. Let :g:`P_{a} <P_a>` be the foot of the altitude from :g:`H_{a} <H_a>` to :g:`AB <[ A B ]>`, and :g:`Q_{a} <Q_a>` the foot of the altitude from :g:`H_{a} <H_a>` to :g:`CA <[ C A ]>`. Define :g:`H_{b} <H_b>`, :g:`H_{c} <H_c>`, :g:`P_{b} <P_b>`, :g:`P_{c} <P_c>`, :g:`Q_{b} <Q_b>`, :g:`Q_{c} <Q_c>` cyclically. Let :g:`A' <A'>` be the :term:`trilinear pole <trilinear-pole>` of line :g:`P_{a}Q_{a} <[ P_a Q_a ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X(393) <X(393)>`. Lines :g:`P_{a}Q_{a} <[ P_a Q_a ]>`, :g:`P_{b}Q_{b} <[ P_b Q_b ]>`, :g:`P_{c}Q_{c} <[ P_c Q_c ]>` are the antiparallels in the construction of the Taylor circle. (:person:`Randy Hutson <randy-hutson>`, January 29, 2018)
+   :ref:`X_393 <X_393>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_394 <X_394>`
 
 .. figure:: x-00393.svg
-   :alt: X(393) = X(25)-CROSS CONJUGATE OF X(4)
+   :alt: X_393 — X_25-CROSS CONJUGATE OF X_4
    :align: center
 
-   **X(393) = X(25)-CROSS CONJUGATE OF X(4)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_393** (*X_25-CROSS CONJUGATE OF X_4*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{4, 6} <{ 4, 6 }>`, :g:`{33, 42} <{ 33, 42 }>`
+   * **Related Centers:** :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_459 <X_459>` (:ref:`-CEVA CONJUGATE OF X(4) <X_459>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_33 <X_33>` (:ref:`PERSPECTOR OF THE ORTHIC AND INTANGENTS TRIANGLES <X_33>`), :g:`X_42 <X_42>` (:ref:`CROSSPOINT OF INCENTER AND SYMMEDIAN POINT <X_42>`)
 
 .. signature:: center
 
@@ -38,40 +47,44 @@ X(393) = X(25)-CROSS CONJUGATE OF X(4)
    :badge: 19 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`836 <X(836)>`}, {:ref:`2 <X(2)>`, :ref:`216 <X(216)>`}, {:ref:`4 <X(4)>`, :ref:`6 <X(6)>`}, {:ref:`19 <X(19)>`, :ref:`208 <X(208)>`}, {:ref:`20 <X(20)>`, :ref:`577 <X(577)>`}, {:ref:`24 <X(24)>`, :ref:`254 <X(254)>`}, {:ref:`25 <X(25)>`, 1033}, {:ref:`27 <X(27)>`, :ref:`967 <X(967)>`}, {:ref:`33 <X(33)>`, :ref:`42 <X(42)>`}, {:ref:`37 <X(37)>`, :ref:`158 <X(158)>`}, {:ref:`69 <X(69)>`, :ref:`297 <X(297)>`}, {:ref:`107 <X(107)>`, :ref:`111 <X(111)>`}, {:ref:`193 <X(193)>`, :ref:`317 <X(317)>`}, {:ref:`230 <X(230)>`, :ref:`459 <X(459)>`}, {:ref:`278 <X(278)>`, 1108}, {:ref:`342 <X(342)>`, :ref:`948 <X(948)>`}, {:ref:`394 <X(394)>`, :ref:`837 <X(837)>`}, {:ref:`800 <X(800)>`, 1093}, {3146, 3284}
+   {:ref:`1 <X_1>`, :ref:`836 <X_836>`}, {:ref:`2 <X_2>`, :ref:`216 <X_216>`}, {:ref:`4 <X_4>`, :ref:`6 <X_6>`}, {:ref:`19 <X_19>`, :ref:`208 <X_208>`}, {:ref:`20 <X_20>`, :ref:`577 <X_577>`}, {:ref:`24 <X_24>`, :ref:`254 <X_254>`}, {:ref:`25 <X_25>`, 1033}, {:ref:`27 <X_27>`, :ref:`967 <X_967>`}, {:ref:`33 <X_33>`, :ref:`42 <X_42>`}, {:ref:`37 <X_37>`, :ref:`158 <X_158>`}, {:ref:`69 <X_69>`, :ref:`297 <X_297>`}, {:ref:`107 <X_107>`, :ref:`111 <X_111>`}, {:ref:`193 <X_193>`, :ref:`317 <X_317>`}, {:ref:`230 <X_230>`, :ref:`459 <X_459>`}, {:ref:`278 <X_278>`, 1108}, {:ref:`342 <X_342>`, :ref:`948 <X_948>`}, {:ref:`394 <X_394>`, :ref:`837 <X_837>`}, {:ref:`800 <X_800>`, 1093}, {3146, 3284}
 
 .. collapse:: Functional Relations
    :badge: 14 relations
 
-   * :ref:`X(393) <X(393)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(394) <X(394)>`
-   * :ref:`X(393) <X(393)>` = :term:`crosspoint <crosspoint>` of :ref:`X(4) <X(4)>` and :ref:`X(459) <X(459)>`
-   * :ref:`X(393) <X(393)>` = :ref:`X(25) <X(25)>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X(4) <X(4)>`
-   * :ref:`X(393) <X(393)>` = :term:`crosssum <crosssum>` of :ref:`X(577) <X(577)>` and X(1092)
-   * :ref:`X(393) <X(393)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(3926)
-   * :ref:`X(393) <X(393)>` = :term:`anticomplement <anticomplement>` of X(6389)
-   * :ref:`X(393) <X(393)>` = :term:`cevapoint <cevapoint>` of X(5412) and X(5413)
-   * :ref:`X(393) <X(393)>` = barycentric square of :ref:`X(4) <X(4)>`
-   * :ref:`X(393) <X(393)>` = trilinear pole of line :ref:`X(460) <X(460)>`\ \ :ref:`X(512) <X(512)>` (the polar of :ref:`X(69) <X(69)>` wrt polar circle, and radical axis of nine-point circle and orthosymmedial circle)
-   * :ref:`X(393) <X(393)>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X(69) <X(69)>` (line :ref:`X(441) <X(441)>`\ \ :ref:`X(525) <X(525)>`)
-   * :ref:`X(393) <X(393)>` = polar conjugate of :ref:`X(69) <X(69)>`
-   * :ref:`X(393) <X(393)>` = X(i)-:term:`isoconjugate <isoconjugate>` of X(j) for these {i,j}: {:ref:`1 <X(1)>`, :ref:`394 <X(394)>`}, {:ref:`31 <X(31)>`, 3926}, {:ref:`48 <X(48)>`, :ref:`69 <X(69)>`}, {:ref:`92 <X(92)>`, 1092}
-   * :ref:`X(393) <X(393)>` = :term:`vertex conjugate <vertex-conjugate>` of the foci of the inconic with perspector X(2052)
-   * :ref:`X(393) <X(393)>` = X(1743)-of-orthic-triangle if :g:`ABC << A B C >>` is acute
+   * :ref:`X_393 <X_393>` = isogonal conjugate of :ref:`X_394 <X_394>`
+   * :ref:`X_393 <X_393>` = :term:`crosspoint <crosspoint>` of :ref:`X_4 <X_4>` and :ref:`X_459 <X_459>`
+   * :ref:`X_393 <X_393>` = :ref:`X_25 <X_25>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_4 <X_4>`
+   * :ref:`X_393 <X_393>` = :term:`crosssum <crosssum>` of :ref:`X_577 <X_577>` and X_1092
+   * :ref:`X_393 <X_393>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3926
+   * :ref:`X_393 <X_393>` = :term:`anticomplement <anticomplement>` of X_6389
+   * :ref:`X_393 <X_393>` = :term:`cevapoint <cevapoint>` of X_5412 and X_5413
+   * :ref:`X_393 <X_393>` = barycentric square of :ref:`X_4 <X_4>`
+   * :ref:`X_393 <X_393>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_460 <X_460>`\ \ :ref:`X_512 <X_512>` (the polar of :ref:`X_69 <X_69>` wrt polar circle, and radical axis of nine-point circle and orthosymmedial circle)
+   * :ref:`X_393 <X_393>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_69 <X_69>` (line :ref:`X_441 <X_441>`\ \ :ref:`X_525 <X_525>`)
+   * :ref:`X_393 <X_393>` = polar conjugate of :ref:`X_69 <X_69>`
+   * :ref:`X_393 <X_393>` = X_i-:term:`isoconjugate <isoconjugate>` of X_j for these {i,j}: {:ref:`1 <X_1>`, :ref:`394 <X_394>`}, {:ref:`31 <X_31>`, 3926}, {:ref:`48 <X_48>`, :ref:`69 <X_69>`}, {:ref:`92 <X_92>`, 1092}
+   * :ref:`X_393 <X_393>` = :term:`vertex conjugate <vertex-conjugate>` of the foci of the inconic with perspector X_2052
+   * :ref:`X_393 <X_393>` = X_1743-of-orthic-triangle if :g:`ABC << A B C >>` is acute
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>` be the Euler and anti-Euler triangles, resp. Let :g:`A* <A*>` be the barycentric product :g:`A' <A'>`\ \*\ :g:`A″ <A″>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X(393) <X(393)>`. (Randy Hutson, January 29, 2018)
+   Let :g:`H_{a} <H_a>` be the foot of the :g:`A <A>`-altitude of :g:`ABC << A B C >>`. Let :g:`P_{a} <P_a>` be the foot of the altitude from :g:`H_{a} <H_a>` to :g:`AB <[ A B ]>`, and :g:`Q_{a} <Q_a>` the foot of the altitude from :g:`H_{a} <H_a>` to :g:`CA <[ C A ]>`. Define :g:`H_{b} <H_b>`, :g:`H_{c} <H_c>`, :g:`P_{b} <P_b>`, :g:`P_{c} <P_c>`, :g:`Q_{b} <Q_b>`, :g:`Q_{c} <Q_c>` cyclically. Let :g:`A' <A'>` be the trilinear pole of line :g:`P_{a}Q_{a} <[ P_a Q_a ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X_393 <X_393>`. Lines :g:`P_{a}Q_{a} <[ P_a Q_a ]>`, :g:`P_{b}Q_{b} <[ P_b Q_b ]>`, :g:`P_{c}Q_{c} <[ P_c Q_c ]>` are the antiparallels in the construction of the Taylor circle. (:person:`Randy Hutson <randy-hutson>`, January 29, 2018)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`A″ <A″>` be the cevapoint of the (real or imaginary) circumcircle intercepts of line :g:`B'C' <[ B' C' ]>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X(393) <X(393)>`. (Randy Hutson, July 31 2018)
+   Let :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>` be the Euler and anti-:term:`Euler triangles <euler-triangle>`, resp. Let :g:`A* <A*>` be the barycentric product :g:`A' <A'>`\ \*\ :g:`A″ <A″>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X_393 <X_393>`. (Randy Hutson, January 29, 2018)
 
 .. container:: note-item
 
-   :ref:`X(393) <X(393)>` is the Brianchon point (perspector) of the inellipse that is the barycentric square of the orthic axis. The center of this inellipse is X(3767). (Randy Hutson, October 15, 2018)
+   Let :g:`A'B'C' << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`A″ <A″>` be the cevapoint of the (real or imaginary) circumcircle intercepts of line :g:`B'C' <[ H_b H_c ]>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_393 <X_393>`. (Randy Hutson, July 31 2018)
+
+.. container:: note-item
+
+   :ref:`X_393 <X_393>` is the Brianchon point (perspector) of the inellipse that is the barycentric square of the orthic axis. The center of this inellipse is X_3767. (Randy Hutson, October 15, 2018)
 
 .. toctree::
    :hidden:

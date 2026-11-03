@@ -1,22 +1,31 @@
 :order: 595
 :type: center
-:canonical_id: X(595)
-:dependencies: X(1), X(3), X(10), X(21), X(31), X(32), X(35), X(40), X(46), X(55), X(56), X(58), X(82), X(101), X(106), X(110), X(171), X(244), X(386), X(387), X(390), X(517), X(523), X(580), X(596), X(602), X(614), X(849), X(902), X(995), X(1125)
+:canonical_id: X_595
+:subtitle: 2nd HATZIPOLAKIS-YIU POINT
+:dependencies: X_1, X_3, X_10, X_21, X_31, X_32, X_35, X_40, X_46, X_55, X_56, X_58, X_82, X_101, X_106, X_110, X_171, X_244, X_386, X_387, X_390, X_517, X_523, X_580, X_596, X_602, X_614, X_849, X_902, X_995, X_1125
 
-.. _X(595):
+.. _X_595:
 
-X(595) = 2nd HATZIPOLAKIS-YIU POINT
-===================================
+X_595
+=====
+
+.. rubric:: 2nd HATZIPOLAKIS-YIU POINT
 
 .. enunciation::
 
-   Let O(A) be the circle tangent to line :g:`BC <[ B C ]>` and to the circumcircle of triangle :g:`ABC << A B C >>` at vertex :g:`A <A>`, and define O(B) and O(C) cyclically. :ref:`X(595) <X(595)>` is the radical center of O(A), O(B), O(C).
+   Let O(A) be the circle tangent to line :g:`BC <[ B C ]>` and to the circumcircle of triangle :g:`ABC << A B C >>` at vertex :g:`A <A>`, and define O(B) and O(C) cyclically. :ref:`X_595 <X_595>` is the radical center of O(A), O(B), O(C).
 
 .. figure:: x-00595.svg
-   :alt: X(595) = 2nd HATZIPOLAKIS-YIU POINT
+   :alt: X_595 — 2nd HATZIPOLAKIS-YIU POINT
    :align: center
 
-   **X(595) = 2nd HATZIPOLAKIS-YIU POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_595** (*2nd HATZIPOLAKIS-YIU POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{1, 21} <{ 1, 21 }>`, :g:`{10, 82} <{ 10, 82 }>`
+   * **Related Centers:** :g:`X_596 <X_596>` (:ref:`ISOGONAL CONJUGATE OF X(595) <X_596>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_21 <X_21>` (:ref:`SCHIFFLER POINT <X_21>`), :g:`X_10 <X_10>` (:ref:`SPIEKER CENTER <X_10>`), :g:`X_82 <X_82>` (:ref:`ISOGONAL CONJUGATE OF X(38) <X_82>`)
 
 .. signature:: center
 
@@ -34,15 +43,15 @@ X(595) = 2nd HATZIPOLAKIS-YIU POINT
    :badge: 13 lines
    :class: line-catalog
 
-   {:ref:`1 <X(1)>`, :ref:`21 <X(21)>`}, {:ref:`3 <X(3)>`, :ref:`995 <X(995)>`}, {:ref:`10 <X(10)>`, :ref:`82 <X(82)>`}, {:ref:`32 <X(32)>`, :ref:`101 <X(101)>`}, {:ref:`35 <X(35)>`, :ref:`902 <X(902)>`}, {:ref:`40 <X(40)>`, :ref:`602 <X(602)>`}, {:ref:`46 <X(46)>`, :ref:`614 <X(614)>`}, {:ref:`55 <X(55)>`, :ref:`386 <X(386)>`}, {:ref:`56 <X(56)>`, :ref:`106 <X(106)>`}, {:ref:`110 <X(110)>`, :ref:`849 <X(849)>`}, {:ref:`171 <X(171)>`, 1125}, {:ref:`387 <X(387)>`, :ref:`390 <X(390)>`}, {:ref:`517 <X(517)>`, :ref:`580 <X(580)>`}
+   {:ref:`1 <X_1>`, :ref:`21 <X_21>`}, {:ref:`3 <X_3>`, :ref:`995 <X_995>`}, {:ref:`10 <X_10>`, :ref:`82 <X_82>`}, {:ref:`32 <X_32>`, :ref:`101 <X_101>`}, {:ref:`35 <X_35>`, :ref:`902 <X_902>`}, {:ref:`40 <X_40>`, :ref:`602 <X_602>`}, {:ref:`46 <X_46>`, :ref:`614 <X_614>`}, {:ref:`55 <X_55>`, :ref:`386 <X_386>`}, {:ref:`56 <X_56>`, :ref:`106 <X_106>`}, {:ref:`110 <X_110>`, :ref:`849 <X_849>`}, {:ref:`171 <X_171>`, 1125}, {:ref:`387 <X_387>`, :ref:`390 <X_390>`}, {:ref:`517 <X_517>`, :ref:`580 <X_580>`}
 
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X(595) <X(595)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(596) <X(596)>`
-   * :ref:`X(595) <X(595)>` = :term:`crosssum <crosssum>` of :ref:`X(244) <X(244)>` and :ref:`X(523) <X(523)>`
-   * :ref:`X(595) <X(595)>` = Vu tangential transform of :ref:`X(1) <X(1)>`
-   * :ref:`X(595) <X(595)>` = {:ref:`X(1) <X(1)>`,\ :ref:`X(31) <X(31)>`}-harmonic conjugate of :ref:`X(58) <X(58)>`
+   * :ref:`X_595 <X_595>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_596 <X_596>`
+   * :ref:`X_595 <X_595>` = :term:`crosssum <crosssum>` of :ref:`X_244 <X_244>` and :ref:`X_523 <X_523>`
+   * :ref:`X_595 <X_595>` = Vu tangential transform of :ref:`X_1 <X_1>`
+   * :ref:`X_595 <X_595>` = {:ref:`X_1 <X_1>`,\ :ref:`X_31 <X_31>`}-harmonic conjugate of :ref:`X_58 <X_58>`
 
 Notes
 -----

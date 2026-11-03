@@ -1,22 +1,31 @@
 :order: 632
 :type: center
-:canonical_id: X(632)
-:dependencies: X(2), X(3), X(5), X(140), X(141), X(575), X(631), X(1656)
+:canonical_id: X_632
+:subtitle: 9/10*OG
+:dependencies: X_2, X_3, X_5, X_140, X_141, X_575, X_631, X_1656
 
-.. _X(632):
+.. _X_632:
 
-X(632) = 9/10*OG
-================
+X_632
+=====
+
+.. rubric:: 9/10*OG
 
 .. enunciation::
 
-   :ref:`X(632) <X(632)>` is the {:ref:`X(2) <X(2)>`,\ :ref:`X(140) <X(140)>`}-harmonic conjugate of :ref:`X(5) <X(5)>`.
+   :ref:`X_632 <X_632>` = reflection of :ref:`X_631 <X_631>` in :ref:`X_140 <X_140>`
 
 .. figure:: x-00632.svg
-   :alt: X(632) = 9/10*OG
+   :alt: X_632 — 9/10*OG
    :align: center
 
-   **X(632) = 9/10*OG** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_632** (*9/10*OG*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{631, 140} <{ 631, 140 }>`, :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`)
+   * **Related Centers:** :g:`X_631 <X_631>` (:ref:`3/5*OG <X_631>`), :g:`X_140 <X_140>` (:ref:`MIDPOINT OF X(3) AND X(5) <X_140>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`)
 
 .. signature:: center
 
@@ -33,20 +42,24 @@ X(632) = 9/10*OG
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`2 <X(2)>`, :ref:`3 <X(3)>`}, {:ref:`141 <X(141)>`, :ref:`575 <X(575)>`}
+   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`141 <X_141>`, :ref:`575 <X_575>`}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(632) <X(632)>` = reflection of :ref:`X(631) <X(631)>` in :ref:`X(140) <X(140)>`
-   * :ref:`X(632) <X(632)>` = :term:`complement <complement>` of X(1656)
+   * :ref:`X_632 <X_632>` = reflection of :ref:`X_631 <X_631>` in :ref:`X_140 <X_140>`
+   * :ref:`X_632 <X_632>` = :term:`complement <complement>` of X_1656
 
 Notes
 -----
 
 .. container:: note-item
 
-   As a point on the Euler line, :ref:`X(632) <X(632)>` has Shinagawa coefficients :math:`(7,-1)`.
+   As a point on the Euler line, :ref:`X_632 <X_632>` has Shinagawa coefficients :math:`(7,-1)`.
+
+.. container:: note-item
+
+   :ref:`X_632 <X_632>` is the {:ref:`X_2 <X_2>`,\ :ref:`X_140 <X_140>`}-harmonic conjugate of :ref:`X_5 <X_5>`.
 
 .. toctree::
    :hidden:

@@ -1,18 +1,21 @@
-:canonical_id: X(973)
+:canonical_id: X_973
 :type: code
+:subtitle: 1st EHRMANN POINT
 
-X(973) = 1st EHRMANN POINT — Code
-=================================
+X_973
+=====
+
+.. rubric:: 1st EHRMANN POINT
 
 .. enunciation::
 
-   For constructions of :ref:`X(973) <X(973)>` and :ref:`X(974) <X(974)>`, see :cite:`Hyacinthos <hyacinthos>` message 3695, Sept. 1, 2001, and related messages.
+   :ref:`X_973 <X_973>` = :ref:`X_442 <X_442>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
 
 .. figure:: x-00973.svg
-   :alt: X(973) = 1st EHRMANN POINT
+   :alt: X_973 — 1st EHRMANN POINT
    :align: center
 
-   **X(973) = 1st EHRMANN POINT** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_973** (*1st EHRMANN POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

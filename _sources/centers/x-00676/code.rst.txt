@@ -1,18 +1,21 @@
-:canonical_id: X(676)
+:canonical_id: X_676
 :type: code
+:subtitle: CROSSDIFFERENCE OF X_3 AND X_101
 
-X(676) = CROSSDIFFERENCE OF X(3) AND X(101) — Code
-==================================================
+X_676
+=====
+
+.. rubric:: CROSSDIFFERENCE OF X_3 AND X_101
 
 .. enunciation::
 
-   :ref:`X(676) <X(676)>` = radical center of the circumcircle, nine-point circle, and incircle (Wilson Stothers, 3/31/2003)
+   :ref:`X_676 <X_676>` = :term:`crosspoint <crosspoint>` of :ref:`X_105 <X_105>` and :ref:`X_108 <X_108>`
 
 .. figure:: x-00676.svg
-   :alt: X(676) = CROSSDIFFERENCE OF X(3) AND X(101)
+   :alt: X_676 — CROSSDIFFERENCE OF X_3 AND X_101
    :align: center
 
-   **X(676) = CROSSDIFFERENCE OF X(3) AND X(101)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_676** (*CROSSDIFFERENCE OF X_3 AND X_101*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python

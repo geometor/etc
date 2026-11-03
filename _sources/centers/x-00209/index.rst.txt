@@ -1,22 +1,31 @@
 :order: 209
 :type: center
-:canonical_id: X(209)
-:dependencies: X(4), X(6), X(10), X(12), X(31), X(37), X(44), X(51), X(272), X(306), X(518)
+:canonical_id: X_209
+:subtitle: X_4-CEVA CONJUGATE OF X_37
+:dependencies: X_4, X_6, X_10, X_12, X_31, X_37, X_44, X_51, X_272, X_306, X_518
 
-.. _X(209):
+.. _X_209:
 
-X(209) = X(4)-CEVA CONJUGATE OF X(37)
-=====================================
+X_209
+=====
+
+.. rubric:: X_4-CEVA CONJUGATE OF X_37
 
 .. enunciation::
 
-   :ref:`X(209) <X(209)>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X(272) <X(272)>`
+   :ref:`X_209 <X_209>` = :ref:`X_4 <X_4>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_37 <X_37>`
 
 .. figure:: x-00209.svg
-   :alt: X(209) = X(4)-CEVA CONJUGATE OF X(37)
+   :alt: X_209 — X_4-CEVA CONJUGATE OF X_37
    :align: center
 
-   **X(209) = X(4)-CEVA CONJUGATE OF X(37)** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_209** (*X_4-CEVA CONJUGATE OF X_37*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{10, 12} <{ 10, 12 }>`, :g:`{6, 31} <{ 6, 31 }>`
+   * **Related Centers:** :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_37 <X_37>` (:ref:`CROSSPOINT OF INCENTER AND CENTROID <X_37>`), :g:`X_10 <X_10>` (:ref:`SPIEKER CENTER <X_10>`), :g:`X_12 <X_12>` (:ref:`{X <X_12>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_31 <X_31>` (:ref:`2nd POWER POINT <X_31>`)
 
 .. signature:: center
 
@@ -28,13 +37,13 @@ X(209) = X(4)-CEVA CONJUGATE OF X(37)
    :badge: 4 lines
    :class: line-catalog
 
-   {:ref:`6 <X(6)>`, :ref:`31 <X(31)>`}, {:ref:`10 <X(10)>`, :ref:`12 <X(12)>`}, {:ref:`44 <X(44)>`, :ref:`51 <X(51)>`}, {:ref:`306 <X(306)>`, :ref:`518 <X(518)>`}
+   {:ref:`6 <X_6>`, :ref:`31 <X_31>`}, {:ref:`10 <X_10>`, :ref:`12 <X_12>`}, {:ref:`44 <X_44>`, :ref:`51 <X_51>`}, {:ref:`306 <X_306>`, :ref:`518 <X_518>`}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X(209) <X(209)>` = isogonal conjugate of :ref:`X(272) <X(272)>`
-   * :ref:`X(209) <X(209)>` = :ref:`X(4) <X(4)>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X(37) <X(37)>`
+   * :ref:`X_209 <X_209>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_272 <X_272>`
+   * :ref:`X_209 <X_209>` = :ref:`X_4 <X_4>`-Ceva conjugate of :ref:`X_37 <X_37>`
 
 .. toctree::
    :hidden:

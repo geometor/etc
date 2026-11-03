@@ -1,18 +1,21 @@
-:canonical_id: X(555)
+:canonical_id: X_555
 :type: code
+:subtitle: (X_1,X_158)-ANSWER TO QUESTION A
 
-X(555) = (X(1),X(158))-ANSWER TO QUESTION A — Code
-==================================================
+X_555
+=====
+
+.. rubric:: (X_1,X_158)-ANSWER TO QUESTION A
 
 .. enunciation::
 
-   :ref:`X(555) <X(555)>` = :term:`isotomic conjugate <isotomic-conjugate>` of X(6731)
+   :ref:`X_555 <X_555>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_6731
 
 .. figure:: x-00555.svg
-   :alt: X(555) = (X(1),X(158))-ANSWER TO QUESTION A
+   :alt: X_555 — (X_1,X_158)-ANSWER TO QUESTION A
    :align: center
 
-   **X(555) = (X(1),X(158))-ANSWER TO QUESTION A** constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_555** (*(X_1,X_158)-ANSWER TO QUESTION A*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. literalinclude:: model.py
    :language: python
