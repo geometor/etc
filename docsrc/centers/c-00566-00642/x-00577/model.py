@@ -11,7 +11,6 @@ from geometor.etc.ops import (
     central_line,
     centroid_of,
     circumcenter_of,
-    complement,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
@@ -25,8 +24,7 @@ def construct_x_00577(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_577 = HARMONIC OF X_216 on reference triangle ABC."""
-    X_317 = eval_trilinear_point(model, A, B, C, 'sec(A)*cos(2*A)*(csc(A))**(2)', ID="X_317", classes=["center"])
-    X_577 = complement(model, A, B, C, X_317, ID="X_577", classes=["selected", "target"])
+    X_577 = eval_trilinear_point(model, A, B, C, 'sin(A)*(cos(A))**(2)', ID="X_577", classes=["selected", "target"])
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
     central_line(model, X_3, X_6, 3, 6, incident=True)

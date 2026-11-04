@@ -27,7 +27,7 @@ def construct_x_01736(
     """Construct X_1736 = MIMOSA TRANSFORM OF X_103 on reference triangle ABC."""
     X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center"])
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center"])
-    X_240 = eval_trilinear_point(model, A, B, C, 'sec(A)*cos(A + omega )', ID="X_240", classes=["center"])
+    X_240 = eval_trilinear_point(model, A, B, C, 'sec(A)*cos(A +  omega  )', ID="X_240", classes=["center"])
     X_522 = eval_trilinear_point(model, A, B, C, '(cos(B) - cos(C))*(csc(A))', ID="X_522", classes=["center"])
     central_line(model, X_1, X_6, 1, 6)
     central_line(model, X_240, X_522, 240, 522)

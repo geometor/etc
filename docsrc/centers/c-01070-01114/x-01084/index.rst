@@ -50,8 +50,8 @@ X_1084
    * :ref:`X_1084 <X_1084>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_34537
    * :ref:`X_1084 <X_1084>` = :term:`complement <complement>` of :ref:`X_670 <X_670>`
    * :ref:`X_1084 <X_1084>` = :term:`anticomplement <anticomplement>` of X_36950
-   * :ref:`X_1084 <X_1084>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these {i,j}: {:ref:`2 <X_2>`, :ref:`512 <X_512>`}, {:ref:`6 <X_6>`, 18105}, {:ref:`32 <X_32>`, :ref:`669 <X_669>`}, {:ref:`523 <X_523>`, 6664}, {:ref:`1974 <X_1974>`, 2489}, {:ref:`798 <X_798>`, :ref:`872 <X_872>`}, {2395, 34238}
-   * :ref:`X_1084 <X_1084>` = :term:`crosssum <crosssum>` of X_i and X_j for these {i,j}: {:ref:`2 <X_2>`, 4576}, {:ref:`6 <X_6>`, :ref:`99 <X_99>`}, {:ref:`75 <X_75>`, 21604}, {:ref:`76 <X_76>`, :ref:`670 <X_670>`}, {:ref:`110 <X_110>`, :ref:`1627 <X_1627>`}, {:ref:`305 <X_305>`, 4563}, {:ref:`799 <X_799>`, :ref:`873 <X_873>`}, {:ref:`1509 <X_1509>`, 4623}, {2421, 5976}, {4631, 18021}, {5468, 31128}
+   * :ref:`X_1084 <X_1084>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these {i,j}: {:ref:`2 <X_2>`, :ref:`512 <X_512>`}, {:ref:`6 <X_6>`, 18105}, {:ref:`32 <X_32>`, :ref:`669 <X_669>`}, {:ref:`523 <X_523>`, 6664}, {:ref:`1974 <X_1974>`, :ref:`2489 <X_2489>`}, {:ref:`798 <X_798>`, :ref:`872 <X_872>`}, {:ref:`2395 <X_2395>`, 34238}
+   * :ref:`X_1084 <X_1084>` = :term:`crosssum <crosssum>` of X_i and X_j for these {i,j}: {:ref:`2 <X_2>`, 4576}, {:ref:`6 <X_6>`, :ref:`99 <X_99>`}, {:ref:`75 <X_75>`, 21604}, {:ref:`76 <X_76>`, :ref:`670 <X_670>`}, {:ref:`110 <X_110>`, :ref:`1627 <X_1627>`}, {:ref:`305 <X_305>`, 4563}, {:ref:`799 <X_799>`, :ref:`873 <X_873>`}, {:ref:`1509 <X_1509>`, 4623}, {:ref:`2421 <X_2421>`, 5976}, {4631, 18021}, {5468, 31128}
    * :ref:`X_1084 <X_1084>` = crosssum of circumcircle intercepts of line :ref:`X_2 <X_2>`\ \ :ref:`X_6 <X_6>`
    * :ref:`X_1084 <X_1084>` = :term:`cevapoint <cevapoint>` of X_9427 and X_23216
    * :ref:`X_1084 <X_1084>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_1645 <X_1645>`\ X_23099

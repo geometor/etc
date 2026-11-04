@@ -9,7 +9,6 @@ from geometor.model import Model
 
 from geometor.etc.ops import (
     central_line,
-    ceva_conjugate,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
@@ -22,10 +21,9 @@ def construct_x_01412(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1412 = X_81-BETH CONJUGATE OF X_81 on reference triangle ABC."""
-    X_1014 = eval_trilinear_point(model, A, B, C, '(1/((b + c)*(b + c - a)))', ID="X_1014", classes=["center"])
-    X_58 = eval_trilinear_point(model, A, B, C, 'a/(b + c)', ID="X_58", classes=["center"])
-    X_1412 = ceva_conjugate(model, A, B, C, X_1014, X_58, ID="X_1412", classes=["selected", "target"])
+    X_1412 = eval_trilinear_point(model, A, B, C, 'a/((b + c)*(a - b - c))', ID="X_1412", classes=["selected", "target"])
     X_56 = eval_trilinear_point(model, A, B, C, 'a/(b + c - a)', ID="X_56", classes=["center", "incident"])
+    X_58 = eval_trilinear_point(model, A, B, C, 'a/(b + c)', ID="X_58", classes=["center", "incident"])
     central_line(model, X_56, X_58, 56, 58, incident=True)
     X_57 = eval_trilinear_point(model, A, B, C, '1/(b + c - a)', ID="X_57", classes=["center", "incident"])
     X_77 = eval_trilinear_point(model, A, B, C, '1/(1 + sec(A))', ID="X_77", classes=["center", "incident"])

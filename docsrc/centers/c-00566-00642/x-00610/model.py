@@ -9,7 +9,6 @@ from geometor.model import Model
 
 from geometor.etc.ops import (
     central_line,
-    ceva_conjugate,
     circumcenter_of,
     construct_baseline_triangle,
     create_model,
@@ -26,12 +25,11 @@ def construct_x_00610(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_610 = X_63-CEVA CONJUGATE OF X_1 on reference triangle ABC."""
-    X_63 = eval_trilinear_point(model, A, B, C, 'cot(A)', ID="X_63", classes=["center"])
-    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center"])
-    X_610 = ceva_conjugate(model, A, B, C, X_63, X_1, ID="X_610", classes=["selected", "target"])
+    X_610 = eval_trilinear_point(model, A, B, C, 'tan(B) + tan(C) - tan(A)', ID="X_610", classes=["selected", "target"])
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
     X_9 = mittenpunkt_of(model, A, B, C, ID="X_9", classes=["center", "incident"])
     central_line(model, X_3, X_9, 3, 9, incident=True)
+    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
     X_19 = eval_trilinear_point(model, A, B, C, 'tan(A)', ID="X_19", classes=["center", "incident"])
     central_line(model, X_1, X_19, 1, 19, incident=True)
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])

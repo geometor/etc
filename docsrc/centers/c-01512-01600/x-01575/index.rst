@@ -51,7 +51,7 @@ X_1575
    * :ref:`X_1575 <X_1575>` = :term:`anticomplement <anticomplement>` of X_20530
    * :ref:`X_1575 <X_1575>` = :term:`complementary conjugate <complementary-conjugate>` of X_20542
    * :ref:`X_1575 <X_1575>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`239 <X_239>`, :ref:`518 <X_518>`), (:ref:`292 <X_292>`, :ref:`37 <X_37>`)
-   * :ref:`X_1575 <X_1575>` = :term:`cevapoint <cevapoint>` of :ref:`X_43 <X_43>` and X_2108
+   * :ref:`X_1575 <X_1575>` = :term:`cevapoint <cevapoint>` of :ref:`X_43 <X_43>` and :ref:`X_2108 <X_2108>`
    * :ref:`X_1575 <X_1575>` = :term:`crosspoint <crosspoint>` of :ref:`X_2 <X_2>` and :ref:`X_291 <X_291>`
    * :ref:`X_1575 <X_1575>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`1575 <X_1575>`), (:ref:`6 <X_6>`, :ref:`238 <X_238>`)
    * :ref:`X_1575 <X_1575>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_1 <X_1>`\ \ :ref:`X_667 <X_667>`

@@ -12,9 +12,9 @@ from geometor.etc.ops import (
     centroid_of,
     construct_baseline_triangle,
     create_model,
-    crosspoint,
     eval_trilinear_point,
     incenter_of,
+    intersect_lines,
     orthocenter_of,
     promote_point_to_top,
 )
@@ -25,15 +25,14 @@ def construct_x_01848(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1848 = ZOSMA TRANSFORM OF X_171 on reference triangle ABC."""
-    X_27 = eval_trilinear_point(model, A, B, C, '(sec(A))/(b + c)', ID="X_27", classes=["center"])
-    X_92 = eval_trilinear_point(model, A, B, C, 'csc(2*A)', ID="X_92", classes=["center"])
-    X_1848 = crosspoint(model, A, B, C, X_27, X_92, ID="X_1848", classes=["selected", "target"])
-    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
-    X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
-    central_line(model, X_1, X_4, 1, 4, incident=True)
-    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
-    X_19 = eval_trilinear_point(model, A, B, C, 'tan(A)', ID="X_19", classes=["center", "incident"])
-    central_line(model, X_2, X_19, 2, 19, incident=True)
+    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center"])
+    X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center"])
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
+    X_19 = eval_trilinear_point(model, A, B, C, 'tan(A)', ID="X_19", classes=["center"])
+    central_line(model, X_1, X_4, 1, 4)
+    central_line(model, X_2, X_19, 2, 19)
+    X_1848 = intersect_lines(model, X_1, X_4, X_2, X_19, ID="X_1848", classes=["selected", "target"])
+    X_27 = eval_trilinear_point(model, A, B, C, '(sec(A))/(b + c)', ID="X_27", classes=["center", "incident"])
     X_86 = eval_trilinear_point(model, A, B, C, 'b*c/(b + c)', ID="X_86", classes=["center", "incident"])
     central_line(model, X_27, X_86, 27, 86, incident=True)
     return promote_point_to_top(model, X_1848)

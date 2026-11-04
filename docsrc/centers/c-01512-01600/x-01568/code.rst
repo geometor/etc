@@ -8,7 +8,7 @@ X_1568
 
 .. enunciation::
 
-   :ref:`X_1568 <X_1568>` = reflection of :ref:`X_125 <X_125>` in X_2072
+   :ref:`X_1568 <X_1568>` = reflection of :ref:`X_125 <X_125>` in :ref:`X_2072 <X_2072>`
 
 .. figure:: x-01568.svg
    :alt: X_1568 — ORTHOJOIN OF X_800

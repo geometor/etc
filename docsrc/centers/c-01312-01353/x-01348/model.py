@@ -25,9 +25,9 @@ def construct_x_01348(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1348 = INSIMILICENTER(NINE-POINT CIRCLE, BROCARD CIRCLE) on reference triangle ABC."""
-    X_1348 = eval_trilinear_point(model, A, B, C, 'e*cos(B - C) + cos(A - omega )', ID="X_1348", classes=["selected", "target"])
+    X_1348 = eval_trilinear_point(model, A, B, C, 'e*cos(B - C) + cos(A -  omega  )', ID="X_1348", classes=["selected", "target"])
     X_5 = nine_point_center_of(model, A, B, C, ID="X_5", classes=["center", "incident"])
-    X_182 = eval_trilinear_point(model, A, B, C, 'cos(A- omega )', ID="X_182", classes=["center", "incident"])
+    X_182 = eval_trilinear_point(model, A, B, C, 'cos(A-  omega  )', ID="X_182", classes=["center", "incident"])
     central_line(model, X_5, X_182, 5, 182, incident=True)
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
     X_1341 = point_from_barycentrics(model, A, B, C, 0.30653192, 0.35355532, 0.33991277, ID="X_1341", classes=["center", "incident"])

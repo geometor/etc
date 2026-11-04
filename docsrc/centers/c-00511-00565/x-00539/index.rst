@@ -12,7 +12,7 @@ X_539
 
 .. enunciation::
 
-   :ref:`X_539 <X_539>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2383
+   :ref:`X_539 <X_539>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2383 <X_2383>`
 
 .. figure:: x-00539.svg
    :alt: X_539 — DIRECTION OF VECTOR AX + BX + CX, where X = X_54
@@ -24,7 +24,7 @@ X_539
    :class: note
 
    * **Central Lines:** :g:`{2, 54} <{ 2, 54 }>`, :g:`{155, 195} <{ 155, 195 }>`
-   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_54 <X_54>` (:ref:`KOSNITA POINT <X_54>`), :g:`X_155 <X_155>` (:ref:`EIGENCENTER OF ORTHIC TRIANGLE <X_155>`), :g:`X_195 <X_195>` (:ref:`-CEVA CONJUGATE OF X(3) <X_195>`)
+   * **Related Centers:** :g:`X_2383 <X_2383>` (:ref:`CIR(X(539)) <X_2383>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_54 <X_54>` (:ref:`KOSNITA POINT <X_54>`), :g:`X_155 <X_155>` (:ref:`EIGENCENTER OF ORTHIC TRIANGLE <X_155>`), :g:`X_195 <X_195>` (:ref:`-CEVA CONJUGATE OF X(3) <X_195>`)
 
 .. signature:: center
 
@@ -39,12 +39,12 @@ X_539
    :badge: 8 lines
    :class: line-catalog
 
-   {:ref:`2 <X_2>`, :ref:`54 <X_54>`}, {:ref:`3 <X_3>`, 3519}, {:ref:`5 <X_5>`, :ref:`1493 <X_1493>`}, {:ref:`30 <X_30>`, :ref:`511 <X_511>`}, {:ref:`113 <X_113>`, 2914}, {:ref:`155 <X_155>`, :ref:`195 <X_195>`}, {:ref:`265 <X_265>`, :ref:`1568 <X_1568>`}, {2072, 3292}
+   {:ref:`2 <X_2>`, :ref:`54 <X_54>`}, {:ref:`3 <X_3>`, 3519}, {:ref:`5 <X_5>`, :ref:`1493 <X_1493>`}, {:ref:`30 <X_30>`, :ref:`511 <X_511>`}, {:ref:`113 <X_113>`, :ref:`2914 <X_2914>`}, {:ref:`155 <X_155>`, :ref:`195 <X_195>`}, {:ref:`265 <X_265>`, :ref:`1568 <X_1568>`}, {:ref:`2072 <X_2072>`, 3292}
 
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X_539 <X_539>` = isogonal conjugate of X_2383
+   * :ref:`X_539 <X_539>` = isogonal conjugate of :ref:`X_2383 <X_2383>`
 
 .. toctree::
    :hidden:

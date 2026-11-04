@@ -49,7 +49,7 @@ X_906
    * :ref:`X_906 <X_906>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_17924
    * :ref:`X_906 <X_906>` = :ref:`X_92 <X_92>`-isoconjugate of :ref:`X_513 <X_513>`
    * :ref:`X_906 <X_906>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_48 <X_48>`\ \ :ref:`X_184 <X_184>`
-   * :ref:`X_906 <X_906>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_11 <X_11>`\ X_2969
+   * :ref:`X_906 <X_906>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_11 <X_11>`\ \ :ref:`X_2969 <X_2969>`
    * :ref:`X_906 <X_906>` = barycentric product :ref:`X_3 <X_3>`\ \*\ :ref:`X_100 <X_100>`
    * :ref:`X_906 <X_906>` = barycentric product of circumcircle intercepts of line :ref:`X_3 <X_3>`\ \ :ref:`X_63 <X_63>`
 

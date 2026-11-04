@@ -31,7 +31,7 @@ def construct_x_01584(
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
     X_494 = eval_trilinear_point(model, A, B, C, '1/(sin(A) - sin(B)*sin(C))', ID="X_494", classes=["center", "incident"])
     central_line(model, X_6, X_494, 6, 494, incident=True)
-    X_372 = eval_trilinear_point(model, A, B, C, 'cos(A + pi /4)', ID="X_372", classes=["center", "incident"])
+    X_372 = eval_trilinear_point(model, A, B, C, 'cos(A +  pi  /4)', ID="X_372", classes=["center", "incident"])
     X_394 = eval_trilinear_point(model, A, B, C, 'cos(A)*cot(A)', ID="X_394", classes=["center", "incident"])
     central_line(model, X_372, X_394, 372, 394, incident=True)
     return promote_point_to_top(model, X_1584)

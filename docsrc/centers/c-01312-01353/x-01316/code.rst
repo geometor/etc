@@ -8,7 +8,7 @@ X_1316
 
 .. enunciation::
 
-   :ref:`X_1316 <X_1316>` = X_2452 + 2 X_2453
+   :ref:`X_1316 <X_1316>` = :ref:`X_2452 <X_2452>` + 2 :ref:`X_2453 <X_2453>`
 
 .. figure:: x-01316.svg
    :alt: X_1316 — 5th MOSES INTERSECTION

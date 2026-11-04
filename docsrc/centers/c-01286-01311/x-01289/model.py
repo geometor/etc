@@ -22,9 +22,9 @@ def construct_x_01289(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1289 = COLLINGS TRANSFORM OF X_25 on reference triangle ABC."""
-    X_1289 = eval_trilinear_point(model, A, B, C, 'tan(A)*csc(B - C)/(sin(2*A) - tan(omega) )', ID="X_1289", classes=["selected", "target"])
+    X_1289 = eval_trilinear_point(model, A, B, C, 'tan(A)*csc(B - C)/(sin(2*A) - tan(omega)  )', ID="X_1289", classes=["selected", "target"])
     X_24 = eval_trilinear_point(model, A, B, C, 'sec(A)*cos(2*A)', ID="X_24", classes=["center", "incident"])
-    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A + omega )', ID="X_98", classes=["center", "incident"])
+    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A +  omega  )', ID="X_98", classes=["center", "incident"])
     central_line(model, X_24, X_98, 24, 98, incident=True)
     X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
     X_127 = eval_trilinear_point(model, A, B, C, 'b*c*(sin(2*B) - sin(2*C))*((b**(2) - c**(2))*sin(2*A) - b**(2)*sin(2*B) + c**(2)*sin(2*C))', ID="X_127", classes=["center", "incident"])

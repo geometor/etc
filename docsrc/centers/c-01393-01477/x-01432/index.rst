@@ -41,7 +41,7 @@ X_1432
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X_1432 <X_1432>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2329
+   * :ref:`X_1432 <X_1432>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2329 <X_2329>`
    * :ref:`X_1432 <X_1432>` = :ref:`X_893 <X_893>`-cross conjugate of :ref:`X_256 <X_256>`
    * :ref:`X_1432 <X_1432>` = :term:`cevapoint <cevapoint>` of :ref:`X_893 <X_893>` and :ref:`X_1431 <X_1431>`
    * :ref:`X_1432 <X_1432>` = :term:`anticomplement <anticomplement>` of :term:`complementary conjugate <complementary-conjugate>` of X_17062

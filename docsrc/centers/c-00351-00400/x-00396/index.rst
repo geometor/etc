@@ -42,7 +42,7 @@ X_396
 
    * :ref:`X_396 <X_396>` = midpoint of X_i and X_j for these (i,j): (:ref:`13 <X_13>`, :ref:`15 <X_15>`), (:ref:`299 <X_299>`, :ref:`385 <X_385>`)
    * :ref:`X_396 <X_396>` = reflection of :ref:`X_395 <X_395>` in :ref:`X_230 <X_230>`
-   * :ref:`X_396 <X_396>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2981
+   * :ref:`X_396 <X_396>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2981 <X_2981>`
    * :ref:`X_396 <X_396>` = :term:`anticomplement <anticomplement>` of :ref:`X_298 <X_298>`
    * :ref:`X_396 <X_396>` = :term:`crosspoint <crosspoint>` of :ref:`X_2 <X_2>` and :ref:`X_13 <X_13>`
    * :ref:`X_396 <X_396>` = :term:`crosssum <crosssum>` of :ref:`X_6 <X_6>` and :ref:`X_15 <X_15>`

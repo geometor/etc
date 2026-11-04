@@ -41,7 +41,7 @@ X_330
 .. collapse:: Functional Relations
    :badge: 11 relations
 
-   * :ref:`X_330 <X_330>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2176
+   * :ref:`X_330 <X_330>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2176 <X_2176>`
    * :ref:`X_330 <X_330>` = isotomic conjugate of :ref:`X_192 <X_192>`
    * :ref:`X_330 <X_330>` = :term:`complement <complement>` of X_21219
    * :ref:`X_330 <X_330>` = :term:`anticomplement <anticomplement>` of X_6376

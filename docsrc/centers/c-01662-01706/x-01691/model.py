@@ -12,7 +12,6 @@ from geometor.etc.ops import (
     circumcenter_of,
     construct_baseline_triangle,
     create_model,
-    eval_barycentric_point,
     eval_trilinear_point,
     promote_point_to_top,
     symmedian_point_of,
@@ -24,11 +23,11 @@ def construct_x_01691(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1691 = RADICAL TRACE OF CIRCUMCIRCLE AND 1st LEMOINE CIRCLE on reference triangle ABC."""
-    X_1691 = eval_barycentric_point(model, A, B, C, 'a**(2)*(a**(4) - b**(2)*c**(2))', ID="X_1691", classes=["selected", "target"])
+    X_1691 = eval_trilinear_point(model, A, B, C, 'sin(A - 2*omega  )', ID="X_1691", classes=["selected", "target"])
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
     central_line(model, X_3, X_6, 3, 6, incident=True)
-    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A + omega )', ID="X_98", classes=["center", "incident"])
+    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A +  omega  )', ID="X_98", classes=["center", "incident"])
     X_230 = eval_trilinear_point(model, A, B, C, 'b*c*(a**(2)*(2*a**(2) - b**(2) - c**(2)) + (b**(2) - c**(2))**(2))', ID="X_230", classes=["center", "incident"])
     central_line(model, X_98, X_230, 98, 230, incident=True)
     X_83 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(2) + c**(2))', ID="X_83", classes=["center", "incident"])

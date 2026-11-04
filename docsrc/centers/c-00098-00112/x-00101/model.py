@@ -32,7 +32,7 @@ def construct_x_00101(
     X_48 = eval_trilinear_point(model, A, B, C, 'tan(B) + tan(C)', ID="X_48", classes=["center", "incident"])
     central_line(model, X_9, X_48, 9, 48, incident=True)
     X_10 = spieker_center_of(model, A, B, C, ID="X_10", classes=["center", "incident"])
-    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A + omega )', ID="X_98", classes=["center", "incident"])
+    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A +  omega  )', ID="X_98", classes=["center", "incident"])
     central_line(model, X_10, X_98, 10, 98, incident=True)
     return promote_point_to_top(model, X_101)
 

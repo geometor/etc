@@ -20,7 +20,7 @@ def construct_x_00371(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_371 = KENMOTU POINT on reference triangle ABC."""
-    X_371 = eval_trilinear_point(model, A, B, C, 'cos(A - pi /4)', ID="X_371", classes=["selected", "target"])
+    X_371 = eval_trilinear_point(model, A, B, C, 'cos(A -  pi  /4)', ID="X_371", classes=["selected", "target"])
     return promote_point_to_top(model, X_371)
 
 

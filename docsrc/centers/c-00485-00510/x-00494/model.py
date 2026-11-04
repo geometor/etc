@@ -23,7 +23,7 @@ def construct_x_00494(
     """Construct X_494 = 2nd VAN LAMOEN HOMOTHETIC CENTER on reference triangle ABC."""
     X_494 = eval_trilinear_point(model, A, B, C, '1/(sin(A) - sin(B)*sin(C))', ID="X_494", classes=["selected", "target"])
     X_25 = eval_trilinear_point(model, A, B, C, 'sin(A)*tan(A)', ID="X_25", classes=["center", "incident"])
-    X_372 = eval_trilinear_point(model, A, B, C, 'cos(A + pi /4)', ID="X_372", classes=["center", "incident"])
+    X_372 = eval_trilinear_point(model, A, B, C, 'cos(A +  pi  /4)', ID="X_372", classes=["center", "incident"])
     central_line(model, X_25, X_372, 25, 372, incident=True)
     X_39 = eval_trilinear_point(model, A, B, C, 'a*(b**(2) + c**(2))', ID="X_39", classes=["center", "incident"])
     X_493 = eval_trilinear_point(model, A, B, C, '1/(sin(A) + sin(B)*sin(C))', ID="X_493", classes=["center", "incident"])

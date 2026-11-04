@@ -25,13 +25,13 @@ def construct_x_00202(
 ) -> spg.Point:
     """Construct X_202 = X_1-CEVA CONJUGATE OF X_15 on reference triangle ABC."""
     X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center"])
-    X_15 = eval_trilinear_point(model, A, B, C, 'sin(A + pi /3)', ID="X_15", classes=["center"])
+    X_15 = eval_trilinear_point(model, A, B, C, 'sin(A +  pi  /3)', ID="X_15", classes=["center"])
     X_202 = ceva_conjugate(model, A, B, C, X_1, X_15, ID="X_202", classes=["selected", "target"])
     X_11 = feuerbach_point_of(model, A, B, C, ID="X_11", classes=["center", "incident"])
-    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /3)', ID="X_13", classes=["center", "incident"])
+    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A +  pi  /3)', ID="X_13", classes=["center", "incident"])
     central_line(model, X_11, X_13, 11, 13, incident=True)
     X_12 = eval_trilinear_point(model, A, B, C, '1 + cos(B - C)', ID="X_12", classes=["center", "incident"])
-    X_18 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /6)', ID="X_18", classes=["center", "incident"])
+    X_18 = eval_trilinear_point(model, A, B, C, 'csc(A -  pi  /6)', ID="X_18", classes=["center", "incident"])
     central_line(model, X_12, X_18, 12, 18, incident=True)
     X_36 = eval_trilinear_point(model, A, B, C, '1 - 2*cos(A)', ID="X_36", classes=["center", "incident"])
     central_line(model, X_15, X_36, 15, 36, incident=True)

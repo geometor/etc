@@ -65,7 +65,7 @@ X_223
    * :ref:`X_223 <X_223>` = perspector of :g:`ABC << A B C >>` and :term:`medial triangle <medial-triangle>` of :term:`pedal triangle <pedal-triangle>` of :ref:`X_1490 <X_1490>`
    * :ref:`X_223 <X_223>` = perspector of circumconic centered at :ref:`X_57 <X_57>`
    * :ref:`X_223 <X_223>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X_57 <X_57>`
-   * :ref:`X_223 <X_223>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of X_2188
+   * :ref:`X_223 <X_223>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_2188 <X_2188>`
    * :ref:`X_223 <X_223>` = {:ref:`X_1 <X_1>`,\ :ref:`X_1745 <X_1745>`}-harmonic conjugate of :ref:`X_1490 <X_1490>`
    * :ref:`X_223 <X_223>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X_7020
    * :ref:`X_223 <X_223>` = :ref:`X_48 <X_48>`-isoconjugate (polar conjugate) of X_7020

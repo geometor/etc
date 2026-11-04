@@ -22,7 +22,7 @@ def construct_x_01932(
 ) -> spg.Point:
     """Construct X_1932 = CROSSSUM OF PU(14) on reference triangle ABC."""
     X_1932 = eval_trilinear_point(model, A, B, C, '(a**(2)*(a**(4) + b**(2)*c**(2)))', ID="X_1932", classes=["selected", "target"])
-    X_293 = eval_trilinear_point(model, A, B, C, 'cos(A)*sec(A + omega )', ID="X_293", classes=["center", "incident"])
+    X_293 = eval_trilinear_point(model, A, B, C, 'cos(A)*sec(A +  omega  )', ID="X_293", classes=["center", "incident"])
     X_774 = eval_trilinear_point(model, A, B, C, '(cos(B))**(2) + (cos(C))**(2)', ID="X_774", classes=["center", "incident"])
     central_line(model, X_293, X_774, 293, 774, incident=True)
     return promote_point_to_top(model, X_1932)

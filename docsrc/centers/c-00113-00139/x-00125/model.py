@@ -32,7 +32,7 @@ def construct_x_00125(
     X_74 = eval_trilinear_point(model, A, B, C, '1/(cos(A) - 2*cos(B)*cos(C))', ID="X_74", classes=["center", "incident"])
     central_line(model, X_4, X_74, 4, 74, incident=True)
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
-    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A + omega )', ID="X_98", classes=["center", "incident"])
+    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A +  omega  )', ID="X_98", classes=["center", "incident"])
     central_line(model, X_2, X_98, 2, 98, incident=True)
     return promote_point_to_top(model, X_125)
 

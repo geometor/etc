@@ -33,8 +33,8 @@ def construct_x_00005(
     X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
     X_11 = feuerbach_point_of(model, A, B, C, ID="X_11", classes=["center", "incident"])
     central_line(model, X_1, X_11, 1, 11, incident=True)
-    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /3)', ID="X_13", classes=["center", "incident"])
-    X_18 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /6)', ID="X_18", classes=["center", "incident"])
+    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A +  pi  /3)', ID="X_13", classes=["center", "incident"])
+    X_18 = eval_trilinear_point(model, A, B, C, 'csc(A -  pi  /6)', ID="X_18", classes=["center", "incident"])
     central_line(model, X_13, X_18, 13, 18, incident=True)
     return promote_point_to_top(model, X_5)
 

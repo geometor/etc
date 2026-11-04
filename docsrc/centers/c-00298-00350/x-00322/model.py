@@ -13,7 +13,6 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     gergonne_point_of,
-    isotomic_conjugate,
     nagel_point_of,
     promote_point_to_top,
 )
@@ -24,8 +23,7 @@ def construct_x_00322(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_322 = ISOTOMIC CONJUGATE OF X_84 on reference triangle ABC."""
-    X_84 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C) - cos(A) - 1)', ID="X_84", classes=["center"])
-    X_322 = isotomic_conjugate(model, A, B, C, X_84, ID="X_322", classes=["selected", "target"])
+    X_322 = eval_trilinear_point(model, A, B, C, '((-1 - cos(A) + cos(B) + cos(C))*(csc(A))**(2))', ID="X_322", classes=["selected", "target"])
     X_7 = gergonne_point_of(model, A, B, C, ID="X_7", classes=["center", "incident"])
     X_8 = nagel_point_of(model, A, B, C, ID="X_8", classes=["center", "incident"])
     central_line(model, X_7, X_8, 7, 8, incident=True)

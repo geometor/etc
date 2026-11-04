@@ -55,7 +55,7 @@ X_248
    * :ref:`X_248 <X_248>` = crossdifference of every pair of points on line :ref:`X_114 <X_114>`\ \ :ref:`X_132 <X_132>`
    * :ref:`X_248 <X_248>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of X_39085
    * :ref:`X_248 <X_248>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_511 <X_511>`
-   * :ref:`X_248 <X_248>` = perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_685 <X_685>`,X_2065,X_2715,X_15407,X_17932}}
+   * :ref:`X_248 <X_248>` = perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_685 <X_685>`,\ :ref:`X_2065 <X_2065>`,\ :ref:`X_2715 <X_2715>`,X_15407,X_17932}}
    * :ref:`X_248 <X_248>` = barycentric product :ref:`X_3 <X_3>`\ \*\ :ref:`X_98 <X_98>`
    * :ref:`X_248 <X_248>` = barycentric product of circumcircle intercepts of line :ref:`X_3 <X_3>`\ \ :ref:`X_525 <X_525>`
 

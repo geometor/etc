@@ -14,7 +14,7 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     gergonne_point_of,
-    isotomic_conjugate,
+    intersect_lines,
     promote_point_to_top,
     spieker_center_of,
 )
@@ -25,14 +25,13 @@ def construct_x_01268(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1268 = ISOTOMIC CONJUGATE OF X_1125 on reference triangle ABC."""
-    X_1125 = eval_trilinear_point(model, A, B, C, '(2*a+b+c)/a', ID="X_1125", classes=["center"])
-    X_1268 = isotomic_conjugate(model, A, B, C, X_1125, ID="X_1268", classes=["selected", "target"])
-    X_7 = gergonne_point_of(model, A, B, C, ID="X_7", classes=["center", "incident"])
-    X_12 = eval_trilinear_point(model, A, B, C, '1 + cos(B - C)', ID="X_12", classes=["center", "incident"])
-    central_line(model, X_7, X_12, 7, 12, incident=True)
-    X_10 = spieker_center_of(model, A, B, C, ID="X_10", classes=["center", "incident"])
-    X_86 = eval_trilinear_point(model, A, B, C, 'b*c/(b + c)', ID="X_86", classes=["center", "incident"])
-    central_line(model, X_10, X_86, 10, 86, incident=True)
+    X_7 = gergonne_point_of(model, A, B, C, ID="X_7", classes=["center"])
+    X_12 = eval_trilinear_point(model, A, B, C, '1 + cos(B - C)', ID="X_12", classes=["center"])
+    X_10 = spieker_center_of(model, A, B, C, ID="X_10", classes=["center"])
+    X_86 = eval_trilinear_point(model, A, B, C, 'b*c/(b + c)', ID="X_86", classes=["center"])
+    central_line(model, X_7, X_12, 7, 12)
+    central_line(model, X_10, X_86, 10, 86)
+    X_1268 = intersect_lines(model, X_7, X_12, X_10, X_86, ID="X_1268", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
     X_594 = eval_trilinear_point(model, A, B, C, '(b + c)**(2)/a', ID="X_594", classes=["center", "incident"])
     central_line(model, X_2, X_594, 2, 594, incident=True)

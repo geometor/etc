@@ -31,7 +31,7 @@ def construct_x_00482(
     X_7 = gergonne_point_of(model, A, B, C, ID="X_7", classes=["center", "incident"])
     central_line(model, X_1, X_7, 1, 7, incident=True)
     X_226 = eval_trilinear_point(model, A, B, C, '(csc(A))*(cos(B) + cos(C))', ID="X_226", classes=["center", "incident"])
-    X_486 = eval_trilinear_point(model, A, B, C, 'sec(A + pi /4)', ID="X_486", classes=["center", "incident"])
+    X_486 = eval_trilinear_point(model, A, B, C, 'sec(A +  pi  /4)', ID="X_486", classes=["center", "incident"])
     central_line(model, X_226, X_486, 226, 486, incident=True)
     return promote_point_to_top(model, X_482)
 

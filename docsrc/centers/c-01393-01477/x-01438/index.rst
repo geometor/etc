@@ -49,7 +49,7 @@ X_1438
    * :ref:`X_1438 <X_1438>` = barycentric product of PU(96)
    * :ref:`X_1438 <X_1438>` = barycentric product :ref:`X_1 <X_1>`\ \*\ :ref:`X_105 <X_105>`
    * :ref:`X_1438 <X_1438>` = trilinear product :ref:`X_6 <X_6>`\ \*\ :ref:`X_105 <X_105>`
-   * :ref:`X_1438 <X_1438>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_918 <X_918>`\ X_2254
+   * :ref:`X_1438 <X_1438>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_918 <X_918>`\ \ :ref:`X_2254 <X_2254>`
    * :ref:`X_1438 <X_1438>` = polar conjugate of :term:`isotomic conjugate <isotomic-conjugate>` of X_36057
    * :ref:`X_1438 <X_1438>` = :ref:`X_63 <X_63>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_1861 <X_1861>`
 

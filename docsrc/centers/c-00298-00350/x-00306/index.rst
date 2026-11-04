@@ -52,7 +52,7 @@ X_306
    * :ref:`X_306 <X_306>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X_8747 (line :ref:`X_649 <X_649>`\ X_7649)
    * :ref:`X_306 <X_306>` = polar conjugate of X_8747
    * :ref:`X_306 <X_306>` = :ref:`X_6 <X_6>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_28 <X_28>`
-   * :ref:`X_306 <X_306>` = :ref:`X_92 <X_92>`-isoconjugate of X_2206
+   * :ref:`X_306 <X_306>` = :ref:`X_92 <X_92>`-isoconjugate of :ref:`X_2206 <X_2206>`
 
 .. toctree::
    :hidden:

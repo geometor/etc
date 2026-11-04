@@ -56,7 +56,7 @@ X_1147
    * :ref:`X_1147 <X_1147>` = :term:`crosssum <crosssum>` of :ref:`X_485 <X_485>` and :ref:`X_486 <X_486>`
    * :ref:`X_1147 <X_1147>` = orthic-to-:g:`ABC << A B C >>` :term:`barycentric image <barycentric-image>` of :ref:`X_5 <X_5>`
    * :ref:`X_1147 <X_1147>` = perspector of the circumconic centered at :ref:`X_577 <X_577>`
-   * :ref:`X_1147 <X_1147>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of X_2165
+   * :ref:`X_1147 <X_1147>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_2165 <X_2165>`
    * :ref:`X_1147 <X_1147>` = :ref:`X_4 <X_4>`-of-Kosnita-triangle
    * :ref:`X_1147 <X_1147>` = :ref:`X_91 <X_91>`-isoconjugate of :ref:`X_4 <X_4>`
    * :ref:`X_1147 <X_1147>` = :ref:`X_1158 <X_1158>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute

@@ -33,7 +33,7 @@ X_1146
 
 .. container:: note-item
 
-   :ref:`X_1146 <X_1146>` lies on the Steiner inellipse, the inconic having perspector X_2052.
+   :ref:`X_1146 <X_1146>` lies on the Steiner inellipse, the inconic having perspector :ref:`X_2052 <X_2052>`.
 
 .. collapse:: Incident Central Lines
    :badge: 10 lines

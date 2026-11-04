@@ -25,7 +25,7 @@ def construct_x_00688(
     """Construct X_688 = CROSSDIFFERENCE OF X_6 AND X_76 on reference triangle ABC."""
     X_688 = eval_trilinear_point(model, A, B, C, '(a**(3)*(b**(4) - c**(4)))', ID="X_688", classes=["selected", "target"])
     X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X_30", classes=["center", "incident"])
-    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X_511", classes=["center", "incident"])
+    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A +  omega  )', ID="X_511", classes=["center", "incident"])
     central_line(model, X_30, X_511, 30, 511, incident=True)
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
     X_882 = point_from_barycentrics(model, A, B, C, 0.023590899, 1.0060979, -0.02968882, ID="X_882", classes=["center", "incident"])

@@ -24,8 +24,9 @@ X_174
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{1, 167} <{ 1, 167 }>`, :g:`{57, 173} <{ 57, 173 }>`
-   * **Related Centers:** :g:`X_259 <X_259>` (:ref:`ISOGONAL CONJUGATE OF X(174) <X_259>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_167 <X_167>` (:ref:`NAGEL POINT OF EXCENTRAL TRIANGLE <X_167>`), :g:`X_57 <X_57>` (:ref:`ISOGONAL CONJUGATE OF X(9) <X_57>`), :g:`X_173 <X_173>` (:ref:`CONGRUENT ISOSCELIZERS POINT <X_173>`)
+   * **Derived Triangle:** :term:`Anticomplementary Triangle <anticomplementary triangle>` :g:`△K_aK_bK_c << K_a K_b K_c >>` — vertices :g:`K_a <K_a>`, :g:`K_b <K_b>`, :g:`K_c <K_c>` (Formed by lines through A, B, C parallel to opposite sides)
+   * **Central Lines:** :g:`{2, 2090} <{ 2, 2090 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_2090 <X_2090>` (:ref:`1st STEVANOVIC PERSPECTOR <X_2090>`)
 
 .. signature:: center
 
@@ -51,7 +52,7 @@ X_174
    :badge: 18 relations
 
    * :ref:`X_174 <X_174>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_259 <X_259>`
-   * :ref:`X_174 <X_174>` = :term:`anticomplement <anticomplement>` of X_2090
+   * :ref:`X_174 <X_174>` = :term:`anticomplement <anticomplement>` of :ref:`X_2090 <X_2090>`
    * :ref:`X_174 <X_174>` = :ref:`X_508 <X_508>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_188 <X_188>`
    * :ref:`X_174 <X_174>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`173 <X_173>`), (:ref:`259 <X_259>`, :ref:`266 <X_266>`)
    * :ref:`X_174 <X_174>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`1488 <X_1488>`), (:ref:`177 <X_177>`, :ref:`7 <X_7>`), (:ref:`259 <X_259>`, :ref:`188 <X_188>`)

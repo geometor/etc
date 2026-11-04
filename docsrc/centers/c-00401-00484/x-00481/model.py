@@ -28,7 +28,7 @@ def construct_x_00481(
     X_7 = gergonne_point_of(model, A, B, C, ID="X_7", classes=["center", "incident"])
     central_line(model, X_1, X_7, 1, 7, incident=True)
     X_226 = eval_trilinear_point(model, A, B, C, '(csc(A))*(cos(B) + cos(C))', ID="X_226", classes=["center", "incident"])
-    X_485 = eval_trilinear_point(model, A, B, C, 'sec(A - pi /4)', ID="X_485", classes=["center", "incident"])
+    X_485 = eval_trilinear_point(model, A, B, C, 'sec(A -  pi  /4)', ID="X_485", classes=["center", "incident"])
     central_line(model, X_226, X_485, 226, 485, incident=True)
     X_174 = eval_trilinear_point(model, A, B, C, 'sec(A/2)', ID="X_174", classes=["center", "incident"])
     X_1127 = eval_trilinear_point(model, A, B, C, '(sin(A/4))/sin(3*A/4)', ID="X_1127", classes=["center", "incident"])

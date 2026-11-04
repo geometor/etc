@@ -24,8 +24,8 @@ def construct_x_01665(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1665 = INVERSE-IN-BROCARD-CIRCLE OF X_1663 on reference triangle ABC."""
-    X_1664 = eval_trilinear_point(model, A, B, C, '(e*cos(A + omega ) + cos(A - omega ))', ID="X_1664", classes=["center"])
-    X_182 = eval_trilinear_point(model, A, B, C, 'cos(A- omega )', ID="X_182", classes=["center"])
+    X_1664 = eval_trilinear_point(model, A, B, C, '(e*cos(A +  omega  ) + cos(A -  omega  ))', ID="X_1664", classes=["center"])
+    X_182 = eval_trilinear_point(model, A, B, C, 'cos(A-  omega  )', ID="X_182", classes=["center"])
     X_1665 = reflection_in_point(model, X_1664, X_182, ID="X_1665", classes=["selected", "target"], guide=False)
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])

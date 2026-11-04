@@ -31,7 +31,7 @@ def construct_x_01377(
     X_8 = nagel_point_of(model, A, B, C, ID="X_8", classes=["center", "incident"])
     X_1124 = eval_trilinear_point(model, A, B, C, '1 + sin(A)', ID="X_1124", classes=["center", "incident"])
     central_line(model, X_8, X_1124, 8, 1124, incident=True)
-    X_372 = eval_trilinear_point(model, A, B, C, 'cos(A + pi /4)', ID="X_372", classes=["center", "incident"])
+    X_372 = eval_trilinear_point(model, A, B, C, 'cos(A +  pi  /4)', ID="X_372", classes=["center", "incident"])
     X_958 = eval_trilinear_point(model, A, B, C, '(b + c - a)*(a**(2) + a*b + a*c + 2*b*c)', ID="X_958", classes=["center", "incident"])
     central_line(model, X_372, X_958, 372, 958, incident=True)
     return promote_point_to_top(model, X_1377)

@@ -12,7 +12,7 @@ X_1159
 
 .. enunciation::
 
-   :ref:`X_1159 <X_1159>` = {X_2099,X_4860}-harmonic conjugate of :ref:`X_1 <X_1>`
+   :ref:`X_1159 <X_1159>` = {:ref:`X_2099 <X_2099>`,X_4860}-harmonic conjugate of :ref:`X_1 <X_1>`
 
 .. figure:: x-01159.svg
    :alt: X_1159 — GREENHILL POINT
@@ -23,7 +23,7 @@ X_1159
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`)
+   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_2099 <X_2099>` (:ref:`REFLECTION OF X(55) IN X(1) <X_2099>`)
 
 .. signature:: center
 
@@ -40,7 +40,7 @@ X_1159
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X_1159 <X_1159>` = {X_2099,X_4860}-harmonic conjugate of :ref:`X_1 <X_1>`
+   * :ref:`X_1159 <X_1159>` = {:ref:`X_2099 <X_2099>`,X_4860}-harmonic conjugate of :ref:`X_1 <X_1>`
 
 Notes
 -----

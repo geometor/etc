@@ -24,12 +24,18 @@ def construct_x_01663(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1663 = 2nd INTERSECTION OF BROCARD AXIS AND 1st LEMOINE CIRCLE on reference triangle ABC."""
-    X_1662 = eval_trilinear_point(model, A, B, C, '(e*cos(A - omega ) + cos(A + omega ))', ID="X_1662", classes=["center"])
-    X_182 = eval_trilinear_point(model, A, B, C, 'cos(A- omega )', ID="X_182", classes=["center"])
+    X_1662 = eval_trilinear_point(model, A, B, C, '(e*cos(A -  omega  ) + cos(A +  omega  ))', ID="X_1662", classes=["center"])
+    X_182 = eval_trilinear_point(model, A, B, C, 'cos(A-  omega  )', ID="X_182", classes=["center"])
     X_1663 = reflection_in_point(model, X_1662, X_182, ID="X_1663", classes=["selected", "target"], guide=False)
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
     central_line(model, X_3, X_6, 3, 6, incident=True)
+    X_1676 = eval_trilinear_point(model, A, B, C, 'csc(A +  omega  /2)', ID="X_1676", classes=["center", "incident"])
+    X_2039 = eval_trilinear_point(model, A, B, C, 'e*cos(A) + 2*e*cos(B)*cos(C) + cos(A +  omega  )', ID="X_2039", classes=["center", "incident"])
+    central_line(model, X_1676, X_2039, 1676, 2039, incident=True)
+    X_1677 = eval_trilinear_point(model, A, B, C, 'sec(A +  omega  /2)', ID="X_1677", classes=["center", "incident"])
+    X_2040 = eval_trilinear_point(model, A, B, C, 'e*cos(A) + 2*e*cos(B)*cos(C) - cos(A +  omega  )', ID="X_2040", classes=["center", "incident"])
+    central_line(model, X_1677, X_2040, 1677, 2040, incident=True)
     return promote_point_to_top(model, X_1663)
 
 

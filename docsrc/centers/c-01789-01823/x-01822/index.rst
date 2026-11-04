@@ -12,7 +12,7 @@ X_1822
 
 .. enunciation::
 
-   :ref:`X_1822 <X_1822>` is the :term:`isogonal conjugate <isogonal-conjugate>` of X_2588.
+   :ref:`X_1822 <X_1822>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2588 <X_2588>`.
 
 .. figure:: x-01822.svg
    :alt: X_1822 — ISOGONAL CONJUGATE OF X_2588
@@ -41,7 +41,7 @@ X_1822
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X_1822 <X_1822>` = isogonal conjugate of X_2588
+   * :ref:`X_1822 <X_1822>` = isogonal conjugate of :ref:`X_2588 <X_2588>`
    * :ref:`X_1822 <X_1822>` = :ref:`X_1101 <X_1101>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_1823 <X_1823>`
    * :ref:`X_1822 <X_1822>` = X_i-:term:`aleph conjugate <aleph-conjugate>` of X_j for these (i,j): (:ref:`162 <X_162>`, :ref:`1823 <X_1823>`), (:ref:`1113 <X_1113>`, :ref:`1 <X_1>`)
    * :ref:`X_1822 <X_1822>` = trilinear quotient :ref:`X_110 <X_110>`/:ref:`X_1114 <X_1114>`

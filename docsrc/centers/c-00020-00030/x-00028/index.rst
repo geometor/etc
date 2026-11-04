@@ -53,7 +53,7 @@ X_28
    * :ref:`X_28 <X_28>` = polar conjugate of :ref:`X_321 <X_321>`
    * :ref:`X_28 <X_28>` = :ref:`X_6 <X_6>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_306 <X_306>`
    * :ref:`X_28 <X_28>` = :ref:`X_75 <X_75>`-isoconjugate of :ref:`X_228 <X_228>`
-   * :ref:`X_28 <X_28>` = circumcircle-inverse of X_2074
+   * :ref:`X_28 <X_28>` = circumcircle-inverse of :ref:`X_2074 <X_2074>`
    * :ref:`X_28 <X_28>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`270 <X_270>`, :ref:`58 <X_58>`), (:ref:`286 <X_286>`, :ref:`81 <X_81>`)
    * :ref:`X_28 <X_28>` = cevapoint of X_i and X_j for these (i,j): (:ref:`19 <X_19>`, :ref:`25 <X_25>`), (:ref:`34 <X_34>`, :ref:`56 <X_56>`)
    * :ref:`X_28 <X_28>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`19 <X_19>`, :ref:`27 <X_27>`), (:ref:`58 <X_58>`, :ref:`58 <X_58>`)

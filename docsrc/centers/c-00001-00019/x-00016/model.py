@@ -26,16 +26,16 @@ def construct_x_00016(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_16 = 2nd ISODYNAMIC POINT on reference triangle ABC."""
-    X_14 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /3)', ID="X_14", classes=["center"])
+    X_14 = eval_trilinear_point(model, A, B, C, 'csc(A -  pi  /3)', ID="X_14", classes=["center"])
     X_16 = isogonal_conjugate(model, A, B, C, X_14, ID="X_16", classes=["selected", "target"])
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
     central_line(model, X_3, X_6, 3, 6, incident=True)
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
-    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /3)', ID="X_13", classes=["center", "incident"])
+    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A +  pi  /3)', ID="X_13", classes=["center", "incident"])
     central_line(model, X_2, X_13, 2, 13, incident=True)
     X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
-    X_18 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /6)', ID="X_18", classes=["center", "incident"])
+    X_18 = eval_trilinear_point(model, A, B, C, 'csc(A -  pi  /6)', ID="X_18", classes=["center", "incident"])
     central_line(model, X_4, X_18, 4, 18, incident=True)
     return promote_point_to_top(model, X_16)
 

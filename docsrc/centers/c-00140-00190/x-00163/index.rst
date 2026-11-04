@@ -59,7 +59,7 @@ X_163
    * :ref:`X_163 <X_163>` = trilinear product of the 6 vertices of the 1st and 2nd circumperp triangles
    * :ref:`X_163 <X_163>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_31 <X_31>`\ \ :ref:`X_48 <X_48>`
    * :ref:`X_163 <X_163>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_656 <X_656>`
-   * :ref:`X_163 <X_163>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_1109 <X_1109>`\ X_2632
+   * :ref:`X_163 <X_163>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_1109 <X_1109>`\ \ :ref:`X_2632 <X_2632>`
    * :ref:`X_163 <X_163>` = trilinear product :ref:`X_6 <X_6>`\ \*\ :ref:`X_110 <X_110>`
 
 Notes

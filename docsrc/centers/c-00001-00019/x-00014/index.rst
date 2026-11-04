@@ -75,7 +75,7 @@ X_14
    * :ref:`X_14 <X_14>` = inner-Napoleon-isogonal conjugate of :ref:`X_3 <X_3>`
    * :ref:`X_14 <X_14>` = outer-Napoleon-to-inner-Napoleon :term:`similarity image <similarity-image>` of :ref:`X_16 <X_16>`
    * :ref:`X_14 <X_14>` = inner-Napoleon-to-outer-Napoleon similarity image of :ref:`X_13 <X_13>`
-   * :ref:`X_14 <X_14>` = orthocenter of :ref:`X_13 <X_13>`\ \ :ref:`X_98 <X_98>`\ X_2394
+   * :ref:`X_14 <X_14>` = orthocenter of :ref:`X_13 <X_13>`\ \ :ref:`X_98 <X_98>`\ \ :ref:`X_2394 <X_2394>`
    * :ref:`X_14 <X_14>` = :ref:`X_16 <X_16>`-of-pedal-triangle of :ref:`X_14 <X_14>`
    * :ref:`X_14 <X_14>` = {:ref:`X_265 <X_265>`,\ :ref:`X_1989 <X_1989>`}-harmonic Conjugate of :ref:`X_13 <X_13>`
    * :ref:`X_14 <X_14>` = homothetic center of (equilateral) antipedal triangle of :ref:`X_14 <X_14>` and triangle formed by circumcenters of :g:`BC <[ B C ]>`\ :ref:`X_14 <X_14>`, :g:`CA <[ C A ]>`\ :ref:`X_14 <X_14>`, :g:`AB <[ A B ]>`\ :ref:`X_14 <X_14>`

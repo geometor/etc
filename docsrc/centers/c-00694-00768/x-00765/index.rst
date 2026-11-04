@@ -46,7 +46,7 @@ X_765
    * :ref:`X_765 <X_765>` = cevapoint of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`100 <X_100>`), (:ref:`31 <X_31>`, :ref:`101 <X_101>`)
    * :ref:`X_765 <X_765>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`100 <X_100>`), (:ref:`9 <X_9>`, :ref:`190 <X_190>`), (:ref:`31 <X_31>`, :ref:`101 <X_101>`)
    * :ref:`X_765 <X_765>` = :term:`crosssum <crosssum>` of :ref:`X_1 <X_1>` and :ref:`X_1052 <X_1052>`
-   * :ref:`X_765 <X_765>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_764 <X_764>`\ X_2087
+   * :ref:`X_765 <X_765>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_764 <X_764>`\ \ :ref:`X_2087 <X_2087>`
    * :ref:`X_765 <X_765>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_100 <X_100>`\ \ :ref:`X_101 <X_101>` (the tangent at :ref:`X_100 <X_100>` to the circumconic centered at :ref:`X_9 <X_9>`; also the locus of trilinear poles of tangents at :g:`P <P>` to hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_1 <X_1>`,P}}, as P moves on line :ref:`X_1 <X_1>`\ \ :ref:`X_6 <X_6>`)
 
 .. toctree::

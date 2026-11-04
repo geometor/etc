@@ -29,10 +29,10 @@ def construct_x_01587(
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
     central_line(model, X_4, X_6, 4, 6, incident=True)
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
-    X_372 = eval_trilinear_point(model, A, B, C, 'cos(A + pi /4)', ID="X_372", classes=["center", "incident"])
+    X_372 = eval_trilinear_point(model, A, B, C, 'cos(A +  pi  /4)', ID="X_372", classes=["center", "incident"])
     central_line(model, X_2, X_372, 2, 372, incident=True)
     X_20 = eval_trilinear_point(model, A, B, C, 'cos(A) - cos(B)*cos(C)', ID="X_20", classes=["center", "incident"])
-    X_371 = eval_trilinear_point(model, A, B, C, 'cos(A - pi /4)', ID="X_371", classes=["center", "incident"])
+    X_371 = eval_trilinear_point(model, A, B, C, 'cos(A -  pi  /4)', ID="X_371", classes=["center", "incident"])
     central_line(model, X_20, X_371, 20, 371, incident=True)
     return promote_point_to_top(model, X_1587)
 

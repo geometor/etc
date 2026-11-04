@@ -24,7 +24,7 @@ def construct_x_00805(
     """Construct X_805 = o-(- 2, 2) CIRCUMCIRCLE POINT on reference triangle ABC."""
     X_804 = eval_trilinear_point(model, A, B, C, 'a **(-3)*(b**(2) - c**(2)) + a**(1)*(b **(-2) - c **(-2))', ID="X_804", classes=["center"])
     X_805 = isogonal_conjugate(model, A, B, C, X_804, ID="X_805", classes=["selected", "target"])
-    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A + omega )', ID="X_98", classes=["center", "incident"])
+    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A +  omega  )', ID="X_98", classes=["center", "incident"])
     X_385 = eval_trilinear_point(model, A, B, C, 'b*c*(a**(4) - b**(2)*c**(2))', ID="X_385", classes=["center", "incident"])
     central_line(model, X_98, X_385, 98, 385, incident=True)
     X_99 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(2) - c**(2))', ID="X_99", classes=["center", "incident"])

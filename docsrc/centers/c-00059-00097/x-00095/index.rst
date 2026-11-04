@@ -62,7 +62,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A' <A'>` be the intersection, other than A, of the circumcircle and the branch of the Lucas cubic that contains A, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The triangle :g:`A'B'C' << A' B' C' >>` is here introduced as the Lucas triangle (not to be confused with the Lucas :term:`central triangle <central-triangle>`). The vertices :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>` lie on the rectangular hyperbola {:ref:`X_2 <X_2>`,\ :ref:`X_20 <X_20>`,\ :ref:`X_54 <X_54>`,\ :ref:`X_69 <X_69>`,\ :ref:`X_110 <X_110>`,X_2574,X_2575,X_2979}}. (See https://bernard-gibert.pagesperso-orange.fr/Exemples/k007.html.) Also, :ref:`X_95 <X_95>` is the trilinear product of the vertices of the Lucas triangle. (Randy Hutson, August 19, 2015)
+   Let :g:`A' <A'>` be the intersection, other than A, of the circumcircle and the branch of the Lucas cubic that contains A, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The triangle :g:`A'B'C' << A' B' C' >>` is here introduced as the Lucas triangle (not to be confused with the Lucas :term:`central triangle <central-triangle>`). The vertices :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>` lie on the rectangular hyperbola {:ref:`X_2 <X_2>`,\ :ref:`X_20 <X_20>`,\ :ref:`X_54 <X_54>`,\ :ref:`X_69 <X_69>`,\ :ref:`X_110 <X_110>`,\ :ref:`X_2574 <X_2574>`,\ :ref:`X_2575 <X_2575>`,\ :ref:`X_2979 <X_2979>`}}. (See https://bernard-gibert.pagesperso-orange.fr/Exemples/k007.html.) Also, :ref:`X_95 <X_95>` is the trilinear product of the vertices of the Lucas triangle. (Randy Hutson, August 19, 2015)
 
 .. toctree::
    :hidden:

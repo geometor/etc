@@ -23,8 +23,8 @@ X_1321
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{4, 371} <{ 4, 371 }>`
-   * **Related Centers:** :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_371 <X_371>` (:ref:`KENMOTU POINT <X_371>`)
+   * **Central Lines:** :g:`{4, 371} <{ 4, 371 }>`, :g:`{1322, 2165} <{ 1322, 2165 }>`
+   * **Related Centers:** :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_371 <X_371>` (:ref:`KENMOTU POINT <X_371>`), :g:`X_1322 <X_1322>` (:ref:`2nd YIU SQUARES PERSPECTOR <X_1322>`), :g:`X_2165 <X_2165>` (:ref:`-ISOCONJUGATE OF X(47) <X_2165>`)
 
 .. signature:: center
 
@@ -41,7 +41,7 @@ X_1321
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`4 <X_4>`, :ref:`371 <X_371>`}, {:ref:`1322 <X_1322>`, 2165}
+   {:ref:`4 <X_4>`, :ref:`371 <X_371>`}, {:ref:`1322 <X_1322>`, :ref:`2165 <X_2165>`}
 
 .. toctree::
    :hidden:

@@ -30,7 +30,7 @@ def construct_x_00163(
     X_112 = eval_trilinear_point(model, A, B, C, 'a/(sin(2*B) - sin(2*C))', ID="X_112", classes=["center", "incident"])
     central_line(model, X_109, X_112, 109, 112, incident=True)
     X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
-    X_293 = eval_trilinear_point(model, A, B, C, 'cos(A)*sec(A + omega )', ID="X_293", classes=["center", "incident"])
+    X_293 = eval_trilinear_point(model, A, B, C, 'cos(A)*sec(A +  omega  )', ID="X_293", classes=["center", "incident"])
     central_line(model, X_1, X_293, 1, 293, incident=True)
     return promote_point_to_top(model, X_163)
 

@@ -20,7 +20,7 @@ def construct_x_01136(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1136 = 5th MORLEY-TAYLOR-MARR CENTER on reference triangle ABC."""
-    X_1136 = eval_trilinear_point(model, A, B, C, 'sec(A/3 + pi /3)', ID="X_1136", classes=["selected", "target"])
+    X_1136 = eval_trilinear_point(model, A, B, C, '1/cos(A/3 + 4*pi  /3)', ID="X_1136", classes=["selected", "target"])
     return promote_point_to_top(model, X_1136)
 
 

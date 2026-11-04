@@ -57,7 +57,7 @@ X_1293
    * :ref:`X_1293 <X_1293>` = Λ(:ref:`X_649 <X_649>`, X_4949)
    * :ref:`X_1293 <X_1293>` = Thomson-isogonal conjugate of :ref:`X_519 <X_519>`
    * :ref:`X_1293 <X_1293>` = Lucas-isogonal conjugate of :ref:`X_519 <X_519>`
-   * :ref:`X_1293 <X_1293>` = Λ(X_2254, X_3667)
+   * :ref:`X_1293 <X_1293>` = Λ(:ref:`X_2254 <X_2254>`, X_3667)
 
 Notes
 -----

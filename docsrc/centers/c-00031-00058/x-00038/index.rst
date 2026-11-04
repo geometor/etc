@@ -62,7 +62,7 @@ X_38
    * :ref:`X_38 <X_38>` = :ref:`X_643 <X_643>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X_38 <X_38>`
    * :ref:`X_38 <X_38>` = bicentric sum of PU(35)
    * :ref:`X_38 <X_38>` = PU(35)-harmonic conjugate of :ref:`X_661 <X_661>`
-   * :ref:`X_38 <X_38>` = :term:`trilinear pole <trilinear-pole>` of line X_2084X_2530
+   * :ref:`X_38 <X_38>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_2084 <X_2084>`\ \ :ref:`X_2530 <X_2530>`
    * :ref:`X_38 <X_38>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X_38 <X_38>` (which is also the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X_38 <X_38>`)
    * :ref:`X_38 <X_38>` = barycentric square root of X_8041
 

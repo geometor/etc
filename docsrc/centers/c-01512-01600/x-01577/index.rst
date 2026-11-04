@@ -54,8 +54,8 @@ X_1577
    * :ref:`X_1577 <X_1577>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`75 <X_75>`, :ref:`1109 <X_1109>`), (:ref:`76 <X_76>`, :ref:`1111 <X_1111>`), (:ref:`693 <X_693>`, :ref:`523 <X_523>`), (:ref:`799 <X_799>`, :ref:`75 <X_75>`), (:ref:`811 <X_811>`, :ref:`1 <X_1>`), (:ref:`823 <X_823>`, :ref:`92 <X_92>`)
    * :ref:`X_1577 <X_1577>` = :term:`cevapoint <cevapoint>` of :ref:`X_656 <X_656>` and :ref:`X_661 <X_661>`
    * :ref:`X_1577 <X_1577>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`115 <X_115>`, :ref:`1089 <X_1089>`), (:ref:`1109 <X_1109>`, :ref:`75 <X_75>`)
-   * :ref:`X_1577 <X_1577>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`75 <X_75>`, :ref:`799 <X_799>`), (:ref:`82 <X_82>`, :ref:`162 <X_162>`), (:ref:`92 <X_92>`, :ref:`823 <X_823>`), (:ref:`662 <X_662>`, 2167), (:ref:`811 <X_811>`, :ref:`1969 <X_1969>`), (:ref:`1240 <X_1240>`, :ref:`1978 <X_1978>`)
-   * :ref:`X_1577 <X_1577>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`31 <X_31>`, :ref:`798 <X_798>`), (:ref:`38 <X_38>`, :ref:`656 <X_656>`), (:ref:`48 <X_48>`, :ref:`822 <X_822>`), (:ref:`649 <X_649>`, 2260), (:ref:`652 <X_652>`, 2269), (:ref:`661 <X_661>`, :ref:`1953 <X_1953>`), (:ref:`1923 <X_1923>`, :ref:`1924 <X_1924>`)
+   * :ref:`X_1577 <X_1577>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`75 <X_75>`, :ref:`799 <X_799>`), (:ref:`82 <X_82>`, :ref:`162 <X_162>`), (:ref:`92 <X_92>`, :ref:`823 <X_823>`), (:ref:`662 <X_662>`, :ref:`2167 <X_2167>`), (:ref:`811 <X_811>`, :ref:`1969 <X_1969>`), (:ref:`1240 <X_1240>`, :ref:`1978 <X_1978>`)
+   * :ref:`X_1577 <X_1577>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`31 <X_31>`, :ref:`798 <X_798>`), (:ref:`38 <X_38>`, :ref:`656 <X_656>`), (:ref:`48 <X_48>`, :ref:`822 <X_822>`), (:ref:`649 <X_649>`, :ref:`2260 <X_2260>`), (:ref:`652 <X_652>`, :ref:`2269 <X_2269>`), (:ref:`661 <X_661>`, :ref:`1953 <X_1953>`), (:ref:`1923 <X_1923>`, :ref:`1924 <X_1924>`)
    * :ref:`X_1577 <X_1577>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_31 <X_31>`\ \ :ref:`X_48 <X_48>`
    * :ref:`X_1577 <X_1577>` = X_i-:term:`aleph conjugate <aleph-conjugate>` of X_j for these (i,j): (:ref:`648 <X_648>`, :ref:`656 <X_656>`), (:ref:`811 <X_811>`, :ref:`1969 <X_1969>`)
    * :ref:`X_1577 <X_1577>` = :term:`complement <complement>` of X_4560
@@ -69,7 +69,7 @@ X_1577
    * :ref:`X_1577 <X_1577>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_162 <X_162>` (line :ref:`X_1 <X_1>`\ \ :ref:`X_19 <X_19>`)
    * :ref:`X_1577 <X_1577>` = :ref:`X_48 <X_48>`-isoconjugate (polar conjugate) of :ref:`X_162 <X_162>`
    * :ref:`X_1577 <X_1577>` = :ref:`X_52 <X_52>`-isoconjugate of X_32692
-   * :ref:`X_1577 <X_1577>` = trilinear pole of line :ref:`X_1109 <X_1109>`\ X_2632
+   * :ref:`X_1577 <X_1577>` = trilinear pole of line :ref:`X_1109 <X_1109>`\ \ :ref:`X_2632 <X_2632>`
 
 Notes
 -----

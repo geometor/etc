@@ -27,7 +27,7 @@ def construct_x_00444(
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
     X_19 = eval_trilinear_point(model, A, B, C, 'tan(A)', ID="X_19", classes=["center"])
-    X_232 = eval_trilinear_point(model, A, B, C, 'tan(A)*cos(A + omega )', ID="X_232", classes=["center"])
+    X_232 = eval_trilinear_point(model, A, B, C, 'tan(A)*cos(A +  omega  )', ID="X_232", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
     central_line(model, X_19, X_232, 19, 232)
     X_444 = intersect_lines(model, X_2, X_3, X_19, X_232, ID="X_444", classes=["selected", "target"])

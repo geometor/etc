@@ -24,7 +24,7 @@ def construct_x_00428(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_428 = EULER X_38-5th-SUBSTITUTION POINT on reference triangle ABC."""
-    X_428 = eval_trilinear_point(model, A, B, C, '3*sec(A) - csc(A)*tan(omega)', ID="X_428", classes=["selected", "target"])
+    X_428 = eval_trilinear_point(model, A, B, C, '3*sec(A) - csc(A)*tan(omega) ', ID="X_428", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
@@ -32,7 +32,7 @@ def construct_x_00428(
     X_137 = point_from_barycentrics(model, A, B, C, 0.1354431, 0.64976082, 0.21479608, ID="X_137", classes=["center", "incident"])
     central_line(model, X_132, X_137, 132, 137, incident=True)
     X_51 = eval_trilinear_point(model, A, B, C, 'a**(2)*cos(B - C)', ID="X_51", classes=["center", "incident"])
-    X_1503 = eval_trilinear_point(model, A, B, C, 'sin(A)*tan(omega) - 2*cos(B)*cos(C)', ID="X_1503", classes=["center", "incident"])
+    X_1503 = eval_trilinear_point(model, A, B, C, 'sin(A)*tan(omega)  - 2*cos(B)*cos(C)', ID="X_1503", classes=["center", "incident"])
     central_line(model, X_51, X_1503, 51, 1503, incident=True)
     return promote_point_to_top(model, X_428)
 

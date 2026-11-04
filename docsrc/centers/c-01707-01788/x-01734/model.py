@@ -26,7 +26,7 @@ def construct_x_01734(
     X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center"])
     X_905 = eval_trilinear_point(model, A, B, C, '(b - c)*cot(A)', ID="X_905", classes=["center"])
     X_1734 = reflection_in_point(model, X_1, X_905, ID="X_1734", classes=["selected", "target"], guide=False)
-    X_240 = eval_trilinear_point(model, A, B, C, 'sec(A)*cos(A + omega )', ID="X_240", classes=["center", "incident"])
+    X_240 = eval_trilinear_point(model, A, B, C, 'sec(A)*cos(A +  omega  )', ID="X_240", classes=["center", "incident"])
     X_522 = eval_trilinear_point(model, A, B, C, '(cos(B) - cos(C))*(csc(A))', ID="X_522", classes=["center", "incident"])
     central_line(model, X_240, X_522, 240, 522, incident=True)
     central_line(model, X_1, X_905, 1, 905, incident=True)

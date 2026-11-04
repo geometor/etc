@@ -33,7 +33,7 @@ def construct_x_00276(
     X_275 = eval_trilinear_point(model, A, B, C, 'csc(2*A)*sec(B - C)', ID="X_275", classes=["center", "incident"])
     central_line(model, X_76, X_275, 76, 275, incident=True)
     X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
-    X_327 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*sec(A - omega )', ID="X_327", classes=["center", "incident"])
+    X_327 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*sec(A -  omega  )', ID="X_327", classes=["center", "incident"])
     central_line(model, X_4, X_327, 4, 327, incident=True)
     return promote_point_to_top(model, X_276)
 

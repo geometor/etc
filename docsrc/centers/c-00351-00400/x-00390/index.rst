@@ -48,7 +48,7 @@ X_390
 
    * :ref:`X_390 <X_390>` = midpoint of :ref:`X_144 <X_144>` and :ref:`X_145 <X_145>`
    * :ref:`X_390 <X_390>` = reflection of X_i in X_j for these (i,j): (:ref:`7 <X_7>`, :ref:`1 <X_1>`), (:ref:`8 <X_8>`, :ref:`9 <X_9>`)
-   * :ref:`X_390 <X_390>` = :term:`anticomplement <anticomplement>` of X_2550
+   * :ref:`X_390 <X_390>` = :term:`anticomplement <anticomplement>` of :ref:`X_2550 <X_2550>`
    * :ref:`X_390 <X_390>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_657 <X_657>`\ \ :ref:`X_665 <X_665>`
    * :ref:`X_390 <X_390>` = inverse-in-Feuerbach-hyperbola of :ref:`X_2 <X_2>`
    * :ref:`X_390 <X_390>` = {:ref:`X_1 <X_1>`,\ :ref:`X_20 <X_20>`}-harmonic conjugate of X_3600

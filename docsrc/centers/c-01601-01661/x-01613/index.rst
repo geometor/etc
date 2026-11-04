@@ -24,7 +24,7 @@ X_1613
    :class: note
 
    * **Central Lines:** :g:`{2, 6} <{ 2, 6 }>`, :g:`{154, 237} <{ 154, 237 }>`
-   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_154 <X_154>` (:ref:`-CEVA CONJUGATE OF X(6) <X_154>`), :g:`X_237 <X_237>` (:ref:`-LINE CONJUGATE OF X(2) <X_237>`)
+   * **Related Centers:** :g:`X_2998 <X_2998>` (:ref:`CD(X(32)) <X_2998>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_154 <X_154>` (:ref:`-CEVA CONJUGATE OF X(6) <X_154>`), :g:`X_237 <X_237>` (:ref:`-LINE CONJUGATE OF X(2) <X_237>`)
 
 .. signature:: center
 
@@ -40,7 +40,7 @@ X_1613
 .. collapse:: Functional Relations
    :badge: 10 relations
 
-   * :ref:`X_1613 <X_1613>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2998
+   * :ref:`X_1613 <X_1613>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2998 <X_2998>`
    * :ref:`X_1613 <X_1613>` = isogonal conjugate of the :term:`complement <complement>` of X_32747
    * :ref:`X_1613 <X_1613>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`32 <X_32>`, :ref:`6 <X_6>`)
    * :ref:`X_1613 <X_1613>` = :ref:`X_194 <X_194>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_6 <X_6>`

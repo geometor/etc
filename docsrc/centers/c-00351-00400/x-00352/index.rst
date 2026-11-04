@@ -40,7 +40,7 @@ X_352
    :badge: 5 lines
    :class: line-catalog
 
-   {:ref:`2 <X_2>`, :ref:`6 <X_6>`}, {:ref:`3 <X_3>`, :ref:`353 <X_353>`}, {:ref:`23 <X_23>`, 2502}, {:ref:`110 <X_110>`, :ref:`187 <X_187>`}, {:ref:`111 <X_111>`, :ref:`511 <X_511>`}
+   {:ref:`2 <X_2>`, :ref:`6 <X_6>`}, {:ref:`3 <X_3>`, :ref:`353 <X_353>`}, {:ref:`23 <X_23>`, :ref:`2502 <X_2502>`}, {:ref:`110 <X_110>`, :ref:`187 <X_187>`}, {:ref:`111 <X_111>`, :ref:`511 <X_511>`}
 
 .. collapse:: Functional Relations
    :badge: 14 relations
@@ -53,7 +53,7 @@ X_352
    * :ref:`X_352 <X_352>` = inverse-in-{circumcircle, nine-point circle}-inverter of X_3815
    * :ref:`X_352 <X_352>` = orthocentroidal-to-:g:`ABC << A B C >>` :term:`similarity image <similarity-image>` of :ref:`X_111 <X_111>`
    * :ref:`X_352 <X_352>` = 4th-Brocard-to-circumsymmedial similarity image of :ref:`X_111 <X_111>`
-   * :ref:`X_352 <X_352>` = X_2709-of-1st-Parry-triangle
+   * :ref:`X_352 <X_352>` = :ref:`X_2709 <X_2709>`-of-1st-Parry-triangle
    * :ref:`X_352 <X_352>` = :ref:`X_843 <X_843>`-of-2nd-Parry-triangle
    * :ref:`X_352 <X_352>` = :ref:`X_110 <X_110>`-of-3rd-Parry-triangle
    * :ref:`X_352 <X_352>` = inverse-in-Parry-isodynamic-circle of :ref:`X_23 <X_23>`; see :ref:`X_2 <X_2>`

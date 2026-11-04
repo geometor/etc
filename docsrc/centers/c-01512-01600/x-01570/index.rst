@@ -45,7 +45,7 @@ X_1570
 .. collapse:: Functional Relations
    :badge: 7 relations
 
-   * :ref:`X_1570 <X_1570>` = reflection of X_i in X_j for these (i,j): (:ref:`39 <X_39>`, 2025), (:ref:`187 <X_187>`, :ref:`1692 <X_1692>`), (:ref:`1692 <X_1692>`, :ref:`6 <X_6>`)
+   * :ref:`X_1570 <X_1570>` = reflection of X_i in X_j for these (i,j): (:ref:`39 <X_39>`, :ref:`2025 <X_2025>`), (:ref:`187 <X_187>`, :ref:`1692 <X_1692>`), (:ref:`1692 <X_1692>`, :ref:`6 <X_6>`)
    * :ref:`X_1570 <X_1570>` = :term:`isogonal conjugate <isogonal-conjugate>` of antigonal conjugate of X_38259
    * :ref:`X_1570 <X_1570>` = inverse-in-2nd-Lemoine-circle of :ref:`X_3 <X_3>`
    * :ref:`X_1570 <X_1570>` = :term:`crosssum <crosssum>` of :ref:`X_2 <X_2>` and :ref:`X_230 <X_230>`

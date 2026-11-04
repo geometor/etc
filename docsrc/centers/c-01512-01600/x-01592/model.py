@@ -29,7 +29,7 @@ def construct_x_01592(
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
     X_394 = eval_trilinear_point(model, A, B, C, 'cos(A)*cot(A)', ID="X_394", classes=["center", "incident"])
-    X_486 = eval_trilinear_point(model, A, B, C, 'sec(A + pi /4)', ID="X_486", classes=["center", "incident"])
+    X_486 = eval_trilinear_point(model, A, B, C, 'sec(A +  pi  /4)', ID="X_486", classes=["center", "incident"])
     central_line(model, X_394, X_486, 394, 486, incident=True)
     X_343 = eval_trilinear_point(model, A, B, C, 'cot(A)*cos(B - C)', ID="X_343", classes=["center", "incident"])
     X_640 = point_from_barycentrics(model, A, B, C, 0.50503315, 0.37571481, 0.11925204, ID="X_640", classes=["center", "incident"])

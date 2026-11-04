@@ -24,7 +24,7 @@ X_572
    :class: note
 
    * **Central Lines:** :g:`{3, 6} <{ 3, 6 }>`, :g:`{9, 48} <{ 9, 48 }>`
-   * **Related Centers:** :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_9 <X_9>` (:ref:`MITTENPUNKT <X_9>`), :g:`X_48 <X_48>` (:ref:`CROSSPOINT OF X(1) AND X(63) <X_48>`)
+   * **Related Centers:** :g:`X_2051 <X_2051>` (:ref:`EXSIMILICENTER <X_2051>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_9 <X_9>` (:ref:`MITTENPUNKT <X_9>`), :g:`X_48 <X_48>` (:ref:`CROSSPOINT OF X(1) AND X(63) <X_48>`)
 
 .. signature:: center
 
@@ -52,7 +52,7 @@ X_572
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X_572 <X_572>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2051
+   * :ref:`X_572 <X_572>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2051 <X_2051>`
    * :ref:`X_572 <X_572>` = {:ref:`X_1687 <X_1687>`,\ :ref:`X_1688 <X_1688>`}-harmonic conjugate of X_4279
    * :ref:`X_572 <X_572>` = inverse-in-Brocard-circle of :ref:`X_573 <X_573>`
    * :ref:`X_572 <X_572>` = :term:`crosssum <crosssum>` of :ref:`X_11 <X_11>` and :ref:`X_661 <X_661>`

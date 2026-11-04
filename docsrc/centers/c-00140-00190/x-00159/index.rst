@@ -47,7 +47,7 @@ X_159
    * :ref:`X_159 <X_159>` = reflection of X_i in X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`206 <X_206>`), (:ref:`66 <X_66>`, :ref:`141 <X_141>`)
    * :ref:`X_159 <X_159>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_13575
    * :ref:`X_159 <X_159>` = :term:`crosspoint <crosspoint>` of :ref:`X_110 <X_110>` and X_15388
-   * :ref:`X_159 <X_159>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_525 <X_525>`\ X_2485
+   * :ref:`X_159 <X_159>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_525 <X_525>`\ \ :ref:`X_2485 <X_2485>`
    * :ref:`X_159 <X_159>` = trilinear product X_i\*X_j for these {i,j}: {:ref:`31 <X_31>`, :ref:`1370 <X_1370>`}, {:ref:`38 <X_38>`, 8793}, {:ref:`63 <X_63>`, 3162}
    * :ref:`X_159 <X_159>` = :term:`complement <complement>` of X_36851
    * :ref:`X_159 <X_159>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`22 <X_22>`, :ref:`3 <X_3>`), (:ref:`69 <X_69>`, :ref:`6 <X_6>`)

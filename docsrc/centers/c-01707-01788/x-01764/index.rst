@@ -47,7 +47,7 @@ X_1764
 
    * :ref:`X_1764 <X_1764>` = :ref:`X_314 <X_314>`-Ceva conjugate of :ref:`X_1 <X_1>`
    * :ref:`X_1764 <X_1764>` = X_i-:term:`aleph conjugate <aleph-conjugate>` of X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`1046 <X_1046>`), (:ref:`75 <X_75>`, :ref:`1762 <X_1762>`), (:ref:`188 <X_188>`, :ref:`1045 <X_1045>`), (:ref:`314 <X_314>`, :ref:`1764 <X_1764>`), (:ref:`333 <X_333>`, :ref:`3 <X_3>`), (:ref:`556 <X_556>`, :ref:`191 <X_191>`)
-   * :ref:`X_1764 <X_1764>` = :term:`anticomplement <anticomplement>` of X_2051
+   * :ref:`X_1764 <X_1764>` = :term:`anticomplement <anticomplement>` of :ref:`X_2051 <X_2051>`
    * :ref:`X_1764 <X_1764>` = excentral-:term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1045 <X_1045>`
    * :ref:`X_1764 <X_1764>` = :ref:`X_418 <X_418>`-of-excentral-triangle
    * :ref:`X_1764 <X_1764>` = homothetic center of :term:`excentral triangle <excentral-triangle>` and 3rd Conway triangle

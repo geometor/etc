@@ -25,14 +25,14 @@ def construct_x_00628(
 ) -> spg.Point:
     """Construct X_628 = ANTICOMPLEMENT OF X_18 on reference triangle ABC."""
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
-    X_18 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /6)', ID="X_18", classes=["center"])
+    X_18 = eval_trilinear_point(model, A, B, C, 'csc(A -  pi  /6)', ID="X_18", classes=["center"])
     X_54 = eval_trilinear_point(model, A, B, C, 'sec(B - C)', ID="X_54", classes=["center"])
     X_69 = eval_trilinear_point(model, A, B, C, '(cos(A))/a**(2)', ID="X_69", classes=["center"])
     central_line(model, X_2, X_18, 2, 18)
     central_line(model, X_54, X_69, 54, 69)
     X_628 = intersect_lines(model, X_2, X_18, X_54, X_69, ID="X_628", classes=["selected", "target"])
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
-    X_299 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*sin(A - pi /3)', ID="X_299", classes=["center", "incident"])
+    X_299 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*sin(A -  pi  /3)', ID="X_299", classes=["center", "incident"])
     central_line(model, X_3, X_299, 3, 299, incident=True)
     return promote_point_to_top(model, X_628)
 

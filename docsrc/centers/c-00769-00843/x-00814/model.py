@@ -23,7 +23,7 @@ def construct_x_00814(
     """Construct X_814 = ODD (- 1, 2) INFINITY POINT on reference triangle ABC."""
     X_814 = eval_trilinear_point(model, A, B, C, '(a **(-2)*(b**(2) - c**(2)) + a**(1)*(b **(-1) - c **(-1)))', ID="X_814", classes=["selected", "target"])
     X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X_30", classes=["center", "incident"])
-    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X_511", classes=["center", "incident"])
+    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A +  omega  )', ID="X_511", classes=["center", "incident"])
     central_line(model, X_30, X_511, 30, 511, incident=True)
     return promote_point_to_top(model, X_814)
 

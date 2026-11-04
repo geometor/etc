@@ -49,7 +49,7 @@ X_1298
    * :ref:`X_1298 <X_1298>` = anticomplement of :ref:`X_129 <X_129>`
    * :ref:`X_1298 <X_1298>` = :ref:`X_107 <X_107>`-of-Lucas-triangle (defined at :ref:`X_95 <X_95>`)
    * :ref:`X_1298 <X_1298>` = :ref:`X_99 <X_99>`-of-circumorthic-triangle
-   * :ref:`X_1298 <X_1298>` = :term:`trilinear pole <trilinear-pole>`, wrt Lucas triangle, of line X_2979X_33971
+   * :ref:`X_1298 <X_1298>` = :term:`trilinear pole <trilinear-pole>`, wrt Lucas triangle, of line :ref:`X_2979 <X_2979>`\ X_33971
    * :ref:`X_1298 <X_1298>` = point of intersection, other than :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, of circumcircle and hyperbola {{:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_4 <X_4>`,\ :ref:`X_51 <X_51>`}} (circumconic centered at :ref:`X_130 <X_130>`)
 
 .. toctree::

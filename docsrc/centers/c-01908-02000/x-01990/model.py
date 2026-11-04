@@ -24,7 +24,7 @@ def construct_x_01990(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1990 = ORTHIC-AXIS INTERCEPT OF LINE X_4X_6 on reference triangle ABC."""
-    X_297 = eval_trilinear_point(model, A, B, C, 'csc(2*A)*cos(A + omega )', ID="X_297", classes=["center"])
+    X_297 = eval_trilinear_point(model, A, B, C, 'csc(2*A)*cos(A +  omega  )', ID="X_297", classes=["center"])
     X_648 = eval_trilinear_point(model, A, B, C, '1/(a*(b**(2) - c**(2))*(b**(2) + c**(2) - a**(2)))', ID="X_648", classes=["center"])
     X_1990 = midpoint(model, X_297, X_648, ID="X_1990", classes=["selected", "target"], guide=False)
     X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])

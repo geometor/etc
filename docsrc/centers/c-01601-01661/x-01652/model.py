@@ -24,15 +24,15 @@ def construct_x_01652(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1652 = 4th EVANS PERSPECTOR on reference triangle ABC."""
-    X_1652 = eval_trilinear_point(model, A, B, C, 'sqrt(3/4) - cos(A - pi /6) + cos(B - pi /6) + cos(C - pi /6)', ID="X_1652", classes=["selected", "target"])
+    X_1652 = eval_trilinear_point(model, A, B, C, 'sqrt(3/4) - cos(A -  pi  /6) + cos(B -  pi  /6) + cos(C -  pi  /6)', ID="X_1652", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
     X_7 = gergonne_point_of(model, A, B, C, ID="X_7", classes=["center", "incident"])
     central_line(model, X_2, X_7, 2, 7, incident=True)
     X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
-    X_15 = eval_trilinear_point(model, A, B, C, 'sin(A + pi /3)', ID="X_15", classes=["center", "incident"])
+    X_15 = eval_trilinear_point(model, A, B, C, 'sin(A +  pi  /3)', ID="X_15", classes=["center", "incident"])
     central_line(model, X_1, X_15, 1, 15, incident=True)
-    X_396 = eval_trilinear_point(model, A, B, C, 'cos(B - C) + 2*cos(A - pi /3)', ID="X_396", classes=["center", "incident"])
-    X_554 = eval_trilinear_point(model, A, B, C, 'sec(A/2)*csc(A/2 + pi /3)', ID="X_554", classes=["center", "incident"])
+    X_396 = eval_trilinear_point(model, A, B, C, 'cos(B - C) + 2*cos(A -  pi  /3)', ID="X_396", classes=["center", "incident"])
+    X_554 = eval_trilinear_point(model, A, B, C, 'sec(A/2)*csc(A/2 +  pi  /3)', ID="X_554", classes=["center", "incident"])
     central_line(model, X_396, X_554, 396, 554, incident=True)
     return promote_point_to_top(model, X_1652)
 

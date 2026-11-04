@@ -23,7 +23,7 @@ def construct_x_00327(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_327 = ISOTOMIC CONJUGATE OF X_182 on reference triangle ABC."""
-    X_182 = eval_trilinear_point(model, A, B, C, 'cos(A- omega )', ID="X_182", classes=["center"])
+    X_182 = eval_trilinear_point(model, A, B, C, 'cos(A-  omega  )', ID="X_182", classes=["center"])
     X_327 = isotomic_conjugate(model, A, B, C, X_182, ID="X_327", classes=["selected", "target"])
     X_5 = nine_point_center_of(model, A, B, C, ID="X_5", classes=["center", "incident"])
     X_76 = eval_trilinear_point(model, A, B, C, '1/a**(3)', ID="X_76", classes=["center", "incident"])

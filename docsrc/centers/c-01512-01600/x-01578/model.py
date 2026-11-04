@@ -30,7 +30,7 @@ def construct_x_01578(
     X_394 = eval_trilinear_point(model, A, B, C, 'cos(A)*cot(A)', ID="X_394", classes=["center", "incident"])
     X_488 = eval_trilinear_point(model, A, B, C, '((cos(A))*(1 + csc(A)*sin(B)*sin(C)))', ID="X_488", classes=["center", "incident"])
     central_line(model, X_394, X_488, 394, 488, incident=True)
-    X_485 = eval_trilinear_point(model, A, B, C, 'sec(A - pi /4)', ID="X_485", classes=["center", "incident"])
+    X_485 = eval_trilinear_point(model, A, B, C, 'sec(A -  pi  /4)', ID="X_485", classes=["center", "incident"])
     X_1368 = eval_trilinear_point(model, A, B, C, 'b*c*(b**(2)/(a**(2) - b**(2) + c**(2)) + c**(2)/(a**(2) + b**(2) - c**(2)))', ID="X_1368", classes=["center", "incident"])
     central_line(model, X_485, X_1368, 485, 1368, incident=True)
     return promote_point_to_top(model, X_1578)

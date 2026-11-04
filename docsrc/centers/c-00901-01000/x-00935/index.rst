@@ -46,7 +46,7 @@ X_935
    :badge: 12 relations
 
    * :ref:`X_935 <X_935>` = :term:`anticomplement <anticomplement>` of X_38971
-   * :ref:`X_935 <X_935>` = :ref:`X_63 <X_63>`-:term:`isoconjugate <isoconjugate>` of X_2492
+   * :ref:`X_935 <X_935>` = :ref:`X_63 <X_63>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_2492 <X_2492>`
    * :ref:`X_935 <X_935>` = trilinear pole of line :ref:`X_6 <X_6>`\ \ :ref:`X_67 <X_67>` (the radical axis of the orthocentroidal circle and Dao-Moses-Telv circle)
    * :ref:`X_935 <X_935>` = concurrence of reflections in sides of :g:`ABC << A B C >>` of line :ref:`X_4 <X_4>`\ \ :ref:`X_67 <X_67>`
    * :ref:`X_935 <X_935>` = polar conjugate of X_9979

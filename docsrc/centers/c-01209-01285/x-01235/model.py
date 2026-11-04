@@ -29,7 +29,7 @@ def construct_x_01235(
     X_69 = eval_trilinear_point(model, A, B, C, '(cos(A))/a**(2)', ID="X_69", classes=["center", "incident"])
     central_line(model, X_4, X_69, 4, 69, incident=True)
     X_24 = eval_trilinear_point(model, A, B, C, 'sec(A)*cos(2*A)', ID="X_24", classes=["center", "incident"])
-    X_183 = eval_trilinear_point(model, A, B, C, 'b**(2)*c**(2)*cos(A- omega )', ID="X_183", classes=["center", "incident"])
+    X_183 = eval_trilinear_point(model, A, B, C, 'b**(2)*c**(2)*cos(A-  omega  )', ID="X_183", classes=["center", "incident"])
     central_line(model, X_24, X_183, 24, 183, incident=True)
     X_54 = eval_trilinear_point(model, A, B, C, 'sec(B - C)', ID="X_54", classes=["center", "incident"])
     X_276 = eval_trilinear_point(model, A, B, C, '(csc(A))**(3)*sec(A)*sec(B - C)', ID="X_276", classes=["center", "incident"])

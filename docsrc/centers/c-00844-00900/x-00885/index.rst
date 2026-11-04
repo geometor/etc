@@ -41,7 +41,7 @@ X_885
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X_885 <X_885>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2283
+   * :ref:`X_885 <X_885>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2283 <X_2283>`
    * :ref:`X_885 <X_885>` = isotomic conjugate of :ref:`X_883 <X_883>`
    * :ref:`X_885 <X_885>` = :term:`crosssum <crosssum>` of :ref:`X_672 <X_672>` and :ref:`X_926 <X_926>`
    * :ref:`X_885 <X_885>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_672 <X_672>`\ \ :ref:`X_1362 <X_1362>`

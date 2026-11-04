@@ -23,9 +23,9 @@ def construct_x_00287(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_287 = X_2-HIRST INVERSE OF X_98 on reference triangle ABC."""
-    X_287 = eval_trilinear_point(model, A, B, C, 'cot(A)*sec(A + omega )', ID="X_287", classes=["selected", "target"])
+    X_287 = eval_trilinear_point(model, A, B, C, 'cot(A)*sec(A +  omega  )', ID="X_287", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
-    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A + omega )', ID="X_98", classes=["center", "incident"])
+    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A +  omega  )', ID="X_98", classes=["center", "incident"])
     central_line(model, X_2, X_98, 2, 98, incident=True)
     X_95 = eval_trilinear_point(model, A, B, C, 'b**(2)*c**(2)*sec(B - C)', ID="X_95", classes=["center", "incident"])
     X_141 = eval_trilinear_point(model, A, B, C, 'b*c*(b**(2) + c**(2))', ID="X_141", classes=["center", "incident"])

@@ -8,6 +8,7 @@ import sympy.geometry as spg
 from geometor.model import Model
 
 from geometor.etc.ops import (
+    central_line,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
@@ -21,6 +22,9 @@ def construct_x_01917(
 ) -> spg.Point:
     """Construct X_1917 = TRILINEAR 6th POWER POINT on reference triangle ABC."""
     X_1917 = eval_trilinear_point(model, A, B, C, 'a**(6)', ID="X_1917", classes=["selected", "target"])
+    X_31 = eval_trilinear_point(model, A, B, C, 'a**(2)', ID="X_31", classes=["center", "incident"])
+    X_2085 = eval_trilinear_point(model, A, B, C, '(a**(2)*(b**(4) + c**(4)))', ID="X_2085", classes=["center", "incident"])
+    central_line(model, X_31, X_2085, 31, 2085, incident=True)
     return promote_point_to_top(model, X_1917)
 
 

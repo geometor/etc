@@ -48,7 +48,7 @@ X_252
 
    * :ref:`X_252 <X_252>` = isogonal conjugate of :ref:`X_143 <X_143>`
    * :ref:`X_252 <X_252>` = :term:`anticomplement <anticomplement>` of X_31376
-   * :ref:`X_252 <X_252>` = :ref:`X_5 <X_5>`-:term:`isoconjugate <isoconjugate>` of X_2964
+   * :ref:`X_252 <X_252>` = :ref:`X_5 <X_5>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_2964 <X_2964>`
 
 Notes
 -----

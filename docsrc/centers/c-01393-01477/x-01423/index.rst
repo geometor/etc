@@ -41,7 +41,7 @@ X_1423
 .. collapse:: Functional Relations
    :badge: 7 relations
 
-   * :ref:`X_1423 <X_1423>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2319
+   * :ref:`X_1423 <X_1423>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2319 <X_2319>`
    * :ref:`X_1423 <X_1423>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_27424
    * :ref:`X_1423 <X_1423>` = :term:`complement <complement>` of X_20348
    * :ref:`X_1423 <X_1423>` = :term:`anticomplement <anticomplement>` of X_20258

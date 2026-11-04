@@ -27,7 +27,7 @@ def construct_x_01625(
     X_75 = eval_trilinear_point(model, A, B, C, '1/a**(2)', ID="X_75", classes=["center"])
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center"])
     X_1625 = ceva_conjugate(model, A, B, C, X_75, X_6, ID="X_1625", classes=["selected", "target"])
-    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /3)', ID="X_13", classes=["center", "incident"])
+    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A +  pi  /3)', ID="X_13", classes=["center", "incident"])
     central_line(model, X_6, X_13, 6, 13, incident=True)
     X_5 = nine_point_center_of(model, A, B, C, ID="X_5", classes=["center", "incident"])
     X_217 = eval_trilinear_point(model, A, B, C, '((sin(A))**(3))*cos(A)*cos(B - C)', ID="X_217", classes=["center", "incident"])

@@ -11,7 +11,6 @@ from geometor.etc.ops import (
     central_line,
     construct_baseline_triangle,
     create_model,
-    crosspoint,
     eval_trilinear_point,
     incenter_of,
     point_from_barycentrics,
@@ -24,9 +23,8 @@ def construct_x_01953(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1953 = BICENTRIC SUM OF PU(21) on reference triangle ABC."""
-    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center"])
-    X_92 = eval_trilinear_point(model, A, B, C, 'csc(2*A)', ID="X_92", classes=["center"])
-    X_1953 = crosspoint(model, A, B, C, X_1, X_92, ID="X_1953", classes=["selected", "target"])
+    X_1953 = eval_trilinear_point(model, A, B, C, 'sin(2*B) + sin(2*C)', ID="X_1953", classes=["selected", "target"])
+    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
     X_19 = eval_trilinear_point(model, A, B, C, 'tan(A)', ID="X_19", classes=["center", "incident"])
     central_line(model, X_1, X_19, 1, 19, incident=True)
     X_71 = eval_trilinear_point(model, A, B, C, '(b + c)*cos(A)', ID="X_71", classes=["center", "incident"])

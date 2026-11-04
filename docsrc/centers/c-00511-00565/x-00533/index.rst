@@ -12,7 +12,7 @@ X_533
 
 .. enunciation::
 
-   :ref:`X_533 <X_533>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2381
+   :ref:`X_533 <X_533>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2381 <X_2381>`
 
 .. figure:: x-00533.svg
    :alt: X_533 — DIRECTION OF VECTOR AX + BX + CX, where X = X_18
@@ -24,7 +24,7 @@ X_533
    :class: note
 
    * **Central Lines:** :g:`{2, 18} <{ 2, 18 }>`, :g:`{14, 299} <{ 14, 299 }>`
-   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_18 <X_18>` (:ref:`2nd NAPOLEON POINT <X_18>`), :g:`X_14 <X_14>` (:ref:`2nd ISOGONIC CENTER <X_14>`), :g:`X_299 <X_299>` (:ref:`ISOTOMIC CONJUGATE OF 2nd ISOGONIC CENTER <X_299>`)
+   * **Related Centers:** :g:`X_2381 <X_2381>` (:ref:`CIR(X(533)) <X_2381>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_18 <X_18>` (:ref:`2nd NAPOLEON POINT <X_18>`), :g:`X_14 <X_14>` (:ref:`2nd ISOGONIC CENTER <X_14>`), :g:`X_299 <X_299>` (:ref:`ISOTOMIC CONJUGATE OF 2nd ISOGONIC CENTER <X_299>`)
 
 .. signature:: center
 
@@ -44,7 +44,7 @@ X_533
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X_533 <X_533>` = isogonal conjugate of X_2381
+   * :ref:`X_533 <X_533>` = isogonal conjugate of :ref:`X_2381 <X_2381>`
 
 .. toctree::
    :hidden:

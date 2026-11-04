@@ -44,7 +44,7 @@ X_1874
    * :ref:`X_1874 <X_1874>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1808 <X_1808>`
    * :ref:`X_1874 <X_1874>` = :ref:`X_242 <X_242>`-Ceva conjugate of :ref:`X_1284 <X_1284>`
    * :ref:`X_1874 <X_1874>` = polar conjugate of X_36800
-   * :ref:`X_1874 <X_1874>` = :ref:`X_63 <X_63>`-:term:`isoconjugate <isoconjugate>` of X_2311
+   * :ref:`X_1874 <X_1874>` = :ref:`X_63 <X_63>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_2311 <X_2311>`
    * :ref:`X_1874 <X_1874>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X_36800 (line :ref:`X_8 <X_8>`\ X_3907)
 
 .. toctree::

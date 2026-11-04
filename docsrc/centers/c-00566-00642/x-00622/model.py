@@ -8,13 +8,13 @@ import sympy.geometry as spg
 from geometor.model import Model
 
 from geometor.etc.ops import (
-    anticomplement,
     central_line,
     centroid_of,
     circumcenter_of,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    intersect_lines,
     orthocenter_of,
     promote_point_to_top,
 )
@@ -25,16 +25,15 @@ def construct_x_00622(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_622 = ANTICOMPLEMENT OF X_16 on reference triangle ABC."""
-    X_16 = eval_trilinear_point(model, A, B, C, 'sin(A- pi /3)', ID="X_16", classes=["center"])
-    X_622 = anticomplement(model, A, B, C, X_16, ID="X_622", classes=["selected", "target"])
-    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
-    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /3)', ID="X_13", classes=["center", "incident"])
-    central_line(model, X_2, X_13, 2, 13, incident=True)
-    X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
-    X_69 = eval_trilinear_point(model, A, B, C, '(cos(A))/a**(2)', ID="X_69", classes=["center", "incident"])
-    central_line(model, X_4, X_69, 4, 69, incident=True)
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
+    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A +  pi  /3)', ID="X_13", classes=["center"])
+    X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center"])
+    X_69 = eval_trilinear_point(model, A, B, C, '(cos(A))/a**(2)', ID="X_69", classes=["center"])
+    central_line(model, X_2, X_13, 2, 13)
+    central_line(model, X_4, X_69, 4, 69)
+    X_622 = intersect_lines(model, X_2, X_13, X_4, X_69, ID="X_622", classes=["selected", "target"])
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
-    X_303 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*sin(A - pi /6)', ID="X_303", classes=["center", "incident"])
+    X_303 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*sin(A -  pi  /6)', ID="X_303", classes=["center", "incident"])
     central_line(model, X_3, X_303, 3, 303, incident=True)
     return promote_point_to_top(model, X_622)
 

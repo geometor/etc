@@ -31,7 +31,7 @@ def construct_x_01378(
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
     X_1124 = eval_trilinear_point(model, A, B, C, '1 + sin(A)', ID="X_1124", classes=["center", "incident"])
     central_line(model, X_2, X_1124, 2, 1124, incident=True)
-    X_371 = eval_trilinear_point(model, A, B, C, 'cos(A - pi /4)', ID="X_371", classes=["center", "incident"])
+    X_371 = eval_trilinear_point(model, A, B, C, 'cos(A -  pi  /4)', ID="X_371", classes=["center", "incident"])
     X_958 = eval_trilinear_point(model, A, B, C, '(b + c - a)*(a**(2) + a*b + a*c + 2*b*c)', ID="X_958", classes=["center", "incident"])
     central_line(model, X_371, X_958, 371, 958, incident=True)
     return promote_point_to_top(model, X_1378)

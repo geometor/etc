@@ -24,8 +24,11 @@ def construct_x_01322(
     """Construct X_1322 = 2nd YIU SQUARES PERSPECTOR on reference triangle ABC."""
     X_1322 = eval_trilinear_point(model, A, B, C, '((2*cos(A) - sin(A))/((cos(A))**(2) - cos(A)*sin(A)))', ID="X_1322", classes=["selected", "target"])
     X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
-    X_372 = eval_trilinear_point(model, A, B, C, 'cos(A + pi /4)', ID="X_372", classes=["center", "incident"])
+    X_372 = eval_trilinear_point(model, A, B, C, 'cos(A +  pi  /4)', ID="X_372", classes=["center", "incident"])
     central_line(model, X_4, X_372, 4, 372, incident=True)
+    X_1321 = eval_trilinear_point(model, A, B, C, '((2*cos(A) + sin(A))/((cos(A))**(2) + cos(A)*sin(A)))', ID="X_1321", classes=["center", "incident"])
+    X_2165 = eval_trilinear_point(model, A, B, C, '(sin(A)*sec(2*A))', ID="X_2165", classes=["center", "incident"])
+    central_line(model, X_1321, X_2165, 1321, 2165, incident=True)
     return promote_point_to_top(model, X_1322)
 
 

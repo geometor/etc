@@ -29,7 +29,7 @@ def construct_x_00195(
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
     X_195 = ceva_conjugate(model, A, B, C, X_5, X_3, ID="X_195", classes=["selected", "target"])
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
-    X_17 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /6)', ID="X_17", classes=["center", "incident"])
+    X_17 = eval_trilinear_point(model, A, B, C, 'csc(A +  pi  /6)', ID="X_17", classes=["center", "incident"])
     central_line(model, X_6, X_17, 6, 17, incident=True)
     X_54 = eval_trilinear_point(model, A, B, C, 'sec(B - C)', ID="X_54", classes=["center", "incident"])
     central_line(model, X_3, X_54, 3, 54, incident=True)

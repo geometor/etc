@@ -24,7 +24,7 @@ def construct_x_00441(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_441 = COMPLEMENT OF X_297 on reference triangle ABC."""
-    X_297 = eval_trilinear_point(model, A, B, C, 'csc(2*A)*cos(A + omega )', ID="X_297", classes=["center"])
+    X_297 = eval_trilinear_point(model, A, B, C, 'csc(2*A)*cos(A +  omega  )', ID="X_297", classes=["center"])
     X_401 = eval_trilinear_point(model, A, B, C, '(sin(2*B)*sin(2*C) - (sin(2*A))**(2))*(csc(A))', ID="X_401", classes=["center"])
     X_441 = midpoint(model, X_297, X_401, ID="X_441", classes=["selected", "target"], guide=False)
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])

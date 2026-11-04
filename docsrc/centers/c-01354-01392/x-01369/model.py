@@ -23,7 +23,7 @@ def construct_x_01369(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1369 = ANTICOMPLEMENTARY CONJUGATE OF X_6 on reference triangle ABC."""
-    X_251 = eval_trilinear_point(model, A, B, C, 'a**(2)*csc(A + omega )', ID="X_251", classes=["center"])
+    X_251 = eval_trilinear_point(model, A, B, C, 'a**(2)*csc(A +  omega  )', ID="X_251", classes=["center"])
     X_1369 = anticomplement(model, A, B, C, X_251, ID="X_1369", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
     X_32 = eval_trilinear_point(model, A, B, C, 'a**(3)', ID="X_32", classes=["center", "incident"])

@@ -33,7 +33,7 @@ def construct_x_00570(
     X_128 = eval_trilinear_point(model, A, B, C, '((sec(A))*(cos(2*B) + cos(2*C))*(1 + 2*cos(2*A))*(cos(2*A) + 2*cos(2*B)*cos(2*C)))', ID="X_128", classes=["center", "incident"])
     central_line(model, X_115, X_128, 115, 128, incident=True)
     X_53 = eval_trilinear_point(model, A, B, C, 'tan(A)*cos(B - C)', ID="X_53", classes=["center", "incident"])
-    X_232 = eval_trilinear_point(model, A, B, C, 'tan(A)*cos(A + omega )', ID="X_232", classes=["center", "incident"])
+    X_232 = eval_trilinear_point(model, A, B, C, 'tan(A)*cos(A +  omega  )', ID="X_232", classes=["center", "incident"])
     central_line(model, X_53, X_232, 53, 232, incident=True)
     return promote_point_to_top(model, X_570)
 

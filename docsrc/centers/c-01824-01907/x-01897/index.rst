@@ -23,8 +23,9 @@ X_1897
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{33, 92} <{ 33, 92 }>`, :g:`{4, 145} <{ 4, 145 }>`
-   * **Related Centers:** :g:`X_1459 <X_1459>` (:ref:`-BETH CONJUGATE OF X(521) <X_1459>`), :g:`X_33 <X_33>` (:ref:`PERSPECTOR OF THE ORTHIC AND INTANGENTS TRIANGLES <X_33>`), :g:`X_92 <X_92>` (:ref:`CEVAPOINT OF INCENTER AND CLAWSON POINT <X_92>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_145 <X_145>` (:ref:`ANTICOMPLEMENT OF NAGEL POINT <X_145>`)
+   * **Derived Triangle:** :term:`Anticomplementary Triangle <anticomplementary triangle>` :g:`△K_aK_bK_c << K_a K_b K_c >>` — vertices :g:`K_a <K_a>`, :g:`K_b <K_b>`, :g:`K_c <K_c>` (Formed by lines through A, B, C parallel to opposite sides)
+   * **Central Lines:** :g:`{2, 2968} <{ 2, 2968 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_2968 <X_2968>` (:ref:`2nd MACBEATH POINT <X_2968>`)
 
 .. signature:: center
 
@@ -42,7 +43,7 @@ X_1897
    :badge: 13 relations
 
    * :ref:`X_1897 <X_1897>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1459 <X_1459>`
-   * :ref:`X_1897 <X_1897>` = :term:`anticomplement <anticomplement>` of X_2968
+   * :ref:`X_1897 <X_1897>` = :term:`anticomplement <anticomplement>` of :ref:`X_2968 <X_2968>`
    * :ref:`X_1897 <X_1897>` = :ref:`X_648 <X_648>`-Ceva conjugate of :ref:`X_1783 <X_1783>`
    * :ref:`X_1897 <X_1897>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`522 <X_522>`), (:ref:`523 <X_523>`, :ref:`1834 <X_1834>`), (:ref:`650 <X_650>`, :ref:`1864 <X_1864>`)
    * :ref:`X_1897 <X_1897>` = :ref:`X_101 <X_101>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_190 <X_190>`

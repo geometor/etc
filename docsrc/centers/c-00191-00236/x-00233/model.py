@@ -26,7 +26,7 @@ def construct_x_00233(
     """Construct X_233 = X_2-CEVA CONJUGATE OF X_140 on reference triangle ABC."""
     X_233 = eval_trilinear_point(model, A, B, C, '(b*cos(C - A) + c*cos(B - A))*cos(B - C)', ID="X_233", classes=["selected", "target"])
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
-    X_17 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /6)', ID="X_17", classes=["center", "incident"])
+    X_17 = eval_trilinear_point(model, A, B, C, 'csc(A +  pi  /6)', ID="X_17", classes=["center", "incident"])
     central_line(model, X_6, X_17, 6, 17, incident=True)
     X_5 = nine_point_center_of(model, A, B, C, ID="X_5", classes=["center", "incident"])
     X_53 = eval_trilinear_point(model, A, B, C, 'tan(A)*cos(B - C)', ID="X_53", classes=["center", "incident"])

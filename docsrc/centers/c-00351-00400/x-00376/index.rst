@@ -71,7 +71,7 @@ X_376
    * :ref:`X_376 <X_376>` = :ref:`X_2 <X_2>`-of-2nd-anti-tri-squares-triangle
    * :ref:`X_376 <X_376>` = homothetic center of 1st and 2nd anti-tri-squares triangles
    * :ref:`X_376 <X_376>` = insimilicenter of circumcircles of :g:`ABC << A B C >>` and anti-:term:`Euler triangle <euler-triangle>`; the exsimilicenter is :ref:`X_4 <X_4>`
-   * :ref:`X_376 <X_376>` = {X_2043,X_2044}-harmonic conjugate of :ref:`X_20 <X_20>`
+   * :ref:`X_376 <X_376>` = {:ref:`X_2043 <X_2043>`,\ :ref:`X_2044 <X_2044>`}-harmonic conjugate of :ref:`X_20 <X_20>`
    * :ref:`X_376 <X_376>` = trisector nearest :ref:`X_3 <X_3>` of segment :ref:`X_3 <X_3>`\ \ :ref:`X_20 <X_20>`
    * :ref:`X_376 <X_376>` = trisector nearest :ref:`X_20 <X_20>` of segment :ref:`X_4 <X_4>`\ \ :ref:`X_20 <X_20>`
    * :ref:`X_376 <X_376>` = Ehrmann-mid-to-Johnson :term:`similarity image <similarity-image>` of :ref:`X_2 <X_2>`

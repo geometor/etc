@@ -24,17 +24,17 @@ def construct_x_00635(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_635 = COMPLEMENT OF X_61 on reference triangle ABC."""
-    X_61 = eval_trilinear_point(model, A, B, C, 'sin(A + pi /6)', ID="X_61", classes=["center"])
+    X_61 = eval_trilinear_point(model, A, B, C, 'sin(A +  pi  /6)', ID="X_61", classes=["center"])
     X_633 = eval_trilinear_point(model, A, B, C, '((S*B*S*C + 2*sqrt(3)*SA*area )/a)', ID="X_633", classes=["center"])
     X_635 = midpoint(model, X_61, X_633, ID="X_635", classes=["selected", "target"], guide=False)
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
-    X_18 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /6)', ID="X_18", classes=["center", "incident"])
+    X_18 = eval_trilinear_point(model, A, B, C, 'csc(A -  pi  /6)', ID="X_18", classes=["center", "incident"])
     central_line(model, X_2, X_18, 2, 18, incident=True)
     X_5 = nine_point_center_of(model, A, B, C, ID="X_5", classes=["center", "incident"])
     X_141 = eval_trilinear_point(model, A, B, C, 'b*c*(b**(2) + c**(2))', ID="X_141", classes=["center", "incident"])
     central_line(model, X_5, X_141, 5, 141, incident=True)
-    X_17 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /6)', ID="X_17", classes=["center", "incident"])
-    X_299 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*sin(A - pi /3)', ID="X_299", classes=["center", "incident"])
+    X_17 = eval_trilinear_point(model, A, B, C, 'csc(A +  pi  /6)', ID="X_17", classes=["center", "incident"])
+    X_299 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*sin(A -  pi  /3)', ID="X_299", classes=["center", "incident"])
     central_line(model, X_17, X_299, 17, 299, incident=True)
     return promote_point_to_top(model, X_635)
 

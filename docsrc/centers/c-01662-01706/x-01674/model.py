@@ -23,15 +23,15 @@ def construct_x_01674(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1674 = INSIMILICENTER(INCIRCLE, BROCARD CIRCLE) on reference triangle ABC."""
-    X_1674 = eval_trilinear_point(model, A, B, C, 'e + cos(A - omega )', ID="X_1674", classes=["selected", "target"])
+    X_1674 = eval_trilinear_point(model, A, B, C, 'e + cos(A -  omega  )', ID="X_1674", classes=["selected", "target"])
     X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
-    X_182 = eval_trilinear_point(model, A, B, C, 'cos(A- omega )', ID="X_182", classes=["center", "incident"])
+    X_182 = eval_trilinear_point(model, A, B, C, 'cos(A-  omega  )', ID="X_182", classes=["center", "incident"])
     central_line(model, X_1, X_182, 1, 182, incident=True)
     X_11 = feuerbach_point_of(model, A, B, C, ID="X_11", classes=["center", "incident"])
-    X_1348 = eval_trilinear_point(model, A, B, C, 'e*cos(B - C) + cos(A - omega )', ID="X_1348", classes=["center", "incident"])
+    X_1348 = eval_trilinear_point(model, A, B, C, 'e*cos(B - C) + cos(A -  omega  )', ID="X_1348", classes=["center", "incident"])
     central_line(model, X_11, X_1348, 11, 1348, incident=True)
     X_12 = eval_trilinear_point(model, A, B, C, '1 + cos(B - C)', ID="X_12", classes=["center", "incident"])
-    X_1349 = eval_trilinear_point(model, A, B, C, 'e*cos(B - C) - cos(A - omega )', ID="X_1349", classes=["center", "incident"])
+    X_1349 = eval_trilinear_point(model, A, B, C, 'e*cos(B - C) - cos(A -  omega  )', ID="X_1349", classes=["center", "incident"])
     central_line(model, X_12, X_1349, 12, 1349, incident=True)
     return promote_point_to_top(model, X_1674)
 

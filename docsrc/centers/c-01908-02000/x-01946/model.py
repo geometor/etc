@@ -24,7 +24,7 @@ def construct_x_01946(
     """Construct X_1946 = BICENTRIC DIFFERENCE OF PU(19) on reference triangle ABC."""
     X_1946 = eval_trilinear_point(model, A, B, C, '(sin(2*A))*(cos(B) - cos(C))', ID="X_1946", classes=["selected", "target"])
     X_187 = eval_trilinear_point(model, A, B, C, 'a*(2*a**(2) - b**(2) - c**(2))', ID="X_187", classes=["center", "incident"])
-    X_237 = eval_trilinear_point(model, A, B, C, 'a**(2)*cos(A + omega )', ID="X_237", classes=["center", "incident"])
+    X_237 = eval_trilinear_point(model, A, B, C, 'a**(2)*cos(A +  omega  )', ID="X_237", classes=["center", "incident"])
     central_line(model, X_187, X_237, 187, 237, incident=True)
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
     X_905 = eval_trilinear_point(model, A, B, C, '(b - c)*cot(A)', ID="X_905", classes=["center", "incident"])

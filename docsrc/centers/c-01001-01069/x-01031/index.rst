@@ -40,7 +40,7 @@ X_1031
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X_1031 <X_1031>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_2896
+   * :ref:`X_1031 <X_1031>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_2896 <X_2896>`
    * :ref:`X_1031 <X_1031>` = :ref:`X_83 <X_83>`-cross conjugate of :ref:`X_2 <X_2>`
    * :ref:`X_1031 <X_1031>` = :term:`cyclocevian conjugate <cyclocevian-conjugate>` of :ref:`X_6 <X_6>`
    * :ref:`X_1031 <X_1031>` = barycentric product of PU(137)

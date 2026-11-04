@@ -12,7 +12,6 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
-    isotomic_conjugate,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -22,8 +21,7 @@ def construct_x_00309(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_309 = ISOTOMIC CONJUGATE OF X_40 on reference triangle ABC."""
-    X_40 = eval_trilinear_point(model, A, B, C, 'cos(B) + cos(C) - cos(A) - 1', ID="X_40", classes=["center"])
-    X_309 = isotomic_conjugate(model, A, B, C, X_40, ID="X_309", classes=["selected", "target"])
+    X_309 = eval_trilinear_point(model, A, B, C, '((csc(A))**(2))/(-1 - cos(A) + cos(B) + cos(C))', ID="X_309", classes=["selected", "target"])
     X_69 = eval_trilinear_point(model, A, B, C, '(cos(A))/a**(2)', ID="X_69", classes=["center", "incident"])
     X_189 = eval_trilinear_point(model, A, B, C, 'b*c/(cos(B) + cos(C) - cos(A) - 1)', ID="X_189", classes=["center", "incident"])
     central_line(model, X_69, X_189, 69, 189, incident=True)

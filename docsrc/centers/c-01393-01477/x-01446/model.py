@@ -10,13 +10,12 @@ from geometor.model import Model
 from geometor.etc.ops import (
     central_line,
     centroid_of,
-    cevapoint,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
     gergonne_point_of,
+    intersect_lines,
     orthocenter_of,
-    point_from_barycentrics,
     promote_point_to_top,
     spieker_center_of,
 )
@@ -27,15 +26,13 @@ def construct_x_01446(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1446 = X_349-BETH CONJUGATE OF X_349 on reference triangle ABC."""
-    X_1427 = point_from_barycentrics(model, A, B, C, 0.12974052, 0.25548902, 0.61477046, ID="X_1427", classes=["center"])
-    X_1439 = eval_trilinear_point(model, A, B, C, '(b + c)*(b**(2) + c**(2) - a**(2))/(b + c - a)**(2)', ID="X_1439", classes=["center"])
-    X_1446 = cevapoint(model, A, B, C, X_1427, X_1439, ID="X_1446", classes=["selected", "target"])
-    X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
-    X_7 = gergonne_point_of(model, A, B, C, ID="X_7", classes=["center", "incident"])
-    central_line(model, X_4, X_7, 4, 7, incident=True)
-    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
-    X_85 = eval_trilinear_point(model, A, B, C, 'b**(2)*c**(2)/(b + c - a)', ID="X_85", classes=["center", "incident"])
-    central_line(model, X_2, X_85, 2, 85, incident=True)
+    X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center"])
+    X_7 = gergonne_point_of(model, A, B, C, ID="X_7", classes=["center"])
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
+    X_85 = eval_trilinear_point(model, A, B, C, 'b**(2)*c**(2)/(b + c - a)', ID="X_85", classes=["center"])
+    central_line(model, X_4, X_7, 4, 7)
+    central_line(model, X_2, X_85, 2, 85)
+    X_1446 = intersect_lines(model, X_4, X_7, X_2, X_85, ID="X_1446", classes=["selected", "target"])
     X_10 = spieker_center_of(model, A, B, C, ID="X_10", classes=["center", "incident"])
     X_307 = eval_trilinear_point(model, A, B, C, 'b**(2)*c**(2)*(b + c)*(cos(A))/(b + c - a)', ID="X_307", classes=["center", "incident"])
     central_line(model, X_10, X_307, 10, 307, incident=True)

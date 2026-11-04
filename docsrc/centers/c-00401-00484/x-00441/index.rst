@@ -48,7 +48,7 @@ X_441
    * :ref:`X_441 <X_441>` = :term:`crosssum <crosssum>` of :ref:`X_6 <X_6>` and :ref:`X_232 <X_232>`
    * :ref:`X_441 <X_441>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_25 <X_25>`\ \ :ref:`X_647 <X_647>`
    * :ref:`X_441 <X_441>` = inverse-in-Steiner-inellipse of :ref:`X_3 <X_3>`
-   * :ref:`X_441 <X_441>` = {X_2454,X_2455}-harmonic conjugate of :ref:`X_3 <X_3>`
+   * :ref:`X_441 <X_441>` = {:ref:`X_2454 <X_2454>`,\ :ref:`X_2455 <X_2455>`}-harmonic conjugate of :ref:`X_3 <X_3>`
    * :ref:`X_441 <X_441>` = :term:`isogonal conjugate <isogonal-conjugate>` of polar conjugate of X_30737
 
 Notes

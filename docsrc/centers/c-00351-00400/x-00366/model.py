@@ -16,6 +16,7 @@ from geometor.etc.ops import (
     isogonal_conjugate,
     mittenpunkt_of,
     promote_point_to_top,
+    symmedian_point_of,
 )
 from geometor.etc.render import write_center_svg
 
@@ -32,6 +33,9 @@ def construct_x_00366(
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
     X_367 = eval_trilinear_point(model, A, B, C, 'b**(1/2) + c**(1/2)', ID="X_367", classes=["center", "incident"])
     central_line(model, X_2, X_367, 2, 367, incident=True)
+    X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
+    X_2068 = eval_trilinear_point(model, A, B, C, '(a + b**(1/2)*c**(1/2))', ID="X_2068", classes=["center", "incident"])
+    central_line(model, X_6, X_2068, 6, 2068, incident=True)
     return promote_point_to_top(model, X_366)
 
 

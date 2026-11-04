@@ -42,7 +42,7 @@ X_916
 
    * :ref:`X_916 <X_916>` = isogonal conjugate of :ref:`X_917 <X_917>`
    * :ref:`X_916 <X_916>` = :term:`isotomic conjugate <isotomic-conjugate>` of polar conjugate of X_8608
-   * :ref:`X_916 <X_916>` = :ref:`X_19 <X_19>`-:term:`isoconjugate <isoconjugate>` of X_2989
+   * :ref:`X_916 <X_916>` = :ref:`X_19 <X_19>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_2989 <X_2989>`
    * :ref:`X_916 <X_916>` = :ref:`X_103 <X_103>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_3 <X_3>`
 
 .. toctree::

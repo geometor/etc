@@ -50,8 +50,8 @@ X_1737
    * :ref:`X_1737 <X_1737>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_36052
    * :ref:`X_1737 <X_1737>` = :term:`complement <complement>` of X_4511
    * :ref:`X_1737 <X_1737>` = :term:`cevapoint <cevapoint>` of :ref:`X_46 <X_46>` and :ref:`X_1718 <X_1718>`
-   * :ref:`X_1737 <X_1737>` = X_2252-:term:`cross conjugate <cross-conjugate>` of :ref:`X_914 <X_914>`
-   * :ref:`X_1737 <X_1737>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, 2316), (:ref:`31 <X_31>`, 2183)
+   * :ref:`X_1737 <X_1737>` = :ref:`X_2252 <X_2252>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_914 <X_914>`
+   * :ref:`X_1737 <X_1737>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`2316 <X_2316>`), (:ref:`31 <X_31>`, :ref:`2183 <X_2183>`)
    * :ref:`X_1737 <X_1737>` = polar conjugate of X_37203
    * :ref:`X_1737 <X_1737>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X_37203 (line :ref:`X_1 <X_1>`\ X_7649)
 

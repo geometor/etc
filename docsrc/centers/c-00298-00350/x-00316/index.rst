@@ -53,7 +53,7 @@ X_316
    * :ref:`X_316 <X_316>` = antigonal conjugate of :ref:`X_23 <X_23>`
    * :ref:`X_316 <X_316>` = reflection of :ref:`X_99 <X_99>` in the de Longchamps line
    * :ref:`X_316 <X_316>` = inverse-in-polar-circle of :ref:`X_1843 <X_1843>`
-   * :ref:`X_316 <X_316>` = :term:`trilinear pole <trilinear-pole>` of line X_2492X_7664
+   * :ref:`X_316 <X_316>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_2492 <X_2492>`\ X_7664
    * :ref:`X_316 <X_316>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X_8791 (line :ref:`X_512 <X_512>`\ \ :ref:`X_1843 <X_1843>`)
    * :ref:`X_316 <X_316>` = polar conjugate of X_8791
    * :ref:`X_316 <X_316>` = inverse-in-circumcircle of X_21395

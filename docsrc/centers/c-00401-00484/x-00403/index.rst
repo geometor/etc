@@ -46,7 +46,7 @@ X_403
    * :ref:`X_403 <X_403>` = midpoint of :ref:`X_4 <X_4>` and :ref:`X_186 <X_186>`
    * :ref:`X_403 <X_403>` = reflection of :ref:`X_186 <X_186>` in :ref:`X_468 <X_468>`
    * :ref:`X_403 <X_403>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_5504
-   * :ref:`X_403 <X_403>` = :term:`complement <complement>` of X_2071
+   * :ref:`X_403 <X_403>` = :term:`complement <complement>` of :ref:`X_2071 <X_2071>`
    * :ref:`X_403 <X_403>` = :term:`anticomplement <anticomplement>` of X_10257
    * :ref:`X_403 <X_403>` = inverse-in-circumcircle of :ref:`X_24 <X_24>`
    * :ref:`X_403 <X_403>` = inverse-in-nine-point-circle of :ref:`X_4 <X_4>`
@@ -60,8 +60,8 @@ X_403
    * :ref:`X_403 <X_403>` = inverse-in-polar-circle of :ref:`X_3 <X_3>`
    * :ref:`X_403 <X_403>` = inverse-in-{circumcircle, nine-point circle}}-inverter of :ref:`X_25 <X_25>`
    * :ref:`X_403 <X_403>` = reflection of :ref:`X_186 <X_186>` in the orthic axis
-   * :ref:`X_403 <X_403>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X_2986
-   * :ref:`X_403 <X_403>` = :ref:`X_48 <X_48>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of X_2986
+   * :ref:`X_403 <X_403>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_2986 <X_2986>`
+   * :ref:`X_403 <X_403>` = :ref:`X_48 <X_48>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X_2986 <X_2986>`
    * :ref:`X_403 <X_403>` = perspector of the :term:`orthic triangle <orthic-triangle>` and the reflection of the :term:`Euler triangle <euler-triangle>` in the Euler line
    * :ref:`X_403 <X_403>` = :term:`radical trace <radical-trace>` of polar and second Droz-Farny circles
    * :ref:`X_403 <X_403>` = inverse-in-second-Droz-Farny-circle of :ref:`X_4 <X_4>`

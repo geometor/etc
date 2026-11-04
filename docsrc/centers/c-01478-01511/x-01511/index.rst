@@ -53,7 +53,7 @@ X_1511
    * :ref:`X_1511 <X_1511>` = midpoint of X_i and X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`110 <X_110>`), (:ref:`74 <X_74>`, :ref:`399 <X_399>`)
    * :ref:`X_1511 <X_1511>` = reflection of X_i in X_j for these (i,j): (:ref:`125 <X_125>`, :ref:`140 <X_140>`), (:ref:`1539 <X_1539>`, :ref:`113 <X_113>`)
    * :ref:`X_1511 <X_1511>` = complement of :ref:`X_265 <X_265>`
-   * :ref:`X_1511 <X_1511>` = :term:`complementary conjugate <complementary-conjugate>` of X_2072
+   * :ref:`X_1511 <X_1511>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X_2072 <X_2072>`
    * :ref:`X_1511 <X_1511>` = :term:`isotomic conjugate <isotomic-conjugate>` of polar conjugate of X_39176
    * :ref:`X_1511 <X_1511>` = :term:`crosssum <crosssum>` of circumcircle-intercepts of line PU(174) (line :ref:`X_4 <X_4>`\ \ :ref:`X_523 <X_523>`)
    * :ref:`X_1511 <X_1511>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`2 <X_2>`, 3284), (:ref:`3 <X_3>`, :ref:`1154 <X_1154>`), (:ref:`110 <X_110>`, :ref:`526 <X_526>`)

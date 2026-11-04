@@ -30,7 +30,7 @@ def construct_x_01209(
     X_973 = point_from_barycentrics(model, A, B, C, 0.17639509, 0.28253921, 0.5410657, ID="X_973", classes=["center"])
     X_1209 = reflection_in_point(model, X_52, X_973, ID="X_1209", classes=["selected", "target"], guide=False)
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
-    X_17 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /6)', ID="X_17", classes=["center", "incident"])
+    X_17 = eval_trilinear_point(model, A, B, C, 'csc(A +  pi  /6)', ID="X_17", classes=["center", "incident"])
     central_line(model, X_6, X_17, 6, 17, incident=True)
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
     X_54 = eval_trilinear_point(model, A, B, C, 'sec(B - C)', ID="X_54", classes=["center", "incident"])

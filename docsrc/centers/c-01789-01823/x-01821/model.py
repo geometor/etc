@@ -22,7 +22,7 @@ def construct_x_01821(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1821 = ISOGONAL CONJUGATE OF MIMOSA TRANSFORM OF X_287 on reference triangle ABC."""
-    X_1755 = eval_trilinear_point(model, A, B, C, 'a*cos(A + omega )', ID="X_1755", classes=["center"])
+    X_1755 = eval_trilinear_point(model, A, B, C, 'a*cos(A +  omega  )', ID="X_1755", classes=["center"])
     X_1821 = isogonal_conjugate(model, A, B, C, X_1755, ID="X_1821", classes=["selected", "target"])
     X_31 = eval_trilinear_point(model, A, B, C, 'a**(2)', ID="X_31", classes=["center", "incident"])
     X_92 = eval_trilinear_point(model, A, B, C, 'csc(2*A)', ID="X_92", classes=["center", "incident"])
@@ -30,7 +30,7 @@ def construct_x_01821(
     X_48 = eval_trilinear_point(model, A, B, C, 'tan(B) + tan(C)', ID="X_48", classes=["center", "incident"])
     X_75 = eval_trilinear_point(model, A, B, C, '1/a**(2)', ID="X_75", classes=["center", "incident"])
     central_line(model, X_48, X_75, 48, 75, incident=True)
-    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A + omega )', ID="X_98", classes=["center", "incident"])
+    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A +  omega  )', ID="X_98", classes=["center", "incident"])
     X_100 = eval_trilinear_point(model, A, B, C, '1/(b - c)', ID="X_100", classes=["center", "incident"])
     central_line(model, X_98, X_100, 98, 100, incident=True)
     return promote_point_to_top(model, X_1821)

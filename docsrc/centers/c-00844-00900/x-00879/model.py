@@ -28,7 +28,7 @@ def construct_x_00879(
     X_877 = point_from_barycentrics(model, A, B, C, -0.31137873, 0.061326014, 1.2500527, ID="X_877", classes=["center"])
     X_879 = isotomic_conjugate(model, A, B, C, X_877, ID="X_879", classes=["selected", "target"])
     X_74 = eval_trilinear_point(model, A, B, C, '1/(cos(A) - 2*cos(B)*cos(C))', ID="X_74", classes=["center", "incident"])
-    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A + omega )', ID="X_98", classes=["center", "incident"])
+    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A +  omega  )', ID="X_98", classes=["center", "incident"])
     central_line(model, X_74, X_98, 74, 98, incident=True)
     X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
     X_512 = eval_trilinear_point(model, A, B, C, 'a*(b**(2) - c**(2))', ID="X_512", classes=["center", "incident"])

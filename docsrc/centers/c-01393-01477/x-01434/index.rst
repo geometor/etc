@@ -42,7 +42,7 @@ X_1434
    :badge: 7 relations
 
    * :ref:`X_1434 <X_1434>` = isogonal conjugate of :ref:`X_1334 <X_1334>`
-   * :ref:`X_1434 <X_1434>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_2321
+   * :ref:`X_1434 <X_1434>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_2321 <X_2321>`
    * :ref:`X_1434 <X_1434>` = :term:`anticomplement <anticomplement>` of X_38930
    * :ref:`X_1434 <X_1434>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of anticomplement of X_38811
    * :ref:`X_1434 <X_1434>` = :ref:`X_552 <X_552>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_1014 <X_1014>`

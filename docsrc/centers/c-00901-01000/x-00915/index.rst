@@ -52,7 +52,7 @@ X_915
    * :ref:`X_915 <X_915>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_6 <X_6>`\ X_3657
    * :ref:`X_915 <X_915>` = Ψ(:ref:`X_6 <X_6>`, X_3657)
    * :ref:`X_915 <X_915>` = polar conjugate of isogonal conjugate of X_32655
-   * :ref:`X_915 <X_915>` = polar conjugate of :term:`isotomic conjugate <isotomic-conjugate>` of X_2990
+   * :ref:`X_915 <X_915>` = polar conjugate of :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_2990 <X_2990>`
    * :ref:`X_915 <X_915>` = the point of intersection, other than :g:`A <A>`, :g:`B <B>`, and :g:`C <C>`, of the circumcircle and hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_4 <X_4>`,\ :ref:`X_19 <X_19>`}}
 
 .. toctree::

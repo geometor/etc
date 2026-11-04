@@ -51,7 +51,7 @@ X_758
    * :ref:`X_758 <X_758>` = :ref:`X_2 <X_2>`-Ceva conjugate of X_35069
    * :ref:`X_758 <X_758>` = :term:`crosssum <crosssum>` of :ref:`X_523 <X_523>` and :ref:`X_867 <X_867>`
    * :ref:`X_758 <X_758>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_6 <X_6>`\ \ :ref:`X_661 <X_661>`
-   * :ref:`X_758 <X_758>` = :term:`crosspoint <crosspoint>` of :ref:`X_1 <X_1>` and X_2948 wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
+   * :ref:`X_758 <X_758>` = :term:`crosspoint <crosspoint>` of :ref:`X_1 <X_1>` and :ref:`X_2948 <X_2948>` wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
    * :ref:`X_758 <X_758>` = trilinear square root of X_4736
    * :ref:`X_758 <X_758>` = excentral-to-:g:`ABC << A B C >>` :term:`barycentric image <barycentric-image>` of :ref:`X_30 <X_30>`
    * :ref:`X_758 <X_758>` = excentral-isogonal conjugate of X_34196

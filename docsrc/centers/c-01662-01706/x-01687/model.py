@@ -23,15 +23,15 @@ def construct_x_01687(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1687 = INSIMILICENTER(1st LEMOINE CIRCLE, 2nd LEMOINE CIRCLE) on reference triangle ABC."""
-    X_1687 = eval_trilinear_point(model, A, B, C, 'sin(A - omega /2 + pi /4)', ID="X_1687", classes=["selected", "target"])
+    X_1687 = eval_trilinear_point(model, A, B, C, 'sin(A -  omega  /2 +  pi  /4)', ID="X_1687", classes=["selected", "target"])
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
     central_line(model, X_3, X_6, 3, 6, incident=True)
-    X_485 = eval_trilinear_point(model, A, B, C, 'sec(A - pi /4)', ID="X_485", classes=["center", "incident"])
-    X_1677 = eval_trilinear_point(model, A, B, C, 'sec(A + omega /2)', ID="X_1677", classes=["center", "incident"])
+    X_485 = eval_trilinear_point(model, A, B, C, 'sec(A -  pi  /4)', ID="X_485", classes=["center", "incident"])
+    X_1677 = eval_trilinear_point(model, A, B, C, 'sec(A +  omega  /2)', ID="X_1677", classes=["center", "incident"])
     central_line(model, X_485, X_1677, 485, 1677, incident=True)
-    X_486 = eval_trilinear_point(model, A, B, C, 'sec(A + pi /4)', ID="X_486", classes=["center", "incident"])
-    X_1676 = eval_trilinear_point(model, A, B, C, 'csc(A + omega /2)', ID="X_1676", classes=["center", "incident"])
+    X_486 = eval_trilinear_point(model, A, B, C, 'sec(A +  pi  /4)', ID="X_486", classes=["center", "incident"])
+    X_1676 = eval_trilinear_point(model, A, B, C, 'csc(A +  omega  /2)', ID="X_1676", classes=["center", "incident"])
     central_line(model, X_486, X_1676, 486, 1676, incident=True)
     return promote_point_to_top(model, X_1687)
 

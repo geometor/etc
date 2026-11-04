@@ -51,7 +51,7 @@ X_249
    * :ref:`X_249 <X_249>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`110 <X_110>`), (:ref:`24 <X_24>`, :ref:`112 <X_112>`), (:ref:`1379 <X_1379>`, :ref:`1380 <X_1380>`)
    * :ref:`X_249 <X_249>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`99 <X_99>`), (:ref:`6 <X_6>`, :ref:`110 <X_110>`)
    * :ref:`X_249 <X_249>` = perspector of :g:`ABC << A B C >>` and reflection of :term:`symmedial triangle <symmedial-triangle>` in the Brocard axis
-   * :ref:`X_249 <X_249>` = polar conjugate of X_2970
+   * :ref:`X_249 <X_249>` = polar conjugate of :ref:`X_2970 <X_2970>`
    * :ref:`X_249 <X_249>` = :ref:`X_63 <X_63>`-:term:`isoconjugate <isoconjugate>` of X_8754
    * :ref:`X_249 <X_249>` = :ref:`X_92 <X_92>`-isoconjugate of :ref:`X_125 <X_125>`
    * :ref:`X_249 <X_249>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_1648 <X_1648>`\ X_8029

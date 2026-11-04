@@ -25,7 +25,7 @@ def construct_x_01649(
 ) -> spg.Point:
     """Construct X_1649 = TRIPOLAR CENTROID OF X_524 on reference triangle ABC."""
     X_1649 = eval_barycentric_point(model, A, B, C, '(2*a**(2) - b**(2) - c**(2))**(2)*(b**(2) - c**(2))', ID="X_1649", classes=["selected", "target"])
-    X_114 = eval_trilinear_point(model, A, B, C, 'b*c*(b*sec(B + omega ) + c*sec(C + omega ))', ID="X_114", classes=["center", "incident"])
+    X_114 = eval_trilinear_point(model, A, B, C, 'b*c*(b*sec(B +  omega  ) + c*sec(C +  omega  ))', ID="X_114", classes=["center", "incident"])
     X_126 = eval_trilinear_point(model, A, B, C, '(b*c*(2*a**(2) - b**(2) - c**(2))*(b**(4) + c**(4) + a**(2)*(b**(2) + c**(2)) - 4*b**(2)*c**(2)))', ID="X_126", classes=["center", "incident"])
     central_line(model, X_114, X_126, 114, 126, incident=True)
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])

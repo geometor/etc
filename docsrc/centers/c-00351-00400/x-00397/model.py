@@ -26,14 +26,14 @@ def construct_x_00397(
 ) -> spg.Point:
     """Construct X_397 = CROSSPOINT OF X_4 AND X_17 on reference triangle ABC."""
     X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center"])
-    X_17 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /6)', ID="X_17", classes=["center"])
+    X_17 = eval_trilinear_point(model, A, B, C, 'csc(A +  pi  /6)', ID="X_17", classes=["center"])
     X_397 = crosspoint(model, A, B, C, X_4, X_17, ID="X_397", classes=["selected", "target"])
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
     central_line(model, X_4, X_6, 4, 6, incident=True)
     X_5 = nine_point_center_of(model, A, B, C, ID="X_5", classes=["center", "incident"])
-    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /3)', ID="X_13", classes=["center", "incident"])
+    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A +  pi  /3)', ID="X_13", classes=["center", "incident"])
     central_line(model, X_5, X_13, 5, 13, incident=True)
-    X_16 = eval_trilinear_point(model, A, B, C, 'sin(A- pi /3)', ID="X_16", classes=["center", "incident"])
+    X_16 = eval_trilinear_point(model, A, B, C, 'sin(A-  pi  /3)', ID="X_16", classes=["center", "incident"])
     central_line(model, X_16, X_17, 16, 17, incident=True)
     return promote_point_to_top(model, X_397)
 

@@ -21,7 +21,7 @@ def construct_x_00485(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_485 = VECTEN POINT on reference triangle ABC."""
-    X_371 = eval_trilinear_point(model, A, B, C, 'cos(A - pi /4)', ID="X_371", classes=["center"])
+    X_371 = eval_trilinear_point(model, A, B, C, 'cos(A -  pi  /4)', ID="X_371", classes=["center"])
     X_485 = isogonal_conjugate(model, A, B, C, X_371, ID="X_485", classes=["selected", "target"])
     return promote_point_to_top(model, X_485)
 

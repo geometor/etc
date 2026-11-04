@@ -55,7 +55,7 @@ X_1309
    * :ref:`X_1309 <X_1309>` = Λ(:ref:`X_1459 <X_1459>`, :ref:`X_1946 <X_1946>`)
    * :ref:`X_1309 <X_1309>` = Λ(trilinear polar of :ref:`X_905 <X_905>`)
    * :ref:`X_1309 <X_1309>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_6 <X_6>`\ \ :ref:`X_281 <X_281>`
-   * :ref:`X_1309 <X_1309>` = circumcircle-antipode of X_2734
+   * :ref:`X_1309 <X_1309>` = circumcircle-antipode of :ref:`X_2734 <X_2734>`
    * :ref:`X_1309 <X_1309>` = Ψ(:ref:`X_3 <X_3>`, :ref:`X_8 <X_8>`)
    * :ref:`X_1309 <X_1309>` = Ψ(:ref:`X_6 <X_6>`, :ref:`X_281 <X_281>`)
    * :ref:`X_1309 <X_1309>` = inverse-in-polar-circle of X_3259

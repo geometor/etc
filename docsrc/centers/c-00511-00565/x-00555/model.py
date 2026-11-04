@@ -29,6 +29,9 @@ def construct_x_00555(
     X_234 = eval_trilinear_point(model, A, B, C, '((cos(B/2) + cos(C/2))*(cos(B/2)*cos(C/2))**(2))', ID="X_234", classes=["center", "incident"])
     X_1088 = eval_trilinear_point(model, A, B, C, '(sec(A/2))**(4)', ID="X_1088", classes=["center", "incident"])
     central_line(model, X_234, X_1088, 234, 1088, incident=True)
+    X_85 = eval_trilinear_point(model, A, B, C, 'b**(2)*c**(2)/(b + c - a)', ID="X_85", classes=["center", "incident"])
+    X_2090 = eval_trilinear_point(model, A, B, C, '((sin(B/2) + sin(C/2))*csc(A))', ID="X_2090", classes=["center", "incident"])
+    central_line(model, X_85, X_2090, 85, 2090, incident=True)
     return promote_point_to_top(model, X_555)
 
 

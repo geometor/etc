@@ -45,7 +45,7 @@ X_267
    * :ref:`X_267 <X_267>` = :term:`cevapoint <cevapoint>` of :ref:`X_58 <X_58>` and :ref:`X_501 <X_501>`
    * :ref:`X_267 <X_267>` = :ref:`X_58 <X_58>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_1 <X_1>`
    * :ref:`X_267 <X_267>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_20932
-   * :ref:`X_267 <X_267>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_661 <X_661>`\ X_2605
+   * :ref:`X_267 <X_267>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_661 <X_661>`\ \ :ref:`X_2605 <X_2605>`
 
 .. toctree::
    :hidden:

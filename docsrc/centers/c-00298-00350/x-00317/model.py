@@ -13,7 +13,6 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
-    isotomic_conjugate,
     orthocenter_of,
     promote_point_to_top,
     symmedian_point_of,
@@ -25,8 +24,7 @@ def construct_x_00317(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_317 = ISOTOMIC CONJUGATE OF X_68 on reference triangle ABC."""
-    X_68 = eval_trilinear_point(model, A, B, C, 'cos(A)*sec(2*A)', ID="X_68", classes=["center"])
-    X_317 = isotomic_conjugate(model, A, B, C, X_68, ID="X_317", classes=["selected", "target"])
+    X_317 = eval_trilinear_point(model, A, B, C, 'sec(A)*cos(2*A)*(csc(A))**(2)', ID="X_317", classes=["selected", "target"])
     X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
     X_69 = eval_trilinear_point(model, A, B, C, '(cos(A))/a**(2)', ID="X_69", classes=["center", "incident"])
     central_line(model, X_4, X_69, 4, 69, incident=True)
@@ -34,7 +32,7 @@ def construct_x_00317(
     X_95 = eval_trilinear_point(model, A, B, C, 'b**(2)*c**(2)*sec(B - C)', ID="X_95", classes=["center", "incident"])
     central_line(model, X_2, X_95, 2, 95, incident=True)
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
-    X_297 = eval_trilinear_point(model, A, B, C, 'csc(2*A)*cos(A + omega )', ID="X_297", classes=["center", "incident"])
+    X_297 = eval_trilinear_point(model, A, B, C, 'csc(2*A)*cos(A +  omega  )', ID="X_297", classes=["center", "incident"])
     central_line(model, X_6, X_297, 6, 297, incident=True)
     return promote_point_to_top(model, X_317)
 

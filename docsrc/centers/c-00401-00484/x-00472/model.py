@@ -30,11 +30,11 @@ def construct_x_00472(
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
-    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /3)', ID="X_13", classes=["center", "incident"])
+    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A +  pi  /3)', ID="X_13", classes=["center", "incident"])
     X_275 = eval_trilinear_point(model, A, B, C, 'csc(2*A)*sec(B - C)', ID="X_275", classes=["center", "incident"])
     central_line(model, X_13, X_275, 13, 275, incident=True)
     X_53 = eval_trilinear_point(model, A, B, C, 'tan(A)*cos(B - C)', ID="X_53", classes=["center", "incident"])
-    X_395 = eval_trilinear_point(model, A, B, C, 'cos(B - C) + 2*cos(A + pi /3)', ID="X_395", classes=["center", "incident"])
+    X_395 = eval_trilinear_point(model, A, B, C, 'cos(B - C) + 2*cos(A +  pi  /3)', ID="X_395", classes=["center", "incident"])
     central_line(model, X_53, X_395, 53, 395, incident=True)
     return promote_point_to_top(model, X_472)
 

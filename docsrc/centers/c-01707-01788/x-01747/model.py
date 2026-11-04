@@ -31,7 +31,7 @@ def construct_x_01747(
     central_line(model, X_19, X_91, 19, 91)
     X_1747 = intersect_lines(model, X_1, X_82, X_19, X_91, ID="X_1747", classes=["selected", "target"])
     X_47 = eval_trilinear_point(model, A, B, C, 'cos(2*A)', ID="X_47", classes=["center", "incident"])
-    X_240 = eval_trilinear_point(model, A, B, C, 'sec(A)*cos(A + omega )', ID="X_240", classes=["center", "incident"])
+    X_240 = eval_trilinear_point(model, A, B, C, 'sec(A)*cos(A +  omega  )', ID="X_240", classes=["center", "incident"])
     central_line(model, X_47, X_240, 47, 240, incident=True)
     return promote_point_to_top(model, X_1747)
 

@@ -54,7 +54,7 @@ X_126
    * :ref:`X_126 <X_126>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through X_3291
    * :ref:`X_126 <X_126>` = :ref:`X_2 <X_2>`-Ceva conjugate of X_3291
    * :ref:`X_126 <X_126>` = one of two intersections (X_3258 is the other) of the nine-point circle of :g:`ABC << A B C >>` and the Parry circle of the :ref:`X_2 <X_2>`-Brocard triangle
-   * :ref:`X_126 <X_126>` = inverse-in-polar-circle of X_2374
+   * :ref:`X_126 <X_126>` = inverse-in-polar-circle of :ref:`X_2374 <X_2374>`
    * :ref:`X_126 <X_126>` = inverse-in-{circumcircle, nine-point circle}-inverter of :ref:`X_99 <X_99>`
    * :ref:`X_126 <X_126>` = Λ(:ref:`X_2 <X_2>`, :ref:`X_6 <X_6>`), wrt :term:`orthic triangle <orthic-triangle>`
 

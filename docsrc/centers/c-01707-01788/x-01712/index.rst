@@ -42,7 +42,7 @@ X_1712
    :badge: 4 relations
 
    * :ref:`X_1712 <X_1712>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`63 <X_63>`, :ref:`19 <X_19>`), (:ref:`1895 <X_1895>`, :ref:`1 <X_1>`)
-   * :ref:`X_1712 <X_1712>` = X_i-:term:`aleph conjugate <aleph-conjugate>` of X_j for these (i,j): (:ref:`2 <X_2>`, 2184), (:ref:`1895 <X_1895>`, :ref:`1712 <X_1712>`)
+   * :ref:`X_1712 <X_1712>` = X_i-:term:`aleph conjugate <aleph-conjugate>` of X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`2184 <X_2184>`), (:ref:`1895 <X_1895>`, :ref:`1712 <X_1712>`)
    * :ref:`X_1712 <X_1712>` = eigencenter of cevian triangle of :ref:`X_63 <X_63>`
    * :ref:`X_1712 <X_1712>` = eigencenter of :term:`anticevian triangle <anticevian-triangle>` of :ref:`X_19 <X_19>`
 

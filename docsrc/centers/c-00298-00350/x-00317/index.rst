@@ -51,11 +51,11 @@ X_317
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X_317 <X_317>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2351
+   * :ref:`X_317 <X_317>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2351 <X_2351>`
    * :ref:`X_317 <X_317>` = isotomic conjugate of :ref:`X_68 <X_68>`
    * :ref:`X_317 <X_317>` = :term:`anticomplement <anticomplement>` of :ref:`X_577 <X_577>`
    * :ref:`X_317 <X_317>` = :term:`cevapoint <cevapoint>` of :ref:`X_52 <X_52>` and :ref:`X_467 <X_467>`
-   * :ref:`X_317 <X_317>` = polar conjugate of X_2165
+   * :ref:`X_317 <X_317>` = polar conjugate of :ref:`X_2165 <X_2165>`
    * :ref:`X_317 <X_317>` = :ref:`X_1721 <X_1721>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
 
 .. toctree::

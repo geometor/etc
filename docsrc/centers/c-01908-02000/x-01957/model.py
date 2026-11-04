@@ -24,7 +24,7 @@ def construct_x_01957(
 ) -> spg.Point:
     """Construct X_1957 = CROSSSUM OF PU(22) on reference triangle ABC."""
     X_1910 = eval_trilinear_point(model, A, B, C, '(a/(a**(2)*cos(B)*cos(C) - b*c*(cos(A))**(2)))', ID="X_1910", classes=["center"])
-    X_240 = eval_trilinear_point(model, A, B, C, 'sec(A)*cos(A + omega )', ID="X_240", classes=["center"])
+    X_240 = eval_trilinear_point(model, A, B, C, 'sec(A)*cos(A +  omega  )', ID="X_240", classes=["center"])
     X_1957 = ceva_conjugate(model, A, B, C, X_1910, X_240, ID="X_1957", classes=["selected", "target"])
     X_31 = eval_trilinear_point(model, A, B, C, 'a**(2)', ID="X_31", classes=["center", "incident"])
     X_92 = eval_trilinear_point(model, A, B, C, 'csc(2*A)', ID="X_92", classes=["center", "incident"])

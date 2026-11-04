@@ -52,7 +52,7 @@ X_823
    * :ref:`X_823 <X_823>` = :term:`anticomplement <anticomplement>` of X_16595
    * :ref:`X_823 <X_823>` = perspector of :g:`ABC << A B C >>` and :term:`tangential triangle <tangential-triangle>`, wrt :term:`excentral triangle <excentral-triangle>`, of bianticevian conic of :ref:`X_1 <X_1>` and :ref:`X_4 <X_4>`
    * :ref:`X_823 <X_823>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_1 <X_1>`\ \ :ref:`X_29 <X_29>`
-   * :ref:`X_823 <X_823>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_656 <X_656>` (line X_2631X_2632, or PU(75))
+   * :ref:`X_823 <X_823>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_656 <X_656>` (line :ref:`X_2631 <X_2631>`\ \ :ref:`X_2632 <X_2632>`, or PU(75))
    * :ref:`X_823 <X_823>` = :ref:`X_48 <X_48>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X_656 <X_656>`
    * :ref:`X_823 <X_823>` = :ref:`X_6 <X_6>`-isoconjugate of :ref:`X_520 <X_520>`
    * :ref:`X_823 <X_823>` = trilinear product of Steiner circumellipse intercepts of van Aubel line

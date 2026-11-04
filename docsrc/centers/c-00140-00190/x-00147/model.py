@@ -24,7 +24,7 @@ def construct_x_00147(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_147 = TARRY POINT OF ANTICOMPLEMENTARY TRIANGLE on reference triangle ABC."""
-    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A + omega )', ID="X_98", classes=["center"])
+    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A +  omega  )', ID="X_98", classes=["center"])
     X_147 = anticomplement(model, A, B, C, X_98, ID="X_147", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
     central_line(model, X_2, X_98, 2, 98, incident=True)

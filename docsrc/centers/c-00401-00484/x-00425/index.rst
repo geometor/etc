@@ -41,16 +41,16 @@ X_425
    :badge: 8 lines
    :class: line-catalog
 
-   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`107 <X_107>`, 2707}, {:ref:`243 <X_243>`, :ref:`662 <X_662>`}, {:ref:`653 <X_653>`, 2651}, {:ref:`1098 <X_1098>`, :ref:`1940 <X_1940>`}, {2501, 23090}, {17923, 25533}, {18020, 23999}
+   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`107 <X_107>`, :ref:`2707 <X_2707>`}, {:ref:`243 <X_243>`, :ref:`662 <X_662>`}, {:ref:`653 <X_653>`, :ref:`2651 <X_2651>`}, {:ref:`1098 <X_1098>`, :ref:`1940 <X_1940>`}, {:ref:`2501 <X_2501>`, 23090}, {17923, 25533}, {18020, 23999}
 
 .. collapse:: Functional Relations
    :badge: 6 relations
 
    * :ref:`X_425 <X_425>` = X_41349-:term:`cross conjugate <cross-conjugate>` of X_23695
-   * :ref:`X_425 <X_425>` = X_i-:term:`isoconjugate <isoconjugate>` of X_j for these (i,j): {:ref:`73 <X_73>`, 43746}, {:ref:`656 <X_656>`, 2714}
-   * :ref:`X_425 <X_425>` = X_2714-Dao conjugate of X_40596
-   * :ref:`X_425 <X_425>` = barycentric product X_i\*X_j for these {i,j}: {:ref:`92 <X_92>`, 23695}, {:ref:`648 <X_648>`, 2798}, {31623, 41349}
-   * :ref:`X_425 <X_425>` = barycentric quotient X_i/X_j for these {i,j}: {:ref:`112 <X_112>`, 2714}, {:ref:`1172 <X_1172>`, 43746}, {2798, :ref:`525 <X_525>`}, {23695, :ref:`63 <X_63>`}, {41349, :ref:`1214 <X_1214>`}
+   * :ref:`X_425 <X_425>` = X_i-:term:`isoconjugate <isoconjugate>` of X_j for these (i,j): {:ref:`73 <X_73>`, 43746}, {:ref:`656 <X_656>`, :ref:`2714 <X_2714>`}
+   * :ref:`X_425 <X_425>` = :ref:`X_2714 <X_2714>`-Dao conjugate of X_40596
+   * :ref:`X_425 <X_425>` = barycentric product X_i\*X_j for these {i,j}: {:ref:`92 <X_92>`, 23695}, {:ref:`648 <X_648>`, :ref:`2798 <X_2798>`}, {31623, 41349}
+   * :ref:`X_425 <X_425>` = barycentric quotient X_i/X_j for these {i,j}: {:ref:`112 <X_112>`, :ref:`2714 <X_2714>`}, {:ref:`1172 <X_1172>`, 43746}, {:ref:`2798 <X_2798>`, :ref:`525 <X_525>`}, {23695, :ref:`63 <X_63>`}, {41349, :ref:`1214 <X_1214>`}
    * :ref:`X_425 <X_425>` = {X_i,X_j}-harmonic conjugate of X_k for these (i,j,k): {}
 
 Notes

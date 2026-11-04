@@ -24,16 +24,16 @@ def construct_x_01671(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1671 = INVERSE-IN-BROCARD-CIRCLE OF X_1343 on reference triangle ABC."""
-    X_1670 = eval_trilinear_point(model, A, B, C, 'sin(A) - cos(A)*cot(omega /2)', ID="X_1670", classes=["center"])
+    X_1670 = eval_trilinear_point(model, A, B, C, 'sin(A) - cos(A)*cot( omega  /2)', ID="X_1670", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
     X_1671 = reflection_in_point(model, X_1670, X_3, ID="X_1671", classes=["selected", "target"], guide=False)
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
     central_line(model, X_3, X_6, 3, 6, incident=True)
     X_76 = eval_trilinear_point(model, A, B, C, '1/a**(3)', ID="X_76", classes=["center", "incident"])
-    X_1676 = eval_trilinear_point(model, A, B, C, 'csc(A + omega /2)', ID="X_1676", classes=["center", "incident"])
+    X_1676 = eval_trilinear_point(model, A, B, C, 'csc(A +  omega  /2)', ID="X_1676", classes=["center", "incident"])
     central_line(model, X_76, X_1676, 76, 1676, incident=True)
-    X_262 = eval_trilinear_point(model, A, B, C, 'sec(A - omega )', ID="X_262", classes=["center", "incident"])
-    X_1677 = eval_trilinear_point(model, A, B, C, 'sec(A + omega /2)', ID="X_1677", classes=["center", "incident"])
+    X_262 = eval_trilinear_point(model, A, B, C, 'sec(A -  omega  )', ID="X_262", classes=["center", "incident"])
+    X_1677 = eval_trilinear_point(model, A, B, C, 'sec(A +  omega  /2)', ID="X_1677", classes=["center", "incident"])
     central_line(model, X_262, X_1677, 262, 1677, incident=True)
     return promote_point_to_top(model, X_1671)
 

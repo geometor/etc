@@ -22,7 +22,7 @@ def construct_x_01799(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1799 = INVERSE MIMOSA TRANSFORM OF X_75 on reference triangle ABC."""
-    X_1799 = eval_trilinear_point(model, A, B, C, 'cot(A)*csc(A + omega )', ID="X_1799", classes=["selected", "target"])
+    X_1799 = eval_trilinear_point(model, A, B, C, 'cot(A)*csc(A +  omega  )', ID="X_1799", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
     X_32 = eval_trilinear_point(model, A, B, C, 'a**(3)', ID="X_32", classes=["center", "incident"])
     central_line(model, X_2, X_32, 2, 32, incident=True)
@@ -30,7 +30,7 @@ def construct_x_01799(
     X_76 = eval_trilinear_point(model, A, B, C, '1/a**(3)', ID="X_76", classes=["center", "incident"])
     central_line(model, X_22, X_76, 22, 76, incident=True)
     X_25 = eval_trilinear_point(model, A, B, C, 'sin(A)*tan(A)', ID="X_25", classes=["center", "incident"])
-    X_183 = eval_trilinear_point(model, A, B, C, 'b**(2)*c**(2)*cos(A- omega )', ID="X_183", classes=["center", "incident"])
+    X_183 = eval_trilinear_point(model, A, B, C, 'b**(2)*c**(2)*cos(A-  omega  )', ID="X_183", classes=["center", "incident"])
     central_line(model, X_25, X_183, 25, 183, incident=True)
     return promote_point_to_top(model, X_1799)
 

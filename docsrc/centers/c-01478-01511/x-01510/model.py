@@ -26,7 +26,7 @@ def construct_x_01510(
     X_930 = eval_barycentric_point(model, A, B, C, '1/((b**(2) - c**(2))*(a**(4) + b**(4) + c**(4) - 2*a**(2)*b**(2) - 2*a**(2)*c**(2) - b**(2)*c**(2)))', ID="X_930", classes=["center"])
     X_1510 = isogonal_conjugate(model, A, B, C, X_930, ID="X_1510", classes=["selected", "target"])
     X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X_30", classes=["center", "incident"])
-    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X_511", classes=["center", "incident"])
+    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A +  omega  )', ID="X_511", classes=["center", "incident"])
     central_line(model, X_30, X_511, 30, 511, incident=True)
     X_110 = eval_trilinear_point(model, A, B, C, 'csc(B - C)', ID="X_110", classes=["center", "incident"])
     X_1291 = eval_barycentric_point(model, A, B, C, 'a**(2)/((b**(2) - c**(2))*(a**(12) - 4*a**(10)*(b**(2) + c**(2)) + 5*a**(8)*(b**(4) + b**(2)*c**(2) + c**(4)) + a**(6)*b**(2)*c**(2)*(b**(2) + c**(2)) - a**(4)*(5*b**(8) - b**(6)*c**(2) + 2*b**(4)*c**(4) - b**(2)*c**(6) + 5*c**(8)) + a**(2)*(b**(2) - c**(2))**(2)*(4*b**(6) + 3*b**(4)*c**(2) + 3*b**(2)*c**(4) + 4*c**(6)) - (b**(2) - c**(2))**(4)*(b**(2) + c**(2))**(2)))', ID="X_1291", classes=["center", "incident"])

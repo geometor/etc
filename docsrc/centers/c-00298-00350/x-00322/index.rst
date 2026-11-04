@@ -41,7 +41,7 @@ X_322
 .. collapse:: Functional Relations
    :badge: 7 relations
 
-   * :ref:`X_322 <X_322>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2208
+   * :ref:`X_322 <X_322>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2208 <X_2208>`
    * :ref:`X_322 <X_322>` = isotomic conjugate of :ref:`X_84 <X_84>`
    * :ref:`X_322 <X_322>` = :term:`complement <complement>` of polar conjugate of isogonal conjugate of X_23168
    * :ref:`X_322 <X_322>` = :term:`anticomplement <anticomplement>` of :ref:`X_1108 <X_1108>`

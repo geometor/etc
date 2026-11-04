@@ -46,7 +46,7 @@ X_907
    :badge: 2 relations
 
    * :ref:`X_907 <X_907>` = isogonal conjugate of X_3800
-   * :ref:`X_907 <X_907>` = Λ(:ref:`X_419 <X_419>`, X_2501) (line is radical axis of circumcircle and orthosymmedial circle)
+   * :ref:`X_907 <X_907>` = Λ(:ref:`X_419 <X_419>`, :ref:`X_2501 <X_2501>`) (line is radical axis of circumcircle and orthosymmedial circle)
 
 .. toctree::
    :hidden:

@@ -76,12 +76,12 @@ X_65
    * :ref:`X_65 <X_65>` = homothetic center of :term:`intangents triangle <intangents-triangle>` and reflection of extangents triangle in :ref:`X_40 <X_40>`
    * :ref:`X_65 <X_65>` = homothetic center of extangents triangle and reflection of intangents triangle in :ref:`X_1 <X_1>`
    * :ref:`X_65 <X_65>` = reflection of X_3057 in :ref:`X_1 <X_1>`
-   * :ref:`X_65 <X_65>` = {:ref:`X_1 <X_1>`,\ :ref:`X_3 <X_3>`}-harmonic conjugate of X_2646
+   * :ref:`X_65 <X_65>` = {:ref:`X_1 <X_1>`,\ :ref:`X_3 <X_3>`}-harmonic conjugate of :ref:`X_2646 <X_2646>`
    * :ref:`X_65 <X_65>` = {:ref:`X_1 <X_1>`,\ :ref:`X_57 <X_57>`}-harmonic conjugate of :ref:`X_56 <X_56>`
    * :ref:`X_65 <X_65>` = {P,Q}-harmonic conjugate of :ref:`X_1463 <X_1463>`, where :g:`P <P>` and :g:`Q <Q>` are the intersections of the incircle and line :ref:`X_7 <X_7>`\ \ :ref:`X_8 <X_8>`
    * :ref:`X_65 <X_65>` = pairwise perspector of: intouch triangle, 4th :term:`extouch triangle <extouch-triangle>`, 5th extouch triangle
    * :ref:`X_65 <X_65>` = perspector of [reflection of :term:`incentral triangle <incentral-triangle>` in :ref:`X_1 <X_1>`] and :term:`tangential triangle <tangential-triangle>`, wrt incentral triangle, of circumconic of incentral triangle centered at :ref:`X_1 <X_1>` (bicevian conic of :ref:`X_1 <X_1>` and :ref:`X_57 <X_57>`)
-   * :ref:`X_65 <X_65>` = inverse-in-{incircle, circumcircle}-inverter of X_2078
+   * :ref:`X_65 <X_65>` = inverse-in-{incircle, circumcircle}-inverter of :ref:`X_2078 <X_2078>`
    * :ref:`X_65 <X_65>` = pedal-isogonal conjugate of :ref:`X_1 <X_1>`
    * :ref:`X_65 <X_65>` = :ref:`X_5 <X_5>` of :term:`reflection triangle <reflection-triangle>` of :ref:`X_1 <X_1>`
    * :ref:`X_65 <X_65>` = :term:`radical trace <radical-trace>` of circumcircle and circumcircle of reflection triangle of :ref:`X_1 <X_1>`

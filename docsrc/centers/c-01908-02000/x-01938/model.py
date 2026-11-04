@@ -23,7 +23,7 @@ def construct_x_01938(
     """Construct X_1938 = IDEAL POINT OF PU(15) on reference triangle ABC."""
     X_1938 = eval_trilinear_point(model, A, B, C, '(cos(A)*cos(B) - (cos(C))**(2))*sin(B) - (cos(A)*cos(C) - (cos(B))**(2))*sin(C)', ID="X_1938", classes=["selected", "target"])
     X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X_30", classes=["center", "incident"])
-    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X_511", classes=["center", "incident"])
+    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A +  omega  )', ID="X_511", classes=["center", "incident"])
     central_line(model, X_30, X_511, 30, 511, incident=True)
     X_65 = eval_trilinear_point(model, A, B, C, 'cos(B) + cos(C)', ID="X_65", classes=["center", "incident"])
     X_650 = eval_trilinear_point(model, A, B, C, 'cos(B) - cos(C)', ID="X_650", classes=["center", "incident"])

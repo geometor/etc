@@ -21,7 +21,7 @@ def construct_x_01755(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1755 = MIMOSA TRANSFORM OF X_287 on reference triangle ABC."""
-    X_1755 = eval_trilinear_point(model, A, B, C, 'a*cos(A + omega )', ID="X_1755", classes=["selected", "target"])
+    X_1755 = eval_trilinear_point(model, A, B, C, 'a*cos(A +  omega  )', ID="X_1755", classes=["selected", "target"])
     X_19 = eval_trilinear_point(model, A, B, C, 'tan(A)', ID="X_19", classes=["center", "incident"])
     X_27 = eval_trilinear_point(model, A, B, C, '(sec(A))/(b + c)', ID="X_27", classes=["center", "incident"])
     central_line(model, X_19, X_27, 19, 27, incident=True)

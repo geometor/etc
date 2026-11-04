@@ -40,7 +40,7 @@ X_1268
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X_1268 <X_1268>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2308
+   * :ref:`X_1268 <X_1268>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2308 <X_2308>`
    * :ref:`X_1268 <X_1268>` = isotomic conjugate of :ref:`X_1125 <X_1125>`
    * :ref:`X_1268 <X_1268>` = :ref:`X_523 <X_523>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_190 <X_190>`
    * :ref:`X_1268 <X_1268>` = :term:`cevapoint <cevapoint>` of :ref:`X_2 <X_2>` and :ref:`X_10 <X_10>`

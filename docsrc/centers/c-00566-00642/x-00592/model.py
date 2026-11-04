@@ -20,7 +20,7 @@ def construct_x_00592(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_592 = VAN LAMOEN CIRCUMCENTERS POINT on reference triangle ABC."""
-    X_592 = eval_trilinear_point(model, A, B, C, '(1/(cos(A) + 2*cos(B - omega )*cos(C - omega )))', ID="X_592", classes=["selected", "target"])
+    X_592 = eval_trilinear_point(model, A, B, C, '(1/(cos(A) + 2*cos(B -  omega  )*cos(C -  omega  )))', ID="X_592", classes=["selected", "target"])
     return promote_point_to_top(model, X_592)
 
 

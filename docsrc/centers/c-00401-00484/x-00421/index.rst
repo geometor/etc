@@ -23,8 +23,8 @@ X_421
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`)
-   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`)
+   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`), :g:`{2501, 2623} <{ 2501, 2623 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_2501 <X_2501>` (:ref:`RADICAL CENTER OF {CIRCUMCIRCLE, NINE-POINT CIRCLE, TAYLOR CIRCLE} <X_2501>`), :g:`X_2623 <X_2623>` (:ref:`BARYCENTRIC PRODUCT OF PU(73) <X_2623>`)
 
 .. signature:: center
 
@@ -41,7 +41,7 @@ X_421
    :badge: 20 lines
    :class: line-catalog
 
-   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`107 <X_107>`, 44084}, {:ref:`110 <X_110>`, 44145}, {:ref:`136 <X_136>`, 14165}, {:ref:`275 <X_275>`, 47328}, {:ref:`338 <X_338>`, 15139}, {:ref:`847 <X_847>`, 52432}, {:ref:`1632 <X_1632>`, 47195}, {2052, 44077}, {2501, 2623}, {2970, 34397}, {6531, 14580}, {8794, 41271}, {11547, 14593}, {12133, 48364}, {18020, 44138}, {19128, 46106}, {43976, 44080}, {44089, 47202}, {44375, 51458}
+   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`107 <X_107>`, 44084}, {:ref:`110 <X_110>`, 44145}, {:ref:`136 <X_136>`, 14165}, {:ref:`275 <X_275>`, 47328}, {:ref:`338 <X_338>`, 15139}, {:ref:`847 <X_847>`, 52432}, {:ref:`1632 <X_1632>`, 47195}, {:ref:`2052 <X_2052>`, 44077}, {:ref:`2501 <X_2501>`, :ref:`2623 <X_2623>`}, {:ref:`2970 <X_2970>`, 34397}, {6531, 14580}, {8794, 41271}, {11547, 14593}, {12133, 48364}, {18020, 44138}, {19128, 46106}, {43976, 44080}, {44089, 47202}, {44375, 51458}
 
 .. collapse:: Functional Relations
    :badge: 6 relations
@@ -49,9 +49,9 @@ X_421
    * :ref:`X_421 <X_421>` = polar-circle-inverse of X_36190
    * :ref:`X_421 <X_421>` = polar conjugate of the :term:`isotomic conjugate <isotomic-conjugate>` of X_44375
    * :ref:`X_421 <X_421>` = :term:`crossdifference <crossdifference>` of every pair of points on line {647, 5562}
-   * :ref:`X_421 <X_421>` = barycentric product X_i\*X_j for these {i,j}: {:ref:`4 <X_4>`, 44375}, {2052, 51458}
+   * :ref:`X_421 <X_421>` = barycentric product X_i\*X_j for these {i,j}: {:ref:`4 <X_4>`, 44375}, {:ref:`2052 <X_2052>`, 51458}
    * :ref:`X_421 <X_421>` = barycentric quotient X_i/X_j for these {i,j}: {44375, :ref:`69 <X_69>`}, {51458, :ref:`394 <X_394>`}
-   * :ref:`X_421 <X_421>` = {X_i,X_j}-harmonic conjugate of X_k for these (i,j,k): {:ref:`419 <X_419>`, :ref:`450 <X_450>`, :ref:`468 <X_468>`}, {2970, 34397, 41204}
+   * :ref:`X_421 <X_421>` = {X_i,X_j}-harmonic conjugate of X_k for these (i,j,k): {:ref:`419 <X_419>`, :ref:`450 <X_450>`, :ref:`468 <X_468>`}, {:ref:`2970 <X_2970>`, 34397, 41204}
 
 Notes
 -----

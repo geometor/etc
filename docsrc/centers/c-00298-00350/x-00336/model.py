@@ -22,16 +22,16 @@ def construct_x_00336(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_336 = ISOTOMIC CONJUGATE OF X_240 on reference triangle ABC."""
-    X_240 = eval_trilinear_point(model, A, B, C, 'sec(A)*cos(A + omega )', ID="X_240", classes=["center"])
+    X_240 = eval_trilinear_point(model, A, B, C, 'sec(A)*cos(A +  omega  )', ID="X_240", classes=["center"])
     X_336 = isotomic_conjugate(model, A, B, C, X_240, ID="X_336", classes=["selected", "target"])
     X_48 = eval_trilinear_point(model, A, B, C, 'tan(B) + tan(C)', ID="X_48", classes=["center", "incident"])
     X_75 = eval_trilinear_point(model, A, B, C, '1/a**(2)', ID="X_75", classes=["center", "incident"])
     central_line(model, X_48, X_75, 48, 75, incident=True)
     X_73 = eval_trilinear_point(model, A, B, C, 'sec(B) + sec(C)', ID="X_73", classes=["center", "incident"])
-    X_290 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*sec(A + omega )', ID="X_290", classes=["center", "incident"])
+    X_290 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*sec(A +  omega  )', ID="X_290", classes=["center", "incident"])
     central_line(model, X_73, X_290, 73, 290, incident=True)
     X_255 = eval_trilinear_point(model, A, B, C, '(cos(A))**(2)', ID="X_255", classes=["center", "incident"])
-    X_293 = eval_trilinear_point(model, A, B, C, 'cos(A)*sec(A + omega )', ID="X_293", classes=["center", "incident"])
+    X_293 = eval_trilinear_point(model, A, B, C, 'cos(A)*sec(A +  omega  )', ID="X_293", classes=["center", "incident"])
     central_line(model, X_255, X_293, 255, 293, incident=True)
     return promote_point_to_top(model, X_336)
 

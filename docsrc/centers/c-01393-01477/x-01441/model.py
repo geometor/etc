@@ -12,9 +12,9 @@ from geometor.etc.ops import (
     centroid_of,
     construct_baseline_triangle,
     create_model,
+    eval_barycentric_point,
     eval_trilinear_point,
     gergonne_point_of,
-    isotomic_conjugate,
     nagel_point_of,
     promote_point_to_top,
 )
@@ -25,14 +25,14 @@ def construct_x_01441(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1441 = X_313-BETH CONJUGATE OF X_313 on reference triangle ABC."""
-    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X_21", classes=["center"])
-    X_1441 = isotomic_conjugate(model, A, B, C, X_21, ID="X_1441", classes=["selected", "target"])
+    X_1441 = eval_barycentric_point(model, A, B, C, '(csc(A))*(cos(B) + cos(C))', ID="X_1441", classes=["selected", "target"])
     X_7 = gergonne_point_of(model, A, B, C, ID="X_7", classes=["center", "incident"])
     X_8 = nagel_point_of(model, A, B, C, ID="X_8", classes=["center", "incident"])
     central_line(model, X_7, X_8, 7, 8, incident=True)
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
     X_92 = eval_trilinear_point(model, A, B, C, 'csc(2*A)', ID="X_92", classes=["center", "incident"])
     central_line(model, X_2, X_92, 2, 92, incident=True)
+    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X_21", classes=["center", "incident"])
     X_286 = eval_trilinear_point(model, A, B, C, '(csc(2*A))/(sin(B) + sin(C))', ID="X_286", classes=["center", "incident"])
     central_line(model, X_21, X_286, 21, 286, incident=True)
     return promote_point_to_top(model, X_1441)

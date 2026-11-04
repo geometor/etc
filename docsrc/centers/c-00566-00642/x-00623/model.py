@@ -25,8 +25,8 @@ def construct_x_00623(
 ) -> spg.Point:
     """Construct X_623 = COMPLEMENT OF X_15 on reference triangle ABC."""
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
-    X_14 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /3)', ID="X_14", classes=["center"])
-    X_18 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /6)', ID="X_18", classes=["center"])
+    X_14 = eval_trilinear_point(model, A, B, C, 'csc(A -  pi  /3)', ID="X_14", classes=["center"])
+    X_18 = eval_trilinear_point(model, A, B, C, 'csc(A -  pi  /6)', ID="X_18", classes=["center"])
     X_83 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(2) + c**(2))', ID="X_83", classes=["center"])
     central_line(model, X_2, X_14, 2, 14)
     central_line(model, X_18, X_83, 18, 83)

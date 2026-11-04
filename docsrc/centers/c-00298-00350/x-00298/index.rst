@@ -55,7 +55,7 @@ X_298
    * :ref:`X_298 <X_298>` = :ref:`X_300 <X_300>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_303 <X_303>`
    * :ref:`X_298 <X_298>` = :ref:`X_15 <X_15>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_470 <X_470>`
    * :ref:`X_298 <X_298>` = :ref:`X_2 <X_2>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X_299 <X_299>`
-   * :ref:`X_298 <X_298>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X_8737 (line :ref:`X_462 <X_462>`\ X_2501)
+   * :ref:`X_298 <X_298>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X_8737 (line :ref:`X_462 <X_462>`\ \ :ref:`X_2501 <X_2501>`)
    * :ref:`X_298 <X_298>` = polar conjugate of X_8737
    * :ref:`X_298 <X_298>` = :term:`crosspoint <crosspoint>` of :ref:`X_2 <X_2>` and :ref:`X_616 <X_616>` wrt both the excentral and :term:`anticomplementary triangles <anticomplementary-triangle>`
 

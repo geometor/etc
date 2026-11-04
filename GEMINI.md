@@ -30,6 +30,6 @@ It is responsible for:
 ## CLI Usage
 
 ```bash
-python3 -m geometor.etc --skip-ingest --limit 2000
+python3 -m geometor.etc --skip-ingest --limit 3000
 ```
 

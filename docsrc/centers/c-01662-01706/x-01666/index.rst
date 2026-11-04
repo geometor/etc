@@ -36,14 +36,14 @@ X_1666
    :badge: 3 lines
    :class: line-catalog
 
-   {:ref:`3 <X_3>`, :ref:`6 <X_6>`}, {:ref:`485 <X_485>`, 2040}, {:ref:`486 <X_486>`, 2039}
+   {:ref:`3 <X_3>`, :ref:`6 <X_6>`}, {:ref:`485 <X_485>`, :ref:`2040 <X_2040>`}, {:ref:`486 <X_486>`, :ref:`2039 <X_2039>`}
 
 .. collapse:: Functional Relations
    :badge: 3 relations
 
    * :ref:`X_1666 <X_1666>` = reflection of :ref:`X_1667 <X_1667>` in :ref:`X_6 <X_6>`
    * :ref:`X_1666 <X_1666>` = inverse-in-Brocard-circle of :ref:`X_1668 <X_1668>`
-   * :ref:`X_1666 <X_1666>` = inverse-in-2nd-Brocard-circle of X_2563
+   * :ref:`X_1666 <X_1666>` = inverse-in-2nd-Brocard-circle of :ref:`X_2563 <X_2563>`
 
 .. toctree::
    :hidden:

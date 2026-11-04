@@ -23,7 +23,7 @@ def construct_x_00680(
     """Construct X_680 = CROSSDIFFERENCE OF X_6 AND X_158 on reference triangle ABC."""
     X_680 = eval_trilinear_point(model, A, B, C, '((cos(A))**(2)*(sin(B)*(cos(B))**(2) - sin(C)*(cos(C))**(2)))', ID="X_680", classes=["selected", "target"])
     X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X_30", classes=["center", "incident"])
-    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X_511", classes=["center", "incident"])
+    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A +  omega  )', ID="X_511", classes=["center", "incident"])
     central_line(model, X_30, X_511, 30, 511, incident=True)
     return promote_point_to_top(model, X_680)
 

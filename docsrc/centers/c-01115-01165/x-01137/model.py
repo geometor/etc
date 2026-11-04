@@ -22,9 +22,9 @@ def construct_x_01137(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1137 = 6th MORLEY-TAYLOR-MARR CENTER on reference triangle ABC."""
-    X_1136 = eval_trilinear_point(model, A, B, C, 'sec(A/3 + pi /3)', ID="X_1136", classes=["center"])
+    X_1136 = eval_trilinear_point(model, A, B, C, '1/cos(A/3 + 4*pi  /3)', ID="X_1136", classes=["center"])
     X_1137 = isogonal_conjugate(model, A, B, C, X_1136, ID="X_1137", classes=["selected", "target"])
-    X_16 = eval_trilinear_point(model, A, B, C, 'sin(A- pi /3)', ID="X_16", classes=["center", "incident"])
+    X_16 = eval_trilinear_point(model, A, B, C, 'sin(A-  pi  /3)', ID="X_16", classes=["center", "incident"])
     X_358 = eval_trilinear_point(model, A, B, C, 'cos(A/3)', ID="X_358", classes=["center", "incident"])
     central_line(model, X_16, X_358, 16, 358, incident=True)
     return promote_point_to_top(model, X_1137)

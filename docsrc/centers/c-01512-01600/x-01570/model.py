@@ -23,7 +23,7 @@ def construct_x_01570(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1570 = MOSES-CIRCLE INVERSE OF X_3 on reference triangle ABC."""
-    X_1570 = eval_trilinear_point(model, A, B, C, 'a*(cot(A) + cot(omega) - 4*tan(omega) )', ID="X_1570", classes=["selected", "target"])
+    X_1570 = eval_trilinear_point(model, A, B, C, 'a*(cot(A) + cot(omega)  - 4*tan(omega)  )', ID="X_1570", classes=["selected", "target"])
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
     central_line(model, X_3, X_6, 3, 6, incident=True)

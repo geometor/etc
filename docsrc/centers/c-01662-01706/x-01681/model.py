@@ -24,15 +24,15 @@ def construct_x_01681(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1681 = EXSIMILICENTER(1st LEMOINE CIRCLE, SPIEKER CIRCLE) on reference triangle ABC."""
-    X_1681 = eval_trilinear_point(model, A, B, C, '(b*c*(b + c - a*cos(A - omega )))', ID="X_1681", classes=["selected", "target"])
+    X_1681 = eval_trilinear_point(model, A, B, C, '(b*c*(b + c - a*cos(A -  omega  )))', ID="X_1681", classes=["selected", "target"])
     X_10 = spieker_center_of(model, A, B, C, ID="X_10", classes=["center", "incident"])
-    X_182 = eval_trilinear_point(model, A, B, C, 'cos(A- omega )', ID="X_182", classes=["center", "incident"])
+    X_182 = eval_trilinear_point(model, A, B, C, 'cos(A-  omega  )', ID="X_182", classes=["center", "incident"])
     central_line(model, X_10, X_182, 10, 182, incident=True)
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
-    X_1672 = eval_trilinear_point(model, A, B, C, '1 + cos(A - omega )', ID="X_1672", classes=["center", "incident"])
+    X_1672 = eval_trilinear_point(model, A, B, C, '1 + cos(A -  omega  )', ID="X_1672", classes=["center", "incident"])
     central_line(model, X_2, X_1672, 2, 1672, incident=True)
     X_8 = nagel_point_of(model, A, B, C, ID="X_8", classes=["center", "incident"])
-    X_1673 = eval_trilinear_point(model, A, B, C, '1 - cos(A - omega )', ID="X_1673", classes=["center", "incident"])
+    X_1673 = eval_trilinear_point(model, A, B, C, '1 - cos(A -  omega  )', ID="X_1673", classes=["center", "incident"])
     central_line(model, X_8, X_1673, 8, 1673, incident=True)
     return promote_point_to_top(model, X_1681)
 

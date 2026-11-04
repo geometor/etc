@@ -55,7 +55,7 @@ X_146
    * :ref:`X_146 <X_146>` = :term:`isotomic conjugate <isotomic-conjugate>` of :term:`anticomplement <anticomplement>` of X_36896
    * :ref:`X_146 <X_146>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X_30 <X_30>`
    * :ref:`X_146 <X_146>` = :ref:`X_74 <X_74>`-of-:term:`anticomplementary triangle <anticomplementary-triangle>`
-   * :ref:`X_146 <X_146>` = :term:`crosspoint <crosspoint>` of :ref:`X_399 <X_399>` and X_2935 wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
+   * :ref:`X_146 <X_146>` = :term:`crosspoint <crosspoint>` of :ref:`X_399 <X_399>` and :ref:`X_2935 <X_2935>` wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
 
 Notes
 -----

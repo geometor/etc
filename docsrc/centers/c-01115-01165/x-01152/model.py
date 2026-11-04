@@ -34,7 +34,7 @@ def construct_x_01152(
     X_490 = eval_trilinear_point(model, A, B, C, '((cos(A))*(1 + csc(A)*sin(B)*sin(C)) - cos(B)*cos(C))', ID="X_490", classes=["center", "incident"])
     central_line(model, X_2, X_490, 2, 490, incident=True)
     X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X_30", classes=["center", "incident"])
-    X_486 = eval_trilinear_point(model, A, B, C, 'sec(A + pi /4)', ID="X_486", classes=["center", "incident"])
+    X_486 = eval_trilinear_point(model, A, B, C, 'sec(A +  pi  /4)', ID="X_486", classes=["center", "incident"])
     central_line(model, X_30, X_486, 30, 486, incident=True)
     return promote_point_to_top(model, X_1152)
 

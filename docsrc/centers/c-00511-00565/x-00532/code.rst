@@ -8,7 +8,7 @@ X_532
 
 .. enunciation::
 
-   :ref:`X_532 <X_532>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2380
+   :ref:`X_532 <X_532>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2380 <X_2380>`
 
 .. figure:: x-00532.svg
    :alt: X_532 — DIRECTION OF VECTOR AX + BX + CX, where X = X_17

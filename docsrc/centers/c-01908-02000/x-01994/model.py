@@ -10,7 +10,6 @@ from geometor.model import Model
 from geometor.etc.ops import (
     central_line,
     centroid_of,
-    cevapoint,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
@@ -24,10 +23,9 @@ def construct_x_01994(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1994 = ORTHOCORRESPONDENT OF X_5 on reference triangle ABC."""
-    X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center"])
-    X_195 = eval_trilinear_point(model, A, B, C, 'a*(a**(8) + b**(8) + c**(8) - 4*a**(6)*(b**(2) + c**(2)) + a**(4)*(6*b**(4) + 6*c**(4) + 5*b**(2)*c**(2)) - a**(2)*(4*b**(6) + 4*c**(6) - b**(4)*c**(2) - b**(2)*c**(4)) - 2*b**(2)*c**(2)*(b**(4) + c**(4) - b**(2)*c**(2)))', ID="X_195", classes=["center"])
-    X_1994 = cevapoint(model, A, B, C, X_6, X_195, ID="X_1994", classes=["selected", "target"])
+    X_1994 = eval_trilinear_point(model, A, B, C, '(a*(b**(2)*c**(2) - 16*( area )**(2)))', ID="X_1994", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
     central_line(model, X_2, X_6, 2, 6, incident=True)
     X_52 = eval_trilinear_point(model, A, B, C, 'cos(2*A)*cos(B - C)', ID="X_52", classes=["center", "incident"])
     X_54 = eval_trilinear_point(model, A, B, C, 'sec(B - C)', ID="X_54", classes=["center", "incident"])

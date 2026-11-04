@@ -30,7 +30,7 @@ def construct_x_00827(
     X_83 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(2) + c**(2))', ID="X_83", classes=["center", "incident"])
     central_line(model, X_5, X_83, 5, 83, incident=True)
     X_111 = eval_trilinear_point(model, A, B, C, 'a/(2*a**(2) - b**(2) - c**(2))', ID="X_111", classes=["center", "incident"])
-    X_251 = eval_trilinear_point(model, A, B, C, 'a**(2)*csc(A + omega )', ID="X_251", classes=["center", "incident"])
+    X_251 = eval_trilinear_point(model, A, B, C, 'a**(2)*csc(A +  omega  )', ID="X_251", classes=["center", "incident"])
     central_line(model, X_111, X_251, 111, 251, incident=True)
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
     X_755 = eval_trilinear_point(model, A, B, C, '(1/(a **(-1)*(b**(4) + c**(4)) - a**(3)*(b**(0) + c**(0))))', ID="X_755", classes=["center", "incident"])

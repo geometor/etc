@@ -29,7 +29,7 @@ def construct_x_01686(
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
     central_line(model, X_3, X_6, 3, 6, incident=True)
     X_10 = spieker_center_of(model, A, B, C, ID="X_10", classes=["center", "incident"])
-    X_485 = eval_trilinear_point(model, A, B, C, 'sec(A - pi /4)', ID="X_485", classes=["center", "incident"])
+    X_485 = eval_trilinear_point(model, A, B, C, 'sec(A -  pi  /4)', ID="X_485", classes=["center", "incident"])
     central_line(model, X_10, X_485, 10, 485, incident=True)
     X_181 = eval_trilinear_point(model, A, B, C, 'a*(b + c)**(2)/(b + c - a)', ID="X_181", classes=["center", "incident"])
     X_1335 = eval_trilinear_point(model, A, B, C, '(1 - sin(A))', ID="X_1335", classes=["center", "incident"])

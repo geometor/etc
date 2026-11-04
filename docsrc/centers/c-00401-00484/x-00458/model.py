@@ -25,7 +25,7 @@ def construct_x_00458(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_458 = EULER LINE INTERCEPT OF LINE X_76X_275 on reference triangle ABC."""
-    X_458 = eval_barycentric_point(model, A, B, C, 'tan(A) + cot(omega)', ID="X_458", classes=["selected", "target"])
+    X_458 = eval_barycentric_point(model, A, B, C, 'tan(A) + cot(omega) ', ID="X_458", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)

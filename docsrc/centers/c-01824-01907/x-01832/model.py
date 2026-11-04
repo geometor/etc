@@ -26,7 +26,7 @@ def construct_x_01832(
     X_12 = eval_trilinear_point(model, A, B, C, '1 + cos(B - C)', ID="X_12", classes=["center"])
     X_37 = eval_trilinear_point(model, A, B, C, 'b + c', ID="X_37", classes=["center"])
     X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center"])
-    X_1251 = eval_trilinear_point(model, A, B, C, '(cos(A/2))*csc(A/2 - pi /3)', ID="X_1251", classes=["center"])
+    X_1251 = eval_trilinear_point(model, A, B, C, '(cos(A/2))*csc(A/2 -  pi  /3)', ID="X_1251", classes=["center"])
     central_line(model, X_12, X_37, 12, 37)
     central_line(model, X_4, X_1251, 4, 1251)
     X_1832 = intersect_lines(model, X_12, X_37, X_4, X_1251, ID="X_1832", classes=["selected", "target"])

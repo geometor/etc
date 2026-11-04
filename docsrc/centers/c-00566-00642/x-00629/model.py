@@ -25,13 +25,13 @@ def construct_x_00629(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_629 = COMPLEMENT OF X_17 on reference triangle ABC."""
-    X_17 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /6)', ID="X_17", classes=["center"])
+    X_17 = eval_trilinear_point(model, A, B, C, 'csc(A +  pi  /6)', ID="X_17", classes=["center"])
     X_627 = point_from_barycentrics(model, A, B, C, 0.44119208, 0.35326848, 0.20553943, ID="X_627", classes=["center"])
     X_629 = midpoint(model, X_17, X_627, ID="X_629", classes=["selected", "target"], guide=False)
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
     central_line(model, X_2, X_17, 2, 17, incident=True)
-    X_61 = eval_trilinear_point(model, A, B, C, 'sin(A + pi /6)', ID="X_61", classes=["center", "incident"])
-    X_302 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*sin(A + pi /6)', ID="X_302", classes=["center", "incident"])
+    X_61 = eval_trilinear_point(model, A, B, C, 'sin(A +  pi  /6)', ID="X_61", classes=["center", "incident"])
+    X_302 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*sin(A +  pi  /6)', ID="X_302", classes=["center", "incident"])
     central_line(model, X_61, X_302, 61, 302, incident=True)
     X_5 = nine_point_center_of(model, A, B, C, ID="X_5", classes=["center", "incident"])
     X_618 = point_from_barycentrics(model, A, B, C, 0.38507388, 0.34992883, 0.26499729, ID="X_618", classes=["center", "incident"])

@@ -25,7 +25,7 @@ def construct_x_00670(
     X_669 = eval_trilinear_point(model, A, B, C, 'a**(3)*(b**(2) - c**(2))', ID="X_669", classes=["center"])
     X_670 = isogonal_conjugate(model, A, B, C, X_669, ID="X_670", classes=["selected", "target"])
     X_69 = eval_trilinear_point(model, A, B, C, '(cos(A))/a**(2)', ID="X_69", classes=["center", "incident"])
-    X_290 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*sec(A + omega )', ID="X_290", classes=["center", "incident"])
+    X_290 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*sec(A +  omega  )', ID="X_290", classes=["center", "incident"])
     central_line(model, X_69, X_290, 69, 290, incident=True)
     X_76 = eval_trilinear_point(model, A, B, C, '1/a**(3)', ID="X_76", classes=["center", "incident"])
     X_338 = eval_trilinear_point(model, A, B, C, '(b**(2) - c**(2))**(2)/a**(3)', ID="X_338", classes=["center", "incident"])

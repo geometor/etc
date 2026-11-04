@@ -51,10 +51,10 @@ X_1648
    * :ref:`X_1648 <X_1648>` = perspector of circumconic centered at :ref:`X_1649 <X_1649>`
    * :ref:`X_1648 <X_1648>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X_1649 <X_1649>`
    * :ref:`X_1648 <X_1648>` = intersection of line PU(40) (:ref:`X_115 <X_115>`\ \ :ref:`X_125 <X_125>`) and :term:`trilinear polar <trilinear-polar>` of :term:`cevapoint <cevapoint>` of PU(40)
-   * :ref:`X_1648 <X_1648>` = X_2502-of-4th-Brocard-triangle
-   * :ref:`X_1648 <X_1648>` = X_2502-of-orthocentroidal-triangle
+   * :ref:`X_1648 <X_1648>` = :ref:`X_2502 <X_2502>`-of-4th-Brocard-triangle
+   * :ref:`X_1648 <X_1648>` = :ref:`X_2502 <X_2502>`-of-orthocentroidal-triangle
    * :ref:`X_1648 <X_1648>` = centroid of (degenerate) cross-triangle of 4th Brocard and orthocentroidal triangle
-   * :ref:`X_1648 <X_1648>` = trilinear pole of line X_2682X_14443
+   * :ref:`X_1648 <X_1648>` = trilinear pole of line :ref:`X_2682 <X_2682>`\ X_14443
    * :ref:`X_1648 <X_1648>` = {X_13636,X_13722}-harmonic conjugate of :ref:`X_115 <X_115>`
 
 .. toctree::

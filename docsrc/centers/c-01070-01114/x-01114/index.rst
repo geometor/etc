@@ -24,7 +24,7 @@ X_1114
    :class: note
 
    * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`), :g:`{109, 1823} <{ 109, 1823 }>`
-   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_109 <X_109>` (:ref:`Ψ(INCENTER, CIRCUMCENTER) <X_109>`), :g:`X_1823 <X_1823>` (:ref:`ISOGONAL CONJUGATE OF X(2589) <X_1823>`)
+   * **Related Centers:** :g:`X_2575 <X_2575>` (:ref:`ISOGONAL CONJUGATE OF X(1114) <X_2575>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_109 <X_109>` (:ref:`Ψ(INCENTER, CIRCUMCENTER) <X_109>`), :g:`X_1823 <X_1823>` (:ref:`ISOGONAL CONJUGATE OF X(2589) <X_1823>`)
 
 .. signature:: center
 
@@ -47,24 +47,24 @@ X_1114
    :badge: 27 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, 2101}, {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`6 <X_6>`, 2105}, {:ref:`11 <X_11>`, 10782}, {:ref:`54 <X_54>`, 14375}, {:ref:`74 <X_74>`, 2574}, {:ref:`98 <X_98>`, 2592}, {:ref:`100 <X_100>`, 2581}, {:ref:`101 <X_101>`, 2577}, {:ref:`108 <X_108>`, 2587}, {:ref:`109 <X_109>`, :ref:`1823 <X_1823>`}, {:ref:`110 <X_110>`, 2575}, {:ref:`111 <X_111>`, 8105}, {:ref:`112 <X_112>`, 8106}, {:ref:`165 <X_165>`, 2100}, {:ref:`187 <X_187>`, 8427}, {:ref:`511 <X_511>`, 2104}, {:ref:`517 <X_517>`, 2102}, {:ref:`691 <X_691>`, 9174}, {:ref:`759 <X_759>`, 2588}, {:ref:`1379 <X_1379>`, 14899}, {:ref:`1495 <X_1495>`, 13414}, {2249, 2578}, {2777, 14499}, {5840, 10781}, {5972, 14500}, {10288, 10687}
+   {:ref:`1 <X_1>`, :ref:`2101 <X_2101>`}, {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`6 <X_6>`, :ref:`2105 <X_2105>`}, {:ref:`11 <X_11>`, 10782}, {:ref:`54 <X_54>`, 14375}, {:ref:`74 <X_74>`, :ref:`2574 <X_2574>`}, {:ref:`98 <X_98>`, :ref:`2592 <X_2592>`}, {:ref:`100 <X_100>`, :ref:`2581 <X_2581>`}, {:ref:`101 <X_101>`, :ref:`2577 <X_2577>`}, {:ref:`108 <X_108>`, :ref:`2587 <X_2587>`}, {:ref:`109 <X_109>`, :ref:`1823 <X_1823>`}, {:ref:`110 <X_110>`, :ref:`2575 <X_2575>`}, {:ref:`111 <X_111>`, 8105}, {:ref:`112 <X_112>`, 8106}, {:ref:`165 <X_165>`, :ref:`2100 <X_2100>`}, {:ref:`187 <X_187>`, 8427}, {:ref:`511 <X_511>`, :ref:`2104 <X_2104>`}, {:ref:`517 <X_517>`, :ref:`2102 <X_2102>`}, {:ref:`691 <X_691>`, 9174}, {:ref:`759 <X_759>`, :ref:`2588 <X_2588>`}, {:ref:`1379 <X_1379>`, 14899}, {:ref:`1495 <X_1495>`, 13414}, {:ref:`2249 <X_2249>`, :ref:`2578 <X_2578>`}, {:ref:`2777 <X_2777>`, 14499}, {5840, 10781}, {5972, 14500}, {10288, 10687}
 
 .. collapse:: Functional Relations
    :badge: 13 relations
 
    * :ref:`X_1114 <X_1114>` = reflection of X_i in X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`1313 <X_1313>`), (:ref:`1113 <X_1113>`, :ref:`3 <X_3>`)
-   * :ref:`X_1114 <X_1114>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2575
+   * :ref:`X_1114 <X_1114>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2575 <X_2575>`
    * :ref:`X_1114 <X_1114>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_22340
    * :ref:`X_1114 <X_1114>` = :term:`anticomplement <anticomplement>` of :ref:`X_1312 <X_1312>`
    * :ref:`X_1114 <X_1114>` = :ref:`X_250 <X_250>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_1113 <X_1113>`
    * :ref:`X_1114 <X_1114>` = trilinear product :ref:`X_110 <X_110>`\ \*\ :ref:`X_1822 <X_1822>`
    * :ref:`X_1114 <X_1114>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_6 <X_6>`\ \ :ref:`X_1344 <X_1344>` (the minor axis of the orthic inconic)
    * :ref:`X_1114 <X_1114>` = Ψ(:ref:`X_6 <X_6>`, :ref:`X_1344 <X_1344>`)
-   * :ref:`X_1114 <X_1114>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X_2593 (line :ref:`X_523 <X_523>`\ \ :ref:`X_1312 <X_1312>`)
-   * :ref:`X_1114 <X_1114>` = polar conjugate of X_2593
+   * :ref:`X_1114 <X_1114>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_2593 <X_2593>` (line :ref:`X_523 <X_523>`\ \ :ref:`X_1312 <X_1312>`)
+   * :ref:`X_1114 <X_1114>` = polar conjugate of :ref:`X_2593 <X_2593>`
    * :ref:`X_1114 <X_1114>` = inverse-in-polar-circle of :ref:`X_1312 <X_1312>`
-   * :ref:`X_1114 <X_1114>` = Thomson isogonal conjugate of X_2574
-   * :ref:`X_1114 <X_1114>` = Lucas isogonal conjugate of X_2574
+   * :ref:`X_1114 <X_1114>` = Thomson isogonal conjugate of :ref:`X_2574 <X_2574>`
+   * :ref:`X_1114 <X_1114>` = Lucas isogonal conjugate of :ref:`X_2574 <X_2574>`
 
 Notes
 -----

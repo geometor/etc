@@ -23,9 +23,9 @@ def construct_x_01704(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1704 = INSIMILICENTER(BEVAN CIRCLE, BROCARD CIRCLE) on reference triangle ABC."""
-    X_1704 = eval_trilinear_point(model, A, B, C, '(2*cos(A - omega ) + e*(1 + cos(A) - cos(B) - cos(C)))', ID="X_1704", classes=["selected", "target"])
+    X_1704 = eval_trilinear_point(model, A, B, C, '(2*cos(A -  omega  ) + e*(1 + cos(A) - cos(B) - cos(C)))', ID="X_1704", classes=["selected", "target"])
     X_40 = eval_trilinear_point(model, A, B, C, 'cos(B) + cos(C) - cos(A) - 1', ID="X_40", classes=["center", "incident"])
-    X_182 = eval_trilinear_point(model, A, B, C, 'cos(A- omega )', ID="X_182", classes=["center", "incident"])
+    X_182 = eval_trilinear_point(model, A, B, C, 'cos(A-  omega  )', ID="X_182", classes=["center", "incident"])
     central_line(model, X_40, X_182, 40, 182, incident=True)
     X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
     X_1340 = point_from_barycentrics(model, A, B, C, 0.34709524, 0.36700624, 0.28589852, ID="X_1340", classes=["center", "incident"])

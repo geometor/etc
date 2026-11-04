@@ -25,7 +25,7 @@ def construct_x_01306(
     """Construct X_1306 = COLLINGS TRANSFORM OF X_639 on reference triangle ABC."""
     X_111 = eval_trilinear_point(model, A, B, C, 'a/(2*a**(2) - b**(2) - c**(2))', ID="X_111", classes=["center"])
     X_493 = eval_trilinear_point(model, A, B, C, '1/(sin(A) + sin(B)*sin(C))', ID="X_493", classes=["center"])
-    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A + omega )', ID="X_98", classes=["center"])
+    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A +  omega  )', ID="X_98", classes=["center"])
     X_637 = point_from_barycentrics(model, A, B, C, 0.40143148, 0.29769606, 0.30087247, ID="X_637", classes=["center"])
     central_line(model, X_111, X_493, 111, 493)
     central_line(model, X_98, X_637, 98, 637)

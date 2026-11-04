@@ -52,7 +52,7 @@ X_1289
    * :ref:`X_1289 <X_1289>` = polar conjugate of X_33294
    * :ref:`X_1289 <X_1289>` = Thomson-isogonal conjugate of X_34146
    * :ref:`X_1289 <X_1289>` = Lucas-isogonal conjugate of X_34146
-   * :ref:`X_1289 <X_1289>` = :ref:`X_63 <X_63>`-:term:`isoconjugate <isoconjugate>` of X_2485
+   * :ref:`X_1289 <X_1289>` = :ref:`X_63 <X_63>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_2485 <X_2485>`
 
 .. toctree::
    :hidden:

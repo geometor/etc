@@ -12,7 +12,7 @@ X_1735
 
 .. enunciation::
 
-   :ref:`X_1735 <X_1735>` = :term:`crosssum <crosssum>` of :ref:`X_31 <X_31>` and X_2182
+   :ref:`X_1735 <X_1735>` = :term:`crosssum <crosssum>` of :ref:`X_31 <X_31>` and :ref:`X_2182 <X_2182>`
 
 .. figure:: x-01735.svg
    :alt: X_1735 — MIMOSA TRANSFORM OF X_102
@@ -41,7 +41,7 @@ X_1735
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X_1735 <X_1735>` = crosssum of :ref:`X_31 <X_31>` and X_2182
+   * :ref:`X_1735 <X_1735>` = crosssum of :ref:`X_31 <X_31>` and :ref:`X_2182 <X_2182>`
 
 .. toctree::
    :hidden:

@@ -25,16 +25,16 @@ def construct_x_01676(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1676 = INSIMILICENTER(1st LEMOINE CIRCLE, NINE-POINT CIRCLE) on reference triangle ABC."""
-    X_1671 = eval_trilinear_point(model, A, B, C, 'sin(A) + cos(A)*tan(omega /2)', ID="X_1671", classes=["center"])
+    X_1671 = eval_trilinear_point(model, A, B, C, 'sin(A) + cos(A)*tan( omega  /2)', ID="X_1671", classes=["center"])
     X_1676 = isogonal_conjugate(model, A, B, C, X_1671, ID="X_1676", classes=["selected", "target"])
     X_5 = nine_point_center_of(model, A, B, C, ID="X_5", classes=["center", "incident"])
-    X_182 = eval_trilinear_point(model, A, B, C, 'cos(A- omega )', ID="X_182", classes=["center", "incident"])
+    X_182 = eval_trilinear_point(model, A, B, C, 'cos(A-  omega  )', ID="X_182", classes=["center", "incident"])
     central_line(model, X_5, X_182, 5, 182, incident=True)
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
-    X_1343 = eval_trilinear_point(model, A, B, C, 'sin(A) - cos(A)*tan(omega /2)', ID="X_1343", classes=["center", "incident"])
+    X_1343 = eval_trilinear_point(model, A, B, C, 'sin(A) - cos(A)*tan( omega  /2)', ID="X_1343", classes=["center", "incident"])
     central_line(model, X_2, X_1343, 2, 1343, incident=True)
     X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
-    X_1342 = eval_trilinear_point(model, A, B, C, 'sin(A) + cos(A)*cot(omega /2)', ID="X_1342", classes=["center", "incident"])
+    X_1342 = eval_trilinear_point(model, A, B, C, 'sin(A) + cos(A)*cot( omega  /2)', ID="X_1342", classes=["center", "incident"])
     central_line(model, X_4, X_1342, 4, 1342, incident=True)
     return promote_point_to_top(model, X_1676)
 

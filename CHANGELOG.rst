@@ -3,6 +3,14 @@ changelog
 
 :project: geometor.etc
 
+0.1.7
+-----
+
+- Expanded coordinate, incidence, and functional relation resolution to `X_1` through `X_3000` (100% resolved across all 4 reference triangles: `5, 6, 7`, `3, 4, 5`, `Kepler`, and `Kimberling`).
+- Added preamble transformation handlers (*Orion transforms*, *Eigentransforms*, *Gibert-Simson transforms*, *Rigby-Simson* and *Simson-Rigby* points, *Simson-Moses* points, *Tangential/Medial/Anticomplementary-Isogonal* conjugates, *Dual Center* `DC(X)` / `CD(X)` mappings, and $X_i$-isoconjugates), Steiner inellipse constant $K$, and multi-clause cyclic helper expansion (`h(a,b,c)`, `k(a,b,c)`).
+- Added a continuous-limit perturbation pass for removable $0/0$ singularities at $C = 90^\circ$ on right and Kepler triangles.
+- Added 14 new thematic collections (`c-02001-02054` through `c-02967-03000`, bringing the total to 52 thematic collections) with 4-triangle constellation graphics (`c-XXXXX-YYYYY.svg`).
+
 0.1.6
 -----
 

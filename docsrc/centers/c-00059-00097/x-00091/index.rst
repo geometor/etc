@@ -51,7 +51,7 @@ X_91
    * :ref:`X_91 <X_91>` = trilinear product of :ref:`X_485 <X_485>` and :ref:`X_486 <X_486>`
    * :ref:`X_91 <X_91>` = polar conjugate of :ref:`X_1748 <X_1748>`
    * :ref:`X_91 <X_91>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_563 <X_563>`
-   * :ref:`X_91 <X_91>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_661 <X_661>`\ X_2618
+   * :ref:`X_91 <X_91>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_661 <X_661>`\ \ :ref:`X_2618 <X_2618>`
    * :ref:`X_91 <X_91>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X_91 <X_91>` (which is also the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X_91 <X_91>`)
    * :ref:`X_91 <X_91>` = trilinear product of vertices of outer and inner Vecten triangles
 

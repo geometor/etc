@@ -24,7 +24,7 @@ def construct_x_01286(
     """Construct X_1286 = COLLINGS TRANSFORM OF X_22 on reference triangle ABC."""
     X_1286 = point_from_barycentrics(model, A, B, C, 0.47412809, 1.0990863, -0.57321442, ID="X_1286", classes=["selected", "target"])
     X_26 = eval_trilinear_point(model, A, B, C, 'a*(b**(2)*cos(2*B) + c**(2)*cos(2*C) - a**(2)*cos(2*A))', ID="X_26", classes=["center", "incident"])
-    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A + omega )', ID="X_98", classes=["center", "incident"])
+    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A +  omega  )', ID="X_98", classes=["center", "incident"])
     central_line(model, X_26, X_98, 26, 98, incident=True)
     return promote_point_to_top(model, X_1286)
 

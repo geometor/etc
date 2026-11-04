@@ -14,6 +14,7 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    point_from_barycentrics,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -30,6 +31,9 @@ def construct_x_00460(
     X_53 = eval_trilinear_point(model, A, B, C, 'tan(A)*cos(B - C)', ID="X_53", classes=["center", "incident"])
     X_1974 = eval_trilinear_point(model, A, B, C, 'a**(4)*cos(B)*cos(C)', ID="X_1974", classes=["center", "incident"])
     central_line(model, X_53, X_1974, 53, 1974, incident=True)
+    X_685 = eval_trilinear_point(model, A, B, C, '(1/(sec(B)*(sin(C))**(3) - sec(C)*(sin(B))**(3)))', ID="X_685", classes=["center", "incident"])
+    X_2065 = point_from_barycentrics(model, A, B, C, -0.14911157, 1.3061467, -0.15703517, ID="X_2065", classes=["center", "incident"])
+    central_line(model, X_685, X_2065, 685, 2065, incident=True)
     return promote_point_to_top(model, X_460)
 
 

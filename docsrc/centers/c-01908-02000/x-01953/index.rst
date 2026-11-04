@@ -24,7 +24,7 @@ X_1953
    :class: note
 
    * **Central Lines:** :g:`{1, 19} <{ 1, 19 }>`, :g:`{71, 517} <{ 71, 517 }>`
-   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_19 <X_19>` (:ref:`CLAWSON POINT <X_19>`), :g:`X_71 <X_71>` (:ref:`ISOGONAL CONJUGATE OF X(27) <X_71>`), :g:`X_517 <X_517>` (:ref:`ISOGONAL CONJUGATE OF X(104) <X_517>`)
+   * **Related Centers:** :g:`X_2167 <X_2167>` (:ref:`-ISOCONJUGATE OF X(51) <X_2167>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_19 <X_19>` (:ref:`CLAWSON POINT <X_19>`), :g:`X_71 <X_71>` (:ref:`ISOGONAL CONJUGATE OF X(27) <X_71>`), :g:`X_517 <X_517>` (:ref:`ISOGONAL CONJUGATE OF X(104) <X_517>`)
 
 .. signature:: center
 
@@ -43,12 +43,12 @@ X_1953
    :badge: 15 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, :ref:`19 <X_19>`}, {:ref:`6 <X_6>`, :ref:`1411 <X_1411>`}, {:ref:`9 <X_9>`, :ref:`1389 <X_1389>`}, {:ref:`31 <X_31>`, :ref:`1820 <X_1820>`}, {:ref:`37 <X_37>`, 2183}, {:ref:`38 <X_38>`, :ref:`1755 <X_1755>`}, {:ref:`65 <X_65>`, :ref:`1108 <X_1108>`}, {:ref:`71 <X_71>`, :ref:`517 <X_517>`}, {:ref:`73 <X_73>`, :ref:`1841 <X_1841>`}, {:ref:`216 <X_216>`, :ref:`1393 <X_1393>`}, {:ref:`219 <X_219>`, :ref:`1482 <X_1482>`}, {:ref:`515 <X_515>`, :ref:`1839 <X_1839>`}, {:ref:`946 <X_946>`, :ref:`1826 <X_1826>`}, {:ref:`991 <X_991>`, :ref:`1414 <X_1414>`}, {:ref:`1457 <X_1457>`, :ref:`1880 <X_1880>`}
+   {:ref:`1 <X_1>`, :ref:`19 <X_19>`}, {:ref:`6 <X_6>`, :ref:`1411 <X_1411>`}, {:ref:`9 <X_9>`, :ref:`1389 <X_1389>`}, {:ref:`31 <X_31>`, :ref:`1820 <X_1820>`}, {:ref:`37 <X_37>`, :ref:`2183 <X_2183>`}, {:ref:`38 <X_38>`, :ref:`1755 <X_1755>`}, {:ref:`65 <X_65>`, :ref:`1108 <X_1108>`}, {:ref:`71 <X_71>`, :ref:`517 <X_517>`}, {:ref:`73 <X_73>`, :ref:`1841 <X_1841>`}, {:ref:`216 <X_216>`, :ref:`1393 <X_1393>`}, {:ref:`219 <X_219>`, :ref:`1482 <X_1482>`}, {:ref:`515 <X_515>`, :ref:`1839 <X_1839>`}, {:ref:`946 <X_946>`, :ref:`1826 <X_1826>`}, {:ref:`991 <X_991>`, :ref:`1414 <X_1414>`}, {:ref:`1457 <X_1457>`, :ref:`1880 <X_1880>`}
 
 .. collapse:: Functional Relations
    :badge: 11 relations
 
-   * :ref:`X_1953 <X_1953>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2167
+   * :ref:`X_1953 <X_1953>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2167 <X_2167>`
    * :ref:`X_1953 <X_1953>` = :term:`complement <complement>` of X_21271
    * :ref:`X_1953 <X_1953>` = :term:`anticomplement <anticomplement>` of X_21231
    * :ref:`X_1953 <X_1953>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`163 <X_163>`, :ref:`661 <X_661>`), (:ref:`823 <X_823>`, :ref:`656 <X_656>`)

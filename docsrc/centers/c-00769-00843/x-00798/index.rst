@@ -56,7 +56,7 @@ X_798
    * :ref:`X_798 <X_798>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_1 <X_1>`\ \ :ref:`X_75 <X_75>`
    * :ref:`X_798 <X_798>` = bicentric difference of PU(i) for i in (36, 85)
    * :ref:`X_798 <X_798>` = PU(36)-harmonic conjugate of :ref:`X_1964 <X_1964>`
-   * :ref:`X_798 <X_798>` = PU(85)-harmonic conjugate of X_2667
+   * :ref:`X_798 <X_798>` = PU(85)-harmonic conjugate of :ref:`X_2667 <X_2667>`
    * :ref:`X_798 <X_798>` = perspector wrt :term:`excentral triangle <excentral-triangle>` of the bianticevian conic of :ref:`X_1 <X_1>` and :ref:`X_2 <X_2>`
    * :ref:`X_798 <X_798>` = :ref:`X_6 <X_6>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_670 <X_670>`
    * :ref:`X_798 <X_798>` = trilinear product of PU(105)

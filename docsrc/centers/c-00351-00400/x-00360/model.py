@@ -26,7 +26,7 @@ def construct_x_00360(
     X_359 = eval_trilinear_point(model, A, B, C, 'a/A', ID="X_359", classes=["center"])
     X_360 = isogonal_conjugate(model, A, B, C, X_359, ID="X_360", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
-    X_1115 = eval_trilinear_point(model, A, B, C, '(pi - A)/a', ID="X_1115", classes=["center", "incident"])
+    X_1115 = eval_trilinear_point(model, A, B, C, '( pi  - A)/a', ID="X_1115", classes=["center", "incident"])
     central_line(model, X_2, X_1115, 2, 1115, incident=True)
     return promote_point_to_top(model, X_360)
 

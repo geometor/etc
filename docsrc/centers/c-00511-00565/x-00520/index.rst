@@ -44,7 +44,7 @@ X_520
    :badge: 23 lines
    :class: line-catalog
 
-   {:ref:`6 <X_6>`, 2435}, {:ref:`30 <X_30>`, :ref:`511 <X_511>`}, {:ref:`69 <X_69>`, :ref:`879 <X_879>`}, {:ref:`74 <X_74>`, 2693}, {:ref:`98 <X_98>`, 2706}, {:ref:`99 <X_99>`, 2713}, {:ref:`100 <X_100>`, 2719}, {:ref:`101 <X_101>`, 2727}, {:ref:`102 <X_102>`, 2732}, {:ref:`103 <X_103>`, 2738}, {:ref:`104 <X_104>`, 2744}, {:ref:`105 <X_105>`, 2749}, {:ref:`106 <X_106>`, 2755}, {:ref:`108 <X_108>`, 2761}, {:ref:`109 <X_109>`, 2762}, {:ref:`110 <X_110>`, :ref:`250 <X_250>`}, {:ref:`111 <X_111>`, 2763}, {:ref:`112 <X_112>`, 2764}, {:ref:`340 <X_340>`, :ref:`850 <X_850>`}, {:ref:`647 <X_647>`, :ref:`652 <X_652>`}, {:ref:`1364 <X_1364>`, 2632}, {2451, 2489}, {3265, 4131}
+   {:ref:`6 <X_6>`, :ref:`2435 <X_2435>`}, {:ref:`30 <X_30>`, :ref:`511 <X_511>`}, {:ref:`69 <X_69>`, :ref:`879 <X_879>`}, {:ref:`74 <X_74>`, :ref:`2693 <X_2693>`}, {:ref:`98 <X_98>`, :ref:`2706 <X_2706>`}, {:ref:`99 <X_99>`, :ref:`2713 <X_2713>`}, {:ref:`100 <X_100>`, :ref:`2719 <X_2719>`}, {:ref:`101 <X_101>`, :ref:`2727 <X_2727>`}, {:ref:`102 <X_102>`, :ref:`2732 <X_2732>`}, {:ref:`103 <X_103>`, :ref:`2738 <X_2738>`}, {:ref:`104 <X_104>`, :ref:`2744 <X_2744>`}, {:ref:`105 <X_105>`, :ref:`2749 <X_2749>`}, {:ref:`106 <X_106>`, :ref:`2755 <X_2755>`}, {:ref:`108 <X_108>`, :ref:`2761 <X_2761>`}, {:ref:`109 <X_109>`, :ref:`2762 <X_2762>`}, {:ref:`110 <X_110>`, :ref:`250 <X_250>`}, {:ref:`111 <X_111>`, :ref:`2763 <X_2763>`}, {:ref:`112 <X_112>`, :ref:`2764 <X_2764>`}, {:ref:`340 <X_340>`, :ref:`850 <X_850>`}, {:ref:`647 <X_647>`, :ref:`652 <X_652>`}, {:ref:`1364 <X_1364>`, :ref:`2632 <X_2632>`}, {:ref:`2451 <X_2451>`, :ref:`2489 <X_2489>`}, {3265, 4131}
 
 .. collapse:: Functional Relations
    :badge: 20 relations
@@ -61,7 +61,7 @@ X_520
    * :ref:`X_520 <X_520>` = intersection of :term:`trilinear polars <trilinear-polar>` of :ref:`X_2 <X_2>` and :ref:`X_3 <X_3>`
    * :ref:`X_520 <X_520>` = :ref:`X_6 <X_6>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_823 <X_823>`
    * :ref:`X_520 <X_520>` = :ref:`X_92 <X_92>`-isoconjugate of :ref:`X_112 <X_112>`
-   * :ref:`X_520 <X_520>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_1636 <X_1636>`\ X_2972
+   * :ref:`X_520 <X_520>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_1636 <X_1636>`\ \ :ref:`X_2972 <X_2972>`
    * :ref:`X_520 <X_520>` = Thomson-isogonal conjugate of :ref:`X_1294 <X_1294>`
    * :ref:`X_520 <X_520>` = Lucas-isogonal conjugate of :ref:`X_1294 <X_1294>`
    * :ref:`X_520 <X_520>` = polar conjugate of X_15352

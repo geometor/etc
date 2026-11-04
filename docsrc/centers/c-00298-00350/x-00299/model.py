@@ -24,14 +24,14 @@ def construct_x_00299(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_299 = ISOTOMIC CONJUGATE OF 2nd ISOGONIC CENTER on reference triangle ABC."""
-    X_299 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*sin(A - pi /3)', ID="X_299", classes=["selected", "target"])
+    X_299 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*sin(A -  pi  /3)', ID="X_299", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
     central_line(model, X_2, X_6, 2, 6, incident=True)
-    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /3)', ID="X_13", classes=["center", "incident"])
+    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A +  pi  /3)', ID="X_13", classes=["center", "incident"])
     X_76 = eval_trilinear_point(model, A, B, C, '1/a**(3)', ID="X_76", classes=["center", "incident"])
     central_line(model, X_13, X_76, 13, 76, incident=True)
-    X_14 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /3)', ID="X_14", classes=["center", "incident"])
+    X_14 = eval_trilinear_point(model, A, B, C, 'csc(A -  pi  /3)', ID="X_14", classes=["center", "incident"])
     X_533 = point_from_barycentrics(model, A, B, C, 0.76482932, -0.13487259, -0.62995674, ID="X_533", classes=["center", "incident"])
     central_line(model, X_14, X_533, 14, 533, incident=True)
     return promote_point_to_top(model, X_299)

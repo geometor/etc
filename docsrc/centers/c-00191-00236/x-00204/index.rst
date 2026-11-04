@@ -43,7 +43,7 @@ X_204
 
    * :ref:`X_204 <X_204>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_19611
    * :ref:`X_204 <X_204>` = :term:`crosspoint <crosspoint>` of :ref:`X_1 <X_1>` and :ref:`X_610 <X_610>`
-   * :ref:`X_204 <X_204>` = :term:`crosssum <crosssum>` of X_i and X_j for these {i,j}: {:ref:`1 <X_1>`, 2184}, {:ref:`525 <X_525>`, 7358}
+   * :ref:`X_204 <X_204>` = :term:`crosssum <crosssum>` of X_i and X_j for these {i,j}: {:ref:`1 <X_1>`, :ref:`2184 <X_2184>`}, {:ref:`525 <X_525>`, 7358}
    * :ref:`X_204 <X_204>` = :ref:`X_1 <X_1>`-Ceva conjugate of :ref:`X_19 <X_19>`
    * :ref:`X_204 <X_204>` = X_i-:term:`beth conjugate <beth-conjugate>` of X_j for these (i,j): (:ref:`108 <X_108>`, :ref:`204 <X_204>`), (:ref:`162 <X_162>`, :ref:`223 <X_223>`)
 

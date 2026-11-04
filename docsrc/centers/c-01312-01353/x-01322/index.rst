@@ -23,8 +23,8 @@ X_1322
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{4, 372} <{ 4, 372 }>`
-   * **Related Centers:** :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_372 <X_372>` (:ref:`{X <X_372>`)
+   * **Central Lines:** :g:`{4, 372} <{ 4, 372 }>`, :g:`{1321, 2165} <{ 1321, 2165 }>`
+   * **Related Centers:** :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_372 <X_372>` (:ref:`{X <X_372>`), :g:`X_1321 <X_1321>` (:ref:`1st YIU SQUARES PERSPECTOR <X_1321>`), :g:`X_2165 <X_2165>` (:ref:`-ISOCONJUGATE OF X(47) <X_2165>`)
 
 .. signature:: center
 
@@ -36,7 +36,7 @@ X_1322
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`4 <X_4>`, :ref:`372 <X_372>`}, {:ref:`1321 <X_1321>`, 2165}
+   {:ref:`4 <X_4>`, :ref:`372 <X_372>`}, {:ref:`1321 <X_1321>`, :ref:`2165 <X_2165>`}
 
 Notes
 -----

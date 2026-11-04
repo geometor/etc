@@ -41,7 +41,7 @@ X_1422
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X_1422 <X_1422>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2324
+   * :ref:`X_1422 <X_1422>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2324 <X_2324>`
    * :ref:`X_1422 <X_1422>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`189 <X_189>`, :ref:`57 <X_57>`), (:ref:`1440 <X_1440>`, :ref:`84 <X_84>`)
    * :ref:`X_1422 <X_1422>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`34 <X_34>`, :ref:`269 <X_269>`), (:ref:`1407 <X_1407>`, :ref:`57 <X_57>`), (:ref:`1436 <X_1436>`, :ref:`84 <X_84>`)
    * :ref:`X_1422 <X_1422>` = cevapoint of :ref:`X_1413 <X_1413>` and :ref:`X_1436 <X_1436>`

@@ -20,7 +20,7 @@ def construct_x_01133(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1133 = BURGESS POINT on reference triangle ABC."""
-    X_1133 = eval_trilinear_point(model, A, B, C, 'sin(pi /3 - A/3)/sin(pi /3 + A/3)', ID="X_1133", classes=["selected", "target"])
+    X_1133 = eval_trilinear_point(model, A, B, C, 'sin( pi  /3 - A/3)/sin( pi  /3 + A/3)', ID="X_1133", classes=["selected", "target"])
     return promote_point_to_top(model, X_1133)
 
 

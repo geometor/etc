@@ -44,14 +44,14 @@ X_1635
    * :ref:`X_1635 <X_1635>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3257
    * :ref:`X_1635 <X_1635>` = :term:`complement <complement>` of X_21297
    * :ref:`X_1635 <X_1635>` = :term:`anticomplement <anticomplement>` of X_4928
-   * :ref:`X_1635 <X_1635>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`2 <X_2>`, 38979), (:ref:`44 <X_44>`, 2087), (:ref:`88 <X_88>`, :ref:`244 <X_244>`), (:ref:`104 <X_104>`, 2310), (:ref:`662 <X_662>`, :ref:`214 <X_214>`), (:ref:`1022 <X_1022>`, :ref:`513 <X_513>`), (:ref:`1023 <X_1023>`, :ref:`44 <X_44>`), (2161, 2170)
-   * :ref:`X_1635 <X_1635>` = X_2087-:term:`cross conjugate <cross-conjugate>` of :ref:`X_44 <X_44>`
-   * :ref:`X_1635 <X_1635>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`44 <X_44>`, :ref:`1023 <X_1023>`), (:ref:`57 <X_57>`, 2222), (:ref:`88 <X_88>`, :ref:`100 <X_100>`), (:ref:`101 <X_101>`, :ref:`909 <X_909>`), (:ref:`190 <X_190>`, :ref:`1120 <X_1120>`), (:ref:`513 <X_513>`, :ref:`1022 <X_1022>`), (:ref:`662 <X_662>`, :ref:`759 <X_759>`)
+   * :ref:`X_1635 <X_1635>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`2 <X_2>`, 38979), (:ref:`44 <X_44>`, :ref:`2087 <X_2087>`), (:ref:`88 <X_88>`, :ref:`244 <X_244>`), (:ref:`104 <X_104>`, :ref:`2310 <X_2310>`), (:ref:`662 <X_662>`, :ref:`214 <X_214>`), (:ref:`1022 <X_1022>`, :ref:`513 <X_513>`), (:ref:`1023 <X_1023>`, :ref:`44 <X_44>`), (:ref:`2161 <X_2161>`, :ref:`2170 <X_2170>`)
+   * :ref:`X_1635 <X_1635>` = :ref:`X_2087 <X_2087>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_44 <X_44>`
+   * :ref:`X_1635 <X_1635>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`44 <X_44>`, :ref:`1023 <X_1023>`), (:ref:`57 <X_57>`, :ref:`2222 <X_2222>`), (:ref:`88 <X_88>`, :ref:`100 <X_100>`), (:ref:`101 <X_101>`, :ref:`909 <X_909>`), (:ref:`190 <X_190>`, :ref:`1120 <X_1120>`), (:ref:`513 <X_513>`, :ref:`1022 <X_1022>`), (:ref:`662 <X_662>`, :ref:`759 <X_759>`)
    * :ref:`X_1635 <X_1635>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`1635 <X_1635>`), (:ref:`44 <X_44>`, :ref:`513 <X_513>`), (:ref:`88 <X_88>`, :ref:`1022 <X_1022>`), (:ref:`100 <X_100>`, :ref:`1023 <X_1023>`), (:ref:`514 <X_514>`, :ref:`908 <X_908>`), (:ref:`649 <X_649>`, :ref:`1149 <X_1149>`), (:ref:`661 <X_661>`, :ref:`758 <X_758>`)
    * :ref:`X_1635 <X_1635>` = bicentric sum of PU(34)
    * :ref:`X_1635 <X_1635>` = perspector of hyperbola {{:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_1 <X_1>`,\ :ref:`X_44 <X_44>`}}
    * :ref:`X_1635 <X_1635>` = PU(34)-harmonic conjugate of :ref:`X_244 <X_244>`
-   * :ref:`X_1635 <X_1635>` = :term:`trilinear pole <trilinear-pole>` of line X_2087X_3251
+   * :ref:`X_1635 <X_1635>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_2087 <X_2087>`\ X_3251
    * :ref:`X_1635 <X_1635>` = centroid of antiorthic axis intercepts with sidelines of :g:`ABC << A B C >>`
    * :ref:`X_1635 <X_1635>` = :ref:`X_647 <X_647>`-of-2nd-extouch-triangle
 

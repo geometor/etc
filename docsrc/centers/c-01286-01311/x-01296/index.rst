@@ -50,9 +50,9 @@ X_1296
    * :ref:`X_1296 <X_1296>` = cevapoint of :ref:`X_512 <X_512>` and :ref:`X_574 <X_574>`
    * :ref:`X_1296 <X_1296>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_6 <X_6>`\ \ :ref:`X_373 <X_373>`
    * :ref:`X_1296 <X_1296>` = Ψ(:ref:`X_6 <X_6>`, :ref:`X_373 <X_373>`)
-   * :ref:`X_1296 <X_1296>` = reflection of X_2696 in the Euler line
-   * :ref:`X_1296 <X_1296>` = reflection of X_2709 in the Brocard axis
-   * :ref:`X_1296 <X_1296>` = reflection of X_2746 in line :ref:`X_1 <X_1>`\ \ :ref:`X_3 <X_3>`
+   * :ref:`X_1296 <X_1296>` = reflection of :ref:`X_2696 <X_2696>` in the Euler line
+   * :ref:`X_1296 <X_1296>` = reflection of :ref:`X_2709 <X_2709>` in the Brocard axis
+   * :ref:`X_1296 <X_1296>` = reflection of :ref:`X_2746 <X_2746>` in line :ref:`X_1 <X_1>`\ \ :ref:`X_3 <X_3>`
    * :ref:`X_1296 <X_1296>` = reflection of :ref:`X_74 <X_74>` in line :ref:`X_3 <X_3>`\ \ :ref:`X_351 <X_351>`
    * :ref:`X_1296 <X_1296>` = :ref:`X_138 <X_138>`-of-hexyl-triangle
    * :ref:`X_1296 <X_1296>` = :ref:`X_74 <X_74>`-of-circumsymmedial-triangle

@@ -24,15 +24,15 @@ def construct_x_01250(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1250 = ISOGONAL CONJUGATE OF X_1081 on reference triangle ABC."""
-    X_1081 = eval_trilinear_point(model, A, B, C, 'sec(A/2)*csc(A/2 - pi /3)', ID="X_1081", classes=["center"])
+    X_1081 = eval_trilinear_point(model, A, B, C, 'sec(A/2)*csc(A/2 -  pi  /3)', ID="X_1081", classes=["center"])
     X_1250 = isogonal_conjugate(model, A, B, C, X_1081, ID="X_1250", classes=["selected", "target"])
     X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
-    X_16 = eval_trilinear_point(model, A, B, C, 'sin(A- pi /3)', ID="X_16", classes=["center", "incident"])
+    X_16 = eval_trilinear_point(model, A, B, C, 'sin(A-  pi  /3)', ID="X_16", classes=["center", "incident"])
     central_line(model, X_1, X_16, 1, 16, incident=True)
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
     X_31 = eval_trilinear_point(model, A, B, C, 'a**(2)', ID="X_31", classes=["center", "incident"])
     central_line(model, X_6, X_31, 6, 31, incident=True)
-    X_15 = eval_trilinear_point(model, A, B, C, 'sin(A + pi /3)', ID="X_15", classes=["center", "incident"])
+    X_15 = eval_trilinear_point(model, A, B, C, 'sin(A +  pi  /3)', ID="X_15", classes=["center", "incident"])
     X_35 = eval_trilinear_point(model, A, B, C, '1 + 2*cos(A)', ID="X_35", classes=["center", "incident"])
     central_line(model, X_15, X_35, 15, 35, incident=True)
     return promote_point_to_top(model, X_1250)

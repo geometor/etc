@@ -12,8 +12,7 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
-    isogonal_conjugate,
-    point_from_barycentrics,
+    intersect_lines,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -23,14 +22,13 @@ def construct_x_00840(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_840 = ISOGONAL CONJUGATE OF X_528 on reference triangle ABC."""
-    X_528 = point_from_barycentrics(model, A, B, C, -0.26726124, 0.80178373, -0.53452248, ID="X_528", classes=["center"])
-    X_840 = isogonal_conjugate(model, A, B, C, X_528, ID="X_840", classes=["selected", "target"])
-    X_36 = eval_trilinear_point(model, A, B, C, '1 - 2*cos(A)', ID="X_36", classes=["center", "incident"])
-    X_101 = eval_trilinear_point(model, A, B, C, 'a/(b - c)', ID="X_101", classes=["center", "incident"])
-    central_line(model, X_36, X_101, 36, 101, incident=True)
-    X_100 = eval_trilinear_point(model, A, B, C, '1/(b - c)', ID="X_100", classes=["center", "incident"])
-    X_518 = eval_trilinear_point(model, A, B, C, '(a*b + a*c - b**(2) - c**(2))', ID="X_518", classes=["center", "incident"])
-    central_line(model, X_100, X_518, 100, 518, incident=True)
+    X_36 = eval_trilinear_point(model, A, B, C, '1 - 2*cos(A)', ID="X_36", classes=["center"])
+    X_101 = eval_trilinear_point(model, A, B, C, 'a/(b - c)', ID="X_101", classes=["center"])
+    X_100 = eval_trilinear_point(model, A, B, C, '1/(b - c)', ID="X_100", classes=["center"])
+    X_518 = eval_trilinear_point(model, A, B, C, '(a*b + a*c - b**(2) - c**(2))', ID="X_518", classes=["center"])
+    central_line(model, X_36, X_101, 36, 101)
+    central_line(model, X_100, X_518, 100, 518)
+    X_840 = intersect_lines(model, X_36, X_101, X_100, X_518, ID="X_840", classes=["selected", "target"])
     X_105 = eval_trilinear_point(model, A, B, C, '1/(b**(2) + c**(2) - a*(b + c))', ID="X_105", classes=["center", "incident"])
     X_513 = eval_trilinear_point(model, A, B, C, 'b - c', ID="X_513", classes=["center", "incident"])
     central_line(model, X_105, X_513, 105, 513, incident=True)

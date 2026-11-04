@@ -42,7 +42,7 @@ X_1793
    :badge: 3 relations
 
    * :ref:`X_1793 <X_1793>` = isogonal conjugate of :ref:`X_1835 <X_1835>`
-   * :ref:`X_1793 <X_1793>` = :term:`isotomic conjugate <isotomic-conjugate>` of polar conjugate of X_2341
+   * :ref:`X_1793 <X_1793>` = :term:`isotomic conjugate <isotomic-conjugate>` of polar conjugate of :ref:`X_2341 <X_2341>`
    * :ref:`X_1793 <X_1793>` = :ref:`X_19 <X_19>`-:term:`isoconjugate <isoconjugate>` of X_18593
 
 .. toctree::

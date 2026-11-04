@@ -23,8 +23,9 @@ X_1266
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{10, 75} <{ 10, 75 }>`, :g:`{7, 145} <{ 7, 145 }>`
-   * **Related Centers:** :g:`X_1120 <X_1120>` (:ref:`-BLAIKIE TRANSFORM OF X(1) <X_1120>`), :g:`X_10 <X_10>` (:ref:`SPIEKER CENTER <X_10>`), :g:`X_75 <X_75>` (:ref:`ISOTOMIC CONJUGATE OF INCENTER <X_75>`), :g:`X_7 <X_7>` (:ref:`GERGONNE POINT <X_7>`), :g:`X_145 <X_145>` (:ref:`ANTICOMPLEMENT OF NAGEL POINT <X_145>`)
+   * **Derived Triangle:** :term:`Anticomplementary Triangle <anticomplementary triangle>` :g:`△K_aK_bK_c << K_a K_b K_c >>` — vertices :g:`K_a <K_a>`, :g:`K_b <K_b>`, :g:`K_c <K_c>` (Formed by lines through A, B, C parallel to opposite sides)
+   * **Central Lines:** :g:`{2, 2325} <{ 2, 2325 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_2325 <X_2325>` (:ref:`-ISOCONJUGATE OF X(1417) <X_2325>`)
 
 .. signature:: center
 
@@ -41,7 +42,7 @@ X_1266
    :badge: 4 relations
 
    * :ref:`X_1266 <X_1266>` = isotomic conjugate of :ref:`X_1120 <X_1120>`
-   * :ref:`X_1266 <X_1266>` = :term:`anticomplement <anticomplement>` of X_2325
+   * :ref:`X_1266 <X_1266>` = :term:`anticomplement <anticomplement>` of :ref:`X_2325 <X_2325>`
    * :ref:`X_1266 <X_1266>` = :term:`crosspoint <crosspoint>` of :ref:`X_75 <X_75>` and :ref:`X_903 <X_903>`
    * :ref:`X_1266 <X_1266>` = :term:`crosssum <crosssum>` of :ref:`X_31 <X_31>` and :ref:`X_902 <X_902>`
 

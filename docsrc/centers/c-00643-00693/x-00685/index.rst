@@ -43,7 +43,7 @@ X_685
 
    * :ref:`X_685 <X_685>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_684 <X_684>`
    * :ref:`X_685 <X_685>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_6333
-   * :ref:`X_685 <X_685>` = polar conjugate of X_2799
+   * :ref:`X_685 <X_685>` = polar conjugate of :ref:`X_2799 <X_2799>`
    * :ref:`X_685 <X_685>` = trilinear pole of line :ref:`X_4 <X_4>`\ \ :ref:`X_32 <X_32>`
    * :ref:`X_685 <X_685>` = trilinear product of circumcircle intercepts of line :ref:`X_31 <X_31>`\ \ :ref:`X_92 <X_92>`
    * :ref:`X_685 <X_685>` = :term:`vertex conjugate <vertex-conjugate>` of MacBeath circumconic intercepts of Euler line

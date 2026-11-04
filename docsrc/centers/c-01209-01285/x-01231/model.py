@@ -13,9 +13,8 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     gergonne_point_of,
-    isotomic_conjugate,
+    intersect_lines,
     nagel_point_of,
-    point_from_barycentrics,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -25,14 +24,13 @@ def construct_x_01231(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1231 = ISOTOMIC CONJUGATE OF X_1172 on reference triangle ABC."""
-    X_1172 = point_from_barycentrics(model, A, B, C, 0.14979394, 0.23060383, 0.61960222, ID="X_1172", classes=["center"])
-    X_1231 = isotomic_conjugate(model, A, B, C, X_1172, ID="X_1231", classes=["selected", "target"])
-    X_7 = gergonne_point_of(model, A, B, C, ID="X_7", classes=["center", "incident"])
-    X_8 = nagel_point_of(model, A, B, C, ID="X_8", classes=["center", "incident"])
-    central_line(model, X_7, X_8, 7, 8, incident=True)
-    X_76 = eval_trilinear_point(model, A, B, C, '1/a**(3)', ID="X_76", classes=["center", "incident"])
-    X_331 = eval_trilinear_point(model, A, B, C, '(sec(A/2))**(2)*csc(2*A)', ID="X_331", classes=["center", "incident"])
-    central_line(model, X_76, X_331, 76, 331, incident=True)
+    X_7 = gergonne_point_of(model, A, B, C, ID="X_7", classes=["center"])
+    X_8 = nagel_point_of(model, A, B, C, ID="X_8", classes=["center"])
+    X_76 = eval_trilinear_point(model, A, B, C, '1/a**(3)', ID="X_76", classes=["center"])
+    X_331 = eval_trilinear_point(model, A, B, C, '(sec(A/2))**(2)*csc(2*A)', ID="X_331", classes=["center"])
+    central_line(model, X_7, X_8, 7, 8)
+    central_line(model, X_76, X_331, 76, 331)
+    X_1231 = intersect_lines(model, X_7, X_8, X_76, X_331, ID="X_1231", classes=["selected", "target"])
     X_201 = eval_trilinear_point(model, A, B, C, '(cos(A))*(1 + cos(B - C))', ID="X_201", classes=["center", "incident"])
     X_307 = eval_trilinear_point(model, A, B, C, 'b**(2)*c**(2)*(b + c)*(cos(A))/(b + c - a)', ID="X_307", classes=["center", "incident"])
     central_line(model, X_201, X_307, 201, 307, incident=True)

@@ -51,7 +51,7 @@ X_82
    * :ref:`X_82 <X_82>` = :term:`anticomplement <anticomplement>` of X_21249
    * :ref:`X_82 <X_82>` = :term:`cevapoint <cevapoint>` of :ref:`X_1 <X_1>` and :ref:`X_31 <X_31>`
    * :ref:`X_82 <X_82>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_661 <X_661>`\ \ :ref:`X_830 <X_830>`
-   * :ref:`X_82 <X_82>` = :term:`crossdifference <crossdifference>` of every pair of points on line X_2084X_2530
+   * :ref:`X_82 <X_82>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_2084 <X_2084>`\ \ :ref:`X_2530 <X_2530>`
    * :ref:`X_82 <X_82>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X_82 <X_82>` (which is also the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X_82 <X_82>`)
    * :ref:`X_82 <X_82>` = :term:`crosspoint <crosspoint>` of :ref:`X_1 <X_1>` and :ref:`X_31 <X_31>` wrt the :term:`excentral triangle <excentral-triangle>`
 

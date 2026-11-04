@@ -9,7 +9,6 @@ from geometor.model import Model
 
 from geometor.etc.ops import (
     central_line,
-    cevapoint,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
@@ -22,14 +21,12 @@ def construct_x_01304(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1304 = COLLINGS TRANSFORM OF X_403 on reference triangle ABC."""
-    X_403 = eval_trilinear_point(model, A, B, C, '(sec(A))*(1 + cos(2*B) + cos(2*C))', ID="X_403", classes=["center"])
-    X_523 = eval_trilinear_point(model, A, B, C, 'sin(B -C)', ID="X_523", classes=["center"])
-    X_1304 = cevapoint(model, A, B, C, X_403, X_523, ID="X_1304", classes=["selected", "target"])
+    X_1304 = eval_trilinear_point(model, A, B, C, '(sin(A))/((tan(B) - tan(C))*(tan(B) + tan(C) - 2*tan(A)))', ID="X_1304", classes=["selected", "target"])
     X_74 = eval_trilinear_point(model, A, B, C, '1/(cos(A) - 2*cos(B)*cos(C))', ID="X_74", classes=["center", "incident"])
     X_186 = eval_trilinear_point(model, A, B, C, '4*cos(A) - sec(A)', ID="X_186", classes=["center", "incident"])
     central_line(model, X_74, X_186, 74, 186, incident=True)
     X_111 = eval_trilinear_point(model, A, B, C, 'a/(2*a**(2) - b**(2) - c**(2))', ID="X_111", classes=["center", "incident"])
-    X_232 = eval_trilinear_point(model, A, B, C, 'tan(A)*cos(A + omega )', ID="X_232", classes=["center", "incident"])
+    X_232 = eval_trilinear_point(model, A, B, C, 'tan(A)*cos(A +  omega  )', ID="X_232", classes=["center", "incident"])
     central_line(model, X_111, X_232, 111, 232, incident=True)
     X_110 = eval_trilinear_point(model, A, B, C, 'csc(B - C)', ID="X_110", classes=["center", "incident"])
     X_250 = eval_trilinear_point(model, A, B, C, '(sec(A))*(csc(B - C))**(2)', ID="X_250", classes=["center", "incident"])

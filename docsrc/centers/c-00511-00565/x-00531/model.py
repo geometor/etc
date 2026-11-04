@@ -24,14 +24,14 @@ def construct_x_00531(
 ) -> spg.Point:
     """Construct X_531 = DIRECTION OF VECTOR AX + BX + CX, where X = X_14 on reference triangle ABC."""
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
-    X_14 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /3)', ID="X_14", classes=["center"])
+    X_14 = eval_trilinear_point(model, A, B, C, 'csc(A -  pi  /3)', ID="X_14", classes=["center"])
     X_99 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(2) - c**(2))', ID="X_99", classes=["center"])
-    X_298 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*sin(A + pi /3)', ID="X_298", classes=["center"])
+    X_298 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*sin(A +  pi  /3)', ID="X_298", classes=["center"])
     central_line(model, X_2, X_14, 2, 14)
     central_line(model, X_99, X_298, 99, 298)
     X_531 = intersect_lines(model, X_2, X_14, X_99, X_298, ID="X_531", classes=["selected", "target"])
     X_115 = eval_trilinear_point(model, A, B, C, 'b*c*(b**(2) - c**(2))**(2)', ID="X_115", classes=["center", "incident"])
-    X_396 = eval_trilinear_point(model, A, B, C, 'cos(B - C) + 2*cos(A - pi /3)', ID="X_396", classes=["center", "incident"])
+    X_396 = eval_trilinear_point(model, A, B, C, 'cos(B - C) + 2*cos(A -  pi  /3)', ID="X_396", classes=["center", "incident"])
     central_line(model, X_115, X_396, 115, 396, incident=True)
     return promote_point_to_top(model, X_531)
 

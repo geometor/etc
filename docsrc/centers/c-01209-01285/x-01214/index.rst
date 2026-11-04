@@ -51,7 +51,7 @@ X_1214
    * :ref:`X_1214 <X_1214>` = polar conjugate of :ref:`X_1896 <X_1896>`
    * :ref:`X_1214 <X_1214>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_520 <X_520>`\ \ :ref:`X_656 <X_656>`
    * :ref:`X_1214 <X_1214>` = :ref:`X_6 <X_6>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_29 <X_29>`
-   * :ref:`X_1214 <X_1214>` = :ref:`X_92 <X_92>`-isoconjugate of X_2194
+   * :ref:`X_1214 <X_1214>` = :ref:`X_92 <X_92>`-isoconjugate of :ref:`X_2194 <X_2194>`
    * :ref:`X_1214 <X_1214>` = :term:`complement <complement>` of :ref:`X_92 <X_92>`
    * :ref:`X_1214 <X_1214>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j) : (:ref:`2 <X_2>`, :ref:`226 <X_226>`), (:ref:`77 <X_77>`, :ref:`73 <X_73>`), (:ref:`307 <X_307>`, :ref:`72 <X_72>`), (:ref:`348 <X_348>`, :ref:`307 <X_307>`)
    * :ref:`X_1214 <X_1214>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`37 <X_37>`, :ref:`227 <X_227>`), (:ref:`71 <X_71>`, :ref:`73 <X_73>`)

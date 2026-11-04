@@ -26,7 +26,7 @@ def construct_x_00535(
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
     X_36 = eval_trilinear_point(model, A, B, C, '1 - 2*cos(A)', ID="X_36", classes=["center"])
     X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X_30", classes=["center"])
-    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X_511", classes=["center"])
+    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A +  omega  )', ID="X_511", classes=["center"])
     central_line(model, X_2, X_36, 2, 36)
     central_line(model, X_30, X_511, 30, 511)
     X_535 = intersect_lines(model, X_2, X_36, X_30, X_511, ID="X_535", classes=["selected", "target"])

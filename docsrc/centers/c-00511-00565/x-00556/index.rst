@@ -36,7 +36,7 @@ X_556
    :badge: 3 lines
    :class: line-catalog
 
-   {:ref:`8 <X_8>`, :ref:`177 <X_177>`}, {:ref:`75 <X_75>`, :ref:`234 <X_234>`}, {:ref:`312 <X_312>`, 2090}
+   {:ref:`8 <X_8>`, :ref:`177 <X_177>`}, {:ref:`75 <X_75>`, :ref:`234 <X_234>`}, {:ref:`312 <X_312>`, :ref:`2090 <X_2090>`}
 
 .. collapse:: Functional Relations
    :badge: 1 relation

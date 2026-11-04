@@ -47,7 +47,7 @@ X_1331
    * :ref:`X_1331 <X_1331>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_7649
    * :ref:`X_1331 <X_1331>` = :term:`isotomic conjugate <isotomic-conjugate>` of polar conjugate of :ref:`X_101 <X_101>`
    * :ref:`X_1331 <X_1331>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_3 <X_3>`\ \ :ref:`X_48 <X_48>`
-   * :ref:`X_1331 <X_1331>` = :term:`crossdifference <crossdifference>` of every pair of points on line X_2170X_2969
+   * :ref:`X_1331 <X_1331>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_2170 <X_2170>`\ \ :ref:`X_2969 <X_2969>`
    * :ref:`X_1331 <X_1331>` = :ref:`X_19 <X_19>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_514 <X_514>`
    * :ref:`X_1331 <X_1331>` = :ref:`X_92 <X_92>`-isoconjugate of :ref:`X_649 <X_649>`
    * :ref:`X_1331 <X_1331>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`190 <X_190>`, :ref:`101 <X_101>`), (:ref:`643 <X_643>`, :ref:`100 <X_100>`)

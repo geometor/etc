@@ -43,7 +43,7 @@ X_1581
    * :ref:`X_1581 <X_1581>` = isogonal conjugate of :ref:`X_1580 <X_1580>`
    * :ref:`X_1581 <X_1581>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_1966 <X_1966>`
    * :ref:`X_1581 <X_1581>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`1755 <X_1755>`, :ref:`1964 <X_1964>`), (:ref:`1965 <X_1965>`, :ref:`1966 <X_1966>`)
-   * :ref:`X_1581 <X_1581>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`1821 <X_1821>`, :ref:`1956 <X_1956>`), (:ref:`1959 <X_1959>`, :ref:`1 <X_1>`), (2227, :ref:`75 <X_75>`)
+   * :ref:`X_1581 <X_1581>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`1821 <X_1821>`, :ref:`1956 <X_1956>`), (:ref:`1959 <X_1959>`, :ref:`1 <X_1>`), (:ref:`2227 <X_2227>`, :ref:`75 <X_75>`)
    * :ref:`X_1581 <X_1581>` = :term:`trilinear pole <trilinear-pole>` of PU(35) (line :ref:`X_38 <X_38>`\ \ :ref:`X_661 <X_661>`)
    * :ref:`X_1581 <X_1581>` = trilinear product of circumcircle intercepts of line PU(11)
    * :ref:`X_1581 <X_1581>` = trilinear product :ref:`X_256 <X_256>`\ \*\ :ref:`X_291 <X_291>`

@@ -84,6 +84,21 @@ class TriangleContext:
         moses_Q = 4.0 * (dist_OH**2) * self.R * (4.0 * self.r - self.R) + (
             dist_OH**2 - 3.0 * (self.R**2) + 4.0 * self.r * (self.r + self.R)
         ) ** 2
+        s26_val = (
+            (a_r**2) * (b_r**6 + c_r**6)
+            + (b_r**2) * (c_r**6 + a_r**6)
+            + (c_r**2) * (a_r**6 + b_r**6)
+        )
+        steiner_K = 0.5 * math.sqrt(
+            max(
+                0.0,
+                a_r**8
+                + b_r**8
+                + c_r**8
+                - s26_val
+                + (a_r**2) * (b_r**2) * (c_r**2) * (a_r**2 + b_r**2 + c_r**2),
+            )
+        )
         safe_funcs: dict[str, Any] = {
             "sin": math.sin,
             "cos": math.cos,
@@ -107,6 +122,7 @@ class TriangleContext:
             "d": dist_OH,
             "J": dist_OH / self.R,
             "Q": moses_Q,
+            "K": steiner_K,
         }
         A_rad, B_rad, C_rad = self.A_rad, self.B_rad, self.C_rad
         self.eval_envs: tuple[dict[str, Any], dict[str, Any], dict[str, Any]] = (
@@ -192,54 +208,83 @@ def _prepare_formula_expr(latex_or_rst: str) -> str | None:
     else:
         first = s.strip()
 
+    # Flatten inline :math:`...` blocks in tail_clause so fragmented math recombines cleanly
+    tail_clean = re.sub(r"\\?\s*:math:`([^`]+)`\\?\s*", r" \1 ", tail_clause)
+    tail_clean = tail_clean.replace("\\ ", " ")
+    tail_clean = re.sub(r"\\?\s*:sup:`([^`]+)`\\?\s*", r"**(\1)", tail_clean)
+    tail_clean = tail_clean.replace(r"\*", "*").replace("π", " pi ").replace("ω", " omega ")
+
     # Check if `first` references an auxiliary function f(A,B,C), f(a,b,c), g(a,b,c), or h(a,b,c) defined in `tail_clause`
-    fn_call_m = re.search(
-        r"([fgh])\s*\(\s*[aAbBcC]\s*,\s*[aAbBcC]\s*,\s*[aAbBcC]\s*\)", first
+    fn_pat = (
+        r"([fg])\s*\(\s*[aAbBcC]\s*,\s*[aAbBcC]\s*,\s*[aAbBcC]\s*\)"
+        if re.search(r"\bk\s*\(\s*a\s*,\s*b\s*,\s*c\s*\)", first)
+        else r"([fgh])\s*\(\s*[aAbBcC]\s*,\s*[aAbBcC]\s*,\s*[aAbBcC]\s*\)"
     )
+    fn_call_m = re.search(fn_pat, first)
     if fn_call_m:
         fn_letter = fn_call_m.group(1)
-        # Flatten inline :math:`...` blocks in tail_clause so fragmented math (e.g. X_1314) recombines cleanly
-        tail_clean = re.sub(r"\\?\s*:math:`([^`]+)`\\?\s*", r" \1 ", tail_clause)
-        tail_clean = tail_clean.replace("\\ ", " ")
         fm_plain = re.search(
-            rf"where\s*,?\s*{fn_letter}\s*\(\s*[aAbBcC]\s*,\s*[aAbBcC]\s*,\s*[aAbBcC]\s*\)\s*=\s*(.+)$",
+            rf"where\s*,?\s*{fn_letter}\s*\(\s*[aAbBcC]\s*,\s*[aAbBcC]\s*,\s*[aAbBcC]\s*\)\s*=\s*,?\s*(.+)$",
             tail_clean,
             flags=re.IGNORECASE,
         )
         if not fm_plain:
             return None
         rhs = fm_plain.group(1).strip().rstrip("`")
-        # Stop rhs before secondary clauses like `, where`, `, x : y : z =`, `, u : v : w =`, `, D, U, V, W`, or `;`
+        # Substitute inline D = ... if present (e.g. X_2448, X_2449)
+        dm = re.search(r",\s*D\s*=\s*([^,;]+)", rhs)
+        if dm:
+            d_expr = dm.group(1).strip()
+            rhs = rhs[: dm.start()].strip()
+            rhs = re.sub(r"\bD\b", lambda _: f"({d_expr})", rhs)
+        # Stop rhs before secondary clauses like `, where`, `, x : y : z =`, `, u : v : w =`, `, D, U, V, W`, `, J as at`, `, K as at`, `(see X`, or `;`
         rhs = re.split(
-            r",\s*(?:where\b|[xuv]\s*:\s*[yvw]\s*:\s*[zw]|[DUVW]\s*,)|;",
+            r",\s*(?:where\b|[xuv]\s*:\s*[yvw]\s*:\s*[zw]|[DUVW]\s*,|[JK]\s+as\s+at\b)|\(\s*see\s+X\b|;",
             rhs,
             maxsplit=1,
+            flags=re.IGNORECASE,
         )[0].strip()
         # Strip trailing attribution like `(M. Iliev, 5/13/07)` or trailing period
         rhs = re.sub(r"\s*\([A-Z][^()]*\d+\s*\)\s*\.?$", "", rhs).strip()
         # Reject if secondary auxiliary functions u(...), v(...), t(...), s(...), x_1 = ... are defined or called
         if re.search(r",\s*[uvtsx]\s*[\(=]|\b(?:[uvt]\s*\([ABCabc]|x_\{?\d)", rhs):
             return None
-        # Convert inline RST superscripts `\ :sup:`2`\ ` -> `**(2)` and escaped `\*` -> `*`
-        rhs = re.sub(r"\\?\s*:sup:`([^`]+)`\\?\s*", r"**(\1)", rhs)
-        rhs = rhs.replace(r"\*", "*").replace("π", "pi").replace("ω", "omega")
         first = (
             first[: fn_call_m.start()]
             + f"({rhs})"
             + first[fn_call_m.end() :]
         )
 
+    # Expand symmetric/cyclic helper functions h(a,b,c) and k(a,b,c) if referenced in `first` (e.g. X_2598..X_2666)
+    if re.search(r"\b[hk]\s*\(\s*a\s*,\s*b\s*,\s*c\s*\)", first):
+        hm = re.search(
+            r"\bh\s*\(\s*a\s*,\s*b\s*,\s*c\s*\)\s*=\s*(.+?)(?:,\s*and\b|\s+and\s+k\s*\(|;|$)",
+            tail_clean,
+            flags=re.IGNORECASE,
+        )
+        km = re.search(
+            r"\bk\s*\(\s*a\s*,\s*b\s*,\s*c\s*\)\s*=\s*(.+?)(?:;|$)",
+            tail_clean,
+            flags=re.IGNORECASE,
+        )
+        if hm:
+            h_rhs = hm.group(1).strip().rstrip("`.")
+            first = re.sub(r"\bh\s*\(\s*a\s*,\s*b\s*,\s*c\s*\)", lambda _: f"({h_rhs})", first)
+        if km:
+            k_rhs = km.group(1).strip().rstrip("`.")
+            first = re.sub(r"\bk\s*\(\s*a\s*,\s*b\s*,\s*c\s*\)", lambda _: f"({k_rhs})", first)
+
     if not first or "=" in first or "\\text" in first or "see below" in first.lower() or "given below" in first.lower():
         return None
-    # Reject remaining unexpanded f(A,B,C) or f(a,b,c) calls
-    if re.search(r"[fgh]\s*\(\s*[aAbBcC]\s*,", first):
+    # Reject remaining unexpanded f(A,B,C), f(a,b,c), h(a,b,c), or k(a,b,c) calls
+    if re.search(r"[fghk]\s*\(\s*[aAbBcC]\s*,", first):
         return None
 
     # Convert LaTeX constructs to Python expression
     expr = first
     expr = expr.replace("[", "(").replace("]", ")")
     expr = re.sub(
-        r"\\operatorname\{area\}\s*(?:\(\s*ABC\s*\)|\bABC\b)?",
+        r"(?:\\operatorname\{area\}|\barea)\s*(?:of\s+)?(?:\(\s*ABC\s*\)|\bABC\b)?",
         " area ",
         expr,
         flags=re.IGNORECASE,
@@ -250,7 +295,7 @@ def _prepare_formula_expr(latex_or_rst: str) -> str | None:
     expr = re.sub(r"\bS_\{?([ABC])\}?", r"S\1", expr)
     expr = re.sub(r"\bS_\{?\\omega\}?", "SW", expr)
     expr = re.sub(r"\b[Rr]_\{?([abc])\}?", r"R\1", expr)
-    expr = expr.replace(r"\omega", "omega").replace(r"\pi", "pi")
+    expr = expr.replace(r"\omega", " omega ").replace(r"\pi", " pi ")
     expr = expr.replace(r"\Delta", "area").replace("Area", "area")
     expr = re.sub(r"\\(sin|cos|tan|cot|sec|csc)\b", r"\1", expr)
 
@@ -345,18 +390,18 @@ def _prepare_formula_expr(latex_or_rst: str) -> str | None:
         expr = re.sub(rf"\b{fn}\b", ph, expr)
 
     # Split single-letter product runs like "bc", "abc", "yz", "vw", "DU" into "b*c", "y*z", "v*w", "D*U"
-    expr = re.sub(r"\b([abcxyzuvwABCRrsSeDJUVWQ])([abcxyzuvwABCRrsSeDJUVWQ])\b", r"\1*\2", expr)
-    expr = re.sub(r"\b([abcxyzuvwABCRrsSeDJUVWQ])([abcxyzuvwABCRrsSeDJUVWQ])\b", r"\1*\2", expr)
+    expr = re.sub(r"\b([abcxyzuvwABCRrsSeDJKUVWQ])([abcxyzuvwABCRrsSeDJKUVWQ])\b", r"\1*\2", expr)
+    expr = re.sub(r"\b([abcxyzuvwABCRrsSeDJKUVWQ])([abcxyzuvwABCRrsSeDJKUVWQ])\b", r"\1*\2", expr)
 
     # Insert * between:
     # 1. digit or var or placeholder or ) followed by ( or var or placeholder
     expr = re.sub(
-        r"(\d|[abcxyzuvwABCRrsSeDJUVWQ]|__FN\d+__|\))\s*(?=[abcxyzuvwABCRrsSeDJUVWQ\(]|__FN)",
+        r"(\d|[abcxyzuvwABCRrsSeDJKUVWQ]|__FN\d+__|\))\s*(?=[abcxyzuvwABCRrsSeDJKUVWQ\(]|__FN)",
         r"\1*",
         expr,
     )
     # 2. ) followed by digit or var
-    expr = re.sub(r"\)\s*(?=\d|[abcxyzuvwABCRrsSeDJUVWQ])", r")*", expr)
+    expr = re.sub(r"\)\s*(?=\d|[abcxyzuvwABCRrsSeDJKUVWQ])", r")*", expr)
 
     # Restore function names, ensuring fn*( becomes fn(
     for ph, fn in placeholders.items():
@@ -615,7 +660,10 @@ class CenterRegistry:
                 return s2A * (s2B**2 - s2C**2) * ((s2B**2 + s2C**2 - s2A**2) ** 2)
             def _f134(xA: float, xB: float, xC: float) -> float:
                 return (1.0 / math.cos(xA)) * _u134(xA, xB, xC) * (_u134(xC, xA, xB) - _u134(xB, xA, xC))
-            self._store(134, (a * _f134(A, B, C), b * _f134(B, C, A), c * _f134(C, A, B)))
+            if not self._store(134, (a * _f134(A, B, C), b * _f134(B, C, A), c * _f134(C, A, B))):
+                pe = self.ctx.perturbed_eval_envs[0]
+                Ap, Bp, Cp = pe["A"], pe["B"], pe["C"]
+                self._store(134, (a * _f134(Ap, Bp, Cp), b * _f134(Bp, Cp, Ap), c * _f134(Cp, Ap, Bp)))
         except Exception:
             pass
         # X(180) 2nd Ajima-Malfatti Point
@@ -843,6 +891,168 @@ class CenterRegistry:
                     (c**2) * (qa + qb - qc),
                 )
 
+        # 6. Orion transform of X(k)
+        m_ori = re.match(r"^ORION\s+TRANSFORM\s+OF\s+X\((\d+)\)$", title_s, re.IGNORECASE)
+        if m_ori:
+            k = int(m_ori.group(1))
+            if k in self.bary_cache:
+                u, v, w = self.bary_cache[k]
+                tx, ty, tz = u / a, v / b, w / c
+                cosA = math.cos(self.ctx.A_rad)
+                cosB = math.cos(self.ctx.B_rad)
+                cosC = math.cos(self.ctx.C_rad)
+                fa = tx * (-(ty**2) * (tz**2) + (tx**2) * (ty**2 + tz**2 + 2.0 * ty * tz * cosA))
+                fb = ty * (-(tz**2) * (tx**2) + (ty**2) * (tz**2 + tx**2 + 2.0 * tz * tx * cosB))
+                fc = tz * (-(tx**2) * (ty**2) + (tz**2) * (tx**2 + ty**2 + 2.0 * tx * ty * cosC))
+                return (a * fa, b * fb, c * fc)
+
+        # 7. Gibert-Simson transform of X(k)
+        m_gs = re.match(r"^GIBERT-SIMSON\s+TRANSFORM\s+OF\s+X\((\d+)\)$", title_s, re.IGNORECASE)
+        if m_gs:
+            k = int(m_gs.group(1))
+            if k in self.bary_cache:
+                u, v, w = self.bary_cache[k]
+                SA_v = 0.5 * (b**2 + c**2 - a**2)
+                SB_v = 0.5 * (c**2 + a**2 - b**2)
+                SC_v = 0.5 * (a**2 + b**2 - c**2)
+                return (
+                    ((b**2) * SB_v * w - (c**2) * SC_v * v) * (u**2) / (a**2),
+                    ((c**2) * SC_v * u - (a**2) * SA_v * w) * (v**2) / (b**2),
+                    ((a**2) * SA_v * v - (b**2) * SB_v * u) * (w**2) / (c**2),
+                )
+
+        # 8. Rigby-Simson RS(X(i), X(j)) and Simson-Rigby SR(X(i), X(j))
+        m_rs = re.match(r"^(RS|SR)\(\s*X\((\d+)\)\s*,\s*X\((\d+)\)\s*\)$", title_s, re.IGNORECASE)
+        if m_rs:
+            kind_rs = m_rs.group(1).upper()
+            i_k, j_k = int(m_rs.group(2)), int(m_rs.group(3))
+            if i_k in self.bary_cache and j_k in self.bary_cache:
+                ui, vi, wi = self.bary_cache[i_k]
+                uj, vj, wj = self.bary_cache[j_k]
+                p_t, q_t, r_t = ui / a, vi / b, wi / c
+                u_t, v_t, w_t = uj / a, vj / b, wj / c
+                if kind_rs == "SR":
+                    return (
+                        a * (r_t * v_t - q_t * w_t) / (q_t * v_t - r_t * w_t),
+                        b * (p_t * w_t - r_t * u_t) / (r_t * w_t - p_t * u_t),
+                        c * (q_t * u_t - p_t * v_t) / (p_t * u_t - q_t * v_t),
+                    )
+                cosA = math.cos(self.ctx.A_rad)
+                cosB = math.cos(self.ctx.B_rad)
+                cosC = math.cos(self.ctx.C_rad)
+                def _rs_comp(
+                    xa: float, cA: float, cB: float, cC: float,
+                    xp: float, xq: float, xr: float,
+                    xu: float, xv: float, xw: float,
+                ) -> float:
+                    t1 = (xa**2) * (xr**2) * (xv**2) * (xq * cA - xp * cB) * (xw * cA - xu * cC)
+                    t2 = (xa**2) * (xq**2) * (xw**2) * (xr * cA - xp * cC) * (xv * cA - xu * cB)
+                    return (1.0 / t1) - (1.0 / t2)
+                try:
+                    return (
+                        a * _rs_comp(a, cosA, cosB, cosC, p_t, q_t, r_t, u_t, v_t, w_t),
+                        b * _rs_comp(b, cosB, cosC, cosA, q_t, r_t, p_t, v_t, w_t, u_t),
+                        c * _rs_comp(c, cosC, cosA, cosB, r_t, p_t, q_t, w_t, u_t, v_t),
+                    )
+                except ZeroDivisionError:
+                    pass
+
+        # 9. Simson-Moses SM(X(i), X(j))
+        m_sm = re.match(r"^SM\(\s*X\((\d+)\)\s*,\s*X\((\d+)\)\s*\)$", title_s, re.IGNORECASE)
+        if m_sm:
+            i_k, j_k = int(m_sm.group(1)), int(m_sm.group(2))
+            if i_k in self.bary_cache and j_k in self.bary_cache:
+                p_b, q_b, r_b = self.bary_cache[i_k]
+                u_b, v_b, w_b = self.bary_cache[j_k]
+                try:
+                    return (
+                        (r_b * v_b - q_b * w_b) / (q_b * v_b - r_b * w_b),
+                        (p_b * w_b - r_b * u_b) / (r_b * w_b - p_b * u_b),
+                        (q_b * u_b - p_b * v_b) / (p_b * u_b - q_b * v_b),
+                    )
+                except ZeroDivisionError:
+                    pass
+
+        # 10. Tangential / Medial / Anticomplementary Isogonal Conjugate of X(k)
+        m_ti = re.match(
+            r"^(TANGENTIAL|MEDIAL|ANTICOMPLEMENTARY)[\s\-]+ISOGONAL\s+CONJUGATE\s+OF\s+X\((\d+)\)$",
+            title_s,
+            re.IGNORECASE,
+        )
+        if m_ti:
+            kind_ti = m_ti.group(1).upper()
+            k = int(m_ti.group(2))
+            if k in self.bary_cache:
+                u, v, w = self.bary_cache[k]
+                tx, ty, tz = u / a, v / b, w / c
+                try:
+                    if kind_ti == "TANGENTIAL":
+                        fa = a * (-(a**3) / (c * ty + b * tz) + (b**3) / (a * tz + c * tx) + (c**3) / (b * tx + a * ty))
+                        fb = b * (-(b**3) / (a * tz + c * tx) + (c**3) / (b * tx + a * ty) + (a**3) / (c * ty + b * tz))
+                        fc = c * (-(c**3) / (b * tx + a * ty) + (a**3) / (c * ty + b * tz) + (b**3) / (a * tz + c * tx))
+                        return (a * fa, b * fb, c * fc)
+                    if kind_ti == "MEDIAL":
+                        fa = b * c * (a * tx - b * ty - c * tz) * ((b**2) * (a * tx + b * ty - c * tz) + (c**2) * (a * tx - b * ty + c * tz))
+                        fb = c * a * (b * ty - c * tz - a * tx) * ((c**2) * (b * ty + c * tz - a * tx) + (a**2) * (b * ty - c * tz + a * tx))
+                        fc = a * b * (c * tz - a * tx - b * ty) * ((a**2) * (c * tz + a * tx - b * ty) + (b**2) * (c * tz - a * tx + b * ty))
+                        return (a * fa, b * fb, c * fc)
+                    if kind_ti == "ANTICOMPLEMENTARY":
+                        fa = b * c * (-(a**2) / (b * ty + c * tz) + (b**2) / (c * tz + a * tx) + (c**2) / (a * tx + b * ty))
+                        fb = c * a * (-(b**2) / (c * tz + a * tx) + (c**2) / (a * tx + b * ty) + (a**2) / (b * ty + c * tz))
+                        fc = a * b * (-(c**2) / (a * tx + b * ty) + (a**2) / (b * ty + c * tz) + (b**2) / (c * tz + a * tx))
+                        return (a * fa, b * fb, c * fc)
+                except ZeroDivisionError:
+                    pass
+
+        # 11. Dual Center DC(X(k)) and CD(X(k))
+        m_dc = re.match(r"^(DC|CD)\(\s*X\((\d+)\)\s*\)$", title_s, re.IGNORECASE)
+        if m_dc:
+            kind_dc = m_dc.group(1).upper()
+            k = int(m_dc.group(2))
+            if k in self.bary_cache:
+                u, v, w = self.bary_cache[k]
+                tx, ty, tz = u / a, v / b, w / c
+                try:
+                    if kind_dc == "DC":
+                        return (
+                            a * ty * tz / (b * ty + c * tz),
+                            b * tz * tx / (c * tz + a * tx),
+                            c * tx * ty / (a * tx + b * ty),
+                        )
+                    return (
+                        a * b * c / (-a / tx + b / ty + c / tz),
+                        a * b * c / (a / tx - b / ty + c / tz),
+                        a * b * c / (a / tx + b / ty - c / tz),
+                    )
+                except ZeroDivisionError:
+                    pass
+
+        # 12. X(i)-isoconjugate of X(j) in title
+        m_iso = re.match(r"^X\((\d+)\)-ISOCONJUGATE\s+OF\s+X\((\d+)\)$", title_s, re.IGNORECASE)
+        if m_iso:
+            i_k, j_k = int(m_iso.group(1)), int(m_iso.group(2))
+            if i_k in self.bary_cache and j_k in self.bary_cache:
+                ui, vi, wi = self.bary_cache[i_k]
+                uj, vj, wj = self.bary_cache[j_k]
+                if abs(ui * vi * wi * uj * vj * wj) > 1e-18:
+                    return (
+                        (a**3) / (ui * uj),
+                        (b**3) / (vi * vj),
+                        (c**3) / (wi * wj),
+                    )
+
+        # 13. Eigentransform of X(k)
+        m_et = re.match(r"^EIGENTRANSFORM\s+OF\s+X\((\d+)\)$", title_s, re.IGNORECASE)
+        if m_et:
+            k = int(m_et.group(1))
+            if k in self.bary_cache:
+                u, v, w = self.bary_cache[k]
+                tx, ty, tz = u / a, v / b, w / c
+                fa = ty * tz * ((tx**2) * (ty**2) + (tx**2) * (tz**2) - (ty**2) * (tz**2))
+                fb = tz * tx * ((ty**2) * (tz**2) + (ty**2) * (tx**2) - (tz**2) * (tx**2))
+                fc = tx * ty * ((tz**2) * (tx**2) + (tz**2) * (ty**2) - (tx**2) * (ty**2))
+                return (a * fa, b * fb, c * fc)
+
         for rel in cdata.get("relations") or []:
             rel_s = re.sub(r"\bX_(\d+)", r"X(\1)", rel.strip())
             # isogonal conjugate of X(k)
@@ -957,6 +1167,24 @@ class CenterRegistry:
                             w * (u / p + v / q - w / r_v),
                         )
 
+            # X(i)-isoconjugate of X(j)
+            m = re.match(
+                r"^X\(\d+\)\s*=\s*X\((\d+)\)-isoconjugate\s+of\s+X\((\d+)\)\s*$",
+                rel_s,
+                re.IGNORECASE,
+            )
+            if m:
+                i_k, j_k = int(m.group(1)), int(m.group(2))
+                if i_k in self.bary_cache and j_k in self.bary_cache:
+                    ui, vi, wi = self.bary_cache[i_k]
+                    uj, vj, wj = self.bary_cache[j_k]
+                    if abs(ui * vi * wi * uj * vj * wj) > 1e-18:
+                        return (
+                            (a**3) / (ui * uj),
+                            (b**3) / (vi * vj),
+                            (c**3) / (wi * wj),
+                        )
+
             # crosspoint of X(i) and X(j)
             m = re.match(
                 r"^X\(\d+\)\s*=\s*(?:the\s+)?crosspoint\s+of\s+X\((\d+)\)\s+and\s+X\((\d+)\)\s*$",
@@ -1020,7 +1248,7 @@ class CenterRegistry:
 
         return None
 
-    def _resolve_all(self) -> None:
+    def _resolve_all(self, _is_perturbed: bool = False) -> None:
         """Iteratively resolve all centers in the registry using coordinates first, then incidences and relations."""
         sorted_nums = sorted(self.centers_by_num.keys())
         for _pass in range(4):
@@ -1038,6 +1266,37 @@ class CenterRegistry:
                     progressed = True
             if not progressed:
                 break
+
+        # If any centers hit a 0/0 removable singularity on a special/right triangle (a^2 + b^2 = c^2),
+        # evaluate their continuous limit on a slightly perturbed TriangleContext.
+        if not _is_perturbed and len(self.bary_cache) < len(sorted_nums):
+            missing = [n for n in sorted_nums if n not in self.bary_cache]
+            needed: set[int] = set(missing)
+            for n in missing:
+                c_txt = str(self.centers_by_num[n])
+                for m_dep in re.finditer(r"\bX(?:\(|_)(\d+)", c_txt):
+                    dep_k = int(m_dep.group(1))
+                    if dep_k in self.centers_by_num:
+                        needed.add(dep_k)
+            for dep_k in list(needed):
+                c_txt = str(self.centers_by_num[dep_k])
+                for m_dep in re.finditer(r"\bX(?:\(|_)(\d+)", c_txt):
+                    dep2 = int(m_dep.group(1))
+                    if dep2 in self.centers_by_num:
+                        needed.add(dep2)
+            p_ctx = TriangleContext(
+                self.ctx.raw_a, self.ctx.raw_b, self.ctx.raw_c * (1.0 - 1e-5)
+            )
+            p_reg = CenterRegistry.__new__(CenterRegistry)
+            p_reg.ctx = p_ctx
+            p_reg.centers_by_num = {k: self.centers_by_num[k] for k in sorted(needed)}
+            p_reg.bary_cache = {}
+            p_reg.xy_cache = {}
+            p_reg._seed_classical_centers()
+            p_reg._resolve_all(_is_perturbed=True)
+            for num in missing:
+                if num in p_reg.bary_cache:
+                    self._store(num, p_reg.bary_cache[num])
 
         # Final fallback for centers with open/implicit definitions (e.g. X(368) "reasonable trilinears are sought")
         for num in sorted_nums:
@@ -1405,12 +1664,11 @@ def build_center_model(
     def add_incircle() -> spg.Point | None:
         X1 = get_or_add_center_pt(1, is_target=(num == 1), incident=False)
         if X1 is not None and model.get_element_by_ID("incircle") is None:
-            tc_existing = model.get_element_by_ID("T_c")
             r_in = ctx.r * ctx.scale
             _add_circle(
                 model,
                 X1,
-                tc_existing if isinstance(tc_existing, spg.Point) else r_in,
+                r_in,
                 ID="incircle",
                 classes=["incircle"],
             )
@@ -1419,12 +1677,11 @@ def build_center_model(
     def add_nine_point_circle() -> spg.Point | None:
         X5 = get_or_add_center_pt(5, is_target=(num == 5), incident=False)
         if X5 is not None and model.get_element_by_ID("nine_point_circle") is None:
-            mc_existing = model.get_element_by_ID("M_c")
             r_np = 0.5 * ctx.R * ctx.scale
             _add_circle(
                 model,
                 X5,
-                mc_existing if isinstance(mc_existing, spg.Point) else r_np,
+                r_np,
                 ID="nine_point_circle",
                 classes=["nine_point_circle"],
             )

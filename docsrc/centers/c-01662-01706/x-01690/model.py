@@ -9,10 +9,12 @@ from geometor.model import Model
 
 from geometor.etc.ops import (
     central_line,
+    centroid_of,
     circumcenter_of,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    orthocenter_of,
     promote_point_to_top,
     reflection_in_point,
     symmedian_point_of,
@@ -24,11 +26,17 @@ def construct_x_01690(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1690 = INVERSE-IN-BROCARD-CIRCLE OF X_1688 on reference triangle ABC."""
-    X_1689 = eval_trilinear_point(model, A, B, C, 'cos(A + omega /2 + pi /4)', ID="X_1689", classes=["center"])
+    X_1689 = eval_trilinear_point(model, A, B, C, 'cos(A +  omega  /2 +  pi  /4)', ID="X_1689", classes=["center"])
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center"])
     X_1690 = reflection_in_point(model, X_1689, X_6, ID="X_1690", classes=["selected", "target"], guide=False)
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
     central_line(model, X_3, X_6, 3, 6, incident=True)
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
+    X_2010 = eval_trilinear_point(model, A, B, C, '(cos(B - C) - sin(A +  omega  ))', ID="X_2010", classes=["center", "incident"])
+    central_line(model, X_2, X_2010, 2, 2010, incident=True)
+    X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
+    X_2009 = eval_trilinear_point(model, A, B, C, '(cos(B - C) + sin(A +  omega  ))', ID="X_2009", classes=["center", "incident"])
+    central_line(model, X_4, X_2009, 4, 2009, incident=True)
     return promote_point_to_top(model, X_1690)
 
 

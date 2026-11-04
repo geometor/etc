@@ -24,14 +24,14 @@ def construct_x_00619(
 ) -> spg.Point:
     """Construct X_619 = COMPLEMENT OF X_14 on reference triangle ABC."""
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
-    X_14 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /3)', ID="X_14", classes=["center"])
-    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /3)', ID="X_13", classes=["center"])
+    X_14 = eval_trilinear_point(model, A, B, C, 'csc(A -  pi  /3)', ID="X_14", classes=["center"])
+    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A +  pi  /3)', ID="X_13", classes=["center"])
     X_99 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(2) - c**(2))', ID="X_99", classes=["center"])
     central_line(model, X_2, X_14, 2, 14)
     central_line(model, X_13, X_99, 13, 99)
     X_619 = intersect_lines(model, X_2, X_14, X_13, X_99, ID="X_619", classes=["selected", "target"])
-    X_16 = eval_trilinear_point(model, A, B, C, 'sin(A- pi /3)', ID="X_16", classes=["center", "incident"])
-    X_299 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*sin(A - pi /3)', ID="X_299", classes=["center", "incident"])
+    X_16 = eval_trilinear_point(model, A, B, C, 'sin(A-  pi  /3)', ID="X_16", classes=["center", "incident"])
+    X_299 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*sin(A -  pi  /3)', ID="X_299", classes=["center", "incident"])
     central_line(model, X_16, X_299, 16, 299, incident=True)
     return promote_point_to_top(model, X_619)
 

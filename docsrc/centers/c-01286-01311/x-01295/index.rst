@@ -51,8 +51,8 @@ X_1295
    * :ref:`X_1295 <X_1295>` = Λ(:ref:`X_3 <X_3>`, :ref:`X_960 <X_960>`)
    * :ref:`X_1295 <X_1295>` = Λ(:ref:`X_104 <X_104>`, :ref:`X_1319 <X_1319>`)
    * :ref:`X_1295 <X_1295>` = :ref:`X_135 <X_135>`-of-hexyl-triangle
-   * :ref:`X_1295 <X_1295>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_6 <X_6>`\ X_2431
-   * :ref:`X_1295 <X_1295>` = Ψ(:ref:`X_6 <X_6>`, X_2431)
+   * :ref:`X_1295 <X_1295>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_6 <X_6>`\ \ :ref:`X_2431 <X_2431>`
+   * :ref:`X_1295 <X_1295>` = Ψ(:ref:`X_6 <X_6>`, :ref:`X_2431 <X_2431>`)
    * :ref:`X_1295 <X_1295>` = Cundy-Parry Phi transform of X_14257
    * :ref:`X_1295 <X_1295>` = Cundy-Parry Psi transform of X_39167
    * :ref:`X_1295 <X_1295>` = Thomson-isogonal conjugate of :ref:`X_521 <X_521>`

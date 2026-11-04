@@ -23,14 +23,14 @@ def construct_x_00559(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_559 = (X_1,X_15)-ANSWER TO QUESTION A on reference triangle ABC."""
-    X_559 = eval_trilinear_point(model, A, B, C, '(sec(A/2))*sin(A/2 + pi /3)', ID="X_559", classes=["selected", "target"])
+    X_559 = eval_trilinear_point(model, A, B, C, '(sec(A/2))*sin(A/2 +  pi  /3)', ID="X_559", classes=["selected", "target"])
     X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
     central_line(model, X_1, X_3, 1, 3, incident=True)
-    X_14 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /3)', ID="X_14", classes=["center", "incident"])
+    X_14 = eval_trilinear_point(model, A, B, C, 'csc(A -  pi  /3)', ID="X_14", classes=["center", "incident"])
     X_226 = eval_trilinear_point(model, A, B, C, '(csc(A))*(cos(B) + cos(C))', ID="X_226", classes=["center", "incident"])
     central_line(model, X_14, X_226, 14, 226, incident=True)
-    X_299 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*sin(A - pi /3)', ID="X_299", classes=["center", "incident"])
+    X_299 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*sin(A -  pi  /3)', ID="X_299", classes=["center", "incident"])
     X_319 = eval_trilinear_point(model, A, B, C, '(1 + 2*cos(A))/a**(2)', ID="X_319", classes=["center", "incident"])
     central_line(model, X_299, X_319, 299, 319, incident=True)
     return promote_point_to_top(model, X_559)

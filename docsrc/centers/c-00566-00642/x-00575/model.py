@@ -23,7 +23,7 @@ def construct_x_00575(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_575 = ORTHOGONAL OF X_187 on reference triangle ABC."""
-    X_575 = eval_trilinear_point(model, A, B, C, '3*sin(A) + cos(A)*cot(omega)', ID="X_575", classes=["selected", "target"])
+    X_575 = eval_trilinear_point(model, A, B, C, '3*sin(A) + cos(A)*cot(omega) ', ID="X_575", classes=["selected", "target"])
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
     central_line(model, X_3, X_6, 3, 6, incident=True)

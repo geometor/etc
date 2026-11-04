@@ -54,8 +54,8 @@ X_49
    * :ref:`X_49 <X_49>` = isogonal conjugate of :ref:`X_93 <X_93>`
    * :ref:`X_49 <X_49>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_20572
    * :ref:`X_49 <X_49>` = :term:`anticomplement <anticomplement>` of X_34826
-   * :ref:`X_49 <X_49>` = :ref:`X_4 <X_4>`-:term:`isoconjugate <isoconjugate>` of X_2962
-   * :ref:`X_49 <X_49>` = :ref:`X_92 <X_92>`-isoconjugate of X_2963
+   * :ref:`X_49 <X_49>` = :ref:`X_4 <X_4>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_2962 <X_2962>`
+   * :ref:`X_49 <X_49>` = :ref:`X_92 <X_92>`-isoconjugate of :ref:`X_2963 <X_2963>`
    * :ref:`X_49 <X_49>` = :term:`eigencenter <eigencenter>` of :term:`cevian triangle <cevian-triangle>` of :ref:`X_94 <X_94>`
    * :ref:`X_49 <X_49>` = eigencenter of :term:`anticevian triangle <anticevian-triangle>` of :ref:`X_50 <X_50>`
    * :ref:`X_49 <X_49>` = :ref:`X_94 <X_94>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_50 <X_50>`

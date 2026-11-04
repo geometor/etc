@@ -28,7 +28,7 @@ def construct_x_01506(
     X_1078 = eval_trilinear_point(model, A, B, C, '(b*c*(b**(2)*c**(2) + c**(2)*a**(2) + a**(2)*b**(2) - a**(4)))', ID="X_1078", classes=["center"])
     X_1506 = complement(model, A, B, C, X_1078, ID="X_1506", classes=["selected", "target"])
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
-    X_17 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /6)', ID="X_17", classes=["center", "incident"])
+    X_17 = eval_trilinear_point(model, A, B, C, 'csc(A +  pi  /6)', ID="X_17", classes=["center", "incident"])
     central_line(model, X_6, X_17, 6, 17, incident=True)
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
     X_32 = eval_trilinear_point(model, A, B, C, 'a**(3)', ID="X_32", classes=["center", "incident"])

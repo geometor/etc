@@ -26,10 +26,10 @@ def construct_x_01239(
     X_1180 = eval_trilinear_point(model, A, B, C, 'a*(b**(4) + c**(4) + b**(2)*c**(2) + c**(2)*a**(2) + a**(2)*b**(2))', ID="X_1180", classes=["center"])
     X_1239 = isotomic_conjugate(model, A, B, C, X_1180, ID="X_1239", classes=["selected", "target"])
     X_76 = eval_trilinear_point(model, A, B, C, '1/a**(3)', ID="X_76", classes=["center", "incident"])
-    X_251 = eval_trilinear_point(model, A, B, C, 'a**(2)*csc(A + omega )', ID="X_251", classes=["center", "incident"])
+    X_251 = eval_trilinear_point(model, A, B, C, 'a**(2)*csc(A +  omega  )', ID="X_251", classes=["center", "incident"])
     central_line(model, X_76, X_251, 76, 251, incident=True)
     X_25 = eval_trilinear_point(model, A, B, C, 'sin(A)*tan(A)', ID="X_25", classes=["center", "incident"])
-    X_1235 = eval_barycentric_point(model, A, B, C, '(csc(A))*(csc(2*A))*sin(A + omega )', ID="X_1235", classes=["center", "incident"])
+    X_1235 = eval_barycentric_point(model, A, B, C, '(csc(A))*(csc(2*A))*sin(A +  omega  )', ID="X_1235", classes=["center", "incident"])
     central_line(model, X_25, X_1235, 25, 1235, incident=True)
     return promote_point_to_top(model, X_1239)
 

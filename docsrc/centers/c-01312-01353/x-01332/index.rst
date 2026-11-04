@@ -23,8 +23,8 @@ X_1332
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{100, 110} <{ 100, 110 }>`, :g:`{69, 219} <{ 69, 219 }>`
-   * **Related Centers:** :g:`X_100 <X_100>` (:ref:`ANTICOMPLEMENT OF FEUERBACH POINT <X_100>`), :g:`X_110 <X_110>` (:ref:`FOCUS OF KIEPERT PARABOLA <X_110>`), :g:`X_69 <X_69>` (:ref:`SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE <X_69>`), :g:`X_219 <X_219>` (:ref:`-CEVA CONJUGATE OF X(55) <X_219>`)
+   * **Central Lines:** :g:`{2991, 6} <{ 2991, 6 }>`
+   * **Related Centers:** :g:`X_2991 <X_2991>` (:ref:`DC(X(105)) <X_2991>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`)
 
 .. signature:: center
 
@@ -49,10 +49,10 @@ X_1332
 .. collapse:: Functional Relations
    :badge: 9 relations
 
-   * :ref:`X_1332 <X_1332>` = reflection of X_2991 in :ref:`X_6 <X_6>`
+   * :ref:`X_1332 <X_1332>` = reflection of :ref:`X_2991 <X_2991>` in :ref:`X_6 <X_6>`
    * :ref:`X_1332 <X_1332>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_6591
    * :ref:`X_1332 <X_1332>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_17924
-   * :ref:`X_1332 <X_1332>` = MacBeath circumconic antipode of X_2991
+   * :ref:`X_1332 <X_1332>` = MacBeath circumconic antipode of :ref:`X_2991 <X_2991>`
    * :ref:`X_1332 <X_1332>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_3 <X_3>`\ \ :ref:`X_63 <X_63>`
    * :ref:`X_1332 <X_1332>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_667 <X_667>`
    * :ref:`X_1332 <X_1332>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`645 <X_645>`, :ref:`190 <X_190>`), (:ref:`668 <X_668>`, :ref:`100 <X_100>`), (:ref:`1016 <X_1016>`, :ref:`345 <X_345>`)

@@ -26,8 +26,8 @@ def construct_x_00358(
     X_358 = isogonal_conjugate(model, A, B, C, X_357, ID="X_358", classes=["selected", "target"])
     X_356 = eval_trilinear_point(model, A, B, C, 'cos(A/3) + 2*cos(B/3)*cos(C/3)', ID="X_356", classes=["center", "incident"])
     central_line(model, X_356, X_357, 356, 357, incident=True)
-    X_16 = eval_trilinear_point(model, A, B, C, 'sin(A- pi /3)', ID="X_16", classes=["center", "incident"])
-    X_1135 = eval_trilinear_point(model, A, B, C, 'cos(A/3 - pi /3)', ID="X_1135", classes=["center", "incident"])
+    X_16 = eval_trilinear_point(model, A, B, C, 'sin(A-  pi  /3)', ID="X_16", classes=["center", "incident"])
+    X_1135 = eval_trilinear_point(model, A, B, C, 'cos(A/3 + 2*pi  /3)', ID="X_1135", classes=["center", "incident"])
     central_line(model, X_16, X_1135, 16, 1135, incident=True)
     return promote_point_to_top(model, X_358)
 

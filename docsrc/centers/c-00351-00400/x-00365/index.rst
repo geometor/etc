@@ -24,8 +24,8 @@ X_365
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{1, 364} <{ 1, 364 }>`
-   * **Related Centers:** :g:`X_366 <X_366>` (:ref:`ISOGONAL CONJUGATE OF X(365) <X_366>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_364 <X_364>` (:ref:`WABASH CENTER <X_364>`)
+   * **Central Lines:** :g:`{1, 364} <{ 1, 364 }>`, :g:`{43, 2068} <{ 43, 2068 }>`
+   * **Related Centers:** :g:`X_366 <X_366>` (:ref:`ISOGONAL CONJUGATE OF X(365) <X_366>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_364 <X_364>` (:ref:`WABASH CENTER <X_364>`), :g:`X_43 <X_43>` (:ref:`-CEVA CONJUGATE OF X(1) <X_43>`), :g:`X_2068 <X_2068>` (:ref:`POINT CURSA I <X_2068>`)
 
 .. signature:: center
 
@@ -37,7 +37,7 @@ X_365
    :badge: 6 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, :ref:`364 <X_364>`}, {:ref:`6 <X_6>`, 2118}, {:ref:`43 <X_43>`, 2068}, {:ref:`292 <X_292>`, 2146}, {2110, 2119}, {2144, 2147}
+   {:ref:`1 <X_1>`, :ref:`364 <X_364>`}, {:ref:`6 <X_6>`, :ref:`2118 <X_2118>`}, {:ref:`43 <X_43>`, :ref:`2068 <X_2068>`}, {:ref:`292 <X_292>`, :ref:`2146 <X_2146>`}, {:ref:`2110 <X_2110>`, :ref:`2119 <X_2119>`}, {:ref:`2144 <X_2144>`, :ref:`2147 <X_2147>`}
 
 .. collapse:: Functional Relations
    :badge: 5 relations

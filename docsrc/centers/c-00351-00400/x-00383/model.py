@@ -23,15 +23,15 @@ def construct_x_00383(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_383 = EULER LINE INTERCEPT OF LINE X_14X_98 on reference triangle ABC."""
-    X_383 = eval_trilinear_point(model, A, B, C, '(csc(B - C)*(sin(2*B)*cos(C - omega )*sin(C + pi /3) - sin(2*C)*cos(B - omega )*sin(B + pi /3)))', ID="X_383", classes=["selected", "target"])
+    X_383 = eval_trilinear_point(model, A, B, C, '(csc(B - C)*(sin(2*B)*cos(C -  omega  )*sin(C +  pi  /3) - sin(2*C)*cos(B -  omega  )*sin(B +  pi  /3)))', ID="X_383", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
-    X_14 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /3)', ID="X_14", classes=["center", "incident"])
-    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A + omega )', ID="X_98", classes=["center", "incident"])
+    X_14 = eval_trilinear_point(model, A, B, C, 'csc(A -  pi  /3)', ID="X_14", classes=["center", "incident"])
+    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A +  omega  )', ID="X_98", classes=["center", "incident"])
     central_line(model, X_14, X_98, 14, 98, incident=True)
-    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /3)', ID="X_13", classes=["center", "incident"])
-    X_262 = eval_trilinear_point(model, A, B, C, 'sec(A - omega )', ID="X_262", classes=["center", "incident"])
+    X_13 = eval_trilinear_point(model, A, B, C, 'csc(A +  pi  /3)', ID="X_13", classes=["center", "incident"])
+    X_262 = eval_trilinear_point(model, A, B, C, 'sec(A -  omega  )', ID="X_262", classes=["center", "incident"])
     central_line(model, X_13, X_262, 13, 262, incident=True)
     return promote_point_to_top(model, X_383)
 

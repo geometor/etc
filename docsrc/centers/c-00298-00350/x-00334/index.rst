@@ -41,10 +41,10 @@ X_334
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X_334 <X_334>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2210
+   * :ref:`X_334 <X_334>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2210 <X_2210>`
    * :ref:`X_334 <X_334>` = isotomic conjugate of :ref:`X_238 <X_238>`
    * :ref:`X_334 <X_334>` = :ref:`X_75 <X_75>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X_335 <X_335>`
-   * :ref:`X_334 <X_334>` = polar conjugate of X_2201
+   * :ref:`X_334 <X_334>` = polar conjugate of :ref:`X_2201 <X_2201>`
    * :ref:`X_334 <X_334>` = :term:`complement <complement>` of X_30667
 
 .. toctree::

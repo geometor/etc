@@ -80,7 +80,7 @@ X_13
    * :ref:`X_13 <X_13>` = inner-Napoleon-to-outer-Napoleon :term:`similarity image <similarity-image>` of :ref:`X_15 <X_15>`
    * :ref:`X_13 <X_13>` = outer-Napoleon-isogonal conjugate of :ref:`X_3 <X_3>`
    * :ref:`X_13 <X_13>` = outer-Napoleon-to-inner-Napoleon similarity image of :ref:`X_14 <X_14>`
-   * :ref:`X_13 <X_13>` = orthocenter of :ref:`X_14 <X_14>`\ \ :ref:`X_98 <X_98>`\ X_2394
+   * :ref:`X_13 <X_13>` = orthocenter of :ref:`X_14 <X_14>`\ \ :ref:`X_98 <X_98>`\ \ :ref:`X_2394 <X_2394>`
    * :ref:`X_13 <X_13>` = :ref:`X_15 <X_15>`-of-pedal-triangle of :ref:`X_13 <X_13>`
    * :ref:`X_13 <X_13>` = {:ref:`X_265 <X_265>`,\ :ref:`X_1989 <X_1989>`}-harmonic Conjugate of :ref:`X_14 <X_14>`
    * :ref:`X_13 <X_13>` = homothetic center of (equilateral) antipedal triangle of :ref:`X_13 <X_13>` and triangle formed by circumcenters of :g:`BC <[ B C ]>`\ :ref:`X_13 <X_13>`, :g:`CA <[ C A ]>`\ :ref:`X_13 <X_13>`, :g:`AB <[ A B ]>`\ :ref:`X_13 <X_13>`
@@ -150,7 +150,7 @@ Notes
       * (X_30574; :ref:`13 <X_13>`, :ref:`14 <X_14>`, :ref:`80 <X_80>`,484, 3464, 5540, 5902, 34301, 37718)
       * (X_42731; :ref:`13 <X_13>`, :ref:`14 <X_14>`, :ref:`112 <X_112>`, :ref:`1141 <X_1141>`, :ref:`1157 <X_1157>`, 5667, 5890, 6761, 14644, 14651)
       * (X_42732; :ref:`13 <X_13>`, :ref:`14 <X_14>`, :ref:`112 <X_112>`, :ref:`1141 <X_1141>`, :ref:`1157 <X_1157>`, 5667, 5890, 6761, 14644, 14651)
-      * (X_42733; :ref:`4 <X_4>`, :ref:`13 <X_13>`, :ref:`14 <X_14>`, 2132, 2394, 6794, 22265, 34298)
+      * (X_42733; :ref:`4 <X_4>`, :ref:`13 <X_13>`, :ref:`14 <X_14>`, :ref:`2132 <X_2132>`, :ref:`2394 <X_2394>`, 6794, 22265, 34298)
       * (X_42734; :ref:`13 <X_13>`, :ref:`14 <X_14>`, :ref:`616 <X_616>`, :ref:`621 <X_621>`, 5675, 16260, 39133)
       * (X_42735; :ref:`13 <X_13>`, :ref:`14 <X_14>`, :ref:`617 <X_617>`, :ref:`621 <X_621>`, 5674, 16259, 39132)
       * (X_42736; :ref:`13 <X_13>`, :ref:`14 <X_14>`, :ref:`125 <X_125>`, :ref:`1637 <X_1637>`, 11657, 14847, 34310)

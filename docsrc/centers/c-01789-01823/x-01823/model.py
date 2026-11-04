@@ -9,12 +9,11 @@ from geometor.model import Model
 
 from geometor.etc.ops import (
     central_line,
-    ceva_conjugate,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
     incenter_of,
-    point_from_barycentrics,
+    intersect_lines,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -24,15 +23,13 @@ def construct_x_01823(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1823 = ISOGONAL CONJUGATE OF X_2589 on reference triangle ABC."""
-    X_1101 = eval_trilinear_point(model, A, B, C, '((csc(B - C))**(2))', ID="X_1101", classes=["center"])
-    X_1822 = point_from_barycentrics(model, A, B, C, -0.19858607, 0.24538924, 0.95319683, ID="X_1822", classes=["center"])
-    X_1823 = ceva_conjugate(model, A, B, C, X_1101, X_1822, ID="X_1823", classes=["selected", "target"])
-    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
-    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X_21", classes=["center", "incident"])
-    central_line(model, X_1, X_21, 1, 21, incident=True)
-    X_109 = eval_trilinear_point(model, A, B, C, 'a/(cos(B) - cos(C))', ID="X_109", classes=["center", "incident"])
-    X_1114 = eval_trilinear_point(model, A, B, C, '(R + d)*cos(A) - 2*R*cos(B)*cos(C)', ID="X_1114", classes=["center", "incident"])
-    central_line(model, X_109, X_1114, 109, 1114, incident=True)
+    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center"])
+    X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X_21", classes=["center"])
+    X_109 = eval_trilinear_point(model, A, B, C, 'a/(cos(B) - cos(C))', ID="X_109", classes=["center"])
+    X_1114 = eval_trilinear_point(model, A, B, C, '(R + d)*cos(A) - 2*R*cos(B)*cos(C)', ID="X_1114", classes=["center"])
+    central_line(model, X_1, X_21, 1, 21)
+    central_line(model, X_109, X_1114, 109, 1114)
+    X_1823 = intersect_lines(model, X_1, X_21, X_109, X_1114, ID="X_1823", classes=["selected", "target"])
     return promote_point_to_top(model, X_1823)
 
 

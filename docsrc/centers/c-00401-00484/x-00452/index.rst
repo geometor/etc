@@ -42,7 +42,7 @@ X_452
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X_452 <X_452>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2213
+   * :ref:`X_452 <X_452>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2213 <X_2213>`
    * :ref:`X_452 <X_452>` = :term:`anticomplement <anticomplement>` of :ref:`X_443 <X_443>`
    * :ref:`X_452 <X_452>` = :ref:`X_2 <X_2>`-Hirst inverse of :ref:`X_449 <X_449>`
 

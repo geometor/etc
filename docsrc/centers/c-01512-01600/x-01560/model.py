@@ -10,10 +10,10 @@ from geometor.model import Model
 from geometor.etc.ops import (
     central_line,
     centroid_of,
-    ceva_conjugate,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    intersect_lines,
     orthocenter_of,
     promote_point_to_top,
     symmedian_point_of,
@@ -25,14 +25,13 @@ def construct_x_01560(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1560 = ORTHOJOIN OF X_468 on reference triangle ABC."""
+    X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center"])
+    X_67 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(4) + c**(4) - a**(4) - b**(2)*c**(2))', ID="X_67", classes=["center"])
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
-    X_468 = eval_trilinear_point(model, A, B, C, '(sec(A))*(cot(B) + cot(C) - 2*cot(A))', ID="X_468", classes=["center"])
-    X_1560 = ceva_conjugate(model, A, B, C, X_2, X_468, ID="X_1560", classes=["selected", "target"])
-    X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
-    X_67 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(4) + c**(4) - a**(4) - b**(2)*c**(2))', ID="X_67", classes=["center", "incident"])
-    central_line(model, X_6, X_67, 6, 67, incident=True)
-    X_112 = eval_trilinear_point(model, A, B, C, 'a/(sin(2*B) - sin(2*C))', ID="X_112", classes=["center", "incident"])
-    central_line(model, X_2, X_112, 2, 112, incident=True)
+    X_112 = eval_trilinear_point(model, A, B, C, 'a/(sin(2*B) - sin(2*C))', ID="X_112", classes=["center"])
+    central_line(model, X_6, X_67, 6, 67)
+    central_line(model, X_2, X_112, 2, 112)
+    X_1560 = intersect_lines(model, X_6, X_67, X_2, X_112, ID="X_1560", classes=["selected", "target"])
     X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
     X_111 = eval_trilinear_point(model, A, B, C, 'a/(2*a**(2) - b**(2) - c**(2))', ID="X_111", classes=["center", "incident"])
     central_line(model, X_4, X_111, 4, 111, incident=True)

@@ -34,7 +34,7 @@ def construct_x_01303(
     X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
     X_129 = point_from_barycentrics(model, A, B, C, 0.22802261, -0.036048578, 0.80802596, ID="X_129", classes=["center", "incident"])
     central_line(model, X_4, X_129, 4, 129, incident=True)
-    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A + omega )', ID="X_98", classes=["center", "incident"])
+    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A +  omega  )', ID="X_98", classes=["center", "incident"])
     X_185 = eval_trilinear_point(model, A, B, C, '(cos(A))*(1 - cos(A)*cos(B - C))', ID="X_185", classes=["center", "incident"])
     central_line(model, X_98, X_185, 98, 185, incident=True)
     return promote_point_to_top(model, X_1303)

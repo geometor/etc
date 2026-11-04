@@ -25,7 +25,7 @@ def construct_x_01297(
 ) -> spg.Point:
     """Construct X_1297 = COLLINGS TRANSFORM OF X_127 on reference triangle ABC."""
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
-    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X_511", classes=["center"])
+    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A +  omega  )', ID="X_511", classes=["center"])
     X_1297 = cevapoint(model, A, B, C, X_3, X_511, ID="X_1297", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
     X_107 = eval_trilinear_point(model, A, B, C, '1/(cos(A)*(sin(2*B) - sin(2*C)))', ID="X_107", classes=["center", "incident"])

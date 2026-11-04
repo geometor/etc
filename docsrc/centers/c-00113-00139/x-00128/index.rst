@@ -52,7 +52,7 @@ X_128
    * :ref:`X_128 <X_128>` = :term:`anticomplement <anticomplement>` of X_34837
    * :ref:`X_128 <X_128>` = perspector of circumconic centered at :ref:`X_231 <X_231>`
    * :ref:`X_128 <X_128>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X_231 <X_231>`
-   * :ref:`X_128 <X_128>` = inverse-in-polar-circle of X_2383
+   * :ref:`X_128 <X_128>` = inverse-in-polar-circle of :ref:`X_2383 <X_2383>`
    * :ref:`X_128 <X_128>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_231 <X_231>`
    * :ref:`X_128 <X_128>` = :term:`orthojoin <orthojoin>` of :ref:`X_231 <X_231>`
    * :ref:`X_128 <X_128>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X_74 <X_74>`

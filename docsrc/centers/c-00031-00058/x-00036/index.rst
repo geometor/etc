@@ -51,7 +51,7 @@ X_36
    :badge: 34 relations
 
    * :ref:`X_36 <X_36>` = midpoint of :ref:`X_1 <X_1>` and :ref:`X_484 <X_484>`
-   * :ref:`X_36 <X_36>` = reflection of X_i in X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`1319 <X_1319>`), (:ref:`484 <X_484>`, :ref:`1155 <X_1155>`) (2077, :ref:`3 <X_3>`)
+   * :ref:`X_36 <X_36>` = reflection of X_i in X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`1319 <X_1319>`), (:ref:`484 <X_484>`, :ref:`1155 <X_1155>`) (:ref:`2077 <X_2077>`, :ref:`3 <X_3>`)
    * :ref:`X_36 <X_36>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_80 <X_80>`
    * :ref:`X_36 <X_36>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_20566
    * :ref:`X_36 <X_36>` = :term:`complement <complement>` of X_5080
@@ -66,7 +66,7 @@ X_36
    * :ref:`X_36 <X_36>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_37 <X_37>`\ \ :ref:`X_650 <X_650>`
    * :ref:`X_36 <X_36>` = :ref:`X_104 <X_104>`-:term:`aleph conjugate <aleph-conjugate>` of :ref:`X_36 <X_36>`
    * :ref:`X_36 <X_36>` = X_i-:term:`beth conjugate <beth-conjugate>` of X_j for these (i,j): (:ref:`21 <X_21>`, :ref:`36 <X_36>`), (:ref:`100 <X_100>`, :ref:`36 <X_36>`), (:ref:`643 <X_643>`, :ref:`519 <X_519>`)
-   * :ref:`X_36 <X_36>` = X_2070-of-intouch-triangle
+   * :ref:`X_36 <X_36>` = :ref:`X_2070 <X_2070>`-of-intouch-triangle
    * :ref:`X_36 <X_36>` = :ref:`X_186 <X_186>`-of-2nd circumperp-triangle
    * :ref:`X_36 <X_36>` = {:ref:`X_55 <X_55>`,\ :ref:`X_56 <X_56>`}-harmonic conjugate of :ref:`X_999 <X_999>`
    * :ref:`X_36 <X_36>` = reflection of :ref:`X_484 <X_484>` in the antiorthic axis

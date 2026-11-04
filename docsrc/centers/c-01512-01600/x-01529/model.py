@@ -28,7 +28,7 @@ def construct_x_01529(
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
     X_132 = point_from_barycentrics(model, A, B, C, 0.11002416, 0.049913231, 0.84006261, ID="X_132", classes=["center"])
-    X_1503 = eval_trilinear_point(model, A, B, C, 'sin(A)*tan(omega) - 2*cos(B)*cos(C)', ID="X_1503", classes=["center"])
+    X_1503 = eval_trilinear_point(model, A, B, C, 'sin(A)*tan(omega)  - 2*cos(B)*cos(C)', ID="X_1503", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
     central_line(model, X_132, X_1503, 132, 1503)
     X_1529 = intersect_lines(model, X_2, X_3, X_132, X_1503, ID="X_1529", classes=["selected", "target"])

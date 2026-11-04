@@ -47,8 +47,8 @@ Usage
 
 .. code-block:: bash
 
-   # Run the ETC pipeline for the first 2,000 centers (skipping raw HTML split if cached)
-   python3 -m geometor.etc --skip-ingest --limit 2000
+   # Run the ETC pipeline for the first 3,000 centers (skipping raw HTML split if cached)
+   python3 -m geometor.etc --skip-ingest --limit 3000
 
    # Build and serve the Book Codex documentation locally
    publish test

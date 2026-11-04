@@ -41,7 +41,7 @@ X_342
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X_342 <X_342>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2188
+   * :ref:`X_342 <X_342>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2188 <X_2188>`
    * :ref:`X_342 <X_342>` = isotomic conjugate of :ref:`X_271 <X_271>`
    * :ref:`X_342 <X_342>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`85 <X_85>`, :ref:`92 <X_92>`), (:ref:`264 <X_264>`, :ref:`273 <X_273>`)
    * :ref:`X_342 <X_342>` = :term:`cevapoint <cevapoint>` of :ref:`X_208 <X_208>` and :ref:`X_223 <X_223>`

@@ -23,15 +23,15 @@ def construct_x_00470(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_470 = X_15-CROSS CONJUGATE OF X_298 on reference triangle ABC."""
-    X_470 = eval_trilinear_point(model, A, B, C, 'sin(A + pi /3)*csc(2*A)', ID="X_470", classes=["selected", "target"])
+    X_470 = eval_trilinear_point(model, A, B, C, 'sin(A +  pi  /3)*csc(2*A)', ID="X_470", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
-    X_18 = eval_trilinear_point(model, A, B, C, 'csc(A - pi /6)', ID="X_18", classes=["center", "incident"])
+    X_18 = eval_trilinear_point(model, A, B, C, 'csc(A -  pi  /6)', ID="X_18", classes=["center", "incident"])
     X_275 = eval_trilinear_point(model, A, B, C, 'csc(2*A)*sec(B - C)', ID="X_275", classes=["center", "incident"])
     central_line(model, X_18, X_275, 18, 275, incident=True)
     X_264 = eval_trilinear_point(model, A, B, C, 'csc(A)*csc(2*A)', ID="X_264", classes=["center", "incident"])
-    X_301 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*csc(A - pi /3)', ID="X_301", classes=["center", "incident"])
+    X_301 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*csc(A -  pi  /3)', ID="X_301", classes=["center", "incident"])
     central_line(model, X_264, X_301, 264, 301, incident=True)
     return promote_point_to_top(model, X_470)
 

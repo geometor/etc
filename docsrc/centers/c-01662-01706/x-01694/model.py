@@ -24,15 +24,15 @@ def construct_x_01694(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1694 = EXSIMILICENTER(BROCARD CIRCLE,APOLLONIUS CIRCLE) on reference triangle ABC."""
-    X_1694 = eval_trilinear_point(model, A, B, C, '(e*(2*r*s*sin(A) + (r**(2) - s**(2))*cos(A)) + (r**(2) + s**(2))*cos(A - omega ))', ID="X_1694", classes=["selected", "target"])
+    X_1694 = eval_trilinear_point(model, A, B, C, '(e*(2*r*s*sin(A) + (r**(2) - s**(2))*cos(A)) + (r**(2) + s**(2))*cos(A -  omega  ))', ID="X_1694", classes=["selected", "target"])
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
     central_line(model, X_3, X_6, 3, 6, incident=True)
     X_10 = spieker_center_of(model, A, B, C, ID="X_10", classes=["center", "incident"])
-    X_1348 = eval_trilinear_point(model, A, B, C, 'e*cos(B - C) + cos(A - omega )', ID="X_1348", classes=["center", "incident"])
+    X_1348 = eval_trilinear_point(model, A, B, C, 'e*cos(B - C) + cos(A -  omega  )', ID="X_1348", classes=["center", "incident"])
     central_line(model, X_10, X_1348, 10, 1348, incident=True)
     X_181 = eval_trilinear_point(model, A, B, C, 'a*(b + c)**(2)/(b + c - a)', ID="X_181", classes=["center", "incident"])
-    X_1675 = eval_trilinear_point(model, A, B, C, 'e - cos(A - omega )', ID="X_1675", classes=["center", "incident"])
+    X_1675 = eval_trilinear_point(model, A, B, C, 'e - cos(A -  omega  )', ID="X_1675", classes=["center", "incident"])
     central_line(model, X_181, X_1675, 181, 1675, incident=True)
     return promote_point_to_top(model, X_1694)
 

@@ -24,8 +24,8 @@ def construct_x_01956(
     """Construct X_1956 = TRILINEAR POLE OF PU(21) on reference triangle ABC."""
     X_1955 = eval_trilinear_point(model, A, B, C, '(sin(2*B)*sin(2*C) - (sin(2*A))**(2))', ID="X_1955", classes=["center"])
     X_1956 = isogonal_conjugate(model, A, B, C, X_1955, ID="X_1956", classes=["selected", "target"])
-    X_293 = eval_trilinear_point(model, A, B, C, 'cos(A)*sec(A + omega )', ID="X_293", classes=["center", "incident"])
-    X_1755 = eval_trilinear_point(model, A, B, C, 'a*cos(A + omega )', ID="X_1755", classes=["center", "incident"])
+    X_293 = eval_trilinear_point(model, A, B, C, 'cos(A)*sec(A +  omega  )', ID="X_293", classes=["center", "incident"])
+    X_1755 = eval_trilinear_point(model, A, B, C, 'a*cos(A +  omega  )', ID="X_1755", classes=["center", "incident"])
     central_line(model, X_293, X_1755, 293, 1755, incident=True)
     return promote_point_to_top(model, X_1956)
 

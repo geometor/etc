@@ -43,9 +43,9 @@ X_1784
    * :ref:`X_1784 <X_1784>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_35200
    * :ref:`X_1784 <X_1784>` = crossdifference of every pair of points on line :ref:`X_48 <X_48>`\ \ :ref:`X_822 <X_822>`
    * :ref:`X_1784 <X_1784>` = circle-{{:ref:`X_11 <X_11>`,\ :ref:`X_36 <X_36>`,\ :ref:`X_65 <X_65>`}}-inverse of X_36063
-   * :ref:`X_1784 <X_1784>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X_2349 (line :ref:`X_1 <X_1>`\ \ :ref:`X_656 <X_656>`)
-   * :ref:`X_1784 <X_1784>` = polar conjugate of X_2349
-   * :ref:`X_1784 <X_1784>` = :ref:`X_63 <X_63>`-:term:`isoconjugate <isoconjugate>` of X_2159
+   * :ref:`X_1784 <X_1784>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_2349 <X_2349>` (line :ref:`X_1 <X_1>`\ \ :ref:`X_656 <X_656>`)
+   * :ref:`X_1784 <X_1784>` = polar conjugate of :ref:`X_2349 <X_2349>`
+   * :ref:`X_1784 <X_1784>` = :ref:`X_63 <X_63>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_2159 <X_2159>`
 
 .. toctree::
    :hidden:

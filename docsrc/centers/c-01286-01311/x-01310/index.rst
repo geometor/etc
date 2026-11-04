@@ -46,7 +46,7 @@ X_1310
 
    * :ref:`X_1310 <X_1310>` = cevapoint of :ref:`X_513 <X_513>` and :ref:`X_940 <X_940>`
    * :ref:`X_1310 <X_1310>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_8678
-   * :ref:`X_1310 <X_1310>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_2517
+   * :ref:`X_1310 <X_1310>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_2517 <X_2517>`
    * :ref:`X_1310 <X_1310>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_6 <X_6>`\ \ :ref:`X_63 <X_63>`
    * :ref:`X_1310 <X_1310>` = Ψ(:ref:`X_1 <X_1>`, :ref:`X_69 <X_69>`)
    * :ref:`X_1310 <X_1310>` = Ψ(:ref:`X_6 <X_6>`, :ref:`X_63 <X_63>`)

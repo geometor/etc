@@ -73,7 +73,7 @@ X_48
    * :ref:`X_48 <X_48>` = :ref:`X_75 <X_75>`-isoconjugate of :ref:`X_19 <X_19>`
    * :ref:`X_48 <X_48>` = :ref:`X_91 <X_91>`-isoconjugate of :ref:`X_1748 <X_1748>`
    * :ref:`X_48 <X_48>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X_48 <X_48>` (which is also the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X_48 <X_48>`)
-   * :ref:`X_48 <X_48>` = crosspoint of X_2066 and X_5414
+   * :ref:`X_48 <X_48>` = crosspoint of :ref:`X_2066 <X_2066>` and X_5414
    * :ref:`X_48 <X_48>` = {:ref:`X_1 <X_1>`,\ :ref:`X_19 <X_19>`}-harmonic conjugate of :ref:`X_1953 <X_1953>`
    * :ref:`X_48 <X_48>` = perspector of circumconic centered at X_36033
 

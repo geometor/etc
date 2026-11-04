@@ -23,7 +23,7 @@ def construct_x_00684(
 ) -> spg.Point:
     """Construct X_684 = CROSSDIFFERENCE OF X_4 AND X_32 on reference triangle ABC."""
     X_684 = eval_trilinear_point(model, A, B, C, '(sec(B)*(sin(C))**(3) - sec(C)*(sin(B))**(3))', ID="X_684", classes=["selected", "target"])
-    X_114 = eval_trilinear_point(model, A, B, C, 'b*c*(b*sec(B + omega ) + c*sec(C + omega ))', ID="X_114", classes=["center", "incident"])
+    X_114 = eval_trilinear_point(model, A, B, C, 'b*c*(b*sec(B +  omega  ) + c*sec(C +  omega  ))', ID="X_114", classes=["center", "incident"])
     X_132 = point_from_barycentrics(model, A, B, C, 0.11002416, 0.049913231, 0.84006261, ID="X_132", classes=["center", "incident"])
     central_line(model, X_114, X_132, 114, 132, incident=True)
     X_122 = eval_trilinear_point(model, A, B, C, '(b**(2) - c**(2))**(2)*(cos(A) - cos(B)*cos(C))*(cot(A))**(2)', ID="X_122", classes=["center", "incident"])

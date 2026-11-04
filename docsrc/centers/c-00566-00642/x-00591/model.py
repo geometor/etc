@@ -28,7 +28,7 @@ def construct_x_00591(
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
     central_line(model, X_2, X_6, 2, 6, incident=True)
-    X_372 = eval_trilinear_point(model, A, B, C, 'cos(A + pi /4)', ID="X_372", classes=["center", "incident"])
+    X_372 = eval_trilinear_point(model, A, B, C, 'cos(A +  pi  /4)', ID="X_372", classes=["center", "incident"])
     X_754 = eval_trilinear_point(model, A, B, C, '(a **(-1)*(b**(4) + c**(4)) - a**(3)*(b**(0) + c**(0)))', ID="X_754", classes=["center", "incident"])
     central_line(model, X_372, X_754, 372, 754, incident=True)
     X_637 = point_from_barycentrics(model, A, B, C, 0.40143148, 0.29769606, 0.30087247, ID="X_637", classes=["center", "incident"])

@@ -9,6 +9,7 @@ from geometor.model import Model
 
 from geometor.etc.ops import (
     central_line,
+    centroid_of,
     circumcenter_of,
     construct_baseline_triangle,
     create_model,
@@ -27,10 +28,13 @@ def construct_x_01379(
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center"])
     X_316 = eval_trilinear_point(model, A, B, C, '(b*c*(b**(4) + c**(4) - a**(4) - b**(2)*c**(2)))', ID="X_316", classes=["center"])
-    X_1348 = eval_trilinear_point(model, A, B, C, 'e*cos(B - C) + cos(A - omega )', ID="X_1348", classes=["center"])
+    X_1348 = eval_trilinear_point(model, A, B, C, 'e*cos(B - C) + cos(A -  omega  )', ID="X_1348", classes=["center"])
     central_line(model, X_3, X_6, 3, 6)
     central_line(model, X_316, X_1348, 316, 1348)
     X_1379 = intersect_lines(model, X_3, X_6, X_316, X_1348, ID="X_1379", classes=["selected", "target"])
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
+    X_2039 = eval_trilinear_point(model, A, B, C, 'e*cos(A) + 2*e*cos(B)*cos(C) + cos(A +  omega  )', ID="X_2039", classes=["center", "incident"])
+    central_line(model, X_2, X_2039, 2, 2039, incident=True)
     return promote_point_to_top(model, X_1379)
 
 

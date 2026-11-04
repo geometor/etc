@@ -39,7 +39,7 @@ X_901
    :badge: 11 lines
    :class: line-catalog
 
-   {:ref:`3 <X_3>`, :ref:`953 <X_953>`}, {:ref:`6 <X_6>`, 2384}, {:ref:`36 <X_36>`, :ref:`106 <X_106>`}, {:ref:`55 <X_55>`, :ref:`840 <X_840>`}, {:ref:`59 <X_59>`, :ref:`109 <X_109>`}, {:ref:`88 <X_88>`, :ref:`105 <X_105>`}, {:ref:`100 <X_100>`, :ref:`513 <X_513>`}, {:ref:`101 <X_101>`, :ref:`649 <X_649>`}, {:ref:`104 <X_104>`, :ref:`517 <X_517>`}, {:ref:`484 <X_484>`, :ref:`759 <X_759>`}, {:ref:`675 <X_675>`, :ref:`903 <X_903>`}
+   {:ref:`3 <X_3>`, :ref:`953 <X_953>`}, {:ref:`6 <X_6>`, :ref:`2384 <X_2384>`}, {:ref:`36 <X_36>`, :ref:`106 <X_106>`}, {:ref:`55 <X_55>`, :ref:`840 <X_840>`}, {:ref:`59 <X_59>`, :ref:`109 <X_109>`}, {:ref:`88 <X_88>`, :ref:`105 <X_105>`}, {:ref:`100 <X_100>`, :ref:`513 <X_513>`}, {:ref:`101 <X_101>`, :ref:`649 <X_649>`}, {:ref:`104 <X_104>`, :ref:`517 <X_517>`}, {:ref:`484 <X_484>`, :ref:`759 <X_759>`}, {:ref:`675 <X_675>`, :ref:`903 <X_903>`}
 
 .. collapse:: Functional Relations
    :badge: 21 relations
@@ -60,7 +60,7 @@ X_901
    * :ref:`X_901 <X_901>` = :term:`trilinear pole <trilinear-pole>`, wrt circumtangential triangle, of line :ref:`X_3 <X_3>`\ \ :ref:`X_8 <X_8>`
    * :ref:`X_901 <X_901>` = reflection of :ref:`X_100 <X_100>` in line :ref:`X_1 <X_1>`\ \ :ref:`X_3 <X_3>`
    * :ref:`X_901 <X_901>` = trilinear pole of line :ref:`X_6 <X_6>`\ x(101)
-   * :ref:`X_901 <X_901>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_1647 <X_1647>`\ X_2087
+   * :ref:`X_901 <X_901>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_1647 <X_1647>`\ \ :ref:`X_2087 <X_2087>`
    * :ref:`X_901 <X_901>` = intersection of antipedal lines of :ref:`X_100 <X_100>` and :ref:`X_104 <X_104>`
    * :ref:`X_901 <X_901>` = trilinear product :ref:`X_100 <X_100>`\ \*\ :ref:`X_106 <X_106>` (circumcircle-:ref:`X_1 <X_1>` antipodes)
    * :ref:`X_901 <X_901>` = Ψ(:ref:`X_650 <X_650>`,\ :ref:`X_9 <X_9>`)

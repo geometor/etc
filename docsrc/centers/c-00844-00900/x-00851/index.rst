@@ -49,10 +49,10 @@ X_851
    * :ref:`X_851 <X_851>` = reflection of :ref:`X_855 <X_855>` in :ref:`X_859 <X_859>`
    * :ref:`X_851 <X_851>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_37142
    * :ref:`X_851 <X_851>` = :term:`complement <complement>` of X_14956
-   * :ref:`X_851 <X_851>` = :term:`cevapoint <cevapoint>` of :ref:`X_1758 <X_1758>` and X_2655
+   * :ref:`X_851 <X_851>` = :term:`cevapoint <cevapoint>` of :ref:`X_1758 <X_1758>` and :ref:`X_2655 <X_2655>`
    * :ref:`X_851 <X_851>` = inverse-in-orthocentroidal-circle of :ref:`X_1985 <X_1985>`
-   * :ref:`X_851 <X_851>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these {i,j}: {:ref:`1 <X_1>`, 37142}, {:ref:`65 <X_65>`, 2652}, {:ref:`73 <X_73>`, 2660}, {:ref:`243 <X_243>`, :ref:`1936 <X_1936>`}
-   * :ref:`X_851 <X_851>` = :term:`crosssum <crosssum>` of X_i and X_j for these {i,j}: {:ref:`1 <X_1>`, :ref:`851 <X_851>`}, {:ref:`21 <X_21>`, 2651}, {:ref:`29 <X_29>`, 2659}, {:ref:`296 <X_296>`, :ref:`1937 <X_1937>`}, {:ref:`1021 <X_1021>`, :ref:`1984 <X_1984>`}
+   * :ref:`X_851 <X_851>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these {i,j}: {:ref:`1 <X_1>`, 37142}, {:ref:`65 <X_65>`, :ref:`2652 <X_2652>`}, {:ref:`73 <X_73>`, :ref:`2660 <X_2660>`}, {:ref:`243 <X_243>`, :ref:`1936 <X_1936>`}
+   * :ref:`X_851 <X_851>` = :term:`crosssum <crosssum>` of X_i and X_j for these {i,j}: {:ref:`1 <X_1>`, :ref:`851 <X_851>`}, {:ref:`21 <X_21>`, :ref:`2651 <X_2651>`}, {:ref:`29 <X_29>`, :ref:`2659 <X_2659>`}, {:ref:`296 <X_296>`, :ref:`1937 <X_1937>`}, {:ref:`1021 <X_1021>`, :ref:`1984 <X_1984>`}
    * :ref:`X_851 <X_851>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_1 <X_1>`\ \ :ref:`X_647 <X_647>`
    * :ref:`X_851 <X_851>` = :ref:`X_65 <X_65>`-Hirst inverse of :ref:`X_73 <X_73>`
 

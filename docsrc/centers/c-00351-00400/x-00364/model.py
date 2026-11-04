@@ -30,6 +30,9 @@ def construct_x_00364(
     X_9 = mittenpunkt_of(model, A, B, C, ID="X_9", classes=["center", "incident"])
     X_366 = eval_trilinear_point(model, A, B, C, 'a**(-1/2)', ID="X_366", classes=["center", "incident"])
     central_line(model, X_9, X_366, 9, 366, incident=True)
+    X_1743 = eval_trilinear_point(model, A, B, C, '3*a - b - c', ID="X_1743", classes=["center", "incident"])
+    X_2068 = eval_trilinear_point(model, A, B, C, '(a + b**(1/2)*c**(1/2))', ID="X_2068", classes=["center", "incident"])
+    central_line(model, X_1743, X_2068, 1743, 2068, incident=True)
     return promote_point_to_top(model, X_364)
 
 

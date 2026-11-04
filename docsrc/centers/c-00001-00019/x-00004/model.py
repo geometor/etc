@@ -33,8 +33,8 @@ def construct_x_00004(
     X_9 = mittenpunkt_of(model, A, B, C, ID="X_9", classes=["center", "incident"])
     X_10 = spieker_center_of(model, A, B, C, ID="X_10", classes=["center", "incident"])
     central_line(model, X_9, X_10, 9, 10, incident=True)
-    X_15 = eval_trilinear_point(model, A, B, C, 'sin(A + pi /3)', ID="X_15", classes=["center", "incident"])
-    X_17 = eval_trilinear_point(model, A, B, C, 'csc(A + pi /6)', ID="X_17", classes=["center", "incident"])
+    X_15 = eval_trilinear_point(model, A, B, C, 'sin(A +  pi  /3)', ID="X_15", classes=["center", "incident"])
+    X_17 = eval_trilinear_point(model, A, B, C, 'csc(A +  pi  /6)', ID="X_17", classes=["center", "incident"])
     central_line(model, X_15, X_17, 15, 17, incident=True)
     return promote_point_to_top(model, X_4)
 

@@ -23,8 +23,8 @@ X_840
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{36, 101} <{ 36, 101 }>`, :g:`{100, 518} <{ 100, 518 }>`
-   * **Related Centers:** :g:`X_528 <X_528>` (:ref:`DIRECTION OF VECTOR AX + BX + CX, where X = X <X_528>`), :g:`X_36 <X_36>` (:ref:`INVERSE-IN-CIRCUMCIRCLE OF INCENTER <X_36>`), :g:`X_101 <X_101>` (:ref:`Ψ(INCENTER, SYMMEDIAN POINT) <X_101>`), :g:`X_100 <X_100>` (:ref:`ANTICOMPLEMENT OF FEUERBACH POINT <X_100>`), :g:`X_518 <X_518>` (:ref:`ISOGONAL CONJUGATE OF X(105) <X_518>`)
+   * **Central Lines:** :g:`{2742, 3} <{ 2742, 3 }>`
+   * **Related Centers:** :g:`X_2742 <X_2742>` (:ref:`SR(X(104), X(105)) <X_2742>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`)
 
 .. signature:: center
 
@@ -45,7 +45,7 @@ X_840
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X_840 <X_840>` = reflection of X_2742 in :ref:`X_3 <X_3>`
+   * :ref:`X_840 <X_840>` = reflection of :ref:`X_2742 <X_2742>` in :ref:`X_3 <X_3>`
    * :ref:`X_840 <X_840>` = isogonal conjugate of :ref:`X_528 <X_528>`
    * :ref:`X_840 <X_840>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_6 <X_6>`\ \ :ref:`X_665 <X_665>`
    * :ref:`X_840 <X_840>` = Ψ(:ref:`X_6 <X_6>`, :ref:`X_665 <X_665>`)

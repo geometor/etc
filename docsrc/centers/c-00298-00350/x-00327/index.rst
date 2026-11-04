@@ -49,7 +49,7 @@ X_327
    * :ref:`X_327 <X_327>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_34396
    * :ref:`X_327 <X_327>` = isotomic conjugate of :ref:`X_182 <X_182>`
    * :ref:`X_327 <X_327>` = :term:`cevapoint <cevapoint>` of :ref:`X_2 <X_2>` and :ref:`X_1352 <X_1352>`
-   * :ref:`X_327 <X_327>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_850 <X_850>`\ X_2525
+   * :ref:`X_327 <X_327>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_850 <X_850>`\ \ :ref:`X_2525 <X_2525>`
 
 .. toctree::
    :hidden:

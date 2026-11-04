@@ -31,7 +31,7 @@ def construct_x_00860(
     X_10 = spieker_center_of(model, A, B, C, ID="X_10", classes=["center", "incident"])
     X_201 = eval_trilinear_point(model, A, B, C, '(cos(A))*(1 + cos(B - C))', ID="X_201", classes=["center", "incident"])
     central_line(model, X_10, X_201, 10, 201, incident=True)
-    X_240 = eval_trilinear_point(model, A, B, C, 'sec(A)*cos(A + omega )', ID="X_240", classes=["center", "incident"])
+    X_240 = eval_trilinear_point(model, A, B, C, 'sec(A)*cos(A +  omega  )', ID="X_240", classes=["center", "incident"])
     X_522 = eval_trilinear_point(model, A, B, C, '(cos(B) - cos(C))*(csc(A))', ID="X_522", classes=["center", "incident"])
     central_line(model, X_240, X_522, 240, 522, incident=True)
     return promote_point_to_top(model, X_860)

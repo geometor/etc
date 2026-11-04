@@ -57,11 +57,11 @@ X_127
    * :ref:`X_127 <X_127>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X_525 <X_525>`
    * :ref:`X_127 <X_127>` = :ref:`X_4 <X_4>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_525 <X_525>`
    * :ref:`X_127 <X_127>` = :ref:`X_1292 <X_1292>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
-   * :ref:`X_127 <X_127>` = perspector of circumconic centered at X_2485
-   * :ref:`X_127 <X_127>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through X_2485
-   * :ref:`X_127 <X_127>` = :ref:`X_2 <X_2>`-Ceva conjugate of X_2485
+   * :ref:`X_127 <X_127>` = perspector of circumconic centered at :ref:`X_2485 <X_2485>`
+   * :ref:`X_127 <X_127>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X_2485 <X_2485>`
+   * :ref:`X_127 <X_127>` = :ref:`X_2 <X_2>`-Ceva conjugate of :ref:`X_2485 <X_2485>`
    * :ref:`X_127 <X_127>` = inverse-in-polar-circle of :ref:`X_1289 <X_1289>`
-   * :ref:`X_127 <X_127>` = inverse-in-orthoptic-circle-of-Steiner-inellipse of X_2373
+   * :ref:`X_127 <X_127>` = inverse-in-orthoptic-circle-of-Steiner-inellipse of :ref:`X_2373 <X_2373>`
    * :ref:`X_127 <X_127>` = :ref:`X_112 <X_112>`-of-:term:`medial triangle <medial-triangle>`
    * :ref:`X_127 <X_127>` = center of the rectangular hyperbola that passes through :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, and :ref:`X_22 <X_22>`
    * :ref:`X_127 <X_127>` = :term:`crosssum <crosssum>` of circumcircle intercepts of line :ref:`X_3 <X_3>`\ \ :ref:`X_66 <X_66>`

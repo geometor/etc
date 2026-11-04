@@ -44,13 +44,13 @@ X_1687
    :badge: 11 lines
    :class: line-catalog
 
-   {:ref:`3 <X_3>`, :ref:`6 <X_6>`}, {:ref:`83 <X_83>`, 2010}, {:ref:`98 <X_98>`, 2009}, {:ref:`485 <X_485>`, :ref:`1677 <X_1677>`}, {:ref:`486 <X_486>`, :ref:`1676 <X_1676>`}, {:ref:`1124 <X_1124>`, :ref:`1672 <X_1672>`}, {:ref:`1335 <X_1335>`, :ref:`1672 <X_1672>`}, {:ref:`1377 <X_1377>`, :ref:`1681 <X_1681>`}, {:ref:`1378 <X_1378>`, :ref:`1680 <X_1680>`}, {:ref:`1700 <X_1700>`, :ref:`1703 <X_1703>`}, {:ref:`1701 <X_1701>`, :ref:`1702 <X_1702>`}
+   {:ref:`3 <X_3>`, :ref:`6 <X_6>`}, {:ref:`83 <X_83>`, :ref:`2010 <X_2010>`}, {:ref:`98 <X_98>`, :ref:`2009 <X_2009>`}, {:ref:`485 <X_485>`, :ref:`1677 <X_1677>`}, {:ref:`486 <X_486>`, :ref:`1676 <X_1676>`}, {:ref:`1124 <X_1124>`, :ref:`1672 <X_1672>`}, {:ref:`1335 <X_1335>`, :ref:`1672 <X_1672>`}, {:ref:`1377 <X_1377>`, :ref:`1681 <X_1681>`}, {:ref:`1378 <X_1378>`, :ref:`1680 <X_1680>`}, {:ref:`1700 <X_1700>`, :ref:`1703 <X_1703>`}, {:ref:`1701 <X_1701>`, :ref:`1702 <X_1702>`}
 
 .. collapse:: Functional Relations
    :badge: 8 relations
 
    * :ref:`X_1687 <X_1687>` = reflection of :ref:`X_1688 <X_1688>` in :ref:`X_1691 <X_1691>`
-   * :ref:`X_1687 <X_1687>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2009
+   * :ref:`X_1687 <X_1687>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2009 <X_2009>`
    * :ref:`X_1687 <X_1687>` = circumcircle-inverse of :ref:`X_1688 <X_1688>`
    * :ref:`X_1687 <X_1687>` = Brocard-circle-inverse of :ref:`X_1690 <X_1690>`
    * :ref:`X_1687 <X_1687>` = 1st Lemoine-circle-inverse of :ref:`X_1688 <X_1688>`

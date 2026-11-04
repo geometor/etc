@@ -68,9 +68,9 @@ X_39
    * :ref:`X_39 <X_39>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_308 <X_308>`
    * :ref:`X_39 <X_39>` = :term:`complement <complement>` of :ref:`X_76 <X_76>`
    * :ref:`X_39 <X_39>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X_626 <X_626>`
-   * :ref:`X_39 <X_39>` = circumcircle-inverse of X_2076
+   * :ref:`X_39 <X_39>` = circumcircle-inverse of :ref:`X_2076 <X_2076>`
    * :ref:`X_39 <X_39>` = Brocard-circle-inverse of :ref:`X_32 <X_32>`
-   * :ref:`X_39 <X_39>` = 1st-Lemoine-circle-inverse of X_2458
+   * :ref:`X_39 <X_39>` = 1st-Lemoine-circle-inverse of :ref:`X_2458 <X_2458>`
    * :ref:`X_39 <X_39>` = :term:`antitomic conjugate <antitomic-conjugate>` of :term:`anticomplement <anticomplement>` of X_39076
    * :ref:`X_39 <X_39>` = Steiner-circumellipse-inverse of anticomplement of X_3978
    * :ref:`X_39 <X_39>` = :term:`eigencenter <eigencenter>` of :term:`anticevian triangle <anticevian-triangle>` of :ref:`X_512 <X_512>`
@@ -93,7 +93,7 @@ X_39
    * :ref:`X_39 <X_39>` = inverse-in-Kiepert-hyperbola of :ref:`X_5 <X_5>`
    * :ref:`X_39 <X_39>` = {:ref:`X_61 <X_61>`,\ :ref:`X_62 <X_62>`}-harmonic conjugate of :ref:`X_575 <X_575>`
    * :ref:`X_39 <X_39>` = {:ref:`X_1687 <X_1687>`,\ :ref:`X_1688 <X_1688>`}-harmonic conjugate of X_3398
-   * :ref:`X_39 <X_39>` = {X_2009,X_2010}-harmonic conjugate of :ref:`X_5 <X_5>`
+   * :ref:`X_39 <X_39>` = {:ref:`X_2009 <X_2009>`,\ :ref:`X_2010 <X_2010>`}-harmonic conjugate of :ref:`X_5 <X_5>`
    * :ref:`X_39 <X_39>` = Brocard axis intercept of radical axis of nine-point circles of :g:`ABC << A B C >>` and circumsymmedial triangle
    * :ref:`X_39 <X_39>` = intersection of tangents to hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_2 <X_2>`,\ :ref:`X_6 <X_6>`}} at :ref:`X_2 <X_2>` and :ref:`X_6 <X_6>`
    * :ref:`X_39 <X_39>` = perspector of circumconic centered at :ref:`X_141 <X_141>`
@@ -101,7 +101,7 @@ X_39
    * :ref:`X_39 <X_39>` = trilinear pole, wrt :term:`medial triangle <medial-triangle>`, of orthic axis
    * :ref:`X_39 <X_39>` = trilinear pole of line :ref:`X_688 <X_688>`\ X_3005
    * :ref:`X_39 <X_39>` = perspector of medial triangle of :g:`ABC << A B C >>` and medial triangle of :term:`1st Brocard triangle <1st-brocard-triangle>`
-   * :ref:`X_39 <X_39>` = X_2029-of-2nd-Brocard triangle
+   * :ref:`X_39 <X_39>` = :ref:`X_2029 <X_2029>`-of-2nd-Brocard triangle
    * :ref:`X_39 <X_39>` = :ref:`X_39 <X_39>`-of-circumsymmedial-triangle
    * :ref:`X_39 <X_39>` = perspector, wrt :term:`symmedial triangle <symmedial-triangle>`, of bicevian conic of :ref:`X_6 <X_6>` and :ref:`X_25 <X_25>`
    * :ref:`X_39 <X_39>` = intersection of Brocard axes of :g:`ABC << A B C >>` and 5th :term:`Euler triangle <euler-triangle>`

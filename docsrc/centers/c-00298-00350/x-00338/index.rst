@@ -40,7 +40,7 @@ X_338
 
 .. container:: note-item
 
-   :ref:`X_338 <X_338>` lies on the inconic with perspector X_2052.
+   :ref:`X_338 <X_338>` lies on the inconic with perspector :ref:`X_2052 <X_2052>`.
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines

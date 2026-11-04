@@ -24,7 +24,7 @@ X_416
    :class: note
 
    * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`), :g:`{255, 1248} <{ 255, 1248 }>`
-   * **Related Centers:** :g:`X_1936 <X_1936>` (:ref:`CROSSDIFFERENCE OF PU(15) <X_1936>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_255 <X_255>` (:ref:`ISOGONAL CONJUGATE OF X(158) <X_255>`), :g:`X_1248 <X_1248>` (:ref:`ISOGONAL CONJUGATE OF X(1047) <X_1248>`)
+   * **Related Centers:** :g:`X_1936 <X_1936>` (:ref:`CROSSDIFFERENCE OF PU(15) <X_1936>`), :g:`X_2651 <X_2651>` (:ref:`CROSSDIFFERENCE OF PU(81) <X_2651>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_255 <X_255>` (:ref:`ISOGONAL CONJUGATE OF X(158) <X_255>`), :g:`X_1248 <X_1248>` (:ref:`ISOGONAL CONJUGATE OF X(1047) <X_1248>`)
 
 .. signature:: center
 
@@ -41,17 +41,17 @@ X_416
    :badge: 7 lines
    :class: line-catalog
 
-   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`255 <X_255>`, :ref:`1248 <X_1248>`}, {:ref:`296 <X_296>`, 2651}, {:ref:`820 <X_820>`, 3562}, {:ref:`1936 <X_1936>`, 2660}, {2659, 44354}, {23090, 32320}
+   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`255 <X_255>`, :ref:`1248 <X_1248>`}, {:ref:`296 <X_296>`, :ref:`2651 <X_2651>`}, {:ref:`820 <X_820>`, 3562}, {:ref:`1936 <X_1936>`, :ref:`2660 <X_2660>`}, {:ref:`2659 <X_2659>`, 44354}, {23090, 32320}
 
 .. collapse:: Functional Relations
    :badge: 7 relations
 
-   * :ref:`X_416 <X_416>` = :ref:`X_1936 <X_1936>`-:term:`Ceva conjugate <ceva-conjugate>` of X_2651
-   * X_2655-:term:`cross conjugate <cross-conjugate>` of X_2659
-   * :ref:`X_416 <X_416>` = X_i-:term:`isoconjugate <isoconjugate>` of X_j for these (i,j): {:ref:`4 <X_4>`, 2660}, {:ref:`65 <X_65>`, 2656}
-   * :ref:`X_416 <X_416>` = X_i-Dao conjugate of X_j for these (i,j): {2656, 40602}, {2660, 36033}
-   * :ref:`X_416 <X_416>` = barycentric product X_i\*X_j for these {i,j}: {:ref:`21 <X_21>`, 44354}, {:ref:`63 <X_63>`, 2659}, {:ref:`333 <X_333>`, 2655}
-   * :ref:`X_416 <X_416>` = barycentric quotient X_i/X_j for these {i,j}: {:ref:`48 <X_48>`, 2660}, {:ref:`284 <X_284>`, 2656}, {2655, :ref:`226 <X_226>`}, {2659, :ref:`92 <X_92>`}, {44354, :ref:`1441 <X_1441>`}
+   * :ref:`X_416 <X_416>` = :ref:`X_1936 <X_1936>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_2651 <X_2651>`
+   * :ref:`X_2655 <X_2655>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_2659 <X_2659>`
+   * :ref:`X_416 <X_416>` = X_i-:term:`isoconjugate <isoconjugate>` of X_j for these (i,j): {:ref:`4 <X_4>`, :ref:`2660 <X_2660>`}, {:ref:`65 <X_65>`, :ref:`2656 <X_2656>`}
+   * :ref:`X_416 <X_416>` = X_i-Dao conjugate of X_j for these (i,j): {:ref:`2656 <X_2656>`, 40602}, {:ref:`2660 <X_2660>`, 36033}
+   * :ref:`X_416 <X_416>` = barycentric product X_i\*X_j for these {i,j}: {:ref:`21 <X_21>`, 44354}, {:ref:`63 <X_63>`, :ref:`2659 <X_2659>`}, {:ref:`333 <X_333>`, :ref:`2655 <X_2655>`}
+   * :ref:`X_416 <X_416>` = barycentric quotient X_i/X_j for these {i,j}: {:ref:`48 <X_48>`, :ref:`2660 <X_2660>`}, {:ref:`284 <X_284>`, :ref:`2656 <X_2656>`}, {:ref:`2655 <X_2655>`, :ref:`226 <X_226>`}, {:ref:`2659 <X_2659>`, :ref:`92 <X_92>`}, {44354, :ref:`1441 <X_1441>`}
    * :ref:`X_416 <X_416>` = {X_i,X_j}-harmonic conjugate of X_k for these (i,j,k): {:ref:`3 <X_3>`, :ref:`1982 <X_1982>`, :ref:`21 <X_21>`}, {:ref:`851 <X_851>`, 52240, :ref:`415 <X_415>`}
 
 Notes

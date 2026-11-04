@@ -46,7 +46,7 @@ X_1108
    * :ref:`X_1108 <X_1108>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`278 <X_278>`), (:ref:`2 <X_2>`, :ref:`84 <X_84>`)
    * :ref:`X_1108 <X_1108>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`219 <X_219>`), (:ref:`6 <X_6>`, :ref:`40 <X_40>`)
    * :ref:`X_1108 <X_1108>` = polar conjugate of :term:`isogonal conjugate <isogonal-conjugate>` of X_23204
-   * :ref:`X_1108 <X_1108>` = {:ref:`X_1 <X_1>`,\ :ref:`X_9 <X_9>`}-harmonic conjugate of X_2256
+   * :ref:`X_1108 <X_1108>` = {:ref:`X_1 <X_1>`,\ :ref:`X_9 <X_9>`}-harmonic conjugate of :ref:`X_2256 <X_2256>`
 
 .. toctree::
    :hidden:

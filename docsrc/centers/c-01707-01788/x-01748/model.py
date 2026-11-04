@@ -26,7 +26,7 @@ def construct_x_01748(
     X_27 = eval_trilinear_point(model, A, B, C, '(sec(A))/(b + c)', ID="X_27", classes=["center", "incident"])
     central_line(model, X_19, X_27, 19, 27, incident=True)
     X_31 = eval_trilinear_point(model, A, B, C, 'a**(2)', ID="X_31", classes=["center", "incident"])
-    X_240 = eval_trilinear_point(model, A, B, C, 'sec(A)*cos(A + omega )', ID="X_240", classes=["center", "incident"])
+    X_240 = eval_trilinear_point(model, A, B, C, 'sec(A)*cos(A +  omega  )', ID="X_240", classes=["center", "incident"])
     central_line(model, X_31, X_240, 31, 240, incident=True)
     X_158 = eval_trilinear_point(model, A, B, C, '(sec(A))**(2)', ID="X_158", classes=["center", "incident"])
     X_920 = eval_trilinear_point(model, A, B, C, '((cos(B))**(2) + (cos(C))**(2) - (cos(A))**(2))', ID="X_920", classes=["center", "incident"])

@@ -23,7 +23,7 @@ def construct_x_00706(
     """Construct X_706 = EVEN (- 4, 2) INFINITY POINT on reference triangle ABC."""
     X_706 = eval_trilinear_point(model, A, B, C, '(a **(-5)*(b**(2) + c**(2)) - a**(1)*(b **(-4) + c **(-4)))', ID="X_706", classes=["selected", "target"])
     X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X_30", classes=["center", "incident"])
-    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A + omega )', ID="X_511", classes=["center", "incident"])
+    X_511 = eval_trilinear_point(model, A, B, C, 'cos(A +  omega  )', ID="X_511", classes=["center", "incident"])
     central_line(model, X_30, X_511, 30, 511, incident=True)
     return promote_point_to_top(model, X_706)
 

@@ -26,7 +26,7 @@ def construct_x_01629(
     X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center"])
     X_54 = eval_trilinear_point(model, A, B, C, 'sec(B - C)', ID="X_54", classes=["center"])
     X_25 = eval_trilinear_point(model, A, B, C, 'sin(A)*tan(A)', ID="X_25", classes=["center"])
-    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A + omega )', ID="X_98", classes=["center"])
+    X_98 = eval_trilinear_point(model, A, B, C, 'sec(A +  omega  )', ID="X_98", classes=["center"])
     central_line(model, X_4, X_54, 4, 54)
     central_line(model, X_25, X_98, 25, 98)
     X_1629 = intersect_lines(model, X_4, X_54, X_25, X_98, ID="X_1629", classes=["selected", "target"])

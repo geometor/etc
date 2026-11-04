@@ -23,7 +23,7 @@ def construct_x_01130(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1130 = 1st STEVANOVIC POINT on reference triangle ABC."""
-    X_1128 = eval_trilinear_point(model, A, B, C, '((sin((pi - A)/4))/sin((pi + 3*A)/4))', ID="X_1128", classes=["center"])
+    X_1128 = eval_trilinear_point(model, A, B, C, '((sin(( pi  - A)/4))/sin(( pi  + 3*A)/4))', ID="X_1128", classes=["center"])
     X_1130 = isogonal_conjugate(model, A, B, C, X_1128, ID="X_1130", classes=["selected", "target"])
     X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
     X_164 = eval_trilinear_point(model, A, B, C, 'sin(B/2) + sin(C/2) - sin(A/2)', ID="X_164", classes=["center", "incident"])

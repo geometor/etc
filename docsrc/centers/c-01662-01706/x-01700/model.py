@@ -22,15 +22,15 @@ def construct_x_01700(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1700 = INSIMILICENTER(BEVAN CIRCLE, 1st LEMOINE CIRCLE) on reference triangle ABC."""
-    X_1700 = eval_trilinear_point(model, A, B, C, '(2*cos(A - omega ) + cos(A) - cos(B) - cos(C) + 1)', ID="X_1700", classes=["selected", "target"])
+    X_1700 = eval_trilinear_point(model, A, B, C, '(2*cos(A -  omega  ) + cos(A) - cos(B) - cos(C) + 1)', ID="X_1700", classes=["selected", "target"])
     X_40 = eval_trilinear_point(model, A, B, C, 'cos(B) + cos(C) - cos(A) - 1', ID="X_40", classes=["center", "incident"])
-    X_182 = eval_trilinear_point(model, A, B, C, 'cos(A- omega )', ID="X_182", classes=["center", "incident"])
+    X_182 = eval_trilinear_point(model, A, B, C, 'cos(A-  omega  )', ID="X_182", classes=["center", "incident"])
     central_line(model, X_40, X_182, 40, 182, incident=True)
     X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
-    X_1342 = eval_trilinear_point(model, A, B, C, 'sin(A) + cos(A)*cot(omega /2)', ID="X_1342", classes=["center", "incident"])
+    X_1342 = eval_trilinear_point(model, A, B, C, 'sin(A) + cos(A)*cot( omega  /2)', ID="X_1342", classes=["center", "incident"])
     central_line(model, X_1, X_1342, 1, 1342, incident=True)
     X_165 = eval_trilinear_point(model, A, B, C, 'tan(B/2) + tan(C/2) - tan(A/2)', ID="X_165", classes=["center", "incident"])
-    X_1343 = eval_trilinear_point(model, A, B, C, 'sin(A) - cos(A)*tan(omega /2)', ID="X_1343", classes=["center", "incident"])
+    X_1343 = eval_trilinear_point(model, A, B, C, 'sin(A) - cos(A)*tan( omega  /2)', ID="X_1343", classes=["center", "incident"])
     central_line(model, X_165, X_1343, 165, 1343, incident=True)
     return promote_point_to_top(model, X_1700)
 

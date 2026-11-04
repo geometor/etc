@@ -40,7 +40,7 @@ X_1231
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X_1231 <X_1231>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2204
+   * :ref:`X_1231 <X_1231>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2204 <X_2204>`
    * :ref:`X_1231 <X_1231>` = isotomic conjugate of :ref:`X_1172 <X_1172>`
    * :ref:`X_1231 <X_1231>` = :ref:`X_76 <X_76>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_349 <X_349>`
    * :ref:`X_1231 <X_1231>` = :term:`cevapoint <cevapoint>` of :ref:`X_306 <X_306>` and :ref:`X_307 <X_307>`

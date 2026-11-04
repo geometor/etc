@@ -24,7 +24,7 @@ def construct_x_01545(
 ) -> spg.Point:
     """Construct X_1545 = ORTHOJOIN OF X_61 on reference triangle ABC."""
     X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center"])
-    X_15 = eval_trilinear_point(model, A, B, C, 'sin(A + pi /3)', ID="X_15", classes=["center"])
+    X_15 = eval_trilinear_point(model, A, B, C, 'sin(A +  pi  /3)', ID="X_15", classes=["center"])
     X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X_30", classes=["center"])
     X_113 = eval_trilinear_point(model, A, B, C, 'sin(B)*sin(C)*((sin(C))/(cos(C) - 2*cos(A)*cos(B)) + (sin(B))/(cos(B) - 2*cos(A)*cos(C)))', ID="X_113", classes=["center"])
     central_line(model, X_4, X_15, 4, 15)
