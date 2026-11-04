@@ -33,6 +33,8 @@ Functions
 
    geometor.etc.construct.build_center_model
    geometor.etc.construct.generate_center_model_py
+   geometor.etc.construct.select_collection_centers
+   geometor.etc.construct.build_collection_model
 
 
 Module Contents
@@ -106,6 +108,9 @@ Module Contents
    .. py:attribute:: omega
 
 
+   .. py:attribute:: eccentricity
+
+
    .. py:attribute:: eval_envs
       :type:  tuple[dict[str, Any], dict[str, Any], dict[str, Any]]
 
@@ -166,5 +171,15 @@ Module Contents
 .. py:function:: generate_center_model_py(center_data: dict[str, Any], registry: CenterRegistry) -> str
 
    Generate a standalone, composable `geometor.model` Python script (`model.py`) for `center_data`.
+
+
+.. py:function:: select_collection_centers(center_nums: list[int], registry: CenterRegistry, max_points: int = 16) -> list[int]
+
+   Select an editorial subset of 12–16 well-separated landmark centers from `center_nums`.
+
+
+.. py:function:: build_collection_model(center_nums: list[int], registry: CenterRegistry, collection_title: str = '', include_baseline_guides: bool = True, range_label: str = '') -> geometor.model.Model
+
+   Build a `geometor.model.Model` displaying the selected centers of a thematic collection on triangle ABC.
 
 

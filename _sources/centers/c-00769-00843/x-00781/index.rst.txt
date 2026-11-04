@@ -1,0 +1,47 @@
+:order: 781
+:canonical_id: X_781
+:subtitle: o-(- 4, 3) CIRCUMCIRCLE POINT
+:dependencies: X_780, X_35557
+
+.. _X_781:
+
+X_781
+=====
+
+.. rubric:: o-(- 4, 3) CIRCUMCIRCLE POINT
+
+.. enunciation::
+
+   :ref:`X_781 <X_781>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_780 <X_780>`
+
+.. figure:: x-00781.svg
+   :alt: X_781 — o-(- 4, 3) CIRCUMCIRCLE POINT
+   :align: center
+
+   **X_781** (*o-(- 4, 3) CIRCUMCIRCLE POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Related Centers:** :g:`X_780 <X_780>` (:ref:`ODD (- 4, 3) INFINITY POINT <X_780>`)
+
+.. signature:: center
+
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = 1/[a ^{-5}(b^{3} - c^{3}) + a^{2}(b ^{-4} - c ^{-4})]`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
+   | **Search Value (6, 9, 13):** :math:`1.020710489451`
+
+.. container:: note-item
+
+   :ref:`X_781 <X_781>` lies on the circumcircle.
+
+.. collapse:: Functional Relations
+   :badge: 2 relations
+
+   * :ref:`X_781 <X_781>` = isogonal conjugate of :ref:`X_780 <X_780>`
+   * :ref:`X_781 <X_781>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_35557
+
+.. toctree::
+   :hidden:
+
+   code

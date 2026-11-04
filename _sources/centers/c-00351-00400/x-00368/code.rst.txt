@@ -1,0 +1,20 @@
+:canonical_id: X_368
+:subtitle: EQUI-BROCARD CENTER
+
+X_368
+=====
+
+.. rubric:: EQUI-BROCARD CENTER
+
+.. enunciation::
+
+   The center X for which the triangle :g:`XBC << X B C >>`, :g:`XCA << X C A >>`, :g:`XAB << X A B >>` have equal Brocard angles. :person:`Peter Yff <peter-yff>` proved that :ref:`X_368 <X_368>` lies on the self-:term:`isogonal conjugate <isogonal-conjugate>` cubic with trilinear equation f(a,b,c)u + f(b,c,a)v + f(c,a,b)w = 0, where :math:`f(a,b,c) = bc(b^{2} - c^{2})` and, for variable :math:`x : y : z`, the cubics u, v, w are given by u(x,y,z) = :math:`x(y^{2}` + :math:`z^{2})`, v = u(y,z,x), w = u(z,x,y).
+
+.. figure:: x-00368.svg
+   :alt: X_368 — EQUI-BROCARD CENTER
+   :align: center
+
+   **X_368** (*EQUI-BROCARD CENTER*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. literalinclude:: model.py
+   :language: python

@@ -9,6 +9,14 @@ geometor.etc.transform
 
 
 
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.etc.transform.THEMATIC_COLLECTIONS
+
+
 Functions
 ---------
 
@@ -18,6 +26,8 @@ Functions
    geometor.etc.transform.wrap_refs
    geometor.etc.transform.transform_center_to_rst
    geometor.etc.transform.transform_center_to_code_rst
+   geometor.etc.transform.get_collection_spec
+   geometor.etc.transform.get_collection_folder_name
    geometor.etc.transform.generate_rst_files
 
 
@@ -44,8 +54,23 @@ Module Contents
    Transform a parsed center dictionary into the companion Code track (`code.rst`).
 
 
+.. py:data:: THEMATIC_COLLECTIONS
+   :type:  list[tuple[int, int, str, str]]
+   :value: [(1, 19, 'Classical & Ancient Centers', 'The foundational centers of classical triangle...
+
+
+.. py:function:: get_collection_spec(num: int) -> tuple[int, int, str, str]
+
+   Return `(start_num, end_num, title, summary)` for center `num`.
+
+
+.. py:function:: get_collection_folder_name(start_num: int, end_num: int) -> str
+
+   Return the subdirectory name for a collection range `(start_num, end_num)`.
+
+
 .. py:function:: generate_rst_files(centers: list[dict[str, Any]], output_dir: str | pathlib.Path, glossary_terms: dict[str, Any] | list[str] | None = None, preambles_by_center: dict[str, list[dict[str, Any]]] | None = None, valid_centers: set[int] | None = None, render_graphics: bool = True, constructions_dir: str | pathlib.Path | None = None) -> None
 
-   Generate per-center folders (`x-NNNNN/`) with `index.rst`, `code.rst`, `model.py`, SVGs, and `geometor.model` JSONs.
+   Generate thematic collection folders (`c-XXXXX-YYYYY/`) and per-center folders (`x-NNNNN/`).
 
 

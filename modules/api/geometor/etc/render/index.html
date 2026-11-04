@@ -377,6 +377,14 @@
         <span class="sd">    font-weight: 700;</span>
         <span class="sd">}</span>
 
+        <span class="sd">#labels text.dense-label {</span>
+        <span class="sd">    display: none;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">#labels text.dense-label.hover-label {</span>
+        <span class="sd">    display: block !important;</span>
+        <span class="sd">}</span>
+
         <span class="sd">.etc-svg-stage {</span>
         <span class="sd">    position: relative;</span>
         <span class="sd">    width: 100%;</span>
@@ -518,10 +526,11 @@
         <span class="sd">        const vb = getViewBox();</span>
         <span class="sd">        const unitsPerPx = vb[2] / widthPx;</span>
 
+        <span class="sd">        const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');</span>
         <span class="sd">        pointEls.forEach(c =&gt; {</span>
         <span class="sd">            const isTarget = c.classList.contains('target') || c.classList.contains('selected');</span>
         <span class="sd">            const isGuide = c.classList.contains('guide');</span>
-        <span class="sd">            const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);</span>
+        <span class="sd">            const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);</span>
         <span class="sd">            c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));</span>
         <span class="sd">        });</span>
 
@@ -907,6 +916,18 @@
         <span class="sd">        clearHover();</span>
         <span class="sd">    });</span>
 
+        <span class="sd">    svg.addEventListener('click', (event) =&gt; {</span>
+        <span class="sd">        if (didDrag) return;</span>
+        <span class="sd">        const pt = event.target.closest('circle[data-id]');</span>
+        <span class="sd">        if (!pt) return;</span>
+        <span class="sd">        const pid = pt.getAttribute('data-id') || '';</span>
+        <span class="sd">        const m = pid.match(/^X_(\d+)$/);</span>
+        <span class="sd">        if (m &amp;&amp; typeof window !== 'undefined' &amp;&amp; window.location &amp;&amp; window.location.pathname.includes('/c-') &amp;&amp; !window.location.pathname.includes('/x-')) {</span>
+        <span class="sd">            const slug = 'x-' + m[1].padStart(5, '0');</span>
+        <span class="sd">            window.location.href = `${slug}/index.html`;</span>
+        <span class="sd">        }</span>
+        <span class="sd">    });</span>
+
         <span class="sd">    svg.addEventListener('dblclick', (event) =&gt; {</span>
         <span class="sd">        event.preventDefault();</span>
         <span class="sd">        resetView();</span>
@@ -1003,8 +1024,7 @@
     <aside class="aside-types">
       <h3>Types</h3>
       <ul>
-        <li><a href="../../../../../types/center.html">center</a></li>
-        <li><a href="../../../../../types/code.html">code</a></li>
+        <li><a href="../../../../../types/collection.html">collection</a></li>
         <li><a href="../../../../../types/log.html">log</a></li>
       </ul>
     </aside>
@@ -1028,7 +1048,7 @@
 
   <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../../../../_static/documentation_options.js?v=59fadc99"></script>
+  <script src="../../../../../_static/documentation_options.js?v=6e0256f3"></script>
   <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>

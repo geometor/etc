@@ -153,6 +153,12 @@
         <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.construct.generate_center_model_py" title="geometor.etc.construct.generate_center_model_py"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_center_model_py</span></code></a>(center_data, registry) → str</p></td>
         <td><p>Generate a standalone, composable <cite>geometor.model</cite> Python script (<cite>model.py</cite>) for <cite>center_data</cite>.</p></td>
         </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.construct.select_collection_centers" title="geometor.etc.construct.select_collection_centers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">select_collection_centers</span></code></a>(center_nums, registry[, ...]) → list[int]</p></td>
+        <td><p>Select an editorial subset of 12–16 well-separated landmark centers from <cite>center_nums</cite>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.construct.build_collection_model" title="geometor.etc.construct.build_collection_model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">build_collection_model</span></code></a>(center_nums, registry[, ...]) → geometor.model.Model</p></td>
+        <td><p>Build a <cite>geometor.model.Model</cite> displaying the selected centers of a thematic collection on triangle ABC.</p></td>
+        </tr>
         </tbody>
         </table>
         </section>
@@ -258,6 +264,11 @@
         <dd></dd></dl>
 
         <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.eccentricity">
+        <span class="sig-name descname"><span class="pre">eccentricity</span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.eccentricity" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
         <dt class="sig sig-object py" id="geometor.etc.construct.TriangleContext.eval_envs">
         <span class="sig-name descname"><span class="pre">eval_envs</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.construct.TriangleContext.eval_envs" title="Link to this definition">¶</a></dt>
         <dd></dd></dl>
@@ -331,6 +342,18 @@
         <dd><p>Generate a standalone, composable <cite>geometor.model</cite> Python script (<cite>model.py</cite>) for <cite>center_data</cite>.</p>
         </dd></dl>
 
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.etc.construct.select_collection_centers">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.construct.</span></span><span class="sig-name descname"><span class="pre">select_collection_centers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">center_nums</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">registry</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#geometor.etc.construct.CenterRegistry" title="geometor.etc.construct.CenterRegistry"><span class="pre">CenterRegistry</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">16</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.construct.select_collection_centers" title="Link to this definition">¶</a></dt>
+        <dd><p>Select an editorial subset of 12–16 well-separated landmark centers from <cite>center_nums</cite>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.etc.construct.build_collection_model">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.construct.</span></span><span class="sig-name descname"><span class="pre">build_collection_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">center_nums</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">registry</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#geometor.etc.construct.CenterRegistry" title="geometor.etc.construct.CenterRegistry"><span class="pre">CenterRegistry</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">collection_title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_baseline_guides</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">range_label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">geometor.model.Model</span></span></span><a class="headerlink" href="#geometor.etc.construct.build_collection_model" title="Link to this definition">¶</a></dt>
+        <dd><p>Build a <cite>geometor.model.Model</cite> displaying the selected centers of a thematic collection on triangle ABC.</p>
+        </dd></dl>
+
         </section>
         </section>
 
@@ -395,8 +418,7 @@
     <aside class="aside-types">
       <h3>Types</h3>
       <ul>
-        <li><a href="../../../../../types/center.html">center</a></li>
-        <li><a href="../../../../../types/code.html">code</a></li>
+        <li><a href="../../../../../types/collection.html">collection</a></li>
         <li><a href="../../../../../types/log.html">log</a></li>
       </ul>
     </aside>
@@ -420,7 +442,7 @@
 
   <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../../../../_static/documentation_options.js?v=59fadc99"></script>
+  <script src="../../../../../_static/documentation_options.js?v=6e0256f3"></script>
   <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>

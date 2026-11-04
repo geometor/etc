@@ -6,6 +6,8 @@
 Encyclopedia of Triangle Centers
 ================================
 
+.. rubric:: Thematic Collections (X_1–X_2000)
+
 .. collection::
-   :type: center
+   :type: collection
    :sort: order
