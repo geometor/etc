@@ -25,11 +25,11 @@ It is responsible for:
 - `resources/centers/`: Full archive of 53,144 generated per-center folders (git-ignored).
 - `resources/`: Extracted apparatus registries (`glossary.json`, `persons.json`, `citations.json`).
 - `src/geometor/etc/`: Core Python package (`ingest.py`, `parser.py`, `glossary.py`, `ops.py`, `construct.py`, `render.py`, `transform.py`, `__main__.py`).
-- `docsrc/centers/x-NNNNN/`: Per-center folder containing `index.rst` (`Overview` track), `code.rst` (`Code` track), `model.py`, `x-NNNNN.json`, and interactive SVGs across 4 reference triangles (`x-NNNNN.svg`, `x-NNNNN-right.svg`, `x-NNNNN-kepler.svg`, `x-NNNNN-kimberling.svg`).
+- `docsrc/centers/c-XXXXX-YYYYY/`: Thematic collection folder containing `index.rst`, 4-triangle constellation SVGs (`c-XXXXX-YYYYY.svg`, `-right.svg`, `-kepler.svg`, `-kimberling.svg`), and nested `x-NNNNN/` per-center folders (`index.rst`, `code.rst`, `model.py`, `x-NNNNN.json`, and 4-triangle center SVGs).
 
 ## CLI Usage
 
 ```bash
-python3 -m geometor.etc --skip-ingest --limit 1000
+python3 -m geometor.etc --skip-ingest --limit 2000
 ```
 

@@ -1,0 +1,20 @@
+:canonical_id: X_14
+:subtitle: 2nd ISOGONIC CENTER
+
+X_14
+====
+
+.. rubric:: 2nd ISOGONIC CENTER
+
+.. enunciation::
+
+   Construct the equilateral triangle :g:`BA'C << B A' C >>` having base :g:`BC <[ B C ]>` and vertex :g:`A' <A'>` on the positive side of :g:`BC <[ B C ]>`; similarly construct equilateral triangles :g:`CB'A << C B' A >>` and :g:`AC'B << A C' B >>` based on the other two sides. The lines :g:`AA' <[ A A' ]>`,\ :g:`BB' <[ B B' ]>`,\ :g:`CC' <[ C C' ]>` concur in :ref:`X_14 <X_14>`. The :term:`antipedal triangle <antipedal-triangle>` of :ref:`X_14 <X_14>` is equilateral.
+
+.. figure:: x-00014.svg
+   :alt: X_14 — 2nd ISOGONIC CENTER
+   :align: center
+
+   **X_14** (*2nd ISOGONIC CENTER*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. literalinclude:: model.py
+   :language: python

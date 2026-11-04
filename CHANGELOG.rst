@@ -3,6 +3,14 @@ changelog
 
 :project: geometor.etc
 
+0.1.6
+-----
+
+- Expanded coordinate and geometric construction resolution to `X_1` through `X_2000` (100% resolved across all 4 reference triangles: `5, 6, 7`, `3, 4, 5`, `Kepler`, and `Kimberling`).
+- Added preamble transformation handlers (*Saragossa points*, *Collings transforms*, *Brisse transforms*, *Orthojoin points*, *TCC-perspectors*), `x:y:z = X_k` trilinear coordinate substitutions, and seeded roots (`X_134`, `X_180`, `X_1144`).
+- Organized `X_1`–`X_2000` into 38 thematic collections (`docsrc/centers/c-XXXXX-YYYYY/`) aligned with Kimberling's section preambles and geometric families so `docs/centers/index.html` loads instantaneously (~54 KB instead of ~30 MB).
+- Generated multi-center constellation graphics (`c-XXXXX-YYYYY.svg` across all 4 reference triangles) for each thematic collection using an editorial selection of 11–16 spatially separated landmark centers with interactive hover labels and click-to-navigate center dots.
+
 0.1.5
 -----
 

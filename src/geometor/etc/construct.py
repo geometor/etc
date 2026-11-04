@@ -71,6 +71,7 @@ class TriangleContext:
         cot_C = cos_C / math.sin(self.C_rad)
         cot_omega = cot_A + cot_B + cot_C
         self.omega = math.atan(1.0 / cot_omega)
+        self.eccentricity = math.sqrt(max(0.0, 1.0 - 4.0 * (math.sin(self.omega) ** 2)))
 
         Ra = area / (s - a_r)
         Rb = area / (s - b_r)
@@ -78,6 +79,11 @@ class TriangleContext:
         SA = 0.5 * (b_r**2 + c_r**2 - a_r**2)
         SB = 0.5 * (c_r**2 + a_r**2 - b_r**2)
         SC = 0.5 * (a_r**2 + b_r**2 - c_r**2)
+        dist_OH = math.sqrt(max(0.0, 9.0 * (self.R**2) - (a_r**2 + b_r**2 + c_r**2)))
+        dist_OI = math.sqrt(max(0.0, self.R * (self.R - 2.0 * self.r)))
+        moses_Q = 4.0 * (dist_OH**2) * self.R * (4.0 * self.r - self.R) + (
+            dist_OH**2 - 3.0 * (self.R**2) + 4.0 * self.r * (self.r + self.R)
+        ) ** 2
         safe_funcs: dict[str, Any] = {
             "sin": math.sin,
             "cos": math.cos,
@@ -88,18 +94,25 @@ class TriangleContext:
             "sqrt": math.sqrt,
             "pi": math.pi,
             "omega": self.omega,
+            "e": self.eccentricity,
             "area": area,
+            "D": area,
             "R": self.R,
             "r": self.r,
             "s": s,
             "S": 2.0 * area,
             "SW": 0.5 * (a_r**2 + b_r**2 + c_r**2),
+            "OH": dist_OH,
+            "OI": dist_OI,
+            "d": dist_OH,
+            "J": dist_OH / self.R,
+            "Q": moses_Q,
         }
         A_rad, B_rad, C_rad = self.A_rad, self.B_rad, self.C_rad
         self.eval_envs: tuple[dict[str, Any], dict[str, Any], dict[str, Any]] = (
-            {**safe_funcs, "a": a_r, "b": b_r, "c": c_r, "A": A_rad, "B": B_rad, "C": C_rad, "Ra": Ra, "Rb": Rb, "Rc": Rc, "SA": SA, "SB": SB, "SC": SC},
-            {**safe_funcs, "a": b_r, "b": c_r, "c": a_r, "A": B_rad, "B": C_rad, "C": A_rad, "Ra": Rb, "Rb": Rc, "Rc": Ra, "SA": SB, "SB": SC, "SC": SA},
-            {**safe_funcs, "a": c_r, "b": a_r, "c": b_r, "A": C_rad, "B": A_rad, "C": B_rad, "Ra": Rc, "Rb": Ra, "Rc": Rb, "SA": SC, "SB": SA, "SC": SB},
+            {**safe_funcs, "a": a_r, "b": b_r, "c": c_r, "A": A_rad, "B": B_rad, "C": C_rad, "Ra": Ra, "Rb": Rb, "Rc": Rc, "SA": SA, "SB": SB, "SC": SC, "U": SA, "V": SB, "W": SC},
+            {**safe_funcs, "a": b_r, "b": c_r, "c": a_r, "A": B_rad, "B": C_rad, "C": A_rad, "Ra": Rb, "Rb": Rc, "Rc": Ra, "SA": SB, "SB": SC, "SC": SA, "U": SB, "V": SC, "W": SA},
+            {**safe_funcs, "a": c_r, "b": a_r, "c": b_r, "A": C_rad, "B": A_rad, "C": B_rad, "Ra": Rc, "Rb": Ra, "Rc": Rb, "SA": SC, "SB": SA, "SC": SB, "U": SC, "V": SA, "W": SB},
         )
         # Perturbed environments for removable singularities on right/special triangles (e.g. C = 90°)
         c_p = c_r * (1.0 - 1e-7)
@@ -113,9 +126,9 @@ class TriangleContext:
         SC_p = 0.5 * (a_r**2 + b_r**2 - c_p**2)
         Ra_p, Rb_p, Rc_p = area_p / (s_p - a_r), area_p / (s_p - b_r), area_p / (s_p - c_p)
         self.perturbed_eval_envs: tuple[dict[str, Any], dict[str, Any], dict[str, Any]] = (
-            {**safe_funcs, "a": a_r, "b": b_r, "c": c_p, "A": A_p, "B": B_p, "C": C_p, "Ra": Ra_p, "Rb": Rb_p, "Rc": Rc_p, "SA": SA_p, "SB": SB_p, "SC": SC_p},
-            {**safe_funcs, "a": b_r, "b": c_p, "c": a_r, "A": B_p, "B": C_p, "C": A_p, "Ra": Rb_p, "Rb": Rc_p, "Rc": Ra_p, "SA": SB_p, "SB": SC_p, "SC": SA_p},
-            {**safe_funcs, "a": c_p, "b": a_r, "c": b_r, "A": C_p, "B": A_p, "C": B_p, "Ra": Rc_p, "Rb": Ra_p, "Rc": Rb_p, "SA": SC_p, "SB": SA_p, "SC": SB_p},
+            {**safe_funcs, "a": a_r, "b": b_r, "c": c_p, "A": A_p, "B": B_p, "C": C_p, "Ra": Ra_p, "Rb": Rb_p, "Rc": Rc_p, "SA": SA_p, "SB": SB_p, "SC": SC_p, "U": SA_p, "V": SB_p, "W": SC_p},
+            {**safe_funcs, "a": b_r, "b": c_p, "c": a_r, "A": B_p, "B": C_p, "C": A_p, "Ra": Rb_p, "Rb": Rc_p, "Rc": Ra_p, "SA": SB_p, "SB": SC_p, "SC": SA_p, "U": SB_p, "V": SC_p, "W": SA_p},
+            {**safe_funcs, "a": c_p, "b": a_r, "c": b_r, "A": C_p, "B": A_p, "C": B_p, "Ra": Rc_p, "Rb": Ra_p, "Rc": Rb_p, "SA": SC_p, "SB": SA_p, "SC": SB_p, "U": SC_p, "V": SA_p, "W": SB_p},
         )
 
     def bary_to_cartesian(self, u: float, v: float, w: float) -> tuple[float, float] | None:
@@ -158,11 +171,18 @@ def _prepare_formula_expr(latex_or_rst: str) -> str | None:
     if not latex_or_rst:
         return None
     s_full = latex_or_rst.strip()
-    # Extract inside :math:`...` if present
+    # Extract inside :math:`...` if present, or fall back to plain-text ratio before "where"
     m = re.match(r"^:math:`([^`]+)`(.*)$", s_full, flags=re.DOTALL)
     if m:
         s = m.group(1).strip()
         tail_clause = m.group(2).strip()
+    elif ":" in s_full:
+        wm = re.split(r",?\s*\bwhere\b", s_full, maxsplit=1, flags=re.IGNORECASE)
+        s = wm[0].strip()
+        # Strip inline :math:`...` and escaped \* in mixed plain/math lines
+        s = re.sub(r"\\?\s*:math:`([^`]+)`\\?\s*", r"\1", s)
+        s = s.replace(r"\*", "*")
+        tail_clause = ("where " + wm[1].strip()) if len(wm) > 1 else ""
     else:
         return None
 
@@ -172,30 +192,64 @@ def _prepare_formula_expr(latex_or_rst: str) -> str | None:
     else:
         first = s.strip()
 
-    # Check if `first` is `f(A,B,C)` or `f(a,b,c)` defined in `tail_clause` ("where f(A,B,C) = ...")
-    if re.match(r"^f\s*\(\s*[aAbBcC]\s*,\s*[aAbBcC]\s*,\s*[aAbBcC]\s*\)$", first):
-        fm = re.search(
-            r"where\s*,?\s*f\s*\(\s*[aAbBcC]\s*,\s*[aAbBcC]\s*,\s*[aAbBcC]\s*\)\s*=\s*(.+)$",
-            tail_clause,
+    # Check if `first` references an auxiliary function f(A,B,C), f(a,b,c), g(a,b,c), or h(a,b,c) defined in `tail_clause`
+    fn_call_m = re.search(
+        r"([fgh])\s*\(\s*[aAbBcC]\s*,\s*[aAbBcC]\s*,\s*[aAbBcC]\s*\)", first
+    )
+    if fn_call_m:
+        fn_letter = fn_call_m.group(1)
+        # Flatten inline :math:`...` blocks in tail_clause so fragmented math (e.g. X_1314) recombines cleanly
+        tail_clean = re.sub(r"\\?\s*:math:`([^`]+)`\\?\s*", r" \1 ", tail_clause)
+        tail_clean = tail_clean.replace("\\ ", " ")
+        fm_plain = re.search(
+            rf"where\s*,?\s*{fn_letter}\s*\(\s*[aAbBcC]\s*,\s*[aAbBcC]\s*,\s*[aAbBcC]\s*\)\s*=\s*(.+)$",
+            tail_clean,
             flags=re.IGNORECASE,
         )
-        if not fm:
+        if not fm_plain:
             return None
-        rhs = fm.group(1).strip()
-        # Reject if secondary auxiliary functions u(...), v(...), t(...), s(...), x = ... are defined after a comma
-        if re.search(r",\s*(?:where\s+)?[uvtsx]\s*[\(=]", rhs):
+        rhs = fm_plain.group(1).strip().rstrip("`")
+        # Stop rhs before secondary clauses like `, where`, `, x : y : z =`, `, u : v : w =`, `, D, U, V, W`, or `;`
+        rhs = re.split(
+            r",\s*(?:where\b|[xuv]\s*:\s*[yvw]\s*:\s*[zw]|[DUVW]\s*,)|;",
+            rhs,
+            maxsplit=1,
+        )[0].strip()
+        # Strip trailing attribution like `(M. Iliev, 5/13/07)` or trailing period
+        rhs = re.sub(r"\s*\([A-Z][^()]*\d+\s*\)\s*\.?$", "", rhs).strip()
+        # Reject if secondary auxiliary functions u(...), v(...), t(...), s(...), x_1 = ... are defined or called
+        if re.search(r",\s*[uvtsx]\s*[\(=]|\b(?:[uvt]\s*\([ABCabc]|x_\{?\d)", rhs):
             return None
         # Convert inline RST superscripts `\ :sup:`2`\ ` -> `**(2)` and escaped `\*` -> `*`
         rhs = re.sub(r"\\?\s*:sup:`([^`]+)`\\?\s*", r"**(\1)", rhs)
         rhs = rhs.replace(r"\*", "*").replace("π", "pi").replace("ω", "omega")
-        first = rhs
+        first = (
+            first[: fn_call_m.start()]
+            + f"({rhs})"
+            + first[fn_call_m.end() :]
+        )
 
-    if not first or "=" in first or "\\text" in first or "see below" in first.lower():
+    if not first or "=" in first or "\\text" in first or "see below" in first.lower() or "given below" in first.lower():
+        return None
+    # Reject remaining unexpanded f(A,B,C) or f(a,b,c) calls
+    if re.search(r"[fgh]\s*\(\s*[aAbBcC]\s*,", first):
         return None
 
     # Convert LaTeX constructs to Python expression
     expr = first
     expr = expr.replace("[", "(").replace("]", ")")
+    expr = re.sub(
+        r"\\operatorname\{area\}\s*(?:\(\s*ABC\s*\)|\bABC\b)?",
+        " area ",
+        expr,
+        flags=re.IGNORECASE,
+    )
+    expr = expr.replace(r"\cdot", "*")
+    expr = re.sub(r"\\?\|OH\\?\|", " OH ", expr)
+    expr = re.sub(r"\\?\|OI\\?\|", " OI ", expr)
+    expr = re.sub(r"\bS_\{?([ABC])\}?", r"S\1", expr)
+    expr = re.sub(r"\bS_\{?\\omega\}?", "SW", expr)
+    expr = re.sub(r"\b[Rr]_\{?([abc])\}?", r"R\1", expr)
     expr = expr.replace(r"\omega", "omega").replace(r"\pi", "pi")
     expr = expr.replace(r"\Delta", "area").replace("Area", "area")
     expr = re.sub(r"\\(sin|cos|tan|cot|sec|csc)\b", r"\1", expr)
@@ -209,13 +263,38 @@ def _prepare_formula_expr(latex_or_rst: str) -> str | None:
         expr = re.sub(r"\^\{([^{}]+)\}", r"**(\1)", expr)
     expr = re.sub(r"\^(-?\d+(?:/\d+)?)", r"**(\1)", expr)
 
-    # Convert trig powers like sin**(2)(A) or cos**2 A
+    # Convert trig powers like sin**(2)(A) or cos**(2) A or cos**(2) 2A or cos**(2) A/2
     expr = re.sub(
         r"\b(sin|cos|tan|cot|sec|csc)\*\*\(([^()]+)\)\s*\(([^()]+)\)",
         r"(\1(\3))**(\2)",
         expr,
     )
-    # Convert trig with unparenthesized arguments like `sin 2A`, `cos A/2`, `tan B/4`, `sin A`
+    expr = re.sub(
+        r"\b(sin|cos|tan|cot|sec|csc)\*\*\(([^()]+)\)\s+(\d+)\s*(A|B|C|omega)\b",
+        r"(\1(\3*\4))**(\2)",
+        expr,
+    )
+    expr = re.sub(
+        r"\b(sin|cos|tan|cot|sec|csc)\*\*\(([^()]+)\)\s+(A|B|C|omega)\s*/\s*(\d+)\b",
+        r"(\1(\3/\4))**(\2)",
+        expr,
+    )
+    expr = re.sub(
+        r"\b(sin|cos|tan|cot|sec|csc)\*\*\(([^()]+)\)\s+(A|B|C|omega)\b",
+        r"(\1(\3))**(\2)",
+        expr,
+    )
+    # Convert trig with unparenthesized arguments like `sin 2A`, `cos A/2`, `tan B/4`, `sin A`, `cot 2pi /5`
+    expr = re.sub(
+        r"\b(sin|cos|tan|cot|sec|csc)\s+(\d+)\s*pi\s*/\s*(\d+)\b",
+        r"\1(\2*pi/\3)",
+        expr,
+    )
+    expr = re.sub(
+        r"\b(sin|cos|tan|cot|sec|csc)\s+pi\s*/\s*(\d+)\b",
+        r"\1(pi/\2)",
+        expr,
+    )
     expr = re.sub(
         r"\b(sin|cos|tan|cot|sec|csc)\s+(\d+)\s*(A|B|C|omega)\b",
         r"\1(\2*\3)",
@@ -255,6 +334,8 @@ def _prepare_formula_expr(latex_or_rst: str) -> str | None:
         "SB",
         "SC",
         "SW",
+        "OH",
+        "OI",
     }
     # Protect function and multi-char variable names with placeholders
     placeholders: dict[str, str] = {}
@@ -263,19 +344,19 @@ def _prepare_formula_expr(latex_or_rst: str) -> str | None:
         placeholders[ph] = fn
         expr = re.sub(rf"\b{fn}\b", ph, expr)
 
-    # Split single-letter product runs like "bc" or "abc" into "b*c"
-    expr = re.sub(r"\b([abcABC])([abcABC])\b", r"\1*\2", expr)
-    expr = re.sub(r"\b([abcABC])([abcABC])\b", r"\1*\2", expr)
+    # Split single-letter product runs like "bc", "abc", "yz", "vw", "DU" into "b*c", "y*z", "v*w", "D*U"
+    expr = re.sub(r"\b([abcxyzuvwABCRrsSeDJUVWQ])([abcxyzuvwABCRrsSeDJUVWQ])\b", r"\1*\2", expr)
+    expr = re.sub(r"\b([abcxyzuvwABCRrsSeDJUVWQ])([abcxyzuvwABCRrsSeDJUVWQ])\b", r"\1*\2", expr)
 
     # Insert * between:
     # 1. digit or var or placeholder or ) followed by ( or var or placeholder
     expr = re.sub(
-        r"(\d|[abcABCRrsS]|__FN\d+__|\))\s*(?=[abcABCRrsS\(]|__FN)",
+        r"(\d|[abcxyzuvwABCRrsSeDJUVWQ]|__FN\d+__|\))\s*(?=[abcxyzuvwABCRrsSeDJUVWQ\(]|__FN)",
         r"\1*",
         expr,
     )
     # 2. ) followed by digit or var
-    expr = re.sub(r"\)\s*(?=\d|[abcABCRrsS])", r")*", expr)
+    expr = re.sub(r"\)\s*(?=\d|[abcxyzuvwABCRrsSeDJUVWQ])", r")*", expr)
 
     # Restore function names, ensuring fn*( becomes fn(
     for ph, fn in placeholders.items():
@@ -294,7 +375,11 @@ def _compile_expr(expr_str: str) -> Any:
     return compile(expr_str, "<coord>", "eval")
 
 
-def _eval_cyclic(expr_str: str, ctx: TriangleContext) -> tuple[float, float, float] | None:
+def _eval_cyclic(
+    expr_str: str,
+    ctx: TriangleContext,
+    xyz: tuple[float, float, float] | None = None,
+) -> tuple[float, float, float] | None:
     """Evaluate a cyclic coordinate expression f(a, b, c, A, B, C) for all three components."""
     code = None
     try:
@@ -302,12 +387,22 @@ def _eval_cyclic(expr_str: str, ctx: TriangleContext) -> tuple[float, float, flo
     except Exception:
         return None
 
+    xyz_rotations: tuple[dict[str, float], dict[str, float], dict[str, float]] | None = None
+    if xyz is not None:
+        tx, ty, tz = xyz
+        xyz_rotations = (
+            {"x": tx, "y": ty, "z": tz, "u": tx, "v": ty, "w": tz},
+            {"x": ty, "y": tz, "z": tx, "u": ty, "v": tz, "w": tx},
+            {"x": tz, "y": tx, "z": ty, "u": tz, "v": tx, "w": ty},
+        )
+
     for env_tuple in (ctx.eval_envs, ctx.perturbed_eval_envs):
         vals: list[float] = []
         ok = True
         try:
-            for env in env_tuple:
-                val = float(eval(code, _EMPTY_GLOBALS, env))
+            for idx, env in enumerate(env_tuple):
+                local_env = {**env, **xyz_rotations[idx]} if xyz_rotations else env
+                val = float(eval(code, _EMPTY_GLOBALS, local_env))
                 if not math.isfinite(val):
                     ok = False
                     break
@@ -513,6 +608,48 @@ class CenterRegistry:
             self._store(368, (a * (b**2 + c**2), b * (c**2 + a**2), c * (a**2 + b**2)))
         except Exception:
             pass
+        # X(134) X(107)-of-Orthic-Triangle
+        try:
+            def _u134(xA: float, xB: float, xC: float) -> float:
+                s2A, s2B, s2C = math.sin(2.0 * xA), math.sin(2.0 * xB), math.sin(2.0 * xC)
+                return s2A * (s2B**2 - s2C**2) * ((s2B**2 + s2C**2 - s2A**2) ** 2)
+            def _f134(xA: float, xB: float, xC: float) -> float:
+                return (1.0 / math.cos(xA)) * _u134(xA, xB, xC) * (_u134(xC, xA, xB) - _u134(xB, xA, xC))
+            self._store(134, (a * _f134(A, B, C), b * _f134(B, C, A), c * _f134(C, A, B)))
+        except Exception:
+            pass
+        # X(180) 2nd Ajima-Malfatti Point
+        try:
+            def _t180(xA: float, xB: float, xC: float) -> float:
+                return 1.0 + 2.0 * ((math.cos(xB / 4.0) * math.cos(xC / 4.0) / math.cos(xA / 4.0)) ** 2)
+            tA, tB, tC = _t180(A, B, C), _t180(B, C, A), _t180(C, A, B)
+            self._store(
+                180,
+                (
+                    a * (1.0 / tB + 1.0 / tC - 1.0 / tA),
+                    b * (1.0 / tC + 1.0 / tA - 1.0 / tB),
+                    c * (1.0 / tA + 1.0 / tB - 1.0 / tC),
+                ),
+            )
+        except Exception:
+            pass
+        # X(1144) Ehrmann Congruent Squares Point
+        try:
+            D_val = self.ctx.area
+            L_val = 0.25 * min(a, b, c)
+            for _ in range(30):
+                fv = a**2 / (a - L_val) + b**2 / (b - L_val) + c**2 / (c - L_val) - 2.0 * D_val / L_val
+                df = (
+                    a**2 / ((a - L_val) ** 2)
+                    + b**2 / ((b - L_val) ** 2)
+                    + c**2 / ((c - L_val) ** 2)
+                    + 2.0 * D_val / (L_val**2)
+                )
+                if abs(df) > 1e-12:
+                    L_val -= fv / df
+            self._store(1144, (a**2 / (a - L_val), b**2 / (b - L_val), c**2 / (c - L_val)))
+        except Exception:
+            pass
 
     def _store(self, num: int, bary: tuple[float, float, float]) -> bool:
         norm = math.hypot(*bary)
@@ -549,19 +686,35 @@ class CenterRegistry:
         self.xy_cache[num] = xy
         return True
 
+    def _extract_xyz_trilinears(self, line: str) -> tuple[float, float, float] | None:
+        m = re.search(
+            r"(?:x\s*:\s*y\s*:\s*z|u\s*:\s*v\s*:\s*w)`?\s*=\s*(?::ref:`[^`]*<X_(\d+)>`|X(?:_|\()(\d+))",
+            line,
+            flags=re.IGNORECASE,
+        )
+        if not m:
+            return None
+        k = int(m.group(1) or m.group(2))
+        if k not in self.bary_cache:
+            return None
+        u, v, w = self.bary_cache[k]
+        return (u / self.ctx.raw_a, v / self.ctx.raw_b, w / self.ctx.raw_c)
+
     def _try_eval_coordinates(self, cdata: dict[str, Any]) -> tuple[float, float, float] | None:
         """Try evaluating trilinear or barycentric formulas from parsed center data."""
         for b_line in cdata.get("barycentrics") or []:
             expr = _prepare_formula_expr(b_line)
             if expr:
-                res = _eval_cyclic(expr, self.ctx)
+                xyz = self._extract_xyz_trilinears(b_line)
+                res = _eval_cyclic(expr, self.ctx, xyz=xyz)
                 if res and math.hypot(*res) > 1e-11:
                     return res
 
         for t_line in cdata.get("trilinears") or []:
             expr = _prepare_formula_expr(t_line)
             if expr:
-                res = _eval_cyclic(expr, self.ctx)
+                xyz = self._extract_xyz_trilinears(t_line)
+                res = _eval_cyclic(expr, self.ctx, xyz=xyz)
                 if res:
                     bary = self.ctx.trilinear_to_bary(*res)
                     if math.hypot(*bary) > 1e-11:
@@ -598,10 +751,100 @@ class CenterRegistry:
         return None
 
     def _try_eval_relations(self, cdata: dict[str, Any]) -> tuple[float, float, float] | None:
-        """Try computing X(n) from anchored functional relations like isogonal/isotomic conjugate, complement, midpoint."""
+        """Try computing X_n from anchored functional relations like isogonal/isotomic conjugate, complement, midpoint."""
         a, b, c = self.ctx.raw_a, self.ctx.raw_b, self.ctx.raw_c
+        title_s = re.sub(r"\bX_(\d+)", r"X(\1)", (cdata.get("title") or "").strip())
+
+        # Preamble-defined group transformations indicated in center title
+        # 1. 1st/2nd/3rd Saragossa point of X(k)
+        m_sar = re.match(
+            r"^(1st|2nd|3rd)\s+SARAGOSSA\s+POINT\s+OF\s+X\((\d+)\)$",
+            title_s,
+            re.IGNORECASE,
+        )
+        if m_sar:
+            which = m_sar.group(1).lower()
+            k = int(m_sar.group(2))
+            if k in self.bary_cache:
+                u, v, w = self.bary_cache[k]
+                tx, ty, tz = u / a, v / b, w / c
+                if which == "1st":
+                    return (
+                        a**2 / (tx * (b * tz + c * ty)),
+                        b**2 / (ty * (c * tx + a * tz)),
+                        c**2 / (tz * (a * ty + b * tx)),
+                    )
+                if which == "2nd":
+                    return (
+                        a**2 * tx * ((b**2 * tz**2 + c**2 * ty**2) * tx + tx * ty * tz * b * c + a * ty * tz * (b * tz + c * ty)),
+                        b**2 * ty * ((c**2 * tx**2 + a**2 * tz**2) * ty + ty * tz * tx * c * a + b * tz * tx * (c * tx + a * tz)),
+                        c**2 * tz * ((a**2 * ty**2 + b**2 * tx**2) * tz + tz * tx * ty * a * b + c * tx * ty * (a * ty + b * tx)),
+                    )
+                if which == "3rd":
+                    return (
+                        a**2 * tx * ((b**2 * tz**2 + c**2 * ty**2) * tx + a * ty * tz * (b * tz + c * ty)),
+                        b**2 * ty * ((c**2 * tx**2 + a**2 * tz**2) * ty + b * tz * tx * (c * tx + a * tz)),
+                        c**2 * tz * ((a**2 * ty**2 + b**2 * tx**2) * tz + c * tx * ty * (a * ty + b * tx)),
+                    )
+
+        # 2. Collings transform of X(k)
+        m_col = re.match(r"^COLLINGS\s+TRANSFORM\s+OF\s+X\((\d+)\)$", title_s, re.IGNORECASE)
+        if m_col:
+            k = int(m_col.group(1))
+            if k in self.bary_cache:
+                u, v, w = self.bary_cache[k]
+                tx, ty, tz = u / a, v / b, w / c
+                return (
+                    a / (b * tz * (u + v - w) - c * ty * (u + w - v)),
+                    b / (c * tx * (v + w - u) - a * tz * (v + u - w)),
+                    c / (a * ty * (w + u - v) - b * tx * (w + v - u)),
+                )
+
+        # 3. Brisse transform of X(k)
+        m_bri = re.match(r"^BRISSE\s+TRANSFORM\s+OF\s+X\((\d+)\)$", title_s, re.IGNORECASE)
+        if m_bri:
+            k = int(m_bri.group(1))
+            if k in self.bary_cache:
+                u, v, w = self.bary_cache[k]
+                return (
+                    a**4 / ((b + c - a) * (u**2)),
+                    b**4 / ((c + a - b) * (v**2)),
+                    c**4 / ((a + b - c) * (w**2)),
+                )
+
+        # 4. Orthojoin of X(k)
+        m_ort = re.match(r"^ORTHOJOIN\s+OF\s+X\((\d+)\)$", title_s, re.IGNORECASE)
+        if m_ort:
+            k = int(m_ort.group(1))
+            if k in self.bary_cache:
+                u, v, w = self.bary_cache[k]
+                tx, ty, tz = u / a, v / b, w / c
+                cosA, cosB, cosC = math.cos(self.ctx.A_rad), math.cos(self.ctx.B_rad), math.cos(self.ctx.C_rad)
+                def _oj(xa: float, xb: float, xc: float, xx: float, xy: float, xz: float, cB: float, cC: float) -> float:
+                    D_v = xb * xc * (2.0 * xa * xb * xc * xx + (xc**3) * xy + (xb**3) * xz - xb * xc * (xb * xy + xc * xz) - (xa**2) * (xc * xy + xb * xz))
+                    E_v = ((xa**4) - ((xb**2 - xc**2) ** 2)) * xx - 4.0 * (xa**2) * xb * xc * (xy * cB + xz * cC)
+                    return xa * D_v * E_v
+                return (
+                    _oj(a, b, c, tx, ty, tz, cosB, cosC),
+                    _oj(b, c, a, ty, tz, tx, cosC, cosA),
+                    _oj(c, a, b, tz, tx, ty, cosA, cosB),
+                )
+
+        # 5. TCC-perspector of X(k)
+        m_tcc = re.match(r"^TCC-PERSPECTOR\s+OF\s+X\((\d+)\)$", title_s, re.IGNORECASE)
+        if m_tcc:
+            k = int(m_tcc.group(1))
+            if k in self.bary_cache:
+                u, v, w = self.bary_cache[k]
+                qa, qb, qc = (a**4) / (u**2), (b**4) / (v**2), (c**4) / (w**2)
+                return (
+                    (a**2) * (qb + qc - qa),
+                    (b**2) * (qc + qa - qb),
+                    (c**2) * (qa + qb - qc),
+                )
+
         for rel in cdata.get("relations") or []:
-            rel_s = rel.strip()
+            rel_s = re.sub(r"\bX_(\d+)", r"X(\1)", rel.strip())
             # isogonal conjugate of X(k)
             m = re.match(
                 r"^X\(\d+\)\s*=\s*(?:the\s+)?isogonal\s+conjugate\s+of\s+X\((\d+)\)\s*$",
@@ -1053,9 +1296,9 @@ _CLASSICAL_NAME_TO_NUM: dict[str, int] = {
 
 def _resolve_center_token(tok: str) -> int | None:
     s = tok.strip().lower()
-    m = re.match(r"^x\((\d+)\)$", s)
+    m = re.match(r"^x(?:\((\d+)\)|_(\d+))$", s)
     if m:
-        return int(m.group(1))
+        return int(m.group(1) or m.group(2))
     s = re.sub(r"^the\s+", "", s)
     return _CLASSICAL_NAME_TO_NUM.get(s)
 
@@ -1719,7 +1962,7 @@ def build_center_model(
             target_pt = get_or_add_center_pt(num, is_target=True)
             if t1 and target_pt is not None:
                 if re.search(
-                    r"\b(?:centroid|orthocenter|incenter|circumcenter|symmedian\s+point|nine-point\s+center|de\s+longchamps\s+point|bevan\s+point|X\(\d+\))(?:\s+|-)+of(?:\s+|-)+(?:the\s+)?[a-z\-]+\s+triangle",
+                    r"\b(?:centroid|orthocenter|incenter|circumcenter|symmedian\s+point|nine-point\s+center|de\s+longchamps\s+point|bevan\s+point|X(?:\(\d+\)|_\d+))(?:\s+|-)+of(?:\s+|-)+(?:the\s+)?[a-z\-]+\s+triangle",
                     title_str,
                     re.IGNORECASE,
                 ):
@@ -1749,7 +1992,7 @@ def build_center_model(
     #  Crosspoint, Cevapoint, Ceva/Beth/Line Conjugate, Isogonal/Isotomic Conjugate)
     if not constructed_primary:
         m_pair = re.search(
-            r"\b(?:midpoint|reflection)\s+of\s+(X\(\d+\)|[a-z\-\s]+?)\s+(?:and|in)\s+(X\(\d+\)|[a-z\-\s]+?)(?:\s*$|\s*\.)",
+            r"\b(?:midpoint|reflection)\s+of\s+(X(?:\(\d+\)|_\d+)|[a-z\-\s]+?)\s+(?:and|in)\s+(X(?:\(\d+\)|_\d+)|[a-z\-\s]+?)(?:\s*$|\s*\.)",
             title_and_rels,
             re.IGNORECASE,
         )
@@ -1762,7 +2005,7 @@ def build_center_model(
 
     if not constructed_primary:
         m_comp = re.search(
-            r"\b(anticomplement|complement)\s+of\s+(X\(\d+\)|feuerbach\s+point|incenter|orthocenter|circumcenter|symmedian\s+point|gergonne\s+point|nagel\s+point)",
+            r"\b(anticomplement|complement)\s+of\s+(X(?:\(\d+\)|_\d+)|feuerbach\s+point|incenter|orthocenter|circumcenter|symmedian\s+point|gergonne\s+point|nagel\s+point)",
             title_and_rels,
             re.IGNORECASE,
         )
@@ -1776,7 +2019,7 @@ def build_center_model(
 
     if not constructed_primary:
         m_inv = re.search(
-            r"\binverse\s*-?\s*in\s*-?\s*(circumcircle|incircle|nine-point\s+circle)\s+of\s+(X\(\d+\)|incenter|centroid|orthocenter|circumcenter|symmedian\s+point|feuerbach\s+point)",
+            r"\binverse\s*-?\s*in\s*-?\s*(circumcircle|incircle|nine-point\s+circle)\s+of\s+(X(?:\(\d+\)|_\d+)|incenter|centroid|orthocenter|circumcenter|symmedian\s+point|feuerbach\s+point)",
             title_and_rels,
             re.IGNORECASE,
         )
@@ -1802,7 +2045,7 @@ def build_center_model(
                     add_primary_central_line(5, 11)
             else:
                 add_circumcircle()
-                m_ant = re.search(r"\bantipode\s+of\s+(X\(\d+\)|[a-z\-\s]+)", title_str, re.IGNORECASE)
+                m_ant = re.search(r"\bantipode\s+of\s+(X(?:\(\d+\)|_\d+)|[a-z\-\s]+)", title_str, re.IGNORECASE)
                 if m_ant:
                     k_ant = _resolve_center_token(m_ant.group(1))
                     if k_ant:
@@ -1815,7 +2058,7 @@ def build_center_model(
 
     if not constructed_primary:
         m_pair_op = re.search(
-            r"\b(?:crosspoint|cevapoint)\s+of\s+(X\(\d+\)|[a-z\-\s]+?)\s+and\s+(X\(\d+\)|[a-z\-\s]+?)(?:\s*$|\s*\.)|(X\(\d+\))\s*-\s*(?:ceva|beth|line|cross)\s+conjugate\s+of\s+(X\(\d+\))",
+            r"\b(?:crosspoint|cevapoint)\s+of\s+(X(?:\(\d+\)|_\d+)|[a-z\-\s]+?)\s+and\s+(X(?:\(\d+\)|_\d+)|[a-z\-\s]+?)(?:\s*$|\s*\.)|(X(?:\(\d+\)|_\d+))\s*-\s*(?:ceva|beth|line|cross)\s+conjugate\s+of\s+(X(?:\(\d+\)|_\d+))",
             title_and_rels,
             re.IGNORECASE,
         )
@@ -1832,7 +2075,7 @@ def build_center_model(
 
     if not constructed_primary:
         m_conj = re.search(
-            r"\b(isogonal|isotomic)\s+conjugate\s+of\s+(X\(\d+\)|[a-z\-\s]+?)(?:\s*$|\s*\.)",
+            r"\b(isogonal|isotomic)\s+conjugate\s+of\s+(X(?:\(\d+\)|_\d+)|[a-z\-\s]+?)(?:\s*$|\s*\.)",
             title_and_rels,
             re.IGNORECASE,
         )
@@ -1846,12 +2089,14 @@ def build_center_model(
 
     if not constructed_primary:
         m_harm = re.search(
-            r"\{\s*X\((\d+)\)\s*,\s*X\((\d+)\)\s*\}\s*-?\s*harmonic\s+conjugate\s+of\s+X\((\d+)\)",
+            r"\{\s*X(?:\((\d+)\)|_(\d+))\s*,\s*X(?:\((\d+)\)|_(\d+))\s*\}\s*-?\s*harmonic\s+conjugate\s+of\s+X(?:\((\d+)\)|_(\d+))",
             combined_primary_text,
             re.IGNORECASE,
         )
         if m_harm:
-            i_k, j_k, k_k = int(m_harm.group(1)), int(m_harm.group(2)), int(m_harm.group(3))
+            i_k = int(m_harm.group(1) or m_harm.group(2))
+            j_k = int(m_harm.group(3) or m_harm.group(4))
+            k_k = int(m_harm.group(5) or m_harm.group(6))
             get_or_add_center_pt(k_k)
             add_primary_central_line(i_k, j_k)
             constructed_primary = True
@@ -1894,7 +2139,7 @@ def build_center_model(
                 target_pt = get_or_add_center_pt(num, is_target=True)
                 if t1 and target_pt is not None:
                     if re.search(
-                        r"\b(?:centroid|orthocenter|incenter|circumcenter|symmedian\s+point|nine-point\s+center|X\(\d+\))(?:\s+|-)+of(?:\s+|-)+(?:the\s+)?[a-z\-]+\s+triangle",
+                        r"\b(?:centroid|orthocenter|incenter|circumcenter|symmedian\s+point|nine-point\s+center|X(?:\(\d+\)|_\d+))(?:\s+|-)+of(?:\s+|-)+(?:the\s+)?[a-z\-]+\s+triangle",
                         note0,
                         re.IGNORECASE,
                     ):
@@ -1914,10 +2159,10 @@ def build_center_model(
                         for pt_rm in constructed_triangles.pop(t1_key, ()):
                             model.pop(pt_rm, None)
 
-    # General Rule C: Explicit Sideline Cevian Definition ("cevian triangle" or "A', B', C' on BC, CA, AB ... concur in X(n)")
+    # General Rule C: Explicit Sideline Cevian Definition ("cevian triangle" or "A', B', C' on BC, CA, AB ... concur in X_n")
     if not constructed_primary:
         if re.search(
-            r"\bcevian\s+triangle\b|\bon\s+(?:the\s+)?(?:sidelines|sides)\s+BC\s*,\s*CA\s*,\s*AB\b.*\bconcur\s+in\s+X\(\d+\)",
+            r"\bcevian\s+triangle\b|\bon\s+(?:the\s+)?(?:sidelines|sides)\s+BC\s*,\s*CA\s*,\s*AB\b.*\bconcur\s+in\s+X(?:\(\d+\)|_\d+)",
             combined_primary_text,
             re.IGNORECASE | re.DOTALL,
         ):
@@ -2323,5 +2568,198 @@ if __name__ == "__main__":
     )
 '''
     return code
+
+
+def select_collection_centers(
+    center_nums: list[int],
+    registry: CenterRegistry,
+    max_points: int = 16,
+) -> list[int]:
+    """Select an editorial subset of 12–16 well-separated landmark centers from `center_nums`."""
+    from .render import _load_center_names
+
+    nums_sorted = [n for n in sorted(set(center_nums)) if n in registry.xy_cache]
+    if len(nums_sorted) <= max_points:
+        # Filter out extreme far-out outliers (> 2.2 units from origin) if enough bounded centers exist
+        bounded = [
+            n
+            for n in nums_sorted
+            if -0.85 <= registry.xy_cache[n][0] <= 1.85
+            and -0.85 <= registry.xy_cache[n][1] <= 1.55
+        ]
+        return bounded if len(bounded) >= min(8, len(nums_sorted)) else nums_sorted
+
+    center_names = _load_center_names()
+    generic_prefixes = (
+        "isogonal conjugate",
+        "isotomic conjugate",
+        "complement of",
+        "anticomplement of",
+        "cevapoint of",
+        "crosspoint of",
+        "crossdifference",
+        "trilinear pole",
+        "trilinear product",
+        "barycentric product",
+        "harmonic conjugate",
+        "midpoint of",
+        "reflection of",
+        "inverse-in-",
+        "1st ",
+        "2nd ",
+        "3rd ",
+    )
+
+    def _editorial_priority(n: int) -> tuple[int, int]:
+        xy = registry.xy_cache[n]
+        in_primary = -0.65 <= xy[0] <= 1.65 and -0.65 <= xy[1] <= 1.35
+        in_secondary = -1.2 <= xy[0] <= 2.2 and -1.2 <= xy[1] <= 1.8
+        bound_tier = 0 if in_primary else (1 if in_secondary else 2)
+        if n == nums_sorted[0]:
+            return (bound_tier, -1000)
+        name = center_names.get(str(n), "").strip().lower()
+        is_named = bool(name) and not name.startswith(generic_prefixes) and "conjugate of" not in name
+        return (bound_tier, -500 + n if is_named else n)
+
+    candidates = sorted(nums_sorted, key=_editorial_priority)
+    chosen: list[int] = []
+    chosen_xy: list[tuple[float, float]] = []
+
+    # Pass 1: generous spatial separation (0.085 units ~ 45px) so dots and labels never crowd
+    for n in candidates:
+        if len(chosen) >= max_points:
+            break
+        xy = registry.xy_cache[n]
+        if not (-1.2 <= xy[0] <= 2.2 and -1.2 <= xy[1] <= 1.8):
+            continue
+        if all(math.hypot(xy[0] - cx, xy[1] - cy) >= 0.085 for cx, cy in chosen_xy):
+            chosen.append(n)
+            chosen_xy.append(xy)
+
+    # Pass 2: if fewer than 12 centers were picked (e.g., collinear family on Euler line or circumcircle),
+    # relax separation to 0.048 units (~25px) to reach 12-16 points
+    if len(chosen) < min(14, len(nums_sorted)):
+        for n in candidates:
+            if len(chosen) >= max_points:
+                break
+            if n in chosen:
+                continue
+            xy = registry.xy_cache[n]
+            if not (-1.4 <= xy[0] <= 2.4 and -1.4 <= xy[1] <= 2.0):
+                continue
+            if all(math.hypot(xy[0] - cx, xy[1] - cy) >= 0.048 for cx, cy in chosen_xy):
+                chosen.append(n)
+                chosen_xy.append(xy)
+
+    if not chosen:
+        chosen = nums_sorted[:max_points]
+
+    return sorted(chosen)
+
+
+def build_collection_model(
+    center_nums: list[int],
+    registry: CenterRegistry,
+    collection_title: str = "",
+    include_baseline_guides: bool = True,
+    range_label: str = "",
+) -> Model:
+    """Build a `geometor.model.Model` displaying the selected centers of a thematic collection on triangle ABC."""
+    ctx = registry.ctx
+    nums_sorted = sorted(set(center_nums))
+    target_set = set(nums_sorted)
+    range_str = range_label or (f"X_{nums_sorted[0]}–X_{nums_sorted[-1]}" if nums_sorted else "Collection")
+    model_name = f"{range_str}: {collection_title}" if collection_title else range_str
+    model = Model(model_name)
+
+    A = _add_point(model, 0.0, 0.0, ID="A", classes=["given", "vertex"])
+    B = _add_point(model, 1.0, 0.0, ID="B", classes=["given", "vertex"])
+    _add_line(model, A, B, ID="[ A B ]", classes=["given", "sideline"])
+
+    if include_baseline_guides:
+        R_b = _add_point(model, ctx.b, 0.0, ID="R_b", classes=["guide"], guide=True)
+        R_a = _add_point(model, 1.0 - ctx.a, 0.0, ID="R_a", classes=["guide"], guide=True)
+        cA = _add_circle(model, A, R_b, ID="( A R_b )", classes=["guide"], guide=True)
+        cB = _add_circle(model, B, R_a, ID="( B R_a )", classes=["guide"], guide=True)
+        C = _add_point(model, ctx.C_xy[0], ctx.C_xy[1], ID="C", classes=["vertex"], parents=[cA, cB])
+    else:
+        C = _add_point(model, ctx.C_xy[0], ctx.C_xy[1], ID="C", classes=["vertex"])
+
+    _add_line(model, B, C, ID="[ B C ]", classes=["sideline"])
+    _add_line(model, C, A, ID="[ C A ]", classes=["sideline"])
+    _add_polygon(model, [A, B, C], ID="< A B C >", classes=["reference"])
+
+    added_pts: dict[int, spg.Point] = {}
+
+    def get_ref_pt(c_num: int, as_guide: bool = True) -> spg.Point | None:
+        if c_num in added_pts:
+            return added_pts[c_num]
+        xy = registry.xy_cache.get(c_num)
+        if xy is None:
+            return None
+        is_t = c_num in target_set
+        cls = ["selected", "target"] if is_t else (["guide"] if as_guide else ["center"])
+        pt = _add_point(model, xy[0], xy[1], ID=f"X_{c_num}", classes=cls, guide=(as_guide and not is_t))
+        added_pts[c_num] = pt
+        return pt
+
+    title_low = collection_title.lower()
+
+    # Circumcircle & Incircle as universal geometric context
+    X3 = get_ref_pt(3, as_guide=True)
+    if X3 is not None:
+        _add_circle(model, X3, A, ID="circumcircle", classes=["circumcircle"])
+    X1 = get_ref_pt(1, as_guide=True)
+    if X1 is not None:
+        r_in = ctx.r * ctx.scale
+        _add_circle(model, X1, r_in, ID="incircle", classes=["incircle"])
+
+    # Nine-point circle when relevant to the collection
+    if (
+        5 in target_set
+        or any(113 <= n <= 139 for n in nums_sorted)
+        or any(k in title_low for k in ("nine-point", "feuerbach", "orthic", "euler", "classical"))
+    ):
+        X5 = get_ref_pt(5, as_guide=True)
+        if X5 is not None:
+            r_np = 0.5 * ctx.R * ctx.scale
+            _add_circle(model, X5, r_np, ID="nine_point_circle", classes=["nine_point_circle"])
+
+    # Euler line when relevant
+    if 2 in target_set or 20 in target_set or "euler" in title_low or "classical" in title_low:
+        X2 = get_ref_pt(2, as_guide=True)
+        if X2 is not None and X3 is not None:
+            _add_line(model, X2, X3, ID="{ 2, 3 }", classes=["golden", "euler"])
+
+    # Brocard axis when relevant
+    if "brocard" in title_low or "symmedian" in title_low:
+        X6 = get_ref_pt(6, as_guide=True)
+        if X3 is not None and X6 is not None:
+            _add_line(model, X3, X6, ID="{ 3, 6 }", classes=["central_line"])
+
+    # Infinity direction ring when collection focuses on points at infinity
+    if "infinity" in title_low:
+        X2 = get_ref_pt(2, as_guide=True)
+        if X2 is not None:
+            r_inf = 1.15 * ctx.R * ctx.scale
+            _add_circle(model, X2, r_inf, ID="infinity_direction_circle", classes=["secondary_circle"])
+
+    # Add all selected collection centers as target points on top
+    for c_num in nums_sorted:
+        if c_num in added_pts:
+            pt = added_pts[c_num]
+            el_data = model.pop(pt)
+            el_data.guide = False
+            el_data.classes = {"point": "", "selected": "", "target": ""}
+            super(Model, model).__setitem__(pt, el_data)
+            continue
+        xy = registry.xy_cache.get(c_num)
+        if xy is None:
+            continue
+        pt = _add_point(model, xy[0], xy[1], ID=f"X_{c_num}", classes=["selected", "target"])
+        added_pts[c_num] = pt
+
+    return model
+
 
 

@@ -108,6 +108,7 @@ def _inline_etc_svgs(app, pagename, templatename, context, doctree):
     """Format X_n subscripts across HTML pages and inline interactive 4-tab SVGs on center pages."""
     import html as _html
     from geometor.etc.render import _load_center_names
+    from geometor.etc.transform import get_collection_spec
 
     if context.get("title"):
         context["title"] = _format_html_x_subscripts(str(context["title"]))
@@ -115,13 +116,43 @@ def _inline_etc_svgs(app, pagename, templatename, context, doctree):
         nav_obj = context.get(nav_key)
         if isinstance(nav_obj, dict) and nav_obj.get("title"):
             nav_obj["title"] = _format_html_x_subscripts(str(nav_obj["title"]))
+    for crumb in context.get("book_breadcrumbs") or []:
+        if isinstance(crumb, dict) and crumb.get("title"):
+            docname = crumb.get("docname", "")
+            m_col = re.search(r"c-(\d+)-(\d+)/index$", docname)
+            if m_col:
+                _, _, col_title, _ = get_collection_spec(int(m_col.group(1)))
+                crumb["title"] = _format_html_x_subscripts(f"{crumb['title']} · {_html.escape(col_title)}")
+            else:
+                crumb["title"] = _format_html_x_subscripts(str(crumb["title"]))
 
     body = context.get("body")
     if not body:
         return
 
-    # On the centers collection index, append the center subtitle as a second line inside each card's <h2><a>
-    if pagename == "centers/index":
+    # On the top-level centers index (or types/collection), append the thematic title and count inside each card's <h2><a>
+    if pagename in ("centers/index", "types/collection"):
+        def _col_card_h2_repl(m: re.Match) -> str:
+            href, s_str, e_str, inner = m.group(1), m.group(2), m.group(3), m.group(4)
+            start_n, end_n = int(s_str), int(e_str)
+            _, _, col_title, _ = get_collection_spec(start_n)
+            count = end_n - start_n + 1
+            sub_esc = _html.escape(f"{col_title} ({count} centers)")
+            return (
+                f'<h2><a href="{href}">{inner}'
+                f'<span class="etc-card-subtitle" style="display: block; font-size: 0.82em; '
+                f'font-weight: 700; font-style: normal; color: var(--book-text-muted); '
+                f'margin-top: 0.12rem;">{sub_esc}</span></a></h2>'
+            )
+
+        body = re.sub(
+            r'<h2><a href="((?:[^"/]+/)*c-(\d+)-(\d+)/index\.html)">(.*?)</a></h2>',
+            _col_card_h2_repl,
+            body,
+        )
+
+    # On each thematic collection page, append the center subtitle as a second line inside each center card's <h2><a>
+    if pagename.startswith("centers/c-") and pagename.endswith("/index"):
         center_names = _load_center_names()
 
         def _card_h2_repl(m: re.Match) -> str:
@@ -147,7 +178,9 @@ def _inline_etc_svgs(app, pagename, templatename, context, doctree):
     # Convert X_n -> X<sub>n</sub> in HTML text nodes before inlining raw SVGs
     body = _ETC_HEADING_CSS + _format_html_x_subscripts(body)
 
-    if not pagename.startswith("centers/x-"):
+    is_center_page = "/x-" in pagename
+    is_collection_page = pagename.startswith("centers/c-") and pagename.endswith("/index")
+    if not (is_center_page or is_collection_page):
         context["body"] = body
         return
 
@@ -231,8 +264,13 @@ def _inline_etc_svgs(app, pagename, templatename, context, doctree):
             + "\n</div>"
         )
 
+    svg_pattern = (
+        r'<img\b[^>]*\bsrc="[^"]*/(x-\d+)\.svg"[^>]*/>'
+        if is_center_page
+        else r'<img\b[^>]*\bsrc="[^"]*/(c-\d+-\d+)\.svg"[^>]*/>'
+    )
     context["body"] = re.sub(
-        r'<img\b[^>]*\bsrc="[^"]*/(x-\d+)\.svg"[^>]*/>',
+        svg_pattern,
         _repl,
         body,
     )
@@ -240,5 +278,5 @@ def _inline_etc_svgs(app, pagename, templatename, context, doctree):
 
 def setup(app):
     app.connect("doctree-resolved", _fix_etc_ref_tooltips, priority=400)
-    app.connect("html-page-context", _inline_etc_svgs)
+    app.connect("html-page-context", _inline_etc_svgs, priority=600)
 

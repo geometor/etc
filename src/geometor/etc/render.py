@@ -238,6 +238,14 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
     font-weight: 700;
 }
 
+#labels text.dense-label {
+    display: none;
+}
+
+#labels text.dense-label.hover-label {
+    display: block !important;
+}
+
 .etc-svg-stage {
     position: relative;
     width: 100%;
@@ -374,10 +382,11 @@ INTERACTIVE_SVG_JS = r"""
         const vb = getViewBox();
         const unitsPerPx = vb[2] / widthPx;
 
+        const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
         pointEls.forEach(c => {
             const isTarget = c.classList.contains('target') || c.classList.contains('selected');
             const isGuide = c.classList.contains('guide');
-            const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);
+            const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
             c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
         });
 
@@ -761,6 +770,18 @@ INTERACTIVE_SVG_JS = r"""
         isPanning = false;
         svg.classList.remove('is-panning');
         clearHover();
+    });
+
+    svg.addEventListener('click', (event) => {
+        if (didDrag) return;
+        const pt = event.target.closest('circle[data-id]');
+        if (!pt) return;
+        const pid = pt.getAttribute('data-id') || '';
+        const m = pid.match(/^X_(\d+)$/);
+        if (m && typeof window !== 'undefined' && window.location && window.location.pathname.includes('/c-') && !window.location.pathname.includes('/x-')) {
+            const slug = 'x-' + m[1].padStart(5, '0');
+            window.location.href = `${slug}/index.html`;
+        }
     });
 
     svg.addEventListener('dblclick', (event) => {
@@ -1406,18 +1427,41 @@ def render_model_svg(
     min_x, max_x = float("inf"), float("-inf")
     min_y, max_y = float("inf"), float("-inf")
 
+    num_targets = sum(
+        1
+        for p in points_by_id.values()
+        if "target" in p["classes"] or "selected" in p["classes"]
+    )
+    is_collection_model = num_targets > 1
+    tight_targets = [
+        p
+        for p in points_by_id.values()
+        if ("target" in p["classes"] or "selected" in p["classes"])
+        and -0.85 <= p["x"] <= 1.85
+        and -0.85 <= p["y"] <= 1.55
+    ]
+    use_tight_collection_box = is_collection_model and len(tight_targets) >= 3
+
     for p in points_by_id.values():
         if "incident" in p["classes"]:
             continue
         if p["guide"]:
-            if p["ID"] not in {"R_a", "R_b"} and abs(p["x"]) <= 3.0 and abs(p["y"]) <= 3.0:
+            if not is_collection_model and p["ID"] not in {"R_a", "R_b"} and abs(p["x"]) <= 3.0 and abs(p["y"]) <= 3.0:
+                min_x = min(min_x, p["x"])
+                max_x = max(max_x, p["x"])
+                min_y = min(min_y, p["y"])
+                max_y = max(max_y, p["y"])
+            continue
+        if use_tight_collection_box and ("target" in p["classes"] or "selected" in p["classes"]):
+            if -0.85 <= p["x"] <= 1.85 and -0.85 <= p["y"] <= 1.55:
                 min_x = min(min_x, p["x"])
                 max_x = max(max_x, p["x"])
                 min_y = min(min_y, p["y"])
                 max_y = max(max_y, p["y"])
             continue
         # Guard against extreme far-out points dwarfing the reference triangle
-        if abs(p["x"]) <= 4.5 and abs(p["y"]) <= 4.5:
+        bound_lim = 2.4 if is_collection_model else 4.5
+        if abs(p["x"]) <= bound_lim and abs(p["y"]) <= bound_lim:
             min_x = min(min_x, p["x"])
             max_x = max(max_x, p["x"])
             min_y = min(min_y, p["y"])
@@ -1438,7 +1482,7 @@ def render_model_svg(
         if c["type"] == "circle" and not c["guide"] and "incident" not in c["classes"]:
             ctr = points_by_id.get(c["center"])
             r = c["radius"]
-            if ctr and r <= 3.5:
+            if ctr and r <= (1.6 if is_collection_model else 3.5):
                 min_x = min(min_x, ctr["x"] - r)
                 max_x = max(max_x, ctr["x"] + r)
                 min_y = min(min_y, ctr["y"] - r)
@@ -1470,8 +1514,13 @@ def render_model_svg(
 
     # Point radius scaled like `scaleCircles()` in `explorer/static/js/svg.js` (1.5x scale)
     units_per_px = vb_width / svg_width
+    target_r_px = (
+        10.5
+        if num_targets <= 1
+        else (8.0 if num_targets <= 25 else (6.8 if num_targets <= 50 else 5.8))
+    )
     pt_radius = 7.5 * units_per_px
-    target_radius = 10.5 * units_per_px
+    target_radius = target_r_px * units_per_px
     guide_radius = 4.8 * units_per_px
     font_size = 20.25 * units_per_px
     guide_font_size = 17.5 * units_per_px
@@ -1481,6 +1530,8 @@ def render_model_svg(
     elements_nodes: list[str] = []
     points_nodes: list[str] = []
     labels_nodes: list[str] = []
+    placed_label_px: list[tuple[float, float]] = []
+    placed_target_labels = 0
 
     for el in elements:
         raw_id = el["ID"]
@@ -1596,6 +1647,22 @@ def render_model_svg(
 
                 offset_x = ox_px * units_per_px
                 offset_y = oy_px * units_per_px
+                lbl_x_px = (cx + offset_x) / units_per_px
+                lbl_y_px = (cy + offset_y) / units_per_px
+
+                if is_collection_model and is_target:
+                    too_close = placed_target_labels >= 18 or any(
+                        math.hypot(lbl_x_px - px_i, lbl_y_px - py_i) < 34.0
+                        for px_i, py_i in placed_label_px
+                    )
+                    if too_close:
+                        lbl_cls += " dense-label"
+                    else:
+                        placed_label_px.append((lbl_x_px, lbl_y_px))
+                        placed_target_labels += 1
+                elif not el["guide"]:
+                    placed_label_px.append((lbl_x_px, lbl_y_px))
+
                 cur_font = guide_font_size if el["guide"] else font_size
                 labels_nodes.append(
                     f'    <text class="{lbl_cls}" data-point-id="{el_id}" '
@@ -1627,6 +1694,7 @@ def render_model_svg(
         '<?xml version="1.0" encoding="UTF-8" standalone="no"?>',
         f'<svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" '
         f'viewBox="{vb_str}" data-initial-viewbox="{vb_str}" '
+        f'data-target-r-px="{target_r_px}" '
         f'preserveAspectRatio="xMidYMid meet">',
         f"  <style>{EXPLORER_SVG_CSS}</style>",
         "  <defs>",

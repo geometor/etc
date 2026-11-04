@@ -1,0 +1,58 @@
+"""GEOMETOR construction model for X_1492 = COLUMBUS POINT."""
+
+from __future__ import annotations
+
+from pathlib import Path
+
+import sympy.geometry as spg
+from geometor.model import Model
+
+from geometor.etc.ops import (
+    central_line,
+    construct_baseline_triangle,
+    create_model,
+    eval_trilinear_point,
+    isogonal_conjugate,
+    promote_point_to_top,
+)
+from geometor.etc.render import write_center_svg
+
+
+def construct_x_01492(
+    model: Model, A: spg.Point, B: spg.Point, C: spg.Point
+) -> spg.Point:
+    """Construct X_1492 = COLUMBUS POINT on reference triangle ABC."""
+    X_1491 = eval_trilinear_point(model, A, B, C, 'b**(3) - c**(3)', ID="X_1491", classes=["center"])
+    X_1492 = isogonal_conjugate(model, A, B, C, X_1491, ID="X_1492", classes=["selected", "target"])
+    X_101 = eval_trilinear_point(model, A, B, C, 'a/(b - c)', ID="X_101", classes=["center", "incident"])
+    X_660 = eval_trilinear_point(model, A, B, C, '1/((a**(2) - b*c)*(b - c))', ID="X_660", classes=["center", "incident"])
+    central_line(model, X_101, X_660, 101, 660, incident=True)
+    X_190 = eval_trilinear_point(model, A, B, C, 'b*c/(b - c)', ID="X_190", classes=["center", "incident"])
+    X_692 = eval_trilinear_point(model, A, B, C, 'a**(2)/(b - c)', ID="X_692", classes=["center", "incident"])
+    central_line(model, X_190, X_692, 190, 692, incident=True)
+    X_110 = eval_trilinear_point(model, A, B, C, 'csc(B - C)', ID="X_110", classes=["center", "incident"])
+    X_789 = eval_trilinear_point(model, A, B, C, 'a **(- 2)/(b**(3) - c**(3))', ID="X_789", classes=["center", "incident"])
+    central_line(model, X_110, X_789, 110, 789, incident=True)
+    return promote_point_to_top(model, X_1492)
+
+
+def build_model(
+    sides: tuple[float, float, float] = (5.0, 6.0, 7.0),
+    show_guides: bool = False,
+) -> Model:
+    """Build a `geometor.model.Model` for X_1492 on the given reference triangle."""
+    model = create_model('X_1492 = COLUMBUS POINT')
+    A, B, C = construct_baseline_triangle(model, *sides, show_guides=show_guides)
+    construct_x_01492(model, A, B, C)
+    return model
+
+
+if __name__ == "__main__":
+    here = Path(__file__).resolve().parent
+    model_acute = build_model((5.0, 6.0, 7.0))
+    model_acute.save(str(here / "x-01492.json"))
+    write_center_svg(
+        model_acute,
+        here / "x-01492.svg",
+        subtitle="(a, b, c) = (5, 6, 7) | AB = 1",
+    )

@@ -1,0 +1,20 @@
+:canonical_id: X_1663
+:subtitle: 2nd INTERSECTION OF BROCARD AXIS AND 1st LEMOINE CIRCLE
+
+X_1663
+======
+
+.. rubric:: 2nd INTERSECTION OF BROCARD AXIS AND 1st LEMOINE CIRCLE
+
+.. enunciation::
+
+   :ref:`X_1663 <X_1663>` = reflection of :ref:`X_1662 <X_1662>` in :ref:`X_182 <X_182>`
+
+.. figure:: x-01663.svg
+   :alt: X_1663 — 2nd INTERSECTION OF BROCARD AXIS AND 1st LEMOINE CIRCLE
+   :align: center
+
+   **X_1663** (*2nd INTERSECTION OF BROCARD AXIS AND 1st LEMOINE CIRCLE*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. literalinclude:: model.py
+   :language: python

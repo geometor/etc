@@ -1,0 +1,297 @@
+{
+    "name": "X_1423 = X_192-BETH CONJUGATE OF X_192",
+    "use_point_subscript": false,
+    "last_point_id": "",
+    "elements": {
+        "A": {
+            "sympy_obj": "Point2D(Float('0.0', precision=53), Float('0.0', precision=53))",
+            "ID": "A",
+            "classes": [
+                "given",
+                "vertex"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "B": {
+            "sympy_obj": "Point2D(Float('1.0', precision=53), Float('0.0', precision=53))",
+            "ID": "B",
+            "classes": [
+                "given",
+                "vertex"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "[ A B ]": {
+            "sympy_obj": "Line2D(Point2D(Float('0.0', precision=53), Float('0.0', precision=53)), Point2D(Float('1.0', precision=53), Float('0.0', precision=53)))",
+            "ID": "[ A B ]",
+            "classes": [
+                "given",
+                "sideline"
+            ],
+            "parents": [
+                "A",
+                "B"
+            ],
+            "guide": false
+        },
+        "C": {
+            "sympy_obj": "Point2D(Float('0.61224489999999998', precision=53), Float('0.59987504000000003', precision=53))",
+            "ID": "C",
+            "classes": [
+                "vertex"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "[ B C ]": {
+            "sympy_obj": "Line2D(Point2D(Float('1.0', precision=53), Float('0.0', precision=53)), Point2D(Float('0.61224489999999998', precision=53), Float('0.59987504000000003', precision=53)))",
+            "ID": "[ B C ]",
+            "classes": [
+                "sideline"
+            ],
+            "parents": [
+                "B",
+                "C"
+            ],
+            "guide": false
+        },
+        "[ C A ]": {
+            "sympy_obj": "Line2D(Point2D(Float('0.61224489999999998', precision=53), Float('0.59987504000000003', precision=53)), Point2D(Float('0.0', precision=53), Float('0.0', precision=53)))",
+            "ID": "[ C A ]",
+            "classes": [
+                "sideline"
+            ],
+            "parents": [
+                "C",
+                "A"
+            ],
+            "guide": false
+        },
+        "< A B C >": {
+            "sympy_obj": "Triangle(Point2D(Float('0.0', precision=53), Float('0.0', precision=53)), Point2D(Float('1.0', precision=53), Float('0.0', precision=53)), Point2D(Float('0.61224489999999998', precision=53), Float('0.59987504000000003', precision=53)))",
+            "ID": "< A B C >",
+            "classes": [
+                "reference"
+            ],
+            "parents": [
+                "A",
+                "B",
+                "C"
+            ],
+            "guide": false
+        },
+        "X_192": {
+            "sympy_obj": "Point2D(Float('0.61472439000000001', precision=53), Float('0.26349651000000002', precision=53))",
+            "ID": "X_192",
+            "classes": [
+                "center"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "X_2": {
+            "sympy_obj": "Point2D(Float('0.53741497000000005', precision=53), Float('0.19995835000000001', precision=53))",
+            "ID": "X_2",
+            "classes": [
+                "center"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "X_7": {
+            "sympy_obj": "Point2D(Float('0.59026688000000005', precision=53), Float('0.27686539999999998', precision=53))",
+            "ID": "X_7",
+            "classes": [
+                "center"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "{ 2, 7 }": {
+            "sympy_obj": "Line2D(Point2D(Float('0.53741497000000005', precision=53), Float('0.19995835000000001', precision=53)), Point2D(Float('0.59026688000000005', precision=53), Float('0.27686539999999998', precision=53)))",
+            "ID": "{ 2, 7 }",
+            "classes": [
+                "central_line"
+            ],
+            "parents": [
+                "X_2",
+                "X_7"
+            ],
+            "guide": false
+        },
+        "X_56": {
+            "sympy_obj": "Point2D(Float('0.63157894999999997', precision=53), Float('0.34378803000000002', precision=53))",
+            "ID": "X_56",
+            "classes": [
+                "center"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "X_87": {
+            "sympy_obj": "Point2D(Float('0.47938039999999998', precision=53), Float('0.16905363000000001', precision=53))",
+            "ID": "X_87",
+            "classes": [
+                "center"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "{ 56, 87 }": {
+            "sympy_obj": "Line2D(Point2D(Float('0.63157894999999997', precision=53), Float('0.34378803000000002', precision=53)), Point2D(Float('0.47938039999999998', precision=53), Float('0.16905363000000001', precision=53)))",
+            "ID": "{ 56, 87 }",
+            "classes": [
+                "central_line"
+            ],
+            "parents": [
+                "X_56",
+                "X_87"
+            ],
+            "guide": false
+        },
+        "X_1": {
+            "sympy_obj": "Point2D(Float('0.57142857000000002', precision=53), Float('0.23328473999999999', precision=53))",
+            "ID": "X_1",
+            "classes": [
+                "center",
+                "incident"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "X_256": {
+            "sympy_obj": "Point2D(Float('0.56008617000000005', precision=53), Float('0.2145522', precision=53))",
+            "ID": "X_256",
+            "classes": [
+                "center",
+                "incident"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "{ 1, 256 }": {
+            "sympy_obj": "Line2D(Point2D(Float('0.57142857000000002', precision=53), Float('0.23328473999999999', precision=53)), Point2D(Float('0.56008617000000005', precision=53), Float('0.2145522', precision=53)))",
+            "ID": "{ 1, 256 }",
+            "classes": [
+                "central_line",
+                "incident"
+            ],
+            "parents": [
+                "X_1",
+                "X_256"
+            ],
+            "guide": false
+        },
+        "X_269": {
+            "sympy_obj": "Point2D(Float('0.63685932000000001', precision=53), Float('0.38465270000000001', precision=53))",
+            "ID": "X_269",
+            "classes": [
+                "center",
+                "incident"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "X_292": {
+            "sympy_obj": "Point2D(Float('1.01268146', precision=53), Float('0.041689959999999998', precision=53))",
+            "ID": "X_292",
+            "classes": [
+                "center",
+                "incident"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "{ 269, 292 }": {
+            "sympy_obj": "Line2D(Point2D(Float('0.63685932000000001', precision=53), Float('0.38465270000000001', precision=53)), Point2D(Float('1.01268146', precision=53), Float('0.041689959999999998', precision=53)))",
+            "ID": "{ 269, 292 }",
+            "classes": [
+                "central_line",
+                "incident"
+            ],
+            "parents": [
+                "X_269",
+                "X_292"
+            ],
+            "guide": false
+        },
+        "X_65": {
+            "sympy_obj": "Point2D(Float('0.60408163000000004', precision=53), Float('0.29327224000000002', precision=53))",
+            "ID": "X_65",
+            "classes": [
+                "center",
+                "incident"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "X_984": {
+            "sympy_obj": "Point2D(Float('0.54205607', precision=53), Float('0.19840104', precision=53))",
+            "ID": "X_984",
+            "classes": [
+                "center",
+                "incident"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "{ 65, 984 }": {
+            "sympy_obj": "Line2D(Point2D(Float('0.60408163000000004', precision=53), Float('0.29327224000000002', precision=53)), Point2D(Float('0.54205607', precision=53), Float('0.19840104', precision=53)))",
+            "ID": "{ 65, 984 }",
+            "classes": [
+                "central_line",
+                "incident"
+            ],
+            "parents": [
+                "X_65",
+                "X_984"
+            ],
+            "guide": false
+        },
+        "X_604": {
+            "sympy_obj": "Point2D(Float('0.64422201999999995', precision=53), Float('0.37444429000000001', precision=53))",
+            "ID": "X_604",
+            "classes": [
+                "center",
+                "incident"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "X_651": {
+            "sympy_obj": "Point2D(Float('0.30476189999999997', precision=53), Float('0.55988336999999999', precision=53))",
+            "ID": "X_651",
+            "classes": [
+                "center",
+                "incident"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "{ 604, 651 }": {
+            "sympy_obj": "Line2D(Point2D(Float('0.64422201999999995', precision=53), Float('0.37444429000000001', precision=53)), Point2D(Float('0.30476189999999997', precision=53), Float('0.55988336999999999', precision=53)))",
+            "ID": "{ 604, 651 }",
+            "classes": [
+                "central_line",
+                "incident"
+            ],
+            "parents": [
+                "X_604",
+                "X_651"
+            ],
+            "guide": false
+        },
+        "X_1423": {
+            "sympy_obj": "Point2D(Float('0.65374849999999995', precision=53), Float('0.36924020000000002', precision=53))",
+            "ID": "X_1423",
+            "classes": [
+                "selected",
+                "target"
+            ],
+            "parents": [],
+            "guide": false
+        }
+    }
+}

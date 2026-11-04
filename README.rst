@@ -31,15 +31,15 @@ Process & Pipeline
      - **Kepler (`x-NNNNN-kepler.svg`)**: Golden right triangle $(1, \sqrt{\varphi}, \varphi)$
      - **Kimberling (`x-NNNNN-kimberling.svg`)**: Obtuse reference triangle $(6, 9, 13)$
 
-5. **2-Track Book Codex Generation (`transform.py`)**:
-   - Generates per-center documentation in `docsrc/centers/x-NNNNN/` using `:layout: book`:
+5. **Thematic Collections & 2-Track Book Codex Generation (`transform.py`)**:
+   - Partitions centers into thematic collections (`docsrc/centers/c-XXXXX-YYYYY/`) with section preambles and multi-center constellation SVGs (`c-XXXXX-YYYYY.svg`), and generates per-center documentation in `docsrc/centers/c-XXXXX-YYYYY/x-NNNNN/` using `:layout: book`:
      - **Overview Track (`index.rst`)**: Formal `.. enunciation::`, interactive reference-triangle SVG selector, `.. signature:: center` coordinate summary (Trilinears, Barycentrics, Tripolars), and `.. collapse::` sections for Linear Combinations, Notes, Incidence Loci, Functional Relations, and Construction.
      - **Code Track (`code.rst`)**: Standalone `geometor.model` Python construction script (`model.py`).
 
 Coordination with ``publish``
 -----------------------------
 
-- Uses `:layout: book` in `photon-platform/publish <https://github.com/photon-platform/publish>`_ for synchronized **Overview** and **Code** tracks with track-preserving `Prev` / `Next` navigation across centers.
+- Uses `:layout: book` in `photon-platform/publish <https://github.com/photon-platform/publish>`_ for synchronized **Overview** and **Code** tracks with track-preserving `Prev` / `Next` navigation and collection breadcrumbs across centers.
 - Integrates `:term:`, `:person:`, and `:cite:` hover cards and `intersphinx` links to Euclidean propositions in `geometor/euclid <https://geometor.github.io/euclid>`_ and `geometor/elements <https://geometor.github.io/elements>`_.
 
 Usage
@@ -47,8 +47,8 @@ Usage
 
 .. code-block:: bash
 
-   # Run the ETC pipeline for the first 1,000 centers (skipping raw HTML split if cached)
-   python3 -m geometor.etc --skip-ingest --limit 1000
+   # Run the ETC pipeline for the first 2,000 centers (skipping raw HTML split if cached)
+   python3 -m geometor.etc --skip-ingest --limit 2000
 
    # Build and serve the Book Codex documentation locally
    publish test

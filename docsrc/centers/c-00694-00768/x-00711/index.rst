@@ -1,0 +1,54 @@
+:order: 711
+:canonical_id: X_711
+:subtitle: EVEN (- 4, 4) CIRCUMCIRCLE POINT
+:dependencies: X_99, X_695, X_710, X_35530
+
+.. _X_711:
+
+X_711
+=====
+
+.. rubric:: EVEN (- 4, 4) CIRCUMCIRCLE POINT
+
+.. enunciation::
+
+   :ref:`X_711 <X_711>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_710 <X_710>`
+
+.. figure:: x-00711.svg
+   :alt: X_711 — EVEN (- 4, 4) CIRCUMCIRCLE POINT
+   :align: center
+
+   **X_711** (*EVEN (- 4, 4) CIRCUMCIRCLE POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{99, 695} <{ 99, 695 }>`
+   * **Related Centers:** :g:`X_710 <X_710>` (:ref:`EVEN (- 4, 4) INFINITY POINT <X_710>`), :g:`X_99 <X_99>` (:ref:`STEINER POINT <X_99>`), :g:`X_695 <X_695>` (:ref:`ISOGONAL CONJUGATE OF X(384) <X_695>`)
+
+.. signature:: center
+
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = 1/[a ^{-5}(b^{4} + c^{4}) - a^{3}(b ^{-4} + c ^{-4})]`
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
+   | **Search Value (6, 9, 13):** :math:`-0.092454166535`
+
+.. container:: note-item
+
+   :ref:`X_711 <X_711>` lies on the circumcircle.
+
+.. collapse:: Incident Central Lines
+   :badge: 1 line
+   :class: line-catalog
+
+   {:ref:`99 <X_99>`, :ref:`695 <X_695>`}
+
+.. collapse:: Functional Relations
+   :badge: 2 relations
+
+   * :ref:`X_711 <X_711>` = isogonal conjugate of :ref:`X_710 <X_710>`
+   * :ref:`X_711 <X_711>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_35530
+
+.. toctree::
+   :hidden:
+
+   code
