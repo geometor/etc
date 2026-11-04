@@ -53,7 +53,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << J_a J_b J_c >>` be the :term:`excentral triangle <excentral-triangle>`, and let :g:`H <H>` be the hyperbola {{:ref:`X_1 <X_1>`,\ :ref:`X_5 <X_5>`,\ :ref:`X_30 <X_30>`,\ :g:`A' <J_a>`,\ :g:`B' <J_b>`,\ :g:`C' <J_c>`}}. Then :ref:`X_2624 <X_2624>` is the perspector wrt :g:`A'B'C' << J_a J_b J_c >>` of :g:`H <H>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
+   Let :g:`J_aJ_bJ_c << J_a J_b J_c >>` be the :term:`excentral triangle <excentral-triangle>`, and let :g:`H <H>` be the hyperbola {{:ref:`X_1 <X_1>`,\ :ref:`X_5 <X_5>`,\ :ref:`X_30 <X_30>`,\ :g:`J_a <J_a>`,\ :g:`J_b <J_b>`,\ :g:`J_c <J_c>`}}. Then :ref:`X_2624 <X_2624>` is the perspector wrt :g:`J_aJ_bJ_c << J_a J_b J_c >>` of :g:`H <H>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
 
 .. container:: note-item
 

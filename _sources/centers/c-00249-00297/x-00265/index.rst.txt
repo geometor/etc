@@ -116,11 +116,11 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << Ref_a Ref_b Ref_c >>` be the :term:`reflection triangle <reflection-triangle>`. Let :g:`L <L>` be the line through :g:`A' <Ref_a>` parallel to the Euler line, and define M and N cyclically. Let :g:`L' <L'>` be the reflection of :g:`L <L>` in sideline :g:`BC <[ B C ]>`, and define :g:`M' <M'>` and :g:`N' <N'>` cyclically. The lines :g:`L' <L'>`,\ :g:`M' <M'>`, :g:`N' <N'>` concur in :ref:`X_265 <X_265>`. (Randy Hutson, August 26, 2014)
+   Let :g:`Ref_aRef_bRef_c << Ref_a Ref_b Ref_c >>` be the :term:`reflection triangle <reflection-triangle>`. Let :g:`L <L>` be the line through :g:`Ref_a <Ref_a>` parallel to the Euler line, and define M and N cyclically. Let :g:`L' <L'>` be the reflection of :g:`L <L>` in sideline :g:`BC <[ B C ]>`, and define :g:`M' <M'>` and :g:`N' <N'>` cyclically. The lines :g:`L' <L'>`,\ :g:`M' <M'>`, :g:`N' <N'>` concur in :ref:`X_265 <X_265>`. (Randy Hutson, August 26, 2014)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << Ref_a Ref_b Ref_c >>` be the reflection triangle. Let :g:`A″ <A″>` be the trilinear pole of line :g:`B'C' <[ Ref_b Ref_c ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_5 <X_5>`. Let :g:`A* <A*>` be the trilinear pole, wrt :g:`A'B'C' << Ref_a Ref_b Ref_c >>`, of line :g:`B″C″ <[ B″ C″ ]>`, and define :g:`B* <B*>`, :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X_265 <X_265>`. (Randy Hutson, July 20, 2016)
+   Let :g:`Ref_aRef_bRef_c << Ref_a Ref_b Ref_c >>` be the reflection triangle. Let :g:`A″ <A″>` be the trilinear pole of line :g:`Ref_bRef_c <[ Ref_b Ref_c ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_5 <X_5>`. Let :g:`A* <A*>` be the trilinear pole, wrt :g:`Ref_aRef_bRef_c << Ref_a Ref_b Ref_c >>`, of line :g:`B″C″ <[ B″ C″ ]>`, and define :g:`B* <B*>`, :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X_265 <X_265>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 

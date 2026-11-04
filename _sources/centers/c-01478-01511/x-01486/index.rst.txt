@@ -54,7 +54,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << T_a T_b T_c >>` be the intouch triangle. Let :g:`A″ <A″>` be the :term:`crosspoint <crosspoint>` of the circumcircle intercepts of line :g:`B'C' <[ T_b T_c ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ T_a A″ ]>`, :g:`B'B″ <[ T_b B″ ]>`, :g:`C'C″ <[ T_c C″ ]>` concur in :ref:`X_1486 <X_1486>`.
+   Let :g:`T_aT_bT_c << T_a T_b T_c >>` be the intouch triangle. Let :g:`A″ <A″>` be the :term:`crosspoint <crosspoint>` of the circumcircle intercepts of line :g:`T_bT_c <[ T_b T_c ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`T_aA″ <[ T_a A″ ]>`, :g:`T_bB″ <[ T_b B″ ]>`, :g:`T_cC″ <[ T_c C″ ]>` concur in :ref:`X_1486 <X_1486>`.
 
 .. toctree::
    :hidden:

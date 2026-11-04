@@ -84,7 +84,7 @@ X_10
    * :ref:`X_10 <X_10>` = perspector of :g:`ABC << A B C >>` and the :term:`tangential triangle <tangential-triangle>` of the :term:`Feuerbach triangle <feuerbach-triangle>`
    * :ref:`X_10 <X_10>` = :ref:`X_2 <X_2>`-:term:`Hirst inverse <hirst-inverse>` of X_6542
    * :ref:`X_10 <X_10>` = inverse-in-Steiner-circumellipse of X_6542
-   * :ref:`X_10 <X_10>` = SS(a→a') of :ref:`X_5 <X_5>`, where :g:`A'B'C' << A' B' C' >>` is the :term:`excentral triangle <excentral-triangle>` (barycentric substitution)
+   * :ref:`X_10 <X_10>` = SS(a→a') of :ref:`X_5 <X_5>`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the :term:`excentral triangle <excentral-triangle>` (barycentric substitution)
    * :ref:`X_10 <X_10>` = orthocenter of :ref:`X_2 <X_2>`\ \ :ref:`X_4 <X_4>`\ X_4049
    * :ref:`X_10 <X_10>` = midpoint of PU(10)
    * :ref:`X_10 <X_10>` = bicentric sum of PU(i) for these i: 10, 66
@@ -104,7 +104,7 @@ X_10
    * :ref:`X_10 <X_10>` = :ref:`X_578 <X_578>`-of-2nd-extouch-triangle
    * :ref:`X_10 <X_10>` = :ref:`X_389 <X_389>`-of-excentral triangle
    * :ref:`X_10 <X_10>` = :ref:`X_125 <X_125>`-of-:term:`Fuhrmann triangle <fuhrmann-triangle>`
-   * :ref:`X_10 <X_10>` = perspector of :g:`ABC << A B C >>` and triangle formed from orthocenters of JaBC, JbCA, JcAB, where :g:`J_{a} <J_a>`, :g:`J_{b} <J_b>`, :g:`J_{c} <J_c>` are excenters
+   * :ref:`X_10 <X_10>` = perspector of :g:`ABC << A B C >>` and triangle formed from orthocenters of :g:`J_{a}BC << J_a B C >>`, :g:`J_{b}CA << J_b C A >>`, :g:`J_{c}AB << J_c A B >>`, where :g:`J_{a} <J_a>`, :g:`J_{b} <J_b>`, :g:`J_{c} <J_c>` are excenters
    * :ref:`X_10 <X_10>` = perspector of circumconic centered at :ref:`X_37 <X_37>`
    * :ref:`X_10 <X_10>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X_37 <X_37>`
    * :ref:`X_10 <X_10>` = trilinear pole of line :ref:`X_523 <X_523>`\ \ :ref:`X_661 <X_661>` (the polar of :ref:`X_27 <X_27>` wrt polar circle)
@@ -160,7 +160,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << J_a J_b J_c >>` be the excentral triangle. :ref:`X_10 <X_10>` is the radical center of the polar circles of triangles :g:`A'BC << J_a B C >>`, :g:`B'CA << J_b C A >>`, :g:`C'AB << J_c A B >>`. (Randy Hutson, July 31 2018)
+   Let :g:`J_aJ_bJ_c << J_a J_b J_c >>` be the excentral triangle. :ref:`X_10 <X_10>` is the radical center of the polar circles of triangles :g:`J_aBC << J_a B C >>`, :g:`J_bCA << J_b C A >>`, :g:`J_cAB << J_c A B >>`. (Randy Hutson, July 31 2018)
 
 .. container:: note-item
 
@@ -190,7 +190,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << N_a N_b N_c >>` be the 2nd :term:`extouch triangle <extouch-triangle>`. Let :g:`A″ <A″>` be the trilinear product :g:`B' <N_b>`\ \*\ :g:`C' <N_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_10 <X_10>`. Also, let :g:`A″B″C″ << A″ B″ C″ >>` be the 1st circumperp triangle. The Simson lines of :g:`A″ <A″>`, :g:`B″ <B″>`, :g:`C″ <C″>` concur in :ref:`X_10 <X_10>`. (Randy Hutson, November 18, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the 2nd :term:`extouch triangle <extouch-triangle>`. Let :g:`A″ <A″>` be the trilinear product :g:`B' <B'>`\ \*\ :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_10 <X_10>`. Also, let :g:`A″B″C″ << A″ B″ C″ >>` be the 1st circumperp triangle. The Simson lines of :g:`A″ <A″>`, :g:`B″ <B″>`, :g:`C″ <C″>` concur in :ref:`X_10 <X_10>`. (Randy Hutson, November 18, 2015)
 
 .. toctree::
    :hidden:

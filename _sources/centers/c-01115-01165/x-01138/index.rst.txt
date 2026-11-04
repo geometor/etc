@@ -56,7 +56,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << K_a K_b K_c >>` be the :term:`anticomplementary triangle <anticomplementary-triangle>` of a triangle :g:`ABC << A B C >>`, and let :g:`E_{A} <E_A>` be the line through :g:`A <A>` parallel to the Euler line. Let :g:`A″ <A″>` be the point of intersection, other than A, of :g:`E_{A} <E_A>` and the circumcircle. Define :g:`E_{B} <E_B>` and :g:`E_{C} <E_C>` cyclically. The locus of a point P such that the Euler line of :g:`PBC << P B C >>` is parallel to the Euler line of :g:`ABC << A B C >>` is a conic ABCA':g:`A″ <A″>` having the midpoint of segment :g:`BC <[ B C ]>` as center. The conics, ABCA':g:`A″ <A″>`, ABCB':g:`B″ <B″>`, ABCC':g:`C″ <C″>` pass through :ref:`X_1138 <X_1138>`. (Francisco Javier García Capitán, April 3, 2015: `ADGEOM 2458 <http://www.adgeom.epizy.com/message.php?msg=2458>`__)
+   Let :g:`K_aK_bK_c << K_a K_b K_c >>` be the :term:`anticomplementary triangle <anticomplementary-triangle>` of a triangle :g:`ABC << A B C >>`, and let :g:`E_{A} <E_A>` be the line through :g:`A <A>` parallel to the Euler line. Let :g:`A″ <A″>` be the point of intersection, other than A, of :g:`E_{A} <E_A>` and the circumcircle. Define :g:`E_{B} <E_B>` and :g:`E_{C} <E_C>` cyclically. The locus of a point P such that the Euler line of :g:`PBC << P B C >>` is parallel to the Euler line of :g:`ABC << A B C >>` is a conic ABCA':g:`A″ <A″>` having the midpoint of segment :g:`BC <[ B C ]>` as center. The conics, ABCA':g:`A″ <A″>`, ABCB':g:`B″ <B″>`, ABCC':g:`C″ <C″>` pass through :ref:`X_1138 <X_1138>`. (Francisco Javier García Capitán, April 3, 2015: `ADGEOM 2458 <http://www.adgeom.epizy.com/message.php?msg=2458>`__)
 
 .. toctree::
    :hidden:

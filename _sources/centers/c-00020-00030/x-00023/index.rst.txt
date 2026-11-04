@@ -105,7 +105,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << Tan_a Tan_b Tan_c >>` be the antipedal triangle of :ref:`X_3 <X_3>` (the tangential triangle). The circumcircles of :g:`AA' <[ A Tan_a ]>`:ref:`X_3 <X_3>`, :g:`BB' <[ B Tan_b ]>`:ref:`X_3 <X_3>`, :g:`CC' <[ C Tan_c ]>`:ref:`X_3 <X_3>` concur in two points: :ref:`X_3 <X_3>` and :ref:`X_23 <X_23>`. (:person:`Randy Hutson <randy-hutson>`, Octobe3r 13, 2015)
+   Let :g:`Tan_aTan_bTan_c << Tan_a Tan_b Tan_c >>` be the antipedal triangle of :ref:`X_3 <X_3>` (the tangential triangle). The circumcircles of :g:`ATan_a <[ A Tan_a ]>`:ref:`X_3 <X_3>`, :g:`BTan_b <[ B Tan_b ]>`:ref:`X_3 <X_3>`, :g:`CTan_c <[ C Tan_c ]>`:ref:`X_3 <X_3>` concur in two points: :ref:`X_3 <X_3>` and :ref:`X_23 <X_23>`. (:person:`Randy Hutson <randy-hutson>`, Octobe3r 13, 2015)
 
 .. container:: note-item
 

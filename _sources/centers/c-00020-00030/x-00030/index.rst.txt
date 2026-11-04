@@ -102,7 +102,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << Ref_a Ref_b Ref_c >>` be the :term:`reflection triangle <reflection-triangle>`. Let :g:`A″ <A″>` be the cevapoint of :g:`B' <Ref_b>` and :g:`C' <Ref_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` are parallel to the Euler line, and therefore concur in :ref:`X_30 <X_30>`. (:person:`Randy Hutson <randy-hutson>`, December 10, 2016)
+   Let :g:`Ref_aRef_bRef_c << Ref_a Ref_b Ref_c >>` be the :term:`reflection triangle <reflection-triangle>`. Let :g:`A″ <A″>` be the cevapoint of :g:`Ref_b <Ref_b>` and :g:`Ref_c <Ref_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` are parallel to the Euler line, and therefore concur in :ref:`X_30 <X_30>`. (:person:`Randy Hutson <randy-hutson>`, December 10, 2016)
 
 .. toctree::
    :hidden:

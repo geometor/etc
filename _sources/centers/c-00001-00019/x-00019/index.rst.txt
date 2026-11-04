@@ -144,11 +144,11 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`A″ <A″>` be the trilinear product of the (real or imaginary) circumcircle intercepts of line :g:`B'C' <[ H_b H_c ]>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_19 <X_19>`. (Randy Hutson, December 26, 2015)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`A″ <A″>` be the trilinear product of the (real or imaginary) circumcircle intercepts of line :g:`H_bH_c <[ H_b H_c ]>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_19 <X_19>`. (Randy Hutson, December 26, 2015)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << J_a J_b J_c >>` be the excentral triangle. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ J_b J_c ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ J_a A″ ]>`, :g:`B'B″ <[ J_b B″ ]>`, :g:`C'C″ <[ J_c C″ ]>` concur in :ref:`X_19 <X_19>`. (Randy Hutson, December 2, 2017)
+   Let :g:`J_aJ_bJ_c << J_a J_b J_c >>` be the excentral triangle. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`J_bJ_c <[ J_b J_c ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`J_aA″ <[ J_a A″ ]>`, :g:`J_bB″ <[ J_b B″ ]>`, :g:`J_cC″ <[ J_c C″ ]>` concur in :ref:`X_19 <X_19>`. (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 
@@ -160,7 +160,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << T_a T_b T_c >>` be the :term:`intouch triangle <intouch-triangle>` of the extangents triangle, if :g:`ABC << A B C >>` is acute. Then :g:`A'B'C' << T_a T_b T_c >>` is homothetic to the anti-Ara triangle at :ref:`X_19 <X_19>`. (Randy Hutson, December 2, 2017)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`intouch triangle <intouch-triangle>` of the extangents triangle, if :g:`ABC << A B C >>` is acute. Then :g:`A'B'C' << A' B' C' >>` is homothetic to the anti-Ara triangle at :ref:`X_19 <X_19>`. (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 

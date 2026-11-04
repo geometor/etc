@@ -8,7 +8,7 @@ X_17
 
 .. enunciation::
 
-   Let :g:`X <Nap_a>`, :g:`Y <Nap_b>`, :g:`Z <Nap_c>` be the centers of the equilateral triangles in the construction of :ref:`X_13 <X_13>`. The lines :g:`AX <[ A Nap_a ]>`, :g:`BY <[ B Nap_b ]>`, :g:`CZ <[ C Nap_c ]>` concur in :ref:`X_17 <X_17>`.
+   Let :g:`Nap_a <Nap_a>`, :g:`Nap_b <Nap_b>`, :g:`Nap_c <Nap_c>` be the centers of the equilateral triangles in the construction of :ref:`X_13 <X_13>`. The lines :g:`ANap_a <[ A Nap_a ]>`, :g:`BNap_b <[ B Nap_b ]>`, :g:`CNap_c <[ C Nap_c ]>` concur in :ref:`X_17 <X_17>`.
 
 .. figure:: x-00017.svg
    :alt: X_17 — 1st NAPOLEON POINT

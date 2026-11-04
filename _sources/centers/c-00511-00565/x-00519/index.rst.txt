@@ -82,7 +82,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << I_a I_b I_c >>` be the :term:`incentral triangle <incentral-triangle>`. Let :g:`A″ <A″>` be the reflection of :g:`A <A>` in :g:`A' <I_a>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Let :g:`A* <A*>` be the :term:`cevapoint <cevapoint>` of :g:`B″ <B″>` and :g:`C″ <C″>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X_519 <X_519>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
+   Let :g:`I_aI_bI_c << I_a I_b I_c >>` be the :term:`incentral triangle <incentral-triangle>`. Let :g:`A″ <A″>` be the reflection of :g:`A <A>` in :g:`I_a <I_a>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Let :g:`A* <A*>` be the :term:`cevapoint <cevapoint>` of :g:`B″ <B″>` and :g:`C″ <C″>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X_519 <X_519>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
 
 .. container:: note-item
 

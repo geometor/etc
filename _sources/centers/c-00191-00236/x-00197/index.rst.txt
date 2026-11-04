@@ -51,7 +51,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << N_a N_b N_c >>` be the :term:`extouch triangle <extouch-triangle>`. Let :g:`A″ <A″>` be the crosspoint of the circumcircle intercepts of line :g:`B'C' <[ N_b N_c ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ N_a A″ ]>`, :g:`B'B″ <[ N_b B″ ]>`, :g:`C'C″ <[ N_c C″ ]>` concur in :ref:`X_197 <X_197>`. (:person:`Randy Hutson <randy-hutson>`, July 31 2018)
+   Let :g:`N_aN_bN_c << N_a N_b N_c >>` be the :term:`extouch triangle <extouch-triangle>`. Let :g:`A″ <A″>` be the crosspoint of the circumcircle intercepts of line :g:`N_bN_c <[ N_b N_c ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`N_aA″ <[ N_a A″ ]>`, :g:`N_bB″ <[ N_b B″ ]>`, :g:`N_cC″ <[ N_c C″ ]>` concur in :ref:`X_197 <X_197>`. (:person:`Randy Hutson <randy-hutson>`, July 31 2018)
 
 .. container:: note-item
 

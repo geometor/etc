@@ -74,7 +74,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`K <X_6>` denote the symmedian point, :ref:`X_6 <X_6>`. Let :g:`A'B'C' << Sym_a Sym_b Sym_c >>` be the :term:`cevian triangle <cevian-triangle>` of K. Let :g:`K_{A} <K_A>` be K of the triangle :g:`AB'C' << A Sym_b Sym_c >>`; let :g:`K_{B} <K_B>` be K of :g:`A'BC' << Sym_a B Sym_c >>` and let :g:`K_{C} <K_C>` be K of :g:`A'B'C << Sym_a Sym_b C >>`. The lines :g:`AK_{A} <[ A K_A ]>`, :g:`BK_{B} <[ B K_B ]>`, :g:`CK_{C} <[ C K_C ]>` concur in :ref:`X_83 <X_83>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   Let :g:`K <X_6>` denote the symmedian point, :ref:`X_6 <X_6>`. Let :g:`Sym_aSym_bSym_c << Sym_a Sym_b Sym_c >>` be the :term:`cevian triangle <cevian-triangle>` of K. Let :g:`K_{A} <K_A>` be K of the triangle :g:`ASym_bSym_c << A Sym_b Sym_c >>`; let :g:`K_{B} <K_B>` be K of :g:`Sym_aBSym_c << Sym_a B Sym_c >>` and let :g:`K_{C} <K_C>` be K of :g:`Sym_aSym_bC << Sym_a Sym_b C >>`. The lines :g:`AK_{A} <[ A K_A ]>`, :g:`BK_{B} <[ B K_B ]>`, :g:`CK_{C} <[ C K_C ]>` concur in :ref:`X_83 <X_83>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. container:: note-item
 
@@ -90,7 +90,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << Cm_a Cm_b Cm_c >>` be the circummedial triangle. Let :g:`A″ <A″>` be the trilinear pole of line :g:`B'C' <[ Cm_b Cm_c ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_83 <X_83>`. (Randy Hutson, December 26, 2015)
+   Let :g:`Cm_aCm_bCm_c << Cm_a Cm_b Cm_c >>` be the circummedial triangle. Let :g:`A″ <A″>` be the trilinear pole of line :g:`Cm_bCm_c <[ Cm_b Cm_c ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_83 <X_83>`. (Randy Hutson, December 26, 2015)
 
 .. toctree::
    :hidden:

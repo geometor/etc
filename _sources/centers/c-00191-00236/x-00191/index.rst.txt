@@ -75,7 +75,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`I_{a}I_{b}I_{c} << I_a I_b I_c >>` be the excentral triangle. Let :g:`N_{a} <N_a>` be the nine-point center of BCIa, and define :g:`N_{b} <N_b>` and :g:`N_{c} <N_c>` cyclically. The lines :g:`I_{a}N_{a} <[ I_a N_a ]>`, :g:`I_{b}N_{b} <[ I_b N_b ]>`, :g:`I_{c}N_{c} <[ I_c N_c ]>` concur in :ref:`X_191 <X_191>`; c.f. X_5506. (Randy Hutson, December 2, 2017)
+   Let :g:`J_aJ_bJ_c << J_a J_b J_c >>` be the excentral triangle. Let :g:`N_{a} <N_a>` be the nine-point center of :g:`BCJ_a << B C J_a >>`, and define :g:`N_{b} <N_b>` and :g:`N_{c} <N_c>` cyclically. The lines :g:`J_aN_a <[ J_a N_a ]>`, :g:`J_bN_b <[ J_b N_b ]>`, :g:`J_cN_c <[ J_c N_c ]>` concur in :ref:`X_191 <X_191>`; c.f. X_5506. (Randy Hutson, December 2, 2017)
 
 .. toctree::
    :hidden:

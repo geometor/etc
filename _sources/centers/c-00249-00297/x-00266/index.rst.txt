@@ -37,8 +37,8 @@ X_266
 
    * **Trilinears:** :math:`[a/(b + c - a)]^{1/2} : :`
    * **Trilinears:** :math:`\sin A \sec A/2 : :`
-   * **Trilinears:** :math:`\cos A' : :`, where :g:`A'B'C' << A' B' C' >>` is the :term:`excentral triangle <excentral-triangle>`
-   * **Trilinears:** \|\ :ref:`X_1 <X_1>`\ :g:`A' <A'>`\ \| : \|\ :ref:`X_1 <X_1>`\ :g:`B' <B'>`\ \| : \|\ :ref:`X_1 <X_1>`\ :g:`C' <C'>`\ \|, where :g:`A'B'C' << A' B' C' >>` is the excentral triangle
+   * **Trilinears:** :math:`\cos A' : :`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the :term:`excentral triangle <excentral-triangle>`
+   * **Trilinears:** \|\ :ref:`X_1 <X_1>`\ :g:`J_a <J_a>`\ \| : \|\ :ref:`X_1 <X_1>`\ :g:`J_b <J_b>`\ \| : \|\ :ref:`X_1 <X_1>`\ :g:`J_c <J_c>`\ \|, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the excentral triangle
    * **Trilinears:** :math:`\cos(angle BIC) : \cos(angle CIA) : \cos(angle AIB)`
 
 .. collapse:: Incident Central Lines
@@ -58,7 +58,7 @@ X_266
    * :ref:`X_266 <X_266>` = :ref:`X_6 <X_6>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_289 <X_289>`
    * :ref:`X_266 <X_266>` = :term:`crosspoint <crosspoint>` of :ref:`X_1 <X_1>` and :ref:`X_505 <X_505>`
    * :ref:`X_266 <X_266>` = :term:`crosssum <crosssum>` of :ref:`X_1 <X_1>` and :ref:`X_164 <X_164>`
-   * :ref:`X_266 <X_266>` = SS(A→\ :g:`A' <A'>`) of :ref:`X_3 <X_3>`, where :g:`A'B'C' << A' B' C' >>` is the excentral triangle
+   * :ref:`X_266 <X_266>` = SS(A→\ :g:`J_a <J_a>`) of :ref:`X_3 <X_3>`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the excentral triangle
    * :ref:`X_266 <X_266>` = trilinear square root of :ref:`X_56 <X_56>`
    * :ref:`X_266 <X_266>` = excentral-to-:g:`ABC << A B C >>` :term:`trilinear image <trilinear-image>` of :ref:`X_40 <X_40>`
    * :ref:`X_266 <X_266>` = intouch-to-:g:`ABC << A B C >>` trilinear image of :ref:`X_1 <X_1>`

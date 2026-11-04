@@ -39,7 +39,7 @@ X_1
    :badge: 2 forms
 
    * **Barycentrics:** :math:`\sin A : \sin B : \sin C`
-   * **Tripolars:** :math:`\sec A' : :`, where :g:`A'B'C' << A' B' C' >>` is the :term:`excentral triangle <excentral-triangle>`
+   * **Tripolars:** :math:`\sec A' : :`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the :term:`excentral triangle <excentral-triangle>`
 
 .. collapse:: Linear Combinations
    :badge: 5 combinations
@@ -232,19 +232,19 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << Eu_a Eu_b Eu_c >>` be the Feuerbach triangle. Let :g:`A″ <A″>` be the trilinear pole of line :g:`B'C' <[ Eu_b Eu_c ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_1 <X_1>`. (Randy Hutson, November 17, 2019)
+   Let :g:`Eu_aEu_bEu_c << Eu_a Eu_b Eu_c >>` be the Feuerbach triangle. Let :g:`A″ <A″>` be the trilinear pole of line :g:`Eu_bEu_c <[ Eu_b Eu_c ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_1 <X_1>`. (Randy Hutson, November 17, 2019)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << J_a J_b J_c >>` be the mixtilinear excentral triangle. Let :g:`A″ <A″>` be the cevapoint of :g:`B' <J_b>` and :g:`C' <J_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_1 <X_1>`. (Randy Hutson, November 17, 2019)
+   Let :g:`A'B'C' << A' B' C' >>` be the mixtilinear excentral triangle. Let :g:`A″ <A″>` be the cevapoint of :g:`B' <B'>` and :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_1 <X_1>`. (Randy Hutson, November 17, 2019)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << J_a J_b J_c >>` be the mixtilinear excentral triangle. Let :g:`A″ <A″>` be the trilinear pole of line :g:`B'C' <[ J_b J_c ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_1 <X_1>`. (Randy Hutson, November 17, 2019)
+   Let :g:`A'B'C' << A' B' C' >>` be the mixtilinear excentral triangle. Let :g:`A″ <A″>` be the trilinear pole of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_1 <X_1>`. (Randy Hutson, November 17, 2019)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << J_a J_b J_c >>` be the mixtilinear excentral triangle. Let :g:`L_{A} <L_A>` be the trilinear polar of :g:`A' <J_a>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A″ <A″>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_1 <X_1>`. (Randy Hutson, November 17, 2019)
+   Let :g:`A'B'C' << A' B' C' >>` be the mixtilinear excentral triangle. Let :g:`L_{A} <L_A>` be the trilinear polar of :g:`A' <A'>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A″ <A″>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_1 <X_1>`. (Randy Hutson, November 17, 2019)
 
 .. container:: note-item
 

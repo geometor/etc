@@ -115,7 +115,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`I_{a}I_{b}I_{c} << I_a I_b I_c >>` be the excentral triangle. The Brocard axes of :g:`BCI_{a} << B C I_a >>`, :g:`CAI_{b} << C A I_b >>`, :g:`ABI_{c} << A B I_c >>` concur in :ref:`X_101 <X_101>`. (Randy Hutson, February 10, 2016)
+   Let :g:`J_aJ_bJ_c << J_a J_b J_c >>` be the excentral triangle. The Brocard axes of :g:`BCJ_a << B C J_a >>`, :g:`CAJ_b << C A J_b >>`, :g:`ABJ_c << A B J_c >>` concur in :ref:`X_101 <X_101>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 

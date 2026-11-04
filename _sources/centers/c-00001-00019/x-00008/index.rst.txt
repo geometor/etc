@@ -13,7 +13,7 @@ X_8
 
 .. enunciation::
 
-   Let :g:`A'B'C' << N_a N_b N_c >>` be the points in which the :g:`A <A>`-excircle meets :g:`BC <[ B C ]>`, the :g:`B <B>`-excircle meets :g:`CA <[ C A ]>`, and the :g:`C <C>`-excircle meets :g:`AB <[ A B ]>`, respectively. The lines :g:`AA' <[ A N_a ]>`, :g:`BB' <[ B N_b ]>`, :g:`CC' <[ C N_c ]>` concur in :ref:`X_8 <X_8>`. Another construction of :g:`A' <N_a>` is to start at :g:`A <A>` and trace around :g:`ABC << A B C >>` half its perimeter, and similarly for :g:`B' <N_b>` and :g:`C' <N_c>`. Also, :ref:`X_8 <X_8>` is the incenter of the :term:`anticomplementary triangle <anticomplementary-triangle>`.
+   Let :g:`N_aN_bN_c << N_a N_b N_c >>` be the points in which the :g:`A <A>`-excircle meets :g:`BC <[ B C ]>`, the :g:`B <B>`-excircle meets :g:`CA <[ C A ]>`, and the :g:`C <C>`-excircle meets :g:`AB <[ A B ]>`, respectively. The lines :g:`AN_a <[ A N_a ]>`, :g:`BN_b <[ B N_b ]>`, :g:`CN_c <[ C N_c ]>` concur in :ref:`X_8 <X_8>`. Another construction of :g:`N_a <N_a>` is to start at :g:`A <A>` and trace around :g:`ABC << A B C >>` half its perimeter, and similarly for :g:`N_b <N_b>` and :g:`N_c <N_c>`. Also, :ref:`X_8 <X_8>` is the incenter of the :term:`anticomplementary triangle <anticomplementary-triangle>`.
 
 .. figure:: x-00008.svg
    :alt: X_8 — NAGEL POINT
@@ -24,7 +24,7 @@ X_8
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Derived Triangle:** :term:`Extouch Triangle <extouch triangle>` :g:`△N_aN_bN_c << N_a N_b N_c >>` (denoted :g:`△A'B'C' << N_a N_b N_c >>` in enunciation) — vertices :g:`N_a <N_a>` (:g:`A' <N_a>`), :g:`N_b <N_b>` (:g:`B' <N_b>`), :g:`N_c <N_c>` (:g:`C' <N_c>`) (Contact triangle of Excircle touchpoints on BC, CA, AB)
+   * **Derived Triangle:** :term:`Extouch Triangle <extouch triangle>` :g:`△N_aN_bN_c << N_a N_b N_c >>` — vertices :g:`N_a <N_a>`, :g:`N_b <N_b>`, :g:`N_c <N_c>` (Contact triangle of Excircle touchpoints on BC, CA, AB)
    * **Concurrence Lines:** :g:`A–N_a <[ A N_a ]>`, :g:`B–N_b <[ B N_b ]>`, :g:`C–N_c <[ C N_c ]>` concurring at :g:`X_8 <X_8>`
 
 .. signature:: center

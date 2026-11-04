@@ -78,11 +78,11 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A' <J_a>`,\ :g:`B' <J_b>`,\ :g:`C' <J_c>` be the excenters. The perpendiculars from :g:`B' <J_b>` to :g:`AB <[ A B ]>` and from :g:`C' <J_c>` to :g:`AC <[ A C ]>` meet in a point :g:`A″ <A″>`. Points :g:`B″ <B″>` and :g:`C″ <C″>` are determined cyclically. The hexyl triangle, :g:`A″B″C″ << A″ B″ C″ >>`, is perspective to :g:`ABC << A B C >>`, and :ref:`X_84 <X_84>` is the perspector.
+   Let :g:`J_a <J_a>`,\ :g:`J_b <J_b>`,\ :g:`J_c <J_c>` be the excenters. The perpendiculars from :g:`J_b <J_b>` to :g:`AB <[ A B ]>` and from :g:`J_c <J_c>` to :g:`AC <[ A C ]>` meet in a point :g:`A″ <A″>`. Points :g:`B″ <B″>` and :g:`C″ <C″>` are determined cyclically. The hexyl triangle, :g:`A″B″C″ << A″ B″ C″ >>`, is perspective to :g:`ABC << A B C >>`, and :ref:`X_84 <X_84>` is the perspector.
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << N_a N_b N_c >>` be the extouch triangle. Let :g:`A″ <A″>` be the orthocenter of :g:`AB'C' << A N_b N_c >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_84 <X_84>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
+   Let :g:`N_aN_bN_c << N_a N_b N_c >>` be the extouch triangle. Let :g:`A″ <A″>` be the orthocenter of :g:`AN_bN_c << A N_b N_c >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_84 <X_84>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
 
 .. container:: note-item
 

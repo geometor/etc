@@ -73,7 +73,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << I_a I_b I_c >>` be the :term:`incentral triangle <incentral-triangle>` of triangle :g:`ABC << A B C >>`. Let :g:`L_{A} <L_A>` be the line of reflection of line :g:`BC <[ B C ]>` in line :g:`B'C' <[ I_b I_c ]>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A″ <A″>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_942 <X_942>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   Let :g:`I_aI_bI_c << I_a I_b I_c >>` be the :term:`incentral triangle <incentral-triangle>` of triangle :g:`ABC << A B C >>`. Let :g:`L_{A} <L_A>` be the line of reflection of line :g:`BC <[ B C ]>` in line :g:`I_bI_c <[ I_b I_c ]>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A″ <A″>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_942 <X_942>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. container:: note-item
 
@@ -85,11 +85,11 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << T_a T_b T_c >>` be the :term:`intouch triangle <intouch-triangle>`. Let :g:`A″ <A″>` be the orthocenter of :g:`AB'C' << A T_b T_c >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to :g:`A'B'C' << T_a T_b T_c >>`, and the center of homothety is :ref:`X_942 <X_942>`. (Randy Hutson, July 20, 2016)
+   Let :g:`T_aT_bT_c << T_a T_b T_c >>` be the :term:`intouch triangle <intouch-triangle>`. Let :g:`A″ <A″>` be the orthocenter of :g:`AT_bT_c << A T_b T_c >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to :g:`T_aT_bT_c << T_a T_b T_c >>`, and the center of homothety is :ref:`X_942 <X_942>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`A″ <A″>` be the incenter of :g:`AB'C' << A H_b H_c >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to the intouch triangle, and the center of homothety is :ref:`X_942 <X_942>`. (Randy Hutson, July 20, 2016)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`A″ <A″>` be the incenter of :g:`AH_bH_c << A H_b H_c >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to the intouch triangle, and the center of homothety is :ref:`X_942 <X_942>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 

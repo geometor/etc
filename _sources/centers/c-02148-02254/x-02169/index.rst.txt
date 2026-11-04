@@ -56,7 +56,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the :term:`cevian triangle <cevian-triangle>` of I (incenter) and let :g:`A″ <A″>` be the intersection of the perpendicular bisector of :g:`AA' <[ A A' ]>` and the line through :g:`A' <A'>` perpendicular line to :g:`BC <[ B C ]>`; note that :g:`A″ <A″>`\ (lies on A\ :ref:`X_3 <X_3>`). Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The finite fixed point of the affine transformation that carries :g:`ABC << A B C >>` onto :g:`A'B'C' << A' B' C' >>` is :ref:`X_2197 <X_2197>`, and the finite fixed point of the affine transformation that carries :g:`A'B'C' << A' B' C' >>` onto :g:`A″B″C″ << A″ B″ C″ >>` is :ref:`X_2269 <X_2269>`. (:person:`Angel Montesdeoca <angel-montesdeoca>`, December 7, 2021)
+   Let :g:`I_aI_bI_c << I_a I_b I_c >>` be the :term:`cevian triangle <cevian-triangle>` of I (incenter) and let :g:`A″ <A″>` be the intersection of the perpendicular bisector of :g:`AI_a <[ A I_a ]>` and the line through :g:`I_a <I_a>` perpendicular line to :g:`BC <[ B C ]>`; note that :g:`A″ <A″>`\ (lies on A\ :ref:`X_3 <X_3>`). Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The finite fixed point of the affine transformation that carries :g:`ABC << A B C >>` onto :g:`I_aI_bI_c << I_a I_b I_c >>` is :ref:`X_2197 <X_2197>`, and the finite fixed point of the affine transformation that carries :g:`I_aI_bI_c << I_a I_b I_c >>` onto :g:`A″B″C″ << A″ B″ C″ >>` is :ref:`X_2269 <X_2269>`. (:person:`Angel Montesdeoca <angel-montesdeoca>`, December 7, 2021)
 
 .. toctree::
    :hidden:

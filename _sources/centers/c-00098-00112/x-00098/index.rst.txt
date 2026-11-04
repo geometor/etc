@@ -144,7 +144,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`L_{a} <L_a>` be the Lemoine axis of triangle :g:`AB'C' << A H_b H_c >>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Triangle :g:`A″B″C″ << A″ B″ C″ >>` is inversely similar to :g:`ABC << A B C >>`, with similicenter :ref:`X_2 <X_2>`. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_98 <X_98>`, which is :ref:`X_4 <X_4>`-of-:g:`A″B″C″ << A″ B″ C″ >>`. (Randy Hutson, July 31 2018)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`L_{a} <L_a>` be the Lemoine axis of triangle :g:`AH_bH_c << A H_b H_c >>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Triangle :g:`A″B″C″ << A″ B″ C″ >>` is inversely similar to :g:`ABC << A B C >>`, with similicenter :ref:`X_2 <X_2>`. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_98 <X_98>`, which is :ref:`X_4 <X_4>`-of-:g:`A″B″C″ << A″ B″ C″ >>`. (Randy Hutson, July 31 2018)
 
 .. container:: note-item
 

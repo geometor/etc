@@ -183,19 +183,19 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the orthic triangle. Let :g:`L_{a} <L_a>` be the antiorthic axis of :g:`AB'C' << A H_b H_c >>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is inversely similar to :g:`ABC << A B C >>`, with similitude center :ref:`X_9 <X_9>`, and :ref:`X_11 <X_11>` = :ref:`X_55 <X_55>`-of-:g:`A″B″C″ << A″ B″ C″ >>`. (Randy Hutson, December 10, 2016)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the orthic triangle. Let :g:`L_{a} <L_a>` be the antiorthic axis of :g:`AH_bH_c << A H_b H_c >>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is inversely similar to :g:`ABC << A B C >>`, with similitude center :ref:`X_9 <X_9>`, and :ref:`X_11 <X_11>` = :ref:`X_55 <X_55>`-of-:g:`A″B″C″ << A″ B″ C″ >>`. (Randy Hutson, December 10, 2016)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the orthic triangle. Let :g:`N_{a} <N_a>` be the Nagel line of :g:`AB'C' << A H_b H_c >>`, and define :g:`N_{b} <N_b>` and :g:`N_{c} <N_c>` cyclically. Let :g:`A″ <A″>` = :g:`N_{b} <N_b>`\ ∩\ :g:`N_{c} <N_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is inversely similar to :g:`ABC << A B C >>`, and :ref:`X_11 <X_11>` = :ref:`X_36 <X_36>`-of-:g:`A″B″C″ << A″ B″ C″ >>`. (Randy Hutson, December 10, 2016)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the orthic triangle. Let :g:`N_{a} <N_a>` be the Nagel line of :g:`AH_bH_c << A H_b H_c >>`, and define :g:`N_{b} <N_b>` and :g:`N_{c} <N_c>` cyclically. Let :g:`A″ <A″>` = :g:`N_{b} <N_b>`\ ∩\ :g:`N_{c} <N_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is inversely similar to :g:`ABC << A B C >>`, and :ref:`X_11 <X_11>` = :ref:`X_36 <X_36>`-of-:g:`A″B″C″ << A″ B″ C″ >>`. (Randy Hutson, December 10, 2016)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the orthic triangle. The lines :g:`IO <[ I O ]>` of :g:`AB'C' << A H_b H_c >>`, :g:`BC'A' << B H_c H_a >>`, :g:`CA'B' << C H_a H_b >>` concur in :ref:`X_11 <X_11>`. (Randy Hutson, December 10, 2016)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the orthic triangle. The lines :g:`IO <[ I O ]>` of :g:`AH_bH_c << A H_b H_c >>`, :g:`BH_cH_a << B H_c H_a >>`, :g:`CH_aH_b << C H_a H_b >>` concur in :ref:`X_11 <X_11>`. (Randy Hutson, December 10, 2016)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the orthic triangle. The lines :g:`IO <[ I O ]>` of :g:`AB'C' << A H_b H_c >>`, :g:`BC'A' << B H_c H_a >>`, :g:`CA'B' << C H_a H_b >>` concur in :ref:`X_11 <X_11>`. (Randy Hutson, June 27, 2018)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the orthic triangle. The lines :g:`IO <[ I O ]>` of :g:`AH_bH_c << A H_b H_c >>`, :g:`BH_cH_a << B H_c H_a >>`, :g:`CH_aH_b << C H_a H_b >>` concur in :ref:`X_11 <X_11>`. (Randy Hutson, June 27, 2018)
 
 .. container:: note-item
 

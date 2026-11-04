@@ -79,7 +79,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`A″ <A″>` be the cevapoint of the (real or imaginary) circumcircle intercepts of line :g:`B'C' <[ H_b H_c ]>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_393 <X_393>`. (Randy Hutson, July 31 2018)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`A″ <A″>` be the cevapoint of the (real or imaginary) circumcircle intercepts of line :g:`H_bH_c <[ H_b H_c ]>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_393 <X_393>`. (Randy Hutson, July 31 2018)
 
 .. container:: note-item
 

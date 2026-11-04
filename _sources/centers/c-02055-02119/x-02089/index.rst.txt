@@ -35,7 +35,7 @@ X_2089
    :badge: 2 forms
 
    * **Trilinears:** :math:`1/(1 - \sin A/2) : :`
-   * **Trilinears:** :math:`\csc^{2}(A'/2) : :`, where :g:`A'B'C' << A' B' C' >>` = :term:`excentral triangle <excentral-triangle>`
+   * **Trilinears:** :math:`\csc^{2}(A'/2) : :`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` = :term:`excentral triangle <excentral-triangle>`
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines
@@ -51,7 +51,7 @@ X_2089
    * :ref:`X_2089 <X_2089>` = :ref:`X_56 <X_56>`-of-:term:`intouch triangle <intouch-triangle>`
    * :ref:`X_2089 <X_2089>` = :ref:`X_24 <X_24>`-of-mid-arc-triangle
    * :ref:`X_2089 <X_2089>` = intouch-:term:`isogonal conjugate <isogonal-conjugate>` of X_17641
-   * :ref:`X_2089 <X_2089>` = SS(A→\ :g:`A' <A'>`)-of-:ref:`X_8 <X_8>`, where :g:`A'B'C' << A' B' C' >>` is the excentral triangle
+   * :ref:`X_2089 <X_2089>` = SS(A→\ :g:`J_a <J_a>`)-of-:ref:`X_8 <X_8>`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the excentral triangle
    * :ref:`X_2089 <X_2089>` = :term:`trilinear pole <trilinear-pole>` of perspectrix of :g:`ABC << A B C >>` and Yff :term:`central triangle <central-triangle>`
 
 Notes

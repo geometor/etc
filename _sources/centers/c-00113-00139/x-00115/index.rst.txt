@@ -158,7 +158,7 @@ Notes
 
 .. container:: note-item
 
-   The circumcircle of the :term:`incentral triangle <incentral-triangle>` intersects the nine-point circle at 2 points, :ref:`X_11 <X_11>` and :ref:`X_115 <X_115>`, and :ref:`X_115 <X_115>` lies on the incentral circle and the cevian circle of every point on the Kiepert hyperbola. Let :g:`A'B'C' << H_a H_b H_c >>` be the orthic triangle. The Brocard axes of :g:`AB'C' << A H_b H_c >>`, :g:`BC'A' << B H_c H_a >>`, :g:`CA'B' << C H_a H_b >>` concur in :ref:`X_115 <X_115>`. Let :g:`P <P>` be a point on the Brocard circle, and let :g:`L <L>` be the line tangent to the Brocard circle at P. Let :g:`P' <P'>` be the trilinear pole of :g:`L <L>`, and let :g:`P″ <P″>` be the isotomic conjugate of :g:`P' <P'>`. As P varies, :g:`P″ <P″>` traces an ellipse with center at :ref:`X_115 <X_115>`. (Randy Hutson, July 23, 2015)
+   The circumcircle of the :term:`incentral triangle <incentral-triangle>` intersects the nine-point circle at 2 points, :ref:`X_11 <X_11>` and :ref:`X_115 <X_115>`, and :ref:`X_115 <X_115>` lies on the incentral circle and the cevian circle of every point on the Kiepert hyperbola. Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the orthic triangle. The Brocard axes of :g:`AH_bH_c << A H_b H_c >>`, :g:`BH_cH_a << B H_c H_a >>`, :g:`CH_aH_b << C H_a H_b >>` concur in :ref:`X_115 <X_115>`. Let :g:`P <P>` be a point on the Brocard circle, and let :g:`L <L>` be the line tangent to the Brocard circle at P. Let :g:`P' <P'>` be the trilinear pole of :g:`L <L>`, and let :g:`P″ <P″>` be the isotomic conjugate of :g:`P' <P'>`. As P varies, :g:`P″ <P″>` traces an ellipse with center at :ref:`X_115 <X_115>`. (Randy Hutson, July 23, 2015)
 
 .. container:: note-item
 

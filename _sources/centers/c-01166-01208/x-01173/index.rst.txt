@@ -56,7 +56,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`P <P>` and :g:`Q <Q>` be the intersections of line :g:`BC <[ B C ]>` and the 2nd Lemoine circle. Let :g:`X <X>` = :ref:`X_6 <X_6>`. Let :g:`A' <O_A>` be the circumcenter of triangle :g:`PQX << P Q X >>`, and define :g:`B' <O_B>` and :g:`C' <O_C>` cyclically. The lines :g:`AA' <[ A O_A ]>`, :g:`BB' <[ B O_B ]>`, :g:`CC' <[ C O_C ]>` concur in :ref:`X_1173 <X_1173>`; c.f. :ref:`X_592 <X_592>`, where the circle is the 1st Lemoine circle. :ref:`X_571 <X_571>`: Let :g:`A'B'C' << O_A O_B O_C >>` be the :term:`Kosnita triangle <kosnita-triangle>`. Let :g:`A″ <A″>` be the barycentric product :g:`B' <O_B>`\ \*\ :g:`C' <O_C>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_571 <X_571>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
+   Let :g:`P <P>` and :g:`Q <Q>` be the intersections of line :g:`BC <[ B C ]>` and the 2nd Lemoine circle. Let :g:`X <X>` = :ref:`X_6 <X_6>`. Let :g:`O_A <O_A>` be the circumcenter of triangle :g:`PQX << P Q X >>`, and define :g:`O_B <O_B>` and :g:`O_C <O_C>` cyclically. The lines :g:`AO_A <[ A O_A ]>`, :g:`BO_B <[ B O_B ]>`, :g:`CO_C <[ C O_C ]>` concur in :ref:`X_1173 <X_1173>`; c.f. :ref:`X_592 <X_592>`, where the circle is the 1st Lemoine circle. :ref:`X_571 <X_571>`: Let :g:`O_AO_BO_C << O_A O_B O_C >>` be the :term:`Kosnita triangle <kosnita-triangle>`. Let :g:`A″ <A″>` be the barycentric product :g:`O_B <O_B>`\ \*\ :g:`O_C <O_C>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_571 <X_571>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
 
 .. container:: note-item
 

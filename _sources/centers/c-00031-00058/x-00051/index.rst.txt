@@ -86,7 +86,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << K_a K_b K_c >>` be the :term:`anticomplementary triangle <anticomplementary-triangle>` and let :g:`B_{a} <B_a>` and :g:`C_{a} <C_a>` be the orthogonal projections of :g:`B' <K_b>` and :g:`C' <K_c>` on :g:`BC <[ B C ]>`, respectively. Define :g:`C_{b} <C_b>` and :g:`A_{c} <A_c>` cyclically, and define :g:`A_{b} <A_b>` and :g:`B_{c} <B_c>` cyclically. Then :ref:`X_51 <X_51>` is the centroid of BaCaCbAbAcBc. (:person:`Randy Hutson <randy-hutson>`, April 9, 2016)
+   Let :g:`K_aK_bK_c << K_a K_b K_c >>` be the :term:`anticomplementary triangle <anticomplementary-triangle>` and let :g:`B_{a} <B_a>` and :g:`C_{a} <C_a>` be the orthogonal projections of :g:`K_b <K_b>` and :g:`K_c <K_c>` on :g:`BC <[ B C ]>`, respectively. Define :g:`C_{b} <C_b>` and :g:`A_{c} <A_c>` cyclically, and define :g:`A_{b} <A_b>` and :g:`B_{c} <B_c>` cyclically. Then :ref:`X_51 <X_51>` is the centroid of BaCaCbAbAcBc. (:person:`Randy Hutson <randy-hutson>`, April 9, 2016)
 
 .. container:: note-item
 
@@ -94,7 +94,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the orthic triangle. Let :g:`O_{a} <O_a>` be the A-McCay circle of triangle :g:`AB'C' << A H_b H_c >>`, and define :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>` cyclically. :ref:`X_51 <X_51>` is the radical center of circles :g:`O_{a} <O_a>`, :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>`. (Randy Hutson, July 31 2018)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the orthic triangle. Let :g:`O_{a} <O_a>` be the A-McCay circle of triangle :g:`AH_bH_c << A H_b H_c >>`, and define :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>` cyclically. :ref:`X_51 <X_51>` is the radical center of circles :g:`O_{a} <O_a>`, :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>`. (Randy Hutson, July 31 2018)
 
 .. container:: note-item
 

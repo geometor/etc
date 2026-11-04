@@ -102,15 +102,15 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << J_a J_b J_c >>` be the :term:`excentral triangle <excentral-triangle>` (i.e. the antiorthic triangle). Let :g:`A″B″C″ << A″ B″ C″ >>` be the triangle bounded by the orthic axes of :g:`A'BC << J_a B C >>`, :g:`B'CA << J_b C A >>`, :g:`C'AB << J_c A B >>`. Then :g:`A″B″C″ << A″ B″ C″ >>` is perspective to :g:`ABC << A B C >>` at :ref:`X_104 <X_104>`; c.f. X_8068. (Randy Hutson, December 2, 2017)
+   Let :g:`J_aJ_bJ_c << J_a J_b J_c >>` be the :term:`excentral triangle <excentral-triangle>` (i.e. the antiorthic triangle). Let :g:`A″B″C″ << A″ B″ C″ >>` be the triangle bounded by the orthic axes of :g:`J_aBC << J_a B C >>`, :g:`J_bCA << J_b C A >>`, :g:`J_cAB << J_c A B >>`. Then :g:`A″B″C″ << A″ B″ C″ >>` is perspective to :g:`ABC << A B C >>` at :ref:`X_104 <X_104>`; c.f. X_8068. (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << J_a J_b J_c >>` be the excentral triangle. The de Longchamps lines of triangles :g:`A'BC << J_a B C >>`, :g:`B'CA << J_b C A >>`, :g:`C'AB << J_c A B >>` bound a triangle perspective to :g:`ABC << A B C >>` at :ref:`X_104 <X_104>`. (Randy Hutson, June 27, 2018)
+   Let :g:`J_aJ_bJ_c << J_a J_b J_c >>` be the excentral triangle. The de Longchamps lines of triangles :g:`J_aBC << J_a B C >>`, :g:`J_bCA << J_b C A >>`, :g:`J_cAB << J_c A B >>` bound a triangle perspective to :g:`ABC << A B C >>` at :ref:`X_104 <X_104>`. (Randy Hutson, June 27, 2018)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << J_a J_b J_c >>` be the excentral triangle. The Hatzipolakis axes of triangles :g:`A'BC << J_a B C >>`, :g:`B'CA << J_b C A >>`, :g:`C'AB << J_c A B >>` bound a triangle perspective to :g:`ABC << A B C >>` at :ref:`X_104 <X_104>`. (Randy Hutson, June 27, 2018)
+   Let :g:`J_aJ_bJ_c << J_a J_b J_c >>` be the excentral triangle. The Hatzipolakis axes of triangles :g:`J_aBC << J_a B C >>`, :g:`J_bCA << J_b C A >>`, :g:`J_cAB << J_c A B >>` bound a triangle perspective to :g:`ABC << A B C >>` at :ref:`X_104 <X_104>`. (Randy Hutson, June 27, 2018)
 
 .. toctree::
    :hidden:

@@ -86,13 +86,13 @@ Notes
 
    Five constructions by :person:`Randy Hutson <randy-hutson>`, January 29, 2015:
 
-      (1) Let :g:`A'B'C' << Tan_a Tan_b Tan_c >>` be the :term:`tangential triangle <tangential-triangle>`. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ Tan_b Tan_c ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_264 <X_264>`.
+      (1) Let :g:`Sym_aSym_bSym_c << Sym_a Sym_b Sym_c >>` be the :term:`tangential triangle <tangential-triangle>`. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`Sym_bSym_c <[ Sym_b Sym_c ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_264 <X_264>`.
 
-      (2) Let :g:`A'B'C' << Tan_a Tan_b Tan_c >>` be the :term:`symmedial triangle <symmedial-triangle>`. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ Tan_b Tan_c ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_264 <X_264>`.
+      (2) Let :g:`Sym_aSym_bSym_c << Sym_a Sym_b Sym_c >>` be the :term:`symmedial triangle <symmedial-triangle>`. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`Sym_bSym_c <[ Sym_b Sym_c ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_264 <X_264>`.
 
-      (3) Let :g:`A'B'C' << Tan_a Tan_b Tan_c >>` be the circumsymmedial triangle. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ Tan_b Tan_c ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_264 <X_264>`.
+      (3) Let :g:`Sym_aSym_bSym_c << Sym_a Sym_b Sym_c >>` be the circumsymmedial triangle. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`Sym_bSym_c <[ Sym_b Sym_c ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_264 <X_264>`.
 
-      (4) Let :g:`A'B'C' << Tan_a Tan_b Tan_c >>` be the Lucas(t) :term:`central triangle <central-triangle>` (for any t). Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ Tan_b Tan_c ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_264 <X_264>`.
+      (4) Let :g:`Sym_aSym_bSym_c << Sym_a Sym_b Sym_c >>` be the Lucas(t) :term:`central triangle <central-triangle>` (for any t). Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`Sym_bSym_c <[ Sym_b Sym_c ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_264 <X_264>`.
 
       (5) :ref:`X_264 <X_264>` is the trilinear pole of the line :ref:`X_297 <X_297>`\ \ :ref:`X_525 <X_525>`. This line is the isotomic conjugate of the MacBeath circumconic, which is the isogonal conjugate of the orthic axis. The line is also the polar of :ref:`X_6 <X_6>` wrt the polar circle, and the radical axis of the polar and orthosymmedial circles, and the polar conjugate of the circumcircle)
 

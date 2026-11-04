@@ -74,7 +74,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << O_A O_B O_C >>` be the :term:`Kosnita triangle <kosnita-triangle>`. Let :g:`A″ <A″>` be the trilinear product :g:`B' <O_B>`\ \*\ :g:`C' <O_C>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_47 <X_47>`. (:person:`Randy Hutson <randy-hutson>`, March 21, 2019)
+   Let :g:`O_AO_BO_C << O_A O_B O_C >>` be the :term:`Kosnita triangle <kosnita-triangle>`. Let :g:`A″ <A″>` be the trilinear product :g:`O_B <O_B>`\ \*\ :g:`O_C <O_C>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_47 <X_47>`. (:person:`Randy Hutson <randy-hutson>`, March 21, 2019)
 
 .. container:: note-item
 

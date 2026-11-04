@@ -96,7 +96,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the reflection of the :term:`orthic triangle <orthic-triangle>` in :ref:`X_4 <X_4>`. Let :g:`A″B″C″ << A″ B″ C″ >>` be the trangential triangle, with respect ot the orthic triangle, of the circumconic of the orthic triangle with center :ref:`X_4 <X_4>`; i.e., the bicevian conic of :ref:`X_4 <X_4>` and :ref:`X_459 <X_459>`. Then :ref:`X_64 <X_64>` is the perspector of :g:`A'B'C' << H_a H_b H_c >>` and :g:`A″B″C″ << A″ B″ C″ >>`. (Randy Hutson, November 18, 2015)
+   Let :g:`A'B'C' << A' B' C' >>` be the reflection of the :term:`orthic triangle <orthic-triangle>` in :ref:`X_4 <X_4>`. Let :g:`A″B″C″ << A″ B″ C″ >>` be the trangential triangle, with respect ot the orthic triangle, of the circumconic of the orthic triangle with center :ref:`X_4 <X_4>`; i.e., the bicevian conic of :ref:`X_4 <X_4>` and :ref:`X_459 <X_459>`. Then :ref:`X_64 <X_64>` is the perspector of :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>`. (Randy Hutson, November 18, 2015)
 
 .. container:: note-item
 

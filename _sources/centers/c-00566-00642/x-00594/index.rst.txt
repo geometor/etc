@@ -58,7 +58,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << Eu_a Eu_b Eu_c >>` be the :term:`Feuerbach triangle <feuerbach-triangle>`. Let :g:`L_{a} <L_a>` be the tangent to the nine-point circle at :g:`A' <Eu_a>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` are also tangent to the Steiner inellipse. Let :g:`A″ <A″>`, :g:`B″ <B″>`, :g:`C″ <C″>` be the respective touchpoints. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_594 <X_594>`. (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
+   Let :g:`Eu_aEu_bEu_c << Eu_a Eu_b Eu_c >>` be the :term:`Feuerbach triangle <feuerbach-triangle>`. Let :g:`L_{a} <L_a>` be the tangent to the nine-point circle at :g:`Eu_a <Eu_a>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` are also tangent to the Steiner inellipse. Let :g:`A″ <A″>`, :g:`B″ <B″>`, :g:`C″ <C″>` be the respective touchpoints. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_594 <X_594>`. (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
 
 .. container:: note-item
 

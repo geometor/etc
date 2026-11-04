@@ -37,9 +37,9 @@ X_173
 
    * **Trilinears:** :math:`\tan A/2 + \sec A/2 : \tan B/2 + \sec B/2 : \tan C/2 + \sec C/2` (M. Iliev, 4/12/07)
    * **Trilinears:** :math:`b(\csc B/2) + c(\csc C/2) - a(\csc A/2) : :`
-   * **Trilinears:** :math:`\cot A'/2 : :`, where :g:`A'B'C' << A' B' C' >>` = :term:`excentral triangle <excentral-triangle>`
+   * **Trilinears:** :math:`\cot A'/2 : :`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` = :term:`excentral triangle <excentral-triangle>`
    * **Trilinears:** :math:`b' + c' - a' : :`, where a', b', c' are sidelengths of excentral triangle
-   * **Trilinears:** :math:`\cot A' + \csc A' : :`, where :g:`A'B'C' << A' B' C' >>` = excentral triangle
+   * **Trilinears:** :math:`\cot A' + \csc A' : :`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` = excentral triangle
    * **Trilinears:** [distance from :g:`A <A>` to far side of :g:`A <A>`-excircle] : :
 
 .. collapse:: Incident Central Lines
@@ -54,7 +54,7 @@ X_173
    * :ref:`X_173 <X_173>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_258 <X_258>`
    * :ref:`X_173 <X_173>` = :term:`anticomplement <anticomplement>` of X_34849
    * :ref:`X_173 <X_173>` = :ref:`X_174 <X_174>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_1 <X_1>`
-   * :ref:`X_173 <X_173>` = SS(A→\ :g:`A' <A'>`)-of-:ref:`X_9 <X_9>`, where :g:`A'B'C' << A' B' C' >>` is the excentral triangle
+   * :ref:`X_173 <X_173>` = SS(A→\ :g:`J_a <J_a>`)-of-:ref:`X_9 <X_9>`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the excentral triangle
    * :ref:`X_173 <X_173>` = :ref:`X_19 <X_19>`-of-excentral triangle
    * :ref:`X_173 <X_173>` = :ref:`X_19 <X_19>`-of-Yff :term:`central triangle <central-triangle>`
    * :ref:`X_173 <X_173>` = homothetic center of excentral triangle and Yff central triangle

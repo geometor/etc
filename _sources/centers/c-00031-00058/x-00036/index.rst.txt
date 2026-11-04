@@ -39,7 +39,7 @@ X_36
    * **Trilinears:** :math:`a(b^{2} + c^{2} - a^{2} - bc)`
    * **Trilinears:** :math:`\sec(A/2) \cos(3A/2) : :`
    * **Barycentrics:** :math:`a^{2}(b^{2} + c^{2} - a^{2} - bc) : :`
-   * **Tripolars:** :math:`\sec A' : :`, where :g:`A'B'C' << A' B' C' >>` is the :term:`excentral triangle <excentral-triangle>`
+   * **Tripolars:** :math:`\sec A' : :`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the :term:`excentral triangle <excentral-triangle>`
 
 .. collapse:: Incident Central Lines
    :badge: 41 lines
@@ -98,7 +98,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << I_a I_b I_c >>` be the :term:`incentral triangle <incentral-triangle>`. Let :g:`A″ <A″>` be the reflection of :g:`A <A>` in line :g:`B'C' <[ I_b I_c ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ I_a A″ ]>`, :g:`B'B″ <[ I_b B″ ]>`, :g:`C'C″ <[ I_c C″ ]>` concur in :ref:`X_36 <X_36>`. (Randy Hutson, June 27, 2018)
+   Let :g:`I_aI_bI_c << I_a I_b I_c >>` be the :term:`incentral triangle <incentral-triangle>`. Let :g:`A″ <A″>` be the reflection of :g:`A <A>` in line :g:`I_bI_c <[ I_b I_c ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`I_aA″ <[ I_a A″ ]>`, :g:`I_bB″ <[ I_b B″ ]>`, :g:`I_cC″ <[ I_c C″ ]>` concur in :ref:`X_36 <X_36>`. (Randy Hutson, June 27, 2018)
 
 .. container:: note-item
 

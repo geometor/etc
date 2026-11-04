@@ -26,7 +26,7 @@ X_54
 
    * **Derived Triangle:** :term:`Kosnita Triangle <kosnita triangle>` :g:`△O_AO_BO_C << O_A O_B O_C >>` — vertices :g:`O_A <O_A>`, :g:`O_B <O_B>`, :g:`O_C <O_C>` (Circumcenters of △BOC, △COA, △AOB where O = X_3)
    * **Concurrence Lines:** :g:`A–O_A <[ A O_A ]>`, :g:`B–O_B <[ B O_B ]>`, :g:`C–O_C <[ C O_C ]>` concurring at :g:`X_54 <X_54>`
-   * **Related Centers:** :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`) (denoted :g:`O <X_3>`)
+   * **Related Centers:** :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`)
 
 .. signature:: center
 
@@ -122,7 +122,7 @@ Notes
 
 .. container:: note-item
 
-   Let (:g:`N_{a} <N_a>`) be the reflection of the nine-point circle in :g:`BC <[ B C ]>`, and define (:g:`N_{b} <N_b>`) and (:g:`N_{c} <N_c>`) cyclically. :ref:`X_54 <X_54>` is the radical center of (:g:`N_{a} <N_a>`), (:g:`N_{b} <N_b>`), (:g:`N_{c} <N_c>`). The tangents at :g:`A <A>`, :g:`B <B>`, :g:`C <C>` to the Napoleon-Feuerbach cubic K005 concur in :ref:`X_54 <X_54>`. Let :g:`A'B'C' << Ref_a Ref_b Ref_c >>` be the reflection triangle. Let :g:`L_{a} <L_a>` be the trilinear polar of :g:`A' <Ref_a>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` be :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_54 <X_54>`. (Randy Hutson, July 23, 2015)
+   Let (:g:`N_{a} <N_a>`) be the reflection of the nine-point circle in :g:`BC <[ B C ]>`, and define (:g:`N_{b} <N_b>`) and (:g:`N_{c} <N_c>`) cyclically. :ref:`X_54 <X_54>` is the radical center of (:g:`N_{a} <N_a>`), (:g:`N_{b} <N_b>`), (:g:`N_{c} <N_c>`). The tangents at :g:`A <A>`, :g:`B <B>`, :g:`C <C>` to the Napoleon-Feuerbach cubic K005 concur in :ref:`X_54 <X_54>`. Let :g:`Ref_aRef_bRef_c << Ref_a Ref_b Ref_c >>` be the reflection triangle. Let :g:`L_{a} <L_a>` be the trilinear polar of :g:`Ref_a <Ref_a>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` be :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_54 <X_54>`. (Randy Hutson, July 23, 2015)
 
 .. container:: note-item
 

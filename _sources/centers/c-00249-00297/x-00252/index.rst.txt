@@ -29,7 +29,7 @@ X_252
 .. signature:: center
 
    | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = \sec(B - C)/[1 - 2 \cos(2A)]`
-   | **Barycentrics:** (sin A)f(:g:`A <A>`, :g:`B <B>`, :g:`C <C>`) : (sin B)f(:g:`B <B>`, :g:`C <C>`, :g:`A <A>`) : (sin C) f(:g:`C <C>`, :g:`A <A>`, :g:`B <B>`) Let :g:`A'B'C' << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`O_{A} <O_A>` be the circle with center A passing through :g:`A' <H_a>`. Let :g:`A″ <A″>` be the intersection, other than :g:`A' <H_a>`, of :g:`O_{A} <O_A>` and the nine-point circle. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_252 <X_252>`. (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
+   | **Barycentrics:** (sin A)f(:g:`A <A>`, :g:`B <B>`, :g:`C <C>`) : (sin B)f(:g:`B <B>`, :g:`C <C>`, :g:`A <A>`) : (sin C) f(:g:`C <C>`, :g:`A <A>`, :g:`B <B>`) Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`O_{A} <O_A>` be the circle with center A passing through :g:`H_a <H_a>`. Let :g:`A″ <A″>` be the intersection, other than :g:`H_a <H_a>`, of :g:`O_{A} <O_A>` and the nine-point circle. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_252 <X_252>`. (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
    | **Search Value (6, 9, 13):** :math:`2.767922111553`
 
 .. collapse:: Alternate Coordinates

@@ -77,7 +77,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << J_a J_b J_c >>` be the :term:`excentral triangle <excentral-triangle>`. :ref:`X_442 <X_442>` is the radical center of the nine-point circles of :g:`A'BC << J_a B C >>`, :g:`B'CA << J_b C A >>`, :g:`C'AB << J_c A B >>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
+   Let :g:`J_aJ_bJ_c << J_a J_b J_c >>` be the :term:`excentral triangle <excentral-triangle>`. :ref:`X_442 <X_442>` is the radical center of the nine-point circles of :g:`J_aBC << J_a B C >>`, :g:`J_bCA << J_b C A >>`, :g:`J_cAB << J_c A B >>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
 
 .. container:: note-item
 

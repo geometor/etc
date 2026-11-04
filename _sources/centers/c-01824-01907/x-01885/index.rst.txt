@@ -58,7 +58,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the orthic triangle. :ref:`X_1885 <X_1885>` is the radical center of the 2nd Droz-Farny circles of triangles :g:`AB'C' << A H_b H_c >>`, :g:`BC'A' << B H_c H_a >>`, :g:`CA'B' << C H_a H_b >>`. (:person:`Randy Hutson <randy-hutson>`, July 31 2018)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the orthic triangle. :ref:`X_1885 <X_1885>` is the radical center of the 2nd Droz-Farny circles of triangles :g:`AH_bH_c << A H_b H_c >>`, :g:`BH_cH_a << B H_c H_a >>`, :g:`CH_aH_b << C H_a H_b >>`. (:person:`Randy Hutson <randy-hutson>`, July 31 2018)
 
 .. toctree::
    :hidden:

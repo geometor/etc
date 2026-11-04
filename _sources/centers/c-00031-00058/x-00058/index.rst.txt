@@ -102,7 +102,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << Eu_a Eu_b Eu_c >>` be the Feuerbach triangle. Let :g:`L_{a} <L_a>` be the tangent to the nine-point circle at :g:`A' <Eu_a>`, and define :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` be the isogonal conjugate of the trilinear pole of :g:`L_{a} <L_a>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. Let :g:`A* <A*>` = :g:`BB″ <[ B B″ ]>`\ ∩\ :g:`CC″ <[ C C″ ]>`, :g:`B* <B*>` = :g:`CC″ <[ C C″ ]>`\ ∩\ :g:`AA″ <[ A A″ ]>`, :g:`C* <C*>` = :g:`AA″ <[ A A″ ]>`\ ∩\ :g:`BB″ <[ B B″ ]>`. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X_58 <X_58>`. (Randy Hutson, July 20, 2016)
+   Let :g:`Eu_aEu_bEu_c << Eu_a Eu_b Eu_c >>` be the Feuerbach triangle. Let :g:`L_{a} <L_a>` be the tangent to the nine-point circle at :g:`Eu_a <Eu_a>`, and define :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` be the isogonal conjugate of the trilinear pole of :g:`L_{a} <L_a>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. Let :g:`A* <A*>` = :g:`BB″ <[ B B″ ]>`\ ∩\ :g:`CC″ <[ C C″ ]>`, :g:`B* <B*>` = :g:`CC″ <[ C C″ ]>`\ ∩\ :g:`AA″ <[ A A″ ]>`, :g:`C* <C*>` = :g:`AA″ <[ A A″ ]>`\ ∩\ :g:`BB″ <[ B B″ ]>`. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X_58 <X_58>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 

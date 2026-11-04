@@ -69,7 +69,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << Tan_a Tan_b Tan_c >>` be the :term:`tangential triangle <tangential-triangle>` of the :term:`Feuerbach triangle <feuerbach-triangle>`. Let :g:`A″B″C″ << A″ B″ C″ >>` be the tangential triangle of the Apollonius triangle. Let :g:`A* <A*>` be the {:g:`A' <Tan_a>`,\ :g:`A″ <A″>`}-harmonic conjugate of :ref:`X_10 <X_10>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X_2051 <X_2051>`. (Randy Hutson, March 21, 2019)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`tangential triangle <tangential-triangle>` of the :term:`Feuerbach triangle <feuerbach-triangle>`. Let :g:`A″B″C″ << A″ B″ C″ >>` be the tangential triangle of the Apollonius triangle. Let :g:`A* <A*>` be the {:g:`A' <A'>`,\ :g:`A″ <A″>`}-harmonic conjugate of :ref:`X_10 <X_10>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X_2051 <X_2051>`. (Randy Hutson, March 21, 2019)
 
 .. toctree::
    :hidden:

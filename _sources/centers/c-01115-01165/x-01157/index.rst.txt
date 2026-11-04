@@ -66,7 +66,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << Ref_a Ref_b Ref_c >>` be the :term:`reflection triangle <reflection-triangle>`. The circumcircles of :g:`AB'C' << A Ref_b Ref_c >>`, :g:`BC'A' << B Ref_c Ref_a >>`, :g:`CA'B' << C Ref_a Ref_b >>` (i.e., the Yiu circles) concur in :ref:`X_1157 <X_1157>`. (:person:`Randy Hutson <randy-hutson>`, July 20, 2016)
+   Let :g:`Ref_aRef_bRef_c << Ref_a Ref_b Ref_c >>` be the :term:`reflection triangle <reflection-triangle>`. The circumcircles of :g:`ARef_bRef_c << A Ref_b Ref_c >>`, :g:`BRef_cRef_a << B Ref_c Ref_a >>`, :g:`CRef_aRef_b << C Ref_a Ref_b >>` (i.e., the Yiu circles) concur in :ref:`X_1157 <X_1157>`. (:person:`Randy Hutson <randy-hutson>`, July 20, 2016)
 
 .. toctree::
    :hidden:

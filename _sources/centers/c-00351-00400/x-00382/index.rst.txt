@@ -81,7 +81,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << Ref_a Ref_b Ref_c >>` be the :term:`reflection triangle <reflection-triangle>`. Let :g:`A″ <A″>` be the :term:`trilinear pole <trilinear-pole>`, wrt :g:`A'B'C' << Ref_a Ref_b Ref_c >>`, of line :g:`BC <[ B C ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_382 <X_382>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2015)
+   Let :g:`Ref_aRef_bRef_c << Ref_a Ref_b Ref_c >>` be the :term:`reflection triangle <reflection-triangle>`. Let :g:`A″ <A″>` be the :term:`trilinear pole <trilinear-pole>`, wrt :g:`Ref_aRef_bRef_c << Ref_a Ref_b Ref_c >>`, of line :g:`BC <[ B C ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_382 <X_382>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2015)
 
 .. container:: note-item
 

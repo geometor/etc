@@ -64,9 +64,9 @@ Notes
 
    :person:`Randy Hutson <randy-hutson>` (January 29, 2015) gives 3 constructions:
 
-      * (1) Let :g:`A'B'C' << I_a I_b I_c >>` be the mixtilinear :term:`incentral triangle <incentral-triangle>`. Let :g:`A″ <A″>` be the :term:`cevapoint <cevapoint>` of :g:`B' <I_b>` and :g:`C' <I_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_1697 <X_1697>`.
-      * (2) Let :g:`A'B'C' << I_a I_b I_c >>` be the mixtilinear incentral triangle. Let :g:`A″ <A″>` be the trilinear product :g:`B' <I_b>`\ \*\ :g:`C' <I_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ I_a A″ ]>`, :g:`B'B″ <[ I_b B″ ]>`, :g:`C'C″ <[ I_c C″ ]>` concur in :ref:`X_1697 <X_1697>`.
-      * Let :g:`A'B'C' << I_a I_b I_c >>` be the intouch triangle, :g:`A″B″C″ << A″ B″ C″ >>` the :term:`extouch triangle <extouch-triangle>`, and :g:`A*B*C* << A* B* C* >>` the excentral triangle. Let :g:`O_{A} <O_A>` be the circle through :g:`A'A″A* << I_a A″ A* >>`, and define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>`\ c cyclically. :ref:`X_1697 <X_1697>` is the radical center of circles :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`.
+      * (1) Let :g:`T_aT_bT_c << T_a T_b T_c >>` be the mixtilinear :term:`incentral triangle <incentral-triangle>`. Let :g:`A″ <A″>` be the :term:`cevapoint <cevapoint>` of :g:`T_b <T_b>` and :g:`T_c <T_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_1697 <X_1697>`.
+      * (2) Let :g:`T_aT_bT_c << T_a T_b T_c >>` be the mixtilinear incentral triangle. Let :g:`A″ <A″>` be the trilinear product :g:`T_b <T_b>`\ \*\ :g:`T_c <T_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`T_aA″ <[ T_a A″ ]>`, :g:`T_bB″ <[ T_b B″ ]>`, :g:`T_cC″ <[ T_c C″ ]>` concur in :ref:`X_1697 <X_1697>`.
+      * Let :g:`T_aT_bT_c << T_a T_b T_c >>` be the intouch triangle, :g:`A″B″C″ << A″ B″ C″ >>` the :term:`extouch triangle <extouch-triangle>`, and :g:`A*B*C* << A* B* C* >>` the excentral triangle. Let :g:`O_{A} <O_A>` be the circle through :g:`T_aA″A* << T_a A″ A* >>`, and define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>`\ c cyclically. :ref:`X_1697 <X_1697>` is the radical center of circles :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`.
 
 .. toctree::
    :hidden:

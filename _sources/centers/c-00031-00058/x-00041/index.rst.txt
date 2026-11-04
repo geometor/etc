@@ -37,7 +37,7 @@ X_41
 
    * **Trilinears:** :math:`a^{2}\cot(A/2) : b^{2}\cot(B/2) : c^{2}\cot(C/2)`
    * **Trilinears:** :math:`a^{2}(a - s) : b^{2}(b - s) : c^{2}(c - s)`
-   * **Trilinears:** :math:`a \tan A' : :`, where :g:`A'B'C' << A' B' C' >>` is the :term:`excentral triangle <excentral-triangle>`
+   * **Trilinears:** :math:`a \tan A' : :`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the :term:`excentral triangle <excentral-triangle>`
 
 .. collapse:: Linear Combinations
    :badge: 1 combination

@@ -97,7 +97,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << J_a J_b J_c >>` be the :term:`excentral triangle <excentral-triangle>` and H the Stammler hyperbola. Let :g:`T <T>` be the :term:`tangential triangle <tangential-triangle>`, with respect to :g:`A'B'C' << J_a J_b J_c >>`, of H. Then T and :g:`ABC << A B C >>` are perspective, and their perspector is :ref:`X_662 <X_662>`. (Randy Hutson, December 26, 2015)
+   Let :g:`J_aJ_bJ_c << J_a J_b J_c >>` be the :term:`excentral triangle <excentral-triangle>` and H the Stammler hyperbola. Let :g:`T <T>` be the :term:`tangential triangle <tangential-triangle>`, with respect to :g:`J_aJ_bJ_c << J_a J_b J_c >>`, of H. Then T and :g:`ABC << A B C >>` are perspective, and their perspector is :ref:`X_662 <X_662>`. (Randy Hutson, December 26, 2015)
 
 .. container:: note-item
 

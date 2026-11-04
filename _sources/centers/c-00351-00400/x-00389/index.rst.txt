@@ -85,15 +85,15 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the orthic triangle, let :g:`A″ <A″>` be the orthocenter of :g:`AB'C' << A H_b H_c >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Triangle :g:`A″B″C″ << A″ B″ C″ >>` is the :term:`medial triangle <medial-triangle>` of the circumorthic triangle. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to :g:`A'B'C' << H_a H_b H_c >>`, and the center of homothety is :ref:`X_389 <X_389>`. (Randy Hutson, 9/23/2011)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the orthic triangle, let :g:`A″ <A″>` be the orthocenter of :g:`AH_bH_c << A H_b H_c >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Triangle :g:`A″B″C″ << A″ B″ C″ >>` is the :term:`medial triangle <medial-triangle>` of the circumorthic triangle. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to :g:`H_aH_bH_c << H_a H_b H_c >>`, and the center of homothety is :ref:`X_389 <X_389>`. (Randy Hutson, 9/23/2011)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the orthic triangle. Let :g:`O_{a} <O_a>` be the circle with center A tangent to line :g:`B'C' <[ H_b H_c ]>`, and define :g:`O_{b} <O_b>` and :g:`O_{c} <O_c>` cyclically. The radical circle of :g:`O_{a} <O_a>`, :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>` is the Taylor circle, which is also the Spieker radical circle of the orthic triangle if :g:`ABC << A B C >>` is acute. (Randy Hutson, December 2, 2017)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the orthic triangle. Let :g:`O_{a} <O_a>` be the circle with center A tangent to line :g:`H_bH_c <[ H_b H_c ]>`, and define :g:`O_{b} <O_b>` and :g:`O_{c} <O_c>` cyclically. The radical circle of :g:`O_{a} <O_a>`, :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>` is the Taylor circle, which is also the Spieker radical circle of the orthic triangle if :g:`ABC << A B C >>` is acute. (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the orthic triangle. :ref:`X_389 <X_389>` is the radical center of the polar circles of :g:`AB'C' << A H_b H_c >>`, :g:`BC'A' << B H_c H_a >>`, :g:`CA'B' << C H_a H_b >>`. (Randy Hutson, December 2, 2017)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the orthic triangle. :ref:`X_389 <X_389>` is the radical center of the polar circles of :g:`AH_bH_c << A H_b H_c >>`, :g:`BH_cH_a << B H_c H_a >>`, :g:`CH_aH_b << C H_a H_b >>`. (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 

@@ -52,7 +52,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`I_{a}I_{b}I_{c} << I_a I_b I_c >>` be the excentral triangle. Let :g:`L_{a} <L_a>` be the line parallel to the Brocard axis of BCIa and passing through :g:`I_{a} <I_a>`. Define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. The lines :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` concur in :ref:`X_1282 <X_1282>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
+   Let :g:`J_aJ_bJ_c << J_a J_b J_c >>` be the excentral triangle. Let :g:`L_{a} <L_a>` be the line parallel to the Brocard axis of :g:`BCJ_a << B C J_a >>` and passing through :g:`J_a <J_a>`. Define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. The lines :g:`L_{a} <L_a>`, :g:`L_{b} <L_b>`, :g:`L_{c} <L_c>` concur in :ref:`X_1282 <X_1282>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
 
 .. toctree::
    :hidden:

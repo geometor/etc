@@ -34,7 +34,7 @@ X_1488
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** :math:`\sec^{2}(A'/2) : :`, where :g:`A'B'C' << A' B' C' >>` is the :term:`excentral triangle <excentral-triangle>`
+   * **Trilinears:** :math:`\sec^{2}(A'/2) : :`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the :term:`excentral triangle <excentral-triangle>`
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines
@@ -46,7 +46,7 @@ X_1488
    :badge: 4 relations
 
    * :ref:`X_1488 <X_1488>` = :ref:`X_1 <X_1>`-cross conjugate of :ref:`X_174 <X_174>`
-   * :ref:`X_1488 <X_1488>` = SS(A→\ :g:`A' <A'>`) of :ref:`X_7 <X_7>`, where :g:`A'B'C' << A' B' C' >>` is the excentral triangle
+   * :ref:`X_1488 <X_1488>` = SS(A→\ :g:`J_a <J_a>`) of :ref:`X_7 <X_7>`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the excentral triangle
    * :ref:`X_1488 <X_1488>` = :term:`trilinear pole <trilinear-pole>` of Monge line of incircles of :g:`BCI << B C I >>`, :g:`CAI << C A I >>`, :g:`ABI << A B I >>`
    * :ref:`X_1488 <X_1488>` = trilinear pole of Monge line of I-excircles of :g:`BCI << B C I >>`, :g:`CAI << C A I >>`, :g:`ABI << A B I >>`
 

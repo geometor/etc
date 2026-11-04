@@ -53,7 +53,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << T_a T_b T_c >>` be the :term:`intouch triangle <intouch-triangle>` of the :term:`extangents triangle <extangents-triangle>`, if :g:`ABC << A B C >>` is acute. Then :g:`A'B'C' << T_a T_b T_c >>` is homothetic to the 2nd isogonal triangle of :ref:`X_1 <X_1>` at :ref:`X_2093 <X_2093>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`intouch triangle <intouch-triangle>` of the :term:`extangents triangle <extangents-triangle>`, if :g:`ABC << A B C >>` is acute. Then :g:`A'B'C' << A' B' C' >>` is homothetic to the 2nd isogonal triangle of :ref:`X_1 <X_1>` at :ref:`X_2093 <X_2093>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
 
 .. toctree::
    :hidden:

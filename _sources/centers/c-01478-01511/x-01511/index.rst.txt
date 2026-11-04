@@ -78,7 +78,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << M_a M_b M_c >>` be the medial triangle. Let :g:`L <L>` be the line through :g:`A' <M_a>` parallel to the Euler line, and define M and N cyclically. Let :g:`L' <L'>` be the reflection of :g:`L <L>` in sideline :g:`BC <[ B C ]>`, and define :g:`M' <M'>` and :g:`N' <N'>` cyclically. The lines :g:`L' <L'>`,\ :g:`M' <M'>`,\ :g:`N' <N'>` concur in :ref:`X_1511 <X_1511>`. Let (:g:`O' <O'>`) be the circle passing through the points :ref:`X_3 <X_3>`, :ref:`X_4 <X_4>`, :ref:`X_399 <X_399>`, X_6069, let :g:`Q <Q>` be the radical axis (:g:`O' <O'>`) and the circumcircle; then :ref:`X_1511 <X_1511>` = Q∩\ :ref:`X_3 <X_3>`\ \ :ref:`X_74 <X_74>`. (Randy Hutson, August 26, 2014)
+   Let :g:`M_aM_bM_c << M_a M_b M_c >>` be the medial triangle. Let :g:`L <L>` be the line through :g:`M_a <M_a>` parallel to the Euler line, and define M and N cyclically. Let :g:`L' <L'>` be the reflection of :g:`L <L>` in sideline :g:`BC <[ B C ]>`, and define :g:`M' <M'>` and :g:`N' <N'>` cyclically. The lines :g:`L' <L'>`,\ :g:`M' <M'>`,\ :g:`N' <N'>` concur in :ref:`X_1511 <X_1511>`. Let (:g:`O' <O'>`) be the circle passing through the points :ref:`X_3 <X_3>`, :ref:`X_4 <X_4>`, :ref:`X_399 <X_399>`, X_6069, let :g:`Q <Q>` be the radical axis (:g:`O' <O'>`) and the circumcircle; then :ref:`X_1511 <X_1511>` = Q∩\ :ref:`X_3 <X_3>`\ \ :ref:`X_74 <X_74>`. (Randy Hutson, August 26, 2014)
 
 .. container:: note-item
 

@@ -38,9 +38,9 @@ X_174
    :badge: 4 forms
 
    * **Trilinears:** :math:`[bc/(b + c - a)]^{1/2} : [ca(c + a - b)]^{1/2} : [ab(a + b - c)]^{1/2}`
-   * **Trilinears:** :math:`\csc A' : \csc B' : \csc C'`, where :g:`A'B'C' << A' B' C' >>` = :term:`excentral triangle <excentral-triangle>`
-   * **Trilinears:** :math:`|AA'| : |BB'| : |CC'|`, where :g:`A'B'C' << A' B' C' >>` = excentral triangle
-   * **Trilinears:** :math:`(\csc A')(\cos B' + \cos C') : :`, where :g:`A'B'C' << A' B' C' >>` = excentral triangle
+   * **Trilinears:** :math:`\csc A' : \csc B' : \csc C'`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` = :term:`excentral triangle <excentral-triangle>`
+   * **Trilinears:** :math:`|AA'| : |BB'| : |CC'|`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` = excentral triangle
+   * **Trilinears:** :math:`(\csc A')(\cos B' + \cos C') : :`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` = excentral triangle
 
 .. collapse:: Incident Central Lines
    :badge: 9 lines
@@ -58,8 +58,8 @@ X_174
    * :ref:`X_174 <X_174>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`1488 <X_1488>`), (:ref:`177 <X_177>`, :ref:`7 <X_7>`), (:ref:`259 <X_259>`, :ref:`188 <X_188>`)
    * :ref:`X_174 <X_174>` = :term:`crosssum <crosssum>` of :ref:`X_1 <X_1>` and :ref:`X_503 <X_503>`
    * :ref:`X_174 <X_174>` = :ref:`X_556 <X_556>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X_556 <X_556>`
-   * :ref:`X_174 <X_174>` = SS(A→\ :g:`A' <A'>`)-of-:ref:`X_2 <X_2>`, where :g:`A'B'C' << A' B' C' >>` is the excentral triangle
-   * :ref:`X_174 <X_174>` = SS(A→\ :g:`A' <A'>`)-of-:ref:`X_226 <X_226>`, where :g:`A'B'C' << A' B' C' >>` is the excentral triangle
+   * :ref:`X_174 <X_174>` = SS(A→\ :g:`J_a <J_a>`)-of-:ref:`X_2 <X_2>`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the excentral triangle
+   * :ref:`X_174 <X_174>` = SS(A→\ :g:`J_a <J_a>`)-of-:ref:`X_226 <X_226>`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the excentral triangle
    * :ref:`X_174 <X_174>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_556 <X_556>`
    * :ref:`X_174 <X_174>` = :ref:`X_55 <X_55>`-of-:term:`intouch triangle <intouch-triangle>`
    * :ref:`X_174 <X_174>` = :ref:`X_55 <X_55>`-of-Yff :term:`central triangle <central-triangle>`
@@ -79,7 +79,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << J_a J_b J_c >>` be the excentral triangle. :ref:`X_174 <X_174>` is the trilinear pole of the Monge line of the incircles of :g:`BCA' << B C J_a >>`, :g:`CAB' << C A J_b >>`, :g:`ABC' << A B J_c >>`. (Randy Hutson, December 10, 2016)
+   Let :g:`J_aJ_bJ_c << J_a J_b J_c >>` be the excentral triangle. :ref:`X_174 <X_174>` is the trilinear pole of the Monge line of the incircles of :g:`BCJ_a << B C J_a >>`, :g:`CAJ_b << C A J_b >>`, :g:`ABJ_c << A B J_c >>`. (Randy Hutson, December 10, 2016)
 
 .. container:: note-item
 

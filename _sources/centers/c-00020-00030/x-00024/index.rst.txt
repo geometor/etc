@@ -96,7 +96,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the orthic triangle. Let :g:`A″ <A″>` = inverse-in-circumcircle of :g:`A' <H_a>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_24 <X_24>`. (:person:`Randy Hutson <randy-hutson>`, September 5, 2015)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the orthic triangle. Let :g:`A″ <A″>` = inverse-in-circumcircle of :g:`H_a <H_a>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_24 <X_24>`. (:person:`Randy Hutson <randy-hutson>`, September 5, 2015)
 
 .. container:: note-item
 

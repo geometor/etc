@@ -81,7 +81,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << K_a K_b K_c >>` be the :term:`anticomplementary triangle <anticomplementary-triangle>`. Then :ref:`X_355 <X_355>` is the radical center of the incircles of :g:`A'BC << K_a B C >>`, :g:`B'CA << K_b C A >>`, :g:`C'AB << K_c A B >>`. (Randy Hutson, December 2, 2017)
+   Let :g:`K_aK_bK_c << K_a K_b K_c >>` be the :term:`anticomplementary triangle <anticomplementary-triangle>`. Then :ref:`X_355 <X_355>` is the radical center of the incircles of :g:`K_aBC << K_a B C >>`, :g:`K_bCA << K_b C A >>`, :g:`K_cAB << K_c A B >>`. (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 

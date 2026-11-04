@@ -12,7 +12,7 @@ X_1986
 
 .. enunciation::
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>` of triangle :g:`ABC << A B C >>`. Let :g:`A_{B} <A_B>` be the reflection of :g:`A <A>` in :g:`C' <H_c>`, and define :g:`A_{C} <A_C>`, :g:`B_{C} <B_C>`, :g:`B_{A} <B_A>`, :g:`C_{A} <C_A>`, :g:`C_{B} <C_B>` functionally. Then the nine-point circles of the triangles
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>` of triangle :g:`ABC << A B C >>`. Let :g:`A_{B} <A_B>` be the reflection of :g:`A <A>` in :g:`H_c <H_c>`, and define :g:`A_{C} <A_C>`, :g:`B_{C} <B_C>`, :g:`B_{A} <B_A>`, :g:`C_{A} <C_A>`, :g:`C_{B} <C_B>` functionally. Then the nine-point circles of the triangles
 
 .. figure:: x-01986.svg
    :alt: X_1986 — HATZIPOLAKIS REFLECTION POINT
@@ -65,7 +65,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` = orthic triangle. Let :g:`B'C'A″ << B' C' A″ >>` be the triangle similar to :g:`ABC << A B C >>` such that segment :g:`A'A″ <[ A' A″ ]>` crosses the line :g:`B'C' <[ B' C' ]>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Equivalently, :g:`A″ <A″>` is the reflection of :g:`A <A>` in :g:`B'C' <[ B' C' ]>`, and cyclically for :g:`B″ <B″>` and :g:`C″ <C″>`. Equivalently, :g:`A″ <A″>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :g:`A' <A'>` wrt :g:`AB'C' << A B' C' >>`, and cyclically for :g:`B″ <B″>` and :g:`C″ <C″>`. The lines :g:`A'A″ <[ A' A″ ]>`, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X_1986 <X_1986>`. (Randy Hutson, December 2, 2017)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` = orthic triangle. Let :g:`H_bH_cA″ << H_b H_c A″ >>` be the triangle similar to :g:`ABC << A B C >>` such that segment :g:`H_aA″ <[ H_a A″ ]>` crosses the line :g:`H_bH_c <[ H_b H_c ]>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Equivalently, :g:`A″ <A″>` is the reflection of :g:`A <A>` in :g:`H_bH_c <[ H_b H_c ]>`, and cyclically for :g:`B″ <B″>` and :g:`C″ <C″>`. Equivalently, :g:`A″ <A″>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :g:`H_a <H_a>` wrt :g:`AH_bH_c << A H_b H_c >>`, and cyclically for :g:`B″ <B″>` and :g:`C″ <C″>`. The lines :g:`H_aA″ <[ H_a A″ ]>`, :g:`H_bB″ <[ H_b B″ ]>`, :g:`H_cC″ <[ H_c C″ ]>` concur in :ref:`X_1986 <X_1986>`. (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 
@@ -73,7 +73,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the orthic triangle. Let :g:`O_{a} <O_a>` be the A-Johnson circle of triangle :g:`AB'C' << A H_b H_c >>`, and define :g:`O_{b} <O_b>` and :g:`O_{c} <O_c>` cyclically. The circles :g:`O_{a} <O_a>`, :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>` concur in :ref:`X_1986 <X_1986>`. (Randy Hutson, July 31 2018)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the orthic triangle. Let :g:`O_{a} <O_a>` be the A-Johnson circle of triangle :g:`AH_bH_c << A H_b H_c >>`, and define :g:`O_{b} <O_b>` and :g:`O_{c} <O_c>` cyclically. The circles :g:`O_{a} <O_a>`, :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>` concur in :ref:`X_1986 <X_1986>`. (Randy Hutson, July 31 2018)
 
 .. toctree::
    :hidden:

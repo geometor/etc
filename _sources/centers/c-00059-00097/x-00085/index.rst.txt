@@ -36,7 +36,7 @@ X_85
    :badge: 2 forms
 
    * **Trilinears:** :math:`\tan(A/2) \csc^{2} A : \tan(B/2) \csc^{2} B : \tan(C/2) \csc^{2} C`
-   * **Barycentrics:** :math:`\cot A' : :`, where :g:`A'B'C' << A' B' C' >>` is the :term:`excentral triangle <excentral-triangle>`
+   * **Barycentrics:** :math:`\cot A' : :`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the :term:`excentral triangle <excentral-triangle>`
 
 .. collapse:: Incident Central Lines
    :badge: 12 lines

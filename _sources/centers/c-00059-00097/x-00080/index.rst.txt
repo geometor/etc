@@ -93,15 +93,15 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`L_{a} <L_a>` be the antiorthic axis of :g:`AB'C' << A H_b H_c >>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`. :g:`B″ <B″>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C″ <C″>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is inversely similar to :g:`ABC << A B C >>`, with similitude center :ref:`X_9 <X_9>`. The incenter of triangle :g:`A″B″C″ << A″ B″ C″ >>` is :ref:`X_80 <X_80>`. Also, the lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_80 <X_80>`.(Randy Hutson, December 10, 2016)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`L_{a} <L_a>` be the antiorthic axis of :g:`AH_bH_c << A H_b H_c >>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`. :g:`B″ <B″>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C″ <C″>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. The triangle :g:`A″B″C″ << A″ B″ C″ >>` is inversely similar to :g:`ABC << A B C >>`, with similitude center :ref:`X_9 <X_9>`. The incenter of triangle :g:`A″B″C″ << A″ B″ C″ >>` is :ref:`X_80 <X_80>`. Also, the lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_80 <X_80>`.(Randy Hutson, December 10, 2016)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << J_a J_b J_c >>` be the excentral triangle. Let :g:`A″ <A″>` be the isogonal conjugate, wrt :g:`A'BC << J_a B C >>`, of A. Define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. (:g:`A″ <A″>` is also the reflection of :g:`A' <J_a>` in :g:`BC <[ B C ]>`, and cyclically for :g:`B″ <B″>` and :g:`C″ <C″>`). The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_80 <X_80>`. (Randy Hutson, January 29, 2018)
+   Let :g:`J_aJ_bJ_c << J_a J_b J_c >>` be the excentral triangle. Let :g:`A″ <A″>` be the isogonal conjugate, wrt :g:`J_aBC << J_a B C >>`, of A. Define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. (:g:`A″ <A″>` is also the reflection of :g:`J_a <J_a>` in :g:`BC <[ B C ]>`, and cyclically for :g:`B″ <B″>` and :g:`C″ <C″>`). The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_80 <X_80>`. (Randy Hutson, January 29, 2018)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << J_a J_b J_c >>` be the excentral triangle. Let :g:`O_{a} <O_a>` be the :g:`A' <J_a>`-Johnson circle of triangle :g:`A'BC << J_a B C >>`, and define :g:`O_{b} <O_b>` and :g:`O_{c} <O_c>` cyclically. :ref:`X_80 <X_80>` is the radical center of :g:`O_{a} <O_a>`, :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>`. (Randy Hutson, June 27, 2018)
+   Let :g:`J_aJ_bJ_c << J_a J_b J_c >>` be the excentral triangle. Let :g:`O_{a} <O_a>` be the :g:`J_a <J_a>`-Johnson circle of triangle :g:`J_aBC << J_a B C >>`, and define :g:`O_{b} <O_b>` and :g:`O_{c} <O_c>` cyclically. :ref:`X_80 <X_80>` is the radical center of :g:`O_{a} <O_a>`, :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>`. (Randy Hutson, June 27, 2018)
 
 .. toctree::
    :hidden:

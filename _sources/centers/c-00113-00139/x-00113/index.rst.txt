@@ -86,15 +86,15 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the orthic triangle. Let :g:`L <L>` be the line through :g:`A' <H_a>` parallel to the Euler line, and define M and N cyclically. Let :g:`L' <L'>` be the reflection of :g:`L <L>` in sideline :g:`BC <[ B C ]>`, and define :g:`M' <M'>` and :g:`N' <N'>` cyclically. The lines :g:`L' <L'>`, :g:`M' <M'>`, :g:`N' <N'>` concur in :ref:`X_113 <X_113>`. (:person:`Randy Hutson <randy-hutson>`, August 26, 2014)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the orthic triangle. Let :g:`L <L>` be the line through :g:`H_a <H_a>` parallel to the Euler line, and define M and N cyclically. Let :g:`L' <L'>` be the reflection of :g:`L <L>` in sideline :g:`BC <[ B C ]>`, and define :g:`M' <M'>` and :g:`N' <N'>` cyclically. The lines :g:`L' <L'>`, :g:`M' <M'>`, :g:`N' <N'>` concur in :ref:`X_113 <X_113>`. (:person:`Randy Hutson <randy-hutson>`, August 26, 2014)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the orthic triangle. Let :g:`M_{A} <M_A>` be the reflection of the orthic axis in line :g:`B'C' <[ H_b H_c ]>`, and define Let :g:`M_{B} <M_B>` and Let :g:`M_{C} <M_C>` cyclically. Let :g:`A″ <A″>` = Let :g:`M_{B} <M_B>`\ ∩\ :g:`M_{C} <M_C>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ H_a A″ ]>`, :g:`B'B″ <[ H_b B″ ]>` :g:`C'C″ <[ H_c C″ ]>` concur in :ref:`X_113 <X_113>`. (Randy Hutson, August 26, 2014)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the orthic triangle. Let :g:`M_{A} <M_A>` be the reflection of the orthic axis in line :g:`H_bH_c <[ H_b H_c ]>`, and define Let :g:`M_{B} <M_B>` and Let :g:`M_{C} <M_C>` cyclically. Let :g:`A″ <A″>` = Let :g:`M_{B} <M_B>`\ ∩\ :g:`M_{C} <M_C>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`H_aA″ <[ H_a A″ ]>`, :g:`H_bB″ <[ H_b B″ ]>` :g:`H_cC″ <[ H_c C″ ]>` concur in :ref:`X_113 <X_113>`. (Randy Hutson, August 26, 2014)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the orthic triangle. Let :g:`N_{A} <N_A>` be the orthic axis of :g:`AB'C' << A H_b H_c >>`, and define :g:`N_{B} <N_B>` and :g:`N_{C} <N_C>` cyclically. Let :g:`A″ <A″>` = :g:`N_{B} <N_B>`\ ∩\ :g:`N_{C} <N_C>`, :g:`B″ <B″>` = :g:`N_{C} <N_C>`\ ∩\ :g:`A_{C} <A_C>`, :g:`C″ <C″>` = :g:`N_{A} <N_A>`\ ∩\ :g:`B_{C} <B_C>`. Then triangle :g:`A″B″C″ << A″ B″ C″ >>` is inversely similar to :g:`ABC << A B C >>`, with similitude center :ref:`X_6 <X_6>`, and the lines :g:`A'A″ <[ H_a A″ ]>`, :g:`B'B″ <[ H_b B″ ]>`, :g:`C'C″ <[ H_c C″ ]>` concur in :ref:`X_113 <X_113>`. Also, :ref:`X_113 <X_113>` = :ref:`X_3 <X_3>`-of-:g:`A″B″C″ << A″ B″ C″ >>`. (Randy Hutson, August 26, 2014)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the orthic triangle. Let :g:`N_{A} <N_A>` be the orthic axis of :g:`AH_bH_c << A H_b H_c >>`, and define :g:`N_{B} <N_B>` and :g:`N_{C} <N_C>` cyclically. Let :g:`A″ <A″>` = :g:`N_{B} <N_B>`\ ∩\ :g:`N_{C} <N_C>`, :g:`B″ <B″>` = :g:`N_{C} <N_C>`\ ∩\ :g:`A_{C} <A_C>`, :g:`C″ <C″>` = :g:`N_{A} <N_A>`\ ∩\ :g:`B_{C} <B_C>`. Then triangle :g:`A″B″C″ << A″ B″ C″ >>` is inversely similar to :g:`ABC << A B C >>`, with similitude center :ref:`X_6 <X_6>`, and the lines :g:`H_aA″ <[ H_a A″ ]>`, :g:`H_bB″ <[ H_b B″ ]>`, :g:`H_cC″ <[ H_c C″ ]>` concur in :ref:`X_113 <X_113>`. Also, :ref:`X_113 <X_113>` = :ref:`X_3 <X_3>`-of-:g:`A″B″C″ << A″ B″ C″ >>`. (Randy Hutson, August 26, 2014)
 
 .. toctree::
    :hidden:

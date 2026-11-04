@@ -111,7 +111,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the orthic triangle. Let :g:`B'C'A″ << H_b H_c A″ >>` be the triangle similar to :g:`ABC << A B C >>` such that segment :g:`A'A″ <[ H_a A″ ]>` crosses the line :g:`B'C' <[ H_b H_c ]>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Equivalently, :g:`A″ <A″>` is the reflection of :g:`A <A>` in :g:`B'C' <[ H_b H_c ]>`, and cyclically for :g:`B″ <B″>` and :g:`C″ <C″>`. Let :g:`I_{a} <I_a>` be the incenter of :g:`B'C'A″ << H_b H_c A″ >>`, and define :g:`I_{b} <I_b>` and :g:`I_{c} <I_c>` cyclically. The circumcenter of triangle :g:`I_{a}I_{b}I_{c} << I_a I_b I_c >>` is :ref:`X_65 <X_65>`. Let :g:`A* <A*>` be the intersection of lines :g:`A″I_{a} <[ A″ I_a ]>` and :g:`B'C' <[ H_b H_c ]>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`A'A* <[ H_a A* ]>`, :g:`B'B* <[ H_b B* ]>`, :g:`C'C* <[ H_c C* ]>` concur in :ref:`X_65 <X_65>`. (Randy Hutson, July 20, 2016)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the orthic triangle. Let :g:`H_bH_cA″ << H_b H_c A″ >>` be the triangle similar to :g:`ABC << A B C >>` such that segment :g:`H_aA″ <[ H_a A″ ]>` crosses the line :g:`H_bH_c <[ H_b H_c ]>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Equivalently, :g:`A″ <A″>` is the reflection of :g:`A <A>` in :g:`H_bH_c <[ H_b H_c ]>`, and cyclically for :g:`B″ <B″>` and :g:`C″ <C″>`. Let :g:`I_{a} <I_a>` be the incenter of :g:`H_bH_cA″ << H_b H_c A″ >>`, and define :g:`I_{b} <I_b>` and :g:`I_{c} <I_c>` cyclically. The circumcenter of triangle :g:`I_{a}I_{b}I_{c} << I_a I_b I_c >>` is :ref:`X_65 <X_65>`. Let :g:`A* <A*>` be the intersection of lines :g:`A″I_{a} <[ A″ I_a ]>` and :g:`H_bH_c <[ H_b H_c ]>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`H_aA* <[ H_a A* ]>`, :g:`H_bB* <[ H_b B* ]>`, :g:`H_cC* <[ H_c C* ]>` concur in :ref:`X_65 <X_65>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
@@ -119,7 +119,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << T_a T_b T_c >>` be the intouch triangle of the extangents triangle, if :g:`ABC << A B C >>` is acute. Then :g:`A'B'C' << T_a T_b T_c >>` is perspective to the intouch triangle and 4th and 5th extouch triangles at :ref:`X_65 <X_65>`. (Randy Hutson, December 2 2017)
+   Let :g:`A'B'C' << A' B' C' >>` be the intouch triangle of the extangents triangle, if :g:`ABC << A B C >>` is acute. Then :g:`A'B'C' << A' B' C' >>` is perspective to the intouch triangle and 4th and 5th extouch triangles at :ref:`X_65 <X_65>`. (Randy Hutson, December 2 2017)
 
 .. container:: note-item
 

@@ -36,7 +36,7 @@ X_1820
    :badge: 3 forms
 
    * **Trilinears:** :math:`\tan 2A : \tan 2B : \tan 2C`
-   * **Trilinears:** :math:`\tan A' : :`, where :g:`A'B'C' << A' B' C' >>` is the :term:`orthic triangle <orthic-triangle>`
+   * **Trilinears:** :math:`\tan A' : :`, where :g:`H_aH_bH_c << H_a H_b H_c >>` is the :term:`orthic triangle <orthic-triangle>`
    * **Trilinears:** :math:`(1 + \cos A)/(1 + 2 \cos A) : :`
 
 .. collapse:: Incident Central Lines
@@ -52,7 +52,7 @@ X_1820
    * :ref:`X_1820 <X_1820>` = :term:`complement <complement>` of :term:`anticomplementary conjugate <anticomplementary-conjugate>` of X_18664
    * :ref:`X_1820 <X_1820>` = :term:`crosspoint <crosspoint>` of :ref:`X_63 <X_63>` and :ref:`X_921 <X_921>`
    * :ref:`X_1820 <X_1820>` = :term:`crosssum <crosssum>` of :ref:`X_19 <X_19>` and :ref:`X_920 <X_920>`
-   * :ref:`X_1820 <X_1820>` = SS(A→\ :g:`A' <A'>`) of :ref:`X_19 <X_19>`, where :g:`A'B'C' << A' B' C' >>` is the orthic triangle
+   * :ref:`X_1820 <X_1820>` = SS(A→\ :g:`H_a <H_a>`) of :ref:`X_19 <X_19>`, where :g:`H_aH_bH_c << H_a H_b H_c >>` is the orthic triangle
    * :ref:`X_1820 <X_1820>` = :ref:`X_47 <X_47>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_92 <X_92>`
 
 .. toctree::

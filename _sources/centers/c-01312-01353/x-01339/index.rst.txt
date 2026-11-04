@@ -12,7 +12,7 @@ X_1339
 
 .. enunciation::
 
-   Let :g:`X'Y'Z' << X' Y' Z' >>` be the :term:`extouch triangle <extouch-triangle>` of :g:`ABC << A B C >>`; viz., :g:`X' <X'>` is where the :g:`A <A>`-excircle meets line :g:`BC <[ B C ]>`, and :g:`X'Y'Z' << X' Y' Z' >>` is the :term:`pedal triangle <pedal-triangle>` of :ref:`X_40 <X_40>`. Let I = incenter of :g:`ABC << A B C >>`. The circles (AIX'), (BIY'), (CIZ') concur in two points: I and :ref:`X_1339 <X_1339>`. (Jean-Pierre Ehrmann, :cite:`Hyacinthos #6545 <hyacinthos>`)
+   Let :g:`N_aN_bN_c << N_a N_b N_c >>` be the :term:`extouch triangle <extouch-triangle>` of :g:`ABC << A B C >>`; viz., :g:`N_a <N_a>` is where the :g:`A <A>`-excircle meets line :g:`BC <[ B C ]>`, and :g:`N_aN_bN_c << N_a N_b N_c >>` is the :term:`pedal triangle <pedal-triangle>` of :ref:`X_40 <X_40>`. Let I = incenter of :g:`ABC << A B C >>`. The circles (AIX'), (BIY'), (CIZ') concur in two points: I and :ref:`X_1339 <X_1339>`. (Jean-Pierre Ehrmann, :cite:`Hyacinthos #6545 <hyacinthos>`)
 
 .. figure:: x-01339.svg
    :alt: X_1339 — NAGEL-SCHRÖDER POINT
@@ -24,7 +24,7 @@ X_1339
    :class: note
 
    * **Central Lines:** :g:`{1, 474} <{ 1, 474 }>`
-   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`) (denoted :g:`I <X_1>`), :g:`X_474 <X_474>` (:ref:`EULER LINE INTERCEPT OF LINE X <X_474>`)
+   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_474 <X_474>` (:ref:`EULER LINE INTERCEPT OF LINE X <X_474>`)
 
 .. signature:: center
 

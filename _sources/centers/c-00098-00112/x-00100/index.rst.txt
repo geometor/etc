@@ -172,7 +172,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`I_{a}I_{b}I_{c} << I_a I_b I_c >>` be the excentral triangle. The Euler lines of triangles BCIa, CAIb, ABIc concur in :ref:`X_100 <X_100>`. (Randy Hutson, June 27, 2018)
+   Let :g:`J_aJ_bJ_c << J_a J_b J_c >>` be the excentral triangle. The Euler lines of triangles :g:`BCJ_a << B C J_a >>`, :g:`CAJ_b << C A J_b >>`, :g:`ABJ_c << A B J_c >>` concur in :ref:`X_100 <X_100>`. (Randy Hutson, June 27, 2018)
 
 .. toctree::
    :hidden:
