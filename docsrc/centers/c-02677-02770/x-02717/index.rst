@@ -54,7 +54,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << J_a J_b J_c >>` be the :term:`excentral triangle <excentral-triangle>`. Let :g:`L_{a} <L_a>` be the line :ref:`X_115 <X_115>`\ \ :ref:`X_125 <X_125>` of the triangle :g:`A'BC << J_a B C >>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Then :g:`A″B″C″ << A″ B″ C″ >>` is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X_2717 <X_2717>`. (:person:`Randy Hutson <randy-hutson>`, July 31 2018)
+   Let :g:`J_aJ_bJ_c << J_a J_b J_c >>` be the :term:`excentral triangle <excentral-triangle>`. Let :g:`L_{a} <L_a>` be the line :ref:`X_115 <X_115>`\ \ :ref:`X_125 <X_125>` of the triangle :g:`J_aBC << J_a B C >>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Then :g:`A″B″C″ << A″ B″ C″ >>` is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X_2717 <X_2717>`. (:person:`Randy Hutson <randy-hutson>`, July 31 2018)
 
 .. toctree::
    :hidden:

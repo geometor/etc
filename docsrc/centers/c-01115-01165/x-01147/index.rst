@@ -77,11 +77,11 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`A″ <A″>` be the orthogonal projection of A onto line :g:`B'C' <[ H_b H_c ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically; then :ref:`X_1147 <X_1147>` is the circumcenter of :g:`A″B″C″ << A″ B″ C″ >>`. Let :g:`L <L>` be the reflection of line :g:`B'C' <[ H_b H_c ]>` in the perpendicular bisector of segment :g:`BC <[ B C ]>`, and define M and N cyclically. Let :g:`A* <A*>` = M∩N, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically; then :ref:`X_1147 <X_1147>` is the incenter of :g:`A*B*C* << A* B* C* >>`. (:person:`Randy Hutson <randy-hutson>`, August 26, 2014)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`A″ <A″>` be the orthogonal projection of A onto line :g:`H_bH_c <[ H_b H_c ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically; then :ref:`X_1147 <X_1147>` is the circumcenter of :g:`A″B″C″ << A″ B″ C″ >>`. Let :g:`L <L>` be the reflection of line :g:`H_bH_c <[ H_b H_c ]>` in the perpendicular bisector of segment :g:`BC <[ B C ]>`, and define M and N cyclically. Let :g:`A* <A*>` = M∩N, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically; then :ref:`X_1147 <X_1147>` is the incenter of :g:`A*B*C* << A* B* C* >>`. (:person:`Randy Hutson <randy-hutson>`, August 26, 2014)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << O_A O_B O_C >>` be the :term:`Kosnita triangle <kosnita-triangle>`. Let :g:`L <L>` be the line through :g:`A' <O_A>` parallel to the Euler line, and define M and N dyclically. Let :g:`L' <L'>` be the reflection of :g:`L <L>` in sideline :g:`BC <[ B C ]>`, and define :g:`M' <M'>` and :g:`N' <N'>` cyclically. The lines :g:`L' <L'>`,\ :g:`M' <M'>`,\ :g:`N' <N'>` concur in :ref:`X_1147 <X_1147>`. (Randy Hutson, August 26, 2014)
+   Let :g:`O_AO_BO_C << O_A O_B O_C >>` be the :term:`Kosnita triangle <kosnita-triangle>`. Let :g:`L <L>` be the line through :g:`O_A <O_A>` parallel to the Euler line, and define M and N dyclically. Let :g:`L' <L'>` be the reflection of :g:`L <L>` in sideline :g:`BC <[ B C ]>`, and define :g:`M' <M'>` and :g:`N' <N'>` cyclically. The lines :g:`L' <L'>`,\ :g:`M' <M'>`,\ :g:`N' <N'>` concur in :ref:`X_1147 <X_1147>`. (Randy Hutson, August 26, 2014)
 
 .. container:: note-item
 

@@ -120,7 +120,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << T_a T_b T_c >>` be the intouch triangle. Let :g:`A″ <A″>` be the barycentric product of the circumcircle intercepts of line :g:`B'C' <[ T_b T_c ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_56 <X_56>`. (Randy Hutson, June 27, 2018)
+   Let :g:`T_aT_bT_c << T_a T_b T_c >>` be the intouch triangle. Let :g:`A″ <A″>` be the barycentric product of the circumcircle intercepts of line :g:`T_bT_c <[ T_b T_c ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_56 <X_56>`. (Randy Hutson, June 27, 2018)
 
 .. container:: note-item
 

@@ -110,7 +110,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the orthic triangle. Let :g:`B'C'A″ << H_b H_c A″ >>` be the triangle similar to :g:`ABC << A B C >>` such that segment :g:`A'A″ <[ H_a A″ ]>` crosses the line :g:`B'C' <[ H_b H_c ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. (Equivalently, :g:`A″ <A″>` is the reflection of :g:`A <A>` in :g:`B'C' <[ H_b H_c ]>`.) Let :g:`I_{a} <I_a>` be the incenter of :g:`B'C'A″ << H_b H_c A″ >>`, and define :g:`I_{b} <I_b>` and :g:`I_{c} <I_c>` cyclically. The lines :g:`AI_{a} <[ A I_a ]>`, :g:`BI_{b} <[ B I_b ]>`, :g:`CI_{c} <[ C I_c ]>` concur in :ref:`X_35 <X_35>`. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the orthic triangle. Let :g:`H_bH_cA″ << H_b H_c A″ >>` be the triangle similar to :g:`ABC << A B C >>` such that segment :g:`H_aA″ <[ H_a A″ ]>` crosses the line :g:`H_bH_c <[ H_b H_c ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. (Equivalently, :g:`A″ <A″>` is the reflection of :g:`A <A>` in :g:`H_bH_c <[ H_b H_c ]>`.) Let :g:`I_{a} <I_a>` be the incenter of :g:`H_bH_cA″ << H_b H_c A″ >>`, and define :g:`I_{b} <I_b>` and :g:`I_{c} <I_c>` cyclically. The lines :g:`AI_{a} <[ A I_a ]>`, :g:`BI_{b} <[ B I_b ]>`, :g:`CI_{c} <[ C I_c ]>` concur in :ref:`X_35 <X_35>`. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
 
 .. toctree::
    :hidden:

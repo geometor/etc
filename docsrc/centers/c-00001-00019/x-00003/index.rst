@@ -210,7 +210,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the cevian triangle of :ref:`X_4 <X_4>`. Let :g:`A″ <A″>` be :ref:`X_4 <X_4>`-of-:g:`AB'C' << A B' C' >>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_3 <X_3>`. (Randy Hutson, June 27, 2018)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the cevian triangle of :ref:`X_4 <X_4>`. Let :g:`A″ <A″>` be :ref:`X_4 <X_4>`-of-:g:`AH_bH_c << A H_b H_c >>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_3 <X_3>`. (Randy Hutson, June 27, 2018)
 
 .. container:: note-item
 

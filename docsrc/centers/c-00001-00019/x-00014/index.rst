@@ -95,7 +95,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the :term:`outer Napoleon triangle <outer-napoleon-triangle>` and :g:`A″B″C″ << A″ B″ C″ >>` the inner Napoleon triangle. Let :g:`A* <A*>` be the isogonal conjugate, wrt :g:`A″B″C″ << A″ B″ C″ >>`, of :g:`A' <A'>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`A″A* <[ A″ A* ]>`, :g:`B″B* <[ B″ B* ]>`, :g:`C″C* <[ C″ C* ]>` concur in :ref:`X_14 <X_14>`. (Randy Hutson, December 2, 2017)
+   Let :g:`Nap_aNap_bNap_c << Nap_a Nap_b Nap_c >>` be the :term:`outer Napoleon triangle <outer-napoleon-triangle>` and :g:`Nap'_aNap'_bNap'_c << Nap'_a Nap'_b Nap'_c >>` the inner Napoleon triangle. Let :g:`A* <A*>` be the isogonal conjugate, wrt :g:`Nap'_aNap'_bNap'_c << Nap'_a Nap'_b Nap'_c >>`, of :g:`Nap_a <Nap_a>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`Nap'_aA* <[ Nap'_a A* ]>`, :g:`Nap'_bB* <[ Nap'_b B* ]>`, :g:`Nap'_cC* <[ Nap'_c C* ]>` concur in :ref:`X_14 <X_14>`. (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 

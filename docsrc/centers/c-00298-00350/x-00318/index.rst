@@ -62,7 +62,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << I_a I_b I_c >>` be the mixtilinear :term:`incentral triangle <incentral-triangle>`. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ I_b I_c ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_318 <X_318>`. (:person:`Randy Hutson <randy-hutson>`, November 30, 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the mixtilinear :term:`incentral triangle <incentral-triangle>`. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_318 <X_318>`. (:person:`Randy Hutson <randy-hutson>`, November 30, 2018)
 
 .. toctree::
    :hidden:

@@ -169,7 +169,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << Eu_a Eu_b Eu_c >>` be the Euler triangle. Let :g:`A″ <A″>` be the centroid of :g:`AB'C' << A Eu_b Eu_c >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines A'″, :g:`B'B″ <[ Eu_b B″ ]>`, :g:`C'C″ <[ Eu_c C″ ]>` concur in :ref:`X_5 <X_5>`. (Randy Hutson, December 10, 2016)
+   Let :g:`Eu_aEu_bEu_c << Eu_a Eu_b Eu_c >>` be the Euler triangle. Let :g:`A″ <A″>` be the centroid of :g:`AEu_bEu_c << A Eu_b Eu_c >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines A'″, :g:`Eu_bB″ <[ Eu_b B″ ]>`, :g:`Eu_cC″ <[ Eu_c C″ ]>` concur in :ref:`X_5 <X_5>`. (Randy Hutson, December 10, 2016)
 
 .. container:: note-item
 
@@ -181,11 +181,11 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << Eu_a Eu_b Eu_c >>` be the Feuerbach triangle. Let :g:`A″ <A″>` be the cevapoint of :g:`B' <Eu_b>` and :g:`C' <Eu_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_5 <X_5>`. (Randy Hutson, July 20, 2016)
+   Let :g:`Eu_aEu_bEu_c << Eu_a Eu_b Eu_c >>` be the Feuerbach triangle. Let :g:`A″ <A″>` be the cevapoint of :g:`Eu_b <Eu_b>` and :g:`Eu_c <Eu_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_5 <X_5>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << Ref_a Ref_b Ref_c >>` be the :term:`reflection triangle <reflection-triangle>`. Let :g:`A″ <A″>` be the trilinear pole of line :g:`B'C' <[ Ref_b Ref_c ]>`, and define B″and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_5 <X_5>`. (Randy Hutson, July 20, 2016)
+   Let :g:`Ref_aRef_bRef_c << Ref_a Ref_b Ref_c >>` be the :term:`reflection triangle <reflection-triangle>`. Let :g:`A″ <A″>` be the trilinear pole of line :g:`Ref_bRef_c <[ Ref_b Ref_c ]>`, and define B″and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_5 <X_5>`. (Randy Hutson, July 20, 2016)
 
 .. container:: note-item
 

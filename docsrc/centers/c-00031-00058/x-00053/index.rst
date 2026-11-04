@@ -63,7 +63,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << Eu_a Eu_b Eu_c >>` be the :term:`Euler triangle <euler-triangle>`. Let :g:`L_{A} <L_A>` be the trilinear polar of :g:`A' <Eu_a>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A″ <A″>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_53 <X_53>`. (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
+   Let :g:`Eu_aEu_bEu_c << Eu_a Eu_b Eu_c >>` be the :term:`Euler triangle <euler-triangle>`. Let :g:`L_{A} <L_A>` be the trilinear polar of :g:`Eu_a <Eu_a>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A″ <A″>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_53 <X_53>`. (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
 
 .. container:: note-item
 

@@ -3,6 +3,12 @@ changelog
 
 :project: geometor.etc
 
+0.1.8
+-----
+
+- Replaced generic local point/triangle symbols (`A'`, `B'`, `C'`, `X`, `Y`, `Z`, `X'`, `Y'`, `Z'`, `I_aI_bI_c`) in enunciations and notes with their canonical special point labels (`T_a, T_b, T_c`, `H_a, H_b, H_c`, `M_a, M_b, M_c`, `N_a, N_b, N_c`, `J_a, J_b, J_c`, `I_a, I_b, I_c`, `Tan_a, Tan_b, Tan_c`, `K_a, K_b, K_c`, `Sym_a, Sym_b, Sym_c`, `Eu_a, Eu_b, Eu_c`, `Ref_a, Ref_b, Ref_c`, `Cm_a, Cm_b, Cm_c`, `O_A, O_B, O_C`, `Nap_a, Nap_b, Nap_c`) whenever bound to a known special triangle or vertex triple.
+- Removed redundant side-by-side `(denoted ...)` and `(:g:`A' <T_a>`)` alias annotations from `Constructed Elements` blocks across all 3,000 center pages.
+
 0.1.7
 -----
 

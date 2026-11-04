@@ -55,7 +55,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`L_{a} <L_a>` be the orthic axis of :g:`AB'C' << A H_b H_c >>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`. :g:`B″ <B″>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C″ <C″>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. Triangle :g:`A″B″C″ << A″ B″ C″ >>` is inversely similar to :g:`ABC << A B C >>`, with similitude center :ref:`X_6 <X_6>`. The orthocenter of triangle :g:`A″B″C″ << A″ B″ C″ >>` is :ref:`X_974 <X_974>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2018)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`L_{a} <L_a>` be the orthic axis of :g:`AH_bH_c << A H_b H_c >>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`. :g:`B″ <B″>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C″ <C″>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. Triangle :g:`A″B″C″ << A″ B″ C″ >>` is inversely similar to :g:`ABC << A B C >>`, with similitude center :ref:`X_6 <X_6>`. The orthocenter of triangle :g:`A″B″C″ << A″ B″ C″ >>` is :ref:`X_974 <X_974>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2018)
 
 .. container:: note-item
 

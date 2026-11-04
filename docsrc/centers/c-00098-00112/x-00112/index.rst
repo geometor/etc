@@ -115,7 +115,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << Cm_a Cm_b Cm_c >>` be the :term:`circummedial triangle <circummedial-triangle>`. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ Cm_b Cm_c ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ Cm_a A″ ]>`, :g:`B'B″ <[ Cm_b B″ ]>`, :g:`C'C″ <[ Cm_c C″ ]>` concur in :ref:`X_112 <X_112>`. (Randy Hutson, December 26, 2015)
+   Let :g:`Cm_aCm_bCm_c << Cm_a Cm_b Cm_c >>` be the :term:`circummedial triangle <circummedial-triangle>`. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`Cm_bCm_c <[ Cm_b Cm_c ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`Cm_aA″ <[ Cm_a A″ ]>`, :g:`Cm_bB″ <[ Cm_b B″ ]>`, :g:`Cm_cC″ <[ Cm_c C″ ]>` concur in :ref:`X_112 <X_112>`. (Randy Hutson, December 26, 2015)
 
 .. container:: note-item
 

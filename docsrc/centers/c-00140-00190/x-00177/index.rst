@@ -51,7 +51,7 @@ X_177
    * :ref:`X_177 <X_177>` = :ref:`X_7 <X_7>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_234 <X_234>`
    * :ref:`X_177 <X_177>` = crosspoint of :ref:`X_7 <X_7>` and :ref:`X_174 <X_174>`
    * :ref:`X_177 <X_177>` = :term:`crosssum <crosssum>` of :ref:`X_55 <X_55>` and :ref:`X_259 <X_259>`
-   * :ref:`X_177 <X_177>` = SS(A→\ :g:`A' <A'>`)-of-:ref:`X_10 <X_10>`, where :g:`A'B'C' << A' B' C' >>` is the excentral triangle
+   * :ref:`X_177 <X_177>` = SS(A→\ :g:`J_a <J_a>`)-of-:ref:`X_10 <X_10>`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the excentral triangle
    * :ref:`X_177 <X_177>` = :ref:`X_4 <X_4>`-of-mid-arc triangle
    * :ref:`X_177 <X_177>` = :ref:`X_1829 <X_1829>`-of-excentral triangle
    * :ref:`X_177 <X_177>` = perspector of :g:`ABC << A B C >>` and mid-triangle of 1st tangential mid-arc triangle and Yff :term:`central triangle <central-triangle>`

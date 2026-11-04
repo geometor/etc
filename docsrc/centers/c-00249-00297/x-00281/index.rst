@@ -70,19 +70,19 @@ Notes
 
 .. container:: note-item
 
-   :ref:`X_281 <X_281>`: Let :g:`A'B'C' << T_a T_b T_c >>` be the :term:`intouch triangle <intouch-triangle>`. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ T_b T_c ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_281 <X_281>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
+   :ref:`X_281 <X_281>`: Let :g:`T_aT_bT_c << T_a T_b T_c >>` be the :term:`intouch triangle <intouch-triangle>`. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`T_bT_c <[ T_b T_c ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_281 <X_281>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << N_a N_b N_c >>` be the 3rd :term:`extouch triangle <extouch-triangle>`. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ N_b N_c ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The triangle :g:`A'B'C' << N_a N_b N_c >>` is homothetic to :g:`ABC << A B C >>` at :ref:`X_281 <X_281>`. (Randy Hutson, September 14, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the 3rd :term:`extouch triangle <extouch-triangle>`. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The triangle :g:`A'B'C' << A' B' C' >>` is homothetic to :g:`ABC << A B C >>` at :ref:`X_281 <X_281>`. (Randy Hutson, September 14, 2016)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << N_a N_b N_c >>` be the 4th extouch triangle. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ N_b N_c ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_281 <X_281>`. (Randy Hutson, September 14, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the 4th extouch triangle. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_281 <X_281>`. (Randy Hutson, September 14, 2016)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << N_a N_b N_c >>` be the 5th extouch triangle. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ N_b N_c ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_281 <X_281>`. (Randy Hutson, September 14, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the 5th extouch triangle. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_281 <X_281>`. (Randy Hutson, September 14, 2016)
 
 .. container:: note-item
 

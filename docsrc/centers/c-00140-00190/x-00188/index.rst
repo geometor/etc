@@ -38,7 +38,7 @@ X_188
    * **Trilinears:** :math:`[bc(b + c - a)]^{1/2} : :`
    * **Trilinears:** :math:`\csc A \cos A/2 : :`
    * **Trilinears:** :math:`|AX(1)| : |BX(1)| : |CX(1)|`
-   * **Trilinears:** :math:`\sec A' : \sec B', \sec C'`, where :g:`A'B'C' << A' B' C' >>` = :term:`excentral triangle <excentral-triangle>`
+   * **Trilinears:** :math:`\sec A' : \sec B', \sec C'`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` = :term:`excentral triangle <excentral-triangle>`
    * **Barycentrics:** 1/(csc(B/2) csc(C/2) + csc(A/2)) : : c.f., X_5451
    * **Barycentrics:** :math:`\cos A/2 : \cos B/2 : \cos C/2`
 
@@ -59,7 +59,7 @@ X_188
    * :ref:`X_188 <X_188>` = :ref:`X_259 <X_259>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_174 <X_174>`
    * :ref:`X_188 <X_188>` = :term:`crosssum <crosssum>` of :ref:`X_1 <X_1>` and :ref:`X_361 <X_361>`
    * :ref:`X_188 <X_188>` = :ref:`X_188 <X_188>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X_266 <X_266>`
-   * :ref:`X_188 <X_188>` = SS(A→\ :g:`A' <A'>`) of :ref:`X_4 <X_4>`, where :g:`A'B'C' << A' B' C' >>` is the excentral triangle
+   * :ref:`X_188 <X_188>` = SS(A→\ :g:`J_a <J_a>`) of :ref:`X_4 <X_4>`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the excentral triangle
    * :ref:`X_188 <X_188>` = isotomic conjugate of X_4146
    * :ref:`X_188 <X_188>` = :ref:`X_65 <X_65>`-of-excentral-triangle
    * :ref:`X_188 <X_188>` = perspector of circumconic centered at :ref:`X_236 <X_236>`
@@ -72,7 +72,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << J_a J_b J_c >>` be the excentral triangle of :g:`ABC << A B C >>`, so that :g:`A' <J_a>` = :math:`-1 : 1 : 1` (trilinears). Let :g:`A″ <A″>` be the point where the bisector of angle :g:`BA'C << B J_a C >>` meets the line :g:`BC <[ B C ]>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_188 <X_188>`. (Seiichi Kirikami, February 14, 2010)
+   Let :g:`J_aJ_bJ_c << J_a J_b J_c >>` be the excentral triangle of :g:`ABC << A B C >>`, so that :g:`J_a <J_a>` = :math:`-1 : 1 : 1` (trilinears). Let :g:`A″ <A″>` be the point where the bisector of angle :g:`BJ_aC << B J_a C >>` meets the line :g:`BC <[ B C ]>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_188 <X_188>`. (Seiichi Kirikami, February 14, 2010)
 
 .. container:: note-item
 

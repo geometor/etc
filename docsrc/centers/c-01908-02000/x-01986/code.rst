@@ -8,7 +8,7 @@ X_1986
 
 .. enunciation::
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>` of triangle :g:`ABC << A B C >>`. Let :g:`A_{B} <A_B>` be the reflection of :g:`A <A>` in :g:`C' <H_c>`, and define :g:`A_{C} <A_C>`, :g:`B_{C} <B_C>`, :g:`B_{A} <B_A>`, :g:`C_{A} <C_A>`, :g:`C_{B} <C_B>` functionally. Then the nine-point circles of the triangles
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>` of triangle :g:`ABC << A B C >>`. Let :g:`A_{B} <A_B>` be the reflection of :g:`A <A>` in :g:`H_c <H_c>`, and define :g:`A_{C} <A_C>`, :g:`B_{C} <B_C>`, :g:`B_{A} <B_A>`, :g:`C_{A} <C_A>`, :g:`C_{B} <C_B>` functionally. Then the nine-point circles of the triangles
 
 .. figure:: x-01986.svg
    :alt: X_1986 — HATZIPOLAKIS REFLECTION POINT

@@ -64,9 +64,9 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>` of a triangle :g:`ABC << A B C >>`, and let
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>` of a triangle :g:`ABC << A B C >>`, and let
 
-      * O(A) = circle with center A and radius :g:`AA' <[ A H_a ]>`, and define O(B) and O(C) cyclically
+      * O(A) = circle with center A and radius :g:`AH_a <[ A H_a ]>`, and define O(B) and O(C) cyclically
       * p(A) = polar of :ref:`X_4 <X_4>` wrt O(A), and define p(B) and p(C) cyclically
       * :g:`A″ <A″>` = p(B)∩p(C), and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically.
 

@@ -89,7 +89,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << M_a M_b M_c >>` be the medial triangle. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ M_b M_c ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Also, :g:`A″B″C″ << A″ B″ C″ >>` is the triangle formed by trilinear poles of sides of the orthic triangle. The lines :g:`A'A″ <[ M_a A″ ]>`, :g:`B'B″ <[ M_b B″ ]>`, :g:`C'C″ <[ M_c C″ ]>` concur in :ref:`X_1249 <X_1249>`. (Randy Hutson, March 14, 2018)
+   Let :g:`M_aM_bM_c << M_a M_b M_c >>` be the medial triangle. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`M_bM_c <[ M_b M_c ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Also, :g:`A″B″C″ << A″ B″ C″ >>` is the triangle formed by trilinear poles of sides of the orthic triangle. The lines :g:`M_aA″ <[ M_a A″ ]>`, :g:`M_bB″ <[ M_b B″ ]>`, :g:`M_cC″ <[ M_c C″ ]>` concur in :ref:`X_1249 <X_1249>`. (Randy Hutson, March 14, 2018)
 
 .. toctree::
    :hidden:

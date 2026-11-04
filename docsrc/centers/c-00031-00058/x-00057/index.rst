@@ -43,12 +43,12 @@ X_57
    * **Trilinears:** :math:`\csc A - \cot A : :`
    * **Trilinears:** :math:`(1 - \cos A) \csc A : :`
    * **Trilinears:** :math:`b(\cot B/2) + c(\cot C/2) - a(\cot A/2) : :`
-   * **Trilinears:** :math:`\cot A' : :`, where :g:`A'B'C' << A' B' C' >>` is the :term:`excentral triangle <excentral-triangle>`
-   * **Trilinears:** :math:`|AA'|/|AX(1)| : |BB'|/|BX(1)| : |CC'|/|CX(1)|`, where :g:`A'B'C' << A' B' C' >>` is the excentral triangle
+   * **Trilinears:** :math:`\cot A' : :`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the :term:`excentral triangle <excentral-triangle>`
+   * **Trilinears:** :math:`|AA'|/|AX(1)| : |BB'|/|BX(1)| : |CC'|/|CX(1)|`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the excentral triangle
    * **Trilinears:** :math:`R_{a} : R_{b} : R_{c}`, where :math:`R_{a}`, :math:`R_{b}`, :math:`R_{c}` are the exradii
    * **Barycentrics:** :math:`a/(b + c - a) : b/(c + a - b) : c/(a + b - c)`
    * **Barycentrics:** :math:`1 - \cos A : 1 - \cos B : 1 - \cos C`
-   * **Barycentrics:** :math:`\operatorname{area}(A'BC) : :`, where :g:`A'B'C' << A' B' C' >>` = excentral triangle
+   * **Barycentrics:** :math:`\operatorname{area}(A'BC) : :`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` = excentral triangle
 
 .. collapse:: Linear Combinations
    :badge: 1 combination
@@ -110,7 +110,7 @@ X_57
    * :ref:`X_57 <X_57>` = :term:`vertex conjugate <vertex-conjugate>` of :ref:`X_55 <X_55>` and :ref:`X_57 <X_57>`
    * :ref:`X_57 <X_57>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X_9 <X_9>`
    * :ref:`X_57 <X_57>` = trilinear product of extraversions of :ref:`X_9 <X_9>`
-   * :ref:`X_57 <X_57>` = SS(A→\ :g:`A' <A'>`) of :ref:`X_63 <X_63>`, where :g:`A'B'C' << A' B' C' >>` is the excentral triangle
+   * :ref:`X_57 <X_57>` = SS(A→\ :g:`J_a <J_a>`) of :ref:`X_63 <X_63>`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the excentral triangle
    * :ref:`X_57 <X_57>` = Cundy-Parry Phi transform of :ref:`X_40 <X_40>`
    * :ref:`X_57 <X_57>` = Cundy-Parry Psi transform of :ref:`X_84 <X_84>`
    * :ref:`X_57 <X_57>` = perspector of :g:`ABC << A B C >>` and cross-triangle of Gemini triangles 9 and 10
@@ -143,7 +143,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << I_a I_b I_c >>` be the mixtilinear :term:`incentral triangle <incentral-triangle>`. Let :g:`A″ <A″>` be the trilinear pole of line :g:`B'C' <[ I_b I_c ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_57 <X_57>`. (Randy Hutson, September 14, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the mixtilinear :term:`incentral triangle <incentral-triangle>`. Let :g:`A″ <A″>` be the trilinear pole of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_57 <X_57>`. (Randy Hutson, September 14, 2016)
 
 .. container:: note-item
 
@@ -155,7 +155,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the orthic triangle. Let :g:`L_{a} <L_a>` be the reflection of line :g:`B'C' <[ H_b H_c ]>` in the internal angle bisector of :g:`A <A>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, :g:`B″ <B″>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C″ <C″>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. Triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to :g:`ABC << A B C >>`, with center of homothety :ref:`X_57 <X_57>`. (Randy Hutson, September 14, 2016)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the orthic triangle. Let :g:`L_{a} <L_a>` be the reflection of line :g:`H_bH_c <[ H_b H_c ]>` in the internal angle bisector of :g:`A <A>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, :g:`B″ <B″>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C″ <C″>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. Triangle :g:`A″B″C″ << A″ B″ C″ >>` is homothetic to :g:`ABC << A B C >>`, with center of homothety :ref:`X_57 <X_57>`. (Randy Hutson, September 14, 2016)
 
 .. container:: note-item
 
@@ -163,7 +163,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << T_a T_b T_c >>` be the intouch triangle. Let :g:`A″ <A″>` be the trilinear product of the circumcircle intercepts of line :g:`B'C' <[ T_b T_c ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_57 <X_57>`. (Randy Hutson, July 31 2018)
+   Let :g:`T_aT_bT_c << T_a T_b T_c >>` be the intouch triangle. Let :g:`A″ <A″>` be the trilinear product of the circumcircle intercepts of line :g:`T_bT_c <[ T_b T_c ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_57 <X_57>`. (Randy Hutson, July 31 2018)
 
 .. container:: note-item
 

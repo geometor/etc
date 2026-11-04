@@ -56,7 +56,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the :term:`medial triangle <medial-triangle>` of the :term:`orthic triangle <orthic-triangle>` of triangle :g:`ABC << A B C >>`. Let :g:`A″ <A″>` be the reflection of :ref:`X_4 <X_4>` in :g:`A' <H_a>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Let :g:`K_{ab} <K_ab>` and :g:`K_{ac} <K_ac>` be the circumcenters of triangles :g:`A″BA << A″ B A >>` and :g:`A″CA << A″ C A >>`, respectively. Let A''' = :g:`BK_{ac} <[ B K_ac ]>`\ ∩\ :g:`CK_{ab} <[ C K_ab ]>`, and define B''' and C''' cyclically. The lines AA''', BB''', CC''' concur in :ref:`X_1217 <X_1217>`. (:person:`Antreas Hatzipolakis <antreas-hatzipolakis>`, :cite:`Anopolis #39 <adgeom>`, 3/19/2002)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`medial triangle <medial-triangle>` of the :term:`orthic triangle <orthic-triangle>` of triangle :g:`ABC << A B C >>`. Let :g:`A″ <A″>` be the reflection of :ref:`X_4 <X_4>` in :g:`A' <A'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Let :g:`K_{ab} <K_ab>` and :g:`K_{ac} <K_ac>` be the circumcenters of triangles :g:`A″BA << A″ B A >>` and :g:`A″CA << A″ C A >>`, respectively. Let A''' = :g:`BK_{ac} <[ B K_ac ]>`\ ∩\ :g:`CK_{ab} <[ C K_ab ]>`, and define B''' and C''' cyclically. The lines AA''', BB''', CC''' concur in :ref:`X_1217 <X_1217>`. (:person:`Antreas Hatzipolakis <antreas-hatzipolakis>`, :cite:`Anopolis #39 <adgeom>`, 3/19/2002)
 
 .. container:: note-item
 

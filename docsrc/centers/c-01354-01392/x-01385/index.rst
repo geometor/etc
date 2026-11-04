@@ -91,7 +91,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << M_a M_b M_c >>` be the :term:`medial triangle <medial-triangle>`. :ref:`X_1385 <X_1385>` is the radical center of the incircles of :g:`AB'C' << A M_b M_c >>`, :g:`BC'A' << B M_c M_a >>`, :g:`CA'B' << C M_a M_b >>`. (Randy Hutson, December 10, 2016)
+   Let :g:`M_aM_bM_c << M_a M_b M_c >>` be the :term:`medial triangle <medial-triangle>`. :ref:`X_1385 <X_1385>` is the radical center of the incircles of :g:`AM_bM_c << A M_b M_c >>`, :g:`BM_cM_a << B M_c M_a >>`, :g:`CM_aM_b << C M_a M_b >>`. (Randy Hutson, December 10, 2016)
 
 .. toctree::
    :hidden:

@@ -149,11 +149,11 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << T_a T_b T_c >>` be the :term:`intouch triangle <intouch-triangle>` of the extangents triangle, if :g:`ABC << A B C >>` is acute. Then :g:`A'B'C' << T_a T_b T_c >>` is homothetic to the Aquila triangle at :ref:`X_40 <X_40>`. (Randy Hutson, December 2, 2017)
+   Let :g:`A'B'C' << A' B' C' >>` be the :term:`intouch triangle <intouch-triangle>` of the extangents triangle, if :g:`ABC << A B C >>` is acute. Then :g:`A'B'C' << A' B' C' >>` is homothetic to the Aquila triangle at :ref:`X_40 <X_40>`. (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << J_a J_b J_c >>` be the excentral triangle. Let :g:`A″ <A″>` be the isogonal conjugate, wrt :g:`A'BC << J_a B C >>`, of A. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. (:g:`A″ <A″>` is also the reflection of :g:`A' <J_a>` in :g:`BC <[ B C ]>`, and cyclically for :g:`B″ <B″>` and :g:`C″ <C″>`). The lines :g:`A'A″ <[ J_a A″ ]>`, :g:`B'B″ <[ J_b B″ ]>`, :g:`C'C″ <[ J_c C″ ]>` concur in :ref:`X_40 <X_40>`. (Randy Hutson, December 2, 2017)
+   Let :g:`J_aJ_bJ_c << J_a J_b J_c >>` be the excentral triangle. Let :g:`A″ <A″>` be the isogonal conjugate, wrt :g:`J_aBC << J_a B C >>`, of A. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. (:g:`A″ <A″>` is also the reflection of :g:`J_a <J_a>` in :g:`BC <[ B C ]>`, and cyclically for :g:`B″ <B″>` and :g:`C″ <C″>`). The lines :g:`J_aA″ <[ J_a A″ ]>`, :g:`J_bB″ <[ J_b B″ ]>`, :g:`J_cC″ <[ J_c C″ ]>` concur in :ref:`X_40 <X_40>`. (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 

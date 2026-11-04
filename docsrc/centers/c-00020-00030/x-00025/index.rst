@@ -141,7 +141,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the orthic triangle. Let :g:`A″ <A″>` be the barycentric product of the (real or imaginary) circumcircle intercepts of line :g:`B'C' <[ H_b H_c ]>`. Define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_25 <X_25>`. (Randy Hutson, October 27, 2015)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the orthic triangle. Let :g:`A″ <A″>` be the barycentric product of the (real or imaginary) circumcircle intercepts of line :g:`H_bH_c <[ H_b H_c ]>`. Define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_25 <X_25>`. (Randy Hutson, October 27, 2015)
 
 .. container:: note-item
 

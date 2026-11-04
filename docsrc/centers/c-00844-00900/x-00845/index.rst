@@ -52,7 +52,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`I_{a} <I_a>`, :g:`I_{b} <I_b>`, :g:`I_{c} <I_c>` be the excenters of a triangle :g:`ABC << A B C >>`. Let :g:`A' <A'>` be the Clawson point of IaBC, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X_845 <X_845>`. (:person:`Angel Montesdeoca <angel-montesdeoca>`, August 12, 2018)
+   Let :g:`I_{a} <I_a>`, :g:`I_{b} <I_b>`, :g:`I_{c} <I_c>` be the excenters of a triangle :g:`ABC << A B C >>`. Let :g:`A' <A'>` be the Clawson point of :g:`I_{a}BC << I_a B C >>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X_845 <X_845>`. (:person:`Angel Montesdeoca <angel-montesdeoca>`, August 12, 2018)
 
 .. toctree::
    :hidden:

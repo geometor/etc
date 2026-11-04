@@ -76,7 +76,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << J_a J_b J_c >>` be the :term:`excentral triangle <excentral-triangle>`, and let :g:`U <U>` be the bianticevian conic of :ref:`X_1 <X_1>` and :ref:`X_4 <X_4>`. Let :g:`T <T>` be the :term:`tangential triangle <tangential-triangle>`, wrt the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X_19 <X_19>`, of U. Then :g:`A'B'C' << J_a J_b J_c >>` and T are perspective, and their perspector is :ref:`X_1577 <X_1577>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
+   Let :g:`J_aJ_bJ_c << J_a J_b J_c >>` be the :term:`excentral triangle <excentral-triangle>`, and let :g:`U <U>` be the bianticevian conic of :ref:`X_1 <X_1>` and :ref:`X_4 <X_4>`. Let :g:`T <T>` be the :term:`tangential triangle <tangential-triangle>`, wrt the :term:`anticevian triangle <anticevian-triangle>` of :ref:`X_19 <X_19>`, of U. Then :g:`J_aJ_bJ_c << J_a J_b J_c >>` and T are perspective, and their perspector is :ref:`X_1577 <X_1577>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
 
 .. container:: note-item
 

@@ -79,7 +79,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`A″ <A″>` be the :g:`A <A>`-excenter of :g:`AB'C' << A H_b H_c >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The centroid of triangle :g:`A″B″C″ << A″ B″ C″ >>` is :ref:`X_1699 <X_1699>`. (Randy Hutson, July 31 2018)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`A″ <A″>` be the :g:`A <A>`-excenter of :g:`AH_bH_c << A H_b H_c >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The centroid of triangle :g:`A″B″C″ << A″ B″ C″ >>` is :ref:`X_1699 <X_1699>`. (Randy Hutson, July 31 2018)
 
 .. toctree::
    :hidden:

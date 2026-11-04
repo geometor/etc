@@ -51,7 +51,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << I_a I_b I_c >>` be the mixtilinear :term:`incentral triangle <incentral-triangle>`. Let :g:`L_{a} <L_a>` be the :term:`trilinear polar <trilinear-polar>` of :g:`A' <I_a>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_2324 <X_2324>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
+   Let :g:`A'B'C' << A' B' C' >>` be the mixtilinear :term:`incentral triangle <incentral-triangle>`. Let :g:`L_{a} <L_a>` be the :term:`trilinear polar <trilinear-polar>` of :g:`A' <A'>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_2324 <X_2324>`. (:person:`Randy Hutson <randy-hutson>`, January 15, 2019)
 
 .. toctree::
    :hidden:

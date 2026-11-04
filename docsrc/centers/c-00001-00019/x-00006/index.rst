@@ -262,7 +262,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << Tan_a Tan_b Tan_c >>` be the tangential triangle of the Jerabek hyperbola. Let :g:`A″ <A″>` be the pole wrt circumcircle of line :g:`B'C' <[ Tan_b Tan_c ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines A'″, :g:`B'B″ <[ Tan_b B″ ]>`, :g:`C'C″ <[ Tan_c C″ ]>` concur in :ref:`X_6 <X_6>`. (Randy Hutson, November 30, 2018)
+   Let :g:`A'B'C' << A' B' C' >>` be the tangential triangle of the Jerabek hyperbola. Let :g:`A″ <A″>` be the pole wrt circumcircle of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines A'″, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X_6 <X_6>`. (Randy Hutson, November 30, 2018)
 
 .. container:: note-item
 
@@ -278,7 +278,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the medial triangle, and :g:`A″B″C″ << A″ B″ C″ >>` the orthic triangle. Let :g:`A* <A*>` be the centroid of :g:`AA'A″ << A H_a A″ >>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. :g:`A*B*C* << A* B* C* >>` is inversely similar to :g:`ABC << A B C >>`, and the lines :g:`A'A* <[ H_a A* ]>`, :g:`B'B* <[ H_b B* ]>`, :g:`C'C* <[ H_c C* ]>` concur in :ref:`X_6 <X_6>`. (Randy Hutson, July 11, 2019)
+   Let :g:`M_aM_bM_c << M_a M_b M_c >>` be the medial triangle, and :g:`H_aH_bH_c << H_a H_b H_c >>` the orthic triangle. Let :g:`A* <A*>` be the centroid of :g:`AM_aH_a << A M_a H_a >>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. :g:`A*B*C* << A* B* C* >>` is inversely similar to :g:`ABC << A B C >>`, and the lines :g:`M_aA* <[ M_a A* ]>`, :g:`M_bB* <[ M_b B* ]>`, :g:`M_cC* <[ M_c C* ]>` concur in :ref:`X_6 <X_6>`. (Randy Hutson, July 11, 2019)
 
 .. container:: note-item
 

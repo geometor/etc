@@ -66,7 +66,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the :ref:`X_3 <X_3>`-:term:`cevian triangle <cevian-triangle>` of the :term:`orthic triangle <orthic-triangle>` of triangle :g:`ABC << A B C >>`. The lines :g:`AA' <[ A H_a ]>`, :g:`BB' <[ B H_b ]>`, :g:`CC' <[ C H_c ]>` concur in :ref:`X_847 <X_847>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   Let :g:`A'B'C' << A' B' C' >>` be the :ref:`X_3 <X_3>`-:term:`cevian triangle <cevian-triangle>` of the :term:`orthic triangle <orthic-triangle>` of triangle :g:`ABC << A B C >>`. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X_847 <X_847>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. toctree::
    :hidden:

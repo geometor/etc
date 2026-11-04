@@ -37,7 +37,7 @@ X_312
 
    * **Trilinears:** :math:`(1 + \cos A)\csc(A - \omega ) : (1 + \cos B)\csc(B - \omega ) : (1 + \cos C)\csc(C - \omega )`
    * **Trilinears:** :math:`(\csc A)/(1 - \cos A) : (\csc B)/(1 - \cos B) : (\csc C)/(1 - \cos C)` (M. Iliev, 4/12/07)
-   * **Trilinears:** :math:`bc \tan A' : ca \tan B' : ab \tan C'`, where :g:`A'B'C' << A' B' C' >>` is the :term:`excentral triangle <excentral-triangle>`
+   * **Trilinears:** :math:`bc \tan A' : ca \tan B' : ab \tan C'`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the :term:`excentral triangle <excentral-triangle>`
 
 .. collapse:: Incident Central Lines
    :badge: 14 lines
@@ -58,7 +58,7 @@ X_312
    * :ref:`X_312 <X_312>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`32 <X_32>`, :ref:`1397 <X_1397>`), (:ref:`56 <X_56>`, :ref:`1403 <X_1403>`), (:ref:`57 <X_57>`, :ref:`1424 <X_1424>`)
    * :ref:`X_312 <X_312>` = polar conjugate of :ref:`X_34 <X_34>`
    * :ref:`X_312 <X_312>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X_85 <X_85>`
-   * :ref:`X_312 <X_312>` = BSS(A→\ :g:`A' <A'>`) of :ref:`X_4 <X_4>`, where :g:`A'B'C' << A' B' C' >>` is the excentral triangle
+   * :ref:`X_312 <X_312>` = BSS(A→\ :g:`J_a <J_a>`) of :ref:`X_4 <X_4>`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the excentral triangle
    * :ref:`X_312 <X_312>` = barycentric product of vertices of Gemini triangle 27
    * :ref:`X_312 <X_312>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 27
    * :ref:`X_312 <X_312>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_522 <X_522>`\ X_3717 (the polar of :ref:`X_34 <X_34>` wrt polar circle, and the radical axis of the circumcircles of the outer and inner Garcia triangles)

@@ -79,11 +79,11 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << T_a T_b T_c >>` be the anticevian triangle, wrt :term:`intouch triangle <intouch-triangle>`, of :ref:`X_1 <X_1>`. Let :g:`A″ <A″>` be the reflection of :g:`A' <T_a>` in :g:`A <A>`, and define :g:`B' <T_b>` and :g:`C' <T_c>` cyclically. The centroid of :g:`A″B″C″ << A″ B″ C″ >>` is :ref:`X_165 <X_165>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
+   Let :g:`A'B'C' << A' B' C' >>` be the anticevian triangle, wrt :term:`intouch triangle <intouch-triangle>`, of :ref:`X_1 <X_1>`. Let :g:`A″ <A″>` be the reflection of :g:`A' <A'>` in :g:`A <A>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The centroid of :g:`A″B″C″ << A″ B″ C″ >>` is :ref:`X_165 <X_165>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << J_a J_b J_c >>` be the excentral triangle. Let :g:`A″ <A″>` be the symmedian point of triangle :g:`A'BC << J_a B C >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ J_a A″ ]>`, :g:`B'B″ <[ J_b B″ ]>`, :g:`C'C″ <[ J_c C″ ]>` concur in :ref:`X_165 <X_165>`. (Randy Hutson, July 31 2018)
+   Let :g:`J_aJ_bJ_c << J_a J_b J_c >>` be the excentral triangle. Let :g:`A″ <A″>` be the symmedian point of triangle :g:`J_aBC << J_a B C >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`J_aA″ <[ J_a A″ ]>`, :g:`J_bB″ <[ J_b B″ ]>`, :g:`J_cC″ <[ J_c C″ ]>` concur in :ref:`X_165 <X_165>`. (Randy Hutson, July 31 2018)
 
 .. toctree::
    :hidden:

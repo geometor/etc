@@ -121,7 +121,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << J_a J_b J_c >>` be the excentral triangle. Let :g:`A″ <A″>` be the isotomic conjugate, wrt triangle :g:`A'BC << J_a B C >>`, of :ref:`X_1 <X_1>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ J_a A″ ]>`, :g:`B'B″ <[ J_b B″ ]>`, :g:`C'C″ <[ J_c C″ ]>` concur in :ref:`X_63 <X_63>`. (Randy Hutson, July 31 2018)
+   Let :g:`J_aJ_bJ_c << J_a J_b J_c >>` be the excentral triangle. Let :g:`A″ <A″>` be the isotomic conjugate, wrt triangle :g:`J_aBC << J_a B C >>`, of :ref:`X_1 <X_1>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`J_aA″ <[ J_a A″ ]>`, :g:`J_bB″ <[ J_b B″ ]>`, :g:`J_cC″ <[ J_c C″ ]>` concur in :ref:`X_63 <X_63>`. (Randy Hutson, July 31 2018)
 
 .. container:: note-item
 

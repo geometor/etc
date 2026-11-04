@@ -116,7 +116,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the outer Napoleon triangle and :g:`A″B″C″ << A″ B″ C″ >>` the inner Napoleon triangle. Let :g:`A* <A*>` be the isogonal conjugate, wrt :g:`A'B'C' << A' B' C' >>`, of :g:`A″ <A″>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`A'A* <[ A' A* ]>`, :g:`B'B* <[ B' B* ]>`, :g:`C'C* <[ C' C* ]>` concur in :ref:`X_13 <X_13>`. (Randy Hutson, December 2, 2017)
+   Let :g:`Nap_aNap_bNap_c << Nap_a Nap_b Nap_c >>` be the outer Napoleon triangle and :g:`Nap'_aNap'_bNap'_c << Nap'_a Nap'_b Nap'_c >>` the inner Napoleon triangle. Let :g:`A* <A*>` be the isogonal conjugate, wrt :g:`Nap_aNap_bNap_c << Nap_a Nap_b Nap_c >>`, of :g:`Nap'_a <Nap'_a>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`Nap_aA* <[ Nap_a A* ]>`, :g:`Nap_bB* <[ Nap_b B* ]>`, :g:`Nap_cC* <[ Nap_c C* ]>` concur in :ref:`X_13 <X_13>`. (Randy Hutson, December 2, 2017)
 
 .. container:: note-item
 

@@ -133,7 +133,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << N_a N_b N_c >>` be the extouch triangle. Let :g:`A″ <A″>` be the barycentric product of the circumcircle intercepts of line :g:`B'C' <[ N_b N_c ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_55 <X_55>`. (Randy Hutson, July 31 2018)
+   Let :g:`N_aN_bN_c << N_a N_b N_c >>` be the extouch triangle. Let :g:`A″ <A″>` be the barycentric product of the circumcircle intercepts of line :g:`N_bN_c <[ N_b N_c ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_55 <X_55>`. (Randy Hutson, July 31 2018)
 
 .. container:: note-item
 

@@ -8,7 +8,7 @@ X_484
 
 .. enunciation::
 
-   :ref:`X_484 <X_484>` is the perspector of the :term:`excentral triangle <excentral-triangle>` and the triangle :g:`A'B'C' << A' B' C' >>`, where :g:`A' <A'>` is the reflection of vertex :g:`A <A>` in sideline :g:`BC <[ B C ]>` and :g:`B' <B'>`, :g:`C' <C'>` are determined cyclically. (Lawrence Evans, 10/22/98)
+   :ref:`X_484 <X_484>` is the perspector of the :term:`excentral triangle <excentral-triangle>` and the triangle :g:`Ref_aRef_bRef_c << Ref_a Ref_b Ref_c >>`, where :g:`Ref_a <Ref_a>` is the reflection of vertex :g:`A <A>` in sideline :g:`BC <[ B C ]>` and :g:`Ref_b <Ref_b>`, :g:`Ref_c <Ref_c>` are determined cyclically. (Lawrence Evans, 10/22/98)
 
 .. figure:: x-00484.svg
    :alt: X_484 — 1st EVANS PERSPECTOR

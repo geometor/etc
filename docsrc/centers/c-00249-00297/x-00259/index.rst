@@ -37,7 +37,7 @@ X_259
 
    * **Trilinears:** :math:`[a(b + c - a)]^{1/2} : :`
    * **Trilinears:** :math:`\sin A \csc A/2 : :`
-   * **Trilinears:** :math:`\sin A' : :`, where :g:`A'B'C' << A' B' C' >>` is the :term:`excentral triangle <excentral-triangle>`
+   * **Trilinears:** :math:`\sin A' : :`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the :term:`excentral triangle <excentral-triangle>`
    * **Trilinears:** :math:`\sin(∠BIC) : :`
    * **Trilinears:** :math:`(b + c - a) \sin A/2 : :`
 
@@ -55,7 +55,7 @@ X_259
    * :ref:`X_259 <X_259>` = :term:`cevapoint <cevapoint>` of :ref:`X_1 <X_1>` and :ref:`X_503 <X_503>`
    * :ref:`X_259 <X_259>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`258 <X_258>`), (:ref:`174 <X_174>`, :ref:`188 <X_188>`)
    * :ref:`X_259 <X_259>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`173 <X_173>`), (:ref:`259 <X_259>`, :ref:`266 <X_266>`)
-   * :ref:`X_259 <X_259>` = SS(A→\ :g:`A' <A'>`) of :ref:`X_6 <X_6>`, where :g:`A'B'C' << A' B' C' >>` is the excentral triangle
+   * :ref:`X_259 <X_259>` = SS(A→\ :g:`J_a <J_a>`) of :ref:`X_6 <X_6>`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the excentral triangle
    * :ref:`X_259 <X_259>` = trilinear square root of :ref:`X_55 <X_55>`
    * :ref:`X_259 <X_259>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of tangential mid-arc triangle
    * :ref:`X_259 <X_259>` = excentral-to-:g:`ABC << A B C >>` :term:`trilinear image <trilinear-image>` of :ref:`X_9 <X_9>`

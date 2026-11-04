@@ -38,9 +38,9 @@ X_258
    * **Trilinears:** :math:`1 + \sin(B/2) + \sin(C/2) - \sin(A/2) : :`
    * **Trilinears:** :math:`\tan(A/2) - \sec(A/2) : :`
    * **Trilinears:** :math:`\tan(B/2) - \sec(B/2) : \tan(C/2) - \sec(C/2) : :`
-   * **Trilinears:** :math:`1/(b' + c' - a') : :`, where :g:`A'B'C' << A' B' C' >>` is the :term:`excentral triangle <excentral-triangle>`
-   * **Trilinears:** :math:`\tan A'/2 : :`, where :g:`A'B'C' << A' B' C' >>` is the excentral triangle
-   * **Trilinears:** :math:`\cot A' - \csc A' : :`, where :g:`A'B'C' << A' B' C' >>` is the excentral triangle
+   * **Trilinears:** :math:`1/(b' + c' - a') : :`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the :term:`excentral triangle <excentral-triangle>`
+   * **Trilinears:** :math:`\tan A'/2 : :`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the excentral triangle
+   * **Trilinears:** :math:`\cot A' - \csc A' : :`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the excentral triangle
    * **Trilinears:** (distance from :g:`A <A>` to :g:`A <A>`-excircle) : :
 
 .. collapse:: Incident Central Lines
@@ -55,7 +55,7 @@ X_258
    * :ref:`X_258 <X_258>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_173 <X_173>`
    * :ref:`X_258 <X_258>` = :ref:`X_259 <X_259>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_1 <X_1>`
    * :ref:`X_258 <X_258>` = :ref:`X_366 <X_366>`-:term:`aleph conjugate <aleph-conjugate>` of :ref:`X_363 <X_363>`
-   * :ref:`X_258 <X_258>` = SS(a→a') of :ref:`X_57 <X_57>`, where :g:`A'B'C' << A' B' C' >>` is the excentral triangle (trilinear substitution)
+   * :ref:`X_258 <X_258>` = SS(a→a') of :ref:`X_57 <X_57>`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the excentral triangle (trilinear substitution)
    * :ref:`X_258 <X_258>` = :ref:`X_33 <X_33>`-of-excentral-triangle
    * :ref:`X_258 <X_258>` = homothetic center of :g:`ABC << A B C >>` and :term:`intangents triangle <intangents-triangle>` of excentral triangle
    * :ref:`X_258 <X_258>` = insimilicenter of incircle and incircle of excentral triangle

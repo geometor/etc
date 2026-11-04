@@ -66,7 +66,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << Cm_a Cm_b Cm_c >>` be the :term:`circummedial triangle <circummedial-triangle>`. Let :g:`L_{a} <L_a>` be the line through :g:`A <A>` parallel to :g:`B'C' <[ Cm_b Cm_c ]>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, :g:`B″ <B″>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C″ <C″>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. The lines :g:`A'A″ <[ Cm_a A″ ]>`, :g:`B'B″ <[ Cm_b B″ ]>`, :g:`C'C″ <[ Cm_c C″ ]>` concur in :ref:`X_183 <X_183>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
+   Let :g:`Cm_aCm_bCm_c << Cm_a Cm_b Cm_c >>` be the :term:`circummedial triangle <circummedial-triangle>`. Let :g:`L_{a} <L_a>` be the line through :g:`A <A>` parallel to :g:`Cm_bCm_c <[ Cm_b Cm_c ]>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, :g:`B″ <B″>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C″ <C″>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. The lines :g:`Cm_aA″ <[ Cm_a A″ ]>`, :g:`Cm_bB″ <[ Cm_b B″ ]>`, :g:`Cm_cC″ <[ Cm_c C″ ]>` concur in :ref:`X_183 <X_183>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
 
 .. container:: note-item
 

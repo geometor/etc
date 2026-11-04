@@ -70,11 +70,11 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << N_a N_b N_c >>` be the :term:`extouch triangle <extouch-triangle>`. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ N_b N_c ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_278 <X_278>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
+   Let :g:`N_aN_bN_c << N_a N_b N_c >>` be the :term:`extouch triangle <extouch-triangle>`. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`N_bN_c <[ N_b N_c ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_278 <X_278>`. (:person:`Randy Hutson <randy-hutson>`, September 14, 2016)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << N_a N_b N_c >>` be the 2nd extouch triangle. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ N_b N_c ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The triangle :g:`A'B'C' << N_a N_b N_c >>` is homothetic to :g:`ABC << A B C >>` at :ref:`X_278 <X_278>`. (Randy Hutson, September 14, 2016)
+   Let :g:`A'B'C' << A' B' C' >>` be the 2nd extouch triangle. Let :g:`A″ <A″>` be the pole, wrt the polar circle, of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The triangle :g:`A'B'C' << A' B' C' >>` is homothetic to :g:`ABC << A B C >>` at :ref:`X_278 <X_278>`. (Randy Hutson, September 14, 2016)
 
 .. container:: note-item
 

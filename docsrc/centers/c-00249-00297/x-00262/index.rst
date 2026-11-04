@@ -96,7 +96,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>`. :ref:`X_262 <X_262>` is the radical center of the Brocard circles of :g:`AB'C' << A H_b H_c >>`, :g:`BC'A' << B H_c H_a >>`, :g:`CA'B' << C H_a H_b >>`. (:person:`Randy Hutson <randy-hutson>`, February 10, 2016)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>`. :ref:`X_262 <X_262>` is the radical center of the Brocard circles of :g:`AH_bH_c << A H_b H_c >>`, :g:`BH_cH_a << B H_c H_a >>`, :g:`CH_aH_b << C H_a H_b >>`. (:person:`Randy Hutson <randy-hutson>`, February 10, 2016)
 
 .. container:: note-item
 

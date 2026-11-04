@@ -13,7 +13,7 @@ X_7
 
 .. enunciation::
 
-   Let :g:`A' <T_a>`, :g:`B' <T_b>`, :g:`C' <T_c>` denote the points in which the incircle meets the sides :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, respectively. The lines :g:`AA' <[ A T_a ]>`, :g:`BB' <[ B T_b ]>`, :g:`CC' <[ C T_c ]>` concur in :ref:`X_7 <X_7>`.
+   Let :g:`T_a <T_a>`, :g:`T_b <T_b>`, :g:`T_c <T_c>` denote the points in which the incircle meets the sides :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, respectively. The lines :g:`AT_a <[ A T_a ]>`, :g:`BT_b <[ B T_b ]>`, :g:`CT_c <[ C T_c ]>` concur in :ref:`X_7 <X_7>`.
 
 .. figure:: x-00007.svg
    :alt: X_7 — GERGONNE POINT
@@ -24,7 +24,7 @@ X_7
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Derived Triangle:** :term:`Intouch (Contact) Triangle <intouch triangle>` :g:`△T_aT_bT_c << T_a T_b T_c >>` (denoted :g:`△A'B'C' << T_a T_b T_c >>` in enunciation) — vertices :g:`T_a <T_a>` (:g:`A' <T_a>`), :g:`T_b <T_b>` (:g:`B' <T_b>`), :g:`T_c <T_c>` (:g:`C' <T_c>`) (Contact triangle of Incircle touchpoints on BC, CA, AB)
+   * **Derived Triangle:** :term:`Intouch (Contact) Triangle <intouch triangle>` :g:`△T_aT_bT_c << T_a T_b T_c >>` — vertices :g:`T_a <T_a>`, :g:`T_b <T_b>`, :g:`T_c <T_c>` (Contact triangle of Incircle touchpoints on BC, CA, AB)
    * **Circle:** :term:`Incircle <incircle>` (:g:`incircle <incircle>`) — Inscribed circle tangent to sidelines at T_a, T_b, T_c; centered at X_1 INCENTER
    * **Concurrence Lines:** :g:`A–T_a <[ A T_a ]>`, :g:`B–T_b <[ B T_b ]>`, :g:`C–T_c <[ C T_c ]>` concurring at :g:`X_7 <X_7>`
    * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`)

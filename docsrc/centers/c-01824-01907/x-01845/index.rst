@@ -55,7 +55,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`A″ <A″>` be the :g:`A <A>`-excenter of :g:`AB'C' << A H_b H_c >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ H_a A″ ]>`, :g:`B'B″ <[ H_b B″ ]>`, :g:`C'C″ <[ H_c C″ ]>` concur in :ref:`X_1845 <X_1845>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2018)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`A″ <A″>` be the :g:`A <A>`-excenter of :g:`AH_bH_c << A H_b H_c >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`H_aA″ <[ H_a A″ ]>`, :g:`H_bB″ <[ H_b B″ ]>`, :g:`H_cC″ <[ H_c C″ ]>` concur in :ref:`X_1845 <X_1845>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2018)
 
 .. toctree::
    :hidden:

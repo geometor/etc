@@ -29,7 +29,7 @@ X_1383
 .. signature:: center
 
    | **Trilinears:** :math:`a/(2b^{2} + 2c^{2} - a^{2}) : :`
-   | **Barycentrics:** :math:`\operatorname{area}(A'BC) : :`, where :g:`A'B'C' << A' B' C' >>` is the :term:`circummedial triangle <circummedial-triangle>`
+   | **Barycentrics:** :math:`\operatorname{area}(A'BC) : :`, where :g:`Cm_aCm_bCm_c << Cm_a Cm_b Cm_c >>` is the :term:`circummedial triangle <circummedial-triangle>`
    | **Search Value (6, 9, 13):** :math:`0.209320409520`
 
 .. collapse:: Alternate Coordinates

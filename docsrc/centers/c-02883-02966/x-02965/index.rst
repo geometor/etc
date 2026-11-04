@@ -54,7 +54,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << O_A O_B O_C >>` be the :term:`Kosnita triangle <kosnita-triangle>`. Let :g:`A″ <A″>` be the barycentric product of the circumcircle intercepts of line :g:`B'C' <[ O_B O_C ]>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_2965 <X_2965>`. (:person:`Randy Hutson <randy-hutson>`, July 31 2018)
+   Let :g:`O_AO_BO_C << O_A O_B O_C >>` be the :term:`Kosnita triangle <kosnita-triangle>`. Let :g:`A″ <A″>` be the barycentric product of the circumcircle intercepts of line :g:`O_BO_C <[ O_B O_C ]>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_2965 <X_2965>`. (:person:`Randy Hutson <randy-hutson>`, July 31 2018)
 
 .. toctree::
    :hidden:

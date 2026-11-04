@@ -36,7 +36,7 @@ X_1748
 
    * **Trilinears:** :math:`(1 + 2 \cos A)/(1 + \cos A) : :`
    * **Trilinears:** :math:`\cot 2A : \cot 2B : \cot 2C`
-   * **Trilinears:** :math:`\cot A' : :`, where :g:`A'B'C' << A' B' C' >>` is the :term:`orthic triangle <orthic-triangle>`
+   * **Trilinears:** :math:`\cot A' : :`, where :g:`H_aH_bH_c << H_a H_b H_c >>` is the :term:`orthic triangle <orthic-triangle>`
 
 .. collapse:: Incident Central Lines
    :badge: 9 lines
@@ -53,7 +53,7 @@ X_1748
    * :ref:`X_1748 <X_1748>` = cevapoint of :ref:`X_19 <X_19>` and :ref:`X_920 <X_920>`
    * :ref:`X_1748 <X_1748>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`563 <X_563>`, :ref:`1 <X_1>`), (:ref:`2180 <X_2180>`, :ref:`47 <X_47>`)
    * :ref:`X_1748 <X_1748>` = X_i-:term:`aleph conjugate <aleph-conjugate>` of X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`1740 <X_1740>`), (:ref:`92 <X_92>`, :ref:`1 <X_1>`), (:ref:`264 <X_264>`, :ref:`63 <X_63>`), (:ref:`331 <X_331>`, :ref:`1445 <X_1445>`), (:ref:`811 <X_811>`, :ref:`662 <X_662>`), (:ref:`823 <X_823>`, :ref:`162 <X_162>`), (:ref:`1969 <X_1969>`, :ref:`1760 <X_1760>`)
-   * :ref:`X_1748 <X_1748>` = SS(A → :g:`A' <A'>`) of :ref:`X_63 <X_63>`, where :g:`A'B'C' << A' B' C' >>` is the orthic triangle
+   * :ref:`X_1748 <X_1748>` = SS(A → :g:`H_a <H_a>`) of :ref:`X_63 <X_63>`, where :g:`H_aH_bH_c << H_a H_b H_c >>` is the orthic triangle
    * :ref:`X_1748 <X_1748>` = {:ref:`X_19 <X_19>`,\ :ref:`X_63 <X_63>`}-harmonic conjugate of :ref:`X_92 <X_92>`
    * :ref:`X_1748 <X_1748>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_91 <X_91>` (line :ref:`X_661 <X_661>`\ \ :ref:`X_2618 <X_2618>`)
    * :ref:`X_1748 <X_1748>` = polar conjugate of :ref:`X_91 <X_91>`

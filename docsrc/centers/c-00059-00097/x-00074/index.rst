@@ -147,7 +147,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << K_a K_b K_c >>` be the :term:`anticomplementary triangle <anticomplementary-triangle>`. Let :g:`L <L>` be the line through :g:`A' <K_a>` parallel to the Euler line, and define M and N cyclically. Let :g:`L' <L'>` be the reflection of :g:`L <L>` in sideline :g:`BC <[ B C ]>`, and define :g:`M' <M'>` and :g:`N' <N'>` cyclically. The lines :g:`L' <L'>`, :g:`M' <M'>`, :g:`N' <N'>` concur in :ref:`X_74 <X_74>`. (Randy Hutson, August 26, 2014)
+   Let :g:`K_aK_bK_c << K_a K_b K_c >>` be the :term:`anticomplementary triangle <anticomplementary-triangle>`. Let :g:`L <L>` be the line through :g:`K_a <K_a>` parallel to the Euler line, and define M and N cyclically. Let :g:`L' <L'>` be the reflection of :g:`L <L>` in sideline :g:`BC <[ B C ]>`, and define :g:`M' <M'>` and :g:`N' <N'>` cyclically. The lines :g:`L' <L'>`, :g:`M' <M'>`, :g:`N' <N'>` concur in :ref:`X_74 <X_74>`. (Randy Hutson, August 26, 2014)
 
 .. container:: note-item
 

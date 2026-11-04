@@ -105,7 +105,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the :term:`cevian triangle <cevian-triangle>` of :ref:`X_1 <X_1>`. Let :g:`A″ <A″>` be the centroid of triangle :g:`AB'C' << A B' C' >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Then the lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_37 <X_37>`. (Eric Danneels, :cite:`Hyacinthos <hyacinthos>` 7892, 9/13/03)
+   Let :g:`I_aI_bI_c << I_a I_b I_c >>` be the :term:`cevian triangle <cevian-triangle>` of :ref:`X_1 <X_1>`. Let :g:`A″ <A″>` be the centroid of triangle :g:`AI_bI_c << A I_b I_c >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Then the lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_37 <X_37>`. (Eric Danneels, :cite:`Hyacinthos <hyacinthos>` 7892, 9/13/03)
 
 .. container:: note-item
 

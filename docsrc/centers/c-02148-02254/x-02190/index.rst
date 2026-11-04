@@ -65,7 +65,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A' <A'>` be the reflection of :g:`A <A>` in :g:`BC <[ B C ]>`. Let :g:`A_{B} <A_B>`, :g:`A_{C} <A_C>` be the reflections of :g:`A' <A'>` in :g:`CA <[ C A ]>` and :g:`AB <[ A B ]>`, resp. Let :g:`A″ <A″>` be the trilinear product :g:`A_{B} <A_B>`\ \*\ :g:`A_{C} <A_C>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_2190 <X_2190>`. (Randy Hutson, July 11, 2019)
+   Let :g:`Ref_a <Ref_a>` be the reflection of :g:`A <A>` in :g:`BC <[ B C ]>`. Let :g:`A_{B} <A_B>`, :g:`A_{C} <A_C>` be the reflections of :g:`Ref_a <Ref_a>` in :g:`CA <[ C A ]>` and :g:`AB <[ A B ]>`, resp. Let :g:`A″ <A″>` be the trilinear product :g:`A_{B} <A_B>`\ \*\ :g:`A_{C} <A_C>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_2190 <X_2190>`. (Randy Hutson, July 11, 2019)
 
 .. toctree::
    :hidden:

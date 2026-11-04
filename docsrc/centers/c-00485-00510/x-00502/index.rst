@@ -49,7 +49,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << I_a I_b I_c >>` be the :term:`incentral triangle <incentral-triangle>`. Let :g:`BCA″ << B C A″ >>` be the triangle similar to :g:`A'B'C' << I_a I_b I_c >>` such that the segment :g:`AA″ <[ A A″ ]>` crosses the line :g:`BC <[ B C ]>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_502 <X_502>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   Let :g:`I_aI_bI_c << I_a I_b I_c >>` be the :term:`incentral triangle <incentral-triangle>`. Let :g:`BCA″ << B C A″ >>` be the triangle similar to :g:`I_aI_bI_c << I_a I_b I_c >>` such that the segment :g:`AA″ <[ A A″ ]>` crosses the line :g:`BC <[ B C ]>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_502 <X_502>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. toctree::
    :hidden:

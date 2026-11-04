@@ -56,7 +56,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << J_a J_b J_c >>` be the :term:`excentral triangle <excentral-triangle>`. The Fermat axes of triangles :g:`A'BC << J_a B C >>`, :g:`B'CA << J_b C A >>`, :g:`C'AB << J_c A B >>` bound a triangle perspective to :g:`ABC << A B C >>` at :ref:`X_1308 <X_1308>`. (:person:`Randy Hutson <randy-hutson>`, June 27, 2018)
+   Let :g:`J_aJ_bJ_c << J_a J_b J_c >>` be the :term:`excentral triangle <excentral-triangle>`. The Fermat axes of triangles :g:`J_aBC << J_a B C >>`, :g:`J_bCA << J_b C A >>`, :g:`J_cAB << J_c A B >>` bound a triangle perspective to :g:`ABC << A B C >>` at :ref:`X_1308 <X_1308>`. (:person:`Randy Hutson <randy-hutson>`, June 27, 2018)
 
 .. toctree::
    :hidden:

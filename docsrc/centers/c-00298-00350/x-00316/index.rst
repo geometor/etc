@@ -65,7 +65,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << K_a K_b K_c >>` be the :term:`antipedal triangle <antipedal-triangle>` of :ref:`X_4 <X_4>` (the :term:`anticomplementary triangle <anticomplementary-triangle>`). The circumcircles of :g:`AA' <[ A K_a ]>`:ref:`X_4 <X_4>`, :g:`BB' <[ B K_b ]>`:ref:`X_4 <X_4>`, :g:`CC' <[ C K_c ]>`:ref:`X_4 <X_4>` concur, other than :ref:`X_4 <X_4>`, in :ref:`X_316 <X_316>`. (:person:`Randy Hutson <randy-hutson>`, June 27, 2018)
+   Let :g:`K_aK_bK_c << K_a K_b K_c >>` be the :term:`antipedal triangle <antipedal-triangle>` of :ref:`X_4 <X_4>` (the :term:`anticomplementary triangle <anticomplementary-triangle>`). The circumcircles of :g:`AK_a <[ A K_a ]>`:ref:`X_4 <X_4>`, :g:`BK_b <[ B K_b ]>`:ref:`X_4 <X_4>`, :g:`CK_c <[ C K_c ]>`:ref:`X_4 <X_4>` concur, other than :ref:`X_4 <X_4>`, in :ref:`X_316 <X_316>`. (:person:`Randy Hutson <randy-hutson>`, June 27, 2018)
 
 .. container:: note-item
 

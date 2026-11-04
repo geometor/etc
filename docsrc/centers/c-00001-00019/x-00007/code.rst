@@ -8,7 +8,7 @@ X_7
 
 .. enunciation::
 
-   Let :g:`A' <T_a>`, :g:`B' <T_b>`, :g:`C' <T_c>` denote the points in which the incircle meets the sides :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, respectively. The lines :g:`AA' <[ A T_a ]>`, :g:`BB' <[ B T_b ]>`, :g:`CC' <[ C T_c ]>` concur in :ref:`X_7 <X_7>`.
+   Let :g:`T_a <T_a>`, :g:`T_b <T_b>`, :g:`T_c <T_c>` denote the points in which the incircle meets the sides :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, respectively. The lines :g:`AT_a <[ A T_a ]>`, :g:`BT_b <[ B T_b ]>`, :g:`CT_c <[ C T_c ]>` concur in :ref:`X_7 <X_7>`.
 
 .. figure:: x-00007.svg
    :alt: X_7 — GERGONNE POINT

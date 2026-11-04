@@ -60,7 +60,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << Cm_a Cm_b Cm_c >>` be the circummedial triangle (the circumcevian triangle of :ref:`X_2 <X_2>`). Let :g:`A″ <A″>` be the cevapoint of :g:`B' <Cm_b>` and :g:`C' <Cm_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, and :g:`CC″ <[ C C″ ]>` concur in :ref:`X_1799 <X_1799>`. (:person:`Randy Hutson <randy-hutson>`, December 10, 2016)
+   Let :g:`Cm_aCm_bCm_c << Cm_a Cm_b Cm_c >>` be the circummedial triangle (the circumcevian triangle of :ref:`X_2 <X_2>`). Let :g:`A″ <A″>` be the cevapoint of :g:`Cm_b <Cm_b>` and :g:`Cm_c <Cm_c>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, and :g:`CC″ <[ C C″ ]>` concur in :ref:`X_1799 <X_1799>`. (:person:`Randy Hutson <randy-hutson>`, December 10, 2016)
 
 .. toctree::
    :hidden:

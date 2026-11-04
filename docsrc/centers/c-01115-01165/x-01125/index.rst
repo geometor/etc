@@ -103,7 +103,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << I_a I_b I_c >>` be the incentral triangle. Let :g:`A″ <A″>` be the reflection of :g:`A <A>` in :g:`A' <I_a>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Let :g:`A* <A*>` be the trilinear pole of line :g:`B″C″ <[ B″ C″ ]>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X_1125 <X_1125>`. (Randy Hutson, July 21, 2017)
+   Let :g:`I_aI_bI_c << I_a I_b I_c >>` be the incentral triangle. Let :g:`A″ <A″>` be the reflection of :g:`A <A>` in :g:`I_a <I_a>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Let :g:`A* <A*>` be the trilinear pole of line :g:`B″C″ <[ B″ C″ ]>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X_1125 <X_1125>`. (Randy Hutson, July 21, 2017)
 
 .. container:: note-item
 

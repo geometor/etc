@@ -65,9 +65,9 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << J_a J_b J_c >>` be the :term:`excentral triangle <excentral-triangle>` in the plane of a triangle :g:`ABC << A B C >>`. Let
+   Let :g:`J_aJ_bJ_c << J_a J_b J_c >>` be the :term:`excentral triangle <excentral-triangle>` in the plane of a triangle :g:`ABC << A B C >>`. Let
 
-      * :g:`A″ <A″>` = :ref:`X_110 <X_110>`-of-:g:`A'BC << J_a B C >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically
+      * :g:`A″ <A″>` = :ref:`X_110 <X_110>`-of-:g:`J_aBC << J_a B C >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically
       * (:g:`O_{a} <O_a>`) = circle with diameter :g:`AA″ <[ A A″ ]>`, and define (:g:`O_{b} <O_b>`) and (:g:`O_{c} <O_c>`) cyclically
 
 .. container:: note-item

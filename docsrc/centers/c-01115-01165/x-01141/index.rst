@@ -83,7 +83,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A' <A'>` be the reflection of :g:`A <A>` in line :g:`BC <[ B C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Let :g:`A_{B} <A_B>` be the reflection of :g:`A' <A'>` in :g:`AB <[ A B ]>`, and define :g:`A_{C} <A_C>`, :g:`B_{C} <B_C>`, :g:`B_{A} <B_A>`, :g:`C_{A} <C_A>`, :g:`C_{B} <C_B>` cyclically. Let
+   Let :g:`Ref_a <Ref_a>` be the reflection of :g:`A <A>` in line :g:`BC <[ B C ]>`, and define :g:`Ref_b <Ref_b>` and :g:`Ref_c <Ref_c>` cyclically. Let :g:`A_{B} <A_B>` be the reflection of :g:`Ref_a <Ref_a>` in :g:`AB <[ A B ]>`, and define :g:`A_{C} <A_C>`, :g:`B_{C} <B_C>`, :g:`B_{A} <B_A>`, :g:`C_{A} <C_A>`, :g:`C_{B} <C_B>` cyclically. Let
 
    :g:`A_{1} <A_1>` = :g:`BA_{B} <[ B A_B ]>`\ ∩\ :g:`CA_{C} <[ C A_C ]>`, and define :g:`B_{1} <B_1>` and :g:`C_{1} <C_1>` cyclically,
 

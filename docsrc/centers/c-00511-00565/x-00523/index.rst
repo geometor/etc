@@ -112,7 +112,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << Eu_a Eu_b Eu_c >>` be the Feuerbach triangle. Let :g:`L_{a} <L_a>` be the tangent to conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`B' <Eu_b>`,\ :g:`C' <Eu_c>`}} at :g:`A <A>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, :g:`B″ <B″>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C″ <C″>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. The lines :g:`A'A″ <[ Eu_a A″ ]>`, :g:`B'B″ <[ Eu_b B″ ]>`, :g:`C'C″ <[ Eu_c C″ ]>` concur in :ref:`X_523 <X_523>`; see also :ref:`X_1109 <X_1109>`.
+   Let :g:`Eu_aEu_bEu_c << Eu_a Eu_b Eu_c >>` be the Feuerbach triangle. Let :g:`L_{a} <L_a>` be the tangent to conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :g:`Eu_b <Eu_b>`,\ :g:`Eu_c <Eu_c>`}} at :g:`A <A>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`, :g:`B″ <B″>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C″ <C″>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. The lines :g:`Eu_aA″ <[ Eu_a A″ ]>`, :g:`Eu_bB″ <[ Eu_b B″ ]>`, :g:`Eu_cC″ <[ Eu_c C″ ]>` concur in :ref:`X_523 <X_523>`; see also :ref:`X_1109 <X_1109>`.
 
 .. container:: note-item
 

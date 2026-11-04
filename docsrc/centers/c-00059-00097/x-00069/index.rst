@@ -117,11 +117,11 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << K_a K_b K_c >>` be the anticomplementary triangle. Let :g:`A″ <A″>` be the inverse-in-anticomplementary-circle of :g:`A <A>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`A'A″ <[ K_a A″ ]>`, :g:`B'B″ <[ K_b B″ ]>`, :g:`C'C″ <[ K_c C″ ]>` concur in :ref:`X_69 <X_69>`. (:person:`Randy Hutson <randy-hutson>`, February 10, 2016)
+   Let :g:`K_aK_bK_c << K_a K_b K_c >>` be the anticomplementary triangle. Let :g:`A″ <A″>` be the inverse-in-anticomplementary-circle of :g:`A <A>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`K_aA″ <[ K_a A″ ]>`, :g:`K_bB″ <[ K_b B″ ]>`, :g:`K_cC″ <[ K_c C″ ]>` concur in :ref:`X_69 <X_69>`. (:person:`Randy Hutson <randy-hutson>`, February 10, 2016)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << K_a K_b K_c >>` be the anticomplementary triangle. Let :g:`A″ <A″>` be the orthogonal projection of :g:`A' <K_a>` on line :g:`BC <[ B C ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_69 <X_69>`. (Randy Hutson, February 10, 2016)
+   Let :g:`K_aK_bK_c << K_a K_b K_c >>` be the anticomplementary triangle. Let :g:`A″ <A″>` be the orthogonal projection of :g:`K_a <K_a>` on line :g:`BC <[ B C ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_69 <X_69>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 

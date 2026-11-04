@@ -113,7 +113,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the orthic triangle. The Euler lines of :g:`AB'C' << A H_b H_c >>`, :g:`BC'A' << B H_c H_a >>`, :g:`CA'B' << C H_a H_b >>` concur in :ref:`X_125 <X_125>`. (Randy Hutson, March 25, 2016)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the orthic triangle. The Euler lines of :g:`AH_bH_c << A H_b H_c >>`, :g:`BH_cH_a << B H_c H_a >>`, :g:`CH_aH_b << C H_a H_b >>` concur in :ref:`X_125 <X_125>`. (Randy Hutson, March 25, 2016)
 
 .. toctree::
    :hidden:

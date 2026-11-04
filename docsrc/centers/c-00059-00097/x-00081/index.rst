@@ -85,15 +85,15 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the :term:`cevian triangle <cevian-triangle>` of :ref:`X_1 <X_1>`. Let :g:`A″ <A″>` be the symmedian point of triangle :g:`AB'C' << A B' C' >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Then the lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_81 <X_81>`. (Eric Danneels, :cite:`Hyacinthos <hyacinthos>` 7892, 9/13/03)
+   Let :g:`I_aI_bI_c << I_a I_b I_c >>` be the :term:`cevian triangle <cevian-triangle>` of :ref:`X_1 <X_1>`. Let :g:`A″ <A″>` be the symmedian point of triangle :g:`AI_bI_c << A I_b I_c >>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Then the lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_81 <X_81>`. (Eric Danneels, :cite:`Hyacinthos <hyacinthos>` 7892, 9/13/03)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << I_a I_b I_c >>` be the :term:`incentral triangle <incentral-triangle>`. Let :g:`L_{A} <L_A>` be the reflection of :g:`B'C' <[ I_b I_c ]>` in the internal angle bisector of vertex angle :g:`A <A>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A″ <A″>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, :g:`B″ <B″>` = :g:`L_{C} <L_C>`\ ∩\ :g:`L_{A} <L_A>`, :g:`C″ <C″>` = :g:`L_{A} <L_A>`\ ∩\ :g:`L_{B} <L_B>`. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_81 <X_81>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   Let :g:`I_aI_bI_c << I_a I_b I_c >>` be the :term:`incentral triangle <incentral-triangle>`. Let :g:`L_{A} <L_A>` be the reflection of :g:`I_bI_c <[ I_b I_c ]>` in the internal angle bisector of vertex angle :g:`A <A>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A″ <A″>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, :g:`B″ <B″>` = :g:`L_{C} <L_C>`\ ∩\ :g:`L_{A} <L_A>`, :g:`C″ <C″>` = :g:`L_{A} <L_A>`\ ∩\ :g:`L_{B} <L_B>`. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_81 <X_81>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. container:: note-item
 
-   Let :g:`H* <H*>` be the Stammler hyperbola. Let :g:`A'B'C' << J_a J_b J_c >>` be the tangential triangle and :g:`A″B″C″ << A″ B″ C″ >>` be the :term:`excentral triangle <excentral-triangle>`. Let :g:`A* <A*>` be the intersection of the tangents to :g:`H* <H*>` at :g:`A' <J_a>` and :g:`A″ <A″>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X_81 <X_81>`. (Randy Hutson, February 10, 2016)
+   Let :g:`H* <H*>` be the Stammler hyperbola. Let :g:`Tan_aTan_bTan_c << Tan_a Tan_b Tan_c >>` be the tangential triangle and :g:`J_aJ_bJ_c << J_a J_b J_c >>` be the :term:`excentral triangle <excentral-triangle>`. Let :g:`A* <A*>` be the intersection of the tangents to :g:`H* <H*>` at :g:`Tan_a <Tan_a>` and :g:`J_a <J_a>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X_81 <X_81>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 

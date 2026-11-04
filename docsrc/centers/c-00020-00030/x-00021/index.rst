@@ -25,7 +25,7 @@ X_21
    :class: note
 
    * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`), :g:`{1, 31} <{ 1, 31 }>`
-   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`) (denoted :g:`I <X_1>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_31 <X_31>` (:ref:`2nd POWER POINT <X_31>`)
+   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_31 <X_31>` (:ref:`2nd POWER POINT <X_31>`)
 
 .. signature:: center
 
@@ -97,7 +97,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << I_a I_b I_c >>` be the :term:`incentral triangle <incentral-triangle>` of :g:`ABC << A B C >>`, and let :g:`L_{A} <L_A>` be the reflection of line :g:`B'C' <[ I_b I_c ]>` in line :g:`BC <[ B C ]>`; define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. The triangle formed by the lines :g:`L_{A} <L_A>`, :g:`L_{B} <L_B>`, :g:`L_{C} <L_C>` is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X_21 <X_21>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
+   Let :g:`I_aI_bI_c << I_a I_b I_c >>` be the :term:`incentral triangle <incentral-triangle>` of :g:`ABC << A B C >>`, and let :g:`L_{A} <L_A>` be the reflection of line :g:`I_bI_c <[ I_b I_c ]>` in line :g:`BC <[ B C ]>`; define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. The triangle formed by the lines :g:`L_{A} <L_A>`, :g:`L_{B} <L_B>`, :g:`L_{C} <L_C>` is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X_21 <X_21>`. (:person:`Randy Hutson <randy-hutson>`, 9/23/2011)
 
 .. container:: note-item
 
@@ -105,7 +105,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << Eu_a Eu_b Eu_c >>` be the :term:`Feuerbach triangle <feuerbach-triangle>`. Let :g:`L_{a} <L_a>` be the tangent to the nine-point circle at :g:`A' <Eu_a>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` be the isogonal conjugate of the trilinear pole of :g:`L_{a} <L_a>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Let :g:`A*B*C* << A* B* C* >>` be the circumcevian triangle, wrt :g:`A″B″C″ << A″ B″ C″ >>`, of :ref:`X_1 <X_1>`. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X_21 <X_21>`. (Randy Hutson, April 9, 2016)
+   Let :g:`Eu_aEu_bEu_c << Eu_a Eu_b Eu_c >>` be the :term:`Feuerbach triangle <feuerbach-triangle>`. Let :g:`L_{a} <L_a>` be the tangent to the nine-point circle at :g:`Eu_a <Eu_a>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` be the isogonal conjugate of the trilinear pole of :g:`L_{a} <L_a>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. Let :g:`A*B*C* << A* B* C* >>` be the circumcevian triangle, wrt :g:`A″B″C″ << A″ B″ C″ >>`, of :ref:`X_1 <X_1>`. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X_21 <X_21>`. (Randy Hutson, April 9, 2016)
 
 .. container:: note-item
 
@@ -121,7 +121,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << J_a J_b J_c >>` be the excentral triangle. :ref:`X_21 <X_21>` is the radical center of the circles O(3,4) of triangles :g:`A'BC << J_a B C >>`, :g:`B'CA << J_b C A >>`, :g:`C'AB << J_c A B >>`. (Randy Hutson, July 31 2018)
+   Let :g:`J_aJ_bJ_c << J_a J_b J_c >>` be the excentral triangle. :ref:`X_21 <X_21>` is the radical center of the circles O(3,4) of triangles :g:`J_aBC << J_a B C >>`, :g:`J_bCA << J_b C A >>`, :g:`J_cAB << J_c A B >>`. (Randy Hutson, July 31 2018)
 
 .. container:: note-item
 

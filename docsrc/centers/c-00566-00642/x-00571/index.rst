@@ -59,7 +59,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << O_A O_B O_C >>` be the :term:`Kosnita triangle <kosnita-triangle>`. Let :g:`A″ <A″>` be the barycentric product :g:`B' <O_B>`\ \*\ :g:`C' <O_C>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_571 <X_571>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
+   Let :g:`O_AO_BO_C << O_A O_B O_C >>` be the :term:`Kosnita triangle <kosnita-triangle>`. Let :g:`A″ <A″>` be the barycentric product :g:`O_B <O_B>`\ \*\ :g:`O_C <O_C>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_571 <X_571>`. (:person:`Randy Hutson <randy-hutson>`, December 2, 2017)
 
 .. toctree::
    :hidden:

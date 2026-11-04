@@ -55,7 +55,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << Ref_a Ref_b Ref_c >>` be the :term:`reflection triangle <reflection-triangle>`. Let :g:`B_{A} <B_A>` and :g:`C_{A} <C_A>` be the orthogonal projections of :g:`B' <Ref_b>` and :g:`C' <Ref_c>` on line :g:`BC <[ B C ]>`, resp. Let (:g:`O_{A} <O_A>`) be the circle with segment :g:`B_{A}C_{A} <[ B_A C_A ]>` as diameter. Define (:g:`O_{B} <O_B>`) and (:g:`O_{C} <O_C>`) cyclically. :ref:`X_96 <X_96>` is the radical center of circles (:g:`O_{A} <O_A>`), (:g:`O_{B} <O_B>`), (:g:`O_{C} <O_C>`). (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
+   Let :g:`Ref_aRef_bRef_c << Ref_a Ref_b Ref_c >>` be the :term:`reflection triangle <reflection-triangle>`. Let :g:`B_{A} <B_A>` and :g:`C_{A} <C_A>` be the orthogonal projections of :g:`Ref_b <Ref_b>` and :g:`Ref_c <Ref_c>` on line :g:`BC <[ B C ]>`, resp. Let (:g:`O_{A} <O_A>`) be the circle with segment :g:`B_{A}C_{A} <[ B_A C_A ]>` as diameter. Define (:g:`O_{B} <O_B>`) and (:g:`O_{C} <O_C>`) cyclically. :ref:`X_96 <X_96>` is the radical center of circles (:g:`O_{A} <O_A>`), (:g:`O_{B} <O_B>`), (:g:`O_{C} <O_C>`). (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
 
 .. toctree::
    :hidden:

@@ -421,19 +421,6 @@ def _format_constructed_elements_rst(
         return []
 
     target_key = data.get("key", "")
-    sym_map = extract_local_symbol_map(enun_raw or "")
-    # Reverse map from canonical ID -> enunciation symbol (e.g. "T_a" -> "A'", "< T_a T_b T_c >" -> "△A'B'C'")
-    rev_sym: dict[str, str] = {}
-    for k_sym, v_id in sym_map.items():
-        if v_id not in rev_sym:
-            rev_sym[v_id] = k_sym
-    if all(k in sym_map for k in ("A'", "B'", "C'")):
-        poly_key = f"< {sym_map['A\'']} {sym_map['B\'']} {sym_map['C\'']} >"
-        rev_sym[poly_key] = "△A'B'C'"
-    if all(k in sym_map for k in ("X", "Y", "Z")):
-        poly_key = f"< {sym_map['X']} {sym_map['Y']} {sym_map['Z']} >"
-        rev_sym[poly_key] = "△XYZ"
-
     center_names = _load_center_names()
     bullets: list[str] = []
 
@@ -470,18 +457,9 @@ def _format_constructed_elements_rst(
             p_title = p_info[0] if p_info else f"Triangle {pid}"
             title_part = f"**{p_title}** :g:`{pid} << {inner_id} >>`"
 
-        alias_str = ""
-        if pid in rev_sym:
-            alias_str = f" (denoted :g:`{rev_sym[pid]} << {inner_id} >>` in enunciation)"
-
-        v_chips: list[str] = []
-        for vid in v_ids:
-            if vid in rev_sym and rev_sym[vid] != vid:
-                v_chips.append(f":g:`{vid} <{vid}>` (:g:`{rev_sym[vid]} <{vid}>`)")
-            else:
-                v_chips.append(f":g:`{vid} <{vid}>`")
+        v_chips = [f":g:`{vid} <{vid}>`" for vid in v_ids]
         verts_part = f" — vertices {', '.join(v_chips)}" if v_chips else ""
-        bullets.append(f"* **Derived Triangle:** {title_part}{alias_str}{verts_part} ({desc})")
+        bullets.append(f"* **Derived Triangle:** {title_part}{verts_part} ({desc})")
 
     # 2. Auxiliary Guide Points not already part of a drawn polygon (e.g. M_a..c in X(3)/X(5), H_a..c in X(5), I_a..c in X(1))
     rem_guides = [
@@ -501,10 +479,7 @@ def _format_constructed_elements_rst(
             present = [gid for gid in g_ids if gid in rem_guides]
             if len(present) == 3:
                 used_g.update(present)
-                chips = [
-                    f":g:`{gid} <{gid}>`" + (f" (:g:`{rev_sym[gid]} <{gid}>`)" if gid in rev_sym and rev_sym[gid] != gid else "")
-                    for gid in present
-                ]
+                chips = [f":g:`{gid} <{gid}>`" for gid in present]
                 bullets.append(f"* **Auxiliary Points:** {', '.join(chips)} — {g_desc}")
         other_g = [gid for gid in rem_guides if gid not in used_g]
         if other_g:
@@ -576,7 +551,6 @@ def _format_constructed_elements_rst(
             if len(c_title) > 36 and "(" in c_title:
                 c_title = c_title.split("(")[0].strip()
             can_ref = valid_centers is None or c_num in valid_centers
-            sym_alias = f" (denoted :g:`{rev_sym[pid]} <{pid}>`)" if pid in rev_sym and rev_sym[pid] != pid else ""
             if c_title and can_ref:
                 title_suffix = f" (:ref:`{c_title} <{pid}>`)"
             elif c_title:
@@ -585,7 +559,7 @@ def _format_constructed_elements_rst(
                 title_suffix = f" (:ref:`page <{pid}>`)"
             else:
                 title_suffix = ""
-            rel_centers.append(f":g:`{pid} <{pid}>`{title_suffix}{sym_alias}")
+            rel_centers.append(f":g:`{pid} <{pid}>`{title_suffix}")
 
     if rel_centers:
         bullets.append(f"* **Related Centers:** {', '.join(rel_centers)}")

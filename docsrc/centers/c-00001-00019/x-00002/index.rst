@@ -240,7 +240,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << J_a J_b J_c >>` be the excentral triangle. Let :g:`O_{a} <O_a>` be the :g:`A' <J_a>`-McCay circle of triangle :g:`A'BC << J_a B C >>`, and define :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>` cyclically. :ref:`X_2 <X_2>` is the radical center of :g:`O_{a} <O_a>`, :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>`. (Randy Hutson, June 27, 2018)
+   Let :g:`J_aJ_bJ_c << J_a J_b J_c >>` be the excentral triangle. Let :g:`O_{a} <O_a>` be the :g:`J_a <J_a>`-McCay circle of triangle :g:`J_aBC << J_a B C >>`, and define :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>` cyclically. :ref:`X_2 <X_2>` is the radical center of :g:`O_{a} <O_a>`, :g:`O_{b} <O_b>`, :g:`O_{c} <O_c>`. (Randy Hutson, June 27, 2018)
 
 .. container:: note-item
 

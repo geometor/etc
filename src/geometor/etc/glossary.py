@@ -1451,19 +1451,126 @@ def _norm_plain_vertex(v: str) -> tuple[str, str]:
 
 
 _LOCAL_TRIANGLE_BINDING_RULES: list[tuple[re.Pattern[str], tuple[str, str, str], str]] = [
-    (re.compile(r"\borthic\s+triangle\b", re.I), ("H_a", "H_b", "H_c"), "orthic"),
-    (re.compile(r"\bmedial\s+triangle\b", re.I), ("M_a", "M_b", "M_c"), "medial"),
-    (re.compile(r"\b(?:intouch|contact)\s+triangle\b", re.I), ("T_a", "T_b", "T_c"), "intouch"),
-    (re.compile(r"\bextouch\s+triangle\b", re.I), ("N_a", "N_b", "N_c"), "extouch"),
-    (re.compile(r"\bexcentral\s+triangle\b", re.I), ("J_a", "J_b", "J_c"), "excentral"),
-    (re.compile(r"\b(?:tangential\s+triangle|antipedal\s+triangle\s+of\s+X\(3\))\b", re.I), ("Tan_a", "Tan_b", "Tan_c"), "tangential"),
-    (re.compile(r"\banticomplementary\s+triangle\b", re.I), ("K_a", "K_b", "K_c"), "anticomplementary"),
-    (re.compile(r"\b(?:incentral\s+triangle|cevian\s+triangle\s+of\s+(?:X\(1\)|the\s+incenter))\b", re.I), ("I_a", "I_b", "I_c"), "incentral"),
-    (re.compile(r"\b(?:symmedial\s+triangle|cevian\s+triangle\s+of\s+(?:X\(6\)|K|the\s+symmedian\s+point))\b", re.I), ("Sym_a", "Sym_b", "Sym_c"), "symmedial"),
-    (re.compile(r"(?<!2nd )(?<!3rd )(?<!anticomplement of the )\b(?:(?:1st\s+)?euler|feuerbach)\s+triangle\b", re.I), ("Eu_a", "Eu_b", "Eu_c"), "euler"),
-    (re.compile(r"\breflection\s+triangle\b", re.I), ("Ref_a", "Ref_b", "Ref_c"), "reflection"),
-    (re.compile(r"\bcircummedial\s+triangle\b", re.I), ("Cm_a", "Cm_b", "Cm_c"), "circummedial"),
-    (re.compile(r"\bkosnita\s+triangle\b", re.I), ("O_A", "O_B", "O_C"), "kosnita"),
+    (
+        re.compile(
+            r"^(?:the\s+)?(?:orthic\s+triangle|(?:pedal|cevian)\s+triangle\s+of\s+(?:X\(4\)|X_4\b|H\b|the\s+orthocenter))(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC|\s+in\s+the\s+plane\s+of\s+(?:a\s+)?triangle\s+ABC)?(?!\s+of\b)",
+            re.I,
+        ),
+        ("H_a", "H_b", "H_c"),
+        "orthic",
+    ),
+    (
+        re.compile(
+            r"^(?:the\s+)?(?:medial\s+triangle|cevian\s+triangle\s+of\s+(?:X\(2\)|X_2\b|G\b|the\s+centroid)|pedal\s+triangle\s+of\s+(?:X\(3\)|X_3\b|O\b|the\s+circumcenter))(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC)?(?!\s+of\b)",
+            re.I,
+        ),
+        ("M_a", "M_b", "M_c"),
+        "medial",
+    ),
+    (
+        re.compile(
+            r"^(?:the\s+)?(?:(?:intouch|contact)\s+triangle|cevian\s+triangle\s+of\s+(?:X\(7\)|X_7\b|the\s+gergonne\s+point)|pedal\s+triangle\s+of\s+(?:X\(1\)|X_1\b|I\b|the\s+incenter))(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC)?(?!\s+of\b)",
+            re.I,
+        ),
+        ("T_a", "T_b", "T_c"),
+        "intouch",
+    ),
+    (
+        re.compile(
+            r"^(?:the\s+)?(?:extouch\s+triangle|cevian\s+triangle\s+of\s+(?:X\(8\)|X_8\b|the\s+nagel\s+point))(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC)?(?!\s+of\b)",
+            re.I,
+        ),
+        ("N_a", "N_b", "N_c"),
+        "extouch",
+    ),
+    (
+        re.compile(
+            r"^(?:the\s+)?(?:excentral\s+triangle|anticevian\s+triangle\s+of\s+(?:X\(1\)|X_1\b|I\b|the\s+incenter))(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC)?(?!\s+of\b)",
+            re.I,
+        ),
+        ("J_a", "J_b", "J_c"),
+        "excentral",
+    ),
+    (
+        re.compile(
+            r"^(?:the\s+)?(?:tangential\s+triangle|antipedal\s+triangle\s+of\s+(?:X\(3\)|X_3\b|O\b|the\s+circumcenter)|anticevian\s+triangle\s+of\s+(?:X\(6\)|X_6\b|K\b|the\s+symmedian\s+point))(?:\s*\(the\s+tangential\s+triangle\))?(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC)?(?!\s+of\b)",
+            re.I,
+        ),
+        ("Tan_a", "Tan_b", "Tan_c"),
+        "tangential",
+    ),
+    (
+        re.compile(
+            r"^(?:the\s+)?(?:anticomplementary\s+triangle|anticevian\s+triangle\s+of\s+(?:X\(2\)|X_2\b|G\b|the\s+centroid)|antipedal\s+triangle\s+of\s+(?:X\(4\)|X_4\b|H\b|the\s+orthocenter))(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC)?(?!\s+of\b)",
+            re.I,
+        ),
+        ("K_a", "K_b", "K_c"),
+        "anticomplementary",
+    ),
+    (
+        re.compile(
+            r"^(?:the\s+)?(?:incentral\s+triangle|cevian\s+triangle\s+of\s+(?:X\(1\)|X_1\b|I(?:\s*\(incenter\))?\b|the\s+incenter))(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC)?(?!\s+of\b)",
+            re.I,
+        ),
+        ("I_a", "I_b", "I_c"),
+        "incentral",
+    ),
+    (
+        re.compile(
+            r"^(?:the\s+)?(?:symmedial\s+triangle|cevian\s+triangle\s+of\s+(?:X\(6\)|X_6\b|K\b|the\s+symmedian\s+point))(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC)?(?!\s+of\b)",
+            re.I,
+        ),
+        ("Sym_a", "Sym_b", "Sym_c"),
+        "symmedial",
+    ),
+    (
+        re.compile(
+            r"^(?:the\s+)?(?:(?:1st\s+)?euler|feuerbach)\s+triangle(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC)?(?!\s+of\b)",
+            re.I,
+        ),
+        ("Eu_a", "Eu_b", "Eu_c"),
+        "euler",
+    ),
+    (
+        re.compile(
+            r"^(?:the\s+)?reflection\s+triangle(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC)?(?!\s+of\b)",
+            re.I,
+        ),
+        ("Ref_a", "Ref_b", "Ref_c"),
+        "reflection",
+    ),
+    (
+        re.compile(
+            r"^(?:the\s+)?circummedial\s+triangle(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC)?(?!\s+of\b)",
+            re.I,
+        ),
+        ("Cm_a", "Cm_b", "Cm_c"),
+        "circummedial",
+    ),
+    (
+        re.compile(
+            r"^(?:the\s+)?kosnita\s+triangle(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC)?(?!\s+of\b)",
+            re.I,
+        ),
+        ("O_A", "O_B", "O_C"),
+        "kosnita",
+    ),
+    (
+        re.compile(
+            r"^(?:the\s+)?outer\s+napoleon\s+triangle(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC)?(?!\s+of\b)",
+            re.I,
+        ),
+        ("Nap_a", "Nap_b", "Nap_c"),
+        "outer_napoleon",
+    ),
+    (
+        re.compile(
+            r"^(?:the\s+)?inner\s+napoleon\s+triangle(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC)?(?!\s+of\b)",
+            re.I,
+        ),
+        ("Nap'_a", "Nap'_b", "Nap'_c"),
+        "inner_napoleon",
+    ),
 ]
 
 
@@ -1471,44 +1578,68 @@ def extract_local_symbol_map(text: str) -> dict[str, str]:
     """Extract paragraph-local symbol bindings (e.g. `A'B'C'` -> `H_a, H_b, H_c`, `I` -> `X(1)`) from `text`."""
     if not text:
         return {}
-    plain = re.sub(r":[a-zA-Z0-9_]+:`([^`<]+?)(?:\s*<[^>]+>)?`", r"\1", text)
-    plain = plain.replace("′", "'").replace("''", "″")
+    plain = re.sub(r":[a-zA-Z0-9_]+:`([^`<]+?)(?:\s*<.+?>)?`", r"\1", text)
+    plain = plain.replace("′", "'").replace("''", "″").replace('"', "″")
     sym_map: dict[str, str] = {}
 
-    # 1. "Let A'B'C' be the <named triangle>" (excluding "Let A'B'C' and A''B''C'' be...")
-    m_let_abc = re.search(
-        r"\bLet\s+(?:T\s*=\s*)?A'B'C'\s+be\s+([^.;\n]+)",
+    # 1. "Let A'B'C' be the <named triangle>" (or "where A'B'C' is...", "Let A'B'C' = ...", "Let X'Y'Z' be...")
+    for m_let_abc in re.finditer(
+        r"\b(?:Let|where|if)\s+(?:T\s*=\s*)?(A'B'C'|X'Y'Z')\s*(?:be|is|denote|denotes|=)\s*([^.;\n]+)",
         plain,
         flags=re.IGNORECASE,
-    )
-    if m_let_abc:
-        rhs = m_let_abc.group(1)
-        if " or " not in rhs.lower():
-            for pat, (va, vb, vc), _ in _LOCAL_TRIANGLE_BINDING_RULES:
-                if pat.search(rhs):
-                    sym_map.update({"A'": va, "B'": vb, "C'": vc})
+    ):
+        tri_tok = m_let_abc.group(1)
+        rhs = m_let_abc.group(2).strip()
+        if " or " in rhs.lower():
+            continue
+        k1, k2, k3 = ("X'", "Y'", "Z'") if tri_tok.upper().startswith("X") else ("A'", "B'", "C'")
+        for pat, (va, vb, vc), _ in _LOCAL_TRIANGLE_BINDING_RULES:
+            if pat.search(rhs):
+                sym_map.update({k1: va, k2: vb, k3: vc})
+                break
+        # Check optional second clause "... and A″B″C″ (be) the <named triangle>"
+        m_sec = re.search(r",?\s+and\s+A″B″C″\s+(?:be\s+)?(.+)$", rhs, flags=re.IGNORECASE)
+        if m_sec:
+            rhs2 = m_sec.group(1).strip()
+            for pat, (va2, vb2, vc2), _ in _LOCAL_TRIANGLE_BINDING_RULES:
+                if pat.search(rhs2):
+                    sym_map.update({"A″": va2, "B″": vb2, "C″": vc2})
                     break
+
+    # 1b. "Let IaIbIc be the excentral triangle" (where Ia, Ib, Ic denote excenters J_a, J_b, J_c)
+    if re.search(
+        r"\b(?:Let|where|if)\s+I_?\{?a\}?I_?\{?b\}?I_?\{?c\}?\s+(?:be|is|=)\s+(?:the\s+)?excentral\s+triangle\b",
+        plain,
+        flags=re.IGNORECASE,
+    ):
+        sym_map.update({"I_a": "J_a", "I_b": "J_b", "I_c": "J_c"})
 
     # 2. Explicit point-set definitions of A', B', C'
     if "A'" not in sym_map:
         if re.search(
-            r"\bLet\s+A'\s*,\s*B'\s*,\s*C'\s+(?:denote|be)\s+the\s+points\s+in\s+which\s+the\s+incircle\s+meets\b",
+            r"\b(?:Let|where|if)\s+(?:A'B'C'|A'\s*,\s*B'\s*,\s*C')\s+(?:denote|be|are)\s+the\s+(?:respective\s+)?points\s+(?:in\s+which|where)\s+the\s+incircle\s+(?:meets|touches|is\s+tangent\s+to)\b",
             plain,
             flags=re.IGNORECASE,
         ):
             sym_map.update({"A'": "T_a", "B'": "T_b", "C'": "T_c"})
         elif re.search(
-            r"\bLet\s+(?:A'B'C'|A'\s*,\s*B'\s*,\s*C')\s+(?:denote|be)\s+the\s+points\s+in\s+which\s+the\s+A-excircle\s+meets\b",
+            r"\b(?:Let|where|if)\s+(?:A'B'C'|A'\s*,\s*B'\s*,\s*C')\s+(?:denote|be|are)\s+the\s+(?:respective\s+)?points\s+(?:in\s+which|where)\s+the\s+A-excircle\s+(?:meets|touches|is\s+tangent\s+to)\b",
             plain,
             flags=re.IGNORECASE,
         ):
             sym_map.update({"A'": "N_a", "B'": "N_b", "C'": "N_c"})
         elif re.search(
-            r"\bLet\s+A'\s*,\s*B'\s*,\s*C'\s+(?:denote|be)\s+the\s+excenters\b",
+            r"\b(?:Let|where|if)\s+(?:A'B'C'|A'\s*,\s*B'\s*,\s*C')\s+(?:denote|be|are)\s+the\s+(?:respective\s+)?excenters\b",
             plain,
             flags=re.IGNORECASE,
         ):
             sym_map.update({"A'": "J_a", "B'": "J_b", "C'": "J_c"})
+        elif re.search(
+            r"\b(?:Let|where|if)\s+A'\s+(?:be|is|=)\s+the\s+reflection\s+of\s+(?:vertex\s+)?A\s+in\s+(?:sideline\s+|line\s+|side\s+)?BC\b",
+            plain,
+            flags=re.IGNORECASE,
+        ):
+            sym_map.update({"A'": "Ref_a", "B'": "Ref_b", "C'": "Ref_c"})
 
     # 3. Napoleon centers X, Y, Z
     if re.search(
@@ -1516,20 +1647,17 @@ def extract_local_symbol_map(text: str) -> dict[str, str]:
         plain,
         flags=re.IGNORECASE,
     ):
-        if re.search(r"\b(?:X\(14\)|X_14|inner|2nd\s+isogonic)\b", plain, flags=re.IGNORECASE):
-            sym_map.update({"X": "Nap'_a", "Y": "Nap'_b", "Z": "Nap'_c"})
-        else:
-            sym_map.update({"X": "Nap_a", "Y": "Nap_b", "Z": "Nap_c"})
+        sym_map.update({"X": "Nap_a", "Y": "Nap_b", "Z": "Nap_c"})
 
     # 4. Classical center single-letter bindings (I, O, K, H, G)
     if re.search(
-        r"\b(?:Let\s+I\s+(?:denote|be|=)\s+(?:the\s+)?(?:incenter|X\(1\)|X_1)|Write\s+I\s+for\s+the\s+incenter|where\s+I\s+denotes\s+the\s+incenter|and\s+I\s+the\s+incenter)\b",
+        r"\b(?:Let\s+I\s+(?:denote|be|=)\s+(?:the\s+)?(?:incenter|X\(1\)|X_1\b)|Write\s+I\s+for\s+the\s+incenter|where\s+I\s+denotes\s+the\s+incenter|and\s+I\s+the\s+incenter)\b",
         plain,
         flags=re.IGNORECASE,
     ):
         sym_map["I"] = "X_1"
     if re.search(
-        r"\b(?:Let\s+O\s+(?:denote|be|=)\s+(?:the\s+)?(?:circumcenter|X\(3\)|X_3)|Write\s+O\s+for\s+the\s+circumcenter|where\s+O\s+denotes\s+the\s+circumcenter)\b",
+        r"\b(?:Let\s+O\s+(?:denote|be|=)\s+(?:the\s+)?(?:circumcenter|X\(3\)|X_3\b)|Write\s+O\s+for\s+the\s+circumcenter|where\s+O\s+denotes\s+the\s+circumcenter)\b",
         plain,
         flags=re.IGNORECASE,
     ):
@@ -1557,23 +1685,44 @@ def extract_local_symbol_map(text: str) -> dict[str, str]:
 
 
 def _remap_g_role_targets(text: str, sym_map: dict[str, str]) -> str:
-    """Remap local variable targets inside `:g:`display <target>`` using `sym_map` while keeping `display` intact."""
+    """Remap local variable symbols inside `:g:`display <target>`` using `sym_map`, replacing both display and target for special points."""
     if not sym_map or ":g:`" not in text:
         return text
 
+    def _is_special_pt(mapped_id: str) -> bool:
+        return bool(mapped_id) and not mapped_id.startswith("X_")
+
     def _repl_g(m: re.Match) -> str:
-        disp = m.group(1)
+        disp = m.group(1).strip()
         targ = m.group(2).strip()
         if targ.startswith("<") and targ.endswith(">"):
             inner = targ[1:-1].strip()
-            toks = [sym_map.get(tok, tok) for tok in inner.split()]
-            return f":g:`{disp} << {' '.join(toks)} >>`"
+            orig_toks = inner.split()
+            new_toks = [sym_map.get(tok, tok) for tok in orig_toks]
+            if any(tok in sym_map and _is_special_pt(sym_map[tok]) for tok in orig_toks):
+                disp_toks = [
+                    sym_map[tok] if (tok in sym_map and _is_special_pt(sym_map[tok])) else tok
+                    for tok in orig_toks
+                ]
+                prefix = "△" if disp.startswith("△") else ""
+                disp = f"{prefix}{''.join(disp_toks)}"
+            return f":g:`{disp} << {' '.join(new_toks)} >>`"
         if targ.startswith("[") and targ.endswith("]"):
             inner = targ[1:-1].strip()
-            toks = [sym_map.get(tok, tok) for tok in inner.split()]
-            return f":g:`{disp} <[ {' '.join(toks)} ]>`"
+            orig_toks = inner.split()
+            new_toks = [sym_map.get(tok, tok) for tok in orig_toks]
+            if any(tok in sym_map and _is_special_pt(sym_map[tok]) for tok in orig_toks):
+                disp_toks = [
+                    sym_map[tok] if (tok in sym_map and _is_special_pt(sym_map[tok])) else tok
+                    for tok in orig_toks
+                ]
+                sep = "–" if "–" in disp else ""
+                disp = sep.join(disp_toks)
+            return f":g:`{disp} <[ {' '.join(new_toks)} ]>`"
         if targ in sym_map:
-            return f":g:`{disp} <{sym_map[targ]}>`"
+            new_targ = sym_map[targ]
+            new_disp = new_targ if _is_special_pt(new_targ) else disp
+            return f":g:`{new_disp} <{new_targ}>`"
         return m.group(0)
 
     return re.sub(r":g:`([^`<]+?)\s*<(.+?)>`", _repl_g, text)
@@ -1601,7 +1750,7 @@ def wrap_geom_refs(text: str) -> str:
             seg,
         )
 
-        # 2. Unsubscripted 3-vertex subscripted triangles (IaIbIc, AaBaCa, A1B1C1, AbBCb, etc.)
+        # 2. Unsubscripted 3-vertex subscripted triangles (IaIbIc, AaBaCa, A1B1C1, AbBCb, BCIa, etc.)
         def _repl_3v_unsub(m: re.Match) -> str:
             l1, p1a, s1, p1b, l2, p2a, s2, p2b, l3, p3a, s3, p3b = (
                 m.group(1), m.group(2) or "", m.group(3) or "", m.group(4) or "",
@@ -1610,8 +1759,14 @@ def wrap_geom_refs(text: str) -> str:
             )
             if not (s1 or s2 or s3):
                 return m.group(0)
-            # Either all 3 have subscripts, or {l1, l2, l3} == {"A", "B", "C"}
-            if not ((s1 and s2 and s3) or {l1, l2, l3} == {"A", "B", "C"}):
+            abc_unsub = [
+                L for L, s in ((l1, s1), (l2, s2), (l3, s3)) if not s and L in {"A", "B", "C"}
+            ]
+            if not (
+                (s1 and s2 and s3)
+                or {l1, l2, l3} == {"A", "B", "C"}
+                or (len(set(abc_unsub)) == 2 and sum(bool(s) for s in (s1, s2, s3)) == 1)
+            ):
                 return m.group(0)
 
             def _fmt(L: str, pa: str, s: str, pb: str) -> tuple[str, str]:

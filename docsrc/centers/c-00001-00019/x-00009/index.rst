@@ -42,7 +42,7 @@ X_9
    * **Trilinears:** :math:`a - s : b - s : c - s`
    * **Trilinears:** :math:`\csc A + \cot A : :`
    * **Trilinears:** :math:`\csc A (1 + \cos A) : :`
-   * **Trilinears:** :math:`\tan A' : :`, where :g:`A'B'C' << A' B' C' >>` = excentral triangle
+   * **Trilinears:** :math:`\tan A' : :`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` = excentral triangle
    * **Trilinears:** :math:`d(a,b,c) : :`, where d(a,b,c) = distance from :g:`A <A>` to the Gergonne line
    * **Trilinears:** square of semi-minor axis of A-Soddy ellipse : :
    * **Barycentrics:** :math:`1 + \cos A : 1 + \cos B : 1 + \cos C`
@@ -147,7 +147,7 @@ X_9
    * :ref:`X_9 <X_9>` = homothetic center of excentral triangle and 2nd extouch triangle
    * :ref:`X_9 <X_9>` = perspector of :g:`ABC << A B C >>` and medial triangle of extouch triangle
    * :ref:`X_9 <X_9>` = perspector of pedal and :term:`anticevian triangles <anticevian-triangle>` of :ref:`X_1490 <X_1490>`
-   * :ref:`X_9 <X_9>` = SS(A→\ :g:`A' <A'>`) of :ref:`X_19 <X_19>`, where :g:`A'B'C' << A' B' C' >>` is the excentral triangle
+   * :ref:`X_9 <X_9>` = SS(A→\ :g:`J_a <J_a>`) of :ref:`X_19 <X_19>`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the excentral triangle
    * :ref:`X_9 <X_9>` = homothetic center of medial triangle and :term:`tangential triangle <tangential-triangle>` of excentral triangle
    * :ref:`X_9 <X_9>` = homothetic center of excentral triangle and complement of the :term:`intouch triangle <intouch-triangle>`
    * :ref:`X_9 <X_9>` = Cundy-Parry Phi transform of :ref:`X_84 <X_84>`
@@ -176,7 +176,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`L_{a} <L_a>` be the antiorthic axis of :g:`AB'C' << A H_b H_c >>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`. :g:`B″ <B″>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C″ <C″>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. Triangle :g:`A″B″C″ << A″ B″ C″ >>` is inversely similar to :g:`ABC << A B C >>`, with similitude center :ref:`X_9 <X_9>`. (Randy Hutson, November 18, 2015)
+   Let :g:`H_aH_bH_c << H_a H_b H_c >>` be the :term:`orthic triangle <orthic-triangle>`. Let :g:`L_{a} <L_a>` be the antiorthic axis of :g:`AH_bH_c << A H_b H_c >>`, and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A″ <A″>` = :g:`L_{b} <L_b>`\ ∩\ :g:`L_{c} <L_c>`. :g:`B″ <B″>` = :g:`L_{c} <L_c>`\ ∩\ :g:`L_{a} <L_a>`, :g:`C″ <C″>` = :g:`L_{a} <L_a>`\ ∩\ :g:`L_{b} <L_b>`. Triangle :g:`A″B″C″ << A″ B″ C″ >>` is inversely similar to :g:`ABC << A B C >>`, with similitude center :ref:`X_9 <X_9>`. (Randy Hutson, November 18, 2015)
 
 .. container:: note-item
 
@@ -224,7 +224,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << T_a T_b T_c >>` be the intouch triangle of the :term:`anticomplementary triangle <anticomplementary-triangle>` of :g:`ABC << A B C >>`. The ellipse E passes through :g:`A' <T_a>`, :g:`B' <T_b>`, :g:`C' <T_c>`. See `Three orbits in elliptic billiard <https://www.youtube.com/watch?v=gwfx6LDJnsE&feature=youtu.be>`__. (Dan Reznik, July 1, 2019)
+   Let :g:`A'B'C' << A' B' C' >>` be the intouch triangle of the :term:`anticomplementary triangle <anticomplementary-triangle>` of :g:`ABC << A B C >>`. The ellipse E passes through :g:`A' <A'>`, :g:`B' <B'>`, :g:`C' <C'>`. See `Three orbits in elliptic billiard <https://www.youtube.com/watch?v=gwfx6LDJnsE&feature=youtu.be>`__. (Dan Reznik, July 1, 2019)
 
 .. container:: note-item
 
