@@ -41,7 +41,7 @@ X_1446
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X_1446 <X_1446>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_2287
+   * :ref:`X_1446 <X_1446>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_2287 <X_2287>`
    * :ref:`X_1446 <X_1446>` = :ref:`X_226 <X_226>`-cross conjugate of :ref:`X_1441 <X_1441>`
    * :ref:`X_1446 <X_1446>` = :term:`cevapoint <cevapoint>` of :ref:`X_1427 <X_1427>` and :ref:`X_1439 <X_1439>`
    * :ref:`X_1446 <X_1446>` = :term:`crosspoint <crosspoint>` of :ref:`X_85 <X_85>` and :ref:`X_331 <X_331>`

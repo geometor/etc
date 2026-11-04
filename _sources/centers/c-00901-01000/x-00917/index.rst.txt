@@ -49,7 +49,7 @@ X_917
    * :ref:`X_917 <X_917>` = reflection of :ref:`X_4 <X_4>` in X_5190
    * :ref:`X_917 <X_917>` = isogonal conjugate of :ref:`X_916 <X_916>`
    * :ref:`X_917 <X_917>` = :ref:`X_516 <X_516>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_4 <X_4>`
-   * :ref:`X_917 <X_917>` = polar conjugate of :term:`isotomic conjugate <isotomic-conjugate>` of X_2989
+   * :ref:`X_917 <X_917>` = polar conjugate of :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_2989 <X_2989>`
    * :ref:`X_917 <X_917>` = :ref:`X_63 <X_63>`-:term:`isoconjugate <isoconjugate>` of X_8608
    * :ref:`X_917 <X_917>` = antipode of :ref:`X_4 <X_4>` in hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_4 <X_4>`,\ :ref:`X_27 <X_27>`}
    * :ref:`X_917 <X_917>` = polar-circle-inverse of :ref:`X_118 <X_118>`

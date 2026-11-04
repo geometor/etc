@@ -24,7 +24,7 @@ X_410
    :class: note
 
    * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`)
-   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`)
+   * **Related Centers:** :g:`X_2656 <X_2656>` (:ref:`TRILINEAR POLE OF PU(82) <X_2656>`), :g:`X_2659 <X_2659>` (:ref:`CROSSDIFFERENCE OF PU(83) <X_2659>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`)
 
 .. signature:: center
 
@@ -41,20 +41,20 @@ X_410
    :badge: 3 lines
    :class: line-catalog
 
-   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`73 <X_73>`, 2659}, {:ref:`823 <X_823>`, 2660}
+   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`73 <X_73>`, :ref:`2659 <X_2659>`}, {:ref:`823 <X_823>`, :ref:`2660 <X_2660>`}
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, :ref:`1248 <X_1248>`}, {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`73 <X_73>`, 2659}, {:ref:`823 <X_823>`, 2654}
+   {:ref:`1 <X_1>`, :ref:`1248 <X_1248>`}, {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`73 <X_73>`, :ref:`2659 <X_2659>`}, {:ref:`823 <X_823>`, :ref:`2654 <X_2654>`}
 
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X_410 <X_410>` = X_2656-:term:`Ceva conjugate <ceva-conjugate>` of X_2659
-   * :ref:`X_410 <X_410>` = barycentric product X_2662\*X_31623
-   * :ref:`X_410 <X_410>` = barycentric quotient X_2662/:ref:`X_1214 <X_1214>`
+   * :ref:`X_410 <X_410>` = :ref:`X_2656 <X_2656>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_2659 <X_2659>`
+   * :ref:`X_410 <X_410>` = barycentric product :ref:`X_2662 <X_2662>`\ \*X_31623
+   * :ref:`X_410 <X_410>` = barycentric quotient :ref:`X_2662 <X_2662>`/:ref:`X_1214 <X_1214>`
    * :ref:`X_410 <X_410>` = {X_i,X_j}-harmonic conjugate of X_k for these (i,j,k): {:ref:`21 <X_21>`, :ref:`29 <X_29>`, :ref:`414 <X_414>`}
    * :ref:`X_410 <X_410>` = crosspoint of PU(82)
 

@@ -66,7 +66,7 @@ Notes
 
 .. container:: note-item
 
-   :ref:`X_1576 <X_1576>` is the center of the conic transform of the Stammler quartic (Q066 in :person:`Bernard Gibert <bernard-gibert>`' catalogue) by :ref:`X_31 <X_31>`-isoconjugation. This conic is given by the barycentric equation b^4c^4(b^2-c^2)x^2+c^4a^4(c^2-a^2)y^2+a^4b^4(a^2-b^2)z^2 = 0, and it passes through the following :term:`triangle centers <triangle-center>`: :ref:`X_6 <X_6>`, :ref:`X_31 <X_31>`, :ref:`X_48 <X_48>`, :ref:`X_154 <X_154>`, :ref:`X_1613 <X_1613>`, X_2578, X_2579, X_5638, X_5639. (:person:`Angel Montesdeoca <angel-montesdeoca>`, May 7, 2016)
+   :ref:`X_1576 <X_1576>` is the center of the conic transform of the Stammler quartic (Q066 in :person:`Bernard Gibert <bernard-gibert>`' catalogue) by :ref:`X_31 <X_31>`-isoconjugation. This conic is given by the barycentric equation b^4c^4(b^2-c^2)x^2+c^4a^4(c^2-a^2)y^2+a^4b^4(a^2-b^2)z^2 = 0, and it passes through the following :term:`triangle centers <triangle-center>`: :ref:`X_6 <X_6>`, :ref:`X_31 <X_31>`, :ref:`X_48 <X_48>`, :ref:`X_154 <X_154>`, :ref:`X_1613 <X_1613>`, :ref:`X_2578 <X_2578>`, :ref:`X_2579 <X_2579>`, X_5638, X_5639. (:person:`Angel Montesdeoca <angel-montesdeoca>`, May 7, 2016)
 
 .. container:: note-item
 

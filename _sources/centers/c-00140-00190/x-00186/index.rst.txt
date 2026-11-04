@@ -49,7 +49,7 @@ X_186
    :badge: 8 lines
    :class: line-catalog
 
-   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`54 <X_54>`, :ref:`389 <X_389>`}, {:ref:`93 <X_93>`, :ref:`252 <X_252>`}, {:ref:`98 <X_98>`, :ref:`935 <X_935>`}, {:ref:`107 <X_107>`, :ref:`477 <X_477>`}, {:ref:`112 <X_112>`, :ref:`187 <X_187>`}, {:ref:`249 <X_249>`, :ref:`250 <X_250>`}, {2931, 3580}
+   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`54 <X_54>`, :ref:`389 <X_389>`}, {:ref:`93 <X_93>`, :ref:`252 <X_252>`}, {:ref:`98 <X_98>`, :ref:`935 <X_935>`}, {:ref:`107 <X_107>`, :ref:`477 <X_477>`}, {:ref:`112 <X_112>`, :ref:`187 <X_187>`}, {:ref:`249 <X_249>`, :ref:`250 <X_250>`}, {:ref:`2931 <X_2931>`, 3580}
 
 .. collapse:: Functional Relations
    :badge: 31 relations
@@ -58,7 +58,7 @@ X_186
    * :ref:`X_186 <X_186>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_265 <X_265>`
    * :ref:`X_186 <X_186>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_328 <X_328>`
    * :ref:`X_186 <X_186>` = :term:`complement <complement>` of X_3153
-   * :ref:`X_186 <X_186>` = :term:`anticomplement <anticomplement>` of X_2072
+   * :ref:`X_186 <X_186>` = :term:`anticomplement <anticomplement>` of :ref:`X_2072 <X_2072>`
    * :ref:`X_186 <X_186>` = circumcircle-inverse of :ref:`X_4 <X_4>`
    * :ref:`X_186 <X_186>` = polar-circle-inverse of :ref:`X_5 <X_5>`
    * :ref:`X_186 <X_186>` = Kosnita-circle-inverse of :ref:`X_3 <X_3>`
@@ -75,7 +75,7 @@ X_186
    * :ref:`X_186 <X_186>` = perspector of :g:`ABC << A B C >>` and the reflection of the :term:`Kosnita triangle <kosnita-triangle>` in the Euler line
    * :ref:`X_186 <X_186>` = perspector of :g:`ABC << A B C >>` and the reflection of the :term:`orthic triangle <orthic-triangle>` in the orthic axis
    * :ref:`X_186 <X_186>` = reflection of :ref:`X_403 <X_403>` in the orthic axis
-   * :ref:`X_186 <X_186>` = crosspoint of :ref:`X_3 <X_3>` and X_2931 wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
+   * :ref:`X_186 <X_186>` = crosspoint of :ref:`X_3 <X_3>` and :ref:`X_2931 <X_2931>` wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
    * :ref:`X_186 <X_186>` = homothetic center of circumorthic and Kosnita triangles
    * :ref:`X_186 <X_186>` = perspector of circumconic through polar conjugates of PU(5)
    * :ref:`X_186 <X_186>` = Hofstadter 3 point

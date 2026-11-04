@@ -43,7 +43,7 @@ X_1175
    * :ref:`X_1175 <X_1175>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_442 <X_442>`
    * :ref:`X_1175 <X_1175>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_1234 <X_1234>`
    * :ref:`X_1175 <X_1175>` = :ref:`X_513 <X_513>`-cross conjugate of :ref:`X_110 <X_110>`
-   * :ref:`X_1175 <X_1175>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_647 <X_647>`\ X_2605
+   * :ref:`X_1175 <X_1175>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_647 <X_647>`\ \ :ref:`X_2605 <X_2605>`
 
 .. toctree::
    :hidden:

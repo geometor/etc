@@ -56,7 +56,7 @@ X_1109
    * :ref:`X_1109 <X_1109>` = reflection of X_4736 in :ref:`X_10 <X_10>`
    * :ref:`X_1109 <X_1109>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_163 <X_163>`\ \ :ref:`X_1983 <X_1983>`
    * :ref:`X_1109 <X_1109>` = bicentric difference of PU(73)
-   * :ref:`X_1109 <X_1109>` = PU(73)-harmonic conjugate of X_2624
+   * :ref:`X_1109 <X_1109>` = PU(73)-harmonic conjugate of :ref:`X_2624 <X_2624>`
    * :ref:`X_1109 <X_1109>` = polar conjugate of :term:`isotomic conjugate <isotomic-conjugate>` of X_20902
    * :ref:`X_1109 <X_1109>` = {:ref:`X_1 <X_1>`,\ :ref:`X_564 <X_564>`}-harmonic conjugate of :ref:`X_1087 <X_1087>`
 
@@ -81,7 +81,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`L_{a} <L_a>` be the A-extraversion of line X_2610X_4024 (the trilinear polar of :ref:`X_12 <X_12>`), and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>` ∩ :g:`L_{c} <L_c>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X_1109 <X_1109>`. (Randy Hutson, January 29, 2018)
+   Let :g:`L_{a} <L_a>` be the A-extraversion of line :ref:`X_2610 <X_2610>`\ X_4024 (the trilinear polar of :ref:`X_12 <X_12>`), and define :g:`L_{b} <L_b>` and :g:`L_{c} <L_c>` cyclically. Let :g:`A' <A'>` = :g:`L_{b} <L_b>` ∩ :g:`L_{c} <L_c>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X_1109 <X_1109>`. (Randy Hutson, January 29, 2018)
 
 .. container:: note-item
 

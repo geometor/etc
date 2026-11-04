@@ -24,7 +24,7 @@ X_1994
    :class: note
 
    * **Central Lines:** :g:`{2, 6} <{ 2, 6 }>`, :g:`{52, 54} <{ 52, 54 }>`
-   * **Related Centers:** :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_52 <X_52>` (:ref:`ORTHOCENTER OF ORTHIC TRIANGLE <X_52>`), :g:`X_54 <X_54>` (:ref:`KOSNITA POINT <X_54>`)
+   * **Related Centers:** :g:`X_2963 <X_2963>` (:ref:`BARYCENTRIC PRODUCT X(17)*X(18) <X_2963>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_52 <X_52>` (:ref:`ORTHOCENTER OF ORTHIC TRIANGLE <X_52>`), :g:`X_54 <X_54>` (:ref:`KOSNITA POINT <X_54>`)
 
 .. signature:: center
 
@@ -46,14 +46,14 @@ X_1994
 .. collapse:: Functional Relations
    :badge: 8 relations
 
-   * :ref:`X_1994 <X_1994>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2963
+   * :ref:`X_1994 <X_1994>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2963 <X_2963>`
    * :ref:`X_1994 <X_1994>` = :term:`anticomplement <anticomplement>` of X_37636
    * :ref:`X_1994 <X_1994>` = :term:`cevapoint <cevapoint>` of :ref:`X_6 <X_6>` and :ref:`X_195 <X_195>`
-   * :ref:`X_1994 <X_1994>` = X_2965-:term:`cross conjugate <cross-conjugate>` of X_3518
+   * :ref:`X_1994 <X_1994>` = :ref:`X_2965 <X_2965>`-:term:`cross conjugate <cross-conjugate>` of X_3518
    * :ref:`X_1994 <X_1994>` = :term:`crosspoint <crosspoint>` of :ref:`X_588 <X_588>` and :ref:`X_589 <X_589>`
    * :ref:`X_1994 <X_1994>` = :term:`crosssum <crosssum>` of :ref:`X_590 <X_590>` and :ref:`X_615 <X_615>`
    * :ref:`X_1994 <X_1994>` = polar conjugate of :ref:`X_93 <X_93>`
-   * :ref:`X_1994 <X_1994>` = :ref:`X_6 <X_6>`-:term:`isoconjugate <isoconjugate>` of X_2962
+   * :ref:`X_1994 <X_1994>` = :ref:`X_6 <X_6>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_2962 <X_2962>`
 
 .. toctree::
    :hidden:

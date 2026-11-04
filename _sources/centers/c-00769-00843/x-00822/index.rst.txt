@@ -58,7 +58,7 @@ X_822
    * :ref:`X_822 <X_822>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_162 <X_162>`
    * :ref:`X_822 <X_822>` = bicentric difference of PU(83)
    * :ref:`X_822 <X_822>` = polar conjugate of :term:`isotomic conjugate <isotomic-conjugate>` of isogonal conjugate of X_36126
-   * :ref:`X_822 <X_822>` = PU(83)-harmonic conjugate of X_2658
+   * :ref:`X_822 <X_822>` = PU(83)-harmonic conjugate of :ref:`X_2658 <X_2658>`
    * :ref:`X_822 <X_822>` = :ref:`X_63 <X_63>`-isoconjugate of X_36126
    * :ref:`X_822 <X_822>` = :ref:`X_2 <X_2>`-Ceva conjugate of X_38985
    * :ref:`X_822 <X_822>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_1 <X_1>`,\ :ref:`X_48 <X_48>`}}

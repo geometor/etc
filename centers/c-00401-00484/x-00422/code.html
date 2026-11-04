@@ -3378,6 +3378,7 @@
             <span class="n">create_model</span><span class="p">,</span>
             <span class="n">eval_barycentric_point</span><span class="p">,</span>
             <span class="n">eval_trilinear_point</span><span class="p">,</span>
+            <span class="n">point_from_barycentrics</span><span class="p">,</span>
             <span class="n">promote_point_to_top</span><span class="p">,</span>
         <span class="p">)</span>
         <span class="kn">from</span><span class="w"> </span><span class="nn">geometor.etc.render</span><span class="w"> </span><span class="kn">import</span> <span class="n">write_center_svg</span>
@@ -3394,6 +3395,9 @@
             <span class="n">X_162</span> <span class="o">=</span> <span class="n">eval_trilinear_point</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="s1">'1/(sin(2*B) - sin(2*C))'</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"X_162"</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"center"</span><span class="p">,</span> <span class="s2">"incident"</span><span class="p">])</span>
             <span class="n">X_242</span> <span class="o">=</span> <span class="n">eval_trilinear_point</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="s1">'((sec(A))*((sin(A))**(2) - sin(B)*sin(C)))'</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"X_242"</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"center"</span><span class="p">,</span> <span class="s2">"incident"</span><span class="p">])</span>
             <span class="n">central_line</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">X_162</span><span class="p">,</span> <span class="n">X_242</span><span class="p">,</span> <span class="mi">162</span><span class="p">,</span> <span class="mi">242</span><span class="p">,</span> <span class="n">incident</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="n">X_107</span> <span class="o">=</span> <span class="n">eval_trilinear_point</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="s1">'1/(cos(A)*(sin(2*B) - sin(2*C)))'</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"X_107"</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"center"</span><span class="p">,</span> <span class="s2">"incident"</span><span class="p">])</span>
+            <span class="n">X_2699</span> <span class="o">=</span> <span class="n">point_from_barycentrics</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="mf">0.82718162</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.2432613</span><span class="p">,</span> <span class="mf">0.41607968</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"X_2699"</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"center"</span><span class="p">,</span> <span class="s2">"incident"</span><span class="p">])</span>
+            <span class="n">central_line</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">X_107</span><span class="p">,</span> <span class="n">X_2699</span><span class="p">,</span> <span class="mi">107</span><span class="p">,</span> <span class="mi">2699</span><span class="p">,</span> <span class="n">incident</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
             <span class="k">return</span> <span class="n">promote_point_to_top</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">X_422</span><span class="p">)</span>
 
 
@@ -3506,7 +3510,7 @@
 
   <script src="../../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../../_static/documentation_options.js?v=6e0256f3"></script>
+  <script src="../../../_static/documentation_options.js?v=ca7ad2ea"></script>
   <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../../_static/js/collection_controls.js?v=b6b5297a"></script>

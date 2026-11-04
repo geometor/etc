@@ -543,7 +543,7 @@ where
 dual triangle
 -------------
 
-Let :g:`DEF << D E F >>` be a triangle in the plane of triangle :g:`ABC << A B C >>`. Let :g:`D' <D'>` be the isogonal conjugate of the point of intersection of line :g:`EF <[ E F ]>` and the line at infinity. Define :g:`E' <E'>` and :g:`F' <F'>` cyclically. The triangle :g:`D'E'F' << D' E' F' >>` is the *dual* of :g:`DEF << D E F >>`. The vertices of :g:`D'E'F' << D' E' F' >>` lie on the circumcircle, and :g:`D'E'F' << D' E' F' >>` is similar to :g:`DEF << D E F >>`. The duality is between the sidelines :g:`EF <[ E F ]>`, :g:`FD <[ F D ]>`, :g:`DE <[ D E ]>` and the points :g:`D' <D'>`, :g:`E' <E'>`, :g:`F' <F'>`, respectively. For example, if :g:`E <E>` and :g:`F <F>` remain fixed and D varies, then :g:`D' <D'>` remains fixed, while :g:`E'F' <[ E' F' ]>` varies. (From the preamble to X_2979 in ETC.)
+Let :g:`DEF << D E F >>` be a triangle in the plane of triangle :g:`ABC << A B C >>`. Let :g:`D' <D'>` be the isogonal conjugate of the point of intersection of line :g:`EF <[ E F ]>` and the line at infinity. Define :g:`E' <E'>` and :g:`F' <F'>` cyclically. The triangle :g:`D'E'F' << D' E' F' >>` is the *dual* of :g:`DEF << D E F >>`. The vertices of :g:`D'E'F' << D' E' F' >>` lie on the circumcircle, and :g:`D'E'F' << D' E' F' >>` is similar to :g:`DEF << D E F >>`. The duality is between the sidelines :g:`EF <[ E F ]>`, :g:`FD <[ F D ]>`, :g:`DE <[ D E ]>` and the points :g:`D' <D'>`, :g:`E' <E'>`, :g:`F' <F'>`, respectively. For example, if :g:`E <E>` and :g:`F <F>` remain fixed and D varies, then :g:`D' <D'>` remains fixed, while :g:`E'F' <[ E' F' ]>` varies. (From the preamble to :ref:`X_2979 <X_2979>` in ETC.)
 
 .. _eigencenter:
 .. _term-eigencenter:

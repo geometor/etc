@@ -35,7 +35,7 @@ X_1481
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, :ref:`1406 <X_1406>`}, {2316, 4253}
+   {:ref:`1 <X_1>`, :ref:`1406 <X_1406>`}, {:ref:`2316 <X_2316>`, 4253}
 
 .. toctree::
    :hidden:

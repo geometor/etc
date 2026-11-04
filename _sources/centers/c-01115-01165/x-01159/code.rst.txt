@@ -8,7 +8,7 @@ X_1159
 
 .. enunciation::
 
-   :ref:`X_1159 <X_1159>` = {X_2099,X_4860}-harmonic conjugate of :ref:`X_1 <X_1>`
+   :ref:`X_1159 <X_1159>` = {:ref:`X_2099 <X_2099>`,X_4860}-harmonic conjugate of :ref:`X_1 <X_1>`
 
 .. figure:: x-01159.svg
    :alt: X_1159 — GREENHILL POINT

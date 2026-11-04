@@ -24,7 +24,7 @@ X_545
    :class: note
 
    * **Central Lines:** :g:`{2, 45} <{ 2, 45 }>`, :g:`{30, 511} <{ 30, 511 }>`
-   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_45 <X_45>` (:ref:`-BETH CONJUGATE OF X(1) <X_45>`), :g:`X_30 <X_30>` (:ref:`EULER INFINITY POINT <X_30>`), :g:`X_511 <X_511>` (:ref:`ISOGONAL CONJUGATE OF X(98) <X_511>`)
+   * **Related Centers:** :g:`X_2384 <X_2384>` (:ref:`CIR(X(545)) <X_2384>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_45 <X_45>` (:ref:`-BETH CONJUGATE OF X(1) <X_45>`), :g:`X_30 <X_30>` (:ref:`EULER INFINITY POINT <X_30>`), :g:`X_511 <X_511>` (:ref:`ISOGONAL CONJUGATE OF X(98) <X_511>`)
 
 .. signature:: center
 
@@ -39,12 +39,12 @@ X_545
    :badge: 5 lines
    :class: line-catalog
 
-   {:ref:`2 <X_2>`, :ref:`45 <X_45>`}, {:ref:`30 <X_30>`, :ref:`511 <X_511>`}, {:ref:`44 <X_44>`, :ref:`1266 <X_1266>`}, {:ref:`63 <X_63>`, 2161}, {:ref:`321 <X_321>`, :ref:`1227 <X_1227>`}
+   {:ref:`2 <X_2>`, :ref:`45 <X_45>`}, {:ref:`30 <X_30>`, :ref:`511 <X_511>`}, {:ref:`44 <X_44>`, :ref:`1266 <X_1266>`}, {:ref:`63 <X_63>`, :ref:`2161 <X_2161>`}, {:ref:`321 <X_321>`, :ref:`1227 <X_1227>`}
 
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X_545 <X_545>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2384
+   * :ref:`X_545 <X_545>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2384 <X_2384>`
    * :ref:`X_545 <X_545>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_35168
    * :ref:`X_545 <X_545>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of X_35121
    * :ref:`X_545 <X_545>` = :ref:`X_514 <X_514>`-Hirst inverse of :ref:`X_519 <X_519>`

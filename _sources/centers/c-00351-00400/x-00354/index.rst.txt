@@ -25,7 +25,7 @@ X_354
    :class: note
 
    * **Central Lines:** :g:`{1, 3} <{ 1, 3 }>`, :g:`{37, 38} <{ 37, 38 }>`
-   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_37 <X_37>` (:ref:`CROSSPOINT OF INCENTER AND CENTROID <X_37>`), :g:`X_38 <X_38>` (:ref:`CROSSPOINT OF X(1) AND X(75) <X_38>`)
+   * **Related Centers:** :g:`X_2346 <X_2346>` (:ref:`-ISOCONJUGATE OF X(1475) <X_2346>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_37 <X_37>` (:ref:`CROSSPOINT OF INCENTER AND CENTROID <X_37>`), :g:`X_38 <X_38>` (:ref:`CROSSPOINT OF X(1) AND X(75) <X_38>`)
 
 .. signature:: center
 
@@ -44,12 +44,12 @@ X_354
    :badge: 18 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, :ref:`3 <X_3>`}, {:ref:`2 <X_2>`, :ref:`210 <X_210>`}, {:ref:`6 <X_6>`, :ref:`374 <X_374>`}, {:ref:`7 <X_7>`, :ref:`479 <X_479>`}, {:ref:`11 <X_11>`, :ref:`118 <X_118>`}, {:ref:`37 <X_37>`, :ref:`38 <X_38>`}, {:ref:`42 <X_42>`, :ref:`244 <X_244>`}, {:ref:`44 <X_44>`, :ref:`748 <X_748>`}, {:ref:`48 <X_48>`, :ref:`584 <X_584>`}, {:ref:`63 <X_63>`, :ref:`1001 <X_1001>`}, {:ref:`81 <X_81>`, :ref:`105 <X_105>`}, {:ref:`142 <X_142>`, 3059}, {:ref:`278 <X_278>`, :ref:`955 <X_955>`}, {:ref:`373 <X_373>`, :ref:`375 <X_375>`}, {:ref:`388 <X_388>`, :ref:`938 <X_938>`}, {:ref:`392 <X_392>`, :ref:`551 <X_551>`}, {:ref:`516 <X_516>`, :ref:`553 <X_553>`}, {:ref:`1418 <X_1418>`, 2293}
+   {:ref:`1 <X_1>`, :ref:`3 <X_3>`}, {:ref:`2 <X_2>`, :ref:`210 <X_210>`}, {:ref:`6 <X_6>`, :ref:`374 <X_374>`}, {:ref:`7 <X_7>`, :ref:`479 <X_479>`}, {:ref:`11 <X_11>`, :ref:`118 <X_118>`}, {:ref:`37 <X_37>`, :ref:`38 <X_38>`}, {:ref:`42 <X_42>`, :ref:`244 <X_244>`}, {:ref:`44 <X_44>`, :ref:`748 <X_748>`}, {:ref:`48 <X_48>`, :ref:`584 <X_584>`}, {:ref:`63 <X_63>`, :ref:`1001 <X_1001>`}, {:ref:`81 <X_81>`, :ref:`105 <X_105>`}, {:ref:`142 <X_142>`, 3059}, {:ref:`278 <X_278>`, :ref:`955 <X_955>`}, {:ref:`373 <X_373>`, :ref:`375 <X_375>`}, {:ref:`388 <X_388>`, :ref:`938 <X_938>`}, {:ref:`392 <X_392>`, :ref:`551 <X_551>`}, {:ref:`516 <X_516>`, :ref:`553 <X_553>`}, {:ref:`1418 <X_1418>`, :ref:`2293 <X_2293>`}
 
 .. collapse:: Functional Relations
    :badge: 24 relations
 
-   * :ref:`X_354 <X_354>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2346
+   * :ref:`X_354 <X_354>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2346 <X_2346>`
    * :ref:`X_354 <X_354>` = :term:`complement <complement>` of X_3681
    * :ref:`X_354 <X_354>` = :term:`anticomplement <anticomplement>` of X_3740
    * :ref:`X_354 <X_354>` = inverse-in-incircle of :ref:`X_1155 <X_1155>`

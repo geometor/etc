@@ -40,7 +40,7 @@ X_1611
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X_1611 <X_1611>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`459 <X_459>`, :ref:`25 <X_25>`), (2207, :ref:`6 <X_6>`)
+   * :ref:`X_1611 <X_1611>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`459 <X_459>`, :ref:`25 <X_25>`), (:ref:`2207 <X_2207>`, :ref:`6 <X_6>`)
    * :ref:`X_1611 <X_1611>` = :term:`crosssum <crosssum>` of :ref:`X_520 <X_520>` and :ref:`X_1084 <X_1084>`
    * :ref:`X_1611 <X_1611>` = center of bicevian conic of PU(4)
 

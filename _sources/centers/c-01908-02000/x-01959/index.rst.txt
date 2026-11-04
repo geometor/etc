@@ -51,7 +51,7 @@ X_1959
    * :ref:`X_1959 <X_1959>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1910 <X_1910>`
    * :ref:`X_1959 <X_1959>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_1821 <X_1821>`
    * :ref:`X_1959 <X_1959>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`2 <X_2>`, 39040), (:ref:`293 <X_293>`, :ref:`1958 <X_1958>`), (:ref:`1934 <X_1934>`, :ref:`38 <X_38>`)
-   * :ref:`X_1959 <X_1959>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`6 <X_6>`, 2065), (:ref:`114 <X_114>`, :ref:`2 <X_2>`), (:ref:`230 <X_230>`, :ref:`98 <X_98>`), (:ref:`1692 <X_1692>`, :ref:`1976 <X_1976>`), (:ref:`1733 <X_1733>`, :ref:`1821 <X_1821>`)
+   * :ref:`X_1959 <X_1959>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`2065 <X_2065>`), (:ref:`114 <X_114>`, :ref:`2 <X_2>`), (:ref:`230 <X_230>`, :ref:`98 <X_98>`), (:ref:`1692 <X_1692>`, :ref:`1976 <X_1976>`), (:ref:`1733 <X_1733>`, :ref:`1821 <X_1821>`)
    * :ref:`X_1959 <X_1959>` = crosspoint of :ref:`X_1 <X_1>` and :ref:`X_1581 <X_1581>`
    * :ref:`X_1959 <X_1959>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`1580 <X_1580>`), 240,1957)
    * :ref:`X_1959 <X_1959>` = polar conjugate of X_36120

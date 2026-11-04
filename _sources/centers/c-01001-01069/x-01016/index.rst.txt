@@ -46,7 +46,7 @@ X_1016
    * :ref:`X_1016 <X_1016>` = :term:`anticomplement <anticomplement>` of X_6547
    * :ref:`X_1016 <X_1016>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`190 <X_190>`), (:ref:`6 <X_6>`, :ref:`100 <X_100>`)
    * :ref:`X_1016 <X_1016>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`99 <X_99>`), (:ref:`2 <X_2>`, :ref:`190 <X_190>`), (:ref:`6 <X_6>`, :ref:`100 <X_100>`)
-   * :ref:`X_1016 <X_1016>` = polar conjugate of X_2969
+   * :ref:`X_1016 <X_1016>` = polar conjugate of :ref:`X_2969 <X_2969>`
    * :ref:`X_1016 <X_1016>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of X_22096
 
 Notes

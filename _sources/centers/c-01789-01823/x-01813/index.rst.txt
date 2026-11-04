@@ -50,7 +50,7 @@ X_1813
    * :ref:`X_1813 <X_1813>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`652 <X_652>`), (:ref:`48 <X_48>`, :ref:`1459 <X_1459>`), (:ref:`905 <X_905>`, :ref:`1214 <X_1214>`)
    * :ref:`X_1813 <X_1813>` = :ref:`X_219 <X_219>`-cross conjugate of :ref:`X_59 <X_59>`
    * :ref:`X_1813 <X_1813>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_3 <X_3>`\ \ :ref:`X_73 <X_73>`
-   * :ref:`X_1813 <X_1813>` = :term:`crossdifference <crossdifference>` of every pair of points on line X_2310X_8735
+   * :ref:`X_1813 <X_1813>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_2310 <X_2310>`\ X_8735
    * :ref:`X_1813 <X_1813>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_663 <X_663>`
 
 .. toctree::

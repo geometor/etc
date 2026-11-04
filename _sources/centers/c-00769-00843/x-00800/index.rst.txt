@@ -42,7 +42,7 @@ X_800
    :badge: 15 lines
    :class: line-catalog
 
-   {:ref:`3 <X_3>`, :ref:`6 <X_6>`}, {:ref:`19 <X_19>`, :ref:`1945 <X_1945>`}, {:ref:`41 <X_41>`, 2197}, {:ref:`53 <X_53>`, :ref:`115 <X_115>`}, {:ref:`232 <X_232>`, :ref:`1196 <X_1196>`}, {:ref:`393 <X_393>`, :ref:`1093 <X_1093>`}, {:ref:`1015 <X_1015>`, 3554}, {:ref:`1033 <X_1033>`, 2207}, {:ref:`1194 <X_1194>`, 5304}, {:ref:`1195 <X_1195>`, :ref:`1409 <X_1409>`}, {:ref:`1500 <X_1500>`, 3553}, {:ref:`1713 <X_1713>`, 2238}, {2257, 2277}, {2331, 5336}, {3289, 3787}
+   {:ref:`3 <X_3>`, :ref:`6 <X_6>`}, {:ref:`19 <X_19>`, :ref:`1945 <X_1945>`}, {:ref:`41 <X_41>`, :ref:`2197 <X_2197>`}, {:ref:`53 <X_53>`, :ref:`115 <X_115>`}, {:ref:`232 <X_232>`, :ref:`1196 <X_1196>`}, {:ref:`393 <X_393>`, :ref:`1093 <X_1093>`}, {:ref:`1015 <X_1015>`, 3554}, {:ref:`1033 <X_1033>`, :ref:`2207 <X_2207>`}, {:ref:`1194 <X_1194>`, 5304}, {:ref:`1195 <X_1195>`, :ref:`1409 <X_1409>`}, {:ref:`1500 <X_1500>`, 3553}, {:ref:`1713 <X_1713>`, :ref:`2238 <X_2238>`}, {:ref:`2257 <X_2257>`, :ref:`2277 <X_2277>`}, {:ref:`2331 <X_2331>`, 5336}, {3289, 3787}
 
 .. collapse:: Functional Relations
    :badge: 8 relations
@@ -51,9 +51,9 @@ X_800
    * :ref:`X_800 <X_800>` = :term:`complement <complement>` of X_14615
    * :ref:`X_800 <X_800>` = crosspoint of X_i and X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`64 <X_64>`), (:ref:`6 <X_6>`, :ref:`393 <X_393>`)
    * :ref:`X_800 <X_800>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`394 <X_394>`), (:ref:`6 <X_6>`, :ref:`20 <X_20>`)
-   * :ref:`X_800 <X_800>` = perspector of circumconic centered at X_2883
-   * :ref:`X_800 <X_800>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through X_2883
-   * :ref:`X_800 <X_800>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of X_2883
+   * :ref:`X_800 <X_800>` = perspector of circumconic centered at :ref:`X_2883 <X_2883>`
+   * :ref:`X_800 <X_800>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X_2883 <X_2883>`
+   * :ref:`X_800 <X_800>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_2883 <X_2883>`
    * :ref:`X_800 <X_800>` = {:ref:`X_3 <X_3>`,\ :ref:`X_6 <X_6>`}-harmonic conjugate of X_5065
 
 .. toctree::

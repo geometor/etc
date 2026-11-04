@@ -57,7 +57,7 @@ X_235
    * :ref:`X_235 <X_235>` = orthic-:term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_185 <X_185>`
    * :ref:`X_235 <X_235>` = :ref:`X_56 <X_56>` of :term:`orthic triangle <orthic-triangle>` if :g:`ABC << A B C >>` is acute
    * :ref:`X_235 <X_235>` = insimilicenter of nine-point circle and incircle of orthic triangle if :g:`ABC << A B C >>` is acute; the exsimilicenter is :ref:`X_427 <X_427>`
-   * :ref:`X_235 <X_235>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_801 <X_801>` (line :ref:`X_523 <X_523>`\ X_2071)
+   * :ref:`X_235 <X_235>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_801 <X_801>` (line :ref:`X_523 <X_523>`\ \ :ref:`X_2071 <X_2071>`)
    * :ref:`X_235 <X_235>` = :ref:`X_48 <X_48>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X_801 <X_801>`
    * :ref:`X_235 <X_235>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and 2nd Hyacinth triangle
    * :ref:`X_235 <X_235>` = radical center of the polar-circle-inverses of the power circles

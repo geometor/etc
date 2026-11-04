@@ -58,7 +58,7 @@ X_570
    * :ref:`X_570 <X_570>` = polar conjugate of :term:`isogonal conjugate <isogonal-conjugate>` of X_23195
    * :ref:`X_570 <X_570>` = polar conjugate of :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_1216 <X_1216>`
    * :ref:`X_570 <X_570>` = :ref:`X_63 <X_63>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_1179 <X_1179>`
-   * :ref:`X_570 <X_570>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_523 <X_523>`\ X_2070 (the polar of :ref:`X_5 <X_5>` wrt the circumcircle)
+   * :ref:`X_570 <X_570>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_523 <X_523>`\ \ :ref:`X_2070 <X_2070>` (the polar of :ref:`X_5 <X_5>` wrt the circumcircle)
 
 .. toctree::
    :hidden:

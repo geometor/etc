@@ -47,7 +47,7 @@ X_1299
    * :ref:`X_1299 <X_1299>` = reflection of :ref:`X_4 <X_4>` in :ref:`X_135 <X_135>`
    * :ref:`X_1299 <X_1299>` = Λ(:ref:`X_4 <X_4>`, :ref:`X_155 <X_155>`)
    * :ref:`X_1299 <X_1299>` = the point of intersection, other than :g:`A <A>`, :g:`B <B>`, and :g:`C <C>`, of the circumcircle and hyperbola {{:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_4 <X_4>`,\ :ref:`X_24 <X_24>`}} (circumconic centered at :ref:`X_135 <X_135>`)
-   * :ref:`X_1299 <X_1299>` = :term:`isogonal conjugate <isogonal-conjugate>` of :term:`crosspoint <crosspoint>` of :ref:`X_155 <X_155>` and X_2931 wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
+   * :ref:`X_1299 <X_1299>` = :term:`isogonal conjugate <isogonal-conjugate>` of :term:`crosspoint <crosspoint>` of :ref:`X_155 <X_155>` and :ref:`X_2931 <X_2931>` wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
    * :ref:`X_1299 <X_1299>` = inverse-in-polar-circle of :ref:`X_131 <X_131>`
 
 .. toctree::

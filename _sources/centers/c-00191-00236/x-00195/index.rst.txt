@@ -45,7 +45,7 @@ X_195
    :badge: 12 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, 3467}, {:ref:`3 <X_3>`, :ref:`54 <X_54>`}, {:ref:`4 <X_4>`, :ref:`399 <X_399>`}, {:ref:`5 <X_5>`, 3459}, {:ref:`6 <X_6>`, :ref:`17 <X_17>`}, {:ref:`49 <X_49>`, :ref:`52 <X_52>`}, {:ref:`110 <X_110>`, :ref:`143 <X_143>`}, {:ref:`140 <X_140>`, :ref:`323 <X_323>`}, {:ref:`155 <X_155>`, :ref:`381 <X_381>`}, {:ref:`382 <X_382>`, :ref:`1498 <X_1498>`}, {2121, 3462}, {3461, 3468}
+   {:ref:`1 <X_1>`, 3467}, {:ref:`3 <X_3>`, :ref:`54 <X_54>`}, {:ref:`4 <X_4>`, :ref:`399 <X_399>`}, {:ref:`5 <X_5>`, 3459}, {:ref:`6 <X_6>`, :ref:`17 <X_17>`}, {:ref:`49 <X_49>`, :ref:`52 <X_52>`}, {:ref:`110 <X_110>`, :ref:`143 <X_143>`}, {:ref:`140 <X_140>`, :ref:`323 <X_323>`}, {:ref:`155 <X_155>`, :ref:`381 <X_381>`}, {:ref:`382 <X_382>`, :ref:`1498 <X_1498>`}, {:ref:`2121 <X_2121>`, 3462}, {3461, 3468}
 
 .. collapse:: Functional Relations
    :badge: 12 relations
@@ -58,7 +58,7 @@ X_195
    * :ref:`X_195 <X_195>` = :term:`crosssum <crosssum>` of :ref:`X_137 <X_137>` and :ref:`X_523 <X_523>`
    * :ref:`X_195 <X_195>` = :ref:`X_3 <X_3>`-of-reflection-triangle
    * :ref:`X_195 <X_195>` = :ref:`X_79 <X_79>`-of-tangential-triangle if :g:`ABC << A B C >>` is acute
-   * :ref:`X_195 <X_195>` = tangential isogonal conjugate of X_2937
+   * :ref:`X_195 <X_195>` = tangential isogonal conjugate of :ref:`X_2937 <X_2937>`
    * :ref:`X_195 <X_195>` = 2nd isogonal perspector of :ref:`X_5 <X_5>`; see :ref:`X_36 <X_36>`
    * :ref:`X_195 <X_195>` = Yiu-isogonal conjugate of :ref:`X_1157 <X_1157>`
    * :ref:`X_195 <X_195>` = perspector of [cross-triangle of :g:`ABC << A B C >>` and :term:`outer Napoleon triangle <outer-napoleon-triangle>`] and [cross-triangle of :g:`ABC << A B C >>` and inner-Napoleon triangle]

@@ -50,7 +50,7 @@ X_93
    * :ref:`X_93 <X_93>` = :term:`anticomplement <anticomplement>` of X_34833
    * :ref:`X_93 <X_93>` = :ref:`X_50 <X_50>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_94 <X_94>`
    * :ref:`X_93 <X_93>` = polar conjugate of :ref:`X_1994 <X_1994>`
-   * :ref:`X_93 <X_93>` = X_2964-:term:`isoconjugate <isoconjugate>` of :ref:`X_3 <X_3>`
+   * :ref:`X_93 <X_93>` = :ref:`X_2964 <X_2964>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_3 <X_3>`
 
 Notes
 -----

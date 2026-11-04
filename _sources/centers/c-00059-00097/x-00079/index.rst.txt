@@ -60,7 +60,7 @@ X_79
    * :ref:`X_79 <X_79>` = :term:`cevapoint <cevapoint>` of :ref:`X_481 <X_481>` and :ref:`X_482 <X_482>`
    * :ref:`X_79 <X_79>` = :term:`crosssum <crosssum>` of :ref:`X_55 <X_55>` and :ref:`X_1030 <X_1030>`
    * :ref:`X_79 <X_79>` = :term:`anticomplement <anticomplement>` of X_3647
-   * :ref:`X_79 <X_79>` = X_2914 of :term:`Fuhrmann triangle <fuhrmann-triangle>`
+   * :ref:`X_79 <X_79>` = :ref:`X_2914 <X_2914>` of :term:`Fuhrmann triangle <fuhrmann-triangle>`
    * :ref:`X_79 <X_79>` = :term:`antigonal image <antigonal-image>` of X_3065
    * :ref:`X_79 <X_79>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_650 <X_650>`\ X_4802
    * :ref:`X_79 <X_79>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X_80 <X_80>`

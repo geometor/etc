@@ -43,7 +43,7 @@ X_314
 
    * :ref:`X_314 <X_314>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1402 <X_1402>`
    * :ref:`X_314 <X_314>` = isotomic conjugate of :ref:`X_65 <X_65>`
-   * :ref:`X_314 <X_314>` = :term:`anticomplement <anticomplement>` of X_2092
+   * :ref:`X_314 <X_314>` = :term:`anticomplement <anticomplement>` of :ref:`X_2092 <X_2092>`
    * :ref:`X_314 <X_314>` = :ref:`X_310 <X_310>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_274 <X_274>`
    * :ref:`X_314 <X_314>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`8 <X_8>`, :ref:`312 <X_312>`), (:ref:`69 <X_69>`, :ref:`75 <X_75>`)
    * :ref:`X_314 <X_314>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`8 <X_8>`, :ref:`333 <X_333>`), (:ref:`69 <X_69>`, :ref:`332 <X_332>`), (:ref:`333 <X_333>`, :ref:`274 <X_274>`), (:ref:`497 <X_497>`, :ref:`29 <X_29>`)

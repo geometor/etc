@@ -54,9 +54,9 @@ X_343
    * :ref:`X_343 <X_343>` = :ref:`X_216 <X_216>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_5 <X_5>`
    * :ref:`X_343 <X_343>` = :term:`crosspoint <crosspoint>` of :ref:`X_69 <X_69>` and :ref:`X_76 <X_76>`
    * :ref:`X_343 <X_343>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`571 <X_571>`), (:ref:`25 <X_25>`, :ref:`32 <X_32>`)
-   * :ref:`X_343 <X_343>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X_8884 (line :ref:`X_421 <X_421>`\ X_2501)
+   * :ref:`X_343 <X_343>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X_8884 (line :ref:`X_421 <X_421>`\ \ :ref:`X_2501 <X_2501>`)
    * :ref:`X_343 <X_343>` = polar conjugate of X_8884
-   * :ref:`X_343 <X_343>` = crosspoint of :ref:`X_6 <X_6>` and X_2917 wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
+   * :ref:`X_343 <X_343>` = crosspoint of :ref:`X_6 <X_6>` and :ref:`X_2917 <X_2917>` wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
    * :ref:`X_343 <X_343>` = X_7580-of-orthic-triangle if :g:`ABC << A B C >>` is acute
 
 Notes

@@ -23,8 +23,8 @@ X_1346
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`)
-   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`)
+   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`), :g:`{56, 2464} <{ 56, 2464 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_56 <X_56>` (:ref:`EXSIMILICENTER <X_56>`), :g:`X_2464 <X_2464>` (:ref:`EXSIMILICENTER <X_2464>`)
 
 .. signature:: center
 
@@ -41,7 +41,7 @@ X_1346
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`56 <X_56>`, 2464}
+   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`56 <X_56>`, :ref:`2464 <X_2464>`}
 
 .. collapse:: Functional Relations
    :badge: 1 relation

@@ -57,7 +57,7 @@ X_811
    * :ref:`X_811 <X_811>` = polar conjugate of :ref:`X_661 <X_661>`
    * :ref:`X_811 <X_811>` = perspector of :g:`ABC << A B C >>` and :term:`tangential triangle <tangential-triangle>`, wrt :term:`anticevian triangle <anticevian-triangle>` of :ref:`X_19 <X_19>`, of bianticevian conic of :ref:`X_1 <X_1>` and :ref:`X_4 <X_4>`
    * :ref:`X_811 <X_811>` = trilinear product :ref:`X_4 <X_4>`\ \*\ :ref:`X_99 <X_99>`
-   * :ref:`X_811 <X_811>` = trilinear product X_2479\*X_2480
+   * :ref:`X_811 <X_811>` = trilinear product :ref:`X_2479 <X_2479>`\ \*\ :ref:`X_2480 <X_2480>`
 
 Notes
 -----

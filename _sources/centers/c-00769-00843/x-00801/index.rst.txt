@@ -44,7 +44,7 @@ X_801
    * :ref:`X_801 <X_801>` = isogonal conjugate of :ref:`X_800 <X_800>`
    * :ref:`X_801 <X_801>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_13567
    * :ref:`X_801 <X_801>` = polar conjugate of :ref:`X_235 <X_235>`
-   * :ref:`X_801 <X_801>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_523 <X_523>`\ X_2071 (the polar of :ref:`X_20 <X_20>` wrt circumcircle)
+   * :ref:`X_801 <X_801>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_523 <X_523>`\ \ :ref:`X_2071 <X_2071>` (the polar of :ref:`X_20 <X_20>` wrt circumcircle)
    * :ref:`X_801 <X_801>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`394 <X_394>`), (:ref:`6 <X_6>`, :ref:`20 <X_20>`)
    * :ref:`X_801 <X_801>` = :ref:`X_520 <X_520>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_99 <X_99>`
 

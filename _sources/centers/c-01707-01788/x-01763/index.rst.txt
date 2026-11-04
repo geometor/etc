@@ -49,7 +49,7 @@ X_1763
    * :ref:`X_1763 <X_1763>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_7097
    * :ref:`X_1763 <X_1763>` = :term:`isotomic conjugate <isotomic-conjugate>` of polar conjugate of X_36103
    * :ref:`X_1763 <X_1763>` = :term:`anticomplement <anticomplement>` of X_36850
-   * :ref:`X_1763 <X_1763>` = :term:`crossdifference <crossdifference>` of every pair of points on line X_2522X_3900
+   * :ref:`X_1763 <X_1763>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_2522 <X_2522>`\ X_3900
    * :ref:`X_1763 <X_1763>` = :ref:`X_69 <X_69>`-Ceva conjugate of :ref:`X_1 <X_1>`
    * :ref:`X_1763 <X_1763>` = X_i-:term:`aleph conjugate <aleph-conjugate>` of X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`1716 <X_1716>`), (:ref:`2 <X_2>`, :ref:`46 <X_46>`), (:ref:`63 <X_63>`, :ref:`1745 <X_1745>`), (:ref:`69 <X_69>`, :ref:`1763 <X_1763>`), (:ref:`75 <X_75>`, :ref:`1726 <X_1726>`), (:ref:`174 <X_174>`, :ref:`1722 <X_1722>`), (:ref:`188 <X_188>`, :ref:`1721 <X_1721>`), (:ref:`366 <X_366>`, :ref:`1707 <X_1707>`), (:ref:`508 <X_508>`, :ref:`1723 <X_1723>`), (:ref:`556 <X_556>`, :ref:`1158 <X_1158>`), (:ref:`664 <X_664>`, :ref:`1020 <X_1020>`)
 

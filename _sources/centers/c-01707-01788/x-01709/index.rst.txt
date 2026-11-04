@@ -44,7 +44,7 @@ X_1709
    * :ref:`X_1709 <X_1709>` = reflection of :ref:`X_1 <X_1>` in :ref:`X_1012 <X_1012>`
    * :ref:`X_1709 <X_1709>` = :ref:`X_281 <X_281>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_1 <X_1>`
    * :ref:`X_1709 <X_1709>` = X_i-:term:`aleph conjugate <aleph-conjugate>` of X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`1723 <X_1723>`), (:ref:`92 <X_92>`, :ref:`1729 <X_1729>`), (:ref:`188 <X_188>`, :ref:`610 <X_610>`), (:ref:`281 <X_281>`, :ref:`1709 <X_1709>`), (:ref:`366 <X_366>`, :ref:`223 <X_223>`)
-   * :ref:`X_1709 <X_1709>` = excentral-:term:`isotomic conjugate <isotomic-conjugate>` of X_2947
+   * :ref:`X_1709 <X_1709>` = excentral-:term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_2947 <X_2947>`
    * :ref:`X_1709 <X_1709>` = antipode of :ref:`X_1 <X_1>` in circle {{:ref:`X_1 <X_1>`,\ :ref:`X_1709 <X_1709>`,PU(4)}}
 
 .. toctree::

@@ -44,7 +44,7 @@ X_1369
 
    * :ref:`X_1369 <X_1369>` = anticomplement of :ref:`X_251 <X_251>`
    * :ref:`X_1369 <X_1369>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X_6 <X_6>`
-   * :ref:`X_1369 <X_1369>` = :term:`isotomic conjugate <isotomic-conjugate>` of :term:`isogonal conjugate <isogonal-conjugate>` of X_2916
+   * :ref:`X_1369 <X_1369>` = :term:`isotomic conjugate <isotomic-conjugate>` of :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2916 <X_2916>`
    * :ref:`X_1369 <X_1369>` = isotomic conjugate of :term:`cyclocevian conjugate <cyclocevian-conjugate>` of :ref:`X_76 <X_76>`
    * :ref:`X_1369 <X_1369>` = polar conjugate of isogonal conjugate of X_23133
 

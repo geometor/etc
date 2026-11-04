@@ -53,7 +53,7 @@ X_114
 
    * :ref:`X_114 <X_114>` = midpoint of X_i and X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`99 <X_99>`), (:ref:`98 <X_98>`, :ref:`147 <X_147>`)
    * :ref:`X_114 <X_114>` = reflection of X_i in X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`620 <X_620>`), (:ref:`115 <X_115>`, :ref:`5 <X_5>`)
-   * :ref:`X_114 <X_114>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2065
+   * :ref:`X_114 <X_114>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2065 <X_2065>`
    * :ref:`X_114 <X_114>` = :term:`complement <complement>` of :ref:`X_98 <X_98>`
    * :ref:`X_114 <X_114>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X_511 <X_511>`
    * :ref:`X_114 <X_114>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`230 <X_230>`), (:ref:`4 <X_4>`, :ref:`511 <X_511>`)

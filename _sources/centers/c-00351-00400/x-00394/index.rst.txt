@@ -50,7 +50,7 @@ X_394
    :badge: 17 relations
 
    * :ref:`X_394 <X_394>` = isogonal conjugate of :ref:`X_393 <X_393>`
-   * :ref:`X_394 <X_394>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_2052
+   * :ref:`X_394 <X_394>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_2052 <X_2052>`
    * :ref:`X_394 <X_394>` = :term:`complement <complement>` of X_6515
    * :ref:`X_394 <X_394>` = :term:`crosssum <crosssum>` of X_5412 and X_5413
    * :ref:`X_394 <X_394>` = :term:`crosspoint <crosspoint>` of :ref:`X_6 <X_6>` and :ref:`X_1498 <X_1498>` wrt both the excentral and :term:`tangential triangles <tangential-triangle>`

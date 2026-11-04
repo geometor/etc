@@ -43,7 +43,7 @@ X_878
    * :ref:`X_878 <X_878>` = isogonal conjugate of :ref:`X_877 <X_877>`
    * :ref:`X_878 <X_878>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_232 <X_232>`\ \ :ref:`X_297 <X_297>`
    * :ref:`X_878 <X_878>` = intersection of lines PU(37) and PU(39)
-   * :ref:`X_878 <X_878>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of X_2421
+   * :ref:`X_878 <X_878>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_2421 <X_2421>`
 
 .. toctree::
    :hidden:

@@ -64,8 +64,8 @@ X_933
 
    * :ref:`X_933 <X_933>` = :ref:`X_4 <X_4>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_250 <X_250>`
    * :ref:`X_933 <X_933>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_6368
-   * :ref:`X_933 <X_933>` = Λ(:ref:`X_684 <X_684>`, X_2525); line :ref:`X_684 <X_684>`\ X_2525 is the :term:`isotomic conjugate <isotomic-conjugate>`, wrt the MacBeath triangle, of the MacBeath inconic)
-   * :ref:`X_933 <X_933>` = Λ(X_2081, X_2600) (line X_2081X_2600 is the :term:`trilinear polar <trilinear-polar>` of :ref:`X_5 <X_5>`)
+   * :ref:`X_933 <X_933>` = Λ(:ref:`X_684 <X_684>`, :ref:`X_2525 <X_2525>`); line :ref:`X_684 <X_684>`\ \ :ref:`X_2525 <X_2525>` is the :term:`isotomic conjugate <isotomic-conjugate>`, wrt the MacBeath triangle, of the MacBeath inconic)
+   * :ref:`X_933 <X_933>` = Λ(:ref:`X_2081 <X_2081>`, :ref:`X_2600 <X_2600>`) (line :ref:`X_2081 <X_2081>`\ \ :ref:`X_2600 <X_2600>` is the :term:`trilinear polar <trilinear-polar>` of :ref:`X_5 <X_5>`)
    * :ref:`X_933 <X_933>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_6 <X_6>`\ \ :ref:`X_24 <X_24>`
    * :ref:`X_933 <X_933>` = concurrence of reflections of line :ref:`X_4 <X_4>`\ \ :ref:`X_54 <X_54>` in sides of :g:`ABC << A B C >>`
    * :ref:`X_933 <X_933>` = Ψ(XI),X_j) for these (i,j): (:ref:`3 <X_3>`, :ref:`54 <X_54>`), (:ref:`4 <X_4>`, :ref:`54 <X_54>`), (:ref:`5 <X_5>`, :ref:`2 <X_2>`), (:ref:`6 <X_6>`, :ref:`24 <X_24>`), (:ref:`69 <X_69>`, :ref:`54 <X_54>`)

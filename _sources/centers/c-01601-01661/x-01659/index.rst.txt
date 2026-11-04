@@ -41,7 +41,7 @@ X_1659
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X_1659 <X_1659>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2066
+   * :ref:`X_1659 <X_1659>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2066 <X_2066>`
    * :ref:`X_1659 <X_1659>` = :ref:`X_482 <X_482>`-cross conjugate of :ref:`X_7 <X_7>`
    * :ref:`X_1659 <X_1659>` = :term:`crosssum <crosssum>` of :ref:`X_48 <X_48>` and :ref:`X_605 <X_605>`
 

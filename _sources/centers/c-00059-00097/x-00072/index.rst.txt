@@ -70,7 +70,7 @@ X_72
    * :ref:`X_72 <X_72>` = :term:`complement <complement>` of X_3868
    * :ref:`X_72 <X_72>` = :ref:`X_149 <X_149>` of :ref:`X_1 <X_1>`-Brocard triangle
    * :ref:`X_72 <X_72>` = :ref:`X_6 <X_6>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_27 <X_27>`
-   * :ref:`X_72 <X_72>` = :ref:`X_75 <X_75>`-isoconjugate of X_2203
+   * :ref:`X_72 <X_72>` = :ref:`X_75 <X_75>`-isoconjugate of :ref:`X_2203 <X_2203>`
    * :ref:`X_72 <X_72>` = :ref:`X_92 <X_92>`-isoconjugate of :ref:`X_1333 <X_1333>`
    * :ref:`X_72 <X_72>` = inverse-in-Fuhrmann-circle of X_3419
    * :ref:`X_72 <X_72>` = X_6146-of-excentral-triangle

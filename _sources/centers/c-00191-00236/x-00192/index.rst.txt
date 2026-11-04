@@ -42,7 +42,7 @@ X_192
    :badge: 16 relations
 
    * :ref:`X_192 <X_192>` = reflection of X_i in X_j for these (i,j): (:ref:`8 <X_8>`, :ref:`984 <X_984>`), (:ref:`75 <X_75>`, :ref:`37 <X_37>`), (:ref:`1278 <X_1278>`, :ref:`75 <X_75>`)
-   * :ref:`X_192 <X_192>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2162
+   * :ref:`X_192 <X_192>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2162 <X_2162>`
    * :ref:`X_192 <X_192>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_330 <X_330>`
    * :ref:`X_192 <X_192>` = :term:`complement <complement>` of :ref:`X_1278 <X_1278>`
    * :ref:`X_192 <X_192>` = anticomplement of :ref:`X_75 <X_75>`

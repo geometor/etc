@@ -56,7 +56,7 @@ X_842
    * :ref:`X_842 <X_842>` = 2nd-Parry-to-:g:`ABC << A B C >>` :term:`similarity image <similarity-image>` of :ref:`X_23 <X_23>`
    * :ref:`X_842 <X_842>` = 3rd-Parry-to-circumsymmedial similarity image of :ref:`X_110 <X_110>`
    * :ref:`X_842 <X_842>` = X_10787-of-McCay-triangle
-   * :ref:`X_842 <X_842>` = X_2709-of-circumsymmedial-triangle
+   * :ref:`X_842 <X_842>` = :ref:`X_2709 <X_2709>`-of-circumsymmedial-triangle
    * :ref:`X_842 <X_842>` = Cundy-Parry Phi transform of X_14246
    * :ref:`X_842 <X_842>` = Cundy-Parry Psi transform of X_14357
    * :ref:`X_842 <X_842>` = trilinear pole, wrt Thomson triangle, of line :ref:`X_110 <X_110>`\ X_5085

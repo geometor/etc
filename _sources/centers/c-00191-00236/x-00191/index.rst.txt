@@ -58,7 +58,7 @@ X_191
    * :ref:`X_191 <X_191>` = excentral-isogonal conjugate of :ref:`X_3 <X_3>`
    * :ref:`X_191 <X_191>` = X_i-:term:`aleph conjugate <aleph-conjugate>` of X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`2 <X_2>`), (:ref:`8 <X_8>`, :ref:`20 <X_20>`), (:ref:`10 <X_10>`, :ref:`191 <X_191>`), (:ref:`37 <X_37>`, :ref:`1045 <X_1045>`), (:ref:`188 <X_188>`, :ref:`3 <X_3>`), (:ref:`366 <X_366>`, :ref:`6 <X_6>`)
    * :ref:`X_191 <X_191>` = :ref:`X_643 <X_643>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X_191 <X_191>`
-   * :ref:`X_191 <X_191>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_661 <X_661>`\ X_2605
+   * :ref:`X_191 <X_191>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_661 <X_661>`\ \ :ref:`X_2605 <X_2605>`
    * :ref:`X_191 <X_191>` = :ref:`X_54 <X_54>`-of-excentral-triangle
    * :ref:`X_191 <X_191>` = perspector of :term:`excentral triangle <excentral-triangle>` and :term:`Fuhrmann triangle <fuhrmann-triangle>`
    * :ref:`X_191 <X_191>` = intersection of Euler lines of outer and inner Garcia triangles

@@ -72,7 +72,7 @@ X_58
    * :ref:`X_58 <X_58>` = barycentric product of PU(31)
    * :ref:`X_58 <X_58>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_649 <X_649>`\ \ :ref:`X_834 <X_834>`
    * :ref:`X_58 <X_58>` = {:ref:`X_1 <X_1>`,\ :ref:`X_31 <X_31>`}-harmonic conjugate of :ref:`X_595 <X_595>`
-   * :ref:`X_58 <X_58>` = {:ref:`X_21 <X_21>`,\ :ref:`X_283 <X_283>`}-harmonic conjugate of X_2328
+   * :ref:`X_58 <X_58>` = {:ref:`X_21 <X_21>`,\ :ref:`X_283 <X_283>`}-harmonic conjugate of :ref:`X_2328 <X_2328>`
    * :ref:`X_58 <X_58>` = :ref:`X_42 <X_42>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_75 <X_75>`
    * :ref:`X_58 <X_58>` = :ref:`X_71 <X_71>`-isoconjugate of :ref:`X_92 <X_92>`
    * :ref:`X_58 <X_58>` = :ref:`X_101 <X_101>`-isoconjugate of :ref:`X_1577 <X_1577>`

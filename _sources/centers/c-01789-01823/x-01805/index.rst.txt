@@ -47,7 +47,7 @@ X_1805
    :badge: 3 relations
 
    * :ref:`X_1805 <X_1805>` = :ref:`X_21 <X_21>`-Ceva conjugate of :ref:`X_1806 <X_1806>`
-   * :ref:`X_1805 <X_1805>` = {:ref:`X_3 <X_3>`,X_2193}-harmonic conjugate of :ref:`X_1806 <X_1806>`
+   * :ref:`X_1805 <X_1805>` = {:ref:`X_3 <X_3>`,\ :ref:`X_2193 <X_2193>`}-harmonic conjugate of :ref:`X_1806 <X_1806>`
    * :ref:`X_1805 <X_1805>` = :ref:`X_1437 <X_1437>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_1806 <X_1806>`
 
 .. toctree::

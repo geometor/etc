@@ -46,7 +46,7 @@ X_1758
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X_1758 <X_1758>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2648
+   * :ref:`X_1758 <X_1758>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2648 <X_2648>`
    * :ref:`X_1758 <X_1758>` = :ref:`X_1937 <X_1937>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_1 <X_1>`
    * :ref:`X_1758 <X_1758>` = :ref:`X_1937 <X_1937>`-:term:`aleph conjugate <aleph-conjugate>` of :ref:`X_1758 <X_1758>`
    * :ref:`X_1758 <X_1758>` = crossdifference of PU(80)

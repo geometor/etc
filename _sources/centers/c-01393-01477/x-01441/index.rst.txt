@@ -46,7 +46,7 @@ X_1441
 .. collapse:: Functional Relations
    :badge: 9 relations
 
-   * :ref:`X_1441 <X_1441>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2194
+   * :ref:`X_1441 <X_1441>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2194 <X_2194>`
    * :ref:`X_1441 <X_1441>` = isotomic conjugate of :ref:`X_21 <X_21>`
    * :ref:`X_1441 <X_1441>` = :term:`complement <complement>` of polar conjugate of isogonal conjugate of X_23171
    * :ref:`X_1441 <X_1441>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`75 <X_75>`, :ref:`307 <X_307>`), (:ref:`85 <X_85>`, :ref:`226 <X_226>`), (:ref:`349 <X_349>`, :ref:`321 <X_321>`), (:ref:`664 <X_664>`, :ref:`693 <X_693>`)

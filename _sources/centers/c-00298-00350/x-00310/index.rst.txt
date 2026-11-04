@@ -46,7 +46,7 @@ X_310
    * :ref:`X_310 <X_310>` = :term:`complement <complement>` of polar conjugate of isogonal conjugate of X_23176
    * :ref:`X_310 <X_310>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`75 <X_75>`, :ref:`76 <X_76>`), (:ref:`274 <X_274>`, :ref:`314 <X_314>`)
    * :ref:`X_310 <X_310>` = :ref:`X_75 <X_75>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_274 <X_274>`
-   * :ref:`X_310 <X_310>` = polar conjugate of X_2333
+   * :ref:`X_310 <X_310>` = polar conjugate of :ref:`X_2333 <X_2333>`
    * :ref:`X_310 <X_310>` = trilinear product of vertices of Gemini triangle 23
    * :ref:`X_310 <X_310>` = trilinear product of vertices of Gemini triangle 24
    * :ref:`X_310 <X_310>` = trilinear product of vertices of Gemini triangle 25

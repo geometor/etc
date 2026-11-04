@@ -49,7 +49,7 @@ X_349
    * :ref:`X_349 <X_349>` = isotomic conjugate of :ref:`X_284 <X_284>`
    * :ref:`X_349 <X_349>` = :term:`cevapoint <cevapoint>` of :ref:`X_226 <X_226>` and :ref:`X_307 <X_307>`
    * :ref:`X_349 <X_349>` = :ref:`X_321 <X_321>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_313 <X_313>`
-   * :ref:`X_349 <X_349>` = polar conjugate of X_2299
+   * :ref:`X_349 <X_349>` = polar conjugate of :ref:`X_2299 <X_2299>`
 
 .. toctree::
    :hidden:

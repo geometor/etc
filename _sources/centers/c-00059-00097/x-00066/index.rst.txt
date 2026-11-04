@@ -41,19 +41,19 @@ X_66
 .. collapse:: Functional Relations
    :badge: 16 relations
 
-   * :ref:`X_66 <X_66>` = midpoint of X_2892 and X_3448
+   * :ref:`X_66 <X_66>` = midpoint of :ref:`X_2892 <X_2892>` and X_3448
    * :ref:`X_66 <X_66>` = reflection of X_i in X_j for these (i,j): (:ref:`159 <X_159>`, :ref:`141 <X_141>`), (:ref:`1177 <X_1177>`, :ref:`125 <X_125>`)
    * :ref:`X_66 <X_66>` = isogonal conjugate of :ref:`X_22 <X_22>`
    * :ref:`X_66 <X_66>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_315 <X_315>`
    * :ref:`X_66 <X_66>` = :term:`complement <complement>` of X_5596
    * :ref:`X_66 <X_66>` = :term:`anticomplement <anticomplement>` of :ref:`X_206 <X_206>`
-   * :ref:`X_66 <X_66>` = :term:`cyclocevian conjugate <cyclocevian-conjugate>` of X_2998
+   * :ref:`X_66 <X_66>` = :term:`cyclocevian conjugate <cyclocevian-conjugate>` of :ref:`X_2998 <X_2998>`
    * :ref:`X_66 <X_66>` = :term:`cevapoint <cevapoint>` of :ref:`X_125 <X_125>` and :ref:`X_512 <X_512>`
    * :ref:`X_66 <X_66>` = :ref:`X_32 <X_32>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_2 <X_2>`
    * :ref:`X_66 <X_66>` = :term:`crosssum <crosssum>` of :ref:`X_3 <X_3>` and :ref:`X_159 <X_159>`
    * :ref:`X_66 <X_66>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_647 <X_647>`\ \ :ref:`X_826 <X_826>` (radical axis of Brocard and polar circles)
    * :ref:`X_66 <X_66>` = :term:`antigonal image <antigonal-image>` of :ref:`X_1177 <X_1177>`
-   * :ref:`X_66 <X_66>` = orthocenter of :ref:`X_3 <X_3>`\ \ :ref:`X_4 <X_4>`\ X_2435
+   * :ref:`X_66 <X_66>` = orthocenter of :ref:`X_3 <X_3>`\ \ :ref:`X_4 <X_4>`\ \ :ref:`X_2435 <X_2435>`
    * :ref:`X_66 <X_66>` = X_3174-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X_66 <X_66>` = polar conjugate of isotomic conjugate of X_14376
    * :ref:`X_66 <X_66>` = :ref:`X_63 <X_63>`-:term:`isoconjugate <isoconjugate>` of X_8743

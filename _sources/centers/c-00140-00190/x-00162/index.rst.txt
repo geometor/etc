@@ -60,7 +60,7 @@ X_162
    * :ref:`X_162 <X_162>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_1 <X_1>`\ \ :ref:`X_19 <X_19>`
    * :ref:`X_162 <X_162>` = trilinear product of :ref:`X_1113 <X_1113>` and :ref:`X_1114 <X_1114>`
    * :ref:`X_162 <X_162>` = :term:`crossdifference <crossdifference>` of PU(75)
-   * :ref:`X_162 <X_162>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_1577 <X_1577>` (line :ref:`X_1109 <X_1109>`\ X_2632)
+   * :ref:`X_162 <X_162>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_1577 <X_1577>` (line :ref:`X_1109 <X_1109>`\ \ :ref:`X_2632 <X_2632>`)
    * :ref:`X_162 <X_162>` = :ref:`X_48 <X_48>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X_1577 <X_1577>`
    * :ref:`X_162 <X_162>` = :ref:`X_92 <X_92>`-isoconjugate of :ref:`X_822 <X_822>`
    * :ref:`X_162 <X_162>` = :ref:`X_6 <X_6>`-isoconjugate of :ref:`X_525 <X_525>`

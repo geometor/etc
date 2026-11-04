@@ -52,7 +52,7 @@ X_1294
    * :ref:`X_1294 <X_1294>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_6000
    * :ref:`X_1294 <X_1294>` = :term:`anticomplement <anticomplement>` of :ref:`X_133 <X_133>`
    * :ref:`X_1294 <X_1294>` = Λ(:ref:`X_74 <X_74>`, :ref:`X_186 <X_186>`)
-   * :ref:`X_1294 <X_1294>` = Λ(:ref:`X_5 <X_5>`, X_2883)
+   * :ref:`X_1294 <X_1294>` = Λ(:ref:`X_5 <X_5>`, :ref:`X_2883 <X_2883>`)
    * :ref:`X_1294 <X_1294>` = :ref:`X_134 <X_134>`-of-hexyl-triangle
    * :ref:`X_1294 <X_1294>` = :term:`eigencenter <eigencenter>` of circumanticevian triangle of :ref:`X_4 <X_4>`
    * :ref:`X_1294 <X_1294>` = Cundy-Parry Phi transform of X_14249

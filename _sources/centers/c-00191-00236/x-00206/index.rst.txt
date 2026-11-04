@@ -52,7 +52,7 @@ X_206
    * :ref:`X_206 <X_206>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X_427 <X_427>`
    * :ref:`X_206 <X_206>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_32 <X_32>`
    * :ref:`X_206 <X_206>` = :term:`crosspoint <crosspoint>` of :ref:`X_2 <X_2>` and :ref:`X_315 <X_315>`
-   * :ref:`X_206 <X_206>` = :term:`crosssum <crosssum>` of X_i and X_j for these {i,j}: {:ref:`2 <X_2>`, 7391}, {:ref:`6 <X_6>`, 2353}, {:ref:`66 <X_66>`, 14376}, {:ref:`339 <X_339>`, :ref:`523 <X_523>`}, {:ref:`826 <X_826>`, 15526}, {13854, 17407}
+   * :ref:`X_206 <X_206>` = :term:`crosssum <crosssum>` of X_i and X_j for these {i,j}: {:ref:`2 <X_2>`, 7391}, {:ref:`6 <X_6>`, :ref:`2353 <X_2353>`}, {:ref:`66 <X_66>`, 14376}, {:ref:`339 <X_339>`, :ref:`523 <X_523>`}, {:ref:`826 <X_826>`, 15526}, {13854, 17407}
    * :ref:`X_206 <X_206>` = :ref:`X_66 <X_66>`-of-:term:`medial triangle <medial-triangle>`
    * :ref:`X_206 <X_206>` = perspector of circumconic centered at :ref:`X_32 <X_32>`
    * :ref:`X_206 <X_206>` = isogonal conjugate of the isotomic conjugate of :ref:`X_22 <X_22>`
@@ -61,7 +61,7 @@ X_206
    * :ref:`X_206 <X_206>` = crosssum of circumcircle intercepts of de Longchamps line
    * :ref:`X_206 <X_206>` = polar conjugate of isogonal conjugate of X_22075
    * :ref:`X_206 <X_206>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X_32 <X_32>`; this conic is the isogonal conjugate of the de Longchamps line
-   * :ref:`X_206 <X_206>` = trilinear product X_i\*X_j for these {i,j}: {:ref:`2 <X_2>`, 17453}, {:ref:`6 <X_6>`, 2172}, {:ref:`9 <X_9>`, 7251}, {:ref:`19 <X_19>`, 10316}, {:ref:`22 <X_22>`, :ref:`31 <X_31>`}, {:ref:`32 <X_32>`, :ref:`1760 <X_1760>`}, {:ref:`37 <X_37>`, 17186}, {:ref:`48 <X_48>`, 8743}, {:ref:`57 <X_57>`, 4548}, {:ref:`63 <X_63>`, 17409}, {:ref:`163 <X_163>`, 2485}, {:ref:`315 <X_315>`, :ref:`560 <X_560>`}, {:ref:`798 <X_798>`, 4611}, {:ref:`1333 <X_1333>`, 4456}, {:ref:`1397 <X_1397>`, 4123}, {:ref:`1755 <X_1755>`, 11610}, {2175, 7210}, {2206, 4463}, {9247, 17907}, {9447, 17076}
+   * :ref:`X_206 <X_206>` = trilinear product X_i\*X_j for these {i,j}: {:ref:`2 <X_2>`, 17453}, {:ref:`6 <X_6>`, :ref:`2172 <X_2172>`}, {:ref:`9 <X_9>`, 7251}, {:ref:`19 <X_19>`, 10316}, {:ref:`22 <X_22>`, :ref:`31 <X_31>`}, {:ref:`32 <X_32>`, :ref:`1760 <X_1760>`}, {:ref:`37 <X_37>`, 17186}, {:ref:`48 <X_48>`, 8743}, {:ref:`57 <X_57>`, 4548}, {:ref:`63 <X_63>`, 17409}, {:ref:`163 <X_163>`, :ref:`2485 <X_2485>`}, {:ref:`315 <X_315>`, :ref:`560 <X_560>`}, {:ref:`798 <X_798>`, 4611}, {:ref:`1333 <X_1333>`, 4456}, {:ref:`1397 <X_1397>`, 4123}, {:ref:`1755 <X_1755>`, 11610}, {:ref:`2175 <X_2175>`, 7210}, {:ref:`2206 <X_2206>`, 4463}, {9247, 17907}, {9447, 17076}
 
 Notes
 -----

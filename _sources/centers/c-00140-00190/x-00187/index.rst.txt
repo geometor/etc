@@ -88,14 +88,14 @@ X_187
    * :ref:`X_187 <X_187>` = perspector of :g:`ABC << A B C >>` and the reflection of the circumsymmedial triangle in the Brocard axis
    * :ref:`X_187 <X_187>` = perspector of :g:`ABC << A B C >>` and the reflection of the circumsymmedial triangle in the Lemoine axis
    * :ref:`X_187 <X_187>` = intersection of tangents to hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_2 <X_2>`,\ :ref:`X_6 <X_6>`} at :ref:`X_6 <X_6>` and :ref:`X_111 <X_111>`
-   * :ref:`X_187 <X_187>` = inverse-in-Parry-circle of X_2502
+   * :ref:`X_187 <X_187>` = inverse-in-Parry-circle of :ref:`X_2502 <X_2502>`
    * :ref:`X_187 <X_187>` = :ref:`X_187 <X_187>`-of-2nd-Brocard-triangle
    * :ref:`X_187 <X_187>` = :ref:`X_187 <X_187>`-of-circumsymmedial-triangle
    * :ref:`X_187 <X_187>` = polar conjugate of isogonal conjugate of X_23200
    * :ref:`X_187 <X_187>` = polar conjugate of isotomic conjugate of X_3292
    * :ref:`X_187 <X_187>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_895 <X_895>`
    * :ref:`X_187 <X_187>` = :ref:`X_1577 <X_1577>`-isoconjugate of :ref:`X_691 <X_691>`
-   * :ref:`X_187 <X_187>` = {:ref:`X_1687 <X_1687>`,\ :ref:`X_1688 <X_1688>`}-harmonic conjugate of X_2080
+   * :ref:`X_187 <X_187>` = {:ref:`X_1687 <X_1687>`,\ :ref:`X_1688 <X_1688>`}-harmonic conjugate of :ref:`X_2080 <X_2080>`
    * :ref:`X_187 <X_187>` = :term:`trilinear pole <trilinear-pole>` of PU(107)
    * :ref:`X_187 <X_187>` = inverse-in-Parry-isodynamic-circle of :ref:`X_351 <X_351>`; see :ref:`X_2 <X_2>`
    * :ref:`X_187 <X_187>` = radical trace of 3rd and 4th Lozada circles

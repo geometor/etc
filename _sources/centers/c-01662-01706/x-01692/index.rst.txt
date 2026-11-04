@@ -47,7 +47,7 @@ X_1692
    :badge: 19 relations
 
    * :ref:`X_1692 <X_1692>` = midpoint of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`1691 <X_1691>`), (:ref:`187 <X_187>`, :ref:`1570 <X_1570>`)
-   * :ref:`X_1692 <X_1692>` = reflection of X_i in X_j for these (i,j): (:ref:`39 <X_39>`, 2024), (:ref:`187 <X_187>`, :ref:`1570 <X_1570>`), (:ref:`1570 <X_1570>`, :ref:`6 <X_6>`), (:ref:`1691 <X_1691>`, 2030)
+   * :ref:`X_1692 <X_1692>` = reflection of X_i in X_j for these (i,j): (:ref:`39 <X_39>`, :ref:`2024 <X_2024>`), (:ref:`187 <X_187>`, :ref:`1570 <X_1570>`), (:ref:`1570 <X_1570>`, :ref:`6 <X_6>`), (:ref:`1691 <X_1691>`, :ref:`2030 <X_2030>`)
    * :ref:`X_1692 <X_1692>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_8781
    * :ref:`X_1692 <X_1692>` = circumcircle-inverse of X_3053
    * :ref:`X_1692 <X_1692>` = 1st-Lemoine-circle-inverse of :ref:`X_32 <X_32>`
@@ -61,7 +61,7 @@ X_1692
    * :ref:`X_1692 <X_1692>` = radical trace of circles {{P(1),U(2),P(39)}} and {{U(1),P(2),U(39)}}
    * :ref:`X_1692 <X_1692>` = anticenter of cyclic quadrilateral PU(2)PU(39)
    * :ref:`X_1692 <X_1692>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_69 <X_69>`\ \ :ref:`X_523 <X_523>`
-   * :ref:`X_1692 <X_1692>` = {:ref:`X_1687 <X_1687>`,\ :ref:`X_1688 <X_1688>`}-harmonic conjugate of X_2456
+   * :ref:`X_1692 <X_1692>` = {:ref:`X_1687 <X_1687>`,\ :ref:`X_1688 <X_1688>`}-harmonic conjugate of :ref:`X_2456 <X_2456>`
    * :ref:`X_1692 <X_1692>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of X_39072
    * :ref:`X_1692 <X_1692>` = perspector of conic {{:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_25 <X_25>`,\ :ref:`X_110 <X_110>`}}
    * :ref:`X_1692 <X_1692>` = {:ref:`X_371 <X_371>`,\ :ref:`X_372 <X_372>`}-harmonic conjugate of X_9737

@@ -44,8 +44,8 @@ X_1325
    * :ref:`X_1325 <X_1325>` = reflection of :ref:`X_1290 <X_1290>` in :ref:`X_36 <X_36>`
    * :ref:`X_1325 <X_1325>` = circumcircle-inverse of :ref:`X_21 <X_21>`
    * :ref:`X_1325 <X_1325>` = nine-point-circle-inverse of X_37983
-   * :ref:`X_1325 <X_1325>` = :term:`crosspoint <crosspoint>` of :ref:`X_3 <X_3>` and X_2948 wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
-   * :ref:`X_1325 <X_1325>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_647 <X_647>`\ X_2092
+   * :ref:`X_1325 <X_1325>` = :term:`crosspoint <crosspoint>` of :ref:`X_3 <X_3>` and :ref:`X_2948 <X_2948>` wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
+   * :ref:`X_1325 <X_1325>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_647 <X_647>`\ \ :ref:`X_2092 <X_2092>`
    * :ref:`X_1325 <X_1325>` = reflection of :ref:`X_110 <X_110>` in line :ref:`X_36 <X_36>`\ \ :ref:`X_238 <X_238>` (the polar of :ref:`X_1 <X_1>` wrt circumcircle)
 
 Notes

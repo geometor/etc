@@ -12,7 +12,7 @@ X_1682
 
 .. enunciation::
 
-   The exsimilicenter of the incircle and Apollonius circle is :ref:`X_181 <X_181>`. Also, the triangle :g:`A'B'C' << A' B' C' >>` formed (as at X_2092 by the intersections of the Apollonius circle and the excircles is perspective to the :term:`cevian triangle <cevian-triangle>` of :ref:`X_1 <X_1>`, and the perspector is :ref:`X_1682 <X_1682>`. (:person:`Paul Yiu <paul-yiu>`, :cite:`Hyacinthos #8076 <hyacinthos>`, 10/01/03)
+   The exsimilicenter of the incircle and Apollonius circle is :ref:`X_181 <X_181>`. Also, the triangle :g:`A'B'C' << A' B' C' >>` formed (as at :ref:`X_2092 <X_2092>` by the intersections of the Apollonius circle and the excircles is perspective to the :term:`cevian triangle <cevian-triangle>` of :ref:`X_1 <X_1>`, and the perspector is :ref:`X_1682 <X_1682>`. (:person:`Paul Yiu <paul-yiu>`, :cite:`Hyacinthos #8076 <hyacinthos>`, 10/01/03)
 
 .. figure:: x-01682.svg
    :alt: X_1682 — INSIMILICENTER(INCIRCLE, APOLLONIUS CIRCLE)
@@ -40,7 +40,7 @@ X_1682
    :badge: 19 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, :ref:`181 <X_181>`}, {:ref:`3 <X_3>`, :ref:`1397 <X_1397>`}, {:ref:`10 <X_10>`, :ref:`11 <X_11>`}, {:ref:`43 <X_43>`, :ref:`1697 <X_1697>`}, {:ref:`55 <X_55>`, :ref:`386 <X_386>`}, {:ref:`56 <X_56>`, :ref:`573 <X_573>`}, {:ref:`57 <X_57>`, :ref:`1695 <X_1695>`}, {:ref:`73 <X_73>`, :ref:`1362 <X_1362>`}, {:ref:`212 <X_212>`, :ref:`1472 <X_1472>`}, {:ref:`215 <X_215>`, :ref:`501 <X_501>`}, {:ref:`988 <X_988>`, :ref:`1401 <X_1401>`}, {:ref:`1124 <X_1124>`, :ref:`1686 <X_1686>`}, {:ref:`1335 <X_1335>`, :ref:`1685 <X_1685>`}, {:ref:`1672 <X_1672>`, :ref:`1684 <X_1684>`}, {:ref:`1673 <X_1673>`, :ref:`1683 <X_1683>`}, {:ref:`1674 <X_1674>`, :ref:`1694 <X_1694>`}, {:ref:`1675 <X_1675>`, :ref:`1693 <X_1693>`}, {2007, 2020}, {2008, 2019}
+   {:ref:`1 <X_1>`, :ref:`181 <X_181>`}, {:ref:`3 <X_3>`, :ref:`1397 <X_1397>`}, {:ref:`10 <X_10>`, :ref:`11 <X_11>`}, {:ref:`43 <X_43>`, :ref:`1697 <X_1697>`}, {:ref:`55 <X_55>`, :ref:`386 <X_386>`}, {:ref:`56 <X_56>`, :ref:`573 <X_573>`}, {:ref:`57 <X_57>`, :ref:`1695 <X_1695>`}, {:ref:`73 <X_73>`, :ref:`1362 <X_1362>`}, {:ref:`212 <X_212>`, :ref:`1472 <X_1472>`}, {:ref:`215 <X_215>`, :ref:`501 <X_501>`}, {:ref:`988 <X_988>`, :ref:`1401 <X_1401>`}, {:ref:`1124 <X_1124>`, :ref:`1686 <X_1686>`}, {:ref:`1335 <X_1335>`, :ref:`1685 <X_1685>`}, {:ref:`1672 <X_1672>`, :ref:`1684 <X_1684>`}, {:ref:`1673 <X_1673>`, :ref:`1683 <X_1683>`}, {:ref:`1674 <X_1674>`, :ref:`1694 <X_1694>`}, {:ref:`1675 <X_1675>`, :ref:`1693 <X_1693>`}, {:ref:`2007 <X_2007>`, :ref:`2020 <X_2020>`}, {:ref:`2008 <X_2008>`, :ref:`2019 <X_2019>`}
 
 .. collapse:: Functional Relations
    :badge: 3 relations

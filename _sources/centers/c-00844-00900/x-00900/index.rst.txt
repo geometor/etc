@@ -51,7 +51,7 @@ X_900
    * :ref:`X_900 <X_900>` = excentral-isogonal conjugate of X_34464
    * :ref:`X_900 <X_900>` = :ref:`X_523 <X_523>`-of-Fuhrmann-triangle
    * :ref:`X_900 <X_900>` = polar conjugate of isogonal conjugate of X_22086
-   * :ref:`X_900 <X_900>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_1647 <X_1647>`\ X_2087
+   * :ref:`X_900 <X_900>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_1647 <X_1647>`\ \ :ref:`X_2087 <X_2087>`
    * :ref:`X_900 <X_900>` = ideal point of PU(i) for these i: 121, 123
    * :ref:`X_900 <X_900>` = bicentric difference of PU(i) for these i: 121, 123
    * :ref:`X_900 <X_900>` = barycentric product :ref:`X_514 <X_514>`\ \*\ :ref:`X_519 <X_519>`

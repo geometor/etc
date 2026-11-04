@@ -63,7 +63,7 @@ X_393
    * :ref:`X_393 <X_393>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_69 <X_69>` (line :ref:`X_441 <X_441>`\ \ :ref:`X_525 <X_525>`)
    * :ref:`X_393 <X_393>` = polar conjugate of :ref:`X_69 <X_69>`
    * :ref:`X_393 <X_393>` = X_i-:term:`isoconjugate <isoconjugate>` of X_j for these {i,j}: {:ref:`1 <X_1>`, :ref:`394 <X_394>`}, {:ref:`31 <X_31>`, 3926}, {:ref:`48 <X_48>`, :ref:`69 <X_69>`}, {:ref:`92 <X_92>`, :ref:`1092 <X_1092>`}
-   * :ref:`X_393 <X_393>` = :term:`vertex conjugate <vertex-conjugate>` of the foci of the inconic with perspector X_2052
+   * :ref:`X_393 <X_393>` = :term:`vertex conjugate <vertex-conjugate>` of the foci of the inconic with perspector :ref:`X_2052 <X_2052>`
    * :ref:`X_393 <X_393>` = :ref:`X_1743 <X_1743>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
 
 Notes

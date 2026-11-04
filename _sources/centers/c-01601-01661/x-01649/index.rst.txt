@@ -51,7 +51,7 @@ X_1649
    * :ref:`X_1649 <X_1649>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`110 <X_110>`, :ref:`691 <X_691>`), (:ref:`111 <X_111>`, :ref:`512 <X_512>`)
    * :ref:`X_1649 <X_1649>` = perspector of circumconic centered at :ref:`X_1648 <X_1648>`
    * :ref:`X_1649 <X_1649>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X_1648 <X_1648>`
-   * :ref:`X_1649 <X_1649>` = center of circle {{:ref:`X_2 <X_2>`,\ :ref:`X_110 <X_110>`,X_2770,X_5463,X_5464}}
+   * :ref:`X_1649 <X_1649>` = center of circle {{:ref:`X_2 <X_2>`,\ :ref:`X_110 <X_110>`,\ :ref:`X_2770 <X_2770>`,X_5463,X_5464}}
    * :ref:`X_1649 <X_1649>` = trilinear pole of line X_14444X_23992
    * :ref:`X_1649 <X_1649>` = harmonic center of circles {{:ref:`X_13 <X_13>`,\ :ref:`X_15 <X_15>`,X_5463,X_5464}} and {{:ref:`X_14 <X_14>`,\ :ref:`X_16 <X_16>`,X_5463,X_5464}}
 

@@ -49,8 +49,8 @@ X_843
    * :ref:`X_843 <X_843>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_6 <X_6>`\ \ :ref:`X_351 <X_351>`
    * :ref:`X_843 <X_843>` = Ψ(:ref:`X_2 <X_2>`, :ref:`X_690 <X_690>`)
    * :ref:`X_843 <X_843>` = Ψ(:ref:`X_6 <X_6>`, :ref:`X_351 <X_351>`)
-   * :ref:`X_843 <X_843>` = circumcircle-antipode of X_2709
-   * :ref:`X_843 <X_843>` = reflection of X_2709 in :ref:`X_3 <X_3>`
+   * :ref:`X_843 <X_843>` = circumcircle-antipode of :ref:`X_2709 <X_2709>`
+   * :ref:`X_843 <X_843>` = reflection of :ref:`X_2709 <X_2709>` in :ref:`X_3 <X_3>`
    * :ref:`X_843 <X_843>` = reflection of :ref:`X_111 <X_111>` in the Brocard axis
    * :ref:`X_843 <X_843>` = inverse-in-circle-O(15,16) of :ref:`X_110 <X_110>`
    * :ref:`X_843 <X_843>` = 2nd-Parry-to-:g:`ABC << A B C >>` :term:`similarity image <similarity-image>` of :ref:`X_352 <X_352>`

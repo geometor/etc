@@ -49,7 +49,7 @@ X_1408
    * :ref:`X_1408 <X_1408>` = :ref:`X_604 <X_604>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_1412 <X_1412>`
    * :ref:`X_1408 <X_1408>` = :term:`cevapoint <cevapoint>` of :ref:`X_604 <X_604>` and :ref:`X_1397 <X_1397>`
    * :ref:`X_1408 <X_1408>` = :term:`crosspoint <crosspoint>` of :ref:`X_1014 <X_1014>` and :ref:`X_1396 <X_1396>`
-   * :ref:`X_1408 <X_1408>` = :ref:`X_2 <X_2>`-:term:`isoconjugate <isoconjugate>` of X_2321
+   * :ref:`X_1408 <X_1408>` = :ref:`X_2 <X_2>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_2321 <X_2321>`
 
 .. toctree::
    :hidden:

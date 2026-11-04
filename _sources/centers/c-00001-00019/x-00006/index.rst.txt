@@ -100,7 +100,7 @@ X_6
    * :ref:`X_6 <X_6>` = homothetic center of :term:`outer Napoleon triangle <outer-napoleon-triangle>` and :term:`pedal triangle <pedal-triangle>` of :ref:`X_15 <X_15>`
    * :ref:`X_6 <X_6>` = homothetic center of :term:`inner Napoleon triangle <inner-napoleon-triangle>` and pedal triangle of :ref:`X_16 <X_16>`
    * :ref:`X_6 <X_6>` = trilinear product of vertices of Thomson triangle
-   * :ref:`X_6 <X_6>` = orthocenter of X_iX_jX_k for these (i,j,k): (:ref:`2 <X_2>`, :ref:`4 <X_4>`, :ref:`1640 <X_1640>`), (:ref:`3 <X_3>`, :ref:`4 <X_4>`, :ref:`879 <X_879>`), (:ref:`3 <X_3>`, :ref:`64 <X_64>`, 2435)
+   * :ref:`X_6 <X_6>` = orthocenter of X_iX_jX_k for these (i,j,k): (:ref:`2 <X_2>`, :ref:`4 <X_4>`, :ref:`1640 <X_1640>`), (:ref:`3 <X_3>`, :ref:`4 <X_4>`, :ref:`879 <X_879>`), (:ref:`3 <X_3>`, :ref:`64 <X_64>`, :ref:`2435 <X_2435>`)
    * :ref:`X_6 <X_6>` = intersection of tangents at :ref:`X_3 <X_3>` and :ref:`X_4 <X_4>` to Darboux cubic K004
    * :ref:`X_6 <X_6>` = :term:`radical trace <radical-trace>` of circumcircle and Ehrmann circle
    * :ref:`X_6 <X_6>` = one of two harmonic traces of Ehrmann circles; the other is :ref:`X_23 <X_23>`
@@ -162,7 +162,7 @@ X_6
    * :ref:`X_6 <X_6>` = pole, wrt circumcircle, of Lemoine axis
    * :ref:`X_6 <X_6>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_264 <X_264>` (line :ref:`X_297 <X_297>`\ \ :ref:`X_525 <X_525>`)
    * :ref:`X_6 <X_6>` = polar conjugate of :ref:`X_264 <X_264>`
-   * :ref:`X_6 <X_6>` = X_i-:term:`isoconjugate <isoconjugate>` of X_j for these {i,j}: {:ref:`1 <X_1>`, :ref:`2 <X_2>`}, {:ref:`6 <X_6>`, :ref:`75 <X_75>`}, {:ref:`31 <X_31>`, :ref:`76 <X_76>`}, {:ref:`91 <X_91>`, :ref:`1993 <X_1993>`}, {:ref:`110 <X_110>`, :ref:`1577 <X_1577>`}, {:ref:`338 <X_338>`, :ref:`1101 <X_1101>`}, {:ref:`1994 <X_1994>`, 2962}
+   * :ref:`X_6 <X_6>` = X_i-:term:`isoconjugate <isoconjugate>` of X_j for these {i,j}: {:ref:`1 <X_1>`, :ref:`2 <X_2>`}, {:ref:`6 <X_6>`, :ref:`75 <X_75>`}, {:ref:`31 <X_31>`, :ref:`76 <X_76>`}, {:ref:`91 <X_91>`, :ref:`1993 <X_1993>`}, {:ref:`110 <X_110>`, :ref:`1577 <X_1577>`}, {:ref:`338 <X_338>`, :ref:`1101 <X_1101>`}, {:ref:`1994 <X_1994>`, :ref:`2962 <X_2962>`}
    * :ref:`X_6 <X_6>` = inverse-in-2nd-Brocard-circle of :ref:`X_39 <X_39>`
    * :ref:`X_6 <X_6>` = inverse-in-Steiner-inellipse of :ref:`X_230 <X_230>`
    * :ref:`X_6 <X_6>` = inverse-in-Steiner-circumellipse of :ref:`X_385 <X_385>`
@@ -176,7 +176,7 @@ X_6
    * :ref:`X_6 <X_6>` = :ref:`X_1379 <X_1379>`-of-2nd-Brocard-triangle
    * :ref:`X_6 <X_6>` = :ref:`X_6 <X_6>`-of-4th-Brocard-triangle
    * :ref:`X_6 <X_6>` = :ref:`X_6 <X_6>`-of-orthocentroidal-triangle
-   * :ref:`X_6 <X_6>` = reflection of X_2453 in the Euler line
+   * :ref:`X_6 <X_6>` = reflection of :ref:`X_2453 <X_2453>` in the Euler line
    * :ref:`X_6 <X_6>` = similitude center of :g:`ABC << A B C >>` and orthocentroidal triangle
    * :ref:`X_6 <X_6>` = similitude center of 4th Brocard and circumsymmedial triangles
    * :ref:`X_6 <X_6>` = tangential isogonal conjugate of :ref:`X_22 <X_22>`

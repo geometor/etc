@@ -44,7 +44,7 @@ X_1068
    * :ref:`X_1068 <X_1068>` = isogonal conjugate of :ref:`X_1069 <X_1069>`
    * :ref:`X_1068 <X_1068>` = :ref:`X_158 <X_158>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_4 <X_4>`
    * :ref:`X_1068 <X_1068>` = :ref:`X_46 <X_46>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_4 <X_4>`
-   * :ref:`X_1068 <X_1068>` = polar conjugate of X_2994
+   * :ref:`X_1068 <X_1068>` = polar conjugate of :ref:`X_2994 <X_2994>`
 
 .. toctree::
    :hidden:

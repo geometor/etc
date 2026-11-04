@@ -34,7 +34,7 @@ X_1499
    :badge: 5 lines
    :class: line-catalog
 
-   {:ref:`3 <X_3>`, :ref:`669 <X_669>`}, {:ref:`4 <X_4>`, :ref:`1550 <X_1550>`}, {:ref:`30 <X_30>`, :ref:`511 <X_511>`}, {:ref:`74 <X_74>`, 2770}, {:ref:`98 <X_98>`, :ref:`843 <X_843>`}
+   {:ref:`3 <X_3>`, :ref:`669 <X_669>`}, {:ref:`4 <X_4>`, :ref:`1550 <X_1550>`}, {:ref:`30 <X_30>`, :ref:`511 <X_511>`}, {:ref:`74 <X_74>`, :ref:`2770 <X_2770>`}, {:ref:`98 <X_98>`, :ref:`843 <X_843>`}
 
 .. collapse:: Functional Relations
    :badge: 14 relations
@@ -47,9 +47,9 @@ X_1499
    * :ref:`X_1499 <X_1499>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_6 <X_6>`\ \ :ref:`X_373 <X_373>`
    * :ref:`X_1499 <X_1499>` = bicentric difference of PU(7)
    * :ref:`X_1499 <X_1499>` = ideal point of PU(7)
-   * :ref:`X_1499 <X_1499>` = X_2780 of 4th Brocard triangle
-   * :ref:`X_1499 <X_1499>` = X_2780 of orthocentroidal triangle
-   * :ref:`X_1499 <X_1499>` = X_2780 of :ref:`X_4 <X_4>`-Brocard triangle
+   * :ref:`X_1499 <X_1499>` = :ref:`X_2780 <X_2780>` of 4th Brocard triangle
+   * :ref:`X_1499 <X_1499>` = :ref:`X_2780 <X_2780>` of orthocentroidal triangle
+   * :ref:`X_1499 <X_1499>` = :ref:`X_2780 <X_2780>` of :ref:`X_4 <X_4>`-Brocard triangle
    * :ref:`X_1499 <X_1499>` = Thomson-isogonal conjugate of :ref:`X_111 <X_111>`
    * :ref:`X_1499 <X_1499>` = Lucas-isogonal conjugate of :ref:`X_111 <X_111>`
    * :ref:`X_1499 <X_1499>` = Cundy-Parry Psi transform of X_14263

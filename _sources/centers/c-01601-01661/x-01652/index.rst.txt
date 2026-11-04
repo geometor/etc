@@ -49,9 +49,9 @@ X_1652
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X_1652 <X_1652>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`554 <X_554>`, :ref:`1 <X_1>`), (2160, :ref:`1653 <X_1653>`)
+   * :ref:`X_1652 <X_1652>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`554 <X_554>`, :ref:`1 <X_1>`), (:ref:`2160 <X_2160>`, :ref:`1653 <X_1653>`)
    * :ref:`X_1652 <X_1652>` = :ref:`X_554 <X_554>`-aleph conjugate of :ref:`X_1652 <X_1652>`
-   * :ref:`X_1652 <X_1652>` = {X_i,X_j}-harmonic conjugate of X_k for these (i,j,k): (:ref:`1 <X_1>`, 3179, :ref:`1276 <X_1276>`), (:ref:`9 <X_9>`, :ref:`57 <X_57>`, :ref:`1653 <X_1653>`), (:ref:`1400 <X_1400>`, 3218, :ref:`1653 <X_1653>`), (2285, 3306, :ref:`1653 <X_1653>`)
+   * :ref:`X_1652 <X_1652>` = {X_i,X_j}-harmonic conjugate of X_k for these (i,j,k): (:ref:`1 <X_1>`, 3179, :ref:`1276 <X_1276>`), (:ref:`9 <X_9>`, :ref:`57 <X_57>`, :ref:`1653 <X_1653>`), (:ref:`1400 <X_1400>`, 3218, :ref:`1653 <X_1653>`), (:ref:`2285 <X_2285>`, 3306, :ref:`1653 <X_1653>`)
 
 Notes
 -----

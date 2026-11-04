@@ -12,7 +12,7 @@ X_474
 
 .. enunciation::
 
-   :ref:`X_474 <X_474>` = :term:`complement <complement>` of X_2478
+   :ref:`X_474 <X_474>` = :term:`complement <complement>` of :ref:`X_2478 <X_2478>`
 
 .. figure:: x-00474.svg
    :alt: X_474 — EULER LINE INTERCEPT OF LINE X_10X_56
@@ -23,8 +23,9 @@ X_474
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`), :g:`{10, 56} <{ 10, 56 }>`
-   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_10 <X_10>` (:ref:`SPIEKER CENTER <X_10>`), :g:`X_56 <X_56>` (:ref:`EXSIMILICENTER <X_56>`)
+   * **Derived Triangle:** :term:`Medial Triangle <medial triangle>` :g:`△M_aM_bM_c << M_a M_b M_c >>` — vertices :g:`M_a <M_a>`, :g:`M_b <M_b>`, :g:`M_c <M_c>` (Formed by the midpoints of sides BC, CA, AB)
+   * **Central Lines:** :g:`{2, 2478} <{ 2, 2478 }>`, :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`)
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_2478 <X_2478>` (:ref:`INVERSE-IN-ORTHOCENTROIDAL-CIRCLE OF X <X_2478>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`)
 
 .. signature:: center
 
@@ -46,7 +47,7 @@ X_474
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X_474 <X_474>` = complement of X_2478
+   * :ref:`X_474 <X_474>` = complement of :ref:`X_2478 <X_2478>`
    * :ref:`X_474 <X_474>` = :term:`anticomplement <anticomplement>` of X_17527
 
 Notes

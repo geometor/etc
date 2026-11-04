@@ -48,7 +48,7 @@ X_311
    * :ref:`X_311 <X_311>` = :ref:`X_76 <X_76>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_343 <X_343>`
    * :ref:`X_311 <X_311>` = :term:`cevapoint <cevapoint>` of :ref:`X_5 <X_5>` and :ref:`X_343 <X_343>`
    * :ref:`X_311 <X_311>` = :ref:`X_5 <X_5>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_324 <X_324>`
-   * :ref:`X_311 <X_311>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X_8882 (line :ref:`X_512 <X_512>`\ X_2623)
+   * :ref:`X_311 <X_311>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X_8882 (line :ref:`X_512 <X_512>`\ \ :ref:`X_2623 <X_2623>`)
    * :ref:`X_311 <X_311>` = polar conjugate of X_8882
    * :ref:`X_311 <X_311>` = barycentric product :ref:`X_5 <X_5>`\ \*\ :ref:`X_76 <X_76>`
 

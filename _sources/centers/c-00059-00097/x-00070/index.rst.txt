@@ -45,7 +45,7 @@ X_70
    :badge: 14 lines
    :class: line-catalog
 
-   {:ref:`3 <X_3>`, 8907}, {:ref:`6 <X_6>`, :ref:`1594 <X_1594>`}, {:ref:`54 <X_54>`, :ref:`1899 <X_1899>`}, {:ref:`64 <X_64>`, 6240}, {:ref:`66 <X_66>`, 6403}, {:ref:`71 <X_71>`, 2158}, {:ref:`74 <X_74>`, :ref:`1288 <X_1288>`}, {:ref:`265 <X_265>`, 6243}, {:ref:`1176 <X_1176>`, :ref:`1352 <X_1352>`}, {:ref:`1177 <X_1177>`, 3542}, {3448, 5504}, {3527, 7507}, {4846, 6241}, {6145, 6152}
+   {:ref:`3 <X_3>`, 8907}, {:ref:`6 <X_6>`, :ref:`1594 <X_1594>`}, {:ref:`54 <X_54>`, :ref:`1899 <X_1899>`}, {:ref:`64 <X_64>`, 6240}, {:ref:`66 <X_66>`, 6403}, {:ref:`71 <X_71>`, :ref:`2158 <X_2158>`}, {:ref:`74 <X_74>`, :ref:`1288 <X_1288>`}, {:ref:`265 <X_265>`, 6243}, {:ref:`1176 <X_1176>`, :ref:`1352 <X_1352>`}, {:ref:`1177 <X_1177>`, 3542}, {3448, 5504}, {3527, 7507}, {4846, 6241}, {6145, 6152}
 
 .. collapse:: Functional Relations
    :badge: 9 relations
@@ -55,7 +55,7 @@ X_70
    * :ref:`X_70 <X_70>` = antigonal conjugate of X_38534
    * :ref:`X_70 <X_70>` = :ref:`X_571 <X_571>`-crossconjugate of :ref:`X_2 <X_2>`
    * :ref:`X_70 <X_70>` = X_i-:term:`isoconjugate <isoconjugate>` of X_j for these {i,j}: {:ref:`1 <X_1>`, :ref:`26 <X_26>`}, {:ref:`63 <X_63>`, 8746}
-   * :ref:`X_70 <X_70>` = reflection of the isogonal conjugate of X_2072 in :ref:`X_125 <X_125>`
+   * :ref:`X_70 <X_70>` = reflection of the isogonal conjugate of :ref:`X_2072 <X_2072>` in :ref:`X_125 <X_125>`
    * :ref:`X_70 <X_70>` = :ref:`X_125 <X_125>`-:term:`cevapoint <cevapoint>` of :ref:`X_924 <X_924>`
    * :ref:`X_70 <X_70>` = :ref:`X_161 <X_161>`-:term:`crosssum <crosssum>` of X_8553
    * :ref:`X_70 <X_70>` = barycentric product :ref:`X_525 <X_525>` :ref:`X_1288 <X_1288>`

@@ -45,11 +45,11 @@ X_309
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X_309 <X_309>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2187
+   * :ref:`X_309 <X_309>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2187 <X_2187>`
    * :ref:`X_309 <X_309>` = isotomic conjugate of :ref:`X_40 <X_40>`
    * :ref:`X_309 <X_309>` = :term:`cevapoint <cevapoint>` of :ref:`X_189 <X_189>` and :ref:`X_280 <X_280>`
    * :ref:`X_309 <X_309>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`7 <X_7>`, :ref:`75 <X_75>`), (:ref:`92 <X_92>`, :ref:`85 <X_85>`)
-   * :ref:`X_309 <X_309>` = polar conjugate of X_2331
+   * :ref:`X_309 <X_309>` = polar conjugate of :ref:`X_2331 <X_2331>`
 
 .. toctree::
    :hidden:

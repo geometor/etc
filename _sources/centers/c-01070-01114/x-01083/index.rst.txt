@@ -58,7 +58,7 @@ X_1083
    * :ref:`X_1083 <X_1083>` = :ref:`X_112 <X_112>`-of-2nd-Montesdeoca-bisector-triangle
    * :ref:`X_1083 <X_1083>` = similicenter of 1st and 2nd Montesdeoca bisector triangles
    * :ref:`X_1083 <X_1083>` = intersection, other than :ref:`X_6 <X_6>`, of the Brocard circle and line :ref:`X_1 <X_1>`\ \ :ref:`X_6 <X_6>`
-   * :ref:`X_1083 <X_1083>` = 1st-Brocard-:term:`isogonal conjugate <isogonal-conjugate>` of X_2795
+   * :ref:`X_1083 <X_1083>` = 1st-Brocard-:term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2795 <X_2795>`
 
 .. toctree::
    :hidden:

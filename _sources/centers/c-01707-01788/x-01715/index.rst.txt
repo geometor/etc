@@ -12,7 +12,7 @@ X_1715
 
 .. enunciation::
 
-   :ref:`X_1715 <X_1715>` = :term:`crosssum <crosssum>` of :ref:`X_822 <X_822>` and X_2310
+   :ref:`X_1715 <X_1715>` = :term:`crosssum <crosssum>` of :ref:`X_822 <X_822>` and :ref:`X_2310 <X_2310>`
 
 .. figure:: x-01715.svg
    :alt: X_1715 — MIMOSA TRANSFORM OF X_29
@@ -42,7 +42,7 @@ X_1715
    :badge: 3 relations
 
    * :ref:`X_1715 <X_1715>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`412 <X_412>`, :ref:`4 <X_4>`), (:ref:`1896 <X_1896>`, :ref:`1 <X_1>`)
-   * :ref:`X_1715 <X_1715>` = crosssum of :ref:`X_822 <X_822>` and X_2310
+   * :ref:`X_1715 <X_1715>` = crosssum of :ref:`X_822 <X_822>` and :ref:`X_2310 <X_2310>`
    * :ref:`X_1715 <X_1715>` = X_i-:term:`aleph conjugate <aleph-conjugate>` of X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`1046 <X_1046>`), (:ref:`29 <X_29>`, :ref:`3 <X_3>`), (:ref:`92 <X_92>`, :ref:`1762 <X_1762>`), (:ref:`1896 <X_1896>`, :ref:`1715 <X_1715>`)
 
 .. toctree::

@@ -1,0 +1,49 @@
+:order: 2684
+:canonical_id: X_2684
+:subtitle: RS(X_99, X_101)
+:dependencies: X_99, X_101, X_114, X_118, X_325, X_516, X_2677, X_2681
+
+.. _X_2684:
+
+X_2684
+======
+
+.. rubric:: RS(X_99, X_101)
+
+.. enunciation::
+
+   :ref:`X_2684 <X_2684>` = reflection of :ref:`X_2681 <X_2681>` in :ref:`X_118 <X_118>`
+
+.. figure:: x-02684.svg
+   :alt: X_2684 — RS(X_99, X_101)
+   :align: center
+
+   **X_2684** (*RS(X_99, X_101)*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. admonition:: Constructed Elements
+   :class: note
+
+   * **Central Lines:** :g:`{2681, 118} <{ 2681, 118 }>`
+   * **Related Centers:** :g:`X_2681 <X_2681>` (:ref:`RS(X(98), X(101)) <X_2681>`), :g:`X_118 <X_118>` (:ref:`MIDPOINT OF X(4) AND X(101) <X_118>`)
+
+.. signature:: center
+
+   | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) is as given just before :ref:`X_2677 <X_2677>` using :g:`P <P>` = :ref:`X_99 <X_99>`, :g:`U <U>` = :ref:`X_101 <X_101>`
+   | **Barycentrics:** :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
+   | **Search Value (6, 9, 13):** :math:`-7.528788199889`
+
+.. collapse:: Incident Central Lines
+   :badge: 2 lines
+   :class: line-catalog
+
+   {:ref:`114 <X_114>`, :ref:`325 <X_325>`}, {:ref:`118 <X_118>`, :ref:`516 <X_516>`}
+
+.. collapse:: Functional Relations
+   :badge: 1 relation
+
+   * :ref:`X_2684 <X_2684>` = reflection of :ref:`X_2681 <X_2681>` in :ref:`X_118 <X_118>`
+
+.. toctree::
+   :hidden:
+
+   code

@@ -45,7 +45,7 @@ X_1650
    * :ref:`X_1650 <X_1650>` = nine-point-circle-inverse of X_37985
    * :ref:`X_1650 <X_1650>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`265 <X_265>`, :ref:`520 <X_520>`), (:ref:`1294 <X_1294>`, :ref:`523 <X_523>`), (:ref:`1494 <X_1494>`, :ref:`525 <X_525>`)
    * :ref:`X_1650 <X_1650>` = :term:`crosspoint <crosspoint>` of :ref:`X_525 <X_525>` and :ref:`X_1494 <X_1494>`
-   * :ref:`X_1650 <X_1650>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`74 <X_74>`, :ref:`1304 <X_1304>`), (:ref:`110 <X_110>`, 2071), (:ref:`112 <X_112>`, :ref:`1495 <X_1495>`)
+   * :ref:`X_1650 <X_1650>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`74 <X_74>`, :ref:`1304 <X_1304>`), (:ref:`110 <X_110>`, :ref:`2071 <X_2071>`), (:ref:`112 <X_112>`, :ref:`1495 <X_1495>`)
    * :ref:`X_1650 <X_1650>` = :term:`complement <complement>` of X_4240
    * :ref:`X_1650 <X_1650>` = homothetic center of Gossard and :term:`medial triangles <medial-triangle>`
 

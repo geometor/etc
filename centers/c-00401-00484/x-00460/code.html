@@ -3377,6 +3377,7 @@
             <span class="n">construct_baseline_triangle</span><span class="p">,</span>
             <span class="n">create_model</span><span class="p">,</span>
             <span class="n">eval_trilinear_point</span><span class="p">,</span>
+            <span class="n">point_from_barycentrics</span><span class="p">,</span>
             <span class="n">promote_point_to_top</span><span class="p">,</span>
         <span class="p">)</span>
         <span class="kn">from</span><span class="w"> </span><span class="nn">geometor.etc.render</span><span class="w"> </span><span class="kn">import</span> <span class="n">write_center_svg</span>
@@ -3393,6 +3394,9 @@
             <span class="n">X_53</span> <span class="o">=</span> <span class="n">eval_trilinear_point</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="s1">'tan(A)*cos(B - C)'</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"X_53"</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"center"</span><span class="p">,</span> <span class="s2">"incident"</span><span class="p">])</span>
             <span class="n">X_1974</span> <span class="o">=</span> <span class="n">eval_trilinear_point</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="s1">'a**(4)*cos(B)*cos(C)'</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"X_1974"</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"center"</span><span class="p">,</span> <span class="s2">"incident"</span><span class="p">])</span>
             <span class="n">central_line</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">X_53</span><span class="p">,</span> <span class="n">X_1974</span><span class="p">,</span> <span class="mi">53</span><span class="p">,</span> <span class="mi">1974</span><span class="p">,</span> <span class="n">incident</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="n">X_685</span> <span class="o">=</span> <span class="n">eval_trilinear_point</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="s1">'(1/(sec(B)*(sin(C))**(3) - sec(C)*(sin(B))**(3)))'</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"X_685"</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"center"</span><span class="p">,</span> <span class="s2">"incident"</span><span class="p">])</span>
+            <span class="n">X_2065</span> <span class="o">=</span> <span class="n">point_from_barycentrics</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.14911157</span><span class="p">,</span> <span class="mf">1.3061467</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.15703517</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"X_2065"</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"center"</span><span class="p">,</span> <span class="s2">"incident"</span><span class="p">])</span>
+            <span class="n">central_line</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">X_685</span><span class="p">,</span> <span class="n">X_2065</span><span class="p">,</span> <span class="mi">685</span><span class="p">,</span> <span class="mi">2065</span><span class="p">,</span> <span class="n">incident</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
             <span class="k">return</span> <span class="n">promote_point_to_top</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">X_460</span><span class="p">)</span>
 
 
@@ -3505,7 +3509,7 @@
 
   <script src="../../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../../_static/documentation_options.js?v=6e0256f3"></script>
+  <script src="../../../_static/documentation_options.js?v=ca7ad2ea"></script>
   <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../../_static/js/collection_controls.js?v=b6b5297a"></script>

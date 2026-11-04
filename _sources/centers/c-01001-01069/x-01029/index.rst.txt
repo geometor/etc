@@ -46,7 +46,7 @@ X_1029
    :badge: 5 relations
 
    * :ref:`X_1029 <X_1029>` = isogonal conjugate of :ref:`X_1030 <X_1030>`
-   * :ref:`X_1029 <X_1029>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_2895
+   * :ref:`X_1029 <X_1029>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_2895 <X_2895>`
    * :ref:`X_1029 <X_1029>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`79 <X_79>`, :ref:`7 <X_7>`), (:ref:`81 <X_81>`, :ref:`2 <X_2>`)
    * :ref:`X_1029 <X_1029>` = :term:`cyclocevian conjugate <cyclocevian-conjugate>` of :ref:`X_1 <X_1>`
    * :ref:`X_1029 <X_1029>` = polar conjugate of :ref:`X_451 <X_451>`

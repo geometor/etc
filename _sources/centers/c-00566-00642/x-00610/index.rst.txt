@@ -48,10 +48,10 @@ X_610
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X_610 <X_610>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2184
+   * :ref:`X_610 <X_610>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2184 <X_2184>`
    * :ref:`X_610 <X_610>` = :ref:`X_63 <X_63>`-Ceva conjugate of :ref:`X_1 <X_1>`
    * :ref:`X_610 <X_610>` = :ref:`X_204 <X_204>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_1 <X_1>`
-   * :ref:`X_610 <X_610>` = X_2165-of-excentral-triangle
+   * :ref:`X_610 <X_610>` = :ref:`X_2165 <X_2165>`-of-excentral-triangle
 
 .. toctree::
    :hidden:

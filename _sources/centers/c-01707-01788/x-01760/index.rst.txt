@@ -24,7 +24,7 @@ X_1760
    :class: note
 
    * **Central Lines:** :g:`{19, 27} <{ 19, 27 }>`, :g:`{1, 82} <{ 1, 82 }>`
-   * **Related Centers:** :g:`X_19 <X_19>` (:ref:`CLAWSON POINT <X_19>`), :g:`X_27 <X_27>` (:ref:`CEVAPOINT OF ORTHOCENTER AND CLAWSON CENTER <X_27>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_82 <X_82>` (:ref:`ISOGONAL CONJUGATE OF X(38) <X_82>`)
+   * **Related Centers:** :g:`X_2156 <X_2156>` (:ref:`-ISOCONJUGATE OF X(22) <X_2156>`), :g:`X_19 <X_19>` (:ref:`CLAWSON POINT <X_19>`), :g:`X_27 <X_27>` (:ref:`CEVAPOINT OF ORTHOCENTER AND CLAWSON CENTER <X_27>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_82 <X_82>` (:ref:`ISOGONAL CONJUGATE OF X(38) <X_82>`)
 
 .. signature:: center
 
@@ -41,8 +41,8 @@ X_1760
 .. collapse:: Functional Relations
    :badge: 9 relations
 
-   * :ref:`X_1760 <X_1760>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2156
-   * :ref:`X_1760 <X_1760>` = :term:`isotomic conjugate <isotomic-conjugate>` of isogonal conjugate of X_2172
+   * :ref:`X_1760 <X_1760>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2156 <X_2156>`
+   * :ref:`X_1760 <X_1760>` = :term:`isotomic conjugate <isotomic-conjugate>` of isogonal conjugate of :ref:`X_2172 <X_2172>`
    * :ref:`X_1760 <X_1760>` = isotomic conjugate of :term:`complement <complement>` of X_21215
    * :ref:`X_1760 <X_1760>` = isotomic conjugate of :term:`anticomplement <anticomplement>` of X_16582
    * :ref:`X_1760 <X_1760>` = isotomic conjugate of :ref:`X_6 <X_6>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_22 <X_22>`

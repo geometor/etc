@@ -41,7 +41,7 @@ X_347
 .. collapse:: Functional Relations
    :badge: 10 relations
 
-   * :ref:`X_347 <X_347>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2192
+   * :ref:`X_347 <X_347>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2192 <X_2192>`
    * :ref:`X_347 <X_347>` = isotomic conjugate of :ref:`X_280 <X_280>`
    * :ref:`X_347 <X_347>` = :term:`complement <complement>` of polar conjugate of X_38268
    * :ref:`X_347 <X_347>` = :term:`anticomplement <anticomplement>` of :ref:`X_281 <X_281>`

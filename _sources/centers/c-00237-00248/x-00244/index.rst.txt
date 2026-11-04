@@ -57,7 +57,7 @@ X_244
    * :ref:`X_244 <X_244>` = crosssum of circumcircle intercepts of line :ref:`X_1 <X_1>`\ \ :ref:`X_21 <X_21>`
    * :ref:`X_244 <X_244>` = perspector of anti-Aquila and 2nd Sharygin triangles
    * :ref:`X_244 <X_244>` = barycentric product of vertices of Garcia :term:`reflection triangle <reflection-triangle>`
-   * :ref:`X_244 <X_244>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_764 <X_764>`\ X_2087
+   * :ref:`X_244 <X_244>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_764 <X_764>`\ \ :ref:`X_2087 <X_2087>`
    * :ref:`X_244 <X_244>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`513 <X_513>`), (:ref:`75 <X_75>`, :ref:`514 <X_514>`)
    * :ref:`X_244 <X_244>` = :term:`crosspoint <crosspoint>` of :ref:`X_1 <X_1>` and :ref:`X_513 <X_513>`
    * :ref:`X_244 <X_244>` = crosssum of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`100 <X_100>`), (:ref:`31 <X_31>`, :ref:`101 <X_101>`), (:ref:`78 <X_78>`, :ref:`1331 <X_1331>`), (:ref:`109 <X_109>`, :ref:`1420 <X_1420>`), (:ref:`200 <X_200>`, :ref:`644 <X_644>`), (:ref:`651 <X_651>`, :ref:`1445 <X_1445>`), (:ref:`678 <X_678>`, :ref:`1023 <X_1023>`), (:ref:`756 <X_756>`, :ref:`1018 <X_1018>`)

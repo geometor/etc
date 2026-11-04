@@ -51,7 +51,7 @@ X_1193
    * :ref:`X_1193 <X_1193>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`58 <X_58>`), (:ref:`6 <X_6>`, :ref:`893 <X_893>`), (:ref:`57 <X_57>`, :ref:`86 <X_86>`)
    * :ref:`X_1193 <X_1193>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`10 <X_10>`), (:ref:`2 <X_2>`, :ref:`894 <X_894>`), (:ref:`9 <X_9>`, :ref:`42 <X_42>`)
    * :ref:`X_1193 <X_1193>` = crossdifference of every pair of points on line :ref:`X_522 <X_522>`\ \ :ref:`X_649 <X_649>`
-   * :ref:`X_1193 <X_1193>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of X_2359
+   * :ref:`X_1193 <X_1193>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_2359 <X_2359>`
    * :ref:`X_1193 <X_1193>` = polar conjugate of isotomic conjugate of X_22097
 
 Notes

@@ -48,7 +48,7 @@ X_1001
    * :ref:`X_1001 <X_1001>` = midpoint of :ref:`X_1 <X_1>` and :ref:`X_9 <X_9>`
    * :ref:`X_1001 <X_1001>` = reflection of :ref:`X_142 <X_142>` in :ref:`X_1125 <X_1125>`
    * :ref:`X_1001 <X_1001>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1002 <X_1002>`
-   * :ref:`X_1001 <X_1001>` = :term:`complement <complement>` of X_2550
+   * :ref:`X_1001 <X_1001>` = :term:`complement <complement>` of :ref:`X_2550 <X_2550>`
    * :ref:`X_1001 <X_1001>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`116 <X_116>`, :ref:`824 <X_824>`), (:ref:`788 <X_788>`, :ref:`1015 <X_1015>`)
    * :ref:`X_1001 <X_1001>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_513 <X_513>`\ \ :ref:`X_665 <X_665>`
    * :ref:`X_1001 <X_1001>` = :term:`anticomplement <anticomplement>` of X_3826

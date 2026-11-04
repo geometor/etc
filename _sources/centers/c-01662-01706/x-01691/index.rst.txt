@@ -36,7 +36,7 @@ X_1691
 .. collapse:: Alternate Coordinates
    :badge: 1 form
 
-   * **Trilinears:** e^2 cos(A - ω) - cos(A + ω) : : (c.f. X_2456)
+   * **Trilinears:** e^2 cos(A - ω) - cos(A + ω) : : (c.f. :ref:`X_2456 <X_2456>`)
 
 .. collapse:: Incident Central Lines
    :badge: 17 lines
@@ -47,8 +47,8 @@ X_1691
 .. collapse:: Functional Relations
    :badge: 22 relations
 
-   * :ref:`X_1691 <X_1691>` = midpoint of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, 2076), (:ref:`187 <X_187>`, :ref:`1692 <X_1692>`), (:ref:`1687 <X_1687>`, :ref:`1688 <X_1688>`)
-   * :ref:`X_1691 <X_1691>` = reflection of X_i in X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`1692 <X_1692>`), (:ref:`1692 <X_1692>`, 2030), (2076, :ref:`187 <X_187>`)
+   * :ref:`X_1691 <X_1691>` = midpoint of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`2076 <X_2076>`), (:ref:`187 <X_187>`, :ref:`1692 <X_1692>`), (:ref:`1687 <X_1687>`, :ref:`1688 <X_1688>`)
+   * :ref:`X_1691 <X_1691>` = reflection of X_i in X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`1692 <X_1692>`), (:ref:`1692 <X_1692>`, :ref:`2030 <X_2030>`), (:ref:`2076 <X_2076>`, :ref:`187 <X_187>`)
    * :ref:`X_1691 <X_1691>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1916 <X_1916>`
    * :ref:`X_1691 <X_1691>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_18896
    * :ref:`X_1691 <X_1691>` = :term:`complement <complement>` of X_5207
@@ -59,7 +59,7 @@ X_1691
    * :ref:`X_1691 <X_1691>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`237 <X_237>`, :ref:`1971 <X_1971>`), (:ref:`699 <X_699>`, :ref:`32 <X_32>`), (:ref:`1976 <X_1976>`, :ref:`6 <X_6>`)
    * :ref:`X_1691 <X_1691>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`83 <X_83>`, :ref:`98 <X_98>`), (:ref:`385 <X_385>`, :ref:`419 <X_419>`)
    * :ref:`X_1691 <X_1691>` = :term:`crosssum <crosssum>` of :ref:`X_39 <X_39>` and :ref:`X_511 <X_511>`
-   * :ref:`X_1691 <X_1691>` = reflection of X_2076 in the Lemoine axis
+   * :ref:`X_1691 <X_1691>` = reflection of :ref:`X_2076 <X_2076>` in the Lemoine axis
    * :ref:`X_1691 <X_1691>` = {X_i,X_j}-harmonic conjugate of X_k for these (i,j,k): (:ref:`32 <X_32>`, :ref:`182 <X_182>`, :ref:`6 <X_6>`), (:ref:`371 <X_371>`, :ref:`372 <X_372>`, 3095), (:ref:`1342 <X_1342>`, :ref:`1343 <X_1343>`, :ref:`39 <X_39>`)
    * :ref:`X_1691 <X_1691>` = :term:`crossdifference <crossdifference>` of every pair of points on the line PU(11)
    * :ref:`X_1691 <X_1691>` = center of the circle {{:ref:`X_1687 <X_1687>`,\ :ref:`X_1688 <X_1688>`,PU(1),PU(2)}} (the circle orthogonal to the circumcircle and passing through the 1st and 2nd Brocard points)

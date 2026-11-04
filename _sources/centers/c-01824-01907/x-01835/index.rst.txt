@@ -44,7 +44,7 @@ X_1835
    * :ref:`X_1835 <X_1835>` = isogonal conjugate of :ref:`X_1793 <X_1793>`
    * :ref:`X_1835 <X_1835>` = :ref:`X_1870 <X_1870>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_1464 <X_1464>`
    * :ref:`X_1835 <X_1835>` = polar conjugate of :term:`isotomic conjugate <isotomic-conjugate>` of X_18593
-   * :ref:`X_1835 <X_1835>` = :ref:`X_63 <X_63>`-:term:`isoconjugate <isoconjugate>` of X_2341
+   * :ref:`X_1835 <X_1835>` = :ref:`X_63 <X_63>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_2341 <X_2341>`
 
 .. toctree::
    :hidden:

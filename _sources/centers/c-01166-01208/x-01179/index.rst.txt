@@ -44,7 +44,7 @@ X_1179
    * :ref:`X_1179 <X_1179>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_1238 <X_1238>`
    * :ref:`X_1179 <X_1179>` = cevapoint of :ref:`X_25 <X_25>` and :ref:`X_53 <X_53>`
    * :ref:`X_1179 <X_1179>` = polar conjugate of X_37636
-   * :ref:`X_1179 <X_1179>` = :term:`trilinear pole <trilinear-pole>` of line X_2501X_3050
+   * :ref:`X_1179 <X_1179>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_2501 <X_2501>`\ X_3050
    * :ref:`X_1179 <X_1179>` = :ref:`X_63 <X_63>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_570 <X_570>`
 
 .. toctree::

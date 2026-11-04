@@ -47,7 +47,7 @@ X_1814
 
    * :ref:`X_1814 <X_1814>` = reflection of :ref:`X_651 <X_651>` in :ref:`X_6 <X_6>`
    * :ref:`X_1814 <X_1814>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_5089
-   * :ref:`X_1814 <X_1814>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of X_2223
+   * :ref:`X_1814 <X_1814>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_2223 <X_2223>`
    * :ref:`X_1814 <X_1814>` = MacBeath circumconic antipode of :ref:`X_651 <X_651>`
 
 .. toctree::

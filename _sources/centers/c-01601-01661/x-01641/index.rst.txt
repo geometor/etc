@@ -42,7 +42,7 @@ X_1641
 
    * :ref:`X_1641 <X_1641>` = reflection of :ref:`X_1648 <X_1648>` in :ref:`X_2 <X_2>`
    * :ref:`X_1641 <X_1641>` = centroid of line :ref:`X_2 <X_2>`\ \ :ref:`X_6 <X_6>` intercepts with sidelines of :g:`ABC << A B C >>`
-   * :ref:`X_1641 <X_1641>` = intersection of tangents to circle {:ref:`X_2 <X_2>`,\ :ref:`X_110 <X_110>`,X_2770,X_5463,X_5464} at X_5463 and X_5464
+   * :ref:`X_1641 <X_1641>` = intersection of tangents to circle {:ref:`X_2 <X_2>`,\ :ref:`X_110 <X_110>`,\ :ref:`X_2770 <X_2770>`,X_5463,X_5464} at X_5463 and X_5464
    * :ref:`X_1641 <X_1641>` = centroid of degenerate cross-triangle of anticomplementary and Schroeter triangles
 
 .. toctree::

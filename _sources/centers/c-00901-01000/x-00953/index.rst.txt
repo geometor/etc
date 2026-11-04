@@ -50,7 +50,7 @@ X_953
    * :ref:`X_953 <X_953>` = :term:`anticomplement <anticomplement>` of X_31841
    * :ref:`X_953 <X_953>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_6 <X_6>`\ \ :ref:`X_654 <X_654>`
    * :ref:`X_953 <X_953>` = Ψ(:ref:`X_6 <X_6>`, :ref:`X_654 <X_654>`)
-   * :ref:`X_953 <X_953>` = trilinear pole wrt 2nd circumperp triangle of line :ref:`X_1001 <X_1001>`\ X_2801
+   * :ref:`X_953 <X_953>` = trilinear pole wrt 2nd circumperp triangle of line :ref:`X_1001 <X_1001>`\ \ :ref:`X_2801 <X_2801>`
    * :ref:`X_953 <X_953>` = :ref:`X_476 <X_476>`-of-2nd-circumperp-triangle
    * :ref:`X_953 <X_953>` = reflection of :ref:`X_104 <X_104>` in line :ref:`X_1 <X_1>`\ \ :ref:`X_3 <X_3>`
    * :ref:`X_953 <X_953>` = reflection of :ref:`X_4 <X_4>` in the Sherman line

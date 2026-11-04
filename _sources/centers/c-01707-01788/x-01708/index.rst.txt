@@ -43,7 +43,7 @@ X_1708
 
    * :ref:`X_1708 <X_1708>` = :ref:`X_273 <X_273>`-Ceva conjugate of :ref:`X_1 <X_1>`
    * :ref:`X_1708 <X_1708>` = :term:`cevapoint <cevapoint>` of :ref:`X_46 <X_46>` in :ref:`X_1723 <X_1723>`
-   * :ref:`X_1708 <X_1708>` = :term:`crosssum <crosssum>` of :ref:`X_652 <X_652>` and X_2170
+   * :ref:`X_1708 <X_1708>` = :term:`crosssum <crosssum>` of :ref:`X_652 <X_652>` and :ref:`X_2170 <X_2170>`
    * :ref:`X_1708 <X_1708>` = {:ref:`X_9 <X_9>`,\ :ref:`X_57 <X_57>`}-harmonic conjugate of :ref:`X_226 <X_226>`
    * :ref:`X_1708 <X_1708>` = X_i-:term:`aleph conjugate <aleph-conjugate>` of X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`1490 <X_1490>`), (:ref:`4 <X_4>`, :ref:`1721 <X_1721>`), (:ref:`7 <X_7>`, :ref:`223 <X_223>`), (:ref:`27 <X_27>`, :ref:`580 <X_580>`), (:ref:`92 <X_92>`, :ref:`1158 <X_1158>`), (:ref:`174 <X_174>`, :ref:`1745 <X_1745>`), (:ref:`273 <X_273>`, :ref:`1708 <X_1708>`), (:ref:`278 <X_278>`, :ref:`1722 <X_1722>`), (:ref:`286 <X_286>`, :ref:`1746 <X_1746>`), (:ref:`508 <X_508>`, :ref:`610 <X_610>`), (:ref:`653 <X_653>`, :ref:`109 <X_109>`)
 

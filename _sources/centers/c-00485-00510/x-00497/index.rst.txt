@@ -59,7 +59,7 @@ X_497
    * :ref:`X_497 <X_497>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`55 <X_55>`, :ref:`56 <X_56>`), (:ref:`73 <X_73>`, :ref:`1402 <X_1402>`)
    * :ref:`X_497 <X_497>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_652 <X_652>`\ \ :ref:`X_665 <X_665>`
    * :ref:`X_497 <X_497>` = homothetic center of Mandart-incircle triangle and :term:`anticomplementary triangle <anticomplementary-triangle>`
-   * :ref:`X_497 <X_497>` = inverse-in-Feuerbach-hyperbola of X_2550
+   * :ref:`X_497 <X_497>` = inverse-in-Feuerbach-hyperbola of :ref:`X_2550 <X_2550>`
    * :ref:`X_497 <X_497>` = homothetic center of anticomplementary triangle and cross-triangle of :g:`ABC << A B C >>` and 2nd Johnson-Yff triangle
    * :ref:`X_497 <X_497>` = homothetic center of 2nd Johnson-Yff triangle triangle and cross-triangle of :g:`ABC << A B C >>` and 2nd Johnson-Yff triangle
    * :ref:`X_497 <X_497>` = {:ref:`X_1 <X_1>`,\ :ref:`X_4 <X_4>`}-harmonic conjugate of :ref:`X_388 <X_388>`

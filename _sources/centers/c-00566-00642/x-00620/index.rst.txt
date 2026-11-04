@@ -52,7 +52,7 @@ X_620
    * :ref:`X_620 <X_620>` = :ref:`X_230 <X_230>`-of-1st-Brocard-triangle
    * :ref:`X_620 <X_620>` = :term:`isotomic conjugate <isotomic-conjugate>` of :term:`isogonal conjugate <isogonal-conjugate>` of X_20976
    * :ref:`X_620 <X_620>` = polar conjugate of isogonal conjugate of X_22085
-   * :ref:`X_620 <X_620>` = centroid of :ref:`X_2 <X_2>`\ \ :ref:`X_3 <X_3>`\ \ :ref:`X_114 <X_114>`\ X_2482
+   * :ref:`X_620 <X_620>` = centroid of :ref:`X_2 <X_2>`\ \ :ref:`X_3 <X_3>`\ \ :ref:`X_114 <X_114>`\ \ :ref:`X_2482 <X_2482>`
    * :ref:`X_620 <X_620>` = Kosnita(:ref:`X_99 <X_99>`,\ :ref:`X_2 <X_2>`) point
    * :ref:`X_620 <X_620>` = :term:`crosssum <crosssum>` of intersections of 1st and 2nd Lemoine circles (and the circle {:ref:`X_1687 <X_1687>`,\ :ref:`X_1688 <X_1688>`,PU(1),PU(2)}})
    * :ref:`X_620 <X_620>` = :g:`QA <[ Q A ]>`-P29 center (Complement of :g:`QA <[ Q A ]>`-:g:`P_{2} <P_2>` wrt the Diagonal triangle) of quadrangle :g:`ABC << A B C >>`\ :ref:`X_2 <X_2>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/57-qa-p29.html)

@@ -57,7 +57,7 @@ X_902
    * :ref:`X_902 <X_902>` = inverse-in-Parry-isodynamic-circle of X_5029; see :ref:`X_2 <X_2>`
    * :ref:`X_902 <X_902>` = :ref:`X_63 <X_63>`-:term:`isoconjugate <isoconjugate>` of X_6336
    * :ref:`X_902 <X_902>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_6 <X_6>`,\ :ref:`X_101 <X_101>`}}
-   * :ref:`X_902 <X_902>` = {:ref:`X_31 <X_31>`,\ :ref:`X_42 <X_42>`}-harmonic conjugate of X_2308
+   * :ref:`X_902 <X_902>` = {:ref:`X_31 <X_31>`,\ :ref:`X_42 <X_42>`}-harmonic conjugate of :ref:`X_2308 <X_2308>`
    * :ref:`X_902 <X_902>` = polar conjugate of :term:`isotomic conjugate <isotomic-conjugate>` of X_22356
 
 .. toctree::

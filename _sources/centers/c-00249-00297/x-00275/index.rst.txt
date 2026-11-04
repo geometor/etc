@@ -56,7 +56,7 @@ X_275
    * :ref:`X_275 <X_275>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_186 <X_186>`\ \ :ref:`X_523 <X_523>` (the polar of :ref:`X_4 <X_4>` wrt the circumcircle, and the polar of :ref:`X_5 <X_5>` wrt polar circle)
    * :ref:`X_275 <X_275>` = :term:`crosspoint <crosspoint>` wrt :term:`tangential triangle <tangential-triangle>` of :ref:`X_4 <X_4>` and :ref:`X_6 <X_6>`
    * :ref:`X_275 <X_275>` = intersection of tangents at :ref:`X_4 <X_4>` and :ref:`X_6 <X_6>` to bianticevian conic of :ref:`X_4 <X_4>` and :ref:`X_6 <X_6>`
-   * :ref:`X_275 <X_275>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_5 <X_5>` (line X_2081X_2600)
+   * :ref:`X_275 <X_275>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_5 <X_5>` (line :ref:`X_2081 <X_2081>`\ \ :ref:`X_2600 <X_2600>`)
    * :ref:`X_275 <X_275>` = polar conjugate of :ref:`X_5 <X_5>`
    * :ref:`X_275 <X_275>` = :ref:`X_163 <X_163>`-:term:`isoconjugate <isoconjugate>` of X_6368
    * :ref:`X_275 <X_275>` = barycentric product of circumcircle intercepts of line :ref:`X_340 <X_340>`\ \ :ref:`X_520 <X_520>`

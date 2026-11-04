@@ -49,7 +49,7 @@ X_1653
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X_1653 <X_1653>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`1081 <X_1081>`, :ref:`1 <X_1>`), (2160, :ref:`1652 <X_1652>`)
+   * :ref:`X_1653 <X_1653>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`1081 <X_1081>`, :ref:`1 <X_1>`), (:ref:`2160 <X_2160>`, :ref:`1652 <X_1652>`)
    * :ref:`X_1653 <X_1653>` = :ref:`X_1081 <X_1081>`-aleph conjugate of :ref:`X_1653 <X_1653>`
 
 .. toctree::

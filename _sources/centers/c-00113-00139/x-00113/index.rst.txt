@@ -62,7 +62,7 @@ X_113
    * :ref:`X_113 <X_113>` = :ref:`X_104 <X_104>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X_113 <X_113>` = :ref:`X_186 <X_186>`-of-:ref:`X_4 <X_4>`-Brocard-triangle
    * :ref:`X_113 <X_113>` = center of rectangular circumhyperbola that passes through :ref:`X_110 <X_110>`
-   * :ref:`X_113 <X_113>` = center of rectangular hyperbola {:ref:`X_3 <X_3>`,\ :ref:`X_4 <X_4>`,\ :ref:`X_110 <X_110>`,\ :ref:`X_155 <X_155>`,\ :ref:`X_1351 <X_1351>`,\ :ref:`X_1352 <X_1352>`,X(2574,X_2575}}
+   * :ref:`X_113 <X_113>` = center of rectangular hyperbola {:ref:`X_3 <X_3>`,\ :ref:`X_4 <X_4>`,\ :ref:`X_110 <X_110>`,\ :ref:`X_155 <X_155>`,\ :ref:`X_1351 <X_1351>`,\ :ref:`X_1352 <X_1352>`,X(2574,\ :ref:`X_2575 <X_2575>`}}
    * :ref:`X_113 <X_113>` = perpsector of circumconic centered at X_3003
    * :ref:`X_113 <X_113>` = inverse-in-polar-circle-of :ref:`X_1300 <X_1300>`
    * :ref:`X_113 <X_113>` = inverse-in-{circumcircle, nine-point circle}-inverter of :ref:`X_1302 <X_1302>`

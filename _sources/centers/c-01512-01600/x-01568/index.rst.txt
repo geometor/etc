@@ -12,7 +12,7 @@ X_1568
 
 .. enunciation::
 
-   :ref:`X_1568 <X_1568>` = reflection of :ref:`X_125 <X_125>` in X_2072
+   :ref:`X_1568 <X_1568>` = reflection of :ref:`X_125 <X_125>` in :ref:`X_2072 <X_2072>`
 
 .. figure:: x-01568.svg
    :alt: X_1568 — ORTHOJOIN OF X_800
@@ -23,8 +23,8 @@ X_1568
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{5, 51} <{ 5, 51 }>`, :g:`{30, 113} <{ 30, 113 }>`
-   * **Related Centers:** :g:`X_5 <X_5>` (:ref:`NINE-POINT CENTER <X_5>`), :g:`X_51 <X_51>` (:ref:`CENTROID OF ORTHIC TRIANGLE <X_51>`), :g:`X_30 <X_30>` (:ref:`EULER INFINITY POINT <X_30>`), :g:`X_113 <X_113>` (:ref:`JERABEK ANTIPODE <X_113>`)
+   * **Central Lines:** :g:`{125, 2072} <{ 125, 2072 }>`
+   * **Related Centers:** :g:`X_125 <X_125>` (:ref:`CENTER OF JERABEK HYPERBOLA <X_125>`), :g:`X_2072 <X_2072>` (:ref:`INVERSE-IN-CIRCUMCIRCLE OF X(26) <X_2072>`)
 
 .. signature:: center
 
@@ -40,7 +40,7 @@ X_1568
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X_1568 <X_1568>` = reflection of :ref:`X_125 <X_125>` in X_2072
+   * :ref:`X_1568 <X_1568>` = reflection of :ref:`X_125 <X_125>` in :ref:`X_2072 <X_2072>`
 
 .. toctree::
    :hidden:

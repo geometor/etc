@@ -50,7 +50,7 @@ X_119
    * :ref:`X_119 <X_119>` = :ref:`X_4 <X_4>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_517 <X_517>`
    * :ref:`X_119 <X_119>` = nine-point-circle-antipode of :ref:`X_11 <X_11>`
    * :ref:`X_119 <X_119>` = :ref:`X_104 <X_104>`-of-:term:`medial triangle <medial-triangle>`
-   * :ref:`X_119 <X_119>` = X_2072-of-Fuhrmann-triangle
+   * :ref:`X_119 <X_119>` = :ref:`X_2072 <X_2072>`-of-Fuhrmann-triangle
    * :ref:`X_119 <X_119>` = inverse-in-polar-circle of :ref:`X_915 <X_915>`
    * :ref:`X_119 <X_119>` = anticenter of cyclic quadrilateral :g:`ABC << A B C >>`\ :ref:`X_100 <X_100>`
    * :ref:`X_119 <X_119>` = Λ(:ref:`X_1 <X_1>`, :ref:`X_3 <X_3>`), wrt :term:`orthic triangle <orthic-triangle>`
@@ -63,7 +63,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`N_{a} <N_a>` = :ref:`X_5 <X_5>`-:g:`BC <[ B C ]>`\ :ref:`X_1 <X_1>`, :g:`N_{b} <N_b>` = :ref:`X_5 <X_5>`-of-:g:`CA <[ C A ]>`\ :ref:`X_1 <X_1>`, :g:`N_{c} <N_c>` = :ref:`X_5 <X_5>`-of-:g:`AB <[ A B ]>`\ :ref:`X_1 <X_1>`. Then :ref:`X_119 <X_119>` = X_2071-of-:g:`N_{a}N_{b}N_{c} << N_a N_b N_c >>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2018)
+   Let :g:`N_{a} <N_a>` = :ref:`X_5 <X_5>`-:g:`BC <[ B C ]>`\ :ref:`X_1 <X_1>`, :g:`N_{b} <N_b>` = :ref:`X_5 <X_5>`-of-:g:`CA <[ C A ]>`\ :ref:`X_1 <X_1>`, :g:`N_{c} <N_c>` = :ref:`X_5 <X_5>`-of-:g:`AB <[ A B ]>`\ :ref:`X_1 <X_1>`. Then :ref:`X_119 <X_119>` = :ref:`X_2071 <X_2071>`-of-:g:`N_{a}N_{b}N_{c} << N_a N_b N_c >>`. (:person:`Randy Hutson <randy-hutson>`, January 29, 2018)
 
 .. container:: note-item
 

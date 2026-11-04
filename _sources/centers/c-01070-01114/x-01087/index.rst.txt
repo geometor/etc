@@ -40,13 +40,13 @@ X_1087
    :badge: 5 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, :ref:`564 <X_564>`}, {:ref:`5 <X_5>`, 2599}, {:ref:`31 <X_31>`, :ref:`91 <X_91>`}, {:ref:`54 <X_54>`, 2595}, {:ref:`92 <X_92>`, :ref:`255 <X_255>`}
+   {:ref:`1 <X_1>`, :ref:`564 <X_564>`}, {:ref:`5 <X_5>`, :ref:`2599 <X_2599>`}, {:ref:`31 <X_31>`, :ref:`91 <X_91>`}, {:ref:`54 <X_54>`, :ref:`2595 <X_2595>`}, {:ref:`92 <X_92>`, :ref:`255 <X_255>`}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
    * :ref:`X_1087 <X_1087>` = {:ref:`X_1 <X_1>`,\ :ref:`X_564 <X_564>`}-harmonic conjugate of :ref:`X_1109 <X_1109>`
-   * :ref:`X_1087 <X_1087>` = {X_2595,X_2596}-harmonic conjugate of :ref:`X_54 <X_54>`
+   * :ref:`X_1087 <X_1087>` = {:ref:`X_2595 <X_2595>`,\ :ref:`X_2596 <X_2596>`}-harmonic conjugate of :ref:`X_54 <X_54>`
 
 .. toctree::
    :hidden:

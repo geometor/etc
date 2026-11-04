@@ -48,7 +48,7 @@ X_1217
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X_1217 <X_1217>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_520 <X_520>`\ X_2501
+   * :ref:`X_1217 <X_1217>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_520 <X_520>`\ \ :ref:`X_2501 <X_2501>`
    * :ref:`X_1217 <X_1217>` = isogonal conjugate of :ref:`X_1181 <X_1181>`
 
 Notes

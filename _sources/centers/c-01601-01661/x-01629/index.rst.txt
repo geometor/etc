@@ -41,7 +41,7 @@ X_1629
    :badge: 2 relations
 
    * :ref:`X_1629 <X_1629>` = polar conjugate of X_36952
-   * :ref:`X_1629 <X_1629>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X_36952 (line :ref:`X_684 <X_684>`\ X_2525)
+   * :ref:`X_1629 <X_1629>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X_36952 (line :ref:`X_684 <X_684>`\ \ :ref:`X_2525 <X_2525>`)
 
 .. toctree::
    :hidden:

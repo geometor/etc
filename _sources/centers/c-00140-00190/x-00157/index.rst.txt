@@ -24,7 +24,7 @@ X_157
    :class: note
 
    * **Central Lines:** :g:`{3, 66} <{ 3, 66 }>`, :g:`{25, 53} <{ 25, 53 }>`
-   * **Related Centers:** :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_66 <X_66>` (:ref:`ISOGONAL CONJUGATE OF X(22) <X_66>`), :g:`X_25 <X_25>` (:ref:`HOMOTHETIC CENTER OF ORTHIC AND TANGENTIAL TRIANGLES <X_25>`), :g:`X_53 <X_53>` (:ref:`SYMMEDIAN POINT OF ORTHIC TRIANGLE <X_53>`)
+   * **Related Centers:** :g:`X_2909 <X_2909>` (:ref:`ORTHIC-ISOGONAL CONJUGATE OF X(32) <X_2909>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_66 <X_66>` (:ref:`ISOGONAL CONJUGATE OF X(22) <X_66>`), :g:`X_25 <X_25>` (:ref:`HOMOTHETIC CENTER OF ORTHIC AND TANGENTIAL TRIANGLES <X_25>`), :g:`X_53 <X_53>` (:ref:`SYMMEDIAN POINT OF ORTHIC TRIANGLE <X_53>`)
 
 .. signature:: center
 
@@ -47,7 +47,7 @@ X_157
    :badge: 8 relations
 
    * :ref:`X_157 <X_157>` = :term:`isogonal conjugate <isogonal-conjugate>` of :term:`anticomplement <anticomplement>` of X_22391
-   * :ref:`X_157 <X_157>` = :term:`isotomic conjugate <isotomic-conjugate>` of isogonal conjugate of X_2909
+   * :ref:`X_157 <X_157>` = :term:`isotomic conjugate <isotomic-conjugate>` of isogonal conjugate of :ref:`X_2909 <X_2909>`
    * :ref:`X_157 <X_157>` = :ref:`X_264 <X_264>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_6 <X_6>`
    * :ref:`X_157 <X_157>` = :term:`crosssum <crosssum>` of :ref:`X_127 <X_127>` and :ref:`X_520 <X_520>`
    * :ref:`X_157 <X_157>` = :ref:`X_6 <X_6>`-of-tangential-triangle

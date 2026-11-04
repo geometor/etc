@@ -8,7 +8,7 @@ X_474
 
 .. enunciation::
 
-   :ref:`X_474 <X_474>` = :term:`complement <complement>` of X_2478
+   :ref:`X_474 <X_474>` = :term:`complement <complement>` of :ref:`X_2478 <X_2478>`
 
 .. figure:: x-00474.svg
    :alt: X_474 — EULER LINE INTERCEPT OF LINE X_10X_56

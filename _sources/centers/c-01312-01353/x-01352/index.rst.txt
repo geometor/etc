@@ -43,7 +43,7 @@ X_1352
    :badge: 17 lines
    :class: line-catalog
 
-   {:ref:`2 <X_2>`, :ref:`98 <X_98>`}, {:ref:`3 <X_3>`, :ref:`66 <X_66>`}, {:ref:`4 <X_4>`, :ref:`69 <X_69>`}, {:ref:`5 <X_5>`, :ref:`6 <X_6>`}, {:ref:`11 <X_11>`, :ref:`613 <X_613>`}, {:ref:`12 <X_12>`, :ref:`611 <X_611>`}, {:ref:`25 <X_25>`, :ref:`343 <X_343>`}, {:ref:`30 <X_30>`, :ref:`599 <X_599>`}, {:ref:`70 <X_70>`, :ref:`1176 <X_1176>`}, {:ref:`193 <X_193>`, :ref:`576 <X_576>`}, {:ref:`206 <X_206>`, :ref:`1209 <X_1209>`}, {:ref:`298 <X_298>`, :ref:`383 <X_383>`}, {:ref:`299 <X_299>`, :ref:`1080 <X_1080>`}, {:ref:`355 <X_355>`, :ref:`518 <X_518>`}, {:ref:`381 <X_381>`, :ref:`524 <X_524>`}, {:ref:`394 <X_394>`, :ref:`426 <X_426>`}, {2794, 3734}
+   {:ref:`2 <X_2>`, :ref:`98 <X_98>`}, {:ref:`3 <X_3>`, :ref:`66 <X_66>`}, {:ref:`4 <X_4>`, :ref:`69 <X_69>`}, {:ref:`5 <X_5>`, :ref:`6 <X_6>`}, {:ref:`11 <X_11>`, :ref:`613 <X_613>`}, {:ref:`12 <X_12>`, :ref:`611 <X_611>`}, {:ref:`25 <X_25>`, :ref:`343 <X_343>`}, {:ref:`30 <X_30>`, :ref:`599 <X_599>`}, {:ref:`70 <X_70>`, :ref:`1176 <X_1176>`}, {:ref:`193 <X_193>`, :ref:`576 <X_576>`}, {:ref:`206 <X_206>`, :ref:`1209 <X_1209>`}, {:ref:`298 <X_298>`, :ref:`383 <X_383>`}, {:ref:`299 <X_299>`, :ref:`1080 <X_1080>`}, {:ref:`355 <X_355>`, :ref:`518 <X_518>`}, {:ref:`381 <X_381>`, :ref:`524 <X_524>`}, {:ref:`394 <X_394>`, :ref:`426 <X_426>`}, {:ref:`2794 <X_2794>`, 3734}
 
 .. collapse:: Functional Relations
    :badge: 13 relations
@@ -59,7 +59,7 @@ X_1352
    * :ref:`X_1352 <X_1352>` = center of the perspeconic of these triangles: Ehrmann side and Johnson
    * :ref:`X_1352 <X_1352>` = insimilicenter of :ref:`X_13 <X_13>`- and :ref:`X_14 <X_14>`-Fuhrmann circles (aka -Hagge circles
    * :ref:`X_1352 <X_1352>` = 1st-Brocard-isogonal conjugate of :ref:`X_182 <X_182>`
-   * :ref:`X_1352 <X_1352>` = 1st-Brocard-:term:`isotomic conjugate <isotomic-conjugate>` of X_2549
+   * :ref:`X_1352 <X_1352>` = 1st-Brocard-:term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_2549 <X_2549>`
    * :ref:`X_1352 <X_1352>` = :ref:`X_3 <X_3>`-of-obverse-triangle-of-:ref:`X_69 <X_69>`
 
 .. toctree::

@@ -1,0 +1,20 @@
+:canonical_id: X_2710
+:subtitle: SR(X_98, X_112)
+
+X_2710
+======
+
+.. rubric:: SR(X_98, X_112)
+
+.. enunciation::
+
+   :ref:`X_2710 <X_2710>` = reflection of :ref:`X_2715 <X_2715>` in :ref:`X_3 <X_3>`
+
+.. figure:: x-02710.svg
+   :alt: X_2710 — SR(X_98, X_112)
+   :align: center
+
+   **X_2710** (*SR(X_98, X_112)*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. literalinclude:: model.py
+   :language: python

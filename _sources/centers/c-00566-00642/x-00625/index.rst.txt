@@ -45,7 +45,7 @@ X_625
    * :ref:`X_625 <X_625>` = polar conjugate of isogonal conjugate of X_22087
    * :ref:`X_625 <X_625>` = inverse-in-nine-point-circle of :ref:`X_141 <X_141>`
    * :ref:`X_625 <X_625>` = :term:`complement <complement>` of :ref:`X_187 <X_187>`
-   * :ref:`X_625 <X_625>` = :term:`complementary conjugate <complementary-conjugate>` of X_2482
+   * :ref:`X_625 <X_625>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X_2482 <X_2482>`
 
 Notes
 -----

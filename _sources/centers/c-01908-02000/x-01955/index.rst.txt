@@ -48,7 +48,7 @@ X_1955
    * :ref:`X_1955 <X_1955>` = isogonal conjugate of :ref:`X_1956 <X_1956>`
    * :ref:`X_1955 <X_1955>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`2 <X_2>`, 39038), (:ref:`293 <X_293>`, :ref:`1 <X_1>`), (:ref:`1755 <X_1755>`, :ref:`1580 <X_1580>`)
    * :ref:`X_1955 <X_1955>` = X_i-:term:`aleph conjugate <aleph-conjugate>` of X_j for these (i,j): (:ref:`98 <X_98>`, :ref:`1733 <X_1733>`), (:ref:`293 <X_293>`, :ref:`1955 <X_1955>`)
-   * :ref:`X_1955 <X_1955>` = perspector of hyperbola {{:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_162 <X_162>`,X_2167}}
+   * :ref:`X_1955 <X_1955>` = perspector of hyperbola {{:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_162 <X_162>`,\ :ref:`X_2167 <X_2167>`}}
 
 .. toctree::
    :hidden:

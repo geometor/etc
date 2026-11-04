@@ -24,7 +24,7 @@ X_577
    :class: note
 
    * **Central Lines:** :g:`{3, 6} <{ 3, 6 }>`, :g:`{30, 53} <{ 30, 53 }>`
-   * **Related Centers:** :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_30 <X_30>` (:ref:`EULER INFINITY POINT <X_30>`), :g:`X_53 <X_53>` (:ref:`SYMMEDIAN POINT OF ORTHIC TRIANGLE <X_53>`)
+   * **Related Centers:** :g:`X_2052 <X_2052>` (:ref:`ISOGONAL CONJUGATE OF X(577) <X_2052>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_30 <X_30>` (:ref:`EULER INFINITY POINT <X_30>`), :g:`X_53 <X_53>` (:ref:`SYMMEDIAN POINT OF ORTHIC TRIANGLE <X_53>`)
 
 .. signature:: center
 
@@ -52,7 +52,7 @@ X_577
    :badge: 22 relations
 
    * :ref:`X_577 <X_577>` = reflection of X_36426 in X_23583
-   * :ref:`X_577 <X_577>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2052
+   * :ref:`X_577 <X_577>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2052 <X_2052>`
    * :ref:`X_577 <X_577>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_18027
    * :ref:`X_577 <X_577>` = complement of :ref:`X_317 <X_317>`
    * :ref:`X_577 <X_577>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`184 <X_184>`), (:ref:`97 <X_97>`, :ref:`3 <X_3>`)

@@ -50,7 +50,7 @@ X_399
    * :ref:`X_399 <X_399>` = reflection of X_i in X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`110 <X_110>`), (:ref:`74 <X_74>`, :ref:`1511 <X_1511>`), (:ref:`265 <X_265>`, :ref:`113 <X_113>`)
    * :ref:`X_399 <X_399>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`30 <X_30>`, :ref:`3 <X_3>`), (:ref:`323 <X_323>`, :ref:`6 <X_6>`)
    * :ref:`X_399 <X_399>` = inverse-in-circumcircle of :ref:`X_1511 <X_1511>`
-   * :ref:`X_399 <X_399>` = tangential isogonal conjugate of X_2070
+   * :ref:`X_399 <X_399>` = tangential isogonal conjugate of :ref:`X_2070 <X_2070>`
    * :ref:`X_399 <X_399>` = :term:`antigonal image <antigonal-image>` of :ref:`X_1117 <X_1117>`
    * :ref:`X_399 <X_399>` = orthocentroidal-to-:g:`ABC << A B C >>` :term:`similarity image <similarity-image>` of :ref:`X_3 <X_3>`
    * :ref:`X_399 <X_399>` = 4th-Brocard-to-circumsymmedial similarity image of :ref:`X_3 <X_3>`
@@ -82,7 +82,7 @@ Notes
 
 .. container:: note-item
 
-   Pohoata reports that the following points are concyclic: :ref:`X_13 <X_13>`, :ref:`X_16 <X_16>`, :ref:`X_110 <X_110>`, :ref:`X_399 <X_399>`, :ref:`X_1338 <X_1338>`, as are the points :ref:`X_14 <X_14>`, :ref:`X_15 <X_15>`, :ref:`X_110 <X_110>`, :ref:`X_399 <X_399>`, :ref:`X_1337 <X_1337>`. :person:`Randy Hutson <randy-hutson>` adds (Aug. 13, 2012) that the first of these circles also passes through X_2381, and the second, through X_2380.
+   Pohoata reports that the following points are concyclic: :ref:`X_13 <X_13>`, :ref:`X_16 <X_16>`, :ref:`X_110 <X_110>`, :ref:`X_399 <X_399>`, :ref:`X_1338 <X_1338>`, as are the points :ref:`X_14 <X_14>`, :ref:`X_15 <X_15>`, :ref:`X_110 <X_110>`, :ref:`X_399 <X_399>`, :ref:`X_1337 <X_1337>`. :person:`Randy Hutson <randy-hutson>` adds (Aug. 13, 2012) that the first of these circles also passes through :ref:`X_2381 <X_2381>`, and the second, through :ref:`X_2380 <X_2380>`.
 
 .. container:: note-item
 

@@ -49,7 +49,7 @@ X_1654
    * :ref:`X_1654 <X_1654>` = anticomplementary isotomic conjugate of :ref:`X_1 <X_1>`
    * :ref:`X_1654 <X_1654>` = :term:`complement <complement>` of X_20090
    * :ref:`X_1654 <X_1654>` = polar conjugate of :term:`isogonal conjugate <isogonal-conjugate>` of X_22139
-   * :ref:`X_1654 <X_1654>` = {:ref:`X_2 <X_2>`,X_2895}-harmonic conjugate of X_17778
+   * :ref:`X_1654 <X_1654>` = {:ref:`X_2 <X_2>`,\ :ref:`X_2895 <X_2895>`}-harmonic conjugate of X_17778
    * :ref:`X_1654 <X_1654>` = perspector of Gemini triangle 39 and cross-triangle of Gemini triangles 39 and 40
    * :ref:`X_1654 <X_1654>` = {:ref:`X_2 <X_2>`,\ :ref:`X_69 <X_69>`}-harmonic conjugate of X_17300
 

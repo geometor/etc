@@ -49,7 +49,7 @@ X_193
 
    * :ref:`X_193 <X_193>` = reflection of X_i in X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`1353 <X_1353>`), (:ref:`4 <X_4>`, :ref:`1351 <X_1351>`), (:ref:`69 <X_69>`, :ref:`6 <X_6>`), (:ref:`1352 <X_1352>`, :ref:`576 <X_576>`)
    * :ref:`X_193 <X_193>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_8770
-   * :ref:`X_193 <X_193>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_2996
+   * :ref:`X_193 <X_193>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_2996 <X_2996>`
    * :ref:`X_193 <X_193>` = :term:`complement <complement>` of X_20080
    * :ref:`X_193 <X_193>` = anticomplement of :ref:`X_69 <X_69>`
    * :ref:`X_193 <X_193>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X_1370 <X_1370>`

@@ -23,8 +23,9 @@ X_1560
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{6, 67} <{ 6, 67 }>`, :g:`{2, 112} <{ 2, 112 }>`
-   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_468 <X_468>` (:ref:`-LINE CONJUGATE OF X(3) <X_468>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_67 <X_67>` (:ref:`ISOGONAL CONJUGATE OF X(23) <X_67>`), :g:`X_112 <X_112>` (:ref:`Ψ(ORTHOCENTER, SYMMEDIAN POINT) <X_112>`)
+   * **Derived Triangle:** :term:`Medial Triangle <medial triangle>` :g:`△M_aM_bM_c << M_a M_b M_c >>` — vertices :g:`M_a <M_a>`, :g:`M_b <M_b>`, :g:`M_c <M_c>` (Formed by the midpoints of sides BC, CA, AB)
+   * **Central Lines:** :g:`{2, 2373} <{ 2, 2373 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_2373 <X_2373>` (:ref:`CIR(X(67)) <X_2373>`)
 
 .. signature:: center
 
@@ -48,7 +49,7 @@ X_1560
 .. collapse:: Functional Relations
    :badge: 8 relations
 
-   * :ref:`X_1560 <X_1560>` = :term:`complement <complement>` of X_2373
+   * :ref:`X_1560 <X_1560>` = :term:`complement <complement>` of :ref:`X_2373 <X_2373>`
    * :ref:`X_1560 <X_1560>` = :ref:`X_2 <X_2>`-Ceva conjugate of :ref:`X_468 <X_468>`
    * :ref:`X_1560 <X_1560>` = :term:`crosspoint <crosspoint>` of :ref:`X_2 <X_2>` and :ref:`X_858 <X_858>`
    * :ref:`X_1560 <X_1560>` = :term:`crosssum <crosssum>` of :ref:`X_6 <X_6>` and :ref:`X_1177 <X_1177>`

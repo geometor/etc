@@ -44,7 +44,7 @@ X_1796
    * :ref:`X_1796 <X_1796>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1839 <X_1839>`
    * :ref:`X_1796 <X_1796>` = :ref:`X_1268 <X_1268>`-Ceva conjugate of :ref:`X_1126 <X_1126>`
    * :ref:`X_1796 <X_1796>` = :term:`cevapoint <cevapoint>` of :ref:`X_3 <X_3>` and :ref:`X_71 <X_71>`
-   * :ref:`X_1796 <X_1796>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of X_2308
+   * :ref:`X_1796 <X_1796>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_2308 <X_2308>`
 
 .. toctree::
    :hidden:

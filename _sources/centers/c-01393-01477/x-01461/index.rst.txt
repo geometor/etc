@@ -45,7 +45,7 @@ X_1461
    * :ref:`X_1461 <X_1461>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`934 <X_934>`, :ref:`109 <X_109>`), (:ref:`1262 <X_1262>`, :ref:`1407 <X_1407>`)
    * :ref:`X_1461 <X_1461>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`649 <X_649>`, :ref:`56 <X_56>`), (:ref:`1407 <X_1407>`, :ref:`1262 <X_1262>`), (:ref:`1415 <X_1415>`, :ref:`109 <X_109>`)
    * :ref:`X_1461 <X_1461>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`1459 <X_1459>`), (:ref:`56 <X_56>`, :ref:`649 <X_649>`)
-   * :ref:`X_1461 <X_1461>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_1146 <X_1146>`\ X_2310
+   * :ref:`X_1461 <X_1461>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_1146 <X_1146>`\ \ :ref:`X_2310 <X_2310>`
    * :ref:`X_1461 <X_1461>` = barycentric product of circumcircle intercepts of the Soddy line
    * :ref:`X_1461 <X_1461>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_31 <X_31>`\ \ :ref:`X_56 <X_56>` (the isogonal conjugate of the :term:`isotomic conjugate <isotomic-conjugate>` of the Soddy line)
 

@@ -49,7 +49,7 @@ X_1734
    * :ref:`X_1734 <X_1734>` = reflection of :ref:`X_1 <X_1>` in :ref:`X_905 <X_905>`
    * :ref:`X_1734 <X_1734>` = :ref:`X_1783 <X_1783>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_1 <X_1>`
    * :ref:`X_1734 <X_1734>` = :term:`crosspoint <crosspoint>` of :ref:`X_75 <X_75>` in :ref:`X_100 <X_100>`
-   * :ref:`X_1734 <X_1734>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`31 <X_31>`, :ref:`513 <X_513>`), (:ref:`652 <X_652>`, 2293), (:ref:`656 <X_656>`, :ref:`1962 <X_1962>`)
+   * :ref:`X_1734 <X_1734>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`31 <X_31>`, :ref:`513 <X_513>`), (:ref:`652 <X_652>`, :ref:`2293 <X_2293>`), (:ref:`656 <X_656>`, :ref:`1962 <X_1962>`)
    * :ref:`X_1734 <X_1734>` = :ref:`X_1783 <X_1783>`-:term:`aleph conjugate <aleph-conjugate>` of :ref:`X_1734 <X_1734>`
 
 .. toctree::

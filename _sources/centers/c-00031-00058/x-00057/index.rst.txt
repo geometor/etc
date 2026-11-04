@@ -74,7 +74,7 @@ X_57
    * :ref:`X_57 <X_57>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_312 <X_312>`
    * :ref:`X_57 <X_57>` = :term:`complement <complement>` of :ref:`X_329 <X_329>`
    * :ref:`X_57 <X_57>` = :term:`anticomplement <anticomplement>` of X_3452
-   * :ref:`X_57 <X_57>` = circumcircle-inverse of X_2078
+   * :ref:`X_57 <X_57>` = circumcircle-inverse of :ref:`X_2078 <X_2078>`
    * :ref:`X_57 <X_57>` = incircle-inverse of X_3660
    * :ref:`X_57 <X_57>` = Bevan-circle-inverse of :ref:`X_1155 <X_1155>`
    * :ref:`X_57 <X_57>` = trilinear product of PU(46)
@@ -90,7 +90,7 @@ X_57
    * :ref:`X_57 <X_57>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`56 <X_56>`), (:ref:`19 <X_19>`, :ref:`208 <X_208>`)
    * :ref:`X_57 <X_57>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`1 <X_1>`), (:ref:`19 <X_19>`, :ref:`84 <X_84>`), (:ref:`56 <X_56>`, :ref:`269 <X_269>`), (:ref:`65 <X_65>`, :ref:`7 <X_7>`)
    * :ref:`X_57 <X_57>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, 3062), (:ref:`2 <X_2>`, :ref:`189 <X_189>`), (:ref:`7 <X_7>`, :ref:`279 <X_279>`), (:ref:`27 <X_27>`, :ref:`81 <X_81>`), (:ref:`85 <X_85>`, :ref:`273 <X_273>`), (:ref:`1014 <X_1014>`, :ref:`1434 <X_1434>`), (:ref:`1659 <X_1659>`, 13390)
-   * :ref:`X_57 <X_57>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`165 <X_165>`), (:ref:`6 <X_6>`, :ref:`198 <X_198>`), (:ref:`31 <X_31>`, :ref:`205 <X_205>`), (:ref:`37 <X_37>`, :ref:`71 <X_71>`), (:ref:`41 <X_41>`, :ref:`212 <X_212>`), (:ref:`55 <X_55>`, :ref:`220 <X_220>`), (:ref:`210 <X_210>`, :ref:`1334 <X_1334>`), (2066, 5414)
+   * :ref:`X_57 <X_57>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`165 <X_165>`), (:ref:`6 <X_6>`, :ref:`198 <X_198>`), (:ref:`31 <X_31>`, :ref:`205 <X_205>`), (:ref:`37 <X_37>`, :ref:`71 <X_71>`), (:ref:`41 <X_41>`, :ref:`212 <X_212>`), (:ref:`55 <X_55>`, :ref:`220 <X_220>`), (:ref:`210 <X_210>`, :ref:`1334 <X_1334>`), (:ref:`2066 <X_2066>`, 5414)
    * :ref:`X_57 <X_57>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_650 <X_650>`\ \ :ref:`X_663 <X_663>`
    * :ref:`X_57 <X_57>` = X_i-:term:`Hirst inverse <hirst-inverse>` of X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`241 <X_241>`), (:ref:`7 <X_7>`, :ref:`1447 <X_1447>`), (:ref:`56 <X_56>`, :ref:`1429 <X_1429>`), (:ref:`105 <X_105>`, :ref:`1462 <X_1462>`), (:ref:`910 <X_910>`, :ref:`1419 <X_1419>`)
    * :ref:`X_57 <X_57>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of 6th mixtilinear triangle

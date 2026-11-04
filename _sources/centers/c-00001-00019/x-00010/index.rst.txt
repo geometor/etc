@@ -64,7 +64,7 @@ X_10
 .. collapse:: Functional Relations
    :badge: 82 relations
 
-   * :ref:`X_10 <X_10>` = midpoint of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`8 <X_8>`), (:ref:`3 <X_3>`, :ref:`355 <X_355>`), (:ref:`4 <X_4>`, :ref:`40 <X_40>`), (:ref:`6 <X_6>`, 3416), (:ref:`10 <X_10>`, 3421), (:ref:`55 <X_55>`, 3419), (:ref:`65 <X_65>`, :ref:`72 <X_72>`), (:ref:`80 <X_80>`, :ref:`100 <X_100>`), (2948, 3448)
+   * :ref:`X_10 <X_10>` = midpoint of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`8 <X_8>`), (:ref:`3 <X_3>`, :ref:`355 <X_355>`), (:ref:`4 <X_4>`, :ref:`40 <X_40>`), (:ref:`6 <X_6>`, 3416), (:ref:`10 <X_10>`, 3421), (:ref:`55 <X_55>`, 3419), (:ref:`65 <X_65>`, :ref:`72 <X_72>`), (:ref:`80 <X_80>`, :ref:`100 <X_100>`), (:ref:`2948 <X_2948>`, 3448)
    * :ref:`X_10 <X_10>` = reflection of X_i in X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`1125 <X_1125>`), (:ref:`551 <X_551>`, :ref:`2 <X_2>`), (:ref:`946 <X_946>`, :ref:`5 <X_5>`), (:ref:`1385 <X_1385>`, :ref:`140 <X_140>`)
    * :ref:`X_10 <X_10>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_58 <X_58>`
    * :ref:`X_10 <X_10>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_86 <X_86>`
@@ -74,7 +74,7 @@ X_10
    * :ref:`X_10 <X_10>` = :term:`complement <complement>` of :ref:`X_1 <X_1>`
    * :ref:`X_10 <X_10>` = :term:`anticomplement <anticomplement>` of :ref:`X_1125 <X_1125>`
    * :ref:`X_10 <X_10>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X_10 <X_10>`
-   * :ref:`X_10 <X_10>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of X_2891
+   * :ref:`X_10 <X_10>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X_2891 <X_2891>`
    * :ref:`X_10 <X_10>` = X_15319-complementary conjugate of X_32767
    * :ref:`X_10 <X_10>` = radical center of the excircles.
    * :ref:`X_10 <X_10>` = radical center of extraversions of Conway circle
@@ -111,7 +111,7 @@ X_10
    * :ref:`X_10 <X_10>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_27 <X_27>` (line :ref:`X_242 <X_242>`\ \ :ref:`X_514 <X_514>`)
    * :ref:`X_10 <X_10>` = :ref:`X_48 <X_48>`-:term:`isoconjugate <isoconjugate>` (polar conjugate)-of-:ref:`X_27 <X_27>`
    * :ref:`X_10 <X_10>` = :ref:`X_6 <X_6>`-isoconjugate of :ref:`X_81 <X_81>`
-   * :ref:`X_10 <X_10>` = :ref:`X_75 <X_75>`-isoconjugate of X_2206
+   * :ref:`X_10 <X_10>` = :ref:`X_75 <X_75>`-isoconjugate of :ref:`X_2206 <X_2206>`
    * :ref:`X_10 <X_10>` = :ref:`X_1101 <X_1101>`-isoconjugate of X_3120
    * :ref:`X_10 <X_10>` = :ref:`X_1 <X_1>`-of-:ref:`X_1 <X_1>`-Brocard triangle
    * :ref:`X_10 <X_10>` = perspector of medial triangle and Ayme triangle

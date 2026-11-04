@@ -41,7 +41,7 @@ X_307
 .. collapse:: Functional Relations
    :badge: 9 relations
 
-   * :ref:`X_307 <X_307>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2299
+   * :ref:`X_307 <X_307>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2299 <X_2299>`
    * :ref:`X_307 <X_307>` = isotomic conjugate of :ref:`X_29 <X_29>`
    * :ref:`X_307 <X_307>` = :ref:`X_349 <X_349>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_226 <X_226>`
    * :ref:`X_307 <X_307>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`72 <X_72>`, :ref:`306 <X_306>`), (:ref:`73 <X_73>`, :ref:`226 <X_226>`)

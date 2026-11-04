@@ -24,7 +24,7 @@ X_537
    :class: note
 
    * **Central Lines:** :g:`{2, 38} <{ 2, 38 }>`, :g:`{1, 190} <{ 1, 190 }>`
-   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_38 <X_38>` (:ref:`CROSSPOINT OF X(1) AND X(75) <X_38>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_190 <X_190>` (:ref:`YFF PARABOLIC POINT <X_190>`)
+   * **Related Centers:** :g:`X_2382 <X_2382>` (:ref:`CIR(X(537)) <X_2382>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_38 <X_38>` (:ref:`CROSSPOINT OF X(1) AND X(75) <X_38>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_190 <X_190>` (:ref:`YFF PARABOLIC POINT <X_190>`)
 
 .. signature:: center
 
@@ -44,7 +44,7 @@ X_537
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X_537 <X_537>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2382
+   * :ref:`X_537 <X_537>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2382 <X_2382>`
    * :ref:`X_537 <X_537>` = perspector of circumconic centered at X_35123
    * :ref:`X_537 <X_537>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of X_35123
    * :ref:`X_537 <X_537>` = :ref:`X_513 <X_513>`-Hirst inverse of :ref:`X_519 <X_519>`

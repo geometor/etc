@@ -55,7 +55,7 @@ X_694
    * :ref:`X_694 <X_694>` = perspector of circumconic centered at :ref:`X_1567 <X_1567>`
    * :ref:`X_694 <X_694>` = center of circumconic that is locus of trilinear poles of lines passing through :ref:`X_1567 <X_1567>`
    * :ref:`X_694 <X_694>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of X_39092
-   * :ref:`X_694 <X_694>` = cevapoint of :ref:`X_6 <X_6>` and X_2076
+   * :ref:`X_694 <X_694>` = cevapoint of :ref:`X_6 <X_6>` and :ref:`X_2076 <X_2076>`
    * :ref:`X_694 <X_694>` = polar conjugate of isotomic conjugate of X_36214
    * :ref:`X_694 <X_694>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of :term:`1st Brocard triangle <1st-brocard-triangle>`
    * :ref:`X_694 <X_694>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of 3rd Brocard triangle

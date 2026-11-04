@@ -43,7 +43,7 @@ X_315
 
    * :ref:`X_315 <X_315>` = midpoint of :ref:`X_637 <X_637>` and :ref:`X_638 <X_638>`
    * :ref:`X_315 <X_315>` = reflection of X_i in X_j for these (i,j): (:ref:`32 <X_32>`, :ref:`626 <X_626>`), (371,640, (:ref:`372 <X_372>`, :ref:`639 <X_639>`)
-   * :ref:`X_315 <X_315>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2353
+   * :ref:`X_315 <X_315>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2353 <X_2353>`
    * :ref:`X_315 <X_315>` = isotomic conjugate of :ref:`X_66 <X_66>`
    * :ref:`X_315 <X_315>` = :term:`anticomplement <anticomplement>` of :ref:`X_32 <X_32>`
    * :ref:`X_315 <X_315>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X_194 <X_194>`

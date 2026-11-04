@@ -8,7 +8,7 @@ X_1823
 
 .. enunciation::
 
-   :ref:`X_1823 <X_1823>` is the :term:`isogonal conjugate <isogonal-conjugate>` of X_2589.
+   :ref:`X_1823 <X_1823>` is the :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2589 <X_2589>`.
 
 .. figure:: x-01823.svg
    :alt: X_1823 — ISOGONAL CONJUGATE OF X_2589

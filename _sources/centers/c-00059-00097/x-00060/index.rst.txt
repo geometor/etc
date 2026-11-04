@@ -51,7 +51,7 @@ X_60
    * :ref:`X_60 <X_60>` = :term:`anticomplement <anticomplement>` of X_34829
    * :ref:`X_60 <X_60>` = :ref:`X_58 <X_58>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_270 <X_270>`
    * :ref:`X_60 <X_60>` = X_i-:term:`beth conjugate <beth-conjugate>` of X_j for these (i,j): (:ref:`60 <X_60>`, :ref:`849 <X_849>`), (:ref:`1098 <X_1098>`, :ref:`1098 <X_1098>`)
-   * :ref:`X_60 <X_60>` = :term:`crossdifference <crossdifference>` of every pair of points on line X_2610X_4024
+   * :ref:`X_60 <X_60>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_2610 <X_2610>`\ X_4024
    * :ref:`X_60 <X_60>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X_59 <X_59>`
    * :ref:`X_60 <X_60>` = :ref:`X_75 <X_75>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_181 <X_181>`
    * :ref:`X_60 <X_60>` = trilinear square of X_6727

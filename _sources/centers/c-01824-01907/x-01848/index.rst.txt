@@ -41,7 +41,7 @@ X_1848
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X_1848 <X_1848>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2359
+   * :ref:`X_1848 <X_1848>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2359 <X_2359>`
    * :ref:`X_1848 <X_1848>` = crosspoint of :ref:`X_27 <X_27>` and :ref:`X_92 <X_92>`
    * :ref:`X_1848 <X_1848>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`42 <X_42>`, :ref:`205 <X_205>`), (:ref:`48 <X_48>`, :ref:`71 <X_71>`)
    * :ref:`X_1848 <X_1848>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_1220 <X_1220>` (line :ref:`X_522 <X_522>`\ \ :ref:`X_649 <X_649>`)

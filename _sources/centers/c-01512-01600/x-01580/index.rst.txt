@@ -43,7 +43,7 @@ X_1580
    * :ref:`X_1580 <X_1580>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1581 <X_1581>`
    * :ref:`X_1580 <X_1580>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_1934 <X_1934>`
    * :ref:`X_1580 <X_1580>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`2 <X_2>`, 39043), (:ref:`1755 <X_1755>`, :ref:`1955 <X_1955>`), (:ref:`1910 <X_1910>`, :ref:`1 <X_1>`), (:ref:`1967 <X_1967>`, :ref:`1582 <X_1582>`)
-   * :ref:`X_1580 <X_1580>` = X_2236-:term:`cross conjugate <cross-conjugate>` of :ref:`X_1966 <X_1966>`
+   * :ref:`X_1580 <X_1580>` = :ref:`X_2236 <X_2236>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_1966 <X_1966>`
    * :ref:`X_1580 <X_1580>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`1755 <X_1755>`, :ref:`1964 <X_1964>`), (:ref:`1965 <X_1965>`, :ref:`1966 <X_1966>`)
    * :ref:`X_1580 <X_1580>` = crossdifference of every pair of points on line :ref:`X_38 <X_38>`\ \ :ref:`X_661 <X_661>`
    * :ref:`X_1580 <X_1580>` = :ref:`X_98 <X_98>`-:term:`aleph conjugate <aleph-conjugate>` of :ref:`X_1755 <X_1755>`

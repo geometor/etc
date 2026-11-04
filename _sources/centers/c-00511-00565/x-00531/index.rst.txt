@@ -24,7 +24,7 @@ X_531
    :class: note
 
    * **Central Lines:** :g:`{2, 14} <{ 2, 14 }>`, :g:`{99, 298} <{ 99, 298 }>`
-   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_14 <X_14>` (:ref:`2nd ISOGONIC CENTER <X_14>`), :g:`X_99 <X_99>` (:ref:`STEINER POINT <X_99>`), :g:`X_298 <X_298>` (:ref:`ISOTOMIC CONJUGATE OF 1st ISOGONIC CENTER <X_298>`)
+   * **Related Centers:** :g:`X_2379 <X_2379>` (:ref:`CIR(X(531)) <X_2379>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_14 <X_14>` (:ref:`2nd ISOGONIC CENTER <X_14>`), :g:`X_99 <X_99>` (:ref:`STEINER POINT <X_99>`), :g:`X_298 <X_298>` (:ref:`ISOTOMIC CONJUGATE OF 1st ISOGONIC CENTER <X_298>`)
 
 .. signature:: center
 
@@ -38,12 +38,12 @@ X_531
    :badge: 9 lines
    :class: line-catalog
 
-   {:ref:`2 <X_2>`, :ref:`14 <X_14>`}, {:ref:`13 <X_13>`, :ref:`671 <X_671>`}, {:ref:`30 <X_30>`, :ref:`511 <X_511>`}, {:ref:`99 <X_99>`, :ref:`298 <X_298>`}, {:ref:`115 <X_115>`, :ref:`396 <X_396>`}, {:ref:`148 <X_148>`, 3180}, {:ref:`187 <X_187>`, :ref:`395 <X_395>`}, {:ref:`299 <X_299>`, :ref:`316 <X_316>`}, {:ref:`618 <X_618>`, 2482}
+   {:ref:`2 <X_2>`, :ref:`14 <X_14>`}, {:ref:`13 <X_13>`, :ref:`671 <X_671>`}, {:ref:`30 <X_30>`, :ref:`511 <X_511>`}, {:ref:`99 <X_99>`, :ref:`298 <X_298>`}, {:ref:`115 <X_115>`, :ref:`396 <X_396>`}, {:ref:`148 <X_148>`, 3180}, {:ref:`187 <X_187>`, :ref:`395 <X_395>`}, {:ref:`299 <X_299>`, :ref:`316 <X_316>`}, {:ref:`618 <X_618>`, :ref:`2482 <X_2482>`}
 
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X_531 <X_531>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_2379
+   * :ref:`X_531 <X_531>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2379 <X_2379>`
 
 .. toctree::
    :hidden:

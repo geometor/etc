@@ -43,7 +43,7 @@ X_1105
 
    * :ref:`X_1105 <X_1105>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_185 <X_185>`
    * :ref:`X_1105 <X_1105>` = cevapoint of :ref:`X_3 <X_3>` and :ref:`X_4 <X_4>`
-   * :ref:`X_1105 <X_1105>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_450 <X_450>`\ X_2451
+   * :ref:`X_1105 <X_1105>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_450 <X_450>`\ \ :ref:`X_2451 <X_2451>`
 
 Notes
 -----
