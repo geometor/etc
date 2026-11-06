@@ -47,7 +47,7 @@ X_261
    * :ref:`X_261 <X_261>` = :ref:`X_873 <X_873>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_1509 <X_1509>`
    * :ref:`X_261 <X_261>` = :term:`cevapoint <cevapoint>` of :ref:`X_21 <X_21>` and :ref:`X_333 <X_333>`
    * :ref:`X_261 <X_261>` = polar conjugate of X_8736
-   * :ref:`X_261 <X_261>` = :term:`trilinear pole <trilinear-pole>` of line X_3904X_3910
+   * :ref:`X_261 <X_261>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_3904 <X_3904>`\ \ :ref:`X_3910 <X_3910>`
 
 .. toctree::
    :hidden:

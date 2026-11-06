@@ -14,9 +14,7 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
-    incenter_of,
     promote_point_to_top,
-    spieker_center_of,
 )
 from geometor.etc.render import write_center_svg
 
@@ -29,12 +27,6 @@ def construct_x_00021(
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)
-    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
-    X_31 = eval_trilinear_point(model, A, B, C, 'a**(2)', ID="X_31", classes=["center", "incident"])
-    central_line(model, X_1, X_31, 1, 31, incident=True)
-    X_10 = spieker_center_of(model, A, B, C, ID="X_10", classes=["center", "incident"])
-    X_35 = eval_trilinear_point(model, A, B, C, '1 + 2*cos(A)', ID="X_35", classes=["center", "incident"])
-    central_line(model, X_10, X_35, 10, 35, incident=True)
     return promote_point_to_top(model, X_21)
 
 

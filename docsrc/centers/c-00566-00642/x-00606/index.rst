@@ -12,7 +12,7 @@ X_606
 
 .. enunciation::
 
-   :ref:`X_606 <X_606>` = :term:`isogonal conjugate <isogonal-conjugate>` of :term:`isotomic conjugate <isotomic-conjugate>` of X_3084
+   :ref:`X_606 <X_606>` = :term:`isogonal conjugate <isogonal-conjugate>` of :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3084 <X_3084>`
 
 .. figure:: x-00606.svg
    :alt: X_606 — INTERSECTION OF LINES X_371X_601 AND X_372X_602
@@ -24,7 +24,7 @@ X_606
    :class: note
 
    * **Central Lines:** :g:`{6, 31} <{ 6, 31 }>`, :g:`{371, 601} <{ 371, 601 }>`
-   * **Related Centers:** :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_31 <X_31>` (:ref:`2nd POWER POINT <X_31>`), :g:`X_371 <X_371>` (:ref:`KENMOTU POINT <X_371>`), :g:`X_601 <X_601>` (:ref:`INTERSECTION OF LINES X <X_601>`)
+   * **Related Centers:** :g:`X_3084 <X_3084>` (:ref:`INTERSECTION OF LINES X <X_3084>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_31 <X_31>` (:ref:`2nd POWER POINT <X_31>`), :g:`X_371 <X_371>` (:ref:`KENMOTU POINT <X_371>`), :g:`X_601 <X_601>` (:ref:`INTERSECTION OF LINES X <X_601>`)
 
 .. signature:: center
 
@@ -46,7 +46,7 @@ X_606
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X_606 <X_606>` = isogonal conjugate of isotomic conjugate of X_3084
+   * :ref:`X_606 <X_606>` = isogonal conjugate of isotomic conjugate of :ref:`X_3084 <X_3084>`
    * :ref:`X_606 <X_606>` = isogonal conjugate of polar conjugate of X_6213
 
 .. toctree::

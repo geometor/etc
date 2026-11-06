@@ -50,7 +50,7 @@ X_352
    * :ref:`X_352 <X_352>` = inverse-in-circumcircle of :ref:`X_353 <X_353>`
    * :ref:`X_352 <X_352>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_373 <X_373>`\ \ :ref:`X_512 <X_512>`
    * :ref:`X_352 <X_352>` = :ref:`X_23 <X_23>`-of-circumsymmedial-triangle
-   * :ref:`X_352 <X_352>` = inverse-in-{circumcircle, nine-point circle}-inverter of X_3815
+   * :ref:`X_352 <X_352>` = inverse-in-{circumcircle, nine-point circle}-inverter of :ref:`X_3815 <X_3815>`
    * :ref:`X_352 <X_352>` = orthocentroidal-to-:g:`ABC << A B C >>` :term:`similarity image <similarity-image>` of :ref:`X_111 <X_111>`
    * :ref:`X_352 <X_352>` = 4th-Brocard-to-circumsymmedial similarity image of :ref:`X_111 <X_111>`
    * :ref:`X_352 <X_352>` = :ref:`X_2709 <X_2709>`-of-1st-Parry-triangle

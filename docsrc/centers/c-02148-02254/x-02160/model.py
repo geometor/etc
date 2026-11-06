@@ -9,7 +9,6 @@ from geometor.model import Model
 
 from geometor.etc.ops import (
     central_line,
-    cevapoint,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
@@ -23,9 +22,7 @@ def construct_x_02160(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_2160 = X_2-ISOCONJUGATE OF X_35 on reference triangle ABC."""
-    X_1652 = eval_trilinear_point(model, A, B, C, 'sqrt(3/4) - cos(A -  pi  /6) + cos(B -  pi  /6) + cos(C -  pi  /6)', ID="X_1652", classes=["center"])
-    X_1653 = eval_trilinear_point(model, A, B, C, '- sqrt(3/4) + cos(A +  pi  /6) - cos(B +  pi  /6) - cos(C +  pi  /6)', ID="X_1653", classes=["center"])
-    X_2160 = cevapoint(model, A, B, C, X_1652, X_1653, ID="X_2160", classes=["selected", "target"])
+    X_2160 = eval_trilinear_point(model, A, B, C, '(sin(A))/(1 + 2*cos(A))', ID="X_2160", classes=["selected", "target"])
     X_9 = mittenpunkt_of(model, A, B, C, ID="X_9", classes=["center", "incident"])
     X_46 = eval_trilinear_point(model, A, B, C, 'cos(B) + cos(C) - cos(A)', ID="X_46", classes=["center", "incident"])
     central_line(model, X_9, X_46, 9, 46, incident=True)

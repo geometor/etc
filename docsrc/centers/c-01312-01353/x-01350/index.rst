@@ -47,21 +47,21 @@ X_1350
    :badge: 15 lines
    :class: line-catalog
 
-   {:ref:`2 <X_2>`, 3066}, {:ref:`3 <X_3>`, :ref:`6 <X_6>`}, {:ref:`4 <X_4>`, :ref:`141 <X_141>`}, {:ref:`20 <X_20>`, :ref:`64 <X_64>`}, {:ref:`22 <X_22>`, :ref:`110 <X_110>`}, {:ref:`30 <X_30>`, :ref:`599 <X_599>`}, {:ref:`35 <X_35>`, :ref:`611 <X_611>`}, {:ref:`36 <X_36>`, :ref:`613 <X_613>`}, {:ref:`40 <X_40>`, :ref:`518 <X_518>`}, {:ref:`74 <X_74>`, :ref:`1296 <X_1296>`}, {:ref:`103 <X_103>`, :ref:`1293 <X_1293>`}, {:ref:`206 <X_206>`, :ref:`1092 <X_1092>`}, {:ref:`343 <X_343>`, :ref:`1370 <X_1370>`}, {:ref:`376 <X_376>`, :ref:`524 <X_524>`}, {:ref:`517 <X_517>`, :ref:`990 <X_990>`}
+   {:ref:`2 <X_2>`, :ref:`3066 <X_3066>`}, {:ref:`3 <X_3>`, :ref:`6 <X_6>`}, {:ref:`4 <X_4>`, :ref:`141 <X_141>`}, {:ref:`20 <X_20>`, :ref:`64 <X_64>`}, {:ref:`22 <X_22>`, :ref:`110 <X_110>`}, {:ref:`30 <X_30>`, :ref:`599 <X_599>`}, {:ref:`35 <X_35>`, :ref:`611 <X_611>`}, {:ref:`36 <X_36>`, :ref:`613 <X_613>`}, {:ref:`40 <X_40>`, :ref:`518 <X_518>`}, {:ref:`74 <X_74>`, :ref:`1296 <X_1296>`}, {:ref:`103 <X_103>`, :ref:`1293 <X_1293>`}, {:ref:`206 <X_206>`, :ref:`1092 <X_1092>`}, {:ref:`343 <X_343>`, :ref:`1370 <X_1370>`}, {:ref:`376 <X_376>`, :ref:`524 <X_524>`}, {:ref:`517 <X_517>`, :ref:`990 <X_990>`}
 
 .. collapse:: Functional Relations
    :badge: 10 relations
 
    * :ref:`X_1350 <X_1350>` = midpoint of :ref:`X_20 <X_20>` and :ref:`X_69 <X_69>`
    * :ref:`X_1350 <X_1350>` = reflection of X_i in X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`141 <X_141>`), (:ref:`6 <X_6>`, :ref:`3 <X_3>`), (:ref:`1351 <X_1351>`, :ref:`182 <X_182>`), (:ref:`1498 <X_1498>`, :ref:`159 <X_159>`)
-   * :ref:`X_1350 <X_1350>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3424
+   * :ref:`X_1350 <X_1350>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3424 <X_3424>`
    * :ref:`X_1350 <X_1350>` = :ref:`X_6 <X_6>` of circumcevian triangle of :ref:`X_511 <X_511>`
    * :ref:`X_1350 <X_1350>` = radical center of Lucas(-tan ω) circles
    * :ref:`X_1350 <X_1350>` = {:ref:`X_182 <X_182>`,\ :ref:`X_1351 <X_1351>`}-harmonic conjugate of :ref:`X_6 <X_6>`
    * :ref:`X_1350 <X_1350>` = inverse-in-2nd-Brocard-circle of X_5188
    * :ref:`X_1350 <X_1350>` = antipedal-isogonal conjugate of :ref:`X_6 <X_6>`
    * :ref:`X_1350 <X_1350>` = :ref:`X_53 <X_53>`-of-the-hexyl-triangle
-   * :ref:`X_1350 <X_1350>` = exsimilicenter of circle centered at :ref:`X_1151 <X_1151>` through :ref:`X_372 <X_372>` and circle centered at :ref:`X_1152 <X_1152>` through :ref:`X_371 <X_371>`; the insimilicenter is X_3053
+   * :ref:`X_1350 <X_1350>` = exsimilicenter of circle centered at :ref:`X_1151 <X_1151>` through :ref:`X_372 <X_372>` and circle centered at :ref:`X_1152 <X_1152>` through :ref:`X_371 <X_371>`; the insimilicenter is :ref:`X_3053 <X_3053>`
 
 Notes
 -----

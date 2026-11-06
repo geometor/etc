@@ -29,7 +29,7 @@ X_2285
 .. signature:: center
 
    | **Trilinears:** :math:`a/f(a,b,c) : b/f(b,c,a) : c/f(c,a,b)`, where f(a,b,c) is as in :ref:`X_1036 <X_1036>`
-   | **Search Value (6, 9, 13):** :math:`0.542275931742`
+   | **Search Value (6, 9, 13):** :math:`0.487722982943`
 
 .. collapse:: Alternate Coordinates
    :badge: 2 forms

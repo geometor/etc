@@ -43,7 +43,7 @@ X_306
 
    * :ref:`X_306 <X_306>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1474 <X_1474>`
    * :ref:`X_306 <X_306>` = isotomic conjugate of :ref:`X_27 <X_27>`
-   * :ref:`X_306 <X_306>` = :term:`complement <complement>` of X_3187
+   * :ref:`X_306 <X_306>` = :term:`complement <complement>` of :ref:`X_3187 <X_3187>`
    * :ref:`X_306 <X_306>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`69 <X_69>`, :ref:`72 <X_72>`), (:ref:`312 <X_312>`, :ref:`321 <X_321>`), (:ref:`313 <X_313>`, :ref:`10 <X_10>`)
    * :ref:`X_306 <X_306>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`71 <X_71>`, :ref:`10 <X_10>`), (:ref:`72 <X_72>`, :ref:`307 <X_307>`), (:ref:`440 <X_440>`, :ref:`2 <X_2>`)
    * :ref:`X_306 <X_306>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`69 <X_69>`, :ref:`304 <X_304>`), (:ref:`312 <X_312>`, :ref:`345 <X_345>`)

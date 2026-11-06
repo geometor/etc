@@ -41,7 +41,7 @@ X_158
    :badge: 15 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, :ref:`29 <X_29>`}, {:ref:`3 <X_3>`, :ref:`243 <X_243>`}, {:ref:`4 <X_4>`, :ref:`65 <X_65>`}, {:ref:`10 <X_10>`, :ref:`318 <X_318>`}, {:ref:`37 <X_37>`, :ref:`281 <X_281>`}, {:ref:`46 <X_46>`, :ref:`412 <X_412>`}, {:ref:`47 <X_47>`, :ref:`162 <X_162>`}, {:ref:`75 <X_75>`, :ref:`240 <X_240>`}, {:ref:`107 <X_107>`, :ref:`759 <X_759>`}, {:ref:`225 <X_225>`, :ref:`1093 <X_1093>`}, {:ref:`255 <X_255>`, :ref:`775 <X_775>`}, {:ref:`286 <X_286>`, :ref:`969 <X_969>`}, {:ref:`823 <X_823>`, :ref:`897 <X_897>`}, {:ref:`920 <X_920>`, :ref:`921 <X_921>`}, {:ref:`1068 <X_1068>`, 3542}
+   {:ref:`1 <X_1>`, :ref:`29 <X_29>`}, {:ref:`3 <X_3>`, :ref:`243 <X_243>`}, {:ref:`4 <X_4>`, :ref:`65 <X_65>`}, {:ref:`10 <X_10>`, :ref:`318 <X_318>`}, {:ref:`37 <X_37>`, :ref:`281 <X_281>`}, {:ref:`46 <X_46>`, :ref:`412 <X_412>`}, {:ref:`47 <X_47>`, :ref:`162 <X_162>`}, {:ref:`75 <X_75>`, :ref:`240 <X_240>`}, {:ref:`107 <X_107>`, :ref:`759 <X_759>`}, {:ref:`225 <X_225>`, :ref:`1093 <X_1093>`}, {:ref:`255 <X_255>`, :ref:`775 <X_775>`}, {:ref:`286 <X_286>`, :ref:`969 <X_969>`}, {:ref:`823 <X_823>`, :ref:`897 <X_897>`}, {:ref:`920 <X_920>`, :ref:`921 <X_921>`}, {:ref:`1068 <X_1068>`, :ref:`3542 <X_3542>`}
 
 .. collapse:: Functional Relations
    :badge: 12 relations
@@ -53,7 +53,7 @@ X_158
    * :ref:`X_158 <X_158>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_680 <X_680>`\ \ :ref:`X_822 <X_822>`
    * :ref:`X_158 <X_158>` = X_i-:term:`aleph conjugate <aleph-conjugate>` of X_j for these (i,j): (:ref:`821 <X_821>`, :ref:`158 <X_158>`), (:ref:`1105 <X_1105>`, :ref:`255 <X_255>`)
    * :ref:`X_158 <X_158>` = :ref:`X_107 <X_107>`-beth conjugate of :ref:`X_34 <X_34>`
-   * :ref:`X_158 <X_158>` = :term:`trilinear pole <trilinear-pole>` of polar of :ref:`X_63 <X_63>` wrt polar circle (line :ref:`X_661 <X_661>`\ X_3064)
+   * :ref:`X_158 <X_158>` = :term:`trilinear pole <trilinear-pole>` of polar of :ref:`X_63 <X_63>` wrt polar circle (line :ref:`X_661 <X_661>`\ \ :ref:`X_3064 <X_3064>`)
    * :ref:`X_158 <X_158>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_63 <X_63>` (line :ref:`X_521 <X_521>`\ \ :ref:`X_656 <X_656>`)
    * :ref:`X_158 <X_158>` = polar conjugate of :ref:`X_63 <X_63>`
    * :ref:`X_158 <X_158>` = trilinear product of :ref:`X_1123 <X_1123>` and :ref:`X_1336 <X_1336>`

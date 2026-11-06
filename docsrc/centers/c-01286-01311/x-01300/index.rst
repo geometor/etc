@@ -57,8 +57,8 @@ X_1300
    * :ref:`X_1300 <X_1300>` = Λ(:ref:`X_5 <X_5>`, :ref:`X_389 <X_389>`)
    * :ref:`X_1300 <X_1300>` = :term:`anticomplement <anticomplement>` of :ref:`X_131 <X_131>`
    * :ref:`X_1300 <X_1300>` = inverse-in-polar-circle of :ref:`X_113 <X_113>`
-   * :ref:`X_1300 <X_1300>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X_3580
-   * :ref:`X_1300 <X_1300>` = :ref:`X_48 <X_48>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of X_3580
+   * :ref:`X_1300 <X_1300>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_3580 <X_3580>`
+   * :ref:`X_1300 <X_1300>` = :ref:`X_48 <X_48>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X_3580 <X_3580>`
    * :ref:`X_1300 <X_1300>` = :term:`eigencenter <eigencenter>` of circumanticevian triangle of :ref:`X_3 <X_3>`
    * :ref:`X_1300 <X_1300>` = the point of intersection, other than :g:`A <A>`, :g:`B <B>`, :g:`C <C>`, of the circumcircle and hyperbola {{:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_4 <X_4>`,\ :ref:`X_93 <X_93>`}} (circumconic centered at :ref:`X_136 <X_136>`)
 

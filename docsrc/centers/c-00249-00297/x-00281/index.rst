@@ -61,9 +61,9 @@ X_281
    * :ref:`X_281 <X_281>` = pole, wrt polar circle, of Gergonne line
    * :ref:`X_281 <X_281>` = :ref:`X_48 <X_48>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X_7 <X_7>`
    * :ref:`X_281 <X_281>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_1459 <X_1459>`\ \ :ref:`X_1946 <X_1946>`
-   * :ref:`X_281 <X_281>` = :term:`trilinear pole <trilinear-pole>` of line X_3064X_3700 (the polar of :ref:`X_7 <X_7>` wrt polar circle)
+   * :ref:`X_281 <X_281>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_3064 <X_3064>`\ \ :ref:`X_3700 <X_3700>` (the polar of :ref:`X_7 <X_7>` wrt polar circle)
    * :ref:`X_281 <X_281>` = perspector of Gemini triangle 37 and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 37
-   * :ref:`X_281 <X_281>` = trilinear pole of line X_3064X_3700 (the perspectrix of :g:`ABC << A B C >>` and Gemini triangle 38)
+   * :ref:`X_281 <X_281>` = trilinear pole of line :ref:`X_3064 <X_3064>`\ \ :ref:`X_3700 <X_3700>` (the perspectrix of :g:`ABC << A B C >>` and Gemini triangle 38)
 
 Notes
 -----

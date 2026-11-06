@@ -54,7 +54,7 @@ X_123
    * :ref:`X_123 <X_123>` = :ref:`X_108 <X_108>`-of-:term:`medial triangle <medial-triangle>`
    * :ref:`X_123 <X_123>` = Stevanovic-circle-inverse of X_38972
    * :ref:`X_123 <X_123>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_1415 <X_1415>`\ \ :ref:`X_2443 <X_2443>`
-   * :ref:`X_123 <X_123>` = trilinear product X_i\*X_j for these {i,j}: {3436, 7004}, {6332, 6588}
+   * :ref:`X_123 <X_123>` = trilinear product X_i\*X_j for these {i,j}: {:ref:`3436 <X_3436>`, 7004}, {6332, 6588}
 
 .. toctree::
    :hidden:

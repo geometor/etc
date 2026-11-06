@@ -12,6 +12,7 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    incenter_of,
     intersect_lines,
     orthocenter_of,
     point_from_barycentrics,
@@ -31,6 +32,9 @@ def construct_x_02130(
     central_line(model, X_4, X_1073, 4, 1073)
     central_line(model, X_20, X_2131, 20, 2131)
     X_2130 = intersect_lines(model, X_4, X_1073, X_20, X_2131, ID="X_2130", classes=["selected", "target"])
+    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
+    X_3347 = point_from_barycentrics(model, A, B, C, 0.82737762, 0.71982677, -0.54720439, ID="X_3347", classes=["center", "incident"])
+    central_line(model, X_1, X_3347, 1, 3347, incident=True)
     return promote_point_to_top(model, X_2130)
 
 

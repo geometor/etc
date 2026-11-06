@@ -52,9 +52,9 @@ X_165
 .. collapse:: Functional Relations
    :badge: 17 relations
 
-   * :ref:`X_165 <X_165>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3062
+   * :ref:`X_165 <X_165>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3062 <X_3062>`
    * :ref:`X_165 <X_165>` = :ref:`X_9 <X_9>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_1 <X_1>`
-   * :ref:`X_165 <X_165>` = :term:`anticomplement <anticomplement>` of X_3817
+   * :ref:`X_165 <X_165>` = :term:`anticomplement <anticomplement>` of :ref:`X_3817 <X_3817>`
    * :ref:`X_165 <X_165>` = :ref:`X_2 <X_2>`-of-1st-circumperp-triangle
    * :ref:`X_165 <X_165>` = homothetic center of :g:`ABC << A B C >>` and :term:`orthic triangle <orthic-triangle>` of 1st circumperp triangle
    * :ref:`X_165 <X_165>` = homothetic center of :term:`excentral triangle <excentral-triangle>` and :term:`medial triangle <medial-triangle>` of 1st circumperp triangle

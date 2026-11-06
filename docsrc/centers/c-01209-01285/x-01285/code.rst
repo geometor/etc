@@ -8,7 +8,7 @@ X_1285
 
 .. enunciation::
 
-   :ref:`X_1285 <X_1285>` is the homothetic center of the :term:`antipedal triangle <antipedal-triangle>` of :ref:`X_2 <X_2>` and the :term:`pedal triangle <pedal-triangle>` of :ref:`X_6 <X_6>`. (:person:`Darij Grinberg <darij-grinberg>`, :cite:`Hyacinthos #6577 <hyacinthos>`, 2/21/03). See also X_3066.
+   :ref:`X_1285 <X_1285>` is the homothetic center of the :term:`antipedal triangle <antipedal-triangle>` of :ref:`X_2 <X_2>` and the :term:`pedal triangle <pedal-triangle>` of :ref:`X_6 <X_6>`. (:person:`Darij Grinberg <darij-grinberg>`, :cite:`Hyacinthos #6577 <hyacinthos>`, 2/21/03). See also :ref:`X_3066 <X_3066>`.
 
 .. figure:: x-01285.svg
    :alt: X_1285 — LEMOINE HOMOTHETIC CENTER

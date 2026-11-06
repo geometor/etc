@@ -27,6 +27,9 @@ def construct_x_01374(
     X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
     X_7 = gergonne_point_of(model, A, B, C, ID="X_7", classes=["center", "incident"])
     central_line(model, X_1, X_7, 1, 7, incident=True)
+    X_226 = eval_trilinear_point(model, A, B, C, '(csc(A))*(cos(B) + cos(C))', ID="X_226", classes=["center", "incident"])
+    X_3316 = eval_trilinear_point(model, A, B, C, '1/(cos(A) + 2*sin(A))', ID="X_3316", classes=["center", "incident"])
+    central_line(model, X_226, X_3316, 226, 3316, incident=True)
     return promote_point_to_top(model, X_1374)
 
 

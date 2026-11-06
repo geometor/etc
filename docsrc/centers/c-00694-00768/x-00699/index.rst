@@ -48,8 +48,8 @@ X_699
    * :ref:`X_699 <X_699>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_698 <X_698>`
    * :ref:`X_699 <X_699>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_35524
    * :ref:`X_699 <X_699>` = :ref:`X_385 <X_385>`-cross conjugate of :ref:`X_251 <X_251>`
-   * :ref:`X_699 <X_699>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_6 <X_6>`\ X_3221
-   * :ref:`X_699 <X_699>` = Ψ(:ref:`X_6 <X_6>`, X_3221)
+   * :ref:`X_699 <X_699>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_6 <X_6>`\ \ :ref:`X_3221 <X_3221>`
+   * :ref:`X_699 <X_699>` = Ψ(:ref:`X_6 <X_6>`, :ref:`X_3221 <X_3221>`)
    * :ref:`X_699 <X_699>` = :term:`cevapoint <cevapoint>` of :ref:`X_32 <X_32>` and :ref:`X_1691 <X_1691>`
 
 .. toctree::

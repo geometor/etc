@@ -41,7 +41,7 @@ X_1461
 .. collapse:: Functional Relations
    :badge: 7 relations
 
-   * :ref:`X_1461 <X_1461>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3239
+   * :ref:`X_1461 <X_1461>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3239 <X_3239>`
    * :ref:`X_1461 <X_1461>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`934 <X_934>`, :ref:`109 <X_109>`), (:ref:`1262 <X_1262>`, :ref:`1407 <X_1407>`)
    * :ref:`X_1461 <X_1461>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`649 <X_649>`, :ref:`56 <X_56>`), (:ref:`1407 <X_1407>`, :ref:`1262 <X_1262>`), (:ref:`1415 <X_1415>`, :ref:`109 <X_109>`)
    * :ref:`X_1461 <X_1461>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`1459 <X_1459>`), (:ref:`56 <X_56>`, :ref:`649 <X_649>`)

@@ -51,7 +51,7 @@ X_360
    * :ref:`X_3 <X_3>` = Hofstadter 2 point = antigonal image of :ref:`X_265 <X_265>`
    * :ref:`X_4 <X_4>` = Hofstadter -1 point
    * :ref:`X_35 <X_35>` = Hofstadter 3/2 point
-   * :ref:`X_79 <X_79>` = Hofstadter -1/2 point = antigonal image of X_3065
+   * :ref:`X_79 <X_79>` = Hofstadter -1/2 point = antigonal image of :ref:`X_3065 <X_3065>`
    * :ref:`X_186 <X_186>` = Hofstadter 3 point = antigonal image of X_5962
    * :ref:`X_265 <X_265>` = Hofstadter -2 point = antigonal image of :ref:`X_3 <X_3>`
    * :ref:`X_357 <X_357>` = Hofstadter 1/3 point

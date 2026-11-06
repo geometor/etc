@@ -49,9 +49,9 @@ X_1974
    * :ref:`X_1974 <X_1974>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_305 <X_305>`
    * :ref:`X_1974 <X_1974>` = :ref:`X_25 <X_25>`-Ceva conjugate of :ref:`X_32 <X_32>`
    * :ref:`X_1974 <X_1974>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these {i,j}: {:ref:`6 <X_6>`, 34207}, {:ref:`1395 <X_1395>`, :ref:`1973 <X_1973>`}
-   * :ref:`X_1974 <X_1974>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`1370 <X_1370>`), (:ref:`304 <X_304>`, 3718), (:ref:`339 <X_339>`, 3267)
-   * :ref:`X_1974 <X_1974>` = :term:`crossdifference <crossdifference>` of every pair of points on the line :ref:`X_525 <X_525>`\ X_3267
-   * :ref:`X_1974 <X_1974>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of X_3926
+   * :ref:`X_1974 <X_1974>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`1370 <X_1370>`), (:ref:`304 <X_304>`, :ref:`3718 <X_3718>`), (:ref:`339 <X_339>`, :ref:`3267 <X_3267>`)
+   * :ref:`X_1974 <X_1974>` = :term:`crossdifference <crossdifference>` of every pair of points on the line :ref:`X_525 <X_525>`\ \ :ref:`X_3267 <X_3267>`
+   * :ref:`X_1974 <X_1974>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_3926 <X_3926>`
    * :ref:`X_1974 <X_1974>` = trilinear product of vertices of Ara triangle
    * :ref:`X_1974 <X_1974>` = polar conjugate of :ref:`X_1502 <X_1502>`
    * :ref:`X_1974 <X_1974>` = barycentric product of intersections of circumcircle and 2nd Lemoine circle

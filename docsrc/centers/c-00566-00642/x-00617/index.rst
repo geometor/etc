@@ -51,7 +51,7 @@ X_617
    :badge: 7 relations
 
    * :ref:`X_617 <X_617>` = reflection of X_i in X_j for these (i,j): (:ref:`14 <X_14>`, :ref:`619 <X_619>`), (:ref:`148 <X_148>`, :ref:`13 <X_13>`), (:ref:`616 <X_616>`, :ref:`99 <X_99>`), (:ref:`622 <X_622>`, :ref:`299 <X_299>`)
-   * :ref:`X_617 <X_617>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3441
+   * :ref:`X_617 <X_617>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3441 <X_3441>`
    * :ref:`X_617 <X_617>` = anticomplement of :ref:`X_14 <X_14>`
    * :ref:`X_617 <X_617>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X_622 <X_622>`
    * :ref:`X_617 <X_617>` = antigonal conjugate of X_39133

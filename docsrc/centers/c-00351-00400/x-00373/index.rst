@@ -54,7 +54,7 @@ X_373
    * :ref:`X_373 <X_373>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_11169
    * :ref:`X_373 <X_373>` = :term:`isotomic conjugate <isotomic-conjugate>` of polar conjugate of X_33842
    * :ref:`X_373 <X_373>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_352 <X_352>`\ \ :ref:`X_1499 <X_1499>`
-   * :ref:`X_373 <X_373>` = {:ref:`X_2 <X_2>`,\ :ref:`X_51 <X_51>`}-harmonic conjugate of X_3917
+   * :ref:`X_373 <X_373>` = {:ref:`X_2 <X_2>`,\ :ref:`X_51 <X_51>`}-harmonic conjugate of :ref:`X_3917 <X_3917>`
 
 .. toctree::
    :hidden:

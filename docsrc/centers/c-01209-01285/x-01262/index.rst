@@ -40,7 +40,7 @@ X_1262
    * :ref:`X_1262 <X_1262>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`101 <X_101>`), (:ref:`6 <X_6>`, :ref:`109 <X_109>`)
    * :ref:`X_1262 <X_1262>` = cevapoint of circumcircle intercepts of line :ref:`X_6 <X_6>`\ \ :ref:`X_41 <X_41>` (or of circle {{:ref:`X_1 <X_1>`,\ :ref:`X_15 <X_15>`,\ :ref:`X_16 <X_16>`}} (V(:ref:`X_1 <X_1>`))
    * :ref:`X_1262 <X_1262>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_109 <X_109>`\ \ :ref:`X_692 <X_692>` (the tangent to the circumcircle at :ref:`X_109 <X_109>`)
-   * :ref:`X_1262 <X_1262>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of X_3270
+   * :ref:`X_1262 <X_1262>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_3270 <X_3270>`
 
 .. toctree::
    :hidden:

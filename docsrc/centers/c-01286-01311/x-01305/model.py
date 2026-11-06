@@ -13,7 +13,6 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
-    point_from_barycentrics,
     promote_point_to_top,
     reflection_in_point,
 )
@@ -31,7 +30,7 @@ def construct_x_01305(
     X_103 = eval_trilinear_point(model, A, B, C, 'a/((a - b)*cot(C) + (a - c)*cot(B))', ID="X_103", classes=["center", "incident"])
     central_line(model, X_20, X_103, 20, 103, incident=True)
     X_106 = eval_trilinear_point(model, A, B, C, 'a/(2*a - b - c)', ID="X_106", classes=["center", "incident"])
-    X_347 = point_from_barycentrics(model, A, B, C, 0.57303371, 0.49438202, -0.06741573, ID="X_347", classes=["center", "incident"])
+    X_347 = eval_trilinear_point(model, A, B, C, '((-1 - cos(A) + cos(B) + cos(C))*(sec(A/2))**(2))', ID="X_347", classes=["center", "incident"])
     central_line(model, X_106, X_347, 106, 347, incident=True)
     X_22 = eval_trilinear_point(model, A, B, C, 'a*(b**(4) + c**(4) - a**(4))', ID="X_22", classes=["center", "incident"])
     X_675 = eval_trilinear_point(model, A, B, C, '(b*c/(b**(3) + c**(3) - a*(b**(2) + c**(2))))', ID="X_675", classes=["center", "incident"])

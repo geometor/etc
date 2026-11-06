@@ -31,7 +31,7 @@ X_634
 
    | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = (S_{B}S_{C} - 2 \sqrt{3} S_{A} \operatorname{area})/a`
    | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a,b,c)`
-   | **Search Value (6, 9, 13):** :math:`7.363776631040`
+   | **Search Value (6, 9, 13):** :math:`8.637509400092`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
@@ -48,7 +48,7 @@ X_634
    :badge: 4 relations
 
    * :ref:`X_634 <X_634>` = reflection of X_i in X_j for these (i,j): (:ref:`62 <X_62>`, :ref:`636 <X_636>`), (:ref:`61 <X_61>`, :ref:`635 <X_635>`)
-   * :ref:`X_634 <X_634>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3443
+   * :ref:`X_634 <X_634>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3443 <X_3443>`
    * :ref:`X_634 <X_634>` = anticomplement of :ref:`X_62 <X_62>`
    * :ref:`X_634 <X_634>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X_628 <X_628>`
 

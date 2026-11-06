@@ -8,7 +8,7 @@ X_1162
 
 .. enunciation::
 
-   :ref:`X_1162 <X_1162>` = :ref:`X_4 <X_4>`-:term:`Ceva conjugate <ceva-conjugate>` of X_3127
+   :ref:`X_1162 <X_1162>` = :ref:`X_4 <X_4>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_3127 <X_3127>`
 
 .. figure:: x-01162.svg
    :alt: X_1162 — OUTER GREBE-ORTHIC PERSPECTOR

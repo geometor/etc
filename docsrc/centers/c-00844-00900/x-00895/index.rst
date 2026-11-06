@@ -23,8 +23,8 @@ X_895
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{6, 110} <{ 6, 110 }>`, :g:`{69, 125} <{ 69, 125 }>`
-   * **Related Centers:** :g:`X_468 <X_468>` (:ref:`-LINE CONJUGATE OF X(3) <X_468>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_110 <X_110>` (:ref:`FOCUS OF KIEPERT PARABOLA <X_110>`), :g:`X_69 <X_69>` (:ref:`SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE <X_69>`), :g:`X_125 <X_125>` (:ref:`CENTER OF JERABEK HYPERBOLA <X_125>`)
+   * **Central Lines:** :g:`{193, 3448} <{ 193, 3448 }>`
+   * **Related Centers:** :g:`X_193 <X_193>` (:ref:`-CEVA CONJUGATE OF X(2) <X_193>`), :g:`X_3448 <X_3448>` (:ref:`ISOGONAL CONJUGATE OF X(3447) <X_3448>`)
 
 .. signature:: center
 
@@ -44,7 +44,7 @@ X_895
 .. collapse:: Functional Relations
    :badge: 15 relations
 
-   * :ref:`X_895 <X_895>` = midpoint of :ref:`X_193 <X_193>` and X_3448
+   * :ref:`X_895 <X_895>` = midpoint of :ref:`X_193 <X_193>` and :ref:`X_3448 <X_3448>`
    * :ref:`X_895 <X_895>` = reflection of X_i in X_j for these (i,j): (:ref:`69 <X_69>`, :ref:`125 <X_125>`), (:ref:`110 <X_110>`, :ref:`6 <X_6>`)
    * :ref:`X_895 <X_895>` = isogonal conjugate of :ref:`X_468 <X_468>`
    * :ref:`X_895 <X_895>` = :term:`anticomplement <anticomplement>` of X_5181

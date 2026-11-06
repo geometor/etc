@@ -48,8 +48,8 @@ X_2321
 
    * :ref:`X_2321 <X_2321>` = isogonal conjugate of :ref:`X_1412 <X_1412>`
    * :ref:`X_2321 <X_2321>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_1434 <X_1434>`
-   * :ref:`X_2321 <X_2321>` = :term:`complement <complement>` of X_3875
-   * :ref:`X_2321 <X_2321>` = :term:`anticomplement <anticomplement>` of X_3946
+   * :ref:`X_2321 <X_2321>` = :term:`complement <complement>` of :ref:`X_3875 <X_3875>`
+   * :ref:`X_2321 <X_2321>` = :term:`anticomplement <anticomplement>` of :ref:`X_3946 <X_3946>`
    * :ref:`X_2321 <X_2321>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of anticomplement of X_38825
    * :ref:`X_2321 <X_2321>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for (i,j )= (8,210), (321,10), (646,522)
    * :ref:`X_2321 <X_2321>` = :term:`cevapoint <cevapoint>` of :ref:`X_1334 <X_1334>` and :ref:`X_2318 <X_2318>`

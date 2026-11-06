@@ -41,7 +41,7 @@ X_1462
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X_1462 <X_1462>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3693
+   * :ref:`X_1462 <X_1462>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3693 <X_3693>`
    * :ref:`X_1462 <X_1462>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`1428 <X_1428>`, :ref:`1014 <X_1014>`), (:ref:`1438 <X_1438>`, :ref:`105 <X_105>`), (:ref:`1456 <X_1456>`, :ref:`269 <X_269>`)
    * :ref:`X_1462 <X_1462>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`1279 <X_1279>`), (:ref:`57 <X_57>`, :ref:`1429 <X_1429>`), (:ref:`1416 <X_1416>`, :ref:`1438 <X_1438>`)
    * :ref:`X_1462 <X_1462>` = X_i-:term:`Hirst inverse <hirst-inverse>` of X_j for these (i,j): (:ref:`57 <X_57>`, :ref:`105 <X_105>`)

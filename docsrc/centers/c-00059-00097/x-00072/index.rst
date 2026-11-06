@@ -55,10 +55,10 @@ X_72
 .. collapse:: Functional Relations
    :badge: 24 relations
 
-   * :ref:`X_72 <X_72>` = reflection of X_i in X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`960 <X_960>`), (:ref:`65 <X_65>`, :ref:`10 <X_10>`), (:ref:`1145 <X_1145>`, 14740), (3555, :ref:`1 <X_1>`)
+   * :ref:`X_72 <X_72>` = reflection of X_i in X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`960 <X_960>`), (:ref:`65 <X_65>`, :ref:`10 <X_10>`), (:ref:`1145 <X_1145>`, 14740), (:ref:`3555 <X_3555>`, :ref:`1 <X_1>`)
    * :ref:`X_72 <X_72>` = isogonal conjugate of :ref:`X_28 <X_28>`
    * :ref:`X_72 <X_72>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_286 <X_286>`
-   * :ref:`X_72 <X_72>` = inverse-in-Fuhrmann circle of X_3419
+   * :ref:`X_72 <X_72>` = inverse-in-Fuhrmann circle of :ref:`X_3419 <X_3419>`
    * :ref:`X_72 <X_72>` = :term:`anticomplement <anticomplement>` of :ref:`X_942 <X_942>`
    * :ref:`X_72 <X_72>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`8 <X_8>`, :ref:`10 <X_10>`), (:ref:`63 <X_63>`, :ref:`71 <X_71>`), (:ref:`69 <X_69>`, :ref:`306 <X_306>`), (:ref:`321 <X_321>`, :ref:`37 <X_37>`)
    * :ref:`X_72 <X_72>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`201 <X_201>`, :ref:`10 <X_10>`), (:ref:`228 <X_228>`, :ref:`37 <X_37>`)
@@ -67,12 +67,12 @@ X_72
    * :ref:`X_72 <X_72>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_513 <X_513>`\ \ :ref:`X_1430 <X_1430>`
    * :ref:`X_72 <X_72>` = X_i-:term:`beth conjugate <beth-conjugate>` of X_j for these (i,j): (:ref:`8 <X_8>`, :ref:`65 <X_65>`), (:ref:`72 <X_72>`, :ref:`73 <X_73>`), (:ref:`78 <X_78>`, :ref:`72 <X_72>`), (:ref:`100 <X_100>`, :ref:`227 <X_227>`), (:ref:`644 <X_644>`, :ref:`72 <X_72>`)
    * :ref:`X_72 <X_72>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_647 <X_647>`\ \ :ref:`X_656 <X_656>`
-   * :ref:`X_72 <X_72>` = :term:`complement <complement>` of X_3868
+   * :ref:`X_72 <X_72>` = :term:`complement <complement>` of :ref:`X_3868 <X_3868>`
    * :ref:`X_72 <X_72>` = :ref:`X_149 <X_149>` of :ref:`X_1 <X_1>`-Brocard triangle
    * :ref:`X_72 <X_72>` = :ref:`X_6 <X_6>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_27 <X_27>`
    * :ref:`X_72 <X_72>` = :ref:`X_75 <X_75>`-isoconjugate of :ref:`X_2203 <X_2203>`
    * :ref:`X_72 <X_72>` = :ref:`X_92 <X_92>`-isoconjugate of :ref:`X_1333 <X_1333>`
-   * :ref:`X_72 <X_72>` = inverse-in-Fuhrmann-circle of X_3419
+   * :ref:`X_72 <X_72>` = inverse-in-Fuhrmann-circle of :ref:`X_3419 <X_3419>`
    * :ref:`X_72 <X_72>` = X_6146-of-excentral-triangle
    * :ref:`X_72 <X_72>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and 2nd :term:`extouch triangle <extouch-triangle>`
    * :ref:`X_72 <X_72>` = trilinear product of Jerabek hyperbola intercepts of Nagel line

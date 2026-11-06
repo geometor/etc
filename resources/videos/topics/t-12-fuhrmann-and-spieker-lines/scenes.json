@@ -1,0 +1,232 @@
+[
+  {
+    "id": "act_1_definition",
+    "title": "T_12 FUHRMANN & SPIEKER LINES — Geometric Definition",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_12",
+        "short_code": "T_12",
+        "g_id": "FUHRMANN & SPIEKER LINES",
+        "folio": "Kimberling ETC • Named Central Lines",
+        "enunciation": "The network of central lines linking the Orthocenter X_4, Mittenpunkt X_9, Spieker Center X_10, Feuerbach Partner X_12, and Clawson Point X_19.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.0,
+        "step_num": 1,
+        "step_kind": "CONSTRUCT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-12-fuhrmann-and-spieker-lines/svgs/01_primary.svg",
+        "symbolic": "Fuhrmann–Spieker Axis L(4, 9, 10) • Mittenpunkt Pencils L(1, 6, 9) & L(2, 7, 9)",
+        "clause_html": "<span class=\"clause-line\"><b>Mittenpunkt & Spieker Web:</b> <span class=\"g-tok\">X_9</span> and <span class=\"g-tok\">X_10</span> align with Orthocenter <span class=\"g-tok\">X_4</span> across the <span style=\"color:#94a3b8;font-family:'JetBrains Mono',monospace;font-weight:600;\">medial triangle M_a M_b M_c</span> and <span style=\"color:#94a3b8;font-family:'JetBrains Mono',monospace;font-weight:600;\">incircle</span>.</span>",
+        "just_tag": "∵ DEFINITION",
+        "just_id": "CHRISTIAN VON NAGEL & WILHELM FUHRMANN",
+        "just_title": "X_9 is the symmedian point of the excentral triangle; X_10 is the incenter of the medial triangle.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_9",
+          "X_1",
+          "X_2",
+          "X_3"
+        ],
+        "coincide_ids": [],
+        "equal_ids": []
+      },
+      {
+        "prop_id": "ETC • T_12",
+        "short_code": "T_12",
+        "g_id": "FUHRMANN & SPIEKER LINES",
+        "folio": "Kimberling ETC • Named Central Lines",
+        "enunciation": "The network of central lines linking the Orthocenter X_4, Mittenpunkt X_9, Spieker Center X_10, Feuerbach Partner X_12, and Clawson Point X_19.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "is_punchline": true,
+        "weight": 1.0,
+        "step_num": 2,
+        "step_kind": "GOAL",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-12-fuhrmann-and-spieker-lines/svgs/01_primary.svg",
+        "symbolic": "Fuhrmann–Spieker Axis L(4, 9, 10) • Mittenpunkt Pencils L(1, 6, 9) & L(2, 7, 9)",
+        "clause_html": "<span class=\"clause-line\"><b>Mittenpunkt & Spieker Web:</b> <span class=\"g-tok\">X_9</span> and <span class=\"g-tok\">X_10</span> align with Orthocenter <span class=\"g-tok\">X_4</span> across the <span class=\"coincide-tok\">medial triangle M_a M_b M_c</span> and <span class=\"eq-tok\">incircle</span>.</span>",
+        "just_tag": "∵ STRUCTURE",
+        "just_id": "CHRISTIAN VON NAGEL & WILHELM FUHRMANN",
+        "just_title": "X_9 is the symmedian point of the excentral triangle; X_10 is the incenter of the medial triangle.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_9",
+          "X_1",
+          "X_2",
+          "X_3"
+        ],
+        "coincide_ids": [
+          "< M_a M_b M_c >",
+          "M_a",
+          "M_b",
+          "M_c"
+        ],
+        "equal_ids": [
+          "incircle",
+          "spieker_circle"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "act_2_algebra_and_lines",
+    "title": "T_12 Algebraic Action & Central Lines",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_12",
+        "short_code": "T_12",
+        "g_id": "FUHRMANN & SPIEKER LINES",
+        "folio": "Kimberling ETC • Named Central Lines",
+        "enunciation": "The network of central lines linking the Orthocenter X_4, Mittenpunkt X_9, Spieker Center X_10, Feuerbach Partner X_12, and Clawson Point X_19.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.15,
+        "step_num": 3,
+        "step_kind": "ASSERT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-12-fuhrmann-and-spieker-lines/svgs/02_coordinates.svg",
+        "symbolic": "Three Concurrent Central Lines at Mittenpunkt X_9",
+        "clause_html": "<span class=\"clause-line\"><b>Concurrence at X_9:</b> <span class=\"g-tok\">{4, 9, 10}</span>, <span class=\"coincide-tok\">{1, 6, 9}</span>, and <span class=\"eq-tok\">{2, 7, 9}</span> all concur at Mittenpunkt <span class=\"g-tok\">X_9</span>.</span>",
+        "just_tag": "∵ COORDINATE LAW",
+        "just_id": "HOMOTHETIC & ISOGONAL BRIDGES",
+        "just_title": "X_9 is the complement of the Gergonne point X_7 (since X_2 divides X_7 X_9 in 2 : 1 ratio)."
+      },
+      {
+        "prop_id": "ETC • T_12",
+        "short_code": "T_12",
+        "g_id": "FUHRMANN & SPIEKER LINES",
+        "folio": "Kimberling ETC • Named Central Lines",
+        "enunciation": "The network of central lines linking the Orthocenter X_4, Mittenpunkt X_9, Spieker Center X_10, Feuerbach Partner X_12, and Clawson Point X_19.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.5,
+        "step_num": 4,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-12-fuhrmann-and-spieker-lines/svgs/03_central_lines.svg",
+        "symbolic": "Collinearities {4, 9, 10} • {1, 6, 9} • {2, 7, 9}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Central Line Incidences</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Central Line Pencils</span><span class=\"g-tok\">{4, 9, 10}</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Meets</span><span class=\"muted-tok\">{1, 6, 9}</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Central Line {2, 7, 9}</span><span class=\"muted-tok\">{2, 7, 9}</span></div></div></div>",
+        "just_tag": "∵ PRIMARY AXIS",
+        "just_id": "CLAWSON & FEUERBACH CROSSINGS",
+        "just_title": "Line {2, 11, 19} and {3, 12, 19} similarly cross at the Clawson point X_19.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_9",
+          "{4, 9, 10}"
+        ],
+        "coincide_ids": [],
+        "equal_ids": []
+      },
+      {
+        "prop_id": "ETC • T_12",
+        "short_code": "T_12",
+        "g_id": "FUHRMANN & SPIEKER LINES",
+        "folio": "Kimberling ETC • Named Central Lines",
+        "enunciation": "The network of central lines linking the Orthocenter X_4, Mittenpunkt X_9, Spieker Center X_10, Feuerbach Partner X_12, and Clawson Point X_19.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.55,
+        "step_num": 5,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-12-fuhrmann-and-spieker-lines/svgs/03_central_lines.svg",
+        "symbolic": "Collinearities {4, 9, 10} • {1, 6, 9} • {2, 7, 9}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Central Line Incidences</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Central Line Pencils</span><span class=\"g-tok\">{4, 9, 10}</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Meets</span><span class=\"coincide-tok\">{1, 6, 9}</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Central Line {2, 7, 9}</span><span class=\"eq-tok\">{2, 7, 9}</span></div></div></div>",
+        "just_tag": "∵ COLLINEARITIES",
+        "just_id": "CLAWSON & FEUERBACH CROSSINGS",
+        "just_title": "Line {2, 11, 19} and {3, 12, 19} similarly cross at the Clawson point X_19.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_9",
+          "{4, 9, 10}"
+        ],
+        "coincide_ids": [
+          "{1, 6, 9}"
+        ],
+        "equal_ids": [
+          "{2, 7, 9}"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "act_3_collection_network",
+    "title": "T_12 Collection 1 Network & Invariance",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_12",
+        "short_code": "T_12",
+        "g_id": "FUHRMANN & SPIEKER LINES",
+        "folio": "Kimberling ETC • Named Central Lines",
+        "enunciation": "The network of central lines linking the Orthocenter X_4, Mittenpunkt X_9, Spieker Center X_10, Feuerbach Partner X_12, and Clawson Point X_19.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.1,
+        "step_num": 6,
+        "step_kind": "PROVE",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-12-fuhrmann-and-spieker-lines/svgs/04_relations.svg",
+        "symbolic": "X_4 • X_9 • X_10 • X_1 • X_6 • X_2 • X_7",
+        "clause_html": "<span class=\"clause-line\"><b>Connected Centers:</b> <span class=\"g-tok\">X_9</span> links <span class=\"coincide-tok\">X_4</span> and <span class=\"coincide-tok\">X_10</span> with <span class=\"eq-tok\">X_1</span>, <span class=\"eq-tok\">X_6</span> and <span class=\"g-tok\">X_2</span>, <span class=\"g-tok\">X_7</span>.</span>",
+        "just_tag": "∵ COLLECTION 1",
+        "just_id": "COLLECTION 1 SYNTHESIS",
+        "just_title": "Nine of the nineteen centers in Collection 1 meet along the Mittenpunkt and Spieker pencils.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_9",
+          "X_2",
+          "{ 2, 9 }",
+          "X_7",
+          "{ 7, 9 }"
+        ],
+        "coincide_ids": [
+          "X_4",
+          "{ 4, 9 }",
+          "X_10",
+          "{ 9, 10 }"
+        ],
+        "equal_ids": [
+          "X_1",
+          "{ 1, 9 }",
+          "X_6",
+          "{ 6, 9 }"
+        ]
+      },
+      {
+        "prop_id": "ETC • T_12",
+        "short_code": "T_12",
+        "g_id": "FUHRMANN & SPIEKER LINES",
+        "folio": "Kimberling ETC • Named Central Lines",
+        "enunciation": "The network of central lines linking the Orthocenter X_4, Mittenpunkt X_9, Spieker Center X_10, Feuerbach Partner X_12, and Clawson Point X_19.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.95,
+        "step_num": 7,
+        "step_kind": "∴",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-12-fuhrmann-and-spieker-lines/svgs/05_four_triangles.svg",
+        "symbolic": "Invariance across Acute (5,6,7) • Right (3,4,5) • Kepler (1,√φ,φ) • Kimberling (6,9,13)",
+        "clause_html": "<span class=\"clause-line\"><b>Reference Triangle Invariance:</b> Across all four reference triangles, <b>The Fuhrmann &amp; Spieker Central Lines</b> preserves its exact projective incidences and harmonic ratios.</span>",
+        "just_tag": "∵ INVARIANCE",
+        "just_id": "FOUR-TRIANGLE VERIFICATION",
+        "just_title": "Verified across Collection 1 centers X_1, X_2, X_3, X_4, X_6, X_7."
+      }
+    ]
+  }
+]

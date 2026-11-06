@@ -13,8 +13,6 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     incenter_of,
-    intersect_lines,
-    point_from_barycentrics,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -24,14 +22,14 @@ def construct_x_02151(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_2151 = X_2-ISOCONJUGATE OF X_13 on reference triangle ABC."""
-    X_31 = eval_trilinear_point(model, A, B, C, 'a**(2)', ID="X_31", classes=["center"])
-    X_48 = eval_trilinear_point(model, A, B, C, 'tan(B) + tan(C)', ID="X_48", classes=["center"])
-    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center"])
-    X_1095 = point_from_barycentrics(model, A, B, C, 0.33475715, 0.014033744, 0.65120911, ID="X_1095", classes=["center"])
-    central_line(model, X_31, X_48, 31, 48)
-    central_line(model, X_1, X_1095, 1, 1095)
-    X_2151 = intersect_lines(model, X_31, X_48, X_1, X_1095, ID="X_2151", classes=["selected", "target"])
-    X_2153 = point_from_barycentrics(model, A, B, C, 0.18417195, 0.28859132, 0.52723673, ID="X_2153", classes=["center", "incident"])
+    X_2151 = eval_trilinear_point(model, A, B, C, '(sin(A)*sin(A +  pi  /3))', ID="X_2151", classes=["selected", "target"])
+    X_31 = eval_trilinear_point(model, A, B, C, 'a**(2)', ID="X_31", classes=["center", "incident"])
+    X_48 = eval_trilinear_point(model, A, B, C, 'tan(B) + tan(C)', ID="X_48", classes=["center", "incident"])
+    central_line(model, X_31, X_48, 31, 48, incident=True)
+    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
+    X_1095 = eval_trilinear_point(model, A, B, C, '((sin(A -  pi  /3))**(2))', ID="X_1095", classes=["center", "incident"])
+    central_line(model, X_1, X_1095, 1, 1095, incident=True)
+    X_2153 = eval_trilinear_point(model, A, B, C, '(sin(A)*csc(A +  pi  /3))', ID="X_2153", classes=["center", "incident"])
     X_2173 = eval_trilinear_point(model, A, B, C, 'a*(cos(A) - 2*cos(B)*cos(C))', ID="X_2173", classes=["center", "incident"])
     central_line(model, X_2153, X_2173, 2153, 2173, incident=True)
     return promote_point_to_top(model, X_2151)

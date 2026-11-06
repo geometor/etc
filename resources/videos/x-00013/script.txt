@@ -1,0 +1,83 @@
+center: X_13
+title: 1st ISOGONIC CENTER (FERMAT POINT)
+folio: Kimberling ETC • Collection 1 (X_1–X_19)
+enunciation: The perspector of the outward equilateral triangles erected on sides BC, CA, AB, minimizing PA + PB + PC when all angles < 120°.
+
+[bell:proposition]
+
+[screen: CONSTRUCT | svg: 01_primary.svg | weight: 1]
+symbolic: X_13 = 1st Isogonic (Fermat) Center • [A A'] ∩ [B B'] ∩ [C C']
+zoom: A, B, C
+active: X_13:gold, [ A A' ]:gold, [ B B' ]:gold, [ C C' ]:gold
+head: Primary Construction
+row: Target Center | X_13 (1St Isogonic Center (Fermat Point)):gold
+row: Concurrence Lines | [ A A' ], [ B B' ], [ C C' ]:gold
+row: Derived Triangle | < B C A' >:muted
+just: ∵ CONCURRENCE | FERMAT–TORRICELLI MINIMUM STEINER TREE | Segments AA', BB', CC' have equal length and meet at 60° angles; ∠BX_13C = ∠CX_13A = ∠AX_13B = 120°.
+say: Posed by Pierre de Fermat to Evangelista Torricelli, <pause> X thirteen is the First Isogonic Center, <pause> or Fermat Point: <pause> erect outward equilateral triangles on sides B C, C A, and A B, <pause> join their outer apexes to the opposite vertices A, B, and C,
+
+[screen: GOAL | svg: 01_primary.svg | weight: 1 | punchline: true]
+symbolic: X_13 = 1st Isogonic (Fermat) Center • [A A'] ∩ [B B'] ∩ [C C']
+zoom: X_13, < B C A' >, A', < C A B' >, B', < A B C' >, C', X_13, A', B', C'
+thumb_zoom: A, B, C
+active: X_13:gold, < B C A' >:blue, A':blue, < C A B' >:blue, B':blue, < A B C' >:blue, C':blue
+head: Primary Construction
+row: Target Center | X_13 (1St Isogonic Center (Fermat Point)):gold
+row: Concurrence Lines | [ A A' ], [ B B' ], [ C C' ]:muted
+row: Derived Triangle | < B C A' >:blue
+just: ∵ DEFINITION | FERMAT–TORRICELLI MINIMUM STEINER TREE | Segments AA', BB', CC' have equal length and meet at 60° angles; ∠BX_13C = ∠CX_13A = ∠AX_13B = 120°.
+say: <pause> and those three segments of equal length concur at X thirteen.
+
+[bell:construction]
+
+[screen: ASSERT | svg: 02_coordinates.svg | weight: 1.15]
+symbolic: Trilinears csc(A + π/3) : csc(B + π/3) : csc(C + π/3)
+section: Trilinear Distances | α = csc(A + π/3):gold | β = csc(B + π/3):blue | γ = csc(C + π/3):green
+section: Barycentric Sub-Areas | u = a csc(A + π/3):gold | v = b csc(B + π/3):blue | w = c csc(C + π/3):green
+just: ∵ COORDINATES | 60° PHASE-SHIFTED COSECANT LAW | Equivalently in Conway notation: barycentrics 1/(S_A + √3·Area) : 1/(S_B + √3·Area) : 1/(S_C + √3·Area).
+say: At X thirteen, <pause> each side of triangle A B C subtends an equal angle of one hundred twenty degrees, <pause> minimizing the sum of distances P A plus P B plus P C whenever every angle of A B C is less than one hundred twenty degrees.
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.5]
+symbolic: Lines {2, 13, 16} • {3, 13, 17} • {5, 13, 18} • {6, 13, 14}
+zoom: X_13, X_6, X_14
+active: X_13:gold, {6, 13, 14}:green
+head: Incident Central Lines
+row: Symmedian–Isogonic | {6, 13, 14}:green
+row: Circumcenter–1st Napoleon | {3, 13, 17}:muted
+row: Centroid–2nd Isodynamic | {2, 13, 16}:muted
+just: ∵ PRIMARY AXIS | KIEPERT HYPERBOLA VERTEX | X_13 and X_14 are the +/-60° points on the Kiepert hyperbola through A, B, C, X_2, X_4.
+say: <pause> Its trilinear coordinates are cosecant of A plus pi over three, <pause> to cosecant of B plus pi over three,
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.55]
+symbolic: Lines {2, 13, 16} • {3, 13, 17} • {5, 13, 18} • {6, 13, 14}
+zoom: X_13, X_6, X_14, X_3, X_17, X_2
+active: X_13:gold, {6, 13, 14}:green, {3, 13, 17}:green, {2, 13, 16}:pink
+head: Incident Central Lines
+row: Symmedian–Isogonic | {6, 13, 14}:green
+row: Circumcenter–1st Napoleon | {3, 13, 17}:green
+row: Centroid–2nd Isodynamic | {2, 13, 16}:pink
+just: ∵ COLLINEARITIES | KIEPERT HYPERBOLA VERTEX | X_13 and X_14 are the +/-60° points on the Kiepert hyperbola through A, B, C, X_2, X_4.
+say: <pause> to cosecant of C plus pi over three.
+
+[bell:insight]
+
+[screen: PROVE | svg: 04_relations.svg | weight: 1.05]
+symbolic: Isogonal Conjugate X_15 (1st Isodynamic) • Inverse X_14
+zoom: X_13, X_15, X_14, X_17, X_3
+active: X_13:gold, X_15:blue, X_14:green, X_17:orange
+head: Functional Relations
+row: Isogonal Conjugate | X_15:blue
+row: Orthocentroidal Inverse | X_14:green
+row: Napoleon Collinear | X_17:orange
+just: ∵ RELATIONS | ISOGONIC–ISODYNAMIC DUALITY | Reflection of X_14 across X_115 (center of the Kiepert hyperbola); isotomic conjugate: X_298.
+say: X thirteen is the isogonal conjugate of the First Isodynamic Point X fifteen, <pause> the orthocentroidal-circle inverse of the Second Isogonic Center X fourteen,
+
+[screen: ∴ | svg: 05_four_triangles.svg | weight: 0.95]
+symbolic: Kimberling (6, 9, 13) Search = 0.075945151805
+head: Reference Triangles | a | b | c
+row: Acute Triangle | 5 | 6 | 7:gold
+row: Right Triangle | 3 | 4 | 5:blue
+row: Kepler Triangle | 1 | √φ | φ:green
+row: Kimberling Triangle | 6 | 9 | 13:purple
+just: ∵ INVARIANCE | KIMBERLING SEARCH VALUE • X_13 | Shortest directed trilinear distance on reference triangle (6, 9, 13): 0.075945151805.
+say: <pause> and collinear with X three and the First Napoleon Point X seventeen.

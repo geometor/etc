@@ -57,7 +57,7 @@ Notes
 
 .. container:: note-item
 
-   :ref:`X_840 <X_840>` is the perspector of :g:`ABC << A B C >>` and the (degenerate) cross-triangle of the circumcevian triangles of X_3513 and X_3514. (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
+   :ref:`X_840 <X_840>` is the perspector of :g:`ABC << A B C >>` and the (degenerate) cross-triangle of the circumcevian triangles of :ref:`X_3513 <X_3513>` and :ref:`X_3514 <X_3514>`. (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
 
 .. toctree::
    :hidden:

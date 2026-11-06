@@ -8,7 +8,7 @@ X_2186
 
 .. enunciation::
 
-   :ref:`X_2186 <X_2186>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3403
+   :ref:`X_2186 <X_2186>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3403 <X_3403>`
 
 .. figure:: x-02186.svg
    :alt: X_2186 — X_2-ISOCONJUGATE OF X_182

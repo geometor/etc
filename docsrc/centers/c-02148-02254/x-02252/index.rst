@@ -29,6 +29,7 @@ X_2252
 .. signature:: center
 
    | **Trilinears:** :math:`b c ((a - c) \sec B + (a - b) \sec C) : :`
+   | **Search Value (6, 9, 13):** :math:`-2.016661847151`
 
 .. collapse:: Incident Central Lines
    :badge: 16 lines

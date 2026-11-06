@@ -9,9 +9,11 @@ from geometor.model import Model
 
 from geometor.etc.ops import (
     central_line,
+    centroid_of,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    nine_point_center_of,
     promote_point_to_top,
     symmedian_point_of,
 )
@@ -26,6 +28,12 @@ def construct_x_01140(
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
     X_1139 = eval_trilinear_point(model, A, B, C, '(csc(A))/(cot(A) + cot(2*pi/5))', ID="X_1139", classes=["center", "incident"])
     central_line(model, X_6, X_1139, 6, 1139, incident=True)
+    X_5 = nine_point_center_of(model, A, B, C, ID="X_5", classes=["center", "incident"])
+    X_3370 = eval_trilinear_point(model, A, B, C, '(sec(A - 2*pi  /5))', ID="X_3370", classes=["center", "incident"])
+    central_line(model, X_5, X_3370, 5, 3370, incident=True)
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
+    X_3396 = eval_trilinear_point(model, A, B, C, '(sin(A + 2*pi  /5))', ID="X_3396", classes=["center", "incident"])
+    central_line(model, X_2, X_3396, 2, 3396, incident=True)
     return promote_point_to_top(model, X_1140)
 
 

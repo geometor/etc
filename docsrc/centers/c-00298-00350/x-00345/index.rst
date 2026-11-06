@@ -51,7 +51,7 @@ X_345
    * :ref:`X_345 <X_345>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`304 <X_304>`, :ref:`69 <X_69>`), (:ref:`332 <X_332>`, :ref:`78 <X_78>`)
    * :ref:`X_345 <X_345>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`78 <X_78>`, :ref:`69 <X_69>`), (:ref:`219 <X_219>`, :ref:`8 <X_8>`), (:ref:`306 <X_306>`, :ref:`312 <X_312>`)
    * :ref:`X_345 <X_345>` = :term:`complement <complement>` of X_30699
-   * :ref:`X_345 <X_345>` = :term:`anticomplement <anticomplement>` of X_3772
+   * :ref:`X_345 <X_345>` = :term:`anticomplement <anticomplement>` of :ref:`X_3772 <X_3772>`
    * :ref:`X_345 <X_345>` = polar conjugate of :ref:`X_1118 <X_1118>`
 
 Notes

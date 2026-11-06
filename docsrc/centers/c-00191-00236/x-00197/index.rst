@@ -43,7 +43,7 @@ X_197
    * :ref:`X_197 <X_197>` = :ref:`X_8 <X_8>`-Ceva conjugate of :ref:`X_6 <X_6>`
    * :ref:`X_197 <X_197>` = :term:`crosssum <crosssum>` of :ref:`X_124 <X_124>` and :ref:`X_514 <X_514>`
    * :ref:`X_197 <X_197>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_8048
-   * :ref:`X_197 <X_197>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_905 <X_905>`\ X_3910
+   * :ref:`X_197 <X_197>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_905 <X_905>`\ \ :ref:`X_3910 <X_3910>`
    * :ref:`X_197 <X_197>` = :term:`crosspoint <crosspoint>` of circumcircle intercepts of excircles radical circle
 
 Notes

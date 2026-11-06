@@ -23,8 +23,8 @@ X_1625
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{6, 13} <{ 6, 13 }>`, :g:`{5, 217} <{ 5, 217 }>`
-   * **Related Centers:** :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_13 <X_13>` (:ref:`1st ISOGONIC CENTER <X_13>`), :g:`X_5 <X_5>` (:ref:`NINE-POINT CENTER <X_5>`), :g:`X_217 <X_217>` (:ref:`-CEVA CONJUGATE OF X(51) <X_217>`)
+   * **Central Lines:** :g:`{3289, 3331} <{ 3289, 3331 }>`
+   * **Related Centers:** :g:`X_3289 <X_3289>` (:ref:`INTERSECTION OF LINES X <X_3289>`), :g:`X_3331 <X_3331>` (:ref:`INTERSECTION OF LINES X <X_3331>`)
 
 .. signature:: center
 
@@ -45,7 +45,7 @@ X_1625
 .. collapse:: Functional Relations
    :badge: 7 relations
 
-   * :ref:`X_1625 <X_1625>` = midpoint of X_3289 and X_3331
+   * :ref:`X_1625 <X_1625>` = midpoint of :ref:`X_3289 <X_3289>` and :ref:`X_3331 <X_3331>`
    * :ref:`X_1625 <X_1625>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_15412
    * :ref:`X_1625 <X_1625>` = :ref:`X_75 <X_75>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_6 <X_6>`
    * :ref:`X_1625 <X_1625>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`110 <X_110>`, :ref:`648 <X_648>`), (:ref:`107 <X_107>`, :ref:`110 <X_110>`)

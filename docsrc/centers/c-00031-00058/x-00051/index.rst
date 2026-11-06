@@ -57,7 +57,7 @@ X_51
    * :ref:`X_51 <X_51>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_95 <X_95>`
    * :ref:`X_51 <X_51>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_34384
    * :ref:`X_51 <X_51>` = :term:`complement <complement>` of :ref:`X_2979 <X_2979>`
-   * :ref:`X_51 <X_51>` = :term:`anticomplement <anticomplement>` of X_3819
+   * :ref:`X_51 <X_51>` = :term:`anticomplement <anticomplement>` of :ref:`X_3819 <X_3819>`
    * :ref:`X_51 <X_51>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`53 <X_53>`), (:ref:`5 <X_5>`, :ref:`216 <X_216>`), (:ref:`6 <X_6>`, :ref:`217 <X_217>`)
    * :ref:`X_51 <X_51>` = :ref:`X_2 <X_2>`-Ceva conjugate of :term:`complementary conjugate <complementary-conjugate>` of X_34845
    * :ref:`X_51 <X_51>` = :ref:`X_217 <X_217>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_216 <X_216>`

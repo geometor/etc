@@ -24,7 +24,7 @@ def construct_x_02952(
 ) -> spg.Point:
     """Construct X_2952 = EXCENTRAL-ISOGONAL CONJUGATE OF X_61 on reference triangle ABC."""
     X_191 = eval_trilinear_point(model, A, B, C, '(b + c - a)*(b*c + c*a + a*b) + b**(3) + c**(3) - a**(3)', ID="X_191", classes=["center"])
-    X_1276 = eval_trilinear_point(model, A, B, C, 'sqrt(3/4) + cos(A -  pi  /6) - cos(B -  pi  /6) - cos(C -  pi  /6)', ID="X_1276", classes=["center"])
+    X_1276 = eval_trilinear_point(model, A, B, C, '(sqrt(3/4) + sin(A +  pi  /3) - sin(B +  pi  /3) - sin(C +  pi  /3))', ID="X_1276", classes=["center"])
     X_40 = eval_trilinear_point(model, A, B, C, 'cos(B) + cos(C) - cos(A) - 1', ID="X_40", classes=["center"])
     X_2946 = point_from_barycentrics(model, A, B, C, 0.53341416, -1.1810868, 1.6476727, ID="X_2946", classes=["center"])
     central_line(model, X_191, X_1276, 191, 1276)

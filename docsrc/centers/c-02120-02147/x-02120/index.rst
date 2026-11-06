@@ -40,7 +40,7 @@ X_2120
    :badge: 5 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, 3461}, {:ref:`3 <X_3>`, 3463}, {:ref:`4 <X_4>`, :ref:`1157 <X_1157>`}, {:ref:`5 <X_5>`, :ref:`2121 <X_2121>`}, {3467, 3469}
+   {:ref:`1 <X_1>`, :ref:`3461 <X_3461>`}, {:ref:`3 <X_3>`, :ref:`3463 <X_3463>`}, {:ref:`4 <X_4>`, :ref:`1157 <X_1157>`}, {:ref:`5 <X_5>`, :ref:`2121 <X_2121>`}, {:ref:`3467 <X_3467>`, :ref:`3469 <X_3469>`}
 
 .. collapse:: Functional Relations
    :badge: 2 relations

@@ -8,7 +8,6 @@ import sympy.geometry as spg
 from geometor.model import Model
 
 from geometor.etc.ops import (
-    anticomplement,
     central_line,
     centroid_of,
     circumcenter_of,
@@ -25,8 +24,7 @@ def construct_x_00633(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_633 = ANTICOMPLEMENT OF X_61 on reference triangle ABC."""
-    X_61 = eval_trilinear_point(model, A, B, C, 'sin(A +  pi  /6)', ID="X_61", classes=["center"])
-    X_633 = anticomplement(model, A, B, C, X_61, ID="X_633", classes=["selected", "target"])
+    X_633 = eval_trilinear_point(model, A, B, C, '((S*B*S*C + 2*sqrt(3)*SA*area )/a)', ID="X_633", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
     X_18 = eval_trilinear_point(model, A, B, C, 'csc(A -  pi  /6)', ID="X_18", classes=["center", "incident"])
     central_line(model, X_2, X_18, 2, 18, incident=True)

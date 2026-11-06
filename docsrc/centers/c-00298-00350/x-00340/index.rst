@@ -48,11 +48,11 @@ X_340
 
    * :ref:`X_340 <X_340>` = reflection of :ref:`X_648 <X_648>` in :ref:`X_297 <X_297>`
    * :ref:`X_340 <X_340>` = isotomic conjugate of :ref:`X_265 <X_265>`
-   * :ref:`X_340 <X_340>` = :term:`anticomplement <anticomplement>` of X_3284
+   * :ref:`X_340 <X_340>` = :term:`anticomplement <anticomplement>` of :ref:`X_3284 <X_3284>`
    * :ref:`X_340 <X_340>` = :term:`cevapoint <cevapoint>` of :ref:`X_186 <X_186>` and :ref:`X_323 <X_323>`
    * :ref:`X_340 <X_340>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_1989 <X_1989>` (line :ref:`X_51 <X_51>`\ \ :ref:`X_512 <X_512>`)
    * :ref:`X_340 <X_340>` = polar conjugate of :ref:`X_1989 <X_1989>`
-   * :ref:`X_340 <X_340>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_217 <X_217>`\ X_3049
+   * :ref:`X_340 <X_340>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_217 <X_217>`\ \ :ref:`X_3049 <X_3049>`
 
 .. toctree::
    :hidden:

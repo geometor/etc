@@ -9,8 +9,6 @@ from geometor.model import Model
 
 from geometor.etc.ops import (
     central_line,
-    centroid_of,
-    ceva_conjugate,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
@@ -24,9 +22,7 @@ def construct_x_02485(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_2485 = RADICAL CENTER OF {CIRCUMCIRCLE, 1ST LEMOINE CIRCLE, NINE-POINT CIRCLE} on reference triangle ABC."""
-    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
-    X_127 = eval_trilinear_point(model, A, B, C, 'b*c*(sin(2*B) - sin(2*C))*((b**(2) - c**(2))*sin(2*A) - b**(2)*sin(2*B) + c**(2)*sin(2*C))', ID="X_127", classes=["center"])
-    X_2485 = ceva_conjugate(model, A, B, C, X_2, X_127, ID="X_2485", classes=["selected", "target"])
+    X_2485 = eval_trilinear_point(model, A, B, C, '(a*(b**(2) - c**(2))*(b**(4) + c**(4) - a**(4)))', ID="X_2485", classes=["selected", "target"])
     X_230 = eval_trilinear_point(model, A, B, C, 'b*c*(a**(2)*(2*a**(2) - b**(2) - c**(2)) + (b**(2) - c**(2))**(2))', ID="X_230", classes=["center", "incident"])
     X_231 = eval_trilinear_point(model, A, B, C, '(cos(B))*(4*(sin(C))**(2) - 1)*(cos(A)*sin(B) - sin(A)*cos(B)) - (cos(C))*(4*(sin(B))**(2) - 1)*(cos(C)*sin(A) - sin(C)*cos(A))', ID="X_231", classes=["center", "incident"])
     central_line(model, X_230, X_231, 230, 231, incident=True)

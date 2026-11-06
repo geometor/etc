@@ -12,7 +12,7 @@ X_1163
 
 .. enunciation::
 
-   :ref:`X_1163 <X_1163>` = :ref:`X_4 <X_4>`-:term:`Ceva conjugate <ceva-conjugate>` of X_3128
+   :ref:`X_1163 <X_1163>` = :ref:`X_4 <X_4>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_3128 <X_3128>`
 
 .. figure:: x-01163.svg
    :alt: X_1163 — INNER GREBE-ORTHIC PERSPECTOR
@@ -24,7 +24,7 @@ X_1163
    :class: note
 
    * **Central Lines:** :g:`{4, 1161} <{ 4, 1161 }>`, :g:`{428, 1162} <{ 428, 1162 }>`
-   * **Related Centers:** :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_1161 <X_1161>` (:ref:`CIRCUMCENTER OF INNER GREBE TRIANGLE <X_1161>`), :g:`X_428 <X_428>` (:ref:`EULER X(38)-5th-SUBSTITUTION POINT <X_428>`), :g:`X_1162 <X_1162>` (:ref:`OUTER GREBE-ORTHIC PERSPECTOR <X_1162>`)
+   * **Related Centers:** :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_3128 <X_3128>` (:ref:`-CEVA CONJUGATE OF X(1163) <X_3128>`), :g:`X_1161 <X_1161>` (:ref:`CIRCUMCENTER OF INNER GREBE TRIANGLE <X_1161>`), :g:`X_428 <X_428>` (:ref:`EULER X(38)-5th-SUBSTITUTION POINT <X_428>`), :g:`X_1162 <X_1162>` (:ref:`OUTER GREBE-ORTHIC PERSPECTOR <X_1162>`)
 
 .. signature:: center
 
@@ -41,7 +41,7 @@ X_1163
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X_1163 <X_1163>` = :ref:`X_4 <X_4>`-Ceva conjugate of X_3128
+   * :ref:`X_1163 <X_1163>` = :ref:`X_4 <X_4>`-Ceva conjugate of :ref:`X_3128 <X_3128>`
 
 Notes
 -----

@@ -44,7 +44,7 @@ X_1438
    * :ref:`X_1438 <X_1438>` = :ref:`X_1462 <X_1462>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_1416 <X_1416>`
    * :ref:`X_1438 <X_1438>` = :term:`crosspoint <crosspoint>` of :ref:`X_105 <X_105>` and :ref:`X_1462 <X_1462>`
    * :ref:`X_1438 <X_1438>` = X_i-:term:`Hirst inverse <hirst-inverse>` of X_j for these (i,j): (:ref:`56 <X_56>`, :ref:`1416 <X_1416>`)
-   * :ref:`X_1438 <X_1438>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3912
+   * :ref:`X_1438 <X_1438>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3912 <X_3912>`
    * :ref:`X_1438 <X_1438>` = trilinear pole of PU(48) (line :ref:`X_31 <X_31>`\ \ :ref:`X_649 <X_649>`)
    * :ref:`X_1438 <X_1438>` = barycentric product of PU(96)
    * :ref:`X_1438 <X_1438>` = barycentric product :ref:`X_1 <X_1>`\ \*\ :ref:`X_105 <X_105>`

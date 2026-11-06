@@ -111,7 +111,7 @@ X_2055–X_2119
 
 .. _preamble-0035:
 
-.. admonition:: Group Preamble — Centers 2106 -2119
+.. admonition:: Group Preamble — Centers 2106 -2119 (points on the 2nd equal-areas cubic, EAC2)
    :class: note
 
    are on the 2nd equal-areas cubic, EAC2. (For the definition, click Tables and then Bicentric Pairs.)

@@ -8,8 +8,10 @@ import sympy.geometry as spg
 from geometor.model import Model
 
 from geometor.etc.ops import (
+    central_line,
     construct_baseline_triangle,
     create_model,
+    eval_trilinear_point,
     point_from_barycentrics,
     promote_point_to_top,
 )
@@ -21,6 +23,9 @@ def construct_x_02984(
 ) -> spg.Point:
     """Construct X_2984 = DC(X_53) on reference triangle ABC."""
     X_2984 = point_from_barycentrics(model, A, B, C, 0.35432335, 0.32762179, 0.31805485, ID="X_2984", classes=["selected", "target"])
+    X_97 = eval_trilinear_point(model, A, B, C, 'cot(A)*sec(B - C)', ID="X_97", classes=["center", "incident"])
+    X_3199 = point_from_barycentrics(model, A, B, C, 0.056190988, 0.13638244, 0.80742657, ID="X_3199", classes=["center", "incident"])
+    central_line(model, X_97, X_3199, 97, 3199, incident=True)
     return promote_point_to_top(model, X_2984)
 
 

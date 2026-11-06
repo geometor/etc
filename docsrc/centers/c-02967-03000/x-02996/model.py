@@ -12,7 +12,6 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
-    isotomic_conjugate,
     orthocenter_of,
     promote_point_to_top,
 )
@@ -23,12 +22,12 @@ def construct_x_02996(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_2996 = CD(X_25) on reference triangle ABC."""
-    X_193 = eval_trilinear_point(model, A, B, C, '(csc(A))*(cot(B) + cot(C) - cot(A))', ID="X_193", classes=["center"])
-    X_2996 = isotomic_conjugate(model, A, B, C, X_193, ID="X_2996", classes=["selected", "target"])
+    X_2996 = eval_trilinear_point(model, A, B, C, '(b*c/(3*a**(2) - b**(2) - c**(2)))', ID="X_2996", classes=["selected", "target"])
     X_20 = eval_trilinear_point(model, A, B, C, 'cos(A) - cos(B)*cos(C)', ID="X_20", classes=["center", "incident"])
     X_98 = eval_trilinear_point(model, A, B, C, 'sec(A +  omega  )', ID="X_98", classes=["center", "incident"])
     central_line(model, X_20, X_98, 20, 98, incident=True)
     X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
+    X_193 = eval_trilinear_point(model, A, B, C, '(csc(A))*(cot(B) + cot(C) - cot(A))', ID="X_193", classes=["center", "incident"])
     central_line(model, X_4, X_193, 4, 193, incident=True)
     X_194 = eval_trilinear_point(model, A, B, C, 'b*c*(a**(2)*b**(2) + a**(2)*c**(2) - b**(2)*c**(2))', ID="X_194", classes=["center", "incident"])
     X_262 = eval_trilinear_point(model, A, B, C, 'sec(A -  omega  )', ID="X_262", classes=["center", "incident"])

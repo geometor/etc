@@ -49,17 +49,17 @@ X_210
    * :ref:`X_210 <X_210>` = :ref:`X_2 <X_2>`-of-:term:`extouch triangle <extouch-triangle>`, so that :ref:`X_210 <X_210>`\ \ :ref:`X_1158 <X_1158>` = Euler line of the extouch triangle
    * :ref:`X_210 <X_210>` = reflection of X_i in X_j for these (i,j): (:ref:`51 <X_51>`, :ref:`375 <X_375>`), (:ref:`354 <X_354>`, :ref:`2 <X_2>`)
    * :ref:`X_210 <X_210>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1014 <X_1014>`
-   * :ref:`X_210 <X_210>` = :term:`complement <complement>` of X_3873
-   * :ref:`X_210 <X_210>` = :term:`anticomplement <anticomplement>` of X_3742
+   * :ref:`X_210 <X_210>` = :term:`complement <complement>` of :ref:`X_3873 <X_3873>`
+   * :ref:`X_210 <X_210>` = :term:`anticomplement <anticomplement>` of :ref:`X_3742 <X_3742>`
    * :ref:`X_210 <X_210>` = :ref:`X_10 <X_10>`-Ceva conjugate of :ref:`X_37 <X_37>`
    * :ref:`X_210 <X_210>` = :term:`crosspoint <crosspoint>` of :ref:`X_8 <X_8>` and :ref:`X_9 <X_9>`
    * :ref:`X_210 <X_210>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`56 <X_56>`, :ref:`57 <X_57>`), (:ref:`58 <X_58>`, :ref:`1412 <X_1412>`)
    * :ref:`X_210 <X_210>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_1019 <X_1019>`\ \ :ref:`X_1429 <X_1429>`
    * :ref:`X_210 <X_210>` = X_i-:term:`beth conjugate <beth-conjugate>` of X_j for these (i,j): (:ref:`200 <X_200>`, :ref:`210 <X_210>`), (:ref:`210 <X_210>`, :ref:`42 <X_42>`)
    * :ref:`X_210 <X_210>` = centroid of Bevan circle intercepts with sidelines of :g:`ABC << A B C >>`
-   * :ref:`X_210 <X_210>` = centroid of AbAcBcBaCaCb as defined at X_3588
+   * :ref:`X_210 <X_210>` = centroid of AbAcBcBaCaCb as defined at :ref:`X_3588 <X_3588>`
    * :ref:`X_210 <X_210>` = centroid of AbAcBcBaCaCb as used in the construction of the inner-Conway triangle; see preamble before X_11677
-   * :ref:`X_210 <X_210>` = :term:`trilinear pole <trilinear-pole>` of line X_3709X_4041
+   * :ref:`X_210 <X_210>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_3709 <X_3709>`\ X_4041
    * :ref:`X_210 <X_210>` = excentral-to-:g:`ABC << A B C >>` :term:`barycentric image <barycentric-image>` of :ref:`X_2 <X_2>`
    * :ref:`X_210 <X_210>` = {:ref:`X_37 <X_37>`,\ :ref:`X_42 <X_42>`}-harmonic conjugate of X_37593
 

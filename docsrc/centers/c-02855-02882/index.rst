@@ -18,11 +18,11 @@ X_2855–X_2882
    :alt: X_2855–X_2882 — Simson-Moses SM(P, U) Points & Conjugates
    :align: center
 
-   **X_2855–X_2882** (*Simson-Moses SM(P, U) Points & Conjugates*) — 16 representative centers (from 28 in collection) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_2855–X_2882** (*Simson-Moses SM(P, U) Points & Conjugates*) — 15 representative centers (from 28 in collection) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. _preamble-0042:
 
-.. admonition:: Group Preamble — SM Points
+.. admonition:: Group Preamble — SM Points (Simson-Moses points)
    :class: note
 
    Centers :ref:`X_2855 <X_2855>` to :ref:`X_2868 <X_2868>` are examples of Simson-Moses points, defined by changing "isogonal" to "isotomic" in the definition of Simson-Ribgy points (:ref:`X_2687 <X_2687>` to :ref:`X_2770 <X_2770>`. That is, for points :g:`P <P>` and U on the circumcircle of triangle :g:`ABC << A B C >>`, the point of intersection of the lines (P and :term:`isotomic conjugate <isotomic-conjugate>` of :g:`U <U>`) and (U and isotomic conjugate of :g:`P <P>`) defines the Simson-Moses point of :g:`P <P>` and U, denoted by SM(P,U). If P and U are given in barycentric coordinates :math:`p : q : r` and :math:`u : v : w`, then

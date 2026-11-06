@@ -61,7 +61,7 @@ X_1351
    * :ref:`X_1351 <X_1351>` = intersection of tangents to 2nd Lemoine circle at intersections with circumcircle
    * :ref:`X_1351 <X_1351>` = inverse-in-{circle centered at :ref:`X_3 <X_3>` with radius \|OK\|} of :ref:`X_182 <X_182>`
    * :ref:`X_1351 <X_1351>` = {X_i,X_j}-harmonic conjugate of X_k for these (i,j,k): (:ref:`6 <X_6>`, :ref:`1350 <X_1350>`, :ref:`182 <X_182>`), (:ref:`1687 <X_1687>`, :ref:`1688 <X_1688>`, 5033)
-   * :ref:`X_1351 <X_1351>` = exsimilicenter of circle centered at :ref:`X_371 <X_371>` through :ref:`X_1152 <X_1152>` and circle centered at :ref:`X_372 <X_372>` through :ref:`X_1151 <X_1151>`; the insimilicenter is X_3053
+   * :ref:`X_1351 <X_1351>` = exsimilicenter of circle centered at :ref:`X_371 <X_371>` through :ref:`X_1152 <X_1152>` and circle centered at :ref:`X_372 <X_372>` through :ref:`X_1151 <X_1151>`; the insimilicenter is :ref:`X_3053 <X_3053>`
 
 Notes
 -----

@@ -48,7 +48,7 @@ X_1847
 
    * :ref:`X_1847 <X_1847>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1802 <X_1802>`
    * :ref:`X_1847 <X_1847>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`269 <X_269>`, :ref:`1435 <X_1435>`), (:ref:`278 <X_278>`, :ref:`1119 <X_1119>`)
-   * :ref:`X_1847 <X_1847>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3692
+   * :ref:`X_1847 <X_1847>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3692 <X_3692>`
    * :ref:`X_1847 <X_1847>` = polar conjugate of :ref:`X_200 <X_200>`
 
 .. toctree::

@@ -1,0 +1,88 @@
+center: X_1
+title: INCENTER
+folio: Kimberling ETC • Collection 1 (X_1–X_19)
+enunciation: The intersection of the three interior angle bisectors and center of the inscribed circle of triangle ABC.
+
+[bell:proposition]
+
+[screen: CONSTRUCT | svg: 01_primary.svg | weight: 1]
+symbolic: X_1 = Incenter • [A I_a] ∩ [B I_b] ∩ [C I_c]
+zoom: A, B, C
+active: X_1:gold, [ A I_a ]:gold, [ B I_b ]:gold, [ C I_c ]:gold
+head: Primary Construction
+row: Target Center | X_1 (Incenter):gold
+row: Interior Bisectors | AI_a, BI_b, CI_c:gold
+row: Inscribed Circle | Incircle (r):muted
+row: Bisector Feet | I_a, I_b, I_c:muted
+just: ∵ CONCURRENCE | EUCLID IV.4 • CONCURRENCE | Cevian triangle: Incentral triangle I_a I_b I_c • Pedal triangle: Intouch triangle T_a T_b T_c.
+say: In the Encyclopedia of Triangle Centers, <pause> X one is the Incenter: <pause> the point where the three interior angle bisectors of triangle A B C concur,
+
+[screen: GOAL | svg: 01_primary.svg | weight: 1 | punchline: true]
+symbolic: X_1 = Incenter • [A I_a] ∩ [B I_b] ∩ [C I_c]
+zoom: incircle, I_a, I_b, I_c
+thumb_zoom: A, B, C
+active: X_1:gold, incircle:pink, I_a:blue, I_b:blue, I_c:blue
+head: Primary Construction
+row: Target Center | X_1 (Incenter):gold
+row: Interior Bisectors | AI_a, BI_b, CI_c:muted
+row: Inscribed Circle | Incircle (r):pink
+row: Bisector Feet | I_a, I_b, I_c:blue
+just: ∵ DEFINITION | EUCLID IV.4 • CONCURRENCE | Cevian triangle: Incentral triangle I_a I_b I_c • Pedal triangle: Intouch triangle T_a T_b T_c.
+say: <pause> and the center of its unique inscribed circle.
+
+[bell:construction]
+
+[screen: ASSERT | svg: 02_coordinates.svg | weight: 1.15]
+symbolic: Trilinears 1 : 1 : 1 • Barycentrics a : b : c
+section: Trilinear Distances | α = 1:gold | β = 1:blue | γ = 1:green
+section: Barycentric Sub-Areas | u = a:gold | v = b:blue | w = c:green
+just: ∵ COORDINATES | HOMOGENEOUS COORDINATES | On acute triangle (5, 6, 7), perpendiculars are 1 : 1 : 1 and sub-areas are 5 : 6 : 7 (27.8% : 33.3% : 38.9%).
+say: Because X one is equidistant from sidelines B C, C A, and A B by the inradius r, <pause> its trilinear coordinates are simply one, to one, to one, <pause> while its barycentric sub-triangle areas scale directly with the side lengths, <pause> a, to b, to c.
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.5]
+symbolic: Nagel Line {1, 2, 8, 10} • Feuerbach Line {1, 5, 11}
+zoom: X_1, X_2, X_8, X_10
+active: X_1:gold, {1, 2, 8, 10}:orange
+head: Incident Central Lines
+row: Nagel Line | {1, 2, 8, 10}:orange
+row: Feuerbach Line | {1, 5, 11}:muted
+row: OI Line | {1, 3, 40}:muted
+row: Soddy Line | {1, 7, 20}:muted
+just: ∵ PRIMARY AXIS | CENTRAL LINE INCIDENCES | On the Nagel line, X_10 (Spieker center) is the exact midpoint of X_1 (Incenter) and X_8 (Nagel point).
+say: <pause> Toggle the central lines, <pause> and X one anchors the Nagel line through X two, X eight, and X ten,
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.55]
+symbolic: Nagel Line {1, 2, 8, 10} • Feuerbach Line {1, 5, 11}
+zoom: X_1, X_2, X_8, X_10, X_5, X_11, X_3, X_40, X_7
+active: X_1:gold, {1, 2, 8, 10}:orange, {1, 5, 11}:teal, {1, 3, 40}:blue, {1, 7, 20}:orchid
+head: Incident Central Lines
+row: Nagel Line | {1, 2, 8, 10}:orange
+row: Feuerbach Line | {1, 5, 11}:teal
+row: OI Line | {1, 3, 40}:blue
+row: Soddy Line | {1, 7, 20}:orchid
+just: ∵ COLLINEARITIES | CENTRAL LINE INCIDENCES | On the Nagel line, X_10 (Spieker center) is the exact midpoint of X_1 (Incenter) and X_8 (Nagel point).
+say: <pause> the Feuerbach line through X five and X eleven, <pause> and the Soddy line through X seven.
+
+[bell:insight]
+
+[screen: PROVE | svg: 04_relations.svg | weight: 1.05]
+symbolic: Self-Isogonal (X_1) • Complement X_10 • Anticomplement X_8
+zoom: X_1, X_75, X_10, X_8, X_3
+active: X_1:gold, X_75:blue, X_10:green, X_8:orange
+head: Functional Relations
+row: Isogonal Conjugate | X_1 (self):gold
+row: Isotomic Conjugate | X_75:blue
+row: Complement | X_10:green
+row: Anticomplement | X_8:orange
+just: ∵ RELATIONS | CONJUGATES & HOMOTHETY | Circumcircle inverse: X_36 • Midpoint of X_1 and X_8: X_10 (Spieker center).
+say: Under functional relations, <pause> X one is its own isogonal conjugate, <pause> the isotomic conjugate of X seventy-five, <pause> the anticomplement of the Spieker center X ten, <pause> and the complement of the Nagel point X eight.
+
+[screen: ∴ | svg: 05_four_triangles.svg | weight: 0.95]
+symbolic: Kimberling (6, 9, 13) Search = 1.690308509457
+head: Reference Triangles | a | b | c
+row: Acute Triangle | 5 | 6 | 7:gold
+row: Right Triangle | 3 | 4 | 5:blue
+row: Kepler Triangle | 1 | √φ | φ:green
+row: Kimberling Triangle | 6 | 9 | 13:purple
+just: ∵ INVARIANCE | KIMBERLING SEARCH VALUE • X_1 | Shortest directed trilinear distance on reference triangle (6, 9, 13): 1.690308509457.
+say: <pause> Across acute, right, Kepler, and Kimberling reference triangles, <pause> X one remains the invariant center of the incircle.

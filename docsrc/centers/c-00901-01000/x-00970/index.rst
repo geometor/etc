@@ -48,7 +48,7 @@ X_970
    * :ref:`X_970 <X_970>` = :term:`complement <complement>` of X_10441
    * :ref:`X_970 <X_970>` = {:ref:`X_181 <X_181>`,\ :ref:`X_1682 <X_1682>`}-harmonic conjugate of :ref:`X_1 <X_1>`
    * :ref:`X_970 <X_970>` = {:ref:`X_371 <X_371>`,\ :ref:`X_372 <X_372>`}-harmonic conjugate of X_5019
-   * :ref:`X_970 <X_970>` = inverse-in-excircles-radical-circle of X_3814
+   * :ref:`X_970 <X_970>` = inverse-in-excircles-radical-circle of :ref:`X_3814 <X_3814>`
    * :ref:`X_970 <X_970>` = perspector of Apollonius triangle and cross-triangle of :g:`ABC << A B C >>` and Apollonius triangle
 
 Notes

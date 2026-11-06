@@ -24,8 +24,8 @@ X_357
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{356, 358} <{ 356, 358 }>`
-   * **Related Centers:** :g:`X_358 <X_358>` (:ref:`2nd MORLEY-TAYLOR-MARR CENTER <X_358>`), :g:`X_356 <X_356>` (:ref:`MORLEY CENTER <X_356>`)
+   * **Central Lines:** :g:`{356, 358} <{ 356, 358 }>`, :g:`{1134, 3275} <{ 1134, 3275 }>`
+   * **Related Centers:** :g:`X_358 <X_358>` (:ref:`2nd MORLEY-TAYLOR-MARR CENTER <X_358>`), :g:`X_356 <X_356>` (:ref:`MORLEY CENTER <X_356>`), :g:`X_1134 <X_1134>` (:ref:`3rd MORLEY-TAYLOR-MARR CENTER <X_1134>`), :g:`X_3275 <X_3275>` (:ref:`PERSPECTOR OF TRIANGLES S1S2S3 AND J1J2J3 <X_3275>`)
 
 .. signature:: center
 
@@ -37,13 +37,13 @@ X_357
    :badge: 3 lines
    :class: line-catalog
 
-   {:ref:`356 <X_356>`, :ref:`358 <X_358>`}, {:ref:`1134 <X_1134>`, 3275}, {3280, 5454}
+   {:ref:`356 <X_356>`, :ref:`358 <X_358>`}, {:ref:`1134 <X_1134>`, :ref:`3275 <X_3275>`}, {:ref:`3280 <X_3280>`, 5454}
 
 .. collapse:: Functional Relations
    :badge: 3 relations
 
    * :ref:`X_357 <X_357>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_358 <X_358>`
-   * :ref:`X_357 <X_357>` = {:ref:`X_1135 <X_1135>`,X_3272}-harmonic conjugate of X_3603
+   * :ref:`X_357 <X_357>` = {:ref:`X_1135 <X_1135>`,\ :ref:`X_3272 <X_3272>`}-harmonic conjugate of :ref:`X_3603 <X_3603>`
    * :ref:`X_357 <X_357>` = trilinear product of vertices of 1st Morley triangle
 
 Notes

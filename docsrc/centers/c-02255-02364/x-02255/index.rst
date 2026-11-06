@@ -26,7 +26,6 @@ X_2255
 
    | **Trilinears:** :math:`a/f(a,b,c) : b/f(b,c,a) : c/f(c,a,b)`, where f(a,b,c) is as in :ref:`X_923 <X_923>`
    | **Barycentrics:** :math:`a^{2}/f(a,b,c) : b^{2}/f(b,c,a): c^{2}/f(c,a,b)`
-   | **Search Value (6, 9, 13):** :math:`0.374896163148`
 
 .. collapse:: Incident Central Lines
    :badge: 6 lines

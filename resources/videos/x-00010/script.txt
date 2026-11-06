@@ -1,0 +1,83 @@
+center: X_10
+title: SPIEKER CENTER
+folio: Kimberling ETC • Collection 1 (X_1–X_19)
+enunciation: The incenter of the medial triangle M_a M_b M_c and center of mass of the uniform perimeter wireframe of triangle ABC.
+
+[bell:proposition]
+
+[screen: CONSTRUCT | svg: 01_primary.svg | weight: 1]
+symbolic: X_10 = Spieker Center • Incenter of Medial △M_a M_b M_c
+zoom: A, B, C
+active: X_10:gold, [ M_a X_10 ]:gold, [ M_b X_10 ]:gold, [ M_c X_10 ]:gold
+head: Primary Construction
+row: Target Center | X_10 (Spieker):gold
+row: Medial Bisectors | of △M_a M_b M_c:gold
+row: Spieker Circle | Radius r / 2:muted
+row: Medial Triangle | △M_a M_b M_c:muted
+just: ∵ CONCURRENCE | PERIMETER CENTER OF MASS | Center of gravity of the three wire sidelines BC, CA, AB; radical center of the three excircles.
+say: X ten is the Spieker Center of triangle A B C: <pause> the incenter of the medial triangle M sub a, M sub b, M sub c, <pause> the center of the inscribed Spieker circle,
+
+[screen: GOAL | svg: 01_primary.svg | weight: 1 | punchline: true]
+symbolic: X_10 = Spieker Center • Incenter of Medial △M_a M_b M_c
+zoom: X_10, spieker_circle, < M_a M_b M_c >, M_a, M_b, M_c, X_10, M_a, M_b, M_c
+thumb_zoom: A, B, C
+active: X_10:gold, spieker_circle:orange, < M_a M_b M_c >:blue, M_a:blue, M_b:blue, M_c:blue
+head: Primary Construction
+row: Target Center | X_10 (Spieker):gold
+row: Medial Bisectors | of △M_a M_b M_c:muted
+row: Spieker Circle | Radius r / 2:lime
+row: Medial Triangle | △M_a M_b M_c:blue
+just: ∵ DEFINITION | PERIMETER CENTER OF MASS | Center of gravity of the three wire sidelines BC, CA, AB; radical center of the three excircles.
+say: <pause> and the physical center of mass of the triangle's uniform wire perimeter.
+
+[bell:construction]
+
+[screen: ASSERT | svg: 02_coordinates.svg | weight: 1.15]
+symbolic: Trilinears bc(b+c) : ca(c+a) : ab(a+b) • Barycentrics b+c : c+a : a+b
+section: Trilinear Distances | α = bc(b + c):gold | β = ca(c + a):blue | γ = ab(a + b):green
+section: Barycentric Sub-Areas | u = b + c:gold | v = c + a:blue | w = a + b:green
+just: ∵ COORDINATES | PAIRWISE SIDE-SUM BARYCENTRICS | On acute triangle (5, 6, 7), barycentric sub-areas are 13 : 12 : 11 (36.1% : 33.3% : 30.6%).
+say: Its barycentric coordinates are simply b plus c, <pause> to c plus a, <pause> to a plus b, <pause> and its trilinear coordinates are b c times b plus c, <pause> to c a times c plus a, <pause> to a b times a plus b.
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.5]
+symbolic: Nagel Line {1, 2, 8, 10} • Line {4, 9, 10, 19}
+zoom: X_10, X_1, X_2, X_8
+active: X_10:gold, {1, 2, 8, 10}:orange
+head: Incident Central Lines
+row: Nagel Line | {1, 2, 8, 10}:orange
+row: Orthocenter–Mittenpunkt | {4, 9, 10, 19}:muted
+just: ∵ PRIMARY AXIS | MIDPOINT OF INCENTER & NAGEL POINT | Four classical centers X_1, X_2, X_10, X_8 lie on the Nagel line in harmonic/homothetic progression.
+say: <pause> On the central lines layer, <pause> X ten lies on the Nagel line as the exact midpoint between Incenter X one and Nagel point X eight,
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.55]
+symbolic: Nagel Line {1, 2, 8, 10} • Line {4, 9, 10, 19}
+zoom: X_10, X_1, X_2, X_8, X_4, X_9, X_19
+active: X_10:gold, {1, 2, 8, 10}:orange, {4, 9, 10, 19}:blue
+head: Incident Central Lines
+row: Nagel Line | {1, 2, 8, 10}:orange
+row: Orthocenter–Mittenpunkt | {4, 9, 10, 19}:blue
+just: ∵ COLLINEARITIES | MIDPOINT OF INCENTER & NAGEL POINT | Four classical centers X_1, X_2, X_10, X_8 lie on the Nagel line in harmonic/homothetic progression.
+say: <pause> and on the Orthocenter–Mittenpunkt line through X four and X nine.
+
+[bell:insight]
+
+[screen: PROVE | svg: 04_relations.svg | weight: 1.05]
+symbolic: Complement of X_1 (Incenter) • Midpoint of X_1 & X_8 • Isogonal X_58
+zoom: X_10, X_1, X_8, X_58, X_3
+active: X_10:gold, X_1:blue, X_8:green, X_58:orange
+head: Functional Relations
+row: Anticomplement | X_1:blue
+row: Midpoint on Nagel Line | X_1, X_8:green
+row: Isogonal Conjugate | X_58:orange
+just: ∵ RELATIONS | MEDIAL HOMOTHETY OF X_1 | Spieker circle radius is exactly r / 2 (half the inradius of △ABC); isotomic conjugate: X_86.
+say: X ten is the complement of the Incenter X one, <pause> the radical center of the three excircles, <pause> the isogonal conjugate of X fifty-eight,
+
+[screen: ∴ | svg: 05_four_triangles.svg | weight: 0.95]
+symbolic: Kimberling (6, 9, 13) Search = 3.098898934005
+head: Reference Triangles | a | b | c
+row: Acute Triangle | 5 | 6 | 7:gold
+row: Right Triangle | 3 | 4 | 5:blue
+row: Kepler Triangle | 1 | √φ | φ:green
+row: Kimberling Triangle | 6 | 9 | 13:purple
+just: ∵ INVARIANCE | KIMBERLING SEARCH VALUE • X_10 | Shortest directed trilinear distance on reference triangle (6, 9, 13): 3.098898934005.
+say: <pause> and the isotomic conjugate of X eighty-six.

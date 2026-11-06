@@ -14,6 +14,12 @@ import sympy.geometry as spg
 from geometor.model import Model
 from geometor.model.element import CircleElement
 
+from .palette import (
+    get_central_line_color_token,
+    get_circle_color_token,
+    token_hex,
+)
+
 
 EXPLORER_SVG_CSS = """
 :root {
@@ -88,29 +94,36 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
     stroke-width: 3.5 !important;
 }
 
-#elements line {
+#elements line,
+#elements path.line {
     fill: none;
-    stroke: #777;
-    stroke-width: 1.5;
+    stroke: #b0bec5;
+    stroke-width: 2.2;
+    stroke-dasharray: 2, 4.5;
+    stroke-linecap: round;
     vector-effect: non-scaling-stroke;
     cursor: pointer;
 }
 
-#elements line.sideline {
-    stroke: #999;
-    stroke-width: 2;
+#elements line.sideline,
+#elements path.line.sideline {
+    stroke: #cbd5e1;
+    stroke-width: 2.3;
 }
 
-#elements line.central_line {
+#elements line.central_line,
+#elements path.line.central_line {
     stroke: #0bd;
-    stroke-width: 1.75;
+    stroke-width: 1.85;
     stroke-opacity: 0.85;
 }
 
 #elements line.golden,
-#elements line.euler {
+#elements path.line.golden,
+#elements line.euler,
+#elements path.line.euler {
     stroke: gold;
-    stroke-width: 2;
+    stroke-width: 2.1;
 }
 
 #elements circle {
@@ -137,7 +150,7 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
 }
 
 #elements .bisector {
-    stroke-dasharray: 8, 4, 2, 4;
+    stroke-dasharray: 2, 4;
 }
 
 #elements .guide {
@@ -148,10 +161,13 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
 
 #elements line:hover,
 #elements line.hover,
+#elements path.line:hover,
+#elements path.line.hover,
 #elements circle:hover,
 #elements circle.hover {
     stroke: var(--select-color) !important;
     stroke-width: 3.2 !important;
+    stroke-dasharray: none !important;
     stroke-opacity: 1 !important;
 }
 
@@ -1236,7 +1252,15 @@ def _enrich_elements_catalog(
                     else:
                         line_name = f"Line {eid}"
 
-            color = "gold" if ("golden" in classes or "euler" in classes) else ("#0bd" if "central_line" in classes else "#aaa")
+            if "golden" in classes or "euler" in classes or "central_line" in classes or eid.startswith("{"):
+                color_token = get_central_line_color_token(eid, line_name)
+                color = token_hex(color_token)
+            elif "sideline" in classes:
+                color_token = ""
+                color = "#cbd5e1"
+            else:
+                color_token = "gold"
+                color = token_hex("gold")
             rows = [("pts", thru_desc)]
             if p1 and p2:
                 seg_len = math.hypot(p2["x"] - p1["x"], p2["y"] - p1["y"])
@@ -1248,6 +1272,7 @@ def _enrich_elements_catalog(
                 "type": "line",
                 "classes": classes,
                 "color": color,
+                "color_token": color_token,
                 "name": line_name,
                 "subtitle": subtitle,
                 "rows": rows,
@@ -1274,7 +1299,8 @@ def _enrich_elements_catalog(
                     c_name = f"Circle {eid}"
                 subtitle = f"Centered at {ctr_id} ({ctr_short})"
 
-            color = "#00e5ff" if "nine_point_circle" in classes else ("#e040fb" if "incircle" in classes else ("#ff9100" if "secondary_circle" in classes else "#C09"))
+            color_token = get_circle_color_token(eid, classes)
+            color = token_hex(color_token)
             rows = [("ctr", f"{ctr_id} ({ctr_short})")]
             if ctr:
                 hx, ky = ctr["x"], ctr["y"]
@@ -1292,6 +1318,7 @@ def _enrich_elements_catalog(
                 "type": "circle",
                 "classes": classes,
                 "color": color,
+                "color_token": color_token,
                 "name": c_name,
                 "subtitle": subtitle,
                 "rows": rows,
@@ -1532,6 +1559,10 @@ def render_model_svg(
     labels_nodes: list[str] = []
     placed_label_px: list[tuple[float, float]] = []
     placed_target_labels = 0
+    if not is_collection_model:
+        for p in points_by_id.values():
+            if "target" in p["classes"] or "selected" in p["classes"]:
+                placed_label_px.append((p["x"] / units_per_px + 12.0, -p["y"] / units_per_px - 10.5))
 
     for el in elements:
         raw_id = el["ID"]
@@ -1550,7 +1581,7 @@ def render_model_svg(
                 if pid in points_by_id
             )
             graphics_nodes.append(
-                f'    <polygon data-id="{el_id}" data-name="{el_name}" class="{class_attr}" '
+                f'    <polygon id="{el_id}" data-id="{el_id}" data-name="{el_name}" class="{class_attr}" '
                 f'data-category="graphics" points="{pts_str}"><title>{el_id}: {el_name}</title></polygon>'
             )
 
@@ -1561,7 +1592,7 @@ def render_model_svg(
                 if pid in points_by_id
             )
             graphics_nodes.append(
-                f'    <polyline data-id="{el_id}" data-name="{el_name}" class="{class_attr}" '
+                f'    <polyline id="{el_id}" data-id="{el_id}" data-name="{el_name}" class="{class_attr}" '
                 f'data-category="graphics" points="{pts_str}"><title>{el_id}: {el_name}</title></polyline>'
             )
 
@@ -1575,13 +1606,22 @@ def render_model_svg(
                 y1 = -(p1["y"] - 1000.0 * dy)
                 x2 = p1["x"] + 1000.0 * dx
                 y2 = -(p1["y"] + 1000.0 * dy)
+                c_tok = info.get("color_token") or ""
+                c_hex = info.get("color") or ""
+                c_attrs = (
+                    f'data-color-token="{html.escape(c_tok, quote=True)}" data-color="{html.escape(c_hex, quote=True)}" '
+                    if c_tok
+                    else ""
+                )
                 elements_nodes.append(
-                    f'    <line data-id="{el_id}" data-name="{el_name}" class="{class_attr}" data-category="elements" '
+                    f'    <line id="{el_id}" data-id="{el_id}" data-name="{el_name}" {c_attrs}'
+                    f'data-pt1="{html.escape(el["pt1"], quote=True)}" data-pt2="{html.escape(el["pt2"], quote=True)}" '
+                    f'class="{class_attr}" data-category="elements" '
                     f'x1="{x1:.5f}" y1="{y1:.5f}" x2="{x2:.5f}" y2="{y2:.5f}">'
                     f"<title>{el_id}: {el_name}</title></line>"
                 )
                 highlights_nodes.append(
-                    f'    <polyline data-highlight-for="{el_id}" class="highlight-segment" '
+                    f'    <polyline id="hl-{el_id}" data-highlight-for="{el_id}" class="highlight-segment" '
                     f'points="{p1["x"]:.6f},{-p1["y"]:.6f} {p2["x"]:.6f},{-p2["y"]:.6f}" style="display: none;" />'
                 )
 
@@ -1592,14 +1632,22 @@ def render_model_svg(
                 cx = ctr["x"]
                 cy = -ctr["y"]
                 r = el["radius"]
+                c_tok = info.get("color_token") or ""
+                c_hex = info.get("color") or ""
+                c_attrs = (
+                    f'data-color-token="{html.escape(c_tok, quote=True)}" data-color="{html.escape(c_hex, quote=True)}" '
+                    if c_tok
+                    else ""
+                )
                 elements_nodes.append(
-                    f'    <circle data-id="{el_id}" data-name="{el_name}" class="{class_attr}" data-category="elements" '
+                    f'    <circle id="{el_id}" data-id="{el_id}" data-name="{el_name}" {c_attrs}'
+                    f'class="{class_attr}" data-category="elements" '
                     f'cx="{cx:.6f}" cy="{cy:.6f}" r="{r:.6f}" fill="none">'
                     f"<title>{el_id}: {el_name}</title></circle>"
                 )
                 if rad_pt:
                     highlights_nodes.append(
-                        f'    <polyline data-highlight-for="{el_id}" class="highlight-segment" '
+                        f'    <polyline id="hl-{el_id}" data-highlight-for="{el_id}" class="highlight-segment" '
                         f'points="{ctr["x"]:.6f},{-ctr["y"]:.6f} {rad_pt["x"]:.6f},{-rad_pt["y"]:.6f}" style="display: none;" />'
                     )
 
@@ -1609,7 +1657,7 @@ def render_model_svg(
             is_target = "target" in el["classes"] or "selected" in el["classes"]
             r = target_radius if is_target else (guide_radius if el["guide"] else pt_radius)
             points_nodes.append(
-                f'    <circle data-id="{el_id}" data-name="{el_name}" class="{class_attr}" data-category="points" '
+                f'    <circle id="{el_id}" data-id="{el_id}" data-name="{el_name}" class="{class_attr}" data-category="points" '
                 f'cx="{cx:.6f}" cy="{cy:.6f}" r="{r:.6f}">'
                 f"<title>{el_id} = {el_name} ({cx:.4f}, {el['y']:.4f})</title></circle>"
             )
@@ -1660,12 +1708,46 @@ def render_model_svg(
                     else:
                         placed_label_px.append((lbl_x_px, lbl_y_px))
                         placed_target_labels += 1
-                elif not el["guide"]:
+                elif not is_target and raw_id not in {"A", "B", "C"}:
+                    base_x_px = cx / units_per_px
+                    base_y_px = cy / units_per_px
+                    candidates = [
+                        (ox_px, oy_px),
+                        (12.0, 20.0),
+                        (-38.0, -10.5),
+                        (-38.0, 20.0),
+                        (16.0, 5.0),
+                        (-42.0, 5.0),
+                        (-8.0, -22.0),
+                        (-8.0, 24.0),
+                    ]
+                    best_cand = (ox_px, oy_px)
+                    best_min_d = -1.0
+                    for c_ox, c_oy in candidates:
+                        cand_x = base_x_px + c_ox
+                        cand_y = base_y_px + c_oy
+                        min_d = min(
+                            (math.hypot(cand_x - px_i, cand_y - py_i) for px_i, py_i in placed_label_px),
+                            default=999.0,
+                        )
+                        if min_d > best_min_d:
+                            best_min_d = min_d
+                            best_cand = (c_ox, c_oy)
+                    ox_px, oy_px = best_cand
+                    offset_x = ox_px * units_per_px
+                    offset_y = oy_px * units_per_px
+                    lbl_x_px = base_x_px + ox_px
+                    lbl_y_px = base_y_px + oy_px
+                    if best_min_d < 24.0:
+                        lbl_cls += " dense-label"
+                    else:
+                        placed_label_px.append((lbl_x_px, lbl_y_px))
+                else:
                     placed_label_px.append((lbl_x_px, lbl_y_px))
 
                 cur_font = guide_font_size if el["guide"] else font_size
                 labels_nodes.append(
-                    f'    <text class="{lbl_cls}" data-point-id="{el_id}" '
+                    f'    <text id="lbl-{el_id}" class="{lbl_cls}" data-point-id="{el_id}" '
                     f'data-anchor-x="{cx:.6f}" data-anchor-y="{cy:.6f}" '
                     f'data-offset-x="{ox_px:.1f}" data-offset-y="{oy_px:.1f}" '
                     f'x="{cx + offset_x:.6f}" y="{cy + offset_y:.6f}" '

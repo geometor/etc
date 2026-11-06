@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" width="100%" height="100%">
+  <defs>
+    <filter id="glow-bary" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Three Shaded Sub-Triangles: u = Area(X_n BC), v = Area(X_n CA), w = Area(X_n AB) -->
+  <!-- u: Triangle X_n B C (opposite A) in Gold -->
+  <polygon points="543.6,362.7 805.0,505.0 568.5,139.1"
+           fill="rgba(232, 184, 90, 0.24)" stroke="none" />
+  <!-- v: Triangle X_n C A (opposite B) in Cyan -->
+  <polygon points="543.6,362.7 568.5,139.1 195.0,505.0"
+           fill="rgba(56, 189, 248, 0.22)" stroke="none" />
+  <!-- w: Triangle X_n A B (opposite C) in Emerald -->
+  <polygon points="543.6,362.7 195.0,505.0 805.0,505.0"
+           fill="rgba(94, 194, 126, 0.22)" stroke="none" />
+
+  <!-- Outer boundary of ABC -->
+  <polygon points="195.0,505.0 805.0,505.0 568.5,139.1"
+           fill="none" stroke="#f8f6f0" stroke-width="3.2" stroke-linejoin="round" />
+
+  <!-- Partition spokes (angle bisectors for X_1) from X_n to vertices A, B, C -->
+  <line x1="543.6" y1="362.7" x2="195.0" y2="505.0" stroke="#e8b85a" stroke-width="3.2" stroke-dasharray="12,5,2.5,5" stroke-linecap="round" />
+  <line x1="543.6" y1="362.7" x2="805.0" y2="505.0" stroke="#38bdf8" stroke-width="3.2" stroke-dasharray="12,5,2.5,5" stroke-linecap="round" />
+  <line x1="543.6" y1="362.7" x2="568.5" y2="139.1" stroke="#5ec27e" stroke-width="3.2" stroke-dasharray="12,5,2.5,5" stroke-linecap="round" />
+
+  <!-- Vertex Center-of-Mass Weight Rings at A(u), B(v), C(w) -->
+  <circle cx="195.0" cy="505.0" r="21.5" fill="rgba(232, 184, 90, 0.22)" stroke="#e8b85a" stroke-width="2.4" />
+  <circle cx="805.0" cy="505.0" r="22.4" fill="rgba(56, 189, 248, 0.22)" stroke="#38bdf8" stroke-width="2.4" />
+  <circle cx="568.5" cy="139.1" r="23.2" fill="rgba(94, 194, 126, 0.22)" stroke="#5ec27e" stroke-width="2.4" />
+
+  <circle cx="195.0" cy="505.0" r="6" fill="#f8f6f0" stroke="#0d111a" stroke-width="2" />
+  <circle cx="805.0" cy="505.0" r="6" fill="#f8f6f0" stroke="#0d111a" stroke-width="2" />
+  <circle cx="568.5" cy="139.1" r="6" fill="#f8f6f0" stroke="#0d111a" stroke-width="2" />
+
+  <!-- Sub-Triangle Area Callout Badges -->
+  <g transform="translate(676.9, 323.9)">
+    <rect x="-72" y="-26" width="144" height="50" rx="8" fill="rgba(13, 17, 26, 0.90)" stroke="#e8b85a" stroke-width="1.5" />
+    <text x="0" y="-4" text-anchor="middle" fill="#e8b85a" font-family="JetBrains Mono, monospace" font-size="16" font-weight="bold">u = a·α (5)</text>
+    <text x="0" y="17" text-anchor="middle" fill="#f8f6f0" font-family="JetBrains Mono, monospace" font-size="15">△X_1BC • 27.8%</text>
+  </g>
+  <g transform="translate(395.2, 323.9)">
+    <rect x="-72" y="-26" width="144" height="50" rx="8" fill="rgba(13, 17, 26, 0.90)" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="0" y="-4" text-anchor="middle" fill="#38bdf8" font-family="JetBrains Mono, monospace" font-size="16" font-weight="bold">v = b·β (6)</text>
+    <text x="0" y="17" text-anchor="middle" fill="#f8f6f0" font-family="JetBrains Mono, monospace" font-size="15">△X_1CA • 33.3%</text>
+  </g>
+  <g transform="translate(514.5, 475.6)">
+    <rect x="-72" y="-26" width="144" height="50" rx="8" fill="rgba(13, 17, 26, 0.90)" stroke="#5ec27e" stroke-width="1.5" />
+    <text x="0" y="-4" text-anchor="middle" fill="#5ec27e" font-family="JetBrains Mono, monospace" font-size="16" font-weight="bold">w = c·γ (7)</text>
+    <text x="0" y="17" text-anchor="middle" fill="#f8f6f0" font-family="JetBrains Mono, monospace" font-size="15">△X_1AB • 38.9%</text>
+  </g>
+
+  <!-- Center X_n -->
+  <circle cx="543.6" cy="362.7" r="9.5" fill="#e8b85a" stroke="#ffffff" stroke-width="2.8" filter="url(#glow-bary)" />
+  <rect x="511.6" y="320.7" width="64" height="26" rx="6" fill="rgba(13, 17, 26, 0.92)" stroke="#e8b85a" stroke-width="1.2" />
+  <text x="543.6" y="338.7" text-anchor="middle" fill="#e8b85a" font-family="JetBrains Mono, monospace" font-size="17" font-weight="bold">X_1</text>
+
+  <!-- Vertex Labels with Mass Weights -->
+  <text x="153.0" y="537.0" fill="#e8b85a" font-family="Georgia, serif" font-size="25" font-weight="bold">A (u)</text>
+  <text x="829.0" y="537.0" fill="#38bdf8" font-family="Georgia, serif" font-size="25" font-weight="bold">B (v)</text>
+  <text x="540.5" y="111.1" fill="#5ec27e" font-family="Georgia, serif" font-size="25" font-weight="bold">C (w)</text>
+
+  <!-- Bottom Stacked Barycentric Area Partition Bar -->
+  <g transform="translate(55, 575)">
+    <rect x="0" y="0" width="890" height="158" rx="14" fill="rgba(11, 14, 21, 0.92)" stroke="rgba(232, 184, 90, 0.35)" stroke-width="1.5" />
+    <text x="24" y="34" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="15" font-weight="bold" letter-spacing="1.0">SUB-TRIANGLE AREA PARTITION • (u : v : w) = (aα : bβ : cγ)</text>
+    <text x="866" y="34" text-anchor="end" fill="#e8b85a" font-family="JetBrains Mono, monospace" font-size="18" font-weight="bold">u : v : w = a : b : c</text>
+
+    <!-- Stacked 100% Area Bar -->
+    <rect x="24" y="54" width="233.9" height="42" rx="6" fill="#e8b85a" />
+    <rect x="257.9" y="54" width="280.7" height="42" fill="#38bdf8" />
+    <rect x="538.6" y="54" width="327.4" height="42" rx="6" fill="#5ec27e" />
+
+    <text x="140.9" y="81" text-anchor="middle" fill="#0d111a" font-family="JetBrains Mono, monospace" font-size="17" font-weight="bold">u: 27.8%</text>
+    <text x="398.2" y="81" text-anchor="middle" fill="#0d111a" font-family="JetBrains Mono, monospace" font-size="17" font-weight="bold">v: 33.3%</text>
+    <text x="702.3" y="81" text-anchor="middle" fill="#0d111a" font-family="JetBrains Mono, monospace" font-size="17" font-weight="bold">w: 38.9%</text>
+
+    <text x="445" y="132" text-anchor="middle" fill="#f8f6f0" font-family="Georgia, serif" font-size="21">
+      Area(△X_1BC) : Area(△X_1CA) : Area(△X_1AB) = ½aα : ½bβ : ½cγ = 5 : 6 : 7
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,83 @@
+center: X_9
+title: MITTENPUNKT
+folio: Kimberling ETC • Collection 1 (X_1–X_19)
+enunciation: The symmedian point of the excentral triangle, where lines joining the three excenters to the side midpoints concur.
+
+[bell:proposition]
+
+[screen: CONSTRUCT | svg: 01_primary.svg | weight: 1]
+symbolic: X_9 = Mittenpunkt • [J_a M_a] ∩ [J_b M_b] ∩ [J_c M_c]
+zoom: A, B, C
+active: X_9:gold, [ J_a M_a ]:gold, [ J_b M_b ]:gold, [ J_c M_c ]:gold
+head: Primary Construction
+row: Target Center | X_9 (Mittenpunkt):gold
+row: Excenter–Midpoint Lines | J_a M_a, J_b M_b, J_c M_c:gold
+row: Medial Triangle | △M_a M_b M_c:muted
+just: ∵ CONCURRENCE | SYMMEDIAN OF THE EXCENTRAL TRIANGLE | Perspector of the excentral triangle △J_a J_b J_c and the medial triangle △M_a M_b M_c.
+say: Introduced by Christian Heinrich von Nagel in eighteen thirty-six, <pause> X nine is the Mittenpunkt—<pause> literally the middle point:
+
+[screen: GOAL | svg: 01_primary.svg | weight: 1 | punchline: true]
+symbolic: X_9 = Mittenpunkt • [J_a M_a] ∩ [J_b M_b] ∩ [J_c M_c]
+zoom: X_9, < J_a J_b J_c >, J_a, J_b, J_c, < M_a M_b M_c >, M_a, M_b, M_c, X_9, J_a, M_a, J_b, M_b, J_c, M_c
+thumb_zoom: A, B, C
+active: X_9:gold, < J_a J_b J_c >:blue, J_a:blue, J_b:blue, J_c:blue, < M_a M_b M_c >:blue, M_a:blue, M_b:blue, M_c:blue
+head: Primary Construction
+row: Target Center | X_9 (Mittenpunkt):gold
+row: Excenter–Midpoint Lines | J_a M_a, J_b M_b, J_c M_c:muted
+row: Medial Triangle | △M_a M_b M_c:blue
+just: ∵ DEFINITION | SYMMEDIAN OF THE EXCENTRAL TRIANGLE | Perspector of the excentral triangle △J_a J_b J_c and the medial triangle △M_a M_b M_c.
+say: <pause> the concurrence of the three lines joining the excenters J sub a, J sub b, and J sub c to the corresponding side midpoints M sub a, M sub b, and M sub c.
+
+[bell:construction]
+
+[screen: ASSERT | svg: 02_coordinates.svg | weight: 1.15]
+symbolic: Trilinears (s-a) : (s-b) : (s-c) • Barycentrics a(s-a) : b(s-b) : c(s-c)
+section: Trilinear Distances | α = s − a:gold | β = s − b:blue | γ = s − c:green
+section: Barycentric Sub-Areas | u = a(s − a):gold | v = b(s − b):blue | w = c(s − c):green
+just: ∵ COORDINATES | TRILINEAR–BARYCENTRIC BRIDGE | Notice that X_9's trilinears (s-a : s-b : s-c) equal X_8's barycentrics! On (5, 6, 7), barycentrics are 10 : 9 : 7.
+say: Geometrically, <pause> X nine is the symmedian point of the excentral triangle. <pause> Its trilinear distances are proportional to the semiperimeter excesses, <pause> s minus a, to s minus b, to s minus c, <pause> and its barycentric areas are a times s minus a, <pause> to b times s minus b, <pause> to c times s minus c.
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.5]
+symbolic: Line {1, 6, 9} • Line {2, 7, 9} • Line {4, 9, 10}
+zoom: X_9, X_1, X_6
+active: X_9:gold, {1, 6, 9}:pink
+head: Incident Central Lines
+row: Incenter–Symmedian | {1, 6, 9}:pink
+row: Centroid–Gergonne | {2, 7, 9}:muted
+row: Orthocenter–Spieker | {4, 9, 10}:muted
+just: ∵ PRIMARY AXIS | TRIPLE CLASSICAL INTERSECTION | Constructible directly as the intersection of line X_1–X_6 and line X_2–X_7.
+say: <pause> On the central lines layer, <pause> X nine lies at the intersection of line X one X six,
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.55]
+symbolic: Line {1, 6, 9} • Line {2, 7, 9} • Line {4, 9, 10}
+zoom: X_9, X_1, X_6, X_2, X_7, X_4, X_10
+active: X_9:gold, {1, 6, 9}:pink, {2, 7, 9}:green, {4, 9, 10}:blue
+head: Incident Central Lines
+row: Incenter–Symmedian | {1, 6, 9}:pink
+row: Centroid–Gergonne | {2, 7, 9}:green
+row: Orthocenter–Spieker | {4, 9, 10}:blue
+just: ∵ COLLINEARITIES | TRIPLE CLASSICAL INTERSECTION | Constructible directly as the intersection of line X_1–X_6 and line X_2–X_7.
+say: <pause> line X two X seven, <pause> and the Orthocenter–Spieker line X four X ten.
+
+[bell:insight]
+
+[screen: PROVE | svg: 04_relations.svg | weight: 1.05]
+symbolic: Complement of X_7 (Gergonne) • Isogonal X_57 • Isotomic X_85
+zoom: X_9, X_7, X_57, X_1, X_3
+active: X_9:gold, X_7:blue, X_57:green, X_1:orange
+head: Functional Relations
+row: Anticomplement | X_7:blue
+row: Isogonal Conjugate | X_57:green
+row: Excentral Symmedian | X_1, X_6:orange
+just: ∵ RELATIONS | MEDIAL GERGONNE POINT | As the complement of X_7, X_9 is the Gergonne point of the medial triangle △M_a M_b M_c.
+say: Under functional relations, <pause> X nine is the complement of the Gergonne point X seven, <pause> the isogonal conjugate of X fifty-seven,
+
+[screen: ∴ | svg: 05_four_triangles.svg | weight: 0.95]
+symbolic: Kimberling (6, 9, 13) Search = 3.571972699230
+head: Reference Triangles | a | b | c
+row: Acute Triangle | 5 | 6 | 7:gold
+row: Right Triangle | 3 | 4 | 5:blue
+row: Kepler Triangle | 1 | √φ | φ:green
+row: Kimberling Triangle | 6 | 9 | 13:purple
+just: ∵ INVARIANCE | KIMBERLING SEARCH VALUE • X_9 | Shortest directed trilinear distance on reference triangle (6, 9, 13): 3.571972699230.
+say: <pause> and the isotomic conjugate of X eighty-five.

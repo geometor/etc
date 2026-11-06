@@ -44,7 +44,7 @@ X_971
    * :ref:`X_971 <X_971>` = :term:`crosssum <crosssum>` of :ref:`X_55 <X_55>` and :ref:`X_910 <X_910>`
    * :ref:`X_971 <X_971>` = crosssum of X_32622 and X_32623
    * :ref:`X_971 <X_971>` = intersection of :term:`trilinear polars <trilinear-polar>` of :ref:`X_2 <X_2>` and :ref:`X_9 <X_9>`
-   * :ref:`X_971 <X_971>` = X_3564-of-excentral-triangle
+   * :ref:`X_971 <X_971>` = :ref:`X_3564 <X_3564>`-of-excentral-triangle
    * :ref:`X_971 <X_971>` = Cundy-Parry Phi transform of X_7367
    * :ref:`X_971 <X_971>` = Cundy-Parry Psi transform of X_14256
 

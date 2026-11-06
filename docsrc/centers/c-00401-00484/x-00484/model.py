@@ -9,7 +9,6 @@ from geometor.model import Model
 
 from geometor.etc.ops import (
     central_line,
-    ceva_conjugate,
     circumcenter_of,
     construct_baseline_triangle,
     create_model,
@@ -24,15 +23,15 @@ def construct_x_00484(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_484 = 1st EVANS PERSPECTOR on reference triangle ABC."""
-    X_80 = eval_trilinear_point(model, A, B, C, '1/(1 - 2*cos(A))', ID="X_80", classes=["center"])
-    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center"])
-    X_484 = ceva_conjugate(model, A, B, C, X_80, X_1, ID="X_484", classes=["selected", "target"])
+    X_484 = eval_trilinear_point(model, A, B, C, '1 + 2*(cos(A) - cos(B) - cos(C))', ID="X_484", classes=["selected", "target"])
+    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
     central_line(model, X_1, X_3, 1, 3, incident=True)
     X_12 = eval_trilinear_point(model, A, B, C, '1 + cos(B - C)', ID="X_12", classes=["center", "incident"])
     X_79 = eval_trilinear_point(model, A, B, C, '1/(1 + 2*cos(A))', ID="X_79", classes=["center", "incident"])
     central_line(model, X_12, X_79, 12, 79, incident=True)
     X_30 = eval_trilinear_point(model, A, B, C, 'cos(A) - 2*cos(B)*cos(C)', ID="X_30", classes=["center", "incident"])
+    X_80 = eval_trilinear_point(model, A, B, C, '1/(1 - 2*cos(A))', ID="X_80", classes=["center", "incident"])
     central_line(model, X_30, X_80, 30, 80, incident=True)
     return promote_point_to_top(model, X_484)
 

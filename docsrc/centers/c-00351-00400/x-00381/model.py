@@ -11,7 +11,6 @@ from geometor.etc.ops import (
     central_line,
     centroid_of,
     circumcenter_of,
-    complement,
     construct_baseline_triangle,
     create_model,
     eval_barycentric_point,
@@ -26,8 +25,7 @@ def construct_x_00381(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_381 = MIDPOINT OF X_2 AND X_4 on reference triangle ABC."""
-    X_376 = eval_trilinear_point(model, A, B, C, '5*cos(A) - cos(B - C)', ID="X_376", classes=["center"])
-    X_381 = complement(model, A, B, C, X_376, ID="X_381", classes=["selected", "target"])
+    X_381 = eval_trilinear_point(model, A, B, C, '2*cos(B - C) - cos(A)', ID="X_381", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
     central_line(model, X_2, X_3, 2, 3)

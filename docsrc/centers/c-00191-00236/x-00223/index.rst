@@ -45,7 +45,7 @@ X_223
    :badge: 18 lines
    :class: line-catalog
 
-   {:ref:`2 <X_2>`, :ref:`77 <X_77>`}, {:ref:`3 <X_3>`, :ref:`1035 <X_1035>`}, {:ref:`6 <X_6>`, :ref:`57 <X_57>`}, {:ref:`9 <X_9>`, :ref:`1073 <X_1073>`}, {:ref:`40 <X_40>`, :ref:`221 <X_221>`}, {:ref:`55 <X_55>`, :ref:`1456 <X_1456>`}, {:ref:`56 <X_56>`, :ref:`937 <X_937>`}, {:ref:`63 <X_63>`, :ref:`651 <X_651>`}, {:ref:`108 <X_108>`, :ref:`204 <X_204>`}, {:ref:`109 <X_109>`, :ref:`165 <X_165>`}, {:ref:`312 <X_312>`, :ref:`664 <X_664>`}, {:ref:`329 <X_329>`, :ref:`347 <X_347>`}, {:ref:`380 <X_380>`, :ref:`608 <X_608>`}, {:ref:`580 <X_580>`, :ref:`603 <X_603>`}, {:ref:`936 <X_936>`, :ref:`1038 <X_1038>`}, {:ref:`1249 <X_1249>`, 3352}, {3341, 3349}, {3351, 3356}
+   {:ref:`2 <X_2>`, :ref:`77 <X_77>`}, {:ref:`3 <X_3>`, :ref:`1035 <X_1035>`}, {:ref:`6 <X_6>`, :ref:`57 <X_57>`}, {:ref:`9 <X_9>`, :ref:`1073 <X_1073>`}, {:ref:`40 <X_40>`, :ref:`221 <X_221>`}, {:ref:`55 <X_55>`, :ref:`1456 <X_1456>`}, {:ref:`56 <X_56>`, :ref:`937 <X_937>`}, {:ref:`63 <X_63>`, :ref:`651 <X_651>`}, {:ref:`108 <X_108>`, :ref:`204 <X_204>`}, {:ref:`109 <X_109>`, :ref:`165 <X_165>`}, {:ref:`312 <X_312>`, :ref:`664 <X_664>`}, {:ref:`329 <X_329>`, :ref:`347 <X_347>`}, {:ref:`380 <X_380>`, :ref:`608 <X_608>`}, {:ref:`580 <X_580>`, :ref:`603 <X_603>`}, {:ref:`936 <X_936>`, :ref:`1038 <X_1038>`}, {:ref:`1249 <X_1249>`, :ref:`3352 <X_3352>`}, {:ref:`3341 <X_3341>`, :ref:`3349 <X_3349>`}, {:ref:`3351 <X_3351>`, :ref:`3356 <X_3356>`}
 
 .. collapse:: Functional Relations
    :badge: 23 relations
@@ -60,8 +60,8 @@ X_223
    * :ref:`X_223 <X_223>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`198 <X_198>`, :ref:`40 <X_40>`), (:ref:`227 <X_227>`, :ref:`347 <X_347>`)
    * :ref:`X_223 <X_223>` = :term:`crosspoint <crosspoint>` of :ref:`X_2 <X_2>` and :ref:`X_329 <X_329>`
    * :ref:`X_223 <X_223>` = :term:`crosssum <crosssum>` of :ref:`X_6 <X_6>` and :ref:`X_1436 <X_1436>`
-   * :ref:`X_223 <X_223>` = perspector of :g:`ABC << A B C >>` and :term:`antipedal triangle <antipedal-triangle>` of X_3345
-   * :ref:`X_223 <X_223>` = perspector of pedal and :term:`anticevian triangles <anticevian-triangle>` of X_3182
+   * :ref:`X_223 <X_223>` = perspector of :g:`ABC << A B C >>` and :term:`antipedal triangle <antipedal-triangle>` of :ref:`X_3345 <X_3345>`
+   * :ref:`X_223 <X_223>` = perspector of pedal and :term:`anticevian triangles <anticevian-triangle>` of :ref:`X_3182 <X_3182>`
    * :ref:`X_223 <X_223>` = perspector of :g:`ABC << A B C >>` and :term:`medial triangle <medial-triangle>` of :term:`pedal triangle <pedal-triangle>` of :ref:`X_1490 <X_1490>`
    * :ref:`X_223 <X_223>` = perspector of circumconic centered at :ref:`X_57 <X_57>`
    * :ref:`X_223 <X_223>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X_57 <X_57>`

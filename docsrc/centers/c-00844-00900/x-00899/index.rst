@@ -46,9 +46,9 @@ X_899
    * :ref:`X_899 <X_899>` = :term:`complement <complement>` of X_29824
    * :ref:`X_899 <X_899>` = :term:`anticomplement <anticomplement>` of X_4871
    * :ref:`X_899 <X_899>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these {i,j}: {:ref:`891 <X_891>`, 19945}, {:ref:`1646 <X_1646>`, 14404}
-   * :ref:`X_899 <X_899>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_891 <X_891>`\ X_3768
+   * :ref:`X_899 <X_899>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_891 <X_891>`\ \ :ref:`X_3768 <X_3768>`
    * :ref:`X_899 <X_899>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these {i,j}: {:ref:`1 <X_1>`, 37129}, {4607, 7035}
-   * :ref:`X_899 <X_899>` = :term:`crosssum <crosssum>` of X_i and X_j for these {i,j}: {:ref:`1 <X_1>`, :ref:`899 <X_899>`}, {:ref:`513 <X_513>`, 16507}, {3248, 3768}
+   * :ref:`X_899 <X_899>` = :term:`crosssum <crosssum>` of X_i and X_j for these {i,j}: {:ref:`1 <X_1>`, :ref:`899 <X_899>`}, {:ref:`513 <X_513>`, 16507}, {:ref:`3248 <X_3248>`, :ref:`3768 <X_3768>`}
    * :ref:`X_899 <X_899>` = crossdifference of every pair of points on line :ref:`X_1 <X_1>`\ \ :ref:`X_649 <X_649>`
    * :ref:`X_899 <X_899>` = bicentric sum of PU(58)
    * :ref:`X_899 <X_899>` = PU(58)-harmonic conjugate of :ref:`X_649 <X_649>`

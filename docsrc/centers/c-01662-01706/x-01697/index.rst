@@ -23,8 +23,8 @@ X_1697
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{1, 3} <{ 1, 3 }>`, :g:`{8, 9} <{ 8, 9 }>`
-   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_8 <X_8>` (:ref:`NAGEL POINT <X_8>`), :g:`X_9 <X_9>` (:ref:`MITTENPUNKT <X_9>`)
+   * **Central Lines:** :g:`{3340, 1} <{ 3340, 1 }>`
+   * **Related Centers:** :g:`X_3340 <X_3340>` (:ref:`INTERSECTION OF LINES X <X_3340>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`)
 
 .. signature:: center
 
@@ -45,7 +45,7 @@ X_1697
 .. collapse:: Functional Relations
    :badge: 11 relations
 
-   * :ref:`X_1697 <X_1697>` = reflection of X_3340 in :ref:`X_1 <X_1>`
+   * :ref:`X_1697 <X_1697>` = reflection of :ref:`X_3340 <X_3340>` in :ref:`X_1 <X_1>`
    * :ref:`X_1697 <X_1697>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_7091
    * :ref:`X_1697 <X_1697>` = :ref:`X_2339 <X_2339>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_9 <X_9>`
    * :ref:`X_1697 <X_1697>` = 2nd-extouch-to-excentral :term:`similarity image <similarity-image>` of :ref:`X_8 <X_8>`

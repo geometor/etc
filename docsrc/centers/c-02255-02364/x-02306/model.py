@@ -25,7 +25,7 @@ def construct_x_02306(
 ) -> spg.Point:
     """Construct X_2306 = X_2-ISOCONJUGATE OF X_1250 on reference triangle ABC."""
     X_1081 = eval_trilinear_point(model, A, B, C, 'sec(A/2)*csc(A/2 -  pi  /3)', ID="X_1081", classes=["center"])
-    X_1251 = eval_trilinear_point(model, A, B, C, '(cos(A/2))*csc(A/2 -  pi  /3)', ID="X_1251", classes=["center"])
+    X_1251 = eval_trilinear_point(model, A, B, C, '(sin(A)*csc(A/2)*sec(A/2 +  pi  /6))', ID="X_1251", classes=["center"])
     X_2306 = ceva_conjugate(model, A, B, C, X_1081, X_1251, ID="X_2306", classes=["selected", "target"])
     X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
     X_15 = eval_trilinear_point(model, A, B, C, 'sin(A +  pi  /3)', ID="X_15", classes=["center", "incident"])

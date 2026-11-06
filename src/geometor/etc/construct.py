@@ -214,11 +214,11 @@ def _prepare_formula_expr(latex_or_rst: str) -> str | None:
     tail_clean = re.sub(r"\\?\s*:sup:`([^`]+)`\\?\s*", r"**(\1)", tail_clean)
     tail_clean = tail_clean.replace(r"\*", "*").replace("π", " pi ").replace("ω", " omega ")
 
-    # Check if `first` references an auxiliary function f(A,B,C), f(a,b,c), g(a,b,c), or h(a,b,c) defined in `tail_clause`
+    # Check if `first` references an auxiliary function f(A,B,C), f(a,b,c), g(a,b,c), h(a,b,c), or t(A,B,C) defined in `tail_clause`
     fn_pat = (
         r"([fg])\s*\(\s*[aAbBcC]\s*,\s*[aAbBcC]\s*,\s*[aAbBcC]\s*\)"
         if re.search(r"\bk\s*\(\s*a\s*,\s*b\s*,\s*c\s*\)", first)
-        else r"([fgh])\s*\(\s*[aAbBcC]\s*,\s*[aAbBcC]\s*,\s*[aAbBcC]\s*\)"
+        else r"([fght])\s*\(\s*[aAbBcC]\s*,\s*[aAbBcC]\s*,\s*[aAbBcC]\s*\)"
     )
     fn_call_m = re.search(fn_pat, first)
     if fn_call_m:
@@ -237,15 +237,19 @@ def _prepare_formula_expr(latex_or_rst: str) -> str | None:
             d_expr = dm.group(1).strip()
             rhs = rhs[: dm.start()].strip()
             rhs = re.sub(r"\bD\b", lambda _: f"({d_expr})", rhs)
-        # Stop rhs before secondary clauses like `, where`, `, x : y : z =`, `, u : v : w =`, `, D, U, V, W`, `, J as at`, `, K as at`, `(see X`, or `;`
+        # Stop rhs before secondary clauses like `, where`, `, x : y : z =`, `, u : v : w =`, `, D, U, V, W`, `, J as at`, `, K as at`, `(see X`, `(using`, or `;`
         rhs = re.split(
-            r",\s*(?:where\b|[xuv]\s*:\s*[yvw]\s*:\s*[zw]|[DUVW]\s*,|[JK]\s+as\s+at\b)|\(\s*see\s+X\b|;",
+            r",\s*(?:where\b|[xuv]\s*:\s*[yvw]\s*:\s*[zw]|[DUVW]\s*,|[JK]\s+as\s+at\b)|\(\s*(?:see\s+X|using)\b|;",
             rhs,
             maxsplit=1,
             flags=re.IGNORECASE,
         )[0].strip()
-        # Strip trailing attribution like `(M. Iliev, 5/13/07)` or trailing period
-        rhs = re.sub(r"\s*\([A-Z][^()]*\d+\s*\)\s*\.?$", "", rhs).strip()
+        # Strip trailing author attribution like `(M. Iliev, 5/13/07)` or `(E. Danneels)` without eating math like `(A + pi / 3)`
+        rhs = re.sub(
+            r"\s*\((?:[A-Z]\s*\.\s*[A-Z][a-zA-Z]+|[A-Z][a-z]{2,})[^()]*\)\s*\.?$",
+            "",
+            rhs,
+        ).strip()
         # Reject if secondary auxiliary functions u(...), v(...), t(...), s(...), x_1 = ... are defined or called
         if re.search(r",\s*[uvtsx]\s*[\(=]|\b(?:[uvt]\s*\([ABCabc]|x_\{?\d)", rhs):
             return None
@@ -254,6 +258,15 @@ def _prepare_formula_expr(latex_or_rst: str) -> str | None:
             + f"({rhs})"
             + first[fn_call_m.end() :]
         )
+
+    # Expand inline p = a + b + c, h = b^2 + c^2 - a^2 (e.g. X_3651)
+    if "p = a + b + c" in tail_clean and "b^{2} + c^{2} - a^{2}" in tail_clean:
+        first = first.replace("abcph", "a*b*c*p*h").replace("h^{2}", "*(h**(2))")
+        first = re.sub(r"\bp\b", "(a + b + c)", first)
+        first = re.sub(r"\bh\b", "(b**(2) + c**(2) - a**(2))", first)
+
+    # Normalize x(3433) / y(3433) / z(3433) trilinear component references to x / y / z
+    first = re.sub(r"\b([xyz])\(\s*\d+\s*\)", r"\1", first)
 
     # Expand symmetric/cyclic helper functions h(a,b,c) and k(a,b,c) if referenced in `first` (e.g. X_2598..X_2666)
     if re.search(r"\b[hk]\s*\(\s*a\s*,\s*b\s*,\s*c\s*\)", first):
@@ -276,8 +289,8 @@ def _prepare_formula_expr(latex_or_rst: str) -> str | None:
 
     if not first or "=" in first or "\\text" in first or "see below" in first.lower() or "given below" in first.lower():
         return None
-    # Reject remaining unexpanded f(A,B,C), f(a,b,c), h(a,b,c), or k(a,b,c) calls
-    if re.search(r"[fghk]\s*\(\s*[aAbBcC]\s*,", first):
+    # Reject remaining unexpanded f(A,B,C), f(a,b,c), h(a,b,c), k(a,b,c), or t(A,B,C) calls
+    if re.search(r"[fghkt]\s*\(\s*[aAbBcCuvwx]\s*,", first):
         return None
 
     # Convert LaTeX constructs to Python expression
@@ -424,6 +437,7 @@ def _eval_cyclic(
     expr_str: str,
     ctx: TriangleContext,
     xyz: tuple[float, float, float] | None = None,
+    uvw: tuple[float, float, float] | None = None,
 ) -> tuple[float, float, float] | None:
     """Evaluate a cyclic coordinate expression f(a, b, c, A, B, C) for all three components."""
     code = None
@@ -433,12 +447,13 @@ def _eval_cyclic(
         return None
 
     xyz_rotations: tuple[dict[str, float], dict[str, float], dict[str, float]] | None = None
-    if xyz is not None:
-        tx, ty, tz = xyz
+    if xyz is not None or uvw is not None:
+        tx, ty, tz = xyz if xyz is not None else uvw  # type: ignore[misc]
+        tu, tv, tw = uvw if uvw is not None else xyz  # type: ignore[misc]
         xyz_rotations = (
-            {"x": tx, "y": ty, "z": tz, "u": tx, "v": ty, "w": tz},
-            {"x": ty, "y": tz, "z": tx, "u": ty, "v": tz, "w": tx},
-            {"x": tz, "y": tx, "z": ty, "u": tz, "v": tx, "w": ty},
+            {"x": tx, "y": ty, "z": tz, "u": tu, "v": tv, "w": tw},
+            {"x": ty, "y": tz, "z": tx, "u": tv, "v": tw, "w": tu},
+            {"x": tz, "y": tx, "z": ty, "u": tw, "v": tu, "w": tv},
         )
 
     for env_tuple in (ctx.eval_envs, ctx.perturbed_eval_envs):
@@ -734,56 +749,127 @@ class CenterRegistry:
         self.xy_cache[num] = xy
         return True
 
-    def _extract_xyz_trilinears(self, line: str) -> tuple[float, float, float] | None:
-        m = re.search(
-            r"(?:x\s*:\s*y\s*:\s*z|u\s*:\s*v\s*:\s*w)`?\s*=\s*(?::ref:`[^`]*<X_(\d+)>`|X(?:_|\()(\d+))",
+    def _extract_xyz_uvw_trilinears(
+        self, line: str
+    ) -> tuple[
+        tuple[float, float, float] | None,
+        tuple[float, float, float] | None,
+        bool,
+    ]:
+        mx = re.search(
+            r"(?:x\s*:\s*y\s*:\s*z`?\s*=\s*(?::ref:`[^`]*<X_(\d+)>`|X(?:_|\()(\d+))|\b[xyz]\(\s*(\d+)\s*\))",
             line,
             flags=re.IGNORECASE,
         )
-        if not m:
-            return None
-        k = int(m.group(1) or m.group(2))
-        if k not in self.bary_cache:
-            return None
-        u, v, w = self.bary_cache[k]
-        return (u / self.ctx.raw_a, v / self.ctx.raw_b, w / self.ctx.raw_c)
+        mu = re.search(
+            r"u\s*:\s*v\s*:\s*w`?\s*=\s*(?::ref:`[^`]*<X_(\d+)>`|X(?:_|\()(\d+))",
+            line,
+            flags=re.IGNORECASE,
+        )
+        xyz: tuple[float, float, float] | None = None
+        uvw: tuple[float, float, float] | None = None
+        if mx:
+            kx = int(mx.group(1) or mx.group(2) or mx.group(3))
+            if kx not in self.bary_cache:
+                return (None, None, False)
+            ux, vx, wx = self.bary_cache[kx]
+            xyz = (ux / self.ctx.raw_a, vx / self.ctx.raw_b, wx / self.ctx.raw_c)
+        if mu:
+            ku = int(mu.group(1) or mu.group(2))
+            if ku not in self.bary_cache:
+                return (None, None, False)
+            uu, vu, wu = self.bary_cache[ku]
+            uvw = (uu / self.ctx.raw_a, vu / self.ctx.raw_b, wu / self.ctx.raw_c)
+        return (xyz, uvw, True)
+
+    def _get_known_incidence_lines(
+        self, cdata: dict[str, Any], limit: int = 8
+    ) -> list[tuple[float, float, float]]:
+        known_lines: list[tuple[float, float, float]] = []
+        for inc in cdata.get("incidences") or []:
+            for i_num, j_num in inc.get("lines") or []:
+                if i_num in self.bary_cache and j_num in self.bary_cache:
+                    ln = _bary_line(self.bary_cache[i_num], self.bary_cache[j_num])
+                    ln_norm = math.hypot(*ln)
+                    if ln_norm > 1e-11:
+                        known_lines.append(
+                            (ln[0] / ln_norm, ln[1] / ln_norm, ln[2] / ln_norm)
+                        )
+                        if len(known_lines) >= limit:
+                            break
+            if len(known_lines) >= limit:
+                break
+        return known_lines
+
+    @staticmethod
+    def _score_bary_on_lines(
+        bary: tuple[float, float, float],
+        lines: list[tuple[float, float, float]],
+    ) -> int:
+        norm = math.hypot(*bary)
+        if norm < 1e-12:
+            return 0
+        u, v, w = bary[0] / norm, bary[1] / norm, bary[2] / norm
+        return sum(
+            1 for ln in lines if abs(ln[0] * u + ln[1] * v + ln[2] * w) <= 1e-4
+        )
 
     def _try_eval_coordinates(self, cdata: dict[str, Any]) -> tuple[float, float, float] | None:
         """Try evaluating trilinear or barycentric formulas from parsed center data."""
+        candidates: list[tuple[float, float, float]] = []
         for b_line in cdata.get("barycentrics") or []:
             expr = _prepare_formula_expr(b_line)
             if expr:
-                xyz = self._extract_xyz_trilinears(b_line)
-                res = _eval_cyclic(expr, self.ctx, xyz=xyz)
+                xyz, uvw, ready = self._extract_xyz_uvw_trilinears(b_line)
+                if not ready:
+                    continue
+                res = _eval_cyclic(expr, self.ctx, xyz=xyz, uvw=uvw)
                 if res and math.hypot(*res) > 1e-11:
-                    return res
+                    candidates.append(res)
 
         for t_line in cdata.get("trilinears") or []:
             expr = _prepare_formula_expr(t_line)
             if expr:
-                xyz = self._extract_xyz_trilinears(t_line)
-                res = _eval_cyclic(expr, self.ctx, xyz=xyz)
+                xyz, uvw, ready = self._extract_xyz_uvw_trilinears(t_line)
+                if not ready:
+                    continue
+                res = _eval_cyclic(expr, self.ctx, xyz=xyz, uvw=uvw)
                 if res:
                     bary = self.ctx.trilinear_to_bary(*res)
                     if math.hypot(*bary) > 1e-11:
-                        return bary
-        return None
+                        candidates.append(bary)
+
+        if not candidates:
+            return None
+
+        known_lines = self._get_known_incidence_lines(cdata, limit=6)
+        if len(known_lines) < 2:
+            return candidates[0]
+
+        best_cand = candidates[0]
+        best_score = self._score_bary_on_lines(best_cand, known_lines)
+        for cand in candidates[1:]:
+            sc = self._score_bary_on_lines(cand, known_lines)
+            if sc > best_score:
+                best_score = sc
+                best_cand = cand
+
+        # If a formula fails collinearity consensus on known incidence lines (e.g. Kimberling HTML formula typo),
+        # reject it if a relation or incidence consensus can satisfy >= 2 lines.
+        if best_score == 0 or (len(known_lines) >= 4 and best_score <= 1):
+            alt = self._try_eval_relations(cdata) or self._try_eval_incidence(cdata)
+            if alt and self._score_bary_on_lines(alt, known_lines) >= max(2, best_score + 1):
+                return alt
+
+        return best_cand
 
     def _try_eval_incidence(self, cdata: dict[str, Any]) -> tuple[float, float, float] | None:
         """Try computing X(n) as the intersection of two non-parallel lines {i1, j1} and {i2, j2}."""
-        known_lines: list[tuple[float, float, float]] = []
+        known_lines = self._get_known_incidence_lines(cdata, limit=8)
         is_inf = "infinity" in (cdata.get("title") or "").lower() or "direction of" in (cdata.get("title") or "").lower()
         for inc in cdata.get("incidences") or []:
             if "line at infinity" in (inc.get("raw_rst") or "").lower():
                 is_inf = True
-            for i_num, j_num in inc.get("lines") or []:
-                if i_num in self.bary_cache and j_num in self.bary_cache:
-                    ln = _bary_line(self.bary_cache[i_num], self.bary_cache[j_num])
-                    if math.hypot(*ln) > 1e-11:
-                        known_lines.append(ln)
-                        if len(known_lines) >= 6:
-                            break
-            if len(known_lines) >= 6:
                 break
 
         if is_inf and known_lines:
@@ -791,12 +877,21 @@ class CenterRegistry:
             if pt_inf and math.hypot(*pt_inf) > 1e-10:
                 return pt_inf
 
+        best_pt: tuple[float, float, float] | None = None
+        best_score = -1
         for idx1 in range(len(known_lines)):
             for idx2 in range(idx1 + 1, len(known_lines)):
                 pt = _intersect_bary_lines(known_lines[idx1], known_lines[idx2])
                 if pt and math.hypot(*pt) > 1e-10:
-                    return pt
-        return None
+                    if len(known_lines) <= 2:
+                        return pt
+                    sc = self._score_bary_on_lines(pt, known_lines)
+                    if sc > best_score:
+                        best_score = sc
+                        best_pt = pt
+                        if sc == len(known_lines):
+                            return pt
+        return best_pt
 
     def _try_eval_relations(self, cdata: dict[str, Any]) -> tuple[float, float, float] | None:
         """Try computing X_n from anchored functional relations like isogonal/isotomic conjugate, complement, midpoint."""
@@ -817,11 +912,14 @@ class CenterRegistry:
                 u, v, w = self.bary_cache[k]
                 tx, ty, tz = u / a, v / b, w / c
                 if which == "1st":
-                    return (
-                        a**2 / (tx * (b * tz + c * ty)),
-                        b**2 / (ty * (c * tx + a * tz)),
-                        c**2 / (tz * (a * ty + b * tx)),
-                    )
+                    try:
+                        return (
+                            a**2 / (tx * (b * tz + c * ty)),
+                            b**2 / (ty * (c * tx + a * tz)),
+                            c**2 / (tz * (a * ty + b * tx)),
+                        )
+                    except ZeroDivisionError:
+                        pass
                 if which == "2nd":
                     return (
                         a**2 * tx * ((b**2 * tz**2 + c**2 * ty**2) * tx + tx * ty * tz * b * c + a * ty * tz * (b * tz + c * ty)),
@@ -842,11 +940,14 @@ class CenterRegistry:
             if k in self.bary_cache:
                 u, v, w = self.bary_cache[k]
                 tx, ty, tz = u / a, v / b, w / c
-                return (
-                    a / (b * tz * (u + v - w) - c * ty * (u + w - v)),
-                    b / (c * tx * (v + w - u) - a * tz * (v + u - w)),
-                    c / (a * ty * (w + u - v) - b * tx * (w + v - u)),
-                )
+                try:
+                    return (
+                        a / (b * tz * (u + v - w) - c * ty * (u + w - v)),
+                        b / (c * tx * (v + w - u) - a * tz * (v + u - w)),
+                        c / (a * ty * (w + u - v) - b * tx * (w + v - u)),
+                    )
+                except ZeroDivisionError:
+                    pass
 
         # 3. Brisse transform of X(k)
         m_bri = re.match(r"^BRISSE\s+TRANSFORM\s+OF\s+X\((\d+)\)$", title_s, re.IGNORECASE)
@@ -854,11 +955,14 @@ class CenterRegistry:
             k = int(m_bri.group(1))
             if k in self.bary_cache:
                 u, v, w = self.bary_cache[k]
-                return (
-                    a**4 / ((b + c - a) * (u**2)),
-                    b**4 / ((c + a - b) * (v**2)),
-                    c**4 / ((a + b - c) * (w**2)),
-                )
+                try:
+                    return (
+                        a**4 / ((b + c - a) * (u**2)),
+                        b**4 / ((c + a - b) * (v**2)),
+                        c**4 / ((a + b - c) * (w**2)),
+                    )
+                except ZeroDivisionError:
+                    pass
 
         # 4. Orthojoin of X(k)
         m_ort = re.match(r"^ORTHOJOIN\s+OF\s+X\((\d+)\)$", title_s, re.IGNORECASE)
@@ -884,12 +988,15 @@ class CenterRegistry:
             k = int(m_tcc.group(1))
             if k in self.bary_cache:
                 u, v, w = self.bary_cache[k]
-                qa, qb, qc = (a**4) / (u**2), (b**4) / (v**2), (c**4) / (w**2)
-                return (
-                    (a**2) * (qb + qc - qa),
-                    (b**2) * (qc + qa - qb),
-                    (c**2) * (qa + qb - qc),
-                )
+                try:
+                    qa, qb, qc = (a**4) / (u**2), (b**4) / (v**2), (c**4) / (w**2)
+                    return (
+                        (a**2) * (qb + qc - qa),
+                        (b**2) * (qc + qa - qb),
+                        (c**2) * (qa + qb - qc),
+                    )
+                except ZeroDivisionError:
+                    pass
 
         # 6. Orion transform of X(k)
         m_ori = re.match(r"^ORION\s+TRANSFORM\s+OF\s+X\((\d+)\)$", title_s, re.IGNORECASE)
@@ -932,11 +1039,14 @@ class CenterRegistry:
                 p_t, q_t, r_t = ui / a, vi / b, wi / c
                 u_t, v_t, w_t = uj / a, vj / b, wj / c
                 if kind_rs == "SR":
-                    return (
-                        a * (r_t * v_t - q_t * w_t) / (q_t * v_t - r_t * w_t),
-                        b * (p_t * w_t - r_t * u_t) / (r_t * w_t - p_t * u_t),
-                        c * (q_t * u_t - p_t * v_t) / (p_t * u_t - q_t * v_t),
-                    )
+                    try:
+                        return (
+                            a * (r_t * v_t - q_t * w_t) / (q_t * v_t - r_t * w_t),
+                            b * (p_t * w_t - r_t * u_t) / (r_t * w_t - p_t * u_t),
+                            c * (q_t * u_t - p_t * v_t) / (p_t * u_t - q_t * v_t),
+                        )
+                    except ZeroDivisionError:
+                        pass
                 cosA = math.cos(self.ctx.A_rad)
                 cosB = math.cos(self.ctx.B_rad)
                 cosC = math.cos(self.ctx.C_rad)
@@ -1259,8 +1369,8 @@ class CenterRegistry:
                 cdata = self.centers_by_num[num]
                 bary = (
                     self._try_eval_coordinates(cdata)
-                    or self._try_eval_incidence(cdata)
                     or self._try_eval_relations(cdata)
+                    or self._try_eval_incidence(cdata)
                 )
                 if bary and self._store(num, bary):
                     progressed = True
@@ -2124,9 +2234,9 @@ def build_center_model(
         # X(21) Schiffler Point: concurrence of Euler lines of ABC, IBC, ICA, IAB
         X1 = get_or_add_center_pt(1)
         if X1 is not None:
-            _add_segment(model, A, X1, ID="/ A X_1 /")
-            _add_segment(model, B, X1, ID="/ B X_1 /")
-            _add_segment(model, C, X1, ID="/ C X_1 /")
+            _add_line(model, A, X1, ID="[ A X_1 ]", classes=["bisector"])
+            _add_line(model, B, X1, ID="[ B X_1 ]", classes=["bisector"])
+            _add_line(model, C, X1, ID="[ C X_1 ]", classes=["bisector"])
         add_primary_central_line(2, 3)
         for i_num, j_num in line_pairs:
             if {i_num, j_num} <= {2, 3, 4, 5, 20, 30}:
@@ -2633,7 +2743,7 @@ def generate_center_model_py(
                 elif c_num in {7, 8}:
                     extra = ", draw_cevians=True"
                 elif c_num == 10:
-                    extra = ", draw_circle=True"
+                    extra = ", draw_bisectors=True, draw_circle=True"
                 elif c_num == 11:
                     extra = ", draw_circles=True"
             body_lines.append(

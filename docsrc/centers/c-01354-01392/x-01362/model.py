@@ -11,10 +11,9 @@ from geometor.etc.ops import (
     central_line,
     construct_baseline_triangle,
     create_model,
-    crosspoint,
     eval_trilinear_point,
     feuerbach_point_of,
-    gergonne_point_of,
+    intersect_lines,
     point_from_barycentrics,
     promote_point_to_top,
 )
@@ -25,15 +24,13 @@ def construct_x_01362(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1362 = BRISSE TRANSFORM OF X_105 on reference triangle ABC."""
-    X_7 = gergonne_point_of(model, A, B, C, ID="X_7", classes=["center"])
-    X_241 = eval_trilinear_point(model, A, B, C, '(cos(B/2))**(4) - ((cos(A/2))**(2))*((cos(B/2))**(2) +(cos(C/2))**(2)) + (cos(C/2))**(4)', ID="X_241", classes=["center"])
-    X_1362 = crosspoint(model, A, B, C, X_7, X_241, ID="X_1362", classes=["selected", "target"])
-    X_43 = eval_trilinear_point(model, A, B, C, 'a*b + a*c - b*c', ID="X_43", classes=["center", "incident"])
-    X_57 = eval_trilinear_point(model, A, B, C, '1/(b + c - a)', ID="X_57", classes=["center", "incident"])
-    central_line(model, X_43, X_57, 43, 57, incident=True)
-    X_12 = eval_trilinear_point(model, A, B, C, '1 + cos(B - C)', ID="X_12", classes=["center", "incident"])
-    X_116 = eval_trilinear_point(model, A, B, C, 'b*c*((b - c)**(2)*(b**(2) + b*c + c**(2) - a*b - a*c))', ID="X_116", classes=["center", "incident"])
-    central_line(model, X_12, X_116, 12, 116, incident=True)
+    X_43 = eval_trilinear_point(model, A, B, C, 'a*b + a*c - b*c', ID="X_43", classes=["center"])
+    X_57 = eval_trilinear_point(model, A, B, C, '1/(b + c - a)', ID="X_57", classes=["center"])
+    X_12 = eval_trilinear_point(model, A, B, C, '1 + cos(B - C)', ID="X_12", classes=["center"])
+    X_116 = eval_trilinear_point(model, A, B, C, 'b*c*((b - c)**(2)*(b**(2) + b*c + c**(2) - a*b - a*c))', ID="X_116", classes=["center"])
+    central_line(model, X_43, X_57, 43, 57)
+    central_line(model, X_12, X_116, 12, 116)
+    X_1362 = intersect_lines(model, X_43, X_57, X_12, X_116, ID="X_1362", classes=["selected", "target"])
     X_11 = feuerbach_point_of(model, A, B, C, ID="X_11", classes=["center", "incident"])
     X_118 = point_from_barycentrics(model, A, B, C, 0.28918651, -0.056547619, 0.76736111, ID="X_118", classes=["center", "incident"])
     central_line(model, X_11, X_118, 11, 118, incident=True)

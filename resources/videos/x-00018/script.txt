@@ -1,0 +1,83 @@
+center: X_18
+title: 2nd NAPOLEON POINT
+folio: Kimberling ETC • Collection 1 (X_1–X_19)
+enunciation: The perspector of triangle ABC and the inner Napoleon equilateral triangle formed by the centers of inward side equilateral triangles.
+
+[bell:proposition]
+
+[screen: CONSTRUCT | svg: 01_primary.svg | weight: 1]
+symbolic: X_18 = 2nd Napoleon Point • [A Nap'_a] ∩ [B Nap'_b] ∩ [C Nap'_c]
+zoom: A, B, C
+active: X_18:gold, [ A Nap_a ]:gold, [ B Nap_b ]:gold, [ C Nap_c ]:gold
+head: Primary Construction
+row: Target Center | X_18 (2Nd Napoleon Point):gold
+row: Concurrence Lines | [ A Nap_a ], [ B Nap_b ], [ C Nap_c ]:gold
+row: Derived Triangle | < B C A' >:muted
+just: ∵ CONCURRENCE | NAPOLEON'S THEOREM • INNER TRIANGLE | Area(Outer Napoleon △) - Area(Inner Napoleon △) = Area(△ABC).
+say: X eighteen is the Second Napoleon Point of triangle A B C: <pause> erect equilateral triangles inward on sides B C, C A, and A B, <pause> take their centroids Nap prime sub a, Nap prime sub b, and Nap prime sub c to form the inner Napoleon equilateral triangle,
+
+[screen: GOAL | svg: 01_primary.svg | weight: 1 | punchline: true]
+symbolic: X_18 = 2nd Napoleon Point • [A Nap'_a] ∩ [B Nap'_b] ∩ [C Nap'_c]
+zoom: X_18, < B C A' >, A', < C A B' >, B', < A B C' >, C', < Nap_a Nap_b Nap_c >, Nap_a, Nap_b, Nap_c, X_18, Nap_a, Nap_b, Nap_c
+thumb_zoom: A, B, C
+active: X_18:gold, < B C A' >:blue, A':blue, < C A B' >:blue, B':blue, < A B C' >:blue, C':blue, < Nap_a Nap_b Nap_c >:blue, Nap_a:blue, Nap_b:blue, Nap_c:blue
+head: Primary Construction
+row: Target Center | X_18 (2Nd Napoleon Point):gold
+row: Concurrence Lines | [ A Nap_a ], [ B Nap_b ], [ C Nap_c ]:muted
+row: Derived Triangle | < B C A' >:blue
+just: ∵ DEFINITION | NAPOLEON'S THEOREM • INNER TRIANGLE | Area(Outer Napoleon △) - Area(Inner Napoleon △) = Area(△ABC).
+say: <pause> and the lines from A, B, and C to those three centers concur at X eighteen.
+
+[bell:construction]
+
+[screen: ASSERT | svg: 02_coordinates.svg | weight: 1.15]
+symbolic: Trilinears csc(A - π/6) : : • Barycentrics a csc(A - π/6) : :
+section: Trilinear Distances | α = csc(A − π/6):gold | β = csc(B − π/6):blue | γ = csc(C − π/6):green
+section: Barycentric Sub-Areas | u = a csc(A − π/6):gold | v = b csc(B − π/6):blue | w = c csc(C − π/6):green
+just: ∵ COORDINATES | -30° KIEPERT PERSPECTOR | Point on the Kiepert hyperbola corresponding to base angle θ = -π/6 (-30°).
+say: Its trilinear coordinates are cosecant of A minus pi over six, <pause> to cosecant of B minus pi over six, <pause> to cosecant of C minus pi over six.
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.5]
+symbolic: Lines {3, 14, 18} • {5, 13, 18} • {4, 16, 18} • {6, 17, 18}
+zoom: X_18, X_3, X_14
+active: X_18:gold, {3, 14, 18}:orange
+head: Incident Central Lines
+row: Circumcenter–2nd Isogonic | {3, 14, 18}:orange
+row: Orthocenter–2nd Isodynamic | {4, 16, 18}:muted
+row: Symmedian–Napoleon | {6, 17, 18}:muted
+just: ∵ PRIMARY AXIS | SYMMETRIC NAPOLEON INCIDENCES | Pairs with 1st Napoleon Point X_17 on line {6, 17, 18} through Symmedian Point X_6.
+say: <pause> Remarkably,
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.55]
+symbolic: Lines {3, 14, 18} • {5, 13, 18} • {4, 16, 18} • {6, 17, 18}
+zoom: X_18, X_3, X_14, X_4, X_6, X_17
+active: X_18:gold, {3, 14, 18}:orange, {4, 16, 18}:orchid, {6, 17, 18}:blue
+head: Incident Central Lines
+row: Circumcenter–2nd Isogonic | {3, 14, 18}:orange
+row: Orthocenter–2nd Isodynamic | {4, 16, 18}:orchid
+row: Symmedian–Napoleon | {6, 17, 18}:blue
+just: ∵ COLLINEARITIES | SYMMETRIC NAPOLEON INCIDENCES | Pairs with 1st Napoleon Point X_17 on line {6, 17, 18} through Symmedian Point X_6.
+say: <pause> the difference in area between the outer Napoleon triangle of X seventeen and the inner Napoleon triangle of X eighteen equals the exact area of triangle A B C!
+
+[bell:insight]
+
+[screen: PROVE | svg: 04_relations.svg | weight: 1.05]
+symbolic: Isogonal Conjugate X_62 • Isotomic Conjugate X_303
+zoom: X_18, X_17, X_14, X_16, X_3
+active: X_18:gold, X_17:blue, X_14:green, X_16:orange
+head: Functional Relations
+row: Napoleon Companion | X_17:blue
+row: 2nd Isogonic Partner | X_14:green
+row: 2nd Isodynamic Partner | X_16:orange
+just: ∵ RELATIONS | KIEPERT CONJUGATE SYMMETRY | Complement: X_628 • Anticomplement: X_630.
+say: X eighteen lies on lines X three X fourteen, <pause> X five X thirteen, <pause> X four X sixteen, <pause> and X six X seventeen,
+
+[screen: ∴ | svg: 05_four_triangles.svg | weight: 0.95]
+symbolic: Kimberling (6, 9, 13) Search = -16.280673997779
+head: Reference Triangles | a | b | c
+row: Acute Triangle | 5 | 6 | 7:gold
+row: Right Triangle | 3 | 4 | 5:blue
+row: Kepler Triangle | 1 | √φ | φ:green
+row: Kimberling Triangle | 6 | 9 | 13:purple
+just: ∵ INVARIANCE | KIMBERLING SEARCH VALUE • X_18 | Shortest directed trilinear distance on reference triangle (6, 9, 13): -16.280673997779.
+say: <pause> and is the isogonal conjugate of X sixty-two.

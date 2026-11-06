@@ -8,7 +8,7 @@ X_346
 
 .. enunciation::
 
-   The :term:`cevian triangle <cevian-triangle>` of :ref:`X_346 <X_346>` is perspective to the Ayme triangle; see X_3610.
+   The :term:`cevian triangle <cevian-triangle>` of :ref:`X_346 <X_346>` is perspective to the Ayme triangle; see :ref:`X_3610 <X_3610>`.
 
 .. figure:: x-00346.svg
    :alt: X_346 — ISOTOMIC CONJUGATE OF X_279

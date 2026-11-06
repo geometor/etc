@@ -12,7 +12,9 @@ from geometor.etc.ops import (
     circumcenter_of,
     construct_baseline_triangle,
     create_model,
-    point_from_barycentrics,
+    eval_barycentric_point,
+    eval_trilinear_point,
+    intersect_lines,
     promote_point_to_top,
     symmedian_point_of,
 )
@@ -23,10 +25,13 @@ def construct_x_01207(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1207 = 3rd SARAGOSSA POINT OF X_83 on reference triangle ABC."""
-    X_1207 = point_from_barycentrics(model, A, B, C, 0.23796853, 0.33081949, 0.43121198, ID="X_1207", classes=["selected", "target"])
-    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
-    X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
-    central_line(model, X_3, X_6, 3, 6, incident=True)
+    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center"])
+    X_83 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(2) + c**(2))', ID="X_83", classes=["center"])
+    X_3978 = eval_barycentric_point(model, A, B, C, 'b**(2)*c**(2)*(a**(2) - b*c)*(a**(2) + b*c)', ID="X_3978", classes=["center"])
+    central_line(model, X_3, X_6, 3, 6)
+    central_line(model, X_83, X_3978, 83, 3978)
+    X_1207 = intersect_lines(model, X_3, X_6, X_83, X_3978, ID="X_1207", classes=["selected", "target"])
     return promote_point_to_top(model, X_1207)
 
 

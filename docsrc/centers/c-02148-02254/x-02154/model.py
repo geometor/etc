@@ -13,8 +13,6 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     incenter_of,
-    intersect_lines,
-    point_from_barycentrics,
     promote_point_to_top,
     spieker_center_of,
 )
@@ -25,15 +23,15 @@ def construct_x_02154(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_2154 = X_2-ISOCONJUGATE OF X_16 on reference triangle ABC."""
-    X_10 = spieker_center_of(model, A, B, C, ID="X_10", classes=["center"])
-    X_14 = eval_trilinear_point(model, A, B, C, 'csc(A -  pi  /3)', ID="X_14", classes=["center"])
-    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center"])
-    X_1095 = point_from_barycentrics(model, A, B, C, 0.33475715, 0.014033744, 0.65120911, ID="X_1095", classes=["center"])
-    central_line(model, X_10, X_14, 10, 14)
-    central_line(model, X_1, X_1095, 1, 1095)
-    X_2154 = intersect_lines(model, X_10, X_14, X_1, X_1095, ID="X_2154", classes=["selected", "target"])
+    X_2154 = eval_trilinear_point(model, A, B, C, '(sin(A)*csc(A -  pi  /3))', ID="X_2154", classes=["selected", "target"])
+    X_10 = spieker_center_of(model, A, B, C, ID="X_10", classes=["center", "incident"])
+    X_14 = eval_trilinear_point(model, A, B, C, 'csc(A -  pi  /3)', ID="X_14", classes=["center", "incident"])
+    central_line(model, X_10, X_14, 10, 14, incident=True)
+    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
+    X_1095 = eval_trilinear_point(model, A, B, C, '((sin(A -  pi  /3))**(2))', ID="X_1095", classes=["center", "incident"])
+    central_line(model, X_1, X_1095, 1, 1095, incident=True)
     X_31 = eval_trilinear_point(model, A, B, C, 'a**(2)', ID="X_31", classes=["center", "incident"])
-    X_2153 = point_from_barycentrics(model, A, B, C, 0.18417195, 0.28859132, 0.52723673, ID="X_2153", classes=["center", "incident"])
+    X_2153 = eval_trilinear_point(model, A, B, C, '(sin(A)*csc(A +  pi  /3))', ID="X_2153", classes=["center", "incident"])
     central_line(model, X_31, X_2153, 31, 2153, incident=True)
     return promote_point_to_top(model, X_2154)
 

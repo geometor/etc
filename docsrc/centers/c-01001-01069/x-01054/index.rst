@@ -52,7 +52,7 @@ X_1054
    * :ref:`X_1054 <X_1054>` = intersection of tangents at PU(34) to conic {{:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(34)}}
    * :ref:`X_1054 <X_1054>` = :term:`crosspoint <crosspoint>` of PU(34)
    * :ref:`X_1054 <X_1054>` = :term:`trilinear pole <trilinear-pole>` wrt :term:`excentral triangle <excentral-triangle>` of line :ref:`X_1 <X_1>`\ \ :ref:`X_6 <X_6>`
-   * :ref:`X_1054 <X_1054>` = excentral isogonal conjugate of X_3667
+   * :ref:`X_1054 <X_1054>` = excentral isogonal conjugate of :ref:`X_3667 <X_3667>`
    * :ref:`X_1054 <X_1054>` = :ref:`X_107 <X_107>` of excentral triangle
    * :ref:`X_1054 <X_1054>` = Conway-circle-inverse of X_38484
 

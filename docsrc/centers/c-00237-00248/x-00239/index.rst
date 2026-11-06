@@ -45,7 +45,7 @@ X_239
    * :ref:`X_239 <X_239>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_292 <X_292>`
    * :ref:`X_239 <X_239>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_335 <X_335>`
    * :ref:`X_239 <X_239>` = :term:`complement <complement>` of X_6542
-   * :ref:`X_239 <X_239>` = :term:`anticomplement <anticomplement>` of X_3912
+   * :ref:`X_239 <X_239>` = :term:`anticomplement <anticomplement>` of :ref:`X_3912 <X_3912>`
    * :ref:`X_239 <X_239>` = :term:`crosspoint <crosspoint>` of :ref:`X_256 <X_256>` and :ref:`X_291 <X_291>`
    * :ref:`X_239 <X_239>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`255 <X_255>`), (:ref:`212 <X_212>`, :ref:`219 <X_219>`)
    * :ref:`X_239 <X_239>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_42 <X_42>`\ \ :ref:`X_649 <X_649>`

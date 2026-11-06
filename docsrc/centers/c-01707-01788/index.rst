@@ -22,7 +22,7 @@ X_1707–X_1788
 
 .. _preamble-0025:
 
-.. admonition:: Group Preamble — Mimosa Transforms 1707-1788
+.. admonition:: Group Preamble — Mimosa Transforms 1707-1788 (Mimosa transforms and inverse Mimosa tranforms)
    :class: note
 
    The Mimosa transform M(X) of a point :g:`X <X>` =\ :math:`x : y : z` is defined (9/15/03) by

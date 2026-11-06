@@ -25,7 +25,7 @@ X_356
    :class: note
 
    * **Central Lines:** :g:`{357, 358} <{ 357, 358 }>`, :g:`{1134, 1135} <{ 1134, 1135 }>`
-   * **Related Centers:** :g:`X_357 <X_357>` (:ref:`1st MORLEY-TAYLOR-MARR CENTER <X_357>`), :g:`X_358 <X_358>` (:ref:`2nd MORLEY-TAYLOR-MARR CENTER <X_358>`), :g:`X_1134 <X_1134>` (:ref:`3rd MORLEY-TAYLOR-MARR CENTER <X_1134>`), :g:`X_1135 <X_1135>` (:ref:`4th MORLEY-TAYLOR-MARR CENTER <X_1135>`)
+   * **Related Centers:** :g:`X_3605 <X_3605>` (:ref:`ISOGONAL CONJUGATE OF X(356) <X_3605>`), :g:`X_357 <X_357>` (:ref:`1st MORLEY-TAYLOR-MARR CENTER <X_357>`), :g:`X_358 <X_358>` (:ref:`2nd MORLEY-TAYLOR-MARR CENTER <X_358>`), :g:`X_1134 <X_1134>` (:ref:`3rd MORLEY-TAYLOR-MARR CENTER <X_1134>`), :g:`X_1135 <X_1135>` (:ref:`4th MORLEY-TAYLOR-MARR CENTER <X_1135>`)
 
 .. signature:: center
 
@@ -40,18 +40,18 @@ X_356
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * :ref:`X_356 <X_356>` = X_3276 + X_3277 - :ref:`X_3 <X_3>`
+   * :ref:`X_356 <X_356>` = :ref:`X_3276 <X_3276>` + :ref:`X_3277 <X_3277>` - :ref:`X_3 <X_3>`
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines
    :class: line-catalog
 
-   {:ref:`2 <X_2>`, 5455}, {:ref:`3 <X_3>`, 3278}, {:ref:`357 <X_357>`, :ref:`358 <X_358>`}, {:ref:`1134 <X_1134>`, :ref:`1135 <X_1135>`}, {3605, 5456}
+   {:ref:`2 <X_2>`, 5455}, {:ref:`3 <X_3>`, :ref:`3278 <X_3278>`}, {:ref:`357 <X_357>`, :ref:`358 <X_358>`}, {:ref:`1134 <X_1134>`, :ref:`1135 <X_1135>`}, {:ref:`3605 <X_3605>`, 5456}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X_356 <X_356>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3605
+   * :ref:`X_356 <X_356>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3605 <X_3605>`
    * :ref:`X_356 <X_356>` = orthology center of 1st Morley adjunct triangle and 1st Morley triangle
 
 Notes

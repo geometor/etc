@@ -62,7 +62,7 @@ X_798
    * :ref:`X_798 <X_798>` = trilinear product of PU(105)
    * :ref:`X_798 <X_798>` = :ref:`X_2 <X_2>`-Ceva conjugate of X_38986
    * :ref:`X_798 <X_798>` = perspector of hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_1 <X_1>`,\ :ref:`X_31 <X_31>`}}
-   * :ref:`X_798 <X_798>` = :term:`trilinear pole <trilinear-pole>` of line X_3121X_4117 (the tangent to the inellipse that is the trilinear square of the Lemoine axis, at the trilinear square of :ref:`X_512 <X_512>`)
+   * :ref:`X_798 <X_798>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_3121 <X_3121>`\ X_4117 (the tangent to the inellipse that is the trilinear square of the Lemoine axis, at the trilinear square of :ref:`X_512 <X_512>`)
 
 .. toctree::
    :hidden:

@@ -44,7 +44,7 @@ X_1317
    * :ref:`X_1317 <X_1317>` = midpoint of :ref:`X_100 <X_100>` and :ref:`X_145 <X_145>`
    * :ref:`X_1317 <X_1317>` = reflection of X_i in X_j for these (i,j): (:ref:`11 <X_11>`, :ref:`1 <X_1>`), (:ref:`80 <X_80>`, :ref:`1387 <X_1387>`), (:ref:`1145 <X_1145>`, :ref:`214 <X_214>`)
    * :ref:`X_1317 <X_1317>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1318 <X_1318>`
-   * :ref:`X_1317 <X_1317>` = :term:`anticomplement <anticomplement>` of X_3036
+   * :ref:`X_1317 <X_1317>` = :term:`anticomplement <anticomplement>` of :ref:`X_3036 <X_3036>`
    * :ref:`X_1317 <X_1317>` = :ref:`X_74 <X_74>`-of-intouch-triangle
    * :ref:`X_1317 <X_1317>` = :ref:`X_104 <X_104>`-of-Mandart-incircle-triangle
    * :ref:`X_1317 <X_1317>` = homothetic center of :term:`intangents triangle <intangents-triangle>` and reflection of :term:`extangents triangle <extangents-triangle>` in :ref:`X_104 <X_104>`

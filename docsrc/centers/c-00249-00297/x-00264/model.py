@@ -13,7 +13,6 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
-    isogonal_conjugate,
     orthocenter_of,
     promote_point_to_top,
 )
@@ -24,8 +23,7 @@ def construct_x_00264(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_264 = ISOTOMIC CONJUGATE OF CIRCUMCENTER on reference triangle ABC."""
-    X_184 = eval_trilinear_point(model, A, B, C, 'a**(2)*cos(A)', ID="X_184", classes=["center"])
-    X_264 = isogonal_conjugate(model, A, B, C, X_184, ID="X_264", classes=["selected", "target"])
+    X_264 = eval_trilinear_point(model, A, B, C, 'csc(A)*csc(2*A)', ID="X_264", classes=["selected", "target"])
     X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
     X_69 = eval_trilinear_point(model, A, B, C, '(cos(A))/a**(2)', ID="X_69", classes=["center", "incident"])
     central_line(model, X_4, X_69, 4, 69, incident=True)

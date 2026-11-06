@@ -52,7 +52,7 @@ X_1895
    * :ref:`X_1895 <X_1895>` = :term:`crosssum <crosssum>` of :ref:`X_31 <X_31>` and :ref:`X_2155 <X_2155>`
    * :ref:`X_1895 <X_1895>` = :term:`trilinear pole <trilinear-pole>` of line X_14331X_17898
    * :ref:`X_1895 <X_1895>` = :ref:`X_75 <X_75>`-Ceva conjugate of :ref:`X_92 <X_92>`
-   * :ref:`X_1895 <X_1895>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`1712 <X_1712>`), (:ref:`204 <X_204>`, :ref:`610 <X_610>`), (3176, 7952)
+   * :ref:`X_1895 <X_1895>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`1712 <X_1712>`), (:ref:`204 <X_204>`, :ref:`610 <X_610>`), (:ref:`3176 <X_3176>`, 7952)
    * :ref:`X_1895 <X_1895>` = polar conjugate of :ref:`X_2184 <X_2184>`
 
 .. toctree::

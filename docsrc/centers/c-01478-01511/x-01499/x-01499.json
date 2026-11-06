@@ -162,7 +162,7 @@
             "guide": false
         },
         "X_843": {
-            "sympy_obj": "Point2D(Float('0.25200982999999999', precision=53), Float('0.41879971999999999', precision=53))",
+            "sympy_obj": "Point2D(Float('0.14269933000000001', precision=53), Float('0.46641477999999997', precision=53))",
             "ID": "X_843",
             "classes": [
                 "center",
@@ -172,7 +172,7 @@
             "guide": false
         },
         "{ 98, 843 }": {
-            "sympy_obj": "Line2D(Point2D(Float('0.88909835999999998', precision=53), Float('-0.22811838000000001', precision=53)), Point2D(Float('0.25200982999999999', precision=53), Float('0.41879971999999999', precision=53)))",
+            "sympy_obj": "Line2D(Point2D(Float('0.88909835999999998', precision=53), Float('-0.22811838000000001', precision=53)), Point2D(Float('0.14269933000000001', precision=53), Float('0.46641477999999997', precision=53)))",
             "ID": "{ 98, 843 }",
             "classes": [
                 "central_line",
@@ -214,6 +214,39 @@
             "parents": [
                 "X_4",
                 "X_1550"
+            ],
+            "guide": false
+        },
+        "X_74": {
+            "sympy_obj": "Point2D(Float('0.74838709999999997', precision=53), Float('-0.34371871999999998', precision=53))",
+            "ID": "X_74",
+            "classes": [
+                "center",
+                "incident"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "X_2770": {
+            "sympy_obj": "Point2D(Float('0.037514749999999999', precision=53), Float('0.31775643999999997', precision=53))",
+            "ID": "X_2770",
+            "classes": [
+                "center",
+                "incident"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "{ 74, 2770 }": {
+            "sympy_obj": "Line2D(Point2D(Float('0.74838709999999997', precision=53), Float('-0.34371871999999998', precision=53)), Point2D(Float('0.037514749999999999', precision=53), Float('0.31775643999999997', precision=53)))",
+            "ID": "{ 74, 2770 }",
+            "classes": [
+                "central_line",
+                "incident"
+            ],
+            "parents": [
+                "X_74",
+                "X_2770"
             ],
             "guide": false
         },

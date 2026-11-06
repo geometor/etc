@@ -55,7 +55,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>` be the circumcevian triangles of X_3513 and X_3514, resp. Let :g:`A* <A*>` be the trilinear product :g:`A' <A'>`\ \*\ :g:`A″ <A″>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X_1458 <X_1458>`. (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
+   Let :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>` be the circumcevian triangles of :ref:`X_3513 <X_3513>` and :ref:`X_3514 <X_3514>`, resp. Let :g:`A* <A*>` be the trilinear product :g:`A' <A'>`\ \*\ :g:`A″ <A″>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X_1458 <X_1458>`. (:person:`Randy Hutson <randy-hutson>`, June 7, 2019)
 
 .. toctree::
    :hidden:

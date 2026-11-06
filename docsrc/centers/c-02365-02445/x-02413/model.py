@@ -20,7 +20,7 @@ def construct_x_02413(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_2413 = GIBERT-SIMSON TRANSFORM OF X_1141 on reference triangle ABC."""
-    X_2413 = point_from_barycentrics(model, A, B, C, 0.91919317, -0.017879982, 0.098686809, ID="X_2413", classes=["selected", "target"])
+    X_2413 = point_from_barycentrics(model, A, B, C, -0.049419878, 0.94479088, 0.104629, ID="X_2413", classes=["selected", "target"])
     return promote_point_to_top(model, X_2413)
 
 

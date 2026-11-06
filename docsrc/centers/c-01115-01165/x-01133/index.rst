@@ -28,7 +28,7 @@ X_1133
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X_1133 <X_1133>` = X_3273-:term:`isoconjugate <isoconjugate>` of X_3602
+   * :ref:`X_1133 <X_1133>` = :ref:`X_3273 <X_3273>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_3602 <X_3602>`
 
 Notes
 -----

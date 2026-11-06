@@ -48,7 +48,7 @@ X_286
    * :ref:`X_286 <X_286>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_693 <X_693>`\ \ :ref:`X_905 <X_905>` (the polar of :ref:`X_37 <X_37>` wrt polar circle, and the perspectrix of Gemini triangles 1 and 2)
    * :ref:`X_286 <X_286>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_37 <X_37>` (line :ref:`X_512 <X_512>`\ \ :ref:`X_661 <X_661>`)
    * :ref:`X_286 <X_286>` = polar conjugate of :ref:`X_37 <X_37>`
-   * :ref:`X_286 <X_286>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_810 <X_810>`\ X_3049
+   * :ref:`X_286 <X_286>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_810 <X_810>`\ \ :ref:`X_3049 <X_3049>`
    * :ref:`X_286 <X_286>` = trilinear product :ref:`X_2 <X_2>`\ \*\ :ref:`X_27 <X_27>`
 
 .. toctree::

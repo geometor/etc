@@ -41,7 +41,7 @@ X_2217
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X_2217 <X_2217>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3869
+   * :ref:`X_2217 <X_2217>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3869 <X_3869>`
    * :ref:`X_2217 <X_2217>` = cevapoint of :ref:`X_667 <X_667>` and :ref:`X_2170 <X_2170>`
    * :ref:`X_2217 <X_2217>` = :ref:`X_1402 <X_1402>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_6 <X_6>`
    * :ref:`X_2217 <X_2217>` = :ref:`X_21 <X_21>`-:term:`vertex conjugate <vertex-conjugate>` of :ref:`X_21 <X_21>`

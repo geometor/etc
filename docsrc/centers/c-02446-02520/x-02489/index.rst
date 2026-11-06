@@ -52,7 +52,7 @@ X_2489
    * :ref:`X_2489 <X_2489>` = pole wrt polar circle of trilinear polar of :ref:`X_670 <X_670>` (line :ref:`X_2 <X_2>`\ \ :ref:`X_39 <X_39>`)
    * :ref:`X_2489 <X_2489>` = polar conjugate of :ref:`X_670 <X_670>`
    * :ref:`X_2489 <X_2489>` = barycentric product X_8105\*X_8106
-   * :ref:`X_2489 <X_2489>` = PU(4)-harmonic conjugate of X_3291
+   * :ref:`X_2489 <X_2489>` = PU(4)-harmonic conjugate of :ref:`X_3291 <X_3291>`
 
 .. toctree::
    :hidden:

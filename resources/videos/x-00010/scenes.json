@@ -1,0 +1,256 @@
+[
+  {
+    "id": "act_1_proposition",
+    "title": "X_10 SPIEKER CENTER — Act 1",
+    "subslides": [
+      {
+        "prop_id": "ETC • X_10",
+        "short_code": "X_10",
+        "g_id": "SPIEKER CENTER",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The incenter of the medial triangle M_a M_b M_c and center of mass of the uniform perimeter wireframe of triangle ABC.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.0,
+        "step_num": 1,
+        "step_kind": "CONSTRUCT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/x-00010/svgs/01_primary.svg",
+        "symbolic": "X_10 = Spieker Center • Incenter of Medial △M_a M_b M_c",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Primary Construction</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Target Center</span><span class=\"tok-gold\">X_10 (Spieker)</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Medial Bisectors</span><span class=\"tok-gold\">of △M_a M_b M_c</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Spieker Circle</span><span class=\"muted-tok\">Radius r / 2</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Medial Triangle</span><span class=\"muted-tok\">△M_a M_b M_c</span></div></div></div>",
+        "just_tag": "∵ CONCURRENCE",
+        "just_id": "PERIMETER CENTER OF MASS",
+        "just_title": "Center of gravity of the three wire sidelines BC, CA, AB; radical center of the three excircles.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_10:gold",
+          "[ M_a X_10 ]:gold",
+          "[ M_b X_10 ]:gold",
+          "[ M_c X_10 ]:gold"
+        ],
+        "coincide_ids": [],
+        "equal_ids": [],
+        "zoom": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "prop_id": "ETC • X_10",
+        "short_code": "X_10",
+        "g_id": "SPIEKER CENTER",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The incenter of the medial triangle M_a M_b M_c and center of mass of the uniform perimeter wireframe of triangle ABC.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.0,
+        "step_num": 2,
+        "step_kind": "GOAL",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/x-00010/svgs/01_primary.svg",
+        "symbolic": "X_10 = Spieker Center • Incenter of Medial △M_a M_b M_c",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Primary Construction</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Target Center</span><span class=\"tok-gold\">X_10 (Spieker)</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Medial Bisectors</span><span class=\"muted-tok\">of △M_a M_b M_c</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Spieker Circle</span><span class=\"tok-lime\">Radius r / 2</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Medial Triangle</span><span class=\"tok-blue\">△M_a M_b M_c</span></div></div></div>",
+        "just_tag": "∵ DEFINITION",
+        "just_id": "PERIMETER CENTER OF MASS",
+        "just_title": "Center of gravity of the three wire sidelines BC, CA, AB; radical center of the three excircles.",
+        "is_punchline": true,
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_10:gold",
+          "spieker_circle:orange",
+          "< M_a M_b M_c >:blue",
+          "M_a:blue",
+          "M_b:blue",
+          "M_c:blue"
+        ],
+        "coincide_ids": [],
+        "equal_ids": [],
+        "zoom": [
+          "X_10",
+          "spieker_circle",
+          "< M_a M_b M_c >",
+          "M_a",
+          "M_b",
+          "M_c",
+          "X_10",
+          "M_a",
+          "M_b",
+          "M_c"
+        ],
+        "thumb_zoom": [
+          "A",
+          "B",
+          "C"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "act_2_construction",
+    "title": "X_10 SPIEKER CENTER — Act 2",
+    "subslides": [
+      {
+        "prop_id": "ETC • X_10",
+        "short_code": "X_10",
+        "g_id": "SPIEKER CENTER",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The incenter of the medial triangle M_a M_b M_c and center of mass of the uniform perimeter wireframe of triangle ABC.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.15,
+        "step_num": 3,
+        "step_kind": "ASSERT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/x-00010/svgs/02_coordinates.svg",
+        "symbolic": "Trilinears bc(b+c) : ca(c+a) : ab(a+b) • Barycentrics b+c : c+a : a+b",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-section\"><div class=\"etc-sec-head\">Trilinear Distances</div><div class=\"etc-coord-grid\"><span class=\"tok-gold\">α = bc(b + c)</span><span class=\"tok-blue\">β = ca(c + a)</span><span class=\"tok-green\">γ = ab(a + b)</span></div></div><div class=\"etc-section\"><div class=\"etc-sec-head\">Barycentric Sub-Areas</div><div class=\"etc-coord-grid\"><span class=\"tok-gold\">u = b + c</span><span class=\"tok-blue\">v = c + a</span><span class=\"tok-green\">w = a + b</span></div></div></div>",
+        "just_tag": "∵ COORDINATES",
+        "just_id": "PAIRWISE SIDE-SUM BARYCENTRICS",
+        "just_title": "On acute triangle (5, 6, 7), barycentric sub-areas are 13 : 12 : 11 (36.1% : 33.3% : 30.6%)."
+      },
+      {
+        "prop_id": "ETC • X_10",
+        "short_code": "X_10",
+        "g_id": "SPIEKER CENTER",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The incenter of the medial triangle M_a M_b M_c and center of mass of the uniform perimeter wireframe of triangle ABC.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.5,
+        "step_num": 4,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/x-00010/svgs/03_central_lines.svg",
+        "symbolic": "Nagel Line {1, 2, 8, 10} • Line {4, 9, 10, 19}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Incident Central Lines</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Nagel Line</span><span class=\"tok-orange\">{1, 2, 8, 10}</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Orthocenter–Mittenpunkt</span><span class=\"muted-tok\">{4, 9, 10, 19}</span></div></div></div>",
+        "just_tag": "∵ PRIMARY AXIS",
+        "just_id": "MIDPOINT OF INCENTER & NAGEL POINT",
+        "just_title": "Four classical centers X_1, X_2, X_10, X_8 lie on the Nagel line in harmonic/homothetic progression.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_10:gold",
+          "{1, 2, 8, 10}:orange"
+        ],
+        "coincide_ids": [],
+        "equal_ids": [],
+        "zoom": [
+          "X_10",
+          "X_1",
+          "X_2",
+          "X_8"
+        ]
+      },
+      {
+        "prop_id": "ETC • X_10",
+        "short_code": "X_10",
+        "g_id": "SPIEKER CENTER",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The incenter of the medial triangle M_a M_b M_c and center of mass of the uniform perimeter wireframe of triangle ABC.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.55,
+        "step_num": 5,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/x-00010/svgs/03_central_lines.svg",
+        "symbolic": "Nagel Line {1, 2, 8, 10} • Line {4, 9, 10, 19}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Incident Central Lines</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Nagel Line</span><span class=\"tok-orange\">{1, 2, 8, 10}</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Orthocenter–Mittenpunkt</span><span class=\"tok-blue\">{4, 9, 10, 19}</span></div></div></div>",
+        "just_tag": "∵ COLLINEARITIES",
+        "just_id": "MIDPOINT OF INCENTER & NAGEL POINT",
+        "just_title": "Four classical centers X_1, X_2, X_10, X_8 lie on the Nagel line in harmonic/homothetic progression.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_10:gold",
+          "{1, 2, 8, 10}:orange",
+          "{4, 9, 10, 19}:blue"
+        ],
+        "coincide_ids": [],
+        "equal_ids": [],
+        "zoom": [
+          "X_10",
+          "X_1",
+          "X_2",
+          "X_8",
+          "X_4",
+          "X_9",
+          "X_19"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "act_3_insight",
+    "title": "X_10 SPIEKER CENTER — Act 3",
+    "subslides": [
+      {
+        "prop_id": "ETC • X_10",
+        "short_code": "X_10",
+        "g_id": "SPIEKER CENTER",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The incenter of the medial triangle M_a M_b M_c and center of mass of the uniform perimeter wireframe of triangle ABC.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.05,
+        "step_num": 6,
+        "step_kind": "PROVE",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/x-00010/svgs/04_relations.svg",
+        "symbolic": "Complement of X_1 (Incenter) • Midpoint of X_1 & X_8 • Isogonal X_58",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Functional Relations</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Anticomplement</span><span class=\"tok-blue\">X_1</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Midpoint on Nagel Line</span><span class=\"tok-green\">X_1, X_8</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Isogonal Conjugate</span><span class=\"tok-orange\">X_58</span></div></div></div>",
+        "just_tag": "∵ RELATIONS",
+        "just_id": "MEDIAL HOMOTHETY OF X_1",
+        "just_title": "Spieker circle radius is exactly r / 2 (half the inradius of △ABC); isotomic conjugate: X_86.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_10:gold",
+          "X_1:blue",
+          "X_8:green",
+          "X_58:orange"
+        ],
+        "coincide_ids": [],
+        "equal_ids": [],
+        "zoom": [
+          "X_10",
+          "X_1",
+          "X_8",
+          "X_58",
+          "X_3"
+        ]
+      },
+      {
+        "prop_id": "ETC • X_10",
+        "short_code": "X_10",
+        "g_id": "SPIEKER CENTER",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The incenter of the medial triangle M_a M_b M_c and center of mass of the uniform perimeter wireframe of triangle ABC.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.95,
+        "step_num": 7,
+        "step_kind": "∴",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/x-00010/svgs/05_four_triangles.svg",
+        "symbolic": "Kimberling (6, 9, 13) Search = 3.098898934005",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head-row\"><span class=\"etc-sec-head\">Reference Triangles</span><div class=\"etc-head-cols\"><span>a</span><span>b</span><span>c</span></div></div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Acute Triangle</span><div class=\"etc-row-cells\"><span class=\"tok-gold\">5</span><span class=\"tok-gold\">6</span><span class=\"tok-gold\">7</span></div></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Right Triangle</span><div class=\"etc-row-cells\"><span class=\"tok-blue\">3</span><span class=\"tok-blue\">4</span><span class=\"tok-blue\">5</span></div></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Kepler Triangle</span><div class=\"etc-row-cells\"><span class=\"tok-green\">1</span><span class=\"tok-green\">√φ</span><span class=\"tok-green\">φ</span></div></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Kimberling Triangle</span><div class=\"etc-row-cells\"><span class=\"tok-purple\">6</span><span class=\"tok-purple\">9</span><span class=\"tok-purple\">13</span></div></div></div></div>",
+        "just_tag": "∵ INVARIANCE",
+        "just_id": "KIMBERLING SEARCH VALUE • X_10",
+        "just_title": "Shortest directed trilinear distance on reference triangle (6, 9, 13): 3.098898934005."
+      }
+    ]
+  }
+]

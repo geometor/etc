@@ -23,8 +23,9 @@ X_2885
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{5, 121} <{ 5, 121 }>`, :g:`{10, 496} <{ 10, 496 }>`
-   * **Related Centers:** :g:`X_5 <X_5>` (:ref:`NINE-POINT CENTER <X_5>`), :g:`X_121 <X_121>` (:ref:`-OF-MEDIAL-TRIANGLE <X_121>`), :g:`X_10 <X_10>` (:ref:`SPIEKER CENTER <X_10>`), :g:`X_496 <X_496>` (:ref:`{X <X_496>`)
+   * **Derived Triangle:** :term:`Medial Triangle <medial triangle>` :g:`△M_aM_bM_c << M_a M_b M_c >>` — vertices :g:`M_a <M_a>`, :g:`M_b <M_b>`, :g:`M_c <M_c>` (Formed by the midpoints of sides BC, CA, AB)
+   * **Central Lines:** :g:`{2, 3445} <{ 2, 3445 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3445 <X_3445>` (:ref:`-VERTEX CONJUGATE OF X(56) <X_3445>`)
 
 .. signature:: center
 
@@ -41,7 +42,7 @@ X_2885
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X_2885 <X_2885>` = :term:`complement <complement>` of X_3445
+   * :ref:`X_2885 <X_2885>` = :term:`complement <complement>` of :ref:`X_3445 <X_3445>`
    * :ref:`X_2885 <X_2885>` = complementary conjugate of :ref:`X_8 <X_8>`
 
 .. toctree::

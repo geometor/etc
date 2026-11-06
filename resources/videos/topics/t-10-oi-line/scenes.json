@@ -1,0 +1,215 @@
+[
+  {
+    "id": "act_1_definition",
+    "title": "T_10 THE OI LINE — Geometric Definition",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_10",
+        "short_code": "T_10",
+        "g_id": "THE OI LINE",
+        "folio": "Kimberling ETC • Named Central Lines",
+        "enunciation": "The central line joining the Incenter X_1 and Circumcenter X_3, carrying the Bevan Point X_40 and the insimilicenter X_55 and exsimilicenter X_56 of the incircle and circumcircle.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.0,
+        "step_num": 1,
+        "step_kind": "CONSTRUCT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-10-oi-line/svgs/01_primary.svg",
+        "symbolic": "OI Line L(1, 3, 40, 55, 56, 57) • |X_1 X_3|² = R(R − 2r)",
+        "clause_html": "<span class=\"clause-line\"><b>The OI Line:</b> Connects Incenter <span class=\"g-tok\">X_1</span> and Circumcenter <span class=\"g-tok\">X_3</span> as the line of centers of the <span style=\"color:#94a3b8;font-family:'JetBrains Mono',monospace;font-weight:600;\">incircle</span> and <span style=\"color:#94a3b8;font-family:'JetBrains Mono',monospace;font-weight:600;\">circumcircle</span>.</span>",
+        "just_tag": "∵ DEFINITION",
+        "just_id": "EULER'S INEQUALITY R ≥ 2r",
+        "just_title": "Since |X_1 X_3|² = R(R − 2r) ≥ 0, the circumradius R is at least twice the inradius r.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_1",
+          "X_3",
+          "X_40"
+        ],
+        "coincide_ids": [],
+        "equal_ids": []
+      },
+      {
+        "prop_id": "ETC • T_10",
+        "short_code": "T_10",
+        "g_id": "THE OI LINE",
+        "folio": "Kimberling ETC • Named Central Lines",
+        "enunciation": "The central line joining the Incenter X_1 and Circumcenter X_3, carrying the Bevan Point X_40 and the insimilicenter X_55 and exsimilicenter X_56 of the incircle and circumcircle.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "is_punchline": true,
+        "weight": 1.0,
+        "step_num": 2,
+        "step_kind": "GOAL",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-10-oi-line/svgs/01_primary.svg",
+        "symbolic": "OI Line L(1, 3, 40, 55, 56, 57) • |X_1 X_3|² = R(R − 2r)",
+        "clause_html": "<span class=\"clause-line\"><b>The OI Line:</b> Connects Incenter <span class=\"g-tok\">X_1</span> and Circumcenter <span class=\"g-tok\">X_3</span> as the line of centers of the <span class=\"coincide-tok\">incircle</span> and <span class=\"eq-tok\">circumcircle</span>.</span>",
+        "just_tag": "∵ STRUCTURE",
+        "just_id": "EULER'S INEQUALITY R ≥ 2r",
+        "just_title": "Since |X_1 X_3|² = R(R − 2r) ≥ 0, the circumradius R is at least twice the inradius r.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_1",
+          "X_3",
+          "X_40"
+        ],
+        "coincide_ids": [
+          "incircle"
+        ],
+        "equal_ids": [
+          "circumcircle"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "act_2_algebra_and_lines",
+    "title": "T_10 Algebraic Action & Central Lines",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_10",
+        "short_code": "T_10",
+        "g_id": "THE OI LINE",
+        "folio": "Kimberling ETC • Named Central Lines",
+        "enunciation": "The central line joining the Incenter X_1 and Circumcenter X_3, carrying the Bevan Point X_40 and the insimilicenter X_55 and exsimilicenter X_56 of the incircle and circumcircle.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.15,
+        "step_num": 3,
+        "step_kind": "ASSERT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-10-oi-line/svgs/02_coordinates.svg",
+        "symbolic": "Similicenters X_55 (Internal) & X_56 (External) • Bevan Point X_40",
+        "clause_html": "<span class=\"clause-line\"><b>Similitude & Reflection:</b> <span class=\"g-tok\">X_3</span> is the midpoint of <span class=\"coincide-tok\">X_1</span> and Bevan point <span class=\"coincide-tok\">X_40</span>; <span class=\"eq-tok\">X_55, X_56</span> divide <span class=\"g-tok\">X_1 X_3</span> in ratio <span class=\"eq-tok\">r : R</span>.</span>",
+        "just_tag": "∵ COORDINATE LAW",
+        "just_id": "PONCELET PORISM AXIS",
+        "just_title": "The OI line is the axis of symmetry for Poncelet's bicentric triangle family between the incircle and circumcircle."
+      },
+      {
+        "prop_id": "ETC • T_10",
+        "short_code": "T_10",
+        "g_id": "THE OI LINE",
+        "folio": "Kimberling ETC • Named Central Lines",
+        "enunciation": "The central line joining the Incenter X_1 and Circumcenter X_3, carrying the Bevan Point X_40 and the insimilicenter X_55 and exsimilicenter X_56 of the incircle and circumcircle.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.5,
+        "step_num": 4,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-10-oi-line/svgs/03_central_lines.svg",
+        "symbolic": "Collinearity {1, 3, 40, 55, 56}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Central Line Incidences</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Oi Central Axis</span><span class=\"g-tok\">{1, 3, 40, 55, 56}</span></div></div></div>",
+        "just_tag": "∵ PRIMARY AXIS",
+        "just_id": "CIRCUMCIRCLE–INCIRCLE AXIS",
+        "just_title": "Contains X_1, X_3, X_36 (circumcircle inverse of X_1), X_40, X_55, X_56, and X_57.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_1",
+          "{1, 3, 40, 55, 56}"
+        ],
+        "coincide_ids": [],
+        "equal_ids": []
+      },
+      {
+        "prop_id": "ETC • T_10",
+        "short_code": "T_10",
+        "g_id": "THE OI LINE",
+        "folio": "Kimberling ETC • Named Central Lines",
+        "enunciation": "The central line joining the Incenter X_1 and Circumcenter X_3, carrying the Bevan Point X_40 and the insimilicenter X_55 and exsimilicenter X_56 of the incircle and circumcircle.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.55,
+        "step_num": 5,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-10-oi-line/svgs/03_central_lines.svg",
+        "symbolic": "Collinearity {1, 3, 40, 55, 56}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Central Line Incidences</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Oi Central Axis</span><span class=\"g-tok\">{1, 3, 40, 55, 56}</span></div></div></div>",
+        "just_tag": "∵ COLLINEARITIES",
+        "just_id": "CIRCUMCIRCLE–INCIRCLE AXIS",
+        "just_title": "Contains X_1, X_3, X_36 (circumcircle inverse of X_1), X_40, X_55, X_56, and X_57.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_1",
+          "{1, 3, 40, 55, 56}"
+        ],
+        "coincide_ids": [],
+        "equal_ids": []
+      }
+    ]
+  },
+  {
+    "id": "act_3_collection_network",
+    "title": "T_10 Collection 1 Network & Invariance",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_10",
+        "short_code": "T_10",
+        "g_id": "THE OI LINE",
+        "folio": "Kimberling ETC • Named Central Lines",
+        "enunciation": "The central line joining the Incenter X_1 and Circumcenter X_3, carrying the Bevan Point X_40 and the insimilicenter X_55 and exsimilicenter X_56 of the incircle and circumcircle.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.1,
+        "step_num": 6,
+        "step_kind": "PROVE",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-10-oi-line/svgs/04_relations.svg",
+        "symbolic": "X_1 • X_3 • X_40 • X_55 • X_56",
+        "clause_html": "<span class=\"clause-line\"><b>OI Line Centers:</b> <span class=\"g-tok\">X_1</span>, <span class=\"coincide-tok\">X_3</span>, <span class=\"eq-tok\">X_40</span>, <span class=\"g-tok\">X_55</span>, and <span class=\"g-tok\">X_56</span> align along the OI axis.</span>",
+        "just_tag": "∵ COLLECTION 1",
+        "just_id": "ISOGONAL LINKS TO X_7 & X_8",
+        "just_title": "X_55 is the isogonal conjugate of Gergonne X_7; X_56 is the isogonal conjugate of X_55's harmonic partner.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_1",
+          "{ 1, 3 }",
+          "X_55",
+          "X_56"
+        ],
+        "coincide_ids": [
+          "X_3"
+        ],
+        "equal_ids": [
+          "X_40"
+        ]
+      },
+      {
+        "prop_id": "ETC • T_10",
+        "short_code": "T_10",
+        "g_id": "THE OI LINE",
+        "folio": "Kimberling ETC • Named Central Lines",
+        "enunciation": "The central line joining the Incenter X_1 and Circumcenter X_3, carrying the Bevan Point X_40 and the insimilicenter X_55 and exsimilicenter X_56 of the incircle and circumcircle.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.95,
+        "step_num": 7,
+        "step_kind": "∴",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-10-oi-line/svgs/05_four_triangles.svg",
+        "symbolic": "Invariance across Acute (5,6,7) • Right (3,4,5) • Kepler (1,√φ,φ) • Kimberling (6,9,13)",
+        "clause_html": "<span class=\"clause-line\"><b>Reference Triangle Invariance:</b> Across all four reference triangles, <b>The OI Line (Incenter–Circumcenter Axis)</b> preserves its exact projective incidences and harmonic ratios.</span>",
+        "just_tag": "∵ INVARIANCE",
+        "just_id": "FOUR-TRIANGLE VERIFICATION",
+        "just_title": "Verified across Collection 1 centers X_1, X_3, X_40, X_55, X_56, X_57."
+      }
+    ]
+  }
+]

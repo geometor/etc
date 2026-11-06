@@ -55,7 +55,7 @@ X_192
    * :ref:`X_192 <X_192>` = perspector of Gemini triangles 4 and 6
    * :ref:`X_192 <X_192>` = :ref:`X_19 <X_19>`-:term:`isoconjugate <isoconjugate>` of X_23086
    * :ref:`X_192 <X_192>` = perspector of :term:`incentral triangle <incentral-triangle>` and inverse of n(Incentral)\*n(Medial)
-   * :ref:`X_192 <X_192>` = :term:`trilinear pole <trilinear-pole>` of line X_3835X_4083 (the perspectrix of :g:`ABC << A B C >>` and Gemini triangle 16)
+   * :ref:`X_192 <X_192>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_3835 <X_3835>`\ X_4083 (the perspectrix of :g:`ABC << A B C >>` and Gemini triangle 16)
    * :ref:`X_192 <X_192>` = {:ref:`X_37 <X_37>`,\ :ref:`X_75 <X_75>`}-harmonic conjugate of :ref:`X_2 <X_2>`
 
 Notes

@@ -48,7 +48,7 @@ X_621
    :badge: 7 relations
 
    * :ref:`X_621 <X_621>` = reflection of X_i in X_j for these (i,j): (:ref:`15 <X_15>`, :ref:`623 <X_623>`), (:ref:`616 <X_616>`, :ref:`298 <X_298>`), (:ref:`622 <X_622>`, :ref:`316 <X_316>`)
-   * :ref:`X_621 <X_621>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3438
+   * :ref:`X_621 <X_621>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3438 <X_3438>`
    * :ref:`X_621 <X_621>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_2992 <X_2992>`
    * :ref:`X_621 <X_621>` = anticomplement of :ref:`X_15 <X_15>`
    * :ref:`X_621 <X_621>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X_616 <X_616>`

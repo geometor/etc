@@ -53,10 +53,10 @@ X_339
    :badge: 5 relations
 
    * :ref:`X_339 <X_339>` = isotomic conjugate of :ref:`X_250 <X_250>`
-   * :ref:`X_339 <X_339>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`76 <X_76>`, :ref:`525 <X_525>`), (:ref:`305 <X_305>`, 3267)
+   * :ref:`X_339 <X_339>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`76 <X_76>`, :ref:`525 <X_525>`), (:ref:`305 <X_305>`, :ref:`3267 <X_3267>`)
    * :ref:`X_339 <X_339>` = :ref:`X_125 <X_125>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_338 <X_338>`
    * :ref:`X_339 <X_339>` = :ref:`X_25 <X_25>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_1101 <X_1101>`
-   * :ref:`X_339 <X_339>` = :term:`crosspoint <crosspoint>` of :ref:`X_305 <X_305>` and X_3267
+   * :ref:`X_339 <X_339>` = :term:`crosspoint <crosspoint>` of :ref:`X_305 <X_305>` and :ref:`X_3267 <X_3267>`
 
 .. toctree::
    :hidden:

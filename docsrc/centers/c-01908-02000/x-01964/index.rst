@@ -24,7 +24,7 @@ X_1964
    :class: note
 
    * **Central Lines:** :g:`{1, 75} <{ 1, 75 }>`, :g:`{31, 48} <{ 31, 48 }>`
-   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_75 <X_75>` (:ref:`ISOTOMIC CONJUGATE OF INCENTER <X_75>`), :g:`X_31 <X_31>` (:ref:`2nd POWER POINT <X_31>`), :g:`X_48 <X_48>` (:ref:`CROSSPOINT OF X(1) AND X(63) <X_48>`)
+   * **Related Centers:** :g:`X_3112 <X_3112>` (:ref:`TgX(31) <X_3112>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_75 <X_75>` (:ref:`ISOTOMIC CONJUGATE OF INCENTER <X_75>`), :g:`X_31 <X_31>` (:ref:`2nd POWER POINT <X_31>`), :g:`X_48 <X_48>` (:ref:`CROSSPOINT OF X(1) AND X(63) <X_48>`)
 
 .. signature:: center
 
@@ -47,7 +47,7 @@ X_1964
 .. collapse:: Functional Relations
    :badge: 8 relations
 
-   * :ref:`X_1964 <X_1964>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3112
+   * :ref:`X_1964 <X_1964>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3112 <X_3112>`
    * :ref:`X_1964 <X_1964>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_18833
    * :ref:`X_1964 <X_1964>` = :term:`complement <complement>` of X_21278
    * :ref:`X_1964 <X_1964>` = :term:`anticomplement <anticomplement>` of X_21238

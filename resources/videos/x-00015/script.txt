@@ -1,0 +1,83 @@
+center: X_15
+title: 1st ISODYNAMIC POINT
+folio: Kimberling ETC • Collection 1 (X_1–X_19)
+enunciation: The internal common intersection of the three Apollonian circles of triangle ABC, whose pedal triangle is equilateral.
+
+[bell:proposition]
+
+[screen: CONSTRUCT | svg: 01_primary.svg | weight: 1]
+symbolic: X_15 = 1st Isodynamic Point • Intersection of Apollonian Circles
+zoom: A, B, C
+active: X_15:gold, circumcircle:blue
+head: Primary Construction
+row: Target Center | X_15 (1St Isodynamic Point):gold
+row: Circle | Circumcircle:muted
+row: Circle | A-Apollonian Circle:muted
+just: ∵ CONCURRENCE | EQUILATERAL PEDAL TRIANGLE | Distances from X_15 to vertices A, B, C are inversely proportional to opposite sides: a·X_15A = b·X_15B = c·X_15C.
+say: X fifteen is the First Isodynamic Point of triangle A B C: <pause> construct the three Apollonian circles passing through each vertex and the interior and exterior angle bisector feet on the opposite side,
+
+[screen: GOAL | svg: 01_primary.svg | weight: 1 | punchline: true]
+symbolic: X_15 = 1st Isodynamic Point • Intersection of Apollonian Circles
+zoom: X_15, circumcircle, A-Apollonian circle, B-Apollonian circle, C-Apollonian circle, X_15
+thumb_zoom: A, B, C
+active: X_15:gold, circumcircle:blue, A-Apollonian circle:pink, B-Apollonian circle:pink, C-Apollonian circle:pink
+head: Primary Construction
+row: Target Center | X_15 (1St Isodynamic Point):gold
+row: Circle | Circumcircle:blue
+row: Circle | A-Apollonian Circle:pink
+just: ∵ DEFINITION | EQUILATERAL PEDAL TRIANGLE | Distances from X_15 to vertices A, B, C are inversely proportional to opposite sides: a·X_15A = b·X_15B = c·X_15C.
+say: <pause> and all three circles intersect inside the circumcircle at X fifteen.
+
+[bell:construction]
+
+[screen: ASSERT | svg: 02_coordinates.svg | weight: 1.15]
+symbolic: Trilinears sin(A + π/3) : : • Barycentrics a sin(A + π/3) : :
+section: Trilinear Distances | α = sin(A + π/3):gold | β = sin(B + π/3):blue | γ = sin(C + π/3):green
+section: Barycentric Sub-Areas | u = a sin(A + π/3):gold | v = b sin(B + π/3):blue | w = c sin(C + π/3):green
+just: ∵ COORDINATES | RECIPROCAL FERMAT TRILINEARS | Conway barycentrics: a²(S_A + √3·Area) : b²(S_B + √3·Area) : c²(S_C + √3·Area).
+say: Its trilinear coordinates are sine of A plus pi over three, <pause> to sine of B plus pi over three, <pause> to sine of C plus pi over three—<pause> the exact reciprocals of the Fermat point X thirteen. <pause> Remarkably, <pause> the pedal triangle of X fifteen is always equilateral!
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.5]
+symbolic: Brocard Axis {3, 6, 15, 16} • Line {2, 14, 15} • Line {4, 15, 17}
+zoom: X_15, X_3, X_6, X_16
+active: X_15:gold, {3, 6, 15, 16}:purple
+head: Incident Central Lines
+row: Brocard Axis | {3, 6, 15, 16}:purple
+row: Centroid–2nd Isogonic | {2, 14, 15}:muted
+row: Orthocenter–1st Napoleon | {4, 15, 17}:muted
+just: ∵ PRIMARY AXIS | BROCARD AXIS & APOLLONIAN CHORD | The Brocard axis {3, 6} is the common radical axis (line of centers' perpendicular) of the Apollonian circles.
+say: <pause> On the central lines layer,
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.55]
+symbolic: Brocard Axis {3, 6, 15, 16} • Line {2, 14, 15} • Line {4, 15, 17}
+zoom: X_15, X_3, X_6, X_2, X_14, X_4, X_17
+active: X_15:gold, {3, 6, 15, 16}:purple, {2, 14, 15}:teal, {4, 15, 17}:teal
+head: Incident Central Lines
+row: Brocard Axis | {3, 6, 15, 16}:purple
+row: Centroid–2nd Isogonic | {2, 14, 15}:teal
+row: Orthocenter–1st Napoleon | {4, 15, 17}:teal
+just: ∵ COLLINEARITIES | BROCARD AXIS & APOLLONIAN CHORD | The Brocard axis {3, 6} is the common radical axis (line of centers' perpendicular) of the Apollonian circles.
+say: <pause> X fifteen lies on the Brocard axis through X three, X six, and X sixteen.
+
+[bell:insight]
+
+[screen: PROVE | svg: 04_relations.svg | weight: 1.05]
+symbolic: Isogonal Conjugate X_13 (Fermat) • Circumcircle Inverse X_16
+zoom: X_15, X_13, X_16, X_3
+active: X_15:gold, X_13:blue, X_16:green, X_3:orange
+head: Functional Relations
+row: Isogonal Conjugate | X_13:blue
+row: Circumcircle Inverse | X_16:green
+row: Brocard Axis Anchor | X_3, X_6:orange
+just: ∵ RELATIONS | CIRCUMCIRCLE INVERSION PAIR | X_3, X_15, X_6, X_16 form a harmonic range on the Brocard axis; isotomic conjugate: X_300.
+say: X fifteen is the isogonal conjugate of the Fermat point X thirteen,
+
+[screen: ∴ | svg: 05_four_triangles.svg | weight: 0.95]
+symbolic: Kimberling (6, 9, 13) Search = 3.102444020655
+head: Reference Triangles | a | b | c
+row: Acute Triangle | 5 | 6 | 7:gold
+row: Right Triangle | 3 | 4 | 5:blue
+row: Kepler Triangle | 1 | √φ | φ:green
+row: Kimberling Triangle | 6 | 9 | 13:purple
+just: ∵ INVARIANCE | KIMBERLING SEARCH VALUE • X_15 | Shortest directed trilinear distance on reference triangle (6, 9, 13): 3.102444020655.
+say: <pause> and the circumcircle inverse of the Second Isodynamic Point X sixteen.

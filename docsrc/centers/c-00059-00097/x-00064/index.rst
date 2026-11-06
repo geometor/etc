@@ -45,7 +45,7 @@ X_64
    :badge: 16 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, 3182}, {:ref:`3 <X_3>`, :ref:`154 <X_154>`}, {:ref:`4 <X_4>`, 3183}, {:ref:`6 <X_6>`, :ref:`185 <X_185>`}, {:ref:`20 <X_20>`, :ref:`69 <X_69>`}, {:ref:`24 <X_24>`, :ref:`74 <X_74>`}, {:ref:`30 <X_30>`, :ref:`68 <X_68>`}, {:ref:`33 <X_33>`, :ref:`65 <X_65>`}, {:ref:`40 <X_40>`, :ref:`72 <X_72>`}, {:ref:`54 <X_54>`, :ref:`378 <X_378>`}, {:ref:`55 <X_55>`, :ref:`73 <X_73>`}, {:ref:`71 <X_71>`, :ref:`198 <X_198>`}, {:ref:`84 <X_84>`, 3353}, {:ref:`265 <X_265>`, :ref:`382 <X_382>`}, {3345, 3472}, {3346, 3355}
+   {:ref:`1 <X_1>`, :ref:`3182 <X_3182>`}, {:ref:`3 <X_3>`, :ref:`154 <X_154>`}, {:ref:`4 <X_4>`, :ref:`3183 <X_3183>`}, {:ref:`6 <X_6>`, :ref:`185 <X_185>`}, {:ref:`20 <X_20>`, :ref:`69 <X_69>`}, {:ref:`24 <X_24>`, :ref:`74 <X_74>`}, {:ref:`30 <X_30>`, :ref:`68 <X_68>`}, {:ref:`33 <X_33>`, :ref:`65 <X_65>`}, {:ref:`40 <X_40>`, :ref:`72 <X_72>`}, {:ref:`54 <X_54>`, :ref:`378 <X_378>`}, {:ref:`55 <X_55>`, :ref:`73 <X_73>`}, {:ref:`71 <X_71>`, :ref:`198 <X_198>`}, {:ref:`84 <X_84>`, :ref:`3353 <X_3353>`}, {:ref:`265 <X_265>`, :ref:`382 <X_382>`}, {:ref:`3345 <X_3345>`, :ref:`3472 <X_3472>`}, {:ref:`3346 <X_3346>`, :ref:`3355 <X_3355>`}
 
 .. collapse:: Functional Relations
    :badge: 24 relations
@@ -58,7 +58,7 @@ X_64
    * :ref:`X_64 <X_64>` = circumcircle-inverse of X_11589
    * :ref:`X_64 <X_64>` = :ref:`X_25 <X_25>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_6 <X_6>`
    * :ref:`X_64 <X_64>` = :ref:`X_1 <X_1>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X_207 <X_207>`
-   * :ref:`X_64 <X_64>` = :term:`crosspoint <crosspoint>` of :ref:`X_4 <X_4>` and X_3346
+   * :ref:`X_64 <X_64>` = :term:`crosspoint <crosspoint>` of :ref:`X_4 <X_4>` and :ref:`X_3346 <X_3346>`
    * :ref:`X_64 <X_64>` = :term:`crosssum <crosssum>` of :ref:`X_3 <X_3>` and :ref:`X_1498 <X_1498>`
    * :ref:`X_64 <X_64>` = perspector of :term:`hexyl triangle <hexyl-triangle>` and :term:`anticevian triangle <anticevian-triangle>` of :ref:`X_2184 <X_2184>`
    * :ref:`X_64 <X_64>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_647 <X_647>`\ \ :ref:`X_657 <X_657>`

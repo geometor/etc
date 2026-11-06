@@ -53,8 +53,8 @@ X_551
 
    * :ref:`X_551 <X_551>` = midpoint of X_i and X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`1125 <X_1125>`), (:ref:`10 <X_10>`, :ref:`2 <X_2>`)
    * :ref:`X_551 <X_551>` = reflection of X_i in X_j for these (i,j): (:ref:`14 <X_14>`, :ref:`619 <X_619>`), (:ref:`148 <X_148>`, :ref:`13 <X_13>`), (:ref:`616 <X_616>`, :ref:`99 <X_99>`), (:ref:`622 <X_622>`, :ref:`299 <X_299>`)
-   * :ref:`X_551 <X_551>` = :term:`complement <complement>` of X_3679
-   * :ref:`X_551 <X_551>` = :term:`anticomplement <anticomplement>` of X_3828
+   * :ref:`X_551 <X_551>` = :term:`complement <complement>` of :ref:`X_3679 <X_3679>`
+   * :ref:`X_551 <X_551>` = :term:`anticomplement <anticomplement>` of :ref:`X_3828 <X_3828>`
    * :ref:`X_551 <X_551>` = :term:`isotomic conjugate <isotomic-conjugate>` of :term:`isogonal conjugate <isogonal-conjugate>` of X_21747
    * :ref:`X_551 <X_551>` = :term:`complementary conjugate <complementary-conjugate>` of X_21251
    * :ref:`X_551 <X_551>` = polar conjugate of isogonal conjugate of X_22357

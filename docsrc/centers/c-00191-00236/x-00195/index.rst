@@ -45,13 +45,13 @@ X_195
    :badge: 12 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, 3467}, {:ref:`3 <X_3>`, :ref:`54 <X_54>`}, {:ref:`4 <X_4>`, :ref:`399 <X_399>`}, {:ref:`5 <X_5>`, 3459}, {:ref:`6 <X_6>`, :ref:`17 <X_17>`}, {:ref:`49 <X_49>`, :ref:`52 <X_52>`}, {:ref:`110 <X_110>`, :ref:`143 <X_143>`}, {:ref:`140 <X_140>`, :ref:`323 <X_323>`}, {:ref:`155 <X_155>`, :ref:`381 <X_381>`}, {:ref:`382 <X_382>`, :ref:`1498 <X_1498>`}, {:ref:`2121 <X_2121>`, 3462}, {3461, 3468}
+   {:ref:`1 <X_1>`, :ref:`3467 <X_3467>`}, {:ref:`3 <X_3>`, :ref:`54 <X_54>`}, {:ref:`4 <X_4>`, :ref:`399 <X_399>`}, {:ref:`5 <X_5>`, :ref:`3459 <X_3459>`}, {:ref:`6 <X_6>`, :ref:`17 <X_17>`}, {:ref:`49 <X_49>`, :ref:`52 <X_52>`}, {:ref:`110 <X_110>`, :ref:`143 <X_143>`}, {:ref:`140 <X_140>`, :ref:`323 <X_323>`}, {:ref:`155 <X_155>`, :ref:`381 <X_381>`}, {:ref:`382 <X_382>`, :ref:`1498 <X_1498>`}, {:ref:`2121 <X_2121>`, :ref:`3462 <X_3462>`}, {:ref:`3461 <X_3461>`, :ref:`3468 <X_3468>`}
 
 .. collapse:: Functional Relations
    :badge: 12 relations
 
-   * :ref:`X_195 <X_195>` = reflection of X_i in X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`54 <X_54>`), (:ref:`54 <X_54>`, :ref:`1493 <X_1493>`), (3519, :ref:`1209 <X_1209>`)
-   * :ref:`X_195 <X_195>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3459
+   * :ref:`X_195 <X_195>` = reflection of X_i in X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`54 <X_54>`), (:ref:`54 <X_54>`, :ref:`1493 <X_1493>`), (:ref:`3519 <X_3519>`, :ref:`1209 <X_1209>`)
+   * :ref:`X_195 <X_195>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3459 <X_3459>`
    * :ref:`X_195 <X_195>` = :term:`complement <complement>` of X_12325
    * :ref:`X_195 <X_195>` = :term:`anticomplement <anticomplement>` of X_21230
    * :ref:`X_195 <X_195>` = :ref:`X_5 <X_5>`-Ceva conjugate of :ref:`X_3 <X_3>`

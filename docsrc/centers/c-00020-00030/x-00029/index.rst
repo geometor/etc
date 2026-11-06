@@ -49,7 +49,7 @@ X_29
    * :ref:`X_29 <X_29>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_73 <X_73>`
    * :ref:`X_29 <X_29>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_307 <X_307>`
    * :ref:`X_29 <X_29>` = inverse-in-circumcircle of :ref:`X_2075 <X_2075>`
-   * :ref:`X_29 <X_29>` = :term:`complement <complement>` of X_3152
+   * :ref:`X_29 <X_29>` = :term:`complement <complement>` of :ref:`X_3152 <X_3152>`
    * :ref:`X_29 <X_29>` = :term:`anticomplement <anticomplement>` of X_18641
    * :ref:`X_29 <X_29>` = :ref:`X_286 <X_286>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_27 <X_27>`
    * :ref:`X_29 <X_29>` = cevapoint of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`4 <X_4>`), (:ref:`33 <X_33>`, :ref:`281 <X_281>`)

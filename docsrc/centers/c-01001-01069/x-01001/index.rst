@@ -51,7 +51,7 @@ X_1001
    * :ref:`X_1001 <X_1001>` = :term:`complement <complement>` of :ref:`X_2550 <X_2550>`
    * :ref:`X_1001 <X_1001>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`116 <X_116>`, :ref:`824 <X_824>`), (:ref:`788 <X_788>`, :ref:`1015 <X_1015>`)
    * :ref:`X_1001 <X_1001>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_513 <X_513>`\ \ :ref:`X_665 <X_665>`
-   * :ref:`X_1001 <X_1001>` = :term:`anticomplement <anticomplement>` of X_3826
+   * :ref:`X_1001 <X_1001>` = :term:`anticomplement <anticomplement>` of :ref:`X_3826 <X_3826>`
    * :ref:`X_1001 <X_1001>` = :ref:`X_6 <X_6>`-of-2nd-circumperp-triangle
    * :ref:`X_1001 <X_1001>` = :ref:`X_141 <X_141>`-of-hexyl-triangle
    * :ref:`X_1001 <X_1001>` = X_5480-of-excentral-triangle
@@ -71,7 +71,7 @@ Notes
 
 .. container:: note-item
 
-   For details and relationships among :ref:`X_1001 <X_1001>`, :ref:`X_1 <X_1>`, :ref:`X_145 <X_145>`, X_3361, X_3616, X_3913, and X_4719, see
+   For details and relationships among :ref:`X_1001 <X_1001>`, :ref:`X_1 <X_1>`, :ref:`X_145 <X_145>`, :ref:`X_3361 <X_3361>`, :ref:`X_3616 <X_3616>`, :ref:`X_3913 <X_3913>`, and X_4719, see
 
 .. container:: note-item
 

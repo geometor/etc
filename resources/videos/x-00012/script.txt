@@ -1,0 +1,83 @@
+center: X_12
+title: {X_1, X_5}-HARMONIC CONJUGATE OF X_11
+folio: Kimberling ETC • Collection 1 (X_1–X_19)
+enunciation: The perspector of triangle ABC and the Feuerbach triangle formed by the three excircle touchpoints on the nine-point circle.
+
+[bell:proposition]
+
+[screen: CONSTRUCT | svg: 01_primary.svg | weight: 1]
+symbolic: X_12 = Perspector of Feuerbach Excircle-Touch Triangle
+zoom: A, B, C
+active: X_12:gold, [ T_a M_a ]:gold, [ T_b M_b ]:gold, [ T_c M_c ]:gold
+head: Primary Construction
+row: Target Center | X_12 (Harmonic):gold
+row: Feuerbach Cevians | on △ABC:gold
+row: Incircle & Nine-Point | X_1, X_5:muted
+just: ∵ CONCURRENCE | FEUERBACH EXCIRCLE TANGENCY | Internal center of similitude of the incircle (center X_1, radius r) and nine-point circle (center X_5, radius R/2).
+say: X twelve is the X one, X five harmonic conjugate of the Feuerbach point X eleven: <pause> while the nine-point circle touches the incircle at X eleven, <pause> it also touches the three excircles at three outer Feuerbach points,
+
+[screen: GOAL | svg: 01_primary.svg | weight: 1 | punchline: true]
+symbolic: X_12 = Perspector of Feuerbach Excircle-Touch Triangle
+zoom: X_12, incircle, nine_point_circle, < T_a T_b T_c >, T_a, T_b, T_c, < M_a M_b M_c >, M_a, M_b, M_c, X_12, T_a, M_a, T_b, M_b, T_c, M_c
+thumb_zoom: A, B, C
+active: X_12:gold, incircle:pink, nine_point_circle:teal, < T_a T_b T_c >:blue, T_a:blue, T_b:blue, T_c:blue, < M_a M_b M_c >:blue, M_a:blue, M_b:blue, M_c:blue
+head: Primary Construction
+row: Target Center | X_12 (Harmonic):gold
+row: Feuerbach Cevians | on △ABC:muted
+row: Incircle & Nine-Point | X_1, X_5:teal
+just: ∵ DEFINITION | FEUERBACH EXCIRCLE TANGENCY | Internal center of similitude of the incircle (center X_1, radius r) and nine-point circle (center X_5, radius R/2).
+say: <pause> and the lines from A, B, and C to those three touchpoints concur at X twelve.
+
+[bell:construction]
+
+[screen: ASSERT | svg: 02_coordinates.svg | weight: 1.15]
+symbolic: Trilinears 1+cos(B-C) : : • Barycentrics (b+c)²/(s-a) : :
+section: Trilinear Distances | α = 1 + cos(B − C):gold | β = 1 + cos(C − A):blue | γ = 1 + cos(A − B):green
+section: Barycentric Sub-Areas | u = (b + c)²/(s − a):gold | v = (c + a)²/(s − b):blue | w = (a + b)²/(s − c):green
+just: ∵ COORDINATES | PLUS-COSINE FEUERBACH PAIR | On acute triangle (5, 6, 7), barycentric sub-areas are 169/4 : 144/3 : 121/2 = 507 : 576 : 726.
+say: Its trilinear coordinates flip the minus sign of X eleven to a plus: <pause> one plus cosine of B minus C, <pause> to one plus cosine of C minus A, <pause> to one plus cosine of A minus B, <pause> with barycentrics b plus c squared over s minus a.
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.5]
+symbolic: Feuerbach Line {1, 5, 11, 12} • Line {2, 12, 56} • Line {4, 12, 55}
+zoom: X_12, X_1, X_5, X_11
+active: X_12:gold, {1, 5, 11, 12}:teal
+head: Incident Central Lines
+row: Feuerbach Line | {1, 5, 11, 12}:teal
+row: Centroid–Exsimilicenter | {2, 12, 56}:muted
+row: Orthocenter–Insimilicenter | {4, 12, 55}:muted
+just: ∵ PRIMARY AXIS | SIMILICENTER INCIDENCE | Notice the symmetric swap with X_11: X_11 lies on {2, 55} and {4, 56}, while X_12 lies on {2, 56} and {4, 55}.
+say: <pause> On the central lines layer, <pause> X twelve lies on the Feuerbach line through X one, X five, and X eleven,
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.55]
+symbolic: Feuerbach Line {1, 5, 11, 12} • Line {2, 12, 56} • Line {4, 12, 55}
+zoom: X_12, X_1, X_5, X_11, X_2, X_56, X_4, X_55
+active: X_12:gold, {1, 5, 11, 12}:teal, {2, 12, 56}:purple, {4, 12, 55}:orange
+head: Incident Central Lines
+row: Feuerbach Line | {1, 5, 11, 12}:teal
+row: Centroid–Exsimilicenter | {2, 12, 56}:purple
+row: Orthocenter–Insimilicenter | {4, 12, 55}:orange
+just: ∵ COLLINEARITIES | SIMILICENTER INCIDENCE | Notice the symmetric swap with X_11: X_11 lies on {2, 55} and {4, 56}, while X_12 lies on {2, 56} and {4, 55}.
+say: <pause> and on lines X two X fifty-six and X four X fifty-five.
+
+[bell:insight]
+
+[screen: PROVE | svg: 04_relations.svg | weight: 1.05]
+symbolic: Harmonic Quadruple (X_1, X_5; X_11, X_12)
+zoom: X_12, X_11, X_5, X_55, X_3
+active: X_12:gold, X_11:blue, X_5:green, X_55:orange
+head: Functional Relations
+row: Harmonic Conjugate | X_11:blue
+row: Internal Similicenter | X_1, X_5:green
+row: Excircle Similicenter | X_55:orange
+just: ∵ RELATIONS | HARMONIC RANGE ON LINE {1, 5} | Isotomic conjugate of the isogonal conjugate of X_181 (Apollonius point).
+say: Together, <pause> X one, X five, X eleven, and X twelve form a fundamental harmonic range on the Feuerbach line,
+
+[screen: ∴ | svg: 05_four_triangles.svg | weight: 0.95]
+symbolic: Kimberling (6, 9, 13) Search = 1.334163924620
+head: Reference Triangles | a | b | c
+row: Acute Triangle | 5 | 6 | 7:gold
+row: Right Triangle | 3 | 4 | 5:blue
+row: Kepler Triangle | 1 | √φ | φ:green
+row: Kimberling Triangle | 6 | 9 | 13:purple
+just: ∵ INVARIANCE | KIMBERLING SEARCH VALUE • X_12 | Shortest directed trilinear distance on reference triangle (6, 9, 13): 1.334163924620.
+say: <pause> linking the incircle, nine-point circle, and three excircles.

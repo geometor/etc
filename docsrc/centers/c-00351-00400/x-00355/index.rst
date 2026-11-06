@@ -50,7 +50,7 @@ X_355
 
    * :ref:`X_355 <X_355>` = the center of the Fuhrmann circle, defined as the circumcircle of the Fuhrmann triangle :g:`A″B″C″ << A″ B″ C″ >>`, where :g:`A″ <A″>` is obtained as follows: let :g:`A' <A'>` be the midpoint of the circumcircle-arc having endpoints :g:`B <B>` and :g:`C <C>` and not containing A; then :g:`A″ <A″>` is the reflection of :g:`A' <A'>` in line :g:`BC <[ B C ]>`. Vertices :g:`B″ <B″>` and :g:`C″ <C″>` are obtained cyclically. (Other constructions of :g:`A″ <A″>`, and hence the Fuhrmann triangle, follow: (1) Let :g:`I_{A} <I_A>` be the reflection of :ref:`X_1 <X_1>` in :g:`BC <[ B C ]>`; then :g:`A″ <A″>` is the circumcenter of :g:`I_{A}BC << I_A B C >>`. (2) Let :g:`J_{A} <J_A>` be the reflection of the :g:`A <A>`-excenter in :g:`BC <[ B C ]>`; then :g:`A″ <A″>` is the circumcenter of :g:`J_{A}BC << J_A B C >>`.
    * :ref:`X_355 <X_355>` = midpoint of :ref:`X_4 <X_4>` and :ref:`X_8 <X_8>`
-   * :ref:`X_355 <X_355>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3417
+   * :ref:`X_355 <X_355>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3417 <X_3417>`
    * :ref:`X_355 <X_355>` = reflection of X_i in X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`5 <X_5>`), (:ref:`3 <X_3>`, :ref:`10 <X_10>`), (:ref:`944 <X_944>`, :ref:`1385 <X_1385>`), (:ref:`1482 <X_1482>`, :ref:`946 <X_946>`)
    * :ref:`X_355 <X_355>` = :term:`anticomplement <anticomplement>` of :ref:`X_1385 <X_1385>`
    * :ref:`X_355 <X_355>` = :term:`complement <complement>` of :ref:`X_944 <X_944>`

@@ -292,7 +292,10 @@ def parse_h3(html_content: str) -> dict[str, Any] | None:
             anchor_id = a_m.group(1).strip()
             break
 
-    clean_h3 = " ".join(clean_html_entities(remove_tags(h3_inner)).split()).strip()
+    h3_norm = re.sub(r"<sup>\s*2\s*</sup>", "²", h3_inner, flags=re.IGNORECASE)
+    h3_norm = re.sub(r"<sup>\s*3\s*</sup>", "³", h3_norm, flags=re.IGNORECASE)
+    h3_norm = re.sub(r"<sup>\s*-1\s*</sup>", "⁻¹", h3_norm, flags=re.IGNORECASE)
+    clean_h3 = " ".join(clean_html_entities(remove_tags(h3_norm)).split()).strip()
     key_match = re.search(r"X\((\d+)\)", clean_h3)
     if not key_match:
         return None
@@ -311,6 +314,12 @@ def parse_h3(html_content: str) -> dict[str, Any] | None:
     if not title:
         title = key
     title = re.sub(r"\bX[\(\[](\d+)[\)\]]", r"X_\1", title, flags=re.IGNORECASE)
+    # Fix Kimberling HTML bracket typos in combo titles (e.g. X_3788, X_3911..X_3924, X_3956)
+    title = re.sub(r"comT\(", "com[T(", title)
+    title = re.sub(r"com\[([^[\]()]+)\)\)\]$", r"com(\1)", title)
+    title = re.sub(r"com\[([^[\]()]+)\)$", r"com(\1)", title)
+    if title.endswith("))]") and title.count("(") < title.count(")"):
+        title = title[:-3] + ")]"
 
     # Extract parenthetical aliases at the end of the title if present, e.g.
     # "SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)" -> primary="SYMMEDIAN POINT", aliases=["LEMOINE POINT", "GREBE POINT"]

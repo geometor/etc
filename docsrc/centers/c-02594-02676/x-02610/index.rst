@@ -44,7 +44,7 @@ X_2610
    * :ref:`X_2610 <X_2610>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_37140
    * :ref:`X_2610 <X_2610>` = :term:`cevapoint <cevapoint>` of :ref:`X_523 <X_523>` and X_9276
    * :ref:`X_2610 <X_2610>` = crossdifference of every pair of points on line :ref:`X_1 <X_1>`\ \ :ref:`X_60 <X_60>`
-   * :ref:`X_2610 <X_2610>` = :term:`crosssum <crosssum>` of X_i and X_j for these {i,j}: {:ref:`1 <X_1>`, :ref:`2610 <X_2610>`}, {:ref:`110 <X_110>`, :ref:`1983 <X_1983>`}, {:ref:`2245 <X_2245>`, :ref:`2605 <X_2605>`}, {3737, 4282}
+   * :ref:`X_2610 <X_2610>` = :term:`crosssum <crosssum>` of X_i and X_j for these {i,j}: {:ref:`1 <X_1>`, :ref:`2610 <X_2610>`}, {:ref:`110 <X_110>`, :ref:`1983 <X_1983>`}, {:ref:`2245 <X_2245>`, :ref:`2605 <X_2605>`}, {:ref:`3737 <X_3737>`, 4282}
    * :ref:`X_2610 <X_2610>` = intersection of :term:`trilinear polars <trilinear-polar>` of :ref:`X_1 <X_1>` and :ref:`X_12 <X_12>`
    * :ref:`X_2610 <X_2610>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of X_38982
    * :ref:`X_2610 <X_2610>` = perspector of hyperbola {{:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_1 <X_1>`,\ :ref:`X_12 <X_12>`}}

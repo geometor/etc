@@ -1,0 +1,83 @@
+center: X_17
+title: 1st NAPOLEON POINT
+folio: Kimberling ETC • Collection 1 (X_1–X_19)
+enunciation: The perspector of triangle ABC and the outer Napoleon equilateral triangle formed by the centers of outward side equilateral triangles.
+
+[bell:proposition]
+
+[screen: CONSTRUCT | svg: 01_primary.svg | weight: 1]
+symbolic: X_17 = 1st Napoleon Point • [A Nap_a] ∩ [B Nap_b] ∩ [C Nap_c]
+zoom: A, B, C
+active: X_17:gold, [ A Nap_a ]:gold, [ B Nap_b ]:gold, [ C Nap_c ]:gold
+head: Primary Construction
+row: Target Center | X_17 (1St Napoleon Point):gold
+row: Concurrence Lines | [ A Nap_a ], [ B Nap_b ], [ C Nap_c ]:gold
+row: Derived Triangle | < B C A' >:muted
+just: ∵ CONCURRENCE | NAPOLEON'S THEOREM • OUTER TRIANGLE | Nap_a, Nap_b, Nap_c are the centroids (30° base angles) of outward equilateral triangles on BC, CA, AB.
+say: X seventeen is the First Napoleon Point of triangle A B C: <pause> by Napoleon's theorem, <pause> the centroids Nap sub a, Nap sub b, and Nap sub c of the three outward equilateral triangles erected on sides B C, C A, and A B always form an equilateral triangle,
+
+[screen: GOAL | svg: 01_primary.svg | weight: 1 | punchline: true]
+symbolic: X_17 = 1st Napoleon Point • [A Nap_a] ∩ [B Nap_b] ∩ [C Nap_c]
+zoom: X_17, < B C A' >, A', < C A B' >, B', < A B C' >, C', < Nap_a Nap_b Nap_c >, Nap_a, Nap_b, Nap_c, X_17, Nap_a, Nap_b, Nap_c
+thumb_zoom: A, B, C
+active: X_17:gold, < B C A' >:blue, A':blue, < C A B' >:blue, B':blue, < A B C' >:blue, C':blue, < Nap_a Nap_b Nap_c >:blue, Nap_a:blue, Nap_b:blue, Nap_c:blue
+head: Primary Construction
+row: Target Center | X_17 (1St Napoleon Point):gold
+row: Concurrence Lines | [ A Nap_a ], [ B Nap_b ], [ C Nap_c ]:muted
+row: Derived Triangle | < B C A' >:blue
+just: ∵ DEFINITION | NAPOLEON'S THEOREM • OUTER TRIANGLE | Nap_a, Nap_b, Nap_c are the centroids (30° base angles) of outward equilateral triangles on BC, CA, AB.
+say: <pause> and the lines joining A, B, and C to those three centers concur at X seventeen.
+
+[bell:construction]
+
+[screen: ASSERT | svg: 02_coordinates.svg | weight: 1.15]
+symbolic: Trilinears csc(A + π/6) : : • Barycentrics a csc(A + π/6) : :
+section: Trilinear Distances | α = csc(A + π/6):gold | β = csc(B + π/6):blue | γ = csc(C + π/6):green
+section: Barycentric Sub-Areas | u = a csc(A + π/6):gold | v = b csc(B + π/6):blue | w = c csc(C + π/6):green
+just: ∵ COORDINATES | +30° KIEPERT PERSPECTOR | Point on the Kiepert hyperbola corresponding to base angle θ = +π/6 (30°).
+say: Its trilinear coordinates shift the phase to pi over six: <pause> cosecant of A plus pi over six, <pause> to cosecant of B plus pi over six, <pause> to cosecant of C plus pi over six.
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.5]
+symbolic: Lines {3, 13, 17} • {4, 15, 17} • {5, 14, 17} • {6, 17, 18}
+zoom: X_17, X_3, X_13
+active: X_17:gold, {3, 13, 17}:green
+head: Incident Central Lines
+row: Circumcenter–1st Isogonic | {3, 13, 17}:green
+row: Orthocenter–1st Isodynamic | {4, 15, 17}:muted
+row: Symmedian–Napoleon | {6, 17, 18}:muted
+just: ∵ PRIMARY AXIS | FERMAT–NAPOLEON–ISODYNAMIC GRID | Notice how X_17 connects Circumcenter X_3 to Fermat point X_13 and Orthocenter X_4 to 1st Isodynamic X_15.
+say: <pause> On the central lines layer, <pause> X seventeen lies on line X three X thirteen,
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.55]
+symbolic: Lines {3, 13, 17} • {4, 15, 17} • {5, 14, 17} • {6, 17, 18}
+zoom: X_17, X_3, X_13, X_4, X_15, X_6, X_18
+active: X_17:gold, {3, 13, 17}:green, {4, 15, 17}:teal, {6, 17, 18}:blue
+head: Incident Central Lines
+row: Circumcenter–1st Isogonic | {3, 13, 17}:green
+row: Orthocenter–1st Isodynamic | {4, 15, 17}:teal
+row: Symmedian–Napoleon | {6, 17, 18}:blue
+just: ∵ COLLINEARITIES | FERMAT–NAPOLEON–ISODYNAMIC GRID | Notice how X_17 connects Circumcenter X_3 to Fermat point X_13 and Orthocenter X_4 to 1st Isodynamic X_15.
+say: <pause> line X four X fifteen, <pause> line X five X fourteen, <pause> and line X six X eighteen.
+
+[bell:insight]
+
+[screen: PROVE | svg: 04_relations.svg | weight: 1.05]
+symbolic: Isogonal Conjugate X_61 • Isotomic Conjugate X_302
+zoom: X_17, X_18, X_13, X_15, X_3
+active: X_17:gold, X_18:blue, X_13:green, X_15:orange
+head: Functional Relations
+row: Napoleon Companion | X_18:blue
+row: 1st Isogonic Partner | X_13:green
+row: 1st Isodynamic Partner | X_15:orange
+just: ∵ RELATIONS | NAPOLEON–ISOGONAL PAIR | Complement: X_627 • Anticomplement: X_629.
+say: X seventeen lies on the Kiepert hyperbola at angle plus thirty degrees, <pause> is the isogonal conjugate of X sixty-one,
+
+[screen: ∴ | svg: 05_four_triangles.svg | weight: 0.95]
+symbolic: Kimberling (6, 9, 13) Search = 1.386654550070
+head: Reference Triangles | a | b | c
+row: Acute Triangle | 5 | 6 | 7:gold
+row: Right Triangle | 3 | 4 | 5:blue
+row: Kepler Triangle | 1 | √φ | φ:green
+row: Kimberling Triangle | 6 | 9 | 13:purple
+just: ∵ INVARIANCE | KIMBERLING SEARCH VALUE • X_17 | Shortest directed trilinear distance on reference triangle (6, 9, 13): 1.386654550070.
+say: <pause> and pairs with the Second Napoleon Point X eighteen.

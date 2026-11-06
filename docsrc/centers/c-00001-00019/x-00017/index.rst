@@ -44,6 +44,11 @@ X_17
 
    :ref:`X_17 <X_17>` lies on the Napoleon cubic.
 
+.. admonition:: Related Collection 1 Topic Guides
+   :class: tip
+
+   :doc:`T_13: The Isogonic & Napoleon Central Lines <../../../topics/isogonic-and-napoleon-lines/index>` • :doc:`T_24: Equilateral, Isogonic & Napoleon Triangles <../../../topics/isogonic-and-napoleon-triangles/index>`
+
 .. collapse:: Incident Central Lines
    :badge: 13 lines
    :class: line-catalog

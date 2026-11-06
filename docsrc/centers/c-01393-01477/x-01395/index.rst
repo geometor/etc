@@ -46,7 +46,7 @@ X_1395
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X_1395 <X_1395>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3718
+   * :ref:`X_1395 <X_1395>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3718 <X_3718>`
    * :ref:`X_1395 <X_1395>` = :ref:`X_34 <X_34>`-Ceva conjugate of :ref:`X_604 <X_604>`
    * :ref:`X_1395 <X_1395>` = :term:`crosspoint <crosspoint>` of :ref:`X_608 <X_608>` and :ref:`X_1398 <X_1398>`
    * :ref:`X_1395 <X_1395>` = :term:`crosssum <crosssum>` of :ref:`X_345 <X_345>` and :ref:`X_1265 <X_1265>`

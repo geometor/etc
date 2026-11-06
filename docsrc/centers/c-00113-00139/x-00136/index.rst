@@ -62,7 +62,7 @@ X_136
    * :ref:`X_136 <X_136>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X_2501 <X_2501>` (hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_4 <X_4>`,\ :ref:`X_93 <X_93>`}})
    * :ref:`X_136 <X_136>` = :ref:`X_2 <X_2>`-Ceva conjugate of :ref:`X_2501 <X_2501>`
    * :ref:`X_136 <X_136>` = inverse-in-polar-circle of :ref:`X_110 <X_110>`
-   * :ref:`X_136 <X_136>` = inverse-in-orthoptic-circle-of-Steiner-inellipse of X_3563
+   * :ref:`X_136 <X_136>` = inverse-in-orthoptic-circle-of-Steiner-inellipse of :ref:`X_3563 <X_3563>`
    * :ref:`X_136 <X_136>` = orthopole of line :ref:`X_3 <X_3>`\ \ :ref:`X_49 <X_49>`
    * :ref:`X_136 <X_136>` = Kirikami-six-circles image of :ref:`X_93 <X_93>`
    * :ref:`X_136 <X_136>` = Dou-circles-radical-circle-inverse of X_36472

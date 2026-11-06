@@ -117,6 +117,170 @@ def _extract_preamble_title(preamble_html: str) -> str:
     return " ".join(title.split()).strip(" ,")
 
 
+def _clean_guide_title(header: str) -> str:
+    """Extract a concise descriptive title from a Guide_to_preambles_in_ETC bold header."""
+    import html as _html
+
+    h = _html.unescape(header).strip(" ,.:;")
+    # Fix missing '(' typos in X2384), X2419), X2973), X3446)
+    h = re.sub(r"\bX(\d{3,5})\)", r"X(\1)", h)
+    m = re.match(
+        r"^(?:More\s+)?(?:Triangle\s+)?(?:Centers(?:\s+on\s+the\s+lines?\s+at\s+infinity)?|Points)\s*:?\s*"
+        r"(?:X\(\d+\)\s*(?:,\s*|\s+and\s+|\s*[-=]\s*)?)+(?:\s*X?\(\d*\)\s*)?"
+        r"[,.:;\s]*(.*)$",
+        h,
+        re.IGNORECASE,
+    )
+    if m:
+        rest = m.group(1).strip(" ,.:;")
+        rest2 = re.sub(
+            r"^(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\.?\s+\d{1,2},?\s+\d{4}[.,;\s]*",
+            "",
+            rest,
+            flags=re.IGNORECASE,
+        ).strip(" ,.:;")
+        if rest2 and not re.match(r"^contributed\s+by\b", rest2, re.IGNORECASE):
+            if rest2.startswith("(") and rest2.endswith(")"):
+                rest2 = rest2[1:-1].strip()
+            return rest2
+    return h
+
+
+_GUIDE_RANGE_FIXES: dict[tuple[int, int], tuple[int, int]] = {
+    (2055, 2046): (2055, 2065),
+    (2979, 2979): (2979, 2998),
+    (4735, 4548): (4357, 4548),
+    (6129, 61364): (6129, 6136),
+    (69302, 68376): (69302, 69376),
+    (71183, 71215): (71183, 71315),
+}
+
+
+def parse_preambles_guide(guide_path: str | Path) -> dict[str, Any]:
+    """Parse `Guide_to_preambles_in_ETC.html` into structured preamble entries across Parts 1–37."""
+    import html as _html
+
+    raw_html = read_html_source(guide_path)
+    # Fix two unclosed/missing <b> tags in Kimberling's HTML
+    raw_html = re.sub(r"(?<![<b])b>(Centers\s+X\(36926\))", r"<b>\1", raw_html)
+    raw_html = re.sub(
+        r"(?<!<b>)(Centers\s+X\(8185\)-X\(8253\)[^<]*</b>)", r"<b>\1", raw_html
+    )
+
+    parts = re.split(
+        r"<h2[^>]*>\s*Preambles in Part\s*(\d+)\s*</h2>",
+        raw_html,
+        flags=re.IGNORECASE,
+    )
+    intro_html = _clean_trailing_hr(parts[0]) if parts else ""
+
+    entries: list[dict[str, Any]] = []
+    idx_counter = 0
+
+    for i in range(1, len(parts), 2):
+        part_num = int(parts[i])
+        pbody = parts[i + 1]
+        pbody = re.sub(
+            r"Total number of Preambles in this Guide.*$",
+            "",
+            pbody,
+            flags=re.IGNORECASE | re.DOTALL,
+        )
+        raw_items = re.split(
+            r"(?=<b>\s*(?:Centers|Isoscelizer|Points|Similicenters|Perspectors|More\s+points|X\(\d+\)|Triangle\s+centers))",
+            pbody,
+            flags=re.IGNORECASE,
+        )
+        for item in raw_items:
+            item_s = item.strip()
+            if not item_s:
+                continue
+            m = re.search(r"<b>(.*?)</b>(.*)", item_s, re.IGNORECASE | re.DOTALL)
+            if not m:
+                continue
+            head_raw = _html.unescape(
+                " ".join(re.sub(r"<[^>]+>", "", m.group(1)).split())
+            ).strip(" ,.")
+            head_norm = re.sub(r"\bX(\d{3,5})\)", r"X(\1)", head_raw)
+            nums = [
+                int(n)
+                for tup in re.findall(
+                    r"X\((\d+)\)|(?<=-)\s*(\d{2,5})\b", head_norm
+                )
+                for n in tup
+                if n
+            ]
+            if not nums:
+                continue
+            idx_counter += 1
+            start_num = nums[0]
+            end_num = nums[-1]
+            if (start_num, end_num) in _GUIDE_RANGE_FIXES:
+                start_num, end_num = _GUIDE_RANGE_FIXES[(start_num, end_num)]
+            elif end_num < start_num:
+                end_num = max(nums)
+
+            body_html = _clean_trailing_hr(m.group(2))
+            body_html = re.sub(
+                r"^(?:\s*</?p>\s*|\s*<br\s*/?>\s*)+|(?:\s*</?p>\s*|\s*<br\s*/?>\s*|\s*</?center>\s*|\s*<hr[^>]*>\s*)+$",
+                "",
+                body_html,
+                flags=re.IGNORECASE,
+            ).strip()
+
+            title = _clean_guide_title(head_norm)
+            entries.append(
+                {
+                    "id": f"guide-preamble-{idx_counter:04d}",
+                    "index": idx_counter,
+                    "part": part_num,
+                    "start_num": start_num,
+                    "end_num": end_num,
+                    "nums": nums,
+                    "header": head_norm,
+                    "title": title,
+                    "html": body_html,
+                }
+            )
+
+    return {
+        "intro_html": intro_html,
+        "entries": entries,
+    }
+
+
+def enrich_preambles_with_guide(
+    preambles_by_center: dict[str, list[dict[str, Any]]],
+    guide_data: dict[str, Any],
+) -> None:
+    """Enrich `preambles_by_center` in-place with ranges and titles from `Guide_to_preambles_in_ETC.html`."""
+    entries = guide_data.get("entries", [])
+    by_start: dict[int, list[dict[str, Any]]] = {}
+    for entry in entries:
+        s_num = entry["start_num"]
+        by_start.setdefault(s_num, []).append(entry)
+        # Also index second number if first is a single outlier (e.g. X(74), X(98)-X(112))
+        if len(entry["nums"]) >= 2 and entry["nums"][1] != s_num:
+            by_start.setdefault(entry["nums"][1], []).append(entry)
+        if s_num == 2 and entry["end_num"] == 30:
+            by_start.setdefault(20, []).append(entry)
+
+    for center_key, p_list in preambles_by_center.items():
+        m = re.match(r"^X\((\d+)\)$", center_key)
+        if not m:
+            continue
+        c_num = int(m.group(1))
+        g_candidates = by_start.get(c_num, [])
+        for idx, p_item in enumerate(p_list):
+            if idx < len(g_candidates):
+                g_entry = g_candidates[idx]
+                p_item["start_num"] = g_entry["start_num"]
+                p_item["end_num"] = g_entry["end_num"]
+                p_item["part"] = g_entry["part"]
+                p_item["guide_header"] = g_entry["header"]
+                p_item["guide_title"] = g_entry["title"]
+
+
 def ingest_folder(input_folder: str | Path, output_folder: str | Path) -> dict[str, Any]:
     """Ingest all ETC volume HTML files in `input_folder` and write split files to `output_folder`.
 
@@ -233,6 +397,19 @@ def ingest_folder(input_folder: str | Path, output_folder: str | Path) -> dict[s
                 f"  {vol_path.name}: {vol_centers} centers, {vol_preambles} preambles"
             )
 
+    guide_file = in_dir / "Guide_to_preambles_in_ETC.html"
+    guide_count = 0
+    if guide_file.is_file():
+        guide_data = parse_preambles_guide(guide_file)
+        guide_count = len(guide_data.get("entries", []))
+        enrich_preambles_with_guide(preambles_by_center, guide_data)
+        guide_meta_path = out_dir / "preambles_guide.json"
+        guide_meta_path.write_text(
+            json.dumps(guide_data, indent=2, ensure_ascii=False),
+            encoding="utf-8",
+        )
+        print(f"  {guide_file.name}: {guide_count} guide preamble entries")
+
     # Save preambles and intros metadata registries in output_folder and parent resources/
     preambles_meta_path = out_dir / "preambles.json"
     preambles_meta_path.write_text(
@@ -246,11 +423,12 @@ def ingest_folder(input_folder: str | Path, output_folder: str | Path) -> dict[s
     )
 
     print(
-        f"Ingestion complete: {center_count} centers, {preamble_count} preambles, {intro_count} intro sections."
+        f"Ingestion complete: {center_count} centers, {preamble_count} preambles ({guide_count} in guide), {intro_count} intro sections."
     )
     return {
         "centers": center_count,
         "preambles": preamble_count,
+        "guide_preambles": guide_count,
         "intros": intro_count,
     }
 

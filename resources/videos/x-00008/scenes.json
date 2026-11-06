@@ -1,0 +1,256 @@
+[
+  {
+    "id": "act_1_proposition",
+    "title": "X_8 NAGEL POINT — Act 1",
+    "subslides": [
+      {
+        "prop_id": "ETC • X_8",
+        "short_code": "X_8",
+        "g_id": "NAGEL POINT",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The point of concurrence of the three perimeter-bisecting splitters joining vertices A, B, C to the excircle touchpoints.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.0,
+        "step_num": 1,
+        "step_kind": "CONSTRUCT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/x-00008/svgs/01_primary.svg",
+        "symbolic": "X_8 = Nagel Point • [A N_a] ∩ [B N_b] ∩ [C N_c]",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Primary Construction</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Target Center</span><span class=\"tok-gold\">X_8 (Nagel)</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Perimeter Splitters</span><span class=\"tok-gold\">AN_a, BN_b, CN_c</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Extouch Triangle</span><span class=\"muted-tok\">△N_a N_b N_c</span></div></div></div>",
+        "just_tag": "∵ CONCURRENCE",
+        "just_id": "PERIMETER SPLITTER CONCURRENCE",
+        "just_title": "Each cevian AN_a bisects the triangle's perimeter into two equal paths of length s = (a + b + c)/2.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_8:gold",
+          "[ A N_a ]:gold",
+          "[ B N_b ]:gold",
+          "[ C N_c ]:gold"
+        ],
+        "coincide_ids": [],
+        "equal_ids": [],
+        "zoom": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "prop_id": "ETC • X_8",
+        "short_code": "X_8",
+        "g_id": "NAGEL POINT",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The point of concurrence of the three perimeter-bisecting splitters joining vertices A, B, C to the excircle touchpoints.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.0,
+        "step_num": 2,
+        "step_kind": "GOAL",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/x-00008/svgs/01_primary.svg",
+        "symbolic": "X_8 = Nagel Point • [A N_a] ∩ [B N_b] ∩ [C N_c]",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Primary Construction</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Target Center</span><span class=\"tok-gold\">X_8 (Nagel)</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Perimeter Splitters</span><span class=\"muted-tok\">AN_a, BN_b, CN_c</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Extouch Triangle</span><span class=\"tok-blue\">△N_a N_b N_c</span></div></div></div>",
+        "just_tag": "∵ DEFINITION",
+        "just_id": "PERIMETER SPLITTER CONCURRENCE",
+        "just_title": "Each cevian AN_a bisects the triangle's perimeter into two equal paths of length s = (a + b + c)/2.",
+        "is_punchline": true,
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_8:gold",
+          "< N_a N_b N_c >:blue",
+          "N_a:blue",
+          "N_b:blue",
+          "N_c:blue"
+        ],
+        "coincide_ids": [],
+        "equal_ids": [],
+        "zoom": [
+          "X_8",
+          "< N_a N_b N_c >",
+          "N_a",
+          "N_b",
+          "N_c",
+          "X_8",
+          "N_a",
+          "N_b",
+          "N_c"
+        ],
+        "thumb_zoom": [
+          "A",
+          "B",
+          "C"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "act_2_construction",
+    "title": "X_8 NAGEL POINT — Act 2",
+    "subslides": [
+      {
+        "prop_id": "ETC • X_8",
+        "short_code": "X_8",
+        "g_id": "NAGEL POINT",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The point of concurrence of the three perimeter-bisecting splitters joining vertices A, B, C to the excircle touchpoints.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.15,
+        "step_num": 3,
+        "step_kind": "ASSERT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/x-00008/svgs/02_coordinates.svg",
+        "symbolic": "Trilinears (s-a)/a : (s-b)/b : (s-c)/c • Barycentrics s-a : s-b : s-c",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-section\"><div class=\"etc-sec-head\">Trilinear Distances</div><div class=\"etc-coord-grid\"><span class=\"tok-gold\">α = (s − a)/a</span><span class=\"tok-blue\">β = (s − b)/b</span><span class=\"tok-green\">γ = (s − c)/c</span></div></div><div class=\"etc-section\"><div class=\"etc-sec-head\">Barycentric Sub-Areas</div><div class=\"etc-coord-grid\"><span class=\"tok-gold\">u = s − a</span><span class=\"tok-blue\">v = s − b</span><span class=\"tok-green\">w = s − c</span></div></div></div>",
+        "just_tag": "∵ COORDINATES",
+        "just_id": "SEMIPERIMETER EXCESS COORDINATES",
+        "just_title": "On acute triangle (5, 6, 7) with s = 9, barycentric sub-areas are 4 : 3 : 2 (44.4% : 33.3% : 22.2%)."
+      },
+      {
+        "prop_id": "ETC • X_8",
+        "short_code": "X_8",
+        "g_id": "NAGEL POINT",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The point of concurrence of the three perimeter-bisecting splitters joining vertices A, B, C to the excircle touchpoints.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.5,
+        "step_num": 4,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/x-00008/svgs/03_central_lines.svg",
+        "symbolic": "Nagel Line {1, 2, 8, 10} • Fuhrmann Line {4, 8} • Line {7, 8}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Incident Central Lines</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Nagel Line</span><span class=\"tok-orange\">{1, 2, 8, 10}</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Fuhrmann Line</span><span class=\"muted-tok\">{4, 8, 72}</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Gergonne–Nagel Line</span><span class=\"muted-tok\">{7, 8, 65}</span></div></div></div>",
+        "just_tag": "∵ PRIMARY AXIS",
+        "just_id": "NAGEL & FUHRMANN AXES",
+        "just_title": "Segment X_4–X_8 is the diameter of the Fuhrmann circle; on the Nagel line, X_1 X_2 : X_2 X_8 = 1 : 2.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_8:gold",
+          "{1, 2, 8, 10}:orange"
+        ],
+        "coincide_ids": [],
+        "equal_ids": [],
+        "zoom": [
+          "X_8",
+          "X_1",
+          "X_2",
+          "X_10"
+        ]
+      },
+      {
+        "prop_id": "ETC • X_8",
+        "short_code": "X_8",
+        "g_id": "NAGEL POINT",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The point of concurrence of the three perimeter-bisecting splitters joining vertices A, B, C to the excircle touchpoints.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.55,
+        "step_num": 5,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/x-00008/svgs/03_central_lines.svg",
+        "symbolic": "Nagel Line {1, 2, 8, 10} • Fuhrmann Line {4, 8} • Line {7, 8}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Incident Central Lines</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Nagel Line</span><span class=\"tok-orange\">{1, 2, 8, 10}</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Fuhrmann Line</span><span class=\"tok-pink\">{4, 8, 72}</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Gergonne–Nagel Line</span><span class=\"tok-lime\">{7, 8, 65}</span></div></div></div>",
+        "just_tag": "∵ COLLINEARITIES",
+        "just_id": "NAGEL & FUHRMANN AXES",
+        "just_title": "Segment X_4–X_8 is the diameter of the Fuhrmann circle; on the Nagel line, X_1 X_2 : X_2 X_8 = 1 : 2.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_8:gold",
+          "{1, 2, 8, 10}:orange",
+          "{4, 8, 72}:pink",
+          "{7, 8, 65}:lime"
+        ],
+        "coincide_ids": [],
+        "equal_ids": [],
+        "zoom": [
+          "X_8",
+          "X_1",
+          "X_2",
+          "X_10",
+          "X_4",
+          "X_72",
+          "X_7",
+          "X_65"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "act_3_insight",
+    "title": "X_8 NAGEL POINT — Act 3",
+    "subslides": [
+      {
+        "prop_id": "ETC • X_8",
+        "short_code": "X_8",
+        "g_id": "NAGEL POINT",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The point of concurrence of the three perimeter-bisecting splitters joining vertices A, B, C to the excircle touchpoints.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.05,
+        "step_num": 6,
+        "step_kind": "PROVE",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/x-00008/svgs/04_relations.svg",
+        "symbolic": "Anticomplement of X_1 • Isotomic Conjugate X_7 • Isogonal X_56",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Functional Relations</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Anticomplement</span><span class=\"tok-blue\">X_1</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Isotomic Conjugate</span><span class=\"tok-green\">X_7</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Isogonal Conjugate</span><span class=\"tok-orange\">X_56</span></div></div></div>",
+        "just_tag": "∵ RELATIONS",
+        "just_id": "ANTICOMPLEMENTARY INCENTER",
+        "just_title": "X_8 is the incenter of the anticomplementary triangle △K_a K_b K_c; midpoint of X_1 and X_8 is X_10.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_8:gold",
+          "X_1:blue",
+          "X_7:green",
+          "X_56:orange"
+        ],
+        "coincide_ids": [],
+        "equal_ids": [],
+        "zoom": [
+          "X_8",
+          "X_1",
+          "X_7",
+          "X_56",
+          "X_3"
+        ]
+      },
+      {
+        "prop_id": "ETC • X_8",
+        "short_code": "X_8",
+        "g_id": "NAGEL POINT",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The point of concurrence of the three perimeter-bisecting splitters joining vertices A, B, C to the excircle touchpoints.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.95,
+        "step_num": 7,
+        "step_kind": "∴",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/x-00008/svgs/05_four_triangles.svg",
+        "symbolic": "Kimberling (6, 9, 13) Search = 4.507489358552",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head-row\"><span class=\"etc-sec-head\">Reference Triangles</span><div class=\"etc-head-cols\"><span>a</span><span>b</span><span>c</span></div></div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Acute Triangle</span><div class=\"etc-row-cells\"><span class=\"tok-gold\">5</span><span class=\"tok-gold\">6</span><span class=\"tok-gold\">7</span></div></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Right Triangle</span><div class=\"etc-row-cells\"><span class=\"tok-blue\">3</span><span class=\"tok-blue\">4</span><span class=\"tok-blue\">5</span></div></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Kepler Triangle</span><div class=\"etc-row-cells\"><span class=\"tok-green\">1</span><span class=\"tok-green\">√φ</span><span class=\"tok-green\">φ</span></div></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Kimberling Triangle</span><div class=\"etc-row-cells\"><span class=\"tok-purple\">6</span><span class=\"tok-purple\">9</span><span class=\"tok-purple\">13</span></div></div></div></div>",
+        "just_tag": "∵ INVARIANCE",
+        "just_id": "KIMBERLING SEARCH VALUE • X_8",
+        "just_title": "Shortest directed trilinear distance on reference triangle (6, 9, 13): 4.507489358552."
+      }
+    ]
+  }
+]

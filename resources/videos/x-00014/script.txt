@@ -1,0 +1,83 @@
+center: X_14
+title: 2nd ISOGONIC CENTER
+folio: Kimberling ETC • Collection 1 (X_1–X_19)
+enunciation: The perspector of the inward equilateral triangles erected on sides BC, CA, AB of triangle ABC.
+
+[bell:proposition]
+
+[screen: CONSTRUCT | svg: 01_primary.svg | weight: 1]
+symbolic: X_14 = 2nd Isogonic Center • Inward Equilateral Perspector
+zoom: A, B, C
+active: X_14:gold, [ A A' ]:gold, [ B B' ]:gold, [ C C' ]:gold
+head: Primary Construction
+row: Target Center | X_14 (2Nd Isogonic Center):gold
+row: Concurrence Lines | [ A A' ], [ B B' ], [ C C' ]:gold
+row: Derived Triangle | < B C A' >:muted
+just: ∵ CONCURRENCE | INWARD EQUILATERAL PERSPECTIVITY | Companion to Fermat point X_13; lies outside △ABC unless an angle of △ABC equals 60°.
+say: X fourteen is the Second Isogonic Center of triangle A B C: <pause> erect equilateral triangles inward across sides B C, C A, and A B, <pause> join their apexes to the opposite vertices A, B, and C,
+
+[screen: GOAL | svg: 01_primary.svg | weight: 1 | punchline: true]
+symbolic: X_14 = 2nd Isogonic Center • Inward Equilateral Perspector
+zoom: X_14, < B C A' >, A', < C A B' >, B', < A B C' >, C', X_14, A', B', C'
+thumb_zoom: A, B, C
+active: X_14:gold, < B C A' >:blue, A':blue, < C A B' >:blue, B':blue, < A B C' >:blue, C':blue
+head: Primary Construction
+row: Target Center | X_14 (2Nd Isogonic Center):gold
+row: Concurrence Lines | [ A A' ], [ B B' ], [ C C' ]:muted
+row: Derived Triangle | < B C A' >:blue
+just: ∵ DEFINITION | INWARD EQUILATERAL PERSPECTIVITY | Companion to Fermat point X_13; lies outside △ABC unless an angle of △ABC equals 60°.
+say: <pause> and those three lines concur at X fourteen.
+
+[bell:construction]
+
+[screen: ASSERT | svg: 02_coordinates.svg | weight: 1.15]
+symbolic: Trilinears csc(A - π/3) : csc(B - π/3) : csc(C - π/3)
+section: Trilinear Distances | α = csc(A − π/3):gold | β = csc(B − π/3):blue | γ = csc(C − π/3):green
+section: Barycentric Sub-Areas | u = a csc(A − π/3):gold | v = b csc(B − π/3):blue | w = c csc(C − π/3):green
+just: ∵ COORDINATES | -60° KIEPERT SIGNATURE | Because A < 60° on the (5, 6, 7) acute triangle, sin(A - π/3) < 0 and X_14 lies across sideline BC.
+say: Its trilinear coordinates replace plus pi over three with minus pi over three: <pause> cosecant of A minus pi over three, <pause> to cosecant of B minus pi over three, <pause> to cosecant of C minus pi over three.
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.5]
+symbolic: Lines {6, 13, 14} • {2, 14, 15} • {3, 14, 18} • {5, 14, 17}
+zoom: X_14, X_6, X_13
+active: X_14:gold, {6, 13, 14}:green
+head: Incident Central Lines
+row: Symmedian–Isogonic | {6, 13, 14}:green
+row: Circumcenter–2nd Napoleon | {3, 14, 18}:muted
+row: Centroid–1st Isodynamic | {2, 14, 15}:muted
+just: ∵ PRIMARY AXIS | DUAL ISOGONIC INCIDENCES | Every incidence of X_14 mirrors X_13 under the swap (13 ↔ 14, 15 ↔ 16, 17 ↔ 18).
+say: <pause> On the central lines layer, <pause> X fourteen joins X thirteen and the Symmedian point X six on line six, thirteen, fourteen,
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.55]
+symbolic: Lines {6, 13, 14} • {2, 14, 15} • {3, 14, 18} • {5, 14, 17}
+zoom: X_14, X_6, X_13, X_3, X_18, X_2, X_15
+active: X_14:gold, {6, 13, 14}:green, {3, 14, 18}:orange, {2, 14, 15}:teal
+head: Incident Central Lines
+row: Symmedian–Isogonic | {6, 13, 14}:green
+row: Circumcenter–2nd Napoleon | {3, 14, 18}:orange
+row: Centroid–1st Isodynamic | {2, 14, 15}:teal
+just: ∵ COLLINEARITIES | DUAL ISOGONIC INCIDENCES | Every incidence of X_14 mirrors X_13 under the swap (13 ↔ 14, 15 ↔ 16, 17 ↔ 18).
+say: <pause> and joins X two and X fifteen, <pause> as well as X three and X eighteen.
+
+[bell:insight]
+
+[screen: PROVE | svg: 04_relations.svg | weight: 1.05]
+symbolic: Isogonal Conjugate X_16 (2nd Isodynamic) • Inverse X_13
+zoom: X_14, X_16, X_13, X_18, X_3
+active: X_14:gold, X_16:blue, X_13:green, X_18:orange
+head: Functional Relations
+row: Isogonal Conjugate | X_16:blue
+row: Orthocentroidal Inverse | X_13:green
+row: Napoleon Collinear | X_18:orange
+just: ∵ RELATIONS | KIEPERT DIAMETER ENDPOINT | Segment X_13–X_14 is a diameter of the Lester circle; isotomic conjugate: X_299.
+say: Under functional relations, <pause> X fourteen is the isogonal conjugate of the Second Isodynamic Point X sixteen, <pause> the orthocentroidal-circle inverse of X thirteen,
+
+[screen: ∴ | svg: 05_four_triangles.svg | weight: 0.95]
+symbolic: Kimberling (6, 9, 13) Search = 4.373431772013
+head: Reference Triangles | a | b | c
+row: Acute Triangle | 5 | 6 | 7:gold
+row: Right Triangle | 3 | 4 | 5:blue
+row: Kepler Triangle | 1 | √φ | φ:green
+row: Kimberling Triangle | 6 | 9 | 13:purple
+just: ∵ INVARIANCE | KIMBERLING SEARCH VALUE • X_14 | Shortest directed trilinear distance on reference triangle (6, 9, 13): 4.373431772013.
+say: <pause> and the reflection of X thirteen across the Kiepert center X one hundred fifteen.

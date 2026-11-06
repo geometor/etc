@@ -41,7 +41,7 @@ X_2334
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X_2334 <X_2334>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3616
+   * :ref:`X_2334 <X_2334>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3616 <X_3616>`
    * :ref:`X_2334 <X_2334>` = :ref:`X_1191 <X_1191>`-cross conjugate of :ref:`X_56 <X_56>`
 
 Notes

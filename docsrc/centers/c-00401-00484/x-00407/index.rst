@@ -43,7 +43,7 @@ X_407
 
    * :ref:`X_407 <X_407>` = crosspoint of :ref:`X_4 <X_4>` and :ref:`X_225 <X_225>`
    * :ref:`X_407 <X_407>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`283 <X_283>`), (:ref:`21 <X_21>`, :ref:`411 <X_411>`)
-   * :ref:`X_407 <X_407>` = tangential-to-orthic :term:`similarity image <similarity-image>` of X_3145
+   * :ref:`X_407 <X_407>` = tangential-to-orthic :term:`similarity image <similarity-image>` of :ref:`X_3145 <X_3145>`
 
 Notes
 -----

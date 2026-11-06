@@ -26,7 +26,7 @@ def construct_x_01505(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1505 = EXSIMILICENTER OF MOSES AND 2nd LEMOINE CIRCLES on reference triangle ABC."""
-    X_1307 = point_from_barycentrics(model, A, B, C, 0.10979819, 1.2426467, -0.35244492, ID="X_1307", classes=["center"])
+    X_1307 = point_from_barycentrics(model, A, B, C, 1.0003192, 0.51896067, -0.51927991, ID="X_1307", classes=["center"])
     X_512 = eval_trilinear_point(model, A, B, C, 'a*(b**(2) - c**(2))', ID="X_512", classes=["center"])
     X_1505 = ceva_conjugate(model, A, B, C, X_1307, X_512, ID="X_1505", classes=["selected", "target"])
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])

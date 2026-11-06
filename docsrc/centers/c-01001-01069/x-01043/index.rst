@@ -42,7 +42,7 @@ X_1043
    :badge: 9 relations
 
    * :ref:`X_1043 <X_1043>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1042 <X_1042>`
-   * :ref:`X_1043 <X_1043>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3668
+   * :ref:`X_1043 <X_1043>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3668 <X_3668>`
    * :ref:`X_1043 <X_1043>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_657 <X_657>`\ \ :ref:`X_1021 <X_1021>`
    * :ref:`X_1043 <X_1043>` = :term:`crosspoint <crosspoint>` of :ref:`X_1 <X_1>` and :ref:`X_20 <X_20>` wrt both the excentral and :term:`anticomplementary triangles <anticomplementary-triangle>`
    * :ref:`X_1043 <X_1043>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_798 <X_798>`\ X_7180

@@ -29,7 +29,7 @@ X_845
 .. signature:: center
 
    | **Trilinears:** :math:`- x + y + z : :`, where :math:`x = x(A,B,C) = \sin^{2}(A/2) \sec(A/2)`
-   | **Search Value (6, 9, 13):** :math:`15.329029407711`
+   | **Search Value (6, 9, 13):** :math:`15.329029407710`
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines

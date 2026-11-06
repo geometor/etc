@@ -8,7 +8,7 @@ X_605
 
 .. enunciation::
 
-   :ref:`X_605 <X_605>` = :term:`isogonal conjugate <isogonal-conjugate>` of :term:`isotomic conjugate <isotomic-conjugate>` of X_3083
+   :ref:`X_605 <X_605>` = :term:`isogonal conjugate <isogonal-conjugate>` of :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3083 <X_3083>`
 
 .. figure:: x-00605.svg
    :alt: X_605 — INTERSECTION OF LINES X_371X_602 AND X_372X_601

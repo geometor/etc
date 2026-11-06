@@ -51,7 +51,7 @@ X_594
    * :ref:`X_594 <X_594>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 19
    * :ref:`X_594 <X_594>` = barycentric product of vertices of Gemini triangle 26
    * :ref:`X_594 <X_594>` = {:ref:`X_6 <X_6>`,\ :ref:`X_8 <X_8>`}-harmonic conjugate of X_17362
-   * :ref:`X_594 <X_594>` = {X_3661,X_3662}-harmonic conjugate of X_17228
+   * :ref:`X_594 <X_594>` = {:ref:`X_3661 <X_3661>`,\ :ref:`X_3662 <X_3662>`}-harmonic conjugate of X_17228
 
 Notes
 -----

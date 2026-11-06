@@ -169,6 +169,39 @@
             ],
             "guide": false
         },
+        "X_69": {
+            "sympy_obj": "Point2D(Float('0.41224490000000003', precision=53), Float('0.065440910000000005', precision=53))",
+            "ID": "X_69",
+            "classes": [
+                "center",
+                "incident"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "X_3410": {
+            "sympy_obj": "Point2D(Float('0.49880988999999998', precision=53), Float('0.24694927999999999', precision=53))",
+            "ID": "X_3410",
+            "classes": [
+                "center",
+                "incident"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "{ 69, 3410 }": {
+            "sympy_obj": "Line2D(Point2D(Float('0.41224490000000003', precision=53), Float('0.065440910000000005', precision=53)), Point2D(Float('0.49880988999999998', precision=53), Float('0.24694927999999999', precision=53)))",
+            "ID": "{ 69, 3410 }",
+            "classes": [
+                "central_line",
+                "incident"
+            ],
+            "parents": [
+                "X_69",
+                "X_3410"
+            ],
+            "guide": false
+        },
         "X_1369": {
             "sympy_obj": "Point2D(Float('0.37693916999999999', precision=53), Float('-0.0085876900000000003', precision=53))",
             "ID": "X_1369",

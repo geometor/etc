@@ -52,7 +52,7 @@ X_182
    :badge: 28 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, :ref:`983 <X_983>`}, {:ref:`2 <X_2>`, :ref:`98 <X_98>`}, {:ref:`3 <X_3>`, :ref:`6 <X_6>`}, {:ref:`4 <X_4>`, :ref:`83 <X_83>`}, {:ref:`5 <X_5>`, :ref:`206 <X_206>`}, {:ref:`10 <X_10>`, :ref:`1678 <X_1678>`}, {:ref:`22 <X_22>`, :ref:`51 <X_51>`}, {:ref:`24 <X_24>`, :ref:`1843 <X_1843>`}, {:ref:`25 <X_25>`, 3066}, {:ref:`30 <X_30>`, :ref:`597 <X_597>`}, {:ref:`36 <X_36>`, :ref:`1469 <X_1469>`}, {:ref:`40 <X_40>`, :ref:`1700 <X_1700>`}, {:ref:`54 <X_54>`, :ref:`69 <X_69>`}, {:ref:`55 <X_55>`, :ref:`613 <X_613>`}, {:ref:`56 <X_56>`, :ref:`611 <X_611>`}, {:ref:`111 <X_111>`, :ref:`353 <X_353>`}, {:ref:`140 <X_140>`, :ref:`141 <X_141>`}, {:ref:`171 <X_171>`, :ref:`1397 <X_1397>`}, {:ref:`373 <X_373>`, :ref:`1495 <X_1495>`}, {:ref:`474 <X_474>`, :ref:`1437 <X_1437>`}, {:ref:`517 <X_517>`, :ref:`1386 <X_1386>`}, {:ref:`518 <X_518>`, :ref:`1385 <X_1385>`}, {:ref:`524 <X_524>`, :ref:`549 <X_549>`}, {:ref:`691 <X_691>`, :ref:`2698 <X_2698>`}, {:ref:`692 <X_692>`, :ref:`1001 <X_1001>`}, {:ref:`727 <X_727>`, :ref:`1293 <X_1293>`}, {:ref:`729 <X_729>`, :ref:`1296 <X_1296>`}, {:ref:`952 <X_952>`, :ref:`996 <X_996>`}
+   {:ref:`1 <X_1>`, :ref:`983 <X_983>`}, {:ref:`2 <X_2>`, :ref:`98 <X_98>`}, {:ref:`3 <X_3>`, :ref:`6 <X_6>`}, {:ref:`4 <X_4>`, :ref:`83 <X_83>`}, {:ref:`5 <X_5>`, :ref:`206 <X_206>`}, {:ref:`10 <X_10>`, :ref:`1678 <X_1678>`}, {:ref:`22 <X_22>`, :ref:`51 <X_51>`}, {:ref:`24 <X_24>`, :ref:`1843 <X_1843>`}, {:ref:`25 <X_25>`, :ref:`3066 <X_3066>`}, {:ref:`30 <X_30>`, :ref:`597 <X_597>`}, {:ref:`36 <X_36>`, :ref:`1469 <X_1469>`}, {:ref:`40 <X_40>`, :ref:`1700 <X_1700>`}, {:ref:`54 <X_54>`, :ref:`69 <X_69>`}, {:ref:`55 <X_55>`, :ref:`613 <X_613>`}, {:ref:`56 <X_56>`, :ref:`611 <X_611>`}, {:ref:`111 <X_111>`, :ref:`353 <X_353>`}, {:ref:`140 <X_140>`, :ref:`141 <X_141>`}, {:ref:`171 <X_171>`, :ref:`1397 <X_1397>`}, {:ref:`373 <X_373>`, :ref:`1495 <X_1495>`}, {:ref:`474 <X_474>`, :ref:`1437 <X_1437>`}, {:ref:`517 <X_517>`, :ref:`1386 <X_1386>`}, {:ref:`518 <X_518>`, :ref:`1385 <X_1385>`}, {:ref:`524 <X_524>`, :ref:`549 <X_549>`}, {:ref:`691 <X_691>`, :ref:`2698 <X_2698>`}, {:ref:`692 <X_692>`, :ref:`1001 <X_1001>`}, {:ref:`727 <X_727>`, :ref:`1293 <X_1293>`}, {:ref:`729 <X_729>`, :ref:`1296 <X_1296>`}, {:ref:`952 <X_952>`, :ref:`996 <X_996>`}
 
 .. collapse:: Functional Relations
    :badge: 41 relations
@@ -73,8 +73,8 @@ X_182
    * :ref:`X_182 <X_182>` = :term:`vertex conjugate <vertex-conjugate>` of PU(191)
    * :ref:`X_182 <X_182>` = :ref:`X_5 <X_5>`-of-obverse-triangle-of-:ref:`X_69 <X_69>`
    * :ref:`X_182 <X_182>` = inverse-in-circumcircle of :ref:`X_2080 <X_2080>`
-   * :ref:`X_182 <X_182>` = inverse-in-2nd-Brocard-circle of X_3095
-   * :ref:`X_182 <X_182>` = inverse-in-circle-{X_3102,X_3103,PU(1)}} of X_32452
+   * :ref:`X_182 <X_182>` = inverse-in-2nd-Brocard-circle of :ref:`X_3095 <X_3095>`
+   * :ref:`X_182 <X_182>` = inverse-in-circle-{:ref:`X_3102 <X_3102>`,\ :ref:`X_3103 <X_3103>`,PU(1)}} of X_32452
    * :ref:`X_182 <X_182>` = exsimilicenter of circle centered at :ref:`X_371 <X_371>` through :ref:`X_1151 <X_1151>` and circle centered at :ref:`X_1152 <X_1152>` through :ref:`X_372 <X_372>`
    * :ref:`X_182 <X_182>` = exsimilicenter of circle centered at :ref:`X_372 <X_372>` through :ref:`X_1152 <X_1152>` and circle centered at :ref:`X_1151 <X_1151>` through :ref:`X_371 <X_371>`
    * :ref:`X_182 <X_182>` = :term:`radical trace <radical-trace>` of circles with diameters :ref:`X_371 <X_371>`\ \ :ref:`X_372 <X_372>` and :ref:`X_1151 <X_1151>`\ \ :ref:`X_1152 <X_1152>`

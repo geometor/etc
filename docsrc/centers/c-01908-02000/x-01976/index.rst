@@ -46,7 +46,7 @@ X_1976
    * :ref:`X_1976 <X_1976>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`1691 <X_1691>`), (:ref:`232 <X_232>`, :ref:`1968 <X_1968>`)
    * :ref:`X_1976 <X_1976>` = crosssum of :ref:`X_2 <X_2>` and :ref:`X_147 <X_147>`
    * :ref:`X_1976 <X_1976>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_32 <X_32>`\ \ :ref:`X_512 <X_512>`
-   * :ref:`X_1976 <X_1976>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_2799 <X_2799>`\ X_3569
+   * :ref:`X_1976 <X_1976>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_2799 <X_2799>`\ \ :ref:`X_3569 <X_3569>`
    * :ref:`X_1976 <X_1976>` = barycentric product :ref:`X_6 <X_6>`\ \*\ :ref:`X_98 <X_98>`
    * :ref:`X_1976 <X_1976>` = barycentric product of circumcircle intercepts of line :ref:`X_6 <X_6>`\ \ :ref:`X_523 <X_523>`
 

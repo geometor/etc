@@ -1,0 +1,216 @@
+[
+  {
+    "id": "act_1_definition",
+    "title": "T_5 CIRCLE INVERSION — Geometric Definition",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_5",
+        "short_code": "T_5",
+        "g_id": "CIRCLE INVERSION",
+        "folio": "Kimberling ETC • Transformations & Conjugacies",
+        "enunciation": "Radial mapping across a reference circle of center O and radius R sending point P to P' on ray OP such that OP · OP' = R².",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.0,
+        "step_num": 1,
+        "step_kind": "CONSTRUCT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-05-circle-inversion/svgs/01_primary.svg",
+        "symbolic": "OP · OP' = R²  •  X_15 ↔ X_16 in Circumcircle",
+        "clause_html": "<span class=\"clause-line\"><b>Circumcircle Inversion:</b> Radial inversion across the <span style=\"color:#94a3b8;font-family:'JetBrains Mono',monospace;font-weight:600;\">circumcircle</span> centered at <span class=\"g-tok\">X_3</span> exchanges the 1st Isodynamic point <span class=\"g-tok\">X_15</span> and 2nd Isodynamic point <span class=\"g-tok\">X_16</span>.</span>",
+        "just_tag": "∵ DEFINITION",
+        "just_id": "ORTHOGONAL CIRCLES",
+        "just_title": "Any circle passing through a pair of inverse points is strictly orthogonal to the circle of inversion.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_15",
+          "X_3",
+          "X_6"
+        ],
+        "coincide_ids": [],
+        "equal_ids": []
+      },
+      {
+        "prop_id": "ETC • T_5",
+        "short_code": "T_5",
+        "g_id": "CIRCLE INVERSION",
+        "folio": "Kimberling ETC • Transformations & Conjugacies",
+        "enunciation": "Radial mapping across a reference circle of center O and radius R sending point P to P' on ray OP such that OP · OP' = R².",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "is_punchline": true,
+        "weight": 1.0,
+        "step_num": 2,
+        "step_kind": "GOAL",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-05-circle-inversion/svgs/01_primary.svg",
+        "symbolic": "OP · OP' = R²  •  X_15 ↔ X_16 in Circumcircle",
+        "clause_html": "<span class=\"clause-line\"><b>Circumcircle Inversion:</b> Radial inversion across the <span class=\"coincide-tok\">circumcircle</span> centered at <span class=\"g-tok\">X_3</span> exchanges the 1st Isodynamic point <span class=\"g-tok\">X_15</span> and 2nd Isodynamic point <span class=\"g-tok\">X_16</span>.</span>",
+        "just_tag": "∵ STRUCTURE",
+        "just_id": "ORTHOGONAL CIRCLES",
+        "just_title": "Any circle passing through a pair of inverse points is strictly orthogonal to the circle of inversion.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_15",
+          "X_3",
+          "X_6"
+        ],
+        "coincide_ids": [
+          "incircle"
+        ],
+        "equal_ids": [
+          "circumcircle"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "act_2_algebra_and_lines",
+    "title": "T_5 Algebraic Action & Central Lines",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_5",
+        "short_code": "T_5",
+        "g_id": "CIRCLE INVERSION",
+        "folio": "Kimberling ETC • Transformations & Conjugacies",
+        "enunciation": "Radial mapping across a reference circle of center O and radius R sending point P to P' on ray OP such that OP · OP' = R².",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.15,
+        "step_num": 3,
+        "step_kind": "ASSERT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-05-circle-inversion/svgs/02_coordinates.svg",
+        "symbolic": "Radial Product |X_3 X_15| · |X_3 X_16| = R²",
+        "clause_html": "<span class=\"clause-line\"><b>Algebraic Formula:</b> Inversion of <span class=\"g-tok\">P</span> in the circumcircle reflects along ray from <span class=\"coincide-tok\">X_3</span> with radial product <span class=\"eq-tok\">OP · OP' = R²</span>.</span>",
+        "just_tag": "∵ COORDINATE LAW",
+        "just_id": "CONFORMAL INVOLUTION",
+        "just_title": "Circle inversion preserves angles between curves and maps generalized circles to generalized circles."
+      },
+      {
+        "prop_id": "ETC • T_5",
+        "short_code": "T_5",
+        "g_id": "CIRCLE INVERSION",
+        "folio": "Kimberling ETC • Transformations & Conjugacies",
+        "enunciation": "Radial mapping across a reference circle of center O and radius R sending point P to P' on ray OP such that OP · OP' = R².",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.5,
+        "step_num": 4,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-05-circle-inversion/svgs/03_central_lines.svg",
+        "symbolic": "Brocard Axis {3, 6, 15, 16} & Euler Line {3, 4}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Central Line Incidences</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Collection 1 Inversion Axes</span><span class=\"g-tok\">{3, 6, 15, 16}</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Carries Inverse While</span><span class=\"muted-tok\">{3, 4}</span></div></div></div>",
+        "just_tag": "∵ PRIMARY AXIS",
+        "just_id": "RADIAL AXES THROUGH X_3",
+        "just_title": "Every line through the circumcenter X_3 is invariant as a set under circumcircle inversion.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_15",
+          "{3, 6, 15, 16}"
+        ],
+        "coincide_ids": [],
+        "equal_ids": []
+      },
+      {
+        "prop_id": "ETC • T_5",
+        "short_code": "T_5",
+        "g_id": "CIRCLE INVERSION",
+        "folio": "Kimberling ETC • Transformations & Conjugacies",
+        "enunciation": "Radial mapping across a reference circle of center O and radius R sending point P to P' on ray OP such that OP · OP' = R².",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.55,
+        "step_num": 5,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-05-circle-inversion/svgs/03_central_lines.svg",
+        "symbolic": "Brocard Axis {3, 6, 15, 16} & Euler Line {3, 4}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Central Line Incidences</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Collection 1 Inversion Axes</span><span class=\"g-tok\">{3, 6, 15, 16}</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Carries Inverse While</span><span class=\"coincide-tok\">{3, 4}</span></div></div></div>",
+        "just_tag": "∵ COLLINEARITIES",
+        "just_id": "RADIAL AXES THROUGH X_3",
+        "just_title": "Every line through the circumcenter X_3 is invariant as a set under circumcircle inversion.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_15",
+          "{3, 6, 15, 16}"
+        ],
+        "coincide_ids": [
+          "{3, 4}"
+        ],
+        "equal_ids": []
+      }
+    ]
+  },
+  {
+    "id": "act_3_collection_network",
+    "title": "T_5 Collection 1 Network & Invariance",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_5",
+        "short_code": "T_5",
+        "g_id": "CIRCLE INVERSION",
+        "folio": "Kimberling ETC • Transformations & Conjugacies",
+        "enunciation": "Radial mapping across a reference circle of center O and radius R sending point P to P' on ray OP such that OP · OP' = R².",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.1,
+        "step_num": 6,
+        "step_kind": "PROVE",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-05-circle-inversion/svgs/04_relations.svg",
+        "symbolic": "X_15 ↔ X_16 on Brocard Axis {3, 6, 15, 16}",
+        "clause_html": "<span class=\"clause-line\"><b>Inverse Partners:</b> On the Brocard axis through <span class=\"coincide-tok\">X_3</span> and <span class=\"eq-tok\">X_6</span>, <span class=\"g-tok\">X_15</span> and <span class=\"g-tok\">X_16</span> are exact circumcircle inverses.</span>",
+        "just_tag": "∵ COLLECTION 1",
+        "just_id": "INVERSION CATALOG",
+        "just_title": "Incenter X_1 inverts in the circumcircle to X_36; Orthocenter X_4 inverts to X_186.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_15",
+          "{ 3, 15 }",
+          "X_16"
+        ],
+        "coincide_ids": [
+          "X_3"
+        ],
+        "equal_ids": [
+          "X_6"
+        ]
+      },
+      {
+        "prop_id": "ETC • T_5",
+        "short_code": "T_5",
+        "g_id": "CIRCLE INVERSION",
+        "folio": "Kimberling ETC • Transformations & Conjugacies",
+        "enunciation": "Radial mapping across a reference circle of center O and radius R sending point P to P' on ray OP such that OP · OP' = R².",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.95,
+        "step_num": 7,
+        "step_kind": "∴",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-05-circle-inversion/svgs/05_four_triangles.svg",
+        "symbolic": "Invariance across Acute (5,6,7) • Right (3,4,5) • Kepler (1,√φ,φ) • Kimberling (6,9,13)",
+        "clause_html": "<span class=\"clause-line\"><b>Reference Triangle Invariance:</b> Across all four reference triangles, <b>Circle Inversion</b> preserves its exact projective incidences and harmonic ratios.</span>",
+        "just_tag": "∵ INVARIANCE",
+        "just_id": "FOUR-TRIANGLE VERIFICATION",
+        "just_title": "Verified across Collection 1 centers X_3, X_6, X_15, X_16, X_1, X_4."
+      }
+    ]
+  }
+]

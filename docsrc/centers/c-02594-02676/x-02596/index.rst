@@ -45,14 +45,14 @@ X_2596
    * :ref:`X_2596 <X_2596>` = :ref:`X_2603 <X_2603>`-Ceva conjugate of :ref:`X_2595 <X_2595>`
    * :ref:`X_2596 <X_2596>` = :term:`crosssum <crosssum>` of :ref:`X_2601 <X_2601>` and :ref:`X_2602 <X_2602>`
    * :ref:`X_2596 <X_2596>` = {:ref:`X_54 <X_54>`,\ :ref:`X_1087 <X_1087>`}-harmonic conjugate of :ref:`X_2595 <X_2595>`
-   * :ref:`X_2596 <X_2596>` = perspector of conic {{:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(69),\ :ref:`X_655 <X_655>`,X_3615}}
+   * :ref:`X_2596 <X_2596>` = perspector of conic {{:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,PU(69),\ :ref:`X_655 <X_655>`,\ :ref:`X_3615 <X_3615>`}}
 
 Notes
 -----
 
 .. container:: note-item
 
-   Let :g:`L <L>` = :ref:`X_1 <X_1>`\ \ :ref:`X_5 <X_5>`, the :term:`trilinear polar <trilinear-polar>` of :ref:`X_655 <X_655>`. Let M = :ref:`X_654 <X_654>`\ \ :ref:`X_1012 <X_1012>`, the trilinear polar of the :term:`cevapoint <cevapoint>` of :ref:`X_1 <X_1>` and :ref:`X_5 <X_5>`. Let V = X_3615 = :ref:`X_1 <X_1>`-Ceva conjugate of :ref:`X_5 <X_5>` and W = X_3460 = :ref:`X_5 <X_5>`-Ceva conjugate of :ref:`X_1 <X_1>`. The lines :g:`L <L>`, M, an :g:`VW <[ V W ]>` concur in :ref:`X_2596 <X_2596>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
+   Let :g:`L <L>` = :ref:`X_1 <X_1>`\ \ :ref:`X_5 <X_5>`, the :term:`trilinear polar <trilinear-polar>` of :ref:`X_655 <X_655>`. Let M = :ref:`X_654 <X_654>`\ \ :ref:`X_1012 <X_1012>`, the trilinear polar of the :term:`cevapoint <cevapoint>` of :ref:`X_1 <X_1>` and :ref:`X_5 <X_5>`. Let V = :ref:`X_3615 <X_3615>` = :ref:`X_1 <X_1>`-Ceva conjugate of :ref:`X_5 <X_5>` and W = :ref:`X_3460 <X_3460>` = :ref:`X_5 <X_5>`-Ceva conjugate of :ref:`X_1 <X_1>`. The lines :g:`L <L>`, M, an :g:`VW <[ V W ]>` concur in :ref:`X_2596 <X_2596>`. (:person:`Randy Hutson <randy-hutson>`, December 26, 2015)
 
 .. toctree::
    :hidden:

@@ -52,7 +52,7 @@ X_83
    * :ref:`X_83 <X_83>` = cevapoint of :ref:`X_2 <X_2>` and :ref:`X_6 <X_6>`
    * :ref:`X_83 <X_83>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`308 <X_308>`), (:ref:`6 <X_6>`, :ref:`251 <X_251>`), (:ref:`512 <X_512>`, :ref:`99 <X_99>`)
    * :ref:`X_83 <X_83>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_23 <X_23>`\ \ :ref:`X_385 <X_385>` (line is the polar of :ref:`X_2 <X_2>` wrt the circumcircle, and also the :term:`anticomplement <anticomplement>` of the de Longchamps line, and also the polar of :ref:`X_5 <X_5>` wrt {circumcircle, nine-point circle}-inverter)
-   * :ref:`X_83 <X_83>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_688 <X_688>`\ X_3005
+   * :ref:`X_83 <X_83>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_688 <X_688>`\ \ :ref:`X_3005 <X_3005>`
    * :ref:`X_83 <X_83>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_427 <X_427>`
    * :ref:`X_83 <X_83>` = :ref:`X_48 <X_48>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X_427 <X_427>`
    * :ref:`X_83 <X_83>` = perspector of :g:`ABC << A B C >>` and :term:`medial triangle <medial-triangle>` of :term:`1st Brocard triangle <1st-brocard-triangle>`

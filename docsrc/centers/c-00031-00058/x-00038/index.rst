@@ -54,7 +54,7 @@ X_38
    :badge: 12 relations
 
    * :ref:`X_38 <X_38>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_82 <X_82>`
-   * :ref:`X_38 <X_38>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3112
+   * :ref:`X_38 <X_38>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3112 <X_3112>`
    * :ref:`X_38 <X_38>` = :term:`anticomplement <anticomplement>` of :ref:`X_1215 <X_1215>`
    * :ref:`X_38 <X_38>` = crosspoint of :ref:`X_1 <X_1>` and :ref:`X_75 <X_75>`
    * :ref:`X_38 <X_38>` = :term:`crosssum <crosssum>` of :ref:`X_1 <X_1>` and :ref:`X_31 <X_31>`

@@ -52,7 +52,7 @@ X_1152
    * :ref:`X_1152 <X_1152>` = inverse-in-Brocard circle of :ref:`X_1151 <X_1151>`
    * :ref:`X_1152 <X_1152>` = :ref:`X_494 <X_494>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_6 <X_6>`
    * :ref:`X_1152 <X_1152>` = :term:`crosspoint <crosspoint>` of :ref:`X_249 <X_249>` and :ref:`X_1307 <X_1307>`
-   * :ref:`X_1152 <X_1152>` = {X_i,X_j}-harmonic conjugate of X_k for these (i,j,k): (:ref:`3 <X_3>`, :ref:`372 <X_372>`, :ref:`6 <X_6>`), (:ref:`3 <X_3>`, 3312, :ref:`371 <X_371>`), (:ref:`371 <X_371>`, :ref:`372 <X_372>`, 3312), (:ref:`371 <X_371>`, 3312, :ref:`6 <X_6>`)
+   * :ref:`X_1152 <X_1152>` = {X_i,X_j}-harmonic conjugate of X_k for these (i,j,k): (:ref:`3 <X_3>`, :ref:`372 <X_372>`, :ref:`6 <X_6>`), (:ref:`3 <X_3>`, :ref:`3312 <X_3312>`, :ref:`371 <X_371>`), (:ref:`371 <X_371>`, :ref:`372 <X_372>`, :ref:`3312 <X_3312>`), (:ref:`371 <X_371>`, :ref:`3312 <X_3312>`, :ref:`6 <X_6>`)
    * :ref:`X_1152 <X_1152>` = exsimilicenter of circumcircle and Lucas(-1) inner circle; the insimilicenter is X_6398
    * :ref:`X_1152 <X_1152>` = outer Soddy center (:ref:`X_175 <X_175>`) of :term:`tangential triangle <tangential-triangle>`, if :g:`ABC << A B C >>` is acute
    * :ref:`X_1152 <X_1152>` = :ref:`X_1 <X_1>`-of-Lucas(-1)-central-triangle, if the Lucas(-1) circles are all externally tangent; otherwise, :ref:`X_1152 <X_1152>` is an excenter of the Lucas(-1) :term:`central triangle <central-triangle>`

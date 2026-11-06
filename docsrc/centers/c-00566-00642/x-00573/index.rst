@@ -29,7 +29,7 @@ X_573
 .. signature:: center
 
    | **Trilinears:** :math:`\cos(A + U) : :`, where cot :math:`U = \cot(A/2) \cot(B/2) \cot(C/2)` (Joe Goggins, 11/26/08)
-   | **Search Value (6, 9, 13):** :math:`2.115179805171`
+   | **Search Value (6, 9, 13):** :math:`10.107230280042`
 
 .. collapse:: Alternate Coordinates
    :badge: 3 forms

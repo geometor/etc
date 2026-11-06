@@ -24,7 +24,7 @@ X_2986
    :class: note
 
    * **Central Lines:** :g:`{4, 110} <{ 4, 110 }>`, :g:`{94, 323} <{ 94, 323 }>`
-   * **Related Centers:** :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_110 <X_110>` (:ref:`FOCUS OF KIEPERT PARABOLA <X_110>`), :g:`X_94 <X_94>` (:ref:`ISOGONAL CONJUGATE OF X(50) <X_94>`), :g:`X_323 <X_323>` (:ref:`ISOTOMIC CONJUGATE OF X(94) <X_323>`)
+   * **Related Centers:** :g:`X_3003 <X_3003>` (:ref:`(BROCARD AXIS)∩(ORTHIC AXIS) <X_3003>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_110 <X_110>` (:ref:`FOCUS OF KIEPERT PARABOLA <X_110>`), :g:`X_94 <X_94>` (:ref:`ISOGONAL CONJUGATE OF X(50) <X_94>`), :g:`X_323 <X_323>` (:ref:`ISOTOMIC CONJUGATE OF X(94) <X_323>`)
 
 .. signature:: center
 
@@ -45,8 +45,8 @@ X_2986
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X_2986 <X_2986>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3003
-   * :ref:`X_2986 <X_2986>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3580
+   * :ref:`X_2986 <X_2986>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3003 <X_3003>`
+   * :ref:`X_2986 <X_2986>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3580 <X_3580>`
    * :ref:`X_2986 <X_2986>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`323 <X_323>`), (:ref:`6 <X_6>`, :ref:`30 <X_30>`)
    * :ref:`X_2986 <X_2986>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`265 <X_265>`, :ref:`1494 <X_1494>`), (:ref:`529 <X_529>`, :ref:`99 <X_99>`), (:ref:`686 <X_686>`, :ref:`925 <X_925>`), (:ref:`2072 <X_2072>`, :ref:`264 <X_264>`), (:ref:`2433 <X_2433>`, :ref:`476 <X_476>`)
    * :ref:`X_2986 <X_2986>` = trilinear pole of line :ref:`X_3 <X_3>`\ \ :ref:`X_523 <X_523>` (the line of the Ehrmann cross-triangle)

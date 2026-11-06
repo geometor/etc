@@ -39,14 +39,14 @@ X_526
    :badge: 10 lines
    :class: line-catalog
 
-   {:ref:`6 <X_6>`, :ref:`2492 <X_2492>`}, {:ref:`30 <X_30>`, :ref:`511 <X_511>`}, {:ref:`67 <X_67>`, :ref:`879 <X_879>`}, {:ref:`110 <X_110>`, :ref:`351 <X_351>`}, {:ref:`125 <X_125>`, 3134}, {:ref:`686 <X_686>`, :ref:`2433 <X_2433>`}, {:ref:`895 <X_895>`, :ref:`2987 <X_2987>`}, {:ref:`1177 <X_1177>`, :ref:`2435 <X_2435>`}, {:ref:`1769 <X_1769>`, :ref:`2650 <X_2650>`}, {:ref:`2611 <X_2611>`, 3024}
+   {:ref:`6 <X_6>`, :ref:`2492 <X_2492>`}, {:ref:`30 <X_30>`, :ref:`511 <X_511>`}, {:ref:`67 <X_67>`, :ref:`879 <X_879>`}, {:ref:`110 <X_110>`, :ref:`351 <X_351>`}, {:ref:`125 <X_125>`, :ref:`3134 <X_3134>`}, {:ref:`686 <X_686>`, :ref:`2433 <X_2433>`}, {:ref:`895 <X_895>`, :ref:`2987 <X_2987>`}, {:ref:`1177 <X_1177>`, :ref:`2435 <X_2435>`}, {:ref:`1769 <X_1769>`, :ref:`2650 <X_2650>`}, {:ref:`2611 <X_2611>`, :ref:`3024 <X_3024>`}
 
 .. collapse:: Functional Relations
    :badge: 20 relations
 
    * :ref:`X_526 <X_526>` = isogonal conjugate of :ref:`X_476 <X_476>`
    * :ref:`X_526 <X_526>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_35139
-   * :ref:`X_526 <X_526>` = :term:`complementary conjugate <complementary-conjugate>` of X_3258
+   * :ref:`X_526 <X_526>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X_3258 <X_3258>`
    * :ref:`X_526 <X_526>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of X_18334
    * :ref:`X_526 <X_526>` = :ref:`X_110 <X_110>`-Ceva conjugate of :ref:`X_1511 <X_1511>`
    * :ref:`X_526 <X_526>` = :term:`crosspoint <crosspoint>` of :ref:`X_74 <X_74>` and :ref:`X_110 <X_110>`

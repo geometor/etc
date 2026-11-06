@@ -24,7 +24,7 @@ X_2888
    :class: note
 
    * **Central Lines:** :g:`{2, 54} <{ 2, 54 }>`, :g:`{4, 93} <{ 4, 93 }>`
-   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_54 <X_54>` (:ref:`KOSNITA POINT <X_54>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_93 <X_93>` (:ref:`ISOGONAL CONJUGATE OF X(49) <X_93>`)
+   * **Related Centers:** :g:`X_3432 <X_3432>` (:ref:`-VERTEX CONJUGATE OF X(5) <X_3432>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_54 <X_54>` (:ref:`KOSNITA POINT <X_54>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_93 <X_93>` (:ref:`ISOGONAL CONJUGATE OF X(49) <X_93>`)
 
 .. signature:: center
 
@@ -42,7 +42,7 @@ X_2888
    :badge: 7 relations
 
    * :ref:`X_2888 <X_2888>` = reflection of X_i in X_j for these (i,j): (:ref:`54 <X_54>`, :ref:`1209 <X_1209>`), (:ref:`195 <X_195>`, :ref:`5 <X_5>`)
-   * :ref:`X_2888 <X_2888>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3432
+   * :ref:`X_2888 <X_2888>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3432 <X_3432>`
    * :ref:`X_2888 <X_2888>` = anticomplement of :ref:`X_54 <X_54>`
    * :ref:`X_2888 <X_2888>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X_3 <X_3>`
    * :ref:`X_2888 <X_2888>` = :ref:`X_311 <X_311>`-Ceva conjuagte of :ref:`X_2 <X_2>`

@@ -57,12 +57,12 @@ X_1100
    * :ref:`X_1100 <X_1100>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_484 <X_484>`\ \ :ref:`X_513 <X_513>`
    * :ref:`X_1100 <X_1100>` = bicentric sum of PU(31)
    * :ref:`X_1100 <X_1100>` = midpoint of PU(31)
-   * :ref:`X_1100 <X_1100>` = reflection of X_3775 in :ref:`X_1125 <X_1125>`
+   * :ref:`X_1100 <X_1100>` = reflection of :ref:`X_3775 <X_3775>` in :ref:`X_1125 <X_1125>`
    * :ref:`X_1100 <X_1100>` = :ref:`X_1 <X_1>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_1962 <X_1962>`
    * :ref:`X_1100 <X_1100>` = :ref:`X_1962 <X_1962>`-Ceva conjugate of :ref:`X_1125 <X_1125>` wrt :term:`incentral triangle <incentral-triangle>`
    * :ref:`X_1100 <X_1100>` = perspector wrt incentral triangle of bicevian conic of :ref:`X_1 <X_1>` and :ref:`X_2 <X_2>`
    * :ref:`X_1100 <X_1100>` = polar conjugate of isogonal conjugate X_23201
-   * :ref:`X_1100 <X_1100>` = polar conjugate of isotomic conjugate of X_3916
+   * :ref:`X_1100 <X_1100>` = polar conjugate of isotomic conjugate of :ref:`X_3916 <X_3916>`
 
 Notes
 -----

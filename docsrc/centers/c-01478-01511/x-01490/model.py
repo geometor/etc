@@ -17,7 +17,6 @@ from geometor.etc.ops import (
     mittenpunkt_of,
     orthocenter_of,
     promote_point_to_top,
-    reflection_in_point,
 )
 from geometor.etc.render import write_center_svg
 
@@ -26,12 +25,11 @@ def construct_x_01490(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1490 = X_1X_4∩X_3X_9 on reference triangle ABC."""
-    X_84 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C) - cos(A) - 1)', ID="X_84", classes=["center"])
-    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
-    X_1490 = reflection_in_point(model, X_84, X_3, ID="X_1490", classes=["selected", "target"], guide=False)
+    X_1490 = eval_trilinear_point(model, A, B, C, '1 + sec(A) - sec(B) - sec(C)', ID="X_1490", classes=["selected", "target"])
     X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
     X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
     central_line(model, X_1, X_4, 1, 4, incident=True)
+    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
     X_9 = mittenpunkt_of(model, A, B, C, ID="X_9", classes=["center", "incident"])
     central_line(model, X_3, X_9, 3, 9, incident=True)
     X_20 = eval_trilinear_point(model, A, B, C, 'cos(A) - cos(B)*cos(C)', ID="X_20", classes=["center", "incident"])

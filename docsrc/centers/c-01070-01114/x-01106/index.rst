@@ -48,7 +48,7 @@ X_1106
 
    * :ref:`X_1106 <X_1106>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_341 <X_341>`
    * :ref:`X_1106 <X_1106>` = :term:`complement <complement>` of :term:`anticomplementary conjugate <anticomplementary-conjugate>` of X_17480
-   * :ref:`X_1106 <X_1106>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of X_3692
+   * :ref:`X_1106 <X_1106>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_3692 <X_3692>`
    * :ref:`X_1106 <X_1106>` = trilinear product of vertices of tangential mid-arc triangle
 
 .. toctree::

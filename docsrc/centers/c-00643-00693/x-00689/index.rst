@@ -45,7 +45,7 @@ X_689
    :badge: 6 relations
 
    * :ref:`X_689 <X_689>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_688 <X_688>`
-   * :ref:`X_689 <X_689>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3005
+   * :ref:`X_689 <X_689>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3005 <X_3005>`
    * :ref:`X_689 <X_689>` = :term:`anticomplement <anticomplement>` of X_35971
    * :ref:`X_689 <X_689>` = Ψ(:ref:`X_32 <X_32>`, :ref:`X_2 <X_2>`)
    * :ref:`X_689 <X_689>` = Ψ(:ref:`X_39 <X_39>`, :ref:`X_2 <X_2>`)

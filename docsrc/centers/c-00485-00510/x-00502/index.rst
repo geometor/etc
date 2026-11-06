@@ -23,8 +23,8 @@ X_502
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{10, 191} <{ 10, 191 }>`
-   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_10 <X_10>` (:ref:`SPIEKER CENTER <X_10>`), :g:`X_191 <X_191>` (:ref:`-CEVA CONJUGATE OF X(1) <X_191>`)
+   * **Central Lines:** :g:`{10, 191} <{ 10, 191 }>`, :g:`{594, 3678} <{ 594, 3678 }>`
+   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_10 <X_10>` (:ref:`SPIEKER CENTER <X_10>`), :g:`X_191 <X_191>` (:ref:`-CEVA CONJUGATE OF X(1) <X_191>`), :g:`X_594 <X_594>` (:ref:`ISOGONAL CONJUGATE OF X(593) <X_594>`), :g:`X_3678 <X_3678>` (:ref:`com(EXTOUCH TRIANGLE) <X_3678>`)
 
 .. signature:: center
 
@@ -36,7 +36,7 @@ X_502
    :badge: 7 lines
    :class: line-catalog
 
-   {:ref:`10 <X_10>`, :ref:`191 <X_191>`}, {:ref:`12 <X_12>`, 14873}, {:ref:`42 <X_42>`, 14874}, {:ref:`58 <X_58>`, 21043}, {:ref:`313 <X_313>`, 17791}, {:ref:`594 <X_594>`, 3678}, {:ref:`1089 <X_1089>`, 3969}
+   {:ref:`10 <X_10>`, :ref:`191 <X_191>`}, {:ref:`12 <X_12>`, 14873}, {:ref:`42 <X_42>`, 14874}, {:ref:`58 <X_58>`, 21043}, {:ref:`313 <X_313>`, 17791}, {:ref:`594 <X_594>`, :ref:`3678 <X_3678>`}, {:ref:`1089 <X_1089>`, :ref:`3969 <X_3969>`}
 
 .. collapse:: Functional Relations
    :badge: 2 relations

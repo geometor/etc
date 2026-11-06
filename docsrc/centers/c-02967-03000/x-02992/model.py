@@ -13,8 +13,7 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
-    isotomic_conjugate,
-    point_from_barycentrics,
+    intersect_lines,
     promote_point_to_top,
     symmedian_point_of,
 )
@@ -25,14 +24,13 @@ def construct_x_02992(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_2992 = CD(X_13) on reference triangle ABC."""
-    X_621 = point_from_barycentrics(model, A, B, C, 0.34668048, 0.27954046, 0.37377907, ID="X_621", classes=["center"])
-    X_2992 = isotomic_conjugate(model, A, B, C, X_621, ID="X_2992", classes=["selected", "target"])
-    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
-    X_299 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*sin(A -  pi  /3)', ID="X_299", classes=["center", "incident"])
-    central_line(model, X_3, X_299, 3, 299, incident=True)
-    X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
-    X_471 = eval_trilinear_point(model, A, B, C, 'sin(A -  pi  /3)*csc(2*A)', ID="X_471", classes=["center", "incident"])
-    central_line(model, X_6, X_471, 6, 471, incident=True)
+    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
+    X_299 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*sin(A -  pi  /3)', ID="X_299", classes=["center"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center"])
+    X_471 = eval_trilinear_point(model, A, B, C, 'sin(A -  pi  /3)*csc(2*A)', ID="X_471", classes=["center"])
+    central_line(model, X_3, X_299, 3, 299)
+    central_line(model, X_6, X_471, 6, 471)
+    X_2992 = intersect_lines(model, X_3, X_299, X_6, X_471, ID="X_2992", classes=["selected", "target"])
     X_265 = eval_trilinear_point(model, A, B, C, 'sin(2*A)*csc(3*A)', ID="X_265", classes=["center", "incident"])
     X_300 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*csc(A +  pi  /3)', ID="X_300", classes=["center", "incident"])
     central_line(model, X_265, X_300, 265, 300, incident=True)

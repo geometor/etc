@@ -1,0 +1,85 @@
+center: X_6
+title: SYMMEDIAN POINT
+folio: Kimberling ETC • Collection 1 (X_1–X_19)
+enunciation: The intersection of the three symmedians (reflections of the medians across the angle bisectors) of triangle ABC.
+
+[bell:proposition]
+
+[screen: CONSTRUCT | svg: 01_primary.svg | weight: 1]
+symbolic: X_6 = Symmedian Point • Perspector of Tangential △Tan_a Tan_b Tan_c
+zoom: A, B, C
+active: X_6:gold, [ A Tan_a ]:gold, [ B Tan_b ]:gold, [ C Tan_c ]:gold
+head: Primary Construction
+row: Target Center | X_6 (Symmedian):gold
+row: Symmedians | A–Tan_a, B–Tan_b, C–Tan_c:gold
+row: Tangential Triangle | △Tan_a Tan_b Tan_c:muted
+just: ∵ CONCURRENCE | LEMOINE–GREBE SYMMEDIAN CONCURRENCE | Reflect each median AM_a across angle bisector AI_a to obtain the symmedian; minimizes α² + β² + γ².
+say: X six is the Symmedian Point—<pause> also known as the Lemoine Point or Grebe Point: <pause> the concurrence of the three symmedians obtained by reflecting each median across its corresponding interior angle bisector,
+
+[screen: GOAL | svg: 01_primary.svg | weight: 1 | punchline: true]
+symbolic: X_6 = Symmedian Point • Perspector of Tangential △Tan_a Tan_b Tan_c
+zoom: X_6, circumcircle, < Tan_a Tan_b Tan_c >, Tan_a, Tan_b, Tan_c, X_6, Tan_a, Tan_b, Tan_c
+thumb_zoom: A, B, C
+active: X_6:gold, circumcircle:blue, < Tan_a Tan_b Tan_c >:blue, Tan_a:blue, Tan_b:blue, Tan_c:blue
+head: Primary Construction
+row: Target Center | X_6 (Symmedian):gold
+row: Symmedians | A–Tan_a, B–Tan_b, C–Tan_c:muted
+row: Tangential Triangle | △Tan_a Tan_b Tan_c:blue
+just: ∵ DEFINITION | LEMOINE–GREBE SYMMEDIAN CONCURRENCE | Reflect each median AM_a across angle bisector AI_a to obtain the symmedian; minimizes α² + β² + γ².
+say: <pause> and the perspector of the tangential triangle.
+
+[bell:construction]
+
+[screen: ASSERT | svg: 02_coordinates.svg | weight: 1.15]
+symbolic: Trilinears a : b : c • Barycentrics a² : b² : c²
+section: Trilinear Distances | α = a:gold | β = b:blue | γ = c:green
+section: Barycentric Sub-Areas | u = a²:gold | v = b²:blue | w = c²:green
+just: ∵ COORDINATES | LEAST SQUARES DISTANCE PROPERTY | On acute triangle (5, 6, 7), perpendicular struts are 5 : 6 : 7 and sub-areas are 25 : 36 : 49 (22.7% : 32.7% : 44.5%).
+say: Its trilinear distances are directly proportional to the side lengths, <pause> a, to b, to c, <pause> which makes X six the unique point inside triangle A B C that minimizes the sum of the squares of the perpendicular distances to the three sidelines. <pause> Its barycentric sub-triangle areas are proportional to the squares of the sides, <pause> a squared, to b squared, to c squared.
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.5]
+symbolic: Brocard Axis {3, 6, 15, 16} • Line {1, 6, 9}
+zoom: X_6, X_3, X_15
+active: X_6:gold, {3, 6, 15, 16}:purple
+head: Incident Central Lines
+row: Brocard Axis | {3, 6, 15, 16}:purple
+row: Incenter–Mittenpunkt | {1, 6, 9}:muted
+row: Isogonic Axis | {6, 13, 14}:muted
+row: Napoleon Axis | {6, 17, 18}:muted
+just: ∵ PRIMARY AXIS | BROCARD AXIS DIAMETER | Segment X_3–X_6 is the diameter of the Brocard (Seven-Point) circle centered at X_182.
+say: <pause> On the central lines layer,
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.55]
+symbolic: Brocard Axis {3, 6, 15, 16} • Line {1, 6, 9}
+zoom: X_6, X_3, X_15, X_1, X_9, X_13, X_14, X_17, X_18
+active: X_6:gold, {3, 6, 15, 16}:purple, {1, 6, 9}:pink, {6, 13, 14}:green, {6, 17, 18}:blue
+head: Incident Central Lines
+row: Brocard Axis | {3, 6, 15, 16}:purple
+row: Incenter–Mittenpunkt | {1, 6, 9}:pink
+row: Isogonic Axis | {6, 13, 14}:green
+row: Napoleon Axis | {6, 17, 18}:blue
+just: ∵ COLLINEARITIES | BROCARD AXIS DIAMETER | Segment X_3–X_6 is the diameter of the Brocard (Seven-Point) circle centered at X_182.
+say: <pause> X six anchors the Brocard axis through X three, X fifteen, and X sixteen.
+
+[bell:insight]
+
+[screen: PROVE | svg: 04_relations.svg | weight: 1.05]
+symbolic: Isogonal Conjugate X_2 (Centroid) • Isotomic Conjugate X_76
+zoom: X_6, X_2, X_76, X_3
+active: X_6:gold, X_2:blue, X_76:green, X_3:orange
+head: Functional Relations
+row: Isogonal Conjugate | X_2:blue
+row: Isotomic Conjugate | X_76:green
+row: Brocard Diameter Partner | X_3:orange
+just: ∵ RELATIONS | CENTROID–SYMMEDIAN ISOGONAL DUALITY | Trilinear inversion maps Centroid (1/a : 1/b : 1/c) directly to Symmedian Point (a : b : c).
+say: X six is the isogonal conjugate of the Centroid X two, <pause> the isotomic conjugate of the third Brocard point X seventy-six,
+
+[screen: ∴ | svg: 05_four_triangles.svg | weight: 0.95]
+symbolic: Kimberling (6, 9, 13) Search = 0.992908495066
+head: Reference Triangles | a | b | c
+row: Acute Triangle | 5 | 6 | 7:gold
+row: Right Triangle | 3 | 4 | 5:blue
+row: Kepler Triangle | 1 | √φ | φ:green
+row: Kimberling Triangle | 6 | 9 | 13:purple
+just: ∵ INVARIANCE | KIMBERLING SEARCH VALUE • X_6 | Shortest directed trilinear distance on reference triangle (6, 9, 13): 0.992908495066.
+say: <pause> and the Gergonne point of the tangential triangle.

@@ -47,10 +47,10 @@ X_999
 
    * :ref:`X_999 <X_999>` = midpoint of :ref:`X_1 <X_1>` and :ref:`X_57 <X_57>`
    * :ref:`X_999 <X_999>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1000 <X_1000>`
-   * :ref:`X_999 <X_999>` = :term:`complement <complement>` of X_3421
+   * :ref:`X_999 <X_999>` = :term:`complement <complement>` of :ref:`X_3421 <X_3421>`
    * :ref:`X_999 <X_999>` = :ref:`X_89 <X_89>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_6 <X_6>`
    * :ref:`X_999 <X_999>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_650 <X_650>`\ \ :ref:`X_900 <X_900>`
-   * :ref:`X_999 <X_999>` = {:ref:`X_1 <X_1>`,\ :ref:`X_3 <X_3>`}-harmonic conjugate of X_3295
+   * :ref:`X_999 <X_999>` = {:ref:`X_1 <X_1>`,\ :ref:`X_3 <X_3>`}-harmonic conjugate of :ref:`X_3295 <X_3295>`
    * :ref:`X_999 <X_999>` = {:ref:`X_55 <X_55>`,\ :ref:`X_56 <X_56>`}-harmonic conjugate of :ref:`X_36 <X_36>`
    * :ref:`X_999 <X_999>` = :ref:`X_25 <X_25>`-of-incircle-circles-triangle
    * :ref:`X_999 <X_999>` = :ref:`X_1596 <X_1596>`-of-excentral-triangle

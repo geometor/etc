@@ -40,7 +40,7 @@ X_1073
    :badge: 8 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, 3341}, {:ref:`2 <X_2>`, :ref:`253 <X_253>`}, {:ref:`3 <X_3>`, :ref:`64 <X_64>`}, {:ref:`4 <X_4>`, 3350}, {:ref:`6 <X_6>`, 3343}, {:ref:`9 <X_9>`, :ref:`223 <X_223>`}, {:ref:`57 <X_57>`, 3351}, {:ref:`222 <X_222>`, :ref:`268 <X_268>`}
+   {:ref:`1 <X_1>`, :ref:`3341 <X_3341>`}, {:ref:`2 <X_2>`, :ref:`253 <X_253>`}, {:ref:`3 <X_3>`, :ref:`64 <X_64>`}, {:ref:`4 <X_4>`, :ref:`3350 <X_3350>`}, {:ref:`6 <X_6>`, :ref:`3343 <X_3343>`}, {:ref:`9 <X_9>`, :ref:`223 <X_223>`}, {:ref:`57 <X_57>`, :ref:`3351 <X_3351>`}, {:ref:`222 <X_222>`, :ref:`268 <X_268>`}
 
 .. collapse:: Functional Relations
    :badge: 14 relations
@@ -55,10 +55,10 @@ X_1073
    * :ref:`X_1073 <X_1073>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_15466
    * :ref:`X_1073 <X_1073>` = perspector of :g:`ABC << A B C >>` and :term:`antipedal triangle <antipedal-triangle>` of :ref:`X_1498 <X_1498>`
    * :ref:`X_1073 <X_1073>` = perspector of pedal and :term:`anticevian triangles <anticevian-triangle>` of :ref:`X_64 <X_64>`
-   * :ref:`X_1073 <X_1073>` = perspector of :g:`ABC << A B C >>` and :term:`medial triangle <medial-triangle>` of :term:`pedal triangle <pedal-triangle>` of X_3346
-   * :ref:`X_1073 <X_1073>` = perspector of circumconic centered at X_3343
-   * :ref:`X_1073 <X_1073>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through X_3343
-   * :ref:`X_1073 <X_1073>` = :ref:`X_2 <X_2>`-Ceva conjugate of X_3343
+   * :ref:`X_1073 <X_1073>` = perspector of :g:`ABC << A B C >>` and :term:`medial triangle <medial-triangle>` of :term:`pedal triangle <pedal-triangle>` of :ref:`X_3346 <X_3346>`
+   * :ref:`X_1073 <X_1073>` = perspector of circumconic centered at :ref:`X_3343 <X_3343>`
+   * :ref:`X_1073 <X_1073>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X_3343 <X_3343>`
+   * :ref:`X_1073 <X_1073>` = :ref:`X_2 <X_2>`-Ceva conjugate of :ref:`X_3343 <X_3343>`
 
 .. toctree::
    :hidden:

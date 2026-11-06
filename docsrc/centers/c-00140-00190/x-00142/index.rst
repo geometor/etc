@@ -41,12 +41,12 @@ X_142
    :badge: 13 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, :ref:`277 <X_277>`}, {:ref:`2 <X_2>`, :ref:`7 <X_7>`}, {:ref:`3 <X_3>`, :ref:`516 <X_516>`}, {:ref:`5 <X_5>`, :ref:`971 <X_971>`}, {:ref:`10 <X_10>`, :ref:`141 <X_141>`}, {:ref:`37 <X_37>`, :ref:`1086 <X_1086>`}, {:ref:`86 <X_86>`, :ref:`284 <X_284>`}, {:ref:`116 <X_116>`, :ref:`119 <X_119>`}, {:ref:`214 <X_214>`, :ref:`528 <X_528>`}, {:ref:`269 <X_269>`, :ref:`948 <X_948>`}, {:ref:`354 <X_354>`, 3059}, {:ref:`377 <X_377>`, :ref:`950 <X_950>`}, {:ref:`474 <X_474>`, :ref:`954 <X_954>`}
+   {:ref:`1 <X_1>`, :ref:`277 <X_277>`}, {:ref:`2 <X_2>`, :ref:`7 <X_7>`}, {:ref:`3 <X_3>`, :ref:`516 <X_516>`}, {:ref:`5 <X_5>`, :ref:`971 <X_971>`}, {:ref:`10 <X_10>`, :ref:`141 <X_141>`}, {:ref:`37 <X_37>`, :ref:`1086 <X_1086>`}, {:ref:`86 <X_86>`, :ref:`284 <X_284>`}, {:ref:`116 <X_116>`, :ref:`119 <X_119>`}, {:ref:`214 <X_214>`, :ref:`528 <X_528>`}, {:ref:`269 <X_269>`, :ref:`948 <X_948>`}, {:ref:`354 <X_354>`, :ref:`3059 <X_3059>`}, {:ref:`377 <X_377>`, :ref:`950 <X_950>`}, {:ref:`474 <X_474>`, :ref:`954 <X_954>`}
 
 .. collapse:: Functional Relations
    :badge: 17 relations
 
-   * :ref:`X_142 <X_142>` = midpoint of X_i and X_j for these (i,j): (:ref:`7 <X_7>`, :ref:`9 <X_9>`), (:ref:`8 <X_8>`, 3243), (:ref:`100 <X_100>`, 3254)
+   * :ref:`X_142 <X_142>` = midpoint of X_i and X_j for these (i,j): (:ref:`7 <X_7>`, :ref:`9 <X_9>`), (:ref:`8 <X_8>`, :ref:`3243 <X_3243>`), (:ref:`100 <X_100>`, :ref:`3254 <X_3254>`)
    * :ref:`X_142 <X_142>` = reflection of :ref:`X_1001 <X_1001>` in :ref:`X_1125 <X_1125>`
    * :ref:`X_142 <X_142>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1174 <X_1174>`
    * :ref:`X_142 <X_142>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_32008

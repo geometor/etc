@@ -59,7 +59,7 @@ X_2071
    * :ref:`X_2071 <X_2071>` = :ref:`X_36 <X_36>` of Trinh triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X_2071 <X_2071>` = Trinh-:term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_74 <X_74>`
    * :ref:`X_2071 <X_2071>` = antigonal conjugate of X_34170
-   * :ref:`X_2071 <X_2071>` = insimilicenter of circumcircle and Trinh circle (the exsimilicenter is X_3520)
+   * :ref:`X_2071 <X_2071>` = insimilicenter of circumcircle and Trinh circle (the exsimilicenter is :ref:`X_3520 <X_3520>`)
 
 Notes
 -----

@@ -1,0 +1,83 @@
+center: X_16
+title: 2nd ISODYNAMIC POINT
+folio: Kimberling ETC • Collection 1 (X_1–X_19)
+enunciation: The external common intersection of the three Apollonian circles of triangle ABC and isogonal conjugate of X_14.
+
+[bell:proposition]
+
+[screen: CONSTRUCT | svg: 01_primary.svg | weight: 1]
+symbolic: X_16 = 2nd Isodynamic Point • External Apollonian Intersection
+zoom: A, B, C
+active: X_16:gold, circumcircle:blue
+head: Primary Construction
+row: Target Center | X_16 (2Nd Isodynamic Point):gold
+row: Circle | Circumcircle:muted
+row: Circle | A-Apollonian Circle:muted
+just: ∵ CONCURRENCE | SECOND EQUILATERAL PEDAL LOCUS | X_15 and X_16 are the only two points in the plane whose pedal triangles with respect to △ABC are equilateral.
+say: X sixteen is the Second Isodynamic Point of triangle A B C: <pause> the second common intersection of the three Apollonian circles,
+
+[screen: GOAL | svg: 01_primary.svg | weight: 1 | punchline: true]
+symbolic: X_16 = 2nd Isodynamic Point • External Apollonian Intersection
+zoom: X_16, circumcircle, A-Apollonian circle, B-Apollonian circle, C-Apollonian circle, X_16
+thumb_zoom: A, B, C
+active: X_16:gold, circumcircle:blue, A-Apollonian circle:pink, B-Apollonian circle:pink, C-Apollonian circle:pink
+head: Primary Construction
+row: Target Center | X_16 (2Nd Isodynamic Point):gold
+row: Circle | Circumcircle:blue
+row: Circle | A-Apollonian Circle:pink
+just: ∵ DEFINITION | SECOND EQUILATERAL PEDAL LOCUS | X_15 and X_16 are the only two points in the plane whose pedal triangles with respect to △ABC are equilateral.
+say: <pause> lying outside the circumcircle on the Brocard axis.
+
+[bell:construction]
+
+[screen: ASSERT | svg: 02_coordinates.svg | weight: 1.15]
+symbolic: Trilinears sin(A - π/3) : : • Barycentrics a sin(A - π/3) : :
+section: Trilinear Distances | α = sin(A − π/3):gold | β = sin(B − π/3):blue | γ = sin(C − π/3):green
+section: Barycentric Sub-Areas | u = a sin(A − π/3):gold | v = b sin(B − π/3):blue | w = c sin(C − π/3):green
+just: ∵ COORDINATES | -60° ISODYNAMIC COORDINATES | Conway barycentrics: a²(S_A - √3·Area) : b²(S_B - √3·Area) : c²(S_C - √3·Area).
+say: Its trilinear coordinates are sine of A minus pi over three, <pause> to sine of B minus pi over three, <pause> to sine of C minus pi over three, <pause> and like X fifteen, <pause> its pedal triangle with respect to A B C is strictly equilateral.
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.5]
+symbolic: Brocard Axis {3, 6, 15, 16} • Line {2, 13, 16} • Line {4, 16, 18}
+zoom: X_16, X_3, X_6, X_15
+active: X_16:gold, {3, 6, 15, 16}:purple
+head: Incident Central Lines
+row: Brocard Axis | {3, 6, 15, 16}:purple
+row: Centroid–1st Isogonic | {2, 13, 16}:muted
+row: Orthocenter–2nd Napoleon | {4, 16, 18}:muted
+just: ∵ PRIMARY AXIS | BROCARD HARMONIC QUADRUPLE | On the Brocard axis, (X_3, X_6; X_15, X_16) is a harmonic range and X_3·X_15 · X_3·X_16 = R².
+say: <pause> On the central lines layer, <pause> X sixteen lies on the Brocard axis through X three, X six, and X fifteen,
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.55]
+symbolic: Brocard Axis {3, 6, 15, 16} • Line {2, 13, 16} • Line {4, 16, 18}
+zoom: X_3, X_6, X_15, X_2, X_13, X_4, X_18
+active: X_16:gold, {3, 6, 15, 16}:purple, {2, 13, 16}:pink, {4, 16, 18}:orchid
+head: Incident Central Lines
+row: Brocard Axis | {3, 6, 15, 16}:purple
+row: Centroid–1st Isogonic | {2, 13, 16}:pink
+row: Orthocenter–2nd Napoleon | {4, 16, 18}:orchid
+just: ∵ COLLINEARITIES | BROCARD HARMONIC QUADRUPLE | On the Brocard axis, (X_3, X_6; X_15, X_16) is a harmonic range and X_3·X_15 · X_3·X_16 = R².
+say: <pause> and on lines X two X thirteen and X four X eighteen.
+
+[bell:insight]
+
+[screen: PROVE | svg: 04_relations.svg | weight: 1.05]
+symbolic: Isogonal Conjugate X_14 • Circumcircle Inverse X_15
+zoom: X_16, X_14, X_15, X_3
+active: X_16:gold, X_14:blue, X_15:green, X_3:orange
+head: Functional Relations
+row: Isogonal Conjugate | X_14:blue
+row: Circumcircle Inverse | X_15:green
+row: Brocard Axis Anchor | X_3, X_6:orange
+just: ∵ RELATIONS | INVERSION IN THE CIRCUMCIRCLE | Midpoint of X_15 and X_16 is X_187 (circumcircle inverse of X_6); isotomic conjugate: X_301.
+say: X sixteen is the isogonal conjugate of the Second Isogonic Center X fourteen,
+
+[screen: ∴ | svg: 05_four_triangles.svg | weight: 0.95]
+symbolic: Kimberling (6, 9, 13) Search = -6.784211495839
+head: Reference Triangles | a | b | c
+row: Acute Triangle | 5 | 6 | 7:gold
+row: Right Triangle | 3 | 4 | 5:blue
+row: Kepler Triangle | 1 | √φ | φ:green
+row: Kimberling Triangle | 6 | 9 | 13:purple
+just: ∵ INVARIANCE | KIMBERLING SEARCH VALUE • X_16 | Shortest directed trilinear distance on reference triangle (6, 9, 13): -6.784211495839.
+say: <pause> and the inverse of the First Isodynamic Point X fifteen in the circumcircle of triangle A B C.

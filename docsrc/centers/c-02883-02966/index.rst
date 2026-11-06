@@ -22,7 +22,7 @@ X_2883–X_2966
 
 .. _preamble-0043:
 
-.. admonition:: Group Preamble — Isogonal Conjugates wrt Special Triangles
+.. admonition:: Group Preamble — Isogonal Conjugates wrt Special Triangles (Isogonal Conjugates with respect to Special Triangles)
    :class: note
 
    Suppose :g:`A'B'C' << A' B' C' >>` is the :term:`medial triangle <medial-triangle>` of :g:`ABC << A B C >>` and X is a triangle center wrt :g:`ABC << A B C >>`. Let :g:`X' <X'>` be the isogonal conjugate of :g:`X <X>` wrt :g:`A'B'C' << A' B' C' >>`. Then :g:`X' <X'>` is a triangle center wrt :g:`ABC << A B C >>`. In order to determine its center function g, the method of :cite:`TCCT <tcct>`, p. 207 applies. Write :g:`X <X>` =\ :math:`x : y : z` (wrt :g:`ABC << A B C >>`). Then trilinears of :g:`X <X>` wrt :g:`A'B'C' << A' B' C' >>` are

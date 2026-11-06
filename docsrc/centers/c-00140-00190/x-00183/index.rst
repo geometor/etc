@@ -56,7 +56,7 @@ X_183
    * :ref:`X_183 <X_183>` = :ref:`X_645 <X_645>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X_183 <X_183>`
    * :ref:`X_183 <X_183>` = {:ref:`X_2 <X_2>`,\ :ref:`X_69 <X_69>`}-harmonic conjugate of :ref:`X_325 <X_325>`
    * :ref:`X_183 <X_183>` = :ref:`X_6 <X_6>`-of-circummedial-triangle
-   * :ref:`X_183 <X_183>` = pole wrt circumcircle of :term:`trilinear polar <trilinear-polar>` of X_3114 (line :ref:`X_669 <X_669>`\ \ :ref:`X_804 <X_804>`)
+   * :ref:`X_183 <X_183>` = pole wrt circumcircle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_3114 <X_3114>` (line :ref:`X_669 <X_669>`\ \ :ref:`X_804 <X_804>`)
    * :ref:`X_183 <X_183>` = insimilicenter of Artzt and anti-Artzt circles; the exsimilicenter is :ref:`X_2 <X_2>`
    * :ref:`X_183 <X_183>` = :term:`crossdifference <crossdifference>` of every pair of points on the line through [U(2) of :term:`pedal triangle <pedal-triangle>` of P(1)] and [P(2) of pedal triangle of U(1)]
    * :ref:`X_183 <X_183>` = X_5034-of-6th-Brocard-triangle

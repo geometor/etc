@@ -55,7 +55,7 @@ X_59
    * :ref:`X_59 <X_59>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_101 <X_101>`\ \ :ref:`X_109 <X_109>`
    * :ref:`X_59 <X_59>` = perspector of :g:`ABC << A B C >>` and the reflection of the :term:`intouch triangle <intouch-triangle>` in line :ref:`X_1 <X_1>`\ \ :ref:`X_3 <X_3>`
    * :ref:`X_59 <X_59>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X_60 <X_60>`
-   * :ref:`X_59 <X_59>` = :ref:`X_75 <X_75>`-:term:`isoconjugate <isoconjugate>` of X_3271
+   * :ref:`X_59 <X_59>` = :ref:`X_75 <X_75>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_3271 <X_3271>`
    * :ref:`X_59 <X_59>` = trilinear square of X_6733
    * :ref:`X_59 <X_59>` = :term:`complement <complement>` of isogonal conjugate of X_36902
 

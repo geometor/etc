@@ -46,7 +46,7 @@ X_1834
    * :ref:`X_1834 <X_1834>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`1842 <X_1842>`), (:ref:`1897 <X_1897>`, :ref:`523 <X_523>`)
    * :ref:`X_1834 <X_1834>` = :term:`crosspoint <crosspoint>` of :ref:`X_4 <X_4>` and :ref:`X_10 <X_10>`
    * :ref:`X_1834 <X_1834>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`58 <X_58>`), (:ref:`21 <X_21>`, :ref:`404 <X_404>`)
-   * :ref:`X_1834 <X_1834>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_520 <X_520>`\ X_3733
+   * :ref:`X_1834 <X_1834>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_520 <X_520>`\ \ :ref:`X_3733 <X_3733>`
 
 .. toctree::
    :hidden:

@@ -23,8 +23,8 @@ X_1343
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{3, 6} <{ 3, 6 }>`
-   * **Related Centers:** :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`)
+   * **Central Lines:** :g:`{1342, 3398} <{ 1342, 3398 }>`
+   * **Related Centers:** :g:`X_1342 <X_1342>` (:ref:`INSIMILICENTER <X_1342>`), :g:`X_3398 <X_3398>` (:ref:`COS(A - 2ω) POINT <X_3398>`)
 
 .. signature:: center
 
@@ -56,7 +56,7 @@ X_1343
    :badge: 7 relations
 
    * :ref:`X_1343 <X_1343>` = external center of similitude of circumcircle and 1st Lemoine circle (Peter J. C. Moses, 4/2003)
-   * :ref:`X_1343 <X_1343>` = reflection of :ref:`X_1342 <X_1342>` in X_3398
+   * :ref:`X_1343 <X_1343>` = reflection of :ref:`X_1342 <X_1342>` in :ref:`X_3398 <X_3398>`
    * :ref:`X_1343 <X_1343>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_5404
    * :ref:`X_1343 <X_1343>` = inverse-in-Brocard-circle of :ref:`X_1671 <X_1671>`
    * :ref:`X_1343 <X_1343>` = {X_i,X_j}-harmonic conjugate of X_k for these (i,j,k): (:ref:`371 <X_371>`, :ref:`372 <X_372>`, :ref:`1670 <X_1670>`), (:ref:`1687 <X_1687>`, :ref:`1688 <X_1688>`, :ref:`1342 <X_1342>`)

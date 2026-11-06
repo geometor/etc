@@ -30,7 +30,7 @@ X_167
 
    | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = s(B,C,A)t(B,C,A) + s(C,A,B)t(C,A,B) - s(A,B,C)t(A,B,C)`, where :math:`s(A,B,C) = \sin(A/2)` and :math:`t(A,B,C) = (\cos B/2 + \cos C/2 - \cos A/2) \sec A/2`
    | **Barycentrics:** :math:`g(A,B,C) : g(B,C,A) : g(C,A,B)`, where :math:`g(A,B,C) = (\sin A)f(A,B,C)`
-   | **Search Value (6, 9, 13):** :math:`14.236467851795`
+   | **Search Value (6, 9, 13):** :math:`14.236467851794`
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines

@@ -41,7 +41,7 @@ X_1507
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X_1507 <X_1507>` = SS(A→A/3) of X_3336
+   * :ref:`X_1507 <X_1507>` = SS(A→A/3) of :ref:`X_3336 <X_3336>`
    * :ref:`X_1507 <X_1507>` = perspector of excentral and 1st Morley triangles
 
 .. toctree::

@@ -1066,13 +1066,18 @@ def spieker_center_of(
     ID: str = "X_10",
     classes: list[str] | None = None,
     draw_circle: bool = False,
+    draw_bisectors: bool = False,
 ) -> spg.Point:
     """Construct the Spieker center X_10 of triangle ABC (incenter of the medial triangle)."""
-    medial_triangle(model, A, B, C, draw_polygon=True)
+    Ma, Mb, Mc = medial_triangle(model, A, B, C, draw_polygon=True)
     a, b, c = triangle_side_lengths(A, B, C)
     X10 = point_from_barycentrics(
         model, A, B, C, b + c, c + a, a + b, ID=ID, classes=classes or ["center"]
     )
+    if draw_bisectors:
+        add_line(model, Ma, X10, ID=f"[ M_a {ID} ]", classes=["bisector"])
+        add_line(model, Mb, X10, ID=f"[ M_b {ID} ]", classes=["bisector"])
+        add_line(model, Mc, X10, ID=f"[ M_c {ID} ]", classes=["bisector"])
     if draw_circle:
         s = 0.5 * (a + b + c)
         area = math.sqrt(max(1e-16, s * (s - a) * (s - b) * (s - c)))

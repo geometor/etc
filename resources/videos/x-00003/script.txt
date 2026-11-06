@@ -1,0 +1,83 @@
+center: X_3
+title: CIRCUMCENTER
+folio: Kimberling ETC • Collection 1 (X_1–X_19)
+enunciation: The intersection of the three perpendicular bisectors of the sides and center of the circumscribed circle of triangle ABC.
+
+[bell:proposition]
+
+[screen: CONSTRUCT | svg: 01_primary.svg | weight: 1]
+symbolic: X_3 = Circumcenter • Center of Circumcircle (A B C)
+zoom: A, B, C
+active: X_3:gold, [ X_3 M_a ]:gold, [ X_3 M_b ]:gold, [ X_3 M_c ]:gold
+head: Primary Construction
+row: Target Center | X_3 (Circumcenter):gold
+row: Perpendicular Bisectors | at M_a, M_b, M_c:gold
+row: Circumscribed Circle | Circumcircle (R):muted
+just: ∵ CONCURRENCE | EUCLID IV.5 • CIRCUMCIRCLE | Equidistant from vertices A, B, C with radius R = abc / (4·Area); orthocenter of medial triangle M_a M_b M_c.
+say: X three is the Circumcenter of triangle A B C: <pause> the intersection of the perpendicular bisectors of the three sidelines,
+
+[screen: GOAL | svg: 01_primary.svg | weight: 1 | punchline: true]
+symbolic: X_3 = Circumcenter • Center of Circumcircle (A B C)
+zoom: X_3, circumcircle, X_3, M_a, M_b, M_c
+thumb_zoom: A, B, C
+active: X_3:gold, circumcircle:blue, M_a:blue, M_b:blue, M_c:blue
+head: Primary Construction
+row: Target Center | X_3 (Circumcenter):gold
+row: Perpendicular Bisectors | at M_a, M_b, M_c:muted
+row: Circumscribed Circle | Circumcircle (R):purple
+just: ∵ DEFINITION | EUCLID IV.5 • CIRCUMCIRCLE | Equidistant from vertices A, B, C with radius R = abc / (4·Area); orthocenter of medial triangle M_a M_b M_c.
+say: <pause> equidistant from vertices A, B, and C by the circumradius R.
+
+[bell:construction]
+
+[screen: ASSERT | svg: 02_coordinates.svg | weight: 1.15]
+symbolic: Trilinears cos A : cos B : cos C • Barycentrics sin 2A : sin 2B : sin 2C
+section: Trilinear Distances | α = cos A:gold | β = cos B:blue | γ = cos C:green
+section: Barycentric Sub-Areas | u = sin 2A:gold | v = sin 2B:blue | w = sin 2C:green
+just: ∵ COORDINATES | TRIGONOMETRIC COORDINATES | Algebraic barycentrics: a²(b² + c² - a²) : b²(c² + a² - b²) : c²(a² + b² - c²).
+say: Its trilinear coordinates are cosine A, to cosine B, to cosine C, <pause> and its barycentric coordinates are sine two A, to sine two B, to sine two C.
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.5]
+symbolic: Euler Line {2, 3, 4, 5} • Brocard Axis {3, 6, 15, 16}
+zoom: X_3, X_2, X_4, X_5
+active: X_3:gold, {2, 3, 4, 5}:gold
+head: Incident Central Lines
+row: Euler Line | {2, 3, 4, 5}:gold
+row: Brocard Axis | {3, 6, 15, 16}:muted
+row: OI Line | {1, 3, 40}:muted
+just: ∵ PRIMARY AXIS | EULER & BROCARD ANCHOR | Midpoint of X_1 (Incenter) and X_40 (Bevan point); midpoint of X_4 (Orthocenter) and X_20 (de Longchamps).
+say: <pause> On the central lines layer, <pause> X three anchors the Euler line with X two, X four, and X five,
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.55]
+symbolic: Euler Line {2, 3, 4, 5} • Brocard Axis {3, 6, 15, 16}
+zoom: X_3, X_2, X_4, X_5, X_6, X_15, X_1, X_40
+active: X_3:gold, {2, 3, 4, 5}:gold, {3, 6, 15, 16}:purple, {1, 3, 40}:blue
+head: Incident Central Lines
+row: Euler Line | {2, 3, 4, 5}:gold
+row: Brocard Axis | {3, 6, 15, 16}:purple
+row: OI Line | {1, 3, 40}:blue
+just: ∵ COLLINEARITIES | EULER & BROCARD ANCHOR | Midpoint of X_1 (Incenter) and X_40 (Bevan point); midpoint of X_4 (Orthocenter) and X_20 (de Longchamps).
+say: <pause> the Brocard axis with X six, X fifteen, and X sixteen, <pause> and the O I line with X one and X forty.
+
+[bell:insight]
+
+[screen: PROVE | svg: 04_relations.svg | weight: 1.05]
+symbolic: Isogonal Conjugate X_4 • Complement X_5 • Anticomplement X_4
+zoom: X_3, X_4, X_5
+active: X_3:gold, X_4:blue, X_5:green
+head: Functional Relations
+row: Isogonal Conjugate | X_4:blue
+row: Complement | X_5:green
+row: Anticomplement | X_4:blue
+just: ∵ RELATIONS | CIRCUMCENTER–ORTHOCENTER DUALITY | Isotomic conjugate: X_264 • Orthocentroidal-circle inverse: X_5.
+say: X three is the isogonal conjugate and complement of the Orthocenter X four, <pause> and the anticomplement of the Nine-Point Center X five.
+
+[screen: ∴ | svg: 05_four_triangles.svg | weight: 0.95]
+symbolic: Kimberling (6, 9, 13) Search = 6.782362894196
+head: Reference Triangles | a | b | c
+row: Acute Triangle | 5 | 6 | 7:gold
+row: Right Triangle | 3 | 4 | 5:blue
+row: Kepler Triangle | 1 | √φ | φ:green
+row: Kimberling Triangle | 6 | 9 | 13:purple
+just: ∵ INVARIANCE | KIMBERLING SEARCH VALUE • X_3 | Shortest directed trilinear distance on reference triangle (6, 9, 13): 6.782362894196.
+say: <pause> Notice across the four reference triangles how X three lies inside an acute triangle, <pause> lands on the hypotenuse midpoint of the three-four-five right triangle, <pause> and moves outside the obtuse Kimberling triangle.

@@ -24,7 +24,7 @@ X_2886
    :class: note
 
    * **Central Lines:** :g:`{2, 11} <{ 2, 11 }>`, :g:`{5, 10} <{ 5, 10 }>`
-   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_11 <X_11>` (:ref:`FEUERBACH POINT <X_11>`), :g:`X_5 <X_5>` (:ref:`NINE-POINT CENTER <X_5>`), :g:`X_10 <X_10>` (:ref:`SPIEKER CENTER <X_10>`)
+   * **Related Centers:** :g:`X_3449 <X_3449>` (:ref:`1st SARAGOSSA POINT OF X(7) <X_3449>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_11 <X_11>` (:ref:`FEUERBACH POINT <X_11>`), :g:`X_5 <X_5>` (:ref:`NINE-POINT CENTER <X_5>`), :g:`X_10 <X_10>` (:ref:`SPIEKER CENTER <X_10>`)
 
 .. signature:: center
 
@@ -40,8 +40,8 @@ X_2886
 .. collapse:: Functional Relations
    :badge: 7 relations
 
-   * :ref:`X_2886 <X_2886>` = midpoint of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, 3416), (:ref:`4 <X_4>`, 3428), (:ref:`8 <X_8>`, :ref:`2099 <X_2099>`), (:ref:`63 <X_63>`, :ref:`1836 <X_1836>`), (:ref:`956 <X_956>`, :ref:`1478 <X_1478>`)
-   * :ref:`X_2886 <X_2886>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3449
+   * :ref:`X_2886 <X_2886>` = midpoint of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`3416 <X_3416>`), (:ref:`4 <X_4>`, :ref:`3428 <X_3428>`), (:ref:`8 <X_8>`, :ref:`2099 <X_2099>`), (:ref:`63 <X_63>`, :ref:`1836 <X_1836>`), (:ref:`956 <X_956>`, :ref:`1478 <X_1478>`)
+   * :ref:`X_2886 <X_2886>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3449 <X_3449>`
    * :ref:`X_2886 <X_2886>` = :term:`isotomic conjugate <isotomic-conjugate>` of isogonal conjugate of X_21746
    * :ref:`X_2886 <X_2886>` = polar conjugate of isogonal conjugate of X_22070
    * :ref:`X_2886 <X_2886>` = complement of :ref:`X_55 <X_55>`

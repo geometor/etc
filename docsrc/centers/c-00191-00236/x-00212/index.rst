@@ -48,7 +48,7 @@ X_212
    :badge: 9 relations
 
    * :ref:`X_212 <X_212>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_273 <X_273>`
-   * :ref:`X_212 <X_212>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_514 <X_514>`\ X_3064
+   * :ref:`X_212 <X_212>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_514 <X_514>`\ \ :ref:`X_3064 <X_3064>`
    * :ref:`X_212 <X_212>` = :ref:`X_4 <X_4>`-isoconjugate of :ref:`X_7 <X_7>`
    * :ref:`X_212 <X_212>` = :ref:`X_57 <X_57>`-isoconjugate of :ref:`X_92 <X_92>`
    * :ref:`X_212 <X_212>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`48 <X_48>`), (:ref:`9 <X_9>`, :ref:`41 <X_41>`), (:ref:`283 <X_283>`, :ref:`219 <X_219>`)

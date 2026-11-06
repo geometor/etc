@@ -44,7 +44,7 @@ X_2485
    * :ref:`X_2485 <X_2485>` = midpoint of X_i and X_j for these (i,j): (:ref:`647 <X_647>`, :ref:`2489 <X_2489>`), (:ref:`669 <X_669>`, :ref:`2514 <X_2514>`)
    * :ref:`X_2485 <X_2485>` = reflection of X_i in X_j for these (i,j): (:ref:`2489 <X_2489>`, :ref:`2492 <X_2492>`), (:ref:`2506 <X_2506>`, :ref:`647 <X_647>`)
    * :ref:`X_2485 <X_2485>` = :term:`isogonal conjugate <isogonal-conjugate>` of the :term:`isotomic conjugate <isotomic-conjugate>` of X_33294
-   * :ref:`X_2485 <X_2485>` = :term:`complement <complement>` of X_3267
+   * :ref:`X_2485 <X_2485>` = :term:`complement <complement>` of :ref:`X_3267 <X_3267>`
    * :ref:`X_2485 <X_2485>` = :ref:`X_2 <X_2>`-Ceva conjugate of :ref:`X_127 <X_127>`
    * :ref:`X_2485 <X_2485>` = polar conjugate of isotomic conjugate of X_8673
    * :ref:`X_2485 <X_2485>` = :ref:`X_63 <X_63>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_1289 <X_1289>`

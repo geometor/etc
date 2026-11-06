@@ -12,7 +12,7 @@ X_2191
 
 .. enunciation::
 
-   :ref:`X_2191 <X_2191>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3870
+   :ref:`X_2191 <X_2191>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3870 <X_3870>`
 
 .. figure:: x-02191.svg
    :alt: X_2191 — X_2-ISOCONJUGATE OF X_218
@@ -24,13 +24,13 @@ X_2191
    :class: note
 
    * **Central Lines:** :g:`{1, 142} <{ 1, 142 }>`, :g:`{6, 354} <{ 6, 354 }>`
-   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_142 <X_142>` (:ref:`COMPLEMENT OF X(9) <X_142>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_354 <X_354>` (:ref:`WEILL POINT <X_354>`)
+   * **Related Centers:** :g:`X_3870 <X_3870>` (:ref:`com[INVERSE(n(3rd EULER TRIANGLE))] <X_3870>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_142 <X_142>` (:ref:`COMPLEMENT OF X(9) <X_142>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_354 <X_354>` (:ref:`WEILL POINT <X_354>`)
 
 .. signature:: center
 
    | **Trilinears:** :math:`a/f(a,b,c) : b/f(b,c,a) : c/f(c,a,b)`, where f(a,b,c) is as in :ref:`X_218 <X_218>`
    | **Barycentrics:** :math:`a^{2}/f(a,b,c) : b^{2}/f(b,c,a): c^{2}/f(c,a,b)`
-   | **Search Value (6, 9, 13):** :math:`-165.650233926802`
+   | **Search Value (6, 9, 13):** :math:`-165.650233926789`
 
 .. collapse:: Incident Central Lines
    :badge: 11 lines
@@ -41,7 +41,7 @@ X_2191
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X_2191 <X_2191>` = isogonal conjugate of X_3870
+   * :ref:`X_2191 <X_2191>` = isogonal conjugate of :ref:`X_3870 <X_3870>`
    * :ref:`X_2191 <X_2191>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`244 <X_244>`, :ref:`663 <X_663>`), (:ref:`1015 <X_1015>`, :ref:`2488 <X_2488>`)
    * :ref:`X_2191 <X_2191>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`41 <X_41>`, :ref:`57 <X_57>`), (:ref:`2293 <X_2293>`, :ref:`6 <X_6>`)
 

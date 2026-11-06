@@ -44,9 +44,9 @@ X_1014
    * :ref:`X_1014 <X_1014>` = isogonal conjugate of :ref:`X_210 <X_210>`
    * :ref:`X_1014 <X_1014>` = :term:`cevapoint <cevapoint>` of :ref:`X_56 <X_56>` and :ref:`X_57 <X_57>`
    * :ref:`X_1014 <X_1014>` = :ref:`X_58 <X_58>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_81 <X_81>`
-   * :ref:`X_1014 <X_1014>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3701
+   * :ref:`X_1014 <X_1014>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3701 <X_3701>`
    * :ref:`X_1014 <X_1014>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_1019 <X_1019>`\ \ :ref:`X_1429 <X_1429>`
-   * :ref:`X_1014 <X_1014>` = :term:`crossdifference <crossdifference>` of every pair of points on line X_3709X_4041
+   * :ref:`X_1014 <X_1014>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_3709 <X_3709>`\ X_4041
 
 .. toctree::
    :hidden:

@@ -45,11 +45,11 @@ X_1279
    * :ref:`X_1279 <X_1279>` = reflection of :ref:`X_44 <X_44>` in :ref:`X_238 <X_238>`
    * :ref:`X_1279 <X_1279>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1280 <X_1280>`
    * :ref:`X_1279 <X_1279>` = :term:`complement <complement>` of X_32850
-   * :ref:`X_1279 <X_1279>` = :term:`anticomplement <anticomplement>` of X_3823
+   * :ref:`X_1279 <X_1279>` = :term:`anticomplement <anticomplement>` of :ref:`X_3823 <X_3823>`
    * :ref:`X_1279 <X_1279>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`105 <X_105>`), (:ref:`927 <X_927>`, :ref:`1016 <X_1016>`)
    * :ref:`X_1279 <X_1279>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`518 <X_518>`), (:ref:`926 <X_926>`, :ref:`1015 <X_1015>`)
    * :ref:`X_1279 <X_1279>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_9 <X_9>`\ \ :ref:`X_513 <X_513>`
-   * :ref:`X_1279 <X_1279>` = {:ref:`X_1 <X_1>`,\ :ref:`X_9 <X_9>`}-harmonic conjugate of X_3242
+   * :ref:`X_1279 <X_1279>` = {:ref:`X_1 <X_1>`,\ :ref:`X_9 <X_9>`}-harmonic conjugate of :ref:`X_3242 <X_3242>`
    * :ref:`X_1279 <X_1279>` = crossdifference of PU(56)
    * :ref:`X_1279 <X_1279>` = midpoint of PU(96)
    * :ref:`X_1279 <X_1279>` = bicentric sum of PU(96)

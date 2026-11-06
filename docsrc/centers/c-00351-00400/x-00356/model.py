@@ -9,6 +9,7 @@ from geometor.model import Model
 
 from geometor.etc.ops import (
     central_line,
+    circumcenter_of,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
@@ -28,6 +29,9 @@ def construct_x_00356(
     X_1134 = eval_trilinear_point(model, A, B, C, '1/cos(A/3 + 2*pi  /3)', ID="X_1134", classes=["center", "incident"])
     X_1135 = eval_trilinear_point(model, A, B, C, 'cos(A/3 + 2*pi  /3)', ID="X_1135", classes=["center", "incident"])
     central_line(model, X_1134, X_1135, 1134, 1135, incident=True)
+    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
+    X_3278 = eval_trilinear_point(model, A, B, C, '(cos(A/3)*cos(2*A/3) + cos(B/3)*cos(C/3))', ID="X_3278", classes=["center", "incident"])
+    central_line(model, X_3, X_3278, 3, 3278, incident=True)
     return promote_point_to_top(model, X_356)
 
 

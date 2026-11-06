@@ -22,7 +22,7 @@ X_511–X_565
 
 .. _preamble-0012:
 
-.. admonition:: Group Preamble — Centers on the line at infinity: X_511-X_526
+.. admonition:: Group Preamble — Centers on the line at infinity: X_511-X_526 (Centers on the lines at infinity: X_511-X_526)
    :class: note
 
    In barycentric coordinates, the line at infinity, L, is the set of points :g:`X <X>` =\ :math:`x : y : z` satisfying :math:`x + y + z = 0`. The isogonal conjugate of :g:`L <L>`, given by a^2 y z + b^2 z x + c^2 x y = 0, is the circumcircle (e.g., :ref:`X_98 <X_98>`-:ref:`X_112 <X_112>`).
@@ -49,7 +49,7 @@ X_511–X_565
 
 .. _preamble-0013:
 
-.. admonition:: Group Preamble — Centers X_527-X_565
+.. admonition:: Group Preamble — Centers X_527-X_565 (Centers X_527-X_565. Jan 1 2001)
    :class: note
 
    Centers :ref:`X_527 <X_527>`-:ref:`X_565 <X_565>` were added to ETC on the first day of 2001.

@@ -51,7 +51,7 @@ X_390
    * :ref:`X_390 <X_390>` = :term:`anticomplement <anticomplement>` of :ref:`X_2550 <X_2550>`
    * :ref:`X_390 <X_390>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_657 <X_657>`\ \ :ref:`X_665 <X_665>`
    * :ref:`X_390 <X_390>` = inverse-in-Feuerbach-hyperbola of :ref:`X_2 <X_2>`
-   * :ref:`X_390 <X_390>` = {:ref:`X_1 <X_1>`,\ :ref:`X_20 <X_20>`}-harmonic conjugate of X_3600
+   * :ref:`X_390 <X_390>` = {:ref:`X_1 <X_1>`,\ :ref:`X_20 <X_20>`}-harmonic conjugate of :ref:`X_3600 <X_3600>`
    * :ref:`X_390 <X_390>` = {:ref:`X_175 <X_175>`,\ :ref:`X_176 <X_176>`}-harmonic conjugate of :ref:`X_279 <X_279>`
    * :ref:`X_390 <X_390>` = bicentric sum of PU(122)
 

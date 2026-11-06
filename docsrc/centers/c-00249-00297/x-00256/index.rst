@@ -47,8 +47,8 @@ X_256
    * :ref:`X_256 <X_256>` = :term:`crosssum <crosssum>` of :ref:`X_43 <X_43>` and :ref:`X_846 <X_846>`
    * :ref:`X_256 <X_256>` = :ref:`X_238 <X_238>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X_904 <X_904>`
    * :ref:`X_256 <X_256>` = cevapoint of PU(6)
-   * :ref:`X_256 <X_256>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_650 <X_650>`\ X_3250
-   * :ref:`X_256 <X_256>` = :term:`crossdifference <crossdifference>` of every pair of points on line X_3287X_3805 (the perspectrix of :g:`ABC << A B C >>` and Gemini triangle 34)
+   * :ref:`X_256 <X_256>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_650 <X_650>`\ \ :ref:`X_3250 <X_3250>`
+   * :ref:`X_256 <X_256>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_3287 <X_3287>`\ \ :ref:`X_3805 <X_3805>` (the perspectrix of :g:`ABC << A B C >>` and Gemini triangle 34)
 
 Notes
 -----

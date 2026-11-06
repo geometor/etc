@@ -9,10 +9,10 @@ from geometor.model import Model
 
 from geometor.etc.ops import (
     central_line,
-    cevapoint,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    intersect_lines,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -22,16 +22,15 @@ def construct_x_01308(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1308 = COLLINGS TRANSFORM OF X_661 on reference triangle ABC."""
-    X_513 = eval_trilinear_point(model, A, B, C, 'b - c', ID="X_513", classes=["center"])
-    X_1155 = eval_trilinear_point(model, A, B, C, '(cos(B) + cos(C) - 2*cos(A))', ID="X_1155", classes=["center"])
-    X_1308 = cevapoint(model, A, B, C, X_513, X_1155, ID="X_1308", classes=["selected", "target"])
-    X_36 = eval_trilinear_point(model, A, B, C, '1 - 2*cos(A)', ID="X_36", classes=["center", "incident"])
-    X_105 = eval_trilinear_point(model, A, B, C, '1/(b**(2) + c**(2) - a*(b + c))', ID="X_105", classes=["center", "incident"])
-    central_line(model, X_36, X_105, 36, 105, incident=True)
-    X_100 = eval_trilinear_point(model, A, B, C, '1/(b - c)', ID="X_100", classes=["center", "incident"])
-    X_514 = eval_trilinear_point(model, A, B, C, '(b - c)/a', ID="X_514", classes=["center", "incident"])
-    central_line(model, X_100, X_514, 100, 514, incident=True)
+    X_36 = eval_trilinear_point(model, A, B, C, '1 - 2*cos(A)', ID="X_36", classes=["center"])
+    X_105 = eval_trilinear_point(model, A, B, C, '1/(b**(2) + c**(2) - a*(b + c))', ID="X_105", classes=["center"])
+    X_100 = eval_trilinear_point(model, A, B, C, '1/(b - c)', ID="X_100", classes=["center"])
+    X_514 = eval_trilinear_point(model, A, B, C, '(b - c)/a', ID="X_514", classes=["center"])
+    central_line(model, X_36, X_105, 36, 105)
+    central_line(model, X_100, X_514, 100, 514)
+    X_1308 = intersect_lines(model, X_36, X_105, X_100, X_514, ID="X_1308", classes=["selected", "target"])
     X_101 = eval_trilinear_point(model, A, B, C, 'a/(b - c)', ID="X_101", classes=["center", "incident"])
+    X_513 = eval_trilinear_point(model, A, B, C, 'b - c', ID="X_513", classes=["center", "incident"])
     central_line(model, X_101, X_513, 101, 513, incident=True)
     return promote_point_to_top(model, X_1308)
 

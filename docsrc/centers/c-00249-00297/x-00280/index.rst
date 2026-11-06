@@ -47,7 +47,7 @@ X_280
    * :ref:`X_280 <X_280>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`8 <X_8>`), (:ref:`281 <X_281>`, :ref:`2 <X_2>`), (:ref:`282 <X_282>`, :ref:`189 <X_189>`)
    * :ref:`X_280 <X_280>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_196 <X_196>`
    * :ref:`X_280 <X_280>` = :ref:`X_48 <X_48>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X_196 <X_196>`
-   * :ref:`X_280 <X_280>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_521 <X_521>`\ X_3239 (the radical axis of circumcircle and Mandart circle, and the Monge line of the nine-point circles of the A-, B- and C-:term:`extouch triangles <extouch-triangle>`)
+   * :ref:`X_280 <X_280>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_521 <X_521>`\ \ :ref:`X_3239 <X_3239>` (the radical axis of circumcircle and Mandart circle, and the Monge line of the nine-point circles of the A-, B- and C-:term:`extouch triangles <extouch-triangle>`)
 
 Notes
 -----

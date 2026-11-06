@@ -56,7 +56,7 @@ X_69
    :badge: 37 lines
    :class: line-catalog
 
-   {:ref:`2 <X_2>`, :ref:`6 <X_6>`}, {:ref:`3 <X_3>`, :ref:`332 <X_332>`}, {:ref:`4 <X_4>`, :ref:`76 <X_76>`}, {:ref:`7 <X_7>`, :ref:`8 <X_8>`}, {:ref:`9 <X_9>`, :ref:`344 <X_344>`}, {:ref:`10 <X_10>`, :ref:`969 <X_969>`}, {:ref:`20 <X_20>`, :ref:`64 <X_64>`}, {:ref:`22 <X_22>`, :ref:`159 <X_159>`}, {:ref:`54 <X_54>`, :ref:`95 <X_95>`}, {:ref:`63 <X_63>`, :ref:`71 <X_71>`}, {:ref:`72 <X_72>`, :ref:`304 <X_304>`}, {:ref:`73 <X_73>`, :ref:`77 <X_77>`}, {:ref:`74 <X_74>`, :ref:`99 <X_99>`}, {:ref:`110 <X_110>`, :ref:`206 <X_206>`}, {:ref:`125 <X_125>`, :ref:`895 <X_895>`}, {:ref:`144 <X_144>`, :ref:`190 <X_190>`}, {:ref:`150 <X_150>`, :ref:`668 <X_668>`}, {:ref:`189 <X_189>`, :ref:`309 <X_309>`}, {:ref:`192 <X_192>`, :ref:`742 <X_742>`}, {:ref:`194 <X_194>`, :ref:`695 <X_695>`}, {:ref:`200 <X_200>`, :ref:`269 <X_269>`}, {:ref:`219 <X_219>`, :ref:`1332 <X_1332>`}, {:ref:`248 <X_248>`, :ref:`287 <X_287>`}, {:ref:`263 <X_263>`, :ref:`308 <X_308>`}, {:ref:`265 <X_265>`, :ref:`328 <X_328>`}, {:ref:`274 <X_274>`, :ref:`443 <X_443>`}, {:ref:`290 <X_290>`, :ref:`670 <X_670>`}, {:ref:`297 <X_297>`, :ref:`393 <X_393>`}, {:ref:`347 <X_347>`, :ref:`664 <X_664>`}, {:ref:`350 <X_350>`, :ref:`497 <X_497>`}, {:ref:`404 <X_404>`, :ref:`1014 <X_1014>`}, {:ref:`478 <X_478>`, :ref:`651 <X_651>`}, {:ref:`485 <X_485>`, :ref:`639 <X_639>`}, {:ref:`486 <X_486>`, :ref:`640 <X_640>`}, {:ref:`520 <X_520>`, :ref:`879 <X_879>`}, {:ref:`1225 <X_1225>`, :ref:`2888 <X_2888>`}, {:ref:`1369 <X_1369>`, 3410}
+   {:ref:`2 <X_2>`, :ref:`6 <X_6>`}, {:ref:`3 <X_3>`, :ref:`332 <X_332>`}, {:ref:`4 <X_4>`, :ref:`76 <X_76>`}, {:ref:`7 <X_7>`, :ref:`8 <X_8>`}, {:ref:`9 <X_9>`, :ref:`344 <X_344>`}, {:ref:`10 <X_10>`, :ref:`969 <X_969>`}, {:ref:`20 <X_20>`, :ref:`64 <X_64>`}, {:ref:`22 <X_22>`, :ref:`159 <X_159>`}, {:ref:`54 <X_54>`, :ref:`95 <X_95>`}, {:ref:`63 <X_63>`, :ref:`71 <X_71>`}, {:ref:`72 <X_72>`, :ref:`304 <X_304>`}, {:ref:`73 <X_73>`, :ref:`77 <X_77>`}, {:ref:`74 <X_74>`, :ref:`99 <X_99>`}, {:ref:`110 <X_110>`, :ref:`206 <X_206>`}, {:ref:`125 <X_125>`, :ref:`895 <X_895>`}, {:ref:`144 <X_144>`, :ref:`190 <X_190>`}, {:ref:`150 <X_150>`, :ref:`668 <X_668>`}, {:ref:`189 <X_189>`, :ref:`309 <X_309>`}, {:ref:`192 <X_192>`, :ref:`742 <X_742>`}, {:ref:`194 <X_194>`, :ref:`695 <X_695>`}, {:ref:`200 <X_200>`, :ref:`269 <X_269>`}, {:ref:`219 <X_219>`, :ref:`1332 <X_1332>`}, {:ref:`248 <X_248>`, :ref:`287 <X_287>`}, {:ref:`263 <X_263>`, :ref:`308 <X_308>`}, {:ref:`265 <X_265>`, :ref:`328 <X_328>`}, {:ref:`274 <X_274>`, :ref:`443 <X_443>`}, {:ref:`290 <X_290>`, :ref:`670 <X_670>`}, {:ref:`297 <X_297>`, :ref:`393 <X_393>`}, {:ref:`347 <X_347>`, :ref:`664 <X_664>`}, {:ref:`350 <X_350>`, :ref:`497 <X_497>`}, {:ref:`404 <X_404>`, :ref:`1014 <X_1014>`}, {:ref:`478 <X_478>`, :ref:`651 <X_651>`}, {:ref:`485 <X_485>`, :ref:`639 <X_639>`}, {:ref:`486 <X_486>`, :ref:`640 <X_640>`}, {:ref:`520 <X_520>`, :ref:`879 <X_879>`}, {:ref:`1225 <X_1225>`, :ref:`2888 <X_2888>`}, {:ref:`1369 <X_1369>`, :ref:`3410 <X_3410>`}
 
 .. collapse:: Functional Relations
    :badge: 50 relations
@@ -90,7 +90,7 @@ X_69
    * :ref:`X_69 <X_69>` = :ref:`X_6 <X_6>`-isoconjugate of :ref:`X_19 <X_19>`
    * :ref:`X_69 <X_69>` = :ref:`X_92 <X_92>`-isoconjugate of :ref:`X_32 <X_32>`
    * :ref:`X_69 <X_69>` = :term:`antigonal image <antigonal-image>` of :ref:`X_895 <X_895>`
-   * :ref:`X_69 <X_69>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, 3053), (:ref:`32 <X_32>`, :ref:`1974 <X_1974>`)
+   * :ref:`X_69 <X_69>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`3053 <X_3053>`), (:ref:`32 <X_32>`, :ref:`1974 <X_1974>`)
    * :ref:`X_69 <X_69>` = perspector of :g:`ABC << A B C >>` and the 2nd pedal triangle of :ref:`X_3 <X_3>`
    * :ref:`X_69 <X_69>` = crosspoint of :ref:`X_6 <X_6>` and :ref:`X_159 <X_159>` wrt both the excentral and :term:`tangential triangles <tangential-triangle>`
    * :ref:`X_69 <X_69>` = crosspoint of :ref:`X_2 <X_2>` and :ref:`X_20 <X_20>` wrt both the excentral and anticomplementary triangles
@@ -99,7 +99,7 @@ X_69
    * :ref:`X_69 <X_69>` = perspector of the inconic with center :ref:`X_3 <X_3>`
    * :ref:`X_69 <X_69>` = pole, wrt de Longchamps circle, of trilinear polar of :ref:`X_95 <X_95>`
    * :ref:`X_69 <X_69>` = perspector of the extraversion triangles of :ref:`X_7 <X_7>` and :ref:`X_8 <X_8>`
-   * :ref:`X_69 <X_69>` = {:ref:`X_2 <X_2>`,\ :ref:`X_6 <X_6>`}-harmonic conjugate of X_3618
+   * :ref:`X_69 <X_69>` = {:ref:`X_2 <X_2>`,\ :ref:`X_6 <X_6>`}-harmonic conjugate of :ref:`X_3618 <X_3618>`
    * :ref:`X_69 <X_69>` = perspector of :g:`ABC << A B C >>` and anticomplement of submedial triangle
    * :ref:`X_69 <X_69>` = perspector of :g:`ABC << A B C >>` and mid-triangle of orthic and dual of :term:`orthic triangles <orthic-triangle>`
    * :ref:`X_69 <X_69>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and :term:`2nd Brocard triangle <2nd-brocard-triangle>`

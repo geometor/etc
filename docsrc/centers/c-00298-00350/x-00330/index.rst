@@ -51,7 +51,7 @@ X_330
    * :ref:`X_330 <X_330>` = polar conjugate of isogonal conjugate of X_23086
    * :ref:`X_330 <X_330>` = :ref:`X_19 <X_19>`-:term:`isoconjugate <isoconjugate>` of X_20760
    * :ref:`X_330 <X_330>` = perspector of :g:`ABC << A B C >>` and inverse of n(Incentral)\*n(Medial)
-   * :ref:`X_330 <X_330>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_513 <X_513>`\ X_3716 (complement of antiorthic axis, and perspectrix of Gemini triangles 3 and 6)
+   * :ref:`X_330 <X_330>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_513 <X_513>`\ \ :ref:`X_3716 <X_3716>` (complement of antiorthic axis, and perspectrix of Gemini triangles 3 and 6)
 
 .. toctree::
    :hidden:

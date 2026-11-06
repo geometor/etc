@@ -47,10 +47,10 @@ X_1420
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X_1420 <X_1420>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3680
+   * :ref:`X_1420 <X_1420>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3680 <X_3680>`
    * :ref:`X_1420 <X_1420>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`269 <X_269>`, :ref:`57 <X_57>`), (:ref:`765 <X_765>`, :ref:`109 <X_109>`)
    * :ref:`X_1420 <X_1420>` = {:ref:`X_1 <X_1>`,\ :ref:`X_56 <X_56>`}-harmonic conjugate of :ref:`X_57 <X_57>`
-   * :ref:`X_1420 <X_1420>` = {X_3513,X_3514}-harmonic conjugate of :ref:`X_165 <X_165>`
+   * :ref:`X_1420 <X_1420>` = {:ref:`X_3513 <X_3513>`,\ :ref:`X_3514 <X_3514>`}-harmonic conjugate of :ref:`X_165 <X_165>`
    * :ref:`X_1420 <X_1420>` = homothetic center of 1st Johnson-Yff triangle and cross-triangle of Aquila and anti-Aquila triangles
    * :ref:`X_1420 <X_1420>` = {:ref:`X_1 <X_1>`,\ :ref:`X_55 <X_55>`}-harmonic conjugate of X_37556
 

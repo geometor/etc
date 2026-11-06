@@ -121,6 +121,36 @@
             ],
             "guide": false
         },
+        "X_100": {
+            "sympy_obj": "Point2D(Float('0.14285713999999999', precision=53), Float('0.46656946999999999', precision=53))",
+            "ID": "X_100",
+            "classes": [
+                "center"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "X_3267": {
+            "sympy_obj": "Point2D(Float('-2.7666489400000001', precision=53), Float('0.18877187000000001', precision=53))",
+            "ID": "X_3267",
+            "classes": [
+                "center"
+            ],
+            "parents": [],
+            "guide": false
+        },
+        "{ 100, 3267 }": {
+            "sympy_obj": "Line2D(Point2D(Float('0.14285713999999999', precision=53), Float('0.46656946999999999', precision=53)), Point2D(Float('-2.7666489400000001', precision=53), Float('0.18877187000000001', precision=53)))",
+            "ID": "{ 100, 3267 }",
+            "classes": [
+                "central_line"
+            ],
+            "parents": [
+                "X_100",
+                "X_3267"
+            ],
+            "guide": false
+        },
         "X_2859": {
             "sympy_obj": "Point2D(Float('0.78171303000000003', precision=53), Float('0.52756698999999996', precision=53))",
             "ID": "X_2859",

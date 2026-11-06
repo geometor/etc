@@ -49,7 +49,7 @@ X_186
    :badge: 8 lines
    :class: line-catalog
 
-   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`54 <X_54>`, :ref:`389 <X_389>`}, {:ref:`93 <X_93>`, :ref:`252 <X_252>`}, {:ref:`98 <X_98>`, :ref:`935 <X_935>`}, {:ref:`107 <X_107>`, :ref:`477 <X_477>`}, {:ref:`112 <X_112>`, :ref:`187 <X_187>`}, {:ref:`249 <X_249>`, :ref:`250 <X_250>`}, {:ref:`2931 <X_2931>`, 3580}
+   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`54 <X_54>`, :ref:`389 <X_389>`}, {:ref:`93 <X_93>`, :ref:`252 <X_252>`}, {:ref:`98 <X_98>`, :ref:`935 <X_935>`}, {:ref:`107 <X_107>`, :ref:`477 <X_477>`}, {:ref:`112 <X_112>`, :ref:`187 <X_187>`}, {:ref:`249 <X_249>`, :ref:`250 <X_250>`}, {:ref:`2931 <X_2931>`, :ref:`3580 <X_3580>`}
 
 .. collapse:: Functional Relations
    :badge: 31 relations
@@ -57,7 +57,7 @@ X_186
    * :ref:`X_186 <X_186>` = reflection of X_i in X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`403 <X_403>`), (:ref:`403 <X_403>`, :ref:`468 <X_468>`)
    * :ref:`X_186 <X_186>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_265 <X_265>`
    * :ref:`X_186 <X_186>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_328 <X_328>`
-   * :ref:`X_186 <X_186>` = :term:`complement <complement>` of X_3153
+   * :ref:`X_186 <X_186>` = :term:`complement <complement>` of :ref:`X_3153 <X_3153>`
    * :ref:`X_186 <X_186>` = :term:`anticomplement <anticomplement>` of :ref:`X_2072 <X_2072>`
    * :ref:`X_186 <X_186>` = circumcircle-inverse of :ref:`X_4 <X_4>`
    * :ref:`X_186 <X_186>` = polar-circle-inverse of :ref:`X_5 <X_5>`
@@ -82,8 +82,8 @@ X_186
    * :ref:`X_186 <X_186>` = :term:`antigonal image <antigonal-image>` of X_5962
    * :ref:`X_186 <X_186>` = :ref:`X_484 <X_484>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X_186 <X_186>` = Thomson-isogonal conjugate of X_15131
-   * :ref:`X_186 <X_186>` = Ehrmann-vertex-to-orthic :term:`similarity image <similarity-image>` of X_3153
-   * :ref:`X_186 <X_186>` = {:ref:`X_3 <X_3>`,\ :ref:`X_4 <X_4>`}-harmonic conjugate of X_3520
+   * :ref:`X_186 <X_186>` = Ehrmann-vertex-to-orthic :term:`similarity image <similarity-image>` of :ref:`X_3153 <X_3153>`
+   * :ref:`X_186 <X_186>` = {:ref:`X_3 <X_3>`,\ :ref:`X_4 <X_4>`}-harmonic conjugate of :ref:`X_3520 <X_3520>`
    * :ref:`X_186 <X_186>` = intersection of the tangent to hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_3 <X_3>`,\ :ref:`X_15 <X_15>`}} at :ref:`X_15 <X_15>` and the tangent to hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_3 <X_3>`,\ :ref:`X_16 <X_16>`}} at :ref:`X_16 <X_16>`
 
 Notes

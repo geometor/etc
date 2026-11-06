@@ -51,7 +51,7 @@ X_628
    :badge: 7 relations
 
    * :ref:`X_628 <X_628>` = reflection of :ref:`X_18 <X_18>` in :ref:`X_630 <X_630>`
-   * :ref:`X_628 <X_628>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3490
+   * :ref:`X_628 <X_628>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3490 <X_3490>`
    * :ref:`X_628 <X_628>` = anticomplement of :ref:`X_18 <X_18>`
    * :ref:`X_628 <X_628>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X_634 <X_634>`
    * :ref:`X_628 <X_628>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`5 <X_5>`, :ref:`627 <X_627>`), (:ref:`303 <X_303>`, :ref:`2 <X_2>`)

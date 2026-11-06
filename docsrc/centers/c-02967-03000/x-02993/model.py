@@ -13,8 +13,7 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
-    isotomic_conjugate,
-    point_from_barycentrics,
+    intersect_lines,
     promote_point_to_top,
     symmedian_point_of,
 )
@@ -25,14 +24,13 @@ def construct_x_02993(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_2993 = CD(X_14) on reference triangle ABC."""
-    X_622 = point_from_barycentrics(model, A, B, C, 5.69489, 2.0530231, -6.747913, ID="X_622", classes=["center"])
-    X_2993 = isotomic_conjugate(model, A, B, C, X_622, ID="X_2993", classes=["selected", "target"])
-    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
-    X_298 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*sin(A +  pi  /3)', ID="X_298", classes=["center", "incident"])
-    central_line(model, X_3, X_298, 3, 298, incident=True)
-    X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
-    X_470 = eval_trilinear_point(model, A, B, C, 'sin(A +  pi  /3)*csc(2*A)', ID="X_470", classes=["center", "incident"])
-    central_line(model, X_6, X_470, 6, 470, incident=True)
+    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
+    X_298 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*sin(A +  pi  /3)', ID="X_298", classes=["center"])
+    X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center"])
+    X_470 = eval_trilinear_point(model, A, B, C, 'sin(A +  pi  /3)*csc(2*A)', ID="X_470", classes=["center"])
+    central_line(model, X_3, X_298, 3, 298)
+    central_line(model, X_6, X_470, 6, 470)
+    X_2993 = intersect_lines(model, X_3, X_298, X_6, X_470, ID="X_2993", classes=["selected", "target"])
     X_265 = eval_trilinear_point(model, A, B, C, 'sin(2*A)*csc(3*A)', ID="X_265", classes=["center", "incident"])
     X_301 = eval_trilinear_point(model, A, B, C, '(csc(A))**(2)*csc(A -  pi  /3)', ID="X_301", classes=["center", "incident"])
     central_line(model, X_265, X_301, 265, 301, incident=True)

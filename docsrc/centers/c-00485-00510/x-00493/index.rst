@@ -46,7 +46,7 @@ X_493
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X_493 <X_493>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3068
+   * :ref:`X_493 <X_493>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3068 <X_3068>`
    * :ref:`X_493 <X_493>` = :ref:`X_394 <X_394>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_494 <X_494>`
    * :ref:`X_493 <X_493>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of outer Vecten triangle
    * :ref:`X_493 <X_493>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of Lucas(-1) antipodal triangle

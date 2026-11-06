@@ -14,7 +14,6 @@ from geometor.etc.ops import (
     create_model,
     eval_trilinear_point,
     incenter_of,
-    point_from_barycentrics,
     promote_point_to_top,
     symmedian_point_of,
 )
@@ -26,7 +25,7 @@ def construct_x_02307(
 ) -> spg.Point:
     """Construct X_2307 = X_2-ISOCONJUGATE OF X_1251 on reference triangle ABC."""
     X_1082 = eval_trilinear_point(model, A, B, C, '(sec(A/2))*sin(A/2 -  pi  /3)', ID="X_1082", classes=["center"])
-    X_1250 = point_from_barycentrics(model, A, B, C, 0.37782092, 0.36610068, 0.2560784, ID="X_1250", classes=["center"])
+    X_1250 = eval_trilinear_point(model, A, B, C, '(cos(A/2)*cos(A/2 +  pi  /6))', ID="X_1250", classes=["center"])
     X_2307 = ceva_conjugate(model, A, B, C, X_1082, X_1250, ID="X_2307", classes=["selected", "target"])
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
     X_41 = eval_trilinear_point(model, A, B, C, 'a**(2)*(b + c - a)', ID="X_41", classes=["center", "incident"])

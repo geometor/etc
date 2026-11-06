@@ -30,7 +30,7 @@ X_1788
 
    | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = - (\cos A)/x + (\cos B)/y + (\cos C)/z`,\ :math:`x : y : z` = :ref:`X_1476 <X_1476>`
    | **Barycentrics:** :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
-   | **Search Value (6, 9, 13):** :math:`0.555476046008`
+   | **Search Value (6, 9, 13):** :math:`-0.560997052201`
 
 .. collapse:: Incident Central Lines
    :badge: 42 lines

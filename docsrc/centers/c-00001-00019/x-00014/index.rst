@@ -44,6 +44,11 @@ X_14
 
    :ref:`X_14 <X_14>` lies on the Neuberg cubic.
 
+.. admonition:: Related Collection 1 Topic Guides
+   :class: tip
+
+   :doc:`T_13: The Isogonic & Napoleon Central Lines <../../../topics/isogonic-and-napoleon-lines/index>` • :doc:`T_18: The Apollonian Circles <../../../topics/apollonian-circles/index>` • :doc:`T_24: Equilateral, Isogonic & Napoleon Triangles <../../../topics/isogonic-and-napoleon-triangles/index>`
+
 .. collapse:: Incident Central Lines
    :badge: 21 lines
    :class: line-catalog

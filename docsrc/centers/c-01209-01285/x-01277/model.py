@@ -24,7 +24,7 @@ def construct_x_01277(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1277 = 3rd EVANS PERSPECTOR on reference triangle ABC."""
-    X_1277 = eval_trilinear_point(model, A, B, C, '- sqrt(3/4) - cos(A +  pi  /6) + cos(B +  pi  /6) + cos(C +  pi  /6)', ID="X_1277", classes=["selected", "target"])
+    X_1277 = eval_trilinear_point(model, A, B, C, '(sqrt(3/4) - sin(A -  pi  /3) + sin(B -  pi  /3) + sin(C -  pi  /3))', ID="X_1277", classes=["selected", "target"])
     X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
     X_9 = mittenpunkt_of(model, A, B, C, ID="X_9", classes=["center", "incident"])
     central_line(model, X_4, X_9, 4, 9, incident=True)

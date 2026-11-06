@@ -46,7 +46,7 @@ X_1252
    * :ref:`X_1252 <X_1252>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`101 <X_101>`), (:ref:`31 <X_31>`, :ref:`110 <X_110>`), (:ref:`55 <X_55>`, :ref:`100 <X_100>`)
    * :ref:`X_1252 <X_1252>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_101 <X_101>`\ \ :ref:`X_692 <X_692>` (the tangent to circumcircle at :ref:`X_101 <X_101>`)
    * :ref:`X_1252 <X_1252>` = polar conjugate of :ref:`X_2973 <X_2973>`
-   * :ref:`X_1252 <X_1252>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of X_3937
+   * :ref:`X_1252 <X_1252>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_3937 <X_3937>`
    * :ref:`X_1252 <X_1252>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_764 <X_764>`\ \ :ref:`X_1647 <X_1647>`
 
 Notes

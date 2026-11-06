@@ -1,0 +1,84 @@
+center: X_4
+title: ORTHOCENTER
+folio: Kimberling ETC • Collection 1 (X_1–X_19)
+enunciation: The intersection of the three altitudes dropped from vertices A, B, C perpendicular to the opposite sidelines.
+
+[bell:proposition]
+
+[screen: CONSTRUCT | svg: 01_primary.svg | weight: 1]
+symbolic: X_4 = Orthocenter • [A H_a] ∩ [B H_b] ∩ [C H_c]
+zoom: A, B, C
+active: X_4:gold, [ A H_a ]:gold, [ B H_b ]:gold, [ C H_c ]:gold
+head: Primary Construction
+row: Target Center | X_4 (Orthocenter):gold
+row: Altitudes | AH_a, BH_b, CH_c:gold
+row: Orthic Triangle | △H_a H_b H_c:muted
+just: ∵ CONCURRENCE | ALTITUDE CONCURRENCE | For acute △ABC, X_4 is also the incenter of its pedal (orthic) triangle △H_a H_b H_c.
+say: X four is the Orthocenter of triangle A B C: <pause> the point of concurrence of the three altitudes A H sub a, B H sub b, and C H sub c,
+
+[screen: GOAL | svg: 01_primary.svg | weight: 1 | punchline: true]
+symbolic: X_4 = Orthocenter • [A H_a] ∩ [B H_b] ∩ [C H_c]
+zoom: X_4, < H_a H_b H_c >, H_a, H_b, H_c, X_4, H_a, H_b, H_c
+thumb_zoom: A, B, C
+active: X_4:gold, < H_a H_b H_c >:blue, H_a:blue, H_b:blue, H_c:blue
+head: Primary Construction
+row: Target Center | X_4 (Orthocenter):gold
+row: Altitudes | AH_a, BH_b, CH_c:muted
+row: Orthic Triangle | △H_a H_b H_c:blue
+just: ∵ DEFINITION | ALTITUDE CONCURRENCE | For acute △ABC, X_4 is also the incenter of its pedal (orthic) triangle △H_a H_b H_c.
+say: <pause> and the perspector of the orthic triangle H sub a, H sub b, H sub c.
+
+[bell:construction]
+
+[screen: ASSERT | svg: 02_coordinates.svg | weight: 1.15]
+symbolic: Trilinears sec A : sec B : sec C • Barycentrics tan A : tan B : tan C
+section: Trilinear Distances | α = sec A:gold | β = sec B:blue | γ = sec C:green
+section: Barycentric Sub-Areas | u = tan A:gold | v = tan B:blue | w = tan C:green
+just: ∵ COORDINATES | CONWAY NOTATION • 1/S_A : 1/S_B : 1/S_C | Vertices A, B, C and X_4 form an orthocentric system: each point is the orthocenter of the other three.
+say: Its trilinear coordinates are secant A, to secant B, to secant C, <pause> and its barycentric coordinates are tangent A, to tangent B, to tangent C.
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.5]
+symbolic: Euler Line {2, 3, 4, 5} • Orthocenter–Spieker Line {4, 9, 10}
+zoom: X_4, X_2, X_3, X_5
+active: X_4:gold, {2, 3, 4, 5}:gold
+head: Incident Central Lines
+row: Euler Line | {2, 3, 4, 5}:gold
+row: Orthocenter–Spieker | {4, 9, 10, 19}:muted
+row: Fuhrmann Line | {4, 8}:muted
+just: ∵ PRIMARY AXIS | EULER & ORTHIC AXES | Reflection of X_3 across X_5 on the Euler line; Shinagawa Euler coefficients (0, 1).
+say: <pause> On the central lines layer, <pause> X four lies on the Euler line through X two, X three, and X five,
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.55]
+symbolic: Euler Line {2, 3, 4, 5} • Orthocenter–Spieker Line {4, 9, 10}
+zoom: X_4, X_2, X_3, X_5, X_9, X_10, X_19, X_8
+active: X_4:gold, {2, 3, 4, 5}:gold, {4, 9, 10, 19}:blue, {4, 8}:pink
+head: Incident Central Lines
+row: Euler Line | {2, 3, 4, 5}:gold
+row: Orthocenter–Spieker | {4, 9, 10, 19}:blue
+row: Fuhrmann Line | {4, 8}:pink
+just: ∵ COLLINEARITIES | EULER & ORTHIC AXES | Reflection of X_3 across X_5 on the Euler line; Shinagawa Euler coefficients (0, 1).
+say: <pause> the Orthocenter–Spieker line through X nine and X ten, <pause> and the Fuhrmann line through X eight.
+
+[bell:insight]
+
+[screen: PROVE | svg: 04_relations.svg | weight: 1.05]
+symbolic: Isogonal Conjugate X_3 • Complement X_3 • Isotomic X_69
+zoom: X_4, X_3, X_69, X_2
+active: X_4:gold, X_3:blue, X_69:green, X_2:orange
+head: Functional Relations
+row: Isogonal Conjugate | X_3:blue
+row: Complement | X_3:blue
+row: Isotomic Conjugate | X_69:green
+row: Cyclocevian Conjugate | X_2:orange
+just: ∵ RELATIONS | ISOGONAL & COMPLEMENTARY PAIR | Circumcircle inverse: X_186 • Midpoint of X_3 and X_4: X_5 (Nine-Point Center).
+say: X four is the isogonal conjugate and anticomplement of the Circumcenter X three, <pause> and the isotomic conjugate of the symmedian point of the anticomplementary triangle, X sixty-nine.
+
+[screen: ∴ | svg: 05_four_triangles.svg | weight: 0.95]
+symbolic: Kimberling (6, 9, 13) Search = -5.676619410927
+head: Reference Triangles | a | b | c
+row: Acute Triangle | 5 | 6 | 7:gold
+row: Right Triangle | 3 | 4 | 5:blue
+row: Kepler Triangle | 1 | √φ | φ:green
+row: Kimberling Triangle | 6 | 9 | 13:purple
+just: ∵ INVARIANCE | KIMBERLING SEARCH VALUE • X_4 | Shortest directed trilinear distance on reference triangle (6, 9, 13): -5.676619410927.
+say: <pause> On the right three-four-five triangle, <pause> all three altitudes concur directly at the right-angled vertex C.

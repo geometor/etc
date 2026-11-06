@@ -23,7 +23,7 @@ def construct_x_02827(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_2827 = ISOGONAL CONJUGATE OF X_2743 on reference triangle ABC."""
-    X_2743 = point_from_barycentrics(model, A, B, C, 0.3125, 1.125, -0.4375, ID="X_2743", classes=["center"])
+    X_2743 = point_from_barycentrics(model, A, B, C, 0.31250023, 1.125, -0.43750023, ID="X_2743", classes=["center"])
     X_2827 = isogonal_conjugate(model, A, B, C, X_2743, ID="X_2827", classes=["selected", "target"])
     X_104 = eval_trilinear_point(model, A, B, C, '1/(-1 + cos(B) + cos(C))', ID="X_104", classes=["center", "incident"])
     X_106 = eval_trilinear_point(model, A, B, C, 'a/(2*a - b - c)', ID="X_106", classes=["center", "incident"])

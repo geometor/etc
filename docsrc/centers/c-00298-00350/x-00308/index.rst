@@ -49,7 +49,7 @@ X_308
 .. collapse:: Functional Relations
    :badge: 11 relations
 
-   * :ref:`X_308 <X_308>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3051
+   * :ref:`X_308 <X_308>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3051 <X_3051>`
    * :ref:`X_308 <X_308>` = isotomic conjugate of :ref:`X_39 <X_39>`
    * :ref:`X_308 <X_308>` = :term:`anticomplement <anticomplement>` of isotomic conjugate of X_31622
    * :ref:`X_308 <X_308>` = anticomplement of polar conjugate of isogonal conjugate of X_23210

@@ -43,14 +43,14 @@ X_1352
    :badge: 17 lines
    :class: line-catalog
 
-   {:ref:`2 <X_2>`, :ref:`98 <X_98>`}, {:ref:`3 <X_3>`, :ref:`66 <X_66>`}, {:ref:`4 <X_4>`, :ref:`69 <X_69>`}, {:ref:`5 <X_5>`, :ref:`6 <X_6>`}, {:ref:`11 <X_11>`, :ref:`613 <X_613>`}, {:ref:`12 <X_12>`, :ref:`611 <X_611>`}, {:ref:`25 <X_25>`, :ref:`343 <X_343>`}, {:ref:`30 <X_30>`, :ref:`599 <X_599>`}, {:ref:`70 <X_70>`, :ref:`1176 <X_1176>`}, {:ref:`193 <X_193>`, :ref:`576 <X_576>`}, {:ref:`206 <X_206>`, :ref:`1209 <X_1209>`}, {:ref:`298 <X_298>`, :ref:`383 <X_383>`}, {:ref:`299 <X_299>`, :ref:`1080 <X_1080>`}, {:ref:`355 <X_355>`, :ref:`518 <X_518>`}, {:ref:`381 <X_381>`, :ref:`524 <X_524>`}, {:ref:`394 <X_394>`, :ref:`426 <X_426>`}, {:ref:`2794 <X_2794>`, 3734}
+   {:ref:`2 <X_2>`, :ref:`98 <X_98>`}, {:ref:`3 <X_3>`, :ref:`66 <X_66>`}, {:ref:`4 <X_4>`, :ref:`69 <X_69>`}, {:ref:`5 <X_5>`, :ref:`6 <X_6>`}, {:ref:`11 <X_11>`, :ref:`613 <X_613>`}, {:ref:`12 <X_12>`, :ref:`611 <X_611>`}, {:ref:`25 <X_25>`, :ref:`343 <X_343>`}, {:ref:`30 <X_30>`, :ref:`599 <X_599>`}, {:ref:`70 <X_70>`, :ref:`1176 <X_1176>`}, {:ref:`193 <X_193>`, :ref:`576 <X_576>`}, {:ref:`206 <X_206>`, :ref:`1209 <X_1209>`}, {:ref:`298 <X_298>`, :ref:`383 <X_383>`}, {:ref:`299 <X_299>`, :ref:`1080 <X_1080>`}, {:ref:`355 <X_355>`, :ref:`518 <X_518>`}, {:ref:`381 <X_381>`, :ref:`524 <X_524>`}, {:ref:`394 <X_394>`, :ref:`426 <X_426>`}, {:ref:`2794 <X_2794>`, :ref:`3734 <X_3734>`}
 
 .. collapse:: Functional Relations
    :badge: 13 relations
 
    * :ref:`X_1352 <X_1352>` = midpoint of :ref:`X_4 <X_4>` and :ref:`X_69 <X_69>`
    * :ref:`X_1352 <X_1352>` = reflection of X_i in X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`141 <X_141>`), (:ref:`6 <X_6>`, :ref:`5 <X_5>`), (:ref:`193 <X_193>`, :ref:`576 <X_576>`)
-   * :ref:`X_1352 <X_1352>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3425
+   * :ref:`X_1352 <X_1352>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3425 <X_3425>`
    * :ref:`X_1352 <X_1352>` = :term:`complement <complement>` of X_6776
    * :ref:`X_1352 <X_1352>` = :term:`anticomplement <anticomplement>` of :ref:`X_182 <X_182>`
    * :ref:`X_1352 <X_1352>` = :ref:`X_327 <X_327>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_2 <X_2>`

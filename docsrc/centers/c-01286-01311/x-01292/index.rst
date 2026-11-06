@@ -24,7 +24,7 @@ X_1292
    :class: note
 
    * **Central Lines:** :g:`{3, 105} <{ 3, 105 }>`, :g:`{4, 120} <{ 4, 120 }>`
-   * **Related Centers:** :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_105 <X_105>` (:ref:`Λ(INCENTER, SYMMEDIAN POINT) <X_105>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_120 <X_120>` (:ref:`-OF-MEDIAL-TRIANGLE <X_120>`)
+   * **Related Centers:** :g:`X_3309 <X_3309>` (:ref:`ISOGONAL CONJUGATE OF X(1292) <X_3309>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_105 <X_105>` (:ref:`Λ(INCENTER, SYMMEDIAN POINT) <X_105>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_120 <X_120>` (:ref:`-OF-MEDIAL-TRIANGLE <X_120>`)
 
 .. signature:: center
 
@@ -45,12 +45,12 @@ X_1292
    :badge: 14 relations
 
    * :ref:`X_1292 <X_1292>` = reflection of X_i in X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`120 <X_120>`), (:ref:`105 <X_105>`, :ref:`3 <X_3>`)
-   * :ref:`X_1292 <X_1292>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3309
+   * :ref:`X_1292 <X_1292>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3309 <X_3309>`
    * :ref:`X_1292 <X_1292>` = :term:`complement <complement>` of X_34547
    * :ref:`X_1292 <X_1292>` = trilinear pole of line :ref:`X_6 <X_6>`\ \ :ref:`X_354 <X_354>`
    * :ref:`X_1292 <X_1292>` = :term:`cevapoint <cevapoint>` of :ref:`X_55 <X_55>` and :ref:`X_513 <X_513>`
    * :ref:`X_1292 <X_1292>` = Ψ(:ref:`X_6 <X_6>`, :ref:`X_354 <X_354>`)
-   * :ref:`X_1292 <X_1292>` = Λ(:ref:`X_1 <X_1>`, X_3309)
+   * :ref:`X_1292 <X_1292>` = Λ(:ref:`X_1 <X_1>`, :ref:`X_3309 <X_3309>`)
    * :ref:`X_1292 <X_1292>` = Λ(:ref:`X_4 <X_4>`, :ref:`X_885 <X_885>`)
    * :ref:`X_1292 <X_1292>` = :ref:`X_127 <X_127>`-of-excentral-triangle
    * :ref:`X_1292 <X_1292>` = :ref:`X_132 <X_132>`-of-hexyl-triangle

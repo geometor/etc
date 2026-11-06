@@ -49,7 +49,7 @@ X_79
    :badge: 14 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, :ref:`30 <X_30>`}, {:ref:`2 <X_2>`, 3647}, {:ref:`8 <X_8>`, :ref:`758 <X_758>`}, {:ref:`9 <X_9>`, :ref:`46 <X_46>`}, {:ref:`12 <X_12>`, :ref:`484 <X_484>`}, {:ref:`21 <X_21>`, :ref:`36 <X_36>`}, {:ref:`33 <X_33>`, :ref:`1063 <X_1063>`}, {:ref:`34 <X_34>`, :ref:`1061 <X_1061>`}, {:ref:`35 <X_35>`, :ref:`226 <X_226>`}, {:ref:`57 <X_57>`, :ref:`90 <X_90>`}, {:ref:`65 <X_65>`, :ref:`80 <X_80>`}, {:ref:`104 <X_104>`, :ref:`946 <X_946>`}, {:ref:`314 <X_314>`, :ref:`320 <X_320>`}, {:ref:`388 <X_388>`, :ref:`1000 <X_1000>`}
+   {:ref:`1 <X_1>`, :ref:`30 <X_30>`}, {:ref:`2 <X_2>`, :ref:`3647 <X_3647>`}, {:ref:`8 <X_8>`, :ref:`758 <X_758>`}, {:ref:`9 <X_9>`, :ref:`46 <X_46>`}, {:ref:`12 <X_12>`, :ref:`484 <X_484>`}, {:ref:`21 <X_21>`, :ref:`36 <X_36>`}, {:ref:`33 <X_33>`, :ref:`1063 <X_1063>`}, {:ref:`34 <X_34>`, :ref:`1061 <X_1061>`}, {:ref:`35 <X_35>`, :ref:`226 <X_226>`}, {:ref:`57 <X_57>`, :ref:`90 <X_90>`}, {:ref:`65 <X_65>`, :ref:`80 <X_80>`}, {:ref:`104 <X_104>`, :ref:`946 <X_946>`}, {:ref:`314 <X_314>`, :ref:`320 <X_320>`}, {:ref:`388 <X_388>`, :ref:`1000 <X_1000>`}
 
 .. collapse:: Functional Relations
    :badge: 14 relations
@@ -59,9 +59,9 @@ X_79
    * :ref:`X_79 <X_79>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_319 <X_319>`
    * :ref:`X_79 <X_79>` = :term:`cevapoint <cevapoint>` of :ref:`X_481 <X_481>` and :ref:`X_482 <X_482>`
    * :ref:`X_79 <X_79>` = :term:`crosssum <crosssum>` of :ref:`X_55 <X_55>` and :ref:`X_1030 <X_1030>`
-   * :ref:`X_79 <X_79>` = :term:`anticomplement <anticomplement>` of X_3647
+   * :ref:`X_79 <X_79>` = :term:`anticomplement <anticomplement>` of :ref:`X_3647 <X_3647>`
    * :ref:`X_79 <X_79>` = :ref:`X_2914 <X_2914>` of :term:`Fuhrmann triangle <fuhrmann-triangle>`
-   * :ref:`X_79 <X_79>` = :term:`antigonal image <antigonal-image>` of X_3065
+   * :ref:`X_79 <X_79>` = :term:`antigonal image <antigonal-image>` of :ref:`X_3065 <X_3065>`
    * :ref:`X_79 <X_79>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_650 <X_650>`\ X_4802
    * :ref:`X_79 <X_79>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X_80 <X_80>`
    * :ref:`X_79 <X_79>` = Hofstadter -1/2 point

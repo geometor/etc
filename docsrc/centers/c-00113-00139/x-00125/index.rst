@@ -52,7 +52,7 @@ X_125
 .. collapse:: Functional Relations
    :badge: 43 relations
 
-   * :ref:`X_125 <X_125>` = midpoint of X_i and X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`265 <X_265>`), (:ref:`4 <X_4>`, :ref:`74 <X_74>`), (:ref:`6 <X_6>`, :ref:`67 <X_67>`), (:ref:`110 <X_110>`, 3448)
+   * :ref:`X_125 <X_125>` = midpoint of X_i and X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`265 <X_265>`), (:ref:`4 <X_4>`, :ref:`74 <X_74>`), (:ref:`6 <X_6>`, :ref:`67 <X_67>`), (:ref:`110 <X_110>`, :ref:`3448 <X_3448>`)
    * :ref:`X_125 <X_125>` = reflection of X_i in X_j for these (i,j): (:ref:`113 <X_113>`, :ref:`5 <X_5>`), (:ref:`185 <X_185>`, :ref:`974 <X_974>`), (:ref:`1495 <X_1495>`, :ref:`468 <X_468>`), (:ref:`1511 <X_1511>`, :ref:`140 <X_140>`), (:ref:`1539 <X_1539>`, :ref:`546 <X_546>`)
    * :ref:`X_125 <X_125>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_250 <X_250>`
    * :ref:`X_125 <X_125>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_18020
@@ -90,9 +90,9 @@ X_125
    * :ref:`X_125 <X_125>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X_100 <X_100>`
    * :ref:`X_125 <X_125>` = 1st-Brocard-isotomic conjugate of X_35901
    * :ref:`X_125 <X_125>` = antipode of :ref:`X_1495 <X_1495>` in Walsmith rectangular hyperbola
-   * :ref:`X_125 <X_125>` = orthocenter of :ref:`X_6 <X_6>`\ \ :ref:`X_113 <X_113>`\ X_3569
-   * :ref:`X_125 <X_125>` = orthocenter of :ref:`X_110 <X_110>`\ \ :ref:`X_125 <X_125>`\ X_3569
-   * :ref:`X_125 <X_125>` = orthocenter of :ref:`X_1495 <X_1495>`\ X_3569X_3580
+   * :ref:`X_125 <X_125>` = orthocenter of :ref:`X_6 <X_6>`\ \ :ref:`X_113 <X_113>`\ \ :ref:`X_3569 <X_3569>`
+   * :ref:`X_125 <X_125>` = orthocenter of :ref:`X_110 <X_110>`\ \ :ref:`X_125 <X_125>`\ \ :ref:`X_3569 <X_3569>`
+   * :ref:`X_125 <X_125>` = orthocenter of :ref:`X_1495 <X_1495>`\ \ :ref:`X_3569 <X_3569>`\ \ :ref:`X_3580 <X_3580>`
    * :ref:`X_125 <X_125>` = polar conjugate of X_23582
    * :ref:`X_125 <X_125>` = Moses-radical-circle-inverse of X_38974
 

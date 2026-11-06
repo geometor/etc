@@ -45,9 +45,9 @@ X_238
    * :ref:`X_238 <X_238>` = reflection of :ref:`X_1 <X_1>` in :ref:`X_1297 <X_1297>`
    * :ref:`X_238 <X_238>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_291 <X_291>`
    * :ref:`X_238 <X_238>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_334 <X_334>`
-   * :ref:`X_238 <X_238>` = :term:`anticomplement <anticomplement>` of X_3836
+   * :ref:`X_238 <X_238>` = :term:`anticomplement <anticomplement>` of :ref:`X_3836 <X_3836>`
    * :ref:`X_238 <X_238>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`105 <X_105>`, :ref:`1 <X_1>`), (:ref:`292 <X_292>`, :ref:`171 <X_171>`)
-   * :ref:`X_238 <X_238>` = :ref:`X_659 <X_659>`-:term:`cross conjugate <cross-conjugate>` of X_3573
+   * :ref:`X_238 <X_238>` = :ref:`X_659 <X_659>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_3573 <X_3573>`
    * :ref:`X_238 <X_238>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`10 <X_10>`, :ref:`726 <X_726>`), (:ref:`42 <X_42>`, :ref:`672 <X_672>`), (:ref:`239 <X_239>`, :ref:`894 <X_894>`)
    * :ref:`X_238 <X_238>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_37 <X_37>`\ \ :ref:`X_513 <X_513>`
    * :ref:`X_238 <X_238>` = X_i-:term:`Hirst inverse <hirst-inverse>` of X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`6 <X_6>`), (:ref:`43 <X_43>`, :ref:`55 <X_55>`)

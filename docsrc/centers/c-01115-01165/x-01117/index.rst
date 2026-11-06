@@ -34,13 +34,13 @@ X_1117
    :badge: 8 relations
 
    * :ref:`X_1117 <X_1117>` = X_13582-:term:`Ceva conjugate <ceva-conjugate>` of X_11071
-   * :ref:`X_1117 <X_1117>` = :term:`cevapoint <cevapoint>` of X_3471 and X_5671
+   * :ref:`X_1117 <X_1117>` = :term:`cevapoint <cevapoint>` of :ref:`X_3471 <X_3471>` and X_5671
    * :ref:`X_1117 <X_1117>` = :term:`isogonal conjugate <isogonal-conjugate>` of inverse-in-circumcircle of isogonal conjugate of :ref:`X_399 <X_399>`
    * :ref:`X_1117 <X_1117>` = antigonal conjugate of :ref:`X_399 <X_399>`
    * :ref:`X_1117 <X_1117>` = syngonal conjugate of X_10264
    * :ref:`X_1117 <X_1117>` = barycentric product :ref:`X_1272 <X_1272>`\ \*X_11071
    * :ref:`X_1117 <X_1117>` = barycentric product :ref:`X_1989 <X_1989>`\ \ :ref:`X_1272 <X_1272>`\ X_13582
-   * :ref:`X_1117 <X_1117>` = barycentric quotient X_i/X_j for these {i,j}: {11071, :ref:`1138 <X_1138>`}, {11074, 3470}
+   * :ref:`X_1117 <X_1117>` = barycentric quotient X_i/X_j for these {i,j}: {11071, :ref:`1138 <X_1138>`}, {11074, :ref:`3470 <X_3470>`}
 
 .. toctree::
    :hidden:

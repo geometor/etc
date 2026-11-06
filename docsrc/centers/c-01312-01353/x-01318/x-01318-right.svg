@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.313333 -1.110000 1.626667 1.220000" data-initial-viewbox="-0.313333 -1.110000 1.626667 1.220000" preserveAspectRatio="xMidYMid meet">
+<svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.313333 -1.110000 1.626667 1.220000" data-initial-viewbox="-0.313333 -1.110000 1.626667 1.220000" data-target-r-px="10.5" preserveAspectRatio="xMidYMid meet">
   <style>
 :root {
     --background-color: #121212;
@@ -223,6 +223,14 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
     font-weight: 700;
 }
 
+#labels text.dense-label {
+    display: none;
+}
+
+#labels text.dense-label.hover-label {
+    display: block !important;
+}
+
 .etc-svg-stage {
     position: relative;
     width: 100%;
@@ -338,8 +346,8 @@ figure:hover .etc-svg-toolbar {
     <line data-id="[ C A ]" data-name="Sideline CA (Side b)" class="line sideline" data-category="elements" x1="640.64000" y1="-480.48000" x2="-639.36000" y2="479.52000"><title>[ C A ]: Sideline CA (Side b)</title></line>
     <line data-id="{ 36, 106 }" data-name="Central Line L(36, 106)" class="line central_line" data-category="elements" x1="1.00000" y1="-1000.99988" x2="1.00000" y2="998.99988"><title>{ 36, 106 }: Central Line L(36, 106)</title></line>
     <line data-id="{ 88, 517 }" data-name="Central Line L(88, 517)" class="line central_line" data-category="elements" x1="197.18557" y1="674.29553" x2="-195.18557" y2="-674.29553"><title>{ 88, 517 }: Central Line L(88, 517)</title></line>
-    <line data-id="{ 1, 1168 }" data-name="Central Line L(1, 1168)" class="line central_line incident" data-category="elements" x1="-399.40015" y1="-200.19990" x2="400.60015" y2="199.79990"><title>{ 1, 1168 }: Central Line L(1, 1168)</title></line>
-    <line data-id="{ 679, 1319 }" data-name="Central Line L(679, 1319)" class="line central_line incident" data-category="elements" x1="201.00020" y1="600.00000" x2="-199.00020" y2="-600.00000"><title>{ 679, 1319 }: Central Line L(679, 1319)</title></line>
+    <line data-id="{ 1, 1168 }" data-name="Central Line L(1, 1168)" class="line central_line incident" data-category="elements" x1="-399.40020" y1="-200.20000" x2="400.60020" y2="199.80000"><title>{ 1, 1168 }: Central Line L(1, 1168)</title></line>
+    <line data-id="{ 679, 1319 }" data-name="Central Line L(679, 1319)" class="line central_line incident" data-category="elements" x1="201.00030" y1="600.00000" x2="-199.00030" y2="-600.00000"><title>{ 679, 1319 }: Central Line L(679, 1319)</title></line>
   </g>
   <g id="points">
     <circle data-id="A" data-name="Vertex A" class="point given vertex" data-category="points" cx="0.000000" cy="-0.000000" r="0.015250"><title>A = Vertex A (0.0000, 0.0000)</title></circle>
@@ -416,10 +424,11 @@ figure:hover .etc-svg-toolbar {
         const vb = getViewBox();
         const unitsPerPx = vb[2] / widthPx;
 
+        const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
         pointEls.forEach(c => {
             const isTarget = c.classList.contains('target') || c.classList.contains('selected');
             const isGuide = c.classList.contains('guide');
-            const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);
+            const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
             c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
         });
 
@@ -803,6 +812,18 @@ figure:hover .etc-svg-toolbar {
         isPanning = false;
         svg.classList.remove('is-panning');
         clearHover();
+    });
+
+    svg.addEventListener('click', (event) => {
+        if (didDrag) return;
+        const pt = event.target.closest('circle[data-id]');
+        if (!pt) return;
+        const pid = pt.getAttribute('data-id') || '';
+        const m = pid.match(/^X_(\d+)$/);
+        if (m && typeof window !== 'undefined' && window.location && window.location.pathname.includes('/c-') && !window.location.pathname.includes('/x-')) {
+            const slug = 'x-' + m[1].padStart(5, '0');
+            window.location.href = `${slug}/index.html`;
+        }
     });
 
     svg.addEventListener('dblclick', (event) => {

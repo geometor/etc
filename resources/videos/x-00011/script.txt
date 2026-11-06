@@ -1,0 +1,83 @@
+center: X_11
+title: FEUERBACH POINT
+folio: Kimberling ETC • Collection 1 (X_1–X_19)
+enunciation: The unique point of internal tangency between the inscribed circle and the nine-point circle of triangle ABC.
+
+[bell:proposition]
+
+[screen: CONSTRUCT | svg: 01_primary.svg | weight: 1]
+symbolic: X_11 = Feuerbach Point • Incircle  tangent to Nine-Point Circle
+zoom: A, B, C
+active: X_11:gold, incircle:pink
+head: Primary Construction
+row: Target Center | X_11 (Feuerbach):gold
+row: Inscribed Circle | Incircle (X_1):muted
+row: Nine-Point Circle | Nine-Point (X_5):muted
+just: ∵ CONCURRENCE | FEUERBACH'S THEOREM (1822) | The nine-point circle is tangent to the incircle at X_11 and externally tangent to all three excircles.
+say: Discovered by Karl Wilhelm Feuerbach in eighteen twenty-two, <pause> X eleven is the Feuerbach Point:
+
+[screen: GOAL | svg: 01_primary.svg | weight: 1 | punchline: true]
+symbolic: X_11 = Feuerbach Point • Incircle  tangent to Nine-Point Circle
+zoom: X_11, incircle, nine_point_circle, X_11, X_1, X_5
+thumb_zoom: A, B, C
+active: X_11:gold, incircle:pink, nine_point_circle:teal, X_1:blue, X_5:blue
+head: Primary Construction
+row: Target Center | X_11 (Feuerbach):gold
+row: Inscribed Circle | Incircle (X_1):pink
+row: Nine-Point Circle | Nine-Point (X_5):teal
+just: ∵ DEFINITION | FEUERBACH'S THEOREM (1822) | The nine-point circle is tangent to the incircle at X_11 and externally tangent to all three excircles.
+say: <pause> the celebrated point where the incircle centered at X one and the nine-point circle centered at X five kiss in internal tangency.
+
+[bell:construction]
+
+[screen: ASSERT | svg: 02_coordinates.svg | weight: 1.15]
+symbolic: Trilinears 1-cos(B-C) : : • Barycentrics (s-a)(b-c)² : :
+section: Trilinear Distances | α = 1 − cos(B − C):gold | β = 1 − cos(C − A):blue | γ = 1 − cos(A − B):green
+section: Barycentric Sub-Areas | u = (s − a)(b − c)²:gold | v = (s − b)(c − a)²:blue | w = (s − c)(a − b)²:green
+just: ∵ COORDINATES | TANGENCY COORDINATE SIGNATURE | On acute triangle (5, 6, 7), barycentric sub-areas are 4(1)² : 3(2)² : 2(1)² = 2 : 6 : 1.
+say: Its trilinear coordinates are one minus cosine of B minus C, <pause> to one minus cosine of C minus A, <pause> to one minus cosine of A minus B, <pause> with algebraic barycentrics s minus a times b minus c squared.
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.5]
+symbolic: Feuerbach Line {1, 5, 11, 12} • Line {2, 11, 55} • Line {4, 11, 56}
+zoom: X_11, X_1, X_5, X_12
+active: X_11:gold, {1, 5, 11, 12}:teal
+head: Incident Central Lines
+row: Feuerbach Line | {1, 5, 11, 12}:teal
+row: Centroid–Insimilicenter | {2, 11, 55}:muted
+row: Orthocenter–Exsimilicenter | {4, 11, 56}:muted
+just: ∵ PRIMARY AXIS | LINE OF CENTERS X_1–X_5 | Collinear with Incenter X_1 and Nine-Point Center X_5 since d(X_1, X_5) = R/2 - r.
+say: <pause> Because the point of tangency of two circles always lies on their line of centers,
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.55]
+symbolic: Feuerbach Line {1, 5, 11, 12} • Line {2, 11, 55} • Line {4, 11, 56}
+zoom: X_11, X_1, X_5, X_12, X_2, X_55, X_4, X_56
+active: X_11:gold, {1, 5, 11, 12}:teal, {2, 11, 55}:blue, {4, 11, 56}:green
+head: Incident Central Lines
+row: Feuerbach Line | {1, 5, 11, 12}:teal
+row: Centroid–Insimilicenter | {2, 11, 55}:blue
+row: Orthocenter–Exsimilicenter | {4, 11, 56}:green
+just: ∵ COLLINEARITIES | LINE OF CENTERS X_1–X_5 | Collinear with Incenter X_1 and Nine-Point Center X_5 since d(X_1, X_5) = R/2 - r.
+say: <pause> X eleven lies directly on the Feuerbach line through X one, X five, and X twelve.
+
+[bell:insight]
+
+[screen: PROVE | svg: 04_relations.svg | weight: 1.05]
+symbolic: {X_1, X_5}-Harmonic Conjugate X_12 • Isogonal X_59 • Complement X_100
+zoom: X_11, X_12, X_5, X_59, X_3
+active: X_11:gold, X_12:blue, X_5:green, X_59:orange
+head: Functional Relations
+row: Harmonic Conjugate | X_12:blue
+row: Tangency Centers | X_1, X_5:green
+row: Isogonal Conjugate | X_59:orange
+just: ∵ RELATIONS | HARMONIC DIVISION ON FEUERBACH LINE | X_100 (anticomplement of X_11) lies on the circumcircle of △ABC.
+say: X eleven is the harmonic conjugate of X twelve with respect to X one and X five, <pause> the isogonal conjugate of X fifty-nine,
+
+[screen: ∴ | svg: 05_four_triangles.svg | weight: 0.95]
+symbolic: Kimberling (6, 9, 13) Search = 2.643135121245
+head: Reference Triangles | a | b | c
+row: Acute Triangle | 5 | 6 | 7:gold
+row: Right Triangle | 3 | 4 | 5:blue
+row: Kepler Triangle | 1 | √φ | φ:green
+row: Kimberling Triangle | 6 | 9 | 13:purple
+just: ∵ INVARIANCE | KIMBERLING SEARCH VALUE • X_11 | Shortest directed trilinear distance on reference triangle (6, 9, 13): 2.643135121245.
+say: <pause> and lies on the circumcircle of the intouch triangle and the pedal circle of the Spieker center.

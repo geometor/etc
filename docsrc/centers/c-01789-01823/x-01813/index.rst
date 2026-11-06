@@ -24,7 +24,7 @@ X_1813
    :class: note
 
    * **Central Lines:** :g:`{48, 77} <{ 48, 77 }>`, :g:`{109, 110} <{ 109, 110 }>`
-   * **Related Centers:** :g:`X_48 <X_48>` (:ref:`CROSSPOINT OF X(1) AND X(63) <X_48>`), :g:`X_77 <X_77>` (:ref:`ISOGONAL CONJUGATE OF X(33) <X_77>`), :g:`X_109 <X_109>` (:ref:`Ψ(INCENTER, CIRCUMCENTER) <X_109>`), :g:`X_110 <X_110>` (:ref:`FOCUS OF KIEPERT PARABOLA <X_110>`)
+   * **Related Centers:** :g:`X_3064 <X_3064>` (:ref:`ISOGONAL CONJUGATE OF X(1813) <X_3064>`), :g:`X_48 <X_48>` (:ref:`CROSSPOINT OF X(1) AND X(63) <X_48>`), :g:`X_77 <X_77>` (:ref:`ISOGONAL CONJUGATE OF X(33) <X_77>`), :g:`X_109 <X_109>` (:ref:`Ψ(INCENTER, CIRCUMCENTER) <X_109>`), :g:`X_110 <X_110>` (:ref:`FOCUS OF KIEPERT PARABOLA <X_110>`)
 
 .. signature:: center
 
@@ -45,7 +45,7 @@ X_1813
 .. collapse:: Functional Relations
    :badge: 7 relations
 
-   * :ref:`X_1813 <X_1813>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3064
+   * :ref:`X_1813 <X_1813>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3064 <X_3064>`
    * :ref:`X_1813 <X_1813>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`662 <X_662>`, :ref:`651 <X_651>`), (:ref:`664 <X_664>`, :ref:`109 <X_109>`)
    * :ref:`X_1813 <X_1813>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`652 <X_652>`), (:ref:`48 <X_48>`, :ref:`1459 <X_1459>`), (:ref:`905 <X_905>`, :ref:`1214 <X_1214>`)
    * :ref:`X_1813 <X_1813>` = :ref:`X_219 <X_219>`-cross conjugate of :ref:`X_59 <X_59>`

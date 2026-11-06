@@ -44,7 +44,7 @@ X_2322
    * :ref:`X_2322 <X_2322>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`9 <X_9>`, :ref:`281 <X_281>`), (:ref:`19 <X_19>`, :ref:`1249 <X_1249>`), (:ref:`2328 <X_2328>`, :ref:`2332 <X_2332>`)
    * :ref:`X_2322 <X_2322>` = :ref:`X_9 <X_9>`-cross conjugate of :ref:`X_2287 <X_2287>`
    * :ref:`X_2322 <X_2322>` = :term:`crosssum <crosssum>` of :ref:`X_1409 <X_1409>` and :ref:`X_1410 <X_1410>`
-   * :ref:`X_2322 <X_2322>` = polar conjugate of X_3668
+   * :ref:`X_2322 <X_2322>` = polar conjugate of :ref:`X_3668 <X_3668>`
 
 .. toctree::
    :hidden:

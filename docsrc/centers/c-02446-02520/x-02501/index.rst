@@ -30,7 +30,7 @@ X_2501
 
    | **Trilinears:** :math:`\tan A \sin(B - C) : :`
    | **Barycentrics:** :math:`S_{B}`\ :math:`S_{C}(S_{B} - S_{C})` : :math:`S_{C}`\ :math:`S_{A}(S_{C} - S_{A})` : :math:`S_{A}`\ :math:`S_{B}(S_{A} - S_{B})`
-   | **Search Value (6, 9, 13):** :math:`3.420018149671`
+   | **Search Value (6, 9, 13):** :math:`-2.124582703505`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
@@ -45,7 +45,7 @@ X_2501
    :badge: 12 lines
    :class: line-catalog
 
-   {:ref:`4 <X_4>`, :ref:`1499 <X_1499>`}, {:ref:`25 <X_25>`, :ref:`669 <X_669>`}, {:ref:`107 <X_107>`, :ref:`685 <X_685>`}, {:ref:`112 <X_112>`, :ref:`476 <X_476>`}, {:ref:`230 <X_230>`, :ref:`231 <X_231>`}, {:ref:`297 <X_297>`, :ref:`525 <X_525>`}, {:ref:`393 <X_393>`, :ref:`2433 <X_2433>`}, {:ref:`419 <X_419>`, 3288}, {:ref:`421 <X_421>`, :ref:`2623 <X_2623>`}, {:ref:`450 <X_450>`, :ref:`2451 <X_2451>`}, {:ref:`460 <X_460>`, :ref:`512 <X_512>`}, {:ref:`648 <X_648>`, :ref:`892 <X_892>`}
+   {:ref:`4 <X_4>`, :ref:`1499 <X_1499>`}, {:ref:`25 <X_25>`, :ref:`669 <X_669>`}, {:ref:`107 <X_107>`, :ref:`685 <X_685>`}, {:ref:`112 <X_112>`, :ref:`476 <X_476>`}, {:ref:`230 <X_230>`, :ref:`231 <X_231>`}, {:ref:`297 <X_297>`, :ref:`525 <X_525>`}, {:ref:`393 <X_393>`, :ref:`2433 <X_2433>`}, {:ref:`419 <X_419>`, :ref:`3288 <X_3288>`}, {:ref:`421 <X_421>`, :ref:`2623 <X_2623>`}, {:ref:`450 <X_450>`, :ref:`2451 <X_2451>`}, {:ref:`460 <X_460>`, :ref:`512 <X_512>`}, {:ref:`648 <X_648>`, :ref:`892 <X_892>`}
 
 .. collapse:: Functional Relations
    :badge: 24 relations

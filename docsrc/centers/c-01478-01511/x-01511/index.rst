@@ -56,12 +56,12 @@ X_1511
    * :ref:`X_1511 <X_1511>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X_2072 <X_2072>`
    * :ref:`X_1511 <X_1511>` = :term:`isotomic conjugate <isotomic-conjugate>` of polar conjugate of X_39176
    * :ref:`X_1511 <X_1511>` = :term:`crosssum <crosssum>` of circumcircle-intercepts of line PU(174) (line :ref:`X_4 <X_4>`\ \ :ref:`X_523 <X_523>`)
-   * :ref:`X_1511 <X_1511>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`2 <X_2>`, 3284), (:ref:`3 <X_3>`, :ref:`1154 <X_1154>`), (:ref:`110 <X_110>`, :ref:`526 <X_526>`)
+   * :ref:`X_1511 <X_1511>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`3284 <X_3284>`), (:ref:`3 <X_3>`, :ref:`1154 <X_1154>`), (:ref:`110 <X_110>`, :ref:`526 <X_526>`)
    * :ref:`X_1511 <X_1511>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`340 <X_340>`), (:ref:`15 <X_15>`, :ref:`16 <X_16>`)
    * :ref:`X_1511 <X_1511>` = crosssum of :ref:`X_13 <X_13>` and :ref:`X_14 <X_14>`
    * :ref:`X_1511 <X_1511>` = :term:`crossdifference <crossdifference>` of every pair of points on the line :ref:`X_1637 <X_1637>`\ \ :ref:`X_1989 <X_1989>`
    * :ref:`X_1511 <X_1511>` = inverse-in-circumcircle of :ref:`X_399 <X_399>`
-   * :ref:`X_1511 <X_1511>` = perspector of the circumconic centered at X_3284
+   * :ref:`X_1511 <X_1511>` = perspector of the circumconic centered at :ref:`X_3284 <X_3284>`
    * :ref:`X_1511 <X_1511>` = {:ref:`X_3 <X_3>`,\ :ref:`X_399 <X_399>`}-harmonic conjugate of :ref:`X_74 <X_74>`
    * :ref:`X_1511 <X_1511>` = orthocentroidal-to-:g:`ABC << A B C >>` :term:`similarity image <similarity-image>` of :ref:`X_5 <X_5>`
    * :ref:`X_1511 <X_1511>` = 4th-Brocard-to-circumsymmedial similarity image of :ref:`X_5 <X_5>`

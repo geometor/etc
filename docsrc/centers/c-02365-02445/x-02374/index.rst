@@ -49,11 +49,11 @@ X_2374
    * :ref:`X_2374 <X_2374>` = :ref:`X_524 <X_524>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_4 <X_4>`
    * :ref:`X_2374 <X_2374>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_8681
    * :ref:`X_2374 <X_2374>` = Λ(:ref:`X_6 <X_6>`, :ref:`X_1196 <X_1196>`)
-   * :ref:`X_2374 <X_2374>` = Ψ(:ref:`X_6 <X_6>`, X_3566)
+   * :ref:`X_2374 <X_2374>` = Ψ(:ref:`X_6 <X_6>`, :ref:`X_3566 <X_3566>`)
    * :ref:`X_2374 <X_2374>` = inverse-in-polar-circle of :ref:`X_126 <X_126>`
-   * :ref:`X_2374 <X_2374>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_6 <X_6>`\ X_3566
+   * :ref:`X_2374 <X_2374>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_6 <X_6>`\ \ :ref:`X_3566 <X_3566>`
    * :ref:`X_2374 <X_2374>` = polar conjugate of :term:`anticomplement <anticomplement>` of X_6390
-   * :ref:`X_2374 <X_2374>` = :ref:`X_63 <X_63>`-:term:`isoconjugate <isoconjugate>` of X_3291
+   * :ref:`X_2374 <X_2374>` = :ref:`X_63 <X_63>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_3291 <X_3291>`
 
 .. toctree::
    :hidden:

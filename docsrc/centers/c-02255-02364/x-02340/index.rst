@@ -42,7 +42,7 @@ X_2340
    :badge: 6 relations
 
    * :ref:`X_2340 <X_2340>` = reflection of :ref:`X_1458 <X_1458>` in :ref:`X_1818 <X_1818>`
-   * :ref:`X_2340 <X_2340>` = :term:`isogonal conjugate <isogonal-conjugate>` of :term:`isotomic conjugate <isotomic-conjugate>` of X_3717
+   * :ref:`X_2340 <X_2340>` = :term:`isogonal conjugate <isogonal-conjugate>` of :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3717 <X_3717>`
    * :ref:`X_2340 <X_2340>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_57 <X_57>`\ \ :ref:`X_649 <X_649>`
    * :ref:`X_2340 <X_2340>` = :ref:`X_2338 <X_2338>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_220 <X_220>`
    * :ref:`X_2340 <X_2340>` = :term:`crosspoint <crosspoint>` of :ref:`X_677 <X_677>` and :ref:`X_1252 <X_1252>`

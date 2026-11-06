@@ -54,15 +54,15 @@ X_2968
    * :ref:`X_2968 <X_2968>` = :term:`crosspoint <crosspoint>` of :ref:`X_189 <X_189>` and :ref:`X_693 <X_693>`
    * :ref:`X_2968 <X_2968>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`184 <X_184>`, :ref:`1415 <X_1415>`), (:ref:`198 <X_198>`, :ref:`692 <X_692>`)
    * :ref:`X_2968 <X_2968>` = polar conjugate of X_23984
-   * :ref:`X_2968 <X_2968>` = perspector of circumconic centered at X_3239
-   * :ref:`X_2968 <X_2968>` = :ref:`X_2 <X_2>`-Ceva conjugate of X_3239
+   * :ref:`X_2968 <X_2968>` = perspector of circumconic centered at :ref:`X_3239 <X_3239>`
+   * :ref:`X_2968 <X_2968>` = :ref:`X_2 <X_2>`-Ceva conjugate of :ref:`X_3239 <X_3239>`
 
 Notes
 -----
 
 .. container:: note-item
 
-   :ref:`X_2968 <X_2968>` is the center of circumconic (hyperbola {{:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_8 <X_8>`,\ :ref:`X_280 <X_280>`}}) that is the locus of :term:`trilinear poles <trilinear-pole>` of lines passing through X_3239. This hyperbola is the :term:`isotomic conjugate <isotomic-conjugate>` of the Soddy line. (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
+   :ref:`X_2968 <X_2968>` is the center of circumconic (hyperbola {{:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_8 <X_8>`,\ :ref:`X_280 <X_280>`}}) that is the locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X_3239 <X_3239>`. This hyperbola is the :term:`isotomic conjugate <isotomic-conjugate>` of the Soddy line. (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
 
 .. toctree::
    :hidden:

@@ -8,7 +8,7 @@ X_455
 
 .. enunciation::
 
-   :ref:`X_455 <X_455>` = :ref:`X_1370 <X_1370>`-:term:`Ceva conjugate <ceva-conjugate>` of X_3162
+   :ref:`X_455 <X_455>` = :ref:`X_1370 <X_1370>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_3162 <X_3162>`
 
 .. figure:: x-00455.svg
    :alt: X_455 — EULER X_159-11th-SUBSTITUTION POINT

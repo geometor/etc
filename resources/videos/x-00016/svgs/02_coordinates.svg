@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" width="100%" height="100%">
+  <defs>
+    <filter id="glow-coord" filterUnits="userSpaceOnUse" x="-100" y="-100" width="1200" height="960">
+      <feGaussianBlur stdDeviation="4.5" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Shaded Barycentric Sub-Triangles: u = Area(X_n BC), v = Area(X_n CA), w = Area(X_n AB) -->
+  <polygon points="726.8,48.0 485.3,712.0 374.5,540.6"
+           fill="rgba(232, 184, 90, 0.19)" stroke="none" />
+  <polygon points="726.8,48.0 374.5,540.6 199.5,712.0"
+           fill="rgba(56, 189, 248, 0.17)" stroke="none" />
+  <polygon points="726.8,48.0 199.5,712.0 485.3,712.0"
+           fill="rgba(94, 194, 126, 0.17)" stroke="none" />
+
+  <!-- Extended sidelines (when pedal feet fall outside segment) -->
+  <line x1="485.3" y1="712.0" x2="253.7" y2="353.8" stroke="#64748b" stroke-width="1.8" stroke-dasharray="5,5" />
+  <line x1="374.5" y1="540.6" x2="800.5" y2="123.2" stroke="#64748b" stroke-width="1.8" stroke-dasharray="5,5" />
+  <line x1="199.5" y1="712.0" x2="726.8" y2="712.0" stroke="#64748b" stroke-width="1.8" stroke-dasharray="5,5" />
+
+  <!-- Reference Triangle ABC (dotted so only perpendicular struts are solid) -->
+  <polygon points="199.5,712.0 485.3,712.0 374.5,540.6"
+           fill="none" stroke="#cbd5e1" stroke-width="2.6" stroke-dasharray="2, 4.5" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Barycentric partition spokes (dash-dot) from X_n to vertices A, B, C -->
+  <line x1="726.8" y1="48.0" x2="199.5" y2="712.0" stroke="#cbd5e1" stroke-width="2.2" stroke-dasharray="10,5,2.5,5" opacity="0.65" />
+  <line x1="726.8" y1="48.0" x2="485.3" y2="712.0" stroke="#cbd5e1" stroke-width="2.2" stroke-dasharray="10,5,2.5,5" opacity="0.65" />
+  <line x1="726.8" y1="48.0" x2="374.5" y2="540.6" stroke="#cbd5e1" stroke-width="2.2" stroke-dasharray="10,5,2.5,5" opacity="0.65" />
+
+  <!-- Right-angle markers at pedal feet -->
+  <path d="M 261.3,365.5 L 273.1,357.9 L 265.5,346.2" fill="none" stroke="#e8b85a" stroke-width="2.4" opacity="0.9" />
+  <path d="M 790.5,133.0 L 780.7,123.0 L 790.7,113.2" fill="none" stroke="#38bdf8" stroke-width="2.4" opacity="0.9" />
+  <path d="M 712.8,712.0 L 712.8,698.0 L 726.8,698.0" fill="none" stroke="#5ec27e" stroke-width="2.4" opacity="0.9" />
+
+  <!-- Three Directed Perpendicular Struts (alpha, beta, gamma) -->
+  <line x1="726.8" y1="48.0" x2="253.7" y2="353.8"
+        stroke="#e8b85a" stroke-width="5.0" stroke-linecap="round" filter="url(#glow-coord)" />
+  <line x1="726.8" y1="48.0" x2="800.5" y2="123.2"
+        stroke="#38bdf8" stroke-width="5.0" stroke-linecap="round" filter="url(#glow-coord)" />
+  <line x1="726.8" y1="48.0" x2="726.8" y2="712.0"
+        stroke="#5ec27e" stroke-width="5.0" stroke-linecap="round" filter="url(#glow-coord)" />
+
+  <!-- Pedal feet -->
+  <circle cx="253.7" cy="353.8" r="5.8" fill="#e8b85a" stroke="#0d111a" stroke-width="2" />
+  <circle cx="800.5" cy="123.2" r="5.8" fill="#38bdf8" stroke="#0d111a" stroke-width="2" />
+  <circle cx="726.8" cy="712.0" r="5.8" fill="#5ec27e" stroke="#0d111a" stroke-width="2" />
+
+  <!-- Vertices A, B, C -->
+  <circle cx="199.5" cy="712.0" r="7.2" fill="#66ff66" stroke="#0d111a" stroke-width="2.2" />
+  <circle cx="485.3" cy="712.0" r="7.2" fill="#66ff66" stroke="#0d111a" stroke-width="2.2" />
+  <circle cx="374.5" cy="540.6" r="7.2" fill="#f8f6f0" stroke="#0d111a" stroke-width="2.2" />
+
+  <text x="167.5" y="738.0" fill="#88ff88" font-family="Georgia, serif" font-size="28" font-weight="bold">A</text>
+  <text x="501.3" y="738.0" fill="#88ff88" font-family="Georgia, serif" font-size="28" font-weight="bold">B</text>
+  <text x="364.5" y="522.6" fill="#f8f6f0" font-family="Georgia, serif" font-size="28" font-weight="bold">C</text>
+
+  <!-- Strut Labels alpha, beta, gamma -->
+  <g font-family="Georgia, serif" font-size="26" font-weight="bold">
+    <rect x="500.2" y="170.9" width="34" height="30" rx="6" fill="rgba(13, 17, 26, 0.86)" />
+    <text x="508.2" y="194.9" fill="#e8b85a">α</text>
+    <rect x="729.6" y="55.6" width="34" height="30" rx="6" fill="rgba(13, 17, 26, 0.86)" />
+    <text x="737.6" y="79.6" fill="#38bdf8">β</text>
+    <rect x="738.8" y="362.0" width="34" height="30" rx="6" fill="rgba(13, 17, 26, 0.86)" />
+    <text x="746.8" y="386.0" fill="#5ec27e">γ</text>
+  </g>
+
+  <!-- Center X_n -->
+  <circle cx="726.8" cy="48.0" r="10.5" fill="#ffd700" stroke="#00ffff" stroke-width="3" filter="url(#glow-coord)" />
+  <rect x="692.8" y="2.0" width="68" height="30" rx="6" fill="rgba(13, 17, 26, 0.92)" stroke="#e8b85a" stroke-width="1.5" />
+  <text x="726.8" y="23.0" text-anchor="middle" fill="#ffd700" font-family="JetBrains Mono, monospace" font-size="19" font-weight="bold">X<tspan dy="0.28em" font-size="74%">16</tspan></text>
+</svg>

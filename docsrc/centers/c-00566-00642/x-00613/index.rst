@@ -26,7 +26,7 @@ X_613
 
    | **Trilinears:** :math:`W - \sin A : W - \sin B : W - \sin C`, where :math:`W = (a^{2} + b^{2} + c^{2})/(4 \operatorname{area})`
    | **Barycentrics:** :math:`a(W - \sin A) : b(W - \sin B) : c(W - \sin C)`
-   | **Search Value (6, 9, 13):** :math:`-0.784134911998`
+   | **Search Value (6, 9, 13):** :math:`1.896183052451`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form

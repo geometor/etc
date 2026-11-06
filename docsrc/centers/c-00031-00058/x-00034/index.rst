@@ -56,7 +56,7 @@ X_34
    :badge: 18 relations
 
    * :ref:`X_34 <X_34>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_78 <X_78>`
-   * :ref:`X_34 <X_34>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3718
+   * :ref:`X_34 <X_34>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3718 <X_3718>`
    * :ref:`X_34 <X_34>` = :term:`anticomplement <anticomplement>` of X_34823
    * :ref:`X_34 <X_34>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`207 <X_207>`), (:ref:`4 <X_4>`, :ref:`208 <X_208>`), (:ref:`28 <X_28>`, :ref:`56 <X_56>`), (:ref:`273 <X_273>`, :ref:`57 <X_57>`), (:ref:`278 <X_278>`, :ref:`19 <X_19>`)
    * :ref:`X_34 <X_34>` = :ref:`X_25 <X_25>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_19 <X_19>`
@@ -65,14 +65,14 @@ X_34
    * :ref:`X_34 <X_34>` = circumcircle-inverse of X_32757
    * :ref:`X_34 <X_34>` = :ref:`X_56 <X_56>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X_1430 <X_1430>`
    * :ref:`X_34 <X_34>` = :term:`trilinear pole <trilinear-pole>` of polar of :ref:`X_312 <X_312>` wrt polar circle (line :ref:`X_649 <X_649>`\ X_4017)
-   * :ref:`X_34 <X_34>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_312 <X_312>` (line :ref:`X_522 <X_522>`\ X_3717)
+   * :ref:`X_34 <X_34>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_312 <X_312>` (line :ref:`X_522 <X_522>`\ \ :ref:`X_3717 <X_3717>`)
    * :ref:`X_34 <X_34>` = polar conjugate of :ref:`X_312 <X_312>`
    * :ref:`X_34 <X_34>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X_33 <X_33>`
    * :ref:`X_34 <X_34>` = homothetic center of intangents triangle and reflection of orthic triangle in :ref:`X_4 <X_4>`
    * :ref:`X_34 <X_34>` = homothetic center of orthic triangle and anti-tangential midarc triangle
    * :ref:`X_34 <X_34>` = X_8078-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X_34 <X_34>` = X_i-:term:`beth conjugate <beth-conjugate>` of X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`221 <X_221>`), (:ref:`4 <X_4>`, :ref:`4 <X_4>`), (:ref:`28 <X_28>`, :ref:`34 <X_34>`), (:ref:`29 <X_29>`, :ref:`1 <X_1>`), (:ref:`107 <X_107>`, :ref:`158 <X_158>`), (:ref:`108 <X_108>`, :ref:`34 <X_34>`), (:ref:`110 <X_110>`, :ref:`47 <X_47>`), (:ref:`162 <X_162>`, :ref:`34 <X_34>`), (:ref:`811 <X_811>`, :ref:`34 <X_34>`)
-   * :ref:`X_34 <X_34>` = X_i-:term:`isoconjugate <isoconjugate>` of X_j for these {i,j}: {:ref:`1 <X_1>`, :ref:`78 <X_78>`}, {:ref:`31 <X_31>`, 3718}, {:ref:`48 <X_48>`, :ref:`312 <X_312>`}
+   * :ref:`X_34 <X_34>` = X_i-:term:`isoconjugate <isoconjugate>` of X_j for these {i,j}: {:ref:`1 <X_1>`, :ref:`78 <X_78>`}, {:ref:`31 <X_31>`, :ref:`3718 <X_3718>`}, {:ref:`48 <X_48>`, :ref:`312 <X_312>`}
 
 Notes
 -----

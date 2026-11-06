@@ -1,0 +1,229 @@
+[
+  {
+    "id": "act_1_definition",
+    "title": "T_4 HARMONIC CONJUGATE — Geometric Definition",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_4",
+        "short_code": "T_4",
+        "g_id": "HARMONIC CONJUGATE",
+        "folio": "Kimberling ETC • Transformations & Conjugacies",
+        "enunciation": "Four collinear centers (A, B; C, D) form a harmonic range when C and D divide segment AB internally and externally in the same ratio, yielding cross-ratio −1.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.0,
+        "step_num": 1,
+        "step_kind": "CONSTRUCT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-04-harmonic-conjugate/svgs/01_primary.svg",
+        "symbolic": "(A, B; C, D) = (AC / CB) : (AD / DB) = −1",
+        "clause_html": "<span class=\"clause-line\"><b>Harmonic Range:</b> On the Euler line through <span class=\"g-tok\">X_5</span>, internal and external division of <span class=\"g-tok\">X_3</span> and <span class=\"g-tok\">X_4</span> with <span class=\"g-tok\">X_2</span> links the <span style=\"color:#94a3b8;font-family:'JetBrains Mono',monospace;font-weight:600;\">medial triangle M_a M_b M_c</span> and <span style=\"color:#94a3b8;font-family:'JetBrains Mono',monospace;font-weight:600;\">nine-point circle</span>.</span>",
+        "just_tag": "∵ DEFINITION",
+        "just_id": "PROJECTIVE INVARIANCE",
+        "just_title": "Cross-ratio (A, B; C, D) = −1 is preserved under every projective collineation.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_5",
+          "X_2",
+          "X_3",
+          "X_4"
+        ],
+        "coincide_ids": [],
+        "equal_ids": []
+      },
+      {
+        "prop_id": "ETC • T_4",
+        "short_code": "T_4",
+        "g_id": "HARMONIC CONJUGATE",
+        "folio": "Kimberling ETC • Transformations & Conjugacies",
+        "enunciation": "Four collinear centers (A, B; C, D) form a harmonic range when C and D divide segment AB internally and externally in the same ratio, yielding cross-ratio −1.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "is_punchline": true,
+        "weight": 1.0,
+        "step_num": 2,
+        "step_kind": "GOAL",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-04-harmonic-conjugate/svgs/01_primary.svg",
+        "symbolic": "(A, B; C, D) = (AC / CB) : (AD / DB) = −1",
+        "clause_html": "<span class=\"clause-line\"><b>Harmonic Range:</b> On the Euler line through <span class=\"g-tok\">X_5</span>, internal and external division of <span class=\"g-tok\">X_3</span> and <span class=\"g-tok\">X_4</span> with <span class=\"g-tok\">X_2</span> links the <span class=\"coincide-tok\">medial triangle M_a M_b M_c</span> and <span class=\"eq-tok\">nine-point circle</span>.</span>",
+        "just_tag": "∵ STRUCTURE",
+        "just_id": "PROJECTIVE INVARIANCE",
+        "just_title": "Cross-ratio (A, B; C, D) = −1 is preserved under every projective collineation.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_5",
+          "X_2",
+          "X_3",
+          "X_4"
+        ],
+        "coincide_ids": [
+          "< M_a M_b M_c >",
+          "M_a",
+          "M_b",
+          "M_c"
+        ],
+        "equal_ids": [
+          "incircle"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "act_2_algebra_and_lines",
+    "title": "T_4 Algebraic Action & Central Lines",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_4",
+        "short_code": "T_4",
+        "g_id": "HARMONIC CONJUGATE",
+        "folio": "Kimberling ETC • Transformations & Conjugacies",
+        "enunciation": "Four collinear centers (A, B; C, D) form a harmonic range when C and D divide segment AB internally and externally in the same ratio, yielding cross-ratio −1.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.15,
+        "step_num": 3,
+        "step_kind": "ASSERT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-04-harmonic-conjugate/svgs/02_coordinates.svg",
+        "symbolic": "Euler Range (X_3, X_4; X_2, X_5) = −1",
+        "clause_html": "<span class=\"clause-line\"><b>Homogeneous Linear Combination:</b> If <span class=\"g-tok\">C = p·A + q·B</span>, then its harmonic conjugate with respect to A and B is <span class=\"coincide-tok\">D = p·A − q·B</span>, satisfying <span class=\"eq-tok\">2/AB = 1/AC + 1/AD</span>.</span>",
+        "just_tag": "∵ COORDINATE LAW",
+        "just_id": "HARMONIC MEAN",
+        "just_title": "On the Euler line: X_2 : X_5 divide X_3 X_4 in ratios 1 : 2 and 1 : −1."
+      },
+      {
+        "prop_id": "ETC • T_4",
+        "short_code": "T_4",
+        "g_id": "HARMONIC CONJUGATE",
+        "folio": "Kimberling ETC • Transformations & Conjugacies",
+        "enunciation": "Four collinear centers (A, B; C, D) form a harmonic range when C and D divide segment AB internally and externally in the same ratio, yielding cross-ratio −1.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.5,
+        "step_num": 4,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-04-harmonic-conjugate/svgs/03_central_lines.svg",
+        "symbolic": "Euler Line {2, 3, 4, 5} & Feuerbach Line {1, 5, 11, 12}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Central Line Incidences</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Collection 1 Harmonic Axes</span><span class=\"g-tok\">{2, 3, 4, 5}</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Feuerbach Line</span><span class=\"muted-tok\">{1, 5, 11, 12}</span></div></div></div>",
+        "just_tag": "∵ PRIMARY AXIS",
+        "just_id": "SIMILICENTER DUALITY",
+        "just_title": "Internal and external centers of similitude of any two circles are harmonic conjugates with respect to their centers.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_5",
+          "{2, 3, 4, 5}"
+        ],
+        "coincide_ids": [],
+        "equal_ids": []
+      },
+      {
+        "prop_id": "ETC • T_4",
+        "short_code": "T_4",
+        "g_id": "HARMONIC CONJUGATE",
+        "folio": "Kimberling ETC • Transformations & Conjugacies",
+        "enunciation": "Four collinear centers (A, B; C, D) form a harmonic range when C and D divide segment AB internally and externally in the same ratio, yielding cross-ratio −1.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.55,
+        "step_num": 5,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-04-harmonic-conjugate/svgs/03_central_lines.svg",
+        "symbolic": "Euler Line {2, 3, 4, 5} & Feuerbach Line {1, 5, 11, 12}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Central Line Incidences</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Collection 1 Harmonic Axes</span><span class=\"g-tok\">{2, 3, 4, 5}</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Feuerbach Line</span><span class=\"coincide-tok\">{1, 5, 11, 12}</span></div></div></div>",
+        "just_tag": "∵ COLLINEARITIES",
+        "just_id": "SIMILICENTER DUALITY",
+        "just_title": "Internal and external centers of similitude of any two circles are harmonic conjugates with respect to their centers.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_5",
+          "{2, 3, 4, 5}"
+        ],
+        "coincide_ids": [
+          "{1, 5, 11, 12}"
+        ],
+        "equal_ids": []
+      }
+    ]
+  },
+  {
+    "id": "act_3_collection_network",
+    "title": "T_4 Collection 1 Network & Invariance",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_4",
+        "short_code": "T_4",
+        "g_id": "HARMONIC CONJUGATE",
+        "folio": "Kimberling ETC • Transformations & Conjugacies",
+        "enunciation": "Four collinear centers (A, B; C, D) form a harmonic range when C and D divide segment AB internally and externally in the same ratio, yielding cross-ratio −1.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.1,
+        "step_num": 6,
+        "step_kind": "PROVE",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-04-harmonic-conjugate/svgs/04_relations.svg",
+        "symbolic": "(X_2, X_4; X_3, X_5) = −1 • (X_1, X_5; X_11, X_12) = −1",
+        "clause_html": "<span class=\"clause-line\"><b>Harmonic Quartets:</b> Euler centers <span class=\"coincide-tok\">X_2</span>, <span class=\"coincide-tok\">X_3</span>, <span class=\"coincide-tok\">X_4</span>, <span class=\"g-tok\">X_5</span> and Feuerbach centers <span class=\"eq-tok\">X_1</span>, <span class=\"g-tok\">X_5</span>, <span class=\"eq-tok\">X_11</span>, <span class=\"eq-tok\">X_12</span>.</span>",
+        "just_tag": "∵ COLLECTION 1",
+        "just_id": "APOLLONIAN HARMONICS",
+        "just_title": "On the Brocard axis, (X_3, X_6; X_15, X_16) also forms a classical harmonic structure.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_5"
+        ],
+        "coincide_ids": [
+          "X_2",
+          "{ 2, 5 }",
+          "X_3",
+          "{ 3, 5 }",
+          "X_4",
+          "{ 4, 5 }"
+        ],
+        "equal_ids": [
+          "X_1",
+          "{ 1, 5 }",
+          "X_11",
+          "{ 5, 11 }",
+          "X_12",
+          "{ 5, 12 }"
+        ]
+      },
+      {
+        "prop_id": "ETC • T_4",
+        "short_code": "T_4",
+        "g_id": "HARMONIC CONJUGATE",
+        "folio": "Kimberling ETC • Transformations & Conjugacies",
+        "enunciation": "Four collinear centers (A, B; C, D) form a harmonic range when C and D divide segment AB internally and externally in the same ratio, yielding cross-ratio −1.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.95,
+        "step_num": 7,
+        "step_kind": "∴",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-04-harmonic-conjugate/svgs/05_four_triangles.svg",
+        "symbolic": "Invariance across Acute (5,6,7) • Right (3,4,5) • Kepler (1,√φ,φ) • Kimberling (6,9,13)",
+        "clause_html": "<span class=\"clause-line\"><b>Reference Triangle Invariance:</b> Across all four reference triangles, <b>Harmonic Conjugate &amp; Cross-Ratio</b> preserves its exact projective incidences and harmonic ratios.</span>",
+        "just_tag": "∵ INVARIANCE",
+        "just_id": "FOUR-TRIANGLE VERIFICATION",
+        "just_title": "Verified across Collection 1 centers X_2, X_3, X_4, X_5, X_1, X_11."
+      }
+    ]
+  }
+]

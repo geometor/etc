@@ -41,7 +41,7 @@ X_876
    :badge: 5 relations
 
    * :ref:`X_876 <X_876>` = reflection of :ref:`X_659 <X_659>` in :ref:`X_665 <X_665>`
-   * :ref:`X_876 <X_876>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3573
+   * :ref:`X_876 <X_876>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3573 <X_3573>`
    * :ref:`X_876 <X_876>` = isotomic conjugate of :ref:`X_874 <X_874>`
    * :ref:`X_876 <X_876>` = :term:`crosssum <crosssum>` of :ref:`X_238 <X_238>` and :ref:`X_659 <X_659>`
    * :ref:`X_876 <X_876>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_244 <X_244>`\ \ :ref:`X_661 <X_661>`

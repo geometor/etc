@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" width="100%" height="100%">
+  <defs>
+    <filter id="glow-topic" filterUnits="userSpaceOnUse" x="-100" y="-100" width="1200" height="960">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+
+  <polygon points="260.0,425.0 740.0,425.0 553.9,137.1" fill="rgba(54, 102, 204, 0.14)" stroke="#3b82f6" stroke-width="4.2" stroke-linejoin="round" />
+
+  <line x1="730.2" y1="513.0" x2="331.0" y2="105.5" stroke="#e8b85a" stroke-width="2.4" stroke-dasharray="2, 4.5" stroke-linecap="round" opacity="0.7" /><line x1="534.3" y1="313.0" x2="526.9" y2="305.5" stroke="#e8b85a" stroke-width="4.2" stroke-linecap="round" /><line x1="808.6" y1="593.0" x2="334.8" y2="109.4" stroke="#38bdf8" stroke-width="2.4" stroke-dasharray="2, 4.5" stroke-linecap="round" opacity="0.7" /><line x1="612.7" y1="393.0" x2="530.8" y2="309.4" stroke="#38bdf8" stroke-width="4.2" stroke-linecap="round" />
+  <circle cx="534.3" cy="313.0" r="7.5" fill="#e8b85a" stroke="#0b0e15" stroke-width="2.2" /><text x="546.3" y="303.0" fill="#e8b85a" font-family="JetBrains Mono, monospace" font-size="16" font-weight="bold">X<tspan dy="4" font-size="12">1</tspan></text><circle cx="526.9" cy="305.5" r="7.5" fill="#e8b85a" stroke="#0b0e15" stroke-width="2.2" /><text x="538.9" y="295.5" fill="#e8b85a" font-family="JetBrains Mono, monospace" font-size="16" font-weight="bold">X<tspan dy="4" font-size="12">5</tspan></text><circle cx="612.7" cy="393.0" r="7.5" fill="#38bdf8" stroke="#0b0e15" stroke-width="2.2" /><text x="624.7" y="383.0" fill="#38bdf8" font-family="JetBrains Mono, monospace" font-size="16" font-weight="bold">X<tspan dy="4" font-size="12">11</tspan></text><circle cx="530.8" cy="309.4" r="7.5" fill="#38bdf8" stroke="#0b0e15" stroke-width="2.2" /><text x="542.8" y="299.4" fill="#38bdf8" font-family="JetBrains Mono, monospace" font-size="16" font-weight="bold">X<tspan dy="4" font-size="12">12</tspan></text>
+
+  <circle cx="260.0" cy="425.0" r="6.5" fill="#66ff66" stroke="#0d111a" stroke-width="2" />
+  <circle cx="740.0" cy="425.0" r="6.5" fill="#66ff66" stroke="#0d111a" stroke-width="2" />
+  <circle cx="553.9" cy="137.1" r="6.5" fill="#f8f6f0" stroke="#0d111a" stroke-width="2" />
+  <text x="236.0" y="447.0" fill="#88ff88" font-family="JetBrains Mono, monospace" font-size="20" font-weight="bold">A</text>
+  <text x="752.0" y="447.0" fill="#88ff88" font-family="JetBrains Mono, monospace" font-size="20" font-weight="bold">B</text>
+  <text x="545.9" y="121.1" fill="#f8f6f0" font-family="JetBrains Mono, monospace" font-size="20" font-weight="bold">C</text>
+
+  <circle cx="612.7" cy="393.0" r="9.5" fill="#ffd700" stroke="#00ffff" stroke-width="2.8" filter="url(#glow-topic)" />
+
+  <!-- Bottom Summary Cards -->
+  <g transform="translate(42, 548)">
+    <rect x="0" y="0" width="916" height="184" rx="14" fill="rgba(11, 14, 21, 0.94)" stroke="rgba(232, 184, 90, 0.45)" stroke-width="1.5" />
+    <text x="24" y="34" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="14" font-weight="bold" letter-spacing="0.8">NAMED CENTRAL LINES • T_9</text>
+    <text x="892" y="34" text-anchor="end" fill="#e8b85a" font-family="JetBrains Mono, monospace" font-size="15" font-weight="bold">THE FEUERBACH LINE</text>
+
+    <rect x="24" y="52" width="12" height="24" rx="3" fill="#e8b85a" />
+    <text x="48" y="70" fill="#e8b85a" font-family="JetBrains Mono, monospace" font-size="16" font-weight="bold">Feuerbach Line L(1, 5, 11, 12) • |X_1 X_5| = |R/2 − r|</text>
+
+    <rect x="24" y="94" width="12" height="24" rx="3" fill="#38bdf8" />
+    <text x="48" y="112" fill="#38bdf8" font-family="JetBrains Mono, monospace" font-size="16" font-weight="bold">Harmonic Similicenters: X_11 (Internal) &amp; X_12 (External)</text>
+
+    <rect x="24" y="136" width="12" height="24" rx="3" fill="#5ec27e" />
+    <text x="48" y="154" fill="#5ec27e" font-family="JetBrains Mono, monospace" font-size="16" font-weight="bold">Collinearity {1, 5, 11, 12}</text>
+  </g>
+</svg>

@@ -71,7 +71,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A' <A'>` be the orthocenter of :g:`BC <[ B C ]>`\ :ref:`X_1 <X_1>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. :g:`A'B'C' << A' B' C' >>` is also the anticevian triangle, wrt intouch triangle, of :ref:`X_1 <X_1>`, and :ref:`X_1699 <X_1699>` is the centroid of :g:`A'B'C' << A' B' C' >>`; see also X_3680. (Randy Hutson, June 27, 2018)
+   Let :g:`A' <A'>` be the orthocenter of :g:`BC <[ B C ]>`\ :ref:`X_1 <X_1>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. :g:`A'B'C' << A' B' C' >>` is also the anticevian triangle, wrt intouch triangle, of :ref:`X_1 <X_1>`, and :ref:`X_1699 <X_1699>` is the centroid of :g:`A'B'C' << A' B' C' >>`; see also :ref:`X_3680 <X_3680>`. (Randy Hutson, June 27, 2018)
 
 .. container:: note-item
 

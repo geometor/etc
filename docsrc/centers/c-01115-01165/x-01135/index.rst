@@ -49,7 +49,7 @@ X_1135
    * :ref:`X_1135 <X_1135>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1134 <X_1134>`
    * :ref:`X_1135 <X_1135>` = perspector of :g:`ABC << A B C >>` and 3rd Morley adjunct triangle
    * :ref:`X_1135 <X_1135>` = trilinear product of vertices of 3rd Morley adjunct triangle
-   * :ref:`X_1135 <X_1135>` = {:ref:`X_357 <X_357>`,X_3603}-harmonic conjugate of X_3272
+   * :ref:`X_1135 <X_1135>` = {:ref:`X_357 <X_357>`,\ :ref:`X_3603 <X_3603>`}-harmonic conjugate of :ref:`X_3272 <X_3272>`
 
 Notes
 -----

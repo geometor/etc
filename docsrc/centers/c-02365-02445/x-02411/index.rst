@@ -48,7 +48,7 @@ X_2411
    * :ref:`X_2411 <X_2411>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2437 <X_2437>`
    * :ref:`X_2411 <X_2411>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_2410 <X_2410>`
    * :ref:`X_2411 <X_2411>` = barycentric quotient :ref:`X_477 <X_477>`/:ref:`X_476 <X_476>`
-   * :ref:`X_2411 <X_2411>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_526 <X_526>`\ X_3258 (the Simson line of :ref:`X_477 <X_477>`)
+   * :ref:`X_2411 <X_2411>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_526 <X_526>`\ \ :ref:`X_3258 <X_3258>` (the Simson line of :ref:`X_477 <X_477>`)
 
 .. toctree::
    :hidden:

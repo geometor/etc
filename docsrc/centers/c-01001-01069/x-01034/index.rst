@@ -45,11 +45,11 @@ X_1034
 .. collapse:: Functional Relations
    :badge: 8 relations
 
-   * :ref:`X_1034 <X_1034>` = perpsector of triangle :g:`ABC << A B C >>` and the :term:`pedal triangle <pedal-triangle>` of X_3345
+   * :ref:`X_1034 <X_1034>` = perpsector of triangle :g:`ABC << A B C >>` and the :term:`pedal triangle <pedal-triangle>` of :ref:`X_3345 <X_3345>`
    * :ref:`X_1034 <X_1034>` = isogonal conjugate of :ref:`X_1035 <X_1035>`
    * :ref:`X_1034 <X_1034>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_5932
    * :ref:`X_1034 <X_1034>` = :term:`trilinear pole <trilinear-pole>` of line X_8058X_14331
-   * :ref:`X_1034 <X_1034>` = :term:`anticomplement <anticomplement>` of X_3342
+   * :ref:`X_1034 <X_1034>` = :term:`anticomplement <anticomplement>` of :ref:`X_3342 <X_3342>`
    * :ref:`X_1034 <X_1034>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of X_34162
    * :ref:`X_1034 <X_1034>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`8 <X_8>`), (:ref:`282 <X_282>`, :ref:`2 <X_2>`)
    * :ref:`X_1034 <X_1034>` = :term:`cyclocevian conjugate <cyclocevian-conjugate>` of :ref:`X_329 <X_329>`

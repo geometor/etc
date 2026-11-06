@@ -46,7 +46,7 @@ X_149
    :badge: 8 relations
 
    * :ref:`X_149 <X_149>` = reflection of X_i in X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`1484 <X_1484>`), (:ref:`8 <X_8>`, :ref:`80 <X_80>`), (:ref:`20 <X_20>`, :ref:`104 <X_104>`), (:ref:`100 <X_100>`, :ref:`11 <X_11>`), (:ref:`144 <X_144>`, :ref:`1156 <X_1156>`), (:ref:`145 <X_145>`, :ref:`1320 <X_1320>`), (:ref:`153 <X_153>`, :ref:`4 <X_4>`)
-   * :ref:`X_149 <X_149>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3446
+   * :ref:`X_149 <X_149>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3446 <X_3446>`
    * :ref:`X_149 <X_149>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_8047
    * :ref:`X_149 <X_149>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X_513 <X_513>`
    * :ref:`X_149 <X_149>` = :term:`trilinear pole <trilinear-pole>` wrt :term:`anticomplementary triangle <anticomplementary-triangle>` of line :ref:`X_7 <X_7>`\ \ :ref:`X_8 <X_8>`

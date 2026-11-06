@@ -24,7 +24,7 @@ def construct_x_02737(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_2737 = SR(X_103, X_106) on reference triangle ABC."""
-    X_2726 = point_from_barycentrics(model, A, B, C, 0.66071654, -0.32143402, 0.66071748, ID="X_2726", classes=["center"])
+    X_2726 = point_from_barycentrics(model, A, B, C, 0.66071408, -0.32142864, 0.66071456, ID="X_2726", classes=["center"])
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
     X_2737 = reflection_in_point(model, X_2726, X_3, ID="X_2737", classes=["selected", "target"], guide=False)
     X_103 = eval_trilinear_point(model, A, B, C, 'a/((a - b)*cot(C) + (a - c)*cot(B))', ID="X_103", classes=["center", "incident"])

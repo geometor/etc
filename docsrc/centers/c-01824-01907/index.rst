@@ -22,7 +22,7 @@ X_1824–X_1907
 
 .. _preamble-0026:
 
-.. admonition:: Group Preamble — Zosma Transforms 1824-1907
+.. admonition:: Group Preamble — Zosma Transforms 1824-1907 (Zozma transforms)
    :class: note
 
    | The Zosma transform of a point :g:`X <X>` =\ :math:`x : y : z` is the isogonal conjugate of the inverse Mimosa transform of :g:`X <X>`, given by trilinears

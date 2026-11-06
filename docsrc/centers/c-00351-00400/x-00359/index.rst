@@ -65,7 +65,7 @@ Notes
 
    Center: X_5945 = (a/A)(:math:`b^{2}`/B + :math:`c^{2}`/C - :math:`a^{2}`/A) : (b/B)(:math:`c^{2}`/C + :math:`a^{2}`/A - :math:`b^{2}`/B) : (c/C)(:math:`a^{2}`/A + :math:`b^{2}`/B - :math:`c^{2}`/C)
 
-   Intersection with circumcircle (other than :g:`A <A>`, :g:`B <B>`, :g:`C <C>`): X_3067 = a/[A(B - C)] : b/[B(C - A)] : c/[C(A - B)]
+   Intersection with circumcircle (other than :g:`A <A>`, :g:`B <B>`, :g:`C <C>`): :ref:`X_3067 <X_3067>` = a/[A(B - C)] : b/[B(C - A)] : c/[C(A - B)]
 
 .. container:: note-item
 

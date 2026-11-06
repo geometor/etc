@@ -30,7 +30,7 @@ X_2684
 
    | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) is as given just before :ref:`X_2677 <X_2677>` using :g:`P <P>` = :ref:`X_99 <X_99>`, :g:`U <U>` = :ref:`X_101 <X_101>`
    | **Barycentrics:** :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
-   | **Search Value (6, 9, 13):** :math:`-7.528788199889`
+   | **Search Value (6, 9, 13):** :math:`-7.528788199888`
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines

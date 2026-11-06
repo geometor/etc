@@ -23,8 +23,9 @@ X_2548
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{5, 6} <{ 5, 6 }>`, :g:`{2, 32} <{ 2, 32 }>`
-   * **Related Centers:** :g:`X_5 <X_5>` (:ref:`NINE-POINT CENTER <X_5>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_32 <X_32>` (:ref:`3rd POWER POINT <X_32>`)
+   * **Derived Triangle:** :term:`Medial Triangle <medial triangle>` :g:`△M_aM_bM_c << M_a M_b M_c >>` — vertices :g:`M_a <M_a>`, :g:`M_b <M_b>`, :g:`M_c <M_c>` (Formed by the midpoints of sides BC, CA, AB)
+   * **Central Lines:** :g:`{2, 3785} <{ 2, 3785 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3785 <X_3785>` (:ref:`com[INVERSE(nT(a2, a2 + b2))] <X_3785>`)
 
 .. signature:: center
 
@@ -47,9 +48,9 @@ X_2548
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X_2548 <X_2548>` = :term:`complement <complement>` of X_3785
+   * :ref:`X_2548 <X_2548>` = :term:`complement <complement>` of :ref:`X_3785 <X_3785>`
    * :ref:`X_2548 <X_2548>` = :term:`anticomplement <anticomplement>` of X_7815
-   * :ref:`X_2548 <X_2548>` = {:ref:`X_5 <X_5>`,\ :ref:`X_6 <X_6>`}-harmonic conjugate of X_3767
+   * :ref:`X_2548 <X_2548>` = {:ref:`X_5 <X_5>`,\ :ref:`X_6 <X_6>`}-harmonic conjugate of :ref:`X_3767 <X_3767>`
 
 .. toctree::
    :hidden:

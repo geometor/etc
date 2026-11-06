@@ -52,11 +52,11 @@ X_1125
 .. collapse:: Functional Relations
    :badge: 25 relations
 
-   * :ref:`X_1125 <X_1125>` = midpoint of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`10 <X_10>`), (:ref:`2 <X_2>`, :ref:`551 <X_551>`), (:ref:`3 <X_3>`, :ref:`946 <X_946>`), (:ref:`5 <X_5>`, :ref:`1385 <X_1385>`), (:ref:`8 <X_8>`, 3244), (:ref:`11 <X_11>`, :ref:`214 <X_214>`), (:ref:`142 <X_142>`, :ref:`1001 <X_1001>`), (:ref:`226 <X_226>`, :ref:`993 <X_993>`), (:ref:`942 <X_942>`, :ref:`960 <X_960>`), (:ref:`999 <X_999>`, 3452), (:ref:`1100 <X_1100>`, 3775), (4065, 4647)
+   * :ref:`X_1125 <X_1125>` = midpoint of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`10 <X_10>`), (:ref:`2 <X_2>`, :ref:`551 <X_551>`), (:ref:`3 <X_3>`, :ref:`946 <X_946>`), (:ref:`5 <X_5>`, :ref:`1385 <X_1385>`), (:ref:`8 <X_8>`, :ref:`3244 <X_3244>`), (:ref:`11 <X_11>`, :ref:`214 <X_214>`), (:ref:`142 <X_142>`, :ref:`1001 <X_1001>`), (:ref:`226 <X_226>`, :ref:`993 <X_993>`), (:ref:`942 <X_942>`, :ref:`960 <X_960>`), (:ref:`999 <X_999>`, :ref:`3452 <X_3452>`), (:ref:`1100 <X_1100>`, :ref:`3775 <X_3775>`), (4065, 4647)
    * :ref:`X_1125 <X_1125>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1126 <X_1126>`
    * :ref:`X_1125 <X_1125>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_1268 <X_1268>`
    * :ref:`X_1125 <X_1125>` = complement of :ref:`X_10 <X_10>`
-   * :ref:`X_1125 <X_1125>` = :term:`anticomplement <anticomplement>` of X_3634
+   * :ref:`X_1125 <X_1125>` = :term:`anticomplement <anticomplement>` of :ref:`X_3634 <X_3634>`
    * :ref:`X_1125 <X_1125>` = :term:`crosspoint <crosspoint>` of :ref:`X_2 <X_2>` and :ref:`X_86 <X_86>`
    * :ref:`X_1125 <X_1125>` = :term:`crosssum <crosssum>` of :ref:`X_6 <X_6>` and :ref:`X_42 <X_42>`
    * :ref:`X_1125 <X_1125>` = perspector of circumconic centered at :ref:`X_1213 <X_1213>`
@@ -69,8 +69,8 @@ X_1125
    * :ref:`X_1125 <X_1125>` = complement of X_4065 wrt :term:`incentral triangle <incentral-triangle>`
    * :ref:`X_1125 <X_1125>` = trilinear product of vertices of anti-Aquila triangle
    * :ref:`X_1125 <X_1125>` = X_10110-of-excentral-triangle
-   * :ref:`X_1125 <X_1125>` = {:ref:`X_1 <X_1>`,\ :ref:`X_8 <X_8>`}-harmonic conjugate of X_3244
-   * :ref:`X_1125 <X_1125>` = {:ref:`X_2 <X_2>`,\ :ref:`X_10 <X_10>`}-harmonic conjugate of X_3634
+   * :ref:`X_1125 <X_1125>` = {:ref:`X_1 <X_1>`,\ :ref:`X_8 <X_8>`}-harmonic conjugate of :ref:`X_3244 <X_3244>`
+   * :ref:`X_1125 <X_1125>` = {:ref:`X_2 <X_2>`,\ :ref:`X_10 <X_10>`}-harmonic conjugate of :ref:`X_3634 <X_3634>`
    * :ref:`X_1125 <X_1125>` = {:ref:`X_8 <X_8>`,\ :ref:`X_10 <X_10>`}-harmonic conjugate of X_4691
    * :ref:`X_1125 <X_1125>` = perspector of Gemini triangle 11 and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 11
    * :ref:`X_1125 <X_1125>` = homothetic center of :term:`anticomplementary triangle <anticomplementary-triangle>` and cross-triangle of Aquila and anti-Aquila triangles

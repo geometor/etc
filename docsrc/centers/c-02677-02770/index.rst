@@ -22,7 +22,7 @@ X_2677–X_2770
 
 .. _preamble-0041:
 
-.. admonition:: Group Preamble — RS Points and SR Points
+.. admonition:: Group Preamble — RS Points and SR Points (Rigby-Simson points and Simson-Rigby points)
    :class: note
 
    Centers :ref:`X_2677 <X_2677>` to :ref:`X_2770 <X_2770>` are examples of Rigby-Simson points and Simson-Rigby points. These two types of points are discussed in

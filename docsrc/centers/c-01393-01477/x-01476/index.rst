@@ -29,7 +29,7 @@ X_1476
 .. signature:: center
 
    | **Trilinears:** :math:`1/(a^{2} (\sin^{2}(B/2) + \sin^{2}(C/2))) : :`
-   | **Search Value (6, 9, 13):** :math:`1.794256672041`
+   | **Search Value (6, 9, 13):** :math:`0.519305962588`
 
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
@@ -46,7 +46,7 @@ X_1476
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X_1476 <X_1476>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3057
+   * :ref:`X_1476 <X_1476>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3057 <X_3057>`
    * :ref:`X_1476 <X_1476>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_20895
    * :ref:`X_1476 <X_1476>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`15 <X_15>`, :ref:`1222 <X_1222>`), (:ref:`649 <X_649>`, :ref:`651 <X_651>`)
    * :ref:`X_1476 <X_1476>` = cevapoint of :ref:`X_1 <X_1>` and :ref:`X_56 <X_56>`

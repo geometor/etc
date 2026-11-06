@@ -46,7 +46,7 @@ X_1101
    * :ref:`X_1101 <X_1101>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`31 <X_31>`, :ref:`163 <X_163>`), (:ref:`47 <X_47>`, :ref:`162 <X_162>`)
    * :ref:`X_1101 <X_1101>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_23994
    * :ref:`X_1101 <X_1101>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_163 <X_163>`\ \ :ref:`X_1983 <X_1983>`
-   * :ref:`X_1101 <X_1101>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of X_3708
+   * :ref:`X_1101 <X_1101>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_3708 <X_3708>`
 
 .. toctree::
    :hidden:

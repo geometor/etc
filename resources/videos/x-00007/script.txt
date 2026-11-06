@@ -1,0 +1,85 @@
+center: X_7
+title: GERGONNE POINT
+folio: Kimberling ETC • Collection 1 (X_1–X_19)
+enunciation: The point of concurrence of the three cevians joining vertices A, B, C to the touchpoints of the inscribed circle.
+
+[bell:proposition]
+
+[screen: CONSTRUCT | svg: 01_primary.svg | weight: 1]
+symbolic: X_7 = Gergonne Point • [A T_a] ∩ [B T_b] ∩ [C T_c]
+zoom: A, B, C
+active: X_7:gold, [ A T_a ]:gold, [ B T_b ]:gold, [ C T_c ]:gold
+head: Primary Construction
+row: Target Center | X_7 (Gergonne):gold
+row: Contact Cevians | AT_a, BT_b, CT_c:gold
+row: Inscribed Circle | Incircle (r):muted
+row: Intouch Triangle | △T_a T_b T_c:muted
+just: ∵ CONCURRENCE | CEVA'S THEOREM ON INCIRCLE TANGENTS | Equal tangent lengths from each vertex guarantee (AT_c / T_cB)·(BT_a / T_aC)·(CT_b / T_bA) = 1.
+say: X seven is the Gergonne Point of triangle A B C: <pause> let T sub a, T sub b, and T sub c be the three contact points where the incircle touches sidelines B C, C A, and A B;
+
+[screen: GOAL | svg: 01_primary.svg | weight: 1 | punchline: true]
+symbolic: X_7 = Gergonne Point • [A T_a] ∩ [B T_b] ∩ [C T_c]
+zoom: X_7, incircle, < T_a T_b T_c >, T_a, T_b, T_c, X_7, T_a, T_b, T_c
+thumb_zoom: A, B, C
+active: X_7:gold, incircle:pink, < T_a T_b T_c >:blue, T_a:blue, T_b:blue, T_c:blue
+head: Primary Construction
+row: Target Center | X_7 (Gergonne):gold
+row: Contact Cevians | AT_a, BT_b, CT_c:muted
+row: Inscribed Circle | Incircle (r):pink
+row: Intouch Triangle | △T_a T_b T_c:blue
+just: ∵ DEFINITION | CEVA'S THEOREM ON INCIRCLE TANGENTS | Equal tangent lengths from each vertex guarantee (AT_c / T_cB)·(BT_a / T_aC)·(CT_b / T_bA) = 1.
+say: <pause> the cevians A T sub a, B T sub b, and C T sub c concur at X seven.
+
+[bell:construction]
+
+[screen: ASSERT | svg: 02_coordinates.svg | weight: 1.15]
+symbolic: Barycentrics 1/(s-a) : 1/(s-b) : 1/(s-c)
+section: Trilinear Distances | α = bc/(s − a):gold | β = ca/(s − b):blue | γ = ab/(s − c):green
+section: Barycentric Sub-Areas | u = 1/(s − a):gold | v = 1/(s − b):blue | w = 1/(s − c):green
+just: ∵ COORDINATES | SEMIPERIMETER RECIPROCAL COORDINATES | On acute triangle (5, 6, 7) with s = 9, barycentric sub-areas are 1/4 : 1/3 : 1/2 = 3 : 4 : 6.
+say: Its barycentric coordinates are inversely proportional to the semiperimeter excesses, <pause> one over s minus a, <pause> to one over s minus b, <pause> to one over s minus c.
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.5]
+symbolic: Soddy Line {1, 7, 20} • Line {2, 7, 9} • Line {7, 8}
+zoom: X_7, X_1, X_20
+active: X_7:gold, {1, 7, 20}:orchid
+head: Incident Central Lines
+row: Soddy Line | {1, 7, 20}:orchid
+row: Centroid–Mittenpunkt | {2, 7, 9}:muted
+row: Gergonne–Nagel Line | {7, 8, 65}:muted
+just: ∵ PRIMARY AXIS | SODDY & MITTENPUNKT COLLINEARITIES | On {2, 7, 9}, Centroid X_2 divides X_7 (Gergonne) and X_9 (Mittenpunkt) in the complement ratio 2 : 1.
+say: <pause> On the central lines layer, <pause> X seven anchors the Soddy line through X one and X twenty,
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.55]
+symbolic: Soddy Line {1, 7, 20} • Line {2, 7, 9} • Line {7, 8}
+zoom: X_7, X_1, X_2, X_9, X_8, X_65
+active: X_7:gold, {1, 7, 20}:orchid, {2, 7, 9}:green, {7, 8, 65}:lime
+head: Incident Central Lines
+row: Soddy Line | {1, 7, 20}:orchid
+row: Centroid–Mittenpunkt | {2, 7, 9}:green
+row: Gergonne–Nagel Line | {7, 8, 65}:lime
+just: ∵ COLLINEARITIES | SODDY & MITTENPUNKT COLLINEARITIES | On {2, 7, 9}, Centroid X_2 divides X_7 (Gergonne) and X_9 (Mittenpunkt) in the complement ratio 2 : 1.
+say: <pause> the Centroid–Gergonne line through X two and X nine, <pause> and the Gergonne–Nagel line through X eight.
+
+[bell:insight]
+
+[screen: PROVE | svg: 04_relations.svg | weight: 1.05]
+symbolic: Isotomic Conjugate X_8 (Nagel) • Complement X_9 (Mittenpunkt)
+zoom: X_7, X_8, X_9, X_55, X_3
+active: X_7:gold, X_8:blue, X_9:green, X_55:orange
+head: Functional Relations
+row: Isotomic Conjugate | X_8:blue
+row: Complement | X_9:green
+row: Isogonal Conjugate | X_55:orange
+just: ∵ RELATIONS | GERGONNE–NAGEL ISOTOMIC DUALITY | X_7 is self-cyclocevian conjugate: the Gergonne point of the intouch triangle with respect to ABC.
+say: Under functional relations, <pause> X seven is the isotomic conjugate of the Nagel point X eight, <pause> the anticomplement of the Mittenpunkt X nine, <pause> the isogonal conjugate of the insimilicenter X fifty-five,
+
+[screen: ∴ | svg: 05_four_triangles.svg | weight: 0.95]
+symbolic: Kimberling (6, 9, 13) Search = 0.744160979006
+head: Reference Triangles | a | b | c
+row: Acute Triangle | 5 | 6 | 7:gold
+row: Right Triangle | 3 | 4 | 5:blue
+row: Kepler Triangle | 1 | √φ | φ:green
+row: Kimberling Triangle | 6 | 9 | 13:purple
+just: ∵ INVARIANCE | KIMBERLING SEARCH VALUE • X_7 | Shortest directed trilinear distance on reference triangle (6, 9, 13): 0.744160979006.
+say: <pause> and its own cyclocevian conjugate.

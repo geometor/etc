@@ -65,7 +65,7 @@ X_42
    * :ref:`X_42 <X_42>` = trilinear product of PU(85)
    * :ref:`X_42 <X_42>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_512 <X_512>`\ \ :ref:`X_798 <X_798>`
    * :ref:`X_42 <X_42>` = Danneels point of :ref:`X_1 <X_1>`
-   * :ref:`X_42 <X_42>` = {:ref:`X_1 <X_1>`,\ :ref:`X_2 <X_2>`}-harmonic conjugate of X_3720
+   * :ref:`X_42 <X_42>` = {:ref:`X_1 <X_1>`,\ :ref:`X_2 <X_2>`}-harmonic conjugate of :ref:`X_3720 <X_3720>`
    * :ref:`X_42 <X_42>` = :ref:`X_75 <X_75>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_58 <X_58>`
    * :ref:`X_42 <X_42>` = :ref:`X_92 <X_92>`-isoconjugate of :ref:`X_1790 <X_1790>`
    * :ref:`X_42 <X_42>` = trilinear square root of :ref:`X_872 <X_872>`
@@ -88,7 +88,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A_{b} <A_b>`, :g:`A_{c} <A_c>`, :g:`B_{c} <B_c>`, :g:`B_{a} <B_a>`, :g:`C_{a} <C_a>`, :g:`C_{b} <C_b>` be as defined at X_3588. Let :g:`A* <A*>` be the intersection of the tangents to the Myakishev conic at :g:`B_{a} <B_a>` and :g:`C_{a} <C_a>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X_42 <X_42>`.(Randy Hutson, December 26, 2015)
+   Let :g:`A_{b} <A_b>`, :g:`A_{c} <A_c>`, :g:`B_{c} <B_c>`, :g:`B_{a} <B_a>`, :g:`C_{a} <C_a>`, :g:`C_{b} <C_b>` be as defined at :ref:`X_3588 <X_3588>`. Let :g:`A* <A*>` be the intersection of the tangents to the Myakishev conic at :g:`B_{a} <B_a>` and :g:`C_{a} <C_a>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. The lines :g:`AA* <[ A A* ]>`, :g:`BB* <[ B B* ]>`, :g:`CC* <[ C C* ]>` concur in :ref:`X_42 <X_42>`.(Randy Hutson, December 26, 2015)
 
 .. container:: note-item
 

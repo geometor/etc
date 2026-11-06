@@ -23,8 +23,8 @@ X_1373
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{1, 7} <{ 1, 7 }>`
-   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_7 <X_7>` (:ref:`GERGONNE POINT <X_7>`)
+   * **Central Lines:** :g:`{1, 7} <{ 1, 7 }>`, :g:`{226, 3317} <{ 226, 3317 }>`
+   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_7 <X_7>` (:ref:`GERGONNE POINT <X_7>`), :g:`X_226 <X_226>` (:ref:`-CEVA CONJUGATE OF X(65) <X_226>`), :g:`X_3317 <X_3317>` (:ref:`ISOGONAL CONJUGATE OF X(3312) <X_3317>`)
 
 .. signature:: center
 
@@ -45,7 +45,7 @@ X_1373
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, :ref:`7 <X_7>`}, {:ref:`226 <X_226>`, 3317}
+   {:ref:`1 <X_1>`, :ref:`7 <X_7>`}, {:ref:`226 <X_226>`, :ref:`3317 <X_3317>`}
 
 .. collapse:: Functional Relations
    :badge: 3 relations

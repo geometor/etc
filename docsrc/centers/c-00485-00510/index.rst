@@ -18,18 +18,18 @@ X_485–X_510
    :alt: X_485–X_510 — Vecten Square Centers & Isoscelizer Centers
    :align: center
 
-   **X_485–X_510** (*Vecten Square Centers & Isoscelizer Centers*) — 14 representative centers (from 26 in collection) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_485–X_510** (*Vecten Square Centers & Isoscelizer Centers*) — 13 representative centers (from 26 in collection) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. _preamble-0010:
 
-.. admonition:: Group Preamble — Centers X_485-X_495
+.. admonition:: Group Preamble — Centers X_485-X_495 (triangle centers associated with squares)
    :class: note
 
    Centers :ref:`X_485 <X_485>`-:ref:`X_495 <X_495>`, and also :ref:`X_371 <X_371>` and :ref:`X_372 <X_372>`, are *Vierkanen in een driehoek*: :term:`triangle centers <triangle-center>` associated with squares.
 
 .. _preamble-0011:
 
-.. admonition:: Group Preamble — Centers X_503-X_510
+.. admonition:: Group Preamble — Centers X_503-X_510 (Isoscelizer points: X_503-X_510)
    :class: note
 
    Centers :ref:`X_503 <X_503>`-:ref:`X_510 <X_510>`, and also centers :ref:`X_173 <X_173>`, :ref:`X_174 <X_174>`, :ref:`X_258 <X_258>`, and :ref:`X_351 <X_351>`-:ref:`X_364 <X_364>` are associated with isoscelizers.

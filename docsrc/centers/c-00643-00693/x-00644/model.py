@@ -9,7 +9,6 @@ from geometor.model import Model
 
 from geometor.etc.ops import (
     central_line,
-    ceva_conjugate,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
@@ -23,9 +22,8 @@ def construct_x_00644(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_644 = TRILINEAR MULTIPLIER FOR YFF PARABOLA on reference triangle ABC."""
-    X_190 = eval_trilinear_point(model, A, B, C, 'b*c/(b - c)', ID="X_190", classes=["center"])
-    X_100 = eval_trilinear_point(model, A, B, C, '1/(b - c)', ID="X_100", classes=["center"])
-    X_644 = ceva_conjugate(model, A, B, C, X_190, X_100, ID="X_644", classes=["selected", "target"])
+    X_644 = eval_trilinear_point(model, A, B, C, '((b + c - a)/(b - c))', ID="X_644", classes=["selected", "target"])
+    X_100 = eval_trilinear_point(model, A, B, C, '1/(b - c)', ID="X_100", classes=["center", "incident"])
     X_101 = eval_trilinear_point(model, A, B, C, 'a/(b - c)', ID="X_101", classes=["center", "incident"])
     central_line(model, X_100, X_101, 100, 101, incident=True)
     X_8 = nagel_point_of(model, A, B, C, ID="X_8", classes=["center", "incident"])

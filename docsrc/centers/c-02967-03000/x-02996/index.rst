@@ -24,7 +24,7 @@ X_2996
    :class: note
 
    * **Central Lines:** :g:`{20, 98} <{ 20, 98 }>`, :g:`{4, 193} <{ 4, 193 }>`
-   * **Related Centers:** :g:`X_20 <X_20>` (:ref:`DE LONGCHAMPS POINT <X_20>`), :g:`X_98 <X_98>` (:ref:`TARRY POINT <X_98>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_193 <X_193>` (:ref:`-CEVA CONJUGATE OF X(2) <X_193>`)
+   * **Related Centers:** :g:`X_3053 <X_3053>` (:ref:`INTERSECTION X(3)X(6)∩X(4)X(230) <X_3053>`), :g:`X_20 <X_20>` (:ref:`DE LONGCHAMPS POINT <X_20>`), :g:`X_98 <X_98>` (:ref:`TARRY POINT <X_98>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_193 <X_193>` (:ref:`-CEVA CONJUGATE OF X(2) <X_193>`)
 
 .. signature:: center
 
@@ -41,7 +41,7 @@ X_2996
    :badge: 8 relations
 
    * :ref:`X_2996 <X_2996>` = reflection of X_i in X_j for these (i,j): (:ref:`487 <X_487>`, :ref:`485 <X_485>`), (:ref:`488 <X_488>`, :ref:`486 <X_486>`)
-   * :ref:`X_2996 <X_2996>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3053
+   * :ref:`X_2996 <X_2996>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3053 <X_3053>`
    * :ref:`X_2996 <X_2996>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_193 <X_193>`
    * :ref:`X_2996 <X_2996>` = cevapoint of :ref:`X_115 <X_115>` and :ref:`X_525 <X_525>`
    * :ref:`X_2996 <X_2996>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`69 <X_69>`, :ref:`2 <X_2>`), (:ref:`1368 <X_1368>`, :ref:`264 <X_264>`)

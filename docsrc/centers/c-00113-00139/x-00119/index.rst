@@ -43,7 +43,7 @@ X_119
    :badge: 15 relations
 
    * :ref:`X_119 <X_119>` = midpoint of X_i and X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`100 <X_100>`), (:ref:`104 <X_104>`, :ref:`153 <X_153>`)
-   * :ref:`X_119 <X_119>` = reflection of X_i in X_j for these (i,j): (:ref:`11 <X_11>`, :ref:`5 <X_5>`), (:ref:`3 <X_3>`, 3035)
+   * :ref:`X_119 <X_119>` = reflection of X_i in X_j for these (i,j): (:ref:`11 <X_11>`, :ref:`5 <X_5>`), (:ref:`3 <X_3>`, :ref:`3035 <X_3035>`)
    * :ref:`X_119 <X_119>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_15381
    * :ref:`X_119 <X_119>` = complement of :ref:`X_104 <X_104>`
    * :ref:`X_119 <X_119>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X_517 <X_517>`
@@ -56,7 +56,7 @@ X_119
    * :ref:`X_119 <X_119>` = Λ(:ref:`X_1 <X_1>`, :ref:`X_3 <X_3>`), wrt :term:`orthic triangle <orthic-triangle>`
    * :ref:`X_119 <X_119>` = Λ(:ref:`X_4 <X_4>`, :ref:`X_8 <X_8>`), wrt orthic triangle
    * :ref:`X_119 <X_119>` = Spieker-radical-circle-inverse of X_34459
-   * :ref:`X_119 <X_119>` = center of rectangular circumhyperbola passing through isogonal and :term:`isotomic conjugates <isotomic-conjugate>` of X_3657
+   * :ref:`X_119 <X_119>` = center of rectangular circumhyperbola passing through isogonal and :term:`isotomic conjugates <isotomic-conjugate>` of :ref:`X_3657 <X_3657>`
 
 Notes
 -----

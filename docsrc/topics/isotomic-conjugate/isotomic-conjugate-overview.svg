@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" width="100%" height="100%">
+  <defs>
+    <filter id="glow-topic" filterUnits="userSpaceOnUse" x="-100" y="-100" width="1200" height="960">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+
+  <polygon points="260.0,425.0 740.0,425.0 553.9,137.1" fill="rgba(54, 102, 204, 0.14)" stroke="#3b82f6" stroke-width="4.2" stroke-linejoin="round" />
+
+  <line x1="723.7" y1="77.9" x2="305.0" y2="575.2" stroke="#e8b85a" stroke-width="2.4" stroke-dasharray="2, 4.5" stroke-linecap="round" opacity="0.7" /><line x1="543.3" y1="292.1" x2="485.3" y2="361.0" stroke="#e8b85a" stroke-width="4.2" stroke-linecap="round" />
+  <circle cx="543.3" cy="292.1" r="7.5" fill="#e8b85a" stroke="#0b0e15" stroke-width="2.2" /><text x="555.3" y="282.1" fill="#e8b85a" font-family="JetBrains Mono, monospace" font-size="16" font-weight="bold">X<tspan dy="4" font-size="12">7</tspan></text><circle cx="485.3" cy="361.0" r="7.5" fill="#e8b85a" stroke="#0b0e15" stroke-width="2.2" /><text x="497.3" y="351.0" fill="#e8b85a" font-family="JetBrains Mono, monospace" font-size="16" font-weight="bold">X<tspan dy="4" font-size="12">8</tspan></text>
+
+  <circle cx="260.0" cy="425.0" r="6.5" fill="#66ff66" stroke="#0d111a" stroke-width="2" />
+  <circle cx="740.0" cy="425.0" r="6.5" fill="#66ff66" stroke="#0d111a" stroke-width="2" />
+  <circle cx="553.9" cy="137.1" r="6.5" fill="#f8f6f0" stroke="#0d111a" stroke-width="2" />
+  <text x="236.0" y="447.0" fill="#88ff88" font-family="JetBrains Mono, monospace" font-size="20" font-weight="bold">A</text>
+  <text x="752.0" y="447.0" fill="#88ff88" font-family="JetBrains Mono, monospace" font-size="20" font-weight="bold">B</text>
+  <text x="545.9" y="121.1" fill="#f8f6f0" font-family="JetBrains Mono, monospace" font-size="20" font-weight="bold">C</text>
+
+  <circle cx="543.3" cy="292.1" r="9.5" fill="#ffd700" stroke="#00ffff" stroke-width="2.8" filter="url(#glow-topic)" />
+
+  <!-- Bottom Summary Cards -->
+  <g transform="translate(42, 548)">
+    <rect x="0" y="0" width="916" height="184" rx="14" fill="rgba(11, 14, 21, 0.94)" stroke="rgba(232, 184, 90, 0.45)" stroke-width="1.5" />
+    <text x="24" y="34" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="14" font-weight="bold" letter-spacing="0.8">TRANSFORMATIONS &amp; CONJUGACIES • T_2</text>
+    <text x="892" y="34" text-anchor="end" fill="#e8b85a" font-family="JetBrains Mono, monospace" font-size="15" font-weight="bold">ISOTOMIC CONJUGATE</text>
+
+    <rect x="24" y="52" width="12" height="24" rx="3" fill="#e8b85a" />
+    <text x="48" y="70" fill="#e8b85a" font-family="JetBrains Mono, monospace" font-size="16" font-weight="bold">P = u : v : w  ⟷  P† = 1/u : 1/v : 1/w</text>
+
+    <rect x="24" y="94" width="12" height="24" rx="3" fill="#38bdf8" />
+    <text x="48" y="112" fill="#38bdf8" font-family="JetBrains Mono, monospace" font-size="16" font-weight="bold">Barycentrics u : v : w ↦ 1/u : 1/v : 1/w</text>
+
+    <rect x="24" y="136" width="12" height="24" rx="3" fill="#5ec27e" />
+    <text x="48" y="154" fill="#5ec27e" font-family="JetBrains Mono, monospace" font-size="16" font-weight="bold">Gergonne–Nagel Isotomic Axis {7, 8}</text>
+  </g>
+</svg>

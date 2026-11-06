@@ -44,9 +44,9 @@ X_171
    * :ref:`X_171 <X_171>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_256 <X_256>`
    * :ref:`X_171 <X_171>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_7018
    * :ref:`X_171 <X_171>` = :term:`complement <complement>` of X_4388
-   * :ref:`X_171 <X_171>` = :term:`anticomplement <anticomplement>` of X_3846
+   * :ref:`X_171 <X_171>` = :term:`anticomplement <anticomplement>` of :ref:`X_3846 <X_3846>`
    * :ref:`X_171 <X_171>` = perspector of Gemini triangle 33 and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 33
-   * :ref:`X_171 <X_171>` = :term:`trilinear pole <trilinear-pole>` line X_3287X_3805 (the perspectrix of :g:`ABC << A B C >>` and Gemini triangle 34)
+   * :ref:`X_171 <X_171>` = :term:`trilinear pole <trilinear-pole>` line :ref:`X_3287 <X_3287>`\ \ :ref:`X_3805 <X_3805>` (the perspectrix of :g:`ABC << A B C >>` and Gemini triangle 34)
    * :ref:`X_171 <X_171>` = :ref:`X_292 <X_292>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_238 <X_238>`
    * :ref:`X_171 <X_171>` = X_i-:term:`beth conjugate <beth-conjugate>` of X_j for these (i,j): (:ref:`100 <X_100>`, :ref:`171 <X_171>`), (:ref:`643 <X_643>`, :ref:`42 <X_42>`)
    * :ref:`X_171 <X_171>` = :term:`crosssum <crosssum>` of PU(6)

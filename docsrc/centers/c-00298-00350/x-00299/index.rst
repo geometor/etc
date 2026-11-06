@@ -48,9 +48,9 @@ X_299
 
    * :ref:`X_299 <X_299>` = midpoint of :ref:`X_617 <X_617>` and :ref:`X_622 <X_622>`
    * :ref:`X_299 <X_299>` = reflection of X_i in X_j for these (i,j): (:ref:`14 <X_14>`, :ref:`624 <X_624>`), (:ref:`16 <X_16>`, :ref:`619 <X_619>`), (:ref:`298 <X_298>`, :ref:`325 <X_325>`), (:ref:`385 <X_385>`, :ref:`396 <X_396>`)
-   * :ref:`X_299 <X_299>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3458
+   * :ref:`X_299 <X_299>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3458 <X_3458>`
    * :ref:`X_299 <X_299>` = isotomic conjugate of :ref:`X_14 <X_14>`
-   * :ref:`X_299 <X_299>` = :term:`complement <complement>` of X_3181
+   * :ref:`X_299 <X_299>` = :term:`complement <complement>` of :ref:`X_3181 <X_3181>`
    * :ref:`X_299 <X_299>` = :term:`anticomplement <anticomplement>` of :ref:`X_395 <X_395>`
    * :ref:`X_299 <X_299>` = :ref:`X_301 <X_301>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_302 <X_302>`
    * :ref:`X_299 <X_299>` = :ref:`X_16 <X_16>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_471 <X_471>`

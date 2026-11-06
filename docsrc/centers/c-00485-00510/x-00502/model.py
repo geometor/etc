@@ -11,6 +11,7 @@ from geometor.etc.ops import (
     central_line,
     construct_baseline_triangle,
     create_model,
+    eval_barycentric_point,
     eval_trilinear_point,
     isogonal_conjugate,
     promote_point_to_top,
@@ -28,6 +29,12 @@ def construct_x_00502(
     X_10 = spieker_center_of(model, A, B, C, ID="X_10", classes=["center", "incident"])
     X_191 = eval_trilinear_point(model, A, B, C, '(b + c - a)*(b*c + c*a + a*b) + b**(3) + c**(3) - a**(3)', ID="X_191", classes=["center", "incident"])
     central_line(model, X_10, X_191, 10, 191, incident=True)
+    X_594 = eval_trilinear_point(model, A, B, C, '(b + c)**(2)/a', ID="X_594", classes=["center", "incident"])
+    X_3678 = eval_barycentric_point(model, A, B, C, '(a*(b + c)*(- a**(2) + b**(2) + c**(2) + b*c))', ID="X_3678", classes=["center", "incident"])
+    central_line(model, X_594, X_3678, 594, 3678, incident=True)
+    X_1089 = eval_trilinear_point(model, A, B, C, '(b**(2)*c**(2)*(b + c)**(2))', ID="X_1089", classes=["center", "incident"])
+    X_3969 = eval_barycentric_point(model, A, B, C, '((b + c)*(b**(2) + c**(2) - a**(2) + b*c))', ID="X_3969", classes=["center", "incident"])
+    central_line(model, X_1089, X_3969, 1089, 3969, incident=True)
     return promote_point_to_top(model, X_502)
 
 

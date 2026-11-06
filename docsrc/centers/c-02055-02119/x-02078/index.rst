@@ -48,11 +48,11 @@ X_2078
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X_2078 <X_2078>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3254
+   * :ref:`X_2078 <X_2078>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3254 <X_3254>`
    * :ref:`X_2078 <X_2078>` = inverse-in-circumcircle of :ref:`X_57 <X_57>`
    * :ref:`X_2078 <X_2078>` = :term:`crosssum <crosssum>` of :ref:`X_142 <X_142>` and :ref:`X_527 <X_527>`
    * :ref:`X_2078 <X_2078>` = inverse-in-{circumcircle, incircle}-inverter of :ref:`X_65 <X_65>`
-   * :ref:`X_2078 <X_2078>` = {X_3513,X_3514}-harmonic conjugate of :ref:`X_36 <X_36>`
+   * :ref:`X_2078 <X_2078>` = {:ref:`X_3513 <X_3513>`,\ :ref:`X_3514 <X_3514>`}-harmonic conjugate of :ref:`X_36 <X_36>`
 
 .. toctree::
    :hidden:

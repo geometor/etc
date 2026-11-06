@@ -30,7 +30,7 @@ X_1738
 
    | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = - (\cos A)/x + (\cos B)/y + (\cos C)/z`,\ :math:`x : y : z` = :ref:`X_105 <X_105>`
    | **Barycentrics:** :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
-   | **Search Value (6, 9, 13):** :math:`9.953055690939`
+   | **Search Value (6, 9, 13):** :math:`-0.989820298331`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form

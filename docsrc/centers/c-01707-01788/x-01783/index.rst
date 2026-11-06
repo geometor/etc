@@ -46,7 +46,7 @@ X_1783
    * :ref:`X_1783 <X_1783>` = trilinear pole of line :ref:`X_19 <X_19>`\ \ :ref:`X_25 <X_25>` (the tangent to hyperbola {{:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_4 <X_4>`,\ :ref:`X_19 <X_19>`}} at :ref:`X_19 <X_19>`)
    * :ref:`X_1783 <X_1783>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_693 <X_693>` (line :ref:`X_918 <X_918>`\ \ :ref:`X_1086 <X_1086>`)
    * :ref:`X_1783 <X_1783>` = polar conjugate of :ref:`X_693 <X_693>`
-   * :ref:`X_1783 <X_1783>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_1364 <X_1364>`\ X_3270
+   * :ref:`X_1783 <X_1783>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_1364 <X_1364>`\ \ :ref:`X_3270 <X_3270>`
    * :ref:`X_1783 <X_1783>` = perspector of :term:`anticevian triangle <anticevian-triangle>` of :ref:`X_108 <X_108>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of :term:`intangents triangle <intangents-triangle>`
    * :ref:`X_1783 <X_1783>` = barycentric product of circumcircle intercepts of line :ref:`X_4 <X_4>`\ \ :ref:`X_8 <X_8>`
    * :ref:`X_1783 <X_1783>` = barycentric product :ref:`X_4 <X_4>`\ \*\ :ref:`X_100 <X_100>`

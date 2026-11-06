@@ -46,7 +46,7 @@ X_2370
    :badge: 7 relations
 
    * :ref:`X_2370 <X_2370>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2390 <X_2390>`
-   * :ref:`X_2370 <X_2370>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3007
+   * :ref:`X_2370 <X_2370>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3007 <X_3007>`
    * :ref:`X_2370 <X_2370>` = cevapoint of :ref:`X_3 <X_3>` and :ref:`X_519 <X_519>`
    * :ref:`X_2370 <X_2370>` = circumcircle antipode of X_32704
    * :ref:`X_2370 <X_2370>` = Thomson-isogonal conjugate of X_32475

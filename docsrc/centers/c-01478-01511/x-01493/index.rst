@@ -48,7 +48,7 @@ X_1493
 
    * :ref:`X_1493 <X_1493>` = midpoint of :ref:`X_54 <X_54>` and :ref:`X_195 <X_195>`
    * :ref:`X_1493 <X_1493>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1487 <X_1487>`
-   * :ref:`X_1493 <X_1493>` = :term:`complement <complement>` of X_3519
+   * :ref:`X_1493 <X_1493>` = :term:`complement <complement>` of :ref:`X_3519 <X_3519>`
    * :ref:`X_1493 <X_1493>` = :ref:`X_110 <X_110>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_1510 <X_1510>`
    * :ref:`X_1493 <X_1493>` = :term:`crosspoint <crosspoint>` of :ref:`X_61 <X_61>` and :ref:`X_62 <X_62>`
    * :ref:`X_1493 <X_1493>` = :term:`crosssum <crosssum>` of :ref:`X_17 <X_17>` and :ref:`X_18 <X_18>`

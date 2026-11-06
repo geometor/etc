@@ -1,0 +1,222 @@
+[
+  {
+    "id": "act_1_definition",
+    "title": "T_18 APOLLONIAN CIRCLES — Geometric Definition",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_18",
+        "short_code": "T_18",
+        "g_id": "APOLLONIAN CIRCLES",
+        "folio": "Kimberling ETC • Named Circles",
+        "enunciation": "The three circles of Apollonius passing through each vertex and its interior and exterior angle-bisector feet, intersecting at the 1st and 2nd Isodynamic Points X_15 and X_16.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.0,
+        "step_num": 1,
+        "step_kind": "CONSTRUCT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-18-apollonian-circles/svgs/01_primary.svg",
+        "symbolic": "Three Apollonian Circles: PB/PC = c/b • PC/PA = a/c • PA/PB = b/a",
+        "clause_html": "<span class=\"clause-line\"><b>The Apollonian Circles:</b> Intersect on the Brocard axis at the 1st Isodynamic Point <span class=\"g-tok\">X_15</span> and 2nd Isodynamic Point <span class=\"g-tok\">X_16</span>, orthogonal to the <span style=\"color:#94a3b8;font-family:'JetBrains Mono',monospace;font-weight:600;\">circumcircle</span>.</span>",
+        "just_tag": "∵ DEFINITION",
+        "just_id": "APOLLONIUS OF PERGA • LOCUS OF CONSTANT RATIO",
+        "just_title": "Diameter of the A-Apollonian circle is the harmonic segment between interior and exterior bisector feet on BC.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_15",
+          "X_16",
+          "X_3"
+        ],
+        "coincide_ids": [],
+        "equal_ids": []
+      },
+      {
+        "prop_id": "ETC • T_18",
+        "short_code": "T_18",
+        "g_id": "APOLLONIAN CIRCLES",
+        "folio": "Kimberling ETC • Named Circles",
+        "enunciation": "The three circles of Apollonius passing through each vertex and its interior and exterior angle-bisector feet, intersecting at the 1st and 2nd Isodynamic Points X_15 and X_16.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "is_punchline": true,
+        "weight": 1.0,
+        "step_num": 2,
+        "step_kind": "GOAL",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-18-apollonian-circles/svgs/01_primary.svg",
+        "symbolic": "Three Apollonian Circles: PB/PC = c/b • PC/PA = a/c • PA/PB = b/a",
+        "clause_html": "<span class=\"clause-line\"><b>The Apollonian Circles:</b> Intersect on the Brocard axis at the 1st Isodynamic Point <span class=\"g-tok\">X_15</span> and 2nd Isodynamic Point <span class=\"g-tok\">X_16</span>, orthogonal to the <span class=\"coincide-tok\">circumcircle</span>.</span>",
+        "just_tag": "∵ STRUCTURE",
+        "just_id": "APOLLONIUS OF PERGA • LOCUS OF CONSTANT RATIO",
+        "just_title": "Diameter of the A-Apollonian circle is the harmonic segment between interior and exterior bisector feet on BC.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_15",
+          "X_16",
+          "X_3"
+        ],
+        "coincide_ids": [
+          "circumcircle"
+        ],
+        "equal_ids": [
+          "apollonian_circle"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "act_2_algebra_and_lines",
+    "title": "T_18 Algebraic Action & Central Lines",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_18",
+        "short_code": "T_18",
+        "g_id": "APOLLONIAN CIRCLES",
+        "folio": "Kimberling ETC • Named Circles",
+        "enunciation": "The three circles of Apollonius passing through each vertex and its interior and exterior angle-bisector feet, intersecting at the 1st and 2nd Isodynamic Points X_15 and X_16.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.15,
+        "step_num": 3,
+        "step_kind": "ASSERT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-18-apollonian-circles/svgs/02_coordinates.svg",
+        "symbolic": "Coaxial Pencil Centered on the Lemoine Axis • Radical Axis = Brocard Axis",
+        "clause_html": "<span class=\"clause-line\"><b>Equidistant Pedal Property:</b> At <span class=\"g-tok\">X_15</span> and <span class=\"coincide-tok\">X_16</span>, vertex distances satisfy <span class=\"eq-tok\">a·|PA| = b·|PB| = c·|PC|</span> and the pedal triangle is equilateral.</span>",
+        "just_tag": "∵ COORDINATE LAW",
+        "just_id": "EQUILATERAL PEDAL TRIANGLES",
+        "just_title": "X_15 and X_16 are the unique points in the plane whose pedal triangles on △ABC are equilateral."
+      },
+      {
+        "prop_id": "ETC • T_18",
+        "short_code": "T_18",
+        "g_id": "APOLLONIAN CIRCLES",
+        "folio": "Kimberling ETC • Named Circles",
+        "enunciation": "The three circles of Apollonius passing through each vertex and its interior and exterior angle-bisector feet, intersecting at the 1st and 2nd Isodynamic Points X_15 and X_16.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.5,
+        "step_num": 4,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-18-apollonian-circles/svgs/03_central_lines.svg",
+        "symbolic": "Brocard Axis {3, 6, 15, 16} & Symmedian Crossings {6, 13, 16} • {6, 14, 15}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Central Line Incidences</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Apollonian Axes</span><span class=\"g-tok\">{3, 6, 15, 16}</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Meets Fermat–Isodynamic Lines</span><span class=\"muted-tok\">{6, 13, 16}</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Central Line {6, 14, 15}</span><span class=\"muted-tok\">{6, 14, 15}</span></div></div></div>",
+        "just_tag": "∵ PRIMARY AXIS",
+        "just_id": "RADICAL CHORD",
+        "just_title": "All three Apollonian circles intersect orthogonally with the circumcircle of △ABC.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_15",
+          "{3, 6, 15, 16}"
+        ],
+        "coincide_ids": [],
+        "equal_ids": []
+      },
+      {
+        "prop_id": "ETC • T_18",
+        "short_code": "T_18",
+        "g_id": "APOLLONIAN CIRCLES",
+        "folio": "Kimberling ETC • Named Circles",
+        "enunciation": "The three circles of Apollonius passing through each vertex and its interior and exterior angle-bisector feet, intersecting at the 1st and 2nd Isodynamic Points X_15 and X_16.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.55,
+        "step_num": 5,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-18-apollonian-circles/svgs/03_central_lines.svg",
+        "symbolic": "Brocard Axis {3, 6, 15, 16} & Symmedian Crossings {6, 13, 16} • {6, 14, 15}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Central Line Incidences</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Apollonian Axes</span><span class=\"g-tok\">{3, 6, 15, 16}</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Meets Fermat–Isodynamic Lines</span><span class=\"coincide-tok\">{6, 13, 16}</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Central Line {6, 14, 15}</span><span class=\"eq-tok\">{6, 14, 15}</span></div></div></div>",
+        "just_tag": "∵ COLLINEARITIES",
+        "just_id": "RADICAL CHORD",
+        "just_title": "All three Apollonian circles intersect orthogonally with the circumcircle of △ABC.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_15",
+          "{3, 6, 15, 16}"
+        ],
+        "coincide_ids": [
+          "{6, 13, 16}"
+        ],
+        "equal_ids": [
+          "{6, 14, 15}"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "act_3_collection_network",
+    "title": "T_18 Collection 1 Network & Invariance",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_18",
+        "short_code": "T_18",
+        "g_id": "APOLLONIAN CIRCLES",
+        "folio": "Kimberling ETC • Named Circles",
+        "enunciation": "The three circles of Apollonius passing through each vertex and its interior and exterior angle-bisector feet, intersecting at the 1st and 2nd Isodynamic Points X_15 and X_16.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.1,
+        "step_num": 6,
+        "step_kind": "PROVE",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-18-apollonian-circles/svgs/04_relations.svg",
+        "symbolic": "X_15 • X_16 • X_3 • X_6 • X_13 • X_14",
+        "clause_html": "<span class=\"clause-line\"><b>Isodynamic Network:</b> <span class=\"g-tok\">X_15</span> and <span class=\"coincide-tok\">X_16</span> pair isogonally with Fermat points <span class=\"eq-tok\">X_13</span> and <span class=\"g-tok\">X_14</span> across <span class=\"coincide-tok\">X_3, X_6</span>.</span>",
+        "just_tag": "∵ COLLECTION 1",
+        "just_id": "MOBIUS EQUILATERAL INVARIANCE",
+        "just_title": "A Möbius transformation sending X_15 to 0 and X_16 to ∞ maps △ABC to an equilateral triangle.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_15",
+          "X_14",
+          "{ 14, 15 }"
+        ],
+        "coincide_ids": [
+          "X_16",
+          "{ 15, 16 }",
+          "X_3",
+          "{ 3, 15 }"
+        ],
+        "equal_ids": [
+          "X_13",
+          "{ 13, 15 }"
+        ]
+      },
+      {
+        "prop_id": "ETC • T_18",
+        "short_code": "T_18",
+        "g_id": "APOLLONIAN CIRCLES",
+        "folio": "Kimberling ETC • Named Circles",
+        "enunciation": "The three circles of Apollonius passing through each vertex and its interior and exterior angle-bisector feet, intersecting at the 1st and 2nd Isodynamic Points X_15 and X_16.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.95,
+        "step_num": 7,
+        "step_kind": "∴",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/resources/videos/topics/t-18-apollonian-circles/svgs/05_four_triangles.svg",
+        "symbolic": "Invariance across Acute (5,6,7) • Right (3,4,5) • Kepler (1,√φ,φ) • Kimberling (6,9,13)",
+        "clause_html": "<span class=\"clause-line\"><b>Reference Triangle Invariance:</b> Across all four reference triangles, <b>The Apollonian Circles</b> preserves its exact projective incidences and harmonic ratios.</span>",
+        "just_tag": "∵ INVARIANCE",
+        "just_id": "FOUR-TRIANGLE VERIFICATION",
+        "just_title": "Verified across Collection 1 centers X_15, X_16, X_3, X_6, X_13, X_14."
+      }
+    ]
+  }
+]

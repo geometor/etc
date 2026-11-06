@@ -51,7 +51,7 @@ X_1397
    * :ref:`X_1397 <X_1397>` = :ref:`X_560 <X_560>`-cross conjugate of :ref:`X_32 <X_32>`
    * :ref:`X_1397 <X_1397>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`56 <X_56>`, :ref:`608 <X_608>`), (:ref:`59 <X_59>`, :ref:`1415 <X_1415>`), (:ref:`604 <X_604>`, :ref:`1106 <X_1106>`)
    * :ref:`X_1397 <X_1397>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`8 <X_8>`, :ref:`345 <X_345>`), (:ref:`75 <X_75>`, :ref:`322 <X_322>`), (:ref:`312 <X_312>`, :ref:`341 <X_341>`)
-   * :ref:`X_1397 <X_1397>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3596
+   * :ref:`X_1397 <X_1397>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3596 <X_3596>`
    * :ref:`X_1397 <X_1397>` = :ref:`X_8 <X_8>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_75 <X_75>`
    * :ref:`X_1397 <X_1397>` = trilinear product of extraversions of :ref:`X_55 <X_55>`
 

@@ -48,8 +48,8 @@ X_2690
    * :ref:`X_2690 <X_2690>` = reflection of :ref:`X_2688 <X_2688>` in :ref:`X_3 <X_3>`
    * :ref:`X_2690 <X_2690>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2774 <X_2774>`
    * :ref:`X_2690 <X_2690>` = reflection of :ref:`X_101 <X_101>` in the Euler line
-   * :ref:`X_2690 <X_2690>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_6 <X_6>`\ X_3120
-   * :ref:`X_2690 <X_2690>` = Ψ(:ref:`X_6 <X_6>`, X_3120)
+   * :ref:`X_2690 <X_2690>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_6 <X_6>`\ \ :ref:`X_3120 <X_3120>`
+   * :ref:`X_2690 <X_2690>` = Ψ(:ref:`X_6 <X_6>`, :ref:`X_3120 <X_3120>`)
 
 .. toctree::
    :hidden:

@@ -23,8 +23,8 @@ X_1323
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{1, 7} <{ 1, 7 }>`, :g:`{10, 348} <{ 10, 348 }>`
-   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_7 <X_7>` (:ref:`GERGONNE POINT <X_7>`), :g:`X_10 <X_10>` (:ref:`SPIEKER CENTER <X_10>`), :g:`X_348 <X_348>` (:ref:`ISOTOMIC CONJUGATE OF X(281) <X_348>`)
+   * **Central Lines:** :g:`{1155, 3328} <{ 1155, 3328 }>`
+   * **Related Centers:** :g:`X_1155 <X_1155>` (:ref:`SCHRÖDER POINT <X_1155>`), :g:`X_3328 <X_3328>` (:ref:`INCIRCLE TRANSFORM T(X(2291)) <X_3328>`)
 
 .. signature:: center
 
@@ -46,7 +46,7 @@ X_1323
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X_1323 <X_1323>` = midpoint of :ref:`X_1155 <X_1155>` and X_3328
+   * :ref:`X_1323 <X_1323>` = midpoint of :ref:`X_1155 <X_1155>` and :ref:`X_3328 <X_3328>`
    * :ref:`X_1323 <X_1323>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_4845
    * :ref:`X_1323 <X_1323>` = inverse-in-incircle of :ref:`X_7 <X_7>`
    * :ref:`X_1323 <X_1323>` = :ref:`X_1260 <X_1260>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_527 <X_527>`

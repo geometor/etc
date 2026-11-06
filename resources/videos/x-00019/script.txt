@@ -1,0 +1,79 @@
+center: X_19
+title: CLAWSON POINT
+folio: Kimberling ETC • Collection 1 (X_1–X_19)
+enunciation: The homothetic center (perspector) of the orthic triangle H_a H_b H_c and the extangents ( or extouch) triangle.
+
+[bell:proposition]
+
+[screen: CONSTRUCT | svg: 01_primary.svg | weight: 1]
+symbolic: X_19 = Clawson Point • Orthic & Extouch Perspector
+zoom: A, B, C
+active: X_19:gold
+head: Primary Construction
+row: Target Center | X_19 (Clawson Point):gold
+just: ∵ CONCURRENCE | CLAWSON'S THEOREM (1925) | Lines joining altitude feet H_a, H_b, H_c to corresponding vertices of the extangents/extouch triangles concur at X_19.
+say: Completing the first classical collection of the Encyclopedia of Triangle Centers, <pause> X nineteen is the Clawson Point, <pause> discovered by John Wentworth Clawson in nineteen twenty-five: <pause> the homothetic center and perspector of the orthic triangle H sub a, H sub b, H sub c and the extangents triangle,
+
+[screen: GOAL | svg: 01_primary.svg | weight: 1 | punchline: true]
+symbolic: X_19 = Clawson Point • Orthic & Extouch Perspector
+zoom: X_19, X_19
+thumb_zoom: A, B, C
+active: X_19:gold
+head: Primary Construction
+row: Target Center | X_19 (Clawson Point):gold
+just: ∵ DEFINITION | CLAWSON'S THEOREM (1925) | Lines joining altitude feet H_a, H_b, H_c to corresponding vertices of the extangents/extouch triangles concur at X_19.
+say: <pause> as well as the perspector of the orthic and extouch triangles.
+
+[bell:construction]
+
+[screen: ASSERT | svg: 02_coordinates.svg | weight: 1.15]
+symbolic: Trilinears tan A : tan B : tan C • Barycentrics a/S_A : b/S_B : c/S_C
+section: Trilinear Distances | α = cos B cos C / sin A:gold | β = cos C cos A / sin B:blue | γ = cos A cos B / sin C:green
+section: Barycentric Sub-Areas | u = tan B tan C:gold | v = tan C tan A:blue | w = tan A tan B:green
+just: ∵ COORDINATES | TRILINEAR TANGENT CENTER | Notice the duality with Orthocenter X_4: X_4 has barycentrics tan A : tan B : tan C, while X_19 has trilinears tan A : tan B : tan C.
+say: Its trilinear coordinates are simply tangent A, to tangent B, to tangent C—<pause> matching the barycentric coordinates of the Orthocenter X four! <pause> Consequently, <pause> its barycentric coordinates are a tangent A, <pause> to b tangent B, <pause> to c tangent C.
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.5]
+symbolic: Orthocenter–Spieker Line {4, 9, 10, 19} • Line {1, 19, 28}
+zoom: X_19, X_4, X_9, X_10
+active: X_19:gold, {4, 9, 10, 19}:blue
+head: Incident Central Lines
+row: Orthocenter–Spieker | {4, 9, 10, 19}:blue
+row: Symmedian–Clawson | {6, 19, 25}:muted
+row: Incenter–Clawson | {1, 19, 28}:muted
+just: ∵ PRIMARY AXIS | FOUR-CENTER COLLINEARITY {4, 9, 10, 19} | Orthocenter X_4, Mittenpunkt X_9, Spieker Center X_10, and Clawson Point X_19 are collinear.
+say: <pause> On the central lines layer,
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.55]
+symbolic: Orthocenter–Spieker Line {4, 9, 10, 19} • Line {1, 19, 28}
+zoom: X_19, X_4, X_9, X_10, X_6, X_25, X_1, X_28
+active: X_19:gold, {4, 9, 10, 19}:blue, {6, 19, 25}:orange, {1, 19, 28}:pink
+head: Incident Central Lines
+row: Orthocenter–Spieker | {4, 9, 10, 19}:blue
+row: Symmedian–Clawson | {6, 19, 25}:orange
+row: Incenter–Clawson | {1, 19, 28}:pink
+just: ∵ COLLINEARITIES | FOUR-CENTER COLLINEARITY {4, 9, 10, 19} | Orthocenter X_4, Mittenpunkt X_9, Spieker Center X_10, and Clawson Point X_19 are collinear.
+say: <pause> X nineteen lies on the Orthocenter–Mittenpunkt–Spieker line through X four, X nine, and X ten.
+
+[bell:insight]
+
+[screen: PROVE | svg: 04_relations.svg | weight: 1.05]
+symbolic: Isogonal Conjugate X_63 • Isotomic Conjugate X_304
+zoom: X_19, X_4, X_6, X_10, X_3
+active: X_19:gold, X_4:blue, X_6:green, X_10:orange
+head: Functional Relations
+row: Orthic Perspector Partner | X_4:blue
+row: Symmedian Partner | X_6:green
+row: Spieker Collinear | X_10:orange
+just: ∵ RELATIONS | TANGENT–COTANGENT ISOGONAL PAIR | Complement: X_4329 • Anticomplement: X_18589.
+say: Under functional relations, <pause> X nineteen is the isogonal conjugate of X sixty-three, <pause> the isotomic conjugate of X three hundred four,
+
+[screen: ∴ | svg: 05_four_triangles.svg | weight: 0.95]
+symbolic: Kimberling (6, 9, 13) Search = -1.480512397789
+head: Reference Triangles | a | b | c
+row: Acute Triangle | 5 | 6 | 7:gold
+row: Right Triangle | 3 | 4 | 5:blue
+row: Kepler Triangle | 1 | √φ | φ:green
+row: Kimberling Triangle | 6 | 9 | 13:purple
+just: ∵ INVARIANCE | KIMBERLING SEARCH VALUE • X_19 | Shortest directed trilinear distance on reference triangle (6, 9, 13): -1.480512397789.
+say: <pause> and concludes the nineteen foundational centers of the ETC.

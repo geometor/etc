@@ -46,7 +46,7 @@ X_1361
    :badge: 6 relations
 
    * :ref:`X_1361 <X_1361>` = reflection of :ref:`X_1364 <X_1364>` in :ref:`X_3 <X_3>`
-   * :ref:`X_1361 <X_1361>` = :term:`anticomplement <anticomplement>` of X_3040
+   * :ref:`X_1361 <X_1361>` = :term:`anticomplement <anticomplement>` of :ref:`X_3040 <X_3040>`
    * :ref:`X_1361 <X_1361>` = :term:`crosspoint <crosspoint>` of :ref:`X_7 <X_7>` and :ref:`X_1465 <X_1465>`
    * :ref:`X_1361 <X_1361>` = :ref:`X_1300 <X_1300>`-of-:term:`intouch triangle <intouch-triangle>`
    * :ref:`X_1361 <X_1361>` = :ref:`X_102 <X_102>`-of-Mandart-incircle-triangle

@@ -42,7 +42,7 @@ X_1330
    :badge: 6 relations
 
    * :ref:`X_1330 <X_1330>` = reflection of :ref:`X_1046 <X_1046>` in :ref:`X_10 <X_10>`
-   * :ref:`X_1330 <X_1330>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3437
+   * :ref:`X_1330 <X_1330>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3437 <X_3437>`
    * :ref:`X_1330 <X_1330>` = :term:`anticomplement <anticomplement>` of :ref:`X_58 <X_58>`
    * :ref:`X_1330 <X_1330>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X_1 <X_1>`
    * :ref:`X_1330 <X_1330>` = :ref:`X_313 <X_313>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_2 <X_2>`

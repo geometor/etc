@@ -22,7 +22,7 @@ X_98–X_112
 
 .. _preamble-0002:
 
-.. admonition:: Group Preamble — Centers on the circumcircle: X_74, X_98-X_112
+.. admonition:: Group Preamble — Centers on the circumcircle: X_74, X_98-X_112 (Points on the circumcircle; mappings Λ and Ψ)
    :class: note
 
    Centers :ref:`X_74 <X_74>`, :ref:`X_98 <X_98>`-:ref:`X_112 <X_112>`, and many others in ETC lie on the circumcircle. Mappings **Λ** and **Ψ** derived from such a point :g:`P <P>` for application to points :g:`X <X>`, are defined here:

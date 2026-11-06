@@ -8,7 +8,7 @@ X_1360
 
 .. enunciation::
 
-   :ref:`X_1360 <X_1360>` = X_3563-of-:term:`intouch triangle <intouch-triangle>` (Chris van Tienhoven, :cite:`Hyacinthos #21096 <hyacinthos>`, Jul 14, 2012)
+   :ref:`X_1360 <X_1360>` = :ref:`X_3563 <X_3563>`-of-:term:`intouch triangle <intouch-triangle>` (Chris van Tienhoven, :cite:`Hyacinthos #21096 <hyacinthos>`, Jul 14, 2012)
 
 .. figure:: x-01360.svg
    :alt: X_1360 — BRISSE TRANSFORM OF X_103

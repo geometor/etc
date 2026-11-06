@@ -8,7 +8,7 @@ X_1749
 
 .. enunciation::
 
-   :ref:`X_1749 <X_1749>` = midpoint of :ref:`X_484 <X_484>` and X_3065
+   :ref:`X_1749 <X_1749>` = midpoint of :ref:`X_484 <X_484>` and :ref:`X_3065 <X_3065>`
 
 .. figure:: x-01749.svg
    :alt: X_1749 — MIMOSA TRANSFORM OF X_265

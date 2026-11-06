@@ -49,13 +49,13 @@ X_960
    * :ref:`X_960 <X_960>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X_442 <X_442>`
    * :ref:`X_960 <X_960>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`314 <X_314>`), (:ref:`8 <X_8>`, :ref:`21 <X_21>`)
    * :ref:`X_960 <X_960>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`1402 <X_1402>`), (:ref:`56 <X_56>`, :ref:`65 <X_65>`)
-   * :ref:`X_960 <X_960>` = :term:`anticomplement <anticomplement>` of X_3812
+   * :ref:`X_960 <X_960>` = :term:`anticomplement <anticomplement>` of :ref:`X_3812 <X_3812>`
    * :ref:`X_960 <X_960>` = {:ref:`X_1 <X_1>`,\ :ref:`X_9 <X_9>`}-harmonic conjugate of :ref:`X_958 <X_958>`
    * :ref:`X_960 <X_960>` = perspector of circumconic centered at :ref:`X_2092 <X_2092>`
    * :ref:`X_960 <X_960>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X_2092 <X_2092>`
    * :ref:`X_960 <X_960>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_2092 <X_2092>`
    * :ref:`X_960 <X_960>` = :ref:`X_11 <X_11>`-of-:ref:`X_1 <X_1>`-Brocard-triangle
-   * :ref:`X_960 <X_960>` = X_3035-of-inner-Garcia-triangle
+   * :ref:`X_960 <X_960>` = :ref:`X_3035 <X_3035>`-of-inner-Garcia-triangle
    * :ref:`X_960 <X_960>` = X_12241-of-excentral-triangle
    * :ref:`X_960 <X_960>` = polar conjugate of isogonal conjugate of X_22074
    * :ref:`X_960 <X_960>` = excentral-to-:g:`ABC << A B C >>` :term:`barycentric image <barycentric-image>` of :ref:`X_10 <X_10>`

@@ -65,7 +65,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`L <L>` be the line :ref:`X_1 <X_1>`\ \ :ref:`X_3 <X_3>` = trilinear polar of :ref:`X_651 <X_651>`. Let V be the trilinear polar of the :term:`cevapoint <cevapoint>` of :ref:`X_1 <X_1>` and :ref:`X_3 <X_3>`, so that V = :ref:`X_521 <X_521>`\ \ :ref:`X_650 <X_650>`; let M = X_3157 = :ref:`X_1 <X_1>`-Ceva conjugate of :ref:`X_3 <X_3>`, and let N = :ref:`X_1745 <X_1745>` = :ref:`X_3 <X_3>`-Ceva conjugate of :ref:`X_1 <X_1>`. The lines :g:`L <L>`, V, MN concur in :ref:`X_1936 <X_1936>`. (Randy Hutson, December 26, 2015)
+   Let :g:`L <L>` be the line :ref:`X_1 <X_1>`\ \ :ref:`X_3 <X_3>` = trilinear polar of :ref:`X_651 <X_651>`. Let V be the trilinear polar of the :term:`cevapoint <cevapoint>` of :ref:`X_1 <X_1>` and :ref:`X_3 <X_3>`, so that V = :ref:`X_521 <X_521>`\ \ :ref:`X_650 <X_650>`; let M = :ref:`X_3157 <X_3157>` = :ref:`X_1 <X_1>`-Ceva conjugate of :ref:`X_3 <X_3>`, and let N = :ref:`X_1745 <X_1745>` = :ref:`X_3 <X_3>`-Ceva conjugate of :ref:`X_1 <X_1>`. The lines :g:`L <L>`, V, MN concur in :ref:`X_1936 <X_1936>`. (Randy Hutson, December 26, 2015)
 
 .. container:: note-item
 

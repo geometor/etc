@@ -42,7 +42,7 @@ X_900
 
    * :ref:`X_900 <X_900>` = isogonal conjugate of :ref:`X_901 <X_901>`
    * :ref:`X_900 <X_900>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_4555
-   * :ref:`X_900 <X_900>` = :term:`complementary conjugate <complementary-conjugate>` of X_3259
+   * :ref:`X_900 <X_900>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X_3259 <X_3259>`
    * :ref:`X_900 <X_900>` = :ref:`X_80 <X_80>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_11 <X_11>`
    * :ref:`X_900 <X_900>` = :ref:`X_2 <X_2>`-Ceva conjugate of X_35092
    * :ref:`X_900 <X_900>` = :term:`crosspoint <crosspoint>` of :ref:`X_100 <X_100>` and :ref:`X_104 <X_104>`

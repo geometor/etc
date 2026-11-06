@@ -8,11 +8,11 @@ import sympy.geometry as spg
 from geometor.model import Model
 
 from geometor.etc.ops import (
-    anticomplement,
     central_line,
     centroid_of,
     construct_baseline_triangle,
     create_model,
+    eval_barycentric_point,
     eval_trilinear_point,
     nine_point_center_of,
     orthocenter_of,
@@ -25,9 +25,9 @@ def construct_x_02888(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_2888 = ANTICOMPLEMENTARY CONJUGATE OF X_3 on reference triangle ABC."""
-    X_54 = eval_trilinear_point(model, A, B, C, 'sec(B - C)', ID="X_54", classes=["center"])
-    X_2888 = anticomplement(model, A, B, C, X_54, ID="X_2888", classes=["selected", "target"])
+    X_2888 = eval_barycentric_point(model, A, B, C, 'a**(10) - 3*a**(8)*(b**(2) + c**(2)) + a**(6)*(4*b**(4) + 5*b**(2)*c**(2) + 4*c**(4)) - 2*a**(4)*(2*b**(6) + b**(4)*c**(2) + b**(2)*c**(4) + 2*c**(6)) + 3*a**(2)*(b**(8) - b**(6)*c**(2) - b**(2)*c**(6) + c**(8)) - (b**(2) - c**(2))**(4)*(b**(2) + c**(2))', ID="X_2888", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
+    X_54 = eval_trilinear_point(model, A, B, C, 'sec(B - C)', ID="X_54", classes=["center", "incident"])
     central_line(model, X_2, X_54, 2, 54, incident=True)
     X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
     X_93 = eval_trilinear_point(model, A, B, C, 'sec(3*A)', ID="X_93", classes=["center", "incident"])

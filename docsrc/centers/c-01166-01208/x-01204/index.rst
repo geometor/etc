@@ -44,8 +44,8 @@ X_1204
    * :ref:`X_1204 <X_1204>` = reflection of :ref:`X_1092 <X_1092>` in :ref:`X_3 <X_3>`
    * :ref:`X_1204 <X_1204>` = :term:`crosspoint <crosspoint>` of :ref:`X_3 <X_3>` and :ref:`X_64 <X_64>`
    * :ref:`X_1204 <X_1204>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`20 <X_20>`), (:ref:`489 <X_489>`, :ref:`490 <X_490>`)
-   * :ref:`X_1204 <X_1204>` = inverse-in-Jerabek-hyperbola of X_3357
-   * :ref:`X_1204 <X_1204>` = {:ref:`X_4 <X_4>`,\ :ref:`X_74 <X_74>`}-harmonic conjugate of X_3357
+   * :ref:`X_1204 <X_1204>` = inverse-in-Jerabek-hyperbola of :ref:`X_3357 <X_3357>`
+   * :ref:`X_1204 <X_1204>` = {:ref:`X_4 <X_4>`,\ :ref:`X_74 <X_74>`}-harmonic conjugate of :ref:`X_3357 <X_3357>`
    * :ref:`X_1204 <X_1204>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_1636 <X_1636>`\ \ :ref:`X_2501 <X_2501>`
 
 .. toctree::

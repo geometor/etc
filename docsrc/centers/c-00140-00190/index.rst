@@ -22,7 +22,7 @@ X_140–X_190
 
 .. _preamble-0004:
 
-.. admonition:: Group Preamble — Centers X_140-X_170
+.. admonition:: Group Preamble — Centers X_140-X_170 (Centers of central triangles)
    :class: note
 
    Centers in this section, by index:

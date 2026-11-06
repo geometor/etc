@@ -8,7 +8,6 @@ import sympy.geometry as spg
 from geometor.model import Model
 
 from geometor.etc.ops import (
-    anticomplement,
     central_line,
     centroid_of,
     circumcenter_of,
@@ -26,8 +25,7 @@ def construct_x_01478(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1478 = CENTER OF JOHNSON-YFF CIRCLE on reference triangle ABC."""
-    X_993 = eval_trilinear_point(model, A, B, C, '(a**(3) - a*(b**(2) + c**(2)) - b*c*(b + c))', ID="X_993", classes=["center"])
-    X_1478 = anticomplement(model, A, B, C, X_993, ID="X_1478", classes=["selected", "target"])
+    X_1478 = eval_trilinear_point(model, A, B, C, '1 + 2*cos(B)*cos(C)', ID="X_1478", classes=["selected", "target"])
     X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
     X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
     central_line(model, X_1, X_4, 1, 4, incident=True)

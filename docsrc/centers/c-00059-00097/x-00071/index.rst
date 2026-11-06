@@ -53,7 +53,7 @@ X_71
    * :ref:`X_71 <X_71>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_647 <X_647>`\ \ :ref:`X_810 <X_810>`
    * :ref:`X_71 <X_71>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_58 <X_58>`
    * :ref:`X_71 <X_71>` = barycentric product of Jerabek hyperbola intercepts of Nagel line
-   * :ref:`X_71 <X_71>` = polar conjugate of :term:`isotomic conjugate <isotomic-conjugate>` of X_3682
+   * :ref:`X_71 <X_71>` = polar conjugate of :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3682 <X_3682>`
    * :ref:`X_71 <X_71>` = antigonal conjugate of X_38535
    * :ref:`X_71 <X_71>` = :ref:`X_63 <X_63>`-isoconjugate of X_8747
 

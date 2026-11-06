@@ -23,8 +23,9 @@ X_1356
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{56, 741} <{ 56, 741 }>`
-   * **Related Centers:** :g:`X_56 <X_56>` (:ref:`EXSIMILICENTER <X_56>`), :g:`X_741 <X_741>` (:ref:`EVEN (- 1, 1) CIRCUMCIRCLE POINT <X_741>`)
+   * **Derived Triangle:** :term:`Anticomplementary Triangle <anticomplementary triangle>` :g:`△K_aK_bK_c << K_a K_b K_c >>` — vertices :g:`K_a <K_a>`, :g:`K_b <K_b>`, :g:`K_c <K_c>` (Formed by lines through A, B, C parallel to opposite sides)
+   * **Central Lines:** :g:`{2, 3037} <{ 2, 3037 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3037 <X_3037>` (:ref:`COMPLEMENT OF X(1356) <X_3037>`)
 
 .. signature:: center
 
@@ -45,7 +46,7 @@ X_1356
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X_1356 <X_1356>` = :term:`anticomplement <anticomplement>` of X_3037
+   * :ref:`X_1356 <X_1356>` = :term:`anticomplement <anticomplement>` of :ref:`X_3037 <X_3037>`
    * :ref:`X_1356 <X_1356>` = trilinear product :ref:`X_57 <X_57>`\ \*\ :ref:`X_1084 <X_1084>`
    * :ref:`X_1356 <X_1356>` = barycentric product :ref:`X_7 <X_7>`\ \*\ :ref:`X_1084 <X_1084>`
 

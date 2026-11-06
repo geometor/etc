@@ -61,7 +61,7 @@ X_46
    * :ref:`X_46 <X_46>` = orthic isogonal conjugate of :ref:`X_1 <X_1>`
    * :ref:`X_46 <X_46>` = excentral isogonal conjugate of :ref:`X_1490 <X_1490>`
    * :ref:`X_46 <X_46>` = :ref:`X_24 <X_24>`-of-excentral-triangle
-   * :ref:`X_46 <X_46>` = {:ref:`X_1 <X_1>`,\ :ref:`X_3 <X_3>`}-harmonic conjugate of X_3612
+   * :ref:`X_46 <X_46>` = {:ref:`X_1 <X_1>`,\ :ref:`X_3 <X_3>`}-harmonic conjugate of :ref:`X_3612 <X_3612>`
    * :ref:`X_46 <X_46>` = {:ref:`X_1 <X_1>`,\ :ref:`X_40 <X_40>`}-harmonic conjugate of X_5119
    * :ref:`X_46 <X_46>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X_90 <X_90>`
    * :ref:`X_46 <X_46>` = trilinear product of extraversions of :ref:`X_90 <X_90>`
@@ -69,7 +69,7 @@ X_46
    * :ref:`X_46 <X_46>` = homothetic center of :g:`ABC << A B C >>` and orthic triangle of reflection triangle of :ref:`X_1 <X_1>`
    * :ref:`X_46 <X_46>` = Cundy-Parry Phi transform of :ref:`X_46 <X_46>`
    * :ref:`X_46 <X_46>` = Cundy-Parry Psi transform of :ref:`X_90 <X_90>`
-   * :ref:`X_46 <X_46>` = {:ref:`X_1 <X_1>`,\ :ref:`X_57 <X_57>`}-harmonic conjugate of X_3338
+   * :ref:`X_46 <X_46>` = {:ref:`X_1 <X_1>`,\ :ref:`X_57 <X_57>`}-harmonic conjugate of :ref:`X_3338 <X_3338>`
 
 Notes
 -----

@@ -46,13 +46,13 @@ X_1376
 .. collapse:: Functional Relations
    :badge: 11 relations
 
-   * :ref:`X_1376 <X_1376>` = midpoint of X_i and X_j for these (i,j): (:ref:`8 <X_8>`, 3476), (:ref:`57 <X_57>`, :ref:`200 <X_200>`), (:ref:`329 <X_329>`, 3474)
+   * :ref:`X_1376 <X_1376>` = midpoint of X_i and X_j for these (i,j): (:ref:`8 <X_8>`, :ref:`3476 <X_3476>`), (:ref:`57 <X_57>`, :ref:`200 <X_200>`), (:ref:`329 <X_329>`, :ref:`3474 <X_3474>`)
    * :ref:`X_1376 <X_1376>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_9309
    * :ref:`X_1376 <X_1376>` = homothetic center of inner-Conway triangle and cross-triangle of Ursa-major and Ursa-minor triangles
    * :ref:`X_1376 <X_1376>` = :term:`complement <complement>` of :ref:`X_497 <X_497>`
    * :ref:`X_1376 <X_1376>` = :ref:`X_294 <X_294>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_518 <X_518>`
    * :ref:`X_1376 <X_1376>` = :term:`cevapoint <cevapoint>` of :ref:`X_43 <X_43>` and :ref:`X_165 <X_165>`
-   * :ref:`X_1376 <X_1376>` = :term:`anticomplement <anticomplement>` of X_3816
+   * :ref:`X_1376 <X_1376>` = :term:`anticomplement <anticomplement>` of :ref:`X_3816 <X_3816>`
    * :ref:`X_1376 <X_1376>` = :term:`crosssum <crosssum>` of PU(46)
    * :ref:`X_1376 <X_1376>` = :term:`crosspoint <crosspoint>` of PU(112)
    * :ref:`X_1376 <X_1376>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_665 <X_665>`\ X_4083

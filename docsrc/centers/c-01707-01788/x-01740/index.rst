@@ -24,7 +24,7 @@ X_1740
    :class: note
 
    * **Central Lines:** :g:`{6, 43} <{ 6, 43 }>`, :g:`{1, 75} <{ 1, 75 }>`
-   * **Related Centers:** :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_43 <X_43>` (:ref:`-CEVA CONJUGATE OF X(1) <X_43>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_75 <X_75>` (:ref:`ISOTOMIC CONJUGATE OF INCENTER <X_75>`)
+   * **Related Centers:** :g:`X_3223 <X_3223>` (:ref:`ISOGONAL CONJUGATE OF X(1740) <X_3223>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_43 <X_43>` (:ref:`-CEVA CONJUGATE OF X(1) <X_43>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_75 <X_75>` (:ref:`ISOTOMIC CONJUGATE OF INCENTER <X_75>`)
 
 .. signature:: center
 
@@ -41,7 +41,7 @@ X_1740
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X_1740 <X_1740>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3223
+   * :ref:`X_1740 <X_1740>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3223 <X_3223>`
    * :ref:`X_1740 <X_1740>` = :term:`complement <complement>` of X_21299
    * :ref:`X_1740 <X_1740>` = :term:`anticomplement <anticomplement>` of X_21257
    * :ref:`X_1740 <X_1740>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`31 <X_31>`, :ref:`1 <X_1>`), (:ref:`1958 <X_1958>`, :ref:`610 <X_610>`)

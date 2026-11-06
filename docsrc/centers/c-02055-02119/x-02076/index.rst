@@ -55,7 +55,7 @@ X_2076
    * :ref:`X_2076 <X_2076>` = reflection of :ref:`X_1691 <X_1691>` in the Lemoine axis
    * :ref:`X_2076 <X_2076>` = radical center of Lucas(-csc 2ω) circles
    * :ref:`X_2076 <X_2076>` = intersection of tangents to circumcircle at intersections with line :ref:`X_39 <X_39>`\ \ :ref:`X_512 <X_512>`
-   * :ref:`X_2076 <X_2076>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_523 <X_523>`\ X_3589
+   * :ref:`X_2076 <X_2076>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_523 <X_523>`\ \ :ref:`X_3589 <X_3589>`
    * :ref:`X_2076 <X_2076>` = {:ref:`X_3 <X_3>`,\ :ref:`X_6 <X_6>`}-harmonic conjugate of X_5116
    * :ref:`X_2076 <X_2076>` = perspector of :term:`tangential triangle <tangential-triangle>` and the vertex triangle of the :term:`anticevian triangles <anticevian-triangle>` of PU(1)
    * :ref:`X_2076 <X_2076>` = Brocard axis intercept, other than :ref:`X_3 <X_3>`, of circle {:ref:`X_3 <X_3>`,PU(2)}

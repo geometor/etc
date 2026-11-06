@@ -18,7 +18,7 @@ X_1354–X_1392
    :alt: X_1354–X_1392 — Brisse Transforms, Rigby/Griffiths Points & Complementary Conjugates
    :align: center
 
-   **X_1354–X_1392** (*Brisse Transforms, Rigby/Griffiths Points & Complementary Conjugates*) — 16 representative centers (from 39 in collection) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_1354–X_1392** (*Brisse Transforms, Rigby/Griffiths Points & Complementary Conjugates*) — 15 representative centers (from 39 in collection) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
 
 .. _preamble-0019:
 

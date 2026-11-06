@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.110000 -0.697500 1.220000 0.915000" data-initial-viewbox="-0.110000 -0.697500 1.220000 0.915000" preserveAspectRatio="xMidYMid meet">
+<svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.110000 -0.697500 1.220000 0.915000" data-initial-viewbox="-0.110000 -0.697500 1.220000 0.915000" data-target-r-px="10.5" preserveAspectRatio="xMidYMid meet">
   <style>
 :root {
     --background-color: #121212;
@@ -223,6 +223,14 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
     font-weight: 700;
 }
 
+#labels text.dense-label {
+    display: none;
+}
+
+#labels text.dense-label.hover-label {
+    display: block !important;
+}
+
 .etc-svg-stage {
     position: relative;
     width: 100%;
@@ -328,12 +336,14 @@ figure:hover .etc-svg-toolbar {
     <polyline data-highlight-for="[ B C ]" class="highlight-segment" points="1.000000,-0.000000 0.640000,-0.480000" style="display: none;" />
     <polyline data-highlight-for="[ C A ]" class="highlight-segment" points="0.640000,-0.480000 0.000000,-0.000000" style="display: none;" />
     <polyline data-highlight-for="{ 356, 1135 }" class="highlight-segment" points="0.601519,-0.203938 0.615644,-0.223304" style="display: none;" />
+    <polyline data-highlight-for="{ 357, 3275 }" class="highlight-segment" points="0.605238,-0.212475 0.646741,-0.275521" style="display: none;" />
   </g>
   <g id="elements">
     <line data-id="[ A B ]" data-name="Sideline AB (Base c = 1)" class="line given sideline" data-category="elements" x1="-1000.00000" y1="-0.00000" x2="1000.00000" y2="-0.00000"><title>[ A B ]: Sideline AB (Base c = 1)</title></line>
     <line data-id="[ B C ]" data-name="Sideline BC (Side a)" class="line sideline" data-category="elements" x1="361.00000" y1="480.00000" x2="-359.00000" y2="-480.00000"><title>[ B C ]: Sideline BC (Side a)</title></line>
     <line data-id="[ C A ]" data-name="Sideline CA (Side b)" class="line sideline" data-category="elements" x1="640.64000" y1="-480.48000" x2="-639.36000" y2="479.52000"><title>[ C A ]: Sideline CA (Side b)</title></line>
     <line data-id="{ 356, 1135 }" data-name="Central Line L(356, 1135)" class="line central_line" data-category="elements" x1="-13.52337" y1="19.16174" x2="14.72641" y2="-19.56962"><title>{ 356, 1135 }: Central Line L(356, 1135)</title></line>
+    <line data-id="{ 357, 3275 }" data-name="Central Line L(357, 3275)" class="line central_line" data-category="elements" x1="-40.89722" y1="62.83410" x2="42.10770" y2="-63.25904"><title>{ 357, 3275 }: Central Line L(357, 3275)</title></line>
   </g>
   <g id="points">
     <circle data-id="A" data-name="Vertex A" class="point given vertex" data-category="points" cx="0.000000" cy="-0.000000" r="0.011437"><title>A = Vertex A (0.0000, 0.0000)</title></circle>
@@ -341,6 +351,8 @@ figure:hover .etc-svg-toolbar {
     <circle data-id="C" data-name="Vertex C" class="point vertex" data-category="points" cx="0.640000" cy="-0.480000" r="0.011437"><title>C = Vertex C (0.6400, 0.4800)</title></circle>
     <circle data-id="X_1135" data-name="4th MORLEY-TAYLOR-MARR CENTER" class="point center" data-category="points" cx="0.615644" cy="-0.223304" r="0.011437"><title>X_1135 = 4th MORLEY-TAYLOR-MARR CENTER (0.6156, 0.2233)</title></circle>
     <circle data-id="X_356" data-name="MORLEY CENTER" class="point center" data-category="points" cx="0.601519" cy="-0.203938" r="0.011437"><title>X_356 = MORLEY CENTER (0.6015, 0.2039)</title></circle>
+    <circle data-id="X_357" data-name="1st MORLEY-TAYLOR-MARR CENTER" class="point center" data-category="points" cx="0.605238" cy="-0.212475" r="0.011437"><title>X_357 = 1st MORLEY-TAYLOR-MARR CENTER (0.6052, 0.2125)</title></circle>
+    <circle data-id="X_3275" data-name="PERSPECTOR OF TRIANGLES S1S2S3 AND J1J2J3" class="point center" data-category="points" cx="0.646741" cy="-0.275521" r="0.011437"><title>X_3275 = PERSPECTOR OF TRIANGLES S1S2S3 AND J1J2J3 (0.6467, 0.2755)</title></circle>
     <circle data-id="X_1134" data-name="3rd MORLEY-TAYLOR-MARR CENTER" class="point selected target" data-category="points" cx="0.582018" cy="-0.177201" r="0.016012"><title>X_1134 = 3rd MORLEY-TAYLOR-MARR CENTER (0.5820, 0.1772)</title></circle>
   </g>
   <g id="labels">
@@ -349,10 +361,12 @@ figure:hover .etc-svg-toolbar {
     <text class="point-label" data-point-id="C" data-anchor-x="0.640000" data-anchor-y="-0.480000" data-offset-x="-7.5" data-offset-y="-15.0" x="0.628563" y="-0.502875" font-size="0.030881">C</text>
     <text class="point-label" data-point-id="X_1135" data-anchor-x="0.615644" data-anchor-y="-0.223304" data-offset-x="12.0" data-offset-y="-10.5" x="0.633944" y="-0.239316" font-size="0.030881">X<tspan dy="0.3em" font-size="75%">1135</tspan></text>
     <text class="point-label" data-point-id="X_356" data-anchor-x="0.601519" data-anchor-y="-0.203938" data-offset-x="12.0" data-offset-y="-10.5" x="0.619819" y="-0.219951" font-size="0.030881">X<tspan dy="0.3em" font-size="75%">356</tspan></text>
+    <text class="point-label" data-point-id="X_357" data-anchor-x="0.605238" data-anchor-y="-0.212475" data-offset-x="12.0" data-offset-y="-10.5" x="0.623538" y="-0.228487" font-size="0.030881">X<tspan dy="0.3em" font-size="75%">357</tspan></text>
+    <text class="point-label" data-point-id="X_3275" data-anchor-x="0.646741" data-anchor-y="-0.275521" data-offset-x="12.0" data-offset-y="-10.5" x="0.665041" y="-0.291534" font-size="0.030881">X<tspan dy="0.3em" font-size="75%">3275</tspan></text>
     <text class="target-label" data-point-id="X_1134" data-anchor-x="0.582018" data-anchor-y="-0.177201" data-offset-x="12.0" data-offset-y="-10.5" x="0.600318" y="-0.193214" font-size="0.030881">X<tspan dy="0.3em" font-size="75%">1134</tspan></text>
     <text class="subtitle-label" x="-0.079500" y="0.190050" font-size="0.026306" fill="#999">(a, b, c) = (3, 4, 5) | AB = 1</text>
   </g>
-  <script type="application/json" class="etc-elements-meta">{"A":{"ID":"A","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex A","subtitle":"Reference triangle vertex at origin (0, 0)","rows":[["x","0.0000"],["y","0.0000"],["bary","1.0000 : 0.0000 : 0.0000"]],"related_points":["A"]},"B":{"ID":"B","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex B","subtitle":"Reference triangle vertex at unit base (1, 0)","rows":[["x","1.0000"],["y","0.0000"],["bary","0.0000 : 1.0000 : 0.0000"]],"related_points":["B"]},"[ A B ]":{"ID":"[ A B ]","type":"line","classes":["given","sideline"],"color":"#aaa","name":"Sideline AB (Base c = 1)","subtitle":"Reference triangle baseline through A and B","rows":[["pts","A (Vertex A), B (Vertex B)"],["len","1.0000"],["eq","0.0000x + 1.0000y + 0.0000 = 0"]],"related_points":["A","B"]},"C":{"ID":"C","type":"point","classes":["vertex"],"color":"#0ff","name":"Vertex C","subtitle":"Reference triangle apex constructed by Euclid I.22","rows":[["x","0.6400"],["y","0.4800"],["bary","-0.0000 : 0.0000 : 1.0000"]],"related_points":["C"]},"[ B C ]":{"ID":"[ B C ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline BC (Side a)","subtitle":"Reference triangle sideline opposite vertex A","rows":[["pts","B (Vertex B), C (Vertex C)"],["len","0.6000"],["eq","0.8000x + 0.6000y - 0.8000 = 0"]],"related_points":["B","C"]},"[ C A ]":{"ID":"[ C A ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline CA (Side b)","subtitle":"Reference triangle sideline opposite vertex B","rows":[["pts","C (Vertex C), A (Vertex A)"],["len","0.8000"],["eq","0.6000x - 0.8000y + 0.0000 = 0"]],"related_points":["C","A"]},"\u003c A B C \u003e":{"ID":"\u003c A B C \u003e","type":"polygon","classes":["reference"],"color":"#58a6ff","name":"Reference Triangle △ABC","subtitle":"Primary reference triangle with unit baseline AB = 1","rows":[["verts","A, B, C"],["sides","0.6000, 0.8000, 1.0000"],["area","0.2400"]],"related_points":["A","B","C"]},"X_1135":{"ID":"X_1135","type":"point","classes":["center"],"color":"#0ff","name":"4th MORLEY-TAYLOR-MARR CENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6156"],["y","0.2233"],["bary","0.2169 : 0.3179 : 0.4652"]],"related_points":["X_1135"]},"X_356":{"ID":"X_356","type":"point","classes":["center"],"color":"#0ff","name":"MORLEY CENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6015"],["y","0.2039"],["bary","0.2455 : 0.3296 : 0.4249"]],"related_points":["X_356"]},"{ 356, 1135 }":{"ID":"{ 356, 1135 }","type":"line","classes":["central_line"],"color":"#0bd","name":"Central Line L(356, 1135)","subtitle":"Through X_356 (MORLEY CENTER) and X_1135 (4th MORLEY-TAYLOR-MARR CENTER)","rows":[["pts","X_356 (MORLEY CENTER), X_1135 (4th MORLEY-TAYLOR-MARR CENTER)"],["len","0.0240"],["eq","0.8079x - 0.5893y - 0.3658 = 0"]],"related_points":["X_356","X_1135"]},"X_1134":{"ID":"X_1134","type":"point","classes":["selected","target"],"color":"gold","name":"3rd MORLEY-TAYLOR-MARR CENTER","subtitle":"Target Triangle Center","rows":[["x","0.5820"],["y","0.1772"],["bary","0.2851 : 0.3457 : 0.3692"]],"related_points":["X_1134"]}}</script>
+  <script type="application/json" class="etc-elements-meta">{"A":{"ID":"A","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex A","subtitle":"Reference triangle vertex at origin (0, 0)","rows":[["x","0.0000"],["y","0.0000"],["bary","1.0000 : 0.0000 : 0.0000"]],"related_points":["A"]},"B":{"ID":"B","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex B","subtitle":"Reference triangle vertex at unit base (1, 0)","rows":[["x","1.0000"],["y","0.0000"],["bary","0.0000 : 1.0000 : 0.0000"]],"related_points":["B"]},"[ A B ]":{"ID":"[ A B ]","type":"line","classes":["given","sideline"],"color":"#aaa","name":"Sideline AB (Base c = 1)","subtitle":"Reference triangle baseline through A and B","rows":[["pts","A (Vertex A), B (Vertex B)"],["len","1.0000"],["eq","0.0000x + 1.0000y + 0.0000 = 0"]],"related_points":["A","B"]},"C":{"ID":"C","type":"point","classes":["vertex"],"color":"#0ff","name":"Vertex C","subtitle":"Reference triangle apex constructed by Euclid I.22","rows":[["x","0.6400"],["y","0.4800"],["bary","-0.0000 : 0.0000 : 1.0000"]],"related_points":["C"]},"[ B C ]":{"ID":"[ B C ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline BC (Side a)","subtitle":"Reference triangle sideline opposite vertex A","rows":[["pts","B (Vertex B), C (Vertex C)"],["len","0.6000"],["eq","0.8000x + 0.6000y - 0.8000 = 0"]],"related_points":["B","C"]},"[ C A ]":{"ID":"[ C A ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline CA (Side b)","subtitle":"Reference triangle sideline opposite vertex B","rows":[["pts","C (Vertex C), A (Vertex A)"],["len","0.8000"],["eq","0.6000x - 0.8000y + 0.0000 = 0"]],"related_points":["C","A"]},"\u003c A B C \u003e":{"ID":"\u003c A B C \u003e","type":"polygon","classes":["reference"],"color":"#58a6ff","name":"Reference Triangle △ABC","subtitle":"Primary reference triangle with unit baseline AB = 1","rows":[["verts","A, B, C"],["sides","0.6000, 0.8000, 1.0000"],["area","0.2400"]],"related_points":["A","B","C"]},"X_1135":{"ID":"X_1135","type":"point","classes":["center"],"color":"#0ff","name":"4th MORLEY-TAYLOR-MARR CENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6156"],["y","0.2233"],["bary","0.2169 : 0.3179 : 0.4652"]],"related_points":["X_1135"]},"X_356":{"ID":"X_356","type":"point","classes":["center"],"color":"#0ff","name":"MORLEY CENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6015"],["y","0.2039"],["bary","0.2455 : 0.3296 : 0.4249"]],"related_points":["X_356"]},"{ 356, 1135 }":{"ID":"{ 356, 1135 }","type":"line","classes":["central_line"],"color":"#0bd","name":"Central Line L(356, 1135)","subtitle":"Through X_356 (MORLEY CENTER) and X_1135 (4th MORLEY-TAYLOR-MARR CENTER)","rows":[["pts","X_356 (MORLEY CENTER), X_1135 (4th MORLEY-TAYLOR-MARR CENTER)"],["len","0.0240"],["eq","0.8079x - 0.5893y - 0.3658 = 0"]],"related_points":["X_356","X_1135"]},"X_357":{"ID":"X_357","type":"point","classes":["center"],"color":"#0ff","name":"1st MORLEY-TAYLOR-MARR CENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6052"],["y","0.2125"],["bary","0.2354 : 0.3219 : 0.4427"]],"related_points":["X_357"]},"X_3275":{"ID":"X_3275","type":"point","classes":["center"],"color":"#0ff","name":"PERSPECTOR OF TRIANGLES S1S2S3 AND J1J2J3","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6467"],["y","0.2755"],["bary","0.1466 : 0.2794 : 0.5740"]],"related_points":["X_3275"]},"{ 357, 3275 }":{"ID":"{ 357, 3275 }","type":"line","classes":["central_line"],"color":"#0bd","name":"Central Line L(357, 3275)","subtitle":"Through X_357 (1st MORLEY-TAYLOR-MARR CENTER) and X_3275 (PERSPECTOR OF TRIANGLES S1S2S3 AND J1J2J3)","rows":[["pts","X_357 (1st MORLEY-TAYLOR-MARR CENTER), X_3275 (PERSPECTOR OF TRIANGLES S1S2S3 AND J1J2J3)"],["len","0.0755"],["eq","0.8353x - 0.5498y - 0.3887 = 0"]],"related_points":["X_357","X_3275"]},"X_1134":{"ID":"X_1134","type":"point","classes":["selected","target"],"color":"gold","name":"3rd MORLEY-TAYLOR-MARR CENTER","subtitle":"Target Triangle Center","rows":[["x","0.5820"],["y","0.1772"],["bary","0.2851 : 0.3457 : 0.3692"]],"related_points":["X_1134"]}}</script>
   <script>//<![CDATA[
 
 (function () {
@@ -396,10 +410,11 @@ figure:hover .etc-svg-toolbar {
         const vb = getViewBox();
         const unitsPerPx = vb[2] / widthPx;
 
+        const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
         pointEls.forEach(c => {
             const isTarget = c.classList.contains('target') || c.classList.contains('selected');
             const isGuide = c.classList.contains('guide');
-            const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);
+            const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
             c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
         });
 
@@ -783,6 +798,18 @@ figure:hover .etc-svg-toolbar {
         isPanning = false;
         svg.classList.remove('is-panning');
         clearHover();
+    });
+
+    svg.addEventListener('click', (event) => {
+        if (didDrag) return;
+        const pt = event.target.closest('circle[data-id]');
+        if (!pt) return;
+        const pid = pt.getAttribute('data-id') || '';
+        const m = pid.match(/^X_(\d+)$/);
+        if (m && typeof window !== 'undefined' && window.location && window.location.pathname.includes('/c-') && !window.location.pathname.includes('/x-')) {
+            const slug = 'x-' + m[1].padStart(5, '0');
+            window.location.href = `${slug}/index.html`;
+        }
     });
 
     svg.addEventListener('dblclick', (event) => {

@@ -51,10 +51,10 @@ X_113
 .. collapse:: Functional Relations
    :badge: 29 relations
 
-   * :ref:`X_113 <X_113>` = midpoint of X_i and X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`110 <X_110>`), (:ref:`74 <X_74>`, :ref:`146 <X_146>`), (:ref:`265 <X_265>`, :ref:`399 <X_399>`), (:ref:`1553 <X_1553>`, 3258)
+   * :ref:`X_113 <X_113>` = midpoint of X_i and X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`110 <X_110>`), (:ref:`74 <X_74>`, :ref:`146 <X_146>`), (:ref:`265 <X_265>`, :ref:`399 <X_399>`), (:ref:`1553 <X_1553>`, :ref:`3258 <X_3258>`)
    * :ref:`X_113 <X_113>` = reflection of X_i in X_j for these (i,j): (:ref:`52 <X_52>`, :ref:`1112 <X_1112>`), (:ref:`125 <X_125>`, :ref:`5 <X_5>`), (32110, :ref:`468 <X_468>`)
    * :ref:`X_113 <X_113>` = complementary conjugate of :ref:`X_30 <X_30>`
-   * :ref:`X_113 <X_113>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`30 <X_30>`), (:ref:`2 <X_2>`, 3003)
+   * :ref:`X_113 <X_113>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`30 <X_30>`), (:ref:`2 <X_2>`, :ref:`3003 <X_3003>`)
    * :ref:`X_113 <X_113>` = :term:`crosspoint <crosspoint>` of :ref:`X_4 <X_4>` and :ref:`X_403 <X_403>`
    * :ref:`X_113 <X_113>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_526 <X_526>`\ \ :ref:`X_686 <X_686>`
    * :ref:`X_113 <X_113>` = nine-point-circle-antipode of :ref:`X_125 <X_125>`
@@ -63,12 +63,12 @@ X_113
    * :ref:`X_113 <X_113>` = :ref:`X_186 <X_186>`-of-:ref:`X_4 <X_4>`-Brocard-triangle
    * :ref:`X_113 <X_113>` = center of rectangular circumhyperbola that passes through :ref:`X_110 <X_110>`
    * :ref:`X_113 <X_113>` = center of rectangular hyperbola {:ref:`X_3 <X_3>`,\ :ref:`X_4 <X_4>`,\ :ref:`X_110 <X_110>`,\ :ref:`X_155 <X_155>`,\ :ref:`X_1351 <X_1351>`,\ :ref:`X_1352 <X_1352>`,X(2574,\ :ref:`X_2575 <X_2575>`}}
-   * :ref:`X_113 <X_113>` = perpsector of circumconic centered at X_3003
+   * :ref:`X_113 <X_113>` = perpsector of circumconic centered at :ref:`X_3003 <X_3003>`
    * :ref:`X_113 <X_113>` = inverse-in-polar-circle-of :ref:`X_1300 <X_1300>`
    * :ref:`X_113 <X_113>` = inverse-in-{circumcircle, nine-point circle}-inverter of :ref:`X_1302 <X_1302>`
    * :ref:`X_113 <X_113>` = anticenter of cyclic quadrilateral :g:`ABC << A B C >>`\ :ref:`X_110 <X_110>`
    * :ref:`X_113 <X_113>` = Λ(:ref:`X_2 <X_2>`,\ :ref:`X_3 <X_3>`)-with-respect-to-orthic-triangle
-   * :ref:`X_113 <X_113>` = barycentric product :ref:`X_30 <X_30>`\ \*X_3580
+   * :ref:`X_113 <X_113>` = barycentric product :ref:`X_30 <X_30>`\ \*\ :ref:`X_3580 <X_3580>`
    * :ref:`X_113 <X_113>` = :term:`complement <complement>` of :ref:`X_74 <X_74>`
    * :ref:`X_113 <X_113>` = reflection of :ref:`X_3 <X_3>` in X_5972
    * :ref:`X_113 <X_113>` = antipode of :ref:`X_3 <X_3>` in the bicevian conic of :ref:`X_2 <X_2>` and :ref:`X_110 <X_110>`
@@ -77,7 +77,7 @@ X_113
    * :ref:`X_113 <X_113>` = perspector of Ehrmann mid-triangle and :term:`orthic triangle <orthic-triangle>`
    * :ref:`X_113 <X_113>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X_104 <X_104>`
    * :ref:`X_113 <X_113>` = antipode of X_32110 in Walsmith rectangular hyperbola
-   * :ref:`X_113 <X_113>` = orthocenter of :ref:`X_6 <X_6>`\ \ :ref:`X_125 <X_125>`\ X_3569
+   * :ref:`X_113 <X_113>` = orthocenter of :ref:`X_6 <X_6>`\ \ :ref:`X_125 <X_125>`\ \ :ref:`X_3569 <X_3569>`
    * :ref:`X_113 <X_113>` = :term:`crosssum <crosssum>` of circumcircle intercepts of line PU(161) (line :ref:`X_3 <X_3>`\ \ :ref:`X_523 <X_523>`)
    * :ref:`X_113 <X_113>` = homothetic center of :g:`ABC << A B C >>` and :ref:`X_30 <X_30>`-:term:`Fuhrmann triangle <fuhrmann-triangle>`
 

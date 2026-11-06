@@ -116,7 +116,15 @@ def _enrich_text(
         text, seen_persons=seen_persons, seen_cites=seen_cites
     )
     text = wrap_geom_refs(text)
-    return filter_center_refs(text, valid_centers)
+    res = filter_center_refs(text, valid_centers)
+    res = re.sub(
+        r"(:(?:ref|term|person|cite|g|math):`[^`]+`)(?=[(\[{<A-Za-z0-9_])",
+        r"\1\ ",
+        res,
+    )
+    res = re.sub(r"::(\s*)$", r":\1", res, flags=re.MULTILINE)
+    return res
+
 
 
 _NON_DEFINING_NOTE_RE = re.compile(
@@ -1346,6 +1354,66 @@ THEMATIC_COLLECTIONS: list[tuple[int, int, str, str]] = [
         "MacBeath Points, Dual Centers DC(X) / CD(X) & Central Line Intersections",
         "The eight MacBeath points (X_2967–X_2974), circle radical centers (X_2975–X_2978), dual triangle mappings DC(X) and CD(X) (X_2979–X_2998), the Danneels-Bevan homothetic center (X_2999), and the Soddy-antiorthic intersection (X_3000).",
     ),
+    (
+        3001,
+        3118,
+        "Central Line Intersections, Stevanović Points & T/G Mappings",
+        "Pairwise intersections of the Brocard, de Longchamps, Gergonne, Lemoine, Nagel, orthic, Soddy, and Fermat axes (X_3001–X_3019), the 4th–10th Stevanović points (X_3020–X_3026), antipodal circle mappings and complements (X_3027–X_3111), and Quang Tuan Bui's TgX and GtX mappings (X_3112–X_3118).",
+    ),
+    (
+        3119,
+        3217,
+        "Danneels Perspectors & X_i-Ceva Conjugates",
+        "Eric Danneels' parallel-cevian perspectors (X_3119–X_3126) and a systematic catalog of X_i-Ceva conjugates of classical and central points (X_3127–X_3217).",
+    ),
+    (
+        3218,
+        3309,
+        "Side-Swapping SS(a → bc) Points, Parabola Vertices & Morley Equilateral Triangles",
+        "Side-swapping transformations SS(a → bc), vertices of the inscribed Kiepert and Yff parabolas (X_3233–X_3234), reflections in X_1 (X_3241–X_3245), and centers and perspectors of the six equilateral triangles related to the 1st, 2nd, and 3rd Morley triangles (X_3272–X_3283).",
+    ),
+    (
+        3310,
+        3414,
+        "Incircle Transforms T(U), Trigonometric Offset Points & Kiepert Cusps",
+        "Barycentric products of perpendicular directions (X_3310), incircle transforms T(U) lying on the incircle (X_3318–X_3328), Darboux-cubic reflections and conjugates (X_3341–X_3358), trigonometric phase-shifted centers cos/sin/sec/csc/tan/cot(A ± θ) (X_3364–X_3409), and the Brocard-Kiepert-Fermat cusps (X_3411–X_3414).",
+    ),
+    (
+        3415,
+        3514,
+        "Vertex Conjugates, Saragossa Points & Neuberg Cubic Intersections",
+        "U-vertex conjugates of X formed from circumcevian vertex triangles (X_3415–X_3458), 1st Saragossa points (X_3449–X_3454), X_5- and X_30-Ceva conjugates on the Neuberg cubic (X_3460–X_3488), and the 1st dilation center and its circumcircle inverse (X_3513–X_3514).",
+    ),
+    (
+        3515,
+        3601,
+        "Euler Line Intercepts & Named Geometric Centers",
+        "Euler line intercepts of central lines (X_3515–X_3552), together with the Dosa, Pappus, Moses circumcircle/infinity, Don Quixote, Beltrami-Euler, Beltrami-Parry, Myakishev conic, Dixit, Odehnal, and Liu points (X_3555–X_3601).",
+    ),
+    (
+        3602,
+        3662,
+        "Morley Cubics, Medial Homothetic Centers H(X; M, t) & Kirikami-Schiffler Points",
+        "Centers associated with the three Morley cubics K029–K031 (X_3602–X_3615), medial-triangle t-dilation homothetic centers H(X; M, t) and their isogonal conjugates H⁻¹(X; M, t) (X_3616–X_3637), Soddy-Gergonne, Kirikami, Alkaid, and Almach points (X_3638–X_3646), and Kirikami-Schiffler points KS(T) (X_3647–X_3662).",
+    ),
+    (
+        3663,
+        3757,
+        "Central Triangle Combos Xcom(T) I: Intouch, Extouch, Incentral & Hexyl Triangles",
+        "Combo centers X_k-com(T) evaluated on the intouch (X_3663–X_3677), extouch (X_3678–X_3719), incentral (X_3720–X_3728), excentral, tangential, 1st Brocard, and hexyl triangles (X_3729–X_3738), plus matrix-product combos n(incentral)*n(medial) and inverse-triangle combos (X_3739–X_3757).",
+    ),
+    (
+        3758,
+        3861,
+        "Central Triangle Combos Xcom(T) II: Parameterized T(f, g) & Euler Triangles",
+        "Combo centers X_k-com[T(f, g)] and X_k-com[Inverse(nT(f, g))] for parameterized central triangles (X_3758–X_3810), followed by combo centers on the 1st through 5th Euler triangles (X_3811–X_3861).",
+    ),
+    (
+        3862,
+        4000,
+        "Inverse Central Triangle Combos Xcom[Inverse(n(T))]",
+        "Perspectors of ABC and parameterized central triangles T(f, g) (X_3862–X_3867), inverse 3rd/4th/5th Euler triangle combos (X_3868–X_3910), and combos and inverse-triangle combos across the intouch, extouch, orthic, tangential, hexyl, Brocard, incentral, excentral, intangents, and extangents triangles (X_3911–X_4000).",
+    ),
 ]
 
 
@@ -1426,15 +1494,18 @@ def _process_center_index(idx: int) -> None:
     kepler_svg_name = f"x-{num:05d}-kepler.svg"
     kimb_svg_name = f"x-{num:05d}-kimberling.svg"
 
+    model_py_changed = False
     if num in acute_reg.xy_cache:
         model_py_code = generate_center_model_py(center, acute_reg)
         if not model_py_path.is_file() or model_py_path.read_text(encoding="utf-8") != model_py_code:
             model_py_path.write_text(model_py_code, encoding="utf-8")
+            model_py_changed = True
         has_model_py = True
         model_acute = build_center_model(center, acute_reg)
 
     all_svgs_exist = (
-        (entry_dir / svg_name).is_file()
+        not model_py_changed
+        and (entry_dir / svg_name).is_file()
         and (entry_dir / right_svg_name).is_file()
         and (entry_dir / kepler_svg_name).is_file()
         and (entry_dir / kimb_svg_name).is_file()
@@ -1738,6 +1809,11 @@ def generate_rst_files(
                     parsed_p = parse_preamble(p_item.get("html", ""))
                     p_title = parsed_p["title"] or p_item.get("title", "Preamble")
                     p_title = re.sub(r"\bX\((\d+)\)", r"X_\1", p_title)
+                    g_title = p_item.get("guide_title", "")
+                    if g_title:
+                        g_title_norm = re.sub(r"\bX\((\d+)\)", r"X_\1", g_title)
+                        if g_title_norm.lower() not in p_title.lower():
+                            p_title = f"{p_title} ({g_title_norm})"
                     p_paras = parsed_p["paragraphs"]
                     p_id = p_item.get("id")
                     if p_id:
@@ -1770,6 +1846,95 @@ def generate_rst_files(
         (coll_dir / "index.rst").write_text("\n".join(c_lines), encoding="utf-8")
 
     (out_path / "index.rst").write_text("\n".join(index_lines), encoding="utf-8")
+
+
+def generate_preambles_guide_rst(
+    guide_data: dict[str, Any],
+    glossary_terms: dict[str, Any] | list[str] | None = None,
+    valid_centers: set[int] | None = None,
+) -> str:
+    """Generate `docsrc/preambles.rst` from Kimberling's `Guide_to_preambles_in_ETC.html`."""
+    lines: list[str] = [
+        ":navigation: header",
+        ":order: 2",
+        "",
+        ".. _preambles-guide:",
+        "",
+        "Guide to Preambles in ETC",
+        "=========================",
+        "",
+        ".. rubric:: Prepared by Clark Kimberling (August 2026)",
+        "",
+        "This Guide catalogs the inter-center group preambles across all 37 Parts of the *Encyclopedia of Triangle Centers* (ETC), providing a searchable index of thematic center families, geometric transformations, contributors, and definitions.",
+        "",
+    ]
+
+    entries = guide_data.get("entries", [])
+    by_part: dict[int, list[dict[str, Any]]] = {}
+    for entry in entries:
+        by_part.setdefault(int(entry.get("part", 1)), []).append(entry)
+
+    for part_num in sorted(by_part.keys()):
+        part_entries = by_part[part_num]
+        sec_title = f"Part {part_num}"
+        lines.append(f".. _preambles-part-{part_num}:")
+        lines.append("")
+        lines.append(sec_title)
+        lines.append("-" * max(4, len(sec_title)))
+        lines.append("")
+
+        for entry in part_entries:
+            e_id = entry.get("id", "")
+            s_num = int(entry.get("start_num", 0))
+            e_num = int(entry.get("end_num", s_num))
+            title = entry.get("title", "")
+            title_norm = re.sub(r"\bX\((\d+)\)", r"X_\1", title)
+
+            if valid_centers and s_num in valid_centers:
+                s_ref = f":ref:`X_{s_num} <X_{s_num}>`"
+            else:
+                s_ref = f"**X_{s_num}**"
+
+            if e_num != s_num:
+                if valid_centers and e_num in valid_centers:
+                    e_ref = f":ref:`X_{e_num} <X_{e_num}>`"
+                else:
+                    e_ref = f"**X_{e_num}**"
+                range_str = f"{s_ref}–{e_ref}"
+            else:
+                range_str = s_ref
+
+            if e_id:
+                lines.append(f".. _{e_id}:")
+                lines.append("")
+
+            if title_norm and not re.match(r"^(?:Centers|Points)\s+X_", title_norm, re.I):
+                lines.append(f"* {range_str} — **{title_norm}**")
+            else:
+                lines.append(f"* {range_str}")
+
+            body_html = entry.get("html", "")
+            if body_html:
+                parsed_b = parse_preamble(body_html)
+                seen_terms: set[str] = set()
+                seen_persons: set[str] = set()
+                seen_cites: set[str] = set()
+                for para in parsed_b.get("paragraphs", []):
+                    enriched_p = _enrich_text(
+                        para,
+                        glossary_terms,
+                        seen_terms,
+                        seen_persons,
+                        seen_cites,
+                        valid_centers=valid_centers,
+                    )
+                    lines.append("")
+                    for p_ln in enriched_p.splitlines():
+                        lines.append(f"  {p_ln}" if p_ln.strip() else "")
+            lines.append("")
+
+    return "\n".join(lines)
+
 
 
 

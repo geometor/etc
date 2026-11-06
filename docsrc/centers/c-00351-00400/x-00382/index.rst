@@ -57,9 +57,9 @@ X_382
 .. collapse:: Functional Relations
    :badge: 14 relations
 
-   * :ref:`X_382 <X_382>` = reflection of X_i in X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`4 <X_4>`), (:ref:`20 <X_20>`, :ref:`5 <X_5>`), (:ref:`110 <X_110>`, :ref:`1539 <X_1539>`), (:ref:`550 <X_550>`, :ref:`546 <X_546>`), (3534, :ref:`381 <X_381>`)
+   * :ref:`X_382 <X_382>` = reflection of X_i in X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`4 <X_4>`), (:ref:`20 <X_20>`, :ref:`5 <X_5>`), (:ref:`110 <X_110>`, :ref:`1539 <X_1539>`), (:ref:`550 <X_550>`, :ref:`546 <X_546>`), (:ref:`3534 <X_3534>`, :ref:`381 <X_381>`)
    * :ref:`X_382 <X_382>` = inverse-in-orthocentroidal-circle of :ref:`X_546 <X_546>`
-   * :ref:`X_382 <X_382>` = :term:`complement <complement>` of X_3529
+   * :ref:`X_382 <X_382>` = :term:`complement <complement>` of :ref:`X_3529 <X_3529>`
    * :ref:`X_382 <X_382>` = :term:`anticomplement <anticomplement>` of :ref:`X_550 <X_550>`
    * :ref:`X_382 <X_382>` = Kosnita-to-tangential :term:`similarity image <similarity-image>` of :ref:`X_4 <X_4>`
    * :ref:`X_382 <X_382>` = homothetic center of Johnson triangle and mid-triangle of medial and :term:`anticomplementary triangles <anticomplementary-triangle>`
@@ -70,7 +70,7 @@ X_382
    * :ref:`X_382 <X_382>` = homothetic center of Ehrmann side-triangle and anti-excenters-incenter reflections triangle
    * :ref:`X_382 <X_382>` = homothetic center of Ehrmann mid-triangle and :g:`ABC << A B C >>`-X3 reflections triangle
    * :ref:`X_382 <X_382>` = {:ref:`X_4 <X_4>`,\ :ref:`X_24 <X_24>`}-harmonic conjugate of X_37197
-   * :ref:`X_382 <X_382>` = {:ref:`X_2 <X_2>`,X_3529}-harmonic conjugate of :ref:`X_550 <X_550>`
+   * :ref:`X_382 <X_382>` = {:ref:`X_2 <X_2>`,\ :ref:`X_3529 <X_3529>`}-harmonic conjugate of :ref:`X_550 <X_550>`
 
 Notes
 -----

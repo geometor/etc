@@ -30,7 +30,7 @@ X_2584
 
    | **Trilinears:** :math:`(\cos A)/f(a,b,c) : (\cos B)/f(b,c,a) : (\cos C)/f(c,a,b)`, where f(a,b,c) is as at :ref:`X_1113 <X_1113>`
    | **Barycentrics:** :math:`(\sin 2A)/f(a,b,c) : (\sin 2B)/f(b,c,a) : (\sin 2C)/f(c,a,b)`
-   | **Search Value (6, 9, 13):** :math:`-43.578829711087`
+   | **Search Value (6, 9, 13):** :math:`-43.578829711088`
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines

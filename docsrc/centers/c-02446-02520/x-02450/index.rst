@@ -36,14 +36,14 @@ X_2450
    :badge: 5 lines
    :class: line-catalog
 
-   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`66 <X_66>`, :ref:`2165 <X_2165>`}, {:ref:`230 <X_230>`, :ref:`248 <X_248>`}, {:ref:`1503 <X_1503>`, :ref:`1976 <X_1976>`}, {3566, 3569}
+   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`66 <X_66>`, :ref:`2165 <X_2165>`}, {:ref:`230 <X_230>`, :ref:`248 <X_248>`}, {:ref:`1503 <X_1503>`, :ref:`1976 <X_1976>`}, {:ref:`3566 <X_3566>`, :ref:`3569 <X_3569>`}
 
 .. collapse:: Functional Relations
    :badge: 5 relations
 
    * :ref:`X_2450 <X_2450>` = :term:`complement <complement>` of X_37183
    * :ref:`X_2450 <X_2450>` = inverse-in-nine-point-circle of :ref:`X_1316 <X_1316>`
-   * :ref:`X_2450 <X_2450>` = inverse-in-orthocentroidal circle of X_3148
+   * :ref:`X_2450 <X_2450>` = inverse-in-orthocentroidal circle of :ref:`X_3148 <X_3148>`
    * :ref:`X_2450 <X_2450>` = :term:`crosspoint <crosspoint>` of :ref:`X_98 <X_98>` and :ref:`X_264 <X_264>`
    * :ref:`X_2450 <X_2450>` = :term:`crosssum <crosssum>` of :ref:`X_184 <X_184>` and :ref:`X_511 <X_511>`
 

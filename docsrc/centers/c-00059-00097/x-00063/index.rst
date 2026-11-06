@@ -76,8 +76,8 @@ X_63
    * :ref:`X_63 <X_63>` = PU(128)-harmonic conjugate of :ref:`X_661 <X_661>`
    * :ref:`X_63 <X_63>` = midpoint of PU(129)
    * :ref:`X_63 <X_63>` = {:ref:`X_1 <X_1>`,\ :ref:`X_1707 <X_1707>`}-harmonic conjugate of :ref:`X_31 <X_31>`
-   * :ref:`X_63 <X_63>` = {:ref:`X_2 <X_2>`,\ :ref:`X_9 <X_9>`}-harmonic conjugate of X_3305
-   * :ref:`X_63 <X_63>` = {:ref:`X_2 <X_2>`,\ :ref:`X_57 <X_57>`}-harmonic conjugate of X_3306
+   * :ref:`X_63 <X_63>` = {:ref:`X_2 <X_2>`,\ :ref:`X_9 <X_9>`}-harmonic conjugate of :ref:`X_3305 <X_3305>`
+   * :ref:`X_63 <X_63>` = {:ref:`X_2 <X_2>`,\ :ref:`X_57 <X_57>`}-harmonic conjugate of :ref:`X_3306 <X_3306>`
    * :ref:`X_63 <X_63>` = {:ref:`X_92 <X_92>`,\ :ref:`X_1748 <X_1748>`}-harmonic conjugate of :ref:`X_19 <X_19>`
    * :ref:`X_63 <X_63>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_521 <X_521>`\ \ :ref:`X_656 <X_656>`
    * :ref:`X_63 <X_63>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_158 <X_158>`

@@ -58,7 +58,7 @@ X_471
    * :ref:`X_471 <X_471>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_14 <X_14>` (line :ref:`X_396 <X_396>`\ \ :ref:`X_523 <X_523>`)
    * :ref:`X_471 <X_471>` = polar conjugate of :ref:`X_14 <X_14>`
    * :ref:`X_471 <X_471>` = polar-circle inverse of X_32460
-   * :ref:`X_471 <X_471>` = :ref:`X_63 <X_63>`-iaoconjugate of X_3458
+   * :ref:`X_471 <X_471>` = :ref:`X_63 <X_63>`-iaoconjugate of :ref:`X_3458 <X_3458>`
    * :ref:`X_471 <X_471>` = {:ref:`X_2 <X_2>`,\ :ref:`X_4 <X_4>`}-harmonic conjugate of :ref:`X_470 <X_470>`
 
 Notes

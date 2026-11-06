@@ -24,7 +24,7 @@ def construct_x_02964(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_2964 = TRILINEAR PRODUCT X_61*X_62 on reference triangle ABC."""
-    X_2962 = point_from_barycentrics(model, A, B, C, 0.47509536, 0.30026197, 0.22464267, ID="X_2962", classes=["center"])
+    X_2962 = eval_trilinear_point(model, A, B, C, '(csc(A +  pi  /6)*csc(A -  pi  /6))', ID="X_2962", classes=["center"])
     X_2964 = isogonal_conjugate(model, A, B, C, X_2962, ID="X_2964", classes=["selected", "target"])
     X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
     X_21 = eval_trilinear_point(model, A, B, C, '1/(cos(B) + cos(C))', ID="X_21", classes=["center", "incident"])

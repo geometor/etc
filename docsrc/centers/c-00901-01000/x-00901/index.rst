@@ -46,10 +46,10 @@ X_901
 
    * :ref:`X_901 <X_901>` = reflection of :ref:`X_953 <X_953>` in :ref:`X_3 <X_3>`
    * :ref:`X_901 <X_901>` = isogonal conjugate of :ref:`X_900 <X_900>`
-   * :ref:`X_901 <X_901>` = :term:`anticomplement <anticomplement>` of X_3259
+   * :ref:`X_901 <X_901>` = :term:`anticomplement <anticomplement>` of :ref:`X_3259 <X_3259>`
    * :ref:`X_901 <X_901>` = :term:`isotomic conjugate <isotomic-conjugate>` of isogonal conjugate of X_32719
    * :ref:`X_901 <X_901>` = isotomic conjugate of :term:`complement <complement>` of polar conjugate of isogonal conjugate of X_23184
-   * :ref:`X_901 <X_901>` = isotomic conjugate of anticomplement of X_3310
+   * :ref:`X_901 <X_901>` = isotomic conjugate of anticomplement of :ref:`X_3310 <X_3310>`
    * :ref:`X_901 <X_901>` = Ψ(:ref:`X_58 <X_58>`, :ref:`X_110 <X_110>`)
    * :ref:`X_901 <X_901>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of X_22086
    * :ref:`X_901 <X_901>` = :ref:`X_36 <X_36>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_59 <X_59>`

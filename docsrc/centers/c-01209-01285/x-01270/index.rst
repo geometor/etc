@@ -23,8 +23,9 @@ X_1270
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{2, 6} <{ 2, 6 }>`, :g:`{8, 175} <{ 8, 175 }>`
-   * **Related Centers:** :g:`X_1131 <X_1131>` (:ref:`ARCTAN(2) KIEPERT POINT <X_1131>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_8 <X_8>` (:ref:`NAGEL POINT <X_8>`), :g:`X_175 <X_175>` (:ref:`ISOPERIMETRIC POINT <X_175>`)
+   * **Derived Triangle:** :term:`Anticomplementary Triangle <anticomplementary triangle>` :g:`△K_aK_bK_c << K_a K_b K_c >>` — vertices :g:`K_a <K_a>`, :g:`K_b <K_b>`, :g:`K_c <K_c>` (Formed by lines through A, B, C parallel to opposite sides)
+   * **Central Lines:** :g:`{2, 3068} <{ 2, 3068 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3068 <X_3068>` (:ref:`INTERSECTION OF X <X_3068>`)
 
 .. signature:: center
 
@@ -46,8 +47,8 @@ X_1270
    :badge: 5 relations
 
    * :ref:`X_1270 <X_1270>` = isotomic conjugate of :ref:`X_1131 <X_1131>`
-   * :ref:`X_1270 <X_1270>` = :term:`anticomplement <anticomplement>` of X_3068
-   * :ref:`X_1270 <X_1270>` = :ref:`X_1151 <X_1151>`-:term:`cross conjugate <cross-conjugate>` of X_3535
+   * :ref:`X_1270 <X_1270>` = :term:`anticomplement <anticomplement>` of :ref:`X_3068 <X_3068>`
+   * :ref:`X_1270 <X_1270>` = :ref:`X_1151 <X_1151>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_3535 <X_3535>`
    * :ref:`X_1270 <X_1270>` = homothetic center of :term:`anticomplementary triangle <anticomplementary-triangle>` and cross-triangle of :g:`ABC << A B C >>` and outer Grebe triangle
    * :ref:`X_1270 <X_1270>` = homothetic center of outer Grebe triangle and cross-triangle of :g:`ABC << A B C >>` and outer Grebe triangle
 

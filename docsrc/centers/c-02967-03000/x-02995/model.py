@@ -9,10 +9,10 @@ from geometor.model import Model
 
 from geometor.etc.ops import (
     central_line,
-    cevapoint,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
+    intersect_lines,
     promote_point_to_top,
 )
 from geometor.etc.render import write_center_svg
@@ -22,15 +22,13 @@ def construct_x_02995(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_2995 = CD(X_21) on reference triangle ABC."""
-    X_123 = eval_trilinear_point(model, A, B, C, '(csc(A))*(sec(B) - sec(C))*((sec(A))*((sin(B))**(2) - (sin(C))**(2)) + sin(C)*tan(C) - sin(B)*tan(B))', ID="X_123", classes=["center"])
-    X_525 = eval_trilinear_point(model, A, B, C, '(b*cos(B) - c*cos(C))/a', ID="X_525", classes=["center"])
-    X_2995 = cevapoint(model, A, B, C, X_123, X_525, ID="X_2995", classes=["selected", "target"])
-    X_81 = eval_trilinear_point(model, A, B, C, '1/(b + c)', ID="X_81", classes=["center", "incident"])
-    X_92 = eval_trilinear_point(model, A, B, C, 'csc(2*A)', ID="X_92", classes=["center", "incident"])
-    central_line(model, X_81, X_92, 81, 92, incident=True)
-    X_69 = eval_trilinear_point(model, A, B, C, '(cos(A))/a**(2)', ID="X_69", classes=["center", "incident"])
-    X_313 = eval_trilinear_point(model, A, B, C, '(b + c)*b**(3)*c**(3)', ID="X_313", classes=["center", "incident"])
-    central_line(model, X_69, X_313, 69, 313, incident=True)
+    X_81 = eval_trilinear_point(model, A, B, C, '1/(b + c)', ID="X_81", classes=["center"])
+    X_92 = eval_trilinear_point(model, A, B, C, 'csc(2*A)', ID="X_92", classes=["center"])
+    X_69 = eval_trilinear_point(model, A, B, C, '(cos(A))/a**(2)', ID="X_69", classes=["center"])
+    X_313 = eval_trilinear_point(model, A, B, C, '(b + c)*b**(3)*c**(3)', ID="X_313", classes=["center"])
+    central_line(model, X_81, X_92, 81, 92)
+    central_line(model, X_69, X_313, 69, 313)
+    X_2995 = intersect_lines(model, X_81, X_92, X_69, X_313, ID="X_2995", classes=["selected", "target"])
     X_63 = eval_trilinear_point(model, A, B, C, 'cot(A)', ID="X_63", classes=["center", "incident"])
     X_321 = eval_trilinear_point(model, A, B, C, '(b + c)*b**(2)*c**(2)', ID="X_321", classes=["center", "incident"])
     central_line(model, X_63, X_321, 63, 321, incident=True)

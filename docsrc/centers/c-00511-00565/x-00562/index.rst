@@ -35,7 +35,7 @@ X_562
 .. collapse:: Linear Combinations
    :badge: 1 combination
 
-   * = :math:`(3S^{2} - S^{2}_{A})(3S^{2} - S^{2}_{B})(3S^{2} - S^{2}_{C})` :ref:`X_3 <X_3>` - :math:`16S_{A}`\ :math:`S_{B}`\ :math:`S_{C}(5S_{A}S_{B}S_{C} + 3S^{2}S_{\omega }S)` X_3519 (:person:`Peter Moses <peter-moses>`, January 29, 2015)
+   * = :math:`(3S^{2} - S^{2}_{A})(3S^{2} - S^{2}_{B})(3S^{2} - S^{2}_{C})` :ref:`X_3 <X_3>` - :math:`16S_{A}`\ :math:`S_{B}`\ :math:`S_{C}(5S_{A}S_{B}S_{C} + 3S^{2}S_{\omega }S)` :ref:`X_3519 <X_3519>` (:person:`Peter Moses <peter-moses>`, January 29, 2015)
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines

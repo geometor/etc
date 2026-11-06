@@ -9,12 +9,10 @@ from geometor.model import Model
 
 from geometor.etc.ops import (
     central_line,
-    ceva_conjugate,
     circumcenter_of,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
-    nine_point_center_of,
     promote_point_to_top,
     symmedian_point_of,
 )
@@ -25,12 +23,11 @@ def construct_x_00195(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_195 = X_5-CEVA CONJUGATE OF X_3 on reference triangle ABC."""
-    X_5 = nine_point_center_of(model, A, B, C, ID="X_5", classes=["center"])
-    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center"])
-    X_195 = ceva_conjugate(model, A, B, C, X_5, X_3, ID="X_195", classes=["selected", "target"])
+    X_195 = eval_trilinear_point(model, A, B, C, 'a*(a**(8) + b**(8) + c**(8) - 4*a**(6)*(b**(2) + c**(2)) + a**(4)*(6*b**(4) + 6*c**(4) + 5*b**(2)*c**(2)) - a**(2)*(4*b**(6) + 4*c**(6) - b**(4)*c**(2) - b**(2)*c**(4)) - 2*b**(2)*c**(2)*(b**(4) + c**(4) - b**(2)*c**(2)))', ID="X_195", classes=["selected", "target"])
     X_6 = symmedian_point_of(model, A, B, C, ID="X_6", classes=["center", "incident"])
     X_17 = eval_trilinear_point(model, A, B, C, 'csc(A +  pi  /6)', ID="X_17", classes=["center", "incident"])
     central_line(model, X_6, X_17, 6, 17, incident=True)
+    X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
     X_54 = eval_trilinear_point(model, A, B, C, 'sec(B - C)', ID="X_54", classes=["center", "incident"])
     central_line(model, X_3, X_54, 3, 54, incident=True)
     X_49 = eval_trilinear_point(model, A, B, C, 'cos(3*A)', ID="X_49", classes=["center", "incident"])

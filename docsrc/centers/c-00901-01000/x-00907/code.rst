@@ -8,7 +8,7 @@ X_907
 
 .. enunciation::
 
-   :ref:`X_907 <X_907>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3800
+   :ref:`X_907 <X_907>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3800 <X_3800>`
 
 .. figure:: x-00907.svg
    :alt: X_907 — POINT ACRUX

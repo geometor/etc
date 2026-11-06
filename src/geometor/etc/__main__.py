@@ -16,9 +16,14 @@ from .glossary import (
     generate_glossary_rst,
     generate_persons_rst,
 )
-from .ingest import ingest_folder, read_html_source
+from .ingest import (
+    enrich_preambles_with_guide,
+    ingest_folder,
+    parse_preambles_guide,
+    read_html_source,
+)
 from .parser import parse_center
-from .transform import generate_rst_files
+from .transform import generate_preambles_guide_rst, generate_rst_files
 
 
 def _parse_split_file(file_path: Path) -> dict | None:
@@ -98,6 +103,26 @@ def main() -> None:
             preambles_path.read_text(encoding="utf-8")
         )
 
+    guide_file = input_dir / "Guide_to_preambles_in_ETC.html"
+    guide_data: dict = {}
+    if guide_file.is_file():
+        guide_data = parse_preambles_guide(guide_file)
+        enrich_preambles_with_guide(preambles_by_center, guide_data)
+        if split_dir.is_dir():
+            (split_dir / "preambles_guide.json").write_text(
+                json.dumps(guide_data, indent=2, ensure_ascii=False),
+                encoding="utf-8",
+            )
+            if preambles_by_center:
+                preambles_path.write_text(
+                    json.dumps(preambles_by_center, indent=2, ensure_ascii=False),
+                    encoding="utf-8",
+                )
+        (resources_dir / "preambles_guide.json").write_text(
+            json.dumps(guide_data, indent=2, ensure_ascii=False),
+            encoding="utf-8",
+        )
+
     # 2. Parse Centers
     print(f"Scanning center HTML files in {split_dir}...", flush=True)
     split_files = sorted(split_dir.glob("x-*.html"))
@@ -155,6 +180,15 @@ def main() -> None:
         (docsrc_dir / "bibliography.rst").write_text(
             generate_bibliography_rst(), encoding="utf-8"
         )
+        if guide_data:
+            (docsrc_dir / "preambles.rst").write_text(
+                generate_preambles_guide_rst(
+                    guide_data,
+                    glossary_terms=glossary_terms,
+                    valid_centers=valid_centers,
+                ),
+                encoding="utf-8",
+            )
 
         # Write JSON apparatus registries for photon-platform/publish hover tooltips and links
         (resources_dir / "glossary.json").write_text(
@@ -172,7 +206,7 @@ def main() -> None:
             encoding="utf-8",
         )
         print(
-            f"Generated {docsrc_dir}/{{glossary,persons,bibliography}}.rst and {resources_dir}/{{glossary,persons,citations}}.json"
+            f"Generated {docsrc_dir}/{{glossary,persons,bibliography,preambles}}.rst and {resources_dir}/{{glossary,persons,citations,preambles_guide}}.json"
         )
     else:
         print(f"Glossary file not found at {glossary_file}")

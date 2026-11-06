@@ -15,7 +15,6 @@ from geometor.etc.ops import (
     eval_trilinear_point,
     gergonne_point_of,
     incenter_of,
-    intersect_lines,
     nagel_point_of,
     promote_point_to_top,
 )
@@ -26,13 +25,13 @@ def construct_x_00347(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_347 = ISOTOMIC CONJUGATE OF X_280 on reference triangle ABC."""
-    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center"])
-    X_7 = gergonne_point_of(model, A, B, C, ID="X_7", classes=["center"])
-    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center"])
-    X_92 = eval_trilinear_point(model, A, B, C, 'csc(2*A)', ID="X_92", classes=["center"])
-    central_line(model, X_1, X_7, 1, 7)
-    central_line(model, X_2, X_92, 2, 92)
-    X_347 = intersect_lines(model, X_1, X_7, X_2, X_92, ID="X_347", classes=["selected", "target"])
+    X_347 = eval_trilinear_point(model, A, B, C, '((-1 - cos(A) + cos(B) + cos(C))*(sec(A/2))**(2))', ID="X_347", classes=["selected", "target"])
+    X_1 = incenter_of(model, A, B, C, ID="X_1", classes=["center", "incident"])
+    X_7 = gergonne_point_of(model, A, B, C, ID="X_7", classes=["center", "incident"])
+    central_line(model, X_1, X_7, 1, 7, incident=True)
+    X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
+    X_92 = eval_trilinear_point(model, A, B, C, 'csc(2*A)', ID="X_92", classes=["center", "incident"])
+    central_line(model, X_2, X_92, 2, 92, incident=True)
     X_8 = nagel_point_of(model, A, B, C, ID="X_8", classes=["center", "incident"])
     X_253 = eval_trilinear_point(model, A, B, C, '((csc(A))/(tan(B) + tan(C) - tan(A)))', ID="X_253", classes=["center", "incident"])
     central_line(model, X_8, X_253, 8, 253, incident=True)

@@ -71,7 +71,7 @@ Notes
 
 .. container:: note-item
 
-   The infinite points of the asymptotes of the Feuerbach hyperbola at X_3307 and X_3308, and for the Kiepert hyperbola, by X_3413 and X_3414. (:person:`Peter Moses <peter-moses>`, Ocober 8, 2018)
+   The infinite points of the asymptotes of the Feuerbach hyperbola at :ref:`X_3307 <X_3307>` and :ref:`X_3308 <X_3308>`, and for the Kiepert hyperbola, by :ref:`X_3413 <X_3413>` and :ref:`X_3414 <X_3414>`. (:person:`Peter Moses <peter-moses>`, Ocober 8, 2018)
 
 .. toctree::
    :hidden:

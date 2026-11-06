@@ -30,7 +30,7 @@ X_2744
 
    | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) is as given just before :ref:`X_2677 <X_2677>` using :g:`P <P>` = :ref:`X_104 <X_104>`, :g:`U <U>` = :ref:`X_107 <X_107>`
    | **Barycentrics:** :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
-   | **Search Value (6, 9, 13):** :math:`9.570326027758`
+   | **Search Value (6, 9, 13):** :math:`13.955710664858`
 
 .. container:: note-item
 

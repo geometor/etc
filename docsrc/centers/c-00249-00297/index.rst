@@ -22,7 +22,7 @@ X_249–X_297
 
 .. _preamble-0007:
 
-.. admonition:: Group Preamble — Centers X_249-X_297
+.. admonition:: Group Preamble — Centers X_249-X_297 (isogonal conjugates of prevously listed centers)
    :class: note
 
    Centers :ref:`X_249 <X_249>`-:ref:`X_297 <X_297>` are isogonal conjugates of previously listed centers.

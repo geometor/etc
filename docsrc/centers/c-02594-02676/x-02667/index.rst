@@ -42,7 +42,7 @@ X_2667
 
    * :ref:`X_2667 <X_2667>` = trilinear pole, wrt incentral triangle, of Lemoine axis
    * :ref:`X_2667 <X_2667>` = incentral :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_2292 <X_2292>`
-   * :ref:`X_2667 <X_2667>` = :term:`complement <complement>`, wrt incentral triangle, of X_3728
+   * :ref:`X_2667 <X_2667>` = :term:`complement <complement>`, wrt incentral triangle, of :ref:`X_3728 <X_3728>`
    * :ref:`X_2667 <X_2667>` = :term:`anticomplement <anticomplement>`, wrt incentral triangle, of :ref:`X_37 <X_37>`
    * :ref:`X_2667 <X_2667>` = bicentric sum of PU(85)
    * :ref:`X_2667 <X_2667>` = PU(85)-harmonic conjugate of :ref:`X_798 <X_798>`

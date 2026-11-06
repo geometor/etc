@@ -14,7 +14,6 @@ from geometor.etc.ops import (
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
-    isogonal_conjugate,
     promote_point_to_top,
     symmedian_point_of,
 )
@@ -25,8 +24,7 @@ def construct_x_00066(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_66 = ISOGONAL CONJUGATE OF X_22 on reference triangle ABC."""
-    X_22 = eval_trilinear_point(model, A, B, C, 'a*(b**(4) + c**(4) - a**(4))', ID="X_22", classes=["center"])
-    X_66 = isogonal_conjugate(model, A, B, C, X_22, ID="X_66", classes=["selected", "target"])
+    X_66 = eval_trilinear_point(model, A, B, C, 'b*c/(b**(4) + c**(4) - a**(4))', ID="X_66", classes=["selected", "target"])
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
     X_141 = eval_trilinear_point(model, A, B, C, 'b*c*(b**(2) + c**(2))', ID="X_141", classes=["center", "incident"])
     central_line(model, X_3, X_141, 3, 141, incident=True)

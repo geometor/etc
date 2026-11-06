@@ -41,7 +41,7 @@ X_698
    :badge: 2 relations
 
    * :ref:`X_698 <X_698>` = isogonal conjugate of :ref:`X_699 <X_699>`
-   * :ref:`X_698 <X_698>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3225
+   * :ref:`X_698 <X_698>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3225 <X_3225>`
 
 .. toctree::
    :hidden:

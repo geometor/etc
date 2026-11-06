@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" width="100%" height="100%">
+  <defs>
+    <filter id="glow-construct" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Reference Triangle ABC -->
+  <polygon points="195.0,505.0 805.0,505.0 568.5,139.1"
+           fill="rgba(214, 207, 197, 0.05)" stroke="#d6cfc5" stroke-width="3.4" stroke-linejoin="round" />
+
+  <polygon points="663.1,285.4 444.0,261.1 543.6,505.0" fill="rgba(56, 189, 248, 0.12)" stroke="#38bdf8" stroke-width="2.4" stroke-dasharray="6,4" /><circle cx="663.1" cy="285.4" r="5" fill="#38bdf8" /><circle cx="444.0" cy="261.1" r="5" fill="#38bdf8" /><circle cx="543.6" cy="505.0" r="5" fill="#38bdf8" /><text x="675.1" y="277.4" fill="#38bdf8" font-family="Georgia, serif" font-size="19" font-weight="bold">T_a</text><text x="408.0" y="251.1" fill="#38bdf8" font-family="Georgia, serif" font-size="19" font-weight="bold">T_b</text><text x="553.6" y="531.0" fill="#38bdf8" font-family="Georgia, serif" font-size="19" font-weight="bold">T_c</text>
+  <circle cx="543.6" cy="362.7" r="142.3" fill="rgba(224, 64, 251, 0.07)" stroke="#e040fb" stroke-width="3.2" />
+
+  <!-- Three Concurring Bisectors / Cevians (dash-dot) -->
+  <line x1="195.0" y1="505.0" x2="677.6" y2="308.0"
+        stroke="#94a3b8" stroke-width="2.4" stroke-dasharray="12,5,2.5,5" stroke-linecap="round" />
+  <line x1="805.0" y1="505.0" x2="412.9" y2="291.5"
+        stroke="#94a3b8" stroke-width="2.4" stroke-dasharray="12,5,2.5,5" stroke-linecap="round" />
+  <line x1="568.5" y1="139.1" x2="527.7" y2="505.0"
+        stroke="#94a3b8" stroke-width="2.4" stroke-dasharray="12,5,2.5,5" stroke-linecap="round" />
+
+  <!-- Cevian feet -->
+  <circle cx="677.6" cy="308.0" r="5.5" fill="#e8b85a" stroke="#0d111a" stroke-width="2" />
+  <circle cx="412.9" cy="291.5" r="5.5" fill="#e8b85a" stroke="#0d111a" stroke-width="2" />
+  <circle cx="527.7" cy="505.0" r="5.5" fill="#e8b85a" stroke="#0d111a" stroke-width="2" />
+
+  <text x="689.6" y="314.0" fill="#e8b85a" font-family="Georgia, serif" font-size="19" font-weight="bold">I_a</text>
+  <text x="378.9" y="303.5" fill="#e8b85a" font-family="Georgia, serif" font-size="19" font-weight="bold">I_b</text>
+  <text x="499.7" y="531.0" fill="#e8b85a" font-family="Georgia, serif" font-size="19" font-weight="bold">I_c</text>
+
+  <!-- Vertices A, B, C -->
+  <circle cx="195.0" cy="505.0" r="6.5" fill="#f8f6f0" stroke="#0d111a" stroke-width="2.2" />
+  <circle cx="805.0" cy="505.0" r="6.5" fill="#f8f6f0" stroke="#0d111a" stroke-width="2.2" />
+  <circle cx="568.5" cy="139.1" r="6.5" fill="#f8f6f0" stroke="#0d111a" stroke-width="2.2" />
+
+  <text x="167.0" y="529.0" fill="#f8f6f0" font-family="Georgia, serif" font-size="26" font-weight="bold">A</text>
+  <text x="821.0" y="529.0" fill="#f8f6f0" font-family="Georgia, serif" font-size="26" font-weight="bold">B</text>
+  <text x="560.5" y="121.1" fill="#f8f6f0" font-family="Georgia, serif" font-size="26" font-weight="bold">C</text>
+
+  <!-- Target Center X_n -->
+  <circle cx="543.6" cy="362.7" r="10.5" fill="#e8b85a" stroke="#ffffff" stroke-width="3" filter="url(#glow-construct)" />
+  <rect x="507.6" y="316.7" width="72" height="30" rx="6" fill="rgba(13, 17, 26, 0.92)" stroke="#e8b85a" stroke-width="1.5" />
+  <text x="543.6" y="337.7" text-anchor="middle" fill="#e8b85a" font-family="JetBrains Mono, monospace" font-size="19" font-weight="bold">X_1</text>
+
+  <!-- Bottom Summary Banner -->
+  <g transform="translate(55, 585)">
+    <rect x="0" y="0" width="890" height="142" rx="14" fill="rgba(11, 14, 21, 0.92)" stroke="rgba(232, 184, 90, 0.35)" stroke-width="1.5" />
+    <text x="445" y="44" text-anchor="middle" fill="#e8b85a" font-family="JetBrains Mono, monospace" font-size="17" font-weight="bold" letter-spacing="1.2">CANONICAL LOCUS ON ACUTE REFERENCE TRIANGLE (a, b, c) = (5, 6, 7)</text>
+    <text x="445" y="92" text-anchor="middle" fill="#f8f6f0" font-family="Georgia, serif" font-size="22">Bisectors [A I_a], [B I_b], [C I_c] concur at X_1; incircle touches BC, CA, AB at T_a, T_b, T_c</text>
+  </g>
+</svg>

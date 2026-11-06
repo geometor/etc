@@ -45,7 +45,7 @@ X_2998
    * :ref:`X_2998 <X_2998>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_194 <X_194>`
    * :ref:`X_2998 <X_2998>` = complement of X_32747
    * :ref:`X_2998 <X_2998>` = :term:`anticomplement <anticomplement>` of X_6374
-   * :ref:`X_2998 <X_2998>` = polar conjugate of X_3186
+   * :ref:`X_2998 <X_2998>` = polar conjugate of :ref:`X_3186 <X_3186>`
    * :ref:`X_2998 <X_2998>` = trilinear pole of line :ref:`X_512 <X_512>`\ \ :ref:`X_625 <X_625>` (the complement of the Lemoine axis)
    * :ref:`X_2998 <X_2998>` = :term:`cyclocevian conjugate <cyclocevian-conjugate>` of :ref:`X_66 <X_66>`
    * :ref:`X_2998 <X_2998>` = :term:`cevapoint <cevapoint>` of :ref:`X_523 <X_523>` and :ref:`X_1084 <X_1084>`

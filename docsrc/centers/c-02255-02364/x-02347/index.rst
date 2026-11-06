@@ -41,7 +41,7 @@ X_2347
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X_2347 <X_2347>` = :term:`isogonal conjugate <isogonal-conjugate>` of :term:`isotomic conjugate <isotomic-conjugate>` of X_3452
+   * :ref:`X_2347 <X_2347>` = :term:`isogonal conjugate <isogonal-conjugate>` of :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3452 <X_3452>`
    * :ref:`X_2347 <X_2347>` = :ref:`X_100 <X_100>`-Ceva conjugate of :ref:`X_663 <X_663>`
    * :ref:`X_2347 <X_2347>` = :term:`crosspoint <crosspoint>` of :ref:`X_6 <X_6>` and :ref:`X_9 <X_9>`
    * :ref:`X_2347 <X_2347>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`57 <X_57>`), (:ref:`9 <X_9>`, :ref:`145 <X_145>`)

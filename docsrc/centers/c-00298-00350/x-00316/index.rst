@@ -45,7 +45,7 @@ X_316
 
    * :ref:`X_316 <X_316>` = midpoint of :ref:`X_621 <X_621>` and :ref:`X_622 <X_622>`
    * :ref:`X_316 <X_316>` = reflection of X_i in X_j for these (i,j): (:ref:`15 <X_15>`, :ref:`624 <X_624>`), (:ref:`16 <X_16>`, :ref:`623 <X_623>`), (:ref:`99 <X_99>`, :ref:`325 <X_325>`), (:ref:`385 <X_385>`, :ref:`115 <X_115>`), (:ref:`691 <X_691>`, :ref:`858 <X_858>`)
-   * :ref:`X_316 <X_316>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3455
+   * :ref:`X_316 <X_316>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3455 <X_3455>`
    * :ref:`X_316 <X_316>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_67 <X_67>`
    * :ref:`X_316 <X_316>` = anticomplement of :ref:`X_187 <X_187>`
    * :ref:`X_316 <X_316>` = :term:`crosssum <crosssum>` of :ref:`X_39 <X_39>` and :ref:`X_187 <X_187>`

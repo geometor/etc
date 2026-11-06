@@ -49,7 +49,7 @@ X_85
 
    * :ref:`X_85 <X_85>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_41 <X_41>`
    * :ref:`X_85 <X_85>` = isotomic conjugate of :ref:`X_9 <X_9>`
-   * :ref:`X_85 <X_85>` = :term:`complement <complement>` of X_3177
+   * :ref:`X_85 <X_85>` = :term:`complement <complement>` of :ref:`X_3177 <X_3177>`
    * :ref:`X_85 <X_85>` = :term:`anticomplement <anticomplement>` of :ref:`X_1212 <X_1212>`
    * :ref:`X_85 <X_85>` = :ref:`X_274 <X_274>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_348 <X_348>`
    * :ref:`X_85 <X_85>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`169 <X_169>`), (:ref:`2 <X_2>`, :ref:`7 <X_7>`), (:ref:`57 <X_57>`, :ref:`77 <X_77>`), (:ref:`92 <X_92>`, :ref:`342 <X_342>`)

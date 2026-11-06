@@ -51,7 +51,7 @@ X_2176
    * :ref:`X_2176 <X_2176>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`1278 <X_1278>`), (:ref:`87 <X_87>`, :ref:`2319 <X_2319>`), (:ref:`514 <X_514>`, :ref:`1015 <X_1015>`)
    * :ref:`X_2176 <X_2176>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of X_23086
    * :ref:`X_2176 <X_2176>` = {:ref:`X_1 <X_1>`,\ :ref:`X_9 <X_9>`}-harmonic conjugate of :ref:`X_1107 <X_1107>`
-   * :ref:`X_2176 <X_2176>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_513 <X_513>`\ X_3716
+   * :ref:`X_2176 <X_2176>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_513 <X_513>`\ \ :ref:`X_3716 <X_3716>`
    * :ref:`X_2176 <X_2176>` = pole wrt circumcircle of line :ref:`X_667 <X_667>`\ \ :ref:`X_788 <X_788>`
 
 .. toctree::

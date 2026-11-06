@@ -9,7 +9,6 @@ from geometor.model import Model
 
 from geometor.etc.ops import (
     central_line,
-    cevapoint,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
@@ -23,12 +22,12 @@ def construct_x_00489(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_489 = CEVAPOINT OF X_20 AND X_487 on reference triangle ABC."""
-    X_20 = eval_trilinear_point(model, A, B, C, 'cos(A) - cos(B)*cos(C)', ID="X_20", classes=["center"])
-    X_487 = eval_trilinear_point(model, A, B, C, '((cos(A))*(1 - csc(A)*sin(B)*sin(C)))', ID="X_487", classes=["center"])
-    X_489 = cevapoint(model, A, B, C, X_20, X_487, ID="X_489", classes=["selected", "target"])
+    X_489 = eval_trilinear_point(model, A, B, C, '((cos(A))*(1 - csc(A)*sin(B)*sin(C)) - cos(B)*cos(C))', ID="X_489", classes=["selected", "target"])
+    X_20 = eval_trilinear_point(model, A, B, C, 'cos(A) - cos(B)*cos(C)', ID="X_20", classes=["center", "incident"])
     X_64 = eval_trilinear_point(model, A, B, C, '1/(cos(A) - cos(B)*cos(C))', ID="X_64", classes=["center", "incident"])
     central_line(model, X_20, X_64, 20, 64, incident=True)
     X_4 = orthocenter_of(model, A, B, C, ID="X_4", classes=["center", "incident"])
+    X_487 = eval_trilinear_point(model, A, B, C, '((cos(A))*(1 - csc(A)*sin(B)*sin(C)))', ID="X_487", classes=["center", "incident"])
     central_line(model, X_4, X_487, 4, 487, incident=True)
     X_376 = eval_trilinear_point(model, A, B, C, '5*cos(A) - cos(B - C)', ID="X_376", classes=["center", "incident"])
     X_488 = eval_trilinear_point(model, A, B, C, '((cos(A))*(1 + csc(A)*sin(B)*sin(C)))', ID="X_488", classes=["center", "incident"])

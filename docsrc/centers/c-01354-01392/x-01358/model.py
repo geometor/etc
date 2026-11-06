@@ -11,7 +11,6 @@ from geometor.etc.ops import (
     central_line,
     construct_baseline_triangle,
     create_model,
-    crosspoint,
     eval_trilinear_point,
     gergonne_point_of,
     point_from_barycentrics,
@@ -24,9 +23,7 @@ def construct_x_01358(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1358 = BRISSE TRANSFORM OF X_101 on reference triangle ABC."""
-    X_277 = eval_trilinear_point(model, A, B, C, '(((sec(A/2))**(2))/(- (cos(A/2))**(4) + (cos(B/2))**(4) + (cos(C/2))**(4)))', ID="X_277", classes=["center"])
-    X_514 = eval_trilinear_point(model, A, B, C, '(b - c)/a', ID="X_514", classes=["center"])
-    X_1358 = crosspoint(model, A, B, C, X_277, X_514, ID="X_1358", classes=["selected", "target"])
+    X_1358 = eval_trilinear_point(model, A, B, C, '(tan(A/2))**(2)*(sin(B/2 - C/2))**(2)', ID="X_1358", classes=["selected", "target"])
     X_12 = eval_trilinear_point(model, A, B, C, '1 + cos(B - C)', ID="X_12", classes=["center", "incident"])
     X_85 = eval_trilinear_point(model, A, B, C, 'b**(2)*c**(2)/(b + c - a)', ID="X_85", classes=["center", "incident"])
     central_line(model, X_12, X_85, 12, 85, incident=True)

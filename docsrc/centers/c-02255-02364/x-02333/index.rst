@@ -30,7 +30,7 @@ X_2333
 
    | **Trilinears:** :math:`(b + c) \sec A : (c + a) \sec B : (a + b) \sec C`
    | **Barycentrics:** :math:`(b + c) \tan A : (c + a) \tan B : (a + b) \tan C`
-   | **Search Value (6, 9, 13):** :math:`-25.003915317345`
+   | **Search Value (6, 9, 13):** :math:`-0.894465556277`
 
 .. collapse:: Incident Central Lines
    :badge: 12 lines

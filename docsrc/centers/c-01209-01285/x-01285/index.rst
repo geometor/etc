@@ -12,7 +12,7 @@ X_1285
 
 .. enunciation::
 
-   :ref:`X_1285 <X_1285>` is the homothetic center of the :term:`antipedal triangle <antipedal-triangle>` of :ref:`X_2 <X_2>` and the :term:`pedal triangle <pedal-triangle>` of :ref:`X_6 <X_6>`. (:person:`Darij Grinberg <darij-grinberg>`, :cite:`Hyacinthos #6577 <hyacinthos>`, 2/21/03). See also X_3066.
+   :ref:`X_1285 <X_1285>` is the homothetic center of the :term:`antipedal triangle <antipedal-triangle>` of :ref:`X_2 <X_2>` and the :term:`pedal triangle <pedal-triangle>` of :ref:`X_6 <X_6>`. (:person:`Darij Grinberg <darij-grinberg>`, :cite:`Hyacinthos #6577 <hyacinthos>`, 2/21/03). See also :ref:`X_3066 <X_3066>`.
 
 .. figure:: x-01285.svg
    :alt: X_1285 — LEMOINE HOMOTHETIC CENTER
@@ -36,7 +36,7 @@ X_1285
    :badge: 9 lines
    :class: line-catalog
 
-   {:ref:`2 <X_2>`, :ref:`1384 <X_1384>`}, {:ref:`4 <X_4>`, :ref:`32 <X_32>`}, {:ref:`6 <X_6>`, :ref:`376 <X_376>`}, {:ref:`99 <X_99>`, :ref:`1992 <X_1992>`}, {:ref:`172 <X_172>`, :ref:`1058 <X_1058>`}, {:ref:`193 <X_193>`, :ref:`1003 <X_1003>`}, {:ref:`497 <X_497>`, :ref:`609 <X_609>`}, {:ref:`631 <X_631>`, 3053}, {:ref:`1056 <X_1056>`, :ref:`1914 <X_1914>`}
+   {:ref:`2 <X_2>`, :ref:`1384 <X_1384>`}, {:ref:`4 <X_4>`, :ref:`32 <X_32>`}, {:ref:`6 <X_6>`, :ref:`376 <X_376>`}, {:ref:`99 <X_99>`, :ref:`1992 <X_1992>`}, {:ref:`172 <X_172>`, :ref:`1058 <X_1058>`}, {:ref:`193 <X_193>`, :ref:`1003 <X_1003>`}, {:ref:`497 <X_497>`, :ref:`609 <X_609>`}, {:ref:`631 <X_631>`, :ref:`3053 <X_3053>`}, {:ref:`1056 <X_1056>`, :ref:`1914 <X_1914>`}
 
 Notes
 -----

@@ -9,7 +9,6 @@ from geometor.model import Model
 
 from geometor.etc.ops import (
     central_line,
-    cevapoint,
     circumcenter_of,
     construct_baseline_triangle,
     create_model,
@@ -24,9 +23,7 @@ def construct_x_01293(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1293 = COLLINGS TRANSFORM OF X_121 on reference triangle ABC."""
-    X_55 = eval_trilinear_point(model, A, B, C, 'a*(b + c - a)', ID="X_55", classes=["center"])
-    X_649 = eval_trilinear_point(model, A, B, C, 'a*(b - c)', ID="X_649", classes=["center"])
-    X_1293 = cevapoint(model, A, B, C, X_55, X_649, ID="X_1293", classes=["selected", "target"])
+    X_1293 = eval_trilinear_point(model, A, B, C, '(a/((b - c)*(3*a - b - c)))', ID="X_1293", classes=["selected", "target"])
     X_3 = circumcenter_of(model, A, B, C, ID="X_3", classes=["center", "incident"])
     X_106 = eval_trilinear_point(model, A, B, C, 'a/(2*a - b - c)', ID="X_106", classes=["center", "incident"])
     central_line(model, X_3, X_106, 3, 106, incident=True)

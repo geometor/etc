@@ -41,7 +41,7 @@ X_1219
    :badge: 3 relations
 
    * :ref:`X_1219 <X_1219>` = isogonal conjugate of :ref:`X_1191 <X_1191>`
-   * :ref:`X_1219 <X_1219>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3672
+   * :ref:`X_1219 <X_1219>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3672 <X_3672>`
    * :ref:`X_1219 <X_1219>` = :term:`trilinear pole <trilinear-pole>` of orthic axis of 2nd :term:`extouch triangle <extouch-triangle>`
 
 .. toctree::

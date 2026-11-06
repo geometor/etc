@@ -49,7 +49,7 @@ X_2099
    * :ref:`X_2099 <X_2099>` = reflection of :ref:`X_55 <X_55>` in :ref:`X_1 <X_1>`
    * :ref:`X_2099 <X_2099>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2320 <X_2320>`
    * :ref:`X_2099 <X_2099>` = :term:`anticomplement <anticomplement>` of :term:`complementary conjugate <complementary-conjugate>` of X_17057
-   * :ref:`X_2099 <X_2099>` = {:ref:`X_1 <X_1>`,\ :ref:`X_1155 <X_1155>`}-harmonic conjugate of X_3576
+   * :ref:`X_2099 <X_2099>` = {:ref:`X_1 <X_1>`,\ :ref:`X_1155 <X_1155>`}-harmonic conjugate of :ref:`X_3576 <X_3576>`
    * :ref:`X_2099 <X_2099>` = {:ref:`X_1 <X_1>`,\ :ref:`X_1159 <X_1159>`}-harmonic conjugate of X_4860
 
 .. toctree::

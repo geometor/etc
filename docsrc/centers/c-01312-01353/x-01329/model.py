@@ -10,7 +10,6 @@ from geometor.model import Model
 from geometor.etc.ops import (
     central_line,
     centroid_of,
-    complement,
     construct_baseline_triangle,
     create_model,
     eval_trilinear_point,
@@ -27,8 +26,7 @@ def construct_x_01329(
     model: Model, A: spg.Point, B: spg.Point, C: spg.Point
 ) -> spg.Point:
     """Construct X_1329 = COMPLEMENTARY CONJUGATE OF X_1 on reference triangle ABC."""
-    X_56 = eval_trilinear_point(model, A, B, C, 'a/(b + c - a)', ID="X_56", classes=["center"])
-    X_1329 = complement(model, A, B, C, X_56, ID="X_1329", classes=["selected", "target"])
+    X_1329 = eval_trilinear_point(model, A, B, C, '(b*c*(b**(2)/(a - b + c) + c**(2)/(a + b - c)))', ID="X_1329", classes=["selected", "target"])
     X_2 = centroid_of(model, A, B, C, ID="X_2", classes=["center", "incident"])
     X_12 = eval_trilinear_point(model, A, B, C, '1 + cos(B - C)', ID="X_12", classes=["center", "incident"])
     central_line(model, X_2, X_12, 2, 12, incident=True)

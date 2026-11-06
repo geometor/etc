@@ -30,7 +30,6 @@ X_2392
 
    | **Trilinears:** :math:`1/U : 1/V : 1/W`, where :math:`U : V : W` = :ref:`X_2372 <X_2372>`
    | **Barycentrics:** :math:`a/U : b/V : c/W`
-   | **Search Value (6, 9, 13):** :math:`-1.480512397789`
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines

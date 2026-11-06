@@ -1,0 +1,84 @@
+center: X_2
+title: CENTROID
+folio: Kimberling ETC • Collection 1 (X_1–X_19)
+enunciation: The intersection of the three medians and center of mass of triangle ABC.
+
+[bell:proposition]
+
+[screen: CONSTRUCT | svg: 01_primary.svg | weight: 1]
+symbolic: X_2 = Centroid • [A M_a] ∩ [B M_b] ∩ [C M_c]
+zoom: A, B, C
+active: X_2:gold, [ A M_a ]:gold, [ B M_b ]:gold, [ C M_c ]:gold
+head: Primary Construction
+row: Target Center | X_2 (Centroid):gold
+row: Medians | AM_a, BM_b, CM_c:gold
+row: Medial Triangle | △M_a M_b M_c:muted
+just: ∵ CONCURRENCE | ARCHIMEDES • CENTER OF MASS | Divides each median in a 2 : 1 ratio from vertex to midpoint; Shinagawa Euler coefficients (1, 0).
+say: X two is the Centroid of triangle A B C:
+
+[screen: GOAL | svg: 01_primary.svg | weight: 1 | punchline: true]
+symbolic: X_2 = Centroid • [A M_a] ∩ [B M_b] ∩ [C M_c]
+zoom: X_2, < M_a M_b M_c >, M_a, M_b, M_c, X_2, M_a, M_b, M_c
+thumb_zoom: A, B, C
+active: X_2:gold, < M_a M_b M_c >:blue, M_a:blue, M_b:blue, M_c:blue
+head: Primary Construction
+row: Target Center | X_2 (Centroid):gold
+row: Medians | AM_a, BM_b, CM_c:muted
+row: Medial Triangle | △M_a M_b M_c:blue
+just: ∵ DEFINITION | ARCHIMEDES • CENTER OF MASS | Divides each median in a 2 : 1 ratio from vertex to midpoint; Shinagawa Euler coefficients (1, 0).
+say: <pause> the intersection of the three medians joining vertices A, B, and C to the opposite side midpoints M sub a, M sub b, and M sub c.
+
+[bell:construction]
+
+[screen: ASSERT | svg: 02_coordinates.svg | weight: 1.15]
+symbolic: Trilinears 1/a : 1/b : 1/c • Barycentrics 1 : 1 : 1
+section: Trilinear Distances | α = 1/a:gold | β = 1/b:blue | γ = 1/c:green
+section: Barycentric Sub-Areas | u = 1:gold | v = 1:blue | w = 1:green
+just: ∵ COORDINATES | EQUAL AREA PARTITION | On acute triangle (5, 6, 7), perpendicular struts are 42 : 35 : 30 and sub-areas are 33.3% : 33.3% : 33.3%.
+say: As the planar center of mass, <pause> X two partitions triangle A B C into three sub-triangles of equal area, <pause> giving barycentric coordinates one, to one, to one, <pause> and trilinear distances inversely proportional to the side lengths, <pause> one over a, to one over b, to one over c.
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.5]
+symbolic: Euler Line {2, 3, 4, 5} • Nagel Line {1, 2, 8, 10}
+zoom: X_2, X_3, X_4, X_5
+active: X_2:gold, {2, 3, 4, 5}:gold
+head: Incident Central Lines
+row: Euler Line | {2, 3, 4, 5}:gold
+row: Nagel Line | {1, 2, 8, 10}:muted
+row: Gergonne–Mittenpunkt | {2, 7, 9}:muted
+just: ∵ PRIMARY AXIS | EULER & NAGEL INTERSECTION | On the Euler line, X_2 trisects segment X_3–X_4; on the Nagel line, X_2 trisects segment X_1–X_8.
+say: <pause> On the central lines layer, <pause> X two anchors both the Euler line through X three, X four, and X five,
+
+[screen: INTERSECT | svg: 03_central_lines.svg | weight: 0.55]
+symbolic: Euler Line {2, 3, 4, 5} • Nagel Line {1, 2, 8, 10}
+zoom: X_2, X_3, X_4, X_5, X_1, X_8, X_10, X_7, X_9
+active: X_2:gold, {2, 3, 4, 5}:gold, {1, 2, 8, 10}:orange, {2, 7, 9}:green
+head: Incident Central Lines
+row: Euler Line | {2, 3, 4, 5}:gold
+row: Nagel Line | {1, 2, 8, 10}:orange
+row: Gergonne–Mittenpunkt | {2, 7, 9}:green
+just: ∵ COLLINEARITIES | EULER & NAGEL INTERSECTION | On the Euler line, X_2 trisects segment X_3–X_4; on the Nagel line, X_2 trisects segment X_1–X_8.
+say: <pause> and the Nagel line through X one, X eight, and X ten.
+
+[bell:insight]
+
+[screen: PROVE | svg: 04_relations.svg | weight: 1.05]
+symbolic: Isogonal Conjugate X_6 • Self-Isotomic (X_2)
+zoom: X_2, X_6, X_4, X_3
+active: X_2:gold, X_6:blue, X_4:green, X_3:orange
+head: Functional Relations
+row: Isogonal Conjugate | X_6:blue
+row: Isotomic Conjugate | X_2 (self):gold
+row: Cyclocevian Conjugate | X_4:green
+row: Homothetic Center | X_3 ↔ X_5:orange
+just: ∵ RELATIONS | HOMOTHETIC FIXED CENTER | X_2 is the dilation center (scale -1/2 and -2) mapping every center to its complement and anticomplement.
+say: Under functional relations, <pause> X two is the isogonal conjugate of the Symmedian point X six, <pause> its own isotomic conjugate, <pause> and the fixed center of the complement and anticomplement dilations.
+
+[screen: ∴ | svg: 05_four_triangles.svg | weight: 0.95]
+symbolic: Kimberling (6, 9, 13) Search = 2.629368792489
+head: Reference Triangles | a | b | c
+row: Acute Triangle | 5 | 6 | 7:gold
+row: Right Triangle | 3 | 4 | 5:blue
+row: Kepler Triangle | 1 | √φ | φ:green
+row: Kimberling Triangle | 6 | 9 | 13:purple
+just: ∵ INVARIANCE | KIMBERLING SEARCH VALUE • X_2 | Shortest directed trilinear distance on reference triangle (6, 9, 13): 2.629368792489.
+say: <pause> Across all four reference triangles, <pause> X two divides the segment from Circumcenter X three to Orthocenter X four in the exact ratio one to two.

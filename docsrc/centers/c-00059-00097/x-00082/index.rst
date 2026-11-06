@@ -60,7 +60,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`Cm_aCm_bCm_c << Cm_a Cm_b Cm_c >>` be the :term:`circummedial triangle <circummedial-triangle>`. Let :g:`A″ <A″>` be the trilinear product :g:`Cm_b <Cm_b>`\ \*\ :g:`Cm_c <Cm_c>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. :g:`A″ <A″>`, :g:`B″ <B″>`, :g:`C″ <C″>` are collinear on line :ref:`X_798 <X_798>`\ \ :ref:`X_812 <X_812>` (the :term:`trilinear polar <trilinear-polar>` of X_3112). The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_82 <X_82>`. (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
+   Let :g:`Cm_aCm_bCm_c << Cm_a Cm_b Cm_c >>` be the :term:`circummedial triangle <circummedial-triangle>`. Let :g:`A″ <A″>` be the trilinear product :g:`Cm_b <Cm_b>`\ \*\ :g:`Cm_c <Cm_c>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. :g:`A″ <A″>`, :g:`B″ <B″>`, :g:`C″ <C″>` are collinear on line :ref:`X_798 <X_798>`\ \ :ref:`X_812 <X_812>` (the :term:`trilinear polar <trilinear-polar>` of :ref:`X_3112 <X_3112>`). The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_82 <X_82>`. (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
 
 .. toctree::
    :hidden:

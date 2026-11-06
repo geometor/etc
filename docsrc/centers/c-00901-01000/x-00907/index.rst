@@ -12,7 +12,7 @@ X_907
 
 .. enunciation::
 
-   :ref:`X_907 <X_907>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3800
+   :ref:`X_907 <X_907>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3800 <X_3800>`
 
 .. figure:: x-00907.svg
    :alt: X_907 — POINT ACRUX
@@ -24,7 +24,7 @@ X_907
    :class: note
 
    * **Central Lines:** :g:`{98, 620} <{ 98, 620 }>`, :g:`{111, 1180} <{ 111, 1180 }>`
-   * **Related Centers:** :g:`X_98 <X_98>` (:ref:`TARRY POINT <X_98>`), :g:`X_620 <X_620>` (:ref:`MIDPOINT OF X(618) AND X(619) <X_620>`), :g:`X_111 <X_111>` (:ref:`PARRY POINT <X_111>`), :g:`X_1180 <X_1180>` (:ref:`2nd SARAGOSSA POINT OF X(2) <X_1180>`)
+   * **Related Centers:** :g:`X_3800 <X_3800>` (:ref:`com[INVERSE(nT(a2, a2 + b2))] <X_3800>`), :g:`X_98 <X_98>` (:ref:`TARRY POINT <X_98>`), :g:`X_620 <X_620>` (:ref:`MIDPOINT OF X(618) AND X(619) <X_620>`), :g:`X_111 <X_111>` (:ref:`PARRY POINT <X_111>`), :g:`X_1180 <X_1180>` (:ref:`2nd SARAGOSSA POINT OF X(2) <X_1180>`)
 
 .. signature:: center
 
@@ -45,7 +45,7 @@ X_907
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X_907 <X_907>` = isogonal conjugate of X_3800
+   * :ref:`X_907 <X_907>` = isogonal conjugate of :ref:`X_3800 <X_3800>`
    * :ref:`X_907 <X_907>` = Λ(:ref:`X_419 <X_419>`, :ref:`X_2501 <X_2501>`) (line is radical axis of circumcircle and orthosymmedial circle)
 
 .. toctree::

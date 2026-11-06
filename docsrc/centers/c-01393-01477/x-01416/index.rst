@@ -41,7 +41,7 @@ X_1416
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X_1416 <X_1416>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3717
+   * :ref:`X_1416 <X_1416>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3717 <X_3717>`
    * :ref:`X_1416 <X_1416>` = :ref:`X_1462 <X_1462>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_1438 <X_1438>`
    * :ref:`X_1416 <X_1416>` = cevapoint of :ref:`X_56 <X_56>` and :ref:`X_1428 <X_1428>`
    * :ref:`X_1416 <X_1416>` = :ref:`X_56 <X_56>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X_1438 <X_1438>`

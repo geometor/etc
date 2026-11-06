@@ -65,7 +65,7 @@ X_184
    * :ref:`X_184 <X_184>` = X_i-:term:`beth conjugate <beth-conjugate>` of X_j for these (i,j): (:ref:`212 <X_212>`, :ref:`212 <X_212>`), (:ref:`692 <X_692>`, :ref:`184 <X_184>`)
    * :ref:`X_184 <X_184>` = :ref:`X_22 <X_22>` of :term:`1st Brocard triangle <1st-brocard-triangle>`
    * :ref:`X_184 <X_184>` = trilinear product of PU(19)
-   * :ref:`X_184 <X_184>` = :term:`trilinear pole <trilinear-pole>` of line X_3049X_39201
+   * :ref:`X_184 <X_184>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_3049 <X_3049>`\ X_39201
    * :ref:`X_184 <X_184>` = {:ref:`X_3 <X_3>`,\ :ref:`X_49 <X_49>`}-harmonic conjugate of :ref:`X_1147 <X_1147>`
    * :ref:`X_184 <X_184>` = :term:`vertex conjugate <vertex-conjugate>` of PU(157) (the polar conjugates of PU(38)
    * :ref:`X_184 <X_184>` = :ref:`X_75 <X_75>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_4 <X_4>`

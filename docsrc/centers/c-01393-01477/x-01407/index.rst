@@ -62,7 +62,7 @@ Notes
 
 .. container:: note-item
 
-   :ref:`X_1407 <X_1407>` is the :term:`vertex conjugate <vertex-conjugate>` of the foci of the inellipse that is the barycentric square of the Gergonne line (with center X_4000 and perspector :ref:`X_279 <X_279>`). (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
+   :ref:`X_1407 <X_1407>` is the :term:`vertex conjugate <vertex-conjugate>` of the foci of the inellipse that is the barycentric square of the Gergonne line (with center :ref:`X_4000 <X_4000>` and perspector :ref:`X_279 <X_279>`). (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
 
 .. toctree::
    :hidden:

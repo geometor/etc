@@ -23,8 +23,9 @@ X_490
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{20, 64} <{ 20, 64 }>`, :g:`{4, 488} <{ 4, 488 }>`
-   * **Related Centers:** :g:`X_20 <X_20>` (:ref:`DE LONGCHAMPS POINT <X_20>`), :g:`X_488 <X_488>` (:ref:`ANTICOMPLEMENT OF X(485) <X_488>`), :g:`X_64 <X_64>` (:ref:`ISOGONAL CONJUGATE OF X(20) <X_64>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`)
+   * **Derived Triangle:** :term:`Anticomplementary Triangle <anticomplementary triangle>` :g:`△K_aK_bK_c << K_a K_b K_c >>` — vertices :g:`K_a <K_a>`, :g:`K_b <K_b>`, :g:`K_c <K_c>` (Formed by lines through A, B, C parallel to opposite sides)
+   * **Central Lines:** :g:`{2, 3070} <{ 2, 3070 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3070 <X_3070>` (:ref:`INTERSECTION OF X <X_3070>`)
 
 .. signature:: center
 
@@ -41,7 +42,7 @@ X_490
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X_490 <X_490>` = :term:`anticomplement <anticomplement>` of X_3070
+   * :ref:`X_490 <X_490>` = :term:`anticomplement <anticomplement>` of :ref:`X_3070 <X_3070>`
    * :ref:`X_490 <X_490>` = cevapoint of :ref:`X_20 <X_20>` and :ref:`X_488 <X_488>`
    * :ref:`X_490 <X_490>` = :term:`crosspoint <crosspoint>` of :ref:`X_20 <X_20>` and :ref:`X_488 <X_488>` wrt both the excentral and :term:`anticomplementary triangles <anticomplementary-triangle>`
 

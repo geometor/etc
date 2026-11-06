@@ -45,7 +45,7 @@ X_1475
    * :ref:`X_1475 <X_1475>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`57 <X_57>`, :ref:`1418 <X_1418>`), (:ref:`692 <X_692>`, :ref:`649 <X_649>`), (:ref:`934 <X_934>`, :ref:`663 <X_663>`)
    * :ref:`X_1475 <X_1475>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`57 <X_57>`), (:ref:`354 <X_354>`, :ref:`1418 <X_1418>`)
    * :ref:`X_1475 <X_1475>` = crosssum of :ref:`X_2 <X_2>` and :ref:`X_9 <X_9>`
-   * :ref:`X_1475 <X_1475>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_522 <X_522>`\ X_3935
+   * :ref:`X_1475 <X_1475>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_522 <X_522>`\ \ :ref:`X_3935 <X_3935>`
    * :ref:`X_1475 <X_1475>` = polar conjugate of :term:`isotomic conjugate <isotomic-conjugate>` of X_22053
 
 .. toctree::
