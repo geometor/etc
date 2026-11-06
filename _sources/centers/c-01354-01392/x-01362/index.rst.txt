@@ -23,8 +23,9 @@ X_1362
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{43, 57} <{ 43, 57 }>`, :g:`{12, 116} <{ 12, 116 }>`
-   * **Related Centers:** :g:`X_43 <X_43>` (:ref:`-CEVA CONJUGATE OF X(1) <X_43>`), :g:`X_57 <X_57>` (:ref:`ISOGONAL CONJUGATE OF X(9) <X_57>`), :g:`X_12 <X_12>` (:ref:`{X <X_12>`), :g:`X_116 <X_116>` (:ref:`MIDPOINT OF X(4) AND X(103) <X_116>`)
+   * **Derived Triangle:** :term:`Anticomplementary Triangle <anticomplementary triangle>` :g:`△K_aK_bK_c << K_a K_b K_c >>` — vertices :g:`K_a <K_a>`, :g:`K_b <K_b>`, :g:`K_c <K_c>` (Formed by lines through A, B, C parallel to opposite sides)
+   * **Central Lines:** :g:`{2, 3041} <{ 2, 3041 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3041 <X_3041>` (:ref:`COMPLEMENT OF X(1362) <X_3041>`)
 
 .. signature:: center
 
@@ -45,7 +46,7 @@ X_1362
 .. collapse:: Functional Relations
    :badge: 9 relations
 
-   * :ref:`X_1362 <X_1362>` = :term:`anticomplement <anticomplement>` of X_3041
+   * :ref:`X_1362 <X_1362>` = :term:`anticomplement <anticomplement>` of :ref:`X_3041 <X_3041>`
    * :ref:`X_1362 <X_1362>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`7 <X_7>`, :ref:`241 <X_241>`), (:ref:`651 <X_651>`, :ref:`665 <X_665>`)
    * :ref:`X_1362 <X_1362>` = crosspoint of :ref:`X_7 <X_7>` and :ref:`X_241 <X_241>`
    * :ref:`X_1362 <X_1362>` = :term:`crosssum <crosssum>` of X_i and X_j for (i,j) = (11,885), (55,294)

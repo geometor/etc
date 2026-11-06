@@ -23,7 +23,8 @@ X_2984
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Related Centers:** :g:`X_2485 <X_2485>` (:ref:`RADICAL CENTER OF {CIRCUMCIRCLE, 1ST LEMOINE CIRCLE, NINE-POINT CIRCLE} <X_2485>`), :g:`X_933 <X_933>` (:ref:`-CROSS CONJUGATE OF X(250) <X_933>`)
+   * **Central Lines:** :g:`{97, 3199} <{ 97, 3199 }>`
+   * **Related Centers:** :g:`X_2485 <X_2485>` (:ref:`RADICAL CENTER OF {CIRCUMCIRCLE, 1ST LEMOINE CIRCLE, NINE-POINT CIRCLE} <X_2485>`), :g:`X_933 <X_933>` (:ref:`-CROSS CONJUGATE OF X(250) <X_933>`), :g:`X_97 <X_97>` (:ref:`ISOGONAL CONJUGATE OF X(53) <X_97>`), :g:`X_3199 <X_3199>` (:ref:`-CEVA CONJUGATE OF X(51) <X_3199>`)
 
 .. signature:: center
 
@@ -35,7 +36,7 @@ X_2984
    :badge: 1 line
    :class: line-catalog
 
-   {:ref:`97 <X_97>`, 3199}
+   {:ref:`97 <X_97>`, :ref:`3199 <X_3199>`}
 
 .. collapse:: Functional Relations
    :badge: 2 relations

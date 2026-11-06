@@ -29,7 +29,7 @@ X_1364
 .. signature:: center
 
    | **Trilinears:** :math:`\csc A \tan(A/2) / (\sec B - \sec C) : :`
-   | **Search Value (6, 9, 13):** :math:`-0.048462889186`
+   | **Search Value (6, 9, 13):** :math:`3.199467879717`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
@@ -50,7 +50,7 @@ X_1364
    :badge: 12 relations
 
    * :ref:`X_1364 <X_1364>` = reflection of :ref:`X_1361 <X_1361>` in :ref:`X_1 <X_1>`
-   * :ref:`X_1364 <X_1364>` = :term:`anticomplement <anticomplement>` of X_3042
+   * :ref:`X_1364 <X_1364>` = :term:`anticomplement <anticomplement>` of :ref:`X_3042 <X_3042>`
    * :ref:`X_1364 <X_1364>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`7 <X_7>`, :ref:`905 <X_905>`), (:ref:`189 <X_189>`, :ref:`650 <X_650>`), (:ref:`222 <X_222>`, :ref:`652 <X_652>`), (:ref:`255 <X_255>`, :ref:`520 <X_520>`)
    * :ref:`X_1364 <X_1364>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`521 <X_521>`), (:ref:`7 <X_7>`, :ref:`905 <X_905>`)
    * :ref:`X_1364 <X_1364>` = :term:`crosssum <crosssum>` of :ref:`X_4 <X_4>` and :ref:`X_108 <X_108>`

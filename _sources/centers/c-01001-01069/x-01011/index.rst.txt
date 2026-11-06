@@ -42,7 +42,7 @@ X_1011
    :badge: 4 relations
 
    * :ref:`X_1011 <X_1011>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1246 <X_1246>`
-   * :ref:`X_1011 <X_1011>` = inverse-in-orthocentroidal circle of X_3136
+   * :ref:`X_1011 <X_1011>` = inverse-in-orthocentroidal circle of :ref:`X_3136 <X_3136>`
    * :ref:`X_1011 <X_1011>` = :term:`crosssum <crosssum>` of :ref:`X_834 <X_834>` and :ref:`X_1086 <X_1086>`
    * :ref:`X_1011 <X_1011>` = crossdifference of every pair of points on line :ref:`X_514 <X_514>`\ \ :ref:`X_647 <X_647>`
 

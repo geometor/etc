@@ -50,7 +50,7 @@ X_1477
    * :ref:`X_1477 <X_1477>` = Ψ(:ref:`X_190 <X_190>`, :ref:`X_7 <X_7>`)
    * :ref:`X_1477 <X_1477>` = :ref:`X_672 <X_672>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_57 <X_57>`
    * :ref:`X_1477 <X_1477>` = :term:`cevapoint <cevapoint>` of :ref:`X_56 <X_56>` and :ref:`X_1458 <X_1458>`
-   * :ref:`X_1477 <X_1477>` = trilinear product of circumcircle intercepts of line :ref:`X_1 <X_1>`\ X_3309
+   * :ref:`X_1477 <X_1477>` = trilinear product of circumcircle intercepts of line :ref:`X_1 <X_1>`\ \ :ref:`X_3309 <X_3309>`
 
 .. toctree::
    :hidden:

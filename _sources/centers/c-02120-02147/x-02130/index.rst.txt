@@ -23,8 +23,8 @@ X_2130
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{4, 1073} <{ 4, 1073 }>`, :g:`{20, 2131} <{ 20, 2131 }>`
-   * **Related Centers:** :g:`X_2131 <X_2131>` (:ref:`ISOGONAL CONJUGATE OF X(2130) <X_2131>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_1073 <X_1073>` (:ref:`-CROSS CONJUGATE OF X(3) <X_1073>`), :g:`X_20 <X_20>` (:ref:`DE LONGCHAMPS POINT <X_20>`)
+   * **Central Lines:** :g:`{3348, 3} <{ 3348, 3 }>`
+   * **Related Centers:** :g:`X_3348 <X_3348>` (:ref:`ISOGONAL CONJUGATE OF X(3183) <X_3348>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`)
 
 .. signature:: center
 
@@ -40,12 +40,12 @@ X_2130
    :badge: 7 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, 3347}, {:ref:`3 <X_3>`, 3348}, {:ref:`4 <X_4>`, :ref:`1073 <X_1073>`}, {:ref:`20 <X_20>`, :ref:`2131 <X_2131>`}, {:ref:`40 <X_40>`, 3354}, {:ref:`84 <X_84>`, 3345}, {:ref:`1490 <X_1490>`, 3473}
+   {:ref:`1 <X_1>`, :ref:`3347 <X_3347>`}, {:ref:`3 <X_3>`, :ref:`3348 <X_3348>`}, {:ref:`4 <X_4>`, :ref:`1073 <X_1073>`}, {:ref:`20 <X_20>`, :ref:`2131 <X_2131>`}, {:ref:`40 <X_40>`, :ref:`3354 <X_3354>`}, {:ref:`84 <X_84>`, :ref:`3345 <X_3345>`}, {:ref:`1490 <X_1490>`, :ref:`3473 <X_3473>`}
 
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X_2130 <X_2130>` = reflection of X_3348 in :ref:`X_3 <X_3>`
+   * :ref:`X_2130 <X_2130>` = reflection of :ref:`X_3348 <X_3348>` in :ref:`X_3 <X_3>`
    * :ref:`X_2130 <X_2130>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2131 <X_2131>`
    * :ref:`X_2130 <X_2130>` = :ref:`X_20 <X_20>`-Ceva conjugate of :ref:`X_64 <X_64>`
 

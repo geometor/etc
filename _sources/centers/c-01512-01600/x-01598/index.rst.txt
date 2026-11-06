@@ -43,7 +43,7 @@ X_1598
    * :ref:`X_1598 <X_1598>` = circumcircle-inverse of X_37935
    * :ref:`X_1598 <X_1598>` = orthocentroidal-circle-inverse of :ref:`X_1595 <X_1595>`
    * :ref:`X_1598 <X_1598>` = {:ref:`X_3 <X_3>`,\ :ref:`X_4 <X_4>`}-harmonic conjugate of :ref:`X_1597 <X_1597>`
-   * :ref:`X_1598 <X_1598>` = X_3333-of-orthic-triangle if :g:`ABC << A B C >>` is acute
+   * :ref:`X_1598 <X_1598>` = :ref:`X_3333 <X_3333>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X_1598 <X_1598>` = homothetic center of 3rd :term:`pedal triangle <pedal-triangle>` of :ref:`X_4 <X_4>` and 3rd :term:`antipedal triangle <antipedal-triangle>` of :ref:`X_3 <X_3>`
 
 Notes

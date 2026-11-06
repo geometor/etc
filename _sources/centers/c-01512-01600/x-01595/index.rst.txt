@@ -43,7 +43,7 @@ X_1595
    * :ref:`X_1595 <X_1595>` = midpoint of :ref:`X_4 <X_4>` and :ref:`X_1593 <X_1593>`
    * :ref:`X_1595 <X_1595>` = inverse-in-orthocentroidal-circle of :ref:`X_1598 <X_1598>`
    * :ref:`X_1595 <X_1595>` = {:ref:`X_4 <X_4>`,\ :ref:`X_5 <X_5>`}-harmonic conjugate of :ref:`X_1596 <X_1596>`
-   * :ref:`X_1595 <X_1595>` = X_3295-of-orthic-triangle if :g:`ABC << A B C >>` is acute
+   * :ref:`X_1595 <X_1595>` = :ref:`X_3295 <X_3295>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
 
 Notes
 -----

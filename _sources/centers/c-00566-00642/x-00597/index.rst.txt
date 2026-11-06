@@ -52,7 +52,7 @@ X_597
    * :ref:`X_597 <X_597>` = centroid of pedal triangle of :ref:`X_182 <X_182>`
    * :ref:`X_597 <X_597>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_512 <X_512>`\ X_5104
    * :ref:`X_597 <X_597>` = centroid of set consisting of the interiors (with or without boundaries) of the power circles
-   * :ref:`X_597 <X_597>` = {:ref:`X_395 <X_395>`,\ :ref:`X_396 <X_396>`}-harmonic conjugate of X_3815
+   * :ref:`X_597 <X_597>` = {:ref:`X_395 <X_395>`,\ :ref:`X_396 <X_396>`}-harmonic conjugate of :ref:`X_3815 <X_3815>`
    * :ref:`X_597 <X_597>` = harmonic center of circles O(13,15) and O(14,16)
    * :ref:`X_597 <X_597>` = center of Lemoine ellipse
    * :ref:`X_597 <X_597>` = :ref:`X_5 <X_5>`-of-anti-Artzt-triangle

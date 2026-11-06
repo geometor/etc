@@ -54,7 +54,7 @@ X_321
    * :ref:`X_321 <X_321>` = reflection of :ref:`X_42 <X_42>` in :ref:`X_1215 <X_1215>`
    * :ref:`X_321 <X_321>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1333 <X_1333>`
    * :ref:`X_321 <X_321>` = isotomic conjugate of :ref:`X_81 <X_81>`
-   * :ref:`X_321 <X_321>` = :term:`anticomplement <anticomplement>` of X_3666
+   * :ref:`X_321 <X_321>` = :term:`anticomplement <anticomplement>` of :ref:`X_3666 <X_3666>`
    * :ref:`X_321 <X_321>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for (i,j) = (75,10), (76,313), (312,306)
    * :ref:`X_321 <X_321>` = :term:`cevapoint <cevapoint>` of :ref:`X_37 <X_37>` and :ref:`X_72 <X_72>`
    * :ref:`X_321 <X_321>` = :ref:`X_442 <X_442>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_264 <X_264>`

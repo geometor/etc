@@ -43,7 +43,7 @@ X_2774
    * :ref:`X_2774 <X_2774>` = isogonal conjugate of :ref:`X_2690 <X_2690>`
    * :ref:`X_2774 <X_2774>` = :ref:`X_514 <X_514>`-of-orthocentroidal-triangle
    * :ref:`X_2774 <X_2774>` = :ref:`X_514 <X_514>`-of-:ref:`X_4 <X_4>`-Brocard-triangle
-   * :ref:`X_2774 <X_2774>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_6 <X_6>`\ X_3120
+   * :ref:`X_2774 <X_2774>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_6 <X_6>`\ \ :ref:`X_3120 <X_3120>`
 
 .. toctree::
    :hidden:

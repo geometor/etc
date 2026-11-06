@@ -45,7 +45,7 @@ X_2991
    :badge: 6 relations
 
    * :ref:`X_2991 <X_2991>` = reflection of :ref:`X_1332 <X_1332>` in :ref:`X_6 <X_6>`
-   * :ref:`X_2991 <X_2991>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3290
+   * :ref:`X_2991 <X_2991>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3290 <X_3290>`
    * :ref:`X_2991 <X_2991>` = :term:`cevapoint <cevapoint>` of :ref:`X_6 <X_6>` and :ref:`X_518 <X_518>`
    * :ref:`X_2991 <X_2991>` = :ref:`X_665 <X_665>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_100 <X_100>`
    * :ref:`X_2991 <X_2991>` = MacBeath circumconic antipode of :ref:`X_1332 <X_1332>`

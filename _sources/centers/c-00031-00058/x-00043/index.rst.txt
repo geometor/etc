@@ -53,7 +53,7 @@ X_43
    * :ref:`X_43 <X_43>` = reflection of :ref:`X_1 <X_1>` in :ref:`X_995 <X_995>`
    * :ref:`X_43 <X_43>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_87 <X_87>`
    * :ref:`X_43 <X_43>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_6384
-   * :ref:`X_43 <X_43>` = :term:`anticomplement <anticomplement>` of X_3840
+   * :ref:`X_43 <X_43>` = :term:`anticomplement <anticomplement>` of :ref:`X_3840 <X_3840>`
    * :ref:`X_43 <X_43>` = :ref:`X_6 <X_6>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_1 <X_1>`
    * :ref:`X_43 <X_43>` = :ref:`X_192 <X_192>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_1 <X_1>`
    * :ref:`X_43 <X_43>` = :term:`crosssum <crosssum>` of :ref:`X_2 <X_2>` and :ref:`X_330 <X_330>`
@@ -66,7 +66,7 @@ X_43
    * :ref:`X_43 <X_43>` = perspector of Gemini triangle 5 and cross-triangle of Gemini triangles 3 and 5
    * :ref:`X_43 <X_43>` = X_i-:term:`aleph conjugate <aleph-conjugate>` of X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`9 <X_9>`), (:ref:`6 <X_6>`, :ref:`43 <X_43>`), (:ref:`55 <X_55>`, :ref:`170 <X_170>`), (:ref:`100 <X_100>`, :ref:`1018 <X_1018>`), (:ref:`174 <X_174>`, :ref:`169 <X_169>`), (:ref:`259 <X_259>`, :ref:`165 <X_165>`), (:ref:`365 <X_365>`, :ref:`1 <X_1>`), (:ref:`366 <X_366>`, :ref:`63 <X_63>`), (:ref:`507 <X_507>`, :ref:`362 <X_362>`), (:ref:`509 <X_509>`, :ref:`57 <X_57>`)
    * :ref:`X_43 <X_43>` = :ref:`X_660 <X_660>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X_43 <X_43>`
-   * :ref:`X_43 <X_43>` = {:ref:`X_2 <X_2>`,\ :ref:`X_8 <X_8>`}-harmonic conjugate of X_3741
+   * :ref:`X_43 <X_43>` = {:ref:`X_2 <X_2>`,\ :ref:`X_8 <X_8>`}-harmonic conjugate of :ref:`X_3741 <X_3741>`
 
 Notes
 -----

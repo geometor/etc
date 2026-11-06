@@ -23,8 +23,8 @@ X_2131
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{20, 2130} <{ 20, 2130 }>`
-   * **Related Centers:** :g:`X_2130 <X_2130>` (:ref:`EIGENTRANSFORM OF X(20) <X_2130>`), :g:`X_20 <X_20>` (:ref:`DE LONGCHAMPS POINT <X_20>`)
+   * **Central Lines:** :g:`{3355, 3} <{ 3355, 3 }>`
+   * **Related Centers:** :g:`X_3355 <X_3355>` (:ref:`REFLECTION OF X(2131) IN X(3) <X_3355>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`)
 
 .. signature:: center
 
@@ -40,12 +40,12 @@ X_2131
    :badge: 5 lines
    :class: line-catalog
 
-   {:ref:`3 <X_3>`, 3355}, {:ref:`20 <X_20>`, :ref:`2130 <X_2130>`}, {:ref:`40 <X_40>`, 3472}, {:ref:`1490 <X_1490>`, 3353}, {:ref:`1498 <X_1498>`, 3183}
+   {:ref:`3 <X_3>`, :ref:`3355 <X_3355>`}, {:ref:`20 <X_20>`, :ref:`2130 <X_2130>`}, {:ref:`40 <X_40>`, :ref:`3472 <X_3472>`}, {:ref:`1490 <X_1490>`, :ref:`3353 <X_3353>`}, {:ref:`1498 <X_1498>`, :ref:`3183 <X_3183>`}
 
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X_2131 <X_2131>` = reflection of X_3355 in :ref:`X_3 <X_3>`
+   * :ref:`X_2131 <X_2131>` = reflection of :ref:`X_3355 <X_3355>` in :ref:`X_3 <X_3>`
    * :ref:`X_2131 <X_2131>` = isogonal conjugate of :ref:`X_2130 <X_2130>`
    * :ref:`X_2131 <X_2131>` = :ref:`X_64 <X_64>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_20 <X_20>`
 

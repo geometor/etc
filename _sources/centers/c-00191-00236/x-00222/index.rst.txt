@@ -42,7 +42,7 @@ X_222
    :badge: 23 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, :ref:`84 <X_84>`}, {:ref:`2 <X_2>`, :ref:`651 <X_651>`}, {:ref:`3 <X_3>`, :ref:`73 <X_73>`}, {:ref:`6 <X_6>`, :ref:`57 <X_57>`}, {:ref:`7 <X_7>`, :ref:`27 <X_27>`}, {:ref:`33 <X_33>`, :ref:`971 <X_971>`}, {:ref:`34 <X_34>`, :ref:`942 <X_942>`}, {:ref:`46 <X_46>`, :ref:`227 <X_227>`}, {:ref:`55 <X_55>`, :ref:`103 <X_103>`}, {:ref:`56 <X_56>`, :ref:`58 <X_58>`}, {:ref:`63 <X_63>`, :ref:`77 <X_77>`}, {:ref:`72 <X_72>`, :ref:`1038 <X_1038>`}, {:ref:`171 <X_171>`, :ref:`611 <X_611>`}, {:ref:`189 <X_189>`, :ref:`281 <X_281>`}, {:ref:`218 <X_218>`, :ref:`241 <X_241>`}, {:ref:`226 <X_226>`, :ref:`478 <X_478>`}, {:ref:`268 <X_268>`, :ref:`1073 <X_1073>`}, {:ref:`581 <X_581>`, :ref:`1035 <X_1035>`}, {:ref:`601 <X_601>`, :ref:`1066 <X_1066>`}, {:ref:`613 <X_613>`, :ref:`982 <X_982>`}, {:ref:`912 <X_912>`, :ref:`1060 <X_1060>`}, {:ref:`1355 <X_1355>`, :ref:`1363 <X_1363>`}, {:ref:`1993 <X_1993>`, 3218}
+   {:ref:`1 <X_1>`, :ref:`84 <X_84>`}, {:ref:`2 <X_2>`, :ref:`651 <X_651>`}, {:ref:`3 <X_3>`, :ref:`73 <X_73>`}, {:ref:`6 <X_6>`, :ref:`57 <X_57>`}, {:ref:`7 <X_7>`, :ref:`27 <X_27>`}, {:ref:`33 <X_33>`, :ref:`971 <X_971>`}, {:ref:`34 <X_34>`, :ref:`942 <X_942>`}, {:ref:`46 <X_46>`, :ref:`227 <X_227>`}, {:ref:`55 <X_55>`, :ref:`103 <X_103>`}, {:ref:`56 <X_56>`, :ref:`58 <X_58>`}, {:ref:`63 <X_63>`, :ref:`77 <X_77>`}, {:ref:`72 <X_72>`, :ref:`1038 <X_1038>`}, {:ref:`171 <X_171>`, :ref:`611 <X_611>`}, {:ref:`189 <X_189>`, :ref:`281 <X_281>`}, {:ref:`218 <X_218>`, :ref:`241 <X_241>`}, {:ref:`226 <X_226>`, :ref:`478 <X_478>`}, {:ref:`268 <X_268>`, :ref:`1073 <X_1073>`}, {:ref:`581 <X_581>`, :ref:`1035 <X_1035>`}, {:ref:`601 <X_601>`, :ref:`1066 <X_1066>`}, {:ref:`613 <X_613>`, :ref:`982 <X_982>`}, {:ref:`912 <X_912>`, :ref:`1060 <X_1060>`}, {:ref:`1355 <X_1355>`, :ref:`1363 <X_1363>`}, {:ref:`1993 <X_1993>`, :ref:`3218 <X_3218>`}
 
 .. collapse:: Functional Relations
    :badge: 16 relations
@@ -54,9 +54,9 @@ X_222
    * :ref:`X_222 <X_222>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`48 <X_48>`, :ref:`3 <X_3>`), (:ref:`73 <X_73>`, :ref:`77 <X_77>`)
    * :ref:`X_222 <X_222>` = :term:`crosspoint <crosspoint>` of :ref:`X_7 <X_7>` and :ref:`X_348 <X_348>`
    * :ref:`X_222 <X_222>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`55 <X_55>`, :ref:`607 <X_607>`), (:ref:`650 <X_650>`, :ref:`1146 <X_1146>`)
-   * :ref:`X_222 <X_222>` = :term:`crossdifference <crossdifference>` of every pair of points on line X_3064X_3700
+   * :ref:`X_222 <X_222>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_3064 <X_3064>`\ \ :ref:`X_3700 <X_3700>`
    * :ref:`X_222 <X_222>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_1459 <X_1459>`\ \ :ref:`X_1946 <X_1946>`
-   * :ref:`X_222 <X_222>` = Danneels point of :ref:`X_651 <X_651>` (see notes at X_3078)
+   * :ref:`X_222 <X_222>` = Danneels point of :ref:`X_651 <X_651>` (see notes at :ref:`X_3078 <X_3078>`)
    * :ref:`X_222 <X_222>` = :ref:`X_4 <X_4>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_9 <X_9>`
    * :ref:`X_222 <X_222>` = intouch-isogonal conjugate of X_12723
    * :ref:`X_222 <X_222>` = perspector of :term:`intouch triangle <intouch-triangle>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of :term:`extouch triangle <extouch-triangle>`

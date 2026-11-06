@@ -23,8 +23,8 @@ X_424
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`)
-   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`)
+   * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`), :g:`{2501, 3700} <{ 2501, 3700 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_2501 <X_2501>` (:ref:`RADICAL CENTER OF {CIRCUMCIRCLE, NINE-POINT CIRCLE, TAYLOR CIRCLE} <X_2501>`), :g:`X_3700 <X_3700>` (:ref:`com(EXTOUCH TRIANGLE) <X_3700>`)
 
 .. signature:: center
 
@@ -41,7 +41,7 @@ X_424
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`2501 <X_2501>`, 3700}
+   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`2501 <X_2501>`, :ref:`3700 <X_3700>`}
 
 .. collapse:: Functional Relations
    :badge: 8 relations

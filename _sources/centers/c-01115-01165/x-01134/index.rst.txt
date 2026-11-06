@@ -23,8 +23,8 @@ X_1134
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{356, 1135} <{ 356, 1135 }>`
-   * **Related Centers:** :g:`X_1135 <X_1135>` (:ref:`4th MORLEY-TAYLOR-MARR CENTER <X_1135>`), :g:`X_356 <X_356>` (:ref:`MORLEY CENTER <X_356>`)
+   * **Central Lines:** :g:`{356, 1135} <{ 356, 1135 }>`, :g:`{357, 3275} <{ 357, 3275 }>`
+   * **Related Centers:** :g:`X_1135 <X_1135>` (:ref:`4th MORLEY-TAYLOR-MARR CENTER <X_1135>`), :g:`X_356 <X_356>` (:ref:`MORLEY CENTER <X_356>`), :g:`X_357 <X_357>` (:ref:`1st MORLEY-TAYLOR-MARR CENTER <X_357>`), :g:`X_3275 <X_3275>` (:ref:`PERSPECTOR OF TRIANGLES S1S2S3 AND J1J2J3 <X_3275>`)
 
 .. signature:: center
 
@@ -40,7 +40,7 @@ X_1134
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`356 <X_356>`, :ref:`1135 <X_1135>`}, {:ref:`357 <X_357>`, 3275}
+   {:ref:`356 <X_356>`, :ref:`1135 <X_1135>`}, {:ref:`357 <X_357>`, :ref:`3275 <X_3275>`}
 
 .. collapse:: Functional Relations
    :badge: 3 relations

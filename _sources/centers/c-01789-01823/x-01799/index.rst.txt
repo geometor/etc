@@ -52,7 +52,7 @@ X_1799
    * :ref:`X_1799 <X_1799>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`22 <X_22>`), (:ref:`3 <X_3>`, :ref:`69 <X_69>`)
    * :ref:`X_1799 <X_1799>` = :term:`complement <complement>` of X_8878
    * :ref:`X_1799 <X_1799>` = :term:`crosspoint <crosspoint>` of :ref:`X_2 <X_2>` and :ref:`X_22 <X_22>` wrt both the anticomplementary and :term:`tangential triangles <tangential-triangle>`
-   * :ref:`X_1799 <X_1799>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of X_3051
+   * :ref:`X_1799 <X_1799>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_3051 <X_3051>`
    * :ref:`X_1799 <X_1799>` = perspector of :term:`circummedial triangle <circummedial-triangle>` and cross-triangle of :g:`ABC << A B C >>` and circummedial triangle
 
 Notes

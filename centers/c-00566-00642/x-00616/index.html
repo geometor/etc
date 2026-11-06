@@ -40,6 +40,9 @@
           <a href="../../index.html" class="is-active" aria-selected="true" >Encyclopedia of Triangle Centers</a>
         </li>
         <li>
+          <a href="../../../preambles.html"  >Guide to Preambles in ETC</a>
+        </li>
+        <li>
           <a href="../../../glossary.html"  >Glossary</a>
         </li>
         <li>
@@ -137,7 +140,7 @@
             <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="kimberling" title="Kimberling Obtuse Scalene Triangle (6, 9, 13)" data-caption-html="&lt;strong&gt;X&lt;sub&gt;616&lt;/sub&gt; — ANTICOMPLEMENT OF X&lt;sub&gt;13&lt;/sub&gt;&lt;/strong&gt; constructed on Kimberling&#x27;s canonical uniqueness test triangle &lt;code&gt;(a, b, c) = (6, 9, 13)&lt;/code&gt; (obtuse scalene, unit baseline &lt;span class=&quot;geom-ref geom-segment&quot; data-ref=&quot;[ A B ]&quot;&gt;AB&lt;/span&gt; = &lt;code&gt;1&lt;/code&gt;).">Kimberling</button>
           </div>
         <div class="etc-tab-pane active" data-tab-pane="acute">
-        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.607755 -0.915000 2.440000 1.830000" data-initial-viewbox="-0.607755 -0.915000 2.440000 1.830000" preserveAspectRatio="xMidYMid meet">
+        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.607755 -0.915000 2.440000 1.830000" data-initial-viewbox="-0.607755 -0.915000 2.440000 1.830000" data-target-r-px="10.5" preserveAspectRatio="xMidYMid meet">
           <style>
         :root {
             --background-color: #121212;
@@ -359,6 +362,14 @@
         #labels text.hover-label {
             fill: var(--select-color) !important;
             font-weight: 700;
+        }
+
+        #labels text.dense-label {
+            display: none;
+        }
+
+        #labels text.dense-label.hover-label {
+            display: block !important;
         }
 
         .etc-svg-stage {
@@ -565,10 +576,11 @@
                 const vb = getViewBox();
                 const unitsPerPx = vb[2] / widthPx;
 
+                const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
                 pointEls.forEach(c => {
                     const isTarget = c.classList.contains('target') || c.classList.contains('selected');
                     const isGuide = c.classList.contains('guide');
-                    const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);
+                    const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
                     c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
                 });
 
@@ -954,6 +966,18 @@
                 clearHover();
             });
 
+            svg.addEventListener('click', (event) => {
+                if (didDrag) return;
+                const pt = event.target.closest('circle[data-id]');
+                if (!pt) return;
+                const pid = pt.getAttribute('data-id') || '';
+                const m = pid.match(/^X_(\d+)$/);
+                if (m && typeof window !== 'undefined' && window.location && window.location.pathname.includes('/c-') && !window.location.pathname.includes('/x-')) {
+                    const slug = 'x-' + m[1].padStart(5, '0');
+                    window.location.href = `${slug}/index.html`;
+                }
+            });
+
             svg.addEventListener('dblclick', (event) => {
                 event.preventDefault();
                 resetView();
@@ -968,7 +992,7 @@
         </svg>
         </div>
         <div class="etc-tab-pane" data-tab-pane="right" style="display: none;">
-        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.580000 -0.915000 2.440000 1.830000" data-initial-viewbox="-0.580000 -0.915000 2.440000 1.830000" preserveAspectRatio="xMidYMid meet">
+        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.580000 -0.915000 2.440000 1.830000" data-initial-viewbox="-0.580000 -0.915000 2.440000 1.830000" data-target-r-px="10.5" preserveAspectRatio="xMidYMid meet">
           <style>
         :root {
             --background-color: #121212;
@@ -1190,6 +1214,14 @@
         #labels text.hover-label {
             fill: var(--select-color) !important;
             font-weight: 700;
+        }
+
+        #labels text.dense-label {
+            display: none;
+        }
+
+        #labels text.dense-label.hover-label {
+            display: block !important;
         }
 
         .etc-svg-stage {
@@ -1396,10 +1428,11 @@
                 const vb = getViewBox();
                 const unitsPerPx = vb[2] / widthPx;
 
+                const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
                 pointEls.forEach(c => {
                     const isTarget = c.classList.contains('target') || c.classList.contains('selected');
                     const isGuide = c.classList.contains('guide');
-                    const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);
+                    const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
                     c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
                 });
 
@@ -1785,6 +1818,18 @@
                 clearHover();
             });
 
+            svg.addEventListener('click', (event) => {
+                if (didDrag) return;
+                const pt = event.target.closest('circle[data-id]');
+                if (!pt) return;
+                const pid = pt.getAttribute('data-id') || '';
+                const m = pid.match(/^X_(\d+)$/);
+                if (m && typeof window !== 'undefined' && window.location && window.location.pathname.includes('/c-') && !window.location.pathname.includes('/x-')) {
+                    const slug = 'x-' + m[1].padStart(5, '0');
+                    window.location.href = `${slug}/index.html`;
+                }
+            });
+
             svg.addEventListener('dblclick', (event) => {
                 event.preventDefault();
                 resetView();
@@ -1799,7 +1844,7 @@
         </svg>
         </div>
         <div class="etc-tab-pane" data-tab-pane="kepler" style="display: none;">
-        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.601966 -0.915000 2.440000 1.830000" data-initial-viewbox="-0.601966 -0.915000 2.440000 1.830000" preserveAspectRatio="xMidYMid meet">
+        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.601966 -0.915000 2.440000 1.830000" data-initial-viewbox="-0.601966 -0.915000 2.440000 1.830000" data-target-r-px="10.5" preserveAspectRatio="xMidYMid meet">
           <style>
         :root {
             --background-color: #121212;
@@ -2021,6 +2066,14 @@
         #labels text.hover-label {
             fill: var(--select-color) !important;
             font-weight: 700;
+        }
+
+        #labels text.dense-label {
+            display: none;
+        }
+
+        #labels text.dense-label.hover-label {
+            display: block !important;
         }
 
         .etc-svg-stage {
@@ -2227,10 +2280,11 @@
                 const vb = getViewBox();
                 const unitsPerPx = vb[2] / widthPx;
 
+                const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
                 pointEls.forEach(c => {
                     const isTarget = c.classList.contains('target') || c.classList.contains('selected');
                     const isGuide = c.classList.contains('guide');
-                    const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);
+                    const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
                     c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
                 });
 
@@ -2616,6 +2670,18 @@
                 clearHover();
             });
 
+            svg.addEventListener('click', (event) => {
+                if (didDrag) return;
+                const pt = event.target.closest('circle[data-id]');
+                if (!pt) return;
+                const pid = pt.getAttribute('data-id') || '';
+                const m = pid.match(/^X_(\d+)$/);
+                if (m && typeof window !== 'undefined' && window.location && window.location.pathname.includes('/c-') && !window.location.pathname.includes('/x-')) {
+                    const slug = 'x-' + m[1].padStart(5, '0');
+                    window.location.href = `${slug}/index.html`;
+                }
+            });
+
             svg.addEventListener('dblclick', (event) => {
                 event.preventDefault();
                 resetView();
@@ -2630,7 +2696,7 @@
         </svg>
         </div>
         <div class="etc-tab-pane" data-tab-pane="kimberling" style="display: none;">
-        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.586864 -0.915000 2.440000 1.830000" data-initial-viewbox="-0.586864 -0.915000 2.440000 1.830000" preserveAspectRatio="xMidYMid meet">
+        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.586864 -0.915000 2.440000 1.830000" data-initial-viewbox="-0.586864 -0.915000 2.440000 1.830000" data-target-r-px="10.5" preserveAspectRatio="xMidYMid meet">
           <style>
         :root {
             --background-color: #121212;
@@ -2854,6 +2920,14 @@
             font-weight: 700;
         }
 
+        #labels text.dense-label {
+            display: none;
+        }
+
+        #labels text.dense-label.hover-label {
+            display: block !important;
+        }
+
         .etc-svg-stage {
             position: relative;
             width: 100%;
@@ -3058,10 +3132,11 @@
                 const vb = getViewBox();
                 const unitsPerPx = vb[2] / widthPx;
 
+                const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
                 pointEls.forEach(c => {
                     const isTarget = c.classList.contains('target') || c.classList.contains('selected');
                     const isGuide = c.classList.contains('guide');
-                    const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);
+                    const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
                     c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
                 });
 
@@ -3447,6 +3522,18 @@
                 clearHover();
             });
 
+            svg.addEventListener('click', (event) => {
+                if (didDrag) return;
+                const pt = event.target.closest('circle[data-id]');
+                if (!pt) return;
+                const pid = pt.getAttribute('data-id') || '';
+                const m = pid.match(/^X_(\d+)$/);
+                if (m && typeof window !== 'undefined' && window.location && window.location.pathname.includes('/c-') && !window.location.pathname.includes('/x-')) {
+                    const slug = 'x-' + m[1].padStart(5, '0');
+                    window.location.href = `${slug}/index.html`;
+                }
+            });
+
             svg.addEventListener('dblclick', (event) => {
                 event.preventDefault();
                 resetView();
@@ -3501,7 +3588,7 @@
         <div class="book-collapse-body">
         <ul class="simple">
         <li><p><a class="reference internal" href="#x-616" title="X_616: The midpoint of X_616 and X_617 is the Steiner point, X_99."><span class="std std-ref">X<sub>616</sub></span></a> = reflection of X<sub>i</sub> in X<sub>j</sub> for these (i,j): (<a class="reference internal" href="../../c-00001-00019/x-00013/index.html#x-13" title="X_13 — 1st ISOGONIC CENTER (FERMAT POINT, TORRICELLI POINT)"><span class="std std-ref">13</span></a>, <a class="reference internal" href="../x-00618/index.html#x-618" title="X_618 — COMPLEMENT OF X_13"><span class="std std-ref">618</span></a>), (<a class="reference internal" href="../../c-00140-00190/x-00148/index.html#x-148" title="X_148 — STEINER POINT OF ANTICOMPLEMENTARY TRIANGLE"><span class="std std-ref">148</span></a>, <a class="reference internal" href="../../c-00001-00019/x-00014/index.html#x-14" title="X_14 — 2nd ISOGONIC CENTER"><span class="std std-ref">14</span></a>), (<a class="reference internal" href="../x-00617/index.html#x-617" title="X_617 — ANTICOMPLEMENT OF X_14"><span class="std std-ref">617</span></a>, <a class="reference internal" href="../../c-00098-00112/x-00099/index.html#x-99" title="X_99 — STEINER POINT"><span class="std std-ref">99</span></a>), (<a class="reference internal" href="../x-00621/index.html#x-621" title="X_621 — ANTICOMPLEMENT OF X_15"><span class="std std-ref">621</span></a>, <a class="reference internal" href="../../c-00298-00350/x-00298/index.html#x-298" title="X_298 — ISOTOMIC CONJUGATE OF 1st ISOGONIC CENTER"><span class="std std-ref">298</span></a>)</p></li>
-        <li><p><a class="reference internal" href="#x-616" title="X_616: The midpoint of X_616 and X_617 is the Steiner point, X_99."><span class="std std-ref">X<sub>616</sub></span></a> = <a class="term-ref glossary-term" id="occ-term-isogonal-conjugate-1" href="../../../glossary.html#term-isogonal-conjugate" data-term="isogonal-conjugate" title="isogonal conjugate: Let P = p : q : r be a point not on a sideline of ABC. Let L(A) be the line obtained by reflecting line AP in the internal bisector of angle A. Define L(B) and L(B) cyclically. The lines L(A), L(B), L(C) concur in the isogonal conjugate of P, which has trilinears 1/p : 1/q : 1/r and is denoted by P -1 . See isoconjugate .">isogonal conjugate</a> of X<sub>3440</sub></p></li>
+        <li><p><a class="reference internal" href="#x-616" title="X_616: The midpoint of X_616 and X_617 is the Steiner point, X_99."><span class="std std-ref">X<sub>616</sub></span></a> = <a class="term-ref glossary-term" id="occ-term-isogonal-conjugate-1" href="../../../glossary.html#term-isogonal-conjugate" data-term="isogonal-conjugate" title="isogonal conjugate: Let P = p : q : r be a point not on a sideline of ABC. Let L(A) be the line obtained by reflecting line AP in the internal bisector of angle A. Define L(B) and L(B) cyclically. The lines L(A), L(B), L(C) concur in the isogonal conjugate of P, which has trilinears 1/p : 1/q : 1/r and is denoted by P -1 . See isoconjugate .">isogonal conjugate</a> of <a class="reference internal" href="../../c-03415-03514/x-03440/index.html#x-3440" title="X_3440 — -VERTEX CONJUGATE OF X_15"><span class="std std-ref">X<sub>3440</sub></span></a></p></li>
         <li><p><a class="reference internal" href="#x-616" title="X_616: The midpoint of X_616 and X_617 is the Steiner point, X_99."><span class="std std-ref">X<sub>616</sub></span></a> = <a class="term-ref glossary-term" id="occ-term-anticomplement-1" href="../../../glossary.html#term-anticomplement" data-term="anticomplement" title="anticomplement: If points P and Q are collinear with the centroid G, then P is the anticomplement of Q if G trisects segment PQ and is closer to Q than to P. See also complement . (According to Court, p. 297, the term anticomplementary point dates from 1886.)">anticomplement</a> of <a class="reference internal" href="../../c-00001-00019/x-00013/index.html#x-13" title="X_13 — 1st ISOGONIC CENTER (FERMAT POINT, TORRICELLI POINT)"><span class="std std-ref">X<sub>13</sub></span></a></p></li>
         <li><p><a class="reference internal" href="#x-616" title="X_616: The midpoint of X_616 and X_617 is the Steiner point, X_99."><span class="std std-ref">X<sub>616</sub></span></a> = <a class="term-ref glossary-term" id="occ-term-anticomplementary-conjugate-1" href="../../../glossary.html#term-anticomplementary-conjugate" data-term="anticomplementary-conjugate" title="anticomplementary conjugate: Let P = p : q : r and U = u : v : w be points, neither lying on a sideline of ABC. The P-anticomplementary conjugate of U is the point where Let f(X) be the anticomplement of X, given by and let k be P-isoconjugation. The P-anticomplementary conjugate of U is &quot;what you do to f(X) to make f(k(X)) when f(X) = U.&quot; If P = incenter, then P-anticomplementary...">anticomplementary conjugate</a> of <a class="reference internal" href="../x-00621/index.html#x-621" title="X_621 — ANTICOMPLEMENT OF X_15"><span class="std std-ref">X<sub>621</sub></span></a></p></li>
         <li><p><a class="reference internal" href="#x-616" title="X_616: The midpoint of X_616 and X_617 is the Steiner point, X_99."><span class="std std-ref">X<sub>616</sub></span></a> = <a class="reference internal" href="../../c-00001-00019/x-00013/index.html#x-13" title="X_13 — 1st ISOGONIC CENTER (FERMAT POINT, TORRICELLI POINT)"><span class="std std-ref">X<sub>13</sub></span></a>-of-anticomplementary-triangle</p></li>

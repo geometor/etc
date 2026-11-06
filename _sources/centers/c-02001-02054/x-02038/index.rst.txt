@@ -30,7 +30,7 @@ X_2038
 
    | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = e \cos(A + 2 arctan(r/s)) + \cos(A + \omega )`,
    | **Barycentrics:** :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
-   | **Search Value (6, 9, 13):** :math:`51.314204071794`
+   | **Search Value (6, 9, 13):** :math:`51.314204071793`
 
 .. collapse:: Incident Central Lines
    :badge: 3 lines

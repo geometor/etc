@@ -48,7 +48,7 @@ X_1112
    * :ref:`X_1112 <X_1112>` = reflection of :ref:`X_974 <X_974>` in :ref:`X_389 <X_389>`
    * :ref:`X_1112 <X_1112>` = crosspoint of :ref:`X_4 <X_4>` and :ref:`X_250 <X_250>`
    * :ref:`X_1112 <X_1112>` = :term:`crosssum <crosssum>` of :ref:`X_3 <X_3>` and :ref:`X_125 <X_125>`
-   * :ref:`X_1112 <X_1112>` = inverse-in-polar-circle of X_3448
+   * :ref:`X_1112 <X_1112>` = inverse-in-polar-circle of :ref:`X_3448 <X_3448>`
    * :ref:`X_1112 <X_1112>` = polar conjugate of :term:`isotomic conjugate <isotomic-conjugate>` of X_34990
    * :ref:`X_1112 <X_1112>` = inverse-in-orthosymmedial-circle of :ref:`X_427 <X_427>`
    * :ref:`X_1112 <X_1112>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X_11 <X_11>`

@@ -68,7 +68,7 @@ X_55
    * :ref:`X_55 <X_55>` = reflection of X_i in X_j for these (i,j): (:ref:`1478 <X_1478>`, :ref:`495 <X_495>`), (:ref:`2099 <X_2099>`, :ref:`1 <X_1>`)
    * :ref:`X_55 <X_55>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_7 <X_7>`
    * :ref:`X_55 <X_55>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_6063
-   * :ref:`X_55 <X_55>` = :term:`complement <complement>` of X_3434
+   * :ref:`X_55 <X_55>` = :term:`complement <complement>` of :ref:`X_3434 <X_3434>`
    * :ref:`X_55 <X_55>` = :term:`anticomplement <anticomplement>` of :ref:`X_2886 <X_2886>`
    * :ref:`X_55 <X_55>` = centroid of curvatures of circumcircle and excircles
    * :ref:`X_55 <X_55>` = circumcircle-inverse of :ref:`X_1155 <X_1155>`
@@ -107,7 +107,7 @@ X_55
    * :ref:`X_55 <X_55>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of 7th mixtilinear triangle
    * :ref:`X_55 <X_55>` = perspector of 4th mixtilinear triangle and unary cofactor triangle of 7th mixtilinear triangle
    * :ref:`X_55 <X_55>` = perspector of unary cofactor triangles of 3rd, 4th and 5th :term:`extouch triangles <extouch-triangle>`
-   * :ref:`X_55 <X_55>` = {X_3513,X_3514}-harmonic conjugate of :ref:`X_56 <X_56>`
+   * :ref:`X_55 <X_55>` = {:ref:`X_3513 <X_3513>`,\ :ref:`X_3514 <X_3514>`}-harmonic conjugate of :ref:`X_56 <X_56>`
    * :ref:`X_55 <X_55>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and extangents triangle
    * :ref:`X_55 <X_55>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Hutson extouch triangle
    * :ref:`X_55 <X_55>` = homothetic center of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and 2nd Johnson-Yff triangle

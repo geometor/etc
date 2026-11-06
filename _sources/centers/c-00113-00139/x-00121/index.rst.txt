@@ -50,7 +50,7 @@ X_121
    * :ref:`X_121 <X_121>` = :ref:`X_4 <X_4>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_519 <X_519>`
    * :ref:`X_121 <X_121>` = :term:`complement <complement>` of :ref:`X_106 <X_106>`
    * :ref:`X_121 <X_121>` = polar conjugate of :term:`isogonal conjugate <isogonal-conjugate>` of X_22428
-   * :ref:`X_121 <X_121>` = inverse-in-excircles-radical-circle of X_3032
+   * :ref:`X_121 <X_121>` = inverse-in-excircles-radical-circle of :ref:`X_3032 <X_3032>`
    * :ref:`X_121 <X_121>` = Λ(:ref:`X_1 <X_1>`, :ref:`X_2 <X_2>`), wrt :term:`orthic triangle <orthic-triangle>`
    * :ref:`X_121 <X_121>` = :term:`isotomic conjugate <isotomic-conjugate>` of isogonal conjugate of X_23644
 

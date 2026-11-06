@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" width="100%" height="100%">
+  <defs>
+    <filter id="glow-gold" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Subtle triangle interior fill -->
+  <polygon points="195.0,505.0 805.0,505.0 568.5,139.1"
+           fill="rgba(214, 207, 197, 0.04)" stroke="#d6cfc5" stroke-width="3.2" stroke-linejoin="round" />
+
+  <circle cx="543.6" cy="362.7" r="142.3" fill="rgba(232, 184, 90, 0.05)" stroke="#e8b85a" stroke-width="2" stroke-dasharray="7,5" opacity="0.75" />
+
+  <!-- Right-angle markers at pedal feet P_a, P_b, P_c -->
+  <path d="M 670.7,297.2 L 658.9,304.8 L 651.3,293.0" fill="none" stroke="#e8b85a" stroke-width="2.4" opacity="0.9" />
+  <path d="M 454.0,251.3 L 463.8,261.3 L 453.8,271.1" fill="none" stroke="#38bdf8" stroke-width="2.4" opacity="0.9" />
+  <path d="M 529.6,505.0 L 529.6,491.0 L 543.6,491.0" fill="none" stroke="#5ec27e" stroke-width="2.4" opacity="0.9" />
+
+  <!-- Three Directed Perpendicular Struts (alpha, beta, gamma) -->
+  <line x1="543.6" y1="362.7" x2="663.1" y2="285.4"
+        stroke="#e8b85a" stroke-width="5" stroke-linecap="round" filter="url(#glow-gold)" />
+  <line x1="543.6" y1="362.7" x2="444.0" y2="261.1"
+        stroke="#38bdf8" stroke-width="5" stroke-linecap="round" filter="url(#glow-gold)" />
+  <line x1="543.6" y1="362.7" x2="543.6" y2="505.0"
+        stroke="#5ec27e" stroke-width="5" stroke-linecap="round" filter="url(#glow-gold)" />
+
+  <!-- Pedal feet points -->
+  <circle cx="663.1" cy="285.4" r="5.5" fill="#e8b85a" stroke="#0d111a" stroke-width="2" />
+  <circle cx="444.0" cy="261.1" r="5.5" fill="#38bdf8" stroke="#0d111a" stroke-width="2" />
+  <circle cx="543.6" cy="505.0" r="5.5" fill="#5ec27e" stroke="#0d111a" stroke-width="2" />
+
+  <!-- Vertices A, B, C -->
+  <circle cx="195.0" cy="505.0" r="6.5" fill="#f8f6f0" stroke="#0d111a" stroke-width="2.2" />
+  <circle cx="805.0" cy="505.0" r="6.5" fill="#f8f6f0" stroke="#0d111a" stroke-width="2.2" />
+  <circle cx="568.5" cy="139.1" r="6.5" fill="#f8f6f0" stroke="#0d111a" stroke-width="2.2" />
+
+  <!-- Center X_n -->
+  <circle cx="543.6" cy="362.7" r="9.5" fill="#e8b85a" stroke="#ffffff" stroke-width="2.8" filter="url(#glow-gold)" />
+
+  <!-- Vertex & Sideline Labels -->
+  <text x="167.0" y="529.0" fill="#f8f6f0" font-family="Georgia, serif" font-size="26" font-weight="bold">A</text>
+  <text x="821.0" y="529.0" fill="#f8f6f0" font-family="Georgia, serif" font-size="26" font-weight="bold">B</text>
+  <text x="560.5" y="121.1" fill="#f8f6f0" font-family="Georgia, serif" font-size="26" font-weight="bold">C</text>
+
+  <!-- Side length labels a=5, b=6, c=7 -->
+  <text x="720.7" y="316.0" fill="#cbd5e1" font-family="JetBrains Mono, monospace" font-size="20" font-weight="600">a = 5</text>
+  <text x="293.7" y="316.0" fill="#cbd5e1" font-family="JetBrains Mono, monospace" font-size="20" font-weight="600">b = 6</text>
+  <text x="474.0" y="543.0" fill="#cbd5e1" font-family="JetBrains Mono, monospace" font-size="20" font-weight="600">c = 7</text>
+
+  <!-- Strut Labels alpha, beta, gamma -->
+  <g font-family="Georgia, serif" font-size="26" font-weight="bold">
+    <rect x="613.3" y="292.1" width="34" height="30" rx="6" fill="rgba(13, 17, 26, 0.85)" />
+    <text x="621.3" y="316.1" fill="#e8b85a">α</text>
+    <rect x="459.8" y="279.9" width="34" height="30" rx="6" fill="rgba(13, 17, 26, 0.85)" />
+    <text x="467.8" y="303.9" fill="#38bdf8">β</text>
+    <rect x="557.6" y="413.8" width="34" height="30" rx="6" fill="rgba(13, 17, 26, 0.85)" />
+    <text x="565.6" y="437.8" fill="#5ec27e">γ</text>
+  </g>
+
+  <!-- Center label X_n -->
+  <rect x="511.6" y="318.7" width="64" height="28" rx="6" fill="rgba(13, 17, 26, 0.9)" stroke="#e8b85a" stroke-width="1.2" />
+  <text x="543.6" y="338.7" text-anchor="middle" fill="#e8b85a" font-family="JetBrains Mono, monospace" font-size="18" font-weight="bold">X_1</text>
+
+  <!-- Bottom Visual Trilinear Proportion Gauge -->
+  <g transform="translate(55, 575)">
+    <rect x="0" y="0" width="890" height="158" rx="14" fill="rgba(11, 14, 21, 0.92)" stroke="rgba(232, 184, 90, 0.35)" stroke-width="1.5" />
+    <text x="24" y="34" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="15" font-weight="bold" letter-spacing="1.2">DIRECTED PERPENDICULAR DISTANCES TO SIDELINES</text>
+    <text x="866" y="34" text-anchor="end" fill="#e8b85a" font-family="JetBrains Mono, monospace" font-size="18" font-weight="bold">α : β : γ = 1 : 1 : 1</text>
+
+    <!-- Bar alpha -->
+    <text x="24" y="72" fill="#e8b85a" font-family="JetBrains Mono, monospace" font-size="18" font-weight="bold">α ⊥ BC (a=5)</text>
+    <rect x="180" y="55" width="220.0" height="20" rx="5" fill="#e8b85a" />
+    <text x="412.0" y="71" fill="#f8f6f0" font-family="JetBrains Mono, monospace" font-size="17">1</text>
+
+    <!-- Bar beta -->
+    <text x="24" y="106" fill="#38bdf8" font-family="JetBrains Mono, monospace" font-size="18" font-weight="bold">β ⊥ CA (b=6)</text>
+    <rect x="180" y="89" width="220.0" height="20" rx="5" fill="#38bdf8" />
+    <text x="412.0" y="105" fill="#f8f6f0" font-family="JetBrains Mono, monospace" font-size="17">1</text>
+
+    <!-- Bar gamma -->
+    <text x="24" y="140" fill="#5ec27e" font-family="JetBrains Mono, monospace" font-size="18" font-weight="bold">γ ⊥ AB (c=7)</text>
+    <rect x="180" y="123" width="220.0" height="20" rx="5" fill="#5ec27e" />
+    <text x="412.0" y="139" fill="#f8f6f0" font-family="JetBrains Mono, monospace" font-size="17">1</text>
+
+    <!-- Right-side geometric summary box -->
+    <rect x="520" y="52" width="346" height="92" rx="10" fill="rgba(232, 184, 90, 0.08)" stroke="rgba(232, 184, 90, 0.3)" />
+    <text x="693" y="84" text-anchor="middle" fill="#f8f6f0" font-family="Georgia, serif" font-size="20">d(X_1, BC) : d(X_1, CA) : d(X_1, AB)</text>
+    <text x="693" y="118" text-anchor="middle" fill="#e8b85a" font-family="JetBrains Mono, monospace" font-size="21" font-weight="bold">= 1 : 1 : 1</text>
+  </g>
+</svg>

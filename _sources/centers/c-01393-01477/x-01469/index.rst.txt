@@ -23,8 +23,8 @@ X_1469
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{7, 8} <{ 7, 8 }>`, :g:`{6, 41} <{ 6, 41 }>`
-   * **Related Centers:** :g:`X_984 <X_984>` (:ref:`MIDPOINT OF X(8) AND X(192) <X_984>`), :g:`X_7 <X_7>` (:ref:`GERGONNE POINT <X_7>`), :g:`X_8 <X_8>` (:ref:`NAGEL POINT <X_8>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_41 <X_41>` (:ref:`-CEVA CONJUGATE OF X(31) <X_41>`)
+   * **Central Lines:** :g:`{3056, 1} <{ 3056, 1 }>`
+   * **Related Centers:** :g:`X_3056 <X_3056>` (:ref:`INTERSECTION OF LINES X <X_3056>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`)
 
 .. signature:: center
 
@@ -40,7 +40,7 @@ X_1469
 .. collapse:: Functional Relations
    :badge: 3 relations
 
-   * :ref:`X_1469 <X_1469>` = reflection of X_3056 in :ref:`X_1 <X_1>`
+   * :ref:`X_1469 <X_1469>` = reflection of :ref:`X_3056 <X_3056>` in :ref:`X_1 <X_1>`
    * :ref:`X_1469 <X_1469>` = :ref:`X_1350 <X_1350>`-of-Mandart-incircle-triangle
    * :ref:`X_1469 <X_1469>` = homothetic center of :term:`intangents triangle <intangents-triangle>` and reflection of :term:`extangents triangle <extangents-triangle>` in :ref:`X_1350 <X_1350>`
 

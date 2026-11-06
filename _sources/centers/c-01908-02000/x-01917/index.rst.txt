@@ -23,8 +23,8 @@ X_1917
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{31, 2085} <{ 31, 2085 }>`
-   * **Related Centers:** :g:`X_1928 <X_1928>` (:ref:`ISOGONAL CONJUGATE OF X(1917) <X_1928>`), :g:`X_31 <X_31>` (:ref:`2nd POWER POINT <X_31>`), :g:`X_2085 <X_2085>` (:ref:`NK-TRANSFORM OF X(31) <X_2085>`)
+   * **Central Lines:** :g:`{31, 2085} <{ 31, 2085 }>`, :g:`{1, 3409} <{ 1, 3409 }>`
+   * **Related Centers:** :g:`X_1928 <X_1928>` (:ref:`ISOGONAL CONJUGATE OF X(1917) <X_1928>`), :g:`X_31 <X_31>` (:ref:`2nd POWER POINT <X_31>`), :g:`X_2085 <X_2085>` (:ref:`NK-TRANSFORM OF X(31) <X_2085>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_3409 <X_3409>` (:ref:`COT(A + 2ω) POINT <X_3409>`)
 
 .. signature:: center
 
@@ -35,7 +35,7 @@ X_1917
    :badge: 5 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, 3409}, {:ref:`31 <X_31>`, :ref:`2085 <X_2085>`}, {:ref:`560 <X_560>`, 9247}, {:ref:`922 <X_922>`, 4020}, {:ref:`1501 <X_1501>`, 9448}
+   {:ref:`1 <X_1>`, :ref:`3409 <X_3409>`}, {:ref:`31 <X_31>`, :ref:`2085 <X_2085>`}, {:ref:`560 <X_560>`, 9247}, {:ref:`922 <X_922>`, 4020}, {:ref:`1501 <X_1501>`, 9448}
 
 .. collapse:: Functional Relations
    :badge: 5 relations

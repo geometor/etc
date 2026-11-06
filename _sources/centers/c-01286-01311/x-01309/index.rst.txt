@@ -29,7 +29,7 @@ X_1309
 .. signature:: center
 
    | **Trilinears:** :math:`(\csc 2A)/[4(\sin^{2} B - \sin^{2} C) \cos B \cos C + \sin^{2} B \cos B - \sin^{2} C \cos C] : :`
-   | **Search Value (6, 9, 13):** :math:`2.350197472585`
+   | **Search Value (6, 9, 13):** :math:`1.541677982293`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
@@ -58,11 +58,11 @@ X_1309
    * :ref:`X_1309 <X_1309>` = circumcircle-antipode of :ref:`X_2734 <X_2734>`
    * :ref:`X_1309 <X_1309>` = Ψ(:ref:`X_3 <X_3>`, :ref:`X_8 <X_8>`)
    * :ref:`X_1309 <X_1309>` = Ψ(:ref:`X_6 <X_6>`, :ref:`X_281 <X_281>`)
-   * :ref:`X_1309 <X_1309>` = inverse-in-polar-circle of X_3259
-   * :ref:`X_1309 <X_1309>` = pole wrt polar circle of Sherman line (line X_3259X_3326) (see http://forumgeom.fau.edu/FG2012volume12/FG201220.pdf)
+   * :ref:`X_1309 <X_1309>` = inverse-in-polar-circle of :ref:`X_3259 <X_3259>`
+   * :ref:`X_1309 <X_1309>` = pole wrt polar circle of Sherman line (line :ref:`X_3259 <X_3259>`\ \ :ref:`X_3326 <X_3326>`) (see http://forumgeom.fau.edu/FG2012volume12/FG201220.pdf)
    * :ref:`X_1309 <X_1309>` = intersection of antipedal lines of :ref:`X_102 <X_102>` and :ref:`X_109 <X_109>`
    * :ref:`X_1309 <X_1309>` = polar conjugate of X_10015
-   * :ref:`X_1309 <X_1309>` = :ref:`X_63 <X_63>`-:term:`isoconjugate <isoconjugate>` of X_3310
+   * :ref:`X_1309 <X_1309>` = :ref:`X_63 <X_63>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_3310 <X_3310>`
 
 Notes
 -----

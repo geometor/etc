@@ -47,7 +47,7 @@ X_1885
    * :ref:`X_1885 <X_1885>` = intersection of tangents to Hatzipolakis-Lozada hyperbola at :ref:`X_4 <X_4>` and :ref:`X_185 <X_185>`
    * :ref:`X_1885 <X_1885>` = crosspoint, wrt :term:`orthic triangle <orthic-triangle>`, of :ref:`X_4 <X_4>` and :ref:`X_185 <X_185>`
    * :ref:`X_1885 <X_1885>` = :ref:`X_20 <X_20>`-of-anti-Ara-triangle
-   * :ref:`X_1885 <X_1885>` = X_3057-of-orthic-triangle if :g:`ABC << A B C >>` is acute
+   * :ref:`X_1885 <X_1885>` = :ref:`X_3057 <X_3057>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
 
 Notes
 -----

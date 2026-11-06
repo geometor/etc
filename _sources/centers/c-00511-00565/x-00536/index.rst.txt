@@ -35,13 +35,13 @@ X_536
    :badge: 12 lines
    :class: line-catalog
 
-   {:ref:`2 <X_2>`, :ref:`37 <X_37>`}, {:ref:`30 <X_30>`, :ref:`511 <X_511>`}, {:ref:`42 <X_42>`, :ref:`2230 <X_2230>`}, {:ref:`44 <X_44>`, :ref:`190 <X_190>`}, {:ref:`141 <X_141>`, :ref:`2321 <X_2321>`}, {:ref:`335 <X_335>`, :ref:`903 <X_903>`}, {:ref:`889 <X_889>`, 3227}, {:ref:`894 <X_894>`, :ref:`1100 <X_1100>`}, {:ref:`1086 <X_1086>`, :ref:`1266 <X_1266>`}, {:ref:`2228 <X_2228>`, 3123}, {:ref:`2234 <X_2234>`, 3009}, {:ref:`2325 <X_2325>`, 3008}
+   {:ref:`2 <X_2>`, :ref:`37 <X_37>`}, {:ref:`30 <X_30>`, :ref:`511 <X_511>`}, {:ref:`42 <X_42>`, :ref:`2230 <X_2230>`}, {:ref:`44 <X_44>`, :ref:`190 <X_190>`}, {:ref:`141 <X_141>`, :ref:`2321 <X_2321>`}, {:ref:`335 <X_335>`, :ref:`903 <X_903>`}, {:ref:`889 <X_889>`, :ref:`3227 <X_3227>`}, {:ref:`894 <X_894>`, :ref:`1100 <X_1100>`}, {:ref:`1086 <X_1086>`, :ref:`1266 <X_1266>`}, {:ref:`2228 <X_2228>`, :ref:`3123 <X_3123>`}, {:ref:`2234 <X_2234>`, :ref:`3009 <X_3009>`}, {:ref:`2325 <X_2325>`, :ref:`3008 <X_3008>`}
 
 .. collapse:: Functional Relations
    :badge: 5 relations
 
    * :ref:`X_536 <X_536>` = isogonal conjugate of :ref:`X_739 <X_739>`
-   * :ref:`X_536 <X_536>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3227
+   * :ref:`X_536 <X_536>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3227 <X_3227>`
    * :ref:`X_536 <X_536>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of X_13466
    * :ref:`X_536 <X_536>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_6 <X_6>`\ \ :ref:`X_667 <X_667>`
    * :ref:`X_536 <X_536>` = barycentric cube root of X_8031

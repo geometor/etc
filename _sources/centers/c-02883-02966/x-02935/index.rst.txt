@@ -30,7 +30,7 @@ X_2935
 
    | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) is as described just before :ref:`X_2883 <X_2883>`
    | **Barycentrics:** :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
-   | **Search Value (6, 9, 13):** :math:`19.877724225851`
+   | **Search Value (6, 9, 13):** :math:`19.877724225850`
 
 .. collapse:: Incident Central Lines
    :badge: 17 lines
@@ -42,7 +42,7 @@ X_2935
    :badge: 4 relations
 
    * :ref:`X_2935 <X_2935>` = reflection of :ref:`X_1498 <X_1498>` in :ref:`X_110 <X_110>`
-   * :ref:`X_2935 <X_2935>` = inverse-in-circumcircle of X_3184
+   * :ref:`X_2935 <X_2935>` = inverse-in-circumcircle of :ref:`X_3184 <X_3184>`
    * :ref:`X_2935 <X_2935>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`146 <X_146>`, :ref:`399 <X_399>`), (:ref:`2071 <X_2071>`, :ref:`3 <X_3>`)
    * :ref:`X_2935 <X_2935>` = tangential-triangle symgonal of :ref:`X_3 <X_3>`
 

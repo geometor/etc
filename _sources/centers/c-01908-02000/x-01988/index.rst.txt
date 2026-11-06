@@ -41,7 +41,7 @@ X_1988
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X_1988 <X_1988>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3164
+   * :ref:`X_1988 <X_1988>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3164 <X_3164>`
    * :ref:`X_1988 <X_1988>` = :ref:`X_4 <X_4>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_6 <X_6>`
 
 .. toctree::

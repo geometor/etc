@@ -59,7 +59,7 @@ X_942
    * :ref:`X_942 <X_942>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`35 <X_35>`), (:ref:`6 <X_6>`, :ref:`228 <X_228>`), (:ref:`37 <X_37>`, :ref:`55 <X_55>`)
    * :ref:`X_942 <X_942>` = :ref:`X_5 <X_5>`-of-the-intouch-triangle
    * :ref:`X_942 <X_942>` = :ref:`X_1112 <X_1112>` of :term:`Fuhrmann triangle <fuhrmann-triangle>`
-   * :ref:`X_942 <X_942>` = {:ref:`X_1 <X_1>`,\ :ref:`X_40 <X_40>`}-harmonic conjugate of X_3295
+   * :ref:`X_942 <X_942>` = {:ref:`X_1 <X_1>`,\ :ref:`X_40 <X_40>`}-harmonic conjugate of :ref:`X_3295 <X_3295>`
    * :ref:`X_942 <X_942>` = :ref:`X_3 <X_3>`-of-inverse-in-incircle-triangle
    * :ref:`X_942 <X_942>` = :ref:`X_4 <X_4>`-of-incircle-circles-triangle
    * :ref:`X_942 <X_942>` = X_6756-of-excentral-triangle

@@ -24,7 +24,7 @@ X_2053
    :class: note
 
    * **Central Lines:** :g:`{56, 87} <{ 56, 87 }>`, :g:`{31, 172} <{ 31, 172 }>`
-   * **Related Centers:** :g:`X_56 <X_56>` (:ref:`EXSIMILICENTER <X_56>`), :g:`X_87 <X_87>` (:ref:`-CROSS CONJUGATE OF X(1) <X_87>`), :g:`X_31 <X_31>` (:ref:`2nd POWER POINT <X_31>`), :g:`X_172 <X_172>` (:ref:`TRILINEAR PRODUCT X(6)*X(171) <X_172>`)
+   * **Related Centers:** :g:`X_3212 <X_3212>` (:ref:`-CEVA CONJUGATE OF X(7) <X_3212>`), :g:`X_56 <X_56>` (:ref:`EXSIMILICENTER <X_56>`), :g:`X_87 <X_87>` (:ref:`-CROSS CONJUGATE OF X(1) <X_87>`), :g:`X_31 <X_31>` (:ref:`2nd POWER POINT <X_31>`), :g:`X_172 <X_172>` (:ref:`TRILINEAR PRODUCT X(6)*X(171) <X_172>`)
 
 .. signature:: center
 
@@ -41,7 +41,7 @@ X_2053
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X_2053 <X_2053>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3212
+   * :ref:`X_2053 <X_2053>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3212 <X_3212>`
    * :ref:`X_2053 <X_2053>` = :term:`complement <complement>` of X_20350
    * :ref:`X_2053 <X_2053>` = :term:`anticomplement <anticomplement>` of X_20338
    * :ref:`X_2053 <X_2053>` = :ref:`X_9 <X_9>`-cross conjugate of :ref:`X_55 <X_55>`

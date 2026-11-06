@@ -39,7 +39,7 @@ X_233
 
 .. container:: note-item
 
-   :ref:`X_233 <X_233>` lies on hyperbola {:ref:`X_2 <X_2>`,\ :ref:`X_6 <X_6>`,\ :ref:`X_216 <X_216>`,\ :ref:`X_233 <X_233>`,\ :ref:`X_1249 <X_1249>`,\ :ref:`X_1560 <X_1560>`,X_3162}}. This hyperbola is a circumconic of the :term:`medial triangle <medial-triangle>`, and the locus of perspectors of circumconics centered at a point on the Euler line. It is tangent to Euler line at :ref:`X_2 <X_2>`. (:person:`Randy Hutson <randy-hutson>`, March 21, 2019)
+   :ref:`X_233 <X_233>` lies on hyperbola {:ref:`X_2 <X_2>`,\ :ref:`X_6 <X_6>`,\ :ref:`X_216 <X_216>`,\ :ref:`X_233 <X_233>`,\ :ref:`X_1249 <X_1249>`,\ :ref:`X_1560 <X_1560>`,\ :ref:`X_3162 <X_3162>`}}. This hyperbola is a circumconic of the :term:`medial triangle <medial-triangle>`, and the locus of perspectors of circumconics centered at a point on the Euler line. It is tangent to Euler line at :ref:`X_2 <X_2>`. (:person:`Randy Hutson <randy-hutson>`, March 21, 2019)
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines

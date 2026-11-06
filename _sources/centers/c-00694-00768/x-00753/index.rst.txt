@@ -48,8 +48,8 @@ X_753
    * :ref:`X_753 <X_753>` = isogonal conjugate of :ref:`X_752 <X_752>`
    * :ref:`X_753 <X_753>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_35548
    * :ref:`X_753 <X_753>` = circumcircle-antipode of X_28467
-   * :ref:`X_753 <X_753>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_6 <X_6>`\ X_3250
-   * :ref:`X_753 <X_753>` = Ψ(:ref:`X_6 <X_6>`, X_3250)
+   * :ref:`X_753 <X_753>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_6 <X_6>`\ \ :ref:`X_3250 <X_3250>`
+   * :ref:`X_753 <X_753>` = Ψ(:ref:`X_6 <X_6>`, :ref:`X_3250 <X_3250>`)
 
 .. toctree::
    :hidden:

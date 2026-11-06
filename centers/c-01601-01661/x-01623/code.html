@@ -40,6 +40,9 @@
           <a href="../../index.html" class="is-active" aria-selected="true" >Encyclopedia of Triangle Centers</a>
         </li>
         <li>
+          <a href="../../../preambles.html"  >Guide to Preambles in ETC</a>
+        </li>
+        <li>
           <a href="../../../glossary.html"  >Glossary</a>
         </li>
         <li>
@@ -137,7 +140,7 @@
             <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="kimberling" title="Kimberling Obtuse Scalene Triangle (6, 9, 13)" data-caption-html="&lt;strong&gt;X&lt;sub&gt;1623&lt;/sub&gt; — TCC-PERSPECTOR OF X&lt;sub&gt;88&lt;/sub&gt;&lt;/strong&gt; constructed on Kimberling&#x27;s canonical uniqueness test triangle &lt;code&gt;(a, b, c) = (6, 9, 13)&lt;/code&gt; (obtuse scalene, unit baseline &lt;span class=&quot;geom-ref geom-segment&quot; data-ref=&quot;[ A B ]&quot;&gt;AB&lt;/span&gt; = &lt;code&gt;1&lt;/code&gt;).">Kimberling</button>
           </div>
         <div class="etc-tab-pane active" data-tab-pane="acute">
-        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-1.552075 -2.726862 4.491246 3.368434" data-initial-viewbox="-1.552075 -2.726862 4.491246 3.368434" preserveAspectRatio="xMidYMid meet">
+        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-1.552074 -2.726862 4.491246 3.368434" data-initial-viewbox="-1.552074 -2.726862 4.491246 3.368434" data-target-r-px="10.5" preserveAspectRatio="xMidYMid meet">
           <style>
         :root {
             --background-color: #121212;
@@ -359,6 +362,14 @@
         #labels text.hover-label {
             fill: var(--select-color) !important;
             font-weight: 700;
+        }
+
+        #labels text.dense-label {
+            display: none;
+        }
+
+        #labels text.dense-label.hover-label {
+            display: block !important;
         }
 
         .etc-svg-stage {
@@ -475,7 +486,7 @@
             <line data-id="[ C A ]" data-name="Sideline CA (Side b)" class="line sideline" data-category="elements" x1="612.85714" y1="-600.47492" x2="-611.63266" y2="599.27516"><title>[ C A ]: Sideline CA (Side b)</title></line>
             <line data-id="{ 3, 8 }" data-name="Central Line L(3, 8)" class="line central_line" data-category="elements" x1="31.11224" y1="31.14143" x2="-30.11224" y2="-31.34555"><title>{ 3, 8 }: Central Line L(3, 8)</title></line>
             <line data-id="{ 23, 105 }" data-name="Central Line L(23, 105)" class="line central_line" data-category="elements" x1="417.05530" y1="-2518.88818" x2="-414.28110" y2="2514.04188"><title>{ 23, 105 }: Central Line L(23, 105)</title></line>
-            <line data-id="{ 36, 1168 }" data-name="Central Line L(36, 1168)" class="line central_line incident" data-category="elements" x1="334.66657" y1="-1634.62599" x2="-331.99991" y2="1631.36001"><title>{ 36, 1168 }: Central Line L(36, 1168)</title></line>
+            <line data-id="{ 36, 1168 }" data-name="Central Line L(36, 1168)" class="line central_line incident" data-category="elements" x1="334.66656" y1="-1634.62615" x2="-331.99990" y2="1631.36017"><title>{ 36, 1168 }: Central Line L(36, 1168)</title></line>
           </g>
           <g id="points">
             <circle data-id="A" data-name="Vertex A" class="point given vertex" data-category="points" cx="0.000000" cy="-0.000000" r="0.042105"><title>A = Vertex A (0.0000, 0.0000)</title></circle>
@@ -487,7 +498,7 @@
             <circle data-id="X_105" data-name="Λ(INCENTER, SYMMEDIAN POINT)" class="point center" data-category="points" cx="0.971429" cy="0.093314" r="0.042105"><title>X_105 = Λ(INCENTER, SYMMEDIAN POINT) (0.9714, -0.0933)</title></circle>
             <circle data-id="X_36" data-name="INVERSE-IN-CIRCUMCIRCLE OF INCENTER" class="point center incident" data-category="points" cx="1.333333" cy="-1.632993" r="0.042105"><title>X_36 = INVERSE-IN-CIRCUMCIRCLE OF INCENTER (1.3333, 1.6330)</title></circle>
             <circle data-id="X_1168" data-name="1st SARAGOSSA POINT OF X(36)" class="point center incident" data-category="points" cx="1.000000" cy="-0.000000" r="0.042105"><title>X_1168 = 1st SARAGOSSA POINT OF X(36) (1.0000, 0.0000)</title></circle>
-            <circle data-id="X_1623" data-name="TCC-PERSPECTOR OF X(88)" class="point selected target" data-category="points" cx="0.931034" cy="0.337861" r="0.058948"><title>X_1623 = TCC-PERSPECTOR OF X(88) (0.9310, -0.3379)</title></circle>
+            <circle data-id="X_1623" data-name="TCC-PERSPECTOR OF X(88)" class="point selected target" data-category="points" cx="0.931035" cy="0.337861" r="0.058948"><title>X_1623 = TCC-PERSPECTOR OF X(88) (0.9310, -0.3379)</title></circle>
           </g>
           <g id="labels">
             <text class="given-label" data-point-id="A" data-anchor-x="0.000000" data-anchor-y="-0.000000" data-offset-x="-24.0" data-offset-y="22.5" x="-0.134737" y="0.126316" font-size="0.113685">A</text>
@@ -499,7 +510,7 @@
             <text class="point-label" data-point-id="X_105" data-anchor-x="0.971429" data-anchor-y="0.093314" data-offset-x="12.0" data-offset-y="-10.5" x="1.038797" y="0.034366" font-size="0.113685">X<tspan dy="0.3em" font-size="75%">105</tspan></text>
             <text class="point-label incident" data-point-id="X_36" data-anchor-x="1.333333" data-anchor-y="-1.632993" data-offset-x="12.0" data-offset-y="-10.5" x="1.400702" y="-1.691941" font-size="0.113685">X<tspan dy="0.3em" font-size="75%">36</tspan></text>
             <text class="point-label incident" data-point-id="X_1168" data-anchor-x="1.000000" data-anchor-y="-0.000000" data-offset-x="12.0" data-offset-y="-10.5" x="1.067369" y="-0.058948" font-size="0.113685">X<tspan dy="0.3em" font-size="75%">1168</tspan></text>
-            <text class="target-label" data-point-id="X_1623" data-anchor-x="0.931034" data-anchor-y="0.337861" data-offset-x="12.0" data-offset-y="-10.5" x="0.998403" y="0.278913" font-size="0.113685">X<tspan dy="0.3em" font-size="75%">1623</tspan></text>
+            <text class="target-label" data-point-id="X_1623" data-anchor-x="0.931035" data-anchor-y="0.337861" data-offset-x="12.0" data-offset-y="-10.5" x="0.998403" y="0.278913" font-size="0.113685">X<tspan dy="0.3em" font-size="75%">1623</tspan></text>
             <text class="subtitle-label" x="-1.439793" y="0.540519" font-size="0.096842" fill="#999">(a, b, c) = (5, 6, 7) | AB = 1</text>
           </g>
           <script type="application/json" class="etc-elements-meta">{"A":{"ID":"A","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex A","subtitle":"Reference triangle vertex at origin (0, 0)","rows":[["x","0.0000"],["y","0.0000"],["bary","1.0000 : 0.0000 : 0.0000"]],"related_points":["A"]},"B":{"ID":"B","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex B","subtitle":"Reference triangle vertex at unit base (1, 0)","rows":[["x","1.0000"],["y","0.0000"],["bary","0.0000 : 1.0000 : 0.0000"]],"related_points":["B"]},"[ A B ]":{"ID":"[ A B ]","type":"line","classes":["given","sideline"],"color":"#aaa","name":"Sideline AB (Base c = 1)","subtitle":"Reference triangle baseline through A and B","rows":[["pts","A (Vertex A), B (Vertex B)"],["len","1.0000"],["eq","0.0000x + 1.0000y + 0.0000 = 0"]],"related_points":["A","B"]},"C":{"ID":"C","type":"point","classes":["vertex"],"color":"#0ff","name":"Vertex C","subtitle":"Reference triangle apex constructed by Euclid I.22","rows":[["x","0.6122"],["y","0.5999"],["bary","-0.0000 : 0.0000 : 1.0000"]],"related_points":["C"]},"[ B C ]":{"ID":"[ B C ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline BC (Side a)","subtitle":"Reference triangle sideline opposite vertex A","rows":[["pts","B (Vertex B), C (Vertex C)"],["len","0.7143"],["eq","0.8398x + 0.5429y - 0.8398 = 0"]],"related_points":["B","C"]},"[ C A ]":{"ID":"[ C A ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline CA (Side b)","subtitle":"Reference triangle sideline opposite vertex B","rows":[["pts","C (Vertex C), A (Vertex A)"],["len","0.8571"],["eq","0.6999x - 0.7143y + 0.0000 = 0"]],"related_points":["C","A"]},"\u003c A B C \u003e":{"ID":"\u003c A B C \u003e","type":"polygon","classes":["reference"],"color":"#58a6ff","name":"Reference Triangle △ABC","subtitle":"Primary reference triangle with unit baseline AB = 1","rows":[["verts","A, B, C"],["sides","0.7143, 0.8571, 1.0000"],["area","0.2999"]],"related_points":["A","B","C"]},"X_3":{"ID":"X_3","type":"point","classes":["center"],"color":"#0ff","name":"CIRCUMCENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5000"],["y","0.1021"],["bary","0.4340 : 0.3958 : 0.1701"]],"related_points":["X_3"]},"X_8":{"ID":"X_8","type":"point","classes":["center"],"color":"#0ff","name":"NAGEL POINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.4694"],["y","0.1333"],["bary","0.4444 : 0.3333 : 0.2222"]],"related_points":["X_8"]},"{ 3, 8 }":{"ID":"{ 3, 8 }","type":"line","classes":["central_line"],"color":"#0bd","name":"Central Line L(3, 8)","subtitle":"Through X_3 (CIRCUMCENTER) and X_8 (NAGEL POINT)","rows":[["pts","X_3 (CIRCUMCENTER), X_8 (NAGEL POINT)"],["len","0.0437"],["eq","0.7143x + 0.6999y - 0.4286 = 0"]],"related_points":["X_3","X_8"]},"X_23":{"ID":"X_23","type":"point","classes":["center"],"color":"#0ff","name":"FAR-OUT POINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","1.3871"],["y","2.4232"],["bary","-1.9534 : -1.0860 : 4.0394"]],"related_points":["X_23"]},"X_105":{"ID":"X_105","type":"point","classes":["center"],"color":"#0ff","name":"Λ(INCENTER, SYMMEDIAN POINT)","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.9714"],["y","-0.0933"],["bary","0.0889 : 1.0667 : -0.1556"]],"related_points":["X_105"]},"{ 23, 105 }":{"ID":"{ 23, 105 }","type":"line","classes":["central_line"],"color":"#0bd","name":"Central Line L(23, 105)","subtitle":"Through X_23 (FAR-OUT POINT) and X_105 (Λ(INCENTER, SYMMEDIAN POINT))","rows":[["pts","X_23 (FAR-OUT POINT), X_105 (Λ(INCENTER, SYMMEDIAN POINT))"],["len","2.5506"],["eq","0.9866x - 0.1630y - 0.9736 = 0"]],"related_points":["X_23","X_105"]},"X_36":{"ID":"X_36","type":"point","classes":["center","incident"],"color":"#0ff","name":"INVERSE-IN-CIRCUMCIRCLE OF INCENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","1.3333"],["y","1.6330"],["bary","-1.3889 : -0.3333 : 2.7222"]],"related_points":["X_36"]},"X_1168":{"ID":"X_1168","type":"point","classes":["center","incident"],"color":"#0ff","name":"1st SARAGOSSA POINT OF X(36)","subtitle":"Incident / Reference Triangle Center","rows":[["x","1.0000"],["y","0.0000"],["bary","-0.0000 : 1.0000 : 0.0000"]],"related_points":["X_1168"]},"{ 36, 1168 }":{"ID":"{ 36, 1168 }","type":"line","classes":["central_line","incident"],"color":"#0bd","name":"Central Line L(36, 1168)","subtitle":"Through X_36 (INVERSE-IN-CIRCUMCIRCLE OF INCENTER) and X_1168 (1st SARAGOSSA POINT OF X(36))","rows":[["pts","X_36 (INVERSE-IN-CIRCUMCIRCLE OF INCENTER), X_1168 (1st SARAGOSSA POINT OF X(36))"],["len","1.6667"],["eq","0.9798x - 0.2000y - 0.9798 = 0"]],"related_points":["X_36","X_1168"]},"X_1623":{"ID":"X_1623","type":"point","classes":["selected","target"],"color":"gold","name":"TCC-PERSPECTOR OF X(88)","subtitle":"Target Triangle Center","rows":[["x","0.9310"],["y","-0.3379"],["bary","0.2874 : 1.2759 : -0.5632"]],"related_points":["X_1623"]}}</script>
@@ -546,10 +557,11 @@
                 const vb = getViewBox();
                 const unitsPerPx = vb[2] / widthPx;
 
+                const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
                 pointEls.forEach(c => {
                     const isTarget = c.classList.contains('target') || c.classList.contains('selected');
                     const isGuide = c.classList.contains('guide');
-                    const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);
+                    const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
                     c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
                 });
 
@@ -935,6 +947,18 @@
                 clearHover();
             });
 
+            svg.addEventListener('click', (event) => {
+                if (didDrag) return;
+                const pt = event.target.closest('circle[data-id]');
+                if (!pt) return;
+                const pid = pt.getAttribute('data-id') || '';
+                const m = pid.match(/^X_(\d+)$/);
+                if (m && typeof window !== 'undefined' && window.location && window.location.pathname.includes('/c-') && !window.location.pathname.includes('/x-')) {
+                    const slug = 'x-' + m[1].padStart(5, '0');
+                    window.location.href = `${slug}/index.html`;
+                }
+            });
+
             svg.addEventListener('dblclick', (event) => {
                 event.preventDefault();
                 resetView();
@@ -949,7 +973,7 @@
         </svg>
         </div>
         <div class="etc-tab-pane" data-tab-pane="right" style="display: none;">
-        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-1.213422 -1.671733 3.426844 2.570133" data-initial-viewbox="-1.213422 -1.671733 3.426844 2.570133" preserveAspectRatio="xMidYMid meet">
+        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-1.213422 -1.671733 3.426844 2.570133" data-initial-viewbox="-1.213422 -1.671733 3.426844 2.570133" data-target-r-px="10.5" preserveAspectRatio="xMidYMid meet">
           <style>
         :root {
             --background-color: #121212;
@@ -1171,6 +1195,14 @@
         #labels text.hover-label {
             fill: var(--select-color) !important;
             font-weight: 700;
+        }
+
+        #labels text.dense-label {
+            display: none;
+        }
+
+        #labels text.dense-label.hover-label {
+            display: block !important;
         }
 
         .etc-svg-stage {
@@ -1287,7 +1319,7 @@
             <line data-id="[ C A ]" data-name="Sideline CA (Side b)" class="line sideline" data-category="elements" x1="640.64000" y1="-480.48000" x2="-639.36000" y2="479.52000"><title>[ C A ]: Sideline CA (Side b)</title></line>
             <line data-id="{ 3, 8 }" data-name="Central Line L(3, 8)" class="line central_line" data-category="elements" x1="60.50000" y1="80.00000" x2="-59.50000" y2="-80.00000"><title>{ 3, 8 }: Central Line L(3, 8)</title></line>
             <line data-id="{ 23, 105 }" data-name="Central Line L(23, 105)" class="line central_line" data-category="elements" x1="-59.08000" y1="-1581.44000" x2="60.92000" y2="1578.56000"><title>{ 23, 105 }: Central Line L(23, 105)</title></line>
-            <line data-id="{ 36, 1168 }" data-name="Central Line L(36, 1168)" class="line central_line incident" data-category="elements" x1="0.99995" y1="-1000.99990" x2="1.00005" y2="998.99990"><title>{ 36, 1168 }: Central Line L(36, 1168)</title></line>
+            <line data-id="{ 36, 1168 }" data-name="Central Line L(36, 1168)" class="line central_line incident" data-category="elements" x1="0.99990" y1="-1001.00000" x2="1.00010" y2="999.00000"><title>{ 36, 1168 }: Central Line L(36, 1168)</title></line>
           </g>
           <g id="points">
             <circle data-id="A" data-name="Vertex A" class="point given vertex" data-category="points" cx="0.000000" cy="-0.000000" r="0.032127"><title>A = Vertex A (0.0000, 0.0000)</title></circle>
@@ -1358,10 +1390,11 @@
                 const vb = getViewBox();
                 const unitsPerPx = vb[2] / widthPx;
 
+                const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
                 pointEls.forEach(c => {
                     const isTarget = c.classList.contains('target') || c.classList.contains('selected');
                     const isGuide = c.classList.contains('guide');
-                    const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);
+                    const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
                     c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
                 });
 
@@ -1747,6 +1780,18 @@
                 clearHover();
             });
 
+            svg.addEventListener('click', (event) => {
+                if (didDrag) return;
+                const pt = event.target.closest('circle[data-id]');
+                if (!pt) return;
+                const pid = pt.getAttribute('data-id') || '';
+                const m = pid.match(/^X_(\d+)$/);
+                if (m && typeof window !== 'undefined' && window.location && window.location.pathname.includes('/c-') && !window.location.pathname.includes('/x-')) {
+                    const slug = 'x-' + m[1].padStart(5, '0');
+                    window.location.href = `${slug}/index.html`;
+                }
+            });
+
             svg.addEventListener('dblclick', (event) => {
                 event.preventDefault();
                 resetView();
@@ -1761,7 +1806,7 @@
         </svg>
         </div>
         <div class="etc-tab-pane" data-tab-pane="kepler" style="display: none;">
-        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-1.339662 -1.706411 3.679323 2.759492" data-initial-viewbox="-1.339662 -1.706411 3.679323 2.759492" preserveAspectRatio="xMidYMid meet">
+        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-1.339662 -1.706411 3.679323 2.759492" data-initial-viewbox="-1.339662 -1.706411 3.679323 2.759492" data-target-r-px="10.5" preserveAspectRatio="xMidYMid meet">
           <style>
         :root {
             --background-color: #121212;
@@ -1983,6 +2028,14 @@
         #labels text.hover-label {
             fill: var(--select-color) !important;
             font-weight: 700;
+        }
+
+        #labels text.dense-label {
+            display: none;
+        }
+
+        #labels text.dense-label.hover-label {
+            display: block !important;
         }
 
         .etc-svg-stage {
@@ -2170,10 +2223,11 @@
                 const vb = getViewBox();
                 const unitsPerPx = vb[2] / widthPx;
 
+                const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
                 pointEls.forEach(c => {
                     const isTarget = c.classList.contains('target') || c.classList.contains('selected');
                     const isGuide = c.classList.contains('guide');
-                    const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);
+                    const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
                     c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
                 });
 
@@ -2559,6 +2613,18 @@
                 clearHover();
             });
 
+            svg.addEventListener('click', (event) => {
+                if (didDrag) return;
+                const pt = event.target.closest('circle[data-id]');
+                if (!pt) return;
+                const pid = pt.getAttribute('data-id') || '';
+                const m = pid.match(/^X_(\d+)$/);
+                if (m && typeof window !== 'undefined' && window.location && window.location.pathname.includes('/c-') && !window.location.pathname.includes('/x-')) {
+                    const slug = 'x-' + m[1].padStart(5, '0');
+                    window.location.href = `${slug}/index.html`;
+                }
+            });
+
             svg.addEventListener('dblclick', (event) => {
                 event.preventDefault();
                 resetView();
@@ -2573,7 +2639,7 @@
         </svg>
         </div>
         <div class="etc-tab-pane" data-tab-pane="kimberling" style="display: none;">
-        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-2.262188 -3.148273 5.073102 3.804826" data-initial-viewbox="-2.262188 -3.148273 5.073102 3.804826" preserveAspectRatio="xMidYMid meet">
+        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-2.262188 -3.148273 5.073102 3.804826" data-initial-viewbox="-2.262188 -3.148273 5.073102 3.804826" data-target-r-px="10.5" preserveAspectRatio="xMidYMid meet">
           <style>
         :root {
             --background-color: #121212;
@@ -2797,6 +2863,14 @@
             font-weight: 700;
         }
 
+        #labels text.dense-label {
+            display: none;
+        }
+
+        #labels text.dense-label.hover-label {
+            display: block !important;
+        }
+
         .etc-svg-stage {
             position: relative;
             width: 100%;
@@ -2982,10 +3056,11 @@
                 const vb = getViewBox();
                 const unitsPerPx = vb[2] / widthPx;
 
+                const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
                 pointEls.forEach(c => {
                     const isTarget = c.classList.contains('target') || c.classList.contains('selected');
                     const isGuide = c.classList.contains('guide');
-                    const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);
+                    const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
                     c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
                 });
 
@@ -3371,6 +3446,18 @@
                 clearHover();
             });
 
+            svg.addEventListener('click', (event) => {
+                if (didDrag) return;
+                const pt = event.target.closest('circle[data-id]');
+                if (!pt) return;
+                const pid = pt.getAttribute('data-id') || '';
+                const m = pid.match(/^X_(\d+)$/);
+                if (m && typeof window !== 'undefined' && window.location && window.location.pathname.includes('/c-') && !window.location.pathname.includes('/x-')) {
+                    const slug = 'x-' + m[1].padStart(5, '0');
+                    window.location.href = `${slug}/index.html`;
+                }
+            });
+
             svg.addEventListener('dblclick', (event) => {
                 event.preventDefault();
                 resetView();
@@ -3424,7 +3511,7 @@
             <span class="n">central_line</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">X_23</span><span class="p">,</span> <span class="n">X_105</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">105</span><span class="p">)</span>
             <span class="n">X_1623</span> <span class="o">=</span> <span class="n">intersect_lines</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">X_3</span><span class="p">,</span> <span class="n">X_8</span><span class="p">,</span> <span class="n">X_23</span><span class="p">,</span> <span class="n">X_105</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"X_1623"</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"selected"</span><span class="p">,</span> <span class="s2">"target"</span><span class="p">])</span>
             <span class="n">X_36</span> <span class="o">=</span> <span class="n">eval_trilinear_point</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="s1">'1 - 2*cos(A)'</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"X_36"</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"center"</span><span class="p">,</span> <span class="s2">"incident"</span><span class="p">])</span>
-            <span class="n">X_1168</span> <span class="o">=</span> <span class="n">point_from_barycentrics</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.9444441e-07</span><span class="p">,</span> <span class="mf">0.99999992</span><span class="p">,</span> <span class="mf">2.7222218e-07</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"X_1168"</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"center"</span><span class="p">,</span> <span class="s2">"incident"</span><span class="p">])</span>
+            <span class="n">X_1168</span> <span class="o">=</span> <span class="n">point_from_barycentrics</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="mf">4.7580987e-17</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">6.6613381e-17</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"X_1168"</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"center"</span><span class="p">,</span> <span class="s2">"incident"</span><span class="p">])</span>
             <span class="n">central_line</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">X_36</span><span class="p">,</span> <span class="n">X_1168</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">1168</span><span class="p">,</span> <span class="n">incident</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
             <span class="k">return</span> <span class="n">promote_point_to_top</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">X_1623</span><span class="p">)</span>
 

@@ -22,7 +22,7 @@ X_191–X_236
 
 .. _preamble-0005:
 
-.. admonition:: Group Preamble — Centers X_191-X_236
+.. admonition:: Group Preamble — Centers X_191-X_236 (Ceva conjugates)
    :class: note
 
    Centers :ref:`X_191 <X_191>`-:ref:`X_236 <X_236>` are Ceva conjugates. (The P-Ceva conjugate of :g:`Q <Q>` is the perspector of the cevian triangle of :g:`P <P>` and the anticevian triangle of :g:`Q <Q>`.)

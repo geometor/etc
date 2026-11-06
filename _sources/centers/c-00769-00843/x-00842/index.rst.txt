@@ -50,7 +50,7 @@ X_842
    * :ref:`X_842 <X_842>` = reflection of :ref:`X_98 <X_98>` in the Euler line
    * :ref:`X_842 <X_842>` = reflection of :ref:`X_74 <X_74>` in the Brocard axis
    * :ref:`X_842 <X_842>` = inverse-in-circle-O(15,16) of :ref:`X_112 <X_112>`
-   * :ref:`X_842 <X_842>` = inverse-in-{circumcircle, nine-point circle}-inverter of X_3258
+   * :ref:`X_842 <X_842>` = inverse-in-{circumcircle, nine-point circle}-inverter of :ref:`X_3258 <X_3258>`
    * :ref:`X_842 <X_842>` = inverse-in-Moses-radical-circle of :ref:`X_111 <X_111>`
    * :ref:`X_842 <X_842>` = SR(P,U), where P and U are the circumcircle intercepts of the Fermat axis
    * :ref:`X_842 <X_842>` = 2nd-Parry-to-:g:`ABC << A B C >>` :term:`similarity image <similarity-image>` of :ref:`X_23 <X_23>`

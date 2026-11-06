@@ -22,7 +22,7 @@ X_2120–X_2147
 
 .. _preamble-0036:
 
-.. admonition:: Group Preamble — Eigencenters I, 2120 -2143
+.. admonition:: Group Preamble — Eigencenters I, 2120 -2143 (Eigencenters and eigentransforms)
    :class: note
 
    The eigencenter of a triangle is defined in the Glossary and in :cite:`TCCT <tcct>`, p. 192. In case the triangle is the cevian triangle of a point :g:`U <U>` =\ :math:`u : v : w`, the eigencenter is given by

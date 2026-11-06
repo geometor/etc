@@ -54,12 +54,12 @@ X_546
    * :ref:`X_546 <X_546>` = midpoint of X_i and X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`5 <X_5>`), (:ref:`382 <X_382>`, :ref:`550 <X_550>`)
    * :ref:`X_546 <X_546>` = reflection of X_i in X_j for these (i,j): (:ref:`140 <X_140>`, :ref:`5 <X_5>`), (:ref:`548 <X_548>`, :ref:`140 <X_140>`)
    * :ref:`X_546 <X_546>` = :term:`complement <complement>` of :ref:`X_550 <X_550>`
-   * :ref:`X_546 <X_546>` = :term:`anticomplement <anticomplement>` of X_3530
+   * :ref:`X_546 <X_546>` = :term:`anticomplement <anticomplement>` of :ref:`X_3530 <X_3530>`
    * :ref:`X_546 <X_546>` = circumcircle-inverse of X_37922
    * :ref:`X_546 <X_546>` = orthocentroidal-circle-inverse of :ref:`X_382 <X_382>`
    * :ref:`X_546 <X_546>` = :ref:`X_1385 <X_1385>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X_546 <X_546>` = :ref:`X_5 <X_5>`-of-Euler-triangle
-   * :ref:`X_546 <X_546>` = {:ref:`X_3 <X_3>`,\ :ref:`X_5 <X_5>`}-harmonic conjugate of X_3628
+   * :ref:`X_546 <X_546>` = {:ref:`X_3 <X_3>`,\ :ref:`X_5 <X_5>`}-harmonic conjugate of :ref:`X_3628 <X_3628>`
    * :ref:`X_546 <X_546>` = :ref:`X_5 <X_5>`-of-Ehrmann-mid-triangle
    * :ref:`X_546 <X_546>` = Ehrmann-side-to-orthic :term:`similarity image <similarity-image>` of :ref:`X_5 <X_5>`
    * :ref:`X_546 <X_546>` = Johnson-to-Ehrmann-mid similarity image of :ref:`X_5 <X_5>`

@@ -49,13 +49,13 @@ X_908
    * :ref:`X_908 <X_908>` = reflection of :ref:`X_1512 <X_1512>` in :ref:`X_119 <X_119>`
    * :ref:`X_908 <X_908>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_909 <X_909>`
    * :ref:`X_908 <X_908>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_34234
-   * :ref:`X_908 <X_908>` = :term:`anticomplement <anticomplement>` of X_3911
-   * :ref:`X_908 <X_908>` = :term:`complement <complement>` of X_3218
+   * :ref:`X_908 <X_908>` = :term:`anticomplement <anticomplement>` of :ref:`X_3911 <X_3911>`
+   * :ref:`X_908 <X_908>` = :term:`complement <complement>` of :ref:`X_3218 <X_3218>`
    * :ref:`X_908 <X_908>` = crosssum of :ref:`X_41 <X_41>` and :ref:`X_902 <X_902>`
    * :ref:`X_908 <X_908>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_31 <X_31>`\ \ :ref:`X_663 <X_663>`
    * :ref:`X_908 <X_908>` = inverse-in-circumconic-centered-at-:ref:`X_9 <X_9>` of :ref:`X_63 <X_63>`
    * :ref:`X_908 <X_908>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_1145 <X_1145>`\ \ :ref:`X_1769 <X_1769>`
-   * :ref:`X_908 <X_908>` = {:ref:`X_2 <X_2>`,\ :ref:`X_7 <X_7>`}-harmonic conjugate of X_3306
+   * :ref:`X_908 <X_908>` = {:ref:`X_2 <X_2>`,\ :ref:`X_7 <X_7>`}-harmonic conjugate of :ref:`X_3306 <X_3306>`
    * :ref:`X_908 <X_908>` = polar conjugate of X_36123
    * :ref:`X_908 <X_908>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X_36123 (line :ref:`X_19 <X_19>`\ \ :ref:`X_649 <X_649>`)
    * :ref:`X_908 <X_908>` = homothetic center of the complement of the :term:`excentral triangle <excentral-triangle>` and the anticomplement of the :term:`intouch triangle <intouch-triangle>`

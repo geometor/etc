@@ -24,7 +24,7 @@ X_1745
    :class: note
 
    * **Central Lines:** :g:`{1, 4} <{ 1, 4 }>`, :g:`{43, 46} <{ 43, 46 }>`
-   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_43 <X_43>` (:ref:`-CEVA CONJUGATE OF X(1) <X_43>`), :g:`X_46 <X_46>` (:ref:`-CEVA CONJUGATE OF X(1) <X_46>`)
+   * **Related Centers:** :g:`X_3362 <X_3362>` (:ref:`ISOGONAL CONJUGATE OF X(1745) <X_3362>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_43 <X_43>` (:ref:`-CEVA CONJUGATE OF X(1) <X_43>`), :g:`X_46 <X_46>` (:ref:`-CEVA CONJUGATE OF X(1) <X_46>`)
 
 .. signature:: center
 
@@ -45,7 +45,7 @@ X_1745
 .. collapse:: Functional Relations
    :badge: 7 relations
 
-   * :ref:`X_1745 <X_1745>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3362
+   * :ref:`X_1745 <X_1745>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3362 <X_3362>`
    * :ref:`X_1745 <X_1745>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`1 <X_1>`), (:ref:`1935 <X_1935>`, :ref:`1046 <X_1046>`)
    * :ref:`X_1745 <X_1745>` = :ref:`X_1148 <X_1148>`-cross conjugate of :ref:`X_1 <X_1>`
    * :ref:`X_1745 <X_1745>` = {:ref:`X_4 <X_4>`,\ :ref:`X_73 <X_73>`}-harmonic conjugate of :ref:`X_1 <X_1>`

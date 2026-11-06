@@ -50,13 +50,13 @@ X_934
    :badge: 20 relations
 
    * :ref:`X_934 <X_934>` = reflection of :ref:`X_972 <X_972>` in :ref:`X_3 <X_3>`
-   * :ref:`X_934 <X_934>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3900
+   * :ref:`X_934 <X_934>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3900 <X_3900>`
    * :ref:`X_934 <X_934>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_4397
    * :ref:`X_934 <X_934>` = :ref:`X_513 <X_513>`-cross conjugate of :ref:`X_57 <X_57>`
    * :ref:`X_934 <X_934>` = perspector of :g:`ABC << A B C >>` and triangle formed by line :ref:`X_3 <X_3>`\ \ :ref:`X_9 <X_9>` reflected in sides of :g:`ABC << A B C >>`
    * :ref:`X_934 <X_934>` = concurrence of reflections in sides of :g:`ABC << A B C >>` of line :ref:`X_4 <X_4>`\ \ :ref:`X_7 <X_7>`
    * :ref:`X_934 <X_934>` = Λ(:ref:`X_650 <X_650>`, :ref:`X_663 <X_663>`) (Λ(:term:`trilinear polar <trilinear-polar>` of :ref:`X_9 <X_9>`)
-   * :ref:`X_934 <X_934>` = Λ(X_3064, X_3700) (Λ(trilinear polar of :ref:`X_281 <X_281>`)
+   * :ref:`X_934 <X_934>` = Λ(:ref:`X_3064 <X_3064>`, :ref:`X_3700 <X_3700>`) (Λ(trilinear polar of :ref:`X_281 <X_281>`)
    * :ref:`X_934 <X_934>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_6 <X_6>`\ \ :ref:`X_57 <X_57>`
    * :ref:`X_934 <X_934>` = polar-circle-inverse of X_38966
    * :ref:`X_934 <X_934>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of X_23971

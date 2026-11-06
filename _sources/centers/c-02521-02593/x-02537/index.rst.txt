@@ -30,7 +30,7 @@ X_2537
 
    | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = bc[(b + c)r - ad \cos A]`, where :math:`d = (r^{2} + s^{2})^{1/2}`
    | **Barycentrics:** :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
-   | **Search Value (6, 9, 13):** :math:`-67.979408731529`
+   | **Search Value (6, 9, 13):** :math:`-67.979408731532`
 
 .. collapse:: Incident Central Lines
    :badge: 7 lines

@@ -53,7 +53,7 @@ X_65
    * :ref:`X_65 <X_65>` = reflection of X_i in X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`942 <X_942>`), (:ref:`72 <X_72>`, :ref:`10 <X_10>`)
    * :ref:`X_65 <X_65>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_21 <X_21>`
    * :ref:`X_65 <X_65>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_314 <X_314>`
-   * :ref:`X_65 <X_65>` = :term:`complement <complement>` of X_3869
+   * :ref:`X_65 <X_65>` = :term:`complement <complement>` of :ref:`X_3869 <X_3869>`
    * :ref:`X_65 <X_65>` = :term:`anticomplement <anticomplement>` of :ref:`X_960 <X_960>`
    * :ref:`X_65 <X_65>` = circumcircle-inverse of X_5172
    * :ref:`X_65 <X_65>` = incircle-inverse of :ref:`X_1319 <X_1319>`
@@ -75,7 +75,7 @@ X_65
    * :ref:`X_65 <X_65>` = :ref:`X_40 <X_40>` of Mandart-incircle triangle
    * :ref:`X_65 <X_65>` = homothetic center of :term:`intangents triangle <intangents-triangle>` and reflection of extangents triangle in :ref:`X_40 <X_40>`
    * :ref:`X_65 <X_65>` = homothetic center of extangents triangle and reflection of intangents triangle in :ref:`X_1 <X_1>`
-   * :ref:`X_65 <X_65>` = reflection of X_3057 in :ref:`X_1 <X_1>`
+   * :ref:`X_65 <X_65>` = reflection of :ref:`X_3057 <X_3057>` in :ref:`X_1 <X_1>`
    * :ref:`X_65 <X_65>` = {:ref:`X_1 <X_1>`,\ :ref:`X_3 <X_3>`}-harmonic conjugate of :ref:`X_2646 <X_2646>`
    * :ref:`X_65 <X_65>` = {:ref:`X_1 <X_1>`,\ :ref:`X_57 <X_57>`}-harmonic conjugate of :ref:`X_56 <X_56>`
    * :ref:`X_65 <X_65>` = {P,Q}-harmonic conjugate of :ref:`X_1463 <X_1463>`, where :g:`P <P>` and :g:`Q <Q>` are the intersections of the incircle and line :ref:`X_7 <X_7>`\ \ :ref:`X_8 <X_8>`

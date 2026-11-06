@@ -61,7 +61,7 @@ X_37
    * :ref:`X_37 <X_37>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_274 <X_274>`
    * :ref:`X_37 <X_37>` = :term:`complement <complement>` of :ref:`X_75 <X_75>`
    * :ref:`X_37 <X_37>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X_2887 <X_2887>`
-   * :ref:`X_37 <X_37>` = :term:`anticomplement <anticomplement>` of X_3739
+   * :ref:`X_37 <X_37>` = :term:`anticomplement <anticomplement>` of :ref:`X_3739 <X_3739>`
    * :ref:`X_37 <X_37>` = circumcircle-inverse of X_32758
    * :ref:`X_37 <X_37>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`42 <X_42>`), (:ref:`2 <X_2>`, :ref:`10 <X_10>`), (:ref:`4 <X_4>`, :ref:`209 <X_209>`), (:ref:`9 <X_9>`, :ref:`71 <X_71>`), (:ref:`10 <X_10>`, :ref:`210 <X_210>`), (:ref:`190 <X_190>`, :ref:`513 <X_513>`), (:ref:`226 <X_226>`, :ref:`65 <X_65>`), (:ref:`321 <X_321>`, :ref:`72 <X_72>`), (:ref:`335 <X_335>`, :ref:`518 <X_518>`)
    * :ref:`X_37 <X_37>` = :term:`cevapoint <cevapoint>` of :ref:`X_213 <X_213>` and :ref:`X_228 <X_228>`

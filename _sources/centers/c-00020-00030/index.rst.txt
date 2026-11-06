@@ -22,7 +22,7 @@ X_20–X_30
 
 .. _preamble-0001:
 
-.. admonition:: Group Preamble — Centers 20-30
+.. admonition:: Group Preamble — Centers 20-30 (Points on the Euler line)
    :class: note
 
    | 2- 5, 140, 186, 199, 235, 237, 297, 376- 379,381- 384,

@@ -23,8 +23,8 @@ X_1216
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{3, 49} <{ 3, 49 }>`, :g:`{2, 52} <{ 2, 52 }>`
-   * **Related Centers:** :g:`X_1179 <X_1179>` (:ref:`1st SARAGOSSA POINT OF X(96) <X_1179>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_49 <X_49>` (:ref:`CENTER OF SINE-TRIPLE-ANGLE CIRCLE <X_49>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_52 <X_52>` (:ref:`ORTHOCENTER OF ORTHIC TRIANGLE <X_52>`)
+   * **Central Lines:** :g:`{1352, 3313} <{ 1352, 3313 }>`
+   * **Related Centers:** :g:`X_1352 <X_1352>` (:ref:`REFLECTION OF X(6) IN X(5) <X_1352>`), :g:`X_3313 <X_3313>` (:ref:`INTERSECTION OF LINES X <X_3313>`)
 
 .. signature:: center
 
@@ -40,7 +40,7 @@ X_1216
 .. collapse:: Functional Relations
    :badge: 11 relations
 
-   * :ref:`X_1216 <X_1216>` = midpoint of :ref:`X_1352 <X_1352>` and X_3313
+   * :ref:`X_1216 <X_1216>` = midpoint of :ref:`X_1352 <X_1352>` and :ref:`X_3313 <X_3313>`
    * :ref:`X_1216 <X_1216>` = reflection of :ref:`X_389 <X_389>` in :ref:`X_140 <X_140>`
    * :ref:`X_1216 <X_1216>` = isogonal conjugate of :ref:`X_1179 <X_1179>`
    * :ref:`X_1216 <X_1216>` = :term:`isotomic conjugate <isotomic-conjugate>` of isogonal conjugate of X_23195

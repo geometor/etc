@@ -41,8 +41,8 @@ X_2558
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X_2558 <X_2558>` = {:ref:`X_1687 <X_1687>`,\ :ref:`X_1688 <X_1688>`}-harmonic conjugate of X_3557
-   * :ref:`X_2558 <X_2558>` = homothetic center of 6th anti-Brocard triangle and circumcevian triangle of X_3414
+   * :ref:`X_2558 <X_2558>` = {:ref:`X_1687 <X_1687>`,\ :ref:`X_1688 <X_1688>`}-harmonic conjugate of :ref:`X_3557 <X_3557>`
+   * :ref:`X_2558 <X_2558>` = homothetic center of 6th anti-Brocard triangle and circumcevian triangle of :ref:`X_3414 <X_3414>`
 
 .. toctree::
    :hidden:

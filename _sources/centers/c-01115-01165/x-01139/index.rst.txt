@@ -23,8 +23,8 @@ X_1139
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{6, 1140} <{ 6, 1140 }>`
-   * **Related Centers:** :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_1140 <X_1140>` (:ref:`INNER PENTAGON POINT <X_1140>`)
+   * **Central Lines:** :g:`{6, 1140} <{ 6, 1140 }>`, :g:`{1, 3369} <{ 1, 3369 }>`
+   * **Related Centers:** :g:`X_3394 <X_3394>` (:ref:`SIN(A + π/5) POINT <X_3394>`), :g:`X_3397 <X_3397>` (:ref:`SEC(A + 2π/5) POINT <X_3397>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_1140 <X_1140>` (:ref:`INNER PENTAGON POINT <X_1140>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_3369 <X_3369>` (:ref:`SIN(A - 2π/5) POINT <X_3369>`)
 
 .. signature:: center
 
@@ -41,13 +41,13 @@ X_1139
    :badge: 5 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, 3369}, {:ref:`3 <X_3>`, 3370}, {:ref:`4 <X_4>`, 3368}, {:ref:`5 <X_5>`, 3393}, {:ref:`6 <X_6>`, :ref:`1140 <X_1140>`}
+   {:ref:`1 <X_1>`, :ref:`3369 <X_3369>`}, {:ref:`3 <X_3>`, :ref:`3370 <X_3370>`}, {:ref:`4 <X_4>`, :ref:`3368 <X_3368>`}, {:ref:`5 <X_5>`, :ref:`3393 <X_3393>`}, {:ref:`6 <X_6>`, :ref:`1140 <X_1140>`}
 
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X_1139 <X_1139>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3396
-   * :ref:`X_1139 <X_1139>` = X_3394-:term:`cross conjugate <cross-conjugate>` of X_3397
+   * :ref:`X_1139 <X_1139>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3396 <X_3396>`
+   * :ref:`X_1139 <X_1139>` = :ref:`X_3394 <X_3394>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_3397 <X_3397>`
 
 .. toctree::
    :hidden:

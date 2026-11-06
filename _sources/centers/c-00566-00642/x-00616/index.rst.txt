@@ -51,7 +51,7 @@ X_616
    :badge: 8 relations
 
    * :ref:`X_616 <X_616>` = reflection of X_i in X_j for these (i,j): (:ref:`13 <X_13>`, :ref:`618 <X_618>`), (:ref:`148 <X_148>`, :ref:`14 <X_14>`), (:ref:`617 <X_617>`, :ref:`99 <X_99>`), (:ref:`621 <X_621>`, :ref:`298 <X_298>`)
-   * :ref:`X_616 <X_616>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3440
+   * :ref:`X_616 <X_616>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3440 <X_3440>`
    * :ref:`X_616 <X_616>` = :term:`anticomplement <anticomplement>` of :ref:`X_13 <X_13>`
    * :ref:`X_616 <X_616>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X_621 <X_621>`
    * :ref:`X_616 <X_616>` = :ref:`X_13 <X_13>`-of-anticomplementary-triangle

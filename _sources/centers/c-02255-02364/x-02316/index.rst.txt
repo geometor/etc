@@ -24,7 +24,7 @@ X_2316
    :class: note
 
    * **Central Lines:** :g:`{6, 101} <{ 6, 101 }>`, :g:`{57, 88} <{ 57, 88 }>`
-   * **Related Centers:** :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_101 <X_101>` (:ref:`Ψ(INCENTER, SYMMEDIAN POINT) <X_101>`), :g:`X_57 <X_57>` (:ref:`ISOGONAL CONJUGATE OF X(9) <X_57>`), :g:`X_88 <X_88>` (:ref:`ISOGONAL CONJUGATE OF X(44) <X_88>`)
+   * **Related Centers:** :g:`X_3911 <X_3911>` (:ref:`com[INTOUCH TRIANGLE))] <X_3911>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_101 <X_101>` (:ref:`Ψ(INCENTER, SYMMEDIAN POINT) <X_101>`), :g:`X_57 <X_57>` (:ref:`ISOGONAL CONJUGATE OF X(9) <X_57>`), :g:`X_88 <X_88>` (:ref:`ISOGONAL CONJUGATE OF X(44) <X_88>`)
 
 .. signature:: center
 
@@ -41,7 +41,7 @@ X_2316
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X_2316 <X_2316>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3911
+   * :ref:`X_2316 <X_2316>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3911 <X_3911>`
    * :ref:`X_2316 <X_2316>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`88 <X_88>`, :ref:`106 <X_106>`), (:ref:`1318 <X_1318>`, :ref:`55 <X_55>`)
    * :ref:`X_2316 <X_2316>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`2183 <X_2183>`), (:ref:`41 <X_41>`, :ref:`2361 <X_2361>`)
    * :ref:`X_2316 <X_2316>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`55 <X_55>`, :ref:`1318 <X_1318>`), (:ref:`654 <X_654>`, :ref:`101 <X_101>`), (:ref:`2323 <X_2323>`, :ref:`284 <X_284>`), (:ref:`2342 <X_2342>`, :ref:`102 <X_102>`)

@@ -29,7 +29,7 @@ X_1307
 .. signature:: center
 
    | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)` (see note above :ref:`X_1286 <X_1286>`)
-   | **Search Value (6, 9, 13):** :math:`6.974881938169`
+   | **Search Value (6, 9, 13):** :math:`12.208472871690`
 
 .. container:: note-item
 

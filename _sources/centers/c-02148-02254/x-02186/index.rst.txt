@@ -12,7 +12,7 @@ X_2186
 
 .. enunciation::
 
-   :ref:`X_2186 <X_2186>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3403
+   :ref:`X_2186 <X_2186>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3403 <X_3403>`
 
 .. figure:: x-02186.svg
    :alt: X_2186 — X_2-ISOCONJUGATE OF X_182
@@ -24,7 +24,7 @@ X_2186
    :class: note
 
    * **Central Lines:** :g:`{48, 82} <{ 48, 82 }>`, :g:`{10, 262} <{ 10, 262 }>`
-   * **Related Centers:** :g:`X_48 <X_48>` (:ref:`CROSSPOINT OF X(1) AND X(63) <X_48>`), :g:`X_82 <X_82>` (:ref:`ISOGONAL CONJUGATE OF X(38) <X_82>`), :g:`X_10 <X_10>` (:ref:`SPIEKER CENTER <X_10>`), :g:`X_262 <X_262>` (:ref:`ISOGONAL CONJUGATE OF X(182) <X_262>`)
+   * **Related Centers:** :g:`X_3403 <X_3403>` (:ref:`COT(A - ω) POINT <X_3403>`), :g:`X_48 <X_48>` (:ref:`CROSSPOINT OF X(1) AND X(63) <X_48>`), :g:`X_82 <X_82>` (:ref:`ISOGONAL CONJUGATE OF X(38) <X_82>`), :g:`X_10 <X_10>` (:ref:`SPIEKER CENTER <X_10>`), :g:`X_262 <X_262>` (:ref:`ISOGONAL CONJUGATE OF X(182) <X_262>`)
 
 .. signature:: center
 
@@ -41,7 +41,7 @@ X_2186
 .. collapse:: Functional Relations
    :badge: 1 relation
 
-   * :ref:`X_2186 <X_2186>` = isotomic conjugate of X_3403
+   * :ref:`X_2186 <X_2186>` = isotomic conjugate of :ref:`X_3403 <X_3403>`
 
 .. toctree::
    :hidden:

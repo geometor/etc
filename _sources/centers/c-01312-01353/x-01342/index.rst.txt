@@ -51,7 +51,7 @@ X_1342
 
    * :ref:`X_1342 <X_1342>` =(sec ω)\*\ :ref:`X_3 <X_3>` + 2\*\ :ref:`X_182 <X_182>` = (1 + sec ω)\*\ :ref:`X_3 <X_3>` + :ref:`X_6 <X_6>`
    * :ref:`X_1342 <X_1342>` = internal center of similitude of circumcircle and 1st Lemoine circle (Peter J. C. Moses, 4/2003; cf. :ref:`X_1343 <X_1343>`, :ref:`X_1670 <X_1670>`, :ref:`X_1671 <X_1671>`)
-   * :ref:`X_1342 <X_1342>` = reflection of :ref:`X_1343 <X_1343>` in X_3398
+   * :ref:`X_1342 <X_1342>` = reflection of :ref:`X_1343 <X_1343>` in :ref:`X_3398 <X_3398>`
    * :ref:`X_1342 <X_1342>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_5403
    * :ref:`X_1342 <X_1342>` = Brocard-circle-inverse of :ref:`X_1670 <X_1670>`
    * :ref:`X_1342 <X_1342>` = {X_i,X_j}-harmonic conjugate of X_k for these (i,j,k): (:ref:`371 <X_371>`, :ref:`372 <X_372>`, :ref:`1671 <X_1671>`), (:ref:`1687 <X_1687>`, :ref:`1688 <X_1688>`, :ref:`1343 <X_1343>`)

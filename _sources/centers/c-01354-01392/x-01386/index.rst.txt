@@ -49,7 +49,7 @@ X_1386
    * :ref:`X_1386 <X_1386>` = midpoint of :ref:`X_1 <X_1>` and :ref:`X_6 <X_6>`
    * :ref:`X_1386 <X_1386>` = reflection of :ref:`X_141 <X_141>` in :ref:`X_1125 <X_1125>`
    * :ref:`X_1386 <X_1386>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1390 <X_1390>`
-   * :ref:`X_1386 <X_1386>` = :term:`complement <complement>` of X_3416
+   * :ref:`X_1386 <X_1386>` = :term:`complement <complement>` of :ref:`X_3416 <X_3416>`
    * :ref:`X_1386 <X_1386>` = :term:`crosspoint <crosspoint>` of :ref:`X_1 <X_1>` and :ref:`X_985 <X_985>`
    * :ref:`X_1386 <X_1386>` = :term:`crosssum <crosssum>` of :ref:`X_1 <X_1>` and :ref:`X_984 <X_984>`
 

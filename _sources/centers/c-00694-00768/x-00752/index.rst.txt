@@ -41,7 +41,7 @@ X_752
    :badge: 3 relations
 
    * :ref:`X_752 <X_752>` = isogonal conjugate of :ref:`X_753 <X_753>`
-   * :ref:`X_752 <X_752>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_6 <X_6>`\ X_3250
+   * :ref:`X_752 <X_752>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_6 <X_6>`\ \ :ref:`X_3250 <X_3250>`
    * :ref:`X_752 <X_752>` = barycentric cube root of X_8032
 
 .. toctree::

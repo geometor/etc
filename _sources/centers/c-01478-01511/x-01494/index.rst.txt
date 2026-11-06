@@ -49,7 +49,7 @@ X_1494
    * :ref:`X_1494 <X_1494>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1495 <X_1495>`
    * :ref:`X_1494 <X_1494>` = isotomic conjugate of :ref:`X_30 <X_30>`
    * :ref:`X_1494 <X_1494>` = :term:`complement <complement>` of X_39358
-   * :ref:`X_1494 <X_1494>` = :term:`anticomplement <anticomplement>` of X_3163
+   * :ref:`X_1494 <X_1494>` = :term:`anticomplement <anticomplement>` of :ref:`X_3163 <X_3163>`
    * :ref:`X_1494 <X_1494>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`30 <X_30>`), (:ref:`3 <X_3>`, :ref:`323 <X_323>`), (:ref:`298 <X_298>`, :ref:`299 <X_299>`)
    * :ref:`X_1494 <X_1494>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`30 <X_30>`, :ref:`2 <X_2>`), (:ref:`340 <X_340>`, :ref:`95 <X_95>`)
    * :ref:`X_1494 <X_1494>` = antipode of :ref:`X_2 <X_2>` in hyperbola {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_2 <X_2>`,\ :ref:`X_69 <X_69>`}

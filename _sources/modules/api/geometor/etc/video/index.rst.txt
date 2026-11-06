@@ -1,0 +1,100 @@
+geometor.etc.video
+==================
+
+.. py:module:: geometor.etc.video
+
+.. autoapi-nested-parse::
+
+   Visual coordinate diagram generators and dual-format (9:16 + 16:9) video compiler for ETC centers.
+
+   Each per-center video focuses strictly on a single center X_n and its relations across 5 visual facets:
+     1. PRIMARY VIEW & ENUNCIATION (Thumbnail & Slide 1) — Exact primary construction SVG from the web page
+     2. HOMOGENEOUS COORDINATES OF X_n (Slide 2) — Trilinear distances (alpha : beta : gamma) and Barycentric sub-areas (u : v : w)
+     3. INCIDENT CENTRAL LINES (Slide 3) — Primary SVG with .show-lines active, revealing collinear centers and central lines
+     4. FUNCTIONAL RELATIONS & CONJUGATES (Slide 4) — Explorer-styled model plotting X_n with its conjugates and homothetic partners
+     5. FOUR REFERENCE TRIANGLES (Slide 5) — 2x2 invariance showcase across Acute, Right, Kepler, and Kimberling triangles
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.video.generate_center_coordinates_svg
+   geometor.etc.video.generate_central_lines_svg
+   geometor.etc.video.generate_relations_svg
+   geometor.etc.video.generate_trilinear_picture_svg
+   geometor.etc.video.generate_barycentric_picture_svg
+   geometor.etc.video.generate_coordinate_trio_svg
+   geometor.etc.video.generate_four_triangles_svg
+   geometor.etc.video.generate_construction_picture_svg
+   geometor.etc.video.ensure_center_incident_lines_in_model
+   geometor.etc.video.format_unified_script
+   geometor.etc.video.compile_scenes_from_script
+   geometor.etc.video.build_center_video_package
+
+
+Module Contents
+---------------
+
+.. py:function:: generate_center_coordinates_svg(num: int, title: str, trilinear_formula: str, barycentric_formula: str, ctx: geometor.etc.construct.TriangleContext, reg: geometor.etc.construct.CenterRegistry) -> str
+
+   Generate a 1000x760 SVG showing both Trilinear struts and Barycentric sub-areas for X_n.
+
+
+.. py:function:: generate_central_lines_svg(primary_svg_text: str) -> str
+
+   Return the primary web-page SVG with `.show-lines` active so all incident central lines and collinear centers appear.
+
+
+.. py:function:: generate_relations_svg(num: int, partner_nums: list[int], reg: geometor.etc.construct.CenterRegistry) -> str
+
+   Build and render an Explorer-styled `Model` SVG plotting X_n and its functional-relation partner centers.
+
+
+.. py:function:: generate_trilinear_picture_svg(num: int, title: str, trilinear_formula: str, ctx: geometor.etc.construct.TriangleContext, reg: geometor.etc.construct.CenterRegistry) -> str
+
+   Generate a 1000x760 SVG demonstrating Trilinear Coordinates (alpha : beta : gamma) in pictures.
+
+
+.. py:function:: generate_barycentric_picture_svg(num: int, title: str, barycentric_formula: str, ctx: geometor.etc.construct.TriangleContext, reg: geometor.etc.construct.CenterRegistry) -> str
+
+   Generate a 1000x760 SVG demonstrating Barycentric Coordinates (u : v : w = a*alpha : b*beta : c*gamma) in pictures.
+
+
+.. py:function:: generate_coordinate_trio_svg(ctx: geometor.etc.construct.TriangleContext, reg: geometor.etc.construct.CenterRegistry) -> str
+
+   Generate a 1000x760 SVG comparing X_1 (Incenter), X_2 (Centroid), and X_6 (Symmedian) in pictures.
+
+
+.. py:function:: generate_four_triangles_svg(num: int, regs_by_preset: dict[str, tuple[str, geometor.etc.construct.TriangleContext, geometor.etc.construct.CenterRegistry]]) -> str
+
+   Generate a 1000x760 2x2 SVG showing X_n across Acute, Right, Kepler, and Kimberling triangles.
+
+
+.. py:function:: generate_construction_picture_svg(num: int, title: str, enunciation: str, ctx: geometor.etc.construct.TriangleContext, reg: geometor.etc.construct.CenterRegistry, mode: str = 'identity') -> str
+
+   Generate a 1000x760 SVG in screen coordinates showing the geometric construction of X_n.
+
+
+.. py:function:: ensure_center_incident_lines_in_model(model: geometor.model.Model, num: int, reg: geometor.etc.construct.CenterRegistry) -> None
+
+   Ensure every `{a, b, ...}` central line referenced in `X_num`'s `s3` clause is present as an `.incident` line in `model`.
+
+
+.. py:function:: format_unified_script(scenes: list[dict[str, Any]], raw_script_text: str) -> str
+
+   Format a complete unified `script.txt` with top-level metadata, `[bell:...]` acts, `[screen:...]` directives, `zoom:` specs, and `say:` narration.
+
+
+.. py:function:: compile_scenes_from_script(script_text: str, svgs_dir: pathlib.Path) -> list[dict[str, Any]]
+
+   Compile a unified `script.txt` (containing `[bell:...]`, `[screen:...]`, `zoom:`, `active:`, `section:`, `row:`, `text:`, `just:`, `say:`) into `scenes.json` structure.
+
+
+.. py:function:: build_center_video_package(num: int, target_center: dict[str, Any], svgs_dir: pathlib.Path, acute_reg: geometor.etc.construct.CenterRegistry, kimberling_reg: geometor.etc.construct.CenterRegistry) -> tuple[str, list[dict[str, Any]], list[int]]
+
+   Build `(script_text, scenes_list, partner_nums)` for center `X_num` using the unified script format with `[screen:...]` and `zoom:` specs.
+
+

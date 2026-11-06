@@ -34,7 +34,7 @@ X_1093
    :badge: 5 relations
 
    * :ref:`X_1093 <X_1093>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1092 <X_1092>`
-   * :ref:`X_1093 <X_1093>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3964
+   * :ref:`X_1093 <X_1093>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3964 <X_3964>`
    * :ref:`X_1093 <X_1093>` = :ref:`X_235 <X_235>`-cross conjugate of :ref:`X_4 <X_4>`
    * :ref:`X_1093 <X_1093>` = polar conjugate of :ref:`X_394 <X_394>`
    * :ref:`X_1093 <X_1093>` = :ref:`X_978 <X_978>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute

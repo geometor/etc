@@ -66,7 +66,7 @@ X_389
    * :ref:`X_389 <X_389>` = :ref:`X_10 <X_10>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X_389 <X_389>` = :ref:`X_4 <X_4>`-of-1st-Hyacinth-triangle
    * :ref:`X_389 <X_389>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X_10 <X_10>`
-   * :ref:`X_389 <X_389>` = {:ref:`X_61 <X_61>`,\ :ref:`X_62 <X_62>`}-harmonic conjugate of X_3284
+   * :ref:`X_389 <X_389>` = {:ref:`X_61 <X_61>`,\ :ref:`X_62 <X_62>`}-harmonic conjugate of :ref:`X_3284 <X_3284>`
 
 Notes
 -----

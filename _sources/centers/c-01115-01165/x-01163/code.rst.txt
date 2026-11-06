@@ -8,7 +8,7 @@ X_1163
 
 .. enunciation::
 
-   :ref:`X_1163 <X_1163>` = :ref:`X_4 <X_4>`-:term:`Ceva conjugate <ceva-conjugate>` of X_3128
+   :ref:`X_1163 <X_1163>` = :ref:`X_4 <X_4>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_3128 <X_3128>`
 
 .. figure:: x-01163.svg
    :alt: X_1163 — INNER GREBE-ORTHIC PERSPECTOR

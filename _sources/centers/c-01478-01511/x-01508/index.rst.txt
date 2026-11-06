@@ -41,7 +41,7 @@ X_1508
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X_1508 <X_1508>` = SS(A → A/3) of X_3468
+   * :ref:`X_1508 <X_1508>` = SS(A → A/3) of :ref:`X_3468 <X_3468>`
    * :ref:`X_1508 <X_1508>` = perspector of excentral and 1st Morley adjunct triangles
 
 Notes

@@ -12,7 +12,7 @@ X_454
 
 .. enunciation::
 
-   :ref:`X_454 <X_454>` = X_3542-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_155 <X_155>`
+   :ref:`X_454 <X_454>` = :ref:`X_3542 <X_3542>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_155 <X_155>`
 
 .. figure:: x-00454.svg
    :alt: X_454 — EULER X_155-11th-SUBSTITUTION POINT
@@ -24,7 +24,7 @@ X_454
    :class: note
 
    * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`)
-   * **Related Centers:** :g:`X_155 <X_155>` (:ref:`EIGENCENTER OF ORTHIC TRIANGLE <X_155>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`)
+   * **Related Centers:** :g:`X_3542 <X_3542>` (:ref:`EULER LINE INTERCEPT OF LINE X <X_3542>`), :g:`X_155 <X_155>` (:ref:`EIGENCENTER OF ORTHIC TRIANGLE <X_155>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`)
 
 .. signature:: center
 
@@ -41,16 +41,16 @@ X_454
    :badge: 9 lines
    :class: line-catalog
 
-   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`155 <X_155>`, 6503}, {:ref:`1609 <X_1609>`, 34853}, {3964, 44405}, {9908, 16391}, {9937, 23181}, {12164, 34333}, {15316, 47195}, {20975, 38260}
+   {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`155 <X_155>`, 6503}, {:ref:`1609 <X_1609>`, 34853}, {:ref:`3964 <X_3964>`, 44405}, {9908, 16391}, {9937, 23181}, {12164, 34333}, {15316, 47195}, {20975, 38260}
 
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X_454 <X_454>` = X_3542-Ceva conjugate of :ref:`X_155 <X_155>`
+   * :ref:`X_454 <X_454>` = :ref:`X_3542 <X_3542>`-Ceva conjugate of :ref:`X_155 <X_155>`
    * :ref:`X_454 <X_454>` = :ref:`X_254 <X_254>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_921 <X_921>`
-   * :ref:`X_454 <X_454>` = barycentric product X_i\*X_j for these {i,j}: {:ref:`155 <X_155>`, 6515}, {:ref:`1609 <X_1609>`, 40697}, {3542, 6503}
+   * :ref:`X_454 <X_454>` = barycentric product X_i\*X_j for these {i,j}: {:ref:`155 <X_155>`, 6515}, {:ref:`1609 <X_1609>`, 40697}, {:ref:`3542 <X_3542>`, 6503}
    * :ref:`X_454 <X_454>` = barycentric quotient X_i/X_j for these {i,j}: {:ref:`155 <X_155>`, 6504}, {:ref:`1609 <X_1609>`, :ref:`254 <X_254>`}, {6515, 46746}
-   * :ref:`X_454 <X_454>` = {X_i,X_j}-harmonic conjugate of X_k for these (i,j,k): {:ref:`3 <X_3>`, 6617, 3548}
+   * :ref:`X_454 <X_454>` = {X_i,X_j}-harmonic conjugate of X_k for these (i,j,k): {:ref:`3 <X_3>`, 6617, :ref:`3548 <X_3548>`}
 
 Notes
 -----

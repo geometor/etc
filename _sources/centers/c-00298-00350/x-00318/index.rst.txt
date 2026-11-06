@@ -52,7 +52,7 @@ X_318
    * :ref:`X_318 <X_318>` = :ref:`X_264 <X_264>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_92 <X_92>`
    * :ref:`X_318 <X_318>` = :term:`cevapoint <cevapoint>` of :ref:`X_9 <X_9>` and :ref:`X_33 <X_33>`
    * :ref:`X_318 <X_318>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`9 <X_9>`, :ref:`312 <X_312>`), (:ref:`10 <X_10>`, :ref:`8 <X_8>`), (:ref:`281 <X_281>`, :ref:`92 <X_92>`)
-   * :ref:`X_318 <X_318>` = :term:`trilinear pole <trilinear-pole>` of line X_3064X_3239 (the radical axis of Mandart circle and excircles radical circle, and the polar of :ref:`X_57 <X_57>` wrt polar circle)
+   * :ref:`X_318 <X_318>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_3064 <X_3064>`\ \ :ref:`X_3239 <X_3239>` (the radical axis of Mandart circle and excircles radical circle, and the polar of :ref:`X_57 <X_57>` wrt polar circle)
    * :ref:`X_318 <X_318>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_57 <X_57>` (line :ref:`X_513 <X_513>`\ \ :ref:`X_663 <X_663>`)
    * :ref:`X_318 <X_318>` = polar conjugate of :ref:`X_57 <X_57>`
    * :ref:`X_318 <X_318>` = inverse-in-Fuhrmann-circle of X_5081

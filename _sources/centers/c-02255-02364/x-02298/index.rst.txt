@@ -12,7 +12,7 @@ X_2298
 
 .. enunciation::
 
-   :ref:`X_2298 <X_2298>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3666
+   :ref:`X_2298 <X_2298>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3666 <X_3666>`
 
 .. figure:: x-02298.svg
    :alt: X_2298 — X_2-ISOCONJUGATE OF X_1193
@@ -24,13 +24,13 @@ X_2298
    :class: note
 
    * **Central Lines:** :g:`{6, 8} <{ 6, 8 }>`, :g:`{9, 31} <{ 9, 31 }>`
-   * **Related Centers:** :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_8 <X_8>` (:ref:`NAGEL POINT <X_8>`), :g:`X_9 <X_9>` (:ref:`MITTENPUNKT <X_9>`), :g:`X_31 <X_31>` (:ref:`2nd POWER POINT <X_31>`)
+   * **Related Centers:** :g:`X_3666 <X_3666>` (:ref:`com(INTOUCH TRIANGLE) <X_3666>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_8 <X_8>` (:ref:`NAGEL POINT <X_8>`), :g:`X_9 <X_9>` (:ref:`MITTENPUNKT <X_9>`), :g:`X_31 <X_31>` (:ref:`2nd POWER POINT <X_31>`)
 
 .. signature:: center
 
    | **Trilinears:** :math:`a/f(a,b,c) : b/f(b,c,a) : c/f(c,a,b)`, where f(a,b,c) is as in :ref:`X_1193 <X_1193>`
    | **Barycentrics:** :math:`a^{2}/f(a,b,c) : b^{2}/f(b,c,a): c^{2}/f(c,a,b)`
-   | **Search Value (6, 9, 13):** :math:`0.117616583773`
+   | **Search Value (6, 9, 13):** :math:`1.523767095636`
 
 .. collapse:: Incident Central Lines
    :badge: 21 lines
@@ -41,7 +41,7 @@ X_2298
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X_2298 <X_2298>` = isogonal conjugate of X_3666
+   * :ref:`X_2298 <X_2298>` = isogonal conjugate of :ref:`X_3666 <X_3666>`
    * :ref:`X_2298 <X_2298>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_20911
    * :ref:`X_2298 <X_2298>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`171 <X_171>`), (:ref:`6 <X_6>`, :ref:`37 <X_37>`), (:ref:`55 <X_55>`, :ref:`213 <X_213>`)
    * :ref:`X_2298 <X_2298>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`1169 <X_1169>`), (:ref:`512 <X_512>`, :ref:`100 <X_100>`)

@@ -50,8 +50,8 @@ X_312
 
    * :ref:`X_312 <X_312>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_604 <X_604>`
    * :ref:`X_312 <X_312>` = isotomic conjugate of :ref:`X_57 <X_57>`
-   * :ref:`X_312 <X_312>` = :term:`complement <complement>` of X_3210
-   * :ref:`X_312 <X_312>` = :term:`anticomplement <anticomplement>` of X_3752
+   * :ref:`X_312 <X_312>` = :term:`complement <complement>` of :ref:`X_3210 <X_3210>`
+   * :ref:`X_312 <X_312>` = :term:`anticomplement <anticomplement>` of :ref:`X_3752 <X_3752>`
    * :ref:`X_312 <X_312>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`76 <X_76>`, :ref:`75 <X_75>`), (:ref:`304 <X_304>`, :ref:`322 <X_322>`), (:ref:`314 <X_314>`, :ref:`8 <X_8>`)
    * :ref:`X_312 <X_312>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`329 <X_329>`), (:ref:`8 <X_8>`, :ref:`346 <X_346>`), (:ref:`9 <X_9>`, :ref:`78 <X_78>`), (:ref:`306 <X_306>`, :ref:`321 <X_321>`)
    * :ref:`X_312 <X_312>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`8 <X_8>`, :ref:`75 <X_75>`), (:ref:`9 <X_9>`, :ref:`318 <X_318>`), (:ref:`306 <X_306>`, :ref:`345 <X_345>`), (:ref:`346 <X_346>`, :ref:`341 <X_341>`)
@@ -61,7 +61,7 @@ X_312
    * :ref:`X_312 <X_312>` = BSS(A→\ :g:`J_a <J_a>`) of :ref:`X_4 <X_4>`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the excentral triangle
    * :ref:`X_312 <X_312>` = barycentric product of vertices of Gemini triangle 27
    * :ref:`X_312 <X_312>` = perspector of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 27
-   * :ref:`X_312 <X_312>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_522 <X_522>`\ X_3717 (the polar of :ref:`X_34 <X_34>` wrt polar circle, and the radical axis of the circumcircles of the outer and inner Garcia triangles)
+   * :ref:`X_312 <X_312>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_522 <X_522>`\ \ :ref:`X_3717 <X_3717>` (the polar of :ref:`X_34 <X_34>` wrt polar circle, and the radical axis of the circumcircles of the outer and inner Garcia triangles)
 
 Notes
 -----

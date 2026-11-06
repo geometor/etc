@@ -22,7 +22,7 @@ X_1115–X_1165
 
 .. _preamble-0016:
 
-.. admonition:: Group Preamble — Centers 1115-1150
+.. admonition:: Group Preamble — Centers 1115-1150 (Centers X_1115-X_1150, Jan 10, 2003)
    :class: note
 
    were added to ETC on 1/10/03.

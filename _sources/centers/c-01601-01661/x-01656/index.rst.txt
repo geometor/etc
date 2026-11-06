@@ -67,7 +67,7 @@ X_1656
    * :ref:`X_1656 <X_1656>` = :ref:`X_1385 <X_1385>`-of-cross-triangle-of Aquila-and-anti-Aquila-triangles
    * :ref:`X_1656 <X_1656>` = homothetic center of :ref:`X_5 <X_5>`-altimedial and :ref:`X_3 <X_3>`-anti-altimedial triangles
    * :ref:`X_1656 <X_1656>` = homothetic center of :ref:`X_140 <X_140>`-altimedial and :ref:`X_140 <X_140>`-anti-altimedial triangles
-   * :ref:`X_1656 <X_1656>` = endo-homothetic center of Ehrmann mid-triangle and X3-:g:`ABC << A B C >>` reflections triangle; the homothetic center is X_3843
+   * :ref:`X_1656 <X_1656>` = endo-homothetic center of Ehrmann mid-triangle and X3-:g:`ABC << A B C >>` reflections triangle; the homothetic center is :ref:`X_3843 <X_3843>`
    * :ref:`X_1656 <X_1656>` = radical center of de Longchamps circles of :g:`ABC << A B C >>` and 1st and 2nd Ehrmann circumscribing triangles
 
 Notes

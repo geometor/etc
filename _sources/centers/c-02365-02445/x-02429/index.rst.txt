@@ -46,7 +46,7 @@ X_2429
    :badge: 2 relations
 
    * :ref:`X_2429 <X_2429>` = isogonal conjugate of :ref:`X_2403 <X_2403>`
-   * :ref:`X_2429 <X_2429>` = :term:`crossdifference <crossdifference>` of every pair of points on line X_3667X_3756 (the Simson line of :ref:`X_106 <X_106>`)
+   * :ref:`X_2429 <X_2429>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_3667 <X_3667>`\ \ :ref:`X_3756 <X_3756>` (the Simson line of :ref:`X_106 <X_106>`)
 
 .. toctree::
    :hidden:

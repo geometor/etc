@@ -23,10 +23,9 @@ X_1357
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Derived Triangle:** :term:`Intouch (Contact) Triangle <intouch triangle>` :g:`△T_aT_bT_c << T_a T_b T_c >>` — vertices :g:`T_a <T_a>`, :g:`T_b <T_b>`, :g:`T_c <T_c>` (Contact triangle of Incircle touchpoints on BC, CA, AB)
-   * **Circle:** :term:`Incircle <incircle>` (:g:`incircle <incircle>`) — Inscribed circle tangent to sidelines at T_a, T_b, T_c; centered at X_1 INCENTER
-   * **Concurrence Lines:** :g:`T_a–X_1357 <[ T_a X_1357 ]>`, :g:`T_b–X_1357 <[ T_b X_1357 ]>`, :g:`T_c–X_1357 <[ T_c X_1357 ]>` concurring at :g:`X_1357 <X_1357>`
-   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`)
+   * **Derived Triangle:** :term:`Anticomplementary Triangle <anticomplementary triangle>` :g:`△K_aK_bK_c << K_a K_b K_c >>` — vertices :g:`K_a <K_a>`, :g:`K_b <K_b>`, :g:`K_c <K_c>` (Formed by lines through A, B, C parallel to opposite sides)
+   * **Central Lines:** :g:`{2, 3038} <{ 2, 3038 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3038 <X_3038>` (:ref:`COMPLEMENT OF X(1357) <X_3038>`)
 
 .. signature:: center
 
@@ -47,7 +46,7 @@ X_1357
    :badge: 10 relations
 
    * :ref:`X_1357 <X_1357>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_4076
-   * :ref:`X_1357 <X_1357>` = :term:`anticomplement <anticomplement>` of X_3038
+   * :ref:`X_1357 <X_1357>` = :term:`anticomplement <anticomplement>` of :ref:`X_3038 <X_3038>`
    * :ref:`X_1357 <X_1357>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`55 <X_55>`, :ref:`644 <X_644>`), (:ref:`100 <X_100>`, :ref:`145 <X_145>`), (:ref:`190 <X_190>`, :ref:`344 <X_344>`)
    * :ref:`X_1357 <X_1357>` = :ref:`X_107 <X_107>`-of-intouch triangle
    * :ref:`X_1357 <X_1357>` = :ref:`X_1293 <X_1293>`-of-Mandart-incircle-triangle

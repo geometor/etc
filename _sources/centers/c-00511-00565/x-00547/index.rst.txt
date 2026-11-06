@@ -61,7 +61,7 @@ X_547
    * :ref:`X_547 <X_547>` = center of the Vu pedal-centroidal circle of :ref:`X_5 <X_5>`
    * :ref:`X_547 <X_547>` = {X_35231,X_35232}-harmonic conjugate of X_37952
    * :ref:`X_547 <X_547>` = pole of Fermat axis wrt conic {:ref:`X_5 <X_5>`,\ :ref:`X_13 <X_13>`,\ :ref:`X_14 <X_14>`,\ :ref:`X_15 <X_15>`,\ :ref:`X_16 <X_16>`}}
-   * :ref:`X_547 <X_547>` = {:ref:`X_3 <X_3>`,\ :ref:`X_4 <X_4>`}-harmonic conjugate of X_3627
+   * :ref:`X_547 <X_547>` = {:ref:`X_3 <X_3>`,\ :ref:`X_4 <X_4>`}-harmonic conjugate of :ref:`X_3627 <X_3627>`
 
 Notes
 -----

@@ -45,7 +45,7 @@ X_1084
 .. collapse:: Functional Relations
    :badge: 22 relations
 
-   * :ref:`X_1084 <X_1084>` = midpoint of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`694 <X_694>`),(:ref:`2 <X_2>`, 3228)
+   * :ref:`X_1084 <X_1084>` = midpoint of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`694 <X_694>`),(:ref:`2 <X_2>`, :ref:`3228 <X_3228>`)
    * :ref:`X_1084 <X_1084>` = reflection of X_35073 in :ref:`X_2 <X_2>`
    * :ref:`X_1084 <X_1084>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_34537
    * :ref:`X_1084 <X_1084>` = :term:`complement <complement>` of :ref:`X_670 <X_670>`
@@ -57,7 +57,7 @@ X_1084
    * :ref:`X_1084 <X_1084>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_1645 <X_1645>`\ X_23099
    * :ref:`X_1084 <X_1084>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_99 <X_99>`\ \ :ref:`X_670 <X_670>`
    * :ref:`X_1084 <X_1084>` = center of the circumconic {{:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_2 <X_2>`,\ :ref:`X_6 <X_6>`}}
-   * :ref:`X_1084 <X_1084>` = projection from Steiner circumellipse to Steiner inellipse of X_3228
+   * :ref:`X_1084 <X_1084>` = projection from Steiner circumellipse to Steiner inellipse of :ref:`X_3228 <X_3228>`
    * :ref:`X_1084 <X_1084>` = Steiner-inellipse-antipode of X_35073
    * :ref:`X_1084 <X_1084>` = perspector of circumconic centered at :ref:`X_512 <X_512>` (parabola {{:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_512 <X_512>`,\ :ref:`X_669 <X_669>`}})
    * :ref:`X_1084 <X_1084>` = intersection of :term:`trilinear polars <trilinear-polar>` of :ref:`X_512 <X_512>` and :ref:`X_669 <X_669>`

@@ -42,7 +42,7 @@ X_912
    * :ref:`X_912 <X_912>` = isogonal conjugate of :ref:`X_915 <X_915>`
    * :ref:`X_912 <X_912>` = :term:`isotomic conjugate <isotomic-conjugate>` of polar conjugate of X_8609
    * :ref:`X_912 <X_912>` = :ref:`X_104 <X_104>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_3 <X_3>`
-   * :ref:`X_912 <X_912>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_6 <X_6>`\ X_3657
+   * :ref:`X_912 <X_912>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_6 <X_6>`\ \ :ref:`X_3657 <X_3657>`
    * :ref:`X_912 <X_912>` = :ref:`X_19 <X_19>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_2990 <X_2990>`
    * :ref:`X_912 <X_912>` = :ref:`X_92 <X_92>`-isoconjugate of X_32655
 

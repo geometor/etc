@@ -41,7 +41,7 @@ X_997
 .. collapse:: Functional Relations
    :badge: 2 relations
 
-   * :ref:`X_997 <X_997>` = midpoint of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`200 <X_200>`), (3421, 3476)
+   * :ref:`X_997 <X_997>` = midpoint of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`200 <X_200>`), (:ref:`3421 <X_3421>`, :ref:`3476 <X_3476>`)
    * :ref:`X_997 <X_997>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_998 <X_998>`
 
 .. toctree::

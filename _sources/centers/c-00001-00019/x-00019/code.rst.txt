@@ -8,7 +8,7 @@ X_19
 
 .. enunciation::
 
-   :ref:`X_19 <X_19>` is the homothetic center of the orthic and :term:`extangents triangles <extangents-triangle>`. The Ayme triangle, constructed at X_3610, is perspective to :g:`ABC << A B C >>` with perspector :ref:`X_19 <X_19>`.
+   :ref:`X_19 <X_19>` is the homothetic center of the orthic and :term:`extangents triangles <extangents-triangle>`. The Ayme triangle, constructed at :ref:`X_3610 <X_3610>`, is perspective to :g:`ABC << A B C >>` with perspector :ref:`X_19 <X_19>`.
 
 .. figure:: x-00019.svg
    :alt: X_19 — CLAWSON POINT

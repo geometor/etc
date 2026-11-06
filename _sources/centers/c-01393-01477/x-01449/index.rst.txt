@@ -50,7 +50,7 @@ X_1449
    * :ref:`X_1449 <X_1449>` = :term:`anticomplement <anticomplement>` of X_32099
    * :ref:`X_1449 <X_1449>` = {:ref:`X_1 <X_1>`,\ :ref:`X_6 <X_6>`}-harmonic conjugate of :ref:`X_9 <X_9>`
    * :ref:`X_1449 <X_1449>` = :ref:`X_391 <X_391>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X_391 <X_391>`
-   * :ref:`X_1449 <X_1449>` = {:ref:`X_1 <X_1>`,\ :ref:`X_9 <X_9>`}-harmonic conjugate of X_3247
+   * :ref:`X_1449 <X_1449>` = {:ref:`X_1 <X_1>`,\ :ref:`X_9 <X_9>`}-harmonic conjugate of :ref:`X_3247 <X_3247>`
 
 .. toctree::
    :hidden:

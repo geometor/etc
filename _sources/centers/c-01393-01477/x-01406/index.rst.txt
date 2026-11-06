@@ -42,7 +42,7 @@ X_1406
    :badge: 3 relations
 
    * :ref:`X_1406 <X_1406>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_36626
-   * :ref:`X_1406 <X_1406>` = :term:`crossdifference <crossdifference>` of every pair of points on line X_3239X_35057
+   * :ref:`X_1406 <X_1406>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_3239 <X_3239>`\ X_35057
    * :ref:`X_1406 <X_1406>` = :ref:`X_34 <X_34>`-Ceva conjugate of :ref:`X_56 <X_56>`
 
 .. toctree::

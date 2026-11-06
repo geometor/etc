@@ -42,7 +42,7 @@ X_694
 
    * :ref:`X_694 <X_694>` = reflection of X_i in X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`1084 <X_1084>`), (:ref:`670 <X_670>`, :ref:`141 <X_141>`)
    * :ref:`X_694 <X_694>` = isogonal conjugate of :ref:`X_385 <X_385>`
-   * :ref:`X_694 <X_694>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3978
+   * :ref:`X_694 <X_694>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3978 <X_3978>`
    * :ref:`X_694 <X_694>` = :term:`anticomplement <anticomplement>` of X_39080
    * :ref:`X_694 <X_694>` = :term:`crossdifference <crossdifference>` of PU(185)
    * :ref:`X_694 <X_694>` = perspector of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_805 <X_805>`,X_18829,X_36897}}

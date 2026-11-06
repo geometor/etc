@@ -21,6 +21,8 @@ Functions
 
    geometor.etc.ingest.slugify
    geometor.etc.ingest.read_html_source
+   geometor.etc.ingest.parse_preambles_guide
+   geometor.etc.ingest.enrich_preambles_with_guide
    geometor.etc.ingest.ingest_folder
 
 
@@ -35,6 +37,16 @@ Module Contents
 .. py:function:: read_html_source(path: str | pathlib.Path) -> str
 
    Read an ETC HTML file, stripping any binary wrapper bytes and normalizing newlines.
+
+
+.. py:function:: parse_preambles_guide(guide_path: str | pathlib.Path) -> dict[str, Any]
+
+   Parse `Guide_to_preambles_in_ETC.html` into structured preamble entries across Parts 1–37.
+
+
+.. py:function:: enrich_preambles_with_guide(preambles_by_center: dict[str, list[dict[str, Any]]], guide_data: dict[str, Any]) -> None
+
+   Enrich `preambles_by_center` in-place with ranges and titles from `Guide_to_preambles_in_ETC.html`.
 
 
 .. py:function:: ingest_folder(input_folder: str | pathlib.Path, output_folder: str | pathlib.Path) -> dict[str, Any]

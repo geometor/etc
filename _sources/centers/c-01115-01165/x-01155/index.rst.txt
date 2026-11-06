@@ -51,7 +51,7 @@ X_1155
 .. collapse:: Functional Relations
    :badge: 17 relations
 
-   * :ref:`X_1155 <X_1155>` = midpoint of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, 3245), (:ref:`36 <X_36>`, :ref:`484 <X_484>`), (32622, 32623)
+   * :ref:`X_1155 <X_1155>` = midpoint of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`3245 <X_3245>`), (:ref:`36 <X_36>`, :ref:`484 <X_484>`), (32622, 32623)
    * :ref:`X_1155 <X_1155>` = reflection of :ref:`X_1319 <X_1319>` in :ref:`X_36 <X_36>`
    * :ref:`X_1155 <X_1155>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1156 <X_1156>`
    * :ref:`X_1155 <X_1155>` = inverse-in-circumcircle of :ref:`X_55 <X_55>`

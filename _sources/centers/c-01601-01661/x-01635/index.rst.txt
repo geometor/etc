@@ -41,7 +41,7 @@ X_1635
    :badge: 14 relations
 
    * :ref:`X_1635 <X_1635>` = reflection of :ref:`X_1962 <X_1962>` in :ref:`X_351 <X_351>`
-   * :ref:`X_1635 <X_1635>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3257
+   * :ref:`X_1635 <X_1635>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3257 <X_3257>`
    * :ref:`X_1635 <X_1635>` = :term:`complement <complement>` of X_21297
    * :ref:`X_1635 <X_1635>` = :term:`anticomplement <anticomplement>` of X_4928
    * :ref:`X_1635 <X_1635>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`2 <X_2>`, 38979), (:ref:`44 <X_44>`, :ref:`2087 <X_2087>`), (:ref:`88 <X_88>`, :ref:`244 <X_244>`), (:ref:`104 <X_104>`, :ref:`2310 <X_2310>`), (:ref:`662 <X_662>`, :ref:`214 <X_214>`), (:ref:`1022 <X_1022>`, :ref:`513 <X_513>`), (:ref:`1023 <X_1023>`, :ref:`44 <X_44>`), (:ref:`2161 <X_2161>`, :ref:`2170 <X_2170>`)
@@ -51,7 +51,7 @@ X_1635
    * :ref:`X_1635 <X_1635>` = bicentric sum of PU(34)
    * :ref:`X_1635 <X_1635>` = perspector of hyperbola {{:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_1 <X_1>`,\ :ref:`X_44 <X_44>`}}
    * :ref:`X_1635 <X_1635>` = PU(34)-harmonic conjugate of :ref:`X_244 <X_244>`
-   * :ref:`X_1635 <X_1635>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_2087 <X_2087>`\ X_3251
+   * :ref:`X_1635 <X_1635>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_2087 <X_2087>`\ \ :ref:`X_3251 <X_3251>`
    * :ref:`X_1635 <X_1635>` = centroid of antiorthic axis intercepts with sidelines of :g:`ABC << A B C >>`
    * :ref:`X_1635 <X_1635>` = :ref:`X_647 <X_647>`-of-2nd-extouch-triangle
 

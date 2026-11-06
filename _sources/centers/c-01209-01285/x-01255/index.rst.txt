@@ -45,7 +45,7 @@ X_1255
    * :ref:`X_1255 <X_1255>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`37 <X_37>`), (:ref:`6 <X_6>`, :ref:`35 <X_35>`)
    * :ref:`X_1255 <X_1255>` = :term:`crosssum <crosssum>` of :ref:`X_1 <X_1>` and :ref:`X_1051 <X_1051>`
    * :ref:`X_1255 <X_1255>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_484 <X_484>`\ \ :ref:`X_513 <X_513>`
-   * :ref:`X_1255 <X_1255>` = :ref:`X_19 <X_19>`-:term:`isoconjugate <isoconjugate>` of X_3916
+   * :ref:`X_1255 <X_1255>` = :ref:`X_19 <X_19>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_3916 <X_3916>`
    * :ref:`X_1255 <X_1255>` = :ref:`X_92 <X_92>`-isoconjugate of X_23201
 
 Notes

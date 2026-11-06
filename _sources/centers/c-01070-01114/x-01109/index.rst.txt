@@ -51,7 +51,7 @@ X_1109
    * :ref:`X_1109 <X_1109>` = crosspoint of :ref:`X_12 <X_12>` and :ref:`X_523 <X_523>`
    * :ref:`X_1109 <X_1109>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`31 <X_31>`, :ref:`163 <X_163>`), (:ref:`60 <X_60>`, :ref:`110 <X_110>`)
    * :ref:`X_1109 <X_1109>` = trilinear product :ref:`X_11 <X_11>`\ \*\ :ref:`X_12 <X_12>`
-   * :ref:`X_1109 <X_1109>` = polar conjugate of isogonal conjugate of X_3708
+   * :ref:`X_1109 <X_1109>` = polar conjugate of isogonal conjugate of :ref:`X_3708 <X_3708>`
    * :ref:`X_1109 <X_1109>` = antipode of X_4736 in the inellipse centered at :ref:`X_10 <X_10>`
    * :ref:`X_1109 <X_1109>` = reflection of X_4736 in :ref:`X_10 <X_10>`
    * :ref:`X_1109 <X_1109>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_163 <X_163>`\ \ :ref:`X_1983 <X_1983>`

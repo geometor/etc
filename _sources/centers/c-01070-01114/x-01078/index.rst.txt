@@ -42,7 +42,7 @@ X_1078
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X_1078 <X_1078>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3613
+   * :ref:`X_1078 <X_1078>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3613 <X_3613>`
    * :ref:`X_1078 <X_1078>` = :term:`anticomplement <anticomplement>` of :ref:`X_1506 <X_1506>`
    * :ref:`X_1078 <X_1078>` = :ref:`X_249 <X_249>`-Ceva conjugate of :ref:`X_99 <X_99>`
    * :ref:`X_1078 <X_1078>` = :term:`complement <complement>` of X_7785

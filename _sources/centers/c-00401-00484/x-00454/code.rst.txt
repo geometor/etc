@@ -8,7 +8,7 @@ X_454
 
 .. enunciation::
 
-   :ref:`X_454 <X_454>` = X_3542-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_155 <X_155>`
+   :ref:`X_454 <X_454>` = :ref:`X_3542 <X_3542>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_155 <X_155>`
 
 .. figure:: x-00454.svg
    :alt: X_454 — EULER X_155-11th-SUBSTITUTION POINT

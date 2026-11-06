@@ -45,17 +45,17 @@ X_1157
    :badge: 9 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, 3483}, {:ref:`3 <X_3>`, :ref:`54 <X_54>`}, {:ref:`4 <X_4>`, 3482}, {:ref:`5 <X_5>`, :ref:`252 <X_252>`}, {:ref:`30 <X_30>`, :ref:`1141 <X_1141>`}, {:ref:`74 <X_74>`, 3484}, {:ref:`186 <X_186>`, :ref:`933 <X_933>`}, {:ref:`1337 <X_1337>`, :ref:`1338 <X_1338>`}, {3065, 3465}
+   {:ref:`1 <X_1>`, :ref:`3483 <X_3483>`}, {:ref:`3 <X_3>`, :ref:`54 <X_54>`}, {:ref:`4 <X_4>`, :ref:`3482 <X_3482>`}, {:ref:`5 <X_5>`, :ref:`252 <X_252>`}, {:ref:`30 <X_30>`, :ref:`1141 <X_1141>`}, {:ref:`74 <X_74>`, :ref:`3484 <X_3484>`}, {:ref:`186 <X_186>`, :ref:`933 <X_933>`}, {:ref:`1337 <X_1337>`, :ref:`1338 <X_1338>`}, {:ref:`3065 <X_3065>`, :ref:`3465 <X_3465>`}
 
 .. collapse:: Functional Relations
    :badge: 6 relations
 
    * :ref:`X_1157 <X_1157>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1263 <X_1263>`
    * :ref:`X_1157 <X_1157>` = inverse-in-circumcircle of :ref:`X_54 <X_54>`
-   * :ref:`X_1157 <X_1157>` = :ref:`X_30 <X_30>`-:term:`Ceva conjugate <ceva-conjugate>` of X_3484
+   * :ref:`X_1157 <X_1157>` = :ref:`X_30 <X_30>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_3484 <X_3484>`
    * :ref:`X_1157 <X_1157>` = Yiu-isogonal conjugate of :ref:`X_195 <X_195>`
    * :ref:`X_1157 <X_1157>` = Cundy-Parry Phi transform of :ref:`X_195 <X_195>`
-   * :ref:`X_1157 <X_1157>` = Cundy-Parry Psi transform of X_3459
+   * :ref:`X_1157 <X_1157>` = Cundy-Parry Psi transform of :ref:`X_3459 <X_3459>`
 
 Notes
 -----

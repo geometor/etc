@@ -22,7 +22,7 @@ X_237–X_248
 
 .. _preamble-0006:
 
-.. admonition:: Group Preamble — Centers X_237-X_248
+.. admonition:: Group Preamble — Centers X_237-X_248 (Line conjugates)
    :class: note
 
    Centers :ref:`X_237 <X_237>`-:ref:`X_248 <X_248>` are line conjugates. (The :g:`P <P>`-line conjugate of :g:`Q <Q>` is the point where line :g:`PQ <[ P Q ]>` meets the trilinear polar of the isogonal conjugate of :g:`Q <Q>`.)

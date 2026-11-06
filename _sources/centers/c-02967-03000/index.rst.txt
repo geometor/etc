@@ -22,7 +22,7 @@ X_2967–X_3000
 
 .. _preamble-0044:
 
-.. admonition:: Group Preamble — MacBeath Points
+.. admonition:: Group Preamble — MacBeath Points (Points lying on the MacBeath inconic)
    :class: note
 
    The MacBeath inconic is the conic inscribed in triangle :g:`ABC << A B C >>` having center :ref:`X_5 <X_5>` and foci :ref:`X_3 <X_3>` and :ref:`X_4 <X_4>`. An equation for this conic in barycentric coordinates is
@@ -53,7 +53,7 @@ X_2967–X_3000
 
 .. _preamble-0045:
 
-.. admonition:: Group Preamble — Dual triangles, DC and CD Points
+.. admonition:: Group Preamble — Dual triangles, DC and CD Points (Dual triangles: DC points and CD points)
    :class: note
 
    Suppose :g:`DEF << D E F >>` is a triangle in the plane of triangle :g:`ABC << A B C >>`. Let :g:`D' <D'>` be the :term:`isogonal conjugate <isogonal-conjugate>` of the point of intersection of line :g:`EF <[ E F ]>` and the line at infinity. Define :g:`E' <E'>` and :g:`F' <F'>` cyclically. The triangle :g:`D'E'F' << D' E' F' >>` is here named the *dual* of :g:`DEF << D E F >>`. The vertices of :g:`D'E'F' << D' E' F' >>` lie on the circumcircle, and :g:`D'E'F' << D' E' F' >>` is similar to :g:`DEF << D E F >>`. The duality is between the sidelines :g:`EF <[ E F ]>`, :g:`FD <[ F D ]>`, :g:`DE <[ D E ]>` and the points :g:`D' <D'>`, :g:`E' <E'>`, :g:`F' <F'>`, respectively. For example, if :g:`E <E>` and :g:`F <F>` remain fixed and D varies, then :g:`D' <D'>` remains fixed, while :g:`E'F' <[ E' F' ]>` varies. Actually :g:`D'E'F' << D' E' F' >>` is the dual of any triangle homothetic to :g:`DEF << D E F >>`. Indeed, :g:`DEF << D E F >>` need not be a triangle but can be the union of three concurrent lines. (Proof of similarity follows from Theorem 6E in :cite:`TCCT <tcct>`, as the "gamma triangle" there is the dual of a triangle whose sidelines are respectively perpendicular to those of :g:`DEF << D E F >>`.)
@@ -93,7 +93,7 @@ X_2967–X_3000
 .. admonition:: Group Preamble — Intersections of Central Lines
    :class: note
 
-   This section presents points :ref:`X_3000 <X_3000>` to X_3019 of intersection of lines listed in MathWorld's Central Line. Contributed by :person:`Eric Weisstein <eric-weisstein>`, December, 2004.
+   This section presents points :ref:`X_3000 <X_3000>` to :ref:`X_3019 <X_3019>` of intersection of lines listed in MathWorld's Central Line. Contributed by :person:`Eric Weisstein <eric-weisstein>`, December, 2004.
 
 .. collection::
    :sort: order

@@ -49,7 +49,7 @@ X_1994
    * :ref:`X_1994 <X_1994>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2963 <X_2963>`
    * :ref:`X_1994 <X_1994>` = :term:`anticomplement <anticomplement>` of X_37636
    * :ref:`X_1994 <X_1994>` = :term:`cevapoint <cevapoint>` of :ref:`X_6 <X_6>` and :ref:`X_195 <X_195>`
-   * :ref:`X_1994 <X_1994>` = :ref:`X_2965 <X_2965>`-:term:`cross conjugate <cross-conjugate>` of X_3518
+   * :ref:`X_1994 <X_1994>` = :ref:`X_2965 <X_2965>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_3518 <X_3518>`
    * :ref:`X_1994 <X_1994>` = :term:`crosspoint <crosspoint>` of :ref:`X_588 <X_588>` and :ref:`X_589 <X_589>`
    * :ref:`X_1994 <X_1994>` = :term:`crosssum <crosssum>` of :ref:`X_590 <X_590>` and :ref:`X_615 <X_615>`
    * :ref:`X_1994 <X_1994>` = polar conjugate of :ref:`X_93 <X_93>`

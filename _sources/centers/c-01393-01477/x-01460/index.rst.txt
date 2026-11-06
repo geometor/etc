@@ -42,7 +42,7 @@ X_1460
    :badge: 2 relations
 
    * :ref:`X_1460 <X_1460>` = isogonal conjugate of X_30479
-   * :ref:`X_1460 <X_1460>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_650 <X_650>`\ X_3910
+   * :ref:`X_1460 <X_1460>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_650 <X_650>`\ \ :ref:`X_3910 <X_3910>`
 
 .. toctree::
    :hidden:

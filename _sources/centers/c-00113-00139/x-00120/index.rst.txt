@@ -49,11 +49,11 @@ X_120
    * :ref:`X_120 <X_120>` = :ref:`X_4 <X_4>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_518 <X_518>`
    * :ref:`X_120 <X_120>` = :ref:`X_105 <X_105>`-of-medial triangle.
    * :ref:`X_120 <X_120>` = :term:`complement <complement>` of :ref:`X_105 <X_105>`
-   * :ref:`X_120 <X_120>` = perspector of circumconic centered at X_3290
-   * :ref:`X_120 <X_120>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through X_3290
-   * :ref:`X_120 <X_120>` = :ref:`X_2 <X_2>`-Ceva conjugate of X_3290
+   * :ref:`X_120 <X_120>` = perspector of circumconic centered at :ref:`X_3290 <X_3290>`
+   * :ref:`X_120 <X_120>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X_3290 <X_3290>`
+   * :ref:`X_120 <X_120>` = :ref:`X_2 <X_2>`-Ceva conjugate of :ref:`X_3290 <X_3290>`
    * :ref:`X_120 <X_120>` = polar conjugate of :term:`isogonal conjugate <isogonal-conjugate>` of X_20728
-   * :ref:`X_120 <X_120>` = inverse-in-excircles-radical-circle of X_3033
+   * :ref:`X_120 <X_120>` = inverse-in-excircles-radical-circle of :ref:`X_3033 <X_3033>`
    * :ref:`X_120 <X_120>` = inverse-in-{circumcircle, nine-point circle}-inverter of :ref:`X_100 <X_100>`
    * :ref:`X_120 <X_120>` = :ref:`X_1292 <X_1292>`-of-Euler-triangle
    * :ref:`X_120 <X_120>` = midpoint of :ref:`X_4 <X_4>` and :ref:`X_1292 <X_1292>`

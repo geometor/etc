@@ -35,7 +35,7 @@ X_1222
    :badge: 8 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, :ref:`341 <X_341>`}, {:ref:`6 <X_6>`, :ref:`145 <X_145>`}, {:ref:`8 <X_8>`, :ref:`56 <X_56>`}, {:ref:`10 <X_10>`, :ref:`106 <X_106>`}, {:ref:`34 <X_34>`, :ref:`318 <X_318>`}, {:ref:`58 <X_58>`, :ref:`519 <X_519>`}, {:ref:`75 <X_75>`, :ref:`269 <X_269>`}, {:ref:`190 <X_190>`, 3057}
+   {:ref:`1 <X_1>`, :ref:`341 <X_341>`}, {:ref:`6 <X_6>`, :ref:`145 <X_145>`}, {:ref:`8 <X_8>`, :ref:`56 <X_56>`}, {:ref:`10 <X_10>`, :ref:`106 <X_106>`}, {:ref:`34 <X_34>`, :ref:`318 <X_318>`}, {:ref:`58 <X_58>`, :ref:`519 <X_519>`}, {:ref:`75 <X_75>`, :ref:`269 <X_269>`}, {:ref:`190 <X_190>`, :ref:`3057 <X_3057>`}
 
 .. collapse:: Functional Relations
    :badge: 7 relations
@@ -43,7 +43,7 @@ X_1222
    * :ref:`X_1222 <X_1222>` = isogonal conjugate of :ref:`X_1201 <X_1201>`
    * :ref:`X_1222 <X_1222>` = :term:`cevapoint <cevapoint>` of :ref:`X_1 <X_1>` and :ref:`X_8 <X_8>`
    * :ref:`X_1222 <X_1222>` = :term:`crosssum <crosssum>` of :ref:`X_1 <X_1>` and :ref:`X_1050 <X_1050>`
-   * :ref:`X_1222 <X_1222>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3663
+   * :ref:`X_1222 <X_1222>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3663 <X_3663>`
    * :ref:`X_1222 <X_1222>` = intersection of tangents at :ref:`X_1 <X_1>` and :ref:`X_8 <X_8>` to hyperbola passing through :ref:`X_1 <X_1>`, :ref:`X_8 <X_8>` and the excenters
    * :ref:`X_1222 <X_1222>` = :term:`crosspoint <crosspoint>` of :ref:`X_1 <X_1>` and :ref:`X_8 <X_8>` wrt the :term:`excentral triangle <excentral-triangle>`
    * :ref:`X_1222 <X_1222>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_649 <X_649>`\ X_4949

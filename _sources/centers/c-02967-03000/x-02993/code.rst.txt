@@ -8,7 +8,7 @@ X_2993
 
 .. enunciation::
 
-   :ref:`X_2993 <X_2993>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3130
+   :ref:`X_2993 <X_2993>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3130 <X_3130>`
 
 .. figure:: x-02993.svg
    :alt: X_2993 — CD(X_14)

@@ -30,7 +30,7 @@ X_2210
 
    | **Trilinears:** :math:`a/f(a,b,c) : b/f(b,c,a) : c/f(c,a,b)`, where f(a,b,c) is as in :ref:`X_335 <X_335>`
    | **Barycentrics:** :math:`a^{2}/f(a,b,c) : b^{2}/f(b,c,a): c^{2}/f(c,a,b)`
-   | **Search Value (6, 9, 13):** :math:`0.892656337041`
+   | **Search Value (6, 9, 13):** :math:`-0.581473078039`
 
 .. collapse:: Incident Central Lines
    :badge: 13 lines

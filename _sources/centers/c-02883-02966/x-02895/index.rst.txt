@@ -42,7 +42,7 @@ X_2895
    :badge: 8 relations
 
    * :ref:`X_2895 <X_2895>` = reflection of :ref:`X_81 <X_81>` in :ref:`X_1211 <X_1211>`
-   * :ref:`X_2895 <X_2895>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3444
+   * :ref:`X_2895 <X_2895>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3444 <X_3444>`
    * :ref:`X_2895 <X_2895>` = :term:`isotomic conjugate <isotomic-conjugate>` of 1029
    * :ref:`X_2895 <X_2895>` = :term:`anticomplement <anticomplement>` of :ref:`X_81 <X_81>`
    * :ref:`X_2895 <X_2895>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X_75 <X_75>`

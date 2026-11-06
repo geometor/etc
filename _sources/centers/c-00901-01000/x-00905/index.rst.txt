@@ -46,7 +46,7 @@ X_905
    * :ref:`X_905 <X_905>` = :term:`complement <complement>` of X_4391
    * :ref:`X_904 <X_904>` = complement of :term:`anticomplementary conjugate <anticomplementary-conjugate>` of X_21226
    * :ref:`X_905 <X_905>` = :ref:`X_92 <X_92>`-isoconjugate of :ref:`X_692 <X_692>`
-   * :ref:`X_905 <X_905>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_1364 <X_1364>`\ X_3270
+   * :ref:`X_905 <X_905>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_1364 <X_1364>`\ \ :ref:`X_3270 <X_3270>`
    * :ref:`X_905 <X_905>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`650 <X_650>`), (:ref:`42 <X_42>`, :ref:`657 <X_657>`), (:ref:`513 <X_513>`, :ref:`614 <X_614>`)
    * :ref:`X_905 <X_905>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_19 <X_19>`\ \ :ref:`X_25 <X_25>`
    * :ref:`X_905 <X_905>` = polar conjugate of isogonal conjugate of X_23224

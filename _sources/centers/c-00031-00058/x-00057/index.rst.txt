@@ -23,8 +23,8 @@ X_57
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{1, 3} <{ 1, 3 }>`, :g:`{2, 7} <{ 2, 7 }>`
-   * **Related Centers:** :g:`X_9 <X_9>` (:ref:`MITTENPUNKT <X_9>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_7 <X_7>` (:ref:`GERGONNE POINT <X_7>`)
+   * **Central Lines:** :g:`{497, 3474} <{ 497, 3474 }>`
+   * **Related Centers:** :g:`X_497 <X_497>` (:ref:`CROSSPOINT OF GERGONNE POINT AND NAGEL POINT <X_497>`), :g:`X_3474 <X_3474>` (:ref:`INTERSECTION OF LINES X <X_3474>`)
 
 .. signature:: center
 
@@ -63,19 +63,19 @@ X_57
    :badge: 47 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, :ref:`3 <X_3>`}, {:ref:`2 <X_2>`, :ref:`7 <X_7>`}, {:ref:`4 <X_4>`, :ref:`84 <X_84>`}, {:ref:`6 <X_6>`, :ref:`222 <X_222>`}, {:ref:`10 <X_10>`, :ref:`388 <X_388>`}, {:ref:`19 <X_19>`, :ref:`196 <X_196>`}, {:ref:`20 <X_20>`, :ref:`938 <X_938>`}, {:ref:`27 <X_27>`, :ref:`273 <X_273>`}, {:ref:`28 <X_28>`, :ref:`34 <X_34>`}, {:ref:`31 <X_31>`, :ref:`105 <X_105>`}, {:ref:`33 <X_33>`, :ref:`103 <X_103>`}, {:ref:`38 <X_38>`, :ref:`612 <X_612>`}, {:ref:`42 <X_42>`, :ref:`1002 <X_1002>`}, {:ref:`43 <X_43>`, :ref:`181 <X_181>`}, {:ref:`72 <X_72>`, :ref:`474 <X_474>`}, {:ref:`73 <X_73>`, :ref:`386 <X_386>`}, {:ref:`77 <X_77>`, :ref:`81 <X_81>`}, {:ref:`78 <X_78>`, :ref:`404 <X_404>`}, {:ref:`79 <X_79>`, :ref:`90 <X_90>`}, {:ref:`85 <X_85>`, :ref:`274 <X_274>`}, {:ref:`88 <X_88>`, :ref:`651 <X_651>`}, {:ref:`92 <X_92>`, :ref:`653 <X_653>`}, {:ref:`164 <X_164>`, :ref:`177 <X_177>`}, {:ref:`169 <X_169>`, :ref:`277 <X_277>`}, {:ref:`173 <X_173>`, :ref:`174 <X_174>`}, {:ref:`200 <X_200>`, :ref:`518 <X_518>`}, {:ref:`201 <X_201>`, :ref:`975 <X_975>`}, {:ref:`234 <X_234>`, :ref:`362 <X_362>`}, {:ref:`239 <X_239>`, :ref:`330 <X_330>`}, {:ref:`255 <X_255>`, :ref:`580 <X_580>`}, {:ref:`279 <X_279>`, :ref:`479 <X_479>`}, {:ref:`282 <X_282>`, 3343}, {:ref:`345 <X_345>`, :ref:`728 <X_728>`}, {:ref:`497 <X_497>`, :ref:`516 <X_516>`}, {:ref:`499 <X_499>`, :ref:`920 <X_920>`}, {:ref:`649 <X_649>`, :ref:`1024 <X_1024>`}, {:ref:`658 <X_658>`, :ref:`673 <X_673>`}, {:ref:`748 <X_748>`, :ref:`896 <X_896>`}, {:ref:`758 <X_758>`, :ref:`997 <X_997>`}, {:ref:`955 <X_955>`, :ref:`991 <X_991>`}, {:ref:`957 <X_957>`, :ref:`995 <X_995>`}, {:ref:`959 <X_959>`, :ref:`1042 <X_1042>`}, {:ref:`961 <X_961>`, :ref:`1106 <X_1106>`}, {:ref:`978 <X_978>`, :ref:`1046 <X_1046>`}, {:ref:`1020 <X_1020>`, :ref:`1086 <X_1086>`}, {:ref:`1073 <X_1073>`, 3351}, {3342, 3350}
+   {:ref:`1 <X_1>`, :ref:`3 <X_3>`}, {:ref:`2 <X_2>`, :ref:`7 <X_7>`}, {:ref:`4 <X_4>`, :ref:`84 <X_84>`}, {:ref:`6 <X_6>`, :ref:`222 <X_222>`}, {:ref:`10 <X_10>`, :ref:`388 <X_388>`}, {:ref:`19 <X_19>`, :ref:`196 <X_196>`}, {:ref:`20 <X_20>`, :ref:`938 <X_938>`}, {:ref:`27 <X_27>`, :ref:`273 <X_273>`}, {:ref:`28 <X_28>`, :ref:`34 <X_34>`}, {:ref:`31 <X_31>`, :ref:`105 <X_105>`}, {:ref:`33 <X_33>`, :ref:`103 <X_103>`}, {:ref:`38 <X_38>`, :ref:`612 <X_612>`}, {:ref:`42 <X_42>`, :ref:`1002 <X_1002>`}, {:ref:`43 <X_43>`, :ref:`181 <X_181>`}, {:ref:`72 <X_72>`, :ref:`474 <X_474>`}, {:ref:`73 <X_73>`, :ref:`386 <X_386>`}, {:ref:`77 <X_77>`, :ref:`81 <X_81>`}, {:ref:`78 <X_78>`, :ref:`404 <X_404>`}, {:ref:`79 <X_79>`, :ref:`90 <X_90>`}, {:ref:`85 <X_85>`, :ref:`274 <X_274>`}, {:ref:`88 <X_88>`, :ref:`651 <X_651>`}, {:ref:`92 <X_92>`, :ref:`653 <X_653>`}, {:ref:`164 <X_164>`, :ref:`177 <X_177>`}, {:ref:`169 <X_169>`, :ref:`277 <X_277>`}, {:ref:`173 <X_173>`, :ref:`174 <X_174>`}, {:ref:`200 <X_200>`, :ref:`518 <X_518>`}, {:ref:`201 <X_201>`, :ref:`975 <X_975>`}, {:ref:`234 <X_234>`, :ref:`362 <X_362>`}, {:ref:`239 <X_239>`, :ref:`330 <X_330>`}, {:ref:`255 <X_255>`, :ref:`580 <X_580>`}, {:ref:`279 <X_279>`, :ref:`479 <X_479>`}, {:ref:`282 <X_282>`, :ref:`3343 <X_3343>`}, {:ref:`345 <X_345>`, :ref:`728 <X_728>`}, {:ref:`497 <X_497>`, :ref:`516 <X_516>`}, {:ref:`499 <X_499>`, :ref:`920 <X_920>`}, {:ref:`649 <X_649>`, :ref:`1024 <X_1024>`}, {:ref:`658 <X_658>`, :ref:`673 <X_673>`}, {:ref:`748 <X_748>`, :ref:`896 <X_896>`}, {:ref:`758 <X_758>`, :ref:`997 <X_997>`}, {:ref:`955 <X_955>`, :ref:`991 <X_991>`}, {:ref:`957 <X_957>`, :ref:`995 <X_995>`}, {:ref:`959 <X_959>`, :ref:`1042 <X_1042>`}, {:ref:`961 <X_961>`, :ref:`1106 <X_1106>`}, {:ref:`978 <X_978>`, :ref:`1046 <X_1046>`}, {:ref:`1020 <X_1020>`, :ref:`1086 <X_1086>`}, {:ref:`1073 <X_1073>`, :ref:`3351 <X_3351>`}, {:ref:`3342 <X_3342>`, :ref:`3350 <X_3350>`}
 
 .. collapse:: Functional Relations
    :badge: 61 relations
 
-   * :ref:`X_57 <X_57>` = midpoint of :ref:`X_497 <X_497>` and X_3474
+   * :ref:`X_57 <X_57>` = midpoint of :ref:`X_497 <X_497>` and :ref:`X_3474 <X_3474>`
    * :ref:`X_57 <X_57>` = reflection of X_i in X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`999 <X_999>`), (:ref:`200 <X_200>`, :ref:`1376 <X_1376>`)
    * :ref:`X_57 <X_57>` = isogonal conjugate of :ref:`X_9 <X_9>`
    * :ref:`X_57 <X_57>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_312 <X_312>`
    * :ref:`X_57 <X_57>` = :term:`complement <complement>` of :ref:`X_329 <X_329>`
-   * :ref:`X_57 <X_57>` = :term:`anticomplement <anticomplement>` of X_3452
+   * :ref:`X_57 <X_57>` = :term:`anticomplement <anticomplement>` of :ref:`X_3452 <X_3452>`
    * :ref:`X_57 <X_57>` = circumcircle-inverse of :ref:`X_2078 <X_2078>`
-   * :ref:`X_57 <X_57>` = incircle-inverse of X_3660
+   * :ref:`X_57 <X_57>` = incircle-inverse of :ref:`X_3660 <X_3660>`
    * :ref:`X_57 <X_57>` = Bevan-circle-inverse of :ref:`X_1155 <X_1155>`
    * :ref:`X_57 <X_57>` = trilinear product of PU(46)
    * :ref:`X_57 <X_57>` = antigonal conjugate of polar conjugate of X_37769
@@ -89,7 +89,7 @@ X_57
    * :ref:`X_57 <X_57>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`223 <X_223>`), (:ref:`7 <X_7>`, :ref:`1 <X_1>`), (:ref:`27 <X_27>`, :ref:`278 <X_278>`), (:ref:`81 <X_81>`, :ref:`222 <X_222>`), (:ref:`85 <X_85>`, :ref:`77 <X_77>`), (:ref:`273 <X_273>`, :ref:`34 <X_34>`), (:ref:`279 <X_279>`, :ref:`269 <X_269>`)
    * :ref:`X_57 <X_57>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`56 <X_56>`), (:ref:`19 <X_19>`, :ref:`208 <X_208>`)
    * :ref:`X_57 <X_57>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`1 <X_1>`), (:ref:`19 <X_19>`, :ref:`84 <X_84>`), (:ref:`56 <X_56>`, :ref:`269 <X_269>`), (:ref:`65 <X_65>`, :ref:`7 <X_7>`)
-   * :ref:`X_57 <X_57>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, 3062), (:ref:`2 <X_2>`, :ref:`189 <X_189>`), (:ref:`7 <X_7>`, :ref:`279 <X_279>`), (:ref:`27 <X_27>`, :ref:`81 <X_81>`), (:ref:`85 <X_85>`, :ref:`273 <X_273>`), (:ref:`1014 <X_1014>`, :ref:`1434 <X_1434>`), (:ref:`1659 <X_1659>`, 13390)
+   * :ref:`X_57 <X_57>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`3062 <X_3062>`), (:ref:`2 <X_2>`, :ref:`189 <X_189>`), (:ref:`7 <X_7>`, :ref:`279 <X_279>`), (:ref:`27 <X_27>`, :ref:`81 <X_81>`), (:ref:`85 <X_85>`, :ref:`273 <X_273>`), (:ref:`1014 <X_1014>`, :ref:`1434 <X_1434>`), (:ref:`1659 <X_1659>`, 13390)
    * :ref:`X_57 <X_57>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`165 <X_165>`), (:ref:`6 <X_6>`, :ref:`198 <X_198>`), (:ref:`31 <X_31>`, :ref:`205 <X_205>`), (:ref:`37 <X_37>`, :ref:`71 <X_71>`), (:ref:`41 <X_41>`, :ref:`212 <X_212>`), (:ref:`55 <X_55>`, :ref:`220 <X_220>`), (:ref:`210 <X_210>`, :ref:`1334 <X_1334>`), (:ref:`2066 <X_2066>`, 5414)
    * :ref:`X_57 <X_57>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_650 <X_650>`\ \ :ref:`X_663 <X_663>`
    * :ref:`X_57 <X_57>` = X_i-:term:`Hirst inverse <hirst-inverse>` of X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`241 <X_241>`), (:ref:`7 <X_7>`, :ref:`1447 <X_1447>`), (:ref:`56 <X_56>`, :ref:`1429 <X_1429>`), (:ref:`105 <X_105>`, :ref:`1462 <X_1462>`), (:ref:`910 <X_910>`, :ref:`1419 <X_1419>`)
@@ -104,7 +104,7 @@ X_57
    * :ref:`X_57 <X_57>` = center of circumconic that is locus of trilinear poles of lines passing through :ref:`X_223 <X_223>`
    * :ref:`X_57 <X_57>` = perspector of pedal and antipedal (or anticevian) triangles of :ref:`X_1 <X_1>`
    * :ref:`X_57 <X_57>` = perspector of :g:`ABC << A B C >>` and :term:`medial triangle <medial-triangle>` of :term:`pedal triangle <pedal-triangle>` of :ref:`X_84 <X_84>`
-   * :ref:`X_57 <X_57>` = inverse-in-circumconic-centered-at-:ref:`X_9 <X_9>` of X_3911
+   * :ref:`X_57 <X_57>` = inverse-in-circumconic-centered-at-:ref:`X_9 <X_9>` of :ref:`X_3911 <X_3911>`
    * :ref:`X_57 <X_57>` = orthocorrespondent of :ref:`X_1 <X_1>`
    * :ref:`X_57 <X_57>` = Danneels point of :ref:`X_7 <X_7>`
    * :ref:`X_57 <X_57>` = :term:`vertex conjugate <vertex-conjugate>` of :ref:`X_55 <X_55>` and :ref:`X_57 <X_57>`
@@ -123,12 +123,12 @@ X_57
    * :ref:`X_57 <X_57>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of Gemini triangle 36
    * :ref:`X_57 <X_57>` = X_i-:term:`aleph conjugate <aleph-conjugate>` of X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`40 <X_40>`), (:ref:`7 <X_7>`, :ref:`57 <X_57>`), (:ref:`57 <X_57>`, :ref:`978 <X_978>`), (:ref:`174 <X_174>`, :ref:`1 <X_1>`), (:ref:`366 <X_366>`, :ref:`165 <X_165>`), (:ref:`507 <X_507>`, :ref:`503 <X_503>`), (:ref:`508 <X_508>`, :ref:`9 <X_9>`), (:ref:`509 <X_509>`, :ref:`43 <X_43>`)
    * :ref:`X_57 <X_57>` = X_i-:term:`beth conjugate <beth-conjugate>` of X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`2 <X_2>`), (:ref:`81 <X_81>`, :ref:`57 <X_57>`), (:ref:`88 <X_88>`, :ref:`57 <X_57>`), (:ref:`100 <X_100>`, :ref:`57 <X_57>`), (:ref:`110 <X_110>`, :ref:`31 <X_31>`), (:ref:`162 <X_162>`, :ref:`57 <X_57>`), (:ref:`190 <X_190>`, :ref:`57 <X_57>`), (:ref:`333 <X_333>`, :ref:`63 <X_63>`), (:ref:`648 <X_648>`, :ref:`92 <X_92>`), (:ref:`651 <X_651>`, :ref:`57 <X_57>`), (:ref:`653 <X_653>`, :ref:`57 <X_57>`), (:ref:`655 <X_655>`, :ref:`57 <X_57>`), (:ref:`658 <X_658>`, :ref:`57 <X_57>`), (:ref:`660 <X_660>`, :ref:`57 <X_57>`), (:ref:`662 <X_662>`, :ref:`57 <X_57>`), (:ref:`673 <X_673>`, :ref:`57 <X_57>`), (:ref:`771 <X_771>`, :ref:`57 <X_57>`), (:ref:`799 <X_799>`, :ref:`57 <X_57>`), (:ref:`823 <X_823>`, :ref:`57 <X_57>`), (:ref:`897 <X_897>`, :ref:`57 <X_57>`)
-   * :ref:`X_57 <X_57>` = {:ref:`X_1 <X_1>`,\ :ref:`X_3 <X_3>`}-harmonic conjugate of X_3601
+   * :ref:`X_57 <X_57>` = {:ref:`X_1 <X_1>`,\ :ref:`X_3 <X_3>`}-harmonic conjugate of :ref:`X_3601 <X_3601>`
    * :ref:`X_57 <X_57>` = {:ref:`X_1 <X_1>`,\ :ref:`X_40 <X_40>`}-harmonic conjugate of :ref:`X_1697 <X_1697>`
    * :ref:`X_57 <X_57>` = {:ref:`X_2 <X_2>`,\ :ref:`X_63 <X_63>`}-harmonic conjugate of :ref:`X_9 <X_9>`
    * :ref:`X_57 <X_57>` = {:ref:`X_55 <X_55>`,\ :ref:`X_56 <X_56>`}-harmonic conjugate of :ref:`X_1617 <X_1617>`
    * :ref:`X_57 <X_57>` = {:ref:`X_56 <X_56>`,\ :ref:`X_65 <X_65>`}-harmonic conjugate of :ref:`X_1 <X_1>`
-   * :ref:`X_57 <X_57>` = {X_3513,X_3514}-harmonic conjugate of :ref:`X_1 <X_1>`
+   * :ref:`X_57 <X_57>` = {:ref:`X_3513 <X_3513>`,\ :ref:`X_3514 <X_3514>`}-harmonic conjugate of :ref:`X_1 <X_1>`
 
 Notes
 -----

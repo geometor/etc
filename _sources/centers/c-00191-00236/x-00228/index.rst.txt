@@ -50,7 +50,7 @@ X_228
    * :ref:`X_228 <X_228>` = :ref:`X_212 <X_212>`-beth conjugate of :ref:`X_228 <X_228>`
    * :ref:`X_228 <X_228>` = :ref:`X_28 <X_28>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_75 <X_75>`
    * :ref:`X_228 <X_228>` = :ref:`X_81 <X_81>`-isoconjugate of :ref:`X_92 <X_92>`
-   * :ref:`X_228 <X_228>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_810 <X_810>`\ X_3049
+   * :ref:`X_228 <X_228>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_810 <X_810>`\ \ :ref:`X_3049 <X_3049>`
    * :ref:`X_228 <X_228>` = perspector of :term:`unary cofactor triangles <unary-cofactor-triangle>` of Gemini triangles 1 and 2
    * :ref:`X_228 <X_228>` = :term:`anticomplement <anticomplement>` of :term:`complementary conjugate <complementary-conjugate>` of X_18591
    * :ref:`X_228 <X_228>` = {:ref:`X_3 <X_3>`,\ :ref:`X_63 <X_63>`}-harmonic conjugate of X_22060

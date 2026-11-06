@@ -43,7 +43,7 @@ X_2550
 
    * :ref:`X_2550 <X_2550>` = midpoint of :ref:`X_7 <X_7>` and :ref:`X_8 <X_8>`
    * :ref:`X_2550 <X_2550>` = reflection of X_i in X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`142 <X_142>`), (:ref:`9 <X_9>`, :ref:`10 <X_10>`), (:ref:`390 <X_390>`, :ref:`1001 <X_1001>`)
-   * :ref:`X_2550 <X_2550>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3423
+   * :ref:`X_2550 <X_2550>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3423 <X_3423>`
    * :ref:`X_2550 <X_2550>` = :term:`complement <complement>` of :ref:`X_390 <X_390>`
    * :ref:`X_2550 <X_2550>` = :term:`anticomplement <anticomplement>` of :ref:`X_1001 <X_1001>`
    * :ref:`X_2550 <X_2550>` = inverse-in-Feuerbach-hyperbola of :ref:`X_497 <X_497>`

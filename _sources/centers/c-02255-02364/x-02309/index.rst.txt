@@ -44,7 +44,7 @@ X_2309
    * :ref:`X_2309 <X_2309>` = :ref:`X_99 <X_99>`-Ceva conjugate of :ref:`X_649 <X_649>`
    * :ref:`X_2309 <X_2309>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`893 <X_893>`), (:ref:`6 <X_6>`, :ref:`86 <X_86>`), (:ref:`58 <X_58>`, :ref:`2162 <X_2162>`)
    * :ref:`X_2309 <X_2309>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`894 <X_894>`), (:ref:`2 <X_2>`, :ref:`42 <X_42>`), (:ref:`10 <X_10>`, :ref:`192 <X_192>`)
-   * :ref:`X_2309 <X_2309>` = :term:`isogonal conjugate <isogonal-conjugate>` of :term:`isotomic conjugate <isotomic-conjugate>` of X_3741
+   * :ref:`X_2309 <X_2309>` = :term:`isogonal conjugate <isogonal-conjugate>` of :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3741 <X_3741>`
    * :ref:`X_2309 <X_2309>` = polar conjugate of isotomic conjugate of X_22065
 
 .. toctree::

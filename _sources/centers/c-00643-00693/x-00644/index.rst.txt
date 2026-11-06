@@ -24,7 +24,7 @@ X_644
    :class: note
 
    * **Central Lines:** :g:`{100, 101} <{ 100, 101 }>`, :g:`{8, 220} <{ 8, 220 }>`
-   * **Related Centers:** :g:`X_100 <X_100>` (:ref:`ANTICOMPLEMENT OF FEUERBACH POINT <X_100>`), :g:`X_101 <X_101>` (:ref:`Ψ(INCENTER, SYMMEDIAN POINT) <X_101>`), :g:`X_8 <X_8>` (:ref:`NAGEL POINT <X_8>`), :g:`X_220 <X_220>` (:ref:`-CEVA CONJUGATE OF X(55) <X_220>`)
+   * **Related Centers:** :g:`X_3669 <X_3669>` (:ref:`com(INTOUCH TRIANGLE) <X_3669>`), :g:`X_100 <X_100>` (:ref:`ANTICOMPLEMENT OF FEUERBACH POINT <X_100>`), :g:`X_101 <X_101>` (:ref:`Ψ(INCENTER, SYMMEDIAN POINT) <X_101>`), :g:`X_8 <X_8>` (:ref:`NAGEL POINT <X_8>`), :g:`X_220 <X_220>` (:ref:`-CEVA CONJUGATE OF X(55) <X_220>`)
 
 .. signature:: center
 
@@ -42,7 +42,7 @@ X_644
    :badge: 14 relations
 
    * :ref:`X_644 <X_644>` = reflection of X_i in X_j for these (i,j): (:ref:`105 <X_105>`, :ref:`1083 <X_1083>`), (:ref:`1280 <X_1280>`, :ref:`1 <X_1>`)
-   * :ref:`X_644 <X_644>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3669
+   * :ref:`X_644 <X_644>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3669 <X_3669>`
    * :ref:`X_644 <X_644>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_24002
    * :ref:`X_644 <X_644>` = :term:`anticomplement <anticomplement>` of X_4904
    * :ref:`X_644 <X_644>` = :ref:`X_190 <X_190>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_100 <X_100>`

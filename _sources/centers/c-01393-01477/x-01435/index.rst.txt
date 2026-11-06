@@ -46,7 +46,7 @@ X_1435
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X_1435 <X_1435>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3692
+   * :ref:`X_1435 <X_1435>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3692 <X_3692>`
    * :ref:`X_1435 <X_1435>` = polar conjugate of :ref:`X_341 <X_341>`
    * :ref:`X_1435 <X_1435>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`1119 <X_1119>`, :ref:`34 <X_34>`), (:ref:`1396 <X_1396>`, :ref:`1407 <X_1407>`)
    * :ref:`X_1435 <X_1435>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`608 <X_608>`, :ref:`34 <X_34>`), (:ref:`1106 <X_1106>`, :ref:`269 <X_269>`), (:ref:`1426 <X_1426>`, :ref:`1119 <X_1119>`)

@@ -24,7 +24,7 @@ X_646
    :class: note
 
    * **Central Lines:** :g:`{644, 645} <{ 644, 645 }>`, :g:`{190, 668} <{ 190, 668 }>`
-   * **Related Centers:** :g:`X_644 <X_644>` (:ref:`TRILINEAR MULTIPLIER FOR YFF PARABOLA <X_644>`), :g:`X_645 <X_645>` (:ref:`BARYCENTRIC MULTIPLIER FOR KIEPERT PARABOLA <X_645>`), :g:`X_190 <X_190>` (:ref:`YFF PARABOLIC POINT <X_190>`), :g:`X_668 <X_668>` (:ref:`TRILINEAR POLE OF LINE X(2)X(37) <X_668>`)
+   * **Related Centers:** :g:`X_3669 <X_3669>` (:ref:`com(INTOUCH TRIANGLE) <X_3669>`), :g:`X_644 <X_644>` (:ref:`TRILINEAR MULTIPLIER FOR YFF PARABOLA <X_644>`), :g:`X_645 <X_645>` (:ref:`BARYCENTRIC MULTIPLIER FOR KIEPERT PARABOLA <X_645>`), :g:`X_190 <X_190>` (:ref:`YFF PARABOLIC POINT <X_190>`), :g:`X_668 <X_668>` (:ref:`TRILINEAR POLE OF LINE X(2)X(37) <X_668>`)
 
 .. signature:: center
 
@@ -41,7 +41,7 @@ X_646
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X_646 <X_646>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3669
+   * :ref:`X_646 <X_646>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3669 <X_3669>`
    * :ref:`X_646 <X_646>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_8 <X_8>`\ \ :ref:`X_210 <X_210>` (the tangent to Feuerbach hyperbola at :ref:`X_8 <X_8>`)
    * :ref:`X_646 <X_646>` = :ref:`X_650 <X_650>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_8 <X_8>`
    * :ref:`X_646 <X_646>` = :ref:`X_522 <X_522>`-cross conjugate of :ref:`X_314 <X_314>`

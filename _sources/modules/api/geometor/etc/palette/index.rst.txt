@@ -1,0 +1,74 @@
+geometor.etc.palette
+====================
+
+.. py:module:: geometor.etc.palette
+
+.. autoapi-nested-parse::
+
+   Central color assignment strategy and registry for GEOMETOR ETC diagrams and videos.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.etc.palette.PALETTE_TOKENS
+   geometor.etc.palette.LINE_COLOR_RING
+   geometor.etc.palette.PARTNER_COLOR_RING
+   geometor.etc.palette.REFERENCE_TRIANGLE_COLORS
+   geometor.etc.palette.NAMED_CIRCLE_COLORS
+   geometor.etc.palette.CANONICAL_CENTRAL_LINES
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.palette.token_hex
+   geometor.etc.palette.get_circle_color_token
+   geometor.etc.palette.get_central_line_color_token
+
+
+Module Contents
+---------------
+
+.. py:data:: PALETTE_TOKENS
+   :type:  dict[str, tuple[str, str, str]]
+
+.. py:data:: LINE_COLOR_RING
+   :type:  tuple[str, ...]
+   :value: ('orange', 'teal', 'blue', 'purple', 'orchid', 'pink', 'green', 'lime')
+
+
+.. py:data:: PARTNER_COLOR_RING
+   :type:  tuple[str, ...]
+   :value: ('blue', 'green', 'orange', 'purple', 'teal', 'pink', 'lime')
+
+
+.. py:data:: REFERENCE_TRIANGLE_COLORS
+   :type:  dict[str, str]
+
+.. py:data:: NAMED_CIRCLE_COLORS
+   :type:  dict[str, str]
+
+.. py:data:: CANONICAL_CENTRAL_LINES
+   :type:  tuple[tuple[str, frozenset[int], str], ...]
+
+.. py:function:: token_hex(token: str) -> str
+
+   Return the primary hex color for a semantic palette token.
+
+
+.. py:function:: get_circle_color_token(circle_id_or_name: str, classes: list[str] | None = None) -> str
+
+   Return the canonical color token for a named circle.
+
+
+.. py:function:: get_central_line_color_token(centers_or_id: str | list[int] | set[int], line_name: str = '', used_tokens: set[str] | None = None) -> str
+
+   Return the canonical color token for a central line given its center indices or `{a, b, ...}` ID.
+
+

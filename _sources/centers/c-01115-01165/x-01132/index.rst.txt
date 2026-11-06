@@ -41,7 +41,7 @@ X_1132
    :badge: 5 lines
    :class: line-catalog
 
-   {:ref:`2 <X_2>`, :ref:`489 <X_489>`}, {:ref:`4 <X_4>`, 3312}, {:ref:`6 <X_6>`, :ref:`1131 <X_1131>`}, {:ref:`20 <X_20>`, :ref:`486 <X_486>`}, {:ref:`176 <X_176>`, :ref:`226 <X_226>`}
+   {:ref:`2 <X_2>`, :ref:`489 <X_489>`}, {:ref:`4 <X_4>`, :ref:`3312 <X_3312>`}, {:ref:`6 <X_6>`, :ref:`1131 <X_1131>`}, {:ref:`20 <X_20>`, :ref:`486 <X_486>`}, {:ref:`176 <X_176>`, :ref:`226 <X_226>`}
 
 .. collapse:: Functional Relations
    :badge: 5 relations
@@ -49,8 +49,8 @@ X_1132
    * :ref:`X_1132 <X_1132>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1152 <X_1152>`
    * :ref:`X_1132 <X_1132>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_1271 <X_1271>`
    * :ref:`X_1132 <X_1132>` = :term:`anticomplement <anticomplement>` of X_33365
-   * :ref:`X_1132 <X_1132>` = polar conjugate of X_3536
-   * :ref:`X_1132 <X_1132>` = {:ref:`X_6 <X_6>`,X_3832}-harmonic conjugate of :ref:`X_1131 <X_1131>`
+   * :ref:`X_1132 <X_1132>` = polar conjugate of :ref:`X_3536 <X_3536>`
+   * :ref:`X_1132 <X_1132>` = {:ref:`X_6 <X_6>`,\ :ref:`X_3832 <X_3832>`}-harmonic conjugate of :ref:`X_1131 <X_1131>`
 
 .. toctree::
    :hidden:

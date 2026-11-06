@@ -46,7 +46,7 @@ X_675
    :badge: 3 relations
 
    * :ref:`X_675 <X_675>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_674 <X_674>`
-   * :ref:`X_675 <X_675>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3006
+   * :ref:`X_675 <X_675>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3006 <X_3006>`
    * :ref:`X_675 <X_675>` = inverse-in-orthoptic-circle-of-Steiner-inellipse of :ref:`X_116 <X_116>`
 
 .. toctree::

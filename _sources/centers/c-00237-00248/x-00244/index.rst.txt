@@ -64,7 +64,7 @@ X_244
    * :ref:`X_244 <X_244>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_100 <X_100>`\ \ :ref:`X_101 <X_101>`
    * :ref:`X_244 <X_244>` = :ref:`X_1 <X_1>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X_1054 <X_1054>`
    * :ref:`X_244 <X_244>` = :ref:`X_1 <X_1>`-:term:`line conjugate <line-conjugate>` of :ref:`X_100 <X_100>`
-   * :ref:`X_244 <X_244>` = :term:`complement <complement>` of X_3952
+   * :ref:`X_244 <X_244>` = :term:`complement <complement>` of :ref:`X_3952 <X_3952>`
    * :ref:`X_244 <X_244>` = antipode of X_4738 in inellipse centered at :ref:`X_10 <X_10>`
    * :ref:`X_244 <X_244>` = reflection of X_4738 in :ref:`X_10 <X_10>`
    * :ref:`X_244 <X_244>` = bicentric difference of PU(34)

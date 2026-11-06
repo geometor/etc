@@ -18,7 +18,11 @@ X_1–X_19
    :alt: X_1–X_19 — Classical & Ancient Centers
    :align: center
 
-   **X_1–X_19** (*Classical & Ancient Centers*) — 9 representative centers (from 19 in collection) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_1–X_19** (*Classical & Ancient Centers*) — Complete 19-center constellation constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+
+.. seealso::
+
+   **Companion Topic Guides**: :doc:`Collection 1 Topics: Conjugacies, Central Lines, Circles & Triangles <../../topics/index>` (:math:`T_1`–:math:`T_{24}`)
 
 .. collection::
    :sort: order

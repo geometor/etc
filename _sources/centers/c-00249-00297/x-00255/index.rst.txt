@@ -59,7 +59,7 @@ X_255
    * :ref:`X_255 <X_255>` = polar conjugate of X_6521
    * :ref:`X_255 <X_255>` = :ref:`X_19 <X_19>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_92 <X_92>`
    * :ref:`X_255 <X_255>` = {:ref:`X_1 <X_1>`,\ :ref:`X_31 <X_31>`}-harmonic conjugate of :ref:`X_1497 <X_1497>`
-   * :ref:`X_255 <X_255>` = {X_3074,X_3075}-harmonic conjugate of :ref:`X_2 <X_2>`
+   * :ref:`X_255 <X_255>` = {:ref:`X_3074 <X_3074>`,\ :ref:`X_3075 <X_3075>`}-harmonic conjugate of :ref:`X_2 <X_2>`
 
 Notes
 -----

@@ -42,7 +42,7 @@ X_2883
    :badge: 8 relations
 
    * :ref:`X_2883 <X_2883>` = midpoint of :ref:`X_4 <X_4>` and :ref:`X_1498 <X_1498>`
-   * :ref:`X_2883 <X_2883>` = reflection of X_3357 in :ref:`X_140 <X_140>`
+   * :ref:`X_2883 <X_2883>` = reflection of :ref:`X_3357 <X_3357>` in :ref:`X_140 <X_140>`
    * :ref:`X_2883 <X_2883>` = :term:`complement <complement>` of :ref:`X_64 <X_64>`
    * :ref:`X_2883 <X_2883>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X_4 <X_4>`
    * :ref:`X_2883 <X_2883>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_800 <X_800>`

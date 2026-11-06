@@ -43,12 +43,12 @@ X_859
 
    * :ref:`X_859 <X_859>` = midpoint of :ref:`X_851 <X_851>` and :ref:`X_855 <X_855>`
    * :ref:`X_859 <X_859>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_38955
-   * :ref:`X_859 <X_859>` = :term:`trilinear pole <trilinear-pole>` of line X_3310X_8677
+   * :ref:`X_859 <X_859>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_3310 <X_3310>`\ X_8677
    * :ref:`X_859 <X_859>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these {i,j}: {:ref:`58 <X_58>`, :ref:`759 <X_759>`}, {:ref:`250 <X_250>`, 36069}
    * :ref:`X_859 <X_859>` = isogonal conjugate of :term:`anticomplement <anticomplement>` of X_34586
-   * :ref:`X_859 <X_859>` = :term:`crosssum <crosssum>` of X_i and X_j for these {i,j}: {:ref:`10 <X_10>`, :ref:`758 <X_758>`}, {:ref:`125 <X_125>`, 6370}, {:ref:`210 <X_210>`, 3943}, {:ref:`526 <X_526>`, 6741}, {3738, 34589}
+   * :ref:`X_859 <X_859>` = :term:`crosssum <crosssum>` of X_i and X_j for these {i,j}: {:ref:`10 <X_10>`, :ref:`758 <X_758>`}, {:ref:`125 <X_125>`, 6370}, {:ref:`210 <X_210>`, :ref:`3943 <X_3943>`}, {:ref:`526 <X_526>`, 6741}, {:ref:`3738 <X_3738>`, 34589}
    * :ref:`X_859 <X_859>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_37 <X_37>`\ \ :ref:`X_647 <X_647>`
-   * :ref:`X_859 <X_859>` = inverse-in-circumcircle of X_3109
+   * :ref:`X_859 <X_859>` = inverse-in-circumcircle of :ref:`X_3109 <X_3109>`
 
 Notes
 -----

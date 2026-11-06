@@ -54,7 +54,7 @@ X_2175
    * :ref:`X_2175 <X_2175>` = :ref:`X_1918 <X_1918>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_2212 <X_2212>`
    * :ref:`X_2175 <X_2175>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`31 <X_31>`, :ref:`41 <X_41>`), (:ref:`55 <X_55>`, :ref:`607 <X_607>`)
    * :ref:`X_2175 <X_2175>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`7 <X_7>`, :ref:`348 <X_348>`), (:ref:`8 <X_8>`, :ref:`344 <X_344>`), (:ref:`74 <X_74>`, :ref:`85 <X_85>`), (:ref:`349 <X_349>`, :ref:`1441 <X_1441>`)
-   * :ref:`X_2175 <X_2175>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_918 <X_918>`\ X_3261
+   * :ref:`X_2175 <X_2175>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_918 <X_918>`\ \ :ref:`X_3261 <X_3261>`
    * :ref:`X_2175 <X_2175>` = :ref:`X_7 <X_7>`-isoconjugate of :ref:`X_75 <X_75>`
    * :ref:`X_2175 <X_2175>` = barycentric product of PU(93)
    * :ref:`X_2175 <X_2175>` = Lozada perspector of :ref:`X_6 <X_6>`

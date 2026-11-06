@@ -46,7 +46,7 @@ X_1381
    :badge: 4 relations
 
    * :ref:`X_1381 <X_1381>` = reflection of :ref:`X_1382 <X_1382>` in :ref:`X_3 <X_3>`
-   * :ref:`X_1381 <X_1381>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3307
+   * :ref:`X_1381 <X_1381>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3307 <X_3307>`
    * :ref:`X_1381 <X_1381>` = :ref:`X_59 <X_59>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_1382 <X_1382>`
    * :ref:`X_1381 <X_1381>` = :ref:`X_513 <X_513>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_1382 <X_1382>`
 

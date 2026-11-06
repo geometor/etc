@@ -53,7 +53,7 @@ X_2041
    :badge: 2 relations
 
    * :ref:`X_2041 <X_2041>` = reflection of :ref:`X_2042 <X_2042>` in :ref:`X_382 <X_382>`
-   * :ref:`X_2041 <X_2041>` = {X_i,X_j}-harmonic conjugate of X_k for these (i,j,k): (:ref:`2 <X_2>`, :ref:`641 <X_641>`, :ref:`2042 <X_2042>`), (:ref:`3 <X_3>`, :ref:`4 <X_4>`, :ref:`2044 <X_2044>`), (:ref:`3 <X_3>`, :ref:`5 <X_5>`, :ref:`2042 <X_2042>`), (:ref:`4 <X_4>`, :ref:`20 <X_20>`, :ref:`2042 <X_2042>`), (:ref:`376 <X_376>`, 3832, :ref:`2042 <X_2042>`), (:ref:`381 <X_381>`, :ref:`548 <X_548>`, :ref:`2042 <X_2042>`)
+   * :ref:`X_2041 <X_2041>` = {X_i,X_j}-harmonic conjugate of X_k for these (i,j,k): (:ref:`2 <X_2>`, :ref:`641 <X_641>`, :ref:`2042 <X_2042>`), (:ref:`3 <X_3>`, :ref:`4 <X_4>`, :ref:`2044 <X_2044>`), (:ref:`3 <X_3>`, :ref:`5 <X_5>`, :ref:`2042 <X_2042>`), (:ref:`4 <X_4>`, :ref:`20 <X_20>`, :ref:`2042 <X_2042>`), (:ref:`376 <X_376>`, :ref:`3832 <X_3832>`, :ref:`2042 <X_2042>`), (:ref:`381 <X_381>`, :ref:`548 <X_548>`, :ref:`2042 <X_2042>`)
 
 Notes
 -----

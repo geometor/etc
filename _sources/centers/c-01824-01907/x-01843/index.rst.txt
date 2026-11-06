@@ -59,7 +59,7 @@ X_1843
    * :ref:`X_1843 <X_1843>` = :ref:`X_48 <X_48>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X_308 <X_308>`
    * :ref:`X_1843 <X_1843>` = inverse-in-polar-circle of :ref:`X_316 <X_316>`
    * :ref:`X_1843 <X_1843>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X_7 <X_7>`
-   * :ref:`X_1843 <X_1843>` = Ehrmann-vertex-to-orthic :term:`similarity image <similarity-image>` of X_3818
+   * :ref:`X_1843 <X_1843>` = Ehrmann-vertex-to-orthic :term:`similarity image <similarity-image>` of :ref:`X_3818 <X_3818>`
    * :ref:`X_1843 <X_1843>` = perspector of [reflection of :term:`symmedial triangle <symmedial-triangle>` in :ref:`X_6 <X_6>`] and :term:`tangential triangle <tangential-triangle>`, wrt symmedial triangle, of circumconic of symmedial triangle centered at :ref:`X_6 <X_6>` (bicevian conic of :ref:`X_6 <X_6>` and :ref:`X_25 <X_25>`)
 
 Notes

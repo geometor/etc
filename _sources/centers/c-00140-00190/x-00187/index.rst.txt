@@ -55,7 +55,7 @@ X_187
    :badge: 18 lines
    :class: line-catalog
 
-   {:ref:`2 <X_2>`, :ref:`316 <X_316>`}, {:ref:`3 <X_3>`, :ref:`6 <X_6>`}, {:ref:`23 <X_23>`, :ref:`111 <X_111>`}, {:ref:`30 <X_30>`, :ref:`115 <X_115>`}, {:ref:`35 <X_35>`, :ref:`172 <X_172>`}, {:ref:`36 <X_36>`, :ref:`1015 <X_1015>`}, {:ref:`74 <X_74>`, :ref:`248 <X_248>`}, {:ref:`99 <X_99>`, :ref:`385 <X_385>`}, {:ref:`110 <X_110>`, :ref:`352 <X_352>`}, {:ref:`112 <X_112>`, :ref:`186 <X_186>`}, {:ref:`183 <X_183>`, :ref:`1003 <X_1003>`}, {:ref:`237 <X_237>`, :ref:`351 <X_351>`}, {:ref:`249 <X_249>`, :ref:`323 <X_323>`}, {:ref:`325 <X_325>`, :ref:`620 <X_620>`}, {:ref:`353 <X_353>`, 3117}, {:ref:`395 <X_395>`, :ref:`531 <X_531>`}, {:ref:`396 <X_396>`, :ref:`530 <X_530>`}, {:ref:`729 <X_729>`, :ref:`805 <X_805>`}
+   {:ref:`2 <X_2>`, :ref:`316 <X_316>`}, {:ref:`3 <X_3>`, :ref:`6 <X_6>`}, {:ref:`23 <X_23>`, :ref:`111 <X_111>`}, {:ref:`30 <X_30>`, :ref:`115 <X_115>`}, {:ref:`35 <X_35>`, :ref:`172 <X_172>`}, {:ref:`36 <X_36>`, :ref:`1015 <X_1015>`}, {:ref:`74 <X_74>`, :ref:`248 <X_248>`}, {:ref:`99 <X_99>`, :ref:`385 <X_385>`}, {:ref:`110 <X_110>`, :ref:`352 <X_352>`}, {:ref:`112 <X_112>`, :ref:`186 <X_186>`}, {:ref:`183 <X_183>`, :ref:`1003 <X_1003>`}, {:ref:`237 <X_237>`, :ref:`351 <X_351>`}, {:ref:`249 <X_249>`, :ref:`323 <X_323>`}, {:ref:`325 <X_325>`, :ref:`620 <X_620>`}, {:ref:`353 <X_353>`, :ref:`3117 <X_3117>`}, {:ref:`395 <X_395>`, :ref:`531 <X_531>`}, {:ref:`396 <X_396>`, :ref:`530 <X_530>`}, {:ref:`729 <X_729>`, :ref:`805 <X_805>`}
 
 .. collapse:: Functional Relations
    :badge: 52 relations
@@ -92,7 +92,7 @@ X_187
    * :ref:`X_187 <X_187>` = :ref:`X_187 <X_187>`-of-2nd-Brocard-triangle
    * :ref:`X_187 <X_187>` = :ref:`X_187 <X_187>`-of-circumsymmedial-triangle
    * :ref:`X_187 <X_187>` = polar conjugate of isogonal conjugate of X_23200
-   * :ref:`X_187 <X_187>` = polar conjugate of isotomic conjugate of X_3292
+   * :ref:`X_187 <X_187>` = polar conjugate of isotomic conjugate of :ref:`X_3292 <X_3292>`
    * :ref:`X_187 <X_187>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_895 <X_895>`
    * :ref:`X_187 <X_187>` = :ref:`X_1577 <X_1577>`-isoconjugate of :ref:`X_691 <X_691>`
    * :ref:`X_187 <X_187>` = {:ref:`X_1687 <X_1687>`,\ :ref:`X_1688 <X_1688>`}-harmonic conjugate of :ref:`X_2080 <X_2080>`

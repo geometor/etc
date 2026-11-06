@@ -113,29 +113,36 @@ Module Contents
           stroke-width: 3.5 !important;
       }
       
-      #elements line {
+      #elements line,
+      #elements path.line {
           fill: none;
-          stroke: #777;
-          stroke-width: 1.5;
+          stroke: #b0bec5;
+          stroke-width: 2.2;
+          stroke-dasharray: 2, 4.5;
+          stroke-linecap: round;
           vector-effect: non-scaling-stroke;
           cursor: pointer;
       }
       
-      #elements line.sideline {
-          stroke: #999;
-          stroke-width: 2;
+      #elements line.sideline,
+      #elements path.line.sideline {
+          stroke: #cbd5e1;
+          stroke-width: 2.3;
       }
       
-      #elements line.central_line {
+      #elements line.central_line,
+      #elements path.line.central_line {
           stroke: #0bd;
-          stroke-width: 1.75;
+          stroke-width: 1.85;
           stroke-opacity: 0.85;
       }
       
       #elements line.golden,
-      #elements line.euler {
+      #elements path.line.golden,
+      #elements line.euler,
+      #elements path.line.euler {
           stroke: gold;
-          stroke-width: 2;
+          stroke-width: 2.1;
       }
       
       #elements circle {
@@ -162,7 +169,7 @@ Module Contents
       }
       
       #elements .bisector {
-          stroke-dasharray: 8, 4, 2, 4;
+          stroke-dasharray: 2, 4;
       }
       
       #elements .guide {
@@ -173,10 +180,13 @@ Module Contents
       
       #elements line:hover,
       #elements line.hover,
+      #elements path.line:hover,
+      #elements path.line.hover,
       #elements circle:hover,
       #elements circle.hover {
           stroke: var(--select-color) !important;
           stroke-width: 3.2 !important;
+          stroke-dasharray: none !important;
           stroke-opacity: 1 !important;
       }
       

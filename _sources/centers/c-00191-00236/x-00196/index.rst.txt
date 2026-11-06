@@ -47,7 +47,7 @@ X_196
    * :ref:`X_196 <X_196>` = :ref:`X_221 <X_221>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_347 <X_347>`
    * :ref:`X_196 <X_196>` = X_i-:term:`beth conjugate <beth-conjugate>` of X_j for these (i,j): (:ref:`648 <X_648>`, :ref:`2 <X_2>`), (:ref:`653 <X_653>`, :ref:`196 <X_196>`)
    * :ref:`X_196 <X_196>` = Danneels point of :ref:`X_653 <X_653>`
-   * :ref:`X_196 <X_196>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_280 <X_280>` (line :ref:`X_521 <X_521>`\ X_3239)
+   * :ref:`X_196 <X_196>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_280 <X_280>` (line :ref:`X_521 <X_521>`\ \ :ref:`X_3239 <X_3239>`)
    * :ref:`X_196 <X_196>` = polar conjugate of :ref:`X_280 <X_280>`
 
 .. toctree::

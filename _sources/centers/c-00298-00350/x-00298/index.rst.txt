@@ -48,9 +48,9 @@ X_298
 
    * :ref:`X_298 <X_298>` = midpoint of :ref:`X_616 <X_616>` and :ref:`X_621 <X_621>`
    * :ref:`X_298 <X_298>` = reflection of X_i in X_j for these (i,j): (:ref:`13 <X_13>`, :ref:`623 <X_623>`), (:ref:`15 <X_15>`, :ref:`618 <X_618>`), (:ref:`299 <X_299>`, :ref:`325 <X_325>`), (:ref:`385 <X_385>`, :ref:`395 <X_395>`)
-   * :ref:`X_298 <X_298>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3457
+   * :ref:`X_298 <X_298>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3457 <X_3457>`
    * :ref:`X_298 <X_298>` = isotomic conjugate of :ref:`X_13 <X_13>`
-   * :ref:`X_298 <X_298>` = :term:`complement <complement>` of X_3180
+   * :ref:`X_298 <X_298>` = :term:`complement <complement>` of :ref:`X_3180 <X_3180>`
    * :ref:`X_298 <X_298>` = :term:`anticomplement <anticomplement>` of :ref:`X_396 <X_396>`
    * :ref:`X_298 <X_298>` = :ref:`X_300 <X_300>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_303 <X_303>`
    * :ref:`X_298 <X_298>` = :ref:`X_15 <X_15>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_470 <X_470>`

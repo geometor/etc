@@ -29,7 +29,7 @@ X_1880
 .. signature:: center
 
    | **Trilinears:** :math:`(y + z) \sec A : :`, where :math:`x : y : z` = :ref:`X_573 <X_573>`
-   | **Search Value (6, 9, 13):** :math:`-2.603957925204`
+   | **Search Value (6, 9, 13):** :math:`-0.179034109950`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form

@@ -41,7 +41,7 @@ X_726
    :badge: 4 relations
 
    * :ref:`X_726 <X_726>` = isogonal conjugate of :ref:`X_727 <X_727>`
-   * :ref:`X_726 <X_726>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3226
+   * :ref:`X_726 <X_726>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3226 <X_3226>`
    * :ref:`X_726 <X_726>` = :ref:`X_291 <X_291>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_10 <X_10>`
    * :ref:`X_726 <X_726>` = :term:`crosspoint <crosspoint>` of :ref:`X_75 <X_75>` and :ref:`X_335 <X_335>`
 

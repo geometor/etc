@@ -42,7 +42,7 @@ X_860
    :badge: 2 relations
 
    * :ref:`X_860 <X_860>` = crossdifference of every pair of points on line :ref:`X_48 <X_48>`\ \ :ref:`X_647 <X_647>`
-   * :ref:`X_860 <X_860>` = inverse-in-polar-circle of X_3109
+   * :ref:`X_860 <X_860>` = inverse-in-polar-circle of :ref:`X_3109 <X_3109>`
 
 Notes
 -----

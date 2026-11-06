@@ -53,8 +53,8 @@ X_1370
    * :ref:`X_1370 <X_1370>` = anticomplement of :ref:`X_25 <X_25>`
    * :ref:`X_1370 <X_1370>` = :term:`crosspoint <crosspoint>` of :ref:`X_670 <X_670>` and X_23582
    * :ref:`X_1370 <X_1370>` = circumcircle-inverse of X_37929
-   * :ref:`X_1370 <X_1370>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): {:ref:`159 <X_159>`, 23115}, {:ref:`455 <X_455>`, 3162}
-   * :ref:`X_1370 <X_1370>` = :term:`crosssum <crosssum>` of :ref:`X_669 <X_669>` and X_3269
+   * :ref:`X_1370 <X_1370>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): {:ref:`159 <X_159>`, 23115}, {:ref:`455 <X_455>`, :ref:`3162 <X_3162>`}
+   * :ref:`X_1370 <X_1370>` = :term:`crosssum <crosssum>` of :ref:`X_669 <X_669>` and :ref:`X_3269 <X_3269>`
    * :ref:`X_1370 <X_1370>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X_193 <X_193>`
    * :ref:`X_1370 <X_1370>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`305 <X_305>`, :ref:`2 <X_2>`), (:ref:`315 <X_315>`, :ref:`69 <X_69>`)
    * :ref:`X_1370 <X_1370>` = homothetic center of :term:`anticomplementary triangle <anticomplementary-triangle>` and 3rd :term:`antipedal triangle <antipedal-triangle>` of :ref:`X_4 <X_4>` (or polar triangle of anticomplementary circle)

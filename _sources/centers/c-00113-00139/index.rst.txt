@@ -22,7 +22,7 @@ X_113–X_139
 
 .. _preamble-0003:
 
-.. admonition:: Group Preamble — Centers X_113-X_139
+.. admonition:: Group Preamble — Centers X_113-X_139 (Points on the nine-point circle)
    :class: note
 
    Centers :ref:`X_113 <X_113>`-:ref:`X_139 <X_139>` lie on the nine-point circle.

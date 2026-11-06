@@ -1,0 +1,55 @@
+geometor.etc.topics
+===================
+
+.. py:module:: geometor.etc.topics
+
+.. autoapi-nested-parse::
+
+   Topic Video and Documentation Generator for GEOMETOR ETC Collection 1 (X_1–X_19).
+
+   Covers every major geometric transformation, named central line, named circle, and
+   classical derived triangle encountered across Collection 1 (X_1 through X_19),
+   coordinating text token colors (`g-tok` gold, `coincide-tok` sky-blue, `eq-tok` green)
+   with solid/dotted geometric elements in the SVG stage.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.etc.topics.COLLECTION_1_TOPICS
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.topics.build_topic_model
+   geometor.etc.topics.generate_topic_overview_svg
+   geometor.etc.topics.build_topic_video_package
+
+
+Module Contents
+---------------
+
+.. py:data:: COLLECTION_1_TOPICS
+   :type:  list[dict[str, Any]]
+
+.. py:function:: build_topic_model(topic: dict[str, Any], reg: geometor.etc.construct.CenterRegistry, include_all_lines: bool = False) -> geometor.model.Model
+
+   Build a `geometor.model.Model` for `topic` with tiny-dotted lines, solid segments, and exact element IDs.
+
+
+.. py:function:: generate_topic_overview_svg(topic: dict[str, Any], reg: geometor.etc.construct.CenterRegistry) -> str
+
+   Render a dark-mode diagram card for Step 3 (`02_overview.svg`) illustrating the algebraic & geometric action of `topic`.
+
+
+.. py:function:: build_topic_video_package(topic: dict[str, Any], svgs_dir: pathlib.Path, acute_reg: geometor.etc.construct.CenterRegistry, regs_by_preset: dict[str, tuple[str, geometor.etc.construct.TriangleContext, geometor.etc.construct.CenterRegistry]]) -> tuple[str, list[dict[str, Any]]]
+
+   Generate the 5 SVGs, `script.txt`, and 7-subslide `scenes.json` for `topic` with sequenced line/circle highlights.
+
+

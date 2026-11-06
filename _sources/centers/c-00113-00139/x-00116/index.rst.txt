@@ -52,7 +52,7 @@ X_116
    * :ref:`X_116 <X_116>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X_514 <X_514>`
    * :ref:`X_116 <X_116>` = :ref:`X_4 <X_4>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_514 <X_514>`
    * :ref:`X_116 <X_116>` = polar conjugate of isogonal conjugate of X_22084
-   * :ref:`X_116 <X_116>` = inverse-in-excircles-radical-circle of X_3034
+   * :ref:`X_116 <X_116>` = inverse-in-excircles-radical-circle of :ref:`X_3034 <X_3034>`
    * :ref:`X_116 <X_116>` = inverse-in-orthoptic-circle-of-Steiner-inellipse of :ref:`X_675 <X_675>`
    * :ref:`X_116 <X_116>` = anticenter of cyclic quadrilateral :g:`ABC << A B C >>`\ :ref:`X_103 <X_103>`
    * :ref:`X_116 <X_116>` = Λ(Gergonne line), wrt :term:`orthic triangle <orthic-triangle>`

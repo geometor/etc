@@ -39,13 +39,13 @@ X_538
    :badge: 21 lines
    :class: line-catalog
 
-   {:ref:`2 <X_2>`, :ref:`39 <X_39>`}, {:ref:`30 <X_30>`, :ref:`511 <X_511>`}, {:ref:`32 <X_32>`, :ref:`1003 <X_1003>`}, {:ref:`69 <X_69>`, :ref:`2549 <X_2549>`}, {:ref:`75 <X_75>`, :ref:`1573 <X_1573>`}, {:ref:`99 <X_99>`, :ref:`187 <X_187>`}, {:ref:`115 <X_115>`, :ref:`325 <X_325>`}, {:ref:`148 <X_148>`, :ref:`316 <X_316>`}, {:ref:`183 <X_183>`, :ref:`574 <X_574>`}, {:ref:`230 <X_230>`, :ref:`620 <X_620>`}, {:ref:`262 <X_262>`, 3545}, {:ref:`350 <X_350>`, :ref:`1015 <X_1015>`}, {:ref:`381 <X_381>`, 3095}, {:ref:`591 <X_591>`, 3102}, {:ref:`599 <X_599>`, 3094}, {:ref:`671 <X_671>`, :ref:`1916 <X_1916>`}, {:ref:`886 <X_886>`, 3228}, {:ref:`1316 <X_1316>`, 3292}, {:ref:`1500 <X_1500>`, :ref:`1909 <X_1909>`}, {:ref:`1569 <X_1569>`, :ref:`2021 <X_2021>`}, {:ref:`1991 <X_1991>`, 3103}
+   {:ref:`2 <X_2>`, :ref:`39 <X_39>`}, {:ref:`30 <X_30>`, :ref:`511 <X_511>`}, {:ref:`32 <X_32>`, :ref:`1003 <X_1003>`}, {:ref:`69 <X_69>`, :ref:`2549 <X_2549>`}, {:ref:`75 <X_75>`, :ref:`1573 <X_1573>`}, {:ref:`99 <X_99>`, :ref:`187 <X_187>`}, {:ref:`115 <X_115>`, :ref:`325 <X_325>`}, {:ref:`148 <X_148>`, :ref:`316 <X_316>`}, {:ref:`183 <X_183>`, :ref:`574 <X_574>`}, {:ref:`230 <X_230>`, :ref:`620 <X_620>`}, {:ref:`262 <X_262>`, :ref:`3545 <X_3545>`}, {:ref:`350 <X_350>`, :ref:`1015 <X_1015>`}, {:ref:`381 <X_381>`, :ref:`3095 <X_3095>`}, {:ref:`591 <X_591>`, :ref:`3102 <X_3102>`}, {:ref:`599 <X_599>`, :ref:`3094 <X_3094>`}, {:ref:`671 <X_671>`, :ref:`1916 <X_1916>`}, {:ref:`886 <X_886>`, :ref:`3228 <X_3228>`}, {:ref:`1316 <X_1316>`, :ref:`3292 <X_3292>`}, {:ref:`1500 <X_1500>`, :ref:`1909 <X_1909>`}, {:ref:`1569 <X_1569>`, :ref:`2021 <X_2021>`}, {:ref:`1991 <X_1991>`, :ref:`3103 <X_3103>`}
 
 .. collapse:: Functional Relations
    :badge: 5 relations
 
    * :ref:`X_538 <X_538>` = isogonal conjugate of :ref:`X_729 <X_729>`
-   * :ref:`X_538 <X_538>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3228
+   * :ref:`X_538 <X_538>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3228 <X_3228>`
    * :ref:`X_538 <X_538>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of X_35073
    * :ref:`X_538 <X_538>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_6 <X_6>`\ \ :ref:`X_669 <X_669>`
    * :ref:`X_538 <X_538>` = perspector of circumconic centered at X_35073

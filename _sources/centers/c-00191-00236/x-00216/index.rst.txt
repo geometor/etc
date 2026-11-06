@@ -47,13 +47,13 @@ X_216
 
 .. container:: note-item
 
-   :ref:`X_216 <X_216>` lies on hyperbola {:ref:`X_2 <X_2>`,\ :ref:`X_6 <X_6>`,\ :ref:`X_216 <X_216>`,\ :ref:`X_233 <X_233>`,\ :ref:`X_1249 <X_1249>`,\ :ref:`X_1560 <X_1560>`,X_3162}}, which is a circumconic of the :term:`medial triangle <medial-triangle>`, as well as the locus of the perspector of circumconics centered at a point on the Euler line. Also, this hyperbola is tangent to Euler line at :ref:`X_2 <X_2>`. (:person:`Randy Hutson <randy-hutson>`, July 20, 2016)
+   :ref:`X_216 <X_216>` lies on hyperbola {:ref:`X_2 <X_2>`,\ :ref:`X_6 <X_6>`,\ :ref:`X_216 <X_216>`,\ :ref:`X_233 <X_233>`,\ :ref:`X_1249 <X_1249>`,\ :ref:`X_1560 <X_1560>`,\ :ref:`X_3162 <X_3162>`}}, which is a circumconic of the :term:`medial triangle <medial-triangle>`, as well as the locus of the perspector of circumconics centered at a point on the Euler line. Also, this hyperbola is tangent to Euler line at :ref:`X_2 <X_2>`. (:person:`Randy Hutson <randy-hutson>`, July 20, 2016)
 
 .. collapse:: Incident Central Lines
    :badge: 14 lines
    :class: line-catalog
 
-   {:ref:`2 <X_2>`, :ref:`232 <X_232>`}, {:ref:`3 <X_3>`, :ref:`6 <X_6>`}, {:ref:`5 <X_5>`, :ref:`53 <X_53>`}, {:ref:`51 <X_51>`, :ref:`418 <X_418>`}, {:ref:`95 <X_95>`, :ref:`648 <X_648>`}, {:ref:`97 <X_97>`, :ref:`288 <X_288>`}, {:ref:`115 <X_115>`, :ref:`131 <X_131>`}, {:ref:`157 <X_157>`, :ref:`206 <X_206>`}, {:ref:`373 <X_373>`, :ref:`852 <X_852>`}, {:ref:`395 <X_395>`, :ref:`465 <X_465>`}, {:ref:`396 <X_396>`, :ref:`466 <X_466>`}, {:ref:`631 <X_631>`, :ref:`1075 <X_1075>`}, {:ref:`1015 <X_1015>`, :ref:`1060 <X_1060>`}, {:ref:`2493 <X_2493>`, 3054}
+   {:ref:`2 <X_2>`, :ref:`232 <X_232>`}, {:ref:`3 <X_3>`, :ref:`6 <X_6>`}, {:ref:`5 <X_5>`, :ref:`53 <X_53>`}, {:ref:`51 <X_51>`, :ref:`418 <X_418>`}, {:ref:`95 <X_95>`, :ref:`648 <X_648>`}, {:ref:`97 <X_97>`, :ref:`288 <X_288>`}, {:ref:`115 <X_115>`, :ref:`131 <X_131>`}, {:ref:`157 <X_157>`, :ref:`206 <X_206>`}, {:ref:`373 <X_373>`, :ref:`852 <X_852>`}, {:ref:`395 <X_395>`, :ref:`465 <X_465>`}, {:ref:`396 <X_396>`, :ref:`466 <X_466>`}, {:ref:`631 <X_631>`, :ref:`1075 <X_1075>`}, {:ref:`1015 <X_1015>`, :ref:`1060 <X_1060>`}, {:ref:`2493 <X_2493>`, :ref:`3054 <X_3054>`}
 
 .. collapse:: Functional Relations
    :badge: 23 relations

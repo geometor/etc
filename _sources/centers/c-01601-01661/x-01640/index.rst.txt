@@ -42,7 +42,7 @@ X_1640
 
    * :ref:`X_1640 <X_1640>` = radical center of Brocard circle, orthocentroidal circle, and orthosymmedial circle
    * :ref:`X_1640 <X_1640>` = radical center of orthocentroidal circle, orthosymmedial circle, and circle O(2,6)
-   * :ref:`X_1640 <X_1640>` = X_3268-of-1st-Brocard-triangle
+   * :ref:`X_1640 <X_1640>` = :ref:`X_3268 <X_3268>`-of-1st-Brocard-triangle
    * :ref:`X_1640 <X_1640>` = orthocenter of :ref:`X_2 <X_2>`\ \ :ref:`X_4 <X_4>`\ \ :ref:`X_6 <X_6>`
    * :ref:`X_1640 <X_1640>` = orthoptic-circle-of-Steiner-inellipse-inverse of X_34366
    * :ref:`X_1640 <X_1640>` = inverse-in-Hutson-Parry-circle of :ref:`X_1637 <X_1637>`

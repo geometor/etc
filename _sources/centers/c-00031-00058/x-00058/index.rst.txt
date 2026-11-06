@@ -55,7 +55,7 @@ X_58
    * :ref:`X_58 <X_58>` = isogonal conjugate of :ref:`X_10 <X_10>`
    * :ref:`X_58 <X_58>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_313 <X_313>`
    * :ref:`X_58 <X_58>` = :term:`complement <complement>` of :ref:`X_1330 <X_1330>`
-   * :ref:`X_58 <X_58>` = :term:`anticomplement <anticomplement>` of X_3454
+   * :ref:`X_58 <X_58>` = :term:`anticomplement <anticomplement>` of :ref:`X_3454 <X_3454>`
    * :ref:`X_58 <X_58>` = circumcircle-inverse of :ref:`X_1326 <X_1326>`
    * :ref:`X_58 <X_58>` = Brocard-circle-inverse of :ref:`X_386 <X_386>`
    * :ref:`X_58 <X_58>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`81 <X_81>`, :ref:`284 <X_284>`), (:ref:`267 <X_267>`, :ref:`501 <X_501>`), (:ref:`270 <X_270>`, :ref:`28 <X_28>`)

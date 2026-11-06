@@ -29,7 +29,7 @@ X_843
 .. signature:: center
 
    | **Trilinears:** :math:`a/(2ax - by - cz) : :`, where :math:`x = x(a,b,c) = bc/(b^{2} - c^{2})`
-   | **Search Value (6, 9, 13):** :math:`18.626457277622`
+   | **Search Value (6, 9, 13):** :math:`5.067897888389`
 
 .. container:: note-item
 

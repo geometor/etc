@@ -8,7 +8,7 @@ X_612
 
 .. enunciation::
 
-   :ref:`X_612 <X_612>` is the homothetic center of the :term:`incentral triangle <incentral-triangle>` and the Ayme triangle; see X_3610.
+   :ref:`X_612 <X_612>` is the homothetic center of the :term:`incentral triangle <incentral-triangle>` and the Ayme triangle; see :ref:`X_3610 <X_3610>`.
 
 .. figure:: x-00612.svg
    :alt: X_612 — INTERSECTION OF LINES X_1X_2 AND X_9X_31

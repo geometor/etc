@@ -68,7 +68,7 @@ X_226
    * :ref:`X_226 <X_226>` = :ref:`X_48 <X_48>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X_29 <X_29>`
    * :ref:`X_226 <X_226>` = :ref:`X_6 <X_6>`-isoconjugate of :ref:`X_21 <X_21>`
    * :ref:`X_226 <X_226>` = :ref:`X_184 <X_184>`-of-2nd-extouch-triangle
-   * :ref:`X_226 <X_226>` = {:ref:`X_2 <X_2>`,\ :ref:`X_57 <X_57>`}-harmonic conjugate of X_3911
+   * :ref:`X_226 <X_226>` = {:ref:`X_2 <X_2>`,\ :ref:`X_57 <X_57>`}-harmonic conjugate of :ref:`X_3911 <X_3911>`
    * :ref:`X_226 <X_226>` = {:ref:`X_9 <X_9>`,\ :ref:`X_57 <X_57>`}-harmonic conjugate of :ref:`X_1708 <X_1708>`
    * :ref:`X_226 <X_226>` = homothetic center of :term:`intouch triangle <intouch-triangle>` and the complement of :term:`excentral triangle <excentral-triangle>`)
    * :ref:`X_226 <X_226>` = homothetic center of 3rd Euler tringle and inverse-in-incircle triangle

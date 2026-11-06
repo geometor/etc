@@ -50,18 +50,18 @@ X_2207
    * :ref:`X_2207 <X_2207>` = :term:`cevapoint <cevapoint>` of :ref:`X_6 <X_6>` and :ref:`X_1611 <X_1611>`
    * :ref:`X_2207 <X_2207>` = :ref:`X_1974 <X_1974>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_25 <X_25>`
    * :ref:`X_2207 <X_2207>` = :term:`crosssum <crosssum>` of :ref:`X_6 <X_6>` and :ref:`X_1619 <X_1619>`
-   * :ref:`X_2207 <X_2207>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3926
-   * :ref:`X_2207 <X_2207>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_305 <X_305>` (line :ref:`X_525 <X_525>`\ X_3267)
+   * :ref:`X_2207 <X_2207>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3926 <X_3926>`
+   * :ref:`X_2207 <X_2207>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_305 <X_305>` (line :ref:`X_525 <X_525>`\ \ :ref:`X_3267 <X_3267>`)
    * :ref:`X_2207 <X_2207>` = polar conjugate of :ref:`X_305 <X_305>`
-   * :ref:`X_2207 <X_2207>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of X_3964
-   * :ref:`X_2207 <X_2207>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_520 <X_520>`\ X_3265
+   * :ref:`X_2207 <X_2207>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_3964 <X_3964>`
+   * :ref:`X_2207 <X_2207>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_520 <X_520>`\ \ :ref:`X_3265 <X_3265>`
 
 Notes
 -----
 
 .. container:: note-item
 
-   :ref:`X_2207 <X_2207>` is the :term:`vertex conjugate <vertex-conjugate>` of the foci of the inellipse that is the barycentric square of the orthic axis. This inellipse has center X_3767 and perspector :ref:`X_393 <X_393>`. (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
+   :ref:`X_2207 <X_2207>` is the :term:`vertex conjugate <vertex-conjugate>` of the foci of the inellipse that is the barycentric square of the orthic axis. This inellipse has center :ref:`X_3767 <X_3767>` and perspector :ref:`X_393 <X_393>`. (:person:`Randy Hutson <randy-hutson>`, October 15, 2018)
 
 .. toctree::
    :hidden:

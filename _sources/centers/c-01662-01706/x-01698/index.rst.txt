@@ -58,7 +58,7 @@ X_1698
    * :ref:`X_1698 <X_1698>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_649 <X_649>`\ \ :ref:`X_2605 <X_2605>`
    * :ref:`X_1698 <X_1698>` = trilinear product of vertices of Aquila triangle
    * :ref:`X_1698 <X_1698>` = homothetic center of :g:`ABC << A B C >>` and cross-triangle of :g:`ABC << A B C >>` and Aquila triangle
-   * :ref:`X_1698 <X_1698>` = {:ref:`X_1 <X_1>`,\ :ref:`X_2 <X_2>`}-harmonic conjugate of X_3624
+   * :ref:`X_1698 <X_1698>` = {:ref:`X_1 <X_1>`,\ :ref:`X_2 <X_2>`}-harmonic conjugate of :ref:`X_3624 <X_3624>`
    * :ref:`X_1698 <X_1698>` = perspector of Gemini triangle 26 and cross-triangle of :g:`ABC << A B C >>` and Gemini triangle 26
    * :ref:`X_1698 <X_1698>` = :term:`isogonal conjugate <isogonal-conjugate>` of isotomic conjugate of X_30596
    * :ref:`X_1698 <X_1698>` = homothetic center of Ai (aka K798i) triangle and cross-triangle of Fuhrmann and Ai triangles

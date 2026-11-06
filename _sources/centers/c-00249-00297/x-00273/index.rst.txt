@@ -51,7 +51,7 @@ X_273
    * :ref:`X_273 <X_273>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`264 <X_264>`, :ref:`342 <X_342>`), (:ref:`286 <X_286>`, :ref:`7 <X_7>`), (:ref:`331 <X_331>`, :ref:`92 <X_92>`)
    * :ref:`X_273 <X_273>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`278 <X_278>`), (:ref:`34 <X_34>`, :ref:`57 <X_57>`)
    * :ref:`X_273 <X_273>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`92 <X_92>`), (:ref:`57 <X_57>`, :ref:`85 <X_85>`), (:ref:`225 <X_225>`, :ref:`278 <X_278>`)
-   * :ref:`X_273 <X_273>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_514 <X_514>`\ X_3064 (polar of :ref:`X_9 <X_9>` wrt polar circle)
+   * :ref:`X_273 <X_273>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_514 <X_514>`\ \ :ref:`X_3064 <X_3064>` (polar of :ref:`X_9 <X_9>` wrt polar circle)
    * :ref:`X_273 <X_273>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_9 <X_9>` (line :ref:`X_650 <X_650>`\ \ :ref:`X_663 <X_663>`)
    * :ref:`X_273 <X_273>` = polar conjugate of :ref:`X_9 <X_9>`
 

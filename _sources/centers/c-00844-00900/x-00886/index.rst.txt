@@ -40,7 +40,7 @@ X_886
    :badge: 4 lines
    :class: line-catalog
 
-   {:ref:`99 <X_99>`, :ref:`669 <X_669>`}, {:ref:`512 <X_512>`, :ref:`670 <X_670>`}, {:ref:`538 <X_538>`, 3228}, {:ref:`880 <X_880>`, :ref:`892 <X_892>`}
+   {:ref:`99 <X_99>`, :ref:`669 <X_669>`}, {:ref:`512 <X_512>`, :ref:`670 <X_670>`}, {:ref:`538 <X_538>`, :ref:`3228 <X_3228>`}, {:ref:`880 <X_880>`, :ref:`892 <X_892>`}
 
 .. collapse:: Functional Relations
    :badge: 4 relations

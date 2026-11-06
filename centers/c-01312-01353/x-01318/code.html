@@ -40,6 +40,9 @@
           <a href="../../index.html" class="is-active" aria-selected="true" >Encyclopedia of Triangle Centers</a>
         </li>
         <li>
+          <a href="../../../preambles.html"  >Guide to Preambles in ETC</a>
+        </li>
+        <li>
           <a href="../../../glossary.html"  >Glossary</a>
         </li>
         <li>
@@ -137,7 +140,7 @@
             <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="kimberling" title="Kimberling Obtuse Scalene Triangle (6, 9, 13)" data-caption-html="&lt;strong&gt;X&lt;sub&gt;1318&lt;/sub&gt; — ISOGONAL CONJUGATE OF X&lt;sub&gt;1317&lt;/sub&gt;&lt;/strong&gt; constructed on Kimberling&#x27;s canonical uniqueness test triangle &lt;code&gt;(a, b, c) = (6, 9, 13)&lt;/code&gt; (obtuse scalene, unit baseline &lt;span class=&quot;geom-ref geom-segment&quot; data-ref=&quot;[ A B ]&quot;&gt;AB&lt;/span&gt; = &lt;code&gt;1&lt;/code&gt;).">Kimberling</button>
           </div>
         <div class="etc-tab-pane active" data-tab-pane="acute">
-        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.661501 -1.812622 2.656336 1.992252" data-initial-viewbox="-0.661501 -1.812622 2.656336 1.992252" preserveAspectRatio="xMidYMid meet">
+        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.661501 -1.812622 2.656336 1.992252" data-initial-viewbox="-0.661501 -1.812622 2.656336 1.992252" data-target-r-px="10.5" preserveAspectRatio="xMidYMid meet">
           <style>
         :root {
             --background-color: #121212;
@@ -359,6 +362,14 @@
         #labels text.hover-label {
             fill: var(--select-color) !important;
             font-weight: 700;
+        }
+
+        #labels text.dense-label {
+            display: none;
+        }
+
+        #labels text.dense-label.hover-label {
+            display: block !important;
         }
 
         .etc-svg-stage {
@@ -476,8 +487,8 @@
             <line data-id="[ C A ]" data-name="Sideline CA (Side b)" class="line sideline" data-category="elements" x1="612.85714" y1="-600.47492" x2="-611.63266" y2="599.27516"><title>[ C A ]: Sideline CA (Side b)</title></line>
             <line data-id="{ 36, 106 }" data-name="Central Line L(36, 106)" class="line central_line" data-category="elements" x1="334.66662" y1="-1634.62596" x2="-331.99996" y2="1631.35998"><title>{ 36, 106 }: Central Line L(36, 106)</title></line>
             <line data-id="{ 88, 517 }" data-name="Central Line L(88, 517)" class="line central_line" data-category="elements" x1="183.01385" y1="715.40052" x2="-181.01385" y2="-715.40052"><title>{ 88, 517 }: Central Line L(88, 517)</title></line>
-            <line data-id="{ 1, 1168 }" data-name="Central Line L(1, 1168)" class="line central_line incident" data-category="elements" x1="-428.00019" y1="-233.51786" x2="429.14305" y2="233.05130"><title>{ 1, 1168 }: Central Line L(1, 1168)</title></line>
-            <line data-id="{ 679, 1319 }" data-name="Central Line L(679, 1319)" class="line central_line incident" data-category="elements" x1="48.61925" y1="933.13895" x2="-46.61925" y2="-933.13895"><title>{ 679, 1319 }: Central Line L(679, 1319)</title></line>
+            <line data-id="{ 1, 1168 }" data-name="Central Line L(1, 1168)" class="line central_line incident" data-category="elements" x1="-428.00020" y1="-233.51802" x2="429.14306" y2="233.05146"><title>{ 1, 1168 }: Central Line L(1, 1168)</title></line>
+            <line data-id="{ 679, 1319 }" data-name="Central Line L(679, 1319)" class="line central_line incident" data-category="elements" x1="48.61935" y1="933.13895" x2="-46.61935" y2="-933.13895"><title>{ 679, 1319 }: Central Line L(679, 1319)</title></line>
           </g>
           <g id="points">
             <circle data-id="A" data-name="Vertex A" class="point given vertex" data-category="points" cx="0.000000" cy="-0.000000" r="0.024903"><title>A = Vertex A (0.0000, 0.0000)</title></circle>
@@ -504,7 +515,7 @@
             <text class="point-label" data-point-id="X_88" data-anchor-x="1.000000" data-anchor-y="-0.000000" data-offset-x="12.0" data-offset-y="-10.5" x="1.039845" y="-0.034865" font-size="0.067238">X<tspan dy="0.3em" font-size="75%">88</tspan></text>
             <text class="point-label" data-point-id="X_517" data-anchor-x="0.817986" data-anchor-y="-0.715401" data-offset-x="12.0" data-offset-y="-10.5" x="0.857831" y="-0.750265" font-size="0.067238">X<tspan dy="0.3em" font-size="75%">517</tspan></text>
             <text class="point-label incident" data-point-id="X_1" data-anchor-x="0.571429" data-anchor-y="-0.233285" data-offset-x="12.0" data-offset-y="-10.5" x="0.611274" y="-0.268149" font-size="0.067238">X<tspan dy="0.3em" font-size="75%">1</tspan></text>
-            <text class="point-label incident" data-point-id="X_1168" data-anchor-x="1.000000" data-anchor-y="-0.000000" data-offset-x="12.0" data-offset-y="-10.5" x="1.039845" y="-0.034865" font-size="0.067238">X<tspan dy="0.3em" font-size="75%">1168</tspan></text>
+            <text class="point-label incident" data-point-id="X_1168" data-anchor-x="1.000000" data-anchor-y="-0.000000" data-offset-x="12.0" data-offset-y="-10.5" x="1.039845" y="-0.034864" font-size="0.067238">X<tspan dy="0.3em" font-size="75%">1168</tspan></text>
             <text class="point-label incident" data-point-id="X_679" data-anchor-x="1.000000" data-anchor-y="-0.000000" data-offset-x="12.0" data-offset-y="-10.5" x="1.039845" y="-0.034864" font-size="0.067238">X<tspan dy="0.3em" font-size="75%">679</tspan></text>
             <text class="point-label incident" data-point-id="X_1319" data-anchor-x="0.952381" data-anchor-y="-0.933139" data-offset-x="12.0" data-offset-y="-10.5" x="0.992226" y="-0.968003" font-size="0.067238">X<tspan dy="0.3em" font-size="75%">1319</tspan></text>
             <text class="target-label" data-point-id="X_1318" data-anchor-x="1.000000" data-anchor-y="-0.000000" data-offset-x="12.0" data-offset-y="-10.5" x="1.039845" y="-0.034864" font-size="0.067238">X<tspan dy="0.3em" font-size="75%">1318</tspan></text>
@@ -554,10 +565,11 @@
                 const vb = getViewBox();
                 const unitsPerPx = vb[2] / widthPx;
 
+                const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
                 pointEls.forEach(c => {
                     const isTarget = c.classList.contains('target') || c.classList.contains('selected');
                     const isGuide = c.classList.contains('guide');
-                    const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);
+                    const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
                     c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
                 });
 
@@ -943,6 +955,18 @@
                 clearHover();
             });
 
+            svg.addEventListener('click', (event) => {
+                if (didDrag) return;
+                const pt = event.target.closest('circle[data-id]');
+                if (!pt) return;
+                const pid = pt.getAttribute('data-id') || '';
+                const m = pid.match(/^X_(\d+)$/);
+                if (m && typeof window !== 'undefined' && window.location && window.location.pathname.includes('/c-') && !window.location.pathname.includes('/x-')) {
+                    const slug = 'x-' + m[1].padStart(5, '0');
+                    window.location.href = `${slug}/index.html`;
+                }
+            });
+
             svg.addEventListener('dblclick', (event) => {
                 event.preventDefault();
                 resetView();
@@ -957,7 +981,7 @@
         </svg>
         </div>
         <div class="etc-tab-pane" data-tab-pane="right" style="display: none;">
-        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.313333 -1.110000 1.626667 1.220000" data-initial-viewbox="-0.313333 -1.110000 1.626667 1.220000" preserveAspectRatio="xMidYMid meet">
+        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.313333 -1.110000 1.626667 1.220000" data-initial-viewbox="-0.313333 -1.110000 1.626667 1.220000" data-target-r-px="10.5" preserveAspectRatio="xMidYMid meet">
           <style>
         :root {
             --background-color: #121212;
@@ -1179,6 +1203,14 @@
         #labels text.hover-label {
             fill: var(--select-color) !important;
             font-weight: 700;
+        }
+
+        #labels text.dense-label {
+            display: none;
+        }
+
+        #labels text.dense-label.hover-label {
+            display: block !important;
         }
 
         .etc-svg-stage {
@@ -1296,8 +1328,8 @@
             <line data-id="[ C A ]" data-name="Sideline CA (Side b)" class="line sideline" data-category="elements" x1="640.64000" y1="-480.48000" x2="-639.36000" y2="479.52000"><title>[ C A ]: Sideline CA (Side b)</title></line>
             <line data-id="{ 36, 106 }" data-name="Central Line L(36, 106)" class="line central_line" data-category="elements" x1="1.00000" y1="-1000.99988" x2="1.00000" y2="998.99988"><title>{ 36, 106 }: Central Line L(36, 106)</title></line>
             <line data-id="{ 88, 517 }" data-name="Central Line L(88, 517)" class="line central_line" data-category="elements" x1="197.18557" y1="674.29553" x2="-195.18557" y2="-674.29553"><title>{ 88, 517 }: Central Line L(88, 517)</title></line>
-            <line data-id="{ 1, 1168 }" data-name="Central Line L(1, 1168)" class="line central_line incident" data-category="elements" x1="-399.40015" y1="-200.19990" x2="400.60015" y2="199.79990"><title>{ 1, 1168 }: Central Line L(1, 1168)</title></line>
-            <line data-id="{ 679, 1319 }" data-name="Central Line L(679, 1319)" class="line central_line incident" data-category="elements" x1="201.00020" y1="600.00000" x2="-199.00020" y2="-600.00000"><title>{ 679, 1319 }: Central Line L(679, 1319)</title></line>
+            <line data-id="{ 1, 1168 }" data-name="Central Line L(1, 1168)" class="line central_line incident" data-category="elements" x1="-399.40020" y1="-200.20000" x2="400.60020" y2="199.80000"><title>{ 1, 1168 }: Central Line L(1, 1168)</title></line>
+            <line data-id="{ 679, 1319 }" data-name="Central Line L(679, 1319)" class="line central_line incident" data-category="elements" x1="201.00030" y1="600.00000" x2="-199.00030" y2="-600.00000"><title>{ 679, 1319 }: Central Line L(679, 1319)</title></line>
           </g>
           <g id="points">
             <circle data-id="A" data-name="Vertex A" class="point given vertex" data-category="points" cx="0.000000" cy="-0.000000" r="0.015250"><title>A = Vertex A (0.0000, 0.0000)</title></circle>
@@ -1374,10 +1406,11 @@
                 const vb = getViewBox();
                 const unitsPerPx = vb[2] / widthPx;
 
+                const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
                 pointEls.forEach(c => {
                     const isTarget = c.classList.contains('target') || c.classList.contains('selected');
                     const isGuide = c.classList.contains('guide');
-                    const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);
+                    const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
                     c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
                 });
 
@@ -1763,6 +1796,18 @@
                 clearHover();
             });
 
+            svg.addEventListener('click', (event) => {
+                if (didDrag) return;
+                const pt = event.target.closest('circle[data-id]');
+                if (!pt) return;
+                const pid = pt.getAttribute('data-id') || '';
+                const m = pid.match(/^X_(\d+)$/);
+                if (m && typeof window !== 'undefined' && window.location && window.location.pathname.includes('/c-') && !window.location.pathname.includes('/x-')) {
+                    const slug = 'x-' + m[1].padStart(5, '0');
+                    window.location.href = `${slug}/index.html`;
+                }
+            });
+
             svg.addEventListener('dblclick', (event) => {
                 event.preventDefault();
                 resetView();
@@ -1777,7 +1822,7 @@
         </svg>
         </div>
         <div class="etc-tab-pane" data-tab-pane="kepler" style="display: none;">
-        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.410674 -1.177767 1.821348 1.366011" data-initial-viewbox="-0.410674 -1.177767 1.821348 1.366011" preserveAspectRatio="xMidYMid meet">
+        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.410674 -1.177767 1.821348 1.366011" data-initial-viewbox="-0.410674 -1.177767 1.821348 1.366011" data-target-r-px="10.5" preserveAspectRatio="xMidYMid meet">
           <style>
         :root {
             --background-color: #121212;
@@ -1999,6 +2044,14 @@
         #labels text.hover-label {
             fill: var(--select-color) !important;
             font-weight: 700;
+        }
+
+        #labels text.dense-label {
+            display: none;
+        }
+
+        #labels text.dense-label.hover-label {
+            display: block !important;
         }
 
         .etc-svg-stage {
@@ -2194,10 +2247,11 @@
                 const vb = getViewBox();
                 const unitsPerPx = vb[2] / widthPx;
 
+                const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
                 pointEls.forEach(c => {
                     const isTarget = c.classList.contains('target') || c.classList.contains('selected');
                     const isGuide = c.classList.contains('guide');
-                    const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);
+                    const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
                     c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
                 });
 
@@ -2583,6 +2637,18 @@
                 clearHover();
             });
 
+            svg.addEventListener('click', (event) => {
+                if (didDrag) return;
+                const pt = event.target.closest('circle[data-id]');
+                if (!pt) return;
+                const pid = pt.getAttribute('data-id') || '';
+                const m = pid.match(/^X_(\d+)$/);
+                if (m && typeof window !== 'undefined' && window.location && window.location.pathname.includes('/c-') && !window.location.pathname.includes('/x-')) {
+                    const slug = 'x-' + m[1].padStart(5, '0');
+                    window.location.href = `${slug}/index.html`;
+                }
+            });
+
             svg.addEventListener('dblclick', (event) => {
                 event.preventDefault();
                 resetView();
@@ -2597,7 +2663,7 @@
         </svg>
         </div>
         <div class="etc-tab-pane" data-tab-pane="kimberling" style="display: none;">
-        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.124902 -0.810764 1.279216 0.959412" data-initial-viewbox="-0.124902 -0.810764 1.279216 0.959412" preserveAspectRatio="xMidYMid meet">
+        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.124902 -0.810764 1.279216 0.959412" data-initial-viewbox="-0.124902 -0.810764 1.279216 0.959412" data-target-r-px="10.5" preserveAspectRatio="xMidYMid meet">
           <style>
         :root {
             --background-color: #121212;
@@ -2821,6 +2887,14 @@
             font-weight: 700;
         }
 
+        #labels text.dense-label {
+            display: none;
+        }
+
+        #labels text.dense-label.hover-label {
+            display: block !important;
+        }
+
         .etc-svg-stage {
             position: relative;
             width: 100%;
@@ -3014,10 +3088,11 @@
                 const vb = getViewBox();
                 const unitsPerPx = vb[2] / widthPx;
 
+                const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
                 pointEls.forEach(c => {
                     const isTarget = c.classList.contains('target') || c.classList.contains('selected');
                     const isGuide = c.classList.contains('guide');
-                    const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);
+                    const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
                     c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
                 });
 
@@ -3403,6 +3478,18 @@
                 clearHover();
             });
 
+            svg.addEventListener('click', (event) => {
+                if (didDrag) return;
+                const pt = event.target.closest('circle[data-id]');
+                if (!pt) return;
+                const pid = pt.getAttribute('data-id') || '';
+                const m = pid.match(/^X_(\d+)$/);
+                if (m && typeof window !== 'undefined' && window.location && window.location.pathname.includes('/c-') && !window.location.pathname.includes('/x-')) {
+                    const slug = 'x-' + m[1].padStart(5, '0');
+                    window.location.href = `${slug}/index.html`;
+                }
+            });
+
             svg.addEventListener('dblclick', (event) => {
                 event.preventDefault();
                 resetView();
@@ -3454,7 +3541,7 @@
             <span class="n">X_517</span> <span class="o">=</span> <span class="n">eval_trilinear_point</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="s1">'-1 + cos(B) + cos(C)'</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"X_517"</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"center"</span><span class="p">,</span> <span class="s2">"incident"</span><span class="p">])</span>
             <span class="n">central_line</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">X_88</span><span class="p">,</span> <span class="n">X_517</span><span class="p">,</span> <span class="mi">88</span><span class="p">,</span> <span class="mi">517</span><span class="p">,</span> <span class="n">incident</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
             <span class="n">X_1</span> <span class="o">=</span> <span class="n">incenter_of</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"X_1"</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"center"</span><span class="p">,</span> <span class="s2">"incident"</span><span class="p">])</span>
-            <span class="n">X_1168</span> <span class="o">=</span> <span class="n">point_from_barycentrics</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.9444441e-07</span><span class="p">,</span> <span class="mf">0.99999992</span><span class="p">,</span> <span class="mf">2.7222218e-07</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"X_1168"</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"center"</span><span class="p">,</span> <span class="s2">"incident"</span><span class="p">])</span>
+            <span class="n">X_1168</span> <span class="o">=</span> <span class="n">point_from_barycentrics</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="mf">4.7580987e-17</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">6.6613381e-17</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"X_1168"</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"center"</span><span class="p">,</span> <span class="s2">"incident"</span><span class="p">])</span>
             <span class="n">central_line</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">X_1</span><span class="p">,</span> <span class="n">X_1168</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1168</span><span class="p">,</span> <span class="n">incident</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
             <span class="k">return</span> <span class="n">promote_point_to_top</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">X_1318</span><span class="p">)</span>
 

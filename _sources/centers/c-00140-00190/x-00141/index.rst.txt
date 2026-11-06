@@ -58,7 +58,7 @@ X_141
 .. collapse:: Functional Relations
    :badge: 33 relations
 
-   * :ref:`X_141 <X_141>` = midpoint of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, 3416), (:ref:`6 <X_6>`, :ref:`69 <X_69>`), (:ref:`8 <X_8>`, 3242), (:ref:`66 <X_66>`, :ref:`159 <X_159>`), (:ref:`67 <X_67>`, :ref:`110 <X_110>`), (:ref:`69 <X_69>`, 3313), (:ref:`1843 <X_1843>`, 3313) (:ref:`2930 <X_2930>`, 3448)
+   * :ref:`X_141 <X_141>` = midpoint of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`3416 <X_3416>`), (:ref:`6 <X_6>`, :ref:`69 <X_69>`), (:ref:`8 <X_8>`, :ref:`3242 <X_3242>`), (:ref:`66 <X_66>`, :ref:`159 <X_159>`), (:ref:`67 <X_67>`, :ref:`110 <X_110>`), (:ref:`69 <X_69>`, :ref:`3313 <X_3313>`), (:ref:`1843 <X_1843>`, :ref:`3313 <X_3313>`) (:ref:`2930 <X_2930>`, :ref:`3448 <X_3448>`)
    * :ref:`X_141 <X_141>` = reflection of X_i in X_j for these (i,j): (:ref:`182 <X_182>`, :ref:`140 <X_140>`), (:ref:`597 <X_597>`, :ref:`2 <X_2>`), (:ref:`1353 <X_1353>`, :ref:`575 <X_575>`), (:ref:`1386 <X_1386>`, :ref:`1125 <X_1125>`)
    * :ref:`X_141 <X_141>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_251 <X_251>`
    * :ref:`X_141 <X_141>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_83 <X_83>`
@@ -72,7 +72,7 @@ X_141
    * :ref:`X_141 <X_141>` = :ref:`X_39 <X_39>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X_732 <X_732>`
    * :ref:`X_141 <X_141>` = :ref:`X_645 <X_645>`-:term:`beth conjugate <beth-conjugate>` of :ref:`X_141 <X_141>`
    * :ref:`X_141 <X_141>` = :ref:`X_6 <X_6>`-of-:term:`medial triangle <medial-triangle>`
-   * :ref:`X_141 <X_141>` = :term:`anticomplement <anticomplement>` of X_3589
+   * :ref:`X_141 <X_141>` = :term:`anticomplement <anticomplement>` of :ref:`X_3589 <X_3589>`
    * :ref:`X_141 <X_141>` = centroid of :g:`ABC << A B C >>`\ :ref:`X_69 <X_69>`
    * :ref:`X_141 <X_141>` = Kosnita(:ref:`X_69 <X_69>`,\ :ref:`X_2 <X_2>`) point
    * :ref:`X_141 <X_141>` = perspector of circumconic centered at :ref:`X_39 <X_39>`
@@ -86,7 +86,7 @@ X_141
    * :ref:`X_141 <X_141>` = crosspoint of :ref:`X_2 <X_2>` and :ref:`X_2896 <X_2896>` wrt :term:`anticomplementary triangle <anticomplementary-triangle>`
    * :ref:`X_141 <X_141>` = crosspoint of :ref:`X_6 <X_6>` and :ref:`X_2916 <X_2916>` wrt excentral triangle
    * :ref:`X_141 <X_141>` = crosspoint of :ref:`X_6 <X_6>` and :ref:`X_2916 <X_2916>` wrt :term:`tangential triangle <tangential-triangle>`
-   * :ref:`X_141 <X_141>` = {:ref:`X_2 <X_2>`,\ :ref:`X_6 <X_6>`}-harmonic conjugate of X_3589
+   * :ref:`X_141 <X_141>` = {:ref:`X_2 <X_2>`,\ :ref:`X_6 <X_6>`}-harmonic conjugate of :ref:`X_3589 <X_3589>`
    * :ref:`X_141 <X_141>` = {:ref:`X_395 <X_395>`,\ :ref:`X_396 <X_396>`}-harmonic conjugate of X_5306
    * :ref:`X_141 <X_141>` = trilinear cube root of X_14125
    * :ref:`X_141 <X_141>` = perspector of :term:`2nd Brocard triangle <2nd-brocard-triangle>` and cross-triangle of :g:`ABC << A B C >>` and 2nd Brocard triangle

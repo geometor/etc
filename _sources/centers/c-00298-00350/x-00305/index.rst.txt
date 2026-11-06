@@ -46,13 +46,13 @@ X_305
 .. collapse:: Functional Relations
    :badge: 7 relations
 
-   * :ref:`X_305 <X_305>` = trilinear-pole-of-line-:ref:`X_525 <X_525>`\ X_3267 = pole-with-respect-to-polar-circle-of trilinear-polar-of-:ref:`X_2207 <X_2207>` = :ref:`X_48 <X_48>`-:term:`isoconjugate <isoconjugate>`-of-:ref:`X_2207 <X_2207>` = :ref:`X_92 <X_92>`-isoconjugate-of-:ref:`X_1501 <X_1501>` :person:`Randy Hutson <randy-hutson>`, August 15, 2013
+   * :ref:`X_305 <X_305>` = trilinear-pole-of-line-:ref:`X_525 <X_525>`\ \ :ref:`X_3267 <X_3267>` = pole-with-respect-to-polar-circle-of trilinear-polar-of-:ref:`X_2207 <X_2207>` = :ref:`X_48 <X_48>`-:term:`isoconjugate <isoconjugate>`-of-:ref:`X_2207 <X_2207>` = :ref:`X_92 <X_92>`-isoconjugate-of-:ref:`X_1501 <X_1501>` :person:`Randy Hutson <randy-hutson>`, August 15, 2013
    * :ref:`X_305 <X_305>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1974 <X_1974>`
    * :ref:`X_305 <X_305>` = isotomic conjugate of :ref:`X_25 <X_25>`
    * :ref:`X_305 <X_305>` = :term:`anticomplement <anticomplement>` of :ref:`X_1196 <X_1196>`
    * :ref:`X_305 <X_305>` = :ref:`X_63 <X_63>`-isoconjugate of X_36417
    * :ref:`X_305 <X_305>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`69 <X_69>`, :ref:`76 <X_76>`), (339, (3267)
-   * :ref:`X_305 <X_305>` = cevapont of :ref:`X_339 <X_339>` and X_3267
+   * :ref:`X_305 <X_305>` = cevapont of :ref:`X_339 <X_339>` and :ref:`X_3267 <X_3267>`
 
 .. toctree::
    :hidden:

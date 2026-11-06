@@ -22,7 +22,7 @@ X_1166–X_1208
 
 .. _preamble-0017:
 
-.. admonition:: Group Preamble — Saragossa Points 1166-1208
+.. admonition:: Group Preamble — Saragossa Points 1166-1208 (Saragossa points (1st, 2nd, 3rd))
    :class: note
 
    Let :g:`A'B'C' << A' B' C' >>` be the :term:`cevian triangle <cevian-triangle>` of a point :g:`P <P>`, and let :g:`A″ <A″>`, :g:`B″ <B″>`, :g:`C″ <C″>` be the respective intersections of lines :g:`PA <[ P A ]>`, :g:`PB <[ P B ]>`, :g:`PC <[ P C ]>` with the circumcircle of triangle :g:`ABC << A B C >>`. Let

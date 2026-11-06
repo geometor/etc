@@ -42,7 +42,7 @@ X_2914
    :badge: 2 relations
 
    * :ref:`X_2914 <X_2914>` = :ref:`X_4 <X_4>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_186 <X_186>`
-   * :ref:`X_2914 <X_2914>` = X_3065-of-orthic-triangle if :g:`ABC << A B C >>` is acute
+   * :ref:`X_2914 <X_2914>` = :ref:`X_3065 <X_3065>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
 
 .. toctree::
    :hidden:

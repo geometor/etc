@@ -40,6 +40,9 @@
           <a href="../../../../../centers/index.html"  >Encyclopedia of Triangle Centers</a>
         </li>
         <li>
+          <a href="../../../../../preambles.html"  >Guide to Preambles in ETC</a>
+        </li>
+        <li>
           <a href="../../../../../glossary.html"  >Glossary</a>
         </li>
         <li>
@@ -79,12 +82,12 @@
         </div>
         <div class="book-header-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../render/index.html" title="geometor.etc.render">&larr; <span class="nav-label">Prev</span></a>
+            <a class="book-nav-btn" href="../topics/index.html" title="geometor.etc.topics">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="../../../index.html" title="API Reference"><span class="nav-label">Next</span> &rarr;</a>
+            <a class="book-nav-btn" href="../video/index.html" title="geometor.etc.video"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </header>
@@ -155,6 +158,9 @@
         <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.transform.generate_rst_files" title="geometor.etc.transform.generate_rst_files"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_rst_files</span></code></a>(centers, output_dir[, ...]) → None</p></td>
         <td><p>Generate thematic collection folders (<cite>c-XXXXX-YYYYY/</cite>) and per-center folders (<cite>x-NNNNN/</cite>).</p></td>
         </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.transform.generate_preambles_guide_rst" title="geometor.etc.transform.generate_preambles_guide_rst"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_preambles_guide_rst</span></code></a>(guide_data[, ...]) → str</p></td>
+        <td><p>Generate <cite>docsrc/preambles.rst</cite> from Kimberling's <cite>Guide_to_preambles_in_ETC.html</cite>.</p></td>
+        </tr>
         </tbody>
         </table>
         </section>
@@ -207,6 +213,12 @@
         <dd><p>Generate thematic collection folders (<cite>c-XXXXX-YYYYY/</cite>) and per-center folders (<cite>x-NNNNN/</cite>).</p>
         </dd></dl>
 
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.etc.transform.generate_preambles_guide_rst">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.transform.</span></span><span class="sig-name descname"><span class="pre">generate_preambles_guide_rst</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">guide_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">glossary_terms</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valid_centers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#set" title="(in Python v3.13)"><span class="pre">set</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.transform.generate_preambles_guide_rst" title="Link to this definition">¶</a></dt>
+        <dd><p>Generate <cite>docsrc/preambles.rst</cite> from Kimberling’s <cite>Guide_to_preambles_in_ETC.html</cite>.</p>
+        </dd></dl>
+
         </section>
         </section>
 
@@ -215,13 +227,13 @@
         <div class="book-footer-ornament">&#10086;</div>
         <div class="book-footer-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../render/index.html" title="geometor.etc.render">&larr; <span class="nav-label">geometor.etc.render</span></a>
+            <a class="book-nav-btn" href="../topics/index.html" title="geometor.etc.topics">&larr; <span class="nav-label">geometor.etc.topics</span></a>
           </div>
           <div class="book-nav-center">
             <a class="book-toc-link" href="../../../../../index.html">geometor • etc</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="../../../index.html" title="API Reference"><span class="nav-label">API Reference</span> &rarr;</a>
+            <a class="book-nav-btn" href="../video/index.html" title="geometor.etc.video"><span class="nav-label">geometor.etc.video</span> &rarr;</a>
           </div>
         </div>
       </footer>

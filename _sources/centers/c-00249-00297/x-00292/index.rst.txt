@@ -45,7 +45,7 @@ X_292
    * :ref:`X_292 <X_292>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_1921 <X_1921>`
    * :ref:`X_292 <X_292>` = :term:`complement <complement>` of X_20345
    * :ref:`X_292 <X_292>` = :term:`anticomplement <anticomplement>` of X_20333
-   * :ref:`X_292 <X_292>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`2 <X_2>`, 9470), (:ref:`335 <X_335>`, :ref:`292 <X_292>`), (:ref:`813 <X_813>`, 3572)
+   * :ref:`X_292 <X_292>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`2 <X_2>`, 9470), (:ref:`335 <X_335>`, :ref:`292 <X_292>`), (:ref:`813 <X_813>`, :ref:`3572 <X_3572>`)
    * :ref:`X_292 <X_292>` = :term:`cevapoint <cevapoint>` of :ref:`X_171 <X_171>` and :ref:`X_238 <X_238>`
    * :ref:`X_292 <X_292>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_659 <X_659>`\ \ :ref:`X_812 <X_812>`
    * :ref:`X_292 <X_292>` = crossdifference of PU(134)

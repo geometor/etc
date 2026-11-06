@@ -23,8 +23,8 @@ X_2121
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{5, 2120} <{ 5, 2120 }>`
-   * **Related Centers:** :g:`X_54 <X_54>` (:ref:`KOSNITA POINT <X_54>`), :g:`X_5 <X_5>` (:ref:`NINE-POINT CENTER <X_5>`), :g:`X_2120 <X_2120>` (:ref:`EIGENTRANSFORM OF X(5) <X_2120>`)
+   * **Central Lines:** :g:`{5, 2120} <{ 5, 2120 }>`, :g:`{195, 3462} <{ 195, 3462 }>`
+   * **Related Centers:** :g:`X_54 <X_54>` (:ref:`KOSNITA POINT <X_54>`), :g:`X_5 <X_5>` (:ref:`NINE-POINT CENTER <X_5>`), :g:`X_2120 <X_2120>` (:ref:`EIGENTRANSFORM OF X(5) <X_2120>`), :g:`X_195 <X_195>` (:ref:`-CEVA CONJUGATE OF X(3) <X_195>`), :g:`X_3462 <X_3462>` (:ref:`-CEVA CONJUGATE OF X(4) <X_3462>`)
 
 .. signature:: center
 
@@ -40,7 +40,7 @@ X_2121
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`5 <X_5>`, :ref:`2120 <X_2120>`}, {:ref:`195 <X_195>`, 3462}
+   {:ref:`5 <X_5>`, :ref:`2120 <X_2120>`}, {:ref:`195 <X_195>`, :ref:`3462 <X_3462>`}
 
 .. collapse:: Functional Relations
    :badge: 2 relations

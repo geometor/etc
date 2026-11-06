@@ -24,7 +24,7 @@ X_1478
    :class: note
 
    * **Central Lines:** :g:`{1, 4} <{ 1, 4 }>`, :g:`{3, 12} <{ 3, 12 }>`
-   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_12 <X_12>` (:ref:`{X <X_12>`)
+   * **Related Centers:** :g:`X_3422 <X_3422>` (:ref:`-VERTEX CONJUGATE OF X(19) <X_3422>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_12 <X_12>` (:ref:`{X <X_12>`)
 
 .. signature:: center
 
@@ -48,7 +48,7 @@ X_1478
    :badge: 9 relations
 
    * :ref:`X_1478 <X_1478>` = reflection of X_i in X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`226 <X_226>`), (:ref:`55 <X_55>`, :ref:`495 <X_495>`), (:ref:`63 <X_63>`, :ref:`10 <X_10>`)
-   * :ref:`X_1478 <X_1478>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3422
+   * :ref:`X_1478 <X_1478>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3422 <X_3422>`
    * :ref:`X_1478 <X_1478>` = :term:`anticomplement <anticomplement>` of :ref:`X_993 <X_993>`
    * :ref:`X_1478 <X_1478>` = :ref:`X_1065 <X_1065>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_1 <X_1>`
    * :ref:`X_1478 <X_1478>` = homothetic center of 2nd isogonal triangle of :ref:`X_1 <X_1>` and :term:`anticomplementary triangle <anticomplementary-triangle>`; see :ref:`X_36 <X_36>`

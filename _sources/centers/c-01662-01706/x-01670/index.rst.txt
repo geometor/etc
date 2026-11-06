@@ -56,8 +56,8 @@ X_1670
    * :ref:`X_1670 <X_1670>` = :ref:`X_76 <X_76>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_1671 <X_1671>`
    * :ref:`X_1670 <X_1670>` = Thomson-isogonal conjugate of X_33707
    * :ref:`X_1670 <X_1670>` = {:ref:`X_6 <X_6>`,\ :ref:`X_39 <X_39>`}-harmonic conjugate of :ref:`X_1671 <X_1671>`
-   * :ref:`X_1670 <X_1670>` = {:ref:`X_32 <X_32>`,X_3094}-harmonic conjugate of :ref:`X_1671 <X_1671>`
-   * :ref:`X_1670 <X_1670>` = {:ref:`X_182 <X_182>`,X_3095}-harmonic conjugate of :ref:`X_1671 <X_1671>`
+   * :ref:`X_1670 <X_1670>` = {:ref:`X_32 <X_32>`,\ :ref:`X_3094 <X_3094>`}-harmonic conjugate of :ref:`X_1671 <X_1671>`
+   * :ref:`X_1670 <X_1670>` = {:ref:`X_182 <X_182>`,\ :ref:`X_3095 <X_3095>`}-harmonic conjugate of :ref:`X_1671 <X_1671>`
    * :ref:`X_1670 <X_1670>` = {:ref:`X_1379 <X_1379>`,\ :ref:`X_1380 <X_1380>`}-harmonic conjugate of X_38720
 
 Notes

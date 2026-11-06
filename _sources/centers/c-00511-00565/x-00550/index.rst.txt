@@ -64,14 +64,14 @@ X_550
    * :ref:`X_550 <X_550>` = :ref:`X_5 <X_5>`-of-circumcevian-triangle-of-:ref:`X_30 <X_30>`
    * :ref:`X_550 <X_550>` = :ref:`X_143 <X_143>`-of-hexyl-triangle
    * :ref:`X_550 <X_550>` = intersection of tangents to Evans conic at :ref:`X_17 <X_17>` and :ref:`X_18 <X_18>`
-   * :ref:`X_550 <X_550>` = inverse-in-orthocentroidal-circle of X_3851
+   * :ref:`X_550 <X_550>` = inverse-in-orthocentroidal-circle of :ref:`X_3851 <X_3851>`
    * :ref:`X_550 <X_550>` = radical center of reflections of nine-point circle in :g:`A <A>`, :g:`B <B>`, :g:`C <C>`
    * :ref:`X_550 <X_550>` = antipedal isogonal conjugate of :ref:`X_5 <X_5>`
    * :ref:`X_550 <X_550>` = :term:`radical trace <radical-trace>` of circumcircle and Trinh circle
-   * :ref:`X_550 <X_550>` = {:ref:`X_2 <X_2>`,X_3529}-harmonic conjugate of :ref:`X_382 <X_382>`
+   * :ref:`X_550 <X_550>` = {:ref:`X_2 <X_2>`,\ :ref:`X_3529 <X_3529>`}-harmonic conjugate of :ref:`X_382 <X_382>`
    * :ref:`X_550 <X_550>` = {:ref:`X_3 <X_3>`,\ :ref:`X_4 <X_4>`}-harmonic conjugate of :ref:`X_140 <X_140>`
-   * :ref:`X_550 <X_550>` = {:ref:`X_2 <X_2>`,\ :ref:`X_3 <X_3>`}-harmonic conjugate of X_3530
-   * :ref:`X_550 <X_550>` = {:ref:`X_2 <X_2>`,\ :ref:`X_20 <X_20>`}-harmonic conjugate of X_3529
+   * :ref:`X_550 <X_550>` = {:ref:`X_2 <X_2>`,\ :ref:`X_3 <X_3>`}-harmonic conjugate of :ref:`X_3530 <X_3530>`
+   * :ref:`X_550 <X_550>` = {:ref:`X_2 <X_2>`,\ :ref:`X_20 <X_20>`}-harmonic conjugate of :ref:`X_3529 <X_3529>`
 
 Notes
 -----

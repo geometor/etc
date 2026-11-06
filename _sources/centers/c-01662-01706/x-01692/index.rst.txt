@@ -49,7 +49,7 @@ X_1692
    * :ref:`X_1692 <X_1692>` = midpoint of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`1691 <X_1691>`), (:ref:`187 <X_187>`, :ref:`1570 <X_1570>`)
    * :ref:`X_1692 <X_1692>` = reflection of X_i in X_j for these (i,j): (:ref:`39 <X_39>`, :ref:`2024 <X_2024>`), (:ref:`187 <X_187>`, :ref:`1570 <X_1570>`), (:ref:`1570 <X_1570>`, :ref:`6 <X_6>`), (:ref:`1691 <X_1691>`, :ref:`2030 <X_2030>`)
    * :ref:`X_1692 <X_1692>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_8781
-   * :ref:`X_1692 <X_1692>` = circumcircle-inverse of X_3053
+   * :ref:`X_1692 <X_1692>` = circumcircle-inverse of :ref:`X_3053 <X_3053>`
    * :ref:`X_1692 <X_1692>` = 1st-Lemoine-circle-inverse of :ref:`X_32 <X_32>`
    * :ref:`X_1692 <X_1692>` = 2nd-Lemoine-circle-inverse of :ref:`X_1351 <X_1351>`
    * :ref:`X_1692 <X_1692>` = circle-{{:ref:`X_371 <X_371>`,\ :ref:`X_372 <X_372>`,PU(1),PU(39)}}-inverse of X_9737

@@ -23,8 +23,9 @@ X_2345
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{4, 9} <{ 4, 9 }>`, :g:`{6, 8} <{ 6, 8 }>`
-   * **Related Centers:** :g:`X_2221 <X_2221>` (:ref:`-ISOCONJUGATE OF X(612) <X_2221>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_9 <X_9>` (:ref:`MITTENPUNKT <X_9>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_8 <X_8>` (:ref:`NAGEL POINT <X_8>`)
+   * **Derived Triangle:** :term:`Medial Triangle <medial triangle>` :g:`△M_aM_bM_c << M_a M_b M_c >>` — vertices :g:`M_a <M_a>`, :g:`M_b <M_b>`, :g:`M_c <M_c>` (Formed by the midpoints of sides BC, CA, AB)
+   * **Central Lines:** :g:`{2, 3672} <{ 2, 3672 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3672 <X_3672>` (:ref:`com(INTOUCH TRIANGLE) <X_3672>`)
 
 .. signature:: center
 
@@ -48,13 +49,13 @@ X_2345
    :badge: 8 relations
 
    * :ref:`X_2345 <X_2345>` = isogonal conjugate of :ref:`X_2221 <X_2221>`
-   * :ref:`X_2345 <X_2345>` = :term:`complement <complement>` of X_3672
+   * :ref:`X_2345 <X_2345>` = :term:`complement <complement>` of :ref:`X_3672 <X_3672>`
    * :ref:`X_2345 <X_2345>` = :term:`anticomplement <anticomplement>` of X_4657
    * :ref:`X_2345 <X_2345>` = :ref:`X_1010 <X_1010>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_612 <X_612>`
    * :ref:`X_2345 <X_2345>` = :ref:`X_612 <X_612>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_388 <X_388>`
    * :ref:`X_2345 <X_2345>` = :term:`crosspoint <crosspoint>` of :ref:`X_2 <X_2>` and :ref:`X_1219 <X_1219>`
    * :ref:`X_2345 <X_2345>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`1191 <X_1191>`), (:ref:`1245 <X_1245>`, :ref:`2281 <X_2281>`)
-   * :ref:`X_2345 <X_2345>` = {:ref:`X_2 <X_2>`,\ :ref:`X_75 <X_75>`}-harmonic conjugate of X_4000
+   * :ref:`X_2345 <X_2345>` = {:ref:`X_2 <X_2>`,\ :ref:`X_75 <X_75>`}-harmonic conjugate of :ref:`X_4000 <X_4000>`
 
 .. toctree::
    :hidden:

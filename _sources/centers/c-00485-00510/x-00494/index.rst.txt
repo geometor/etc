@@ -30,7 +30,7 @@ X_494
 
    | **Trilinears:** :math:`1/(\sin A - \sin B \sin C) : :`
    | **Barycentrics:** :math:`(\sin A)(\sin A - \sin B \sin C) : :`
-   | **Search Value (6, 9, 13):** :math:`-0.620505304165`
+   | **Search Value (6, 9, 13):** :math:`-40.639585709451`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form
@@ -46,7 +46,7 @@ X_494
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X_494 <X_494>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3069
+   * :ref:`X_494 <X_494>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3069 <X_3069>`
    * :ref:`X_494 <X_494>` = :ref:`X_394 <X_394>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_493 <X_493>`
    * :ref:`X_494 <X_494>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of inner Vecten triangle
    * :ref:`X_494 <X_494>` = perspector of :g:`ABC << A B C >>` and unary cofactor triangle of Lucas antipodal triangle

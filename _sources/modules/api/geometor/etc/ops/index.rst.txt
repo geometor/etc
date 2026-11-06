@@ -292,7 +292,7 @@ Module Contents
    Construct the Mittenpunkt X_9 of triangle ABC (symmedian point of the excentral triangle).
 
 
-.. py:function:: spieker_center_of(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_10', classes: list[str] | None = None, draw_circle: bool = False) -> sympy.geometry.Point
+.. py:function:: spieker_center_of(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_10', classes: list[str] | None = None, draw_circle: bool = False, draw_bisectors: bool = False) -> sympy.geometry.Point
 
    Construct the Spieker center X_10 of triangle ABC (incenter of the medial triangle).
 

@@ -29,7 +29,7 @@ X_1032
 .. signature:: center
 
    | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = 1/[a(w^{2}u^{2} + u^{2}v^{2} - v^{2}w^{2}) + 2uvw(au + bv + cw) \cos A]`, where :math:`u : v : w` = :ref:`X_20 <X_20>`
-   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a`,b,c) X_3346
+   | **Barycentrics:** :math:`g(a,b,c) : g(b,c,a) : g(c,a,b)`, where :math:`g(a,b,c) = af(a`,b,c) :ref:`X_3346 <X_3346>`
    | **Search Value (6, 9, 13):** :math:`3.778893597906`
 
 .. container:: note-item
@@ -48,7 +48,7 @@ X_1032
    * :ref:`X_1032 <X_1032>` = isogonal conjugate of :ref:`X_1033 <X_1033>`
    * :ref:`X_1032 <X_1032>` = :ref:`X_4 <X_4>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_69 <X_69>`
    * :ref:`X_1032 <X_1032>` = :term:`cyclocevian conjugate <cyclocevian-conjugate>` of :ref:`X_20 <X_20>`
-   * :ref:`X_1032 <X_1032>` = :term:`anticomplement <anticomplement>` of X_3343
+   * :ref:`X_1032 <X_1032>` = :term:`anticomplement <anticomplement>` of :ref:`X_3343 <X_3343>`
    * :ref:`X_1032 <X_1032>` = polar conjugate of X_6523
 
 .. toctree::

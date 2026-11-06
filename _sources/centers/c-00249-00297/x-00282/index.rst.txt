@@ -39,7 +39,7 @@ X_282
    :badge: 12 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, :ref:`281 <X_281>`}, {:ref:`2 <X_2>`, :ref:`77 <X_77>`}, {:ref:`3 <X_3>`, :ref:`9 <X_9>`}, {:ref:`4 <X_4>`, 3351}, {:ref:`6 <X_6>`, 3341}, {:ref:`19 <X_19>`, :ref:`102 <X_102>`}, {:ref:`48 <X_48>`, :ref:`947 <X_947>`}, {:ref:`57 <X_57>`, 3343}, {:ref:`78 <X_78>`, :ref:`280 <X_280>`}, {:ref:`200 <X_200>`, :ref:`219 <X_219>`}, {:ref:`271 <X_271>`, :ref:`283 <X_283>`}, {:ref:`380 <X_380>`, :ref:`1036 <X_1036>`}
+   {:ref:`1 <X_1>`, :ref:`281 <X_281>`}, {:ref:`2 <X_2>`, :ref:`77 <X_77>`}, {:ref:`3 <X_3>`, :ref:`9 <X_9>`}, {:ref:`4 <X_4>`, :ref:`3351 <X_3351>`}, {:ref:`6 <X_6>`, :ref:`3341 <X_3341>`}, {:ref:`19 <X_19>`, :ref:`102 <X_102>`}, {:ref:`48 <X_48>`, :ref:`947 <X_947>`}, {:ref:`57 <X_57>`, :ref:`3343 <X_3343>`}, {:ref:`78 <X_78>`, :ref:`280 <X_280>`}, {:ref:`200 <X_200>`, :ref:`219 <X_219>`}, {:ref:`271 <X_271>`, :ref:`283 <X_283>`}, {:ref:`380 <X_380>`, :ref:`1036 <X_1036>`}
 
 .. collapse:: Functional Relations
    :badge: 15 relations
@@ -54,10 +54,10 @@ X_282
    * :ref:`X_282 <X_282>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`1035 <X_1035>`), (:ref:`198 <X_198>`, :ref:`221 <X_221>`)
    * :ref:`X_282 <X_282>` = perspector of :g:`ABC << A B C >>` and :term:`antipedal triangle <antipedal-triangle>` of :ref:`X_1490 <X_1490>`
    * :ref:`X_282 <X_282>` = perspector of pedal and :term:`anticevian triangles <anticevian-triangle>` of :ref:`X_84 <X_84>`
-   * :ref:`X_282 <X_282>` = perspector of :g:`ABC << A B C >>` and :term:`medial triangle <medial-triangle>` of :term:`pedal triangle <pedal-triangle>` of X_3345
-   * :ref:`X_282 <X_282>` = perspector of circumconic centered at X_3341
-   * :ref:`X_282 <X_282>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through X_3341
-   * :ref:`X_282 <X_282>` = :ref:`X_2 <X_2>`-Ceva conjugate of X_3341
+   * :ref:`X_282 <X_282>` = perspector of :g:`ABC << A B C >>` and :term:`medial triangle <medial-triangle>` of :term:`pedal triangle <pedal-triangle>` of :ref:`X_3345 <X_3345>`
+   * :ref:`X_282 <X_282>` = perspector of circumconic centered at :ref:`X_3341 <X_3341>`
+   * :ref:`X_282 <X_282>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X_3341 <X_3341>`
+   * :ref:`X_282 <X_282>` = :ref:`X_2 <X_2>`-Ceva conjugate of :ref:`X_3341 <X_3341>`
    * :ref:`X_282 <X_282>` = polar conjugate of :ref:`X_342 <X_342>`
 
 .. toctree::

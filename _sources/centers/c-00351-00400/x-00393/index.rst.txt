@@ -46,7 +46,7 @@ X_393
    :badge: 19 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, :ref:`836 <X_836>`}, {:ref:`2 <X_2>`, :ref:`216 <X_216>`}, {:ref:`4 <X_4>`, :ref:`6 <X_6>`}, {:ref:`19 <X_19>`, :ref:`208 <X_208>`}, {:ref:`20 <X_20>`, :ref:`577 <X_577>`}, {:ref:`24 <X_24>`, :ref:`254 <X_254>`}, {:ref:`25 <X_25>`, :ref:`1033 <X_1033>`}, {:ref:`27 <X_27>`, :ref:`967 <X_967>`}, {:ref:`33 <X_33>`, :ref:`42 <X_42>`}, {:ref:`37 <X_37>`, :ref:`158 <X_158>`}, {:ref:`69 <X_69>`, :ref:`297 <X_297>`}, {:ref:`107 <X_107>`, :ref:`111 <X_111>`}, {:ref:`193 <X_193>`, :ref:`317 <X_317>`}, {:ref:`230 <X_230>`, :ref:`459 <X_459>`}, {:ref:`278 <X_278>`, :ref:`1108 <X_1108>`}, {:ref:`342 <X_342>`, :ref:`948 <X_948>`}, {:ref:`394 <X_394>`, :ref:`837 <X_837>`}, {:ref:`800 <X_800>`, :ref:`1093 <X_1093>`}, {3146, 3284}
+   {:ref:`1 <X_1>`, :ref:`836 <X_836>`}, {:ref:`2 <X_2>`, :ref:`216 <X_216>`}, {:ref:`4 <X_4>`, :ref:`6 <X_6>`}, {:ref:`19 <X_19>`, :ref:`208 <X_208>`}, {:ref:`20 <X_20>`, :ref:`577 <X_577>`}, {:ref:`24 <X_24>`, :ref:`254 <X_254>`}, {:ref:`25 <X_25>`, :ref:`1033 <X_1033>`}, {:ref:`27 <X_27>`, :ref:`967 <X_967>`}, {:ref:`33 <X_33>`, :ref:`42 <X_42>`}, {:ref:`37 <X_37>`, :ref:`158 <X_158>`}, {:ref:`69 <X_69>`, :ref:`297 <X_297>`}, {:ref:`107 <X_107>`, :ref:`111 <X_111>`}, {:ref:`193 <X_193>`, :ref:`317 <X_317>`}, {:ref:`230 <X_230>`, :ref:`459 <X_459>`}, {:ref:`278 <X_278>`, :ref:`1108 <X_1108>`}, {:ref:`342 <X_342>`, :ref:`948 <X_948>`}, {:ref:`394 <X_394>`, :ref:`837 <X_837>`}, {:ref:`800 <X_800>`, :ref:`1093 <X_1093>`}, {:ref:`3146 <X_3146>`, :ref:`3284 <X_3284>`}
 
 .. collapse:: Functional Relations
    :badge: 14 relations
@@ -55,14 +55,14 @@ X_393
    * :ref:`X_393 <X_393>` = :term:`crosspoint <crosspoint>` of :ref:`X_4 <X_4>` and :ref:`X_459 <X_459>`
    * :ref:`X_393 <X_393>` = :ref:`X_25 <X_25>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_4 <X_4>`
    * :ref:`X_393 <X_393>` = :term:`crosssum <crosssum>` of :ref:`X_577 <X_577>` and :ref:`X_1092 <X_1092>`
-   * :ref:`X_393 <X_393>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3926
+   * :ref:`X_393 <X_393>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3926 <X_3926>`
    * :ref:`X_393 <X_393>` = :term:`anticomplement <anticomplement>` of X_6389
    * :ref:`X_393 <X_393>` = :term:`cevapoint <cevapoint>` of X_5412 and X_5413
    * :ref:`X_393 <X_393>` = barycentric square of :ref:`X_4 <X_4>`
    * :ref:`X_393 <X_393>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_460 <X_460>`\ \ :ref:`X_512 <X_512>` (the polar of :ref:`X_69 <X_69>` wrt polar circle, and radical axis of nine-point circle and orthosymmedial circle)
    * :ref:`X_393 <X_393>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_69 <X_69>` (line :ref:`X_441 <X_441>`\ \ :ref:`X_525 <X_525>`)
    * :ref:`X_393 <X_393>` = polar conjugate of :ref:`X_69 <X_69>`
-   * :ref:`X_393 <X_393>` = X_i-:term:`isoconjugate <isoconjugate>` of X_j for these {i,j}: {:ref:`1 <X_1>`, :ref:`394 <X_394>`}, {:ref:`31 <X_31>`, 3926}, {:ref:`48 <X_48>`, :ref:`69 <X_69>`}, {:ref:`92 <X_92>`, :ref:`1092 <X_1092>`}
+   * :ref:`X_393 <X_393>` = X_i-:term:`isoconjugate <isoconjugate>` of X_j for these {i,j}: {:ref:`1 <X_1>`, :ref:`394 <X_394>`}, {:ref:`31 <X_31>`, :ref:`3926 <X_3926>`}, {:ref:`48 <X_48>`, :ref:`69 <X_69>`}, {:ref:`92 <X_92>`, :ref:`1092 <X_1092>`}
    * :ref:`X_393 <X_393>` = :term:`vertex conjugate <vertex-conjugate>` of the foci of the inconic with perspector :ref:`X_2052 <X_2052>`
    * :ref:`X_393 <X_393>` = :ref:`X_1743 <X_1743>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
 
@@ -83,7 +83,7 @@ Notes
 
 .. container:: note-item
 
-   :ref:`X_393 <X_393>` is the Brianchon point (perspector) of the inellipse that is the barycentric square of the orthic axis. The center of this inellipse is X_3767. (Randy Hutson, October 15, 2018)
+   :ref:`X_393 <X_393>` is the Brianchon point (perspector) of the inellipse that is the barycentric square of the orthic axis. The center of this inellipse is :ref:`X_3767 <X_3767>`. (Randy Hutson, October 15, 2018)
 
 .. toctree::
    :hidden:

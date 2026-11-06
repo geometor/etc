@@ -42,7 +42,7 @@ X_2357
    :badge: 6 relations
 
    * :ref:`X_2357 <X_2357>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_8822
-   * :ref:`X_2357 <X_2357>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_810 <X_810>`\ X_3709
+   * :ref:`X_2357 <X_2357>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_810 <X_810>`\ \ :ref:`X_3709 <X_3709>`
    * :ref:`X_2357 <X_2357>` = :ref:`X_84 <X_84>`-Ceva conjugate of :ref:`X_1903 <X_1903>`
    * :ref:`X_2357 <X_2357>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`1402 <X_1402>`, :ref:`42 <X_42>`), (:ref:`2333 <X_2333>`, :ref:`1400 <X_1400>`)
    * :ref:`X_2357 <X_2357>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`19 <X_19>`, :ref:`64 <X_64>`), (:ref:`84 <X_84>`, :ref:`1436 <X_1436>`)

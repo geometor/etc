@@ -64,8 +64,8 @@ X_56
    * :ref:`X_56 <X_56>` = midpoint of :ref:`X_1 <X_1>` and :ref:`X_46 <X_46>`
    * :ref:`X_56 <X_56>` = reflection of X_i in X_j for these (i,j): (:ref:`1479 <X_1479>`, :ref:`496 <X_496>`), (:ref:`2098 <X_2098>`, :ref:`1 <X_1>`)
    * :ref:`X_56 <X_56>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_8 <X_8>`
-   * :ref:`X_56 <X_56>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3596
-   * :ref:`X_56 <X_56>` = :term:`complement <complement>` of X_3436
+   * :ref:`X_56 <X_56>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3596 <X_3596>`
+   * :ref:`X_56 <X_56>` = :term:`complement <complement>` of :ref:`X_3436 <X_3436>`
    * :ref:`X_56 <X_56>` = :term:`anticomplement <anticomplement>` of :ref:`X_1329 <X_1329>`
    * :ref:`X_56 <X_56>` = circumcircle-inverse of :ref:`X_1319 <X_1319>`
    * :ref:`X_56 <X_56>` = antigonal conjugate of X_17101
@@ -80,13 +80,13 @@ X_56
    * :ref:`X_56 <X_56>` = homothetic center of the :term:`intouch triangle <intouch-triangle>` and the circumcevian triangle of :ref:`X_1 <X_1>`
    * :ref:`X_56 <X_56>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_649 <X_649>`\ \ :ref:`X_854 <X_854>` (the isogonal conjugate of the isotomic conjugate of the Gergonne line)
    * :ref:`X_56 <X_56>` = homothetic center of :g:`ABC << A B C >>` and the reflection of the Mandart-incircle triangle in :ref:`X_1 <X_1>`
-   * :ref:`X_56 <X_56>` = {:ref:`X_1 <X_1>`,\ :ref:`X_40 <X_40>`}-harmonic conjugate of X_3057
+   * :ref:`X_56 <X_56>` = {:ref:`X_1 <X_1>`,\ :ref:`X_40 <X_40>`}-harmonic conjugate of :ref:`X_3057 <X_3057>`
    * :ref:`X_56 <X_56>` = {:ref:`X_1 <X_1>`,\ :ref:`X_57 <X_57>`}-harmonic conjugate of :ref:`X_65 <X_65>`
    * :ref:`X_56 <X_56>` = trilinear square of :ref:`X_266 <X_266>`
    * :ref:`X_56 <X_56>` = trilinear square root of :ref:`X_1106 <X_1106>`
    * :ref:`X_56 <X_56>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_219 <X_219>`
    * :ref:`X_56 <X_56>` = :term:`vertex conjugate <vertex-conjugate>` of PU(93)
-   * :ref:`X_56 <X_56>` = inverse-in-{circumcircle, incircle}-inverter of X_3660
+   * :ref:`X_56 <X_56>` = inverse-in-{circumcircle, incircle}-inverter of :ref:`X_3660 <X_3660>`
    * :ref:`X_56 <X_56>` = perspector of :g:`ABC << A B C >>` and extraversion triangle of :ref:`X_55 <X_55>`
    * :ref:`X_56 <X_56>` = perspector of :g:`ABC << A B C >>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of Gemini triangle 15
    * :ref:`X_56 <X_56>` = homothetic center of intangents triangle and reflection of tangential triangle in :ref:`X_3 <X_3>`
@@ -105,7 +105,7 @@ X_56
    * :ref:`X_56 <X_56>` = homothetic center of 2nd midarc triangle and 2nd-circumperp-of-1st-circumperp triangle (which is also 1st-circumperp-of-2nd-circumperp triangle)
    * :ref:`X_56 <X_56>` = Cundy-Parry Phi transform of :ref:`X_517 <X_517>`
    * :ref:`X_56 <X_56>` = Cundy-Parry Psi transform of :ref:`X_104 <X_104>`
-   * :ref:`X_56 <X_56>` = {X_3513,X_3514}-harmonic conjugate of :ref:`X_55 <X_55>`
+   * :ref:`X_56 <X_56>` = {:ref:`X_3513 <X_3513>`,\ :ref:`X_3514 <X_3514>`}-harmonic conjugate of :ref:`X_55 <X_55>`
    * :ref:`X_56 <X_56>` = :ref:`X_4 <X_4>`-of-2nd-Johnson-Yff-triangle
    * :ref:`X_56 <X_56>` = homothetic center of tangential triangle and anti-tangential midarc triangle
    * :ref:`X_56 <X_56>` = Ursa-major-to-Ursa-minor :term:`similarity image <similarity-image>` of :ref:`X_4 <X_4>`

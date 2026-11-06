@@ -48,7 +48,7 @@ X_307
    * :ref:`X_307 <X_307>` = :term:`crosspoint <crosspoint>` of :ref:`X_69 <X_69>` and :ref:`X_75 <X_75>`
    * :ref:`X_307 <X_307>` = :term:`crosssum <crosssum>` of :ref:`X_25 <X_25>` and :ref:`X_31 <X_31>`
    * :ref:`X_307 <X_307>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_525 <X_525>`\ X_8611
-   * :ref:`X_307 <X_307>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X_8748 (line :ref:`X_663 <X_663>`\ X_3064)
+   * :ref:`X_307 <X_307>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of X_8748 (line :ref:`X_663 <X_663>`\ \ :ref:`X_3064 <X_3064>`)
    * :ref:`X_307 <X_307>` = polar conjugate of X_8748
 
 .. toctree::

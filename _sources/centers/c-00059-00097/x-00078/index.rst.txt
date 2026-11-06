@@ -58,7 +58,7 @@ X_78
    * :ref:`X_78 <X_78>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`25 <X_25>`, :ref:`608 <X_608>`), (:ref:`56 <X_56>`, :ref:`1406 <X_1406>`), (:ref:`604 <X_604>`, :ref:`1395 <X_1395>`), (:ref:`1042 <X_1042>`, :ref:`1426 <X_1426>`)
    * :ref:`X_78 <X_78>` = X_i-:term:`beth conjugate <beth-conjugate>` of X_j for these (i,j): (:ref:`78 <X_78>`, :ref:`3 <X_3>`), (:ref:`643 <X_643>`, :ref:`40 <X_40>`), (:ref:`1043 <X_1043>`, :ref:`1 <X_1>`)
    * :ref:`X_78 <X_78>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_521 <X_521>`\ \ :ref:`X_652 <X_652>`
-   * :ref:`X_78 <X_78>` = {:ref:`X_1 <X_1>`,\ :ref:`X_8 <X_8>`}-harmonic conjugate of X_3872
+   * :ref:`X_78 <X_78>` = {:ref:`X_1 <X_1>`,\ :ref:`X_8 <X_8>`}-harmonic conjugate of :ref:`X_3872 <X_3872>`
    * :ref:`X_78 <X_78>` = {:ref:`X_2 <X_2>`,\ :ref:`X_145 <X_145>`}-harmonic conjugate of :ref:`X_938 <X_938>`
    * :ref:`X_78 <X_78>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_604 <X_604>`
    * :ref:`X_78 <X_78>` = homothetic center of :term:`anticomplementary triangle <anticomplementary-triangle>` and :term:`tangential triangle <tangential-triangle>` of the :term:`hexyl triangle <hexyl-triangle>`

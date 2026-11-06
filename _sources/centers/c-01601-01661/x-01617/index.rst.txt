@@ -46,8 +46,8 @@ X_1617
    * :ref:`X_1617 <X_1617>` = pole wrt circumcircle of line :ref:`X_513 <X_513>`\ \ :ref:`X_676 <X_676>` (the :term:`trilinear polar <trilinear-polar>` of :ref:`X_279 <X_279>`)
    * :ref:`X_1617 <X_1617>` = polar conjugate of :term:`isotomic conjugate <isotomic-conjugate>` of X_23144
    * :ref:`X_1617 <X_1617>` = {:ref:`X_55 <X_55>`,\ :ref:`X_56 <X_56>`}-harmonic conjugate of :ref:`X_57 <X_57>`
-   * :ref:`X_1617 <X_1617>` = {X_3513,X_3514}-harmonic conjugate of :ref:`X_3 <X_3>`
-   * :ref:`X_1617 <X_1617>` = inverse-in-circumcircle of X_3660
+   * :ref:`X_1617 <X_1617>` = {:ref:`X_3513 <X_3513>`,\ :ref:`X_3514 <X_3514>`}-harmonic conjugate of :ref:`X_3 <X_3>`
+   * :ref:`X_1617 <X_1617>` = inverse-in-circumcircle of :ref:`X_3660 <X_3660>`
    * :ref:`X_1617 <X_1617>` = {X_13388,X_13389}-harmonic conjugate of X_37597
 
 .. toctree::

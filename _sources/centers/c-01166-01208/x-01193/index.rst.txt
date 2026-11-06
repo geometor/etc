@@ -23,8 +23,8 @@ X_1193
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{1, 2} <{ 1, 2 }>`, :g:`{3, 31} <{ 3, 31 }>`
-   * **Related Centers:** :g:`X_1220 <X_1220>` (:ref:`ISOGONAL CONJUGATE OF X(1193) <X_1220>`), :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_31 <X_31>` (:ref:`2nd POWER POINT <X_31>`)
+   * **Central Lines:** :g:`{1, 3293} <{ 1, 3293 }>`
+   * **Related Centers:** :g:`X_1 <X_1>` (:ref:`INCENTER <X_1>`), :g:`X_3293 <X_3293>` (:ref:`SS(a → b + c) OF X(3) <X_3293>`)
 
 .. signature:: center
 
@@ -45,7 +45,7 @@ X_1193
 .. collapse:: Functional Relations
    :badge: 8 relations
 
-   * :ref:`X_1193 <X_1193>` = midpoint of :ref:`X_1 <X_1>` and X_3293
+   * :ref:`X_1193 <X_1193>` = midpoint of :ref:`X_1 <X_1>` and :ref:`X_3293 <X_3293>`
    * :ref:`X_1193 <X_1193>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1220 <X_1220>`
    * :ref:`X_1193 <X_1193>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_1240 <X_1240>`
    * :ref:`X_1193 <X_1193>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`58 <X_58>`), (:ref:`6 <X_6>`, :ref:`893 <X_893>`), (:ref:`57 <X_57>`, :ref:`86 <X_86>`)

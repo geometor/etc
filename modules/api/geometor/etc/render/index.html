@@ -40,6 +40,9 @@
           <a href="../../../../../centers/index.html"  >Encyclopedia of Triangle Centers</a>
         </li>
         <li>
+          <a href="../../../../../preambles.html"  >Guide to Preambles in ETC</a>
+        </li>
+        <li>
           <a href="../../../../../glossary.html"  >Glossary</a>
         </li>
         <li>
@@ -84,7 +87,7 @@
           <div class="book-nav-center">
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="../transform/index.html" title="geometor.etc.transform"><span class="nav-label">Next</span> &rarr;</a>
+            <a class="book-nav-btn" href="../topics/index.html" title="geometor.etc.topics"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </header>
@@ -227,29 +230,36 @@
         <span class="sd">    stroke-width: 3.5 !important;</span>
         <span class="sd">}</span>
 
-        <span class="sd">#elements line {</span>
+        <span class="sd">#elements line,</span>
+        <span class="sd">#elements path.line {</span>
         <span class="sd">    fill: none;</span>
-        <span class="sd">    stroke: #777;</span>
-        <span class="sd">    stroke-width: 1.5;</span>
+        <span class="sd">    stroke: #b0bec5;</span>
+        <span class="sd">    stroke-width: 2.2;</span>
+        <span class="sd">    stroke-dasharray: 2, 4.5;</span>
+        <span class="sd">    stroke-linecap: round;</span>
         <span class="sd">    vector-effect: non-scaling-stroke;</span>
         <span class="sd">    cursor: pointer;</span>
         <span class="sd">}</span>
 
-        <span class="sd">#elements line.sideline {</span>
-        <span class="sd">    stroke: #999;</span>
-        <span class="sd">    stroke-width: 2;</span>
+        <span class="sd">#elements line.sideline,</span>
+        <span class="sd">#elements path.line.sideline {</span>
+        <span class="sd">    stroke: #cbd5e1;</span>
+        <span class="sd">    stroke-width: 2.3;</span>
         <span class="sd">}</span>
 
-        <span class="sd">#elements line.central_line {</span>
+        <span class="sd">#elements line.central_line,</span>
+        <span class="sd">#elements path.line.central_line {</span>
         <span class="sd">    stroke: #0bd;</span>
-        <span class="sd">    stroke-width: 1.75;</span>
+        <span class="sd">    stroke-width: 1.85;</span>
         <span class="sd">    stroke-opacity: 0.85;</span>
         <span class="sd">}</span>
 
         <span class="sd">#elements line.golden,</span>
-        <span class="sd">#elements line.euler {</span>
+        <span class="sd">#elements path.line.golden,</span>
+        <span class="sd">#elements line.euler,</span>
+        <span class="sd">#elements path.line.euler {</span>
         <span class="sd">    stroke: gold;</span>
-        <span class="sd">    stroke-width: 2;</span>
+        <span class="sd">    stroke-width: 2.1;</span>
         <span class="sd">}</span>
 
         <span class="sd">#elements circle {</span>
@@ -276,7 +286,7 @@
         <span class="sd">}</span>
 
         <span class="sd">#elements .bisector {</span>
-        <span class="sd">    stroke-dasharray: 8, 4, 2, 4;</span>
+        <span class="sd">    stroke-dasharray: 2, 4;</span>
         <span class="sd">}</span>
 
         <span class="sd">#elements .guide {</span>
@@ -287,10 +297,13 @@
 
         <span class="sd">#elements line:hover,</span>
         <span class="sd">#elements line.hover,</span>
+        <span class="sd">#elements path.line:hover,</span>
+        <span class="sd">#elements path.line.hover,</span>
         <span class="sd">#elements circle:hover,</span>
         <span class="sd">#elements circle.hover {</span>
         <span class="sd">    stroke: var(--select-color) !important;</span>
         <span class="sd">    stroke-width: 3.2 !important;</span>
+        <span class="sd">    stroke-dasharray: none !important;</span>
         <span class="sd">    stroke-opacity: 1 !important;</span>
         <span class="sd">}</span>
 
@@ -974,7 +987,7 @@
             <a class="book-toc-link" href="../../../../../index.html">geometor • etc</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="../transform/index.html" title="geometor.etc.transform"><span class="nav-label">geometor.etc.transform</span> &rarr;</a>
+            <a class="book-nav-btn" href="../topics/index.html" title="geometor.etc.topics"><span class="nav-label">geometor.etc.topics</span> &rarr;</a>
           </div>
         </div>
       </footer>

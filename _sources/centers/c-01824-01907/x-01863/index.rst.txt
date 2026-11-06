@@ -30,7 +30,7 @@ X_1863
 
    | **Trilinears:** :math:`(y + z) \sec A : :`, where :math:`x : y : z` = :ref:`X_269 <X_269>`
    | **Barycentrics:** :math:`(a^{2} + b^{2} + c^{2} - 2 a b - 2 a c)/(b^{2} + c^{2} - a^{2}) : :`
-   | **Search Value (6, 9, 13):** :math:`0.491116354704`
+   | **Search Value (6, 9, 13):** :math:`3.199726242733`
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines

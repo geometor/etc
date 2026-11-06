@@ -24,7 +24,7 @@ X_1337
    :class: note
 
    * **Central Lines:** :g:`{4, 616} <{ 4, 616 }>`, :g:`{1157, 1338} <{ 1157, 1338 }>`
-   * **Related Centers:** :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_616 <X_616>` (:ref:`ANTICOMPLEMENT OF X(13) <X_616>`), :g:`X_1157 <X_1157>` (:ref:`INVERSE-IN-CIRCUMCIRCLE OF X(54) <X_1157>`), :g:`X_1338 <X_1338>` (:ref:`2nd WERNAU POINT <X_1338>`)
+   * **Related Centers:** :g:`X_3479 <X_3479>` (:ref:`ISOGONAL CONJUGATE OF X(1337) <X_3479>`), :g:`X_4 <X_4>` (:ref:`ORTHOCENTER <X_4>`), :g:`X_616 <X_616>` (:ref:`ANTICOMPLEMENT OF X(13) <X_616>`), :g:`X_1157 <X_1157>` (:ref:`INVERSE-IN-CIRCUMCIRCLE OF X(54) <X_1157>`), :g:`X_1338 <X_1338>` (:ref:`2nd WERNAU POINT <X_1338>`)
 
 .. signature:: center
 
@@ -46,12 +46,12 @@ X_1337
    :badge: 4 lines
    :class: line-catalog
 
-   {:ref:`4 <X_4>`, :ref:`616 <X_616>`}, {:ref:`15 <X_15>`, :ref:`2981 <X_2981>`}, {:ref:`399 <X_399>`, 3441}, {:ref:`1157 <X_1157>`, :ref:`1338 <X_1338>`}
+   {:ref:`4 <X_4>`, :ref:`616 <X_616>`}, {:ref:`15 <X_15>`, :ref:`2981 <X_2981>`}, {:ref:`399 <X_399>`, :ref:`3441 <X_3441>`}, {:ref:`1157 <X_1157>`, :ref:`1338 <X_1338>`}
 
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X_1337 <X_1337>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3479
+   * :ref:`X_1337 <X_1337>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3479 <X_3479>`
    * :ref:`X_1337 <X_1337>` = :term:`anticomplement <anticomplement>` of X_33500
    * :ref:`X_1337 <X_1337>` = antigonal conjugate of :ref:`X_662 <X_662>`
    * :ref:`X_1337 <X_1337>` = symgonal of :ref:`X_16 <X_16>`

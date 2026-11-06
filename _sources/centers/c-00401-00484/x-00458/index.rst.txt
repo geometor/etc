@@ -48,7 +48,7 @@ X_458
    :badge: 3 relations
 
    * :ref:`X_458 <X_458>` = inverse-in-orthocentroidal-circle of :ref:`X_297 <X_297>`
-   * :ref:`X_458 <X_458>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_262 <X_262>` (line :ref:`X_523 <X_523>`\ X_3569)
+   * :ref:`X_458 <X_458>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_262 <X_262>` (line :ref:`X_523 <X_523>`\ \ :ref:`X_3569 <X_3569>`)
    * :ref:`X_458 <X_458>` = polar conjugate of :ref:`X_262 <X_262>`
 
 Notes

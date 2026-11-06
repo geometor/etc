@@ -44,7 +44,7 @@ X_2963
    * :ref:`X_2963 <X_2963>` = :ref:`X_570 <X_570>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_6 <X_6>`
    * :ref:`X_2963 <X_2963>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`195 <X_195>`), (:ref:`49 <X_49>`, :ref:`2965 <X_2965>`)
    * :ref:`X_2963 <X_2963>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_7769
-   * :ref:`X_2963 <X_2963>` = {:ref:`X_17 <X_17>`,\ :ref:`X_18 <X_18>`}-harmonic conjugate of X_3519
+   * :ref:`X_2963 <X_2963>` = {:ref:`X_17 <X_17>`,\ :ref:`X_18 <X_18>`}-harmonic conjugate of :ref:`X_3519 <X_3519>`
    * :ref:`X_2963 <X_2963>` = :ref:`X_2 <X_2>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_2964 <X_2964>`
    * :ref:`X_2963 <X_2963>` = :ref:`X_92 <X_92>`-isoconjugate of :ref:`X_49 <X_49>`
    * :ref:`X_2963 <X_2963>` = polar conjugate of X_32002

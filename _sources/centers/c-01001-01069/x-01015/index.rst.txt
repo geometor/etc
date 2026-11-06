@@ -45,12 +45,12 @@ X_1015
    :badge: 15 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, :ref:`39 <X_39>`}, {:ref:`2 <X_2>`, :ref:`668 <X_668>`}, {:ref:`6 <X_6>`, :ref:`101 <X_101>`}, {:ref:`11 <X_11>`, :ref:`115 <X_115>`}, {:ref:`32 <X_32>`, :ref:`56 <X_56>`}, {:ref:`36 <X_36>`, :ref:`187 <X_187>`}, {:ref:`37 <X_37>`, :ref:`537 <X_537>`}, {:ref:`55 <X_55>`, :ref:`574 <X_574>`}, {:ref:`76 <X_76>`, :ref:`330 <X_330>`}, {:ref:`214 <X_214>`, :ref:`1100 <X_1100>`}, {:ref:`216 <X_216>`, :ref:`1060 <X_1060>`}, {:ref:`244 <X_244>`, :ref:`665 <X_665>`}, {:ref:`350 <X_350>`, :ref:`538 <X_538>`}, {:ref:`812 <X_812>`, :ref:`1086 <X_1086>`}, {:ref:`1960 <X_1960>`, 3122}
+   {:ref:`1 <X_1>`, :ref:`39 <X_39>`}, {:ref:`2 <X_2>`, :ref:`668 <X_668>`}, {:ref:`6 <X_6>`, :ref:`101 <X_101>`}, {:ref:`11 <X_11>`, :ref:`115 <X_115>`}, {:ref:`32 <X_32>`, :ref:`56 <X_56>`}, {:ref:`36 <X_36>`, :ref:`187 <X_187>`}, {:ref:`37 <X_37>`, :ref:`537 <X_537>`}, {:ref:`55 <X_55>`, :ref:`574 <X_574>`}, {:ref:`76 <X_76>`, :ref:`330 <X_330>`}, {:ref:`214 <X_214>`, :ref:`1100 <X_1100>`}, {:ref:`216 <X_216>`, :ref:`1060 <X_1060>`}, {:ref:`244 <X_244>`, :ref:`665 <X_665>`}, {:ref:`350 <X_350>`, :ref:`538 <X_538>`}, {:ref:`812 <X_812>`, :ref:`1086 <X_1086>`}, {:ref:`1960 <X_1960>`, :ref:`3122 <X_3122>`}
 
 .. collapse:: Functional Relations
    :badge: 19 relations
 
-   * :ref:`X_1015 <X_1015>` = midpoint of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`291 <X_291>`), (:ref:`2 <X_2>`, 3227)
+   * :ref:`X_1015 <X_1015>` = midpoint of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`291 <X_291>`), (:ref:`2 <X_2>`, :ref:`3227 <X_3227>`)
    * :ref:`X_1015 <X_1015>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1016 <X_1016>`
    * :ref:`X_1015 <X_1015>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_31625
    * :ref:`X_1015 <X_1015>` = :term:`complement <complement>` of :ref:`X_668 <X_668>`
@@ -66,7 +66,7 @@ X_1015
    * :ref:`X_1015 <X_1015>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines through :ref:`X_513 <X_513>`
    * :ref:`X_1015 <X_1015>` = perspector of circumparabola centered at :ref:`X_513 <X_513>`
    * :ref:`X_1015 <X_1015>` = :ref:`X_2 <X_2>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_513 <X_513>`
-   * :ref:`X_1015 <X_1015>` = projection from Steiner circumellipse to Steiner inellipse of X_3227
+   * :ref:`X_1015 <X_1015>` = projection from Steiner circumellipse to Steiner inellipse of :ref:`X_3227 <X_3227>`
    * :ref:`X_1015 <X_1015>` = barycentric square of :ref:`X_513 <X_513>`
    * :ref:`X_1015 <X_1015>` = center of {:g:`ABC << A B C >>`, Gemini 7}-circumconic
 

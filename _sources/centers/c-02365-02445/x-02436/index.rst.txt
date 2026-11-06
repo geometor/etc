@@ -29,7 +29,7 @@ X_2436
 .. signature:: center
 
    | **Trilinears:** :math:`1/f(a,b,c) : 1/f(b,c,a) : 1/f(c,a,b)`, where f(a,b,c) is as given just before :ref:`X_2394 <X_2394>`
-   | **Search Value (6, 9, 13):** :math:`-31.682461083660`
+   | **Search Value (6, 9, 13):** :math:`-31.682461083659`
 
 .. container:: note-item
 

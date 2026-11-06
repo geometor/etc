@@ -67,7 +67,7 @@ X_114
    * :ref:`X_114 <X_114>` = center of circumconic that is locus of :term:`trilinear poles <trilinear-pole>` of lines passing through :ref:`X_230 <X_230>`
    * :ref:`X_114 <X_114>` = center of rectangular hyperbola {:ref:`X_4 <X_4>`,\ :ref:`X_76 <X_76>`,\ :ref:`X_99 <X_99>`,\ :ref:`X_376 <X_376>`,\ :ref:`X_487 <X_487>`,\ :ref:`X_488 <X_488>`}}
    * :ref:`X_114 <X_114>` = :ref:`X_1513 <X_1513>`-of-1st-Brocard-triangle
-   * :ref:`X_114 <X_114>` = inverse-in-polar-circle of X_3563
+   * :ref:`X_114 <X_114>` = inverse-in-polar-circle of :ref:`X_3563 <X_3563>`
    * :ref:`X_114 <X_114>` = inverse-in-{circumcircle, nine-point circle}-inverter of :ref:`X_110 <X_110>`
    * :ref:`X_114 <X_114>` = center of inverse-in-{circumcircle, nine-point circle}-inverter of Brocard circle
    * :ref:`X_114 <X_114>` = :ref:`X_5 <X_5>`-of-1st-anti-Brocard-triangle

@@ -48,7 +48,7 @@ X_2287
    * :ref:`X_2287 <X_2287>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`9 <X_9>`, :ref:`2322 <X_2322>`), (:ref:`200 <X_200>`, :ref:`1043 <X_1043>`), (:ref:`219 <X_219>`, :ref:`2327 <X_2327>`), (:ref:`220 <X_220>`, :ref:`2328 <X_2328>`), (:ref:`2328 <X_2328>`, :ref:`21 <X_21>`)
    * :ref:`X_2287 <X_2287>` = :term:`crosspoint <crosspoint>` of :ref:`X_333 <X_333>` and :ref:`X_1043 <X_1043>`
    * :ref:`X_2287 <X_2287>` = :term:`crosssum <crosssum>` of :ref:`X_1042 <X_1042>` and :ref:`X_1400 <X_1400>`
-   * :ref:`X_2287 <X_2287>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_1021 <X_1021>`\ X_3900
+   * :ref:`X_2287 <X_2287>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_1021 <X_1021>`\ \ :ref:`X_3900 <X_3900>`
 
 .. toctree::
    :hidden:

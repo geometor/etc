@@ -40,6 +40,9 @@
           <a href="../../index.html" class="is-active" aria-selected="true" >Encyclopedia of Triangle Centers</a>
         </li>
         <li>
+          <a href="../../../preambles.html"  >Guide to Preambles in ETC</a>
+        </li>
+        <li>
           <a href="../../../glossary.html"  >Glossary</a>
         </li>
         <li>
@@ -137,7 +140,7 @@
             <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="kimberling" title="Kimberling Obtuse Scalene Triangle (6, 9, 13)" data-caption-html="&lt;strong&gt;X&lt;sub&gt;308&lt;/sub&gt; — ISOTOMIC CONJUGATE OF X&lt;sub&gt;39&lt;/sub&gt;&lt;/strong&gt; constructed on Kimberling&#x27;s canonical uniqueness test triangle &lt;code&gt;(a, b, c) = (6, 9, 13)&lt;/code&gt; (obtuse scalene, unit baseline &lt;span class=&quot;geom-ref geom-segment&quot; data-ref=&quot;[ A B ]&quot;&gt;AB&lt;/span&gt; = &lt;code&gt;1&lt;/code&gt;).">Kimberling</button>
           </div>
         <div class="etc-tab-pane active" data-tab-pane="acute">
-        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.110000 -0.757438 1.220000 0.915000" data-initial-viewbox="-0.110000 -0.757438 1.220000 0.915000" preserveAspectRatio="xMidYMid meet">
+        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.110000 -0.757438 1.220000 0.915000" data-initial-viewbox="-0.110000 -0.757438 1.220000 0.915000" data-target-r-px="10.5" preserveAspectRatio="xMidYMid meet">
           <style>
         :root {
             --background-color: #121212;
@@ -359,6 +362,14 @@
         #labels text.hover-label {
             fill: var(--select-color) !important;
             font-weight: 700;
+        }
+
+        #labels text.dense-label {
+            display: none;
+        }
+
+        #labels text.dense-label.hover-label {
+            display: block !important;
         }
 
         .etc-svg-stage {
@@ -566,10 +577,11 @@
                 const vb = getViewBox();
                 const unitsPerPx = vb[2] / widthPx;
 
+                const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
                 pointEls.forEach(c => {
                     const isTarget = c.classList.contains('target') || c.classList.contains('selected');
                     const isGuide = c.classList.contains('guide');
-                    const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);
+                    const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
                     c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
                 });
 
@@ -955,6 +967,18 @@
                 clearHover();
             });
 
+            svg.addEventListener('click', (event) => {
+                if (didDrag) return;
+                const pt = event.target.closest('circle[data-id]');
+                if (!pt) return;
+                const pid = pt.getAttribute('data-id') || '';
+                const m = pid.match(/^X_(\d+)$/);
+                if (m && typeof window !== 'undefined' && window.location && window.location.pathname.includes('/c-') && !window.location.pathname.includes('/x-')) {
+                    const slug = 'x-' + m[1].padStart(5, '0');
+                    window.location.href = `${slug}/index.html`;
+                }
+            });
+
             svg.addEventListener('dblclick', (event) => {
                 event.preventDefault();
                 resetView();
@@ -969,7 +993,7 @@
         </svg>
         </div>
         <div class="etc-tab-pane" data-tab-pane="right" style="display: none;">
-        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.110000 -0.697500 1.220000 0.915000" data-initial-viewbox="-0.110000 -0.697500 1.220000 0.915000" preserveAspectRatio="xMidYMid meet">
+        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.110000 -0.697500 1.220000 0.915000" data-initial-viewbox="-0.110000 -0.697500 1.220000 0.915000" data-target-r-px="10.5" preserveAspectRatio="xMidYMid meet">
           <style>
         :root {
             --background-color: #121212;
@@ -1191,6 +1215,14 @@
         #labels text.hover-label {
             fill: var(--select-color) !important;
             font-weight: 700;
+        }
+
+        #labels text.dense-label {
+            display: none;
+        }
+
+        #labels text.dense-label.hover-label {
+            display: block !important;
         }
 
         .etc-svg-stage {
@@ -1398,10 +1430,11 @@
                 const vb = getViewBox();
                 const unitsPerPx = vb[2] / widthPx;
 
+                const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
                 pointEls.forEach(c => {
                     const isTarget = c.classList.contains('target') || c.classList.contains('selected');
                     const isGuide = c.classList.contains('guide');
-                    const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);
+                    const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
                     c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
                 });
 
@@ -1787,6 +1820,18 @@
                 clearHover();
             });
 
+            svg.addEventListener('click', (event) => {
+                if (didDrag) return;
+                const pt = event.target.closest('circle[data-id]');
+                if (!pt) return;
+                const pid = pt.getAttribute('data-id') || '';
+                const m = pid.match(/^X_(\d+)$/);
+                if (m && typeof window !== 'undefined' && window.location && window.location.pathname.includes('/c-') && !window.location.pathname.includes('/x-')) {
+                    const slug = 'x-' + m[1].padStart(5, '0');
+                    window.location.href = `${slug}/index.html`;
+                }
+            });
+
             svg.addEventListener('dblclick', (event) => {
                 event.preventDefault();
                 resetView();
@@ -1801,7 +1846,7 @@
         </svg>
         </div>
         <div class="etc-tab-pane" data-tab-pane="kepler" style="display: none;">
-        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.110000 -0.700434 1.220000 0.915000" data-initial-viewbox="-0.110000 -0.700434 1.220000 0.915000" preserveAspectRatio="xMidYMid meet">
+        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.110000 -0.700434 1.220000 0.915000" data-initial-viewbox="-0.110000 -0.700434 1.220000 0.915000" data-target-r-px="10.5" preserveAspectRatio="xMidYMid meet">
           <style>
         :root {
             --background-color: #121212;
@@ -2023,6 +2068,14 @@
         #labels text.hover-label {
             fill: var(--select-color) !important;
             font-weight: 700;
+        }
+
+        #labels text.dense-label {
+            display: none;
+        }
+
+        #labels text.dense-label.hover-label {
+            display: block !important;
         }
 
         .etc-svg-stage {
@@ -2230,10 +2283,11 @@
                 const vb = getViewBox();
                 const unitsPerPx = vb[2] / widthPx;
 
+                const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
                 pointEls.forEach(c => {
                     const isTarget = c.classList.contains('target') || c.classList.contains('selected');
                     const isGuide = c.classList.contains('guide');
-                    const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);
+                    const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
                     c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
                 });
 
@@ -2619,6 +2673,18 @@
                 clearHover();
             });
 
+            svg.addEventListener('click', (event) => {
+                if (didDrag) return;
+                const pt = event.target.closest('circle[data-id]');
+                if (!pt) return;
+                const pid = pt.getAttribute('data-id') || '';
+                const m = pid.match(/^X_(\d+)$/);
+                if (m && typeof window !== 'undefined' && window.location && window.location.pathname.includes('/c-') && !window.location.pathname.includes('/x-')) {
+                    const slug = 'x-' + m[1].padStart(5, '0');
+                    window.location.href = `${slug}/index.html`;
+                }
+            });
+
             svg.addEventListener('dblclick', (event) => {
                 event.preventDefault();
                 resetView();
@@ -2633,7 +2699,7 @@
         </svg>
         </div>
         <div class="etc-tab-pane" data-tab-pane="kimberling" style="display: none;">
-        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.110000 -0.642265 1.220000 0.915000" data-initial-viewbox="-0.110000 -0.642265 1.220000 0.915000" preserveAspectRatio="xMidYMid meet">
+        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.110000 -0.642265 1.220000 0.915000" data-initial-viewbox="-0.110000 -0.642265 1.220000 0.915000" data-target-r-px="10.5" preserveAspectRatio="xMidYMid meet">
           <style>
         :root {
             --background-color: #121212;
@@ -2857,6 +2923,14 @@
             font-weight: 700;
         }
 
+        #labels text.dense-label {
+            display: none;
+        }
+
+        #labels text.dense-label.hover-label {
+            display: block !important;
+        }
+
         .etc-svg-stage {
             position: relative;
             width: 100%;
@@ -3062,10 +3136,11 @@
                 const vb = getViewBox();
                 const unitsPerPx = vb[2] / widthPx;
 
+                const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
                 pointEls.forEach(c => {
                     const isTarget = c.classList.contains('target') || c.classList.contains('selected');
                     const isGuide = c.classList.contains('guide');
-                    const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);
+                    const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
                     c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
                 });
 
@@ -3451,6 +3526,18 @@
                 clearHover();
             });
 
+            svg.addEventListener('click', (event) => {
+                if (didDrag) return;
+                const pt = event.target.closest('circle[data-id]');
+                if (!pt) return;
+                const pid = pt.getAttribute('data-id') || '';
+                const m = pid.match(/^X_(\d+)$/);
+                if (m && typeof window !== 'undefined' && window.location && window.location.pathname.includes('/c-') && !window.location.pathname.includes('/x-')) {
+                    const slug = 'x-' + m[1].padStart(5, '0');
+                    window.location.href = `${slug}/index.html`;
+                }
+            });
+
             svg.addEventListener('dblclick', (event) => {
                 event.preventDefault();
                 resetView();
@@ -3483,7 +3570,6 @@
             <span class="n">construct_baseline_triangle</span><span class="p">,</span>
             <span class="n">create_model</span><span class="p">,</span>
             <span class="n">eval_trilinear_point</span><span class="p">,</span>
-            <span class="n">isotomic_conjugate</span><span class="p">,</span>
             <span class="n">promote_point_to_top</span><span class="p">,</span>
             <span class="n">symmedian_point_of</span><span class="p">,</span>
         <span class="p">)</span>
@@ -3494,8 +3580,7 @@
             <span class="n">model</span><span class="p">:</span> <span class="n">Model</span><span class="p">,</span> <span class="n">A</span><span class="p">:</span> <span class="n">spg</span><span class="o">.</span><span class="n">Point</span><span class="p">,</span> <span class="n">B</span><span class="p">:</span> <span class="n">spg</span><span class="o">.</span><span class="n">Point</span><span class="p">,</span> <span class="n">C</span><span class="p">:</span> <span class="n">spg</span><span class="o">.</span><span class="n">Point</span>
         <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">spg</span><span class="o">.</span><span class="n">Point</span><span class="p">:</span>
         <span class="w">    </span><span class="sd">"""Construct X_308 = ISOTOMIC CONJUGATE OF X_39 on reference triangle ABC."""</span>
-            <span class="n">X_39</span> <span class="o">=</span> <span class="n">eval_trilinear_point</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="s1">'a*(b**(2) + c**(2))'</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"X_39"</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"center"</span><span class="p">])</span>
-            <span class="n">X_308</span> <span class="o">=</span> <span class="n">isotomic_conjugate</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">X_39</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"X_308"</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"selected"</span><span class="p">,</span> <span class="s2">"target"</span><span class="p">])</span>
+            <span class="n">X_308</span> <span class="o">=</span> <span class="n">eval_trilinear_point</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="s1">'b**(3)*c**(3)/(b**(2) + c**(2))'</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"X_308"</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"selected"</span><span class="p">,</span> <span class="s2">"target"</span><span class="p">])</span>
             <span class="n">X_6</span> <span class="o">=</span> <span class="n">symmedian_point_of</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"X_6"</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"center"</span><span class="p">,</span> <span class="s2">"incident"</span><span class="p">])</span>
             <span class="n">X_76</span> <span class="o">=</span> <span class="n">eval_trilinear_point</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="s1">'1/a**(3)'</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"X_76"</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"center"</span><span class="p">,</span> <span class="s2">"incident"</span><span class="p">])</span>
             <span class="n">central_line</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">X_6</span><span class="p">,</span> <span class="n">X_76</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">76</span><span class="p">,</span> <span class="n">incident</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>

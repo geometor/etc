@@ -42,7 +42,7 @@ X_344
    :badge: 3 relations
 
    * :ref:`X_344 <X_344>` = isotomic conjugate of :ref:`X_277 <X_277>`
-   * :ref:`X_344 <X_344>` = :term:`trilinear pole <trilinear-pole>` of polar, wrt :g:`AC <[ A C ]>`-incircle, of :ref:`X_7 <X_7>` (line X_3309X_4468)
+   * :ref:`X_344 <X_344>` = :term:`trilinear pole <trilinear-pole>` of polar, wrt :g:`AC <[ A C ]>`-incircle, of :ref:`X_7 <X_7>` (line :ref:`X_3309 <X_3309>`\ X_4468)
    * :ref:`X_344 <X_344>` = :term:`anticomplement <anticomplement>` of X_17278
 
 .. toctree::

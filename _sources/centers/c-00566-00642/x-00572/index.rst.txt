@@ -29,7 +29,7 @@ X_572
 .. signature:: center
 
    | **Trilinears:** :math:`f(A,B,C) : f(B,C,A) : f(C,A,B)`, where :math:`f(A,B,C) = \cos(A - U)`, where cot :math:`U = \cot(A/2) \cot(B/2) \cot(C/2)` (Joe Goggins, 11/26/08)
-   | **Search Value (6, 9, 13):** :math:`-7.534760770517`
+   | **Search Value (6, 9, 13):** :math:`5.234901251064`
 
 .. collapse:: Alternate Coordinates
    :badge: 3 forms

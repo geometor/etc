@@ -12,7 +12,7 @@ X_455
 
 .. enunciation::
 
-   :ref:`X_455 <X_455>` = :ref:`X_1370 <X_1370>`-:term:`Ceva conjugate <ceva-conjugate>` of X_3162
+   :ref:`X_455 <X_455>` = :ref:`X_1370 <X_1370>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_3162 <X_3162>`
 
 .. figure:: x-00455.svg
    :alt: X_455 — EULER X_159-11th-SUBSTITUTION POINT
@@ -24,7 +24,7 @@ X_455
    :class: note
 
    * **Central Lines:** :g:`{2, 3} <{ 2, 3 }>` (:term:`Euler line <euler line>`)
-   * **Related Centers:** :g:`X_1370 <X_1370>` (:ref:`ANTICOMPLEMENT OF X(25) <X_1370>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`)
+   * **Related Centers:** :g:`X_1370 <X_1370>` (:ref:`ANTICOMPLEMENT OF X(25) <X_1370>`), :g:`X_3162 <X_3162>` (:ref:`-CEVA CONJUGATE OF X(25) <X_3162>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`)
 
 .. signature:: center
 
@@ -46,11 +46,11 @@ X_455
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X_455 <X_455>` = :ref:`X_1370 <X_1370>`-Ceva conjugate of X_3162
+   * :ref:`X_455 <X_455>` = :ref:`X_1370 <X_1370>`-Ceva conjugate of :ref:`X_3162 <X_3162>`
    * :ref:`X_455 <X_455>` = X_39733-:term:`isoconjugate <isoconjugate>` of X_52041
    * :ref:`X_455 <X_455>` = :ref:`X_25 <X_25>`-Dao conjugate of X_13575
-   * :ref:`X_455 <X_455>` = barycentric product X_i\*X_j for these {i,j}: {:ref:`159 <X_159>`, 41361}, {:ref:`1370 <X_1370>`, 3162}, {23115, 41766}
-   * :ref:`X_455 <X_455>` = barycentric quotient X_i/X_j for these {i,j}: {3162, 13575}, {41361, 40009}
+   * :ref:`X_455 <X_455>` = barycentric product X_i\*X_j for these {i,j}: {:ref:`159 <X_159>`, 41361}, {:ref:`1370 <X_1370>`, :ref:`3162 <X_3162>`}, {23115, 41766}
+   * :ref:`X_455 <X_455>` = barycentric quotient X_i/X_j for these {i,j}: {:ref:`3162 <X_3162>`, 13575}, {41361, 40009}
    * :ref:`X_455 <X_455>` = {X_i,X_j}-harmonic conjugate of X_k for these (i,j,k): {}
 
 Notes

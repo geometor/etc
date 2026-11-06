@@ -26,7 +26,7 @@ X_611
 
    | **Trilinears:** :math:`D + \sin A : D + \sin B : D + \sin C`, where :math:`D = (a^{2} + b^{2} + c^{2})/(4 \operatorname{area})`
    | **Barycentrics:** :math:`a(D + \sin A) : b(D + \sin B) : c(D + \sin C)`
-   | **Search Value (6, 9, 13):** :math:`1.670587686428`
+   | **Search Value (6, 9, 13):** :math:`1.560860710962`
 
 .. collapse:: Alternate Coordinates
    :badge: 1 form

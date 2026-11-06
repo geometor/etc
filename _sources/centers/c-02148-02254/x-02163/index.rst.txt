@@ -45,7 +45,7 @@ X_2163
    * :ref:`X_2163 <X_2163>` = :term:`anticomplement <anticomplement>` of X_21251
    * :ref:`X_2163 <X_2163>` = :ref:`X_89 <X_89>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_2364 <X_2364>`
    * :ref:`X_2163 <X_2163>` = :ref:`X_995 <X_995>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_1 <X_1>`
-   * :ref:`X_2163 <X_2163>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3679
+   * :ref:`X_2163 <X_2163>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3679 <X_3679>`
    * :ref:`X_2163 <X_2163>` = :term:`vertex conjugate <vertex-conjugate>` of :ref:`X_1 <X_1>` and :ref:`X_6 <X_6>`
 
 Notes

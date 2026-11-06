@@ -38,13 +38,13 @@ X_1138
 .. collapse:: Functional Relations
    :badge: 8 relations
 
-   * :ref:`X_1138 <X_1138>` = reflection of X_5627 in X_3258
+   * :ref:`X_1138 <X_1138>` = reflection of X_5627 in :ref:`X_3258 <X_3258>`
    * :ref:`X_1138 <X_1138>` = isogonal conjugate of :ref:`X_399 <X_399>`
    * :ref:`X_1138 <X_1138>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_1272 <X_1272>`
    * :ref:`X_1138 <X_1138>` = :ref:`X_30 <X_30>`-:term:`Ceva conjugate <ceva-conjugate>` of X_5670
-   * :ref:`X_1138 <X_1138>` = :ref:`X_523 <X_523>`-:term:`cevapoint <cevapoint>` of X_3258
+   * :ref:`X_1138 <X_1138>` = :ref:`X_523 <X_523>`-:term:`cevapoint <cevapoint>` of :ref:`X_3258 <X_3258>`
    * :ref:`X_1138 <X_1138>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`74 <X_74>`, :ref:`4 <X_4>`), (:ref:`1989 <X_1989>`, :ref:`2 <X_2>`)
-   * :ref:`X_1138 <X_1138>` = X_i-:term:`vertex conjugate <vertex-conjugate>` of X_j for these (i,j): (:ref:`4 <X_4>`, 3447), (:ref:`30 <X_30>`, :ref:`186 <X_186>`)
+   * :ref:`X_1138 <X_1138>` = X_i-:term:`vertex conjugate <vertex-conjugate>` of X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`3447 <X_3447>`), (:ref:`30 <X_30>`, :ref:`186 <X_186>`)
    * :ref:`X_1138 <X_1138>` = :term:`trilinear pole <trilinear-pole>` of the line :ref:`X_526 <X_526>`\ \ :ref:`X_1637 <X_1637>`
 
 Notes

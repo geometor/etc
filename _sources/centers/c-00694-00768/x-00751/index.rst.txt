@@ -42,7 +42,7 @@ X_751
    :badge: 2 relations
 
    * :ref:`X_751 <X_751>` = isogonal conjugate of :ref:`X_750 <X_750>`
-   * :ref:`X_751 <X_751>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3761
+   * :ref:`X_751 <X_751>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3761 <X_3761>`
 
 .. toctree::
    :hidden:

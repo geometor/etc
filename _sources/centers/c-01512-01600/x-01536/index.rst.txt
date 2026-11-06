@@ -29,7 +29,7 @@ X_1536
 .. signature:: center
 
    | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)` (see note above :ref:`X_1512 <X_1512>`)
-   | **Search Value (6, 9, 13):** :math:`-18.036282990853`
+   | **Search Value (6, 9, 13):** :math:`-18.036282990854`
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines

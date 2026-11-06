@@ -47,7 +47,7 @@ X_1613
    * :ref:`X_1613 <X_1613>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`1424 <X_1424>`, :ref:`1740 <X_1740>`)
    * :ref:`X_1613 <X_1613>` = :term:`crosssum <crosssum>` of :ref:`X_523 <X_523>` and :ref:`X_1084 <X_1084>`
    * :ref:`X_1613 <X_1613>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_512 <X_512>`\ \ :ref:`X_625 <X_625>` (complement of Lemoine axis)
-   * :ref:`X_1613 <X_1613>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of X_3504
+   * :ref:`X_1613 <X_1613>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_3504 <X_3504>`
    * :ref:`X_1613 <X_1613>` = :term:`trilinear pole <trilinear-pole>` of polar wrt 2nd Brocard circle of perspector of 2nd Brocard circle
    * :ref:`X_1613 <X_1613>` = :term:`vertex conjugate <vertex-conjugate>` of PU(148)
 

@@ -30,7 +30,7 @@ X_2582
 
    | **Trilinears:** :math:`bc/f(a,b,c) : ca/f(b,c,a) : ab/f(c,a,b)`, where f(a,b,c) is as at :ref:`X_1113 <X_1113>`
    | **Barycentrics:** :math:`1/f(a,b,c) : 1/f(b,c,a) : 1/f(c,a,b)`
-   | **Search Value (6, 9, 13):** :math:`27.437044299533`
+   | **Search Value (6, 9, 13):** :math:`27.437044299534`
 
 .. collapse:: Incident Central Lines
    :badge: 8 lines

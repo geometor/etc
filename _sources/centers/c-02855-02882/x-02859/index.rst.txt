@@ -23,8 +23,8 @@ X_2859
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{112, 693} <{ 112, 693 }>`
-   * **Related Centers:** :g:`X_2873 <X_2873>` (:ref:`ISOGONAL CONJUGATE OF X(2859) <X_2873>`), :g:`X_112 <X_112>` (:ref:`Ψ(ORTHOCENTER, SYMMEDIAN POINT) <X_112>`), :g:`X_693 <X_693>` (:ref:`ISOTOMIC CONJUGATE OF X(100) <X_693>`)
+   * **Central Lines:** :g:`{112, 693} <{ 112, 693 }>`, :g:`{100, 3267} <{ 100, 3267 }>`
+   * **Related Centers:** :g:`X_2873 <X_2873>` (:ref:`ISOGONAL CONJUGATE OF X(2859) <X_2873>`), :g:`X_112 <X_112>` (:ref:`Ψ(ORTHOCENTER, SYMMEDIAN POINT) <X_112>`), :g:`X_693 <X_693>` (:ref:`ISOTOMIC CONJUGATE OF X(100) <X_693>`), :g:`X_100 <X_100>` (:ref:`ANTICOMPLEMENT OF FEUERBACH POINT <X_100>`), :g:`X_3267 <X_3267>` (:ref:`ISOTOMIC CONJUGATE OF X(112) <X_3267>`)
 
 .. signature:: center
 
@@ -40,7 +40,7 @@ X_2859
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`100 <X_100>`, 3267}, {:ref:`112 <X_112>`, :ref:`693 <X_693>`}
+   {:ref:`100 <X_100>`, :ref:`3267 <X_3267>`}, {:ref:`112 <X_112>`, :ref:`693 <X_693>`}
 
 .. collapse:: Functional Relations
    :badge: 1 relation

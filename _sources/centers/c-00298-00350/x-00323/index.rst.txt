@@ -52,7 +52,7 @@ X_323
    * :ref:`X_323 <X_323>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_1989 <X_1989>`
    * :ref:`X_323 <X_323>` = isotomic conjugate of :ref:`X_94 <X_94>`
    * :ref:`X_323 <X_323>` = :term:`complement <complement>` of X_37779
-   * :ref:`X_323 <X_323>` = :term:`anticomplement <anticomplement>` of X_3580
+   * :ref:`X_323 <X_323>` = :term:`anticomplement <anticomplement>` of :ref:`X_3580 <X_3580>`
    * :ref:`X_323 <X_323>` = :ref:`X_340 <X_340>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_186 <X_186>`
    * :ref:`X_323 <X_323>` = :term:`cevapoint <cevapoint>` of :ref:`X_6 <X_6>` and :ref:`X_399 <X_399>`
    * :ref:`X_323 <X_323>` = :ref:`X_50 <X_50>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_186 <X_186>`

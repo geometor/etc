@@ -40,6 +40,9 @@
           <a href="../../index.html" class="is-active" aria-selected="true" >Encyclopedia of Triangle Centers</a>
         </li>
         <li>
+          <a href="../../../preambles.html"  >Guide to Preambles in ETC</a>
+        </li>
+        <li>
           <a href="../../../glossary.html"  >Glossary</a>
         </li>
         <li>
@@ -137,7 +140,7 @@
             <button type="button" class="etc-tab-btn" role="tab" aria-selected="false" data-tab="kimberling" title="Kimberling Obtuse Scalene Triangle (6, 9, 13)" data-caption-html="&lt;strong&gt;X&lt;sub&gt;1490&lt;/sub&gt; — X&lt;sub&gt;1&lt;/sub&gt;X_4∩X&lt;sub&gt;3&lt;/sub&gt;X_9&lt;/strong&gt; constructed on Kimberling&#x27;s canonical uniqueness test triangle &lt;code&gt;(a, b, c) = (6, 9, 13)&lt;/code&gt; (obtuse scalene, unit baseline &lt;span class=&quot;geom-ref geom-segment&quot; data-ref=&quot;[ A B ]&quot;&gt;AB&lt;/span&gt; = &lt;code&gt;1&lt;/code&gt;).">Kimberling</button>
           </div>
         <div class="etc-tab-pane active" data-tab-pane="acute">
-        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.442762 -0.809134 1.885524 1.414143" data-initial-viewbox="-0.442762 -0.809134 1.885524 1.414143" preserveAspectRatio="xMidYMid meet">
+        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.442762 -0.809134 1.885524 1.414143" data-initial-viewbox="-0.442762 -0.809134 1.885524 1.414143" data-target-r-px="10.5" preserveAspectRatio="xMidYMid meet">
           <style>
         :root {
             --background-color: #121212;
@@ -359,6 +362,14 @@
         #labels text.hover-label {
             fill: var(--select-color) !important;
             font-weight: 700;
+        }
+
+        #labels text.dense-label {
+            display: none;
+        }
+
+        #labels text.dense-label.hover-label {
+            display: block !important;
         }
 
         .etc-svg-stage {
@@ -556,10 +567,11 @@
                 const vb = getViewBox();
                 const unitsPerPx = vb[2] / widthPx;
 
+                const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
                 pointEls.forEach(c => {
                     const isTarget = c.classList.contains('target') || c.classList.contains('selected');
                     const isGuide = c.classList.contains('guide');
-                    const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);
+                    const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
                     c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
                 });
 
@@ -945,6 +957,18 @@
                 clearHover();
             });
 
+            svg.addEventListener('click', (event) => {
+                if (didDrag) return;
+                const pt = event.target.closest('circle[data-id]');
+                if (!pt) return;
+                const pid = pt.getAttribute('data-id') || '';
+                const m = pid.match(/^X_(\d+)$/);
+                if (m && typeof window !== 'undefined' && window.location && window.location.pathname.includes('/c-') && !window.location.pathname.includes('/x-')) {
+                    const slug = 'x-' + m[1].padStart(5, '0');
+                    window.location.href = `${slug}/index.html`;
+                }
+            });
+
             svg.addEventListener('dblclick', (event) => {
                 event.preventDefault();
                 resetView();
@@ -959,7 +983,7 @@
         </svg>
         </div>
         <div class="etc-tab-pane" data-tab-pane="right" style="display: none;">
-        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-1.452000 -1.464000 3.904000 2.928000" data-initial-viewbox="-1.452000 -1.464000 3.904000 2.928000" preserveAspectRatio="xMidYMid meet">
+        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-1.452000 -1.464000 3.904000 2.928000" data-initial-viewbox="-1.452000 -1.464000 3.904000 2.928000" data-target-r-px="10.5" preserveAspectRatio="xMidYMid meet">
           <style>
         :root {
             --background-color: #121212;
@@ -1181,6 +1205,14 @@
         #labels text.hover-label {
             fill: var(--select-color) !important;
             font-weight: 700;
+        }
+
+        #labels text.dense-label {
+            display: none;
+        }
+
+        #labels text.dense-label.hover-label {
+            display: block !important;
         }
 
         .etc-svg-stage {
@@ -1378,10 +1410,11 @@
                 const vb = getViewBox();
                 const unitsPerPx = vb[2] / widthPx;
 
+                const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
                 pointEls.forEach(c => {
                     const isTarget = c.classList.contains('target') || c.classList.contains('selected');
                     const isGuide = c.classList.contains('guide');
-                    const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);
+                    const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
                     c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
                 });
 
@@ -1767,6 +1800,18 @@
                 clearHover();
             });
 
+            svg.addEventListener('click', (event) => {
+                if (didDrag) return;
+                const pt = event.target.closest('circle[data-id]');
+                if (!pt) return;
+                const pid = pt.getAttribute('data-id') || '';
+                const m = pid.match(/^X_(\d+)$/);
+                if (m && typeof window !== 'undefined' && window.location && window.location.pathname.includes('/c-') && !window.location.pathname.includes('/x-')) {
+                    const slug = 'x-' + m[1].padStart(5, '0');
+                    window.location.href = `${slug}/index.html`;
+                }
+            });
+
             svg.addEventListener('dblclick', (event) => {
                 event.preventDefault();
                 resetView();
@@ -1781,7 +1826,7 @@
         </svg>
         </div>
         <div class="etc-tab-pane" data-tab-pane="kepler" style="display: none;">
-        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-1.455404 -1.466553 3.910808 2.933106" data-initial-viewbox="-1.455404 -1.466553 3.910808 2.933106" preserveAspectRatio="xMidYMid meet">
+        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-1.455404 -1.466553 3.910808 2.933106" data-initial-viewbox="-1.455404 -1.466553 3.910808 2.933106" data-target-r-px="10.5" preserveAspectRatio="xMidYMid meet">
           <style>
         :root {
             --background-color: #121212;
@@ -2003,6 +2048,14 @@
         #labels text.hover-label {
             fill: var(--select-color) !important;
             font-weight: 700;
+        }
+
+        #labels text.dense-label {
+            display: none;
+        }
+
+        #labels text.dense-label.hover-label {
+            display: block !important;
         }
 
         .etc-svg-stage {
@@ -2200,10 +2253,11 @@
                 const vb = getViewBox();
                 const unitsPerPx = vb[2] / widthPx;
 
+                const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
                 pointEls.forEach(c => {
                     const isTarget = c.classList.contains('target') || c.classList.contains('selected');
                     const isGuide = c.classList.contains('guide');
-                    const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);
+                    const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
                     c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
                 });
 
@@ -2589,6 +2643,18 @@
                 clearHover();
             });
 
+            svg.addEventListener('click', (event) => {
+                if (didDrag) return;
+                const pt = event.target.closest('circle[data-id]');
+                if (!pt) return;
+                const pid = pt.getAttribute('data-id') || '';
+                const m = pid.match(/^X_(\d+)$/);
+                if (m && typeof window !== 'undefined' && window.location && window.location.pathname.includes('/c-') && !window.location.pathname.includes('/x-')) {
+                    const slug = 'x-' + m[1].padStart(5, '0');
+                    window.location.href = `${slug}/index.html`;
+                }
+            });
+
             svg.addEventListener('dblclick', (event) => {
                 event.preventDefault();
                 resetView();
@@ -2603,7 +2669,7 @@
         </svg>
         </div>
         <div class="etc-tab-pane" data-tab-pane="kimberling" style="display: none;">
-        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.110000 -0.460188 1.220000 0.915000" data-initial-viewbox="-0.110000 -0.460188 1.220000 0.915000" preserveAspectRatio="xMidYMid meet">
+        <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.110000 -0.460188 1.220000 0.915000" data-initial-viewbox="-0.110000 -0.460188 1.220000 0.915000" data-target-r-px="10.5" preserveAspectRatio="xMidYMid meet">
           <style>
         :root {
             --background-color: #121212;
@@ -2827,6 +2893,14 @@
             font-weight: 700;
         }
 
+        #labels text.dense-label {
+            display: none;
+        }
+
+        #labels text.dense-label.hover-label {
+            display: block !important;
+        }
+
         .etc-svg-stage {
             position: relative;
             width: 100%;
@@ -3022,10 +3096,11 @@
                 const vb = getViewBox();
                 const unitsPerPx = vb[2] / widthPx;
 
+                const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
                 pointEls.forEach(c => {
                     const isTarget = c.classList.contains('target') || c.classList.contains('selected');
                     const isGuide = c.classList.contains('guide');
-                    const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);
+                    const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
                     c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
                 });
 
@@ -3411,6 +3486,18 @@
                 clearHover();
             });
 
+            svg.addEventListener('click', (event) => {
+                if (didDrag) return;
+                const pt = event.target.closest('circle[data-id]');
+                if (!pt) return;
+                const pid = pt.getAttribute('data-id') || '';
+                const m = pid.match(/^X_(\d+)$/);
+                if (m && typeof window !== 'undefined' && window.location && window.location.pathname.includes('/c-') && !window.location.pathname.includes('/x-')) {
+                    const slug = 'x-' + m[1].padStart(5, '0');
+                    window.location.href = `${slug}/index.html`;
+                }
+            });
+
             svg.addEventListener('dblclick', (event) => {
                 event.preventDefault();
                 resetView();
@@ -3448,14 +3535,14 @@
         <details class="book-collapse line-catalog">
         <summary class="book-collapse-summary"><span class="book-collapse-title"><span class="collapse-icon">▸</span> Incident Central Lines</span><span class="book-collapse-badge">17 lines</span></summary>
         <div class="book-collapse-body">
-        <p>{<a class="reference internal" href="../../c-00001-00019/x-00001/index.html#x-1" title="X_1 — INCENTER"><span class="std std-ref">1</span></a>, <a class="reference internal" href="../../c-00001-00019/x-00004/index.html#x-4" title="X_4 — ORTHOCENTER"><span class="std std-ref">4</span></a>}, {<a class="reference internal" href="../../c-00001-00019/x-00003/index.html#x-3" title="X_3 — CIRCUMCENTER"><span class="std std-ref">3</span></a>, <a class="reference internal" href="../../c-00001-00019/x-00009/index.html#x-9" title="X_9 — MITTENPUNKT"><span class="std std-ref">9</span></a>}, {<a class="reference internal" href="../../c-00020-00030/x-00020/index.html#x-20" title="X_20 — DE LONGCHAMPS POINT"><span class="std std-ref">20</span></a>, <a class="reference internal" href="../../c-00059-00097/x-00078/index.html#x-78" title="X_78 — ISOGONAL CONJUGATE OF X_34"><span class="std std-ref">78</span></a>}, {<a class="reference internal" href="../../c-00031-00058/x-00040/index.html#x-40" title="X_40 — BEVAN POINT"><span class="std std-ref">40</span></a>, <a class="reference internal" href="../../c-00059-00097/x-00064/index.html#x-64" title="X_64 — ISOGONAL CONJUGATE OF X_20"><span class="std std-ref">64</span></a>}, {<a class="reference internal" href="../../c-00059-00097/x-00063/index.html#x-63" title="X_63 — ISOGONAL CONJUGATE OF X_19"><span class="std std-ref">63</span></a>, <a class="reference internal" href="../../c-00401-00484/x-00411/index.html#x-411" title="X_411 — EULER X_21-2nd-SUBSTITUTION POINT"><span class="std std-ref">411</span></a>}, {<a class="reference internal" href="../../c-00140-00190/x-00165/index.html#x-165" title="X_165 — CENTROID OF THE EXCENTRAL TRIANGLE"><span class="std std-ref">165</span></a>, <a class="reference internal" href="../../c-00191-00236/x-00191/index.html#x-191" title="X_191 — -CEVA CONJUGATE OF X_1"><span class="std std-ref">191</span></a>}, {<a class="reference internal" href="../../c-00191-00236/x-00224/index.html#x-224" title="X_224 — -CEVA CONJUGATE OF X_63"><span class="std std-ref">224</span></a>, <a class="reference internal" href="../../c-00901-01000/x-00908/index.html#x-908" title="X_908 — POINT ACUBENS"><span class="std std-ref">908</span></a>}, {<a class="reference internal" href="../../c-00351-00400/x-00386/index.html#x-386" title="X_386 — INVERSE-IN-BROCARD-CIRCLE OF X_58"><span class="std std-ref">386</span></a>, <a class="reference internal" href="../../c-00901-01000/x-00990/index.html#x-990" title="X_990 — INTERSECTION OF LINES X_1X_7 AND X_3X_37"><span class="std std-ref">990</span></a>}, {<a class="reference internal" href="../../c-00901-01000/x-00910/index.html#x-910" title="X_910 — CROSSPOINT OF X_57 AND X_105"><span class="std std-ref">910</span></a>, <a class="reference internal" href="../../c-01166-01208/x-01192/index.html#x-1192" title="X_1192 — 2nd SARAGOSSA POINT OF X_64"><span class="std std-ref">1192</span></a>}, {<a class="reference internal" href="../../c-00901-01000/x-00975/index.html#x-975" title="X_975 — INTERSECTION OF LINES X_1X_2 AND X_3X_37"><span class="std std-ref">975</span></a>, <a class="reference internal" href="../../c-00901-01000/x-00991/index.html#x-991" title="X_991 — INTERSECTION OF LINES X_1X_7 AND X_3X_6"><span class="std std-ref">991</span></a>}, {<a class="reference internal" href="../../c-01001-01069/x-01045/index.html#x-1045" title="X_1045 — -CEVA CONJUGATE OF X_1"><span class="std std-ref">1045</span></a>, <a class="reference internal" href="../../c-01001-01069/x-01047/index.html#x-1047" title="X_1047 — -CEVA CONJUGATE OF X_1"><span class="std std-ref">1047</span></a>}, {<a class="reference internal" href="../../c-01209-01285/x-01210/index.html#x-1210" title="X_1210 — ISOGONAL CONJUGATE OF X_1167"><span class="std std-ref">1210</span></a>, <a class="reference internal" href="../../c-01393-01477/x-01467/index.html#x-1467" title="X_1467 — -BETH CONJUGATE OF X_938"><span class="std std-ref">1467</span></a>}, {<a class="reference internal" href="../x-01498/index.html#x-1498" title="X_1498 — REFLECTION OF X_64 IN X_3"><span class="std std-ref">1498</span></a>, 3347}, {<a class="reference internal" href="../../c-02120-02147/x-02130/index.html#x-2130" title="X_2130 — EIGENTRANSFORM OF X_20"><span class="std std-ref">2130</span></a>, 3473}, {<a class="reference internal" href="../../c-02120-02147/x-02131/index.html#x-2131" title="X_2131 — ISOGONAL CONJUGATE OF X_2130"><span class="std std-ref">2131</span></a>, 3353}, {3182, 3348}, {3183, 3354}</p>
+        <p>{<a class="reference internal" href="../../c-00001-00019/x-00001/index.html#x-1" title="X_1 — INCENTER"><span class="std std-ref">1</span></a>, <a class="reference internal" href="../../c-00001-00019/x-00004/index.html#x-4" title="X_4 — ORTHOCENTER"><span class="std std-ref">4</span></a>}, {<a class="reference internal" href="../../c-00001-00019/x-00003/index.html#x-3" title="X_3 — CIRCUMCENTER"><span class="std std-ref">3</span></a>, <a class="reference internal" href="../../c-00001-00019/x-00009/index.html#x-9" title="X_9 — MITTENPUNKT"><span class="std std-ref">9</span></a>}, {<a class="reference internal" href="../../c-00020-00030/x-00020/index.html#x-20" title="X_20 — DE LONGCHAMPS POINT"><span class="std std-ref">20</span></a>, <a class="reference internal" href="../../c-00059-00097/x-00078/index.html#x-78" title="X_78 — ISOGONAL CONJUGATE OF X_34"><span class="std std-ref">78</span></a>}, {<a class="reference internal" href="../../c-00031-00058/x-00040/index.html#x-40" title="X_40 — BEVAN POINT"><span class="std std-ref">40</span></a>, <a class="reference internal" href="../../c-00059-00097/x-00064/index.html#x-64" title="X_64 — ISOGONAL CONJUGATE OF X_20"><span class="std std-ref">64</span></a>}, {<a class="reference internal" href="../../c-00059-00097/x-00063/index.html#x-63" title="X_63 — ISOGONAL CONJUGATE OF X_19"><span class="std std-ref">63</span></a>, <a class="reference internal" href="../../c-00401-00484/x-00411/index.html#x-411" title="X_411 — EULER X_21-2nd-SUBSTITUTION POINT"><span class="std std-ref">411</span></a>}, {<a class="reference internal" href="../../c-00140-00190/x-00165/index.html#x-165" title="X_165 — CENTROID OF THE EXCENTRAL TRIANGLE"><span class="std std-ref">165</span></a>, <a class="reference internal" href="../../c-00191-00236/x-00191/index.html#x-191" title="X_191 — -CEVA CONJUGATE OF X_1"><span class="std std-ref">191</span></a>}, {<a class="reference internal" href="../../c-00191-00236/x-00224/index.html#x-224" title="X_224 — -CEVA CONJUGATE OF X_63"><span class="std std-ref">224</span></a>, <a class="reference internal" href="../../c-00901-01000/x-00908/index.html#x-908" title="X_908 — POINT ACUBENS"><span class="std std-ref">908</span></a>}, {<a class="reference internal" href="../../c-00351-00400/x-00386/index.html#x-386" title="X_386 — INVERSE-IN-BROCARD-CIRCLE OF X_58"><span class="std std-ref">386</span></a>, <a class="reference internal" href="../../c-00901-01000/x-00990/index.html#x-990" title="X_990 — INTERSECTION OF LINES X_1X_7 AND X_3X_37"><span class="std std-ref">990</span></a>}, {<a class="reference internal" href="../../c-00901-01000/x-00910/index.html#x-910" title="X_910 — CROSSPOINT OF X_57 AND X_105"><span class="std std-ref">910</span></a>, <a class="reference internal" href="../../c-01166-01208/x-01192/index.html#x-1192" title="X_1192 — 2nd SARAGOSSA POINT OF X_64"><span class="std std-ref">1192</span></a>}, {<a class="reference internal" href="../../c-00901-01000/x-00975/index.html#x-975" title="X_975 — INTERSECTION OF LINES X_1X_2 AND X_3X_37"><span class="std std-ref">975</span></a>, <a class="reference internal" href="../../c-00901-01000/x-00991/index.html#x-991" title="X_991 — INTERSECTION OF LINES X_1X_7 AND X_3X_6"><span class="std std-ref">991</span></a>}, {<a class="reference internal" href="../../c-01001-01069/x-01045/index.html#x-1045" title="X_1045 — -CEVA CONJUGATE OF X_1"><span class="std std-ref">1045</span></a>, <a class="reference internal" href="../../c-01001-01069/x-01047/index.html#x-1047" title="X_1047 — -CEVA CONJUGATE OF X_1"><span class="std std-ref">1047</span></a>}, {<a class="reference internal" href="../../c-01209-01285/x-01210/index.html#x-1210" title="X_1210 — ISOGONAL CONJUGATE OF X_1167"><span class="std std-ref">1210</span></a>, <a class="reference internal" href="../../c-01393-01477/x-01467/index.html#x-1467" title="X_1467 — -BETH CONJUGATE OF X_938"><span class="std std-ref">1467</span></a>}, {<a class="reference internal" href="../x-01498/index.html#x-1498" title="X_1498 — REFLECTION OF X_64 IN X_3"><span class="std std-ref">1498</span></a>, <a class="reference internal" href="../../c-03310-03414/x-03347/index.html#x-3347" title="X_3347 — ISOGONAL CONJUGATE OF X_3182"><span class="std std-ref">3347</span></a>}, {<a class="reference internal" href="../../c-02120-02147/x-02130/index.html#x-2130" title="X_2130 — EIGENTRANSFORM OF X_20"><span class="std std-ref">2130</span></a>, <a class="reference internal" href="../../c-03415-03514/x-03473/index.html#x-3473" title="X_3473 — ISOGONAL CONJUGATE OF X_3472"><span class="std std-ref">3473</span></a>}, {<a class="reference internal" href="../../c-02120-02147/x-02131/index.html#x-2131" title="X_2131 — ISOGONAL CONJUGATE OF X_2130"><span class="std std-ref">2131</span></a>, <a class="reference internal" href="../../c-03310-03414/x-03353/index.html#x-3353" title="X_3353 — -CEVA CONJUGATE OF X_84"><span class="std std-ref">3353</span></a>}, {<a class="reference internal" href="../../c-03119-03217/x-03182/index.html#x-3182" title="X_3182 — -CEVA CONJUGATE OF X_1"><span class="std std-ref">3182</span></a>, <a class="reference internal" href="../../c-03310-03414/x-03348/index.html#x-3348" title="X_3348 — ISOGONAL CONJUGATE OF X_3183"><span class="std std-ref">3348</span></a>}, {<a class="reference internal" href="../../c-03119-03217/x-03183/index.html#x-3183" title="X_3183 — -CEVA CONJUGATE OF X_4"><span class="std std-ref">3183</span></a>, <a class="reference internal" href="../../c-03310-03414/x-03354/index.html#x-3354" title="X_3354 — ISOGONAL CONJUGATE OF X_3353"><span class="std std-ref">3354</span></a>}</p>
         </div>
         </details>
         <details class="book-collapse">
         <summary class="book-collapse-summary"><span class="book-collapse-title"><span class="collapse-icon">▸</span> Functional Relations</span><span class="book-collapse-badge">15 relations</span></summary>
         <div class="book-collapse-body">
         <ul class="simple">
-        <li><p><a class="reference internal" href="#x-1490" title="X_1490: X_1490 = reflection of X_84 in X_3"><span class="std std-ref">X<sub>1490</sub></span></a> = <a class="term-ref glossary-term" id="occ-term-isogonal-conjugate-1" href="../../../glossary.html#term-isogonal-conjugate" data-term="isogonal-conjugate" title="isogonal conjugate: Let P = p : q : r be a point not on a sideline of ABC. Let L(A) be the line obtained by reflecting line AP in the internal bisector of angle A. Define L(B) and L(B) cyclically. The lines L(A), L(B), L(C) concur in the isogonal conjugate of P, which has trilinears 1/p : 1/q : 1/r and is denoted by P -1 . See isoconjugate .">isogonal conjugate</a> of X<sub>3345</sub></p></li>
+        <li><p><a class="reference internal" href="#x-1490" title="X_1490: X_1490 = reflection of X_84 in X_3"><span class="std std-ref">X<sub>1490</sub></span></a> = <a class="term-ref glossary-term" id="occ-term-isogonal-conjugate-1" href="../../../glossary.html#term-isogonal-conjugate" data-term="isogonal-conjugate" title="isogonal conjugate: Let P = p : q : r be a point not on a sideline of ABC. Let L(A) be the line obtained by reflecting line AP in the internal bisector of angle A. Define L(B) and L(B) cyclically. The lines L(A), L(B), L(C) concur in the isogonal conjugate of P, which has trilinears 1/p : 1/q : 1/r and is denoted by P -1 . See isoconjugate .">isogonal conjugate</a> of <a class="reference internal" href="../../c-03310-03414/x-03345/index.html#x-3345" title="X_3345 — ISOGONAL CONJUGATE OF X_1490"><span class="std std-ref">X<sub>3345</sub></span></a></p></li>
         <li><p><a class="reference internal" href="#x-1490" title="X_1490: X_1490 = reflection of X_84 in X_3"><span class="std std-ref">X<sub>1490</sub></span></a> = reflection of <a class="reference internal" href="../../c-00059-00097/x-00084/index.html#x-84" title="X_84 — ISOGONAL CONJUGATE OF X_40"><span class="std std-ref">X<sub>84</sub></span></a> in <a class="reference internal" href="../../c-00001-00019/x-00003/index.html#x-3" title="X_3 — CIRCUMCENTER"><span class="std std-ref">X<sub>3</sub></span></a></p></li>
         <li><p><a class="reference internal" href="#x-1490" title="X_1490: X_1490 = reflection of X_84 in X_3"><span class="std std-ref">X<sub>1490</sub></span></a> = X<sub>i</sub>-<a class="term-ref glossary-term" id="occ-term-ceva-conjugate-1" href="../../../glossary.html#term-ceva-conjugate" data-term="ceva-conjugate" title="Ceva conjugate: Let P = p : q : r and U = u : v : w be points, neither lying on a sideline of ABC. The P-Ceva conjugate of U is the point which is the perspector of the cevian triangle of P and the anticevian triangle of U. (See cevian nest and cross conjugate .) Ceva conjugate and cevapoint are related thus: X = P©U if and only if P = cevapoint(U,X), and in this case,...">Ceva conjugate</a> of X<sub>j</sub> for these (i,j): (<a class="reference internal" href="../../c-00020-00030/x-00020/index.html#x-20" title="X_20 — DE LONGCHAMPS POINT"><span class="std std-ref">20</span></a>, <a class="reference internal" href="../../c-00031-00058/x-00040/index.html#x-40" title="X_40 — BEVAN POINT"><span class="std std-ref">40</span></a>), (<a class="reference internal" href="../../c-00059-00097/x-00078/index.html#x-78" title="X_78 — ISOGONAL CONJUGATE OF X_34"><span class="std std-ref">78</span></a>, <a class="reference internal" href="../../c-00001-00019/x-00001/index.html#x-1" title="X_1 — INCENTER"><span class="std std-ref">1</span></a>), (<a class="reference internal" href="../../c-00298-00350/x-00329/index.html#x-329" title="X_329 — ISOTOMIC CONJUGATE OF X_189"><span class="std std-ref">329</span></a>, <a class="reference internal" href="../../c-00001-00019/x-00009/index.html#x-9" title="X_9 — MITTENPUNKT"><span class="std std-ref">9</span></a>)</p></li>
         <li><p><a class="reference internal" href="#x-1490" title="X_1490: X_1490 = reflection of X_84 in X_3"><span class="std std-ref">X<sub>1490</sub></span></a> = <a class="reference internal" href="../../c-00191-00236/x-00207/index.html#x-207" title="X_207 — -CEVA CONJUGATE OF X_34"><span class="std std-ref">X<sub>207</sub></span></a>-<a class="term-ref glossary-term" id="occ-term-cross-conjugate-1" href="../../../glossary.html#term-cross-conjugate" data-term="cross-conjugate" title="cross conjugate: Let P = p : q : r and U = u : v : w be distinct points, neither lying on a sideline of ABC. The P-cross conjugate of U is the point Let A&#x27;B&#x27;C&#x27; be the cevian triangle of U. Let A&quot; be where line PA&#x27; crosses line B&#x27;C&#x27;, and define B&quot; and C&quot; cyclically - so that A&quot;B&quot;C&quot; is the cevian triangle (in triangle A&#x27;B&#x27;C&#x27;, not ABC) of P. The perspector of triangles ABC...">cross conjugate</a> of <a class="reference internal" href="../../c-00001-00019/x-00001/index.html#x-1" title="X_1 — INCENTER"><span class="std std-ref">X<sub>1</sub></span></a></p></li>

@@ -8,7 +8,7 @@ X_2298
 
 .. enunciation::
 
-   :ref:`X_2298 <X_2298>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3666
+   :ref:`X_2298 <X_2298>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3666 <X_3666>`
 
 .. figure:: x-02298.svg
    :alt: X_2298 — X_2-ISOCONJUGATE OF X_1193

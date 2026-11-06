@@ -30,7 +30,7 @@ X_2592
 
    | **Trilinears:** :math:`bc/f(a,b,c) : ca/f(b,c,a) : ab/f(c,a,b)`, where f(a,b,c) is as at :ref:`X_1822 <X_1822>`
    | **Barycentrics:** :math:`1/f(a,b,c) : 1/f(b,c,a) : 1/f(c,a,b)`
-   | **Search Value (6, 9, 13):** :math:`-58.736479851550`
+   | **Search Value (6, 9, 13):** :math:`-58.736479851547`
 
 .. container:: note-item
 

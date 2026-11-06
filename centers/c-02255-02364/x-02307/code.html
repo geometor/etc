@@ -40,6 +40,9 @@
           <a href="../../index.html" class="is-active" aria-selected="true" >Encyclopedia of Triangle Centers</a>
         </li>
         <li>
+          <a href="../../../preambles.html"  >Guide to Preambles in ETC</a>
+        </li>
+        <li>
           <a href="../../../glossary.html"  >Glossary</a>
         </li>
         <li>
@@ -3577,7 +3580,6 @@
             <span class="n">create_model</span><span class="p">,</span>
             <span class="n">eval_trilinear_point</span><span class="p">,</span>
             <span class="n">incenter_of</span><span class="p">,</span>
-            <span class="n">point_from_barycentrics</span><span class="p">,</span>
             <span class="n">promote_point_to_top</span><span class="p">,</span>
             <span class="n">symmedian_point_of</span><span class="p">,</span>
         <span class="p">)</span>
@@ -3589,7 +3591,7 @@
         <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">spg</span><span class="o">.</span><span class="n">Point</span><span class="p">:</span>
         <span class="w">    </span><span class="sd">"""Construct X_2307 = X_2-ISOCONJUGATE OF X_1251 on reference triangle ABC."""</span>
             <span class="n">X_1082</span> <span class="o">=</span> <span class="n">eval_trilinear_point</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="s1">'(sec(A/2))*sin(A/2 -  pi  /3)'</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"X_1082"</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"center"</span><span class="p">])</span>
-            <span class="n">X_1250</span> <span class="o">=</span> <span class="n">point_from_barycentrics</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="mf">0.37782092</span><span class="p">,</span> <span class="mf">0.36610068</span><span class="p">,</span> <span class="mf">0.2560784</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"X_1250"</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"center"</span><span class="p">])</span>
+            <span class="n">X_1250</span> <span class="o">=</span> <span class="n">eval_trilinear_point</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="s1">'(cos(A/2)*cos(A/2 +  pi  /6))'</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"X_1250"</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"center"</span><span class="p">])</span>
             <span class="n">X_2307</span> <span class="o">=</span> <span class="n">ceva_conjugate</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">X_1082</span><span class="p">,</span> <span class="n">X_1250</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"X_2307"</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"selected"</span><span class="p">,</span> <span class="s2">"target"</span><span class="p">])</span>
             <span class="n">X_6</span> <span class="o">=</span> <span class="n">symmedian_point_of</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"X_6"</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"center"</span><span class="p">,</span> <span class="s2">"incident"</span><span class="p">])</span>
             <span class="n">X_41</span> <span class="o">=</span> <span class="n">eval_trilinear_point</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="s1">'a**(2)*(b + c - a)'</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"X_41"</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"center"</span><span class="p">,</span> <span class="s2">"incident"</span><span class="p">])</span>

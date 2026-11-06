@@ -46,7 +46,7 @@ X_993
 .. collapse:: Functional Relations
    :badge: 4 relations
 
-   * :ref:`X_993 <X_993>` = midpoint of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`63 <X_63>`), (:ref:`55 <X_55>`, :ref:`956 <X_956>`), (:ref:`1012 <X_1012>`, 3428)
+   * :ref:`X_993 <X_993>` = midpoint of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`63 <X_63>`), (:ref:`55 <X_55>`, :ref:`956 <X_956>`), (:ref:`1012 <X_1012>`, :ref:`3428 <X_3428>`)
    * :ref:`X_993 <X_993>` = reflection of :ref:`X_226 <X_226>` in :ref:`X_1125 <X_1125>`
    * :ref:`X_993 <X_993>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_994 <X_994>`
    * :ref:`X_993 <X_993>` = :term:`complement <complement>` of :ref:`X_1478 <X_1478>`

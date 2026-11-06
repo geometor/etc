@@ -52,7 +52,7 @@ X_548
    * :ref:`X_548 <X_548>` = midpoint of X_i and X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`550 <X_550>`), (:ref:`5 <X_5>`, :ref:`20 <X_20>`)
    * :ref:`X_548 <X_548>` = reflection of X_i in X_j for these (i,j): (:ref:`140 <X_140>`, :ref:`3 <X_3>`), (:ref:`546 <X_546>`, :ref:`140 <X_140>`)
    * :ref:`X_548 <X_548>` = {:ref:`X_2 <X_2>`,\ :ref:`X_3 <X_3>`}-harmonic conjugate of X_15712
-   * :ref:`X_548 <X_548>` = {:ref:`X_3 <X_3>`,\ :ref:`X_5 <X_5>`}-harmonic conjugate of X_3530
+   * :ref:`X_548 <X_548>` = {:ref:`X_3 <X_3>`,\ :ref:`X_5 <X_5>`}-harmonic conjugate of :ref:`X_3530 <X_3530>`
    * :ref:`X_548 <X_548>` = radical center of circles centered at vertices of :g:`ABC << A B C >>` with diameter equal to opposite side
 
 Notes

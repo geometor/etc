@@ -30,7 +30,7 @@ X_1474
 
    | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where :math:`f(a,b,c) = (1 - \cos A)u(a,b,c)`, where :math:`u : v : w` = :ref:`X_1172 <X_1172>`
    | **Barycentrics:** :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
-   | **Search Value (6, 9, 13):** :math:`-5.311078158791`
+   | **Search Value (6, 9, 13):** :math:`-0.345378719510`
 
 .. collapse:: Incident Central Lines
    :badge: 17 lines

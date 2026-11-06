@@ -50,6 +50,11 @@ X_13
 
    :ref:`X_13 <X_13>` lies on the Neuberg cubic.
 
+.. admonition:: Related Collection 1 Topic Guides
+   :class: tip
+
+   :doc:`T_1: Isogonal Conjugate <../../../topics/isogonal-conjugate/index>` • :doc:`T_13: The Isogonic & Napoleon Central Lines <../../../topics/isogonic-and-napoleon-lines/index>` • :doc:`T_18: The Apollonian Circles <../../../topics/apollonian-circles/index>` • :doc:`T_24: Equilateral, Isogonic & Napoleon Triangles <../../../topics/isogonic-and-napoleon-triangles/index>`
+
 .. collapse:: Incident Central Lines
    :badge: 21 lines
    :class: line-catalog
@@ -147,14 +152,14 @@ Notes
       * (X_9202; :ref:`13 <X_13>`, :ref:`14 <X_14>`, :ref:`16 <X_16>`, 5623, 11586, 30439)
       * (X_14446; :ref:`13 <X_13>`, :ref:`14 <X_14>`, 5616, 5668, 6779, 8172, 11600, 38943)
       * (X_14447; :ref:`13 <X_13>`, :ref:`14 <X_14>`, 5612, 5669, 6780, 8173, 11601, 38944)
-      * (X_30574; :ref:`13 <X_13>`, :ref:`14 <X_14>`, :ref:`80 <X_80>`,484, 3464, 5540, 5902, 34301, 37718)
+      * (X_30574; :ref:`13 <X_13>`, :ref:`14 <X_14>`, :ref:`80 <X_80>`,484, :ref:`3464 <X_3464>`, 5540, 5902, 34301, 37718)
       * (X_42731; :ref:`13 <X_13>`, :ref:`14 <X_14>`, :ref:`112 <X_112>`, :ref:`1141 <X_1141>`, :ref:`1157 <X_1157>`, 5667, 5890, 6761, 14644, 14651)
       * (X_42732; :ref:`13 <X_13>`, :ref:`14 <X_14>`, :ref:`112 <X_112>`, :ref:`1141 <X_1141>`, :ref:`1157 <X_1157>`, 5667, 5890, 6761, 14644, 14651)
       * (X_42733; :ref:`4 <X_4>`, :ref:`13 <X_13>`, :ref:`14 <X_14>`, :ref:`2132 <X_2132>`, :ref:`2394 <X_2394>`, 6794, 22265, 34298)
       * (X_42734; :ref:`13 <X_13>`, :ref:`14 <X_14>`, :ref:`616 <X_616>`, :ref:`621 <X_621>`, 5675, 16260, 39133)
       * (X_42735; :ref:`13 <X_13>`, :ref:`14 <X_14>`, :ref:`617 <X_617>`, :ref:`621 <X_621>`, 5674, 16259, 39132)
       * (X_42736; :ref:`13 <X_13>`, :ref:`14 <X_14>`, :ref:`125 <X_125>`, :ref:`1637 <X_1637>`, 11657, 14847, 34310)
-      * (X_42737; :ref:`13 <X_13>`, :ref:`14 <X_14>`, :ref:`110 <X_110>`, 3448, 34306, 34308)
+      * (X_42737; :ref:`13 <X_13>`, :ref:`14 <X_14>`, :ref:`110 <X_110>`, :ref:`3448 <X_3448>`, 34306, 34308)
       * (X_42738; :ref:`13 <X_13>`, :ref:`14 <X_14>`, :ref:`98 <X_98>`, 11005, 14223, 23969)
       * (X_42730; :ref:`13 <X_13>`, :ref:`14 <X_14>`, :ref:`74 <X_74>`, 5627, 5670, 18331)
       * (X_42740; Dao-Parry circle of :ref:`X_1 <X_1>`, :ref:`1 <X_1>`, :ref:`13 <X_13>`, :ref:`14 <X_14>`, :ref:`79 <X_79>`, 5677, 42748, 42749)

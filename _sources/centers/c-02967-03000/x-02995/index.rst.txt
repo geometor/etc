@@ -24,13 +24,13 @@ X_2995
    :class: note
 
    * **Central Lines:** :g:`{81, 92} <{ 81, 92 }>`, :g:`{69, 313} <{ 69, 313 }>`
-   * **Related Centers:** :g:`X_81 <X_81>` (:ref:`CEVAPOINT OF INCENTER AND SYMMEDIAN POINT <X_81>`), :g:`X_92 <X_92>` (:ref:`CEVAPOINT OF INCENTER AND CLAWSON POINT <X_92>`), :g:`X_69 <X_69>` (:ref:`SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE <X_69>`), :g:`X_313 <X_313>` (:ref:`ISOTOMIC CONJUGATE OF X(58) <X_313>`)
+   * **Related Centers:** :g:`X_3185 <X_3185>` (:ref:`-CEVA CONJUGATE OF X(6) <X_3185>`), :g:`X_81 <X_81>` (:ref:`CEVAPOINT OF INCENTER AND SYMMEDIAN POINT <X_81>`), :g:`X_92 <X_92>` (:ref:`CEVAPOINT OF INCENTER AND CLAWSON POINT <X_92>`), :g:`X_69 <X_69>` (:ref:`SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE <X_69>`), :g:`X_313 <X_313>` (:ref:`ISOTOMIC CONJUGATE OF X(58) <X_313>`)
 
 .. signature:: center
 
    | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) is as given just before :ref:`X_2979 <X_2979>`, using :g:`P <P>` = :ref:`X_21 <X_21>`
    | **Barycentrics:** :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
-   | **Search Value (6, 9, 13):** :math:`10.870414085779`
+   | **Search Value (6, 9, 13):** :math:`10.870414085780`
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines
@@ -41,8 +41,8 @@ X_2995
 .. collapse:: Functional Relations
    :badge: 5 relations
 
-   * :ref:`X_2995 <X_2995>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3185
-   * :ref:`X_2995 <X_2995>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3869
+   * :ref:`X_2995 <X_2995>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3185 <X_3185>`
+   * :ref:`X_2995 <X_2995>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3869 <X_3869>`
    * :ref:`X_2995 <X_2995>` = trilinear pole of line :ref:`X_905 <X_905>`\ \ :ref:`X_1577 <X_1577>`
    * :ref:`X_2995 <X_2995>` = :term:`cevapoint <cevapoint>` of :ref:`X_123 <X_123>` and :ref:`X_525 <X_525>`
    * :ref:`X_2995 <X_2995>` = :ref:`X_65 <X_65>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_2 <X_2>`

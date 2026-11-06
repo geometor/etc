@@ -45,13 +45,13 @@ X_1498
    :badge: 15 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, :ref:`84 <X_84>`}, {:ref:`3 <X_3>`, :ref:`64 <X_64>`}, {:ref:`4 <X_4>`, :ref:`6 <X_6>`}, {:ref:`20 <X_20>`, :ref:`394 <X_394>`}, {:ref:`24 <X_24>`, :ref:`1192 <X_1192>`}, {:ref:`25 <X_25>`, :ref:`185 <X_185>`}, {:ref:`30 <X_30>`, :ref:`155 <X_155>`}, {:ref:`40 <X_40>`, :ref:`219 <X_219>`}, {:ref:`159 <X_159>`, :ref:`1350 <X_1350>`}, {:ref:`195 <X_195>`, :ref:`382 <X_382>`}, {:ref:`1158 <X_1158>`, :ref:`1214 <X_1214>`}, {:ref:`1490 <X_1490>`, 3347}, {:ref:`2131 <X_2131>`, 3183}, {3182, 3354}, {3353, 3473}
+   {:ref:`1 <X_1>`, :ref:`84 <X_84>`}, {:ref:`3 <X_3>`, :ref:`64 <X_64>`}, {:ref:`4 <X_4>`, :ref:`6 <X_6>`}, {:ref:`20 <X_20>`, :ref:`394 <X_394>`}, {:ref:`24 <X_24>`, :ref:`1192 <X_1192>`}, {:ref:`25 <X_25>`, :ref:`185 <X_185>`}, {:ref:`30 <X_30>`, :ref:`155 <X_155>`}, {:ref:`40 <X_40>`, :ref:`219 <X_219>`}, {:ref:`159 <X_159>`, :ref:`1350 <X_1350>`}, {:ref:`195 <X_195>`, :ref:`382 <X_382>`}, {:ref:`1158 <X_1158>`, :ref:`1214 <X_1214>`}, {:ref:`1490 <X_1490>`, :ref:`3347 <X_3347>`}, {:ref:`2131 <X_2131>`, :ref:`3183 <X_3183>`}, {:ref:`3182 <X_3182>`, :ref:`3354 <X_3354>`}, {:ref:`3353 <X_3353>`, :ref:`3473 <X_3473>`}
 
 .. collapse:: Functional Relations
    :badge: 14 relations
 
    * :ref:`X_1498 <X_1498>` = reflection of X_i in X_j for these (i,j): (:ref:`64 <X_64>`, :ref:`3 <X_3>`), (:ref:`1350 <X_1350>`, :ref:`159 <X_159>`)
-   * :ref:`X_1498 <X_1498>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3346
+   * :ref:`X_1498 <X_1498>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3346 <X_3346>`
    * :ref:`X_1498 <X_1498>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`20 <X_20>`, :ref:`3 <X_3>`), (:ref:`394 <X_394>`, :ref:`6 <X_6>`)
    * :ref:`X_1498 <X_1498>` = :term:`crosssum <crosssum>` of :ref:`X_122 <X_122>` and :ref:`X_523 <X_523>`
    * :ref:`X_1498 <X_1498>` = tangential isogonal conjugate of :ref:`X_24 <X_24>`

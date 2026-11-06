@@ -19,8 +19,8 @@ X_1207
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{3, 6} <{ 3, 6 }>`
-   * **Related Centers:** :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`)
+   * **Central Lines:** :g:`{3, 6} <{ 3, 6 }>`, :g:`{83, 3978} <{ 83, 3978 }>`
+   * **Related Centers:** :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_83 <X_83>` (:ref:`CEVAPOINT OF CENTROID AND SYMMEDIAN POINT <X_83>`), :g:`X_3978 <X_3978>` (:ref:`com[INVERSE <X_3978>`)
 
 .. signature:: center
 
@@ -31,7 +31,7 @@ X_1207
    :badge: 2 lines
    :class: line-catalog
 
-   {:ref:`3 <X_3>`, :ref:`6 <X_6>`}, {:ref:`83 <X_83>`, 3978}
+   {:ref:`3 <X_3>`, :ref:`6 <X_6>`}, {:ref:`83 <X_83>`, :ref:`3978 <X_3978>`}
 
 .. toctree::
    :hidden:

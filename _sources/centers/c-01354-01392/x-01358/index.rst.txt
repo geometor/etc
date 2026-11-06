@@ -23,8 +23,9 @@ X_1358
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{12, 85} <{ 12, 85 }>`, :g:`{56, 105} <{ 56, 105 }>`
-   * **Related Centers:** :g:`X_12 <X_12>` (:ref:`{X <X_12>`), :g:`X_85 <X_85>` (:ref:`ISOTOMIC CONJUGATE OF X(9) <X_85>`), :g:`X_56 <X_56>` (:ref:`EXSIMILICENTER <X_56>`), :g:`X_105 <X_105>` (:ref:`Λ(INCENTER, SYMMEDIAN POINT) <X_105>`)
+   * **Derived Triangle:** :term:`Anticomplementary Triangle <anticomplementary triangle>` :g:`△K_aK_bK_c << K_a K_b K_c >>` — vertices :g:`K_a <K_a>`, :g:`K_b <K_b>`, :g:`K_c <K_c>` (Formed by lines through A, B, C parallel to opposite sides)
+   * **Central Lines:** :g:`{2, 3039} <{ 2, 3039 }>`
+   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_3039 <X_3039>` (:ref:`COMPLEMENT OF X(1358) <X_3039>`)
 
 .. signature:: center
 
@@ -45,7 +46,7 @@ X_1358
    :badge: 11 relations
 
    * :ref:`X_1358 <X_1358>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_4076
-   * :ref:`X_1358 <X_1358>` = :term:`anticomplement <anticomplement>` of X_3039
+   * :ref:`X_1358 <X_1358>` = :term:`anticomplement <anticomplement>` of :ref:`X_3039 <X_3039>`
    * :ref:`X_1358 <X_1358>` = :ref:`X_244 <X_244>`-cross conjugate of :ref:`X_1086 <X_1086>`
    * :ref:`X_1358 <X_1358>` = :term:`crosspoint <crosspoint>` of :ref:`X_277 <X_277>` and :ref:`X_514 <X_514>`
    * :ref:`X_1358 <X_1358>` = :term:`crosssum <crosssum>` of :ref:`X_101 <X_101>` and :ref:`X_218 <X_218>`

@@ -24,7 +24,7 @@ X_1380
    :class: note
 
    * **Central Lines:** :g:`{3, 6} <{ 3, 6 }>`, :g:`{316, 1349} <{ 316, 1349 }>`
-   * **Related Centers:** :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_316 <X_316>` (:ref:`DROUSSENT PIVOT <X_316>`), :g:`X_1349 <X_1349>` (:ref:`EXSIMILICENTER <X_1349>`)
+   * **Related Centers:** :g:`X_3414 <X_3414>` (:ref:`2nd KIEPERT INFINITY POINT <X_3414>`), :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_316 <X_316>` (:ref:`DROUSSENT PIVOT <X_316>`), :g:`X_1349 <X_1349>` (:ref:`EXSIMILICENTER <X_1349>`)
 
 .. signature:: center
 
@@ -46,18 +46,18 @@ X_1380
    :badge: 23 lines
    :class: line-catalog
 
-   {:ref:`2 <X_2>`, :ref:`2040 <X_2040>`}, {:ref:`3 <X_3>`, :ref:`6 <X_6>`}, {:ref:`4 <X_4>`, :ref:`2039 <X_2039>`}, {:ref:`20 <X_20>`, 35914}, {:ref:`23 <X_23>`, 6142}, {:ref:`30 <X_30>`, 31862}, {:ref:`83 <X_83>`, 14632}, {:ref:`98 <X_98>`, 3413}, {:ref:`99 <X_99>`, 3414}, {:ref:`110 <X_110>`, 5639}, {:ref:`111 <X_111>`, 5638}, {:ref:`141 <X_141>`, 19659}, {:ref:`230 <X_230>`, 31863}, {:ref:`316 <X_316>`, :ref:`1349 <X_1349>`}, {:ref:`352 <X_352>`, 6141}, {:ref:`476 <X_476>`, 13636}, {:ref:`513 <X_513>`, 36736}, {:ref:`517 <X_517>`, 36735}, {:ref:`620 <X_620>`, 14501}, {:ref:`667 <X_667>`, 11652}, {:ref:`1113 <X_1113>`, 35608}, {:ref:`1114 <X_1114>`, 35609}, {:ref:`1348 <X_1348>`, 38227}
+   {:ref:`2 <X_2>`, :ref:`2040 <X_2040>`}, {:ref:`3 <X_3>`, :ref:`6 <X_6>`}, {:ref:`4 <X_4>`, :ref:`2039 <X_2039>`}, {:ref:`20 <X_20>`, 35914}, {:ref:`23 <X_23>`, 6142}, {:ref:`30 <X_30>`, 31862}, {:ref:`83 <X_83>`, 14632}, {:ref:`98 <X_98>`, :ref:`3413 <X_3413>`}, {:ref:`99 <X_99>`, :ref:`3414 <X_3414>`}, {:ref:`110 <X_110>`, 5639}, {:ref:`111 <X_111>`, 5638}, {:ref:`141 <X_141>`, 19659}, {:ref:`230 <X_230>`, 31863}, {:ref:`316 <X_316>`, :ref:`1349 <X_1349>`}, {:ref:`352 <X_352>`, 6141}, {:ref:`476 <X_476>`, 13636}, {:ref:`513 <X_513>`, 36736}, {:ref:`517 <X_517>`, 36735}, {:ref:`620 <X_620>`, 14501}, {:ref:`667 <X_667>`, 11652}, {:ref:`1113 <X_1113>`, 35608}, {:ref:`1114 <X_1114>`, 35609}, {:ref:`1348 <X_1348>`, 38227}
 
 .. collapse:: Functional Relations
    :badge: 10 relations
 
-   * :ref:`X_1380 <X_1380>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3414
-   * :ref:`X_1380 <X_1380>` = reflection of X_i in X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`2039 <X_2039>`), (:ref:`1379 <X_1379>`, :ref:`3 <X_3>`), (3558, :ref:`2028 <X_2028>`)
+   * :ref:`X_1380 <X_1380>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3414 <X_3414>`
+   * :ref:`X_1380 <X_1380>` = reflection of X_i in X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`2039 <X_2039>`), (:ref:`1379 <X_1379>`, :ref:`3 <X_3>`), (:ref:`3558 <X_3558>`, :ref:`2028 <X_2028>`)
    * :ref:`X_1380 <X_1380>` = :term:`anticomplement <anticomplement>` of :ref:`X_2040 <X_2040>`
    * :ref:`X_1380 <X_1380>` = inverse-in-Brocard-circle of :ref:`X_1340 <X_1340>`
    * :ref:`X_1380 <X_1380>` = :ref:`X_249 <X_249>`-:term:`Ceva conjugate <ceva-conjugate>` of :ref:`X_1379 <X_1379>`
    * :ref:`X_1380 <X_1380>` = Ψ(:ref:`X_2 <X_2>`, :ref:`X_1341 <X_1341>`)
-   * :ref:`X_1380 <X_1380>` = {:ref:`X_371 <X_371>`,\ :ref:`X_372 <X_372>`}-harmonic conjugate of X_3557
+   * :ref:`X_1380 <X_1380>` = {:ref:`X_371 <X_371>`,\ :ref:`X_372 <X_372>`}-harmonic conjugate of :ref:`X_3557 <X_3557>`
    * :ref:`X_1380 <X_1380>` = {:ref:`X_1687 <X_1687>`,\ :ref:`X_1688 <X_1688>`}-harmonic conjugate of :ref:`X_1379 <X_1379>`
    * :ref:`X_1380 <X_1380>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_6 <X_6>`\ X_5638 (tangent to hyperbola {{:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_6 <X_6>`,PU(118)}} at :ref:`X_6 <X_6>`)
    * :ref:`X_1380 <X_1380>` = barycentric product of circumcircle intercepts of line :ref:`X_2 <X_2>`\ \ :ref:`X_1341 <X_1341>`

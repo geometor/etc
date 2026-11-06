@@ -47,7 +47,7 @@ X_2226
    * :ref:`X_2226 <X_2226>` = :term:`cevapoint <cevapoint>` of :ref:`X_6 <X_6>` and :ref:`X_106 <X_106>`
    * :ref:`X_2226 <X_2226>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`106 <X_106>`), (:ref:`649 <X_649>`, :ref:`901 <X_901>`)
    * :ref:`X_2226 <X_2226>` = :ref:`X_92 <X_92>`-:term:`isoconjugate <isoconjugate>` of X_22371
-   * :ref:`X_2226 <X_2226>` = :term:`crossdifference <crossdifference>` of every pair of points on line X_3251X_4543
+   * :ref:`X_2226 <X_2226>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_3251 <X_3251>`\ X_4543
    * :ref:`X_2226 <X_2226>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_106 <X_106>`\ \ :ref:`X_1960 <X_1960>` (the tangent to circumcircle at :ref:`X_106 <X_106>`)
 
 .. toctree::

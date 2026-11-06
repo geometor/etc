@@ -30,7 +30,7 @@ X_974
 .. signature:: center
 
    | **Trilinears:** :math:`[sa^{10} - a^{8}(3b^{4} - 2b^{2}c^{2} + 3c^{4}) + a^{6}s(2b^{4} - 3b^{2}c^{2} + 2c^{4}) + a^{4}(b^{2} - c^{2})^{2}(2b^{4} - 7b^{2}c^{2} + 2c^{4}) - 3a^{2}s(b^{2} - c^{2})^{2}(b^{4} - 3b^{2}c^{2} + c^{4}) + (b^{2} - c^{2})^{4}(b^{4} + b^{2}c^{2} + c^{4})] \cos A`, where :math:`s = b^{2} + c^{2}`
-   | **Search Value (6, 9, 13):** :math:`0.712484722831`
+   | **Search Value (6, 9, 13):** :math:`7.602693635829`
 
 .. collapse:: Incident Central Lines
    :badge: 2 lines

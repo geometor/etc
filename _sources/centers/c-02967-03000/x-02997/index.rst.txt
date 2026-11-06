@@ -46,7 +46,7 @@ X_2997
    :badge: 4 relations
 
    * :ref:`X_2997 <X_2997>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_2352 <X_2352>`
-   * :ref:`X_2997 <X_2997>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_3868
+   * :ref:`X_2997 <X_2997>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_3868 <X_3868>`
    * :ref:`X_2997 <X_2997>` = cevapoint of :ref:`X_1 <X_1>` and :ref:`X_525 <X_525>`
    * :ref:`X_2997 <X_2997>` = :ref:`X_72 <X_72>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_2 <X_2>`
 

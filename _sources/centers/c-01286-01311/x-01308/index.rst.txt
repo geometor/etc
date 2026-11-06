@@ -24,7 +24,7 @@ X_1308
    :class: note
 
    * **Central Lines:** :g:`{36, 105} <{ 36, 105 }>`, :g:`{100, 514} <{ 100, 514 }>`
-   * **Related Centers:** :g:`X_36 <X_36>` (:ref:`INVERSE-IN-CIRCUMCIRCLE OF INCENTER <X_36>`), :g:`X_105 <X_105>` (:ref:`Λ(INCENTER, SYMMEDIAN POINT) <X_105>`), :g:`X_100 <X_100>` (:ref:`ANTICOMPLEMENT OF FEUERBACH POINT <X_100>`), :g:`X_514 <X_514>` (:ref:`ISOGONAL CONJUGATE OF X(101) <X_514>`)
+   * **Related Centers:** :g:`X_3887 <X_3887>` (:ref:`com[INVERSE(n(3rd EULER TRIANGLE))] <X_3887>`), :g:`X_36 <X_36>` (:ref:`INVERSE-IN-CIRCUMCIRCLE OF INCENTER <X_36>`), :g:`X_105 <X_105>` (:ref:`Λ(INCENTER, SYMMEDIAN POINT) <X_105>`), :g:`X_100 <X_100>` (:ref:`ANTICOMPLEMENT OF FEUERBACH POINT <X_100>`), :g:`X_514 <X_514>` (:ref:`ISOGONAL CONJUGATE OF X(101) <X_514>`)
 
 .. signature:: center
 
@@ -45,7 +45,7 @@ X_1308
    :badge: 6 relations
 
    * :ref:`X_1308 <X_1308>` = reflection of :ref:`X_101 <X_101>` in line :ref:`X_1 <X_1>`\ \ :ref:`X_3 <X_3>`
-   * :ref:`X_1308 <X_1308>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3887
+   * :ref:`X_1308 <X_1308>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3887 <X_3887>`
    * :ref:`X_1308 <X_1308>` = :term:`cevapoint <cevapoint>` of :ref:`X_513 <X_513>` and :ref:`X_1155 <X_1155>`
    * :ref:`X_1308 <X_1308>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_6 <X_6>`\ \ :ref:`X_244 <X_244>`
    * :ref:`X_1308 <X_1308>` = Ψ(X_i, X_j) for these (i,j): (:ref:`1 <X_1>`, :ref:`528 <X_528>`), (:ref:`6 <X_6>`, :ref:`244 <X_244>`), (:ref:`9 <X_9>`, :ref:`11 <X_11>`)

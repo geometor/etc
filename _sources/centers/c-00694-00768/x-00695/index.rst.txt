@@ -47,7 +47,7 @@ X_695
    * :ref:`X_695 <X_695>` = antigonal conjugate of isogonal conjugate of X_37896
    * :ref:`X_695 <X_695>` = isotomic conjugate of :term:`crosspoint <crosspoint>` of PU(11)
    * :ref:`X_695 <X_695>` = :term:`cevapoint <cevapoint>` of PU(1)
-   * :ref:`X_695 <X_695>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_647 <X_647>`\ X_3221
+   * :ref:`X_695 <X_695>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_647 <X_647>`\ \ :ref:`X_3221 <X_3221>`
 
 Notes
 -----

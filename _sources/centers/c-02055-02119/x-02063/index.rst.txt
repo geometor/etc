@@ -26,7 +26,7 @@ X_2063
 
    | **Trilinears:** :math:`f(a,b,c) : f(b,c,a) : f(c,a,b)`, where f(a,b,c) is given just above :ref:`X_2055 <X_2055>`, using :g:`X <X>` = :ref:`X_69 <X_69>`
    | **Barycentrics:** :math:`af(a,b,c) : bf(b,c,a) : cf(c,a,b)`
-   | **Search Value (6, 9, 13):** :math:`1.302512330849`
+   | **Search Value (6, 9, 13):** :math:`3.547268003342`
 
 .. collapse:: Incident Central Lines
    :badge: 5 lines

@@ -48,7 +48,7 @@ X_2402
    * :ref:`X_2402 <X_2402>` = isogonal conjugate of :ref:`X_2428 <X_2428>`
    * :ref:`X_2402 <X_2402>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_2414 <X_2414>`
    * :ref:`X_2402 <X_2402>` = :term:`anticomplement <anticomplement>` of isotomic conjugate of X_39272
-   * :ref:`X_2402 <X_2402>` = :term:`trilinear pole <trilinear-pole>` of line X_3309X_4904 (the Simson line of :ref:`X_105 <X_105>`)
+   * :ref:`X_2402 <X_2402>` = :term:`trilinear pole <trilinear-pole>` of line :ref:`X_3309 <X_3309>`\ X_4904 (the Simson line of :ref:`X_105 <X_105>`)
 
 .. toctree::
    :hidden:

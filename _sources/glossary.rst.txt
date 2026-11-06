@@ -243,7 +243,7 @@ Next, suppose f and g are as for type 1 except that g(a,b,c) ≠ g(a,c,b). Let
 
 Then :g:`A'B'C' << A' B' C' >>` is the *(f,g)-central triangle of type 2*. A *central triangle of type 2* is any triangle :g:`A'B'C' << A' B' C' >>` for some choice of center function f and function g as described. Note that the coordinates in the definitions can be read as barycentrics without changing the classes of triangles called central, central of type 1, and central of type 2.
 
-A form for compact notation for a central triangle is T(f(a,b,c), g(b,c,a)), where the triangle is of type 1 if :math:`g(b,c,a ) = g(b`,a,c) and of type 2 otherwise; see the preamble to X_3758 in ETC.
+A form for compact notation for a central triangle is T(f(a,b,c), g(b,c,a)), where the triangle is of type 1 if :math:`g(b,c,a ) = g(b`,a,c) and of type 2 otherwise; see the preamble to :ref:`X_3758 <X_3758>` in ETC.
 
 Examples: :g:`ABC << A B C >>`, the medial, orthic, excentral, anticomplementary, and tangential triangles are central of type 1; in fact, if X is a center, then the cevian and anticevian triangles of :g:`X <X>` are central of type 1. The pedal triangle of :g:`X <X>` is of type 2 if the triangle is not also a cevian triangle.
 
@@ -366,7 +366,7 @@ combo
 
 Let :g:`P <P>` and U be finite points having normalized barycentric coordinates (p,q,r) and (u,v,w). Suppose that f = f(a,b,c) and g = g(a,b,c) are nonzero homogeneous functions having the same degree of homogeneity. Let x = fp + gu, y = fq + gv, z = fr + gw. The (f,g) combo of :g:`P <P>` and U, denoted by f\*P + g\*U, is the point :g:`X <X>` =\ :math:`x : y : z`; the normalized barycentric coordinates of :g:`X <X>` are (kx,ky,kz), where k=1/(x+y+z).
 
-The definition of combo readily extends to finite sets of finite points. In particular, the (f,g,h) combo of :g:`P <P>` = (p,q,r), :g:`U <U>` = (u,v,w), J = (j,k,m) is given by fp + gu + hj : fq + gv + hk : fr + gw + hm and denoted by f\*P + g\*U + h\*J. Suppose that T is a (central) triangle with vertices :g:`A' <A'>`,\ :g:`B' <B'>`,\ :g:`C' <C'>` given by normalize barycentrics. Then T is represented by a 3x3 matrix with row sums equal to 1. Let NT denote the set of these matrices and let \* denote matrix multiplication. Then NT is closed under \*. Also, NT is closed under matrix inversion, so that (NT, \*) is a group. Once normalized, any central T can be used to produce triangle centers as combos of the form Xcom(nT); see the preambles to X_3663, X_3739, and X_3758 in ETC.
+The definition of combo readily extends to finite sets of finite points. In particular, the (f,g,h) combo of :g:`P <P>` = (p,q,r), :g:`U <U>` = (u,v,w), J = (j,k,m) is given by fp + gu + hj : fq + gv + hk : fr + gw + hm and denoted by f\*P + g\*U + h\*J. Suppose that T is a (central) triangle with vertices :g:`A' <A'>`,\ :g:`B' <B'>`,\ :g:`C' <C'>` given by normalize barycentrics. Then T is represented by a 3x3 matrix with row sums equal to 1. Let NT denote the set of these matrices and let \* denote matrix multiplication. Then NT is closed under \*. Also, NT is closed under matrix inversion, so that (NT, \*) is a group. Once normalized, any central T can be used to produce triangle centers as combos of the form Xcom(nT); see the preambles to :ref:`X_3663 <X_3663>`, :ref:`X_3739 <X_3739>`, and :ref:`X_3758 <X_3758>` in ETC.
 
 .. _complement:
 .. _term-complement:

@@ -54,12 +54,12 @@ X_376
 
    * :ref:`X_376 <X_376>` = midpoint of :ref:`X_2 <X_2>` and :ref:`X_20 <X_20>`
    * :ref:`X_376 <X_376>` = reflection of X_i in X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`3 <X_3>`), (:ref:`4 <X_4>`, :ref:`2 <X_2>`), (:ref:`381 <X_381>`, :ref:`549 <X_549>`)
-   * :ref:`X_376 <X_376>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3426
+   * :ref:`X_376 <X_376>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3426 <X_3426>`
    * :ref:`X_376 <X_376>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_36889
    * :ref:`X_376 <X_376>` = circumcircle-inverse of X_7464
-   * :ref:`X_376 <X_376>` = orthocentroidal-circle-inverse of X_3545
+   * :ref:`X_376 <X_376>` = orthocentroidal-circle-inverse of :ref:`X_3545 <X_3545>`
    * :ref:`X_376 <X_376>` = nine-point-circle-inverse of :term:`complement <complement>` of X_37952
-   * :ref:`X_376 <X_376>` = complement of X_3543
+   * :ref:`X_376 <X_376>` = complement of :ref:`X_3543 <X_3543>`
    * :ref:`X_376 <X_376>` = :term:`anticomplement <anticomplement>` of :ref:`X_381 <X_381>`
    * :ref:`X_376 <X_376>` = :ref:`X_51 <X_51>`-of-hexyl-triangle
    * :ref:`X_376 <X_376>` = centroid of circumcevian triangle of :ref:`X_30 <X_30>`

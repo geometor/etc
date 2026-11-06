@@ -58,7 +58,7 @@ X_214
    * :ref:`X_214 <X_214>` = X_7687-of-excentral-triangle
    * :ref:`X_214 <X_214>` = :term:`crosssum <crosssum>` of circumcircle intercepts of line PU(55) (line :ref:`X_1 <X_1>`\ \ :ref:`X_513 <X_513>`)
    * :ref:`X_214 <X_214>` = center of conic {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`,\ :ref:`X_1 <X_1>`,\ :ref:`X_100 <X_100>`}}
-   * :ref:`X_214 <X_214>` = :term:`complementary conjugate <complementary-conjugate>` of X_3814
+   * :ref:`X_214 <X_214>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X_3814 <X_3814>`
    * :ref:`X_214 <X_214>` = :g:`QA <[ Q A ]>`-:g:`P_{3} <P_3>` (Gergonne-Steiner Point) of quadrangle :g:`ABC << A B C >>`\ :ref:`X_1 <X_1>` (see http://www.chrisvantienhoven.nl/quadrangle-objects/10-mathematics/quadrangle-objects/18-qa-p3.html)
 
 .. toctree::

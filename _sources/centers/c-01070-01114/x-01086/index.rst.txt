@@ -61,7 +61,7 @@ X_1086
    * :ref:`X_1086 <X_1086>` = :term:`anticomplement <anticomplement>` of X_4422
    * :ref:`X_1086 <X_1086>` = barycentric product X_5997\*X_5998
    * :ref:`X_1086 <X_1086>` = barycentric square of :ref:`X_514 <X_514>`
-   * :ref:`X_1086 <X_1086>` = {X_3661,X_3662}-harmonic conjugate of X_17227
+   * :ref:`X_1086 <X_1086>` = {:ref:`X_3661 <X_3661>`,\ :ref:`X_3662 <X_3662>`}-harmonic conjugate of X_17227
 
 Notes
 -----

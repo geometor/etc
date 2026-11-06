@@ -46,7 +46,7 @@ X_2966
 
    * :ref:`X_2966 <X_2966>` = midpoint of :ref:`X_385 <X_385>` and :ref:`X_401 <X_401>`
    * :ref:`X_2966 <X_2966>` = reflection of X_i and X_j for these (i,j): (:ref:`297 <X_297>`, :ref:`230 <X_230>`), (:ref:`325 <X_325>`, :ref:`441 <X_441>`)
-   * :ref:`X_2966 <X_2966>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3569
+   * :ref:`X_2966 <X_2966>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3569 <X_3569>`
    * :ref:`X_2966 <X_2966>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_2799 <X_2799>`
    * :ref:`X_2966 <X_2966>` = :term:`anticomplement <anticomplement>` of X_35088
    * :ref:`X_2966 <X_2966>` = polar conjugate of X_16230
@@ -62,7 +62,7 @@ Notes
 
 .. container:: note-item
 
-   Let P(2) and U(2) be the 1st and 2nd Beltrami points (as indexed at Bicentric Pairs, accessible using the Tables button at the top of ETC), and let P(40) and U(40) be the isogonal conjugates of P(2) and U(2), respectively. Then :ref:`X_2966 <X_2966>` is the point of intersection of the lines P(2)U(40) and P(40)U(2). (:person:`Peter Moses <peter-moses>`, July 1, 2009). See also X_3568.
+   Let P(2) and U(2) be the 1st and 2nd Beltrami points (as indexed at Bicentric Pairs, accessible using the Tables button at the top of ETC), and let P(40) and U(40) be the isogonal conjugates of P(2) and U(2), respectively. Then :ref:`X_2966 <X_2966>` is the point of intersection of the lines P(2)U(40) and P(40)U(2). (:person:`Peter Moses <peter-moses>`, July 1, 2009). See also :ref:`X_3568 <X_3568>`.
 
 .. toctree::
    :hidden:

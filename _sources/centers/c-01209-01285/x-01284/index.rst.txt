@@ -45,7 +45,7 @@ X_1284
    * :ref:`X_1284 <X_1284>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`511 <X_511>`), (:ref:`291 <X_291>`, :ref:`295 <X_295>`)
    * :ref:`X_1284 <X_1284>` = :ref:`X_65 <X_65>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X_1400 <X_1400>`
    * :ref:`X_1284 <X_1284>` = bicentric sum of PU(88)
-   * :ref:`X_1284 <X_1284>` = PU(88)-harmonic conjugate of X_3287
+   * :ref:`X_1284 <X_1284>` = PU(88)-harmonic conjugate of :ref:`X_3287 <X_3287>`
 
 .. toctree::
    :hidden:

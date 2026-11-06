@@ -47,7 +47,7 @@ X_968
 
    * :ref:`X_968 <X_968>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_969 <X_969>`
    * :ref:`X_968 <X_968>` = crossdifference of every pair of points on line :ref:`X_661 <X_661>`\ \ :ref:`X_905 <X_905>`
-   * :ref:`X_968 <X_968>` = {:ref:`X_1 <X_1>`,\ :ref:`X_63 <X_63>`}-harmonic conjugate of X_3158
+   * :ref:`X_968 <X_968>` = {:ref:`X_1 <X_1>`,\ :ref:`X_63 <X_63>`}-harmonic conjugate of :ref:`X_3158 <X_3158>`
 
 .. toctree::
    :hidden:

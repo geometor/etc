@@ -48,7 +48,7 @@ X_1861
 
    * :ref:`X_1861 <X_1861>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_36057
    * :ref:`X_1861 <X_1861>` = :term:`isotomic conjugate <isotomic-conjugate>` of X_31637
-   * :ref:`X_1861 <X_1861>` = :term:`complement <complement>` of X_3100
+   * :ref:`X_1861 <X_1861>` = :term:`complement <complement>` of :ref:`X_3100 <X_3100>`
    * :ref:`X_1861 <X_1861>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_48 <X_48>`\ \ :ref:`X_1459 <X_1459>`
    * :ref:`X_1861 <X_1861>` = inverse-in-circumconic-centered-at-:ref:`X_9 <X_9>` of :ref:`X_19 <X_19>`
    * :ref:`X_1861 <X_1861>` = pole wrt polar circle of trilinear polar of :ref:`X_673 <X_673>` (line :ref:`X_1 <X_1>`\ \ :ref:`X_514 <X_514>`)

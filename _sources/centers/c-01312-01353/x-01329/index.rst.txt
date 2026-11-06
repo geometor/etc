@@ -24,7 +24,7 @@ X_1329
    :class: note
 
    * **Central Lines:** :g:`{2, 12} <{ 2, 12 }>`, :g:`{5, 10} <{ 5, 10 }>`
-   * **Related Centers:** :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_12 <X_12>` (:ref:`{X <X_12>`), :g:`X_5 <X_5>` (:ref:`NINE-POINT CENTER <X_5>`), :g:`X_10 <X_10>` (:ref:`SPIEKER CENTER <X_10>`)
+   * **Related Centers:** :g:`X_3450 <X_3450>` (:ref:`1st SARAGOSSA POINT OF X(8) <X_3450>`), :g:`X_2 <X_2>` (:ref:`CENTROID <X_2>`), :g:`X_12 <X_12>` (:ref:`{X <X_12>`), :g:`X_5 <X_5>` (:ref:`NINE-POINT CENTER <X_5>`), :g:`X_10 <X_10>` (:ref:`SPIEKER CENTER <X_10>`)
 
 .. signature:: center
 
@@ -41,7 +41,7 @@ X_1329
 .. collapse:: Functional Relations
    :badge: 6 relations
 
-   * :ref:`X_1329 <X_1329>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3450
+   * :ref:`X_1329 <X_1329>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3450 <X_3450>`
    * :ref:`X_1329 <X_1329>` = :term:`isotomic conjugate <isotomic-conjugate>` of isogonal conjugate of X_23638
    * :ref:`X_1329 <X_1329>` = complement of :ref:`X_56 <X_56>`
    * :ref:`X_1329 <X_1329>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X_1 <X_1>`

@@ -43,7 +43,7 @@ X_1569
 
    * :ref:`X_1569 <X_1569>` = midpoint of :ref:`X_99 <X_99>` and :ref:`X_194 <X_194>`
    * :ref:`X_1569 <X_1569>` = reflection of X_i in X_j for these (i,j): (:ref:`76 <X_76>`, :ref:`620 <X_620>`), (:ref:`115 <X_115>`, :ref:`39 <X_39>`)
-   * :ref:`X_1569 <X_1569>` = inverse-in-circle-{{X_3102,X_3103,PU(1)}} of :ref:`X_5 <X_5>`
+   * :ref:`X_1569 <X_1569>` = inverse-in-circle-{{:ref:`X_3102 <X_3102>`,\ :ref:`X_3103 <X_3103>`,PU(1)}} of :ref:`X_5 <X_5>`
 
 .. toctree::
    :hidden:

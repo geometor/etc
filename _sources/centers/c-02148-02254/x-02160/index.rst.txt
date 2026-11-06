@@ -41,7 +41,7 @@ X_2160
 .. collapse:: Functional Relations
    :badge: 7 relations
 
-   * :ref:`X_2160 <X_2160>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3219
+   * :ref:`X_2160 <X_2160>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3219 <X_3219>`
    * :ref:`X_2160 <X_2160>` = :term:`cevapoint <cevapoint>` of :ref:`X_1652 <X_1652>` and :ref:`X_1653 <X_1653>`
    * :ref:`X_2160 <X_2160>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`2260 <X_2260>`, :ref:`6 <X_6>`), (:ref:`2308 <X_2308>`, :ref:`1 <X_1>`)
    * :ref:`X_2160 <X_2160>` = :term:`crosspoint <crosspoint>` of :ref:`X_57 <X_57>` ane :ref:`X_267 <X_267>`

@@ -39,7 +39,7 @@ X_1495
    :badge: 12 lines
    :class: line-catalog
 
-   {:ref:`3 <X_3>`, 3426}, {:ref:`6 <X_6>`, :ref:`25 <X_25>`}, {:ref:`23 <X_23>`, :ref:`110 <X_110>`}, {:ref:`24 <X_24>`, :ref:`185 <X_185>`}, {:ref:`30 <X_30>`, :ref:`113 <X_113>`}, {:ref:`52 <X_52>`, :ref:`156 <X_156>`}, {:ref:`74 <X_74>`, :ref:`186 <X_186>`}, {:ref:`125 <X_125>`, :ref:`468 <X_468>`}, {:ref:`182 <X_182>`, :ref:`373 <X_373>`}, {:ref:`187 <X_187>`, :ref:`237 <X_237>`}, {:ref:`263 <X_263>`, :ref:`1383 <X_1383>`}, {:ref:`1204 <X_1204>`, :ref:`1498 <X_1498>`}
+   {:ref:`3 <X_3>`, :ref:`3426 <X_3426>`}, {:ref:`6 <X_6>`, :ref:`25 <X_25>`}, {:ref:`23 <X_23>`, :ref:`110 <X_110>`}, {:ref:`24 <X_24>`, :ref:`185 <X_185>`}, {:ref:`30 <X_30>`, :ref:`113 <X_113>`}, {:ref:`52 <X_52>`, :ref:`156 <X_156>`}, {:ref:`74 <X_74>`, :ref:`186 <X_186>`}, {:ref:`125 <X_125>`, :ref:`468 <X_468>`}, {:ref:`182 <X_182>`, :ref:`373 <X_373>`}, {:ref:`187 <X_187>`, :ref:`237 <X_237>`}, {:ref:`263 <X_263>`, :ref:`1383 <X_1383>`}, {:ref:`1204 <X_1204>`, :ref:`1498 <X_1498>`}
 
 .. collapse:: Functional Relations
    :badge: 19 relations
@@ -57,11 +57,11 @@ X_1495
    * :ref:`X_1495 <X_1495>` = pole of Brocard axis wrt Moses radical circle
    * :ref:`X_1495 <X_1495>` = {:ref:`X_3 <X_3>`,X_5651}-harmonic conjugate of X_5650
    * :ref:`X_1495 <X_1495>` = :term:`trilinear pole <trilinear-pole>` of PU(87)
-   * :ref:`X_1495 <X_1495>` = inverse-in-Parry-isodynamic-circle of X_3569; see :ref:`X_2 <X_2>`
-   * :ref:`X_1495 <X_1495>` = X_3218-of-orthic-triangle if :g:`ABC << A B C >>` is acute
+   * :ref:`X_1495 <X_1495>` = inverse-in-Parry-isodynamic-circle of :ref:`X_3569 <X_3569>`; see :ref:`X_2 <X_2>`
+   * :ref:`X_1495 <X_1495>` = :ref:`X_3218 <X_3218>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X_1495 <X_1495>` = antipode of :ref:`X_125 <X_125>` in Walsmith rectangular hyperbola
-   * :ref:`X_1495 <X_1495>` = orthocenter of :ref:`X_110 <X_110>`\ \ :ref:`X_1495 <X_1495>`\ X_3569
-   * :ref:`X_1495 <X_1495>` = orthocenter of :ref:`X_125 <X_125>`\ X_3569X_3580
+   * :ref:`X_1495 <X_1495>` = orthocenter of :ref:`X_110 <X_110>`\ \ :ref:`X_1495 <X_1495>`\ \ :ref:`X_3569 <X_3569>`
+   * :ref:`X_1495 <X_1495>` = orthocenter of :ref:`X_125 <X_125>`\ \ :ref:`X_3569 <X_3569>`\ \ :ref:`X_3580 <X_3580>`
    * :ref:`X_1495 <X_1495>` = orthic-isogonal conjugate of X_39176
 
 Notes

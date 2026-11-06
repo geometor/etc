@@ -56,7 +56,7 @@ X_470
    * :ref:`X_470 <X_470>` = polar-circle-inverse of X_32461
    * :ref:`X_470 <X_470>` = :ref:`X_15 <X_15>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_298 <X_298>`
    * :ref:`X_470 <X_470>` = :ref:`X_4 <X_4>`-:term:`Hirst inverse <hirst-inverse>` of :ref:`X_471 <X_471>`
-   * :ref:`X_470 <X_470>` = :ref:`X_63 <X_63>`-:term:`isoconjugate <isoconjugate>` of X_3457
+   * :ref:`X_470 <X_470>` = :ref:`X_63 <X_63>`-:term:`isoconjugate <isoconjugate>` of :ref:`X_3457 <X_3457>`
    * :ref:`X_470 <X_470>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_13 <X_13>` (line :ref:`X_395 <X_395>`\ \ :ref:`X_523 <X_523>`)
    * :ref:`X_470 <X_470>` = polar conjugate of :ref:`X_13 <X_13>`
    * :ref:`X_470 <X_470>` = {:ref:`X_2 <X_2>`,\ :ref:`X_4 <X_4>`}-harmonic conjugate of :ref:`X_471 <X_471>`

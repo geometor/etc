@@ -45,7 +45,7 @@ X_2591
    * :ref:`X_2591 <X_2591>` = crosspoint of :ref:`X_57 <X_57>` and :ref:`X_1382 <X_1382>`
    * :ref:`X_2591 <X_2591>` = :term:`crosssum <crosssum>` of :ref:`X_1 <X_1>` and :ref:`X_2591 <X_2591>`
    * :ref:`X_2591 <X_2591>` = :ref:`X_2170 <X_2170>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_2590 <X_2590>`
-   * :ref:`X_2591 <X_2591>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_1 <X_1>`\ X_3307
+   * :ref:`X_2591 <X_2591>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_1 <X_1>`\ \ :ref:`X_3307 <X_3307>`
 
 .. toctree::
    :hidden:

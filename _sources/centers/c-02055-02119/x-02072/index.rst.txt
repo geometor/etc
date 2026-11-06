@@ -47,7 +47,7 @@ X_2072
    * :ref:`X_2072 <X_2072>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_38534
    * :ref:`X_2072 <X_2072>` = complement of :ref:`X_186 <X_186>`
    * :ref:`X_2072 <X_2072>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X_1511 <X_1511>`
-   * :ref:`X_2072 <X_2072>` = :term:`crosssum <crosssum>` of X_i and X_j for these {i,j}: {:ref:`6 <X_6>`, 34397}, {:ref:`184 <X_184>`, 3003}
+   * :ref:`X_2072 <X_2072>` = :term:`crosssum <crosssum>` of X_i and X_j for these {i,j}: {:ref:`6 <X_6>`, 34397}, {:ref:`184 <X_184>`, :ref:`3003 <X_3003>`}
    * :ref:`X_2072 <X_2072>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these {i,j}: {:ref:`2 <X_2>`, :ref:`328 <X_328>`}, {:ref:`264 <X_264>`, :ref:`2986 <X_2986>`}
    * :ref:`X_2072 <X_2072>` = circumcircle-inverse of :ref:`X_26 <X_26>`
    * :ref:`X_2072 <X_2072>` = nine-point-circle-inverse of :ref:`X_3 <X_3>`

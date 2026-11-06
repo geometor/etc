@@ -23,8 +23,8 @@ X_67
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Central Lines:** :g:`{6, 125} <{ 6, 125 }>`, :g:`{110, 141} <{ 110, 141 }>`
-   * **Related Centers:** :g:`X_23 <X_23>` (:ref:`FAR-OUT POINT <X_23>`), :g:`X_6 <X_6>` (:ref:`SYMMEDIAN POINT <X_6>`), :g:`X_125 <X_125>` (:ref:`CENTER OF JERABEK HYPERBOLA <X_125>`), :g:`X_110 <X_110>` (:ref:`FOCUS OF KIEPERT PARABOLA <X_110>`), :g:`X_141 <X_141>` (:ref:`COMPLEMENT OF SYMMEDIAN POINT <X_141>`)
+   * **Central Lines:** :g:`{69, 3448} <{ 69, 3448 }>`
+   * **Related Centers:** :g:`X_69 <X_69>` (:ref:`SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE <X_69>`), :g:`X_3448 <X_3448>` (:ref:`ISOGONAL CONJUGATE OF X(3447) <X_3448>`)
 
 .. signature:: center
 
@@ -41,11 +41,11 @@ X_67
 .. collapse:: Functional Relations
    :badge: 15 relations
 
-   * :ref:`X_67 <X_67>` = midpoint of :ref:`X_69 <X_69>` and X_3448
+   * :ref:`X_67 <X_67>` = midpoint of :ref:`X_69 <X_69>` and :ref:`X_3448 <X_3448>`
    * :ref:`X_67 <X_67>` = reflection of X_i in X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`125 <X_125>`), (:ref:`110 <X_110>`, :ref:`141 <X_141>`)
    * :ref:`X_67 <X_67>` = isogonal conjugate of :ref:`X_23 <X_23>`
    * :ref:`X_67 <X_67>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_316 <X_316>`
-   * :ref:`X_67 <X_67>` = circumcircle-inverse of X_3455
+   * :ref:`X_67 <X_67>` = circumcircle-inverse of :ref:`X_3455 <X_3455>`
    * :ref:`X_67 <X_67>` = :term:`cevapoint <cevapoint>` of :ref:`X_141 <X_141>` and :ref:`X_524 <X_524>`
    * :ref:`X_67 <X_67>` = :ref:`X_187 <X_187>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_2 <X_2>`
    * :ref:`X_67 <X_67>` = :term:`antigonal image <antigonal-image>` of :ref:`X_6 <X_6>`

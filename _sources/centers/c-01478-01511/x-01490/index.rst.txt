@@ -39,12 +39,12 @@ X_1490
    :badge: 17 lines
    :class: line-catalog
 
-   {:ref:`1 <X_1>`, :ref:`4 <X_4>`}, {:ref:`3 <X_3>`, :ref:`9 <X_9>`}, {:ref:`20 <X_20>`, :ref:`78 <X_78>`}, {:ref:`40 <X_40>`, :ref:`64 <X_64>`}, {:ref:`63 <X_63>`, :ref:`411 <X_411>`}, {:ref:`165 <X_165>`, :ref:`191 <X_191>`}, {:ref:`224 <X_224>`, :ref:`908 <X_908>`}, {:ref:`386 <X_386>`, :ref:`990 <X_990>`}, {:ref:`910 <X_910>`, :ref:`1192 <X_1192>`}, {:ref:`975 <X_975>`, :ref:`991 <X_991>`}, {:ref:`1045 <X_1045>`, :ref:`1047 <X_1047>`}, {:ref:`1210 <X_1210>`, :ref:`1467 <X_1467>`}, {:ref:`1498 <X_1498>`, 3347}, {:ref:`2130 <X_2130>`, 3473}, {:ref:`2131 <X_2131>`, 3353}, {3182, 3348}, {3183, 3354}
+   {:ref:`1 <X_1>`, :ref:`4 <X_4>`}, {:ref:`3 <X_3>`, :ref:`9 <X_9>`}, {:ref:`20 <X_20>`, :ref:`78 <X_78>`}, {:ref:`40 <X_40>`, :ref:`64 <X_64>`}, {:ref:`63 <X_63>`, :ref:`411 <X_411>`}, {:ref:`165 <X_165>`, :ref:`191 <X_191>`}, {:ref:`224 <X_224>`, :ref:`908 <X_908>`}, {:ref:`386 <X_386>`, :ref:`990 <X_990>`}, {:ref:`910 <X_910>`, :ref:`1192 <X_1192>`}, {:ref:`975 <X_975>`, :ref:`991 <X_991>`}, {:ref:`1045 <X_1045>`, :ref:`1047 <X_1047>`}, {:ref:`1210 <X_1210>`, :ref:`1467 <X_1467>`}, {:ref:`1498 <X_1498>`, :ref:`3347 <X_3347>`}, {:ref:`2130 <X_2130>`, :ref:`3473 <X_3473>`}, {:ref:`2131 <X_2131>`, :ref:`3353 <X_3353>`}, {:ref:`3182 <X_3182>`, :ref:`3348 <X_3348>`}, {:ref:`3183 <X_3183>`, :ref:`3354 <X_3354>`}
 
 .. collapse:: Functional Relations
    :badge: 15 relations
 
-   * :ref:`X_1490 <X_1490>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_3345
+   * :ref:`X_1490 <X_1490>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3345 <X_3345>`
    * :ref:`X_1490 <X_1490>` = reflection of :ref:`X_84 <X_84>` in :ref:`X_3 <X_3>`
    * :ref:`X_1490 <X_1490>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`20 <X_20>`, :ref:`40 <X_40>`), (:ref:`78 <X_78>`, :ref:`1 <X_1>`), (:ref:`329 <X_329>`, :ref:`9 <X_9>`)
    * :ref:`X_1490 <X_1490>` = :ref:`X_207 <X_207>`-:term:`cross conjugate <cross-conjugate>` of :ref:`X_1 <X_1>`

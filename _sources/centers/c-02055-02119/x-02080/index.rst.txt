@@ -46,7 +46,7 @@ X_2080
    * :ref:`X_2080 <X_2080>` = inverse-in-circumcircle of :ref:`X_182 <X_182>`
    * :ref:`X_2080 <X_2080>` = reflection of :ref:`X_3 <X_3>` in the Lemoine axis
    * :ref:`X_2080 <X_2080>` = pole of line :ref:`X_23 <X_23>`\ \ :ref:`X_352 <X_352>` wrt Parry circle
-   * :ref:`X_2080 <X_2080>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_523 <X_523>`\ X_3815
+   * :ref:`X_2080 <X_2080>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_523 <X_523>`\ \ :ref:`X_3815 <X_3815>`
    * :ref:`X_2080 <X_2080>` = {:ref:`X_1687 <X_1687>`,\ :ref:`X_1688 <X_1688>`}-harmonic conjugate of :ref:`X_187 <X_187>`
    * :ref:`X_2080 <X_2080>` = harmonic center of circumcircle and Ehrmann circle
    * :ref:`X_2080 <X_2080>` = pole of Lemoine axis wrt circle {{:ref:`X_1687 <X_1687>`,\ :ref:`X_1688 <X_1688>`,PU(1),PU(2)}}

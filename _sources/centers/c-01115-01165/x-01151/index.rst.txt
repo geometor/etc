@@ -65,7 +65,7 @@ X_1151
    * :ref:`X_1151 <X_1151>` = inner Soddy center (:ref:`X_176 <X_176>`) of :term:`tangential triangle <tangential-triangle>`, if :g:`ABC << A B C >>` is acute
    * :ref:`X_1151 <X_1151>` = :ref:`X_3 <X_3>`-of-Lucas-tangents-triangle
    * :ref:`X_1151 <X_1151>` = :ref:`X_20 <X_20>`-of-:ref:`X_2 <X_2>`-quadsquares-triangle
-   * :ref:`X_1151 <X_1151>` = {X_i,X_j}-harmonic conjugate of X_k for these (i,j,k): (:ref:`3 <X_3>`, :ref:`371 <X_371>`, :ref:`6 <X_6>`), (:ref:`3 <X_3>`, 3311, :ref:`372 <X_372>`), (:ref:`371 <X_371>`, :ref:`372 <X_372>`, 3311), (:ref:`372 <X_372>`, 3311, :ref:`6 <X_6>`)
+   * :ref:`X_1151 <X_1151>` = {X_i,X_j}-harmonic conjugate of X_k for these (i,j,k): (:ref:`3 <X_3>`, :ref:`371 <X_371>`, :ref:`6 <X_6>`), (:ref:`3 <X_3>`, :ref:`3311 <X_3311>`, :ref:`372 <X_372>`), (:ref:`371 <X_371>`, :ref:`372 <X_372>`, :ref:`3311 <X_3311>`), (:ref:`372 <X_372>`, :ref:`3311 <X_3311>`, :ref:`6 <X_6>`)
 
 Notes
 -----

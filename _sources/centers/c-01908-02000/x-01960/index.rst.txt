@@ -40,7 +40,7 @@ X_1960
 .. collapse:: Functional Relations
    :badge: 12 relations
 
-   * :ref:`X_1960 <X_1960>` = midpoint of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`659 <X_659>`), (:ref:`663 <X_663>`, :ref:`667 <X_667>`), (:ref:`1635 <X_1635>`, 3251)
+   * :ref:`X_1960 <X_1960>` = midpoint of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`659 <X_659>`), (:ref:`663 <X_663>`, :ref:`667 <X_667>`), (:ref:`1635 <X_1635>`, :ref:`3251 <X_3251>`)
    * :ref:`X_1960 <X_1960>` = :term:`isogonal conjugate <isogonal-conjugate>` of X_4555
    * :ref:`X_1960 <X_1960>` = :term:`complement <complement>` of :term:`anticomplementary conjugate <anticomplementary-conjugate>` of X_39349
    * :ref:`X_1960 <X_1960>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`101 <X_101>`, :ref:`1017 <X_1017>`), (:ref:`106 <X_106>`, :ref:`1015 <X_1015>`), (:ref:`901 <X_901>`, :ref:`6 <X_6>`), (:ref:`1319 <X_1319>`, :ref:`2087 <X_2087>`)

@@ -30,7 +30,7 @@ X_2590
 
    | **Trilinears:** :math:`a/f(a,b,c) : b/f(b,c,a) : c/f(c,a,b)`, where f(a,b,c) is as at :ref:`X_1381 <X_1381>`
    | **Barycentrics:** :math:`a^{2}/f(a,b,c) : b^{2}/f(b,c,a) : c^{2}/f(c,a,b)`
-   | **Search Value (6, 9, 13):** :math:`-14.371295687743`
+   | **Search Value (6, 9, 13):** :math:`-14.371295687744`
 
 .. collapse:: Incident Central Lines
    :badge: 4 lines
@@ -45,7 +45,7 @@ X_2590
    * :ref:`X_2590 <X_2590>` = :ref:`X_2170 <X_2170>`-cross conjugate of :ref:`X_2591 <X_2591>`
    * :ref:`X_2590 <X_2590>` = :term:`crosspoint <crosspoint>` of :ref:`X_57 <X_57>` and :ref:`X_1381 <X_1381>`
    * :ref:`X_2590 <X_2590>` = :term:`crosssum <crosssum>` of :ref:`X_1 <X_1>` and :ref:`X_2590 <X_2590>`
-   * :ref:`X_2590 <X_2590>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_1 <X_1>`\ X_3308
+   * :ref:`X_2590 <X_2590>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_1 <X_1>`\ \ :ref:`X_3308 <X_3308>`
 
 .. toctree::
    :hidden:
