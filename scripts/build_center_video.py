@@ -43,8 +43,8 @@ from geometor.etc.video import (
     generate_relations_svg,
 )
 
-SPEAK_PY = Path("/home/phi/.gemini/config/skills/dialogue/scripts/speak.py")
-SHORTS_PY = Path("/home/phi/.gemini/config/skills/shorts/scripts/shorts.py")
+SPEAK_PY = Path("/home/phi/.gemini/config/skills/studio/scripts/speak.py")
+SHORTS_PY = Path("/home/phi/.gemini/config/skills/studio/scripts/shorts.py")
 
 
 def _format_html_subscripts_outside_svg(html_doc: str) -> str:
