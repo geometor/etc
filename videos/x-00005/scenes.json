@@ -1,0 +1,264 @@
+[
+  {
+    "id": "act_1_proposition",
+    "title": "X_5 NINE-POINT CENTER — Act 1",
+    "subslides": [
+      {
+        "prop_id": "ETC • X_5",
+        "short_code": "X_5",
+        "g_id": "NINE-POINT CENTER",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The center of the nine-point circle passing through the three side midpoints, three altitude feet, and three Euler midpoints.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.0,
+        "step_num": 1,
+        "step_kind": "CONSTRUCT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/x-00005/svgs/01_primary.svg",
+        "symbolic": "X_5 = Nine-Point Center • Midpoint of X_3 and X_4",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Primary Construction</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Target Center</span><span class=\"tok-gold\">X_5 (Nine-Point)</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Nine-Point Circle</span><span class=\"muted-tok\">Radius R / 2</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Midpoints &amp; Feet</span><span class=\"muted-tok\">M_a..c, H_a..c</span></div></div></div>",
+        "just_tag": "∵ CONCURRENCE",
+        "just_id": "EULER–FEUERBACH NINE-POINT CIRCLE",
+        "just_title": "Circumcenter of both the medial triangle △M_a M_b M_c and the orthic triangle △H_a H_b H_c; radius R / 2.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_5:gold",
+          "nine_point_circle:teal"
+        ],
+        "coincide_ids": [],
+        "equal_ids": [],
+        "zoom": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "prop_id": "ETC • X_5",
+        "short_code": "X_5",
+        "g_id": "NINE-POINT CENTER",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The center of the nine-point circle passing through the three side midpoints, three altitude feet, and three Euler midpoints.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.0,
+        "step_num": 2,
+        "step_kind": "GOAL",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/x-00005/svgs/01_primary.svg",
+        "symbolic": "X_5 = Nine-Point Center • Midpoint of X_3 and X_4",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Primary Construction</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Target Center</span><span class=\"tok-gold\">X_5 (Nine-Point)</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Nine-Point Circle</span><span class=\"tok-teal\">Radius R / 2</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Midpoints &amp; Feet</span><span class=\"tok-blue\">M_a..c, H_a..c</span></div></div></div>",
+        "just_tag": "∵ DEFINITION",
+        "just_id": "EULER–FEUERBACH NINE-POINT CIRCLE",
+        "just_title": "Circumcenter of both the medial triangle △M_a M_b M_c and the orthic triangle △H_a H_b H_c; radius R / 2.",
+        "is_punchline": true,
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_5:gold",
+          "nine_point_circle:teal",
+          "M_a:blue",
+          "M_b:blue",
+          "M_c:blue",
+          "H_a:blue",
+          "H_b:blue",
+          "H_c:blue",
+          "X_3:blue",
+          "X_4:blue"
+        ],
+        "coincide_ids": [],
+        "equal_ids": [],
+        "zoom": [
+          "X_5",
+          "nine_point_circle",
+          "X_5",
+          "M_a",
+          "M_b",
+          "M_c",
+          "H_a",
+          "H_b",
+          "H_c",
+          "X_3",
+          "X_4"
+        ],
+        "thumb_zoom": [
+          "A",
+          "B",
+          "C"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "act_2_construction",
+    "title": "X_5 NINE-POINT CENTER — Act 2",
+    "subslides": [
+      {
+        "prop_id": "ETC • X_5",
+        "short_code": "X_5",
+        "g_id": "NINE-POINT CENTER",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The center of the nine-point circle passing through the three side midpoints, three altitude feet, and three Euler midpoints.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.15,
+        "step_num": 3,
+        "step_kind": "ASSERT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/x-00005/svgs/02_coordinates.svg",
+        "symbolic": "Trilinears cos(B-C) : cos(C-A) : cos(A-B)",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-section\"><div class=\"etc-sec-head\">Trilinear Distances</div><div class=\"etc-coord-grid\"><span class=\"tok-gold\">α = cos(B − C)</span><span class=\"tok-blue\">β = cos(C − A)</span><span class=\"tok-green\">γ = cos(A − B)</span></div></div><div class=\"etc-section\"><div class=\"etc-sec-head\">Barycentric Sub-Areas</div><div class=\"etc-coord-grid stack\"><span class=\"tok-gold\">u = a cos(B − C)</span><span class=\"tok-blue\">v = b cos(C − A)</span><span class=\"tok-green\">w = c cos(A − B)</span></div></div></div>",
+        "just_tag": "∵ COORDINATES",
+        "just_id": "SHINAGAWA COEFFICIENTS (1, 1)",
+        "just_title": "On the Euler line, X_5 divides X_2–X_4 in ratio 1 : 3 and bisects segment X_3–X_4."
+      },
+      {
+        "prop_id": "ETC • X_5",
+        "short_code": "X_5",
+        "g_id": "NINE-POINT CENTER",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The center of the nine-point circle passing through the three side midpoints, three altitude feet, and three Euler midpoints.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.5,
+        "step_num": 4,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/x-00005/svgs/03_central_lines.svg",
+        "symbolic": "Euler Line {2, 3, 4, 5} • Feuerbach Line {1, 5, 11, 12}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Incident Central Lines</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Euler Line</span><span class=\"tok-gold\">{2, 3, 4, 5}</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Feuerbach Line</span><span class=\"muted-tok\">{1, 5, 11, 12}</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Fermat–Napoleon Axis</span><span class=\"muted-tok\">{5, 13, 18}</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Isogonic–Napoleon Axis</span><span class=\"muted-tok\">{5, 14, 17}</span></div></div></div>",
+        "just_tag": "∵ PRIMARY AXIS",
+        "just_id": "EULER & FEUERBACH NEXUS",
+        "just_title": "Distance d(X_1, X_5) = R/2 - r (Feuerbach's theorem: nine-point circle touches the incircle internally).",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_5:gold",
+          "{2, 3, 4, 5}:gold"
+        ],
+        "coincide_ids": [],
+        "equal_ids": [],
+        "zoom": [
+          "X_5",
+          "X_2",
+          "X_3",
+          "X_4"
+        ]
+      },
+      {
+        "prop_id": "ETC • X_5",
+        "short_code": "X_5",
+        "g_id": "NINE-POINT CENTER",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The center of the nine-point circle passing through the three side midpoints, three altitude feet, and three Euler midpoints.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.55,
+        "step_num": 5,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/x-00005/svgs/03_central_lines.svg",
+        "symbolic": "Euler Line {2, 3, 4, 5} • Feuerbach Line {1, 5, 11, 12}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Incident Central Lines</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Euler Line</span><span class=\"tok-gold\">{2, 3, 4, 5}</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Feuerbach Line</span><span class=\"tok-teal\">{1, 5, 11, 12}</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Fermat–Napoleon Axis</span><span class=\"tok-orange\">{5, 13, 18}</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Isogonic–Napoleon Axis</span><span class=\"tok-purple\">{5, 14, 17}</span></div></div></div>",
+        "just_tag": "∵ COLLINEARITIES",
+        "just_id": "EULER & FEUERBACH NEXUS",
+        "just_title": "Distance d(X_1, X_5) = R/2 - r (Feuerbach's theorem: nine-point circle touches the incircle internally).",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_5:gold",
+          "{2, 3, 4, 5}:gold",
+          "{1, 5, 11, 12}:teal",
+          "{5, 13, 18}:orange",
+          "{5, 14, 17}:purple"
+        ],
+        "coincide_ids": [],
+        "equal_ids": [],
+        "zoom": [
+          "X_5",
+          "X_2",
+          "X_3",
+          "X_4",
+          "X_1",
+          "X_11",
+          "X_12",
+          "X_13",
+          "X_18",
+          "X_14",
+          "X_17"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "act_3_insight",
+    "title": "X_5 NINE-POINT CENTER — Act 3",
+    "subslides": [
+      {
+        "prop_id": "ETC • X_5",
+        "short_code": "X_5",
+        "g_id": "NINE-POINT CENTER",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The center of the nine-point circle passing through the three side midpoints, three altitude feet, and three Euler midpoints.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.05,
+        "step_num": 6,
+        "step_kind": "PROVE",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/x-00005/svgs/04_relations.svg",
+        "symbolic": "Complement of X_3 • Isogonal Conjugate X_54 (Kosnita)",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Functional Relations</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Anticomplement</span><span class=\"tok-blue\">X_3</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Euler Segment Midpoint</span><span class=\"tok-green\">X_3, X_4</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Isogonal Conjugate</span><span class=\"tok-orange\">X_54</span></div></div></div>",
+        "just_tag": "∵ RELATIONS",
+        "just_id": "COMPLEMENT & KOSNITA DUALITY",
+        "just_title": "Isotomic conjugate: X_95 • Orthocentroidal-circle inverse of X_3.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_5:gold",
+          "X_3:blue",
+          "X_4:green",
+          "X_54:orange"
+        ],
+        "coincide_ids": [],
+        "equal_ids": [],
+        "zoom": [
+          "X_5",
+          "X_3",
+          "X_4",
+          "X_54"
+        ]
+      },
+      {
+        "prop_id": "ETC • X_5",
+        "short_code": "X_5",
+        "g_id": "NINE-POINT CENTER",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The center of the nine-point circle passing through the three side midpoints, three altitude feet, and three Euler midpoints.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.95,
+        "step_num": 7,
+        "step_kind": "∴",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/x-00005/svgs/05_four_triangles.svg",
+        "symbolic": "Kimberling (6, 9, 13) Search = 0.552871741635",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head-row\"><span class=\"etc-sec-head\">Reference Triangles</span><div class=\"etc-head-cols\"><span>a</span><span>b</span><span>c</span></div></div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Acute Triangle</span><div class=\"etc-row-cells\"><span class=\"tok-gold\">5</span><span class=\"tok-gold\">6</span><span class=\"tok-gold\">7</span></div></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Right Triangle</span><div class=\"etc-row-cells\"><span class=\"tok-blue\">3</span><span class=\"tok-blue\">4</span><span class=\"tok-blue\">5</span></div></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Kepler Triangle</span><div class=\"etc-row-cells\"><span class=\"tok-green\">1</span><span class=\"tok-green\">√φ</span><span class=\"tok-green\">φ</span></div></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Kimberling Triangle</span><div class=\"etc-row-cells\"><span class=\"tok-purple\">6</span><span class=\"tok-purple\">9</span><span class=\"tok-purple\">13</span></div></div></div></div>",
+        "just_tag": "∵ INVARIANCE",
+        "just_id": "KIMBERLING SEARCH VALUE • X_5",
+        "just_title": "Shortest directed trilinear distance on reference triangle (6, 9, 13): 0.552871741635."
+      }
+    ]
+  }
+]

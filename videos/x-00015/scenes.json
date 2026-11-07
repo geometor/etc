@@ -1,0 +1,249 @@
+[
+  {
+    "id": "act_1_proposition",
+    "title": "X_15 1st ISODYNAMIC POINT — Act 1",
+    "subslides": [
+      {
+        "prop_id": "ETC • X_15",
+        "short_code": "X_15",
+        "g_id": "1st ISODYNAMIC POINT",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The internal common intersection of the three Apollonian circles of triangle ABC, whose pedal triangle is equilateral.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.0,
+        "step_num": 1,
+        "step_kind": "CONSTRUCT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/x-00015/svgs/01_primary.svg",
+        "symbolic": "X_15 = 1st Isodynamic Point • Intersection of Apollonian Circles",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Primary Construction</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Target Center</span><span class=\"tok-gold\">X_15 (1St Isodynamic Point)</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Circle</span><span class=\"muted-tok\">Circumcircle</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Circle</span><span class=\"muted-tok\">A-Apollonian Circle</span></div></div></div>",
+        "just_tag": "∵ CONCURRENCE",
+        "just_id": "EQUILATERAL PEDAL TRIANGLE",
+        "just_title": "Distances from X_15 to vertices A, B, C are inversely proportional to opposite sides: a·X_15A = b·X_15B = c·X_15C.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_15:gold",
+          "circumcircle:blue"
+        ],
+        "coincide_ids": [],
+        "equal_ids": [],
+        "zoom": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "prop_id": "ETC • X_15",
+        "short_code": "X_15",
+        "g_id": "1st ISODYNAMIC POINT",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The internal common intersection of the three Apollonian circles of triangle ABC, whose pedal triangle is equilateral.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.0,
+        "step_num": 2,
+        "step_kind": "GOAL",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/x-00015/svgs/01_primary.svg",
+        "symbolic": "X_15 = 1st Isodynamic Point • Intersection of Apollonian Circles",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Primary Construction</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Target Center</span><span class=\"tok-gold\">X_15 (1St Isodynamic Point)</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Circle</span><span class=\"tok-blue\">Circumcircle</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Circle</span><span class=\"tok-pink\">A-Apollonian Circle</span></div></div></div>",
+        "just_tag": "∵ DEFINITION",
+        "just_id": "EQUILATERAL PEDAL TRIANGLE",
+        "just_title": "Distances from X_15 to vertices A, B, C are inversely proportional to opposite sides: a·X_15A = b·X_15B = c·X_15C.",
+        "is_punchline": true,
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_15:gold",
+          "circumcircle:blue",
+          "A-Apollonian circle:pink",
+          "B-Apollonian circle:pink",
+          "C-Apollonian circle:pink"
+        ],
+        "coincide_ids": [],
+        "equal_ids": [],
+        "zoom": [
+          "X_15",
+          "circumcircle",
+          "A-Apollonian circle",
+          "B-Apollonian circle",
+          "C-Apollonian circle",
+          "X_15"
+        ],
+        "thumb_zoom": [
+          "A",
+          "B",
+          "C"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "act_2_construction",
+    "title": "X_15 1st ISODYNAMIC POINT — Act 2",
+    "subslides": [
+      {
+        "prop_id": "ETC • X_15",
+        "short_code": "X_15",
+        "g_id": "1st ISODYNAMIC POINT",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The internal common intersection of the three Apollonian circles of triangle ABC, whose pedal triangle is equilateral.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.15,
+        "step_num": 3,
+        "step_kind": "ASSERT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/x-00015/svgs/02_coordinates.svg",
+        "symbolic": "Trilinears sin(A + π/3) : : • Barycentrics a sin(A + π/3) : :",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-section\"><div class=\"etc-sec-head\">Trilinear Distances</div><div class=\"etc-coord-grid stack\"><span class=\"tok-gold\">α = sin(A + π/3)</span><span class=\"tok-blue\">β = sin(B + π/3)</span><span class=\"tok-green\">γ = sin(C + π/3)</span></div></div><div class=\"etc-section\"><div class=\"etc-sec-head\">Barycentric Sub-Areas</div><div class=\"etc-coord-grid stack\"><span class=\"tok-gold\">u = a sin(A + π/3)</span><span class=\"tok-blue\">v = b sin(B + π/3)</span><span class=\"tok-green\">w = c sin(C + π/3)</span></div></div></div>",
+        "just_tag": "∵ COORDINATES",
+        "just_id": "RECIPROCAL FERMAT TRILINEARS",
+        "just_title": "Conway barycentrics: a²(S_A + √3·Area) : b²(S_B + √3·Area) : c²(S_C + √3·Area)."
+      },
+      {
+        "prop_id": "ETC • X_15",
+        "short_code": "X_15",
+        "g_id": "1st ISODYNAMIC POINT",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The internal common intersection of the three Apollonian circles of triangle ABC, whose pedal triangle is equilateral.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.5,
+        "step_num": 4,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/x-00015/svgs/03_central_lines.svg",
+        "symbolic": "Brocard Axis {3, 6, 15, 16} • Line {2, 14, 15} • Line {4, 15, 17}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Incident Central Lines</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Brocard Axis</span><span class=\"tok-purple\">{3, 6, 15, 16}</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Centroid–2nd Isogonic</span><span class=\"muted-tok\">{2, 14, 15}</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Orthocenter–1st Napoleon</span><span class=\"muted-tok\">{4, 15, 17}</span></div></div></div>",
+        "just_tag": "∵ PRIMARY AXIS",
+        "just_id": "BROCARD AXIS & APOLLONIAN CHORD",
+        "just_title": "The Brocard axis {3, 6} is the common radical axis (line of centers' perpendicular) of the Apollonian circles.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_15:gold",
+          "{3, 6, 15, 16}:purple"
+        ],
+        "coincide_ids": [],
+        "equal_ids": [],
+        "zoom": [
+          "X_15",
+          "X_3",
+          "X_6",
+          "X_16"
+        ]
+      },
+      {
+        "prop_id": "ETC • X_15",
+        "short_code": "X_15",
+        "g_id": "1st ISODYNAMIC POINT",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The internal common intersection of the three Apollonian circles of triangle ABC, whose pedal triangle is equilateral.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.55,
+        "step_num": 5,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/x-00015/svgs/03_central_lines.svg",
+        "symbolic": "Brocard Axis {3, 6, 15, 16} • Line {2, 14, 15} • Line {4, 15, 17}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Incident Central Lines</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Brocard Axis</span><span class=\"tok-purple\">{3, 6, 15, 16}</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Centroid–2nd Isogonic</span><span class=\"tok-teal\">{2, 14, 15}</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Orthocenter–1st Napoleon</span><span class=\"tok-teal\">{4, 15, 17}</span></div></div></div>",
+        "just_tag": "∵ COLLINEARITIES",
+        "just_id": "BROCARD AXIS & APOLLONIAN CHORD",
+        "just_title": "The Brocard axis {3, 6} is the common radical axis (line of centers' perpendicular) of the Apollonian circles.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_15:gold",
+          "{3, 6, 15, 16}:purple",
+          "{2, 14, 15}:teal",
+          "{4, 15, 17}:teal"
+        ],
+        "coincide_ids": [],
+        "equal_ids": [],
+        "zoom": [
+          "X_15",
+          "X_3",
+          "X_6",
+          "X_2",
+          "X_14",
+          "X_4",
+          "X_17"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "act_3_insight",
+    "title": "X_15 1st ISODYNAMIC POINT — Act 3",
+    "subslides": [
+      {
+        "prop_id": "ETC • X_15",
+        "short_code": "X_15",
+        "g_id": "1st ISODYNAMIC POINT",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The internal common intersection of the three Apollonian circles of triangle ABC, whose pedal triangle is equilateral.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.05,
+        "step_num": 6,
+        "step_kind": "PROVE",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/x-00015/svgs/04_relations.svg",
+        "symbolic": "Isogonal Conjugate X_13 (Fermat) • Circumcircle Inverse X_16",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Functional Relations</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Isogonal Conjugate</span><span class=\"tok-blue\">X_13</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Circumcircle Inverse</span><span class=\"tok-green\">X_16</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Brocard Axis Anchor</span><span class=\"tok-orange\">X_3, X_6</span></div></div></div>",
+        "just_tag": "∵ RELATIONS",
+        "just_id": "CIRCUMCIRCLE INVERSION PAIR",
+        "just_title": "X_3, X_15, X_6, X_16 form a harmonic range on the Brocard axis; isotomic conjugate: X_300.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_15:gold",
+          "X_13:blue",
+          "X_16:green",
+          "X_3:orange"
+        ],
+        "coincide_ids": [],
+        "equal_ids": [],
+        "zoom": [
+          "X_15",
+          "X_13",
+          "X_16",
+          "X_3"
+        ]
+      },
+      {
+        "prop_id": "ETC • X_15",
+        "short_code": "X_15",
+        "g_id": "1st ISODYNAMIC POINT",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The internal common intersection of the three Apollonian circles of triangle ABC, whose pedal triangle is equilateral.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.95,
+        "step_num": 7,
+        "step_kind": "∴",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/x-00015/svgs/05_four_triangles.svg",
+        "symbolic": "Kimberling (6, 9, 13) Search = 3.102444020655",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head-row\"><span class=\"etc-sec-head\">Reference Triangles</span><div class=\"etc-head-cols\"><span>a</span><span>b</span><span>c</span></div></div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Acute Triangle</span><div class=\"etc-row-cells\"><span class=\"tok-gold\">5</span><span class=\"tok-gold\">6</span><span class=\"tok-gold\">7</span></div></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Right Triangle</span><div class=\"etc-row-cells\"><span class=\"tok-blue\">3</span><span class=\"tok-blue\">4</span><span class=\"tok-blue\">5</span></div></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Kepler Triangle</span><div class=\"etc-row-cells\"><span class=\"tok-green\">1</span><span class=\"tok-green\">√φ</span><span class=\"tok-green\">φ</span></div></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Kimberling Triangle</span><div class=\"etc-row-cells\"><span class=\"tok-purple\">6</span><span class=\"tok-purple\">9</span><span class=\"tok-purple\">13</span></div></div></div></div>",
+        "just_tag": "∵ INVARIANCE",
+        "just_id": "KIMBERLING SEARCH VALUE • X_15",
+        "just_title": "Shortest directed trilinear distance on reference triangle (6, 9, 13): 3.102444020655."
+      }
+    ]
+  }
+]

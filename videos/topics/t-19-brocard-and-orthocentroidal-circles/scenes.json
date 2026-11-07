@@ -1,0 +1,225 @@
+[
+  {
+    "id": "act_1_definition",
+    "title": "T_19 BROCARD & ORTHOCENTROIDAL CIRCLES — Geometric Definition",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_19",
+        "short_code": "T_19",
+        "g_id": "BROCARD & ORTHOCENTROIDAL CIRCLES",
+        "folio": "Kimberling ETC • Named Circles",
+        "enunciation": "Two fundamental diameter circles of triangle geometry: the Brocard Circle on diameter X_3 X_6 and the Orthocentroidal Circle on diameter X_2 X_4.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.0,
+        "step_num": 1,
+        "step_kind": "CONSTRUCT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-19-brocard-and-orthocentroidal-circles/svgs/01_primary.svg",
+        "symbolic": "Brocard Circle (Diameter X_3 X_6) • Orthocentroidal Circle (Diameter X_2 X_4)",
+        "clause_html": "<span class=\"clause-line\"><b>Diameter Circles:</b> The <span style=\"color:#94a3b8;font-family:'JetBrains Mono',monospace;font-weight:600;\">Brocard circle</span> on diameter <span class=\"g-tok\">X_3 X_6</span> and the <span style=\"color:#94a3b8;font-family:'JetBrains Mono',monospace;font-weight:600;\">orthocentroidal circle</span> on diameter <span class=\"g-tok\">X_2 X_4</span>.</span>",
+        "just_tag": "∵ DEFINITION",
+        "just_id": "BROCARD (1881) & GUINAND (1984)",
+        "just_title": "Every pedal of X_6 onto the perpendicular bisectors lies on the Brocard circle.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_6",
+          "X_2",
+          "X_3",
+          "X_4"
+        ],
+        "coincide_ids": [],
+        "equal_ids": []
+      },
+      {
+        "prop_id": "ETC • T_19",
+        "short_code": "T_19",
+        "g_id": "BROCARD & ORTHOCENTROIDAL CIRCLES",
+        "folio": "Kimberling ETC • Named Circles",
+        "enunciation": "Two fundamental diameter circles of triangle geometry: the Brocard Circle on diameter X_3 X_6 and the Orthocentroidal Circle on diameter X_2 X_4.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "is_punchline": true,
+        "weight": 1.0,
+        "step_num": 2,
+        "step_kind": "GOAL",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-19-brocard-and-orthocentroidal-circles/svgs/01_primary.svg",
+        "symbolic": "Brocard Circle (Diameter X_3 X_6) • Orthocentroidal Circle (Diameter X_2 X_4)",
+        "clause_html": "<span class=\"clause-line\"><b>Diameter Circles:</b> The <span class=\"coincide-tok\">Brocard circle</span> on diameter <span class=\"g-tok\">X_3 X_6</span> and the <span class=\"eq-tok\">orthocentroidal circle</span> on diameter <span class=\"g-tok\">X_2 X_4</span>.</span>",
+        "just_tag": "∵ STRUCTURE",
+        "just_id": "BROCARD (1881) & GUINAND (1984)",
+        "just_title": "Every pedal of X_6 onto the perpendicular bisectors lies on the Brocard circle.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_6",
+          "X_2",
+          "X_3",
+          "X_4"
+        ],
+        "coincide_ids": [
+          "< M_a M_b M_c >",
+          "M_a",
+          "M_b",
+          "M_c"
+        ],
+        "equal_ids": [
+          "brocard_circle"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "act_2_algebra_and_lines",
+    "title": "T_19 Algebraic Action & Central Lines",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_19",
+        "short_code": "T_19",
+        "g_id": "BROCARD & ORTHOCENTROIDAL CIRCLES",
+        "folio": "Kimberling ETC • Named Circles",
+        "enunciation": "Two fundamental diameter circles of triangle geometry: the Brocard Circle on diameter X_3 X_6 and the Orthocentroidal Circle on diameter X_2 X_4.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.15,
+        "step_num": 3,
+        "step_kind": "ASSERT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-19-brocard-and-orthocentroidal-circles/svgs/02_coordinates.svg",
+        "symbolic": "Brocard Circle Center X_182 (Midpoint of X_3 X_6) • Orthocentroidal Center X_381 (Midpoint of X_2 X_4)",
+        "clause_html": "<span class=\"clause-line\"><b>Midpoint Centers:</b> Brocard diameter <span class=\"g-tok\">X_3 X_6</span> and Euler diameter <span class=\"coincide-tok\">X_2 X_4</span> bound the interior locus of <span class=\"eq-tok\">X_1</span> and <span class=\"eq-tok\">X_6</span>.</span>",
+        "just_tag": "∵ COORDINATE LAW",
+        "just_id": "GUINAND'S THEOREM",
+        "just_title": "In any non-equilateral triangle, X_1 lies inside the orthocentroidal disk and never on the Euler line unless isosceles."
+      },
+      {
+        "prop_id": "ETC • T_19",
+        "short_code": "T_19",
+        "g_id": "BROCARD & ORTHOCENTROIDAL CIRCLES",
+        "folio": "Kimberling ETC • Named Circles",
+        "enunciation": "Two fundamental diameter circles of triangle geometry: the Brocard Circle on diameter X_3 X_6 and the Orthocentroidal Circle on diameter X_2 X_4.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.5,
+        "step_num": 4,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-19-brocard-and-orthocentroidal-circles/svgs/03_central_lines.svg",
+        "symbolic": "Brocard Axis {3, 6} & Euler Line {2, 3, 4, 5}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Central Line Incidences</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Diameter Axes</span><span class=\"g-tok\">{3, 6}</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Euler Line</span><span class=\"muted-tok\">{2, 3, 4, 5}</span></div></div></div>",
+        "just_tag": "∵ PRIMARY AXIS",
+        "just_id": "RADICAL AXIS",
+        "just_title": "The radical axis of the circumcircle and Brocard circle is the Lemoine line.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_6",
+          "{3, 6}"
+        ],
+        "coincide_ids": [],
+        "equal_ids": []
+      },
+      {
+        "prop_id": "ETC • T_19",
+        "short_code": "T_19",
+        "g_id": "BROCARD & ORTHOCENTROIDAL CIRCLES",
+        "folio": "Kimberling ETC • Named Circles",
+        "enunciation": "Two fundamental diameter circles of triangle geometry: the Brocard Circle on diameter X_3 X_6 and the Orthocentroidal Circle on diameter X_2 X_4.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.55,
+        "step_num": 5,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-19-brocard-and-orthocentroidal-circles/svgs/03_central_lines.svg",
+        "symbolic": "Brocard Axis {3, 6} & Euler Line {2, 3, 4, 5}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Central Line Incidences</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Diameter Axes</span><span class=\"g-tok\">{3, 6}</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Euler Line</span><span class=\"coincide-tok\">{2, 3, 4, 5}</span></div></div></div>",
+        "just_tag": "∵ COLLINEARITIES",
+        "just_id": "RADICAL AXIS",
+        "just_title": "The radical axis of the circumcircle and Brocard circle is the Lemoine line.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_6",
+          "{3, 6}"
+        ],
+        "coincide_ids": [
+          "{2, 3, 4, 5}"
+        ],
+        "equal_ids": []
+      }
+    ]
+  },
+  {
+    "id": "act_3_collection_network",
+    "title": "T_19 Collection 1 Network & Invariance",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_19",
+        "short_code": "T_19",
+        "g_id": "BROCARD & ORTHOCENTROIDAL CIRCLES",
+        "folio": "Kimberling ETC • Named Circles",
+        "enunciation": "Two fundamental diameter circles of triangle geometry: the Brocard Circle on diameter X_3 X_6 and the Orthocentroidal Circle on diameter X_2 X_4.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.1,
+        "step_num": 6,
+        "step_kind": "PROVE",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-19-brocard-and-orthocentroidal-circles/svgs/04_relations.svg",
+        "symbolic": "X_2 • X_3 • X_4 • X_5 • X_6",
+        "clause_html": "<span class=\"clause-line\"><b>Five Classical Centers:</b> <span class=\"coincide-tok\">X_2</span>, <span class=\"eq-tok\">X_3</span>, <span class=\"g-tok\">X_4</span>, <span class=\"g-tok\">X_5</span> on the Euler line and <span class=\"g-tok\">X_6</span> on the Brocard circle.</span>",
+        "just_tag": "∵ COLLECTION 1",
+        "just_id": "CLAWSON & SYMMEDIAN GEOMETRY",
+        "just_title": "The orthocentroidal and Brocard circles are linked by pedal projections and isogonal inversion.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_6",
+          "X_4",
+          "{ 4, 6 }",
+          "X_5",
+          "{ 5, 6 }"
+        ],
+        "coincide_ids": [
+          "X_2",
+          "{ 2, 6 }"
+        ],
+        "equal_ids": [
+          "X_3",
+          "{ 3, 6 }"
+        ]
+      },
+      {
+        "prop_id": "ETC • T_19",
+        "short_code": "T_19",
+        "g_id": "BROCARD & ORTHOCENTROIDAL CIRCLES",
+        "folio": "Kimberling ETC • Named Circles",
+        "enunciation": "Two fundamental diameter circles of triangle geometry: the Brocard Circle on diameter X_3 X_6 and the Orthocentroidal Circle on diameter X_2 X_4.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.95,
+        "step_num": 7,
+        "step_kind": "∴",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-19-brocard-and-orthocentroidal-circles/svgs/05_four_triangles.svg",
+        "symbolic": "Invariance across Acute (5,6,7) • Right (3,4,5) • Kepler (1,√φ,φ) • Kimberling (6,9,13)",
+        "clause_html": "<span class=\"clause-line\"><b>Reference Triangle Invariance:</b> Across all four reference triangles, <b>The Brocard &amp; Orthocentroidal Circles</b> preserves its exact projective incidences and harmonic ratios.</span>",
+        "just_tag": "∵ INVARIANCE",
+        "just_id": "FOUR-TRIANGLE VERIFICATION",
+        "just_title": "Verified across Collection 1 centers X_2, X_3, X_4, X_5, X_6, X_19."
+      }
+    ]
+  }
+]

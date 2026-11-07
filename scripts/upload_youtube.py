@@ -55,7 +55,7 @@ SCOPES = [
     "https://www.googleapis.com/auth/youtube.force-ssl",
 ]
 
-VIDEOS_Root = Path(__file__).resolve().parents[1] / "resources" / "videos"
+VIDEOS_Root = Path(__file__).resolve().parents[1] / "videos"
 QUOTA_LEDGER_PATH = CONFIG_DIR / "quota_ledger.json"
 
 

@@ -1,0 +1,253 @@
+[
+  {
+    "id": "act_1_proposition",
+    "title": "X_1 INCENTER — Act 1",
+    "subslides": [
+      {
+        "prop_id": "ETC • X_1",
+        "short_code": "X_1",
+        "g_id": "INCENTER",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The intersection of the three interior angle bisectors and center of the inscribed circle of triangle ABC.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.0,
+        "step_num": 1,
+        "step_kind": "CONSTRUCT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/x-00001/svgs/01_primary.svg",
+        "symbolic": "X_1 = Incenter • [A I_a] ∩ [B I_b] ∩ [C I_c]",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Primary Construction</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Target Center</span><span class=\"tok-gold\">X_1 (Incenter)</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Interior Bisectors</span><span class=\"tok-gold\">AI_a, BI_b, CI_c</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Inscribed Circle</span><span class=\"muted-tok\">Incircle (r)</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Bisector Feet</span><span class=\"muted-tok\">I_a, I_b, I_c</span></div></div></div>",
+        "just_tag": "∵ CONCURRENCE",
+        "just_id": "EUCLID IV.4 • CONCURRENCE",
+        "just_title": "Cevian triangle: Incentral triangle I_a I_b I_c • Pedal triangle: Intouch triangle T_a T_b T_c.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_1:gold",
+          "[ A I_a ]:gold",
+          "[ B I_b ]:gold",
+          "[ C I_c ]:gold"
+        ],
+        "coincide_ids": [],
+        "equal_ids": [],
+        "zoom": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "prop_id": "ETC • X_1",
+        "short_code": "X_1",
+        "g_id": "INCENTER",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The intersection of the three interior angle bisectors and center of the inscribed circle of triangle ABC.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.0,
+        "step_num": 2,
+        "step_kind": "GOAL",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/x-00001/svgs/01_primary.svg",
+        "symbolic": "X_1 = Incenter • [A I_a] ∩ [B I_b] ∩ [C I_c]",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Primary Construction</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Target Center</span><span class=\"tok-gold\">X_1 (Incenter)</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Interior Bisectors</span><span class=\"muted-tok\">AI_a, BI_b, CI_c</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Inscribed Circle</span><span class=\"tok-pink\">Incircle (r)</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Bisector Feet</span><span class=\"tok-blue\">I_a, I_b, I_c</span></div></div></div>",
+        "just_tag": "∵ DEFINITION",
+        "just_id": "EUCLID IV.4 • CONCURRENCE",
+        "just_title": "Cevian triangle: Incentral triangle I_a I_b I_c • Pedal triangle: Intouch triangle T_a T_b T_c.",
+        "is_punchline": true,
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_1:gold",
+          "incircle:pink",
+          "I_a:blue",
+          "I_b:blue",
+          "I_c:blue"
+        ],
+        "coincide_ids": [],
+        "equal_ids": [],
+        "zoom": [
+          "incircle",
+          "I_a",
+          "I_b",
+          "I_c"
+        ],
+        "thumb_zoom": [
+          "A",
+          "B",
+          "C"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "act_2_construction",
+    "title": "X_1 INCENTER — Act 2",
+    "subslides": [
+      {
+        "prop_id": "ETC • X_1",
+        "short_code": "X_1",
+        "g_id": "INCENTER",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The intersection of the three interior angle bisectors and center of the inscribed circle of triangle ABC.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.15,
+        "step_num": 3,
+        "step_kind": "ASSERT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/x-00001/svgs/02_coordinates.svg",
+        "symbolic": "Trilinears 1 : 1 : 1 • Barycentrics a : b : c",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-section\"><div class=\"etc-sec-head\">Trilinear Distances</div><div class=\"etc-coord-grid\"><span class=\"tok-gold\">α = 1</span><span class=\"tok-blue\">β = 1</span><span class=\"tok-green\">γ = 1</span></div></div><div class=\"etc-section\"><div class=\"etc-sec-head\">Barycentric Sub-Areas</div><div class=\"etc-coord-grid\"><span class=\"tok-gold\">u = a</span><span class=\"tok-blue\">v = b</span><span class=\"tok-green\">w = c</span></div></div></div>",
+        "just_tag": "∵ COORDINATES",
+        "just_id": "HOMOGENEOUS COORDINATES",
+        "just_title": "On acute triangle (5, 6, 7), perpendiculars are 1 : 1 : 1 and sub-areas are 5 : 6 : 7 (27.8% : 33.3% : 38.9%)."
+      },
+      {
+        "prop_id": "ETC • X_1",
+        "short_code": "X_1",
+        "g_id": "INCENTER",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The intersection of the three interior angle bisectors and center of the inscribed circle of triangle ABC.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.5,
+        "step_num": 4,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/x-00001/svgs/03_central_lines.svg",
+        "symbolic": "Nagel Line {1, 2, 8, 10} • Feuerbach Line {1, 5, 11}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Incident Central Lines</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Nagel Line</span><span class=\"tok-orange\">{1, 2, 8, 10}</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Feuerbach Line</span><span class=\"muted-tok\">{1, 5, 11}</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">OI Line</span><span class=\"muted-tok\">{1, 3, 40}</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Soddy Line</span><span class=\"muted-tok\">{1, 7, 20}</span></div></div></div>",
+        "just_tag": "∵ PRIMARY AXIS",
+        "just_id": "CENTRAL LINE INCIDENCES",
+        "just_title": "On the Nagel line, X_10 (Spieker center) is the exact midpoint of X_1 (Incenter) and X_8 (Nagel point).",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_1:gold",
+          "{1, 2, 8, 10}:orange"
+        ],
+        "coincide_ids": [],
+        "equal_ids": [],
+        "zoom": [
+          "X_1",
+          "X_2",
+          "X_8",
+          "X_10"
+        ]
+      },
+      {
+        "prop_id": "ETC • X_1",
+        "short_code": "X_1",
+        "g_id": "INCENTER",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The intersection of the three interior angle bisectors and center of the inscribed circle of triangle ABC.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.55,
+        "step_num": 5,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/x-00001/svgs/03_central_lines.svg",
+        "symbolic": "Nagel Line {1, 2, 8, 10} • Feuerbach Line {1, 5, 11}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Incident Central Lines</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Nagel Line</span><span class=\"tok-orange\">{1, 2, 8, 10}</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Feuerbach Line</span><span class=\"tok-teal\">{1, 5, 11}</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">OI Line</span><span class=\"tok-blue\">{1, 3, 40}</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Soddy Line</span><span class=\"tok-orchid\">{1, 7, 20}</span></div></div></div>",
+        "just_tag": "∵ COLLINEARITIES",
+        "just_id": "CENTRAL LINE INCIDENCES",
+        "just_title": "On the Nagel line, X_10 (Spieker center) is the exact midpoint of X_1 (Incenter) and X_8 (Nagel point).",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_1:gold",
+          "{1, 2, 8, 10}:orange",
+          "{1, 5, 11}:teal",
+          "{1, 3, 40}:blue",
+          "{1, 7, 20}:orchid"
+        ],
+        "coincide_ids": [],
+        "equal_ids": [],
+        "zoom": [
+          "X_1",
+          "X_2",
+          "X_8",
+          "X_10",
+          "X_5",
+          "X_11",
+          "X_3",
+          "X_40",
+          "X_7"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "act_3_insight",
+    "title": "X_1 INCENTER — Act 3",
+    "subslides": [
+      {
+        "prop_id": "ETC • X_1",
+        "short_code": "X_1",
+        "g_id": "INCENTER",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The intersection of the three interior angle bisectors and center of the inscribed circle of triangle ABC.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.05,
+        "step_num": 6,
+        "step_kind": "PROVE",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/x-00001/svgs/04_relations.svg",
+        "symbolic": "Self-Isogonal (X_1) • Complement X_10 • Anticomplement X_8",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Functional Relations</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Isogonal Conjugate</span><span class=\"tok-gold\">X_1 (self)</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Isotomic Conjugate</span><span class=\"tok-blue\">X_75</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Complement</span><span class=\"tok-green\">X_10</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Anticomplement</span><span class=\"tok-orange\">X_8</span></div></div></div>",
+        "just_tag": "∵ RELATIONS",
+        "just_id": "CONJUGATES & HOMOTHETY",
+        "just_title": "Circumcircle inverse: X_36 • Midpoint of X_1 and X_8: X_10 (Spieker center).",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_1:gold",
+          "X_75:blue",
+          "X_10:green",
+          "X_8:orange"
+        ],
+        "coincide_ids": [],
+        "equal_ids": [],
+        "zoom": [
+          "X_1",
+          "X_75",
+          "X_10",
+          "X_8",
+          "X_3"
+        ]
+      },
+      {
+        "prop_id": "ETC • X_1",
+        "short_code": "X_1",
+        "g_id": "INCENTER",
+        "folio": "Kimberling ETC • Collection 1 (X_1–X_19)",
+        "enunciation": "The intersection of the three interior angle bisectors and center of the inscribed circle of triangle ABC.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.95,
+        "step_num": 7,
+        "step_kind": "∴",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/x-00001/svgs/05_four_triangles.svg",
+        "symbolic": "Kimberling (6, 9, 13) Search = 1.690308509457",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head-row\"><span class=\"etc-sec-head\">Reference Triangles</span><div class=\"etc-head-cols\"><span>a</span><span>b</span><span>c</span></div></div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Acute Triangle</span><div class=\"etc-row-cells\"><span class=\"tok-gold\">5</span><span class=\"tok-gold\">6</span><span class=\"tok-gold\">7</span></div></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Right Triangle</span><div class=\"etc-row-cells\"><span class=\"tok-blue\">3</span><span class=\"tok-blue\">4</span><span class=\"tok-blue\">5</span></div></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Kepler Triangle</span><div class=\"etc-row-cells\"><span class=\"tok-green\">1</span><span class=\"tok-green\">√φ</span><span class=\"tok-green\">φ</span></div></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Kimberling Triangle</span><div class=\"etc-row-cells\"><span class=\"tok-purple\">6</span><span class=\"tok-purple\">9</span><span class=\"tok-purple\">13</span></div></div></div></div>",
+        "just_tag": "∵ INVARIANCE",
+        "just_id": "KIMBERLING SEARCH VALUE • X_1",
+        "just_title": "Shortest directed trilinear distance on reference triangle (6, 9, 13): 1.690308509457."
+      }
+    ]
+  }
+]

@@ -1,0 +1,140 @@
+[
+  {
+    "id": "act_1_identity",
+    "title": "X(1) Incenter — Identity & Concurrence",
+    "subslides": [
+      {
+        "prop_id": "ETC • X(1)",
+        "short_code": "X(1)",
+        "g_id": "INCENTER",
+        "folio": "Heath (1908) IV.4 • Kimberling ETC Part 1",
+        "enunciation": "The intersection of the three interior angle bisectors and center of the inscribed circle of triangle ABC.",
+        "step_total": 6,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.0,
+        "step_num": 1,
+        "step_kind": "GOAL",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/x-00001/svgs/01_identity.svg",
+        "symbolic": "X_1 = I • Incenter of △ABC",
+        "clause_html": "<span class=\"clause-line\"><span class=\"g-tok\">X_1</span> is the <b>incenter</b> of reference triangle <span class=\"g-tok\">ABC</span> — the center of the unique inscribed circle tangent to all three sidelines.</span>",
+        "just_id": "EUCLID IV.4 • ETC X_1",
+        "just_title": "To inscribe a circle in a given triangle (Elements Book IV, Proposition 4)."
+      },
+      {
+        "prop_id": "ETC • X(1)",
+        "short_code": "X(1)",
+        "g_id": "INCENTER",
+        "folio": "Heath (1908) IV.4 • Kimberling ETC Part 1",
+        "enunciation": "The intersection of the three interior angle bisectors and center of the inscribed circle of triangle ABC.",
+        "step_total": 6,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.0,
+        "step_num": 2,
+        "step_kind": "CONSTRUCT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/x-00001/svgs/02_construction.svg",
+        "symbolic": "[A I_a] ∩ [B I_b] ∩ [C I_c] → X_1",
+        "clause_html": "<span class=\"clause-line\">The three interior angle bisectors <span class=\"g-tok\">AI_a</span>, <span class=\"g-tok\">BI_b</span>, <span class=\"g-tok\">CI_c</span> concur at <span class=\"g-tok\">X_1</span>, while the incircle touches the sides at the <b>intouch triangle</b> <span class=\"coincide-tok\">T_a T_b T_c</span>.</span>",
+        "just_id": "CEVIAN & PEDAL",
+        "just_title": "Cevian triangle: Incentral triangle I_a I_b I_c • Pedal triangle: Intouch triangle T_a T_b T_c."
+      }
+    ]
+  },
+  {
+    "id": "act_2_trilinears",
+    "title": "Trilinear Coordinates in Pictures",
+    "subslides": [
+      {
+        "prop_id": "ETC • X(1)",
+        "short_code": "X(1)",
+        "g_id": "INCENTER",
+        "folio": "Heath (1908) IV.4 • Kimberling ETC Part 1",
+        "enunciation": "The intersection of the three interior angle bisectors and center of the inscribed circle of triangle ABC.",
+        "step_total": 6,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.0,
+        "step_num": 3,
+        "step_kind": "ASSERT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/x-00001/svgs/03_trilinears.svg",
+        "symbolic": "Trilinears α : β : γ = 1 : 1 : 1",
+        "clause_html": "<span class=\"clause-line\"><b>Trilinear Coordinates in Pictures:</b> <span class=\"g-tok\">α : β : γ</span> measure the directed perpendicular distances from <span class=\"g-tok\">X_1</span> to sidelines <span class=\"g-tok\">BC</span>, <span class=\"g-tok\">CA</span>, <span class=\"g-tok\">AB</span>.</span><span class=\"clause-line\">Every perpendicular strut is an incircle radius <span class=\"eq-tok\">r</span>, so <span class=\"eq-tok\">α : β : γ = 1 : 1 : 1</span>.</span>",
+        "just_id": "TRILINEAR DISTANCE LAW",
+        "just_title": "Exact actual trilinear distances: (α, β, γ) = (r, r, r) where r = Area(ABC) / s."
+      }
+    ]
+  },
+  {
+    "id": "act_3_barycentrics_and_trio",
+    "title": "Barycentric Sub-Areas & Coordinate Trio",
+    "subslides": [
+      {
+        "prop_id": "ETC • X(1)",
+        "short_code": "X(1)",
+        "g_id": "INCENTER",
+        "folio": "Heath (1908) IV.4 • Kimberling ETC Part 1",
+        "enunciation": "The intersection of the three interior angle bisectors and center of the inscribed circle of triangle ABC.",
+        "step_total": 6,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.15,
+        "step_num": 4,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/x-00001/svgs/04_barycentrics.svg",
+        "symbolic": "Barycentrics u : v : w = a : b : c",
+        "clause_html": "<span class=\"clause-line\"><b>Barycentric Coordinates in Pictures:</b> <span class=\"coincide-tok\">u : v : w</span> measure the signed areas of sub-triangles <span class=\"g-tok\">△X_1BC</span>, <span class=\"coincide-tok\">△X_1CA</span>, <span class=\"eq-tok\">△X_1AB</span>.</span><span class=\"clause-line\">Since <span class=\"eq-tok\">Area = ½·base·r</span>, the sub-areas scale directly with the side lengths: <span class=\"g-tok\">u : v : w = a : b : c</span>.</span>",
+        "just_id": "BRIDGE IDENTITY • u : v : w = aα : bβ : cγ",
+        "just_title": "On reference triangle (5, 6, 7), X_1 partitions Area(ABC) into 5 : 6 : 7 (27.8% : 33.3% : 38.9%)."
+      },
+      {
+        "prop_id": "ETC • X(1)",
+        "short_code": "X(1)",
+        "g_id": "INCENTER",
+        "folio": "Heath (1908) IV.4 • Kimberling ETC Part 1",
+        "enunciation": "The intersection of the three interior angle bisectors and center of the inscribed circle of triangle ABC.",
+        "step_total": 6,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.15,
+        "step_num": 5,
+        "step_kind": "PROVE",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/x-00001/svgs/05_trio.svg",
+        "symbolic": "X_1 (1:1:1 tri) • X_2 (1:1:1 bary) • X_6 (a:b:c tri)",
+        "clause_html": "<span class=\"clause-line\"><b>The Coordinate Trio:</b> <span class=\"g-tok\">X_1</span> equalizes perpendicular distances (<span class=\"g-tok\">1:1:1</span> trilinears); <span class=\"coincide-tok\">X_2</span> equalizes sub-triangle areas (<span class=\"coincide-tok\">1:1:1</span> barycentrics); <span class=\"eq-tok\">X_6</span> scales distances by <span class=\"eq-tok\">a:b:c</span> and areas by <span class=\"eq-tok\">a²:b²:c²</span>.</span>",
+        "just_id": "ISOGONAL & ISOTOMIC DUALITY",
+        "just_title": "X_1 is self-isogonal; X_2 and X_6 are isogonal conjugates (1/a : 1/b : 1/c ↔ a : b : c)."
+      },
+      {
+        "prop_id": "ETC • X(1)",
+        "short_code": "X(1)",
+        "g_id": "INCENTER",
+        "folio": "Heath (1908) IV.4 • Kimberling ETC Part 1",
+        "enunciation": "The intersection of the three interior angle bisectors and center of the inscribed circle of triangle ABC.",
+        "step_total": 6,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.85,
+        "step_num": 6,
+        "step_kind": "∴",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/x-00001/svgs/06_four_triangles.svg",
+        "symbolic": "Search (6, 9, 13) = 1.662544469104",
+        "clause_html": "<span class=\"clause-line\">Across <b>Acute</b>, <b>Right</b>, <b>Kepler</b>, and <b>Kimberling</b> reference triangles, <span class=\"g-tok\">X_1</span> anchors the Nagel line <span class=\"coincide-tok\">{1, 2, 8}</span> and Soddy line <span class=\"eq-tok\">{1, 7}</span>.</span>",
+        "just_id": "ETC CANONICAL ANCHOR • X_1",
+        "just_title": "Complement: X_10 (Spieker center) • Anticomplement: X_8 (Nagel point) • Isotomic conjugate: X_75."
+      }
+    ]
+  }
+]

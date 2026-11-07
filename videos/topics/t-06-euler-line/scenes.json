@@ -1,0 +1,234 @@
+[
+  {
+    "id": "act_1_definition",
+    "title": "T_6 THE EULER LINE — Geometric Definition",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_6",
+        "short_code": "T_6",
+        "g_id": "THE EULER LINE",
+        "folio": "Kimberling ETC • Named Central Lines",
+        "enunciation": "Leonhard Euler's 1765 central line passing through the Centroid X_2, Circumcenter X_3, Orthocenter X_4, and Nine-Point Center X_5 of every non-equilateral triangle.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.0,
+        "step_num": 1,
+        "step_kind": "CONSTRUCT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-06-euler-line/svgs/01_primary.svg",
+        "symbolic": "Euler Line L(2, 3, 4, 5, 20, 30) • |X_3 X_2| : |X_2 X_5| : |X_5 X_4| = 2 : 1 : 3",
+        "clause_html": "<span class=\"clause-line\"><b>The Euler Line:</b> Connects <span class=\"g-tok\">X_2</span>, <span class=\"g-tok\">X_3</span>, <span class=\"g-tok\">X_4</span>, and <span class=\"g-tok\">X_5</span> across the <span style=\"color:#94a3b8;font-family:'JetBrains Mono',monospace;font-weight:600;\">medial triangle M_a M_b M_c</span> and <span style=\"color:#94a3b8;font-family:'JetBrains Mono',monospace;font-weight:600;\">nine-point circle</span>.</span>",
+        "just_tag": "∵ DEFINITION",
+        "just_id": "EULER (1765) • NOVI COMMENTARII",
+        "just_title": "On an equilateral triangle, X_2, X_3, X_4, and X_5 coincide and the Euler line is indeterminate.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_2",
+          "[ A H_a ]",
+          "H_a",
+          "[ B H_b ]",
+          "H_b",
+          "[ C H_c ]",
+          "H_c",
+          "X_3",
+          "X_4"
+        ],
+        "coincide_ids": [],
+        "equal_ids": []
+      },
+      {
+        "prop_id": "ETC • T_6",
+        "short_code": "T_6",
+        "g_id": "THE EULER LINE",
+        "folio": "Kimberling ETC • Named Central Lines",
+        "enunciation": "Leonhard Euler's 1765 central line passing through the Centroid X_2, Circumcenter X_3, Orthocenter X_4, and Nine-Point Center X_5 of every non-equilateral triangle.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "is_punchline": true,
+        "weight": 1.0,
+        "step_num": 2,
+        "step_kind": "GOAL",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-06-euler-line/svgs/01_primary.svg",
+        "symbolic": "Euler Line L(2, 3, 4, 5, 20, 30) • |X_3 X_2| : |X_2 X_5| : |X_5 X_4| = 2 : 1 : 3",
+        "clause_html": "<span class=\"clause-line\"><b>The Euler Line:</b> Connects <span class=\"g-tok\">X_2</span>, <span class=\"g-tok\">X_3</span>, <span class=\"g-tok\">X_4</span>, and <span class=\"g-tok\">X_5</span> across the <span class=\"coincide-tok\">medial triangle M_a M_b M_c</span> and <span class=\"eq-tok\">nine-point circle</span>.</span>",
+        "just_tag": "∵ STRUCTURE",
+        "just_id": "EULER (1765) • NOVI COMMENTARII",
+        "just_title": "On an equilateral triangle, X_2, X_3, X_4, and X_5 coincide and the Euler line is indeterminate.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_2",
+          "[ A H_a ]",
+          "H_a",
+          "[ B H_b ]",
+          "H_b",
+          "[ C H_c ]",
+          "H_c",
+          "X_3",
+          "X_4"
+        ],
+        "coincide_ids": [
+          "< M_a M_b M_c >",
+          "M_a",
+          "M_b",
+          "M_c",
+          "< H_a H_b H_c >",
+          "H_a",
+          "H_b",
+          "H_c"
+        ],
+        "equal_ids": [
+          "circumcircle"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "act_2_algebra_and_lines",
+    "title": "T_6 Algebraic Action & Central Lines",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_6",
+        "short_code": "T_6",
+        "g_id": "THE EULER LINE",
+        "folio": "Kimberling ETC • Named Central Lines",
+        "enunciation": "Leonhard Euler's 1765 central line passing through the Centroid X_2, Circumcenter X_3, Orthocenter X_4, and Nine-Point Center X_5 of every non-equilateral triangle.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.15,
+        "step_num": 3,
+        "step_kind": "ASSERT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-06-euler-line/svgs/02_coordinates.svg",
+        "symbolic": "Trilinear Equation: sin(2A) sin(B−C) α + sin(2B) sin(C−A) β + sin(2C) sin(A−B) γ = 0",
+        "clause_html": "<span class=\"clause-line\"><b>Shinagawa Coefficients:</b> Every Euler center is a linear combination <span class=\"g-tok\">p·X_4 + q·X_3</span> with <span class=\"coincide-tok\">X_2 = (1, 2)</span> and <span class=\"eq-tok\">X_5 = (1, 1)</span>.</span>",
+        "just_tag": "∵ COORDINATE LAW",
+        "just_id": "EULER INFINITY POINT X_30",
+        "just_title": "X_30 is the point at infinity of the Euler line; X_20 (de Longchamps) is the reflection of X_4 in X_3."
+      },
+      {
+        "prop_id": "ETC • T_6",
+        "short_code": "T_6",
+        "g_id": "THE EULER LINE",
+        "folio": "Kimberling ETC • Named Central Lines",
+        "enunciation": "Leonhard Euler's 1765 central line passing through the Centroid X_2, Circumcenter X_3, Orthocenter X_4, and Nine-Point Center X_5 of every non-equilateral triangle.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.5,
+        "step_num": 4,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-06-euler-line/svgs/03_central_lines.svg",
+        "symbolic": "Collinearity {2, 3, 4, 5, 20}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Central Line Incidences</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Central Line Spine</span><span class=\"g-tok\">{2, 3, 4, 5, 20}</span></div></div></div>",
+        "just_tag": "∵ PRIMARY AXIS",
+        "just_id": "2 : 1 : 3 SEGMENT RATIOS",
+        "just_title": "X_2 trisects X_3 X_4, while X_5 bisects X_3 X_4.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_2",
+          "{2, 3, 4, 5, 20}"
+        ],
+        "coincide_ids": [],
+        "equal_ids": []
+      },
+      {
+        "prop_id": "ETC • T_6",
+        "short_code": "T_6",
+        "g_id": "THE EULER LINE",
+        "folio": "Kimberling ETC • Named Central Lines",
+        "enunciation": "Leonhard Euler's 1765 central line passing through the Centroid X_2, Circumcenter X_3, Orthocenter X_4, and Nine-Point Center X_5 of every non-equilateral triangle.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.55,
+        "step_num": 5,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-06-euler-line/svgs/03_central_lines.svg",
+        "symbolic": "Collinearity {2, 3, 4, 5, 20}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Central Line Incidences</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Central Line Spine</span><span class=\"g-tok\">{2, 3, 4, 5, 20}</span></div></div></div>",
+        "just_tag": "∵ COLLINEARITIES",
+        "just_id": "2 : 1 : 3 SEGMENT RATIOS",
+        "just_title": "X_2 trisects X_3 X_4, while X_5 bisects X_3 X_4.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_2",
+          "{2, 3, 4, 5, 20}"
+        ],
+        "coincide_ids": [],
+        "equal_ids": []
+      }
+    ]
+  },
+  {
+    "id": "act_3_collection_network",
+    "title": "T_6 Collection 1 Network & Invariance",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_6",
+        "short_code": "T_6",
+        "g_id": "THE EULER LINE",
+        "folio": "Kimberling ETC • Named Central Lines",
+        "enunciation": "Leonhard Euler's 1765 central line passing through the Centroid X_2, Circumcenter X_3, Orthocenter X_4, and Nine-Point Center X_5 of every non-equilateral triangle.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.1,
+        "step_num": 6,
+        "step_kind": "PROVE",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-06-euler-line/svgs/04_relations.svg",
+        "symbolic": "X_3 • X_2 • X_5 • X_4 • X_20",
+        "clause_html": "<span class=\"clause-line\"><b>Ordered Euler Sequence:</b> <span class=\"g-tok\">X_2</span>, <span class=\"coincide-tok\">X_3</span>, <span class=\"eq-tok\">X_4</span>, <span class=\"g-tok\">X_5</span>, and <span class=\"g-tok\">X_20</span> lie in exact rational ratio along the Euler axis.</span>",
+        "just_tag": "∵ COLLECTION 1",
+        "just_id": "COLLECTION 1 ANCHOR",
+        "just_title": "Four of the first five centers in Kimberling's Encyclopedia lie on the Euler line.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_2",
+          "{ 2, 3 }",
+          "X_5",
+          "X_20"
+        ],
+        "coincide_ids": [
+          "X_3"
+        ],
+        "equal_ids": [
+          "X_4"
+        ]
+      },
+      {
+        "prop_id": "ETC • T_6",
+        "short_code": "T_6",
+        "g_id": "THE EULER LINE",
+        "folio": "Kimberling ETC • Named Central Lines",
+        "enunciation": "Leonhard Euler's 1765 central line passing through the Centroid X_2, Circumcenter X_3, Orthocenter X_4, and Nine-Point Center X_5 of every non-equilateral triangle.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.95,
+        "step_num": 7,
+        "step_kind": "∴",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-06-euler-line/svgs/05_four_triangles.svg",
+        "symbolic": "Invariance across Acute (5,6,7) • Right (3,4,5) • Kepler (1,√φ,φ) • Kimberling (6,9,13)",
+        "clause_html": "<span class=\"clause-line\"><b>Reference Triangle Invariance:</b> Across all four reference triangles, <b>The Euler Line</b> preserves its exact projective incidences and harmonic ratios.</span>",
+        "just_tag": "∵ INVARIANCE",
+        "just_id": "FOUR-TRIANGLE VERIFICATION",
+        "just_title": "Verified across Collection 1 centers X_2, X_3, X_4, X_5, X_20, X_30."
+      }
+    ]
+  }
+]

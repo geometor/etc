@@ -1,0 +1,222 @@
+[
+  {
+    "id": "act_1_definition",
+    "title": "T_15 THE CIRCUMCIRCLE — Geometric Definition",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_15",
+        "short_code": "T_15",
+        "g_id": "THE CIRCUMCIRCLE",
+        "folio": "Kimberling ETC • Named Circles",
+        "enunciation": "The unique circle passing through vertices A, B, and C of triangle ABC, centered at the Circumcenter X_3 with radius R = abc / (4Δ).",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.0,
+        "step_num": 1,
+        "step_kind": "CONSTRUCT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-15-circumcircle/svgs/01_primary.svg",
+        "symbolic": "Circumcircle (Center X_3, Radius R = abc / 4Δ) • 2R = a/sin A = b/sin B = c/sin C",
+        "clause_html": "<span class=\"clause-line\"><b>The Circumcircle:</b> Passes through <span class=\"g-tok\">A</span>, <span class=\"g-tok\">B</span>, <span class=\"g-tok\">C</span> with center <span class=\"g-tok\">X_3</span> on the perpendicular bisectors of <span class=\"g-tok\">△ABC</span>.</span>",
+        "just_tag": "∵ DEFINITION",
+        "just_id": "EUCLID BOOK IV • PROPOSITION 5",
+        "just_title": "Barycentric equation: a²vw + b²wu + c²uv = 0; trilinear equation: aβγ + bγα + cαβ = 0.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_3",
+          "X_2",
+          "X_4"
+        ],
+        "coincide_ids": [],
+        "equal_ids": []
+      },
+      {
+        "prop_id": "ETC • T_15",
+        "short_code": "T_15",
+        "g_id": "THE CIRCUMCIRCLE",
+        "folio": "Kimberling ETC • Named Circles",
+        "enunciation": "The unique circle passing through vertices A, B, and C of triangle ABC, centered at the Circumcenter X_3 with radius R = abc / (4Δ).",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "is_punchline": true,
+        "weight": 1.0,
+        "step_num": 2,
+        "step_kind": "GOAL",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-15-circumcircle/svgs/01_primary.svg",
+        "symbolic": "Circumcircle (Center X_3, Radius R = abc / 4Δ) • 2R = a/sin A = b/sin B = c/sin C",
+        "clause_html": "<span class=\"clause-line\"><b>The Circumcircle:</b> Passes through <span class=\"g-tok\">A</span>, <span class=\"g-tok\">B</span>, <span class=\"g-tok\">C</span> with center <span class=\"g-tok\">X_3</span> on the perpendicular bisectors of <span class=\"g-tok\">△ABC</span>.</span>",
+        "just_tag": "∵ STRUCTURE",
+        "just_id": "EUCLID BOOK IV • PROPOSITION 5",
+        "just_title": "Barycentric equation: a²vw + b²wu + c²uv = 0; trilinear equation: aβγ + bγα + cαβ = 0.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_3",
+          "X_2",
+          "X_4"
+        ],
+        "coincide_ids": [
+          "circumcircle"
+        ],
+        "equal_ids": []
+      }
+    ]
+  },
+  {
+    "id": "act_2_algebra_and_lines",
+    "title": "T_15 Algebraic Action & Central Lines",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_15",
+        "short_code": "T_15",
+        "g_id": "THE CIRCUMCIRCLE",
+        "folio": "Kimberling ETC • Named Circles",
+        "enunciation": "The unique circle passing through vertices A, B, and C of triangle ABC, centered at the Circumcenter X_3 with radius R = abc / (4Δ).",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.15,
+        "step_num": 3,
+        "step_kind": "ASSERT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-15-circumcircle/svgs/02_coordinates.svg",
+        "symbolic": "Isogonal Transform of the Line at Infinity (u + v + w = 0)",
+        "clause_html": "<span class=\"clause-line\"><b>Projective & Metric Role:</b> <span class=\"g-tok\">X_3 = cos A : cos B : cos C</span> anchors the <span class=\"coincide-tok\">circumcircle</span> of radius <span class=\"eq-tok\">R = abc / (4Δ)</span>.</span>",
+        "just_tag": "∵ COORDINATE LAW",
+        "just_id": "SIMSON LINE LOCUS",
+        "just_title": "The pedal feet of a point P are collinear (forming a Simson line) if and only if P lies on the circumcircle."
+      },
+      {
+        "prop_id": "ETC • T_15",
+        "short_code": "T_15",
+        "g_id": "THE CIRCUMCIRCLE",
+        "folio": "Kimberling ETC • Named Circles",
+        "enunciation": "The unique circle passing through vertices A, B, and C of triangle ABC, centered at the Circumcenter X_3 with radius R = abc / (4Δ).",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.5,
+        "step_num": 4,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-15-circumcircle/svgs/03_central_lines.svg",
+        "symbolic": "Euler Line {2, 3, 4, 5} & Brocard Axis {3, 6, 15, 16}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Central Line Incidences</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Orthogonal Axes At X_3</span><span class=\"g-tok\">{2, 3, 4, 5}</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Brocard Axis</span><span class=\"muted-tok\">{3, 6, 15, 16}</span></div></div></div>",
+        "just_tag": "∵ PRIMARY AXIS",
+        "just_id": "RADIAL INVERSION CENTER",
+        "just_title": "X_15 and X_16 are mutual inverses in the circumcircle along the Brocard axis.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_3",
+          "{2, 3, 4, 5}"
+        ],
+        "coincide_ids": [],
+        "equal_ids": []
+      },
+      {
+        "prop_id": "ETC • T_15",
+        "short_code": "T_15",
+        "g_id": "THE CIRCUMCIRCLE",
+        "folio": "Kimberling ETC • Named Circles",
+        "enunciation": "The unique circle passing through vertices A, B, and C of triangle ABC, centered at the Circumcenter X_3 with radius R = abc / (4Δ).",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.55,
+        "step_num": 5,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-15-circumcircle/svgs/03_central_lines.svg",
+        "symbolic": "Euler Line {2, 3, 4, 5} & Brocard Axis {3, 6, 15, 16}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Central Line Incidences</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Orthogonal Axes At X_3</span><span class=\"g-tok\">{2, 3, 4, 5}</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Brocard Axis</span><span class=\"coincide-tok\">{3, 6, 15, 16}</span></div></div></div>",
+        "just_tag": "∵ COLLINEARITIES",
+        "just_id": "RADIAL INVERSION CENTER",
+        "just_title": "X_15 and X_16 are mutual inverses in the circumcircle along the Brocard axis.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_3",
+          "{2, 3, 4, 5}"
+        ],
+        "coincide_ids": [
+          "{3, 6, 15, 16}"
+        ],
+        "equal_ids": []
+      }
+    ]
+  },
+  {
+    "id": "act_3_collection_network",
+    "title": "T_15 Collection 1 Network & Invariance",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_15",
+        "short_code": "T_15",
+        "g_id": "THE CIRCUMCIRCLE",
+        "folio": "Kimberling ETC • Named Circles",
+        "enunciation": "The unique circle passing through vertices A, B, and C of triangle ABC, centered at the Circumcenter X_3 with radius R = abc / (4Δ).",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.1,
+        "step_num": 6,
+        "step_kind": "PROVE",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-15-circumcircle/svgs/04_relations.svg",
+        "symbolic": "X_3 • X_2 • X_4 • X_5 • X_6 • X_15 • X_16",
+        "clause_html": "<span class=\"clause-line\"><b>Circumcircle Network:</b> <span class=\"g-tok\">X_3</span> links <span class=\"coincide-tok\">X_2</span>, <span class=\"coincide-tok\">X_4</span>, <span class=\"coincide-tok\">X_5</span> on the Euler line and <span class=\"eq-tok\">X_6</span>, <span class=\"eq-tok\">X_15</span>, <span class=\"eq-tok\">X_16</span> on the Brocard axis.</span>",
+        "just_tag": "∵ COLLECTION 1",
+        "just_id": "TANGENTIAL POLARITY",
+        "just_title": "The tangents to the circumcircle at A, B, C form the tangential triangle, whose perspector is X_6.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_3"
+        ],
+        "coincide_ids": [
+          "X_2",
+          "{ 2, 3 }",
+          "X_4",
+          "{ 3, 4 }",
+          "X_5",
+          "{ 3, 5 }"
+        ],
+        "equal_ids": [
+          "X_6",
+          "{ 3, 6 }",
+          "X_15",
+          "{ 3, 15 }",
+          "X_16",
+          "{ 3, 16 }"
+        ]
+      },
+      {
+        "prop_id": "ETC • T_15",
+        "short_code": "T_15",
+        "g_id": "THE CIRCUMCIRCLE",
+        "folio": "Kimberling ETC • Named Circles",
+        "enunciation": "The unique circle passing through vertices A, B, and C of triangle ABC, centered at the Circumcenter X_3 with radius R = abc / (4Δ).",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.95,
+        "step_num": 7,
+        "step_kind": "∴",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-15-circumcircle/svgs/05_four_triangles.svg",
+        "symbolic": "Invariance across Acute (5,6,7) • Right (3,4,5) • Kepler (1,√φ,φ) • Kimberling (6,9,13)",
+        "clause_html": "<span class=\"clause-line\"><b>Reference Triangle Invariance:</b> Across all four reference triangles, <b>The Circumcircle</b> preserves its exact projective incidences and harmonic ratios.</span>",
+        "just_tag": "∵ INVARIANCE",
+        "just_id": "FOUR-TRIANGLE VERIFICATION",
+        "just_title": "Verified across Collection 1 centers X_3, X_2, X_4, X_5, X_6, X_15."
+      }
+    ]
+  }
+]

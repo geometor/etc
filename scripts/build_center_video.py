@@ -363,7 +363,7 @@ def main() -> None:
         video_dir = (
             args.out_dir
             if (args.out_dir and len(center_nums) == 1)
-            else Path(f"resources/videos/x-{num:05d}")
+            else Path(f"videos/x-{num:05d}")
         ).resolve()
         svgs_dir = video_dir / "svgs"
         svgs_dir.mkdir(parents=True, exist_ok=True)

@@ -1,0 +1,234 @@
+[
+  {
+    "id": "act_1_definition",
+    "title": "T_23 INCENTRAL & EXCENTRAL TRIANGLES — Geometric Definition",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_23",
+        "short_code": "T_23",
+        "g_id": "INCENTRAL & EXCENTRAL TRIANGLES",
+        "folio": "Kimberling ETC • Derived Central Triangles",
+        "enunciation": "The Incentral Triangle I_a I_b I_c (cevian triangle of X_1) formed by the interior angle-bisector feet and the Excentral Triangle J_a J_b J_c (anticevian triangle of X_1) formed by the three excenters.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.0,
+        "step_num": 1,
+        "step_kind": "CONSTRUCT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-23-incentral-and-excentral-triangles/svgs/01_primary.svg",
+        "symbolic": "Incentral Triangle I_a I_b I_c (Cevian of X_1) • Excentral Triangle J_a J_b J_c (Anticevian of X_1)",
+        "clause_html": "<span class=\"clause-line\"><b>Bisector Triangles:</b> Interior angle bisectors through <span class=\"g-tok\">X_1</span> form the incentral feet <span class=\"g-tok\">I_a, I_b, I_c</span>, while the <span style=\"color:#94a3b8;font-family:'JetBrains Mono',monospace;font-weight:600;\">incircle</span> and <span style=\"color:#94a3b8;font-family:'JetBrains Mono',monospace;font-weight:600;\">circumcircle</span> govern the excentral duality.</span>",
+        "just_tag": "∵ DEFINITION",
+        "just_id": "ORTHOCENTRIC SYSTEM {X_1, J_a, J_b, J_c}",
+        "just_title": "X_1 and the three excenters form an orthocentric system: each point is the orthocenter of the other three.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_1",
+          "[ A I_a ]",
+          "I_a",
+          "[ B I_b ]",
+          "I_b",
+          "[ C I_c ]",
+          "I_c",
+          "X_3",
+          "X_4"
+        ],
+        "coincide_ids": [],
+        "equal_ids": []
+      },
+      {
+        "prop_id": "ETC • T_23",
+        "short_code": "T_23",
+        "g_id": "INCENTRAL & EXCENTRAL TRIANGLES",
+        "folio": "Kimberling ETC • Derived Central Triangles",
+        "enunciation": "The Incentral Triangle I_a I_b I_c (cevian triangle of X_1) formed by the interior angle-bisector feet and the Excentral Triangle J_a J_b J_c (anticevian triangle of X_1) formed by the three excenters.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "is_punchline": true,
+        "weight": 1.0,
+        "step_num": 2,
+        "step_kind": "GOAL",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-23-incentral-and-excentral-triangles/svgs/01_primary.svg",
+        "symbolic": "Incentral Triangle I_a I_b I_c (Cevian of X_1) • Excentral Triangle J_a J_b J_c (Anticevian of X_1)",
+        "clause_html": "<span class=\"clause-line\"><b>Bisector Triangles:</b> Interior angle bisectors through <span class=\"g-tok\">X_1</span> form the incentral feet <span class=\"g-tok\">I_a, I_b, I_c</span>, while the <span class=\"coincide-tok\">incircle</span> and <span class=\"eq-tok\">circumcircle</span> govern the excentral duality.</span>",
+        "just_tag": "∵ STRUCTURE",
+        "just_id": "ORTHOCENTRIC SYSTEM {X_1, J_a, J_b, J_c}",
+        "just_title": "X_1 and the three excenters form an orthocentric system: each point is the orthocenter of the other three.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_1",
+          "[ A I_a ]",
+          "I_a",
+          "[ B I_b ]",
+          "I_b",
+          "[ C I_c ]",
+          "I_c",
+          "X_3",
+          "X_4"
+        ],
+        "coincide_ids": [
+          "incircle"
+        ],
+        "equal_ids": [
+          "circumcircle"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "act_2_algebra_and_lines",
+    "title": "T_23 Algebraic Action & Central Lines",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_23",
+        "short_code": "T_23",
+        "g_id": "INCENTRAL & EXCENTRAL TRIANGLES",
+        "folio": "Kimberling ETC • Derived Central Triangles",
+        "enunciation": "The Incentral Triangle I_a I_b I_c (cevian triangle of X_1) formed by the interior angle-bisector feet and the Excentral Triangle J_a J_b J_c (anticevian triangle of X_1) formed by the three excenters.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.15,
+        "step_num": 3,
+        "step_kind": "ASSERT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-23-incentral-and-excentral-triangles/svgs/02_coordinates.svg",
+        "symbolic": "△ABC is the Orthic Triangle of the Excentral Triangle • Mittenpunkt X_9 is its Symmedian Point",
+        "clause_html": "<span class=\"clause-line\"><b>Excentral Shift:</b> <span class=\"g-tok\">X_1</span> is the orthocenter of the excentral triangle, the <span class=\"coincide-tok\">circumcircle</span> is its nine-point circle, and <span class=\"eq-tok\">X_9</span> is its symmedian point.</span>",
+        "just_tag": "∵ COORDINATE LAW",
+        "just_id": "BEVAN CIRCLE (RADIUS 2R)",
+        "just_title": "Since △ABC is the orthic triangle of J_a J_b J_c, the circumcircle of J_a J_b J_c (the Bevan circle) has radius 2R."
+      },
+      {
+        "prop_id": "ETC • T_23",
+        "short_code": "T_23",
+        "g_id": "INCENTRAL & EXCENTRAL TRIANGLES",
+        "folio": "Kimberling ETC • Derived Central Triangles",
+        "enunciation": "The Incentral Triangle I_a I_b I_c (cevian triangle of X_1) formed by the interior angle-bisector feet and the Excentral Triangle J_a J_b J_c (anticevian triangle of X_1) formed by the three excenters.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.5,
+        "step_num": 4,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-23-incentral-and-excentral-triangles/svgs/03_central_lines.svg",
+        "symbolic": "Incenter–Symmedian–Mittenpunkt Line {1, 6, 9} • OI Line {1, 3} • Fuhrmann Axis {4, 9}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Central Line Incidences</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Excentral Axes</span><span class=\"g-tok\">{1, 6, 9}</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Oi Line</span><span class=\"muted-tok\">{1, 3}</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Orthocenter–Mittenpunkt Axis</span><span class=\"muted-tok\">{4, 9}</span></div></div></div>",
+        "just_tag": "∵ PRIMARY AXIS",
+        "just_id": "MITTENPUNKT CONCURRENCE",
+        "just_title": "Lines from the excenters to the side midpoints M_a, M_b, M_c concur at Mittenpunkt X_9.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_1",
+          "{1, 6, 9}"
+        ],
+        "coincide_ids": [],
+        "equal_ids": []
+      },
+      {
+        "prop_id": "ETC • T_23",
+        "short_code": "T_23",
+        "g_id": "INCENTRAL & EXCENTRAL TRIANGLES",
+        "folio": "Kimberling ETC • Derived Central Triangles",
+        "enunciation": "The Incentral Triangle I_a I_b I_c (cevian triangle of X_1) formed by the interior angle-bisector feet and the Excentral Triangle J_a J_b J_c (anticevian triangle of X_1) formed by the three excenters.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.55,
+        "step_num": 5,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-23-incentral-and-excentral-triangles/svgs/03_central_lines.svg",
+        "symbolic": "Incenter–Symmedian–Mittenpunkt Line {1, 6, 9} • OI Line {1, 3} • Fuhrmann Axis {4, 9}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Central Line Incidences</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Excentral Axes</span><span class=\"g-tok\">{1, 6, 9}</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Oi Line</span><span class=\"coincide-tok\">{1, 3}</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Orthocenter–Mittenpunkt Axis</span><span class=\"eq-tok\">{4, 9}</span></div></div></div>",
+        "just_tag": "∵ COLLINEARITIES",
+        "just_id": "MITTENPUNKT CONCURRENCE",
+        "just_title": "Lines from the excenters to the side midpoints M_a, M_b, M_c concur at Mittenpunkt X_9.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_1",
+          "{1, 6, 9}"
+        ],
+        "coincide_ids": [
+          "{1, 3}"
+        ],
+        "equal_ids": [
+          "{4, 9}"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "act_3_collection_network",
+    "title": "T_23 Collection 1 Network & Invariance",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_23",
+        "short_code": "T_23",
+        "g_id": "INCENTRAL & EXCENTRAL TRIANGLES",
+        "folio": "Kimberling ETC • Derived Central Triangles",
+        "enunciation": "The Incentral Triangle I_a I_b I_c (cevian triangle of X_1) formed by the interior angle-bisector feet and the Excentral Triangle J_a J_b J_c (anticevian triangle of X_1) formed by the three excenters.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.1,
+        "step_num": 6,
+        "step_kind": "PROVE",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-23-incentral-and-excentral-triangles/svgs/04_relations.svg",
+        "symbolic": "X_1 • X_9 • X_6 • X_3 • X_4",
+        "clause_html": "<span class=\"clause-line\"><b>Excentral Network:</b> <span class=\"g-tok\">X_1</span> and <span class=\"coincide-tok\">X_9</span> link <span class=\"coincide-tok\">X_6</span>, <span class=\"eq-tok\">X_3</span>, and <span class=\"g-tok\">X_4</span>.</span>",
+        "just_tag": "∵ COLLECTION 1",
+        "just_id": "EXCENTRAL ↔ ORTHIC ISOMORPHISM",
+        "just_title": "Every theorem about the orthic triangle of △ABC has a dual theorem about △ABC inside the excentral triangle.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_1",
+          "X_4",
+          "{ 1, 4 }"
+        ],
+        "coincide_ids": [
+          "X_9",
+          "{ 1, 9 }",
+          "X_6",
+          "{ 1, 6 }"
+        ],
+        "equal_ids": [
+          "X_3",
+          "{ 1, 3 }"
+        ]
+      },
+      {
+        "prop_id": "ETC • T_23",
+        "short_code": "T_23",
+        "g_id": "INCENTRAL & EXCENTRAL TRIANGLES",
+        "folio": "Kimberling ETC • Derived Central Triangles",
+        "enunciation": "The Incentral Triangle I_a I_b I_c (cevian triangle of X_1) formed by the interior angle-bisector feet and the Excentral Triangle J_a J_b J_c (anticevian triangle of X_1) formed by the three excenters.",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.95,
+        "step_num": 7,
+        "step_kind": "∴",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-23-incentral-and-excentral-triangles/svgs/05_four_triangles.svg",
+        "symbolic": "Invariance across Acute (5,6,7) • Right (3,4,5) • Kepler (1,√φ,φ) • Kimberling (6,9,13)",
+        "clause_html": "<span class=\"clause-line\"><b>Reference Triangle Invariance:</b> Across all four reference triangles, <b>Incentral &amp; Excentral Triangles</b> preserves its exact projective incidences and harmonic ratios.</span>",
+        "just_tag": "∵ INVARIANCE",
+        "just_id": "FOUR-TRIANGLE VERIFICATION",
+        "just_title": "Verified across Collection 1 centers X_1, X_3, X_4, X_6, X_9."
+      }
+    ]
+  }
+]

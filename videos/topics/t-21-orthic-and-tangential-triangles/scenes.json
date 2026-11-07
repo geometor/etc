@@ -1,0 +1,237 @@
+[
+  {
+    "id": "act_1_definition",
+    "title": "T_21 ORTHIC & TANGENTIAL TRIANGLES — Geometric Definition",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_21",
+        "short_code": "T_21",
+        "g_id": "ORTHIC & TANGENTIAL TRIANGLES",
+        "folio": "Kimberling ETC • Derived Central Triangles",
+        "enunciation": "The Orthic Triangle H_a H_b H_c formed by the altitude feet of X_4 and the Tangential Triangle formed by the tangents to the circumcircle at A, B, and C (perspector X_6).",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.0,
+        "step_num": 1,
+        "step_kind": "CONSTRUCT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-21-orthic-and-tangential-triangles/svgs/01_primary.svg",
+        "symbolic": "Orthic Triangle H_a H_b H_c (Perspector X_4) • Tangential Triangle (Perspector X_6)",
+        "clause_html": "<span class=\"clause-line\"><b>Orthic & Tangential Duality:</b> The <span style=\"color:#94a3b8;font-family:'JetBrains Mono',monospace;font-weight:600;\">orthic triangle H_a H_b H_c</span> of <span class=\"g-tok\">X_4</span> is inscribed in the <span style=\"color:#94a3b8;font-family:'JetBrains Mono',monospace;font-weight:600;\">nine-point circle</span> and homothetic to the tangential triangle of <span class=\"g-tok\">X_6</span>.</span>",
+        "just_tag": "∵ DEFINITION",
+        "just_id": "FAGNANO'S MINIMUM PERIMETER TRIANGLE (1775)",
+        "just_title": "In any acute triangle, the orthic triangle has the minimum perimeter of all inscribed triangles.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_4",
+          "[ A H_a ]",
+          "H_a",
+          "[ B H_b ]",
+          "H_b",
+          "[ C H_c ]",
+          "H_c",
+          "X_3",
+          "X_5"
+        ],
+        "coincide_ids": [],
+        "equal_ids": []
+      },
+      {
+        "prop_id": "ETC • T_21",
+        "short_code": "T_21",
+        "g_id": "ORTHIC & TANGENTIAL TRIANGLES",
+        "folio": "Kimberling ETC • Derived Central Triangles",
+        "enunciation": "The Orthic Triangle H_a H_b H_c formed by the altitude feet of X_4 and the Tangential Triangle formed by the tangents to the circumcircle at A, B, and C (perspector X_6).",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "is_punchline": true,
+        "weight": 1.0,
+        "step_num": 2,
+        "step_kind": "GOAL",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-21-orthic-and-tangential-triangles/svgs/01_primary.svg",
+        "symbolic": "Orthic Triangle H_a H_b H_c (Perspector X_4) • Tangential Triangle (Perspector X_6)",
+        "clause_html": "<span class=\"clause-line\"><b>Orthic & Tangential Duality:</b> The <span class=\"coincide-tok\">orthic triangle H_a H_b H_c</span> of <span class=\"g-tok\">X_4</span> is inscribed in the <span class=\"eq-tok\">nine-point circle</span> and homothetic to the tangential triangle of <span class=\"g-tok\">X_6</span>.</span>",
+        "just_tag": "∵ STRUCTURE",
+        "just_id": "FAGNANO'S MINIMUM PERIMETER TRIANGLE (1775)",
+        "just_title": "In any acute triangle, the orthic triangle has the minimum perimeter of all inscribed triangles.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_4",
+          "[ A H_a ]",
+          "H_a",
+          "[ B H_b ]",
+          "H_b",
+          "[ C H_c ]",
+          "H_c",
+          "X_3",
+          "X_5"
+        ],
+        "coincide_ids": [
+          "< H_a H_b H_c >",
+          "H_a",
+          "H_b",
+          "H_c"
+        ],
+        "equal_ids": [
+          "circumcircle"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "act_2_algebra_and_lines",
+    "title": "T_21 Algebraic Action & Central Lines",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_21",
+        "short_code": "T_21",
+        "g_id": "ORTHIC & TANGENTIAL TRIANGLES",
+        "folio": "Kimberling ETC • Derived Central Triangles",
+        "enunciation": "The Orthic Triangle H_a H_b H_c formed by the altitude feet of X_4 and the Tangential Triangle formed by the tangents to the circumcircle at A, B, and C (perspector X_6).",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.15,
+        "step_num": 3,
+        "step_kind": "ASSERT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-21-orthic-and-tangential-triangles/svgs/02_coordinates.svg",
+        "symbolic": "Parallel Corresponding Sides: H_b H_c ∥ Tangent at A  (since OA ⊥ H_b H_c)",
+        "clause_html": "<span class=\"clause-line\"><b>Parallel Side Theorem:</b> Circumradii from <span class=\"g-tok\">X_3</span> are perpendicular to the orthic sides <span class=\"coincide-tok\">H_a H_b H_c</span>, making them parallel to the tangents of <span class=\"eq-tok\">X_6</span>.</span>",
+        "just_tag": "∵ COORDINATE LAW",
+        "just_id": "ORTHIC INCENTER X_4",
+        "just_title": "Altitudes AD, BE, CF bisect the interior angles of the orthic triangle H_a H_b H_c."
+      },
+      {
+        "prop_id": "ETC • T_21",
+        "short_code": "T_21",
+        "g_id": "ORTHIC & TANGENTIAL TRIANGLES",
+        "folio": "Kimberling ETC • Derived Central Triangles",
+        "enunciation": "The Orthic Triangle H_a H_b H_c formed by the altitude feet of X_4 and the Tangential Triangle formed by the tangents to the circumcircle at A, B, and C (perspector X_6).",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.5,
+        "step_num": 4,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-21-orthic-and-tangential-triangles/svgs/03_central_lines.svg",
+        "symbolic": "Euler Line {3, 4, 5} • Brocard Axis {3, 6} • Clawson Axis {4, 19}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Central Line Incidences</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Orthic–Tangential Axes</span><span class=\"g-tok\">{3, 4, 5}</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Brocard Axis</span><span class=\"muted-tok\">{3, 6}</span></div><div class=\"etc-data-row muted-row\"><span class=\"etc-row-label\">Clawson Line</span><span class=\"muted-tok\">{4, 19}</span></div></div></div>",
+        "just_tag": "∵ PRIMARY AXIS",
+        "just_id": "CLAWSON POINT X_19",
+        "just_title": "X_19 is the second center of similitude of the orthic and excentral configurations and perspector of the orthic axis.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_4",
+          "{3, 4, 5}"
+        ],
+        "coincide_ids": [],
+        "equal_ids": []
+      },
+      {
+        "prop_id": "ETC • T_21",
+        "short_code": "T_21",
+        "g_id": "ORTHIC & TANGENTIAL TRIANGLES",
+        "folio": "Kimberling ETC • Derived Central Triangles",
+        "enunciation": "The Orthic Triangle H_a H_b H_c formed by the altitude feet of X_4 and the Tangential Triangle formed by the tangents to the circumcircle at A, B, and C (perspector X_6).",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.55,
+        "step_num": 5,
+        "step_kind": "INTERSECT",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-21-orthic-and-tangential-triangles/svgs/03_central_lines.svg",
+        "symbolic": "Euler Line {3, 4, 5} • Brocard Axis {3, 6} • Clawson Axis {4, 19}",
+        "clause_html": "<div class=\"etc-table-block\"><div class=\"etc-sec-head\">Central Line Incidences</div><div class=\"etc-data-list\"><div class=\"etc-data-row\"><span class=\"etc-row-label\">Orthic–Tangential Axes</span><span class=\"g-tok\">{3, 4, 5}</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Brocard Axis</span><span class=\"coincide-tok\">{3, 6}</span></div><div class=\"etc-data-row\"><span class=\"etc-row-label\">Clawson Line</span><span class=\"eq-tok\">{4, 19}</span></div></div></div>",
+        "just_tag": "∵ COLLINEARITIES",
+        "just_id": "CLAWSON POINT X_19",
+        "just_title": "X_19 is the second center of similitude of the orthic and excentral configurations and perspector of the orthic axis.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_4",
+          "{3, 4, 5}"
+        ],
+        "coincide_ids": [
+          "{3, 6}"
+        ],
+        "equal_ids": [
+          "{4, 19}"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "act_3_collection_network",
+    "title": "T_21 Collection 1 Network & Invariance",
+    "subslides": [
+      {
+        "prop_id": "ETC • T_21",
+        "short_code": "T_21",
+        "g_id": "ORTHIC & TANGENTIAL TRIANGLES",
+        "folio": "Kimberling ETC • Derived Central Triangles",
+        "enunciation": "The Orthic Triangle H_a H_b H_c formed by the altitude feet of X_4 and the Tangential Triangle formed by the tangents to the circumcircle at A, B, and C (perspector X_6).",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 1.1,
+        "step_num": 6,
+        "step_kind": "PROVE",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-21-orthic-and-tangential-triangles/svgs/04_relations.svg",
+        "symbolic": "X_4 • X_3 • X_5 • X_6 • X_19",
+        "clause_html": "<span class=\"clause-line\"><b>Orthic Network:</b> <span class=\"g-tok\">X_4</span>, <span class=\"coincide-tok\">X_3</span>, <span class=\"coincide-tok\">X_5</span>, <span class=\"eq-tok\">X_6</span>, and Clawson point <span class=\"g-tok\">X_19</span>.</span>",
+        "just_tag": "∵ COLLECTION 1",
+        "just_id": "POLAR TRIANGLE RESPECT TO CIRCUMCIRCLE",
+        "just_title": "The tangential triangle is the polar triangle of △ABC with respect to the circumcircle, and anticevian of X_6.",
+        "strict_step_ids": true,
+        "active_ids": [
+          "X_4",
+          "X_19",
+          "{ 4, 19 }"
+        ],
+        "coincide_ids": [
+          "X_3",
+          "{ 3, 4 }",
+          "X_5",
+          "{ 4, 5 }"
+        ],
+        "equal_ids": [
+          "X_6",
+          "{ 4, 6 }"
+        ]
+      },
+      {
+        "prop_id": "ETC • T_21",
+        "short_code": "T_21",
+        "g_id": "ORTHIC & TANGENTIAL TRIANGLES",
+        "folio": "Kimberling ETC • Derived Central Triangles",
+        "enunciation": "The Orthic Triangle H_a H_b H_c formed by the altitude feet of X_4 and the Tangential Triangle formed by the tangents to the circumcircle at A, B, and C (perspector X_6).",
+        "step_total": 7,
+        "visible_ids": [
+          "*"
+        ],
+        "type": "euclid_step",
+        "weight": 0.95,
+        "step_num": 7,
+        "step_kind": "∴",
+        "svg_path": "/home/phi/PROJECTS/geometor/etc/videos/topics/t-21-orthic-and-tangential-triangles/svgs/05_four_triangles.svg",
+        "symbolic": "Invariance across Acute (5,6,7) • Right (3,4,5) • Kepler (1,√φ,φ) • Kimberling (6,9,13)",
+        "clause_html": "<span class=\"clause-line\"><b>Reference Triangle Invariance:</b> Across all four reference triangles, <b>Orthic &amp; Tangential Triangles</b> preserves its exact projective incidences and harmonic ratios.</span>",
+        "just_tag": "∵ INVARIANCE",
+        "just_id": "FOUR-TRIANGLE VERIFICATION",
+        "just_title": "Verified across Collection 1 centers X_4, X_3, X_5, X_6, X_19."
+      }
+    ]
+  }
+]

@@ -226,7 +226,7 @@ def generate_topics_sphinx_docs() -> None:
         t_dir = topics_root / slug
         t_dir.mkdir(parents=True, exist_ok=True)
 
-        v_svgs = Path(f"resources/videos/topics/t-{t['num']:02d}-{slug}/svgs")
+        v_svgs = Path(f"videos/topics/t-{t['num']:02d}-{slug}/svgs")
         if (v_svgs / "01_primary.svg").is_file():
             shutil.copy2(v_svgs / "01_primary.svg", t_dir / f"{slug}.svg")
         if (v_svgs / "02_coordinates.svg").is_file():
@@ -398,7 +398,7 @@ def main() -> None:
         num = topic["num"]
         slug = topic["slug"]
         prefix = f"T_{num:02d}"
-        video_dir = Path(f"resources/videos/topics/t-{num:02d}-{slug}").resolve()
+        video_dir = Path(f"videos/topics/t-{num:02d}-{slug}").resolve()
         svgs_dir = video_dir / "svgs"
         svgs_dir.mkdir(parents=True, exist_ok=True)
 

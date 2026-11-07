@@ -678,7 +678,7 @@ def main() -> None:
     args = parser.parse_args()
 
     prefix = "C_01"
-    video_dir = Path("resources/videos/intro-collection-1").resolve()
+    video_dir = Path("videos/intro-collection-1").resolve()
     svgs_dir = video_dir / "svgs"
     svgs_dir.mkdir(parents=True, exist_ok=True)
     script_txt = video_dir / "script.txt"
