@@ -27,7 +27,8 @@ All rendered binary masters stay directly in `videos/<pkg>/` as real local files
 
 `etc` uses **Studio Mode 1 (`slides` — Native Vector Slide Sequencing)**:
 * **Capture**: `1920x1080` CSS layout rasterized natively at **`2560x1440`** via Chromium `--force-device-scale-factor=1.3333333333` (`4/3`), and `1080x1920` for `9:16` Shorts.
-* **Encode**: FFmpeg `-f concat` demuxer with exact per-slide audio durations from `<prefix>.json` and `-c:v libx264 -preset fast -tune stillimage -crf 18`.
+* **Encode**: Clean FFmpeg `-f concat` demuxer with exact per-slide audio durations from `<prefix>.json`:
+  `ffmpeg -y -f concat -safe 0 -i concat.txt -i <prefix>.wav -vf fps=30 -shortest <prefix>_1080p.mp4`
 
 ---
 
