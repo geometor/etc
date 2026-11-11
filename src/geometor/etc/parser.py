@@ -9,7 +9,6 @@ from .glossary import (
     clean_html_entities,
     convert_inline_html_to_rst,
     formula_html_to_latex,
-    wrap_geom_refs,
 )
 
 
@@ -277,7 +276,7 @@ def parse_h3(html_content: str) -> dict[str, Any] | None:
     if not match:
         return None
 
-    h3_attrs, h3_inner = match.group(1), match.group(2)
+    h3_inner = match.group(2)
 
     # Look for named anchor <a id="Incenter"> or <a name="Incenter"> inside <h3> or immediately after </h3>
     anchor_id = None

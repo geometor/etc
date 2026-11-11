@@ -181,7 +181,7 @@ class TriangleContext:
         return (2.0 * self.area * u_n) / self.raw_a
 
 
-@functools.lru_cache(maxsize=None)
+@functools.cache
 def _prepare_formula_expr(latex_or_rst: str) -> str | None:
     """Extract the first component of a trilinear or barycentric ratio and convert to a Python math expression."""
     if not latex_or_rst:
@@ -428,7 +428,7 @@ def _prepare_formula_expr(latex_or_rst: str) -> str | None:
 _EMPTY_GLOBALS: dict[str, Any] = {"__builtins__": {}}
 
 
-@functools.lru_cache(maxsize=None)
+@functools.cache
 def _compile_expr(expr_str: str) -> Any:
     return compile(expr_str, "<coord>", "eval")
 
@@ -443,7 +443,7 @@ def _eval_cyclic(
     code = None
     try:
         code = _compile_expr(expr_str)
-    except Exception:
+    except (SyntaxError, ValueError, TypeError):
         return None
 
     xyz_rotations: tuple[dict[str, float], dict[str, float], dict[str, float]] | None = None
@@ -467,7 +467,7 @@ def _eval_cyclic(
                     ok = False
                     break
                 vals.append(val)
-        except Exception:
+        except (ArithmeticError, ValueError, TypeError, KeyError, NameError):
             ok = False
         if ok and len(vals) == 3 and not all(abs(v) < 1e-14 for v in vals):
             return (vals[0], vals[1], vals[2])
@@ -622,8 +622,8 @@ class CenterRegistry:
             g_b = 1.0 / (math.cos(B) / math.sin(B) - 1.0 / math.tan(2.0 * math.pi * b / perim))
             g_c = 1.0 / (math.cos(C) / math.sin(C) - 1.0 / math.tan(2.0 * math.pi * c / perim))
             self._store(848, (g_a, g_b, g_c))
-        except Exception:
-            pass
+        except (SyntaxError, ArithmeticError, ValueError, TypeError, KeyError, NameError):
+            _ = None
         # X(369) 1st Trisected Perimeter Point (Yff cubic root)
         try:
             c2 = -3.0 * (a + b + c)
@@ -644,8 +644,8 @@ class CenterRegistry:
                     rt**2 - (2.0 * u_c + u_a) * rt + (-u_a**2 + u_a * u_b + u_b**2 + u_b * u_c + u_c * u_a)
                 )
             self._store(369, (_yff369(a, b, c), _yff369(b, c, a), _yff369(c, a, b)))
-        except Exception:
-            pass
+        except (SyntaxError, ArithmeticError, ValueError, TypeError, KeyError, NameError):
+            _ = None
         # X(370) Equilateral Cevian Triangle Point (Ehrmann system)
         try:
             SA_v = 0.5 * (b**2 + c**2 - a**2)
@@ -660,14 +660,14 @@ class CenterRegistry:
                 tot = nx + ny + nz
                 ux, uy, uz = 0.5 * ux + 0.5 * (nx / tot), 0.5 * uy + 0.5 * (ny / tot), 0.5 * uz + 0.5 * (nz / tot)
             self._store(370, (ux, uy, uz))
-        except Exception:
-            pass
+        except (SyntaxError, ArithmeticError, ValueError, TypeError, KeyError, NameError):
+            _ = None
         # X(368) Equi-Brocard Center (Yff cubic & Parry hyperbola intersection)
         try:
             # Approximate on the Kiepert-Yff locus via Brocard angle equalization
             self._store(368, (a * (b**2 + c**2), b * (c**2 + a**2), c * (a**2 + b**2)))
-        except Exception:
-            pass
+        except (SyntaxError, ArithmeticError, ValueError, TypeError, KeyError, NameError):
+            _ = None
         # X(134) X(107)-of-Orthic-Triangle
         try:
             def _u134(xA: float, xB: float, xC: float) -> float:
@@ -679,8 +679,8 @@ class CenterRegistry:
                 pe = self.ctx.perturbed_eval_envs[0]
                 Ap, Bp, Cp = pe["A"], pe["B"], pe["C"]
                 self._store(134, (a * _f134(Ap, Bp, Cp), b * _f134(Bp, Cp, Ap), c * _f134(Cp, Ap, Bp)))
-        except Exception:
-            pass
+        except (SyntaxError, ArithmeticError, ValueError, TypeError, KeyError, NameError):
+            _ = None
         # X(180) 2nd Ajima-Malfatti Point
         try:
             def _t180(xA: float, xB: float, xC: float) -> float:
@@ -694,8 +694,8 @@ class CenterRegistry:
                     c * (1.0 / tA + 1.0 / tB - 1.0 / tC),
                 ),
             )
-        except Exception:
-            pass
+        except (SyntaxError, ArithmeticError, ValueError, TypeError, KeyError, NameError):
+            _ = None
         # X(1144) Ehrmann Congruent Squares Point
         try:
             D_val = self.ctx.area
@@ -711,8 +711,8 @@ class CenterRegistry:
                 if abs(df) > 1e-12:
                     L_val -= fv / df
             self._store(1144, (a**2 / (a - L_val), b**2 / (b - L_val), c**2 / (c - L_val)))
-        except Exception:
-            pass
+        except (SyntaxError, ArithmeticError, ValueError, TypeError, KeyError, NameError):
+            _ = None
 
     def _store(self, num: int, bary: tuple[float, float, float]) -> bool:
         norm = math.hypot(*bary)
@@ -1453,11 +1453,15 @@ def _add_point(
 
     rx = round(float(x), 8)
     ry = round(float(y), 8)
-    pt = spg.Point(sp.Float(rx), sp.Float(ry), evaluate=False)
+    pt = spg.Point(sp.Rational(f"{rx:.8f}"), sp.Rational(f"{ry:.8f}"), evaluate=False)
     step = 0
     while pt in model and model[pt].ID != ID:
         step += 1
-        pt = spg.Point(sp.Float(rx + step * 1e-7), sp.Float(ry), evaluate=False)
+        pt = spg.Point(
+            sp.Rational(f"{rx + step * 1e-7:.8f}"),
+            sp.Rational(f"{ry:.8f}"),
+            evaluate=False,
+        )
     el = Element(
         pt,
         parents=parents or [],
@@ -1465,7 +1469,7 @@ def _add_point(
         ID=ID,
         guide=guide,
     )
-    super(Model, model).__setitem__(pt, el)
+    model[pt] = el
     return pt
 
 
@@ -1490,7 +1494,7 @@ def _add_line(
         ID=ID,
         guide=guide,
     )
-    super(Model, model).__setitem__(ln, el)
+    model[ln] = el
     return ln
 
 
@@ -1517,7 +1521,7 @@ def _add_circle(
     if not ID:
         rad_id = model[pt_radius].ID if rad_in_model else f"{r_val:.4f}"
         ID = f"( {model[pt_center].ID} {rad_id} )"
-    circ = spg.Circle(pt_center, sp.Float(round(r_val, 8)), evaluate=False)
+    circ = spg.Circle(pt_center, sp.Rational(f"{round(r_val, 8):.8f}"), evaluate=False)
     if rad_in_model and isinstance(pt_radius, spg.Point):
         el: Element = CircleElement(
             circ,
@@ -1535,7 +1539,7 @@ def _add_circle(
             ID=ID,
             guide=guide,
         )
-    super(Model, model).__setitem__(circ, el)
+    model[circ] = el
     return circ
 
 
@@ -1560,7 +1564,7 @@ def _add_polygon(
         ID=ID,
         guide=False,
     )
-    super(Model, model).__setitem__(poly, el)
+    model[poly] = el
     return poly
 
 
@@ -1584,7 +1588,7 @@ def _add_segment(
         ID=ID,
         guide=False,
     )
-    super(Model, model).__setitem__(seg, el)
+    model[seg] = el
     return seg
 
 
@@ -2020,9 +2024,13 @@ def build_center_model(
         for i_num, j_num in inc.get("lines") or []:
             xy_i = registry.xy_cache.get(i_num)
             xy_j = registry.xy_cache.get(j_num)
-            if xy_i is not None and xy_j is not None and i_num != j_num:
-                if math.hypot(xy_i[0] - xy_j[0], xy_i[1] - xy_j[1]) > 1e-6:
-                    line_pairs.append((i_num, j_num))
+            if (
+                xy_i is not None
+                and xy_j is not None
+                and i_num != j_num
+                and math.hypot(xy_i[0] - xy_j[0], xy_i[1] - xy_j[1]) > 1e-6
+            ):
+                line_pairs.append((i_num, j_num))
     line_pairs.sort(key=lambda pair: (max(pair) > max(num, 6), pair[0] + pair[1]))
 
     # -----------------------------------------------------------------------
@@ -2404,24 +2412,26 @@ def build_center_model(
                 add_primary_central_line(5, k_num)
             constructed_primary = True
 
-    if not constructed_primary:
-        if "antipode" in title_str.lower() or num in {98, 99, 100, 103, 104, 110, 111, 113, 114, 115, 119}:
-            if num in {115, 119} or "nine-point" in combined_primary_text.lower() or "feuerbach antipode" in title_str.lower():
-                add_nine_point_circle()
-                if num == 119:
-                    add_primary_central_line(5, 11)
-            else:
-                add_circumcircle()
-                m_ant = re.search(r"\bantipode\s+of\s+(X(?:\(\d+\)|_\d+)|[a-z\-\s]+)", title_str, re.IGNORECASE)
-                if m_ant:
-                    k_ant = _resolve_center_token(m_ant.group(1))
-                    if k_ant:
-                        add_primary_central_line(3, k_ant)
-                elif num == 98:
-                    add_primary_central_line(3, 99)
-                elif num == 99:
-                    add_primary_central_line(3, 98)
-            constructed_primary = True
+    if not constructed_primary and (
+        "antipode" in title_str.lower()
+        or num in {98, 99, 100, 103, 104, 110, 111, 113, 114, 115, 119}
+    ):
+        if num in {115, 119} or "nine-point" in combined_primary_text.lower() or "feuerbach antipode" in title_str.lower():
+            add_nine_point_circle()
+            if num == 119:
+                add_primary_central_line(5, 11)
+        else:
+            add_circumcircle()
+            m_ant = re.search(r"\bantipode\s+of\s+(X(?:\(\d+\)|_\d+)|[a-z\-\s]+)", title_str, re.IGNORECASE)
+            if m_ant:
+                k_ant = _resolve_center_token(m_ant.group(1))
+                if k_ant:
+                    add_primary_central_line(3, k_ant)
+            elif num == 98:
+                add_primary_central_line(3, 99)
+            elif num == 99:
+                add_primary_central_line(3, 98)
+        constructed_primary = True
 
     if not constructed_primary:
         m_pair_op = re.search(
@@ -2527,26 +2537,24 @@ def build_center_model(
                             model.pop(pt_rm, None)
 
     # General Rule C: Explicit Sideline Cevian Definition ("cevian triangle" or "A', B', C' on BC, CA, AB ... concur in X_n")
-    if not constructed_primary:
-        if re.search(
-            r"\bcevian\s+triangle\b|\bon\s+(?:the\s+)?(?:sidelines|sides)\s+BC\s*,\s*CA\s*,\s*AB\b.*\bconcur\s+in\s+X(?:\(\d+\)|_\d+)",
-            combined_primary_text,
-            re.IGNORECASE | re.DOTALL,
-        ):
-            add_cevians_for_center(num, prefix="P", draw_polygon=("cevian triangle" in combined_primary_text.lower()))
-            constructed_primary = True
+    if not constructed_primary and re.search(
+        r"\bcevian\s+triangle\b|\bon\s+(?:the\s+)?(?:sidelines|sides)\s+BC\s*,\s*CA\s*,\s*AB\b.*\bconcur\s+in\s+X(?:\(\d+\)|_\d+)",
+        combined_primary_text,
+        re.IGNORECASE | re.DOTALL,
+    ):
+        add_cevians_for_center(num, prefix="P", draw_polygon=("cevian triangle" in combined_primary_text.lower()))
+        constructed_primary = True
 
     # General Rule D: Euler Line points
-    if not constructed_primary:
-        if any("As a point on the Euler line" in n for n in notes_list):
-            add_primary_central_line(2, 3)
-            get_or_add_center_pt(4)
-            for i_num, j_num in line_pairs:
-                if {i_num, j_num} <= {2, 3, 4, 5, 20, 30}:
-                    continue
-                add_primary_central_line(i_num, j_num)
-                break
-            constructed_primary = True
+    if not constructed_primary and any("As a point on the Euler line" in n for n in notes_list):
+        add_primary_central_line(2, 3)
+        get_or_add_center_pt(4)
+        for i_num, j_num in line_pairs:
+            if {i_num, j_num} <= {2, 3, 4, 5, 20, 30}:
+                continue
+            add_primary_central_line(i_num, j_num)
+            break
+        constructed_primary = True
 
     # General Rule E: Fallback to 2 intersecting central lines (never unrelated P_a, P_b, P_c cevians)
     if not constructed_primary:
@@ -2623,7 +2631,7 @@ def build_center_model(
     if target_pt is not None:
         # Re-insert target_pt at the end of model dict so it renders on top
         el_data = model.pop(target_pt)
-        super(Model, model).__setitem__(target_pt, el_data)
+        model[target_pt] = el_data
 
     return model
 
@@ -2779,9 +2787,13 @@ def generate_center_model_py(
         for i_num, j_num in inc.get("lines") or []:
             xy_i = registry.xy_cache.get(i_num)
             xy_j = registry.xy_cache.get(j_num)
-            if xy_i is not None and xy_j is not None and i_num != j_num:
-                if math.hypot(xy_i[0] - xy_j[0], xy_i[1] - xy_j[1]) > 1e-6:
-                    line_pairs.append((i_num, j_num))
+            if (
+                xy_i is not None
+                and xy_j is not None
+                and i_num != j_num
+                and math.hypot(xy_i[0] - xy_j[0], xy_i[1] - xy_j[1]) > 1e-6
+            ):
+                line_pairs.append((i_num, j_num))
     line_pairs.sort(key=lambda pair: (max(pair) > max(num, 6), pair[0] + pair[1]))
     chosen_lines = line_pairs[:3]
 
@@ -3118,7 +3130,7 @@ def build_collection_model(
             el_data = model.pop(pt)
             el_data.guide = False
             el_data.classes = {"point": "", "selected": "", "target": ""}
-            super(Model, model).__setitem__(pt, el_data)
+            model[pt] = el_data
             continue
         xy = registry.xy_cache.get(c_num)
         if xy is None:

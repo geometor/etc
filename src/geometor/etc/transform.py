@@ -2,14 +2,12 @@
 
 from __future__ import annotations
 
-import os
 import re
 from pathlib import Path
 from typing import Any
 
 from .glossary import (
     _apply_outside_rst_spans,
-    extract_local_symbol_map,
     filter_center_refs,
     wrap_geom_refs,
     wrap_glossary_terms,
@@ -159,14 +157,15 @@ def _is_non_defining_note(s: str) -> bool:
     if "../bstud/" in s_str.lower():
         return True
     # Pure bibliographic / citation-only short note ending in a year
-    if len(s_str) < 95 and re.search(r"\b(?:19|20)\d{2}\.?\s*$", s_str):
-        if not re.search(
+    return bool(
+        len(s_str) < 95
+        and re.search(r"\b(?:19|20)\d{2}\.?\s*$", s_str)
+        and not re.search(
             r"\b(?:let|is\s+the|concur|perspector|intersection|center|triangle|circle|conjugate|midpoint|reflection)\b",
             s_str,
             re.IGNORECASE,
-        ):
-            return True
-    return False
+        )
+    )
 
 
 _PROPER_TITLE_NAMES: dict[str, str] = {
@@ -479,6 +478,7 @@ def _format_constructed_elements_rst(
             ("M_", ["M_a", "M_b", "M_c"], "Side midpoints of :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`"),
             ("H_", ["H_a", "H_b", "H_c"], "Altitude feet on :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`"),
             ("I_", ["I_a", "I_b", "I_c"], "Internal angle bisector feet on :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`"),
+            ("T_", ["T_a", "T_b", "T_c"], "Incircle touchpoints (right-spread pedal feet) on :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`"),
             ("Sym_", ["Sym_a", "Sym_b", "Sym_c"], "Symmedian feet on :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`"),
             ("P_", ["P_a", "P_b", "P_c"], "Sideline cevian traces on :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`"),
         ]
@@ -586,6 +586,547 @@ def _format_constructed_elements_rst(
     return out
 
 
+_COLLECTION_1_TOPIC_GUIDES: dict[int, str] = {
+    1: (
+        ":doc:`T_1: Isogonal Conjugate <../../../topics/isogonal-conjugate/index>` • "
+        ":doc:`T_2: Isotomic Conjugate <../../../topics/isotomic-conjugate/index>` • "
+        ":doc:`T_3: Complement & Anticomplement <../../../topics/complement-and-anticomplement/index>` • "
+        ":doc:`T_4: Harmonic Conjugate & Cross-Ratio <../../../topics/harmonic-conjugate/index>` • "
+        ":doc:`T_5: Circle Inversion <../../../topics/circle-inversion/index>` • "
+        ":doc:`T_7: The Nagel Line <../../../topics/nagel-line/index>` • "
+        ":doc:`T_9: The Feuerbach Line <../../../topics/feuerbach-line/index>` • "
+        ":doc:`T_10: The OI Line (Incenter–Circumcenter Axis) <../../../topics/oi-line/index>` • "
+        ":doc:`T_11: The Soddy Line <../../../topics/soddy-line/index>` • "
+        ":doc:`T_12: The Fuhrmann & Spieker Central Lines <../../../topics/fuhrmann-and-spieker-lines/index>` • "
+        ":doc:`T_14: The Incircle & Excircles <../../../topics/incircle-and-excircles/index>` • "
+        ":doc:`T_16: The Nine-Point (Feuerbach) Circle <../../../topics/nine-point-circle/index>` • "
+        ":doc:`T_17: The Spieker Circle <../../../topics/spieker-circle/index>` • "
+        ":doc:`T_20: Medial & Anticomplementary Triangles <../../../topics/medial-and-anticomplementary-triangles/index>` • "
+        ":doc:`T_22: Intouch (Contact) & Extouch Triangles <../../../topics/intouch-and-extouch-triangles/index>` • "
+        ":doc:`T_23: Incentral & Excentral Triangles <../../../topics/incentral-and-excentral-triangles/index>`"
+    ),
+}
+
+
+def _format_four_triangle_table_rst(num: int) -> list[str]:
+    """Build the 4-Triangle Exact Symbolic Coordinate & Invariant RST table for ``X_num``."""
+    from .symbolic_cache import CenterSymbolicRegistry, format_symbolic_latex
+    from .triangles import CANONICAL_TRIANGLES
+
+    tri_specs = [
+        ("heronian", r"**Heronian** :math:`(15, 13, 14)`", r":math:`\mathbb{Q}`"),
+        ("right", r"**Right** :math:`(3, 4, 5)`", r":math:`\mathbb{Q}`"),
+        ("kepler", r"**Kepler** :math:`(1, \sqrt{\phi}, \phi)`", r":math:`\mathbb{Q}(\sqrt{\phi})`"),
+        ("kimberling", r"**Kimberling** :math:`(6, 9, 13)`", r":math:`\mathbb{Q}(\sqrt{35})`"),
+    ]
+    dist_col = (
+        r"Inradius & Quadrance :math:`(r,\, Q_r)`"
+        if num == 1
+        else r"Shortest Trilinear :math:`(d_{\min},\, Q)`"
+    )
+    out = [
+        ".. list-table:: Exact Symbolic Coordinates & Invariants Across the Four Reference Triangles",
+        "   :header-rows: 1",
+        "   :widths: 18 10 18 14 16 14 14",
+        "",
+        "   * - Reference Triangle",
+        "     - Field",
+        r"     - Cartesian :math:`(x, y)`",
+        r"     - Trilinears :math:`\alpha : \beta : \gamma`",
+        r"     - Barycentrics :math:`u : v : w`",
+        r"     - Sub-Areas :math:`(\Delta_a, \Delta_b, \Delta_c)`",
+        f"     - {dist_col}",
+    ]
+    for t_key, t_label, f_latex in tri_specs:
+        tri = CANONICAL_TRIANGLES[t_key]
+        rec = CenterSymbolicRegistry(tri).get(num)
+        if rec is None:
+            continue
+        kp = rec.is_kepler
+        sa_parts = [format_symbolic_latex(sa, kepler_phi=kp) for sa in rec.sub_areas]
+        sa_ltx = rf"\left({sa_parts[0]},\; {sa_parts[1]},\; {sa_parts[2]}\right)"
+        d_val = tri.r if num == 1 else rec.search_value
+        q_val = tri.simplify(d_val * d_val)
+        d_ltx = format_symbolic_latex(d_val, kepler_phi=kp)
+        q_ltx = format_symbolic_latex(q_val, kepler_phi=kp)
+        if num == 1:
+            dq_cell = rf":math:`r = {d_ltx},\; Q_r = {q_ltx}`"
+        else:
+            dq_cell = rf":math:`{d_ltx}\; (Q = {q_ltx})`"
+        out.extend(
+            [
+                f"   * - {t_label}",
+                f"     - {f_latex}",
+                f"     - :math:`{rec.xy_latex()}`",
+                f"     - :math:`{rec.trilinear_latex()}`",
+                f"     - :math:`{rec.bary_latex()}`",
+                f"     - :math:`{sa_ltx}`",
+                f"     - {dq_cell}",
+            ]
+        )
+    out.append("")
+    return out
+
+
+def _format_five_act_center_rst(
+    data: dict[str, Any],
+    entry_dir: Path,
+    glossary_terms: dict[str, Any] | list[str] | None = None,
+    preambles: list[dict[str, Any]] | None = None,
+    valid_centers: set[int] | None = None,
+    figure_uri: str | None = None,
+    search_value: float | None = None,
+    include_model_py: bool = False,
+    model: Any = None,
+) -> str:
+    """Format the Unified 5-Act Visual & Symbolic Dossier (`index.rst`) for centers with a 5-act plate suite."""
+    from .ops import get_center_concordance
+    from .symbolic_cache import CenterSymbolicRegistry
+    from .triangles import CANONICAL_TRIANGLES
+
+    key = data["key"]
+    title = data.get("title", "")
+    num = int(data.get("num") or re.sub(r"[^0-9]", "", key) or 0)
+    if num > 0:
+        key = f"X_{num}"
+
+    concordance = get_center_concordance(num)
+    kimb_tri = CANONICAL_TRIANGLES["kimberling"]
+    kimb_rec = CenterSymbolicRegistry(kimb_tri).get(num)
+    exact_search_ltx = kimb_rec.search_latex() if kimb_rec is not None else ""
+    approx_search = (
+        kimb_rec.approx_search_value()
+        if kimb_rec is not None
+        else (search_value or 0.0)
+    )
+
+    lines: list[str] = [
+        f":order: {num}",
+        f":canonical_id: {key}",
+    ]
+    if title and title != key:
+        lines.append(f":subtitle: {title}")
+    aliases = data.get("aliases") or []
+    if aliases:
+        lines.append(f":aliases: {', '.join(aliases)}")
+    if data.get("dependencies"):
+        lines.append(f":dependencies: {', '.join(data['dependencies'])}")
+    lines.append("")
+
+    # Anchors (including canonical snake_case constructor anchor!)
+    lines.append(f".. _X_{num}:")
+    anchor_id = data.get("anchor_id")
+    seen_anchors = {f"x_{num}"}
+    if anchor_id and anchor_id.lower() not in seen_anchors and anchor_id not in {f"X_{num}", f"X({num})"}:
+        lines.append(f".. _{anchor_id}:")
+        seen_anchors.add(anchor_id.lower())
+    if concordance and concordance.function_name.lower() not in seen_anchors:
+        lines.append(f".. _{concordance.function_name}:")
+    lines.append("")
+
+    lines.append(key)
+    lines.append("=" * max(4, len(key)))
+    lines.append("")
+    if title and title != key:
+        lines.append(f".. rubric:: {title}")
+        lines.append("")
+
+    if concordance:
+        search_part = (
+            rf" • **Search Value** :math:`(6, 9, 13)`: :math:`{exact_search_ltx} \approx {approx_search:.12f}`"
+            if exact_search_ltx
+            else ""
+        )
+        lines.append(
+            f"``{concordance.signature}`` • **{concordance.classical_ref}** • "
+            f"**Kimberling** ``X({num})``{search_part}"
+        )
+        lines.append("")
+
+    seen_terms: set[str] = set()
+    seen_persons: set[str] = set()
+    seen_cites: set[str] = set()
+
+    raw_notes = data.get("notes") or []
+    raw_relations = data.get("relations") or []
+    enun_raw, remaining_notes = _extract_primary_enunciation(
+        raw_notes, raw_relations, num=num, title=title
+    )
+
+    # ------------------------------------------------------------------
+    # Act 1: Primary Construction & Concurrence
+    # ------------------------------------------------------------------
+    if enun_raw:
+        enriched_enun = _enrich_text(
+            enun_raw,
+            glossary_terms,
+            seen_terms,
+            seen_persons,
+            seen_cites,
+            valid_centers=valid_centers,
+        )
+        lines.append(".. enunciation::")
+        lines.append("")
+        for e_ln in enriched_enun.splitlines():
+            lines.append(f"   {e_ln}" if e_ln.strip() else "")
+        lines.append("")
+
+    if preambles:
+        for p_item in preambles:
+            parsed_p = parse_preamble(p_item.get("html", ""))
+            p_title = parsed_p["title"] or p_item.get("title", "Preamble")
+            p_paras = parsed_p["paragraphs"]
+            p_id = p_item.get("id")
+            if p_id:
+                lines.append(f".. _{p_id}:")
+                lines.append("")
+            lines.append(f".. admonition:: Group Preamble — {p_title}")
+            lines.append("   :class: note")
+            lines.append("")
+            for para in p_paras or [p_title]:
+                enriched_para = _enrich_text(
+                    para, glossary_terms, seen_terms, seen_persons, seen_cites, valid_centers=valid_centers
+                )
+                for p_ln in enriched_para.splitlines():
+                    lines.append(f"   {p_ln}" if p_ln.strip() else "")
+                lines.append("")
+
+    alt_title = f"{key} — {title}" if title and title != key else key
+    cap_title = f"**{key}** (*{title}*)" if title and title != key else f"**{key}**"
+    if figure_uri:
+        lines.append(f".. figure:: {figure_uri}")
+        lines.append(f"   :alt: {alt_title}")
+        lines.append("   :align: center")
+        lines.append("")
+        lines.append(
+            f"   {cap_title} constructed in exact rational coordinates on the Heronian reference triangle "
+            r":math:`(a, b, c) = (15, 13, 14)` over :math:`\mathbb{Q}` with vertices :g:`A <A>` = :math:`(0, 0)`, "
+            r":g:`B <B>` = :math:`(14, 0)`, :g:`C <C>` = :math:`(5, 12)`, area :math:`\Delta = 84`, and inradius :math:`r = 4`. "
+            r"Switch tabs above to inspect exact constructions on Right :math:`(3, 4, 5)`, Kepler :math:`(1, \sqrt{\phi}, \phi)`, "
+            r"and Kimberling :math:`(6, 9, 13)`."
+        )
+        lines.append("")
+
+    if model is not None:
+        lines.extend(
+            _format_constructed_elements_rst(
+                model, data, enun_raw, valid_centers=valid_centers
+            )
+        )
+
+    # ------------------------------------------------------------------
+    # Act 2: Homogeneous Coordinates & Exact Symbolic Invariants
+    # ------------------------------------------------------------------
+    lines.extend(
+        [
+            "Homogeneous Coordinates & Exact Invariants",
+            "------------------------------------------",
+            "",
+            ".. figure:: 02_coordinates.svg",
+            f"   :alt: {key} — Homogeneous Trilinear Distances and Barycentric Sub-Areas",
+            "   :align: center",
+            "",
+            (
+                f"   **Homogeneous Coordinates of {key}** on Heronian :math:`(15, 13, 14)`: orthogonal trilinear struts "
+                r":math:`(\alpha, \beta, \gamma)` and shaded barycentric sub-triangles :math:`(\Delta_a, \Delta_b, \Delta_c)`."
+            ),
+            "",
+        ]
+    )
+    if num == 1:
+        lines.extend(
+            [
+                (
+                    r"* **Trilinear Coordinates** (:math:`\alpha : \beta : \gamma = 1 : 1 : 1`): Dropping orthogonal perpendiculars "
+                    r":g:`X_1T_a </ X_1 T_a />`, :g:`X_1T_b </ X_1 T_b />`, and :g:`X_1T_c </ X_1 T_c />` from :g:`X_1 <X_1>` "
+                    r"to sidelines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, and :g:`AB <[ A B ]>` meets the sides at right-spread "
+                    r"touchpoints :g:`T_a <T_a>` = :math:`\left(\frac{46}{5}, \frac{32}{5}\right)`, :g:`T_b <T_b>` = :math:`\left(\frac{30}{13}, \frac{72}{13}\right)`, "
+                    r"and :g:`T_c <T_c>` = :math:`(6, 0)`. Every strut equals the exact inradius :math:`r = 4` (quadrance :math:`Q_r = 16`), "
+                    r"realizing :math:`4 : 4 : 4 = 1 : 1 : 1`."
+                ),
+                (
+                    r"* **Barycentric Coordinates** (:math:`u : v : w = a : b : c`): Joining :g:`X_1 <X_1>` to the vertices along "
+                    r":g:`X_1A </ X_1 A />`, :g:`X_1B </ X_1 B />`, and :g:`X_1C </ X_1 C />` partitions :math:`\triangle ABC` into "
+                    r"three sub-triangles :g:`△X_1BC << X_1 B C >>`, :g:`△X_1CA << X_1 C A >>`, and :g:`△X_1AB << X_1 A B >>`. "
+                    r"Sharing common altitude :math:`r = 4`, their exact signed areas on :math:`(15, 13, 14)` are "
+                    r":math:`\Delta_a = \frac{1}{2}(15)(4) = 30`, :math:`\Delta_b = \frac{1}{2}(13)(4) = 26`, and "
+                    r":math:`\Delta_c = \frac{1}{2}(14)(4) = 28` (:math:`30 + 26 + 28 = 84 = \Delta`), in exact ratio "
+                    r":math:`30 : 26 : 28 = 15 : 13 : 14 = a : b : c`."
+                ),
+                "",
+            ]
+        )
+
+    lines.extend(_format_four_triangle_table_rst(num))
+
+    has_coords = any(data.get(k) for k in ("trilinears", "barycentrics", "tripolars"))
+    alt_coord_bullets: list[str] = []
+    if has_coords or approx_search > 1e-12:
+        lines.append(".. signature:: center")
+        lines.append("")
+        for coord_key, coord_label in (
+            ("trilinears", "Trilinears"),
+            ("barycentrics", "Barycentrics"),
+            ("tripolars", "Tripolars"),
+        ):
+            items = data.get(coord_key) or []
+            if not items:
+                continue
+            enriched_items = []
+            for item in items:
+                enr = _enrich_text(
+                    " ".join(item.splitlines()).strip(),
+                    glossary_terms,
+                    seen_terms,
+                    seen_persons,
+                    seen_cites,
+                    valid_centers=valid_centers,
+                )
+                if enr:
+                    enriched_items.append(enr)
+            if not enriched_items:
+                continue
+            lines.append(f"   | **{coord_label}:** {enriched_items[0]}")
+            rest_start = 1
+            if len(enriched_items) > 1 and enriched_items[1].lower().startswith("where"):
+                lines.append(f"   |   {enriched_items[1]}")
+                rest_start = 2
+            for extra_it in enriched_items[rest_start:]:
+                alt_coord_bullets.append(f"**{coord_label}:** {extra_it}")
+
+        if exact_search_ltx:
+            lines.append(
+                rf"   | **Search Value (6, 9, 13):** :math:`{exact_search_ltx} \approx {approx_search:.12f}`"
+            )
+        elif approx_search > 1e-12:
+            lines.append(f"   | **Search Value (6, 9, 13):** :math:`{approx_search:.12f}`")
+        lines.append("")
+
+    if alt_coord_bullets:
+        n_alt = len(alt_coord_bullets)
+        lines.extend(
+            [
+                ".. collapse:: Alternate Coordinates",
+                f"   :badge: {'1 form' if n_alt == 1 else f'{n_alt} forms'}",
+                "",
+            ]
+        )
+        for b_line in alt_coord_bullets:
+            lines.append(f"   * {b_line}")
+        lines.append("")
+
+    combos = data.get("combinations") or []
+    if combos:
+        n_combos = len(combos)
+        lines.extend(
+            [
+                ".. collapse:: Linear Combinations",
+                f"   :badge: {'1 combination' if n_combos == 1 else f'{n_combos} combinations'}",
+                "",
+            ]
+        )
+        for combo in combos:
+            enriched_combo = _enrich_text(
+                combo, glossary_terms, seen_terms, seen_persons, seen_cites, valid_centers=valid_centers
+            )
+            combo_lines = [ln.strip() for ln in enriched_combo.splitlines() if ln.strip()]
+            if combo_lines:
+                lines.append(f"   * {' '.join(combo_lines)}")
+        lines.append("")
+
+    # ------------------------------------------------------------------
+    # Act 3: Incident Central Lines
+    # ------------------------------------------------------------------
+    if (entry_dir / "03_central_lines.svg").is_file():
+        lines.extend(
+            [
+                "Incident Central Lines",
+                "----------------------",
+                "",
+                ".. figure:: 03_central_lines.svg",
+                f"   :alt: {key} — Incident Central Lines",
+                "   :align: center",
+                "",
+                f"   **Principal Central Lines Through {key}** on Heronian :math:`(15, 13, 14)`.",
+                "",
+            ]
+        )
+        if num == 1:
+            lines.extend(
+                [
+                    r"* **Nagel Line** :g:`{1, 2, 8, 10} <{ 2, 8 }>` — collinear axis of :g:`X_1 <X_1>`, :ref:`X_2 <X_2>` (*Centroid*, :math:`(\frac{19}{3}, 4)`), :ref:`X_10 <X_10>` (*Spieker Center*, :math:`(\frac{13}{2}, 4)`), and :ref:`X_8 <X_8>` (*Nagel Point*, :math:`(7, 4)`). On :math:`(15, 13, 14)`, its exact equation is :math:`y - 4 = 0` (spread :math:`0`, **parallel to baseline** :g:`AB <[ A B ]>`).",
+                    r"* **Feuerbach Line** :g:`{1, 5, 11} <{ 5, 11 }>` — collinear axis of :g:`X_1 <X_1>`, :ref:`X_5 <X_5>` (*Nine-Point Center*, :math:`(6, \frac{63}{16})`), and :ref:`X_11 <X_11>` (*Feuerbach Point*, :math:`(6, 8)`). On :math:`(15, 13, 14)`, its exact equation is :math:`x - 6 = 0` (spread :math:`1`, **perpendicular to baseline** :g:`AB <[ A B ]>` and orthogonal to the Nagel line).",
+                    r"* **OI Line (Incenter–Circumcenter Axis)** :g:`{1, 3, 40} <{ 3, 40 }>` — joins :g:`X_1 <X_1>`, :ref:`X_3 <X_3>` (*Circumcenter*, :math:`(7, \frac{33}{8})`), and :ref:`X_40 <X_40>` (*Bevan Point*, :math:`(8, \frac{17}{4})`), with exact equation :math:`x - 8y + 26 = 0` (spread :math:`\frac{1}{65}`).",
+                    r"* **Incenter–Symmedian Line** :g:`{1, 6, 9} <{ 6, 9 }>` — joins :g:`X_1 <X_1>`, :ref:`X_6 <X_6>` (*Symmedian Point*, :math:`(\frac{1673}{295}, \frac{1176}{295})`), and :ref:`X_9 <X_9>` (*Mittenpunkt*, :math:`(\frac{973}{146}, \frac{294}{73})`), with exact equation :math:`4x - 97y + 364 = 0` (spread :math:`\frac{16}{9425}`).",
+                    r"* **Soddy Line** :g:`{1, 7, 20} <{ 7, 20 }>` — joins :g:`X_1 <X_1>`, :ref:`X_7 <X_7>` (*Gergonne Point*, :math:`(\frac{414}{73}, \frac{288}{73})`), and :ref:`X_20 <X_20>` (*de Longchamps Point*, :math:`(9, \frac{9}{2})`), with exact equation :math:`x - 6y + 18 = 0` (spread :math:`\frac{1}{37}`).",
+                    "",
+                ]
+            )
+
+    incidences = data.get("incidences") or []
+    for inc in incidences:
+        if isinstance(inc, dict):
+            line_pairs = inc.get("lines") or []
+            curves_prefix = inc.get("curves_prefix", "")
+            if line_pairs:
+                enriched_prefix = _enrich_text(
+                    curves_prefix, glossary_terms, seen_terms, seen_persons, seen_cites, valid_centers=valid_centers
+                ).strip()
+                is_bare_key = bool(
+                    re.match(
+                        r"^(?::ref:`X(?:_|\()\d+\)? <X(?:_|\()\d+\)?>`|X(?:_|\()\d+\)?)\s*$",
+                        enriched_prefix,
+                    )
+                )
+                if enriched_prefix and not is_bare_key:
+                    lines.append(".. container:: note-item")
+                    lines.append("")
+                    for c_ln in f"{enriched_prefix}.".splitlines():
+                        lines.append(f"   {c_ln}" if c_ln.strip() else "")
+                    lines.append("")
+
+                def _fmt_inc_pt(pt: int) -> str:
+                    if valid_centers is None or pt in valid_centers:
+                        return f":ref:`{pt} <X_{pt}>`"
+                    return str(pt)
+
+                formatted_pairs = [f"{{{_fmt_inc_pt(i)}, {_fmt_inc_pt(j)}}}" for i, j in line_pairs]
+                n_lines = len(line_pairs)
+                lines.extend(
+                    [
+                        ".. collapse:: Full Incident Central Line Catalog",
+                        f"   :badge: {'1 line' if n_lines == 1 else f'{n_lines} lines'}",
+                        "   :class: line-catalog",
+                        "",
+                        f"   {', '.join(formatted_pairs)}",
+                        "",
+                    ]
+                )
+
+    # ------------------------------------------------------------------
+    # Act 4: Functional Relations & Conjugates
+    # ------------------------------------------------------------------
+    if (entry_dir / "04_relations.svg").is_file():
+        lines.extend(
+            [
+                "Functional Relations & Conjugates",
+                "---------------------------------",
+                "",
+                ".. figure:: 04_relations.svg",
+                f"   :alt: {key} — Functional Relations and Conjugates",
+                "   :align: center",
+                "",
+                f"   **Conjugate & Homothetic Partners of {key}** on Heronian :math:`(15, 13, 14)`.",
+                "",
+            ]
+        )
+        if num == 1:
+            lines.extend(
+                [
+                    r"* **Self-Isogonal Fixed Point:** :g:`X_1 <X_1>` is its own :term:`isogonal conjugate <isogonal-conjugate>` (:math:`1^{-1} : 1^{-1} : 1^{-1} = 1 : 1 : 1`), acting as the identity element of trilinear multiplication.",
+                    r"* **Isotomic Conjugate:** :g:`X_75 <X_75>` (:ref:`X_75 <X_75>`, homogeneous barycentrics :math:`bc : ca : ab = 182 : 210 : 195`) at exact rational coordinates :math:`\left(\frac{3915}{587}, \frac{2340}{587}\right)`, joined along :g:`{1, 75} <{ 1, 75 }>`.",
+                    r"* **Anticomplement of Spieker Center:** :g:`X_1 <X_1>` is the :term:`anticomplement <anticomplement>` of :g:`X_10 <X_10>` (:ref:`Spieker Center <X_10>`, :math:`\left(\frac{13}{2}, 4\right)`), dilated from homothetic center :g:`X_2 <X_2>` (:ref:`Centroid <X_2>`, :math:`\left(\frac{19}{3}, 4\right)`) by factor :math:`-2` along :g:`{1, 10} <{ 1, 10 }>`.",
+                    r"* **Complement of Nagel Point:** :g:`X_1 <X_1>` is the :term:`complement <complement>` of :g:`X_8 <X_8>` (:ref:`Nagel Point <X_8>`, :math:`(7, 4)`), dilated from :g:`X_2 <X_2>` by factor :math:`-\frac{1}{2}` along :g:`{1, 8} <{ 1, 8 }>`; equivalently, :g:`X_10 <X_10>` is the exact midpoint of :g:`X_1 <X_1>` and :g:`X_8 <X_8>`.",
+                    r"* **Circumcircle Inverse:** Inversion in :g:`circumcircle <circumcircle>` centered at :g:`X_3 <X_3>` = :math:`\left(7, \frac{33}{8}\right)` (:math:`R^2 = \frac{4225}{64}`) maps :g:`X_1 <X_1>` along the :g:`OI axis <{ 1, 3 }>` (:math:`Q(X_1, X_3) = \frac{65}{64}`, scale :math:`R^2 / Q = 65`) to :ref:`X_36 <X_36>` at exact integer coordinates :math:`(-58, -4)`.",
+                    "",
+                ]
+            )
+
+    if raw_relations:
+        n_rels = len(raw_relations)
+        lines.extend(
+            [
+                ".. collapse:: Full Functional Relations Catalog",
+                f"   :badge: {'1 relation' if n_rels == 1 else f'{n_rels} relations'}",
+                "",
+            ]
+        )
+        for rel in raw_relations:
+            rel_with_tuples = _wrap_relation_tuples(rel, valid_centers=valid_centers)
+            enriched_rel = _enrich_text(
+                rel_with_tuples, glossary_terms, seen_terms, seen_persons, seen_cites, valid_centers=valid_centers
+            )
+            rel_lines = [ln.strip() for ln in enriched_rel.splitlines() if ln.strip()]
+            if rel_lines:
+                lines.append(f"   * {' '.join(rel_lines)}")
+        lines.append("")
+
+    # ------------------------------------------------------------------
+    # Act 5: Four-Triangle Symbolic Invariance
+    # ------------------------------------------------------------------
+    if (entry_dir / "05_four_triangles.svg").is_file():
+        lines.extend(
+            [
+                "Four-Triangle Symbolic Invariance",
+                "---------------------------------",
+                "",
+                ".. figure:: 05_four_triangles.svg",
+                f"   :alt: {key} — Invariance Across Four Canonical Symbolic Reference Triangles",
+                "   :align: center",
+                "",
+                (
+                    f"   **Four-Triangle Invariance of {key}** across :g:`Heronian (15, 13, 14) <panel-heronian>`, "
+                    r":g:`Right (3, 4, 5) <panel-right>`, :g:`Kepler (1, √φ, φ) <panel-kepler>`, and "
+                    r":g:`Kimberling (6, 9, 13) <panel-kimberling>`."
+                ),
+                "",
+            ]
+        )
+        if num == 1:
+            lines.extend(
+                [
+                    (
+                        r"Across all four number fields — rational :math:`\mathbb{Q}` on :g:`Heronian (15, 13, 14) <heronian-X_1>` "
+                        r"(:math:`X_1 = (6, 4)`, :g:`r = 4 <heronian-incircle>`) and Pythagorean :g:`Right (3, 4, 5) <right-X_1>` "
+                        r"(:math:`X_1 = (3, 1)`, :g:`r = 1 <right-incircle>`), golden quadratic tower :math:`\mathbb{Q}(\sqrt{\phi})` on "
+                        r":g:`Kepler (1, √φ, φ) <kepler-X_1>`, and quadratic :math:`\mathbb{Q}(\sqrt{35})` on "
+                        r":g:`Kimberling (6, 9, 13) <kimberling-X_1>` (:g:`r = 2\sqrt{35}/7 <kimberling-incircle>`) — "
+                        r"**X_1** remains strictly interior, equidistant from all three sidelines (:math:`1 : 1 : 1`), and partitions "
+                        r"the triangle area in exact proportion :math:`a : b : c`."
+                    ),
+                    "",
+                ]
+            )
+
+    if num in _COLLECTION_1_TOPIC_GUIDES:
+        lines.extend(
+            [
+                ".. admonition:: Related Collection 1 Topic Guides",
+                "   :class: tip",
+                "",
+                f"   {_COLLECTION_1_TOPIC_GUIDES[num]}",
+                "",
+            ]
+        )
+
+    if remaining_notes:
+        lines.extend(["Notes", "-----", ""])
+
+        def _fmt_circle_idx(m: re.Match) -> str:
+            idx_str = m.group(1)
+            idx_int = int(idx_str)
+            if valid_centers is None or idx_int in valid_centers:
+                return f":ref:`{idx_str} <X_{idx_str}>`"
+            return idx_str
+
+        for note in remaining_notes:
+            enriched_note = _enrich_text(
+                note, glossary_terms, seen_terms, seen_persons, seen_cites, valid_centers=valid_centers
+            )
+            lines.append(".. container:: note-item")
+            lines.append("")
+            for n_ln in enriched_note.splitlines():
+                if n_ln.strip().startswith("* (") and ";" in n_ln:
+                    n_ln = re.sub(r"(?<=[;,]\s)(\d+)\b", _fmt_circle_idx, n_ln)
+                lines.append(f"   {n_ln}" if n_ln.strip() else "")
+            lines.append("")
+
+    if include_model_py:
+        lines.extend([".. toctree::", "   :hidden:", "", "   code", ""])
+
+    return "\n".join(lines).rstrip() + "\n"
+
+
 def transform_center_to_rst(
     data: dict[str, Any],
     glossary_terms: dict[str, Any] | list[str] | None = None,
@@ -596,10 +1137,26 @@ def transform_center_to_rst(
     search_value: float | None = None,
     include_model_py: bool = False,
     model: Any = None,
+    entry_dir: str | Path | None = None,
 ) -> str:
     """Transform a parsed center dictionary into the Book Codex Overview track (`index.rst`)."""
     if not data or not data.get("key"):
         return ""
+
+    if entry_dir is not None:
+        e_path = Path(entry_dir)
+        if (e_path / "02_coordinates.svg").is_file() and (e_path / "05_four_triangles.svg").is_file():
+            return _format_five_act_center_rst(
+                data=data,
+                entry_dir=e_path,
+                glossary_terms=glossary_terms,
+                preambles=preambles,
+                valid_centers=valid_centers,
+                figure_uri=figure_uri,
+                search_value=search_value,
+                include_model_py=include_model_py,
+                model=model,
+            )
 
     key = data["key"]
     title = data.get("title", "")
@@ -967,6 +1524,7 @@ def transform_center_to_code_rst(
     glossary_terms: dict[str, Any] | list[str] | None = None,
     valid_centers: set[int] | None = None,
     figure_uri: str | None = None,
+    entry_dir: str | Path | None = None,
 ) -> str:
     """Transform a parsed center dictionary into the companion Code track (`code.rst`)."""
     if not data or not data.get("key"):
@@ -979,6 +1537,14 @@ def transform_center_to_code_rst(
     title = data.get("title", "")
     alt_title = f"{key} — {title}" if title and title != key else key
     cap_title = f"**{key}** (*{title}*)" if title and title != key else f"**{key}**"
+
+    is_heronian = False
+    if entry_dir is not None and figure_uri:
+        svg_file = Path(entry_dir) / figure_uri
+        if svg_file.is_file():
+            head_txt = svg_file.read_text(encoding="utf-8")[:512]
+            if 'data-triangle="heronian"' in head_txt:
+                is_heronian = True
 
     lines: list[str] = [
         f":canonical_id: {key}",
@@ -1024,10 +1590,17 @@ def transform_center_to_code_rst(
         lines.append(f"   :alt: {alt_title}")
         lines.append("   :align: center")
         lines.append("")
-        lines.append(
-            f"   {cap_title} constructed on acute reference triangle "
-            r":math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`."
-        )
+        if is_heronian:
+            lines.append(
+                f"   {cap_title} constructed in exact rational coordinates on the Heronian reference triangle "
+                r":math:`(a, b, c) = (15, 13, 14)` over :math:`\mathbb{Q}` with vertices :g:`A <A>` = :math:`(0, 0)`, "
+                r":g:`B <B>` = :math:`(14, 0)`, :g:`C <C>` = :math:`(5, 12)`."
+            )
+        else:
+            lines.append(
+                f"   {cap_title} constructed on acute reference triangle "
+                r":math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`."
+            )
         lines.append("")
 
     lines.append(".. literalinclude:: model.py")
@@ -1495,7 +2068,18 @@ def _process_center_index(idx: int) -> None:
     kimb_svg_name = f"x-{num:05d}-kimberling.svg"
 
     model_py_changed = False
-    if num in acute_reg.xy_cache:
+    is_symbolic_model_py = (
+        model_py_path.is_file()
+        and "construct_reference_triangle" in model_py_path.read_text(encoding="utf-8")
+    )
+    if is_symbolic_model_py:
+        import runpy
+
+        has_model_py = True
+        mod_ns = runpy.run_path(str(model_py_path))
+        if "build_model" in mod_ns:
+            model_acute = mod_ns["build_model"]("heronian")
+    elif num in acute_reg.xy_cache:
         model_py_code = generate_center_model_py(center, acute_reg)
         if not model_py_path.is_file() or model_py_path.read_text(encoding="utf-8") != model_py_code:
             model_py_path.write_text(model_py_code, encoding="utf-8")
@@ -1512,7 +2096,7 @@ def _process_center_index(idx: int) -> None:
         and (entry_dir / f"x-{num:05d}.json").is_file()
     )
 
-    if render_graphics and model_acute is not None and not all_svgs_exist:
+    if render_graphics and model_acute is not None and not all_svgs_exist and not is_symbolic_model_py:
         write_center_svg(
             model_acute,
             entry_dir / svg_name,
@@ -1559,6 +2143,7 @@ def _process_center_index(idx: int) -> None:
         search_value=search_val,
         include_model_py=has_model_py,
         model=model_acute,
+        entry_dir=entry_dir,
     )
     if not filepath.is_file() or filepath.read_text(encoding="utf-8") != rst_content:
         filepath.write_text(rst_content, encoding="utf-8")
@@ -1569,6 +2154,7 @@ def _process_center_index(idx: int) -> None:
             glossary_terms=glossary_terms,
             valid_centers=valid_centers,
             figure_uri=figure_uri,
+            entry_dir=entry_dir,
         )
         if not code_rst_path.is_file() or code_rst_path.read_text(encoding="utf-8") != code_rst_content:
             code_rst_path.write_text(code_rst_content, encoding="utf-8")
@@ -1908,7 +2494,7 @@ def generate_preambles_guide_rst(
                 lines.append(f".. _{e_id}:")
                 lines.append("")
 
-            if title_norm and not re.match(r"^(?:Centers|Points)\s+X_", title_norm, re.I):
+            if title_norm and not re.match(r"^(?:Centers|Points)\s+X_", title_norm, re.IGNORECASE):
                 lines.append(f"* {range_str} — **{title_norm}**")
             else:
                 lines.append(f"* {range_str}")

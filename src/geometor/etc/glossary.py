@@ -3,9 +3,7 @@
 from __future__ import annotations
 
 import html
-import json
 import re
-from pathlib import Path
 from typing import Any
 
 from bs4 import BeautifulSoup, NavigableString, Tag
@@ -1454,7 +1452,7 @@ _LOCAL_TRIANGLE_BINDING_RULES: list[tuple[re.Pattern[str], tuple[str, str, str],
     (
         re.compile(
             r"^(?:the\s+)?(?:orthic\s+triangle|(?:pedal|cevian)\s+triangle\s+of\s+(?:X\(4\)|X_4\b|H\b|the\s+orthocenter))(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC|\s+in\s+the\s+plane\s+of\s+(?:a\s+)?triangle\s+ABC)?(?!\s+of\b)",
-            re.I,
+            re.IGNORECASE,
         ),
         ("H_a", "H_b", "H_c"),
         "orthic",
@@ -1462,7 +1460,7 @@ _LOCAL_TRIANGLE_BINDING_RULES: list[tuple[re.Pattern[str], tuple[str, str, str],
     (
         re.compile(
             r"^(?:the\s+)?(?:medial\s+triangle|cevian\s+triangle\s+of\s+(?:X\(2\)|X_2\b|G\b|the\s+centroid)|pedal\s+triangle\s+of\s+(?:X\(3\)|X_3\b|O\b|the\s+circumcenter))(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC)?(?!\s+of\b)",
-            re.I,
+            re.IGNORECASE,
         ),
         ("M_a", "M_b", "M_c"),
         "medial",
@@ -1470,7 +1468,7 @@ _LOCAL_TRIANGLE_BINDING_RULES: list[tuple[re.Pattern[str], tuple[str, str, str],
     (
         re.compile(
             r"^(?:the\s+)?(?:(?:intouch|contact)\s+triangle|cevian\s+triangle\s+of\s+(?:X\(7\)|X_7\b|the\s+gergonne\s+point)|pedal\s+triangle\s+of\s+(?:X\(1\)|X_1\b|I\b|the\s+incenter))(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC)?(?!\s+of\b)",
-            re.I,
+            re.IGNORECASE,
         ),
         ("T_a", "T_b", "T_c"),
         "intouch",
@@ -1478,7 +1476,7 @@ _LOCAL_TRIANGLE_BINDING_RULES: list[tuple[re.Pattern[str], tuple[str, str, str],
     (
         re.compile(
             r"^(?:the\s+)?(?:extouch\s+triangle|cevian\s+triangle\s+of\s+(?:X\(8\)|X_8\b|the\s+nagel\s+point))(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC)?(?!\s+of\b)",
-            re.I,
+            re.IGNORECASE,
         ),
         ("N_a", "N_b", "N_c"),
         "extouch",
@@ -1486,7 +1484,7 @@ _LOCAL_TRIANGLE_BINDING_RULES: list[tuple[re.Pattern[str], tuple[str, str, str],
     (
         re.compile(
             r"^(?:the\s+)?(?:excentral\s+triangle|anticevian\s+triangle\s+of\s+(?:X\(1\)|X_1\b|I\b|the\s+incenter))(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC)?(?!\s+of\b)",
-            re.I,
+            re.IGNORECASE,
         ),
         ("J_a", "J_b", "J_c"),
         "excentral",
@@ -1494,7 +1492,7 @@ _LOCAL_TRIANGLE_BINDING_RULES: list[tuple[re.Pattern[str], tuple[str, str, str],
     (
         re.compile(
             r"^(?:the\s+)?(?:tangential\s+triangle|antipedal\s+triangle\s+of\s+(?:X\(3\)|X_3\b|O\b|the\s+circumcenter)|anticevian\s+triangle\s+of\s+(?:X\(6\)|X_6\b|K\b|the\s+symmedian\s+point))(?:\s*\(the\s+tangential\s+triangle\))?(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC)?(?!\s+of\b)",
-            re.I,
+            re.IGNORECASE,
         ),
         ("Tan_a", "Tan_b", "Tan_c"),
         "tangential",
@@ -1502,7 +1500,7 @@ _LOCAL_TRIANGLE_BINDING_RULES: list[tuple[re.Pattern[str], tuple[str, str, str],
     (
         re.compile(
             r"^(?:the\s+)?(?:anticomplementary\s+triangle|anticevian\s+triangle\s+of\s+(?:X\(2\)|X_2\b|G\b|the\s+centroid)|antipedal\s+triangle\s+of\s+(?:X\(4\)|X_4\b|H\b|the\s+orthocenter))(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC)?(?!\s+of\b)",
-            re.I,
+            re.IGNORECASE,
         ),
         ("K_a", "K_b", "K_c"),
         "anticomplementary",
@@ -1510,7 +1508,7 @@ _LOCAL_TRIANGLE_BINDING_RULES: list[tuple[re.Pattern[str], tuple[str, str, str],
     (
         re.compile(
             r"^(?:the\s+)?(?:incentral\s+triangle|cevian\s+triangle\s+of\s+(?:X\(1\)|X_1\b|I(?:\s*\(incenter\))?\b|the\s+incenter))(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC)?(?!\s+of\b)",
-            re.I,
+            re.IGNORECASE,
         ),
         ("I_a", "I_b", "I_c"),
         "incentral",
@@ -1518,7 +1516,7 @@ _LOCAL_TRIANGLE_BINDING_RULES: list[tuple[re.Pattern[str], tuple[str, str, str],
     (
         re.compile(
             r"^(?:the\s+)?(?:symmedial\s+triangle|cevian\s+triangle\s+of\s+(?:X\(6\)|X_6\b|K\b|the\s+symmedian\s+point))(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC)?(?!\s+of\b)",
-            re.I,
+            re.IGNORECASE,
         ),
         ("Sym_a", "Sym_b", "Sym_c"),
         "symmedial",
@@ -1526,7 +1524,7 @@ _LOCAL_TRIANGLE_BINDING_RULES: list[tuple[re.Pattern[str], tuple[str, str, str],
     (
         re.compile(
             r"^(?:the\s+)?(?:(?:1st\s+)?euler|feuerbach)\s+triangle(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC)?(?!\s+of\b)",
-            re.I,
+            re.IGNORECASE,
         ),
         ("Eu_a", "Eu_b", "Eu_c"),
         "euler",
@@ -1534,7 +1532,7 @@ _LOCAL_TRIANGLE_BINDING_RULES: list[tuple[re.Pattern[str], tuple[str, str, str],
     (
         re.compile(
             r"^(?:the\s+)?reflection\s+triangle(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC)?(?!\s+of\b)",
-            re.I,
+            re.IGNORECASE,
         ),
         ("Ref_a", "Ref_b", "Ref_c"),
         "reflection",
@@ -1542,7 +1540,7 @@ _LOCAL_TRIANGLE_BINDING_RULES: list[tuple[re.Pattern[str], tuple[str, str, str],
     (
         re.compile(
             r"^(?:the\s+)?circummedial\s+triangle(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC)?(?!\s+of\b)",
-            re.I,
+            re.IGNORECASE,
         ),
         ("Cm_a", "Cm_b", "Cm_c"),
         "circummedial",
@@ -1550,7 +1548,7 @@ _LOCAL_TRIANGLE_BINDING_RULES: list[tuple[re.Pattern[str], tuple[str, str, str],
     (
         re.compile(
             r"^(?:the\s+)?kosnita\s+triangle(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC)?(?!\s+of\b)",
-            re.I,
+            re.IGNORECASE,
         ),
         ("O_A", "O_B", "O_C"),
         "kosnita",
@@ -1558,7 +1556,7 @@ _LOCAL_TRIANGLE_BINDING_RULES: list[tuple[re.Pattern[str], tuple[str, str, str],
     (
         re.compile(
             r"^(?:the\s+)?outer\s+napoleon\s+triangle(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC)?(?!\s+of\b)",
-            re.I,
+            re.IGNORECASE,
         ),
         ("Nap_a", "Nap_b", "Nap_c"),
         "outer_napoleon",
@@ -1566,7 +1564,7 @@ _LOCAL_TRIANGLE_BINDING_RULES: list[tuple[re.Pattern[str], tuple[str, str, str],
     (
         re.compile(
             r"^(?:the\s+)?inner\s+napoleon\s+triangle(?:\s+of\s+(?:a\s+)?(?:triangle\s+)?ABC)?(?!\s+of\b)",
-            re.I,
+            re.IGNORECASE,
         ),
         ("Nap'_a", "Nap'_b", "Nap'_c"),
         "inner_napoleon",
@@ -1793,11 +1791,7 @@ def wrap_geom_refs(text: str) -> str:
             abc_set = {"A", "B", "C"}
 
             is_valid = False
-            if {b1, b2, b3} == abc_set:
-                is_valid = True
-            elif b1 in abc_set and b2 in abc_set and b3 in abc_set and has_prime:
-                is_valid = True
-            elif (b1, b2, b3) in _NAMED_3V_TUPLES:
+            if {b1, b2, b3} == abc_set or b1 in abc_set and b2 in abc_set and b3 in abc_set and has_prime or (b1, b2, b3) in _NAMED_3V_TUPLES:
                 is_valid = True
             else:
                 abc_in = [b for b in (b1, b2, b3) if b in abc_set]
@@ -1853,17 +1847,13 @@ def wrap_geom_refs(text: str) -> str:
             abc_set = {"A", "B", "C"}
 
             is_valid = False
-            if has_prime:
+            if has_prime or b1 != b2 and (
+                (b1 in abc_set and b2 in abc_set)
+                or (b1 in abc_set and b2 in _SEG_AUX_POINTS)
+                or (b2 in abc_set and b1 in _SEG_AUX_POINTS)
+                or (b1 + b2) in _NAMED_2V_PAIRS
+            ):
                 is_valid = True
-            elif b1 != b2:
-                if b1 in abc_set and b2 in abc_set:
-                    is_valid = True
-                elif (b1 in abc_set and b2 in _SEG_AUX_POINTS) or (
-                    b2 in abc_set and b1 in _SEG_AUX_POINTS
-                ):
-                    is_valid = True
-                elif (b1 + b2) in _NAMED_2V_PAIRS:
-                    is_valid = True
 
             if not is_valid:
                 return m.group(0)
@@ -2003,7 +1993,7 @@ def _get_glossary_lookup_and_pattern(
 
     if isinstance(terms, dict):
         term_names = [
-            k for k in terms.keys() if k.lower() not in SKIP_AUTO_WRAP_TERMS
+            k for k in terms if k.lower() not in SKIP_AUTO_WRAP_TERMS
         ]
     else:
         term_names = [

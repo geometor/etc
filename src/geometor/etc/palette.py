@@ -41,6 +41,7 @@ PARTNER_COLOR_RING: tuple[str, ...] = (
 )
 
 REFERENCE_TRIANGLE_COLORS: dict[str, str] = {
+    "heronian": "gold",
     "acute": "gold",
     "right": "blue",
     "kepler": "green",

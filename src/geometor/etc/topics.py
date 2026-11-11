@@ -10,25 +10,22 @@ from __future__ import annotations
 
 import html
 import math
-from pathlib import Path
 import re
+from pathlib import Path
 from typing import Any
 
 from geometor.model import Model
 
 from .construct import (
+    CenterRegistry,
+    TriangleContext,
     _add_circle,
     _add_line,
     _add_point,
     _add_polygon,
-    _add_segment,
-    CenterRegistry,
-    TRIANGLE_PRESETS,
-    TriangleContext,
 )
 from .render import render_model_svg
 from .video import _mute_other_spans, generate_four_triangles_svg
-
 
 # ---------------------------------------------------------------------------
 # Topic Catalog for Collection 1 (X_1–X_19)
@@ -1403,7 +1400,7 @@ def build_topic_model(
         t_pt = pts_by_num[primary_c]
         if t_pt in model:
             tdata = model.pop(t_pt)
-            super(Model, model).__setitem__(t_pt, tdata)
+            model[t_pt] = tdata
 
     return model
 

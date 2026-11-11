@@ -1,30 +1,43 @@
 """Visual coordinate diagram generators and dual-format (9:16 + 16:9) video compiler for ETC centers.
 
 Each per-center video focuses strictly on a single center X_n and its relations across 5 visual facets:
-  1. PRIMARY VIEW & ENUNCIATION (Thumbnail & Slide 1) — Exact primary construction SVG from the web page
-  2. HOMOGENEOUS COORDINATES OF X_n (Slide 2) — Trilinear distances (alpha : beta : gamma) and Barycentric sub-areas (u : v : w)
-  3. INCIDENT CENTRAL LINES (Slide 3) — Primary SVG with .show-lines active, revealing collinear centers and central lines
-  4. FUNCTIONAL RELATIONS & CONJUGATES (Slide 4) — Explorer-styled model plotting X_n with its conjugates and homothetic partners
-  5. FOUR REFERENCE TRIANGLES (Slide 5) — 2x2 invariance showcase across Acute, Right, Kepler, and Kimberling triangles
+
+1. PRIMARY VIEW & ENUNCIATION (Thumbnail & Slide 1) — Exact primary construction SVG from the web page
+2. HOMOGENEOUS COORDINATES OF X_n (Slide 2) — Trilinear distances (alpha : beta : gamma) and Barycentric sub-areas (u : v : w)
+3. INCIDENT CENTRAL LINES (Slide 3) — Primary SVG with .show-lines active, revealing collinear centers and central lines
+4. FUNCTIONAL RELATIONS & CONJUGATES (Slide 4) — Explorer-styled model plotting X_n with its conjugates and homothetic partners
+5. FOUR REFERENCE TRIANGLES (Slide 5) — 2x2 invariance showcase across Heronian, Right, Kepler, and Kimberling triangles
 """
 
 from __future__ import annotations
 
 import html
+import json
 import math
 import re
 from pathlib import Path
 from typing import Any
 
+import sympy as sp
 from geometor.model import Model
 
 from .construct import (
+    CenterRegistry,
+    TriangleContext,
     _add_circle,
     _add_line,
     _add_point,
     _add_polygon,
-    CenterRegistry,
-    TriangleContext,
+)
+from .ops import (
+    add_circle,
+    add_line,
+    add_point,
+    construct_reference_triangle,
+    create_model,
+    midpoint,
+    perpendicular_foot,
+    promote_point_to_top,
 )
 from .palette import (
     PARTNER_COLOR_RING,
@@ -33,7 +46,13 @@ from .palette import (
     get_circle_color_token,
     token_hex,
 )
-from .render import render_model_svg
+from .render import EXPLORER_SVG_CSS, INTERACTIVE_SVG_JS, render_model_svg
+from .symbolic_cache import (
+    CenterSymbolicRegistry,
+    format_symbolic_latex,
+    format_symbolic_pretty,
+)
+from .triangles import CANONICAL_TRIANGLES, SymbolicTriangle
 
 
 def _svg_x(num: int | str, suffix: str = "") -> str:
@@ -119,43 +138,148 @@ def _fit_points_to_box(
     return (scale, ox, oy)
 
 
-def generate_center_coordinates_svg(
-    num: int,
-    title: str,
-    trilinear_formula: str,
-    barycentric_formula: str,
-    ctx: TriangleContext,
-    reg: CenterRegistry,
-) -> str:
-    """Generate a 1000x760 SVG showing both Trilinear struts and Barycentric sub-areas for X_n."""
-    tri_clean = _clean_formula(trilinear_formula)
-    bary_clean = _clean_formula(barycentric_formula)
-    A, B, C = ctx.A_xy, ctx.B_xy, ctx.C_xy
-    P = reg.xy_cache.get(num, (0.5, 0.25))
-    bary = reg.bary_cache.get(num, (ctx.raw_a, ctx.raw_b, ctx.raw_c))
-    a_r, b_r, c_r = ctx.raw_a, ctx.raw_b, ctx.raw_c
+def _safe_meta_json(catalog: dict[str, Any]) -> str:
+    """Serialize an ``etc-elements-meta`` catalog so XML parsers never trip on ``<``, ``>``, or ``&``."""
+    return (
+        json.dumps(catalog, ensure_ascii=True, separators=(",", ":"))
+        .replace("<", "\\u003c")
+        .replace(">", "\\u003e")
+        .replace("&", "\\u0026")
+    )
 
-    Pa = _foot_on_line(P, B, C)
-    Pb = _foot_on_line(P, C, A)
-    Pc = _foot_on_line(P, A, B)
 
-    # Directed trilinear magnitudes & normalized percentages
-    raw_tri = (bary[0] / a_r, bary[1] / b_r, bary[2] / c_r)
-    sum_abs_tri = sum(abs(x) for x in raw_tri) or 1.0
-    norm_tri = [abs(x) / sum_abs_tri for x in raw_tri]
-    min_pos_tri = min((abs(x) for x in raw_tri if abs(x) > 1e-9), default=1.0)
-    disp_tri = [x / min_pos_tri for x in raw_tri]
+def _exact_pedal_foot(
+    p_xy: tuple[sp.Expr, sp.Expr],
+    q1_xy: tuple[sp.Expr, sp.Expr],
+    q2_xy: tuple[sp.Expr, sp.Expr],
+    tri: SymbolicTriangle,
+) -> tuple[sp.Expr, sp.Expr]:
+    """Compute the exact orthogonal projection of ``p_xy`` onto line ``q1_xy-q2_xy`` in ``tri``'s field."""
+    dx = tri.simplify(q2_xy[0] - q1_xy[0])
+    dy = tri.simplify(q2_xy[1] - q1_xy[1])
+    denom = tri.simplify(dx * dx + dy * dy)
+    if denom == 0:
+        return q1_xy
+    t = tri.simplify(((p_xy[0] - q1_xy[0]) * dx + (p_xy[1] - q1_xy[1]) * dy) / denom)
+    return (
+        tri.simplify(q1_xy[0] + t * dx),
+        tri.simplify(q1_xy[1] + t * dy),
+    )
 
-    sum_abs_bary = sum(abs(x) for x in bary) or 1.0
-    pcts_bary = [100.0 * abs(x) / sum_abs_bary for x in bary]
-    min_pos_bary = min((abs(x) for x in bary if abs(x) > 1e-9), default=1.0)
-    disp_bary = [x / min_pos_bary for x in bary]
-    if all(abs(x * 5 - round(x * 5)) < 1e-4 for x in disp_bary) and not all(
-        abs(x - round(x)) < 1e-4 for x in disp_bary
+
+def _exact_sub_area(
+    p1: tuple[sp.Expr, sp.Expr],
+    p2: tuple[sp.Expr, sp.Expr],
+    p3: tuple[sp.Expr, sp.Expr],
+    tri: SymbolicTriangle,
+) -> sp.Expr:
+    """Compute exact unsigned area of sub-triangle ``p1 p2 p3`` in ``tri``'s field."""
+    det = tri.simplify(
+        (p2[0] - p1[0]) * (p3[1] - p1[1]) - (p3[0] - p1[0]) * (p2[1] - p1[1])
+    )
+    val = det / sp.Integer(2)
+    return tri.simplify(-val if float(val.evalf(20)) < 0 else val)
+
+
+def _exact_line_eq_pair(
+    q1: tuple[sp.Expr, sp.Expr],
+    q2: tuple[sp.Expr, sp.Expr],
+    tri: SymbolicTriangle,
+) -> tuple[str, str]:
+    """Return ``(latex_eq, pretty_eq)`` for the exact line through ``q1`` and ``q2``."""
+    x_sym, y_sym = sp.Symbol("x"), sp.Symbol("y")
+    a_c = tri.simplify(q1[1] - q2[1])
+    b_c = tri.simplify(q2[0] - q1[0])
+    c_c = tri.simplify(q1[0] * q2[1] - q2[0] * q1[1])
+    if float(a_c.evalf(20)) < -1e-15 or (
+        abs(float(a_c.evalf(20))) <= 1e-15 and float(b_c.evalf(20)) < -1e-15
     ):
-        disp_bary = [x * 5 for x in disp_bary]
+        a_c, b_c, c_c = -a_c, -b_c, -c_c
+    if all(isinstance(v, sp.Rational) for v in (a_c, b_c, c_c)):
+        lcm_d = sp.ilcm(a_c.q, b_c.q, c_c.q)
+        ia = int(a_c * lcm_d)
+        ib = int(b_c * lcm_d)
+        ic = int(c_c * lcm_d)
+        g = math.gcd(math.gcd(abs(ia), abs(ib)), abs(ic)) or 1
+        a_c = sp.Integer(ia // g)
+        b_c = sp.Integer(ib // g)
+        c_c = sp.Integer(ic // g)
+    lhs = a_c * x_sym + b_c * y_sym + c_c
+    return (
+        f"{format_symbolic_latex(lhs)} = 0",
+        f"{format_symbolic_pretty(lhs)} = 0",
+    )
 
-    scale, ox, oy = _fit_points_to_box([A, B, C, P, Pa, Pb, Pc], 110.0, 48.0, 780.0, 664.0)
+
+def _pt_meta_entry(
+    eid: str,
+    name: str,
+    color: str,
+    pt_ex: tuple[sp.Expr, sp.Expr],
+    bary_latex: str = "",
+    bary_pretty: str = "",
+    tri_latex: str = "",
+    tri_pretty: str = "",
+    kepler_phi: bool = False,
+) -> dict[str, Any]:
+    """Build an ``etc-elements-meta`` point entry with exact symbolic rows."""
+    px_f = float(pt_ex[0].evalf(20))
+    py_f = float(pt_ex[1].evalf(20))
+    c_ltx = (
+        f"\\left({format_symbolic_latex(pt_ex[0], kepler_phi=kepler_phi)},\\; "
+        f"{format_symbolic_latex(pt_ex[1], kepler_phi=kepler_phi)}\\right)"
+    )
+    c_prt = (
+        f"({format_symbolic_pretty(pt_ex[0], kepler_phi=kepler_phi)}, "
+        f"{format_symbolic_pretty(pt_ex[1], kepler_phi=kepler_phi)})"
+    )
+    sym_rows: list[dict[str, str]] = [
+        {"label": "(x, y)", "latex": c_ltx, "pretty": c_prt}
+    ]
+    if tri_latex:
+        sym_rows.append({"label": "trilinear", "latex": tri_latex, "pretty": tri_pretty})
+    if bary_latex:
+        sym_rows.append({"label": "bary", "latex": bary_latex, "pretty": bary_pretty})
+    return {
+        "ID": eid,
+        "type": "point",
+        "color": color,
+        "name": name,
+        "symbolic_rows": sym_rows,
+        "approx": f"≈ ({px_f:.6f}, {py_f:.6f})",
+        "related_points": [eid],
+    }
+
+
+def generate_symbolic_coordinates_svg(
+    num: int = 1,
+    title: str = "",
+    trilinear_formula: str = "1 : 1 : 1",
+    barycentric_formula: str = "a : b : c",
+    preset: str = "heronian",
+) -> str:
+    """Generate an interactive 1000x760 SVG for Act 2 showing exact symbolic Trilinear struts and Barycentric sub-areas."""
+    tri = CANONICAL_TRIANGLES.get(preset, CANONICAL_TRIANGLES["heronian"])
+    sym_reg = CenterSymbolicRegistry(tri)
+    rec = sym_reg.get(num)
+    if rec is None:
+        raise ValueError(f"Center X_{num} could not be evaluated symbolically on {preset}")
+
+    A_ex, B_ex, C_ex = tri.A_xy, tri.B_xy, tri.C_xy
+    P_ex = rec.xy
+    Pa_ex = _exact_pedal_foot(P_ex, B_ex, C_ex, tri)
+    Pb_ex = _exact_pedal_foot(P_ex, C_ex, A_ex, tri)
+    Pc_ex = _exact_pedal_foot(P_ex, A_ex, B_ex, tri)
+
+    A = (float(A_ex[0].evalf(20)), float(A_ex[1].evalf(20)))
+    B = (float(B_ex[0].evalf(20)), float(B_ex[1].evalf(20)))
+    C = (float(C_ex[0].evalf(20)), float(C_ex[1].evalf(20)))
+    P = (float(P_ex[0].evalf(20)), float(P_ex[1].evalf(20)))
+    Pa = (float(Pa_ex[0].evalf(20)), float(Pa_ex[1].evalf(20)))
+    Pb = (float(Pb_ex[0].evalf(20)), float(Pb_ex[1].evalf(20)))
+    Pc = (float(Pc_ex[0].evalf(20)), float(Pc_ex[1].evalf(20)))
+
+    scale, ox, oy = _fit_points_to_box([A, B, C, P, Pa, Pb, Pc], 110.0, 48.0, 780.0, 646.0)
 
     As = _to_screen(A, scale, ox, oy)
     Bs = _to_screen(B, scale, ox, oy)
@@ -173,7 +297,217 @@ def generate_center_coordinates_svg(
     mb = ((Ps[0] + Pbs[0]) * 0.5 - 26, (Ps[1] + Pbs[1]) * 0.5 - 6)
     mc = ((Ps[0] + Pcs[0]) * 0.5 + 20, (Ps[1] + Pcs[1]) * 0.5 + 6)
 
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" width="100%" height="100%">
+    fa_id, fb_id, fc_id = ("T_a", "T_b", "T_c") if num == 1 else ("P_a", "P_b", "P_c")
+    sa_id = f"/ X_{num} {fa_id} /"
+    sb_id = f"/ X_{num} {fb_id} /"
+    sc_id = f"/ X_{num} {fc_id} /"
+    sub_a_id = f"< X_{num} B C >"
+    sub_b_id = f"< X_{num} C A >"
+    sub_c_id = f"< X_{num} A B >"
+    sub_a_esc = html.escape(sub_a_id, quote=True)
+    sub_b_esc = html.escape(sub_b_id, quote=True)
+    sub_c_esc = html.escape(sub_c_id, quote=True)
+
+    # Exact symbolic invariants for catalog
+    area_a = _exact_sub_area(P_ex, B_ex, C_ex, tri)
+    area_b = _exact_sub_area(P_ex, C_ex, A_ex, tri)
+    area_c = _exact_sub_area(P_ex, A_ex, B_ex, tri)
+    qa_s = tri.simplify((Pa_ex[0] - P_ex[0]) ** 2 + (Pa_ex[1] - P_ex[1]) ** 2)
+    qb_s = tri.simplify((Pb_ex[0] - P_ex[0]) ** 2 + (Pb_ex[1] - P_ex[1]) ** 2)
+    qc_s = tri.simplify((Pc_ex[0] - P_ex[0]) ** 2 + (Pc_ex[1] - P_ex[1]) ** 2)
+    la_s = tri.simplify(sp.sqrt(qa_s))
+    lb_s = tri.simplify(sp.sqrt(qb_s))
+    lc_s = tri.simplify(sp.sqrt(qc_s))
+
+    catalog: dict[str, Any] = {
+        "A": _pt_meta_entry("A", "Vertex A", "#66ff66", A_ex, "1 : 0 : 0", "1 : 0 : 0"),
+        "B": _pt_meta_entry("B", "Vertex B", "#66ff66", B_ex, "0 : 1 : 0", "0 : 1 : 0"),
+        "C": _pt_meta_entry("C", "Vertex C", "#f8f6f0", C_ex, "0 : 0 : 1", "0 : 0 : 1"),
+        f"X_{num}": _pt_meta_entry(
+            f"X_{num}",
+            title or ("INCENTER" if num == 1 else f"Center X_{num}"),
+            "#ffd700",
+            P_ex,
+            rec.bary_latex(),
+            rec.bary_pretty(),
+            rec.trilinear_latex(),
+            rec.trilinear_pretty(),
+        ),
+        fa_id: _pt_meta_entry(
+            fa_id,
+            f"Right-Spread Pedal Foot {fa_id} on BC",
+            "#e8b85a",
+            Pa_ex,
+        ),
+        fb_id: _pt_meta_entry(
+            fb_id,
+            f"Right-Spread Pedal Foot {fb_id} on CA",
+            "#38bdf8",
+            Pb_ex,
+        ),
+        fc_id: _pt_meta_entry(
+            fc_id,
+            f"Right-Spread Pedal Foot {fc_id} on AB",
+            "#5ec27e",
+            Pc_ex,
+        ),
+    }
+
+    for sid, p1_e, p2_e, s_len, s_col, s_lbl in [
+        ("[ B C ]", B_ex, C_ex, tri.a, "#cbd5e1", "Sideline BC (Side a)"),
+        ("[ C A ]", C_ex, A_ex, tri.b, "#cbd5e1", "Sideline CA (Side b)"),
+        ("[ A B ]", A_ex, B_ex, tri.c, "#cbd5e1", "Sideline AB (Side c)"),
+    ]:
+        eq_l, eq_p = _exact_line_eq_pair(p1_e, p2_e, tri)
+        q_side = tri.simplify(s_len * s_len)
+        catalog[sid] = {
+            "ID": sid,
+            "type": "line",
+            "color": s_col,
+            "name": s_lbl,
+            "symbolic_rows": [
+                {"label": "eq", "latex": eq_l, "pretty": eq_p},
+                {
+                    "label": "length",
+                    "latex": format_symbolic_latex(s_len),
+                    "pretty": format_symbolic_pretty(s_len),
+                },
+                {
+                    "label": "Q",
+                    "latex": format_symbolic_latex(q_side),
+                    "pretty": format_symbolic_pretty(q_side),
+                },
+            ],
+            "approx": f"≈ length {float(s_len.evalf(20)):.6f}",
+        }
+
+    for st_id, st_len, st_q, st_col, st_sym, side_nm in [
+        (sa_id, la_s, qa_s, "#e8b85a", "\\alpha", "BC"),
+        (sb_id, lb_s, qb_s, "#38bdf8", "\\beta", "CA"),
+        (sc_id, lc_s, qc_s, "#5ec27e", "\\gamma", "AB"),
+    ]:
+        catalog[st_id] = {
+            "ID": st_id,
+            "type": "segment",
+            "color": st_col,
+            "name": f"Orthogonal Trilinear Strut ⊥ {side_nm}",
+            "symbolic_rows": [
+                {
+                    "label": "d",
+                    "latex": f"{st_sym}_0 = {format_symbolic_latex(st_len)}",
+                    "pretty": format_symbolic_pretty(st_len),
+                },
+                {
+                    "label": "Q",
+                    "latex": format_symbolic_latex(st_q),
+                    "pretty": format_symbolic_pretty(st_q),
+                },
+                {"label": "spread", "latex": "1 \\;(\\perp)", "pretty": "1 (⊥)"},
+            ],
+            "approx": f"≈ {float(st_len.evalf(20)):.6f}",
+        }
+
+    for spk_id, v_ex, v_nm in [
+        (f"/ X_{num} A /", A_ex, "A"),
+        (f"/ X_{num} B /", B_ex, "B"),
+        (f"/ X_{num} C /", C_ex, "C"),
+    ]:
+        q_spk = tri.simplify((v_ex[0] - P_ex[0]) ** 2 + (v_ex[1] - P_ex[1]) ** 2)
+        l_spk = tri.simplify(sp.sqrt(q_spk))
+        catalog[spk_id] = {
+            "ID": spk_id,
+            "type": "segment",
+            "color": "#cbd5e1",
+            "name": f"Barycentric Partition Spoke X_{num}{v_nm}",
+            "symbolic_rows": [
+                {
+                    "label": "length",
+                    "latex": format_symbolic_latex(l_spk),
+                    "pretty": format_symbolic_pretty(l_spk),
+                },
+                {
+                    "label": "Q",
+                    "latex": format_symbolic_latex(q_spk),
+                    "pretty": format_symbolic_pretty(q_spk),
+                },
+            ],
+            "approx": f"≈ {float(l_spk.evalf(20)):.6f}",
+        }
+
+    for poly_id, sub_area, p_col, sym_u, opp_v in [
+        (sub_a_id, area_a, "#e8b85a", "u", "BC"),
+        (sub_b_id, area_b, "#38bdf8", "v", "CA"),
+        (sub_c_id, area_c, "#5ec27e", "w", "AB"),
+    ]:
+        share = tri.simplify(sub_area / tri.area)
+        pct = 100.0 * float(share.evalf(20))
+        catalog[poly_id] = {
+            "ID": poly_id,
+            "type": "polygon",
+            "color": p_col,
+            "name": f"Barycentric Sub-Triangle △X_{num}{opp_v}",
+            "symbolic_rows": [
+                {
+                    "label": "Δ",
+                    "latex": format_symbolic_latex(sub_area),
+                    "pretty": format_symbolic_pretty(sub_area),
+                },
+                {
+                    "label": f"{sym_u} / Δ",
+                    "latex": format_symbolic_latex(share),
+                    "pretty": format_symbolic_pretty(share),
+                },
+                {
+                    "label": "bary",
+                    "latex": rec.bary_latex(),
+                    "pretty": rec.bary_pretty(),
+                },
+            ],
+            "approx": f"≈ {float(sub_area.evalf(20)):.4f} ({pct:.1f}% of Δ)",
+        }
+
+    incircle_svg = ""
+    if num == 1:
+        r_scr = float(tri.r.evalf(20)) * scale
+        q_r = tri.simplify(tri.r * tri.r)
+        x_sym, y_sym = sp.Symbol("x"), sp.Symbol("y")
+        eq_lhs = (x_sym - P_ex[0]) ** 2 + (y_sym - P_ex[1]) ** 2
+        eq_ltx = f"{format_symbolic_latex(eq_lhs)} = {format_symbolic_latex(q_r)}"
+        eq_prt = f"{format_symbolic_pretty(eq_lhs)} = {format_symbolic_pretty(q_r)}"
+        catalog["incircle"] = {
+            "ID": "incircle",
+            "type": "circle",
+            "color": "#f472b6",
+            "name": "Inscribed Circle (Incircle)",
+            "symbolic_rows": [
+                {"label": "eq", "latex": eq_ltx, "pretty": eq_prt},
+                {
+                    "label": "r",
+                    "latex": format_symbolic_latex(tri.r),
+                    "pretty": format_symbolic_pretty(tri.r),
+                },
+                {
+                    "label": "Q_r",
+                    "latex": format_symbolic_latex(q_r),
+                    "pretty": format_symbolic_pretty(q_r),
+                },
+            ],
+            "approx": f"r ≈ {float(tri.r.evalf(20)):.6f}",
+        }
+        incircle_svg = (
+            f'  <circle id="incircle" data-id="incircle" data-ref="incircle" class="etc-plate-circle" '
+            f'cx="{Ps[0]:.1f}" cy="{Ps[1]:.1f}" r="{r_scr:.1f}" '
+            f'fill="none" stroke="rgba(244, 114, 182, 0.52)" stroke-width="2.2" stroke-dasharray="6,5" />\n'
+        )
+
+    sub_caption = (
+        f"{tri.label} • Δ = {format_symbolic_pretty(tri.area)}, r = {format_symbolic_pretty(tri.r)}"
+    )
+    meta_json = _safe_meta_json(catalog)
+
+    return f"""<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" data-initial-viewbox="0 0 1000 760" data-triangle="{html.escape(preset)}" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <style>{EXPLORER_SVG_CSS}</style>
   <defs>
     <filter id="glow-coord" filterUnits="userSpaceOnUse" x="-100" y="-100" width="1200" height="960">
       <feGaussianBlur stdDeviation="4.5" result="blur" />
@@ -182,56 +516,83 @@ def generate_center_coordinates_svg(
   </defs>
 
   <!-- Shaded Barycentric Sub-Triangles: u = Area(X_n BC), v = Area(X_n CA), w = Area(X_n AB) -->
-  <polygon points="{Ps[0]:.1f},{Ps[1]:.1f} {Bs[0]:.1f},{Bs[1]:.1f} {Cs[0]:.1f},{Cs[1]:.1f}"
-           fill="rgba(232, 184, 90, 0.19)" stroke="none" />
-  <polygon points="{Ps[0]:.1f},{Ps[1]:.1f} {Cs[0]:.1f},{Cs[1]:.1f} {As[0]:.1f},{As[1]:.1f}"
-           fill="rgba(56, 189, 248, 0.17)" stroke="none" />
-  <polygon points="{Ps[0]:.1f},{Ps[1]:.1f} {As[0]:.1f},{As[1]:.1f} {Bs[0]:.1f},{Bs[1]:.1f}"
-           fill="rgba(94, 194, 126, 0.17)" stroke="none" />
+  <polygon id="{sub_a_esc}" data-id="{sub_a_esc}" data-ref="{sub_a_esc}" class="etc-plate-poly"
+           points="{Ps[0]:.1f},{Ps[1]:.1f} {Bs[0]:.1f},{Bs[1]:.1f} {Cs[0]:.1f},{Cs[1]:.1f}"
+           fill="#e8b85a" fill-opacity="0.19" stroke="none" />
+  <polygon id="{sub_b_esc}" data-id="{sub_b_esc}" data-ref="{sub_b_esc}" class="etc-plate-poly"
+           points="{Ps[0]:.1f},{Ps[1]:.1f} {Cs[0]:.1f},{Cs[1]:.1f} {As[0]:.1f},{As[1]:.1f}"
+           fill="#38bdf8" fill-opacity="0.17" stroke="none" />
+  <polygon id="{sub_c_esc}" data-id="{sub_c_esc}" data-ref="{sub_c_esc}" class="etc-plate-poly"
+           points="{Ps[0]:.1f},{Ps[1]:.1f} {As[0]:.1f},{As[1]:.1f} {Bs[0]:.1f},{Bs[1]:.1f}"
+           fill="#5ec27e" fill-opacity="0.17" stroke="none" />
 
-  <!-- Extended sidelines (when pedal feet fall outside segment) -->
-  <line x1="{Bs[0]:.1f}" y1="{Bs[1]:.1f}" x2="{Pas[0]:.1f}" y2="{Pas[1]:.1f}" stroke="#64748b" stroke-width="1.8" stroke-dasharray="5,5" />
-  <line x1="{Cs[0]:.1f}" y1="{Cs[1]:.1f}" x2="{Pbs[0]:.1f}" y2="{Pbs[1]:.1f}" stroke="#64748b" stroke-width="1.8" stroke-dasharray="5,5" />
-  <line x1="{As[0]:.1f}" y1="{As[1]:.1f}" x2="{Pcs[0]:.1f}" y2="{Pcs[1]:.1f}" stroke="#64748b" stroke-width="1.8" stroke-dasharray="5,5" />
+{incircle_svg}  <!-- Extended sidelines (when pedal feet fall outside segment) -->
+  <line x1="{Bs[0]:.1f}" y1="{Bs[1]:.1f}" x2="{Pas[0]:.1f}" y2="{Pas[1]:.1f}" stroke="#64748b" stroke-width="1.8" stroke-dasharray="5,5" pointer-events="none" />
+  <line x1="{Cs[0]:.1f}" y1="{Cs[1]:.1f}" x2="{Pbs[0]:.1f}" y2="{Pbs[1]:.1f}" stroke="#64748b" stroke-width="1.8" stroke-dasharray="5,5" pointer-events="none" />
+  <line x1="{As[0]:.1f}" y1="{As[1]:.1f}" x2="{Pcs[0]:.1f}" y2="{Pcs[1]:.1f}" stroke="#64748b" stroke-width="1.8" stroke-dasharray="5,5" pointer-events="none" />
 
-  <!-- Reference Triangle ABC (dotted so only perpendicular struts are solid) -->
-  <polygon points="{As[0]:.1f},{As[1]:.1f} {Bs[0]:.1f},{Bs[1]:.1f} {Cs[0]:.1f},{Cs[1]:.1f}"
-           fill="none" stroke="#cbd5e1" stroke-width="2.6" stroke-dasharray="2, 4.5" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Reference Triangle Sidelines BC, CA, AB -->
+  <line id="[ B C ]" data-id="[ B C ]" data-ref="[ B C ]" class="etc-plate-line"
+        x1="{Bs[0]:.1f}" y1="{Bs[1]:.1f}" x2="{Cs[0]:.1f}" y2="{Cs[1]:.1f}"
+        stroke="#cbd5e1" stroke-width="2.8" stroke-dasharray="2, 4.5" stroke-linecap="round" />
+  <line id="[ C A ]" data-id="[ C A ]" data-ref="[ C A ]" class="etc-plate-line"
+        x1="{Cs[0]:.1f}" y1="{Cs[1]:.1f}" x2="{As[0]:.1f}" y2="{As[1]:.1f}"
+        stroke="#cbd5e1" stroke-width="2.8" stroke-dasharray="2, 4.5" stroke-linecap="round" />
+  <line id="[ A B ]" data-id="[ A B ]" data-ref="[ A B ]" class="etc-plate-line"
+        x1="{As[0]:.1f}" y1="{As[1]:.1f}" x2="{Bs[0]:.1f}" y2="{Bs[1]:.1f}"
+        stroke="#cbd5e1" stroke-width="2.8" stroke-dasharray="2, 4.5" stroke-linecap="round" />
 
   <!-- Barycentric partition spokes (dash-dot) from X_n to vertices A, B, C -->
-  <line x1="{Ps[0]:.1f}" y1="{Ps[1]:.1f}" x2="{As[0]:.1f}" y2="{As[1]:.1f}" stroke="#cbd5e1" stroke-width="2.2" stroke-dasharray="10,5,2.5,5" opacity="0.65" />
-  <line x1="{Ps[0]:.1f}" y1="{Ps[1]:.1f}" x2="{Bs[0]:.1f}" y2="{Bs[1]:.1f}" stroke="#cbd5e1" stroke-width="2.2" stroke-dasharray="10,5,2.5,5" opacity="0.65" />
-  <line x1="{Ps[0]:.1f}" y1="{Ps[1]:.1f}" x2="{Cs[0]:.1f}" y2="{Cs[1]:.1f}" stroke="#cbd5e1" stroke-width="2.2" stroke-dasharray="10,5,2.5,5" opacity="0.65" />
+  <line id="/ X_{num} A /" data-id="/ X_{num} A /" data-ref="/ X_{num} A /" class="etc-plate-line"
+        x1="{Ps[0]:.1f}" y1="{Ps[1]:.1f}" x2="{As[0]:.1f}" y2="{As[1]:.1f}" stroke="#cbd5e1" stroke-width="2.2" stroke-dasharray="10,5,2.5,5" opacity="0.65" />
+  <line id="/ X_{num} B /" data-id="/ X_{num} B /" data-ref="/ X_{num} B /" class="etc-plate-line"
+        x1="{Ps[0]:.1f}" y1="{Ps[1]:.1f}" x2="{Bs[0]:.1f}" y2="{Bs[1]:.1f}" stroke="#cbd5e1" stroke-width="2.2" stroke-dasharray="10,5,2.5,5" opacity="0.65" />
+  <line id="/ X_{num} C /" data-id="/ X_{num} C /" data-ref="/ X_{num} C /" class="etc-plate-line"
+        x1="{Ps[0]:.1f}" y1="{Ps[1]:.1f}" x2="{Cs[0]:.1f}" y2="{Cs[1]:.1f}" stroke="#cbd5e1" stroke-width="2.2" stroke-dasharray="10,5,2.5,5" opacity="0.65" />
 
   <!-- Right-angle markers at pedal feet -->
-  <path d="{ra_a}" fill="none" stroke="#e8b85a" stroke-width="2.4" opacity="0.9" />
-  <path d="{ra_b}" fill="none" stroke="#38bdf8" stroke-width="2.4" opacity="0.9" />
-  <path d="{ra_c}" fill="none" stroke="#5ec27e" stroke-width="2.4" opacity="0.9" />
+  <path d="{ra_a}" fill="none" stroke="#e8b85a" stroke-width="2.4" opacity="0.9" pointer-events="none" />
+  <path d="{ra_b}" fill="none" stroke="#38bdf8" stroke-width="2.4" opacity="0.9" pointer-events="none" />
+  <path d="{ra_c}" fill="none" stroke="#5ec27e" stroke-width="2.4" opacity="0.9" pointer-events="none" />
 
   <!-- Three Directed Perpendicular Struts (alpha, beta, gamma) -->
-  <line x1="{Ps[0]:.1f}" y1="{Ps[1]:.1f}" x2="{Pas[0]:.1f}" y2="{Pas[1]:.1f}"
-        stroke="#e8b85a" stroke-width="5.0" stroke-linecap="round" filter="url(#glow-coord)" />
-  <line x1="{Ps[0]:.1f}" y1="{Ps[1]:.1f}" x2="{Pbs[0]:.1f}" y2="{Pbs[1]:.1f}"
-        stroke="#38bdf8" stroke-width="5.0" stroke-linecap="round" filter="url(#glow-coord)" />
-  <line x1="{Ps[0]:.1f}" y1="{Ps[1]:.1f}" x2="{Pcs[0]:.1f}" y2="{Pcs[1]:.1f}"
-        stroke="#5ec27e" stroke-width="5.0" stroke-linecap="round" filter="url(#glow-coord)" />
+  <line id="{sa_id}" data-id="{sa_id}" data-ref="{sa_id}" class="etc-plate-strut"
+        x1="{Ps[0]:.1f}" y1="{Ps[1]:.1f}" x2="{Pas[0]:.1f}" y2="{Pas[1]:.1f}"
+        stroke="#e8b85a" stroke-width="5.2" stroke-linecap="round" filter="url(#glow-coord)" />
+  <line id="{sb_id}" data-id="{sb_id}" data-ref="{sb_id}" class="etc-plate-strut"
+        x1="{Ps[0]:.1f}" y1="{Ps[1]:.1f}" x2="{Pbs[0]:.1f}" y2="{Pbs[1]:.1f}"
+        stroke="#38bdf8" stroke-width="5.2" stroke-linecap="round" filter="url(#glow-coord)" />
+  <line id="{sc_id}" data-id="{sc_id}" data-ref="{sc_id}" class="etc-plate-strut"
+        x1="{Ps[0]:.1f}" y1="{Ps[1]:.1f}" x2="{Pcs[0]:.1f}" y2="{Pcs[1]:.1f}"
+        stroke="#5ec27e" stroke-width="5.2" stroke-linecap="round" filter="url(#glow-coord)" />
 
   <!-- Pedal feet -->
-  <circle cx="{Pas[0]:.1f}" cy="{Pas[1]:.1f}" r="5.8" fill="#e8b85a" stroke="#0d111a" stroke-width="2" />
-  <circle cx="{Pbs[0]:.1f}" cy="{Pbs[1]:.1f}" r="5.8" fill="#38bdf8" stroke="#0d111a" stroke-width="2" />
-  <circle cx="{Pcs[0]:.1f}" cy="{Pcs[1]:.1f}" r="5.8" fill="#5ec27e" stroke="#0d111a" stroke-width="2" />
+  <circle id="{fa_id}" data-id="{fa_id}" data-ref="{fa_id}" class="etc-plate-pt"
+          cx="{Pas[0]:.1f}" cy="{Pas[1]:.1f}" r="6.2" fill="#e8b85a" stroke="#0d111a" stroke-width="2" />
+  <circle id="{fb_id}" data-id="{fb_id}" data-ref="{fb_id}" class="etc-plate-pt"
+          cx="{Pbs[0]:.1f}" cy="{Pbs[1]:.1f}" r="6.2" fill="#38bdf8" stroke="#0d111a" stroke-width="2" />
+  <circle id="{fc_id}" data-id="{fc_id}" data-ref="{fc_id}" class="etc-plate-pt"
+          cx="{Pcs[0]:.1f}" cy="{Pcs[1]:.1f}" r="6.2" fill="#5ec27e" stroke="#0d111a" stroke-width="2" />
 
   <!-- Vertices A, B, C -->
-  <circle cx="{As[0]:.1f}" cy="{As[1]:.1f}" r="7.2" fill="#66ff66" stroke="#0d111a" stroke-width="2.2" />
-  <circle cx="{Bs[0]:.1f}" cy="{Bs[1]:.1f}" r="7.2" fill="#66ff66" stroke="#0d111a" stroke-width="2.2" />
-  <circle cx="{Cs[0]:.1f}" cy="{Cs[1]:.1f}" r="7.2" fill="#f8f6f0" stroke="#0d111a" stroke-width="2.2" />
+  <circle id="A" data-id="A" data-ref="A" class="etc-plate-pt"
+          cx="{As[0]:.1f}" cy="{As[1]:.1f}" r="7.2" fill="#66ff66" stroke="#0d111a" stroke-width="2.2" />
+  <circle id="B" data-id="B" data-ref="B" class="etc-plate-pt"
+          cx="{Bs[0]:.1f}" cy="{Bs[1]:.1f}" r="7.2" fill="#66ff66" stroke="#0d111a" stroke-width="2.2" />
+  <circle id="C" data-id="C" data-ref="C" class="etc-plate-pt"
+          cx="{Cs[0]:.1f}" cy="{Cs[1]:.1f}" r="7.2" fill="#f8f6f0" stroke="#0d111a" stroke-width="2.2" />
 
-  <text x="{As[0] - 32:.1f}" y="{As[1] + 26:.1f}" fill="#88ff88" font-family="Georgia, serif" font-size="28" font-weight="bold">A</text>
-  <text x="{Bs[0] + 16:.1f}" y="{Bs[1] + 26:.1f}" fill="#88ff88" font-family="Georgia, serif" font-size="28" font-weight="bold">B</text>
-  <text x="{Cs[0] - 10:.1f}" y="{Cs[1] - 18:.1f}" fill="#f8f6f0" font-family="Georgia, serif" font-size="28" font-weight="bold">C</text>
+  <g pointer-events="none">
+    <text x="{As[0] - 32:.1f}" y="{As[1] + 26:.1f}" fill="#88ff88" font-family="Georgia, serif" font-size="28" font-weight="bold">A</text>
+    <text x="{Bs[0] + 16:.1f}" y="{Bs[1] + 26:.1f}" fill="#88ff88" font-family="Georgia, serif" font-size="28" font-weight="bold">B</text>
+    <text x="{Cs[0] - 10:.1f}" y="{Cs[1] - 18:.1f}" fill="#f8f6f0" font-family="Georgia, serif" font-size="28" font-weight="bold">C</text>
+    <text x="{Pas[0] + 12:.1f}" y="{Pas[1] - 8:.1f}" fill="#e8b85a" font-family="Georgia, serif" font-size="19" font-weight="bold">{fa_id[0]}<tspan dy="0.28em" font-size="74%">{fa_id[-1]}</tspan></text>
+    <text x="{Pbs[0] - 34:.1f}" y="{Pbs[1] - 8:.1f}" fill="#38bdf8" font-family="Georgia, serif" font-size="19" font-weight="bold">{fb_id[0]}<tspan dy="0.28em" font-size="74%">{fb_id[-1]}</tspan></text>
+    <text x="{Pcs[0] + 10:.1f}" y="{Pcs[1] + 26:.1f}" fill="#5ec27e" font-family="Georgia, serif" font-size="19" font-weight="bold">{fc_id[0]}<tspan dy="0.28em" font-size="74%">{fc_id[-1]}</tspan></text>
+  </g>
 
   <!-- Strut Labels alpha, beta, gamma -->
-  <g font-family="Georgia, serif" font-size="26" font-weight="bold">
+  <g font-family="Georgia, serif" font-size="26" font-weight="bold" pointer-events="none">
     <rect x="{ma[0] - 8:.1f}" y="{ma[1] - 24:.1f}" width="34" height="30" rx="6" fill="rgba(13, 17, 26, 0.86)" />
     <text x="{ma[0]:.1f}" y="{ma[1]:.1f}" fill="#e8b85a">α</text>
     <rect x="{mb[0] - 8:.1f}" y="{mb[1] - 24:.1f}" width="34" height="30" rx="6" fill="rgba(13, 17, 26, 0.86)" />
@@ -241,9 +602,73 @@ def generate_center_coordinates_svg(
   </g>
 
   <!-- Center X_n -->
-  <circle cx="{Ps[0]:.1f}" cy="{Ps[1]:.1f}" r="10.5" fill="#ffd700" stroke="#00ffff" stroke-width="3" filter="url(#glow-coord)" />
-  <rect x="{Ps[0] - 34:.1f}" y="{Ps[1] - 46:.1f}" width="68" height="30" rx="6" fill="rgba(13, 17, 26, 0.92)" stroke="#e8b85a" stroke-width="1.5" />
-  <text x="{Ps[0]:.1f}" y="{Ps[1] - 25:.1f}" text-anchor="middle" fill="#ffd700" font-family="JetBrains Mono, monospace" font-size="19" font-weight="bold">{_svg_x(num)}</text>
+  <circle id="X_{num}" data-id="X_{num}" data-ref="X_{num}" class="etc-plate-pt"
+          cx="{Ps[0]:.1f}" cy="{Ps[1]:.1f}" r="10.5" fill="#ffd700" stroke="#00ffff" stroke-width="3" filter="url(#glow-coord)" />
+  <g pointer-events="none">
+    <rect x="{Ps[0] - 34:.1f}" y="{Ps[1] - 46:.1f}" width="68" height="30" rx="6" fill="rgba(13, 17, 26, 0.92)" stroke="#e8b85a" stroke-width="1.5" />
+    <text x="{Ps[0]:.1f}" y="{Ps[1] - 25:.1f}" text-anchor="middle" fill="#ffd700" font-family="JetBrains Mono, monospace" font-size="19" font-weight="bold">{_svg_x(num)}</text>
+    <text x="976" y="742" text-anchor="end" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="14">{html.escape(sub_caption)}</text>
+  </g>
+  <script type="application/json" class="etc-elements-meta">{meta_json}</script>
+  <script>//<![CDATA[
+{INTERACTIVE_SVG_JS}
+//]]></script>
+</svg>"""
+
+
+def generate_center_coordinates_svg(
+    num: int,
+    title: str,
+    trilinear_formula: str,
+    barycentric_formula: str,
+    ctx: TriangleContext | None = None,
+    reg: CenterRegistry | None = None,
+    preset: str = "heronian",
+) -> str:
+    """Generate a 1000x760 SVG showing both Trilinear struts and Barycentric sub-areas for X_n."""
+    tri = CANONICAL_TRIANGLES.get(preset, CANONICAL_TRIANGLES["heronian"])
+    if ctx is None or reg is None or CenterSymbolicRegistry(tri).get(num) is not None:
+        return generate_symbolic_coordinates_svg(
+            num=num,
+            title=title,
+            trilinear_formula=trilinear_formula,
+            barycentric_formula=barycentric_formula,
+            preset=preset,
+        )
+    A, B, C = ctx.A_xy, ctx.B_xy, ctx.C_xy
+    P = reg.xy_cache.get(num, (0.5, 0.25))
+    Pa = _foot_on_line(P, B, C)
+    Pb = _foot_on_line(P, C, A)
+    Pc = _foot_on_line(P, A, B)
+    scale, ox, oy = _fit_points_to_box([A, B, C, P, Pa, Pb, Pc], 110.0, 48.0, 780.0, 664.0)
+    As = _to_screen(A, scale, ox, oy)
+    Bs = _to_screen(B, scale, ox, oy)
+    Cs = _to_screen(C, scale, ox, oy)
+    Ps = _to_screen(P, scale, ox, oy)
+    Pas = _to_screen(Pa, scale, ox, oy)
+    Pbs = _to_screen(Pb, scale, ox, oy)
+    Pcs = _to_screen(Pc, scale, ox, oy)
+    ra_a = _right_angle_path(Pas, Ps, Bs, size=14.0)
+    ra_b = _right_angle_path(Pbs, Ps, Cs, size=14.0)
+    ra_c = _right_angle_path(Pcs, Ps, As, size=14.0)
+    ma = ((Ps[0] + Pas[0]) * 0.5 + 18, (Ps[1] + Pas[1]) * 0.5 - 6)
+    mb = ((Ps[0] + Pbs[0]) * 0.5 - 26, (Ps[1] + Pbs[1]) * 0.5 - 6)
+    mc = ((Ps[0] + Pcs[0]) * 0.5 + 20, (Ps[1] + Pcs[1]) * 0.5 + 6)
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" width="100%" height="100%">
+  <polygon points="{Ps[0]:.1f},{Ps[1]:.1f} {Bs[0]:.1f},{Bs[1]:.1f} {Cs[0]:.1f},{Cs[1]:.1f}" fill="rgba(232, 184, 90, 0.19)" stroke="none" />
+  <polygon points="{Ps[0]:.1f},{Ps[1]:.1f} {Cs[0]:.1f},{Cs[1]:.1f} {As[0]:.1f},{As[1]:.1f}" fill="rgba(56, 189, 248, 0.17)" stroke="none" />
+  <polygon points="{Ps[0]:.1f},{Ps[1]:.1f} {As[0]:.1f},{As[1]:.1f} {Bs[0]:.1f},{Bs[1]:.1f}" fill="rgba(94, 194, 126, 0.17)" stroke="none" />
+  <polygon points="{As[0]:.1f},{As[1]:.1f} {Bs[0]:.1f},{Bs[1]:.1f} {Cs[0]:.1f},{Cs[1]:.1f}" fill="none" stroke="#cbd5e1" stroke-width="2.6" stroke-dasharray="2, 4.5" />
+  <path d="{ra_a}" fill="none" stroke="#e8b85a" stroke-width="2.4" />
+  <path d="{ra_b}" fill="none" stroke="#38bdf8" stroke-width="2.4" />
+  <path d="{ra_c}" fill="none" stroke="#5ec27e" stroke-width="2.4" />
+  <line x1="{Ps[0]:.1f}" y1="{Ps[1]:.1f}" x2="{Pas[0]:.1f}" y2="{Pas[1]:.1f}" stroke="#e8b85a" stroke-width="5.0" stroke-linecap="round" />
+  <line x1="{Ps[0]:.1f}" y1="{Ps[1]:.1f}" x2="{Pbs[0]:.1f}" y2="{Pbs[1]:.1f}" stroke="#38bdf8" stroke-width="5.0" stroke-linecap="round" />
+  <line x1="{Ps[0]:.1f}" y1="{Ps[1]:.1f}" x2="{Pcs[0]:.1f}" y2="{Pcs[1]:.1f}" stroke="#5ec27e" stroke-width="5.0" stroke-linecap="round" />
+  <circle cx="{Ps[0]:.1f}" cy="{Ps[1]:.1f}" r="10.5" fill="#ffd700" stroke="#00ffff" stroke-width="3" />
+  <text x="{ma[0]:.1f}" y="{ma[1]:.1f}" fill="#e8b85a" font-size="26">α</text>
+  <text x="{mb[0]:.1f}" y="{mb[1]:.1f}" fill="#38bdf8" font-size="26">β</text>
+  <text x="{mc[0]:.1f}" y="{mc[1]:.1f}" fill="#5ec27e" font-size="26">γ</text>
 </svg>"""
 
 
@@ -256,15 +681,118 @@ def generate_central_lines_svg(primary_svg_text: str) -> str:
     )
 
 
+def generate_symbolic_relations_svg(
+    num: int = 1,
+    partner_nums: list[int] | None = None,
+    preset: str = "heronian",
+) -> str:
+    """Build and render an exact symbolic Explorer-styled ``Model`` SVG plotting ``X_num`` and its conjugate/homothetic partners."""
+    tri = CANONICAL_TRIANGLES.get(preset, CANONICAL_TRIANGLES["heronian"])
+    sym_reg = CenterSymbolicRegistry(tri)
+    partners = list(partner_nums) if partner_nums is not None else [8, 10, 75]
+
+    model = create_model(f"X_{num} Functional Relations")
+    A, B, C = construct_reference_triangle(model, preset, show_guides=False)
+
+    tri_xs = [float(p[0].evalf(20)) for p in (tri.A_xy, tri.B_xy, tri.C_xy)]
+    tri_ys = [float(p[1].evalf(20)) for p in (tri.A_xy, tri.B_xy, tri.C_xy)]
+    min_x, max_x = min(tri_xs), max(tri_xs)
+    min_y, max_y = min(tri_ys), max(tri_ys)
+    span = max(max_x - min_x, max_y - min_y, 1.0)
+    cx = 0.5 * (min_x + max_x)
+    cy = 0.5 * (min_y + max_y)
+
+    pts_map: dict[int, Any] = {}
+
+    def get_exact_pt(c_num: int, is_target: bool = False, as_guide: bool = False) -> Any:
+        if c_num in pts_map:
+            return pts_map[c_num]
+        rec = sym_reg.get(c_num)
+        if rec is None:
+            return None
+        cls = (
+            ["selected", "target"]
+            if is_target
+            else (["guide"] if as_guide else ["center"])
+        )
+        pt = add_point(
+            model,
+            rec.xy[0],
+            rec.xy[1],
+            ID=f"X_{c_num}",
+            classes=cls,
+            parents=[A, B, C],
+            guide=as_guide and not is_target,
+        )
+        pts_map[c_num] = pt
+        return pt
+
+    valid_partners: list[int] = []
+    for k in partners:
+        if k == num:
+            continue
+        rec_k = sym_reg.get(k)
+        if rec_k is None:
+            continue
+        kx, ky = rec_k.approx_xy()
+        if abs(kx - cx) <= 1.85 * span and abs(ky - cy) <= 1.85 * span:
+            get_exact_pt(k, is_target=False, as_guide=False)
+            valid_partners.append(k)
+
+    # Homothetic dilation center X_2 when complement/anticomplement partners are displayed
+    if num == 1 and 2 not in valid_partners:
+        get_exact_pt(2, is_target=False, as_guide=True)
+
+    X3 = get_exact_pt(3, is_target=(num == 3), as_guide=(3 not in valid_partners and num != 3))
+    if X3 is not None:
+        add_circle(model, X3, A, ID="circumcircle", classes=["circumcircle"])
+
+    X1 = get_exact_pt(1, is_target=(num == 1), as_guide=(1 not in valid_partners and num != 1))
+    if X1 is not None:
+        Tc = perpendicular_foot(model, X1, A, B, ID="T_c", classes=["foot", "guide"], guide=True)
+        add_circle(model, X1, Tc, ID="incircle", classes=["incircle"])
+
+    if num in {5, 11, 12} or 5 in valid_partners:
+        X5 = get_exact_pt(5, is_target=(num == 5), as_guide=(5 not in valid_partners and num != 5))
+        if X5 is not None:
+            Mc = midpoint(model, A, B, ID="M_c", classes=["foot", "guide"], guide=True)
+            add_circle(model, X5, Mc, ID="nine_point_circle", classes=["nine_point_circle"])
+
+    target_pt = get_exact_pt(num, is_target=True, as_guide=False)
+
+    if target_pt is not None:
+        for k in valid_partners[:4]:
+            pk = pts_map.get(k)
+            if pk is not None:
+                add_line(
+                    model,
+                    target_pt,
+                    pk,
+                    ID=f"{{ {min(num, k)}, {max(num, k)} }}",
+                    classes=["central_line"],
+                )
+        if num == 1 and X3 is not None:
+            add_line(model, target_pt, X3, ID="{ 1, 3 }", classes=["central_line"])
+        promote_point_to_top(model, target_pt)
+
+    return render_model_svg(model, subtitle=f"{tri.label} | Functional Relations")
+
+
 def generate_relations_svg(
     num: int,
     partner_nums: list[int],
-    reg: CenterRegistry,
+    reg: CenterRegistry | None = None,
+    preset: str = "heronian",
 ) -> str:
-    """Build and render an Explorer-styled `Model` SVG plotting X_n and its functional-relation partner centers."""
-    ctx = reg.ctx
-    model = Model(f"X_{num} Functional Relations")
+    """Build and render an Explorer-styled ``Model`` SVG plotting ``X_n`` and its functional-relation partner centers."""
+    tri = CANONICAL_TRIANGLES.get(preset, CANONICAL_TRIANGLES["heronian"])
+    if reg is None or CenterSymbolicRegistry(tri).get(num) is not None:
+        return generate_symbolic_relations_svg(
+            num=num, partner_nums=partner_nums, preset=preset
+        )
 
+    ctx = reg.ctx
+    model = Model(f"X_{num} Functional Relations", auto_intersect=False)
     A = _add_point(model, 0.0, 0.0, ID="A", classes=["given", "vertex"])
     B = _add_point(model, 1.0, 0.0, ID="B", classes=["given", "vertex"])
     C = _add_point(model, ctx.C_xy[0], ctx.C_xy[1], ID="C", classes=["vertex"])
@@ -286,7 +814,6 @@ def generate_relations_svg(
         pts_map[c_num] = pt
         return pt
 
-    # Add visible partner points first so they are included in the bounding box
     valid_partners: list[int] = []
     for k in partner_nums:
         if k != num and k in reg.xy_cache:
@@ -295,7 +822,6 @@ def generate_relations_svg(
                 get_pt(k, is_target=False, as_guide=False)
                 valid_partners.append(k)
 
-    # Add circumcircle and incircle context
     X3 = get_pt(3, is_target=(num == 3), as_guide=(3 not in valid_partners and num != 3))
     if X3 is not None:
         _add_circle(model, X3, A, ID="circumcircle", classes=["circumcircle"])
@@ -304,24 +830,13 @@ def generate_relations_svg(
         r_in = ctx.r * ctx.scale
         _add_circle(model, X1, r_in, ID="incircle", classes=["incircle"])
 
-    if num in {5, 11, 12} or 5 in valid_partners:
-        X5 = get_pt(5, is_target=(num == 5), as_guide=(5 not in valid_partners and num != 5))
-        if X5 is not None:
-            r_np = 0.5 * ctx.R * ctx.scale
-            _add_circle(model, X5, r_np, ID="nine_point_circle", classes=["nine_point_circle"])
-
     target_pt = get_pt(num, is_target=True, as_guide=False)
-
-    # Draw key relation lines connecting X_n and its partners as tiny-dotted lines
     if target_pt is not None:
         for k in valid_partners[:4]:
             pk = pts_map.get(k)
             if pk is not None:
                 _add_line(model, target_pt, pk, ID=f"{{ {min(num, k)}, {max(num, k)} }}", classes=["central_line"])
-
-    if target_pt is not None and target_pt in model:
-        el_data = model.pop(target_pt)
-        super(Model, model).__setitem__(target_pt, el_data)
+        promote_point_to_top(model, target_pt)
 
     return render_model_svg(model)
 
@@ -674,11 +1189,274 @@ def generate_coordinate_trio_svg(
 </svg>"""
 
 
+def generate_symbolic_four_triangles_svg(num: int = 1) -> str:
+    """Generate an interactive 1000x760 2x2 SVG showing ``X_num`` across the 4 Canonical Exact Symbolic Reference Triangles."""
+    quad_specs = [
+        (
+            "heronian",
+            "Heronian (15, 13, 14)",
+            "Δ = 84 • ℚ",
+            token_hex(REFERENCE_TRIANGLE_COLORS["heronian"]),
+            35.0,
+            22.0,
+        ),
+        (
+            "right",
+            "Right (3, 4, 5)",
+            "Δ = 6 • ℚ",
+            token_hex(REFERENCE_TRIANGLE_COLORS["right"]),
+            515.0,
+            22.0,
+        ),
+        (
+            "kepler",
+            "Kepler (1, √φ, φ)",
+            "Δ = √φ/2 • ℚ(√φ)",
+            token_hex(REFERENCE_TRIANGLE_COLORS["kepler"]),
+            35.0,
+            390.0,
+        ),
+        (
+            "kimberling",
+            "Kimberling (6, 9, 13)",
+            "Δ = 3√35 • ℚ(√35)",
+            token_hex(REFERENCE_TRIANGLE_COLORS["kimberling"]),
+            515.0,
+            390.0,
+        ),
+    ]
+
+    catalog: dict[str, Any] = {}
+    panels: list[str] = []
+
+    for key, label, field_badge, accent, x_off, y_off in quad_specs:
+        tri = CANONICAL_TRIANGLES[key]
+        sym_reg = CenterSymbolicRegistry(tri)
+        rec = sym_reg.get(num)
+        if rec is None:
+            continue
+
+        kp = rec.is_kepler
+        A_ex, B_ex, C_ex = tri.A_xy, tri.B_xy, tri.C_xy
+        P_ex = rec.xy
+        Pa_ex = _exact_pedal_foot(P_ex, B_ex, C_ex, tri)
+        Pb_ex = _exact_pedal_foot(P_ex, C_ex, A_ex, tri)
+        Pc_ex = _exact_pedal_foot(P_ex, A_ex, B_ex, tri)
+
+        A = (float(A_ex[0].evalf(20)), float(A_ex[1].evalf(20)))
+        B = (float(B_ex[0].evalf(20)), float(B_ex[1].evalf(20)))
+        C = (float(C_ex[0].evalf(20)), float(C_ex[1].evalf(20)))
+        P = (float(P_ex[0].evalf(20)), float(P_ex[1].evalf(20)))
+        Pa = (float(Pa_ex[0].evalf(20)), float(Pa_ex[1].evalf(20)))
+        Pb = (float(Pb_ex[0].evalf(20)), float(Pb_ex[1].evalf(20)))
+        Pc = (float(Pc_ex[0].evalf(20)), float(Pc_ex[1].evalf(20)))
+
+        sc, ox, oy = _fit_points_to_box(
+            [A, B, C, P, Pa, Pb, Pc],
+            x_off + 52.0,
+            y_off + 58.0,
+            346.0,
+            234.0,
+        )
+
+        As = _to_screen(A, sc, ox, oy)
+        Bs = _to_screen(B, sc, ox, oy)
+        Cs = _to_screen(C, sc, ox, oy)
+        Ps = _to_screen(P, sc, ox, oy)
+        Pas = _to_screen(Pa, sc, ox, oy)
+        Pbs = _to_screen(Pb, sc, ox, oy)
+        Pcs = _to_screen(Pc, sc, ox, oy)
+
+        panel_id = f"panel-{key}"
+        pt_x_id = f"{key}-X_{num}"
+        sub_a_id = f"{key}-sub-a"
+        sub_b_id = f"{key}-sub-b"
+        sub_c_id = f"{key}-sub-c"
+        st_a_id = f"{key}-strut-a"
+        st_b_id = f"{key}-strut-b"
+        st_c_id = f"{key}-strut-c"
+
+        q_r = tri.simplify(tri.r * tri.r)
+        sides_ltx = f"\\left({format_symbolic_latex(tri.a, kepler_phi=kp)},\\; {format_symbolic_latex(tri.b, kepler_phi=kp)},\\; {format_symbolic_latex(tri.c, kepler_phi=kp)}\\right)"
+        sides_prt = f"({format_symbolic_pretty(tri.a, kepler_phi=kp)}, {format_symbolic_pretty(tri.b, kepler_phi=kp)}, {format_symbolic_pretty(tri.c, kepler_phi=kp)})"
+        xy_ltx = rec.xy_latex()
+        xy_prt = rec.xy_pretty()
+
+        panel_rows = [
+            {"label": "sides", "latex": sides_ltx, "pretty": sides_prt},
+            {"label": f"X_{{{num}}}", "latex": xy_ltx, "pretty": xy_prt},
+            {
+                "label": "bary",
+                "latex": rec.bary_latex(),
+                "pretty": rec.bary_pretty(),
+            },
+            {
+                "label": "Δ, r",
+                "latex": f"\\Delta = {format_symbolic_latex(tri.area, kepler_phi=kp)},\\; r = {format_symbolic_latex(tri.r, kepler_phi=kp)}",
+                "pretty": f"Δ = {format_symbolic_pretty(tri.area, kepler_phi=kp)}, r = {format_symbolic_pretty(tri.r, kepler_phi=kp)}",
+            },
+        ]
+        catalog[panel_id] = {
+            "ID": panel_id,
+            "type": "triangle",
+            "color": accent,
+            "name": label,
+            "symbolic_rows": panel_rows,
+            "approx": f"X_{num} ≈ ({P[0]:.6f}, {P[1]:.6f})",
+        }
+        catalog[pt_x_id] = _pt_meta_entry(
+            pt_x_id,
+            f"X_{num} on {label}",
+            "#ffd700",
+            P_ex,
+            rec.bary_latex(),
+            rec.bary_pretty(),
+            rec.trilinear_latex(),
+            rec.trilinear_pretty(),
+            kepler_phi=kp,
+        )
+        catalog[f"{key}-A"] = _pt_meta_entry(f"{key}-A", f"Vertex A ({label})", "#66ff66", A_ex, kepler_phi=kp)
+        catalog[f"{key}-B"] = _pt_meta_entry(f"{key}-B", f"Vertex B ({label})", "#66ff66", B_ex, kepler_phi=kp)
+        catalog[f"{key}-C"] = _pt_meta_entry(f"{key}-C", f"Vertex C ({label})", "#f8f6f0", C_ex, kepler_phi=kp)
+
+        for sid, p1_e, p2_e, p3_e, scol, sv in [
+            (sub_a_id, P_ex, B_ex, C_ex, "#e8b85a", "BC"),
+            (sub_b_id, P_ex, C_ex, A_ex, "#38bdf8", "CA"),
+            (sub_c_id, P_ex, A_ex, B_ex, "#5ec27e", "AB"),
+        ]:
+            sa_val = _exact_sub_area(p1_e, p2_e, p3_e, tri)
+            catalog[sid] = {
+                "ID": sid,
+                "type": "polygon",
+                "color": scol,
+                "name": f"Sub-Triangle △X_{num}{sv} ({label})",
+                "symbolic_rows": [
+                    {
+                        "label": "Δ",
+                        "latex": format_symbolic_latex(sa_val, kepler_phi=kp),
+                        "pretty": format_symbolic_pretty(sa_val, kepler_phi=kp),
+                    },
+                    {
+                        "label": "bary",
+                        "latex": rec.bary_latex(),
+                        "pretty": rec.bary_pretty(),
+                    },
+                ],
+                "approx": f"≈ {float(sa_val.evalf(20)):.6f}",
+            }
+
+        for st_id, f_ex, scol, ssym, snm in [
+            (st_a_id, Pa_ex, "#e8b85a", "\\alpha", "BC"),
+            (st_b_id, Pb_ex, "#38bdf8", "\\beta", "CA"),
+            (st_c_id, Pc_ex, "#5ec27e", "\\gamma", "AB"),
+        ]:
+            q_st = tri.simplify((f_ex[0] - P_ex[0]) ** 2 + (f_ex[1] - P_ex[1]) ** 2)
+            l_st = tri.simplify(sp.sqrt(q_st))
+            catalog[st_id] = {
+                "ID": st_id,
+                "type": "segment",
+                "color": scol,
+                "name": f"Strut ⊥ {snm} ({label})",
+                "symbolic_rows": [
+                    {
+                        "label": "d",
+                        "latex": f"{ssym}_0 = {format_symbolic_latex(l_st, kepler_phi=kp)}",
+                        "pretty": format_symbolic_pretty(l_st, kepler_phi=kp),
+                    },
+                    {
+                        "label": "Q",
+                        "latex": format_symbolic_latex(q_st, kepler_phi=kp),
+                        "pretty": format_symbolic_pretty(q_st, kepler_phi=kp),
+                    },
+                ],
+                "approx": f"≈ {float(l_st.evalf(20)):.6f}",
+            }
+
+        incircle_panel_svg = ""
+        if num == 1:
+            r_scr = float(tri.r.evalf(20)) * sc
+            inc_id = f"{key}-incircle"
+            catalog[inc_id] = {
+                "ID": inc_id,
+                "type": "circle",
+                "color": "#f472b6",
+                "name": f"Incircle on {label}",
+                "symbolic_rows": [
+                    {
+                        "label": "r",
+                        "latex": format_symbolic_latex(tri.r, kepler_phi=kp),
+                        "pretty": format_symbolic_pretty(tri.r, kepler_phi=kp),
+                    },
+                    {
+                        "label": "Q_r",
+                        "latex": format_symbolic_latex(q_r, kepler_phi=kp),
+                        "pretty": format_symbolic_pretty(q_r, kepler_phi=kp),
+                    },
+                ],
+                "approx": f"r ≈ {float(tri.r.evalf(20)):.6f}",
+            }
+            incircle_panel_svg = (
+                f'    <circle id="{inc_id}" data-id="{inc_id}" data-ref="{inc_id}" class="etc-plate-circle" '
+                f'cx="{Ps[0]:.1f}" cy="{Ps[1]:.1f}" r="{r_scr:.1f}" '
+                f'fill="none" stroke="rgba(244, 114, 182, 0.55)" stroke-width="1.8" stroke-dasharray="5,4" />\n'
+            )
+
+        coord_footer = f"X_{num} = {xy_prt}"
+        if len(coord_footer) > 42:
+            coord_footer = coord_footer[:39] + "..."
+
+        panels.append(f"""
+  <g id="{panel_id}" data-id="{panel_id}" data-ref="{panel_id}" class="etc-plate-panel">
+    <rect class="etc-panel-border" x="{x_off:.1f}" y="{y_off:.1f}" width="450" height="346" rx="16" fill="rgba(13, 17, 26, 0.92)" stroke="{accent}" stroke-width="1.8" />
+    <text x="{x_off + 22:.1f}" y="{y_off + 34:.1f}" fill="{accent}" font-family="JetBrains Mono, monospace" font-size="17" font-weight="bold" pointer-events="none">{html.escape(label)}</text>
+    <text x="{x_off + 428:.1f}" y="{y_off + 34:.1f}" text-anchor="end" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="13.5" pointer-events="none">{html.escape(field_badge)}</text>
+
+    <polygon id="{sub_a_id}" data-id="{sub_a_id}" data-ref="{sub_a_id}" class="etc-plate-poly" points="{Ps[0]:.1f},{Ps[1]:.1f} {Bs[0]:.1f},{Bs[1]:.1f} {Cs[0]:.1f},{Cs[1]:.1f}" fill="#e8b85a" fill-opacity="0.14" stroke="none" />
+    <polygon id="{sub_b_id}" data-id="{sub_b_id}" data-ref="{sub_b_id}" class="etc-plate-poly" points="{Ps[0]:.1f},{Ps[1]:.1f} {Cs[0]:.1f},{Cs[1]:.1f} {As[0]:.1f},{As[1]:.1f}" fill="#38bdf8" fill-opacity="0.14" stroke="none" />
+    <polygon id="{sub_c_id}" data-id="{sub_c_id}" data-ref="{sub_c_id}" class="etc-plate-poly" points="{Ps[0]:.1f},{Ps[1]:.1f} {As[0]:.1f},{As[1]:.1f} {Bs[0]:.1f},{Bs[1]:.1f}" fill="#5ec27e" fill-opacity="0.14" stroke="none" />
+
+{incircle_panel_svg}    <polygon points="{As[0]:.1f},{As[1]:.1f} {Bs[0]:.1f},{Bs[1]:.1f} {Cs[0]:.1f},{Cs[1]:.1f}" fill="none" stroke="#cbd5e1" stroke-width="2.3" stroke-dasharray="2, 4.5" stroke-linecap="round" pointer-events="none" />
+    <line id="{st_a_id}" data-id="{st_a_id}" data-ref="{st_a_id}" class="etc-plate-strut" x1="{Ps[0]:.1f}" y1="{Ps[1]:.1f}" x2="{Pas[0]:.1f}" y2="{Pas[1]:.1f}" stroke="#e8b85a" stroke-width="2.9" />
+    <line id="{st_b_id}" data-id="{st_b_id}" data-ref="{st_b_id}" class="etc-plate-strut" x1="{Ps[0]:.1f}" y1="{Ps[1]:.1f}" x2="{Pbs[0]:.1f}" y2="{Pbs[1]:.1f}" stroke="#38bdf8" stroke-width="2.9" />
+    <line id="{st_c_id}" data-id="{st_c_id}" data-ref="{st_c_id}" class="etc-plate-strut" x1="{Ps[0]:.1f}" y1="{Ps[1]:.1f}" x2="{Pcs[0]:.1f}" y2="{Pcs[1]:.1f}" stroke="#5ec27e" stroke-width="2.9" />
+
+    <circle id="{key}-A" data-id="{key}-A" data-ref="{key}-A" class="etc-plate-pt" cx="{As[0]:.1f}" cy="{As[1]:.1f}" r="4.6" fill="#66ff66" />
+    <circle id="{key}-B" data-id="{key}-B" data-ref="{key}-B" class="etc-plate-pt" cx="{Bs[0]:.1f}" cy="{Bs[1]:.1f}" r="4.6" fill="#66ff66" />
+    <circle id="{key}-C" data-id="{key}-C" data-ref="{key}-C" class="etc-plate-pt" cx="{Cs[0]:.1f}" cy="{Cs[1]:.1f}" r="4.6" fill="#f8f6f0" />
+    <circle id="{pt_x_id}" data-id="{pt_x_id}" data-ref="{pt_x_id}" class="etc-plate-pt" cx="{Ps[0]:.1f}" cy="{Ps[1]:.1f}" r="7.5" fill="#ffd700" stroke="#00ffff" stroke-width="2.2" />
+
+    <g pointer-events="none">
+      <text x="{As[0] - 18:.1f}" y="{As[1] + 18:.1f}" fill="#88ff88" font-family="Georgia, serif" font-size="18" font-weight="bold">A</text>
+      <text x="{Bs[0] + 8:.1f}" y="{Bs[1] + 18:.1f}" fill="#88ff88" font-family="Georgia, serif" font-size="18" font-weight="bold">B</text>
+      <text x="{Cs[0] - 6:.1f}" y="{Cs[1] - 10:.1f}" fill="#f8f6f0" font-family="Georgia, serif" font-size="18" font-weight="bold">C</text>
+      <text x="{Ps[0] + 12:.1f}" y="{Ps[1] - 10:.1f}" fill="#ffd700" font-family="JetBrains Mono, monospace" font-size="17" font-weight="bold">{_svg_x(num)}</text>
+      <text x="{x_off + 225:.1f}" y="{y_off + 332:.1f}" text-anchor="middle" fill="#cbd5e1" font-family="JetBrains Mono, monospace" font-size="12.5">{html.escape(coord_footer)}</text>
+    </g>
+  </g>""")
+
+    meta_json = _safe_meta_json(catalog)
+    return f"""<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" data-initial-viewbox="0 0 1000 760" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <style>{EXPLORER_SVG_CSS}</style>
+  {''.join(panels)}
+  <script type="application/json" class="etc-elements-meta">{meta_json}</script>
+  <script>//<![CDATA[
+{INTERACTIVE_SVG_JS}
+//]]></script>
+</svg>"""
+
+
 def generate_four_triangles_svg(
     num: int,
-    regs_by_preset: dict[str, tuple[str, TriangleContext, CenterRegistry]],
+    regs_by_preset: dict[str, tuple[str, TriangleContext, CenterRegistry]] | None = None,
 ) -> str:
-    """Generate a 1000x760 2x2 SVG showing X_n across Acute, Right, Kepler, and Kimberling triangles."""
+    """Generate a 1000x760 2x2 SVG showing ``X_n`` across the 4 Canonical Reference Triangles."""
+    if (
+        regs_by_preset is None
+        or CenterSymbolicRegistry(CANONICAL_TRIANGLES["heronian"]).get(num) is not None
+    ):
+        return generate_symbolic_four_triangles_svg(num=num)
+
     quad_specs = [
         ("acute", "Acute", token_hex(REFERENCE_TRIANGLE_COLORS["acute"]), 35.0, 22.0),
         ("right", "Right", token_hex(REFERENCE_TRIANGLE_COLORS["right"]), 515.0, 22.0),
@@ -695,15 +1473,7 @@ def generate_four_triangles_svg(
         Pa = _foot_on_line(P, B, C)
         Pb = _foot_on_line(P, C, A)
         Pc = _foot_on_line(P, A, B)
-
-        sc, ox, oy = _fit_points_to_box(
-            [A, B, C, P, Pa, Pb, Pc],
-            x_off + 55.0,
-            y_off + 62.0,
-            340.0,
-            250.0,
-        )
-
+        sc, ox, oy = _fit_points_to_box([A, B, C, P, Pa, Pb, Pc], x_off + 55.0, y_off + 62.0, 340.0, 250.0)
         As = _to_screen(A, sc, ox, oy)
         Bs = _to_screen(B, sc, ox, oy)
         Cs = _to_screen(C, sc, ox, oy)
@@ -711,33 +1481,16 @@ def generate_four_triangles_svg(
         Pas = _to_screen(Pa, sc, ox, oy)
         Pbs = _to_screen(Pb, sc, ox, oy)
         Pcs = _to_screen(Pc, sc, ox, oy)
-
         panels.append(f"""
   <g>
     <rect x="{x_off:.1f}" y="{y_off:.1f}" width="450" height="346" rx="16" fill="rgba(13, 17, 26, 0.92)" stroke="{accent}" stroke-width="1.8" />
     <text x="{x_off + 24:.1f}" y="{y_off + 36:.1f}" fill="{accent}" font-family="JetBrains Mono, monospace" font-size="18" font-weight="bold">{html.escape(label)}</text>
-    <text x="{x_off + 426:.1f}" y="{y_off + 36:.1f}" text-anchor="end" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="15">AB = 1</text>
-
-    <polygon points="{Ps[0]:.1f},{Ps[1]:.1f} {Bs[0]:.1f},{Bs[1]:.1f} {Cs[0]:.1f},{Cs[1]:.1f}" fill="rgba(232, 184, 90, 0.14)" />
-    <polygon points="{Ps[0]:.1f},{Ps[1]:.1f} {Cs[0]:.1f},{Cs[1]:.1f} {As[0]:.1f},{As[1]:.1f}" fill="rgba(56, 189, 248, 0.14)" />
-    <polygon points="{Ps[0]:.1f},{Ps[1]:.1f} {As[0]:.1f},{As[1]:.1f} {Bs[0]:.1f},{Bs[1]:.1f}" fill="rgba(94, 194, 126, 0.14)" />
-
-    <polygon points="{As[0]:.1f},{As[1]:.1f} {Bs[0]:.1f},{Bs[1]:.1f} {Cs[0]:.1f},{Cs[1]:.1f}" fill="none" stroke="#cbd5e1" stroke-width="2.3" stroke-dasharray="2, 4.5" stroke-linecap="round" />
+    <polygon points="{As[0]:.1f},{As[1]:.1f} {Bs[0]:.1f},{Bs[1]:.1f} {Cs[0]:.1f},{Cs[1]:.1f}" fill="none" stroke="#cbd5e1" stroke-width="2.3" stroke-dasharray="2, 4.5" />
     <line x1="{Ps[0]:.1f}" y1="{Ps[1]:.1f}" x2="{Pas[0]:.1f}" y2="{Pas[1]:.1f}" stroke="#e8b85a" stroke-width="2.8" />
     <line x1="{Ps[0]:.1f}" y1="{Ps[1]:.1f}" x2="{Pbs[0]:.1f}" y2="{Pbs[1]:.1f}" stroke="#38bdf8" stroke-width="2.8" />
     <line x1="{Ps[0]:.1f}" y1="{Ps[1]:.1f}" x2="{Pcs[0]:.1f}" y2="{Pcs[1]:.1f}" stroke="#5ec27e" stroke-width="2.8" />
-
-    <circle cx="{As[0]:.1f}" cy="{As[1]:.1f}" r="4.5" fill="#66ff66" />
-    <circle cx="{Bs[0]:.1f}" cy="{Bs[1]:.1f}" r="4.5" fill="#66ff66" />
-    <circle cx="{Cs[0]:.1f}" cy="{Cs[1]:.1f}" r="4.5" fill="#f8f6f0" />
     <circle cx="{Ps[0]:.1f}" cy="{Ps[1]:.1f}" r="7.5" fill="#ffd700" stroke="#00ffff" stroke-width="2.2" />
-
-    <text x="{As[0] - 18:.1f}" y="{As[1] + 18:.1f}" fill="#88ff88" font-family="Georgia, serif" font-size="18" font-weight="bold">A</text>
-    <text x="{Bs[0] + 8:.1f}" y="{Bs[1] + 18:.1f}" fill="#88ff88" font-family="Georgia, serif" font-size="18" font-weight="bold">B</text>
-    <text x="{Cs[0] - 6:.1f}" y="{Cs[1] - 10:.1f}" fill="#f8f6f0" font-family="Georgia, serif" font-size="18" font-weight="bold">C</text>
-    <text x="{Ps[0] + 12:.1f}" y="{Ps[1] - 10:.1f}" fill="#ffd700" font-family="JetBrains Mono, monospace" font-size="17" font-weight="bold">{_svg_x(num)}</text>
   </g>""")
-
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" width="100%" height="100%">
   {''.join(panels)}
 </svg>"""
@@ -906,7 +1659,7 @@ Under functional relations, <pause> X one is its own isogonal conjugate, <pause>
             "Trilinears 1 : 1 : 1 • Barycentrics a : b : c",
             '<span class="clause-line"><b>Coordinates of X_1:</b> Equal perpendicular distances <span class="eq-tok">α : β : γ = 1 : 1 : 1</span> (each equal to inradius <span class="eq-tok">r</span>), partitioning <span class="g-tok">△ABC</span> into sub-triangle areas <span class="coincide-tok">u : v : w = a : b : c</span>.</span>',
             "HOMOGENEOUS COORDINATES",
-            "On acute triangle (5, 6, 7), perpendiculars are 1 : 1 : 1 and sub-areas are 5 : 6 : 7 (27.8% : 33.3% : 38.9%).",
+            "On Heronian triangle (15, 13, 14), orthogonal struts have length r = 4 (Q_r = 16, ratio 1 : 1 : 1) and sub-areas are 30 : 26 : 28 = 15 : 13 : 14.",
         ),
         "s3": (
             "Nagel Line {1, 2, 8, 10} • Feuerbach Line {1, 5, 11}",
@@ -915,8 +1668,8 @@ Under functional relations, <pause> X one is its own isogonal conjugate, <pause>
             "On the Nagel line, X_10 (Spieker center) is the exact midpoint of X_1 (Incenter) and X_8 (Nagel point).",
         ),
         "s4": (
-            "Self-Isogonal (X_1) • Complement X_10 • Anticomplement X_8",
-            '<span class="clause-line"><b>Functional Relations:</b> <span class="g-tok">X_1</span> is self-isogonal, the isotomic conjugate of <span class="coincide-tok">X_75</span>, the complement of <span class="eq-tok">X_8</span>, and has complement <span class="g-tok">X_10</span>.</span>',
+            "Self-Isogonal (X_1) • Anticomplement of X_10 • Complement of X_8",
+            '<span class="clause-line"><b>Functional Relations:</b> <span class="g-tok">X_1</span> is self-isogonal, the isotomic conjugate of <span class="coincide-tok">X_75</span>, the anticomplement of <span class="g-tok">X_10</span>, and the complement of <span class="eq-tok">X_8</span>.</span>',
             "CONJUGATES & HOMOTHETY",
             "Circumcircle inverse: X_36 • Midpoint of X_1 and X_8: X_10 (Spieker center).",
         ),
@@ -1751,8 +2504,7 @@ def ensure_center_incident_lines_in_model(model: Model, num: int, reg: CenterReg
 
     target_pt = pts_by_id.get(f"X_{num}")
     if target_pt is not None and target_pt in model:
-        tdata = model.pop(target_pt)
-        super(Model, model).__setitem__(target_pt, tdata)
+        promote_point_to_top(model, target_pt)
 
 
 def _mute_other_spans(clause_html: str, keep_classes: set[str]) -> str:
@@ -1902,8 +2654,8 @@ _COLLECTION_1_RELATIONS_TABLE: dict[int, list[tuple[str, int, str]]] = {
     1: [
         ("Isogonal Conjugate", 1, "X_1 (self)"),
         ("Isotomic Conjugate", 75, "X_75"),
-        ("Complement", 10, "X_10"),
-        ("Anticomplement", 8, "X_8"),
+        ("Anticomplement of", 10, "X_10 (Spieker)"),
+        ("Complement of", 8, "X_8 (Nagel)"),
     ],
     2: [
         ("Isogonal Conjugate", 6, "X_6"),
@@ -2228,7 +2980,7 @@ def _format_primary_construction_steps(
 def _format_reference_triangles_clause() -> str:
     """Format Step 7 (`05_four_triangles.svg`) as a clean structured table with tabular a, b, c columns and no parens/commas."""
     rows = [
-        ("Acute Triangle", ("5", "6", "7"), REFERENCE_TRIANGLE_COLORS["acute"]),
+        ("Heronian Triangle", ("15", "13", "14"), REFERENCE_TRIANGLE_COLORS["heronian"]),
         ("Right Triangle", ("3", "4", "5"), REFERENCE_TRIANGLE_COLORS["right"]),
         ("Kepler Triangle", ("1", "√φ", "φ"), REFERENCE_TRIANGLE_COLORS["kepler"]),
         ("Kimberling Triangle", ("6", "9", "13"), REFERENCE_TRIANGLE_COLORS["kimberling"]),
@@ -2733,8 +3485,7 @@ def format_unified_script(scenes: list[dict[str, Any]], raw_script_text: str) ->
             if sub.get("equal_ids"):
                 out.append("equal: " + ", ".join(sub["equal_ids"]))
 
-            for c_line in _html_clause_to_script_lines(sub.get("clause_html") or ""):
-                out.append(c_line)
+            out.extend(_html_clause_to_script_lines(sub.get("clause_html") or ""))
 
             j_tag = sub.get("just_tag") or ""
             j_id = sub.get("just_id") or ""
@@ -2776,6 +3527,9 @@ def compile_scenes_from_script(script_text: str, svgs_dir: Path) -> list[dict[st
     for raw_line in script_text.splitlines():
         line = raw_line.strip()
         if not line or line.startswith("#"):
+            continue
+        if line.startswith("===") or re.match(r"^\[style:[^\]]+\]$", line, flags=re.IGNORECASE):
+            _flush_screen()
             continue
 
         bell_m = re.match(r"^\[bell:([^\]]+)\]$", line, flags=re.IGNORECASE)
@@ -2957,9 +3711,12 @@ def _expand_brace_points(
                     pt_id = f"X_{k_str}"
                     if (not plotted_pts or pt_id in plotted_pts) and pt_id not in raw_out:
                         raw_out.append(pt_id)
-        elif s.startswith("X_"):
-            if (not plotted_pts or s in plotted_pts) and s not in raw_out:
-                raw_out.append(s)
+        elif (
+            s.startswith("X_")
+            and (not plotted_pts or s in plotted_pts)
+            and s not in raw_out
+        ):
+            raw_out.append(s)
 
     if reg and len(raw_out) > 4:
         near_out: list[str] = []

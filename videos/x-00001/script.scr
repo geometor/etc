@@ -40,7 +40,7 @@ say: <pause> [sfx:circle] and the center of its unique inscribed circle.
 symbolic: Trilinears 1 : 1 : 1 • Barycentrics a : b : c
 section: Trilinear Distances | α = 1:gold | β = 1:blue | γ = 1:green
 section: Barycentric Sub-Areas | u = a:gold | v = b:blue | w = c:green
-just: ∵ COORDINATES | HOMOGENEOUS COORDINATES | On acute triangle (5, 6, 7), perpendiculars are 1 : 1 : 1 and sub-areas are 5 : 6 : 7 (27.8% : 33.3% : 38.9%).
+just: ∵ COORDINATES | HOMOGENEOUS COORDINATES | On Heronian triangle (15, 13, 14), orthogonal struts have length r = 4 (Q_r = 16, ratio 1 : 1 : 1) and sub-areas are 30 : 26 : 28 = 15 : 13 : 14.
 say: [sfx:ratio] Equidistant from sidelines B C, C A, and A B by the inradius r, <pause> its trilinear coordinates are one, to one, to one, <pause> while its barycentric sub-areas scale directly with the side lengths, <pause> a, to b, to c.
 
 === central_lines ===
@@ -75,14 +75,14 @@ say: <pause> [sfx:line] the Feuerbach line through X five and X eleven, <pause> 
 [style:brisk]
 
 [screen: PROVE | svg: 04_relations.svg]
-symbolic: Self-Isogonal (X_1) • Complement X_10 • Anticomplement X_8
+symbolic: Self-Isogonal (X_1) • Anticomplement of X_10 • Complement of X_8
 zoom: X_1, X_75, X_10, X_8, X_3
 active: X_1:gold, X_75:blue, X_10:green, X_8:orange
 head: Functional Relations
 row: Isogonal Conjugate | X_1 (self):gold
 row: Isotomic Conjugate | X_75:blue
-row: Complement | X_10:green
-row: Anticomplement | X_8:orange
+row: Anticomplement of | X_10 (Spieker):green
+row: Complement of | X_8 (Nagel):orange
 just: ∵ RELATIONS | CONJUGATES & HOMOTHETY | Circumcircle inverse: X_36 • Midpoint of X_1 and X_8: X_10 (Spieker center).
 say: [sfx:conjugate] Under functional relations, <pause> X one is its own isogonal conjugate, <pause> the isotomic conjugate of X seventy-five, <pause> the anticomplement of the Spieker center X ten, <pause> and the complement of the Nagel point X eight.
 
@@ -90,11 +90,11 @@ say: [sfx:conjugate] Under functional relations, <pause> X one is its own isogon
 [style:brisk]
 
 [screen: ∴ | svg: 05_four_triangles.svg]
-symbolic: Kimberling (6, 9, 13) Search = 1.690308509457
+symbolic: Kimberling (6, 9, 13) Search = 2√35 / 7 ≈ 1.690308509457
 head: Reference Triangles | a | b | c
-row: Acute Triangle | 5 | 6 | 7:gold
+row: Heronian Triangle | 15 | 13 | 14:gold
 row: Right Triangle | 3 | 4 | 5:blue
 row: Kepler Triangle | 1 | √φ | φ:green
 row: Kimberling Triangle | 6 | 9 | 13:purple
-just: ∵ INVARIANCE | KIMBERLING SEARCH VALUE • X_1 | Shortest directed trilinear distance on reference triangle (6, 9, 13): 1.690308509457.
+just: ∵ INVARIANCE | KIMBERLING SEARCH VALUE • X_1 | Exact shortest trilinear distance on (6, 9, 13): r = 2√35 / 7 ≈ 1.690308509457 (Q_r = 20 / 7).
 say: <pause> [sfx:invariant] Across acute, right, Kepler, and Kimberling reference triangles, <pause> X one remains the invariant center of the incircle.

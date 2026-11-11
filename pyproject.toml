@@ -38,3 +38,7 @@ version = {attr = "geometor.etc.__version__"}
 "Website" = "https://geometor.github.io/etc"
 "Repository" = "https://github.com/geometor/etc"
 "Issues" = "https://github.com/geometor/etc/issues"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

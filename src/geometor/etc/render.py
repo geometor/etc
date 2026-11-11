@@ -10,16 +10,40 @@ import re
 from pathlib import Path
 from typing import Any
 
+import sympy as sp
 import sympy.geometry as spg
-from geometor.model import Model
+from geometor.model import (
+    Model,
+    clean_expr,
+    exact_sign,
+    line_spread,
+    quadrance,
+    zero_test,
+)
 from geometor.model.element import CircleElement
 
+from .ops import (
+    barycentrics_of,
+    triangle_side_lengths,
+    triangle_side_quadrances,
+    triangle_signed_area,
+)
 from .palette import (
     get_central_line_color_token,
     get_circle_color_token,
     token_hex,
 )
-
+from .symbolic_cache import (
+    EXACT_CYCLIC_BARYCENTRICS,
+    CenterSymbolicRegistry,
+    format_symbolic_latex,
+    format_symbolic_pretty,
+    reduce_homogeneous_triple,
+)
+from .triangles import (
+    SymbolicTriangle,
+    get_canonical_triangle,
+)
 
 EXPLORER_SVG_CSS = """
 :root {
@@ -118,12 +142,28 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
     stroke-opacity: 0.85;
 }
 
+#elements line.central_line[data-color-token="orange"] { stroke: #fb923c; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="teal"] { stroke: #2dd4bf; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="blue"] { stroke: #38bdf8; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="orchid"] { stroke: #e879f9; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="pink"] { stroke: #f472b6; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="lime"] { stroke: #a3e635; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="green"] { stroke: #5ec27e; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="purple"] { stroke: #a855f7; stroke-dasharray: 6, 3; }
+
 #elements line.golden,
 #elements path.line.golden,
 #elements line.euler,
 #elements path.line.euler {
     stroke: gold;
     stroke-width: 2.1;
+}
+
+#elements line.strut {
+    stroke: gold;
+    stroke-width: 2.8;
+    stroke-dasharray: none;
+    stroke-opacity: 0.95;
 }
 
 #elements circle {
@@ -183,10 +223,11 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
 }
 
 #graphics polyline {
-    stroke: #36c9;
+    stroke: #ffd54f;
     fill: none;
-    stroke-width: 6;
+    stroke-width: 3.2;
     vector-effect: non-scaling-stroke;
+    cursor: pointer;
 }
 
 #graphics polygon {
@@ -198,6 +239,7 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
     marker-start: url(#marker);
     marker-mid: url(#marker);
     marker-end: url(#marker);
+    cursor: pointer;
 }
 
 #graphics polygon.secondary {
@@ -206,12 +248,54 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
     stroke-width: 3;
 }
 
+#graphics polygon.subarea-a {
+    stroke: rgba(255, 112, 67, 0.72);
+    fill: rgba(255, 112, 67, 0.20);
+    stroke-width: 2.4;
+    marker-start: none;
+    marker-mid: none;
+    marker-end: none;
+}
+
+#graphics polygon.subarea-b {
+    stroke: rgba(102, 187, 106, 0.72);
+    fill: rgba(102, 187, 106, 0.20);
+    stroke-width: 2.4;
+    marker-start: none;
+    marker-mid: none;
+    marker-end: none;
+}
+
+#graphics polygon.subarea-c {
+    stroke: rgba(66, 165, 245, 0.72);
+    fill: rgba(66, 165, 245, 0.20);
+    stroke-width: 2.4;
+    marker-start: none;
+    marker-mid: none;
+    marker-end: none;
+}
+
 #graphics polygon:hover,
 #graphics polygon.hover,
 #graphics polyline:hover,
 #graphics polyline.hover {
     stroke: var(--select-color) !important;
     stroke-opacity: 1 !important;
+}
+
+#graphics polygon.subarea-a:hover,
+#graphics polygon.subarea-a.hover {
+    fill: rgba(255, 112, 67, 0.38) !important;
+}
+
+#graphics polygon.subarea-b:hover,
+#graphics polygon.subarea-b.hover {
+    fill: rgba(102, 187, 106, 0.38) !important;
+}
+
+#graphics polygon.subarea-c:hover,
+#graphics polygon.subarea-c.hover {
+    fill: rgba(66, 165, 245, 0.38) !important;
 }
 
 #labels text {
@@ -296,13 +380,144 @@ figure:hover .etc-svg-toolbar {
     user-select: none;
 }
 
-.etc-svg-btn:hover {
-    background: #0ff;
-    color: #121212;
+.etc-svg-btn:hover,
+.etc-svg-btn.active {
+    background: rgba(0, 255, 255, 0.14);
+    color: #0ff;
     border-color: #0ff;
 }
 
-.etc-graphics-panel {
+.etc-symbolic-hud {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    max-width: min(460px, calc(100% - 20px));
+    background: rgba(14, 16, 22, 0.93);
+    border: 1px solid rgba(0, 255, 255, 0.35);
+    border-radius: 6px;
+    padding: 8px 12px;
+    color: #eaeaea;
+    font-family: "Fira Sans Condensed", system-ui, -apple-system, sans-serif;
+    font-size: 13px;
+    line-height: 1.38;
+    z-index: 24;
+    pointer-events: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.58);
+    opacity: 0;
+    transform: translateY(4px);
+    transition: opacity 0.12s ease, transform 0.12s ease;
+}
+
+.etc-symbolic-hud.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.etc-hud-head {
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 4px;
+    margin-bottom: 5px;
+}
+
+.etc-hud-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.etc-hud-id {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-weight: 700;
+    color: #0ff;
+    font-size: 13px;
+}
+
+.etc-hud-title {
+    font-weight: 600;
+    color: #f5f5f5;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.etc-hud-kind {
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #94a3b8;
+}
+
+.etc-hud-rows {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2px 10px;
+    align-items: baseline;
+}
+
+.etc-hud-key {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 11.5px;
+    color: #94a3b8;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.etc-hud-val {
+    color: #f8fafc;
+    font-size: 13.5px;
+    overflow-wrap: anywhere;
+}
+
+.etc-hud-val .katex {
+    font-size: 1.02em;
+}
+
+.etc-hud-approx {
+    margin-top: 4px;
+    padding-top: 3px;
+    border-top: 1px dashed rgba(255, 255, 255, 0.09);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 11px;
+    color: #8b9bb4;
+}
+
+.etc-math-fallback {
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: 1.06em;
+}
+
+.etc-math-frac {
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0 2px;
+    font-size: 0.88em;
+    line-height: 1.05;
+}
+
+.etc-math-num {
+    border-bottom: 1px solid rgba(248, 250, 252, 0.65);
+    padding: 0 2px 1px;
+}
+
+.etc-math-den {
+    padding: 1px 2px 0;
+}
+
+.etc-math-rad {
+    border-top: 1px solid rgba(248, 250, 252, 0.6);
+    padding: 0 2px;
+}
+
+.etc-graphics-panel,
+.etc-act-plate {
     width: 100%;
     background: #141414;
     border: 1px solid #333;
@@ -310,9 +525,48 @@ figure:hover .etc-svg-toolbar {
     overflow: hidden;
 }
 
-.etc-graphics-panel svg.geometor-etc-drawing {
+.etc-graphics-panel svg.geometor-etc-drawing,
+.etc-act-plate svg.geometor-etc-drawing {
     border: none;
     border-radius: 0;
+    display: block;
+}
+
+svg.geometor-etc-drawing .etc-plate-poly {
+    cursor: pointer;
+    transition: fill-opacity 0.14s ease, stroke 0.14s ease;
+}
+
+svg.geometor-etc-drawing .etc-plate-poly.hover {
+    stroke: var(--select-color) !important;
+    stroke-width: 2.8px !important;
+    fill-opacity: 0.44 !important;
+}
+
+svg.geometor-etc-drawing .etc-plate-strut,
+svg.geometor-etc-drawing .etc-plate-line,
+svg.geometor-etc-drawing .etc-plate-circle,
+svg.geometor-etc-drawing .etc-plate-pt,
+svg.geometor-etc-drawing .etc-plate-panel {
+    cursor: pointer;
+}
+
+svg.geometor-etc-drawing .etc-plate-strut.hover,
+svg.geometor-etc-drawing .etc-plate-line.hover,
+svg.geometor-etc-drawing .etc-plate-circle.hover {
+    stroke: var(--select-color) !important;
+    filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.72));
+}
+
+svg.geometor-etc-drawing .etc-plate-pt.hover {
+    stroke: var(--select-color) !important;
+    stroke-width: 3.6px !important;
+    filter: drop-shadow(0 0 6px rgba(0, 255, 255, 0.85));
+}
+
+svg.geometor-etc-drawing .etc-plate-panel.hover > rect.etc-panel-border {
+    stroke: var(--select-color) !important;
+    stroke-width: 2.8px !important;
 }
 
 .etc-triangle-tabs {
@@ -367,7 +621,6 @@ INTERACTIVE_SVG_JS = r"""
     const initVbAttr = svg.getAttribute('data-initial-viewbox') || svg.getAttribute('viewBox');
     const initialViewBox = initVbAttr.split(/\s+/).map(Number);
 
-    // Parse embedded element metadata catalog
     let elementsCatalog = {};
     const metaEl = svg.querySelector('script.etc-elements-meta');
     if (metaEl) {
@@ -383,10 +636,112 @@ INTERACTIVE_SVG_JS = r"""
     const labelsGroup = svg.querySelector('#labels');
 
     const pointEls = pointsGroup ? Array.from(pointsGroup.querySelectorAll('circle')) : [];
-    const structEls = elementsGroup ? Array.from(elementsGroup.querySelectorAll('line, circle')) : [];
-    const polyEls = graphicsGroup ? Array.from(graphicsGroup.querySelectorAll('polygon, polyline')) : [];
     const labelEls = labelsGroup ? Array.from(labelsGroup.querySelectorAll('text[data-point-id]')) : [];
     const subtitleEl = labelsGroup ? labelsGroup.querySelector('text.subtitle-label') : null;
+
+    function escapeHtml(str) {
+        return String(str || '')
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;');
+    }
+
+    function formatIdHtml(idStr) {
+        const s = escapeHtml(idStr);
+        return s.replace(/_\{([^}]+)\}/g, '<sub>$1</sub>').replace(/_([A-Za-z0-9']+)/g, '<sub>$1</sub>');
+    }
+
+    function extractBraced(src, startIdx) {
+        if (src[startIdx] !== '{') return null;
+        let depth = 0;
+        for (let i = startIdx; i < src.length; i++) {
+            if (src[i] === '{') depth++;
+            else if (src[i] === '}') {
+                depth--;
+                if (depth === 0) {
+                    return { content: src.slice(startIdx + 1, i), next: i + 1 };
+                }
+            }
+        }
+        return null;
+    }
+
+    function convertLatexFallback(tex) {
+        let s = String(tex || '');
+        s = s.replace(/\\left\s*([(\[{|])/g, '$1').replace(/\\right\s*([)\]}|])/g, '$1');
+        s = s.replace(/\\;/g, ' ').replace(/\\,/g, '\u2009').replace(/\\quad/g, '  ');
+        s = s.replace(/\\varphi|\\phi/g, 'φ')
+             .replace(/\\Delta/g, 'Δ')
+             .replace(/\\alpha/g, 'α')
+             .replace(/\\beta/g, 'β')
+             .replace(/\\gamma/g, 'γ')
+             .replace(/\\cdot/g, '·')
+             .replace(/\\approx/g, '≈')
+             .replace(/\\infty/g, '∞');
+
+        let out = '';
+        let i = 0;
+        while (i < s.length) {
+            if (s.startsWith('\\frac', i)) {
+                let k = i + 5;
+                while (k < s.length && s[k] === ' ') k++;
+                const numB = extractBraced(s, k);
+                if (numB) {
+                    let k2 = numB.next;
+                    while (k2 < s.length && s[k2] === ' ') k2++;
+                    const denB = extractBraced(s, k2);
+                    if (denB) {
+                        out += '<span class="etc-math-frac"><span class="etc-math-num">' +
+                            convertLatexFallback(numB.content) +
+                            '</span><span class="etc-math-den">' +
+                            convertLatexFallback(denB.content) +
+                            '</span></span>';
+                        i = denB.next;
+                        continue;
+                    }
+                }
+            }
+            if (s.startsWith('\\sqrt', i)) {
+                let k = i + 5;
+                while (k < s.length && s[k] === ' ') k++;
+                const radB = extractBraced(s, k);
+                if (radB) {
+                    out += '√<span class="etc-math-rad">' + convertLatexFallback(radB.content) + '</span>';
+                    i = radB.next;
+                    continue;
+                }
+            }
+            if ((s[i] === '_' || s[i] === '^') && i + 1 < s.length) {
+                const tag = s[i] === '_' ? 'sub' : 'sup';
+                if (s[i + 1] === '{') {
+                    const subB = extractBraced(s, i + 1);
+                    if (subB) {
+                        out += `<${tag}>` + convertLatexFallback(subB.content) + `</${tag}>`;
+                        i = subB.next;
+                        continue;
+                    }
+                } else {
+                    out += `<${tag}>` + escapeHtml(s[i + 1]) + `</${tag}>`;
+                    i += 2;
+                    continue;
+                }
+            }
+            out += escapeHtml(s[i]);
+            i++;
+        }
+        return out;
+    }
+
+    function renderMathHtml(latexStr, prettyStr) {
+        if (!latexStr) return escapeHtml(prettyStr || '');
+        if (typeof window !== 'undefined' && window.katex && typeof window.katex.renderToString === 'function') {
+            try {
+                return window.katex.renderToString(latexStr, { throwOnError: false, displayMode: false });
+            } catch (e) {}
+        }
+        return '<span class="etc-math-fallback">' + convertLatexFallback(latexStr) + '</span>';
+    }
 
     function getViewBox() {
         return svg.getAttribute('viewBox').split(/\s+/).map(Number);
@@ -441,8 +796,10 @@ INTERACTIVE_SVG_JS = r"""
         const relY = (clientY !== undefined && rect.height > 0) ? (clientY - rect.top) / rect.height : 0.5;
         const focusX = x + relX * w;
         const focusY = y + relY * h;
-        const newW = Math.min(Math.max(w * factor, 0.002), 50.0);
-        const newH = Math.min(Math.max(h * factor, 0.002), 50.0);
+        const baseW = Math.max(initialViewBox[2] || 1.0, 0.2);
+        const baseH = Math.max(initialViewBox[3] || 1.0, 0.2);
+        const newW = Math.min(Math.max(w * factor, baseW * 0.002), baseW * 30.0);
+        const newH = Math.min(Math.max(h * factor, baseH * 0.002), baseH * 30.0);
         const newX = focusX - relX * newW;
         const newY = focusY - relY * newH;
         setViewBox([newX, newY, newW, newH]);
@@ -452,7 +809,8 @@ INTERACTIVE_SVG_JS = r"""
         setViewBox([...initialViewBox]);
     }
 
-    // Expose controller API on the SVG element for external toolbar buttons
+    let hudEl = null;
+
     svg._etcController = {
         zoomIn: () => zoomBy(1 / 1.25),
         zoomOut: () => zoomBy(1.25),
@@ -462,14 +820,14 @@ INTERACTIVE_SVG_JS = r"""
         scaleViewElements: scaleViewElements,
     };
 
-    // Ensure Toolbar and Triangle Tabs exist if running inside an HTML document
     if (document.body && document.documentElement.tagName.toLowerCase() === 'html') {
-        const parent = svg.parentElement;
-        if (parent && !parent.classList.contains('etc-svg-stage')) {
-            const stage = document.createElement('div');
-            stage.className = 'etc-svg-stage';
-            parent.insertBefore(stage, svg);
-            stage.appendChild(svg);
+        let stage = svg.parentElement;
+        if (stage && !stage.classList.contains('etc-svg-stage')) {
+            const newStage = document.createElement('div');
+            newStage.className = 'etc-svg-stage';
+            stage.insertBefore(newStage, svg);
+            newStage.appendChild(svg);
+            stage = newStage;
 
             const toolbar = document.createElement('div');
             toolbar.className = 'etc-svg-toolbar';
@@ -487,13 +845,15 @@ INTERACTIVE_SVG_JS = r"""
                     action: () => svg.classList.toggle('show-lines'),
                 });
             }
-            btns.push({
-                label: 'Labels',
-                toggleKey: 'labels',
-                title: 'Toggle Point Labels',
-                isActive: () => !svg.classList.contains('hide-labels'),
-                action: () => svg.classList.toggle('hide-labels'),
-            });
+            if (labelEls.length > 0) {
+                btns.push({
+                    label: 'Labels',
+                    toggleKey: 'labels',
+                    title: 'Toggle Point Labels',
+                    isActive: () => !svg.classList.contains('hide-labels'),
+                    action: () => svg.classList.toggle('hide-labels'),
+                });
+            }
             if (svg.querySelector('.guide')) {
                 btns.push({
                     label: 'Guides',
@@ -524,6 +884,17 @@ INTERACTIVE_SVG_JS = r"""
                 toolbar.appendChild(btn);
             });
             stage.appendChild(toolbar);
+        }
+
+        if (stage) {
+            hudEl = stage.querySelector('.etc-symbolic-hud');
+            if (!hudEl) {
+                hudEl = document.createElement('div');
+                hudEl.className = 'etc-symbolic-hud';
+                hudEl.setAttribute('aria-live', 'polite');
+                stage.appendChild(hudEl);
+            }
+            svg.querySelectorAll('title').forEach(t => t.remove());
         }
 
         const panel = svg.closest('.etc-graphics-panel');
@@ -593,11 +964,49 @@ INTERACTIVE_SVG_JS = r"""
         }
     }
 
-    let activeHoveredId = null;
+    function updateHud(info, fallbackId) {
+        if (!hudEl) return;
+        if (!info) {
+            hudEl.classList.remove('is-visible');
+            return;
+        }
+        const dotColor = info.color || '#0ff';
+        const idHtml = formatIdHtml(info.ID || fallbackId || '');
+        const titleHtml = escapeHtml(info.name || fallbackId || '');
+        const kindHtml = escapeHtml(info.type || '');
+        const symRows = Array.isArray(info.symbolic_rows) ? info.symbolic_rows : [];
+        let rowsHtml = '';
+        if (symRows.length > 0) {
+            symRows.forEach(r => {
+                rowsHtml += '<div class="etc-hud-key">' + escapeHtml(r.label) + '</div>' +
+                    '<div class="etc-hud-val">' + renderMathHtml(r.latex, r.pretty) + '</div>';
+            });
+        } else if (Array.isArray(info.rows)) {
+            info.rows.forEach(pair => {
+                rowsHtml += '<div class="etc-hud-key">' + escapeHtml(pair[0]) + '</div>' +
+                    '<div class="etc-hud-val">' + escapeHtml(pair[1]) + '</div>';
+            });
+        }
+        const approxHtml = info.approx
+            ? '<div class="etc-hud-approx">' + escapeHtml(info.approx) + '</div>'
+            : '';
+        hudEl.innerHTML =
+            '<div class="etc-hud-head">' +
+                '<span class="etc-hud-dot" style="background:' + escapeHtml(dotColor) + '"></span>' +
+                '<span class="etc-hud-id">' + idHtml + '</span>' +
+                '<span class="etc-hud-title">' + titleHtml + '</span>' +
+                '<span class="etc-hud-kind">' + kindHtml + '</span>' +
+            '</div>' +
+            '<div class="etc-hud-rows">' + rowsHtml + '</div>' +
+            approxHtml;
+        hudEl.classList.add('is-visible');
+    }
 
-    function clearHover() {
-        if (!activeHoveredId) return;
-        activeHoveredId = null;
+    let activeHoveredKey = null;
+
+    function clearHover(clearTextRefs) {
+        if (!activeHoveredKey) return;
+        activeHoveredKey = null;
         svg.querySelectorAll('.hover').forEach(el => el.classList.remove('hover'));
         svg.querySelectorAll('.hover-label').forEach(el => el.classList.remove('hover-label'));
         if (highlightsGroup) {
@@ -605,97 +1014,208 @@ INTERACTIVE_SVG_JS = r"""
                 el.style.display = 'none';
             });
         }
-        if (typeof document !== 'undefined') {
+        if (hudEl) {
+            hudEl.classList.remove('is-visible');
+        }
+        if (clearTextRefs !== false && typeof document !== 'undefined') {
             document.querySelectorAll('.geom-highlight-text').forEach(el => {
                 el.classList.remove('geom-highlight-text');
             });
         }
     }
 
-    function resolveSvgId(rawId) {
-        if (!rawId) return rawId;
-        if (svg.querySelector(`[data-id="${CSS.escape(rawId)}"]`)) return rawId;
-        const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
-        if (segM) {
-            const revId = `[ ${segM[2]} ${segM[1]} ]`;
-            if (svg.querySelector(`[data-id="${CSS.escape(revId)}"]`)) return revId;
-        }
-        const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
-        if (triM) {
-            const pts = [triM[1], triM[2], triM[3]];
-            if (pts.includes('A') && pts.includes('B') && pts.includes('C')) {
-                return '< A B C >';
-            }
-            const secPoly = graphicsGroup ? graphicsGroup.querySelector('polygon.secondary[data-id]') : null;
-            if (secPoly) {
-                return secPoly.getAttribute('data-id') || rawId;
-            }
-        }
-        return rawId;
+    function findSvgElement(candidateId) {
+        if (!candidateId) return null;
+        return svg.querySelector(`[data-id="${CSS.escape(candidateId)}"], [data-ref="${CSS.escape(candidateId)}"]`);
     }
 
-    function activateHover(rawId) {
-        if (!rawId) return;
-        const id = resolveSvgId(rawId);
-        if (activeHoveredId === id) return;
-        clearHover();
-        activeHoveredId = id;
-        const info = elementsCatalog[id];
+    function resolveSingleSvgId(rawId) {
+        if (!rawId) return null;
+        const trimmed = rawId.trim();
+        if (findSvgElement(trimmed)) return trimmed;
+        const clean = trimmed.includes(':') ? trimmed.split(':').pop().trim() : trimmed;
+        if (findSvgElement(clean)) return clean;
 
-        const targetEl = svg.querySelector(`[data-id="${CSS.escape(id)}"]`);
-        if (targetEl) {
-            targetEl.classList.add('hover');
+        const lineM = clean.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+        if (lineM) {
+            const cands = [
+                `[ ${lineM[1]} ${lineM[2]} ]`,
+                `[ ${lineM[2]} ${lineM[1]} ]`,
+                `/ ${lineM[1]} ${lineM[2]} /`,
+                `/ ${lineM[2]} ${lineM[1]} /`,
+            ];
+            for (const c of cands) {
+                if (findSvgElement(c)) return c;
+            }
         }
 
-        // Show highlight segment if present
-        if (highlightsGroup) {
-            const hl = highlightsGroup.querySelector(`[data-highlight-for="${CSS.escape(id)}"]`);
-            if (hl) hl.style.display = 'inline';
+        const segM = clean.match(/^\/\s*(\S+)\s+(\S+)\s*\/$/);
+        if (segM) {
+            const cands = [
+                `/ ${segM[1]} ${segM[2]} /`,
+                `/ ${segM[2]} ${segM[1]} /`,
+                `[ ${segM[1]} ${segM[2]} ]`,
+                `[ ${segM[2]} ${segM[1]} ]`,
+            ];
+            for (const c of cands) {
+                if (findSvgElement(c)) return c;
+            }
         }
 
-        // Highlight parent/endpoint points and labels
-        let relatedPts = (info && info.related_points) ? info.related_points : [id];
-        if (!targetEl && relatedPts.length === 1 && relatedPts[0] === id) {
-            const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
-            const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
-            if (segM) relatedPts = [segM[1], segM[2]];
-            else if (triM) relatedPts = [triM[1], triM[2], triM[3]];
+        const braceAllM = clean.match(/^\{\s*([\d,\s]+)\s*\}$/);
+        if (braceAllM) {
+            const wantNums = braceAllM[1].split(',').map(s => s.trim()).filter(Boolean);
+            if (wantNums.length === 2) {
+                const cands = [
+                    `{ ${wantNums[0]}, ${wantNums[1]} }`,
+                    `{ ${wantNums[1]}, ${wantNums[0]} }`,
+                ];
+                for (const c of cands) {
+                    if (findSvgElement(c)) return c;
+                }
+            }
+            if (wantNums.length >= 2) {
+                const wantSet = new Set(wantNums);
+                const lineEls = svg.querySelectorAll('line[data-id], line[data-ref]');
+                for (const ln of lineEls) {
+                    const lid = ln.getAttribute('data-id') || ln.getAttribute('data-ref') || '';
+                    const lm = lid.match(/^\{\s*([\d,\s]+)\s*\}$/);
+                    if (lm) {
+                        const lnums = lm[1].split(',').map(s => s.trim()).filter(Boolean);
+                        const shared = lnums.filter(n => wantSet.has(n));
+                        if (shared.length >= 2) return lid;
+                    }
+                }
+            }
         }
-        relatedPts.forEach(pid => {
-            const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
-            if (ptEl) ptEl.classList.add('hover');
-            const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
-            if (lblEl) lblEl.classList.add('hover-label');
+
+        const triM = clean.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+        if (triM) {
+            const want = [triM[1], triM[2], triM[3]].sort().join('|');
+            const polys = svg.querySelectorAll('polygon[data-id], polygon[data-ref]');
+            for (const p of polys) {
+                const pid = p.getAttribute('data-id') || p.getAttribute('data-ref') || '';
+                const pm = pid.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                if (pm && [pm[1], pm[2], pm[3]].sort().join('|') === want) {
+                    return pid;
+                }
+            }
+        }
+
+        return null;
+    }
+
+    function hasElement(rawRef) {
+        if (!rawRef) return false;
+        const parts = String(rawRef).split(';').map(s => s.trim()).filter(Boolean);
+        return parts.some(p => resolveSingleSvgId(p) !== null);
+    }
+
+    function activateHover(rawRef, highlightTextRefs) {
+        if (!rawRef) return false;
+        const parts = String(rawRef).split(';').map(s => s.trim()).filter(Boolean);
+        const resolvedIds = parts.map(p => resolveSingleSvgId(p)).filter(Boolean);
+        if (resolvedIds.length === 0) return false;
+
+        const key = resolvedIds.join(';');
+        if (activeHoveredKey === key) return true;
+        clearHover(highlightTextRefs !== false);
+        activeHoveredKey = key;
+
+        let primaryInfo = null;
+        let primaryId = resolvedIds[0];
+
+        resolvedIds.forEach(id => {
+            const info = elementsCatalog[id];
+            if (!primaryInfo && info) {
+                primaryInfo = info;
+                primaryId = id;
+            }
+            svg.querySelectorAll(`[data-id="${CSS.escape(id)}"], [data-ref="${CSS.escape(id)}"]`).forEach(el => {
+                el.classList.add('hover');
+            });
+            if (highlightsGroup) {
+                const hl = highlightsGroup.querySelector(`[data-highlight-for="${CSS.escape(id)}"]`);
+                if (hl) hl.style.display = 'inline';
+            }
+            let relatedPts = (info && info.related_points) ? info.related_points : [id];
+            if (!info) {
+                const sm = id.match(/^[\[/]\s*(\S+)\s+(\S+)\s*[\]/]$/);
+                const tm = id.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                if (sm) relatedPts = [sm[1], sm[2]];
+                else if (tm) relatedPts = [tm[1], tm[2], tm[3]];
+            }
+            relatedPts.forEach(pid => {
+                const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
+                if (ptEl) ptEl.classList.add('hover');
+                const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
+                if (lblEl) lblEl.classList.add('hover-label');
+            });
         });
 
-        if (typeof document !== 'undefined') {
-            const sel = rawId === id
-                ? `.geom-ref[data-ref="${CSS.escape(id)}"]`
-                : `.geom-ref[data-ref="${CSS.escape(rawId)}"], .geom-ref[data-ref="${CSS.escape(id)}"]`;
-            document.querySelectorAll(sel).forEach(el => {
+        updateHud(primaryInfo, primaryId);
+
+        if (highlightTextRefs !== false && typeof document !== 'undefined') {
+            const selectors = new Set([`.geom-ref[data-ref="${CSS.escape(rawRef)}"]`]);
+            resolvedIds.forEach(id => selectors.add(`.geom-ref[data-ref="${CSS.escape(id)}"]`));
+            document.querySelectorAll(Array.from(selectors).join(', ')).forEach(el => {
                 el.classList.add('geom-highlight-text');
             });
         }
+        return true;
     }
 
     svg._etcController.activateHover = activateHover;
     svg._etcController.clearHover = clearHover;
+    svg._etcController.hasElement = hasElement;
+
+    if (typeof window !== 'undefined') {
+        window.__etcSvgRegistry = window.__etcSvgRegistry || [];
+        if (!window.__etcSvgRegistry.includes(svg)) {
+            window.__etcSvgRegistry.push(svg);
+        }
+    }
 
     if (document.body && document.documentElement.tagName.toLowerCase() === 'html' && document.body.dataset.etcGeomRefSyncInit !== '1') {
         document.body.dataset.etcGeomRefSyncInit = '1';
-        function getActiveSvg() {
-            const activePaneSvg = document.querySelector('.etc-tab-pane.active svg.geometor-etc-drawing');
-            if (activePaneSvg && activePaneSvg._etcController) return activePaneSvg;
-            const anySvg = document.querySelector('svg.geometor-etc-drawing');
-            return (anySvg && anySvg._etcController) ? anySvg : null;
+
+        function isSvgVisible(s) {
+            if (!s || !s.isConnected || !s._etcController) return false;
+            const pane = s.closest('.etc-tab-pane');
+            if (pane && !pane.classList.contains('active')) return false;
+            return s.getClientRects().length > 0;
         }
+
+        function dispatchRefHover(sourceEl, refStr) {
+            if (!refStr) return;
+            const reg = (window.__etcSvgRegistry || []).filter(isSvgVisible);
+            const sec = sourceEl ? sourceEl.closest('section') : null;
+            let targets = [];
+            if (sec) {
+                targets = reg.filter(s => sec.contains(s) && s._etcController.hasElement(refStr));
+            }
+            if (targets.length === 0) {
+                targets = reg.filter(s => s._etcController.hasElement(refStr));
+            }
+            reg.forEach(s => {
+                if (!targets.includes(s)) s._etcController.clearHover(false);
+            });
+            targets.forEach(s => s._etcController.activateHover(refStr, false));
+            if (sourceEl && targets.length > 0) {
+                sourceEl.classList.add('geom-highlight-text');
+            }
+        }
+
+        function clearAllSvgHovers() {
+            (window.__etcSvgRegistry || []).forEach(s => {
+                if (s && s._etcController) s._etcController.clearHover(true);
+            });
+        }
+
         document.body.addEventListener('mouseover', (e) => {
             const geomEl = e.target.closest('.geom-ref[data-ref]');
             if (geomEl) {
-                const activeSvg = getActiveSvg();
-                if (activeSvg && activeSvg._etcController.activateHover) {
-                    activeSvg._etcController.activateHover(geomEl.getAttribute('data-ref'));
-                }
+                dispatchRefHover(geomEl, geomEl.getAttribute('data-ref'));
                 return;
             }
             const refLink = e.target.closest('a.reference.internal');
@@ -703,30 +1223,24 @@ INTERACTIVE_SVG_JS = r"""
                 const txt = (refLink.textContent || '').trim();
                 const xm = txt.match(/^X(?:_|\()?(\d+)\)?$/);
                 if (xm) {
-                    const activeSvg = getActiveSvg();
-                    if (activeSvg && activeSvg._etcController.activateHover) {
-                        activeSvg._etcController.activateHover(`X_${xm[1]}`);
-                    }
+                    dispatchRefHover(refLink, `X_${xm[1]}`);
                 }
             }
         });
+
         document.body.addEventListener('mouseout', (e) => {
             const geomEl = e.target.closest('.geom-ref[data-ref], a.reference.internal');
             if (geomEl) {
-                const activeSvg = getActiveSvg();
-                if (activeSvg && activeSvg._etcController.clearHover) {
-                    activeSvg._etcController.clearHover();
-                }
+                clearAllSvgHovers();
             }
         });
     }
 
-    // Native DOM hover matching browser <title> tooltip topmost target
     svg.addEventListener('mouseover', (event) => {
         if (isPanning) return;
-        const target = event.target.closest('[data-id]');
+        const target = event.target.closest('[data-id], [data-ref]');
         if (target && svg.contains(target)) {
-            activateHover(target.getAttribute('data-id'));
+            activateHover(target.getAttribute('data-id') || target.getAttribute('data-ref'));
         } else {
             clearHover();
         }
@@ -734,20 +1248,18 @@ INTERACTIVE_SVG_JS = r"""
 
     svg.addEventListener('mouseout', (event) => {
         if (isPanning) return;
-        const related = event.relatedTarget ? event.relatedTarget.closest?.('[data-id]') : null;
+        const related = event.relatedTarget ? event.relatedTarget.closest?.('[data-id], [data-ref]') : null;
         if (!related || !svg.contains(related)) {
             clearHover();
         }
     });
 
-    // Wheel Zoom
     svg.addEventListener('wheel', (event) => {
         event.preventDefault();
         const factor = event.deltaY > 0 ? 1.12 : (1 / 1.12);
         zoomBy(factor, event.clientX, event.clientY);
     }, { passive: false });
 
-    // Drag Pan
     let isPanning = false;
     let didDrag = false;
     let startClient = { x: 0, y: 0 };
@@ -812,6 +1324,7 @@ INTERACTIVE_SVG_JS = r"""
 """
 
 
+
 # ---------------------------------------------------------------------------
 # Center, Line, Circle, and Triangle Name Discernment
 # ---------------------------------------------------------------------------
@@ -827,15 +1340,15 @@ def _load_center_names() -> dict[str, str]:
         if p.is_file():
             try:
                 return json.loads(p.read_text(encoding="utf-8"))
-            except Exception:
-                pass
+            except (OSError, ValueError):
+                continue
     return {}
 
 
 _CLASSICAL_POINT_INFO: dict[str, tuple[str, str]] = {
     "A": ("Vertex A", "Reference triangle vertex at origin (0, 0)"),
-    "B": ("Vertex B", "Reference triangle vertex at unit base (1, 0)"),
-    "C": ("Vertex C", "Reference triangle apex constructed by Euclid I.22"),
+    "B": ("Vertex B", "Reference triangle baseline vertex on positive x-axis"),
+    "C": ("Vertex C", "Reference triangle apex constructed in upper half-plane"),
     "M_a": ("Midpoint M_a of BC", "Medial triangle vertex opposite A"),
     "M_b": ("Midpoint M_b of CA", "Medial triangle vertex opposite B"),
     "M_c": ("Midpoint M_c of AB", "Medial triangle vertex opposite C"),
@@ -894,12 +1407,12 @@ _CLASSICAL_POINT_INFO: dict[str, tuple[str, str]] = {
     "O_B": ("Kosnita Circumcenter O_B", "Circumcenter of subtriangle △COA (O = X_3)"),
     "O_C": ("Kosnita Circumcenter O_C", "Circumcenter of subtriangle △AOB (O = X_3)"),
     "S_c": ("Spieker Touchpoint S_c", "Tangency point of Spieker circle on medial side M_a M_b"),
-    "R_a": ("Radius Point R_a", "Euclid I.22 baseline guide point (distance a/c from B)"),
-    "R_b": ("Radius Point R_b", "Euclid I.22 baseline guide point (distance b/c from A)"),
+    "R_a": ("Radius Point R_a", "Euclid I.22 baseline guide point"),
+    "R_b": ("Radius Point R_b", "Euclid I.22 baseline guide point"),
 }
 
 _CONSTRUCTION_LINE_INFO: dict[str, tuple[str, str]] = {
-    "[ A B ]": ("Sideline AB (Base c = 1)", "Reference triangle baseline through A and B"),
+    "[ A B ]": ("Sideline AB (Side c)", "Reference triangle baseline through A and B"),
     "[ B C ]": ("Sideline BC (Side a)", "Reference triangle sideline opposite vertex A"),
     "[ C A ]": ("Sideline CA (Side b)", "Reference triangle sideline opposite vertex B"),
     "[ A M_a ]": ("A-Median", "Median from vertex A to midpoint M_a of BC"),
@@ -955,6 +1468,12 @@ _CONSTRUCTION_LINE_INFO: dict[str, tuple[str, str]] = {
     "[ C Nap'_c ]": ("Inner Napoleon Cevian C–Nap'_c", "Line from vertex C to inner Napoleon center Nap'_c"),
 }
 
+_KNOWN_SEGMENT_INFO: dict[str, tuple[str, str]] = {
+    "/ X_1 T_a /": ("Orthogonal Inradius Strut X_1–T_a", "Directed trilinear distance α = r perpendicular to BC"),
+    "/ X_1 T_b /": ("Orthogonal Inradius Strut X_1–T_b", "Directed trilinear distance β = r perpendicular to CA"),
+    "/ X_1 T_c /": ("Orthogonal Inradius Strut X_1–T_c", "Directed trilinear distance γ = r perpendicular to AB"),
+}
+
 _KNOWN_CIRCLE_INFO: dict[str, tuple[str, str]] = {
     "circumcircle": (
         "Circumcircle of △ABC",
@@ -1002,16 +1521,19 @@ _KNOWN_CIRCLE_INFO: dict[str, tuple[str, str]] = {
     ),
     "( A R_b )": (
         "Euclid I.22 Guide Circle (A)",
-        "Baseline construction circle centered at A with radius b/c",
+        "Baseline construction circle centered at A",
     ),
     "( B R_a )": (
         "Euclid I.22 Guide Circle (B)",
-        "Baseline construction circle centered at B with radius a/c",
+        "Baseline construction circle centered at B",
     ),
 }
 
 _KNOWN_POLYGON_INFO: dict[str, tuple[str, str]] = {
-    "< A B C >": ("Reference Triangle △ABC", "Primary reference triangle with unit baseline AB = 1"),
+    "< A B C >": ("Reference Triangle △ABC", "Primary exact symbolic reference triangle"),
+    "< X_1 B C >": ("Barycentric Sub-Triangle △X_1BC (Δ_a)", "Sub-area opposite A proportional to barycentric weight u = a"),
+    "< X_1 C A >": ("Barycentric Sub-Triangle △X_1CA (Δ_b)", "Sub-area opposite B proportional to barycentric weight v = b"),
+    "< X_1 A B >": ("Barycentric Sub-Triangle △X_1AB (Δ_c)", "Sub-area opposite C proportional to barycentric weight w = c"),
     "< M_a M_b M_c >": ("Medial Triangle △M_a M_b M_c", "Formed by the midpoints of sides BC, CA, AB"),
     "< H_a H_b H_c >": ("Orthic Triangle △H_a H_b H_c", "Pedal triangle of Orthocenter X_4 (altitude feet)"),
     "< T_a T_b T_c >": ("Intouch (Contact) Triangle △T_a T_b T_c", "Contact triangle of Incircle touchpoints on BC, CA, AB"),
@@ -1044,7 +1566,6 @@ def _short_point_name(pid: str, center_names: dict[str, str]) -> str:
         num_str = m.group(1)
         raw = center_names.get(num_str, "")
         if raw:
-            # Keep primary title before long parenthetical if very long
             if len(raw) > 48 and "(" in raw:
                 raw = raw.split("(")[0].strip()
             return raw
@@ -1165,9 +1686,120 @@ def _format_line_eq(x1: float, y1: float, x2: float, y2: float) -> str:
     return f"{a:.4f}x {b_sign} {abs(b):.4f}y {c_sign} {abs(c):.4f} = 0"
 
 
+def _format_triple_latex(
+    u: sp.Expr, v: sp.Expr, w: sp.Expr, *, kepler_phi: bool = False
+) -> str:
+    return (
+        f"{format_symbolic_latex(u, kepler_phi=kepler_phi)} : "
+        f"{format_symbolic_latex(v, kepler_phi=kepler_phi)} : "
+        f"{format_symbolic_latex(w, kepler_phi=kepler_phi)}"
+    )
+
+
+def _format_triple_pretty(
+    u: sp.Expr, v: sp.Expr, w: sp.Expr, *, kepler_phi: bool = False
+) -> str:
+    return (
+        f"{format_symbolic_pretty(u, kepler_phi=kepler_phi)} : "
+        f"{format_symbolic_pretty(v, kepler_phi=kepler_phi)} : "
+        f"{format_symbolic_pretty(w, kepler_phi=kepler_phi)}"
+    )
+
+
+def _format_exact_line_eq(
+    la: sp.Expr,
+    lb: sp.Expr,
+    lc: sp.Expr,
+    *,
+    tri_obj: SymbolicTriangle | None = None,
+    kepler_phi: bool = False,
+    simplify_fn: Any = clean_expr,
+) -> tuple[str, str]:
+    """Format exact homogeneous line equation ``la*x + lb*y + lc = 0`` as ``(latex, pretty)``."""
+    eff_tri = tri_obj if isinstance(tri_obj, SymbolicTriangle) else get_canonical_triangle("heronian")
+    ra, rb, rc = reduce_homogeneous_triple(la, lb, lc, eff_tri)
+    for coeff in (ra, rb, rc):
+        if not zero_test(coeff):
+            if exact_sign(coeff) < 0:
+                ra = simplify_fn(-ra)
+                rb = simplify_fn(-rb)
+                rc = simplify_fn(-rc)
+            break
+
+    latex_parts: list[str] = []
+    pretty_parts: list[str] = []
+    for coeff, var_str in ((ra, "x"), (rb, "y"), (rc, "")):
+        if zero_test(coeff):
+            continue
+        sgn = exact_sign(coeff)
+        mag = simplify_fn(-coeff) if sgn < 0 else coeff
+        ml = format_symbolic_latex(mag, kepler_phi=kepler_phi)
+        mp = format_symbolic_pretty(mag, kepler_phi=kepler_phi)
+
+        if var_str:
+            if zero_test(mag - sp.Integer(1)):
+                term_l = var_str
+                term_p = var_str
+            elif isinstance(mag, sp.Add) or (" + " in mp or " - " in mp):
+                term_l = f"\\left({ml}\\right){var_str}"
+                term_p = f"({mp}){var_str}"
+            else:
+                term_l = f"{ml}{var_str}"
+                term_p = f"{mp}{var_str}"
+        else:
+            term_l = ml
+            term_p = mp
+
+        if not latex_parts:
+            if sgn < 0:
+                latex_parts.append(f"-{term_l}")
+                pretty_parts.append(f"-{term_p}")
+            else:
+                latex_parts.append(term_l)
+                pretty_parts.append(term_p)
+        else:
+            op = "-" if sgn < 0 else "+"
+            latex_parts.append(f" {op} {term_l}")
+            pretty_parts.append(f" {op} {term_p}")
+
+    if not latex_parts:
+        return ("0 = 0", "0 = 0")
+    return ("".join(latex_parts) + " = 0", "".join(pretty_parts) + " = 0")
+
+
+def _format_exact_circle_eq(
+    hx: sp.Expr,
+    ky: sp.Expr,
+    qr: sp.Expr,
+    *,
+    kepler_phi: bool = False,
+    simplify_fn: Any = clean_expr,
+) -> tuple[str, str]:
+    """Format exact circle equation ``(x - h)^2 + (y - k)^2 = Q_r`` as ``(latex, pretty)``."""
+
+    def _axis_sq(var_name: str, val: sp.Expr) -> tuple[str, str]:
+        if zero_test(val):
+            return (f"{var_name}^2", f"{var_name}²")
+        sgn = exact_sign(val)
+        mag = simplify_fn(-val) if sgn < 0 else val
+        ml = format_symbolic_latex(mag, kepler_phi=kepler_phi)
+        mp = format_symbolic_pretty(mag, kepler_phi=kepler_phi)
+        op = "-" if sgn > 0 else "+"
+        if isinstance(mag, sp.Add) or (" + " in mp or " - " in mp):
+            return (f"\\left({var_name} {op} \\left({ml}\\right)\\right)^2", f"({var_name} {op} ({mp}))²")
+        return (f"\\left({var_name} {op} {ml}\\right)^2", f"({var_name} {op} {mp})²")
+
+    xl, xp = _axis_sq("x", hx)
+    yl, yp = _axis_sq("y", ky)
+    qrl = format_symbolic_latex(qr, kepler_phi=kepler_phi)
+    qrp = format_symbolic_pretty(qr, kepler_phi=kepler_phi)
+    return (f"{xl} + {yl} = {qrl}", f"{xp} + {yp} = {qrp}")
+
+
 def _enrich_elements_catalog(
     elements: list[dict[str, Any]],
     points_by_id: dict[str, dict[str, Any]],
+    tri_span: float = 1.0,
 ) -> dict[str, dict[str, Any]]:
     """Build a rich metadata dictionary keyed by element ID for interactive hover cards."""
     center_names = _load_center_names()
@@ -1175,6 +1807,7 @@ def _enrich_elements_catalog(
     B = points_by_id.get("B")
     C = points_by_id.get("C")
     named_lines = _build_named_central_lines_xy(A, B, C)
+    line_tol = max(tri_span, 1.0) * 1e-4
 
     catalog: dict[str, dict[str, Any]] = {}
 
@@ -1182,6 +1815,7 @@ def _enrich_elements_catalog(
         eid = el["ID"]
         etype = el["type"]
         classes = el.get("classes") or []
+        sym = el.get("symbolic") or {}
 
         if etype == "point":
             px, py = el["x"], el["y"]
@@ -1207,7 +1841,36 @@ def _enrich_elements_catalog(
             if bary:
                 rows.append(("bary", f"{bary[0]:.4f} : {bary[1]:.4f} : {bary[2]:.4f}"))
             if el.get("parents"):
-                rows.append(("str", ", ".join(el["parents"])))
+                rows.append(("from", ", ".join(el["parents"])))
+
+            sym_rows: list[dict[str, str]] = []
+            if sym.get("coords_latex"):
+                sym_rows.append(
+                    {
+                        "label": "(x, y)",
+                        "latex": sym["coords_latex"],
+                        "pretty": sym.get("coords_pretty", ""),
+                    }
+                )
+            if sym.get("trilinear_latex"):
+                sym_rows.append(
+                    {
+                        "label": "trilinear",
+                        "latex": sym["trilinear_latex"],
+                        "pretty": sym.get("trilinear_pretty", ""),
+                    }
+                )
+            if sym.get("barycentric_latex"):
+                sym_rows.append(
+                    {
+                        "label": "bary",
+                        "latex": sym["barycentric_latex"],
+                        "pretty": sym.get("barycentric_pretty", ""),
+                    }
+                )
+            if el.get("parents"):
+                p_str = ", ".join(el["parents"])
+                sym_rows.append({"label": "from", "latex": "", "pretty": p_str})
 
             catalog[eid] = {
                 "ID": eid,
@@ -1217,7 +1880,64 @@ def _enrich_elements_catalog(
                 "name": c_name,
                 "subtitle": subtitle,
                 "rows": rows,
+                "symbolic_rows": sym_rows,
+                "approx": f"≈ ({px:.6f}, {py:.6f})",
                 "related_points": [eid],
+            }
+
+        elif etype == "segment":
+            pts_list = el.get("points") or []
+            p1_id = pts_list[0] if len(pts_list) > 0 else ""
+            p2_id = pts_list[1] if len(pts_list) > 1 else ""
+            p1 = points_by_id.get(p1_id)
+            p2 = points_by_id.get(p2_id)
+            seg_name, subtitle = _KNOWN_SEGMENT_INFO.get(
+                eid,
+                (f"Segment {p1_id}–{p2_id}", f"Segment joining {p1_id} and {p2_id}"),
+            )
+            color = "gold"
+            seg_len = (
+                math.hypot(p2["x"] - p1["x"], p2["y"] - p1["y"])
+                if (p1 and p2)
+                else 0.0
+            )
+            rows = [("pts", f"{p1_id}, {p2_id}"), ("len", f"{seg_len:.4f}")]
+            sym_rows = []
+            if sym.get("length_latex"):
+                sym_rows.append(
+                    {
+                        "label": "length",
+                        "latex": sym["length_latex"],
+                        "pretty": sym.get("length_pretty", ""),
+                    }
+                )
+            if sym.get("quadrance_latex"):
+                sym_rows.append(
+                    {
+                        "label": "Q",
+                        "latex": sym["quadrance_latex"],
+                        "pretty": sym.get("quadrance_pretty", ""),
+                    }
+                )
+            if sym.get("spread_latex"):
+                sym_rows.append(
+                    {
+                        "label": "spread",
+                        "latex": sym["spread_latex"],
+                        "pretty": sym.get("spread_pretty", ""),
+                    }
+                )
+            catalog[eid] = {
+                "ID": eid,
+                "type": "segment",
+                "classes": classes,
+                "color": color,
+                "name": seg_name,
+                "subtitle": subtitle,
+                "rows": rows,
+                "symbolic_rows": sym_rows,
+                "approx": f"≈ length {seg_len:.6f}",
+                "related_points": [pid for pid in (p1_id, p2_id) if pid],
             }
 
         elif etype == "line":
@@ -1234,11 +1954,10 @@ def _enrich_elements_catalog(
             if eid in _CONSTRUCTION_LINE_INFO:
                 line_name, subtitle = _CONSTRUCTION_LINE_INFO[eid]
             elif p1 and p2:
-                # Check if this central line matches any of the famous named central lines
                 for nl_name, nl_desc, nl_p1, nl_p2 in named_lines:
                     if (
-                        _dist_point_to_line(p1["x"], p1["y"], nl_p1[0], nl_p1[1], nl_p2[0], nl_p2[1]) < 1e-4
-                        and _dist_point_to_line(p2["x"], p2["y"], nl_p1[0], nl_p1[1], nl_p2[0], nl_p2[1]) < 1e-4
+                        _dist_point_to_line(p1["x"], p1["y"], nl_p1[0], nl_p1[1], nl_p2[0], nl_p2[1]) < line_tol
+                        and _dist_point_to_line(p2["x"], p2["y"], nl_p1[0], nl_p1[1], nl_p2[0], nl_p2[1]) < line_tol
                     ):
                         line_name = nl_name
                         subtitle = nl_desc
@@ -1262,10 +1981,39 @@ def _enrich_elements_catalog(
                 color_token = "gold"
                 color = token_hex("gold")
             rows = [("pts", thru_desc)]
+            approx_str = ""
             if p1 and p2:
                 seg_len = math.hypot(p2["x"] - p1["x"], p2["y"] - p1["y"])
                 rows.append(("len", f"{seg_len:.4f}"))
-                rows.append(("eq", _format_line_eq(p1["x"], p1["y"], p2["x"], p2["y"])))
+                eq_flt = _format_line_eq(p1["x"], p1["y"], p2["x"], p2["y"])
+                rows.append(("eq", eq_flt))
+                approx_str = f"≈ {eq_flt}  (|{p1_id}{p2_id}| ≈ {seg_len:.6f})"
+
+            sym_rows = [{"label": "thru", "latex": "", "pretty": f"{p1_id}, {p2_id}"}]
+            if sym.get("eq_latex"):
+                sym_rows.append(
+                    {
+                        "label": "eq",
+                        "latex": sym["eq_latex"],
+                        "pretty": sym.get("eq_pretty", ""),
+                    }
+                )
+            if sym.get("quadrance_latex"):
+                sym_rows.append(
+                    {
+                        "label": "Q",
+                        "latex": sym["quadrance_latex"],
+                        "pretty": sym.get("quadrance_pretty", ""),
+                    }
+                )
+            if sym.get("spread_latex"):
+                sym_rows.append(
+                    {
+                        "label": "spread",
+                        "latex": sym["spread_latex"],
+                        "pretty": sym.get("spread_pretty", ""),
+                    }
+                )
 
             catalog[eid] = {
                 "ID": eid,
@@ -1276,6 +2024,8 @@ def _enrich_elements_catalog(
                 "name": line_name,
                 "subtitle": subtitle,
                 "rows": rows,
+                "symbolic_rows": sym_rows,
+                "approx": approx_str,
                 "related_points": [p1_id, p2_id],
             }
 
@@ -1289,7 +2039,6 @@ def _enrich_elements_catalog(
             if eid in _KNOWN_CIRCLE_INFO:
                 c_name, subtitle = _KNOWN_CIRCLE_INFO[eid]
             else:
-                # Format note-extracted circle name or derive from center X(k)
                 pretty_id = eid.replace("_", " ").strip()
                 if "circle" in pretty_id.lower():
                     c_name = pretty_id[0].upper() + pretty_id[1:]
@@ -1302,6 +2051,7 @@ def _enrich_elements_catalog(
             color_token = get_circle_color_token(eid, classes)
             color = token_hex(color_token)
             rows = [("ctr", f"{ctr_id} ({ctr_short})")]
+            approx_str = f"≈ r = {r_val:.6f}, Q_r = {r_val * r_val:.6f}"
             if ctr:
                 hx, ky = ctr["x"], ctr["y"]
                 rows.append(("h, k", f"({hx:.4f}, {ky:.4f})"))
@@ -1311,6 +2061,32 @@ def _enrich_elements_catalog(
                 rows.append(("eq", f"(x {h_sign} {abs(hx):.3f})² + (y {k_sign} {abs(ky):.3f})² = {r_val*r_val:.4f}"))
             if rad_id:
                 rows.append(("pass", f"{rad_id} ({_short_point_name(rad_id, center_names)})"))
+
+            sym_rows = [{"label": "center", "latex": "", "pretty": f"{ctr_id} ({ctr_short})"}]
+            if sym.get("radius_latex"):
+                sym_rows.append(
+                    {
+                        "label": "r",
+                        "latex": sym["radius_latex"],
+                        "pretty": sym.get("radius_pretty", ""),
+                    }
+                )
+            if sym.get("quadrance_latex"):
+                sym_rows.append(
+                    {
+                        "label": "Q_r",
+                        "latex": sym["quadrance_latex"],
+                        "pretty": sym.get("quadrance_pretty", ""),
+                    }
+                )
+            if sym.get("eq_latex"):
+                sym_rows.append(
+                    {
+                        "label": "eq",
+                        "latex": sym["eq_latex"],
+                        "pretty": sym.get("eq_pretty", ""),
+                    }
+                )
 
             rel_pts = [ctr_id] + ([rad_id] if rad_id else [])
             catalog[eid] = {
@@ -1322,6 +2098,8 @@ def _enrich_elements_catalog(
                 "name": c_name,
                 "subtitle": subtitle,
                 "rows": rows,
+                "symbolic_rows": sym_rows,
+                "approx": approx_str,
                 "related_points": rel_pts,
             }
 
@@ -1330,9 +2108,17 @@ def _enrich_elements_catalog(
             p_name, subtitle = _KNOWN_POLYGON_INFO.get(
                 eid, (f"Polygon {eid}", f"Vertices: {', '.join(v_ids)}")
             )
-            color = "#90ee90" if "secondary" in classes else "#58a6ff"
+            if "subarea-a" in classes:
+                color = "#ff7043"
+            elif "subarea-b" in classes:
+                color = "#66bb6a"
+            elif "subarea-c" in classes:
+                color = "#42a5f5"
+            else:
+                color = "#90ee90" if "secondary" in classes else "#58a6ff"
             rows = [("verts", ", ".join(v_ids))]
             v_pts = [points_by_id[vid] for vid in v_ids if vid in points_by_id]
+            approx_str = ""
             if len(v_pts) == 3:
                 s_a = math.hypot(v_pts[2]["x"] - v_pts[1]["x"], v_pts[2]["y"] - v_pts[1]["y"])
                 s_b = math.hypot(v_pts[0]["x"] - v_pts[2]["x"], v_pts[0]["y"] - v_pts[2]["y"])
@@ -1343,6 +2129,25 @@ def _enrich_elements_catalog(
                 )
                 rows.append(("sides", f"{s_a:.4f}, {s_b:.4f}, {s_c:.4f}"))
                 rows.append(("area", f"{area:.4f}"))
+                approx_str = f"≈ area {area:.6f}  |  sides ({s_a:.4f}, {s_b:.4f}, {s_c:.4f})"
+
+            sym_rows = [{"label": "verts", "latex": "", "pretty": ", ".join(v_ids)}]
+            if sym.get("area_latex"):
+                sym_rows.append(
+                    {
+                        "label": "Δ",
+                        "latex": sym["area_latex"],
+                        "pretty": sym.get("area_pretty", ""),
+                    }
+                )
+            if sym.get("sides_latex"):
+                sym_rows.append(
+                    {
+                        "label": "sides",
+                        "latex": sym["sides_latex"],
+                        "pretty": sym.get("sides_pretty", ""),
+                    }
+                )
 
             catalog[eid] = {
                 "ID": eid,
@@ -1352,6 +2157,8 @@ def _enrich_elements_catalog(
                 "name": p_name,
                 "subtitle": subtitle,
                 "rows": rows,
+                "symbolic_rows": sym_rows,
+                "approx": approx_str,
                 "related_points": v_ids,
             }
 
@@ -1360,6 +2167,37 @@ def _enrich_elements_catalog(
 
 def model_to_elements_list(model: Model) -> list[dict[str, Any]]:
     """Convert a `geometor.model.Model` into a chronological list of browser-ready element dicts."""
+    tri: SymbolicTriangle | None = getattr(model, "_etc_triangle", None)
+    simplify_fn = tri.simplify if isinstance(tri, SymbolicTriangle) else clean_expr
+    kepler_phi = bool(isinstance(tri, SymbolicTriangle) and tri.key == "kepler")
+
+    A_pt = model.get_element_by_ID("A")
+    B_pt = model.get_element_by_ID("B")
+    C_pt = model.get_element_by_ID("C")
+    has_exact_abc = (
+        isinstance(A_pt, spg.Point)
+        and isinstance(B_pt, spg.Point)
+        and isinstance(C_pt, spg.Point)
+        and not (A_pt.atoms(sp.Float) or B_pt.atoms(sp.Float) or C_pt.atoms(sp.Float))
+    )
+    a_len = b_len = c_len = sp.Integer(1)
+    reg: CenterSymbolicRegistry | None = None
+    if has_exact_abc:
+        a_len, b_len, c_len = triangle_side_lengths(A_pt, B_pt, C_pt, model=model)
+        if (
+            isinstance(tri, SymbolicTriangle)
+            and tri.key in {"heronian", "right", "kepler", "kimberling"}
+            and zero_test(B_pt.x - tri.B_xy[0])
+        ):
+            reg = CenterSymbolicRegistry(tri)
+
+    eff_tri = tri if isinstance(tri, SymbolicTriangle) else get_canonical_triangle("heronian")
+
+    def _reduce_triple(
+        u: sp.Expr, v: sp.Expr, w: sp.Expr
+    ) -> tuple[sp.Expr, sp.Expr, sp.Expr]:
+        return reduce_homogeneous_triple(u, v, w, eff_tri)
+
     elements: list[dict[str, Any]] = []
     for el, data in model.items():
         if not data.ID:
@@ -1369,10 +2207,16 @@ def model_to_elements_list(model: Model) -> list[dict[str, Any]]:
         ]
         base: dict[str, Any] = {
             "ID": data.ID,
-            "classes": list(data.classes.keys()) if isinstance(data.classes, dict) else list(data.classes),
+            "classes": (
+                list(data.classes.keys())
+                if isinstance(data.classes, dict)
+                else list(data.classes)
+            ),
             "guide": bool(data.guide),
             "parents": parents_ids,
         }
+        sym: dict[str, str] = {}
+
         if isinstance(el, spg.Point):
             base.update(
                 {
@@ -1381,6 +2225,51 @@ def model_to_elements_list(model: Model) -> list[dict[str, Any]]:
                     "y": float(el.y.evalf()),
                 }
             )
+            if not (el.x.atoms(sp.Float) or el.y.atoms(sp.Float)):
+                sx = simplify_fn(el.x)
+                sy = simplify_fn(el.y)
+                xl = format_symbolic_latex(sx, kepler_phi=kepler_phi)
+                yl = format_symbolic_latex(sy, kepler_phi=kepler_phi)
+                xp = format_symbolic_pretty(sx, kepler_phi=kepler_phi)
+                yp = format_symbolic_pretty(sy, kepler_phi=kepler_phi)
+                sym["coords_latex"] = f"\\left({xl},\\; {yl}\\right)"
+                sym["coords_pretty"] = f"({xp}, {yp})"
+
+                m_x = re.match(r"^X_(\d+)$", data.ID)
+                if (
+                    reg is not None
+                    and m_x
+                    and int(m_x.group(1)) in EXACT_CYCLIC_BARYCENTRICS
+                ):
+                    rec = reg.get(int(m_x.group(1)))
+                    sym["trilinear_latex"] = rec.trilinear_latex()
+                    sym["trilinear_pretty"] = rec.trilinear_pretty()
+                    sym["barycentric_latex"] = rec.bary_latex()
+                    sym["barycentric_pretty"] = rec.bary_pretty()
+                elif has_exact_abc:
+                    assert isinstance(A_pt, spg.Point)
+                    assert isinstance(B_pt, spg.Point)
+                    assert isinstance(C_pt, spg.Point)
+                    u, v, w = barycentrics_of(A_pt, B_pt, C_pt, el, model=model)
+                    bu, bv, bw = _reduce_triple(u, v, w)
+                    sym["barycentric_latex"] = _format_triple_latex(
+                        bu, bv, bw, kepler_phi=kepler_phi
+                    )
+                    sym["barycentric_pretty"] = _format_triple_pretty(
+                        bu, bv, bw, kepler_phi=kepler_phi
+                    )
+                    tu, tv, tw = _reduce_triple(
+                        simplify_fn(u / a_len),
+                        simplify_fn(v / b_len),
+                        simplify_fn(w / c_len),
+                    )
+                    sym["trilinear_latex"] = _format_triple_latex(
+                        tu, tv, tw, kepler_phi=kepler_phi
+                    )
+                    sym["trilinear_pretty"] = _format_triple_pretty(
+                        tu, tv, tw, kepler_phi=kepler_phi
+                    )
+
         elif isinstance(el, spg.Line):
             base.update(
                 {
@@ -1389,6 +2278,38 @@ def model_to_elements_list(model: Model) -> list[dict[str, Any]]:
                     "pt2": model[el.p2].ID,
                 }
             )
+            if not (el.p1.atoms(sp.Float) or el.p2.atoms(sp.Float)):
+                la = simplify_fn(el.p1.y - el.p2.y)
+                lb = simplify_fn(el.p2.x - el.p1.x)
+                lc = simplify_fn(el.p1.x * el.p2.y - el.p2.x * el.p1.y)
+                eql, eqp = _format_exact_line_eq(
+                    la,
+                    lb,
+                    lc,
+                    tri_obj=eff_tri,
+                    kepler_phi=kepler_phi,
+                    simplify_fn=simplify_fn,
+                )
+                sym["eq_latex"] = eql
+                sym["eq_pretty"] = eqp
+                q_val = simplify_fn(quadrance(el.p1, el.p2))
+                sym["quadrance_latex"] = format_symbolic_latex(
+                    q_val, kepler_phi=kepler_phi
+                )
+                sym["quadrance_pretty"] = format_symbolic_pretty(
+                    q_val, kepler_phi=kepler_phi
+                )
+                if has_exact_abc:
+                    assert isinstance(A_pt, spg.Point)
+                    assert isinstance(B_pt, spg.Point)
+                    spr = simplify_fn(line_spread((el.p1, el.p2), (A_pt, B_pt)))
+                    sym["spread_latex"] = format_symbolic_latex(
+                        spr, kepler_phi=kepler_phi
+                    )
+                    sym["spread_pretty"] = format_symbolic_pretty(
+                        spr, kepler_phi=kepler_phi
+                    )
+
         elif isinstance(el, spg.Circle):
             pt_rad_id = (
                 model[data.pt_radius].ID
@@ -1403,6 +2324,29 @@ def model_to_elements_list(model: Model) -> list[dict[str, Any]]:
                     "radius": float(el.radius.evalf()),
                 }
             )
+            if not (el.center.atoms(sp.Float) or el.radius.atoms(sp.Float)):
+                hx = simplify_fn(el.center.x)
+                ky = simplify_fn(el.center.y)
+                r_ex = simplify_fn(el.radius)
+                qr_ex = simplify_fn(r_ex**2)
+                sym["radius_latex"] = format_symbolic_latex(
+                    r_ex, kepler_phi=kepler_phi
+                )
+                sym["radius_pretty"] = format_symbolic_pretty(
+                    r_ex, kepler_phi=kepler_phi
+                )
+                sym["quadrance_latex"] = format_symbolic_latex(
+                    qr_ex, kepler_phi=kepler_phi
+                )
+                sym["quadrance_pretty"] = format_symbolic_pretty(
+                    qr_ex, kepler_phi=kepler_phi
+                )
+                eql, eqp = _format_exact_circle_eq(
+                    hx, ky, qr_ex, kepler_phi=kepler_phi, simplify_fn=simplify_fn
+                )
+                sym["eq_latex"] = eql
+                sym["eq_pretty"] = eqp
+
         elif isinstance(el, spg.Polygon):
             base.update(
                 {
@@ -1410,6 +2354,34 @@ def model_to_elements_list(model: Model) -> list[dict[str, Any]]:
                     "points": [model[p].ID for p in el.vertices if p in model],
                 }
             )
+            verts = list(el.vertices)
+            if len(verts) == 3 and not any(v.atoms(sp.Float) for v in verts):
+                area_ex = simplify_fn(
+                    abs(triangle_signed_area(verts[0], verts[1], verts[2], model=model))
+                )
+                sym["area_latex"] = format_symbolic_latex(
+                    area_ex, kepler_phi=kepler_phi
+                )
+                sym["area_pretty"] = format_symbolic_pretty(
+                    area_ex, kepler_phi=kepler_phi
+                )
+                qa, qb, qc = triangle_side_quadrances(
+                    verts[0], verts[1], verts[2], model=model
+                )
+                sa = simplify_fn(sp.sqrt(qa))
+                sb = simplify_fn(sp.sqrt(qb))
+                sc = simplify_fn(sp.sqrt(qc))
+                sym["sides_latex"] = (
+                    f"{format_symbolic_latex(sa, kepler_phi=kepler_phi)},\\; "
+                    f"{format_symbolic_latex(sb, kepler_phi=kepler_phi)},\\; "
+                    f"{format_symbolic_latex(sc, kepler_phi=kepler_phi)}"
+                )
+                sym["sides_pretty"] = (
+                    f"{format_symbolic_pretty(sa, kepler_phi=kepler_phi)}, "
+                    f"{format_symbolic_pretty(sb, kepler_phi=kepler_phi)}, "
+                    f"{format_symbolic_pretty(sc, kepler_phi=kepler_phi)}"
+                )
+
         elif isinstance(el, spg.Segment):
             base.update(
                 {
@@ -1417,8 +2389,36 @@ def model_to_elements_list(model: Model) -> list[dict[str, Any]]:
                     "points": [model[el.p1].ID, model[el.p2].ID],
                 }
             )
+            if not (el.p1.atoms(sp.Float) or el.p2.atoms(sp.Float)):
+                q_val = simplify_fn(quadrance(el.p1, el.p2))
+                l_val = simplify_fn(sp.sqrt(q_val))
+                sym["quadrance_latex"] = format_symbolic_latex(
+                    q_val, kepler_phi=kepler_phi
+                )
+                sym["quadrance_pretty"] = format_symbolic_pretty(
+                    q_val, kepler_phi=kepler_phi
+                )
+                sym["length_latex"] = format_symbolic_latex(
+                    l_val, kepler_phi=kepler_phi
+                )
+                sym["length_pretty"] = format_symbolic_pretty(
+                    l_val, kepler_phi=kepler_phi
+                )
+                if has_exact_abc:
+                    assert isinstance(A_pt, spg.Point)
+                    assert isinstance(B_pt, spg.Point)
+                    spr = simplify_fn(line_spread((el.p1, el.p2), (A_pt, B_pt)))
+                    sym["spread_latex"] = format_symbolic_latex(
+                        spr, kepler_phi=kepler_phi
+                    )
+                    sym["spread_pretty"] = format_symbolic_pretty(
+                        spr, kepler_phi=kepler_phi
+                    )
         else:
             continue
+
+        if sym:
+            base["symbolic"] = sym
         elements.append(base)
     return elements
 
@@ -1448,9 +2448,23 @@ def render_model_svg(
     points_by_id: dict[str, dict[str, Any]] = {
         el["ID"]: el for el in elements if el["type"] == "point"
     }
-    catalog = _enrich_elements_catalog(elements, points_by_id)
 
-    # Compute bounding box following explorer's `fitConstruction()` in `svg.js`
+    A_ref = points_by_id.get("A")
+    B_ref = points_by_id.get("B")
+    C_ref = points_by_id.get("C")
+    if A_ref and B_ref and C_ref:
+        ab_d = math.hypot(B_ref["x"] - A_ref["x"], B_ref["y"] - A_ref["y"])
+        bc_d = math.hypot(C_ref["x"] - B_ref["x"], C_ref["y"] - B_ref["y"])
+        ca_d = math.hypot(A_ref["x"] - C_ref["x"], A_ref["y"] - C_ref["y"])
+        tri_span = max(ab_d, bc_d, ca_d, 1.0)
+        tri_cx = (A_ref["x"] + B_ref["x"] + C_ref["x"]) / 3.0
+        tri_cy = (A_ref["y"] + B_ref["y"] + C_ref["y"]) / 3.0
+    else:
+        tri_span = 1.0
+        tri_cx, tri_cy = 0.5, 0.25
+
+    catalog = _enrich_elements_catalog(elements, points_by_id, tri_span=tri_span)
+
     min_x, max_x = float("inf"), float("-inf")
     min_y, max_y = float("inf"), float("-inf")
 
@@ -1464,8 +2478,8 @@ def render_model_svg(
         p
         for p in points_by_id.values()
         if ("target" in p["classes"] or "selected" in p["classes"])
-        and -0.85 <= p["x"] <= 1.85
-        and -0.85 <= p["y"] <= 1.55
+        and abs(p["x"] - tri_cx) <= 1.35 * tri_span
+        and abs(p["y"] - tri_cy) <= 1.25 * tri_span
     ]
     use_tight_collection_box = is_collection_model and len(tight_targets) >= 3
 
@@ -1473,33 +2487,43 @@ def render_model_svg(
         if "incident" in p["classes"]:
             continue
         if p["guide"]:
-            if not is_collection_model and p["ID"] not in {"R_a", "R_b"} and abs(p["x"]) <= 3.0 and abs(p["y"]) <= 3.0:
+            if (
+                not is_collection_model
+                and p["ID"] not in {"R_a", "R_b"}
+                and abs(p["x"] - tri_cx) <= 3.0 * tri_span
+                and abs(p["y"] - tri_cy) <= 3.0 * tri_span
+            ):
                 min_x = min(min_x, p["x"])
                 max_x = max(max_x, p["x"])
                 min_y = min(min_y, p["y"])
                 max_y = max(max_y, p["y"])
             continue
         if use_tight_collection_box and ("target" in p["classes"] or "selected" in p["classes"]):
-            if -0.85 <= p["x"] <= 1.85 and -0.85 <= p["y"] <= 1.55:
+            if (
+                abs(p["x"] - tri_cx) <= 1.35 * tri_span
+                and abs(p["y"] - tri_cy) <= 1.25 * tri_span
+            ):
                 min_x = min(min_x, p["x"])
                 max_x = max(max_x, p["x"])
                 min_y = min(min_y, p["y"])
                 max_y = max(max_y, p["y"])
             continue
-        # Guard against extreme far-out points dwarfing the reference triangle
-        bound_lim = 2.4 if is_collection_model else 4.5
-        if abs(p["x"]) <= bound_lim and abs(p["y"]) <= bound_lim:
+        bound_lim = (2.4 if is_collection_model else 4.5) * tri_span
+        if abs(p["x"] - tri_cx) <= bound_lim and abs(p["y"] - tri_cy) <= bound_lim:
             min_x = min(min_x, p["x"])
             max_x = max(max_x, p["x"])
             min_y = min(min_y, p["y"])
             max_y = max(max_y, p["y"])
 
-    # Also include vertices of primary (non-incident) polygons if reasonably bounded
     for poly in elements:
         if poly["type"] == "polygon" and "incident" not in poly["classes"]:
             for pid in poly["points"]:
                 pt = points_by_id.get(pid)
-                if pt and abs(pt["x"]) <= 3.0 and abs(pt["y"]) <= 3.0:
+                if (
+                    pt
+                    and abs(pt["x"] - tri_cx) <= 3.2 * tri_span
+                    and abs(pt["y"] - tri_cy) <= 3.2 * tri_span
+                ):
                     min_x = min(min_x, pt["x"])
                     max_x = max(max_x, pt["x"])
                     min_y = min(min_y, pt["y"])
@@ -1509,17 +2533,18 @@ def render_model_svg(
         if c["type"] == "circle" and not c["guide"] and "incident" not in c["classes"]:
             ctr = points_by_id.get(c["center"])
             r = c["radius"]
-            if ctr and r <= (1.6 if is_collection_model else 3.5):
+            if ctr and r <= (1.6 if is_collection_model else 3.5) * tri_span:
                 min_x = min(min_x, ctr["x"] - r)
                 max_x = max(max_x, ctr["x"] + r)
                 min_y = min(min_y, ctr["y"] - r)
                 max_y = max(max_y, ctr["y"] + r)
 
     if not math.isfinite(min_x):
-        min_x, max_x, min_y, max_y = -0.5, 1.5, -0.5, 1.2
+        min_x, max_x = tri_cx - 0.8 * tri_span, tri_cx + 0.8 * tri_span
+        min_y, max_y = tri_cy - 0.6 * tri_span, tri_cy + 0.6 * tri_span
 
-    width = max(max_x - min_x, 0.4)
-    height = max(max_y - min_y, 0.4)
+    width = max(max_x - min_x, 0.35 * tri_span)
+    height = max(max_y - min_y, 0.35 * tri_span)
     padding = 0.22
     padded_width = width * (1.0 + padding)
     padded_height = height * (1.0 + padding)
@@ -1539,7 +2564,6 @@ def render_model_svg(
     vb_x = center_x - vb_width / 2.0
     vb_y = -center_y - vb_height / 2.0
 
-    # Point radius scaled like `scaleCircles()` in `explorer/static/js/svg.js` (1.5x scale)
     units_per_px = vb_width / svg_width
     target_r_px = (
         10.5
@@ -1569,6 +2593,7 @@ def render_model_svg(
         el_id = html.escape(raw_id, quote=True)
         info = catalog.get(raw_id, {})
         el_name = html.escape(info.get("name") or raw_id, quote=True)
+        sym = el.get("symbolic") or {}
         classes = [el["type"]] + el["classes"]
         if el["guide"] and "guide" not in classes:
             classes.append("guide")
@@ -1580,9 +2605,20 @@ def render_model_svg(
                 for pid in el["points"]
                 if pid in points_by_id
             )
+            area_attr = (
+                f'data-area="{html.escape(sym["area_pretty"], quote=True)}" '
+                if sym.get("area_pretty")
+                else ""
+            )
+            title_txt = (
+                f"{el_id}: {el_name} (Δ = {html.escape(sym['area_pretty'])})"
+                if sym.get("area_pretty")
+                else f"{el_id}: {el_name}"
+            )
             graphics_nodes.append(
-                f'    <polygon id="{el_id}" data-id="{el_id}" data-name="{el_name}" class="{class_attr}" '
-                f'data-category="graphics" points="{pts_str}"><title>{el_id}: {el_name}</title></polygon>'
+                f'    <polygon id="{el_id}" data-id="{el_id}" data-ref="{el_id}" data-name="{el_name}" {area_attr}'
+                f'class="{class_attr}" data-category="graphics" points="{pts_str}">'
+                f"<title>{title_txt}</title></polygon>"
             )
 
         elif el["type"] in {"segment", "section", "chain"}:
@@ -1591,10 +2627,29 @@ def render_model_svg(
                 for pid in el["points"]
                 if pid in points_by_id
             )
-            graphics_nodes.append(
-                f'    <polyline id="{el_id}" data-id="{el_id}" data-name="{el_name}" class="{class_attr}" '
-                f'data-category="graphics" points="{pts_str}"><title>{el_id}: {el_name}</title></polyline>'
+            q_attr = (
+                f'data-quadrance="{html.escape(sym["quadrance_pretty"], quote=True)}" '
+                if sym.get("quadrance_pretty")
+                else ""
             )
+            s_attr = (
+                f'data-spread="{html.escape(sym["spread_pretty"], quote=True)}" '
+                if sym.get("spread_pretty")
+                else ""
+            )
+            graphics_nodes.append(
+                f'    <polyline id="{el_id}" data-id="{el_id}" data-ref="{el_id}" data-name="{el_name}" '
+                f'{q_attr}{s_attr}class="{class_attr}" data-category="graphics" points="{pts_str}">'
+                f"<title>{el_id}: {el_name}</title></polyline>"
+            )
+            if len(el["points"]) == 2:
+                sp1 = points_by_id.get(el["points"][0])
+                sp2 = points_by_id.get(el["points"][1])
+                if sp1 and sp2:
+                    highlights_nodes.append(
+                        f'    <polyline id="hl-{el_id}" data-highlight-for="{el_id}" class="highlight-segment" '
+                        f'points="{sp1["x"]:.6f},{-sp1["y"]:.6f} {sp2["x"]:.6f},{-sp2["y"]:.6f}" style="display: none;" />'
+                    )
 
         elif el["type"] == "line":
             p1 = points_by_id.get(el["pt1"])
@@ -1602,10 +2657,12 @@ def render_model_svg(
             if p1 and p2:
                 dx = p2["x"] - p1["x"]
                 dy = p2["y"] - p1["y"]
-                x1 = p1["x"] - 1000.0 * dx
-                y1 = -(p1["y"] - 1000.0 * dy)
-                x2 = p1["x"] + 1000.0 * dx
-                y2 = -(p1["y"] + 1000.0 * dy)
+                seg_norm = math.hypot(dx, dy) or 1.0
+                ext = (1000.0 * tri_span) / seg_norm
+                x1 = p1["x"] - ext * dx
+                y1 = -(p1["y"] - ext * dy)
+                x2 = p1["x"] + ext * dx
+                y2 = -(p1["y"] + ext * dy)
                 c_tok = info.get("color_token") or ""
                 c_hex = info.get("color") or ""
                 c_attrs = (
@@ -1613,8 +2670,18 @@ def render_model_svg(
                     if c_tok
                     else ""
                 )
+                eq_attr = (
+                    f'data-eq="{html.escape(sym["eq_pretty"], quote=True)}" '
+                    if sym.get("eq_pretty")
+                    else ""
+                )
+                s_attr = (
+                    f'data-spread="{html.escape(sym["spread_pretty"], quote=True)}" '
+                    if sym.get("spread_pretty")
+                    else ""
+                )
                 elements_nodes.append(
-                    f'    <line id="{el_id}" data-id="{el_id}" data-name="{el_name}" {c_attrs}'
+                    f'    <line id="{el_id}" data-id="{el_id}" data-ref="{el_id}" data-name="{el_name}" {c_attrs}{eq_attr}{s_attr}'
                     f'data-pt1="{html.escape(el["pt1"], quote=True)}" data-pt2="{html.escape(el["pt2"], quote=True)}" '
                     f'class="{class_attr}" data-category="elements" '
                     f'x1="{x1:.5f}" y1="{y1:.5f}" x2="{x2:.5f}" y2="{y2:.5f}">'
@@ -1639,8 +2706,13 @@ def render_model_svg(
                     if c_tok
                     else ""
                 )
+                q_attr = (
+                    f'data-quadrance="{html.escape(sym["quadrance_pretty"], quote=True)}" '
+                    if sym.get("quadrance_pretty")
+                    else ""
+                )
                 elements_nodes.append(
-                    f'    <circle id="{el_id}" data-id="{el_id}" data-name="{el_name}" {c_attrs}'
+                    f'    <circle id="{el_id}" data-id="{el_id}" data-ref="{el_id}" data-name="{el_name}" {c_attrs}{q_attr}'
                     f'class="{class_attr}" data-category="elements" '
                     f'cx="{cx:.6f}" cy="{cy:.6f}" r="{r:.6f}" fill="none">'
                     f"<title>{el_id}: {el_name}</title></circle>"
@@ -1656,13 +2728,25 @@ def render_model_svg(
             cy = -el["y"]
             is_target = "target" in el["classes"] or "selected" in el["classes"]
             r = target_radius if is_target else (guide_radius if el["guide"] else pt_radius)
+            sym_attrs = ""
+            if sym.get("coords_pretty"):
+                sym_attrs += f'data-coords="{html.escape(sym["coords_pretty"], quote=True)}" '
+            if sym.get("trilinear_pretty"):
+                sym_attrs += f'data-trilinears="{html.escape(sym["trilinear_pretty"], quote=True)}" '
+            if sym.get("barycentric_pretty"):
+                sym_attrs += f'data-barycentrics="{html.escape(sym["barycentric_pretty"], quote=True)}" '
+            title_coords = (
+                html.escape(sym["coords_pretty"])
+                if sym.get("coords_pretty")
+                else f"({cx:.4f}, {el['y']:.4f})"
+            )
             points_nodes.append(
-                f'    <circle id="{el_id}" data-id="{el_id}" data-name="{el_name}" class="{class_attr}" data-category="points" '
+                f'    <circle id="{el_id}" data-id="{el_id}" data-ref="{el_id}" data-name="{el_name}" {sym_attrs}'
+                f'class="{class_attr}" data-category="points" '
                 f'cx="{cx:.6f}" cy="{cy:.6f}" r="{r:.6f}">'
-                f"<title>{el_id} = {el_name} ({cx:.4f}, {el['y']:.4f})</title></circle>"
+                f"<title>{el_id} = {el_name} {title_coords}</title></circle>"
             )
 
-            # Label vertices A, B, C, centers X(k), and auxiliary guide vertices (except baseline R_a, R_b)
             if show_labels and raw_id not in {"R_a", "R_b"}:
                 if el["guide"]:
                     lbl_cls = "guide-label guide"
@@ -1771,13 +2855,22 @@ def render_model_svg(
         .replace(">", "\\u003e")
     )
 
+    tri_obj: SymbolicTriangle | None = getattr(model, "_etc_triangle", None)
+    tri_key_attr = (
+        f'data-triangle="{html.escape(tri_obj.key, quote=True)}" '
+        if isinstance(tri_obj, SymbolicTriangle)
+        else ""
+    )
 
     svg_lines = [
         '<?xml version="1.0" encoding="UTF-8" standalone="no"?>',
-        f'<svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" '
-        f'viewBox="{vb_str}" data-initial-viewbox="{vb_str}" '
-        f'data-target-r-px="{target_r_px}" '
-        f'preserveAspectRatio="xMidYMid meet">',
+        (
+            f'<svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" '
+            f'viewBox="{vb_str}" data-initial-viewbox="{vb_str}" '
+            f'{tri_key_attr}data-tri-span="{tri_span:.6f}" '
+            f'data-target-r-px="{target_r_px}" '
+            f'preserveAspectRatio="xMidYMid meet">'
+        ),
         f"  <style>{EXPLORER_SVG_CSS}</style>",
         "  <defs>",
         '    <marker id="marker" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="3" markerHeight="3" orient="auto-start-reverse">',
@@ -1818,3 +2911,4 @@ def write_center_svg(
     svg_content = render_model_svg(model, subtitle=subtitle)
     path.write_text(svg_content, encoding="utf-8")
     return path
+
