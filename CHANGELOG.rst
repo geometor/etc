@@ -3,6 +3,14 @@ changelog
 
 :project: geometor.etc
 
+0.2.0
+-----
+
+- Added the 4-triangle exact symbolic reference engine (``triangles.py``) and persistent symbolic evaluation cache (``symbolic_cache.py``: ``CenterSymbolicRegistry``, ``SymbolicCenterRecord``) over ``5, 6, 7``, ``3, 4, 5``, ``Kepler``, and ``Kimberling`` triangles.
+- Expanded ``ops.py`` with exact Euclidean construction primitives and ``CANONICAL_CENTER_CONCORDANCE`` operators built on ``geometor.model`` v0.6.0 targeted DAGs and Rational Trigonometry invariants.
+- Established the 5-act ``X_1`` Book Codex center template, multi-panel Explorer-styled SVG diagrams (``01_primary`` through ``05_four_triangles``), exact symbolic HUD metadata, and synchronized ``videos/x-00001/script.scr`` studio choreography.
+- Updated GitHub Actions deployment workflow to install ``geometor/model`` before ``geometor/etc`` with ``contents: write`` permissions.
+
 0.1.8
 -----
 
