@@ -22,14 +22,17 @@ from geometor.model import clean_expr, exact_sign, zero_test
 
 from .triangles import (
     PHI,
+    SQRT_3,
     SQRT_PHI,
     SymbolicTriangle,
+    _extract_u3,
+    _poly_mod_u3,
     get_canonical_triangle,
 )
 
 _REPO_ROOT = Path(__file__).resolve().parents[3]
 DEFAULT_SYMBOLIC_CACHE_DIR = _REPO_ROOT / ".cache" / "symbolic_centers"
-_CACHE_SCHEMA_VERSION = 1
+_CACHE_SCHEMA_VERSION = 2
 
 _PHI_DISPLAY = sp.Symbol(r"\phi", positive=True)
 
@@ -79,13 +82,10 @@ def _kepler_basis_coeffs(expr: sp.Expr) -> tuple[sp.Rational, sp.Rational, sp.Ra
     return (c0, c1, c2, c3)
 
 
-def _rewrite_in_phi_basis(
-    expr: sp.Expr, phi_symbol: sp.Symbol = _PHI_DISPLAY
+def _rebuild_phi_poly(
+    coeffs: tuple[sp.Rational, sp.Rational, sp.Rational, sp.Rational],
+    phi_symbol: sp.Symbol,
 ) -> sp.Expr:
-    """Express an element of :math:`\\mathbb{Q}(\\sqrt{\\phi})` in the basis :math:`\\{1, \\sqrt{\\phi}, \\phi, \\phi\\sqrt{\\phi}\\}`."""
-    coeffs = _kepler_basis_coeffs(expr)
-    if coeffs is None:
-        return expr.subs({SQRT_PHI: sp.sqrt(phi_symbol), PHI: phi_symbol})
     c0, c1, c2, c3 = coeffs
     sqrt_phi_sym = sp.sqrt(phi_symbol)
     rebuilt = (
@@ -95,9 +95,31 @@ def _rewrite_in_phi_basis(
         + c3 * phi_symbol * sqrt_phi_sym
     )
     num, den = sp.fraction(sp.together(rebuilt))
-    if den == 1:
-        return num
-    return num / den
+    return num if den == 1 else num / den
+
+
+def _rewrite_in_phi_basis(
+    expr: sp.Expr, phi_symbol: sp.Symbol = _PHI_DISPLAY
+) -> sp.Expr:
+    """Express an element of :math:`\\mathbb{Q}(\\sqrt{\\phi})` (or :math:`\\mathbb{Q}(\\sqrt{\\phi}, \\sqrt{3})`) in the :math:`\\phi`-basis."""
+    coeffs = _kepler_basis_coeffs(expr)
+    if coeffs is not None:
+        return _rebuild_phi_poly(coeffs, phi_symbol)
+    u_expr, found = _extract_u3(expr)
+    if found:
+        try:
+            num_u, den_u = sp.fraction(sp.together(u_expr))
+            if den_u == 1:
+                c0_raw, c1_raw = _poly_mod_u3(num_u)
+                k0 = _kepler_basis_coeffs(c0_raw)
+                k1 = _kepler_basis_coeffs(c1_raw)
+                if k0 is not None and k1 is not None:
+                    r0 = _rebuild_phi_poly(k0, phi_symbol)
+                    r1 = _rebuild_phi_poly(k1, phi_symbol)
+                    return r0 + r1 * SQRT_3
+        except sp.PolynomialError:
+            pass
+    return expr.subs({SQRT_PHI: sp.sqrt(phi_symbol), PHI: phi_symbol})
 
 
 def reduce_homogeneous_triple(
@@ -130,11 +152,27 @@ def reduce_homogeneous_triple(
         if all(r.is_Rational for r in ratios):
             return reduce_homogeneous_triple(ratios[0], ratios[1], ratios[2], tri)
 
-    # For Kepler Q(sqrt(phi)), clear denominators & common GCD in the {1, sqrt(phi), phi, phi*sqrt(phi)} basis
+    # For Kepler Q(sqrt(phi)) or Q(sqrt(phi), sqrt(3)), clear denominators & common GCD in basis
     if tri.key.startswith("kepler"):
-        basis_rows = [_kepler_basis_coeffs(x) for x in vals]
-        if all(row is not None for row in basis_rows):
-            all_rats = [c for row in basis_rows if row is not None for c in row]
+        all_rats: list[sp.Rational] = []
+        ok_kepler = True
+        for x in vals:
+            row = _kepler_basis_coeffs(x)
+            if row is not None:
+                all_rats.extend(row)
+                continue
+            u_x, found = _extract_u3(x)
+            if found:
+                c0_raw, c1_raw = _poly_mod_u3(u_x)
+                r0 = _kepler_basis_coeffs(c0_raw)
+                r1 = _kepler_basis_coeffs(c1_raw)
+                if r0 is not None and r1 is not None:
+                    all_rats.extend(r0)
+                    all_rats.extend(r1)
+                    continue
+            ok_kepler = False
+            break
+        if ok_kepler and all_rats:
             lcm_den = reduce(math.lcm, [int(c.q) for c in all_rats], 1)
             ints_all = [abs(int(c * lcm_den)) for c in all_rats if c != 0]
             g = reduce(math.gcd, ints_all) if ints_all else 1
@@ -145,13 +183,35 @@ def reduce_homogeneous_triple(
                 scaled_k = [tri.simplify(-x) for x in scaled_k]
             return (scaled_k[0], scaled_k[1], scaled_k[2])
 
-    # Clear integer denominators if present
-    nums_dens = [sp.fraction(sp.together(x)) for x in vals]
-    if all(d.is_Integer for _, d in nums_dens):
-        lcm_d = reduce(math.lcm, [abs(int(d)) for _, d in nums_dens], 1)
-        scaled = [tri.simplify(x * lcm_d) for x in vals]
+    # Extract rational coefficients across additive radical terms to clear denominators & integer GCD
+    term_rats: list[sp.Rational] = []
+    ok_terms = True
+    for x in vals:
+        if zero_test(x):
+            continue
+        for term in sp.Add.make_args(x):
+            coeff, _ = term.as_coeff_Mul()
+            if isinstance(coeff, sp.Rational):
+                term_rats.append(coeff)
+            else:
+                ok_terms = False
+                break
+        if not ok_terms:
+            break
+
+    if ok_terms and term_rats:
+        lcm_d = reduce(math.lcm, [int(r.q) for r in term_rats], 1)
+        ints_t = [abs(int(r * lcm_d)) for r in term_rats if r != 0]
+        g_t = reduce(math.gcd, ints_t) if ints_t else 1
+        factor_t = sp.Rational(lcm_d, g_t)
+        scaled = [tri.simplify(x * factor_t) for x in vals]
     else:
-        scaled = vals
+        nums_dens = [sp.fraction(sp.together(x)) for x in vals]
+        if all(d.is_Integer for _, d in nums_dens):
+            lcm_d = reduce(math.lcm, [abs(int(d)) for _, d in nums_dens], 1)
+            scaled = [tri.simplify(x * lcm_d) for x in vals]
+        else:
+            scaled = vals
 
     total = tri.simplify(scaled[0] + scaled[1] + scaled[2])
     if not zero_test(total) and exact_sign(total) < 0:
@@ -167,7 +227,12 @@ SymbolicCyclicFn = Callable[
     [sp.Expr, sp.Expr, sp.Expr, sp.Expr, sp.Expr, sp.Expr, sp.Expr], sp.Expr
 ]
 
-_SQRT3 = sp.sqrt(3)
+_SQRT3 = SQRT_3
+
+
+def _euler_inf_poly(a: sp.Expr, b: sp.Expr, c: sp.Expr) -> sp.Expr:
+    return sp.Integer(2) * a**4 - (b**2 - c**2) ** 2 - a**2 * (b**2 + c**2)
+
 
 EXACT_CYCLIC_BARYCENTRICS: dict[int, SymbolicCyclicFn] = {
     # Collection 1: Classical & Ancient Centers (X_1 - X_19)
@@ -190,12 +255,20 @@ EXACT_CYCLIC_BARYCENTRICS: dict[int, SymbolicCyclicFn] = {
     17: lambda a, b, c, SA, SB, SC, S: (SB + _SQRT3 * S) * (SC + _SQRT3 * S),
     18: lambda a, b, c, SA, SB, SC, S: (SB - _SQRT3 * S) * (SC - _SQRT3 * S),
     19: lambda a, b, c, SA, SB, SC, S: a * SB * SC,
-    # Key Companion Centers for Central Lines, Conjugates, and Inversions
+    # Key Companion Centers for Central Lines, Conjugates, Homotheties, and Inversions
     20: lambda a, b, c, SA, SB, SC, S: S**2 - sp.Integer(2) * SB * SC,
-    21: lambda a, b, c, SA, SB, SC, S: a * (b + c - a) * (SB + SC),
+    21: lambda a, b, c, SA, SB, SC, S: a * (b + c - a) * (c + a) * (a + b),
+    22: lambda a, b, c, SA, SB, SC, S: a**2 * (b**4 + c**4 - a**4),
+    23: lambda a, b, c, SA, SB, SC, S: a**2 * (b**4 + c**4 - a**4 - b**2 * c**2),
+    24: lambda a, b, c, SA, SB, SC, S: a**2 * SB * SC * (sp.Integer(2) * SA**2 - b**2 * c**2),
     25: lambda a, b, c, SA, SB, SC, S: a**2 * SB * SC,
+    27: lambda a, b, c, SA, SB, SC, S: SB * SC * (c + a) * (a + b),
+    28: lambda a, b, c, SA, SB, SC, S: a * SB * SC * (c + a) * (a + b),
+    29: lambda a, b, c, SA, SB, SC, S: SB * SC * (b + c - a) * (c + a) * (a + b),
     31: lambda a, b, c, SA, SB, SC, S: a**3,
     32: lambda a, b, c, SA, SB, SC, S: a**4,
+    33: lambda a, b, c, SA, SB, SC, S: a * SB * SC * (SA + b * c),
+    34: lambda a, b, c, SA, SB, SC, S: a * SB * SC * (SA - b * c),
     35: lambda a, b, c, SA, SB, SC, S: a**2 * (sp.Integer(2) * SA + b * c),
     36: lambda a, b, c, SA, SB, SC, S: a**2 * (sp.Integer(2) * SA - b * c),
     37: lambda a, b, c, SA, SB, SC, S: a * (b + c),
@@ -206,17 +279,50 @@ EXACT_CYCLIC_BARYCENTRICS: dict[int, SymbolicCyclicFn] = {
     ),
     42: lambda a, b, c, SA, SB, SC, S: a**2 * (b + c),
     44: lambda a, b, c, SA, SB, SC, S: a * (b + c - sp.Integer(2) * a),
-    54: lambda a, b, c, SA, SB, SC, S: a**2 * (S**2 - SB * SC),
+    46: lambda a, b, c, SA, SB, SC, S: a * (b * SB + c * SC - a * SA),
+    54: lambda a, b, c, SA, SB, SC, S: a**2 * (S**2 + SC * SA) * (S**2 + SA * SB),
     55: lambda a, b, c, SA, SB, SC, S: a**2 * (b + c - a),
     56: lambda a, b, c, SA, SB, SC, S: a**2 * (a + b - c) * (c + a - b),
     57: lambda a, b, c, SA, SB, SC, S: a * (a + b - c) * (c + a - b),
+    58: lambda a, b, c, SA, SB, SC, S: a**2 * (c + a) * (a + b),
+    59: lambda a, b, c, SA, SB, SC, S: a**2 * (c + a - b) * (a + b - c) * (c - a) ** 2 * (a - b) ** 2,
+    60: lambda a, b, c, SA, SB, SC, S: a**2 * (b + c - a) * (c + a) ** 2 * (a + b) ** 2,
+    61: lambda a, b, c, SA, SB, SC, S: a**2 * (SA + _SQRT3 * S),
+    62: lambda a, b, c, SA, SB, SC, S: a**2 * (SA - _SQRT3 * S),
     63: lambda a, b, c, SA, SB, SC, S: a * SA,
+    64: lambda a, b, c, SA, SB, SC, S: a**2 * (S**2 - sp.Integer(2) * SC * SA) * (S**2 - sp.Integer(2) * SA * SB),
+    65: lambda a, b, c, SA, SB, SC, S: a * (b + c) * (c + a - b) * (a + b - c),
     69: lambda a, b, c, SA, SB, SC, S: SA,
+    72: lambda a, b, c, SA, SB, SC, S: a * (b + c) * SA,
+    74: lambda a, b, c, SA, SB, SC, S: a**2 * _euler_inf_poly(b, c, a) * _euler_inf_poly(c, a, b),
     75: lambda a, b, c, SA, SB, SC, S: b * c,
     76: lambda a, b, c, SA, SB, SC, S: b**2 * c**2,
-    85: lambda a, b, c, SA, SB, SC, S: b**2 * c**2 * (b + c - a),
-    86: lambda a, b, c, SA, SB, SC, S: b * c * (a + b) * (c + a),
-    95: lambda a, b, c, SA, SB, SC, S: b**2 * c**2 * SB * SC,
+    80: lambda a, b, c, SA, SB, SC, S: (sp.Integer(2) * SB - c * a) * (sp.Integer(2) * SC - a * b),
+    85: lambda a, b, c, SA, SB, SC, S: b * c * (c + a - b) * (a + b - c),
+    86: lambda a, b, c, SA, SB, SC, S: (c + a) * (a + b),
+    95: lambda a, b, c, SA, SB, SC, S: (S**2 + SC * SA) * (S**2 + SA * SB),
+    98: lambda a, b, c, SA, SB, SC, S: (c**4 + a**4 - b**2 * c**2 - b**2 * a**2) * (a**4 + b**4 - c**2 * a**2 - c**2 * b**2),
+    99: lambda a, b, c, SA, SB, SC, S: (c**2 - a**2) * (a**2 - b**2),
+    100: lambda a, b, c, SA, SB, SC, S: a * (c - a) * (a - b),
+    110: lambda a, b, c, SA, SB, SC, S: a**2 * (c**2 - a**2) * (a**2 - b**2),
+    115: lambda a, b, c, SA, SB, SC, S: (b**2 - c**2) ** 2,
+    140: lambda a, b, c, SA, SB, SC, S: sp.Integer(3) * S**2 - SB * SC,
+    141: lambda a, b, c, SA, SB, SC, S: b**2 + c**2,
+    142: lambda a, b, c, SA, SB, SC, S: b * (c + a - b) + c * (a + b - c),
+    144: lambda a, b, c, SA, SB, SC, S: sp.Integer(3) * a**2 - (b - c) ** 2 - sp.Integer(2) * a * (b + c),
+    145: lambda a, b, c, SA, SB, SC, S: sp.Integer(3) * a - b - c,
+    182: lambda a, b, c, SA, SB, SC, S: a**2 * ((a**2 + b**2 + c**2) * SA + sp.Integer(2) * S**2),
+    186: lambda a, b, c, SA, SB, SC, S: a**2 * SB * SC * (sp.Integer(4) * SA**2 - b**2 * c**2),
+    187: lambda a, b, c, SA, SB, SC, S: a**2 * (sp.Integer(2) * a**2 - b**2 - c**2),
+    264: lambda a, b, c, SA, SB, SC, S: b**2 * c**2 * SB * SC,
+    298: lambda a, b, c, SA, SB, SC, S: S + _SQRT3 * SA,
+    299: lambda a, b, c, SA, SB, SC, S: S - _SQRT3 * SA,
+    300: lambda a, b, c, SA, SB, SC, S: b**2 * c**2 * (S + _SQRT3 * SB) * (S + _SQRT3 * SC),
+    301: lambda a, b, c, SA, SB, SC, S: b**2 * c**2 * (S - _SQRT3 * SB) * (S - _SQRT3 * SC),
+    302: lambda a, b, c, SA, SB, SC, S: SA + _SQRT3 * S,
+    303: lambda a, b, c, SA, SB, SC, S: SA - _SQRT3 * S,
+    304: lambda a, b, c, SA, SB, SC, S: b * c * SA,
+    381: lambda a, b, c, SA, SB, SC, S: S**2 + sp.Integer(3) * SB * SC,
 }
 
 
@@ -544,8 +650,8 @@ class CenterSymbolicRegistry:
         return rec
 
     def warm_collection_1(self) -> dict[int, SymbolicCenterRecord]:
-        """Evaluate and cache all Collection 1 centers (`X_1`–`X_19`) plus key companions."""
-        target_nums = list(range(1, 21)) + [35, 36, 40, 55, 56, 57, 75]
+        """Evaluate and cache all built-in exact symbolic centers."""
+        target_nums = sorted(EXACT_CYCLIC_BARYCENTRICS.keys())
         out: dict[int, SymbolicCenterRecord] = {}
         for k in target_nums:
             out[k] = self.get(k)

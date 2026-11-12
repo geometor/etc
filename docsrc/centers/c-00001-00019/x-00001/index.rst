@@ -21,15 +21,15 @@ X_1
    :alt: X_1 — INCENTER
    :align: center
 
-   **X_1** (*INCENTER*) constructed in exact rational coordinates on the Heronian reference triangle :math:`(a, b, c) = (15, 13, 14)` over :math:`\mathbb{Q}` with vertices :g:`A <A>` = :math:`(0, 0)`, :g:`B <B>` = :math:`(14, 0)`, :g:`C <C>` = :math:`(5, 12)`, area :math:`\Delta = 84`, and inradius :math:`r = 4`. Switch tabs above to inspect exact constructions on Right :math:`(3, 4, 5)`, Kepler :math:`(1, \sqrt{\phi}, \phi)`, and Kimberling :math:`(6, 9, 13)`.
+   **X_1** (*INCENTER*) constructed at :g:`X_1 <X_1>` = :math:`\left(6,\; 4\right)` in exact rational coordinates on the Heronian reference triangle :math:`(a, b, c) = (15, 13, 14)` over :math:`\mathbb{Q}` with vertices :g:`A <A>` = :math:`(0, 0)`, :g:`B <B>` = :math:`(14, 0)`, :g:`C <C>` = :math:`(5, 12)`, and area :math:`\Delta = 84`, and incircle radius :math:`r = 4`. Switch tabs above to inspect exact constructions on Right :math:`(3, 4, 5)`, Kepler :math:`(1, \sqrt{\phi}, \phi)`, and Kimberling :math:`(6, 9, 13)`.
 
 .. admonition:: Constructed Elements
    :class: note
 
    * **Auxiliary Points:** :g:`I_a <I_a>`, :g:`I_b <I_b>`, :g:`I_c <I_c>` — Internal angle bisector feet on :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`
    * **Auxiliary Points:** :g:`T_a <T_a>`, :g:`T_b <T_b>`, :g:`T_c <T_c>` — Incircle touchpoints (right-spread pedal feet) on :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`
-   * **Circle:** :term:`Incircle <incircle>` (:g:`incircle <incircle>`) — Inscribed circle tangent to sidelines at T_a, T_b, T_c; centered at X_1 INCENTER
-   * **Concurrence Lines:** :g:`A–I_a <[ A I_a ]>`, :g:`B–I_b <[ B I_b ]>`, :g:`C–I_c <[ C I_c ]>` concurring at :g:`X_1 <X_1>`
+   * **Circle:** **Incircle** (:g:`incircle <incircle>`) — Inscribed circle tangent to sidelines at T_a, T_b, T_c; centered at X_1 INCENTER
+   * **Concurrence Lines (Angle Bisectors):** :g:`A–I_a <[ A I_a ]>`, :g:`B–I_b <[ B I_b ]>`, :g:`C–I_c <[ C I_c ]>` concurring at :g:`X_1 <X_1>`
 
 Homogeneous Coordinates & Exact Invariants
 ------------------------------------------
@@ -38,10 +38,10 @@ Homogeneous Coordinates & Exact Invariants
    :alt: X_1 — Homogeneous Trilinear Distances and Barycentric Sub-Areas
    :align: center
 
-   **Homogeneous Coordinates of X_1** on Heronian :math:`(15, 13, 14)`: orthogonal trilinear struts :math:`(\alpha, \beta, \gamma)` and shaded barycentric sub-triangles :math:`(\Delta_a, \Delta_b, \Delta_c)`.
+   **Homogeneous Coordinates of X_1** on Heronian :math:`(15, 13, 14)`: orthogonal trilinear struts :math:`(\alpha, \beta, \gamma)` and signed barycentric sub-triangles :math:`(\Delta_a, \Delta_b, \Delta_c)`.
 
-* **Trilinear Coordinates** (:math:`\alpha : \beta : \gamma = 1 : 1 : 1`): Dropping orthogonal perpendiculars :g:`X_1T_a </ X_1 T_a />`, :g:`X_1T_b </ X_1 T_b />`, and :g:`X_1T_c </ X_1 T_c />` from :g:`X_1 <X_1>` to sidelines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, and :g:`AB <[ A B ]>` meets the sides at right-spread touchpoints :g:`T_a <T_a>` = :math:`\left(\frac{46}{5}, \frac{32}{5}\right)`, :g:`T_b <T_b>` = :math:`\left(\frac{30}{13}, \frac{72}{13}\right)`, and :g:`T_c <T_c>` = :math:`(6, 0)`. Every strut equals the exact inradius :math:`r = 4` (quadrance :math:`Q_r = 16`), realizing :math:`4 : 4 : 4 = 1 : 1 : 1`.
-* **Barycentric Coordinates** (:math:`u : v : w = a : b : c`): Joining :g:`X_1 <X_1>` to the vertices along :g:`X_1A </ X_1 A />`, :g:`X_1B </ X_1 B />`, and :g:`X_1C </ X_1 C />` partitions :math:`\triangle ABC` into three sub-triangles :g:`△X_1BC << X_1 B C >>`, :g:`△X_1CA << X_1 C A >>`, and :g:`△X_1AB << X_1 A B >>`. Sharing common altitude :math:`r = 4`, their exact signed areas on :math:`(15, 13, 14)` are :math:`\Delta_a = \frac{1}{2}(15)(4) = 30`, :math:`\Delta_b = \frac{1}{2}(13)(4) = 26`, and :math:`\Delta_c = \frac{1}{2}(14)(4) = 28` (:math:`30 + 26 + 28 = 84 = \Delta`), in exact ratio :math:`30 : 26 : 28 = 15 : 13 : 14 = a : b : c`.
+* **Trilinear Coordinates** (:math:`\alpha : \beta : \gamma = 1 : 1 : 1`): Dropping orthogonal perpendiculars :g:`X_1T_a </ X_1 T_a />`, :g:`X_1T_b </ X_1 T_b />`, and :g:`X_1T_c </ X_1 T_c />` from :g:`X_1 <X_1>` to sidelines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, and :g:`AB <[ A B ]>` meets the sides at right-spread pedal feet :g:`T_a <T_a>` = :math:`\left(\frac{46}{5},\; \frac{32}{5}\right)`, :g:`T_b <T_b>` = :math:`\left(\frac{30}{13},\; \frac{72}{13}\right)`, and :g:`T_c <T_c>` = :math:`\left(6,\; 0\right)`. Every orthogonal strut equals the radius of :g:`incircle <incircle>` (:math:`r = 4`, quadrance :math:`Q_r = 16`), realizing :math:`\alpha : \beta : \gamma = 1 : 1 : 1`.
+* **Barycentric Coordinates** (:math:`u : v : w = 15 : 13 : 14`): Joining :g:`X_1 <X_1>` to the vertices along :g:`X_1A </ X_1 A />`, :g:`X_1B </ X_1 B />`, and :g:`X_1C </ X_1 C />` forms signed sub-triangles :g:`△X_1BC << X_1 B C >>`, :g:`△X_1CA << X_1 C A >>`, and :g:`△X_1AB << X_1 A B >>` of exact signed areas :math:`\Delta_a = 30`, :math:`\Delta_b = 26`, and :math:`\Delta_c = 28` (summing to :math:`\Delta_a + \Delta_b + \Delta_c = 84 = \Delta`), in homogeneous ratio :math:`u : v : w = 15 : 13 : 14`.
 
 .. list-table:: Exact Symbolic Coordinates & Invariants Across the Four Reference Triangles
    :header-rows: 1
@@ -94,7 +94,7 @@ Homogeneous Coordinates & Exact Invariants
    :badge: 2 forms
 
    * **Barycentrics:** :math:`\sin A : \sin B : \sin C`
-   * **Tripolars:** :math:`\sec A' : :`, where :g:`J_aJ_bJ_c << J_a J_b J_c >>` is the :term:`excentral triangle <excentral-triangle>`
+   * **Tripolars:** :math:`\sec A' : :`, where ``J_aJ_bJ_c`` is the :term:`excentral triangle <excentral-triangle>`
 
 .. collapse:: Linear Combinations
    :badge: 5 combinations
@@ -114,11 +114,11 @@ Incident Central Lines
 
    **Principal Central Lines Through X_1** on Heronian :math:`(15, 13, 14)`.
 
-* **Nagel Line** :g:`{1, 2, 8, 10} <{ 2, 8 }>` — collinear axis of :g:`X_1 <X_1>`, :ref:`X_2 <X_2>` (*Centroid*, :math:`(\frac{19}{3}, 4)`), :ref:`X_10 <X_10>` (*Spieker Center*, :math:`(\frac{13}{2}, 4)`), and :ref:`X_8 <X_8>` (*Nagel Point*, :math:`(7, 4)`). On :math:`(15, 13, 14)`, its exact equation is :math:`y - 4 = 0` (spread :math:`0`, **parallel to baseline** :g:`AB <[ A B ]>`).
-* **Feuerbach Line** :g:`{1, 5, 11} <{ 5, 11 }>` — collinear axis of :g:`X_1 <X_1>`, :ref:`X_5 <X_5>` (*Nine-Point Center*, :math:`(6, \frac{63}{16})`), and :ref:`X_11 <X_11>` (*Feuerbach Point*, :math:`(6, 8)`). On :math:`(15, 13, 14)`, its exact equation is :math:`x - 6 = 0` (spread :math:`1`, **perpendicular to baseline** :g:`AB <[ A B ]>` and orthogonal to the Nagel line).
-* **OI Line (Incenter–Circumcenter Axis)** :g:`{1, 3, 40} <{ 3, 40 }>` — joins :g:`X_1 <X_1>`, :ref:`X_3 <X_3>` (*Circumcenter*, :math:`(7, \frac{33}{8})`), and :ref:`X_40 <X_40>` (*Bevan Point*, :math:`(8, \frac{17}{4})`), with exact equation :math:`x - 8y + 26 = 0` (spread :math:`\frac{1}{65}`).
-* **Incenter–Symmedian Line** :g:`{1, 6, 9} <{ 6, 9 }>` — joins :g:`X_1 <X_1>`, :ref:`X_6 <X_6>` (*Symmedian Point*, :math:`(\frac{1673}{295}, \frac{1176}{295})`), and :ref:`X_9 <X_9>` (*Mittenpunkt*, :math:`(\frac{973}{146}, \frac{294}{73})`), with exact equation :math:`4x - 97y + 364 = 0` (spread :math:`\frac{16}{9425}`).
-* **Soddy Line** :g:`{1, 7, 20} <{ 7, 20 }>` — joins :g:`X_1 <X_1>`, :ref:`X_7 <X_7>` (*Gergonne Point*, :math:`(\frac{414}{73}, \frac{288}{73})`), and :ref:`X_20 <X_20>` (*de Longchamps Point*, :math:`(9, \frac{9}{2})`), with exact equation :math:`x - 6y + 18 = 0` (spread :math:`\frac{1}{37}`).
+* **Nagel Line** :g:`{1, 2, 8, 10} <{ 2, 8 }>` — collinear axis through :g:`X_1 <X_1>`, :g:`X_2 <X_2>` (:ref:`Centroid <X_2>`, :math:`\left(\frac{19}{3},\; 4\right)`), :g:`X_8 <X_8>` (:ref:`Nagel Point <X_8>`, :math:`\left(7,\; 4\right)`), :g:`X_10 <X_10>` (:ref:`Spieker Center <X_10>`, :math:`\left(\frac{13}{2},\; 4\right)`), with exact Cartesian equation :math:`y - 4 = 0` (spread :math:`0`, **parallel to baseline** :g:`AB <[ A B ]>`).
+* **Incenter–Symmedian Line** :g:`{1, 6, 9} <{ 6, 9 }>` — collinear axis through :g:`X_1 <X_1>`, :g:`X_6 <X_6>` (:ref:`Symmedian Point <X_6>`, :math:`\left(\frac{1673}{295},\; \frac{1176}{295}\right)`), :g:`X_9 <X_9>` (:ref:`Mittenpunkt <X_9>`, :math:`\left(\frac{973}{146},\; \frac{294}{73}\right)`), with exact Cartesian equation :math:`4 x - 97 y + 364 = 0` (spread :math:`\frac{16}{9425}` relative to :g:`AB <[ A B ]>`).
+* **Feuerbach Line** :g:`{1, 5, 11} <{ 5, 11 }>` — collinear axis through :g:`X_1 <X_1>`, :g:`X_5 <X_5>` (:ref:`Nine-Point Center <X_5>`, :math:`\left(6,\; \frac{63}{16}\right)`), :g:`X_11 <X_11>` (:ref:`Feuerbach Point <X_11>`, :math:`\left(6,\; 8\right)`), with exact Cartesian equation :math:`x - 6 = 0` (spread :math:`1`, **perpendicular to baseline** :g:`AB <[ A B ]>`).
+* **Soddy Line** :g:`{1, 7, 20} <{ 7, 20 }>` — collinear axis through :g:`X_1 <X_1>`, :g:`X_7 <X_7>` (:ref:`Gergonne Point <X_7>`, :math:`\left(\frac{414}{73},\; \frac{288}{73}\right)`), :g:`X_20 <X_20>` (:ref:`De Longchamps Point <X_20>`, :math:`\left(9,\; \frac{9}{2}\right)`), with exact Cartesian equation :math:`x - 6 y + 18 = 0` (spread :math:`\frac{1}{37}` relative to :g:`AB <[ A B ]>`).
+* **OI Line (Incenter–Circumcenter Axis)** :g:`{1, 3, 40} <{ 3, 40 }>` — collinear axis through :g:`X_1 <X_1>`, :g:`X_3 <X_3>` (:ref:`Circumcenter <X_3>`, :math:`\left(7,\; \frac{33}{8}\right)`), :g:`X_40 <X_40>` (:ref:`Bevan Point <X_40>`, :math:`\left(8,\; \frac{17}{4}\right)`), with exact Cartesian equation :math:`x - 8 y + 26 = 0` (spread :math:`\frac{1}{65}` relative to :g:`AB <[ A B ]>`).
 
 .. container:: note-item
 
@@ -139,11 +139,11 @@ Functional Relations & Conjugates
 
    **Conjugate & Homothetic Partners of X_1** on Heronian :math:`(15, 13, 14)`.
 
-* **Self-Isogonal Fixed Point:** :g:`X_1 <X_1>` is its own :term:`isogonal conjugate <isogonal-conjugate>` (:math:`1^{-1} : 1^{-1} : 1^{-1} = 1 : 1 : 1`), acting as the identity element of trilinear multiplication.
-* **Isotomic Conjugate:** :g:`X_75 <X_75>` (:ref:`X_75 <X_75>`, homogeneous barycentrics :math:`bc : ca : ab = 182 : 210 : 195`) at exact rational coordinates :math:`\left(\frac{3915}{587}, \frac{2340}{587}\right)`, joined along :g:`{1, 75} <{ 1, 75 }>`.
-* **Anticomplement of Spieker Center:** :g:`X_1 <X_1>` is the :term:`anticomplement <anticomplement>` of :g:`X_10 <X_10>` (:ref:`Spieker Center <X_10>`, :math:`\left(\frac{13}{2}, 4\right)`), dilated from homothetic center :g:`X_2 <X_2>` (:ref:`Centroid <X_2>`, :math:`\left(\frac{19}{3}, 4\right)`) by factor :math:`-2` along :g:`{1, 10} <{ 1, 10 }>`.
-* **Complement of Nagel Point:** :g:`X_1 <X_1>` is the :term:`complement <complement>` of :g:`X_8 <X_8>` (:ref:`Nagel Point <X_8>`, :math:`(7, 4)`), dilated from :g:`X_2 <X_2>` by factor :math:`-\frac{1}{2}` along :g:`{1, 8} <{ 1, 8 }>`; equivalently, :g:`X_10 <X_10>` is the exact midpoint of :g:`X_1 <X_1>` and :g:`X_8 <X_8>`.
-* **Circumcircle Inverse:** Inversion in :g:`circumcircle <circumcircle>` centered at :g:`X_3 <X_3>` = :math:`\left(7, \frac{33}{8}\right)` (:math:`R^2 = \frac{4225}{64}`) maps :g:`X_1 <X_1>` along the :g:`OI axis <{ 1, 3 }>` (:math:`Q(X_1, X_3) = \frac{65}{64}`, scale :math:`R^2 / Q = 65`) to :ref:`X_36 <X_36>` at exact integer coordinates :math:`(-58, -4)`.
+* **Self-Isogonal Fixed Point:** :g:`X_1 <X_1>` is its own :term:`isogonal conjugate <isogonal-conjugate>` (:math:`1 : 1 : 1`), acting as a fixed point of trilinear inversion.
+* **Isotomic Conjugate:** :g:`X_75 <X_75>` (:ref:`Isotomic Conjugate Of Incenter <X_75>`, homogeneous barycentrics :math:`182 : 210 : 195`) at :math:`\left(\frac{3915}{587},\; \frac{2340}{587}\right)`, joined along :g:`{1, 75} <{ 1, 75 }>` (:term:`isotomic conjugate <isotomic-conjugate>` via :math:`vw : wu : uv`).
+* **Complement:** :g:`X_10 <X_10>` (:ref:`Spieker Center <X_10>`) at :math:`\left(\frac{13}{2},\; 4\right)`, joined along :g:`{1, 10} <{ 1, 10 }>` — :term:`complement <complement>` of :g:`X_1 <X_1>` dilated from :g:`X_2 <X_2>` by factor :math:`-\frac{1}{2}`.
+* **Anticomplement:** :g:`X_8 <X_8>` (:ref:`Nagel Point <X_8>`) at :math:`\left(7,\; 4\right)`, joined along :g:`{1, 8} <{ 1, 8 }>` — :term:`anticomplement <anticomplement>` of :g:`X_1 <X_1>` dilated from :g:`X_2 <X_2>` by factor :math:`-2`.
+* **Circumcircle Inverse:** Inversion in :g:`circumcircle <circumcircle>` centered at :g:`X_3 <X_3>` = :math:`\left(7, \frac{33}{8}\right)` (:math:`Q_R = \frac{4225}{64}`) maps :g:`X_1 <X_1>` along :g:`{1, 3} <{ 1, 3 }>` (:math:`Q(X_1, X_3) = \frac{65}{64}`, scale :math:`Q_R / Q = 65`) to :ref:`X_36 <X_36>` (*Inverse-In-Circumcircle Of Incenter*) at :math:`\left(-58,\; -4\right)`.
 
 .. collapse:: Full Functional Relations Catalog
    :badge: 123 relations
@@ -239,7 +239,7 @@ Functional Relations & Conjugates
    * :ref:`X_1 <X_1>` = :ref:`X_100 <X_100>`-of-inner-Garcia-triangle
    * :ref:`X_1 <X_1>` = Thomson-isogonal conjugate of :ref:`X_165 <X_165>`
    * :ref:`X_1 <X_1>` = :ref:`X_8 <X_8>`-of-outer-Garcia-triangle
-   * :ref:`X_1 <X_1>` = :ref:`X_486 <X_486>`-of-:g:`BCI << B C I >>`-triangle
+   * :ref:`X_1 <X_1>` = :ref:`X_486 <X_486>`-of-``BCI``-triangle
    * :ref:`X_1 <X_1>` = :ref:`X_164 <X_164>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute
    * :ref:`X_1 <X_1>` = :ref:`X_1593 <X_1593>`-of-Ascella-triangle
    * :ref:`X_1 <X_1>` = excentral-to-Ascella :term:`similarity image <similarity-image>` of :ref:`X_1697 <X_1697>`
@@ -253,7 +253,7 @@ Functional Relations & Conjugates
    * :ref:`X_1 <X_1>` = hexyl-isogonal conjugate of :ref:`X_40 <X_40>`
    * :ref:`X_1 <X_1>` = inverse-in-polar-circle of :ref:`X_1785 <X_1785>`
    * :ref:`X_1 <X_1>` = inverse-in-orthoptic-circle-of-Steiner-inellipse of X_5121
-   * :ref:`X_1 <X_1>` = inverse-in-:g:`OI <[ O I ]>`-inverter of :ref:`X_1155 <X_1155>`
+   * :ref:`X_1 <X_1>` = inverse-in-``OI``-inverter of :ref:`X_1155 <X_1155>`
    * :ref:`X_1 <X_1>` = inverse-in-Steiner-circumellipse of :ref:`X_239 <X_239>`
    * :ref:`X_1 <X_1>` = inverse-in-MacBeath-circumconic of :ref:`X_2323 <X_2323>`
    * :ref:`X_1 <X_1>` = inverse-in-circumconic-centered-at-:ref:`X_9 <X_9>` of :ref:`X_44 <X_44>`
@@ -281,7 +281,7 @@ Four-Triangle Symbolic Invariance
 
    **Four-Triangle Invariance of X_1** across :g:`Heronian (15, 13, 14) <panel-heronian>`, :g:`Right (3, 4, 5) <panel-right>`, :g:`Kepler (1, √φ, φ) <panel-kepler>`, and :g:`Kimberling (6, 9, 13) <panel-kimberling>`.
 
-Across all four number fields — rational :math:`\mathbb{Q}` on :g:`Heronian (15, 13, 14) <heronian-X_1>` (:math:`X_1 = (6, 4)`, :g:`r = 4 <heronian-incircle>`) and Pythagorean :g:`Right (3, 4, 5) <right-X_1>` (:math:`X_1 = (3, 1)`, :g:`r = 1 <right-incircle>`), golden quadratic tower :math:`\mathbb{Q}(\sqrt{\phi})` on :g:`Kepler (1, √φ, φ) <kepler-X_1>`, and quadratic :math:`\mathbb{Q}(\sqrt{35})` on :g:`Kimberling (6, 9, 13) <kimberling-X_1>` (:g:`r = 2\sqrt{35}/7 <kimberling-incircle>`) — **X_1** remains strictly interior, equidistant from all three sidelines (:math:`1 : 1 : 1`), and partitions the triangle area in exact proportion :math:`a : b : c`.
+Across the four canonical algebraic number fields — :g:`Heronian (15, 13, 14) <heronian-X_1>` over :math:`\mathbb{Q}` (:math:`X_1 = \left(6,\; 4\right)`, :g:`r <heronian-incircle>` = :math:`4`), :g:`Right (3, 4, 5) <right-X_1>` over :math:`\mathbb{Q}` (:math:`X_1 = \left(3,\; 1\right)`, :g:`r <right-incircle>` = :math:`1`), :g:`Kepler (1, √φ, φ) <kepler-X_1>` over :math:`\mathbb{Q}(\sqrt{\phi})`, :g:`r <kepler-incircle>` = :math:`\frac{\sqrt{\phi}}{2} - \frac{\phi}{2} + \frac{1}{2}`, and :g:`Kimberling (6, 9, 13) <kimberling-X_1>` over :math:`\mathbb{Q}(\sqrt{35})` (:math:`X_1 = \left(8,\; \frac{2 \sqrt{35}}{7}\right)`, :g:`r <kimberling-incircle>` = :math:`\frac{2 \sqrt{35}}{7}`) — **X_1** remains strictly interior (:math:`\Delta_a, \Delta_b, \Delta_c > 0`) across all four acute, Pythagorean right, golden right, and obtuse scalene triangles, preserving its exact homogeneous law :math:`u : v : w` without floating-point approximation.
 
 .. admonition:: Related Collection 1 Topic Guides
    :class: tip
@@ -325,35 +325,35 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`O_{A} <O_A>` be the circle tangent to side :g:`BC <[ B C ]>` at its midpoint and to the circumcircle on the side of :g:`BC <[ B C ]>` opposite A. Define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. Let :g:`L_{A} <L_A>` be the external tangent to circles :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` that is nearest to :g:`O_{A} <O_A>`. Define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A' <A'>` = :g:`L_{B} <L_B>` ∩\ :g:`L_{C} <L_C>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Then triangle :g:`A'B'C' << A' B' C' >>` is homothetic to the medial triangle, and the center of homothety is :ref:`X_1 <X_1>`; see the reference at :ref:`X_1001 <X_1001>`.
+   Let ``O_A`` be the circle tangent to side :g:`BC <[ B C ]>` at its midpoint and to the circumcircle on the side of :g:`BC <[ B C ]>` opposite A. Define ``O_B`` and ``O_C`` cyclically. Let ``L_A`` be the external tangent to circles ``O_B`` and ``O_C`` that is nearest to ``O_A``. Define ``L_B`` and ``L_C`` cyclically. Let ``A'`` = ``L_B`` ∩\ ``L_C``, and define ``B'`` and ``C'`` cyclically. Then triangle ``A'B'C'`` is homothetic to the medial triangle, and the center of homothety is :ref:`X_1 <X_1>`; see the reference at :ref:`X_1001 <X_1001>`.
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>` be the intouch and excentral triangles; :ref:`X_1 <X_1>` is the radical center of the circumcircles of :g:`AA'A″ << A A' A″ >>`, :g:`BB'B″ << B B' B″ >>`, :g:`CC'C″ << C C' C″ >>`. (:person:`Randy Hutson <randy-hutson>`, December 10, 2016)
+   Let ``A'B'C'`` and ``A″B″C″`` be the intouch and excentral triangles; :ref:`X_1 <X_1>` is the radical center of the circumcircles of ``AA'A″``, ``BB'B″``, ``CC'C″``. (:person:`Randy Hutson <randy-hutson>`, December 10, 2016)
 
 .. container:: note-item
 
-   Let :g:`Eu_aEu_bEu_c << Eu_a Eu_b Eu_c >>` be the Feuerbach triangle. Let :g:`A″ <A″>` be the trilinear pole of line :g:`Eu_bEu_c <[ Eu_b Eu_c ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_1 <X_1>`. (Randy Hutson, November 17, 2019)
+   Let ``Eu_aEu_bEu_c`` be the Feuerbach triangle. Let ``A″`` be the trilinear pole of line ``Eu_bEu_c``, and define ``B″`` and ``C″`` cyclically. The lines ``AA″``, ``BB″``, ``CC″`` concur in :ref:`X_1 <X_1>`. (Randy Hutson, November 17, 2019)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the mixtilinear excentral triangle. Let :g:`A″ <A″>` be the cevapoint of :g:`B' <B'>` and :g:`C' <C'>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_1 <X_1>`. (Randy Hutson, November 17, 2019)
+   Let ``A'B'C'`` be the mixtilinear excentral triangle. Let ``A″`` be the cevapoint of ``B'`` and ``C'``, and define ``B″`` and ``C″`` cyclically. The lines ``AA″``, ``BB″``, ``CC″`` concur in :ref:`X_1 <X_1>`. (Randy Hutson, November 17, 2019)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the mixtilinear excentral triangle. Let :g:`A″ <A″>` be the trilinear pole of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_1 <X_1>`. (Randy Hutson, November 17, 2019)
+   Let ``A'B'C'`` be the mixtilinear excentral triangle. Let ``A″`` be the trilinear pole of line ``B'C'``, and define ``B″`` and ``C″`` cyclically. The lines ``AA″``, ``BB″``, ``CC″`` concur in :ref:`X_1 <X_1>`. (Randy Hutson, November 17, 2019)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the mixtilinear excentral triangle. Let :g:`L_{A} <L_A>` be the trilinear polar of :g:`A' <A'>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A″ <A″>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_1 <X_1>`. (Randy Hutson, November 17, 2019)
+   Let ``A'B'C'`` be the mixtilinear excentral triangle. Let ``L_A`` be the trilinear polar of ``A'``, and define ``L_B`` and ``L_C`` cyclically. Let ``A″`` = ``L_B``\ ∩\ ``L_C``, and define ``B″`` and ``C″`` cyclically. The lines ``AA″``, ``BB″``, ``CC″`` concur in :ref:`X_1 <X_1>`. (Randy Hutson, November 17, 2019)
 
 .. container:: note-item
 
-   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the excenters-midpoints triangle and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X_1 <X_1>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
+   Let ``O_A`` be the circle centered at the :g:`A <A>`-vertex of the excenters-midpoints triangle and passing through :g:`A <A>`; define ``O_B`` and ``O_C`` cyclically. :ref:`X_1 <X_1>` is the radical center of ``O_A``, ``O_B``, ``O_C``. (Randy Hutson, August 30, 2020)
 
 .. container:: note-item
 
-   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the Gemini triangle 22 and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X_1 <X_1>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
+   Let ``O_A`` be the circle centered at the :g:`A <A>`-vertex of the Gemini triangle 22 and passing through :g:`A <A>`; define ``O_B`` and ``O_C`` cyclically. :ref:`X_1 <X_1>` is the radical center of ``O_A``, ``O_B``, ``O_C``. (Randy Hutson, August 30, 2020)
 
 .. container:: note-item
 

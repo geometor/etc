@@ -14,7 +14,7 @@ X_1
    :alt: X_1 — INCENTER
    :align: center
 
-   **X_1** (*INCENTER*) constructed in exact rational coordinates on the Heronian reference triangle :math:`(a, b, c) = (15, 13, 14)` over :math:`\mathbb{Q}` with vertices :g:`A <A>` = :math:`(0, 0)`, :g:`B <B>` = :math:`(14, 0)`, :g:`C <C>` = :math:`(5, 12)`.
+   **X_1** (*INCENTER*) constructed at :g:`X_1 <X_1>` = :math:`\left(6,\; 4\right)` in exact rational coordinates on the Heronian reference triangle :math:`(a, b, c) = (15, 13, 14)` over :math:`\mathbb{Q}` with vertices :g:`A <A>` = :math:`(0, 0)`, :g:`B <B>` = :math:`(14, 0)`, :g:`C <C>` = :math:`(5, 12)`.
 
 .. literalinclude:: model.py
    :language: python

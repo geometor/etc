@@ -14,7 +14,7 @@ X_8
    :alt: X_8 — NAGEL POINT
    :align: center
 
-   **X_8** (*NAGEL POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_8** (*NAGEL POINT*) constructed at :g:`X_8 <X_8>` = :math:`\left(7,\; 4\right)` in exact rational coordinates on the Heronian reference triangle :math:`(a, b, c) = (15, 13, 14)` over :math:`\mathbb{Q}` with vertices :g:`A <A>` = :math:`(0, 0)`, :g:`B <B>` = :math:`(14, 0)`, :g:`C <C>` = :math:`(5, 12)`.
 
 .. literalinclude:: model.py
    :language: python

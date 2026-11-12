@@ -1,30 +1,53 @@
 {
+    "schema_version": 2,
     "name": "X_9 = MITTENPUNKT",
     "use_point_subscript": false,
     "last_point_id": "",
     "elements": {
         "A": {
-            "sympy_obj": "Point2D(Float('0.0', precision=53), Float('0.0', precision=53))",
+            "sympy_obj": "Point2D(Integer(0), Integer(0))",
             "ID": "A",
             "classes": [
                 "given",
                 "vertex"
             ],
             "parents": [],
-            "guide": false
+            "guide": false,
+            "symbolic": {
+                "kind": "point",
+                "latex_coords": [
+                    "0",
+                    "0"
+                ],
+                "approx_coords": [
+                    0.0,
+                    0.0
+                ]
+            }
         },
         "B": {
-            "sympy_obj": "Point2D(Float('1.0', precision=53), Float('0.0', precision=53))",
+            "sympy_obj": "Point2D(Integer(14), Integer(0))",
             "ID": "B",
             "classes": [
                 "given",
                 "vertex"
             ],
             "parents": [],
-            "guide": false
+            "guide": false,
+            "symbolic": {
+                "kind": "point",
+                "latex_coords": [
+                    "14",
+                    "0"
+                ],
+                "approx_coords": [
+                    14.0,
+                    0.0
+                ]
+            }
         },
         "[ A B ]": {
-            "sympy_obj": "Line2D(Point2D(Float('0.0', precision=53), Float('0.0', precision=53)), Point2D(Float('1.0', precision=53), Float('0.0', precision=53)))",
+            "sympy_obj": "Line2D(Point2D(Integer(0), Integer(0)), Point2D(Integer(14), Integer(0)))",
             "ID": "[ A B ]",
             "classes": [
                 "given",
@@ -34,19 +57,47 @@
                 "A",
                 "B"
             ],
-            "guide": false
+            "guide": false,
+            "pts": [
+                "A",
+                "B"
+            ],
+            "symbolic": {
+                "kind": "line",
+                "latex_coeffs": [
+                    "0",
+                    "1",
+                    "0"
+                ],
+                "approx_coords": [
+                    0.0,
+                    1.0,
+                    0.0
+                ]
+            }
         },
         "C": {
-            "sympy_obj": "Point2D(Float('0.61224489999999998', precision=53), Float('0.59987504000000003', precision=53))",
+            "sympy_obj": "Point2D(Integer(5), Integer(12))",
             "ID": "C",
             "classes": [
                 "vertex"
             ],
             "parents": [],
-            "guide": false
+            "guide": false,
+            "symbolic": {
+                "kind": "point",
+                "latex_coords": [
+                    "5",
+                    "12"
+                ],
+                "approx_coords": [
+                    5.0,
+                    12.0
+                ]
+            }
         },
         "[ B C ]": {
-            "sympy_obj": "Line2D(Point2D(Float('1.0', precision=53), Float('0.0', precision=53)), Point2D(Float('0.61224489999999998', precision=53), Float('0.59987504000000003', precision=53)))",
+            "sympy_obj": "Line2D(Point2D(Integer(14), Integer(0)), Point2D(Integer(5), Integer(12)))",
             "ID": "[ B C ]",
             "classes": [
                 "sideline"
@@ -55,10 +106,27 @@
                 "B",
                 "C"
             ],
-            "guide": false
+            "guide": false,
+            "pts": [
+                "B",
+                "C"
+            ],
+            "symbolic": {
+                "kind": "line",
+                "latex_coeffs": [
+                    "-12",
+                    "-9",
+                    "168"
+                ],
+                "approx_coords": [
+                    0.8,
+                    0.6,
+                    -11.2
+                ]
+            }
         },
         "[ C A ]": {
-            "sympy_obj": "Line2D(Point2D(Float('0.61224489999999998', precision=53), Float('0.59987504000000003', precision=53)), Point2D(Float('0.0', precision=53), Float('0.0', precision=53)))",
+            "sympy_obj": "Line2D(Point2D(Integer(5), Integer(12)), Point2D(Integer(0), Integer(0)))",
             "ID": "[ C A ]",
             "classes": [
                 "sideline"
@@ -67,10 +135,27 @@
                 "C",
                 "A"
             ],
-            "guide": false
+            "guide": false,
+            "pts": [
+                "C",
+                "A"
+            ],
+            "symbolic": {
+                "kind": "line",
+                "latex_coeffs": [
+                    "12",
+                    "-5",
+                    "0"
+                ],
+                "approx_coords": [
+                    0.9230769230769231,
+                    -0.38461538461538464,
+                    0.0
+                ]
+            }
         },
         "< A B C >": {
-            "sympy_obj": "Triangle(Point2D(Float('0.0', precision=53), Float('0.0', precision=53)), Point2D(Float('1.0', precision=53), Float('0.0', precision=53)), Point2D(Float('0.61224489999999998', precision=53), Float('0.59987504000000003', precision=53)))",
+            "sympy_obj": "Triangle(Point2D(Integer(0), Integer(0)), Point2D(Integer(14), Integer(0)), Point2D(Integer(5), Integer(12)))",
             "ID": "< A B C >",
             "classes": [
                 "reference"
@@ -80,31 +165,100 @@
                 "B",
                 "C"
             ],
-            "guide": false
+            "guide": false,
+            "pts": [
+                "A",
+                "B",
+                "C"
+            ],
+            "symbolic": {
+                "kind": "polygon",
+                "vertex_count": 3
+            }
         },
         "J_a": {
-            "sympy_obj": "Point2D(Float('1.28571429', precision=53), Float('0.52489065999999995', precision=53))",
+            "sympy_obj": "Point2D(Integer(21), Integer(14))",
             "ID": "J_a",
             "classes": [],
-            "parents": [],
-            "guide": true
+            "parents": [
+                "A",
+                "B",
+                "C"
+            ],
+            "guide": true,
+            "pts": [
+                "A",
+                "B",
+                "C"
+            ],
+            "symbolic": {
+                "kind": "point",
+                "latex_coords": [
+                    "21",
+                    "14"
+                ],
+                "approx_coords": [
+                    21.0,
+                    14.0
+                ]
+            }
         },
         "J_b": {
-            "sympy_obj": "Point2D(Float('-0.28571428999999998', precision=53), Float('0.69985421000000003', precision=53))",
+            "sympy_obj": "Point2D(Integer(-7), Rational(21, 2))",
             "ID": "J_b",
             "classes": [],
-            "parents": [],
-            "guide": true
+            "parents": [
+                "A",
+                "B",
+                "C"
+            ],
+            "guide": true,
+            "pts": [
+                "A",
+                "B",
+                "C"
+            ],
+            "symbolic": {
+                "kind": "point",
+                "latex_coords": [
+                    "-7",
+                    "\\frac{21}{2}"
+                ],
+                "approx_coords": [
+                    -7.0,
+                    10.5
+                ]
+            }
         },
         "J_c": {
-            "sympy_obj": "Point2D(Float('0.42857142999999998', precision=53), Float('-1.0497813199999999', precision=53))",
+            "sympy_obj": "Point2D(Integer(8), Integer(-12))",
             "ID": "J_c",
             "classes": [],
-            "parents": [],
-            "guide": true
+            "parents": [
+                "A",
+                "B",
+                "C"
+            ],
+            "guide": true,
+            "pts": [
+                "A",
+                "B",
+                "C"
+            ],
+            "symbolic": {
+                "kind": "point",
+                "latex_coords": [
+                    "8",
+                    "-12"
+                ],
+                "approx_coords": [
+                    8.0,
+                    -12.0
+                ]
+            }
         },
         "< J_a J_b J_c >": {
-            "sympy_obj": "Triangle(Point2D(Float('1.28571429', precision=53), Float('0.52489065999999995', precision=53)), Point2D(Float('-0.28571428999999998', precision=53), Float('0.69985421000000003', precision=53)), Point2D(Float('0.42857142999999998', precision=53), Float('-1.0497813199999999', precision=53)))",
+            "sympy_obj": "Triangle(Point2D(Integer(21), Integer(14)), Point2D(Integer(-7), Rational(21, 2)), Point2D(Integer(8), Integer(-12)))",
             "ID": "< J_a J_b J_c >",
             "classes": [
                 "secondary"
@@ -114,37 +268,100 @@
                 "J_b",
                 "J_c"
             ],
-            "guide": false
+            "guide": false,
+            "pts": [
+                "J_a",
+                "J_b",
+                "J_c"
+            ],
+            "symbolic": {
+                "kind": "polygon",
+                "vertex_count": 3
+            }
         },
         "M_a": {
-            "sympy_obj": "Point2D(Float('0.80612245000000005', precision=53), Float('0.29993752000000001', precision=53))",
+            "sympy_obj": "Point2D(Rational(19, 2), Integer(6))",
             "ID": "M_a",
             "classes": [
                 "midpoint"
             ],
-            "parents": [],
-            "guide": true
+            "parents": [
+                "B",
+                "C"
+            ],
+            "guide": true,
+            "pts": [
+                "B",
+                "C"
+            ],
+            "symbolic": {
+                "kind": "point",
+                "latex_coords": [
+                    "\\frac{19}{2}",
+                    "6"
+                ],
+                "approx_coords": [
+                    9.5,
+                    6.0
+                ]
+            }
         },
         "M_b": {
-            "sympy_obj": "Point2D(Float('0.30612244999999999', precision=53), Float('0.29993752000000001', precision=53))",
+            "sympy_obj": "Point2D(Rational(5, 2), Integer(6))",
             "ID": "M_b",
             "classes": [
                 "midpoint"
             ],
-            "parents": [],
-            "guide": true
+            "parents": [
+                "C",
+                "A"
+            ],
+            "guide": true,
+            "pts": [
+                "C",
+                "A"
+            ],
+            "symbolic": {
+                "kind": "point",
+                "latex_coords": [
+                    "\\frac{5}{2}",
+                    "6"
+                ],
+                "approx_coords": [
+                    2.5,
+                    6.0
+                ]
+            }
         },
         "M_c": {
-            "sympy_obj": "Point2D(Float('0.5', precision=53), Float('0.0', precision=53))",
+            "sympy_obj": "Point2D(Integer(7), Integer(0))",
             "ID": "M_c",
             "classes": [
                 "midpoint"
             ],
-            "parents": [],
-            "guide": true
+            "parents": [
+                "A",
+                "B"
+            ],
+            "guide": true,
+            "pts": [
+                "A",
+                "B"
+            ],
+            "symbolic": {
+                "kind": "point",
+                "latex_coords": [
+                    "7",
+                    "0"
+                ],
+                "approx_coords": [
+                    7.0,
+                    0.0
+                ]
+            }
         },
         "< M_a M_b M_c >": {
-            "sympy_obj": "Triangle(Point2D(Float('0.80612245000000005', precision=53), Float('0.29993752000000001', precision=53)), Point2D(Float('0.30612244999999999', precision=53), Float('0.29993752000000001', precision=53)), Point2D(Float('0.5', precision=53), Float('0.0', precision=53)))",
+            "sympy_obj": "Triangle(Point2D(Rational(19, 2), Integer(6)), Point2D(Rational(5, 2), Integer(6)), Point2D(Integer(7), Integer(0)))",
             "ID": "< M_a M_b M_c >",
             "classes": [
                 "secondary"
@@ -154,10 +371,19 @@
                 "M_b",
                 "M_c"
             ],
-            "guide": false
+            "guide": false,
+            "pts": [
+                "M_a",
+                "M_b",
+                "M_c"
+            ],
+            "symbolic": {
+                "kind": "polygon",
+                "vertex_count": 3
+            }
         },
         "[ J_a M_a ]": {
-            "sympy_obj": "Line2D(Point2D(Float('1.28571429', precision=53), Float('0.52489065999999995', precision=53)), Point2D(Float('0.80612245000000005', precision=53), Float('0.29993752000000001', precision=53)))",
+            "sympy_obj": "Line2D(Point2D(Integer(21), Integer(14)), Point2D(Rational(19, 2), Integer(6)))",
             "ID": "[ J_a M_a ]",
             "classes": [
                 "bisector"
@@ -166,10 +392,27 @@
                 "J_a",
                 "M_a"
             ],
-            "guide": false
+            "guide": false,
+            "pts": [
+                "J_a",
+                "M_a"
+            ],
+            "symbolic": {
+                "kind": "line",
+                "latex_coeffs": [
+                    "8",
+                    "- \\frac{23}{2}",
+                    "-7"
+                ],
+                "approx_coords": [
+                    0.5710644881985998,
+                    -0.8209052017854871,
+                    -0.4996814271737748
+                ]
+            }
         },
         "[ J_b M_b ]": {
-            "sympy_obj": "Line2D(Point2D(Float('-0.28571428999999998', precision=53), Float('0.69985421000000003', precision=53)), Point2D(Float('0.30612244999999999', precision=53), Float('0.29993752000000001', precision=53)))",
+            "sympy_obj": "Line2D(Point2D(Integer(-7), Rational(21, 2)), Point2D(Rational(5, 2), Integer(6)))",
             "ID": "[ J_b M_b ]",
             "classes": [
                 "bisector"
@@ -178,10 +421,27 @@
                 "J_b",
                 "M_b"
             ],
-            "guide": false
+            "guide": false,
+            "pts": [
+                "J_b",
+                "M_b"
+            ],
+            "symbolic": {
+                "kind": "line",
+                "latex_coeffs": [
+                    "\\frac{9}{2}",
+                    "\\frac{19}{2}",
+                    "- \\frac{273}{4}"
+                ],
+                "approx_coords": [
+                    0.42808634473904467,
+                    0.9037378388935388,
+                    -6.492642895208844
+                ]
+            }
         },
         "[ J_c M_c ]": {
-            "sympy_obj": "Line2D(Point2D(Float('0.42857142999999998', precision=53), Float('-1.0497813199999999', precision=53)), Point2D(Float('0.5', precision=53), Float('0.0', precision=53)))",
+            "sympy_obj": "Line2D(Point2D(Integer(8), Integer(-12)), Point2D(Integer(7), Integer(0)))",
             "ID": "[ J_c M_c ]",
             "classes": [
                 "bisector"
@@ -190,30 +450,87 @@
                 "J_c",
                 "M_c"
             ],
-            "guide": false
+            "guide": false,
+            "pts": [
+                "J_c",
+                "M_c"
+            ],
+            "symbolic": {
+                "kind": "line",
+                "latex_coeffs": [
+                    "-12",
+                    "-1",
+                    "84"
+                ],
+                "approx_coords": [
+                    0.9965457582448796,
+                    0.08304547985373997,
+                    -6.975820307714157
+                ]
+            }
         },
         "X_1": {
-            "sympy_obj": "Point2D(Float('0.57142857000000002', precision=53), Float('0.23328473999999999', precision=53))",
+            "sympy_obj": "Point2D(Integer(6), Integer(4))",
             "ID": "X_1",
             "classes": [
                 "center",
                 "incident"
             ],
-            "parents": [],
-            "guide": false
+            "parents": [
+                "A",
+                "B",
+                "C"
+            ],
+            "guide": false,
+            "pts": [
+                "A",
+                "B",
+                "C"
+            ],
+            "symbolic": {
+                "kind": "point",
+                "latex_coords": [
+                    "6",
+                    "4"
+                ],
+                "approx_coords": [
+                    6.0,
+                    4.0
+                ]
+            }
         },
         "X_6": {
-            "sympy_obj": "Point2D(Float('0.59999999999999998', precision=53), Float('0.26721706000000001', precision=53))",
+            "sympy_obj": "Point2D(Rational(1673, 295), Rational(1176, 295))",
             "ID": "X_6",
             "classes": [
                 "center",
                 "incident"
             ],
-            "parents": [],
-            "guide": false
+            "parents": [
+                "A",
+                "B",
+                "C"
+            ],
+            "guide": false,
+            "pts": [
+                "A",
+                "B",
+                "C"
+            ],
+            "symbolic": {
+                "kind": "point",
+                "latex_coords": [
+                    "\\frac{1673}{295}",
+                    "\\frac{1176}{295}"
+                ],
+                "approx_coords": [
+                    5.671186440677966,
+                    3.986440677966102
+                ]
+            }
         },
         "{ 1, 6 }": {
-            "sympy_obj": "Line2D(Point2D(Float('0.57142857000000002', precision=53), Float('0.23328473999999999', precision=53)), Point2D(Float('0.59999999999999998', precision=53), Float('0.26721706000000001', precision=53)))",
+            "sympy_obj": "Line2D(Point2D(Integer(6), Integer(4)), Point2D(Rational(1673, 295), Rational(1176, 295)))",
             "ID": "{ 1, 6 }",
             "classes": [
                 "central_line",
@@ -223,30 +540,87 @@
                 "X_1",
                 "X_6"
             ],
-            "guide": false
+            "guide": false,
+            "pts": [
+                "X_1",
+                "X_6"
+            ],
+            "symbolic": {
+                "kind": "line",
+                "latex_coeffs": [
+                    "\\frac{4}{295}",
+                    "- \\frac{97}{295}",
+                    "\\frac{364}{295}"
+                ],
+                "approx_coords": [
+                    0.04120209620996768,
+                    -0.9991508330917332,
+                    3.749390755107132
+                ]
+            }
         },
         "X_2": {
-            "sympy_obj": "Point2D(Float('0.53741497000000005', precision=53), Float('0.19995835000000001', precision=53))",
+            "sympy_obj": "Point2D(Rational(19, 3), Integer(4))",
             "ID": "X_2",
             "classes": [
                 "center",
                 "incident"
             ],
-            "parents": [],
-            "guide": false
+            "parents": [
+                "A",
+                "B",
+                "C"
+            ],
+            "guide": false,
+            "pts": [
+                "A",
+                "B",
+                "C"
+            ],
+            "symbolic": {
+                "kind": "point",
+                "latex_coords": [
+                    "\\frac{19}{3}",
+                    "4"
+                ],
+                "approx_coords": [
+                    6.333333333333333,
+                    4.0
+                ]
+            }
         },
         "X_7": {
-            "sympy_obj": "Point2D(Float('0.59026688000000005', precision=53), Float('0.27686539999999998', precision=53))",
+            "sympy_obj": "Point2D(Rational(414, 73), Rational(288, 73))",
             "ID": "X_7",
             "classes": [
                 "center",
                 "incident"
             ],
-            "parents": [],
-            "guide": false
+            "parents": [
+                "A",
+                "B",
+                "C"
+            ],
+            "guide": false,
+            "pts": [
+                "A",
+                "B",
+                "C"
+            ],
+            "symbolic": {
+                "kind": "point",
+                "latex_coords": [
+                    "\\frac{414}{73}",
+                    "\\frac{288}{73}"
+                ],
+                "approx_coords": [
+                    5.671232876712328,
+                    3.9452054794520546
+                ]
+            }
         },
         "{ 2, 7 }": {
-            "sympy_obj": "Line2D(Point2D(Float('0.53741497000000005', precision=53), Float('0.19995835000000001', precision=53)), Point2D(Float('0.59026688000000005', precision=53), Float('0.27686539999999998', precision=53)))",
+            "sympy_obj": "Line2D(Point2D(Rational(19, 3), Integer(4)), Point2D(Rational(414, 73), Rational(288, 73)))",
             "ID": "{ 2, 7 }",
             "classes": [
                 "central_line",
@@ -256,30 +630,117 @@
                 "X_2",
                 "X_7"
             ],
-            "guide": false
+            "guide": false,
+            "pts": [
+                "X_2",
+                "X_7"
+            ],
+            "symbolic": {
+                "kind": "line",
+                "latex_coeffs": [
+                    "\\frac{4}{73}",
+                    "- \\frac{145}{219}",
+                    "\\frac{168}{73}"
+                ],
+                "approx_coords": [
+                    0.08247666176235725,
+                    -0.9965929962951464,
+                    3.4640197940189887
+                ]
+            }
         },
         "X_4": {
-            "sympy_obj": "Point2D(Float('0.61224489999999998', precision=53), Float('0.39575089000000002', precision=53))",
+            "sympy_obj": "Point2D(Integer(5), Rational(15, 4))",
             "ID": "X_4",
             "classes": [
                 "center",
                 "incident"
             ],
-            "parents": [],
-            "guide": false
+            "parents": [
+                "A",
+                "B",
+                "C"
+            ],
+            "guide": false,
+            "pts": [
+                "A",
+                "B",
+                "C"
+            ],
+            "symbolic": {
+                "kind": "point",
+                "latex_coords": [
+                    "5",
+                    "\\frac{15}{4}"
+                ],
+                "approx_coords": [
+                    5.0,
+                    3.75
+                ]
+            }
         },
         "X_10": {
-            "sympy_obj": "Point2D(Float('0.52040816000000001', precision=53), Float('0.18329514999999999', precision=53))",
+            "sympy_obj": "Point2D(Rational(13, 2), Integer(4))",
             "ID": "X_10",
             "classes": [
                 "center",
                 "incident"
             ],
-            "parents": [],
-            "guide": false
+            "parents": [
+                "A",
+                "B",
+                "C"
+            ],
+            "guide": false,
+            "pts": [
+                "A",
+                "B",
+                "C"
+            ],
+            "symbolic": {
+                "kind": "point",
+                "latex_coords": [
+                    "\\frac{13}{2}",
+                    "4"
+                ],
+                "approx_coords": [
+                    6.5,
+                    4.0
+                ]
+            }
+        },
+        "X_19": {
+            "sympy_obj": "Point2D(Rational(497, 106), Rational(196, 53))",
+            "ID": "X_19",
+            "classes": [
+                "center",
+                "incident"
+            ],
+            "parents": [
+                "A",
+                "B",
+                "C"
+            ],
+            "guide": false,
+            "pts": [
+                "A",
+                "B",
+                "C"
+            ],
+            "symbolic": {
+                "kind": "point",
+                "latex_coords": [
+                    "\\frac{497}{106}",
+                    "\\frac{196}{53}"
+                ],
+                "approx_coords": [
+                    4.688679245283019,
+                    3.69811320754717
+                ]
+            }
         },
         "{ 4, 10 }": {
-            "sympy_obj": "Line2D(Point2D(Float('0.61224489999999998', precision=53), Float('0.39575089000000002', precision=53)), Point2D(Float('0.52040816000000001', precision=53), Float('0.18329514999999999', precision=53)))",
+            "sympy_obj": "Line2D(Point2D(Integer(5), Rational(15, 4)), Point2D(Rational(13, 2), Integer(4)))",
             "ID": "{ 4, 10 }",
             "classes": [
                 "central_line",
@@ -289,50 +750,288 @@
                 "X_4",
                 "X_10"
             ],
-            "guide": false
-        },
-        "X_21": {
-            "sympy_obj": "Point2D(Float('0.52867569999999997', precision=53), Float('0.17709206', precision=53))",
-            "ID": "X_21",
-            "classes": [
-                "center",
-                "incident"
+            "guide": false,
+            "pts": [
+                "X_4",
+                "X_10"
             ],
-            "parents": [],
-            "guide": false
-        },
-        "X_41": {
-            "sympy_obj": "Point2D(Float('0.58233369999999995', precision=53), Float('0.22438074', precision=53))",
-            "ID": "X_41",
-            "classes": [
-                "center",
-                "incident"
-            ],
-            "parents": [],
-            "guide": false
-        },
-        "{ 21, 41 }": {
-            "sympy_obj": "Line2D(Point2D(Float('0.52867569999999997', precision=53), Float('0.17709206', precision=53)), Point2D(Float('0.58233369999999995', precision=53), Float('0.22438074', precision=53)))",
-            "ID": "{ 21, 41 }",
-            "classes": [
-                "central_line",
-                "incident"
-            ],
-            "parents": [
-                "X_21",
-                "X_41"
-            ],
-            "guide": false
+            "symbolic": {
+                "kind": "line",
+                "latex_coeffs": [
+                    "- \\frac{1}{4}",
+                    "\\frac{3}{2}",
+                    "- \\frac{35}{8}"
+                ],
+                "approx_coords": [
+                    0.1643989873053573,
+                    -0.9863939238321437,
+                    2.876982277843753
+                ]
+            }
         },
         "X_9": {
-            "sympy_obj": "Point2D(Float('0.51098900999999997', precision=53), Float('0.16150481999999999', precision=53))",
+            "sympy_obj": "Point2D(Rational(973, 146), Rational(294, 73))",
             "ID": "X_9",
             "classes": [
                 "selected",
                 "target"
             ],
-            "parents": [],
-            "guide": false
+            "parents": [
+                "A",
+                "B",
+                "C"
+            ],
+            "guide": false,
+            "pts": [
+                "A",
+                "B",
+                "C"
+            ],
+            "symbolic": {
+                "kind": "point",
+                "latex_coords": [
+                    "\\frac{973}{146}",
+                    "\\frac{294}{73}"
+                ],
+                "approx_coords": [
+                    6.664383561643835,
+                    4.027397260273973
+                ]
+            }
         }
-    }
+    },
+    "steps": [
+        {
+            "index": 0,
+            "kind": "given",
+            "action": "point",
+            "elements": [
+                "A"
+            ]
+        },
+        {
+            "index": 1,
+            "kind": "given",
+            "action": "point",
+            "elements": [
+                "B"
+            ]
+        },
+        {
+            "index": 2,
+            "kind": "construct",
+            "action": "line",
+            "elements": [
+                "[ A B ]"
+            ]
+        },
+        {
+            "index": 3,
+            "kind": "construct",
+            "action": "point",
+            "elements": [
+                "C"
+            ]
+        },
+        {
+            "index": 4,
+            "kind": "construct",
+            "action": "line",
+            "elements": [
+                "[ B C ]"
+            ]
+        },
+        {
+            "index": 5,
+            "kind": "construct",
+            "action": "line",
+            "elements": [
+                "[ C A ]"
+            ]
+        },
+        {
+            "index": 6,
+            "kind": "construct",
+            "action": "polygon",
+            "elements": [
+                "< A B C >"
+            ]
+        },
+        {
+            "index": 7,
+            "kind": "construct",
+            "action": "point",
+            "elements": [
+                "X_9"
+            ]
+        },
+        {
+            "index": 8,
+            "kind": "construct",
+            "action": "point",
+            "elements": [
+                "J_a"
+            ]
+        },
+        {
+            "index": 9,
+            "kind": "construct",
+            "action": "point",
+            "elements": [
+                "J_b"
+            ]
+        },
+        {
+            "index": 10,
+            "kind": "construct",
+            "action": "point",
+            "elements": [
+                "J_c"
+            ]
+        },
+        {
+            "index": 11,
+            "kind": "construct",
+            "action": "polygon",
+            "elements": [
+                "< J_a J_b J_c >"
+            ]
+        },
+        {
+            "index": 12,
+            "kind": "construct",
+            "action": "point",
+            "elements": [
+                "M_a"
+            ]
+        },
+        {
+            "index": 13,
+            "kind": "construct",
+            "action": "point",
+            "elements": [
+                "M_b"
+            ]
+        },
+        {
+            "index": 14,
+            "kind": "construct",
+            "action": "point",
+            "elements": [
+                "M_c"
+            ]
+        },
+        {
+            "index": 15,
+            "kind": "construct",
+            "action": "polygon",
+            "elements": [
+                "< M_a M_b M_c >"
+            ]
+        },
+        {
+            "index": 16,
+            "kind": "construct",
+            "action": "line",
+            "elements": [
+                "[ J_a M_a ]"
+            ]
+        },
+        {
+            "index": 17,
+            "kind": "construct",
+            "action": "line",
+            "elements": [
+                "[ J_b M_b ]"
+            ]
+        },
+        {
+            "index": 18,
+            "kind": "construct",
+            "action": "line",
+            "elements": [
+                "[ J_c M_c ]"
+            ]
+        },
+        {
+            "index": 19,
+            "kind": "construct",
+            "action": "point",
+            "elements": [
+                "X_1"
+            ]
+        },
+        {
+            "index": 20,
+            "kind": "construct",
+            "action": "point",
+            "elements": [
+                "X_6"
+            ]
+        },
+        {
+            "index": 21,
+            "kind": "construct",
+            "action": "line",
+            "elements": [
+                "{ 1, 6 }"
+            ]
+        },
+        {
+            "index": 22,
+            "kind": "construct",
+            "action": "point",
+            "elements": [
+                "X_2"
+            ]
+        },
+        {
+            "index": 23,
+            "kind": "construct",
+            "action": "point",
+            "elements": [
+                "X_7"
+            ]
+        },
+        {
+            "index": 24,
+            "kind": "construct",
+            "action": "line",
+            "elements": [
+                "{ 2, 7 }"
+            ]
+        },
+        {
+            "index": 25,
+            "kind": "construct",
+            "action": "point",
+            "elements": [
+                "X_4"
+            ]
+        },
+        {
+            "index": 26,
+            "kind": "construct",
+            "action": "point",
+            "elements": [
+                "X_10"
+            ]
+        },
+        {
+            "index": 27,
+            "kind": "construct",
+            "action": "point",
+            "elements": [
+                "X_19"
+            ]
+        },
+        {
+            "index": 28,
+            "kind": "construct",
+            "action": "line",
+            "elements": [
+                "{ 4, 10 }"
+            ]
+        }
+    ]
 }

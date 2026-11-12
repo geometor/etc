@@ -1407,6 +1407,20 @@ _CLASSICAL_POINT_INFO: dict[str, tuple[str, str]] = {
     "O_B": ("Kosnita Circumcenter O_B", "Circumcenter of subtriangle △COA (O = X_3)"),
     "O_C": ("Kosnita Circumcenter O_C", "Circumcenter of subtriangle △AOB (O = X_3)"),
     "S_c": ("Spieker Touchpoint S_c", "Tangency point of Spieker circle on medial side M_a M_b"),
+    "T_sp": ("Spieker Touchpoint T_sp", "Tangency point of Spieker circle on medial side M_a M_b"),
+    "A''": ("Inner Equilateral Apex A''", "Inward equilateral triangle apex erected on side BC"),
+    "B''": ("Inner Equilateral Apex B''", "Inward equilateral triangle apex erected on side CA"),
+    "C''": ("Inner Equilateral Apex C''", "Inward equilateral triangle apex erected on side AB"),
+    "F_a": ("Feuerbach Touchpoint F_a", "Tangency point of nine-point circle and A-excircle"),
+    "F_b": ("Feuerbach Touchpoint F_b", "Tangency point of nine-point circle and B-excircle"),
+    "F_c": ("Feuerbach Touchpoint F_c", "Tangency point of nine-point circle and C-excircle"),
+    "Pd_a": ("Pedal Foot Pd_a on BC", "Orthogonal projection of target center onto sideline BC"),
+    "Pd_b": ("Pedal Foot Pd_b on CA", "Orthogonal projection of target center onto sideline CA"),
+    "Pd_c": ("Pedal Foot Pd_c on AB", "Orthogonal projection of target center onto sideline AB"),
+    "Ap_a": ("A-Apollonian Center Ap_a", "Center of the A-Apollonian circle on sideline BC"),
+    "Ap_b": ("B-Apollonian Center Ap_b", "Center of the B-Apollonian circle on sideline CA"),
+    "Ap_c": ("C-Apollonian Center Ap_c", "Center of the C-Apollonian circle on sideline AB"),
+    "P_mc": ("Perpendicular Guide P_mc", "Normal direction guide on hypotenuse midpoint M_c"),
     "R_a": ("Radius Point R_a", "Euclid I.22 baseline guide point"),
     "R_b": ("Radius Point R_b", "Euclid I.22 baseline guide point"),
 }
@@ -1430,6 +1444,9 @@ _CONSTRUCTION_LINE_INFO: dict[str, tuple[str, str]] = {
     "[ A I_a ]": ("Internal Angle Bisector of ∠A", "Bisector of interior angle A meeting BC at I_a"),
     "[ B I_b ]": ("Internal Angle Bisector of ∠B", "Bisector of interior angle B meeting CA at I_b"),
     "[ C I_c ]": ("Internal Angle Bisector of ∠C", "Bisector of interior angle C meeting AB at I_c"),
+    "[ M_a X_10 ]": ("Medial Angle Bisector at M_a", "Internal angle bisector of medial triangle △M_a M_b M_c at M_a"),
+    "[ M_b X_10 ]": ("Medial Angle Bisector at M_b", "Internal angle bisector of medial triangle △M_a M_b M_c at M_b"),
+    "[ M_c X_10 ]": ("Medial Angle Bisector at M_c", "Internal angle bisector of medial triangle △M_a M_b M_c at M_c"),
     "[ A Tan_a ]": ("A-Symmedian", "Symmedian from vertex A to tangential vertex Tan_a"),
     "[ B Tan_b ]": ("B-Symmedian", "Symmedian from vertex B to tangential vertex Tan_b"),
     "[ C Tan_c ]": ("C-Symmedian", "Symmedian from vertex C to tangential vertex Tan_c"),
@@ -1445,12 +1462,18 @@ _CONSTRUCTION_LINE_INFO: dict[str, tuple[str, str]] = {
     "[ J_a M_a ]": ("Mittenpunkt Symmedian J_a–M_a", "Line joining A-excenter J_a to side midpoint M_a"),
     "[ J_b M_b ]": ("Mittenpunkt Symmedian J_b–M_b", "Line joining B-excenter J_b to side midpoint M_b"),
     "[ J_c M_c ]": ("Mittenpunkt Symmedian J_c–M_c", "Line joining C-excenter J_c to side midpoint M_c"),
+    "[ A F_a ]": ("Feuerbach Cevian A–F_a", "Cevian from vertex A to Feuerbach excircle touchpoint F_a"),
+    "[ B F_b ]": ("Feuerbach Cevian B–F_b", "Cevian from vertex B to Feuerbach excircle touchpoint F_b"),
+    "[ C F_c ]": ("Feuerbach Cevian C–F_c", "Cevian from vertex C to Feuerbach excircle touchpoint F_c"),
     "[ A P_a ]": ("A-Cevian A–P_a", "Cevian from vertex A through target center to trace P_a on BC"),
     "[ B P_b ]": ("B-Cevian B–P_b", "Cevian from vertex B through target center to trace P_b on CA"),
     "[ C P_c ]": ("C-Cevian C–P_c", "Cevian from vertex C through target center to trace P_c on AB"),
-    "[ A A' ]": ("Apex Cevian A–A'", "Cevian joining vertex A to constructed apex A'"),
-    "[ B B' ]": ("Apex Cevian B–B'", "Cevian joining vertex B to constructed apex B'"),
-    "[ C C' ]": ("Apex Cevian C–C'", "Cevian joining vertex C to constructed apex C'"),
+    "[ A A' ]": ("Outer Isogonic Cevian A–A'", "Cevian joining vertex A to outward equilateral apex A'"),
+    "[ B B' ]": ("Outer Isogonic Cevian B–B'", "Cevian joining vertex B to outward equilateral apex B'"),
+    "[ C C' ]": ("Outer Isogonic Cevian C–C'", "Cevian joining vertex C to outward equilateral apex C'"),
+    "[ A A'' ]": ("Inner Isogonic Cevian A–A''", "Cevian joining vertex A to inward equilateral apex A''"),
+    "[ B B'' ]": ("Inner Isogonic Cevian B–B''", "Cevian joining vertex B to inward equilateral apex B''"),
+    "[ C C'' ]": ("Inner Isogonic Cevian C–C''", "Cevian joining vertex C to inward equilateral apex C''"),
     "[ A O_A ]": ("Kosnita Cevian A–O_A", "Line from vertex A to circumcenter O_A of △BOC"),
     "[ B O_B ]": ("Kosnita Cevian B–O_B", "Line from vertex B to circumcenter O_B of △COA"),
     "[ C O_C ]": ("Kosnita Cevian C–O_C", "Line from vertex C to circumcenter O_C of △AOB"),
@@ -1543,8 +1566,11 @@ _KNOWN_POLYGON_INFO: dict[str, tuple[str, str]] = {
     "< K_a K_b K_c >": ("Anticomplementary Triangle △K_a K_b K_c", "Formed by lines through A, B, C parallel to opposite sides"),
     "< Tan_a Tan_b Tan_c >": ("Tangential Triangle △Tan_a Tan_b Tan_c", "Bounded by tangents to the circumcircle at A, B, C"),
     "< Sym_a Sym_b Sym_c >": ("Symmedial Triangle △Sym_a Sym_b Sym_c", "Cevian triangle of Symmedian Point X_6"),
+    "< F_a F_b F_c >": ("Feuerbach Triangle △F_a F_b F_c", "Formed by nine-point circle tangency points with the three excircles"),
+    "< Pd_a Pd_b Pd_c >": ("Equilateral Pedal Triangle △Pd_a Pd_b Pd_c", "Equilateral pedal triangle of isodynamic point"),
     "< Eu_a Eu_b Eu_c >": ("Euler (Feuerbach) Triangle △Eu_a Eu_b Eu_c", "Midpoints of segments joining A, B, C to Orthocenter X_4"),
     "< Ref_a Ref_b Ref_c >": ("Reflection Triangle △Ref_a Ref_b Ref_c", "Reflections of vertices A, B, C across opposite sidelines"),
+    "< Cm_a Cm_b Ref_c >": ("Circummedial Triangle", "Endpoints of medians extended to circumcircle"),
     "< Cm_a Cm_b Cm_c >": ("Circummedial Triangle △Cm_a Cm_b Cm_c", "Endpoints of medians of △ABC extended to the circumcircle"),
     "< H'_a H'_b H'_c >": ("Orthic-of-Orthic Triangle △H'_a H'_b H'_c", "Orthic triangle of the orthic triangle △H_a H_b H_c"),
     "< O_A O_B O_C >": ("Kosnita Triangle △O_A O_B O_C", "Circumcenters of △BOC, △COA, △AOB where O = X_3"),
@@ -1553,9 +1579,12 @@ _KNOWN_POLYGON_INFO: dict[str, tuple[str, str]] = {
     "< Nap_a Nap_b Nap_c >": ("Outer Napoleon Triangle △Nap_a Nap_b Nap_c", "Equilateral triangle formed by centers of outward side equilateral triangles"),
     "< Nap'_a Nap'_b Nap'_c >": ("Inner Napoleon Triangle △Nap'_a Nap'_b Nap'_c", "Equilateral triangle formed by centers of inward side equilateral triangles"),
     "< N_A N_B N_C >": ("Napoleon Triangle △N_A N_B N_C", "Equilateral triangle formed by centers of side equilateral triangles"),
-    "< B C A' >": ("Equilateral Triangle on BC", "Equilateral triangle erected on side BC"),
-    "< C A B' >": ("Equilateral Triangle on CA", "Equilateral triangle erected on side CA"),
-    "< A B C' >": ("Equilateral Triangle on AB", "Equilateral triangle erected on side AB"),
+    "< B C A' >": ("Outer Equilateral Triangle on BC", "Outward equilateral triangle erected on side BC"),
+    "< C A B' >": ("Outer Equilateral Triangle on CA", "Outward equilateral triangle erected on side CA"),
+    "< A B C' >": ("Outer Equilateral Triangle on AB", "Outward equilateral triangle erected on side AB"),
+    "< B C A'' >": ("Inner Equilateral Triangle on BC", "Inward equilateral triangle erected on side BC"),
+    "< C A B'' >": ("Inner Equilateral Triangle on CA", "Inward equilateral triangle erected on side CA"),
+    "< A B C'' >": ("Inner Equilateral Triangle on AB", "Inward equilateral triangle erected on side AB"),
 }
 
 
@@ -1891,10 +1920,24 @@ def _enrich_elements_catalog(
             p2_id = pts_list[1] if len(pts_list) > 1 else ""
             p1 = points_by_id.get(p1_id)
             p2 = points_by_id.get(p2_id)
-            seg_name, subtitle = _KNOWN_SEGMENT_INFO.get(
-                eid,
-                (f"Segment {p1_id}–{p2_id}", f"Segment joining {p1_id} and {p2_id}"),
-            )
+            if eid in _KNOWN_SEGMENT_INFO:
+                seg_name, subtitle = _KNOWN_SEGMENT_INFO[eid]
+            else:
+                m_strut = re.match(r"^/\s*X_(\d+)\s+T_([abc])\s*/$", eid)
+                m_spoke = re.match(r"^/\s*X_(\d+)\s+([ABC])\s*/$", eid)
+                if m_strut:
+                    xn, sk = m_strut.group(1), m_strut.group(2)
+                    side_map = {"a": ("BC", "α"), "b": ("CA", "β"), "c": ("AB", "γ")}
+                    side_nm, tr_sym = side_map[sk]
+                    seg_name = f"Orthogonal Trilinear Strut X_{xn}–T_{sk}"
+                    subtitle = f"Directed trilinear distance {tr_sym} perpendicular to {side_nm}"
+                elif m_spoke:
+                    xn, vk = m_spoke.group(1), m_spoke.group(2)
+                    seg_name = f"Barycentric Spoke X_{xn}–{vk}"
+                    subtitle = f"Partition spoke joining X_{xn} to vertex {vk}"
+                else:
+                    seg_name = f"Segment {p1_id}–{p2_id}"
+                    subtitle = f"Segment joining {p1_id} and {p2_id}"
             color = "gold"
             seg_len = (
                 math.hypot(p2["x"] - p1["x"], p2["y"] - p1["y"])
@@ -2105,9 +2148,23 @@ def _enrich_elements_catalog(
 
         elif etype == "polygon":
             v_ids = el.get("points") or []
-            p_name, subtitle = _KNOWN_POLYGON_INFO.get(
-                eid, (f"Polygon {eid}", f"Vertices: {', '.join(v_ids)}")
-            )
+            if eid in _KNOWN_POLYGON_INFO:
+                p_name, subtitle = _KNOWN_POLYGON_INFO[eid]
+            else:
+                m_sub = re.match(r"^<\s*X_(\d+)\s+(B\s+C|C\s+A|A\s+B)\s*>$", eid)
+                if m_sub:
+                    xn = m_sub.group(1)
+                    pair = re.sub(r"\s+", "", m_sub.group(2))
+                    sub_meta = {
+                        "BC": ("A", "Δ_a", "u"),
+                        "CA": ("B", "Δ_b", "v"),
+                        "AB": ("C", "Δ_c", "w"),
+                    }
+                    opp_v, d_lbl, w_lbl = sub_meta[pair]
+                    p_name = f"Barycentric Sub-Triangle △X_{xn}{pair} ({d_lbl})"
+                    subtitle = f"Signed sub-area opposite {opp_v} proportional to barycentric weight {w_lbl}"
+                else:
+                    p_name, subtitle = f"Polygon {eid}", f"Vertices: {', '.join(v_ids)}"
             if "subarea-a" in classes:
                 color = "#ff7043"
             elif "subarea-b" in classes:
@@ -2420,6 +2477,57 @@ def model_to_elements_list(model: Model) -> list[dict[str, Any]]:
         if sym:
             base["symbolic"] = sym
         elements.append(base)
+
+        if isinstance(el, spg.Point):
+            for c_alias in getattr(data, "_etc_coincident", None) or []:
+                c_id = c_alias.get("ID", "")
+                if not c_id or any(existing_el["ID"] == c_id for existing_el in elements):
+                    continue
+                c_sym = dict(sym)
+                m_cx = re.match(r"^X_(\d+)$", c_id)
+                if (
+                    reg is not None
+                    and m_cx
+                    and int(m_cx.group(1)) in EXACT_CYCLIC_BARYCENTRICS
+                ):
+                    c_rec = reg.get(int(m_cx.group(1)))
+                    c_sym["trilinear_latex"] = c_rec.trilinear_latex()
+                    c_sym["trilinear_pretty"] = c_rec.trilinear_pretty()
+                    c_sym["barycentric_latex"] = c_rec.bary_latex()
+                    c_sym["barycentric_pretty"] = c_rec.bary_pretty()
+                alias_el: dict[str, Any] = {
+                    "ID": c_id,
+                    "classes": list(c_alias.get("classes") or []),
+                    "guide": bool(c_alias.get("guide", False)),
+                    "parents": parents_ids,
+                    "type": "point",
+                    "x": base["x"],
+                    "y": base["y"],
+                    "coincident_with": data.ID,
+                }
+                if c_sym:
+                    alias_el["symbolic"] = c_sym
+                elements.append(alias_el)
+
+        elif isinstance(el, spg.Line):
+            for l_alias in getattr(data, "_etc_coincident_lines", None) or []:
+                l_id = l_alias.get("ID", "")
+                if not l_id or any(existing_el["ID"] == l_id for existing_el in elements):
+                    continue
+                alias_line: dict[str, Any] = {
+                    "ID": l_id,
+                    "classes": list(l_alias.get("classes") or []),
+                    "guide": bool(l_alias.get("guide", False)),
+                    "parents": parents_ids,
+                    "type": "line",
+                    "pt1": l_alias.get("pt1") or base["pt1"],
+                    "pt2": l_alias.get("pt2") or base["pt2"],
+                    "coincident_with": data.ID,
+                }
+                if sym:
+                    alias_line["symbolic"] = dict(sym)
+                elements.append(alias_line)
+
     return elements
 
 
@@ -2436,12 +2544,16 @@ def _format_svg_label(label: str) -> str:
     return html.escape(clean)
 
 
+_HIDDEN_HELPER_POINT_IDS = {"R_a", "R_b", "P_mc", "Ap_a", "Ap_b", "Ap_c"}
+
+
 def render_model_svg(
     model: Model,
     svg_width: int = 800,
     svg_height: int = 600,
     show_labels: bool = True,
     subtitle: str = "",
+    show_lines: bool = False,
 ) -> str:
     """Render a `geometor.model.Model` to an interactive Explorer-compatible SVG string."""
     elements = model_to_elements_list(model)
@@ -2471,7 +2583,8 @@ def render_model_svg(
     num_targets = sum(
         1
         for p in points_by_id.values()
-        if "target" in p["classes"] or "selected" in p["classes"]
+        if ("target" in p["classes"] or "selected" in p["classes"])
+        and not p.get("coincident_with")
     )
     is_collection_model = num_targets > 1
     tight_targets = [
@@ -2485,13 +2598,19 @@ def render_model_svg(
 
     for p in points_by_id.values():
         if "incident" in p["classes"]:
+            if show_lines and abs(p["x"] - tri_cx) <= 2.4 * tri_span and abs(p["y"] - tri_cy) <= 2.4 * tri_span:
+                min_x = min(min_x, p["x"])
+                max_x = max(max_x, p["x"])
+                min_y = min(min_y, p["y"])
+                max_y = max(max_y, p["y"])
             continue
         if p["guide"]:
+            guide_lim = (7.5 if p["ID"].startswith("Pd_") else 3.0) * tri_span
             if (
                 not is_collection_model
-                and p["ID"] not in {"R_a", "R_b"}
-                and abs(p["x"] - tri_cx) <= 3.0 * tri_span
-                and abs(p["y"] - tri_cy) <= 3.0 * tri_span
+                and p["ID"] not in _HIDDEN_HELPER_POINT_IDS
+                and abs(p["x"] - tri_cx) <= guide_lim
+                and abs(p["y"] - tri_cy) <= guide_lim
             ):
                 min_x = min(min_x, p["x"])
                 max_x = max(max_x, p["x"])
@@ -2508,7 +2627,10 @@ def render_model_svg(
                 min_y = min(min_y, p["y"])
                 max_y = max(max_y, p["y"])
             continue
-        bound_lim = (2.4 if is_collection_model else 4.5) * tri_span
+        is_single_target = not is_collection_model and (
+            "target" in p["classes"] or "selected" in p["classes"]
+        )
+        bound_lim = (2.4 if is_collection_model else (10.0 if is_single_target else 4.5)) * tri_span
         if abs(p["x"] - tri_cx) <= bound_lim and abs(p["y"] - tri_cy) <= bound_lim:
             min_x = min(min_x, p["x"])
             max_x = max(max_x, p["x"])
@@ -2517,12 +2639,13 @@ def render_model_svg(
 
     for poly in elements:
         if poly["type"] == "polygon" and "incident" not in poly["classes"]:
+            poly_lim = (7.5 if poly["ID"] == "< Pd_a Pd_b Pd_c >" else 3.2) * tri_span
             for pid in poly["points"]:
                 pt = points_by_id.get(pid)
                 if (
                     pt
-                    and abs(pt["x"] - tri_cx) <= 3.2 * tri_span
-                    and abs(pt["y"] - tri_cy) <= 3.2 * tri_span
+                    and abs(pt["x"] - tri_cx) <= poly_lim
+                    and abs(pt["y"] - tri_cy) <= poly_lim
                 ):
                     min_x = min(min_x, pt["x"])
                     max_x = max(max_x, pt["x"])
@@ -2530,7 +2653,12 @@ def render_model_svg(
                     max_y = max(max_y, pt["y"])
 
     for c in elements:
-        if c["type"] == "circle" and not c["guide"] and "incident" not in c["classes"]:
+        if (
+            c["type"] == "circle"
+            and not c["guide"]
+            and "incident" not in c["classes"]
+            and "apollonian_circle" not in c["classes"]
+        ):
             ctr = points_by_id.get(c["center"])
             r = c["radius"]
             if ctr and r <= (1.6 if is_collection_model else 3.5) * tri_span:
@@ -2583,6 +2711,10 @@ def render_model_svg(
     labels_nodes: list[str] = []
     placed_label_px: list[tuple[float, float]] = []
     placed_target_labels = 0
+    for v_id, (vx_off, vy_off) in [("A", (-24.0, 22.5)), ("B", (12.0, 22.5)), ("C", (-7.5, -15.0))]:
+        vp = points_by_id.get(v_id)
+        if vp:
+            placed_label_px.append((vp["x"] / units_per_px + vx_off, -vp["y"] / units_per_px + vy_off))
     if not is_collection_model:
         for p in points_by_id.values():
             if "target" in p["classes"] or "selected" in p["classes"]:
@@ -2747,7 +2879,7 @@ def render_model_svg(
                 f"<title>{el_id} = {el_name} {title_coords}</title></circle>"
             )
 
-            if show_labels and raw_id not in {"R_a", "R_b"}:
+            if show_labels and raw_id not in _HIDDEN_HELPER_POINT_IDS:
                 if el["guide"]:
                     lbl_cls = "guide-label guide"
                 elif is_target:
@@ -2768,11 +2900,11 @@ def render_model_svg(
                 elif raw_id == "C":
                     ox_px, oy_px = -7.5, -15.0
                 elif el["guide"]:
-                    if raw_id.endswith(("_a", "_A")) or raw_id == "A'":
+                    if raw_id.endswith(("_a", "_A")) or raw_id in {"A'", "A''"}:
                         ox_px, oy_px = 10.0, -7.0
-                    elif raw_id.endswith(("_b", "_B")) or raw_id == "B'":
+                    elif raw_id.endswith(("_b", "_B")) or raw_id in {"B'", "B''"}:
                         ox_px, oy_px = -30.0, -7.0
-                    elif raw_id.endswith(("_c", "_C")) or raw_id == "C'":
+                    elif raw_id.endswith(("_c", "_C")) or raw_id in {"C'", "C''"}:
                         ox_px, oy_px = -8.0, 19.0
                     else:
                         ox_px, oy_px = 9.0, -8.5
@@ -2826,7 +2958,7 @@ def render_model_svg(
                         lbl_cls += " dense-label"
                     else:
                         placed_label_px.append((lbl_x_px, lbl_y_px))
-                else:
+                elif raw_id not in {"A", "B", "C"}:
                     placed_label_px.append((lbl_x_px, lbl_y_px))
 
                 cur_font = guide_font_size if el["guide"] else font_size
@@ -2856,16 +2988,20 @@ def render_model_svg(
     )
 
     tri_obj: SymbolicTriangle | None = getattr(model, "_etc_triangle", None)
-    tri_key_attr = (
-        f'data-triangle="{html.escape(tri_obj.key, quote=True)}" '
-        if isinstance(tri_obj, SymbolicTriangle)
-        else ""
-    )
+    tri_key_attr = ""
+    if isinstance(tri_obj, SymbolicTriangle):
+        model_coord_exprs = [pt.x for pt in model.points] + [pt.y for pt in model.points]
+        field_pretty = tri_obj.coordinate_field_pretty(model_coord_exprs)
+        tri_key_attr = (
+            f'data-triangle="{html.escape(tri_obj.key, quote=True)}" '
+            f'data-field="{html.escape(field_pretty, quote=True)}" '
+        )
 
+    svg_cls = "geometor-etc-drawing show-lines" if show_lines else "geometor-etc-drawing"
     svg_lines = [
         '<?xml version="1.0" encoding="UTF-8" standalone="no"?>',
         (
-            f'<svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" '
+            f'<svg class="{svg_cls}" xmlns="http://www.w3.org/2000/svg" '
             f'viewBox="{vb_str}" data-initial-viewbox="{vb_str}" '
             f'{tri_key_attr}data-tri-span="{tri_span:.6f}" '
             f'data-target-r-px="{target_r_px}" '
@@ -2904,11 +3040,12 @@ def write_center_svg(
     model: Model,
     output_path: str | Path,
     subtitle: str = "",
+    show_lines: bool = False,
 ) -> Path:
     """Render and write a center's `Model` SVG to `output_path`."""
     path = Path(output_path)
     path.parent.mkdir(parents=True, exist_ok=True)
-    svg_content = render_model_svg(model, subtitle=subtitle)
+    svg_content = render_model_svg(model, subtitle=subtitle, show_lines=show_lines)
     path.write_text(svg_content, encoding="utf-8")
     return path
 

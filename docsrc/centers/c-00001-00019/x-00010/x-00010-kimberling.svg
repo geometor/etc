@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.110000 -0.657500 1.220000 0.915000" data-initial-viewbox="-0.110000 -0.657500 1.220000 0.915000" data-target-r-px="10.5" preserveAspectRatio="xMidYMid meet">
+<svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-1.430000 -8.222500 15.860000 11.895000" data-initial-viewbox="-1.430000 -8.222500 15.860000 11.895000" data-triangle="kimberling" data-field="ℚ(√35)" data-tri-span="13.000000" data-target-r-px="10.5" preserveAspectRatio="xMidYMid meet">
   <style>
 :root {
     --background-color: #121212;
@@ -73,29 +73,52 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
     stroke-width: 3.5 !important;
 }
 
-#elements line {
+#elements line,
+#elements path.line {
     fill: none;
-    stroke: #777;
-    stroke-width: 1.5;
+    stroke: #b0bec5;
+    stroke-width: 2.2;
+    stroke-dasharray: 2, 4.5;
+    stroke-linecap: round;
     vector-effect: non-scaling-stroke;
     cursor: pointer;
 }
 
-#elements line.sideline {
-    stroke: #999;
-    stroke-width: 2;
+#elements line.sideline,
+#elements path.line.sideline {
+    stroke: #cbd5e1;
+    stroke-width: 2.3;
 }
 
-#elements line.central_line {
+#elements line.central_line,
+#elements path.line.central_line {
     stroke: #0bd;
-    stroke-width: 1.75;
+    stroke-width: 1.85;
     stroke-opacity: 0.85;
 }
 
+#elements line.central_line[data-color-token="orange"] { stroke: #fb923c; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="teal"] { stroke: #2dd4bf; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="blue"] { stroke: #38bdf8; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="orchid"] { stroke: #e879f9; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="pink"] { stroke: #f472b6; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="lime"] { stroke: #a3e635; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="green"] { stroke: #5ec27e; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="purple"] { stroke: #a855f7; stroke-dasharray: 6, 3; }
+
 #elements line.golden,
-#elements line.euler {
+#elements path.line.golden,
+#elements line.euler,
+#elements path.line.euler {
     stroke: gold;
-    stroke-width: 2;
+    stroke-width: 2.1;
+}
+
+#elements line.strut {
+    stroke: gold;
+    stroke-width: 2.8;
+    stroke-dasharray: none;
+    stroke-opacity: 0.95;
 }
 
 #elements circle {
@@ -122,7 +145,7 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
 }
 
 #elements .bisector {
-    stroke-dasharray: 8, 4, 2, 4;
+    stroke-dasharray: 2, 4;
 }
 
 #elements .guide {
@@ -133,10 +156,13 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
 
 #elements line:hover,
 #elements line.hover,
+#elements path.line:hover,
+#elements path.line.hover,
 #elements circle:hover,
 #elements circle.hover {
     stroke: var(--select-color) !important;
     stroke-width: 3.2 !important;
+    stroke-dasharray: none !important;
     stroke-opacity: 1 !important;
 }
 
@@ -152,10 +178,11 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
 }
 
 #graphics polyline {
-    stroke: #36c9;
+    stroke: #ffd54f;
     fill: none;
-    stroke-width: 6;
+    stroke-width: 3.2;
     vector-effect: non-scaling-stroke;
+    cursor: pointer;
 }
 
 #graphics polygon {
@@ -167,6 +194,7 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
     marker-start: url(#marker);
     marker-mid: url(#marker);
     marker-end: url(#marker);
+    cursor: pointer;
 }
 
 #graphics polygon.secondary {
@@ -175,12 +203,54 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
     stroke-width: 3;
 }
 
+#graphics polygon.subarea-a {
+    stroke: rgba(255, 112, 67, 0.72);
+    fill: rgba(255, 112, 67, 0.20);
+    stroke-width: 2.4;
+    marker-start: none;
+    marker-mid: none;
+    marker-end: none;
+}
+
+#graphics polygon.subarea-b {
+    stroke: rgba(102, 187, 106, 0.72);
+    fill: rgba(102, 187, 106, 0.20);
+    stroke-width: 2.4;
+    marker-start: none;
+    marker-mid: none;
+    marker-end: none;
+}
+
+#graphics polygon.subarea-c {
+    stroke: rgba(66, 165, 245, 0.72);
+    fill: rgba(66, 165, 245, 0.20);
+    stroke-width: 2.4;
+    marker-start: none;
+    marker-mid: none;
+    marker-end: none;
+}
+
 #graphics polygon:hover,
 #graphics polygon.hover,
 #graphics polyline:hover,
 #graphics polyline.hover {
     stroke: var(--select-color) !important;
     stroke-opacity: 1 !important;
+}
+
+#graphics polygon.subarea-a:hover,
+#graphics polygon.subarea-a.hover {
+    fill: rgba(255, 112, 67, 0.38) !important;
+}
+
+#graphics polygon.subarea-b:hover,
+#graphics polygon.subarea-b.hover {
+    fill: rgba(102, 187, 106, 0.38) !important;
+}
+
+#graphics polygon.subarea-c:hover,
+#graphics polygon.subarea-c.hover {
+    fill: rgba(66, 165, 245, 0.38) !important;
 }
 
 #labels text {
@@ -265,13 +335,144 @@ figure:hover .etc-svg-toolbar {
     user-select: none;
 }
 
-.etc-svg-btn:hover {
-    background: #0ff;
-    color: #121212;
+.etc-svg-btn:hover,
+.etc-svg-btn.active {
+    background: rgba(0, 255, 255, 0.14);
+    color: #0ff;
     border-color: #0ff;
 }
 
-.etc-graphics-panel {
+.etc-symbolic-hud {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    max-width: min(460px, calc(100% - 20px));
+    background: rgba(14, 16, 22, 0.93);
+    border: 1px solid rgba(0, 255, 255, 0.35);
+    border-radius: 6px;
+    padding: 8px 12px;
+    color: #eaeaea;
+    font-family: "Fira Sans Condensed", system-ui, -apple-system, sans-serif;
+    font-size: 13px;
+    line-height: 1.38;
+    z-index: 24;
+    pointer-events: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.58);
+    opacity: 0;
+    transform: translateY(4px);
+    transition: opacity 0.12s ease, transform 0.12s ease;
+}
+
+.etc-symbolic-hud.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.etc-hud-head {
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 4px;
+    margin-bottom: 5px;
+}
+
+.etc-hud-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.etc-hud-id {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-weight: 700;
+    color: #0ff;
+    font-size: 13px;
+}
+
+.etc-hud-title {
+    font-weight: 600;
+    color: #f5f5f5;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.etc-hud-kind {
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #94a3b8;
+}
+
+.etc-hud-rows {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2px 10px;
+    align-items: baseline;
+}
+
+.etc-hud-key {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 11.5px;
+    color: #94a3b8;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.etc-hud-val {
+    color: #f8fafc;
+    font-size: 13.5px;
+    overflow-wrap: anywhere;
+}
+
+.etc-hud-val .katex {
+    font-size: 1.02em;
+}
+
+.etc-hud-approx {
+    margin-top: 4px;
+    padding-top: 3px;
+    border-top: 1px dashed rgba(255, 255, 255, 0.09);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 11px;
+    color: #8b9bb4;
+}
+
+.etc-math-fallback {
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: 1.06em;
+}
+
+.etc-math-frac {
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0 2px;
+    font-size: 0.88em;
+    line-height: 1.05;
+}
+
+.etc-math-num {
+    border-bottom: 1px solid rgba(248, 250, 252, 0.65);
+    padding: 0 2px 1px;
+}
+
+.etc-math-den {
+    padding: 1px 2px 0;
+}
+
+.etc-math-rad {
+    border-top: 1px solid rgba(248, 250, 252, 0.6);
+    padding: 0 2px;
+}
+
+.etc-graphics-panel,
+.etc-act-plate {
     width: 100%;
     background: #141414;
     border: 1px solid #333;
@@ -279,9 +480,48 @@ figure:hover .etc-svg-toolbar {
     overflow: hidden;
 }
 
-.etc-graphics-panel svg.geometor-etc-drawing {
+.etc-graphics-panel svg.geometor-etc-drawing,
+.etc-act-plate svg.geometor-etc-drawing {
     border: none;
     border-radius: 0;
+    display: block;
+}
+
+svg.geometor-etc-drawing .etc-plate-poly {
+    cursor: pointer;
+    transition: fill-opacity 0.14s ease, stroke 0.14s ease;
+}
+
+svg.geometor-etc-drawing .etc-plate-poly.hover {
+    stroke: var(--select-color) !important;
+    stroke-width: 2.8px !important;
+    fill-opacity: 0.44 !important;
+}
+
+svg.geometor-etc-drawing .etc-plate-strut,
+svg.geometor-etc-drawing .etc-plate-line,
+svg.geometor-etc-drawing .etc-plate-circle,
+svg.geometor-etc-drawing .etc-plate-pt,
+svg.geometor-etc-drawing .etc-plate-panel {
+    cursor: pointer;
+}
+
+svg.geometor-etc-drawing .etc-plate-strut.hover,
+svg.geometor-etc-drawing .etc-plate-line.hover,
+svg.geometor-etc-drawing .etc-plate-circle.hover {
+    stroke: var(--select-color) !important;
+    filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.72));
+}
+
+svg.geometor-etc-drawing .etc-plate-pt.hover {
+    stroke: var(--select-color) !important;
+    stroke-width: 3.6px !important;
+    filter: drop-shadow(0 0 6px rgba(0, 255, 255, 0.85));
+}
+
+svg.geometor-etc-drawing .etc-plate-panel.hover > rect.etc-panel-border {
+    stroke: var(--select-color) !important;
+    stroke-width: 2.8px !important;
 }
 
 .etc-triangle-tabs {
@@ -329,58 +569,77 @@ figure:hover .etc-svg-toolbar {
     </marker>
   </defs>
   <g id="graphics">
-    <polygon data-id="&lt; A B C &gt;" data-name="Reference Triangle △ABC" class="polygon reference" data-category="graphics" points="0.000000,-0.000000 1.000000,-0.000000 0.633136,-0.280051"><title>&lt; A B C &gt;: Reference Triangle △ABC</title></polygon>
-    <polygon data-id="&lt; M_a M_b M_c &gt;" data-name="Medial Triangle △M_a M_b M_c" class="polygon secondary" data-category="graphics" points="0.816568,-0.140026 0.316568,-0.140026 0.500000,-0.000000"><title>&lt; M_a M_b M_c &gt;: Medial Triangle △M_a M_b M_c</title></polygon>
+    <polygon id="&lt; A B C &gt;" data-id="&lt; A B C &gt;" data-ref="&lt; A B C &gt;" data-name="Reference Triangle △ABC" data-area="4·√35" class="polygon reference" data-category="graphics" points="0.000000,-0.000000 13.000000,-0.000000 8.230769,-3.640664"><title>&lt; A B C &gt;: Reference Triangle △ABC (Δ = 4·√35)</title></polygon>
+    <polygon id="&lt; M_a M_b M_c &gt;" data-id="&lt; M_a M_b M_c &gt;" data-ref="&lt; M_a M_b M_c &gt;" data-name="Medial Triangle △M_a M_b M_c" data-area="√35" class="polygon secondary" data-category="graphics" points="10.615385,-1.820332 4.115385,-1.820332 6.500000,-0.000000"><title>&lt; M_a M_b M_c &gt;: Medial Triangle △M_a M_b M_c (Δ = √35)</title></polygon>
   </g>
   <g id="highlights">
-    <polyline data-highlight-for="[ A B ]" class="highlight-segment" points="0.000000,-0.000000 1.000000,-0.000000" style="display: none;" />
-    <polyline data-highlight-for="[ B C ]" class="highlight-segment" points="1.000000,-0.000000 0.633136,-0.280051" style="display: none;" />
-    <polyline data-highlight-for="[ C A ]" class="highlight-segment" points="0.633136,-0.280051 0.000000,-0.000000" style="display: none;" />
-    <polyline data-highlight-for="[ M_a X_10 ]" class="highlight-segment" points="0.816568,-0.140026 0.508876,-0.075014" style="display: none;" />
-    <polyline data-highlight-for="[ M_b X_10 ]" class="highlight-segment" points="0.316568,-0.140026 0.508876,-0.075014" style="display: none;" />
-    <polyline data-highlight-for="[ M_c X_10 ]" class="highlight-segment" points="0.500000,-0.000000 0.508876,-0.075014" style="display: none;" />
-    <polyline data-highlight-for="{ 1, 2 }" class="highlight-segment" points="0.615385,-0.130024 0.544379,-0.093350" style="display: none;" />
-    <polyline data-highlight-for="{ 4, 9 }" class="highlight-segment" points="0.633136,-0.829401 0.502177,-0.034346" style="display: none;" />
+    <polyline id="hl-[ A B ]" data-highlight-for="[ A B ]" class="highlight-segment" points="0.000000,-0.000000 13.000000,-0.000000" style="display: none;" />
+    <polyline id="hl-[ B C ]" data-highlight-for="[ B C ]" class="highlight-segment" points="13.000000,-0.000000 8.230769,-3.640664" style="display: none;" />
+    <polyline id="hl-[ C A ]" data-highlight-for="[ C A ]" class="highlight-segment" points="8.230769,-3.640664 0.000000,-0.000000" style="display: none;" />
+    <polyline id="hl-[ M_a X_10 ]" data-highlight-for="[ M_a X_10 ]" class="highlight-segment" points="10.615385,-1.820332 6.615385,-0.975178" style="display: none;" />
+    <polyline id="hl-[ M_b X_10 ]" data-highlight-for="[ M_b X_10 ]" class="highlight-segment" points="4.115385,-1.820332 6.615385,-0.975178" style="display: none;" />
+    <polyline id="hl-[ M_c X_10 ]" data-highlight-for="[ M_c X_10 ]" class="highlight-segment" points="6.500000,-0.000000 6.615385,-0.975178" style="display: none;" />
+    <polyline id="hl-spieker_circle" data-highlight-for="spieker_circle" class="highlight-segment" points="6.615385,-0.975178 6.615385,-1.820332" style="display: none;" />
+    <polyline id="hl-{ 1, 2 }" data-highlight-for="{ 1, 2 }" class="highlight-segment" points="8.000000,-1.690309 7.076923,-1.213555" style="display: none;" />
+    <polyline id="hl-{ 4, 9 }" data-highlight-for="{ 4, 9 }" class="highlight-segment" points="8.230769,-10.782218 6.528302,-0.446497" style="display: none;" />
+    <polyline id="hl-{ 12, 65 }" data-highlight-for="{ 12, 65 }" class="highlight-segment" points="7.801295,-2.290046 8.341880,-2.889416" style="display: none;" />
+    <polyline id="hl-{ 21, 35 }" data-highlight-for="{ 21, 35 }" class="highlight-segment" points="7.000824,-0.582481 7.530333,-0.043002" style="display: none;" />
   </g>
   <g id="elements">
-    <line data-id="[ A B ]" data-name="Sideline AB (Base c = 1)" class="line given sideline" data-category="elements" x1="-1000.00000" y1="-0.00000" x2="1000.00000" y2="-0.00000"><title>[ A B ]: Sideline AB (Base c = 1)</title></line>
-    <line data-id="[ B C ]" data-name="Sideline BC (Side a)" class="line sideline" data-category="elements" x1="367.86391" y1="280.05111" x2="-365.86391" y2="-280.05111"><title>[ B C ]: Sideline BC (Side a)</title></line>
-    <line data-id="[ C A ]" data-name="Sideline CA (Side b)" class="line sideline" data-category="elements" x1="633.76923" y1="-280.33116" x2="-632.50295" y2="279.77106"><title>[ C A ]: Sideline CA (Side b)</title></line>
-    <line data-id="[ M_a X_10 ]" data-name="Line [ M_a X_10 ]" class="line bisector" data-category="elements" x1="308.50888" y1="-65.15190" x2="-306.87574" y2="64.87184"><title>[ M_a X_10 ]: Line [ M_a X_10 ]</title></line>
-    <line data-id="[ M_b X_10 ]" data-name="Line [ M_b X_10 ]" class="line bisector" data-category="elements" x1="-191.99112" y1="-65.15190" x2="192.62426" y2="64.87184"><title>[ M_b X_10 ]: Line [ M_b X_10 ]</title></line>
-    <line data-id="[ M_c X_10 ]" data-name="Line [ M_c X_10 ]" class="line bisector" data-category="elements" x1="-8.37574" y1="75.01369" x2="9.37574" y2="-75.01369"><title>[ M_c X_10 ]: Line [ M_c X_10 ]</title></line>
-    <circle data-id="spieker_circle" data-name="Spieker Circle" class="circle incircle" data-category="elements" cx="0.508876" cy="-0.075014" r="0.065012" fill="none"><title>spieker_circle: Spieker Circle</title></circle>
-    <line data-id="{ 1, 2 }" data-name="Nagel Line" class="line central_line incident" data-category="elements" x1="71.62130" y1="-36.80338" x2="-70.39054" y2="36.54334"><title>{ 1, 2 }: Nagel Line</title></line>
-    <line data-id="{ 4, 9 }" data-name="Orthocenter–Spieker Line" class="line central_line incident" data-category="elements" x1="131.59216" y1="-795.88489" x2="-130.32588" y2="794.22609"><title>{ 4, 9 }: Orthocenter–Spieker Line</title></line>
+    <line id="[ A B ]" data-id="[ A B ]" data-ref="[ A B ]" data-name="Sideline AB (Side c)" data-eq="y = 0" data-spread="0" data-pt1="A" data-pt2="B" class="line given sideline" data-category="elements" x1="-13000.00000" y1="-0.00000" x2="13000.00000" y2="-0.00000"><title>[ A B ]: Sideline AB (Side c)</title></line>
+    <line id="[ B C ]" data-id="[ B C ]" data-ref="[ B C ]" data-name="Sideline BC (Side a)" data-eq="4·√35x + 31y - 52·√35 = 0" data-spread="560/1521" data-pt1="B" data-pt2="C" class="line sideline" data-category="elements" x1="10346.33333" y1="7888.10638" x2="-10320.33333" y2="-7888.10638"><title>[ B C ]: Sideline BC (Side a)</title></line>
+    <line id="[ C A ]" data-id="[ C A ]" data-ref="[ C A ]" data-name="Sideline CA (Side b)" data-eq="8·√35x - 107y = 0" data-spread="2240/13689" data-pt1="C" data-pt2="A" class="line sideline" data-category="elements" x1="11897.11966" y1="-5262.37825" x2="-11880.65812" y2="5255.09692"><title>[ C A ]: Sideline CA (Side b)</title></line>
+    <line id="[ M_a X_10 ]" data-id="[ M_a X_10 ]" data-ref="[ M_a X_10 ]" data-name="Medial Angle Bisector at M_a" data-color-token="gold" data-color="#e8b85a" data-eq="√35x - 28y - 2·√35 = 0" data-spread="5/117" data-pt1="M_a" data-pt2="X_10" class="line bisector" data-category="elements" x1="12729.80474" y1="-2689.23958" x2="-12708.57397" y2="2685.59892"><title>[ M_a X_10 ]: Medial Angle Bisector at M_a</title></line>
+    <line id="[ M_b X_10 ]" data-id="[ M_b X_10 ]" data-ref="[ M_b X_10 ]" data-name="Medial Angle Bisector at M_b" data-color-token="gold" data-color="#e8b85a" data-eq="2·√35x + 35y - 19·√35 = 0" data-spread="4/39" data-pt1="M_b" data-pt2="X_10" class="line bisector" data-category="elements" x1="-12311.18675" y1="-4165.15233" x2="12319.41752" y2="4161.51167"><title>[ M_b X_10 ]: Medial Angle Bisector at M_b</title></line>
+    <line id="[ M_c X_10 ]" data-id="[ M_c X_10 ]" data-ref="[ M_c X_10 ]" data-name="Medial Angle Bisector at M_c" data-color-token="gold" data-color="#e8b85a" data-eq="10·√35x - 7y - 65·√35 = 0" data-spread="500/507" data-pt1="M_c" data-pt2="X_10" class="line bisector" data-category="elements" x1="-1521.02523" y1="12909.94449" x2="1534.02523" y2="-12909.94449"><title>[ M_c X_10 ]: Medial Angle Bisector at M_c</title></line>
+    <circle id="spieker_circle" data-id="spieker_circle" data-ref="spieker_circle" data-name="Spieker Circle" data-color-token="orange" data-color="#fb923c" data-quadrance="5/7" class="circle incircle" data-category="elements" cx="6.615385" cy="-0.975178" r="0.845154" fill="none"><title>spieker_circle: Spieker Circle</title></circle>
+    <line id="{ 1, 2 }" data-id="{ 1, 2 }" data-ref="{ 1, 2 }" data-name="Nagel Line" data-color-token="orange" data-color="#fb923c" data-eq="11·√35x - 126y - 52·√35 = 0" data-spread="605/2873" data-pt1="X_1" data-pt2="X_2" class="line central_line incident" data-category="elements" x1="11558.40106" y1="-5967.27790" x2="-11542.40106" y2="5963.89728"><title>{ 1, 2 }: Nagel Line</title></line>
+    <line id="{ 4, 9 }" data-id="{ 4, 9 }" data-ref="{ 4, 9 }" data-name="Orthocenter–Spieker Line" data-color-token="blue" data-color="#38bdf8" data-eq="431·√35x - 420y - 2782·√35 = 0" data-spread="185761/190801" data-pt1="X_4" data-pt2="X_9" class="line central_line incident" data-category="elements" x1="2121.07898" y1="-12837.93593" x2="-2104.61744" y2="12816.37150"><title>{ 4, 9 }: Orthocenter–Spieker Line</title></line>
+    <line id="{ 12, 65 }" data-id="{ 12, 65 }" data-ref="{ 12, 65 }" data-name="Central Line L(12, 65)" data-color-token="teal" data-color="#2dd4bf" data-eq="265·√35x - 1414y - 1520·√35 = 0" data-spread="351125/636753" data-pt1="X_12" data-pt2="X_65" class="line central_line incident" data-category="elements" x1="-8698.99216" y1="9651.29726" x2="8714.59474" y2="-9655.87735"><title>{ 12, 65 }: Central Line L(12, 65)</title></line>
+    <line id="{ 21, 35 }" data-id="{ 21, 35 }" data-ref="{ 21, 35 }" data-name="Central Line L(21, 35)" data-color-token="green" data-color="#4ade80" data-eq="7327·√35x + 42546y - 55484·√35 = 0" data-spread="268424645/527019233" data-pt1="X_21" data-pt2="X_35" class="line central_line incident" data-category="elements" x1="-9099.25477" y1="-9278.30360" x2="9113.25642" y2="9277.13864"><title>{ 21, 35 }: Central Line L(21, 35)</title></line>
   </g>
   <g id="points">
-    <circle data-id="A" data-name="Vertex A" class="point given vertex" data-category="points" cx="0.000000" cy="-0.000000" r="0.011437"><title>A = Vertex A (0.0000, 0.0000)</title></circle>
-    <circle data-id="B" data-name="Vertex B" class="point given vertex" data-category="points" cx="1.000000" cy="-0.000000" r="0.011437"><title>B = Vertex B (1.0000, 0.0000)</title></circle>
-    <circle data-id="C" data-name="Vertex C" class="point vertex" data-category="points" cx="0.633136" cy="-0.280051" r="0.011437"><title>C = Vertex C (0.6331, 0.2801)</title></circle>
-    <circle data-id="M_a" data-name="Midpoint M_a of BC" class="point midpoint guide" data-category="points" cx="0.816568" cy="-0.140026" r="0.007320"><title>M_a = Midpoint M_a of BC (0.8166, 0.1400)</title></circle>
-    <circle data-id="M_b" data-name="Midpoint M_b of CA" class="point midpoint guide" data-category="points" cx="0.316568" cy="-0.140026" r="0.007320"><title>M_b = Midpoint M_b of CA (0.3166, 0.1400)</title></circle>
-    <circle data-id="M_c" data-name="Midpoint M_c of AB" class="point midpoint guide" data-category="points" cx="0.500000" cy="-0.000000" r="0.007320"><title>M_c = Midpoint M_c of AB (0.5000, 0.0000)</title></circle>
-    <circle data-id="X_1" data-name="INCENTER" class="point center incident" data-category="points" cx="0.615385" cy="-0.130024" r="0.011437"><title>X_1 = INCENTER (0.6154, 0.1300)</title></circle>
-    <circle data-id="X_2" data-name="CENTROID" class="point center incident" data-category="points" cx="0.544379" cy="-0.093350" r="0.011437"><title>X_2 = CENTROID (0.5444, 0.0934)</title></circle>
-    <circle data-id="X_4" data-name="ORTHOCENTER" class="point center incident" data-category="points" cx="0.633136" cy="-0.829401" r="0.011437"><title>X_4 = ORTHOCENTER (0.6331, 0.8294)</title></circle>
-    <circle data-id="X_9" data-name="MITTENPUNKT" class="point center incident" data-category="points" cx="0.502177" cy="-0.034346" r="0.011437"><title>X_9 = MITTENPUNKT (0.5022, 0.0343)</title></circle>
-    <circle data-id="X_10" data-name="SPIEKER CENTER" class="point selected target" data-category="points" cx="0.508876" cy="-0.075014" r="0.016012"><title>X_10 = SPIEKER CENTER (0.5089, 0.0750)</title></circle>
+    <circle id="A" data-id="A" data-ref="A" data-name="Vertex A" data-coords="(0, 0)" data-trilinears="1 : 0 : 0" data-barycentrics="1 : 0 : 0" class="point given vertex" data-category="points" cx="0.000000" cy="-0.000000" r="0.148688"><title>A = Vertex A (0, 0)</title></circle>
+    <circle id="B" data-id="B" data-ref="B" data-name="Vertex B" data-coords="(13, 0)" data-trilinears="0 : 1 : 0" data-barycentrics="0 : 1 : 0" class="point given vertex" data-category="points" cx="13.000000" cy="-0.000000" r="0.148688"><title>B = Vertex B (13, 0)</title></circle>
+    <circle id="C" data-id="C" data-ref="C" data-name="Vertex C" data-coords="(107/13, 8·√35/13)" data-trilinears="0 : 0 : 1" data-barycentrics="0 : 0 : 1" class="point vertex" data-category="points" cx="8.230769" cy="-3.640664" r="0.148688"><title>C = Vertex C (107/13, 8·√35/13)</title></circle>
+    <circle id="M_a" data-id="M_a" data-ref="M_a" data-name="Midpoint M_a of BC" data-coords="(138/13, 4·√35/13)" data-trilinears="0 : 13 : 9" data-barycentrics="0 : 1 : 1" class="point midpoint guide" data-category="points" cx="10.615385" cy="-1.820332" r="0.095160"><title>M_a = Midpoint M_a of BC (138/13, 4·√35/13)</title></circle>
+    <circle id="M_b" data-id="M_b" data-ref="M_b" data-name="Midpoint M_b of CA" data-coords="(107/26, 4·√35/13)" data-trilinears="13 : 0 : 6" data-barycentrics="1 : 0 : 1" class="point midpoint guide" data-category="points" cx="4.115385" cy="-1.820332" r="0.095160"><title>M_b = Midpoint M_b of CA (107/26, 4·√35/13)</title></circle>
+    <circle id="M_c" data-id="M_c" data-ref="M_c" data-name="Midpoint M_c of AB" data-coords="(13/2, 0)" data-trilinears="3 : 2 : 0" data-barycentrics="1 : 1 : 0" class="point midpoint guide" data-category="points" cx="6.500000" cy="-0.000000" r="0.095160"><title>M_c = Midpoint M_c of AB (13/2, 0)</title></circle>
+    <circle id="T_sp" data-id="T_sp" data-ref="T_sp" data-name="Spieker Touchpoint T_sp" data-coords="(86/13, 4·√35/13)" data-trilinears="12 : 5 : 9" data-barycentrics="8 : 5 : 13" class="point foot guide" data-category="points" cx="6.615385" cy="-1.820332" r="0.095160"><title>T_sp = Spieker Touchpoint T_sp (86/13, 4·√35/13)</title></circle>
+    <circle id="X_1" data-id="X_1" data-ref="X_1" data-name="INCENTER" data-coords="(8, 2·√35/7)" data-trilinears="1 : 1 : 1" data-barycentrics="6 : 9 : 13" class="point center incident" data-category="points" cx="8.000000" cy="-1.690309" r="0.148688"><title>X_1 = INCENTER (8, 2·√35/7)</title></circle>
+    <circle id="X_2" data-id="X_2" data-ref="X_2" data-name="CENTROID" data-coords="(92/13, 8·√35/39)" data-trilinears="39 : 26 : 18" data-barycentrics="1 : 1 : 1" class="point center incident" data-category="points" cx="7.076923" cy="-1.213555" r="0.148688"><title>X_2 = CENTROID (92/13, 8·√35/39)</title></circle>
+    <circle id="X_8" data-id="X_8" data-ref="X_8" data-name="NAGEL POINT" data-coords="(68/13, 4·√35/91)" data-trilinears="156 : 65 : 9" data-barycentrics="8 : 5 : 1" class="point center incident" data-category="points" cx="5.230769" cy="-0.260047" r="0.148688"><title>X_8 = NAGEL POINT (68/13, 4·√35/91)</title></circle>
+    <circle id="X_4" data-id="X_4" data-ref="X_4" data-name="ORTHOCENTER" data-coords="(107/13, 3317·√35/1820)" data-trilinears="15717 : 18083 : -29853" data-barycentrics="-806 : -1391 : 3317" class="point center incident" data-category="points" cx="8.230769" cy="-10.782218" r="0.148688"><title>X_4 = ORTHOCENTER (107/13, 3317·√35/1820)</title></circle>
+    <circle id="X_9" data-id="X_9" data-ref="X_9" data-name="MITTENPUNKT" data-coords="(346/53, 4·√35/53)" data-trilinears="8 : 5 : 1" data-barycentrics="48 : 45 : 13" class="point center incident" data-category="points" cx="6.528302" cy="-0.446497" r="0.148688"><title>X_9 = MITTENPUNKT (346/53, 4·√35/53)</title></circle>
+    <circle id="X_19" data-id="X_19" data-ref="X_19" data-name="CLAWSON POINT" data-coords="(96086/12883, 13268·√35/12883)" data-trilinears="-806 : -1391 : 3317" data-barycentrics="-372 : -963 : 3317" class="point center incident" data-category="points" cx="7.458356" cy="-6.092878" r="0.148688"><title>X_19 = CLAWSON POINT (96086/12883, 13268·√35/12883)</title></circle>
+    <circle id="X_12" data-id="X_12" data-ref="X_12" data-name="{X(1),X(5)}-HARMONIC CONJUGATE OF X(11)" data-coords="(51824/6643, 18000·√35/46501)" data-trilinears="23595 : 18772 : 40500" data-barycentrics="605 : 722 : 2250" class="point center incident" data-category="points" cx="7.801295" cy="-2.290046" r="0.148688"><title>X_12 = {X(1),X(5)}-HARMONIC CONJUGATE OF X(11) (51824/6643, 18000·√35/46501)</title></circle>
+    <circle id="X_65" data-id="X_65" data-ref="X_65" data-name="ORTHOCENTER OF THE INTOUCH TRIANGLE" data-coords="(976/117, 400·√35/819)" data-trilinears="55 : 76 : 300" data-barycentrics="55 : 114 : 650" class="point center incident" data-category="points" cx="8.341880" cy="-2.889416" r="0.148688"><title>X_65 = ORTHOCENTER OF THE INTOUCH TRIANGLE (976/117, 400·√35/819)</title></circle>
+    <circle id="X_21" data-id="X_21" data-ref="X_21" data-name="SCHIFFLER POINT" data-coords="(8492/1213, 836·√35/8491)" data-trilinears="1140 : 825 : 209" data-barycentrics="6840 : 7425 : 2717" class="point center incident" data-category="points" cx="7.000824" cy="-0.582481" r="0.148688"><title>X_21 = SCHIFFLER POINT (8492/1213, 836·√35/8491)</title></circle>
+    <circle id="X_35" data-id="X_35" data-ref="X_35" data-name="{X(1),X(3)}-HARMONIC CONJUGATE OF X(36)" data-coords="(3848/511, 26·√35/3577)" data-trilinears="993 : 909 : 13" data-barycentrics="5958 : 8181 : 169" class="point center incident" data-category="points" cx="7.530333" cy="-0.043002" r="0.148688"><title>X_35 = {X(1),X(3)}-HARMONIC CONJUGATE OF X(36) (3848/511, 26·√35/3577)</title></circle>
+    <circle id="X_10" data-id="X_10" data-ref="X_10" data-name="SPIEKER CENTER" data-coords="(86/13, 15·√35/91)" data-trilinears="429 : 247 : 135" data-barycentrics="22 : 19 : 15" class="point selected target" data-category="points" cx="6.615385" cy="-0.975178" r="0.208163"><title>X_10 = SPIEKER CENTER (86/13, 15·√35/91)</title></circle>
   </g>
   <g id="labels">
-    <text class="given-label" data-point-id="A" data-anchor-x="0.000000" data-anchor-y="-0.000000" data-offset-x="-24.0" data-offset-y="22.5" x="-0.036600" y="0.034312" font-size="0.030881">A</text>
-    <text class="given-label" data-point-id="B" data-anchor-x="1.000000" data-anchor-y="-0.000000" data-offset-x="12.0" data-offset-y="22.5" x="1.018300" y="0.034312" font-size="0.030881">B</text>
-    <text class="point-label" data-point-id="C" data-anchor-x="0.633136" data-anchor-y="-0.280051" data-offset-x="-7.5" data-offset-y="-15.0" x="0.621699" y="-0.302926" font-size="0.030881">C</text>
-    <text class="guide-label guide" data-point-id="M_a" data-anchor-x="0.816568" data-anchor-y="-0.140026" data-offset-x="10.0" data-offset-y="-7.0" x="0.831818" y="-0.150701" font-size="0.026687">M<tspan dy="0.3em" font-size="75%">a</tspan></text>
-    <text class="guide-label guide" data-point-id="M_b" data-anchor-x="0.316568" data-anchor-y="-0.140026" data-offset-x="-30.0" data-offset-y="-7.0" x="0.270818" y="-0.150701" font-size="0.026687">M<tspan dy="0.3em" font-size="75%">b</tspan></text>
-    <text class="guide-label guide" data-point-id="M_c" data-anchor-x="0.500000" data-anchor-y="-0.000000" data-offset-x="-8.0" data-offset-y="19.0" x="0.487800" y="0.028975" font-size="0.026687">M<tspan dy="0.3em" font-size="75%">c</tspan></text>
-    <text class="point-label incident" data-point-id="X_1" data-anchor-x="0.615385" data-anchor-y="-0.130024" data-offset-x="12.0" data-offset-y="-10.5" x="0.633685" y="-0.146036" font-size="0.030881">X<tspan dy="0.3em" font-size="75%">1</tspan></text>
-    <text class="point-label incident" data-point-id="X_2" data-anchor-x="0.544379" data-anchor-y="-0.093350" data-offset-x="12.0" data-offset-y="-10.5" x="0.562679" y="-0.109363" font-size="0.030881">X<tspan dy="0.3em" font-size="75%">2</tspan></text>
-    <text class="point-label incident" data-point-id="X_4" data-anchor-x="0.633136" data-anchor-y="-0.829401" data-offset-x="12.0" data-offset-y="-10.5" x="0.651436" y="-0.845414" font-size="0.030881">X<tspan dy="0.3em" font-size="75%">4</tspan></text>
-    <text class="point-label incident" data-point-id="X_9" data-anchor-x="0.502177" data-anchor-y="-0.034346" data-offset-x="12.0" data-offset-y="-10.5" x="0.520477" y="-0.050358" font-size="0.030881">X<tspan dy="0.3em" font-size="75%">9</tspan></text>
-    <text class="target-label" data-point-id="X_10" data-anchor-x="0.508876" data-anchor-y="-0.075014" data-offset-x="12.0" data-offset-y="-10.5" x="0.527176" y="-0.091026" font-size="0.030881">X<tspan dy="0.3em" font-size="75%">10</tspan></text>
-    <text class="subtitle-label" x="-0.079500" y="0.230050" font-size="0.026306" fill="#999">(a, b, c) = (6, 9, 13) | AB = 1</text>
+    <text id="lbl-A" class="given-label" data-point-id="A" data-anchor-x="0.000000" data-anchor-y="-0.000000" data-offset-x="-24.0" data-offset-y="22.5" x="-0.475800" y="0.446062" font-size="0.401456">A</text>
+    <text id="lbl-B" class="given-label" data-point-id="B" data-anchor-x="13.000000" data-anchor-y="-0.000000" data-offset-x="12.0" data-offset-y="22.5" x="13.237900" y="0.446062" font-size="0.401456">B</text>
+    <text id="lbl-C" class="point-label" data-point-id="C" data-anchor-x="8.230769" data-anchor-y="-3.640664" data-offset-x="-7.5" data-offset-y="-15.0" x="8.082082" y="-3.938039" font-size="0.401456">C</text>
+    <text id="lbl-M_a" class="guide-label guide" data-point-id="M_a" data-anchor-x="10.615385" data-anchor-y="-1.820332" data-offset-x="10.0" data-offset-y="-7.0" x="10.813635" y="-1.959107" font-size="0.346937">M<tspan dy="0.3em" font-size="75%">a</tspan></text>
+    <text id="lbl-M_b" class="guide-label guide" data-point-id="M_b" data-anchor-x="4.115385" data-anchor-y="-1.820332" data-offset-x="-42.0" data-offset-y="5.0" x="3.282735" y="-1.721207" font-size="0.346937">M<tspan dy="0.3em" font-size="75%">b</tspan></text>
+    <text id="lbl-M_c" class="guide-label guide" data-point-id="M_c" data-anchor-x="6.500000" data-anchor-y="-0.000000" data-offset-x="-38.0" data-offset-y="20.0" x="5.746650" y="0.396500" font-size="0.346937">M<tspan dy="0.3em" font-size="75%">c</tspan></text>
+    <text id="lbl-T_sp" class="guide-label guide" data-point-id="T_sp" data-anchor-x="6.615385" data-anchor-y="-1.820332" data-offset-x="-38.0" data-offset-y="-10.5" x="5.862035" y="-2.028495" font-size="0.346937">T<tspan dy="0.3em" font-size="75%">sp</tspan></text>
+    <text id="lbl-X_1" class="point-label incident" data-point-id="X_1" data-anchor-x="8.000000" data-anchor-y="-1.690309" data-offset-x="12.0" data-offset-y="-10.5" x="8.237900" y="-1.898471" font-size="0.401456">X<tspan dy="0.3em" font-size="75%">1</tspan></text>
+    <text id="lbl-X_2" class="point-label incident" data-point-id="X_2" data-anchor-x="7.076923" data-anchor-y="-1.213555" data-offset-x="-38.0" data-offset-y="20.0" x="6.323573" y="-0.817055" font-size="0.401456">X<tspan dy="0.3em" font-size="75%">2</tspan></text>
+    <text id="lbl-X_8" class="point-label incident" data-point-id="X_8" data-anchor-x="5.230769" data-anchor-y="-0.260047" data-offset-x="-38.0" data-offset-y="-10.5" x="4.477419" y="-0.468210" font-size="0.401456">X<tspan dy="0.3em" font-size="75%">8</tspan></text>
+    <text id="lbl-X_4" class="point-label incident" data-point-id="X_4" data-anchor-x="8.230769" data-anchor-y="-10.782218" data-offset-x="-8.0" data-offset-y="-22.0" x="8.072169" y="-11.218368" font-size="0.401456">X<tspan dy="0.3em" font-size="75%">4</tspan></text>
+    <text id="lbl-X_9" class="point-label incident" data-point-id="X_9" data-anchor-x="6.528302" data-anchor-y="-0.446497" data-offset-x="12.0" data-offset-y="20.0" x="6.766202" y="-0.049997" font-size="0.401456">X<tspan dy="0.3em" font-size="75%">9</tspan></text>
+    <text id="lbl-X_19" class="point-label incident" data-point-id="X_19" data-anchor-x="7.458356" data-anchor-y="-6.092878" data-offset-x="-38.0" data-offset-y="-10.5" x="6.705006" y="-6.301040" font-size="0.401456">X<tspan dy="0.3em" font-size="75%">19</tspan></text>
+    <text id="lbl-X_12" class="point-label incident" data-point-id="X_12" data-anchor-x="7.801295" data-anchor-y="-2.290046" data-offset-x="-38.0" data-offset-y="-10.5" x="7.047945" y="-2.498209" font-size="0.401456">X<tspan dy="0.3em" font-size="75%">12</tspan></text>
+    <text id="lbl-X_65" class="point-label incident" data-point-id="X_65" data-anchor-x="8.341880" data-anchor-y="-2.889416" data-offset-x="16.0" data-offset-y="5.0" x="8.659080" y="-2.790291" font-size="0.401456">X<tspan dy="0.3em" font-size="75%">65</tspan></text>
+    <text id="lbl-X_21" class="point-label incident" data-point-id="X_21" data-anchor-x="7.000824" data-anchor-y="-0.582481" data-offset-x="16.0" data-offset-y="5.0" x="7.318024" y="-0.483356" font-size="0.401456">X<tspan dy="0.3em" font-size="75%">21</tspan></text>
+    <text id="lbl-X_35" class="point-label incident" data-point-id="X_35" data-anchor-x="7.530333" data-anchor-y="-0.043002" data-offset-x="12.0" data-offset-y="20.0" x="7.768233" y="0.353498" font-size="0.401456">X<tspan dy="0.3em" font-size="75%">35</tspan></text>
+    <text id="lbl-X_10" class="target-label" data-point-id="X_10" data-anchor-x="6.615385" data-anchor-y="-0.975178" data-offset-x="12.0" data-offset-y="-10.5" x="6.853285" y="-1.183340" font-size="0.401456">X<tspan dy="0.3em" font-size="75%">10</tspan></text>
+    <text class="subtitle-label" x="-1.033500" y="3.315650" font-size="0.341981" fill="#999">Kimberling (6, 9, 13) | r_S = √35 / 7</text>
   </g>
-  <script type="application/json" class="etc-elements-meta">{"A":{"ID":"A","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex A","subtitle":"Reference triangle vertex at origin (0, 0)","rows":[["x","0.0000"],["y","0.0000"],["bary","1.0000 : 0.0000 : 0.0000"]],"related_points":["A"]},"B":{"ID":"B","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex B","subtitle":"Reference triangle vertex at unit base (1, 0)","rows":[["x","1.0000"],["y","0.0000"],["bary","0.0000 : 1.0000 : 0.0000"]],"related_points":["B"]},"[ A B ]":{"ID":"[ A B ]","type":"line","classes":["given","sideline"],"color":"#aaa","name":"Sideline AB (Base c = 1)","subtitle":"Reference triangle baseline through A and B","rows":[["pts","A (Vertex A), B (Vertex B)"],["len","1.0000"],["eq","0.0000x + 1.0000y + 0.0000 = 0"]],"related_points":["A","B"]},"C":{"ID":"C","type":"point","classes":["vertex"],"color":"#0ff","name":"Vertex C","subtitle":"Reference triangle apex constructed by Euclid I.22","rows":[["x","0.6331"],["y","0.2801"],["bary","-0.0000 : 0.0000 : 1.0000"]],"related_points":["C"]},"[ B C ]":{"ID":"[ B C ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline BC (Side a)","subtitle":"Reference triangle sideline opposite vertex A","rows":[["pts","B (Vertex B), C (Vertex C)"],["len","0.4615"],["eq","0.6068x + 0.7949y - 0.6068 = 0"]],"related_points":["B","C"]},"[ C A ]":{"ID":"[ C A ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline CA (Side b)","subtitle":"Reference triangle sideline opposite vertex B","rows":[["pts","C (Vertex C), A (Vertex A)"],["len","0.6923"],["eq","0.4045x - 0.9145y + 0.0000 = 0"]],"related_points":["C","A"]},"\u003c A B C \u003e":{"ID":"\u003c A B C \u003e","type":"polygon","classes":["reference"],"color":"#58a6ff","name":"Reference Triangle △ABC","subtitle":"Primary reference triangle with unit baseline AB = 1","rows":[["verts","A, B, C"],["sides","0.4615, 0.6923, 1.0000"],["area","0.1400"]],"related_points":["A","B","C"]},"M_a":{"ID":"M_a","type":"point","classes":["midpoint"],"color":"orange","name":"Midpoint M_a of BC","subtitle":"Medial triangle vertex opposite A","rows":[["x","0.8166"],["y","0.1400"],["bary","-0.0000 : 0.5000 : 0.5000"]],"related_points":["M_a"]},"M_b":{"ID":"M_b","type":"point","classes":["midpoint"],"color":"orange","name":"Midpoint M_b of CA","subtitle":"Medial triangle vertex opposite B","rows":[["x","0.3166"],["y","0.1400"],["bary","0.5000 : -0.0000 : 0.5000"]],"related_points":["M_b"]},"M_c":{"ID":"M_c","type":"point","classes":["midpoint"],"color":"orange","name":"Midpoint M_c of AB","subtitle":"Medial triangle vertex opposite C","rows":[["x","0.5000"],["y","0.0000"],["bary","0.5000 : 0.5000 : 0.0000"]],"related_points":["M_c"]},"\u003c M_a M_b M_c \u003e":{"ID":"\u003c M_a M_b M_c \u003e","type":"polygon","classes":["secondary"],"color":"#90ee90","name":"Medial Triangle △M_a M_b M_c","subtitle":"Formed by the midpoints of sides BC, CA, AB","rows":[["verts","M_a, M_b, M_c"],["sides","0.2308, 0.3462, 0.5000"],["area","0.0350"]],"related_points":["M_a","M_b","M_c"]},"[ M_a X_10 ]":{"ID":"[ M_a X_10 ]","type":"line","classes":["bisector"],"color":"#aaa","name":"Line [ M_a X_10 ]","subtitle":"Line through M_a and X_10","rows":[["pts","M_a (Midpoint M_a of BC), X_10 (SPIEKER CENTER)"],["len","0.3145"],["eq","0.2067x - 0.9784y - 0.0318 = 0"]],"related_points":["M_a","X_10"]},"[ M_b X_10 ]":{"ID":"[ M_b X_10 ]","type":"line","classes":["bisector"],"color":"#aaa","name":"Line [ M_b X_10 ]","subtitle":"Line through M_b and X_10","rows":[["pts","M_b (Midpoint M_b of CA), X_10 (SPIEKER CENTER)"],["len","0.2030"],["eq","0.3203x + 0.9473y - 0.2340 = 0"]],"related_points":["M_b","X_10"]},"[ M_c X_10 ]":{"ID":"[ M_c X_10 ]","type":"line","classes":["bisector"],"color":"#aaa","name":"Line [ M_c X_10 ]","subtitle":"Line through M_c and X_10","rows":[["pts","M_c (Midpoint M_c of AB), X_10 (SPIEKER CENTER)"],["len","0.0755"],["eq","0.9931x - 0.1175y - 0.4965 = 0"]],"related_points":["M_c","X_10"]},"spieker_circle":{"ID":"spieker_circle","type":"circle","classes":["incircle"],"color":"#e040fb","name":"Spieker Circle","subtitle":"Incircle of the medial triangle △M_a M_b M_c; centered at X_10 SPIEKER CENTER","rows":[["ctr","X_10 (SPIEKER CENTER)"],["h, k","(0.5089, 0.0750)"],["r","0.0650"],["eq","(x - 0.509)² + (y - 0.075)² = 0.0042"]],"related_points":["X_10"]},"X_1":{"ID":"X_1","type":"point","classes":["center","incident"],"color":"#0ff","name":"INCENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6154"],["y","0.1300"],["bary","0.2143 : 0.3214 : 0.4643"]],"related_points":["X_1"]},"X_2":{"ID":"X_2","type":"point","classes":["center","incident"],"color":"#0ff","name":"CENTROID","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5444"],["y","0.0934"],["bary","0.3333 : 0.3333 : 0.3333"]],"related_points":["X_2"]},"{ 1, 2 }":{"ID":"{ 1, 2 }","type":"line","classes":["central_line","incident"],"color":"#0bd","name":"Nagel Line","subtitle":"Collinear line of X_1 Incenter, X_2 Centroid, X_8 Nagel Point, X_10 Spieker Center","rows":[["pts","X_1 (INCENTER), X_2 (CENTROID)"],["len","0.0799"],["eq","0.4589x - 0.8885y - 0.1669 = 0"]],"related_points":["X_1","X_2"]},"X_4":{"ID":"X_4","type":"point","classes":["center","incident"],"color":"#0ff","name":"ORTHOCENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6331"],["y","0.8294"],["bary","-0.7196 : -1.2420 : 2.9616"]],"related_points":["X_4"]},"X_9":{"ID":"X_9","type":"point","classes":["center","incident"],"color":"#0ff","name":"MITTENPUNKT","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5022"],["y","0.0343"],["bary","0.4528 : 0.4245 : 0.1226"]],"related_points":["X_9"]},"{ 4, 9 }":{"ID":"{ 4, 9 }","type":"line","classes":["central_line","incident"],"color":"#0bd","name":"Orthocenter–Spieker Line","subtitle":"Collinear line of X_4 Orthocenter and X_10 Spieker Center","rows":[["pts","X_4 (ORTHOCENTER), X_9 (MITTENPUNKT)"],["len","0.8058"],["eq","0.9867x - 0.1625y - 0.4899 = 0"]],"related_points":["X_4","X_9"]},"X_10":{"ID":"X_10","type":"point","classes":["selected","target"],"color":"gold","name":"SPIEKER CENTER","subtitle":"Target Triangle Center","rows":[["x","0.5089"],["y","0.0750"],["bary","0.3929 : 0.3393 : 0.2679"]],"related_points":["X_10"]}}</script>
+  <script type="application/json" class="etc-elements-meta">{"A":{"ID":"A","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex A","subtitle":"Reference triangle vertex at origin (0, 0)","rows":[["x","0.0000"],["y","0.0000"],["bary","1.0000 : 0.0000 : 0.0000"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(0,\\; 0\\right)","pretty":"(0, 0)"},{"label":"trilinear","latex":"1 : 0 : 0","pretty":"1 : 0 : 0"},{"label":"bary","latex":"1 : 0 : 0","pretty":"1 : 0 : 0"}],"approx":"≈ (0.000000, 0.000000)","related_points":["A"]},"B":{"ID":"B","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex B","subtitle":"Reference triangle baseline vertex on positive x-axis","rows":[["x","13.0000"],["y","0.0000"],["bary","0.0000 : 1.0000 : 0.0000"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(13,\\; 0\\right)","pretty":"(13, 0)"},{"label":"trilinear","latex":"0 : 1 : 0","pretty":"0 : 1 : 0"},{"label":"bary","latex":"0 : 1 : 0","pretty":"0 : 1 : 0"}],"approx":"≈ (13.000000, 0.000000)","related_points":["B"]},"[ A B ]":{"ID":"[ A B ]","type":"line","classes":["given","sideline"],"color":"#cbd5e1","color_token":"","name":"Sideline AB (Side c)","subtitle":"Reference triangle baseline through A and B","rows":[["pts","A (Vertex A), B (Vertex B)"],["len","13.0000"],["eq","0.0000x + 1.0000y + 0.0000 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"A, B"},{"label":"eq","latex":"y = 0","pretty":"y = 0"},{"label":"Q","latex":"169","pretty":"169"},{"label":"spread","latex":"0","pretty":"0"}],"approx":"≈ 0.0000x + 1.0000y + 0.0000 = 0  (|AB| ≈ 13.000000)","related_points":["A","B"]},"C":{"ID":"C","type":"point","classes":["vertex"],"color":"#0ff","name":"Vertex C","subtitle":"Reference triangle apex constructed in upper half-plane","rows":[["x","8.2308"],["y","3.6407"],["bary","-0.0000 : 0.0000 : 1.0000"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{107}{13},\\; \\frac{8 \\sqrt{35}}{13}\\right)","pretty":"(107/13, 8·√35/13)"},{"label":"trilinear","latex":"0 : 0 : 1","pretty":"0 : 0 : 1"},{"label":"bary","latex":"0 : 0 : 1","pretty":"0 : 0 : 1"}],"approx":"≈ (8.230769, 3.640664)","related_points":["C"]},"[ B C ]":{"ID":"[ B C ]","type":"line","classes":["sideline"],"color":"#cbd5e1","color_token":"","name":"Sideline BC (Side a)","subtitle":"Reference triangle sideline opposite vertex A","rows":[["pts","B (Vertex B), C (Vertex C)"],["len","6.0000"],["eq","0.6068x + 0.7949y - 7.8881 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"B, C"},{"label":"eq","latex":"4 \\sqrt{35}x + 31y - 52 \\sqrt{35} = 0","pretty":"4·√35x + 31y - 52·√35 = 0"},{"label":"Q","latex":"36","pretty":"36"},{"label":"spread","latex":"\\frac{560}{1521}","pretty":"560/1521"}],"approx":"≈ 0.6068x + 0.7949y - 7.8881 = 0  (|BC| ≈ 6.000000)","related_points":["B","C"]},"[ C A ]":{"ID":"[ C A ]","type":"line","classes":["sideline"],"color":"#cbd5e1","color_token":"","name":"Sideline CA (Side b)","subtitle":"Reference triangle sideline opposite vertex B","rows":[["pts","C (Vertex C), A (Vertex A)"],["len","9.0000"],["eq","0.4045x - 0.9145y + 0.0000 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"C, A"},{"label":"eq","latex":"8 \\sqrt{35}x - 107y = 0","pretty":"8·√35x - 107y = 0"},{"label":"Q","latex":"81","pretty":"81"},{"label":"spread","latex":"\\frac{2240}{13689}","pretty":"2240/13689"}],"approx":"≈ 0.4045x - 0.9145y + 0.0000 = 0  (|CA| ≈ 9.000000)","related_points":["C","A"]},"\u003c A B C \u003e":{"ID":"\u003c A B C \u003e","type":"polygon","classes":["reference"],"color":"#58a6ff","name":"Reference Triangle △ABC","subtitle":"Primary exact symbolic reference triangle","rows":[["verts","A, B, C"],["sides","6.0000, 9.0000, 13.0000"],["area","23.6643"]],"symbolic_rows":[{"label":"verts","latex":"","pretty":"A, B, C"},{"label":"Δ","latex":"4 \\sqrt{35}","pretty":"4·√35"},{"label":"sides","latex":"6,\\; 9,\\; 13","pretty":"6, 9, 13"}],"approx":"≈ area 23.664319  |  sides (6.0000, 9.0000, 13.0000)","related_points":["A","B","C"]},"M_a":{"ID":"M_a","type":"point","classes":["midpoint"],"color":"orange","name":"Midpoint M_a of BC","subtitle":"Medial triangle vertex opposite A","rows":[["x","10.6154"],["y","1.8203"],["bary","0.0000 : 0.5000 : 0.5000"],["from","B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{138}{13},\\; \\frac{4 \\sqrt{35}}{13}\\right)","pretty":"(138/13, 4·√35/13)"},{"label":"trilinear","latex":"0 : 13 : 9","pretty":"0 : 13 : 9"},{"label":"bary","latex":"0 : 1 : 1","pretty":"0 : 1 : 1"},{"label":"from","latex":"","pretty":"B, C"}],"approx":"≈ (10.615385, 1.820332)","related_points":["M_a"]},"M_b":{"ID":"M_b","type":"point","classes":["midpoint"],"color":"orange","name":"Midpoint M_b of CA","subtitle":"Medial triangle vertex opposite B","rows":[["x","4.1154"],["y","1.8203"],["bary","0.5000 : 0.0000 : 0.5000"],["from","C, A"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{107}{26},\\; \\frac{4 \\sqrt{35}}{13}\\right)","pretty":"(107/26, 4·√35/13)"},{"label":"trilinear","latex":"13 : 0 : 6","pretty":"13 : 0 : 6"},{"label":"bary","latex":"1 : 0 : 1","pretty":"1 : 0 : 1"},{"label":"from","latex":"","pretty":"C, A"}],"approx":"≈ (4.115385, 1.820332)","related_points":["M_b"]},"M_c":{"ID":"M_c","type":"point","classes":["midpoint"],"color":"orange","name":"Midpoint M_c of AB","subtitle":"Medial triangle vertex opposite C","rows":[["x","6.5000"],["y","0.0000"],["bary","0.5000 : 0.5000 : -0.0000"],["from","A, B"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{13}{2},\\; 0\\right)","pretty":"(13/2, 0)"},{"label":"trilinear","latex":"3 : 2 : 0","pretty":"3 : 2 : 0"},{"label":"bary","latex":"1 : 1 : 0","pretty":"1 : 1 : 0"},{"label":"from","latex":"","pretty":"A, B"}],"approx":"≈ (6.500000, 0.000000)","related_points":["M_c"]},"\u003c M_a M_b M_c \u003e":{"ID":"\u003c M_a M_b M_c \u003e","type":"polygon","classes":["secondary"],"color":"#90ee90","name":"Medial Triangle △M_a M_b M_c","subtitle":"Formed by the midpoints of sides BC, CA, AB","rows":[["verts","M_a, M_b, M_c"],["sides","3.0000, 4.5000, 6.5000"],["area","5.9161"]],"symbolic_rows":[{"label":"verts","latex":"","pretty":"M_a, M_b, M_c"},{"label":"Δ","latex":"\\sqrt{35}","pretty":"√35"},{"label":"sides","latex":"3,\\; \\frac{9}{2},\\; \\frac{13}{2}","pretty":"3, 9/2, 13/2"}],"approx":"≈ area 5.916080  |  sides (3.0000, 4.5000, 6.5000)","related_points":["M_a","M_b","M_c"]},"[ M_a X_10 ]":{"ID":"[ M_a X_10 ]","type":"line","classes":["bisector"],"color":"#e8b85a","color_token":"gold","name":"Medial Angle Bisector at M_a","subtitle":"Internal angle bisector of medial triangle △M_a M_b M_c at M_a","rows":[["pts","M_a (Midpoint M_a of BC), X_10 (SPIEKER CENTER)"],["len","4.0883"],["eq","0.2067x - 0.9784y - 0.4134 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"M_a, X_10"},{"label":"eq","latex":"\\sqrt{35}x - 28y - 2 \\sqrt{35} = 0","pretty":"√35x - 28y - 2·√35 = 0"},{"label":"Q","latex":"\\frac{117}{7}","pretty":"117/7"},{"label":"spread","latex":"\\frac{5}{117}","pretty":"5/117"}],"approx":"≈ 0.2067x - 0.9784y - 0.4134 = 0  (|M_aX_10| ≈ 4.088311)","related_points":["M_a","X_10"]},"[ M_b X_10 ]":{"ID":"[ M_b X_10 ]","type":"line","classes":["bisector"],"color":"#e8b85a","color_token":"gold","name":"Medial Angle Bisector at M_b","subtitle":"Internal angle bisector of medial triangle △M_a M_b M_c at M_b","rows":[["pts","M_b (Midpoint M_b of CA), X_10 (SPIEKER CENTER)"],["len","2.6390"],["eq","0.3203x + 0.9473y - 3.0424 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"M_b, X_10"},{"label":"eq","latex":"2 \\sqrt{35}x + 35y - 19 \\sqrt{35} = 0","pretty":"2·√35x + 35y - 19·√35 = 0"},{"label":"Q","latex":"\\frac{195}{28}","pretty":"195/28"},{"label":"spread","latex":"\\frac{4}{39}","pretty":"4/39"}],"approx":"≈ 0.3203x + 0.9473y - 3.0424 = 0  (|M_bX_10| ≈ 2.638993)","related_points":["M_b","X_10"]},"[ M_c X_10 ]":{"ID":"[ M_c X_10 ]","type":"line","classes":["bisector"],"color":"#e8b85a","color_token":"gold","name":"Medial Angle Bisector at M_c","subtitle":"Internal angle bisector of medial triangle △M_a M_b M_c at M_c","rows":[["pts","M_c (Midpoint M_c of AB), X_10 (SPIEKER CENTER)"],["len","0.9820"],["eq","0.9931x - 0.1175y - 6.4550 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"M_c, X_10"},{"label":"eq","latex":"10 \\sqrt{35}x - 7y - 65 \\sqrt{35} = 0","pretty":"10·√35x - 7y - 65·√35 = 0"},{"label":"Q","latex":"\\frac{27}{28}","pretty":"27/28"},{"label":"spread","latex":"\\frac{500}{507}","pretty":"500/507"}],"approx":"≈ 0.9931x - 0.1175y - 6.4550 = 0  (|M_cX_10| ≈ 0.981981)","related_points":["M_c","X_10"]},"T_sp":{"ID":"T_sp","type":"point","classes":["foot","guide"],"color":"orange","name":"Spieker Touchpoint T_sp","subtitle":"Tangency point of Spieker circle on medial side M_a M_b","rows":[["x","6.6154"],["y","1.8203"],["bary","0.3077 : 0.1923 : 0.5000"],["from","X_10, M_a, M_b"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{86}{13},\\; \\frac{4 \\sqrt{35}}{13}\\right)","pretty":"(86/13, 4·√35/13)"},{"label":"trilinear","latex":"12 : 5 : 9","pretty":"12 : 5 : 9"},{"label":"bary","latex":"8 : 5 : 13","pretty":"8 : 5 : 13"},{"label":"from","latex":"","pretty":"X_10, M_a, M_b"}],"approx":"≈ (6.615385, 1.820332)","related_points":["T_sp"]},"spieker_circle":{"ID":"spieker_circle","type":"circle","classes":["incircle"],"color":"#fb923c","color_token":"orange","name":"Spieker Circle","subtitle":"Incircle of the medial triangle △M_a M_b M_c; centered at X_10 SPIEKER CENTER","rows":[["ctr","X_10 (SPIEKER CENTER)"],["h, k","(6.6154, 0.9752)"],["r","0.8452"],["eq","(x - 6.615)² + (y - 0.975)² = 0.7143"],["pass","T_sp (Spieker Touchpoint T_sp)"]],"symbolic_rows":[{"label":"center","latex":"","pretty":"X_10 (SPIEKER CENTER)"},{"label":"r","latex":"\\frac{\\sqrt{35}}{7}","pretty":"√35/7"},{"label":"Q_r","latex":"\\frac{5}{7}","pretty":"5/7"},{"label":"eq","latex":"\\left(x - \\frac{86}{13}\\right)^2 + \\left(y - \\frac{15 \\sqrt{35}}{91}\\right)^2 = \\frac{5}{7}","pretty":"(x - 86/13)² + (y - 15·√35/91)² = 5/7"}],"approx":"≈ r = 0.845154, Q_r = 0.714286","related_points":["X_10","T_sp"]},"X_1":{"ID":"X_1","type":"point","classes":["center","incident"],"color":"#0ff","name":"INCENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","8.0000"],["y","1.6903"],["bary","0.2143 : 0.3214 : 0.4643"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(8,\\; \\frac{2 \\sqrt{35}}{7}\\right)","pretty":"(8, 2·√35/7)"},{"label":"trilinear","latex":"1 : 1 : 1","pretty":"1 : 1 : 1"},{"label":"bary","latex":"6 : 9 : 13","pretty":"6 : 9 : 13"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (8.000000, 1.690309)","related_points":["X_1"]},"X_2":{"ID":"X_2","type":"point","classes":["center","incident"],"color":"#0ff","name":"CENTROID","subtitle":"Incident / Reference Triangle Center","rows":[["x","7.0769"],["y","1.2136"],["bary","0.3333 : 0.3333 : 0.3333"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{92}{13},\\; \\frac{8 \\sqrt{35}}{39}\\right)","pretty":"(92/13, 8·√35/39)"},{"label":"trilinear","latex":"39 : 26 : 18","pretty":"39 : 26 : 18"},{"label":"bary","latex":"1 : 1 : 1","pretty":"1 : 1 : 1"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (7.076923, 1.213555)","related_points":["X_2"]},"X_8":{"ID":"X_8","type":"point","classes":["center","incident"],"color":"#0ff","name":"NAGEL POINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","5.2308"],["y","0.2600"],["bary","0.5714 : 0.3571 : 0.0714"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{68}{13},\\; \\frac{4 \\sqrt{35}}{91}\\right)","pretty":"(68/13, 4·√35/91)"},{"label":"trilinear","latex":"156 : 65 : 9","pretty":"156 : 65 : 9"},{"label":"bary","latex":"8 : 5 : 1","pretty":"8 : 5 : 1"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (5.230769, 0.260047)","related_points":["X_8"]},"{ 1, 2 }":{"ID":"{ 1, 2 }","type":"line","classes":["central_line","incident"],"color":"#fb923c","color_token":"orange","name":"Nagel Line","subtitle":"Collinear line of X_1 Incenter, X_2 Centroid, X_8 Nagel Point, X_10 Spieker Center","rows":[["pts","X_1 (INCENTER), X_2 (CENTROID)"],["len","1.0389"],["eq","0.4589x - 0.8885y - 2.1693 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"X_1, X_2"},{"label":"eq","latex":"11 \\sqrt{35}x - 126y - 52 \\sqrt{35} = 0","pretty":"11·√35x - 126y - 52·√35 = 0"},{"label":"Q","latex":"\\frac{68}{63}","pretty":"68/63"},{"label":"spread","latex":"\\frac{605}{2873}","pretty":"605/2873"}],"approx":"≈ 0.4589x - 0.8885y - 2.1693 = 0  (|X_1X_2| ≈ 1.038925)","related_points":["X_1","X_2"]},"X_4":{"ID":"X_4","type":"point","classes":["center","incident"],"color":"#0ff","name":"ORTHOCENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","8.2308"],["y","10.7822"],["bary","-0.7196 : -1.2420 : 2.9616"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{107}{13},\\; \\frac{3317 \\sqrt{35}}{1820}\\right)","pretty":"(107/13, 3317·√35/1820)"},{"label":"trilinear","latex":"15717 : 18083 : -29853","pretty":"15717 : 18083 : -29853"},{"label":"bary","latex":"-806 : -1391 : 3317","pretty":"-806 : -1391 : 3317"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (8.230769, 10.782218)","related_points":["X_4"]},"X_9":{"ID":"X_9","type":"point","classes":["center","incident"],"color":"#0ff","name":"MITTENPUNKT","subtitle":"Incident / Reference Triangle Center","rows":[["x","6.5283"],["y","0.4465"],["bary","0.4528 : 0.4245 : 0.1226"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{346}{53},\\; \\frac{4 \\sqrt{35}}{53}\\right)","pretty":"(346/53, 4·√35/53)"},{"label":"trilinear","latex":"8 : 5 : 1","pretty":"8 : 5 : 1"},{"label":"bary","latex":"48 : 45 : 13","pretty":"48 : 45 : 13"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (6.528302, 0.446497)","related_points":["X_9"]},"X_19":{"ID":"X_19","type":"point","classes":["center","incident"],"color":"#0ff","name":"CLAWSON POINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","7.4584"],["y","6.0929"],["bary","-0.1877 : -0.4859 : 1.6736"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{96086}{12883},\\; \\frac{13268 \\sqrt{35}}{12883}\\right)","pretty":"(96086/12883, 13268·√35/12883)"},{"label":"trilinear","latex":"-806 : -1391 : 3317","pretty":"-806 : -1391 : 3317"},{"label":"bary","latex":"-372 : -963 : 3317","pretty":"-372 : -963 : 3317"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (7.458356, 6.092878)","related_points":["X_19"]},"{ 4, 9 }":{"ID":"{ 4, 9 }","type":"line","classes":["central_line","incident"],"color":"#38bdf8","color_token":"blue","name":"Orthocenter–Spieker Line","subtitle":"Collinear line of X_4 Orthocenter and X_10 Spieker Center","rows":[["pts","X_4 (ORTHOCENTER), X_9 (MITTENPUNKT)"],["len","10.4750"],["eq","0.9867x - 0.1625y - 6.3689 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"X_4, X_9"},{"label":"eq","latex":"431 \\sqrt{35}x - 420y - 2782 \\sqrt{35} = 0","pretty":"431·√35x - 420y - 2782·√35 = 0"},{"label":"Q","latex":"\\frac{172602649}{1573040}","pretty":"172602649/1573040"},{"label":"spread","latex":"\\frac{185761}{190801}","pretty":"185761/190801"}],"approx":"≈ 0.9867x - 0.1625y - 6.3689 = 0  (|X_4X_9| ≈ 10.474996)","related_points":["X_4","X_9"]},"X_12":{"ID":"X_12","type":"point","classes":["center","incident"],"color":"#0ff","name":"{X(1),X(5)}-HARMONIC CONJUGATE OF X(11)","subtitle":"Incident / Reference Triangle Center","rows":[["x","7.8013"],["y","2.2900"],["bary","0.1691 : 0.2018 : 0.6290"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{51824}{6643},\\; \\frac{18000 \\sqrt{35}}{46501}\\right)","pretty":"(51824/6643, 18000·√35/46501)"},{"label":"trilinear","latex":"23595 : 18772 : 40500","pretty":"23595 : 18772 : 40500"},{"label":"bary","latex":"605 : 722 : 2250","pretty":"605 : 722 : 2250"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (7.801295, 2.290046)","related_points":["X_12"]},"X_65":{"ID":"X_65","type":"point","classes":["center","incident"],"color":"#0ff","name":"ORTHOCENTER OF THE INTOUCH TRIANGLE","subtitle":"Incident / Reference Triangle Center","rows":[["x","8.3419"],["y","2.8894"],["bary","0.0672 : 0.1392 : 0.7937"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{976}{117},\\; \\frac{400 \\sqrt{35}}{819}\\right)","pretty":"(976/117, 400·√35/819)"},{"label":"trilinear","latex":"55 : 76 : 300","pretty":"55 : 76 : 300"},{"label":"bary","latex":"55 : 114 : 650","pretty":"55 : 114 : 650"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (8.341880, 2.889416)","related_points":["X_65"]},"{ 12, 65 }":{"ID":"{ 12, 65 }","type":"line","classes":["central_line","incident"],"color":"#2dd4bf","color_token":"teal","name":"Central Line L(12, 65)","subtitle":"Through X_12 ({X(1),X(5)}-HARMONIC CONJUGATE OF X(11)) and X_65 (ORTHOCENTER OF THE INTOUCH TRIANGLE)","rows":[["pts","X_12 ({X(1),X(5)}-HARMONIC CONJUGATE OF X(11)), X_65 (ORTHOCENTER OF THE INTOUCH TRIANGLE)"],["len","0.8071"],["eq","0.7426x - 0.6698y - 4.2593 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"X_12, X_65"},{"label":"eq","latex":"265 \\sqrt{35}x - 1414y - 1520 \\sqrt{35} = 0","pretty":"265·√35x - 1414y - 1520·√35 = 0"},{"label":"Q","latex":"\\frac{417971200}{641574297}","pretty":"417971200/641574297"},{"label":"spread","latex":"\\frac{351125}{636753}","pretty":"351125/636753"}],"approx":"≈ 0.7426x - 0.6698y - 4.2593 = 0  (|X_12X_65| ≈ 0.807142)","related_points":["X_12","X_65"]},"X_21":{"ID":"X_21","type":"point","classes":["center","incident"],"color":"#0ff","name":"SCHIFFLER POINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","7.0008"],["y","0.5825"],["bary","0.4028 : 0.4372 : 0.1600"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{8492}{1213},\\; \\frac{836 \\sqrt{35}}{8491}\\right)","pretty":"(8492/1213, 836·√35/8491)"},{"label":"trilinear","latex":"1140 : 825 : 209","pretty":"1140 : 825 : 209"},{"label":"bary","latex":"6840 : 7425 : 2717","pretty":"6840 : 7425 : 2717"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (7.000824, 0.582481)","related_points":["X_21"]},"X_35":{"ID":"X_35","type":"point","classes":["center","incident"],"color":"#0ff","name":"{X(1),X(3)}-HARMONIC CONJUGATE OF X(36)","subtitle":"Incident / Reference Triangle Center","rows":[["x","7.5303"],["y","0.0430"],["bary","0.4164 : 0.5718 : 0.0118"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{3848}{511},\\; \\frac{26 \\sqrt{35}}{3577}\\right)","pretty":"(3848/511, 26·√35/3577)"},{"label":"trilinear","latex":"993 : 909 : 13","pretty":"993 : 909 : 13"},{"label":"bary","latex":"5958 : 8181 : 169","pretty":"5958 : 8181 : 169"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (7.530333, 0.043002)","related_points":["X_35"]},"{ 21, 35 }":{"ID":"{ 21, 35 }","type":"line","classes":["central_line","incident"],"color":"#4ade80","color_token":"green","name":"Central Line L(21, 35)","subtitle":"Through X_21 (SCHIFFLER POINT) and X_35 ({X(1),X(3)}-HARMONIC CONJUGATE OF X(36))","rows":[["pts","X_21 (SCHIFFLER POINT), X_35 ({X(1),X(3)}-HARMONIC CONJUGATE OF X(36))"],["len","0.7559"],["eq","0.7137x + 0.7005y - 5.4043 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"X_21, X_35"},{"label":"eq","latex":"7327 \\sqrt{35}x + 42546y - 55484 \\sqrt{35} = 0","pretty":"7327·√35x + 42546y - 55484·√35 = 0"},{"label":"Q","latex":"\\frac{1536788083428}{2689437412543}","pretty":"1536788083428/2689437412543"},{"label":"spread","latex":"\\frac{268424645}{527019233}","pretty":"268424645/527019233"}],"approx":"≈ 0.7137x + 0.7005y - 5.4043 = 0  (|X_21X_35| ≈ 0.755921)","related_points":["X_21","X_35"]},"X_10":{"ID":"X_10","type":"point","classes":["selected","target"],"color":"gold","name":"SPIEKER CENTER","subtitle":"Target Triangle Center","rows":[["x","6.6154"],["y","0.9752"],["bary","0.3929 : 0.3393 : 0.2679"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{86}{13},\\; \\frac{15 \\sqrt{35}}{91}\\right)","pretty":"(86/13, 15·√35/91)"},{"label":"trilinear","latex":"429 : 247 : 135","pretty":"429 : 247 : 135"},{"label":"bary","latex":"22 : 19 : 15","pretty":"22 : 19 : 15"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (6.615385, 0.975178)","related_points":["X_10"]}}</script>
   <script>//<![CDATA[
 
 (function () {
@@ -393,7 +652,6 @@ figure:hover .etc-svg-toolbar {
     const initVbAttr = svg.getAttribute('data-initial-viewbox') || svg.getAttribute('viewBox');
     const initialViewBox = initVbAttr.split(/\s+/).map(Number);
 
-    // Parse embedded element metadata catalog
     let elementsCatalog = {};
     const metaEl = svg.querySelector('script.etc-elements-meta');
     if (metaEl) {
@@ -409,10 +667,112 @@ figure:hover .etc-svg-toolbar {
     const labelsGroup = svg.querySelector('#labels');
 
     const pointEls = pointsGroup ? Array.from(pointsGroup.querySelectorAll('circle')) : [];
-    const structEls = elementsGroup ? Array.from(elementsGroup.querySelectorAll('line, circle')) : [];
-    const polyEls = graphicsGroup ? Array.from(graphicsGroup.querySelectorAll('polygon, polyline')) : [];
     const labelEls = labelsGroup ? Array.from(labelsGroup.querySelectorAll('text[data-point-id]')) : [];
     const subtitleEl = labelsGroup ? labelsGroup.querySelector('text.subtitle-label') : null;
+
+    function escapeHtml(str) {
+        return String(str || '')
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;');
+    }
+
+    function formatIdHtml(idStr) {
+        const s = escapeHtml(idStr);
+        return s.replace(/_\{([^}]+)\}/g, '<sub>$1</sub>').replace(/_([A-Za-z0-9']+)/g, '<sub>$1</sub>');
+    }
+
+    function extractBraced(src, startIdx) {
+        if (src[startIdx] !== '{') return null;
+        let depth = 0;
+        for (let i = startIdx; i < src.length; i++) {
+            if (src[i] === '{') depth++;
+            else if (src[i] === '}') {
+                depth--;
+                if (depth === 0) {
+                    return { content: src.slice(startIdx + 1, i), next: i + 1 };
+                }
+            }
+        }
+        return null;
+    }
+
+    function convertLatexFallback(tex) {
+        let s = String(tex || '');
+        s = s.replace(/\\left\s*([(\[{|])/g, '$1').replace(/\\right\s*([)\]}|])/g, '$1');
+        s = s.replace(/\\;/g, ' ').replace(/\\,/g, '\u2009').replace(/\\quad/g, '  ');
+        s = s.replace(/\\varphi|\\phi/g, 'φ')
+             .replace(/\\Delta/g, 'Δ')
+             .replace(/\\alpha/g, 'α')
+             .replace(/\\beta/g, 'β')
+             .replace(/\\gamma/g, 'γ')
+             .replace(/\\cdot/g, '·')
+             .replace(/\\approx/g, '≈')
+             .replace(/\\infty/g, '∞');
+
+        let out = '';
+        let i = 0;
+        while (i < s.length) {
+            if (s.startsWith('\\frac', i)) {
+                let k = i + 5;
+                while (k < s.length && s[k] === ' ') k++;
+                const numB = extractBraced(s, k);
+                if (numB) {
+                    let k2 = numB.next;
+                    while (k2 < s.length && s[k2] === ' ') k2++;
+                    const denB = extractBraced(s, k2);
+                    if (denB) {
+                        out += '<span class="etc-math-frac"><span class="etc-math-num">' +
+                            convertLatexFallback(numB.content) +
+                            '</span><span class="etc-math-den">' +
+                            convertLatexFallback(denB.content) +
+                            '</span></span>';
+                        i = denB.next;
+                        continue;
+                    }
+                }
+            }
+            if (s.startsWith('\\sqrt', i)) {
+                let k = i + 5;
+                while (k < s.length && s[k] === ' ') k++;
+                const radB = extractBraced(s, k);
+                if (radB) {
+                    out += '√<span class="etc-math-rad">' + convertLatexFallback(radB.content) + '</span>';
+                    i = radB.next;
+                    continue;
+                }
+            }
+            if ((s[i] === '_' || s[i] === '^') && i + 1 < s.length) {
+                const tag = s[i] === '_' ? 'sub' : 'sup';
+                if (s[i + 1] === '{') {
+                    const subB = extractBraced(s, i + 1);
+                    if (subB) {
+                        out += `<${tag}>` + convertLatexFallback(subB.content) + `</${tag}>`;
+                        i = subB.next;
+                        continue;
+                    }
+                } else {
+                    out += `<${tag}>` + escapeHtml(s[i + 1]) + `</${tag}>`;
+                    i += 2;
+                    continue;
+                }
+            }
+            out += escapeHtml(s[i]);
+            i++;
+        }
+        return out;
+    }
+
+    function renderMathHtml(latexStr, prettyStr) {
+        if (!latexStr) return escapeHtml(prettyStr || '');
+        if (typeof window !== 'undefined' && window.katex && typeof window.katex.renderToString === 'function') {
+            try {
+                return window.katex.renderToString(latexStr, { throwOnError: false, displayMode: false });
+            } catch (e) {}
+        }
+        return '<span class="etc-math-fallback">' + convertLatexFallback(latexStr) + '</span>';
+    }
 
     function getViewBox() {
         return svg.getAttribute('viewBox').split(/\s+/).map(Number);
@@ -467,8 +827,10 @@ figure:hover .etc-svg-toolbar {
         const relY = (clientY !== undefined && rect.height > 0) ? (clientY - rect.top) / rect.height : 0.5;
         const focusX = x + relX * w;
         const focusY = y + relY * h;
-        const newW = Math.min(Math.max(w * factor, 0.002), 50.0);
-        const newH = Math.min(Math.max(h * factor, 0.002), 50.0);
+        const baseW = Math.max(initialViewBox[2] || 1.0, 0.2);
+        const baseH = Math.max(initialViewBox[3] || 1.0, 0.2);
+        const newW = Math.min(Math.max(w * factor, baseW * 0.002), baseW * 30.0);
+        const newH = Math.min(Math.max(h * factor, baseH * 0.002), baseH * 30.0);
         const newX = focusX - relX * newW;
         const newY = focusY - relY * newH;
         setViewBox([newX, newY, newW, newH]);
@@ -478,7 +840,8 @@ figure:hover .etc-svg-toolbar {
         setViewBox([...initialViewBox]);
     }
 
-    // Expose controller API on the SVG element for external toolbar buttons
+    let hudEl = null;
+
     svg._etcController = {
         zoomIn: () => zoomBy(1 / 1.25),
         zoomOut: () => zoomBy(1.25),
@@ -488,14 +851,14 @@ figure:hover .etc-svg-toolbar {
         scaleViewElements: scaleViewElements,
     };
 
-    // Ensure Toolbar and Triangle Tabs exist if running inside an HTML document
     if (document.body && document.documentElement.tagName.toLowerCase() === 'html') {
-        const parent = svg.parentElement;
-        if (parent && !parent.classList.contains('etc-svg-stage')) {
-            const stage = document.createElement('div');
-            stage.className = 'etc-svg-stage';
-            parent.insertBefore(stage, svg);
-            stage.appendChild(svg);
+        let stage = svg.parentElement;
+        if (stage && !stage.classList.contains('etc-svg-stage')) {
+            const newStage = document.createElement('div');
+            newStage.className = 'etc-svg-stage';
+            stage.insertBefore(newStage, svg);
+            newStage.appendChild(svg);
+            stage = newStage;
 
             const toolbar = document.createElement('div');
             toolbar.className = 'etc-svg-toolbar';
@@ -513,13 +876,15 @@ figure:hover .etc-svg-toolbar {
                     action: () => svg.classList.toggle('show-lines'),
                 });
             }
-            btns.push({
-                label: 'Labels',
-                toggleKey: 'labels',
-                title: 'Toggle Point Labels',
-                isActive: () => !svg.classList.contains('hide-labels'),
-                action: () => svg.classList.toggle('hide-labels'),
-            });
+            if (labelEls.length > 0) {
+                btns.push({
+                    label: 'Labels',
+                    toggleKey: 'labels',
+                    title: 'Toggle Point Labels',
+                    isActive: () => !svg.classList.contains('hide-labels'),
+                    action: () => svg.classList.toggle('hide-labels'),
+                });
+            }
             if (svg.querySelector('.guide')) {
                 btns.push({
                     label: 'Guides',
@@ -550,6 +915,17 @@ figure:hover .etc-svg-toolbar {
                 toolbar.appendChild(btn);
             });
             stage.appendChild(toolbar);
+        }
+
+        if (stage) {
+            hudEl = stage.querySelector('.etc-symbolic-hud');
+            if (!hudEl) {
+                hudEl = document.createElement('div');
+                hudEl.className = 'etc-symbolic-hud';
+                hudEl.setAttribute('aria-live', 'polite');
+                stage.appendChild(hudEl);
+            }
+            svg.querySelectorAll('title').forEach(t => t.remove());
         }
 
         const panel = svg.closest('.etc-graphics-panel');
@@ -619,11 +995,49 @@ figure:hover .etc-svg-toolbar {
         }
     }
 
-    let activeHoveredId = null;
+    function updateHud(info, fallbackId) {
+        if (!hudEl) return;
+        if (!info) {
+            hudEl.classList.remove('is-visible');
+            return;
+        }
+        const dotColor = info.color || '#0ff';
+        const idHtml = formatIdHtml(info.ID || fallbackId || '');
+        const titleHtml = escapeHtml(info.name || fallbackId || '');
+        const kindHtml = escapeHtml(info.type || '');
+        const symRows = Array.isArray(info.symbolic_rows) ? info.symbolic_rows : [];
+        let rowsHtml = '';
+        if (symRows.length > 0) {
+            symRows.forEach(r => {
+                rowsHtml += '<div class="etc-hud-key">' + escapeHtml(r.label) + '</div>' +
+                    '<div class="etc-hud-val">' + renderMathHtml(r.latex, r.pretty) + '</div>';
+            });
+        } else if (Array.isArray(info.rows)) {
+            info.rows.forEach(pair => {
+                rowsHtml += '<div class="etc-hud-key">' + escapeHtml(pair[0]) + '</div>' +
+                    '<div class="etc-hud-val">' + escapeHtml(pair[1]) + '</div>';
+            });
+        }
+        const approxHtml = info.approx
+            ? '<div class="etc-hud-approx">' + escapeHtml(info.approx) + '</div>'
+            : '';
+        hudEl.innerHTML =
+            '<div class="etc-hud-head">' +
+                '<span class="etc-hud-dot" style="background:' + escapeHtml(dotColor) + '"></span>' +
+                '<span class="etc-hud-id">' + idHtml + '</span>' +
+                '<span class="etc-hud-title">' + titleHtml + '</span>' +
+                '<span class="etc-hud-kind">' + kindHtml + '</span>' +
+            '</div>' +
+            '<div class="etc-hud-rows">' + rowsHtml + '</div>' +
+            approxHtml;
+        hudEl.classList.add('is-visible');
+    }
 
-    function clearHover() {
-        if (!activeHoveredId) return;
-        activeHoveredId = null;
+    let activeHoveredKey = null;
+
+    function clearHover(clearTextRefs) {
+        if (!activeHoveredKey) return;
+        activeHoveredKey = null;
         svg.querySelectorAll('.hover').forEach(el => el.classList.remove('hover'));
         svg.querySelectorAll('.hover-label').forEach(el => el.classList.remove('hover-label'));
         if (highlightsGroup) {
@@ -631,97 +1045,208 @@ figure:hover .etc-svg-toolbar {
                 el.style.display = 'none';
             });
         }
-        if (typeof document !== 'undefined') {
+        if (hudEl) {
+            hudEl.classList.remove('is-visible');
+        }
+        if (clearTextRefs !== false && typeof document !== 'undefined') {
             document.querySelectorAll('.geom-highlight-text').forEach(el => {
                 el.classList.remove('geom-highlight-text');
             });
         }
     }
 
-    function resolveSvgId(rawId) {
-        if (!rawId) return rawId;
-        if (svg.querySelector(`[data-id="${CSS.escape(rawId)}"]`)) return rawId;
-        const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
-        if (segM) {
-            const revId = `[ ${segM[2]} ${segM[1]} ]`;
-            if (svg.querySelector(`[data-id="${CSS.escape(revId)}"]`)) return revId;
-        }
-        const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
-        if (triM) {
-            const pts = [triM[1], triM[2], triM[3]];
-            if (pts.includes('A') && pts.includes('B') && pts.includes('C')) {
-                return '< A B C >';
-            }
-            const secPoly = graphicsGroup ? graphicsGroup.querySelector('polygon.secondary[data-id]') : null;
-            if (secPoly) {
-                return secPoly.getAttribute('data-id') || rawId;
-            }
-        }
-        return rawId;
+    function findSvgElement(candidateId) {
+        if (!candidateId) return null;
+        return svg.querySelector(`[data-id="${CSS.escape(candidateId)}"], [data-ref="${CSS.escape(candidateId)}"]`);
     }
 
-    function activateHover(rawId) {
-        if (!rawId) return;
-        const id = resolveSvgId(rawId);
-        if (activeHoveredId === id) return;
-        clearHover();
-        activeHoveredId = id;
-        const info = elementsCatalog[id];
+    function resolveSingleSvgId(rawId) {
+        if (!rawId) return null;
+        const trimmed = rawId.trim();
+        if (findSvgElement(trimmed)) return trimmed;
+        const clean = trimmed.includes(':') ? trimmed.split(':').pop().trim() : trimmed;
+        if (findSvgElement(clean)) return clean;
 
-        const targetEl = svg.querySelector(`[data-id="${CSS.escape(id)}"]`);
-        if (targetEl) {
-            targetEl.classList.add('hover');
+        const lineM = clean.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+        if (lineM) {
+            const cands = [
+                `[ ${lineM[1]} ${lineM[2]} ]`,
+                `[ ${lineM[2]} ${lineM[1]} ]`,
+                `/ ${lineM[1]} ${lineM[2]} /`,
+                `/ ${lineM[2]} ${lineM[1]} /`,
+            ];
+            for (const c of cands) {
+                if (findSvgElement(c)) return c;
+            }
         }
 
-        // Show highlight segment if present
-        if (highlightsGroup) {
-            const hl = highlightsGroup.querySelector(`[data-highlight-for="${CSS.escape(id)}"]`);
-            if (hl) hl.style.display = 'inline';
+        const segM = clean.match(/^\/\s*(\S+)\s+(\S+)\s*\/$/);
+        if (segM) {
+            const cands = [
+                `/ ${segM[1]} ${segM[2]} /`,
+                `/ ${segM[2]} ${segM[1]} /`,
+                `[ ${segM[1]} ${segM[2]} ]`,
+                `[ ${segM[2]} ${segM[1]} ]`,
+            ];
+            for (const c of cands) {
+                if (findSvgElement(c)) return c;
+            }
         }
 
-        // Highlight parent/endpoint points and labels
-        let relatedPts = (info && info.related_points) ? info.related_points : [id];
-        if (!targetEl && relatedPts.length === 1 && relatedPts[0] === id) {
-            const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
-            const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
-            if (segM) relatedPts = [segM[1], segM[2]];
-            else if (triM) relatedPts = [triM[1], triM[2], triM[3]];
+        const braceAllM = clean.match(/^\{\s*([\d,\s]+)\s*\}$/);
+        if (braceAllM) {
+            const wantNums = braceAllM[1].split(',').map(s => s.trim()).filter(Boolean);
+            if (wantNums.length === 2) {
+                const cands = [
+                    `{ ${wantNums[0]}, ${wantNums[1]} }`,
+                    `{ ${wantNums[1]}, ${wantNums[0]} }`,
+                ];
+                for (const c of cands) {
+                    if (findSvgElement(c)) return c;
+                }
+            }
+            if (wantNums.length >= 2) {
+                const wantSet = new Set(wantNums);
+                const lineEls = svg.querySelectorAll('line[data-id], line[data-ref]');
+                for (const ln of lineEls) {
+                    const lid = ln.getAttribute('data-id') || ln.getAttribute('data-ref') || '';
+                    const lm = lid.match(/^\{\s*([\d,\s]+)\s*\}$/);
+                    if (lm) {
+                        const lnums = lm[1].split(',').map(s => s.trim()).filter(Boolean);
+                        const shared = lnums.filter(n => wantSet.has(n));
+                        if (shared.length >= 2) return lid;
+                    }
+                }
+            }
         }
-        relatedPts.forEach(pid => {
-            const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
-            if (ptEl) ptEl.classList.add('hover');
-            const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
-            if (lblEl) lblEl.classList.add('hover-label');
+
+        const triM = clean.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+        if (triM) {
+            const want = [triM[1], triM[2], triM[3]].sort().join('|');
+            const polys = svg.querySelectorAll('polygon[data-id], polygon[data-ref]');
+            for (const p of polys) {
+                const pid = p.getAttribute('data-id') || p.getAttribute('data-ref') || '';
+                const pm = pid.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                if (pm && [pm[1], pm[2], pm[3]].sort().join('|') === want) {
+                    return pid;
+                }
+            }
+        }
+
+        return null;
+    }
+
+    function hasElement(rawRef) {
+        if (!rawRef) return false;
+        const parts = String(rawRef).split(';').map(s => s.trim()).filter(Boolean);
+        return parts.some(p => resolveSingleSvgId(p) !== null);
+    }
+
+    function activateHover(rawRef, highlightTextRefs) {
+        if (!rawRef) return false;
+        const parts = String(rawRef).split(';').map(s => s.trim()).filter(Boolean);
+        const resolvedIds = parts.map(p => resolveSingleSvgId(p)).filter(Boolean);
+        if (resolvedIds.length === 0) return false;
+
+        const key = resolvedIds.join(';');
+        if (activeHoveredKey === key) return true;
+        clearHover(highlightTextRefs !== false);
+        activeHoveredKey = key;
+
+        let primaryInfo = null;
+        let primaryId = resolvedIds[0];
+
+        resolvedIds.forEach(id => {
+            const info = elementsCatalog[id];
+            if (!primaryInfo && info) {
+                primaryInfo = info;
+                primaryId = id;
+            }
+            svg.querySelectorAll(`[data-id="${CSS.escape(id)}"], [data-ref="${CSS.escape(id)}"]`).forEach(el => {
+                el.classList.add('hover');
+            });
+            if (highlightsGroup) {
+                const hl = highlightsGroup.querySelector(`[data-highlight-for="${CSS.escape(id)}"]`);
+                if (hl) hl.style.display = 'inline';
+            }
+            let relatedPts = (info && info.related_points) ? info.related_points : [id];
+            if (!info) {
+                const sm = id.match(/^[\[/]\s*(\S+)\s+(\S+)\s*[\]/]$/);
+                const tm = id.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                if (sm) relatedPts = [sm[1], sm[2]];
+                else if (tm) relatedPts = [tm[1], tm[2], tm[3]];
+            }
+            relatedPts.forEach(pid => {
+                const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
+                if (ptEl) ptEl.classList.add('hover');
+                const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
+                if (lblEl) lblEl.classList.add('hover-label');
+            });
         });
 
-        if (typeof document !== 'undefined') {
-            const sel = rawId === id
-                ? `.geom-ref[data-ref="${CSS.escape(id)}"]`
-                : `.geom-ref[data-ref="${CSS.escape(rawId)}"], .geom-ref[data-ref="${CSS.escape(id)}"]`;
-            document.querySelectorAll(sel).forEach(el => {
+        updateHud(primaryInfo, primaryId);
+
+        if (highlightTextRefs !== false && typeof document !== 'undefined') {
+            const selectors = new Set([`.geom-ref[data-ref="${CSS.escape(rawRef)}"]`]);
+            resolvedIds.forEach(id => selectors.add(`.geom-ref[data-ref="${CSS.escape(id)}"]`));
+            document.querySelectorAll(Array.from(selectors).join(', ')).forEach(el => {
                 el.classList.add('geom-highlight-text');
             });
         }
+        return true;
     }
 
     svg._etcController.activateHover = activateHover;
     svg._etcController.clearHover = clearHover;
+    svg._etcController.hasElement = hasElement;
+
+    if (typeof window !== 'undefined') {
+        window.__etcSvgRegistry = window.__etcSvgRegistry || [];
+        if (!window.__etcSvgRegistry.includes(svg)) {
+            window.__etcSvgRegistry.push(svg);
+        }
+    }
 
     if (document.body && document.documentElement.tagName.toLowerCase() === 'html' && document.body.dataset.etcGeomRefSyncInit !== '1') {
         document.body.dataset.etcGeomRefSyncInit = '1';
-        function getActiveSvg() {
-            const activePaneSvg = document.querySelector('.etc-tab-pane.active svg.geometor-etc-drawing');
-            if (activePaneSvg && activePaneSvg._etcController) return activePaneSvg;
-            const anySvg = document.querySelector('svg.geometor-etc-drawing');
-            return (anySvg && anySvg._etcController) ? anySvg : null;
+
+        function isSvgVisible(s) {
+            if (!s || !s.isConnected || !s._etcController) return false;
+            const pane = s.closest('.etc-tab-pane');
+            if (pane && !pane.classList.contains('active')) return false;
+            return s.getClientRects().length > 0;
         }
+
+        function dispatchRefHover(sourceEl, refStr) {
+            if (!refStr) return;
+            const reg = (window.__etcSvgRegistry || []).filter(isSvgVisible);
+            const sec = sourceEl ? sourceEl.closest('section') : null;
+            let targets = [];
+            if (sec) {
+                targets = reg.filter(s => sec.contains(s) && s._etcController.hasElement(refStr));
+            }
+            if (targets.length === 0) {
+                targets = reg.filter(s => s._etcController.hasElement(refStr));
+            }
+            reg.forEach(s => {
+                if (!targets.includes(s)) s._etcController.clearHover(false);
+            });
+            targets.forEach(s => s._etcController.activateHover(refStr, false));
+            if (sourceEl && targets.length > 0) {
+                sourceEl.classList.add('geom-highlight-text');
+            }
+        }
+
+        function clearAllSvgHovers() {
+            (window.__etcSvgRegistry || []).forEach(s => {
+                if (s && s._etcController) s._etcController.clearHover(true);
+            });
+        }
+
         document.body.addEventListener('mouseover', (e) => {
             const geomEl = e.target.closest('.geom-ref[data-ref]');
             if (geomEl) {
-                const activeSvg = getActiveSvg();
-                if (activeSvg && activeSvg._etcController.activateHover) {
-                    activeSvg._etcController.activateHover(geomEl.getAttribute('data-ref'));
-                }
+                dispatchRefHover(geomEl, geomEl.getAttribute('data-ref'));
                 return;
             }
             const refLink = e.target.closest('a.reference.internal');
@@ -729,30 +1254,24 @@ figure:hover .etc-svg-toolbar {
                 const txt = (refLink.textContent || '').trim();
                 const xm = txt.match(/^X(?:_|\()?(\d+)\)?$/);
                 if (xm) {
-                    const activeSvg = getActiveSvg();
-                    if (activeSvg && activeSvg._etcController.activateHover) {
-                        activeSvg._etcController.activateHover(`X_${xm[1]}`);
-                    }
+                    dispatchRefHover(refLink, `X_${xm[1]}`);
                 }
             }
         });
+
         document.body.addEventListener('mouseout', (e) => {
             const geomEl = e.target.closest('.geom-ref[data-ref], a.reference.internal');
             if (geomEl) {
-                const activeSvg = getActiveSvg();
-                if (activeSvg && activeSvg._etcController.clearHover) {
-                    activeSvg._etcController.clearHover();
-                }
+                clearAllSvgHovers();
             }
         });
     }
 
-    // Native DOM hover matching browser <title> tooltip topmost target
     svg.addEventListener('mouseover', (event) => {
         if (isPanning) return;
-        const target = event.target.closest('[data-id]');
+        const target = event.target.closest('[data-id], [data-ref]');
         if (target && svg.contains(target)) {
-            activateHover(target.getAttribute('data-id'));
+            activateHover(target.getAttribute('data-id') || target.getAttribute('data-ref'));
         } else {
             clearHover();
         }
@@ -760,20 +1279,18 @@ figure:hover .etc-svg-toolbar {
 
     svg.addEventListener('mouseout', (event) => {
         if (isPanning) return;
-        const related = event.relatedTarget ? event.relatedTarget.closest?.('[data-id]') : null;
+        const related = event.relatedTarget ? event.relatedTarget.closest?.('[data-id], [data-ref]') : null;
         if (!related || !svg.contains(related)) {
             clearHover();
         }
     });
 
-    // Wheel Zoom
     svg.addEventListener('wheel', (event) => {
         event.preventDefault();
         const factor = event.deltaY > 0 ? 1.12 : (1 / 1.12);
         zoomBy(factor, event.clientX, event.clientY);
     }, { passive: false });
 
-    // Drag Pan
     let isPanning = false;
     let didDrag = false;
     let startClient = { x: 0, y: 0 };

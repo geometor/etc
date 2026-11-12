@@ -28,6 +28,7 @@ from geometor.model import (
 )
 from geometor.model.element import Element
 
+from .symbolic_cache import EXACT_CYCLIC_BARYCENTRICS, CenterSymbolicRegistry
 from .triangles import (
     SymbolicTriangle,
     build_symbolic_triangle_from_sides,
@@ -63,18 +64,61 @@ CANONICAL_CENTER_CONCORDANCE: dict[int, CenterConcordance] = {
     9: CenterConcordance(9, "mittenpunkt", "X_9", "MITTENPUNKT", "Nagel (1836)"),
     10: CenterConcordance(10, "spieker_center", "X_10", "SPIEKER CENTER", "Spieker (1888)"),
     11: CenterConcordance(11, "feuerbach_point", "X_11", "FEUERBACH POINT", "Feuerbach (1822)"),
-    12: CenterConcordance(12, "harmonic_feuerbach_point", "X_12", "{X_1,X_5}-HARMONIC CONJUGATE OF X_11", "Kimberling ETC"),
+    12: CenterConcordance(12, "harmonic_feuerbach_point", "X_12", "{X_1,X_5}-HARMONIC CONJUGATE OF X_11", "Feuerbach • Kimberling ETC"),
     13: CenterConcordance(13, "fermat_point", "X_13", "1st ISOGONIC CENTER (FERMAT POINT)", "Fermat • Torricelli (c. 1640)"),
     14: CenterConcordance(14, "second_isogonic_center", "X_14", "2nd ISOGONIC CENTER", "Torricelli • Neuberg"),
     15: CenterConcordance(15, "first_isodynamic_point", "X_15", "1st ISODYNAMIC POINT", "Neuberg (1885)"),
     16: CenterConcordance(16, "second_isodynamic_point", "X_16", "2nd ISODYNAMIC POINT", "Neuberg (1885)"),
     17: CenterConcordance(17, "first_napoleon_point", "X_17", "1st NAPOLEON POINT", "Kiepert • Napoleon"),
     18: CenterConcordance(18, "second_napoleon_point", "X_18", "2nd NAPOLEON POINT", "Kiepert • Napoleon"),
-    19: CenterConcordance(19, "clawson_point", "X_19", "CLAWSON POINT", "Clawson (1925)"),
+    19: CenterConcordance(19, "clawson_point", "X_19", "CLAWSON POINT", "Lemoine (1886) • Clawson (1925)"),
     20: CenterConcordance(20, "de_longchamps_point", "X_20", "DE LONGCHAMPS POINT", "de Longchamps (1886)"),
+    21: CenterConcordance(21, "schiffler_point", "X_21", "SCHIFFLER POINT", "Schiffler (1985)"),
+    23: CenterConcordance(23, "far_out_point", "X_23", "FAR-OUT POINT", "Kimberling ETC"),
+    25: CenterConcordance(25, "orthic_tangential_homothetic_center", "X_25", "HOMOTHETIC CENTER OF ORTHIC AND TANGENTIAL TRIANGLES", "Kimberling ETC"),
+    28: CenterConcordance(28, "clawson_tangential_cevapoint", "X_28", "CEVAPOINT OF X_19 AND X_25", "Kimberling ETC"),
+    33: CenterConcordance(33, "orthic_intouch_perspector", "X_33", "PERSPECTOR OF ORTHIC AND INTANGENTS TRIANGLES", "Kimberling ETC"),
+    34: CenterConcordance(34, "orthocenter_beth_conjugate_of_incenter", "X_34", "X_4-BETH CONJUGATE OF X_1", "Kimberling ETC"),
+    35: CenterConcordance(35, "circumcircle_incircle_harmonic_inner", "X_35", "{X_1,X_3}-HARMONIC CONJUGATE OF X_36", "Kimberling ETC"),
     36: CenterConcordance(36, "circumcircle_inverse_of_incenter", "X_36", "INVERSE-IN-CIRCUMCIRCLE OF INCENTER", "Kimberling ETC"),
     40: CenterConcordance(40, "bevan_point", "X_40", "BEVAN POINT", "Bevan (1806)"),
+    54: CenterConcordance(54, "kosnita_point", "X_54", "KOSNITA POINT", "Kośnița (1937)"),
+    55: CenterConcordance(55, "insimilicenter_circumcircle_incircle", "X_55", "INSIMILICENTER(CIRCUMCIRCLE, INCIRCLE)", "Kimberling ETC"),
+    56: CenterConcordance(56, "exsimilicenter_circumcircle_incircle", "X_56", "EXSIMILICENTER(CIRCUMCIRCLE, INCIRCLE)", "Kimberling ETC"),
+    57: CenterConcordance(57, "isogonal_conjugate_of_mittenpunkt", "X_57", "ISOGONAL CONJUGATE OF X_9", "Kimberling ETC"),
+    58: CenterConcordance(58, "isogonal_conjugate_of_spieker", "X_58", "ISOGONAL CONJUGATE OF X_10", "Kimberling ETC"),
+    59: CenterConcordance(59, "isogonal_conjugate_of_feuerbach", "X_59", "ISOGONAL CONJUGATE OF X_11", "Kimberling ETC"),
+    60: CenterConcordance(60, "isogonal_conjugate_of_x12", "X_60", "ISOGONAL CONJUGATE OF X_12", "Kimberling ETC"),
+    61: CenterConcordance(61, "isogonal_conjugate_of_first_napoleon", "X_61", "ISOGONAL CONJUGATE OF X_17", "Kimberling ETC"),
+    62: CenterConcordance(62, "isogonal_conjugate_of_second_napoleon", "X_62", "ISOGONAL CONJUGATE OF X_18", "Kimberling ETC"),
+    63: CenterConcordance(63, "isogonal_conjugate_of_clawson", "X_63", "ISOGONAL CONJUGATE OF X_19", "Kimberling ETC"),
+    65: CenterConcordance(65, "intouch_orthocenter", "X_65", "ORTHOCENTER OF THE INTOUCH TRIANGLE", "Kimberling ETC"),
+    69: CenterConcordance(69, "isotomic_conjugate_of_orthocenter", "X_69", "SYMMEDIAN POINT OF ANTICOMPLEMENTARY TRIANGLE", "Kimberling ETC"),
     75: CenterConcordance(75, "isotomic_conjugate_of_incenter", "X_75", "ISOTOMIC CONJUGATE OF INCENTER", "Kimberling ETC"),
+    76: CenterConcordance(76, "third_brocard_point", "X_76", "3rd BROCARD POINT", "Brocard • Kimberling ETC"),
+    80: CenterConcordance(80, "incenter_feuerbach_reflection", "X_80", "REFLECTION OF X_1 IN X_11", "Kimberling ETC"),
+    85: CenterConcordance(85, "isotomic_conjugate_of_mittenpunkt", "X_85", "ISOTOMIC CONJUGATE OF X_9", "Kimberling ETC"),
+    86: CenterConcordance(86, "isotomic_conjugate_of_spieker", "X_86", "ISOTOMIC CONJUGATE OF X_10", "Kimberling ETC"),
+    95: CenterConcordance(95, "isotomic_conjugate_of_nine_point_center", "X_95", "CEVAPOINT OF X_2 AND X_3", "Kimberling ETC"),
+    100: CenterConcordance(100, "anticomplement_of_feuerbach", "X_100", "ANTICOMPLEMENT OF FEUERBACH POINT", "Kimberling ETC"),
+    115: CenterConcordance(115, "kiepert_hyperbola_center", "X_115", "CENTER OF KIEPERT HYPERBOLA", "Kiepert • Kimberling ETC"),
+    140: CenterConcordance(140, "complement_of_nine_point_center", "X_140", "MIDPOINT OF X_3 AND X_5", "Kimberling ETC"),
+    141: CenterConcordance(141, "complement_of_symmedian", "X_141", "COMPLEMENT OF SYMMEDIAN POINT", "Kimberling ETC"),
+    142: CenterConcordance(142, "complement_of_mittenpunkt", "X_142", "COMPLEMENT OF MITTENPUNKT", "Kimberling ETC"),
+    144: CenterConcordance(144, "anticomplement_of_gergonne", "X_144", "ANTICOMPLEMENT OF GERGONNE POINT", "Kimberling ETC"),
+    145: CenterConcordance(145, "anticomplement_of_nagel", "X_145", "ANTICOMPLEMENT OF NAGEL POINT", "Kimberling ETC"),
+    182: CenterConcordance(182, "brocard_circle_center", "X_182", "MIDPOINT OF X_3 AND X_6 (BROCARD CIRCLE CENTER)", "Brocard • Kimberling ETC"),
+    186: CenterConcordance(186, "circumcircle_inverse_of_orthocenter", "X_186", "INVERSE-IN-CIRCUMCIRCLE OF ORTHOCENTER", "Kimberling ETC"),
+    187: CenterConcordance(187, "circumcircle_inverse_of_symmedian", "X_187", "SCHOUTE CENTER (INVERSE-IN-CIRCUMCIRCLE OF X_6)", "Schoute • Kimberling ETC"),
+    264: CenterConcordance(264, "isotomic_conjugate_of_circumcenter", "X_264", "ISOTOMIC CONJUGATE OF CIRCUMCENTER", "Kimberling ETC"),
+    298: CenterConcordance(298, "isotomic_conjugate_of_fermat", "X_298", "ISOTOMIC CONJUGATE OF X_13", "Kimberling ETC"),
+    299: CenterConcordance(299, "isotomic_conjugate_of_second_isogonic", "X_299", "ISOTOMIC CONJUGATE OF X_14", "Kimberling ETC"),
+    300: CenterConcordance(300, "isotomic_conjugate_of_first_isodynamic", "X_300", "ISOTOMIC CONJUGATE OF X_15", "Kimberling ETC"),
+    301: CenterConcordance(301, "isotomic_conjugate_of_second_isodynamic", "X_301", "ISOTOMIC CONJUGATE OF X_16", "Kimberling ETC"),
+    302: CenterConcordance(302, "isotomic_conjugate_of_first_napoleon", "X_302", "ISOTOMIC CONJUGATE OF X_17", "Kimberling ETC"),
+    303: CenterConcordance(303, "isotomic_conjugate_of_second_napoleon", "X_303", "ISOTOMIC CONJUGATE OF X_18", "Kimberling ETC"),
+    304: CenterConcordance(304, "isotomic_conjugate_of_clawson", "X_304", "ISOTOMIC CONJUGATE OF X_19", "Kimberling ETC"),
+    381: CenterConcordance(381, "orthocentroidal_circle_center", "X_381", "MIDPOINT OF X_2 AND X_4 (ORTHOCENTROIDAL CENTER)", "Kimberling ETC"),
 }
 
 
@@ -114,6 +158,20 @@ def _model_simplify(model: Model | None, expr: sp.Expr | int) -> sp.Expr:
     return clean_expr(expr)
 
 
+def _point_priority(classes: set[str] | list[str], guide: bool) -> int:
+    """Return display/identity priority when two points coincide algebraically."""
+    cset = set(classes)
+    if "target" in cset or "selected" in cset:
+        return 5
+    if "vertex" in cset:
+        return 4
+    if not guide and "incident" not in cset:
+        return 3
+    if "incident" in cset and not guide:
+        return 2
+    return 1
+
+
 # ---------------------------------------------------------------------------
 # Public `geometor.model.Model` Element Registration (Zero Bypasses)
 # ---------------------------------------------------------------------------
@@ -133,23 +191,86 @@ def add_point(
     parents: list[Any] | None = None,
     guide: bool = False,
 ) -> spg.Point:
-    """Register or update an exact :class:`sympy.geometry.Point` in ``model``."""
+    """Register or update an exact :class:`sympy.geometry.Point` in ``model``.
+
+    Preserves distinct logical aliases on ``element._etc_coincident`` when distinct
+    geometric points coincide on special triangles (e.g. ``X_4 = C``, ``X_19 = C``,
+    ``H_a = C``, or ``X_3 = M_c`` on right triangles), preventing ``incident`` or
+    ``guide`` flags from hiding primary vertices or target centers.
+    """
+    new_cls = list(classes) if classes else []
     existing = model.get_element_by_ID(ID)
     if existing is not None and isinstance(existing, spg.Point):
-        if classes:
-            for c in classes:
-                model[existing].classes[c] = ""
+        el_ex = model[existing]
+        ex_cls = set(el_ex.classes.keys())
+        if "incident" not in new_cls:
+            el_ex.classes.pop("incident", None)
+        for c in new_cls:
+            if c == "incident" and ("vertex" in ex_cls or "target" in ex_cls or "selected" in ex_cls):
+                continue
+            el_ex.classes[c] = ""
         if not guide:
-            model[existing].guide = False
+            el_ex.guide = False
+            el_ex.classes.pop("guide", None)
         return existing
 
     sx = _to_exact_expr(x, model)
     sy = _to_exact_expr(y, model)
+
+    # Check if another point already occupies these exact symbolic coordinates
+    fx = float(sx.evalf(20))
+    fy = float(sy.evalf(20))
+    for prev_pt in model.points:
+        el_prev = model[prev_pt]
+        prev_approx = el_prev.approx_coords
+        if (
+            prev_approx is not None
+            and abs(fx - prev_approx[0]) < 1e-8
+            and abs(fy - prev_approx[1]) < 1e-8
+            and zero_test(sx - prev_pt.x)
+            and zero_test(sy - prev_pt.y)
+        ):
+            old_id = el_prev.ID
+            old_cls_list = list(el_prev.classes.keys())
+            old_guide = bool(el_prev.guide)
+            coinc_list: list[dict[str, Any]] = getattr(el_prev, "_etc_coincident", None) or []
+
+            old_prio = _point_priority(old_cls_list, old_guide)
+            new_prio = _point_priority(new_cls, guide)
+
+            for p_par in parents or []:
+                if p_par in model:
+                    el_prev.parents[p_par] = ""
+
+            if new_prio > old_prio:
+                if old_id and old_id != ID and not any(c["ID"] == old_id for c in coinc_list):
+                    coinc_list.append(
+                        {"ID": old_id, "classes": old_cls_list, "guide": old_guide}
+                    )
+                el_prev.ID = ID
+                el_prev.guide = guide
+                el_prev.classes.clear()
+                for c in new_cls:
+                    el_prev.classes[c] = ""
+                if "vertex" in old_cls_list:
+                    el_prev.classes["vertex"] = ""
+            else:
+                if ID and ID != old_id and not any(c["ID"] == ID for c in coinc_list):
+                    coinc_list.append(
+                        {"ID": ID, "classes": new_cls, "guide": guide}
+                    )
+                elif ID == old_id:
+                    for c in new_cls:
+                        if c not in {"incident", "guide"}:
+                            el_prev.classes[c] = ""
+            el_prev._etc_coincident = coinc_list
+            return prev_pt
+
     return model.set_point(
         sx,
         sy,
         parents=parents or [],
-        classes=list(classes) if classes else [],
+        classes=new_cls,
         ID=ID,
         guide=guide,
     )
@@ -168,10 +289,46 @@ def add_line(
         return None
     if zero_test(pt1.x - pt2.x) and zero_test(pt1.y - pt2.y):
         return None
+
+    new_cls = list(classes) if classes else []
+    # Check if an existing line in `model` already coincides with `pt1-pt2`
+    for ex_line in model.lines:
+        dx = _model_simplify(model, ex_line.p2.x - ex_line.p1.x)
+        dy = _model_simplify(model, ex_line.p2.y - ex_line.p1.y)
+        c1 = _model_simplify(model, dx * (pt1.y - ex_line.p1.y) - dy * (pt1.x - ex_line.p1.x))
+        c2 = _model_simplify(model, dx * (pt2.y - ex_line.p1.y) - dy * (pt2.x - ex_line.p1.x))
+        if zero_test(c1) and zero_test(c2):
+            el_line = model[ex_line]
+            old_cls = set(el_line.classes.keys())
+            coinc_lines: list[dict[str, Any]] = getattr(el_line, "_etc_coincident_lines", None) or []
+            eff_id = ID or f"[ {model[pt1].ID} {model[pt2].ID} ]"
+            if eff_id and eff_id != el_line.ID and not any(cl["ID"] == eff_id for cl in coinc_lines):
+                coinc_lines.append(
+                    {
+                        "ID": eff_id,
+                        "pt1": model[pt1].ID if pt1 in model else "",
+                        "pt2": model[pt2].ID if pt2 in model else "",
+                        "classes": new_cls,
+                        "guide": guide,
+                    }
+                )
+                el_line._etc_coincident_lines = coinc_lines
+            # Only promote an existing incident/guide line if the new line is primary
+            if ("incident" in old_cls and "incident" not in new_cls) or (el_line.guide and not guide):
+                if "incident" not in new_cls:
+                    el_line.classes.pop("incident", None)
+                if not guide:
+                    el_line.guide = False
+                    el_line.classes.pop("guide", None)
+                for c in new_cls:
+                    if c not in {"incident", "guide"}:
+                        el_line.classes[c] = ""
+            return ex_line
+
     return model.construct_line(
         pt1,
         pt2,
-        classes=list(classes) if classes else [],
+        classes=new_cls,
         ID=ID,
         guide=guide,
         intersect=False,
@@ -225,8 +382,18 @@ def add_polygon(
     pts: list[spg.Point],
     ID: str = "",
     classes: list[str] | None = None,
-) -> spg.Polygon:
+) -> spg.Polygon | None:
     """Construct and register an exact :class:`sympy.geometry.Polygon` in ``model``."""
+    if len(pts) < 3:
+        return None
+    if len(pts) == 3:
+        area2 = _model_simplify(
+            model,
+            (pts[1].x - pts[0].x) * (pts[2].y - pts[0].y)
+            - (pts[2].x - pts[0].x) * (pts[1].y - pts[0].y),
+        )
+        if zero_test(area2):
+            return None
     return model.construct_polygon(
         pts,
         classes=list(classes) if classes else [],
@@ -941,6 +1108,92 @@ def tangential_triangle(
     return Ta, Tb, Tc
 
 
+def symmedial_triangle(
+    model: Model,
+    A: spg.Point,
+    B: spg.Point,
+    C: spg.Point,
+    draw_polygon: bool = True,
+) -> tuple[spg.Point, spg.Point, spg.Point]:
+    """Construct the symmedial (Lemoine cevian) triangle ``Sym_a Sym_b Sym_c``."""
+    qa, qb, qc = triangle_side_quadrances(A, B, C, model=model)
+    Sa = point_from_barycentrics(model, A, B, C, 0, qb, qc, ID="Sym_a", guide=True)
+    Sb = point_from_barycentrics(model, A, B, C, qa, 0, qc, ID="Sym_b", guide=True)
+    Sc = point_from_barycentrics(model, A, B, C, qa, qb, 0, ID="Sym_c", guide=True)
+    if draw_polygon:
+        add_polygon(model, [Sa, Sb, Sc], ID="< Sym_a Sym_b Sym_c >", classes=["secondary"])
+    return Sa, Sb, Sc
+
+
+def feuerbach_triangle(
+    model: Model,
+    A: spg.Point,
+    B: spg.Point,
+    C: spg.Point,
+    draw_polygon: bool = True,
+) -> tuple[spg.Point, spg.Point, spg.Point]:
+    """Construct the Feuerbach triangle ``F_a F_b F_c`` (nine-point / excircle touchpoints)."""
+    a, b, c = triangle_side_lengths(A, B, C, model=model)
+    X5 = nine_point_center(model, A, B, C, ID="X_5", classes=["center"])
+    w_abc = _model_simplify(model, a * b * c)
+    p0 = a + b + c
+    pa = -a + b + c
+    pb = a - b + c
+    pc = a + b - c
+
+    def _touch(
+        ja_u: sp.Expr, ja_v: sp.Expr, ja_w: sp.Expr, w_x5: sp.Expr, fid: str
+    ) -> spg.Point:
+        j_sum = _model_simplify(model, ja_u + ja_v + ja_w)
+        jx = _model_simplify(model, (ja_u * A.x + ja_v * B.x + ja_w * C.x) / j_sum)
+        jy = _model_simplify(model, (ja_u * A.y + ja_v * B.y + ja_w * C.y) / j_sum)
+        wx = _model_simplify(model, w_x5)
+        den = _model_simplify(model, wx + w_abc)
+        fx = _model_simplify(model, (wx * X5.x + w_abc * jx) / den)
+        fy = _model_simplify(model, (wx * X5.y + w_abc * jy) / den)
+        return add_point(
+            model, fx, fy, ID=fid, classes=["foot", "guide"], parents=[A, B, C, X5], guide=True
+        )
+
+    Fa = _touch(-a, b, c, p0 * pb * pc, "F_a")
+    Fb = _touch(a, -b, c, p0 * pc * pa, "F_b")
+    Fc = _touch(a, b, -c, p0 * pa * pb, "F_c")
+    if draw_polygon:
+        add_polygon(model, [Fa, Fb, Fc], ID="< F_a F_b F_c >", classes=["secondary"])
+    return Fa, Fb, Fc
+
+
+def apollonian_circles(
+    model: Model,
+    A: spg.Point,
+    B: spg.Point,
+    C: spg.Point,
+) -> list[spg.Circle]:
+    """Construct the three Apollonian circles passing through ``A, B, C`` and ``X_15, X_16``."""
+    qa, qb, qc = triangle_side_quadrances(A, B, C, model=model)
+    circles: list[spg.Circle] = []
+    specs = [
+        (qb - qc, (sp.Integer(0), qb, -qc), "Ap_a", A, "A-Apollonian circle"),
+        (qc - qa, (-qa, sp.Integer(0), qc), "Ap_b", B, "B-Apollonian circle"),
+        (qa - qb, (qa, -qb, sp.Integer(0)), "Ap_c", C, "C-Apollonian circle"),
+    ]
+    for diff, (u, v, w), cid, vtx, circ_id in specs:
+        if not zero_test(diff):
+            ap_pt = point_from_barycentrics(
+                model, A, B, C, u, v, w, ID=cid, classes=["guide"], guide=True
+            )
+            circ = add_circle(
+                model,
+                ap_pt,
+                vtx,
+                ID=circ_id,
+                classes=["secondary_circle", "apollonian_circle"],
+            )
+            if circ is not None:
+                circles.append(circ)
+    return circles
+
+
 def outer_equilateral_triangles(
     model: Model,
     A: spg.Point,
@@ -1179,7 +1432,19 @@ def circumcenter(
         Mc = midpoint(model, A, B, ID="M_c", guide=True)
         add_line(model, X3, Ma, ID=f"[ {ID} M_a ]", classes=["bisector"])
         add_line(model, X3, Mb, ID=f"[ {ID} M_b ]", classes=["bisector"])
-        add_line(model, X3, Mc, ID=f"[ {ID} M_c ]", classes=["bisector"])
+        if zero_test(X3.x - Mc.x) and zero_test(X3.y - Mc.y):
+            P_mc = add_point(
+                model,
+                _model_simplify(model, Mc.x - (B.y - A.y) / sp.Integer(4)),
+                _model_simplify(model, Mc.y + (B.x - A.x) / sp.Integer(4)),
+                ID="P_mc",
+                classes=["guide"],
+                parents=[A, B, Mc],
+                guide=True,
+            )
+            add_line(model, Mc, P_mc, ID=f"[ {ID} M_c ]", classes=["bisector"])
+        else:
+            add_line(model, X3, Mc, ID=f"[ {ID} M_c ]", classes=["bisector"])
     if draw_circumcircle:
         add_circle(model, X3, A, ID="circumcircle", classes=["circumcircle"])
     return X3
@@ -1199,14 +1464,15 @@ def orthocenter(
     sa = _model_simplify(model, qb + qc - qa)
     sb = _model_simplify(model, qc + qa - qb)
     sc = _model_simplify(model, qa + qb - qc)
+    X4 = point_from_barycentrics(
+        model, A, B, C, sb * sc, sc * sa, sa * sb, ID=ID, classes=classes or ["center"]
+    )
     if draw_altitudes:
         Ha, Hb, Hc = orthic_triangle(model, A, B, C, draw_polygon=True)
         add_line(model, A, Ha, ID="[ A H_a ]", classes=["bisector"])
         add_line(model, B, Hb, ID="[ B H_b ]", classes=["bisector"])
         add_line(model, C, Hc, ID="[ C H_c ]", classes=["bisector"])
-    return point_from_barycentrics(
-        model, A, B, C, sb * sc, sc * sa, sa * sb, ID=ID, classes=classes or ["center"]
-    )
+    return X4
 
 
 def nine_point_center(
@@ -1217,6 +1483,7 @@ def nine_point_center(
     ID: str = "X_5",
     classes: list[str] | None = None,
     draw_circle: bool = False,
+    draw_nine_points: bool = False,
 ) -> spg.Point:
     """Construct the nine-point center ``X_5`` of triangle ``ABC``."""
     qa, qb, qc = triangle_side_quadrances(A, B, C, model=model)
@@ -1226,7 +1493,28 @@ def nine_point_center(
     X5 = point_from_barycentrics(
         model, A, B, C, u, v, w, ID=ID, classes=classes or ["center"]
     )
-    if draw_circle:
+    if draw_nine_points:
+        _, _, Mc = medial_triangle(model, A, B, C, draw_polygon=True)
+        orthic_triangle(model, A, B, C, draw_polygon=False)
+        sa = _model_simplify(model, qb + qc - qa)
+        sb = _model_simplify(model, qc + qa - qb)
+        sc = _model_simplify(model, qa + qb - qc)
+        hu, hv, hw = sb * sc, sc * sa, sa * sb
+        hsum = _model_simplify(model, hu + hv + hw)
+        hx = _model_simplify(model, (hu * A.x + hv * B.x + hw * C.x) / hsum)
+        hy = _model_simplify(model, (hu * A.y + hv * B.y + hw * C.y) / hsum)
+        for vtx, eid in [(A, "Eu_a"), (B, "Eu_b"), (C, "Eu_c")]:
+            add_point(
+                model,
+                _model_simplify(model, (vtx.x + hx) / sp.Integer(2)),
+                _model_simplify(model, (vtx.y + hy) / sp.Integer(2)),
+                ID=eid,
+                classes=["guide"],
+                parents=[A, B, C],
+                guide=True,
+            )
+        add_circle(model, X5, Mc, ID="nine_point_circle", classes=["nine_point_circle"])
+    elif draw_circle:
         Mc = model.get_element_by_ID("M_c")
         if not isinstance(Mc, spg.Point):
             Mc = midpoint(model, A, B, ID="M_c", guide=True)
@@ -1245,16 +1533,16 @@ def symmedian_point(
 ) -> spg.Point:
     """Construct the symmedian (Lemoine) point ``X_6`` of triangle ``ABC``."""
     qa, qb, qc = triangle_side_quadrances(A, B, C, model=model)
-    if draw_symmedians:
-        Ta, Tb, Tc = tangential_triangle(
-            model, A, B, C, draw_polygon=True, draw_circumcircle=True
-        )
-        add_line(model, A, Ta, ID="[ A Tan_a ]", classes=["bisector"])
-        add_line(model, B, Tb, ID="[ B Tan_b ]", classes=["bisector"])
-        add_line(model, C, Tc, ID="[ C Tan_c ]", classes=["bisector"])
-    return point_from_barycentrics(
+    X6 = point_from_barycentrics(
         model, A, B, C, qa, qb, qc, ID=ID, classes=classes or ["center"]
     )
+    if draw_symmedians:
+        circumcircle(model, A, B, C)
+        Sa, Sb, Sc = symmedial_triangle(model, A, B, C, draw_polygon=True)
+        add_line(model, A, Sa, ID="[ A Sym_a ]", classes=["bisector"])
+        add_line(model, B, Sb, ID="[ B Sym_b ]", classes=["bisector"])
+        add_line(model, C, Sc, ID="[ C Sym_c ]", classes=["bisector"])
+    return X6
 
 
 def gergonne_point(
@@ -1268,16 +1556,8 @@ def gergonne_point(
     draw_intouch: bool = False,
 ) -> spg.Point:
     """Construct the Gergonne point ``X_7`` of triangle ``ABC``."""
-    if draw_cevians or draw_intouch:
-        Ta, Tb, Tc = intouch_triangle(
-            model, A, B, C, draw_polygon=True, draw_incircle=True
-        )
-        if draw_cevians:
-            add_line(model, A, Ta, ID="[ A T_a ]", classes=["bisector"])
-            add_line(model, B, Tb, ID="[ B T_b ]", classes=["bisector"])
-            add_line(model, C, Tc, ID="[ C T_c ]", classes=["bisector"])
     a, b, c = triangle_side_lengths(A, B, C, model=model)
-    return point_from_barycentrics(
+    X7 = point_from_barycentrics(
         model,
         A,
         B,
@@ -1288,6 +1568,15 @@ def gergonne_point(
         ID=ID,
         classes=classes or ["center"],
     )
+    if draw_cevians or draw_intouch:
+        Ta, Tb, Tc = intouch_triangle(
+            model, A, B, C, draw_polygon=True, draw_incircle=True
+        )
+        if draw_cevians:
+            add_line(model, A, Ta, ID="[ A T_a ]", classes=["bisector"])
+            add_line(model, B, Tb, ID="[ B T_b ]", classes=["bisector"])
+            add_line(model, C, Tc, ID="[ C T_c ]", classes=["bisector"])
+    return X7
 
 
 def nagel_point(
@@ -1301,14 +1590,8 @@ def nagel_point(
     draw_extouch: bool = False,
 ) -> spg.Point:
     """Construct the Nagel point ``X_8`` of triangle ``ABC``."""
-    if draw_cevians or draw_extouch:
-        Na, Nb, Nc = extouch_triangle(model, A, B, C, draw_polygon=True)
-        if draw_cevians:
-            add_line(model, A, Na, ID="[ A N_a ]", classes=["bisector"])
-            add_line(model, B, Nb, ID="[ B N_b ]", classes=["bisector"])
-            add_line(model, C, Nc, ID="[ C N_c ]", classes=["bisector"])
     a, b, c = triangle_side_lengths(A, B, C, model=model)
-    return point_from_barycentrics(
+    X8 = point_from_barycentrics(
         model,
         A,
         B,
@@ -1319,6 +1602,13 @@ def nagel_point(
         ID=ID,
         classes=classes or ["center"],
     )
+    if draw_cevians or draw_extouch:
+        Na, Nb, Nc = extouch_triangle(model, A, B, C, draw_polygon=True)
+        if draw_cevians:
+            add_line(model, A, Na, ID="[ A N_a ]", classes=["bisector"])
+            add_line(model, B, Nb, ID="[ B N_b ]", classes=["bisector"])
+            add_line(model, C, Nc, ID="[ C N_c ]", classes=["bisector"])
+    return X8
 
 
 def mittenpunkt(
@@ -1328,10 +1618,11 @@ def mittenpunkt(
     C: spg.Point,
     ID: str = "X_9",
     classes: list[str] | None = None,
+    draw_symmedians: bool = False,
 ) -> spg.Point:
     """Construct the Mittenpunkt ``X_9`` of triangle ``ABC``."""
     a, b, c = triangle_side_lengths(A, B, C, model=model)
-    return point_from_barycentrics(
+    X9 = point_from_barycentrics(
         model,
         A,
         B,
@@ -1342,6 +1633,13 @@ def mittenpunkt(
         ID=ID,
         classes=classes or ["center"],
     )
+    if draw_symmedians:
+        Ja, Jb, Jc = excentral_triangle(model, A, B, C, draw_polygon=True)
+        Ma, Mb, Mc = medial_triangle(model, A, B, C, draw_polygon=True)
+        add_line(model, Ja, Ma, ID="[ J_a M_a ]", classes=["bisector"])
+        add_line(model, Jb, Mb, ID="[ J_b M_b ]", classes=["bisector"])
+        add_line(model, Jc, Mc, ID="[ J_c M_c ]", classes=["bisector"])
+    return X9
 
 
 def spieker_center(
@@ -1384,11 +1682,8 @@ def feuerbach_point(
     draw_circles: bool = False,
 ) -> spg.Point:
     """Construct the Feuerbach point ``X_11`` of triangle ``ABC``."""
-    if draw_circles:
-        incircle(model, A, B, C)
-        nine_point_circle(model, A, B, C)
     a, b, c = triangle_side_lengths(A, B, C, model=model)
-    return point_from_barycentrics(
+    X11 = point_from_barycentrics(
         model,
         A,
         B,
@@ -1399,6 +1694,10 @@ def feuerbach_point(
         ID=ID,
         classes=classes or ["center"],
     )
+    if draw_circles:
+        incircle(model, A, B, C)
+        nine_point_circle(model, A, B, C)
+    return X11
 
 
 def harmonic_feuerbach_point(
@@ -1408,10 +1707,11 @@ def harmonic_feuerbach_point(
     C: spg.Point,
     ID: str = "X_12",
     classes: list[str] | None = None,
+    draw_feuerbach: bool = False,
 ) -> spg.Point:
     """Construct ``X_12`` (the ``{X_1, X_5}``-harmonic conjugate of ``X_11``)."""
     a, b, c = triangle_side_lengths(A, B, C, model=model)
-    return point_from_barycentrics(
+    X12 = point_from_barycentrics(
         model,
         A,
         B,
@@ -1422,6 +1722,15 @@ def harmonic_feuerbach_point(
         ID=ID,
         classes=classes or ["center"],
     )
+    if draw_feuerbach:
+        incircle(model, A, B, C)
+        nine_point_circle(model, A, B, C)
+        feuerbach_point(model, A, B, C, ID="X_11", classes=["center"])
+        Fa, Fb, Fc = feuerbach_triangle(model, A, B, C, draw_polygon=True)
+        add_line(model, A, Fa, ID="[ A F_a ]", classes=["bisector"])
+        add_line(model, B, Fb, ID="[ B F_b ]", classes=["bisector"])
+        add_line(model, C, Fc, ID="[ C F_c ]", classes=["bisector"])
+    return X12
 
 
 def fermat_point(
@@ -1434,18 +1743,13 @@ def fermat_point(
     draw_equilaterals: bool = False,
 ) -> spg.Point:
     """Construct the 1st isogonic center (Fermat point) ``X_13``."""
-    if draw_equilaterals:
-        Ea, Eb, Ec = outer_equilateral_triangles(model, A, B, C, draw_polygons=True)
-        add_line(model, A, Ea, ID="[ A A' ]", classes=["bisector"])
-        add_line(model, B, Eb, ID="[ B B' ]", classes=["bisector"])
-        add_line(model, C, Ec, ID="[ C C' ]", classes=["bisector"])
     qa, qb, qc = triangle_side_quadrances(A, B, C, model=model)
     SA = _model_simplify(model, (qb + qc - qa) / sp.Integer(2))
     SB = _model_simplify(model, (qc + qa - qb) / sp.Integer(2))
     SC = _model_simplify(model, (qa + qb - qc) / sp.Integer(2))
     S = _model_simplify(model, sp.Integer(2) * abs(triangle_signed_area(A, B, C, model=model)))
     s3 = sp.sqrt(3)
-    return point_from_barycentrics(
+    X13 = point_from_barycentrics(
         model,
         A,
         B,
@@ -1456,6 +1760,12 @@ def fermat_point(
         ID=ID,
         classes=classes or ["center"],
     )
+    if draw_equilaterals:
+        Ea, Eb, Ec = outer_equilateral_triangles(model, A, B, C, draw_polygons=True)
+        add_line(model, A, Ea, ID="[ A A' ]", classes=["bisector"])
+        add_line(model, B, Eb, ID="[ B B' ]", classes=["bisector"])
+        add_line(model, C, Ec, ID="[ C C' ]", classes=["bisector"])
+    return X13
 
 
 def second_isogonic_center(
@@ -1465,6 +1775,7 @@ def second_isogonic_center(
     C: spg.Point,
     ID: str = "X_14",
     classes: list[str] | None = None,
+    draw_equilaterals: bool = False,
 ) -> spg.Point:
     """Construct the 2nd isogonic center ``X_14``."""
     qa, qb, qc = triangle_side_quadrances(A, B, C, model=model)
@@ -1473,7 +1784,7 @@ def second_isogonic_center(
     SC = _model_simplify(model, (qa + qb - qc) / sp.Integer(2))
     S = _model_simplify(model, sp.Integer(2) * abs(triangle_signed_area(A, B, C, model=model)))
     s3 = sp.sqrt(3)
-    return point_from_barycentrics(
+    X14 = point_from_barycentrics(
         model,
         A,
         B,
@@ -1484,6 +1795,12 @@ def second_isogonic_center(
         ID=ID,
         classes=classes or ["center"],
     )
+    if draw_equilaterals:
+        Ea, Eb, Ec = inner_equilateral_triangles(model, A, B, C, draw_polygons=True)
+        add_line(model, A, Ea, ID="[ A A'' ]", classes=["bisector"])
+        add_line(model, B, Eb, ID="[ B B'' ]", classes=["bisector"])
+        add_line(model, C, Ec, ID="[ C C'' ]", classes=["bisector"])
+    return X14
 
 
 def first_isodynamic_point(
@@ -1493,6 +1810,8 @@ def first_isodynamic_point(
     C: spg.Point,
     ID: str = "X_15",
     classes: list[str] | None = None,
+    draw_apollonian: bool = False,
+    draw_pedal: bool = False,
 ) -> spg.Point:
     """Construct the 1st isodynamic point ``X_15``."""
     qa, qb, qc = triangle_side_quadrances(A, B, C, model=model)
@@ -1501,7 +1820,7 @@ def first_isodynamic_point(
     SC = _model_simplify(model, (qa + qb - qc) / sp.Integer(2))
     S = _model_simplify(model, sp.Integer(2) * abs(triangle_signed_area(A, B, C, model=model)))
     s3 = sp.sqrt(3)
-    return point_from_barycentrics(
+    X15 = point_from_barycentrics(
         model,
         A,
         B,
@@ -1512,6 +1831,12 @@ def first_isodynamic_point(
         ID=ID,
         classes=classes or ["center"],
     )
+    if draw_apollonian:
+        circumcircle(model, A, B, C)
+        apollonian_circles(model, A, B, C)
+    if draw_pedal:
+        pedal_triangle(model, A, B, C, X15, prefix="Pd", draw_polygon=True)
+    return X15
 
 
 def second_isodynamic_point(
@@ -1521,6 +1846,8 @@ def second_isodynamic_point(
     C: spg.Point,
     ID: str = "X_16",
     classes: list[str] | None = None,
+    draw_apollonian: bool = False,
+    draw_pedal: bool = False,
 ) -> spg.Point:
     """Construct the 2nd isodynamic point ``X_16``."""
     qa, qb, qc = triangle_side_quadrances(A, B, C, model=model)
@@ -1529,7 +1856,7 @@ def second_isodynamic_point(
     SC = _model_simplify(model, (qa + qb - qc) / sp.Integer(2))
     S = _model_simplify(model, sp.Integer(2) * abs(triangle_signed_area(A, B, C, model=model)))
     s3 = sp.sqrt(3)
-    return point_from_barycentrics(
+    X16 = point_from_barycentrics(
         model,
         A,
         B,
@@ -1540,6 +1867,12 @@ def second_isodynamic_point(
         ID=ID,
         classes=classes or ["center"],
     )
+    if draw_apollonian:
+        circumcircle(model, A, B, C)
+        apollonian_circles(model, A, B, C)
+    if draw_pedal:
+        pedal_triangle(model, A, B, C, X16, prefix="Pd", draw_polygon=True)
+    return X16
 
 
 def first_napoleon_point(
@@ -1549,6 +1882,7 @@ def first_napoleon_point(
     C: spg.Point,
     ID: str = "X_17",
     classes: list[str] | None = None,
+    draw_napoleon: bool = False,
 ) -> spg.Point:
     """Construct the 1st Napoleon point ``X_17``."""
     qa, qb, qc = triangle_side_quadrances(A, B, C, model=model)
@@ -1557,7 +1891,7 @@ def first_napoleon_point(
     SC = _model_simplify(model, (qa + qb - qc) / sp.Integer(2))
     S = _model_simplify(model, sp.Integer(2) * abs(triangle_signed_area(A, B, C, model=model)))
     s3 = sp.sqrt(3)
-    return point_from_barycentrics(
+    X17 = point_from_barycentrics(
         model,
         A,
         B,
@@ -1568,6 +1902,12 @@ def first_napoleon_point(
         ID=ID,
         classes=classes or ["center"],
     )
+    if draw_napoleon:
+        Na, Nb, Nc = outer_napoleon_triangle(model, A, B, C, draw_polygon=True)
+        add_line(model, A, Na, ID="[ A Nap_a ]", classes=["bisector"])
+        add_line(model, B, Nb, ID="[ B Nap_b ]", classes=["bisector"])
+        add_line(model, C, Nc, ID="[ C Nap_c ]", classes=["bisector"])
+    return X17
 
 
 def second_napoleon_point(
@@ -1577,6 +1917,7 @@ def second_napoleon_point(
     C: spg.Point,
     ID: str = "X_18",
     classes: list[str] | None = None,
+    draw_napoleon: bool = False,
 ) -> spg.Point:
     """Construct the 2nd Napoleon point ``X_18``."""
     qa, qb, qc = triangle_side_quadrances(A, B, C, model=model)
@@ -1585,7 +1926,7 @@ def second_napoleon_point(
     SC = _model_simplify(model, (qa + qb - qc) / sp.Integer(2))
     S = _model_simplify(model, sp.Integer(2) * abs(triangle_signed_area(A, B, C, model=model)))
     s3 = sp.sqrt(3)
-    return point_from_barycentrics(
+    X18 = point_from_barycentrics(
         model,
         A,
         B,
@@ -1596,6 +1937,12 @@ def second_napoleon_point(
         ID=ID,
         classes=classes or ["center"],
     )
+    if draw_napoleon:
+        Na, Nb, Nc = inner_napoleon_triangle(model, A, B, C, draw_polygon=True)
+        add_line(model, A, Na, ID="[ A Nap'_a ]", classes=["bisector"])
+        add_line(model, B, Nb, ID="[ B Nap'_b ]", classes=["bisector"])
+        add_line(model, C, Nc, ID="[ C Nap'_c ]", classes=["bisector"])
+    return X18
 
 
 def clawson_point(
@@ -1605,6 +1952,7 @@ def clawson_point(
     C: spg.Point,
     ID: str = "X_19",
     classes: list[str] | None = None,
+    draw_cevians: bool = False,
 ) -> spg.Point:
     """Construct the Clawson point ``X_19``."""
     a, b, c = triangle_side_lengths(A, B, C, model=model)
@@ -1612,7 +1960,7 @@ def clawson_point(
     sa = _model_simplify(model, qb + qc - qa)
     sb = _model_simplify(model, qc + qa - qb)
     sc = _model_simplify(model, qa + qb - qc)
-    return point_from_barycentrics(
+    X19 = point_from_barycentrics(
         model,
         A,
         B,
@@ -1623,6 +1971,18 @@ def clawson_point(
         ID=ID,
         classes=classes or ["center"],
     )
+    if draw_cevians:
+        _, _, Hc = orthic_triangle(model, A, B, C, draw_polygon=True)
+        if not zero_test(sa * sb * sc):
+            Pa, Pb, Pc = cevian_triangle(
+                model, A, B, C, X19, prefix="P", draw_polygon=True
+            )
+            add_line(model, A, Pa, ID="[ A P_a ]", classes=["bisector"])
+            add_line(model, B, Pb, ID="[ B P_b ]", classes=["bisector"])
+            add_line(model, C, Pc, ID="[ C P_c ]", classes=["bisector"])
+        else:
+            add_line(model, C, Hc, ID="[ C H_c ]", classes=["bisector"])
+    return X19
 
 
 def de_longchamps_point(
@@ -1706,6 +2066,64 @@ def isotomic_conjugate_of_incenter(
     )
 
 
+_OPS_REGISTRY_CACHE: dict[str, CenterSymbolicRegistry] = {}
+
+
+def exact_center_point(
+    model: Model,
+    A: spg.Point,
+    B: spg.Point,
+    C: spg.Point,
+    num: int,
+    ID: str = "",
+    classes: list[str] | None = None,
+    guide: bool = False,
+) -> spg.Point:
+    """Construct any exact closed-form Kimberling center ``X_num`` without trigonometric strings."""
+    eff_id = ID or f"X_{num}"
+    eff_cls = classes if classes is not None else ["center"]
+    tri = getattr(model, "_etc_triangle", None)
+    if (
+        isinstance(tri, SymbolicTriangle)
+        and zero_test(A.x - tri.A_xy[0])
+        and zero_test(A.y - tri.A_xy[1])
+        and zero_test(B.x - tri.B_xy[0])
+        and zero_test(B.y - tri.B_xy[1])
+        and zero_test(C.x - tri.C_xy[0])
+        and zero_test(C.y - tri.C_xy[1])
+    ):
+        reg = _OPS_REGISTRY_CACHE.get(tri.key)
+        if reg is None:
+            reg = CenterSymbolicRegistry(tri)
+            _OPS_REGISTRY_CACHE[tri.key] = reg
+        rec = reg.get(num)
+        return add_point(
+            model,
+            rec.xy[0],
+            rec.xy[1],
+            ID=eff_id,
+            classes=eff_cls,
+            parents=[A, B, C],
+            guide=guide,
+        )
+
+    if num not in EXACT_CYCLIC_BARYCENTRICS:
+        raise KeyError(f"No built-in exact symbolic generator for X_{num}.")
+    fn = EXACT_CYCLIC_BARYCENTRICS[num]
+    a, b, c = triangle_side_lengths(A, B, C, model=model)
+    qa, qb, qc = triangle_side_quadrances(A, B, C, model=model)
+    SA = _model_simplify(model, (qb + qc - qa) / sp.Integer(2))
+    SB = _model_simplify(model, (qc + qa - qb) / sp.Integer(2))
+    SC = _model_simplify(model, (qa + qb - qc) / sp.Integer(2))
+    S = _model_simplify(model, sp.Integer(2) * abs(triangle_signed_area(A, B, C, model=model)))
+    u = fn(a, b, c, SA, SB, SC, S)
+    v = fn(b, c, a, SB, SC, SA, S)
+    w = fn(c, a, b, SC, SA, SB, S)
+    return point_from_barycentrics(
+        model, A, B, C, u, v, w, ID=eff_id, classes=eff_cls, guide=guide
+    )
+
+
 # Backward-compatible `*_of` aliases for existing center construction scripts
 incenter_of = incenter
 centroid_of = centroid
@@ -1771,6 +2189,18 @@ def spieker_circle(
         model, X10, Ma, Mb, ID="T_sp", classes=["foot", "guide"], guide=True
     )
     return add_circle(model, X10, Tsp, ID="spieker_circle", classes=["incircle"])
+
+
+def orthocentroidal_circle(
+    model: Model, A: spg.Point, B: spg.Point, C: spg.Point
+) -> spg.Circle | None:
+    """Construct the exact orthocentroidal circle on diameter ``X_2 X_4`` centered at ``X_381``."""
+    X2 = centroid(model, A, B, C, ID="X_2")
+    X4 = orthocenter(model, A, B, C, ID="X_4")
+    X381 = midpoint(model, X2, X4, ID="X_381", guide=True)
+    return add_circle(
+        model, X381, X2, ID="orthocentroidal_circle", classes=["secondary_circle"]
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -1960,3 +2390,33 @@ def central_line(
     if incident:
         cls.append("incident")
     return add_line(model, P, Q, ID=f"{{ {i_num}, {j_num} }}", classes=cls)
+
+
+def build_symbolic_collection_1_model(
+    preset: str = "heronian",
+    show_guides: bool = False,
+) -> Model:
+    """Construct the exact symbolic Collection 1 constellation (``X_1``–``X_19``)."""
+    model = create_model("X_1-X_19")
+    A, B, C = construct_reference_triangle(model, preset=preset, show_guides=show_guides)
+
+    pts: dict[int, spg.Point] = {}
+    for n in range(1, 20):
+        pts[n] = exact_center_point(
+            model, A, B, C, n, ID=f"X_{n}", classes=["selected", "target"]
+        )
+
+    circumcircle(model, A, B, C)
+    incircle(model, A, B, C)
+    nine_point_circle(model, A, B, C)
+
+    # Fundamental axes organizing Collection 1
+    central_line(model, pts[2], pts[3], 2, 3, incident=False)  # Euler line
+    central_line(model, pts[1], pts[2], 1, 2, incident=False)  # Nagel line
+    central_line(model, pts[3], pts[6], 3, 6, incident=False)  # Brocard axis
+    central_line(model, pts[1], pts[5], 1, 5, incident=False)  # Feuerbach line
+
+    for n in range(1, 20):
+        promote_point_to_top(model, pts[n])
+
+    return model

@@ -11,7 +11,7 @@ algebraic number fields in SymPy:
 
 from __future__ import annotations
 
-from collections.abc import Callable
+from collections.abc import Callable, Iterable
 from dataclasses import dataclass
 
 import sympy as sp
@@ -24,22 +24,129 @@ from geometor.model import (
 
 PHI: sp.Expr = (sp.Integer(1) + sp.sqrt(5)) / sp.Integer(2)
 SQRT_PHI: sp.Expr = sp.sqrt(PHI)
+SQRT_3: sp.Expr = sp.sqrt(3)
 SQRT_35: sp.Expr = sp.sqrt(35)
+SQRT_105: sp.Expr = sp.sqrt(105)
+_U3 = sp.Dummy("u3")
+
+
+def _extract_u3(expr: sp.Expr) -> tuple[sp.Expr, bool]:
+    """Replace factor-of-3 square-root atoms with polynomial dummy ``_U3``."""
+    repl: dict[sp.Basic, sp.Expr] = {}
+    for p in expr.atoms(sp.Pow):
+        if not (isinstance(p.exp, sp.Rational) and p.exp.q == 2):
+            continue
+        k = int(p.exp.p)
+        base = p.base
+        if base.is_Integer:
+            b_int = int(base)
+            if b_int > 0 and b_int % 3 == 0 and (b_int // 3) % 3 != 0:
+                q_pow = sp.Pow(sp.Integer(b_int // 3), sp.Rational(k, 2))
+                repl[p] = (_U3**k) * q_pow
+        elif not base.is_Rational and not base.free_symbols:
+            content, _ = base.as_content_primitive()
+            if isinstance(content, sp.Rational) and content.p % 3 == 0 and (content.p // 3) % 3 != 0:
+                q_base = sp.expand_mul(base / sp.Integer(3))
+                q_pow = sp.Pow(q_base, sp.Rational(k, 2))
+                repl[p] = (_U3**k) * q_pow
+    if not repl:
+        return expr, False
+    return expr.xreplace(repl), True
+
+
+def _poly_mod_u3(poly_expr: sp.Expr) -> tuple[sp.Expr, sp.Expr]:
+    """Reduce ``poly_expr`` in ``_U3`` modulo ``_U3**2 - 3`` to ``(c0, c1)``."""
+    if _U3 not in poly_expr.free_symbols:
+        return poly_expr, sp.Integer(0)
+    poly = sp.Poly(sp.expand_mul(poly_expr), _U3)
+    c0: sp.Expr = sp.Integer(0)
+    c1: sp.Expr = sp.Integer(0)
+    for (deg,), coeff in poly.terms():
+        scale = sp.Integer(3) ** (deg // 2)
+        if deg % 2 == 0:
+            c0 += scale * coeff
+        else:
+            c1 += scale * coeff
+    return c0, c1
+
+
+def _reduce_sqrt3_extension(
+    expr: sp.Expr,
+    base_simplify: Callable[[sp.Expr], sp.Expr],
+    *,
+    expand_radicals: bool = True,
+) -> sp.Expr | None:
+    """Rationalize ``expr`` in ``K(sqrt(3))`` given canonical reducer ``base_simplify`` on ``K``."""
+    u_expr, found = _extract_u3(expr)
+    if not found:
+        return None
+    try:
+        num, den = sp.fraction(sp.together(u_expr))
+        p0_raw, p1_raw = _poly_mod_u3(num)
+        q0_raw, q1_raw = _poly_mod_u3(den)
+        p0 = base_simplify(p0_raw)
+        p1 = base_simplify(p1_raw)
+        q0 = base_simplify(q0_raw)
+        q1 = base_simplify(q1_raw)
+        if zero_test(q1):
+            if zero_test(q0):
+                return None
+            a0 = base_simplify(p0 / q0)
+            a1 = base_simplify(p1 / q0)
+        else:
+            norm_d = base_simplify(q0**2 - sp.Integer(3) * q1**2)
+            if zero_test(norm_d):
+                return None
+            a0 = base_simplify((p0 * q0 - sp.Integer(3) * p1 * q1) / norm_d)
+            a1 = base_simplify((p1 * q0 - p0 * q1) / norm_d)
+        if zero_test(a1):
+            return a0
+        if expand_radicals:
+            return a0 + sp.expand_mul(a1 * SQRT_3)
+        return a0 + a1 * SQRT_3
+    except ( sp.PolynomialError, ZeroDivisionError, ValueError ):
+        return None
+
+
+def _simplify_rational(expr: sp.Expr) -> sp.Expr:
+    """Canonicalize an expression in Q."""
+    s = sp.cancel(expr)
+    return s if s.is_Rational else clean_expr(s)
 
 
 def _simplify_rational_or_general(expr: sp.Expr) -> sp.Expr:
-    """Simplify a rational or general algebraic SymPy expression without floats."""
+    """Simplify a rational or Q(sqrt(3)) / general algebraic SymPy expression without floats."""
     s = sp.sympify(expr)
     if s.is_Rational:
         return s
+    if not s.atoms(sp.Pow):
+        c = sp.cancel(s)
+        if c.is_Rational:
+            return c
+    rad_atoms = {
+        p
+        for p in s.atoms(sp.Pow)
+        if isinstance(p.exp, sp.Rational) and p.exp.q == 2
+    }
+    if rad_atoms and rad_atoms <= {SQRT_3, sp.Integer(1) / SQRT_3}:
+        res = _reduce_sqrt3_extension(s, _simplify_rational, expand_radicals=True)
+        if res is not None:
+            return res
     cleaned = clean_expr(s)
     if cleaned.is_Rational:
         return cleaned
-    return sp.radsimp(cleaned) if len(cleaned.atoms(sp.Pow)) <= 3 else cleaned
+    return sp.radsimp(cleaned, symbolic=False) if len(cleaned.atoms(sp.Pow)) <= 3 else cleaned
+
+
+def _base_kimberling(expr: sp.Expr) -> sp.Expr:
+    s = sp.sympify(expr)
+    if s.is_Rational:
+        return s
+    return reduce_in_field(s, SQRT_35)
 
 
 def _simplify_kimberling(expr: sp.Expr) -> sp.Expr:
-    """Reduce an expression over Q(sqrt(35)) (or Q(sqrt(35), sqrt(3)))."""
+    """Reduce an expression over Q(sqrt(35)) or biquadratic Q(sqrt(3), sqrt(35))."""
     s = sp.sympify(expr)
     if s.is_Rational:
         return s
@@ -48,16 +155,31 @@ def _simplify_kimberling(expr: sp.Expr) -> sp.Expr:
         for p in s.atoms(sp.Pow)
         if isinstance(p.exp, sp.Rational) and p.exp.q == 2
     }
-    if rad_atoms <= {SQRT_35}:
+    if rad_atoms <= {SQRT_35, sp.Integer(1) / SQRT_35}:
         return reduce_in_field(s, SQRT_35)
-    return clean_expr(s)
+    if rad_atoms <= {
+        SQRT_3,
+        sp.Integer(1) / SQRT_3,
+        SQRT_35,
+        sp.Integer(1) / SQRT_35,
+        SQRT_105,
+        sp.Integer(1) / SQRT_105,
+    }:
+        res = _reduce_sqrt3_extension(s, _base_kimberling, expand_radicals=True)
+        if res is not None:
+            return res
+    cleaned = clean_expr(s)
+    return sp.radsimp(cleaned, symbolic=False) if len(cleaned.atoms(sp.Pow)) <= 4 else cleaned
 
 
 def _simplify_kepler(expr: sp.Expr) -> sp.Expr:
-    """Reduce an expression in the Kepler biquadratic tower Q(sqrt(phi))."""
+    """Reduce an expression in Q(sqrt(phi)) or octic Q(sqrt(phi), sqrt(3))."""
     s = sp.sympify(expr)
     if s.is_Rational:
         return s
+    res = _reduce_sqrt3_extension(s, canonicalize_kepler, expand_radicals=False)
+    if res is not None:
+        return res
     return canonicalize_kepler(s)
 
 
@@ -253,6 +375,38 @@ class SymbolicTriangle:
         if zero_test(denom):
             return sp.oo
         return self.simplify((sp.Integer(2) * self.area * u) / denom)
+
+    def has_sqrt3_extension(self, exprs: Iterable[sp.Expr]) -> bool:
+        """Return whether ``exprs`` adjoin :math:`\\sqrt{3}` over this triangle's base field."""
+        for e in exprs:
+            _, found = _extract_u3(sp.sympify(e))
+            if found:
+                return True
+        return False
+
+    def coordinate_field_latex(self, exprs: Iterable[sp.Expr] = ()) -> str:
+        """Return exact LaTeX notation for the minimal number field of ``exprs`` on this triangle."""
+        ext3 = self.has_sqrt3_extension(exprs)
+        base_key = self.key.replace("_unit", "")
+        if base_key in {"heronian", "right"}:
+            return r"\mathbb{Q}(\sqrt{3})" if ext3 else r"\mathbb{Q}"
+        if base_key == "kepler":
+            return r"\mathbb{Q}(\sqrt{\phi}, \sqrt{3})" if ext3 else r"\mathbb{Q}(\sqrt{\phi})"
+        if base_key == "kimberling":
+            return r"\mathbb{Q}(\sqrt{3}, \sqrt{35})" if ext3 else r"\mathbb{Q}(\sqrt{35})"
+        return self.field_latex
+
+    def coordinate_field_pretty(self, exprs: Iterable[sp.Expr] = ()) -> str:
+        """Return compact Unicode notation for the minimal number field of ``exprs`` on this triangle."""
+        ext3 = self.has_sqrt3_extension(exprs)
+        base_key = self.key.replace("_unit", "")
+        if base_key in {"heronian", "right"}:
+            return "ℚ(√3)" if ext3 else "ℚ"
+        if base_key == "kepler":
+            return "ℚ(√φ, √3)" if ext3 else "ℚ(√φ)"
+        if base_key == "kimberling":
+            return "ℚ(√3, √35)" if ext3 else "ℚ(√35)"
+        return "ℚ" if self.area.is_Rational else "ℚ̄"
 
 
 def build_symbolic_triangle_from_sides(

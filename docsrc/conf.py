@@ -217,35 +217,44 @@ def _inline_etc_svgs(app, pagename, templatename, context, doctree):
         primary_svg_preview = _read_clean_svg(page_dir / f"{stem}.svg") or ""
         is_heronian_exact = 'data-triangle="heronian"' in primary_svg_preview
 
+        def _svg_field(svg_path: Path, default_fld: str) -> str:
+            txt = _read_clean_svg(svg_path) or ""
+            m_fld = re.search(r'\bdata-field="([^"]+)"', txt)
+            return m_fld.group(1) if m_fld else default_fld
+
         if is_heronian_exact:
+            f_hero = _svg_field(page_dir / f"{stem}.svg", "ℚ")
+            f_right = _svg_field(page_dir / f"{stem}-right.svg", "ℚ")
+            f_kep = _svg_field(page_dir / f"{stem}-kepler.svg", "ℚ(√φ)")
+            f_kim = _svg_field(page_dir / f"{stem}-kimberling.svg", "ℚ(√35)")
             tab_specs = [
                 (
                     "acute",
                     "15, 13, 14",
                     "Acute Heronian Triangle (15, 13, 14)",
                     page_dir / f"{stem}.svg",
-                    f"<strong>{title_str}</strong> constructed over <code>ℚ</code> on exact Heronian triangle <code>(a, b, c) = (15, 13, 14)</code> with baseline {ab_badge} = <code>14</code> and integer area <code>Δ = 84</code>.",
+                    f"<strong>{title_str}</strong> constructed over <code>{_html.escape(f_hero)}</code> on exact Heronian triangle <code>(a, b, c) = (15, 13, 14)</code> with baseline {ab_badge} = <code>14</code> and integer area <code>Δ = 84</code>.",
                 ),
                 (
                     "right",
                     "3, 4, 5",
                     "Egyptian Right Triangle (3, 4, 5)",
                     page_dir / f"{stem}-right.svg",
-                    f"<strong>{title_str}</strong> constructed over <code>ℚ</code> on Egyptian right triangle <code>(a, b, c) = (3, 4, 5)</code> with hypotenuse baseline {ab_badge} = <code>5</code> and area <code>Δ = 6</code>.",
+                    f"<strong>{title_str}</strong> constructed over <code>{_html.escape(f_right)}</code> on Egyptian right triangle <code>(a, b, c) = (3, 4, 5)</code> with hypotenuse baseline {ab_badge} = <code>5</code> and area <code>Δ = 6</code>.",
                 ),
                 (
                     "kepler",
                     "Kepler",
                     "Kepler Golden Right Triangle (1, √φ, φ)",
                     page_dir / f"{stem}-kepler.svg",
-                    f"<strong>{title_str}</strong> constructed over <code>ℚ(√φ)</code> on Kepler golden right triangle <code>(a, b, c) = (1, √φ, φ)</code> with baseline {ab_badge} = <code>φ</code>.",
+                    f"<strong>{title_str}</strong> constructed over <code>{_html.escape(f_kep)}</code> on Kepler golden right triangle <code>(a, b, c) = (1, √φ, φ)</code> with baseline {ab_badge} = <code>φ</code>.",
                 ),
                 (
                     "kimberling",
                     "Kimberling",
                     "Kimberling Obtuse Scalene Triangle (6, 9, 13)",
                     page_dir / f"{stem}-kimberling.svg",
-                    f"<strong>{title_str}</strong> constructed over <code>ℚ(√35)</code> on Kimberling's canonical search-value triangle <code>(a, b, c) = (6, 9, 13)</code> with baseline {ab_badge} = <code>13</code>.",
+                    f"<strong>{title_str}</strong> constructed over <code>{_html.escape(f_kim)}</code> on Kimberling's canonical search-value triangle <code>(a, b, c) = (6, 9, 13)</code> with baseline {ab_badge} = <code>13</code>.",
                 ),
             ]
         else:

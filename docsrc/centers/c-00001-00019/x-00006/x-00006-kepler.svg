@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.313333 -0.610000 1.626667 1.220000" data-initial-viewbox="-0.313333 -0.610000 1.626667 1.220000" preserveAspectRatio="xMidYMid meet">
+<svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-0.506984 -0.987001 2.632002 1.974001" data-initial-viewbox="-0.506984 -0.987001 2.632002 1.974001" data-triangle="kepler" data-field="ℚ(√φ)" data-tri-span="1.618034" data-target-r-px="10.5" preserveAspectRatio="xMidYMid meet">
   <style>
 :root {
     --background-color: #121212;
@@ -73,29 +73,52 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
     stroke-width: 3.5 !important;
 }
 
-#elements line {
+#elements line,
+#elements path.line {
     fill: none;
-    stroke: #777;
-    stroke-width: 1.5;
+    stroke: #b0bec5;
+    stroke-width: 2.2;
+    stroke-dasharray: 2, 4.5;
+    stroke-linecap: round;
     vector-effect: non-scaling-stroke;
     cursor: pointer;
 }
 
-#elements line.sideline {
-    stroke: #999;
-    stroke-width: 2;
+#elements line.sideline,
+#elements path.line.sideline {
+    stroke: #cbd5e1;
+    stroke-width: 2.3;
 }
 
-#elements line.central_line {
+#elements line.central_line,
+#elements path.line.central_line {
     stroke: #0bd;
-    stroke-width: 1.75;
+    stroke-width: 1.85;
     stroke-opacity: 0.85;
 }
 
+#elements line.central_line[data-color-token="orange"] { stroke: #fb923c; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="teal"] { stroke: #2dd4bf; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="blue"] { stroke: #38bdf8; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="orchid"] { stroke: #e879f9; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="pink"] { stroke: #f472b6; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="lime"] { stroke: #a3e635; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="green"] { stroke: #5ec27e; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="purple"] { stroke: #a855f7; stroke-dasharray: 6, 3; }
+
 #elements line.golden,
-#elements line.euler {
+#elements path.line.golden,
+#elements line.euler,
+#elements path.line.euler {
     stroke: gold;
-    stroke-width: 2;
+    stroke-width: 2.1;
+}
+
+#elements line.strut {
+    stroke: gold;
+    stroke-width: 2.8;
+    stroke-dasharray: none;
+    stroke-opacity: 0.95;
 }
 
 #elements circle {
@@ -122,7 +145,7 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
 }
 
 #elements .bisector {
-    stroke-dasharray: 8, 4, 2, 4;
+    stroke-dasharray: 2, 4;
 }
 
 #elements .guide {
@@ -133,10 +156,13 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
 
 #elements line:hover,
 #elements line.hover,
+#elements path.line:hover,
+#elements path.line.hover,
 #elements circle:hover,
 #elements circle.hover {
     stroke: var(--select-color) !important;
     stroke-width: 3.2 !important;
+    stroke-dasharray: none !important;
     stroke-opacity: 1 !important;
 }
 
@@ -152,10 +178,11 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
 }
 
 #graphics polyline {
-    stroke: #36c9;
+    stroke: #ffd54f;
     fill: none;
-    stroke-width: 6;
+    stroke-width: 3.2;
     vector-effect: non-scaling-stroke;
+    cursor: pointer;
 }
 
 #graphics polygon {
@@ -167,6 +194,7 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
     marker-start: url(#marker);
     marker-mid: url(#marker);
     marker-end: url(#marker);
+    cursor: pointer;
 }
 
 #graphics polygon.secondary {
@@ -175,12 +203,54 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
     stroke-width: 3;
 }
 
+#graphics polygon.subarea-a {
+    stroke: rgba(255, 112, 67, 0.72);
+    fill: rgba(255, 112, 67, 0.20);
+    stroke-width: 2.4;
+    marker-start: none;
+    marker-mid: none;
+    marker-end: none;
+}
+
+#graphics polygon.subarea-b {
+    stroke: rgba(102, 187, 106, 0.72);
+    fill: rgba(102, 187, 106, 0.20);
+    stroke-width: 2.4;
+    marker-start: none;
+    marker-mid: none;
+    marker-end: none;
+}
+
+#graphics polygon.subarea-c {
+    stroke: rgba(66, 165, 245, 0.72);
+    fill: rgba(66, 165, 245, 0.20);
+    stroke-width: 2.4;
+    marker-start: none;
+    marker-mid: none;
+    marker-end: none;
+}
+
 #graphics polygon:hover,
 #graphics polygon.hover,
 #graphics polyline:hover,
 #graphics polyline.hover {
     stroke: var(--select-color) !important;
     stroke-opacity: 1 !important;
+}
+
+#graphics polygon.subarea-a:hover,
+#graphics polygon.subarea-a.hover {
+    fill: rgba(255, 112, 67, 0.38) !important;
+}
+
+#graphics polygon.subarea-b:hover,
+#graphics polygon.subarea-b.hover {
+    fill: rgba(102, 187, 106, 0.38) !important;
+}
+
+#graphics polygon.subarea-c:hover,
+#graphics polygon.subarea-c.hover {
+    fill: rgba(66, 165, 245, 0.38) !important;
 }
 
 #labels text {
@@ -223,6 +293,14 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
     font-weight: 700;
 }
 
+#labels text.dense-label {
+    display: none;
+}
+
+#labels text.dense-label.hover-label {
+    display: block !important;
+}
+
 .etc-svg-stage {
     position: relative;
     width: 100%;
@@ -257,13 +335,144 @@ figure:hover .etc-svg-toolbar {
     user-select: none;
 }
 
-.etc-svg-btn:hover {
-    background: #0ff;
-    color: #121212;
+.etc-svg-btn:hover,
+.etc-svg-btn.active {
+    background: rgba(0, 255, 255, 0.14);
+    color: #0ff;
     border-color: #0ff;
 }
 
-.etc-graphics-panel {
+.etc-symbolic-hud {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    max-width: min(460px, calc(100% - 20px));
+    background: rgba(14, 16, 22, 0.93);
+    border: 1px solid rgba(0, 255, 255, 0.35);
+    border-radius: 6px;
+    padding: 8px 12px;
+    color: #eaeaea;
+    font-family: "Fira Sans Condensed", system-ui, -apple-system, sans-serif;
+    font-size: 13px;
+    line-height: 1.38;
+    z-index: 24;
+    pointer-events: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.58);
+    opacity: 0;
+    transform: translateY(4px);
+    transition: opacity 0.12s ease, transform 0.12s ease;
+}
+
+.etc-symbolic-hud.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.etc-hud-head {
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 4px;
+    margin-bottom: 5px;
+}
+
+.etc-hud-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.etc-hud-id {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-weight: 700;
+    color: #0ff;
+    font-size: 13px;
+}
+
+.etc-hud-title {
+    font-weight: 600;
+    color: #f5f5f5;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.etc-hud-kind {
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #94a3b8;
+}
+
+.etc-hud-rows {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2px 10px;
+    align-items: baseline;
+}
+
+.etc-hud-key {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 11.5px;
+    color: #94a3b8;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.etc-hud-val {
+    color: #f8fafc;
+    font-size: 13.5px;
+    overflow-wrap: anywhere;
+}
+
+.etc-hud-val .katex {
+    font-size: 1.02em;
+}
+
+.etc-hud-approx {
+    margin-top: 4px;
+    padding-top: 3px;
+    border-top: 1px dashed rgba(255, 255, 255, 0.09);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 11px;
+    color: #8b9bb4;
+}
+
+.etc-math-fallback {
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: 1.06em;
+}
+
+.etc-math-frac {
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0 2px;
+    font-size: 0.88em;
+    line-height: 1.05;
+}
+
+.etc-math-num {
+    border-bottom: 1px solid rgba(248, 250, 252, 0.65);
+    padding: 0 2px 1px;
+}
+
+.etc-math-den {
+    padding: 1px 2px 0;
+}
+
+.etc-math-rad {
+    border-top: 1px solid rgba(248, 250, 252, 0.6);
+    padding: 0 2px;
+}
+
+.etc-graphics-panel,
+.etc-act-plate {
     width: 100%;
     background: #141414;
     border: 1px solid #333;
@@ -271,9 +480,48 @@ figure:hover .etc-svg-toolbar {
     overflow: hidden;
 }
 
-.etc-graphics-panel svg.geometor-etc-drawing {
+.etc-graphics-panel svg.geometor-etc-drawing,
+.etc-act-plate svg.geometor-etc-drawing {
     border: none;
     border-radius: 0;
+    display: block;
+}
+
+svg.geometor-etc-drawing .etc-plate-poly {
+    cursor: pointer;
+    transition: fill-opacity 0.14s ease, stroke 0.14s ease;
+}
+
+svg.geometor-etc-drawing .etc-plate-poly.hover {
+    stroke: var(--select-color) !important;
+    stroke-width: 2.8px !important;
+    fill-opacity: 0.44 !important;
+}
+
+svg.geometor-etc-drawing .etc-plate-strut,
+svg.geometor-etc-drawing .etc-plate-line,
+svg.geometor-etc-drawing .etc-plate-circle,
+svg.geometor-etc-drawing .etc-plate-pt,
+svg.geometor-etc-drawing .etc-plate-panel {
+    cursor: pointer;
+}
+
+svg.geometor-etc-drawing .etc-plate-strut.hover,
+svg.geometor-etc-drawing .etc-plate-line.hover,
+svg.geometor-etc-drawing .etc-plate-circle.hover {
+    stroke: var(--select-color) !important;
+    filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.72));
+}
+
+svg.geometor-etc-drawing .etc-plate-pt.hover {
+    stroke: var(--select-color) !important;
+    stroke-width: 3.6px !important;
+    filter: drop-shadow(0 0 6px rgba(0, 255, 255, 0.85));
+}
+
+svg.geometor-etc-drawing .etc-plate-panel.hover > rect.etc-panel-border {
+    stroke: var(--select-color) !important;
+    stroke-width: 2.8px !important;
 }
 
 .etc-triangle-tabs {
@@ -321,70 +569,71 @@ figure:hover .etc-svg-toolbar {
     </marker>
   </defs>
   <g id="graphics">
-    <polygon data-id="&lt; A B C &gt;" data-name="Reference Triangle △ABC" class="polygon reference" data-category="graphics" points="0.000000,-0.000000 1.000000,-0.000000 0.618034,-0.485868"><title>&lt; A B C &gt;: Reference Triangle △ABC</title></polygon>
+    <polygon id="&lt; A B C &gt;" data-id="&lt; A B C &gt;" data-ref="&lt; A B C &gt;" data-name="Reference Triangle △ABC" data-area="√φ/2" class="polygon reference" data-category="graphics" points="0.000000,-0.000000 1.618034,-0.000000 1.000000,-0.786151"><title>&lt; A B C &gt;: Reference Triangle △ABC (Δ = √φ/2)</title></polygon>
+    <polygon id="&lt; Sym_a Sym_b Sym_c &gt;" data-id="&lt; Sym_a Sym_b Sym_c &gt;" data-ref="&lt; Sym_a Sym_b Sym_c &gt;" data-name="Symmedial Triangle △Sym_a Sym_b Sym_c" data-area="√φ·(7 - 4·φ)/5" class="polygon secondary" data-category="graphics" points="1.236068,-0.485868 0.723607,-0.568864 1.000000,-0.000000"><title>&lt; Sym_a Sym_b Sym_c &gt;: Symmedial Triangle △Sym_a Sym_b Sym_c (Δ = √φ·(7 - 4·φ)/5)</title></polygon>
   </g>
   <g id="highlights">
-    <polyline data-highlight-for="[ A B ]" class="highlight-segment" points="0.000000,-0.000000 1.000000,-0.000000" style="display: none;" />
-    <polyline data-highlight-for="[ B C ]" class="highlight-segment" points="1.000000,-0.000000 0.618034,-0.485868" style="display: none;" />
-    <polyline data-highlight-for="[ C A ]" class="highlight-segment" points="0.618034,-0.485868 0.000000,-0.000000" style="display: none;" />
-    <polyline data-highlight-for="circumcircle" class="highlight-segment" points="0.500000,-0.000000 0.000000,-0.000000" style="display: none;" />
-    <polyline data-highlight-for="[ A Sym_a ]" class="highlight-segment" points="0.000000,-0.000000 0.763932,-0.300283" style="display: none;" />
-    <polyline data-highlight-for="[ B Sym_b ]" class="highlight-segment" points="1.000000,-0.000000 0.447214,-0.351578" style="display: none;" />
-    <polyline data-highlight-for="[ C Sym_c ]" class="highlight-segment" points="0.618034,-0.485868 0.618034,-0.000000" style="display: none;" />
-    <polyline data-highlight-for="{ 1, 9 }" class="highlight-segment" points="0.584059,-0.202093 0.507714,-0.110320" style="display: none;" />
-    <polyline data-highlight-for="{ 3, 15 }" class="highlight-segment" points="0.500000,-0.000000 0.564095,-0.131918" style="display: none;" />
-    <polyline data-highlight-for="{ 13, 14 }" class="highlight-segment" points="0.600054,-0.279939 0.826997,0.187147" style="display: none;" />
-    <polyline data-highlight-for="{ 17, 18 }" class="highlight-segment" points="0.576690,-0.214570 0.371298,-0.073659" style="display: none;" />
+    <polyline id="hl-[ A B ]" data-highlight-for="[ A B ]" class="highlight-segment" points="0.000000,-0.000000 1.618034,-0.000000" style="display: none;" />
+    <polyline id="hl-[ B C ]" data-highlight-for="[ B C ]" class="highlight-segment" points="1.618034,-0.000000 1.000000,-0.786151" style="display: none;" />
+    <polyline id="hl-[ C A ]" data-highlight-for="[ C A ]" class="highlight-segment" points="1.000000,-0.786151 0.000000,-0.000000" style="display: none;" />
+    <polyline id="hl-circumcircle" data-highlight-for="circumcircle" class="highlight-segment" points="0.809017,-0.000000 0.000000,-0.000000" style="display: none;" />
+    <polyline id="hl-[ A Sym_a ]" data-highlight-for="[ A Sym_a ]" class="highlight-segment" points="0.000000,-0.000000 1.236068,-0.485868" style="display: none;" />
+    <polyline id="hl-[ B Sym_b ]" data-highlight-for="[ B Sym_b ]" class="highlight-segment" points="1.618034,-0.000000 0.723607,-0.568864" style="display: none;" />
+    <polyline id="hl-[ C Sym_c ]" data-highlight-for="[ C Sym_c ]" class="highlight-segment" points="1.000000,-0.786151 1.000000,-0.000000" style="display: none;" />
+    <polyline id="hl-{ 19, 65 }" data-highlight-for="{ 19, 65 }" class="highlight-segment" points="1.000000,-0.786151 1.000000,-0.459159" style="display: none;" />
+    <polyline id="hl-{ 1, 9 }" data-highlight-for="{ 1, 9 }" class="highlight-segment" points="0.945027,-0.326993 0.821499,-0.178501" style="display: none;" />
+    <polyline id="hl-{ 3, 32 }" data-highlight-for="{ 3, 32 }" class="highlight-segment" points="0.809017,-0.000000 1.059017,-0.514543" style="display: none;" />
+    <polyline id="hl-{ 2, 69 }" data-highlight-for="{ 2, 69 }" class="highlight-segment" points="0.872678,-0.262050 0.618034,-0.000000" style="display: none;" />
   </g>
   <g id="elements">
-    <line data-id="[ A B ]" data-name="Sideline AB (Base c = 1)" class="line given sideline" data-category="elements" x1="-1000.00000" y1="-0.00000" x2="1000.00000" y2="-0.00000"><title>[ A B ]: Sideline AB (Base c = 1)</title></line>
-    <line data-id="[ B C ]" data-name="Sideline BC (Side a)" class="line sideline" data-category="elements" x1="382.96601" y1="485.86827" x2="-380.96601" y2="-485.86827"><title>[ B C ]: Sideline BC (Side a)</title></line>
-    <line data-id="[ C A ]" data-name="Sideline CA (Side b)" class="line sideline" data-category="elements" x1="618.65202" y1="-486.35414" x2="-617.41596" y2="485.38240"><title>[ C A ]: Sideline CA (Side b)</title></line>
-    <circle data-id="circumcircle" data-name="Circumcircle of △ABC" class="circle circumcircle" data-category="elements" cx="0.500000" cy="-0.000000" r="0.500000" fill="none"><title>circumcircle: Circumcircle of △ABC</title></circle>
-    <line data-id="[ A Sym_a ]" data-name="A-Symmedian" class="line bisector" data-category="elements" x1="-763.93202" y1="300.28311" x2="763.93202" y2="-300.28311"><title>[ A Sym_a ]: A-Symmedian</title></line>
-    <line data-id="[ B Sym_b ]" data-name="B-Symmedian" class="line bisector" data-category="elements" x1="553.78640" y1="351.57758" x2="-551.78640" y2="-351.57758"><title>[ B Sym_b ]: B-Symmedian</title></line>
-    <line data-id="[ C Sym_c ]" data-name="C-Symmedian" class="line bisector" data-category="elements" x1="0.61803" y1="-486.35414" x2="0.61803" y2="485.38240"><title>[ C Sym_c ]: C-Symmedian</title></line>
-    <line data-id="{ 1, 9 }" data-name="Incenter–Symmedian Line" class="line central_line incident" data-category="elements" x1="76.92843" y1="-91.97510" x2="-75.76031" y2="91.57092"><title>{ 1, 9 }: Incenter–Symmedian Line</title></line>
-    <line data-id="{ 3, 15 }" data-name="Brocard Axis" class="line central_line incident" data-category="elements" x1="-63.59497" y1="131.91840" x2="64.59497" y2="-131.91840"><title>{ 3, 15 }: Brocard Axis</title></line>
-    <line data-id="{ 13, 14 }" data-name="Central Line L(13, 14)" class="line central_line incident" data-category="elements" x1="-226.34231" y1="-467.36612" x2="227.54241" y2="466.80624"><title>{ 13, 14 }: Central Line L(13, 14)</title></line>
-    <line data-id="{ 17, 18 }" data-name="Central Line L(17, 18)" class="line central_line incident" data-category="elements" x1="205.96942" y1="-141.12569" x2="-204.81604" y2="140.69655"><title>{ 17, 18 }: Central Line L(17, 18)</title></line>
+    <line id="[ A B ]" data-id="[ A B ]" data-ref="[ A B ]" data-name="Sideline AB (Side c)" data-eq="y = 0" data-spread="0" data-pt1="A" data-pt2="B" class="line given sideline" data-category="elements" x1="-1618.03399" y1="-0.00000" x2="1618.03399" y2="-0.00000"><title>[ A B ]: Sideline AB (Side c)</title></line>
+    <line id="[ B C ]" data-id="[ B C ]" data-ref="[ B C ]" data-name="Sideline BC (Side a)" data-eq="(√φ·(φ - 1))x + (φ - 1)y - √φ = 0" data-spread="φ - 1" data-pt1="B" data-pt2="C" class="line sideline" data-category="elements" x1="1001.61803" y1="1272.01965" x2="-998.38197" y2="-1272.01965"><title>[ B C ]: Sideline BC (Side a)</title></line>
+    <line id="[ C A ]" data-id="[ C A ]" data-ref="[ C A ]" data-name="Sideline CA (Side b)" data-eq="(√φ·(φ - 1))x - y = 0" data-spread="2 - φ" data-pt1="C" data-pt2="A" class="line sideline" data-category="elements" x1="1273.01965" y1="-1000.78615" x2="-1271.01965" y2="999.21385"><title>[ C A ]: Sideline CA (Side b)</title></line>
+    <circle id="circumcircle" data-id="circumcircle" data-ref="circumcircle" data-name="Circumcircle of △ABC" data-color-token="blue" data-color="#38bdf8" data-quadrance="φ/4 + 1/4" class="circle circumcircle" data-category="elements" cx="0.809017" cy="-0.000000" r="0.809017" fill="none"><title>circumcircle: Circumcircle of △ABC</title></circle>
+    <line id="[ A Sym_a ]" data-id="[ A Sym_a ]" data-ref="[ A Sym_a ]" data-name="A-Symmedian" data-color-token="gold" data-color="#e8b85a" data-eq="(√φ·(2 - φ))x - (2·φ - 2)y = 0" data-spread="4·φ/11 - 5/11" data-pt1="A" data-pt2="Sym_a" class="line bisector" data-category="elements" x1="-1505.87552" y1="591.92306" x2="1505.87552" y2="-591.92306"><title>[ A Sym_a ]: A-Symmedian</title></line>
+    <line id="[ B Sym_b ]" data-id="[ B Sym_b ]" data-ref="[ B Sym_b ]" data-name="B-Symmedian" data-color-token="gold" data-color="#e8b85a" data-eq="(√φ·(2·φ - 1))x + (4·φ - 2)y - √φ·(φ + 2) = 0" data-spread="4·φ/19 - 1/19" data-pt1="B" data-pt2="Sym_b" class="line bisector" data-category="elements" x1="1366.90975" y1="868.33894" x2="-1363.67368" y2="-868.33894"><title>[ B Sym_b ]: B-Symmedian</title></line>
+    <line id="[ C Sym_c ]" data-id="[ C Sym_c ]" data-ref="[ C Sym_c ]" data-name="C-Symmedian" data-color-token="gold" data-color="#e8b85a" data-eq="x - 1 = 0" data-spread="1" data-pt1="C" data-pt2="Sym_c" class="line bisector" data-category="elements" x1="1.00000" y1="-1618.82014" x2="1.00000" y2="1617.24784"><title>[ C Sym_c ]: C-Symmedian</title></line>
+    <line id="{ 19, 65 }" data-id="{ 19, 65 }" data-ref="{ 19, 65 }" data-name="Van Aubel Line" data-color-token="green" data-color="#4ade80" data-eq="x - 1 = 0" data-spread="1" data-pt1="C" data-pt2="X_65" class="line central_line incident" data-category="elements" x1="1.00000" y1="-1618.82014" x2="1.00000" y2="1617.24784"><title>{ 19, 65 }: Van Aubel Line</title></line>
+    <line id="{ 1, 9 }" data-id="{ 1, 9 }" data-ref="{ 1, 9 }" data-name="Incenter–Symmedian Line" data-color-token="pink" data-color="#f472b6" data-eq="(-8·φ·√φ + 20·√φ - 6·φ + 4)x - (8·φ·√φ + 2·√φ + 6·φ - 26)y - 5·φ·√φ + 4·√φ - 10·φ + 3 = 0" data-spread="-8·φ·√φ/29 + 18·√φ/29 + 6·φ/29 + 1/29" data-pt1="X_1" data-pt2="X_9" class="line central_line incident" data-category="elements" x1="1035.71979" y1="-1244.22216" x2="-1033.82973" y2="1243.56817"><title>{ 1, 9 }: Incenter–Symmedian Line</title></line>
+    <line id="{ 3, 32 }" data-id="{ 3, 32 }" data-ref="{ 3, 32 }" data-name="Brocard Axis" data-color-token="purple" data-color="#a78bfa" data-eq="(2·φ·√φ)x - 2y - √φ·(φ + 1) = 0" data-spread="φ/2" data-pt1="X_3" data-pt2="X_32" class="line central_line incident" data-category="elements" x1="-706.29776" y1="1455.34669" x2="707.91580" y2="-1455.34669"><title>{ 3, 32 }: Brocard Axis</title></line>
+    <line id="{ 2, 69 }" data-id="{ 2, 69 }" data-ref="{ 2, 69 }" data-name="Centroid–Symmedian Line" data-color-token="lime" data-color="#a3e635" data-eq="(√φ·(φ - 1))x - (4 - 2·φ)y - √φ·(2 - φ) = 0" data-spread="8·φ/31 + 3/31" data-pt1="X_2" data-pt2="X_69" class="line central_line incident" data-category="elements" x1="1128.47945" y1="-1160.66584" x2="-1126.73409" y2="1160.14174"><title>{ 2, 69 }: Centroid–Symmedian Line</title></line>
   </g>
   <g id="points">
-    <circle data-id="A" data-name="Vertex A" class="point given vertex" data-category="points" cx="0.000000" cy="-0.000000" r="0.015250"><title>A = Vertex A (0.0000, 0.0000)</title></circle>
-    <circle data-id="B" data-name="Vertex B" class="point given vertex" data-category="points" cx="1.000000" cy="-0.000000" r="0.015250"><title>B = Vertex B (1.0000, 0.0000)</title></circle>
-    <circle data-id="C" data-name="Vertex C" class="point vertex" data-category="points" cx="0.618034" cy="-0.485868" r="0.015250"><title>C = Vertex C (0.6180, 0.4859)</title></circle>
-    <circle data-id="X_3" data-name="CIRCUMCENTER" class="point center" data-category="points" cx="0.500000" cy="-0.000000" r="0.015250"><title>X_3 = CIRCUMCENTER (0.5000, 0.0000)</title></circle>
-    <circle data-id="Sym_a" data-name="Symmedian Foot Sym_a on BC" class="point guide" data-category="points" cx="0.763932" cy="-0.300283" r="0.009760"><title>Sym_a = Symmedian Foot Sym_a on BC (0.7639, 0.3003)</title></circle>
-    <circle data-id="Sym_b" data-name="Symmedian Foot Sym_b on CA" class="point guide" data-category="points" cx="0.447214" cy="-0.351578" r="0.009760"><title>Sym_b = Symmedian Foot Sym_b on CA (0.4472, 0.3516)</title></circle>
-    <circle data-id="Sym_c" data-name="Symmedian Foot Sym_c on AB" class="point guide" data-category="points" cx="0.618034" cy="-0.000000" r="0.009760"><title>Sym_c = Symmedian Foot Sym_c on AB (0.6180, 0.0000)</title></circle>
-    <circle data-id="X_1" data-name="INCENTER" class="point center incident" data-category="points" cx="0.584059" cy="-0.202093" r="0.015250"><title>X_1 = INCENTER (0.5841, 0.2021)</title></circle>
-    <circle data-id="X_9" data-name="MITTENPUNKT" class="point center incident" data-category="points" cx="0.507714" cy="-0.110320" r="0.015250"><title>X_9 = MITTENPUNKT (0.5077, 0.1103)</title></circle>
-    <circle data-id="X_15" data-name="1st ISODYNAMIC POINT" class="point center incident" data-category="points" cx="0.564095" cy="-0.131918" r="0.015250"><title>X_15 = 1st ISODYNAMIC POINT (0.5641, 0.1319)</title></circle>
-    <circle data-id="X_13" data-name="1st ISOGONIC CENTER (FERMAT POINT, TORRICELLI POINT)" class="point center incident" data-category="points" cx="0.600054" cy="-0.279939" r="0.015250"><title>X_13 = 1st ISOGONIC CENTER (FERMAT POINT, TORRICELLI POINT) (0.6001, 0.2799)</title></circle>
-    <circle data-id="X_14" data-name="2nd ISOGONIC CENTER" class="point center incident" data-category="points" cx="0.826997" cy="0.187147" r="0.015250"><title>X_14 = 2nd ISOGONIC CENTER (0.8270, -0.1871)</title></circle>
-    <circle data-id="X_17" data-name="1st NAPOLEON POINT" class="point center incident" data-category="points" cx="0.576690" cy="-0.214570" r="0.015250"><title>X_17 = 1st NAPOLEON POINT (0.5767, 0.2146)</title></circle>
-    <circle data-id="X_18" data-name="2nd NAPOLEON POINT" class="point center incident" data-category="points" cx="0.371298" cy="-0.073659" r="0.015250"><title>X_18 = 2nd NAPOLEON POINT (0.3713, 0.0737)</title></circle>
-    <circle data-id="X_6" data-name="SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)" class="point selected target" data-category="points" cx="0.618034" cy="-0.242934" r="0.021350"><title>X_6 = SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT) (0.6180, 0.2429)</title></circle>
+    <circle id="A" data-id="A" data-ref="A" data-name="Vertex A" data-coords="(0, 0)" data-trilinears="1 : 0 : 0" data-barycentrics="1 : 0 : 0" class="point given vertex" data-category="points" cx="0.000000" cy="-0.000000" r="0.024675"><title>A = Vertex A (0, 0)</title></circle>
+    <circle id="B" data-id="B" data-ref="B" data-name="Vertex B" data-coords="(φ, 0)" data-trilinears="0 : 1 : 0" data-barycentrics="0 : 1 : 0" class="point given vertex" data-category="points" cx="1.618034" cy="-0.000000" r="0.024675"><title>B = Vertex B (φ, 0)</title></circle>
+    <circle id="C" data-id="C" data-ref="C" data-name="Vertex C" data-coords="(1, √φ·(φ - 1))" data-trilinears="0 : 0 : 1" data-barycentrics="0 : 0 : 1" class="point vertex" data-category="points" cx="1.000000" cy="-0.786151" r="0.024675"><title>C = Vertex C (1, √φ·(φ - 1))</title></circle>
+    <circle id="X_19" data-id="X_19" data-ref="X_19" data-name="CLAWSON POINT" data-coords="(1, √φ·(φ - 1))" data-trilinears="0 : 0 : 1" data-barycentrics="0 : 0 : 1" class="point center incident" data-category="points" cx="1.000000" cy="-0.786151" r="0.024675"><title>X_19 = CLAWSON POINT (1, √φ·(φ - 1))</title></circle>
+    <circle id="X_3" data-id="X_3" data-ref="X_3" data-name="CIRCUMCENTER" data-coords="(φ/2, 0)" data-trilinears="1 : √φ·(φ - 1) : 0" data-barycentrics="1 : 1 : 0" class="point center incident" data-category="points" cx="0.809017" cy="-0.000000" r="0.024675"><title>X_3 = CIRCUMCENTER (φ/2, 0)</title></circle>
+    <circle id="Sym_a" data-id="Sym_a" data-ref="Sym_a" data-name="Symmedian Foot Sym_a on BC" data-coords="(2·φ - 2, √φ·(2 - φ))" data-trilinears="0 : √φ·(2·φ - 3) : 2 - φ" data-barycentrics="0 : 2 - φ : φ - 1" class="point guide" data-category="points" cx="1.236068" cy="-0.485868" r="0.015792"><title>Sym_a = Symmedian Foot Sym_a on BC (2·φ - 2, √φ·(2 - φ))</title></circle>
+    <circle id="Sym_b" data-id="Sym_b" data-ref="Sym_b" data-name="Symmedian Foot Sym_b on CA" data-coords="(φ/5 + 2/5, √φ·(2·φ - 1)/5)" data-trilinears="3 - φ : 0 : 2·φ - 1" data-barycentrics="3 - φ : 0 : φ + 2" class="point guide" data-category="points" cx="0.723607" cy="-0.568864" r="0.015792"><title>Sym_b = Symmedian Foot Sym_b on CA (φ/5 + 2/5, √φ·(2·φ - 1)/5)</title></circle>
+    <circle id="Sym_c" data-id="Sym_c" data-ref="Sym_c" data-name="Symmedian Foot Sym_c on AB" data-coords="(1, 0)" data-trilinears="2 - φ : √φ·(2 - φ) : 0" data-barycentrics="2 - φ : φ - 1 : 0" class="point guide" data-category="points" cx="1.000000" cy="-0.000000" r="0.015792"><title>Sym_c = Symmedian Foot Sym_c on AB (1, 0)</title></circle>
+    <circle id="X_1" data-id="X_1" data-ref="X_1" data-name="INCENTER" data-coords="(√φ/2 + φ/2 - 1/2, √φ/2 - φ/2 + 1/2)" data-trilinears="1 : 1 : 1" data-barycentrics="1 : √φ : φ" class="point center incident" data-category="points" cx="0.945027" cy="-0.326993" r="0.024675"><title>X_1 = INCENTER (√φ/2 + φ/2 - 1/2, √φ/2 - φ/2 + 1/2)</title></circle>
+    <circle id="X_9" data-id="X_9" data-ref="X_9" data-name="MITTENPUNKT" data-coords="(-4·φ·√φ/11 + 9·√φ/22 + 5·φ/22 + 15/22, 4·φ·√φ/11 - 9·√φ/22 - 5·φ/22 + 7/22)" data-trilinears="√φ + φ - 1 : -√φ + φ + 1 : √φ - φ + 1" data-barycentrics="√φ + φ - 1 : φ·√φ + √φ - φ : φ·√φ - 1" class="point center incident" data-category="points" cx="0.821499" cy="-0.178501" r="0.024675"><title>X_9 = MITTENPUNKT (-4·φ·√φ/11 + 9·√φ/22 + 5·φ/22 + 15/22, 4·φ·√φ/11 - 9·√φ/22 - 5·φ/22 + 7/22)</title></circle>
+    <circle id="X_32" data-id="X_32" data-ref="X_32" data-name="3rd POWER POINT" data-coords="(φ/2 + 1/4, φ·√φ/4)" data-trilinears="1 : φ·√φ : 2·φ + 1" data-barycentrics="1 : φ + 1 : 3·φ + 2" class="point center incident" data-category="points" cx="1.059017" cy="-0.514543" r="0.024675"><title>X_32 = 3rd POWER POINT (φ/2 + 1/4, φ·√φ/4)</title></circle>
+    <circle id="X_2" data-id="X_2" data-ref="X_2" data-name="CENTROID" data-coords="(φ/3 + 1/3, √φ·(φ - 1)/3)" data-trilinears="1 : √φ·(φ - 1) : φ - 1" data-barycentrics="1 : 1 : 1" class="point center incident" data-category="points" cx="0.872678" cy="-0.262050" r="0.024675"><title>X_2 = CENTROID (φ/3 + 1/3, √φ·(φ - 1)/3)</title></circle>
+    <circle id="X_69" data-id="X_69" data-ref="X_69" data-name="SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE" data-coords="(φ - 1, 0)" data-trilinears="φ : √φ·(φ - 1) : 0" data-barycentrics="φ : 1 : 0" class="point center incident" data-category="points" cx="0.618034" cy="-0.000000" r="0.024675"><title>X_69 = SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE (φ - 1, 0)</title></circle>
+    <circle id="X_65" data-id="X_65" data-ref="X_65" data-name="ORTHOCENTER OF THE INTOUCH TRIANGLE" data-coords="(1, φ·√φ - 3·√φ/2 + φ/2 - 1/2)" data-trilinears="√φ : φ : √φ + φ" data-barycentrics="√φ : φ·√φ : φ·√φ + φ + 1" class="point center incident" data-category="points" cx="1.000000" cy="-0.459159" r="0.024675"><title>X_65 = ORTHOCENTER OF THE INTOUCH TRIANGLE (1, φ·√φ - 3·√φ/2 + φ/2 - 1/2)</title></circle>
+    <circle id="X_6" data-id="X_6" data-ref="X_6" data-name="SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)" data-coords="(1, √φ·(φ - 1)/2)" data-trilinears="1 : √φ : φ" data-barycentrics="1 : φ : φ + 1" class="point selected target" data-category="points" cx="1.000000" cy="-0.393076" r="0.034545"><title>X_6 = SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT) (1, √φ·(φ - 1)/2)</title></circle>
   </g>
   <g id="labels">
-    <text class="given-label" data-point-id="A" data-anchor-x="0.000000" data-anchor-y="-0.000000" data-offset-x="-24.0" data-offset-y="22.5" x="-0.048800" y="0.045750" font-size="0.041175">A</text>
-    <text class="given-label" data-point-id="B" data-anchor-x="1.000000" data-anchor-y="-0.000000" data-offset-x="12.0" data-offset-y="22.5" x="1.024400" y="0.045750" font-size="0.041175">B</text>
-    <text class="point-label" data-point-id="C" data-anchor-x="0.618034" data-anchor-y="-0.485868" data-offset-x="-7.5" data-offset-y="-15.0" x="0.602784" y="-0.516368" font-size="0.041175">C</text>
-    <text class="point-label" data-point-id="X_3" data-anchor-x="0.500000" data-anchor-y="-0.000000" data-offset-x="12.0" data-offset-y="-10.5" x="0.524400" y="-0.021350" font-size="0.041175">X<tspan dy="0.3em" font-size="75%">3</tspan></text>
-    <text class="guide-label guide" data-point-id="Sym_a" data-anchor-x="0.763932" data-anchor-y="-0.300283" data-offset-x="10.0" data-offset-y="-7.0" x="0.784265" y="-0.314516" font-size="0.035583">Sym<tspan dy="0.3em" font-size="75%">a</tspan></text>
-    <text class="guide-label guide" data-point-id="Sym_b" data-anchor-x="0.447214" data-anchor-y="-0.351578" data-offset-x="-30.0" data-offset-y="-7.0" x="0.386214" y="-0.365811" font-size="0.035583">Sym<tspan dy="0.3em" font-size="75%">b</tspan></text>
-    <text class="guide-label guide" data-point-id="Sym_c" data-anchor-x="0.618034" data-anchor-y="-0.000000" data-offset-x="-8.0" data-offset-y="19.0" x="0.601767" y="0.038633" font-size="0.035583">Sym<tspan dy="0.3em" font-size="75%">c</tspan></text>
-    <text class="point-label incident" data-point-id="X_1" data-anchor-x="0.584059" data-anchor-y="-0.202093" data-offset-x="12.0" data-offset-y="-10.5" x="0.608459" y="-0.223443" font-size="0.041175">X<tspan dy="0.3em" font-size="75%">1</tspan></text>
-    <text class="point-label incident" data-point-id="X_9" data-anchor-x="0.507714" data-anchor-y="-0.110320" data-offset-x="12.0" data-offset-y="-10.5" x="0.532114" y="-0.131670" font-size="0.041175">X<tspan dy="0.3em" font-size="75%">9</tspan></text>
-    <text class="point-label incident" data-point-id="X_15" data-anchor-x="0.564095" data-anchor-y="-0.131918" data-offset-x="12.0" data-offset-y="-10.5" x="0.588495" y="-0.153268" font-size="0.041175">X<tspan dy="0.3em" font-size="75%">15</tspan></text>
-    <text class="point-label incident" data-point-id="X_13" data-anchor-x="0.600054" data-anchor-y="-0.279939" data-offset-x="12.0" data-offset-y="-10.5" x="0.624454" y="-0.301289" font-size="0.041175">X<tspan dy="0.3em" font-size="75%">13</tspan></text>
-    <text class="point-label incident" data-point-id="X_14" data-anchor-x="0.826997" data-anchor-y="0.187147" data-offset-x="12.0" data-offset-y="-10.5" x="0.851397" y="0.165797" font-size="0.041175">X<tspan dy="0.3em" font-size="75%">14</tspan></text>
-    <text class="point-label incident" data-point-id="X_17" data-anchor-x="0.576690" data-anchor-y="-0.214570" data-offset-x="12.0" data-offset-y="-10.5" x="0.601090" y="-0.235920" font-size="0.041175">X<tspan dy="0.3em" font-size="75%">17</tspan></text>
-    <text class="point-label incident" data-point-id="X_18" data-anchor-x="0.371298" data-anchor-y="-0.073659" data-offset-x="12.0" data-offset-y="-10.5" x="0.395698" y="-0.095009" font-size="0.041175">X<tspan dy="0.3em" font-size="75%">18</tspan></text>
-    <text class="target-label" data-point-id="X_6" data-anchor-x="0.618034" data-anchor-y="-0.242934" data-offset-x="12.0" data-offset-y="-10.5" x="0.642434" y="-0.264284" font-size="0.041175">X<tspan dy="0.3em" font-size="75%">6</tspan></text>
-    <text class="subtitle-label" x="-0.272667" y="0.573400" font-size="0.035075" fill="#999">Kepler (1, √φ, φ) | AB = 1</text>
+    <text id="lbl-A" class="given-label" data-point-id="A" data-anchor-x="0.000000" data-anchor-y="-0.000000" data-offset-x="-24.0" data-offset-y="22.5" x="-0.078960" y="0.074025" font-size="0.066623">A</text>
+    <text id="lbl-B" class="given-label" data-point-id="B" data-anchor-x="1.618034" data-anchor-y="-0.000000" data-offset-x="12.0" data-offset-y="22.5" x="1.657514" y="0.074025" font-size="0.066623">B</text>
+    <text id="lbl-C" class="point-label" data-point-id="C" data-anchor-x="1.000000" data-anchor-y="-0.786151" data-offset-x="-7.5" data-offset-y="-15.0" x="0.975325" y="-0.835501" font-size="0.066623">C</text>
+    <text id="lbl-X_19" class="point-label incident" data-point-id="X_19" data-anchor-x="1.000000" data-anchor-y="-0.786151" data-offset-x="-38.0" data-offset-y="20.0" x="0.874980" y="-0.720351" font-size="0.066623">X<tspan dy="0.3em" font-size="75%">19</tspan></text>
+    <text id="lbl-X_3" class="point-label incident" data-point-id="X_3" data-anchor-x="0.809017" data-anchor-y="-0.000000" data-offset-x="-38.0" data-offset-y="20.0" x="0.683997" y="0.065800" font-size="0.066623">X<tspan dy="0.3em" font-size="75%">3</tspan></text>
+    <text id="lbl-Sym_a" class="guide-label guide" data-point-id="Sym_a" data-anchor-x="1.236068" data-anchor-y="-0.485868" data-offset-x="16.0" data-offset-y="5.0" x="1.288708" y="-0.469418" font-size="0.057575">Sym<tspan dy="0.3em" font-size="75%">a</tspan></text>
+    <text id="lbl-Sym_b" class="guide-label guide" data-point-id="Sym_b" data-anchor-x="0.723607" data-anchor-y="-0.568864" data-offset-x="-38.0" data-offset-y="20.0" x="0.598587" y="-0.503064" font-size="0.057575">Sym<tspan dy="0.3em" font-size="75%">b</tspan></text>
+    <text id="lbl-Sym_c" class="guide-label guide" data-point-id="Sym_c" data-anchor-x="1.000000" data-anchor-y="-0.000000" data-offset-x="16.0" data-offset-y="5.0" x="1.052640" y="0.016450" font-size="0.057575">Sym<tspan dy="0.3em" font-size="75%">c</tspan></text>
+    <text id="lbl-X_1" class="point-label incident" data-point-id="X_1" data-anchor-x="0.945027" data-anchor-y="-0.326993" data-offset-x="-38.0" data-offset-y="20.0" x="0.820007" y="-0.261193" font-size="0.066623">X<tspan dy="0.3em" font-size="75%">1</tspan></text>
+    <text id="lbl-X_9" class="point-label incident" data-point-id="X_9" data-anchor-x="0.821499" data-anchor-y="-0.178501" data-offset-x="-38.0" data-offset-y="20.0" x="0.696479" y="-0.112701" font-size="0.066623">X<tspan dy="0.3em" font-size="75%">9</tspan></text>
+    <text id="lbl-X_32" class="point-label incident" data-point-id="X_32" data-anchor-x="1.059017" data-anchor-y="-0.514543" data-offset-x="-38.0" data-offset-y="-10.5" x="0.933997" y="-0.549088" font-size="0.066623">X<tspan dy="0.3em" font-size="75%">32</tspan></text>
+    <text id="lbl-X_2" class="point-label incident" data-point-id="X_2" data-anchor-x="0.872678" data-anchor-y="-0.262050" data-offset-x="12.0" data-offset-y="20.0" x="0.912158" y="-0.196250" font-size="0.066623">X<tspan dy="0.3em" font-size="75%">2</tspan></text>
+    <text id="lbl-X_69" class="point-label incident" data-point-id="X_69" data-anchor-x="0.618034" data-anchor-y="-0.000000" data-offset-x="-38.0" data-offset-y="-10.5" x="0.493014" y="-0.034545" font-size="0.066623">X<tspan dy="0.3em" font-size="75%">69</tspan></text>
+    <text id="lbl-X_65" class="point-label incident" data-point-id="X_65" data-anchor-x="1.000000" data-anchor-y="-0.459159" data-offset-x="-38.0" data-offset-y="20.0" x="0.874980" y="-0.393358" font-size="0.066623">X<tspan dy="0.3em" font-size="75%">65</tspan></text>
+    <text id="lbl-X_6" class="target-label" data-point-id="X_6" data-anchor-x="1.000000" data-anchor-y="-0.393076" data-offset-x="12.0" data-offset-y="-10.5" x="1.039480" y="-0.427621" font-size="0.066623">X<tspan dy="0.3em" font-size="75%">6</tspan></text>
+    <text class="subtitle-label" x="-0.441184" y="0.927781" font-size="0.056753" fill="#999">Kepler (1, √φ, φ) | 1 : φ : φ + 1</text>
   </g>
-  <script type="application/json" class="etc-elements-meta">{"A":{"ID":"A","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex A","subtitle":"Reference triangle vertex at origin (0, 0)","rows":[["x","0.0000"],["y","0.0000"],["bary","1.0000 : 0.0000 : 0.0000"]],"related_points":["A"]},"B":{"ID":"B","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex B","subtitle":"Reference triangle vertex at unit base (1, 0)","rows":[["x","1.0000"],["y","0.0000"],["bary","0.0000 : 1.0000 : 0.0000"]],"related_points":["B"]},"[ A B ]":{"ID":"[ A B ]","type":"line","classes":["given","sideline"],"color":"#aaa","name":"Sideline AB (Base c = 1)","subtitle":"Reference triangle baseline through A and B","rows":[["pts","A (Vertex A), B (Vertex B)"],["len","1.0000"],["eq","0.0000x + 1.0000y + 0.0000 = 0"]],"related_points":["A","B"]},"C":{"ID":"C","type":"point","classes":["vertex"],"color":"#0ff","name":"Vertex C","subtitle":"Reference triangle apex constructed by Euclid I.22","rows":[["x","0.6180"],["y","0.4859"],["bary","-0.0000 : 0.0000 : 1.0000"]],"related_points":["C"]},"[ B C ]":{"ID":"[ B C ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline BC (Side a)","subtitle":"Reference triangle sideline opposite vertex A","rows":[["pts","B (Vertex B), C (Vertex C)"],["len","0.6180"],["eq","0.7862x + 0.6180y - 0.7862 = 0"]],"related_points":["B","C"]},"[ C A ]":{"ID":"[ C A ]","type":"line","classes":["sideline"],"color":"#aaa","name":"Sideline CA (Side b)","subtitle":"Reference triangle sideline opposite vertex B","rows":[["pts","C (Vertex C), A (Vertex A)"],["len","0.7862"],["eq","0.6180x - 0.7862y + 0.0000 = 0"]],"related_points":["C","A"]},"\u003c A B C \u003e":{"ID":"\u003c A B C \u003e","type":"polygon","classes":["reference"],"color":"#58a6ff","name":"Reference Triangle △ABC","subtitle":"Primary reference triangle with unit baseline AB = 1","rows":[["verts","A, B, C"],["sides","0.6180, 0.7862, 1.0000"],["area","0.2429"]],"related_points":["A","B","C"]},"X_3":{"ID":"X_3","type":"point","classes":["center"],"color":"#0ff","name":"CIRCUMCENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5000"],["y","0.0000"],["bary","0.5000 : 0.5000 : 0.0000"]],"related_points":["X_3"]},"circumcircle":{"ID":"circumcircle","type":"circle","classes":["circumcircle"],"color":"#C09","name":"Circumcircle of △ABC","subtitle":"Passes through vertices A, B, C; centered at X_3 CIRCUMCENTER","rows":[["ctr","X_3 (CIRCUMCENTER)"],["h, k","(0.5000, 0.0000)"],["r","0.5000"],["eq","(x - 0.500)² + (y - 0.000)² = 0.2500"],["pass","A (Vertex A)"]],"related_points":["X_3","A"]},"Sym_a":{"ID":"Sym_a","type":"point","classes":[],"color":"orange","name":"Symmedian Foot Sym_a on BC","subtitle":"Symmedial triangle vertex opposite A","rows":[["x","0.7639"],["y","0.3003"],["bary","-0.0000 : 0.3820 : 0.6180"]],"related_points":["Sym_a"]},"Sym_b":{"ID":"Sym_b","type":"point","classes":[],"color":"orange","name":"Symmedian Foot Sym_b on CA","subtitle":"Symmedial triangle vertex opposite B","rows":[["x","0.4472"],["y","0.3516"],["bary","0.2764 : 0.0000 : 0.7236"]],"related_points":["Sym_b"]},"Sym_c":{"ID":"Sym_c","type":"point","classes":[],"color":"orange","name":"Symmedian Foot Sym_c on AB","subtitle":"Symmedial triangle vertex opposite C","rows":[["x","0.6180"],["y","0.0000"],["bary","0.3820 : 0.6180 : 0.0000"]],"related_points":["Sym_c"]},"[ A Sym_a ]":{"ID":"[ A Sym_a ]","type":"line","classes":["bisector"],"color":"#aaa","name":"A-Symmedian","subtitle":"Symmedian from vertex A meeting BC at Sym_a","rows":[["pts","A (Vertex A), Sym_a (Symmedian Foot Sym_a on BC)"],["len","0.8208"],["eq","0.3658x - 0.9307y + 0.0000 = 0"]],"related_points":["A","Sym_a"]},"[ B Sym_b ]":{"ID":"[ B Sym_b ]","type":"line","classes":["bisector"],"color":"#aaa","name":"B-Symmedian","subtitle":"Symmedian from vertex B meeting CA at Sym_b","rows":[["pts","B (Vertex B), Sym_b (Symmedian Foot Sym_b on CA)"],["len","0.6551"],["eq","0.5367x + 0.8438y - 0.5367 = 0"]],"related_points":["B","Sym_b"]},"[ C Sym_c ]":{"ID":"[ C Sym_c ]","type":"line","classes":["bisector"],"color":"#aaa","name":"C-Symmedian","subtitle":"Symmedian from vertex C meeting AB at Sym_c","rows":[["pts","C (Vertex C), Sym_c (Symmedian Foot Sym_c on AB)"],["len","0.4859"],["eq","1.0000x + 0.0000y - 0.6180 = 0"]],"related_points":["C","Sym_c"]},"X_1":{"ID":"X_1","type":"point","classes":["center","incident"],"color":"#0ff","name":"INCENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5841"],["y","0.2021"],["bary","0.2571 : 0.3270 : 0.4159"]],"related_points":["X_1"]},"X_9":{"ID":"X_9","type":"point","classes":["center","incident"],"color":"#0ff","name":"MITTENPUNKT","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5077"],["y","0.1103"],["bary","0.4056 : 0.3674 : 0.2271"]],"related_points":["X_9"]},"{ 1, 9 }":{"ID":"{ 1, 9 }","type":"line","classes":["central_line","incident"],"color":"#0bd","name":"Incenter–Symmedian Line","subtitle":"Collinear line of X_1 Incenter, X_6 Symmedian Point, X_9 Mittenpunkt","rows":[["pts","X_1 (INCENTER), X_9 (MITTENPUNKT)"],["len","0.1194"],["eq","0.7688x - 0.6395y - 0.3198 = 0"]],"related_points":["X_1","X_9"]},"X_15":{"ID":"X_15","type":"point","classes":["center","incident"],"color":"#0ff","name":"1st ISODYNAMIC POINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5641"],["y","0.1319"],["bary","0.3322 : 0.3963 : 0.2715"]],"related_points":["X_15"]},"{ 3, 15 }":{"ID":"{ 3, 15 }","type":"line","classes":["central_line","incident"],"color":"#0bd","name":"Brocard Axis","subtitle":"Collinear line of X_3 Circumcenter, X_6 Symmedian Point, X_15 \u0026 X_16 Isodynamic Points","rows":[["pts","X_3 (CIRCUMCENTER), X_15 (1st ISODYNAMIC POINT)"],["len","0.1467"],["eq","0.8995x - 0.4370y - 0.4497 = 0"]],"related_points":["X_3","X_15"]},"X_13":{"ID":"X_13","type":"point","classes":["center","incident"],"color":"#0ff","name":"1st ISOGONIC CENTER (FERMAT POINT, TORRICELLI POINT)","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6001"],["y","0.2799"],["bary","0.1799 : 0.2440 : 0.5762"]],"related_points":["X_13"]},"X_14":{"ID":"X_14","type":"point","classes":["center","incident"],"color":"#0ff","name":"2nd ISOGONIC CENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.8270"],["y","-0.1871"],["bary","0.3201 : 1.0651 : -0.3852"]],"related_points":["X_14"]},"{ 13, 14 }":{"ID":"{ 13, 14 }","type":"line","classes":["central_line","incident"],"color":"#0bd","name":"Central Line L(13, 14)","subtitle":"Through X_13 (1st ISOGONIC CENTER) and X_14 (2nd ISOGONIC CENTER)","rows":[["pts","X_13 (1st ISOGONIC CENTER), X_14 (2nd ISOGONIC CENTER)"],["len","0.5193"],["eq","0.8995x + 0.4370y - 0.6621 = 0"]],"related_points":["X_13","X_14"]},"X_17":{"ID":"X_17","type":"point","classes":["center","incident"],"color":"#0ff","name":"1st NAPOLEON POINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.5767"],["y","0.2146"],["bary","0.2546 : 0.3038 : 0.4416"]],"related_points":["X_17"]},"X_18":{"ID":"X_18","type":"point","classes":["center","incident"],"color":"#0ff","name":"2nd NAPOLEON POINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.3713"],["y","0.0737"],["bary","0.5708 : 0.2776 : 0.1516"]],"related_points":["X_18"]},"{ 17, 18 }":{"ID":"{ 17, 18 }","type":"line","classes":["central_line","incident"],"color":"#0bd","name":"Central Line L(17, 18)","subtitle":"Through X_17 (1st NAPOLEON POINT) and X_18 (2nd NAPOLEON POINT)","rows":[["pts","X_17 (1st NAPOLEON POINT), X_18 (2nd NAPOLEON POINT)"],["len","0.2491"],["eq","0.5657x - 0.8246y - 0.1493 = 0"]],"related_points":["X_17","X_18"]},"X_6":{"ID":"X_6","type":"point","classes":["selected","target"],"color":"gold","name":"SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)","subtitle":"Target Triangle Center","rows":[["x","0.6180"],["y","0.2429"],["bary","0.1910 : 0.3090 : 0.5000"]],"related_points":["X_6"]}}</script>
+  <script type="application/json" class="etc-elements-meta">{"A":{"ID":"A","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex A","subtitle":"Reference triangle vertex at origin (0, 0)","rows":[["x","0.0000"],["y","0.0000"],["bary","1.0000 : 0.0000 : 0.0000"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(0,\\; 0\\right)","pretty":"(0, 0)"},{"label":"trilinear","latex":"1 : 0 : 0","pretty":"1 : 0 : 0"},{"label":"bary","latex":"1 : 0 : 0","pretty":"1 : 0 : 0"}],"approx":"≈ (0.000000, 0.000000)","related_points":["A"]},"B":{"ID":"B","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex B","subtitle":"Reference triangle baseline vertex on positive x-axis","rows":[["x","1.6180"],["y","0.0000"],["bary","0.0000 : 1.0000 : 0.0000"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\phi,\\; 0\\right)","pretty":"(φ, 0)"},{"label":"trilinear","latex":"0 : 1 : 0","pretty":"0 : 1 : 0"},{"label":"bary","latex":"0 : 1 : 0","pretty":"0 : 1 : 0"}],"approx":"≈ (1.618034, 0.000000)","related_points":["B"]},"[ A B ]":{"ID":"[ A B ]","type":"line","classes":["given","sideline"],"color":"#cbd5e1","color_token":"","name":"Sideline AB (Side c)","subtitle":"Reference triangle baseline through A and B","rows":[["pts","A (Vertex A), B (Vertex B)"],["len","1.6180"],["eq","0.0000x + 1.0000y + 0.0000 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"A, B"},{"label":"eq","latex":"y = 0","pretty":"y = 0"},{"label":"Q","latex":"\\phi + 1","pretty":"φ + 1"},{"label":"spread","latex":"0","pretty":"0"}],"approx":"≈ 0.0000x + 1.0000y + 0.0000 = 0  (|AB| ≈ 1.618034)","related_points":["A","B"]},"C":{"ID":"C","type":"point","classes":["vertex"],"color":"#0ff","name":"Vertex C","subtitle":"Reference triangle apex constructed in upper half-plane","rows":[["x","1.0000"],["y","0.7862"],["bary","-0.0000 : 0.0000 : 1.0000"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(1,\\; \\sqrt{\\phi} \\left(\\phi - 1\\right)\\right)","pretty":"(1, √φ·(φ - 1))"},{"label":"trilinear","latex":"0 : 0 : 1","pretty":"0 : 0 : 1"},{"label":"bary","latex":"0 : 0 : 1","pretty":"0 : 0 : 1"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (1.000000, 0.786151)","related_points":["C"]},"X_19":{"ID":"X_19","type":"point","classes":["center","incident"],"color":"#0ff","name":"CLAWSON POINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","1.0000"],["y","0.7862"],["bary","-0.0000 : 0.0000 : 1.0000"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(1,\\; \\sqrt{\\phi} \\left(\\phi - 1\\right)\\right)","pretty":"(1, √φ·(φ - 1))"},{"label":"trilinear","latex":"0 : 0 : 1","pretty":"0 : 0 : 1"},{"label":"bary","latex":"0 : 0 : 1","pretty":"0 : 0 : 1"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (1.000000, 0.786151)","related_points":["X_19"]},"[ B C ]":{"ID":"[ B C ]","type":"line","classes":["sideline"],"color":"#cbd5e1","color_token":"","name":"Sideline BC (Side a)","subtitle":"Reference triangle sideline opposite vertex A","rows":[["pts","B (Vertex B), C (Vertex C)"],["len","1.0000"],["eq","0.7862x + 0.6180y - 1.2720 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"B, C"},{"label":"eq","latex":"\\left(\\sqrt{\\phi} \\left(\\phi - 1\\right)\\right)x + \\left(\\phi - 1\\right)y - \\sqrt{\\phi} = 0","pretty":"(√φ·(φ - 1))x + (φ - 1)y - √φ = 0"},{"label":"Q","latex":"1","pretty":"1"},{"label":"spread","latex":"\\phi - 1","pretty":"φ - 1"}],"approx":"≈ 0.7862x + 0.6180y - 1.2720 = 0  (|BC| ≈ 1.000000)","related_points":["B","C"]},"[ C A ]":{"ID":"[ C A ]","type":"line","classes":["sideline"],"color":"#cbd5e1","color_token":"","name":"Sideline CA (Side b)","subtitle":"Reference triangle sideline opposite vertex B","rows":[["pts","C (Vertex C), A (Vertex A)"],["len","1.2720"],["eq","0.6180x - 0.7862y + 0.0000 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"C, A"},{"label":"eq","latex":"\\left(\\sqrt{\\phi} \\left(\\phi - 1\\right)\\right)x - y = 0","pretty":"(√φ·(φ - 1))x - y = 0"},{"label":"Q","latex":"\\phi","pretty":"φ"},{"label":"spread","latex":"2 - \\phi","pretty":"2 - φ"}],"approx":"≈ 0.6180x - 0.7862y + 0.0000 = 0  (|CA| ≈ 1.272020)","related_points":["C","A"]},"\u003c A B C \u003e":{"ID":"\u003c A B C \u003e","type":"polygon","classes":["reference"],"color":"#58a6ff","name":"Reference Triangle △ABC","subtitle":"Primary exact symbolic reference triangle","rows":[["verts","A, B, C"],["sides","1.0000, 1.2720, 1.6180"],["area","0.6360"]],"symbolic_rows":[{"label":"verts","latex":"","pretty":"A, B, C"},{"label":"Δ","latex":"\\frac{\\sqrt{\\phi}}{2}","pretty":"√φ/2"},{"label":"sides","latex":"1,\\; \\sqrt{\\phi},\\; \\phi","pretty":"1, √φ, φ"}],"approx":"≈ area 0.636010  |  sides (1.0000, 1.2720, 1.6180)","related_points":["A","B","C"]},"X_3":{"ID":"X_3","type":"point","classes":["center","incident"],"color":"#0ff","name":"CIRCUMCENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.8090"],["y","0.0000"],["bary","0.5000 : 0.5000 : 0.0000"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{\\phi}{2},\\; 0\\right)","pretty":"(φ/2, 0)"},{"label":"trilinear","latex":"1 : \\sqrt{\\phi} \\left(\\phi - 1\\right) : 0","pretty":"1 : √φ·(φ - 1) : 0"},{"label":"bary","latex":"1 : 1 : 0","pretty":"1 : 1 : 0"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (0.809017, 0.000000)","related_points":["X_3"]},"circumcircle":{"ID":"circumcircle","type":"circle","classes":["circumcircle"],"color":"#38bdf8","color_token":"blue","name":"Circumcircle of △ABC","subtitle":"Passes through vertices A, B, C; centered at X_3 CIRCUMCENTER","rows":[["ctr","X_3 (CIRCUMCENTER)"],["h, k","(0.8090, 0.0000)"],["r","0.8090"],["eq","(x - 0.809)² + (y - 0.000)² = 0.6545"],["pass","A (Vertex A)"]],"symbolic_rows":[{"label":"center","latex":"","pretty":"X_3 (CIRCUMCENTER)"},{"label":"r","latex":"\\frac{\\phi}{2}","pretty":"φ/2"},{"label":"Q_r","latex":"\\frac{\\phi}{4} + \\frac{1}{4}","pretty":"φ/4 + 1/4"},{"label":"eq","latex":"\\left(x - \\left(\\frac{\\phi}{2}\\right)\\right)^2 + y^2 = \\frac{\\phi}{4} + \\frac{1}{4}","pretty":"(x - (φ/2))² + y² = φ/4 + 1/4"}],"approx":"≈ r = 0.809017, Q_r = 0.654508","related_points":["X_3","A"]},"Sym_a":{"ID":"Sym_a","type":"point","classes":[],"color":"orange","name":"Symmedian Foot Sym_a on BC","subtitle":"Symmedial triangle vertex opposite A","rows":[["x","1.2361"],["y","0.4859"],["bary","-0.0000 : 0.3820 : 0.6180"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(2 \\phi - 2,\\; \\sqrt{\\phi} \\left(2 - \\phi\\right)\\right)","pretty":"(2·φ - 2, √φ·(2 - φ))"},{"label":"trilinear","latex":"0 : \\sqrt{\\phi} \\left(2 \\phi - 3\\right) : 2 - \\phi","pretty":"0 : √φ·(2·φ - 3) : 2 - φ"},{"label":"bary","latex":"0 : 2 - \\phi : \\phi - 1","pretty":"0 : 2 - φ : φ - 1"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (1.236068, 0.485868)","related_points":["Sym_a"]},"Sym_b":{"ID":"Sym_b","type":"point","classes":[],"color":"orange","name":"Symmedian Foot Sym_b on CA","subtitle":"Symmedial triangle vertex opposite B","rows":[["x","0.7236"],["y","0.5689"],["bary","0.2764 : -0.0000 : 0.7236"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{\\phi}{5} + \\frac{2}{5},\\; \\frac{\\sqrt{\\phi} \\left(2 \\phi - 1\\right)}{5}\\right)","pretty":"(φ/5 + 2/5, √φ·(2·φ - 1)/5)"},{"label":"trilinear","latex":"3 - \\phi : 0 : 2 \\phi - 1","pretty":"3 - φ : 0 : 2·φ - 1"},{"label":"bary","latex":"3 - \\phi : 0 : \\phi + 2","pretty":"3 - φ : 0 : φ + 2"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (0.723607, 0.568864)","related_points":["Sym_b"]},"Sym_c":{"ID":"Sym_c","type":"point","classes":[],"color":"orange","name":"Symmedian Foot Sym_c on AB","subtitle":"Symmedial triangle vertex opposite C","rows":[["x","1.0000"],["y","0.0000"],["bary","0.3820 : 0.6180 : 0.0000"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(1,\\; 0\\right)","pretty":"(1, 0)"},{"label":"trilinear","latex":"2 - \\phi : \\sqrt{\\phi} \\left(2 - \\phi\\right) : 0","pretty":"2 - φ : √φ·(2 - φ) : 0"},{"label":"bary","latex":"2 - \\phi : \\phi - 1 : 0","pretty":"2 - φ : φ - 1 : 0"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (1.000000, 0.000000)","related_points":["Sym_c"]},"\u003c Sym_a Sym_b Sym_c \u003e":{"ID":"\u003c Sym_a Sym_b Sym_c \u003e","type":"polygon","classes":["secondary"],"color":"#90ee90","name":"Symmedial Triangle △Sym_a Sym_b Sym_c","subtitle":"Cevian triangle of Symmedian Point X_6","rows":[["verts","Sym_a, Sym_b, Sym_c"],["sides","0.6325, 0.5402, 0.5191"],["area","0.1343"]],"symbolic_rows":[{"label":"verts","latex":"","pretty":"Sym_a, Sym_b, Sym_c"},{"label":"Δ","latex":"\\frac{\\sqrt{\\phi} \\left(7 - 4 \\phi\\right)}{5}","pretty":"√φ·(7 - 4·φ)/5"},{"label":"sides","latex":"\\frac{\\sqrt{10}}{5},\\; \\sqrt{7 - 3 \\sqrt{5}},\\; \\frac{\\sqrt{5} \\sqrt{17 - 7 \\sqrt{5}}}{5}","pretty":"√10/5, sqrt(7 - 3·√5), √5·sqrt(17 - 7·√5)/5"}],"approx":"≈ area 0.134291  |  sides (0.6325, 0.5402, 0.5191)","related_points":["Sym_a","Sym_b","Sym_c"]},"[ A Sym_a ]":{"ID":"[ A Sym_a ]","type":"line","classes":["bisector"],"color":"#e8b85a","color_token":"gold","name":"A-Symmedian","subtitle":"Symmedian from vertex A meeting BC at Sym_a","rows":[["pts","A (Vertex A), Sym_a (Symmedian Foot Sym_a on BC)"],["len","1.3281"],["eq","0.3658x - 0.9307y + 0.0000 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"A, Sym_a"},{"label":"eq","latex":"\\left(\\sqrt{\\phi} \\left(2 - \\phi\\right)\\right)x - \\left(2 \\phi - 2\\right)y = 0","pretty":"(√φ·(2 - φ))x - (2·φ - 2)y = 0"},{"label":"Q","latex":"5 - 2 \\phi","pretty":"5 - 2·φ"},{"label":"spread","latex":"\\frac{4 \\phi}{11} - \\frac{5}{11}","pretty":"4·φ/11 - 5/11"}],"approx":"≈ 0.3658x - 0.9307y + 0.0000 = 0  (|ASym_a| ≈ 1.328131)","related_points":["A","Sym_a"]},"[ B Sym_b ]":{"ID":"[ B Sym_b ]","type":"line","classes":["bisector"],"color":"#e8b85a","color_token":"gold","name":"B-Symmedian","subtitle":"Symmedian from vertex B meeting CA at Sym_b","rows":[["pts","B (Vertex B), Sym_b (Symmedian Foot Sym_b on CA)"],["len","1.0600"],["eq","0.5367x + 0.8438y - 0.8683 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"B, Sym_b"},{"label":"eq","latex":"\\left(\\sqrt{\\phi} \\left(2 \\phi - 1\\right)\\right)x + \\left(4 \\phi - 2\\right)y - \\sqrt{\\phi} \\left(\\phi + 2\\right) = 0","pretty":"(√φ·(2·φ - 1))x + (4·φ - 2)y - √φ·(φ + 2) = 0"},{"label":"Q","latex":"\\frac{\\phi}{5} + \\frac{4}{5}","pretty":"φ/5 + 4/5"},{"label":"spread","latex":"\\frac{4 \\phi}{19} - \\frac{1}{19}","pretty":"4·φ/19 - 1/19"}],"approx":"≈ 0.5367x + 0.8438y - 0.8683 = 0  (|BSym_b| ≈ 1.060003)","related_points":["B","Sym_b"]},"[ C Sym_c ]":{"ID":"[ C Sym_c ]","type":"line","classes":["bisector"],"color":"#e8b85a","color_token":"gold","name":"C-Symmedian","subtitle":"Symmedian from vertex C meeting AB at Sym_c","rows":[["pts","C (Vertex C), Sym_c (Symmedian Foot Sym_c on AB)"],["len","0.7862"],["eq","1.0000x + 0.0000y - 1.0000 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"C, Sym_c"},{"label":"eq","latex":"x - 1 = 0","pretty":"x - 1 = 0"},{"label":"Q","latex":"\\phi - 1","pretty":"φ - 1"},{"label":"spread","latex":"1","pretty":"1"}],"approx":"≈ 1.0000x + 0.0000y - 1.0000 = 0  (|CSym_c| ≈ 0.786151)","related_points":["C","Sym_c"]},"{ 19, 65 }":{"ID":"{ 19, 65 }","type":"line","classes":["central_line","incident"],"color":"#4ade80","color_token":"green","name":"Van Aubel Line","subtitle":"Collinear line of X_4 Orthocenter and X_6 Symmedian Point","rows":[["pts","C (Vertex C), X_65 (ORTHOCENTER OF THE INTOUCH TRIANGLE)"],["len","0.3270"],["eq","1.0000x + 0.0000y - 1.0000 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"C, X_65"},{"label":"eq","latex":"x - 1 = 0","pretty":"x - 1 = 0"},{"label":"Q","latex":"\\phi - 1","pretty":"φ - 1"},{"label":"spread","latex":"1","pretty":"1"}],"approx":"≈ 1.0000x + 0.0000y - 1.0000 = 0  (|CX_65| ≈ 0.326993)","related_points":["C","X_65"]},"X_1":{"ID":"X_1","type":"point","classes":["center","incident"],"color":"#0ff","name":"INCENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.9450"],["y","0.3270"],["bary","0.2571 : 0.3270 : 0.4159"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{\\sqrt{\\phi}}{2} + \\frac{\\phi}{2} - \\frac{1}{2},\\; \\frac{\\sqrt{\\phi}}{2} - \\frac{\\phi}{2} + \\frac{1}{2}\\right)","pretty":"(√φ/2 + φ/2 - 1/2, √φ/2 - φ/2 + 1/2)"},{"label":"trilinear","latex":"1 : 1 : 1","pretty":"1 : 1 : 1"},{"label":"bary","latex":"1 : \\sqrt{\\phi} : \\phi","pretty":"1 : √φ : φ"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (0.945027, 0.326993)","related_points":["X_1"]},"X_9":{"ID":"X_9","type":"point","classes":["center","incident"],"color":"#0ff","name":"MITTENPUNKT","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.8215"],["y","0.1785"],["bary","0.4056 : 0.3674 : 0.2271"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(- \\frac{4 \\phi \\sqrt{\\phi}}{11} + \\frac{9 \\sqrt{\\phi}}{22} + \\frac{5 \\phi}{22} + \\frac{15}{22},\\; \\frac{4 \\phi \\sqrt{\\phi}}{11} - \\frac{9 \\sqrt{\\phi}}{22} - \\frac{5 \\phi}{22} + \\frac{7}{22}\\right)","pretty":"(-4·φ·√φ/11 + 9·√φ/22 + 5·φ/22 + 15/22, 4·φ·√φ/11 - 9·√φ/22 - 5·φ/22 + 7/22)"},{"label":"trilinear","latex":"\\sqrt{\\phi} + \\phi - 1 : - \\sqrt{\\phi} + \\phi + 1 : \\sqrt{\\phi} - \\phi + 1","pretty":"√φ + φ - 1 : -√φ + φ + 1 : √φ - φ + 1"},{"label":"bary","latex":"\\sqrt{\\phi} + \\phi - 1 : \\phi \\sqrt{\\phi} + \\sqrt{\\phi} - \\phi : \\phi \\sqrt{\\phi} - 1","pretty":"√φ + φ - 1 : φ·√φ + √φ - φ : φ·√φ - 1"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (0.821499, 0.178501)","related_points":["X_9"]},"{ 1, 9 }":{"ID":"{ 1, 9 }","type":"line","classes":["central_line","incident"],"color":"#f472b6","color_token":"pink","name":"Incenter–Symmedian Line","subtitle":"Collinear line of X_1 Incenter, X_6 Symmedian Point, X_9 Mittenpunkt","rows":[["pts","X_1 (INCENTER), X_9 (MITTENPUNKT)"],["len","0.1932"],["eq","0.7688x - 0.6395y - 0.5174 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"X_1, X_9"},{"label":"eq","latex":"\\left(- 8 \\phi \\sqrt{\\phi} + 20 \\sqrt{\\phi} - 6 \\phi + 4\\right)x - \\left(8 \\phi \\sqrt{\\phi} + 2 \\sqrt{\\phi} + 6 \\phi - 26\\right)y - 5 \\phi \\sqrt{\\phi} + 4 \\sqrt{\\phi} - 10 \\phi + 3 = 0","pretty":"(-8·φ·√φ + 20·√φ - 6·φ + 4)x - (8·φ·√φ + 2·√φ + 6·φ - 26)y - 5·φ·√φ + 4·√φ - 10·φ + 3 = 0"},{"label":"Q","latex":"- \\frac{126 \\phi \\sqrt{\\phi}}{121} + \\frac{62 \\sqrt{\\phi}}{121} + \\frac{21 \\phi}{121} + \\frac{151}{121}","pretty":"-126·φ·√φ/121 + 62·√φ/121 + 21·φ/121 + 151/121"},{"label":"spread","latex":"- \\frac{8 \\phi \\sqrt{\\phi}}{29} + \\frac{18 \\sqrt{\\phi}}{29} + \\frac{6 \\phi}{29} + \\frac{1}{29}","pretty":"-8·φ·√φ/29 + 18·√φ/29 + 6·φ/29 + 1/29"}],"approx":"≈ 0.7688x - 0.6395y - 0.5174 = 0  (|X_1X_9| ≈ 0.193155)","related_points":["X_1","X_9"]},"X_32":{"ID":"X_32","type":"point","classes":["center","incident"],"color":"#0ff","name":"3rd POWER POINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","1.0590"],["y","0.5145"],["bary","0.0955 : 0.2500 : 0.6545"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{\\phi}{2} + \\frac{1}{4},\\; \\frac{\\phi \\sqrt{\\phi}}{4}\\right)","pretty":"(φ/2 + 1/4, φ·√φ/4)"},{"label":"trilinear","latex":"1 : \\phi \\sqrt{\\phi} : 2 \\phi + 1","pretty":"1 : φ·√φ : 2·φ + 1"},{"label":"bary","latex":"1 : \\phi + 1 : 3 \\phi + 2","pretty":"1 : φ + 1 : 3·φ + 2"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (1.059017, 0.514543)","related_points":["X_32"]},"{ 3, 32 }":{"ID":"{ 3, 32 }","type":"line","classes":["central_line","incident"],"color":"#a78bfa","color_token":"purple","name":"Brocard Axis","subtitle":"Collinear line of X_3 Circumcenter, X_6 Symmedian Point, X_15 \u0026 X_16 Isodynamic Points","rows":[["pts","X_3 (CIRCUMCENTER), X_32 (3rd POWER POINT)"],["len","0.5721"],["eq","0.8995x - 0.4370y - 0.7277 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"X_3, X_32"},{"label":"eq","latex":"\\left(2 \\phi \\sqrt{\\phi}\\right)x - 2y - \\sqrt{\\phi} \\left(\\phi + 1\\right) = 0","pretty":"(2·φ·√φ)x - 2y - √φ·(φ + 1) = 0"},{"label":"Q","latex":"\\frac{\\phi}{8} + \\frac{1}{8}","pretty":"φ/8 + 1/8"},{"label":"spread","latex":"\\frac{\\phi}{2}","pretty":"φ/2"}],"approx":"≈ 0.8995x - 0.4370y - 0.7277 = 0  (|X_3X_32| ≈ 0.572061)","related_points":["X_3","X_32"]},"X_2":{"ID":"X_2","type":"point","classes":["center","incident"],"color":"#0ff","name":"CENTROID","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.8727"],["y","0.2621"],["bary","0.3333 : 0.3333 : 0.3333"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{\\phi}{3} + \\frac{1}{3},\\; \\frac{\\sqrt{\\phi} \\left(\\phi - 1\\right)}{3}\\right)","pretty":"(φ/3 + 1/3, √φ·(φ - 1)/3)"},{"label":"trilinear","latex":"1 : \\sqrt{\\phi} \\left(\\phi - 1\\right) : \\phi - 1","pretty":"1 : √φ·(φ - 1) : φ - 1"},{"label":"bary","latex":"1 : 1 : 1","pretty":"1 : 1 : 1"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (0.872678, 0.262050)","related_points":["X_2"]},"X_69":{"ID":"X_69","type":"point","classes":["center","incident"],"color":"#0ff","name":"SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE","subtitle":"Incident / Reference Triangle Center","rows":[["x","0.6180"],["y","0.0000"],["bary","0.6180 : 0.3820 : 0.0000"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\phi - 1,\\; 0\\right)","pretty":"(φ - 1, 0)"},{"label":"trilinear","latex":"\\phi : \\sqrt{\\phi} \\left(\\phi - 1\\right) : 0","pretty":"φ : √φ·(φ - 1) : 0"},{"label":"bary","latex":"\\phi : 1 : 0","pretty":"φ : 1 : 0"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (0.618034, 0.000000)","related_points":["X_69"]},"{ 2, 69 }":{"ID":"{ 2, 69 }","type":"line","classes":["central_line","incident"],"color":"#a3e635","color_token":"lime","name":"Centroid–Symmedian Line","subtitle":"Collinear line of X_2 Centroid, X_6 Symmedian Point, X_39 Brocard Midpoint","rows":[["pts","X_2 (CENTROID), X_69 (SYMMEDIAN POINT OF THE ANTICOMPLEMENTARY TRIANGLE)"],["len","0.3654"],["eq","0.7172x - 0.6969y - 0.4432 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"X_2, X_69"},{"label":"eq","latex":"\\left(\\sqrt{\\phi} \\left(\\phi - 1\\right)\\right)x - \\left(4 - 2 \\phi\\right)y - \\sqrt{\\phi} \\left(2 - \\phi\\right) = 0","pretty":"(√φ·(φ - 1))x - (4 - 2·φ)y - √φ·(2 - φ) = 0"},{"label":"Q","latex":"\\frac{19}{9} - \\frac{11 \\phi}{9}","pretty":"19/9 - 11·φ/9"},{"label":"spread","latex":"\\frac{8 \\phi}{31} + \\frac{3}{31}","pretty":"8·φ/31 + 3/31"}],"approx":"≈ 0.7172x - 0.6969y - 0.4432 = 0  (|X_2X_69| ≈ 0.365396)","related_points":["X_2","X_69"]},"X_65":{"ID":"X_65","type":"point","classes":["center","incident"],"color":"#0ff","name":"ORTHOCENTER OF THE INTOUCH TRIANGLE","subtitle":"Incident / Reference Triangle Center","rows":[["x","1.0000"],["y","0.4592"],["bary","0.1589 : 0.2571 : 0.5841"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(1,\\; \\phi \\sqrt{\\phi} - \\frac{3 \\sqrt{\\phi}}{2} + \\frac{\\phi}{2} - \\frac{1}{2}\\right)","pretty":"(1, φ·√φ - 3·√φ/2 + φ/2 - 1/2)"},{"label":"trilinear","latex":"\\sqrt{\\phi} : \\phi : \\sqrt{\\phi} + \\phi","pretty":"√φ : φ : √φ + φ"},{"label":"bary","latex":"\\sqrt{\\phi} : \\phi \\sqrt{\\phi} : \\phi \\sqrt{\\phi} + \\phi + 1","pretty":"√φ : φ·√φ : φ·√φ + φ + 1"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (1.000000, 0.459159)","related_points":["X_65"]},"X_6":{"ID":"X_6","type":"point","classes":["selected","target"],"color":"gold","name":"SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)","subtitle":"Target Triangle Center","rows":[["x","1.0000"],["y","0.3931"],["bary","0.1910 : 0.3090 : 0.5000"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(1,\\; \\frac{\\sqrt{\\phi} \\left(\\phi - 1\\right)}{2}\\right)","pretty":"(1, √φ·(φ - 1)/2)"},{"label":"trilinear","latex":"1 : \\sqrt{\\phi} : \\phi","pretty":"1 : √φ : φ"},{"label":"bary","latex":"1 : \\phi : \\phi + 1","pretty":"1 : φ : φ + 1"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (1.000000, 0.393076)","related_points":["X_6"]}}</script>
   <script>//<![CDATA[
 
 (function () {
@@ -397,7 +646,6 @@ figure:hover .etc-svg-toolbar {
     const initVbAttr = svg.getAttribute('data-initial-viewbox') || svg.getAttribute('viewBox');
     const initialViewBox = initVbAttr.split(/\s+/).map(Number);
 
-    // Parse embedded element metadata catalog
     let elementsCatalog = {};
     const metaEl = svg.querySelector('script.etc-elements-meta');
     if (metaEl) {
@@ -413,10 +661,112 @@ figure:hover .etc-svg-toolbar {
     const labelsGroup = svg.querySelector('#labels');
 
     const pointEls = pointsGroup ? Array.from(pointsGroup.querySelectorAll('circle')) : [];
-    const structEls = elementsGroup ? Array.from(elementsGroup.querySelectorAll('line, circle')) : [];
-    const polyEls = graphicsGroup ? Array.from(graphicsGroup.querySelectorAll('polygon, polyline')) : [];
     const labelEls = labelsGroup ? Array.from(labelsGroup.querySelectorAll('text[data-point-id]')) : [];
     const subtitleEl = labelsGroup ? labelsGroup.querySelector('text.subtitle-label') : null;
+
+    function escapeHtml(str) {
+        return String(str || '')
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;');
+    }
+
+    function formatIdHtml(idStr) {
+        const s = escapeHtml(idStr);
+        return s.replace(/_\{([^}]+)\}/g, '<sub>$1</sub>').replace(/_([A-Za-z0-9']+)/g, '<sub>$1</sub>');
+    }
+
+    function extractBraced(src, startIdx) {
+        if (src[startIdx] !== '{') return null;
+        let depth = 0;
+        for (let i = startIdx; i < src.length; i++) {
+            if (src[i] === '{') depth++;
+            else if (src[i] === '}') {
+                depth--;
+                if (depth === 0) {
+                    return { content: src.slice(startIdx + 1, i), next: i + 1 };
+                }
+            }
+        }
+        return null;
+    }
+
+    function convertLatexFallback(tex) {
+        let s = String(tex || '');
+        s = s.replace(/\\left\s*([(\[{|])/g, '$1').replace(/\\right\s*([)\]}|])/g, '$1');
+        s = s.replace(/\\;/g, ' ').replace(/\\,/g, '\u2009').replace(/\\quad/g, '  ');
+        s = s.replace(/\\varphi|\\phi/g, 'φ')
+             .replace(/\\Delta/g, 'Δ')
+             .replace(/\\alpha/g, 'α')
+             .replace(/\\beta/g, 'β')
+             .replace(/\\gamma/g, 'γ')
+             .replace(/\\cdot/g, '·')
+             .replace(/\\approx/g, '≈')
+             .replace(/\\infty/g, '∞');
+
+        let out = '';
+        let i = 0;
+        while (i < s.length) {
+            if (s.startsWith('\\frac', i)) {
+                let k = i + 5;
+                while (k < s.length && s[k] === ' ') k++;
+                const numB = extractBraced(s, k);
+                if (numB) {
+                    let k2 = numB.next;
+                    while (k2 < s.length && s[k2] === ' ') k2++;
+                    const denB = extractBraced(s, k2);
+                    if (denB) {
+                        out += '<span class="etc-math-frac"><span class="etc-math-num">' +
+                            convertLatexFallback(numB.content) +
+                            '</span><span class="etc-math-den">' +
+                            convertLatexFallback(denB.content) +
+                            '</span></span>';
+                        i = denB.next;
+                        continue;
+                    }
+                }
+            }
+            if (s.startsWith('\\sqrt', i)) {
+                let k = i + 5;
+                while (k < s.length && s[k] === ' ') k++;
+                const radB = extractBraced(s, k);
+                if (radB) {
+                    out += '√<span class="etc-math-rad">' + convertLatexFallback(radB.content) + '</span>';
+                    i = radB.next;
+                    continue;
+                }
+            }
+            if ((s[i] === '_' || s[i] === '^') && i + 1 < s.length) {
+                const tag = s[i] === '_' ? 'sub' : 'sup';
+                if (s[i + 1] === '{') {
+                    const subB = extractBraced(s, i + 1);
+                    if (subB) {
+                        out += `<${tag}>` + convertLatexFallback(subB.content) + `</${tag}>`;
+                        i = subB.next;
+                        continue;
+                    }
+                } else {
+                    out += `<${tag}>` + escapeHtml(s[i + 1]) + `</${tag}>`;
+                    i += 2;
+                    continue;
+                }
+            }
+            out += escapeHtml(s[i]);
+            i++;
+        }
+        return out;
+    }
+
+    function renderMathHtml(latexStr, prettyStr) {
+        if (!latexStr) return escapeHtml(prettyStr || '');
+        if (typeof window !== 'undefined' && window.katex && typeof window.katex.renderToString === 'function') {
+            try {
+                return window.katex.renderToString(latexStr, { throwOnError: false, displayMode: false });
+            } catch (e) {}
+        }
+        return '<span class="etc-math-fallback">' + convertLatexFallback(latexStr) + '</span>';
+    }
 
     function getViewBox() {
         return svg.getAttribute('viewBox').split(/\s+/).map(Number);
@@ -428,10 +778,11 @@ figure:hover .etc-svg-toolbar {
         const vb = getViewBox();
         const unitsPerPx = vb[2] / widthPx;
 
+        const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
         pointEls.forEach(c => {
             const isTarget = c.classList.contains('target') || c.classList.contains('selected');
             const isGuide = c.classList.contains('guide');
-            const rPx = isTarget ? 10.5 : (isGuide ? 4.8 : 7.5);
+            const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
             c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
         });
 
@@ -470,8 +821,10 @@ figure:hover .etc-svg-toolbar {
         const relY = (clientY !== undefined && rect.height > 0) ? (clientY - rect.top) / rect.height : 0.5;
         const focusX = x + relX * w;
         const focusY = y + relY * h;
-        const newW = Math.min(Math.max(w * factor, 0.002), 50.0);
-        const newH = Math.min(Math.max(h * factor, 0.002), 50.0);
+        const baseW = Math.max(initialViewBox[2] || 1.0, 0.2);
+        const baseH = Math.max(initialViewBox[3] || 1.0, 0.2);
+        const newW = Math.min(Math.max(w * factor, baseW * 0.002), baseW * 30.0);
+        const newH = Math.min(Math.max(h * factor, baseH * 0.002), baseH * 30.0);
         const newX = focusX - relX * newW;
         const newY = focusY - relY * newH;
         setViewBox([newX, newY, newW, newH]);
@@ -481,7 +834,8 @@ figure:hover .etc-svg-toolbar {
         setViewBox([...initialViewBox]);
     }
 
-    // Expose controller API on the SVG element for external toolbar buttons
+    let hudEl = null;
+
     svg._etcController = {
         zoomIn: () => zoomBy(1 / 1.25),
         zoomOut: () => zoomBy(1.25),
@@ -491,14 +845,14 @@ figure:hover .etc-svg-toolbar {
         scaleViewElements: scaleViewElements,
     };
 
-    // Ensure Toolbar and Triangle Tabs exist if running inside an HTML document
     if (document.body && document.documentElement.tagName.toLowerCase() === 'html') {
-        const parent = svg.parentElement;
-        if (parent && !parent.classList.contains('etc-svg-stage')) {
-            const stage = document.createElement('div');
-            stage.className = 'etc-svg-stage';
-            parent.insertBefore(stage, svg);
-            stage.appendChild(svg);
+        let stage = svg.parentElement;
+        if (stage && !stage.classList.contains('etc-svg-stage')) {
+            const newStage = document.createElement('div');
+            newStage.className = 'etc-svg-stage';
+            stage.insertBefore(newStage, svg);
+            newStage.appendChild(svg);
+            stage = newStage;
 
             const toolbar = document.createElement('div');
             toolbar.className = 'etc-svg-toolbar';
@@ -516,13 +870,15 @@ figure:hover .etc-svg-toolbar {
                     action: () => svg.classList.toggle('show-lines'),
                 });
             }
-            btns.push({
-                label: 'Labels',
-                toggleKey: 'labels',
-                title: 'Toggle Point Labels',
-                isActive: () => !svg.classList.contains('hide-labels'),
-                action: () => svg.classList.toggle('hide-labels'),
-            });
+            if (labelEls.length > 0) {
+                btns.push({
+                    label: 'Labels',
+                    toggleKey: 'labels',
+                    title: 'Toggle Point Labels',
+                    isActive: () => !svg.classList.contains('hide-labels'),
+                    action: () => svg.classList.toggle('hide-labels'),
+                });
+            }
             if (svg.querySelector('.guide')) {
                 btns.push({
                     label: 'Guides',
@@ -553,6 +909,17 @@ figure:hover .etc-svg-toolbar {
                 toolbar.appendChild(btn);
             });
             stage.appendChild(toolbar);
+        }
+
+        if (stage) {
+            hudEl = stage.querySelector('.etc-symbolic-hud');
+            if (!hudEl) {
+                hudEl = document.createElement('div');
+                hudEl.className = 'etc-symbolic-hud';
+                hudEl.setAttribute('aria-live', 'polite');
+                stage.appendChild(hudEl);
+            }
+            svg.querySelectorAll('title').forEach(t => t.remove());
         }
 
         const panel = svg.closest('.etc-graphics-panel');
@@ -622,11 +989,49 @@ figure:hover .etc-svg-toolbar {
         }
     }
 
-    let activeHoveredId = null;
+    function updateHud(info, fallbackId) {
+        if (!hudEl) return;
+        if (!info) {
+            hudEl.classList.remove('is-visible');
+            return;
+        }
+        const dotColor = info.color || '#0ff';
+        const idHtml = formatIdHtml(info.ID || fallbackId || '');
+        const titleHtml = escapeHtml(info.name || fallbackId || '');
+        const kindHtml = escapeHtml(info.type || '');
+        const symRows = Array.isArray(info.symbolic_rows) ? info.symbolic_rows : [];
+        let rowsHtml = '';
+        if (symRows.length > 0) {
+            symRows.forEach(r => {
+                rowsHtml += '<div class="etc-hud-key">' + escapeHtml(r.label) + '</div>' +
+                    '<div class="etc-hud-val">' + renderMathHtml(r.latex, r.pretty) + '</div>';
+            });
+        } else if (Array.isArray(info.rows)) {
+            info.rows.forEach(pair => {
+                rowsHtml += '<div class="etc-hud-key">' + escapeHtml(pair[0]) + '</div>' +
+                    '<div class="etc-hud-val">' + escapeHtml(pair[1]) + '</div>';
+            });
+        }
+        const approxHtml = info.approx
+            ? '<div class="etc-hud-approx">' + escapeHtml(info.approx) + '</div>'
+            : '';
+        hudEl.innerHTML =
+            '<div class="etc-hud-head">' +
+                '<span class="etc-hud-dot" style="background:' + escapeHtml(dotColor) + '"></span>' +
+                '<span class="etc-hud-id">' + idHtml + '</span>' +
+                '<span class="etc-hud-title">' + titleHtml + '</span>' +
+                '<span class="etc-hud-kind">' + kindHtml + '</span>' +
+            '</div>' +
+            '<div class="etc-hud-rows">' + rowsHtml + '</div>' +
+            approxHtml;
+        hudEl.classList.add('is-visible');
+    }
 
-    function clearHover() {
-        if (!activeHoveredId) return;
-        activeHoveredId = null;
+    let activeHoveredKey = null;
+
+    function clearHover(clearTextRefs) {
+        if (!activeHoveredKey) return;
+        activeHoveredKey = null;
         svg.querySelectorAll('.hover').forEach(el => el.classList.remove('hover'));
         svg.querySelectorAll('.hover-label').forEach(el => el.classList.remove('hover-label'));
         if (highlightsGroup) {
@@ -634,97 +1039,208 @@ figure:hover .etc-svg-toolbar {
                 el.style.display = 'none';
             });
         }
-        if (typeof document !== 'undefined') {
+        if (hudEl) {
+            hudEl.classList.remove('is-visible');
+        }
+        if (clearTextRefs !== false && typeof document !== 'undefined') {
             document.querySelectorAll('.geom-highlight-text').forEach(el => {
                 el.classList.remove('geom-highlight-text');
             });
         }
     }
 
-    function resolveSvgId(rawId) {
-        if (!rawId) return rawId;
-        if (svg.querySelector(`[data-id="${CSS.escape(rawId)}"]`)) return rawId;
-        const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
-        if (segM) {
-            const revId = `[ ${segM[2]} ${segM[1]} ]`;
-            if (svg.querySelector(`[data-id="${CSS.escape(revId)}"]`)) return revId;
-        }
-        const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
-        if (triM) {
-            const pts = [triM[1], triM[2], triM[3]];
-            if (pts.includes('A') && pts.includes('B') && pts.includes('C')) {
-                return '< A B C >';
-            }
-            const secPoly = graphicsGroup ? graphicsGroup.querySelector('polygon.secondary[data-id]') : null;
-            if (secPoly) {
-                return secPoly.getAttribute('data-id') || rawId;
-            }
-        }
-        return rawId;
+    function findSvgElement(candidateId) {
+        if (!candidateId) return null;
+        return svg.querySelector(`[data-id="${CSS.escape(candidateId)}"], [data-ref="${CSS.escape(candidateId)}"]`);
     }
 
-    function activateHover(rawId) {
-        if (!rawId) return;
-        const id = resolveSvgId(rawId);
-        if (activeHoveredId === id) return;
-        clearHover();
-        activeHoveredId = id;
-        const info = elementsCatalog[id];
+    function resolveSingleSvgId(rawId) {
+        if (!rawId) return null;
+        const trimmed = rawId.trim();
+        if (findSvgElement(trimmed)) return trimmed;
+        const clean = trimmed.includes(':') ? trimmed.split(':').pop().trim() : trimmed;
+        if (findSvgElement(clean)) return clean;
 
-        const targetEl = svg.querySelector(`[data-id="${CSS.escape(id)}"]`);
-        if (targetEl) {
-            targetEl.classList.add('hover');
+        const lineM = clean.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+        if (lineM) {
+            const cands = [
+                `[ ${lineM[1]} ${lineM[2]} ]`,
+                `[ ${lineM[2]} ${lineM[1]} ]`,
+                `/ ${lineM[1]} ${lineM[2]} /`,
+                `/ ${lineM[2]} ${lineM[1]} /`,
+            ];
+            for (const c of cands) {
+                if (findSvgElement(c)) return c;
+            }
         }
 
-        // Show highlight segment if present
-        if (highlightsGroup) {
-            const hl = highlightsGroup.querySelector(`[data-highlight-for="${CSS.escape(id)}"]`);
-            if (hl) hl.style.display = 'inline';
+        const segM = clean.match(/^\/\s*(\S+)\s+(\S+)\s*\/$/);
+        if (segM) {
+            const cands = [
+                `/ ${segM[1]} ${segM[2]} /`,
+                `/ ${segM[2]} ${segM[1]} /`,
+                `[ ${segM[1]} ${segM[2]} ]`,
+                `[ ${segM[2]} ${segM[1]} ]`,
+            ];
+            for (const c of cands) {
+                if (findSvgElement(c)) return c;
+            }
         }
 
-        // Highlight parent/endpoint points and labels
-        let relatedPts = (info && info.related_points) ? info.related_points : [id];
-        if (!targetEl && relatedPts.length === 1 && relatedPts[0] === id) {
-            const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
-            const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
-            if (segM) relatedPts = [segM[1], segM[2]];
-            else if (triM) relatedPts = [triM[1], triM[2], triM[3]];
+        const braceAllM = clean.match(/^\{\s*([\d,\s]+)\s*\}$/);
+        if (braceAllM) {
+            const wantNums = braceAllM[1].split(',').map(s => s.trim()).filter(Boolean);
+            if (wantNums.length === 2) {
+                const cands = [
+                    `{ ${wantNums[0]}, ${wantNums[1]} }`,
+                    `{ ${wantNums[1]}, ${wantNums[0]} }`,
+                ];
+                for (const c of cands) {
+                    if (findSvgElement(c)) return c;
+                }
+            }
+            if (wantNums.length >= 2) {
+                const wantSet = new Set(wantNums);
+                const lineEls = svg.querySelectorAll('line[data-id], line[data-ref]');
+                for (const ln of lineEls) {
+                    const lid = ln.getAttribute('data-id') || ln.getAttribute('data-ref') || '';
+                    const lm = lid.match(/^\{\s*([\d,\s]+)\s*\}$/);
+                    if (lm) {
+                        const lnums = lm[1].split(',').map(s => s.trim()).filter(Boolean);
+                        const shared = lnums.filter(n => wantSet.has(n));
+                        if (shared.length >= 2) return lid;
+                    }
+                }
+            }
         }
-        relatedPts.forEach(pid => {
-            const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
-            if (ptEl) ptEl.classList.add('hover');
-            const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
-            if (lblEl) lblEl.classList.add('hover-label');
+
+        const triM = clean.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+        if (triM) {
+            const want = [triM[1], triM[2], triM[3]].sort().join('|');
+            const polys = svg.querySelectorAll('polygon[data-id], polygon[data-ref]');
+            for (const p of polys) {
+                const pid = p.getAttribute('data-id') || p.getAttribute('data-ref') || '';
+                const pm = pid.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                if (pm && [pm[1], pm[2], pm[3]].sort().join('|') === want) {
+                    return pid;
+                }
+            }
+        }
+
+        return null;
+    }
+
+    function hasElement(rawRef) {
+        if (!rawRef) return false;
+        const parts = String(rawRef).split(';').map(s => s.trim()).filter(Boolean);
+        return parts.some(p => resolveSingleSvgId(p) !== null);
+    }
+
+    function activateHover(rawRef, highlightTextRefs) {
+        if (!rawRef) return false;
+        const parts = String(rawRef).split(';').map(s => s.trim()).filter(Boolean);
+        const resolvedIds = parts.map(p => resolveSingleSvgId(p)).filter(Boolean);
+        if (resolvedIds.length === 0) return false;
+
+        const key = resolvedIds.join(';');
+        if (activeHoveredKey === key) return true;
+        clearHover(highlightTextRefs !== false);
+        activeHoveredKey = key;
+
+        let primaryInfo = null;
+        let primaryId = resolvedIds[0];
+
+        resolvedIds.forEach(id => {
+            const info = elementsCatalog[id];
+            if (!primaryInfo && info) {
+                primaryInfo = info;
+                primaryId = id;
+            }
+            svg.querySelectorAll(`[data-id="${CSS.escape(id)}"], [data-ref="${CSS.escape(id)}"]`).forEach(el => {
+                el.classList.add('hover');
+            });
+            if (highlightsGroup) {
+                const hl = highlightsGroup.querySelector(`[data-highlight-for="${CSS.escape(id)}"]`);
+                if (hl) hl.style.display = 'inline';
+            }
+            let relatedPts = (info && info.related_points) ? info.related_points : [id];
+            if (!info) {
+                const sm = id.match(/^[\[/]\s*(\S+)\s+(\S+)\s*[\]/]$/);
+                const tm = id.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                if (sm) relatedPts = [sm[1], sm[2]];
+                else if (tm) relatedPts = [tm[1], tm[2], tm[3]];
+            }
+            relatedPts.forEach(pid => {
+                const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
+                if (ptEl) ptEl.classList.add('hover');
+                const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
+                if (lblEl) lblEl.classList.add('hover-label');
+            });
         });
 
-        if (typeof document !== 'undefined') {
-            const sel = rawId === id
-                ? `.geom-ref[data-ref="${CSS.escape(id)}"]`
-                : `.geom-ref[data-ref="${CSS.escape(rawId)}"], .geom-ref[data-ref="${CSS.escape(id)}"]`;
-            document.querySelectorAll(sel).forEach(el => {
+        updateHud(primaryInfo, primaryId);
+
+        if (highlightTextRefs !== false && typeof document !== 'undefined') {
+            const selectors = new Set([`.geom-ref[data-ref="${CSS.escape(rawRef)}"]`]);
+            resolvedIds.forEach(id => selectors.add(`.geom-ref[data-ref="${CSS.escape(id)}"]`));
+            document.querySelectorAll(Array.from(selectors).join(', ')).forEach(el => {
                 el.classList.add('geom-highlight-text');
             });
         }
+        return true;
     }
 
     svg._etcController.activateHover = activateHover;
     svg._etcController.clearHover = clearHover;
+    svg._etcController.hasElement = hasElement;
+
+    if (typeof window !== 'undefined') {
+        window.__etcSvgRegistry = window.__etcSvgRegistry || [];
+        if (!window.__etcSvgRegistry.includes(svg)) {
+            window.__etcSvgRegistry.push(svg);
+        }
+    }
 
     if (document.body && document.documentElement.tagName.toLowerCase() === 'html' && document.body.dataset.etcGeomRefSyncInit !== '1') {
         document.body.dataset.etcGeomRefSyncInit = '1';
-        function getActiveSvg() {
-            const activePaneSvg = document.querySelector('.etc-tab-pane.active svg.geometor-etc-drawing');
-            if (activePaneSvg && activePaneSvg._etcController) return activePaneSvg;
-            const anySvg = document.querySelector('svg.geometor-etc-drawing');
-            return (anySvg && anySvg._etcController) ? anySvg : null;
+
+        function isSvgVisible(s) {
+            if (!s || !s.isConnected || !s._etcController) return false;
+            const pane = s.closest('.etc-tab-pane');
+            if (pane && !pane.classList.contains('active')) return false;
+            return s.getClientRects().length > 0;
         }
+
+        function dispatchRefHover(sourceEl, refStr) {
+            if (!refStr) return;
+            const reg = (window.__etcSvgRegistry || []).filter(isSvgVisible);
+            const sec = sourceEl ? sourceEl.closest('section') : null;
+            let targets = [];
+            if (sec) {
+                targets = reg.filter(s => sec.contains(s) && s._etcController.hasElement(refStr));
+            }
+            if (targets.length === 0) {
+                targets = reg.filter(s => s._etcController.hasElement(refStr));
+            }
+            reg.forEach(s => {
+                if (!targets.includes(s)) s._etcController.clearHover(false);
+            });
+            targets.forEach(s => s._etcController.activateHover(refStr, false));
+            if (sourceEl && targets.length > 0) {
+                sourceEl.classList.add('geom-highlight-text');
+            }
+        }
+
+        function clearAllSvgHovers() {
+            (window.__etcSvgRegistry || []).forEach(s => {
+                if (s && s._etcController) s._etcController.clearHover(true);
+            });
+        }
+
         document.body.addEventListener('mouseover', (e) => {
             const geomEl = e.target.closest('.geom-ref[data-ref]');
             if (geomEl) {
-                const activeSvg = getActiveSvg();
-                if (activeSvg && activeSvg._etcController.activateHover) {
-                    activeSvg._etcController.activateHover(geomEl.getAttribute('data-ref'));
-                }
+                dispatchRefHover(geomEl, geomEl.getAttribute('data-ref'));
                 return;
             }
             const refLink = e.target.closest('a.reference.internal');
@@ -732,30 +1248,24 @@ figure:hover .etc-svg-toolbar {
                 const txt = (refLink.textContent || '').trim();
                 const xm = txt.match(/^X(?:_|\()?(\d+)\)?$/);
                 if (xm) {
-                    const activeSvg = getActiveSvg();
-                    if (activeSvg && activeSvg._etcController.activateHover) {
-                        activeSvg._etcController.activateHover(`X_${xm[1]}`);
-                    }
+                    dispatchRefHover(refLink, `X_${xm[1]}`);
                 }
             }
         });
+
         document.body.addEventListener('mouseout', (e) => {
             const geomEl = e.target.closest('.geom-ref[data-ref], a.reference.internal');
             if (geomEl) {
-                const activeSvg = getActiveSvg();
-                if (activeSvg && activeSvg._etcController.clearHover) {
-                    activeSvg._etcController.clearHover();
-                }
+                clearAllSvgHovers();
             }
         });
     }
 
-    // Native DOM hover matching browser <title> tooltip topmost target
     svg.addEventListener('mouseover', (event) => {
         if (isPanning) return;
-        const target = event.target.closest('[data-id]');
+        const target = event.target.closest('[data-id], [data-ref]');
         if (target && svg.contains(target)) {
-            activateHover(target.getAttribute('data-id'));
+            activateHover(target.getAttribute('data-id') || target.getAttribute('data-ref'));
         } else {
             clearHover();
         }
@@ -763,20 +1273,18 @@ figure:hover .etc-svg-toolbar {
 
     svg.addEventListener('mouseout', (event) => {
         if (isPanning) return;
-        const related = event.relatedTarget ? event.relatedTarget.closest?.('[data-id]') : null;
+        const related = event.relatedTarget ? event.relatedTarget.closest?.('[data-id], [data-ref]') : null;
         if (!related || !svg.contains(related)) {
             clearHover();
         }
     });
 
-    // Wheel Zoom
     svg.addEventListener('wheel', (event) => {
         event.preventDefault();
         const factor = event.deltaY > 0 ? 1.12 : (1 / 1.12);
         zoomBy(factor, event.clientX, event.clientY);
     }, { passive: false });
 
-    // Drag Pan
     let isPanning = false;
     let didDrag = false;
     let startClient = { x: 0, y: 0 };
@@ -815,6 +1323,18 @@ figure:hover .etc-svg-toolbar {
         isPanning = false;
         svg.classList.remove('is-panning');
         clearHover();
+    });
+
+    svg.addEventListener('click', (event) => {
+        if (didDrag) return;
+        const pt = event.target.closest('circle[data-id]');
+        if (!pt) return;
+        const pid = pt.getAttribute('data-id') || '';
+        const m = pid.match(/^X_(\d+)$/);
+        if (m && typeof window !== 'undefined' && window.location && window.location.pathname.includes('/c-') && !window.location.pathname.includes('/x-')) {
+            const slug = 'x-' + m[1].padStart(5, '0');
+            window.location.href = `${slug}/index.html`;
+        }
     });
 
     svg.addEventListener('dblclick', (event) => {
