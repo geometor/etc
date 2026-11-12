@@ -24,11 +24,13 @@ Functions
 
    geometor.etc.transform.format_rst_header
    geometor.etc.transform.wrap_refs
+   geometor.etc.transform.extract_svg_element_refs
    geometor.etc.transform.transform_center_to_rst
    geometor.etc.transform.transform_center_to_code_rst
    geometor.etc.transform.get_collection_spec
    geometor.etc.transform.get_collection_folder_name
    geometor.etc.transform.generate_rst_files
+   geometor.etc.transform.format_symbolic_collection_1_rst
    geometor.etc.transform.generate_preambles_guide_rst
 
 
@@ -43,6 +45,11 @@ Module Contents
 .. py:function:: wrap_refs(text: str, valid_centers: set[int] | None = None) -> str
 
    Wrap X(n), X[n], and X_n references in `:ref:`X_n <X_n>`` outside existing RST roles.
+
+
+.. py:function:: extract_svg_element_refs(svg_path: pathlib.Path) -> set[str]
+
+   Return all ``data-ref`` and ``.etc-elements-meta`` catalog keys present in ``svg_path``.
 
 
 .. py:function:: transform_center_to_rst(data: dict[str, Any], glossary_terms: dict[str, Any] | list[str] | None = None, preambles: list[dict[str, Any]] | None = None, valid_centers: set[int] | None = None, figure_uri: str | None = None, kimberling_figure_uri: str | None = None, search_value: float | None = None, include_model_py: bool = False, model: Any = None, entry_dir: str | pathlib.Path | None = None) -> str
@@ -73,6 +80,11 @@ Module Contents
 .. py:function:: generate_rst_files(centers: list[dict[str, Any]], output_dir: str | pathlib.Path, glossary_terms: dict[str, Any] | list[str] | None = None, preambles_by_center: dict[str, list[dict[str, Any]]] | None = None, valid_centers: set[int] | None = None, render_graphics: bool = True, constructions_dir: str | pathlib.Path | None = None) -> None
 
    Generate thematic collection folders (`c-XXXXX-YYYYY/`) and per-center folders (`x-NNNNN/`).
+
+
+.. py:function:: format_symbolic_collection_1_rst(coll_dir: str | pathlib.Path, c_title: str = 'Classical & Ancient Centers', c_summary: str = 'The foundational centers of classical triangle geometry: the incenter, centroid, circumcenter, orthocenter, nine-point center, symmedian point, Gergonne, Nagel, Mittenpunkt, Spieker, Feuerbach, Fermat, isodynamic, Napoleon, and Clawson points.', glossary_terms: dict[str, Any] | list[str] | None = None, valid_centers: set[int] | None = None) -> str
+
+   Format the exact symbolic Collection 1 (`c-00001-00019/index.rst`) overview page.
 
 
 .. py:function:: generate_preambles_guide_rst(guide_data: dict[str, Any], glossary_terms: dict[str, Any] | list[str] | None = None, valid_centers: set[int] | None = None) -> str

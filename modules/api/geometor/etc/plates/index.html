@@ -1,0 +1,510 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>geometor.etc.plates &mdash; geometor • etc</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../../../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../../../index.html">
+        <img src="../../../../../_static/logo.png" class="logo" alt="Logo"/>
+      </a>
+      <div class="org-repo">
+        <span class="org">geometor</span>
+        •
+        <span class="repo">etc</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../../../centers/index.html"  >Encyclopedia of Triangle Centers</a>
+        </li>
+        <li>
+          <a href="../../../../../glossary.html"  >Glossary</a>
+        </li>
+        <li>
+          <a href="../../../../../preambles.html"  >Guide to Preambles in ETC</a>
+        </li>
+        <li>
+          <a href="../../../../../persons.html"  >Index Nominum (Geometers & Contributors)</a>
+        </li>
+        <li>
+          <a href="../../../../../bibliography.html"  >Bibliography & Cited Sources</a>
+        </li>
+        <li>
+          <a href="../../../../../mission/index.html"  >mission</a>
+        </li>
+        <li>
+          <a href="../../../../../usage/index.html"  >usage</a>
+        </li>
+        <li>
+          <a href="../../../../../log/index.html"  >log</a>
+        </li>
+        <li>
+          <a href="../../../../index.html" class="is-active" aria-selected="true" >modules</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../../../index.html" title="Return to Project Portal">&larr; etc</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../../../../index.html">geometor • etc</a>
+          </div>
+          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Breadcrumbs">
+            <a class="book-crumb-link" href="../../../../index.html">modules</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../parser/index.html" title="geometor.etc.parser">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../render/index.html" title="geometor.etc.render"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <style id="etc-heading-styles">
+        .book-reading-pane .book-content h1,
+        .folio-book-page h1 {
+            position: relative;
+            text-align: center !important;
+            text-indent: 0 !important;
+            margin-bottom: 0.35rem !important;
+        }
+        .book-reading-pane .book-content h1 a.headerlink,
+        .book-reading-pane .book-content h2 a.headerlink,
+        .folio-book-page h1 a.headerlink,
+        .folio-book-page h2 a.headerlink {
+            position: absolute;
+        }
+        .book-reading-pane .book-content p.rubric,
+        .folio-book-page p.rubric {
+            font-style: normal !important;
+            font-weight: 700 !important;
+            text-align: center !important;
+            text-indent: 0 !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            margin-top: 0 !important;
+            margin-bottom: 1.4rem !important;
+        }
+        .geom-ref {
+            cursor: pointer;
+            border-bottom: 1px dotted rgba(0, 229, 255, 0.55);
+            padding: 0 2px;
+            border-radius: 3px;
+            transition: background-color 0.12s ease, color 0.12s ease;
+        }
+        .geom-ref:hover,
+        .geom-highlight-text {
+            background-color: rgba(0, 255, 255, 0.18) !important;
+            color: #0ff !important;
+            border-bottom-color: #0ff !important;
+        }
+        .etc-act-plate {
+            margin: 0.5rem 0;
+        }
+        .etc-symbolic-concordance {
+            text-align: center;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.92rem;
+            color: var(--book-text-muted, #94a3b8);
+            margin: -0.6rem 0 1.25rem 0;
+        }
+        </style>
+        <section class="level-1" id="module-geometor.etc.plates">
+        <span id="geometor-etc-plates"></span><h1>geometor.etc.plates<a class="headerlink" href="#module-geometor.etc.plates" title="Link to this heading">¶</a></h1>
+        <p>Generalized exact symbolic 5-Act documentation plate generators for GEOMETOR ETC.</p>
+        <p>Generates interactive SVG plates for any triangle center <code class="docutils literal notranslate"><span class="pre">X_n</span></code> in <code class="docutils literal notranslate"><span class="pre">CenterSymbolicRegistry</span></code>
+        with zero center-specific hardcoding and zero floating-point contamination in symbolic math:</p>
+        <ul class="simple">
+        <li><p><code class="docutils literal notranslate"><span class="pre">02_coordinates.svg</span></code> — Homogeneous trilinear struts and signed barycentric sub-triangles</p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">03_central_lines.svg</span></code> — Primary symbolic model with <code class="docutils literal notranslate"><span class="pre">.show-lines</span></code> active</p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">04_relations.svg</span></code> — Algebraic conjugate, homothetic, and inversion partners</p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">05_four_triangles.svg</span></code> — 2x2 invariance grid across Heronian, Right, Kepler, and Kimberling</p></li>
+        </ul>
+        <section class="level-2" id="attributes">
+        <h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.plates.CIRCLE_CENTER_SPECS" title="geometor.etc.plates.CIRCLE_CENTER_SPECS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CIRCLE_CENTER_SPECS</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="classes">
+        <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.plates.CircleCenterSpec" title="geometor.etc.plates.CircleCenterSpec"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CircleCenterSpec</span></code></a></p></td>
+        <td><p>Metadata for centers that are the center of a canonical named triangle circle.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.plates.AlgebraicPartnerInfo" title="geometor.etc.plates.AlgebraicPartnerInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AlgebraicPartnerInfo</span></code></a></p></td>
+        <td><p>Exact symbolic result of applying a triangle-center operator to <code class="docutils literal notranslate"><span class="pre">X_n</span></code>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.plates.CenterRelationsBundle" title="geometor.etc.plates.CenterRelationsBundle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CenterRelationsBundle</span></code></a></p></td>
+        <td><p>Exact algebraic operator results and rendered SVG catalog IDs for Act 4.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.plates.exact_pedal_foot_and_param" title="geometor.etc.plates.exact_pedal_foot_and_param"><code class="xref py py-obj docutils literal notranslate"><span class="pre">exact_pedal_foot_and_param</span></code></a>(p_xy, q1_xy, q2_xy, tri) → tuple[tuple[sympy.Expr, sympy.Expr], sympy.Expr]</p></td>
+        <td><p>Return <code class="docutils literal notranslate"><span class="pre">(foot_xy,</span> <span class="pre">t_param)</span></code> for the exact orthogonal projection of <code class="docutils literal notranslate"><span class="pre">p_xy</span></code> onto <code class="docutils literal notranslate"><span class="pre">q1_xy</span> <span class="pre">-&gt;</span> <span class="pre">q2_xy</span></code>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.plates.generate_doc_coordinates_svg" title="geometor.etc.plates.generate_doc_coordinates_svg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_doc_coordinates_svg</span></code></a>(num[, title, preset]) → str</p></td>
+        <td><p>Generate Act 2 <code class="docutils literal notranslate"><span class="pre">02_coordinates.svg</span></code> for any center <code class="docutils literal notranslate"><span class="pre">X_num</span></code> in <code class="docutils literal notranslate"><span class="pre">CenterSymbolicRegistry</span></code>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.plates.generate_doc_central_lines_svg" title="geometor.etc.plates.generate_doc_central_lines_svg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_doc_central_lines_svg</span></code></a>(model[, subtitle]) → str</p></td>
+        <td><p>Generate Act 3 <code class="docutils literal notranslate"><span class="pre">03_central_lines.svg</span></code> with <code class="docutils literal notranslate"><span class="pre">.show-lines</span></code> active and incident framing.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.plates.build_center_relations_bundle" title="geometor.etc.plates.build_center_relations_bundle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">build_center_relations_bundle</span></code></a>(num[, preset]) → CenterRelationsBundle</p></td>
+        <td><p>Evaluate exact symbolic conjugates, dilations, and circumcircle inverse for <code class="docutils literal notranslate"><span class="pre">X_num</span></code>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.plates.generate_doc_relations_svg" title="geometor.etc.plates.generate_doc_relations_svg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_doc_relations_svg</span></code></a>(num[, preset]) → tuple[str, CenterRelationsBundle]</p></td>
+        <td><p>Generate Act 4 <code class="docutils literal notranslate"><span class="pre">04_relations.svg</span></code> and populate <code class="docutils literal notranslate"><span class="pre">bundle.svg_ids</span></code> with exact plotted IDs.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.plates.generate_doc_four_triangles_svg" title="geometor.etc.plates.generate_doc_four_triangles_svg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_doc_four_triangles_svg</span></code></a>(num) → str</p></td>
+        <td><p>Generate Act 5 <code class="docutils literal notranslate"><span class="pre">05_four_triangles.svg</span></code> across all 4 Canonical Symbolic Reference Triangles.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.etc.plates.CircleCenterSpec">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.etc.plates.</span></span><span class="sig-name descname"><span class="pre">CircleCenterSpec</span></span><a class="headerlink" href="#geometor.etc.plates.CircleCenterSpec" title="Link to this definition">¶</a></dt>
+        <dd><p>Metadata for centers that are the center of a canonical named triangle circle.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.CircleCenterSpec.circle_id">
+        <span class="sig-name descname"><span class="pre">circle_id</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.etc.plates.CircleCenterSpec.circle_id" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.CircleCenterSpec.circle_label">
+        <span class="sig-name descname"><span class="pre">circle_label</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.etc.plates.CircleCenterSpec.circle_label" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.CircleCenterSpec.stroke_hex">
+        <span class="sig-name descname"><span class="pre">stroke_hex</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.etc.plates.CircleCenterSpec.stroke_hex" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.CircleCenterSpec.stroke_rgba">
+        <span class="sig-name descname"><span class="pre">stroke_rgba</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.etc.plates.CircleCenterSpec.stroke_rgba" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.CircleCenterSpec.r_sym">
+        <span class="sig-name descname"><span class="pre">r_sym</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.etc.plates.CircleCenterSpec.r_sym" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.CircleCenterSpec.q_sym">
+        <span class="sig-name descname"><span class="pre">q_sym</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.etc.plates.CircleCenterSpec.q_sym" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.CircleCenterSpec.table_header">
+        <span class="sig-name descname"><span class="pre">table_header</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.etc.plates.CircleCenterSpec.table_header" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.CircleCenterSpec.radius_fn">
+        <span class="sig-name descname"><span class="pre">radius_fn</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/collections.abc.html#collections.abc.Callable" title="(in Python v3.13)"><span class="pre">collections.abc.Callable</span></a><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../triangles/index.html#geometor.etc.triangles.SymbolicTriangle" title="geometor.etc.triangles.SymbolicTriangle"><span class="pre">geometor.etc.triangles.SymbolicTriangle</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.plates.CircleCenterSpec.radius_fn" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.etc.plates.CIRCLE_CENTER_SPECS">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.plates.</span></span><span class="sig-name descname"><span class="pre">CIRCLE_CENTER_SPECS</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#geometor.etc.plates.CircleCenterSpec" title="geometor.etc.plates.CircleCenterSpec"><span class="pre">CircleCenterSpec</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.plates.CIRCLE_CENTER_SPECS" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.etc.plates.AlgebraicPartnerInfo">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.etc.plates.</span></span><span class="sig-name descname"><span class="pre">AlgebraicPartnerInfo</span></span><a class="headerlink" href="#geometor.etc.plates.AlgebraicPartnerInfo" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact symbolic result of applying a triangle-center operator to <code class="docutils literal notranslate"><span class="pre">X_n</span></code>.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.AlgebraicPartnerInfo.operator">
+        <span class="sig-name descname"><span class="pre">operator</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.etc.plates.AlgebraicPartnerInfo.operator" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.AlgebraicPartnerInfo.partner_num">
+        <span class="sig-name descname"><span class="pre">partner_num</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><a class="headerlink" href="#geometor.etc.plates.AlgebraicPartnerInfo.partner_num" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.AlgebraicPartnerInfo.partner_title">
+        <span class="sig-name descname"><span class="pre">partner_title</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.etc.plates.AlgebraicPartnerInfo.partner_title" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.AlgebraicPartnerInfo.xy">
+        <span class="sig-name descname"><span class="pre">xy</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><a class="headerlink" href="#geometor.etc.plates.AlgebraicPartnerInfo.xy" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.AlgebraicPartnerInfo.bary">
+        <span class="sig-name descname"><span class="pre">bary</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><a class="headerlink" href="#geometor.etc.plates.AlgebraicPartnerInfo.bary" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.AlgebraicPartnerInfo.is_self">
+        <span class="sig-name descname"><span class="pre">is_self</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></span><a class="headerlink" href="#geometor.etc.plates.AlgebraicPartnerInfo.is_self" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.AlgebraicPartnerInfo.is_ideal">
+        <span class="sig-name descname"><span class="pre">is_ideal</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></span><a class="headerlink" href="#geometor.etc.plates.AlgebraicPartnerInfo.is_ideal" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.AlgebraicPartnerInfo.is_center_of_inversion">
+        <span class="sig-name descname"><span class="pre">is_center_of_inversion</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></span><a class="headerlink" href="#geometor.etc.plates.AlgebraicPartnerInfo.is_center_of_inversion" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.AlgebraicPartnerInfo.inversion_quadrance">
+        <span class="sig-name descname"><span class="pre">inversion_quadrance</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></span><a class="headerlink" href="#geometor.etc.plates.AlgebraicPartnerInfo.inversion_quadrance" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.AlgebraicPartnerInfo.inversion_scale">
+        <span class="sig-name descname"><span class="pre">inversion_scale</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></span><a class="headerlink" href="#geometor.etc.plates.AlgebraicPartnerInfo.inversion_scale" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.etc.plates.CenterRelationsBundle">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.etc.plates.</span></span><span class="sig-name descname"><span class="pre">CenterRelationsBundle</span></span><a class="headerlink" href="#geometor.etc.plates.CenterRelationsBundle" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact algebraic operator results and rendered SVG catalog IDs for Act 4.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.CenterRelationsBundle.num">
+        <span class="sig-name descname"><span class="pre">num</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><a class="headerlink" href="#geometor.etc.plates.CenterRelationsBundle.num" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.CenterRelationsBundle.preset">
+        <span class="sig-name descname"><span class="pre">preset</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.etc.plates.CenterRelationsBundle.preset" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.CenterRelationsBundle.isogonal">
+        <span class="sig-name descname"><span class="pre">isogonal</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#geometor.etc.plates.AlgebraicPartnerInfo" title="geometor.etc.plates.AlgebraicPartnerInfo"><span class="pre">AlgebraicPartnerInfo</span></a></span><a class="headerlink" href="#geometor.etc.plates.CenterRelationsBundle.isogonal" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.CenterRelationsBundle.isotomic">
+        <span class="sig-name descname"><span class="pre">isotomic</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#geometor.etc.plates.AlgebraicPartnerInfo" title="geometor.etc.plates.AlgebraicPartnerInfo"><span class="pre">AlgebraicPartnerInfo</span></a></span><a class="headerlink" href="#geometor.etc.plates.CenterRelationsBundle.isotomic" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.CenterRelationsBundle.complement">
+        <span class="sig-name descname"><span class="pre">complement</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#geometor.etc.plates.AlgebraicPartnerInfo" title="geometor.etc.plates.AlgebraicPartnerInfo"><span class="pre">AlgebraicPartnerInfo</span></a></span><a class="headerlink" href="#geometor.etc.plates.CenterRelationsBundle.complement" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.CenterRelationsBundle.anticomplement">
+        <span class="sig-name descname"><span class="pre">anticomplement</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#geometor.etc.plates.AlgebraicPartnerInfo" title="geometor.etc.plates.AlgebraicPartnerInfo"><span class="pre">AlgebraicPartnerInfo</span></a></span><a class="headerlink" href="#geometor.etc.plates.CenterRelationsBundle.anticomplement" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.CenterRelationsBundle.circumcircle_inverse">
+        <span class="sig-name descname"><span class="pre">circumcircle_inverse</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#geometor.etc.plates.AlgebraicPartnerInfo" title="geometor.etc.plates.AlgebraicPartnerInfo"><span class="pre">AlgebraicPartnerInfo</span></a></span><a class="headerlink" href="#geometor.etc.plates.CenterRelationsBundle.circumcircle_inverse" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.CenterRelationsBundle.galois_conjugate">
+        <span class="sig-name descname"><span class="pre">galois_conjugate</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#geometor.etc.plates.AlgebraicPartnerInfo" title="geometor.etc.plates.AlgebraicPartnerInfo"><span class="pre">AlgebraicPartnerInfo</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></span><a class="headerlink" href="#geometor.etc.plates.CenterRelationsBundle.galois_conjugate" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.CenterRelationsBundle.harmonic_feuerbach_partner">
+        <span class="sig-name descname"><span class="pre">harmonic_feuerbach_partner</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></span><a class="headerlink" href="#geometor.etc.plates.CenterRelationsBundle.harmonic_feuerbach_partner" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.CenterRelationsBundle.plotted_partners">
+        <span class="sig-name descname"><span class="pre">plotted_partners</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></span><a class="headerlink" href="#geometor.etc.plates.CenterRelationsBundle.plotted_partners" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.plates.CenterRelationsBundle.svg_ids">
+        <span class="sig-name descname"><span class="pre">svg_ids</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#set" title="(in Python v3.13)"><span class="pre">set</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.plates.CenterRelationsBundle.svg_ids" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.etc.plates.exact_pedal_foot_and_param">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.plates.</span></span><span class="sig-name descname"><span class="pre">exact_pedal_foot_and_param</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p_xy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q1_xy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q2_xy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tri</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../triangles/index.html#geometor.etc.triangles.SymbolicTriangle" title="geometor.etc.triangles.SymbolicTriangle"><span class="pre">geometor.etc.triangles.SymbolicTriangle</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.plates.exact_pedal_foot_and_param" title="Link to this definition">¶</a></dt>
+        <dd><p>Return <code class="docutils literal notranslate"><span class="pre">(foot_xy,</span> <span class="pre">t_param)</span></code> for the exact orthogonal projection of <code class="docutils literal notranslate"><span class="pre">p_xy</span></code> onto <code class="docutils literal notranslate"><span class="pre">q1_xy</span> <span class="pre">-&gt;</span> <span class="pre">q2_xy</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.etc.plates.generate_doc_coordinates_svg">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.plates.</span></span><span class="sig-name descname"><span class="pre">generate_doc_coordinates_svg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'heronian'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.plates.generate_doc_coordinates_svg" title="Link to this definition">¶</a></dt>
+        <dd><p>Generate Act 2 <code class="docutils literal notranslate"><span class="pre">02_coordinates.svg</span></code> for any center <code class="docutils literal notranslate"><span class="pre">X_num</span></code> in <code class="docutils literal notranslate"><span class="pre">CenterSymbolicRegistry</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.etc.plates.generate_doc_central_lines_svg">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.plates.</span></span><span class="sig-name descname"><span class="pre">generate_doc_central_lines_svg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subtitle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.plates.generate_doc_central_lines_svg" title="Link to this definition">¶</a></dt>
+        <dd><p>Generate Act 3 <code class="docutils literal notranslate"><span class="pre">03_central_lines.svg</span></code> with <code class="docutils literal notranslate"><span class="pre">.show-lines</span></code> active and incident framing.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.etc.plates.build_center_relations_bundle">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.plates.</span></span><span class="sig-name descname"><span class="pre">build_center_relations_bundle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">preset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'heronian'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.plates.CenterRelationsBundle" title="geometor.etc.plates.CenterRelationsBundle"><span class="pre">CenterRelationsBundle</span></a></span></span><a class="headerlink" href="#geometor.etc.plates.build_center_relations_bundle" title="Link to this definition">¶</a></dt>
+        <dd><p>Evaluate exact symbolic conjugates, dilations, and circumcircle inverse for <code class="docutils literal notranslate"><span class="pre">X_num</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.etc.plates.generate_doc_relations_svg">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.plates.</span></span><span class="sig-name descname"><span class="pre">generate_doc_relations_svg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">preset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'heronian'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#geometor.etc.plates.CenterRelationsBundle" title="geometor.etc.plates.CenterRelationsBundle"><span class="pre">CenterRelationsBundle</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.plates.generate_doc_relations_svg" title="Link to this definition">¶</a></dt>
+        <dd><p>Generate Act 4 <code class="docutils literal notranslate"><span class="pre">04_relations.svg</span></code> and populate <code class="docutils literal notranslate"><span class="pre">bundle.svg_ids</span></code> with exact plotted IDs.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.etc.plates.generate_doc_four_triangles_svg">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.plates.</span></span><span class="sig-name descname"><span class="pre">generate_doc_four_triangles_svg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.plates.generate_doc_four_triangles_svg" title="Link to this definition">¶</a></dt>
+        <dd><p>Generate Act 5 <code class="docutils literal notranslate"><span class="pre">05_four_triangles.svg</span></code> across all 4 Canonical Symbolic Reference Triangles.</p>
+        </dd></dl>
+
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../parser/index.html" title="geometor.etc.parser">&larr; <span class="nav-label">geometor.etc.parser</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../../index.html">geometor • etc</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../render/index.html" title="geometor.etc.render"><span class="nav-label">geometor.etc.render</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../../../../log/26.302-183300/index.html">ETC Semantic Parser, Apparatus Registries & Multi-Triangle Codex Builder</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-tags">
+      <h3>Tags</h3>
+      <ul>
+        <li><a href="../../../../../tags/apparatus.html">apparatus</a></li>
+        <li><a href="../../../../../tags/etc.html">etc</a></li>
+        <li><a href="../../../../../tags/svg.html">svg</a></li>
+        <li><a href="../../../../../tags/triangle-centers.html">triangle-centers</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-categories">
+      <h3>Categories</h3>
+      <ul>
+        <li><a href="../../../../../categories/constructions.html">constructions</a></li>
+        <li><a href="../../../../../categories/parser.html">parser</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../../../types/collection.html">collection</a></li>
+        <li><a href="../../../../../types/log.html">log</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../../../../about.html"  >about</a></li>
+        <li><a href="../../../../../connect.html"  >connect</a></li>
+        <li><a href="../../../../../todos/index.html"  >todos</a></li>
+        <li><a href="../../../../../changelog.html"  >changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, geometor.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../../_static/documentation_options.js?v=e259d695"></script>
+  <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../../../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+geometor.etc.plates
+===================
+
+.. py:module:: geometor.etc.plates
+
+.. autoapi-nested-parse::
+
+   Generalized exact symbolic 5-Act documentation plate generators for GEOMETOR ETC.
+
+   Generates interactive SVG plates for any triangle center ``X_n`` in ``CenterSymbolicRegistry``
+   with zero center-specific hardcoding and zero floating-point contamination in symbolic math:
+
+   - ``02_coordinates.svg`` — Homogeneous trilinear struts and signed barycentric sub-triangles
+   - ``03_central_lines.svg`` — Primary symbolic model with ``.show-lines`` active
+   - ``04_relations.svg`` — Algebraic conjugate, homothetic, and inversion partners
+   - ``05_four_triangles.svg`` — 2x2 invariance grid across Heronian, Right, Kepler, and Kimberling
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.etc.plates.CIRCLE_CENTER_SPECS
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.etc.plates.CircleCenterSpec
+   geometor.etc.plates.AlgebraicPartnerInfo
+   geometor.etc.plates.CenterRelationsBundle
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.plates.exact_pedal_foot_and_param
+   geometor.etc.plates.generate_doc_coordinates_svg
+   geometor.etc.plates.generate_doc_central_lines_svg
+   geometor.etc.plates.build_center_relations_bundle
+   geometor.etc.plates.generate_doc_relations_svg
+   geometor.etc.plates.generate_doc_four_triangles_svg
+
+
+Module Contents
+---------------
+
+.. py:class:: CircleCenterSpec
+
+   Metadata for centers that are the center of a canonical named triangle circle.
+
+
+   .. py:attribute:: circle_id
+      :type:  str
+
+
+   .. py:attribute:: circle_label
+      :type:  str
+
+
+   .. py:attribute:: stroke_hex
+      :type:  str
+
+
+   .. py:attribute:: stroke_rgba
+      :type:  str
+
+
+   .. py:attribute:: r_sym
+      :type:  str
+
+
+   .. py:attribute:: q_sym
+      :type:  str
+
+
+   .. py:attribute:: table_header
+      :type:  str
+
+
+   .. py:attribute:: radius_fn
+      :type:  collections.abc.Callable[[geometor.etc.triangles.SymbolicTriangle], sympy.Expr]
+
+
+.. py:data:: CIRCLE_CENTER_SPECS
+   :type:  dict[int, CircleCenterSpec]
+
+.. py:class:: AlgebraicPartnerInfo
+
+   Exact symbolic result of applying a triangle-center operator to ``X_n``.
+
+
+   .. py:attribute:: operator
+      :type:  str
+
+
+   .. py:attribute:: partner_num
+      :type:  int | None
+
+
+   .. py:attribute:: partner_title
+      :type:  str
+
+
+   .. py:attribute:: xy
+      :type:  tuple[sympy.Expr, sympy.Expr] | None
+
+
+   .. py:attribute:: bary
+      :type:  tuple[sympy.Expr, sympy.Expr, sympy.Expr] | None
+
+
+   .. py:attribute:: is_self
+      :type:  bool
+      :value: False
+
+
+
+   .. py:attribute:: is_ideal
+      :type:  bool
+      :value: False
+
+
+
+   .. py:attribute:: is_center_of_inversion
+      :type:  bool
+      :value: False
+
+
+
+   .. py:attribute:: inversion_quadrance
+      :type:  sympy.Expr | None
+      :value: None
+
+
+
+   .. py:attribute:: inversion_scale
+      :type:  sympy.Expr | None
+      :value: None
+
+
+
+.. py:class:: CenterRelationsBundle
+
+   Exact algebraic operator results and rendered SVG catalog IDs for Act 4.
+
+
+   .. py:attribute:: num
+      :type:  int
+
+
+   .. py:attribute:: preset
+      :type:  str
+
+
+   .. py:attribute:: isogonal
+      :type:  AlgebraicPartnerInfo
+
+
+   .. py:attribute:: isotomic
+      :type:  AlgebraicPartnerInfo
+
+
+   .. py:attribute:: complement
+      :type:  AlgebraicPartnerInfo
+
+
+   .. py:attribute:: anticomplement
+      :type:  AlgebraicPartnerInfo
+
+
+   .. py:attribute:: circumcircle_inverse
+      :type:  AlgebraicPartnerInfo
+
+
+   .. py:attribute:: galois_conjugate
+      :type:  AlgebraicPartnerInfo | None
+      :value: None
+
+
+
+   .. py:attribute:: harmonic_feuerbach_partner
+      :type:  int | None
+      :value: None
+
+
+
+   .. py:attribute:: plotted_partners
+      :type:  list[int]
+      :value: []
+
+
+
+   .. py:attribute:: svg_ids
+      :type:  set[str]
+
+
+.. py:function:: exact_pedal_foot_and_param(p_xy: tuple[sympy.Expr, sympy.Expr], q1_xy: tuple[sympy.Expr, sympy.Expr], q2_xy: tuple[sympy.Expr, sympy.Expr], tri: geometor.etc.triangles.SymbolicTriangle) -> tuple[tuple[sympy.Expr, sympy.Expr], sympy.Expr]
+
+   Return ``(foot_xy, t_param)`` for the exact orthogonal projection of ``p_xy`` onto ``q1_xy -> q2_xy``.
+
+
+.. py:function:: generate_doc_coordinates_svg(num: int, title: str = '', preset: str = 'heronian') -> str
+
+   Generate Act 2 ``02_coordinates.svg`` for any center ``X_num`` in ``CenterSymbolicRegistry``.
+
+
+.. py:function:: generate_doc_central_lines_svg(model: geometor.model.Model, subtitle: str = '') -> str
+
+   Generate Act 3 ``03_central_lines.svg`` with ``.show-lines`` active and incident framing.
+
+
+.. py:function:: build_center_relations_bundle(num: int, preset: str = 'heronian') -> CenterRelationsBundle
+
+   Evaluate exact symbolic conjugates, dilations, and circumcircle inverse for ``X_num``.
+
+
+.. py:function:: generate_doc_relations_svg(num: int, preset: str = 'heronian') -> tuple[str, CenterRelationsBundle]
+
+   Generate Act 4 ``04_relations.svg`` and populate ``bundle.svg_ids`` with exact plotted IDs.
+
+
+.. py:function:: generate_doc_four_triangles_svg(num: int) -> str
+
+   Generate Act 5 ``05_four_triangles.svg`` across all 4 Canonical Symbolic Reference Triangles.
+
+

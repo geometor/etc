@@ -1,0 +1,1392 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" data-initial-viewbox="0 0 1000 760" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <style>
+:root {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --accent-color: #161616;
+    --border-color: #333;
+    --select-color: #0ff;
+}
+
+svg.geometor-etc-drawing {
+    width: 100%;
+    height: auto;
+    max-height: 540px;
+    background-color: var(--accent-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    display: block;
+    user-select: none;
+    touch-action: none;
+    cursor: grab;
+}
+
+svg.geometor-etc-drawing.is-panning {
+    cursor: grabbing;
+}
+
+svg.geometor-etc-drawing.hide-labels #labels .point-label,
+svg.geometor-etc-drawing.hide-labels #labels .guide-label,
+svg.geometor-etc-drawing.hide-labels #labels .target-label,
+svg.geometor-etc-drawing.hide-labels #labels .given-label {
+    display: none;
+}
+
+svg.geometor-etc-drawing.hide-guides .guide {
+    display: none !important;
+}
+
+svg.geometor-etc-drawing:not(.show-lines) .incident {
+    display: none !important;
+}
+
+#points circle {
+    fill: var(--text-color);
+    stroke: var(--background-color);
+    stroke-width: 2.5;
+    vector-effect: non-scaling-stroke;
+    cursor: pointer;
+    transition: fill 0.12s ease, stroke 0.12s ease;
+}
+
+#points circle.given {
+    fill: #6F6;
+}
+
+#points circle.guide {
+    fill: orange;
+    stroke-dasharray: none;
+}
+
+#points circle.selected,
+#points circle.target {
+    stroke: var(--select-color);
+    fill: gold;
+    stroke-width: 3;
+}
+
+#points circle:hover,
+#points circle.hover {
+    fill: var(--select-color) !important;
+    stroke: #fff !important;
+    stroke-width: 3.5 !important;
+}
+
+#elements line,
+#elements path.line {
+    fill: none;
+    stroke: #b0bec5;
+    stroke-width: 2.2;
+    stroke-dasharray: 2, 4.5;
+    stroke-linecap: round;
+    vector-effect: non-scaling-stroke;
+    cursor: pointer;
+}
+
+#elements line.sideline,
+#elements path.line.sideline {
+    stroke: #cbd5e1;
+    stroke-width: 2.3;
+}
+
+#elements line.central_line,
+#elements path.line.central_line {
+    stroke: #0bd;
+    stroke-width: 1.85;
+    stroke-opacity: 0.85;
+}
+
+#elements line.central_line[data-color-token="orange"] { stroke: #fb923c; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="teal"] { stroke: #2dd4bf; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="blue"] { stroke: #38bdf8; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="orchid"] { stroke: #e879f9; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="pink"] { stroke: #f472b6; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="lime"] { stroke: #a3e635; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="green"] { stroke: #5ec27e; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="purple"] { stroke: #a855f7; stroke-dasharray: 6, 3; }
+
+#elements line.golden,
+#elements path.line.golden,
+#elements line.euler,
+#elements path.line.euler {
+    stroke: gold;
+    stroke-width: 2.1;
+}
+
+#elements line.strut {
+    stroke: gold;
+    stroke-width: 2.8;
+    stroke-dasharray: none;
+    stroke-opacity: 0.95;
+}
+
+#elements circle {
+    fill: none;
+    stroke: #C09;
+    stroke-width: 2;
+    vector-effect: non-scaling-stroke;
+    cursor: pointer;
+}
+
+#elements circle.incircle {
+    stroke: #e040fb;
+}
+
+#elements circle.nine_point_circle {
+    stroke: #00e5ff;
+    stroke-dasharray: 6, 3;
+}
+
+#elements circle.secondary_circle {
+    stroke: #ff9100;
+    stroke-dasharray: 5, 3;
+    stroke-opacity: 0.85;
+}
+
+#elements .bisector {
+    stroke-dasharray: 2, 4;
+}
+
+#elements .guide {
+    stroke: orange;
+    stroke-dasharray: 2, 4;
+    stroke-opacity: 0.65;
+}
+
+#elements line:hover,
+#elements line.hover,
+#elements path.line:hover,
+#elements path.line.hover,
+#elements circle:hover,
+#elements circle.hover {
+    stroke: var(--select-color) !important;
+    stroke-width: 3.2 !important;
+    stroke-dasharray: none !important;
+    stroke-opacity: 1 !important;
+}
+
+#highlights .highlight-segment {
+    stroke: var(--select-color);
+    fill: none;
+    stroke-width: 6;
+    stroke-opacity: 0.45;
+    vector-effect: non-scaling-stroke;
+    marker-start: url(#marker);
+    marker-end: url(#marker);
+    pointer-events: none;
+}
+
+#graphics polyline {
+    stroke: #ffd54f;
+    fill: none;
+    stroke-width: 3.2;
+    vector-effect: non-scaling-stroke;
+    cursor: pointer;
+}
+
+#graphics polygon {
+    stroke: #36c9;
+    fill: #36c2;
+    stroke-width: 6;
+    vector-effect: non-scaling-stroke;
+    stroke-linejoin: round;
+    marker-start: url(#marker);
+    marker-mid: url(#marker);
+    marker-end: url(#marker);
+    cursor: pointer;
+}
+
+#graphics polygon.secondary {
+    stroke: rgba(144, 238, 144, 0.55);
+    fill: rgba(144, 238, 144, 0.08);
+    stroke-width: 3;
+}
+
+#graphics polygon.subarea-a {
+    stroke: rgba(255, 112, 67, 0.72);
+    fill: rgba(255, 112, 67, 0.20);
+    stroke-width: 2.4;
+    marker-start: none;
+    marker-mid: none;
+    marker-end: none;
+}
+
+#graphics polygon.subarea-b {
+    stroke: rgba(102, 187, 106, 0.72);
+    fill: rgba(102, 187, 106, 0.20);
+    stroke-width: 2.4;
+    marker-start: none;
+    marker-mid: none;
+    marker-end: none;
+}
+
+#graphics polygon.subarea-c {
+    stroke: rgba(66, 165, 245, 0.72);
+    fill: rgba(66, 165, 245, 0.20);
+    stroke-width: 2.4;
+    marker-start: none;
+    marker-mid: none;
+    marker-end: none;
+}
+
+#graphics polygon:hover,
+#graphics polygon.hover,
+#graphics polyline:hover,
+#graphics polyline.hover {
+    stroke: var(--select-color) !important;
+    stroke-opacity: 1 !important;
+}
+
+#graphics polygon.subarea-a:hover,
+#graphics polygon.subarea-a.hover {
+    fill: rgba(255, 112, 67, 0.38) !important;
+}
+
+#graphics polygon.subarea-b:hover,
+#graphics polygon.subarea-b.hover {
+    fill: rgba(102, 187, 106, 0.38) !important;
+}
+
+#graphics polygon.subarea-c:hover,
+#graphics polygon.subarea-c.hover {
+    fill: rgba(66, 165, 245, 0.38) !important;
+}
+
+#labels text {
+    fill: var(--text-color);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-weight: 600;
+    paint-order: stroke;
+    stroke: var(--accent-color);
+    stroke-width: 0.15em;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    user-select: none;
+    pointer-events: none;
+}
+
+#labels tspan {
+    paint-order: stroke;
+    stroke: var(--accent-color);
+    stroke-width: 0.15em;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+#labels text.target-label {
+    fill: gold;
+    font-weight: 700;
+}
+
+#labels text.given-label {
+    fill: #8f8;
+}
+
+#labels text.guide-label {
+    fill: #ffb74d;
+    font-weight: 600;
+}
+
+#labels text.hover-label {
+    fill: var(--select-color) !important;
+    font-weight: 700;
+}
+
+#labels text.dense-label {
+    display: none;
+}
+
+#labels text.dense-label.hover-label {
+    display: block !important;
+}
+
+.etc-svg-stage {
+    position: relative;
+    width: 100%;
+}
+
+.etc-svg-toolbar {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    gap: 4px;
+    z-index: 20;
+    opacity: 0.35;
+    transition: opacity 0.18s ease;
+}
+
+.etc-svg-stage:hover .etc-svg-toolbar,
+figure:hover .etc-svg-toolbar {
+    opacity: 0.95;
+}
+
+.etc-svg-btn {
+    background: rgba(18, 18, 18, 0.88);
+    color: #e0e0e0;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 12px;
+    line-height: 1.4;
+    cursor: pointer;
+    user-select: none;
+}
+
+.etc-svg-btn:hover,
+.etc-svg-btn.active {
+    background: rgba(0, 255, 255, 0.14);
+    color: #0ff;
+    border-color: #0ff;
+}
+
+.etc-symbolic-hud {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    max-width: min(460px, calc(100% - 20px));
+    background: rgba(14, 16, 22, 0.93);
+    border: 1px solid rgba(0, 255, 255, 0.35);
+    border-radius: 6px;
+    padding: 8px 12px;
+    color: #eaeaea;
+    font-family: "Fira Sans Condensed", system-ui, -apple-system, sans-serif;
+    font-size: 13px;
+    line-height: 1.38;
+    z-index: 24;
+    pointer-events: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.58);
+    opacity: 0;
+    transform: translateY(4px);
+    transition: opacity 0.12s ease, transform 0.12s ease;
+}
+
+.etc-symbolic-hud.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.etc-hud-head {
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 4px;
+    margin-bottom: 5px;
+}
+
+.etc-hud-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.etc-hud-id {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-weight: 700;
+    color: #0ff;
+    font-size: 13px;
+}
+
+.etc-hud-title {
+    font-weight: 600;
+    color: #f5f5f5;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.etc-hud-kind {
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #94a3b8;
+}
+
+.etc-hud-rows {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2px 10px;
+    align-items: baseline;
+}
+
+.etc-hud-key {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 11.5px;
+    color: #94a3b8;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.etc-hud-val {
+    color: #f8fafc;
+    font-size: 13.5px;
+    overflow-wrap: anywhere;
+}
+
+.etc-hud-val .katex {
+    font-size: 1.02em;
+}
+
+.etc-hud-approx {
+    margin-top: 4px;
+    padding-top: 3px;
+    border-top: 1px dashed rgba(255, 255, 255, 0.09);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 11px;
+    color: #8b9bb4;
+}
+
+.etc-math-fallback {
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: 1.06em;
+}
+
+.etc-math-frac {
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0 2px;
+    font-size: 0.88em;
+    line-height: 1.05;
+}
+
+.etc-math-num {
+    border-bottom: 1px solid rgba(248, 250, 252, 0.65);
+    padding: 0 2px 1px;
+}
+
+.etc-math-den {
+    padding: 1px 2px 0;
+}
+
+.etc-math-rad {
+    border-top: 1px solid rgba(248, 250, 252, 0.6);
+    padding: 0 2px;
+}
+
+.etc-graphics-panel,
+.etc-act-plate {
+    width: 100%;
+    background: #141414;
+    border: 1px solid #333;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.etc-graphics-panel svg.geometor-etc-drawing,
+.etc-act-plate svg.geometor-etc-drawing {
+    border: none;
+    border-radius: 0;
+    display: block;
+}
+
+svg.geometor-etc-drawing .etc-plate-poly {
+    cursor: pointer;
+    transition: fill-opacity 0.14s ease, stroke 0.14s ease;
+}
+
+svg.geometor-etc-drawing .etc-plate-poly.hover {
+    stroke: var(--select-color) !important;
+    stroke-width: 2.8px !important;
+    fill-opacity: 0.44 !important;
+}
+
+svg.geometor-etc-drawing .etc-plate-strut,
+svg.geometor-etc-drawing .etc-plate-line,
+svg.geometor-etc-drawing .etc-plate-circle,
+svg.geometor-etc-drawing .etc-plate-pt,
+svg.geometor-etc-drawing .etc-plate-panel {
+    cursor: pointer;
+}
+
+svg.geometor-etc-drawing .etc-plate-strut.hover,
+svg.geometor-etc-drawing .etc-plate-line.hover,
+svg.geometor-etc-drawing .etc-plate-circle.hover {
+    stroke: var(--select-color) !important;
+    filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.72));
+}
+
+svg.geometor-etc-drawing .etc-plate-pt.hover {
+    stroke: var(--select-color) !important;
+    stroke-width: 3.6px !important;
+    filter: drop-shadow(0 0 6px rgba(0, 255, 255, 0.85));
+}
+
+svg.geometor-etc-drawing .etc-plate-panel.hover > rect.etc-panel-border {
+    stroke: var(--select-color) !important;
+    stroke-width: 2.8px !important;
+}
+
+.etc-triangle-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2px;
+    background: #1a1a1a;
+    border-bottom: 1px solid #2e2e2e;
+    padding: 6px 10px 0 10px;
+}
+
+.etc-tab-btn {
+    background: transparent;
+    color: #999;
+    border: 1px solid transparent;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    padding: 5px 14px;
+    font-family: "Fira Sans Condensed", system-ui, -apple-system, sans-serif;
+    font-size: 13.5px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.15s ease, background 0.15s ease;
+    margin-bottom: -1px;
+}
+
+.etc-tab-btn:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.etc-tab-btn.active {
+    background: #161616;
+    color: #0ff;
+    border-color: #2e2e2e;
+    border-bottom: 1px solid #161616;
+}
+</style>
+  
+  <g id="panel-heronian" data-id="panel-heronian" data-ref="panel-heronian" class="etc-plate-panel">
+    <rect class="etc-panel-border" x="35.0" y="22.0" width="450" height="346" rx="16" fill="rgba(13, 17, 26, 0.92)" stroke="#e8b85a" stroke-width="1.8" />
+    <text x="57.0" y="56.0" fill="#e8b85a" font-family="JetBrains Mono, monospace" font-size="16.5" font-weight="bold" pointer-events="none">Heronian (15, 13, 14)</text>
+    <text x="463.0" y="56.0" text-anchor="end" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="13" pointer-events="none">Δ = 84 • ℚ</text>
+
+    <polygon id="heronian-sub-a" data-id="heronian-sub-a" data-ref="heronian-sub-a" class="etc-plate-poly" points="214.9,241.9 396.5,314.0 221.0,80.0" fill="#e8b85a" fill-opacity="0.14" stroke="none" />
+    <polygon id="heronian-sub-b" data-id="heronian-sub-b" data-ref="heronian-sub-b" class="etc-plate-poly" points="214.9,241.9 221.0,80.0 123.5,314.0" fill="#38bdf8" fill-opacity="0.14" stroke="none" />
+    <polygon id="heronian-sub-c" data-id="heronian-sub-c" data-ref="heronian-sub-c" class="etc-plate-poly" points="214.9,241.9 123.5,314.0 396.5,314.0" fill="#5ec27e" fill-opacity="0.14" stroke="none" />
+
+    <polygon points="123.5,314.0 396.5,314.0 221.0,80.0" fill="none" stroke="#cbd5e1" stroke-width="2.3" stroke-dasharray="2, 4.5" stroke-linecap="round" pointer-events="none" />
+    <line id="heronian-strut-a" data-id="heronian-strut-a" data-ref="heronian-strut-a" class="etc-plate-strut" x1="214.9" y1="241.9" x2="296.5" y2="180.7" stroke="#e8b85a" stroke-width="2.9" />
+    <line id="heronian-strut-b" data-id="heronian-strut-b" data-ref="heronian-strut-b" class="etc-plate-strut" x1="214.9" y1="241.9" x2="162.6" y2="220.1" stroke="#38bdf8" stroke-width="2.9" />
+    <line id="heronian-strut-c" data-id="heronian-strut-c" data-ref="heronian-strut-c" class="etc-plate-strut" x1="214.9" y1="241.9" x2="214.9" y2="314.0" stroke="#5ec27e" stroke-width="2.9" />
+
+    <circle id="heronian-A" data-id="heronian-A" data-ref="heronian-A" class="etc-plate-pt" cx="123.5" cy="314.0" r="4.6" fill="#66ff66" />
+    <circle id="heronian-B" data-id="heronian-B" data-ref="heronian-B" class="etc-plate-pt" cx="396.5" cy="314.0" r="4.6" fill="#66ff66" />
+    <circle id="heronian-C" data-id="heronian-C" data-ref="heronian-C" class="etc-plate-pt" cx="221.0" cy="80.0" r="4.6" fill="#f8f6f0" />
+    <circle id="heronian-X_19" data-id="heronian-X_19" data-ref="heronian-X_19" class="etc-plate-pt" cx="214.9" cy="241.9" r="7.5" fill="#ffd700" stroke="#00ffff" stroke-width="2.2" />
+
+    <g pointer-events="none">
+      <text x="105.5" y="332.0" fill="#88ff88" font-family="Georgia, serif" font-size="18" font-weight="bold">A</text>
+      <text x="404.5" y="332.0" fill="#88ff88" font-family="Georgia, serif" font-size="18" font-weight="bold">B</text>
+      <text x="215.0" y="70.0" fill="#f8f6f0" font-family="Georgia, serif" font-size="18" font-weight="bold">C</text>
+      <text x="226.9" y="231.9" fill="#ffd700" font-family="JetBrains Mono, monospace" font-size="17" font-weight="bold">X<tspan dy="0.28em" font-size="74%">19</tspan></text>
+      <text x="260.0" y="354.0" text-anchor="middle" fill="#cbd5e1" font-family="JetBrains Mono, monospace" font-size="12.5">X_19 = (497/106, 196/53)</text>
+    </g>
+  </g>
+  <g id="panel-right" data-id="panel-right" data-ref="panel-right" class="etc-plate-panel">
+    <rect class="etc-panel-border" x="515.0" y="22.0" width="450" height="346" rx="16" fill="rgba(13, 17, 26, 0.92)" stroke="#38bdf8" stroke-width="1.8" />
+    <text x="537.0" y="56.0" fill="#38bdf8" font-family="JetBrains Mono, monospace" font-size="16.5" font-weight="bold" pointer-events="none">Right (3, 4, 5)</text>
+    <text x="943.0" y="56.0" text-anchor="end" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="13" pointer-events="none">Δ = 6 • ℚ</text>
+
+    <polygon id="right-sub-a" data-id="right-sub-a" data-ref="right-sub-a" class="etc-plate-poly" points="788.4,114.0 913.0,280.0 788.4,114.0" fill="#e8b85a" fill-opacity="0.14" stroke="none" />
+    <polygon id="right-sub-b" data-id="right-sub-b" data-ref="right-sub-b" class="etc-plate-poly" points="788.4,114.0 788.4,114.0 567.0,280.0" fill="#38bdf8" fill-opacity="0.14" stroke="none" />
+    <polygon id="right-sub-c" data-id="right-sub-c" data-ref="right-sub-c" class="etc-plate-poly" points="788.4,114.0 567.0,280.0 913.0,280.0" fill="#5ec27e" fill-opacity="0.14" stroke="none" />
+
+    <polygon points="567.0,280.0 913.0,280.0 788.4,114.0" fill="none" stroke="#cbd5e1" stroke-width="2.3" stroke-dasharray="2, 4.5" stroke-linecap="round" pointer-events="none" />
+    <line id="right-strut-a" data-id="right-strut-a" data-ref="right-strut-a" class="etc-plate-strut" x1="788.4" y1="114.0" x2="788.4" y2="114.0" stroke="#e8b85a" stroke-width="2.9" />
+    <line id="right-strut-b" data-id="right-strut-b" data-ref="right-strut-b" class="etc-plate-strut" x1="788.4" y1="114.0" x2="788.4" y2="114.0" stroke="#38bdf8" stroke-width="2.9" />
+    <line id="right-strut-c" data-id="right-strut-c" data-ref="right-strut-c" class="etc-plate-strut" x1="788.4" y1="114.0" x2="788.4" y2="280.0" stroke="#5ec27e" stroke-width="2.9" />
+
+    <circle id="right-A" data-id="right-A" data-ref="right-A" class="etc-plate-pt" cx="567.0" cy="280.0" r="4.6" fill="#66ff66" />
+    <circle id="right-B" data-id="right-B" data-ref="right-B" class="etc-plate-pt" cx="913.0" cy="280.0" r="4.6" fill="#66ff66" />
+    <circle id="right-C" data-id="right-C" data-ref="right-C" class="etc-plate-pt" cx="788.4" cy="114.0" r="4.6" fill="#f8f6f0" />
+    <circle id="right-X_19" data-id="right-X_19" data-ref="right-X_19" class="etc-plate-pt" cx="788.4" cy="114.0" r="7.5" fill="#ffd700" stroke="#00ffff" stroke-width="2.2" />
+
+    <g pointer-events="none">
+      <text x="549.0" y="298.0" fill="#88ff88" font-family="Georgia, serif" font-size="18" font-weight="bold">A</text>
+      <text x="921.0" y="298.0" fill="#88ff88" font-family="Georgia, serif" font-size="18" font-weight="bold">B</text>
+      <text x="768.4" y="106.0" fill="#f8f6f0" font-family="Georgia, serif" font-size="18" font-weight="bold">C</text>
+      <text x="800.4" y="106.0" fill="#ffd700" font-family="JetBrains Mono, monospace" font-size="17" font-weight="bold">X<tspan dy="0.28em" font-size="74%">19</tspan></text>
+      <text x="740.0" y="354.0" text-anchor="middle" fill="#cbd5e1" font-family="JetBrains Mono, monospace" font-size="12.5">X_19 = (16/5, 12/5)</text>
+    </g>
+  </g>
+  <g id="panel-kepler" data-id="panel-kepler" data-ref="panel-kepler" class="etc-plate-panel">
+    <rect class="etc-panel-border" x="35.0" y="390.0" width="450" height="346" rx="16" fill="rgba(13, 17, 26, 0.92)" stroke="#4ade80" stroke-width="1.8" />
+    <text x="57.0" y="424.0" fill="#4ade80" font-family="JetBrains Mono, monospace" font-size="16.5" font-weight="bold" pointer-events="none">Kepler (1, √φ, φ)</text>
+    <text x="463.0" y="424.0" text-anchor="end" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="13" pointer-events="none">Δ = √φ/2 • ℚ(√φ)</text>
+
+    <polygon id="kepler-sub-a" data-id="kepler-sub-a" data-ref="kepler-sub-a" class="etc-plate-poly" points="300.8,480.9 433.0,649.1 300.8,480.9" fill="#e8b85a" fill-opacity="0.14" stroke="none" />
+    <polygon id="kepler-sub-b" data-id="kepler-sub-b" data-ref="kepler-sub-b" class="etc-plate-poly" points="300.8,480.9 300.8,480.9 87.0,649.1" fill="#38bdf8" fill-opacity="0.14" stroke="none" />
+    <polygon id="kepler-sub-c" data-id="kepler-sub-c" data-ref="kepler-sub-c" class="etc-plate-poly" points="300.8,480.9 87.0,649.1 433.0,649.1" fill="#5ec27e" fill-opacity="0.14" stroke="none" />
+
+    <polygon points="87.0,649.1 433.0,649.1 300.8,480.9" fill="none" stroke="#cbd5e1" stroke-width="2.3" stroke-dasharray="2, 4.5" stroke-linecap="round" pointer-events="none" />
+    <line id="kepler-strut-a" data-id="kepler-strut-a" data-ref="kepler-strut-a" class="etc-plate-strut" x1="300.8" y1="480.9" x2="300.8" y2="480.9" stroke="#e8b85a" stroke-width="2.9" />
+    <line id="kepler-strut-b" data-id="kepler-strut-b" data-ref="kepler-strut-b" class="etc-plate-strut" x1="300.8" y1="480.9" x2="300.8" y2="480.9" stroke="#38bdf8" stroke-width="2.9" />
+    <line id="kepler-strut-c" data-id="kepler-strut-c" data-ref="kepler-strut-c" class="etc-plate-strut" x1="300.8" y1="480.9" x2="300.8" y2="649.1" stroke="#5ec27e" stroke-width="2.9" />
+
+    <circle id="kepler-A" data-id="kepler-A" data-ref="kepler-A" class="etc-plate-pt" cx="87.0" cy="649.1" r="4.6" fill="#66ff66" />
+    <circle id="kepler-B" data-id="kepler-B" data-ref="kepler-B" class="etc-plate-pt" cx="433.0" cy="649.1" r="4.6" fill="#66ff66" />
+    <circle id="kepler-C" data-id="kepler-C" data-ref="kepler-C" class="etc-plate-pt" cx="300.8" cy="480.9" r="4.6" fill="#f8f6f0" />
+    <circle id="kepler-X_19" data-id="kepler-X_19" data-ref="kepler-X_19" class="etc-plate-pt" cx="300.8" cy="480.9" r="7.5" fill="#ffd700" stroke="#00ffff" stroke-width="2.2" />
+
+    <g pointer-events="none">
+      <text x="69.0" y="667.1" fill="#88ff88" font-family="Georgia, serif" font-size="18" font-weight="bold">A</text>
+      <text x="441.0" y="667.1" fill="#88ff88" font-family="Georgia, serif" font-size="18" font-weight="bold">B</text>
+      <text x="280.8" y="472.9" fill="#f8f6f0" font-family="Georgia, serif" font-size="18" font-weight="bold">C</text>
+      <text x="312.8" y="472.9" fill="#ffd700" font-family="JetBrains Mono, monospace" font-size="17" font-weight="bold">X<tspan dy="0.28em" font-size="74%">19</tspan></text>
+      <text x="260.0" y="722.0" text-anchor="middle" fill="#cbd5e1" font-family="JetBrains Mono, monospace" font-size="12.5">X_19 = (1, √φ·(φ - 1))</text>
+    </g>
+  </g>
+  <g id="panel-kimberling" data-id="panel-kimberling" data-ref="panel-kimberling" class="etc-plate-panel">
+    <rect class="etc-panel-border" x="515.0" y="390.0" width="450" height="346" rx="16" fill="rgba(13, 17, 26, 0.92)" stroke="#a78bfa" stroke-width="1.8" />
+    <text x="537.0" y="424.0" fill="#a78bfa" font-family="JetBrains Mono, monospace" font-size="16.5" font-weight="bold" pointer-events="none">Kimberling (6, 9, 13)</text>
+    <text x="943.0" y="424.0" text-anchor="end" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="13" pointer-events="none">Δ = 4·√35 • ℚ(√35)</text>
+
+    <polygon id="kimberling-sub-a" data-id="kimberling-sub-a" data-ref="kimberling-sub-a" class="etc-plate-poly" points="765.5,483.9 913.0,646.1 786.1,549.2" fill="#e8b85a" fill-opacity="0.14" stroke="none" />
+    <polygon id="kimberling-sub-b" data-id="kimberling-sub-b" data-ref="kimberling-sub-b" class="etc-plate-poly" points="765.5,483.9 786.1,549.2 567.0,646.1" fill="#38bdf8" fill-opacity="0.14" stroke="none" />
+    <polygon id="kimberling-sub-c" data-id="kimberling-sub-c" data-ref="kimberling-sub-c" class="etc-plate-poly" points="765.5,483.9 567.0,646.1 913.0,646.1" fill="#5ec27e" fill-opacity="0.14" stroke="none" />
+
+    <line x1="786.1" y1="549.2" x2="741.6" y2="515.2" stroke="#64748b" stroke-width="1.4" stroke-dasharray="5,5" pointer-events="none" />
+    <line x1="786.1" y1="549.2" x2="793.0" y2="546.1" stroke="#64748b" stroke-width="1.4" stroke-dasharray="5,5" pointer-events="none" />
+    <polygon points="567.0,646.1 913.0,646.1 786.1,549.2" fill="none" stroke="#cbd5e1" stroke-width="2.3" stroke-dasharray="2, 4.5" stroke-linecap="round" pointer-events="none" />
+    <line id="kimberling-strut-a" data-id="kimberling-strut-a" data-ref="kimberling-strut-a" class="etc-plate-strut" x1="765.5" y1="483.9" x2="741.6" y2="515.2" stroke="#e8b85a" stroke-width="2.9" />
+    <line id="kimberling-strut-b" data-id="kimberling-strut-b" data-ref="kimberling-strut-b" class="etc-plate-strut" x1="765.5" y1="483.9" x2="793.0" y2="546.1" stroke="#38bdf8" stroke-width="2.9" />
+    <line id="kimberling-strut-c" data-id="kimberling-strut-c" data-ref="kimberling-strut-c" class="etc-plate-strut" x1="765.5" y1="483.9" x2="765.5" y2="646.1" stroke="#5ec27e" stroke-width="2.9" />
+
+    <circle id="kimberling-A" data-id="kimberling-A" data-ref="kimberling-A" class="etc-plate-pt" cx="567.0" cy="646.1" r="4.6" fill="#66ff66" />
+    <circle id="kimberling-B" data-id="kimberling-B" data-ref="kimberling-B" class="etc-plate-pt" cx="913.0" cy="646.1" r="4.6" fill="#66ff66" />
+    <circle id="kimberling-C" data-id="kimberling-C" data-ref="kimberling-C" class="etc-plate-pt" cx="786.1" cy="549.2" r="4.6" fill="#f8f6f0" />
+    <circle id="kimberling-X_19" data-id="kimberling-X_19" data-ref="kimberling-X_19" class="etc-plate-pt" cx="765.5" cy="483.9" r="7.5" fill="#ffd700" stroke="#00ffff" stroke-width="2.2" />
+
+    <g pointer-events="none">
+      <text x="549.0" y="664.1" fill="#88ff88" font-family="Georgia, serif" font-size="18" font-weight="bold">A</text>
+      <text x="921.0" y="664.1" fill="#88ff88" font-family="Georgia, serif" font-size="18" font-weight="bold">B</text>
+      <text x="780.1" y="539.2" fill="#f8f6f0" font-family="Georgia, serif" font-size="18" font-weight="bold">C</text>
+      <text x="777.5" y="473.9" fill="#ffd700" font-family="JetBrains Mono, monospace" font-size="17" font-weight="bold">X<tspan dy="0.28em" font-size="74%">19</tspan></text>
+      <text x="740.0" y="722.0" text-anchor="middle" fill="#cbd5e1" font-family="JetBrains Mono, monospace" font-size="12.5">X_19 = (96086/12883, 13268·√35/12883)</text>
+    </g>
+  </g>
+  <script type="application/json" class="etc-elements-meta">{"panel-heronian":{"ID":"panel-heronian","type":"triangle","color":"#e8b85a","name":"Heronian (15, 13, 14)","symbolic_rows":[{"label":"sides","latex":"\\left(15,\\; 13,\\; 14\\right)","pretty":"(15, 13, 14)"},{"label":"X_{19}","latex":"\\left(\\frac{497}{106},\\; \\frac{196}{53}\\right)","pretty":"(497/106, 196/53)"},{"label":"bary","latex":"297 : 143 : 196","pretty":"297 : 143 : 196"},{"label":"\u0394, field","latex":"\\Delta = 84,\\; \\mathbb{Q}","pretty":"\u0394 = 84 \u2022 \u211a"}],"approx":"X_19 \u2248 (4.688679, 3.698113)"},"heronian-X_19":{"ID":"heronian-X_19","type":"point","color":"#ffd700","name":"X_19 on Heronian (15, 13, 14)","symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{497}{106},\\; \\frac{196}{53}\\right)","pretty":"(497/106, 196/53)"},{"label":"trilinear","latex":"99 : 55 : 70","pretty":"99 : 55 : 70"},{"label":"bary","latex":"297 : 143 : 196","pretty":"297 : 143 : 196"}],"approx":"\u2248 (4.688679, 3.698113)","related_points":["heronian-X_19"]},"heronian-A":{"ID":"heronian-A","type":"point","color":"#66ff66","name":"Vertex A (Heronian (15, 13, 14))","symbolic_rows":[{"label":"(x, y)","latex":"\\left(0,\\; 0\\right)","pretty":"(0, 0)"}],"approx":"\u2248 (0.000000, 0.000000)","related_points":["heronian-A"]},"heronian-B":{"ID":"heronian-B","type":"point","color":"#66ff66","name":"Vertex B (Heronian (15, 13, 14))","symbolic_rows":[{"label":"(x, y)","latex":"\\left(14,\\; 0\\right)","pretty":"(14, 0)"}],"approx":"\u2248 (14.000000, 0.000000)","related_points":["heronian-B"]},"heronian-C":{"ID":"heronian-C","type":"point","color":"#f8f6f0","name":"Vertex C (Heronian (15, 13, 14))","symbolic_rows":[{"label":"(x, y)","latex":"\\left(5,\\; 12\\right)","pretty":"(5, 12)"}],"approx":"\u2248 (5.000000, 12.000000)","related_points":["heronian-C"]},"heronian-sub-a":{"ID":"heronian-sub-a","type":"polygon","color":"#e8b85a","name":"Sub-Triangle \u25b3X_19BC (Heronian (15, 13, 14))","symbolic_rows":[{"label":"\u0394","latex":"\\frac{2079}{53}","pretty":"2079/53"},{"label":"bary","latex":"297 : 143 : 196","pretty":"297 : 143 : 196"}],"approx":"\u2248 39.226415"},"heronian-sub-b":{"ID":"heronian-sub-b","type":"polygon","color":"#38bdf8","name":"Sub-Triangle \u25b3X_19CA (Heronian (15, 13, 14))","symbolic_rows":[{"label":"\u0394","latex":"\\frac{1001}{53}","pretty":"1001/53"},{"label":"bary","latex":"297 : 143 : 196","pretty":"297 : 143 : 196"}],"approx":"\u2248 18.886792"},"heronian-sub-c":{"ID":"heronian-sub-c","type":"polygon","color":"#5ec27e","name":"Sub-Triangle \u25b3X_19AB (Heronian (15, 13, 14))","symbolic_rows":[{"label":"\u0394","latex":"\\frac{1372}{53}","pretty":"1372/53"},{"label":"bary","latex":"297 : 143 : 196","pretty":"297 : 143 : 196"}],"approx":"\u2248 25.886792"},"heronian-strut-a":{"ID":"heronian-strut-a","type":"segment","color":"#e8b85a","name":"Strut \u22a5 BC (Heronian (15, 13, 14))","symbolic_rows":[{"label":"d","latex":"\\alpha_0 = \\frac{1386}{265}","pretty":"1386/265"},{"label":"Q","latex":"\\frac{1920996}{70225}","pretty":"1920996/70225"}],"approx":"\u2248 5.230189"},"heronian-strut-b":{"ID":"heronian-strut-b","type":"segment","color":"#38bdf8","name":"Strut \u22a5 CA (Heronian (15, 13, 14))","symbolic_rows":[{"label":"d","latex":"\\beta_0 = \\frac{154}{53}","pretty":"154/53"},{"label":"Q","latex":"\\frac{23716}{2809}","pretty":"23716/2809"}],"approx":"\u2248 2.905660"},"heronian-strut-c":{"ID":"heronian-strut-c","type":"segment","color":"#5ec27e","name":"Strut \u22a5 AB (Heronian (15, 13, 14))","symbolic_rows":[{"label":"d","latex":"\\gamma_0 = \\frac{196}{53}","pretty":"196/53"},{"label":"Q","latex":"\\frac{38416}{2809}","pretty":"38416/2809"}],"approx":"\u2248 3.698113"},"panel-right":{"ID":"panel-right","type":"triangle","color":"#38bdf8","name":"Right (3, 4, 5)","symbolic_rows":[{"label":"sides","latex":"\\left(3,\\; 4,\\; 5\\right)","pretty":"(3, 4, 5)"},{"label":"X_{19}","latex":"\\left(\\frac{16}{5},\\; \\frac{12}{5}\\right)","pretty":"(16/5, 12/5)"},{"label":"bary","latex":"0 : 0 : 1","pretty":"0 : 0 : 1"},{"label":"\u0394, field","latex":"\\Delta = 6,\\; \\mathbb{Q}","pretty":"\u0394 = 6 \u2022 \u211a"}],"approx":"X_19 \u2248 (3.200000, 2.400000)"},"right-X_19":{"ID":"right-X_19","type":"point","color":"#ffd700","name":"X_19 on Right (3, 4, 5)","symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{16}{5},\\; \\frac{12}{5}\\right)","pretty":"(16/5, 12/5)"},{"label":"trilinear","latex":"0 : 0 : 1","pretty":"0 : 0 : 1"},{"label":"bary","latex":"0 : 0 : 1","pretty":"0 : 0 : 1"}],"approx":"\u2248 (3.200000, 2.400000)","related_points":["right-X_19"]},"right-A":{"ID":"right-A","type":"point","color":"#66ff66","name":"Vertex A (Right (3, 4, 5))","symbolic_rows":[{"label":"(x, y)","latex":"\\left(0,\\; 0\\right)","pretty":"(0, 0)"}],"approx":"\u2248 (0.000000, 0.000000)","related_points":["right-A"]},"right-B":{"ID":"right-B","type":"point","color":"#66ff66","name":"Vertex B (Right (3, 4, 5))","symbolic_rows":[{"label":"(x, y)","latex":"\\left(5,\\; 0\\right)","pretty":"(5, 0)"}],"approx":"\u2248 (5.000000, 0.000000)","related_points":["right-B"]},"right-C":{"ID":"right-C","type":"point","color":"#f8f6f0","name":"Vertex C (Right (3, 4, 5))","symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{16}{5},\\; \\frac{12}{5}\\right)","pretty":"(16/5, 12/5)"}],"approx":"\u2248 (3.200000, 2.400000)","related_points":["right-C"]},"right-sub-a":{"ID":"right-sub-a","type":"polygon","color":"#e8b85a","name":"Sub-Triangle \u25b3X_19BC (Right (3, 4, 5))","symbolic_rows":[{"label":"\u0394","latex":"0","pretty":"0"},{"label":"bary","latex":"0 : 0 : 1","pretty":"0 : 0 : 1"}],"approx":"\u2248 0.000000"},"right-sub-b":{"ID":"right-sub-b","type":"polygon","color":"#38bdf8","name":"Sub-Triangle \u25b3X_19CA (Right (3, 4, 5))","symbolic_rows":[{"label":"\u0394","latex":"0","pretty":"0"},{"label":"bary","latex":"0 : 0 : 1","pretty":"0 : 0 : 1"}],"approx":"\u2248 0.000000"},"right-sub-c":{"ID":"right-sub-c","type":"polygon","color":"#5ec27e","name":"Sub-Triangle \u25b3X_19AB (Right (3, 4, 5))","symbolic_rows":[{"label":"\u0394","latex":"6","pretty":"6"},{"label":"bary","latex":"0 : 0 : 1","pretty":"0 : 0 : 1"}],"approx":"\u2248 6.000000"},"right-strut-a":{"ID":"right-strut-a","type":"segment","color":"#e8b85a","name":"Strut \u22a5 BC (Right (3, 4, 5))","symbolic_rows":[{"label":"d","latex":"\\alpha_0 = 0","pretty":"0"},{"label":"Q","latex":"0","pretty":"0"}],"approx":"\u2248 0.000000"},"right-strut-b":{"ID":"right-strut-b","type":"segment","color":"#38bdf8","name":"Strut \u22a5 CA (Right (3, 4, 5))","symbolic_rows":[{"label":"d","latex":"\\beta_0 = 0","pretty":"0"},{"label":"Q","latex":"0","pretty":"0"}],"approx":"\u2248 0.000000"},"right-strut-c":{"ID":"right-strut-c","type":"segment","color":"#5ec27e","name":"Strut \u22a5 AB (Right (3, 4, 5))","symbolic_rows":[{"label":"d","latex":"\\gamma_0 = \\frac{12}{5}","pretty":"12/5"},{"label":"Q","latex":"\\frac{144}{25}","pretty":"144/25"}],"approx":"\u2248 2.400000"},"panel-kepler":{"ID":"panel-kepler","type":"triangle","color":"#4ade80","name":"Kepler (1, \u221a\u03c6, \u03c6)","symbolic_rows":[{"label":"sides","latex":"\\left(1,\\; \\sqrt{\\phi},\\; \\phi\\right)","pretty":"(1, \u221a\u03c6, \u03c6)"},{"label":"X_{19}","latex":"\\left(1,\\; \\sqrt{\\phi} \\left(\\phi - 1\\right)\\right)","pretty":"(1, \u221a\u03c6\u00b7(\u03c6 - 1))"},{"label":"bary","latex":"0 : 0 : 1","pretty":"0 : 0 : 1"},{"label":"\u0394, field","latex":"\\Delta = \\frac{\\sqrt{\\phi}}{2},\\; \\mathbb{Q}(\\sqrt{\\phi})","pretty":"\u0394 = \u221a\u03c6/2 \u2022 \u211a(\u221a\u03c6)"}],"approx":"X_19 \u2248 (1.000000, 0.786151)"},"kepler-X_19":{"ID":"kepler-X_19","type":"point","color":"#ffd700","name":"X_19 on Kepler (1, \u221a\u03c6, \u03c6)","symbolic_rows":[{"label":"(x, y)","latex":"\\left(1,\\; \\sqrt{\\phi} \\left(\\phi - 1\\right)\\right)","pretty":"(1, \u221a\u03c6\u00b7(\u03c6 - 1))"},{"label":"trilinear","latex":"0 : 0 : 1","pretty":"0 : 0 : 1"},{"label":"bary","latex":"0 : 0 : 1","pretty":"0 : 0 : 1"}],"approx":"\u2248 (1.000000, 0.786151)","related_points":["kepler-X_19"]},"kepler-A":{"ID":"kepler-A","type":"point","color":"#66ff66","name":"Vertex A (Kepler (1, \u221a\u03c6, \u03c6))","symbolic_rows":[{"label":"(x, y)","latex":"\\left(0,\\; 0\\right)","pretty":"(0, 0)"}],"approx":"\u2248 (0.000000, 0.000000)","related_points":["kepler-A"]},"kepler-B":{"ID":"kepler-B","type":"point","color":"#66ff66","name":"Vertex B (Kepler (1, \u221a\u03c6, \u03c6))","symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\phi,\\; 0\\right)","pretty":"(\u03c6, 0)"}],"approx":"\u2248 (1.618034, 0.000000)","related_points":["kepler-B"]},"kepler-C":{"ID":"kepler-C","type":"point","color":"#f8f6f0","name":"Vertex C (Kepler (1, \u221a\u03c6, \u03c6))","symbolic_rows":[{"label":"(x, y)","latex":"\\left(1,\\; \\sqrt{\\phi} \\left(\\phi - 1\\right)\\right)","pretty":"(1, \u221a\u03c6\u00b7(\u03c6 - 1))"}],"approx":"\u2248 (1.000000, 0.786151)","related_points":["kepler-C"]},"kepler-sub-a":{"ID":"kepler-sub-a","type":"polygon","color":"#e8b85a","name":"Sub-Triangle \u25b3X_19BC (Kepler (1, \u221a\u03c6, \u03c6))","symbolic_rows":[{"label":"\u0394","latex":"0","pretty":"0"},{"label":"bary","latex":"0 : 0 : 1","pretty":"0 : 0 : 1"}],"approx":"\u2248 0.000000"},"kepler-sub-b":{"ID":"kepler-sub-b","type":"polygon","color":"#38bdf8","name":"Sub-Triangle \u25b3X_19CA (Kepler (1, \u221a\u03c6, \u03c6))","symbolic_rows":[{"label":"\u0394","latex":"0","pretty":"0"},{"label":"bary","latex":"0 : 0 : 1","pretty":"0 : 0 : 1"}],"approx":"\u2248 0.000000"},"kepler-sub-c":{"ID":"kepler-sub-c","type":"polygon","color":"#5ec27e","name":"Sub-Triangle \u25b3X_19AB (Kepler (1, \u221a\u03c6, \u03c6))","symbolic_rows":[{"label":"\u0394","latex":"\\frac{\\sqrt{\\phi}}{2}","pretty":"\u221a\u03c6/2"},{"label":"bary","latex":"0 : 0 : 1","pretty":"0 : 0 : 1"}],"approx":"\u2248 0.636010"},"kepler-strut-a":{"ID":"kepler-strut-a","type":"segment","color":"#e8b85a","name":"Strut \u22a5 BC (Kepler (1, \u221a\u03c6, \u03c6))","symbolic_rows":[{"label":"d","latex":"\\alpha_0 = 0","pretty":"0"},{"label":"Q","latex":"0","pretty":"0"}],"approx":"\u2248 0.000000"},"kepler-strut-b":{"ID":"kepler-strut-b","type":"segment","color":"#38bdf8","name":"Strut \u22a5 CA (Kepler (1, \u221a\u03c6, \u03c6))","symbolic_rows":[{"label":"d","latex":"\\beta_0 = 0","pretty":"0"},{"label":"Q","latex":"0","pretty":"0"}],"approx":"\u2248 0.000000"},"kepler-strut-c":{"ID":"kepler-strut-c","type":"segment","color":"#5ec27e","name":"Strut \u22a5 AB (Kepler (1, \u221a\u03c6, \u03c6))","symbolic_rows":[{"label":"d","latex":"\\gamma_0 = \\sqrt{\\phi} \\left(\\phi - 1\\right)","pretty":"\u221a\u03c6\u00b7(\u03c6 - 1)"},{"label":"Q","latex":"\\phi - 1","pretty":"\u03c6 - 1"}],"approx":"\u2248 0.786151"},"panel-kimberling":{"ID":"panel-kimberling","type":"triangle","color":"#a78bfa","name":"Kimberling (6, 9, 13)","symbolic_rows":[{"label":"sides","latex":"\\left(6,\\; 9,\\; 13\\right)","pretty":"(6, 9, 13)"},{"label":"X_{19}","latex":"\\left(\\frac{96086}{12883},\\; \\frac{13268 \\sqrt{35}}{12883}\\right)","pretty":"(96086/12883, 13268\u00b7\u221a35/12883)"},{"label":"bary","latex":"-372 : -963 : 3317","pretty":"-372 : -963 : 3317"},{"label":"\u0394, field","latex":"\\Delta = 4 \\sqrt{35},\\; \\mathbb{Q}(\\sqrt{35})","pretty":"\u0394 = 4\u00b7\u221a35 \u2022 \u211a(\u221a35)"}],"approx":"X_19 \u2248 (7.458356, 6.092878)"},"kimberling-X_19":{"ID":"kimberling-X_19","type":"point","color":"#ffd700","name":"X_19 on Kimberling (6, 9, 13)","symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{96086}{12883},\\; \\frac{13268 \\sqrt{35}}{12883}\\right)","pretty":"(96086/12883, 13268\u00b7\u221a35/12883)"},{"label":"trilinear","latex":"-806 : -1391 : 3317","pretty":"-806 : -1391 : 3317"},{"label":"bary","latex":"-372 : -963 : 3317","pretty":"-372 : -963 : 3317"}],"approx":"\u2248 (7.458356, 6.092878)","related_points":["kimberling-X_19"]},"kimberling-A":{"ID":"kimberling-A","type":"point","color":"#66ff66","name":"Vertex A (Kimberling (6, 9, 13))","symbolic_rows":[{"label":"(x, y)","latex":"\\left(0,\\; 0\\right)","pretty":"(0, 0)"}],"approx":"\u2248 (0.000000, 0.000000)","related_points":["kimberling-A"]},"kimberling-B":{"ID":"kimberling-B","type":"point","color":"#66ff66","name":"Vertex B (Kimberling (6, 9, 13))","symbolic_rows":[{"label":"(x, y)","latex":"\\left(13,\\; 0\\right)","pretty":"(13, 0)"}],"approx":"\u2248 (13.000000, 0.000000)","related_points":["kimberling-B"]},"kimberling-C":{"ID":"kimberling-C","type":"point","color":"#f8f6f0","name":"Vertex C (Kimberling (6, 9, 13))","symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{107}{13},\\; \\frac{8 \\sqrt{35}}{13}\\right)","pretty":"(107/13, 8\u00b7\u221a35/13)"}],"approx":"\u2248 (8.230769, 3.640664)","related_points":["kimberling-C"]},"kimberling-sub-a":{"ID":"kimberling-sub-a","type":"polygon","color":"#e8b85a","name":"Sub-Triangle \u25b3X_19BC (Kimberling (6, 9, 13))","symbolic_rows":[{"label":"\u0394","latex":"- \\frac{744 \\sqrt{35}}{991}","pretty":"-744\u00b7\u221a35/991"},{"label":"bary","latex":"-372 : -963 : 3317","pretty":"-372 : -963 : 3317"}],"approx":"\u2248 -4.441537"},"kimberling-sub-b":{"ID":"kimberling-sub-b","type":"polygon","color":"#38bdf8","name":"Sub-Triangle \u25b3X_19CA (Kimberling (6, 9, 13))","symbolic_rows":[{"label":"\u0394","latex":"- \\frac{1926 \\sqrt{35}}{991}","pretty":"-1926\u00b7\u221a35/991"},{"label":"bary","latex":"-372 : -963 : 3317","pretty":"-372 : -963 : 3317"}],"approx":"\u2248 -11.497850"},"kimberling-sub-c":{"ID":"kimberling-sub-c","type":"polygon","color":"#5ec27e","name":"Sub-Triangle \u25b3X_19AB (Kimberling (6, 9, 13))","symbolic_rows":[{"label":"\u0394","latex":"\\frac{6634 \\sqrt{35}}{991}","pretty":"6634\u00b7\u221a35/991"},{"label":"bary","latex":"-372 : -963 : 3317","pretty":"-372 : -963 : 3317"}],"approx":"\u2248 39.603707"},"kimberling-strut-a":{"ID":"kimberling-strut-a","type":"segment","color":"#e8b85a","name":"Strut \u22a5 BC (Kimberling (6, 9, 13))","symbolic_rows":[{"label":"d","latex":"\\alpha_0 = \\frac{248 \\sqrt{35}}{991}","pretty":"248\u00b7\u221a35/991"},{"label":"Q","latex":"\\frac{2152640}{982081}","pretty":"2152640/982081"}],"approx":"\u2248 1.480512"},"kimberling-strut-b":{"ID":"kimberling-strut-b","type":"segment","color":"#38bdf8","name":"Strut \u22a5 CA (Kimberling (6, 9, 13))","symbolic_rows":[{"label":"d","latex":"\\beta_0 = \\frac{428 \\sqrt{35}}{991}","pretty":"428\u00b7\u221a35/991"},{"label":"Q","latex":"\\frac{6411440}{982081}","pretty":"6411440/982081"}],"approx":"\u2248 2.555078"},"kimberling-strut-c":{"ID":"kimberling-strut-c","type":"segment","color":"#5ec27e","name":"Strut \u22a5 AB (Kimberling (6, 9, 13))","symbolic_rows":[{"label":"d","latex":"\\gamma_0 = \\frac{13268 \\sqrt{35}}{12883}","pretty":"13268\u00b7\u221a35/12883"},{"label":"Q","latex":"\\frac{6161393840}{165971689}","pretty":"6161393840/165971689"}],"approx":"\u2248 6.092878"}}</script>
+  <script>//<![CDATA[
+
+(function () {
+    const scriptEl = document.currentScript;
+    const svg = scriptEl ? scriptEl.closest('svg') : document.querySelector('svg.geometor-etc-drawing');
+    if (!svg || svg.dataset.etcInteractiveInit === '1') return;
+    if (svg.closest('.excerpt, .collection, a') || svg.classList.contains('euclid-thumbnail')) return;
+    svg.dataset.etcInteractiveInit = '1';
+
+    const initVbAttr = svg.getAttribute('data-initial-viewbox') || svg.getAttribute('viewBox');
+    const initialViewBox = initVbAttr.split(/\s+/).map(Number);
+
+    let elementsCatalog = {};
+    const metaEl = svg.querySelector('script.etc-elements-meta');
+    if (metaEl) {
+        try {
+            elementsCatalog = JSON.parse(metaEl.textContent);
+        } catch (e) {}
+    }
+
+    const pointsGroup = svg.querySelector('#points');
+    const elementsGroup = svg.querySelector('#elements');
+    const graphicsGroup = svg.querySelector('#graphics');
+    const highlightsGroup = svg.querySelector('#highlights');
+    const labelsGroup = svg.querySelector('#labels');
+
+    const pointEls = pointsGroup ? Array.from(pointsGroup.querySelectorAll('circle')) : [];
+    const labelEls = labelsGroup ? Array.from(labelsGroup.querySelectorAll('text[data-point-id]')) : [];
+    const subtitleEl = labelsGroup ? labelsGroup.querySelector('text.subtitle-label') : null;
+
+    function escapeHtml(str) {
+        return String(str || '')
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;');
+    }
+
+    function formatIdHtml(idStr) {
+        const s = escapeHtml(idStr);
+        return s.replace(/_\{([^}]+)\}/g, '<sub>$1</sub>').replace(/_([A-Za-z0-9']+)/g, '<sub>$1</sub>');
+    }
+
+    function extractBraced(src, startIdx) {
+        if (src[startIdx] !== '{') return null;
+        let depth = 0;
+        for (let i = startIdx; i < src.length; i++) {
+            if (src[i] === '{') depth++;
+            else if (src[i] === '}') {
+                depth--;
+                if (depth === 0) {
+                    return { content: src.slice(startIdx + 1, i), next: i + 1 };
+                }
+            }
+        }
+        return null;
+    }
+
+    function convertLatexFallback(tex) {
+        let s = String(tex || '');
+        s = s.replace(/\\left\s*([(\[{|])/g, '$1').replace(/\\right\s*([)\]}|])/g, '$1');
+        s = s.replace(/\\;/g, ' ').replace(/\\,/g, '\u2009').replace(/\\quad/g, '  ');
+        s = s.replace(/\\varphi|\\phi/g, 'φ')
+             .replace(/\\Delta/g, 'Δ')
+             .replace(/\\alpha/g, 'α')
+             .replace(/\\beta/g, 'β')
+             .replace(/\\gamma/g, 'γ')
+             .replace(/\\cdot/g, '·')
+             .replace(/\\approx/g, '≈')
+             .replace(/\\infty/g, '∞');
+
+        let out = '';
+        let i = 0;
+        while (i < s.length) {
+            if (s.startsWith('\\frac', i)) {
+                let k = i + 5;
+                while (k < s.length && s[k] === ' ') k++;
+                const numB = extractBraced(s, k);
+                if (numB) {
+                    let k2 = numB.next;
+                    while (k2 < s.length && s[k2] === ' ') k2++;
+                    const denB = extractBraced(s, k2);
+                    if (denB) {
+                        out += '<span class="etc-math-frac"><span class="etc-math-num">' +
+                            convertLatexFallback(numB.content) +
+                            '</span><span class="etc-math-den">' +
+                            convertLatexFallback(denB.content) +
+                            '</span></span>';
+                        i = denB.next;
+                        continue;
+                    }
+                }
+            }
+            if (s.startsWith('\\sqrt', i)) {
+                let k = i + 5;
+                while (k < s.length && s[k] === ' ') k++;
+                const radB = extractBraced(s, k);
+                if (radB) {
+                    out += '√<span class="etc-math-rad">' + convertLatexFallback(radB.content) + '</span>';
+                    i = radB.next;
+                    continue;
+                }
+            }
+            if ((s[i] === '_' || s[i] === '^') && i + 1 < s.length) {
+                const tag = s[i] === '_' ? 'sub' : 'sup';
+                if (s[i + 1] === '{') {
+                    const subB = extractBraced(s, i + 1);
+                    if (subB) {
+                        out += `<${tag}>` + convertLatexFallback(subB.content) + `</${tag}>`;
+                        i = subB.next;
+                        continue;
+                    }
+                } else {
+                    out += `<${tag}>` + escapeHtml(s[i + 1]) + `</${tag}>`;
+                    i += 2;
+                    continue;
+                }
+            }
+            out += escapeHtml(s[i]);
+            i++;
+        }
+        return out;
+    }
+
+    function renderMathHtml(latexStr, prettyStr) {
+        if (!latexStr) return escapeHtml(prettyStr || '');
+        if (typeof window !== 'undefined' && window.katex && typeof window.katex.renderToString === 'function') {
+            try {
+                return window.katex.renderToString(latexStr, { throwOnError: false, displayMode: false });
+            } catch (e) {}
+        }
+        return '<span class="etc-math-fallback">' + convertLatexFallback(latexStr) + '</span>';
+    }
+
+    function getViewBox() {
+        return svg.getAttribute('viewBox').split(/\s+/).map(Number);
+    }
+
+    function scaleViewElements() {
+        const rect = svg.getBoundingClientRect();
+        const widthPx = rect.width || 800;
+        const vb = getViewBox();
+        const unitsPerPx = vb[2] / widthPx;
+
+        const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
+        pointEls.forEach(c => {
+            const isTarget = c.classList.contains('target') || c.classList.contains('selected');
+            const isGuide = c.classList.contains('guide');
+            const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
+            c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
+        });
+
+        const fontSize = 20.25 * unitsPerPx;
+        const guideFontSize = 17.5 * unitsPerPx;
+        labelEls.forEach(lbl => {
+            const cx = parseFloat(lbl.getAttribute('data-anchor-x') || '0');
+            const cy = parseFloat(lbl.getAttribute('data-anchor-y') || '0');
+            const oxPx = parseFloat(lbl.getAttribute('data-offset-x') || '12');
+            const oyPx = parseFloat(lbl.getAttribute('data-offset-y') || '-10.5');
+            const isGuideLbl = lbl.classList.contains('guide-label');
+            lbl.setAttribute('x', (cx + oxPx * unitsPerPx).toFixed(6));
+            lbl.setAttribute('y', (cy + oyPx * unitsPerPx).toFixed(6));
+            lbl.setAttribute('font-size', (isGuideLbl ? guideFontSize : fontSize).toFixed(6));
+        });
+
+        if (subtitleEl) {
+            const subX = vb[0] + 20.0 * unitsPerPx;
+            const subY = vb[1] + vb[3] - 18.0 * unitsPerPx;
+            subtitleEl.setAttribute('x', subX.toFixed(6));
+            subtitleEl.setAttribute('y', subY.toFixed(6));
+            subtitleEl.setAttribute('font-size', (17.25 * unitsPerPx).toFixed(6));
+        }
+    }
+
+    function setViewBox(vb) {
+        svg.setAttribute('viewBox', `${vb[0].toFixed(6)} ${vb[1].toFixed(6)} ${vb[2].toFixed(6)} ${vb[3].toFixed(6)}`);
+        scaleViewElements();
+    }
+
+    function zoomBy(factor, clientX, clientY) {
+        const vb = getViewBox();
+        let [x, y, w, h] = vb;
+        const rect = svg.getBoundingClientRect();
+        const relX = (clientX !== undefined && rect.width > 0) ? (clientX - rect.left) / rect.width : 0.5;
+        const relY = (clientY !== undefined && rect.height > 0) ? (clientY - rect.top) / rect.height : 0.5;
+        const focusX = x + relX * w;
+        const focusY = y + relY * h;
+        const baseW = Math.max(initialViewBox[2] || 1.0, 0.2);
+        const baseH = Math.max(initialViewBox[3] || 1.0, 0.2);
+        const newW = Math.min(Math.max(w * factor, baseW * 0.002), baseW * 30.0);
+        const newH = Math.min(Math.max(h * factor, baseH * 0.002), baseH * 30.0);
+        const newX = focusX - relX * newW;
+        const newY = focusY - relY * newH;
+        setViewBox([newX, newY, newW, newH]);
+    }
+
+    function resetView() {
+        setViewBox([...initialViewBox]);
+    }
+
+    let hudEl = null;
+
+    svg._etcController = {
+        zoomIn: () => zoomBy(1 / 1.25),
+        zoomOut: () => zoomBy(1.25),
+        resetView: resetView,
+        toggleLabels: () => svg.classList.toggle('hide-labels'),
+        toggleGuides: () => svg.classList.toggle('hide-guides'),
+        scaleViewElements: scaleViewElements,
+    };
+
+    if (document.body && document.documentElement.tagName.toLowerCase() === 'html') {
+        let stage = svg.parentElement;
+        if (stage && !stage.classList.contains('etc-svg-stage')) {
+            const newStage = document.createElement('div');
+            newStage.className = 'etc-svg-stage';
+            stage.insertBefore(newStage, svg);
+            newStage.appendChild(svg);
+            stage = newStage;
+
+            const toolbar = document.createElement('div');
+            toolbar.className = 'etc-svg-toolbar';
+            const btns = [
+                { label: '+', title: 'Zoom In (or scroll wheel)', action: () => zoomBy(1 / 1.25) },
+                { label: '−', title: 'Zoom Out (or scroll wheel)', action: () => zoomBy(1.25) },
+                { label: '⟲ Fit', title: 'Reset View (or double-click canvas)', action: () => resetView() },
+            ];
+            if (svg.querySelector('.incident')) {
+                btns.push({
+                    label: 'Lines',
+                    toggleKey: 'lines',
+                    title: 'Toggle Incident Central Lines',
+                    isActive: () => svg.classList.contains('show-lines'),
+                    action: () => svg.classList.toggle('show-lines'),
+                });
+            }
+            if (labelEls.length > 0) {
+                btns.push({
+                    label: 'Labels',
+                    toggleKey: 'labels',
+                    title: 'Toggle Point Labels',
+                    isActive: () => !svg.classList.contains('hide-labels'),
+                    action: () => svg.classList.toggle('hide-labels'),
+                });
+            }
+            if (svg.querySelector('.guide')) {
+                btns.push({
+                    label: 'Guides',
+                    toggleKey: 'guides',
+                    title: 'Toggle Construction Guides',
+                    isActive: () => !svg.classList.contains('hide-guides'),
+                    action: () => svg.classList.toggle('hide-guides'),
+                });
+            }
+            btns.forEach(b => {
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = 'etc-svg-btn';
+                if (b.toggleKey) {
+                    btn.dataset.toggleKey = b.toggleKey;
+                    btn.classList.toggle('active', b.isActive());
+                }
+                btn.textContent = b.label;
+                btn.title = b.title;
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    b.action();
+                    if (b.isActive) {
+                        btn.classList.toggle('active', b.isActive());
+                    }
+                });
+                toolbar.appendChild(btn);
+            });
+            stage.appendChild(toolbar);
+        }
+
+        if (stage) {
+            hudEl = stage.querySelector('.etc-symbolic-hud');
+            if (!hudEl) {
+                hudEl = document.createElement('div');
+                hudEl.className = 'etc-symbolic-hud';
+                hudEl.setAttribute('aria-live', 'polite');
+                stage.appendChild(hudEl);
+            }
+            svg.querySelectorAll('title').forEach(t => t.remove());
+        }
+
+        const panel = svg.closest('.etc-graphics-panel');
+        if (panel && panel.dataset.etcTabsInit !== '1') {
+            panel.dataset.etcTabsInit = '1';
+            const tabBtns = Array.from(panel.querySelectorAll('.etc-tab-btn'));
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetTab = btn.getAttribute('data-tab');
+                    const tabPanes = Array.from(panel.querySelectorAll('.etc-tab-pane'));
+                    const prevPane = panel.querySelector('.etc-tab-pane.active');
+                    const prevSvg = prevPane ? prevPane.querySelector('svg.geometor-etc-drawing') : null;
+                    const hideLabels = prevSvg ? prevSvg.classList.contains('hide-labels') : false;
+                    const hideGuides = prevSvg ? prevSvg.classList.contains('hide-guides') : false;
+                    const showLines = prevSvg ? prevSvg.classList.contains('show-lines') : false;
+
+                    tabBtns.forEach(b => {
+                        const isMatch = b.getAttribute('data-tab') === targetTab;
+                        b.classList.toggle('active', isMatch);
+                        b.setAttribute('aria-selected', isMatch ? 'true' : 'false');
+                    });
+
+                    tabPanes.forEach(pane => {
+                        const isMatch = pane.getAttribute('data-tab-pane') === targetTab;
+                        pane.classList.toggle('active', isMatch);
+                        pane.style.display = isMatch ? 'block' : 'none';
+                        if (isMatch) {
+                            const paneSvg = pane.querySelector('svg.geometor-etc-drawing');
+                            if (paneSvg) {
+                                paneSvg.classList.toggle('hide-labels', hideLabels);
+                                paneSvg.classList.toggle('hide-guides', hideGuides);
+                                paneSvg.classList.toggle('show-lines', showLines);
+                                const paneToolbar = pane.querySelector('.etc-svg-toolbar');
+                                if (paneToolbar) {
+                                    const lBtn = paneToolbar.querySelector('[data-toggle-key="lines"]');
+                                    if (lBtn) lBtn.classList.toggle('active', showLines);
+                                    const lblBtn = paneToolbar.querySelector('[data-toggle-key="labels"]');
+                                    if (lblBtn) lblBtn.classList.toggle('active', !hideLabels);
+                                    const gBtn = paneToolbar.querySelector('[data-toggle-key="guides"]');
+                                    if (gBtn) gBtn.classList.toggle('active', !hideGuides);
+                                }
+                                if (paneSvg._etcController) {
+                                    paneSvg._etcController.scaleViewElements();
+                                    requestAnimationFrame(() => paneSvg._etcController.scaleViewElements());
+                                }
+                            }
+                        }
+                    });
+
+                    const figureEl = panel.closest('figure');
+                    const captionP = figureEl ? (figureEl.querySelector('figcaption .caption-text') || figureEl.querySelector('figcaption p')) : null;
+                    if (captionP) {
+                        if (!captionP.dataset.origHtml) {
+                            captionP.dataset.origHtml = captionP.innerHTML;
+                        }
+                        const capHtml = btn.getAttribute('data-caption-html');
+                        if (targetTab === 'acute' && captionP.dataset.origHtml) {
+                            captionP.innerHTML = captionP.dataset.origHtml;
+                        } else if (capHtml) {
+                            captionP.innerHTML = capHtml;
+                        }
+                    }
+                });
+            });
+        }
+    }
+
+    function updateHud(info, fallbackId) {
+        if (!hudEl) return;
+        if (!info) {
+            hudEl.classList.remove('is-visible');
+            return;
+        }
+        const dotColor = info.color || '#0ff';
+        const idHtml = formatIdHtml(info.ID || fallbackId || '');
+        const titleHtml = escapeHtml(info.name || fallbackId || '');
+        const kindHtml = escapeHtml(info.type || '');
+        const symRows = Array.isArray(info.symbolic_rows) ? info.symbolic_rows : [];
+        let rowsHtml = '';
+        if (symRows.length > 0) {
+            symRows.forEach(r => {
+                rowsHtml += '<div class="etc-hud-key">' + escapeHtml(r.label) + '</div>' +
+                    '<div class="etc-hud-val">' + renderMathHtml(r.latex, r.pretty) + '</div>';
+            });
+        } else if (Array.isArray(info.rows)) {
+            info.rows.forEach(pair => {
+                rowsHtml += '<div class="etc-hud-key">' + escapeHtml(pair[0]) + '</div>' +
+                    '<div class="etc-hud-val">' + escapeHtml(pair[1]) + '</div>';
+            });
+        }
+        const approxHtml = info.approx
+            ? '<div class="etc-hud-approx">' + escapeHtml(info.approx) + '</div>'
+            : '';
+        hudEl.innerHTML =
+            '<div class="etc-hud-head">' +
+                '<span class="etc-hud-dot" style="background:' + escapeHtml(dotColor) + '"></span>' +
+                '<span class="etc-hud-id">' + idHtml + '</span>' +
+                '<span class="etc-hud-title">' + titleHtml + '</span>' +
+                '<span class="etc-hud-kind">' + kindHtml + '</span>' +
+            '</div>' +
+            '<div class="etc-hud-rows">' + rowsHtml + '</div>' +
+            approxHtml;
+        hudEl.classList.add('is-visible');
+    }
+
+    let activeHoveredKey = null;
+
+    function clearHover(clearTextRefs) {
+        if (!activeHoveredKey) return;
+        activeHoveredKey = null;
+        svg.querySelectorAll('.hover').forEach(el => el.classList.remove('hover'));
+        svg.querySelectorAll('.hover-label').forEach(el => el.classList.remove('hover-label'));
+        if (highlightsGroup) {
+            highlightsGroup.querySelectorAll('.highlight-segment').forEach(el => {
+                el.style.display = 'none';
+            });
+        }
+        if (hudEl) {
+            hudEl.classList.remove('is-visible');
+        }
+        if (clearTextRefs !== false && typeof document !== 'undefined') {
+            document.querySelectorAll('.geom-highlight-text').forEach(el => {
+                el.classList.remove('geom-highlight-text');
+            });
+        }
+    }
+
+    function findSvgElement(candidateId) {
+        if (!candidateId) return null;
+        return svg.querySelector(`[data-id="${CSS.escape(candidateId)}"], [data-ref="${CSS.escape(candidateId)}"]`);
+    }
+
+    function resolveSingleSvgId(rawId) {
+        if (!rawId) return null;
+        const trimmed = rawId.trim();
+        if (findSvgElement(trimmed)) return trimmed;
+        const clean = trimmed.includes(':') ? trimmed.split(':').pop().trim() : trimmed;
+        if (findSvgElement(clean)) return clean;
+
+        const lineM = clean.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+        if (lineM) {
+            const cands = [
+                `[ ${lineM[1]} ${lineM[2]} ]`,
+                `[ ${lineM[2]} ${lineM[1]} ]`,
+                `/ ${lineM[1]} ${lineM[2]} /`,
+                `/ ${lineM[2]} ${lineM[1]} /`,
+            ];
+            for (const c of cands) {
+                if (findSvgElement(c)) return c;
+            }
+        }
+
+        const segM = clean.match(/^\/\s*(\S+)\s+(\S+)\s*\/$/);
+        if (segM) {
+            const cands = [
+                `/ ${segM[1]} ${segM[2]} /`,
+                `/ ${segM[2]} ${segM[1]} /`,
+                `[ ${segM[1]} ${segM[2]} ]`,
+                `[ ${segM[2]} ${segM[1]} ]`,
+            ];
+            for (const c of cands) {
+                if (findSvgElement(c)) return c;
+            }
+        }
+
+        const braceAllM = clean.match(/^\{\s*([\d,\s]+)\s*\}$/);
+        if (braceAllM) {
+            const wantNums = braceAllM[1].split(',').map(s => s.trim()).filter(Boolean);
+            if (wantNums.length === 2) {
+                const cands = [
+                    `{ ${wantNums[0]}, ${wantNums[1]} }`,
+                    `{ ${wantNums[1]}, ${wantNums[0]} }`,
+                ];
+                for (const c of cands) {
+                    if (findSvgElement(c)) return c;
+                }
+            }
+            if (wantNums.length >= 2) {
+                const wantSet = new Set(wantNums);
+                const lineEls = svg.querySelectorAll('line[data-id], line[data-ref]');
+                for (const ln of lineEls) {
+                    const lid = ln.getAttribute('data-id') || ln.getAttribute('data-ref') || '';
+                    const lm = lid.match(/^\{\s*([\d,\s]+)\s*\}$/);
+                    if (lm) {
+                        const lnums = lm[1].split(',').map(s => s.trim()).filter(Boolean);
+                        const shared = lnums.filter(n => wantSet.has(n));
+                        if (shared.length >= 2) return lid;
+                    }
+                }
+            }
+        }
+
+        const triM = clean.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+        if (triM) {
+            const want = [triM[1], triM[2], triM[3]].sort().join('|');
+            const polys = svg.querySelectorAll('polygon[data-id], polygon[data-ref]');
+            for (const p of polys) {
+                const pid = p.getAttribute('data-id') || p.getAttribute('data-ref') || '';
+                const pm = pid.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                if (pm && [pm[1], pm[2], pm[3]].sort().join('|') === want) {
+                    return pid;
+                }
+            }
+        }
+
+        return null;
+    }
+
+    function hasElement(rawRef) {
+        if (!rawRef) return false;
+        const parts = String(rawRef).split(';').map(s => s.trim()).filter(Boolean);
+        return parts.some(p => resolveSingleSvgId(p) !== null);
+    }
+
+    function activateHover(rawRef, highlightTextRefs) {
+        if (!rawRef) return false;
+        const parts = String(rawRef).split(';').map(s => s.trim()).filter(Boolean);
+        const resolvedIds = parts.map(p => resolveSingleSvgId(p)).filter(Boolean);
+        if (resolvedIds.length === 0) return false;
+
+        const key = resolvedIds.join(';');
+        if (activeHoveredKey === key) return true;
+        clearHover(highlightTextRefs !== false);
+        activeHoveredKey = key;
+
+        let primaryInfo = null;
+        let primaryId = resolvedIds[0];
+
+        resolvedIds.forEach(id => {
+            const info = elementsCatalog[id];
+            if (!primaryInfo && info) {
+                primaryInfo = info;
+                primaryId = id;
+            }
+            svg.querySelectorAll(`[data-id="${CSS.escape(id)}"], [data-ref="${CSS.escape(id)}"]`).forEach(el => {
+                el.classList.add('hover');
+            });
+            if (highlightsGroup) {
+                const hl = highlightsGroup.querySelector(`[data-highlight-for="${CSS.escape(id)}"]`);
+                if (hl) hl.style.display = 'inline';
+            }
+            let relatedPts = (info && info.related_points) ? info.related_points : [id];
+            if (!info) {
+                const sm = id.match(/^[\[/]\s*(\S+)\s+(\S+)\s*[\]/]$/);
+                const tm = id.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                if (sm) relatedPts = [sm[1], sm[2]];
+                else if (tm) relatedPts = [tm[1], tm[2], tm[3]];
+            }
+            relatedPts.forEach(pid => {
+                const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
+                if (ptEl) ptEl.classList.add('hover');
+                const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
+                if (lblEl) lblEl.classList.add('hover-label');
+            });
+        });
+
+        updateHud(primaryInfo, primaryId);
+
+        if (highlightTextRefs !== false && typeof document !== 'undefined') {
+            const selectors = new Set([`.geom-ref[data-ref="${CSS.escape(rawRef)}"]`]);
+            resolvedIds.forEach(id => selectors.add(`.geom-ref[data-ref="${CSS.escape(id)}"]`));
+            document.querySelectorAll(Array.from(selectors).join(', ')).forEach(el => {
+                el.classList.add('geom-highlight-text');
+            });
+        }
+        return true;
+    }
+
+    svg._etcController.activateHover = activateHover;
+    svg._etcController.clearHover = clearHover;
+    svg._etcController.hasElement = hasElement;
+
+    if (typeof window !== 'undefined') {
+        window.__etcSvgRegistry = window.__etcSvgRegistry || [];
+        if (!window.__etcSvgRegistry.includes(svg)) {
+            window.__etcSvgRegistry.push(svg);
+        }
+    }
+
+    if (document.body && document.documentElement.tagName.toLowerCase() === 'html' && document.body.dataset.etcGeomRefSyncInit !== '1') {
+        document.body.dataset.etcGeomRefSyncInit = '1';
+
+        function isSvgVisible(s) {
+            if (!s || !s.isConnected || !s._etcController) return false;
+            const pane = s.closest('.etc-tab-pane');
+            if (pane && !pane.classList.contains('active')) return false;
+            return s.getClientRects().length > 0;
+        }
+
+        function dispatchRefHover(sourceEl, refStr) {
+            if (!refStr) return;
+            const reg = (window.__etcSvgRegistry || []).filter(isSvgVisible);
+            const sec = sourceEl ? sourceEl.closest('section') : null;
+            let targets = [];
+            if (sec) {
+                targets = reg.filter(s => sec.contains(s) && s._etcController.hasElement(refStr));
+            }
+            if (targets.length === 0) {
+                targets = reg.filter(s => s._etcController.hasElement(refStr));
+            }
+            reg.forEach(s => {
+                if (!targets.includes(s)) s._etcController.clearHover(false);
+            });
+            targets.forEach(s => s._etcController.activateHover(refStr, false));
+            if (sourceEl && targets.length > 0) {
+                sourceEl.classList.add('geom-highlight-text');
+            }
+        }
+
+        function clearAllSvgHovers() {
+            (window.__etcSvgRegistry || []).forEach(s => {
+                if (s && s._etcController) s._etcController.clearHover(true);
+            });
+        }
+
+        document.body.addEventListener('mouseover', (e) => {
+            const geomEl = e.target.closest('.geom-ref[data-ref]');
+            if (geomEl) {
+                dispatchRefHover(geomEl, geomEl.getAttribute('data-ref'));
+                return;
+            }
+            const refLink = e.target.closest('a.reference.internal');
+            if (refLink) {
+                const txt = (refLink.textContent || '').trim();
+                const xm = txt.match(/^X(?:_|\()?(\d+)\)?$/);
+                if (xm) {
+                    dispatchRefHover(refLink, `X_${xm[1]}`);
+                }
+            }
+        });
+
+        document.body.addEventListener('mouseout', (e) => {
+            const geomEl = e.target.closest('.geom-ref[data-ref], a.reference.internal');
+            if (geomEl) {
+                clearAllSvgHovers();
+            }
+        });
+    }
+
+    svg.addEventListener('mouseover', (event) => {
+        if (isPanning) return;
+        const target = event.target.closest('[data-id], [data-ref]');
+        if (target && svg.contains(target)) {
+            activateHover(target.getAttribute('data-id') || target.getAttribute('data-ref'));
+        } else {
+            clearHover();
+        }
+    });
+
+    svg.addEventListener('mouseout', (event) => {
+        if (isPanning) return;
+        const related = event.relatedTarget ? event.relatedTarget.closest?.('[data-id], [data-ref]') : null;
+        if (!related || !svg.contains(related)) {
+            clearHover();
+        }
+    });
+
+    svg.addEventListener('wheel', (event) => {
+        event.preventDefault();
+        const factor = event.deltaY > 0 ? 1.12 : (1 / 1.12);
+        zoomBy(factor, event.clientX, event.clientY);
+    }, { passive: false });
+
+    let isPanning = false;
+    let didDrag = false;
+    let startClient = { x: 0, y: 0 };
+
+    svg.addEventListener('mousedown', (event) => {
+        if (event.button !== 0) return;
+        isPanning = true;
+        didDrag = false;
+        startClient = { x: event.clientX, y: event.clientY };
+        svg.classList.add('is-panning');
+    });
+
+    svg.addEventListener('mousemove', (event) => {
+        if (!isPanning) return;
+        const dxPx = event.clientX - startClient.x;
+        const dyPx = event.clientY - startClient.y;
+        if (Math.hypot(dxPx, dyPx) > 2) didDrag = true;
+        const rect = svg.getBoundingClientRect();
+        if (rect.width > 0 && rect.height > 0) {
+            const vb = getViewBox();
+            const dx = dxPx * (vb[2] / rect.width);
+            const dy = dyPx * (vb[3] / rect.height);
+            setViewBox([vb[0] - dx, vb[1] - dy, vb[2], vb[3]]);
+        }
+        startClient = { x: event.clientX, y: event.clientY };
+    });
+
+    window.addEventListener('mouseup', () => {
+        if (isPanning) {
+            isPanning = false;
+            svg.classList.remove('is-panning');
+        }
+    });
+
+    svg.addEventListener('mouseleave', () => {
+        isPanning = false;
+        svg.classList.remove('is-panning');
+        clearHover();
+    });
+
+    svg.addEventListener('click', (event) => {
+        if (didDrag) return;
+        const pt = event.target.closest('circle[data-id]');
+        if (!pt) return;
+        const pid = pt.getAttribute('data-id') || '';
+        const m = pid.match(/^X_(\d+)$/);
+        if (m && typeof window !== 'undefined' && window.location && window.location.pathname.includes('/c-') && !window.location.pathname.includes('/x-')) {
+            const slug = 'x-' + m[1].padStart(5, '0');
+            window.location.href = `${slug}/index.html`;
+        }
+    });
+
+    svg.addEventListener('dblclick', (event) => {
+        event.preventDefault();
+        resetView();
+    });
+
+    if (typeof ResizeObserver !== 'undefined') {
+        new ResizeObserver(() => scaleViewElements()).observe(svg);
+    }
+})();
+
+//]]></script>
+</svg>

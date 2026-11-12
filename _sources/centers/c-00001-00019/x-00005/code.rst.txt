@@ -14,7 +14,7 @@ X_5
    :alt: X_5 — NINE-POINT CENTER
    :align: center
 
-   **X_5** (*NINE-POINT CENTER*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_5** (*NINE-POINT CENTER*) constructed at :g:`X_5 <X_5>` = :math:`\left(6,\; \frac{63}{16}\right)` in exact rational coordinates on the Heronian reference triangle :math:`(a, b, c) = (15, 13, 14)` over :math:`\mathbb{Q}` with vertices :g:`A <A>` = :math:`(0, 0)`, :g:`B <B>` = :math:`(14, 0)`, :g:`C <C>` = :math:`(5, 12)`.
 
 .. literalinclude:: model.py
    :language: python

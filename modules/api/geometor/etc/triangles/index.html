@@ -40,10 +40,10 @@
           <a href="../../../../../centers/index.html"  >Encyclopedia of Triangle Centers</a>
         </li>
         <li>
-          <a href="../../../../../preambles.html"  >Guide to Preambles in ETC</a>
+          <a href="../../../../../glossary.html"  >Glossary</a>
         </li>
         <li>
-          <a href="../../../../../glossary.html"  >Glossary</a>
+          <a href="../../../../../preambles.html"  >Guide to Preambles in ETC</a>
         </li>
         <li>
           <a href="../../../../../persons.html"  >Index Nominum (Geometers & Contributors)</a>
@@ -164,7 +164,13 @@
         <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.triangles.SQRT_PHI" title="geometor.etc.triangles.SQRT_PHI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SQRT_PHI</span></code></a></p></td>
         <td><p></p></td>
         </tr>
-        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.triangles.SQRT_35" title="geometor.etc.triangles.SQRT_35"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SQRT_35</span></code></a></p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.triangles.SQRT_3" title="geometor.etc.triangles.SQRT_3"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SQRT_3</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.triangles.SQRT_35" title="geometor.etc.triangles.SQRT_35"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SQRT_35</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.triangles.SQRT_105" title="geometor.etc.triangles.SQRT_105"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SQRT_105</span></code></a></p></td>
         <td><p></p></td>
         </tr>
         <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.triangles.HERONIAN_TRIANGLE" title="geometor.etc.triangles.HERONIAN_TRIANGLE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HERONIAN_TRIANGLE</span></code></a></p></td>
@@ -224,8 +230,18 @@
         <dd></dd></dl>
 
         <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SQRT_3">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.triangles.</span></span><span class="sig-name descname"><span class="pre">SQRT_3</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.etc.triangles.SQRT_3" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py data">
         <dt class="sig sig-object py" id="geometor.etc.triangles.SQRT_35">
         <span class="sig-prename descclassname"><span class="pre">geometor.etc.triangles.</span></span><span class="sig-name descname"><span class="pre">SQRT_35</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.etc.triangles.SQRT_35" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SQRT_105">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.triangles.</span></span><span class="sig-name descname"><span class="pre">SQRT_105</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.etc.triangles.SQRT_105" title="Link to this definition">¶</a></dt>
         <dd></dd></dl>
 
         <dl class="py class">
@@ -425,6 +441,24 @@
         <dd><p>Return exact directed distance <span class="math notranslate nohighlight">\(h_a = 2\Delta u / (a(u + v + w))\)</span> to <span class="math notranslate nohighlight">\(BC\)</span>.</p>
         </dd></dl>
 
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.has_sqrt3_extension">
+        <span class="sig-name descname"><span class="pre">has_sqrt3_extension</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exprs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/collections.abc.html#collections.abc.Iterable" title="(in Python v3.13)"><span class="pre">collections.abc.Iterable</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.has_sqrt3_extension" title="Link to this definition">¶</a></dt>
+        <dd><p>Return whether <code class="docutils literal notranslate"><span class="pre">exprs</span></code> adjoin <span class="math notranslate nohighlight">\(\sqrt{3}\)</span> over this triangle’s base field.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.coordinate_field_latex">
+        <span class="sig-name descname"><span class="pre">coordinate_field_latex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exprs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/collections.abc.html#collections.abc.Iterable" title="(in Python v3.13)"><span class="pre">collections.abc.Iterable</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.coordinate_field_latex" title="Link to this definition">¶</a></dt>
+        <dd><p>Return exact LaTeX notation for the minimal number field of <code class="docutils literal notranslate"><span class="pre">exprs</span></code> on this triangle.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.coordinate_field_pretty">
+        <span class="sig-name descname"><span class="pre">coordinate_field_pretty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exprs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/collections.abc.html#collections.abc.Iterable" title="(in Python v3.13)"><span class="pre">collections.abc.Iterable</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.coordinate_field_pretty" title="Link to this definition">¶</a></dt>
+        <dd><p>Return compact Unicode notation for the minimal number field of <code class="docutils literal notranslate"><span class="pre">exprs</span></code> on this triangle.</p>
+        </dd></dl>
+
         </dd></dl>
 
         <dl class="py function">
@@ -569,7 +603,7 @@
 
   <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../../../../_static/documentation_options.js?v=938c9ccc"></script>
+  <script src="../../../../../_static/documentation_options.js?v=e259d695"></script>
   <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>

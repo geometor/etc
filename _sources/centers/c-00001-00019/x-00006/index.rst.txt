@@ -6,11 +6,14 @@
 
 .. _X_6:
 .. _SymmedianPoint:
+.. _symmedian_point:
 
 X_6
 ====
 
 .. rubric:: SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)
+
+``symmedian_point(A, B, C) -> X_6`` • **Grebe (1847) • Lemoine (1873)** • **Kimberling** ``X(6)`` • **Search Value** :math:`(6, 9, 13)`: :math:`\frac{24 \sqrt{35}}{143} \approx 0.992908495066`
 
 .. enunciation::
 
@@ -20,22 +23,73 @@ X_6
    :alt: X_6 — SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)
    :align: center
 
-   **X_6** (*SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_6** (*SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)*) constructed at :g:`X_6 <X_6>` = :math:`\left(\frac{1673}{295},\; \frac{1176}{295}\right)` in exact rational coordinates on the Heronian reference triangle :math:`(a, b, c) = (15, 13, 14)` over :math:`\mathbb{Q}` with vertices :g:`A <A>` = :math:`(0, 0)`, :g:`B <B>` = :math:`(14, 0)`, :g:`C <C>` = :math:`(5, 12)`, and area :math:`\Delta = 84`. Switch tabs above to inspect exact constructions on Right :math:`(3, 4, 5)`, Kepler :math:`(1, \sqrt{\phi}, \phi)`, and Kimberling :math:`(6, 9, 13)`.
 
 .. admonition:: Constructed Elements
    :class: note
 
-   * **Derived Triangle:** :term:`Tangential Triangle <tangential triangle>` :g:`△Tan_aTan_bTan_c << Tan_a Tan_b Tan_c >>` — vertices :g:`Tan_a <Tan_a>`, :g:`Tan_b <Tan_b>`, :g:`Tan_c <Tan_c>` (Bounded by tangents to the circumcircle at A, B, C)
-   * **Circle:** :term:`Circumcircle <circumcircle>` (:g:`circumcircle <circumcircle>`) — Passes through vertices A, B, C; centered at X_3 CIRCUMCENTER
-   * **Concurrence Lines:** :g:`A–Tan_a <[ A Tan_a ]>`, :g:`B–Tan_b <[ B Tan_b ]>`, :g:`C–Tan_c <[ C Tan_c ]>` concurring at :g:`X_6 <X_6>`
-   * **Related Centers:** :g:`X_3 <X_3>` (:ref:`CIRCUMCENTER <X_3>`)
+   * **Derived Triangle:** :term:`Symmedial Triangle <symmedial-triangle>` :g:`△Sym_aSym_bSym_c << Sym_a Sym_b Sym_c >>` — vertices :g:`Sym_a <Sym_a>`, :g:`Sym_b <Sym_b>`, :g:`Sym_c <Sym_c>` (Cevian triangle of Symmedian Point X_6)
+   * **Circle:** **Circumcircle** (:g:`circumcircle <circumcircle>`) — Passes through vertices A, B, C; centered at X_3 CIRCUMCENTER
+   * **Concurrence Lines (Symmedians):** :g:`A–Sym_a <[ A Sym_a ]>`, :g:`B–Sym_b <[ B Sym_b ]>`, :g:`C–Sym_c <[ C Sym_c ]>` concurring at :g:`X_6 <X_6>`
+
+Homogeneous Coordinates & Exact Invariants
+------------------------------------------
+
+.. figure:: 02_coordinates.svg
+   :alt: X_6 — Homogeneous Trilinear Distances and Barycentric Sub-Areas
+   :align: center
+
+   **Homogeneous Coordinates of X_6** on Heronian :math:`(15, 13, 14)`: orthogonal trilinear struts :math:`(\alpha, \beta, \gamma)` and signed barycentric sub-triangles :math:`(\Delta_a, \Delta_b, \Delta_c)`.
+
+* **Trilinear Coordinates** (:math:`\alpha : \beta : \gamma = 15 : 13 : 14`): Dropping orthogonal perpendiculars :g:`X_6T_a </ X_6 T_a />`, :g:`X_6T_b </ X_6 T_b />`, and :g:`X_6T_c </ X_6 T_c />` from :g:`X_6 <X_6>` to sidelines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, and :g:`AB <[ A B ]>` meets the sides at right-spread pedal feet :g:`T_a <T_a>` = :math:`\left(\frac{2681}{295},\; \frac{1932}{295}\right)`, :g:`T_b <T_b>` = :math:`\left(\frac{133}{59},\; \frac{1596}{295}\right)`, and :g:`T_c <T_c>` = :math:`\left(\frac{1673}{295},\; 0\right)`. The orthogonal strut lengths on :math:`(15, 13, 14)` are :math:`d_a = \frac{252}{59}`, :math:`d_b = \frac{1092}{295}`, and :math:`d_c = \frac{1176}{295}`, reducing to homogeneous trilinears :math:`\alpha : \beta : \gamma = 15 : 13 : 14`.
+* **Barycentric Coordinates** (:math:`u : v : w = 225 : 169 : 196`): Joining :g:`X_6 <X_6>` to the vertices along :g:`X_6A </ X_6 A />`, :g:`X_6B </ X_6 B />`, and :g:`X_6C </ X_6 C />` forms signed sub-triangles :g:`△X_6BC << X_6 B C >>`, :g:`△X_6CA << X_6 C A >>`, and :g:`△X_6AB << X_6 A B >>` of exact signed areas :math:`\Delta_a = \frac{1890}{59}`, :math:`\Delta_b = \frac{7098}{295}`, and :math:`\Delta_c = \frac{8232}{295}` (summing to :math:`\Delta_a + \Delta_b + \Delta_c = 84 = \Delta`), in homogeneous ratio :math:`u : v : w = 225 : 169 : 196`.
+
+.. list-table:: Exact Symbolic Coordinates & Invariants Across the Four Reference Triangles
+   :header-rows: 1
+   :widths: 18 10 18 14 16 14 14
+
+   * - Reference Triangle
+     - Field
+     - Cartesian :math:`(x, y)`
+     - Trilinears :math:`\alpha : \beta : \gamma`
+     - Barycentrics :math:`u : v : w`
+     - Sub-Areas :math:`(\Delta_a, \Delta_b, \Delta_c)`
+     - Directed Trilinear :math:`(d_a,\, Q_a)`
+   * - **Heronian** :math:`(15, 13, 14)`
+     - :math:`\mathbb{Q}`
+     - :math:`\left(\frac{1673}{295},\; \frac{1176}{295}\right)`
+     - :math:`15 : 13 : 14`
+     - :math:`225 : 169 : 196`
+     - :math:`\left(\frac{1890}{59},\; \frac{7098}{295},\; \frac{8232}{295}\right)`
+     - :math:`\frac{252}{59}\; (Q_a = \frac{63504}{3481})`
+   * - **Right** :math:`(3, 4, 5)`
+     - :math:`\mathbb{Q}`
+     - :math:`\left(\frac{16}{5},\; \frac{6}{5}\right)`
+     - :math:`3 : 4 : 5`
+     - :math:`9 : 16 : 25`
+     - :math:`\left(\frac{27}{25},\; \frac{48}{25},\; 3\right)`
+     - :math:`\frac{18}{25}\; (Q_a = \frac{324}{625})`
+   * - **Kepler** :math:`(1, \sqrt{\phi}, \phi)`
+     - :math:`\mathbb{Q}(\sqrt{\phi})`
+     - :math:`\left(1,\; \frac{\sqrt{\phi} \left(\phi - 1\right)}{2}\right)`
+     - :math:`1 : \sqrt{\phi} : \phi`
+     - :math:`1 : \phi : \phi + 1`
+     - :math:`\left(\frac{\sqrt{\phi} \left(2 - \phi\right)}{4},\; \frac{\sqrt{\phi} \left(\phi - 1\right)}{4},\; \frac{\sqrt{\phi}}{4}\right)`
+     - :math:`\frac{\sqrt{\phi} \left(2 - \phi\right)}{2}\; (Q_a = \frac{\phi}{2} - \frac{3}{4})`
+   * - **Kimberling** :math:`(6, 9, 13)`
+     - :math:`\mathbb{Q}(\sqrt{35})`
+     - :math:`\left(\frac{94}{11},\; \frac{4 \sqrt{35}}{11}\right)`
+     - :math:`6 : 9 : 13`
+     - :math:`36 : 81 : 169`
+     - :math:`\left(\frac{72 \sqrt{35}}{143},\; \frac{162 \sqrt{35}}{143},\; \frac{26 \sqrt{35}}{11}\right)`
+     - :math:`\frac{24 \sqrt{35}}{143}\; (Q_a = \frac{20160}{20449})`
 
 .. signature:: center
 
    | **Trilinears:** :math:`a : b : c`
    | **Barycentrics:** :math:`a^{2} : b^{2} : c^{2}`
    | **Tripolars:** :math:`b c \sqrt{2(b^{2} + c^{2}) - a^{2}} : :`
-   | **Search Value (6, 9, 13):** :math:`0.992908495066`
+   | **Search Value (6, 9, 13):** :math:`\frac{24 \sqrt{35}}{143} \approx 0.992908495066`
 
 .. collapse:: Alternate Coordinates
    :badge: 7 forms
@@ -57,22 +111,46 @@ X_6
    * :ref:`X_6 <X_6>` = :math:`(3 + 5 \sqrt{3} \tan(\omega ))` :ref:`X_17 <X_17>` + :math:`(3 - 5 \sqrt{3} \tan(\omega ))` :ref:`X_18 <X_18>`
    * (The above four :term:`combos <combo>` for :ref:`X_6 <X_6>` found by :person:`Peter Moses <peter-moses>`, November, 2011)
 
+Incident Central Lines
+----------------------
+
+.. figure:: 03_central_lines.svg
+   :alt: X_6 — Incident Central Lines
+   :align: center
+
+   **Principal Central Lines Through X_6** on Heronian :math:`(15, 13, 14)`.
+
+* **Incenter–Symmedian Line** :g:`{1, 6, 9} <{ 1, 9 }>` — collinear axis through :g:`X_1 <X_1>` (:ref:`Incenter <X_1>`, :math:`\left(6,\; 4\right)`), :g:`X_6 <X_6>`, :g:`X_9 <X_9>` (:ref:`Mittenpunkt <X_9>`, :math:`\left(\frac{973}{146},\; \frac{294}{73}\right)`), with exact Cartesian equation :math:`4 x - 97 y + 364 = 0` (spread :math:`\frac{16}{9425}` relative to :g:`AB <[ A B ]>`).
+* **Brocard Axis** :g:`{3, 6, 32} <{ 3, 32 }>` — collinear axis through :g:`X_3 <X_3>` (:ref:`Circumcenter <X_3>`, :math:`\left(7,\; \frac{33}{8}\right)`), :g:`X_6 <X_6>`, :g:`X_32 <X_32>` (:ref:`3rd POWER POINT <X_32>`, :math:`\left(\frac{295967}{58801},\; \frac{230496}{58801}\right)`), with exact Cartesian equation :math:`327 x - 3136 y + 10647 = 0` (spread :math:`\frac{106929}{9941425}` relative to :g:`AB <[ A B ]>`).
+* **Centroid–Symmedian Point Of The Anticomplementary Triangle Central Line** :g:`{2, 6, 69} <{ 2, 69 }>` — collinear axis through :g:`X_2 <X_2>` (:ref:`Centroid <X_2>`, :math:`\left(\frac{19}{3},\; 4\right)`), :g:`X_6 <X_6>`, :g:`X_69 <X_69>` (:ref:`Symmedian Point Of The Anticomplementary Triangle <X_69>`, :math:`\left(\frac{2259}{295},\; \frac{1188}{295}\right)`), with exact Cartesian equation :math:`6 x - 293 y + 1134 = 0` (spread :math:`\frac{36}{85885}` relative to :g:`AB <[ A B ]>`).
+* **Clawson Point–Orthocenter Of The Intouch Triangle Central Line** :g:`{6, 19, 65} <{ 19, 65 }>` — collinear axis through :g:`X_6 <X_6>`, :g:`X_19 <X_19>` (:ref:`Clawson Point <X_19>`, :math:`\left(\frac{497}{106},\; \frac{196}{53}\right)`), :g:`X_65 <X_65>` (:ref:`Orthocenter Of The Intouch Triangle <X_65>`, :math:`\left(\frac{358}{65},\; \frac{256}{65}\right)`), with exact Cartesian equation :math:`184 x - 627 y + 1456 = 0` (spread :math:`\frac{33856}{426985}` relative to :g:`AB <[ A B ]>`).
+
 .. container:: note-item
 
    :ref:`X_6 <X_6>` lies on the Walsmith rectangular hyperbola, the Thomson cubic.
 
-.. admonition:: Related Collection 1 Topic Guides
-   :class: tip
-
-   :doc:`T_1: Isogonal Conjugate <../../../topics/isogonal-conjugate/index>` • :doc:`T_5: Circle Inversion <../../../topics/circle-inversion/index>` • :doc:`T_8: The Brocard Axis <../../../topics/brocard-axis/index>` • :doc:`T_12: The Fuhrmann & Spieker Central Lines <../../../topics/fuhrmann-and-spieker-lines/index>` • :doc:`T_13: The Isogonic & Napoleon Central Lines <../../../topics/isogonic-and-napoleon-lines/index>` • :doc:`T_15: The Circumcircle <../../../topics/circumcircle/index>` • :doc:`T_18: The Apollonian Circles <../../../topics/apollonian-circles/index>` • :doc:`T_19: The Brocard & Orthocentroidal Circles <../../../topics/brocard-and-orthocentroidal-circles/index>` • :doc:`T_21: Orthic & Tangential Triangles <../../../topics/orthic-and-tangential-triangles/index>` • :doc:`T_23: Incentral & Excentral Triangles <../../../topics/incentral-and-excentral-triangles/index>`
-
-.. collapse:: Incident Central Lines
+.. collapse:: Full Incident Central Line Catalog
    :badge: 127 lines
    :class: line-catalog
 
    {:ref:`1 <X_1>`, :ref:`9 <X_9>`}, {:ref:`2 <X_2>`, :ref:`69 <X_69>`}, {:ref:`3 <X_3>`, :ref:`15 <X_15>`}, {:ref:`4 <X_4>`, :ref:`53 <X_53>`}, {:ref:`5 <X_5>`, :ref:`68 <X_68>`}, {:ref:`7 <X_7>`, :ref:`294 <X_294>`}, {:ref:`8 <X_8>`, :ref:`594 <X_594>`}, {:ref:`10 <X_10>`, :ref:`1377 <X_1377>`}, {:ref:`13 <X_13>`, :ref:`14 <X_14>`}, {:ref:`17 <X_17>`, :ref:`18 <X_18>`}, {:ref:`19 <X_19>`, :ref:`34 <X_34>`}, {:ref:`21 <X_21>`, :ref:`941 <X_941>`}, {:ref:`22 <X_22>`, :ref:`251 <X_251>`}, {:ref:`23 <X_23>`, :ref:`353 <X_353>`}, {:ref:`24 <X_24>`, :ref:`54 <X_54>`}, {:ref:`25 <X_25>`, :ref:`51 <X_51>`}, {:ref:`26 <X_26>`, :ref:`143 <X_143>`}, {:ref:`27 <X_27>`, :ref:`1246 <X_1246>`}, {:ref:`31 <X_31>`, :ref:`42 <X_42>`}, {:ref:`33 <X_33>`, :ref:`204 <X_204>`}, {:ref:`36 <X_36>`, :ref:`609 <X_609>`}, {:ref:`40 <X_40>`, :ref:`380 <X_380>`}, {:ref:`41 <X_41>`, :ref:`48 <X_48>`}, {:ref:`43 <X_43>`, :ref:`87 <X_87>`}, {:ref:`57 <X_57>`, :ref:`222 <X_222>`}, {:ref:`60 <X_60>`, :ref:`1169 <X_1169>`}, {:ref:`64 <X_64>`, :ref:`185 <X_185>`}, {:ref:`66 <X_66>`, :ref:`427 <X_427>`}, {:ref:`67 <X_67>`, :ref:`125 <X_125>`}, {:ref:`70 <X_70>`, :ref:`1594 <X_1594>`}, {:ref:`74 <X_74>`, :ref:`112 <X_112>`}, {:ref:`75 <X_75>`, :ref:`239 <X_239>`}, {:ref:`76 <X_76>`, :ref:`83 <X_83>`}, {:ref:`77 <X_77>`, :ref:`241 <X_241>`}, {:ref:`88 <X_88>`, :ref:`89 <X_89>`}, {:ref:`98 <X_98>`, :ref:`262 <X_262>`}, {:ref:`99 <X_99>`, :ref:`729 <X_729>`}, {:ref:`100 <X_100>`, :ref:`739 <X_739>`}, {:ref:`101 <X_101>`, :ref:`106 <X_106>`}, {:ref:`105 <X_105>`, :ref:`1002 <X_1002>`}, {:ref:`110 <X_110>`, :ref:`111 <X_111>`}, {:ref:`145 <X_145>`, :ref:`346 <X_346>`}, {:ref:`157 <X_157>`, :ref:`248 <X_248>`}, {:ref:`160 <X_160>`, :ref:`237 <X_237>`}, {:ref:`162 <X_162>`, :ref:`1013 <X_1013>`}, {:ref:`169 <X_169>`, :ref:`942 <X_942>`}, {:ref:`181 <X_181>`, :ref:`197 <X_197>`}, {:ref:`190 <X_190>`, :ref:`192 <X_192>`}, {:ref:`194 <X_194>`, :ref:`384 <X_384>`}, {:ref:`210 <X_210>`, :ref:`612 <X_612>`}, {:ref:`226 <X_226>`, :ref:`1751 <X_1751>`}, {:ref:`256 <X_256>`, :ref:`1580 <X_1580>`}, {:ref:`264 <X_264>`, :ref:`287 <X_287>`}, {:ref:`274 <X_274>`, :ref:`1218 <X_1218>`}, {:ref:`279 <X_279>`, :ref:`1170 <X_1170>`}, {:ref:`281 <X_281>`, :ref:`1146 <X_1146>`}, {:ref:`282 <X_282>`, :ref:`1256 <X_1256>`}, {:ref:`291 <X_291>`, :ref:`985 <X_985>`}, {:ref:`292 <X_292>`, :ref:`869 <X_869>`}, {:ref:`297 <X_297>`, :ref:`317 <X_317>`}, {:ref:`305 <X_305>`, :ref:`1241 <X_1241>`}, {:ref:`314 <X_314>`, :ref:`981 <X_981>`}, {:ref:`330 <X_330>`, :ref:`1258 <X_1258>`}, {:ref:`344 <X_344>`, :ref:`1332 <X_1332>`}, {:ref:`354 <X_354>`, :ref:`374 <X_374>`}, {:ref:`442 <X_442>`, :ref:`1714 <X_1714>`}, {:ref:`493 <X_493>`, :ref:`1583 <X_1583>`}, {:ref:`494 <X_494>`, :ref:`1584 <X_1584>`}, {:ref:`513 <X_513>`, :ref:`1024 <X_1024>`}, {:ref:`517 <X_517>`, :ref:`998 <X_998>`}, {:ref:`519 <X_519>`, :ref:`996 <X_996>`}, {:ref:`523 <X_523>`, :ref:`879 <X_879>`}, {:ref:`560 <X_560>`, :ref:`1631 <X_1631>`}, {:ref:`561 <X_561>`, :ref:`720 <X_720>`}, {:ref:`588 <X_588>`, :ref:`1599 <X_1599>`}, {:ref:`589 <X_589>`, :ref:`1600 <X_1600>`}, {:ref:`593 <X_593>`, :ref:`1171 <X_1171>`}, {:ref:`595 <X_595>`, :ref:`1126 <X_1126>`}, {:ref:`598 <X_598>`, :ref:`671 <X_671>`}, {:ref:`603 <X_603>`, :ref:`1035 <X_1035>`}, {:ref:`644 <X_644>`, :ref:`1120 <X_1120>`}, {:ref:`657 <X_657>`, :ref:`1459 <X_1459>`}, {:ref:`662 <X_662>`, :ref:`757 <X_757>`}, {:ref:`688 <X_688>`, :ref:`882 <X_882>`}, {:ref:`689 <X_689>`, :ref:`703 <X_703>`}, {:ref:`691 <X_691>`, :ref:`843 <X_843>`}, {:ref:`692 <X_692>`, :ref:`1438 <X_1438>`}, {:ref:`694 <X_694>`, :ref:`1084 <X_1084>`}, {:ref:`706 <X_706>`, :ref:`1502 <X_1502>`}, {:ref:`717 <X_717>`, :ref:`789 <X_789>`}, {:ref:`750 <X_750>`, :ref:`899 <X_899>`}, {:ref:`753 <X_753>`, :ref:`825 <X_825>`}, {:ref:`755 <X_755>`, :ref:`827 <X_827>`}, {:ref:`840 <X_840>`, :ref:`919 <X_919>`}, {:ref:`846 <X_846>`, :ref:`1051 <X_1051>`}, {:ref:`893 <X_893>`, :ref:`1403 <X_1403>`}, {:ref:`909 <X_909>`, :ref:`1415 <X_1415>`}, {:ref:`911 <X_911>`, :ref:`1461 <X_1461>`}, {:ref:`939 <X_939>`, :ref:`1802 <X_1802>`}, {:ref:`943 <X_943>`, :ref:`1612 <X_1612>`}, {:ref:`947 <X_947>`, :ref:`1622 <X_1622>`}, {:ref:`959 <X_959>`, :ref:`961 <X_961>`}, {:ref:`963 <X_963>`, :ref:`1208 <X_1208>`}, {:ref:`967 <X_967>`, :ref:`1790 <X_1790>`}, {:ref:`971 <X_971>`, :ref:`990 <X_990>`}, {:ref:`986 <X_986>`, :ref:`1046 <X_1046>`}, {:ref:`1073 <X_1073>`, :ref:`3343 <X_3343>`}, {:ref:`1096 <X_1096>`, :ref:`1859 <X_1859>`}, {:ref:`1112 <X_1112>`, :ref:`1177 <X_1177>`}, {:ref:`1131 <X_1131>`, :ref:`1132 <X_1132>`}, {:ref:`1139 <X_1139>`, :ref:`1140 <X_1140>`}, {:ref:`1166 <X_1166>`, :ref:`1601 <X_1601>`}, {:ref:`1173 <X_1173>`, :ref:`1614 <X_1614>`}, {:ref:`1174 <X_1174>`, :ref:`1617 <X_1617>`}, {:ref:`1195 <X_1195>`, :ref:`1399 <X_1399>`}, {:ref:`1201 <X_1201>`, :ref:`1696 <X_1696>`}, {:ref:`1214 <X_1214>`, :ref:`1708 <X_1708>`}, {:ref:`1327 <X_1327>`, :ref:`1328 <X_1328>`}, {:ref:`1362 <X_1362>`, :ref:`1416 <X_1416>`}, {:ref:`1398 <X_1398>`, :ref:`1425 <X_1425>`}, {:ref:`1423 <X_1423>`, :ref:`1429 <X_1429>`}, {:ref:`1718 <X_1718>`, :ref:`1781 <X_1781>`}, {:ref:`1826 <X_1826>`, :ref:`1837 <X_1837>`}, {:ref:`1836 <X_1836>`, :ref:`1839 <X_1839>`}, {:ref:`1854 <X_1854>`, :ref:`1858 <X_1858>`}, {:ref:`3342 <X_3342>`, :ref:`3351 <X_3351>`}, {:ref:`3344 <X_3344>`, :ref:`3350 <X_3350>`}
 
-.. collapse:: Functional Relations
+Functional Relations & Conjugates
+---------------------------------
+
+.. figure:: 04_relations.svg
+   :alt: X_6 — Functional Relations and Conjugates
+   :align: center
+
+   **Conjugate & Homothetic Partners of X_6** on Heronian :math:`(15, 13, 14)`.
+
+* **Isogonal Conjugate:** :g:`X_2 <X_2>` (:ref:`Centroid <X_2>`, homogeneous barycentrics :math:`1 : 1 : 1`) at :math:`\left(\frac{19}{3},\; 4\right)`, joined along :g:`{2, 6} <{ 2, 6 }>` (:term:`isogonal conjugate <isogonal-conjugate>` via :math:`a^2 vw : b^2 wu : c^2 uv`).
+* **Isotomic Conjugate:** :g:`X_76 <X_76>` (:ref:`3rd BROCARD POINT <X_76>`, homogeneous barycentrics :math:`33124 : 44100 : 38025`) at :math:`\left(\frac{807525}{115249},\; \frac{456300}{115249}\right)`, joined along :g:`{6, 76} <{ 6, 76 }>` (:term:`isotomic conjugate <isotomic-conjugate>` via :math:`vw : wu : uv`).
+* **Complement:** :g:`X_141 <X_141>` (:ref:`Complement Of Symmedian Point <X_141>`) at :math:`\left(\frac{1966}{295},\; \frac{1182}{295}\right)`, joined along :g:`{6, 141} <{ 6, 141 }>` — :term:`complement <complement>` of :g:`X_6 <X_6>` dilated from :g:`X_2 <X_2>` by factor :math:`-\frac{1}{2}`.
+* **Anticomplement:** :g:`X_69 <X_69>` (:ref:`Symmedian Point Of The Anticomplementary Triangle <X_69>`) at :math:`\left(\frac{2259}{295},\; \frac{1188}{295}\right)`, joined along :g:`{6, 69} <{ 6, 69 }>` — :term:`anticomplement <anticomplement>` of :g:`X_6 <X_6>` dilated from :g:`X_2 <X_2>` by factor :math:`-2`.
+* **Circumcircle Inverse:** Inversion in :g:`circumcircle <circumcircle>` centered at :g:`X_3 <X_3>` = :math:`\left(7, \frac{33}{8}\right)` (:math:`Q_R = \frac{4225}{64}`) maps :g:`X_6 <X_6>` along :g:`{3, 6} <{ 3, 6 }>` (:math:`Q(X_6, X_3) = \frac{397657}{222784}`, scale :math:`Q_R / Q = \frac{87025}{2353}`) to :ref:`X_187 <X_187>` (*Inverse-In-Circumcircle Of X*) at :math:`\left(- \frac{99169}{2353},\; - \frac{2352}{2353}\right)`.
+
+.. collapse:: Full Functional Relations Catalog
    :badge: 134 relations
 
    * :ref:`X_6 <X_6>` = midpoint of X_i and X_j for these (i,j): (:ref:`32 <X_32>`, 5028), (:ref:`39 <X_39>`, 5052), (:ref:`69 <X_69>`, :ref:`193 <X_193>`), (:ref:`125 <X_125>`, 5095), (:ref:`187 <X_187>`, 5107), (:ref:`1689 <X_1689>`, :ref:`1690 <X_1690>`)
@@ -208,7 +286,23 @@ X_6
    * :ref:`X_6 <X_6>` = antipode of X_32113 in Walsmith rectangular hyperbola
    * :ref:`X_6 <X_6>` = orthocenter of :ref:`X_74 <X_74>`\ \ :ref:`X_110 <X_110>`\ \ :ref:`X_3569 <X_3569>`
    * :ref:`X_6 <X_6>` = orthocenter of :ref:`X_113 <X_113>`\ \ :ref:`X_125 <X_125>`\ \ :ref:`X_3569 <X_3569>`
-   * :ref:`X_6 <X_6>` = :g:`QA <[ Q A ]>`-P23 (Inscribed Square Axes Crosspoint) of quadrangle :g:`ABC << A B C >>`\ :ref:`X_2 <X_2>`; see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/51-qa-p23.html
+   * :ref:`X_6 <X_6>` = ``QA``-P23 (Inscribed Square Axes Crosspoint) of quadrangle :g:`ABC << A B C >>`\ :ref:`X_2 <X_2>`; see http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/51-qa-p23.html
+
+Four-Triangle Symbolic Invariance
+---------------------------------
+
+.. figure:: 05_four_triangles.svg
+   :alt: X_6 — Invariance Across Four Canonical Symbolic Reference Triangles
+   :align: center
+
+   **Four-Triangle Invariance of X_6** across :g:`Heronian (15, 13, 14) <panel-heronian>`, :g:`Right (3, 4, 5) <panel-right>`, :g:`Kepler (1, √φ, φ) <panel-kepler>`, and :g:`Kimberling (6, 9, 13) <panel-kimberling>`.
+
+Across the four canonical algebraic number fields — :g:`Heronian (15, 13, 14) <heronian-X_6>` over :math:`\mathbb{Q}` (:math:`X_6 = \left(\frac{1673}{295},\; \frac{1176}{295}\right)`), :g:`Right (3, 4, 5) <right-X_6>` over :math:`\mathbb{Q}` (:math:`X_6 = \left(\frac{16}{5},\; \frac{6}{5}\right)`), :g:`Kepler (1, √φ, φ) <kepler-X_6>` over :math:`\mathbb{Q}(\sqrt{\phi})` (:math:`X_6 = \left(1,\; \frac{\sqrt{\phi} \left(\phi - 1\right)}{2}\right)`), and :g:`Kimberling (6, 9, 13) <kimberling-X_6>` over :math:`\mathbb{Q}(\sqrt{35})` (:math:`X_6 = \left(\frac{94}{11},\; \frac{4 \sqrt{35}}{11}\right)`) — **X_6** remains strictly interior (:math:`\Delta_a, \Delta_b, \Delta_c > 0`) across all four acute, Pythagorean right, golden right, and obtuse scalene triangles, preserving its exact homogeneous law :math:`u : v : w` without floating-point approximation.
+
+.. admonition:: Related Collection 1 Topic Guides
+   :class: tip
+
+   :doc:`T_1: Isogonal Conjugate <../../../topics/isogonal-conjugate/index>` • :doc:`T_5: Circle Inversion <../../../topics/circle-inversion/index>` • :doc:`T_8: The Brocard Axis <../../../topics/brocard-axis/index>` • :doc:`T_12: The Fuhrmann & Spieker Central Lines <../../../topics/fuhrmann-and-spieker-lines/index>` • :doc:`T_13: The Isogonic & Napoleon Central Lines <../../../topics/isogonic-and-napoleon-lines/index>` • :doc:`T_15: The Circumcircle <../../../topics/circumcircle/index>` • :doc:`T_18: The Apollonian Circles <../../../topics/apollonian-circles/index>` • :doc:`T_19: The Brocard & Orthocentroidal Circles <../../../topics/brocard-and-orthocentroidal-circles/index>` • :doc:`T_21: Orthic & Tangential Triangles <../../../topics/orthic-and-tangential-triangles/index>` • :doc:`T_23: Incentral & Excentral Triangles <../../../topics/incentral-and-excentral-triangles/index>`
 
 Notes
 -----
@@ -223,11 +317,11 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the pedal triangle of an arbitrary point :g:`X <X>`, and let S(X) be the vector sum :g:`XA' <[ X A' ]>` + :g:`XB' <[ X B' ]>` + :g:`XC' <[ X C' ]>`. Then
+   Let ``A'B'C'`` be the pedal triangle of an arbitrary point ``X``, and let S(X) be the vector sum ``XA'`` + ``XB'`` + ``XC'``. Then
 
 .. container:: note-item
 
-   S(X) = (0 vector) if and only if :g:`X <X>` = :ref:`X_6 <X_6>`.
+   S(X) = (0 vector) if and only if ``X`` = :ref:`X_6 <X_6>`.
 
 .. container:: note-item
 
@@ -247,19 +341,19 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A' <A'>` be the center of the conic through the contact points of the incircle and the :g:`A <A>`-excircle with the sidelines of :g:`ABC << A B C >>`. Define :g:`B' <B'>` and :g:`C' <C'>` cyclically. Let :g:`A″ <A″>` be the center of the conic through the contact points of the B- and C- excircles with the sidelines of :g:`ABC << A B C >>`. Define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The triangles :g:`A'B'C' << A' B' C' >>` and :g:`A″B″C″ << A″ B″ C″ >>` are perspective at :ref:`X_6 <X_6>`. See also :ref:`X_25 <X_25>`, :ref:`X_218 <X_218>`, :ref:`X_222 <X_222>`, :ref:`X_940 <X_940>`, :ref:`X_1743 <X_1743>`. (Randy Hutson, July 23, 2015)
+   Let ``A'`` be the center of the conic through the contact points of the incircle and the :g:`A <A>`-excircle with the sidelines of :g:`ABC << A B C >>`. Define ``B'`` and ``C'`` cyclically. Let ``A″`` be the center of the conic through the contact points of the B- and C- excircles with the sidelines of :g:`ABC << A B C >>`. Define ``B″`` and ``C″`` cyclically. The triangles ``A'B'C'`` and ``A″B″C″`` are perspective at :ref:`X_6 <X_6>`. See also :ref:`X_25 <X_25>`, :ref:`X_218 <X_218>`, :ref:`X_222 <X_222>`, :ref:`X_940 <X_940>`, :ref:`X_1743 <X_1743>`. (Randy Hutson, July 23, 2015)
 
 .. container:: note-item
 
-   The tangents at :g:`A <A>`, :g:`B <B>`, :g:`C <C>` to the Thomson cubic K002 concur in :ref:`X_6 <X_6>`. Let :g:`H_{a} <H_a>` be the foot of the :g:`A <A>`-altitude. Let :g:`B_{a} <B_a>`, :g:`C_{a} <C_a>` be the feet of perpendiculars from :g:`H_{a} <H_a>` to :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, resp. Let :g:`A' <A'>` be the orthocenter of :g:`H_{a}B_{a}C_{a} << H_a B_a C_a >>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically. The lines :g:`AA' <[ A A' ]>`, :g:`BB' <[ B B' ]>`, :g:`CC' <[ C C' ]>` concur in :ref:`X_6 <X_6>`. (Randy Hutson, November 18, 2015)
+   The tangents at :g:`A <A>`, :g:`B <B>`, :g:`C <C>` to the Thomson cubic K002 concur in :ref:`X_6 <X_6>`. Let ``H_a`` be the foot of the :g:`A <A>`-altitude. Let ``B_a``, ``C_a`` be the feet of perpendiculars from ``H_a`` to :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`, resp. Let ``A'`` be the orthocenter of ``H_aB_aC_a``, and define ``B'`` and ``C'`` cyclically. The lines ``AA'``, ``BB'``, ``CC'`` concur in :ref:`X_6 <X_6>`. (Randy Hutson, November 18, 2015)
 
 .. container:: note-item
 
-   Let :g:`J_{a} <J_a>`, :g:`J_{b} <J_b>`, :g:`J_{c} <J_c>` be the excenters and I the incenter of :g:`ABC << A B C >>`. Let :g:`K_{a} <K_a>` be the symmedian point of JbJcI, and define :g:`K_{b} <K_b>` and :g:`K_{c} <K_c>` cyclically. Then :g:`K_{a}K_{b}K_{c} << K_a K_b K_c >>` is perspective to :g:`J_{a}J_{b}J_{c} << J_a J_b J_c >>` at :ref:`X_6 <X_6>`. (Randy Hutson, February 10, 2016)
+   Let ``J_a``, ``J_b``, ``J_c`` be the excenters and I the incenter of :g:`ABC << A B C >>`. Let ``K_a`` be the symmedian point of JbJcI, and define ``K_b`` and ``K_c`` cyclically. Then ``K_aK_bK_c`` is perspective to ``J_aJ_bJ_c`` at :ref:`X_6 <X_6>`. (Randy Hutson, February 10, 2016)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the triangle described in :cite:`ADGEOM #2697 <adgeom>` (8/26/2015, Tran Quang Hung); then :ref:`X_6 <X_6>` = X_6467-of-:g:`A'B'C' << A' B' C' >>`. (Randy Hutson, June 27, 2018)
+   Let ``A'B'C'`` be the triangle described in :cite:`ADGEOM #2697 <adgeom>` (8/26/2015, Tran Quang Hung); then :ref:`X_6 <X_6>` = X_6467-of-``A'B'C'``. (Randy Hutson, June 27, 2018)
 
 .. container:: note-item
 
@@ -267,11 +361,11 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the tangential triangle of the Jerabek hyperbola. Let :g:`A″ <A″>` be the pole wrt circumcircle of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines A'″, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X_6 <X_6>`. (Randy Hutson, November 30, 2018)
+   Let ``A'B'C'`` be the tangential triangle of the Jerabek hyperbola. Let ``A″`` be the pole wrt circumcircle of line ``B'C'``, and define ``B″``, ``C″`` cyclically. The lines A'″, ``B'B″``, ``C'C″`` concur in :ref:`X_6 <X_6>`. (Randy Hutson, November 30, 2018)
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be the half-altitude (midheight) triangle. Let :g:`L_{A} <L_A>` be the line through :g:`A <A>` parallel to :g:`B'C' <[ B' C' ]>`, and define :g:`L_{B} <L_B>` and :g:`L_{C} <L_C>` cyclically. Let :g:`A″ <A″>` = :g:`L_{B} <L_B>`\ ∩\ :g:`L_{C} <L_C>`, and define :g:`B″ <B″>`, :g:`C″ <C″>` cyclically. The lines A'″, :g:`B'B″ <[ B' B″ ]>`, :g:`C'C″ <[ C' C″ ]>` concur in :ref:`X_6 <X_6>`. (Randy Hutson, November 30, 2018)
+   Let ``A'B'C'`` be the half-altitude (midheight) triangle. Let ``L_A`` be the line through :g:`A <A>` parallel to ``B'C'``, and define ``L_B`` and ``L_C`` cyclically. Let ``A″`` = ``L_B``\ ∩\ ``L_C``, and define ``B″``, ``C″`` cyclically. The lines A'″, ``B'B″``, ``C'C″`` concur in :ref:`X_6 <X_6>`. (Randy Hutson, November 30, 2018)
 
 .. container:: note-item
 
@@ -279,11 +373,11 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`A'B'C' << A' B' C' >>` be any one of {Lucas(t) :term:`central triangle <central-triangle>`, Lucas(t) tangents triangle, Lucas(t) inner triangle} (for arbitrary t). Let :g:`A″ <A″>` be the trilinear pole of line :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically. The lines :g:`AA″ <[ A A″ ]>`, :g:`BB″ <[ B B″ ]>`, :g:`CC″ <[ C C″ ]>` concur in :ref:`X_6 <X_6>`. (Randy Hutson, July 11, 2019)
+   Let ``A'B'C'`` be any one of {Lucas(t) :term:`central triangle <central-triangle>`, Lucas(t) tangents triangle, Lucas(t) inner triangle} (for arbitrary t). Let ``A″`` be the trilinear pole of line ``B'C'``, and define ``B″`` and ``C″`` cyclically. The lines ``AA″``, ``BB″``, ``CC″`` concur in :ref:`X_6 <X_6>`. (Randy Hutson, July 11, 2019)
 
 .. container:: note-item
 
-   Let :g:`M_aM_bM_c << M_a M_b M_c >>` be the medial triangle, and :g:`H_aH_bH_c << H_a H_b H_c >>` the orthic triangle. Let :g:`A* <A*>` be the centroid of :g:`AM_aH_a << A M_a H_a >>`, and define :g:`B* <B*>` and :g:`C* <C*>` cyclically. :g:`A*B*C* << A* B* C* >>` is inversely similar to :g:`ABC << A B C >>`, and the lines :g:`M_aA* <[ M_a A* ]>`, :g:`M_bB* <[ M_b B* ]>`, :g:`M_cC* <[ M_c C* ]>` concur in :ref:`X_6 <X_6>`. (Randy Hutson, July 11, 2019)
+   Let ``M_aM_bM_c`` be the medial triangle, and ``H_aH_bH_c`` the orthic triangle. Let ``A*`` be the centroid of ``AM_aH_a``, and define ``B*`` and ``C*`` cyclically. ``A*B*C*`` is inversely similar to :g:`ABC << A B C >>`, and the lines ``M_aA*``, ``M_bB*``, ``M_cC*`` concur in :ref:`X_6 <X_6>`. (Randy Hutson, July 11, 2019)
 
 .. container:: note-item
 
@@ -295,33 +389,33 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`O_{A} <O_A>` be the circle centered at the :g:`A <A>`-vertex of the :term:`2nd Brocard triangle <2nd-brocard-triangle>` and passing through :g:`A <A>`; define :g:`O_{B} <O_B>` and :g:`O_{C} <O_C>` cyclically. :ref:`X_6 <X_6>` is the radical center of :g:`O_{A} <O_A>`, :g:`O_{B} <O_B>`, :g:`O_{C} <O_C>`. (Randy Hutson, August 30, 2020)
+   Let ``O_A`` be the circle centered at the :g:`A <A>`-vertex of the :term:`2nd Brocard triangle <2nd-brocard-triangle>` and passing through :g:`A <A>`; define ``O_B`` and ``O_C`` cyclically. :ref:`X_6 <X_6>` is the radical center of ``O_A``, ``O_B``, ``O_C``. (Randy Hutson, August 30, 2020)
 
 .. container:: note-item
 
    In the plane of a triangle :g:`ABC << A B C >>`, let
 
-      * :g:`O_{a} <O_a>` = circle with diameter :g:`BC <[ B C ]>`, and define :g:`O_{b} <O_b>` and :g:`O_{c} <O_c>` cyclically;
-      * :g:`A' <A'>` = apex of equilateral triangle on side :g:`BC <[ B C ]>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically;
-      * :g:`A_{b} <A_b>` = :g:`BA' <[ B A' ]>`\ ∩\ :g:`O_{a} <O_a>`, and define :g:`B_{c} <B_c>` and :g:`C_{a} <C_a>` cyclically;
-      * :g:`A_{c} <A_c>` = :g:`CA' <[ C A' ]>`\ ∩\ :g:`O_{a} <O_a>`, and define :g:`B_{a} <B_a>` and :g:`C_{b} <C_b>` cyclically;
-      * :g:`A″ <A″>`\ = :g:`B_{c}B_{a} <[ B_c B_a ]>`\ ∩\ :g:`C_{a}C_{b} <[ C_a C_b ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cyclically.
+      * ``O_a`` = circle with diameter :g:`BC <[ B C ]>`, and define ``O_b`` and ``O_c`` cyclically;
+      * ``A'`` = apex of equilateral triangle on side :g:`BC <[ B C ]>`, and define ``B'`` and ``C'`` cyclically;
+      * ``A_b`` = ``BA'``\ ∩\ ``O_a``, and define ``B_c`` and ``C_a`` cyclically;
+      * ``A_c`` = ``CA'``\ ∩\ ``O_a``, and define ``B_a`` and ``C_b`` cyclically;
+      * ``A″``\ = ``B_cB_a``\ ∩\ ``C_aC_b``, and define ``B″`` and ``C″`` cyclically.
 
-   The triangle :g:`A″B″C″ << A″ B″ C″ >>` is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X_6 <X_6>`. (:person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, April 19, 2021)
+   The triangle ``A″B″C″`` is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X_6 <X_6>`. (:person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, April 19, 2021)
 
 .. container:: note-item
 
-   Let :g:`P <P>` and :g:`Q <Q>` be distinct points in a plane, and let :g:`T <T>` be a triangle rigidly rotating about P. Let :g:`X <X>` be a triangle center, and let
+   Let ``P`` and ``Q`` be distinct points in a plane, and let ``T`` be a triangle rigidly rotating about P. Let ``X`` be a triangle center, and let
 
-      * :g:`X_{T} <X_T>` = X-of-T;
-      * :g:`O <O>` = a circle with center :g:`Q' <Q'>`;
-      * {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`} = vertices of :g:`T <T>`;
-      * :g:`A' <A'>` = inverse of :g:`A <A>` in :g:`O <O>`, and define :g:`B' <B'>` and :g:`C' <C'>` cyclically;
-      * :g:`T' <T'>` = :g:`A'B'C' << A' B' C' >>`;
-      * :g:`X'_{T} <X'_T>` = X-of-:g:`T' <T'>`.
-      * (1) If :g:`X <X>` = X_k for k = 3, 6, 15, 16, 61, 62, then the locus of :g:`X'_{T} <X'_T>` is a conic.
-      * (2) If :g:`X <X>` = :ref:`X_15 <X_15>` or :g:`X <X>` = :ref:`X_16 <X_16>`, the conic is a circle.
-      * (3) If P is one of the points X_k, for k = 3, 6, 15, 16, 61, 62, then the locus of :g:`X'_{T} <X'_T>` is a single point, and the points :g:`O <O>`, :g:`X_{T} <X_T>`, :g:`X'_{T} <X'_T>` are collinear. For example, if :g:`P <P>` = :ref:`X_6 <X_6>`, then the locus of :ref:`X_6 <X_6>`-of-:g:`T' <T'>` is collinear with :g:`O <O>` and :ref:`X_6 <X_6>`-of-T.
+      * ``X_T`` = X-of-T;
+      * ``O`` = a circle with center ``Q'``;
+      * {:g:`A <A>`, :g:`B <B>`, :g:`C <C>`} = vertices of ``T``;
+      * ``A'`` = inverse of :g:`A <A>` in ``O``, and define ``B'`` and ``C'`` cyclically;
+      * ``T'`` = ``A'B'C'``;
+      * ``X'_T`` = X-of-``T'``.
+      * (1) If ``X`` = X_k for k = 3, 6, 15, 16, 61, 62, then the locus of ``X'_T`` is a conic.
+      * (2) If ``X`` = :ref:`X_15 <X_15>` or ``X`` = :ref:`X_16 <X_16>`, the conic is a circle.
+      * (3) If P is one of the points X_k, for k = 3, 6, 15, 16, 61, 62, then the locus of ``X'_T`` is a single point, and the points ``O``, ``X_T``, ``X'_T`` are collinear. For example, if ``P`` = :ref:`X_6 <X_6>`, then the locus of :ref:`X_6 <X_6>`-of-``T'`` is collinear with ``O`` and :ref:`X_6 <X_6>`-of-T.
       * Videos:
       * `Inversive Image of Pivoting Triangle, Part II: Conic Loci of X(3) and X(6) of Inversive <https://youtu.be/qVCjQfXkK_k>`__ (:person:`Dan Reznik <dan-reznik>`, August 15, 2021)
 
@@ -331,7 +425,7 @@ Notes
 
 .. container:: note-item
 
-   Let :g:`P <P>` be a point in the plane of :g:`T <T>` = :g:`ABC << A B C >>`, and let :g:`T' <T'>`\ =\ :g:`A'B'C' << A' B' C' >>` be the :term:`cevian triangle <cevian-triangle>` of P. Let :g:`A″ <A″>` = :g:`BC <[ B C ]>`\ ∩\ :g:`B'C' <[ B' C' ]>`, and define :g:`B″ <B″>` and :g:`C″ <C″>` cycllically. By Desargues' theorem, the points :g:`A″ <A″>`,\ :g:`B″ <B″>`,\ :g:`C″ <C″>` lie on the perspectrix of the ktriangles T and :g:`T' <T'>`. Let :g:`K_{a} <K_a>` be the circle that passes through the points :g:`A <A>`,\ :g:`A' <A'>`,\ :g:`A″ <A″>`, and define :g:`K_{b} <K_b>` and :g:`K_{c} <K_c>` cyclically. As is well known, if :g:`P <P>`\ =\ :ref:`X_1 <X_1>`, then the circles :g:`K_{a} <K_a>`,\ :g:`K_{b} <K_b>`,\ :g:`K_{c} <K_c>` meet in :ref:`X_15 <X_15>` and :ref:`X_16 <X_16>`, and their radical axis is the Brocard axis. We offer the following new observation. The locus of P such that :g:`K_{a} <K_a>`,\ :g:`K_{b} <K_b>`,\ :g:`K_{c} <K_c>` intersect in exactly two points, :g:`Z_{1} <Z_1>` and :g:`Z_{2} <Z_2>`, is the curve Q066, which is the Stammler quartic (the isogonal image of the Stammler hyperbola). The curve Q066 passes through the excenters and the triangle centers X_k for k=1, 2, 4, 254, and others, listed in `Q066, Stammler quartic) <https://bernard-gibert.pagesperso-orange.fr/curves/q066.html>`__ . Moreover, the line :g:`Z_{1}Z_{2} <[ Z_1 Z_2 ]>` passes through the point :ref:`X_6 <X_6>`-of-T. See the figures in `Q066 and line Z1Z2 <https://user-images.githubusercontent.com/16231062/218744084-4e759f54-8bd0-452c-b575-2ea85289c792.png>`__ . (:person:`Bernard Gibert <bernard-gibert>` and Dan Reznik, February 12, 2023)
+   Let ``P`` be a point in the plane of ``T`` = :g:`ABC << A B C >>`, and let ``T'``\ =\ ``A'B'C'`` be the :term:`cevian triangle <cevian-triangle>` of P. Let ``A″`` = :g:`BC <[ B C ]>`\ ∩\ ``B'C'``, and define ``B″`` and ``C″`` cycllically. By Desargues' theorem, the points ``A″``,\ ``B″``,\ ``C″`` lie on the perspectrix of the ktriangles T and ``T'``. Let ``K_a`` be the circle that passes through the points :g:`A <A>`,\ ``A'``,\ ``A″``, and define ``K_b`` and ``K_c`` cyclically. As is well known, if ``P``\ =\ :ref:`X_1 <X_1>`, then the circles ``K_a``,\ ``K_b``,\ ``K_c`` meet in :ref:`X_15 <X_15>` and :ref:`X_16 <X_16>`, and their radical axis is the Brocard axis. We offer the following new observation. The locus of P such that ``K_a``,\ ``K_b``,\ ``K_c`` intersect in exactly two points, ``Z_1`` and ``Z_2``, is the curve Q066, which is the Stammler quartic (the isogonal image of the Stammler hyperbola). The curve Q066 passes through the excenters and the triangle centers X_k for k=1, 2, 4, 254, and others, listed in `Q066, Stammler quartic) <https://bernard-gibert.pagesperso-orange.fr/curves/q066.html>`__ . Moreover, the line ``Z_1Z_2`` passes through the point :ref:`X_6 <X_6>`-of-T. See the figures in `Q066 and line Z1Z2 <https://user-images.githubusercontent.com/16231062/218744084-4e759f54-8bd0-452c-b575-2ea85289c792.png>`__ . (:person:`Bernard Gibert <bernard-gibert>` and Dan Reznik, February 12, 2023)
 
 .. container:: note-item
 

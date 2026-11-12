@@ -14,7 +14,7 @@ X_7
    :alt: X_7 — GERGONNE POINT
    :align: center
 
-   **X_7** (*GERGONNE POINT*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_7** (*GERGONNE POINT*) constructed at :g:`X_7 <X_7>` = :math:`\left(\frac{414}{73},\; \frac{288}{73}\right)` in exact rational coordinates on the Heronian reference triangle :math:`(a, b, c) = (15, 13, 14)` over :math:`\mathbb{Q}` with vertices :g:`A <A>` = :math:`(0, 0)`, :g:`B <B>` = :math:`(14, 0)`, :g:`C <C>` = :math:`(5, 12)`.
 
 .. literalinclude:: model.py
    :language: python

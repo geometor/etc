@@ -24,7 +24,9 @@ Attributes
 
    geometor.etc.triangles.PHI
    geometor.etc.triangles.SQRT_PHI
+   geometor.etc.triangles.SQRT_3
    geometor.etc.triangles.SQRT_35
+   geometor.etc.triangles.SQRT_105
    geometor.etc.triangles.HERONIAN_TRIANGLE
    geometor.etc.triangles.RIGHT_TRIANGLE
    geometor.etc.triangles.KEPLER_TRIANGLE
@@ -59,7 +61,13 @@ Module Contents
 .. py:data:: SQRT_PHI
    :type:  sympy.Expr
 
+.. py:data:: SQRT_3
+   :type:  sympy.Expr
+
 .. py:data:: SQRT_35
+   :type:  sympy.Expr
+
+.. py:data:: SQRT_105
    :type:  sympy.Expr
 
 .. py:class:: SymbolicTriangle
@@ -253,6 +261,24 @@ Module Contents
    .. py:method:: kimberling_search_value(u: sympy.Expr, v: sympy.Expr, w: sympy.Expr) -> sympy.Expr
 
       Return exact directed distance :math:`h_a = 2\Delta u / (a(u + v + w))` to :math:`BC`.
+
+
+
+   .. py:method:: has_sqrt3_extension(exprs: collections.abc.Iterable[sympy.Expr]) -> bool
+
+      Return whether ``exprs`` adjoin :math:`\sqrt{3}` over this triangle's base field.
+
+
+
+   .. py:method:: coordinate_field_latex(exprs: collections.abc.Iterable[sympy.Expr] = ()) -> str
+
+      Return exact LaTeX notation for the minimal number field of ``exprs`` on this triangle.
+
+
+
+   .. py:method:: coordinate_field_pretty(exprs: collections.abc.Iterable[sympy.Expr] = ()) -> str
+
+      Return compact Unicode notation for the minimal number field of ``exprs`` on this triangle.
 
 
 

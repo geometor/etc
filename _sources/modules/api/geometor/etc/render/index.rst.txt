@@ -1343,12 +1343,12 @@ Module Contents
    Convert a `geometor.model.Model` into a chronological list of browser-ready element dicts.
 
 
-.. py:function:: render_model_svg(model: geometor.model.Model, svg_width: int = 800, svg_height: int = 600, show_labels: bool = True, subtitle: str = '') -> str
+.. py:function:: render_model_svg(model: geometor.model.Model, svg_width: int = 800, svg_height: int = 600, show_labels: bool = True, subtitle: str = '', show_lines: bool = False) -> str
 
    Render a `geometor.model.Model` to an interactive Explorer-compatible SVG string.
 
 
-.. py:function:: write_center_svg(model: geometor.model.Model, output_path: str | pathlib.Path, subtitle: str = '') -> pathlib.Path
+.. py:function:: write_center_svg(model: geometor.model.Model, output_path: str | pathlib.Path, subtitle: str = '', show_lines: bool = False) -> pathlib.Path
 
    Render and write a center's `Model` SVG to `output_path`.
 

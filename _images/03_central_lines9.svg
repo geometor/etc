@@ -1,0 +1,1357 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg class="geometor-etc-drawing show-lines" xmlns="http://www.w3.org/2000/svg" viewBox="-2.760000 -13.320000 19.520000 14.640000" data-initial-viewbox="-2.760000 -13.320000 19.520000 14.640000" data-triangle="heronian" data-field="ℚ" data-tri-span="15.000000" data-target-r-px="10.5" preserveAspectRatio="xMidYMid meet">
+  <style>
+:root {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --accent-color: #161616;
+    --border-color: #333;
+    --select-color: #0ff;
+}
+
+svg.geometor-etc-drawing {
+    width: 100%;
+    height: auto;
+    max-height: 540px;
+    background-color: var(--accent-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    display: block;
+    user-select: none;
+    touch-action: none;
+    cursor: grab;
+}
+
+svg.geometor-etc-drawing.is-panning {
+    cursor: grabbing;
+}
+
+svg.geometor-etc-drawing.hide-labels #labels .point-label,
+svg.geometor-etc-drawing.hide-labels #labels .guide-label,
+svg.geometor-etc-drawing.hide-labels #labels .target-label,
+svg.geometor-etc-drawing.hide-labels #labels .given-label {
+    display: none;
+}
+
+svg.geometor-etc-drawing.hide-guides .guide {
+    display: none !important;
+}
+
+svg.geometor-etc-drawing:not(.show-lines) .incident {
+    display: none !important;
+}
+
+#points circle {
+    fill: var(--text-color);
+    stroke: var(--background-color);
+    stroke-width: 2.5;
+    vector-effect: non-scaling-stroke;
+    cursor: pointer;
+    transition: fill 0.12s ease, stroke 0.12s ease;
+}
+
+#points circle.given {
+    fill: #6F6;
+}
+
+#points circle.guide {
+    fill: orange;
+    stroke-dasharray: none;
+}
+
+#points circle.selected,
+#points circle.target {
+    stroke: var(--select-color);
+    fill: gold;
+    stroke-width: 3;
+}
+
+#points circle:hover,
+#points circle.hover {
+    fill: var(--select-color) !important;
+    stroke: #fff !important;
+    stroke-width: 3.5 !important;
+}
+
+#elements line,
+#elements path.line {
+    fill: none;
+    stroke: #b0bec5;
+    stroke-width: 2.2;
+    stroke-dasharray: 2, 4.5;
+    stroke-linecap: round;
+    vector-effect: non-scaling-stroke;
+    cursor: pointer;
+}
+
+#elements line.sideline,
+#elements path.line.sideline {
+    stroke: #cbd5e1;
+    stroke-width: 2.3;
+}
+
+#elements line.central_line,
+#elements path.line.central_line {
+    stroke: #0bd;
+    stroke-width: 1.85;
+    stroke-opacity: 0.85;
+}
+
+#elements line.central_line[data-color-token="orange"] { stroke: #fb923c; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="teal"] { stroke: #2dd4bf; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="blue"] { stroke: #38bdf8; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="orchid"] { stroke: #e879f9; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="pink"] { stroke: #f472b6; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="lime"] { stroke: #a3e635; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="green"] { stroke: #5ec27e; stroke-dasharray: 6, 3; }
+#elements line.central_line[data-color-token="purple"] { stroke: #a855f7; stroke-dasharray: 6, 3; }
+
+#elements line.golden,
+#elements path.line.golden,
+#elements line.euler,
+#elements path.line.euler {
+    stroke: gold;
+    stroke-width: 2.1;
+}
+
+#elements line.strut {
+    stroke: gold;
+    stroke-width: 2.8;
+    stroke-dasharray: none;
+    stroke-opacity: 0.95;
+}
+
+#elements circle {
+    fill: none;
+    stroke: #C09;
+    stroke-width: 2;
+    vector-effect: non-scaling-stroke;
+    cursor: pointer;
+}
+
+#elements circle.incircle {
+    stroke: #e040fb;
+}
+
+#elements circle.nine_point_circle {
+    stroke: #00e5ff;
+    stroke-dasharray: 6, 3;
+}
+
+#elements circle.secondary_circle {
+    stroke: #ff9100;
+    stroke-dasharray: 5, 3;
+    stroke-opacity: 0.85;
+}
+
+#elements .bisector {
+    stroke-dasharray: 2, 4;
+}
+
+#elements .guide {
+    stroke: orange;
+    stroke-dasharray: 2, 4;
+    stroke-opacity: 0.65;
+}
+
+#elements line:hover,
+#elements line.hover,
+#elements path.line:hover,
+#elements path.line.hover,
+#elements circle:hover,
+#elements circle.hover {
+    stroke: var(--select-color) !important;
+    stroke-width: 3.2 !important;
+    stroke-dasharray: none !important;
+    stroke-opacity: 1 !important;
+}
+
+#highlights .highlight-segment {
+    stroke: var(--select-color);
+    fill: none;
+    stroke-width: 6;
+    stroke-opacity: 0.45;
+    vector-effect: non-scaling-stroke;
+    marker-start: url(#marker);
+    marker-end: url(#marker);
+    pointer-events: none;
+}
+
+#graphics polyline {
+    stroke: #ffd54f;
+    fill: none;
+    stroke-width: 3.2;
+    vector-effect: non-scaling-stroke;
+    cursor: pointer;
+}
+
+#graphics polygon {
+    stroke: #36c9;
+    fill: #36c2;
+    stroke-width: 6;
+    vector-effect: non-scaling-stroke;
+    stroke-linejoin: round;
+    marker-start: url(#marker);
+    marker-mid: url(#marker);
+    marker-end: url(#marker);
+    cursor: pointer;
+}
+
+#graphics polygon.secondary {
+    stroke: rgba(144, 238, 144, 0.55);
+    fill: rgba(144, 238, 144, 0.08);
+    stroke-width: 3;
+}
+
+#graphics polygon.subarea-a {
+    stroke: rgba(255, 112, 67, 0.72);
+    fill: rgba(255, 112, 67, 0.20);
+    stroke-width: 2.4;
+    marker-start: none;
+    marker-mid: none;
+    marker-end: none;
+}
+
+#graphics polygon.subarea-b {
+    stroke: rgba(102, 187, 106, 0.72);
+    fill: rgba(102, 187, 106, 0.20);
+    stroke-width: 2.4;
+    marker-start: none;
+    marker-mid: none;
+    marker-end: none;
+}
+
+#graphics polygon.subarea-c {
+    stroke: rgba(66, 165, 245, 0.72);
+    fill: rgba(66, 165, 245, 0.20);
+    stroke-width: 2.4;
+    marker-start: none;
+    marker-mid: none;
+    marker-end: none;
+}
+
+#graphics polygon:hover,
+#graphics polygon.hover,
+#graphics polyline:hover,
+#graphics polyline.hover {
+    stroke: var(--select-color) !important;
+    stroke-opacity: 1 !important;
+}
+
+#graphics polygon.subarea-a:hover,
+#graphics polygon.subarea-a.hover {
+    fill: rgba(255, 112, 67, 0.38) !important;
+}
+
+#graphics polygon.subarea-b:hover,
+#graphics polygon.subarea-b.hover {
+    fill: rgba(102, 187, 106, 0.38) !important;
+}
+
+#graphics polygon.subarea-c:hover,
+#graphics polygon.subarea-c.hover {
+    fill: rgba(66, 165, 245, 0.38) !important;
+}
+
+#labels text {
+    fill: var(--text-color);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-weight: 600;
+    paint-order: stroke;
+    stroke: var(--accent-color);
+    stroke-width: 0.15em;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    user-select: none;
+    pointer-events: none;
+}
+
+#labels tspan {
+    paint-order: stroke;
+    stroke: var(--accent-color);
+    stroke-width: 0.15em;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+#labels text.target-label {
+    fill: gold;
+    font-weight: 700;
+}
+
+#labels text.given-label {
+    fill: #8f8;
+}
+
+#labels text.guide-label {
+    fill: #ffb74d;
+    font-weight: 600;
+}
+
+#labels text.hover-label {
+    fill: var(--select-color) !important;
+    font-weight: 700;
+}
+
+#labels text.dense-label {
+    display: none;
+}
+
+#labels text.dense-label.hover-label {
+    display: block !important;
+}
+
+.etc-svg-stage {
+    position: relative;
+    width: 100%;
+}
+
+.etc-svg-toolbar {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    gap: 4px;
+    z-index: 20;
+    opacity: 0.35;
+    transition: opacity 0.18s ease;
+}
+
+.etc-svg-stage:hover .etc-svg-toolbar,
+figure:hover .etc-svg-toolbar {
+    opacity: 0.95;
+}
+
+.etc-svg-btn {
+    background: rgba(18, 18, 18, 0.88);
+    color: #e0e0e0;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 12px;
+    line-height: 1.4;
+    cursor: pointer;
+    user-select: none;
+}
+
+.etc-svg-btn:hover,
+.etc-svg-btn.active {
+    background: rgba(0, 255, 255, 0.14);
+    color: #0ff;
+    border-color: #0ff;
+}
+
+.etc-symbolic-hud {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    max-width: min(460px, calc(100% - 20px));
+    background: rgba(14, 16, 22, 0.93);
+    border: 1px solid rgba(0, 255, 255, 0.35);
+    border-radius: 6px;
+    padding: 8px 12px;
+    color: #eaeaea;
+    font-family: "Fira Sans Condensed", system-ui, -apple-system, sans-serif;
+    font-size: 13px;
+    line-height: 1.38;
+    z-index: 24;
+    pointer-events: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.58);
+    opacity: 0;
+    transform: translateY(4px);
+    transition: opacity 0.12s ease, transform 0.12s ease;
+}
+
+.etc-symbolic-hud.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.etc-hud-head {
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 4px;
+    margin-bottom: 5px;
+}
+
+.etc-hud-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.etc-hud-id {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-weight: 700;
+    color: #0ff;
+    font-size: 13px;
+}
+
+.etc-hud-title {
+    font-weight: 600;
+    color: #f5f5f5;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.etc-hud-kind {
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #94a3b8;
+}
+
+.etc-hud-rows {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2px 10px;
+    align-items: baseline;
+}
+
+.etc-hud-key {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 11.5px;
+    color: #94a3b8;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.etc-hud-val {
+    color: #f8fafc;
+    font-size: 13.5px;
+    overflow-wrap: anywhere;
+}
+
+.etc-hud-val .katex {
+    font-size: 1.02em;
+}
+
+.etc-hud-approx {
+    margin-top: 4px;
+    padding-top: 3px;
+    border-top: 1px dashed rgba(255, 255, 255, 0.09);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 11px;
+    color: #8b9bb4;
+}
+
+.etc-math-fallback {
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: 1.06em;
+}
+
+.etc-math-frac {
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0 2px;
+    font-size: 0.88em;
+    line-height: 1.05;
+}
+
+.etc-math-num {
+    border-bottom: 1px solid rgba(248, 250, 252, 0.65);
+    padding: 0 2px 1px;
+}
+
+.etc-math-den {
+    padding: 1px 2px 0;
+}
+
+.etc-math-rad {
+    border-top: 1px solid rgba(248, 250, 252, 0.6);
+    padding: 0 2px;
+}
+
+.etc-graphics-panel,
+.etc-act-plate {
+    width: 100%;
+    background: #141414;
+    border: 1px solid #333;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.etc-graphics-panel svg.geometor-etc-drawing,
+.etc-act-plate svg.geometor-etc-drawing {
+    border: none;
+    border-radius: 0;
+    display: block;
+}
+
+svg.geometor-etc-drawing .etc-plate-poly {
+    cursor: pointer;
+    transition: fill-opacity 0.14s ease, stroke 0.14s ease;
+}
+
+svg.geometor-etc-drawing .etc-plate-poly.hover {
+    stroke: var(--select-color) !important;
+    stroke-width: 2.8px !important;
+    fill-opacity: 0.44 !important;
+}
+
+svg.geometor-etc-drawing .etc-plate-strut,
+svg.geometor-etc-drawing .etc-plate-line,
+svg.geometor-etc-drawing .etc-plate-circle,
+svg.geometor-etc-drawing .etc-plate-pt,
+svg.geometor-etc-drawing .etc-plate-panel {
+    cursor: pointer;
+}
+
+svg.geometor-etc-drawing .etc-plate-strut.hover,
+svg.geometor-etc-drawing .etc-plate-line.hover,
+svg.geometor-etc-drawing .etc-plate-circle.hover {
+    stroke: var(--select-color) !important;
+    filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.72));
+}
+
+svg.geometor-etc-drawing .etc-plate-pt.hover {
+    stroke: var(--select-color) !important;
+    stroke-width: 3.6px !important;
+    filter: drop-shadow(0 0 6px rgba(0, 255, 255, 0.85));
+}
+
+svg.geometor-etc-drawing .etc-plate-panel.hover > rect.etc-panel-border {
+    stroke: var(--select-color) !important;
+    stroke-width: 2.8px !important;
+}
+
+.etc-triangle-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2px;
+    background: #1a1a1a;
+    border-bottom: 1px solid #2e2e2e;
+    padding: 6px 10px 0 10px;
+}
+
+.etc-tab-btn {
+    background: transparent;
+    color: #999;
+    border: 1px solid transparent;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    padding: 5px 14px;
+    font-family: "Fira Sans Condensed", system-ui, -apple-system, sans-serif;
+    font-size: 13.5px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.15s ease, background 0.15s ease;
+    margin-bottom: -1px;
+}
+
+.etc-tab-btn:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.etc-tab-btn.active {
+    background: #161616;
+    color: #0ff;
+    border-color: #2e2e2e;
+    border-bottom: 1px solid #161616;
+}
+</style>
+  <defs>
+    <marker id="marker" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="3" markerHeight="3" orient="auto-start-reverse">
+      <circle cx="3" cy="3" r="3" fill="context-stroke" vector-effect="non-scaling-stroke"></circle>
+    </marker>
+  </defs>
+  <g id="graphics">
+    <polygon id="&lt; A B C &gt;" data-id="&lt; A B C &gt;" data-ref="&lt; A B C &gt;" data-name="Reference Triangle △ABC" data-area="84" class="polygon reference" data-category="graphics" points="0.000000,-0.000000 14.000000,-0.000000 5.000000,-12.000000"><title>&lt; A B C &gt;: Reference Triangle △ABC (Δ = 84)</title></polygon>
+    <polygon id="&lt; M_a M_b M_c &gt;" data-id="&lt; M_a M_b M_c &gt;" data-ref="&lt; M_a M_b M_c &gt;" data-name="Medial Triangle △M_a M_b M_c" data-area="21" class="polygon secondary" data-category="graphics" points="9.500000,-6.000000 2.500000,-6.000000 7.000000,-0.000000"><title>&lt; M_a M_b M_c &gt;: Medial Triangle △M_a M_b M_c (Δ = 21)</title></polygon>
+  </g>
+  <g id="highlights">
+    <polyline id="hl-[ A B ]" data-highlight-for="[ A B ]" class="highlight-segment" points="0.000000,-0.000000 14.000000,-0.000000" style="display: none;" />
+    <polyline id="hl-[ B C ]" data-highlight-for="[ B C ]" class="highlight-segment" points="14.000000,-0.000000 5.000000,-12.000000" style="display: none;" />
+    <polyline id="hl-[ C A ]" data-highlight-for="[ C A ]" class="highlight-segment" points="5.000000,-12.000000 0.000000,-0.000000" style="display: none;" />
+    <polyline id="hl-[ M_a X_10 ]" data-highlight-for="[ M_a X_10 ]" class="highlight-segment" points="9.500000,-6.000000 6.500000,-4.000000" style="display: none;" />
+    <polyline id="hl-[ M_b X_10 ]" data-highlight-for="[ M_b X_10 ]" class="highlight-segment" points="2.500000,-6.000000 6.500000,-4.000000" style="display: none;" />
+    <polyline id="hl-[ M_c X_10 ]" data-highlight-for="[ M_c X_10 ]" class="highlight-segment" points="7.000000,-0.000000 6.500000,-4.000000" style="display: none;" />
+    <polyline id="hl-spieker_circle" data-highlight-for="spieker_circle" class="highlight-segment" points="6.500000,-4.000000 6.500000,-6.000000" style="display: none;" />
+    <polyline id="hl-{ 1, 2 }" data-highlight-for="{ 1, 2 }" class="highlight-segment" points="6.000000,-4.000000 6.333333,-4.000000" style="display: none;" />
+    <polyline id="hl-{ 4, 9 }" data-highlight-for="{ 4, 9 }" class="highlight-segment" points="5.000000,-3.750000 6.664384,-4.027397" style="display: none;" />
+    <polyline id="hl-{ 12, 65 }" data-highlight-for="{ 12, 65 }" class="highlight-segment" points="6.000000,-3.968992 5.507692,-3.938462" style="display: none;" />
+    <polyline id="hl-{ 21, 35 }" data-highlight-for="{ 21, 35 }" class="highlight-segment" points="6.498069,-4.030888 6.496124,-4.062016" style="display: none;" />
+  </g>
+  <g id="elements">
+    <line id="[ A B ]" data-id="[ A B ]" data-ref="[ A B ]" data-name="Sideline AB (Side c)" data-eq="y = 0" data-spread="0" data-pt1="A" data-pt2="B" class="line given sideline" data-category="elements" x1="-15000.00000" y1="-0.00000" x2="15000.00000" y2="-0.00000"><title>[ A B ]: Sideline AB (Side c)</title></line>
+    <line id="[ B C ]" data-id="[ B C ]" data-ref="[ B C ]" data-name="Sideline BC (Side a)" data-eq="4x + 3y - 56 = 0" data-spread="16/25" data-pt1="B" data-pt2="C" class="line sideline" data-category="elements" x1="9014.00000" y1="12000.00000" x2="-8986.00000" y2="-12000.00000"><title>[ B C ]: Sideline BC (Side a)</title></line>
+    <line id="[ C A ]" data-id="[ C A ]" data-ref="[ C A ]" data-name="Sideline CA (Side b)" data-eq="12x - 5y = 0" data-spread="144/169" data-pt1="C" data-pt2="A" class="line sideline" data-category="elements" x1="5774.23077" y1="-13858.15385" x2="-5764.23077" y2="13834.15385"><title>[ C A ]: Sideline CA (Side b)</title></line>
+    <line id="[ M_a X_10 ]" data-id="[ M_a X_10 ]" data-ref="[ M_a X_10 ]" data-name="Medial Angle Bisector at M_a" data-color-token="gold" data-color="#e8b85a" data-eq="2x - 3y - 1 = 0" data-spread="4/13" data-pt1="M_a" data-pt2="X_10" class="line bisector" data-category="elements" x1="12490.25442" y1="-8326.50294" x2="-12471.25442" y2="8314.50294"><title>[ M_a X_10 ]: Medial Angle Bisector at M_a</title></line>
+    <line id="[ M_b X_10 ]" data-id="[ M_b X_10 ]" data-ref="[ M_b X_10 ]" data-name="Medial Angle Bisector at M_b" data-color-token="gold" data-color="#e8b85a" data-eq="2x + 4y - 29 = 0" data-spread="1/5" data-pt1="M_b" data-pt2="X_10" class="line bisector" data-category="elements" x1="-13413.90786" y1="-6714.20393" x2="13418.90786" y2="6702.20393"><title>[ M_b X_10 ]: Medial Angle Bisector at M_b</title></line>
+    <line id="[ M_c X_10 ]" data-id="[ M_c X_10 ]" data-ref="[ M_c X_10 ]" data-name="Medial Angle Bisector at M_c" data-color-token="gold" data-color="#e8b85a" data-eq="8x + y - 56 = 0" data-spread="64/65" data-pt1="M_c" data-pt2="X_10" class="line bisector" data-category="elements" x1="1867.52102" y1="14884.16815" x2="-1853.52102" y2="-14884.16815"><title>[ M_c X_10 ]: Medial Angle Bisector at M_c</title></line>
+    <circle id="spieker_circle" data-id="spieker_circle" data-ref="spieker_circle" data-name="Spieker Circle" data-color-token="orange" data-color="#fb923c" data-quadrance="4" class="circle incircle" data-category="elements" cx="6.500000" cy="-4.000000" r="2.000000" fill="none"><title>spieker_circle: Spieker Circle</title></circle>
+    <line id="{ 1, 2 }" data-id="{ 1, 2 }" data-ref="{ 1, 2 }" data-name="Nagel Line" data-color-token="orange" data-color="#fb923c" data-eq="y - 4 = 0" data-spread="0" data-pt1="X_1" data-pt2="X_2" class="line central_line incident" data-category="elements" x1="-14994.00000" y1="-4.00000" x2="15006.00000" y2="-4.00000"><title>{ 1, 2 }: Nagel Line</title></line>
+    <line id="{ 4, 9 }" data-id="{ 4, 9 }" data-ref="{ 4, 9 }" data-name="Orthocenter–Spieker Line" data-color-token="blue" data-color="#38bdf8" data-eq="2x - 12y + 35 = 0" data-spread="1/37" data-pt1="X_4" data-pt2="X_9" class="line central_line incident" data-category="elements" x1="-14790.90886" y1="2462.23481" x2="14800.90886" y2="-2469.73481"><title>{ 4, 9 }: Orthocenter–Spieker Line</title></line>
+    <line id="{ 12, 65 }" data-id="{ 12, 65 }" data-ref="{ 12, 65 }" data-name="Central Line L(12, 65)" data-color-token="teal" data-color="#2dd4bf" data-eq="8x - 129y + 464 = 0" data-spread="64/16705" data-pt1="X_12" data-pt2="X_65" class="line central_line incident" data-category="elements" x1="14977.23851" y1="-932.41789" x2="-14965.23851" y2="924.47991"><title>{ 12, 65 }: Central Line L(12, 65)</title></line>
+    <line id="{ 21, 35 }" data-id="{ 21, 35 }" data-ref="{ 21, 35 }" data-name="Central Line L(21, 35)" data-color-token="green" data-color="#4ade80" data-eq="16x + y - 108 = 0" data-spread="256/257" data-pt1="X_21" data-pt2="X_35" class="line central_line incident" data-category="elements" x1="942.17236" y1="14966.75779" x2="-929.17622" y2="-14974.81957"><title>{ 21, 35 }: Central Line L(21, 35)</title></line>
+  </g>
+  <g id="points">
+    <circle id="A" data-id="A" data-ref="A" data-name="Vertex A" data-coords="(0, 0)" data-trilinears="1 : 0 : 0" data-barycentrics="1 : 0 : 0" class="point given vertex" data-category="points" cx="0.000000" cy="-0.000000" r="0.183000"><title>A = Vertex A (0, 0)</title></circle>
+    <circle id="B" data-id="B" data-ref="B" data-name="Vertex B" data-coords="(14, 0)" data-trilinears="0 : 1 : 0" data-barycentrics="0 : 1 : 0" class="point given vertex" data-category="points" cx="14.000000" cy="-0.000000" r="0.183000"><title>B = Vertex B (14, 0)</title></circle>
+    <circle id="C" data-id="C" data-ref="C" data-name="Vertex C" data-coords="(5, 12)" data-trilinears="0 : 0 : 1" data-barycentrics="0 : 0 : 1" class="point vertex" data-category="points" cx="5.000000" cy="-12.000000" r="0.183000"><title>C = Vertex C (5, 12)</title></circle>
+    <circle id="M_a" data-id="M_a" data-ref="M_a" data-name="Midpoint M_a of BC" data-coords="(19/2, 6)" data-trilinears="0 : 14 : 13" data-barycentrics="0 : 1 : 1" class="point midpoint guide" data-category="points" cx="9.500000" cy="-6.000000" r="0.117120"><title>M_a = Midpoint M_a of BC (19/2, 6)</title></circle>
+    <circle id="M_b" data-id="M_b" data-ref="M_b" data-name="Midpoint M_b of CA" data-coords="(5/2, 6)" data-trilinears="14 : 0 : 15" data-barycentrics="1 : 0 : 1" class="point midpoint guide" data-category="points" cx="2.500000" cy="-6.000000" r="0.117120"><title>M_b = Midpoint M_b of CA (5/2, 6)</title></circle>
+    <circle id="M_c" data-id="M_c" data-ref="M_c" data-name="Midpoint M_c of AB" data-coords="(7, 0)" data-trilinears="13 : 15 : 0" data-barycentrics="1 : 1 : 0" class="point midpoint guide" data-category="points" cx="7.000000" cy="-0.000000" r="0.117120"><title>M_c = Midpoint M_c of AB (7, 0)</title></circle>
+    <circle id="T_sp" data-id="T_sp" data-ref="T_sp" data-name="Spieker Touchpoint T_sp" data-coords="(13/2, 6)" data-trilinears="26 : 40 : 65" data-barycentrics="3 : 4 : 7" class="point foot guide" data-category="points" cx="6.500000" cy="-6.000000" r="0.117120"><title>T_sp = Spieker Touchpoint T_sp (13/2, 6)</title></circle>
+    <circle id="X_1" data-id="X_1" data-ref="X_1" data-name="INCENTER" data-coords="(6, 4)" data-trilinears="1 : 1 : 1" data-barycentrics="15 : 13 : 14" class="point center incident" data-category="points" cx="6.000000" cy="-4.000000" r="0.183000"><title>X_1 = INCENTER (6, 4)</title></circle>
+    <circle id="X_2" data-id="X_2" data-ref="X_2" data-name="CENTROID" data-coords="(19/3, 4)" data-trilinears="182 : 210 : 195" data-barycentrics="1 : 1 : 1" class="point center incident" data-category="points" cx="6.333333" cy="-4.000000" r="0.183000"><title>X_2 = CENTROID (19/3, 4)</title></circle>
+    <circle id="X_8" data-id="X_8" data-ref="X_8" data-name="NAGEL POINT" data-coords="(7, 4)" data-trilinears="52 : 80 : 65" data-barycentrics="6 : 8 : 7" class="point center incident" data-category="points" cx="7.000000" cy="-4.000000" r="0.183000"><title>X_8 = NAGEL POINT (7, 4)</title></circle>
+    <circle id="X_4" data-id="X_4" data-ref="X_4" data-name="ORTHOCENTER" data-coords="(5, 15/4)" data-trilinears="429 : 275 : 325" data-barycentrics="99 : 55 : 70" class="point center incident" data-category="points" cx="5.000000" cy="-3.750000" r="0.183000"><title>X_4 = ORTHOCENTER (5, 15/4)</title></circle>
+    <circle id="X_9" data-id="X_9" data-ref="X_9" data-name="MITTENPUNKT" data-coords="(973/146, 294/73)" data-trilinears="6 : 8 : 7" data-barycentrics="45 : 52 : 49" class="point center incident" data-category="points" cx="6.664384" cy="-4.027397" r="0.183000"><title>X_9 = MITTENPUNKT (973/146, 294/73)</title></circle>
+    <circle id="X_19" data-id="X_19" data-ref="X_19" data-name="CLAWSON POINT" data-coords="(497/106, 196/53)" data-trilinears="99 : 55 : 70" data-barycentrics="297 : 143 : 196" class="point center incident" data-category="points" cx="4.688679" cy="-3.698113" r="0.183000"><title>X_19 = CLAWSON POINT (497/106, 196/53)</title></circle>
+    <circle id="X_12" data-id="X_12" data-ref="X_12" data-name="{X(1),X(5)}-HARMONIC CONJUGATE OF X(11)" data-coords="(6, 512/129)" data-trilinears="4212 : 4205 : 4160" data-barycentrics="972 : 841 : 896" class="point center incident" data-category="points" cx="6.000000" cy="-3.968992" r="0.183000"><title>X_12 = {X(1),X(5)}-HARMONIC CONJUGATE OF X(11) (6, 512/129)</title></circle>
+    <circle id="X_65" data-id="X_65" data-ref="X_65" data-name="ORTHOCENTER OF THE INTOUCH TRIANGLE" data-coords="(358/65, 256/65)" data-trilinears="36 : 29 : 32" data-barycentrics="540 : 377 : 448" class="point center incident" data-category="points" cx="5.507692" cy="-3.938462" r="0.183000"><title>X_65 = ORTHOCENTER OF THE INTOUCH TRIANGLE (358/65, 256/65)</title></circle>
+    <circle id="X_21" data-id="X_21" data-ref="X_21" data-name="SCHIFFLER POINT" data-coords="(1683/259, 1044/259)" data-trilinears="232 : 288 : 261" data-barycentrics="580 : 624 : 609" class="point center incident" data-category="points" cx="6.498069" cy="-4.030888" r="0.183000"><title>X_21 = SCHIFFLER POINT (1683/259, 1044/259)</title></circle>
+    <circle id="X_35" data-id="X_35" data-ref="X_35" data-name="{X(1),X(3)}-HARMONIC CONJUGATE OF X(36)" data-coords="(838/129, 524/129)" data-trilinears="115 : 143 : 131" data-barycentrics="1725 : 1859 : 1834" class="point center incident" data-category="points" cx="6.496124" cy="-4.062016" r="0.183000"><title>X_35 = {X(1),X(3)}-HARMONIC CONJUGATE OF X(36) (838/129, 524/129)</title></circle>
+    <circle id="X_10" data-id="X_10" data-ref="X_10" data-name="SPIEKER CENTER" data-coords="(13/2, 4)" data-trilinears="117 : 145 : 130" data-barycentrics="27 : 29 : 28" class="point selected target" data-category="points" cx="6.500000" cy="-4.000000" r="0.256200"><title>X_10 = SPIEKER CENTER (13/2, 4)</title></circle>
+  </g>
+  <g id="labels">
+    <text id="lbl-A" class="given-label" data-point-id="A" data-anchor-x="0.000000" data-anchor-y="-0.000000" data-offset-x="-24.0" data-offset-y="22.5" x="-0.585600" y="0.549000" font-size="0.494100">A</text>
+    <text id="lbl-B" class="given-label" data-point-id="B" data-anchor-x="14.000000" data-anchor-y="-0.000000" data-offset-x="12.0" data-offset-y="22.5" x="14.292800" y="0.549000" font-size="0.494100">B</text>
+    <text id="lbl-C" class="point-label" data-point-id="C" data-anchor-x="5.000000" data-anchor-y="-12.000000" data-offset-x="-7.5" data-offset-y="-15.0" x="4.817000" y="-12.366000" font-size="0.494100">C</text>
+    <text id="lbl-M_a" class="guide-label guide" data-point-id="M_a" data-anchor-x="9.500000" data-anchor-y="-6.000000" data-offset-x="10.0" data-offset-y="-7.0" x="9.744000" y="-6.170800" font-size="0.427000">M<tspan dy="0.3em" font-size="75%">a</tspan></text>
+    <text id="lbl-M_b" class="guide-label guide" data-point-id="M_b" data-anchor-x="2.500000" data-anchor-y="-6.000000" data-offset-x="-38.0" data-offset-y="-10.5" x="1.572800" y="-6.256200" font-size="0.427000">M<tspan dy="0.3em" font-size="75%">b</tspan></text>
+    <text id="lbl-M_c" class="guide-label guide" data-point-id="M_c" data-anchor-x="7.000000" data-anchor-y="-0.000000" data-offset-x="-8.0" data-offset-y="24.0" x="6.804800" y="0.585600" font-size="0.427000">M<tspan dy="0.3em" font-size="75%">c</tspan></text>
+    <text id="lbl-T_sp" class="guide-label guide" data-point-id="T_sp" data-anchor-x="6.500000" data-anchor-y="-6.000000" data-offset-x="-38.0" data-offset-y="-10.5" x="5.572800" y="-6.256200" font-size="0.427000">T<tspan dy="0.3em" font-size="75%">sp</tspan></text>
+    <text id="lbl-X_1" class="point-label incident" data-point-id="X_1" data-anchor-x="6.000000" data-anchor-y="-4.000000" data-offset-x="-38.0" data-offset-y="20.0" x="5.072800" y="-3.512000" font-size="0.494100">X<tspan dy="0.3em" font-size="75%">1</tspan></text>
+    <text id="lbl-X_2" class="point-label incident" data-point-id="X_2" data-anchor-x="6.333333" data-anchor-y="-4.000000" data-offset-x="-8.0" data-offset-y="24.0" x="6.138133" y="-3.414400" font-size="0.494100">X<tspan dy="0.3em" font-size="75%">2</tspan></text>
+    <text id="lbl-X_8" class="point-label incident" data-point-id="X_8" data-anchor-x="7.000000" data-anchor-y="-4.000000" data-offset-x="12.0" data-offset-y="20.0" x="7.292800" y="-3.512000" font-size="0.494100">X<tspan dy="0.3em" font-size="75%">8</tspan></text>
+    <text id="lbl-X_4" class="point-label incident" data-point-id="X_4" data-anchor-x="5.000000" data-anchor-y="-3.750000" data-offset-x="-38.0" data-offset-y="-10.5" x="4.072800" y="-4.006200" font-size="0.494100">X<tspan dy="0.3em" font-size="75%">4</tspan></text>
+    <text id="lbl-X_9" class="point-label incident" data-point-id="X_9" data-anchor-x="6.664384" data-anchor-y="-4.027397" data-offset-x="-38.0" data-offset-y="-10.5" x="5.737184" y="-4.283597" font-size="0.494100">X<tspan dy="0.3em" font-size="75%">9</tspan></text>
+    <text id="lbl-X_19" class="point-label incident" data-point-id="X_19" data-anchor-x="4.688679" data-anchor-y="-3.698113" data-offset-x="-38.0" data-offset-y="20.0" x="3.761479" y="-3.210113" font-size="0.494100">X<tspan dy="0.3em" font-size="75%">19</tspan></text>
+    <text id="lbl-X_12" class="point-label incident" data-point-id="X_12" data-anchor-x="6.000000" data-anchor-y="-3.968992" data-offset-x="-38.0" data-offset-y="-10.5" x="5.072800" y="-4.225192" font-size="0.494100">X<tspan dy="0.3em" font-size="75%">12</tspan></text>
+    <text id="lbl-X_65" class="point-label incident dense-label" data-point-id="X_65" data-anchor-x="5.507692" data-anchor-y="-3.938462" data-offset-x="-38.0" data-offset-y="20.0" x="4.580492" y="-3.450462" font-size="0.494100">X<tspan dy="0.3em" font-size="75%">65</tspan></text>
+    <text id="lbl-X_21" class="point-label incident dense-label" data-point-id="X_21" data-anchor-x="6.498069" data-anchor-y="-4.030888" data-offset-x="-8.0" data-offset-y="-22.0" x="6.302869" y="-4.567688" font-size="0.494100">X<tspan dy="0.3em" font-size="75%">21</tspan></text>
+    <text id="lbl-X_35" class="point-label incident" data-point-id="X_35" data-anchor-x="6.496124" data-anchor-y="-4.062016" data-offset-x="-8.0" data-offset-y="-22.0" x="6.300924" y="-4.598816" font-size="0.494100">X<tspan dy="0.3em" font-size="75%">35</tspan></text>
+    <text id="lbl-X_10" class="target-label" data-point-id="X_10" data-anchor-x="6.500000" data-anchor-y="-4.000000" data-offset-x="12.0" data-offset-y="-10.5" x="6.792800" y="-4.256200" font-size="0.494100">X<tspan dy="0.3em" font-size="75%">10</tspan></text>
+    <text class="subtitle-label" x="-2.272000" y="0.880800" font-size="0.420900" fill="#999">Heronian (15, 13, 14) | Incident Central Lines Through X_10</text>
+  </g>
+  <script type="application/json" class="etc-elements-meta">{"A":{"ID":"A","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex A","subtitle":"Reference triangle vertex at origin (0, 0)","rows":[["x","0.0000"],["y","0.0000"],["bary","1.0000 : 0.0000 : 0.0000"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(0,\\; 0\\right)","pretty":"(0, 0)"},{"label":"trilinear","latex":"1 : 0 : 0","pretty":"1 : 0 : 0"},{"label":"bary","latex":"1 : 0 : 0","pretty":"1 : 0 : 0"}],"approx":"≈ (0.000000, 0.000000)","related_points":["A"]},"B":{"ID":"B","type":"point","classes":["given","vertex"],"color":"#6F6","name":"Vertex B","subtitle":"Reference triangle baseline vertex on positive x-axis","rows":[["x","14.0000"],["y","0.0000"],["bary","0.0000 : 1.0000 : 0.0000"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(14,\\; 0\\right)","pretty":"(14, 0)"},{"label":"trilinear","latex":"0 : 1 : 0","pretty":"0 : 1 : 0"},{"label":"bary","latex":"0 : 1 : 0","pretty":"0 : 1 : 0"}],"approx":"≈ (14.000000, 0.000000)","related_points":["B"]},"[ A B ]":{"ID":"[ A B ]","type":"line","classes":["given","sideline"],"color":"#cbd5e1","color_token":"","name":"Sideline AB (Side c)","subtitle":"Reference triangle baseline through A and B","rows":[["pts","A (Vertex A), B (Vertex B)"],["len","14.0000"],["eq","0.0000x + 1.0000y + 0.0000 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"A, B"},{"label":"eq","latex":"y = 0","pretty":"y = 0"},{"label":"Q","latex":"196","pretty":"196"},{"label":"spread","latex":"0","pretty":"0"}],"approx":"≈ 0.0000x + 1.0000y + 0.0000 = 0  (|AB| ≈ 14.000000)","related_points":["A","B"]},"C":{"ID":"C","type":"point","classes":["vertex"],"color":"#0ff","name":"Vertex C","subtitle":"Reference triangle apex constructed in upper half-plane","rows":[["x","5.0000"],["y","12.0000"],["bary","-0.0000 : 0.0000 : 1.0000"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(5,\\; 12\\right)","pretty":"(5, 12)"},{"label":"trilinear","latex":"0 : 0 : 1","pretty":"0 : 0 : 1"},{"label":"bary","latex":"0 : 0 : 1","pretty":"0 : 0 : 1"}],"approx":"≈ (5.000000, 12.000000)","related_points":["C"]},"[ B C ]":{"ID":"[ B C ]","type":"line","classes":["sideline"],"color":"#cbd5e1","color_token":"","name":"Sideline BC (Side a)","subtitle":"Reference triangle sideline opposite vertex A","rows":[["pts","B (Vertex B), C (Vertex C)"],["len","15.0000"],["eq","0.8000x + 0.6000y - 11.2000 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"B, C"},{"label":"eq","latex":"4x + 3y - 56 = 0","pretty":"4x + 3y - 56 = 0"},{"label":"Q","latex":"225","pretty":"225"},{"label":"spread","latex":"\\frac{16}{25}","pretty":"16/25"}],"approx":"≈ 0.8000x + 0.6000y - 11.2000 = 0  (|BC| ≈ 15.000000)","related_points":["B","C"]},"[ C A ]":{"ID":"[ C A ]","type":"line","classes":["sideline"],"color":"#cbd5e1","color_token":"","name":"Sideline CA (Side b)","subtitle":"Reference triangle sideline opposite vertex B","rows":[["pts","C (Vertex C), A (Vertex A)"],["len","13.0000"],["eq","0.9231x - 0.3846y + 0.0000 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"C, A"},{"label":"eq","latex":"12x - 5y = 0","pretty":"12x - 5y = 0"},{"label":"Q","latex":"169","pretty":"169"},{"label":"spread","latex":"\\frac{144}{169}","pretty":"144/169"}],"approx":"≈ 0.9231x - 0.3846y + 0.0000 = 0  (|CA| ≈ 13.000000)","related_points":["C","A"]},"\u003c A B C \u003e":{"ID":"\u003c A B C \u003e","type":"polygon","classes":["reference"],"color":"#58a6ff","name":"Reference Triangle △ABC","subtitle":"Primary exact symbolic reference triangle","rows":[["verts","A, B, C"],["sides","15.0000, 13.0000, 14.0000"],["area","84.0000"]],"symbolic_rows":[{"label":"verts","latex":"","pretty":"A, B, C"},{"label":"Δ","latex":"84","pretty":"84"},{"label":"sides","latex":"15,\\; 13,\\; 14","pretty":"15, 13, 14"}],"approx":"≈ area 84.000000  |  sides (15.0000, 13.0000, 14.0000)","related_points":["A","B","C"]},"M_a":{"ID":"M_a","type":"point","classes":["midpoint"],"color":"orange","name":"Midpoint M_a of BC","subtitle":"Medial triangle vertex opposite A","rows":[["x","9.5000"],["y","6.0000"],["bary","0.0000 : 0.5000 : 0.5000"],["from","B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{19}{2},\\; 6\\right)","pretty":"(19/2, 6)"},{"label":"trilinear","latex":"0 : 14 : 13","pretty":"0 : 14 : 13"},{"label":"bary","latex":"0 : 1 : 1","pretty":"0 : 1 : 1"},{"label":"from","latex":"","pretty":"B, C"}],"approx":"≈ (9.500000, 6.000000)","related_points":["M_a"]},"M_b":{"ID":"M_b","type":"point","classes":["midpoint"],"color":"orange","name":"Midpoint M_b of CA","subtitle":"Medial triangle vertex opposite B","rows":[["x","2.5000"],["y","6.0000"],["bary","0.5000 : 0.0000 : 0.5000"],["from","C, A"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{5}{2},\\; 6\\right)","pretty":"(5/2, 6)"},{"label":"trilinear","latex":"14 : 0 : 15","pretty":"14 : 0 : 15"},{"label":"bary","latex":"1 : 0 : 1","pretty":"1 : 0 : 1"},{"label":"from","latex":"","pretty":"C, A"}],"approx":"≈ (2.500000, 6.000000)","related_points":["M_b"]},"M_c":{"ID":"M_c","type":"point","classes":["midpoint"],"color":"orange","name":"Midpoint M_c of AB","subtitle":"Medial triangle vertex opposite C","rows":[["x","7.0000"],["y","0.0000"],["bary","0.5000 : 0.5000 : 0.0000"],["from","A, B"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(7,\\; 0\\right)","pretty":"(7, 0)"},{"label":"trilinear","latex":"13 : 15 : 0","pretty":"13 : 15 : 0"},{"label":"bary","latex":"1 : 1 : 0","pretty":"1 : 1 : 0"},{"label":"from","latex":"","pretty":"A, B"}],"approx":"≈ (7.000000, 0.000000)","related_points":["M_c"]},"\u003c M_a M_b M_c \u003e":{"ID":"\u003c M_a M_b M_c \u003e","type":"polygon","classes":["secondary"],"color":"#90ee90","name":"Medial Triangle △M_a M_b M_c","subtitle":"Formed by the midpoints of sides BC, CA, AB","rows":[["verts","M_a, M_b, M_c"],["sides","7.5000, 6.5000, 7.0000"],["area","21.0000"]],"symbolic_rows":[{"label":"verts","latex":"","pretty":"M_a, M_b, M_c"},{"label":"Δ","latex":"21","pretty":"21"},{"label":"sides","latex":"\\frac{15}{2},\\; \\frac{13}{2},\\; 7","pretty":"15/2, 13/2, 7"}],"approx":"≈ area 21.000000  |  sides (7.5000, 6.5000, 7.0000)","related_points":["M_a","M_b","M_c"]},"[ M_a X_10 ]":{"ID":"[ M_a X_10 ]","type":"line","classes":["bisector"],"color":"#e8b85a","color_token":"gold","name":"Medial Angle Bisector at M_a","subtitle":"Internal angle bisector of medial triangle △M_a M_b M_c at M_a","rows":[["pts","M_a (Midpoint M_a of BC), X_10 (SPIEKER CENTER)"],["len","3.6056"],["eq","0.5547x - 0.8321y - 0.2774 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"M_a, X_10"},{"label":"eq","latex":"2x - 3y - 1 = 0","pretty":"2x - 3y - 1 = 0"},{"label":"Q","latex":"13","pretty":"13"},{"label":"spread","latex":"\\frac{4}{13}","pretty":"4/13"}],"approx":"≈ 0.5547x - 0.8321y - 0.2774 = 0  (|M_aX_10| ≈ 3.605551)","related_points":["M_a","X_10"]},"[ M_b X_10 ]":{"ID":"[ M_b X_10 ]","type":"line","classes":["bisector"],"color":"#e8b85a","color_token":"gold","name":"Medial Angle Bisector at M_b","subtitle":"Internal angle bisector of medial triangle △M_a M_b M_c at M_b","rows":[["pts","M_b (Midpoint M_b of CA), X_10 (SPIEKER CENTER)"],["len","4.4721"],["eq","0.4472x + 0.8944y - 6.4846 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"M_b, X_10"},{"label":"eq","latex":"2x + 4y - 29 = 0","pretty":"2x + 4y - 29 = 0"},{"label":"Q","latex":"20","pretty":"20"},{"label":"spread","latex":"\\frac{1}{5}","pretty":"1/5"}],"approx":"≈ 0.4472x + 0.8944y - 6.4846 = 0  (|M_bX_10| ≈ 4.472136)","related_points":["M_b","X_10"]},"[ M_c X_10 ]":{"ID":"[ M_c X_10 ]","type":"line","classes":["bisector"],"color":"#e8b85a","color_token":"gold","name":"Medial Angle Bisector at M_c","subtitle":"Internal angle bisector of medial triangle △M_a M_b M_c at M_c","rows":[["pts","M_c (Midpoint M_c of AB), X_10 (SPIEKER CENTER)"],["len","4.0311"],["eq","0.9923x + 0.1240y - 6.9459 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"M_c, X_10"},{"label":"eq","latex":"8x + y - 56 = 0","pretty":"8x + y - 56 = 0"},{"label":"Q","latex":"\\frac{65}{4}","pretty":"65/4"},{"label":"spread","latex":"\\frac{64}{65}","pretty":"64/65"}],"approx":"≈ 0.9923x + 0.1240y - 6.9459 = 0  (|M_cX_10| ≈ 4.031129)","related_points":["M_c","X_10"]},"T_sp":{"ID":"T_sp","type":"point","classes":["foot","guide"],"color":"orange","name":"Spieker Touchpoint T_sp","subtitle":"Tangency point of Spieker circle on medial side M_a M_b","rows":[["x","6.5000"],["y","6.0000"],["bary","0.2143 : 0.2857 : 0.5000"],["from","X_10, M_a, M_b"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{13}{2},\\; 6\\right)","pretty":"(13/2, 6)"},{"label":"trilinear","latex":"26 : 40 : 65","pretty":"26 : 40 : 65"},{"label":"bary","latex":"3 : 4 : 7","pretty":"3 : 4 : 7"},{"label":"from","latex":"","pretty":"X_10, M_a, M_b"}],"approx":"≈ (6.500000, 6.000000)","related_points":["T_sp"]},"spieker_circle":{"ID":"spieker_circle","type":"circle","classes":["incircle"],"color":"#fb923c","color_token":"orange","name":"Spieker Circle","subtitle":"Incircle of the medial triangle △M_a M_b M_c; centered at X_10 SPIEKER CENTER","rows":[["ctr","X_10 (SPIEKER CENTER)"],["h, k","(6.5000, 4.0000)"],["r","2.0000"],["eq","(x - 6.500)² + (y - 4.000)² = 4.0000"],["pass","T_sp (Spieker Touchpoint T_sp)"]],"symbolic_rows":[{"label":"center","latex":"","pretty":"X_10 (SPIEKER CENTER)"},{"label":"r","latex":"2","pretty":"2"},{"label":"Q_r","latex":"4","pretty":"4"},{"label":"eq","latex":"\\left(x - \\frac{13}{2}\\right)^2 + \\left(y - 4\\right)^2 = 4","pretty":"(x - 13/2)² + (y - 4)² = 4"}],"approx":"≈ r = 2.000000, Q_r = 4.000000","related_points":["X_10","T_sp"]},"X_1":{"ID":"X_1","type":"point","classes":["center","incident"],"color":"#0ff","name":"INCENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","6.0000"],["y","4.0000"],["bary","0.3571 : 0.3095 : 0.3333"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(6,\\; 4\\right)","pretty":"(6, 4)"},{"label":"trilinear","latex":"1 : 1 : 1","pretty":"1 : 1 : 1"},{"label":"bary","latex":"15 : 13 : 14","pretty":"15 : 13 : 14"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (6.000000, 4.000000)","related_points":["X_1"]},"X_2":{"ID":"X_2","type":"point","classes":["center","incident"],"color":"#0ff","name":"CENTROID","subtitle":"Incident / Reference Triangle Center","rows":[["x","6.3333"],["y","4.0000"],["bary","0.3333 : 0.3333 : 0.3333"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{19}{3},\\; 4\\right)","pretty":"(19/3, 4)"},{"label":"trilinear","latex":"182 : 210 : 195","pretty":"182 : 210 : 195"},{"label":"bary","latex":"1 : 1 : 1","pretty":"1 : 1 : 1"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (6.333333, 4.000000)","related_points":["X_2"]},"X_8":{"ID":"X_8","type":"point","classes":["center","incident"],"color":"#0ff","name":"NAGEL POINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","7.0000"],["y","4.0000"],["bary","0.2857 : 0.3810 : 0.3333"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(7,\\; 4\\right)","pretty":"(7, 4)"},{"label":"trilinear","latex":"52 : 80 : 65","pretty":"52 : 80 : 65"},{"label":"bary","latex":"6 : 8 : 7","pretty":"6 : 8 : 7"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (7.000000, 4.000000)","related_points":["X_8"]},"{ 1, 2 }":{"ID":"{ 1, 2 }","type":"line","classes":["central_line","incident"],"color":"#fb923c","color_token":"orange","name":"Nagel Line","subtitle":"Collinear line of X_1 Incenter, X_2 Centroid, X_8 Nagel Point, X_10 Spieker Center","rows":[["pts","X_1 (INCENTER), X_2 (CENTROID)"],["len","0.3333"],["eq","0.0000x + 1.0000y - 4.0000 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"X_1, X_2"},{"label":"eq","latex":"y - 4 = 0","pretty":"y - 4 = 0"},{"label":"Q","latex":"\\frac{1}{9}","pretty":"1/9"},{"label":"spread","latex":"0","pretty":"0"}],"approx":"≈ 0.0000x + 1.0000y - 4.0000 = 0  (|X_1X_2| ≈ 0.333333)","related_points":["X_1","X_2"]},"X_4":{"ID":"X_4","type":"point","classes":["center","incident"],"color":"#0ff","name":"ORTHOCENTER","subtitle":"Incident / Reference Triangle Center","rows":[["x","5.0000"],["y","3.7500"],["bary","0.4420 : 0.2455 : 0.3125"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(5,\\; \\frac{15}{4}\\right)","pretty":"(5, 15/4)"},{"label":"trilinear","latex":"429 : 275 : 325","pretty":"429 : 275 : 325"},{"label":"bary","latex":"99 : 55 : 70","pretty":"99 : 55 : 70"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (5.000000, 3.750000)","related_points":["X_4"]},"X_9":{"ID":"X_9","type":"point","classes":["center","incident"],"color":"#0ff","name":"MITTENPUNKT","subtitle":"Incident / Reference Triangle Center","rows":[["x","6.6644"],["y","4.0274"],["bary","0.3082 : 0.3562 : 0.3356"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{973}{146},\\; \\frac{294}{73}\\right)","pretty":"(973/146, 294/73)"},{"label":"trilinear","latex":"6 : 8 : 7","pretty":"6 : 8 : 7"},{"label":"bary","latex":"45 : 52 : 49","pretty":"45 : 52 : 49"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (6.664384, 4.027397)","related_points":["X_9"]},"X_19":{"ID":"X_19","type":"point","classes":["center","incident"],"color":"#0ff","name":"CLAWSON POINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","4.6887"],["y","3.6981"],["bary","0.4670 : 0.2248 : 0.3082"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{497}{106},\\; \\frac{196}{53}\\right)","pretty":"(497/106, 196/53)"},{"label":"trilinear","latex":"99 : 55 : 70","pretty":"99 : 55 : 70"},{"label":"bary","latex":"297 : 143 : 196","pretty":"297 : 143 : 196"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (4.688679, 3.698113)","related_points":["X_19"]},"{ 4, 9 }":{"ID":"{ 4, 9 }","type":"line","classes":["central_line","incident"],"color":"#38bdf8","color_token":"blue","name":"Orthocenter–Spieker Line","subtitle":"Collinear line of X_4 Orthocenter and X_10 Spieker Center","rows":[["pts","X_4 (ORTHOCENTER), X_9 (MITTENPUNKT)"],["len","1.6873"],["eq","0.1644x - 0.9864y + 2.8770 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"X_4, X_9"},{"label":"eq","latex":"2x - 12y + 35 = 0","pretty":"2x - 12y + 35 = 0"},{"label":"Q","latex":"\\frac{242757}{85264}","pretty":"242757/85264"},{"label":"spread","latex":"\\frac{1}{37}","pretty":"1/37"}],"approx":"≈ 0.1644x - 0.9864y + 2.8770 = 0  (|X_4X_9| ≈ 1.687342)","related_points":["X_4","X_9"]},"X_12":{"ID":"X_12","type":"point","classes":["center","incident"],"color":"#0ff","name":"{X(1),X(5)}-HARMONIC CONJUGATE OF X(11)","subtitle":"Incident / Reference Triangle Center","rows":[["x","6.0000"],["y","3.9690"],["bary","0.3588 : 0.3104 : 0.3307"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(6,\\; \\frac{512}{129}\\right)","pretty":"(6, 512/129)"},{"label":"trilinear","latex":"4212 : 4205 : 4160","pretty":"4212 : 4205 : 4160"},{"label":"bary","latex":"972 : 841 : 896","pretty":"972 : 841 : 896"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (6.000000, 3.968992)","related_points":["X_12"]},"X_65":{"ID":"X_65","type":"point","classes":["center","incident"],"color":"#0ff","name":"ORTHOCENTER OF THE INTOUCH TRIANGLE","subtitle":"Incident / Reference Triangle Center","rows":[["x","5.5077"],["y","3.9385"],["bary","0.3956 : 0.2762 : 0.3282"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{358}{65},\\; \\frac{256}{65}\\right)","pretty":"(358/65, 256/65)"},{"label":"trilinear","latex":"36 : 29 : 32","pretty":"36 : 29 : 32"},{"label":"bary","latex":"540 : 377 : 448","pretty":"540 : 377 : 448"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (5.507692, 3.938462)","related_points":["X_65"]},"{ 12, 65 }":{"ID":"{ 12, 65 }","type":"line","classes":["central_line","incident"],"color":"#2dd4bf","color_token":"teal","name":"Central Line L(12, 65)","subtitle":"Through X_12 ({X(1),X(5)}-HARMONIC CONJUGATE OF X(11)) and X_65 (ORTHOCENTER OF THE INTOUCH TRIANGLE)","rows":[["pts","X_12 ({X(1),X(5)}-HARMONIC CONJUGATE OF X(11)), X_65 (ORTHOCENTER OF THE INTOUCH TRIANGLE)"],["len","0.4933"],["eq","0.0619x - 0.9981y + 3.5900 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"X_12, X_65"},{"label":"eq","latex":"8x - 129y + 464 = 0","pretty":"8x - 129y + 464 = 0"},{"label":"Q","latex":"\\frac{263168}{1081665}","pretty":"263168/1081665"},{"label":"spread","latex":"\\frac{64}{16705}","pretty":"64/16705"}],"approx":"≈ 0.0619x - 0.9981y + 3.5900 = 0  (|X_12X_65| ≈ 0.493253)","related_points":["X_12","X_65"]},"X_21":{"ID":"X_21","type":"point","classes":["center","incident"],"color":"#0ff","name":"SCHIFFLER POINT","subtitle":"Incident / Reference Triangle Center","rows":[["x","6.4981"],["y","4.0309"],["bary","0.3199 : 0.3442 : 0.3359"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{1683}{259},\\; \\frac{1044}{259}\\right)","pretty":"(1683/259, 1044/259)"},{"label":"trilinear","latex":"232 : 288 : 261","pretty":"232 : 288 : 261"},{"label":"bary","latex":"580 : 624 : 609","pretty":"580 : 624 : 609"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (6.498069, 4.030888)","related_points":["X_21"]},"X_35":{"ID":"X_35","type":"point","classes":["center","incident"],"color":"#0ff","name":"{X(1),X(3)}-HARMONIC CONJUGATE OF X(36)","subtitle":"Incident / Reference Triangle Center","rows":[["x","6.4961"],["y","4.0620"],["bary","0.3184 : 0.3431 : 0.3385"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{838}{129},\\; \\frac{524}{129}\\right)","pretty":"(838/129, 524/129)"},{"label":"trilinear","latex":"115 : 143 : 131","pretty":"115 : 143 : 131"},{"label":"bary","latex":"1725 : 1859 : 1834","pretty":"1725 : 1859 : 1834"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (6.496124, 4.062016)","related_points":["X_35"]},"{ 21, 35 }":{"ID":"{ 21, 35 }","type":"line","classes":["central_line","incident"],"color":"#4ade80","color_token":"green","name":"Central Line L(21, 35)","subtitle":"Through X_21 (SCHIFFLER POINT) and X_35 ({X(1),X(3)}-HARMONIC CONJUGATE OF X(36))","rows":[["pts","X_21 (SCHIFFLER POINT), X_35 ({X(1),X(3)}-HARMONIC CONJUGATE OF X(36))"],["len","0.0312"],["eq","0.9981x + 0.0624y - 6.7369 = 0"]],"symbolic_rows":[{"label":"thru","latex":"","pretty":"X_21, X_35"},{"label":"eq","latex":"16x + y - 108 = 0","pretty":"16x + y - 108 = 0"},{"label":"Q","latex":"\\frac{1085825}{1116294921}","pretty":"1085825/1116294921"},{"label":"spread","latex":"\\frac{256}{257}","pretty":"256/257"}],"approx":"≈ 0.9981x + 0.0624y - 6.7369 = 0  (|X_21X_35| ≈ 0.031188)","related_points":["X_21","X_35"]},"X_10":{"ID":"X_10","type":"point","classes":["selected","target"],"color":"gold","name":"SPIEKER CENTER","subtitle":"Target Triangle Center","rows":[["x","6.5000"],["y","4.0000"],["bary","0.3214 : 0.3452 : 0.3333"],["from","A, B, C"]],"symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{13}{2},\\; 4\\right)","pretty":"(13/2, 4)"},{"label":"trilinear","latex":"117 : 145 : 130","pretty":"117 : 145 : 130"},{"label":"bary","latex":"27 : 29 : 28","pretty":"27 : 29 : 28"},{"label":"from","latex":"","pretty":"A, B, C"}],"approx":"≈ (6.500000, 4.000000)","related_points":["X_10"]}}</script>
+  <script>//<![CDATA[
+
+(function () {
+    const scriptEl = document.currentScript;
+    const svg = scriptEl ? scriptEl.closest('svg') : document.querySelector('svg.geometor-etc-drawing');
+    if (!svg || svg.dataset.etcInteractiveInit === '1') return;
+    if (svg.closest('.excerpt, .collection, a') || svg.classList.contains('euclid-thumbnail')) return;
+    svg.dataset.etcInteractiveInit = '1';
+
+    const initVbAttr = svg.getAttribute('data-initial-viewbox') || svg.getAttribute('viewBox');
+    const initialViewBox = initVbAttr.split(/\s+/).map(Number);
+
+    let elementsCatalog = {};
+    const metaEl = svg.querySelector('script.etc-elements-meta');
+    if (metaEl) {
+        try {
+            elementsCatalog = JSON.parse(metaEl.textContent);
+        } catch (e) {}
+    }
+
+    const pointsGroup = svg.querySelector('#points');
+    const elementsGroup = svg.querySelector('#elements');
+    const graphicsGroup = svg.querySelector('#graphics');
+    const highlightsGroup = svg.querySelector('#highlights');
+    const labelsGroup = svg.querySelector('#labels');
+
+    const pointEls = pointsGroup ? Array.from(pointsGroup.querySelectorAll('circle')) : [];
+    const labelEls = labelsGroup ? Array.from(labelsGroup.querySelectorAll('text[data-point-id]')) : [];
+    const subtitleEl = labelsGroup ? labelsGroup.querySelector('text.subtitle-label') : null;
+
+    function escapeHtml(str) {
+        return String(str || '')
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;');
+    }
+
+    function formatIdHtml(idStr) {
+        const s = escapeHtml(idStr);
+        return s.replace(/_\{([^}]+)\}/g, '<sub>$1</sub>').replace(/_([A-Za-z0-9']+)/g, '<sub>$1</sub>');
+    }
+
+    function extractBraced(src, startIdx) {
+        if (src[startIdx] !== '{') return null;
+        let depth = 0;
+        for (let i = startIdx; i < src.length; i++) {
+            if (src[i] === '{') depth++;
+            else if (src[i] === '}') {
+                depth--;
+                if (depth === 0) {
+                    return { content: src.slice(startIdx + 1, i), next: i + 1 };
+                }
+            }
+        }
+        return null;
+    }
+
+    function convertLatexFallback(tex) {
+        let s = String(tex || '');
+        s = s.replace(/\\left\s*([(\[{|])/g, '$1').replace(/\\right\s*([)\]}|])/g, '$1');
+        s = s.replace(/\\;/g, ' ').replace(/\\,/g, '\u2009').replace(/\\quad/g, '  ');
+        s = s.replace(/\\varphi|\\phi/g, 'φ')
+             .replace(/\\Delta/g, 'Δ')
+             .replace(/\\alpha/g, 'α')
+             .replace(/\\beta/g, 'β')
+             .replace(/\\gamma/g, 'γ')
+             .replace(/\\cdot/g, '·')
+             .replace(/\\approx/g, '≈')
+             .replace(/\\infty/g, '∞');
+
+        let out = '';
+        let i = 0;
+        while (i < s.length) {
+            if (s.startsWith('\\frac', i)) {
+                let k = i + 5;
+                while (k < s.length && s[k] === ' ') k++;
+                const numB = extractBraced(s, k);
+                if (numB) {
+                    let k2 = numB.next;
+                    while (k2 < s.length && s[k2] === ' ') k2++;
+                    const denB = extractBraced(s, k2);
+                    if (denB) {
+                        out += '<span class="etc-math-frac"><span class="etc-math-num">' +
+                            convertLatexFallback(numB.content) +
+                            '</span><span class="etc-math-den">' +
+                            convertLatexFallback(denB.content) +
+                            '</span></span>';
+                        i = denB.next;
+                        continue;
+                    }
+                }
+            }
+            if (s.startsWith('\\sqrt', i)) {
+                let k = i + 5;
+                while (k < s.length && s[k] === ' ') k++;
+                const radB = extractBraced(s, k);
+                if (radB) {
+                    out += '√<span class="etc-math-rad">' + convertLatexFallback(radB.content) + '</span>';
+                    i = radB.next;
+                    continue;
+                }
+            }
+            if ((s[i] === '_' || s[i] === '^') && i + 1 < s.length) {
+                const tag = s[i] === '_' ? 'sub' : 'sup';
+                if (s[i + 1] === '{') {
+                    const subB = extractBraced(s, i + 1);
+                    if (subB) {
+                        out += `<${tag}>` + convertLatexFallback(subB.content) + `</${tag}>`;
+                        i = subB.next;
+                        continue;
+                    }
+                } else {
+                    out += `<${tag}>` + escapeHtml(s[i + 1]) + `</${tag}>`;
+                    i += 2;
+                    continue;
+                }
+            }
+            out += escapeHtml(s[i]);
+            i++;
+        }
+        return out;
+    }
+
+    function renderMathHtml(latexStr, prettyStr) {
+        if (!latexStr) return escapeHtml(prettyStr || '');
+        if (typeof window !== 'undefined' && window.katex && typeof window.katex.renderToString === 'function') {
+            try {
+                return window.katex.renderToString(latexStr, { throwOnError: false, displayMode: false });
+            } catch (e) {}
+        }
+        return '<span class="etc-math-fallback">' + convertLatexFallback(latexStr) + '</span>';
+    }
+
+    function getViewBox() {
+        return svg.getAttribute('viewBox').split(/\s+/).map(Number);
+    }
+
+    function scaleViewElements() {
+        const rect = svg.getBoundingClientRect();
+        const widthPx = rect.width || 800;
+        const vb = getViewBox();
+        const unitsPerPx = vb[2] / widthPx;
+
+        const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
+        pointEls.forEach(c => {
+            const isTarget = c.classList.contains('target') || c.classList.contains('selected');
+            const isGuide = c.classList.contains('guide');
+            const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
+            c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
+        });
+
+        const fontSize = 20.25 * unitsPerPx;
+        const guideFontSize = 17.5 * unitsPerPx;
+        labelEls.forEach(lbl => {
+            const cx = parseFloat(lbl.getAttribute('data-anchor-x') || '0');
+            const cy = parseFloat(lbl.getAttribute('data-anchor-y') || '0');
+            const oxPx = parseFloat(lbl.getAttribute('data-offset-x') || '12');
+            const oyPx = parseFloat(lbl.getAttribute('data-offset-y') || '-10.5');
+            const isGuideLbl = lbl.classList.contains('guide-label');
+            lbl.setAttribute('x', (cx + oxPx * unitsPerPx).toFixed(6));
+            lbl.setAttribute('y', (cy + oyPx * unitsPerPx).toFixed(6));
+            lbl.setAttribute('font-size', (isGuideLbl ? guideFontSize : fontSize).toFixed(6));
+        });
+
+        if (subtitleEl) {
+            const subX = vb[0] + 20.0 * unitsPerPx;
+            const subY = vb[1] + vb[3] - 18.0 * unitsPerPx;
+            subtitleEl.setAttribute('x', subX.toFixed(6));
+            subtitleEl.setAttribute('y', subY.toFixed(6));
+            subtitleEl.setAttribute('font-size', (17.25 * unitsPerPx).toFixed(6));
+        }
+    }
+
+    function setViewBox(vb) {
+        svg.setAttribute('viewBox', `${vb[0].toFixed(6)} ${vb[1].toFixed(6)} ${vb[2].toFixed(6)} ${vb[3].toFixed(6)}`);
+        scaleViewElements();
+    }
+
+    function zoomBy(factor, clientX, clientY) {
+        const vb = getViewBox();
+        let [x, y, w, h] = vb;
+        const rect = svg.getBoundingClientRect();
+        const relX = (clientX !== undefined && rect.width > 0) ? (clientX - rect.left) / rect.width : 0.5;
+        const relY = (clientY !== undefined && rect.height > 0) ? (clientY - rect.top) / rect.height : 0.5;
+        const focusX = x + relX * w;
+        const focusY = y + relY * h;
+        const baseW = Math.max(initialViewBox[2] || 1.0, 0.2);
+        const baseH = Math.max(initialViewBox[3] || 1.0, 0.2);
+        const newW = Math.min(Math.max(w * factor, baseW * 0.002), baseW * 30.0);
+        const newH = Math.min(Math.max(h * factor, baseH * 0.002), baseH * 30.0);
+        const newX = focusX - relX * newW;
+        const newY = focusY - relY * newH;
+        setViewBox([newX, newY, newW, newH]);
+    }
+
+    function resetView() {
+        setViewBox([...initialViewBox]);
+    }
+
+    let hudEl = null;
+
+    svg._etcController = {
+        zoomIn: () => zoomBy(1 / 1.25),
+        zoomOut: () => zoomBy(1.25),
+        resetView: resetView,
+        toggleLabels: () => svg.classList.toggle('hide-labels'),
+        toggleGuides: () => svg.classList.toggle('hide-guides'),
+        scaleViewElements: scaleViewElements,
+    };
+
+    if (document.body && document.documentElement.tagName.toLowerCase() === 'html') {
+        let stage = svg.parentElement;
+        if (stage && !stage.classList.contains('etc-svg-stage')) {
+            const newStage = document.createElement('div');
+            newStage.className = 'etc-svg-stage';
+            stage.insertBefore(newStage, svg);
+            newStage.appendChild(svg);
+            stage = newStage;
+
+            const toolbar = document.createElement('div');
+            toolbar.className = 'etc-svg-toolbar';
+            const btns = [
+                { label: '+', title: 'Zoom In (or scroll wheel)', action: () => zoomBy(1 / 1.25) },
+                { label: '−', title: 'Zoom Out (or scroll wheel)', action: () => zoomBy(1.25) },
+                { label: '⟲ Fit', title: 'Reset View (or double-click canvas)', action: () => resetView() },
+            ];
+            if (svg.querySelector('.incident')) {
+                btns.push({
+                    label: 'Lines',
+                    toggleKey: 'lines',
+                    title: 'Toggle Incident Central Lines',
+                    isActive: () => svg.classList.contains('show-lines'),
+                    action: () => svg.classList.toggle('show-lines'),
+                });
+            }
+            if (labelEls.length > 0) {
+                btns.push({
+                    label: 'Labels',
+                    toggleKey: 'labels',
+                    title: 'Toggle Point Labels',
+                    isActive: () => !svg.classList.contains('hide-labels'),
+                    action: () => svg.classList.toggle('hide-labels'),
+                });
+            }
+            if (svg.querySelector('.guide')) {
+                btns.push({
+                    label: 'Guides',
+                    toggleKey: 'guides',
+                    title: 'Toggle Construction Guides',
+                    isActive: () => !svg.classList.contains('hide-guides'),
+                    action: () => svg.classList.toggle('hide-guides'),
+                });
+            }
+            btns.forEach(b => {
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = 'etc-svg-btn';
+                if (b.toggleKey) {
+                    btn.dataset.toggleKey = b.toggleKey;
+                    btn.classList.toggle('active', b.isActive());
+                }
+                btn.textContent = b.label;
+                btn.title = b.title;
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    b.action();
+                    if (b.isActive) {
+                        btn.classList.toggle('active', b.isActive());
+                    }
+                });
+                toolbar.appendChild(btn);
+            });
+            stage.appendChild(toolbar);
+        }
+
+        if (stage) {
+            hudEl = stage.querySelector('.etc-symbolic-hud');
+            if (!hudEl) {
+                hudEl = document.createElement('div');
+                hudEl.className = 'etc-symbolic-hud';
+                hudEl.setAttribute('aria-live', 'polite');
+                stage.appendChild(hudEl);
+            }
+            svg.querySelectorAll('title').forEach(t => t.remove());
+        }
+
+        const panel = svg.closest('.etc-graphics-panel');
+        if (panel && panel.dataset.etcTabsInit !== '1') {
+            panel.dataset.etcTabsInit = '1';
+            const tabBtns = Array.from(panel.querySelectorAll('.etc-tab-btn'));
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetTab = btn.getAttribute('data-tab');
+                    const tabPanes = Array.from(panel.querySelectorAll('.etc-tab-pane'));
+                    const prevPane = panel.querySelector('.etc-tab-pane.active');
+                    const prevSvg = prevPane ? prevPane.querySelector('svg.geometor-etc-drawing') : null;
+                    const hideLabels = prevSvg ? prevSvg.classList.contains('hide-labels') : false;
+                    const hideGuides = prevSvg ? prevSvg.classList.contains('hide-guides') : false;
+                    const showLines = prevSvg ? prevSvg.classList.contains('show-lines') : false;
+
+                    tabBtns.forEach(b => {
+                        const isMatch = b.getAttribute('data-tab') === targetTab;
+                        b.classList.toggle('active', isMatch);
+                        b.setAttribute('aria-selected', isMatch ? 'true' : 'false');
+                    });
+
+                    tabPanes.forEach(pane => {
+                        const isMatch = pane.getAttribute('data-tab-pane') === targetTab;
+                        pane.classList.toggle('active', isMatch);
+                        pane.style.display = isMatch ? 'block' : 'none';
+                        if (isMatch) {
+                            const paneSvg = pane.querySelector('svg.geometor-etc-drawing');
+                            if (paneSvg) {
+                                paneSvg.classList.toggle('hide-labels', hideLabels);
+                                paneSvg.classList.toggle('hide-guides', hideGuides);
+                                paneSvg.classList.toggle('show-lines', showLines);
+                                const paneToolbar = pane.querySelector('.etc-svg-toolbar');
+                                if (paneToolbar) {
+                                    const lBtn = paneToolbar.querySelector('[data-toggle-key="lines"]');
+                                    if (lBtn) lBtn.classList.toggle('active', showLines);
+                                    const lblBtn = paneToolbar.querySelector('[data-toggle-key="labels"]');
+                                    if (lblBtn) lblBtn.classList.toggle('active', !hideLabels);
+                                    const gBtn = paneToolbar.querySelector('[data-toggle-key="guides"]');
+                                    if (gBtn) gBtn.classList.toggle('active', !hideGuides);
+                                }
+                                if (paneSvg._etcController) {
+                                    paneSvg._etcController.scaleViewElements();
+                                    requestAnimationFrame(() => paneSvg._etcController.scaleViewElements());
+                                }
+                            }
+                        }
+                    });
+
+                    const figureEl = panel.closest('figure');
+                    const captionP = figureEl ? (figureEl.querySelector('figcaption .caption-text') || figureEl.querySelector('figcaption p')) : null;
+                    if (captionP) {
+                        if (!captionP.dataset.origHtml) {
+                            captionP.dataset.origHtml = captionP.innerHTML;
+                        }
+                        const capHtml = btn.getAttribute('data-caption-html');
+                        if (targetTab === 'acute' && captionP.dataset.origHtml) {
+                            captionP.innerHTML = captionP.dataset.origHtml;
+                        } else if (capHtml) {
+                            captionP.innerHTML = capHtml;
+                        }
+                    }
+                });
+            });
+        }
+    }
+
+    function updateHud(info, fallbackId) {
+        if (!hudEl) return;
+        if (!info) {
+            hudEl.classList.remove('is-visible');
+            return;
+        }
+        const dotColor = info.color || '#0ff';
+        const idHtml = formatIdHtml(info.ID || fallbackId || '');
+        const titleHtml = escapeHtml(info.name || fallbackId || '');
+        const kindHtml = escapeHtml(info.type || '');
+        const symRows = Array.isArray(info.symbolic_rows) ? info.symbolic_rows : [];
+        let rowsHtml = '';
+        if (symRows.length > 0) {
+            symRows.forEach(r => {
+                rowsHtml += '<div class="etc-hud-key">' + escapeHtml(r.label) + '</div>' +
+                    '<div class="etc-hud-val">' + renderMathHtml(r.latex, r.pretty) + '</div>';
+            });
+        } else if (Array.isArray(info.rows)) {
+            info.rows.forEach(pair => {
+                rowsHtml += '<div class="etc-hud-key">' + escapeHtml(pair[0]) + '</div>' +
+                    '<div class="etc-hud-val">' + escapeHtml(pair[1]) + '</div>';
+            });
+        }
+        const approxHtml = info.approx
+            ? '<div class="etc-hud-approx">' + escapeHtml(info.approx) + '</div>'
+            : '';
+        hudEl.innerHTML =
+            '<div class="etc-hud-head">' +
+                '<span class="etc-hud-dot" style="background:' + escapeHtml(dotColor) + '"></span>' +
+                '<span class="etc-hud-id">' + idHtml + '</span>' +
+                '<span class="etc-hud-title">' + titleHtml + '</span>' +
+                '<span class="etc-hud-kind">' + kindHtml + '</span>' +
+            '</div>' +
+            '<div class="etc-hud-rows">' + rowsHtml + '</div>' +
+            approxHtml;
+        hudEl.classList.add('is-visible');
+    }
+
+    let activeHoveredKey = null;
+
+    function clearHover(clearTextRefs) {
+        if (!activeHoveredKey) return;
+        activeHoveredKey = null;
+        svg.querySelectorAll('.hover').forEach(el => el.classList.remove('hover'));
+        svg.querySelectorAll('.hover-label').forEach(el => el.classList.remove('hover-label'));
+        if (highlightsGroup) {
+            highlightsGroup.querySelectorAll('.highlight-segment').forEach(el => {
+                el.style.display = 'none';
+            });
+        }
+        if (hudEl) {
+            hudEl.classList.remove('is-visible');
+        }
+        if (clearTextRefs !== false && typeof document !== 'undefined') {
+            document.querySelectorAll('.geom-highlight-text').forEach(el => {
+                el.classList.remove('geom-highlight-text');
+            });
+        }
+    }
+
+    function findSvgElement(candidateId) {
+        if (!candidateId) return null;
+        return svg.querySelector(`[data-id="${CSS.escape(candidateId)}"], [data-ref="${CSS.escape(candidateId)}"]`);
+    }
+
+    function resolveSingleSvgId(rawId) {
+        if (!rawId) return null;
+        const trimmed = rawId.trim();
+        if (findSvgElement(trimmed)) return trimmed;
+        const clean = trimmed.includes(':') ? trimmed.split(':').pop().trim() : trimmed;
+        if (findSvgElement(clean)) return clean;
+
+        const lineM = clean.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+        if (lineM) {
+            const cands = [
+                `[ ${lineM[1]} ${lineM[2]} ]`,
+                `[ ${lineM[2]} ${lineM[1]} ]`,
+                `/ ${lineM[1]} ${lineM[2]} /`,
+                `/ ${lineM[2]} ${lineM[1]} /`,
+            ];
+            for (const c of cands) {
+                if (findSvgElement(c)) return c;
+            }
+        }
+
+        const segM = clean.match(/^\/\s*(\S+)\s+(\S+)\s*\/$/);
+        if (segM) {
+            const cands = [
+                `/ ${segM[1]} ${segM[2]} /`,
+                `/ ${segM[2]} ${segM[1]} /`,
+                `[ ${segM[1]} ${segM[2]} ]`,
+                `[ ${segM[2]} ${segM[1]} ]`,
+            ];
+            for (const c of cands) {
+                if (findSvgElement(c)) return c;
+            }
+        }
+
+        const braceAllM = clean.match(/^\{\s*([\d,\s]+)\s*\}$/);
+        if (braceAllM) {
+            const wantNums = braceAllM[1].split(',').map(s => s.trim()).filter(Boolean);
+            if (wantNums.length === 2) {
+                const cands = [
+                    `{ ${wantNums[0]}, ${wantNums[1]} }`,
+                    `{ ${wantNums[1]}, ${wantNums[0]} }`,
+                ];
+                for (const c of cands) {
+                    if (findSvgElement(c)) return c;
+                }
+            }
+            if (wantNums.length >= 2) {
+                const wantSet = new Set(wantNums);
+                const lineEls = svg.querySelectorAll('line[data-id], line[data-ref]');
+                for (const ln of lineEls) {
+                    const lid = ln.getAttribute('data-id') || ln.getAttribute('data-ref') || '';
+                    const lm = lid.match(/^\{\s*([\d,\s]+)\s*\}$/);
+                    if (lm) {
+                        const lnums = lm[1].split(',').map(s => s.trim()).filter(Boolean);
+                        const shared = lnums.filter(n => wantSet.has(n));
+                        if (shared.length >= 2) return lid;
+                    }
+                }
+            }
+        }
+
+        const triM = clean.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+        if (triM) {
+            const want = [triM[1], triM[2], triM[3]].sort().join('|');
+            const polys = svg.querySelectorAll('polygon[data-id], polygon[data-ref]');
+            for (const p of polys) {
+                const pid = p.getAttribute('data-id') || p.getAttribute('data-ref') || '';
+                const pm = pid.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                if (pm && [pm[1], pm[2], pm[3]].sort().join('|') === want) {
+                    return pid;
+                }
+            }
+        }
+
+        return null;
+    }
+
+    function hasElement(rawRef) {
+        if (!rawRef) return false;
+        const parts = String(rawRef).split(';').map(s => s.trim()).filter(Boolean);
+        return parts.some(p => resolveSingleSvgId(p) !== null);
+    }
+
+    function activateHover(rawRef, highlightTextRefs) {
+        if (!rawRef) return false;
+        const parts = String(rawRef).split(';').map(s => s.trim()).filter(Boolean);
+        const resolvedIds = parts.map(p => resolveSingleSvgId(p)).filter(Boolean);
+        if (resolvedIds.length === 0) return false;
+
+        const key = resolvedIds.join(';');
+        if (activeHoveredKey === key) return true;
+        clearHover(highlightTextRefs !== false);
+        activeHoveredKey = key;
+
+        let primaryInfo = null;
+        let primaryId = resolvedIds[0];
+
+        resolvedIds.forEach(id => {
+            const info = elementsCatalog[id];
+            if (!primaryInfo && info) {
+                primaryInfo = info;
+                primaryId = id;
+            }
+            svg.querySelectorAll(`[data-id="${CSS.escape(id)}"], [data-ref="${CSS.escape(id)}"]`).forEach(el => {
+                el.classList.add('hover');
+            });
+            if (highlightsGroup) {
+                const hl = highlightsGroup.querySelector(`[data-highlight-for="${CSS.escape(id)}"]`);
+                if (hl) hl.style.display = 'inline';
+            }
+            let relatedPts = (info && info.related_points) ? info.related_points : [id];
+            if (!info) {
+                const sm = id.match(/^[\[/]\s*(\S+)\s+(\S+)\s*[\]/]$/);
+                const tm = id.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                if (sm) relatedPts = [sm[1], sm[2]];
+                else if (tm) relatedPts = [tm[1], tm[2], tm[3]];
+            }
+            relatedPts.forEach(pid => {
+                const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
+                if (ptEl) ptEl.classList.add('hover');
+                const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
+                if (lblEl) lblEl.classList.add('hover-label');
+            });
+        });
+
+        updateHud(primaryInfo, primaryId);
+
+        if (highlightTextRefs !== false && typeof document !== 'undefined') {
+            const selectors = new Set([`.geom-ref[data-ref="${CSS.escape(rawRef)}"]`]);
+            resolvedIds.forEach(id => selectors.add(`.geom-ref[data-ref="${CSS.escape(id)}"]`));
+            document.querySelectorAll(Array.from(selectors).join(', ')).forEach(el => {
+                el.classList.add('geom-highlight-text');
+            });
+        }
+        return true;
+    }
+
+    svg._etcController.activateHover = activateHover;
+    svg._etcController.clearHover = clearHover;
+    svg._etcController.hasElement = hasElement;
+
+    if (typeof window !== 'undefined') {
+        window.__etcSvgRegistry = window.__etcSvgRegistry || [];
+        if (!window.__etcSvgRegistry.includes(svg)) {
+            window.__etcSvgRegistry.push(svg);
+        }
+    }
+
+    if (document.body && document.documentElement.tagName.toLowerCase() === 'html' && document.body.dataset.etcGeomRefSyncInit !== '1') {
+        document.body.dataset.etcGeomRefSyncInit = '1';
+
+        function isSvgVisible(s) {
+            if (!s || !s.isConnected || !s._etcController) return false;
+            const pane = s.closest('.etc-tab-pane');
+            if (pane && !pane.classList.contains('active')) return false;
+            return s.getClientRects().length > 0;
+        }
+
+        function dispatchRefHover(sourceEl, refStr) {
+            if (!refStr) return;
+            const reg = (window.__etcSvgRegistry || []).filter(isSvgVisible);
+            const sec = sourceEl ? sourceEl.closest('section') : null;
+            let targets = [];
+            if (sec) {
+                targets = reg.filter(s => sec.contains(s) && s._etcController.hasElement(refStr));
+            }
+            if (targets.length === 0) {
+                targets = reg.filter(s => s._etcController.hasElement(refStr));
+            }
+            reg.forEach(s => {
+                if (!targets.includes(s)) s._etcController.clearHover(false);
+            });
+            targets.forEach(s => s._etcController.activateHover(refStr, false));
+            if (sourceEl && targets.length > 0) {
+                sourceEl.classList.add('geom-highlight-text');
+            }
+        }
+
+        function clearAllSvgHovers() {
+            (window.__etcSvgRegistry || []).forEach(s => {
+                if (s && s._etcController) s._etcController.clearHover(true);
+            });
+        }
+
+        document.body.addEventListener('mouseover', (e) => {
+            const geomEl = e.target.closest('.geom-ref[data-ref]');
+            if (geomEl) {
+                dispatchRefHover(geomEl, geomEl.getAttribute('data-ref'));
+                return;
+            }
+            const refLink = e.target.closest('a.reference.internal');
+            if (refLink) {
+                const txt = (refLink.textContent || '').trim();
+                const xm = txt.match(/^X(?:_|\()?(\d+)\)?$/);
+                if (xm) {
+                    dispatchRefHover(refLink, `X_${xm[1]}`);
+                }
+            }
+        });
+
+        document.body.addEventListener('mouseout', (e) => {
+            const geomEl = e.target.closest('.geom-ref[data-ref], a.reference.internal');
+            if (geomEl) {
+                clearAllSvgHovers();
+            }
+        });
+    }
+
+    svg.addEventListener('mouseover', (event) => {
+        if (isPanning) return;
+        const target = event.target.closest('[data-id], [data-ref]');
+        if (target && svg.contains(target)) {
+            activateHover(target.getAttribute('data-id') || target.getAttribute('data-ref'));
+        } else {
+            clearHover();
+        }
+    });
+
+    svg.addEventListener('mouseout', (event) => {
+        if (isPanning) return;
+        const related = event.relatedTarget ? event.relatedTarget.closest?.('[data-id], [data-ref]') : null;
+        if (!related || !svg.contains(related)) {
+            clearHover();
+        }
+    });
+
+    svg.addEventListener('wheel', (event) => {
+        event.preventDefault();
+        const factor = event.deltaY > 0 ? 1.12 : (1 / 1.12);
+        zoomBy(factor, event.clientX, event.clientY);
+    }, { passive: false });
+
+    let isPanning = false;
+    let didDrag = false;
+    let startClient = { x: 0, y: 0 };
+
+    svg.addEventListener('mousedown', (event) => {
+        if (event.button !== 0) return;
+        isPanning = true;
+        didDrag = false;
+        startClient = { x: event.clientX, y: event.clientY };
+        svg.classList.add('is-panning');
+    });
+
+    svg.addEventListener('mousemove', (event) => {
+        if (!isPanning) return;
+        const dxPx = event.clientX - startClient.x;
+        const dyPx = event.clientY - startClient.y;
+        if (Math.hypot(dxPx, dyPx) > 2) didDrag = true;
+        const rect = svg.getBoundingClientRect();
+        if (rect.width > 0 && rect.height > 0) {
+            const vb = getViewBox();
+            const dx = dxPx * (vb[2] / rect.width);
+            const dy = dyPx * (vb[3] / rect.height);
+            setViewBox([vb[0] - dx, vb[1] - dy, vb[2], vb[3]]);
+        }
+        startClient = { x: event.clientX, y: event.clientY };
+    });
+
+    window.addEventListener('mouseup', () => {
+        if (isPanning) {
+            isPanning = false;
+            svg.classList.remove('is-panning');
+        }
+    });
+
+    svg.addEventListener('mouseleave', () => {
+        isPanning = false;
+        svg.classList.remove('is-panning');
+        clearHover();
+    });
+
+    svg.addEventListener('click', (event) => {
+        if (didDrag) return;
+        const pt = event.target.closest('circle[data-id]');
+        if (!pt) return;
+        const pid = pt.getAttribute('data-id') || '';
+        const m = pid.match(/^X_(\d+)$/);
+        if (m && typeof window !== 'undefined' && window.location && window.location.pathname.includes('/c-') && !window.location.pathname.includes('/x-')) {
+            const slug = 'x-' + m[1].padStart(5, '0');
+            window.location.href = `${slug}/index.html`;
+        }
+    });
+
+    svg.addEventListener('dblclick', (event) => {
+        event.preventDefault();
+        resetView();
+    });
+
+    if (typeof ResizeObserver !== 'undefined') {
+        new ResizeObserver(() => scaleViewElements()).observe(svg);
+    }
+})();
+
+//]]></script>
+</svg>
