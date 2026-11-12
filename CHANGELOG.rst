@@ -3,6 +3,11 @@ changelog
 
 :project: geometor.etc
 
+0.3.0
+-----
+
+- Generalized the 5-act exact symbolic Book Codex architecture across all 19 classical centers of Collection 1 (``X_1``–``X_19``: ``plates.py``, ``ops.py``, ``symbolic_cache.py``, ``transform.py``), generating ``156`` interactive Explorer-styled SVGs (8 plates per center + 4 collection overview plates) and caching ``84`` exact symbolic center records across all 4 canonical reference triangles with zero floating-point drift.
+
 0.2.0
 -----
 
