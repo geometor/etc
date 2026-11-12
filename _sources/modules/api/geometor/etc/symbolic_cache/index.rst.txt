@@ -1,0 +1,242 @@
+geometor.etc.symbolic_cache
+===========================
+
+.. py:module:: geometor.etc.symbolic_cache
+
+.. autoapi-nested-parse::
+
+   Exact symbolic triangle-center registry and disk cache (`CenterSymbolicRegistry`).
+
+   Evaluates homogeneous barycentrics, homogeneous trilinears, normalized
+   barycentrics, exact Cartesian coordinates, signed sub-triangle areas, and
+   Kimberling search values over the four canonical exact symbolic reference
+   triangles without floating-point approximations.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.etc.symbolic_cache.DEFAULT_SYMBOLIC_CACHE_DIR
+   geometor.etc.symbolic_cache.SymbolicCyclicFn
+   geometor.etc.symbolic_cache.EXACT_CYCLIC_BARYCENTRICS
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.etc.symbolic_cache.SymbolicCenterRecord
+   geometor.etc.symbolic_cache.CenterSymbolicRegistry
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.symbolic_cache.format_symbolic_latex
+   geometor.etc.symbolic_cache.format_symbolic_pretty
+   geometor.etc.symbolic_cache.reduce_homogeneous_triple
+
+
+Module Contents
+---------------
+
+.. py:data:: DEFAULT_SYMBOLIC_CACHE_DIR
+
+.. py:function:: format_symbolic_latex(expr: sympy.Expr, *, kepler_phi: bool = False) -> str
+
+   Render an exact SymPy expression as clean LaTeX.
+
+   When ``kepler_phi`` is ``True``, rewrites :math:`(1 + \sqrt{5})/2` and
+   :math:`\sqrt{(1 + \sqrt{5})/2}` in terms of :math:`\phi` and
+   :math:`\sqrt{\phi}` for compact typographic display.
+
+
+.. py:function:: format_symbolic_pretty(expr: sympy.Expr, *, kepler_phi: bool = False) -> str
+
+   Render an exact SymPy expression as compact single-line Unicode math.
+
+
+.. py:function:: reduce_homogeneous_triple(u: sympy.Expr, v: sympy.Expr, w: sympy.Expr, tri: geometor.etc.triangles.SymbolicTriangle) -> tuple[sympy.Expr, sympy.Expr, sympy.Expr]
+
+   Reduce a homogeneous triple :math:`(u : v : w)` by clearing rational factors.
+
+
+.. py:data:: SymbolicCyclicFn
+
+.. py:data:: EXACT_CYCLIC_BARYCENTRICS
+   :type:  dict[int, SymbolicCyclicFn]
+
+.. py:class:: SymbolicCenterRecord
+
+   Exact symbolic coordinates and invariants for center ``X_num`` on a triangle.
+
+
+   .. py:attribute:: num
+      :type:  int
+
+
+   .. py:attribute:: triangle_key
+      :type:  str
+
+
+   .. py:attribute:: bary
+      :type:  tuple[sympy.Expr, sympy.Expr, sympy.Expr]
+
+
+   .. py:attribute:: norm_bary
+      :type:  tuple[sympy.Expr, sympy.Expr, sympy.Expr]
+
+
+   .. py:attribute:: trilinear
+      :type:  tuple[sympy.Expr, sympy.Expr, sympy.Expr]
+
+
+   .. py:attribute:: xy
+      :type:  tuple[sympy.Expr, sympy.Expr]
+
+
+   .. py:attribute:: sub_areas
+      :type:  tuple[sympy.Expr, sympy.Expr, sympy.Expr]
+
+
+   .. py:attribute:: search_value
+      :type:  sympy.Expr
+
+
+   .. py:property:: is_kepler
+      :type: bool
+
+
+      Return whether this record belongs to the Kepler golden triangle.
+
+
+   .. py:method:: xy_latex() -> str
+
+      Return ``(x, y)`` formatted as LaTeX.
+
+
+
+   .. py:method:: xy_pretty() -> str
+
+      Return ``(x, y)`` formatted as compact Unicode.
+
+
+
+   .. py:method:: trilinear_latex() -> str
+
+      Return homogeneous trilinears formatted as LaTeX.
+
+
+
+   .. py:method:: trilinear_pretty() -> str
+
+      Return homogeneous trilinears formatted as Unicode.
+
+
+
+   .. py:method:: bary_latex() -> str
+
+      Return homogeneous barycentrics formatted as LaTeX.
+
+
+
+   .. py:method:: bary_pretty() -> str
+
+      Return homogeneous barycentrics formatted as Unicode.
+
+
+
+   .. py:method:: search_latex() -> str
+
+      Return the exact Kimberling search value as LaTeX.
+
+
+
+   .. py:method:: approx_xy() -> tuple[float, float]
+
+      Return secondary float approximation of ``(x, y)`` for SVG layout.
+
+
+
+   .. py:method:: approx_search_value() -> float
+
+      Return float approximation of ``search_value``.
+
+
+
+   .. py:method:: to_cache_dict() -> dict[str, Any]
+
+      Serialize exact SymPy expressions via ``sp.srepr``.
+
+
+
+   .. py:method:: from_cache_dict(data: dict[str, Any]) -> SymbolicCenterRecord
+      :classmethod:
+
+
+      Deserialize exact SymPy expressions from ``sp.srepr`` strings.
+
+
+
+.. py:class:: CenterSymbolicRegistry(triangle: geometor.etc.triangles.SymbolicTriangle | str = 'heronian', *, cache_dir: pathlib.Path | str | None = DEFAULT_SYMBOLIC_CACHE_DIR)
+
+   Exact symbolic evaluator and persistent cache for ETC triangle centers.
+
+   :param triangle: A :class:`SymbolicTriangle` instance or canonical preset name
+                    (``"heronian"``, ``"right"``, ``"kepler"``, ``"kimberling"``).
+   :param cache_dir: Directory where per-triangle JSON cache files are stored. Pass ``None``
+                     to disable disk persistence (in-memory only).
+
+
+   .. py:attribute:: cache_dir
+
+
+   .. py:property:: cache_file
+      :type: pathlib.Path | None
+
+
+      Path to this triangle's JSON cache file.
+
+
+   .. py:method:: save_cache() -> None
+
+      Persist cached symbolic center records to disk if modified.
+
+
+
+   .. py:method:: has_exact_formula(num: int) -> bool
+
+      Return whether center ``X_num`` has a built-in closed-form generator.
+
+
+
+   .. py:method:: evaluate_barycentrics(num: int, raw_bary: tuple[sympy.Expr, sympy.Expr, sympy.Expr] | None = None) -> SymbolicCenterRecord
+
+      Evaluate and cache a center from either ``EXACT_CYCLIC_BARYCENTRICS`` or ``raw_bary``.
+
+
+
+   .. py:method:: get(num: int) -> SymbolicCenterRecord
+
+      Return the exact :class:`SymbolicCenterRecord` for ``X_num``.
+
+
+
+   .. py:method:: evaluate_cyclic_sympy(num: int, first_component: sympy.Expr, *, is_trilinear: bool = False, cache: bool = True) -> SymbolicCenterRecord
+
+      Evaluate an arbitrary cyclic SymPy expression in ``(a, b, c, A, B, C, S_A, S_B, S_C, S, r, R, s)``.
+
+
+
+   .. py:method:: warm_collection_1() -> dict[int, SymbolicCenterRecord]
+
+      Evaluate and cache all Collection 1 centers (`X_1`–`X_19`) plus key companions.
+
+
+

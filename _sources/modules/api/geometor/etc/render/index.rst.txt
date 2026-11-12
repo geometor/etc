@@ -137,12 +137,28 @@ Module Contents
           stroke-opacity: 0.85;
       }
       
+      #elements line.central_line[data-color-token="orange"] { stroke: #fb923c; stroke-dasharray: 6, 3; }
+      #elements line.central_line[data-color-token="teal"] { stroke: #2dd4bf; stroke-dasharray: 6, 3; }
+      #elements line.central_line[data-color-token="blue"] { stroke: #38bdf8; stroke-dasharray: 6, 3; }
+      #elements line.central_line[data-color-token="orchid"] { stroke: #e879f9; stroke-dasharray: 6, 3; }
+      #elements line.central_line[data-color-token="pink"] { stroke: #f472b6; stroke-dasharray: 6, 3; }
+      #elements line.central_line[data-color-token="lime"] { stroke: #a3e635; stroke-dasharray: 6, 3; }
+      #elements line.central_line[data-color-token="green"] { stroke: #5ec27e; stroke-dasharray: 6, 3; }
+      #elements line.central_line[data-color-token="purple"] { stroke: #a855f7; stroke-dasharray: 6, 3; }
+      
       #elements line.golden,
       #elements path.line.golden,
       #elements line.euler,
       #elements path.line.euler {
           stroke: gold;
           stroke-width: 2.1;
+      }
+      
+      #elements line.strut {
+          stroke: gold;
+          stroke-width: 2.8;
+          stroke-dasharray: none;
+          stroke-opacity: 0.95;
       }
       
       #elements circle {
@@ -202,10 +218,11 @@ Module Contents
       }
       
       #graphics polyline {
-          stroke: #36c9;
+          stroke: #ffd54f;
           fill: none;
-          stroke-width: 6;
+          stroke-width: 3.2;
           vector-effect: non-scaling-stroke;
+          cursor: pointer;
       }
       
       #graphics polygon {
@@ -217,6 +234,7 @@ Module Contents
           marker-start: url(#marker);
           marker-mid: url(#marker);
           marker-end: url(#marker);
+          cursor: pointer;
       }
       
       #graphics polygon.secondary {
@@ -225,12 +243,54 @@ Module Contents
           stroke-width: 3;
       }
       
+      #graphics polygon.subarea-a {
+          stroke: rgba(255, 112, 67, 0.72);
+          fill: rgba(255, 112, 67, 0.20);
+          stroke-width: 2.4;
+          marker-start: none;
+          marker-mid: none;
+          marker-end: none;
+      }
+      
+      #graphics polygon.subarea-b {
+          stroke: rgba(102, 187, 106, 0.72);
+          fill: rgba(102, 187, 106, 0.20);
+          stroke-width: 2.4;
+          marker-start: none;
+          marker-mid: none;
+          marker-end: none;
+      }
+      
+      #graphics polygon.subarea-c {
+          stroke: rgba(66, 165, 245, 0.72);
+          fill: rgba(66, 165, 245, 0.20);
+          stroke-width: 2.4;
+          marker-start: none;
+          marker-mid: none;
+          marker-end: none;
+      }
+      
       #graphics polygon:hover,
       #graphics polygon.hover,
       #graphics polyline:hover,
       #graphics polyline.hover {
           stroke: var(--select-color) !important;
           stroke-opacity: 1 !important;
+      }
+      
+      #graphics polygon.subarea-a:hover,
+      #graphics polygon.subarea-a.hover {
+          fill: rgba(255, 112, 67, 0.38) !important;
+      }
+      
+      #graphics polygon.subarea-b:hover,
+      #graphics polygon.subarea-b.hover {
+          fill: rgba(102, 187, 106, 0.38) !important;
+      }
+      
+      #graphics polygon.subarea-c:hover,
+      #graphics polygon.subarea-c.hover {
+          fill: rgba(66, 165, 245, 0.38) !important;
       }
       
       #labels text {
@@ -315,13 +375,144 @@ Module Contents
           user-select: none;
       }
       
-      .etc-svg-btn:hover {
-          background: #0ff;
-          color: #121212;
+      .etc-svg-btn:hover,
+      .etc-svg-btn.active {
+          background: rgba(0, 255, 255, 0.14);
+          color: #0ff;
           border-color: #0ff;
       }
       
-      .etc-graphics-panel {
+      .etc-symbolic-hud {
+          position: absolute;
+          left: 10px;
+          bottom: 10px;
+          max-width: min(460px, calc(100% - 20px));
+          background: rgba(14, 16, 22, 0.93);
+          border: 1px solid rgba(0, 255, 255, 0.35);
+          border-radius: 6px;
+          padding: 8px 12px;
+          color: #eaeaea;
+          font-family: "Fira Sans Condensed", system-ui, -apple-system, sans-serif;
+          font-size: 13px;
+          line-height: 1.38;
+          z-index: 24;
+          pointer-events: none;
+          box-shadow: 0 6px 20px rgba(0, 0, 0, 0.58);
+          opacity: 0;
+          transform: translateY(4px);
+          transition: opacity 0.12s ease, transform 0.12s ease;
+      }
+      
+      .etc-symbolic-hud.is-visible {
+          opacity: 1;
+          transform: translateY(0);
+      }
+      
+      .etc-hud-head {
+          display: flex;
+          align-items: baseline;
+          gap: 7px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          padding-bottom: 4px;
+          margin-bottom: 5px;
+      }
+      
+      .etc-hud-dot {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          flex-shrink: 0;
+          align-self: center;
+      }
+      
+      .etc-hud-id {
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+          font-weight: 700;
+          color: #0ff;
+          font-size: 13px;
+      }
+      
+      .etc-hud-title {
+          font-weight: 600;
+          color: #f5f5f5;
+          flex: 1;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+      }
+      
+      .etc-hud-kind {
+          font-size: 10.5px;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          color: #94a3b8;
+      }
+      
+      .etc-hud-rows {
+          display: grid;
+          grid-template-columns: auto 1fr;
+          gap: 2px 10px;
+          align-items: baseline;
+      }
+      
+      .etc-hud-key {
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+          font-size: 11.5px;
+          color: #94a3b8;
+          text-align: right;
+          white-space: nowrap;
+      }
+      
+      .etc-hud-val {
+          color: #f8fafc;
+          font-size: 13.5px;
+          overflow-wrap: anywhere;
+      }
+      
+      .etc-hud-val .katex {
+          font-size: 1.02em;
+      }
+      
+      .etc-hud-approx {
+          margin-top: 4px;
+          padding-top: 3px;
+          border-top: 1px dashed rgba(255, 255, 255, 0.09);
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+          font-size: 11px;
+          color: #8b9bb4;
+      }
+      
+      .etc-math-fallback {
+          font-family: "EB Garamond", Georgia, serif;
+          font-size: 1.06em;
+      }
+      
+      .etc-math-frac {
+          display: inline-flex;
+          flex-direction: column;
+          vertical-align: middle;
+          text-align: center;
+          padding: 0 2px;
+          font-size: 0.88em;
+          line-height: 1.05;
+      }
+      
+      .etc-math-num {
+          border-bottom: 1px solid rgba(248, 250, 252, 0.65);
+          padding: 0 2px 1px;
+      }
+      
+      .etc-math-den {
+          padding: 1px 2px 0;
+      }
+      
+      .etc-math-rad {
+          border-top: 1px solid rgba(248, 250, 252, 0.6);
+          padding: 0 2px;
+      }
+      
+      .etc-graphics-panel,
+      .etc-act-plate {
           width: 100%;
           background: #141414;
           border: 1px solid #333;
@@ -329,9 +520,48 @@ Module Contents
           overflow: hidden;
       }
       
-      .etc-graphics-panel svg.geometor-etc-drawing {
+      .etc-graphics-panel svg.geometor-etc-drawing,
+      .etc-act-plate svg.geometor-etc-drawing {
           border: none;
           border-radius: 0;
+          display: block;
+      }
+      
+      svg.geometor-etc-drawing .etc-plate-poly {
+          cursor: pointer;
+          transition: fill-opacity 0.14s ease, stroke 0.14s ease;
+      }
+      
+      svg.geometor-etc-drawing .etc-plate-poly.hover {
+          stroke: var(--select-color) !important;
+          stroke-width: 2.8px !important;
+          fill-opacity: 0.44 !important;
+      }
+      
+      svg.geometor-etc-drawing .etc-plate-strut,
+      svg.geometor-etc-drawing .etc-plate-line,
+      svg.geometor-etc-drawing .etc-plate-circle,
+      svg.geometor-etc-drawing .etc-plate-pt,
+      svg.geometor-etc-drawing .etc-plate-panel {
+          cursor: pointer;
+      }
+      
+      svg.geometor-etc-drawing .etc-plate-strut.hover,
+      svg.geometor-etc-drawing .etc-plate-line.hover,
+      svg.geometor-etc-drawing .etc-plate-circle.hover {
+          stroke: var(--select-color) !important;
+          filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.72));
+      }
+      
+      svg.geometor-etc-drawing .etc-plate-pt.hover {
+          stroke: var(--select-color) !important;
+          stroke-width: 3.6px !important;
+          filter: drop-shadow(0 0 6px rgba(0, 255, 255, 0.85));
+      }
+      
+      svg.geometor-etc-drawing .etc-plate-panel.hover > rect.etc-panel-border {
+          stroke: var(--select-color) !important;
+          stroke-width: 2.8px !important;
       }
       
       .etc-triangle-tabs {
@@ -400,7 +630,6 @@ Module Contents
           const initVbAttr = svg.getAttribute('data-initial-viewbox') || svg.getAttribute('viewBox');
           const initialViewBox = initVbAttr.split(/\s+/).map(Number);
       
-          // Parse embedded element metadata catalog
           let elementsCatalog = {};
           const metaEl = svg.querySelector('script.etc-elements-meta');
           if (metaEl) {
@@ -416,10 +645,112 @@ Module Contents
           const labelsGroup = svg.querySelector('#labels');
       
           const pointEls = pointsGroup ? Array.from(pointsGroup.querySelectorAll('circle')) : [];
-          const structEls = elementsGroup ? Array.from(elementsGroup.querySelectorAll('line, circle')) : [];
-          const polyEls = graphicsGroup ? Array.from(graphicsGroup.querySelectorAll('polygon, polyline')) : [];
           const labelEls = labelsGroup ? Array.from(labelsGroup.querySelectorAll('text[data-point-id]')) : [];
           const subtitleEl = labelsGroup ? labelsGroup.querySelector('text.subtitle-label') : null;
+      
+          function escapeHtml(str) {
+              return String(str || '')
+                  .replace(/&/g, '&amp;')
+                  .replace(/</g, '&lt;')
+                  .replace(/>/g, '&gt;')
+                  .replace(/"/g, '&quot;');
+          }
+      
+          function formatIdHtml(idStr) {
+              const s = escapeHtml(idStr);
+              return s.replace(/_\{([^}]+)\}/g, '<sub>$1</sub>').replace(/_([A-Za-z0-9']+)/g, '<sub>$1</sub>');
+          }
+      
+          function extractBraced(src, startIdx) {
+              if (src[startIdx] !== '{') return null;
+              let depth = 0;
+              for (let i = startIdx; i < src.length; i++) {
+                  if (src[i] === '{') depth++;
+                  else if (src[i] === '}') {
+                      depth--;
+                      if (depth === 0) {
+                          return { content: src.slice(startIdx + 1, i), next: i + 1 };
+                      }
+                  }
+              }
+              return null;
+          }
+      
+          function convertLatexFallback(tex) {
+              let s = String(tex || '');
+              s = s.replace(/\\left\s*([(\[{|])/g, '$1').replace(/\\right\s*([)\]}|])/g, '$1');
+              s = s.replace(/\\;/g, ' ').replace(/\\,/g, '\u2009').replace(/\\quad/g, '  ');
+              s = s.replace(/\\varphi|\\phi/g, 'φ')
+                   .replace(/\\Delta/g, 'Δ')
+                   .replace(/\\alpha/g, 'α')
+                   .replace(/\\beta/g, 'β')
+                   .replace(/\\gamma/g, 'γ')
+                   .replace(/\\cdot/g, '·')
+                   .replace(/\\approx/g, '≈')
+                   .replace(/\\infty/g, '∞');
+      
+              let out = '';
+              let i = 0;
+              while (i < s.length) {
+                  if (s.startsWith('\\frac', i)) {
+                      let k = i + 5;
+                      while (k < s.length && s[k] === ' ') k++;
+                      const numB = extractBraced(s, k);
+                      if (numB) {
+                          let k2 = numB.next;
+                          while (k2 < s.length && s[k2] === ' ') k2++;
+                          const denB = extractBraced(s, k2);
+                          if (denB) {
+                              out += '<span class="etc-math-frac"><span class="etc-math-num">' +
+                                  convertLatexFallback(numB.content) +
+                                  '</span><span class="etc-math-den">' +
+                                  convertLatexFallback(denB.content) +
+                                  '</span></span>';
+                              i = denB.next;
+                              continue;
+                          }
+                      }
+                  }
+                  if (s.startsWith('\\sqrt', i)) {
+                      let k = i + 5;
+                      while (k < s.length && s[k] === ' ') k++;
+                      const radB = extractBraced(s, k);
+                      if (radB) {
+                          out += '√<span class="etc-math-rad">' + convertLatexFallback(radB.content) + '</span>';
+                          i = radB.next;
+                          continue;
+                      }
+                  }
+                  if ((s[i] === '_' || s[i] === '^') && i + 1 < s.length) {
+                      const tag = s[i] === '_' ? 'sub' : 'sup';
+                      if (s[i + 1] === '{') {
+                          const subB = extractBraced(s, i + 1);
+                          if (subB) {
+                              out += `<${tag}>` + convertLatexFallback(subB.content) + `</${tag}>`;
+                              i = subB.next;
+                              continue;
+                          }
+                      } else {
+                          out += `<${tag}>` + escapeHtml(s[i + 1]) + `</${tag}>`;
+                          i += 2;
+                          continue;
+                      }
+                  }
+                  out += escapeHtml(s[i]);
+                  i++;
+              }
+              return out;
+          }
+      
+          function renderMathHtml(latexStr, prettyStr) {
+              if (!latexStr) return escapeHtml(prettyStr || '');
+              if (typeof window !== 'undefined' && window.katex && typeof window.katex.renderToString === 'function') {
+                  try {
+                      return window.katex.renderToString(latexStr, { throwOnError: false, displayMode: false });
+                  } catch (e) {}
+              }
+              return '<span class="etc-math-fallback">' + convertLatexFallback(latexStr) + '</span>';
+          }
       
           function getViewBox() {
               return svg.getAttribute('viewBox').split(/\s+/).map(Number);
@@ -474,8 +805,10 @@ Module Contents
               const relY = (clientY !== undefined && rect.height > 0) ? (clientY - rect.top) / rect.height : 0.5;
               const focusX = x + relX * w;
               const focusY = y + relY * h;
-              const newW = Math.min(Math.max(w * factor, 0.002), 50.0);
-              const newH = Math.min(Math.max(h * factor, 0.002), 50.0);
+              const baseW = Math.max(initialViewBox[2] || 1.0, 0.2);
+              const baseH = Math.max(initialViewBox[3] || 1.0, 0.2);
+              const newW = Math.min(Math.max(w * factor, baseW * 0.002), baseW * 30.0);
+              const newH = Math.min(Math.max(h * factor, baseH * 0.002), baseH * 30.0);
               const newX = focusX - relX * newW;
               const newY = focusY - relY * newH;
               setViewBox([newX, newY, newW, newH]);
@@ -485,7 +818,8 @@ Module Contents
               setViewBox([...initialViewBox]);
           }
       
-          // Expose controller API on the SVG element for external toolbar buttons
+          let hudEl = null;
+      
           svg._etcController = {
               zoomIn: () => zoomBy(1 / 1.25),
               zoomOut: () => zoomBy(1.25),
@@ -495,14 +829,14 @@ Module Contents
               scaleViewElements: scaleViewElements,
           };
       
-          // Ensure Toolbar and Triangle Tabs exist if running inside an HTML document
           if (document.body && document.documentElement.tagName.toLowerCase() === 'html') {
-              const parent = svg.parentElement;
-              if (parent && !parent.classList.contains('etc-svg-stage')) {
-                  const stage = document.createElement('div');
-                  stage.className = 'etc-svg-stage';
-                  parent.insertBefore(stage, svg);
-                  stage.appendChild(svg);
+              let stage = svg.parentElement;
+              if (stage && !stage.classList.contains('etc-svg-stage')) {
+                  const newStage = document.createElement('div');
+                  newStage.className = 'etc-svg-stage';
+                  stage.insertBefore(newStage, svg);
+                  newStage.appendChild(svg);
+                  stage = newStage;
       
                   const toolbar = document.createElement('div');
                   toolbar.className = 'etc-svg-toolbar';
@@ -520,13 +854,15 @@ Module Contents
                           action: () => svg.classList.toggle('show-lines'),
                       });
                   }
-                  btns.push({
-                      label: 'Labels',
-                      toggleKey: 'labels',
-                      title: 'Toggle Point Labels',
-                      isActive: () => !svg.classList.contains('hide-labels'),
-                      action: () => svg.classList.toggle('hide-labels'),
-                  });
+                  if (labelEls.length > 0) {
+                      btns.push({
+                          label: 'Labels',
+                          toggleKey: 'labels',
+                          title: 'Toggle Point Labels',
+                          isActive: () => !svg.classList.contains('hide-labels'),
+                          action: () => svg.classList.toggle('hide-labels'),
+                      });
+                  }
                   if (svg.querySelector('.guide')) {
                       btns.push({
                           label: 'Guides',
@@ -557,6 +893,17 @@ Module Contents
                       toolbar.appendChild(btn);
                   });
                   stage.appendChild(toolbar);
+              }
+      
+              if (stage) {
+                  hudEl = stage.querySelector('.etc-symbolic-hud');
+                  if (!hudEl) {
+                      hudEl = document.createElement('div');
+                      hudEl.className = 'etc-symbolic-hud';
+                      hudEl.setAttribute('aria-live', 'polite');
+                      stage.appendChild(hudEl);
+                  }
+                  svg.querySelectorAll('title').forEach(t => t.remove());
               }
       
               const panel = svg.closest('.etc-graphics-panel');
@@ -626,11 +973,49 @@ Module Contents
               }
           }
       
-          let activeHoveredId = null;
+          function updateHud(info, fallbackId) {
+              if (!hudEl) return;
+              if (!info) {
+                  hudEl.classList.remove('is-visible');
+                  return;
+              }
+              const dotColor = info.color || '#0ff';
+              const idHtml = formatIdHtml(info.ID || fallbackId || '');
+              const titleHtml = escapeHtml(info.name || fallbackId || '');
+              const kindHtml = escapeHtml(info.type || '');
+              const symRows = Array.isArray(info.symbolic_rows) ? info.symbolic_rows : [];
+              let rowsHtml = '';
+              if (symRows.length > 0) {
+                  symRows.forEach(r => {
+                      rowsHtml += '<div class="etc-hud-key">' + escapeHtml(r.label) + '</div>' +
+                          '<div class="etc-hud-val">' + renderMathHtml(r.latex, r.pretty) + '</div>';
+                  });
+              } else if (Array.isArray(info.rows)) {
+                  info.rows.forEach(pair => {
+                      rowsHtml += '<div class="etc-hud-key">' + escapeHtml(pair[0]) + '</div>' +
+                          '<div class="etc-hud-val">' + escapeHtml(pair[1]) + '</div>';
+                  });
+              }
+              const approxHtml = info.approx
+                  ? '<div class="etc-hud-approx">' + escapeHtml(info.approx) + '</div>'
+                  : '';
+              hudEl.innerHTML =
+                  '<div class="etc-hud-head">' +
+                      '<span class="etc-hud-dot" style="background:' + escapeHtml(dotColor) + '"></span>' +
+                      '<span class="etc-hud-id">' + idHtml + '</span>' +
+                      '<span class="etc-hud-title">' + titleHtml + '</span>' +
+                      '<span class="etc-hud-kind">' + kindHtml + '</span>' +
+                  '</div>' +
+                  '<div class="etc-hud-rows">' + rowsHtml + '</div>' +
+                  approxHtml;
+              hudEl.classList.add('is-visible');
+          }
       
-          function clearHover() {
-              if (!activeHoveredId) return;
-              activeHoveredId = null;
+          let activeHoveredKey = null;
+      
+          function clearHover(clearTextRefs) {
+              if (!activeHoveredKey) return;
+              activeHoveredKey = null;
               svg.querySelectorAll('.hover').forEach(el => el.classList.remove('hover'));
               svg.querySelectorAll('.hover-label').forEach(el => el.classList.remove('hover-label'));
               if (highlightsGroup) {
@@ -638,97 +1023,208 @@ Module Contents
                       el.style.display = 'none';
                   });
               }
-              if (typeof document !== 'undefined') {
+              if (hudEl) {
+                  hudEl.classList.remove('is-visible');
+              }
+              if (clearTextRefs !== false && typeof document !== 'undefined') {
                   document.querySelectorAll('.geom-highlight-text').forEach(el => {
                       el.classList.remove('geom-highlight-text');
                   });
               }
           }
       
-          function resolveSvgId(rawId) {
-              if (!rawId) return rawId;
-              if (svg.querySelector(`[data-id="${CSS.escape(rawId)}"]`)) return rawId;
-              const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
-              if (segM) {
-                  const revId = `[ ${segM[2]} ${segM[1]} ]`;
-                  if (svg.querySelector(`[data-id="${CSS.escape(revId)}"]`)) return revId;
-              }
-              const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
-              if (triM) {
-                  const pts = [triM[1], triM[2], triM[3]];
-                  if (pts.includes('A') && pts.includes('B') && pts.includes('C')) {
-                      return '< A B C >';
-                  }
-                  const secPoly = graphicsGroup ? graphicsGroup.querySelector('polygon.secondary[data-id]') : null;
-                  if (secPoly) {
-                      return secPoly.getAttribute('data-id') || rawId;
-                  }
-              }
-              return rawId;
+          function findSvgElement(candidateId) {
+              if (!candidateId) return null;
+              return svg.querySelector(`[data-id="${CSS.escape(candidateId)}"], [data-ref="${CSS.escape(candidateId)}"]`);
           }
       
-          function activateHover(rawId) {
-              if (!rawId) return;
-              const id = resolveSvgId(rawId);
-              if (activeHoveredId === id) return;
-              clearHover();
-              activeHoveredId = id;
-              const info = elementsCatalog[id];
+          function resolveSingleSvgId(rawId) {
+              if (!rawId) return null;
+              const trimmed = rawId.trim();
+              if (findSvgElement(trimmed)) return trimmed;
+              const clean = trimmed.includes(':') ? trimmed.split(':').pop().trim() : trimmed;
+              if (findSvgElement(clean)) return clean;
       
-              const targetEl = svg.querySelector(`[data-id="${CSS.escape(id)}"]`);
-              if (targetEl) {
-                  targetEl.classList.add('hover');
+              const lineM = clean.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+              if (lineM) {
+                  const cands = [
+                      `[ ${lineM[1]} ${lineM[2]} ]`,
+                      `[ ${lineM[2]} ${lineM[1]} ]`,
+                      `/ ${lineM[1]} ${lineM[2]} /`,
+                      `/ ${lineM[2]} ${lineM[1]} /`,
+                  ];
+                  for (const c of cands) {
+                      if (findSvgElement(c)) return c;
+                  }
               }
       
-              // Show highlight segment if present
-              if (highlightsGroup) {
-                  const hl = highlightsGroup.querySelector(`[data-highlight-for="${CSS.escape(id)}"]`);
-                  if (hl) hl.style.display = 'inline';
+              const segM = clean.match(/^\/\s*(\S+)\s+(\S+)\s*\/$/);
+              if (segM) {
+                  const cands = [
+                      `/ ${segM[1]} ${segM[2]} /`,
+                      `/ ${segM[2]} ${segM[1]} /`,
+                      `[ ${segM[1]} ${segM[2]} ]`,
+                      `[ ${segM[2]} ${segM[1]} ]`,
+                  ];
+                  for (const c of cands) {
+                      if (findSvgElement(c)) return c;
+                  }
               }
       
-              // Highlight parent/endpoint points and labels
-              let relatedPts = (info && info.related_points) ? info.related_points : [id];
-              if (!targetEl && relatedPts.length === 1 && relatedPts[0] === id) {
-                  const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
-                  const triM = rawId.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
-                  if (segM) relatedPts = [segM[1], segM[2]];
-                  else if (triM) relatedPts = [triM[1], triM[2], triM[3]];
+              const braceAllM = clean.match(/^\{\s*([\d,\s]+)\s*\}$/);
+              if (braceAllM) {
+                  const wantNums = braceAllM[1].split(',').map(s => s.trim()).filter(Boolean);
+                  if (wantNums.length === 2) {
+                      const cands = [
+                          `{ ${wantNums[0]}, ${wantNums[1]} }`,
+                          `{ ${wantNums[1]}, ${wantNums[0]} }`,
+                      ];
+                      for (const c of cands) {
+                          if (findSvgElement(c)) return c;
+                      }
+                  }
+                  if (wantNums.length >= 2) {
+                      const wantSet = new Set(wantNums);
+                      const lineEls = svg.querySelectorAll('line[data-id], line[data-ref]');
+                      for (const ln of lineEls) {
+                          const lid = ln.getAttribute('data-id') || ln.getAttribute('data-ref') || '';
+                          const lm = lid.match(/^\{\s*([\d,\s]+)\s*\}$/);
+                          if (lm) {
+                              const lnums = lm[1].split(',').map(s => s.trim()).filter(Boolean);
+                              const shared = lnums.filter(n => wantSet.has(n));
+                              if (shared.length >= 2) return lid;
+                          }
+                      }
+                  }
               }
-              relatedPts.forEach(pid => {
-                  const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
-                  if (ptEl) ptEl.classList.add('hover');
-                  const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
-                  if (lblEl) lblEl.classList.add('hover-label');
+      
+              const triM = clean.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+              if (triM) {
+                  const want = [triM[1], triM[2], triM[3]].sort().join('|');
+                  const polys = svg.querySelectorAll('polygon[data-id], polygon[data-ref]');
+                  for (const p of polys) {
+                      const pid = p.getAttribute('data-id') || p.getAttribute('data-ref') || '';
+                      const pm = pid.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                      if (pm && [pm[1], pm[2], pm[3]].sort().join('|') === want) {
+                          return pid;
+                      }
+                  }
+              }
+      
+              return null;
+          }
+      
+          function hasElement(rawRef) {
+              if (!rawRef) return false;
+              const parts = String(rawRef).split(';').map(s => s.trim()).filter(Boolean);
+              return parts.some(p => resolveSingleSvgId(p) !== null);
+          }
+      
+          function activateHover(rawRef, highlightTextRefs) {
+              if (!rawRef) return false;
+              const parts = String(rawRef).split(';').map(s => s.trim()).filter(Boolean);
+              const resolvedIds = parts.map(p => resolveSingleSvgId(p)).filter(Boolean);
+              if (resolvedIds.length === 0) return false;
+      
+              const key = resolvedIds.join(';');
+              if (activeHoveredKey === key) return true;
+              clearHover(highlightTextRefs !== false);
+              activeHoveredKey = key;
+      
+              let primaryInfo = null;
+              let primaryId = resolvedIds[0];
+      
+              resolvedIds.forEach(id => {
+                  const info = elementsCatalog[id];
+                  if (!primaryInfo && info) {
+                      primaryInfo = info;
+                      primaryId = id;
+                  }
+                  svg.querySelectorAll(`[data-id="${CSS.escape(id)}"], [data-ref="${CSS.escape(id)}"]`).forEach(el => {
+                      el.classList.add('hover');
+                  });
+                  if (highlightsGroup) {
+                      const hl = highlightsGroup.querySelector(`[data-highlight-for="${CSS.escape(id)}"]`);
+                      if (hl) hl.style.display = 'inline';
+                  }
+                  let relatedPts = (info && info.related_points) ? info.related_points : [id];
+                  if (!info) {
+                      const sm = id.match(/^[\[/]\s*(\S+)\s+(\S+)\s*[\]/]$/);
+                      const tm = id.match(/^<\s*(\S+)\s+(\S+)\s+(\S+)\s*>$/);
+                      if (sm) relatedPts = [sm[1], sm[2]];
+                      else if (tm) relatedPts = [tm[1], tm[2], tm[3]];
+                  }
+                  relatedPts.forEach(pid => {
+                      const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;
+                      if (ptEl) ptEl.classList.add('hover');
+                      const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;
+                      if (lblEl) lblEl.classList.add('hover-label');
+                  });
               });
       
-              if (typeof document !== 'undefined') {
-                  const sel = rawId === id
-                      ? `.geom-ref[data-ref="${CSS.escape(id)}"]`
-                      : `.geom-ref[data-ref="${CSS.escape(rawId)}"], .geom-ref[data-ref="${CSS.escape(id)}"]`;
-                  document.querySelectorAll(sel).forEach(el => {
+              updateHud(primaryInfo, primaryId);
+      
+              if (highlightTextRefs !== false && typeof document !== 'undefined') {
+                  const selectors = new Set([`.geom-ref[data-ref="${CSS.escape(rawRef)}"]`]);
+                  resolvedIds.forEach(id => selectors.add(`.geom-ref[data-ref="${CSS.escape(id)}"]`));
+                  document.querySelectorAll(Array.from(selectors).join(', ')).forEach(el => {
                       el.classList.add('geom-highlight-text');
                   });
               }
+              return true;
           }
       
           svg._etcController.activateHover = activateHover;
           svg._etcController.clearHover = clearHover;
+          svg._etcController.hasElement = hasElement;
+      
+          if (typeof window !== 'undefined') {
+              window.__etcSvgRegistry = window.__etcSvgRegistry || [];
+              if (!window.__etcSvgRegistry.includes(svg)) {
+                  window.__etcSvgRegistry.push(svg);
+              }
+          }
       
           if (document.body && document.documentElement.tagName.toLowerCase() === 'html' && document.body.dataset.etcGeomRefSyncInit !== '1') {
               document.body.dataset.etcGeomRefSyncInit = '1';
-              function getActiveSvg() {
-                  const activePaneSvg = document.querySelector('.etc-tab-pane.active svg.geometor-etc-drawing');
-                  if (activePaneSvg && activePaneSvg._etcController) return activePaneSvg;
-                  const anySvg = document.querySelector('svg.geometor-etc-drawing');
-                  return (anySvg && anySvg._etcController) ? anySvg : null;
+      
+              function isSvgVisible(s) {
+                  if (!s || !s.isConnected || !s._etcController) return false;
+                  const pane = s.closest('.etc-tab-pane');
+                  if (pane && !pane.classList.contains('active')) return false;
+                  return s.getClientRects().length > 0;
               }
+      
+              function dispatchRefHover(sourceEl, refStr) {
+                  if (!refStr) return;
+                  const reg = (window.__etcSvgRegistry || []).filter(isSvgVisible);
+                  const sec = sourceEl ? sourceEl.closest('section') : null;
+                  let targets = [];
+                  if (sec) {
+                      targets = reg.filter(s => sec.contains(s) && s._etcController.hasElement(refStr));
+                  }
+                  if (targets.length === 0) {
+                      targets = reg.filter(s => s._etcController.hasElement(refStr));
+                  }
+                  reg.forEach(s => {
+                      if (!targets.includes(s)) s._etcController.clearHover(false);
+                  });
+                  targets.forEach(s => s._etcController.activateHover(refStr, false));
+                  if (sourceEl && targets.length > 0) {
+                      sourceEl.classList.add('geom-highlight-text');
+                  }
+              }
+      
+              function clearAllSvgHovers() {
+                  (window.__etcSvgRegistry || []).forEach(s => {
+                      if (s && s._etcController) s._etcController.clearHover(true);
+                  });
+              }
+      
               document.body.addEventListener('mouseover', (e) => {
                   const geomEl = e.target.closest('.geom-ref[data-ref]');
                   if (geomEl) {
-                      const activeSvg = getActiveSvg();
-                      if (activeSvg && activeSvg._etcController.activateHover) {
-                          activeSvg._etcController.activateHover(geomEl.getAttribute('data-ref'));
-                      }
+                      dispatchRefHover(geomEl, geomEl.getAttribute('data-ref'));
                       return;
                   }
                   const refLink = e.target.closest('a.reference.internal');
@@ -736,30 +1232,24 @@ Module Contents
                       const txt = (refLink.textContent || '').trim();
                       const xm = txt.match(/^X(?:_|\()?(\d+)\)?$/);
                       if (xm) {
-                          const activeSvg = getActiveSvg();
-                          if (activeSvg && activeSvg._etcController.activateHover) {
-                              activeSvg._etcController.activateHover(`X_${xm[1]}`);
-                          }
+                          dispatchRefHover(refLink, `X_${xm[1]}`);
                       }
                   }
               });
+      
               document.body.addEventListener('mouseout', (e) => {
                   const geomEl = e.target.closest('.geom-ref[data-ref], a.reference.internal');
                   if (geomEl) {
-                      const activeSvg = getActiveSvg();
-                      if (activeSvg && activeSvg._etcController.clearHover) {
-                          activeSvg._etcController.clearHover();
-                      }
+                      clearAllSvgHovers();
                   }
               });
           }
       
-          // Native DOM hover matching browser <title> tooltip topmost target
           svg.addEventListener('mouseover', (event) => {
               if (isPanning) return;
-              const target = event.target.closest('[data-id]');
+              const target = event.target.closest('[data-id], [data-ref]');
               if (target && svg.contains(target)) {
-                  activateHover(target.getAttribute('data-id'));
+                  activateHover(target.getAttribute('data-id') || target.getAttribute('data-ref'));
               } else {
                   clearHover();
               }
@@ -767,20 +1257,18 @@ Module Contents
       
           svg.addEventListener('mouseout', (event) => {
               if (isPanning) return;
-              const related = event.relatedTarget ? event.relatedTarget.closest?.('[data-id]') : null;
+              const related = event.relatedTarget ? event.relatedTarget.closest?.('[data-id], [data-ref]') : null;
               if (!related || !svg.contains(related)) {
                   clearHover();
               }
           });
       
-          // Wheel Zoom
           svg.addEventListener('wheel', (event) => {
               event.preventDefault();
               const factor = event.deltaY > 0 ? 1.12 : (1 / 1.12);
               zoomBy(factor, event.clientX, event.clientY);
           }, { passive: false });
       
-          // Drag Pan
           let isPanning = false;
           let didDrag = false;
           let startClient = { x: 0, y: 0 };

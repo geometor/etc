@@ -87,7 +87,7 @@
           <div class="book-nav-center">
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="../topics/index.html" title="geometor.etc.topics"><span class="nav-label">Next</span> &rarr;</a>
+            <a class="book-nav-btn" href="../symbolic_cache/index.html" title="geometor.etc.symbolic_cache"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </header>
@@ -118,6 +118,29 @@
             padding-right: 0 !important;
             margin-top: 0 !important;
             margin-bottom: 1.4rem !important;
+        }
+        .geom-ref {
+            cursor: pointer;
+            border-bottom: 1px dotted rgba(0, 229, 255, 0.55);
+            padding: 0 2px;
+            border-radius: 3px;
+            transition: background-color 0.12s ease, color 0.12s ease;
+        }
+        .geom-ref:hover,
+        .geom-highlight-text {
+            background-color: rgba(0, 255, 255, 0.18) !important;
+            color: #0ff !important;
+            border-bottom-color: #0ff !important;
+        }
+        .etc-act-plate {
+            margin: 0.5rem 0;
+        }
+        .etc-symbolic-concordance {
+            text-align: center;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.92rem;
+            color: var(--book-text-muted, #94a3b8);
+            margin: -0.6rem 0 1.25rem 0;
         }
         </style>
         <section class="level-1" id="module-geometor.etc.render">
@@ -254,12 +277,28 @@
         <span class="sd">    stroke-opacity: 0.85;</span>
         <span class="sd">}</span>
 
+        <span class="sd">#elements line.central_line[data-color-token="orange"] { stroke: #fb923c; stroke-dasharray: 6, 3; }</span>
+        <span class="sd">#elements line.central_line[data-color-token="teal"] { stroke: #2dd4bf; stroke-dasharray: 6, 3; }</span>
+        <span class="sd">#elements line.central_line[data-color-token="blue"] { stroke: #38bdf8; stroke-dasharray: 6, 3; }</span>
+        <span class="sd">#elements line.central_line[data-color-token="orchid"] { stroke: #e879f9; stroke-dasharray: 6, 3; }</span>
+        <span class="sd">#elements line.central_line[data-color-token="pink"] { stroke: #f472b6; stroke-dasharray: 6, 3; }</span>
+        <span class="sd">#elements line.central_line[data-color-token="lime"] { stroke: #a3e635; stroke-dasharray: 6, 3; }</span>
+        <span class="sd">#elements line.central_line[data-color-token="green"] { stroke: #5ec27e; stroke-dasharray: 6, 3; }</span>
+        <span class="sd">#elements line.central_line[data-color-token="purple"] { stroke: #a855f7; stroke-dasharray: 6, 3; }</span>
+
         <span class="sd">#elements line.golden,</span>
         <span class="sd">#elements path.line.golden,</span>
         <span class="sd">#elements line.euler,</span>
         <span class="sd">#elements path.line.euler {</span>
         <span class="sd">    stroke: gold;</span>
         <span class="sd">    stroke-width: 2.1;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">#elements line.strut {</span>
+        <span class="sd">    stroke: gold;</span>
+        <span class="sd">    stroke-width: 2.8;</span>
+        <span class="sd">    stroke-dasharray: none;</span>
+        <span class="sd">    stroke-opacity: 0.95;</span>
         <span class="sd">}</span>
 
         <span class="sd">#elements circle {</span>
@@ -319,10 +358,11 @@
         <span class="sd">}</span>
 
         <span class="sd">#graphics polyline {</span>
-        <span class="sd">    stroke: #36c9;</span>
+        <span class="sd">    stroke: #ffd54f;</span>
         <span class="sd">    fill: none;</span>
-        <span class="sd">    stroke-width: 6;</span>
+        <span class="sd">    stroke-width: 3.2;</span>
         <span class="sd">    vector-effect: non-scaling-stroke;</span>
+        <span class="sd">    cursor: pointer;</span>
         <span class="sd">}</span>
 
         <span class="sd">#graphics polygon {</span>
@@ -334,6 +374,7 @@
         <span class="sd">    marker-start: url(#marker);</span>
         <span class="sd">    marker-mid: url(#marker);</span>
         <span class="sd">    marker-end: url(#marker);</span>
+        <span class="sd">    cursor: pointer;</span>
         <span class="sd">}</span>
 
         <span class="sd">#graphics polygon.secondary {</span>
@@ -342,12 +383,54 @@
         <span class="sd">    stroke-width: 3;</span>
         <span class="sd">}</span>
 
+        <span class="sd">#graphics polygon.subarea-a {</span>
+        <span class="sd">    stroke: rgba(255, 112, 67, 0.72);</span>
+        <span class="sd">    fill: rgba(255, 112, 67, 0.20);</span>
+        <span class="sd">    stroke-width: 2.4;</span>
+        <span class="sd">    marker-start: none;</span>
+        <span class="sd">    marker-mid: none;</span>
+        <span class="sd">    marker-end: none;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">#graphics polygon.subarea-b {</span>
+        <span class="sd">    stroke: rgba(102, 187, 106, 0.72);</span>
+        <span class="sd">    fill: rgba(102, 187, 106, 0.20);</span>
+        <span class="sd">    stroke-width: 2.4;</span>
+        <span class="sd">    marker-start: none;</span>
+        <span class="sd">    marker-mid: none;</span>
+        <span class="sd">    marker-end: none;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">#graphics polygon.subarea-c {</span>
+        <span class="sd">    stroke: rgba(66, 165, 245, 0.72);</span>
+        <span class="sd">    fill: rgba(66, 165, 245, 0.20);</span>
+        <span class="sd">    stroke-width: 2.4;</span>
+        <span class="sd">    marker-start: none;</span>
+        <span class="sd">    marker-mid: none;</span>
+        <span class="sd">    marker-end: none;</span>
+        <span class="sd">}</span>
+
         <span class="sd">#graphics polygon:hover,</span>
         <span class="sd">#graphics polygon.hover,</span>
         <span class="sd">#graphics polyline:hover,</span>
         <span class="sd">#graphics polyline.hover {</span>
         <span class="sd">    stroke: var(--select-color) !important;</span>
         <span class="sd">    stroke-opacity: 1 !important;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">#graphics polygon.subarea-a:hover,</span>
+        <span class="sd">#graphics polygon.subarea-a.hover {</span>
+        <span class="sd">    fill: rgba(255, 112, 67, 0.38) !important;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">#graphics polygon.subarea-b:hover,</span>
+        <span class="sd">#graphics polygon.subarea-b.hover {</span>
+        <span class="sd">    fill: rgba(102, 187, 106, 0.38) !important;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">#graphics polygon.subarea-c:hover,</span>
+        <span class="sd">#graphics polygon.subarea-c.hover {</span>
+        <span class="sd">    fill: rgba(66, 165, 245, 0.38) !important;</span>
         <span class="sd">}</span>
 
         <span class="sd">#labels text {</span>
@@ -432,13 +515,144 @@
         <span class="sd">    user-select: none;</span>
         <span class="sd">}</span>
 
-        <span class="sd">.etc-svg-btn:hover {</span>
-        <span class="sd">    background: #0ff;</span>
-        <span class="sd">    color: #121212;</span>
+        <span class="sd">.etc-svg-btn:hover,</span>
+        <span class="sd">.etc-svg-btn.active {</span>
+        <span class="sd">    background: rgba(0, 255, 255, 0.14);</span>
+        <span class="sd">    color: #0ff;</span>
         <span class="sd">    border-color: #0ff;</span>
         <span class="sd">}</span>
 
-        <span class="sd">.etc-graphics-panel {</span>
+        <span class="sd">.etc-symbolic-hud {</span>
+        <span class="sd">    position: absolute;</span>
+        <span class="sd">    left: 10px;</span>
+        <span class="sd">    bottom: 10px;</span>
+        <span class="sd">    max-width: min(460px, calc(100% - 20px));</span>
+        <span class="sd">    background: rgba(14, 16, 22, 0.93);</span>
+        <span class="sd">    border: 1px solid rgba(0, 255, 255, 0.35);</span>
+        <span class="sd">    border-radius: 6px;</span>
+        <span class="sd">    padding: 8px 12px;</span>
+        <span class="sd">    color: #eaeaea;</span>
+        <span class="sd">    font-family: "Fira Sans Condensed", system-ui, -apple-system, sans-serif;</span>
+        <span class="sd">    font-size: 13px;</span>
+        <span class="sd">    line-height: 1.38;</span>
+        <span class="sd">    z-index: 24;</span>
+        <span class="sd">    pointer-events: none;</span>
+        <span class="sd">    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.58);</span>
+        <span class="sd">    opacity: 0;</span>
+        <span class="sd">    transform: translateY(4px);</span>
+        <span class="sd">    transition: opacity 0.12s ease, transform 0.12s ease;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">.etc-symbolic-hud.is-visible {</span>
+        <span class="sd">    opacity: 1;</span>
+        <span class="sd">    transform: translateY(0);</span>
+        <span class="sd">}</span>
+
+        <span class="sd">.etc-hud-head {</span>
+        <span class="sd">    display: flex;</span>
+        <span class="sd">    align-items: baseline;</span>
+        <span class="sd">    gap: 7px;</span>
+        <span class="sd">    border-bottom: 1px solid rgba(255, 255, 255, 0.1);</span>
+        <span class="sd">    padding-bottom: 4px;</span>
+        <span class="sd">    margin-bottom: 5px;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">.etc-hud-dot {</span>
+        <span class="sd">    width: 8px;</span>
+        <span class="sd">    height: 8px;</span>
+        <span class="sd">    border-radius: 50%;</span>
+        <span class="sd">    flex-shrink: 0;</span>
+        <span class="sd">    align-self: center;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">.etc-hud-id {</span>
+        <span class="sd">    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;</span>
+        <span class="sd">    font-weight: 700;</span>
+        <span class="sd">    color: #0ff;</span>
+        <span class="sd">    font-size: 13px;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">.etc-hud-title {</span>
+        <span class="sd">    font-weight: 600;</span>
+        <span class="sd">    color: #f5f5f5;</span>
+        <span class="sd">    flex: 1;</span>
+        <span class="sd">    overflow: hidden;</span>
+        <span class="sd">    text-overflow: ellipsis;</span>
+        <span class="sd">    white-space: nowrap;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">.etc-hud-kind {</span>
+        <span class="sd">    font-size: 10.5px;</span>
+        <span class="sd">    text-transform: uppercase;</span>
+        <span class="sd">    letter-spacing: 0.06em;</span>
+        <span class="sd">    color: #94a3b8;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">.etc-hud-rows {</span>
+        <span class="sd">    display: grid;</span>
+        <span class="sd">    grid-template-columns: auto 1fr;</span>
+        <span class="sd">    gap: 2px 10px;</span>
+        <span class="sd">    align-items: baseline;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">.etc-hud-key {</span>
+        <span class="sd">    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;</span>
+        <span class="sd">    font-size: 11.5px;</span>
+        <span class="sd">    color: #94a3b8;</span>
+        <span class="sd">    text-align: right;</span>
+        <span class="sd">    white-space: nowrap;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">.etc-hud-val {</span>
+        <span class="sd">    color: #f8fafc;</span>
+        <span class="sd">    font-size: 13.5px;</span>
+        <span class="sd">    overflow-wrap: anywhere;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">.etc-hud-val .katex {</span>
+        <span class="sd">    font-size: 1.02em;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">.etc-hud-approx {</span>
+        <span class="sd">    margin-top: 4px;</span>
+        <span class="sd">    padding-top: 3px;</span>
+        <span class="sd">    border-top: 1px dashed rgba(255, 255, 255, 0.09);</span>
+        <span class="sd">    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;</span>
+        <span class="sd">    font-size: 11px;</span>
+        <span class="sd">    color: #8b9bb4;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">.etc-math-fallback {</span>
+        <span class="sd">    font-family: "EB Garamond", Georgia, serif;</span>
+        <span class="sd">    font-size: 1.06em;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">.etc-math-frac {</span>
+        <span class="sd">    display: inline-flex;</span>
+        <span class="sd">    flex-direction: column;</span>
+        <span class="sd">    vertical-align: middle;</span>
+        <span class="sd">    text-align: center;</span>
+        <span class="sd">    padding: 0 2px;</span>
+        <span class="sd">    font-size: 0.88em;</span>
+        <span class="sd">    line-height: 1.05;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">.etc-math-num {</span>
+        <span class="sd">    border-bottom: 1px solid rgba(248, 250, 252, 0.65);</span>
+        <span class="sd">    padding: 0 2px 1px;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">.etc-math-den {</span>
+        <span class="sd">    padding: 1px 2px 0;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">.etc-math-rad {</span>
+        <span class="sd">    border-top: 1px solid rgba(248, 250, 252, 0.6);</span>
+        <span class="sd">    padding: 0 2px;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">.etc-graphics-panel,</span>
+        <span class="sd">.etc-act-plate {</span>
         <span class="sd">    width: 100%;</span>
         <span class="sd">    background: #141414;</span>
         <span class="sd">    border: 1px solid #333;</span>
@@ -446,9 +660,48 @@
         <span class="sd">    overflow: hidden;</span>
         <span class="sd">}</span>
 
-        <span class="sd">.etc-graphics-panel svg.geometor-etc-drawing {</span>
+        <span class="sd">.etc-graphics-panel svg.geometor-etc-drawing,</span>
+        <span class="sd">.etc-act-plate svg.geometor-etc-drawing {</span>
         <span class="sd">    border: none;</span>
         <span class="sd">    border-radius: 0;</span>
+        <span class="sd">    display: block;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">svg.geometor-etc-drawing .etc-plate-poly {</span>
+        <span class="sd">    cursor: pointer;</span>
+        <span class="sd">    transition: fill-opacity 0.14s ease, stroke 0.14s ease;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">svg.geometor-etc-drawing .etc-plate-poly.hover {</span>
+        <span class="sd">    stroke: var(--select-color) !important;</span>
+        <span class="sd">    stroke-width: 2.8px !important;</span>
+        <span class="sd">    fill-opacity: 0.44 !important;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">svg.geometor-etc-drawing .etc-plate-strut,</span>
+        <span class="sd">svg.geometor-etc-drawing .etc-plate-line,</span>
+        <span class="sd">svg.geometor-etc-drawing .etc-plate-circle,</span>
+        <span class="sd">svg.geometor-etc-drawing .etc-plate-pt,</span>
+        <span class="sd">svg.geometor-etc-drawing .etc-plate-panel {</span>
+        <span class="sd">    cursor: pointer;</span>
+        <span class="sd">}</span>
+
+        <span class="sd">svg.geometor-etc-drawing .etc-plate-strut.hover,</span>
+        <span class="sd">svg.geometor-etc-drawing .etc-plate-line.hover,</span>
+        <span class="sd">svg.geometor-etc-drawing .etc-plate-circle.hover {</span>
+        <span class="sd">    stroke: var(--select-color) !important;</span>
+        <span class="sd">    filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.72));</span>
+        <span class="sd">}</span>
+
+        <span class="sd">svg.geometor-etc-drawing .etc-plate-pt.hover {</span>
+        <span class="sd">    stroke: var(--select-color) !important;</span>
+        <span class="sd">    stroke-width: 3.6px !important;</span>
+        <span class="sd">    filter: drop-shadow(0 0 6px rgba(0, 255, 255, 0.85));</span>
+        <span class="sd">}</span>
+
+        <span class="sd">svg.geometor-etc-drawing .etc-plate-panel.hover &gt; rect.etc-panel-border {</span>
+        <span class="sd">    stroke: var(--select-color) !important;</span>
+        <span class="sd">    stroke-width: 2.8px !important;</span>
         <span class="sd">}</span>
 
         <span class="sd">.etc-triangle-tabs {</span>
@@ -497,462 +750,718 @@
         <dl class="py data">
         <dt class="sig sig-object py" id="geometor.etc.render.INTERACTIVE_SVG_JS">
         <span class="sig-prename descclassname"><span class="pre">geometor.etc.render.</span></span><span class="sig-name descname"><span class="pre">INTERACTIVE_SVG_JS</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">Multiline-String</span></span><a class="headerlink" href="#geometor.etc.render.INTERACTIVE_SVG_JS" title="Link to this definition">¶</a></dt>
-        <dd><details><summary>Show Value</summary><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">"""</span>
-        <span class="sd">(function () {</span>
-        <span class="sd">    const scriptEl = document.currentScript;</span>
-        <span class="sd">    const svg = scriptEl ? scriptEl.closest('svg') : document.querySelector('svg.geometor-etc-drawing');</span>
-        <span class="sd">    if (!svg || svg.dataset.etcInteractiveInit === '1') return;</span>
-        <span class="sd">    if (svg.closest('.excerpt, .collection, a') || svg.classList.contains('euclid-thumbnail')) return;</span>
-        <span class="sd">    svg.dataset.etcInteractiveInit = '1';</span>
+        <dd><details><summary>Show Value</summary><pre class="literal-block">&quot;&quot;&quot;
+        (function () {
+            const scriptEl = document.currentScript;
+            const svg = scriptEl ? scriptEl.closest('svg') : document.querySelector('svg.geometor-etc-drawing');
+            if (!svg || svg.dataset.etcInteractiveInit === '1') return;
+            if (svg.closest('.excerpt, .collection, a') || svg.classList.contains('euclid-thumbnail')) return;
+            svg.dataset.etcInteractiveInit = '1';
 
-        <span class="sd">    const initVbAttr = svg.getAttribute('data-initial-viewbox') || svg.getAttribute('viewBox');</span>
-        <span class="sd">    const initialViewBox = initVbAttr.split(/\s+/).map(Number);</span>
+            const initVbAttr = svg.getAttribute('data-initial-viewbox') || svg.getAttribute('viewBox');
+            const initialViewBox = initVbAttr.split(/\s+/).map(Number);
 
-        <span class="sd">    // Parse embedded element metadata catalog</span>
-        <span class="sd">    let elementsCatalog = {};</span>
-        <span class="sd">    const metaEl = svg.querySelector('script.etc-elements-meta');</span>
-        <span class="sd">    if (metaEl) {</span>
-        <span class="sd">        try {</span>
-        <span class="sd">            elementsCatalog = JSON.parse(metaEl.textContent);</span>
-        <span class="sd">        } catch (e) {}</span>
-        <span class="sd">    }</span>
+            let elementsCatalog = {};
+            const metaEl = svg.querySelector('script.etc-elements-meta');
+            if (metaEl) {
+                try {
+                    elementsCatalog = JSON.parse(metaEl.textContent);
+                } catch (e) {}
+            }
 
-        <span class="sd">    const pointsGroup = svg.querySelector('#points');</span>
-        <span class="sd">    const elementsGroup = svg.querySelector('#elements');</span>
-        <span class="sd">    const graphicsGroup = svg.querySelector('#graphics');</span>
-        <span class="sd">    const highlightsGroup = svg.querySelector('#highlights');</span>
-        <span class="sd">    const labelsGroup = svg.querySelector('#labels');</span>
+            const pointsGroup = svg.querySelector('#points');
+            const elementsGroup = svg.querySelector('#elements');
+            const graphicsGroup = svg.querySelector('#graphics');
+            const highlightsGroup = svg.querySelector('#highlights');
+            const labelsGroup = svg.querySelector('#labels');
 
-        <span class="sd">    const pointEls = pointsGroup ? Array.from(pointsGroup.querySelectorAll('circle')) : [];</span>
-        <span class="sd">    const structEls = elementsGroup ? Array.from(elementsGroup.querySelectorAll('line, circle')) : [];</span>
-        <span class="sd">    const polyEls = graphicsGroup ? Array.from(graphicsGroup.querySelectorAll('polygon, polyline')) : [];</span>
-        <span class="sd">    const labelEls = labelsGroup ? Array.from(labelsGroup.querySelectorAll('text[data-point-id]')) : [];</span>
-        <span class="sd">    const subtitleEl = labelsGroup ? labelsGroup.querySelector('text.subtitle-label') : null;</span>
+            const pointEls = pointsGroup ? Array.from(pointsGroup.querySelectorAll('circle')) : [];
+            const labelEls = labelsGroup ? Array.from(labelsGroup.querySelectorAll('text[data-point-id]')) : [];
+            const subtitleEl = labelsGroup ? labelsGroup.querySelector('text.subtitle-label') : null;
 
-        <span class="sd">    function getViewBox() {</span>
-        <span class="sd">        return svg.getAttribute('viewBox').split(/\s+/).map(Number);</span>
-        <span class="sd">    }</span>
+            function escapeHtml(str) {
+                return String(str || '')
+                    .replace(/&amp;/g, '&amp;amp;')
+                    .replace(/&lt;/g, '&amp;lt;')
+                    .replace(/&gt;/g, '&amp;gt;')
+                    .replace(/&quot;/g, '&amp;quot;');
+            }
 
-        <span class="sd">    function scaleViewElements() {</span>
-        <span class="sd">        const rect = svg.getBoundingClientRect();</span>
-        <span class="sd">        const widthPx = rect.width || 800;</span>
-        <span class="sd">        const vb = getViewBox();</span>
-        <span class="sd">        const unitsPerPx = vb[2] / widthPx;</span>
+            function formatIdHtml(idStr) {
+                const s = escapeHtml(idStr);
+                return s.replace(/_\{([^}]+)\}/g, '&lt;sub&gt;$1&lt;/sub&gt;').replace(/_([A-Za-z0-9']+)/g, '&lt;sub&gt;$1&lt;/sub&gt;');
+            }
 
-        <span class="sd">        const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');</span>
-        <span class="sd">        pointEls.forEach(c =&gt; {</span>
-        <span class="sd">            const isTarget = c.classList.contains('target') || c.classList.contains('selected');</span>
-        <span class="sd">            const isGuide = c.classList.contains('guide');</span>
-        <span class="sd">            const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);</span>
-        <span class="sd">            c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));</span>
-        <span class="sd">        });</span>
+            function extractBraced(src, startIdx) {
+                if (src[startIdx] !== '{') return null;
+                let depth = 0;
+                for (let i = startIdx; i &lt; src.length; i++) {
+                    if (src[i] === '{') depth++;
+                    else if (src[i] === '}') {
+                        depth--;
+                        if (depth === 0) {
+                            return { content: src.slice(startIdx + 1, i), next: i + 1 };
+                        }
+                    }
+                }
+                return null;
+            }
 
-        <span class="sd">        const fontSize = 20.25 * unitsPerPx;</span>
-        <span class="sd">        const guideFontSize = 17.5 * unitsPerPx;</span>
-        <span class="sd">        labelEls.forEach(lbl =&gt; {</span>
-        <span class="sd">            const cx = parseFloat(lbl.getAttribute('data-anchor-x') || '0');</span>
-        <span class="sd">            const cy = parseFloat(lbl.getAttribute('data-anchor-y') || '0');</span>
-        <span class="sd">            const oxPx = parseFloat(lbl.getAttribute('data-offset-x') || '12');</span>
-        <span class="sd">            const oyPx = parseFloat(lbl.getAttribute('data-offset-y') || '-10.5');</span>
-        <span class="sd">            const isGuideLbl = lbl.classList.contains('guide-label');</span>
-        <span class="sd">            lbl.setAttribute('x', (cx + oxPx * unitsPerPx).toFixed(6));</span>
-        <span class="sd">            lbl.setAttribute('y', (cy + oyPx * unitsPerPx).toFixed(6));</span>
-        <span class="sd">            lbl.setAttribute('font-size', (isGuideLbl ? guideFontSize : fontSize).toFixed(6));</span>
-        <span class="sd">        });</span>
+            function convertLatexFallback(tex) {
+                let s = String(tex || '');
+                s = s.replace(/\\left\s*([(\[{|])/g, '$1').replace(/\\right\s*([)\]}|])/g, '$1');
+                s = s.replace(/\\;/g, ' ').replace(/\\,/g, '\u2009').replace(/\\quad/g, '  ');
+                s = s.replace(/\\varphi|\\phi/g, 'φ')
+                     .replace(/\\Delta/g, 'Δ')
+                     .replace(/\\alpha/g, 'α')
+                     .replace(/\\beta/g, 'β')
+                     .replace(/\\gamma/g, 'γ')
+                     .replace(/\\cdot/g, '·')
+                     .replace(/\\approx/g, '≈')
+                     .replace(/\\infty/g, '∞');
 
-        <span class="sd">        if (subtitleEl) {</span>
-        <span class="sd">            const subX = vb[0] + 20.0 * unitsPerPx;</span>
-        <span class="sd">            const subY = vb[1] + vb[3] - 18.0 * unitsPerPx;</span>
-        <span class="sd">            subtitleEl.setAttribute('x', subX.toFixed(6));</span>
-        <span class="sd">            subtitleEl.setAttribute('y', subY.toFixed(6));</span>
-        <span class="sd">            subtitleEl.setAttribute('font-size', (17.25 * unitsPerPx).toFixed(6));</span>
-        <span class="sd">        }</span>
-        <span class="sd">    }</span>
+                let out = '';
+                let i = 0;
+                while (i &lt; s.length) {
+                    if (s.startsWith('\\frac', i)) {
+                        let k = i + 5;
+                        while (k &lt; s.length &amp;&amp; s[k] === ' ') k++;
+                        const numB = extractBraced(s, k);
+                        if (numB) {
+                            let k2 = numB.next;
+                            while (k2 &lt; s.length &amp;&amp; s[k2] === ' ') k2++;
+                            const denB = extractBraced(s, k2);
+                            if (denB) {
+                                out += '&lt;span class=&quot;etc-math-frac&quot;&gt;&lt;span class=&quot;etc-math-num&quot;&gt;' +
+                                    convertLatexFallback(numB.content) +
+                                    '&lt;/span&gt;&lt;span class=&quot;etc-math-den&quot;&gt;' +
+                                    convertLatexFallback(denB.content) +
+                                    '&lt;/span&gt;&lt;/span&gt;';
+                                i = denB.next;
+                                continue;
+                            }
+                        }
+                    }
+                    if (s.startsWith('\\sqrt', i)) {
+                        let k = i + 5;
+                        while (k &lt; s.length &amp;&amp; s[k] === ' ') k++;
+                        const radB = extractBraced(s, k);
+                        if (radB) {
+                            out += '√&lt;span class=&quot;etc-math-rad&quot;&gt;' + convertLatexFallback(radB.content) + '&lt;/span&gt;';
+                            i = radB.next;
+                            continue;
+                        }
+                    }
+                    if ((s[i] === '_' || s[i] === '^') &amp;&amp; i + 1 &lt; s.length) {
+                        const tag = s[i] === '_' ? 'sub' : 'sup';
+                        if (s[i + 1] === '{') {
+                            const subB = extractBraced(s, i + 1);
+                            if (subB) {
+                                out += `&lt;${tag}&gt;` + convertLatexFallback(subB.content) + `&lt;/${tag}&gt;`;
+                                i = subB.next;
+                                continue;
+                            }
+                        } else {
+                            out += `&lt;${tag}&gt;` + escapeHtml(s[i + 1]) + `&lt;/${tag}&gt;`;
+                            i += 2;
+                            continue;
+                        }
+                    }
+                    out += escapeHtml(s[i]);
+                    i++;
+                }
+                return out;
+            }
 
-        <span class="sd">    function setViewBox(vb) {</span>
-        <span class="sd">        svg.setAttribute('viewBox', `${vb[0].toFixed(6)} ${vb[1].toFixed(6)} ${vb[2].toFixed(6)} ${vb[3].toFixed(6)}`);</span>
-        <span class="sd">        scaleViewElements();</span>
-        <span class="sd">    }</span>
+            function renderMathHtml(latexStr, prettyStr) {
+                if (!latexStr) return escapeHtml(prettyStr || '');
+                if (typeof window !== 'undefined' &amp;&amp; window.katex &amp;&amp; typeof window.katex.renderToString === 'function') {
+                    try {
+                        return window.katex.renderToString(latexStr, { throwOnError: false, displayMode: false });
+                    } catch (e) {}
+                }
+                return '&lt;span class=&quot;etc-math-fallback&quot;&gt;' + convertLatexFallback(latexStr) + '&lt;/span&gt;';
+            }
 
-        <span class="sd">    function zoomBy(factor, clientX, clientY) {</span>
-        <span class="sd">        const vb = getViewBox();</span>
-        <span class="sd">        let [x, y, w, h] = vb;</span>
-        <span class="sd">        const rect = svg.getBoundingClientRect();</span>
-        <span class="sd">        const relX = (clientX !== undefined &amp;&amp; rect.width &gt; 0) ? (clientX - rect.left) / rect.width : 0.5;</span>
-        <span class="sd">        const relY = (clientY !== undefined &amp;&amp; rect.height &gt; 0) ? (clientY - rect.top) / rect.height : 0.5;</span>
-        <span class="sd">        const focusX = x + relX * w;</span>
-        <span class="sd">        const focusY = y + relY * h;</span>
-        <span class="sd">        const newW = Math.min(Math.max(w * factor, 0.002), 50.0);</span>
-        <span class="sd">        const newH = Math.min(Math.max(h * factor, 0.002), 50.0);</span>
-        <span class="sd">        const newX = focusX - relX * newW;</span>
-        <span class="sd">        const newY = focusY - relY * newH;</span>
-        <span class="sd">        setViewBox([newX, newY, newW, newH]);</span>
-        <span class="sd">    }</span>
+            function getViewBox() {
+                return svg.getAttribute('viewBox').split(/\s+/).map(Number);
+            }
 
-        <span class="sd">    function resetView() {</span>
-        <span class="sd">        setViewBox([...initialViewBox]);</span>
-        <span class="sd">    }</span>
+            function scaleViewElements() {
+                const rect = svg.getBoundingClientRect();
+                const widthPx = rect.width || 800;
+                const vb = getViewBox();
+                const unitsPerPx = vb[2] / widthPx;
 
-        <span class="sd">    // Expose controller API on the SVG element for external toolbar buttons</span>
-        <span class="sd">    svg._etcController = {</span>
-        <span class="sd">        zoomIn: () =&gt; zoomBy(1 / 1.25),</span>
-        <span class="sd">        zoomOut: () =&gt; zoomBy(1.25),</span>
-        <span class="sd">        resetView: resetView,</span>
-        <span class="sd">        toggleLabels: () =&gt; svg.classList.toggle('hide-labels'),</span>
-        <span class="sd">        toggleGuides: () =&gt; svg.classList.toggle('hide-guides'),</span>
-        <span class="sd">        scaleViewElements: scaleViewElements,</span>
-        <span class="sd">    };</span>
+                const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
+                pointEls.forEach(c =&gt; {
+                    const isTarget = c.classList.contains('target') || c.classList.contains('selected');
+                    const isGuide = c.classList.contains('guide');
+                    const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
+                    c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
+                });
 
-        <span class="sd">    // Ensure Toolbar and Triangle Tabs exist if running inside an HTML document</span>
-        <span class="sd">    if (document.body &amp;&amp; document.documentElement.tagName.toLowerCase() === 'html') {</span>
-        <span class="sd">        const parent = svg.parentElement;</span>
-        <span class="sd">        if (parent &amp;&amp; !parent.classList.contains('etc-svg-stage')) {</span>
-        <span class="sd">            const stage = document.createElement('div');</span>
-        <span class="sd">            stage.className = 'etc-svg-stage';</span>
-        <span class="sd">            parent.insertBefore(stage, svg);</span>
-        <span class="sd">            stage.appendChild(svg);</span>
+                const fontSize = 20.25 * unitsPerPx;
+                const guideFontSize = 17.5 * unitsPerPx;
+                labelEls.forEach(lbl =&gt; {
+                    const cx = parseFloat(lbl.getAttribute('data-anchor-x') || '0');
+                    const cy = parseFloat(lbl.getAttribute('data-anchor-y') || '0');
+                    const oxPx = parseFloat(lbl.getAttribute('data-offset-x') || '12');
+                    const oyPx = parseFloat(lbl.getAttribute('data-offset-y') || '-10.5');
+                    const isGuideLbl = lbl.classList.contains('guide-label');
+                    lbl.setAttribute('x', (cx + oxPx * unitsPerPx).toFixed(6));
+                    lbl.setAttribute('y', (cy + oyPx * unitsPerPx).toFixed(6));
+                    lbl.setAttribute('font-size', (isGuideLbl ? guideFontSize : fontSize).toFixed(6));
+                });
 
-        <span class="sd">            const toolbar = document.createElement('div');</span>
-        <span class="sd">            toolbar.className = 'etc-svg-toolbar';</span>
-        <span class="sd">            const btns = [</span>
-        <span class="sd">                { label: '+', title: 'Zoom In (or scroll wheel)', action: () =&gt; zoomBy(1 / 1.25) },</span>
-        <span class="sd">                { label: '−', title: 'Zoom Out (or scroll wheel)', action: () =&gt; zoomBy(1.25) },</span>
-        <span class="sd">                { label: '⟲ Fit', title: 'Reset View (or double-click canvas)', action: () =&gt; resetView() },</span>
-        <span class="sd">            ];</span>
-        <span class="sd">            if (svg.querySelector('.incident')) {</span>
-        <span class="sd">                btns.push({</span>
-        <span class="sd">                    label: 'Lines',</span>
-        <span class="sd">                    toggleKey: 'lines',</span>
-        <span class="sd">                    title: 'Toggle Incident Central Lines',</span>
-        <span class="sd">                    isActive: () =&gt; svg.classList.contains('show-lines'),</span>
-        <span class="sd">                    action: () =&gt; svg.classList.toggle('show-lines'),</span>
-        <span class="sd">                });</span>
-        <span class="sd">            }</span>
-        <span class="sd">            btns.push({</span>
-        <span class="sd">                label: 'Labels',</span>
-        <span class="sd">                toggleKey: 'labels',</span>
-        <span class="sd">                title: 'Toggle Point Labels',</span>
-        <span class="sd">                isActive: () =&gt; !svg.classList.contains('hide-labels'),</span>
-        <span class="sd">                action: () =&gt; svg.classList.toggle('hide-labels'),</span>
-        <span class="sd">            });</span>
-        <span class="sd">            if (svg.querySelector('.guide')) {</span>
-        <span class="sd">                btns.push({</span>
-        <span class="sd">                    label: 'Guides',</span>
-        <span class="sd">                    toggleKey: 'guides',</span>
-        <span class="sd">                    title: 'Toggle Construction Guides',</span>
-        <span class="sd">                    isActive: () =&gt; !svg.classList.contains('hide-guides'),</span>
-        <span class="sd">                    action: () =&gt; svg.classList.toggle('hide-guides'),</span>
-        <span class="sd">                });</span>
-        <span class="sd">            }</span>
-        <span class="sd">            btns.forEach(b =&gt; {</span>
-        <span class="sd">                const btn = document.createElement('button');</span>
-        <span class="sd">                btn.type = 'button';</span>
-        <span class="sd">                btn.className = 'etc-svg-btn';</span>
-        <span class="sd">                if (b.toggleKey) {</span>
-        <span class="sd">                    btn.dataset.toggleKey = b.toggleKey;</span>
-        <span class="sd">                    btn.classList.toggle('active', b.isActive());</span>
-        <span class="sd">                }</span>
-        <span class="sd">                btn.textContent = b.label;</span>
-        <span class="sd">                btn.title = b.title;</span>
-        <span class="sd">                btn.addEventListener('click', (e) =&gt; {</span>
-        <span class="sd">                    e.preventDefault();</span>
-        <span class="sd">                    e.stopPropagation();</span>
-        <span class="sd">                    b.action();</span>
-        <span class="sd">                    if (b.isActive) {</span>
-        <span class="sd">                        btn.classList.toggle('active', b.isActive());</span>
-        <span class="sd">                    }</span>
-        <span class="sd">                });</span>
-        <span class="sd">                toolbar.appendChild(btn);</span>
-        <span class="sd">            });</span>
-        <span class="sd">            stage.appendChild(toolbar);</span>
-        <span class="sd">        }</span>
+                if (subtitleEl) {
+                    const subX = vb[0] + 20.0 * unitsPerPx;
+                    const subY = vb[1] + vb[3] - 18.0 * unitsPerPx;
+                    subtitleEl.setAttribute('x', subX.toFixed(6));
+                    subtitleEl.setAttribute('y', subY.toFixed(6));
+                    subtitleEl.setAttribute('font-size', (17.25 * unitsPerPx).toFixed(6));
+                }
+            }
 
-        <span class="sd">        const panel = svg.closest('.etc-graphics-panel');</span>
-        <span class="sd">        if (panel &amp;&amp; panel.dataset.etcTabsInit !== '1') {</span>
-        <span class="sd">            panel.dataset.etcTabsInit = '1';</span>
-        <span class="sd">            const tabBtns = Array.from(panel.querySelectorAll('.etc-tab-btn'));</span>
+            function setViewBox(vb) {
+                svg.setAttribute('viewBox', `${vb[0].toFixed(6)} ${vb[1].toFixed(6)} ${vb[2].toFixed(6)} ${vb[3].toFixed(6)}`);
+                scaleViewElements();
+            }
 
-        <span class="sd">            tabBtns.forEach(btn =&gt; {</span>
-        <span class="sd">                btn.addEventListener('click', (e) =&gt; {</span>
-        <span class="sd">                    e.preventDefault();</span>
-        <span class="sd">                    const targetTab = btn.getAttribute('data-tab');</span>
-        <span class="sd">                    const tabPanes = Array.from(panel.querySelectorAll('.etc-tab-pane'));</span>
-        <span class="sd">                    const prevPane = panel.querySelector('.etc-tab-pane.active');</span>
-        <span class="sd">                    const prevSvg = prevPane ? prevPane.querySelector('svg.geometor-etc-drawing') : null;</span>
-        <span class="sd">                    const hideLabels = prevSvg ? prevSvg.classList.contains('hide-labels') : false;</span>
-        <span class="sd">                    const hideGuides = prevSvg ? prevSvg.classList.contains('hide-guides') : false;</span>
-        <span class="sd">                    const showLines = prevSvg ? prevSvg.classList.contains('show-lines') : false;</span>
+            function zoomBy(factor, clientX, clientY) {
+                const vb = getViewBox();
+                let [x, y, w, h] = vb;
+                const rect = svg.getBoundingClientRect();
+                const relX = (clientX !== undefined &amp;&amp; rect.width &gt; 0) ? (clientX - rect.left) / rect.width : 0.5;
+                const relY = (clientY !== undefined &amp;&amp; rect.height &gt; 0) ? (clientY - rect.top) / rect.height : 0.5;
+                const focusX = x + relX * w;
+                const focusY = y + relY * h;
+                const baseW = Math.max(initialViewBox[2] || 1.0, 0.2);
+                const baseH = Math.max(initialViewBox[3] || 1.0, 0.2);
+                const newW = Math.min(Math.max(w * factor, baseW * 0.002), baseW * 30.0);
+                const newH = Math.min(Math.max(h * factor, baseH * 0.002), baseH * 30.0);
+                const newX = focusX - relX * newW;
+                const newY = focusY - relY * newH;
+                setViewBox([newX, newY, newW, newH]);
+            }
 
-        <span class="sd">                    tabBtns.forEach(b =&gt; {</span>
-        <span class="sd">                        const isMatch = b.getAttribute('data-tab') === targetTab;</span>
-        <span class="sd">                        b.classList.toggle('active', isMatch);</span>
-        <span class="sd">                        b.setAttribute('aria-selected', isMatch ? 'true' : 'false');</span>
-        <span class="sd">                    });</span>
+            function resetView() {
+                setViewBox([...initialViewBox]);
+            }
 
-        <span class="sd">                    tabPanes.forEach(pane =&gt; {</span>
-        <span class="sd">                        const isMatch = pane.getAttribute('data-tab-pane') === targetTab;</span>
-        <span class="sd">                        pane.classList.toggle('active', isMatch);</span>
-        <span class="sd">                        pane.style.display = isMatch ? 'block' : 'none';</span>
-        <span class="sd">                        if (isMatch) {</span>
-        <span class="sd">                            const paneSvg = pane.querySelector('svg.geometor-etc-drawing');</span>
-        <span class="sd">                            if (paneSvg) {</span>
-        <span class="sd">                                paneSvg.classList.toggle('hide-labels', hideLabels);</span>
-        <span class="sd">                                paneSvg.classList.toggle('hide-guides', hideGuides);</span>
-        <span class="sd">                                paneSvg.classList.toggle('show-lines', showLines);</span>
-        <span class="sd">                                const paneToolbar = pane.querySelector('.etc-svg-toolbar');</span>
-        <span class="sd">                                if (paneToolbar) {</span>
-        <span class="sd">                                    const lBtn = paneToolbar.querySelector('[data-toggle-key="lines"]');</span>
-        <span class="sd">                                    if (lBtn) lBtn.classList.toggle('active', showLines);</span>
-        <span class="sd">                                    const lblBtn = paneToolbar.querySelector('[data-toggle-key="labels"]');</span>
-        <span class="sd">                                    if (lblBtn) lblBtn.classList.toggle('active', !hideLabels);</span>
-        <span class="sd">                                    const gBtn = paneToolbar.querySelector('[data-toggle-key="guides"]');</span>
-        <span class="sd">                                    if (gBtn) gBtn.classList.toggle('active', !hideGuides);</span>
-        <span class="sd">                                }</span>
-        <span class="sd">                                if (paneSvg._etcController) {</span>
-        <span class="sd">                                    paneSvg._etcController.scaleViewElements();</span>
-        <span class="sd">                                    requestAnimationFrame(() =&gt; paneSvg._etcController.scaleViewElements());</span>
-        <span class="sd">                                }</span>
-        <span class="sd">                            }</span>
-        <span class="sd">                        }</span>
-        <span class="sd">                    });</span>
+            let hudEl = null;
 
-        <span class="sd">                    const figureEl = panel.closest('figure');</span>
-        <span class="sd">                    const captionP = figureEl ? (figureEl.querySelector('figcaption .caption-text') || figureEl.querySelector('figcaption p')) : null;</span>
-        <span class="sd">                    if (captionP) {</span>
-        <span class="sd">                        if (!captionP.dataset.origHtml) {</span>
-        <span class="sd">                            captionP.dataset.origHtml = captionP.innerHTML;</span>
-        <span class="sd">                        }</span>
-        <span class="sd">                        const capHtml = btn.getAttribute('data-caption-html');</span>
-        <span class="sd">                        if (targetTab === 'acute' &amp;&amp; captionP.dataset.origHtml) {</span>
-        <span class="sd">                            captionP.innerHTML = captionP.dataset.origHtml;</span>
-        <span class="sd">                        } else if (capHtml) {</span>
-        <span class="sd">                            captionP.innerHTML = capHtml;</span>
-        <span class="sd">                        }</span>
-        <span class="sd">                    }</span>
-        <span class="sd">                });</span>
-        <span class="sd">            });</span>
-        <span class="sd">        }</span>
-        <span class="sd">    }</span>
+            svg._etcController = {
+                zoomIn: () =&gt; zoomBy(1 / 1.25),
+                zoomOut: () =&gt; zoomBy(1.25),
+                resetView: resetView,
+                toggleLabels: () =&gt; svg.classList.toggle('hide-labels'),
+                toggleGuides: () =&gt; svg.classList.toggle('hide-guides'),
+                scaleViewElements: scaleViewElements,
+            };
 
-        <span class="sd">    let activeHoveredId = null;</span>
+            if (document.body &amp;&amp; document.documentElement.tagName.toLowerCase() === 'html') {
+                let stage = svg.parentElement;
+                if (stage &amp;&amp; !stage.classList.contains('etc-svg-stage')) {
+                    const newStage = document.createElement('div');
+                    newStage.className = 'etc-svg-stage';
+                    stage.insertBefore(newStage, svg);
+                    newStage.appendChild(svg);
+                    stage = newStage;
 
-        <span class="sd">    function clearHover() {</span>
-        <span class="sd">        if (!activeHoveredId) return;</span>
-        <span class="sd">        activeHoveredId = null;</span>
-        <span class="sd">        svg.querySelectorAll('.hover').forEach(el =&gt; el.classList.remove('hover'));</span>
-        <span class="sd">        svg.querySelectorAll('.hover-label').forEach(el =&gt; el.classList.remove('hover-label'));</span>
-        <span class="sd">        if (highlightsGroup) {</span>
-        <span class="sd">            highlightsGroup.querySelectorAll('.highlight-segment').forEach(el =&gt; {</span>
-        <span class="sd">                el.style.display = 'none';</span>
-        <span class="sd">            });</span>
-        <span class="sd">        }</span>
-        <span class="sd">        if (typeof document !== 'undefined') {</span>
-        <span class="sd">            document.querySelectorAll('.geom-highlight-text').forEach(el =&gt; {</span>
-        <span class="sd">                el.classList.remove('geom-highlight-text');</span>
-        <span class="sd">            });</span>
-        <span class="sd">        }</span>
-        <span class="sd">    }</span>
+                    const toolbar = document.createElement('div');
+                    toolbar.className = 'etc-svg-toolbar';
+                    const btns = [
+                        { label: '+', title: 'Zoom In (or scroll wheel)', action: () =&gt; zoomBy(1 / 1.25) },
+                        { label: '−', title: 'Zoom Out (or scroll wheel)', action: () =&gt; zoomBy(1.25) },
+                        { label: '⟲ Fit', title: 'Reset View (or double-click canvas)', action: () =&gt; resetView() },
+                    ];
+                    if (svg.querySelector('.incident')) {
+                        btns.push({
+                            label: 'Lines',
+                            toggleKey: 'lines',
+                            title: 'Toggle Incident Central Lines',
+                            isActive: () =&gt; svg.classList.contains('show-lines'),
+                            action: () =&gt; svg.classList.toggle('show-lines'),
+                        });
+                    }
+                    if (labelEls.length &gt; 0) {
+                        btns.push({
+                            label: 'Labels',
+                            toggleKey: 'labels',
+                            title: 'Toggle Point Labels',
+                            isActive: () =&gt; !svg.classList.contains('hide-labels'),
+                            action: () =&gt; svg.classList.toggle('hide-labels'),
+                        });
+                    }
+                    if (svg.querySelector('.guide')) {
+                        btns.push({
+                            label: 'Guides',
+                            toggleKey: 'guides',
+                            title: 'Toggle Construction Guides',
+                            isActive: () =&gt; !svg.classList.contains('hide-guides'),
+                            action: () =&gt; svg.classList.toggle('hide-guides'),
+                        });
+                    }
+                    btns.forEach(b =&gt; {
+                        const btn = document.createElement('button');
+                        btn.type = 'button';
+                        btn.className = 'etc-svg-btn';
+                        if (b.toggleKey) {
+                            btn.dataset.toggleKey = b.toggleKey;
+                            btn.classList.toggle('active', b.isActive());
+                        }
+                        btn.textContent = b.label;
+                        btn.title = b.title;
+                        btn.addEventListener('click', (e) =&gt; {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            b.action();
+                            if (b.isActive) {
+                                btn.classList.toggle('active', b.isActive());
+                            }
+                        });
+                        toolbar.appendChild(btn);
+                    });
+                    stage.appendChild(toolbar);
+                }
 
-        <span class="sd">    function resolveSvgId(rawId) {</span>
-        <span class="sd">        if (!rawId) return rawId;</span>
-        <span class="sd">        if (svg.querySelector(`[data-id="${CSS.escape(rawId)}"]`)) return rawId;</span>
-        <span class="sd">        const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);</span>
-        <span class="sd">        if (segM) {</span>
-        <span class="sd">            const revId = `[ ${segM[2]} ${segM[1]} ]`;</span>
-        <span class="sd">            if (svg.querySelector(`[data-id="${CSS.escape(revId)}"]`)) return revId;</span>
-        <span class="sd">        }</span>
-        <span class="sd">        const triM = rawId.match(/^&lt;\s*(\S+)\s+(\S+)\s+(\S+)\s*&gt;$/);</span>
-        <span class="sd">        if (triM) {</span>
-        <span class="sd">            const pts = [triM[1], triM[2], triM[3]];</span>
-        <span class="sd">            if (pts.includes('A') &amp;&amp; pts.includes('B') &amp;&amp; pts.includes('C')) {</span>
-        <span class="sd">                return '&lt; A B C &gt;';</span>
-        <span class="sd">            }</span>
-        <span class="sd">            const secPoly = graphicsGroup ? graphicsGroup.querySelector('polygon.secondary[data-id]') : null;</span>
-        <span class="sd">            if (secPoly) {</span>
-        <span class="sd">                return secPoly.getAttribute('data-id') || rawId;</span>
-        <span class="sd">            }</span>
-        <span class="sd">        }</span>
-        <span class="sd">        return rawId;</span>
-        <span class="sd">    }</span>
+                if (stage) {
+                    hudEl = stage.querySelector('.etc-symbolic-hud');
+                    if (!hudEl) {
+                        hudEl = document.createElement('div');
+                        hudEl.className = 'etc-symbolic-hud';
+                        hudEl.setAttribute('aria-live', 'polite');
+                        stage.appendChild(hudEl);
+                    }
+                    svg.querySelectorAll('title').forEach(t =&gt; t.remove());
+                }
 
-        <span class="sd">    function activateHover(rawId) {</span>
-        <span class="sd">        if (!rawId) return;</span>
-        <span class="sd">        const id = resolveSvgId(rawId);</span>
-        <span class="sd">        if (activeHoveredId === id) return;</span>
-        <span class="sd">        clearHover();</span>
-        <span class="sd">        activeHoveredId = id;</span>
-        <span class="sd">        const info = elementsCatalog[id];</span>
+                const panel = svg.closest('.etc-graphics-panel');
+                if (panel &amp;&amp; panel.dataset.etcTabsInit !== '1') {
+                    panel.dataset.etcTabsInit = '1';
+                    const tabBtns = Array.from(panel.querySelectorAll('.etc-tab-btn'));
 
-        <span class="sd">        const targetEl = svg.querySelector(`[data-id="${CSS.escape(id)}"]`);</span>
-        <span class="sd">        if (targetEl) {</span>
-        <span class="sd">            targetEl.classList.add('hover');</span>
-        <span class="sd">        }</span>
+                    tabBtns.forEach(btn =&gt; {
+                        btn.addEventListener('click', (e) =&gt; {
+                            e.preventDefault();
+                            const targetTab = btn.getAttribute('data-tab');
+                            const tabPanes = Array.from(panel.querySelectorAll('.etc-tab-pane'));
+                            const prevPane = panel.querySelector('.etc-tab-pane.active');
+                            const prevSvg = prevPane ? prevPane.querySelector('svg.geometor-etc-drawing') : null;
+                            const hideLabels = prevSvg ? prevSvg.classList.contains('hide-labels') : false;
+                            const hideGuides = prevSvg ? prevSvg.classList.contains('hide-guides') : false;
+                            const showLines = prevSvg ? prevSvg.classList.contains('show-lines') : false;
 
-        <span class="sd">        // Show highlight segment if present</span>
-        <span class="sd">        if (highlightsGroup) {</span>
-        <span class="sd">            const hl = highlightsGroup.querySelector(`[data-highlight-for="${CSS.escape(id)}"]`);</span>
-        <span class="sd">            if (hl) hl.style.display = 'inline';</span>
-        <span class="sd">        }</span>
+                            tabBtns.forEach(b =&gt; {
+                                const isMatch = b.getAttribute('data-tab') === targetTab;
+                                b.classList.toggle('active', isMatch);
+                                b.setAttribute('aria-selected', isMatch ? 'true' : 'false');
+                            });
 
-        <span class="sd">        // Highlight parent/endpoint points and labels</span>
-        <span class="sd">        let relatedPts = (info &amp;&amp; info.related_points) ? info.related_points : [id];</span>
-        <span class="sd">        if (!targetEl &amp;&amp; relatedPts.length === 1 &amp;&amp; relatedPts[0] === id) {</span>
-        <span class="sd">            const segM = rawId.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);</span>
-        <span class="sd">            const triM = rawId.match(/^&lt;\s*(\S+)\s+(\S+)\s+(\S+)\s*&gt;$/);</span>
-        <span class="sd">            if (segM) relatedPts = [segM[1], segM[2]];</span>
-        <span class="sd">            else if (triM) relatedPts = [triM[1], triM[2], triM[3]];</span>
-        <span class="sd">        }</span>
-        <span class="sd">        relatedPts.forEach(pid =&gt; {</span>
-        <span class="sd">            const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id="${CSS.escape(pid)}"]`) : null;</span>
-        <span class="sd">            if (ptEl) ptEl.classList.add('hover');</span>
-        <span class="sd">            const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id="${CSS.escape(pid)}"]`) : null;</span>
-        <span class="sd">            if (lblEl) lblEl.classList.add('hover-label');</span>
-        <span class="sd">        });</span>
+                            tabPanes.forEach(pane =&gt; {
+                                const isMatch = pane.getAttribute('data-tab-pane') === targetTab;
+                                pane.classList.toggle('active', isMatch);
+                                pane.style.display = isMatch ? 'block' : 'none';
+                                if (isMatch) {
+                                    const paneSvg = pane.querySelector('svg.geometor-etc-drawing');
+                                    if (paneSvg) {
+                                        paneSvg.classList.toggle('hide-labels', hideLabels);
+                                        paneSvg.classList.toggle('hide-guides', hideGuides);
+                                        paneSvg.classList.toggle('show-lines', showLines);
+                                        const paneToolbar = pane.querySelector('.etc-svg-toolbar');
+                                        if (paneToolbar) {
+                                            const lBtn = paneToolbar.querySelector('[data-toggle-key=&quot;lines&quot;]');
+                                            if (lBtn) lBtn.classList.toggle('active', showLines);
+                                            const lblBtn = paneToolbar.querySelector('[data-toggle-key=&quot;labels&quot;]');
+                                            if (lblBtn) lblBtn.classList.toggle('active', !hideLabels);
+                                            const gBtn = paneToolbar.querySelector('[data-toggle-key=&quot;guides&quot;]');
+                                            if (gBtn) gBtn.classList.toggle('active', !hideGuides);
+                                        }
+                                        if (paneSvg._etcController) {
+                                            paneSvg._etcController.scaleViewElements();
+                                            requestAnimationFrame(() =&gt; paneSvg._etcController.scaleViewElements());
+                                        }
+                                    }
+                                }
+                            });
 
-        <span class="sd">        if (typeof document !== 'undefined') {</span>
-        <span class="sd">            const sel = rawId === id</span>
-        <span class="sd">                ? `.geom-ref[data-ref="${CSS.escape(id)}"]`</span>
-        <span class="sd">                : `.geom-ref[data-ref="${CSS.escape(rawId)}"], .geom-ref[data-ref="${CSS.escape(id)}"]`;</span>
-        <span class="sd">            document.querySelectorAll(sel).forEach(el =&gt; {</span>
-        <span class="sd">                el.classList.add('geom-highlight-text');</span>
-        <span class="sd">            });</span>
-        <span class="sd">        }</span>
-        <span class="sd">    }</span>
+                            const figureEl = panel.closest('figure');
+                            const captionP = figureEl ? (figureEl.querySelector('figcaption .caption-text') || figureEl.querySelector('figcaption p')) : null;
+                            if (captionP) {
+                                if (!captionP.dataset.origHtml) {
+                                    captionP.dataset.origHtml = captionP.innerHTML;
+                                }
+                                const capHtml = btn.getAttribute('data-caption-html');
+                                if (targetTab === 'acute' &amp;&amp; captionP.dataset.origHtml) {
+                                    captionP.innerHTML = captionP.dataset.origHtml;
+                                } else if (capHtml) {
+                                    captionP.innerHTML = capHtml;
+                                }
+                            }
+                        });
+                    });
+                }
+            }
 
-        <span class="sd">    svg._etcController.activateHover = activateHover;</span>
-        <span class="sd">    svg._etcController.clearHover = clearHover;</span>
+            function updateHud(info, fallbackId) {
+                if (!hudEl) return;
+                if (!info) {
+                    hudEl.classList.remove('is-visible');
+                    return;
+                }
+                const dotColor = info.color || '#0ff';
+                const idHtml = formatIdHtml(info.ID || fallbackId || '');
+                const titleHtml = escapeHtml(info.name || fallbackId || '');
+                const kindHtml = escapeHtml(info.type || '');
+                const symRows = Array.isArray(info.symbolic_rows) ? info.symbolic_rows : [];
+                let rowsHtml = '';
+                if (symRows.length &gt; 0) {
+                    symRows.forEach(r =&gt; {
+                        rowsHtml += '&lt;div class=&quot;etc-hud-key&quot;&gt;' + escapeHtml(r.label) + '&lt;/div&gt;' +
+                            '&lt;div class=&quot;etc-hud-val&quot;&gt;' + renderMathHtml(r.latex, r.pretty) + '&lt;/div&gt;';
+                    });
+                } else if (Array.isArray(info.rows)) {
+                    info.rows.forEach(pair =&gt; {
+                        rowsHtml += '&lt;div class=&quot;etc-hud-key&quot;&gt;' + escapeHtml(pair[0]) + '&lt;/div&gt;' +
+                            '&lt;div class=&quot;etc-hud-val&quot;&gt;' + escapeHtml(pair[1]) + '&lt;/div&gt;';
+                    });
+                }
+                const approxHtml = info.approx
+                    ? '&lt;div class=&quot;etc-hud-approx&quot;&gt;' + escapeHtml(info.approx) + '&lt;/div&gt;'
+                    : '';
+                hudEl.innerHTML =
+                    '&lt;div class=&quot;etc-hud-head&quot;&gt;' +
+                        '&lt;span class=&quot;etc-hud-dot&quot; style=&quot;background:' + escapeHtml(dotColor) + '&quot;&gt;&lt;/span&gt;' +
+                        '&lt;span class=&quot;etc-hud-id&quot;&gt;' + idHtml + '&lt;/span&gt;' +
+                        '&lt;span class=&quot;etc-hud-title&quot;&gt;' + titleHtml + '&lt;/span&gt;' +
+                        '&lt;span class=&quot;etc-hud-kind&quot;&gt;' + kindHtml + '&lt;/span&gt;' +
+                    '&lt;/div&gt;' +
+                    '&lt;div class=&quot;etc-hud-rows&quot;&gt;' + rowsHtml + '&lt;/div&gt;' +
+                    approxHtml;
+                hudEl.classList.add('is-visible');
+            }
 
-        <span class="sd">    if (document.body &amp;&amp; document.documentElement.tagName.toLowerCase() === 'html' &amp;&amp; document.body.dataset.etcGeomRefSyncInit !== '1') {</span>
-        <span class="sd">        document.body.dataset.etcGeomRefSyncInit = '1';</span>
-        <span class="sd">        function getActiveSvg() {</span>
-        <span class="sd">            const activePaneSvg = document.querySelector('.etc-tab-pane.active svg.geometor-etc-drawing');</span>
-        <span class="sd">            if (activePaneSvg &amp;&amp; activePaneSvg._etcController) return activePaneSvg;</span>
-        <span class="sd">            const anySvg = document.querySelector('svg.geometor-etc-drawing');</span>
-        <span class="sd">            return (anySvg &amp;&amp; anySvg._etcController) ? anySvg : null;</span>
-        <span class="sd">        }</span>
-        <span class="sd">        document.body.addEventListener('mouseover', (e) =&gt; {</span>
-        <span class="sd">            const geomEl = e.target.closest('.geom-ref[data-ref]');</span>
-        <span class="sd">            if (geomEl) {</span>
-        <span class="sd">                const activeSvg = getActiveSvg();</span>
-        <span class="sd">                if (activeSvg &amp;&amp; activeSvg._etcController.activateHover) {</span>
-        <span class="sd">                    activeSvg._etcController.activateHover(geomEl.getAttribute('data-ref'));</span>
-        <span class="sd">                }</span>
-        <span class="sd">                return;</span>
-        <span class="sd">            }</span>
-        <span class="sd">            const refLink = e.target.closest('a.reference.internal');</span>
-        <span class="sd">            if (refLink) {</span>
-        <span class="sd">                const txt = (refLink.textContent || '').trim();</span>
-        <span class="sd">                const xm = txt.match(/^X(?:_|\()?(\d+)\)?$/);</span>
-        <span class="sd">                if (xm) {</span>
-        <span class="sd">                    const activeSvg = getActiveSvg();</span>
-        <span class="sd">                    if (activeSvg &amp;&amp; activeSvg._etcController.activateHover) {</span>
-        <span class="sd">                        activeSvg._etcController.activateHover(`X_${xm[1]}`);</span>
-        <span class="sd">                    }</span>
-        <span class="sd">                }</span>
-        <span class="sd">            }</span>
-        <span class="sd">        });</span>
-        <span class="sd">        document.body.addEventListener('mouseout', (e) =&gt; {</span>
-        <span class="sd">            const geomEl = e.target.closest('.geom-ref[data-ref], a.reference.internal');</span>
-        <span class="sd">            if (geomEl) {</span>
-        <span class="sd">                const activeSvg = getActiveSvg();</span>
-        <span class="sd">                if (activeSvg &amp;&amp; activeSvg._etcController.clearHover) {</span>
-        <span class="sd">                    activeSvg._etcController.clearHover();</span>
-        <span class="sd">                }</span>
-        <span class="sd">            }</span>
-        <span class="sd">        });</span>
-        <span class="sd">    }</span>
+            let activeHoveredKey = null;
 
-        <span class="sd">    // Native DOM hover matching browser &lt;title&gt; tooltip topmost target</span>
-        <span class="sd">    svg.addEventListener('mouseover', (event) =&gt; {</span>
-        <span class="sd">        if (isPanning) return;</span>
-        <span class="sd">        const target = event.target.closest('[data-id]');</span>
-        <span class="sd">        if (target &amp;&amp; svg.contains(target)) {</span>
-        <span class="sd">            activateHover(target.getAttribute('data-id'));</span>
-        <span class="sd">        } else {</span>
-        <span class="sd">            clearHover();</span>
-        <span class="sd">        }</span>
-        <span class="sd">    });</span>
+            function clearHover(clearTextRefs) {
+                if (!activeHoveredKey) return;
+                activeHoveredKey = null;
+                svg.querySelectorAll('.hover').forEach(el =&gt; el.classList.remove('hover'));
+                svg.querySelectorAll('.hover-label').forEach(el =&gt; el.classList.remove('hover-label'));
+                if (highlightsGroup) {
+                    highlightsGroup.querySelectorAll('.highlight-segment').forEach(el =&gt; {
+                        el.style.display = 'none';
+                    });
+                }
+                if (hudEl) {
+                    hudEl.classList.remove('is-visible');
+                }
+                if (clearTextRefs !== false &amp;&amp; typeof document !== 'undefined') {
+                    document.querySelectorAll('.geom-highlight-text').forEach(el =&gt; {
+                        el.classList.remove('geom-highlight-text');
+                    });
+                }
+            }
 
-        <span class="sd">    svg.addEventListener('mouseout', (event) =&gt; {</span>
-        <span class="sd">        if (isPanning) return;</span>
-        <span class="sd">        const related = event.relatedTarget ? event.relatedTarget.closest?.('[data-id]') : null;</span>
-        <span class="sd">        if (!related || !svg.contains(related)) {</span>
-        <span class="sd">            clearHover();</span>
-        <span class="sd">        }</span>
-        <span class="sd">    });</span>
+            function findSvgElement(candidateId) {
+                if (!candidateId) return null;
+                return svg.querySelector(`[data-id=&quot;${CSS.escape(candidateId)}&quot;], [data-ref=&quot;${CSS.escape(candidateId)}&quot;]`);
+            }
 
-        <span class="sd">    // Wheel Zoom</span>
-        <span class="sd">    svg.addEventListener('wheel', (event) =&gt; {</span>
-        <span class="sd">        event.preventDefault();</span>
-        <span class="sd">        const factor = event.deltaY &gt; 0 ? 1.12 : (1 / 1.12);</span>
-        <span class="sd">        zoomBy(factor, event.clientX, event.clientY);</span>
-        <span class="sd">    }, { passive: false });</span>
+            function resolveSingleSvgId(rawId) {
+                if (!rawId) return null;
+                const trimmed = rawId.trim();
+                if (findSvgElement(trimmed)) return trimmed;
+                const clean = trimmed.includes(':') ? trimmed.split(':').pop().trim() : trimmed;
+                if (findSvgElement(clean)) return clean;
 
-        <span class="sd">    // Drag Pan</span>
-        <span class="sd">    let isPanning = false;</span>
-        <span class="sd">    let didDrag = false;</span>
-        <span class="sd">    let startClient = { x: 0, y: 0 };</span>
+                const lineM = clean.match(/^\[\s*(\S+)\s+(\S+)\s*\]$/);
+                if (lineM) {
+                    const cands = [
+                        `[ ${lineM[1]} ${lineM[2]} ]`,
+                        `[ ${lineM[2]} ${lineM[1]} ]`,
+                        `/ ${lineM[1]} ${lineM[2]} /`,
+                        `/ ${lineM[2]} ${lineM[1]} /`,
+                    ];
+                    for (const c of cands) {
+                        if (findSvgElement(c)) return c;
+                    }
+                }
 
-        <span class="sd">    svg.addEventListener('mousedown', (event) =&gt; {</span>
-        <span class="sd">        if (event.button !== 0) return;</span>
-        <span class="sd">        isPanning = true;</span>
-        <span class="sd">        didDrag = false;</span>
-        <span class="sd">        startClient = { x: event.clientX, y: event.clientY };</span>
-        <span class="sd">        svg.classList.add('is-panning');</span>
-        <span class="sd">    });</span>
+                const segM = clean.match(/^\/\s*(\S+)\s+(\S+)\s*\/$/);
+                if (segM) {
+                    const cands = [
+                        `/ ${segM[1]} ${segM[2]} /`,
+                        `/ ${segM[2]} ${segM[1]} /`,
+                        `[ ${segM[1]} ${segM[2]} ]`,
+                        `[ ${segM[2]} ${segM[1]} ]`,
+                    ];
+                    for (const c of cands) {
+                        if (findSvgElement(c)) return c;
+                    }
+                }
 
-        <span class="sd">    svg.addEventListener('mousemove', (event) =&gt; {</span>
-        <span class="sd">        if (!isPanning) return;</span>
-        <span class="sd">        const dxPx = event.clientX - startClient.x;</span>
-        <span class="sd">        const dyPx = event.clientY - startClient.y;</span>
-        <span class="sd">        if (Math.hypot(dxPx, dyPx) &gt; 2) didDrag = true;</span>
-        <span class="sd">        const rect = svg.getBoundingClientRect();</span>
-        <span class="sd">        if (rect.width &gt; 0 &amp;&amp; rect.height &gt; 0) {</span>
-        <span class="sd">            const vb = getViewBox();</span>
-        <span class="sd">            const dx = dxPx * (vb[2] / rect.width);</span>
-        <span class="sd">            const dy = dyPx * (vb[3] / rect.height);</span>
-        <span class="sd">            setViewBox([vb[0] - dx, vb[1] - dy, vb[2], vb[3]]);</span>
-        <span class="sd">        }</span>
-        <span class="sd">        startClient = { x: event.clientX, y: event.clientY };</span>
-        <span class="sd">    });</span>
+                const braceAllM = clean.match(/^\{\s*([\d,\s]+)\s*\}$/);
+                if (braceAllM) {
+                    const wantNums = braceAllM[1].split(',').map(s =&gt; s.trim()).filter(Boolean);
+                    if (wantNums.length === 2) {
+                        const cands = [
+                            `{ ${wantNums[0]}, ${wantNums[1]} }`,
+                            `{ ${wantNums[1]}, ${wantNums[0]} }`,
+                        ];
+                        for (const c of cands) {
+                            if (findSvgElement(c)) return c;
+                        }
+                    }
+                    if (wantNums.length &gt;= 2) {
+                        const wantSet = new Set(wantNums);
+                        const lineEls = svg.querySelectorAll('line[data-id], line[data-ref]');
+                        for (const ln of lineEls) {
+                            const lid = ln.getAttribute('data-id') || ln.getAttribute('data-ref') || '';
+                            const lm = lid.match(/^\{\s*([\d,\s]+)\s*\}$/);
+                            if (lm) {
+                                const lnums = lm[1].split(',').map(s =&gt; s.trim()).filter(Boolean);
+                                const shared = lnums.filter(n =&gt; wantSet.has(n));
+                                if (shared.length &gt;= 2) return lid;
+                            }
+                        }
+                    }
+                }
 
-        <span class="sd">    window.addEventListener('mouseup', () =&gt; {</span>
-        <span class="sd">        if (isPanning) {</span>
-        <span class="sd">            isPanning = false;</span>
-        <span class="sd">            svg.classList.remove('is-panning');</span>
-        <span class="sd">        }</span>
-        <span class="sd">    });</span>
+                const triM = clean.match(/^&lt;\s*(\S+)\s+(\S+)\s+(\S+)\s*&gt;$/);
+                if (triM) {
+                    const want = [triM[1], triM[2], triM[3]].sort().join('|');
+                    const polys = svg.querySelectorAll('polygon[data-id], polygon[data-ref]');
+                    for (const p of polys) {
+                        const pid = p.getAttribute('data-id') || p.getAttribute('data-ref') || '';
+                        const pm = pid.match(/^&lt;\s*(\S+)\s+(\S+)\s+(\S+)\s*&gt;$/);
+                        if (pm &amp;&amp; [pm[1], pm[2], pm[3]].sort().join('|') === want) {
+                            return pid;
+                        }
+                    }
+                }
 
-        <span class="sd">    svg.addEventListener('mouseleave', () =&gt; {</span>
-        <span class="sd">        isPanning = false;</span>
-        <span class="sd">        svg.classList.remove('is-panning');</span>
-        <span class="sd">        clearHover();</span>
-        <span class="sd">    });</span>
+                return null;
+            }
 
-        <span class="sd">    svg.addEventListener('click', (event) =&gt; {</span>
-        <span class="sd">        if (didDrag) return;</span>
-        <span class="sd">        const pt = event.target.closest('circle[data-id]');</span>
-        <span class="sd">        if (!pt) return;</span>
-        <span class="sd">        const pid = pt.getAttribute('data-id') || '';</span>
-        <span class="sd">        const m = pid.match(/^X_(\d+)$/);</span>
-        <span class="sd">        if (m &amp;&amp; typeof window !== 'undefined' &amp;&amp; window.location &amp;&amp; window.location.pathname.includes('/c-') &amp;&amp; !window.location.pathname.includes('/x-')) {</span>
-        <span class="sd">            const slug = 'x-' + m[1].padStart(5, '0');</span>
-        <span class="sd">            window.location.href = `${slug}/index.html`;</span>
-        <span class="sd">        }</span>
-        <span class="sd">    });</span>
+            function hasElement(rawRef) {
+                if (!rawRef) return false;
+                const parts = String(rawRef).split(';').map(s =&gt; s.trim()).filter(Boolean);
+                return parts.some(p =&gt; resolveSingleSvgId(p) !== null);
+            }
 
-        <span class="sd">    svg.addEventListener('dblclick', (event) =&gt; {</span>
-        <span class="sd">        event.preventDefault();</span>
-        <span class="sd">        resetView();</span>
-        <span class="sd">    });</span>
+            function activateHover(rawRef, highlightTextRefs) {
+                if (!rawRef) return false;
+                const parts = String(rawRef).split(';').map(s =&gt; s.trim()).filter(Boolean);
+                const resolvedIds = parts.map(p =&gt; resolveSingleSvgId(p)).filter(Boolean);
+                if (resolvedIds.length === 0) return false;
 
-        <span class="sd">    if (typeof ResizeObserver !== 'undefined') {</span>
-        <span class="sd">        new ResizeObserver(() =&gt; scaleViewElements()).observe(svg);</span>
-        <span class="sd">    }</span>
-        <span class="sd">})();</span>
-        <span class="sd">"""</span>
-        </pre></div>
-        </div>
+                const key = resolvedIds.join(';');
+                if (activeHoveredKey === key) return true;
+                clearHover(highlightTextRefs !== false);
+                activeHoveredKey = key;
+
+                let primaryInfo = null;
+                let primaryId = resolvedIds[0];
+
+                resolvedIds.forEach(id =&gt; {
+                    const info = elementsCatalog[id];
+                    if (!primaryInfo &amp;&amp; info) {
+                        primaryInfo = info;
+                        primaryId = id;
+                    }
+                    svg.querySelectorAll(`[data-id=&quot;${CSS.escape(id)}&quot;], [data-ref=&quot;${CSS.escape(id)}&quot;]`).forEach(el =&gt; {
+                        el.classList.add('hover');
+                    });
+                    if (highlightsGroup) {
+                        const hl = highlightsGroup.querySelector(`[data-highlight-for=&quot;${CSS.escape(id)}&quot;]`);
+                        if (hl) hl.style.display = 'inline';
+                    }
+                    let relatedPts = (info &amp;&amp; info.related_points) ? info.related_points : [id];
+                    if (!info) {
+                        const sm = id.match(/^[\[/]\s*(\S+)\s+(\S+)\s*[\]/]$/);
+                        const tm = id.match(/^&lt;\s*(\S+)\s+(\S+)\s+(\S+)\s*&gt;$/);
+                        if (sm) relatedPts = [sm[1], sm[2]];
+                        else if (tm) relatedPts = [tm[1], tm[2], tm[3]];
+                    }
+                    relatedPts.forEach(pid =&gt; {
+                        const ptEl = pointsGroup ? pointsGroup.querySelector(`[data-id=&quot;${CSS.escape(pid)}&quot;]`) : null;
+                        if (ptEl) ptEl.classList.add('hover');
+                        const lblEl = labelsGroup ? labelsGroup.querySelector(`text[data-point-id=&quot;${CSS.escape(pid)}&quot;]`) : null;
+                        if (lblEl) lblEl.classList.add('hover-label');
+                    });
+                });
+
+                updateHud(primaryInfo, primaryId);
+
+                if (highlightTextRefs !== false &amp;&amp; typeof document !== 'undefined') {
+                    const selectors = new Set([`.geom-ref[data-ref=&quot;${CSS.escape(rawRef)}&quot;]`]);
+                    resolvedIds.forEach(id =&gt; selectors.add(`.geom-ref[data-ref=&quot;${CSS.escape(id)}&quot;]`));
+                    document.querySelectorAll(Array.from(selectors).join(', ')).forEach(el =&gt; {
+                        el.classList.add('geom-highlight-text');
+                    });
+                }
+                return true;
+            }
+
+            svg._etcController.activateHover = activateHover;
+            svg._etcController.clearHover = clearHover;
+            svg._etcController.hasElement = hasElement;
+
+            if (typeof window !== 'undefined') {
+                window.__etcSvgRegistry = window.__etcSvgRegistry || [];
+                if (!window.__etcSvgRegistry.includes(svg)) {
+                    window.__etcSvgRegistry.push(svg);
+                }
+            }
+
+            if (document.body &amp;&amp; document.documentElement.tagName.toLowerCase() === 'html' &amp;&amp; document.body.dataset.etcGeomRefSyncInit !== '1') {
+                document.body.dataset.etcGeomRefSyncInit = '1';
+
+                function isSvgVisible(s) {
+                    if (!s || !s.isConnected || !s._etcController) return false;
+                    const pane = s.closest('.etc-tab-pane');
+                    if (pane &amp;&amp; !pane.classList.contains('active')) return false;
+                    return s.getClientRects().length &gt; 0;
+                }
+
+                function dispatchRefHover(sourceEl, refStr) {
+                    if (!refStr) return;
+                    const reg = (window.__etcSvgRegistry || []).filter(isSvgVisible);
+                    const sec = sourceEl ? sourceEl.closest('section') : null;
+                    let targets = [];
+                    if (sec) {
+                        targets = reg.filter(s =&gt; sec.contains(s) &amp;&amp; s._etcController.hasElement(refStr));
+                    }
+                    if (targets.length === 0) {
+                        targets = reg.filter(s =&gt; s._etcController.hasElement(refStr));
+                    }
+                    reg.forEach(s =&gt; {
+                        if (!targets.includes(s)) s._etcController.clearHover(false);
+                    });
+                    targets.forEach(s =&gt; s._etcController.activateHover(refStr, false));
+                    if (sourceEl &amp;&amp; targets.length &gt; 0) {
+                        sourceEl.classList.add('geom-highlight-text');
+                    }
+                }
+
+                function clearAllSvgHovers() {
+                    (window.__etcSvgRegistry || []).forEach(s =&gt; {
+                        if (s &amp;&amp; s._etcController) s._etcController.clearHover(true);
+                    });
+                }
+
+                document.body.addEventListener('mouseover', (e) =&gt; {
+                    const geomEl = e.target.closest('.geom-ref[data-ref]');
+                    if (geomEl) {
+                        dispatchRefHover(geomEl, geomEl.getAttribute('data-ref'));
+                        return;
+                    }
+                    const refLink = e.target.closest('a.reference.internal');
+                    if (refLink) {
+                        const txt = (refLink.textContent || '').trim();
+                        const xm = txt.match(/^X(?:_|\()?(\d+)\)?$/);
+                        if (xm) {
+                            dispatchRefHover(refLink, `X_${xm[1]}`);
+                        }
+                    }
+                });
+
+                document.body.addEventListener('mouseout', (e) =&gt; {
+                    const geomEl = e.target.closest('.geom-ref[data-ref], a.reference.internal');
+                    if (geomEl) {
+                        clearAllSvgHovers();
+                    }
+                });
+            }
+
+            svg.addEventListener('mouseover', (event) =&gt; {
+                if (isPanning) return;
+                const target = event.target.closest('[data-id], [data-ref]');
+                if (target &amp;&amp; svg.contains(target)) {
+                    activateHover(target.getAttribute('data-id') || target.getAttribute('data-ref'));
+                } else {
+                    clearHover();
+                }
+            });
+
+            svg.addEventListener('mouseout', (event) =&gt; {
+                if (isPanning) return;
+                const related = event.relatedTarget ? event.relatedTarget.closest?.('[data-id], [data-ref]') : null;
+                if (!related || !svg.contains(related)) {
+                    clearHover();
+                }
+            });
+
+            svg.addEventListener('wheel', (event) =&gt; {
+                event.preventDefault();
+                const factor = event.deltaY &gt; 0 ? 1.12 : (1 / 1.12);
+                zoomBy(factor, event.clientX, event.clientY);
+            }, { passive: false });
+
+            let isPanning = false;
+            let didDrag = false;
+            let startClient = { x: 0, y: 0 };
+
+            svg.addEventListener('mousedown', (event) =&gt; {
+                if (event.button !== 0) return;
+                isPanning = true;
+                didDrag = false;
+                startClient = { x: event.clientX, y: event.clientY };
+                svg.classList.add('is-panning');
+            });
+
+            svg.addEventListener('mousemove', (event) =&gt; {
+                if (!isPanning) return;
+                const dxPx = event.clientX - startClient.x;
+                const dyPx = event.clientY - startClient.y;
+                if (Math.hypot(dxPx, dyPx) &gt; 2) didDrag = true;
+                const rect = svg.getBoundingClientRect();
+                if (rect.width &gt; 0 &amp;&amp; rect.height &gt; 0) {
+                    const vb = getViewBox();
+                    const dx = dxPx * (vb[2] / rect.width);
+                    const dy = dyPx * (vb[3] / rect.height);
+                    setViewBox([vb[0] - dx, vb[1] - dy, vb[2], vb[3]]);
+                }
+                startClient = { x: event.clientX, y: event.clientY };
+            });
+
+            window.addEventListener('mouseup', () =&gt; {
+                if (isPanning) {
+                    isPanning = false;
+                    svg.classList.remove('is-panning');
+                }
+            });
+
+            svg.addEventListener('mouseleave', () =&gt; {
+                isPanning = false;
+                svg.classList.remove('is-panning');
+                clearHover();
+            });
+
+            svg.addEventListener('click', (event) =&gt; {
+                if (didDrag) return;
+                const pt = event.target.closest('circle[data-id]');
+                if (!pt) return;
+                const pid = pt.getAttribute('data-id') || '';
+                const m = pid.match(/^X_(\d+)$/);
+                if (m &amp;&amp; typeof window !== 'undefined' &amp;&amp; window.location &amp;&amp; window.location.pathname.includes('/c-') &amp;&amp; !window.location.pathname.includes('/x-')) {
+                    const slug = 'x-' + m[1].padStart(5, '0');
+                    window.location.href = `${slug}/index.html`;
+                }
+            });
+
+            svg.addEventListener('dblclick', (event) =&gt; {
+                event.preventDefault();
+                resetView();
+            });
+
+            if (typeof ResizeObserver !== 'undefined') {
+                new ResizeObserver(() =&gt; scaleViewElements()).observe(svg);
+            }
+        })();
+        &quot;&quot;&quot;</pre>
         </details></dd></dl>
 
         <dl class="py function">
@@ -987,7 +1496,7 @@
             <a class="book-toc-link" href="../../../../../index.html">geometor • etc</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="../topics/index.html" title="geometor.etc.topics"><span class="nav-label">geometor.etc.topics</span> &rarr;</a>
+            <a class="book-nav-btn" href="../symbolic_cache/index.html" title="geometor.etc.symbolic_cache"><span class="nav-label">geometor.etc.symbolic_cache</span> &rarr;</a>
           </div>
         </div>
       </footer>
@@ -1061,7 +1570,7 @@
 
   <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../../../../_static/documentation_options.js?v=22607128"></script>
+  <script src="../../../../../_static/documentation_options.js?v=938c9ccc"></script>
   <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>

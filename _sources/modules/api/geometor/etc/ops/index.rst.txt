@@ -5,12 +5,49 @@ geometor.etc.ops
 
 .. autoapi-nested-parse::
 
-   Composable geometric construction operators for `geometor.etc` using `geometor.model`.
+   Exact symbolic geometric construction operators for `geometor.etc` using `geometor.model`.
 
-   Every operator accepts `(model, A, B, C, ...)` or `(model, P, Q, ...)` where points are
-   `sympy.geometry.Point` instances registered in `model`, enabling both classical Euclidean
-   compass-and-straightedge constructions and higher-order triangle-center compositions.
+   Every operator accepts ``(model, A, B, C, ...)`` or ``(model, P, Q, ...)`` where
+   points are exact :class:`sympy.geometry.Point` instances registered in ``model``
+   over :math:`\mathbb{Q}`, :math:`\mathbb{Q}(\sqrt{d})`, or :math:`\mathbb{Q}(\sqrt{\phi})`.
 
+   Canonical *Principles of Geometry* ``snake_case`` constructors (:func:`incenter`,
+   :func:`centroid`, :func:`circumcenter`, :func:`orthocenter`, :func:`nine_point_center`,
+   :func:`symmedian_point`, :func:`gergonne_point`, :func:`nagel_point`, :func:`mittenpunkt`,
+   :func:`spieker_center`, :func:`feuerbach_point`, :func:`fermat_point`, etc.) are
+   provided alongside legacy ``*_of`` aliases and Kimberling ``X_n`` concordance metadata.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.etc.ops.CANONICAL_CENTER_CONCORDANCE
+   geometor.etc.ops.incenter_of
+   geometor.etc.ops.centroid_of
+   geometor.etc.ops.circumcenter_of
+   geometor.etc.ops.orthocenter_of
+   geometor.etc.ops.nine_point_center_of
+   geometor.etc.ops.symmedian_point_of
+   geometor.etc.ops.gergonne_point_of
+   geometor.etc.ops.nagel_point_of
+   geometor.etc.ops.mittenpunkt_of
+   geometor.etc.ops.spieker_center_of
+   geometor.etc.ops.feuerbach_point_of
+   geometor.etc.ops.fermat_point_of
+   geometor.etc.ops.clawson_point_of
+   geometor.etc.ops.de_longchamps_point_of
+   geometor.etc.ops.bevan_point_of
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.etc.ops.CenterConcordance
 
 
 Functions
@@ -18,6 +55,7 @@ Functions
 
 .. autoapisummary::
 
+   geometor.etc.ops.get_center_concordance
    geometor.etc.ops.create_model
    geometor.etc.ops.add_point
    geometor.etc.ops.add_line
@@ -25,8 +63,11 @@ Functions
    geometor.etc.ops.add_polygon
    geometor.etc.ops.add_segment
    geometor.etc.ops.promote_point_to_top
+   geometor.etc.ops.construct_reference_triangle
    geometor.etc.ops.construct_baseline_triangle
+   geometor.etc.ops.triangle_side_quadrances
    geometor.etc.ops.triangle_side_lengths
+   geometor.etc.ops.triangle_signed_area
    geometor.etc.ops.barycentrics_of
    geometor.etc.ops.point_from_barycentrics
    geometor.etc.ops.point_from_trilinears
@@ -40,6 +81,7 @@ Functions
    geometor.etc.ops.medial_triangle
    geometor.etc.ops.anticomplementary_triangle
    geometor.etc.ops.orthic_triangle
+   geometor.etc.ops.incentral_triangle
    geometor.etc.ops.intouch_triangle
    geometor.etc.ops.extouch_triangle
    geometor.etc.ops.excentral_triangle
@@ -51,17 +93,29 @@ Functions
    geometor.etc.ops.pedal_triangle
    geometor.etc.ops.cevian_triangle
    geometor.etc.ops.perspector
-   geometor.etc.ops.incenter_of
-   geometor.etc.ops.centroid_of
-   geometor.etc.ops.circumcenter_of
-   geometor.etc.ops.orthocenter_of
-   geometor.etc.ops.nine_point_center_of
-   geometor.etc.ops.symmedian_point_of
-   geometor.etc.ops.gergonne_point_of
-   geometor.etc.ops.nagel_point_of
-   geometor.etc.ops.mittenpunkt_of
-   geometor.etc.ops.spieker_center_of
-   geometor.etc.ops.feuerbach_point_of
+   geometor.etc.ops.incenter
+   geometor.etc.ops.centroid
+   geometor.etc.ops.circumcenter
+   geometor.etc.ops.orthocenter
+   geometor.etc.ops.nine_point_center
+   geometor.etc.ops.symmedian_point
+   geometor.etc.ops.gergonne_point
+   geometor.etc.ops.nagel_point
+   geometor.etc.ops.mittenpunkt
+   geometor.etc.ops.spieker_center
+   geometor.etc.ops.feuerbach_point
+   geometor.etc.ops.harmonic_feuerbach_point
+   geometor.etc.ops.fermat_point
+   geometor.etc.ops.second_isogonic_center
+   geometor.etc.ops.first_isodynamic_point
+   geometor.etc.ops.second_isodynamic_point
+   geometor.etc.ops.first_napoleon_point
+   geometor.etc.ops.second_napoleon_point
+   geometor.etc.ops.clawson_point
+   geometor.etc.ops.de_longchamps_point
+   geometor.etc.ops.circumcircle_inverse_of_incenter
+   geometor.etc.ops.bevan_point
+   geometor.etc.ops.isotomic_conjugate_of_incenter
    geometor.etc.ops.circumcircle
    geometor.etc.ops.incircle
    geometor.etc.ops.nine_point_circle
@@ -79,286 +133,458 @@ Functions
 Module Contents
 ---------------
 
+.. py:class:: CenterConcordance
+
+   Concordance entry linking canonical function names, Kimberling IDs, and classical citations.
+
+
+   .. py:attribute:: num
+      :type:  int
+
+
+   .. py:attribute:: function_name
+      :type:  str
+
+
+   .. py:attribute:: etc_id
+      :type:  str
+
+
+   .. py:attribute:: title
+      :type:  str
+
+
+   .. py:attribute:: classical_ref
+      :type:  str
+
+
+   .. py:property:: signature
+      :type: str
+
+
+      Return canonical functional signature string.
+
+
+.. py:data:: CANONICAL_CENTER_CONCORDANCE
+   :type:  dict[int, CenterConcordance]
+
+.. py:function:: get_center_concordance(num: int) -> CenterConcordance | None
+
+   Return the :class:`CenterConcordance` for center ``X_num``, if registered.
+
+
 .. py:function:: create_model(name: str = 'ETC Construction') -> geometor.model.Model
 
-   Create a silent `geometor.model.Model` instance for fast batch or standalone execution.
+   Create a silent exact :class:`geometor.model.Model` with ``auto_intersect=False``.
 
 
-.. py:function:: add_point(model: geometor.model.Model, x: float, y: float, ID: str, classes: list[str] | None = None, parents: list[Any] | None = None, guide: bool = False) -> sympy.geometry.Point
+.. py:function:: add_point(model: geometor.model.Model, x: sympy.Expr | float, y: sympy.Expr | float, ID: str, classes: list[str] | None = None, parents: list[Any] | None = None, guide: bool = False) -> sympy.geometry.Point
 
-   Add or update a `Point` element in `model`.
+   Register or update an exact :class:`sympy.geometry.Point` in ``model``.
 
 
 .. py:function:: add_line(model: geometor.model.Model, pt1: sympy.geometry.Point, pt2: sympy.geometry.Point, ID: str = '', classes: list[str] | None = None, guide: bool = False) -> sympy.geometry.Line | None
 
-   Add a `Line` element through `pt1` and `pt2` in `model`.
+   Construct an exact :class:`sympy.geometry.Line` through ``pt1`` and ``pt2``.
 
 
-.. py:function:: add_circle(model: geometor.model.Model, pt_center: sympy.geometry.Point, pt_radius: sympy.geometry.Point | float, ID: str = '', classes: list[str] | None = None, guide: bool = False) -> sympy.geometry.Circle | None
+.. py:function:: add_circle(model: geometor.model.Model, pt_center: sympy.geometry.Point, pt_radius: sympy.geometry.Point | sympy.Expr | float, ID: str = '', classes: list[str] | None = None, guide: bool = False) -> sympy.geometry.Circle | None
 
-   Add a `CircleElement` (or `Element` if radius is numeric/unregistered) centered at `pt_center`.
+   Construct an exact :class:`sympy.geometry.Circle` centered at ``pt_center``.
 
 
 .. py:function:: add_polygon(model: geometor.model.Model, pts: list[sympy.geometry.Point], ID: str = '', classes: list[str] | None = None) -> sympy.geometry.Polygon
 
-   Add a `Polygon` (or `Triangle`) element to `model`.
+   Construct and register an exact :class:`sympy.geometry.Polygon` in ``model``.
 
 
 .. py:function:: add_segment(model: geometor.model.Model, pt1: sympy.geometry.Point, pt2: sympy.geometry.Point, ID: str = '', classes: list[str] | None = None) -> sympy.geometry.Segment | None
 
-   Add a `Segment` element between `pt1` and `pt2` in `model`.
+   Construct and register an exact :class:`sympy.geometry.Segment` in ``model``.
 
 
 .. py:function:: promote_point_to_top(model: geometor.model.Model, pt: sympy.geometry.Point) -> sympy.geometry.Point
 
-   Move `pt` to the end of `model` insertion order so it renders topmost in SVG.
+   Move ``pt`` to the end of ``model`` insertion order so it renders topmost.
 
 
-.. py:function:: construct_baseline_triangle(model: geometor.model.Model, a: float = 5.0, b: float = 6.0, c: float = 7.0, show_guides: bool = False) -> tuple[sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point]
+.. py:function:: construct_reference_triangle(model: geometor.model.Model, preset: str | geometor.etc.triangles.SymbolicTriangle = 'heronian', *, unit_baseline: bool = False, show_guides: bool = False) -> tuple[sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point]
 
-   Construct reference triangle ABC on unit baseline AB = 1 with side ratios (a : b : c).
+   Construct one of the 4 canonical exact symbolic reference triangles in ``model``.
 
-   Uses Euclid I.22 circle intersection centered at A=(0, 0) and B=(1, 0) with normalized
-   radii b/c and a/c to determine vertex C in the upper half-plane.
-
-
-.. py:function:: triangle_side_lengths(A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point) -> tuple[float, float, float]
-
-   Return side lengths ``(a, b, c) = (|BC|, |CA|, |AB|)`` of triangle ABC.
-
-
-.. py:function:: barycentrics_of(A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, P: sympy.geometry.Point) -> tuple[float, float, float]
-
-   Compute normalized barycentric coordinates (u, v, w) of point P with respect to ABC.
+   :param model: Target :class:`geometor.model.Model`.
+   :param preset: Canonical preset key (``"heronian"``, ``"right"``, ``"kepler"``,
+                  ``"kimberling"``) or a :class:`SymbolicTriangle`.
+   :param unit_baseline: When ``True``, normalizes side :math:`AB = 1`. Defaults to ``False`` so
+                         Heronian :math:`(15, 13, 14)` and Right :math:`(3, 4, 5)` preserve exact
+                         integer vertex and center coordinates.
+   :param show_guides: When ``True``, includes Euclid I.22 compass guide circles centered at
+                       :math:`A` and :math:`B`.
 
 
-.. py:function:: point_from_barycentrics(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, u: float, v: float, w: float, ID: str = 'P', classes: list[str] | None = None, guide: bool = False) -> sympy.geometry.Point
+.. py:function:: construct_baseline_triangle(model: geometor.model.Model, a: sympy.Expr | float = 15, b: sympy.Expr | float = 13, c: sympy.Expr | float = 14, show_guides: bool = False, *, unit_baseline: bool = True) -> tuple[sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point]
 
-   Construct a point in `model` from homogeneous barycentric coordinates (u : v : w).
+   Construct an exact symbolic triangle with side ratios ``(a, b, c)``.
+
+   Preserves backward compatibility for scripts calling
+   ``construct_baseline_triangle(model, 5, 6, 7)`` while computing exact algebraic
+   coordinates without floating-point approximations.
 
 
-.. py:function:: point_from_trilinears(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, alpha: float, beta: float, gamma: float, ID: str = 'P', classes: list[str] | None = None, guide: bool = False) -> sympy.geometry.Point
+.. py:function:: triangle_side_quadrances(A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, model: geometor.model.Model | None = None) -> tuple[sympy.Expr, sympy.Expr, sympy.Expr]
 
-   Construct a point in `model` from homogeneous trilinear coordinates (alpha : beta : gamma).
+   Return exact side quadrances ``(Q_a, Q_b, Q_c) = (|BC|^2, |CA|^2, |AB|^2)``.
+
+
+.. py:function:: triangle_side_lengths(A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, model: geometor.model.Model | None = None) -> tuple[sympy.Expr, sympy.Expr, sympy.Expr]
+
+   Return exact symbolic side lengths ``(a, b, c) = (|BC|, |CA|, |AB|)``.
+
+
+.. py:function:: triangle_signed_area(A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, model: geometor.model.Model | None = None) -> sympy.Expr
+
+   Return exact signed area :math:`\Delta` of triangle ``ABC``.
+
+
+.. py:function:: barycentrics_of(A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, P: sympy.geometry.Point, model: geometor.model.Model | None = None) -> tuple[sympy.Expr, sympy.Expr, sympy.Expr]
+
+   Compute exact normalized barycentric coordinates ``(u, v, w)`` of ``P``.
+
+
+.. py:function:: point_from_barycentrics(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, u: sympy.Expr | float, v: sympy.Expr | float, w: sympy.Expr | float, ID: str = 'P', classes: list[str] | None = None, guide: bool = False) -> sympy.geometry.Point
+
+   Construct an exact point in ``model`` from homogeneous barycentrics ``(u : v : w)``.
+
+
+.. py:function:: point_from_trilinears(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, alpha: sympy.Expr | float, beta: sympy.Expr | float, gamma: sympy.Expr | float, ID: str = 'P', classes: list[str] | None = None, guide: bool = False) -> sympy.geometry.Point
+
+   Construct an exact point in ``model`` from homogeneous trilinears ``(alpha : beta : gamma)``.
 
 
 .. py:function:: eval_barycentric_point(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, expr_str: str, ID: str = 'P', classes: list[str] | None = None, guide: bool = False) -> sympy.geometry.Point
 
-   Construct a point in `model` by evaluating a cyclic barycentric coordinate expression on ABC.
+   Construct an exact point by evaluating a cyclic barycentric coordinate expression.
 
 
 .. py:function:: eval_trilinear_point(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, expr_str: str, ID: str = 'P', classes: list[str] | None = None, guide: bool = False) -> sympy.geometry.Point
 
-   Construct a point in `model` by evaluating a cyclic trilinear coordinate expression on ABC.
+   Construct an exact point by evaluating a cyclic trilinear coordinate expression.
 
 
 .. py:function:: midpoint(model: geometor.model.Model, P: sympy.geometry.Point, Q: sympy.geometry.Point, ID: str = '', classes: list[str] | None = None, guide: bool = True) -> sympy.geometry.Point
 
-   Construct the midpoint of segment PQ (Euclid I.10).
+   Construct the exact midpoint of segment ``PQ`` (Euclid I.10).
 
 
 .. py:function:: perpendicular_foot(model: geometor.model.Model, P: sympy.geometry.Point, L1: sympy.geometry.Point, L2: sympy.geometry.Point, ID: str = '', classes: list[str] | None = None, guide: bool = True) -> sympy.geometry.Point
 
-   Construct the orthogonal projection (foot of perpendicular, Euclid I.12) of P onto line L1-L2.
+   Construct the exact orthogonal projection (Euclid I.12) of ``P`` onto line ``L1-L2``.
 
 
 .. py:function:: equilateral_apex(model: geometor.model.Model, P1: sympy.geometry.Point, P2: sympy.geometry.Point, opp: sympy.geometry.Point, outward: bool = True, ID: str = '', classes: list[str] | None = None, guide: bool = True) -> sympy.geometry.Point
 
-   Construct the apex of an equilateral triangle erected on segment P1-P2 (Euclid I.1).
+   Construct the exact apex of an equilateral triangle erected on ``P1-P2`` (Euclid I.1).
 
 
 .. py:function:: intersect_lines(model: geometor.model.Model, P1: sympy.geometry.Point, P2: sympy.geometry.Point, Q1: sympy.geometry.Point, Q2: sympy.geometry.Point, ID: str = 'X', classes: list[str] | None = None, guide: bool = False) -> sympy.geometry.Point | None
 
-   Intersect line P1-P2 with line Q1-Q2 and register the intersection point in `model`.
+   Intersect line ``P1-P2`` with line ``Q1-Q2`` using exact closed-form 2D algebra.
 
 
 .. py:function:: reflection_in_point(model: geometor.model.Model, P: sympy.geometry.Point, center: sympy.geometry.Point, ID: str = '', classes: list[str] | None = None, guide: bool = False) -> sympy.geometry.Point
 
-   Reflect point P across `center` (2*center - P).
+   Reflect point ``P`` across ``center`` (``2*center - P``).
 
 
 .. py:function:: medial_triangle(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, draw_polygon: bool = True) -> tuple[sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point]
 
-   Construct the medial triangle M_a M_b M_c (side midpoints of ABC).
+   Construct the medial triangle ``M_a M_b M_c`` (side midpoints of ``ABC``).
 
 
 .. py:function:: anticomplementary_triangle(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, draw_polygon: bool = True) -> tuple[sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point]
 
-   Construct the anticomplementary triangle A_a B_a C_a (parallels to opposite sides through A, B, C).
+   Construct the anticomplementary triangle ``K_a K_b K_c``.
 
 
 .. py:function:: orthic_triangle(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, draw_polygon: bool = True) -> tuple[sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point]
 
-   Construct the orthic triangle H_a H_b H_c (altitude feet on BC, CA, AB).
+   Construct the orthic triangle ``H_a H_b H_c`` (altitude feet on ``BC, CA, AB``).
+
+
+.. py:function:: incentral_triangle(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, draw_polygon: bool = False) -> tuple[sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point]
+
+   Construct the incentral triangle ``I_a I_b I_c`` (internal angle bisector feet).
 
 
 .. py:function:: intouch_triangle(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, draw_polygon: bool = True, draw_incircle: bool = True) -> tuple[sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point]
 
-   Construct the intouch (contact) triangle T_a T_b T_c of the incircle on BC, CA, AB.
+   Construct the intouch (contact) triangle ``T_a T_b T_c`` of the incircle.
 
 
 .. py:function:: extouch_triangle(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, draw_polygon: bool = True) -> tuple[sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point]
 
-   Construct the extouch triangle N_a N_b N_c (excircle tangency points on BC, CA, AB).
+   Construct the extouch triangle ``N_a N_b N_c`` (excircle tangency points).
 
 
 .. py:function:: excentral_triangle(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, draw_polygon: bool = True) -> tuple[sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point]
 
-   Construct the excentral triangle J_a J_b J_c (excenters of ABC).
+   Construct the excentral triangle ``J_a J_b J_c`` (excenters of ``ABC``).
 
 
 .. py:function:: tangential_triangle(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, draw_polygon: bool = True, draw_circumcircle: bool = True) -> tuple[sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point]
 
-   Construct the tangential triangle Tan_a Tan_b Tan_c bounded by circumcircle tangents at A, B, C.
+   Construct the tangential triangle ``Tan_a Tan_b Tan_c``.
 
 
 .. py:function:: outer_equilateral_triangles(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, draw_polygons: bool = True) -> tuple[sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point]
 
-   Erect outward equilateral triangles on BC, CA, AB (Euclid I.1) and return their apexes (A', B', C').
+   Erect outward equilateral triangles on ``BC, CA, AB`` (Euclid I.1).
 
 
 .. py:function:: inner_equilateral_triangles(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, draw_polygons: bool = True) -> tuple[sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point]
 
-   Erect inward equilateral triangles on BC, CA, AB (Euclid I.1) and return their apexes (A'', B'', C'').
+   Erect inward equilateral triangles on ``BC, CA, AB`` (Euclid I.1).
 
 
 .. py:function:: outer_napoleon_triangle(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, draw_polygon: bool = True) -> tuple[sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point]
 
-   Construct the outer Napoleon triangle (centroids of outward equilateral triangles on BC, CA, AB).
+   Construct the outer Napoleon triangle ``Nap_a Nap_b Nap_c``.
 
 
 .. py:function:: inner_napoleon_triangle(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, draw_polygon: bool = True) -> tuple[sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point]
 
-   Construct the inner Napoleon triangle (centroids of inward equilateral triangles on BC, CA, AB).
+   Construct the inner Napoleon triangle ``Nap'_a Nap'_b Nap'_c``.
 
 
 .. py:function:: pedal_triangle(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, P: sympy.geometry.Point, prefix: str = 'P', draw_polygon: bool = True) -> tuple[sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point]
 
-   Construct the pedal triangle of P with respect to ABC (orthogonal projections onto BC, CA, AB).
+   Construct the pedal triangle of ``P`` with respect to ``ABC``.
 
 
 .. py:function:: cevian_triangle(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, P: sympy.geometry.Point, prefix: str = 'C', draw_polygon: bool = True) -> tuple[sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point]
 
-   Construct the cevian triangle of P with respect to ABC (intersections of AP, BP, CP with BC, CA, AB).
+   Construct the cevian triangle of ``P`` with respect to ``ABC``.
 
 
 .. py:function:: perspector(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, A2: sympy.geometry.Point, B2: sympy.geometry.Point, C2: sympy.geometry.Point, ID: str = 'X', classes: list[str] | None = None, draw_cevians: bool = True) -> sympy.geometry.Point | None
 
-   Construct the perspector of triangle ABC and triangle A2 B2 C2 by intersecting AA2, BB2, CC2.
+   Construct the perspector of ``ABC`` and ``A2 B2 C2`` by intersecting ``AA2, BB2, CC2``.
 
 
-.. py:function:: incenter_of(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_1', classes: list[str] | None = None, draw_bisectors: bool = False, draw_incircle: bool = False) -> sympy.geometry.Point
+.. py:function:: incenter(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_1', classes: list[str] | None = None, draw_bisectors: bool = False, draw_incircle: bool = False, draw_touchpoints: bool = False) -> sympy.geometry.Point
 
-   Construct the incenter X_1 of triangle ABC (concurrency of internal angle bisectors, Euclid IV.4).
+   Construct the incenter ``X_1`` of triangle ``ABC`` (Euclid IV.4).
 
-
-.. py:function:: centroid_of(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_2', classes: list[str] | None = None, draw_medians: bool = False) -> sympy.geometry.Point
-
-   Construct the centroid X_2 of triangle ABC (perspector of the medial triangle).
-
-
-.. py:function:: circumcenter_of(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_3', classes: list[str] | None = None, draw_bisectors: bool = False, draw_circumcircle: bool = False) -> sympy.geometry.Point
-
-   Construct the circumcenter X_3 of triangle ABC (concurrency of perpendicular bisectors, Euclid IV.5).
-
-
-.. py:function:: orthocenter_of(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_4', classes: list[str] | None = None, draw_altitudes: bool = False) -> sympy.geometry.Point
-
-   Construct the orthocenter X_4 of triangle ABC (concurrency of altitudes / perspector of orthic triangle).
+   :param model: Target :class:`geometor.model.Model`.
+   :param A: Vertices of reference triangle ``ABC``.
+   :param B: Vertices of reference triangle ``ABC``.
+   :param C: Vertices of reference triangle ``ABC``.
+   :param ID: Element identifier (defaults to ``"X_1"``).
+   :param classes: Optional CSS/model classes.
+   :param draw_bisectors: When ``True``, constructs exact internal angle bisector feet ``I_a, I_b, I_c``
+                          and concurring bisector lines ``[ A I_a ]``, ``[ B I_b ]``, ``[ C I_c ]``.
+   :param draw_incircle: When ``True``, constructs the inscribed circle ``incircle`` centered at
+                         ``X_1`` through exact tangency foot ``T_c``.
+   :param draw_touchpoints: When ``True``, constructs all three right-spread touchpoints ``T_a, T_b, T_c``.
 
 
-.. py:function:: nine_point_center_of(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_5', classes: list[str] | None = None, draw_circle: bool = False) -> sympy.geometry.Point
+.. py:function:: centroid(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_2', classes: list[str] | None = None, draw_medians: bool = False) -> sympy.geometry.Point
 
-   Construct the nine-point center X_5 of triangle ABC (midpoint of X_3 and X_4).
-
-
-.. py:function:: symmedian_point_of(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_6', classes: list[str] | None = None, draw_symmedians: bool = False) -> sympy.geometry.Point
-
-   Construct the symmedian (Lemoine) point X_6 of triangle ABC (isogonal conjugate of X_2).
+   Construct the centroid ``X_2`` of triangle ``ABC``.
 
 
-.. py:function:: gergonne_point_of(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_7', classes: list[str] | None = None, draw_cevians: bool = False) -> sympy.geometry.Point
+.. py:function:: circumcenter(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_3', classes: list[str] | None = None, draw_bisectors: bool = False, draw_circumcircle: bool = False) -> sympy.geometry.Point
 
-   Construct the Gergonne point X_7 of triangle ABC (perspector of the intouch triangle).
-
-
-.. py:function:: nagel_point_of(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_8', classes: list[str] | None = None, draw_cevians: bool = False) -> sympy.geometry.Point
-
-   Construct the Nagel point X_8 of triangle ABC (perspector of the extouch triangle).
+   Construct the circumcenter ``X_3`` of triangle ``ABC`` (Euclid IV.5).
 
 
-.. py:function:: mittenpunkt_of(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_9', classes: list[str] | None = None) -> sympy.geometry.Point
+.. py:function:: orthocenter(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_4', classes: list[str] | None = None, draw_altitudes: bool = False) -> sympy.geometry.Point
 
-   Construct the Mittenpunkt X_9 of triangle ABC (symmedian point of the excentral triangle).
-
-
-.. py:function:: spieker_center_of(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_10', classes: list[str] | None = None, draw_circle: bool = False, draw_bisectors: bool = False) -> sympy.geometry.Point
-
-   Construct the Spieker center X_10 of triangle ABC (incenter of the medial triangle).
+   Construct the orthocenter ``X_4`` of triangle ``ABC``.
 
 
-.. py:function:: feuerbach_point_of(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_11', classes: list[str] | None = None, draw_circles: bool = False) -> sympy.geometry.Point
+.. py:function:: nine_point_center(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_5', classes: list[str] | None = None, draw_circle: bool = False) -> sympy.geometry.Point
 
-   Construct the Feuerbach point X_11 of triangle ABC (tangency point of incircle and nine-point circle).
-
-
-.. py:function:: circumcircle(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point) -> sympy.geometry.Circle
-
-   Construct the circumcircle of triangle ABC centered at X_3.
+   Construct the nine-point center ``X_5`` of triangle ``ABC``.
 
 
-.. py:function:: incircle(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point) -> sympy.geometry.Circle
+.. py:function:: symmedian_point(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_6', classes: list[str] | None = None, draw_symmedians: bool = False) -> sympy.geometry.Point
 
-   Construct the incircle of triangle ABC centered at X_1.
-
-
-.. py:function:: nine_point_circle(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point) -> sympy.geometry.Circle
-
-   Construct the nine-point circle of triangle ABC centered at X_5.
+   Construct the symmedian (Lemoine) point ``X_6`` of triangle ``ABC``.
 
 
-.. py:function:: spieker_circle(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point) -> sympy.geometry.Circle
+.. py:function:: gergonne_point(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_7', classes: list[str] | None = None, draw_cevians: bool = False, draw_intouch: bool = False) -> sympy.geometry.Point
 
-   Construct the Spieker circle (incircle of the medial triangle) centered at X_10.
+   Construct the Gergonne point ``X_7`` of triangle ``ABC``.
+
+
+.. py:function:: nagel_point(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_8', classes: list[str] | None = None, draw_cevians: bool = False, draw_extouch: bool = False) -> sympy.geometry.Point
+
+   Construct the Nagel point ``X_8`` of triangle ``ABC``.
+
+
+.. py:function:: mittenpunkt(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_9', classes: list[str] | None = None) -> sympy.geometry.Point
+
+   Construct the Mittenpunkt ``X_9`` of triangle ``ABC``.
+
+
+.. py:function:: spieker_center(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_10', classes: list[str] | None = None, draw_circle: bool = False, draw_bisectors: bool = False, draw_medial: bool = False) -> sympy.geometry.Point
+
+   Construct the Spieker center ``X_10`` of triangle ``ABC``.
+
+
+.. py:function:: feuerbach_point(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_11', classes: list[str] | None = None, draw_circles: bool = False) -> sympy.geometry.Point
+
+   Construct the Feuerbach point ``X_11`` of triangle ``ABC``.
+
+
+.. py:function:: harmonic_feuerbach_point(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_12', classes: list[str] | None = None) -> sympy.geometry.Point
+
+   Construct ``X_12`` (the ``{X_1, X_5}``-harmonic conjugate of ``X_11``).
+
+
+.. py:function:: fermat_point(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_13', classes: list[str] | None = None, draw_equilaterals: bool = False) -> sympy.geometry.Point
+
+   Construct the 1st isogonic center (Fermat point) ``X_13``.
+
+
+.. py:function:: second_isogonic_center(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_14', classes: list[str] | None = None) -> sympy.geometry.Point
+
+   Construct the 2nd isogonic center ``X_14``.
+
+
+.. py:function:: first_isodynamic_point(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_15', classes: list[str] | None = None) -> sympy.geometry.Point
+
+   Construct the 1st isodynamic point ``X_15``.
+
+
+.. py:function:: second_isodynamic_point(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_16', classes: list[str] | None = None) -> sympy.geometry.Point
+
+   Construct the 2nd isodynamic point ``X_16``.
+
+
+.. py:function:: first_napoleon_point(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_17', classes: list[str] | None = None) -> sympy.geometry.Point
+
+   Construct the 1st Napoleon point ``X_17``.
+
+
+.. py:function:: second_napoleon_point(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_18', classes: list[str] | None = None) -> sympy.geometry.Point
+
+   Construct the 2nd Napoleon point ``X_18``.
+
+
+.. py:function:: clawson_point(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_19', classes: list[str] | None = None) -> sympy.geometry.Point
+
+   Construct the Clawson point ``X_19``.
+
+
+.. py:function:: de_longchamps_point(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_20', classes: list[str] | None = None) -> sympy.geometry.Point
+
+   Construct the de Longchamps point ``X_20`` (reflection of ``X_4`` in ``X_3``).
+
+
+.. py:function:: circumcircle_inverse_of_incenter(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_36', classes: list[str] | None = None) -> sympy.geometry.Point
+
+   Construct ``X_36``, the circumcircle inverse of ``X_1``.
+
+
+.. py:function:: bevan_point(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_40', classes: list[str] | None = None) -> sympy.geometry.Point
+
+   Construct the Bevan point ``X_40`` (reflection of ``X_1`` across ``X_3``).
+
+
+.. py:function:: isotomic_conjugate_of_incenter(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, ID: str = 'X_75', classes: list[str] | None = None) -> sympy.geometry.Point
+
+   Construct ``X_75``, the isotomic conjugate of ``X_1``.
+
+
+.. py:data:: incenter_of
+
+.. py:data:: centroid_of
+
+.. py:data:: circumcenter_of
+
+.. py:data:: orthocenter_of
+
+.. py:data:: nine_point_center_of
+
+.. py:data:: symmedian_point_of
+
+.. py:data:: gergonne_point_of
+
+.. py:data:: nagel_point_of
+
+.. py:data:: mittenpunkt_of
+
+.. py:data:: spieker_center_of
+
+.. py:data:: feuerbach_point_of
+
+.. py:data:: fermat_point_of
+
+.. py:data:: clawson_point_of
+
+.. py:data:: de_longchamps_point_of
+
+.. py:data:: bevan_point_of
+
+.. py:function:: circumcircle(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point) -> sympy.geometry.Circle | None
+
+   Construct the exact circumcircle of triangle ``ABC`` centered at ``X_3``.
+
+
+.. py:function:: incircle(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point) -> sympy.geometry.Circle | None
+
+   Construct the exact incircle of triangle ``ABC`` centered at ``X_1``.
+
+
+.. py:function:: nine_point_circle(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point) -> sympy.geometry.Circle | None
+
+   Construct the exact nine-point circle of triangle ``ABC`` centered at ``X_5``.
+
+
+.. py:function:: spieker_circle(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point) -> sympy.geometry.Circle | None
+
+   Construct the exact Spieker circle (incircle of medial triangle) centered at ``X_10``.
 
 
 .. py:function:: isogonal_conjugate(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, P: sympy.geometry.Point, ID: str = '', classes: list[str] | None = None) -> sympy.geometry.Point
 
-   Construct the isogonal conjugate of point P with respect to triangle ABC.
+   Construct the exact isogonal conjugate of point ``P`` with respect to ``ABC``.
 
 
 .. py:function:: isotomic_conjugate(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, P: sympy.geometry.Point, ID: str = '', classes: list[str] | None = None) -> sympy.geometry.Point
 
-   Construct the isotomic conjugate of point P with respect to triangle ABC.
+   Construct the exact isotomic conjugate of point ``P`` with respect to ``ABC``.
 
 
 .. py:function:: complement(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, P: sympy.geometry.Point, ID: str = '', classes: list[str] | None = None) -> sympy.geometry.Point
 
-   Construct the complement of point P with respect to triangle ABC (homothety at X(2) by -1/2).
+   Construct the exact complement of ``P`` (homothety at ``X_2`` by ``-1/2``).
 
 
 .. py:function:: anticomplement(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, P: sympy.geometry.Point, ID: str = '', classes: list[str] | None = None) -> sympy.geometry.Point
 
-   Construct the anticomplement of point P with respect to triangle ABC (homothety at X(2) by -2).
+   Construct the exact anticomplement of ``P`` (homothety at ``X_2`` by ``-2``).
 
 
 .. py:function:: ceva_conjugate(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, P: sympy.geometry.Point, Q: sympy.geometry.Point, ID: str = '', classes: list[str] | None = None) -> sympy.geometry.Point
 
-   Construct the P-Ceva conjugate of Q with respect to triangle ABC.
+   Construct the exact ``P``-Ceva conjugate of ``Q`` with respect to ``ABC``.
 
 
 .. py:function:: crosspoint(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, P: sympy.geometry.Point, Q: sympy.geometry.Point, ID: str = '', classes: list[str] | None = None) -> sympy.geometry.Point
 
-   Construct the crosspoint of P and Q with respect to triangle ABC.
+   Construct the exact crosspoint of ``P`` and ``Q`` with respect to ``ABC``.
 
 
 .. py:function:: cevapoint(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, P: sympy.geometry.Point, Q: sympy.geometry.Point, ID: str = '', classes: list[str] | None = None) -> sympy.geometry.Point
 
-   Construct the cevapoint of P and Q with respect to triangle ABC.
+   Construct the exact cevapoint of ``P`` and ``Q`` with respect to ``ABC``.
 
 
-.. py:function:: central_line(model: geometor.model.Model, P: sympy.geometry.Point, Q: sympy.geometry.Point, i_num: int, j_num: int, incident: bool = False) -> sympy.geometry.Line
+.. py:function:: central_line(model: geometor.model.Model, P: sympy.geometry.Point, Q: sympy.geometry.Point, i_num: int, j_num: int, incident: bool = False) -> sympy.geometry.Line | None
 
-   Add the central line {i, j} passing through X(i) and X(j), styled as Euler line if applicable.
+   Add the exact central line ``{i, j}`` passing through ``X_i`` and ``X_j``.
 
 

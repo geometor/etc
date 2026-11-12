@@ -1,0 +1,289 @@
+geometor.etc.triangles
+======================
+
+.. py:module:: geometor.etc.triangles
+
+.. autoapi-nested-parse::
+
+   Exact symbolic reference triangles for the Encyclopedia of Triangle Centers.
+
+   Defines the four canonical exact symbolic reference triangles over closed-form
+   algebraic number fields in SymPy:
+
+   1. ``heronian`` — Acute Heronian :math:`(15, 13, 14)` over :math:`\mathbb{Q}`
+   2. ``right`` — Pythagorean Right :math:`(3, 4, 5)` over :math:`\mathbb{Q}`
+   3. ``kepler`` — Kepler Golden Right :math:`(1, \sqrt{\phi}, \phi)` over :math:`\mathbb{Q}(\sqrt{\phi})`
+   4. ``kimberling`` — Kimberling Search :math:`(6, 9, 13)` over :math:`\mathbb{Q}(\sqrt{35})`
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.etc.triangles.PHI
+   geometor.etc.triangles.SQRT_PHI
+   geometor.etc.triangles.SQRT_35
+   geometor.etc.triangles.HERONIAN_TRIANGLE
+   geometor.etc.triangles.RIGHT_TRIANGLE
+   geometor.etc.triangles.KEPLER_TRIANGLE
+   geometor.etc.triangles.KIMBERLING_TRIANGLE
+   geometor.etc.triangles.LEGACY_ACUTE_TRIANGLE
+   geometor.etc.triangles.CANONICAL_TRIANGLES
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.etc.triangles.SymbolicTriangle
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.triangles.build_symbolic_triangle_from_sides
+   geometor.etc.triangles.get_canonical_triangle
+
+
+Module Contents
+---------------
+
+.. py:data:: PHI
+   :type:  sympy.Expr
+
+.. py:data:: SQRT_PHI
+   :type:  sympy.Expr
+
+.. py:data:: SQRT_35
+   :type:  sympy.Expr
+
+.. py:class:: SymbolicTriangle
+
+   Exact symbolic reference triangle with side lengths, vertices, and invariants.
+
+   :param key: Preset identifier (``"heronian"``, ``"right"``, ``"kepler"``, ``"kimberling"``,
+               or ``"acute"``).
+   :param label: Short human-readable title (e.g. ``"Heronian (15, 13, 14)"``).
+   :param field_latex: LaTeX string naming the ambient algebraic field (e.g. ``r"\mathbb{Q}"``).
+   :param a: Exact side lengths :math:`a = |BC|`, :math:`b = |CA|`, :math:`c = |AB|`.
+   :param b: Exact side lengths :math:`a = |BC|`, :math:`b = |CA|`, :math:`c = |AB|`.
+   :param c: Exact side lengths :math:`a = |BC|`, :math:`b = |CA|`, :math:`c = |AB|`.
+   :param A_xy: Exact Cartesian coordinates of vertices :math:`A`, :math:`B`, :math:`C`.
+   :param B_xy: Exact Cartesian coordinates of vertices :math:`A`, :math:`B`, :math:`C`.
+   :param C_xy: Exact Cartesian coordinates of vertices :math:`A`, :math:`B`, :math:`C`.
+   :param area: Exact area :math:`\Delta = \operatorname{Area}(\triangle ABC)`.
+   :param simplify_fn: Field-aware exact simplification callable.
+
+
+   .. py:attribute:: key
+      :type:  str
+
+
+   .. py:attribute:: label
+      :type:  str
+
+
+   .. py:attribute:: field_latex
+      :type:  str
+
+
+   .. py:attribute:: a
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: b
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: c
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: A_xy
+      :type:  tuple[sympy.Expr, sympy.Expr]
+
+
+   .. py:attribute:: B_xy
+      :type:  tuple[sympy.Expr, sympy.Expr]
+
+
+   .. py:attribute:: C_xy
+      :type:  tuple[sympy.Expr, sympy.Expr]
+
+
+   .. py:attribute:: area
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: simplify_fn
+      :type:  collections.abc.Callable[[sympy.Expr], sympy.Expr]
+
+
+   .. py:method:: simplify(expr: sympy.Expr | int) -> sympy.Expr
+
+      Simplify ``expr`` in this triangle's algebraic field.
+
+
+
+   .. py:property:: Q_a
+      :type: sympy.Expr
+
+
+      Exact quadrance :math:`Q_a = a^2` of side :math:`BC`.
+
+
+   .. py:property:: Q_b
+      :type: sympy.Expr
+
+
+      Exact quadrance :math:`Q_b = b^2` of side :math:`CA`.
+
+
+   .. py:property:: Q_c
+      :type: sympy.Expr
+
+
+      Exact quadrance :math:`Q_c = c^2` of side :math:`AB`.
+
+
+   .. py:property:: s
+      :type: sympy.Expr
+
+
+      Exact semiperimeter :math:`s = (a + b + c)/2`.
+
+
+   .. py:property:: two_area
+      :type: sympy.Expr
+
+
+      Conway doubled area :math:`S = 2\Delta`.
+
+
+   .. py:property:: r
+      :type: sympy.Expr
+
+
+      Exact inradius :math:`r = \Delta / s`.
+
+
+   .. py:property:: Q_r
+      :type: sympy.Expr
+
+
+      Exact incircle quadrance :math:`Q_r = r^2`.
+
+
+   .. py:property:: R
+      :type: sympy.Expr
+
+
+      Exact circumradius :math:`R = abc / (4\Delta)`.
+
+
+   .. py:property:: Q_R
+      :type: sympy.Expr
+
+
+      Exact circumcircle quadrance :math:`Q_R = R^2`.
+
+
+   .. py:property:: S_A
+      :type: sympy.Expr
+
+
+      Conway symbol :math:`S_A = (b^2 + c^2 - a^2)/2`.
+
+
+   .. py:property:: S_B
+      :type: sympy.Expr
+
+
+      Conway symbol :math:`S_B = (c^2 + a^2 - b^2)/2`.
+
+
+   .. py:property:: S_C
+      :type: sympy.Expr
+
+
+      Conway symbol :math:`S_C = (a^2 + b^2 - c^2)/2`.
+
+
+   .. py:method:: unit_baseline() -> SymbolicTriangle
+
+      Return a homothetic copy scaled by :math:`1/c` so :math:`A=(0,0), B=(1,0)`.
+
+
+
+   .. py:method:: trilinear_to_bary(alpha: sympy.Expr, beta: sympy.Expr, gamma: sympy.Expr) -> tuple[sympy.Expr, sympy.Expr, sympy.Expr]
+
+      Convert homogeneous trilinears :math:`(\alpha : \beta : \gamma)` to barycentrics.
+
+
+
+   .. py:method:: bary_to_trilinear(u: sympy.Expr, v: sympy.Expr, w: sympy.Expr) -> tuple[sympy.Expr, sympy.Expr, sympy.Expr]
+
+      Convert homogeneous barycentrics :math:`(u : v : w)` to trilinears.
+
+
+
+   .. py:method:: normalize_bary(u: sympy.Expr, v: sympy.Expr, w: sympy.Expr) -> tuple[sympy.Expr, sympy.Expr, sympy.Expr]
+
+      Normalize homogeneous barycentrics so :math:`u + v + w = 1`.
+
+
+
+   .. py:method:: bary_to_cartesian(u: sympy.Expr, v: sympy.Expr, w: sympy.Expr) -> tuple[sympy.Expr, sympy.Expr]
+
+      Map homogeneous barycentrics :math:`(u : v : w)` to exact Cartesian :math:`(x, y)`.
+
+
+
+   .. py:method:: cartesian_to_sub_areas(x: sympy.Expr, y: sympy.Expr) -> tuple[sympy.Expr, sympy.Expr, sympy.Expr]
+
+      Return exact signed sub-triangle areas :math:`(\Delta_a, \Delta_b, \Delta_c)`.
+
+
+
+   .. py:method:: kimberling_search_value(u: sympy.Expr, v: sympy.Expr, w: sympy.Expr) -> sympy.Expr
+
+      Return exact directed distance :math:`h_a = 2\Delta u / (a(u + v + w))` to :math:`BC`.
+
+
+
+.. py:function:: build_symbolic_triangle_from_sides(a: sympy.Expr | float, b: sympy.Expr | float, c: sympy.Expr | float, *, key: str = 'custom', label: str | None = None, unit_baseline: bool = False) -> SymbolicTriangle
+
+   Construct an exact :class:`SymbolicTriangle` from three side lengths.
+
+   Any Python ``float`` inputs representing exact rationals (such as ``5.0``) are
+   coerced via :func:`sympy.nsimplify` so zero ``sp.Float`` atoms enter symbolic
+   computations.
+
+
+.. py:data:: HERONIAN_TRIANGLE
+
+.. py:data:: RIGHT_TRIANGLE
+
+.. py:data:: KEPLER_TRIANGLE
+
+.. py:data:: KIMBERLING_TRIANGLE
+
+.. py:data:: LEGACY_ACUTE_TRIANGLE
+
+.. py:data:: CANONICAL_TRIANGLES
+   :type:  dict[str, SymbolicTriangle]
+
+.. py:function:: get_canonical_triangle(preset: str = 'heronian', *, unit_baseline: bool = False) -> SymbolicTriangle
+
+   Return a canonical :class:`SymbolicTriangle` by preset key.
+
+   :param preset: One of ``"heronian"``, ``"right"``, ``"kepler"``, ``"kimberling"``
+                  (or legacy ``"acute"``).
+   :param unit_baseline: When ``True``, scales the triangle by :math:`1/c` so :math:`AB = 1`.
+
+

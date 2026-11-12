@@ -1,0 +1,514 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>geometor.etc.symbolic_cache &mdash; geometor • etc</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../../../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../../../index.html">
+        <img src="../../../../../_static/logo.png" class="logo" alt="Logo"/>
+      </a>
+      <div class="org-repo">
+        <span class="org">geometor</span>
+        •
+        <span class="repo">etc</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../../../centers/index.html"  >Encyclopedia of Triangle Centers</a>
+        </li>
+        <li>
+          <a href="../../../../../preambles.html"  >Guide to Preambles in ETC</a>
+        </li>
+        <li>
+          <a href="../../../../../glossary.html"  >Glossary</a>
+        </li>
+        <li>
+          <a href="../../../../../persons.html"  >Index Nominum (Geometers & Contributors)</a>
+        </li>
+        <li>
+          <a href="../../../../../bibliography.html"  >Bibliography & Cited Sources</a>
+        </li>
+        <li>
+          <a href="../../../../../mission/index.html"  >mission</a>
+        </li>
+        <li>
+          <a href="../../../../../usage/index.html"  >usage</a>
+        </li>
+        <li>
+          <a href="../../../../../log/index.html"  >log</a>
+        </li>
+        <li>
+          <a href="../../../../index.html" class="is-active" aria-selected="true" >modules</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../../../index.html" title="Return to Project Portal">&larr; etc</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../../../../index.html">geometor • etc</a>
+          </div>
+          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Breadcrumbs">
+            <a class="book-crumb-link" href="../../../../index.html">modules</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../render/index.html" title="geometor.etc.render">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../topics/index.html" title="geometor.etc.topics"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <style id="etc-heading-styles">
+        .book-reading-pane .book-content h1,
+        .folio-book-page h1 {
+            position: relative;
+            text-align: center !important;
+            text-indent: 0 !important;
+            margin-bottom: 0.35rem !important;
+        }
+        .book-reading-pane .book-content h1 a.headerlink,
+        .book-reading-pane .book-content h2 a.headerlink,
+        .folio-book-page h1 a.headerlink,
+        .folio-book-page h2 a.headerlink {
+            position: absolute;
+        }
+        .book-reading-pane .book-content p.rubric,
+        .folio-book-page p.rubric {
+            font-style: normal !important;
+            font-weight: 700 !important;
+            text-align: center !important;
+            text-indent: 0 !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            margin-top: 0 !important;
+            margin-bottom: 1.4rem !important;
+        }
+        .geom-ref {
+            cursor: pointer;
+            border-bottom: 1px dotted rgba(0, 229, 255, 0.55);
+            padding: 0 2px;
+            border-radius: 3px;
+            transition: background-color 0.12s ease, color 0.12s ease;
+        }
+        .geom-ref:hover,
+        .geom-highlight-text {
+            background-color: rgba(0, 255, 255, 0.18) !important;
+            color: #0ff !important;
+            border-bottom-color: #0ff !important;
+        }
+        .etc-act-plate {
+            margin: 0.5rem 0;
+        }
+        .etc-symbolic-concordance {
+            text-align: center;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.92rem;
+            color: var(--book-text-muted, #94a3b8);
+            margin: -0.6rem 0 1.25rem 0;
+        }
+        </style>
+        <section class="level-1" id="module-geometor.etc.symbolic_cache">
+        <span id="geometor-etc-symbolic-cache"></span><h1>geometor.etc.symbolic_cache<a class="headerlink" href="#module-geometor.etc.symbolic_cache" title="Link to this heading">¶</a></h1>
+        <p>Exact symbolic triangle-center registry and disk cache (<cite>CenterSymbolicRegistry</cite>).</p>
+        <p>Evaluates homogeneous barycentrics, homogeneous trilinears, normalized
+        barycentrics, exact Cartesian coordinates, signed sub-triangle areas, and
+        Kimberling search values over the four canonical exact symbolic reference
+        triangles without floating-point approximations.</p>
+        <section class="level-2" id="attributes">
+        <h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.symbolic_cache.DEFAULT_SYMBOLIC_CACHE_DIR" title="geometor.etc.symbolic_cache.DEFAULT_SYMBOLIC_CACHE_DIR"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DEFAULT_SYMBOLIC_CACHE_DIR</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.symbolic_cache.SymbolicCyclicFn" title="geometor.etc.symbolic_cache.SymbolicCyclicFn"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SymbolicCyclicFn</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.symbolic_cache.EXACT_CYCLIC_BARYCENTRICS" title="geometor.etc.symbolic_cache.EXACT_CYCLIC_BARYCENTRICS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXACT_CYCLIC_BARYCENTRICS</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="classes">
+        <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.symbolic_cache.SymbolicCenterRecord" title="geometor.etc.symbolic_cache.SymbolicCenterRecord"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SymbolicCenterRecord</span></code></a></p></td>
+        <td><p>Exact symbolic coordinates and invariants for center <code class="docutils literal notranslate"><span class="pre">X_num</span></code> on a triangle.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.symbolic_cache.CenterSymbolicRegistry" title="geometor.etc.symbolic_cache.CenterSymbolicRegistry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CenterSymbolicRegistry</span></code></a></p></td>
+        <td><p>Exact symbolic evaluator and persistent cache for ETC triangle centers.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.symbolic_cache.format_symbolic_latex" title="geometor.etc.symbolic_cache.format_symbolic_latex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">format_symbolic_latex</span></code></a>(expr, *[, kepler_phi]) → str</p></td>
+        <td><p>Render an exact SymPy expression as clean LaTeX.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.symbolic_cache.format_symbolic_pretty" title="geometor.etc.symbolic_cache.format_symbolic_pretty"><code class="xref py py-obj docutils literal notranslate"><span class="pre">format_symbolic_pretty</span></code></a>(expr, *[, kepler_phi]) → str</p></td>
+        <td><p>Render an exact SymPy expression as compact single-line Unicode math.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.symbolic_cache.reduce_homogeneous_triple" title="geometor.etc.symbolic_cache.reduce_homogeneous_triple"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reduce_homogeneous_triple</span></code></a>(u, v, w, tri) → tuple[sympy.Expr, sympy.Expr, sympy.Expr]</p></td>
+        <td><p>Reduce a homogeneous triple <span class="math notranslate nohighlight">\((u : v : w)\)</span> by clearing rational factors.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.DEFAULT_SYMBOLIC_CACHE_DIR">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.symbolic_cache.</span></span><span class="sig-name descname"><span class="pre">DEFAULT_SYMBOLIC_CACHE_DIR</span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.DEFAULT_SYMBOLIC_CACHE_DIR" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.format_symbolic_latex">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.symbolic_cache.</span></span><span class="sig-name descname"><span class="pre">format_symbolic_latex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">expr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">kepler_phi</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.format_symbolic_latex" title="Link to this definition">¶</a></dt>
+        <dd><p>Render an exact SymPy expression as clean LaTeX.</p>
+        <p>When <code class="docutils literal notranslate"><span class="pre">kepler_phi</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code>, rewrites <span class="math notranslate nohighlight">\((1 + \sqrt{5})/2\)</span> and
+        <span class="math notranslate nohighlight">\(\sqrt{(1 + \sqrt{5})/2}\)</span> in terms of <span class="math notranslate nohighlight">\(\phi\)</span> and
+        <span class="math notranslate nohighlight">\(\sqrt{\phi}\)</span> for compact typographic display.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.format_symbolic_pretty">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.symbolic_cache.</span></span><span class="sig-name descname"><span class="pre">format_symbolic_pretty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">expr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">kepler_phi</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.format_symbolic_pretty" title="Link to this definition">¶</a></dt>
+        <dd><p>Render an exact SymPy expression as compact single-line Unicode math.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.reduce_homogeneous_triple">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.symbolic_cache.</span></span><span class="sig-name descname"><span class="pre">reduce_homogeneous_triple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">u</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">w</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tri</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../triangles/index.html#geometor.etc.triangles.SymbolicTriangle" title="geometor.etc.triangles.SymbolicTriangle"><span class="pre">geometor.etc.triangles.SymbolicTriangle</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.reduce_homogeneous_triple" title="Link to this definition">¶</a></dt>
+        <dd><p>Reduce a homogeneous triple <span class="math notranslate nohighlight">\((u : v : w)\)</span> by clearing rational factors.</p>
+        </dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.SymbolicCyclicFn">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.symbolic_cache.</span></span><span class="sig-name descname"><span class="pre">SymbolicCyclicFn</span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.SymbolicCyclicFn" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.EXACT_CYCLIC_BARYCENTRICS">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.symbolic_cache.</span></span><span class="sig-name descname"><span class="pre">EXACT_CYCLIC_BARYCENTRICS</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#geometor.etc.symbolic_cache.SymbolicCyclicFn" title="geometor.etc.symbolic_cache.SymbolicCyclicFn"><span class="pre">SymbolicCyclicFn</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.EXACT_CYCLIC_BARYCENTRICS" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.SymbolicCenterRecord">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.etc.symbolic_cache.</span></span><span class="sig-name descname"><span class="pre">SymbolicCenterRecord</span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.SymbolicCenterRecord" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact symbolic coordinates and invariants for center <code class="docutils literal notranslate"><span class="pre">X_num</span></code> on a triangle.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.SymbolicCenterRecord.num">
+        <span class="sig-name descname"><span class="pre">num</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><a class="headerlink" href="#geometor.etc.symbolic_cache.SymbolicCenterRecord.num" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.SymbolicCenterRecord.triangle_key">
+        <span class="sig-name descname"><span class="pre">triangle_key</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.etc.symbolic_cache.SymbolicCenterRecord.triangle_key" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.SymbolicCenterRecord.bary">
+        <span class="sig-name descname"><span class="pre">bary</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.SymbolicCenterRecord.bary" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.SymbolicCenterRecord.norm_bary">
+        <span class="sig-name descname"><span class="pre">norm_bary</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.SymbolicCenterRecord.norm_bary" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.SymbolicCenterRecord.trilinear">
+        <span class="sig-name descname"><span class="pre">trilinear</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.SymbolicCenterRecord.trilinear" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.SymbolicCenterRecord.xy">
+        <span class="sig-name descname"><span class="pre">xy</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.SymbolicCenterRecord.xy" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.SymbolicCenterRecord.sub_areas">
+        <span class="sig-name descname"><span class="pre">sub_areas</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.SymbolicCenterRecord.sub_areas" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.SymbolicCenterRecord.search_value">
+        <span class="sig-name descname"><span class="pre">search_value</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.SymbolicCenterRecord.search_value" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py property">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.SymbolicCenterRecord.is_kepler">
+        <span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">is_kepler</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><a class="headerlink" href="#geometor.etc.symbolic_cache.SymbolicCenterRecord.is_kepler" title="Link to this definition">¶</a></dt>
+        <dd><p>Return whether this record belongs to the Kepler golden triangle.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.SymbolicCenterRecord.xy_latex">
+        <span class="sig-name descname"><span class="pre">xy_latex</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.SymbolicCenterRecord.xy_latex" title="Link to this definition">¶</a></dt>
+        <dd><p>Return <code class="docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y)</span></code> formatted as LaTeX.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.SymbolicCenterRecord.xy_pretty">
+        <span class="sig-name descname"><span class="pre">xy_pretty</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.SymbolicCenterRecord.xy_pretty" title="Link to this definition">¶</a></dt>
+        <dd><p>Return <code class="docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y)</span></code> formatted as compact Unicode.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.SymbolicCenterRecord.trilinear_latex">
+        <span class="sig-name descname"><span class="pre">trilinear_latex</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.SymbolicCenterRecord.trilinear_latex" title="Link to this definition">¶</a></dt>
+        <dd><p>Return homogeneous trilinears formatted as LaTeX.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.SymbolicCenterRecord.trilinear_pretty">
+        <span class="sig-name descname"><span class="pre">trilinear_pretty</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.SymbolicCenterRecord.trilinear_pretty" title="Link to this definition">¶</a></dt>
+        <dd><p>Return homogeneous trilinears formatted as Unicode.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.SymbolicCenterRecord.bary_latex">
+        <span class="sig-name descname"><span class="pre">bary_latex</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.SymbolicCenterRecord.bary_latex" title="Link to this definition">¶</a></dt>
+        <dd><p>Return homogeneous barycentrics formatted as LaTeX.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.SymbolicCenterRecord.bary_pretty">
+        <span class="sig-name descname"><span class="pre">bary_pretty</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.SymbolicCenterRecord.bary_pretty" title="Link to this definition">¶</a></dt>
+        <dd><p>Return homogeneous barycentrics formatted as Unicode.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.SymbolicCenterRecord.search_latex">
+        <span class="sig-name descname"><span class="pre">search_latex</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.SymbolicCenterRecord.search_latex" title="Link to this definition">¶</a></dt>
+        <dd><p>Return the exact Kimberling search value as LaTeX.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.SymbolicCenterRecord.approx_xy">
+        <span class="sig-name descname"><span class="pre">approx_xy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.SymbolicCenterRecord.approx_xy" title="Link to this definition">¶</a></dt>
+        <dd><p>Return secondary float approximation of <code class="docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y)</span></code> for SVG layout.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.SymbolicCenterRecord.approx_search_value">
+        <span class="sig-name descname"><span class="pre">approx_search_value</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.SymbolicCenterRecord.approx_search_value" title="Link to this definition">¶</a></dt>
+        <dd><p>Return float approximation of <code class="docutils literal notranslate"><span class="pre">search_value</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.SymbolicCenterRecord.to_cache_dict">
+        <span class="sig-name descname"><span class="pre">to_cache_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.SymbolicCenterRecord.to_cache_dict" title="Link to this definition">¶</a></dt>
+        <dd><p>Serialize exact SymPy expressions via <code class="docutils literal notranslate"><span class="pre">sp.srepr</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.SymbolicCenterRecord.from_cache_dict">
+        <span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">from_cache_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.symbolic_cache.SymbolicCenterRecord" title="geometor.etc.symbolic_cache.SymbolicCenterRecord"><span class="pre">SymbolicCenterRecord</span></a></span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.SymbolicCenterRecord.from_cache_dict" title="Link to this definition">¶</a></dt>
+        <dd><p>Deserialize exact SymPy expressions from <code class="docutils literal notranslate"><span class="pre">sp.srepr</span></code> strings.</p>
+        </dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.CenterSymbolicRegistry">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.etc.symbolic_cache.</span></span><span class="sig-name descname"><span class="pre">CenterSymbolicRegistry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">triangle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../triangles/index.html#geometor.etc.triangles.SymbolicTriangle" title="geometor.etc.triangles.SymbolicTriangle"><span class="pre">geometor.etc.triangles.SymbolicTriangle</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'heronian'</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">cache_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">DEFAULT_SYMBOLIC_CACHE_DIR</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#geometor.etc.symbolic_cache.CenterSymbolicRegistry" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact symbolic evaluator and persistent cache for ETC triangle centers.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>triangle</strong> – A <code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicTriangle</span></code> instance or canonical preset name
+        (<code class="docutils literal notranslate"><span class="pre">&quot;heronian&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;right&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;kepler&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;kimberling&quot;</span></code>).</p></li>
+        <li><p><strong>cache_dir</strong> – Directory where per-triangle JSON cache files are stored. Pass <code class="docutils literal notranslate"><span class="pre">None</span></code>
+        to disable disk persistence (in-memory only).</p></li>
+        </ul>
+        </dd>
+        </dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.CenterSymbolicRegistry.cache_dir">
+        <span class="sig-name descname"><span class="pre">cache_dir</span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.CenterSymbolicRegistry.cache_dir" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py property">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.CenterSymbolicRegistry.cache_file">
+        <span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">cache_file</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><a class="headerlink" href="#geometor.etc.symbolic_cache.CenterSymbolicRegistry.cache_file" title="Link to this definition">¶</a></dt>
+        <dd><p>Path to this triangle’s JSON cache file.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.CenterSymbolicRegistry.save_cache">
+        <span class="sig-name descname"><span class="pre">save_cache</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.CenterSymbolicRegistry.save_cache" title="Link to this definition">¶</a></dt>
+        <dd><p>Persist cached symbolic center records to disk if modified.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.CenterSymbolicRegistry.has_exact_formula">
+        <span class="sig-name descname"><span class="pre">has_exact_formula</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.CenterSymbolicRegistry.has_exact_formula" title="Link to this definition">¶</a></dt>
+        <dd><p>Return whether center <code class="docutils literal notranslate"><span class="pre">X_num</span></code> has a built-in closed-form generator.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.CenterSymbolicRegistry.evaluate_barycentrics">
+        <span class="sig-name descname"><span class="pre">evaluate_barycentrics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">raw_bary</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.symbolic_cache.SymbolicCenterRecord" title="geometor.etc.symbolic_cache.SymbolicCenterRecord"><span class="pre">SymbolicCenterRecord</span></a></span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.CenterSymbolicRegistry.evaluate_barycentrics" title="Link to this definition">¶</a></dt>
+        <dd><p>Evaluate and cache a center from either <code class="docutils literal notranslate"><span class="pre">EXACT_CYCLIC_BARYCENTRICS</span></code> or <code class="docutils literal notranslate"><span class="pre">raw_bary</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.CenterSymbolicRegistry.get">
+        <span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.symbolic_cache.SymbolicCenterRecord" title="geometor.etc.symbolic_cache.SymbolicCenterRecord"><span class="pre">SymbolicCenterRecord</span></a></span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.CenterSymbolicRegistry.get" title="Link to this definition">¶</a></dt>
+        <dd><p>Return the exact <a class="reference internal" href="#geometor.etc.symbolic_cache.SymbolicCenterRecord" title="geometor.etc.symbolic_cache.SymbolicCenterRecord"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicCenterRecord</span></code></a> for <code class="docutils literal notranslate"><span class="pre">X_num</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.CenterSymbolicRegistry.evaluate_cyclic_sympy">
+        <span class="sig-name descname"><span class="pre">evaluate_cyclic_sympy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">first_component</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_trilinear</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cache</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.symbolic_cache.SymbolicCenterRecord" title="geometor.etc.symbolic_cache.SymbolicCenterRecord"><span class="pre">SymbolicCenterRecord</span></a></span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.CenterSymbolicRegistry.evaluate_cyclic_sympy" title="Link to this definition">¶</a></dt>
+        <dd><p>Evaluate an arbitrary cyclic SymPy expression in <code class="docutils literal notranslate"><span class="pre">(a,</span> <span class="pre">b,</span> <span class="pre">c,</span> <span class="pre">A,</span> <span class="pre">B,</span> <span class="pre">C,</span> <span class="pre">S_A,</span> <span class="pre">S_B,</span> <span class="pre">S_C,</span> <span class="pre">S,</span> <span class="pre">r,</span> <span class="pre">R,</span> <span class="pre">s)</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.symbolic_cache.CenterSymbolicRegistry.warm_collection_1">
+        <span class="sig-name descname"><span class="pre">warm_collection_1</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#geometor.etc.symbolic_cache.SymbolicCenterRecord" title="geometor.etc.symbolic_cache.SymbolicCenterRecord"><span class="pre">SymbolicCenterRecord</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.symbolic_cache.CenterSymbolicRegistry.warm_collection_1" title="Link to this definition">¶</a></dt>
+        <dd><p>Evaluate and cache all Collection 1 centers (<cite>X<sub>1</sub></cite>–<cite>X<sub>19</sub></cite>) plus key companions.</p>
+        </dd></dl>
+
+        </dd></dl>
+
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../render/index.html" title="geometor.etc.render">&larr; <span class="nav-label">geometor.etc.render</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../../index.html">geometor • etc</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../topics/index.html" title="geometor.etc.topics"><span class="nav-label">geometor.etc.topics</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../../../../log/26.302-183300/index.html">ETC Semantic Parser, Apparatus Registries & Multi-Triangle Codex Builder</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-tags">
+      <h3>Tags</h3>
+      <ul>
+        <li><a href="../../../../../tags/apparatus.html">apparatus</a></li>
+        <li><a href="../../../../../tags/etc.html">etc</a></li>
+        <li><a href="../../../../../tags/svg.html">svg</a></li>
+        <li><a href="../../../../../tags/triangle-centers.html">triangle-centers</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-categories">
+      <h3>Categories</h3>
+      <ul>
+        <li><a href="../../../../../categories/constructions.html">constructions</a></li>
+        <li><a href="../../../../../categories/parser.html">parser</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../../../types/collection.html">collection</a></li>
+        <li><a href="../../../../../types/log.html">log</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../../../../about.html"  >about</a></li>
+        <li><a href="../../../../../connect.html"  >connect</a></li>
+        <li><a href="../../../../../todos/index.html"  >todos</a></li>
+        <li><a href="../../../../../changelog.html"  >changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, geometor.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../../_static/documentation_options.js?v=938c9ccc"></script>
+  <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

@@ -11,6 +11,8 @@ X_1
 
 .. rubric:: INCENTER
 
+``incenter(A, B, C) -> X_1`` • **Euclid IV.4** • **Kimberling** ``X(1)`` • **Search Value** :math:`(6, 9, 13)`: :math:`\frac{2 \sqrt{35}}{7} \approx 1.690308509457`
+
 .. enunciation::
 
    :ref:`X_1 <X_1>` is the point of concurrence of the interior angle bisectors of :g:`ABC << A B C >>`; the point inside :g:`ABC << A B C >>` whose distances from sidelines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>` are equal. This equal distance, r, is the radius of the incircle, given by :math:`r = 2 \operatorname{area}(ABC)/(a + b + c)`.
@@ -19,21 +21,74 @@ X_1
    :alt: X_1 — INCENTER
    :align: center
 
-   **X_1** (*INCENTER*) constructed on acute reference triangle :math:`(a, b, c) = (5, 6, 7)` with unit baseline :g:`AB <[ A B ]>` = :math:`1`.
+   **X_1** (*INCENTER*) constructed in exact rational coordinates on the Heronian reference triangle :math:`(a, b, c) = (15, 13, 14)` over :math:`\mathbb{Q}` with vertices :g:`A <A>` = :math:`(0, 0)`, :g:`B <B>` = :math:`(14, 0)`, :g:`C <C>` = :math:`(5, 12)`, area :math:`\Delta = 84`, and inradius :math:`r = 4`. Switch tabs above to inspect exact constructions on Right :math:`(3, 4, 5)`, Kepler :math:`(1, \sqrt{\phi}, \phi)`, and Kimberling :math:`(6, 9, 13)`.
 
 .. admonition:: Constructed Elements
    :class: note
 
    * **Auxiliary Points:** :g:`I_a <I_a>`, :g:`I_b <I_b>`, :g:`I_c <I_c>` — Internal angle bisector feet on :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`
+   * **Auxiliary Points:** :g:`T_a <T_a>`, :g:`T_b <T_b>`, :g:`T_c <T_c>` — Incircle touchpoints (right-spread pedal feet) on :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, :g:`AB <[ A B ]>`
    * **Circle:** :term:`Incircle <incircle>` (:g:`incircle <incircle>`) — Inscribed circle tangent to sidelines at T_a, T_b, T_c; centered at X_1 INCENTER
    * **Concurrence Lines:** :g:`A–I_a <[ A I_a ]>`, :g:`B–I_b <[ B I_b ]>`, :g:`C–I_c <[ C I_c ]>` concurring at :g:`X_1 <X_1>`
+
+Homogeneous Coordinates & Exact Invariants
+------------------------------------------
+
+.. figure:: 02_coordinates.svg
+   :alt: X_1 — Homogeneous Trilinear Distances and Barycentric Sub-Areas
+   :align: center
+
+   **Homogeneous Coordinates of X_1** on Heronian :math:`(15, 13, 14)`: orthogonal trilinear struts :math:`(\alpha, \beta, \gamma)` and shaded barycentric sub-triangles :math:`(\Delta_a, \Delta_b, \Delta_c)`.
+
+* **Trilinear Coordinates** (:math:`\alpha : \beta : \gamma = 1 : 1 : 1`): Dropping orthogonal perpendiculars :g:`X_1T_a </ X_1 T_a />`, :g:`X_1T_b </ X_1 T_b />`, and :g:`X_1T_c </ X_1 T_c />` from :g:`X_1 <X_1>` to sidelines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, and :g:`AB <[ A B ]>` meets the sides at right-spread touchpoints :g:`T_a <T_a>` = :math:`\left(\frac{46}{5}, \frac{32}{5}\right)`, :g:`T_b <T_b>` = :math:`\left(\frac{30}{13}, \frac{72}{13}\right)`, and :g:`T_c <T_c>` = :math:`(6, 0)`. Every strut equals the exact inradius :math:`r = 4` (quadrance :math:`Q_r = 16`), realizing :math:`4 : 4 : 4 = 1 : 1 : 1`.
+* **Barycentric Coordinates** (:math:`u : v : w = a : b : c`): Joining :g:`X_1 <X_1>` to the vertices along :g:`X_1A </ X_1 A />`, :g:`X_1B </ X_1 B />`, and :g:`X_1C </ X_1 C />` partitions :math:`\triangle ABC` into three sub-triangles :g:`△X_1BC << X_1 B C >>`, :g:`△X_1CA << X_1 C A >>`, and :g:`△X_1AB << X_1 A B >>`. Sharing common altitude :math:`r = 4`, their exact signed areas on :math:`(15, 13, 14)` are :math:`\Delta_a = \frac{1}{2}(15)(4) = 30`, :math:`\Delta_b = \frac{1}{2}(13)(4) = 26`, and :math:`\Delta_c = \frac{1}{2}(14)(4) = 28` (:math:`30 + 26 + 28 = 84 = \Delta`), in exact ratio :math:`30 : 26 : 28 = 15 : 13 : 14 = a : b : c`.
+
+.. list-table:: Exact Symbolic Coordinates & Invariants Across the Four Reference Triangles
+   :header-rows: 1
+   :widths: 18 10 18 14 16 14 14
+
+   * - Reference Triangle
+     - Field
+     - Cartesian :math:`(x, y)`
+     - Trilinears :math:`\alpha : \beta : \gamma`
+     - Barycentrics :math:`u : v : w`
+     - Sub-Areas :math:`(\Delta_a, \Delta_b, \Delta_c)`
+     - Inradius & Quadrance :math:`(r,\, Q_r)`
+   * - **Heronian** :math:`(15, 13, 14)`
+     - :math:`\mathbb{Q}`
+     - :math:`\left(6,\; 4\right)`
+     - :math:`1 : 1 : 1`
+     - :math:`15 : 13 : 14`
+     - :math:`\left(30,\; 26,\; 28\right)`
+     - :math:`r = 4,\; Q_r = 16`
+   * - **Right** :math:`(3, 4, 5)`
+     - :math:`\mathbb{Q}`
+     - :math:`\left(3,\; 1\right)`
+     - :math:`1 : 1 : 1`
+     - :math:`3 : 4 : 5`
+     - :math:`\left(\frac{3}{2},\; 2,\; \frac{5}{2}\right)`
+     - :math:`r = 1,\; Q_r = 1`
+   * - **Kepler** :math:`(1, \sqrt{\phi}, \phi)`
+     - :math:`\mathbb{Q}(\sqrt{\phi})`
+     - :math:`\left(\frac{\sqrt{\phi}}{2} + \frac{\phi}{2} - \frac{1}{2},\; \frac{\sqrt{\phi}}{2} - \frac{\phi}{2} + \frac{1}{2}\right)`
+     - :math:`1 : 1 : 1`
+     - :math:`1 : \sqrt{\phi} : \phi`
+     - :math:`\left(\frac{\sqrt{\phi}}{4} - \frac{\phi}{4} + \frac{1}{4},\; - \frac{\phi \sqrt{\phi}}{4} + \frac{\sqrt{\phi}}{4} + \frac{\phi}{4},\; \frac{\phi \sqrt{\phi}}{4} - \frac{1}{4}\right)`
+     - :math:`r = \frac{\sqrt{\phi}}{2} - \frac{\phi}{2} + \frac{1}{2},\; Q_r = - \frac{\phi \sqrt{\phi}}{2} + \frac{\sqrt{\phi}}{2} + \frac{1}{2}`
+   * - **Kimberling** :math:`(6, 9, 13)`
+     - :math:`\mathbb{Q}(\sqrt{35})`
+     - :math:`\left(8,\; \frac{2 \sqrt{35}}{7}\right)`
+     - :math:`1 : 1 : 1`
+     - :math:`6 : 9 : 13`
+     - :math:`\left(\frac{6 \sqrt{35}}{7},\; \frac{9 \sqrt{35}}{7},\; \frac{13 \sqrt{35}}{7}\right)`
+     - :math:`r = \frac{2 \sqrt{35}}{7},\; Q_r = \frac{20}{7}`
 
 .. signature:: center
 
    | **Trilinears:** :math:`1 : 1 : 1`
    | **Barycentrics:** :math:`a : b : c`
    | **Tripolars:** :math:`\sqrt{b c (b + c - a)} : :`
-   | **Search Value (6, 9, 13):** :math:`1.690308509457`
+   | **Search Value (6, 9, 13):** :math:`\frac{2 \sqrt{35}}{7} \approx 1.690308509457`
 
 .. collapse:: Alternate Coordinates
    :badge: 2 forms
@@ -50,22 +105,47 @@ X_1
    * :ref:`X_1 <X_1>` = :math:`(\sin A)` :g:`A <A>` + :math:`(\sin B)` :g:`B <B>` + :math:`(\sin C)` :g:`C <C>`, where :g:`A <A>`, :g:`B <B>`, :g:`C <C>` are vertices of :g:`ABC << A B C >>`
    * :ref:`X_1 <X_1>` = :math:`a` :g:`A <A>` + :math:`b` :g:`B <B>` + :math:`c` :g:`C <C>`, where :g:`A <A>`, :g:`B <B>`, :g:`C <C>` are vertices
 
+Incident Central Lines
+----------------------
+
+.. figure:: 03_central_lines.svg
+   :alt: X_1 — Incident Central Lines
+   :align: center
+
+   **Principal Central Lines Through X_1** on Heronian :math:`(15, 13, 14)`.
+
+* **Nagel Line** :g:`{1, 2, 8, 10} <{ 2, 8 }>` — collinear axis of :g:`X_1 <X_1>`, :ref:`X_2 <X_2>` (*Centroid*, :math:`(\frac{19}{3}, 4)`), :ref:`X_10 <X_10>` (*Spieker Center*, :math:`(\frac{13}{2}, 4)`), and :ref:`X_8 <X_8>` (*Nagel Point*, :math:`(7, 4)`). On :math:`(15, 13, 14)`, its exact equation is :math:`y - 4 = 0` (spread :math:`0`, **parallel to baseline** :g:`AB <[ A B ]>`).
+* **Feuerbach Line** :g:`{1, 5, 11} <{ 5, 11 }>` — collinear axis of :g:`X_1 <X_1>`, :ref:`X_5 <X_5>` (*Nine-Point Center*, :math:`(6, \frac{63}{16})`), and :ref:`X_11 <X_11>` (*Feuerbach Point*, :math:`(6, 8)`). On :math:`(15, 13, 14)`, its exact equation is :math:`x - 6 = 0` (spread :math:`1`, **perpendicular to baseline** :g:`AB <[ A B ]>` and orthogonal to the Nagel line).
+* **OI Line (Incenter–Circumcenter Axis)** :g:`{1, 3, 40} <{ 3, 40 }>` — joins :g:`X_1 <X_1>`, :ref:`X_3 <X_3>` (*Circumcenter*, :math:`(7, \frac{33}{8})`), and :ref:`X_40 <X_40>` (*Bevan Point*, :math:`(8, \frac{17}{4})`), with exact equation :math:`x - 8y + 26 = 0` (spread :math:`\frac{1}{65}`).
+* **Incenter–Symmedian Line** :g:`{1, 6, 9} <{ 6, 9 }>` — joins :g:`X_1 <X_1>`, :ref:`X_6 <X_6>` (*Symmedian Point*, :math:`(\frac{1673}{295}, \frac{1176}{295})`), and :ref:`X_9 <X_9>` (*Mittenpunkt*, :math:`(\frac{973}{146}, \frac{294}{73})`), with exact equation :math:`4x - 97y + 364 = 0` (spread :math:`\frac{16}{9425}`).
+* **Soddy Line** :g:`{1, 7, 20} <{ 7, 20 }>` — joins :g:`X_1 <X_1>`, :ref:`X_7 <X_7>` (*Gergonne Point*, :math:`(\frac{414}{73}, \frac{288}{73})`), and :ref:`X_20 <X_20>` (*de Longchamps Point*, :math:`(9, \frac{9}{2})`), with exact equation :math:`x - 6y + 18 = 0` (spread :math:`\frac{1}{37}`).
+
 .. container:: note-item
 
    :ref:`X_1 <X_1>` lies on all Z-cubics (e.g., Thomson, Darboux, Napoleon, Neuberg).
 
-.. admonition:: Related Collection 1 Topic Guides
-   :class: tip
-
-   :doc:`T_1: Isogonal Conjugate <../../../topics/isogonal-conjugate/index>` • :doc:`T_2: Isotomic Conjugate <../../../topics/isotomic-conjugate/index>` • :doc:`T_3: Complement & Anticomplement <../../../topics/complement-and-anticomplement/index>` • :doc:`T_4: Harmonic Conjugate & Cross-Ratio <../../../topics/harmonic-conjugate/index>` • :doc:`T_5: Circle Inversion <../../../topics/circle-inversion/index>` • :doc:`T_7: The Nagel Line <../../../topics/nagel-line/index>` • :doc:`T_9: The Feuerbach Line <../../../topics/feuerbach-line/index>` • :doc:`T_10: The OI Line (Incenter–Circumcenter Axis) <../../../topics/oi-line/index>` • :doc:`T_11: The Soddy Line <../../../topics/soddy-line/index>` • :doc:`T_12: The Fuhrmann & Spieker Central Lines <../../../topics/fuhrmann-and-spieker-lines/index>` • :doc:`T_14: The Incircle & Excircles <../../../topics/incircle-and-excircles/index>` • :doc:`T_16: The Nine-Point (Feuerbach) Circle <../../../topics/nine-point-circle/index>` • :doc:`T_17: The Spieker Circle <../../../topics/spieker-circle/index>` • :doc:`T_20: Medial & Anticomplementary Triangles <../../../topics/medial-and-anticomplementary-triangles/index>` • :doc:`T_22: Intouch (Contact) & Extouch Triangles <../../../topics/intouch-and-extouch-triangles/index>` • :doc:`T_23: Incentral & Excentral Triangles <../../../topics/incentral-and-excentral-triangles/index>`
-
-.. collapse:: Incident Central Lines
+.. collapse:: Full Incident Central Line Catalog
    :badge: 170 lines
    :class: line-catalog
 
    {:ref:`2 <X_2>`, :ref:`8 <X_8>`}, {:ref:`3 <X_3>`, :ref:`35 <X_35>`}, {:ref:`4 <X_4>`, :ref:`33 <X_33>`}, {:ref:`5 <X_5>`, :ref:`11 <X_11>`}, {:ref:`6 <X_6>`, :ref:`9 <X_9>`}, {:ref:`7 <X_7>`, :ref:`20 <X_20>`}, {:ref:`15 <X_15>`, :ref:`1251 <X_1251>`}, {:ref:`16 <X_16>`, :ref:`1250 <X_1250>`}, {:ref:`19 <X_19>`, :ref:`28 <X_28>`}, {:ref:`21 <X_21>`, :ref:`31 <X_31>`}, {:ref:`24 <X_24>`, :ref:`1061 <X_1061>`}, {:ref:`25 <X_25>`, :ref:`1036 <X_1036>`}, {:ref:`29 <X_29>`, :ref:`92 <X_92>`}, {:ref:`30 <X_30>`, :ref:`79 <X_79>`}, {:ref:`32 <X_32>`, :ref:`172 <X_172>`}, {:ref:`39 <X_39>`, :ref:`291 <X_291>`}, {:ref:`41 <X_41>`, :ref:`101 <X_101>`}, {:ref:`49 <X_49>`, :ref:`215 <X_215>`}, {:ref:`54 <X_54>`, :ref:`3460 <X_3460>`}, {:ref:`60 <X_60>`, :ref:`110 <X_110>`}, {:ref:`61 <X_61>`, :ref:`203 <X_203>`}, {:ref:`62 <X_62>`, :ref:`202 <X_202>`}, {:ref:`64 <X_64>`, :ref:`1439 <X_1439>`}, {:ref:`69 <X_69>`, :ref:`1245 <X_1245>`}, {:ref:`71 <X_71>`, :ref:`579 <X_579>`}, {:ref:`74 <X_74>`, :ref:`3464 <X_3464>`}, {:ref:`75 <X_75>`, :ref:`86 <X_86>`}, {:ref:`76 <X_76>`, :ref:`350 <X_350>`}, {:ref:`82 <X_82>`, :ref:`560 <X_560>`}, {:ref:`84 <X_84>`, :ref:`221 <X_221>`}, {:ref:`87 <X_87>`, :ref:`192 <X_192>`}, {:ref:`88 <X_88>`, :ref:`100 <X_100>`}, {:ref:`90 <X_90>`, :ref:`155 <X_155>`}, {:ref:`99 <X_99>`, :ref:`741 <X_741>`}, {:ref:`102 <X_102>`, :ref:`108 <X_108>`}, {:ref:`104 <X_104>`, :ref:`109 <X_109>`}, {:ref:`142 <X_142>`, :ref:`277 <X_277>`}, {:ref:`147 <X_147>`, :ref:`150 <X_150>`}, {:ref:`159 <X_159>`, :ref:`1486 <X_1486>`}, {:ref:`163 <X_163>`, :ref:`293 <X_293>`}, {:ref:`164 <X_164>`, :ref:`258 <X_258>`}, {:ref:`166 <X_166>`, :ref:`1488 <X_1488>`}, {:ref:`167 <X_167>`, :ref:`174 <X_174>`}, {:ref:`168 <X_168>`, :ref:`173 <X_173>`}, {:ref:`179 <X_179>`, :ref:`1142 <X_1142>`}, {:ref:`181 <X_181>`, :ref:`970 <X_970>`}, {:ref:`182 <X_182>`, :ref:`983 <X_983>`}, {:ref:`184 <X_184>`, :ref:`1726 <X_1726>`}, {:ref:`185 <X_185>`, :ref:`296 <X_296>`}, {:ref:`188 <X_188>`, :ref:`361 <X_361>`}, {:ref:`190 <X_190>`, :ref:`537 <X_537>`}, {:ref:`195 <X_195>`, :ref:`3467 <X_3467>`}, {:ref:`196 <X_196>`, :ref:`207 <X_207>`}, {:ref:`201 <X_201>`, :ref:`212 <X_212>`}, {:ref:`204 <X_204>`, :ref:`1712 <X_1712>`}, {:ref:`210 <X_210>`, :ref:`2334 <X_2334>`}, {:ref:`224 <X_224>`, :ref:`377 <X_377>`}, {:ref:`227 <X_227>`, :ref:`1465 <X_1465>`}, {:ref:`228 <X_228>`, :ref:`1730 <X_1730>`}, {:ref:`229 <X_229>`, :ref:`267 <X_267>`}, {:ref:`256 <X_256>`, :ref:`511 <X_511>`}, {:ref:`257 <X_257>`, :ref:`385 <X_385>`}, {:ref:`280 <X_280>`, :ref:`1256 <X_1256>`}, {:ref:`281 <X_281>`, :ref:`282 <X_282>`}, {:ref:`289 <X_289>`, :ref:`363 <X_363>`}, {:ref:`312 <X_312>`, :ref:`1089 <X_1089>`}, {:ref:`318 <X_318>`, :ref:`1897 <X_1897>`}, {:ref:`320 <X_320>`, :ref:`752 <X_752>`}, {:ref:`321 <X_321>`, :ref:`964 <X_964>`}, {:ref:`329 <X_329>`, :ref:`452 <X_452>`}, {:ref:`335 <X_335>`, :ref:`384 <X_384>`}, {:ref:`336 <X_336>`, :ref:`811 <X_811>`}, {:ref:`341 <X_341>`, :ref:`1050 <X_1050>`}, {:ref:`344 <X_344>`, :ref:`1265 <X_1265>`}, {:ref:`346 <X_346>`, :ref:`1219 <X_1219>`}, {:ref:`357 <X_357>`, :ref:`1508 <X_1508>`}, {:ref:`358 <X_358>`, :ref:`1507 <X_1507>`}, {:ref:`364 <X_364>`, :ref:`365 <X_365>`}, {:ref:`371 <X_371>`, :ref:`1702 <X_1702>`}, {:ref:`372 <X_372>`, :ref:`1703 <X_1703>`}, {:ref:`376 <X_376>`, :ref:`553 <X_553>`}, {:ref:`378 <X_378>`, :ref:`1063 <X_1063>`}, {:ref:`393 <X_393>`, :ref:`836 <X_836>`}, {:ref:`394 <X_394>`, :ref:`1711 <X_1711>`}, {:ref:`399 <X_399>`, :ref:`3065 <X_3065>`}, {:ref:`409 <X_409>`, :ref:`1247 <X_1247>`}, {:ref:`410 <X_410>`, :ref:`1248 <X_1248>`}, {:ref:`411 <X_411>`, :ref:`1254 <X_1254>`}, {:ref:`442 <X_442>`, :ref:`1834 <X_1834>`}, {:ref:`474 <X_474>`, :ref:`1339 <X_1339>`}, {:ref:`475 <X_475>`, :ref:`1861 <X_1861>`}, {:ref:`512 <X_512>`, :ref:`875 <X_875>`}, {:ref:`513 <X_513>`, :ref:`764 <X_764>`}, {:ref:`514 <X_514>`, :ref:`663 <X_663>`}, {:ref:`522 <X_522>`, :ref:`1459 <X_1459>`}, {:ref:`528 <X_528>`, :ref:`1086 <X_1086>`}, {:ref:`561 <X_561>`, :ref:`718 <X_718>`}, {:ref:`563 <X_563>`, :ref:`1820 <X_1820>`}, {:ref:`564 <X_564>`, :ref:`1048 <X_1048>`}, {:ref:`572 <X_572>`, :ref:`604 <X_604>`}, {:ref:`573 <X_573>`, :ref:`941 <X_941>`}, {:ref:`574 <X_574>`, :ref:`1571 <X_1571>`}, {:ref:`594 <X_594>`, :ref:`1224 <X_1224>`}, {:ref:`607 <X_607>`, :ref:`949 <X_949>`}, {:ref:`615 <X_615>`, :ref:`3300 <X_3300>`}, {:ref:`631 <X_631>`, :ref:`1000 <X_1000>`}, {:ref:`644 <X_644>`, :ref:`1280 <X_1280>`}, {:ref:`647 <X_647>`, :ref:`1021 <X_1021>`}, {:ref:`650 <X_650>`, :ref:`1643 <X_1643>`}, {:ref:`651 <X_651>`, :ref:`1156 <X_1156>`}, {:ref:`659 <X_659>`, :ref:`891 <X_891>`}, {:ref:`662 <X_662>`, :ref:`897 <X_897>`}, {:ref:`672 <X_672>`, :ref:`1002 <X_1002>`}, {:ref:`689 <X_689>`, :ref:`719 <X_719>`}, {:ref:`704 <X_704>`, :ref:`1502 <X_1502>`}, {:ref:`727 <X_727>`, :ref:`932 <X_932>`}, {:ref:`731 <X_731>`, :ref:`789 <X_789>`}, {:ref:`748 <X_748>`, :ref:`756 <X_756>`}, {:ref:`761 <X_761>`, :ref:`825 <X_825>`}, {:ref:`765 <X_765>`, :ref:`1052 <X_1052>`}, {:ref:`810 <X_810>`, :ref:`1577 <X_1577>`}, {:ref:`840 <X_840>`, :ref:`1308 <X_1308>`}, {:ref:`905 <X_905>`, :ref:`1734 <X_1734>`}, {:ref:`908 <X_908>`, :ref:`998 <X_998>`}, {:ref:`921 <X_921>`, :ref:`1800 <X_1800>`}, {:ref:`939 <X_939>`, :ref:`1260 <X_1260>`}, {:ref:`945 <X_945>`, :ref:`1875 <X_1875>`}, {:ref:`947 <X_947>`, :ref:`1753 <X_1753>`}, {:ref:`951 <X_951>`, :ref:`1435 <X_1435>`}, {:ref:`969 <X_969>`, :ref:`1444 <X_1444>`}, {:ref:`971 <X_971>`, :ref:`1419 <X_1419>`}, {:ref:`989 <X_989>`, :ref:`1397 <X_1397>`}, {:ref:`1013 <X_1013>`, :ref:`1430 <X_1430>`}, {:ref:`1037 <X_1037>`, :ref:`1041 <X_1041>`}, {:ref:`1053 <X_1053>`, :ref:`1110 <X_1110>`}, {:ref:`1057 <X_1057>`, :ref:`1598 <X_1598>`}, {:ref:`1059 <X_1059>`, :ref:`1597 <X_1597>`}, {:ref:`1073 <X_1073>`, :ref:`3341 <X_3341>`}, {:ref:`1075 <X_1075>`, :ref:`1148 <X_1148>`}, {:ref:`1106 <X_1106>`, :ref:`1476 <X_1476>`}, {:ref:`1157 <X_1157>`, :ref:`3483 <X_3483>`}, {:ref:`1168 <X_1168>`, :ref:`1318 <X_1318>`}, {:ref:`1170 <X_1170>`, :ref:`1253 <X_1253>`}, {:ref:`1185 <X_1185>`, :ref:`1206 <X_1206>`}, {:ref:`1197 <X_1197>`, :ref:`1613 <X_1613>`}, {:ref:`1292 <X_1292>`, :ref:`1477 <X_1477>`}, {:ref:`1333 <X_1333>`, :ref:`1761 <X_1761>`}, {:ref:`1342 <X_1342>`, :ref:`1700 <X_1700>`}, {:ref:`1343 <X_1343>`, :ref:`1701 <X_1701>`}, {:ref:`1361 <X_1361>`, :ref:`1364 <X_1364>`}, {:ref:`1389 <X_1389>`, :ref:`1393 <X_1393>`}, {:ref:`1399 <X_1399>`, :ref:`1727 <X_1727>`}, {:ref:`1406 <X_1406>`, :ref:`1480 <X_1480>`}, {:ref:`1409 <X_1409>`, :ref:`1765 <X_1765>`}, {:ref:`1437 <X_1437>`, :ref:`1710 <X_1710>`}, {:ref:`1472 <X_1472>`, :ref:`1791 <X_1791>`}, {:ref:`1719 <X_1719>`, :ref:`1790 <X_1790>`}, {:ref:`1855 <X_1855>`, :ref:`1886 <X_1886>`}, {:ref:`1859 <X_1859>`, :ref:`1871 <X_1871>`}, {:ref:`1872 <X_1872>`, :ref:`1887 <X_1887>`}, {:ref:`2120 <X_2120>`, :ref:`3461 <X_3461>`}, {:ref:`2130 <X_2130>`, :ref:`3347 <X_3347>`}, {:ref:`3183 <X_3183>`, :ref:`3345 <X_3345>`}, {:ref:`3342 <X_3342>`, :ref:`3343 <X_3343>`}, {:ref:`3344 <X_3344>`, :ref:`3351 <X_3351>`}, {:ref:`3346 <X_3346>`, :ref:`3353 <X_3353>`}, {:ref:`3348 <X_3348>`, :ref:`3472 <X_3472>`}, {:ref:`3350 <X_3350>`, :ref:`3352 <X_3352>`}, {:ref:`3354 <X_3354>`, :ref:`3355 <X_3355>`}, {:ref:`3462 <X_3462>`, :ref:`3469 <X_3469>`}
 
-.. collapse:: Functional Relations
+Functional Relations & Conjugates
+---------------------------------
+
+.. figure:: 04_relations.svg
+   :alt: X_1 — Functional Relations and Conjugates
+   :align: center
+
+   **Conjugate & Homothetic Partners of X_1** on Heronian :math:`(15, 13, 14)`.
+
+* **Self-Isogonal Fixed Point:** :g:`X_1 <X_1>` is its own :term:`isogonal conjugate <isogonal-conjugate>` (:math:`1^{-1} : 1^{-1} : 1^{-1} = 1 : 1 : 1`), acting as the identity element of trilinear multiplication.
+* **Isotomic Conjugate:** :g:`X_75 <X_75>` (:ref:`X_75 <X_75>`, homogeneous barycentrics :math:`bc : ca : ab = 182 : 210 : 195`) at exact rational coordinates :math:`\left(\frac{3915}{587}, \frac{2340}{587}\right)`, joined along :g:`{1, 75} <{ 1, 75 }>`.
+* **Anticomplement of Spieker Center:** :g:`X_1 <X_1>` is the :term:`anticomplement <anticomplement>` of :g:`X_10 <X_10>` (:ref:`Spieker Center <X_10>`, :math:`\left(\frac{13}{2}, 4\right)`), dilated from homothetic center :g:`X_2 <X_2>` (:ref:`Centroid <X_2>`, :math:`\left(\frac{19}{3}, 4\right)`) by factor :math:`-2` along :g:`{1, 10} <{ 1, 10 }>`.
+* **Complement of Nagel Point:** :g:`X_1 <X_1>` is the :term:`complement <complement>` of :g:`X_8 <X_8>` (:ref:`Nagel Point <X_8>`, :math:`(7, 4)`), dilated from :g:`X_2 <X_2>` by factor :math:`-\frac{1}{2}` along :g:`{1, 8} <{ 1, 8 }>`; equivalently, :g:`X_10 <X_10>` is the exact midpoint of :g:`X_1 <X_1>` and :g:`X_8 <X_8>`.
+* **Circumcircle Inverse:** Inversion in :g:`circumcircle <circumcircle>` centered at :g:`X_3 <X_3>` = :math:`\left(7, \frac{33}{8}\right)` (:math:`R^2 = \frac{4225}{64}`) maps :g:`X_1 <X_1>` along the :g:`OI axis <{ 1, 3 }>` (:math:`Q(X_1, X_3) = \frac{65}{64}`, scale :math:`R^2 / Q = 65`) to :ref:`X_36 <X_36>` at exact integer coordinates :math:`(-58, -4)`.
+
+.. collapse:: Full Functional Relations Catalog
    :badge: 123 relations
 
    * :ref:`X_1 <X_1>` = midpoint of X_i and X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`1482 <X_1482>`), (:ref:`7 <X_7>`, :ref:`390 <X_390>`), (:ref:`8 <X_8>`, :ref:`145 <X_145>`), (:ref:`55 <X_55>`, :ref:`2099 <X_2099>`), (:ref:`56 <X_56>`, :ref:`2098 <X_2098>`)
@@ -191,6 +271,22 @@ X_1
    * :ref:`X_1 <X_1>` = perspector of :term:`hexyl triangle <hexyl-triangle>` and :term:`antipedal triangle <antipedal-triangle>` of :ref:`X_40 <X_40>`
    * :ref:`X_1 <X_1>` = perspector of hexyl triangle and anticevian triangle of :ref:`X_57 <X_57>`
    * :ref:`X_1 <X_1>` = :ref:`X_4 <X_4>`-of-Pelletier-triangle
+
+Four-Triangle Symbolic Invariance
+---------------------------------
+
+.. figure:: 05_four_triangles.svg
+   :alt: X_1 — Invariance Across Four Canonical Symbolic Reference Triangles
+   :align: center
+
+   **Four-Triangle Invariance of X_1** across :g:`Heronian (15, 13, 14) <panel-heronian>`, :g:`Right (3, 4, 5) <panel-right>`, :g:`Kepler (1, √φ, φ) <panel-kepler>`, and :g:`Kimberling (6, 9, 13) <panel-kimberling>`.
+
+Across all four number fields — rational :math:`\mathbb{Q}` on :g:`Heronian (15, 13, 14) <heronian-X_1>` (:math:`X_1 = (6, 4)`, :g:`r = 4 <heronian-incircle>`) and Pythagorean :g:`Right (3, 4, 5) <right-X_1>` (:math:`X_1 = (3, 1)`, :g:`r = 1 <right-incircle>`), golden quadratic tower :math:`\mathbb{Q}(\sqrt{\phi})` on :g:`Kepler (1, √φ, φ) <kepler-X_1>`, and quadratic :math:`\mathbb{Q}(\sqrt{35})` on :g:`Kimberling (6, 9, 13) <kimberling-X_1>` (:g:`r = 2\sqrt{35}/7 <kimberling-incircle>`) — **X_1** remains strictly interior, equidistant from all three sidelines (:math:`1 : 1 : 1`), and partitions the triangle area in exact proportion :math:`a : b : c`.
+
+.. admonition:: Related Collection 1 Topic Guides
+   :class: tip
+
+   :doc:`T_1: Isogonal Conjugate <../../../topics/isogonal-conjugate/index>` • :doc:`T_2: Isotomic Conjugate <../../../topics/isotomic-conjugate/index>` • :doc:`T_3: Complement & Anticomplement <../../../topics/complement-and-anticomplement/index>` • :doc:`T_4: Harmonic Conjugate & Cross-Ratio <../../../topics/harmonic-conjugate/index>` • :doc:`T_5: Circle Inversion <../../../topics/circle-inversion/index>` • :doc:`T_7: The Nagel Line <../../../topics/nagel-line/index>` • :doc:`T_9: The Feuerbach Line <../../../topics/feuerbach-line/index>` • :doc:`T_10: The OI Line (Incenter–Circumcenter Axis) <../../../topics/oi-line/index>` • :doc:`T_11: The Soddy Line <../../../topics/soddy-line/index>` • :doc:`T_12: The Fuhrmann & Spieker Central Lines <../../../topics/fuhrmann-and-spieker-lines/index>` • :doc:`T_14: The Incircle & Excircles <../../../topics/incircle-and-excircles/index>` • :doc:`T_16: The Nine-Point (Feuerbach) Circle <../../../topics/nine-point-circle/index>` • :doc:`T_17: The Spieker Circle <../../../topics/spieker-circle/index>` • :doc:`T_20: Medial & Anticomplementary Triangles <../../../topics/medial-and-anticomplementary-triangles/index>` • :doc:`T_22: Intouch (Contact) & Extouch Triangles <../../../topics/intouch-and-extouch-triangles/index>` • :doc:`T_23: Incentral & Excentral Triangles <../../../topics/incentral-and-excentral-triangles/index>`
 
 Notes
 -----

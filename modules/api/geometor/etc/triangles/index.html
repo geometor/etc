@@ -1,0 +1,581 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>geometor.etc.triangles &mdash; geometor • etc</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../../../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../../../index.html">
+        <img src="../../../../../_static/logo.png" class="logo" alt="Logo"/>
+      </a>
+      <div class="org-repo">
+        <span class="org">geometor</span>
+        •
+        <span class="repo">etc</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../../../centers/index.html"  >Encyclopedia of Triangle Centers</a>
+        </li>
+        <li>
+          <a href="../../../../../preambles.html"  >Guide to Preambles in ETC</a>
+        </li>
+        <li>
+          <a href="../../../../../glossary.html"  >Glossary</a>
+        </li>
+        <li>
+          <a href="../../../../../persons.html"  >Index Nominum (Geometers & Contributors)</a>
+        </li>
+        <li>
+          <a href="../../../../../bibliography.html"  >Bibliography & Cited Sources</a>
+        </li>
+        <li>
+          <a href="../../../../../mission/index.html"  >mission</a>
+        </li>
+        <li>
+          <a href="../../../../../usage/index.html"  >usage</a>
+        </li>
+        <li>
+          <a href="../../../../../log/index.html"  >log</a>
+        </li>
+        <li>
+          <a href="../../../../index.html" class="is-active" aria-selected="true" >modules</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../../../index.html" title="Return to Project Portal">&larr; etc</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../../../../index.html">geometor • etc</a>
+          </div>
+          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Breadcrumbs">
+            <a class="book-crumb-link" href="../../../../index.html">modules</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../transform/index.html" title="geometor.etc.transform">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../video/index.html" title="geometor.etc.video"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <style id="etc-heading-styles">
+        .book-reading-pane .book-content h1,
+        .folio-book-page h1 {
+            position: relative;
+            text-align: center !important;
+            text-indent: 0 !important;
+            margin-bottom: 0.35rem !important;
+        }
+        .book-reading-pane .book-content h1 a.headerlink,
+        .book-reading-pane .book-content h2 a.headerlink,
+        .folio-book-page h1 a.headerlink,
+        .folio-book-page h2 a.headerlink {
+            position: absolute;
+        }
+        .book-reading-pane .book-content p.rubric,
+        .folio-book-page p.rubric {
+            font-style: normal !important;
+            font-weight: 700 !important;
+            text-align: center !important;
+            text-indent: 0 !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            margin-top: 0 !important;
+            margin-bottom: 1.4rem !important;
+        }
+        .geom-ref {
+            cursor: pointer;
+            border-bottom: 1px dotted rgba(0, 229, 255, 0.55);
+            padding: 0 2px;
+            border-radius: 3px;
+            transition: background-color 0.12s ease, color 0.12s ease;
+        }
+        .geom-ref:hover,
+        .geom-highlight-text {
+            background-color: rgba(0, 255, 255, 0.18) !important;
+            color: #0ff !important;
+            border-bottom-color: #0ff !important;
+        }
+        .etc-act-plate {
+            margin: 0.5rem 0;
+        }
+        .etc-symbolic-concordance {
+            text-align: center;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.92rem;
+            color: var(--book-text-muted, #94a3b8);
+            margin: -0.6rem 0 1.25rem 0;
+        }
+        </style>
+        <section class="level-1" id="module-geometor.etc.triangles">
+        <span id="geometor-etc-triangles"></span><h1>geometor.etc.triangles<a class="headerlink" href="#module-geometor.etc.triangles" title="Link to this heading">¶</a></h1>
+        <p>Exact symbolic reference triangles for the Encyclopedia of Triangle Centers.</p>
+        <p>Defines the four canonical exact symbolic reference triangles over closed-form
+        algebraic number fields in SymPy:</p>
+        <ol class="arabic simple">
+        <li><p><code class="docutils literal notranslate"><span class="pre">heronian</span></code> — Acute Heronian <span class="math notranslate nohighlight">\((15, 13, 14)\)</span> over <span class="math notranslate nohighlight">\(\mathbb{Q}\)</span></p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">right</span></code> — Pythagorean Right <span class="math notranslate nohighlight">\((3, 4, 5)\)</span> over <span class="math notranslate nohighlight">\(\mathbb{Q}\)</span></p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">kepler</span></code> — Kepler Golden Right <span class="math notranslate nohighlight">\((1, \sqrt{\phi}, \phi)\)</span> over <span class="math notranslate nohighlight">\(\mathbb{Q}(\sqrt{\phi})\)</span></p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">kimberling</span></code> — Kimberling Search <span class="math notranslate nohighlight">\((6, 9, 13)\)</span> over <span class="math notranslate nohighlight">\(\mathbb{Q}(\sqrt{35})\)</span></p></li>
+        </ol>
+        <section class="level-2" id="attributes">
+        <h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.triangles.PHI" title="geometor.etc.triangles.PHI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PHI</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.triangles.SQRT_PHI" title="geometor.etc.triangles.SQRT_PHI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SQRT_PHI</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.triangles.SQRT_35" title="geometor.etc.triangles.SQRT_35"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SQRT_35</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.triangles.HERONIAN_TRIANGLE" title="geometor.etc.triangles.HERONIAN_TRIANGLE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HERONIAN_TRIANGLE</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.triangles.RIGHT_TRIANGLE" title="geometor.etc.triangles.RIGHT_TRIANGLE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RIGHT_TRIANGLE</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.triangles.KEPLER_TRIANGLE" title="geometor.etc.triangles.KEPLER_TRIANGLE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KEPLER_TRIANGLE</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.triangles.KIMBERLING_TRIANGLE" title="geometor.etc.triangles.KIMBERLING_TRIANGLE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KIMBERLING_TRIANGLE</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.triangles.LEGACY_ACUTE_TRIANGLE" title="geometor.etc.triangles.LEGACY_ACUTE_TRIANGLE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LEGACY_ACUTE_TRIANGLE</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.triangles.CANONICAL_TRIANGLES" title="geometor.etc.triangles.CANONICAL_TRIANGLES"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CANONICAL_TRIANGLES</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="classes">
+        <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.triangles.SymbolicTriangle" title="geometor.etc.triangles.SymbolicTriangle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SymbolicTriangle</span></code></a></p></td>
+        <td><p>Exact symbolic reference triangle with side lengths, vertices, and invariants.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.triangles.build_symbolic_triangle_from_sides" title="geometor.etc.triangles.build_symbolic_triangle_from_sides"><code class="xref py py-obj docutils literal notranslate"><span class="pre">build_symbolic_triangle_from_sides</span></code></a>(a, b, c, *[, key, ...]) → SymbolicTriangle</p></td>
+        <td><p>Construct an exact <a class="reference internal" href="#geometor.etc.triangles.SymbolicTriangle" title="geometor.etc.triangles.SymbolicTriangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicTriangle</span></code></a> from three side lengths.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.triangles.get_canonical_triangle" title="geometor.etc.triangles.get_canonical_triangle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_canonical_triangle</span></code></a>([preset, unit_baseline]) → SymbolicTriangle</p></td>
+        <td><p>Return a canonical <a class="reference internal" href="#geometor.etc.triangles.SymbolicTriangle" title="geometor.etc.triangles.SymbolicTriangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicTriangle</span></code></a> by preset key.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.PHI">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.triangles.</span></span><span class="sig-name descname"><span class="pre">PHI</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.etc.triangles.PHI" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SQRT_PHI">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.triangles.</span></span><span class="sig-name descname"><span class="pre">SQRT_PHI</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.etc.triangles.SQRT_PHI" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SQRT_35">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.triangles.</span></span><span class="sig-name descname"><span class="pre">SQRT_35</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.etc.triangles.SQRT_35" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.etc.triangles.</span></span><span class="sig-name descname"><span class="pre">SymbolicTriangle</span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact symbolic reference triangle with side lengths, vertices, and invariants.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>key</strong> – Preset identifier (<code class="docutils literal notranslate"><span class="pre">&quot;heronian&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;right&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;kepler&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;kimberling&quot;</span></code>,
+        or <code class="docutils literal notranslate"><span class="pre">&quot;acute&quot;</span></code>).</p></li>
+        <li><p><strong>label</strong> – Short human-readable title (e.g. <code class="docutils literal notranslate"><span class="pre">&quot;Heronian</span> <span class="pre">(15,</span> <span class="pre">13,</span> <span class="pre">14)&quot;</span></code>).</p></li>
+        <li><p><strong>field_latex</strong> – LaTeX string naming the ambient algebraic field (e.g. <code class="docutils literal notranslate"><span class="pre">r&quot;\mathbb{Q}&quot;</span></code>).</p></li>
+        <li><p><strong>a</strong> – Exact side lengths <span class="math notranslate nohighlight">\(a = |BC|\)</span>, <span class="math notranslate nohighlight">\(b = |CA|\)</span>, <span class="math notranslate nohighlight">\(c = |AB|\)</span>.</p></li>
+        <li><p><strong>b</strong> – Exact side lengths <span class="math notranslate nohighlight">\(a = |BC|\)</span>, <span class="math notranslate nohighlight">\(b = |CA|\)</span>, <span class="math notranslate nohighlight">\(c = |AB|\)</span>.</p></li>
+        <li><p><strong>c</strong> – Exact side lengths <span class="math notranslate nohighlight">\(a = |BC|\)</span>, <span class="math notranslate nohighlight">\(b = |CA|\)</span>, <span class="math notranslate nohighlight">\(c = |AB|\)</span>.</p></li>
+        <li><p><strong>A_xy</strong> – Exact Cartesian coordinates of vertices <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span>, <span class="math notranslate nohighlight">\(C\)</span>.</p></li>
+        <li><p><strong>B_xy</strong> – Exact Cartesian coordinates of vertices <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span>, <span class="math notranslate nohighlight">\(C\)</span>.</p></li>
+        <li><p><strong>C_xy</strong> – Exact Cartesian coordinates of vertices <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span>, <span class="math notranslate nohighlight">\(C\)</span>.</p></li>
+        <li><p><strong>area</strong> – Exact area <span class="math notranslate nohighlight">\(\Delta = \operatorname{Area}(\triangle ABC)\)</span>.</p></li>
+        <li><p><strong>simplify_fn</strong> – Field-aware exact simplification callable.</p></li>
+        </ul>
+        </dd>
+        </dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.key">
+        <span class="sig-name descname"><span class="pre">key</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.key" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.label">
+        <span class="sig-name descname"><span class="pre">label</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.label" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.field_latex">
+        <span class="sig-name descname"><span class="pre">field_latex</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.field_latex" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.a">
+        <span class="sig-name descname"><span class="pre">a</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.a" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.b">
+        <span class="sig-name descname"><span class="pre">b</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.b" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.c">
+        <span class="sig-name descname"><span class="pre">c</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.c" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.A_xy">
+        <span class="sig-name descname"><span class="pre">A_xy</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.A_xy" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.B_xy">
+        <span class="sig-name descname"><span class="pre">B_xy</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.B_xy" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.C_xy">
+        <span class="sig-name descname"><span class="pre">C_xy</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.C_xy" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.area">
+        <span class="sig-name descname"><span class="pre">area</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.area" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.simplify_fn">
+        <span class="sig-name descname"><span class="pre">simplify_fn</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/collections.abc.html#collections.abc.Callable" title="(in Python v3.13)"><span class="pre">collections.abc.Callable</span></a><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.simplify_fn" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.simplify">
+        <span class="sig-name descname"><span class="pre">simplify</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">expr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.simplify" title="Link to this definition">¶</a></dt>
+        <dd><p>Simplify <code class="docutils literal notranslate"><span class="pre">expr</span></code> in this triangle’s algebraic field.</p>
+        </dd></dl>
+
+        <dl class="py property">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.Q_a">
+        <span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">Q_a</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.Q_a" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact quadrance <span class="math notranslate nohighlight">\(Q_a = a^2\)</span> of side <span class="math notranslate nohighlight">\(BC\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py property">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.Q_b">
+        <span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">Q_b</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.Q_b" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact quadrance <span class="math notranslate nohighlight">\(Q_b = b^2\)</span> of side <span class="math notranslate nohighlight">\(CA\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py property">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.Q_c">
+        <span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">Q_c</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.Q_c" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact quadrance <span class="math notranslate nohighlight">\(Q_c = c^2\)</span> of side <span class="math notranslate nohighlight">\(AB\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py property">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.s">
+        <span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">s</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.s" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact semiperimeter <span class="math notranslate nohighlight">\(s = (a + b + c)/2\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py property">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.two_area">
+        <span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">two_area</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.two_area" title="Link to this definition">¶</a></dt>
+        <dd><p>Conway doubled area <span class="math notranslate nohighlight">\(S = 2\Delta\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py property">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.r">
+        <span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">r</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.r" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact inradius <span class="math notranslate nohighlight">\(r = \Delta / s\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py property">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.Q_r">
+        <span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">Q_r</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.Q_r" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact incircle quadrance <span class="math notranslate nohighlight">\(Q_r = r^2\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py property">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.R">
+        <span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">R</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.R" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact circumradius <span class="math notranslate nohighlight">\(R = abc / (4\Delta)\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py property">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.Q_R">
+        <span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">Q_R</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.Q_R" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact circumcircle quadrance <span class="math notranslate nohighlight">\(Q_R = R^2\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py property">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.S_A">
+        <span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">S_A</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.S_A" title="Link to this definition">¶</a></dt>
+        <dd><p>Conway symbol <span class="math notranslate nohighlight">\(S_A = (b^2 + c^2 - a^2)/2\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py property">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.S_B">
+        <span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">S_B</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.S_B" title="Link to this definition">¶</a></dt>
+        <dd><p>Conway symbol <span class="math notranslate nohighlight">\(S_B = (c^2 + a^2 - b^2)/2\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py property">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.S_C">
+        <span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">S_C</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.S_C" title="Link to this definition">¶</a></dt>
+        <dd><p>Conway symbol <span class="math notranslate nohighlight">\(S_C = (a^2 + b^2 - c^2)/2\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.unit_baseline">
+        <span class="sig-name descname"><span class="pre">unit_baseline</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.triangles.SymbolicTriangle" title="geometor.etc.triangles.SymbolicTriangle"><span class="pre">SymbolicTriangle</span></a></span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.unit_baseline" title="Link to this definition">¶</a></dt>
+        <dd><p>Return a homothetic copy scaled by <span class="math notranslate nohighlight">\(1/c\)</span> so <span class="math notranslate nohighlight">\(A=(0,0), B=(1,0)\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.trilinear_to_bary">
+        <span class="sig-name descname"><span class="pre">trilinear_to_bary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gamma</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.trilinear_to_bary" title="Link to this definition">¶</a></dt>
+        <dd><p>Convert homogeneous trilinears <span class="math notranslate nohighlight">\((\alpha : \beta : \gamma)\)</span> to barycentrics.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.bary_to_trilinear">
+        <span class="sig-name descname"><span class="pre">bary_to_trilinear</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">u</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">w</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.bary_to_trilinear" title="Link to this definition">¶</a></dt>
+        <dd><p>Convert homogeneous barycentrics <span class="math notranslate nohighlight">\((u : v : w)\)</span> to trilinears.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.normalize_bary">
+        <span class="sig-name descname"><span class="pre">normalize_bary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">u</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">w</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.normalize_bary" title="Link to this definition">¶</a></dt>
+        <dd><p>Normalize homogeneous barycentrics so <span class="math notranslate nohighlight">\(u + v + w = 1\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.bary_to_cartesian">
+        <span class="sig-name descname"><span class="pre">bary_to_cartesian</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">u</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">w</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.bary_to_cartesian" title="Link to this definition">¶</a></dt>
+        <dd><p>Map homogeneous barycentrics <span class="math notranslate nohighlight">\((u : v : w)\)</span> to exact Cartesian <span class="math notranslate nohighlight">\((x, y)\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.cartesian_to_sub_areas">
+        <span class="sig-name descname"><span class="pre">cartesian_to_sub_areas</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.cartesian_to_sub_areas" title="Link to this definition">¶</a></dt>
+        <dd><p>Return exact signed sub-triangle areas <span class="math notranslate nohighlight">\((\Delta_a, \Delta_b, \Delta_c)\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.kimberling_search_value">
+        <span class="sig-name descname"><span class="pre">kimberling_search_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">u</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">w</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.kimberling_search_value" title="Link to this definition">¶</a></dt>
+        <dd><p>Return exact directed distance <span class="math notranslate nohighlight">\(h_a = 2\Delta u / (a(u + v + w))\)</span> to <span class="math notranslate nohighlight">\(BC\)</span>.</p>
+        </dd></dl>
+
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.build_symbolic_triangle_from_sides">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.triangles.</span></span><span class="sig-name descname"><span class="pre">build_symbolic_triangle_from_sides</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'custom'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unit_baseline</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.triangles.SymbolicTriangle" title="geometor.etc.triangles.SymbolicTriangle"><span class="pre">SymbolicTriangle</span></a></span></span><a class="headerlink" href="#geometor.etc.triangles.build_symbolic_triangle_from_sides" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct an exact <a class="reference internal" href="#geometor.etc.triangles.SymbolicTriangle" title="geometor.etc.triangles.SymbolicTriangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicTriangle</span></code></a> from three side lengths.</p>
+        <p>Any Python <code class="docutils literal notranslate"><span class="pre">float</span></code> inputs representing exact rationals (such as <code class="docutils literal notranslate"><span class="pre">5.0</span></code>) are
+        coerced via <code class="xref py py-func docutils literal notranslate"><span class="pre">sympy.nsimplify()</span></code> so zero <code class="docutils literal notranslate"><span class="pre">sp.Float</span></code> atoms enter symbolic
+        computations.</p>
+        </dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.HERONIAN_TRIANGLE">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.triangles.</span></span><span class="sig-name descname"><span class="pre">HERONIAN_TRIANGLE</span></span><a class="headerlink" href="#geometor.etc.triangles.HERONIAN_TRIANGLE" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.RIGHT_TRIANGLE">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.triangles.</span></span><span class="sig-name descname"><span class="pre">RIGHT_TRIANGLE</span></span><a class="headerlink" href="#geometor.etc.triangles.RIGHT_TRIANGLE" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.KEPLER_TRIANGLE">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.triangles.</span></span><span class="sig-name descname"><span class="pre">KEPLER_TRIANGLE</span></span><a class="headerlink" href="#geometor.etc.triangles.KEPLER_TRIANGLE" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.KIMBERLING_TRIANGLE">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.triangles.</span></span><span class="sig-name descname"><span class="pre">KIMBERLING_TRIANGLE</span></span><a class="headerlink" href="#geometor.etc.triangles.KIMBERLING_TRIANGLE" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.LEGACY_ACUTE_TRIANGLE">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.triangles.</span></span><span class="sig-name descname"><span class="pre">LEGACY_ACUTE_TRIANGLE</span></span><a class="headerlink" href="#geometor.etc.triangles.LEGACY_ACUTE_TRIANGLE" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.CANONICAL_TRIANGLES">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.triangles.</span></span><span class="sig-name descname"><span class="pre">CANONICAL_TRIANGLES</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#geometor.etc.triangles.SymbolicTriangle" title="geometor.etc.triangles.SymbolicTriangle"><span class="pre">SymbolicTriangle</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.triangles.CANONICAL_TRIANGLES" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.get_canonical_triangle">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.triangles.</span></span><span class="sig-name descname"><span class="pre">get_canonical_triangle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">preset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'heronian'</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">unit_baseline</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.triangles.SymbolicTriangle" title="geometor.etc.triangles.SymbolicTriangle"><span class="pre">SymbolicTriangle</span></a></span></span><a class="headerlink" href="#geometor.etc.triangles.get_canonical_triangle" title="Link to this definition">¶</a></dt>
+        <dd><p>Return a canonical <a class="reference internal" href="#geometor.etc.triangles.SymbolicTriangle" title="geometor.etc.triangles.SymbolicTriangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicTriangle</span></code></a> by preset key.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>preset</strong> – One of <code class="docutils literal notranslate"><span class="pre">&quot;heronian&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;right&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;kepler&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;kimberling&quot;</span></code>
+        (or legacy <code class="docutils literal notranslate"><span class="pre">&quot;acute&quot;</span></code>).</p></li>
+        <li><p><strong>unit_baseline</strong> – When <code class="docutils literal notranslate"><span class="pre">True</span></code>, scales the triangle by <span class="math notranslate nohighlight">\(1/c\)</span> so <span class="math notranslate nohighlight">\(AB = 1\)</span>.</p></li>
+        </ul>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../transform/index.html" title="geometor.etc.transform">&larr; <span class="nav-label">geometor.etc.transform</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../../index.html">geometor • etc</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../video/index.html" title="geometor.etc.video"><span class="nav-label">geometor.etc.video</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../../../../log/26.302-183300/index.html">ETC Semantic Parser, Apparatus Registries & Multi-Triangle Codex Builder</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-tags">
+      <h3>Tags</h3>
+      <ul>
+        <li><a href="../../../../../tags/apparatus.html">apparatus</a></li>
+        <li><a href="../../../../../tags/etc.html">etc</a></li>
+        <li><a href="../../../../../tags/svg.html">svg</a></li>
+        <li><a href="../../../../../tags/triangle-centers.html">triangle-centers</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-categories">
+      <h3>Categories</h3>
+      <ul>
+        <li><a href="../../../../../categories/constructions.html">constructions</a></li>
+        <li><a href="../../../../../categories/parser.html">parser</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../../../types/collection.html">collection</a></li>
+        <li><a href="../../../../../types/log.html">log</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../../../../about.html"  >about</a></li>
+        <li><a href="../../../../../connect.html"  >connect</a></li>
+        <li><a href="../../../../../todos/index.html"  >todos</a></li>
+        <li><a href="../../../../../changelog.html"  >changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, geometor.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../../_static/documentation_options.js?v=938c9ccc"></script>
+  <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>
