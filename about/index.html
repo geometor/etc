@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mission &mdash; geometor • etc</title>
+  <title>About &mdash; geometor • etc</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
@@ -46,7 +46,7 @@
           <a href="../bibliography.html"  >Bibliography</a>
         </li>
         <li>
-          <a href="#" class="is-active" aria-selected="true" aria-current="page">Mission</a>
+          <a href="#" class="is-active" aria-selected="true" aria-current="page">About</a>
         </li>
         <li>
           <a href="../usage/index.html"  >Usage</a>
@@ -134,10 +134,36 @@
             margin: -0.6rem 0 1.25rem 0;
         }
         </style>
-        <section class="level-1" id="mission">
-        <h1>Mission<a class="headerlink" href="#mission" title="Link to this heading">¶</a></h1>
-        <p><code class="docutils literal notranslate"><span class="pre">geometor.etc</span></code> is a digital reconstruction, semantic index, and symbolic construction engine for Clark Kimberling’s <em>Encyclopedia of Triangle Centers</em> (ETC).</p>
-        <p>Our mission is to parse, structure, cross-reference, and model the 53,144 triangle centers of the ETC, transforming archival HTML volumes into a computable dependency and incidence graph ready for symbolic verification in <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code> and visual exploration in <code class="docutils literal notranslate"><span class="pre">geometor.explorer</span></code>.</p>
+        <section class="level-1" id="about-index">
+        <span id="about"></span><span id="id1"></span><h1>About<a class="headerlink" href="#about-index" title="Link to this heading">¶</a></h1>
+        <p class="rubric">Extracting Historical Semantic Knowledge &amp; Repurposing It for Exact Symbolic Reasoning</p>
+        <section class="level-2" id="about-this-edition">
+        <h2>About This Edition<a class="headerlink" href="#about-this-edition" title="Link to this heading">¶</a></h2>
+        <p><code class="docutils literal notranslate"><span class="pre">geometor.etc</span></code> is a digital reconstruction, semantic index, and symbolic modeling framework for Clark Kimberling’s monumental <a class="reference external" href="https://faculty.evansville.edu/ck6/encyclopedia/ETC.html">Encyclopedia of Triangle Centers (ETC)</a> at the University of Evansville. Spanning more than 53,000 distinct triangle centers—from antiquity’s incenter <a class="reference internal" href="../centers/c-00001-00019/x-00001/index.html#x-1" title="X_1 — INCENTER"><span class="std std-ref">X<sub>1</sub></span></a>, centroid <a class="reference internal" href="../centers/c-00001-00019/x-00002/index.html#x-2" title="X_2 — CENTROID"><span class="std std-ref">X<sub>2</sub></span></a>, circumcenter <a class="reference internal" href="../centers/c-00001-00019/x-00003/index.html#x-3" title="X_3 — CIRCUMCENTER"><span class="std std-ref">X<sub>3</sub></span></a>, and orthocenter <a class="reference internal" href="../centers/c-00001-00019/x-00004/index.html#x-4" title="X_4 — ORTHOCENTER"><span class="std std-ref">X<sub>4</sub></span></a> to modern central discoveries—this edition ingests archival HTML volumes and transforms unstructured mathematical prose into structured Python objects, computable dependency chains, and exact symbolic coordinates.</p>
+        <p>Every center entry is systematized into a synchronized two-track <strong>Book Codex</strong>: an <em>Overview</em> track equipped with formal <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">enunciation::</span></code> directives, <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">signature::</span> <span class="pre">center</span></code> definitions for functional trilinear (<span class="math notranslate nohighlight">\(\alpha : \beta : \gamma\)</span>) and barycentric (<span class="math notranslate nohighlight">\(u : v : w\)</span>) coordinates, comprehensive cross-references to Kimberling’s thematic preambles, and calibrated multi-triangle vector diagrams rendered across Acute, Right, Kepler, and Kimberling reference geometries; and a <em>Code</em> track providing standalone <code class="docutils literal notranslate"><span class="pre">model.py</span></code> geometric construction scripts ready for execution and algebraic inspection.</p>
+        <p>By parsing historical definitions, collineations, central lines, central triangles, and geometric transformations into explicit semantic links, <code class="docutils literal notranslate"><span class="pre">geometor.etc</span></code> bridges centuries of synthetic and analytic triangle geometry with modern symbolic computation. It connects directly with sister GEOMETOR repositories—including <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code> for algebraic construction verification, <code class="docutils literal notranslate"><span class="pre">geometor.explorer</span></code> for dynamic SVG laboratories, and historical codices such as <code class="docutils literal notranslate"><span class="pre">geometor.elements</span></code> and <code class="docutils literal notranslate"><span class="pre">geometor.pappus</span></code>—establishing a computable foundation for classical and contemporary geometry.</p>
+        </section>
+        <section class="level-2" id="the-geometor-mission">
+        <h2>The GEOMETOR Mission<a class="headerlink" href="#the-geometor-mission" title="Link to this heading">¶</a></h2>
+        <p>The <strong>GEOMETOR</strong> initiative, conceived and directed by <strong>phi ARCHITECT</strong>, is dedicated to the systematic recovery, symbolic formalization, and creative re-articulation of humanity’s geometric heritage. GEOMETOR unites classical synthesis with modern algebraic rigor across three core pillars:</p>
+        <dl class="simple">
+        <dt>Extracting Historical Semantic Knowledge</dt><dd><p>Moving beyond passive page scans, static facsimile bitmaps, and flat optical character recognition (OCR), GEOMETOR recovers the living deductive architecture of 2,300+ years of geometric, axiomatic, and philosophical treatises. Primary sources—spanning Euclid, Apollonius, Archimedes, Pappus, Johannes Kepler, Felix Klein, and Clark Kimberling—are analyzed to elevate enunciations, deductive steps, synthetic justifications, marginal citations, primary-source folios (via <code class="docutils literal notranslate"><span class="pre">publish</span> <span class="pre">folio</span></code>), and calibrated Ink-to-Vector <code class="docutils literal notranslate"><span class="pre">.euclid-graphic</span></code> diagrams into structured, machine-addressable semantic graphs.</p>
+        </dd>
+        <dt>Exact Symbolic Grounding (<code class="docutils literal notranslate"><span class="pre">geometor.model</span></code>)</dt><dd><p>Geometric constructions must not depend on floating-point approximations or visual artifacts. GEOMETOR anchors geometric entities in 100% exact symbolic algebra via <a class="reference external" href="https://www.sympy.org/">SymPy</a> and the principles of Rational Trigonometry (quadrance, spread, cross-ratio). Points, lines, circles, and conic loci are evaluated over exact algebraic fields, ensuring that tangencies, incidences, harmonic conjugates, and collinearities represent absolute mathematical truths rather than numerical estimates.</p>
+        </dd>
+        <dt>Repurposing Knowledge Across Mediums</dt><dd><p>Extracted semantic architectures and exact symbolic models are re-deployed across a unified digital ecosystem: synchronized multi-track <strong>Book Codices</strong> and EPUB 3 editions powered by <code class="docutils literal notranslate"><span class="pre">photon-platform/publish</span></code>, computable deductive canons (<code class="docutils literal notranslate"><span class="pre">geometor.elements</span></code>, <code class="docutils literal notranslate"><span class="pre">geometor.etc</span></code>, <code class="docutils literal notranslate"><span class="pre">geometor.pappus</span></code>, <code class="docutils literal notranslate"><span class="pre">geometor.divine</span></code>), interactive SVG exploration laboratories (<code class="docutils literal notranslate"><span class="pre">geometor.explorer</span></code>), ultra-high-definition visual broadcasts, and neuro-symbolic program synthesis (<code class="docutils literal notranslate"><span class="pre">geometor.seer</span></code>) across <a class="reference external" href="https://geometor.com">geometor.com</a>.</p>
+        </dd>
+        </dl>
+        </section>
+        <section class="level-2" id="sources-provenance-methodology">
+        <h2>Sources, Provenance &amp; Methodology<a class="headerlink" href="#sources-provenance-methodology" title="Link to this heading">¶</a></h2>
+        <ul class="simple">
+        <li><p><strong>Primary Corpus</strong>: Clark Kimberling, <em>Encyclopedia of Triangle Centers</em> (ETC), University of Evansville (established 1994, continuously expanded to 53,144+ centers).</p></li>
+        <li><p><strong>Glossary &amp; Preambles</strong>: Kimberling’s <em>Glossary of Terms in ETC</em> and catalog of 925 inter-center preambles across Parts 1–37.</p></li>
+        <li><p><strong>Biographical Register</strong>: Historical and contemporary attribution to over 150 classical and modern mathematicians curated in the <a class="reference internal" href="../persons.html"><span class="doc">People Register</span></a>.</p></li>
+        <li><p><strong>Digital Scriptorium Methodology</strong>: Developed and maintained by <strong>phi ARCHITECT</strong> using Sphinx, Python, <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code>, and <code class="docutils literal notranslate"><span class="pre">photon-platform/publish</span></code>. Raw HTML sources are scraped, normalized, parsed into typed dataclasses, linked with the comprehensive glossary, and typeset into responsive web and codex formats.</p></li>
+        </ul>
+        </section>
         </section>
 
       </div>
@@ -209,7 +235,6 @@
   <footer>
     <div class="footer-nav">
       <ul>
-        <li><a href="../about.html"  >About</a></li>
         <li><a href="../connect.html"  >Connect</a></li>
         <li><a href="../glossary.html"  >Glossary</a></li>
         <li><a href="../preambles.html"  >Preambles</a></li>
@@ -227,11 +252,12 @@
 
   <script src="../_static/jquery.js?v=5d32c60e"></script>
   <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../_static/documentation_options.js?v=4621528c"></script>
+  <script src="../_static/documentation_options.js?v=71d9d8e6"></script>
   <script src="../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../_static/js/collection_controls.js?v=b6b5297a"></script>
   <script src="../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
   <script src="../_static/js/search_highlight.js"></script>
 
 </body>
