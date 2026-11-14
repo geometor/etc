@@ -23,7 +23,7 @@ Sections
    centers/index
    persons
    bibliography
-   mission/index
+   about/index
    usage/index
    log/index
    modules/index
@@ -31,7 +31,6 @@ Sections
    glossary
    preambles
    coordinates
-   about
    refs/index
    todos/index
    changelog
