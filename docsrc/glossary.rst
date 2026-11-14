@@ -1,7 +1,6 @@
-:navigation: header
-:order: 2
-:layout: book
-:book_title: Encyclopedia of Triangle Centers
+:navigation: footer
+:order: 20
+:nav_title: Glossary
 
 .. _glossary:
 

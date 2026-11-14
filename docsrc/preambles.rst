@@ -1,5 +1,6 @@
-:navigation: header
-:order: 2
+:navigation: footer
+:order: 25
+:nav_title: Preambles
 
 .. _preambles-guide:
 

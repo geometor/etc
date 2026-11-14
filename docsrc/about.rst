@@ -1,8 +1,9 @@
 :navigation: footer
 :order: 10
+:nav_title: About
 
 =====
-about
+About
 =====
 
 ``geometor.etc`` is developed and maintained by **phi ARCHITECT** as part of the **GEOMETOR** initiative.
