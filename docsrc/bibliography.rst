@@ -1,12 +1,13 @@
 :navigation: header
-:order: 4
-:layout: book
-:book_title: Encyclopedia of Triangle Centers
+:order: 6
+:nav_title: Bibliography
 
 .. _bibliography:
 
-Bibliography & Cited Sources
-============================
+Bibliography
+============
+
+.. rubric:: Primary Monographs, Journals & Research Forums
 
 Primary monographs, journals, catalogs, and research forums cited across the *Encyclopedia of Triangle Centers*.
 

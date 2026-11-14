@@ -1,8 +1,9 @@
 :navigation: footer
 :order: 20
+:nav_title: Connect
 
 =======
-connect
+Connect
 =======
 
 Explore ``geometor.etc`` and the GEOMETOR ecosystem on GitHub:

@@ -1,8 +1,9 @@
 :navigation: header
 :order: 10
+:nav_title: Mission
 
 =======
-mission
+Mission
 =======
 
 ``geometor.etc`` is a digital reconstruction, semantic index, and symbolic construction engine for Clark Kimberling's *Encyclopedia of Triangle Centers* (ETC).

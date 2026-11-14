@@ -302,6 +302,12 @@ PERSONS_REGISTRY: dict[str, dict[str, str]] = {
         "role": "French mathematician and co-founder of modern triangle geometry; namesake of the Brocard points, Brocard angle ω, Brocard axis, Brocard circle, and Brocard triangles.",
         "aliases": ["Henri Brocard"],
     },
+    "john-casey": {
+        "name": "John Casey",
+        "dates": "1820–1891",
+        "role": "Irish mathematician and Euclidean geometer celebrated for Casey's theorem and foundational treatises on the modern geometry of the triangle and circle.",
+        "aliases": ["John Casey", "Casey"],
+    },
     "joseph-neuberg": {
         "name": "Joseph Jean Baptiste Neuberg",
         "dates": "1840–1926",
@@ -1221,10 +1227,9 @@ def generate_glossary_rst(
 ) -> str:
     """Generate rich `docsrc/glossary.rst` with deterministic `#term-<slug>` anchors."""
     lines: list[str] = [
-        ":navigation: header",
-        ":order: 2",
-        ":layout: book",
-        ":book_title: Encyclopedia of Triangle Centers",
+        ":navigation: footer",
+        ":order: 20",
+        ":nav_title: Glossary",
         "",
         ".. _glossary:",
         "",
@@ -1319,21 +1324,57 @@ def generate_persons_rst(valid_centers: set[int] | None = None) -> str:
     """Generate `docsrc/persons.rst` with `#person-<slug>` anchors for all `:person:` links."""
     lines = [
         ":navigation: header",
-        ":order: 3",
-        ":layout: book",
-        ":book_title: Encyclopedia of Triangle Centers",
+        ":order: 5",
+        ":nav_title: People",
         "",
         ".. _persons:",
         "",
-        "Index Nominum (Geometers & Contributors)",
-        "========================================",
+        "People",
+        "======",
+        "",
+        ".. rubric:: Biographical Register of Classical Geometers & Modern Contributors",
         "",
         "Biographical register of classical geometers and modern contributors referenced across the *Encyclopedia of Triangle Centers*.",
         "",
+        "Key Geometers & Contributors",
+        "----------------------------",
+        "",
     ]
+    featured_slugs = [
+        "clark-kimberling",
+        "leonhard-euler",
+        "karl-wilhelm-feuerbach",
+        "emile-lemoine",
+        "henri-brocard",
+        "john-casey",
+    ]
+    for slug in featured_slugs:
+        if slug in PERSONS_REGISTRY:
+            info = PERSONS_REGISTRY[slug]
+            heading = (
+                f"{info['name']} ({info['dates']})" if info.get("dates") else info["name"]
+            )
+            lines.append(f".. _person-{slug}:")
+            lines.append(f".. _{slug}:")
+            lines.append("")
+            lines.append(heading)
+            lines.append("~" * max(4, len(heading)))
+            lines.append("")
+            role_rst = convert_inline_html_to_rst(info["role"])
+            role_rst = _wrap_x_refs_simple(role_rst, valid_centers=valid_centers)
+            role_rst = wrap_geom_refs(role_rst)
+            lines.append(role_rst)
+            lines.append("")
+
+    lines.append("Contributing Geometers & Modern Researchers")
+    lines.append("-------------------------------------------")
+    lines.append("")
+
     for slug, info in sorted(
         PERSONS_REGISTRY.items(), key=lambda kv: kv[1]["name"].split()[-1].lower()
     ):
+        if slug in featured_slugs:
+            continue
         heading = (
             f"{info['name']} ({info['dates']})" if info.get("dates") else info["name"]
         )
@@ -1355,14 +1396,15 @@ def generate_bibliography_rst() -> str:
     """Generate `docsrc/bibliography.rst` with `#cite-<slug>` anchors for all `:cite:` links."""
     lines = [
         ":navigation: header",
-        ":order: 4",
-        ":layout: book",
-        ":book_title: Encyclopedia of Triangle Centers",
+        ":order: 6",
+        ":nav_title: Bibliography",
         "",
         ".. _bibliography:",
         "",
-        "Bibliography & Cited Sources",
-        "============================",
+        "Bibliography",
+        "============",
+        "",
+        ".. rubric:: Primary Monographs, Journals & Research Forums",
         "",
         "Primary monographs, journals, catalogs, and research forums cited across the *Encyclopedia of Triangle Centers*.",
         "",

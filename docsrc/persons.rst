@@ -1,22 +1,69 @@
 :navigation: header
-:order: 3
-:layout: book
-:book_title: Encyclopedia of Triangle Centers
+:order: 5
+:nav_title: People
 
 .. _persons:
 
-Index Nominum (Geometers & Contributors)
-========================================
+People
+======
+
+.. rubric:: Biographical Register of Classical Geometers & Modern Contributors
 
 Biographical register of classical geometers and modern contributors referenced across the *Encyclopedia of Triangle Centers*.
+
+Key Geometers & Contributors
+----------------------------
+
+.. _person-clark-kimberling:
+.. _clark-kimberling:
+
+Clark Kimberling (b. 1942)
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Mathematician at the University of Evansville; founder and creator of the Encyclopedia of Triangle Centers (ETC).
+
+.. _person-leonhard-euler:
+.. _leonhard-euler:
+
+Leonhard Euler (1707–1783)
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Swiss mathematician who proved in 1765 that the orthocenter :ref:`X_4 <X_4>`, circumcenter :ref:`X_3 <X_3>`, centroid :ref:`X_2 <X_2>`, and nine-point center :ref:`X_5 <X_5>` are collinear on the Euler line.
+
+.. _person-karl-wilhelm-feuerbach:
+.. _karl-wilhelm-feuerbach:
+
+Karl Wilhelm Feuerbach (1800–1834)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+German geometer who proved in 1822 that the nine-point circle is tangent to the incircle at the Feuerbach point :ref:`X_11 <X_11>` and to the three excircles.
+
+.. _person-emile-lemoine:
+.. _emile-lemoine:
+
+Émile Michel Hyacinthe Lemoine (1840–1912)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+French mathematician and co-founder of modern triangle geometry; studied the symmedian point :ref:`X_6 <X_6>` (Lemoine point) and Lemoine circles.
 
 .. _person-henri-brocard:
 .. _henri-brocard:
 
 Henri Brocard (1845–1922)
--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 French mathematician and co-founder of modern triangle geometry; namesake of the Brocard points, Brocard angle ω, Brocard axis, Brocard circle, and Brocard triangles.
+
+.. _person-john-casey:
+.. _john-casey:
+
+John Casey (1820–1891)
+~~~~~~~~~~~~~~~~~~~~~~
+
+Irish mathematician and Euclidean geometer celebrated for Casey's theorem and foundational treatises on the modern geometry of the triangle and circle.
+
+Contributing Geometers & Modern Researchers
+-------------------------------------------
 
 .. _person-john-horton-conway:
 .. _john-horton-conway:
@@ -34,14 +81,6 @@ Jean-Gaston Darboux (1842–1917)
 
 French geometer after whom the Darboux cubic (K004) and Darboux point :ref:`X_20 <X_20>` (with De Longchamps) are named.
 
-.. _person-leonhard-euler:
-.. _leonhard-euler:
-
-Leonhard Euler (1707–1783)
---------------------------
-
-Swiss mathematician who proved in 1765 that the orthocenter :ref:`X_4 <X_4>`, circumcenter :ref:`X_3 <X_3>`, centroid :ref:`X_2 <X_2>`, and nine-point center :ref:`X_5 <X_5>` are collinear on the Euler line.
-
 .. _person-pierre-de-fermat:
 .. _pierre-de-fermat:
 
@@ -49,14 +88,6 @@ Pierre de Fermat (1607–1665)
 ----------------------------
 
 French mathematician who posed the problem of finding the point :ref:`X_13 <X_13>` minimizing the sum of distances \|\ :g:`AX <[ A X ]>`\ \| + \|\ :g:`BX <[ B X ]>`\ \| + \|\ :g:`CX <[ C X ]>`\ \| to the vertices of :g:`ABC << A B C >>`.
-
-.. _person-karl-wilhelm-feuerbach:
-.. _karl-wilhelm-feuerbach:
-
-Karl Wilhelm Feuerbach (1800–1834)
-----------------------------------
-
-German geometer who proved in 1822 that the nine-point circle is tangent to the incircle at the Feuerbach point :ref:`X_11 <X_11>` and to the three excircles.
 
 .. _person-joseph-diaz-gergonne:
 .. _joseph-diaz-gergonne:
@@ -114,14 +145,6 @@ Randy Hutson (fl. 2011–present)
 
 Prolific contributor to the ETC, specializing in synthetic constructions, perspective triangles, radical centers, and conjugate relationships.
 
-.. _person-clark-kimberling:
-.. _clark-kimberling:
-
-Clark Kimberling (b. 1942)
---------------------------
-
-Mathematician at the University of Evansville; founder and creator of the Encyclopedia of Triangle Centers (ETC).
-
 .. _person-dasari-naga-vijay-krishna:
 .. _dasari-naga-vijay-krishna:
 
@@ -137,14 +160,6 @@ Floor van Lamoen (b. 1966)
 --------------------------
 
 Dutch mathematician and triangle geometer, discoverer of the van Lamoen circle and numerous cevapoint and perspectivity constructions in the ETC.
-
-.. _person-emile-lemoine:
-.. _emile-lemoine:
-
-Émile Michel Hyacinthe Lemoine (1840–1912)
-------------------------------------------
-
-French mathematician and co-founder of modern triangle geometry; studied the symmedian point :ref:`X_6 <X_6>` (Lemoine point) and Lemoine circles.
 
 .. _person-gohier-de-longchamps:
 .. _gohier-de-longchamps:

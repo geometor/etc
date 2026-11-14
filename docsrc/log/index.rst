@@ -1,8 +1,9 @@
 :navigation: header
 :order: 30
+:nav_title: Log
 
 ===
-log
+Log
 ===
 
 Chronological development and modeling log for ``geometor.etc``.
