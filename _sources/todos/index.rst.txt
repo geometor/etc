@@ -1,13 +1,14 @@
 :navigation: footer
 :order: 30
+:nav_title: Todos
 
 =====
-todos
+Todos
 =====
 
 .. todolist::
 
-roadmap
+Roadmap
 -------
 
 .. collection::
