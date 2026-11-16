@@ -6,12 +6,32 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GEOMETOR • etc &mdash; geometor • etc</title>
+
+  <title>Encyclopedia of Triangle Centers • GEOMETOR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="canonical" href="https://geometor.github.io/etc/" />
+  <meta name="description" content="Digital reconstruction, semantic index, and composable geometric modeling of Clark Kimberling’s Encyclopedia of Triangle Centers (X_1–X_{53144})." />
+  <meta property="og:site_name" content="GEOMETOR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Encyclopedia of Triangle Centers • GEOMETOR" />
+  <meta property="og:description" content="Digital reconstruction, semantic index, and composable geometric modeling of Clark Kimberling’s Encyclopedia of Triangle Centers (X_1–X_{53144})." />
+  <meta property="og:url" content="https://geometor.github.io/etc/" />
+  <meta property="og:image" content="https://geometor.github.io/etc/_static/social/banner.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Encyclopedia of Triangle Centers — GEOMETOR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Encyclopedia of Triangle Centers • GEOMETOR" />
+  <meta name="twitter:description" content="Digital reconstruction, semantic index, and composable geometric modeling of Clark Kimberling’s Encyclopedia of Triangle Centers (X_1–X_{53144})." />
+  <meta name="twitter:image" content="https://geometor.github.io/etc/_static/social/banner.png" />
+  <meta name="twitter:image:alt" content="Encyclopedia of Triangle Centers — GEOMETOR" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=8713e751" />
+  <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=81e79cc0" />
   <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -23,14 +43,14 @@
 <body class="book-theme-classical-serif">
   <header>
     <div class="logo">
-      <a href="#">
-        <img src="_static/logo.png" class="logo" alt="Logo"/>
+      <a href="#" title="Home">
+        <img src="_static/logo.png" class="logo" alt="GEOMETOR etc"/>
+        <div class="org-repo">
+          <span class="org">GEOMETOR</span>
+          <span class="sep" aria-hidden="true">&bull;</span>
+          <span class="repo">etc</span>
+        </div>
       </a>
-      <div class="org-repo">
-        <span class="org">geometor</span>
-        •
-        <span class="repo">etc</span>
-      </div>
     </div>
     <nav aria-label="Header">
       <input type="checkbox" id="nav-Header-toggle" >
@@ -63,23 +83,7 @@
   </header>
   <main class="book-main">
     <article class="book-layout book-reading-pane">
-      <header class="book-header">
-        <div class="book-header-bar">
-          <div class="book-header-identity">
-            <a class="book-title-link" href="#">geometor • etc</a>
-          </div>
-        </div>
-        <div class="book-header-nav">
-          <div class="book-nav-prev">
-          </div>
-          <div class="book-nav-center">
-          </div>
-          <div class="book-nav-next">
-            <a class="book-nav-btn" href="centers/index.html" title="Encyclopedia of Triangle Centers"><span class="nav-label">Next</span> &rarr;</a>
-          </div>
-        </div>
-      </header>
-      <div class="content body book-content" role="main">
+      <div class="content body book-content is-home-page" role="main">
         <style id="etc-heading-styles">
         .book-reading-pane .book-content h1,
         .folio-book-page h1 {
@@ -131,12 +135,30 @@
             margin: -0.6rem 0 1.25rem 0;
         }
         </style>
-        <section class="level-1" id="geometor-etc">
-        <h1>GEOMETOR • etc<a class="headerlink" href="#geometor-etc" title="Link to this heading">¶</a></h1>
-        <p><strong>Digital reconstruction, semantic index, and composable geometric modeling of Clark Kimberling’s *Encyclopedia of Triangle Centers* (X<sub>1</sub>–X<sub>53144</sub>).</strong></p>
-        <p><code class="docutils literal notranslate"><span class="pre">geometor.etc</span></code> transforms the archival HTML volumes of Clark Kimberling’s <em>Encyclopedia of Triangle Centers</em> and its supporting <em>Glossary</em> into structured registries, executable <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code> construction scripts, interactive multi-triangle SVG diagrams, and a 2-track <strong>Book Codex</strong> edition powered by <code class="docutils literal notranslate"><span class="pre">photon-platform/publish</span></code>.</p>
-        <p>Each center features a synchronized <strong>Overview</strong> track (with <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">enunciation::</span></code>, <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">signature::</span> <span class="pre">center</span></code> trilinear/barycentric coordinates, collapsible incidence/relation tables, and interactive SVGs across <strong>Acute</strong>, <strong>Right</strong>, <strong>Kepler</strong>, and <strong>Kimberling</strong> reference triangles) and a <strong>Code</strong> track (with standalone <code class="docutils literal notranslate"><span class="pre">model.py</span></code> constructions).</p>
-        <hr class="docutils" />
+        <section class="level-1" id="encyclopedia-of-triangle-centers">
+        <h1>Encyclopedia of Triangle Centers<a class="headerlink" href="#encyclopedia-of-triangle-centers" title="Link to this heading">¶</a></h1>
+        <p>Digital reconstruction, semantic index, and composable geometric modeling of Clark Kimberling’s <em>Encyclopedia of Triangle Centers</em> (<span class="math notranslate nohighlight">\(X<sub>1</sub>\)</span>–<span class="math notranslate nohighlight">\(X_{53144}\)</span>).</p>
+            <section class="collection ">
+              <article class="excerpt">
+                <div class="content">
+                  <figure>
+                    <a href="centers/index.html" aria-label="X_1–X_19 — Classical & Ancient Centers">
+                      <img src="../docsrc/centers/c-00001-00019/c-00001-00019.svg" alt="X_1–X_19 — Classical & Ancient Centers">
+                    </a>
+                  </figure>
+                  <section>
+                    <h2><a href="centers/index.html">Encyclopedia of Triangle Centers</a></h2>
+                      <p>Canonical triangle centers X<sub>1</sub> through X<sub>4000</sub> organized into thematic collections.</p>
+                  </section>
+                </div>
+                <footer>
+
+                <div class="meta">
+                  <span class="author">Clark Kimberling</span>
+                </div>
+                </footer>
+              </article>
+            </section><hr class="docutils" />
         <section class="level-2" id="sections">
         <h2>Sections<a class="headerlink" href="#sections" title="Link to this heading">¶</a></h2>
         <ul class="simple">
@@ -167,16 +189,6 @@
       </div>
       <footer class="book-footer">
         <div class="book-footer-ornament">&#10086;</div>
-        <div class="book-footer-nav">
-          <div class="book-nav-prev">
-          </div>
-          <div class="book-nav-center">
-            <a class="book-toc-link" href="#">geometor • etc</a>
-          </div>
-          <div class="book-nav-next">
-            <a class="book-nav-btn" href="centers/index.html" title="Encyclopedia of Triangle Centers"><span class="nav-label">Encyclopedia of Triangle Centers</span> &rarr;</a>
-          </div>
-        </div>
       </footer>
     </article>
   </main>
@@ -224,6 +236,7 @@
     <aside class="aside-types">
       <h3>Types</h3>
       <ul>
+        <li><a href="types/book.html">book</a></li>
         <li><a href="types/collection.html">collection</a></li>
         <li><a href="types/log.html">log</a></li>
       </ul>
@@ -242,7 +255,7 @@
     <hr />
     <div role="contentinfo">
       <p>
-        &copy; Copyright 2026, geometor.
+        &copy; Copyright 2026, GEOMETOR.
       </p>
     </div>
   </footer>
