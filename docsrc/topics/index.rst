@@ -1,8 +1,8 @@
 .. _etc-topics:
 
-============================================
+============================================================
 Collection 1 Topics: Conjugacies, Lines, Circles & Triangles
-============================================
+============================================================
 
 Every geometric transformation, central line, named circle, and derived central triangle
 encountered in Collection 1 (:math:`X_1` through :math:`X_{19}`) of the *Encyclopedia of Triangle Centers*.
