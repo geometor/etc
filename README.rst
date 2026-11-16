@@ -1,63 +1,37 @@
 GEOMETOR • etc
 ==============
 
-.. image:: https://img.shields.io/github/license/geometor/etc.svg
-   :target: https://github.com/geometor/etc/blob/main/LICENSE
+**Visit the Online Archive:** https://geometor.github.io/etc/
 
-**Digital reconstruction, semantic index, and composable geometric modeling of Clark Kimberling's *Encyclopedia of Triangle Centers* (`X(1)`–`X(53144)`).**
+**Encyclopedia of Triangle Centers • Clark Kimberling's X(1)–X(53144) • semantic digital archive**
 
-Overview
---------
+Mission
+-------
 
-``geometor.etc`` transforms the archival HTML volumes of Clark Kimberling's *Encyclopedia of Triangle Centers* (ETC) and its supporting *Glossary* into structured registries, executable `geometor/model <https://github.com/geometor/model>`_ constructions, interactive multi-triangle SVG diagrams, and a 2-track **Book Codex** edition powered by `photon-platform/publish <https://github.com/photon-platform/publish>`_.
+``geometor/etc`` is part of the interconnected `GEOMETOR <https://geometor.com>`_ semantic digital archive. It provides a computable, symbolic digital edition of Clark Kimberling's *Encyclopedia of Triangle Centers* (ETC), establishing exact algebraic definitions, trilinear and barycentric coordinates, and interactive multi-triangle vector models for centers :math:`X(1)` through :math:`X(53144)`. Liberating the archive from tabular HTML listings into addressable semantic units, the repository bridges classical triangle loci with automated theorem proving and symbolic geometry across the GEOMETOR corpus.
 
-Process & Pipeline
-------------------
+Catalogs in This Archive
+------------------------
 
-1. **Archival Ingestion (`ingest.py`)**:
-   - Splits the raw HTML source volumes (`ETC.html`, `ETCPart2.html`–`ETCPart27.html`) into introductory sections, inter-center group preambles, and 53,144 individual center records in `resources/split/`.
+- **`Encyclopedia of Triangle Centers <https://geometor.github.io/etc/centers/>`_** — Clark Kimberling's ETC in exact symbolic algebra, multi-triangle vector diagrams, and 2-track Book Codex representations.
+- **`Collection 1 Topics: Conjugacies, Lines, Circles & Triangles <https://geometor.github.io/etc/topics/>`_** — Exact symbolic investigations of central lines, Euler lines, circumcircles, and triangle connections.
 
-2. **Semantic Parsing (`parser.py`)**:
-   - Extracts canonical identifiers (`X(n)`), primary names, aliases, trilinear/barycentric/tripolar coordinates (including `<p>Barycentrics` definitions and alternate `=` forms), vector/barycentric linear combinations, construction notes, incidence loci (central lines, circles, conics, cubics), and functional center relations (`X(n) = f(X(i), X(j))`) with comprehensive `:math:` LaTeX normalization.
+Repository Contents
+-------------------
 
-3. **Scholarly Apparatus & Cross-Referencing (`glossary.py`)**:
-   - Builds `resources/glossary.json`, `resources/persons.json`, and `resources/citations.json` and generates `docsrc/glossary.rst`, `docsrc/persons.rst`, and `docsrc/bibliography.rst` to power interactive `:term:`, `:person:`, `:cite:`, `:ref:`, and Euclidean `:g:` geometric element roles across all centers, with two-way hover highlighting synchronized to the interactive SVG diagrams.
+- ``docsrc/`` — RST catalog tracks, guides, and preambles compiled by `PHOTON publish <https://github.com/photon-platform/publish>`_.
+- ``resources/`` — Ingested center records, coordinate registries, persons registers, and citations manifests.
+- ``src/geometor/etc/`` — Archival parsing, symbolic coordinate modeling, SVG rendering, and Book Codex generation engine.
 
-4. **Composable Geometric Modeling & Multi-Triangle SVGs (`ops.py`, `construct.py`, `render.py`)**:
-   - Constructs each center symbolically via composable geometric operations in `geometor.etc.ops`, emitting a standalone `model.py` script and serialized `x-NNNNN.json` model for `geometor/explorer <https://github.com/geometor/explorer>`_.
-   - Renders two-layer interactive SVGs (primary defining construction + toggleable incident central lines) across four canonical reference triangles:
-     - **Acute (`x-NNNNN.svg`)**: Sides $(a, b, c) = (5, 6, 7)$
-     - **Right (`x-NNNNN-right.svg`)**: Egyptian right triangle $(3, 4, 5)$
-     - **Kepler (`x-NNNNN-kepler.svg`)**: Golden right triangle $(1, \sqrt{\varphi}, \varphi)$
-     - **Kimberling (`x-NNNNN-kimberling.svg`)**: Obtuse reference triangle $(6, 9, 13)$
-
-5. **Thematic Collections & 2-Track Book Codex Generation (`transform.py`)**:
-   - Partitions centers into thematic collections (`docsrc/centers/c-XXXXX-YYYYY/`) with section preambles and multi-center constellation SVGs (`c-XXXXX-YYYYY.svg`), and generates per-center documentation in `docsrc/centers/c-XXXXX-YYYYY/x-NNNNN/` using `:layout: book`:
-     - **Overview Track (`index.rst`)**: Formal `.. enunciation::`, interactive reference-triangle SVG selector, `.. signature:: center` coordinate summary (Trilinears, Barycentrics, Tripolars), and `.. collapse::` sections for Linear Combinations, Notes, Incidence Loci, Functional Relations, and Construction.
-     - **Code Track (`code.rst`)**: Standalone `geometor.model` Python construction script (`model.py`).
-
-Coordination with ``publish``
------------------------------
-
-- Uses `:layout: book` in `photon-platform/publish <https://github.com/photon-platform/publish>`_ for synchronized **Overview** and **Code** tracks with track-preserving `Prev` / `Next` navigation and collection breadcrumbs across centers.
-- Integrates `:term:`, `:person:`, and `:cite:` hover cards and `intersphinx` links to Euclidean propositions in `geometor/euclid <https://geometor.github.io/euclid>`_ and `geometor/elements <https://geometor.github.io/elements>`_.
-
-Usage
------
+Local Build & Verification
+--------------------------
 
 .. code-block:: bash
 
-   # Run the ETC pipeline for the first 3,000 centers (skipping raw HTML split if cached)
-   python3 -m geometor.etc --skip-ingest --limit 3000
+   publish build
+   uv run --no-sync pytest
 
-   # Build and serve the Book Codex documentation locally
-   publish test
+Part of the GEOMETOR Knowledge Archive
+--------------------------------------
 
-Resources & Related Projects
-----------------------------
-
-- **Live Edition**: https://geometor.github.io/etc
-- **Source Code**: https://github.com/geometor/etc
-- `GEOMETOR • model <https://github.com/geometor/model>`_: Symbolic geometric construction engine.
-- `GEOMETOR • explorer <https://github.com/geometor/explorer>`_: Interactive web workbench for exploring `x-NNNNN.json` models.
-- `PHOTON • publish <https://github.com/photon-platform/publish>`_: Sphinx Book Codex publishing engine and theme.
+Explore all **74 Book Codices** and **11 Mathematical Catalogs** at https://geometor.com/books/.
