@@ -1,8 +1,12 @@
+.. container:: author-overline
+
+   semantic digital archive • mathematical catalog
+
 ================================
 Encyclopedia of Triangle Centers
 ================================
 
-Digital reconstruction, semantic index, and composable geometric modeling of Clark Kimberling's *Encyclopedia of Triangle Centers* (:math:`X_1`–:math:`X_{53144}`).
+Clark Kimberling's *Encyclopedia of Triangle Centers* (ETC) catalogues tens of thousands of triangle centers :math:`X(1)`–:math:`X(53144)` across continuous mathematical families. Within the interconnected `GEOMETOR <https://geometor.com/books/>`_ semantic digital archive, these centers are liberated from static tabular listings into exact symbolic coordinates, barycentric and trilinear representations, multi-triangle vector constructions, and interconnected incidence networks speaking one shared geometric language.
 
 .. collection::
    :type: book
