@@ -18,12 +18,16 @@ import geometor.etc as module
 version = module.__version__
 
 org = "geometor"
-org_name = "geometor"
+org_name = "GEOMETOR"
 
 repo = "etc"
 repo_name = "etc"
 
 setup_globals(org, org_name, repo, repo_name)
+
+site_title = "Encyclopedia of Triangle Centers"
+project = site_title
+html_title = f"{site_title} • {org_name}"
 
 html_theme = "foundation"
 suppress_warnings = ["autoapi.python_import_resolution", "toc.not_included"]

@@ -1,7 +1,12 @@
-GEOMETOR • etc
-==============
+================================
+Encyclopedia of Triangle Centers
+================================
 
-.. include:: intro.rst
+Digital reconstruction, semantic index, and composable geometric modeling of Clark Kimberling's *Encyclopedia of Triangle Centers* (:math:`X_1`–:math:`X_{53144}`).
+
+.. collection::
+   :type: book
+   :sort: order
 
 ----
 
