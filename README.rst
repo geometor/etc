@@ -18,8 +18,8 @@ Mission
 Catalogs in This Archive
 ------------------------
 
-- **`Encyclopedia of Triangle Centers <https://geometor.github.io/etc/centers/>`_** — Clark Kimberling's ETC in exact symbolic algebra, multi-triangle vector diagrams, and 2-track Book Codex representations.
-- **`Collection 1 Topics: Conjugacies, Lines, Circles & Triangles <https://geometor.github.io/etc/topics/>`_** — Exact symbolic investigations of central lines, Euler lines, circumcircles, and triangle connections.
+- `Encyclopedia of Triangle Centers <https://geometor.github.io/etc/centers/>`_ — Clark Kimberling's ETC in exact symbolic algebra, multi-triangle vector diagrams, and 2-track Book Codex representations.
+- `Collection 1 Topics: Conjugacies, Lines, Circles & Triangles <https://geometor.github.io/etc/topics/>`_ — Exact symbolic investigations of central lines, Euler lines, circumcircles, and triangle connections.
 
 Repository Contents
 -------------------
