@@ -38,5 +38,5 @@ Sources, Provenance & Methodology
 
 * **Primary Corpus**: Clark Kimberling, *Encyclopedia of Triangle Centers* (ETC), University of Evansville (established 1994, continuously expanded to 53,144+ centers).
 * **Glossary & Preambles**: Kimberling's *Glossary of Terms in ETC* and catalog of 925 inter-center preambles across Parts 1–37.
-* **Biographical Register**: Historical and contemporary attribution to over 150 classical and modern mathematicians curated in the :doc:`People Register </persons>`.
+* **Biographical Register**: Historical and contemporary attribution to over 150 classical and modern mathematicians curated in the :doc:`People Register </people/index>`.
 * **Digital Scriptorium Methodology**: Developed and maintained by **phi ARCHITECT** using Sphinx, Python, ``geometor.model``, and ``photon-platform/publish``. Raw HTML sources are scraped, normalized, parsed into typed dataclasses, linked with the comprehensive glossary, and typeset into responsive web and codex formats.

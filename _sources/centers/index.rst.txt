@@ -36,7 +36,7 @@ Table of Contents
 Scholarly Apparatus
 -------------------
 
-* :doc:`People & Biographical Register <../persons>`
+* :doc:`People & Biographical Register <../people/index>`
 * :doc:`Bibliography & Cited Sources <../bibliography>`
 * :doc:`Glossary of Triangle Geometry Terms <../glossary>`
 * :doc:`Guide to Preambles in ETC <../preambles>`
