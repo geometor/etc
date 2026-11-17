@@ -1,5 +1,5 @@
-:navigation: header
-:order: 20
+:navigation: footer
+:order: 10
 :nav_title: Usage
 
 ==================

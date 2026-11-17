@@ -1,5 +1,5 @@
-:navigation: footer
-:order: 20
+:navigation: header
+:order: 16
 :nav_title: Glossary
 
 .. _glossary:
