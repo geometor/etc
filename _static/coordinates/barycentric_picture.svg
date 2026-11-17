@@ -1,4 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" width="100%" height="100%">
+  <style>
+    svg {
+      --svg-bg: #fafaf9;
+      --geom-fg: #1c1917;
+      --geom-muted: #64748b;
+      --geom-halo: rgba(250, 250, 249, 0.92);
+      font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+      background-color: var(--svg-bg);
+    }
+    @media (prefers-color-scheme: dark) {
+      svg {
+        --svg-bg: #141417;
+        --geom-fg: #f4f4f5;
+        --geom-muted: #94a3b8;
+        --geom-halo: rgba(20, 20, 23, 0.92);
+      }
+    }
+    .svg-bg { fill: var(--svg-bg); }
+    .geom-line, .geom-circle, .geom-arc { fill: none; stroke: var(--geom-fg); stroke-linecap: round; stroke-linejoin: round; }
+    .geom-point { fill: var(--geom-fg); stroke: var(--svg-bg); stroke-width: 1.2; }
+    .geom-label { fill: var(--geom-fg); font-size: 13px; font-weight: 600; paint-order: stroke; stroke: var(--geom-halo); stroke-width: 3.5px; }
+  </style>
+  <rect class="svg-bg" x="0" y="0" width="1000" height="760" />
   <defs>
     <filter id="glow-bary" x="-30%" y="-30%" width="160%" height="160%">
       <feGaussianBlur stdDeviation="4" result="blur" />
