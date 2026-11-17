@@ -3,6 +3,11 @@ GEOMETOR • etc
 
 **Visit the Online Archive:** https://geometor.github.io/etc/
 
+.. image:: docsrc/_static/coordinates/barycentric_picture.svg
+   :alt: GEOMETOR • etc featured geometric construction
+   :target: https://geometor.github.io/etc/
+   :align: center
+
 **Encyclopedia of Triangle Centers • Clark Kimberling's X(1)–X(53144) • semantic digital archive**
 
 Mission
