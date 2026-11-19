@@ -43,7 +43,7 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
 
 #points circle {
     fill: var(--text-color);
-    stroke: var(--background-color);
+    stroke: var(--accent-color);
     stroke-width: 2.5;
     vector-effect: non-scaling-stroke;
     cursor: pointer;
@@ -60,17 +60,18 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
 }
 
 #points circle.selected,
+#points circle.given.selected,
 #points circle.target {
-    stroke: var(--select-color);
-    fill: gold;
-    stroke-width: 3;
+    fill: var(--accent-color);
+    stroke: #e8b85a;
+    stroke-width: 2.8;
 }
 
 #points circle:hover,
 #points circle.hover {
-    fill: var(--select-color) !important;
-    stroke: #fff !important;
-    stroke-width: 3.5 !important;
+    fill: #e8b85a !important;
+    stroke: var(--accent-color) !important;
+    stroke-width: 2.5 !important;
 }
 
 #elements line,
@@ -563,16 +564,10 @@ svg.geometor-etc-drawing .etc-plate-panel.hover > rect.etc-panel-border {
     border-bottom: 1px solid #161616;
 }
 </style>
-  <defs>
-    <filter id="glow-coord" filterUnits="userSpaceOnUse" x="-100" y="-100" width="1200" height="960">
-      <feGaussianBlur stdDeviation="4.5" result="blur" />
-      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
-    </filter>
-  </defs>
 
   <polygon id="&lt; X_18 B C &gt;" data-id="&lt; X_18 B C &gt;" data-ref="&lt; X_18 B C &gt;" class="etc-plate-poly"
            points="501.1,479.6 872.2,690.0 393.7,52.0"
-           fill="#e8b85a" fill-opacity="0.19" stroke="none" />
+           fill="#ff7043" fill-opacity="0.19" stroke="none" />
   <polygon id="&lt; X_18 C A &gt;" data-id="&lt; X_18 C A &gt;" data-ref="&lt; X_18 C A &gt;" class="etc-plate-poly"
            points="501.1,479.6 393.7,52.0 127.8,690.0"
            fill="#38bdf8" fill-opacity="0.17" stroke="none" />
@@ -597,59 +592,59 @@ svg.geometor-etc-drawing .etc-plate-panel.hover > rect.etc-panel-border {
   <line id="/ X_18 C /" data-id="/ X_18 C /" data-ref="/ X_18 C /" class="etc-plate-line"
         x1="501.1" y1="479.6" x2="393.7" y2="52.0" stroke="#cbd5e1" stroke-width="2.2" stroke-dasharray="10,5,2.5,5" opacity="0.65" />
 
-  <path d="M 629.2,366.0 L 618.0,374.4 L 626.4,385.6" fill="none" stroke="#e8b85a" stroke-width="2.4" opacity="0.9" pointer-events="none" />
+  <path d="M 629.2,366.0 L 618.0,374.4 L 626.4,385.6" fill="none" stroke="#ff7043" stroke-width="2.4" opacity="0.9" pointer-events="none" />
   <path d="M 263.1,365.3 L 276.1,370.7 L 270.7,383.6" fill="none" stroke="#38bdf8" stroke-width="2.4" opacity="0.9" pointer-events="none" />
   <path d="M 487.1,690.0 L 487.1,676.0 L 501.1,676.0" fill="none" stroke="#5ec27e" stroke-width="2.4" opacity="0.9" pointer-events="none" />
   <line id="/ X_18 T_a /" data-id="/ X_18 T_a /" data-ref="/ X_18 T_a /" class="etc-plate-strut"
         x1="501.1" y1="479.6" x2="637.6" y2="377.2"
-        stroke="#e8b85a" stroke-width="5.2" stroke-linecap="round" filter="url(#glow-coord)" />
+        stroke="#ff7043" stroke-width="5.2" stroke-linecap="round" />
   <line id="/ X_18 T_b /" data-id="/ X_18 T_b /" data-ref="/ X_18 T_b /" class="etc-plate-strut"
         x1="501.1" y1="479.6" x2="257.7" y2="378.2"
-        stroke="#38bdf8" stroke-width="5.2" stroke-linecap="round" filter="url(#glow-coord)" />
+        stroke="#38bdf8" stroke-width="5.2" stroke-linecap="round" />
   <line id="/ X_18 T_c /" data-id="/ X_18 T_c /" data-ref="/ X_18 T_c /" class="etc-plate-strut"
         x1="501.1" y1="479.6" x2="501.1" y2="690.0"
-        stroke="#5ec27e" stroke-width="5.2" stroke-linecap="round" filter="url(#glow-coord)" />
+        stroke="#5ec27e" stroke-width="5.2" stroke-linecap="round" />
 
   <circle id="T_a" data-id="T_a" data-ref="T_a" class="etc-plate-pt"
-          cx="637.6" cy="377.2" r="6.2" fill="#e8b85a" stroke="#0d111a" stroke-width="2" />
+          cx="637.6" cy="377.2" r="5.6" fill="#ff7043" stroke="#161616" stroke-width="2.2" />
   <circle id="T_b" data-id="T_b" data-ref="T_b" class="etc-plate-pt"
-          cx="257.7" cy="378.2" r="6.2" fill="#38bdf8" stroke="#0d111a" stroke-width="2" />
+          cx="257.7" cy="378.2" r="5.6" fill="#38bdf8" stroke="#161616" stroke-width="2.2" />
   <circle id="T_c" data-id="T_c" data-ref="T_c" class="etc-plate-pt"
-          cx="501.1" cy="690.0" r="6.2" fill="#5ec27e" stroke="#0d111a" stroke-width="2" />
+          cx="501.1" cy="690.0" r="5.6" fill="#5ec27e" stroke="#161616" stroke-width="2.2" />
 
   <circle id="A" data-id="A" data-ref="A" class="etc-plate-pt"
-          cx="127.8" cy="690.0" r="7.2" fill="#66ff66" stroke="#0d111a" stroke-width="2.2" />
+          cx="127.8" cy="690.0" r="5.6" fill="#66ff66" stroke="#161616" stroke-width="2.2" />
   <circle id="B" data-id="B" data-ref="B" class="etc-plate-pt"
-          cx="872.2" cy="690.0" r="7.2" fill="#66ff66" stroke="#0d111a" stroke-width="2.2" />
+          cx="872.2" cy="690.0" r="5.6" fill="#66ff66" stroke="#161616" stroke-width="2.2" />
   <circle id="C" data-id="C" data-ref="C" class="etc-plate-pt"
-          cx="393.7" cy="52.0" r="7.2" fill="#f8f6f0" stroke="#0d111a" stroke-width="2.2" />
+          cx="393.7" cy="52.0" r="5.6" fill="#f8f6f0" stroke="#161616" stroke-width="2.2" />
 
   <g pointer-events="none">
     <text x="95.8" y="716.0" fill="#88ff88" font-family="Georgia, serif" font-size="28" font-weight="bold">A</text>
     <text x="888.2" y="716.0" fill="#88ff88" font-family="Georgia, serif" font-size="28" font-weight="bold">B</text>
     <text x="383.7" y="34.0" fill="#f8f6f0" font-family="Georgia, serif" font-size="28" font-weight="bold">C</text>
-    <text x="649.6" y="369.2" fill="#e8b85a" font-family="Georgia, serif" font-size="19" font-weight="bold">T<tspan dy="0.28em" font-size="74%">a</tspan></text>
+    <text x="649.6" y="369.2" fill="#ff7043" font-family="Georgia, serif" font-size="19" font-weight="bold">T<tspan dy="0.28em" font-size="74%">a</tspan></text>
     <text x="223.7" y="370.2" fill="#38bdf8" font-family="Georgia, serif" font-size="19" font-weight="bold">T<tspan dy="0.28em" font-size="74%">b</tspan></text>
     <text x="511.1" y="716.0" fill="#5ec27e" font-family="Georgia, serif" font-size="19" font-weight="bold">T<tspan dy="0.28em" font-size="74%">c</tspan></text>
   </g>
 
   <g font-family="Georgia, serif" font-size="26" font-weight="bold" pointer-events="none">
     <rect x="579.4" y="398.4" width="34" height="30" rx="6" fill="rgba(13, 17, 26, 0.86)" />
-    <text x="587.4" y="422.4" fill="#e8b85a">α</text>
+    <text x="587.4" y="422.4" fill="#ff7043">α</text>
     <rect x="345.4" y="398.9" width="34" height="30" rx="6" fill="rgba(13, 17, 26, 0.86)" />
     <text x="353.4" y="422.9" fill="#38bdf8">β</text>
     <rect x="513.1" y="566.8" width="34" height="30" rx="6" fill="rgba(13, 17, 26, 0.86)" />
     <text x="521.1" y="590.8" fill="#5ec27e">γ</text>
   </g>
 
-  <circle id="X_18" data-id="X_18" data-ref="X_18" class="etc-plate-pt"
-          cx="501.1" cy="479.6" r="10.5" fill="#ffd700" stroke="#00ffff" stroke-width="3" filter="url(#glow-coord)" />
+  <circle id="X_18" data-id="X_18" data-ref="X_18" class="etc-plate-pt target"
+          cx="501.1" cy="479.6" r="5.6" fill="#161616" stroke="#e8b85a" stroke-width="2.8" />
   <g pointer-events="none">
     <rect x="467.1" y="433.6" width="68" height="30" rx="6" fill="rgba(13, 17, 26, 0.92)" stroke="#e8b85a" stroke-width="1.5" />
     <text x="501.1" y="454.6" text-anchor="middle" fill="#ffd700" font-family="JetBrains Mono, monospace" font-size="19" font-weight="bold">X<tspan dy="0.28em" font-size="74%">18</tspan></text>
     <text x="976" y="742" text-anchor="end" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="14">Heronian (15, 13, 14) • ℚ(√3) • Δ = 84</text>
   </g>
-  <script type="application/json" class="etc-elements-meta">{"A":{"ID":"A","type":"point","color":"#66ff66","name":"Vertex A","symbolic_rows":[{"label":"(x, y)","latex":"\\left(0,\\; 0\\right)","pretty":"(0, 0)"},{"label":"bary","latex":"1 : 0 : 0","pretty":"1 : 0 : 0"}],"approx":"\u2248 (0.000000, 0.000000)","related_points":["A"]},"B":{"ID":"B","type":"point","color":"#66ff66","name":"Vertex B","symbolic_rows":[{"label":"(x, y)","latex":"\\left(14,\\; 0\\right)","pretty":"(14, 0)"},{"label":"bary","latex":"0 : 1 : 0","pretty":"0 : 1 : 0"}],"approx":"\u2248 (14.000000, 0.000000)","related_points":["B"]},"C":{"ID":"C","type":"point","color":"#f8f6f0","name":"Vertex C","symbolic_rows":[{"label":"(x, y)","latex":"\\left(5,\\; 12\\right)","pretty":"(5, 12)"},{"label":"bary","latex":"0 : 0 : 1","pretty":"0 : 0 : 1"}],"approx":"\u2248 (5.000000, 12.000000)","related_points":["C"]},"X_18":{"ID":"X_18","type":"point","color":"#ffd700","name":"2nd NAPOLEON POINT","symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{8736 \\sqrt{3}}{29635} + \\frac{192941}{29635},\\; \\frac{23520}{5927} - \\frac{189 \\sqrt{3}}{29635}\\right)","pretty":"(8736\u00b7\u221a3/29635 + 192941/29635, 23520/5927 - 189\u00b7\u221a3/29635)"},{"label":"trilinear","latex":"10023 - 3900 \\sqrt{3} : 10905 - 3380 \\sqrt{3} : 10335 - 3640 \\sqrt{3}","pretty":"10023 - 3900\u00b7\u221a3 : 10905 - 3380\u00b7\u221a3 : 10335 - 3640\u00b7\u221a3"},{"label":"bary","latex":"2313 - 900 \\sqrt{3} : 2181 - 676 \\sqrt{3} : 2226 - 784 \\sqrt{3}","pretty":"2313 - 900\u00b7\u221a3 : 2181 - 676\u00b7\u221a3 : 2226 - 784\u00b7\u221a3"}],"approx":"\u2248 (7.021164, 3.957234)","related_points":["X_18"]},"T_a":{"ID":"T_a","type":"point","color":"#e8b85a","name":"Right-Spread Pedal Foot T_a on BC","symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{80892 \\sqrt{3}}{740875} + \\frac{6963509}{740875},\\; \\frac{4544988}{740875} - \\frac{107856 \\sqrt{3}}{740875}\\right)","pretty":"(80892\u00b7\u221a3/740875 + 6963509/740875, 4544988/740875 - 107856\u00b7\u221a3/740875)"}],"approx":"\u2248 (9.588147, 5.882471)","related_points":["T_a"]},"T_b":{"ID":"T_b","type":"point","color":"#38bdf8","name":"Right-Spread Pedal Foot T_b on CA","symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{41412 \\sqrt{3}}{1001663} + \\frac{2375905}{1001663},\\; \\frac{496944 \\sqrt{3}}{5008315} + \\frac{5702172}{1001663}\\right)","pretty":"(41412\u00b7\u221a3/1001663 + 2375905/1001663, 496944\u00b7\u221a3/5008315 + 5702172/1001663)"}],"approx":"\u2248 (2.443569, 5.864566)","related_points":["T_b"]},"T_c":{"ID":"T_c","type":"point","color":"#5ec27e","name":"Right-Spread Pedal Foot T_c on AB","symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{8736 \\sqrt{3}}{29635} + \\frac{192941}{29635},\\; 0\\right)","pretty":"(8736\u00b7\u221a3/29635 + 192941/29635, 0)"}],"approx":"\u2248 (7.021164, 0.000000)","related_points":["T_c"]},"[ B C ]":{"ID":"[ B C ]","type":"line","color":"#cbd5e1","name":"Sideline BC (Side a)","symbolic_rows":[{"label":"eq","latex":"4 x + 3 y - 56 = 0","pretty":"4\u00b7x + 3\u00b7y - 56 = 0"},{"label":"length","latex":"15","pretty":"15"},{"label":"Q","latex":"225","pretty":"225"}],"approx":"\u2248 length 15.000000"},"[ C A ]":{"ID":"[ C A ]","type":"line","color":"#cbd5e1","name":"Sideline CA (Side b)","symbolic_rows":[{"label":"eq","latex":"12 x - 5 y = 0","pretty":"12\u00b7x - 5\u00b7y = 0"},{"label":"length","latex":"13","pretty":"13"},{"label":"Q","latex":"169","pretty":"169"}],"approx":"\u2248 length 13.000000"},"[ A B ]":{"ID":"[ A B ]","type":"line","color":"#cbd5e1","name":"Sideline AB (Side c)","symbolic_rows":[{"label":"eq","latex":"y = 0","pretty":"y = 0"},{"label":"length","latex":"14","pretty":"14"},{"label":"Q","latex":"196","pretty":"196"}],"approx":"\u2248 length 14.000000"},"/ X_18 T_a /":{"ID":"/ X_18 T_a /","type":"segment","color":"#e8b85a","name":"Orthogonal Trilinear Strut \u22a5 BC","symbolic_rows":[{"label":"d","latex":"\\alpha_0 = \\frac{534996}{148175} - \\frac{34377 \\sqrt{3}}{148175}","pretty":"534996/148175 - 34377\u00b7\u221a3/148175"},{"label":"Q","latex":"\\frac{289766054403}{21955830625} - \\frac{36783114984 \\sqrt{3}}{21955830625}","pretty":"289766054403/21955830625 - 36783114984\u00b7\u221a3/21955830625"},{"label":"spread","latex":"1 \\;(\\perp)","pretty":"1 (\u22a5)"}],"approx":"\u2248 3.208728"},"/ X_18 T_b /":{"ID":"/ X_18 T_b /","type":"segment","color":"#38bdf8","name":"Orthogonal Trilinear Strut \u22a5 CA","symbolic_rows":[{"label":"d","latex":"\\beta_0 = \\frac{105777 \\sqrt{3}}{385255} + \\frac{1727292}{385255}","pretty":"105777\u00b7\u221a3/385255 + 1727292/385255"},{"label":"Q","latex":"\\frac{365415531768 \\sqrt{3}}{148421415025} + \\frac{3017103974451}{148421415025}","pretty":"365415531768\u00b7\u221a3/148421415025 + 3017103974451/148421415025"},{"label":"spread","latex":"1 \\;(\\perp)","pretty":"1 (\u22a5)"}],"approx":"\u2248 4.959061"},"/ X_18 T_c /":{"ID":"/ X_18 T_c /","type":"segment","color":"#5ec27e","name":"Orthogonal Trilinear Strut \u22a5 AB","symbolic_rows":[{"label":"d","latex":"\\gamma_0 = \\frac{23520}{5927} - \\frac{189 \\sqrt{3}}{29635}","pretty":"23520/5927 - 189\u00b7\u221a3/29635"},{"label":"Q","latex":"\\frac{13829867163}{878233225} - \\frac{1778112 \\sqrt{3}}{35129329}","pretty":"13829867163/878233225 - 1778112\u00b7\u221a3/35129329"},{"label":"spread","latex":"1 \\;(\\perp)","pretty":"1 (\u22a5)"}],"approx":"\u2248 3.957234"},"/ X_18 A /":{"ID":"/ X_18 A /","type":"segment","color":"#cbd5e1","name":"Barycentric Partition Spoke X_18A","symbolic_rows":[{"label":"length","latex":"\\frac{14 \\sqrt{16972512 \\sqrt{3} + 261658417}}{29635}","pretty":"14\u00b7sqrt(16972512\u00b7\u221a3 + 261658417)/29635"},{"label":"Q","latex":"\\frac{3326612352 \\sqrt{3}}{878233225} + \\frac{51285049732}{878233225}","pretty":"3326612352\u00b7\u221a3/878233225 + 51285049732/878233225"}],"approx":"\u2248 8.059556"},"/ X_18 B /":{"ID":"/ X_18 B /","type":"segment","color":"#cbd5e1","name":"Barycentric Partition Spoke X_18B","symbolic_rows":[{"label":"length","latex":"\\frac{42 \\sqrt{35895793 - 2223552 \\sqrt{3}}}{29635}","pretty":"42\u00b7sqrt(35895793 - 2223552\u00b7\u221a3)/29635"},{"label":"Q","latex":"\\frac{63320178852}{878233225} - \\frac{3922345728 \\sqrt{3}}{878233225}","pretty":"63320178852/878233225 - 3922345728\u00b7\u221a3/878233225"}],"approx":"\u2248 8.022709"},"/ X_18 C /":{"ID":"/ X_18 C /","type":"segment","color":"#cbd5e1","name":"Barycentric Partition Spoke X_18C","symbolic_rows":[{"label":"length","latex":"\\frac{3 \\sqrt{96902568 \\sqrt{3} + 6542952823}}{29635}","pretty":"3\u00b7sqrt(96902568\u00b7\u221a3 + 6542952823)/29635"},{"label":"Q","latex":"\\frac{872123112 \\sqrt{3}}{878233225} + \\frac{58886575407}{878233225}","pretty":"872123112\u00b7\u221a3/878233225 + 58886575407/878233225"}],"approx":"\u2248 8.292839"},"\u003c X_18 B C \u003e":{"ID":"\u003c X_18 B C \u003e","type":"polygon","color":"#e8b85a","name":"Barycentric Sub-Triangle \u25b3X_18BC","symbolic_rows":[{"label":"\u0394","latex":"\\frac{802494}{29635} - \\frac{103131 \\sqrt{3}}{59270}","pretty":"802494/29635 - 103131\u00b7\u221a3/59270"},{"label":"u / \u0394","latex":"\\frac{19107}{59270} - \\frac{4911 \\sqrt{3}}{237080}","pretty":"19107/59270 - 4911\u00b7\u221a3/237080"},{"label":"bary","latex":"2313 - 900 \\sqrt{3} : 2181 - 676 \\sqrt{3} : 2226 - 784 \\sqrt{3}","pretty":"2313 - 900\u00b7\u221a3 : 2181 - 676\u00b7\u221a3 : 2226 - 784\u00b7\u221a3"}],"approx":"\u2248 24.0655 (28.6% of \u0394)"},"\u003c X_18 C A \u003e":{"ID":"\u003c X_18 C A \u003e","type":"polygon","color":"#38bdf8","name":"Barycentric Sub-Triangle \u25b3X_18CA","symbolic_rows":[{"label":"\u0394","latex":"\\frac{105777 \\sqrt{3}}{59270} + \\frac{863646}{29635}","pretty":"105777\u00b7\u221a3/59270 + 863646/29635"},{"label":"v / \u0394","latex":"\\frac{5037 \\sqrt{3}}{237080} + \\frac{20563}{59270}","pretty":"5037\u00b7\u221a3/237080 + 20563/59270"},{"label":"bary","latex":"2313 - 900 \\sqrt{3} : 2181 - 676 \\sqrt{3} : 2226 - 784 \\sqrt{3}","pretty":"2313 - 900\u00b7\u221a3 : 2181 - 676\u00b7\u221a3 : 2226 - 784\u00b7\u221a3"}],"approx":"\u2248 32.2339 (38.4% of \u0394)"},"\u003c X_18 A B \u003e":{"ID":"\u003c X_18 A B \u003e","type":"polygon","color":"#5ec27e","name":"Barycentric Sub-Triangle \u25b3X_18AB","symbolic_rows":[{"label":"\u0394","latex":"\\frac{164640}{5927} - \\frac{1323 \\sqrt{3}}{29635}","pretty":"164640/5927 - 1323\u00b7\u221a3/29635"},{"label":"w / \u0394","latex":"\\frac{1960}{5927} - \\frac{63 \\sqrt{3}}{118540}","pretty":"1960/5927 - 63\u00b7\u221a3/118540"},{"label":"bary","latex":"2313 - 900 \\sqrt{3} : 2181 - 676 \\sqrt{3} : 2226 - 784 \\sqrt{3}","pretty":"2313 - 900\u00b7\u221a3 : 2181 - 676\u00b7\u221a3 : 2226 - 784\u00b7\u221a3"}],"approx":"\u2248 27.7006 (33.0% of \u0394)"}}</script>
+  <script type="application/json" class="etc-elements-meta">{"A":{"ID":"A","type":"point","color":"#66ff66","name":"Vertex A","symbolic_rows":[{"label":"(x, y)","latex":"\\left(0,\\; 0\\right)","pretty":"(0, 0)"},{"label":"bary","latex":"1 : 0 : 0","pretty":"1 : 0 : 0"}],"approx":"\u2248 (0.000000, 0.000000)","related_points":["A"]},"B":{"ID":"B","type":"point","color":"#66ff66","name":"Vertex B","symbolic_rows":[{"label":"(x, y)","latex":"\\left(14,\\; 0\\right)","pretty":"(14, 0)"},{"label":"bary","latex":"0 : 1 : 0","pretty":"0 : 1 : 0"}],"approx":"\u2248 (14.000000, 0.000000)","related_points":["B"]},"C":{"ID":"C","type":"point","color":"#f8f6f0","name":"Vertex C","symbolic_rows":[{"label":"(x, y)","latex":"\\left(5,\\; 12\\right)","pretty":"(5, 12)"},{"label":"bary","latex":"0 : 0 : 1","pretty":"0 : 0 : 1"}],"approx":"\u2248 (5.000000, 12.000000)","related_points":["C"]},"X_18":{"ID":"X_18","type":"point","color":"#ffd700","name":"2nd NAPOLEON POINT","symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{8736 \\sqrt{3}}{29635} + \\frac{192941}{29635},\\; \\frac{23520}{5927} - \\frac{189 \\sqrt{3}}{29635}\\right)","pretty":"(8736\u00b7\u221a3/29635 + 192941/29635, 23520/5927 - 189\u00b7\u221a3/29635)"},{"label":"trilinear","latex":"10023 - 3900 \\sqrt{3} : 10905 - 3380 \\sqrt{3} : 10335 - 3640 \\sqrt{3}","pretty":"10023 - 3900\u00b7\u221a3 : 10905 - 3380\u00b7\u221a3 : 10335 - 3640\u00b7\u221a3"},{"label":"bary","latex":"2313 - 900 \\sqrt{3} : 2181 - 676 \\sqrt{3} : 2226 - 784 \\sqrt{3}","pretty":"2313 - 900\u00b7\u221a3 : 2181 - 676\u00b7\u221a3 : 2226 - 784\u00b7\u221a3"}],"approx":"\u2248 (7.021164, 3.957234)","related_points":["X_18"]},"T_a":{"ID":"T_a","type":"point","color":"#ff7043","name":"Right-Spread Pedal Foot T_a on BC","symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{80892 \\sqrt{3}}{740875} + \\frac{6963509}{740875},\\; \\frac{4544988}{740875} - \\frac{107856 \\sqrt{3}}{740875}\\right)","pretty":"(80892\u00b7\u221a3/740875 + 6963509/740875, 4544988/740875 - 107856\u00b7\u221a3/740875)"}],"approx":"\u2248 (9.588147, 5.882471)","related_points":["T_a"]},"T_b":{"ID":"T_b","type":"point","color":"#38bdf8","name":"Right-Spread Pedal Foot T_b on CA","symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{41412 \\sqrt{3}}{1001663} + \\frac{2375905}{1001663},\\; \\frac{496944 \\sqrt{3}}{5008315} + \\frac{5702172}{1001663}\\right)","pretty":"(41412\u00b7\u221a3/1001663 + 2375905/1001663, 496944\u00b7\u221a3/5008315 + 5702172/1001663)"}],"approx":"\u2248 (2.443569, 5.864566)","related_points":["T_b"]},"T_c":{"ID":"T_c","type":"point","color":"#5ec27e","name":"Right-Spread Pedal Foot T_c on AB","symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{8736 \\sqrt{3}}{29635} + \\frac{192941}{29635},\\; 0\\right)","pretty":"(8736\u00b7\u221a3/29635 + 192941/29635, 0)"}],"approx":"\u2248 (7.021164, 0.000000)","related_points":["T_c"]},"[ B C ]":{"ID":"[ B C ]","type":"line","color":"#cbd5e1","name":"Sideline BC (Side a)","symbolic_rows":[{"label":"eq","latex":"4 x + 3 y - 56 = 0","pretty":"4\u00b7x + 3\u00b7y - 56 = 0"},{"label":"length","latex":"15","pretty":"15"},{"label":"Q","latex":"225","pretty":"225"}],"approx":"\u2248 length 15.000000"},"[ C A ]":{"ID":"[ C A ]","type":"line","color":"#cbd5e1","name":"Sideline CA (Side b)","symbolic_rows":[{"label":"eq","latex":"12 x - 5 y = 0","pretty":"12\u00b7x - 5\u00b7y = 0"},{"label":"length","latex":"13","pretty":"13"},{"label":"Q","latex":"169","pretty":"169"}],"approx":"\u2248 length 13.000000"},"[ A B ]":{"ID":"[ A B ]","type":"line","color":"#cbd5e1","name":"Sideline AB (Side c)","symbolic_rows":[{"label":"eq","latex":"y = 0","pretty":"y = 0"},{"label":"length","latex":"14","pretty":"14"},{"label":"Q","latex":"196","pretty":"196"}],"approx":"\u2248 length 14.000000"},"/ X_18 T_a /":{"ID":"/ X_18 T_a /","type":"segment","color":"#ff7043","name":"Orthogonal Trilinear Strut \u22a5 BC","symbolic_rows":[{"label":"d","latex":"\\alpha_0 = \\frac{534996}{148175} - \\frac{34377 \\sqrt{3}}{148175}","pretty":"534996/148175 - 34377\u00b7\u221a3/148175"},{"label":"Q","latex":"\\frac{289766054403}{21955830625} - \\frac{36783114984 \\sqrt{3}}{21955830625}","pretty":"289766054403/21955830625 - 36783114984\u00b7\u221a3/21955830625"},{"label":"spread","latex":"1 \\;(\\perp)","pretty":"1 (\u22a5)"}],"approx":"\u2248 3.208728"},"/ X_18 T_b /":{"ID":"/ X_18 T_b /","type":"segment","color":"#38bdf8","name":"Orthogonal Trilinear Strut \u22a5 CA","symbolic_rows":[{"label":"d","latex":"\\beta_0 = \\frac{105777 \\sqrt{3}}{385255} + \\frac{1727292}{385255}","pretty":"105777\u00b7\u221a3/385255 + 1727292/385255"},{"label":"Q","latex":"\\frac{365415531768 \\sqrt{3}}{148421415025} + \\frac{3017103974451}{148421415025}","pretty":"365415531768\u00b7\u221a3/148421415025 + 3017103974451/148421415025"},{"label":"spread","latex":"1 \\;(\\perp)","pretty":"1 (\u22a5)"}],"approx":"\u2248 4.959061"},"/ X_18 T_c /":{"ID":"/ X_18 T_c /","type":"segment","color":"#5ec27e","name":"Orthogonal Trilinear Strut \u22a5 AB","symbolic_rows":[{"label":"d","latex":"\\gamma_0 = \\frac{23520}{5927} - \\frac{189 \\sqrt{3}}{29635}","pretty":"23520/5927 - 189\u00b7\u221a3/29635"},{"label":"Q","latex":"\\frac{13829867163}{878233225} - \\frac{1778112 \\sqrt{3}}{35129329}","pretty":"13829867163/878233225 - 1778112\u00b7\u221a3/35129329"},{"label":"spread","latex":"1 \\;(\\perp)","pretty":"1 (\u22a5)"}],"approx":"\u2248 3.957234"},"/ X_18 A /":{"ID":"/ X_18 A /","type":"segment","color":"#cbd5e1","name":"Barycentric Partition Spoke X_18A","symbolic_rows":[{"label":"length","latex":"\\frac{14 \\sqrt{16972512 \\sqrt{3} + 261658417}}{29635}","pretty":"14\u00b7sqrt(16972512\u00b7\u221a3 + 261658417)/29635"},{"label":"Q","latex":"\\frac{3326612352 \\sqrt{3}}{878233225} + \\frac{51285049732}{878233225}","pretty":"3326612352\u00b7\u221a3/878233225 + 51285049732/878233225"}],"approx":"\u2248 8.059556"},"/ X_18 B /":{"ID":"/ X_18 B /","type":"segment","color":"#cbd5e1","name":"Barycentric Partition Spoke X_18B","symbolic_rows":[{"label":"length","latex":"\\frac{42 \\sqrt{35895793 - 2223552 \\sqrt{3}}}{29635}","pretty":"42\u00b7sqrt(35895793 - 2223552\u00b7\u221a3)/29635"},{"label":"Q","latex":"\\frac{63320178852}{878233225} - \\frac{3922345728 \\sqrt{3}}{878233225}","pretty":"63320178852/878233225 - 3922345728\u00b7\u221a3/878233225"}],"approx":"\u2248 8.022709"},"/ X_18 C /":{"ID":"/ X_18 C /","type":"segment","color":"#cbd5e1","name":"Barycentric Partition Spoke X_18C","symbolic_rows":[{"label":"length","latex":"\\frac{3 \\sqrt{96902568 \\sqrt{3} + 6542952823}}{29635}","pretty":"3\u00b7sqrt(96902568\u00b7\u221a3 + 6542952823)/29635"},{"label":"Q","latex":"\\frac{872123112 \\sqrt{3}}{878233225} + \\frac{58886575407}{878233225}","pretty":"872123112\u00b7\u221a3/878233225 + 58886575407/878233225"}],"approx":"\u2248 8.292839"},"\u003c X_18 B C \u003e":{"ID":"\u003c X_18 B C \u003e","type":"polygon","color":"#ff7043","name":"Barycentric Sub-Triangle \u25b3X_18BC","symbolic_rows":[{"label":"\u0394","latex":"\\frac{802494}{29635} - \\frac{103131 \\sqrt{3}}{59270}","pretty":"802494/29635 - 103131\u00b7\u221a3/59270"},{"label":"u / \u0394","latex":"\\frac{19107}{59270} - \\frac{4911 \\sqrt{3}}{237080}","pretty":"19107/59270 - 4911\u00b7\u221a3/237080"},{"label":"bary","latex":"2313 - 900 \\sqrt{3} : 2181 - 676 \\sqrt{3} : 2226 - 784 \\sqrt{3}","pretty":"2313 - 900\u00b7\u221a3 : 2181 - 676\u00b7\u221a3 : 2226 - 784\u00b7\u221a3"}],"approx":"\u2248 24.0655 (28.6% of \u0394)"},"\u003c X_18 C A \u003e":{"ID":"\u003c X_18 C A \u003e","type":"polygon","color":"#38bdf8","name":"Barycentric Sub-Triangle \u25b3X_18CA","symbolic_rows":[{"label":"\u0394","latex":"\\frac{105777 \\sqrt{3}}{59270} + \\frac{863646}{29635}","pretty":"105777\u00b7\u221a3/59270 + 863646/29635"},{"label":"v / \u0394","latex":"\\frac{5037 \\sqrt{3}}{237080} + \\frac{20563}{59270}","pretty":"5037\u00b7\u221a3/237080 + 20563/59270"},{"label":"bary","latex":"2313 - 900 \\sqrt{3} : 2181 - 676 \\sqrt{3} : 2226 - 784 \\sqrt{3}","pretty":"2313 - 900\u00b7\u221a3 : 2181 - 676\u00b7\u221a3 : 2226 - 784\u00b7\u221a3"}],"approx":"\u2248 32.2339 (38.4% of \u0394)"},"\u003c X_18 A B \u003e":{"ID":"\u003c X_18 A B \u003e","type":"polygon","color":"#5ec27e","name":"Barycentric Sub-Triangle \u25b3X_18AB","symbolic_rows":[{"label":"\u0394","latex":"\\frac{164640}{5927} - \\frac{1323 \\sqrt{3}}{29635}","pretty":"164640/5927 - 1323\u00b7\u221a3/29635"},{"label":"w / \u0394","latex":"\\frac{1960}{5927} - \\frac{63 \\sqrt{3}}{118540}","pretty":"1960/5927 - 63\u00b7\u221a3/118540"},{"label":"bary","latex":"2313 - 900 \\sqrt{3} : 2181 - 676 \\sqrt{3} : 2226 - 784 \\sqrt{3}","pretty":"2313 - 900\u00b7\u221a3 : 2181 - 676\u00b7\u221a3 : 2226 - 784\u00b7\u221a3"}],"approx":"\u2248 27.7006 (33.0% of \u0394)"}}</script>
   <script>//<![CDATA[
 
 (function () {
@@ -794,16 +789,13 @@ svg.geometor-etc-drawing .etc-plate-panel.hover > rect.etc-panel-border {
         const vb = getViewBox();
         const unitsPerPx = vb[2] / widthPx;
 
-        const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
+        const uniformR = (4.8 * unitsPerPx).toFixed(6);
         pointEls.forEach(c => {
-            const isTarget = c.classList.contains('target') || c.classList.contains('selected');
-            const isGuide = c.classList.contains('guide');
-            const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
-            c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
+            c.setAttribute('r', uniformR);
         });
 
-        const fontSize = 20.25 * unitsPerPx;
-        const guideFontSize = 17.5 * unitsPerPx;
+        const fontSize = 24.0 * unitsPerPx;
+        const guideFontSize = 21.0 * unitsPerPx;
         labelEls.forEach(lbl => {
             const cx = parseFloat(lbl.getAttribute('data-anchor-x') || '0');
             const cy = parseFloat(lbl.getAttribute('data-anchor-y') || '0');

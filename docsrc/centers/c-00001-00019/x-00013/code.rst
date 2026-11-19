@@ -1,5 +1,6 @@
 :canonical_id: X_13
 :subtitle: 1st ISOGONIC CENTER (FERMAT POINT, TORRICELLI POINT)
+:tracks: Overview: index | Lines: lines | Relations: relations | Notes: notes | Code: code
 
 X_13
 ====

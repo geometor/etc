@@ -1,6 +1,7 @@
 :order: 4
 :canonical_id: X_4
 :subtitle: ORTHOCENTER
+:tracks: Overview: index | Lines: lines | Relations: relations | Notes: notes | Code: code
 :dependencies: X_1, X_2, X_3, X_5, X_6, X_7, X_8, X_9, X_10, X_11, X_12, X_13, X_14, X_15, X_16, X_17, X_18, X_19, X_20, X_21, X_24, X_25, X_27, X_28, X_29, X_30, X_31, X_32, X_33, X_34, X_35, X_36, X_37, X_39, X_40, X_41, X_42, X_46, X_48, X_49, X_50, X_51, X_52, X_53, X_54, X_55, X_56, X_57, X_58, X_61, X_62, X_63, X_64, X_65, X_66, X_67, X_68, X_69, X_71, X_72, X_74, X_75, X_76, X_78, X_79, X_80, X_81, X_83, X_84, X_85, X_90, X_91, X_92, X_93, X_94, X_95, X_96, X_98, X_99, X_100, X_101, X_102, X_103, X_104, X_105, X_106, X_107, X_108, X_109, X_110, X_111, X_112, X_113, X_114, X_115, X_116, X_117, X_118, X_119, X_120, X_121, X_122, X_123, X_124, X_125, X_126, X_127, X_128, X_129, X_130, X_131, X_132, X_133, X_135, X_136, X_137, X_140, X_141, X_142, X_143, X_144, X_145, X_146, X_147, X_148, X_149, X_150, X_151, X_152, X_153, X_154, X_155, X_156, X_157, X_158, X_160, X_162, X_165, X_171, X_175, X_176, X_177, X_181, X_182, X_183, X_184, X_185, X_186, X_187, X_189, X_191, X_193, X_195, X_196, X_198, X_200, X_201, X_204, X_208, X_209, X_210, X_211, X_212, X_214, X_215, X_216, X_218, X_225, X_228, X_230, X_231, X_232, X_233, X_235, X_236, X_238, X_240, X_242, X_243, X_250, X_251, X_252, X_253, X_254, X_255, X_256, X_264, X_270, X_273, X_275, X_276, X_278, X_279, X_280, X_281, X_282, X_284, X_286, X_290, X_294, X_297, X_298, X_299, X_312, X_318, X_325, X_327, X_331, X_333, X_338, X_339, X_341, X_345, X_346, X_347, X_348, X_350, X_354, X_355, X_371, X_372, X_373, X_376, X_378, X_381, X_382, X_385, X_386, X_389, X_390, X_391, X_393, X_394, X_397, X_398, X_399, X_403, X_407, X_415, X_417, X_418, X_419, X_420, X_421, X_422, X_423, X_424, X_425, X_427, X_451, X_459, X_460, X_468, X_470, X_471, X_477, X_484, X_485, X_486, X_487, X_488, X_489, X_490, X_493, X_494, X_495, X_496, X_498, X_499, X_500, X_511, X_512, X_513, X_514, X_515, X_516, X_517, X_518, X_519, X_520, X_521, X_522, X_523, X_524, X_525, X_527, X_528, X_529, X_532, X_533, X_535, X_538, X_539, X_541, X_542, X_543, X_544, X_546, X_550, X_551, X_562, X_566, X_567, X_569, X_572, X_574, X_575, X_576, X_577, X_579, X_580, X_584, X_590, X_595, X_598, X_601, X_602, X_603, X_604, X_608, X_615, X_616, X_617, X_618, X_619, X_620, X_625, X_626, X_627, X_628, X_635, X_636, X_639, X_640, X_641, X_642, X_647, X_651, X_652, X_653, X_674, X_684, X_685, X_690, X_693, X_695, X_754, X_758, X_774, X_800, X_801, X_811, X_842, X_850, X_879, X_885, X_908, X_912, X_916, X_917, X_925, X_930, X_933, X_935, X_936, X_937, X_940, X_941, X_944, X_946, X_953, X_958, X_960, X_970, X_972, X_973, X_974, X_983, X_990, X_991, X_993, X_999, X_1000, X_1015, X_1029, X_1032, X_1033, X_1034, X_1035, X_1036, X_1037, X_1038, X_1039, X_1040, X_1041, X_1043, X_1046, X_1047, X_1060, X_1062, X_1065, X_1067, X_1073, X_1074, X_1075, X_1076, X_1078, X_1089, X_1092, X_1096, X_1101, X_1104, X_1111, X_1113, X_1114, X_1123, X_1125, X_1131, X_1132, X_1138, X_1139, X_1140, X_1141, X_1147, X_1151, X_1152, X_1156, X_1157, X_1160, X_1161, X_1162, X_1163, X_1164, X_1165, X_1175, X_1177, X_1179, X_1192, X_1209, X_1216, X_1217, X_1248, X_1249, X_1251, X_1254, X_1260, X_1289, X_1292, X_1293, X_1294, X_1295, X_1296, X_1297, X_1298, X_1299, X_1300, X_1303, X_1304, X_1309, X_1312, X_1313, X_1317, X_1319, X_1327, X_1328, X_1329, X_1336, X_1340, X_1341, X_1342, X_1343, X_1348, X_1349, X_1350, X_1351, X_1352, X_1353, X_1376, X_1379, X_1380, X_1383, X_1384, X_1385, X_1389, X_1392, X_1393, X_1396, X_1399, X_1420, X_1430, X_1435, X_1440, X_1441, X_1445, X_1448, X_1453, X_1468, X_1469, X_1474, X_1482, X_1483, X_1484, X_1487, X_1495, X_1499, X_1500, X_1503, X_1506, X_1510, X_1511, X_1518, X_1521, X_1534, X_1538, X_1550, X_1552, X_1553, X_1560, X_1562, X_1565, X_1566, X_1593, X_1595, X_1596, X_1609, X_1621, X_1640, X_1670, X_1671, X_1676, X_1677, X_1682, X_1689, X_1690, X_1691, X_1697, X_1698, X_1713, X_1714, X_1715, X_1716, X_1717, X_1718, X_1721, X_1726, X_1729, X_1730, X_1764, X_1768, X_1773, X_1781, X_1782, X_1784, X_1798, X_1825, X_1832, X_1840, X_1841, X_1860, X_1880, X_1881, X_1903, X_1935, X_1942, X_1957, X_1970, X_1971, X_1973, X_1975, X_1987, X_1994, X_2009, X_2010, X_2039, X_2040, X_2051, X_2071, X_2077, X_2080, X_2092, X_2093, X_2095, X_2098, X_2099, X_2120, X_2121, X_2130, X_2131, X_2132, X_2133, X_2181, X_2201, X_2202, X_2217, X_2262, X_2263, X_2275, X_2276, X_2278, X_2287, X_2322, X_2331, X_2332, X_2353, X_2355, X_2361, X_2362, X_2393, X_2435, X_2456, X_2457, X_2477, X_2479, X_2480, X_2482, X_2536, X_2537, X_2540, X_2541, X_2574, X_2575, X_2592, X_2593, X_2646, X_2648, X_2651, X_2660, X_2679, X_2682, X_2687, X_2697, X_2698, X_2724, X_2734, X_2752, X_2766, X_2770, X_2771, X_2778, X_2783, X_2784, X_2787, X_2790, X_2791, X_2793, X_2797, X_2801, X_2802, X_2814, X_2817, X_2818, X_2822, X_2823, X_2826, X_2827, X_2828, X_2830, X_2831, X_2840, X_2883, X_2886, X_2889, X_2894, X_2896, X_2900, X_2904, X_2905, X_2906, X_2907, X_2908, X_2917, X_2929, X_2935, X_2949, X_2955, X_2961, X_2962, X_2964, X_2968, X_2972, X_2975, X_2979, X_2995, X_2997, X_3023, X_3024, X_3027, X_3028, X_3053, X_3054, X_3056, X_3057, X_3058, X_3062, X_3065, X_3072, X_3074, X_3075, X_3094, X_3096, X_3098, X_3100, X_3101, X_3120, X_3157, X_3162, X_3164, X_3172, X_3180, X_3181, X_3184, X_3189, X_3190, X_3191, X_3212, X_3216, X_3218, X_3241, X_3254, X_3255, X_3269, X_3270, X_3296, X_3303, X_3304, X_3305, X_3306, X_3309, X_3311, X_3312, X_3314, X_3320, X_3329, X_3333, X_3338, X_3339, X_3340, X_3342, X_3344, X_3345, X_3347, X_3348, X_3349, X_3352, X_3354, X_3356, X_3358, X_3364, X_3365, X_3366, X_3367, X_3368, X_3369, X_3370, X_3371, X_3372, X_3373, X_3374, X_3379, X_3380, X_3381, X_3382, X_3385, X_3386, X_3387, X_3388, X_3389, X_3390, X_3391, X_3392, X_3393, X_3394, X_3395, X_3396, X_3397, X_3398, X_3399, X_3406, X_3407, X_3413, X_3414, X_3416, X_3417, X_3424, X_3425, X_3426, X_3430, X_3431, X_3438, X_3439, X_3440, X_3441, X_3442, X_3443, X_3448, X_3452, X_3454, X_3460, X_3461, X_3463, X_3466, X_3469, X_3479, X_3480, X_3481, X_3489, X_3490, X_3495, X_3497, X_3499, X_3500, X_3502, X_3519, X_3521, X_3527, X_3532, X_3557, X_3558, X_3576, X_3577, X_3579, X_3580, X_3582, X_3584, X_3587, X_3589, X_3590, X_3591, X_3593, X_3595, X_3597, X_3601, X_3611, X_3613, X_3614, X_3617, X_3620, X_3621, X_3622, X_3623, X_3624, X_3629, X_3632, X_3633, X_3634, X_3637, X_3642, X_3643, X_3648, X_3652, X_3667, X_3668, X_3671, X_3679, X_3680, X_3695, X_3701, X_3704, X_3706, X_3714, X_3734, X_3738, X_3741, X_3746, X_3753, X_3755, X_3762, X_3772, X_3785, X_3788, X_3812, X_3813, X_3814, X_3815, X_3819, X_3820, X_3822, X_3825, X_3826, X_3829, X_3841, X_3847, X_3849, X_3868, X_3870, X_3871, X_3877, X_3885, X_3887, X_3911, X_3913, X_3916, X_3917, X_3924, X_3925, X_3933, X_3934, X_3940, X_3947, X_3972, X_3974, X_3981, X_4000, X_4008, X_4045, X_4048, X_4049, X_4056, X_4251, X_4277, X_4296, X_4304, X_4305, X_4308, X_4309, X_4311, X_4313, X_4314, X_4316, X_4317, X_4324, X_4325, X_4329, X_4330, X_4339, X_4355, X_4357, X_4417, X_4423, X_4425, X_4444, X_4466, X_4512, X_4516, X_4549, X_4642, X_4645, X_4646, X_4648, X_4654, X_4658, X_4692, X_4721, X_4723, X_4768, X_4805, X_4846, X_4847, X_4848, X_4858, X_4863, X_4866, X_4872, X_4876, X_4894, X_4900, X_4939, X_5007, X_5008, X_5010, X_5013, X_5032, X_5038, X_5044, X_5045, X_5050, X_5085, X_5088, X_5092, X_5093, X_5097, X_5102, X_5103, X_5119, X_5121, X_5123, X_5171, X_5173, X_5188, X_5190, X_5204, X_5206, X_5210, X_5217, X_5221, X_5223, X_5226, X_5247, X_5248, X_5249, X_5253, X_5255, X_5265, X_5266, X_5273, X_5278, X_5281, X_5292, X_5300, X_5309, X_5320, X_5346, X_5348, X_5359, X_5377, X_5395, X_5397, X_5400, X_5401, X_5402, X_5403, X_5404, X_5418, X_5420, X_5424, X_5433, X_5434, X_5435, X_5437, X_5438, X_5439, X_5440, X_5441, X_5447, X_5449, X_5461, X_5462, X_5473, X_5474, X_5485, X_5486, X_5503, X_5505, X_5510, X_5511, X_5513, X_5514, X_5533, X_5534, X_5535, X_5536, X_5542, X_5550, X_5553, X_5556, X_5557, X_5558, X_5559, X_5561, X_5563, X_5584, X_5590, X_5591, X_5593, X_5597, X_5598, X_5599, X_5600, X_5601, X_5602, X_5606, X_5609, X_5622, X_5623, X_5624, X_5627, X_5655, X_5665, X_5670, X_5671, X_5672, X_5673, X_5674, X_5675, X_5676, X_5677, X_5678, X_5679, X_5680, X_5681, X_5682, X_5683, X_5685, X_5687, X_5688, X_5689, X_5690, X_5693, X_5695, X_5697, X_5704, X_5705, X_5707, X_5708, X_5709, X_5732, X_5733, X_5735, X_5744, X_5745, X_5747, X_5748, X_5763, X_5770, X_5778, X_5788, X_5791, X_5794, X_5795, X_5841, X_5844, X_5848, X_5853, X_5854, X_5860, X_5861, X_5862, X_5863, X_5864, X_5865, X_5872, X_5873, X_5874, X_5875, X_5880, X_5883, X_5885, X_5892, X_5901, X_5908, X_5910, X_5911, X_5933, X_5934, X_5935, X_5943, X_5946, X_5948, X_5950, X_5951, X_5952, X_5965, X_5984, X_6002, X_6020, X_6032, X_6036, X_6055, X_6070, X_6073, X_6074, X_6075, X_6082, X_6092, X_6101, X_6114, X_6115, X_6128, X_6130, X_6145, X_6147, X_6194, X_6196, X_6200, X_6204, X_6217, X_6218, X_6219, X_6220, X_6221, X_6224, X_6233, X_6235, X_6238, X_6244, X_6265, X_6266, X_6267, X_6276, X_6277, X_6278, X_6281, X_6285, X_6292, X_6323, X_6326, X_6339, X_6356, X_6396, X_6398, X_6407, X_6409, X_6410, X_6419, X_6420, X_6453, X_6462, X_6463, X_6467, X_6519, X_6528, X_6529, X_6596, X_6597, X_6601, X_6625, X_6680, X_6691, X_6700, X_6704, X_6705, X_6716, X_6735, X_6744, X_6752, X_6763, X_6765, X_6769, X_6777, X_6778, X_6781, X_7004, X_7017, X_7028, X_7049, X_7053, X_7059, X_7060, X_7069, X_7115, X_7120, X_7133, X_7139, X_7141, X_7149, X_7155, X_7160, X_7161, X_7162, X_7164, X_7165, X_7171, X_7261, X_7264, X_7270, X_7272, X_7280, X_7283, X_7284, X_7299, X_7320, X_7325, X_7326, X_7327, X_7329, X_7344, X_7345, X_7350, X_7351, X_7352, X_7365, X_7578, X_7587, X_7588, X_7589, X_7593, X_7595, X_7603, X_7605, X_7607, X_7615, X_7617, X_7618, X_7666, X_7676, X_7677, X_7678, X_7679, X_7688, X_7689, X_7693, X_7700, X_7702, X_7703, X_7704, X_7712, X_7720, X_7721, X_7723, X_7725, X_7726, X_7729, X_7730, X_7731, X_7739, X_7743, X_7751, X_7753, X_7757, X_7758, X_7766, X_7769, X_7776, X_7777, X_7778, X_7779, X_7782, X_7783, X_7786, X_7789, X_7792, X_7793, X_7794, X_7796, X_7798, X_7799, X_7801, X_7804, X_7808, X_7809, X_7813, X_7814, X_7815, X_7818, X_7820, X_7821, X_7822, X_7823, X_7828, X_7829, X_7830, X_7831, X_7832, X_7834, X_7835, X_7836, X_7838, X_7839, X_7844, X_7845, X_7846, X_7847, X_7851, X_7853, X_7854, X_7855, X_7856, X_7857, X_7858, X_7859, X_7862, X_7863, X_7864, X_7867, X_7873, X_7875, X_7877, X_7879, X_7883, X_7885, X_7888, X_7889, X_7891, X_7894, X_7899, X_7900, X_7902, X_7903, X_7905, X_7906, X_7910, X_7912, X_7913, X_7919, X_7921, X_7923, X_7925, X_7926, X_7932, X_7934, X_7935, X_7941, X_7957, X_7958, X_7987, X_7998, X_7999, X_8048, X_8068, X_8069, X_8075, X_8076, X_8077, X_8079, X_8080, X_8085, X_8086, X_8087, X_8088, X_8092, X_8095, X_8099, X_8100, X_8105, X_8106, X_8107, X_8108, X_8109, X_8110, X_8117, X_8118, X_8123, X_8124, X_8125, X_8126, X_8127, X_8128, X_8129, X_8130, X_8141, X_8144, X_8146, X_8172, X_8173, X_8176, X_8182, X_8193, X_8196, X_8197, X_8200, X_8203, X_8204, X_8207, X_8212, X_8213, X_8220, X_8221, X_8222, X_8223, X_8224, X_8225, X_8228, X_8230, X_8235, X_8251, X_8252, X_8253, X_8372, X_8377, X_8378, X_8379, X_8380, X_8381, X_8382, X_8426, X_8427, X_8431, X_8432, X_8433, X_8434, X_8435, X_8436, X_8437, X_8438, X_8440, X_8443, X_8444, X_8445, X_8446, X_8447, X_8448, X_8449, X_8450, X_8451, X_8452, X_8453, X_8454, X_8455, X_8456, X_8457, X_8458, X_8459, X_8460, X_8461, X_8462, X_8463, X_8480, X_8481, X_8482, X_8483, X_8484, X_8486, X_8487, X_8488, X_8489, X_8490, X_8491, X_8492, X_8494, X_8495, X_8496, X_8497, X_8498, X_8501, X_8502, X_8508, X_8509, X_8515, X_8516, X_8517, X_8527, X_8532, X_8533, X_8534, X_8535, X_8536, X_8538, X_8558, X_8582, X_8583, X_8588, X_8591, X_8596, X_8666, X_8674, X_8679, X_8705, X_8719, X_8724, X_8749, X_8750, X_8760, X_8778, X_8791, X_8795, X_8796, X_8797, X_8799, X_8809, X_8811, X_8818, X_8864, X_8866, X_8867, X_8868, X_8872, X_8878, X_8879, X_8888, X_8921, X_8925, X_8927, X_8957, X_8983, X_9085, X_9140, X_9147, X_9166, X_9180, X_9220, X_9221, X_9290, X_9300, X_9409, X_9525, X_9530, X_9534, X_9536, X_9538, X_9542, X_9552, X_9553, X_9583, X_9596, X_9597, X_9607, X_9623, X_9624, X_9627, X_9628, X_9629, X_9630, X_9638, X_9646, X_9647, X_9648, X_9649, X_9650, X_9651, X_9652, X_9653, X_9658, X_9659, X_9660, X_9661, X_9662, X_9663, X_9672, X_9673, X_9681, X_9692, X_9705, X_9722, X_9729, X_9749, X_9750, X_9751, X_9776, X_9783, X_9785, X_9787, X_9789, X_9791, X_9793, X_9795, X_9800, X_9803, X_9841, X_9845, X_9857, X_9874, X_9897, X_9911, X_9919, X_9934, X_9936, X_9942, X_9958, X_9959, X_9965, X_9967, X_9969, X_9973, X_10017, X_10042, X_10043, X_10050, X_10052, X_10055, X_10057, X_10058, X_10071, X_10073, X_10074, X_10088, X_10098, X_10101, X_10153, X_10155, X_10157, X_10164, X_10185, X_10187, X_10188, X_10200, X_10202, X_10264, X_10266, X_10267, X_10268, X_10269, X_10272, X_10293, X_10302, X_10305, X_10308, X_10309, X_10313, X_10316, X_10321, X_10340, X_10349, X_10362, X_10363, X_10369, X_10371, X_10391, X_10412, X_10415, X_10422, X_10423, X_10428, X_10434, X_10435, X_10444, X_10455, X_10464, X_10476, X_10479, X_10528, X_10529, X_10535, X_10546, X_10547, X_10548, X_10564, X_10583, X_10592, X_10593, X_10610, X_10620, X_10627, X_10634, X_10635, X_10645, X_10646, X_10680, X_10693, X_10707, X_10710, X_10718, X_10745, X_10749, X_10752, X_10759, X_10767, X_10768, X_10769, X_10771, X_10772, X_10773, X_10774, X_10775, X_10779, X_10780, X_10791, X_10797, X_10798, X_10799, X_10831, X_10833, X_10860, X_10863, X_10873, X_10877, X_10882, X_10884, X_10886, X_10887, X_10897, X_10898, X_10904, X_10905, X_10912, X_10915, X_10916, X_10923, X_10924, X_10927, X_10928, X_10944, X_10956, X_10957, X_10958, X_10965, X_10966, X_10977, X_10979, X_10980, X_10981, X_11005, X_11010, X_11012, X_11023, X_11036, X_11082, X_11087, X_11135, X_11136, X_11170, X_11171, X_11177, X_11194, X_11206, X_11220, X_11224, X_11230, X_11240, X_11270, X_11272, X_11280, X_11402, X_11405, X_11408, X_11409, X_11416, X_11417, X_11418, X_11420, X_11421, X_11423, X_11426, X_11449, X_11451, X_11454, X_11460, X_11461, X_11465, X_11468, X_11472, X_11485, X_11486, X_11495, X_11502, X_11512, X_11518, X_11552, X_11557, X_11560, X_11587, X_11599, X_11602, X_11603, X_11607, X_11615, X_11632, X_11646, X_11649, X_11663, X_11669, X_11698, X_11703, X_11755, X_11759, X_11764, X_11768, X_11773, X_11777, X_11782, X_11786, X_11792, X_11800, X_11822, X_11823, X_11828, X_11829, X_11869, X_11870, X_11873, X_11874, X_11891, X_11900, X_11905, X_11909, X_11916, X_11917, X_11930, X_11931, X_11947, X_11948, X_11990, X_11992, X_12005, X_12006, X_12038, X_12061, X_12063, X_12099, X_12117, X_12119, X_12120, X_12121, X_12123, X_12124, X_12139, X_12146, X_12150, X_12165, X_12166, X_12168, X_12169, X_12170, X_12171, X_12172, X_12175, X_12184, X_12185, X_12197, X_12219, X_12220, X_12223, X_12224, X_12226, X_12271, X_12272, X_12273, X_12280, X_12283, X_12284, X_12309, X_12310, X_12311, X_12312, X_12313, X_12314, X_12316, X_12331, X_12350, X_12354, X_12355, X_12369, X_12373, X_12374, X_12387, X_12388, X_12393, X_12394, X_12397, X_12458, X_12459, X_12488, X_12489, X_12490, X_12491, X_12494, X_12497, X_12506, X_12507, X_12515, X_12516, X_12517, X_12518, X_12519, X_12520, X_12521, X_12522, X_12523, X_12524, X_12527, X_12534, X_12547, X_12556, X_12577, X_12586, X_12587, X_12588, X_12589, X_12603, X_12604, X_12606, X_12609, X_12612, X_12613, X_12614, X_12615, X_12619, X_12620, X_12621, X_12622, X_12623, X_12624, X_12641, X_12648, X_12674, X_12676, X_12677, X_12681, X_12684, X_12689, X_12692, X_12693, X_12696, X_12697, X_12698, X_12703, X_12704, X_12723, X_12739, X_12743, X_12763, X_12773, X_12777, X_12835, X_12837, X_12849, X_12859, X_12863, X_12864, X_12896, X_12941, X_12942, X_12944, X_12945, X_12946, X_12947, X_12948, X_12949, X_12955, X_13007, X_13008, X_13009, X_13010, X_13023, X_13024, X_13039, X_13040, X_13075, X_13076, X_13077, X_13078, X_13079, X_13080, X_13081, X_13082, X_13089, X_13093, X_13171, X_13198, X_13234, X_13238, X_13249, X_13271, X_13321, X_13323, X_13330, X_13339, X_13340, X_13348, X_13353, X_13363, X_13364, X_13366, X_13380, X_13418, X_13423, X_13451, X_13463, X_13470, X_13482, X_13495, X_13508, X_13528, X_13532, X_13558, X_13622, X_32460, X_32461, X_37925, X_37991
 
 .. _X_4:
@@ -11,7 +12,9 @@ X_4
 
 .. rubric:: ORTHOCENTER
 
-``orthocenter(A, B, C) -> X_4`` • **Archimedes Lemmas 5 • Pappus VII** • **Kimberling** ``X(4)`` • **Search Value** :math:`(6, 9, 13)`: :math:`- \frac{403 \sqrt{35}}{420} \approx -5.676619410927`
+.. container:: etc-identity-bar
+
+   ``orthocenter(A, B, C) -> X_4`` • **Archimedes Lemmas 5 • Pappus VII** • **Kimberling** ``X(4)`` • **Search** :math:`(6,9,13)`: :math:`- \frac{403 \sqrt{35}}{420} \approx -5.676619410927`
 
 .. enunciation::
 
@@ -21,353 +24,350 @@ X_4
    :alt: X_4 — ORTHOCENTER
    :align: center
 
-   **X_4** (*ORTHOCENTER*) constructed at :g:`X_4 <X_4>` = :math:`\left(5,\; \frac{15}{4}\right)` in exact rational coordinates on the Heronian reference triangle :math:`(a, b, c) = (15, 13, 14)` over :math:`\mathbb{Q}` with vertices :g:`A <A>` = :math:`(0, 0)`, :g:`B <B>` = :math:`(14, 0)`, :g:`C <C>` = :math:`(5, 12)`, and area :math:`\Delta = 84`. Switch tabs above to inspect exact constructions on Right :math:`(3, 4, 5)`, Kepler :math:`(1, \sqrt{\phi}, \phi)`, and Kimberling :math:`(6, 9, 13)`.
+   **X_4** (*ORTHOCENTER*) constructed at :g:`X_4 <X_4>` = :math:`\left(5,\; \frac{15}{4}\right)` in exact rational coordinates on Heronian :math:`(15, 13, 14)` over :math:`\mathbb{Q}` with vertices :g:`A <A>` = :math:`(0, 0)`, :g:`B <B>` = :math:`(14, 0)`, :g:`C <C>` = :math:`(5, 12)`, area :math:`\Delta = 84`. Switch view modes or reference triangles above.
 
-.. admonition:: Constructed Elements
-   :class: note
+Homogeneous Coordinates
+-----------------------
 
-   * **Derived Triangle:** :term:`Orthic Triangle <orthic-triangle>` :g:`△H_aH_bH_c << H_a H_b H_c >>` — vertices :g:`H_a <H_a>`, :g:`H_b <H_b>`, :g:`H_c <H_c>` (Pedal triangle of Orthocenter X_4 (altitude feet))
-   * **Concurrence Lines:** :g:`A–H_a <[ A H_a ]>`, :g:`B–H_b <[ B H_b ]>`, :g:`C–H_c <[ C H_c ]>` concurring at :g:`X_4 <X_4>`
-
-Homogeneous Coordinates & Exact Invariants
-------------------------------------------
-
-.. figure:: 02_coordinates.svg
-   :alt: X_4 — Homogeneous Trilinear Distances and Barycentric Sub-Areas
-   :align: center
-
-   **Homogeneous Coordinates of X_4** on Heronian :math:`(15, 13, 14)`: orthogonal trilinear struts :math:`(\alpha, \beta, \gamma)` and signed barycentric sub-triangles :math:`(\Delta_a, \Delta_b, \Delta_c)`.
-
-* **Trilinear Coordinates** (:math:`\alpha : \beta : \gamma = 429 : 275 : 325`): Dropping orthogonal perpendiculars :g:`X_4T_a </ X_4 T_a />`, :g:`X_4T_b </ X_4 T_b />`, and :g:`X_4T_c </ X_4 T_c />` from :g:`X_4 <X_4>` to sidelines :g:`BC <[ B C ]>`, :g:`CA <[ C A ]>`, and :g:`AB <[ A B ]>` meets the sides at right-spread pedal feet :g:`T_a <T_a>` = :math:`\left(\frac{224}{25},\; \frac{168}{25}\right)`, :g:`T_b <T_b>` = :math:`\left(\frac{350}{169},\; \frac{840}{169}\right)`, and :g:`T_c <T_c>` = :math:`\left(5,\; 0\right)`. The orthogonal strut lengths on :math:`(15, 13, 14)` are :math:`d_a = \frac{99}{20}`, :math:`d_b = \frac{165}{52}`, and :math:`d_c = \frac{15}{4}`, reducing to homogeneous trilinears :math:`\alpha : \beta : \gamma = 429 : 275 : 325`.
-* **Barycentric Coordinates** (:math:`u : v : w = 99 : 55 : 70`): Joining :g:`X_4 <X_4>` to the vertices along :g:`X_4A </ X_4 A />`, :g:`X_4B </ X_4 B />`, and :g:`X_4C </ X_4 C />` forms signed sub-triangles :g:`△X_4BC << X_4 B C >>`, :g:`△X_4CA << X_4 C A >>`, and :g:`△X_4AB << X_4 A B >>` of exact signed areas :math:`\Delta_a = \frac{297}{8}`, :math:`\Delta_b = \frac{165}{8}`, and :math:`\Delta_c = \frac{105}{4}` (summing to :math:`\Delta_a + \Delta_b + \Delta_c = 84 = \Delta`), in homogeneous ratio :math:`u : v : w = 99 : 55 : 70`.
-
-.. list-table:: Exact Symbolic Coordinates & Invariants Across the Four Reference Triangles
+.. list-table::
    :header-rows: 1
-   :widths: 18 10 18 14 16 14 14
+   :class: etc-table etc-coord-table etc-mode-coordinates
+   :widths: 18 41 41
 
-   * - Reference Triangle
+   * - Trilinears
+     - Canonical
+     - Alternates
+   * - :g:`α </ X_4 T_a />`
+     - :math:`\sec A`
+     - :math:`\cos A - \sin B \sin C`
+
+       :math:`\cos A - \cos(B - C)`
+
+       :math:`\sin B \sin C - \cos(B - C)`
+
+       :math:`\csc A \tan 3A - 2 \sec 3A`
+
+       :math:`4 \cos A - \cos(B - C) - 3 \sin B \sin C`
+
+       :math:`\cos A + \cos(B - C) + 5 \cos B \cos C - 2 \sin B \sin C`
+   * - :g:`β </ X_4 T_b />`
+     - :math:`\sec B`
+     - :math:`\cos B - \sin C \sin A`
+
+       :math:`\cos B - \cos(C - A)`
+
+       :math:`\sin C \sin A - \cos(C - A)`
+
+       :math:`\csc B \tan 3B - 2 \sec 3B`
+
+       :math:`4 \cos B - \cos(C - A) - 3 \sin C \sin A`
+
+       :math:`\cos B + \cos(C - A) + 5 \cos C \cos A - 2 \sin C \sin A`
+   * - :g:`γ </ X_4 T_c />`
+     - :math:`\sec C`
+     - :math:`\cos C - \sin A \sin B`
+
+       :math:`\cos C - \cos(A - B)`
+
+       :math:`\sin A \sin B - \cos(A - B)`
+
+       :math:`\csc C \tan 3C - 2 \sec 3C`
+
+       :math:`4 \cos C - \cos(A - B) - 3 \sin A \sin B`
+
+       :math:`\cos C + \cos(A - B) + 5 \cos A \cos B - 2 \sin A \sin B`
+
+.. list-table::
+   :header-rows: 1
+   :class: etc-table etc-coord-table etc-mode-coordinates
+   :widths: 18 41 41
+
+   * - Barycentrics
+     - Canonical
+     - Alternates
+   * - :g:`u << X_4 B C >>`
+     - :math:`1/S_{A}`
+     - :math:`\tan A`
+
+       :math:`1/(b^{2} + c^{2} - a^{2})`
+   * - :g:`v << X_4 C A >>`
+     - :math:`1/S_{B}`
+     - :math:`\tan B`
+
+       :math:`1/(c^{2} + a^{2} - b^{2})`
+   * - :g:`w << X_4 A B >>`
+     - :math:`1/S_{C}`
+     - :math:`\tan C`
+
+       :math:`1/(a^{2} + b^{2} - c^{2})`
+
+.. list-table::
+   :header-rows: 1
+   :class: etc-table etc-coord-table etc-mode-coordinates
+   :widths: 18 41 41
+
+   * - Tripolars
+     - Canonical
+     - Alternates
+   * - :g:`PA </ X_4 A />`
+     - :math:`|\cos A|`
+     - :math:`|a(b^{2} + c^{2} - a^{2})|`
+   * - :g:`PB </ X_4 B />`
+     - :math:`|\cos B|`
+     - :math:`|b(c^{2} + a^{2} - b^{2})|`
+   * - :g:`PC </ X_4 C />`
+     - :math:`|\cos C|`
+     - :math:`|c(a^{2} + b^{2} - c^{2})|`
+
+.. list-table:: Canonical Triangle Symbolic Invariants
+   :header-rows: 1
+   :class: etc-table etc-mode-four-triangles
+
+   * - Triangle
      - Field
-     - Cartesian :math:`(x, y)`
-     - Trilinears :math:`\alpha : \beta : \gamma`
-     - Barycentrics :math:`u : v : w`
-     - Sub-Areas :math:`(\Delta_a, \Delta_b, \Delta_c)`
+     - Cartesian
+     - Trilinears
+     - Barycentrics
+     - Sub-Areas
      - Directed Trilinear :math:`(d_a,\, Q_a)`
-   * - **Heronian** :math:`(15, 13, 14)`
+   * - :g:`Heronian (15, 13, 14) <panel-heronian>`
      - :math:`\mathbb{Q}`
-     - :math:`\left(5,\; \frac{15}{4}\right)`
-     - :math:`429 : 275 : 325`
-     - :math:`99 : 55 : 70`
-     - :math:`\left(\frac{297}{8},\; \frac{165}{8},\; \frac{105}{4}\right)`
-     - :math:`\frac{99}{20}\; (Q_a = \frac{9801}{400})`
-   * - **Right** :math:`(3, 4, 5)`
+     - :math:`x = 5`
+
+       :math:`y = \frac{15}{4}`
+     - :math:`\alpha = 429`
+
+       :math:`\beta = 275`
+
+       :math:`\gamma = 325`
+     - :math:`u = 99`
+
+       :math:`v = 55`
+
+       :math:`w = 70`
+     - :math:`\Delta_a = \frac{297}{8}`
+
+       :math:`\Delta_b = \frac{165}{8}`
+
+       :math:`\Delta_c = \frac{105}{4}`
+     - :math:`d_a = \frac{99}{20}`
+
+       :math:`Q_a = \frac{9801}{400}`
+   * - :g:`Right (3, 4, 5) <panel-right>`
      - :math:`\mathbb{Q}`
-     - :math:`\left(\frac{16}{5},\; \frac{12}{5}\right)`
-     - :math:`0 : 0 : 1`
-     - :math:`0 : 0 : 1`
-     - :math:`\left(0,\; 0,\; 6\right)`
-     - :math:`0\; (Q_a = 0)`
-   * - **Kepler** :math:`(1, \sqrt{\phi}, \phi)`
+     - :math:`x = 0`
+
+       :math:`y = 0`
+     - :math:`\alpha = 1`
+
+       :math:`\beta = 0`
+
+       :math:`\gamma = 0`
+     - :math:`u = 1`
+
+       :math:`v = 0`
+
+       :math:`w = 0`
+     - :math:`\Delta_a = 6`
+
+       :math:`\Delta_b = 0`
+
+       :math:`\Delta_c = 0`
+     - :math:`d_a = \frac{12}{5}`
+
+       :math:`Q_a = \frac{144}{25}`
+   * - :g:`Kepler (1, √φ, φ) <panel-kepler>`
      - :math:`\mathbb{Q}(\sqrt{\phi})`
-     - :math:`\left(1,\; \sqrt{\phi} \left(\phi - 1\right)\right)`
-     - :math:`0 : 0 : 1`
-     - :math:`0 : 0 : 1`
-     - :math:`\left(0,\; 0,\; \frac{\sqrt{\phi}}{2}\right)`
-     - :math:`0\; (Q_a = 0)`
-   * - **Kimberling** :math:`(6, 9, 13)`
+     - :math:`x = 0`
+
+       :math:`y = 0`
+     - :math:`\alpha = 1`
+
+       :math:`\beta = 0`
+
+       :math:`\gamma = 0`
+     - :math:`u = 1`
+
+       :math:`v = 0`
+
+       :math:`w = 0`
+     - :math:`\Delta_a = \frac{\sqrt{\phi}}{2}`
+
+       :math:`\Delta_b = 0`
+
+       :math:`\Delta_c = 0`
+     - :math:`d_a = \sqrt{\phi} \left(\phi - 1\right)`
+
+       :math:`Q_a = \phi - 1`
+   * - :g:`Kimberling (6, 9, 13) <panel-kimberling>`
      - :math:`\mathbb{Q}(\sqrt{35})`
-     - :math:`\left(\frac{107}{13},\; \frac{3317 \sqrt{35}}{1820}\right)`
-     - :math:`15717 : 18083 : -29853`
-     - :math:`-806 : -1391 : 3317`
-     - :math:`\left(- \frac{403 \sqrt{35}}{140},\; - \frac{1391 \sqrt{35}}{280},\; \frac{3317 \sqrt{35}}{280}\right)`
-     - :math:`- \frac{403 \sqrt{35}}{420}\; (Q_a = \frac{162409}{5040})`
+     - :math:`x = \frac{107}{13}`
 
-.. signature:: center
+       :math:`y = \frac{3317 \sqrt{35}}{1820}`
+     - :math:`\alpha = 15717`
 
-   | **Trilinears:** :math:`\sec A : \sec B : \sec C`
-   | **Barycentrics:** :math:`1/S_{A} : 1/S_{B} : 1/S_{C}`
-   | **Tripolars:** :math:`|\cos A| : :`
-   | **Search Value (6, 9, 13):** :math:`- \frac{403 \sqrt{35}}{420} \approx -5.676619410927`
+       :math:`\beta = 18083`
 
-.. collapse:: Alternate Coordinates
-   :badge: 9 forms
+       :math:`\gamma = -29853`
+     - :math:`u = -806`
 
-   * **Trilinears:** :math:`\cos A - \sin B \sin C : \cos B - \sin C \sin A : \cos C - \sin A \sin B`
-   * **Trilinears:** :math:`\cos A - \cos(B - C) : \cos B - \cos(C - A) : \cos C - \cos(A - B)`
-   * **Trilinears:** :math:`\sin B \sin C - \cos(B - C) : \sin C \sin A - \cos(C - A) : \sin A \sin B - \cos(A - B)`
-   * **Trilinears:** :math:`\csc A \tan 3A - 2 \sec 3A : :`
-   * **Trilinears:** :math:`4 \cos A - \cos(B - C) - 3 \sin B \sin C : :`
-   * **Trilinears:** :math:`\cos A + \cos(B - C) + 5 \cos B \cos C - 2 \sin B \sin C : :`
-   * **Barycentrics:** :math:`\tan A : \tan B : \tan C`
-   * **Barycentrics:** :math:`1/(b^{2} + c^{2} - a^{2}) : 1/(c^{2} + a^{2} - b^{2}) : 1/(a^{2} + b^{2} - c^{2})`
-   * **Tripolars:** :math:`|a(b^{2} + c^{2} - a^{2})| : :`
+       :math:`v = -1391`
+
+       :math:`w = 3317`
+     - :math:`\Delta_a = - \frac{403 \sqrt{35}}{140}`
+
+       :math:`\Delta_b = - \frac{1391 \sqrt{35}}{280}`
+
+       :math:`\Delta_c = \frac{3317 \sqrt{35}}{280}`
+     - :math:`d_a = - \frac{403 \sqrt{35}}{420}`
+
+       :math:`Q_a = \frac{162409}{5040}`
+   * - :g:`Golden (φ, φ, 1) <panel-golden>`
+     - :math:`\mathbb{Q}(\sqrt{5 + 2\sqrt{5}})`
+     - :math:`x = \frac{1}{2}`
+
+       :math:`y = - \frac{\sqrt{5} \sqrt{2 \sqrt{5} + 5}}{5} + \frac{\sqrt{2 \sqrt{5} + 5}}{2}`
+     - :math:`\alpha = \sqrt{5} + 3`
+
+       :math:`\beta = \sqrt{5} + 3`
+
+       :math:`\gamma = 2`
+     - :math:`u = 2 + \sqrt{5}`
+
+       :math:`v = 2 + \sqrt{5}`
+
+       :math:`w = 1`
+     - :math:`\Delta_a = \frac{\sqrt{5} \sqrt{2 \sqrt{5} + 5}}{20}`
+
+       :math:`\Delta_b = \frac{\sqrt{5} \sqrt{2 \sqrt{5} + 5}}{20}`
+
+       :math:`\Delta_c = - \frac{\sqrt{5} \sqrt{2 \sqrt{5} + 5}}{10} + \frac{\sqrt{2 \sqrt{5} + 5}}{4}`
+     - :math:`d_a = - \frac{\sqrt{5} \sqrt{2 \sqrt{5} + 5}}{20} + \frac{\sqrt{2 \sqrt{5} + 5}}{4}`
+
+       :math:`Q_a = \frac{\sqrt{5}}{40} + \frac{1}{8}`
+   * - :g:`Gnomon (1, 1, φ) <panel-gnomon>`
+     - :math:`\mathbb{Q}(\sqrt{5 + 2\sqrt{5}})`
+     - :math:`x = \frac{1}{4} + \frac{\sqrt{5}}{4}`
+
+       :math:`y = \frac{\sqrt{5} \sqrt{2 \sqrt{5} + 5}}{20} + \frac{\sqrt{2 \sqrt{5} + 5}}{4}`
+     - :math:`\alpha = - \sqrt{5} - 1`
+
+       :math:`\beta = - \sqrt{5} - 1`
+
+       :math:`\gamma = 4 + 2 \sqrt{5}`
+     - :math:`u = - \sqrt{5} - 1`
+
+       :math:`v = - \sqrt{5} - 1`
+
+       :math:`w = 3 \sqrt{5} + 7`
+     - :math:`\Delta_a = - \frac{\sqrt{2 \sqrt{5} + 5}}{8} + \frac{\sqrt{5} \sqrt{2 \sqrt{5} + 5}}{40}`
+
+       :math:`\Delta_b = - \frac{\sqrt{2 \sqrt{5} + 5}}{8} + \frac{\sqrt{5} \sqrt{2 \sqrt{5} + 5}}{40}`
+
+       :math:`\Delta_c = \frac{\sqrt{2 \sqrt{5} + 5}}{8} + \frac{3 \sqrt{5} \sqrt{2 \sqrt{5} + 5}}{40}`
+     - :math:`d_a = - \frac{\sqrt{2 \sqrt{5} + 5}}{4} + \frac{\sqrt{5} \sqrt{2 \sqrt{5} + 5}}{20}`
+
+       :math:`Q_a = \frac{\sqrt{5}}{40} + \frac{1}{8}`
+   * - **Equilateral (2, 2, 2)**
+     - :math:`\mathbb{Q}(\sqrt{3})`
+     - :math:`x = 1`
+
+       :math:`y = \frac{\sqrt{3}}{3}`
+     - :math:`\alpha = 1`
+
+       :math:`\beta = 1`
+
+       :math:`\gamma = 1`
+     - :math:`u = 1`
+
+       :math:`v = 1`
+
+       :math:`w = 1`
+     - :math:`\Delta_a = \frac{\sqrt{3}}{3}`
+
+       :math:`\Delta_b = \frac{\sqrt{3}}{3}`
+
+       :math:`\Delta_c = \frac{\sqrt{3}}{3}`
+     - :math:`d_a = \frac{\sqrt{3}}{3}`
+
+       :math:`Q_a = \frac{1}{3}`
+
+.. container:: etc-mode-four-triangles
+
+   Across the canonical algebraic number fields — :g:`Heronian (15, 13, 14) <heronian-X_4>` over :math:`\mathbb{Q}` (:math:`X_{4} = \left(5,\; \frac{15}{4}\right)`), :g:`Right (3, 4, 5) <right-X_4>` over :math:`\mathbb{Q}` (:math:`X_{4} = \left(0,\; 0\right)`), :g:`Kepler (1, √φ, φ) <kepler-X_4>` over :math:`\mathbb{Q}(\sqrt{\phi})` (:math:`X_{4} = \left(0,\; 0\right)`), :g:`Kimberling (6, 9, 13) <kimberling-X_4>` over :math:`\mathbb{Q}(\sqrt{35})` (:math:`X_{4} = \left(\frac{107}{13},\; \frac{3317 \sqrt{35}}{1820}\right)`), :g:`Golden (φ, φ, 1) <golden-X_4>` over :math:`\mathbb{Q}(\sqrt{5 + 2\sqrt{5}})`, and :g:`Gnomon (1, 1, φ) <gnomon-X_4>` over :math:`\mathbb{Q}(\sqrt{5 + 2\sqrt{5}})` — on right-angled triangles (:math:`\angle A = 90^\circ`), **X_4** coincides exactly with the base right-angle vertex :g:`A <right-A>` / :g:`A <kepler-A>` (:math:`1 : 0 : 0`), whereas on acute :g:`Heronian <panel-heronian>` and :g:`Golden <panel-golden>` it lies strictly interior and on obtuse :g:`Kimberling <panel-kimberling>` and :g:`Gnomon <panel-gnomon>` it crosses into the exterior. On the **Equilateral (2, 2, 2)** limit over :math:`\mathbb{Q}(\sqrt{3})`, **X_4** coalesces to the symmetry center :math:`O = \left(1,\; \frac{\sqrt{3}}{3}\right)`.
+
+.. list-table:: Coordinate Decomposition of X_4 on Heronian (15, 13, 14)
+   :header-rows: 1
+   :class: etc-table etc-mode-coordinates
+
+   * - Sideline
+     - Pedal Foot
+     - Trilinear Strut
+     - Sub-Triangle
+     - Signed Area
+   * - :g:`BC <[ B C ]>` (:math:`a = 15`)
+     - :g:`T_a <T_a>` = :math:`\left(\frac{224}{25},\; \frac{168}{25}\right)`
+     - :g:`X_4T_a </ X_4 T_a />` (:math:`d_a = \frac{99}{20},\; Q = \frac{9801}{400}`)
+     - :g:`△X_4BC << X_4 B C >>`
+     - :math:`\Delta_a = \frac{297}{8}`
+   * - :g:`CA <[ C A ]>` (:math:`b = 13`)
+     - :g:`T_b <T_b>` = :math:`\left(\frac{350}{169},\; \frac{840}{169}\right)`
+     - :g:`X_4T_b </ X_4 T_b />` (:math:`d_b = \frac{165}{52},\; Q = \frac{27225}{2704}`)
+     - :g:`△X_4CA << X_4 C A >>`
+     - :math:`\Delta_b = \frac{165}{8}`
+   * - :g:`AB <[ A B ]>` (:math:`c = 14`)
+     - :g:`T_c <T_c>` = :math:`\left(5,\; 0\right)`
+     - :g:`X_4T_c </ X_4 T_c />` (:math:`d_c = \frac{15}{4},\; Q = \frac{225}{16}`)
+     - :g:`△X_4AB << X_4 A B >>`
+     - :math:`\Delta_c = \frac{105}{4}`
+
+.. container:: etc-mode-coordinates
+
+   Barycentric sum :math:`\Delta_a + \Delta_b + \Delta_c = 84 = \Delta` (:math:`u : v : w = 99 : 55 : 70`); trilinear ratio :math:`\alpha : \beta : \gamma = 429 : 275 : 325`.
+
+Constructed Elements
+--------------------
+
+.. list-table:: Constructed Geometric Elements
+   :header-rows: 1
+   :class: etc-table
+   :widths: 24 38 38
+
+   * - Role
+     - Elements
+     - Property
+   * - **Derived Triangle**
+     - :term:`Orthic Triangle <orthic-triangle>` :g:`△H_aH_bH_c << H_a H_b H_c >>`
+     - vertices :g:`H_a <H_a>`, :g:`H_b <H_b>`, :g:`H_c <H_c>` (Pedal triangle of Orthocenter X_4 (altitude feet))
+   * - **Concurrence Lines**
+     - :g:`A–H_a <[ A H_a ]>`, :g:`B–H_b <[ B H_b ]>`, :g:`C–H_c <[ C H_c ]>` concurring at :g:`X_4 <X_4>`
+     - —
 
 .. collapse:: Linear Combinations
    :badge: 2 combinations
 
-   * :ref:`X_4 <X_4>` = :math:`(1 + J)` :ref:`X_1113 <X_1113>` + :math:`(1 - J)` :ref:`X_1114 <X_1114>`
-   * :ref:`X_4 <X_4>` = :math:`(\tan A)` :g:`A <A>` + :math:`(\tan B)` :g:`B <B>` + :math:`(\tan C)` :g:`C <C>`, where :g:`A <A>`, :g:`B <B>`, :g:`C <C>` are the angles and :g:`A <A>`, :g:`B <B>`, :g:`C <C>` are the vertices
+   .. list-table:: Barycentric & Vector Linear Combinations of X_4
+      :header-rows: 1
+      :class: etc-table
+      :widths: 55 45
 
-Incident Central Lines
-----------------------
+      * - Expression
+        - Definitions
+      * - :ref:`X_4 <X_4>` = :math:`(1 + J)` :ref:`X_1113 <X_1113>` + :math:`(1 - J)` :ref:`X_1114 <X_1114>`
+        - —
+      * - :ref:`X_4 <X_4>` = :math:`(\tan A)` :g:`A <A>` + :math:`(\tan B)` :g:`B <B>` + :math:`(\tan C)` :g:`C <C>`
+        - where :g:`A <A>`, :g:`B <B>`, :g:`C <C>` are the angles and :g:`A <A>`, :g:`B <B>`, :g:`C <C>` are the vertices
 
-.. figure:: 03_central_lines.svg
-   :alt: X_4 — Incident Central Lines
-   :align: center
-
-   **Principal Central Lines Through X_4** on Heronian :math:`(15, 13, 14)`.
-
-* **Euler Line** :g:`{2, 3, 4, 5} <{ 2, 3 }>` — collinear axis through :g:`X_2 <X_2>` (:ref:`Centroid <X_2>`, :math:`\left(\frac{19}{3},\; 4\right)`), :g:`X_3 <X_3>` (:ref:`Circumcenter <X_3>`, :math:`\left(7,\; \frac{33}{8}\right)`), :g:`X_4 <X_4>`, :g:`X_5 <X_5>` (:ref:`Nine-Point Center <X_5>`, :math:`\left(6,\; \frac{63}{16}\right)`), with exact Cartesian equation :math:`3 x - 16 y + 45 = 0` (spread :math:`\frac{9}{265}` relative to :g:`AB <[ A B ]>`).
-* **Orthocenter–Mittenpunkt–Spieker Axis** :g:`{4, 9, 10, 19} <{ 9, 10 }>` — collinear axis through :g:`X_4 <X_4>`, :g:`X_9 <X_9>` (:ref:`Mittenpunkt <X_9>`, :math:`\left(\frac{973}{146},\; \frac{294}{73}\right)`), :g:`X_10 <X_10>` (:ref:`Spieker Center <X_10>`, :math:`\left(\frac{13}{2},\; 4\right)`), :g:`X_19 <X_19>` (:ref:`Clawson Point <X_19>`, :math:`\left(\frac{497}{106},\; \frac{196}{53}\right)`), with exact Cartesian equation :math:`2 x - 12 y + 35 = 0` (spread :math:`\frac{1}{37}` relative to :g:`AB <[ A B ]>`).
-* **Incenter–Perspector Of The Orthic And Intangents Triangles Central Line** :g:`{1, 4, 33} <{ 1, 33 }>` — collinear axis through :g:`X_1 <X_1>` (:ref:`Incenter <X_1>`, :math:`\left(6,\; 4\right)`), :g:`X_4 <X_4>`, :g:`X_33 <X_33>` (:ref:`Perspector Of The Orthic And Intangents Triangles <X_33>`, :math:`\left(\frac{1634}{307},\; \frac{1176}{307}\right)`), with exact Cartesian equation :math:`x - 4 y + 10 = 0` (spread :math:`\frac{1}{17}` relative to :g:`AB <[ A B ]>`).
-* **Feuerbach Point–Exsimilicenter(Circumcircle, Incircle) Central Line** :g:`{4, 11, 56} <{ 11, 56 }>` — collinear axis through :g:`X_4 <X_4>`, :g:`X_11 <X_11>` (:ref:`Feuerbach Point <X_11>`, :math:`\left(6,\; 8\right)`), :g:`X_56 <X_56>` (:ref:`Exsimilicenter(Circumcircle, Incircle) <X_56>`, :math:`\left(\frac{166}{33},\; \frac{128}{33}\right)`), with exact Cartesian equation :math:`17 x - 4 y - 70 = 0` (spread :math:`\frac{289}{305}` relative to :g:`AB <[ A B ]>`).
-* **Nagel Point–Isogonal Conjugate Of X_28 Central Line** :g:`{4, 8, 72} <{ 8, 72 }>` — collinear axis through :g:`X_4 <X_4>`, :g:`X_8 <X_8>` (:ref:`Nagel Point <X_8>`, :math:`\left(7,\; 4\right)`), :g:`X_72 <X_72>` (:ref:`Isogonal Conjugate Of X_28 <X_72>`, :math:`\left(\frac{487}{65},\; \frac{264}{65}\right)`), with exact Cartesian equation :math:`x - 8 y + 25 = 0` (spread :math:`\frac{1}{65}` relative to :g:`AB <[ A B ]>`).
-
-.. container:: note-item
-
-   :ref:`X_4 <X_4>` lies on the Thomson, Darboux, Napoleon, Lucas, McCay, and Neuberg cubics, and the Darboux septic.
-
-.. collapse:: Full Incident Central Line Catalog
-   :badge: 953 lines
-   :class: line-catalog
-
-   {:ref:`1 <X_1>`, :ref:`33 <X_33>`}, {:ref:`2 <X_2>`, :ref:`3 <X_3>`}, {:ref:`6 <X_6>`, :ref:`53 <X_53>`}, {:ref:`7 <X_7>`, :ref:`273 <X_273>`}, {:ref:`8 <X_8>`, :ref:`72 <X_72>`}, {:ref:`9 <X_9>`, :ref:`10 <X_10>`}, {:ref:`11 <X_11>`, :ref:`56 <X_56>`}, {:ref:`12 <X_12>`, :ref:`55 <X_55>`}, {:ref:`13 <X_13>`, :ref:`61 <X_61>`}, {:ref:`14 <X_14>`, :ref:`62 <X_62>`}, {:ref:`15 <X_15>`, :ref:`17 <X_17>`}, {:ref:`16 <X_16>`, :ref:`18 <X_18>`}, {:ref:`31 <X_31>`, :ref:`3072 <X_3072>`}, {:ref:`32 <X_32>`, :ref:`98 <X_98>`}, {:ref:`35 <X_35>`, :ref:`498 <X_498>`}, {:ref:`36 <X_36>`, :ref:`499 <X_499>`}, {:ref:`37 <X_37>`, :ref:`1841 <X_1841>`}, {:ref:`39 <X_39>`, :ref:`232 <X_232>`}, {:ref:`41 <X_41>`, :ref:`2202 <X_2202>`}, {:ref:`42 <X_42>`, :ref:`1860 <X_1860>`}, {:ref:`46 <X_46>`, :ref:`90 <X_90>`}, {:ref:`48 <X_48>`, :ref:`1881 <X_1881>`}, {:ref:`49 <X_49>`, :ref:`156 <X_156>`}, {:ref:`50 <X_50>`, 9220}, {:ref:`51 <X_51>`, :ref:`185 <X_185>`}, {:ref:`52 <X_52>`, :ref:`68 <X_68>`}, {:ref:`54 <X_54>`, :ref:`184 <X_184>`}, {:ref:`57 <X_57>`, :ref:`84 <X_84>`}, {:ref:`58 <X_58>`, 5292}, {:ref:`63 <X_63>`, 5709}, {:ref:`64 <X_64>`, :ref:`459 <X_459>`}, {:ref:`65 <X_65>`, :ref:`158 <X_158>`}, {:ref:`66 <X_66>`, 9969}, {:ref:`67 <X_67>`, :ref:`338 <X_338>`}, {:ref:`69 <X_69>`, :ref:`76 <X_76>`}, {:ref:`74 <X_74>`, :ref:`107 <X_107>`}, {:ref:`75 <X_75>`, 12689}, {:ref:`78 <X_78>`, :ref:`908 <X_908>`}, {:ref:`79 <X_79>`, :ref:`1784 <X_1784>`}, {:ref:`80 <X_80>`, :ref:`1825 <X_1825>`}, {:ref:`81 <X_81>`, 5707}, {:ref:`83 <X_83>`, :ref:`182 <X_182>`}, {:ref:`85 <X_85>`, 4872}, {:ref:`93 <X_93>`, :ref:`562 <X_562>`}, {:ref:`94 <X_94>`, :ref:`143 <X_143>`}, {:ref:`95 <X_95>`, 8797}, {:ref:`96 <X_96>`, :ref:`231 <X_231>`}, {:ref:`99 <X_99>`, :ref:`114 <X_114>`}, {:ref:`100 <X_100>`, :ref:`119 <X_119>`}, {:ref:`101 <X_101>`, :ref:`118 <X_118>`}, {:ref:`102 <X_102>`, :ref:`124 <X_124>`}, {:ref:`103 <X_103>`, :ref:`116 <X_116>`}, {:ref:`105 <X_105>`, 5511}, {:ref:`106 <X_106>`, 5510}, {:ref:`109 <X_109>`, :ref:`117 <X_117>`}, {:ref:`110 <X_110>`, :ref:`113 <X_113>`}, {:ref:`111 <X_111>`, :ref:`1560 <X_1560>`}, {:ref:`120 <X_120>`, :ref:`1292 <X_1292>`}, {:ref:`121 <X_121>`, :ref:`1293 <X_1293>`}, {:ref:`122 <X_122>`, :ref:`1294 <X_1294>`}, {:ref:`123 <X_123>`, :ref:`1295 <X_1295>`}, {:ref:`126 <X_126>`, :ref:`1296 <X_1296>`}, {:ref:`127 <X_127>`, :ref:`1289 <X_1289>`}, {:ref:`128 <X_128>`, :ref:`930 <X_930>`}, {:ref:`129 <X_129>`, :ref:`1303 <X_1303>`}, {:ref:`130 <X_130>`, :ref:`1298 <X_1298>`}, {:ref:`131 <X_131>`, :ref:`135 <X_135>`}, {:ref:`137 <X_137>`, :ref:`933 <X_933>`}, {:ref:`141 <X_141>`, :ref:`1350 <X_1350>`}, {:ref:`142 <X_142>`, 5732}, {:ref:`144 <X_144>`, :ref:`2894 <X_2894>`}, {:ref:`145 <X_145>`, :ref:`149 <X_149>`}, {:ref:`147 <X_147>`, :ref:`148 <X_148>`}, {:ref:`150 <X_150>`, :ref:`152 <X_152>`}, {:ref:`151 <X_151>`, :ref:`2818 <X_2818>`}, {:ref:`154 <X_154>`, 8888}, {:ref:`155 <X_155>`, :ref:`254 <X_254>`}, {:ref:`157 <X_157>`, 5593}, {:ref:`160 <X_160>`, :ref:`3613 <X_3613>`}, {:ref:`162 <X_162>`, :ref:`270 <X_270>`}, {:ref:`165 <X_165>`, :ref:`1698 <X_1698>`}, {:ref:`171 <X_171>`, :ref:`601 <X_601>`}, {:ref:`175 <X_175>`, 10905}, {:ref:`176 <X_176>`, 10904}, {:ref:`177 <X_177>`, 8095}, {:ref:`181 <X_181>`, 9553}, {:ref:`183 <X_183>`, :ref:`3785 <X_3785>`}, {:ref:`187 <X_187>`, 7607}, {:ref:`189 <X_189>`, 5908}, {:ref:`191 <X_191>`, :ref:`2949 <X_2949>`}, {:ref:`193 <X_193>`, :ref:`1351 <X_1351>`}, {:ref:`195 <X_195>`, :ref:`399 <X_399>`}, {:ref:`200 <X_200>`, 6769}, {:ref:`201 <X_201>`, 7069}, {:ref:`204 <X_204>`, :ref:`1453 <X_1453>`}, {:ref:`210 <X_210>`, 7957}, {:ref:`212 <X_212>`, :ref:`3074 <X_3074>`}, {:ref:`214 <X_214>`, 12119}, {:ref:`215 <X_215>`, 9652}, {:ref:`216 <X_216>`, 8799}, {:ref:`218 <X_218>`, :ref:`294 <X_294>`}, {:ref:`230 <X_230>`, :ref:`3053 <X_3053>`}, {:ref:`233 <X_233>`, 10979}, {:ref:`236 <X_236>`, 8128}, {:ref:`238 <X_238>`, :ref:`602 <X_602>`}, {:ref:`240 <X_240>`, :ref:`256 <X_256>`}, {:ref:`250 <X_250>`, :ref:`1553 <X_1553>`}, {:ref:`251 <X_251>`, 8879}, {:ref:`252 <X_252>`, :ref:`1487 <X_1487>`}, {:ref:`255 <X_255>`, :ref:`1935 <X_1935>`}, {:ref:`276 <X_276>`, :ref:`327 <X_327>`}, {:ref:`279 <X_279>`, :ref:`1565 <X_1565>`}, {:ref:`280 <X_280>`, :ref:`2968 <X_2968>`}, {:ref:`282 <X_282>`, :ref:`3345 <X_3345>`}, {:ref:`284 <X_284>`, 5747}, {:ref:`290 <X_290>`, 6528}, {:ref:`298 <X_298>`, 5864}, {:ref:`299 <X_299>`, 5865}, {:ref:`312 <X_312>`, 7270}, {:ref:`325 <X_325>`, :ref:`1975 <X_1975>`}, {:ref:`333 <X_333>`, 5788}, {:ref:`339 <X_339>`, 10749}, {:ref:`341 <X_341>`, 12397}, {:ref:`345 <X_345>`, 7283}, {:ref:`346 <X_346>`, :ref:`3695 <X_3695>`}, {:ref:`347 <X_347>`, 6356}, {:ref:`348 <X_348>`, 5088}, {:ref:`354 <X_354>`, :ref:`3296 <X_3296>`}, {:ref:`371 <X_371>`, :ref:`485 <X_485>`}, {:ref:`372 <X_372>`, :ref:`486 <X_486>`}, {:ref:`373 <X_373>`, 11465}, {:ref:`385 <X_385>`, 7823}, {:ref:`386 <X_386>`, :ref:`2051 <X_2051>`}, {:ref:`390 <X_390>`, :ref:`495 <X_495>`}, {:ref:`391 <X_391>`, :ref:`2322 <X_2322>`}, {:ref:`394 <X_394>`, :ref:`1217 <X_1217>`}, {:ref:`477 <X_477>`, :ref:`1304 <X_1304>`}, {:ref:`484 <X_484>`, :ref:`3460 <X_3460>`}, {:ref:`487 <X_487>`, :ref:`489 <X_489>`}, {:ref:`488 <X_488>`, :ref:`490 <X_490>`}, {:ref:`493 <X_493>`, 8212}, {:ref:`494 <X_494>`, 8213}, {:ref:`496 <X_496>`, :ref:`999 <X_999>`}, {:ref:`512 <X_512>`, :ref:`879 <X_879>`}, {:ref:`518 <X_518>`, 6601}, {:ref:`519 <X_519>`, :ref:`3680 <X_3680>`}, {:ref:`523 <X_523>`, :ref:`1552 <X_1552>`}, {:ref:`524 <X_524>`, 5485}, {:ref:`525 <X_525>`, :ref:`2435 <X_2435>`}, {:ref:`527 <X_527>`, 5735}, {:ref:`528 <X_528>`, :ref:`3913 <X_3913>`}, {:ref:`529 <X_529>`, :ref:`3813 <X_3813>`}, {:ref:`532 <X_532>`, 5862}, {:ref:`533 <X_533>`, 5863}, {:ref:`535 <X_535>`, 8666}, {:ref:`538 <X_538>`, 7758}, {:ref:`539 <X_539>`, 9936}, {:ref:`541 <X_541>`, 9140}, {:ref:`542 <X_542>`, :ref:`576 <X_576>`}, {:ref:`543 <X_543>`, 5503}, {:ref:`544 <X_544>`, 10710}, {:ref:`551 <X_551>`, 9624}, {:ref:`566 <X_566>`, 9221}, {:ref:`567 <X_567>`, 7578}, {:ref:`569 <X_569>`, :ref:`1179 <X_1179>`}, {:ref:`572 <X_572>`, :ref:`1474 <X_1474>`}, {:ref:`574 <X_574>`, :ref:`1506 <X_1506>`}, {:ref:`575 <X_575>`, :ref:`598 <X_598>`}, {:ref:`579 <X_579>`, :ref:`1713 <X_1713>`}, {:ref:`580 <X_580>`, :ref:`1714 <X_1714>`}, {:ref:`584 <X_584>`, 8818}, {:ref:`590 <X_590>`, :ref:`1151 <X_1151>`}, {:ref:`595 <X_595>`, 8750}, {:ref:`603 <X_603>`, :ref:`3075 <X_3075>`}, {:ref:`604 <X_604>`, 7120}, {:ref:`608 <X_608>`, :ref:`1518 <X_1518>`}, {:ref:`615 <X_615>`, :ref:`1152 <X_1152>`}, {:ref:`616 <X_616>`, :ref:`627 <X_627>`}, {:ref:`617 <X_617>`, :ref:`628 <X_628>`}, {:ref:`618 <X_618>`, 5473}, {:ref:`619 <X_619>`, 5474}, {:ref:`620 <X_620>`, 7862}, {:ref:`625 <X_625>`, :ref:`3788 <X_3788>`}, {:ref:`626 <X_626>`, :ref:`3734 <X_3734>`}, {:ref:`635 <X_635>`, :ref:`3643 <X_3643>`}, {:ref:`636 <X_636>`, :ref:`3642 <X_3642>`}, {:ref:`639 <X_639>`, 5590}, {:ref:`640 <X_640>`, 5591}, {:ref:`641 <X_641>`, 12124}, {:ref:`642 <X_642>`, 12123}, {:ref:`651 <X_651>`, :ref:`3157 <X_3157>`}, {:ref:`653 <X_653>`, :ref:`1156 <X_1156>`}, {:ref:`674 <X_674>`, 12587}, {:ref:`684 <X_684>`, :ref:`2797 <X_2797>`}, {:ref:`685 <X_685>`, :ref:`2682 <X_2682>`}, {:ref:`690 <X_690>`, 11005}, {:ref:`693 <X_693>`, 8760}, {:ref:`695 <X_695>`, :ref:`3981 <X_3981>`}, {:ref:`754 <X_754>`, 7751}, {:ref:`758 <X_758>`, 5693}, {:ref:`774 <X_774>`, :ref:`1254 <X_1254>`}, {:ref:`800 <X_800>`, 13380}, {:ref:`801 <X_801>`, :ref:`1092 <X_1092>`}, {:ref:`842 <X_842>`, :ref:`935 <X_935>`}, {:ref:`885 <X_885>`, :ref:`3309 <X_3309>`}, {:ref:`912 <X_912>`, :ref:`3868 <X_3868>`}, {:ref:`916 <X_916>`, :ref:`2997 <X_2997>`}, {:ref:`936 <X_936>`, :ref:`3452 <X_3452>`}, {:ref:`937 <X_937>`, :ref:`1534 <X_1534>`}, {:ref:`940 <X_940>`, :ref:`1396 <X_1396>`}, {:ref:`941 <X_941>`, :ref:`1880 <X_1880>`}, {:ref:`953 <X_953>`, :ref:`1309 <X_1309>`}, {:ref:`958 <X_958>`, :ref:`2886 <X_2886>`}, {:ref:`960 <X_960>`, 5794}, {:ref:`970 <X_970>`, 9534}, {:ref:`972 <X_972>`, 5514}, {:ref:`973 <X_973>`, 6145}, {:ref:`974 <X_974>`, 7729}, {:ref:`983 <X_983>`, 5255}, {:ref:`990 <X_990>`, :ref:`4000 <X_4000>`}, {:ref:`991 <X_991>`, 4648}, {:ref:`993 <X_993>`, 11012}, {:ref:`1000 <X_1000>`, :ref:`3057 <X_3057>`}, {:ref:`1015 <X_1015>`, 9651}, {:ref:`1029 <X_1029>`, :ref:`2906 <X_2906>`}, {:ref:`1032 <X_1032>`, 5910}, {:ref:`1034 <X_1034>`, 5911}, {:ref:`1036 <X_1036>`, :ref:`1065 <X_1065>`}, {:ref:`1037 <X_1037>`, :ref:`1067 <X_1067>`}, {:ref:`1038 <X_1038>`, :ref:`1076 <X_1076>`}, {:ref:`1039 <X_1039>`, :ref:`1096 <X_1096>`}, {:ref:`1040 <X_1040>`, :ref:`1074 <X_1074>`}, {:ref:`1041 <X_1041>`, :ref:`2263 <X_2263>`}, {:ref:`1043 <X_1043>`, 4417}, {:ref:`1046 <X_1046>`, :ref:`2648 <X_2648>`}, {:ref:`1060 <X_1060>`, 4296}, {:ref:`1062 <X_1062>`, :ref:`3100 <X_3100>`}, {:ref:`1073 <X_1073>`, :ref:`2130 <X_2130>`}, {:ref:`1078 <X_1078>`, 5171}, {:ref:`1089 <X_1089>`, :ref:`3974 <X_3974>`}, {:ref:`1104 <X_1104>`, :ref:`3772 <X_3772>`}, {:ref:`1111 <X_1111>`, 4056}, {:ref:`1123 <X_1123>`, 7133}, {:ref:`1125 <X_1125>`, :ref:`3576 <X_3576>`}, {:ref:`1131 <X_1131>`, :ref:`3311 <X_3311>`}, {:ref:`1132 <X_1132>`, :ref:`3312 <X_3312>`}, {:ref:`1138 <X_1138>`, :ref:`2132 <X_2132>`}, {:ref:`1139 <X_1139>`, :ref:`3368 <X_3368>`}, {:ref:`1140 <X_1140>`, :ref:`3395 <X_3395>`}, {:ref:`1157 <X_1157>`, :ref:`2120 <X_2120>`}, {:ref:`1160 <X_1160>`, :ref:`1162 <X_1162>`}, {:ref:`1161 <X_1161>`, :ref:`1163 <X_1163>`}, {:ref:`1164 <X_1164>`, :ref:`3595 <X_3595>`}, {:ref:`1165 <X_1165>`, :ref:`3593 <X_3593>`}, {:ref:`1175 <X_1175>`, 5320}, {:ref:`1177 <X_1177>`, 5622}, {:ref:`1192 <X_1192>`, :ref:`3532 <X_3532>`}, {:ref:`1209 <X_1209>`, 4549}, {:ref:`1216 <X_1216>`, :ref:`2979 <X_2979>`}, {:ref:`1248 <X_1248>`, :ref:`2660 <X_2660>`}, {:ref:`1251 <X_1251>`, :ref:`1832 <X_1832>`}, {:ref:`1260 <X_1260>`, 5687}, {:ref:`1317 <X_1317>`, 12763}, {:ref:`1319 <X_1319>`, 7704}, {:ref:`1327 <X_1327>`, 6419}, {:ref:`1328 <X_1328>`, 6420}, {:ref:`1329 <X_1329>`, :ref:`1376 <X_1376>`}, {:ref:`1336 <X_1336>`, :ref:`2362 <X_2362>`}, {:ref:`1340 <X_1340>`, :ref:`1348 <X_1348>`}, {:ref:`1341 <X_1341>`, :ref:`1349 <X_1349>`}, {:ref:`1342 <X_1342>`, :ref:`1676 <X_1676>`}, {:ref:`1343 <X_1343>`, :ref:`1677 <X_1677>`}, {:ref:`1353 <X_1353>`, 5093}, {:ref:`1379 <X_1379>`, :ref:`2040 <X_2040>`}, {:ref:`1380 <X_1380>`, :ref:`2039 <X_2039>`}, {:ref:`1383 <X_1383>`, 8791}, {:ref:`1384 <X_1384>`, 8778}, {:ref:`1385 <X_1385>`, :ref:`1538 <X_1538>`}, {:ref:`1389 <X_1389>`, :ref:`2099 <X_2099>`}, {:ref:`1392 <X_1392>`, :ref:`3241 <X_3241>`}, {:ref:`1393 <X_1393>`, 7004}, {:ref:`1399 <X_1399>`, 5348}, {:ref:`1420 <X_1420>`, 4311}, {:ref:`1430 <X_1430>`, :ref:`1468 <X_1468>`}, {:ref:`1435 <X_1435>`, :ref:`3333 <X_3333>`}, {:ref:`1440 <X_1440>`, 7053}, {:ref:`1441 <X_1441>`, 4329}, {:ref:`1445 <X_1445>`, :ref:`3358 <X_3358>`}, {:ref:`1448 <X_1448>`, 7365}, {:ref:`1469 <X_1469>`, 12589}, {:ref:`1483 <X_1483>`, :ref:`3623 <X_3623>`}, {:ref:`1484 <X_1484>`, 12773}, {:ref:`1495 <X_1495>`, :ref:`3431 <X_3431>`}, {:ref:`1499 <X_1499>`, :ref:`1550 <X_1550>`}, {:ref:`1500 <X_1500>`, 9650}, {:ref:`1510 <X_1510>`, 10412}, {:ref:`1511 <X_1511>`, 12121}, {:ref:`1521 <X_1521>`, 7115}, {:ref:`1562 <X_1562>`, 6529}, {:ref:`1566 <X_1566>`, :ref:`2724 <X_2724>`}, {:ref:`1609 <X_1609>`, 9722}, {:ref:`1621 <X_1621>`, 10267}, {:ref:`1670 <X_1670>`, 5404}, {:ref:`1671 <X_1671>`, 5403}, {:ref:`1682 <X_1682>`, 9552}, {:ref:`1689 <X_1689>`, :ref:`2010 <X_2010>`}, {:ref:`1690 <X_1690>`, :ref:`2009 <X_2009>`}, {:ref:`1691 <X_1691>`, :ref:`3406 <X_3406>`}, {:ref:`1697 <X_1697>`, 7160}, {:ref:`1715 <X_1715>`, :ref:`1730 <X_1730>`}, {:ref:`1716 <X_1716>`, :ref:`1721 <X_1721>`}, {:ref:`1717 <X_1717>`, :ref:`1718 <X_1718>`}, {:ref:`1726 <X_1726>`, :ref:`1782 <X_1782>`}, {:ref:`1729 <X_1729>`, 8558}, {:ref:`1764 <X_1764>`, 10479}, {:ref:`1768 <X_1768>`, :ref:`3065 <X_3065>`}, {:ref:`1773 <X_1773>`, :ref:`2961 <X_2961>`}, {:ref:`1781 <X_1781>`, :ref:`2955 <X_2955>`}, {:ref:`1798 <X_1798>`, 13323}, {:ref:`1840 <X_1840>`, 4876}, {:ref:`1903 <X_1903>`, :ref:`2262 <X_2262>`}, {:ref:`1942 <X_1942>`, :ref:`2790 <X_2790>`}, {:ref:`1957 <X_1957>`, 5247}, {:ref:`1970 <X_1970>`, :ref:`1971 <X_1971>`}, {:ref:`1973 <X_1973>`, :ref:`2201 <X_2201>`}, {:ref:`1987 <X_1987>`, :ref:`3269 <X_3269>`}, {:ref:`1994 <X_1994>`, :ref:`2904 <X_2904>`}, {:ref:`2077 <X_2077>`, :ref:`3814 <X_3814>`}, {:ref:`2080 <X_2080>`, 7793}, {:ref:`2092 <X_2092>`, :ref:`3597 <X_3597>`}, {:ref:`2093 <X_2093>`, 4848}, {:ref:`2095 <X_2095>`, 9965}, {:ref:`2098 <X_2098>`, 10944}, {:ref:`2121 <X_2121>`, :ref:`3481 <X_3481>`}, {:ref:`2131 <X_2131>`, :ref:`3349 <X_3349>`}, {:ref:`2133 <X_2133>`, 8440}, {:ref:`2181 <X_2181>`, 4642}, {:ref:`2217 <X_2217>`, :ref:`3417 <X_3417>`}, {:ref:`2275 <X_2275>`, 9597}, {:ref:`2276 <X_2276>`, 9596}, {:ref:`2278 <X_2278>`, 5397}, {:ref:`2287 <X_2287>`, 5778}, {:ref:`2331 <X_2331>`, :ref:`3755 <X_3755>`}, {:ref:`2332 <X_2332>`, 4251}, {:ref:`2353 <X_2353>`, :ref:`3425 <X_3425>`}, {:ref:`2355 <X_2355>`, :ref:`3579 <X_3579>`}, {:ref:`2361 <X_2361>`, 7299}, {:ref:`2393 <X_2393>`, 5486}, {:ref:`2456 <X_2456>`, 10349}, {:ref:`2457 <X_2457>`, :ref:`3667 <X_3667>`}, {:ref:`2477 <X_2477>`, 9653}, {:ref:`2482 <X_2482>`, 12117}, {:ref:`2536 <X_2536>`, :ref:`2540 <X_2540>`}, {:ref:`2537 <X_2537>`, :ref:`2541 <X_2541>`}, {:ref:`2574 <X_2574>`, :ref:`2592 <X_2592>`}, {:ref:`2575 <X_2575>`, :ref:`2593 <X_2593>`}, {:ref:`2646 <X_2646>`, 4305}, {:ref:`2651 <X_2651>`, :ref:`2907 <X_2907>`}, {:ref:`2679 <X_2679>`, :ref:`2698 <X_2698>`}, {:ref:`2687 <X_2687>`, :ref:`2766 <X_2766>`}, {:ref:`2697 <X_2697>`, 10423}, {:ref:`2734 <X_2734>`, 10017}, {:ref:`2752 <X_2752>`, 10101}, {:ref:`2770 <X_2770>`, 10098}, {:ref:`2771 <X_2771>`, 9803}, {:ref:`2778 <X_2778>`, 10693}, {:ref:`2783 <X_2783>`, 10769}, {:ref:`2784 <X_2784>`, 11599}, {:ref:`2787 <X_2787>`, 10768}, {:ref:`2791 <X_2791>`, 4516}, {:ref:`2793 <X_2793>`, 9180}, {:ref:`2801 <X_2801>`, :ref:`3254 <X_3254>`}, {:ref:`2802 <X_2802>`, 12641}, {:ref:`2814 <X_2814>`, :ref:`3762 <X_3762>`}, {:ref:`2817 <X_2817>`, 13532}, {:ref:`2822 <X_2822>`, 4466}, {:ref:`2823 <X_2823>`, 4858}, {:ref:`2826 <X_2826>`, 10773}, {:ref:`2827 <X_2827>`, 10774}, {:ref:`2828 <X_2828>`, 10775}, {:ref:`2830 <X_2830>`, 10779}, {:ref:`2831 <X_2831>`, 10780}, {:ref:`2840 <X_2840>`, 4939}, {:ref:`2889 <X_2889>`, 6101}, {:ref:`2896 <X_2896>`, 6194}, {:ref:`2900 <X_2900>`, :ref:`3189 <X_3189>`}, {:ref:`2905 <X_2905>`, 6625}, {:ref:`2908 <X_2908>`, 7139}, {:ref:`2917 <X_2917>`, 8146}, {:ref:`2929 <X_2929>`, :ref:`2935 <X_2935>`}, {:ref:`2972 <X_2972>`, 10745}, {:ref:`2975 <X_2975>`, 5841}, {:ref:`2995 <X_2995>`, 8048}, {:ref:`3023 <X_3023>`, 12185}, {:ref:`3024 <X_3024>`, 12374}, {:ref:`3027 <X_3027>`, 12184}, {:ref:`3028 <X_3028>`, 12373}, {:ref:`3054 <X_3054>`, 5210}, {:ref:`3056 <X_3056>`, 12588}, {:ref:`3058 <X_3058>`, :ref:`3303 <X_3303>`}, {:ref:`3062 <X_3062>`, :ref:`3339 <X_3339>`}, {:ref:`3094 <X_3094>`, :ref:`3399 <X_3399>`}, {:ref:`3096 <X_3096>`, :ref:`3098 <X_3098>`}, {:ref:`3101 <X_3101>`, 8251}, {:ref:`3120 <X_3120>`, :ref:`3924 <X_3924>`}, {:ref:`3162 <X_3162>`, 5359}, {:ref:`3164 <X_3164>`, 9290}, {:ref:`3172 <X_3172>`, :ref:`3424 <X_3424>`}, {:ref:`3180 <X_3180>`, 5873}, {:ref:`3181 <X_3181>`, 5872}, {:ref:`3184 <X_3184>`, 6716}, {:ref:`3190 <X_3190>`, :ref:`3191 <X_3191>`}, {:ref:`3212 <X_3212>`, 7261}, {:ref:`3216 <X_3216>`, 5400}, {:ref:`3218 <X_3218>`, 5770}, {:ref:`3255 <X_3255>`, 5883}, {:ref:`3270 <X_3270>`, 11461}, {:ref:`3304 <X_3304>`, 5434}, {:ref:`3305 <X_3305>`, :ref:`3587 <X_3587>`}, {:ref:`3306 <X_3306>`, 7171}, {:ref:`3314 <X_3314>`, 7885}, {:ref:`3320 <X_3320>`, 12945}, {:ref:`3329 <X_3329>`, 7864}, {:ref:`3338 <X_3338>`, 7284}, {:ref:`3340 <X_3340>`, :ref:`3577 <X_3577>`}, {:ref:`3342 <X_3342>`, :ref:`3347 <X_3347>`}, {:ref:`3344 <X_3344>`, :ref:`3348 <X_3348>`}, {:ref:`3352 <X_3352>`, :ref:`3354 <X_3354>`}, {:ref:`3356 <X_3356>`, :ref:`3637 <X_3637>`}, {:ref:`3364 <X_3364>`, :ref:`3391 <X_3391>`}, {:ref:`3365 <X_3365>`, :ref:`3392 <X_3392>`}, {:ref:`3366 <X_3366>`, :ref:`3389 <X_3389>`}, {:ref:`3367 <X_3367>`, :ref:`3390 <X_3390>`}, {:ref:`3369 <X_3369>`, :ref:`3397 <X_3397>`}, {:ref:`3370 <X_3370>`, :ref:`3396 <X_3396>`}, {:ref:`3371 <X_3371>`, :ref:`3387 <X_3387>`}, {:ref:`3372 <X_3372>`, :ref:`3388 <X_3388>`}, {:ref:`3373 <X_3373>`, :ref:`3385 <X_3385>`}, {:ref:`3374 <X_3374>`, :ref:`3386 <X_3386>`}, {:ref:`3379 <X_3379>`, 5402}, {:ref:`3380 <X_3380>`, 5401}, {:ref:`3381 <X_3381>`, :ref:`3394 <X_3394>`}, {:ref:`3382 <X_3382>`, :ref:`3393 <X_3393>`}, {:ref:`3398 <X_3398>`, :ref:`3407 <X_3407>`}, {:ref:`3413 <X_3413>`, :ref:`3558 <X_3558>`}, {:ref:`3414 <X_3414>`, :ref:`3557 <X_3557>`}, {:ref:`3416 <X_3416>`, :ref:`3714 <X_3714>`}, {:ref:`3426 <X_3426>`, 13093}, {:ref:`3430 <X_3430>`, :ref:`3454 <X_3454>`}, {:ref:`3438 <X_3438>`, :ref:`3443 <X_3443>`}, {:ref:`3439 <X_3439>`, :ref:`3442 <X_3442>`}, {:ref:`3440 <X_3440>`, 5682}, {:ref:`3441 <X_3441>`, 5681}, {:ref:`3461 <X_3461>`, 7165}, {:ref:`3463 <X_3463>`, 5683}, {:ref:`3466 <X_3466>`, :ref:`3469 <X_3469>`}, {:ref:`3479 <X_3479>`, :ref:`3489 <X_3489>`}, {:ref:`3480 <X_3480>`, :ref:`3490 <X_3490>`}, {:ref:`3495 <X_3495>`, 8866}, {:ref:`3497 <X_3497>`, 7351}, {:ref:`3499 <X_3499>`, 8925}, {:ref:`3500 <X_3500>`, 7350}, {:ref:`3502 <X_3502>`, 8867}, {:ref:`3521 <X_3521>`, 5946}, {:ref:`3527 <X_3527>`, 8796}, {:ref:`3580 <X_3580>`, 11472}, {:ref:`3582 <X_3582>`, 4325}, {:ref:`3584 <X_3584>`, 4330}, {:ref:`3589 <X_3589>`, 5085}, {:ref:`3590 <X_3590>`, 6221}, {:ref:`3591 <X_3591>`, 6398}, {:ref:`3601 <X_3601>`, 4304}, {:ref:`3611 <X_3611>`, 11460}, {:ref:`3614 <X_3614>`, 5217}, {:ref:`3617 <X_3617>`, 5690}, {:ref:`3620 <X_3620>`, 7879}, {:ref:`3621 <X_3621>`, 5844}, {:ref:`3622 <X_3622>`, 5901}, {:ref:`3624 <X_3624>`, 7987}, {:ref:`3629 <X_3629>`, 5102}, {:ref:`3632 <X_3632>`, 4900}, {:ref:`3633 <X_3633>`, 11224}, {:ref:`3634 <X_3634>`, 10164}, {:ref:`3648 <X_3648>`, :ref:`3652 <X_3652>`}, {:ref:`3668 <X_3668>`, 8809}, {:ref:`3671 <X_3671>`, 5665}, {:ref:`3679 <X_3679>`, 4866}, {:ref:`3701 <X_3701>`, 5300}, {:ref:`3704 <X_3704>`, 5695}, {:ref:`3706 <X_3706>`, 10371}, {:ref:`3738 <X_3738>`, 10771}, {:ref:`3741 <X_3741>`, 10476}, {:ref:`3746 <X_3746>`, 4309}, {:ref:`3753 <X_3753>`, 9800}, {:ref:`3812 <X_3812>`, 5880}, {:ref:`3815 <X_3815>`, 5013}, {:ref:`3819 <X_3819>`, 13348}, {:ref:`3820 <X_3820>`, 6244}, {:ref:`3822 <X_3822>`, 5248}, {:ref:`3825 <X_3825>`, 10200}, {:ref:`3826 <X_3826>`, 11495}, {:ref:`3829 <X_3829>`, 11194}, {:ref:`3841 <X_3841>`, 7688}, {:ref:`3847 <X_3847>`, 6691}, {:ref:`3849 <X_3849>`, 7615}, {:ref:`3870 <X_3870>`, 5534}, {:ref:`3871 <X_3871>`, 10528}, {:ref:`3877 <X_3877>`, 7700}, {:ref:`3885 <X_3885>`, 12648}, {:ref:`3887 <X_3887>`, 10772}, {:ref:`3911 <X_3911>`, 6705}, {:ref:`3916 <X_3916>`, 5744}, {:ref:`3917 <X_3917>`, 7999}, {:ref:`3925 <X_3925>`, 5584}, {:ref:`3933 <X_3933>`, 7776}, {:ref:`3934 <X_3934>`, 5188}, {:ref:`3940 <X_3940>`, 5763}, {:ref:`3947 <X_3947>`, 4314}, {:ref:`3972 <X_3972>`, 7828}, {4008, 12723}, {4045, 7808}, {4048, 5103}, {4277, 4646}, {4308, 7743}, {4313, 5226}, {4316, 7280}, {4317, 5563}, {4324, 5010}, {4339, 5266}, {4355, 10980}, {4357, 10444}, {4423, 7958}, {4425, 8235}, {4444, 6002}, {4512, 10268}, {4645, 7155}, {4654, 11518}, {4658, 5733}, {4692, 4894}, {4721, 4805}, {4723, 12693}, {4768, 9525}, {4846, 5462}, {4847, 12527}, {4863, 12692}, {5007, 5309}, {5008, 5346}, {5032, 11405}, {5038, 11170}, {5044, 10157}, {5045, 5558}, {5050, 5395}, {5092, 7859}, {5097, 7894}, {5119, 7162}, {5121, 11512}, {5123, 13528}, {5173, 12677}, {5204, 5433}, {5206, 6781}, {5221, 10308}, {5223, 12777}, {5249, 10884}, {5253, 10269}, {5265, 10593}, {5273, 5791}, {5278, 9958}, {5281, 10592}, {5377, 6074}, {5418, 6200}, {5420, 6396}, {5424, 5441}, {5435, 5704}, {5437, 9841}, {5438, 6700}, {5439, 9776}, {5440, 5748}, {5447, 7998}, {5449, 7689}, {5461, 10153}, {5505, 10752}, {5513, 9085}, {5533, 10074}, {5535, 6597}, {5536, 6763}, {5542, 6744}, {5550, 11230}, {5553, 7702}, {5556, 10977}, {5557, 12005}, {5559, 5697}, {5561, 11552}, {5597, 8196}, {5598, 8203}, {5599, 11822}, {5600, 11823}, {5601, 8200}, {5602, 8207}, {5606, 5950}, {5609, 5655}, {5623, 8446}, {5624, 8456}, {5627, 6070}, {5670, 8487}, {5671, 8494}, {5672, 8444}, {5673, 8454}, {5674, 8495}, {5675, 8496}, {5676, 8486}, {5677, 7329}, {5678, 8491}, {5679, 8492}, {5680, 7164}, {5685, 8480}, {5688, 12698}, {5689, 12697}, {5705, 5745}, {5708, 12684}, {5795, 9623}, {5848, 10759}, {5853, 6765}, {5854, 13271}, {5860, 6278}, {5861, 6281}, {5874, 11917}, {5875, 11916}, {5885, 10266}, {5892, 11451}, {5933, 10362}, {5934, 8079}, {5935, 7593}, {5943, 9729}, {5951, 5952}, {5965, 7877}, {5984, 7766}, {6020, 12955}, {6032, 12506}, {6036, 7857}, {6055, 9166}, {6073, 11607}, {6075, 10428}, {6082, 6092}, {6114, 9750}, {6115, 9749}, {6128, 8749}, {6130, 9409}, {6147, 11036}, {6196, 8927}, {6204, 8957}, {6217, 6266}, {6218, 6267}, {6219, 6276}, {6220, 6277}, {6224, 6265}, {6233, 13234}, {6235, 8705}, {6238, 10055}, {6285, 7049}, {6292, 7935}, {6323, 12494}, {6326, 6596}, {6339, 10981}, {6407, 9542}, {6409, 8253}, {6410, 8252}, {6453, 9681}, {6462, 8220}, {6463, 8221}, {6467, 12283}, {6519, 9692}, {6680, 7844}, {6704, 9751}, {6735, 12534}, {6752, 8795}, {6777, 11602}, {6778, 11603}, {7017, 7141}, {7028, 8127}, {7059, 7345}, {7060, 7344}, {7149, 8811}, {7161, 11010}, {7264, 7272}, {7320, 9785}, {7325, 8449}, {7326, 8459}, {7327, 8432}, {7352, 10071}, {7587, 8379}, {7588, 8086}, {7589, 8382}, {7595, 12681}, {7603, 11669}, {7605, 13339}, {7617, 8182}, {7618, 8176}, {7666, 10272}, {7676, 7679}, {7677, 7678}, {7693, 13363}, {7703, 11454}, {7712, 10610}, {7720, 7725}, {7721, 7726}, {7723, 12219}, {7730, 7731}, {7739, 7753}, {7757, 7858}, {7769, 7782}, {7777, 7783}, {7778, 7789}, {7779, 7900}, {7786, 7847}, {7792, 7851}, {7794, 7818}, {7796, 7809}, {7798, 7838}, {7799, 7814}, {7801, 7821}, {7804, 7834}, {7813, 7903}, {7815, 7830}, {7820, 7867}, {7822, 7853}, {7829, 7902}, {7831, 7910}, {7832, 7934}, {7835, 7899}, {7836, 7912}, {7839, 7921}, {7845, 7855}, {7846, 7919}, {7854, 7873}, {7856, 12150}, {7863, 7888}, {7875, 7923}, {7883, 10302}, {7889, 7913}, {7891, 7925}, {7905, 7926}, {7906, 7941}, {7932, 10583}, {8068, 10058}, {8069, 10321}, {8075, 8087}, {8076, 8088}, {8077, 8085}, {8080, 8092}, {8099, 9793}, {8100, 9795}, {8105, 8426}, {8106, 8427}, {8107, 8380}, {8108, 8381}, {8109, 8377}, {8110, 8378}, {8117, 8123}, {8118, 8124}, {8125, 8129}, {8126, 8130}, {8141, 9536}, {8144, 9538}, {8172, 8447}, {8173, 8457}, {8193, 9911}, {8197, 12458}, {8204, 12459}, {8222, 11828}, {8223, 11829}, {8224, 8230}, {8225, 8228}, {8372, 12674}, {8431, 8443}, {8433, 8483}, {8434, 8484}, {8435, 8481}, {8436, 8482}, {8437, 8497}, {8438, 8498}, {8445, 8458}, {8448, 8455}, {8450, 8461}, {8451, 8460}, {8452, 8463}, {8453, 8462}, {8488, 8527}, {8489, 8532}, {8490, 8533}, {8501, 8509}, {8502, 8508}, {8515, 8536}, {8516, 8535}, {8517, 8534}, {8538, 11416}, {8582, 10860}, {8583, 10863}, {8588, 10185}, {8591, 8724}, {8596, 12355}, {8674, 10767}, {8679, 12586}, {8719, 10155}, {8864, 8921}, {8868, 8872}, {8878, 10340}, {8983, 9583}, {9147, 11615}, {9300, 9607}, {9530, 10718}, {9627, 9629}, {9628, 9630}, {9638, 10535}, {9646, 9660}, {9647, 9661}, {9648, 9662}, {9649, 9663}, {9658, 9672}, {9659, 9673}, {9705, 13482}, {9783, 12488}, {9787, 12489}, {9789, 12490}, {9791, 9959}, {9845, 12577}, {9857, 12497}, {9874, 12139}, {9897, 11280}, {9919, 13171}, {9934, 13198}, {9942, 10391}, {9967, 12220}, {9973, 13622}, {10042, 10050}, {10043, 10057}, {10052, 10073}, {10088, 12896}, {10187, 10646}, {10188, 10645}, {10202, 11220}, {10264, 10620}, {10293, 12099}, {10305, 11023}, {10309, 12676}, {10313, 10316}, {10363, 10369}, {10415, 10422}, {10434, 10887}, {10435, 12547}, {10455, 10464}, {10529, 10680}, {10546, 10564}, {10547, 10548}, {10627, 13340}, {10634, 11420}, {10635, 11421}, {10707, 11240}, {10791, 12197}, {10797, 10799}, {10798, 12835}, {10831, 10833}, {10873, 10877}, {10882, 10886}, {10897, 11417}, {10898, 11418}, {10912, 13463}, {10915, 12703}, {10916, 12704}, {10923, 10927}, {10924, 10928}, {10956, 10965}, {10957, 10966}, {10958, 11502}, {11082, 11135}, {11087, 11136}, {11171, 11272}, {11177, 11632}, {11270, 11468}, {11402, 11426}, {11408, 11485}, {11409, 11486}, {11423, 13366}, {11449, 12038}, {11557, 11560}, {11587, 13558}, {11646, 13330}, {11649, 11663}, {11698, 12331}, {11703, 12165}, {11755, 11759}, {11764, 11768}, {11773, 11777}, {11782, 11786}, {11792, 13508}, {11800, 12284}, {11869, 11873}, {11870, 11874}, {11891, 12491}, {11900, 12696}, {11905, 11909}, {11930, 11947}, {11931, 11948}, {11990, 11992}, {12006, 13364}, {12061, 12063}, {12120, 12864}, {12146, 12849}, {12166, 12309}, {12168, 12310}, {12169, 12311}, {12170, 12312}, {12171, 12313}, {12172, 12314}, {12175, 12316}, {12223, 12603}, {12224, 12604}, {12226, 12606}, {12271, 12272}, {12273, 12280}, {12350, 12354}, {12369, 13495}, {12387, 12394}, {12388, 12393}, {12507, 13249}, {12515, 12619}, {12516, 12620}, {12517, 12621}, {12518, 12622}, {12519, 12623}, {12520, 12609}, {12521, 12612}, {12522, 12613}, {12523, 12614}, {12524, 12615}, {12556, 13089}, {12624, 13238}, {12739, 12743}, {12837, 13077}, {12859, 12863}, {12941, 13075}, {12942, 13076}, {12944, 13078}, {12946, 13079}, {12947, 13080}, {12948, 13081}, {12949, 13082}, {13007, 13023}, {13008, 13024}, {13009, 13039}, {13010, 13040}, {13321, 13451}, {13353, 13470}, {13418, 13423}
-
-Functional Relations & Conjugates
----------------------------------
-
-.. figure:: 04_relations.svg
-   :alt: X_4 — Functional Relations and Conjugates
-   :align: center
-
-   **Conjugate & Homothetic Partners of X_4** on Heronian :math:`(15, 13, 14)`.
-
-* **Isogonal Conjugate:** :g:`X_3 <X_3>` (:ref:`Circumcenter <X_3>`, homogeneous barycentrics :math:`125 : 169 : 154`) at :math:`\left(7,\; \frac{33}{8}\right)`, joined along :g:`{3, 4} <{ 3, 4 }>` (:term:`isogonal conjugate <isogonal-conjugate>` via :math:`a^2 vw : b^2 wu : c^2 uv`).
-* **Isotomic Conjugate:** :g:`X_69 <X_69>` (:ref:`Symmedian Point Of The Anticomplementary Triangle <X_69>`, homogeneous barycentrics :math:`70 : 126 : 99`) at :math:`\left(\frac{2259}{295},\; \frac{1188}{295}\right)`, joined along :g:`{4, 69} <{ 4, 69 }>` (:term:`isotomic conjugate <isotomic-conjugate>` via :math:`vw : wu : uv`).
-* **Complement:** :g:`X_3 <X_3>` (:ref:`Circumcenter <X_3>`) at :math:`\left(7,\; \frac{33}{8}\right)`, joined along :g:`{3, 4} <{ 3, 4 }>` — :term:`complement <complement>` of :g:`X_4 <X_4>` dilated from :g:`X_2 <X_2>` by factor :math:`-\frac{1}{2}`.
-* **Anticomplement:** :g:`X_20 <X_20>` (:ref:`De Longchamps Point <X_20>`) at :math:`\left(9,\; \frac{9}{2}\right)`, joined along :g:`{4, 20} <{ 4, 20 }>` — :term:`anticomplement <anticomplement>` of :g:`X_4 <X_4>` dilated from :g:`X_2 <X_2>` by factor :math:`-2`.
-* **Circumcircle Inverse:** Inversion in :g:`circumcircle <circumcircle>` centered at :g:`X_3 <X_3>` = :math:`\left(7, \frac{33}{8}\right)` (:math:`Q_R = \frac{4225}{64}`) maps :g:`X_4 <X_4>` along :g:`{3, 4} <{ 3, 4 }>` (:math:`Q(X_4, X_3) = \frac{265}{64}`, scale :math:`Q_R / Q = \frac{845}{53}`) to :ref:`X_186 <X_186>` (*Inverse-In-Circumcircle Of X_4*) at :math:`\left(- \frac{1319}{53},\; - \frac{393}{212}\right)`.
-
-.. collapse:: Full Functional Relations Catalog
-   :badge: 120 relations
-
-   * :ref:`X_4 <X_4>` = midpoint of X_i and X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`382 <X_382>`), (:ref:`146 <X_146>`, :ref:`3448 <X_3448>`), (:ref:`147 <X_147>`, :ref:`148 <X_148>`), (:ref:`149 <X_149>`, :ref:`153 <X_153>`), (:ref:`150 <X_150>`, :ref:`152 <X_152>`)
-   * :ref:`X_4 <X_4>` = reflection of X_i in X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`946 <X_946>`), (:ref:`2 <X_2>`, :ref:`381 <X_381>`), (:ref:`3 <X_3>`, :ref:`5 <X_5>`), (:ref:`5 <X_5>`, :ref:`546 <X_546>`), (:ref:`8 <X_8>`, :ref:`355 <X_355>`), (:ref:`20 <X_20>`, :ref:`3 <X_3>`), (:ref:`24 <X_24>`, :ref:`235 <X_235>`), (:ref:`25 <X_25>`, :ref:`1596 <X_1596>`), (:ref:`40 <X_40>`, :ref:`10 <X_10>`), (:ref:`69 <X_69>`, :ref:`1352 <X_1352>`), (:ref:`74 <X_74>`, :ref:`125 <X_125>`), (:ref:`98 <X_98>`, :ref:`115 <X_115>`), (:ref:`99 <X_99>`, :ref:`114 <X_114>`), (:ref:`100 <X_100>`, :ref:`119 <X_119>`), (:ref:`101 <X_101>`, :ref:`118 <X_118>`), (:ref:`102 <X_102>`, :ref:`124 <X_124>`), (:ref:`103 <X_103>`, :ref:`116 <X_116>`), (:ref:`104 <X_104>`, :ref:`11 <X_11>`), (:ref:`107 <X_107>`, :ref:`133 <X_133>`), (:ref:`109 <X_109>`, :ref:`117 <X_117>`), (:ref:`110 <X_110>`, :ref:`113 <X_113>`), (:ref:`112 <X_112>`, :ref:`132 <X_132>`), (:ref:`145 <X_145>`, :ref:`1482 <X_1482>`), (:ref:`185 <X_185>`, :ref:`389 <X_389>`), (:ref:`186 <X_186>`, :ref:`403 <X_403>`), (:ref:`193 <X_193>`, :ref:`1351 <X_1351>`), (:ref:`376 <X_376>`, :ref:`2 <X_2>`), (:ref:`378 <X_378>`, :ref:`427 <X_427>`), (:ref:`550 <X_550>`, :ref:`140 <X_140>`), (:ref:`917 <X_917>`, 5190), (:ref:`925 <X_925>`, :ref:`131 <X_131>`), (:ref:`930 <X_930>`, :ref:`128 <X_128>`), (:ref:`944 <X_944>`, :ref:`1 <X_1>`), (:ref:`1113 <X_1113>`, :ref:`1312 <X_1312>`), (:ref:`1114 <X_1114>`, :ref:`1313 <X_1313>`), (:ref:`1141 <X_1141>`, :ref:`137 <X_137>`), (:ref:`1292 <X_1292>`, :ref:`120 <X_120>`), (:ref:`1293 <X_1293>`, :ref:`121 <X_121>`), (:ref:`1294 <X_1294>`, :ref:`122 <X_122>`), (:ref:`1295 <X_1295>`, :ref:`123 <X_123>`), (:ref:`1296 <X_1296>`, :ref:`126 <X_126>`), (:ref:`1297 <X_1297>`, :ref:`127 <X_127>`), (:ref:`1298 <X_1298>`, :ref:`130 <X_130>`), (:ref:`1299 <X_1299>`, :ref:`135 <X_135>`), (:ref:`1300 <X_1300>`, :ref:`136 <X_136>`), (:ref:`1303 <X_1303>`, :ref:`129 <X_129>`), (:ref:`1350 <X_1350>`, :ref:`141 <X_141>`), (:ref:`1593 <X_1593>`, :ref:`1595 <X_1595>`)
-   * :ref:`X_4 <X_4>` = :term:`isogonal conjugate <isogonal-conjugate>` of :ref:`X_3 <X_3>`
-   * :ref:`X_4 <X_4>` = :term:`isotomic conjugate <isotomic-conjugate>` of :ref:`X_69 <X_69>`
-   * :ref:`X_4 <X_4>` = :term:`cyclocevian conjugate <cyclocevian-conjugate>` of :ref:`X_2 <X_2>`
-   * :ref:`X_4 <X_4>` = circumcircle-inverse of :ref:`X_186 <X_186>`
-   * :ref:`X_4 <X_4>` = nine-point-circle-inverse of :ref:`X_403 <X_403>`
-   * :ref:`X_4 <X_4>` = :term:`complement <complement>` of :ref:`X_20 <X_20>`
-   * :ref:`X_4 <X_4>` = :term:`anticomplement <anticomplement>` of :ref:`X_3 <X_3>`
-   * :ref:`X_4 <X_4>` = :term:`complementary conjugate <complementary-conjugate>` of :ref:`X_2883 <X_2883>`
-   * :ref:`X_4 <X_4>` = :term:`anticomplementary conjugate <anticomplementary-conjugate>` of :ref:`X_20 <X_20>`
-   * :ref:`X_4 <X_4>` = 2nd-Brocard-circle-inverse of X_37991
-   * :ref:`X_4 <X_4>` = Grebe-circle-inverse of X_37925
-   * :ref:`X_4 <X_4>` = X_i-:term:`Ceva conjugate <ceva-conjugate>` of X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`1249 <X_1249>`), (:ref:`7 <X_7>`, :ref:`196 <X_196>`), (:ref:`27 <X_27>`, :ref:`19 <X_19>`), (:ref:`29 <X_29>`, :ref:`1 <X_1>`), (:ref:`92 <X_92>`, :ref:`281 <X_281>`), (:ref:`107 <X_107>`, :ref:`523 <X_523>`), (:ref:`264 <X_264>`, :ref:`2 <X_2>`), (:ref:`273 <X_273>`, :ref:`278 <X_278>`), (:ref:`275 <X_275>`, :ref:`6 <X_6>`), (:ref:`286 <X_286>`, :ref:`92 <X_92>`), (:ref:`393 <X_393>`, :ref:`459 <X_459>`)
-   * :ref:`X_4 <X_4>` = :term:`cevapoint <cevapoint>` of X_i and X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`46 <X_46>`), (:ref:`2 <X_2>`, :ref:`193 <X_193>`), (:ref:`3 <X_3>`, :ref:`155 <X_155>`), (:ref:`5 <X_5>`, :ref:`52 <X_52>`), (:ref:`6 <X_6>`, :ref:`25 <X_25>`), (:ref:`11 <X_11>`, :ref:`513 <X_513>`), (:ref:`19 <X_19>`, :ref:`33 <X_33>`), (:ref:`30 <X_30>`, :ref:`113 <X_113>`), (:ref:`34 <X_34>`, :ref:`208 <X_208>`), (:ref:`37 <X_37>`, :ref:`209 <X_209>`), (:ref:`39 <X_39>`, :ref:`211 <X_211>`), (:ref:`51 <X_51>`, :ref:`53 <X_53>`), (:ref:`65 <X_65>`, :ref:`225 <X_225>`), (:ref:`114 <X_114>`, :ref:`511 <X_511>`), (:ref:`115 <X_115>`, :ref:`512 <X_512>`), (:ref:`116 <X_116>`, :ref:`514 <X_514>`), (:ref:`117 <X_117>`, :ref:`515 <X_515>`), (:ref:`118 <X_118>`, :ref:`516 <X_516>`), (:ref:`119 <X_119>`, :ref:`517 <X_517>`), (:ref:`120 <X_120>`, :ref:`518 <X_518>`), (:ref:`121 <X_121>`, :ref:`519 <X_519>`), (:ref:`122 <X_122>`, :ref:`520 <X_520>`), (:ref:`123 <X_123>`, :ref:`521 <X_521>`), (:ref:`124 <X_124>`, :ref:`522 <X_522>`), (:ref:`125 <X_125>`, :ref:`523 <X_523>`), (:ref:`126 <X_126>`, :ref:`524 <X_524>`), (:ref:`127 <X_127>`, :ref:`525 <X_525>`), (:ref:`185 <X_185>`, :ref:`235 <X_235>`), (:ref:`371 <X_371>`, :ref:`372 <X_372>`), (:ref:`487 <X_487>`, :ref:`488 <X_488>`)
-   * :ref:`X_4 <X_4>` = X_i-:term:`cross conjugate <cross-conjugate>` of X_j for these (i,j): (:ref:`3 <X_3>`, :ref:`254 <X_254>`), (:ref:`6 <X_6>`, :ref:`2 <X_2>`), (:ref:`19 <X_19>`, :ref:`278 <X_278>`), (:ref:`25 <X_25>`, :ref:`393 <X_393>`), (:ref:`33 <X_33>`, :ref:`281 <X_281>`), (:ref:`51 <X_51>`, :ref:`6 <X_6>`), (:ref:`52 <X_52>`, :ref:`24 <X_24>`), (:ref:`65 <X_65>`, :ref:`1 <X_1>`), (:ref:`113 <X_113>`, :ref:`403 <X_403>`), (:ref:`125 <X_125>`, :ref:`523 <X_523>`), (:ref:`185 <X_185>`, :ref:`3 <X_3>`), (:ref:`193 <X_193>`, :ref:`459 <X_459>`), (:ref:`225 <X_225>`, :ref:`158 <X_158>`), (:ref:`389 <X_389>`, :ref:`54 <X_54>`), (:ref:`397 <X_397>`, :ref:`17 <X_17>`), (:ref:`398 <X_398>`, :ref:`18 <X_18>`), (:ref:`407 <X_407>`, :ref:`225 <X_225>`), (:ref:`427 <X_427>`, :ref:`264 <X_264>`), (:ref:`512 <X_512>`, :ref:`112 <X_112>`), (:ref:`513 <X_513>`, :ref:`108 <X_108>`), (:ref:`523 <X_523>`, :ref:`107 <X_107>`)
-   * :ref:`X_4 <X_4>` = :term:`crosspoint <crosspoint>` of X_i and X_j for these (i,j): (:ref:`2 <X_2>`, :ref:`253 <X_253>`), (:ref:`7 <X_7>`, :ref:`189 <X_189>`), (:ref:`27 <X_27>`, :ref:`286 <X_286>`), (:ref:`92 <X_92>`, :ref:`273 <X_273>`)
-   * :ref:`X_4 <X_4>` = :term:`crosssum <crosssum>` of X_i and X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`1075 <X_1075>`), (:ref:`6 <X_6>`, :ref:`154 <X_154>`), (:ref:`25 <X_25>`, :ref:`1033 <X_1033>`), (:ref:`48 <X_48>`, :ref:`212 <X_212>`), (:ref:`55 <X_55>`, :ref:`198 <X_198>`), (:ref:`56 <X_56>`, :ref:`1035 <X_1035>`), (:ref:`71 <X_71>`, :ref:`228 <X_228>`), (:ref:`184 <X_184>`, :ref:`577 <X_577>`), (:ref:`185 <X_185>`, :ref:`417 <X_417>`), (:ref:`216 <X_216>`, :ref:`418 <X_418>`)
-   * :ref:`X_4 <X_4>` = :term:`crossdifference <crossdifference>` of every pair of points on line :ref:`X_520 <X_520>`\ \ :ref:`X_647 <X_647>`
-   * :ref:`X_4 <X_4>` = X_i-:term:`Hirst inverse <hirst-inverse>` of X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`243 <X_243>`), (:ref:`2 <X_2>`, :ref:`297 <X_297>`), (:ref:`3 <X_3>`, :ref:`350 <X_350>`), (:ref:`19 <X_19>`, :ref:`242 <X_242>`), (:ref:`21 <X_21>`, :ref:`425 <X_425>`), (:ref:`24 <X_24>`, :ref:`421 <X_421>`), (:ref:`25 <X_25>`, :ref:`419 <X_419>`), (:ref:`27 <X_27>`, :ref:`423 <X_423>`), (:ref:`28 <X_28>`, :ref:`422 <X_422>`), (:ref:`29 <X_29>`, :ref:`415 <X_415>`), (:ref:`420 <X_420>`, :ref:`427 <X_427>`), (:ref:`424 <X_424>`, :ref:`451 <X_451>`), (:ref:`459 <X_459>`, :ref:`460 <X_460>`), (:ref:`470 <X_470>`, :ref:`471 <X_471>`), (:ref:`1249 <X_1249>`, :ref:`1503 <X_1503>`)
-   * :ref:`X_4 <X_4>` = X_i-:term:`aleph conjugate <aleph-conjugate>` of X_j for these (i,j): (:ref:`1 <X_1>`, :ref:`1047 <X_1047>`), (:ref:`29 <X_29>`, :ref:`4 <X_4>`)
-   * :ref:`X_4 <X_4>` = X_i-:term:`beth conjugate <beth-conjugate>` of X_j for these (i,j): (:ref:`4 <X_4>`, :ref:`34 <X_34>`), (:ref:`8 <X_8>`, :ref:`40 <X_40>`), (:ref:`29 <X_29>`, :ref:`4 <X_4>`), (:ref:`162 <X_162>`, :ref:`56 <X_56>`), (:ref:`318 <X_318>`, :ref:`318 <X_318>`), (:ref:`811 <X_811>`, :ref:`331 <X_331>`)
-   * :ref:`X_4 <X_4>` = intersection of tangents at :ref:`X_3 <X_3>` and :ref:`X_4 <X_4>` to McCay cubic K003
-   * :ref:`X_4 <X_4>` = intersection of tangents at :ref:`X_4 <X_4>` and :ref:`X_69 <X_69>` to Lucas cubic K007
-   * :ref:`X_4 <X_4>` = exsimilicenter of 1st & 2nd Johnson-Yff circles; the insimilicenter is :ref:`X_1 <X_1>`
-   * :ref:`X_4 <X_4>` = :term:`trilinear pole <trilinear-pole>` of PU(4) (the orthic axis)
-   * :ref:`X_4 <X_4>` = trilinear pole wrt :term:`orthic triangle <orthic-triangle>` of orthic axis
-   * :ref:`X_4 <X_4>` = trilinear pole wrt :term:`intangents triangle <intangents-triangle>` of orthic axis
-   * :ref:`X_4 <X_4>` = trilinear pole wrt circumsymmedial triangle of orthic axis
-   * :ref:`X_4 <X_4>` = trilinear product of PU(15)
-   * :ref:`X_4 <X_4>` = barycentric product of PU(i) for these i: 21, 45
-   * :ref:`X_4 <X_4>` = bicentric sum of PU(i) for these i: 126, 131
-   * :ref:`X_4 <X_4>` = PU(126)-harmonic conjugate of :ref:`X_652 <X_652>`
-   * :ref:`X_4 <X_4>` = midpoint of PU(131)
-   * :ref:`X_4 <X_4>` = crosspoint of polar conjugates of PU(4)
-   * :ref:`X_4 <X_4>` = cevapoint of foci of orthic inconic
-   * :ref:`X_4 <X_4>` = ``QA``-P33 (Centroid of the Orthocenter Quadrangle) of quadrangle :g:`ABC << A B C >>`\ :ref:`X_2 <X_2>` (see `http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/61-qa-p33.html <http://www.chrisvantienhoven.nl/quadrangle-objects/15-mathematics/quadrangle-objects/artikelen-qa/61-qa-p33.html>`__)
-   * :ref:`X_4 <X_4>` = Hofstadter -1 point
-   * :ref:`X_4 <X_4>` = :ref:`X_4 <X_4>`-of X_iX_jX_k for these {i,j,k}: {:ref:`1 <X_1>`, :ref:`8 <X_8>`, 5556}, {:ref:`1 <X_1>`, :ref:`9 <X_9>`, :ref:`885 <X_885>`}, {:ref:`2 <X_2>`, :ref:`6 <X_6>`, :ref:`1640 <X_1640>`}, {:ref:`2 <X_2>`, :ref:`10 <X_10>`, 4049}, {:ref:`3 <X_3>`, :ref:`6 <X_6>`, :ref:`879 <X_879>`}, {:ref:`3 <X_3>`, :ref:`66 <X_66>`, :ref:`2435 <X_2435>`}, {:ref:`7 <X_7>`, :ref:`8 <X_8>`, :ref:`885 <X_885>`}
-   * :ref:`X_4 <X_4>` = homothetic center of these triangles: orthic, :ref:`X_13 <X_13>`-Ehrmann, :ref:`X_14 <X_14>`-Ehrmann (see :ref:`X_25 <X_25>`)
-   * :ref:`X_4 <X_4>` = perspector of anticomplementary circle
-   * :ref:`X_4 <X_4>` = pole wrt polar circle of :term:`trilinear polar <trilinear-polar>` of :ref:`X_2 <X_2>` (line at infinity)
-   * :ref:`X_4 <X_4>` = pole wrt {circumcircle, nine-point circle}-inverter of Lemoine axis
-   * :ref:`X_4 <X_4>` = :ref:`X_48 <X_48>`-:term:`isoconjugate <isoconjugate>` (polar conjugate) of :ref:`X_2 <X_2>`
-   * :ref:`X_4 <X_4>` = X_i-isoconjugate of X_j for these (i,j): (:ref:`6 <X_6>`, :ref:`63 <X_63>`), (:ref:`75 <X_75>`, :ref:`184 <X_184>`), (:ref:`91 <X_91>`, :ref:`1147 <X_1147>`), (:ref:`92 <X_92>`, :ref:`577 <X_577>`), (:ref:`1101 <X_1101>`, :ref:`125 <X_125>`), (:ref:`2962 <X_2962>`, :ref:`49 <X_49>`), (:ref:`2964 <X_2964>`, :ref:`3519 <X_3519>`)
-   * :ref:`X_4 <X_4>` = :ref:`X_1342 <X_1342>`-:term:`vertex conjugate <vertex-conjugate>` of :ref:`X_1343 <X_1343>`
-   * :ref:`X_4 <X_4>` = Zosma transform of :ref:`X_1 <X_1>`
-   * :ref:`X_4 <X_4>` = :ref:`X_1352 <X_1352>` of 1st anti-Brocard triangle
-   * :ref:`X_4 <X_4>` = centroid of the union of :ref:`X_8 <X_8>` and its 3 extraversions
-   * :ref:`X_4 <X_4>` = :ref:`X_5 <X_5>` of extraversion triangle of :ref:`X_8 <X_8>`
-   * :ref:`X_4 <X_4>` = homothetic center of orthic triangle and reflection of :term:`tangential triangle <tangential-triangle>` in :ref:`X_5 <X_5>`
-   * :ref:`X_4 <X_4>` = homothetic center of 2nd circumperp and 3rd :term:`Euler triangles <euler-triangle>`
-   * :ref:`X_4 <X_4>` = trilinear product of vertices of :term:`half-altitude triangle <half-altitude-triangle>`
-   * :ref:`X_4 <X_4>` = trilinear product of vertices of orthocentroidal triangle
-   * :ref:`X_4 <X_4>` = trilinear product of vertices of :term:`reflection triangle <reflection-triangle>`
-   * :ref:`X_4 <X_4>` = trilinear product of vertices of 4th Brocard triangle
-   * :ref:`X_4 <X_4>` = center of conic that is the locus of orthopoles of lines passing through :ref:`X_4 <X_4>`
-   * :ref:`X_4 <X_4>` = perspector of circumanticevian triangle of :ref:`X_4 <X_4>` and :term:`unary cofactor triangle <unary-cofactor-triangle>` of circumanticevian triangle of :ref:`X_3 <X_3>`
-   * :ref:`X_4 <X_4>` = :ref:`X_3 <X_3>`-of-2nd-extouch-triangle
-   * :ref:`X_4 <X_4>` = perspector of :g:`ABC << A B C >>` and 2nd and 3rd :term:`extouch triangles <extouch-triangle>`
-   * :ref:`X_4 <X_4>` = perspector of :g:`ABC << A B C >>` and :term:`1st Brocard triangle <1st-brocard-triangle>` of :term:`anticomplementary triangle <anticomplementary-triangle>`
-   * :ref:`X_4 <X_4>` = perspector of :g:`ABC << A B C >>` and 1st Brocard triangle of Johnson triangle
-   * :ref:`X_4 <X_4>` = perspector of :g:`ABC << A B C >>` and mid-triangle of 2nd and 3rd extouch triangles
-   * :ref:`X_4 <X_4>` = perspector of extouch triangle and cross-triangle of :g:`ABC << A B C >>` and 2nd extouch triangle
-   * :ref:`X_4 <X_4>` = perspector of 2nd Hyacinth triangle and cross-triangle of :g:`ABC << A B C >>` and 2nd Hyacinth triangle
-   * :ref:`X_4 <X_4>` = homothetic center of 2nd Johnson-Yff triangle and cross-triangle of :g:`ABC << A B C >>` and 1st Johnson-Yff triangle
-   * :ref:`X_4 <X_4>` = homothetic center of 1st Johnson-Yff triangle and cross-triangle of :g:`ABC << A B C >>` and 2nd Johnson-Yff triangle
-   * :ref:`X_4 <X_4>` = :ref:`X_1 <X_1>`-of-orthic-triangle if :g:`ABC << A B C >>` is acute, and an excenter of orthic triangle otherwise
-   * :ref:`X_4 <X_4>` = :ref:`X_52 <X_52>`-of-:term:`excentral triangle <excentral-triangle>`
-   * :ref:`X_4 <X_4>` = :ref:`X_65 <X_65>`-of-tangential-triangle if :g:`ABC << A B C >>` is acute
-   * :ref:`X_4 <X_4>` = :ref:`X_155 <X_155>`-of-intouch-triangle
-   * :ref:`X_4 <X_4>` = :ref:`X_110 <X_110>`-of-Fuhrmann-triangle
-   * :ref:`X_4 <X_4>` = :ref:`X_147 <X_147>`-of-1st-Brocard-triangle
-   * :ref:`X_4 <X_4>` = :ref:`X_1296 <X_1296>`-of-4th-Brocard-triangle
-   * :ref:`X_4 <X_4>` = :ref:`X_74 <X_74>`-of-orthocentroidal-triangle
-   * :ref:`X_4 <X_4>` = :ref:`X_110 <X_110>`-of-:ref:`X_4 <X_4>`-Brocard-triangle
-   * :ref:`X_4 <X_4>` = harmonic center of circle O(PU(4)) and orthoptic circle of Steiner inellipse
-   * :ref:`X_4 <X_4>` = Thomson-isogonal conjugate of :ref:`X_154 <X_154>`
-   * :ref:`X_4 <X_4>` = Lucas-isogonal conjugate of X_11206
-   * :ref:`X_4 <X_4>` = perspector of :g:`ABC << A B C >>` and cross-triangle of 1st and 2nd Neuberg triangles
-   * :ref:`X_4 <X_4>` = perspector of circumconic centered at :ref:`X_1249 <X_1249>`
-   * :ref:`X_4 <X_4>` = center of circumconic that is locus of trilinear poles of lines passing through :ref:`X_1249 <X_1249>`
-   * :ref:`X_4 <X_4>` = circumcevian isogonal conjugate of :ref:`X_4 <X_4>`
-   * :ref:`X_4 <X_4>` = orthic-isogonal conjugate of :ref:`X_4 <X_4>`
-   * :ref:`X_4 <X_4>` = :ref:`X_1 <X_1>`-of-circumorthic-triangle if :g:`ABC << A B C >>` is acute
-   * :ref:`X_4 <X_4>` = isogonal conjugate wrt half-altitude triangle of :ref:`X_185 <X_185>`
-   * :ref:`X_4 <X_4>` = Miquel associate of :ref:`X_4 <X_4>`
-   * :ref:`X_4 <X_4>` = crosspoint of :ref:`X_3 <X_3>` and :ref:`X_155 <X_155>` wrt both the excentral and tangential triangles
-   * :ref:`X_4 <X_4>` = crosspoint of :ref:`X_487 <X_487>` and :ref:`X_488 <X_488>` wrt both the excentral and anticomplementary triangles
-   * :ref:`X_4 <X_4>` = :ref:`X_3 <X_3>`-of-Ehrmann-mid-triangle
-   * :ref:`X_4 <X_4>` = :ref:`X_110 <X_110>`-of-:ref:`X_3 <X_3>`-Fuhrmann-triangle
-   * :ref:`X_4 <X_4>` = barycentric product :ref:`X_112 <X_112>`\ \*\ :ref:`X_850 <X_850>`
-   * :ref:`X_4 <X_4>` = Kosnita(:ref:`X_20 <X_20>`,\ :ref:`X_20 <X_20>`) point
-   * :ref:`X_4 <X_4>` = perspector of :g:`ABC << A B C >>` and the reflection of the excentral triangle in :ref:`X_10 <X_10>`
-   * :ref:`X_4 <X_4>` = pedal antipodal perspector of :ref:`X_3 <X_3>`
-   * :ref:`X_4 <X_4>` = Ehrmann-side-to-Ehrmann-vertex :term:`similarity image <similarity-image>` of :ref:`X_3 <X_3>`
-   * :ref:`X_4 <X_4>` = Ehrmann-vertex-to-orthic similarity image of :ref:`X_4 <X_4>`
-   * :ref:`X_4 <X_4>` = Ehrmann-side-to-orthic similarity image of :ref:`X_3 <X_3>`
-   * :ref:`X_4 <X_4>` = Ehrmann-mid-to-:g:`ABC << A B C >>` similarity image of :ref:`X_5 <X_5>`
-   * :ref:`X_4 <X_4>` = perspector of :term:`hexyl triangle <hexyl-triangle>` and :term:`cevian triangle <cevian-triangle>` of :ref:`X_27 <X_27>`
-   * :ref:`X_4 <X_4>` = perspector of hexyl triangle and :term:`anticevian triangle <anticevian-triangle>` of :ref:`X_19 <X_19>`
-   * :ref:`X_4 <X_4>` = perspector of :g:`ABC << A B C >>` and :term:`medial triangle <medial-triangle>` of :term:`pedal triangle <pedal-triangle>` of :ref:`X_64 <X_64>`
-   * :ref:`X_4 <X_4>` = perspector of :g:`ABC << A B C >>` and the reflection in :ref:`X_2 <X_2>` of the :term:`antipedal triangle <antipedal-triangle>` of :ref:`X_2 <X_2>`
-   * :ref:`X_4 <X_4>` = perspector of hexyl triangle and tangential triangle wrt excentral triangle of the excentral-hexyl ellipse
-   * :ref:`X_4 <X_4>` = inverse-in-Steiner-circumellipse of :ref:`X_297 <X_297>`
-   * :ref:`X_4 <X_4>` = {:ref:`X_2479 <X_2479>`,\ :ref:`X_2480 <X_2480>`}-harmonic conjugate of :ref:`X_297 <X_297>`
-   * :ref:`X_4 <X_4>` = symgonal of every point on the nine-point circle
-   * :ref:`X_4 <X_4>` = center of bianticevian conic of PU(4) (this conic being the polar circle)
-   * :ref:`X_4 <X_4>` = orthoptic-circle-of-Steiner-inellipse inverse of :ref:`X_468 <X_468>`
-   * :ref:`X_4 <X_4>` = de-Longchamps-circle inverse of :ref:`X_2071 <X_2071>`
-   * :ref:`X_4 <X_4>` = center of inverse-in-de-Longchamps-circle of circumcircle
-   * :ref:`X_4 <X_4>` = inner-Napoleon circle-inverse of X_32460
-   * :ref:`X_4 <X_4>` = outer-Napoleon circle-inverse of X_32461
-   * :ref:`X_4 <X_4>` = excentral-to-:g:`ABC << A B C >>` :term:`functional image <functional-image>` of :ref:`X_1 <X_1>`
-   * :ref:`X_4 <X_4>` = orthic-to-:g:`ABC << A B C >>` functional image of :ref:`X_52 <X_52>`
-   * :ref:`X_4 <X_4>` = incentral-to-:g:`ABC << A B C >>` functional image of :ref:`X_500 <X_500>`
-   * :ref:`X_4 <X_4>` = Feuerbach-to-:g:`ABC << A B C >>` functional image of X_5948
-   * :ref:`X_4 <X_4>` = excentral-to-intouch similarity image of :ref:`X_84 <X_84>`
-   * :ref:`X_4 <X_4>` = barycentric product of circumcircle intercepts of line :ref:`X_297 <X_297>`\ (525)
-   * :ref:`X_4 <X_4>` = trilinear product of vertices of infinite altitude triangle
-
-Four-Triangle Symbolic Invariance
----------------------------------
-
-.. figure:: 05_four_triangles.svg
-   :alt: X_4 — Invariance Across Four Canonical Symbolic Reference Triangles
-   :align: center
-
-   **Four-Triangle Invariance of X_4** across :g:`Heronian (15, 13, 14) <panel-heronian>`, :g:`Right (3, 4, 5) <panel-right>`, :g:`Kepler (1, √φ, φ) <panel-kepler>`, and :g:`Kimberling (6, 9, 13) <panel-kimberling>`.
-
-Across the four canonical algebraic number fields — :g:`Heronian (15, 13, 14) <heronian-X_4>` over :math:`\mathbb{Q}` (:math:`X_4 = \left(5,\; \frac{15}{4}\right)`), :g:`Right (3, 4, 5) <right-X_4>` over :math:`\mathbb{Q}` (:math:`X_4 = \left(\frac{16}{5},\; \frac{12}{5}\right)`), :g:`Kepler (1, √φ, φ) <kepler-X_4>` over :math:`\mathbb{Q}(\sqrt{\phi})` (:math:`X_4 = \left(1,\; \sqrt{\phi} \left(\phi - 1\right)\right)`), and :g:`Kimberling (6, 9, 13) <kimberling-X_4>` over :math:`\mathbb{Q}(\sqrt{35})` (:math:`X_4 = \left(\frac{107}{13},\; \frac{3317 \sqrt{35}}{1820}\right)`) — on right-angled triangles (:math:`\angle C = 90^\circ`), **X_4** coincides exactly with the right-angle vertex :g:`C <right-C>` / :g:`C <kepler-C>` (:math:`0 : 0 : 1`), whereas on acute :g:`Heronian <panel-heronian>` it lies strictly interior and on obtuse :g:`Kimberling <panel-kimberling>` it crosses into the exterior.
 
 .. admonition:: Related Collection 1 Topic Guides
    :class: tip
 
    :doc:`T_1: Isogonal Conjugate <../../../topics/isogonal-conjugate/index>` • :doc:`T_2: Isotomic Conjugate <../../../topics/isotomic-conjugate/index>` • :doc:`T_3: Complement & Anticomplement <../../../topics/complement-and-anticomplement/index>` • :doc:`T_4: Harmonic Conjugate & Cross-Ratio <../../../topics/harmonic-conjugate/index>` • :doc:`T_5: Circle Inversion <../../../topics/circle-inversion/index>` • :doc:`T_6: The Euler Line <../../../topics/euler-line/index>` • :doc:`T_11: The Soddy Line <../../../topics/soddy-line/index>` • :doc:`T_12: The Fuhrmann & Spieker Central Lines <../../../topics/fuhrmann-and-spieker-lines/index>` • :doc:`T_13: The Isogonic & Napoleon Central Lines <../../../topics/isogonic-and-napoleon-lines/index>` • :doc:`T_15: The Circumcircle <../../../topics/circumcircle/index>` • :doc:`T_16: The Nine-Point (Feuerbach) Circle <../../../topics/nine-point-circle/index>` • :doc:`T_17: The Spieker Circle <../../../topics/spieker-circle/index>` • :doc:`T_19: The Brocard & Orthocentroidal Circles <../../../topics/brocard-and-orthocentroidal-circles/index>` • :doc:`T_20: Medial & Anticomplementary Triangles <../../../topics/medial-and-anticomplementary-triangles/index>` • :doc:`T_21: Orthic & Tangential Triangles <../../../topics/orthic-and-tangential-triangles/index>` • :doc:`T_23: Incentral & Excentral Triangles <../../../topics/incentral-and-excentral-triangles/index>` • :doc:`T_24: Equilateral, Isogonic & Napoleon Triangles <../../../topics/isogonic-and-napoleon-triangles/index>`
 
-Notes
------
-
-.. container:: note-item
-
-   As a point on the Euler line, :ref:`X_4 <X_4>` has Shinagawa coefficients :math:`(0, 1)`.
-
-.. container:: note-item
-
-   The tangents at :g:`A <A>`, :g:`B <B>`, :g:`C <C>` to the McCay cubic K003 concur in :ref:`X_4 <X_4>`. Also, the tangents at :g:`A <A>`, :g:`B <B>`, :g:`C <C>` to the Lucas cubic K007 concur in :ref:`X_4 <X_4>`. (:person:`Randy Hutson <randy-hutson>`, November 18, 2015)
-
-.. container:: note-item
-
-   Let ``P`` be a point in the plane of :g:`ABC << A B C >>`. Let ``O_a`` be the circumcenter of ``BCP``, and define ``O_b`` and ``O_c`` cyclically. Let ``Q`` be the circumcenter of ``O_aO_bO_c``. ``P`` = Q only when ``P`` = :ref:`X_4 <X_4>`. (Randy Hutson, June 27, 2018)
-
-.. container:: note-item
-
-   Taking a reference triangle :g:`ABC << A B C >>` and a variable point ``P`` on the plane, ``P``\ =\ :ref:`X_3 <X_3>` is the point of maximal area of its pedal triangle when considering all points P inside the circumcircle of :g:`ABC << A B C >>`. There are points P far away from the circumcircle for which the area of their pedal triangles is much larger. However, if you consider the signed area of the pedal triangle of P (of which sign depends on whether the points are in clockwise or anti-clockwise order), you could just say that the area of the pedal triangle of ``P`` is always negative whenever P is outside of the circumcircle so that ``P``\ =\ :ref:`X_3 <X_3>` gives the global maximum. (Mark Helman, July 10, 2020)
-
-.. container:: note-item
-
-   A slightly similar thing happens regarding the area of the antipedal triangle of ``P``. ``P``\ =\ :ref:`X_4 <X_4>` has the smallest area of its antipedal amongst all P in the interior of triangle :g:`ABC << A B C >>` (when :ref:`X_4 <X_4>` is in this interior). There are points P (on the circumcircle) for which this area goes to 0. However, if we consider the signed area of the antipedal, even though there are still regions of the plane outside of :g:`ABC << A B C >>` where the signed area is positive, ``P``\ =\ :ref:`X_4 <X_4>` gives the smallest area of the antipedal among all P for which this area is positive (this works even when :g:`ABC << A B C >>` is obtuse, and points close to the circumcircle (on both sides) have negative antipedal area). (Mark Helman, July 10, 2020)
-
-.. container:: note-item
-
-   View `Extremal Area Pedal and Antipedal Triangles <https://dan-reznik.github.io/extremal-pedal-antipedal/>`__, by Mark Helman, Ronaldo Garcia, and :person:`Dan Reznik <dan-reznik>`.
-
-.. container:: note-item
-
-   :ref:`X_4 <X_4>` and the vertices :g:`A <A>`, :g:`B <B>`, :g:`C <C>` comprise an orthocentric system, defined as a set of four points, one of which is the orthocenter of the triangle of the other three (so that each is the orthocenter of the other three). The incenter and excenters also form an orthocentric system. If :g:`ABC << A B C >>` is acute, then :ref:`X_4 <X_4>` is the incenter of the orthic triangle.
-
-.. container:: note-item
-
-   Suppose P is not on a sideline of :g:`ABC << A B C >>`. Let ``A'B'C'`` be the cevian triangle of P. Let ``D``, ``E``, ``F`` be the circles having diameters ``AA'``, ``BB'``,\ ``CC'``. The radical center of ``D``, ``E``, ``F`` is :ref:`X_4 <X_4>`. (:person:`Floor van Lamoen <floor-van-lamoen>`, :cite:`Hyacinthos #214 <hyacinthos>`, Jan. 24, 2000.)
-
-.. container:: note-item
-
-   Let ``A_2B_2C_2`` be the 2nd Conway triangle. Let ``A'`` be the crosspoint of ``B_2`` and ``C_2``, and define ``B'`` and ``C'`` cyclically. The lines ``AA'``, ``BB'``, ``CC'`` concur in :ref:`X_4 <X_4>`. (Randy Hutson, December 10, 2016)
-
-.. container:: note-item
-
-   Let ``T`` be any one of these trianges: {anticevian of :ref:`X_30 <X_30>`, anti-Hutson-intouch, anti-incircle-circles, Ehrmann side, :ref:`X_2 <X_2>`-Ehrmann, Gemini 15, Gemini 16, Kosnita, midheight, N-obverse of :ref:`X_6 <X_6>`, Schroeter, tangential, Trinh, 1st Zaniah, 2nd Zaniah}. Let ``O_A`` be the circle centered at the :g:`A <A>`-vertex of ``T`` and passing through :g:`A <A>`; define ``O_B`` and ``O_C`` cyclically. :ref:`X_4 <X_4>` is the radical center of ``O_A``, ``O_B``, ``O_C``. (Randy Hutson, August 30, 2020)
-
-.. container:: note-item
-
-   See **Ross Honsberger,** *Episodes in Nineteenth and Twentieth Century Euclidean Geometry,* Mathematical Association of America, 1995. Chapter 2: The Orthocenter.
-
-.. container:: note-item
-
-   In the plane of a triangle :g:`ABC << A B C >>`, let
-
-      * ``O_a`` = circle with diameter :g:`BC <[ B C ]>`, and define ``O_b`` and ``O_c`` cyclically;
-      * ``A'`` = reflection of :g:`A <A>` in ``O_a``, and define ``B'`` and ``C'`` cyclically;
-      * ``A_b`` = polar of ``A'`` with respect to ``O_b``, and define ``B_c`` and ``C_a`` cyclically;
-      * ``A_c`` = polar of ``A'`` with respect to ``OC``, and define ``B_a`` and ``C_b`` cyclically;
-      * ″ = ``A_b``\ ∩\ ``A_c``, and define ``B″`` and ``C″`` cyclically.
-
-   The triangle ``A″B″C″`` is perspective to :g:`ABC << A B C >>`, and the perspector is :ref:`X_4 <X_4>`. (:person:`Dasari Naga Vijay Krishna <dasari-naga-vijay-krishna>`, April 19, 2021)
-
-.. container:: note-item
-
-   In the plane of a triangle :g:`ABC << A B C >>`, let
-
-      * ``O_a`` = circle with diameter :g:`BC <[ B C ]>`, and define ``O_b`` and ``O_c`` cyclically;
-      * ``P_a`` = polar of :g:`A <A>` with respect to ``O_a``, and define ``P_b`` and ``P_c`` cyclically.
-
-   Then :ref:`X_4 <X_4>`\ = ``P_a``\ ∩\ ``P_b``\ ∩\ ``P_c``, (Dasari Naga Vijay Krishna, July 19, 2021)
-
-.. container:: note-item
-
-   For extensions of triangle geometry to 3-dimensional shapes called **orthocentric tetrahedra**, see
-
-.. container:: note-item
-
-   **William Barker and Roger Howe, Continuous Symmetry From Euclid to Klein,** American Mathematical Society, 2007, pages 306-309.
-
-.. container:: note-item
-
-   :ref:`X_4 <X_4>` is the {:ref:`X_3 <X_3>`,\ :ref:`X_5 <X_5>`}-harmonic conjugate of :ref:`X_2 <X_2>`.
-
 .. toctree::
    :hidden:
 
+   lines
+   relations
+   notes
    code

@@ -1,5 +1,6 @@
 :canonical_id: X_7
 :subtitle: GERGONNE POINT
+:tracks: Overview: index | Lines: lines | Relations: relations | Notes: notes | Code: code
 
 X_7
 ====

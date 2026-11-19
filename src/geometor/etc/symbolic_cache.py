@@ -338,20 +338,36 @@ class SymbolicCenterRecord:
     xy: tuple[sp.Expr, sp.Expr]
     sub_areas: tuple[sp.Expr, sp.Expr, sp.Expr]
     search_value: sp.Expr
+    is_indeterminate: bool = False
+    is_ideal: bool = False
+    symmetry_note: str = ""
 
     @property
     def is_kepler(self) -> bool:
         """Return whether this record belongs to the Kepler golden triangle."""
         return self.triangle_key.startswith("kepler")
 
+    @property
+    def is_finite(self) -> bool:
+        """Return whether this record represents a finite determinate Euclidean point."""
+        return not (self.is_indeterminate or self.is_ideal)
+
     def xy_latex(self) -> str:
         """Return ``(x, y)`` formatted as LaTeX."""
+        if self.is_indeterminate:
+            return r"\text{indeterminate } (0:0:0)"
+        if self.is_ideal:
+            return r"\infty \;\text{(line at infinity)}"
         kx = format_symbolic_latex(self.xy[0], kepler_phi=self.is_kepler)
         ky = format_symbolic_latex(self.xy[1], kepler_phi=self.is_kepler)
         return rf"\left({kx},\; {ky}\right)"
 
     def xy_pretty(self) -> str:
         """Return ``(x, y)`` formatted as compact Unicode."""
+        if self.is_indeterminate:
+            return "indeterminate (0 : 0 : 0)"
+        if self.is_ideal:
+            return "∞ (line at infinity)"
         px = format_symbolic_pretty(self.xy[0], kepler_phi=self.is_kepler)
         py = format_symbolic_pretty(self.xy[1], kepler_phi=self.is_kepler)
         return f"({px}, {py})"
@@ -390,14 +406,22 @@ class SymbolicCenterRecord:
 
     def search_latex(self) -> str:
         """Return the exact Kimberling search value as LaTeX."""
+        if self.is_indeterminate:
+            return r"\text{indeterminate}"
+        if self.is_ideal:
+            return r"\infty"
         return format_symbolic_latex(self.search_value, kepler_phi=self.is_kepler)
 
     def approx_xy(self) -> tuple[float, float]:
         """Return secondary float approximation of ``(x, y)`` for SVG layout."""
+        if not self.is_finite:
+            return (math.nan, math.nan)
         return (float(self.xy[0].evalf()), float(self.xy[1].evalf()))
 
     def approx_search_value(self) -> float:
         """Return float approximation of ``search_value``."""
+        if not self.is_finite:
+            return math.nan
         return float(self.search_value.evalf())
 
     def to_cache_dict(self) -> dict[str, Any]:
@@ -411,6 +435,9 @@ class SymbolicCenterRecord:
             "xy": [sp.srepr(x) for x in self.xy],
             "sub_areas": [sp.srepr(x) for x in self.sub_areas],
             "search_value": sp.srepr(self.search_value),
+            "is_indeterminate": self.is_indeterminate,
+            "is_ideal": self.is_ideal,
+            "symmetry_note": self.symmetry_note,
         }
 
     @classmethod
@@ -430,6 +457,9 @@ class SymbolicCenterRecord:
             xy=(xy[0], xy[1]),
             sub_areas=(sub_areas[0], sub_areas[1], sub_areas[2]),
             search_value=sp.sympify(data["search_value"]),
+            is_indeterminate=bool(data.get("is_indeterminate", False)),
+            is_ideal=bool(data.get("is_ideal", False)),
+            symmetry_note=str(data.get("symmetry_note", "")),
         )
 
 
@@ -440,7 +470,8 @@ class CenterSymbolicRegistry:
     ----------
     triangle :
         A :class:`SymbolicTriangle` instance or canonical preset name
-        (``"heronian"``, ``"right"``, ``"kepler"``, ``"kimberling"``).
+        (``"heronian"``, ``"right"``, ``"kepler"``, ``"kimberling"``,
+        ``"golden"``, ``"gnomon"``, ``"equilateral"``).
     cache_dir :
         Directory where per-triangle JSON cache files are stored. Pass ``None``
         to disable disk persistence (in-memory only).
@@ -546,23 +577,68 @@ class CenterSymbolicRegistry:
             u_raw, v_raw, w_raw = raw_bary
 
         bary = reduce_homogeneous_triple(u_raw, v_raw, w_raw, tri)
-        raw_trilin = tri.bary_to_trilinear(*bary)
-        trilinear = reduce_homogeneous_triple(*raw_trilin, tri)
-        norm_bary = tri.normalize_bary(*bary)
-        xy = tri.bary_to_cartesian(*bary)
-        sub_areas = tri.cartesian_to_sub_areas(*xy)
-        search_val = tri.kimberling_search_value(*bary)
+        z0 = sp.Integer(0)
+        if all(zero_test(x) for x in bary):
+            note = (
+                "Indeterminate (0 : 0 : 0) under equilateral D₃ symmetry"
+                if tri.is_equilateral
+                else "Indeterminate homogeneous triple (0 : 0 : 0)"
+            )
+            rec = SymbolicCenterRecord(
+                num=num,
+                triangle_key=tri.key,
+                bary=(z0, z0, z0),
+                norm_bary=(z0, z0, z0),
+                trilinear=(z0, z0, z0),
+                xy=(z0, z0),
+                sub_areas=(z0, z0, z0),
+                search_value=z0,
+                is_indeterminate=True,
+                symmetry_note=note,
+            )
+        elif zero_test(tri.simplify(bary[0] + bary[1] + bary[2])):
+            raw_trilin = tri.bary_to_trilinear(*bary)
+            trilinear = reduce_homogeneous_triple(*raw_trilin, tri)
+            rec = SymbolicCenterRecord(
+                num=num,
+                triangle_key=tri.key,
+                bary=bary,
+                norm_bary=(z0, z0, z0),
+                trilinear=trilinear,
+                xy=(sp.oo, sp.oo),
+                sub_areas=(z0, z0, z0),
+                search_value=sp.oo,
+                is_ideal=True,
+                symmetry_note="Ideal point on the line at infinity (u + v + w = 0)",
+            )
+        else:
+            raw_trilin = tri.bary_to_trilinear(*bary)
+            trilinear = reduce_homogeneous_triple(*raw_trilin, tri)
+            norm_bary = tri.normalize_bary(*bary)
+            xy = tri.bary_to_cartesian(*bary)
+            sub_areas = tri.cartesian_to_sub_areas(*xy)
+            search_val = tri.kimberling_search_value(*bary)
+            sym_note = (
+                "Coalesces to symmetry center O under equilateral D₃ symmetry"
+                if tri.is_equilateral
+                else (
+                    "Lies on the vertical axis of symmetry"
+                    if tri.is_isosceles and zero_test(bary[0] - bary[1])
+                    else ""
+                )
+            )
+            rec = SymbolicCenterRecord(
+                num=num,
+                triangle_key=tri.key,
+                bary=bary,
+                norm_bary=norm_bary,
+                trilinear=trilinear,
+                xy=xy,
+                sub_areas=sub_areas,
+                search_value=search_val,
+                symmetry_note=sym_note,
+            )
 
-        rec = SymbolicCenterRecord(
-            num=num,
-            triangle_key=tri.key,
-            bary=bary,
-            norm_bary=norm_bary,
-            trilinear=trilinear,
-            xy=xy,
-            sub_areas=sub_areas,
-            search_value=search_val,
-        )
         if raw_bary is None:
             self._records[num] = rec
             self._dirty = True

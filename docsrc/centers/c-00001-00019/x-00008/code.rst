@@ -1,5 +1,6 @@
 :canonical_id: X_8
 :subtitle: NAGEL POINT
+:tracks: Overview: index | Lines: lines | Relations: relations | Notes: notes | Code: code
 
 X_8
 ====

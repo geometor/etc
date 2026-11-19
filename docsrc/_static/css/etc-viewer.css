@@ -1,0 +1,1754 @@
+/* =========================================================================
+   GEOMETOR ETC — Unified Mode-Switching Viewer, Split-Stage & Tabular Styles
+   Harmonized with photon-platform/publish foundation Book Codex (Gold theme)
+   ========================================================================= */
+
+/* -------------------------------------------------------------------------
+   1. Wide-Screen Sticky Split-Stage Layout ("if we have the room — use it")
+   ------------------------------------------------------------------------- */
+article.book-reading-pane.has-etc-stage {
+  transition: max-width 0.18s ease;
+}
+
+.etc-split-workspace {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.etc-stage-column {
+  width: 100%;
+  min-width: 0;
+}
+
+.etc-prose-column {
+  width: 100%;
+  min-width: 0;
+}
+
+/* Activate generous two-column sticky workspace on wide desktops */
+@media (min-width: 1280px) {
+  article.book-reading-pane.has-etc-stage:not(.etc-layout-stacked),
+  article.book-reading-pane:has(.etc-split-workspace):not(.etc-layout-stacked) {
+    max-width: min(94vw, 94rem) !important;
+  }
+
+  article.book-reading-pane.has-etc-stage:not(.etc-layout-stacked) .etc-split-workspace,
+  article.book-reading-pane:has(.etc-split-workspace):not(.etc-layout-stacked) .etc-split-workspace {
+    display: grid;
+    grid-template-columns: minmax(460px, 1.05fr) minmax(460px, 1fr);
+    gap: 2rem;
+    align-items: start;
+  }
+
+  article.book-reading-pane.has-etc-stage:not(.etc-layout-stacked) .etc-stage-column,
+  article.book-reading-pane:has(.etc-split-workspace):not(.etc-layout-stacked) .etc-stage-column {
+    position: sticky;
+    top: 4.5rem;
+    align-self: start;
+  }
+
+  article.book-reading-pane.has-etc-stage:not(.etc-layout-stacked) .etc-viewer svg.geometor-etc-drawing,
+  article.book-reading-pane:has(.etc-split-workspace):not(.etc-layout-stacked) .etc-viewer svg.geometor-etc-drawing {
+    max-height: min(68vh, 640px);
+  }
+}
+
+/* -------------------------------------------------------------------------
+   1b. Fullscreen Geometry App Mode (Press 'F' or Toolbar ⛶ Button)
+   ------------------------------------------------------------------------- */
+.etc-app-bar,
+.etc-app-splitter {
+  display: none;
+}
+
+html.etc-app-fullscreen,
+body.etc-app-fullscreen {
+  overflow: hidden !important;
+  height: 100vh !important;
+}
+
+article.book-reading-pane.etc-app-fullscreen {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  z-index: 9500 !important;
+  background: #141416 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+article.book-reading-pane.etc-app-fullscreen > header.book-header,
+article.book-reading-pane.etc-app-fullscreen > footer.book-footer,
+article.book-reading-pane.etc-app-fullscreen .book-content > section > h1,
+article.book-reading-pane.etc-app-fullscreen .book-content > section > p.rubric,
+article.book-reading-pane.etc-app-fullscreen .book-content > section > .etc-identity-bar {
+  display: none !important;
+}
+
+article.book-reading-pane.etc-app-fullscreen > .etc-app-bar {
+  display: flex;
+  flex: 0 0 44px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0 0.85rem;
+  background: #19191d;
+  border-bottom: 1px solid #2e2d34;
+  font-family: var(--geom-font-sans, "Fira Sans Condensed", system-ui, sans-serif);
+  user-select: none;
+}
+
+.etc-app-bar-left,
+.etc-app-bar-center,
+.etc-app-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-width: 0;
+}
+
+.etc-app-brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  padding-right: 0.35rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.etc-app-brand-id {
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--geom-accent, #e8b85a);
+}
+
+.etc-app-brand-title {
+  font-size: 0.86rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #cbd5e1;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.etc-app-nav-btn,
+.etc-app-exit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 3px 9px;
+  border-radius: 4px;
+  border: 1px solid #35343c;
+  background: rgba(255, 255, 255, 0.04);
+  color: #d4d4d8;
+  font-size: 12.5px;
+  font-weight: 600;
+  text-decoration: none !important;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.14s ease, border-color 0.14s ease, background-color 0.14s ease;
+}
+
+.etc-app-nav-btn:hover,
+.etc-app-exit-btn:hover {
+  color: var(--geom-accent, #e8b85a);
+  border-color: var(--geom-accent, #e8b85a);
+  background: rgba(232, 184, 90, 0.12);
+}
+
+.etc-app-tracks {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.etc-app-tracks .book-track-sep {
+  display: none;
+}
+
+.etc-app-tracks .book-track-item {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 11px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  color: #a1a1aa;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-decoration: none !important;
+  transition: color 0.14s ease, background-color 0.14s ease, border-color 0.14s ease;
+}
+
+.etc-app-tracks .book-track-item:hover {
+  color: #f8fafc;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.etc-app-tracks .book-track-item.is-active {
+  color: var(--geom-accent, #e8b85a);
+  background: rgba(232, 184, 90, 0.15);
+  border-color: rgba(232, 184, 90, 0.45);
+}
+
+.etc-app-keys-hint {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 11px;
+  color: #7c7770;
+  white-space: nowrap;
+}
+
+article.book-reading-pane.etc-app-fullscreen > .book-content {
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+}
+
+article.book-reading-pane.etc-app-fullscreen > .book-content > section {
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+}
+
+article.book-reading-pane.etc-app-fullscreen > .book-content > section > .enunciation {
+  flex: 0 0 auto !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0.32rem 1.25rem !important;
+  font-size: 0.9rem !important;
+  line-height: 1.4 !important;
+  background: #17171b;
+  border-bottom: 1px solid #29282e;
+}
+
+article.book-reading-pane.etc-app-fullscreen .etc-split-workspace {
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
+  height: 100% !important;
+  display: grid !important;
+  grid-template-columns: var(--etc-app-left, 58%) 6px minmax(320px, 1fr) !important;
+  gap: 0 !important;
+  align-items: stretch !important;
+  overflow: hidden !important;
+}
+
+article.book-reading-pane.etc-app-fullscreen .etc-stage-column {
+  position: static !important;
+  top: auto !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 8px 5px 8px 10px !important;
+  overflow: hidden !important;
+}
+
+article.book-reading-pane.etc-app-fullscreen .etc-stage-column .etc-viewer {
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+article.book-reading-pane.etc-app-fullscreen .etc-stage-column .etc-svg-stage {
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
+  display: flex !important;
+  align-items: stretch !important;
+  justify-content: stretch !important;
+}
+
+article.book-reading-pane.etc-app-fullscreen .etc-stage-column .etc-viewer svg.geometor-etc-drawing {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: none !important;
+  flex: 1 1 auto !important;
+}
+
+article.book-reading-pane.etc-app-fullscreen .etc-app-splitter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6px;
+  cursor: col-resize;
+  background: #1a191d;
+  border-left: 1px solid #2b2a30;
+  border-right: 1px solid #2b2a30;
+  user-select: none;
+  touch-action: none;
+  transition: background-color 0.14s ease, border-color 0.14s ease;
+}
+
+article.book-reading-pane.etc-app-fullscreen .etc-app-splitter::after {
+  content: "";
+  width: 2px;
+  height: 36px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.22);
+  transition: background-color 0.14s ease, height 0.14s ease;
+}
+
+article.book-reading-pane.etc-app-fullscreen .etc-app-splitter:hover,
+article.book-reading-pane.etc-app-fullscreen .etc-app-splitter.is-dragging {
+  background: rgba(232, 184, 90, 0.18);
+  border-color: rgba(232, 184, 90, 0.55);
+}
+
+article.book-reading-pane.etc-app-fullscreen .etc-app-splitter:hover::after,
+article.book-reading-pane.etc-app-fullscreen .etc-app-splitter.is-dragging::after {
+  background: var(--geom-accent, #e8b85a);
+  height: 52px;
+}
+
+article.book-reading-pane.etc-app-fullscreen .etc-prose-column {
+  height: 100% !important;
+  min-height: 0 !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  padding: 12px 16px 28px 14px !important;
+  scrollbar-width: thin;
+  scrollbar-color: #4a4742 transparent;
+}
+
+@media (max-width: 1024px) {
+  .etc-app-keys-hint,
+  .etc-app-brand-title {
+    display: none;
+  }
+}
+
+@media (max-width: 860px) {
+  article.book-reading-pane.etc-app-fullscreen .etc-split-workspace {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 52% 1fr !important;
+  }
+  article.book-reading-pane.etc-app-fullscreen .etc-app-splitter {
+    display: none !important;
+  }
+}
+
+/* -------------------------------------------------------------------------
+   2. Unified Graphic Viewer Shell (.etc-viewer)
+   ------------------------------------------------------------------------- */
+.etc-viewer {
+  width: 100%;
+  background: #141416;
+  border: 1px solid var(--book-border, #3d3934);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.28);
+}
+
+.etc-viewer-chrome {
+  flex: 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.35rem 0.75rem;
+  background: #1b1b1e;
+  border-bottom: 1px solid #2e2d32;
+  padding: 6px 10px 0 10px;
+}
+
+.etc-mode-tabs,
+.etc-triangle-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px;
+}
+
+.etc-mode-tabs {
+  padding-bottom: 5px;
+}
+
+.etc-mode-btn {
+  background: transparent;
+  color: #a1a1aa;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 3px 10px;
+  font-family: var(--geom-font-sans, "Fira Sans Condensed", system-ui, sans-serif);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.14s ease, background-color 0.14s ease, border-color 0.14s ease;
+}
+
+.etc-mode-btn:hover {
+  color: #f5f5f5;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.etc-mode-btn.active {
+  background: rgba(232, 184, 90, 0.16);
+  color: var(--geom-accent, #e8b85a);
+  border-color: rgba(232, 184, 90, 0.45);
+}
+
+.etc-tab-btn {
+  background: transparent;
+  color: #9c958a;
+  border: 1px solid transparent;
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+  padding: 5px 12px;
+  font-family: var(--geom-font-sans, "Fira Sans Condensed", system-ui, sans-serif);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.14s ease, background-color 0.14s ease;
+  margin-bottom: -1px;
+}
+
+.etc-tab-btn:hover {
+  color: #f5f5f5;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.etc-tab-btn.active {
+  background: #141416;
+  color: var(--geom-accent, #e8b85a);
+  border-color: #2e2d32;
+  border-bottom: 1px solid #141416;
+}
+
+.etc-triangle-tabs.is-disabled {
+  display: none;
+}
+
+/* Stage Container & Loading State */
+.etc-svg-stage {
+  position: relative;
+  width: 100%;
+  background: #141416;
+  min-height: 260px;
+}
+
+.etc-svg-stage.is-loading::after {
+  content: "Loading view…";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(20, 20, 22, 0.72);
+  color: var(--geom-accent, #e8b85a);
+  font-family: var(--book-font-mono, ui-monospace, monospace);
+  font-size: 13px;
+  z-index: 26;
+  pointer-events: none;
+}
+
+.etc-viewer-caption {
+  flex: 0 0 auto;
+  padding: 0.55rem 0.85rem;
+  font-size: 0.9rem;
+  line-height: 1.48;
+  color: var(--book-text-muted, #9c958a);
+  background: #19191c;
+  border-top: 1px solid #2a292e;
+}
+
+.etc-viewer-caption p {
+  margin: 0 !important;
+  text-indent: 0 !important;
+  text-align: left !important;
+}
+
+.etc-viewer-caption a.headerlink {
+  display: none !important;
+}
+
+.etc-viewer-notice {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background: rgba(24, 24, 28, 0.94);
+  border: 1px solid rgba(232, 184, 90, 0.45);
+  color: #f5e6c8;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-family: var(--book-font-mono, ui-monospace, monospace);
+  font-size: 11.5px;
+  z-index: 25;
+}
+
+/* -------------------------------------------------------------------------
+   3. Scoped SVG Drawing Rules (Replaces Duplicate Per-SVG <style> Blocks)
+   ------------------------------------------------------------------------- */
+.etc-viewer svg.geometor-etc-drawing {
+  width: 100%;
+  height: auto;
+  max-height: 540px;
+  background-color: #161616;
+  border: none;
+  border-radius: 0;
+  display: block;
+  user-select: none;
+  touch-action: none;
+  cursor: grab;
+}
+
+.etc-viewer svg.geometor-etc-drawing.is-panning {
+  cursor: grabbing;
+}
+
+.etc-viewer svg.geometor-etc-drawing.hide-labels #labels .point-label,
+.etc-viewer svg.geometor-etc-drawing.hide-labels #labels .guide-label,
+.etc-viewer svg.geometor-etc-drawing.hide-labels #labels .target-label,
+.etc-viewer svg.geometor-etc-drawing.hide-labels #labels .given-label {
+  display: none;
+}
+
+.etc-viewer svg.geometor-etc-drawing.hide-guides .guide {
+  display: none !important;
+}
+
+.etc-viewer svg.geometor-etc-drawing:not(.show-lines) .incident {
+  display: none !important;
+}
+
+.etc-viewer svg.geometor-etc-drawing #points circle {
+  fill: #e0e0e0;
+  stroke: #161616;
+  stroke-width: 2.5;
+  vector-effect: non-scaling-stroke;
+  cursor: pointer;
+  transition: fill 0.1s ease, stroke 0.1s ease;
+}
+
+.etc-viewer svg.geometor-etc-drawing #points circle.given {
+  fill: #6F6;
+}
+
+.etc-viewer svg.geometor-etc-drawing #points circle.guide {
+  fill: orange;
+  stroke-dasharray: none;
+}
+
+/* Canonical geometor.explorer selected point: hollow canvas fill + accent ring */
+.etc-viewer svg.geometor-etc-drawing #points circle.selected,
+.etc-viewer svg.geometor-etc-drawing #points circle.given.selected,
+.etc-viewer svg.geometor-etc-drawing #points circle.target {
+  fill: #161616;
+  stroke: var(--geom-accent, #e8b85a);
+  stroke-width: 2.8;
+}
+
+/* Canonical geometor.explorer hover/highlight: solid accent fill + dark cutout stroke */
+.etc-viewer svg.geometor-etc-drawing #points circle:hover,
+.etc-viewer svg.geometor-etc-drawing #points circle.hover,
+.etc-viewer svg.geometor-etc-drawing #points circle.geom-highlight-active {
+  fill: var(--geom-accent, #e8b85a) !important;
+  stroke: #161616 !important;
+  stroke-width: 2.5 !important;
+}
+
+.etc-viewer svg.geometor-etc-drawing #points circle.geom-highlight-secondary {
+  fill: #f6d38b !important;
+  stroke: #161616 !important;
+  stroke-width: 2.5 !important;
+}
+
+/* Pinned / click-selected point keeps Explorer's hollow-ring selection state */
+.etc-viewer svg.geometor-etc-drawing #points circle.is-pinned {
+  fill: #161616 !important;
+  stroke: #ffd54f !important;
+  stroke-width: 3 !important;
+}
+
+.etc-viewer svg.geometor-etc-drawing #elements line,
+.etc-viewer svg.geometor-etc-drawing #elements path.line {
+  fill: none;
+  stroke: #b0bec5;
+  stroke-width: 2.2;
+  stroke-dasharray: 2, 4.5;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+  cursor: pointer;
+}
+
+.etc-viewer svg.geometor-etc-drawing #elements line.sideline,
+.etc-viewer svg.geometor-etc-drawing #elements path.line.sideline {
+  stroke: #cbd5e1;
+  stroke-width: 2.3;
+}
+
+.etc-viewer svg.geometor-etc-drawing #elements line.central_line,
+.etc-viewer svg.geometor-etc-drawing #elements path.line.central_line {
+  stroke: #0bd;
+  stroke-width: 1.85;
+  stroke-opacity: 0.85;
+}
+
+.etc-viewer svg.geometor-etc-drawing #elements line.central_line[data-color-token="orange"] { stroke: #fb923c; stroke-dasharray: 6, 3; }
+.etc-viewer svg.geometor-etc-drawing #elements line.central_line[data-color-token="teal"] { stroke: #2dd4bf; stroke-dasharray: 6, 3; }
+.etc-viewer svg.geometor-etc-drawing #elements line.central_line[data-color-token="blue"] { stroke: #38bdf8; stroke-dasharray: 6, 3; }
+.etc-viewer svg.geometor-etc-drawing #elements line.central_line[data-color-token="orchid"] { stroke: #e879f9; stroke-dasharray: 6, 3; }
+.etc-viewer svg.geometor-etc-drawing #elements line.central_line[data-color-token="pink"] { stroke: #f472b6; stroke-dasharray: 6, 3; }
+.etc-viewer svg.geometor-etc-drawing #elements line.central_line[data-color-token="lime"] { stroke: #a3e635; stroke-dasharray: 6, 3; }
+.etc-viewer svg.geometor-etc-drawing #elements line.central_line[data-color-token="green"] { stroke: #5ec27e; stroke-dasharray: 6, 3; }
+.etc-viewer svg.geometor-etc-drawing #elements line.central_line[data-color-token="purple"] { stroke: #a855f7; stroke-dasharray: 6, 3; }
+
+.etc-viewer svg.geometor-etc-drawing #elements line.golden,
+.etc-viewer svg.geometor-etc-drawing #elements path.line.golden,
+.etc-viewer svg.geometor-etc-drawing #elements line.euler,
+.etc-viewer svg.geometor-etc-drawing #elements path.line.euler {
+  stroke: gold;
+  stroke-width: 2.1;
+}
+
+.etc-viewer svg.geometor-etc-drawing #elements line.strut {
+  stroke: gold;
+  stroke-width: 2.8;
+  stroke-dasharray: none;
+  stroke-opacity: 0.95;
+}
+
+.etc-viewer svg.geometor-etc-drawing #elements circle {
+  fill: none;
+  stroke: #C09;
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+  cursor: pointer;
+}
+
+.etc-viewer svg.geometor-etc-drawing #elements circle.incircle {
+  stroke: #e040fb;
+}
+
+.etc-viewer svg.geometor-etc-drawing #elements circle.nine_point_circle {
+  stroke: #00e5ff;
+  stroke-dasharray: 6, 3;
+}
+
+.etc-viewer svg.geometor-etc-drawing #elements circle.secondary_circle {
+  stroke: #ff9100;
+  stroke-dasharray: 5, 3;
+  stroke-opacity: 0.85;
+}
+
+.etc-viewer svg.geometor-etc-drawing #elements .bisector {
+  stroke-dasharray: 2, 4;
+}
+
+.etc-viewer svg.geometor-etc-drawing #elements .guide {
+  stroke: orange;
+  stroke-dasharray: 2, 4;
+  stroke-opacity: 0.65;
+}
+
+.etc-viewer svg.geometor-etc-drawing #elements line:hover,
+.etc-viewer svg.geometor-etc-drawing #elements line.hover,
+.etc-viewer svg.geometor-etc-drawing #elements line.geom-highlight-active,
+.etc-viewer svg.geometor-etc-drawing #elements path.line:hover,
+.etc-viewer svg.geometor-etc-drawing #elements path.line.hover,
+.etc-viewer svg.geometor-etc-drawing #elements path.line.geom-highlight-active,
+.etc-viewer svg.geometor-etc-drawing #elements circle:hover,
+.etc-viewer svg.geometor-etc-drawing #elements circle.hover,
+.etc-viewer svg.geometor-etc-drawing #elements circle.geom-highlight-active {
+  stroke: var(--geom-accent, #e8b85a) !important;
+  stroke-width: 3.2 !important;
+  stroke-dasharray: none !important;
+  stroke-opacity: 1 !important;
+}
+
+.etc-viewer svg.geometor-etc-drawing #highlights .highlight-segment {
+  stroke: var(--geom-accent, #e8b85a);
+  fill: none;
+  stroke-width: 6;
+  stroke-opacity: 0.42;
+  vector-effect: non-scaling-stroke;
+  marker-start: url(#marker);
+  marker-end: url(#marker);
+  pointer-events: none;
+}
+
+.etc-viewer svg.geometor-etc-drawing #graphics polyline {
+  stroke: #ffd54f;
+  fill: none;
+  stroke-width: 3.2;
+  vector-effect: non-scaling-stroke;
+  cursor: pointer;
+}
+
+.etc-viewer svg.geometor-etc-drawing #graphics polygon {
+  stroke: #36c9;
+  fill: #36c2;
+  stroke-width: 6;
+  vector-effect: non-scaling-stroke;
+  stroke-linejoin: round;
+  marker-start: url(#marker);
+  marker-mid: url(#marker);
+  marker-end: url(#marker);
+  cursor: pointer;
+}
+
+.etc-viewer svg.geometor-etc-drawing #graphics polygon.secondary {
+  stroke: rgba(144, 238, 144, 0.55);
+  fill: rgba(144, 238, 144, 0.08);
+  stroke-width: 3;
+}
+
+.etc-viewer svg.geometor-etc-drawing #graphics polygon.subarea-a {
+  stroke: rgba(255, 112, 67, 0.72);
+  fill: rgba(255, 112, 67, 0.20);
+  stroke-width: 2.4;
+  marker-start: none;
+  marker-mid: none;
+  marker-end: none;
+}
+
+.etc-viewer svg.geometor-etc-drawing #graphics polygon.subarea-b {
+  stroke: rgba(102, 187, 106, 0.72);
+  fill: rgba(102, 187, 106, 0.20);
+  stroke-width: 2.4;
+  marker-start: none;
+  marker-mid: none;
+  marker-end: none;
+}
+
+.etc-viewer svg.geometor-etc-drawing #graphics polygon.subarea-c {
+  stroke: rgba(66, 165, 245, 0.72);
+  fill: rgba(66, 165, 245, 0.20);
+  stroke-width: 2.4;
+  marker-start: none;
+  marker-mid: none;
+  marker-end: none;
+}
+
+.etc-viewer svg.geometor-etc-drawing #graphics polygon:hover,
+.etc-viewer svg.geometor-etc-drawing #graphics polygon.hover,
+.etc-viewer svg.geometor-etc-drawing #graphics polygon.geom-highlight-active,
+.etc-viewer svg.geometor-etc-drawing #graphics polyline:hover,
+.etc-viewer svg.geometor-etc-drawing #graphics polyline.hover,
+.etc-viewer svg.geometor-etc-drawing #graphics polyline.geom-highlight-active {
+  stroke: var(--geom-accent, #e8b85a) !important;
+  stroke-opacity: 1 !important;
+}
+
+.etc-viewer svg.geometor-etc-drawing #graphics polygon.subarea-a:hover,
+.etc-viewer svg.geometor-etc-drawing #graphics polygon.subarea-a.hover,
+.etc-viewer svg.geometor-etc-drawing #graphics polygon.subarea-a.geom-highlight-active {
+  fill: rgba(255, 112, 67, 0.38) !important;
+}
+
+.etc-viewer svg.geometor-etc-drawing #graphics polygon.subarea-b:hover,
+.etc-viewer svg.geometor-etc-drawing #graphics polygon.subarea-b.hover,
+.etc-viewer svg.geometor-etc-drawing #graphics polygon.subarea-b.geom-highlight-active {
+  fill: rgba(102, 187, 106, 0.38) !important;
+}
+
+.etc-viewer svg.geometor-etc-drawing #graphics polygon.subarea-c:hover,
+.etc-viewer svg.geometor-etc-drawing #graphics polygon.subarea-c.hover,
+.etc-viewer svg.geometor-etc-drawing #graphics polygon.subarea-c.geom-highlight-active {
+  fill: rgba(66, 165, 245, 0.38) !important;
+}
+
+.etc-viewer svg.geometor-etc-drawing #labels text {
+  fill: #e0e0e0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-weight: 600;
+  paint-order: stroke;
+  stroke: #161616;
+  stroke-width: 0.15em;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  user-select: none;
+  pointer-events: none;
+}
+
+.etc-viewer svg.geometor-etc-drawing #labels tspan {
+  paint-order: stroke;
+  stroke: #161616;
+  stroke-width: 0.15em;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.etc-viewer svg.geometor-etc-drawing #labels text.target-label {
+  fill: gold;
+  font-weight: 700;
+}
+
+.etc-viewer svg.geometor-etc-drawing #labels text.given-label {
+  fill: #8f8;
+}
+
+.etc-viewer svg.geometor-etc-drawing #labels text.guide-label {
+  fill: #ffb74d;
+  font-weight: 600;
+}
+
+.etc-viewer svg.geometor-etc-drawing #labels text.hover-label,
+.etc-viewer svg.geometor-etc-drawing #labels text.geom-highlight-active,
+.etc-viewer svg.geometor-etc-drawing #labels text.geom-highlight-secondary {
+  fill: var(--geom-accent, #e8b85a) !important;
+  font-weight: 700;
+}
+
+.etc-viewer svg.geometor-etc-drawing #labels text.dense-label {
+  display: none;
+}
+
+.etc-viewer svg.geometor-etc-drawing #labels text.dense-label.hover-label,
+.etc-viewer svg.geometor-etc-drawing #labels text.dense-label.geom-highlight-secondary {
+  display: block !important;
+}
+
+.etc-viewer svg.geometor-etc-drawing #labels text.etc-label-crowded {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
+.etc-viewer svg.geometor-etc-drawing #labels text.etc-label-crowded.hover-label,
+.etc-viewer svg.geometor-etc-drawing #labels text.etc-label-crowded.geom-highlight-active,
+.etc-viewer svg.geometor-etc-drawing #labels text.etc-label-crowded.geom-highlight-secondary {
+  opacity: 1 !important;
+  display: block !important;
+}
+
+/* Plate-specific elements (Coordinates & Four-Triangle Grids) */
+.etc-viewer svg.geometor-etc-drawing .etc-plate-poly {
+  cursor: pointer;
+  transition: fill-opacity 0.12s ease, stroke 0.12s ease;
+}
+
+.etc-viewer svg.geometor-etc-drawing .etc-plate-poly.hover,
+.etc-viewer svg.geometor-etc-drawing .etc-plate-poly.geom-highlight-active {
+  stroke: #ffd54f !important;
+  stroke-width: 3.2px !important;
+  fill-opacity: 0.42 !important;
+}
+
+.etc-viewer svg.geometor-etc-drawing .etc-plate-strut,
+.etc-viewer svg.geometor-etc-drawing .etc-plate-line,
+.etc-viewer svg.geometor-etc-drawing .etc-plate-circle,
+.etc-viewer svg.geometor-etc-drawing .etc-plate-pt,
+.etc-viewer svg.geometor-etc-drawing .etc-plate-panel {
+  cursor: pointer;
+}
+
+.etc-viewer svg.geometor-etc-drawing .etc-plate-strut.hover,
+.etc-viewer svg.geometor-etc-drawing .etc-plate-strut.geom-highlight-active {
+  stroke: #ffd54f !important;
+  stroke-width: 6.4px !important;
+  stroke-dasharray: none !important;
+  opacity: 1 !important;
+}
+
+.etc-viewer svg.geometor-etc-drawing .etc-plate-line.hover,
+.etc-viewer svg.geometor-etc-drawing .etc-plate-line.geom-highlight-active,
+.etc-viewer svg.geometor-etc-drawing .etc-plate-circle.hover,
+.etc-viewer svg.geometor-etc-drawing .etc-plate-circle.geom-highlight-active {
+  stroke: #ffd54f !important;
+  stroke-width: 4.8px !important;
+  stroke-dasharray: none !important;
+  opacity: 1 !important;
+}
+
+.etc-viewer svg.geometor-etc-drawing .etc-plate-pt {
+  vector-effect: non-scaling-stroke;
+}
+
+.etc-viewer svg.geometor-etc-drawing .etc-plate-pt.target,
+.etc-viewer svg.geometor-etc-drawing .etc-plate-pt.selected {
+  fill: #161616 !important;
+  stroke: var(--geom-accent, #e8b85a) !important;
+  stroke-width: 2.8px !important;
+}
+
+.etc-viewer svg.geometor-etc-drawing .etc-plate-pt:hover,
+.etc-viewer svg.geometor-etc-drawing .etc-plate-pt.hover,
+.etc-viewer svg.geometor-etc-drawing .etc-plate-pt.geom-highlight-active {
+  fill: var(--geom-accent, #e8b85a) !important;
+  stroke: #161616 !important;
+  stroke-width: 2.5px !important;
+}
+
+.etc-viewer svg.geometor-etc-drawing .etc-plate-pt.is-pinned {
+  fill: #161616 !important;
+  stroke: #ffd54f !important;
+  stroke-width: 3px !important;
+}
+
+.etc-viewer svg.geometor-etc-drawing .etc-plate-panel.hover > rect.etc-panel-border,
+.etc-viewer svg.geometor-etc-drawing .etc-plate-panel.geom-highlight-active > rect.etc-panel-border {
+  stroke: var(--geom-accent, #e8b85a) !important;
+  stroke-width: 2.8px !important;
+}
+
+/* -------------------------------------------------------------------------
+   4. Docked Stage Footer (Status + Toolbar) & Symbolic MathJax HUD
+   ------------------------------------------------------------------------- */
+.etc-stage-footer {
+  flex: 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 12px;
+  padding: 6px 10px;
+  background: #161619;
+  border-top: 1px solid #26252b;
+  z-index: 5;
+}
+
+.etc-svg-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  margin-left: auto;
+}
+
+.etc-viewer svg.geometor-etc-drawing text.subtitle-label {
+  display: none !important;
+}
+
+.etc-stage-status {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  line-height: 1.35;
+  color: #a8a29e;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.etc-stage-status:empty {
+  display: none;
+}
+
+.etc-stage-status sub {
+  font-size: 0.74em;
+  line-height: 0;
+}
+
+.etc-svg-btn {
+  background: rgba(18, 18, 20, 0.9);
+  color: #e0e0e0;
+  border: 1px solid #444;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  line-height: 1.4;
+  cursor: pointer;
+  user-select: none;
+}
+
+.etc-svg-btn:hover,
+.etc-svg-btn.active {
+  background: rgba(232, 184, 90, 0.16);
+  color: var(--geom-accent, #e8b85a);
+  border-color: var(--geom-accent, #e8b85a);
+}
+
+.etc-symbolic-hud {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  max-width: min(360px, calc(100% - 20px));
+  background: rgba(16, 17, 22, 0.94);
+  border: 1px solid rgba(232, 184, 90, 0.44);
+  border-radius: 6px;
+  padding: 7px 11px;
+  color: #eaeaea;
+  font-family: var(--geom-font-sans, "Fira Sans Condensed", system-ui, sans-serif);
+  font-size: 13px;
+  line-height: 1.36;
+  z-index: 24;
+  pointer-events: none;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.58);
+  opacity: 0;
+  transform: translateY(3px);
+  transition: opacity 0.12s ease, transform 0.12s ease, left 0.12s ease-out, top 0.12s ease-out;
+}
+
+.etc-symbolic-hud.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.etc-symbolic-hud.is-pinned {
+  pointer-events: auto;
+  border-color: var(--geom-accent, #e8b85a);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.72), 0 0 0 1px rgba(232, 184, 90, 0.35);
+}
+
+.etc-hud-head {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 4px;
+  margin-bottom: 5px;
+}
+
+.etc-hud-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.etc-hud-id {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-weight: 700;
+  color: var(--geom-accent, #e8b85a);
+  font-size: 13px;
+}
+
+.etc-hud-title {
+  font-weight: 600;
+  color: #f5f5f5;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.etc-hud-kind {
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #9c958a;
+}
+
+.etc-hud-pin-hint {
+  font-size: 10px;
+  color: var(--geom-accent, #e8b85a);
+  border: 1px solid rgba(232, 184, 90, 0.4);
+  border-radius: 3px;
+  padding: 0 4px;
+  cursor: pointer;
+}
+
+.etc-hud-rows {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2px 10px;
+  align-items: baseline;
+}
+
+.etc-hud-key {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 11.5px;
+  color: #9c958a;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.etc-hud-val {
+  color: #f8fafc;
+  font-size: 13.5px;
+  overflow-wrap: anywhere;
+}
+
+.etc-hud-val mjx-container {
+  font-size: 1.02em;
+  margin: 0 !important;
+}
+
+.etc-hud-approx {
+  margin-top: 4px;
+  padding-top: 3px;
+  border-top: 1px dashed rgba(255, 255, 255, 0.09);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 11px;
+  color: #9c958a;
+}
+
+.etc-math-fallback {
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: 1.06em;
+}
+
+.etc-math-frac {
+  display: inline-flex;
+  flex-direction: column;
+  vertical-align: middle;
+  text-align: center;
+  padding: 0 2px;
+  font-size: 0.88em;
+  line-height: 1.05;
+}
+
+.etc-math-num {
+  border-bottom: 1px solid rgba(248, 250, 252, 0.65);
+  padding: 0 2px 1px;
+}
+
+.etc-math-den {
+  padding: 1px 2px 0;
+}
+
+.etc-math-rad {
+  border-top: 1px solid rgba(248, 250, 252, 0.6);
+  padding: 0 2px;
+}
+
+/* -------------------------------------------------------------------------
+   5. Tabular Presentation & Two-Way Row Sync
+   ------------------------------------------------------------------------- */
+.etc-identity-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.35rem 0.9rem;
+  padding: 0.42rem 0.85rem;
+  margin: 0 0 0.75rem 0;
+  background: var(--book-surface, #272629);
+  border: 1px solid var(--book-border, #3d3934);
+  border-radius: 5px;
+  font-size: 0.92rem;
+  color: var(--book-text-muted, #9c958a);
+}
+
+.etc-identity-bar p {
+  margin: 0 !important;
+  text-indent: 0 !important;
+  text-align: center !important;
+}
+
+/* Enunciation sits full-width beneath title & identity bar, directly before graphic + tables */
+.book-reading-pane .book-content > section > .enunciation,
+.folio-book-page > section > .enunciation {
+  max-width: 78ch;
+  margin: 0 auto 1.15rem auto !important;
+  padding: 0.15rem 0.5rem;
+  text-align: center;
+  line-height: 1.55;
+}
+
+/* Flush-top right column beside the sticky graphic */
+.etc-prose-column > section:first-child {
+  margin-top: 0 !important;
+}
+
+.etc-prose-column > section:first-child > h2:first-child {
+  margin-top: 0 !important;
+  margin-bottom: 0.35rem !important;
+  font-size: 1.2rem;
+  text-align: left !important;
+}
+
+.etc-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #4a4742 transparent;
+  margin: 0 0 0.55rem 0;
+  border: 1px solid var(--book-border, #3d3934);
+  border-radius: 5px;
+  background: var(--book-surface, #272629);
+}
+
+.etc-table-wrap:has(table.etc-coord-table) {
+  overflow: hidden;
+  margin: 0 0 0.32rem 0;
+}
+
+.book-reading-pane .book-content table.etc-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 !important;
+  border: none !important;
+  font-size: 1.04rem;
+  line-height: 1.35;
+  font-variant-numeric: tabular-nums;
+}
+
+.book-reading-pane .book-content table.etc-table caption {
+  text-align: left;
+  font-family: var(--geom-font-sans, "Fira Sans Condensed", sans-serif);
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--book-text-muted, #9c958a);
+  padding: 0.36rem 0.65rem;
+  background: #201f23;
+  border-bottom: 1px solid var(--book-border, #3d3934);
+}
+
+.book-reading-pane .book-content table.etc-table caption a.headerlink {
+  display: none !important;
+}
+
+.book-reading-pane .book-content table.etc-table thead th {
+  font-family: var(--geom-font-sans, "Fira Sans Condensed", sans-serif);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--book-text-muted, #9c958a);
+  background: #201f23;
+  border-bottom: 1px solid var(--book-border-dark, #544f47);
+  padding: 0.3rem 0.58rem;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.book-reading-pane .book-content table.etc-table thead th p,
+.book-reading-pane .book-content table.etc-table tbody td p {
+  margin: 0 !important;
+  text-indent: 0 !important;
+  text-align: left !important;
+}
+
+.book-reading-pane .book-content table.etc-table tbody td {
+  padding: 0.3rem 0.58rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  vertical-align: top;
+}
+
+.book-reading-pane .book-content table.etc-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.book-reading-pane .book-content table.etc-table tbody td p + p {
+  margin-top: 0.24rem !important;
+  padding-top: 0.24rem;
+  border-top: 1px dashed rgba(255, 255, 255, 0.08);
+}
+
+/* Tight, pixel-aligned vertical component coordinate tables (Trilinears, Barycentrics, Tripolars) */
+.book-reading-pane .book-content table.etc-coord-table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.book-reading-pane .book-content table.etc-coord-table col:nth-child(1),
+.book-reading-pane .book-content table.etc-coord-table thead th:first-child,
+.book-reading-pane .book-content table.etc-coord-table tbody td:first-child {
+  width: 8.4rem !important;
+}
+
+.book-reading-pane .book-content table.etc-coord-table col:nth-child(2),
+.book-reading-pane .book-content table.etc-coord-table col:nth-child(3),
+.book-reading-pane .book-content table.etc-coord-table thead th:nth-child(2),
+.book-reading-pane .book-content table.etc-coord-table thead th:nth-child(3),
+.book-reading-pane .book-content table.etc-coord-table tbody td:nth-child(2),
+.book-reading-pane .book-content table.etc-coord-table tbody td:nth-child(3) {
+  width: calc((100% - 8.4rem) / 2) !important;
+  overflow-wrap: anywhere;
+}
+
+.book-reading-pane .book-content table.etc-coord-table thead th {
+  padding: 0.26rem 0.58rem;
+}
+
+.book-reading-pane .book-content table.etc-coord-table thead th:first-child {
+  color: var(--geom-accent, #e8b85a);
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.book-reading-pane .book-content table.etc-coord-table thead th:first-child p {
+  text-align: center !important;
+}
+
+.book-reading-pane .book-content table.etc-coord-table tbody tr {
+  cursor: pointer;
+}
+
+.book-reading-pane .book-content table.etc-coord-table tbody td {
+  padding: 0.22rem 0.58rem;
+}
+
+.book-reading-pane .book-content table.etc-coord-table tbody td:first-child {
+  text-align: center;
+  font-family: "EB Garamond", Georgia, serif;
+  font-style: italic;
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: var(--geom-accent, #e8b85a);
+  background: rgba(255, 255, 255, 0.02);
+  border-right: 1px solid rgba(255, 255, 255, 0.09);
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.book-reading-pane .book-content table.etc-coord-table tbody td:first-child p {
+  text-align: center !important;
+}
+
+.book-reading-pane .book-content table.etc-coord-table tbody td:first-child .geom-ref {
+  color: var(--geom-accent, #e8b85a);
+  border-bottom: none;
+  padding: 0 0.2rem;
+  transition: color 0.12s ease;
+}
+
+/* Graphic <-> Table Channel Color Correspondence (Coral a / Sky b / Emerald c / Silver tripolars) */
+.book-reading-pane .book-content table.etc-coord-table tbody tr:has(.geom-ref[data-ref$="_a /"]) td:first-child,
+.book-reading-pane .book-content table.etc-coord-table tbody tr:has(.geom-ref[data-ref$=" B C >"]) td:first-child,
+.book-reading-pane .book-content table.etc-mode-coordinates:not(.etc-coord-table) tbody tr:has(.geom-ref[data-ref="T_a"]) td:first-child {
+  box-shadow: inset 3px 0 0 #ff7043;
+}
+
+.book-reading-pane .book-content table.etc-coord-table tbody tr:has(.geom-ref[data-ref$="_b /"]) td:first-child,
+.book-reading-pane .book-content table.etc-coord-table tbody tr:has(.geom-ref[data-ref$=" C A >"]) td:first-child,
+.book-reading-pane .book-content table.etc-mode-coordinates:not(.etc-coord-table) tbody tr:has(.geom-ref[data-ref="T_b"]) td:first-child {
+  box-shadow: inset 3px 0 0 #38bdf8;
+}
+
+.book-reading-pane .book-content table.etc-coord-table tbody tr:has(.geom-ref[data-ref$="_c /"]) td:first-child,
+.book-reading-pane .book-content table.etc-coord-table tbody tr:has(.geom-ref[data-ref$=" A B >"]) td:first-child,
+.book-reading-pane .book-content table.etc-mode-coordinates:not(.etc-coord-table) tbody tr:has(.geom-ref[data-ref="T_c"]) td:first-child {
+  box-shadow: inset 3px 0 0 #5ec27e;
+}
+
+.book-reading-pane .book-content table.etc-coord-table tbody tr:has(.geom-ref[data-ref$=" A /"]) td:first-child,
+.book-reading-pane .book-content table.etc-coord-table tbody tr:has(.geom-ref[data-ref$=" B /"]) td:first-child,
+.book-reading-pane .book-content table.etc-coord-table tbody tr:has(.geom-ref[data-ref$=" C /"]) td:first-child {
+  box-shadow: inset 3px 0 0 rgba(203, 213, 225, 0.55);
+}
+
+.book-reading-pane .book-content table.etc-coord-table tbody td:first-child .geom-ref[data-ref$="_a /"],
+.book-reading-pane .book-content table.etc-coord-table tbody td:first-child .geom-ref[data-ref$=" B C >"],
+.book-reading-pane .book-content table.etc-table tbody .geom-ref[data-ref="T_a"],
+.book-reading-pane .book-content table.etc-table tbody .geom-ref[data-ref$="_a /"],
+.book-reading-pane .book-content table.etc-table tbody .geom-ref[data-ref$=" B C >"],
+.book-reading-pane .book-content table.etc-mode-coordinates:not(.etc-coord-table) tbody tr:has(.geom-ref[data-ref="T_a"]) td:last-child {
+  color: #ff7043;
+  border-bottom-color: rgba(255, 112, 67, 0.45);
+}
+
+.book-reading-pane .book-content table.etc-coord-table tbody td:first-child .geom-ref[data-ref$="_b /"],
+.book-reading-pane .book-content table.etc-coord-table tbody td:first-child .geom-ref[data-ref$=" C A >"],
+.book-reading-pane .book-content table.etc-table tbody .geom-ref[data-ref="T_b"],
+.book-reading-pane .book-content table.etc-table tbody .geom-ref[data-ref$="_b /"],
+.book-reading-pane .book-content table.etc-table tbody .geom-ref[data-ref$=" C A >"],
+.book-reading-pane .book-content table.etc-mode-coordinates:not(.etc-coord-table) tbody tr:has(.geom-ref[data-ref="T_b"]) td:last-child {
+  color: #38bdf8;
+  border-bottom-color: rgba(56, 189, 248, 0.45);
+}
+
+.book-reading-pane .book-content table.etc-coord-table tbody td:first-child .geom-ref[data-ref$="_c /"],
+.book-reading-pane .book-content table.etc-coord-table tbody td:first-child .geom-ref[data-ref$=" A B >"],
+.book-reading-pane .book-content table.etc-table tbody .geom-ref[data-ref="T_c"],
+.book-reading-pane .book-content table.etc-table tbody .geom-ref[data-ref$="_c /"],
+.book-reading-pane .book-content table.etc-table tbody .geom-ref[data-ref$=" A B >"],
+.book-reading-pane .book-content table.etc-mode-coordinates:not(.etc-coord-table) tbody tr:has(.geom-ref[data-ref="T_c"]) td:last-child {
+  color: #5ec27e;
+  border-bottom-color: rgba(94, 194, 126, 0.45);
+}
+
+.book-reading-pane .book-content table.etc-coord-table tbody td:first-child .geom-ref[data-ref$=" A /"],
+.book-reading-pane .book-content table.etc-coord-table tbody td:first-child .geom-ref[data-ref$=" B /"],
+.book-reading-pane .book-content table.etc-coord-table tbody td:first-child .geom-ref[data-ref$=" C /"] {
+  color: #cbd5e1;
+}
+
+/* Four-Triangle Table Panel & Channel Correspondence */
+.book-reading-pane .book-content table.etc-mode-four-triangles tbody tr:has(.geom-ref[data-ref="panel-heronian"]) td:first-child {
+  box-shadow: inset 3px 0 0 #e8b85a;
+}
+.book-reading-pane .book-content table.etc-mode-four-triangles tbody .geom-ref[data-ref="panel-heronian"] {
+  color: #e8b85a;
+}
+
+.book-reading-pane .book-content table.etc-mode-four-triangles tbody tr:has(.geom-ref[data-ref="panel-right"]) td:first-child {
+  box-shadow: inset 3px 0 0 #38bdf8;
+}
+.book-reading-pane .book-content table.etc-mode-four-triangles tbody .geom-ref[data-ref="panel-right"] {
+  color: #38bdf8;
+}
+
+.book-reading-pane .book-content table.etc-mode-four-triangles tbody tr:has(.geom-ref[data-ref="panel-kepler"]) td:first-child {
+  box-shadow: inset 3px 0 0 #4ade80;
+}
+.book-reading-pane .book-content table.etc-mode-four-triangles tbody .geom-ref[data-ref="panel-kepler"] {
+  color: #4ade80;
+}
+
+.book-reading-pane .book-content table.etc-mode-four-triangles tbody tr:has(.geom-ref[data-ref="panel-kimberling"]) td:first-child {
+  box-shadow: inset 3px 0 0 #a78bfa;
+}
+.book-reading-pane .book-content table.etc-mode-four-triangles tbody .geom-ref[data-ref="panel-kimberling"] {
+  color: #a78bfa;
+}
+
+.book-reading-pane .book-content table.etc-mode-four-triangles tbody tr:has(.geom-ref[data-ref="panel-golden"]) td:first-child {
+  box-shadow: inset 3px 0 0 #fb923c;
+}
+.book-reading-pane .book-content table.etc-mode-four-triangles tbody .geom-ref[data-ref="panel-golden"] {
+  color: #fb923c;
+}
+
+.book-reading-pane .book-content table.etc-mode-four-triangles tbody tr:has(.geom-ref[data-ref="panel-gnomon"]) td:first-child {
+  box-shadow: inset 3px 0 0 #f472b6;
+}
+.book-reading-pane .book-content table.etc-mode-four-triangles tbody .geom-ref[data-ref="panel-gnomon"] {
+  color: #f472b6;
+}
+
+.book-reading-pane .book-content table.etc-mode-four-triangles tbody tr:nth-child(7) td:first-child {
+  box-shadow: inset 3px 0 0 #2dd4bf;
+  color: #2dd4bf;
+}
+.book-reading-pane .book-content table.etc-mode-four-triangles tbody tr:nth-child(7) td:first-child strong {
+  color: #2dd4bf;
+}
+
+.book-reading-pane .book-content table.etc-mode-four-triangles tbody td:nth-child(4) p,
+.book-reading-pane .book-content table.etc-mode-four-triangles tbody td:nth-child(5) p,
+.book-reading-pane .book-content table.etc-mode-four-triangles tbody td:nth-child(6) p {
+  padding-left: 0.42rem;
+  border-left: 2.5px solid transparent;
+}
+
+.book-reading-pane .book-content table.etc-mode-four-triangles tbody td:nth-child(4) p:nth-child(1),
+.book-reading-pane .book-content table.etc-mode-four-triangles tbody td:nth-child(5) p:nth-child(1),
+.book-reading-pane .book-content table.etc-mode-four-triangles tbody td:nth-child(6) p:nth-child(1) {
+  border-left-color: #ff7043;
+  color: #ff7043;
+}
+
+.book-reading-pane .book-content table.etc-mode-four-triangles tbody td:nth-child(4) p:nth-child(2),
+.book-reading-pane .book-content table.etc-mode-four-triangles tbody td:nth-child(5) p:nth-child(2),
+.book-reading-pane .book-content table.etc-mode-four-triangles tbody td:nth-child(6) p:nth-child(2) {
+  border-left-color: #38bdf8;
+  color: #38bdf8;
+}
+
+.book-reading-pane .book-content table.etc-mode-four-triangles tbody td:nth-child(4) p:nth-child(3),
+.book-reading-pane .book-content table.etc-mode-four-triangles tbody td:nth-child(5) p:nth-child(3),
+.book-reading-pane .book-content table.etc-mode-four-triangles tbody td:nth-child(6) p:nth-child(3) {
+  border-left-color: #5ec27e;
+  color: #5ec27e;
+}
+
+/* Central Lines & Relations Table <-> SVG Stroke Color Correspondence */
+.book-reading-pane .book-content table.etc-mode-lines tbody tr.etc-line-colored {
+  cursor: pointer;
+}
+
+.book-reading-pane .book-content table.etc-mode-lines tbody tr.etc-line-colored td:first-child {
+  box-shadow: inset 3px 0 0 var(--etc-line-color);
+  color: var(--etc-line-color);
+}
+
+.book-reading-pane .book-content table.etc-mode-lines tbody tr.etc-line-colored td:first-child strong {
+  color: var(--etc-line-color);
+  transition: color 0.12s ease;
+}
+
+.book-reading-pane .book-content table.etc-mode-lines tbody tr.etc-line-colored td:nth-child(2) .geom-ref,
+.book-reading-pane .book-content table.etc-table tbody .geom-ref.etc-ref-colored {
+  color: var(--etc-ref-color, var(--etc-line-color));
+  border-bottom-color: color-mix(in srgb, var(--etc-ref-color, var(--etc-line-color)) 52%, transparent);
+}
+
+/* Active hover / selection highlight ALWAYS switches to unmistakable Bright Gold */
+.book-reading-pane .book-content table.etc-coord-table tbody tr:hover td:first-child,
+.book-reading-pane .book-content table.etc-table tbody tr.etc-row-highlight td:first-child {
+  box-shadow: inset 3px 0 0 #ffd54f !important;
+}
+
+.book-reading-pane .book-content table.etc-coord-table tbody tr:hover td:first-child .geom-ref,
+.book-reading-pane .book-content table.etc-coord-table tbody tr.etc-row-highlight td:first-child .geom-ref,
+.book-reading-pane .book-content table.etc-mode-lines tbody tr.etc-row-highlight td:first-child,
+.book-reading-pane .book-content table.etc-mode-lines tbody tr.etc-row-highlight td:first-child strong,
+.book-reading-pane .book-content table.etc-mode-lines tbody tr.etc-row-highlight td:nth-child(2) .geom-ref,
+.book-reading-pane .book-content table.etc-table tbody .geom-ref:hover,
+.book-reading-pane .book-content table.etc-table tbody .geom-ref.geom-highlight-text {
+  color: #ffd54f !important;
+  border-bottom-color: #ffd54f !important;
+}
+
+.book-reading-pane .book-content table.etc-coord-table thead th:nth-child(2),
+.book-reading-pane .book-content table.etc-coord-table tbody td:nth-child(2) {
+  border-right: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.book-reading-pane .book-content table.etc-coord-table mjx-container {
+  font-size: 1.06em;
+}
+
+.etc-coord-notes {
+  margin: -0.08rem 0 0.5rem 0;
+  padding: 0.12rem 0.58rem;
+  font-size: 0.88rem;
+  line-height: 1.38;
+  color: var(--book-text-muted, #9c958a);
+}
+
+.etc-coord-notes p {
+  margin: 0.08rem 0 !important;
+  text-indent: 0 !important;
+  text-align: left !important;
+}
+
+.book-reading-pane .book-content table.etc-table tbody tr {
+  transition: background-color 0.12s ease;
+}
+
+.book-reading-pane .book-content table.etc-table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+/* Two-way SVG -> Table Row Highlight (Warm Gold) */
+.book-reading-pane .book-content table.etc-table tbody tr.etc-row-highlight {
+  background-color: rgba(232, 184, 90, 0.14) !important;
+  box-shadow: inset 3px 0 0 #ffd54f;
+}
+
+/* Inline Section Mode-Switch Trigger Pill */
+.etc-view-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0.15rem 0 0.65rem 0;
+  padding: 0.24rem 0.68rem;
+  font-family: var(--geom-font-sans, "Fira Sans Condensed", sans-serif);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--geom-accent, #e8b85a);
+  background: rgba(232, 184, 90, 0.1);
+  border: 1px solid rgba(232, 184, 90, 0.36);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.14s ease, border-color 0.14s ease;
+}
+
+.etc-view-trigger:hover {
+  background: rgba(232, 184, 90, 0.2);
+  border-color: var(--geom-accent, #e8b85a);
+}
+
+/* Compact Line Catalog Grid */
+.etc-line-catalog {
+  font-family: var(--book-font-mono, ui-monospace, monospace);
+  font-size: 0.86rem;
+  line-height: 1.7;
+}
+
+/* Subtle heading alignment for center codex pages */
+.book-reading-pane .book-content h1,
+.folio-book-page h1 {
+  position: relative;
+  text-align: center !important;
+  text-indent: 0 !important;
+  margin-bottom: 0.35rem !important;
+}
+
+.book-reading-pane .book-content h1 a.headerlink,
+.book-reading-pane .book-content h2 a.headerlink,
+.folio-book-page h1 a.headerlink,
+.folio-book-page h2 a.headerlink {
+  position: absolute;
+}
+
+.book-reading-pane .book-content p.rubric,
+.folio-book-page p.rubric {
+  font-style: normal !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+  text-indent: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 1.15rem !important;
+}
+
+/* -------------------------------------------------------------------------
+   6. Homepage Books-First Showcase (.is-home-page)
+   ------------------------------------------------------------------------- */
+.etc-home-hero {
+  display: grid;
+  grid-template-columns: minmax(220px, 320px) minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: center;
+  margin: 1rem 0 1.4rem 0;
+  padding: 1.15rem 1.35rem;
+  background: var(--book-surface, #242326);
+  border: 1px solid var(--book-border, #3d3934);
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.24);
+}
+
+.etc-home-hero-thumb {
+  background: #141416;
+  border: 1px solid rgba(232, 184, 90, 0.28);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: border-color 0.16s ease, transform 0.16s ease;
+}
+
+.etc-home-hero-thumb:hover {
+  border-color: var(--geom-accent, #e8b85a);
+  transform: translateY(-1px);
+}
+
+.etc-home-hero-thumb a {
+  display: block;
+  border-bottom: none !important;
+}
+
+.etc-home-hero-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 !important;
+}
+
+.etc-home-hero-body p.rubric {
+  text-align: left !important;
+  font-family: var(--geom-font-sans, "Fira Sans Condensed", system-ui, sans-serif);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--geom-accent, #e8b85a) !important;
+  margin-bottom: 0.35rem !important;
+}
+
+.etc-home-hero-body > p {
+  text-indent: 0 !important;
+  text-align: left !important;
+  margin: 0 0 0.85rem 0 !important;
+}
+
+.etc-home-actions ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.65rem;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.etc-home-actions li {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.etc-home-actions li::before {
+  display: none !important;
+}
+
+.etc-home-actions a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.34rem 0.78rem;
+  border-radius: 4px;
+  border: 1px solid rgba(232, 184, 90, 0.42);
+  background: rgba(232, 184, 90, 0.11);
+  color: var(--geom-accent, #e8b85a) !important;
+  font-family: var(--geom-font-sans, "Fira Sans Condensed", system-ui, sans-serif);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: background-color 0.14s ease, border-color 0.14s ease;
+}
+
+.etc-home-actions a:hover {
+  background: rgba(232, 184, 90, 0.22);
+  border-color: var(--geom-accent, #e8b85a);
+}
+
+.etc-home-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 0 0 1.6rem 0;
+}
+
+.etc-home-card {
+  padding: 0.95rem 1.05rem;
+  background: var(--book-surface, #242326);
+  border: 1px solid var(--book-border, #3d3934);
+  border-radius: 6px;
+}
+
+.etc-home-card p {
+  text-indent: 0 !important;
+  text-align: left !important;
+  margin: 0 0 0.45rem 0 !important;
+  font-size: 0.96rem;
+  line-height: 1.48;
+}
+
+.etc-home-card p:last-child {
+  margin-bottom: 0 !important;
+  color: var(--book-text-muted, #b5afa5);
+  font-size: 0.9rem;
+}
+
+.etc-home-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem 2rem;
+  margin-top: 0.5rem;
+}
+
+.etc-home-col p.rubric {
+  text-align: left !important;
+  font-family: var(--geom-font-sans, "Fira Sans Condensed", system-ui, sans-serif);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--geom-accent, #e8b85a) !important;
+  margin-bottom: 0.5rem !important;
+  padding-bottom: 0.28rem !important;
+  border-bottom: 1px solid var(--book-border, #3d3934);
+}
+
+.etc-home-col ul {
+  margin: 0 !important;
+  padding-left: 1.15rem !important;
+}
+
+.etc-home-col li {
+  margin-bottom: 0.45rem !important;
+  line-height: 1.48;
+}
+
+@media (max-width: 900px) {
+  .etc-home-hero,
+  .etc-home-grid,
+  .etc-home-columns {
+    grid-template-columns: 1fr;
+  }
+}

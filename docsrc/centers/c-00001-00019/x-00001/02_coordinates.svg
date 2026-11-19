@@ -43,7 +43,7 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
 
 #points circle {
     fill: var(--text-color);
-    stroke: var(--background-color);
+    stroke: var(--accent-color);
     stroke-width: 2.5;
     vector-effect: non-scaling-stroke;
     cursor: pointer;
@@ -60,17 +60,18 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
 }
 
 #points circle.selected,
+#points circle.given.selected,
 #points circle.target {
-    stroke: var(--select-color);
-    fill: gold;
-    stroke-width: 3;
+    fill: var(--accent-color);
+    stroke: #e8b85a;
+    stroke-width: 2.8;
 }
 
 #points circle:hover,
 #points circle.hover {
-    fill: var(--select-color) !important;
-    stroke: #fff !important;
-    stroke-width: 3.5 !important;
+    fill: #e8b85a !important;
+    stroke: var(--accent-color) !important;
+    stroke-width: 2.5 !important;
 }
 
 #elements line,
@@ -563,16 +564,10 @@ svg.geometor-etc-drawing .etc-plate-panel.hover > rect.etc-panel-border {
     border-bottom: 1px solid #161616;
 }
 </style>
-  <defs>
-    <filter id="glow-coord" filterUnits="userSpaceOnUse" x="-100" y="-100" width="1200" height="960">
-      <feGaussianBlur stdDeviation="4.5" result="blur" />
-      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
-    </filter>
-  </defs>
 
   <polygon id="&lt; X_1 B C &gt;" data-id="&lt; X_1 B C &gt;" data-ref="&lt; X_1 B C &gt;" class="etc-plate-poly"
            points="446.8,477.3 872.2,690.0 393.7,52.0"
-           fill="#e8b85a" fill-opacity="0.19" stroke="none" />
+           fill="#ff7043" fill-opacity="0.19" stroke="none" />
   <polygon id="&lt; X_1 C A &gt;" data-id="&lt; X_1 C A &gt;" data-ref="&lt; X_1 C A &gt;" class="etc-plate-poly"
            points="446.8,477.3 393.7,52.0 127.8,690.0"
            fill="#38bdf8" fill-opacity="0.17" stroke="none" />
@@ -598,59 +593,59 @@ svg.geometor-etc-drawing .etc-plate-panel.hover > rect.etc-panel-border {
   <line id="/ X_1 C /" data-id="/ X_1 C /" data-ref="/ X_1 C /" class="etc-plate-line"
         x1="446.8" y1="477.3" x2="393.7" y2="52.0" stroke="#cbd5e1" stroke-width="2.2" stroke-dasharray="10,5,2.5,5" opacity="0.65" />
 
-  <path d="M 625.4,360.9 L 614.2,369.3 L 605.8,358.1" fill="none" stroke="#e8b85a" stroke-width="2.4" opacity="0.9" pointer-events="none" />
+  <path d="M 625.4,360.9 L 614.2,369.3 L 605.8,358.1" fill="none" stroke="#ff7043" stroke-width="2.4" opacity="0.9" pointer-events="none" />
   <path d="M 255.9,382.6 L 268.8,388.0 L 263.4,400.9" fill="none" stroke="#38bdf8" stroke-width="2.4" opacity="0.9" pointer-events="none" />
   <path d="M 460.8,690.0 L 460.8,676.0 L 446.8,676.0" fill="none" stroke="#5ec27e" stroke-width="2.4" opacity="0.9" pointer-events="none" />
   <line id="/ X_1 T_a /" data-id="/ X_1 T_a /" data-ref="/ X_1 T_a /" class="etc-plate-strut"
         x1="446.8" y1="477.3" x2="617.0" y2="349.7"
-        stroke="#e8b85a" stroke-width="5.2" stroke-linecap="round" filter="url(#glow-coord)" />
+        stroke="#ff7043" stroke-width="5.2" stroke-linecap="round" />
   <line id="/ X_1 T_b /" data-id="/ X_1 T_b /" data-ref="/ X_1 T_b /" class="etc-plate-strut"
         x1="446.8" y1="477.3" x2="250.5" y2="395.5"
-        stroke="#38bdf8" stroke-width="5.2" stroke-linecap="round" filter="url(#glow-coord)" />
+        stroke="#38bdf8" stroke-width="5.2" stroke-linecap="round" />
   <line id="/ X_1 T_c /" data-id="/ X_1 T_c /" data-ref="/ X_1 T_c /" class="etc-plate-strut"
         x1="446.8" y1="477.3" x2="446.8" y2="690.0"
-        stroke="#5ec27e" stroke-width="5.2" stroke-linecap="round" filter="url(#glow-coord)" />
+        stroke="#5ec27e" stroke-width="5.2" stroke-linecap="round" />
 
   <circle id="T_a" data-id="T_a" data-ref="T_a" class="etc-plate-pt"
-          cx="617.0" cy="349.7" r="6.2" fill="#e8b85a" stroke="#0d111a" stroke-width="2" />
+          cx="617.0" cy="349.7" r="5.6" fill="#ff7043" stroke="#161616" stroke-width="2.2" />
   <circle id="T_b" data-id="T_b" data-ref="T_b" class="etc-plate-pt"
-          cx="250.5" cy="395.5" r="6.2" fill="#38bdf8" stroke="#0d111a" stroke-width="2" />
+          cx="250.5" cy="395.5" r="5.6" fill="#38bdf8" stroke="#161616" stroke-width="2.2" />
   <circle id="T_c" data-id="T_c" data-ref="T_c" class="etc-plate-pt"
-          cx="446.8" cy="690.0" r="6.2" fill="#5ec27e" stroke="#0d111a" stroke-width="2" />
+          cx="446.8" cy="690.0" r="5.6" fill="#5ec27e" stroke="#161616" stroke-width="2.2" />
 
   <circle id="A" data-id="A" data-ref="A" class="etc-plate-pt"
-          cx="127.8" cy="690.0" r="7.2" fill="#66ff66" stroke="#0d111a" stroke-width="2.2" />
+          cx="127.8" cy="690.0" r="5.6" fill="#66ff66" stroke="#161616" stroke-width="2.2" />
   <circle id="B" data-id="B" data-ref="B" class="etc-plate-pt"
-          cx="872.2" cy="690.0" r="7.2" fill="#66ff66" stroke="#0d111a" stroke-width="2.2" />
+          cx="872.2" cy="690.0" r="5.6" fill="#66ff66" stroke="#161616" stroke-width="2.2" />
   <circle id="C" data-id="C" data-ref="C" class="etc-plate-pt"
-          cx="393.7" cy="52.0" r="7.2" fill="#f8f6f0" stroke="#0d111a" stroke-width="2.2" />
+          cx="393.7" cy="52.0" r="5.6" fill="#f8f6f0" stroke="#161616" stroke-width="2.2" />
 
   <g pointer-events="none">
     <text x="95.8" y="716.0" fill="#88ff88" font-family="Georgia, serif" font-size="28" font-weight="bold">A</text>
     <text x="888.2" y="716.0" fill="#88ff88" font-family="Georgia, serif" font-size="28" font-weight="bold">B</text>
     <text x="383.7" y="34.0" fill="#f8f6f0" font-family="Georgia, serif" font-size="28" font-weight="bold">C</text>
-    <text x="629.0" y="341.7" fill="#e8b85a" font-family="Georgia, serif" font-size="19" font-weight="bold">T<tspan dy="0.28em" font-size="74%">a</tspan></text>
+    <text x="629.0" y="341.7" fill="#ff7043" font-family="Georgia, serif" font-size="19" font-weight="bold">T<tspan dy="0.28em" font-size="74%">a</tspan></text>
     <text x="216.5" y="387.5" fill="#38bdf8" font-family="Georgia, serif" font-size="19" font-weight="bold">T<tspan dy="0.28em" font-size="74%">b</tspan></text>
     <text x="456.8" y="716.0" fill="#5ec27e" font-family="Georgia, serif" font-size="19" font-weight="bold">T<tspan dy="0.28em" font-size="74%">c</tspan></text>
   </g>
 
   <g font-family="Georgia, serif" font-size="26" font-weight="bold" pointer-events="none">
     <rect x="541.9" y="383.5" width="34" height="30" rx="6" fill="rgba(13, 17, 26, 0.86)" />
-    <text x="549.9" y="407.5" fill="#e8b85a">α</text>
+    <text x="549.9" y="407.5" fill="#ff7043">α</text>
     <rect x="314.7" y="406.4" width="34" height="30" rx="6" fill="rgba(13, 17, 26, 0.86)" />
     <text x="322.7" y="430.4" fill="#38bdf8">β</text>
     <rect x="458.8" y="565.7" width="34" height="30" rx="6" fill="rgba(13, 17, 26, 0.86)" />
     <text x="466.8" y="589.7" fill="#5ec27e">γ</text>
   </g>
 
-  <circle id="X_1" data-id="X_1" data-ref="X_1" class="etc-plate-pt"
-          cx="446.8" cy="477.3" r="10.5" fill="#ffd700" stroke="#00ffff" stroke-width="3" filter="url(#glow-coord)" />
+  <circle id="X_1" data-id="X_1" data-ref="X_1" class="etc-plate-pt target"
+          cx="446.8" cy="477.3" r="5.6" fill="#161616" stroke="#e8b85a" stroke-width="2.8" />
   <g pointer-events="none">
     <rect x="412.8" y="431.3" width="68" height="30" rx="6" fill="rgba(13, 17, 26, 0.92)" stroke="#e8b85a" stroke-width="1.5" />
     <text x="446.8" y="452.3" text-anchor="middle" fill="#ffd700" font-family="JetBrains Mono, monospace" font-size="19" font-weight="bold">X<tspan dy="0.28em" font-size="74%">1</tspan></text>
     <text x="976" y="742" text-anchor="end" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="14">Heronian (15, 13, 14) • ℚ • Δ = 84</text>
   </g>
-  <script type="application/json" class="etc-elements-meta">{"A":{"ID":"A","type":"point","color":"#66ff66","name":"Vertex A","symbolic_rows":[{"label":"(x, y)","latex":"\\left(0,\\; 0\\right)","pretty":"(0, 0)"},{"label":"bary","latex":"1 : 0 : 0","pretty":"1 : 0 : 0"}],"approx":"\u2248 (0.000000, 0.000000)","related_points":["A"]},"B":{"ID":"B","type":"point","color":"#66ff66","name":"Vertex B","symbolic_rows":[{"label":"(x, y)","latex":"\\left(14,\\; 0\\right)","pretty":"(14, 0)"},{"label":"bary","latex":"0 : 1 : 0","pretty":"0 : 1 : 0"}],"approx":"\u2248 (14.000000, 0.000000)","related_points":["B"]},"C":{"ID":"C","type":"point","color":"#f8f6f0","name":"Vertex C","symbolic_rows":[{"label":"(x, y)","latex":"\\left(5,\\; 12\\right)","pretty":"(5, 12)"},{"label":"bary","latex":"0 : 0 : 1","pretty":"0 : 0 : 1"}],"approx":"\u2248 (5.000000, 12.000000)","related_points":["C"]},"X_1":{"ID":"X_1","type":"point","color":"#ffd700","name":"INCENTER","symbolic_rows":[{"label":"(x, y)","latex":"\\left(6,\\; 4\\right)","pretty":"(6, 4)"},{"label":"trilinear","latex":"1 : 1 : 1","pretty":"1 : 1 : 1"},{"label":"bary","latex":"15 : 13 : 14","pretty":"15 : 13 : 14"}],"approx":"\u2248 (6.000000, 4.000000)","related_points":["X_1"]},"T_a":{"ID":"T_a","type":"point","color":"#e8b85a","name":"Right-Spread Pedal Foot T_a on BC","symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{46}{5},\\; \\frac{32}{5}\\right)","pretty":"(46/5, 32/5)"}],"approx":"\u2248 (9.200000, 6.400000)","related_points":["T_a"]},"T_b":{"ID":"T_b","type":"point","color":"#38bdf8","name":"Right-Spread Pedal Foot T_b on CA","symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{30}{13},\\; \\frac{72}{13}\\right)","pretty":"(30/13, 72/13)"}],"approx":"\u2248 (2.307692, 5.538462)","related_points":["T_b"]},"T_c":{"ID":"T_c","type":"point","color":"#5ec27e","name":"Right-Spread Pedal Foot T_c on AB","symbolic_rows":[{"label":"(x, y)","latex":"\\left(6,\\; 0\\right)","pretty":"(6, 0)"}],"approx":"\u2248 (6.000000, 0.000000)","related_points":["T_c"]},"[ B C ]":{"ID":"[ B C ]","type":"line","color":"#cbd5e1","name":"Sideline BC (Side a)","symbolic_rows":[{"label":"eq","latex":"4 x + 3 y - 56 = 0","pretty":"4\u00b7x + 3\u00b7y - 56 = 0"},{"label":"length","latex":"15","pretty":"15"},{"label":"Q","latex":"225","pretty":"225"}],"approx":"\u2248 length 15.000000"},"[ C A ]":{"ID":"[ C A ]","type":"line","color":"#cbd5e1","name":"Sideline CA (Side b)","symbolic_rows":[{"label":"eq","latex":"12 x - 5 y = 0","pretty":"12\u00b7x - 5\u00b7y = 0"},{"label":"length","latex":"13","pretty":"13"},{"label":"Q","latex":"169","pretty":"169"}],"approx":"\u2248 length 13.000000"},"[ A B ]":{"ID":"[ A B ]","type":"line","color":"#cbd5e1","name":"Sideline AB (Side c)","symbolic_rows":[{"label":"eq","latex":"y = 0","pretty":"y = 0"},{"label":"length","latex":"14","pretty":"14"},{"label":"Q","latex":"196","pretty":"196"}],"approx":"\u2248 length 14.000000"},"/ X_1 T_a /":{"ID":"/ X_1 T_a /","type":"segment","color":"#e8b85a","name":"Orthogonal Trilinear Strut \u22a5 BC","symbolic_rows":[{"label":"d","latex":"\\alpha_0 = 4","pretty":"4"},{"label":"Q","latex":"16","pretty":"16"},{"label":"spread","latex":"1 \\;(\\perp)","pretty":"1 (\u22a5)"}],"approx":"\u2248 4.000000"},"/ X_1 T_b /":{"ID":"/ X_1 T_b /","type":"segment","color":"#38bdf8","name":"Orthogonal Trilinear Strut \u22a5 CA","symbolic_rows":[{"label":"d","latex":"\\beta_0 = 4","pretty":"4"},{"label":"Q","latex":"16","pretty":"16"},{"label":"spread","latex":"1 \\;(\\perp)","pretty":"1 (\u22a5)"}],"approx":"\u2248 4.000000"},"/ X_1 T_c /":{"ID":"/ X_1 T_c /","type":"segment","color":"#5ec27e","name":"Orthogonal Trilinear Strut \u22a5 AB","symbolic_rows":[{"label":"d","latex":"\\gamma_0 = 4","pretty":"4"},{"label":"Q","latex":"16","pretty":"16"},{"label":"spread","latex":"1 \\;(\\perp)","pretty":"1 (\u22a5)"}],"approx":"\u2248 4.000000"},"/ X_1 A /":{"ID":"/ X_1 A /","type":"segment","color":"#cbd5e1","name":"Barycentric Partition Spoke X_1A","symbolic_rows":[{"label":"length","latex":"2 \\sqrt{13}","pretty":"2\u00b7\u221a13"},{"label":"Q","latex":"52","pretty":"52"}],"approx":"\u2248 7.211103"},"/ X_1 B /":{"ID":"/ X_1 B /","type":"segment","color":"#cbd5e1","name":"Barycentric Partition Spoke X_1B","symbolic_rows":[{"label":"length","latex":"4 \\sqrt{5}","pretty":"4\u00b7\u221a5"},{"label":"Q","latex":"80","pretty":"80"}],"approx":"\u2248 8.944272"},"/ X_1 C /":{"ID":"/ X_1 C /","type":"segment","color":"#cbd5e1","name":"Barycentric Partition Spoke X_1C","symbolic_rows":[{"label":"length","latex":"\\sqrt{65}","pretty":"\u221a65"},{"label":"Q","latex":"65","pretty":"65"}],"approx":"\u2248 8.062258"},"\u003c X_1 B C \u003e":{"ID":"\u003c X_1 B C \u003e","type":"polygon","color":"#e8b85a","name":"Barycentric Sub-Triangle \u25b3X_1BC","symbolic_rows":[{"label":"\u0394","latex":"30","pretty":"30"},{"label":"u / \u0394","latex":"\\frac{5}{14}","pretty":"5/14"},{"label":"bary","latex":"15 : 13 : 14","pretty":"15 : 13 : 14"}],"approx":"\u2248 30.0000 (35.7% of \u0394)"},"\u003c X_1 C A \u003e":{"ID":"\u003c X_1 C A \u003e","type":"polygon","color":"#38bdf8","name":"Barycentric Sub-Triangle \u25b3X_1CA","symbolic_rows":[{"label":"\u0394","latex":"26","pretty":"26"},{"label":"v / \u0394","latex":"\\frac{13}{42}","pretty":"13/42"},{"label":"bary","latex":"15 : 13 : 14","pretty":"15 : 13 : 14"}],"approx":"\u2248 26.0000 (31.0% of \u0394)"},"\u003c X_1 A B \u003e":{"ID":"\u003c X_1 A B \u003e","type":"polygon","color":"#5ec27e","name":"Barycentric Sub-Triangle \u25b3X_1AB","symbolic_rows":[{"label":"\u0394","latex":"28","pretty":"28"},{"label":"w / \u0394","latex":"\\frac{1}{3}","pretty":"1/3"},{"label":"bary","latex":"15 : 13 : 14","pretty":"15 : 13 : 14"}],"approx":"\u2248 28.0000 (33.3% of \u0394)"},"incircle":{"ID":"incircle","type":"circle","color":"#f472b6","name":"Incircle","symbolic_rows":[{"label":"eq","latex":"\\left(x - 6\\right)^{2} + \\left(y - 4\\right)^{2} = 16","pretty":"(x - 6)\u00b2 + (y - 4)\u00b2 = 16"},{"label":"r","latex":"4","pretty":"4"},{"label":"Q_r","latex":"16","pretty":"16"}],"approx":"r \u2248 4.000000"}}</script>
+  <script type="application/json" class="etc-elements-meta">{"A":{"ID":"A","type":"point","color":"#66ff66","name":"Vertex A","symbolic_rows":[{"label":"(x, y)","latex":"\\left(0,\\; 0\\right)","pretty":"(0, 0)"},{"label":"bary","latex":"1 : 0 : 0","pretty":"1 : 0 : 0"}],"approx":"\u2248 (0.000000, 0.000000)","related_points":["A"]},"B":{"ID":"B","type":"point","color":"#66ff66","name":"Vertex B","symbolic_rows":[{"label":"(x, y)","latex":"\\left(14,\\; 0\\right)","pretty":"(14, 0)"},{"label":"bary","latex":"0 : 1 : 0","pretty":"0 : 1 : 0"}],"approx":"\u2248 (14.000000, 0.000000)","related_points":["B"]},"C":{"ID":"C","type":"point","color":"#f8f6f0","name":"Vertex C","symbolic_rows":[{"label":"(x, y)","latex":"\\left(5,\\; 12\\right)","pretty":"(5, 12)"},{"label":"bary","latex":"0 : 0 : 1","pretty":"0 : 0 : 1"}],"approx":"\u2248 (5.000000, 12.000000)","related_points":["C"]},"X_1":{"ID":"X_1","type":"point","color":"#ffd700","name":"INCENTER","symbolic_rows":[{"label":"(x, y)","latex":"\\left(6,\\; 4\\right)","pretty":"(6, 4)"},{"label":"trilinear","latex":"1 : 1 : 1","pretty":"1 : 1 : 1"},{"label":"bary","latex":"15 : 13 : 14","pretty":"15 : 13 : 14"}],"approx":"\u2248 (6.000000, 4.000000)","related_points":["X_1"]},"T_a":{"ID":"T_a","type":"point","color":"#ff7043","name":"Right-Spread Pedal Foot T_a on BC","symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{46}{5},\\; \\frac{32}{5}\\right)","pretty":"(46/5, 32/5)"}],"approx":"\u2248 (9.200000, 6.400000)","related_points":["T_a"]},"T_b":{"ID":"T_b","type":"point","color":"#38bdf8","name":"Right-Spread Pedal Foot T_b on CA","symbolic_rows":[{"label":"(x, y)","latex":"\\left(\\frac{30}{13},\\; \\frac{72}{13}\\right)","pretty":"(30/13, 72/13)"}],"approx":"\u2248 (2.307692, 5.538462)","related_points":["T_b"]},"T_c":{"ID":"T_c","type":"point","color":"#5ec27e","name":"Right-Spread Pedal Foot T_c on AB","symbolic_rows":[{"label":"(x, y)","latex":"\\left(6,\\; 0\\right)","pretty":"(6, 0)"}],"approx":"\u2248 (6.000000, 0.000000)","related_points":["T_c"]},"[ B C ]":{"ID":"[ B C ]","type":"line","color":"#cbd5e1","name":"Sideline BC (Side a)","symbolic_rows":[{"label":"eq","latex":"4 x + 3 y - 56 = 0","pretty":"4\u00b7x + 3\u00b7y - 56 = 0"},{"label":"length","latex":"15","pretty":"15"},{"label":"Q","latex":"225","pretty":"225"}],"approx":"\u2248 length 15.000000"},"[ C A ]":{"ID":"[ C A ]","type":"line","color":"#cbd5e1","name":"Sideline CA (Side b)","symbolic_rows":[{"label":"eq","latex":"12 x - 5 y = 0","pretty":"12\u00b7x - 5\u00b7y = 0"},{"label":"length","latex":"13","pretty":"13"},{"label":"Q","latex":"169","pretty":"169"}],"approx":"\u2248 length 13.000000"},"[ A B ]":{"ID":"[ A B ]","type":"line","color":"#cbd5e1","name":"Sideline AB (Side c)","symbolic_rows":[{"label":"eq","latex":"y = 0","pretty":"y = 0"},{"label":"length","latex":"14","pretty":"14"},{"label":"Q","latex":"196","pretty":"196"}],"approx":"\u2248 length 14.000000"},"/ X_1 T_a /":{"ID":"/ X_1 T_a /","type":"segment","color":"#ff7043","name":"Orthogonal Trilinear Strut \u22a5 BC","symbolic_rows":[{"label":"d","latex":"\\alpha_0 = 4","pretty":"4"},{"label":"Q","latex":"16","pretty":"16"},{"label":"spread","latex":"1 \\;(\\perp)","pretty":"1 (\u22a5)"}],"approx":"\u2248 4.000000"},"/ X_1 T_b /":{"ID":"/ X_1 T_b /","type":"segment","color":"#38bdf8","name":"Orthogonal Trilinear Strut \u22a5 CA","symbolic_rows":[{"label":"d","latex":"\\beta_0 = 4","pretty":"4"},{"label":"Q","latex":"16","pretty":"16"},{"label":"spread","latex":"1 \\;(\\perp)","pretty":"1 (\u22a5)"}],"approx":"\u2248 4.000000"},"/ X_1 T_c /":{"ID":"/ X_1 T_c /","type":"segment","color":"#5ec27e","name":"Orthogonal Trilinear Strut \u22a5 AB","symbolic_rows":[{"label":"d","latex":"\\gamma_0 = 4","pretty":"4"},{"label":"Q","latex":"16","pretty":"16"},{"label":"spread","latex":"1 \\;(\\perp)","pretty":"1 (\u22a5)"}],"approx":"\u2248 4.000000"},"/ X_1 A /":{"ID":"/ X_1 A /","type":"segment","color":"#cbd5e1","name":"Barycentric Partition Spoke X_1A","symbolic_rows":[{"label":"length","latex":"2 \\sqrt{13}","pretty":"2\u00b7\u221a13"},{"label":"Q","latex":"52","pretty":"52"}],"approx":"\u2248 7.211103"},"/ X_1 B /":{"ID":"/ X_1 B /","type":"segment","color":"#cbd5e1","name":"Barycentric Partition Spoke X_1B","symbolic_rows":[{"label":"length","latex":"4 \\sqrt{5}","pretty":"4\u00b7\u221a5"},{"label":"Q","latex":"80","pretty":"80"}],"approx":"\u2248 8.944272"},"/ X_1 C /":{"ID":"/ X_1 C /","type":"segment","color":"#cbd5e1","name":"Barycentric Partition Spoke X_1C","symbolic_rows":[{"label":"length","latex":"\\sqrt{65}","pretty":"\u221a65"},{"label":"Q","latex":"65","pretty":"65"}],"approx":"\u2248 8.062258"},"\u003c X_1 B C \u003e":{"ID":"\u003c X_1 B C \u003e","type":"polygon","color":"#ff7043","name":"Barycentric Sub-Triangle \u25b3X_1BC","symbolic_rows":[{"label":"\u0394","latex":"30","pretty":"30"},{"label":"u / \u0394","latex":"\\frac{5}{14}","pretty":"5/14"},{"label":"bary","latex":"15 : 13 : 14","pretty":"15 : 13 : 14"}],"approx":"\u2248 30.0000 (35.7% of \u0394)"},"\u003c X_1 C A \u003e":{"ID":"\u003c X_1 C A \u003e","type":"polygon","color":"#38bdf8","name":"Barycentric Sub-Triangle \u25b3X_1CA","symbolic_rows":[{"label":"\u0394","latex":"26","pretty":"26"},{"label":"v / \u0394","latex":"\\frac{13}{42}","pretty":"13/42"},{"label":"bary","latex":"15 : 13 : 14","pretty":"15 : 13 : 14"}],"approx":"\u2248 26.0000 (31.0% of \u0394)"},"\u003c X_1 A B \u003e":{"ID":"\u003c X_1 A B \u003e","type":"polygon","color":"#5ec27e","name":"Barycentric Sub-Triangle \u25b3X_1AB","symbolic_rows":[{"label":"\u0394","latex":"28","pretty":"28"},{"label":"w / \u0394","latex":"\\frac{1}{3}","pretty":"1/3"},{"label":"bary","latex":"15 : 13 : 14","pretty":"15 : 13 : 14"}],"approx":"\u2248 28.0000 (33.3% of \u0394)"},"incircle":{"ID":"incircle","type":"circle","color":"#f472b6","name":"Incircle","symbolic_rows":[{"label":"eq","latex":"\\left(x - 6\\right)^{2} + \\left(y - 4\\right)^{2} = 16","pretty":"(x - 6)\u00b2 + (y - 4)\u00b2 = 16"},{"label":"r","latex":"4","pretty":"4"},{"label":"Q_r","latex":"16","pretty":"16"}],"approx":"r \u2248 4.000000"}}</script>
   <script>//<![CDATA[
 
 (function () {
@@ -795,16 +790,13 @@ svg.geometor-etc-drawing .etc-plate-panel.hover > rect.etc-panel-border {
         const vb = getViewBox();
         const unitsPerPx = vb[2] / widthPx;
 
-        const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
+        const uniformR = (4.8 * unitsPerPx).toFixed(6);
         pointEls.forEach(c => {
-            const isTarget = c.classList.contains('target') || c.classList.contains('selected');
-            const isGuide = c.classList.contains('guide');
-            const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
-            c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
+            c.setAttribute('r', uniformR);
         });
 
-        const fontSize = 20.25 * unitsPerPx;
-        const guideFontSize = 17.5 * unitsPerPx;
+        const fontSize = 24.0 * unitsPerPx;
+        const guideFontSize = 21.0 * unitsPerPx;
         labelEls.forEach(lbl => {
             const cx = parseFloat(lbl.getAttribute('data-anchor-x') || '0');
             const cy = parseFloat(lbl.getAttribute('data-anchor-y') || '0');

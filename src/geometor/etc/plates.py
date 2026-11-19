@@ -424,7 +424,7 @@ def generate_doc_coordinates_svg(
             rec.trilinear_pretty(),
             kepler_phi=kp,
         ),
-        fa_id: _pt_meta_entry(fa_id, f"Right-Spread Pedal Foot {fa_id} on BC", "#e8b85a", Pa_ex, kepler_phi=kp),
+        fa_id: _pt_meta_entry(fa_id, f"Right-Spread Pedal Foot {fa_id} on BC", "#ff7043", Pa_ex, kepler_phi=kp),
         fb_id: _pt_meta_entry(fb_id, f"Right-Spread Pedal Foot {fb_id} on CA", "#38bdf8", Pb_ex, kepler_phi=kp),
         fc_id: _pt_meta_entry(fc_id, f"Right-Spread Pedal Foot {fc_id} on AB", "#5ec27e", Pc_ex, kepler_phi=kp),
     }
@@ -458,7 +458,7 @@ def generate_doc_coordinates_svg(
         }
 
     for st_id, st_len, st_q, st_col, st_sym, side_nm in [
-        (sa_id, la_s, qa_s, "#e8b85a", "\\alpha", "BC"),
+        (sa_id, la_s, qa_s, "#ff7043", "\\alpha", "BC"),
         (sb_id, lb_s, qb_s, "#38bdf8", "\\beta", "CA"),
         (sc_id, lc_s, qc_s, "#5ec27e", "\\gamma", "AB"),
     ]:
@@ -511,7 +511,7 @@ def generate_doc_coordinates_svg(
         }
 
     for poly_id, sub_area, p_col, sym_u, opp_v in [
-        (sub_a_id, area_a, "#e8b85a", "u", "BC"),
+        (sub_a_id, area_a, "#ff7043", "u", "BC"),
         (sub_b_id, area_b, "#38bdf8", "v", "CA"),
         (sub_c_id, area_c, "#5ec27e", "w", "AB"),
     ]:
@@ -584,7 +584,7 @@ def generate_doc_coordinates_svg(
     )
 
     ra_nodes = ""
-    for ra_d, ra_col in [(ra_a, "#e8b85a"), (ra_b, "#38bdf8"), (ra_c, "#5ec27e")]:
+    for ra_d, ra_col in [(ra_a, "#ff7043"), (ra_b, "#38bdf8"), (ra_c, "#5ec27e")]:
         if ra_d:
             ra_nodes += (
                 f'  <path d="{ra_d}" fill="none" stroke="{ra_col}" '
@@ -593,7 +593,7 @@ def generate_doc_coordinates_svg(
 
     strut_lbl_nodes = ""
     for m_pt, st_end, g_ch, g_col in [
-        (ma, Pas, "α", "#e8b85a"),
+        (ma, Pas, "α", "#ff7043"),
         (mb, Pbs, "β", "#38bdf8"),
         (mc, Pcs, "γ", "#5ec27e"),
     ]:
@@ -620,16 +620,10 @@ def generate_doc_coordinates_svg(
     return f"""<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" data-initial-viewbox="0 0 1000 760" data-triangle="{html.escape(preset)}" data-field="{html.escape(fld_str)}" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
   <style>{EXPLORER_SVG_CSS}</style>
-  <defs>
-    <filter id="glow-coord" filterUnits="userSpaceOnUse" x="-100" y="-100" width="1200" height="960">
-      <feGaussianBlur stdDeviation="4.5" result="blur" />
-      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
-    </filter>
-  </defs>
 
   <polygon id="{sub_a_esc}" data-id="{sub_a_esc}" data-ref="{sub_a_esc}" class="etc-plate-poly"
            points="{Ps[0]:.1f},{Ps[1]:.1f} {Bs[0]:.1f},{Bs[1]:.1f} {Cs[0]:.1f},{Cs[1]:.1f}"
-           fill="#e8b85a" fill-opacity="0.19" stroke="none" />
+           fill="#ff7043" fill-opacity="0.19" stroke="none" />
   <polygon id="{sub_b_esc}" data-id="{sub_b_esc}" data-ref="{sub_b_esc}" class="etc-plate-poly"
            points="{Ps[0]:.1f},{Ps[1]:.1f} {Cs[0]:.1f},{Cs[1]:.1f} {As[0]:.1f},{As[1]:.1f}"
            fill="#38bdf8" fill-opacity="0.17" stroke="none" />
@@ -656,33 +650,33 @@ def generate_doc_coordinates_svg(
 
 {ra_nodes}  <line id="{sa_id}" data-id="{sa_id}" data-ref="{sa_id}" class="etc-plate-strut"
         x1="{Ps[0]:.1f}" y1="{Ps[1]:.1f}" x2="{Pas[0]:.1f}" y2="{Pas[1]:.1f}"
-        stroke="#e8b85a" stroke-width="5.2" stroke-linecap="round" filter="url(#glow-coord)" />
+        stroke="#ff7043" stroke-width="5.2" stroke-linecap="round" />
   <line id="{sb_id}" data-id="{sb_id}" data-ref="{sb_id}" class="etc-plate-strut"
         x1="{Ps[0]:.1f}" y1="{Ps[1]:.1f}" x2="{Pbs[0]:.1f}" y2="{Pbs[1]:.1f}"
-        stroke="#38bdf8" stroke-width="5.2" stroke-linecap="round" filter="url(#glow-coord)" />
+        stroke="#38bdf8" stroke-width="5.2" stroke-linecap="round" />
   <line id="{sc_id}" data-id="{sc_id}" data-ref="{sc_id}" class="etc-plate-strut"
         x1="{Ps[0]:.1f}" y1="{Ps[1]:.1f}" x2="{Pcs[0]:.1f}" y2="{Pcs[1]:.1f}"
-        stroke="#5ec27e" stroke-width="5.2" stroke-linecap="round" filter="url(#glow-coord)" />
+        stroke="#5ec27e" stroke-width="5.2" stroke-linecap="round" />
 
   <circle id="{fa_id}" data-id="{fa_id}" data-ref="{fa_id}" class="etc-plate-pt"
-          cx="{Pas[0]:.1f}" cy="{Pas[1]:.1f}" r="6.2" fill="#e8b85a" stroke="#0d111a" stroke-width="2" />
+          cx="{Pas[0]:.1f}" cy="{Pas[1]:.1f}" r="5.6" fill="#ff7043" stroke="#161616" stroke-width="2.2" />
   <circle id="{fb_id}" data-id="{fb_id}" data-ref="{fb_id}" class="etc-plate-pt"
-          cx="{Pbs[0]:.1f}" cy="{Pbs[1]:.1f}" r="6.2" fill="#38bdf8" stroke="#0d111a" stroke-width="2" />
+          cx="{Pbs[0]:.1f}" cy="{Pbs[1]:.1f}" r="5.6" fill="#38bdf8" stroke="#161616" stroke-width="2.2" />
   <circle id="{fc_id}" data-id="{fc_id}" data-ref="{fc_id}" class="etc-plate-pt"
-          cx="{Pcs[0]:.1f}" cy="{Pcs[1]:.1f}" r="6.2" fill="#5ec27e" stroke="#0d111a" stroke-width="2" />
+          cx="{Pcs[0]:.1f}" cy="{Pcs[1]:.1f}" r="5.6" fill="#5ec27e" stroke="#161616" stroke-width="2.2" />
 
   <circle id="A" data-id="A" data-ref="A" class="etc-plate-pt"
-          cx="{As[0]:.1f}" cy="{As[1]:.1f}" r="7.2" fill="#66ff66" stroke="#0d111a" stroke-width="2.2" />
+          cx="{As[0]:.1f}" cy="{As[1]:.1f}" r="5.6" fill="#66ff66" stroke="#161616" stroke-width="2.2" />
   <circle id="B" data-id="B" data-ref="B" class="etc-plate-pt"
-          cx="{Bs[0]:.1f}" cy="{Bs[1]:.1f}" r="7.2" fill="#66ff66" stroke="#0d111a" stroke-width="2.2" />
+          cx="{Bs[0]:.1f}" cy="{Bs[1]:.1f}" r="5.6" fill="#66ff66" stroke="#161616" stroke-width="2.2" />
   <circle id="C" data-id="C" data-ref="C" class="etc-plate-pt"
-          cx="{Cs[0]:.1f}" cy="{Cs[1]:.1f}" r="7.2" fill="#f8f6f0" stroke="#0d111a" stroke-width="2.2" />
+          cx="{Cs[0]:.1f}" cy="{Cs[1]:.1f}" r="5.6" fill="#f8f6f0" stroke="#161616" stroke-width="2.2" />
 
   <g pointer-events="none">
     <text x="{As[0] - 32:.1f}" y="{As[1] + 26:.1f}" fill="#88ff88" font-family="Georgia, serif" font-size="28" font-weight="bold">A</text>
     <text x="{Bs[0] + 16:.1f}" y="{Bs[1] + 26:.1f}" fill="#88ff88" font-family="Georgia, serif" font-size="28" font-weight="bold">B</text>
     <text x="{c_lbl_x:.1f}" y="{c_lbl_y:.1f}" fill="#f8f6f0" font-family="Georgia, serif" font-size="28" font-weight="bold">C</text>
-    <text x="{Pas[0] + 12:.1f}" y="{Pas[1] - 8:.1f}" fill="#e8b85a" font-family="Georgia, serif" font-size="19" font-weight="bold">{fa_id[0]}<tspan dy="0.28em" font-size="74%">{fa_id[-1]}</tspan></text>
+    <text x="{Pas[0] + 12:.1f}" y="{Pas[1] - 8:.1f}" fill="#ff7043" font-family="Georgia, serif" font-size="19" font-weight="bold">{fa_id[0]}<tspan dy="0.28em" font-size="74%">{fa_id[-1]}</tspan></text>
     <text x="{Pbs[0] - 34:.1f}" y="{Pbs[1] - 8:.1f}" fill="#38bdf8" font-family="Georgia, serif" font-size="19" font-weight="bold">{fb_id[0]}<tspan dy="0.28em" font-size="74%">{fb_id[-1]}</tspan></text>
     <text x="{Pcs[0] + 10:.1f}" y="{Pcs[1] + 26:.1f}" fill="#5ec27e" font-family="Georgia, serif" font-size="19" font-weight="bold">{fc_id[0]}<tspan dy="0.28em" font-size="74%">{fc_id[-1]}</tspan></text>
   </g>
@@ -690,8 +684,8 @@ def generate_doc_coordinates_svg(
   <g font-family="Georgia, serif" font-size="26" font-weight="bold" pointer-events="none">
 {strut_lbl_nodes}  </g>
 
-  <circle id="X_{num}" data-id="X_{num}" data-ref="X_{num}" class="etc-plate-pt"
-          cx="{Ps[0]:.1f}" cy="{Ps[1]:.1f}" r="10.5" fill="#ffd700" stroke="#00ffff" stroke-width="3" filter="url(#glow-coord)" />
+  <circle id="X_{num}" data-id="X_{num}" data-ref="X_{num}" class="etc-plate-pt target"
+          cx="{Ps[0]:.1f}" cy="{Ps[1]:.1f}" r="5.6" fill="#161616" stroke="#e8b85a" stroke-width="2.8" />
   <g pointer-events="none">
     <rect x="{Ps[0] + x_badge_dx - 34:.1f}" y="{Ps[1] - 46:.1f}" width="68" height="30" rx="6" fill="rgba(13, 17, 26, 0.92)" stroke="#e8b85a" stroke-width="1.5" />
     <text x="{Ps[0] + x_badge_dx:.1f}" y="{Ps[1] - 25:.1f}" text-anchor="middle" fill="#ffd700" font-family="JetBrains Mono, monospace" font-size="19" font-weight="bold">{_svg_x(num)}</text>
@@ -1092,12 +1086,16 @@ def generate_doc_relations_svg(
 
 
 def generate_doc_four_triangles_svg(num: int) -> str:
-    """Generate Act 5 ``05_four_triangles.svg`` across all 4 Canonical Symbolic Reference Triangles."""
+    """Generate Act 5 ``05_four_triangles.svg`` as a 3×2 grid across the 6 non-degenerate Canonical Triangles."""
+    panel_w = 374.0
+    panel_h = 350.0
     quad_specs = [
-        ("heronian", "Heronian (15, 13, 14)", token_hex(REFERENCE_TRIANGLE_COLORS["heronian"]), 35.0, 22.0),
-        ("right", "Right (3, 4, 5)", token_hex(REFERENCE_TRIANGLE_COLORS["right"]), 515.0, 22.0),
-        ("kepler", "Kepler (1, √φ, φ)", token_hex(REFERENCE_TRIANGLE_COLORS["kepler"]), 35.0, 390.0),
-        ("kimberling", "Kimberling (6, 9, 13)", token_hex(REFERENCE_TRIANGLE_COLORS["kimberling"]), 515.0, 390.0),
+        ("heronian", "Heronian (15, 13, 14)", token_hex(REFERENCE_TRIANGLE_COLORS["heronian"]), 24.0, 20.0),
+        ("right", "Right (3, 4, 5)", token_hex(REFERENCE_TRIANGLE_COLORS["right"]), 413.0, 20.0),
+        ("kepler", "Kepler (1, √φ, φ)", token_hex(REFERENCE_TRIANGLE_COLORS["kepler"]), 802.0, 20.0),
+        ("kimberling", "Kimberling (6, 9, 13)", token_hex(REFERENCE_TRIANGLE_COLORS["kimberling"]), 24.0, 388.0),
+        ("golden", "Golden (φ, φ, 1)", token_hex(REFERENCE_TRIANGLE_COLORS["golden"]), 413.0, 388.0),
+        ("gnomon", "Gnomon (1, 1, φ)", token_hex(REFERENCE_TRIANGLE_COLORS["gnomon"]), 802.0, 388.0),
     ]
 
     c_spec = CIRCLE_CENTER_SPECS.get(num)
@@ -1143,10 +1141,10 @@ def generate_doc_four_triangles_svg(num: int) -> str:
 
         sc, ox, oy = _fit_points_to_box(
             fit_pts,
-            x_off + 52.0,
-            y_off + 58.0,
-            346.0,
-            234.0,
+            x_off + 44.0,
+            y_off + 56.0,
+            panel_w - 88.0,
+            panel_h - 114.0,
         )
 
         As = _to_screen(A, sc, ox, oy)
@@ -1167,7 +1165,7 @@ def generate_doc_four_triangles_svg(num: int) -> str:
         st_c_id = f"{key}-strut-c"
 
         fld_pretty = tri.coordinate_field_pretty([*rec.xy, *rec.bary])
-        field_badge = f"Δ = {format_symbolic_pretty(tri.area, kepler_phi=kp)} • {fld_pretty}"
+        field_badge = fld_pretty
 
         sides_ltx = (
             f"\\left({format_symbolic_latex(tri.a, kepler_phi=kp)},\\; "
@@ -1189,7 +1187,7 @@ def generate_doc_four_triangles_svg(num: int) -> str:
             {
                 "label": "Δ, field",
                 "latex": f"\\Delta = {format_symbolic_latex(tri.area, kepler_phi=kp)},\\; {tri.coordinate_field_latex([*rec.xy, *rec.bary])}",
-                "pretty": field_badge,
+                "pretty": f"Δ = {format_symbolic_pretty(tri.area, kepler_phi=kp)} • {fld_pretty}",
             },
         ]
         catalog[panel_id] = {
@@ -1216,7 +1214,7 @@ def generate_doc_four_triangles_svg(num: int) -> str:
         catalog[f"{key}-C"] = _pt_meta_entry(f"{key}-C", f"Vertex C ({label})", "#f8f6f0", C_ex, kepler_phi=kp)
 
         for sid, sa_val, scol, sv in [
-            (sub_a_id, rec.sub_areas[0], "#e8b85a", "BC"),
+            (sub_a_id, rec.sub_areas[0], "#ff7043", "BC"),
             (sub_b_id, rec.sub_areas[1], "#38bdf8", "CA"),
             (sub_c_id, rec.sub_areas[2], "#5ec27e", "AB"),
         ]:
@@ -1241,7 +1239,7 @@ def generate_doc_four_triangles_svg(num: int) -> str:
             }
 
         for st_id, sa_val, s_len, scol, ssym, snm in [
-            (st_a_id, rec.sub_areas[0], tri.a, "#e8b85a", "\\alpha", "BC"),
+            (st_a_id, rec.sub_areas[0], tri.a, "#ff7043", "\\alpha", "BC"),
             (st_b_id, rec.sub_areas[1], tri.b, "#38bdf8", "\\beta", "CA"),
             (st_c_id, rec.sub_areas[2], tri.c, "#5ec27e", "\\gamma", "AB"),
         ]:
@@ -1304,52 +1302,72 @@ def generate_doc_four_triangles_svg(num: int) -> str:
             + _sideline_extension_svg(As, Bs, Pcs, tc_f, indent="    ", stroke_w=1.4)
         )
 
+        # Draw crisp right-angle corner mark on Right and Kepler triangles
+        ra_corner_svg = ""
+        ra_v = tri.right_angle_vertex
+        if ra_v == "A":
+            ra_d = _right_angle_path(As, Cs, Bs, size=13.0)
+        elif ra_v == "B":
+            ra_d = _right_angle_path(Bs, As, Cs, size=13.0)
+        elif ra_v == "C":
+            ra_d = _right_angle_path(Cs, As, Bs, size=13.0)
+        else:
+            ra_d = ""
+        if ra_d:
+            ra_corner_svg = (
+                f'    <path d="{ra_d}" fill="none" stroke="#94a3b8" '
+                f'stroke-width="1.8" opacity="0.82" pointer-events="none" />\n'
+            )
+
         c_lx = Cs[0] - 6.0
         c_ly = Cs[1] - 10.0
-        x_lx = Ps[0] + 12.0
-        x_ly = Ps[1] - 10.0
+        x_lx = Ps[0] + 11.0
+        x_ly = Ps[1] - 9.0
         if math.hypot(Ps[0] - Cs[0], Ps[1] - Cs[1]) < 24.0:
             c_lx = Cs[0] - 20.0
             c_ly = Cs[1] - 8.0
-            x_lx = Ps[0] + 12.0
+            x_lx = Ps[0] + 11.0
             x_ly = Ps[1] - 8.0
+        if math.hypot(Ps[0] - As[0], Ps[1] - As[1]) < 22.0:
+            x_lx = Ps[0] + 14.0
+            x_ly = Ps[1] - 12.0
 
         coord_footer = f"X_{num} = {xy_prt}"
-        if len(coord_footer) > 46:
-            coord_footer = coord_footer[:43] + "..."
+        if len(coord_footer) > 40:
+            coord_footer = coord_footer[:37] + "..."
 
         panels.append(f"""
   <g id="{panel_id}" data-id="{panel_id}" data-ref="{panel_id}" class="etc-plate-panel">
-    <rect class="etc-panel-border" x="{x_off:.1f}" y="{y_off:.1f}" width="450" height="346" rx="16" fill="rgba(13, 17, 26, 0.92)" stroke="{accent}" stroke-width="1.8" />
-    <text x="{x_off + 22:.1f}" y="{y_off + 34:.1f}" fill="{accent}" font-family="JetBrains Mono, monospace" font-size="16.5" font-weight="bold" pointer-events="none">{html.escape(label)}</text>
-    <text x="{x_off + 428:.1f}" y="{y_off + 34:.1f}" text-anchor="end" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="13" pointer-events="none">{html.escape(field_badge)}</text>
+    <rect class="etc-panel-border" x="{x_off:.1f}" y="{y_off:.1f}" width="{panel_w:.0f}" height="{panel_h:.0f}" rx="14" fill="rgba(13, 17, 26, 0.92)" stroke="{accent}" stroke-width="1.8" />
+    <text x="{x_off + 18:.1f}" y="{y_off + 30:.1f}" fill="{accent}" font-family="JetBrains Mono, monospace" font-size="14.5" font-weight="bold" pointer-events="none">{html.escape(label)}</text>
+    <text x="{x_off + panel_w - 16:.1f}" y="{y_off + 30:.1f}" text-anchor="end" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="12" pointer-events="none">{html.escape(field_badge)}</text>
 
-    <polygon id="{sub_a_id}" data-id="{sub_a_id}" data-ref="{sub_a_id}" class="etc-plate-poly" points="{Ps[0]:.1f},{Ps[1]:.1f} {Bs[0]:.1f},{Bs[1]:.1f} {Cs[0]:.1f},{Cs[1]:.1f}" fill="#e8b85a" fill-opacity="0.14" stroke="none" />
+    <polygon id="{sub_a_id}" data-id="{sub_a_id}" data-ref="{sub_a_id}" class="etc-plate-poly" points="{Ps[0]:.1f},{Ps[1]:.1f} {Bs[0]:.1f},{Bs[1]:.1f} {Cs[0]:.1f},{Cs[1]:.1f}" fill="#ff7043" fill-opacity="0.14" stroke="none" />
     <polygon id="{sub_b_id}" data-id="{sub_b_id}" data-ref="{sub_b_id}" class="etc-plate-poly" points="{Ps[0]:.1f},{Ps[1]:.1f} {Cs[0]:.1f},{Cs[1]:.1f} {As[0]:.1f},{As[1]:.1f}" fill="#38bdf8" fill-opacity="0.14" stroke="none" />
     <polygon id="{sub_c_id}" data-id="{sub_c_id}" data-ref="{sub_c_id}" class="etc-plate-poly" points="{Ps[0]:.1f},{Ps[1]:.1f} {As[0]:.1f},{As[1]:.1f} {Bs[0]:.1f},{Bs[1]:.1f}" fill="#5ec27e" fill-opacity="0.14" stroke="none" />
 
-{circle_panel_svg}{ext_panel_svg}    <polygon points="{As[0]:.1f},{As[1]:.1f} {Bs[0]:.1f},{Bs[1]:.1f} {Cs[0]:.1f},{Cs[1]:.1f}" fill="none" stroke="#cbd5e1" stroke-width="2.3" stroke-dasharray="2, 4.5" stroke-linecap="round" pointer-events="none" />
-    <line id="{st_a_id}" data-id="{st_a_id}" data-ref="{st_a_id}" class="etc-plate-strut" x1="{Ps[0]:.1f}" y1="{Ps[1]:.1f}" x2="{Pas[0]:.1f}" y2="{Pas[1]:.1f}" stroke="#e8b85a" stroke-width="2.9" />
+{circle_panel_svg}{ext_panel_svg}{ra_corner_svg}    <polygon points="{As[0]:.1f},{As[1]:.1f} {Bs[0]:.1f},{Bs[1]:.1f} {Cs[0]:.1f},{Cs[1]:.1f}" fill="none" stroke="#cbd5e1" stroke-width="2.2" stroke-dasharray="2, 4.5" stroke-linecap="round" pointer-events="none" />
+    <line id="{st_a_id}" data-id="{st_a_id}" data-ref="{st_a_id}" class="etc-plate-strut" x1="{Ps[0]:.1f}" y1="{Ps[1]:.1f}" x2="{Pas[0]:.1f}" y2="{Pas[1]:.1f}" stroke="#ff7043" stroke-width="2.9" />
     <line id="{st_b_id}" data-id="{st_b_id}" data-ref="{st_b_id}" class="etc-plate-strut" x1="{Ps[0]:.1f}" y1="{Ps[1]:.1f}" x2="{Pbs[0]:.1f}" y2="{Pbs[1]:.1f}" stroke="#38bdf8" stroke-width="2.9" />
     <line id="{st_c_id}" data-id="{st_c_id}" data-ref="{st_c_id}" class="etc-plate-strut" x1="{Ps[0]:.1f}" y1="{Ps[1]:.1f}" x2="{Pcs[0]:.1f}" y2="{Pcs[1]:.1f}" stroke="#5ec27e" stroke-width="2.9" />
 
-    <circle id="{key}-A" data-id="{key}-A" data-ref="{key}-A" class="etc-plate-pt" cx="{As[0]:.1f}" cy="{As[1]:.1f}" r="4.6" fill="#66ff66" />
-    <circle id="{key}-B" data-id="{key}-B" data-ref="{key}-B" class="etc-plate-pt" cx="{Bs[0]:.1f}" cy="{Bs[1]:.1f}" r="4.6" fill="#66ff66" />
-    <circle id="{key}-C" data-id="{key}-C" data-ref="{key}-C" class="etc-plate-pt" cx="{Cs[0]:.1f}" cy="{Cs[1]:.1f}" r="4.6" fill="#f8f6f0" />
-    <circle id="{pt_x_id}" data-id="{pt_x_id}" data-ref="{pt_x_id}" class="etc-plate-pt" cx="{Ps[0]:.1f}" cy="{Ps[1]:.1f}" r="7.5" fill="#ffd700" stroke="#00ffff" stroke-width="2.2" />
+    <circle id="{key}-A" data-id="{key}-A" data-ref="{key}-A" class="etc-plate-pt" cx="{As[0]:.1f}" cy="{As[1]:.1f}" r="4.4" fill="#66ff66" stroke="#161616" stroke-width="2" />
+    <circle id="{key}-B" data-id="{key}-B" data-ref="{key}-B" class="etc-plate-pt" cx="{Bs[0]:.1f}" cy="{Bs[1]:.1f}" r="4.4" fill="#66ff66" stroke="#161616" stroke-width="2" />
+    <circle id="{key}-C" data-id="{key}-C" data-ref="{key}-C" class="etc-plate-pt" cx="{Cs[0]:.1f}" cy="{Cs[1]:.1f}" r="4.4" fill="#f8f6f0" stroke="#161616" stroke-width="2" />
+    <circle id="{pt_x_id}" data-id="{pt_x_id}" data-ref="{pt_x_id}" class="etc-plate-pt target" cx="{Ps[0]:.1f}" cy="{Ps[1]:.1f}" r="4.4" fill="#161616" stroke="#e8b85a" stroke-width="2.8" />
 
     <g pointer-events="none">
-      <text x="{As[0] - 18:.1f}" y="{As[1] + 18:.1f}" fill="#88ff88" font-family="Georgia, serif" font-size="18" font-weight="bold">A</text>
-      <text x="{Bs[0] + 8:.1f}" y="{Bs[1] + 18:.1f}" fill="#88ff88" font-family="Georgia, serif" font-size="18" font-weight="bold">B</text>
-      <text x="{c_lx:.1f}" y="{c_ly:.1f}" fill="#f8f6f0" font-family="Georgia, serif" font-size="18" font-weight="bold">C</text>
-      <text x="{x_lx:.1f}" y="{x_ly:.1f}" fill="#ffd700" font-family="JetBrains Mono, monospace" font-size="17" font-weight="bold">{_svg_x(num)}</text>
-      <text x="{x_off + 225:.1f}" y="{y_off + 332:.1f}" text-anchor="middle" fill="#cbd5e1" font-family="JetBrains Mono, monospace" font-size="12.5">{html.escape(coord_footer)}</text>
+      <text x="{As[0] - 18:.1f}" y="{As[1] + 18:.1f}" fill="#88ff88" font-family="Georgia, serif" font-size="17" font-weight="bold">A</text>
+      <text x="{Bs[0] + 8:.1f}" y="{Bs[1] + 18:.1f}" fill="#88ff88" font-family="Georgia, serif" font-size="17" font-weight="bold">B</text>
+      <text x="{c_lx:.1f}" y="{c_ly:.1f}" fill="#f8f6f0" font-family="Georgia, serif" font-size="17" font-weight="bold">C</text>
+      <text x="{x_lx:.1f}" y="{x_ly:.1f}" fill="#ffd700" font-family="JetBrains Mono, monospace" font-size="16" font-weight="bold">{_svg_x(num)}</text>
+      <text x="{x_off + panel_w / 2:.1f}" y="{y_off + panel_h - 14:.1f}" text-anchor="middle" fill="#cbd5e1" font-family="JetBrains Mono, monospace" font-size="11.5">{html.escape(coord_footer)}</text>
     </g>
   </g>""")
 
     meta_json = _safe_meta_json(catalog)
     return f"""<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" data-initial-viewbox="0 0 1000 760" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+<svg class="geometor-etc-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" data-initial-viewbox="0 0 1200 760" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
   <style>{EXPLORER_SVG_CSS}</style>
   {''.join(panels)}
   <script type="application/json" class="etc-elements-meta">{meta_json}</script>
@@ -1357,3 +1375,6 @@ def generate_doc_four_triangles_svg(num: int) -> str:
 {INTERACTIVE_SVG_JS}
 //]]></script>
 </svg>"""
+
+
+generate_doc_canonical_triangles_svg = generate_doc_four_triangles_svg

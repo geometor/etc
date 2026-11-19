@@ -1,5 +1,6 @@
 :canonical_id: X_6
 :subtitle: SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)
+:tracks: Overview: index | Lines: lines | Relations: relations | Notes: notes | Code: code
 
 X_6
 ====

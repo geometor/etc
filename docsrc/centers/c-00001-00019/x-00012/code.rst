@@ -1,5 +1,6 @@
 :canonical_id: X_12
 :subtitle: {X_1,X_5}-HARMONIC CONJUGATE OF X_11
+:tracks: Overview: index | Lines: lines | Relations: relations | Notes: notes | Code: code
 
 X_12
 ====

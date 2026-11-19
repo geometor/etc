@@ -1,5 +1,6 @@
 :canonical_id: X_15
 :subtitle: 1st ISODYNAMIC POINT
+:tracks: Overview: index | Lines: lines | Relations: relations | Notes: notes | Code: code
 
 X_15
 ====

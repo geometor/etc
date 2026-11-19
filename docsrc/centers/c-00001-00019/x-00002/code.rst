@@ -1,5 +1,6 @@
 :canonical_id: X_2
 :subtitle: CENTROID
+:tracks: Overview: index | Lines: lines | Relations: relations | Notes: notes | Code: code
 
 X_2
 ====

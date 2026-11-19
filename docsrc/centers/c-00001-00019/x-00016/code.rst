@@ -1,5 +1,6 @@
 :canonical_id: X_16
 :subtitle: 2nd ISODYNAMIC POINT
+:tracks: Overview: index | Lines: lines | Relations: relations | Notes: notes | Code: code
 
 X_16
 ====

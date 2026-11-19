@@ -33,6 +33,7 @@ from .palette import (
     get_circle_color_token,
     token_hex,
 )
+from .svg_opt import clip_infinite_line_to_rect, inject_lines_viewbox
 from .symbolic_cache import (
     EXACT_CYCLIC_BARYCENTRICS,
     CenterSymbolicRegistry,
@@ -88,7 +89,7 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
 
 #points circle {
     fill: var(--text-color);
-    stroke: var(--background-color);
+    stroke: var(--accent-color);
     stroke-width: 2.5;
     vector-effect: non-scaling-stroke;
     cursor: pointer;
@@ -105,17 +106,18 @@ svg.geometor-etc-drawing:not(.show-lines) .incident {
 }
 
 #points circle.selected,
+#points circle.given.selected,
 #points circle.target {
-    stroke: var(--select-color);
-    fill: gold;
-    stroke-width: 3;
+    fill: var(--accent-color);
+    stroke: #e8b85a;
+    stroke-width: 2.8;
 }
 
 #points circle:hover,
 #points circle.hover {
-    fill: var(--select-color) !important;
-    stroke: #fff !important;
-    stroke-width: 3.5 !important;
+    fill: #e8b85a !important;
+    stroke: var(--accent-color) !important;
+    stroke-width: 2.5 !important;
 }
 
 #elements line,
@@ -753,16 +755,13 @@ INTERACTIVE_SVG_JS = r"""
         const vb = getViewBox();
         const unitsPerPx = vb[2] / widthPx;
 
-        const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
+        const uniformR = (4.8 * unitsPerPx).toFixed(6);
         pointEls.forEach(c => {
-            const isTarget = c.classList.contains('target') || c.classList.contains('selected');
-            const isGuide = c.classList.contains('guide');
-            const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
-            c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
+            c.setAttribute('r', uniformR);
         });
 
-        const fontSize = 20.25 * unitsPerPx;
-        const guideFontSize = 17.5 * unitsPerPx;
+        const fontSize = 24.0 * unitsPerPx;
+        const guideFontSize = 21.0 * unitsPerPx;
         labelEls.forEach(lbl => {
             const cx = parseFloat(lbl.getAttribute('data-anchor-x') || '0');
             const cy = parseFloat(lbl.getAttribute('data-anchor-y') || '0');
@@ -2554,6 +2553,7 @@ def render_model_svg(
     show_labels: bool = True,
     subtitle: str = "",
     show_lines: bool = False,
+    standalone: bool = True,
 ) -> str:
     """Render a `geometor.model.Model` to an interactive Explorer-compatible SVG string."""
     elements = model_to_elements_list(model)
@@ -2693,16 +2693,12 @@ def render_model_svg(
     vb_y = -center_y - vb_height / 2.0
 
     units_per_px = vb_width / svg_width
-    target_r_px = (
-        10.5
-        if num_targets <= 1
-        else (8.0 if num_targets <= 25 else (6.8 if num_targets <= 50 else 5.8))
-    )
-    pt_radius = 7.5 * units_per_px
-    target_radius = target_r_px * units_per_px
+    target_r_px = 4.8
+    pt_radius = 4.8 * units_per_px
+    target_radius = 4.8 * units_per_px
     guide_radius = 4.8 * units_per_px
-    font_size = 20.25 * units_per_px
-    guide_font_size = 17.5 * units_per_px
+    font_size = 24.0 * units_per_px
+    guide_font_size = 21.0 * units_per_px
 
     graphics_nodes: list[str] = []
     highlights_nodes: list[str] = []
@@ -2752,6 +2748,33 @@ def render_model_svg(
                 f'class="{class_attr}" data-category="graphics" points="{pts_str}">'
                 f"<title>{title_txt}</title></polygon>"
             )
+            if "reference" in el.get("classes", []) and len(el["points"]) == 3:
+                v_pts = [points_by_id.get(pid) for pid in el["points"]]
+                if all(v is not None for v in v_pts):
+                    for idx in range(3):
+                        v0 = v_pts[idx]
+                        v1 = v_pts[(idx + 1) % 3]
+                        v2 = v_pts[(idx + 2) % 3]
+                        assert v0 is not None and v1 is not None and v2 is not None
+                        u1x, u1y = v1["x"] - v0["x"], -(v1["y"] - v0["y"])
+                        u2x, u2y = v2["x"] - v0["x"], -(v2["y"] - v0["y"])
+                        l1 = math.hypot(u1x, u1y)
+                        l2 = math.hypot(u2x, u2y)
+                        if l1 > 1e-9 and l2 > 1e-9 and abs(u1x * u2x + u1y * u2y) < 1e-6 * l1 * l2:
+                            sq = 0.085 * min(l1, l2)
+                            u1x, u1y = (u1x / l1) * sq, (u1y / l1) * sq
+                            u2x, u2y = (u2x / l2) * sq, (u2y / l2) * sq
+                            vx, vy = v0["x"], -v0["y"]
+                            p1x, p1y = vx + u1x, vy + u1y
+                            p2x, p2y = vx + u1x + u2x, vy + u1y + u2y
+                            p3x, p3y = vx + u2x, vy + u2y
+                            graphics_nodes.append(
+                                f'    <path class="right-angle-mark" d="M {p1x:.6f},{p1y:.6f} '
+                                f'L {p2x:.6f},{p2y:.6f} L {p3x:.6f},{p3y:.6f}" '
+                                f'fill="none" stroke="#94a3b8" stroke-width="1.6" '
+                                f'vector-effect="non-scaling-stroke" opacity="0.72" pointer-events="none" />'
+                            )
+                            break
 
         elif el["type"] in {"segment", "section", "chain"}:
             pts_str = " ".join(
@@ -2790,11 +2813,29 @@ def render_model_svg(
                 dx = p2["x"] - p1["x"]
                 dy = p2["y"] - p1["y"]
                 seg_norm = math.hypot(dx, dy) or 1.0
-                ext = (1000.0 * tri_span) / seg_norm
-                x1 = p1["x"] - ext * dx
-                y1 = -(p1["y"] - ext * dy)
-                x2 = p1["x"] + ext * dx
-                y2 = -(p1["y"] + ext * dy)
+                # SVG y-axis is inverted relative to Cartesian y
+                ux = dx / seg_norm
+                uy = -dy / seg_norm
+                mx = 0.5 * (p1["x"] + p2["x"])
+                my = -0.5 * (p1["y"] + p2["y"])
+                pad_x = vb_width * 0.75
+                pad_y = vb_height * 0.75
+                clipped = clip_infinite_line_to_rect(
+                    mx,
+                    my,
+                    ux,
+                    uy,
+                    vb_x - pad_x,
+                    vb_y - pad_y,
+                    vb_x + vb_width + pad_x,
+                    vb_y + vb_height + pad_y,
+                )
+                if clipped is not None:
+                    x1, y1, x2, y2 = clipped
+                else:
+                    half = max(vb_width, vb_height) * 2.0
+                    x1, y1 = mx - half * ux, my - half * uy
+                    x2, y2 = mx + half * ux, my + half * uy
                 c_tok = info.get("color_token") or ""
                 c_hex = info.get("color") or ""
                 c_attrs = (
@@ -2812,8 +2853,9 @@ def render_model_svg(
                     if sym.get("spread_pretty")
                     else ""
                 )
+                dl_attr = f'data-line="{mx:.6f},{my:.6f},{ux:.8f},{uy:.8f}" '
                 elements_nodes.append(
-                    f'    <line id="{el_id}" data-id="{el_id}" data-ref="{el_id}" data-name="{el_name}" {c_attrs}{eq_attr}{s_attr}'
+                    f'    <line id="{el_id}" data-id="{el_id}" data-ref="{el_id}" data-name="{el_name}" {c_attrs}{eq_attr}{s_attr}{dl_attr}'
                     f'data-pt1="{html.escape(el["pt1"], quote=True)}" data-pt2="{html.escape(el["pt2"], quote=True)}" '
                     f'class="{class_attr}" data-category="elements" '
                     f'x1="{x1:.5f}" y1="{y1:.5f}" x2="{x2:.5f}" y2="{y2:.5f}">'
@@ -3007,33 +3049,38 @@ def render_model_svg(
             f'data-target-r-px="{target_r_px}" '
             f'preserveAspectRatio="xMidYMid meet">'
         ),
-        f"  <style>{EXPLORER_SVG_CSS}</style>",
-        "  <defs>",
-        '    <marker id="marker" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="3" markerHeight="3" orient="auto-start-reverse">',
-        '      <circle cx="3" cy="3" r="3" fill="context-stroke" vector-effect="non-scaling-stroke"></circle>',
-        "    </marker>",
-        "  </defs>",
-        '  <g id="graphics">',
-        *graphics_nodes,
-        "  </g>",
-        '  <g id="highlights">',
-        *highlights_nodes,
-        "  </g>",
-        '  <g id="elements">',
-        *elements_nodes,
-        "  </g>",
-        '  <g id="points">',
-        *points_nodes,
-        "  </g>",
-        '  <g id="labels">',
-        *labels_nodes,
-        "  </g>",
-        f'  <script type="application/json" class="etc-elements-meta">{meta_json}</script>',
-        f"  <script>//<![CDATA[\n{INTERACTIVE_SVG_JS}\n//]]></script>",
-        "</svg>",
-        "",
     ]
-    return "\n".join(svg_lines)
+    if standalone:
+        svg_lines.append(f"  <style>{EXPLORER_SVG_CSS}</style>")
+    svg_lines.extend(
+        [
+            "  <defs>",
+            '    <marker id="marker" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="3" markerHeight="3" orient="auto-start-reverse">',
+            '      <circle cx="3" cy="3" r="3" fill="context-stroke" vector-effect="non-scaling-stroke"></circle>',
+            "    </marker>",
+            "  </defs>",
+            '  <g id="graphics">',
+            *graphics_nodes,
+            "  </g>",
+            '  <g id="highlights">',
+            *highlights_nodes,
+            "  </g>",
+            '  <g id="elements">',
+            *elements_nodes,
+            "  </g>",
+            '  <g id="points">',
+            *points_nodes,
+            "  </g>",
+            '  <g id="labels">',
+            *labels_nodes,
+            "  </g>",
+            f'  <script type="application/json" class="etc-elements-meta">{meta_json}</script>',
+        ]
+    )
+    if standalone:
+        svg_lines.append(f"  <script>//<![CDATA[\n{INTERACTIVE_SVG_JS}\n//]]></script>")
+    svg_lines.extend(["</svg>", ""])
+    return inject_lines_viewbox("\n".join(svg_lines))
 
 
 def write_center_svg(
@@ -3041,11 +3088,14 @@ def write_center_svg(
     output_path: str | Path,
     subtitle: str = "",
     show_lines: bool = False,
+    standalone: bool = True,
 ) -> Path:
     """Render and write a center's `Model` SVG to `output_path`."""
     path = Path(output_path)
     path.parent.mkdir(parents=True, exist_ok=True)
-    svg_content = render_model_svg(model, subtitle=subtitle, show_lines=show_lines)
+    svg_content = render_model_svg(
+        model, subtitle=subtitle, show_lines=show_lines, standalone=standalone
+    )
     path.write_text(svg_content, encoding="utf-8")
     return path
 

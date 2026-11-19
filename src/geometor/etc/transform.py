@@ -1241,7 +1241,7 @@ def _format_act4_prose_rst(
 
 
 def _format_act5_prose_rst(num: int) -> list[str]:
-    """Generate Act 5 four-triangle symbolic invariance synthesis for ``X_num``."""
+    """Generate Act 5 canonical multi-triangle symbolic invariance synthesis for ``X_num``."""
     from geometor.model import exact_sign, zero_test
 
     from .plates import CIRCLE_CENTER_SPECS
@@ -1251,11 +1251,12 @@ def _format_act5_prose_rst(num: int) -> list[str]:
     key = f"X_{num}"
     c_spec = CIRCLE_CENTER_SPECS.get(num)
 
+    grid_keys = ("heronian", "right", "kepler", "kimberling", "golden", "gnomon")
     recs = {
         k: CenterSymbolicRegistry(CANONICAL_TRIANGLES[k]).get(num)
-        for k in ("heronian", "right", "kepler", "kimberling")
+        for k in (*grid_keys, "equilateral")
     }
-    tris = {k: CANONICAL_TRIANGLES[k] for k in ("heronian", "right", "kepler", "kimberling")}
+    tris = {k: CANONICAL_TRIANGLES[k] for k in (*grid_keys, "equilateral")}
 
     def _panel_phrase(t_key: str, disp_lbl: str) -> str:
         tri = tris[t_key]
@@ -1269,66 +1270,83 @@ def _format_act5_prose_rst(num: int) -> list[str]:
             extra = (
                 f", :g:`{c_spec.r_sym} <{t_key}-{c_spec.circle_id}>` = :math:`{r_ltx}`"
             )
-        if t_key == "kepler" and len(rec.xy_latex()) > 65:
+        if t_key in ("kepler", "golden", "gnomon") and len(rec.xy_latex()) > 55:
             return rf":g:`{disp_lbl} <{t_key}-{key}>` over :math:`{fld}`{extra}"
-        return rf":g:`{disp_lbl} <{t_key}-{key}>` over :math:`{fld}` (:math:`{key} = {rec.xy_latex()}`{extra})"
+        return rf":g:`{disp_lbl} <{t_key}-{key}>` over :math:`{fld}` (:math:`X_{{{num}}} = {rec.xy_latex()}`{extra})"
 
     p_hero = _panel_phrase("heronian", "Heronian (15, 13, 14)")
     p_right = _panel_phrase("right", "Right (3, 4, 5)")
     p_kep = _panel_phrase("kepler", "Kepler (1, √φ, φ)")
     p_kim = _panel_phrase("kimberling", "Kimberling (6, 9, 13)")
+    p_gold = _panel_phrase("golden", "Golden (φ, φ, 1)")
+    p_gnom = _panel_phrase("gnomon", "Gnomon (1, 1, φ)")
 
     rec_r = recs["right"]
-    if zero_test(rec_r.sub_areas[0]) and zero_test(rec_r.sub_areas[1]):
+    if zero_test(rec_r.sub_areas[1]) and zero_test(rec_r.sub_areas[2]):
         regime = (
-            f"on right-angled triangles (:math:`\\angle C = 90^\\circ`), **{key}** coincides exactly with the "
-            f"right-angle vertex :g:`C <right-C>` / :g:`C <kepler-C>` (:math:`0 : 0 : 1`), whereas on acute "
-            f":g:`Heronian <panel-heronian>` it lies strictly interior and on obtuse :g:`Kimberling <panel-kimberling>` "
-            f"it crosses into the exterior."
+            f"on right-angled triangles (:math:`\\angle A = 90^\\circ`), **{key}** coincides exactly with the "
+            f"base right-angle vertex :g:`A <right-A>` / :g:`A <kepler-A>` (:math:`1 : 0 : 0`), whereas on acute "
+            f":g:`Heronian <panel-heronian>` and :g:`Golden <panel-golden>` it lies strictly interior and on obtuse "
+            f":g:`Kimberling <panel-kimberling>` and :g:`Gnomon <panel-gnomon>` it crosses into the exterior."
         )
-    elif zero_test(rec_r.sub_areas[2]):
+    elif zero_test(rec_r.sub_areas[0]):
         regime = (
-            f"by Thales's theorem (:math:`\\angle C = 90^\\circ`), **{key}** falls directly on the midpoint of "
-            f"hypotenuse :math:`AB` (:math:`\\Delta_c = 0`) on both :g:`Right (3, 4, 5) <panel-right>` and "
-            f":g:`Kepler (1, √φ, φ) <panel-kepler>`, lies strictly interior on acute :g:`Heronian <panel-heronian>`, "
-            f"and moves strictly exterior (:math:`\\Delta_c < 0`) on obtuse :g:`Kimberling <panel-kimberling>`."
+            f"by Thales's theorem (:math:`\\angle A = 90^\\circ`), **{key}** falls directly on the midpoint of "
+            f"hypotenuse :math:`BC` (:math:`\\Delta_a = 0`) on both :g:`Right (3, 4, 5) <panel-right>` and "
+            f":g:`Kepler (1, √φ, φ) <panel-kepler>`, lies strictly interior on acute :g:`Heronian <panel-heronian>` "
+            f"and :g:`Golden <panel-golden>`, and moves exterior on obtuse :g:`Kimberling <panel-kimberling>` "
+            f"and :g:`Gnomon <panel-gnomon>`."
         )
     else:
+        grid_labels = (
+            ("heronian", "Heronian"),
+            ("right", "Right"),
+            ("kepler", "Kepler"),
+            ("kimberling", "Kimberling"),
+            ("golden", "Golden"),
+            ("gnomon", "Gnomon"),
+        )
         int_keys = [
             lbl
-            for t_k, lbl in (
-                ("heronian", "Heronian"),
-                ("right", "Right"),
-                ("kepler", "Kepler"),
-                ("kimberling", "Kimberling"),
-            )
+            for t_k, lbl in grid_labels
             if all(exact_sign(sa) > 0 for sa in recs[t_k].sub_areas)
         ]
-        if len(int_keys) == 4:
+        if len(int_keys) == len(grid_labels):
             regime = (
-                f"**{key}** remains strictly interior (:math:`\\Delta_a, \\Delta_b, \\Delta_c > 0`) across all four "
-                f"acute, Pythagorean right, golden right, and obtuse scalene triangles, preserving its exact "
+                f"**{key}** remains strictly interior (:math:`\\Delta_a, \\Delta_b, \\Delta_c > 0`) across all six "
+                f"non-degenerate canonical triangles (scalene, right, and pentagon isosceles), preserving its exact "
                 f"homogeneous law :math:`u : v : w` without floating-point approximation."
             )
         elif not int_keys:
             regime = (
-                f"**{key}** lies strictly exterior across all four reference triangles (carrying at least one "
-                f"negative signed sub-area :math:`\\Delta_k < 0` while preserving :math:`\\Delta_a + \\Delta_b + \\Delta_c = \\Delta`)."
+                f"**{key}** lies strictly exterior across all six non-degenerate reference triangles (carrying at least "
+                f"one negative signed sub-area :math:`\\Delta_k < 0` while preserving :math:`\\Delta_a + \\Delta_b + \\Delta_c = \\Delta`)."
             )
         else:
-            ext_keys = [
-                lbl
-                for lbl in ("Heronian", "Right", "Kepler", "Kimberling")
-                if lbl not in int_keys
-            ]
+            ext_keys = [lbl for _, lbl in grid_labels if lbl not in int_keys]
             regime = (
                 f"**{key}** lies strictly interior on {', '.join(int_keys)} while crossing outside "
                 f":math:`\\triangle ABC` on {', '.join(ext_keys)} (where signed sub-areas change sign across "
                 f"the sidelines while still summing algebraically to :math:`\\Delta`)."
             )
 
+    rec_eq = recs["equilateral"]
+    if rec_eq.is_indeterminate:
+        eq_tail = (
+            f" On the **Equilateral (2, 2, 2)** limit over :math:`\\mathbb{{Q}}(\\sqrt{{3}})`, "
+            f"**{key}** becomes indeterminate (:math:`0 : 0 : 0`) under :math:`D_3` symmetry."
+        )
+    else:
+        eq_tail = (
+            f" On the **Equilateral (2, 2, 2)** limit over :math:`\\mathbb{{Q}}(\\sqrt{{3}})`, "
+            f"**{key}** coalesces to the symmetry center :math:`O = {rec_eq.xy_latex()}`."
+        )
+
     return [
-        f"Across the four canonical algebraic number fields — {p_hero}, {p_right}, {p_kep}, and {p_kim} — {regime}",
+        (
+            f"Across the canonical algebraic number fields — {p_hero}, {p_right}, {p_kep}, {p_kim}, "
+            f"{p_gold}, and {p_gnom} — {regime}{eq_tail}"
+        ),
         "",
     ]
 
@@ -1780,7 +1798,9 @@ def transform_center_to_rst(
     if entry_dir is not None:
         e_path = Path(entry_dir)
         if (e_path / "02_coordinates.svg").is_file() and (e_path / "05_four_triangles.svg").is_file():
-            return _format_five_act_center_rst(
+            from .tracks import format_multitrack_center_rsts
+
+            track_map = format_multitrack_center_rsts(
                 data=data,
                 entry_dir=e_path,
                 glossary_terms=glossary_terms,
@@ -1791,6 +1811,7 @@ def transform_center_to_rst(
                 include_model_py=include_model_py,
                 model=model,
             )
+            return track_map["index.rst"]
 
     key = data["key"]
     title = data.get("title", "")
@@ -2181,11 +2202,20 @@ def transform_center_to_code_rst(
             if 'data-triangle="heronian"' in head_txt:
                 is_heronian = True
 
+    has_multitrack = (
+        entry_dir is not None
+        and (Path(entry_dir) / "02_coordinates.svg").is_file()
+        and (Path(entry_dir) / "05_four_triangles.svg").is_file()
+    )
     lines: list[str] = [
         f":canonical_id: {key}",
     ]
     if title and title != key:
         lines.append(f":subtitle: {title}")
+    if has_multitrack:
+        from .tracks import TRACKS_FRONTMATTER
+
+        lines.append(f":tracks: {TRACKS_FRONTMATTER}")
     lines.extend(
         [
             "",
@@ -2787,19 +2817,38 @@ def _process_center_index(idx: int) -> None:
         if model_py_path.exists():
             has_model_py = True
 
-    rst_content = transform_center_to_rst(
-        center,
-        glossary_terms=glossary_terms,
-        preambles=None,
-        valid_centers=valid_centers,
-        figure_uri=figure_uri,
-        search_value=search_val,
-        include_model_py=has_model_py,
-        model=model_acute,
-        entry_dir=entry_dir,
-    )
-    if not filepath.is_file() or filepath.read_text(encoding="utf-8") != rst_content:
-        filepath.write_text(rst_content, encoding="utf-8")
+    if (entry_dir / "02_coordinates.svg").is_file() and (entry_dir / "05_four_triangles.svg").is_file():
+        from .tracks import format_multitrack_center_rsts
+
+        track_map = format_multitrack_center_rsts(
+            data=center,
+            entry_dir=entry_dir,
+            glossary_terms=glossary_terms,
+            preambles=None,
+            valid_centers=valid_centers,
+            figure_uri=figure_uri,
+            search_value=search_val,
+            include_model_py=has_model_py,
+            model=model_acute,
+        )
+        for fname, content in track_map.items():
+            t_path = entry_dir / fname
+            if not t_path.is_file() or t_path.read_text(encoding="utf-8") != content:
+                t_path.write_text(content, encoding="utf-8")
+    else:
+        rst_content = transform_center_to_rst(
+            center,
+            glossary_terms=glossary_terms,
+            preambles=None,
+            valid_centers=valid_centers,
+            figure_uri=figure_uri,
+            search_value=search_val,
+            include_model_py=has_model_py,
+            model=model_acute,
+            entry_dir=entry_dir,
+        )
+        if not filepath.is_file() or filepath.read_text(encoding="utf-8") != rst_content:
+            filepath.write_text(rst_content, encoding="utf-8")
 
     if has_model_py:
         code_rst_content = transform_center_to_code_rst(

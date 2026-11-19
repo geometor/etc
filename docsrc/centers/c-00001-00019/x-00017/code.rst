@@ -1,5 +1,6 @@
 :canonical_id: X_17
 :subtitle: 1st NAPOLEON POINT
+:tracks: Overview: index | Lines: lines | Relations: relations | Notes: notes | Code: code
 
 X_17
 ====

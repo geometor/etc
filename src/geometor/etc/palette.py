@@ -46,6 +46,9 @@ REFERENCE_TRIANGLE_COLORS: dict[str, str] = {
     "right": "blue",
     "kepler": "green",
     "kimberling": "purple",
+    "golden": "orange",
+    "gnomon": "pink",
+    "equilateral": "teal",
 }
 
 NAMED_CIRCLE_COLORS: dict[str, str] = {

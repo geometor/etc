@@ -1,5 +1,6 @@
 :canonical_id: X_1
 :subtitle: INCENTER
+:tracks: Overview: index | Lines: lines | Relations: relations | Notes: notes | Code: code
 
 X_1
 ====

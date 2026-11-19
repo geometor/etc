@@ -1,5 +1,6 @@
 :canonical_id: X_9
 :subtitle: MITTENPUNKT
+:tracks: Overview: index | Lines: lines | Relations: relations | Notes: notes | Code: code
 
 X_9
 ====

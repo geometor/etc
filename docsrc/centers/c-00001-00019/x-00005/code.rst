@@ -1,5 +1,6 @@
 :canonical_id: X_5
 :subtitle: NINE-POINT CENTER
+:tracks: Overview: index | Lines: lines | Relations: relations | Notes: notes | Code: code
 
 X_5
 ====

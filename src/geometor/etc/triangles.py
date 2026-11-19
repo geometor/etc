@@ -21,13 +21,16 @@ from geometor.model import (
     reduce_in_field,
     zero_test,
 )
+from geometor.model.algebra import get_algebraic_field
 
 PHI: sp.Expr = (sp.Integer(1) + sp.sqrt(5)) / sp.Integer(2)
 SQRT_PHI: sp.Expr = sp.sqrt(PHI)
 SQRT_3: sp.Expr = sp.sqrt(3)
 SQRT_35: sp.Expr = sp.sqrt(35)
 SQRT_105: sp.Expr = sp.sqrt(105)
+TAU: sp.Expr = sp.sqrt(sp.Integer(5) + sp.Integer(2) * sp.sqrt(5))
 _U3 = sp.Dummy("u3")
+_PENTAGON_FIELD_CACHE: sp.AlgebraicField | None = None
 
 
 def _extract_u3(expr: sp.Expr) -> tuple[sp.Expr, bool]:
@@ -181,6 +184,32 @@ def _simplify_kepler(expr: sp.Expr) -> sp.Expr:
     if res is not None:
         return res
     return canonicalize_kepler(s)
+
+
+def _get_pentagon_field() -> sp.AlgebraicField:
+    """Return the cached degree-4 pentagon number field Q(sqrt(5 + 2*sqrt(5)))."""
+    global _PENTAGON_FIELD_CACHE
+    if _PENTAGON_FIELD_CACHE is None:
+        _PENTAGON_FIELD_CACHE = get_algebraic_field(TAU)
+    return _PENTAGON_FIELD_CACHE
+
+
+def _base_pentagon(expr: sp.Expr) -> sp.Expr:
+    s = sp.sympify(expr)
+    if s.is_Rational:
+        return s
+    return reduce_in_field(s, _get_pentagon_field())
+
+
+def _simplify_pentagon(expr: sp.Expr) -> sp.Expr:
+    """Reduce an expression in Q(sqrt(5 + 2*sqrt(5))) or octic Q(sqrt(5 + 2*sqrt(5)), sqrt(3))."""
+    s = sp.sympify(expr)
+    if s.is_Rational:
+        return s
+    res = _reduce_sqrt3_extension(s, _base_pentagon, expand_radicals=False)
+    if res is not None:
+        return res
+    return _base_pentagon(s)
 
 
 @dataclass(frozen=True)
@@ -384,6 +413,31 @@ class SymbolicTriangle:
                 return True
         return False
 
+    @property
+    def right_angle_vertex(self) -> str | None:
+        """Return ``'A'``, ``'B'``, or ``'C'`` if that vertex has an exact right angle."""
+        if zero_test(self.S_A):
+            return "A"
+        if zero_test(self.S_B):
+            return "B"
+        if zero_test(self.S_C):
+            return "C"
+        return None
+
+    @property
+    def is_equilateral(self) -> bool:
+        """Return whether all three sides are symbolically equal."""
+        return zero_test(self.a - self.b) and zero_test(self.b - self.c)
+
+    @property
+    def is_isosceles(self) -> bool:
+        """Return whether at least two sides are symbolically equal."""
+        return (
+            zero_test(self.a - self.b)
+            or zero_test(self.b - self.c)
+            or zero_test(self.c - self.a)
+        )
+
     def coordinate_field_latex(self, exprs: Iterable[sp.Expr] = ()) -> str:
         """Return exact LaTeX notation for the minimal number field of ``exprs`` on this triangle."""
         ext3 = self.has_sqrt3_extension(exprs)
@@ -394,6 +448,14 @@ class SymbolicTriangle:
             return r"\mathbb{Q}(\sqrt{\phi}, \sqrt{3})" if ext3 else r"\mathbb{Q}(\sqrt{\phi})"
         if base_key == "kimberling":
             return r"\mathbb{Q}(\sqrt{3}, \sqrt{35})" if ext3 else r"\mathbb{Q}(\sqrt{35})"
+        if base_key in {"golden", "gnomon"}:
+            return (
+                r"\mathbb{Q}(\sqrt{5 + 2\sqrt{5}}, \sqrt{3})"
+                if ext3
+                else r"\mathbb{Q}(\sqrt{5 + 2\sqrt{5}})"
+            )
+        if base_key == "equilateral":
+            return r"\mathbb{Q}(\sqrt{3})"
         return self.field_latex
 
     def coordinate_field_pretty(self, exprs: Iterable[sp.Expr] = ()) -> str:
@@ -406,6 +468,10 @@ class SymbolicTriangle:
             return "ℚ(√φ, √3)" if ext3 else "ℚ(√φ)"
         if base_key == "kimberling":
             return "ℚ(√3, √35)" if ext3 else "ℚ(√35)"
+        if base_key in {"golden", "gnomon"}:
+            return "ℚ(τ, √3)" if ext3 else "ℚ(√(5+2√5))"
+        if base_key == "equilateral":
+            return "ℚ(√3)"
         return "ℚ" if self.area.is_Rational else "ℚ̄"
 
 
@@ -469,30 +535,32 @@ HERONIAN_TRIANGLE = SymbolicTriangle(
     simplify_fn=_simplify_rational_or_general,
 )
 
+# Right angle at base vertex A = (0, 0): horizontal leg AB = 4, vertical leg AC = 3, hypotenuse BC = 5
 RIGHT_TRIANGLE = SymbolicTriangle(
     key="right",
     label="Right (3, 4, 5)",
     field_latex=r"\mathbb{Q}",
-    a=sp.Integer(3),
-    b=sp.Integer(4),
-    c=sp.Integer(5),
+    a=sp.Integer(5),
+    b=sp.Integer(3),
+    c=sp.Integer(4),
     A_xy=(sp.Integer(0), sp.Integer(0)),
-    B_xy=(sp.Integer(5), sp.Integer(0)),
-    C_xy=(sp.Rational(16, 5), sp.Rational(12, 5)),
+    B_xy=(sp.Integer(4), sp.Integer(0)),
+    C_xy=(sp.Integer(0), sp.Integer(3)),
     area=sp.Integer(6),
     simplify_fn=_simplify_rational_or_general,
 )
 
+# Right angle at base vertex A = (0, 0): horizontal leg AB = sqrt(phi), vertical leg AC = 1, hypotenuse BC = phi
 KEPLER_TRIANGLE = SymbolicTriangle(
     key="kepler",
     label="Kepler (1, √φ, φ)",
     field_latex=r"\mathbb{Q}(\sqrt{\phi})",
-    a=sp.Integer(1),
-    b=SQRT_PHI,
-    c=PHI,
+    a=PHI,
+    b=sp.Integer(1),
+    c=SQRT_PHI,
     A_xy=(sp.Integer(0), sp.Integer(0)),
-    B_xy=(PHI, sp.Integer(0)),
-    C_xy=(sp.Integer(1), _simplify_kepler(SQRT_PHI * (PHI - sp.Integer(1)))),
+    B_xy=(SQRT_PHI, sp.Integer(0)),
+    C_xy=(sp.Integer(0), sp.Integer(1)),
     area=_simplify_kepler(SQRT_PHI / sp.Integer(2)),
     simplify_fn=_simplify_kepler,
 )
@@ -514,6 +582,52 @@ KIMBERLING_TRIANGLE = SymbolicTriangle(
     simplify_fn=_simplify_kimberling,
 )
 
+# Acute Golden (Sublime) Triangle of the Pentagon (36°-72°-72°): legs a = b = phi, base c = 1
+GOLDEN_TRIANGLE = SymbolicTriangle(
+    key="golden",
+    label="Golden (φ, φ, 1)",
+    field_latex=r"\mathbb{Q}(\sqrt{5 + 2\sqrt{5}})",
+    a=PHI,
+    b=PHI,
+    c=sp.Integer(1),
+    A_xy=(sp.Integer(0), sp.Integer(0)),
+    B_xy=(sp.Integer(1), sp.Integer(0)),
+    C_xy=(sp.Rational(1, 2), TAU / sp.Integer(2)),
+    area=TAU / sp.Integer(4),
+    simplify_fn=_simplify_pentagon,
+)
+
+# Obtuse Golden Gnomon of the Pentagon (108°-36°-36°): legs a = b = 1, base c = phi
+_GNOMON_HEIGHT = _simplify_pentagon((sp.Integer(11) * TAU - TAU**3) / sp.Integer(8))
+GNOMON_TRIANGLE = SymbolicTriangle(
+    key="gnomon",
+    label="Gnomon (1, 1, φ)",
+    field_latex=r"\mathbb{Q}(\sqrt{5 + 2\sqrt{5}})",
+    a=sp.Integer(1),
+    b=sp.Integer(1),
+    c=PHI,
+    A_xy=(sp.Integer(0), sp.Integer(0)),
+    B_xy=(PHI, sp.Integer(0)),
+    C_xy=(PHI / sp.Integer(2), _GNOMON_HEIGHT),
+    area=_simplify_pentagon(TAU / (sp.Integer(4) * PHI)),
+    simplify_fn=_simplify_pentagon,
+)
+
+# Regular Equilateral Triangle (60°-60°-60°): sides (2, 2, 2) over Q(sqrt(3))
+EQUILATERAL_TRIANGLE = SymbolicTriangle(
+    key="equilateral",
+    label="Equilateral (2, 2, 2)",
+    field_latex=r"\mathbb{Q}(\sqrt{3})",
+    a=sp.Integer(2),
+    b=sp.Integer(2),
+    c=sp.Integer(2),
+    A_xy=(sp.Integer(0), sp.Integer(0)),
+    B_xy=(sp.Integer(2), sp.Integer(0)),
+    C_xy=(sp.Integer(1), SQRT_3),
+    area=SQRT_3,
+    simplify_fn=_simplify_rational_or_general,
+)
+
 LEGACY_ACUTE_TRIANGLE = build_symbolic_triangle_from_sides(
     5, 6, 7, key="acute", label="Acute (5, 6, 7)", unit_baseline=True
 )
@@ -523,7 +637,20 @@ CANONICAL_TRIANGLES: dict[str, SymbolicTriangle] = {
     "right": RIGHT_TRIANGLE,
     "kepler": KEPLER_TRIANGLE,
     "kimberling": KIMBERLING_TRIANGLE,
+    "golden": GOLDEN_TRIANGLE,
+    "gnomon": GNOMON_TRIANGLE,
+    "equilateral": EQUILATERAL_TRIANGLE,
 }
+
+# The 6 non-degenerate canonical triangles rendered in the 3x2 multi-triangle plate
+CANONICAL_GRID_KEYS: tuple[str, ...] = (
+    "heronian",
+    "right",
+    "kepler",
+    "kimberling",
+    "golden",
+    "gnomon",
+)
 
 
 def get_canonical_triangle(
@@ -534,8 +661,8 @@ def get_canonical_triangle(
     Parameters
     ----------
     preset :
-        One of ``"heronian"``, ``"right"``, ``"kepler"``, ``"kimberling"``
-        (or legacy ``"acute"``).
+        One of ``"heronian"``, ``"right"``, ``"kepler"``, ``"kimberling"``,
+        ``"golden"``, ``"gnomon"``, ``"equilateral"`` (or legacy ``"acute"``).
     unit_baseline :
         When ``True``, scales the triangle by :math:`1/c` so :math:`AB = 1`.
     """

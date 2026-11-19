@@ -1,5 +1,6 @@
 :canonical_id: X_14
 :subtitle: 2nd ISOGONIC CENTER
+:tracks: Overview: index | Lines: lines | Relations: relations | Notes: notes | Code: code
 
 X_14
 ====

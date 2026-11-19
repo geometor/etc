@@ -123,7 +123,10 @@ def test_no_model_setitem_bypass_or_x1_hardcoding_in_source() -> None:
         )
 
 
-@pytest.mark.parametrize("preset", ["heronian", "right", "kepler", "kimberling"])
+@pytest.mark.parametrize(
+    "preset",
+    ["heronian", "right", "kepler", "kimberling", "golden", "gnomon", "equilateral"],
+)
 def test_canonical_triangles_exact_invariants(preset: str) -> None:
     """Verify exact vertices, side quadrances, area, r, and R with zero sp.Float."""
     tri = get_canonical_triangle(preset)
@@ -150,10 +153,16 @@ def test_canonical_triangles_exact_invariants(preset: str) -> None:
     assert zero_test((ax - bx) ** 2 + (ay - by) ** 2 - tri.c**2)
     shoelace_two_area = (bx - ax) * (cy - ay) - (cx - ax) * (by - ay)
     assert zero_test(shoelace_two_area - 2 * tri.area)
+    if preset in ("right", "kepler"):
+        assert tri.right_angle_vertex == "A"
+    if preset in ("golden", "gnomon"):
+        assert tri.is_isosceles and not tri.is_equilateral
+    if preset == "equilateral":
+        assert tri.is_equilateral
 
 
 def test_x1_exact_symbolic_values_across_four_triangles() -> None:
-    """Verify exact closed-form X_1 coordinates, sub-areas, and inradii on all 4 triangles."""
+    """Verify exact closed-form X_1 coordinates, sub-areas, and inradii across all 7 canonical triangles."""
     reg_h = CenterSymbolicRegistry("heronian", cache_dir=None)
     x1_h = reg_h.get(1)
     assert x1_h.xy == (sp.Integer(6), sp.Integer(4))
@@ -164,28 +173,29 @@ def test_x1_exact_symbolic_values_across_four_triangles() -> None:
     assert x1_h.search_value == reg_h.triangle.r == sp.Integer(4)
     assert reg_h.triangle.Q_r == sp.Integer(16)
 
+    # Right (5, 3, 4) with right angle at base A=(0,0), B=(4,0), C=(0,3) -> X_1 = (1, 1)
     reg_r = CenterSymbolicRegistry("right", cache_dir=None)
     x1_r = reg_r.get(1)
-    assert x1_r.xy == (sp.Integer(3), sp.Integer(1))
+    assert x1_r.xy == (sp.Integer(1), sp.Integer(1))
     assert x1_r.trilinear == (sp.Integer(1), sp.Integer(1), sp.Integer(1))
-    assert x1_r.bary == (sp.Integer(3), sp.Integer(4), sp.Integer(5))
-    assert x1_r.sub_areas == (sp.Rational(3, 2), sp.Integer(2), sp.Rational(5, 2))
+    assert x1_r.bary == (sp.Integer(5), sp.Integer(3), sp.Integer(4))
+    assert x1_r.sub_areas == (sp.Rational(5, 2), sp.Rational(3, 2), sp.Integer(2))
     assert sum(x1_r.sub_areas) == reg_r.triangle.area == sp.Integer(6)
     assert x1_r.search_value == reg_r.triangle.r == sp.Integer(1)
     assert reg_r.triangle.Q_r == sp.Integer(1)
 
+    # Kepler (phi, 1, sqrt(phi)) with right angle at base A=(0,0) -> X_1 = (r, r)
     reg_k = CenterSymbolicRegistry("kepler", cache_dir=None)
     x1_k = reg_k.get(1)
-    expected_kx = (SQRT_PHI + PHI - 1) / 2
-    expected_ky = (SQRT_PHI - PHI + 1) / 2
-    assert zero_test(x1_k.xy[0] - expected_kx)
-    assert zero_test(x1_k.xy[1] - expected_ky)
+    expected_kr = (SQRT_PHI - PHI + 1) / 2
+    assert zero_test(x1_k.xy[0] - expected_kr)
+    assert zero_test(x1_k.xy[1] - expected_kr)
     assert x1_k.trilinear == (sp.Integer(1), sp.Integer(1), sp.Integer(1))
-    assert zero_test(x1_k.bary[0] - 1)
-    assert zero_test(x1_k.bary[1] - SQRT_PHI)
-    assert zero_test(x1_k.bary[2] - PHI)
+    assert zero_test(x1_k.bary[0] - PHI)
+    assert zero_test(x1_k.bary[1] - 1)
+    assert zero_test(x1_k.bary[2] - SQRT_PHI)
     assert zero_test(sum(x1_k.sub_areas) - reg_k.triangle.area)
-    assert zero_test(x1_k.search_value - expected_ky)
+    assert zero_test(x1_k.search_value - expected_kr)
 
     reg_m = CenterSymbolicRegistry("kimberling", cache_dir=None)
     x1_m = reg_m.get(1)
@@ -201,8 +211,34 @@ def test_x1_exact_symbolic_values_across_four_triangles() -> None:
     assert x1_m.search_value == sp.Rational(2, 7) * SQRT_35
     assert reg_m.triangle.Q_r == sp.Rational(20, 7)
 
+    # Pentagon Golden Triangle (phi, phi, 1) -> vertical symmetry axis x = 1/2
+    reg_g = CenterSymbolicRegistry("golden", cache_dir=None)
+    x1_g = reg_g.get(1)
+    assert zero_test(x1_g.xy[0] - sp.Rational(1, 2))
+    assert zero_test(x1_g.xy[1] - reg_g.triangle.r)
+    assert zero_test(sum(x1_g.sub_areas) - reg_g.triangle.area)
 
-@pytest.mark.parametrize("preset", ["heronian", "right", "kepler", "kimberling"])
+    # Pentagon Golden Gnomon (1, 1, phi) -> vertical symmetry axis x = phi/2
+    reg_gn = CenterSymbolicRegistry("gnomon", cache_dir=None)
+    x1_gn = reg_gn.get(1)
+    assert zero_test(x1_gn.xy[0] - PHI / 2)
+    assert zero_test(x1_gn.xy[1] - reg_gn.triangle.r)
+    assert zero_test(sum(x1_gn.sub_areas) - reg_gn.triangle.area)
+
+    # Equilateral (2, 2, 2) -> X_1 = (1, sqrt(3)/3), and X_11/X_14/X_16 indeterminate (0:0:0)
+    reg_eq = CenterSymbolicRegistry("equilateral", cache_dir=None)
+    x1_eq = reg_eq.get(1)
+    assert zero_test(x1_eq.xy[0] - 1)
+    assert zero_test(x1_eq.xy[1] - sp.sqrt(3) / 3)
+    assert reg_eq.get(11).is_indeterminate
+    assert reg_eq.get(14).is_indeterminate
+    assert reg_eq.get(16).is_indeterminate
+
+
+@pytest.mark.parametrize(
+    "preset",
+    ["heronian", "right", "kepler", "kimberling", "golden", "gnomon", "equilateral"],
+)
 def test_collection_1_algebraic_fields_and_sub_area_partition(preset: str) -> None:
     """Verify exact sub-area partition and quadratic-tower Q(sqrt(3)) detection for X_1..X_19."""
     reg = _cached_registry(preset)
@@ -217,11 +253,14 @@ def test_collection_1_algebraic_fields_and_sub_area_partition(preset: str) -> No
             *rec.sub_areas,
             rec.search_value,
         )
+        if rec.is_indeterminate:
+            assert preset == "equilateral" and num in (11, 14, 16)
+            continue
         assert zero_test(sum(rec.sub_areas) - tri.area), (
             f"X_{num} on {preset}: sub_areas do not sum to Δ"
         )
         fld = tri.coordinate_field_pretty([*rec.xy, *rec.bary])
-        if num in range(13, 19):
+        if num in range(13, 19) and preset != "equilateral":
             assert "√3" in fld, f"Expected √3 extension for X_{num} on {preset}, got {fld}"
         elif preset in ("heronian", "right"):
             assert fld == "ℚ", f"Expected rational field ℚ for X_{num} on {preset}, got {fld}"
@@ -327,10 +366,10 @@ def test_all_19_canonical_constructors_match_symbolic_registry(preset: str) -> N
         assert reg.get(36).xy == (sp.Integer(-58), sp.Integer(-4))
         assert reg.get(75).xy == (sp.Rational(3915, 587), sp.Rational(2340, 587))
     else:
-        # Right (3, 4, 5) coincidences: X_4 = X_19 = C and X_3 = midpoint(A, B)
-        assert reg.get(4).xy == reg.triangle.C_xy
-        assert reg.get(19).xy == reg.triangle.C_xy
-        assert reg.get(3).xy == (sp.Rational(5, 2), sp.Integer(0))
+        # Right (5, 3, 4) with right angle at base A=(0,0): X_4 = X_19 = A and X_3 = midpoint(B, C)
+        assert reg.get(4).xy == reg.triangle.A_xy
+        assert reg.get(19).xy == reg.triangle.A_xy
+        assert reg.get(3).xy == (sp.Integer(2), sp.Rational(3, 2))
 
     assert len(CANONICAL_CENTER_CONCORDANCE) >= 60
 
@@ -351,7 +390,7 @@ def test_collection_1_model_py_zero_floats_and_collinearities(num: int) -> None:
         reg = _cached_registry(preset)
         rec = reg.get(num)
 
-        # Find target point X_num (note on Right/Kepler, X_4 and X_19 coincide with C!)
+        # Find target point X_num (note on Right/Kepler, X_4 and X_19 coincide with right vertex A!)
         target_pt = None
         for el, info in mdl.items():
             if (
@@ -363,9 +402,14 @@ def test_collection_1_model_py_zero_floats_and_collinearities(num: int) -> None:
                 target_pt = el
                 break
         if target_pt is None:
-            # Coincident with vertex C (e.g. X_4 or X_19 on right/kepler)
+            # Coincident with a vertex (e.g. X_4 or X_19 at right-angle vertex A on right/kepler)
             for el, info in mdl.items():
-                if isinstance(el, spg.Point) and info.ID == "C":
+                if (
+                    isinstance(el, spg.Point)
+                    and info.ID in {"A", "B", "C"}
+                    and zero_test(el.x - rec.xy[0])
+                    and zero_test(el.y - rec.xy[1])
+                ):
                     target_pt = el
                     break
         assert target_pt is not None
@@ -384,9 +428,12 @@ def test_collection_1_model_py_zero_floats_and_collinearities(num: int) -> None:
                 )
 
 
-@pytest.mark.parametrize("preset", ["heronian", "right", "kepler", "kimberling"])
+@pytest.mark.parametrize(
+    "preset",
+    ["heronian", "right", "kepler", "kimberling", "golden", "gnomon", "equilateral"],
+)
 def test_symbolic_collection_1_constellation_model(preset: str) -> None:
-    """Verify build_symbolic_collection_1_model has zero sp.Float across all 4 presets."""
+    """Verify build_symbolic_collection_1_model has zero sp.Float across all 7 presets."""
     mdl = build_symbolic_collection_1_model(preset)
     for el in mdl:
         _assert_zero_floats(el)
@@ -458,9 +505,12 @@ def test_all_156_collection_1_svgs_and_video_svgs_well_formed() -> None:
 
 @pytest.mark.parametrize("num", range(1, 20))
 def test_collection_1_rst_whole_page_and_act_level_g_selector_parity(num: int) -> None:
-    """Verify 100% :g: selector parity on index.rst (whole-page and per-Act) and code.rst."""
+    """Verify 100% per-track :g: selector parity and tabular 5-track structure across X_1-X_19."""
     ed = COLL1_DOC_DIR / f"x-{num:05d}"
     idx_rst = (ed / "index.rst").read_text(encoding="utf-8")
+    lines_rst = (ed / "lines.rst").read_text(encoding="utf-8")
+    rel_rst = (ed / "relations.rst").read_text(encoding="utf-8")
+    notes_rst = (ed / "notes.rst").read_text(encoding="utf-8")
     code_rst = (ed / "code.rst").read_text(encoding="utf-8")
 
     r_act1 = extract_svg_element_refs(ed / f"x-{num:05d}.svg")
@@ -468,37 +518,38 @@ def test_collection_1_rst_whole_page_and_act_level_g_selector_parity(num: int) -
     r_act3 = extract_svg_element_refs(ed / "03_central_lines.svg")
     r_act4 = extract_svg_element_refs(ed / "04_relations.svg")
     r_act5 = extract_svg_element_refs(ed / "05_four_triangles.svg")
-    all_page_refs = r_act1 | r_act2 | r_act3 | r_act4 | r_act5
 
-    # Whole-page parity for index.rst and code.rst
+    # Verify unified 5-track frontmatter & tabular coordinate/operator structure
+    for tr_name, tr_txt in (
+        ("index.rst", idx_rst),
+        ("lines.rst", lines_rst),
+        ("relations.rst", rel_rst),
+        ("notes.rst", notes_rst),
+        ("code.rst", code_rst),
+    ):
+        assert ":tracks: Overview: index | Lines: lines | Relations: relations | Notes: notes | Code: code" in tr_txt, (
+            f"x-{num:05d}/{tr_name} missing 5-track frontmatter"
+        )
+
+    assert "* - Trilinears" in idx_rst
+    assert "* - Barycentrics" in idx_rst
+    assert ":class: etc-table etc-coord-table" in idx_rst
+    assert ":class: etc-table etc-mode-four-triangles" in idx_rst
+    assert ":class: etc-table etc-mode-coordinates" in idx_rst
+    assert ":class: etc-table etc-mode-lines" in lines_rst
+    assert ":class: etc-table etc-mode-relations" in rel_rst
+
+    # Per-track :g: selector parity against the track's active viewer SVGs
     for tgt in _extract_g_targets(idx_rst):
-        assert tgt in all_page_refs, f"x-{num:05d}/index.rst unresolved :g:`{tgt}`"
+        assert tgt in (r_act1 | r_act2 | r_act5), f"x-{num:05d}/index.rst unresolved :g:`{tgt}`"
+    for tgt in _extract_g_targets(lines_rst):
+        assert tgt in (r_act3 | r_act1), f"x-{num:05d}/lines.rst unresolved :g:`{tgt}`"
+    for tgt in _extract_g_targets(rel_rst):
+        assert tgt in (r_act4 | r_act1), f"x-{num:05d}/relations.rst unresolved :g:`{tgt}`"
+    for tgt in _extract_g_targets(notes_rst):
+        assert tgt in r_act1, f"x-{num:05d}/notes.rst unresolved :g:`{tgt}`"
     for tgt in _extract_g_targets(code_rst):
         assert tgt in r_act1, f"x-{num:05d}/code.rst unresolved :g:`{tgt}`"
-
-    # Per-Act section parity inside index.rst
-    h2 = "Homogeneous Coordinates & Exact Invariants\n------------------------------------------"
-    h3 = "Incident Central Lines\n----------------------"
-    h4 = "Functional Relations & Conjugates\n---------------------------------"
-    h5 = "Four-Triangle Symbolic Invariance\n---------------------------------"
-    assert h2 in idx_rst and h3 in idx_rst and h4 in idx_rst and h5 in idx_rst
-
-    act1_sec, rest = idx_rst.split(h2, 1)
-    act2_sec, rest = rest.split(h3, 1)
-    act3_sec, rest = rest.split(h4, 1)
-    act4_sec, rest = rest.split(h5, 1)
-    act5_sec = rest.split("\nNotes\n-----", 1)[0]
-
-    for tgt in _extract_g_targets(act1_sec):
-        assert tgt in r_act1, f"x-{num:05d} Act I :g:`{tgt}` missing from x-{num:05d}.svg"
-    for tgt in _extract_g_targets(act2_sec):
-        assert tgt in (r_act2 | r_act1), f"x-{num:05d} Act II :g:`{tgt}` missing from 02_coordinates.svg"
-    for tgt in _extract_g_targets(act3_sec):
-        assert tgt in (r_act3 | r_act1), f"x-{num:05d} Act III :g:`{tgt}` missing from 03_central_lines.svg"
-    for tgt in _extract_g_targets(act4_sec):
-        assert tgt in (r_act4 | r_act1), f"x-{num:05d} Act IV :g:`{tgt}` missing from 04_relations.svg"
-    for tgt in _extract_g_targets(act5_sec):
-        assert tgt in r_act5, f"x-{num:05d} Act V :g:`{tgt}` missing from 05_four_triangles.svg"
 
 
 def test_collection_1_overview_rst_g_selector_parity() -> None:
@@ -522,11 +573,93 @@ def test_generalized_plates_api_runtime(num: int) -> None:
         generate_doc_relations_svg,
     )
 
-    ET.fromstring(generate_doc_coordinates_svg(num))
+    coord_svg = generate_doc_coordinates_svg(num)
+    ET.fromstring(coord_svg)
+    assert "feGaussianBlur" not in coord_svg
+    assert 'fill="#ff7043" fill-opacity="0.19"' in coord_svg
+    assert 'stroke="#ff7043" stroke-width="5.2"' in coord_svg
+    assert 'fill="#e8b85a"' not in coord_svg
     rel_svg, bundle = generate_doc_relations_svg(num)
     ET.fromstring(rel_svg)
     assert f"X_{num}" in bundle.svg_ids
-    ET.fromstring(generate_doc_four_triangles_svg(num))
+    four_svg = generate_doc_four_triangles_svg(num)
+    ET.fromstring(four_svg)
+    assert 'fill="#ff7043" fill-opacity="0.14"' in four_svg
+    assert 'stroke="#ff7043" stroke-width="2.9"' in four_svg
+    assert 'fill="#e8b85a" fill-opacity=' not in four_svg
+
+
+def test_svg_opt_line_clipping_and_stripping() -> None:
+    """Verify analytical line clipping, viewer stripping, and compact thumbnail stripping."""
+    import math
+
+    from geometor.etc.svg_opt import (
+        clip_infinite_line_to_rect,
+        strip_svg_for_thumbnail,
+        strip_svg_for_viewer,
+    )
+
+    # Analytical slab clipping preserves collinearity and bounds
+    seg = clip_infinite_line_to_rect(0.0, 0.0, 0.6, 0.8, -10.0, -10.0, 10.0, 10.0)
+    assert seg is not None
+    x1, y1, x2, y2 = seg
+    assert abs((x2 - x1) * 0.8 - (y2 - y1) * 0.6) < 1e-9
+    assert -10.0001 <= x1 <= 10.0001 and -10.0001 <= x2 <= 10.0001
+    assert -10.0001 <= y1 <= 10.0001 and -10.0001 <= y2 <= 10.0001
+
+    raw_x1 = (X1_DOC_DIR / "x-00001.svg").read_text(encoding="utf-8")
+    viewer_svg = strip_svg_for_viewer(raw_x1)
+    assert "<style>" not in viewer_svg
+    assert "INTERACTIVE_SVG_JS" not in viewer_svg
+    assert "scaleViewElements" not in viewer_svg
+    assert 'class="etc-elements-meta"' in viewer_svg
+    assert 'data-line="' in viewer_svg
+    assert 'data-lines-viewbox="' in viewer_svg
+    assert len(viewer_svg) < len(raw_x1) * 0.55
+
+    # Verify every clipped <line> stays tightly bounded (no 30,000-unit lines!)
+    root_v = ET.fromstring(viewer_svg)
+    vb = [float(p) for p in root_v.attrib["viewBox"].split()]
+    max_allowed = math.hypot(vb[2], vb[3]) * 3.0
+    for el in root_v.iter():
+        if el.tag.split("}")[-1] == "line":
+            ln_len = math.hypot(
+                float(el.attrib["x2"]) - float(el.attrib["x1"]),
+                float(el.attrib["y2"]) - float(el.attrib["y1"]),
+            )
+            assert ln_len <= max_allowed, f"Unclipped line length {ln_len:.1f} > {max_allowed:.1f}"
+
+    # Verify all #points circles share one uniform compact radius (4.8px scale)
+    pts_g = next((el for el in root_v.iter() if el.attrib.get("id") == "points"), None)
+    assert pts_g is not None
+    pt_radii = {
+        round(float(c.attrib["r"]), 6)
+        for c in pts_g
+        if c.tag.split("}")[-1] == "circle"
+    }
+    assert len(pt_radii) == 1, f"Expected uniform point radius, found {pt_radii}"
+    assert root_v.attrib.get("data-target-r-px") == "4.8"
+
+    # Verify thumbnail SVG strips scripts + JSON metadata and keeps compact visual CSS
+    thumb_svg = strip_svg_for_thumbnail(raw_x1)
+    ET.fromstring(thumb_svg)
+    assert "<script" not in thumb_svg
+    assert "etc-elements-meta" not in thumb_svg
+    assert "<style>" in thumb_svg
+    assert len(thumb_svg) < 24_000, f"Thumbnail SVG too large: {len(thumb_svg)} bytes"
+
+    # Verify legacy glow-coord blur filter & oversized halo are stripped from coordinates plate
+    raw_coord = (X1_DOC_DIR / "02_coordinates.svg").read_text(encoding="utf-8")
+    viewer_coord = strip_svg_for_viewer(raw_coord)
+    root_c = ET.fromstring(viewer_coord)
+    assert "feGaussianBlur" not in viewer_coord
+    assert "glow-coord" not in viewer_coord
+    plate_radii = {
+        round(float(c.attrib["r"]), 3)
+        for c in root_c.iter()
+        if c.tag.split("}")[-1] == "circle" and "etc-plate-pt" in c.attrib.get("class", "")
+    }
+    assert len(plate_radii) == 1, f"Expected uniform plate point radius, found {plate_radii}"
 
 
 def test_x1_video_script_compiles_cleanly() -> None:
@@ -543,3 +676,23 @@ def test_x1_video_script_compiles_cleanly() -> None:
     subslides = [sub for sc in scenes for sub in sc["subslides"]]
     assert len(subslides) == 7
     assert all(sub.get("clause_html") and sub.get("just_tag") for sub in subslides)
+
+
+def test_cyclic_coordinate_expansion() -> None:
+    """Verify cyclic LaTeX permutation preserves commands/invariants and expands triples accurately."""
+    from geometor.etc.tracks import _cyclic_permute_latex, _extract_coordinate_triple
+
+    assert _cyclic_permute_latex(r"\sin 2B + \sin 2C - \sin 2A", 1) == r"\sin 2C + \sin 2A - \sin 2B"
+    assert _cyclic_permute_latex(r"\csc A \tan 3A - 2 \sec 3A", 2) == r"\csc C \tan 3C - 2 \sec 3C"
+    assert _cyclic_permute_latex(r"S_{A} - S_{\omega}", 1) == r"S_{B} - S_{\omega}"
+    assert (
+        _cyclic_permute_latex(r"bc[a^{2}(b^{2} + c^{2}) - (b^{2} - c^{2})^{2}]", 1)
+        == r"ca[b^{2}(c^{2} + a^{2}) - (c^{2} - a^{2})^{2}]"
+    )
+    assert (
+        _cyclic_permute_latex(r"a^{2}(b^{2} + c^{2} + 4 \sqrt{3} \operatorname{area}(ABC))", 1)
+        == r"b^{2}(c^{2} + a^{2} + 4 \sqrt{3} \operatorname{area}(ABC))"
+    )
+    triple, note = _extract_coordinate_triple(r":math:`\sec A' : :`, where A'B'C' is excentral", lambda s: s)
+    assert triple == (":math:`\\sec A'`", ":math:`\\sec B'`", ":math:`\\sec C'`")
+    assert "excentral" in note
