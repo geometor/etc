@@ -1,0 +1,40 @@
+geometor.etc.models.x_00008
+===========================
+
+.. py:module:: geometor.etc.models.x_00008
+
+.. autoapi-nested-parse::
+
+   Exact symbolic GEOMETOR construction model for ``X_8 = NAGEL POINT``.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.models.x_00008.construct_x_00008
+   geometor.etc.models.x_00008.build_model
+
+
+Module Contents
+---------------
+
+.. py:function:: construct_x_00008(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point) -> sympy.geometry.Point
+
+   Construct ``X_8 = NAGEL POINT`` and its classical incident central lines on ``ABC``.
+
+   Constructed elements include:
+
+   - Extouch triangle ``< N_a N_b N_c >`` and Nagel cevians ``[ A N_a ]``,
+     ``[ B N_b ]``, ``[ C N_c ]`` concurring at ``X_8``.
+   - Incident central lines: Nagel ``{ 1, 2 }`` (with ``X_1, X_2, X_10``),
+     Gergonne-Intouch ``{ 7, 65 }``, ``{ 4, 72 }``, and ``{ 3, 100 }``.
+
+
+.. py:function:: build_model(preset: str | tuple[sympy.Expr | int, sympy.Expr | int, sympy.Expr | int] = 'heronian', show_guides: bool = False) -> geometor.model.Model
+
+   Build an exact symbolic :class:`geometor.model.Model` for ``X_8 = NAGEL POINT``.
+
+

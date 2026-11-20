@@ -1,0 +1,40 @@
+geometor.etc.models.x_00019
+===========================
+
+.. py:module:: geometor.etc.models.x_00019
+
+.. autoapi-nested-parse::
+
+   Exact symbolic GEOMETOR construction model for ``X_19 = CLAWSON POINT``.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.models.x_00019.construct_x_00019
+   geometor.etc.models.x_00019.build_model
+
+
+Module Contents
+---------------
+
+.. py:function:: construct_x_00019(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point) -> sympy.geometry.Point
+
+   Construct ``X_19 = CLAWSON POINT`` and its classical incident central lines on ``ABC``.
+
+   Constructed elements include:
+
+   - Orthic triangle ``< H_a H_b H_c >``, Clawson cevian triangle ``< P_a P_b P_c >``,
+     and cevians ``[ A P_a ]``, ``[ B P_b ]``, ``[ C P_c ]`` concurring at ``X_19``.
+   - Incident central lines: Orthocenter-Mittenpunkt-Spieker ``{ 4, 9 }``
+     (with ``X_4, X_9, X_10``), ``{ 1, 28 }``, and ``{ 6, 34 }``.
+
+
+.. py:function:: build_model(preset: str | tuple[sympy.Expr | int, sympy.Expr | int, sympy.Expr | int] = 'heronian', show_guides: bool = False) -> geometor.model.Model
+
+   Build an exact symbolic :class:`geometor.model.Model` for ``X_19 = CLAWSON POINT``.
+
+

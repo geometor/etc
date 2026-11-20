@@ -1,0 +1,844 @@
+geometor.etc.field_eval
+=======================
+
+.. py:module:: geometor.etc.field_eval
+
+.. autoapi-nested-parse::
+
+   Fast, 100% exact algebraic-field evaluator for ETC triangle centers.
+
+   Evaluates arbitrary ETC homogeneous trilinear/barycentric expressions and
+   algebraic relation graphs directly inside each canonical reference triangle's
+   exact number field — zero floating-point drift, zero SymPy expression-tree
+   blowup, and ~500x faster than symbolic expression simplification:
+
+   1. ``heronian`` (15, 13, 14)   : Q          (and Q(sqrt(3)) when trig pi/3 appears)
+   2. ``right``    (5, 3, 4)      : Q          (and Q(sqrt(3)))
+   3. ``equilateral`` (2, 2, 2)   : Q(sqrt(3))
+   4. ``kimberling`` (6, 9, 13)   : Q(sqrt(35)) (and Q(sqrt(35), sqrt(3)))
+   5. ``kepler``   (phi, 1, s_phi): Q(sqrt(phi)), alpha^4 = alpha^2 + 1
+   6. ``golden``   (phi, phi, 1)  : Q(tau),       tau^4 = 10*tau^2 - 5
+   7. ``gnomon``   (1, 1, phi)    : Q(tau),       tau^4 = 10*tau^2 - 5
+
+   For the small subset of ETC centers involving genuinely transcendental or
+   non-field expressions (e.g. ``cos(A/3)``, ``arcsin``, cubic roots), falls back
+   explicitly to 50-digit ``mpmath`` evaluation tagged ``precision="mpmath-50"``
+   while never injecting floats into ``geometor.model``.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.etc.field_eval.KEPLER_BIQUAD
+   geometor.etc.field_eval.PENTAGON_BIQUAD
+
+
+Exceptions
+----------
+
+.. autoapisummary::
+
+   geometor.etc.field_eval.OutsideFieldError
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.etc.field_eval.QElem
+   geometor.etc.field_eval.QuadElem
+   geometor.etc.field_eval.BiquadSpec
+   geometor.etc.field_eval.BiquadElem
+   geometor.etc.field_eval.ExtSqrt3Elem
+   geometor.etc.field_eval.AngleLinear
+   geometor.etc.field_eval.ExactEvalResult
+   geometor.etc.field_eval.ExactTriangleField
+   geometor.etc.field_eval.ExactCorpusResolver
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.field_eval.get_triangle_field
+
+
+Module Contents
+---------------
+
+.. py:exception:: OutsideFieldError
+
+   Bases: :py:obj:`ValueError`
+
+
+   Raised when an expression leaves the triangle's exact algebraic field.
+
+
+.. py:class:: QElem(val: fractions.Fraction | int)
+
+   Exact element of Q backed by ``fractions.Fraction``.
+
+
+   .. py:attribute:: __slots__
+      :value: ('val',)
+
+
+
+   .. py:attribute:: field_kind
+      :value: 'Q'
+
+
+
+   .. py:attribute:: val
+      :type:  fractions.Fraction
+
+
+   .. py:method:: is_zero() -> bool
+
+
+   .. py:method:: __bool__() -> bool
+
+
+   .. py:method:: __eq__(other: object) -> bool
+
+
+   .. py:method:: __neg__() -> QElem
+
+
+   .. py:method:: __pos__() -> QElem
+
+
+   .. py:method:: __add__(other: Any) -> Any
+
+
+   .. py:method:: __radd__(other: Any) -> Any
+
+
+   .. py:method:: __sub__(other: Any) -> Any
+
+
+   .. py:method:: __rsub__(other: Any) -> Any
+
+
+   .. py:method:: __mul__(other: Any) -> Any
+
+
+   .. py:method:: __rmul__(other: Any) -> Any
+
+
+   .. py:method:: __truediv__(other: Any) -> Any
+
+
+   .. py:method:: __rtruediv__(other: Any) -> Any
+
+
+   .. py:method:: __pow__(exp: Any) -> Any
+
+
+   .. py:method:: sqrt_exact() -> Any
+
+
+   .. py:method:: sign() -> int
+
+
+   .. py:method:: to_float() -> float
+
+
+   .. py:method:: to_mpf(dps: int = 50) -> mpmath.mpf
+
+
+   .. py:method:: rat_coeffs() -> tuple[fractions.Fraction, ...]
+
+
+   .. py:method:: scale_rational(factor: fractions.Fraction) -> QElem
+
+
+   .. py:method:: to_sympy() -> sympy.Expr
+
+
+   .. py:method:: to_latex() -> str
+
+
+   .. py:method:: max_digits() -> int
+
+
+   .. py:method:: __repr__() -> str
+
+
+.. py:class:: QuadElem(c0: fractions.Fraction | int, c1: fractions.Fraction | int, d: int)
+
+   Exact element ``c0 + c1 * sqrt(d)`` in quadratic field ``Q(sqrt(d))``.
+
+
+   .. py:attribute:: __slots__
+      :value: ('c0', 'c1', 'd')
+
+
+
+   .. py:attribute:: field_kind
+      :value: 'Quad'
+
+
+
+   .. py:attribute:: c0
+      :type:  fractions.Fraction
+
+
+   .. py:attribute:: c1
+      :type:  fractions.Fraction
+
+
+   .. py:attribute:: d
+      :type:  int
+
+
+   .. py:method:: is_zero() -> bool
+
+
+   .. py:method:: __bool__() -> bool
+
+
+   .. py:method:: __eq__(other: object) -> bool
+
+
+   .. py:method:: __neg__() -> QuadElem
+
+
+   .. py:method:: __pos__() -> QuadElem
+
+
+   .. py:method:: __add__(other: Any) -> Any
+
+
+   .. py:method:: __radd__(other: Any) -> Any
+
+
+   .. py:method:: __sub__(other: Any) -> Any
+
+
+   .. py:method:: __rsub__(other: Any) -> Any
+
+
+   .. py:method:: __mul__(other: Any) -> Any
+
+
+   .. py:method:: __rmul__(other: Any) -> Any
+
+
+   .. py:method:: inv() -> QuadElem
+
+
+   .. py:method:: __truediv__(other: Any) -> Any
+
+
+   .. py:method:: __rtruediv__(other: Any) -> Any
+
+
+   .. py:method:: __pow__(exp: Any) -> Any
+
+
+   .. py:method:: sqrt_exact() -> Any
+
+
+   .. py:method:: sign() -> int
+
+
+   .. py:method:: to_float() -> float
+
+
+   .. py:method:: to_mpf(dps: int = 50) -> mpmath.mpf
+
+
+   .. py:method:: rat_coeffs() -> tuple[fractions.Fraction, ...]
+
+
+   .. py:method:: scale_rational(factor: fractions.Fraction) -> QuadElem
+
+
+   .. py:method:: to_sympy() -> sympy.Expr
+
+
+   .. py:method:: to_latex() -> str
+
+
+   .. py:method:: max_digits() -> int
+
+
+   .. py:method:: __repr__() -> str
+
+
+.. py:class:: BiquadSpec
+
+   Specification for degree-4 biquadratic field ``Q(alpha)`` with ``alpha^4 = p*alpha^2 + q``.
+
+
+   .. py:attribute:: name
+      :type:  str
+
+
+   .. py:attribute:: p
+      :type:  int
+
+
+   .. py:attribute:: q
+      :type:  int
+
+
+   .. py:attribute:: alpha_float
+      :type:  float
+
+
+   .. py:attribute:: alpha_sym
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: latex_basis
+      :type:  tuple[str, str, str, str]
+
+
+   .. py:method:: alpha_mpf(dps: int = 50) -> mpmath.mpf
+
+
+.. py:data:: KEPLER_BIQUAD
+
+.. py:data:: PENTAGON_BIQUAD
+
+.. py:class:: BiquadElem(c0: fractions.Fraction | int, c1: fractions.Fraction | int, c2: fractions.Fraction | int, c3: fractions.Fraction | int, spec: BiquadSpec)
+
+   Exact element ``c0 + c1*a + c2*a^2 + c3*a^3`` in ``Q[a] / (a^4 - p*a^2 - q)``.
+
+
+   .. py:attribute:: __slots__
+      :value: ('c0', 'c1', 'c2', 'c3', 'spec')
+
+
+
+   .. py:attribute:: field_kind
+      :value: 'Biquad'
+
+
+
+   .. py:attribute:: c0
+      :type:  fractions.Fraction
+
+
+   .. py:attribute:: c1
+      :type:  fractions.Fraction
+
+
+   .. py:attribute:: c2
+      :type:  fractions.Fraction
+
+
+   .. py:attribute:: c3
+      :type:  fractions.Fraction
+
+
+   .. py:attribute:: spec
+
+
+   .. py:method:: is_zero() -> bool
+
+
+   .. py:method:: __bool__() -> bool
+
+
+   .. py:method:: __eq__(other: object) -> bool
+
+
+   .. py:method:: __neg__() -> BiquadElem
+
+
+   .. py:method:: __pos__() -> BiquadElem
+
+
+   .. py:method:: __add__(other: Any) -> Any
+
+
+   .. py:method:: __radd__(other: Any) -> Any
+
+
+   .. py:method:: __sub__(other: Any) -> Any
+
+
+   .. py:method:: __rsub__(other: Any) -> Any
+
+
+   .. py:method:: __mul__(other: Any) -> Any
+
+
+   .. py:method:: __rmul__(other: Any) -> Any
+
+
+   .. py:method:: inv() -> BiquadElem
+
+      Exact O(1) inversion via tower Q(u)(alpha) where u = alpha^2, u^2 = p*u + q.
+
+
+
+   .. py:method:: __truediv__(other: Any) -> Any
+
+
+   .. py:method:: __rtruediv__(other: Any) -> Any
+
+
+   .. py:method:: __pow__(exp: Any) -> Any
+
+
+   .. py:method:: sqrt_exact() -> Any
+
+      Compute exact sqrt in Q(alpha) or Q(alpha)(sqrt(3)) for common rational/subfield squares.
+
+
+
+   .. py:method:: sign() -> int
+
+
+   .. py:method:: to_float() -> float
+
+
+   .. py:method:: to_mpf(dps: int = 50) -> mpmath.mpf
+
+
+   .. py:method:: rat_coeffs() -> tuple[fractions.Fraction, ...]
+
+
+   .. py:method:: scale_rational(factor: fractions.Fraction) -> BiquadElem
+
+
+   .. py:method:: to_sympy() -> sympy.Expr
+
+
+   .. py:method:: to_latex() -> str
+
+
+   .. py:method:: max_digits() -> int
+
+
+   .. py:method:: __repr__() -> str
+
+
+.. py:class:: ExtSqrt3Elem(c0: Any, c1: Any)
+
+   Quadratic extension ``c0 + c1 * sqrt(3)`` over any base exact field ``K``.
+
+
+   .. py:attribute:: __slots__
+      :value: ('c0', 'c1')
+
+
+
+   .. py:attribute:: field_kind
+      :value: 'ExtSqrt3'
+
+
+
+   .. py:attribute:: c0
+
+
+   .. py:attribute:: c1
+
+
+   .. py:method:: is_zero() -> bool
+
+
+   .. py:method:: __bool__() -> bool
+
+
+   .. py:method:: __eq__(other: object) -> bool
+
+
+   .. py:method:: __neg__() -> ExtSqrt3Elem
+
+
+   .. py:method:: __pos__() -> ExtSqrt3Elem
+
+
+   .. py:method:: __add__(other: Any) -> ExtSqrt3Elem
+
+
+   .. py:method:: __radd__(other: Any) -> ExtSqrt3Elem
+
+
+   .. py:method:: __sub__(other: Any) -> ExtSqrt3Elem
+
+
+   .. py:method:: __rsub__(other: Any) -> ExtSqrt3Elem
+
+
+   .. py:method:: __mul__(other: Any) -> ExtSqrt3Elem
+
+
+   .. py:method:: __rmul__(other: Any) -> ExtSqrt3Elem
+
+
+   .. py:method:: inv() -> ExtSqrt3Elem
+
+
+   .. py:method:: __truediv__(other: Any) -> ExtSqrt3Elem
+
+
+   .. py:method:: __rtruediv__(other: Any) -> ExtSqrt3Elem
+
+
+   .. py:method:: __pow__(exp: Any) -> ExtSqrt3Elem
+
+
+   .. py:method:: sqrt_exact() -> ExtSqrt3Elem
+
+
+   .. py:method:: sign() -> int
+
+
+   .. py:method:: to_float() -> float
+
+
+   .. py:method:: to_mpf(dps: int = 50) -> mpmath.mpf
+
+
+   .. py:method:: rat_coeffs() -> tuple[fractions.Fraction, ...]
+
+
+   .. py:method:: scale_rational(factor: fractions.Fraction) -> Any
+
+
+   .. py:method:: to_sympy() -> sympy.Expr
+
+
+   .. py:method:: to_latex() -> str
+
+
+   .. py:method:: max_digits() -> int
+
+
+   .. py:method:: __repr__() -> str
+
+
+.. py:class:: AngleLinear
+
+   Exact linear combination ``cA*A + cB*B + cC*C + cw*omega + cpi*pi``.
+
+
+   .. py:attribute:: cA
+      :type:  fractions.Fraction
+
+
+   .. py:attribute:: cB
+      :type:  fractions.Fraction
+
+
+   .. py:attribute:: cC
+      :type:  fractions.Fraction
+
+
+   .. py:attribute:: cw
+      :type:  fractions.Fraction
+
+
+   .. py:attribute:: cpi
+      :type:  fractions.Fraction
+
+
+   .. py:method:: __neg__() -> AngleLinear
+
+
+   .. py:method:: __pos__() -> AngleLinear
+
+
+   .. py:method:: __add__(other: Any) -> AngleLinear
+
+
+   .. py:method:: __sub__(other: Any) -> AngleLinear
+
+
+   .. py:method:: __mul__(other: Any) -> AngleLinear
+
+
+   .. py:method:: __rmul__(other: Any) -> AngleLinear
+
+
+   .. py:method:: __truediv__(other: Any) -> AngleLinear
+
+
+.. py:class:: ExactEvalResult
+
+   Compact exact (or 50-digit mpmath fallback) evaluation result for one triangle.
+
+
+   .. py:attribute:: triangle_key
+      :type:  str
+
+
+   .. py:attribute:: precision
+      :type:  str
+
+
+   .. py:attribute:: bary
+      :type:  tuple[Any, Any, Any] | None
+
+
+   .. py:attribute:: trilinear
+      :type:  tuple[Any, Any, Any] | None
+
+
+   .. py:attribute:: xy
+      :type:  tuple[Any, Any] | None
+
+
+   .. py:attribute:: search_value
+      :type:  Any | None
+
+
+   .. py:attribute:: approx_xy
+      :type:  tuple[float, float]
+
+
+   .. py:attribute:: approx_bary
+      :type:  tuple[float, float, float]
+
+
+   .. py:attribute:: approx_search
+      :type:  float
+
+
+   .. py:attribute:: is_indeterminate
+      :type:  bool
+      :value: False
+
+
+
+   .. py:attribute:: is_ideal
+      :type:  bool
+      :value: False
+
+
+
+   .. py:attribute:: symmetry_note
+      :type:  str
+      :value: ''
+
+
+
+   .. py:attribute:: field_tag
+      :type:  str
+      :value: ''
+
+
+
+   .. py:attribute:: bary_latex
+      :type:  str
+      :value: ''
+
+
+
+   .. py:attribute:: trilinear_latex
+      :type:  str
+      :value: ''
+
+
+
+   .. py:attribute:: xy_latex
+      :type:  str
+      :value: ''
+
+
+
+   .. py:attribute:: search_latex
+      :type:  str
+      :value: ''
+
+
+
+.. py:class:: ExactTriangleField(key: str)
+
+   Fast exact algebraic field context for one canonical reference triangle.
+
+
+   .. py:attribute:: key
+
+
+   .. py:attribute:: is_equilateral
+
+
+   .. py:attribute:: is_isosceles
+
+
+   .. py:attribute:: is_right
+
+
+   .. py:attribute:: two_area
+
+
+   .. py:attribute:: S
+
+
+   .. py:attribute:: Qa
+
+
+   .. py:attribute:: Qb
+
+
+   .. py:attribute:: Qc
+
+
+   .. py:attribute:: SA
+
+
+   .. py:attribute:: SB
+
+
+   .. py:attribute:: SC
+
+
+   .. py:attribute:: SW
+
+
+   .. py:attribute:: s
+
+
+   .. py:attribute:: r
+
+
+   .. py:attribute:: R
+
+
+   .. py:attribute:: Ra
+
+
+   .. py:attribute:: Rb
+
+
+   .. py:attribute:: Rc
+
+
+   .. py:attribute:: cs_A
+
+
+   .. py:attribute:: cs_B
+
+
+   .. py:attribute:: cs_C
+
+
+   .. py:attribute:: cs_pi6
+
+
+   .. py:attribute:: cs_pi3
+
+
+   .. py:attribute:: cs_pi2
+
+
+   .. py:attribute:: OH_sq
+
+
+   .. py:attribute:: OI_sq
+
+
+   .. py:attribute:: OH
+
+
+   .. py:attribute:: OI
+
+
+   .. py:attribute:: J
+
+
+   .. py:attribute:: Q_moses
+
+
+   .. py:attribute:: cs_omega
+
+
+   .. py:attribute:: ecc
+
+
+   .. py:attribute:: K_steiner
+
+
+   .. py:attribute:: tan_half
+
+
+   .. py:method:: eval_cyclic_exact(expr_str: str, *, is_trilinear: bool = False, xyz: tuple[Any, Any, Any] | None = None, uvw: tuple[Any, Any, Any] | None = None, timeout_sec: float = 0.15) -> tuple[Any, Any, Any]
+
+      Evaluate a cyclic Python expression exactly in this triangle's field.
+
+
+
+   .. py:method:: eval_cyclic_mpmath(expr_str: str, *, is_trilinear: bool = False, xyz: tuple[mpmath.mpf, mpmath.mpf, mpmath.mpf] | None = None, uvw: tuple[mpmath.mpf, mpmath.mpf, mpmath.mpf] | None = None, dps: int = 50) -> tuple[mpmath.mpf, mpmath.mpf, mpmath.mpf] | None
+
+      50-digit ``mpmath`` fallback for transcendental or non-field formulas.
+
+
+
+   .. py:method:: eval_builtin_exact(num: int) -> tuple[Any, Any, Any]
+
+      Evaluate a built-in ``EXACT_CYCLIC_BARYCENTRICS`` center directly in this field.
+
+
+
+   .. py:method:: package_exact_bary(bary_raw: tuple[Any, Any, Any]) -> ExactEvalResult
+
+      Package an exact homogeneous barycentric triple into a full ``ExactEvalResult``.
+
+
+
+   .. py:method:: package_mpmath_bary(bary_mp: tuple[mpmath.mpf, mpmath.mpf, mpmath.mpf], dps: int = 50) -> ExactEvalResult
+
+      Package a 50-digit ``mpmath`` fallback barycentric triple.
+
+
+
+.. py:function:: get_triangle_field(key: str) -> ExactTriangleField
+
+   Return the cached :class:`ExactTriangleField` for preset ``key``.
+
+
+.. py:class:: ExactCorpusResolver(centers_by_num: dict[int, dict[str, Any]], triangle_key: str, *, seed_exact: dict[int, tuple[Any, Any, Any]] | None = None)
+
+   Resolves a batch of parsed ETC centers across one canonical triangle field.
+
+   Uses exact field arithmetic first (built-ins -> direct formulas -> exact
+   algebraic relations -> exact incidence intersections) and falls back cleanly
+   to 50-digit ``mpmath`` only when an expression leaves ``K(sqrt(3))``.
+
+
+   .. py:attribute:: field
+
+
+   .. py:attribute:: centers_by_num
+
+
+   .. py:attribute:: exact_bary
+      :type:  dict[int, tuple[Any, Any, Any]]
+
+
+   .. py:attribute:: mp_bary
+      :type:  dict[int, tuple[mpmath.mpf, mpmath.mpf, mpmath.mpf]]
+
+
+   .. py:attribute:: zero_div_poles
+      :type:  set[int]
+
+
+   .. py:attribute:: results
+      :type:  dict[int, ExactEvalResult]
+
+
+   .. py:method:: audit_exact_collinearity(max_lines_per_center: int = 4) -> dict[str, Any]
+
+      Verify exact zero-determinant collinearity across all resolved centers.
+
+
+
+   .. py:method:: resolve_all(max_passes: int = 5) -> dict[int, ExactEvalResult]
+
+      Resolve all centers in ``centers_by_num`` (exact first, then 50-digit fallback).
+
+
+

@@ -7,7 +7,7 @@
 :book_title: Encyclopedia of Triangle Centers
 :book_subtitle: Clark Kimberling's ETC in Exact Symbolic Algebra & Rational Trigonometry
 :author: Clark Kimberling
-:excerpt: Canonical triangle centers X_1 through X_4000 organized into thematic collections.
+:excerpt: Complete catalog of 73,310 triangle centers (X_1 through X_73310) and 62 thematic collections in exact symbolic algebra.
 
 Encyclopedia of Triangle Centers
 ================================
@@ -26,6 +26,8 @@ Encyclopedia of Triangle Centers
 
 Table of Contents
 -----------------
+
+* :doc:`Live Exact Symbolic Center Explorer (X_1–X_73310) → <explore>` — Instant search by ``X(n)``, name, or Kimberling ``(6, 9, 13)`` search value across all 73,310 centers, 7 canonical reference triangles, and 5 tracks.
 
 .. rubric:: Thematic Collections (X_1–X_4000)
 

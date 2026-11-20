@@ -27,12 +27,17 @@ Attributes
    geometor.etc.triangles.SQRT_3
    geometor.etc.triangles.SQRT_35
    geometor.etc.triangles.SQRT_105
+   geometor.etc.triangles.TAU
    geometor.etc.triangles.HERONIAN_TRIANGLE
    geometor.etc.triangles.RIGHT_TRIANGLE
    geometor.etc.triangles.KEPLER_TRIANGLE
    geometor.etc.triangles.KIMBERLING_TRIANGLE
+   geometor.etc.triangles.GOLDEN_TRIANGLE
+   geometor.etc.triangles.GNOMON_TRIANGLE
+   geometor.etc.triangles.EQUILATERAL_TRIANGLE
    geometor.etc.triangles.LEGACY_ACUTE_TRIANGLE
    geometor.etc.triangles.CANONICAL_TRIANGLES
+   geometor.etc.triangles.CANONICAL_GRID_KEYS
 
 
 Classes
@@ -68,6 +73,9 @@ Module Contents
    :type:  sympy.Expr
 
 .. py:data:: SQRT_105
+   :type:  sympy.Expr
+
+.. py:data:: TAU
    :type:  sympy.Expr
 
 .. py:class:: SymbolicTriangle
@@ -270,6 +278,27 @@ Module Contents
 
 
 
+   .. py:property:: right_angle_vertex
+      :type: str | None
+
+
+      Return ``'A'``, ``'B'``, or ``'C'`` if that vertex has an exact right angle.
+
+
+   .. py:property:: is_equilateral
+      :type: bool
+
+
+      Return whether all three sides are symbolically equal.
+
+
+   .. py:property:: is_isosceles
+      :type: bool
+
+
+      Return whether at least two sides are symbolically equal.
+
+
    .. py:method:: coordinate_field_latex(exprs: collections.abc.Iterable[sympy.Expr] = ()) -> str
 
       Return exact LaTeX notation for the minimal number field of ``exprs`` on this triangle.
@@ -299,17 +328,28 @@ Module Contents
 
 .. py:data:: KIMBERLING_TRIANGLE
 
+.. py:data:: GOLDEN_TRIANGLE
+
+.. py:data:: GNOMON_TRIANGLE
+
+.. py:data:: EQUILATERAL_TRIANGLE
+
 .. py:data:: LEGACY_ACUTE_TRIANGLE
 
 .. py:data:: CANONICAL_TRIANGLES
    :type:  dict[str, SymbolicTriangle]
 
+.. py:data:: CANONICAL_GRID_KEYS
+   :type:  tuple[str, ...]
+   :value: ('heronian', 'right', 'kepler', 'kimberling', 'golden', 'gnomon')
+
+
 .. py:function:: get_canonical_triangle(preset: str = 'heronian', *, unit_baseline: bool = False) -> SymbolicTriangle
 
    Return a canonical :class:`SymbolicTriangle` by preset key.
 
-   :param preset: One of ``"heronian"``, ``"right"``, ``"kepler"``, ``"kimberling"``
-                  (or legacy ``"acute"``).
+   :param preset: One of ``"heronian"``, ``"right"``, ``"kepler"``, ``"kimberling"``,
+                  ``"golden"``, ``"gnomon"``, ``"equilateral"`` (or legacy ``"acute"``).
    :param unit_baseline: When ``True``, scales the triangle by :math:`1/c` so :math:`AB = 1`.
 
 

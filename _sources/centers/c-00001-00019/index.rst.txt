@@ -32,5 +32,93 @@ X_1–X_19
 
    **Companion Topic Guides**: :doc:`Collection 1 Topics: Conjugacies, Central Lines, Circles & Triangles <../../topics/index>` (:math:`T_1`–:math:`T_{24}`)
 
-.. collection::
-   :sort: order
+Member Centers
+--------------
+
+:ref:`Open Interactive 7-Triangle Constellation & Explorer ↗ <family-c-00001-00019>`
+
+.. list-table::
+   :class: etc-table etc-mode-relations
+   :header-rows: 1
+   :widths: 12 56 18 14
+
+   * - Center
+     - Name
+     - Search (6,9,13)
+     - Precision
+   * - :ref:`X_1 <X_1>`
+     - INCENTER
+     - ``1.690309``
+     - Exact
+   * - :ref:`X_2 <X_2>`
+     - CENTROID
+     - ``2.629369``
+     - Exact
+   * - :ref:`X_3 <X_3>`
+     - CIRCUMCENTER
+     - ``6.782363``
+     - Exact
+   * - :ref:`X_4 <X_4>`
+     - ORTHOCENTER
+     - ``-5.676619``
+     - Exact
+   * - :ref:`X_5 <X_5>`
+     - NINE-POINT CENTER
+     - ``0.552872``
+     - Exact
+   * - :ref:`X_6 <X_6>`
+     - SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)
+     - ``0.992908``
+     - Exact
+   * - :ref:`X_7 <X_7>`
+     - GERGONNE POINT
+     - ``0.744161``
+     - Exact
+   * - :ref:`X_8 <X_8>`
+     - NAGEL POINT
+     - ``4.507489``
+     - Exact
+   * - :ref:`X_9 <X_9>`
+     - MITTENPUNKT
+     - ``3.571973``
+     - Exact
+   * - :ref:`X_10 <X_10>`
+     - SPIEKER CENTER
+     - ``3.098899``
+     - Exact
+   * - :ref:`X_11 <X_11>`
+     - FEUERBACH POINT
+     - ``2.643135``
+     - Exact
+   * - :ref:`X_12 <X_12>`
+     - {X\_1,X\_5}-HARMONIC CONJUGATE OF X\_11
+     - ``1.334164``
+     - Exact
+   * - :ref:`X_13 <X_13>`
+     - 1st ISOGONIC CENTER (FERMAT POINT, TORRICELLI POINT)
+     - ``0.075945``
+     - Exact
+   * - :ref:`X_14 <X_14>`
+     - 2nd ISOGONIC CENTER
+     - ``4.373432``
+     - Exact
+   * - :ref:`X_15 <X_15>`
+     - 1st ISODYNAMIC POINT
+     - ``3.102444``
+     - Exact
+   * - :ref:`X_16 <X_16>`
+     - 2nd ISODYNAMIC POINT
+     - ``-6.784211``
+     - Exact
+   * - :ref:`X_17 <X_17>`
+     - 1st NAPOLEON POINT
+     - ``1.386655``
+     - Exact
+   * - :ref:`X_18 <X_18>`
+     - 2nd NAPOLEON POINT
+     - ``-16.280674``
+     - Exact
+   * - :ref:`X_19 <X_19>`
+     - CLAWSON POINT
+     - ``-1.480512``
+     - Exact

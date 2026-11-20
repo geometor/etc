@@ -1,0 +1,41 @@
+geometor.etc.models.x_00010
+===========================
+
+.. py:module:: geometor.etc.models.x_00010
+
+.. autoapi-nested-parse::
+
+   Exact symbolic GEOMETOR construction model for ``X_10 = SPIEKER CENTER``.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.models.x_00010.construct_x_00010
+   geometor.etc.models.x_00010.build_model
+
+
+Module Contents
+---------------
+
+.. py:function:: construct_x_00010(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point) -> sympy.geometry.Point
+
+   Construct ``X_10 = SPIEKER CENTER`` and its classical incident central lines on ``ABC``.
+
+   Constructed elements include:
+
+   - Medial triangle ``< M_a M_b M_c >``, medial angle bisectors ``[ M_a X_10 ]``,
+     ``[ M_b X_10 ]``, ``[ M_c X_10 ]``, and inscribed ``spieker_circle``.
+   - Incident central lines: Nagel ``{ 1, 2 }`` (with ``X_1, X_2, X_8``),
+     Orthocenter-Mittenpunkt-Clawson ``{ 4, 9 }`` (with ``X_4, X_9, X_19``),
+     ``{ 12, 65 }``, and ``{ 21, 35 }``.
+
+
+.. py:function:: build_model(preset: str | tuple[sympy.Expr | int, sympy.Expr | int, sympy.Expr | int] = 'heronian', show_guides: bool = False) -> geometor.model.Model
+
+   Build an exact symbolic :class:`geometor.model.Model` for ``X_10 = SPIEKER CENTER``.
+
+

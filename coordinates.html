@@ -33,6 +33,7 @@
   <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=ea5fcf70" />
   <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=f1075037" />
   <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" type="text/css" href="_static/css/etc-viewer.css?v=6bb90446" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
@@ -94,75 +95,24 @@
         </div>
         <div class="book-header-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="todos/expand_clark_kimberling.html" title="Expand Clark Kimberling">&larr; <span class="nav-label">Prev</span></a>
+            <a class="book-nav-btn" href="topics/isogonic-and-napoleon-triangles/index.html" title="T_24 • Equilateral, Isogonic &amp; Napoleon Triangles">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="intro.html" title="&lt;no title&gt;"><span class="nav-label">Next</span> &rarr;</a>
+            <a class="book-nav-btn" href="preambles.html" title="Guide to Preambles in ETC"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </header>
       <div class="content body book-content" role="main">
-        <style id="etc-heading-styles">
-        .book-reading-pane .book-content h1,
-        .folio-book-page h1 {
-            position: relative;
-            text-align: center !important;
-            text-indent: 0 !important;
-            margin-bottom: 0.35rem !important;
-        }
-        .book-reading-pane .book-content h1 a.headerlink,
-        .book-reading-pane .book-content h2 a.headerlink,
-        .folio-book-page h1 a.headerlink,
-        .folio-book-page h2 a.headerlink {
-            position: absolute;
-        }
-        .book-reading-pane .book-content p.rubric,
-        .folio-book-page p.rubric {
-            font-style: normal !important;
-            font-weight: 700 !important;
-            text-align: center !important;
-            text-indent: 0 !important;
-            margin-left: 0 !important;
-            margin-right: 0 !important;
-            padding-left: 0 !important;
-            padding-right: 0 !important;
-            margin-top: 0 !important;
-            margin-bottom: 1.4rem !important;
-        }
-        .geom-ref {
-            cursor: pointer;
-            border-bottom: 1px dotted rgba(0, 229, 255, 0.55);
-            padding: 0 2px;
-            border-radius: 3px;
-            transition: background-color 0.12s ease, color 0.12s ease;
-        }
-        .geom-ref:hover,
-        .geom-highlight-text {
-            background-color: rgba(0, 255, 255, 0.18) !important;
-            color: #0ff !important;
-            border-bottom-color: #0ff !important;
-        }
-        .etc-act-plate {
-            margin: 0.5rem 0;
-        }
-        .etc-symbolic-concordance {
-            text-align: center;
-            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-            font-size: 0.92rem;
-            color: var(--book-text-muted, #94a3b8);
-            margin: -0.6rem 0 1.25rem 0;
-        }
-        </style>
         <section class="level-1" id="coordinates-in-pictures">
         <span id="coordinates"></span><h1>Coordinates in Pictures<a class="headerlink" href="#coordinates-in-pictures" title="Link to this heading">¶</a></h1>
         <div class="toctree-wrapper compound">
         </div>
-        <p>Every center <span class="math notranslate nohighlight">\(X<sub>n</sub>\)</span> in the <em>Encyclopedia of Triangle Centers</em> is specified by two homogeneous coordinate triples relative to a reference triangle <span class="math notranslate nohighlight">\(ABC\)</span> with side lengths <span class="math notranslate nohighlight">\((a, b, c)\)</span>:</p>
+        <p>Every center <span class="math notranslate nohighlight">\(X_n\)</span> in the <em>Encyclopedia of Triangle Centers</em> is specified by two homogeneous coordinate triples relative to a reference triangle <span class="math notranslate nohighlight">\(ABC\)</span> with side lengths <span class="math notranslate nohighlight">\((a, b, c)\)</span>:</p>
         <ol class="arabic simple">
-        <li><p><strong>Trilinear Coordinates</strong> <span class="math notranslate nohighlight">\(\alpha : \beta : \gamma\)</span> — the directed perpendicular distances from <span class="math notranslate nohighlight">\(X<sub>n</sub>\)</span> to sidelines <span class="math notranslate nohighlight">\(BC, CA, AB\)</span>.</p></li>
-        <li><p><strong>Barycentric Coordinates</strong> <span class="math notranslate nohighlight">\(u : v : w\)</span> — the signed areas of the three sub-triangles <span class="math notranslate nohighlight">\(\triangle X<sub>n</sub> BC, \triangle X<sub>n</sub> CA, \triangle X<sub>n</sub> AB\)</span> (or equivalently, the center-of-mass weights placed at vertices <span class="math notranslate nohighlight">\(A, B, C\)</span> so that their balance point is <span class="math notranslate nohighlight">\(X<sub>n</sub>\)</span>).</p></li>
+        <li><p><strong>Trilinear Coordinates</strong> <span class="math notranslate nohighlight">\(\alpha : \beta : \gamma\)</span> — the directed perpendicular distances from <span class="math notranslate nohighlight">\(X_n\)</span> to sidelines <span class="math notranslate nohighlight">\(BC, CA, AB\)</span>.</p></li>
+        <li><p><strong>Barycentric Coordinates</strong> <span class="math notranslate nohighlight">\(u : v : w\)</span> — the signed areas of the three sub-triangles <span class="math notranslate nohighlight">\(\triangle X_n BC, \triangle X_n CA, \triangle X_n AB\)</span> (or equivalently, the center-of-mass weights placed at vertices <span class="math notranslate nohighlight">\(A, B, C\)</span> so that their balance point is <span class="math notranslate nohighlight">\(X_n\)</span>).</p></li>
         </ol>
         <p>Because the area of each sub-triangle is <span class="math notranslate nohighlight">\(\frac{1}{2} \times \text{base} \times \text{height}\)</span>, the two coordinate systems are connected by the fundamental <strong>Bridge Identity</strong>:</p>
         <div class="math notranslate nohighlight">
@@ -181,9 +131,9 @@
         <p>where <span class="math notranslate nohighlight">\(\Delta = \operatorname{Area}(\triangle ABC)\)</span>.</p>
         </li>
         <li><p><strong>Homogeneous Trilinear Coordinates</strong> <span class="math notranslate nohighlight">\(\alpha : \beta : \gamma\)</span> record only the <em>proportion</em> among these three perpendicular distances: for any non-zero scalar <span class="math notranslate nohighlight">\(k \neq 0\)</span>, <span class="math notranslate nohighlight">\((k\alpha : k\beta : k\gamma)\)</span> represents the same point.</p></li>
-        <li><p><strong>Canonical Example — Incenter</strong> <a class="reference internal" href="centers/c-00001-00019/x-00001/index.html#x-1" title="X_1 — INCENTER"><span class="std std-ref">X<sub>1</sub></span></a>: Because <a class="reference internal" href="centers/c-00001-00019/x-00001/index.html#x-1" title="X_1 — INCENTER"><span class="std std-ref">X<sub>1</sub></span></a> is equidistant from all three sides by the inradius <span class="math notranslate nohighlight">\(r = \Delta / s\)</span>, its three perpendicular struts have identical length <span class="math notranslate nohighlight">\((r, r, r)\)</span>, giving the simplest trilinear ratio:</p>
+        <li><p><strong>Canonical Example — Incenter</strong> <a class="etc-live-xref reference internal" href="centers/explore.html#X_1" title="X(1) — Live Symbolic Explorer"><span class="xref std std-ref">X<sub>1</sub></span></a>: Because <a class="etc-live-xref reference internal" href="centers/explore.html#X_1" title="X(1) — Live Symbolic Explorer"><span class="xref std std-ref">X<sub>1</sub></span></a> is equidistant from all three sides by the inradius <span class="math notranslate nohighlight">\(r = \Delta / s\)</span>, its three perpendicular struts have identical length <span class="math notranslate nohighlight">\((r, r, r)\)</span>, giving the simplest trilinear ratio:</p>
         <div class="math notranslate nohighlight">
-        \[X<sub>1</sub> \text{ Trilinears:} \quad \alpha : \beta : \gamma \;=\; 1 : 1 : 1\]</div>
+        \[X_1 \text{ Trilinears:} \quad \alpha : \beta : \gamma \;=\; 1 : 1 : 1\]</div>
         </li>
         </ul>
         <div style="margin: 1.5rem 0; background: #0d111a; border: 1px solid rgba(232, 184, 90, 0.35); border-radius: 12px; padding: 12px;">
@@ -202,10 +152,10 @@
         <div class="math notranslate nohighlight">
         \[P \;=\; \frac{uA + vB + wC}{u + v + w}\]</div>
         <ul>
-        <li><p><strong>Canonical Example — Incenter</strong> <a class="reference internal" href="centers/c-00001-00019/x-00001/index.html#x-1" title="X_1 — INCENTER"><span class="std std-ref">X<sub>1</sub></span></a>: Since all three sub-triangles <span class="math notranslate nohighlight">\(\triangle X<sub>1</sub> BC, \triangle X<sub>1</sub> CA, \triangle X<sub>1</sub> AB\)</span> share the same height <span class="math notranslate nohighlight">\(r\)</span>, their areas are proportional to their bases <span class="math notranslate nohighlight">\(a, b, c\)</span>:</p>
+        <li><p><strong>Canonical Example — Incenter</strong> <a class="etc-live-xref reference internal" href="centers/explore.html#X_1" title="X(1) — Live Symbolic Explorer"><span class="xref std std-ref">X<sub>1</sub></span></a>: Since all three sub-triangles <span class="math notranslate nohighlight">\(\triangle X_1 BC, \triangle X_1 CA, \triangle X_1 AB\)</span> share the same height <span class="math notranslate nohighlight">\(r\)</span>, their areas are proportional to their bases <span class="math notranslate nohighlight">\(a, b, c\)</span>:</p>
         <div class="math notranslate nohighlight">
-        \[X<sub>1</sub> \text{ Barycentrics:} \quad u : v : w \;=\; a : b : c\]</div>
-        <p>On the primary Heronian reference triangle <span class="math notranslate nohighlight">\((a, b, c) = (15, 13, 14)\)</span> (<span class="math notranslate nohighlight">\(\Delta = 84\)</span>, <span class="math notranslate nohighlight">\(r = 4\)</span>), <a class="reference internal" href="centers/c-00001-00019/x-00001/index.html#x-1" title="X_1 — INCENTER"><span class="std std-ref">X<sub>1</sub></span></a> partitions the area into exact integer sub-areas <span class="math notranslate nohighlight">\((30, 26, 28)\)</span> in ratio <span class="math notranslate nohighlight">\(15 : 13 : 14\)</span> (and <span class="math notranslate nohighlight">\(5 : 6 : 7\)</span> on the acute picture triangle <span class="math notranslate nohighlight">\((5, 6, 7)\)</span> shown below).</p>
+        \[X_1 \text{ Barycentrics:} \quad u : v : w \;=\; a : b : c\]</div>
+        <p>On the primary Heronian reference triangle <span class="math notranslate nohighlight">\((a, b, c) = (15, 13, 14)\)</span> (<span class="math notranslate nohighlight">\(\Delta = 84\)</span>, <span class="math notranslate nohighlight">\(r = 4\)</span>), <a class="etc-live-xref reference internal" href="centers/explore.html#X_1" title="X(1) — Live Symbolic Explorer"><span class="xref std std-ref">X<sub>1</sub></span></a> partitions the area into exact integer sub-areas <span class="math notranslate nohighlight">\((30, 26, 28)\)</span> in ratio <span class="math notranslate nohighlight">\(15 : 13 : 14\)</span> (and <span class="math notranslate nohighlight">\(5 : 6 : 7\)</span> on the acute picture triangle <span class="math notranslate nohighlight">\((5, 6, 7)\)</span> shown below).</p>
         </li>
         </ul>
         <div style="margin: 1.5rem 0; background: #0d111a; border: 1px solid rgba(56, 189, 248, 0.35); border-radius: 12px; padding: 12px;">
@@ -213,8 +163,8 @@
         </div></section>
         <hr class="docutils" />
         <section class="level-2" id="the-classic-coordinate-trio-x-1-x-2-and-x-6">
-        <h2>3. The Classic Coordinate Trio: <span class="math notranslate nohighlight">\(X<sub>1</sub>\)</span>, <span class="math notranslate nohighlight">\(X<sub>2</sub>\)</span>, and <span class="math notranslate nohighlight">\(X<sub>6</sub>\)</span><a class="headerlink" href="#the-classic-coordinate-trio-x-1-x-2-and-x-6" title="Link to this heading">¶</a></h2>
-        <p>Comparing the <strong>Incenter</strong> <a class="reference internal" href="centers/c-00001-00019/x-00001/index.html#x-1" title="X_1 — INCENTER"><span class="std std-ref">X<sub>1</sub></span></a>, the <strong>Centroid</strong> <a class="reference internal" href="centers/c-00001-00019/x-00002/index.html#x-2" title="X_2 — CENTROID"><span class="std std-ref">X<sub>2</sub></span></a>, and the <strong>Symmedian Point</strong> <a class="reference internal" href="centers/c-00001-00019/x-00006/index.html#x-6" title="X_6 — SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)"><span class="std std-ref">X<sub>6</sub></span></a> side by side makes the duality between perpendicular distances (<span class="math notranslate nohighlight">\(\alpha : \beta : \gamma\)</span>) and sub-triangle areas (<span class="math notranslate nohighlight">\(u : v : w = a\alpha : b\beta : c\gamma\)</span>) immediately visible:</p>
+        <h2>3. The Classic Coordinate Trio: <span class="math notranslate nohighlight">\(X_1\)</span>, <span class="math notranslate nohighlight">\(X_2\)</span>, and <span class="math notranslate nohighlight">\(X_6\)</span><a class="headerlink" href="#the-classic-coordinate-trio-x-1-x-2-and-x-6" title="Link to this heading">¶</a></h2>
+        <p>Comparing the <strong>Incenter</strong> <a class="etc-live-xref reference internal" href="centers/explore.html#X_1" title="X(1) — Live Symbolic Explorer"><span class="xref std std-ref">X<sub>1</sub></span></a>, the <strong>Centroid</strong> <a class="etc-live-xref reference internal" href="centers/explore.html#X_2" title="X(2) — Live Symbolic Explorer"><span class="xref std std-ref">X<sub>2</sub></span></a>, and the <strong>Symmedian Point</strong> <a class="etc-live-xref reference internal" href="centers/explore.html#X_6" title="X(6) — Live Symbolic Explorer"><span class="xref std std-ref">X<sub>6</sub></span></a> side by side makes the duality between perpendicular distances (<span class="math notranslate nohighlight">\(\alpha : \beta : \gamma\)</span>) and sub-triangle areas (<span class="math notranslate nohighlight">\(u : v : w = a\alpha : b\beta : c\gamma\)</span>) immediately visible:</p>
         <table class="docutils align-default">
         <colgroup>
         <col style="width: 22.0%" />
@@ -230,24 +180,24 @@
         </tr>
         </thead>
         <tbody>
-        <tr class="row-even"><td><p><a class="reference internal" href="centers/c-00001-00019/x-00001/index.html#x-1" title="X_1 — INCENTER"><span class="std std-ref">X<sub>1</sub></span></a> (<strong>Incenter</strong>)</p></td>
+        <tr class="row-even"><td><p><a class="etc-live-xref reference internal" href="centers/explore.html#X_1" title="X(1) — Live Symbolic Explorer"><span class="xref std std-ref">X<sub>1</sub></span></a> (<strong>Incenter</strong>)</p></td>
         <td><p>Equal perpendicular distances (<span class="math notranslate nohighlight">\(r\)</span>) to sidelines</p></td>
         <td><p><span class="math notranslate nohighlight">\(1 : 1 : 1\)</span></p></td>
         <td><p><span class="math notranslate nohighlight">\(a : b : c\)</span> (<span class="math notranslate nohighlight">\(15 : 13 : 14\)</span> on Heronian; <span class="math notranslate nohighlight">\(5 : 6 : 7\)</span> below)</p></td>
         </tr>
-        <tr class="row-odd"><td><p><a class="reference internal" href="centers/c-00001-00019/x-00002/index.html#x-2" title="X_2 — CENTROID"><span class="std std-ref">X<sub>2</sub></span></a> (<strong>Centroid</strong>)</p></td>
+        <tr class="row-odd"><td><p><a class="etc-live-xref reference internal" href="centers/explore.html#X_2" title="X(2) — Live Symbolic Explorer"><span class="xref std std-ref">X<sub>2</sub></span></a> (<strong>Centroid</strong>)</p></td>
         <td><p>Equal sub-triangle areas (<span class="math notranslate nohighlight">\(\frac{1}{3}\Delta\)</span>)</p></td>
         <td><p><span class="math notranslate nohighlight">\(\frac{1}{a} : \frac{1}{b} : \frac{1}{c}\)</span> (<span class="math notranslate nohighlight">\(182 : 210 : 195\)</span> on Heronian; <span class="math notranslate nohighlight">\(42 : 35 : 30\)</span> below)</p></td>
         <td><p><span class="math notranslate nohighlight">\(1 : 1 : 1\)</span></p></td>
         </tr>
-        <tr class="row-even"><td><p><a class="reference internal" href="centers/c-00001-00019/x-00006/index.html#x-6" title="X_6 — SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)"><span class="std std-ref">X<sub>6</sub></span></a> (<strong>Symmedian Point</strong>)</p></td>
+        <tr class="row-even"><td><p><a class="etc-live-xref reference internal" href="centers/explore.html#X_6" title="X(6) — Live Symbolic Explorer"><span class="xref std std-ref">X<sub>6</sub></span></a> (<strong>Symmedian Point</strong>)</p></td>
         <td><p>Distances proportional to side lengths</p></td>
         <td><p><span class="math notranslate nohighlight">\(a : b : c\)</span> (<span class="math notranslate nohighlight">\(15 : 13 : 14\)</span> on Heronian; <span class="math notranslate nohighlight">\(5 : 6 : 7\)</span> below)</p></td>
         <td><p><span class="math notranslate nohighlight">\(a^2 : b^2 : c^2\)</span> (<span class="math notranslate nohighlight">\(225 : 169 : 196\)</span> on Heronian; <span class="math notranslate nohighlight">\(25 : 36 : 49\)</span> below)</p></td>
         </tr>
         </tbody>
         </table>
-        <p>Notice how <a class="reference internal" href="centers/c-00001-00019/x-00002/index.html#x-2" title="X_2 — CENTROID"><span class="std std-ref">X<sub>2</sub></span></a> and <a class="reference internal" href="centers/c-00001-00019/x-00006/index.html#x-6" title="X_6 — SYMMEDIAN POINT (LEMOINE POINT, GREBE POINT)"><span class="std std-ref">X<sub>6</sub></span></a> are <a class="term-ref glossary-term" id="occ-term-isogonal-conjugate-1" href="glossary.html#term-isogonal-conjugate" data-term="isogonal conjugate" title="isogonal conjugate: Let P = p : q : r be a point not on a sideline of ABC. Let L(A) be the line obtained by reflecting line AP in the internal bisector of angle A. Define L(B) and L(B) cyclically. The lines L(A), L(B), L(C) concur in the isogonal conjugate of P, which has trilinears 1/p : 1/q : 1/r and is denoted by P -1 . See isoconjugate .">isogonal conjugates</a> (their trilinear coordinates are reciprocals <span class="math notranslate nohighlight">\(1/a : 1/b : 1/c\)</span> and <span class="math notranslate nohighlight">\(a : b : c\)</span>), while <a class="reference internal" href="centers/c-00001-00019/x-00001/index.html#x-1" title="X_1 — INCENTER"><span class="std std-ref">X<sub>1</sub></span></a> is self-isogonal (<span class="math notranslate nohighlight">\(1 : 1 : 1\)</span>).</p>
+        <p>Notice how <a class="etc-live-xref reference internal" href="centers/explore.html#X_2" title="X(2) — Live Symbolic Explorer"><span class="xref std std-ref">X<sub>2</sub></span></a> and <a class="etc-live-xref reference internal" href="centers/explore.html#X_6" title="X(6) — Live Symbolic Explorer"><span class="xref std std-ref">X<sub>6</sub></span></a> are <a class="term-ref glossary-term" id="occ-term-isogonal-conjugate-1" href="glossary.html#term-isogonal-conjugate" data-term="isogonal conjugate" title="isogonal conjugate: Let P = p : q : r be a point not on a sideline of ABC. Let L(A) be the line obtained by reflecting line AP in the internal bisector of angle A. Define L(B) and L(B) cyclically. The lines L(A), L(B), L(C) concur in the isogonal conjugate of P, which has trilinears 1/p : 1/q : 1/r and is denoted by P -1 . See isoconjugate .">isogonal conjugates</a> (their trilinear coordinates are reciprocals <span class="math notranslate nohighlight">\(1/a : 1/b : 1/c\)</span> and <span class="math notranslate nohighlight">\(a : b : c\)</span>), while <a class="etc-live-xref reference internal" href="centers/explore.html#X_1" title="X(1) — Live Symbolic Explorer"><span class="xref std std-ref">X<sub>1</sub></span></a> is self-isogonal (<span class="math notranslate nohighlight">\(1 : 1 : 1\)</span>).</p>
         <div style="margin: 1.5rem 0; background: #0d111a; border: 1px solid rgba(94, 194, 126, 0.35); border-radius: 12px; padding: 12px;">
           <img src="_static/coordinates/coordinate_trio.svg" alt="Coordinate Trio: X_1, X_2, and X_6" style="width: 100%; height: auto; display: block;" />
         </div></section>
@@ -279,14 +229,14 @@
         <td><p><span class="math notranslate nohighlight">\((15, 13, 14)\)</span></p></td>
         <td><p><span class="math notranslate nohighlight">\(A=(0,0),\; B=(14,0),\; C=(5,12)\)</span></p></td>
         <td><p><span class="math notranslate nohighlight">\(\Delta = 84\)</span>, <span class="math notranslate nohighlight">\(r = 4\)</span>, <span class="math notranslate nohighlight">\(R = \frac{65}{8}\)</span></p></td>
-        <td><p><strong>Primary acute scalene plate</strong> — integer vertices, integer area, integer inradius, and rational-coordinate centers (<span class="math notranslate nohighlight">\(X<sub>1</sub> = (6, 4)\)</span>).</p></td>
+        <td><p><strong>Primary acute scalene plate</strong> — integer vertices, integer area, integer inradius, and rational-coordinate centers (<span class="math notranslate nohighlight">\(X_1 = (6, 4)\)</span>).</p></td>
         </tr>
         <tr class="row-odd"><td><p><strong>Right</strong> <code class="docutils literal notranslate"><span class="pre">right</span></code></p></td>
         <td><p><span class="math notranslate nohighlight">\(\mathbb{Q}\)</span></p></td>
         <td><p><span class="math notranslate nohighlight">\((3, 4, 5)\)</span></p></td>
         <td><p><span class="math notranslate nohighlight">\(A=(0,0),\; B=(5,0),\; C=\left(\frac{16}{5}, \frac{12}{5}\right)\)</span></p></td>
         <td><p><span class="math notranslate nohighlight">\(\Delta = 6\)</span>, <span class="math notranslate nohighlight">\(r = 1\)</span>, <span class="math notranslate nohighlight">\(R = \frac{5}{2}\)</span></p></td>
-        <td><p><strong>Pythagorean right boundary</strong> (<span class="math notranslate nohighlight">\(\angle C = 90^\circ\)</span>) — tests orthic/circumcenter collapses (<span class="math notranslate nohighlight">\(X<sub>4</sub> = C\)</span>, <span class="math notranslate nohighlight">\(X<sub>3</sub> = \text{mid}(AB)\)</span>).</p></td>
+        <td><p><strong>Pythagorean right boundary</strong> (<span class="math notranslate nohighlight">\(\angle C = 90^\circ\)</span>) — tests orthic/circumcenter collapses (<span class="math notranslate nohighlight">\(X_4 = C\)</span>, <span class="math notranslate nohighlight">\(X_3 = \text{mid}(AB)\)</span>).</p></td>
         </tr>
         <tr class="row-even"><td><p><strong>Kepler</strong> <code class="docutils literal notranslate"><span class="pre">kepler</span></code></p></td>
         <td><p><span class="math notranslate nohighlight">\(\mathbb{Q}(\sqrt{\phi})\)</span></p></td>
@@ -300,7 +250,7 @@
         <td><p><span class="math notranslate nohighlight">\((6, 9, 13)\)</span></p></td>
         <td><p><span class="math notranslate nohighlight">\(A=(0,0),\; B=(13,0),\; C=\left(\frac{107}{13}, \frac{8\sqrt{35}}{13}\right)\)</span></p></td>
         <td><p><span class="math notranslate nohighlight">\(\Delta = 4\sqrt{35}\)</span>, <span class="math notranslate nohighlight">\(r = \frac{2\sqrt{35}}{7}\)</span>, <span class="math notranslate nohighlight">\(R = \frac{351\sqrt{35}}{280}\)</span></p></td>
-        <td><p><strong>Obtuse scalene ETC search standard</strong> — exact directed distance <span class="math notranslate nohighlight">\(h_a\)</span> from <span class="math notranslate nohighlight">\(X<sub>n</sub>\)</span> to sideline <span class="math notranslate nohighlight">\(BC\)</span> reproduces Clark Kimberling’s 12-decimal search key (<span class="math notranslate nohighlight">\(h_a(X<sub>1</sub>) = \frac{2\sqrt{35}}{7} \approx 1.690308509457\)</span>).</p></td>
+        <td><p><strong>Obtuse scalene ETC search standard</strong> — exact directed distance <span class="math notranslate nohighlight">\(h_a\)</span> from <span class="math notranslate nohighlight">\(X_n\)</span> to sideline <span class="math notranslate nohighlight">\(BC\)</span> reproduces Clark Kimberling’s 12-decimal search key (<span class="math notranslate nohighlight">\(h_a(X_1) = \frac{2\sqrt{35}}{7} \approx 1.690308509457\)</span>).</p></td>
         </tr>
         </tbody>
         </table>
@@ -312,13 +262,13 @@
         <div class="book-footer-ornament">&#10086;</div>
         <div class="book-footer-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="todos/expand_clark_kimberling.html" title="Expand Clark Kimberling">&larr; <span class="nav-label">Prev</span></a>
+            <a class="book-nav-btn" href="topics/isogonic-and-napoleon-triangles/index.html" title="T_24 • Equilateral, Isogonic &amp; Napoleon Triangles">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
             <a class="book-toc-link" href="index.html">Encyclopedia of Triangle Centers</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="intro.html" title="&lt;no title&gt;"><span class="nav-label">Next</span> &rarr;</a>
+            <a class="book-nav-btn" href="preambles.html" title="Guide to Preambles in ETC"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </footer>
@@ -346,6 +296,7 @@
     <aside class="aside-recent-logs">
       <h3>Recent Logs</h3>
       <ul>
+        <li><a href="log/26.323-184000/index.html">Scaling ETC to All 73,310 Centers in Exact Symbolic Algebra & Unified Viewer</a></li>
         <li><a href="log/26.302-183300/index.html">ETC Semantic Parser, Apparatus Registries & Multi-Triangle Codex Builder</a></li>
       </ul>
     </aside>
@@ -354,6 +305,10 @@
       <ul>
         <li><a href="tags/apparatus.html">apparatus</a></li>
         <li><a href="tags/etc.html">etc</a></li>
+        <li><a href="tags/exact-algebra.html">exact-algebra</a></li>
+        <li><a href="tags/families.html">families</a></li>
+        <li><a href="tags/live-explorer.html">live-explorer</a></li>
+        <li><a href="tags/shards.html">shards</a></li>
         <li><a href="tags/svg.html">svg</a></li>
         <li><a href="tags/triangle-centers.html">triangle-centers</a></li>
       </ul>
@@ -361,6 +316,7 @@
     <aside class="aside-categories">
       <h3>Categories</h3>
       <ul>
+        <li><a href="categories/architecture.html">architecture</a></li>
         <li><a href="categories/constructions.html">constructions</a></li>
         <li><a href="categories/parser.html">parser</a></li>
       </ul>
@@ -398,12 +354,14 @@
 
   <script src="_static/jquery.js?v=5d32c60e"></script>
   <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="_static/documentation_options.js?v=71d9d8e6"></script>
+  <script src="_static/documentation_options.js?v=6c02275b"></script>
   <script src="_static/doctools.js?v=fd6eb6e6"></script>
   <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="_static/js/collection_controls.js?v=b6b5297a"></script>
   <script src="_static/js/collection_directory.js?v=2422530d"></script>
   <script src="_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="_static/js/etc-viewer.js?v=ff0c514d"></script>
+  <script src="_static/js/etc-live-viewer.js?v=90a9d2d3"></script>
   <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
   <script src="_static/js/search_highlight.js"></script>
 

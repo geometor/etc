@@ -11,11 +11,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <link rel="canonical" href="https://geometor.github.io/etc/changelog.html" />
-  <meta name="description" content="Standardized top-level About page (docsrc/about/index.rst promoted to top header :order: 10) with the three-pillar GEOMETOR semantic-extraction mission and archival provenance; retired…" />
+  <meta name="description" content="added: Full 73,310-center exact symbolic evaluation engine (field_eval.py) and sharded JSON corpus generator (shards.py) spanning all 37 ETC Parts (X_1–X_73310, zero gaps) across all 7…" />
   <meta property="og:site_name" content="GEOMETOR" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="changelog — Encyclopedia of Triangle Centers • GEOMETOR" />
-  <meta property="og:description" content="Standardized top-level About page (docsrc/about/index.rst promoted to top header :order: 10) with the three-pillar GEOMETOR semantic-extraction mission and archival provenance; retired…" />
+  <meta property="og:description" content="added: Full 73,310-center exact symbolic evaluation engine (field_eval.py) and sharded JSON corpus generator (shards.py) spanning all 37 ETC Parts (X_1–X_73310, zero gaps) across all 7…" />
   <meta property="og:url" content="https://geometor.github.io/etc/changelog.html" />
   <meta property="og:image" content="https://geometor.github.io/etc/_static/social/banner.png" />
   <meta property="og:image:type" content="image/png" />
@@ -24,7 +24,7 @@
   <meta property="og:image:alt" content="Encyclopedia of Triangle Centers — GEOMETOR" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="changelog — Encyclopedia of Triangle Centers • GEOMETOR" />
-  <meta name="twitter:description" content="Standardized top-level About page (docsrc/about/index.rst promoted to top header :order: 10) with the three-pillar GEOMETOR semantic-extraction mission and archival provenance; retired…" />
+  <meta name="twitter:description" content="added: Full 73,310-center exact symbolic evaluation engine (field_eval.py) and sharded JSON corpus generator (shards.py) spanning all 37 ETC Parts (X_1–X_73310, zero gaps) across all 7…" />
   <meta name="twitter:image" content="https://geometor.github.io/etc/_static/social/banner.png" />
   <meta name="twitter:image:alt" content="Encyclopedia of Triangle Centers — GEOMETOR" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,6 +33,7 @@
   <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=ea5fcf70" />
   <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=f1075037" />
   <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" type="text/css" href="_static/css/etc-viewer.css?v=6bb90446" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
@@ -94,67 +95,16 @@
         </div>
         <div class="book-header-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="glossary.html" title="Glossary">&larr; <span class="nav-label">Prev</span></a>
+            <a class="book-nav-btn" href="todos/expand_clark_kimberling.html" title="Expand Clark Kimberling">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="about/index.html" title="About"><span class="nav-label">Next</span> &rarr;</a>
+            <a class="book-nav-btn" href="connect.html" title="Connect"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </header>
       <div class="content body book-content" role="main">
-        <style id="etc-heading-styles">
-        .book-reading-pane .book-content h1,
-        .folio-book-page h1 {
-            position: relative;
-            text-align: center !important;
-            text-indent: 0 !important;
-            margin-bottom: 0.35rem !important;
-        }
-        .book-reading-pane .book-content h1 a.headerlink,
-        .book-reading-pane .book-content h2 a.headerlink,
-        .folio-book-page h1 a.headerlink,
-        .folio-book-page h2 a.headerlink {
-            position: absolute;
-        }
-        .book-reading-pane .book-content p.rubric,
-        .folio-book-page p.rubric {
-            font-style: normal !important;
-            font-weight: 700 !important;
-            text-align: center !important;
-            text-indent: 0 !important;
-            margin-left: 0 !important;
-            margin-right: 0 !important;
-            padding-left: 0 !important;
-            padding-right: 0 !important;
-            margin-top: 0 !important;
-            margin-bottom: 1.4rem !important;
-        }
-        .geom-ref {
-            cursor: pointer;
-            border-bottom: 1px dotted rgba(0, 229, 255, 0.55);
-            padding: 0 2px;
-            border-radius: 3px;
-            transition: background-color 0.12s ease, color 0.12s ease;
-        }
-        .geom-ref:hover,
-        .geom-highlight-text {
-            background-color: rgba(0, 255, 255, 0.18) !important;
-            color: #0ff !important;
-            border-bottom-color: #0ff !important;
-        }
-        .etc-act-plate {
-            margin: 0.5rem 0;
-        }
-        .etc-symbolic-concordance {
-            text-align: center;
-            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-            font-size: 0.92rem;
-            color: var(--book-text-muted, #94a3b8);
-            margin: -0.6rem 0 1.25rem 0;
-        }
-        </style>
         <section class="level-1" id="changelog">
         <h1>changelog<a class="headerlink" href="#changelog" title="Link to this heading">¶</a></h1>
         <dl class="field-list simple">
@@ -163,27 +113,38 @@
         </dd>
         </dl>
         <section class="level-2" id="id1">
-        <h2>0.3.2<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+        <h2>0.4.0<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+        <p><em>2026-11-19</em></p>
+        <ul class="simple">
+        <li><p><strong>added</strong>: Full <strong>73,310-center</strong> exact symbolic evaluation engine (<code class="docutils literal notranslate"><span class="pre">field_eval.py</span></code>) and sharded JSON corpus generator (<code class="docutils literal notranslate"><span class="pre">shards.py</span></code>) spanning all 37 ETC Parts (<code class="docutils literal notranslate"><span class="pre">X_1</span></code>–<code class="docutils literal notranslate"><span class="pre">X_73310</span></code>, zero gaps) across all <strong>7 canonical reference triangles</strong> (Heronian <code class="docutils literal notranslate"><span class="pre">(15,</span> <span class="pre">13,</span> <span class="pre">14)</span></code>, Right <code class="docutils literal notranslate"><span class="pre">(5,</span> <span class="pre">3,</span> <span class="pre">4)</span></code>, Kepler <code class="docutils literal notranslate"><span class="pre">(φ,</span> <span class="pre">1,</span> <span class="pre">√φ)</span></code>, Kimberling <code class="docutils literal notranslate"><span class="pre">(6,</span> <span class="pre">9,</span> <span class="pre">13)</span></code>, Golden <code class="docutils literal notranslate"><span class="pre">(φ,</span> <span class="pre">φ,</span> <span class="pre">1)</span></code>, Gnomon <code class="docutils literal notranslate"><span class="pre">(1,</span> <span class="pre">1,</span> <span class="pre">φ)</span></code>, Equilateral <code class="docutils literal notranslate"><span class="pre">(2,</span> <span class="pre">2,</span> <span class="pre">2)</span></code>) with <code class="docutils literal notranslate"><span class="pre">96.9%</span></code> exact algebraic resolution on Heronian/Kimberling and <code class="docutils literal notranslate"><span class="pre">98.37%</span></code> exact projective collinearity verification.</p></li>
+        <li><p><strong>added</strong>: Unified client-side <strong>Live Center Explorer</strong> (<code class="docutils literal notranslate"><span class="pre">docsrc/centers/explore.rst</span></code>, <code class="docutils literal notranslate"><span class="pre">etc-live-viewer.js</span></code>) serving all <code class="docutils literal notranslate"><span class="pre">73,310</span></code> centers and all <strong>987 family groups</strong> (<strong>925 ETC preamble families</strong> + <strong>62 curated collections</strong> via <code class="docutils literal notranslate"><span class="pre">families.json</span></code>) with live 7-triangle <strong>Family Constellations</strong> (<code class="docutils literal notranslate"><span class="pre">#family/&lt;id&gt;</span></code>), searchable <code class="docutils literal notranslate"><span class="pre">Families</span></code> drawer, Tier 0–4 geometric construction engine (complete textbook compass-and-straightedge constructions for <code class="docutils literal notranslate"><span class="pre">X_1</span></code>–<code class="docutils literal notranslate"><span class="pre">X_19</span></code> plus universal derived-triangle, defining-line, functional-relation, and cevian constructions for <code class="docutils literal notranslate"><span class="pre">X_20</span></code>–<code class="docutils literal notranslate"><span class="pre">X_73310</span></code>), sparse-dot-to-solid color-matched line highlighting, zoom-invariant point rings, unified Construction/Coordinates workspace, docked stage footer, and true edge-to-edge <strong>Fullscreen App Mode</strong> (<code class="docutils literal notranslate"><span class="pre">F</span></code>) with live center ID, title, and 5-track switching.</p></li>
+        <li><p><strong>changed</strong>: Unified <strong>Collection 1</strong> (<code class="docutils literal notranslate"><span class="pre">X_1</span></code>–<code class="docutils literal notranslate"><span class="pre">X_19</span></code>) and all <strong>62</strong> collection landing pages into one consistent format backed by the Live Center Explorer; preserved the 19 exact SymPy <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code> construction scripts under <code class="docutils literal notranslate"><span class="pre">src/geometor/etc/models/x_00001.py</span></code>–<code class="docutils literal notranslate"><span class="pre">x_00019.py</span></code> and retired all <code class="docutils literal notranslate"><span class="pre">4,000</span></code> redundant static <code class="docutils literal notranslate"><span class="pre">x-00001</span></code>–<code class="docutils literal notranslate"><span class="pre">x-04000</span></code> directories (cutting clean Sphinx build time from 6+ minutes to <code class="docutils literal notranslate"><span class="pre">46.6</span> <span class="pre">s</span></code> and <code class="docutils literal notranslate"><span class="pre">docs/</span></code> footprint from <code class="docutils literal notranslate"><span class="pre">1.2</span> <span class="pre">GB</span></code> to <code class="docutils literal notranslate"><span class="pre">409</span> <span class="pre">MB</span></code>).</p></li>
+        <li><p><strong>changed</strong>: Updated GitHub Actions deployment workflow (<code class="docutils literal notranslate"><span class="pre">.github/workflows/action.yml</span></code>) to fetch the compressed <code class="docutils literal notranslate"><span class="pre">v0.4.0</span></code> exact symbolic shard corpus archive into <code class="docutils literal notranslate"><span class="pre">.cache/etc_data</span></code> prior to <code class="docutils literal notranslate"><span class="pre">publish</span> <span class="pre">build</span></code>.</p></li>
+        <li><p><strong>fixed</strong>: Resolved 4 upstream Evansville HTML heading typos (<code class="docutils literal notranslate"><span class="pre">X_57621</span></code>, <code class="docutils literal notranslate"><span class="pre">X_60349</span></code>, <code class="docutils literal notranslate"><span class="pre">X_68618</span></code>, <code class="docutils literal notranslate"><span class="pre">X_71412</span></code>) in <code class="docutils literal notranslate"><span class="pre">ingest.py</span></code> and <code class="docutils literal notranslate"><span class="pre">parser.py</span></code>, hardened <code class="docutils literal notranslate"><span class="pre">field_eval.py</span></code> against &gt;308-digit <code class="docutils literal notranslate"><span class="pre">OverflowError</span></code> via 50-digit <code class="docutils literal notranslate"><span class="pre">mpmath</span></code> normalization, and fixed MathJax v4 typesetting inside dynamic live explorer views.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id2">
+        <h2>0.3.2<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
         <p><em>2026-11-14</em></p>
         <ul class="simple">
         <li><p>Standardized top-level <code class="docutils literal notranslate"><span class="pre">About</span></code> page (<code class="docutils literal notranslate"><span class="pre">docsrc/about/index.rst</span></code> promoted to top header <code class="docutils literal notranslate"><span class="pre">:order:</span> <span class="pre">10</span></code>) with the three-pillar GEOMETOR semantic-extraction mission and archival provenance; retired <code class="docutils literal notranslate"><span class="pre">docsrc/mission/</span></code> stubs cleanly into Home and <code class="docutils literal notranslate"><span class="pre">About</span></code>.</p></li>
         </ul>
         </section>
-        <section class="level-2" id="id2">
-        <h2>0.3.1<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+        <section class="level-2" id="id3">
+        <h2>0.3.1<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
         <p><em>2026-11-14</em></p>
         <ul class="simple">
         <li><p>Standardized Book Title Page, top-level Header Navigation (<code class="docutils literal notranslate"><span class="pre">Book</span></code>, <code class="docutils literal notranslate"><span class="pre">People</span></code>, <code class="docutils literal notranslate"><span class="pre">Bibliography</span></code>, <code class="docutils literal notranslate"><span class="pre">Usage</span></code>), Reader’s Guide (<code class="docutils literal notranslate"><span class="pre">docsrc/usage/</span></code>), featured Author/Translator profiles in <code class="docutils literal notranslate"><span class="pre">People</span></code>, and English structural terminology.</p></li>
         </ul>
         </section>
-        <section class="level-2" id="id3">
-        <h2>0.3.0<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+        <section class="level-2" id="id4">
+        <h2>0.3.0<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
         <ul class="simple">
         <li><p>Generalized the 5-act exact symbolic Book Codex architecture across all 19 classical centers of Collection 1 (<code class="docutils literal notranslate"><span class="pre">X_1</span></code>–<code class="docutils literal notranslate"><span class="pre">X_19</span></code>: <code class="docutils literal notranslate"><span class="pre">plates.py</span></code>, <code class="docutils literal notranslate"><span class="pre">ops.py</span></code>, <code class="docutils literal notranslate"><span class="pre">symbolic_cache.py</span></code>, <code class="docutils literal notranslate"><span class="pre">transform.py</span></code>), generating <code class="docutils literal notranslate"><span class="pre">156</span></code> interactive Explorer-styled SVGs (8 plates per center + 4 collection overview plates) and caching <code class="docutils literal notranslate"><span class="pre">84</span></code> exact symbolic center records across all 4 canonical reference triangles with zero floating-point drift.</p></li>
         </ul>
         </section>
-        <section class="level-2" id="id4">
-        <h2>0.2.0<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+        <section class="level-2" id="id5">
+        <h2>0.2.0<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
         <ul class="simple">
         <li><p>Added the 4-triangle exact symbolic reference engine (<code class="docutils literal notranslate"><span class="pre">triangles.py</span></code>) and persistent symbolic evaluation cache (<code class="docutils literal notranslate"><span class="pre">symbolic_cache.py</span></code>: <code class="docutils literal notranslate"><span class="pre">CenterSymbolicRegistry</span></code>, <code class="docutils literal notranslate"><span class="pre">SymbolicCenterRecord</span></code>) over <code class="docutils literal notranslate"><span class="pre">5,</span> <span class="pre">6,</span> <span class="pre">7</span></code>, <code class="docutils literal notranslate"><span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">5</span></code>, <code class="docutils literal notranslate"><span class="pre">Kepler</span></code>, and <code class="docutils literal notranslate"><span class="pre">Kimberling</span></code> triangles.</p></li>
         <li><p>Expanded <code class="docutils literal notranslate"><span class="pre">ops.py</span></code> with exact Euclidean construction primitives and <code class="docutils literal notranslate"><span class="pre">CANONICAL_CENTER_CONCORDANCE</span></code> operators built on <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code> v0.6.0 targeted DAGs and Rational Trigonometry invariants.</p></li>
@@ -191,15 +152,15 @@
         <li><p>Updated GitHub Actions deployment workflow to install <code class="docutils literal notranslate"><span class="pre">geometor/model</span></code> before <code class="docutils literal notranslate"><span class="pre">geometor/etc</span></code> with <code class="docutils literal notranslate"><span class="pre">contents:</span> <span class="pre">write</span></code> permissions.</p></li>
         </ul>
         </section>
-        <section class="level-2" id="id5">
-        <h2>0.1.8<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+        <section class="level-2" id="id6">
+        <h2>0.1.8<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
         <ul class="simple">
         <li><p>Replaced generic local point/triangle symbols (<cite>A’</cite>, <cite>B’</cite>, <cite>C’</cite>, <cite>X</cite>, <cite>Y</cite>, <cite>Z</cite>, <cite>X’</cite>, <cite>Y’</cite>, <cite>Z’</cite>, <cite>I_aI_bI_c</cite>) in enunciations and notes with their canonical special point labels (<cite>T_a, T_b, T_c</cite>, <cite>H_a, H_b, H_c</cite>, <cite>M_a, M_b, M_c</cite>, <cite>N_a, N_b, N_c</cite>, <cite>J_a, J_b, J_c</cite>, <cite>I_a, I_b, I_c</cite>, <cite>Tan_a, Tan_b, Tan_c</cite>, <cite>K_a, K_b, K_c</cite>, <cite>Sym_a, Sym_b, Sym_c</cite>, <cite>Eu_a, Eu_b, Eu_c</cite>, <cite>Ref_a, Ref_b, Ref_c</cite>, <cite>Cm_a, Cm_b, Cm_c</cite>, <cite>O_A, O_B, O_C</cite>, <cite>Nap_a, Nap_b, Nap_c</cite>) whenever bound to a known special triangle or vertex triple.</p></li>
         <li><p>Removed redundant side-by-side <cite>(denoted …)</cite> and <cite>(:g:`A’ &lt;T_a&gt;</cite>)` alias annotations from <cite>Constructed Elements</cite> blocks across all 3,000 center pages.</p></li>
         </ul>
         </section>
-        <section class="level-2" id="id6">
-        <h2>0.1.7<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
+        <section class="level-2" id="id7">
+        <h2>0.1.7<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
         <ul class="simple">
         <li><p>Expanded coordinate, incidence, and functional relation resolution to <cite>X<sub>1</sub></cite> through <cite>X<sub>3000</sub></cite> (100% resolved across all 4 reference triangles: <cite>5, 6, 7</cite>, <cite>3, 4, 5</cite>, <cite>Kepler</cite>, and <cite>Kimberling</cite>).</p></li>
         <li><p>Added preamble transformation handlers (<em>Orion transforms</em>, <em>Eigentransforms</em>, <em>Gibert-Simson transforms</em>, <em>Rigby-Simson</em> and <em>Simson-Rigby</em> points, <em>Simson-Moses</em> points, <em>Tangential/Medial/Anticomplementary-Isogonal</em> conjugates, <em>Dual Center</em> <cite>DC(X)</cite> / <cite>CD(X)</cite> mappings, and $X<sub>i</sub>$-isoconjugates), Steiner inellipse constant $K$, and multi-clause cyclic helper expansion (<cite>h(a,b,c)</cite>, <cite>k(a,b,c)</cite>).</p></li>
@@ -207,8 +168,8 @@
         <li><p>Added 14 new thematic collections (<cite>c-02001-02054</cite> through <cite>c-02967-03000</cite>, bringing the total to 52 thematic collections) with 4-triangle constellation graphics (<cite>c-XXXXX-YYYYY.svg</cite>).</p></li>
         </ul>
         </section>
-        <section class="level-2" id="id7">
-        <h2>0.1.6<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+        <section class="level-2" id="id8">
+        <h2>0.1.6<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h2>
         <ul class="simple">
         <li><p>Expanded coordinate and geometric construction resolution to <cite>X<sub>1</sub></cite> through <cite>X<sub>2000</sub></cite> (100% resolved across all 4 reference triangles: <cite>5, 6, 7</cite>, <cite>3, 4, 5</cite>, <cite>Kepler</cite>, and <cite>Kimberling</cite>).</p></li>
         <li><p>Added preamble transformation handlers (<em>Saragossa points</em>, <em>Collings transforms</em>, <em>Brisse transforms</em>, <em>Orthojoin points</em>, <em>TCC-perspectors</em>), <cite>x:y:z = X<sub>k</sub></cite> trilinear coordinate substitutions, and seeded roots (<cite>X<sub>134</sub></cite>, <cite>X<sub>180</sub></cite>, <cite>X<sub>1144</sub></cite>).</p></li>
@@ -216,8 +177,8 @@
         <li><p>Generated multi-center constellation graphics (<cite>c-XXXXX-YYYYY.svg</cite> across all 4 reference triangles) for each thematic collection using an editorial selection of 11–16 spatially separated landmark centers with interactive hover labels and click-to-navigate center dots.</p></li>
         </ul>
         </section>
-        <section class="level-2" id="id8">
-        <h2>0.1.5<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h2>
+        <section class="level-2" id="id9">
+        <h2>0.1.5<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h2>
         <ul class="simple">
         <li><p>Standardized triangle center identifiers and references from <cite>X<sub>n</sub></cite> to subscripted <cite>X<sub>n</sub></cite> (<cite>X<sub>1</sub></cite>, <cite>X<sub>2</sub></cite>, …, rendered as <cite>X&lt;sub&gt;n&lt;/sub&gt;</cite> in HTML and <cite>&lt;tspan&gt;</cite> subscripts in SVG).</p></li>
         <li><p>Added contextual <cite>A’B’C’</cite> classical triangle resolution in prose so <cite>:g:</cite> roles bind <cite>A’</cite>, <cite>B’</cite>, <cite>C’</cite> to their model IDs (<cite>M_a</cite>, <cite>H_a</cite>, <cite>T_a</cite>, <cite>I_a</cite>, etc.) when constructed on the canvas.</p></li>
@@ -225,14 +186,14 @@
         <li><p>Redesigned center page headings as two centered lines (<cite>X<sub>n</sub></cite> over bold non-italic subtitle rubric, with <cite>position: absolute</cite> headerlink alignment).</p></li>
         </ul>
         </section>
-        <section class="level-2" id="id9">
-        <h2>0.1.4<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h2>
+        <section class="level-2" id="id10">
+        <h2>0.1.4<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h2>
         <ul class="simple">
         <li><p>Added semantic math normalization and <cite>:g:</cite> geometric element roles across parsed center descriptions, notes, and glossary entries.</p></li>
         </ul>
         </section>
-        <section class="level-2" id="id10">
-        <h2>0.1.3<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h2>
+        <section class="level-2" id="id11">
+        <h2>0.1.3<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h2>
         <ul class="simple">
         <li><p>Adopted the Book Codex layout (<cite>:layout: book</cite>) across <cite>docsrc/centers/</cite> and the scholarly apparatus (<cite>glossary.rst</cite>, <cite>persons.rst</cite>, <cite>bibliography.rst</cite>).</p></li>
         <li><p>Added a 2-track companion switcher (<cite>Overview</cite> | <cite>Code</cite>) generating per-center <cite>code.rst</cite> pages alongside <cite>index.rst</cite>.</p></li>
@@ -240,8 +201,8 @@
         <li><p>Organized secondary apparatus into collapsible <cite>.. collapse::</cite> sections (<cite>Alternate Coordinates</cite>, <cite>Linear Combinations</cite>, <cite>Incident Central Lines</cite>, and <cite>Functional Relations</cite>) with count badges.</p></li>
         </ul>
         </section>
-        <section class="level-2" id="id11">
-        <h2>0.1.2<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h2>
+        <section class="level-2" id="id12">
+        <h2>0.1.2<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h2>
         <ul class="simple">
         <li><p>Simplified initial center graphics into a focused primary construction layer showing only the specific defining geometric relationship (and the golden Euler line whenever $X<sub>n</sub>$ lies on the Euler line).</p></li>
         <li><p>Added a <cite>Lines</cite> toolbar toggle button to show/hide incident central lines <cite>{i, j}</cite> and their defining centers across all 4 reference triangle tabs.</p></li>
@@ -249,8 +210,8 @@
         <li><p>Expanded coordinate/incidence resolution and generated documentation and interactive graphics for <cite>X<sub>1</sub></cite> through <cite>X<sub>1000</sub></cite>.</p></li>
         </ul>
         </section>
-        <section class="level-2" id="id12">
-        <h2>0.1.1<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h2>
+        <section class="level-2" id="id13">
+        <h2>0.1.1<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h2>
         <ul class="simple">
         <li><p>Added interactive Explorer-styled SVG controls (zoom, pan, reset, label/guide toggles) and native topmost element hover highlighting with named points, lines, circles, and triangles.</p></li>
         <li><p>Scaled point radii and label typography $1.5times$ for legibility.</p></li>
@@ -258,21 +219,21 @@
         <li><p>Added projective limit fallback evaluation and coincident point handling for right triangles (<cite>3, 4, 5</cite> and <cite>Kepler</cite>).</p></li>
         </ul>
         </section>
-        <section class="level-2" id="id13">
-        <h2>0.1.0<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h2>
+        <section class="level-2" id="id14">
+        <h2>0.1.0<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h2>
         <ul class="simple">
         <li><p>Added semantic parser, glossary/person/citation registries, composable triangle construction operators (<cite>ops.py</cite>), and per-center folders with <cite>model.py</cite>, <cite>x-NNNNN.json</cite>, and <cite>x-NNNNN.svg</cite>.</p></li>
         </ul>
         </section>
-        <section class="level-2" id="id14">
-        <h2>0.0.2<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h2>
+        <section class="level-2" id="id15">
+        <h2>0.0.2<a class="headerlink" href="#id15" title="Link to this heading">¶</a></h2>
         <ul class="simple">
         <li><p>Refined docstrings and type hinting.</p></li>
         <li><p>Fixed <cite>from __future__ import annotations</cite> placement.</p></li>
         </ul>
         </section>
-        <section class="level-2" id="id15">
-        <h2>0.0.1<a class="headerlink" href="#id15" title="Link to this heading">¶</a></h2>
+        <section class="level-2" id="id16">
+        <h2>0.0.1<a class="headerlink" href="#id16" title="Link to this heading">¶</a></h2>
         <dl class="field-list simple">
         <dt class="field-odd">init<span class="colon">:</span></dt>
         <dd class="field-odd"><p>2025.330</p>
@@ -294,13 +255,13 @@
         <div class="book-footer-ornament">&#10086;</div>
         <div class="book-footer-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="glossary.html" title="Glossary">&larr; <span class="nav-label">Prev</span></a>
+            <a class="book-nav-btn" href="todos/expand_clark_kimberling.html" title="Expand Clark Kimberling">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
             <a class="book-toc-link" href="index.html">Encyclopedia of Triangle Centers</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="about/index.html" title="About"><span class="nav-label">Next</span> &rarr;</a>
+            <a class="book-nav-btn" href="connect.html" title="Connect"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </footer>
@@ -328,6 +289,7 @@
     <aside class="aside-recent-logs">
       <h3>Recent Logs</h3>
       <ul>
+        <li><a href="log/26.323-184000/index.html">Scaling ETC to All 73,310 Centers in Exact Symbolic Algebra & Unified Viewer</a></li>
         <li><a href="log/26.302-183300/index.html">ETC Semantic Parser, Apparatus Registries & Multi-Triangle Codex Builder</a></li>
       </ul>
     </aside>
@@ -336,6 +298,10 @@
       <ul>
         <li><a href="tags/apparatus.html">apparatus</a></li>
         <li><a href="tags/etc.html">etc</a></li>
+        <li><a href="tags/exact-algebra.html">exact-algebra</a></li>
+        <li><a href="tags/families.html">families</a></li>
+        <li><a href="tags/live-explorer.html">live-explorer</a></li>
+        <li><a href="tags/shards.html">shards</a></li>
         <li><a href="tags/svg.html">svg</a></li>
         <li><a href="tags/triangle-centers.html">triangle-centers</a></li>
       </ul>
@@ -343,6 +309,7 @@
     <aside class="aside-categories">
       <h3>Categories</h3>
       <ul>
+        <li><a href="categories/architecture.html">architecture</a></li>
         <li><a href="categories/constructions.html">constructions</a></li>
         <li><a href="categories/parser.html">parser</a></li>
       </ul>
@@ -380,12 +347,14 @@
 
   <script src="_static/jquery.js?v=5d32c60e"></script>
   <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="_static/documentation_options.js?v=71d9d8e6"></script>
+  <script src="_static/documentation_options.js?v=6c02275b"></script>
   <script src="_static/doctools.js?v=fd6eb6e6"></script>
   <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="_static/js/collection_controls.js?v=b6b5297a"></script>
   <script src="_static/js/collection_directory.js?v=2422530d"></script>
   <script src="_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="_static/js/etc-viewer.js?v=ff0c514d"></script>
+  <script src="_static/js/etc-live-viewer.js?v=90a9d2d3"></script>
   <script src="_static/js/search_highlight.js"></script>
 
 </body>

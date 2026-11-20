@@ -14,6 +14,14 @@ geometor.etc.ingest
 
 
 
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.etc.ingest.ETC_BASE_URL
+
+
 Functions
 ---------
 
@@ -24,6 +32,7 @@ Functions
    geometor.etc.ingest.parse_preambles_guide
    geometor.etc.ingest.enrich_preambles_with_guide
    geometor.etc.ingest.ingest_folder
+   geometor.etc.ingest.fetch_latest_etc_parts
 
 
 Module Contents
@@ -54,5 +63,16 @@ Module Contents
    Ingest all ETC volume HTML files in `input_folder` and write split files to `output_folder`.
 
    Returns a summary dictionary with counts of centers, preambles, and intro sections.
+
+
+.. py:data:: ETC_BASE_URL
+   :value: 'https://faculty.evansville.edu/ck6/encyclopedia/'
+
+
+.. py:function:: fetch_latest_etc_parts(output_folder: str | pathlib.Path = 'resources/source', *, start_part: int = 27, max_part: int = 65, delay_seconds: float = 0.4) -> list[pathlib.Path]
+
+   Download newly published ``ETCPartN.html`` volumes from Clark Kimberling's ETC site.
+
+   Stops cleanly on the first HTTP 404 or placeholder stub (< 25 KB).
 
 

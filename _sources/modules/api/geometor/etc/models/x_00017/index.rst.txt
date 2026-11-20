@@ -1,0 +1,41 @@
+geometor.etc.models.x_00017
+===========================
+
+.. py:module:: geometor.etc.models.x_00017
+
+.. autoapi-nested-parse::
+
+   Exact symbolic GEOMETOR construction model for ``X_17 = 1ST NAPOLEON POINT``.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.models.x_00017.construct_x_00017
+   geometor.etc.models.x_00017.build_model
+
+
+Module Contents
+---------------
+
+.. py:function:: construct_x_00017(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point) -> sympy.geometry.Point
+
+   Construct ``X_17 = 1ST NAPOLEON POINT`` and its classical incident central lines on ``ABC``.
+
+   Constructed elements include:
+
+   - Outer equilateral triangles and outer Napoleon triangle ``< Nap_a Nap_b Nap_c >``
+     with perspectivity lines ``[ A Nap_a ]``, ``[ B Nap_b ]``, ``[ C Nap_c ]``
+     concurring at ``X_17``.
+   - Incident central lines: ``{ 3, 13 }``, ``{ 4, 15 }``, ``{ 5, 14 }``, and
+     Napoleon line ``{ 6, 18 }``.
+
+
+.. py:function:: build_model(preset: str | tuple[sympy.Expr | int, sympy.Expr | int, sympy.Expr | int] = 'heronian', show_guides: bool = False) -> geometor.model.Model
+
+   Build an exact symbolic :class:`geometor.model.Model` for ``X_17 = 1ST NAPOLEON POINT``.
+
+

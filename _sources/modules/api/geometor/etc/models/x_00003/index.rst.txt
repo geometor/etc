@@ -1,0 +1,40 @@
+geometor.etc.models.x_00003
+===========================
+
+.. py:module:: geometor.etc.models.x_00003
+
+.. autoapi-nested-parse::
+
+   Exact symbolic GEOMETOR construction model for ``X_3 = CIRCUMCENTER`` (Euclid IV.5).
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.models.x_00003.construct_x_00003
+   geometor.etc.models.x_00003.build_model
+
+
+Module Contents
+---------------
+
+.. py:function:: construct_x_00003(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point) -> sympy.geometry.Point
+
+   Construct ``X_3 = CIRCUMCENTER`` and its classical incident central lines on ``ABC``.
+
+   Constructed elements include:
+
+   - Perpendicular bisectors ``[ X_3 M_a ]``, ``[ X_3 M_b ]``, ``[ X_3 M_c ]`` and
+     circumscribed ``circumcircle``.
+   - Incident central lines: Euler ``{ 2, 4 }`` (with ``X_2, X_4, X_5``),
+     Brocard axis ``{ 6, 32 }``, ``OI`` line ``{ 1, 40 }``, and ``{ 8, 100 }``.
+
+
+.. py:function:: build_model(preset: str | tuple[sympy.Expr | int, sympy.Expr | int, sympy.Expr | int] = 'heronian', show_guides: bool = False) -> geometor.model.Model
+
+   Build an exact symbolic :class:`geometor.model.Model` for ``X_3 = CIRCUMCENTER``.
+
+

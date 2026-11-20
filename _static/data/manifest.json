@@ -1,0 +1,6590 @@
+{
+  "schema": 1,
+  "generated_at": "2026-11-19T23:52:14.627592+00:00",
+  "total_centers": 73310,
+  "max_center": 73310,
+  "shard_size": 100,
+  "shard_count": 734,
+  "shards_total_mb": 322.57,
+  "core_centers_count": 644,
+  "triangles": {
+    "heronian": {
+      "key": "heronian",
+      "label": "Heronian (15, 13, 14)",
+      "field": "\\mathbb{Q}",
+      "sides": [
+        15.0,
+        13.0,
+        14.0
+      ],
+      "area": 84.0,
+      "area_latex": "84",
+      "verts": {
+        "A": [
+          0.0,
+          0.0
+        ],
+        "B": [
+          14.0,
+          0.0
+        ],
+        "C": [
+          5.0,
+          12.0
+        ]
+      },
+      "is_right": false,
+      "is_isosceles": false,
+      "is_equilateral": false
+    },
+    "right": {
+      "key": "right",
+      "label": "Right (5, 3, 4)",
+      "field": "\\mathbb{Q}",
+      "sides": [
+        5.0,
+        3.0,
+        4.0
+      ],
+      "area": 6.0,
+      "area_latex": "6",
+      "verts": {
+        "A": [
+          0.0,
+          0.0
+        ],
+        "B": [
+          4.0,
+          0.0
+        ],
+        "C": [
+          0.0,
+          3.0
+        ]
+      },
+      "is_right": true,
+      "is_isosceles": false,
+      "is_equilateral": false
+    },
+    "kepler": {
+      "key": "kepler",
+      "label": "Kepler (φ, 1, √φ)",
+      "field": "\\mathbb{Q}(\\sqrt{\\phi})",
+      "sides": [
+        1.61803399,
+        1.0,
+        1.27201965
+      ],
+      "area": 0.63600982,
+      "area_latex": "\\frac{\\sqrt{\\phi}}{2}",
+      "verts": {
+        "A": [
+          0.0,
+          0.0
+        ],
+        "B": [
+          1.27201965,
+          0.0
+        ],
+        "C": [
+          0.0,
+          1.0
+        ]
+      },
+      "is_right": true,
+      "is_isosceles": false,
+      "is_equilateral": false
+    },
+    "kimberling": {
+      "key": "kimberling",
+      "label": "Kimberling (6, 9, 13)",
+      "field": "\\mathbb{Q}(\\sqrt{35})",
+      "sides": [
+        6.0,
+        9.0,
+        13.0
+      ],
+      "area": 23.66431913,
+      "area_latex": "4\\sqrt{35}",
+      "verts": {
+        "A": [
+          0.0,
+          0.0
+        ],
+        "B": [
+          13.0,
+          0.0
+        ],
+        "C": [
+          8.23076923,
+          3.64066448
+        ]
+      },
+      "is_right": false,
+      "is_isosceles": false,
+      "is_equilateral": false
+    },
+    "golden": {
+      "key": "golden",
+      "label": "Golden (φ, φ, 1)",
+      "field": "\\mathbb{Q}(\\sqrt{5 + 2\\sqrt{5}})",
+      "sides": [
+        1.61803399,
+        1.61803399,
+        1.0
+      ],
+      "area": 0.76942088,
+      "area_latex": "\\frac{\\tau}{4}",
+      "verts": {
+        "A": [
+          0.0,
+          0.0
+        ],
+        "B": [
+          1.0,
+          0.0
+        ],
+        "C": [
+          0.5,
+          1.53884177
+        ]
+      },
+      "is_right": false,
+      "is_isosceles": true,
+      "is_equilateral": false
+    },
+    "gnomon": {
+      "key": "gnomon",
+      "label": "Gnomon (1, 1, φ)",
+      "field": "\\mathbb{Q}(\\sqrt{5 + 2\\sqrt{5}})",
+      "sides": [
+        1.0,
+        1.0,
+        1.61803399
+      ],
+      "area": 0.47552826,
+      "area_latex": "-\\frac{\\tau}{8} + \\frac{\\tau\\sqrt{5}}{8}",
+      "verts": {
+        "A": [
+          0.0,
+          0.0
+        ],
+        "B": [
+          1.61803399,
+          0.0
+        ],
+        "C": [
+          0.80901699,
+          0.58778525
+        ]
+      },
+      "is_right": false,
+      "is_isosceles": true,
+      "is_equilateral": false
+    },
+    "equilateral": {
+      "key": "equilateral",
+      "label": "Equilateral (2, 2, 2)",
+      "field": "\\mathbb{Q}(\\sqrt{3})",
+      "sides": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "area": 1.73205081,
+      "area_latex": "\\sqrt{3}",
+      "verts": {
+        "A": [
+          0.0,
+          0.0
+        ],
+        "B": [
+          2.0,
+          0.0
+        ],
+        "C": [
+          1.0,
+          1.73205081
+        ]
+      },
+      "is_right": false,
+      "is_isosceles": true,
+      "is_equilateral": true
+    }
+  },
+  "collections": [
+    {
+      "slug": "c-00001-00019",
+      "start": 1,
+      "end": 19,
+      "title": "Classical & Ancient Centers",
+      "summary": "The foundational centers of classical triangle geometry: the incenter, centroid, circumcenter, orthocenter, nine-point center, symmedian point, Gergonne, Nagel, Mittenpunkt, Spieker, Feuerbach, Fermat, isodynamic, Napoleon, and Clawson points.",
+      "count": 19
+    },
+    {
+      "slug": "c-00020-00030",
+      "start": 20,
+      "end": 30,
+      "title": "Euler Line Centers",
+      "summary": "Classical centers lying on the Euler line X_2 X_3, including the De Longchamps point, Schiffler point, Exeter point, far-out point, homothetic center of the orthic and tangential triangles, and the Euler infinity point.",
+      "count": 11
+    },
+    {
+      "slug": "c-00031-00058",
+      "start": 31,
+      "end": 58,
+      "title": "Power Points, Circle Similicenters & Named Centers",
+      "summary": "2nd and 3rd power points, the Bevan point, Brocard midpoint, Kosnita point, and internal and external centers of similitude of the circumcircle, incircle, and nine-point circle.",
+      "count": 28
+    },
+    {
+      "slug": "c-00059-00097",
+      "start": 59,
+      "end": 97,
+      "title": "Isogonal & Isotomic Conjugates of Classical Centers",
+      "summary": "Isogonal conjugates (X_59–X_74) and isotomic and cross conjugates (X_75–X_97) of the classical centers X_1–X_58.",
+      "count": 39
+    },
+    {
+      "slug": "c-00098-00112",
+      "start": 98,
+      "end": 112,
+      "title": "Centers on the Circumcircle",
+      "summary": "Notable points on the circumcircle of ABC, including the Tarry point, Steiner point, anticomplementary, Feuerbach, Kiepert, and Jerabek antipodes, and centers derived from circumcircle mappings.",
+      "count": 15
+    },
+    {
+      "slug": "c-00113-00139",
+      "start": 113,
+      "end": 139,
+      "title": "Centers on the Nine-Point Circle & Orthic Centers",
+      "summary": "Points on the nine-point circle (X_113–X_139), centers of the Kiepert, Feuerbach, and Jerabek rectangular hyperbolas, and centers transferred to the orthic triangle.",
+      "count": 27
+    },
+    {
+      "slug": "c-00140-00190",
+      "start": 140,
+      "end": 190,
+      "title": "Derived Triangle Centers, Isoscelizers & Ajima-Malfatti Points",
+      "summary": "Complements, anticomplements, and classical centers evaluated on the medial, orthic, tangential, and excentral triangles, together with congruent isoscelizer, equal detour, and Ajima-Malfatti points.",
+      "count": 51
+    },
+    {
+      "slug": "c-00191-00236",
+      "start": 191,
+      "end": 236,
+      "title": "Ceva Conjugates",
+      "summary": "Perspectors of the cevian triangle of P and the anticevian triangle of Q (P-Ceva conjugates of Q) for classical triangle centers.",
+      "count": 46
+    },
+    {
+      "slug": "c-00237-00248",
+      "start": 237,
+      "end": 248,
+      "title": "Line Conjugates",
+      "summary": "Intersections of line PQ with the trilinear polar of the isogonal conjugate of P (P-line conjugates of Q).",
+      "count": 12
+    },
+    {
+      "slug": "c-00249-00297",
+      "start": 249,
+      "end": 297,
+      "title": "Isogonal Conjugates II & Hirst Inverses",
+      "summary": "Isogonal conjugates of centers X_115–X_248, together with cross conjugates and X_2-Hirst inverses.",
+      "count": 49
+    },
+    {
+      "slug": "c-00298-00350",
+      "start": 298,
+      "end": 350,
+      "title": "Isotomic Conjugates II",
+      "summary": "Isotomic conjugates of previously cataloged triangle centers, together with X_2-Hirst inverses and radical centers.",
+      "count": 53
+    },
+    {
+      "slug": "c-00351-00400",
+      "start": 351,
+      "end": 400,
+      "title": "Parry Circle, Morley/Yff Centers & Pedal Centroids",
+      "summary": "The Parry circle center, Morley trisector centers, Yff equal-parallelians, trisected-perimeter, and equilateral-cevian points, Kenmotu point, and centroids of pedal and cevian triangles.",
+      "count": 50
+    },
+    {
+      "slug": "c-00401-00484",
+      "start": 401,
+      "end": 484,
+      "title": "Euler Line Substitutions & Hirst Inverses",
+      "summary": "Centers lying on the Euler line generated by X_k-substitutions and Hirst inversions, followed by the Tixier point, Ajima-Malfatti radical center, and Evans perspectors.",
+      "count": 84
+    },
+    {
+      "slug": "c-00485-00510",
+      "start": 485,
+      "end": 510,
+      "title": "Vecten Square Centers & Isoscelizer Centers",
+      "summary": "Inner and outer Vecten points and square-associated centers (Vierkanten in een driehoek, X_485–X_495), harmonic conjugates, and isoscelizer-associated centers (X_503–X_510).",
+      "count": 26
+    },
+    {
+      "slug": "c-00511-00565",
+      "start": 511,
+      "end": 565,
+      "title": "Centers on the Line at Infinity & Vector Directions",
+      "summary": "Points on the line at infinity x + y + z = 0 (X_511–X_526, isogonal conjugates of circumcircle points), unit vector direction centers, and classical midpoints.",
+      "count": 55
+    },
+    {
+      "slug": "c-00566-00642",
+      "start": 566,
+      "end": 642,
+      "title": "Brocard Axis Circles & Gibert Centers",
+      "summary": "Centers on the Brocard axis X_3 X_6 whose circles cut equal chords on the sidelines of ABC (X_566–X_584), congruent shrunk insquares points, and centers contributed by Bernard Gibert (X_616–X_642).",
+      "count": 77
+    },
+    {
+      "slug": "c-00643-00693",
+      "start": 643,
+      "end": 693,
+      "title": "Crossdifferences & Trilinear Poles",
+      "summary": "Trilinear multipliers for the Kiepert and Yff parabolas, crossdifferences of classical centers, and trilinear poles of central lines.",
+      "count": 51
+    },
+    {
+      "slug": "c-00694-00768",
+      "start": 694,
+      "end": 768,
+      "title": "Even (p, q) Circumcircle Points",
+      "summary": "Even trigonometric (p, q) points on the circumcircle and line at infinity, paired with their isogonal conjugates.",
+      "count": 75
+    },
+    {
+      "slug": "c-00769-00843",
+      "start": 769,
+      "end": 843,
+      "title": "Odd o-(p, q) Circumcircle Points",
+      "summary": "Odd trigonometric o-(p, q) points on the circumcircle and line at infinity, paired with their isogonal conjugates.",
+      "count": 75
+    },
+    {
+      "slug": "c-00844-00900",
+      "start": 844,
+      "end": 900,
+      "title": "Hatzipolakis-Yiu Centers, Hirst Inverses & Crossdifferences",
+      "summary": "Hatzipolakis-Yiu points, the Yiu angle point (X_848), Kiepert hyperbola multipliers, Hirst inverses, and Euler line intercepts.",
+      "count": 57
+    },
+    {
+      "slug": "c-00901-01000",
+      "start": 901,
+      "end": 1000,
+      "title": "Star-Named Centers, Ehrmann Points & Anticomplements",
+      "summary": "Star-named centers (Agena, Achernar, Algenib, Alcor), Ehrmann points, anticomplements, and midpoints of classical triangle centers.",
+      "count": 100
+    },
+    {
+      "slug": "c-01001-01069",
+      "start": 1001,
+      "end": 1069,
+      "title": "Classical Midpoints, Euler Intercepts & Cevapoints",
+      "summary": "Midpoints of classical centers, Euler line intercepts, collinearity intersections, cevapoints, and pure-angle trilinear centers.",
+      "count": 69
+    },
+    {
+      "slug": "c-01070-01114",
+      "start": 1070,
+      "end": 1114,
+      "title": "Cross Conjugates, Trilinear Squares & Euler-Circumcircle Intersections",
+      "summary": "Cross conjugates, trilinear squares and cubes of classical centers, and the intersections of the Euler line with the circumcircle (X_1113, X_1114).",
+      "count": 45
+    },
+    {
+      "slug": "c-01115-01165",
+      "start": 1115,
+      "end": 1165,
+      "title": "Morley-Taylor-Marr, Hofstadter, Ehrmann & Star Centers",
+      "summary": "Morley-Taylor-Marr centers, Hofstadter points, the Ehrmann congruent squares point (X_1144), Grebe triangle centers, and star-named points (Aldebaran, Algjebbah, Altair, Altais).",
+      "count": 51
+    },
+    {
+      "slug": "c-01166-01208",
+      "start": 1166,
+      "end": 1208,
+      "title": "Saragossa Points",
+      "summary": "1st, 2nd, and 3rd Saragossa points (Q, Q', Q'') constructed from the cevian and circumcevian triangles of classical centers.",
+      "count": 43
+    },
+    {
+      "slug": "c-01209-01285",
+      "start": 1209,
+      "end": 1285,
+      "title": "Saragossa Conjugates, Sharygin Points & Lemoine Homothetic Center",
+      "summary": "Isogonal and isotomic conjugates of the Saragossa points, Sharygin points, and the Lemoine homothetic center (X_1285).",
+      "count": 77
+    },
+    {
+      "slug": "c-01286-01311",
+      "start": 1286,
+      "end": 1311,
+      "title": "Collings Transforms",
+      "summary": "Concurrence points on the circumcircle of the circumcircles of AB'C', A'BC', and A'B'C, where A'B'C' is the reflection of ABC in P.",
+      "count": 26
+    },
+    {
+      "slug": "c-01312-01353",
+      "start": 1312,
+      "end": 1353,
+      "title": "Moses Intersections, Circumcircle Inverses, Wernau Points & Similicenters",
+      "summary": "Moses orthocentroidal-Euler intersections, circumcircle inverses, 1st and 2nd Wernau points (X_1337, X_1338), and similicenters of the circumcircle, nine-point circle, orthocentroidal circle, and Brocard circle.",
+      "count": 42
+    },
+    {
+      "slug": "c-01354-01392",
+      "start": 1354,
+      "end": 1392,
+      "title": "Brisse Transforms, Rigby/Griffiths Points & Complementary Conjugates",
+      "summary": "Polynomial centers on the incircle generated by the Brisse transform (X_1354–X_1367), Rigby and Griffiths points, and complementary and anticomplementary conjugates.",
+      "count": 39
+    },
+    {
+      "slug": "c-01393-01477",
+      "start": 1393,
+      "end": 1477,
+      "title": "Beth Conjugates & Harmonic Conjugates",
+      "summary": "Fixed-point P-beth conjugates of P and harmonic conjugates along central lines.",
+      "count": 85
+    },
+    {
+      "slug": "c-01478-01511",
+      "start": 1478,
+      "end": 1511,
+      "title": "Johnson-Yff Circle, Perspectors & Star-Named Centers",
+      "summary": "The Johnson-Yff circle center, tangential-of-tangential perspectors, star-named centers (Bellatrix, Betelgeuse, Biham), and Napoleon and Fermat crosssums.",
+      "count": 34
+    },
+    {
+      "slug": "c-01512-01600",
+      "start": 1512,
+      "end": 1600,
+      "title": "Orthojoins, Moses Circle Centers & Star-Named Centers",
+      "summary": "Orthojoins H(X) — orthopoles of the trilinear polars of isogonal conjugates (X_1512–X_1568) — together with Moses circle similicenters and star-named centers (Capella, Caph, Cebalrai, Celaeno, Chertan, Chort).",
+      "count": 89
+    },
+    {
+      "slug": "c-01601-01661",
+      "start": 1601,
+      "end": 1661,
+      "title": "TCC-Perspectors & Tripolar Centroids",
+      "summary": "Perspectors of the tangential triangle and the circumcevian triangle of P (X_1601–X_1634), tripolar centroids (X_1635–X_1651), and Evans and Grinberg perspectors.",
+      "count": 61
+    },
+    {
+      "slug": "c-01662-01706",
+      "start": 1662,
+      "end": 1706,
+      "title": "Circle-Related Points",
+      "summary": "Internal and external centers of similitude among the circumcircle, incircle, nine-point circle, Brocard circle, 1st and 2nd Lemoine circles, Apollonius circle, and Bevan circle.",
+      "count": 45
+    },
+    {
+      "slug": "c-01707-01788",
+      "start": 1707,
+      "end": 1788,
+      "title": "Mimosa Transforms",
+      "summary": "Centers generated by the Mimosa transform M(X) of classical triangle centers.",
+      "count": 82
+    },
+    {
+      "slug": "c-01789-01823",
+      "start": 1789,
+      "end": 1823,
+      "title": "Inverse Mimosa Transforms & Aleph Conjugates",
+      "summary": "Inverse Mimosa transforms of classical triangle centers and aleph conjugates.",
+      "count": 35
+    },
+    {
+      "slug": "c-01824-01907",
+      "start": 1824,
+      "end": 1907,
+      "title": "Zosma Transforms",
+      "summary": "Isogonal conjugates of the inverse Mimosa transforms (Z(X)) of classical triangle centers.",
+      "count": 84
+    },
+    {
+      "slug": "c-01908-02000",
+      "start": 1908,
+      "end": 2000,
+      "title": "Bicentric Pairs PU(k) & Orthocorrespondents",
+      "summary": "Midpoints, crosssums, crossdifferences, trilinear poles, and trilinear products of bicentric pairs PU(k) (X_1908–X_1982), Vega transforms, and orthocorrespondents (X_1992–X_2000).",
+      "count": 93
+    },
+    {
+      "slug": "c-02001-02054",
+      "start": 2001,
+      "end": 2054,
+      "title": "Orthocorrespondents, Gallatly Circle & Euler-Vecten-Gibert Points",
+      "summary": "Orthocorrespondents of classical centers (X_2001–X_2006), similicenters and intersections of the Gallatly circle (X_2007–X_2040), and the six Euler-Vecten-Gibert points and harmonic conjugates (X_2041–X_2054).",
+      "count": 54
+    },
+    {
+      "slug": "c-02055-02119",
+      "start": 2055,
+      "end": 2119,
+      "title": "Orion Transforms, Circumcircle Inverses, PK/NK Transforms, Reflections & Kepler Points",
+      "summary": "Orion transforms OT(X) (X_2055–X_2065), Caroli and Cursa points, circumcircle inverses (X_2070–X_2080), PK and NK transforms (X_2081–X_2092), classical reflections (X_2093–X_2105), and Kepler points and their isotomic conjugates (X_2106–X_2119).",
+      "count": 65
+    },
+    {
+      "slug": "c-02120-02147",
+      "start": 2120,
+      "end": 2147,
+      "title": "Eigencenters & Eigentransforms",
+      "summary": "Eigentransforms ET(X) — eigencenters of the cevian triangles of classical centers — paired with their isogonal conjugates on the self-isogonal cubic Z(X) (X_2120–X_2143), followed by X_2-eigentransforms (X_2144–X_2147).",
+      "count": 28
+    },
+    {
+      "slug": "c-02148-02254",
+      "start": 2148,
+      "end": 2254,
+      "title": "Isotomic Conjugates (X_2-Isoconjugates) I",
+      "summary": "Isotomic conjugates (X_2-isoconjugates) of triangle centers X_5 through X_892.",
+      "count": 107
+    },
+    {
+      "slug": "c-02255-02364",
+      "start": 2255,
+      "end": 2364,
+      "title": "Isotomic Conjugates (X_2-Isoconjugates) II",
+      "summary": "Isotomic conjugates (X_2-isoconjugates) of triangle centers X_901 through X_2099.",
+      "count": 110
+    },
+    {
+      "slug": "c-02365-02445",
+      "start": 2365,
+      "end": 2445,
+      "title": "Circumcircle CIR(X) Points & Gibert-Simson Transforms",
+      "summary": "Circumcevian-eigentransform points CIR(X) on the circumcircle and their isogonal conjugates (X_2365–X_2393), followed by Gibert-Simson transforms GS(X) on the Simson cubic K010 (X_2394–X_2419) and their isogonal conjugates on K162 (X_2420–X_2445).",
+      "count": 81
+    },
+    {
+      "slug": "c-02446-02520",
+      "start": 2446,
+      "end": 2520,
+      "title": "Circle & Conic Intersections, Lemoine Inverses & Radical Centers I",
+      "summary": "Intersections of central lines with the incircle, Bevan circle, Steiner inellipse, and Steiner circumellipse, inverses in the 1st and 2nd Lemoine circles, and circle radical centers (X_2446–X_2520).",
+      "count": 75
+    },
+    {
+      "slug": "c-02521-02593",
+      "start": 2521,
+      "end": 2593,
+      "title": "Circle Similicenters, Radical Centers & Isoconjugates II",
+      "summary": "Similicenters and intersections involving the orthocentroidal, 2nd Brocard, Parry, and Gallatly circles (X_2521–X_2573), followed by isogonal and X_k-isoconjugates (X_2574–X_2593).",
+      "count": 73
+    },
+    {
+      "slug": "c-02594-02676",
+      "start": 2594,
+      "end": 2676,
+      "title": "Bicentric Pairs PU(68)–PU(85) & Golden Arbelos Points",
+      "summary": "Sums, differences, crosssums, crossdifferences, trilinear poles, and midpoints of bicentric pairs PU(68) through PU(85) (X_2594–X_2670), together with the 1st and 2nd Golden Arbelos points (X_2671–X_2676).",
+      "count": 83
+    },
+    {
+      "slug": "c-02677-02770",
+      "start": 2677,
+      "end": 2770,
+      "title": "Rigby-Simson RS(P, U) & Simson-Rigby SR(P, U) Points",
+      "summary": "Rigby-Simson orthopoles RS(P, U) where the Simson lines of circumcircle points P and U meet (X_2677–X_2686), and Simson-Rigby circumcircle points SR(P, U) whose Simson lines pass through RS(P, U) perpendicular to PU (X_2687–X_2770).",
+      "count": 94
+    },
+    {
+      "slug": "c-02771-02854",
+      "start": 2771,
+      "end": 2854,
+      "title": "Isogonal Conjugates of Simson-Rigby SR(P, U) Points",
+      "summary": "Points on the line at infinity formed as the isogonal conjugates of the Simson-Rigby circumcircle points X_2687–X_2770.",
+      "count": 84
+    },
+    {
+      "slug": "c-02855-02882",
+      "start": 2855,
+      "end": 2882,
+      "title": "Simson-Moses SM(P, U) Points & Conjugates",
+      "summary": "Simson-Moses circumcircle points SM(P, U) generated by isotomic conjugation of circumcircle pairs (X_2855–X_2868) and their isogonal conjugates on the line at infinity (X_2869–X_2882).",
+      "count": 28
+    },
+    {
+      "slug": "c-02883-02966",
+      "start": 2883,
+      "end": 2966,
+      "title": "Isogonal Conjugates with Respect to Special Triangles",
+      "summary": "Complementary (medial-isogonal), anticomplementary-isogonal, tangential-isogonal, and excentral-isogonal conjugates of classical triangle centers, together with trilinear and barycentric products.",
+      "count": 84
+    },
+    {
+      "slug": "c-02967-03000",
+      "start": 2967,
+      "end": 3000,
+      "title": "MacBeath Points, Dual Centers DC(X) / CD(X) & Central Line Intersections",
+      "summary": "The eight MacBeath points (X_2967–X_2974), circle radical centers (X_2975–X_2978), dual triangle mappings DC(X) and CD(X) (X_2979–X_2998), the Danneels-Bevan homothetic center (X_2999), and the Soddy-antiorthic intersection (X_3000).",
+      "count": 34
+    },
+    {
+      "slug": "c-03001-03118",
+      "start": 3001,
+      "end": 3118,
+      "title": "Central Line Intersections, Stevanović Points & T/G Mappings",
+      "summary": "Pairwise intersections of the Brocard, de Longchamps, Gergonne, Lemoine, Nagel, orthic, Soddy, and Fermat axes (X_3001–X_3019), the 4th–10th Stevanović points (X_3020–X_3026), antipodal circle mappings and complements (X_3027–X_3111), and Quang Tuan Bui's TgX and GtX mappings (X_3112–X_3118).",
+      "count": 118
+    },
+    {
+      "slug": "c-03119-03217",
+      "start": 3119,
+      "end": 3217,
+      "title": "Danneels Perspectors & X_i-Ceva Conjugates",
+      "summary": "Eric Danneels' parallel-cevian perspectors (X_3119–X_3126) and a systematic catalog of X_i-Ceva conjugates of classical and central points (X_3127–X_3217).",
+      "count": 99
+    },
+    {
+      "slug": "c-03218-03309",
+      "start": 3218,
+      "end": 3309,
+      "title": "Side-Swapping SS(a → bc) Points, Parabola Vertices & Morley Equilateral Triangles",
+      "summary": "Side-swapping transformations SS(a → bc), vertices of the inscribed Kiepert and Yff parabolas (X_3233–X_3234), reflections in X_1 (X_3241–X_3245), and centers and perspectors of the six equilateral triangles related to the 1st, 2nd, and 3rd Morley triangles (X_3272–X_3283).",
+      "count": 92
+    },
+    {
+      "slug": "c-03310-03414",
+      "start": 3310,
+      "end": 3414,
+      "title": "Incircle Transforms T(U), Trigonometric Offset Points & Kiepert Cusps",
+      "summary": "Barycentric products of perpendicular directions (X_3310), incircle transforms T(U) lying on the incircle (X_3318–X_3328), Darboux-cubic reflections and conjugates (X_3341–X_3358), trigonometric phase-shifted centers cos/sin/sec/csc/tan/cot(A ± θ) (X_3364–X_3409), and the Brocard-Kiepert-Fermat cusps (X_3411–X_3414).",
+      "count": 105
+    },
+    {
+      "slug": "c-03415-03514",
+      "start": 3415,
+      "end": 3514,
+      "title": "Vertex Conjugates, Saragossa Points & Neuberg Cubic Intersections",
+      "summary": "U-vertex conjugates of X formed from circumcevian vertex triangles (X_3415–X_3458), 1st Saragossa points (X_3449–X_3454), X_5- and X_30-Ceva conjugates on the Neuberg cubic (X_3460–X_3488), and the 1st dilation center and its circumcircle inverse (X_3513–X_3514).",
+      "count": 100
+    },
+    {
+      "slug": "c-03515-03601",
+      "start": 3515,
+      "end": 3601,
+      "title": "Euler Line Intercepts & Named Geometric Centers",
+      "summary": "Euler line intercepts of central lines (X_3515–X_3552), together with the Dosa, Pappus, Moses circumcircle/infinity, Don Quixote, Beltrami-Euler, Beltrami-Parry, Myakishev conic, Dixit, Odehnal, and Liu points (X_3555–X_3601).",
+      "count": 87
+    },
+    {
+      "slug": "c-03602-03662",
+      "start": 3602,
+      "end": 3662,
+      "title": "Morley Cubics, Medial Homothetic Centers H(X; M, t) & Kirikami-Schiffler Points",
+      "summary": "Centers associated with the three Morley cubics K029–K031 (X_3602–X_3615), medial-triangle t-dilation homothetic centers H(X; M, t) and their isogonal conjugates H⁻¹(X; M, t) (X_3616–X_3637), Soddy-Gergonne, Kirikami, Alkaid, and Almach points (X_3638–X_3646), and Kirikami-Schiffler points KS(T) (X_3647–X_3662).",
+      "count": 61
+    },
+    {
+      "slug": "c-03663-03757",
+      "start": 3663,
+      "end": 3757,
+      "title": "Central Triangle Combos Xcom(T) I: Intouch, Extouch, Incentral & Hexyl Triangles",
+      "summary": "Combo centers X_k-com(T) evaluated on the intouch (X_3663–X_3677), extouch (X_3678–X_3719), incentral (X_3720–X_3728), excentral, tangential, 1st Brocard, and hexyl triangles (X_3729–X_3738), plus matrix-product combos n(incentral)*n(medial) and inverse-triangle combos (X_3739–X_3757).",
+      "count": 95
+    },
+    {
+      "slug": "c-03758-03861",
+      "start": 3758,
+      "end": 3861,
+      "title": "Central Triangle Combos Xcom(T) II: Parameterized T(f, g) & Euler Triangles",
+      "summary": "Combo centers X_k-com[T(f, g)] and X_k-com[Inverse(nT(f, g))] for parameterized central triangles (X_3758–X_3810), followed by combo centers on the 1st through 5th Euler triangles (X_3811–X_3861).",
+      "count": 104
+    },
+    {
+      "slug": "c-03862-04000",
+      "start": 3862,
+      "end": 4000,
+      "title": "Inverse Central Triangle Combos Xcom[Inverse(n(T))]",
+      "summary": "Perspectors of ABC and parameterized central triangles T(f, g) (X_3862–X_3867), inverse 3rd/4th/5th Euler triangle combos (X_3868–X_3910), and combos and inverse-triangle combos across the intouch, extouch, orthic, tangential, hexyl, Brocard, incentral, excentral, intangents, and extangents triangles (X_3911–X_4000).",
+      "count": 139
+    },
+    {
+      "slug": "c-04001-04100",
+      "start": 4001,
+      "end": 4100,
+      "title": "Centers X_4001–X_4100",
+      "summary": "Triangle centers X_4001 through X_4100.",
+      "count": 100
+    },
+    {
+      "slug": "c-04101-04200",
+      "start": 4101,
+      "end": 4200,
+      "title": "Centers X_4101–X_4200",
+      "summary": "Triangle centers X_4101 through X_4200.",
+      "count": 100
+    },
+    {
+      "slug": "c-04201-04300",
+      "start": 4201,
+      "end": 4300,
+      "title": "Centers X_4201–X_4300",
+      "summary": "Triangle centers X_4201 through X_4300.",
+      "count": 100
+    },
+    {
+      "slug": "c-04301-04400",
+      "start": 4301,
+      "end": 4400,
+      "title": "Centers X_4301–X_4400",
+      "summary": "Triangle centers X_4301 through X_4400.",
+      "count": 100
+    },
+    {
+      "slug": "c-04401-04500",
+      "start": 4401,
+      "end": 4500,
+      "title": "Centers X_4401–X_4500",
+      "summary": "Triangle centers X_4401 through X_4500.",
+      "count": 100
+    },
+    {
+      "slug": "c-04501-04600",
+      "start": 4501,
+      "end": 4600,
+      "title": "Centers X_4501–X_4600",
+      "summary": "Triangle centers X_4501 through X_4600.",
+      "count": 100
+    },
+    {
+      "slug": "c-04601-04700",
+      "start": 4601,
+      "end": 4700,
+      "title": "Centers X_4601–X_4700",
+      "summary": "Triangle centers X_4601 through X_4700.",
+      "count": 100
+    },
+    {
+      "slug": "c-04701-04800",
+      "start": 4701,
+      "end": 4800,
+      "title": "Centers X_4701–X_4800",
+      "summary": "Triangle centers X_4701 through X_4800.",
+      "count": 100
+    },
+    {
+      "slug": "c-04801-04900",
+      "start": 4801,
+      "end": 4900,
+      "title": "Centers X_4801–X_4900",
+      "summary": "Triangle centers X_4801 through X_4900.",
+      "count": 100
+    },
+    {
+      "slug": "c-04901-05000",
+      "start": 4901,
+      "end": 5000,
+      "title": "Centers X_4901–X_5000",
+      "summary": "Triangle centers X_4901 through X_5000.",
+      "count": 100
+    },
+    {
+      "slug": "c-05001-05100",
+      "start": 5001,
+      "end": 5100,
+      "title": "Centers X_5001–X_5100",
+      "summary": "Triangle centers X_5001 through X_5100.",
+      "count": 100
+    },
+    {
+      "slug": "c-05101-05200",
+      "start": 5101,
+      "end": 5200,
+      "title": "Centers X_5101–X_5200",
+      "summary": "Triangle centers X_5101 through X_5200.",
+      "count": 100
+    },
+    {
+      "slug": "c-05201-05300",
+      "start": 5201,
+      "end": 5300,
+      "title": "Centers X_5201–X_5300",
+      "summary": "Triangle centers X_5201 through X_5300.",
+      "count": 100
+    },
+    {
+      "slug": "c-05301-05400",
+      "start": 5301,
+      "end": 5400,
+      "title": "Centers X_5301–X_5400",
+      "summary": "Triangle centers X_5301 through X_5400.",
+      "count": 100
+    },
+    {
+      "slug": "c-05401-05500",
+      "start": 5401,
+      "end": 5500,
+      "title": "Centers X_5401–X_5500",
+      "summary": "Triangle centers X_5401 through X_5500.",
+      "count": 100
+    },
+    {
+      "slug": "c-05501-05600",
+      "start": 5501,
+      "end": 5600,
+      "title": "Centers X_5501–X_5600",
+      "summary": "Triangle centers X_5501 through X_5600.",
+      "count": 100
+    },
+    {
+      "slug": "c-05601-05700",
+      "start": 5601,
+      "end": 5700,
+      "title": "Centers X_5601–X_5700",
+      "summary": "Triangle centers X_5601 through X_5700.",
+      "count": 100
+    },
+    {
+      "slug": "c-05701-05800",
+      "start": 5701,
+      "end": 5800,
+      "title": "Centers X_5701–X_5800",
+      "summary": "Triangle centers X_5701 through X_5800.",
+      "count": 100
+    },
+    {
+      "slug": "c-05801-05900",
+      "start": 5801,
+      "end": 5900,
+      "title": "Centers X_5801–X_5900",
+      "summary": "Triangle centers X_5801 through X_5900.",
+      "count": 100
+    },
+    {
+      "slug": "c-05901-06000",
+      "start": 5901,
+      "end": 6000,
+      "title": "Centers X_5901–X_6000",
+      "summary": "Triangle centers X_5901 through X_6000.",
+      "count": 100
+    },
+    {
+      "slug": "c-06001-06100",
+      "start": 6001,
+      "end": 6100,
+      "title": "Centers X_6001–X_6100",
+      "summary": "Triangle centers X_6001 through X_6100.",
+      "count": 100
+    },
+    {
+      "slug": "c-06101-06200",
+      "start": 6101,
+      "end": 6200,
+      "title": "Centers X_6101–X_6200",
+      "summary": "Triangle centers X_6101 through X_6200.",
+      "count": 100
+    },
+    {
+      "slug": "c-06201-06300",
+      "start": 6201,
+      "end": 6300,
+      "title": "Centers X_6201–X_6300",
+      "summary": "Triangle centers X_6201 through X_6300.",
+      "count": 100
+    },
+    {
+      "slug": "c-06301-06400",
+      "start": 6301,
+      "end": 6400,
+      "title": "Centers X_6301–X_6400",
+      "summary": "Triangle centers X_6301 through X_6400.",
+      "count": 100
+    },
+    {
+      "slug": "c-06401-06500",
+      "start": 6401,
+      "end": 6500,
+      "title": "Centers X_6401–X_6500",
+      "summary": "Triangle centers X_6401 through X_6500.",
+      "count": 100
+    },
+    {
+      "slug": "c-06501-06600",
+      "start": 6501,
+      "end": 6600,
+      "title": "Centers X_6501–X_6600",
+      "summary": "Triangle centers X_6501 through X_6600.",
+      "count": 100
+    },
+    {
+      "slug": "c-06601-06700",
+      "start": 6601,
+      "end": 6700,
+      "title": "Centers X_6601–X_6700",
+      "summary": "Triangle centers X_6601 through X_6700.",
+      "count": 100
+    },
+    {
+      "slug": "c-06701-06800",
+      "start": 6701,
+      "end": 6800,
+      "title": "Centers X_6701–X_6800",
+      "summary": "Triangle centers X_6701 through X_6800.",
+      "count": 100
+    },
+    {
+      "slug": "c-06801-06900",
+      "start": 6801,
+      "end": 6900,
+      "title": "Centers X_6801–X_6900",
+      "summary": "Triangle centers X_6801 through X_6900.",
+      "count": 100
+    },
+    {
+      "slug": "c-06901-07000",
+      "start": 6901,
+      "end": 7000,
+      "title": "Centers X_6901–X_7000",
+      "summary": "Triangle centers X_6901 through X_7000.",
+      "count": 100
+    },
+    {
+      "slug": "c-07001-07100",
+      "start": 7001,
+      "end": 7100,
+      "title": "Centers X_7001–X_7100",
+      "summary": "Triangle centers X_7001 through X_7100.",
+      "count": 100
+    },
+    {
+      "slug": "c-07101-07200",
+      "start": 7101,
+      "end": 7200,
+      "title": "Centers X_7101–X_7200",
+      "summary": "Triangle centers X_7101 through X_7200.",
+      "count": 100
+    },
+    {
+      "slug": "c-07201-07300",
+      "start": 7201,
+      "end": 7300,
+      "title": "Centers X_7201–X_7300",
+      "summary": "Triangle centers X_7201 through X_7300.",
+      "count": 100
+    },
+    {
+      "slug": "c-07301-07400",
+      "start": 7301,
+      "end": 7400,
+      "title": "Centers X_7301–X_7400",
+      "summary": "Triangle centers X_7301 through X_7400.",
+      "count": 100
+    },
+    {
+      "slug": "c-07401-07500",
+      "start": 7401,
+      "end": 7500,
+      "title": "Centers X_7401–X_7500",
+      "summary": "Triangle centers X_7401 through X_7500.",
+      "count": 100
+    },
+    {
+      "slug": "c-07501-07600",
+      "start": 7501,
+      "end": 7600,
+      "title": "Centers X_7501–X_7600",
+      "summary": "Triangle centers X_7501 through X_7600.",
+      "count": 100
+    },
+    {
+      "slug": "c-07601-07700",
+      "start": 7601,
+      "end": 7700,
+      "title": "Centers X_7601–X_7700",
+      "summary": "Triangle centers X_7601 through X_7700.",
+      "count": 100
+    },
+    {
+      "slug": "c-07701-07800",
+      "start": 7701,
+      "end": 7800,
+      "title": "Centers X_7701–X_7800",
+      "summary": "Triangle centers X_7701 through X_7800.",
+      "count": 100
+    },
+    {
+      "slug": "c-07801-07900",
+      "start": 7801,
+      "end": 7900,
+      "title": "Centers X_7801–X_7900",
+      "summary": "Triangle centers X_7801 through X_7900.",
+      "count": 100
+    },
+    {
+      "slug": "c-07901-08000",
+      "start": 7901,
+      "end": 8000,
+      "title": "Centers X_7901–X_8000",
+      "summary": "Triangle centers X_7901 through X_8000.",
+      "count": 100
+    },
+    {
+      "slug": "c-08001-08100",
+      "start": 8001,
+      "end": 8100,
+      "title": "Centers X_8001–X_8100",
+      "summary": "Triangle centers X_8001 through X_8100.",
+      "count": 100
+    },
+    {
+      "slug": "c-08101-08200",
+      "start": 8101,
+      "end": 8200,
+      "title": "Centers X_8101–X_8200",
+      "summary": "Triangle centers X_8101 through X_8200.",
+      "count": 100
+    },
+    {
+      "slug": "c-08201-08300",
+      "start": 8201,
+      "end": 8300,
+      "title": "Centers X_8201–X_8300",
+      "summary": "Triangle centers X_8201 through X_8300.",
+      "count": 100
+    },
+    {
+      "slug": "c-08301-08400",
+      "start": 8301,
+      "end": 8400,
+      "title": "Centers X_8301–X_8400",
+      "summary": "Triangle centers X_8301 through X_8400.",
+      "count": 100
+    },
+    {
+      "slug": "c-08401-08500",
+      "start": 8401,
+      "end": 8500,
+      "title": "Centers X_8401–X_8500",
+      "summary": "Triangle centers X_8401 through X_8500.",
+      "count": 100
+    },
+    {
+      "slug": "c-08501-08600",
+      "start": 8501,
+      "end": 8600,
+      "title": "Centers X_8501–X_8600",
+      "summary": "Triangle centers X_8501 through X_8600.",
+      "count": 100
+    },
+    {
+      "slug": "c-08601-08700",
+      "start": 8601,
+      "end": 8700,
+      "title": "Centers X_8601–X_8700",
+      "summary": "Triangle centers X_8601 through X_8700.",
+      "count": 100
+    },
+    {
+      "slug": "c-08701-08800",
+      "start": 8701,
+      "end": 8800,
+      "title": "Centers X_8701–X_8800",
+      "summary": "Triangle centers X_8701 through X_8800.",
+      "count": 100
+    },
+    {
+      "slug": "c-08801-08900",
+      "start": 8801,
+      "end": 8900,
+      "title": "Centers X_8801–X_8900",
+      "summary": "Triangle centers X_8801 through X_8900.",
+      "count": 100
+    },
+    {
+      "slug": "c-08901-09000",
+      "start": 8901,
+      "end": 9000,
+      "title": "Centers X_8901–X_9000",
+      "summary": "Triangle centers X_8901 through X_9000.",
+      "count": 100
+    },
+    {
+      "slug": "c-09001-09100",
+      "start": 9001,
+      "end": 9100,
+      "title": "Centers X_9001–X_9100",
+      "summary": "Triangle centers X_9001 through X_9100.",
+      "count": 100
+    },
+    {
+      "slug": "c-09101-09200",
+      "start": 9101,
+      "end": 9200,
+      "title": "Centers X_9101–X_9200",
+      "summary": "Triangle centers X_9101 through X_9200.",
+      "count": 100
+    },
+    {
+      "slug": "c-09201-09300",
+      "start": 9201,
+      "end": 9300,
+      "title": "Centers X_9201–X_9300",
+      "summary": "Triangle centers X_9201 through X_9300.",
+      "count": 100
+    },
+    {
+      "slug": "c-09301-09400",
+      "start": 9301,
+      "end": 9400,
+      "title": "Centers X_9301–X_9400",
+      "summary": "Triangle centers X_9301 through X_9400.",
+      "count": 100
+    },
+    {
+      "slug": "c-09401-09500",
+      "start": 9401,
+      "end": 9500,
+      "title": "Centers X_9401–X_9500",
+      "summary": "Triangle centers X_9401 through X_9500.",
+      "count": 100
+    },
+    {
+      "slug": "c-09501-09600",
+      "start": 9501,
+      "end": 9600,
+      "title": "Centers X_9501–X_9600",
+      "summary": "Triangle centers X_9501 through X_9600.",
+      "count": 100
+    },
+    {
+      "slug": "c-09601-09700",
+      "start": 9601,
+      "end": 9700,
+      "title": "Centers X_9601–X_9700",
+      "summary": "Triangle centers X_9601 through X_9700.",
+      "count": 100
+    },
+    {
+      "slug": "c-09701-09800",
+      "start": 9701,
+      "end": 9800,
+      "title": "Centers X_9701–X_9800",
+      "summary": "Triangle centers X_9701 through X_9800.",
+      "count": 100
+    },
+    {
+      "slug": "c-09801-09900",
+      "start": 9801,
+      "end": 9900,
+      "title": "Centers X_9801–X_9900",
+      "summary": "Triangle centers X_9801 through X_9900.",
+      "count": 100
+    },
+    {
+      "slug": "c-09901-10000",
+      "start": 9901,
+      "end": 10000,
+      "title": "Centers X_9901–X_10000",
+      "summary": "Triangle centers X_9901 through X_10000.",
+      "count": 100
+    },
+    {
+      "slug": "c-10001-10100",
+      "start": 10001,
+      "end": 10100,
+      "title": "Centers X_10001–X_10100",
+      "summary": "Triangle centers X_10001 through X_10100.",
+      "count": 100
+    },
+    {
+      "slug": "c-10101-10200",
+      "start": 10101,
+      "end": 10200,
+      "title": "Centers X_10101–X_10200",
+      "summary": "Triangle centers X_10101 through X_10200.",
+      "count": 100
+    },
+    {
+      "slug": "c-10201-10300",
+      "start": 10201,
+      "end": 10300,
+      "title": "Centers X_10201–X_10300",
+      "summary": "Triangle centers X_10201 through X_10300.",
+      "count": 100
+    },
+    {
+      "slug": "c-10301-10400",
+      "start": 10301,
+      "end": 10400,
+      "title": "Centers X_10301–X_10400",
+      "summary": "Triangle centers X_10301 through X_10400.",
+      "count": 100
+    },
+    {
+      "slug": "c-10401-10500",
+      "start": 10401,
+      "end": 10500,
+      "title": "Centers X_10401–X_10500",
+      "summary": "Triangle centers X_10401 through X_10500.",
+      "count": 100
+    },
+    {
+      "slug": "c-10501-10600",
+      "start": 10501,
+      "end": 10600,
+      "title": "Centers X_10501–X_10600",
+      "summary": "Triangle centers X_10501 through X_10600.",
+      "count": 100
+    },
+    {
+      "slug": "c-10601-10700",
+      "start": 10601,
+      "end": 10700,
+      "title": "Centers X_10601–X_10700",
+      "summary": "Triangle centers X_10601 through X_10700.",
+      "count": 100
+    },
+    {
+      "slug": "c-10701-10800",
+      "start": 10701,
+      "end": 10800,
+      "title": "Centers X_10701–X_10800",
+      "summary": "Triangle centers X_10701 through X_10800.",
+      "count": 100
+    },
+    {
+      "slug": "c-10801-10900",
+      "start": 10801,
+      "end": 10900,
+      "title": "Centers X_10801–X_10900",
+      "summary": "Triangle centers X_10801 through X_10900.",
+      "count": 100
+    },
+    {
+      "slug": "c-10901-11000",
+      "start": 10901,
+      "end": 11000,
+      "title": "Centers X_10901–X_11000",
+      "summary": "Triangle centers X_10901 through X_11000.",
+      "count": 100
+    },
+    {
+      "slug": "c-11001-11100",
+      "start": 11001,
+      "end": 11100,
+      "title": "Centers X_11001–X_11100",
+      "summary": "Triangle centers X_11001 through X_11100.",
+      "count": 100
+    },
+    {
+      "slug": "c-11101-11200",
+      "start": 11101,
+      "end": 11200,
+      "title": "Centers X_11101–X_11200",
+      "summary": "Triangle centers X_11101 through X_11200.",
+      "count": 100
+    },
+    {
+      "slug": "c-11201-11300",
+      "start": 11201,
+      "end": 11300,
+      "title": "Centers X_11201–X_11300",
+      "summary": "Triangle centers X_11201 through X_11300.",
+      "count": 100
+    },
+    {
+      "slug": "c-11301-11400",
+      "start": 11301,
+      "end": 11400,
+      "title": "Centers X_11301–X_11400",
+      "summary": "Triangle centers X_11301 through X_11400.",
+      "count": 100
+    },
+    {
+      "slug": "c-11401-11500",
+      "start": 11401,
+      "end": 11500,
+      "title": "Centers X_11401–X_11500",
+      "summary": "Triangle centers X_11401 through X_11500.",
+      "count": 100
+    },
+    {
+      "slug": "c-11501-11600",
+      "start": 11501,
+      "end": 11600,
+      "title": "Centers X_11501–X_11600",
+      "summary": "Triangle centers X_11501 through X_11600.",
+      "count": 100
+    },
+    {
+      "slug": "c-11601-11700",
+      "start": 11601,
+      "end": 11700,
+      "title": "Centers X_11601–X_11700",
+      "summary": "Triangle centers X_11601 through X_11700.",
+      "count": 100
+    },
+    {
+      "slug": "c-11701-11800",
+      "start": 11701,
+      "end": 11800,
+      "title": "Centers X_11701–X_11800",
+      "summary": "Triangle centers X_11701 through X_11800.",
+      "count": 100
+    },
+    {
+      "slug": "c-11801-11900",
+      "start": 11801,
+      "end": 11900,
+      "title": "Centers X_11801–X_11900",
+      "summary": "Triangle centers X_11801 through X_11900.",
+      "count": 100
+    },
+    {
+      "slug": "c-11901-12000",
+      "start": 11901,
+      "end": 12000,
+      "title": "Centers X_11901–X_12000",
+      "summary": "Triangle centers X_11901 through X_12000.",
+      "count": 100
+    },
+    {
+      "slug": "c-12001-12100",
+      "start": 12001,
+      "end": 12100,
+      "title": "Centers X_12001–X_12100",
+      "summary": "Triangle centers X_12001 through X_12100.",
+      "count": 100
+    },
+    {
+      "slug": "c-12101-12200",
+      "start": 12101,
+      "end": 12200,
+      "title": "Centers X_12101–X_12200",
+      "summary": "Triangle centers X_12101 through X_12200.",
+      "count": 100
+    },
+    {
+      "slug": "c-12201-12300",
+      "start": 12201,
+      "end": 12300,
+      "title": "Centers X_12201–X_12300",
+      "summary": "Triangle centers X_12201 through X_12300.",
+      "count": 100
+    },
+    {
+      "slug": "c-12301-12400",
+      "start": 12301,
+      "end": 12400,
+      "title": "Centers X_12301–X_12400",
+      "summary": "Triangle centers X_12301 through X_12400.",
+      "count": 100
+    },
+    {
+      "slug": "c-12401-12500",
+      "start": 12401,
+      "end": 12500,
+      "title": "Centers X_12401–X_12500",
+      "summary": "Triangle centers X_12401 through X_12500.",
+      "count": 100
+    },
+    {
+      "slug": "c-12501-12600",
+      "start": 12501,
+      "end": 12600,
+      "title": "Centers X_12501–X_12600",
+      "summary": "Triangle centers X_12501 through X_12600.",
+      "count": 100
+    },
+    {
+      "slug": "c-12601-12700",
+      "start": 12601,
+      "end": 12700,
+      "title": "Centers X_12601–X_12700",
+      "summary": "Triangle centers X_12601 through X_12700.",
+      "count": 100
+    },
+    {
+      "slug": "c-12701-12800",
+      "start": 12701,
+      "end": 12800,
+      "title": "Centers X_12701–X_12800",
+      "summary": "Triangle centers X_12701 through X_12800.",
+      "count": 100
+    },
+    {
+      "slug": "c-12801-12900",
+      "start": 12801,
+      "end": 12900,
+      "title": "Centers X_12801–X_12900",
+      "summary": "Triangle centers X_12801 through X_12900.",
+      "count": 100
+    },
+    {
+      "slug": "c-12901-13000",
+      "start": 12901,
+      "end": 13000,
+      "title": "Centers X_12901–X_13000",
+      "summary": "Triangle centers X_12901 through X_13000.",
+      "count": 100
+    },
+    {
+      "slug": "c-13001-13100",
+      "start": 13001,
+      "end": 13100,
+      "title": "Centers X_13001–X_13100",
+      "summary": "Triangle centers X_13001 through X_13100.",
+      "count": 100
+    },
+    {
+      "slug": "c-13101-13200",
+      "start": 13101,
+      "end": 13200,
+      "title": "Centers X_13101–X_13200",
+      "summary": "Triangle centers X_13101 through X_13200.",
+      "count": 100
+    },
+    {
+      "slug": "c-13201-13300",
+      "start": 13201,
+      "end": 13300,
+      "title": "Centers X_13201–X_13300",
+      "summary": "Triangle centers X_13201 through X_13300.",
+      "count": 100
+    },
+    {
+      "slug": "c-13301-13400",
+      "start": 13301,
+      "end": 13400,
+      "title": "Centers X_13301–X_13400",
+      "summary": "Triangle centers X_13301 through X_13400.",
+      "count": 100
+    },
+    {
+      "slug": "c-13401-13500",
+      "start": 13401,
+      "end": 13500,
+      "title": "Centers X_13401–X_13500",
+      "summary": "Triangle centers X_13401 through X_13500.",
+      "count": 100
+    },
+    {
+      "slug": "c-13501-13600",
+      "start": 13501,
+      "end": 13600,
+      "title": "Centers X_13501–X_13600",
+      "summary": "Triangle centers X_13501 through X_13600.",
+      "count": 100
+    },
+    {
+      "slug": "c-13601-13700",
+      "start": 13601,
+      "end": 13700,
+      "title": "Centers X_13601–X_13700",
+      "summary": "Triangle centers X_13601 through X_13700.",
+      "count": 100
+    },
+    {
+      "slug": "c-13701-13800",
+      "start": 13701,
+      "end": 13800,
+      "title": "Centers X_13701–X_13800",
+      "summary": "Triangle centers X_13701 through X_13800.",
+      "count": 100
+    },
+    {
+      "slug": "c-13801-13900",
+      "start": 13801,
+      "end": 13900,
+      "title": "Centers X_13801–X_13900",
+      "summary": "Triangle centers X_13801 through X_13900.",
+      "count": 100
+    },
+    {
+      "slug": "c-13901-14000",
+      "start": 13901,
+      "end": 14000,
+      "title": "Centers X_13901–X_14000",
+      "summary": "Triangle centers X_13901 through X_14000.",
+      "count": 100
+    },
+    {
+      "slug": "c-14001-14100",
+      "start": 14001,
+      "end": 14100,
+      "title": "Centers X_14001–X_14100",
+      "summary": "Triangle centers X_14001 through X_14100.",
+      "count": 100
+    },
+    {
+      "slug": "c-14101-14200",
+      "start": 14101,
+      "end": 14200,
+      "title": "Centers X_14101–X_14200",
+      "summary": "Triangle centers X_14101 through X_14200.",
+      "count": 100
+    },
+    {
+      "slug": "c-14201-14300",
+      "start": 14201,
+      "end": 14300,
+      "title": "Centers X_14201–X_14300",
+      "summary": "Triangle centers X_14201 through X_14300.",
+      "count": 100
+    },
+    {
+      "slug": "c-14301-14400",
+      "start": 14301,
+      "end": 14400,
+      "title": "Centers X_14301–X_14400",
+      "summary": "Triangle centers X_14301 through X_14400.",
+      "count": 100
+    },
+    {
+      "slug": "c-14401-14500",
+      "start": 14401,
+      "end": 14500,
+      "title": "Centers X_14401–X_14500",
+      "summary": "Triangle centers X_14401 through X_14500.",
+      "count": 100
+    },
+    {
+      "slug": "c-14501-14600",
+      "start": 14501,
+      "end": 14600,
+      "title": "Centers X_14501–X_14600",
+      "summary": "Triangle centers X_14501 through X_14600.",
+      "count": 100
+    },
+    {
+      "slug": "c-14601-14700",
+      "start": 14601,
+      "end": 14700,
+      "title": "Centers X_14601–X_14700",
+      "summary": "Triangle centers X_14601 through X_14700.",
+      "count": 100
+    },
+    {
+      "slug": "c-14701-14800",
+      "start": 14701,
+      "end": 14800,
+      "title": "Centers X_14701–X_14800",
+      "summary": "Triangle centers X_14701 through X_14800.",
+      "count": 100
+    },
+    {
+      "slug": "c-14801-14900",
+      "start": 14801,
+      "end": 14900,
+      "title": "Centers X_14801–X_14900",
+      "summary": "Triangle centers X_14801 through X_14900.",
+      "count": 100
+    },
+    {
+      "slug": "c-14901-15000",
+      "start": 14901,
+      "end": 15000,
+      "title": "Centers X_14901–X_15000",
+      "summary": "Triangle centers X_14901 through X_15000.",
+      "count": 100
+    },
+    {
+      "slug": "c-15001-15100",
+      "start": 15001,
+      "end": 15100,
+      "title": "Centers X_15001–X_15100",
+      "summary": "Triangle centers X_15001 through X_15100.",
+      "count": 100
+    },
+    {
+      "slug": "c-15101-15200",
+      "start": 15101,
+      "end": 15200,
+      "title": "Centers X_15101–X_15200",
+      "summary": "Triangle centers X_15101 through X_15200.",
+      "count": 100
+    },
+    {
+      "slug": "c-15201-15300",
+      "start": 15201,
+      "end": 15300,
+      "title": "Centers X_15201–X_15300",
+      "summary": "Triangle centers X_15201 through X_15300.",
+      "count": 100
+    },
+    {
+      "slug": "c-15301-15400",
+      "start": 15301,
+      "end": 15400,
+      "title": "Centers X_15301–X_15400",
+      "summary": "Triangle centers X_15301 through X_15400.",
+      "count": 100
+    },
+    {
+      "slug": "c-15401-15500",
+      "start": 15401,
+      "end": 15500,
+      "title": "Centers X_15401–X_15500",
+      "summary": "Triangle centers X_15401 through X_15500.",
+      "count": 100
+    },
+    {
+      "slug": "c-15501-15600",
+      "start": 15501,
+      "end": 15600,
+      "title": "Centers X_15501–X_15600",
+      "summary": "Triangle centers X_15501 through X_15600.",
+      "count": 100
+    },
+    {
+      "slug": "c-15601-15700",
+      "start": 15601,
+      "end": 15700,
+      "title": "Centers X_15601–X_15700",
+      "summary": "Triangle centers X_15601 through X_15700.",
+      "count": 100
+    },
+    {
+      "slug": "c-15701-15800",
+      "start": 15701,
+      "end": 15800,
+      "title": "Centers X_15701–X_15800",
+      "summary": "Triangle centers X_15701 through X_15800.",
+      "count": 100
+    },
+    {
+      "slug": "c-15801-15900",
+      "start": 15801,
+      "end": 15900,
+      "title": "Centers X_15801–X_15900",
+      "summary": "Triangle centers X_15801 through X_15900.",
+      "count": 100
+    },
+    {
+      "slug": "c-15901-16000",
+      "start": 15901,
+      "end": 16000,
+      "title": "Centers X_15901–X_16000",
+      "summary": "Triangle centers X_15901 through X_16000.",
+      "count": 100
+    },
+    {
+      "slug": "c-16001-16100",
+      "start": 16001,
+      "end": 16100,
+      "title": "Centers X_16001–X_16100",
+      "summary": "Triangle centers X_16001 through X_16100.",
+      "count": 100
+    },
+    {
+      "slug": "c-16101-16200",
+      "start": 16101,
+      "end": 16200,
+      "title": "Centers X_16101–X_16200",
+      "summary": "Triangle centers X_16101 through X_16200.",
+      "count": 100
+    },
+    {
+      "slug": "c-16201-16300",
+      "start": 16201,
+      "end": 16300,
+      "title": "Centers X_16201–X_16300",
+      "summary": "Triangle centers X_16201 through X_16300.",
+      "count": 100
+    },
+    {
+      "slug": "c-16301-16400",
+      "start": 16301,
+      "end": 16400,
+      "title": "Centers X_16301–X_16400",
+      "summary": "Triangle centers X_16301 through X_16400.",
+      "count": 100
+    },
+    {
+      "slug": "c-16401-16500",
+      "start": 16401,
+      "end": 16500,
+      "title": "Centers X_16401–X_16500",
+      "summary": "Triangle centers X_16401 through X_16500.",
+      "count": 100
+    },
+    {
+      "slug": "c-16501-16600",
+      "start": 16501,
+      "end": 16600,
+      "title": "Centers X_16501–X_16600",
+      "summary": "Triangle centers X_16501 through X_16600.",
+      "count": 100
+    },
+    {
+      "slug": "c-16601-16700",
+      "start": 16601,
+      "end": 16700,
+      "title": "Centers X_16601–X_16700",
+      "summary": "Triangle centers X_16601 through X_16700.",
+      "count": 100
+    },
+    {
+      "slug": "c-16701-16800",
+      "start": 16701,
+      "end": 16800,
+      "title": "Centers X_16701–X_16800",
+      "summary": "Triangle centers X_16701 through X_16800.",
+      "count": 100
+    },
+    {
+      "slug": "c-16801-16900",
+      "start": 16801,
+      "end": 16900,
+      "title": "Centers X_16801–X_16900",
+      "summary": "Triangle centers X_16801 through X_16900.",
+      "count": 100
+    },
+    {
+      "slug": "c-16901-17000",
+      "start": 16901,
+      "end": 17000,
+      "title": "Centers X_16901–X_17000",
+      "summary": "Triangle centers X_16901 through X_17000.",
+      "count": 100
+    },
+    {
+      "slug": "c-17001-17100",
+      "start": 17001,
+      "end": 17100,
+      "title": "Centers X_17001–X_17100",
+      "summary": "Triangle centers X_17001 through X_17100.",
+      "count": 100
+    },
+    {
+      "slug": "c-17101-17200",
+      "start": 17101,
+      "end": 17200,
+      "title": "Centers X_17101–X_17200",
+      "summary": "Triangle centers X_17101 through X_17200.",
+      "count": 100
+    },
+    {
+      "slug": "c-17201-17300",
+      "start": 17201,
+      "end": 17300,
+      "title": "Centers X_17201–X_17300",
+      "summary": "Triangle centers X_17201 through X_17300.",
+      "count": 100
+    },
+    {
+      "slug": "c-17301-17400",
+      "start": 17301,
+      "end": 17400,
+      "title": "Centers X_17301–X_17400",
+      "summary": "Triangle centers X_17301 through X_17400.",
+      "count": 100
+    },
+    {
+      "slug": "c-17401-17500",
+      "start": 17401,
+      "end": 17500,
+      "title": "Centers X_17401–X_17500",
+      "summary": "Triangle centers X_17401 through X_17500.",
+      "count": 100
+    },
+    {
+      "slug": "c-17501-17600",
+      "start": 17501,
+      "end": 17600,
+      "title": "Centers X_17501–X_17600",
+      "summary": "Triangle centers X_17501 through X_17600.",
+      "count": 100
+    },
+    {
+      "slug": "c-17601-17700",
+      "start": 17601,
+      "end": 17700,
+      "title": "Centers X_17601–X_17700",
+      "summary": "Triangle centers X_17601 through X_17700.",
+      "count": 100
+    },
+    {
+      "slug": "c-17701-17800",
+      "start": 17701,
+      "end": 17800,
+      "title": "Centers X_17701–X_17800",
+      "summary": "Triangle centers X_17701 through X_17800.",
+      "count": 100
+    },
+    {
+      "slug": "c-17801-17900",
+      "start": 17801,
+      "end": 17900,
+      "title": "Centers X_17801–X_17900",
+      "summary": "Triangle centers X_17801 through X_17900.",
+      "count": 100
+    },
+    {
+      "slug": "c-17901-18000",
+      "start": 17901,
+      "end": 18000,
+      "title": "Centers X_17901–X_18000",
+      "summary": "Triangle centers X_17901 through X_18000.",
+      "count": 100
+    },
+    {
+      "slug": "c-18001-18100",
+      "start": 18001,
+      "end": 18100,
+      "title": "Centers X_18001–X_18100",
+      "summary": "Triangle centers X_18001 through X_18100.",
+      "count": 100
+    },
+    {
+      "slug": "c-18101-18200",
+      "start": 18101,
+      "end": 18200,
+      "title": "Centers X_18101–X_18200",
+      "summary": "Triangle centers X_18101 through X_18200.",
+      "count": 100
+    },
+    {
+      "slug": "c-18201-18300",
+      "start": 18201,
+      "end": 18300,
+      "title": "Centers X_18201–X_18300",
+      "summary": "Triangle centers X_18201 through X_18300.",
+      "count": 100
+    },
+    {
+      "slug": "c-18301-18400",
+      "start": 18301,
+      "end": 18400,
+      "title": "Centers X_18301–X_18400",
+      "summary": "Triangle centers X_18301 through X_18400.",
+      "count": 100
+    },
+    {
+      "slug": "c-18401-18500",
+      "start": 18401,
+      "end": 18500,
+      "title": "Centers X_18401–X_18500",
+      "summary": "Triangle centers X_18401 through X_18500.",
+      "count": 100
+    },
+    {
+      "slug": "c-18501-18600",
+      "start": 18501,
+      "end": 18600,
+      "title": "Centers X_18501–X_18600",
+      "summary": "Triangle centers X_18501 through X_18600.",
+      "count": 100
+    },
+    {
+      "slug": "c-18601-18700",
+      "start": 18601,
+      "end": 18700,
+      "title": "Centers X_18601–X_18700",
+      "summary": "Triangle centers X_18601 through X_18700.",
+      "count": 100
+    },
+    {
+      "slug": "c-18701-18800",
+      "start": 18701,
+      "end": 18800,
+      "title": "Centers X_18701–X_18800",
+      "summary": "Triangle centers X_18701 through X_18800.",
+      "count": 100
+    },
+    {
+      "slug": "c-18801-18900",
+      "start": 18801,
+      "end": 18900,
+      "title": "Centers X_18801–X_18900",
+      "summary": "Triangle centers X_18801 through X_18900.",
+      "count": 100
+    },
+    {
+      "slug": "c-18901-19000",
+      "start": 18901,
+      "end": 19000,
+      "title": "Centers X_18901–X_19000",
+      "summary": "Triangle centers X_18901 through X_19000.",
+      "count": 100
+    },
+    {
+      "slug": "c-19001-19100",
+      "start": 19001,
+      "end": 19100,
+      "title": "Centers X_19001–X_19100",
+      "summary": "Triangle centers X_19001 through X_19100.",
+      "count": 100
+    },
+    {
+      "slug": "c-19101-19200",
+      "start": 19101,
+      "end": 19200,
+      "title": "Centers X_19101–X_19200",
+      "summary": "Triangle centers X_19101 through X_19200.",
+      "count": 100
+    },
+    {
+      "slug": "c-19201-19300",
+      "start": 19201,
+      "end": 19300,
+      "title": "Centers X_19201–X_19300",
+      "summary": "Triangle centers X_19201 through X_19300.",
+      "count": 100
+    },
+    {
+      "slug": "c-19301-19400",
+      "start": 19301,
+      "end": 19400,
+      "title": "Centers X_19301–X_19400",
+      "summary": "Triangle centers X_19301 through X_19400.",
+      "count": 100
+    },
+    {
+      "slug": "c-19401-19500",
+      "start": 19401,
+      "end": 19500,
+      "title": "Centers X_19401–X_19500",
+      "summary": "Triangle centers X_19401 through X_19500.",
+      "count": 100
+    },
+    {
+      "slug": "c-19501-19600",
+      "start": 19501,
+      "end": 19600,
+      "title": "Centers X_19501–X_19600",
+      "summary": "Triangle centers X_19501 through X_19600.",
+      "count": 100
+    },
+    {
+      "slug": "c-19601-19700",
+      "start": 19601,
+      "end": 19700,
+      "title": "Centers X_19601–X_19700",
+      "summary": "Triangle centers X_19601 through X_19700.",
+      "count": 100
+    },
+    {
+      "slug": "c-19701-19800",
+      "start": 19701,
+      "end": 19800,
+      "title": "Centers X_19701–X_19800",
+      "summary": "Triangle centers X_19701 through X_19800.",
+      "count": 100
+    },
+    {
+      "slug": "c-19801-19900",
+      "start": 19801,
+      "end": 19900,
+      "title": "Centers X_19801–X_19900",
+      "summary": "Triangle centers X_19801 through X_19900.",
+      "count": 100
+    },
+    {
+      "slug": "c-19901-20000",
+      "start": 19901,
+      "end": 20000,
+      "title": "Centers X_19901–X_20000",
+      "summary": "Triangle centers X_19901 through X_20000.",
+      "count": 100
+    },
+    {
+      "slug": "c-20001-20100",
+      "start": 20001,
+      "end": 20100,
+      "title": "Centers X_20001–X_20100",
+      "summary": "Triangle centers X_20001 through X_20100.",
+      "count": 100
+    },
+    {
+      "slug": "c-20101-20200",
+      "start": 20101,
+      "end": 20200,
+      "title": "Centers X_20101–X_20200",
+      "summary": "Triangle centers X_20101 through X_20200.",
+      "count": 100
+    },
+    {
+      "slug": "c-20201-20300",
+      "start": 20201,
+      "end": 20300,
+      "title": "Centers X_20201–X_20300",
+      "summary": "Triangle centers X_20201 through X_20300.",
+      "count": 100
+    },
+    {
+      "slug": "c-20301-20400",
+      "start": 20301,
+      "end": 20400,
+      "title": "Centers X_20301–X_20400",
+      "summary": "Triangle centers X_20301 through X_20400.",
+      "count": 100
+    },
+    {
+      "slug": "c-20401-20500",
+      "start": 20401,
+      "end": 20500,
+      "title": "Centers X_20401–X_20500",
+      "summary": "Triangle centers X_20401 through X_20500.",
+      "count": 100
+    },
+    {
+      "slug": "c-20501-20600",
+      "start": 20501,
+      "end": 20600,
+      "title": "Centers X_20501–X_20600",
+      "summary": "Triangle centers X_20501 through X_20600.",
+      "count": 100
+    },
+    {
+      "slug": "c-20601-20700",
+      "start": 20601,
+      "end": 20700,
+      "title": "Centers X_20601–X_20700",
+      "summary": "Triangle centers X_20601 through X_20700.",
+      "count": 100
+    },
+    {
+      "slug": "c-20701-20800",
+      "start": 20701,
+      "end": 20800,
+      "title": "Centers X_20701–X_20800",
+      "summary": "Triangle centers X_20701 through X_20800.",
+      "count": 100
+    },
+    {
+      "slug": "c-20801-20900",
+      "start": 20801,
+      "end": 20900,
+      "title": "Centers X_20801–X_20900",
+      "summary": "Triangle centers X_20801 through X_20900.",
+      "count": 100
+    },
+    {
+      "slug": "c-20901-21000",
+      "start": 20901,
+      "end": 21000,
+      "title": "Centers X_20901–X_21000",
+      "summary": "Triangle centers X_20901 through X_21000.",
+      "count": 100
+    },
+    {
+      "slug": "c-21001-21100",
+      "start": 21001,
+      "end": 21100,
+      "title": "Centers X_21001–X_21100",
+      "summary": "Triangle centers X_21001 through X_21100.",
+      "count": 100
+    },
+    {
+      "slug": "c-21101-21200",
+      "start": 21101,
+      "end": 21200,
+      "title": "Centers X_21101–X_21200",
+      "summary": "Triangle centers X_21101 through X_21200.",
+      "count": 100
+    },
+    {
+      "slug": "c-21201-21300",
+      "start": 21201,
+      "end": 21300,
+      "title": "Centers X_21201–X_21300",
+      "summary": "Triangle centers X_21201 through X_21300.",
+      "count": 100
+    },
+    {
+      "slug": "c-21301-21400",
+      "start": 21301,
+      "end": 21400,
+      "title": "Centers X_21301–X_21400",
+      "summary": "Triangle centers X_21301 through X_21400.",
+      "count": 100
+    },
+    {
+      "slug": "c-21401-21500",
+      "start": 21401,
+      "end": 21500,
+      "title": "Centers X_21401–X_21500",
+      "summary": "Triangle centers X_21401 through X_21500.",
+      "count": 100
+    },
+    {
+      "slug": "c-21501-21600",
+      "start": 21501,
+      "end": 21600,
+      "title": "Centers X_21501–X_21600",
+      "summary": "Triangle centers X_21501 through X_21600.",
+      "count": 100
+    },
+    {
+      "slug": "c-21601-21700",
+      "start": 21601,
+      "end": 21700,
+      "title": "Centers X_21601–X_21700",
+      "summary": "Triangle centers X_21601 through X_21700.",
+      "count": 100
+    },
+    {
+      "slug": "c-21701-21800",
+      "start": 21701,
+      "end": 21800,
+      "title": "Centers X_21701–X_21800",
+      "summary": "Triangle centers X_21701 through X_21800.",
+      "count": 100
+    },
+    {
+      "slug": "c-21801-21900",
+      "start": 21801,
+      "end": 21900,
+      "title": "Centers X_21801–X_21900",
+      "summary": "Triangle centers X_21801 through X_21900.",
+      "count": 100
+    },
+    {
+      "slug": "c-21901-22000",
+      "start": 21901,
+      "end": 22000,
+      "title": "Centers X_21901–X_22000",
+      "summary": "Triangle centers X_21901 through X_22000.",
+      "count": 100
+    },
+    {
+      "slug": "c-22001-22100",
+      "start": 22001,
+      "end": 22100,
+      "title": "Centers X_22001–X_22100",
+      "summary": "Triangle centers X_22001 through X_22100.",
+      "count": 100
+    },
+    {
+      "slug": "c-22101-22200",
+      "start": 22101,
+      "end": 22200,
+      "title": "Centers X_22101–X_22200",
+      "summary": "Triangle centers X_22101 through X_22200.",
+      "count": 100
+    },
+    {
+      "slug": "c-22201-22300",
+      "start": 22201,
+      "end": 22300,
+      "title": "Centers X_22201–X_22300",
+      "summary": "Triangle centers X_22201 through X_22300.",
+      "count": 100
+    },
+    {
+      "slug": "c-22301-22400",
+      "start": 22301,
+      "end": 22400,
+      "title": "Centers X_22301–X_22400",
+      "summary": "Triangle centers X_22301 through X_22400.",
+      "count": 100
+    },
+    {
+      "slug": "c-22401-22500",
+      "start": 22401,
+      "end": 22500,
+      "title": "Centers X_22401–X_22500",
+      "summary": "Triangle centers X_22401 through X_22500.",
+      "count": 100
+    },
+    {
+      "slug": "c-22501-22600",
+      "start": 22501,
+      "end": 22600,
+      "title": "Centers X_22501–X_22600",
+      "summary": "Triangle centers X_22501 through X_22600.",
+      "count": 100
+    },
+    {
+      "slug": "c-22601-22700",
+      "start": 22601,
+      "end": 22700,
+      "title": "Centers X_22601–X_22700",
+      "summary": "Triangle centers X_22601 through X_22700.",
+      "count": 100
+    },
+    {
+      "slug": "c-22701-22800",
+      "start": 22701,
+      "end": 22800,
+      "title": "Centers X_22701–X_22800",
+      "summary": "Triangle centers X_22701 through X_22800.",
+      "count": 100
+    },
+    {
+      "slug": "c-22801-22900",
+      "start": 22801,
+      "end": 22900,
+      "title": "Centers X_22801–X_22900",
+      "summary": "Triangle centers X_22801 through X_22900.",
+      "count": 100
+    },
+    {
+      "slug": "c-22901-23000",
+      "start": 22901,
+      "end": 23000,
+      "title": "Centers X_22901–X_23000",
+      "summary": "Triangle centers X_22901 through X_23000.",
+      "count": 100
+    },
+    {
+      "slug": "c-23001-23100",
+      "start": 23001,
+      "end": 23100,
+      "title": "Centers X_23001–X_23100",
+      "summary": "Triangle centers X_23001 through X_23100.",
+      "count": 100
+    },
+    {
+      "slug": "c-23101-23200",
+      "start": 23101,
+      "end": 23200,
+      "title": "Centers X_23101–X_23200",
+      "summary": "Triangle centers X_23101 through X_23200.",
+      "count": 100
+    },
+    {
+      "slug": "c-23201-23300",
+      "start": 23201,
+      "end": 23300,
+      "title": "Centers X_23201–X_23300",
+      "summary": "Triangle centers X_23201 through X_23300.",
+      "count": 100
+    },
+    {
+      "slug": "c-23301-23400",
+      "start": 23301,
+      "end": 23400,
+      "title": "Centers X_23301–X_23400",
+      "summary": "Triangle centers X_23301 through X_23400.",
+      "count": 100
+    },
+    {
+      "slug": "c-23401-23500",
+      "start": 23401,
+      "end": 23500,
+      "title": "Centers X_23401–X_23500",
+      "summary": "Triangle centers X_23401 through X_23500.",
+      "count": 100
+    },
+    {
+      "slug": "c-23501-23600",
+      "start": 23501,
+      "end": 23600,
+      "title": "Centers X_23501–X_23600",
+      "summary": "Triangle centers X_23501 through X_23600.",
+      "count": 100
+    },
+    {
+      "slug": "c-23601-23700",
+      "start": 23601,
+      "end": 23700,
+      "title": "Centers X_23601–X_23700",
+      "summary": "Triangle centers X_23601 through X_23700.",
+      "count": 100
+    },
+    {
+      "slug": "c-23701-23800",
+      "start": 23701,
+      "end": 23800,
+      "title": "Centers X_23701–X_23800",
+      "summary": "Triangle centers X_23701 through X_23800.",
+      "count": 100
+    },
+    {
+      "slug": "c-23801-23900",
+      "start": 23801,
+      "end": 23900,
+      "title": "Centers X_23801–X_23900",
+      "summary": "Triangle centers X_23801 through X_23900.",
+      "count": 100
+    },
+    {
+      "slug": "c-23901-24000",
+      "start": 23901,
+      "end": 24000,
+      "title": "Centers X_23901–X_24000",
+      "summary": "Triangle centers X_23901 through X_24000.",
+      "count": 100
+    },
+    {
+      "slug": "c-24001-24100",
+      "start": 24001,
+      "end": 24100,
+      "title": "Centers X_24001–X_24100",
+      "summary": "Triangle centers X_24001 through X_24100.",
+      "count": 100
+    },
+    {
+      "slug": "c-24101-24200",
+      "start": 24101,
+      "end": 24200,
+      "title": "Centers X_24101–X_24200",
+      "summary": "Triangle centers X_24101 through X_24200.",
+      "count": 100
+    },
+    {
+      "slug": "c-24201-24300",
+      "start": 24201,
+      "end": 24300,
+      "title": "Centers X_24201–X_24300",
+      "summary": "Triangle centers X_24201 through X_24300.",
+      "count": 100
+    },
+    {
+      "slug": "c-24301-24400",
+      "start": 24301,
+      "end": 24400,
+      "title": "Centers X_24301–X_24400",
+      "summary": "Triangle centers X_24301 through X_24400.",
+      "count": 100
+    },
+    {
+      "slug": "c-24401-24500",
+      "start": 24401,
+      "end": 24500,
+      "title": "Centers X_24401–X_24500",
+      "summary": "Triangle centers X_24401 through X_24500.",
+      "count": 100
+    },
+    {
+      "slug": "c-24501-24600",
+      "start": 24501,
+      "end": 24600,
+      "title": "Centers X_24501–X_24600",
+      "summary": "Triangle centers X_24501 through X_24600.",
+      "count": 100
+    },
+    {
+      "slug": "c-24601-24700",
+      "start": 24601,
+      "end": 24700,
+      "title": "Centers X_24601–X_24700",
+      "summary": "Triangle centers X_24601 through X_24700.",
+      "count": 100
+    },
+    {
+      "slug": "c-24701-24800",
+      "start": 24701,
+      "end": 24800,
+      "title": "Centers X_24701–X_24800",
+      "summary": "Triangle centers X_24701 through X_24800.",
+      "count": 100
+    },
+    {
+      "slug": "c-24801-24900",
+      "start": 24801,
+      "end": 24900,
+      "title": "Centers X_24801–X_24900",
+      "summary": "Triangle centers X_24801 through X_24900.",
+      "count": 100
+    },
+    {
+      "slug": "c-24901-25000",
+      "start": 24901,
+      "end": 25000,
+      "title": "Centers X_24901–X_25000",
+      "summary": "Triangle centers X_24901 through X_25000.",
+      "count": 100
+    },
+    {
+      "slug": "c-25001-25100",
+      "start": 25001,
+      "end": 25100,
+      "title": "Centers X_25001–X_25100",
+      "summary": "Triangle centers X_25001 through X_25100.",
+      "count": 100
+    },
+    {
+      "slug": "c-25101-25200",
+      "start": 25101,
+      "end": 25200,
+      "title": "Centers X_25101–X_25200",
+      "summary": "Triangle centers X_25101 through X_25200.",
+      "count": 100
+    },
+    {
+      "slug": "c-25201-25300",
+      "start": 25201,
+      "end": 25300,
+      "title": "Centers X_25201–X_25300",
+      "summary": "Triangle centers X_25201 through X_25300.",
+      "count": 100
+    },
+    {
+      "slug": "c-25301-25400",
+      "start": 25301,
+      "end": 25400,
+      "title": "Centers X_25301–X_25400",
+      "summary": "Triangle centers X_25301 through X_25400.",
+      "count": 100
+    },
+    {
+      "slug": "c-25401-25500",
+      "start": 25401,
+      "end": 25500,
+      "title": "Centers X_25401–X_25500",
+      "summary": "Triangle centers X_25401 through X_25500.",
+      "count": 100
+    },
+    {
+      "slug": "c-25501-25600",
+      "start": 25501,
+      "end": 25600,
+      "title": "Centers X_25501–X_25600",
+      "summary": "Triangle centers X_25501 through X_25600.",
+      "count": 100
+    },
+    {
+      "slug": "c-25601-25700",
+      "start": 25601,
+      "end": 25700,
+      "title": "Centers X_25601–X_25700",
+      "summary": "Triangle centers X_25601 through X_25700.",
+      "count": 100
+    },
+    {
+      "slug": "c-25701-25800",
+      "start": 25701,
+      "end": 25800,
+      "title": "Centers X_25701–X_25800",
+      "summary": "Triangle centers X_25701 through X_25800.",
+      "count": 100
+    },
+    {
+      "slug": "c-25801-25900",
+      "start": 25801,
+      "end": 25900,
+      "title": "Centers X_25801–X_25900",
+      "summary": "Triangle centers X_25801 through X_25900.",
+      "count": 100
+    },
+    {
+      "slug": "c-25901-26000",
+      "start": 25901,
+      "end": 26000,
+      "title": "Centers X_25901–X_26000",
+      "summary": "Triangle centers X_25901 through X_26000.",
+      "count": 100
+    },
+    {
+      "slug": "c-26001-26100",
+      "start": 26001,
+      "end": 26100,
+      "title": "Centers X_26001–X_26100",
+      "summary": "Triangle centers X_26001 through X_26100.",
+      "count": 100
+    },
+    {
+      "slug": "c-26101-26200",
+      "start": 26101,
+      "end": 26200,
+      "title": "Centers X_26101–X_26200",
+      "summary": "Triangle centers X_26101 through X_26200.",
+      "count": 100
+    },
+    {
+      "slug": "c-26201-26300",
+      "start": 26201,
+      "end": 26300,
+      "title": "Centers X_26201–X_26300",
+      "summary": "Triangle centers X_26201 through X_26300.",
+      "count": 100
+    },
+    {
+      "slug": "c-26301-26400",
+      "start": 26301,
+      "end": 26400,
+      "title": "Centers X_26301–X_26400",
+      "summary": "Triangle centers X_26301 through X_26400.",
+      "count": 100
+    },
+    {
+      "slug": "c-26401-26500",
+      "start": 26401,
+      "end": 26500,
+      "title": "Centers X_26401–X_26500",
+      "summary": "Triangle centers X_26401 through X_26500.",
+      "count": 100
+    },
+    {
+      "slug": "c-26501-26600",
+      "start": 26501,
+      "end": 26600,
+      "title": "Centers X_26501–X_26600",
+      "summary": "Triangle centers X_26501 through X_26600.",
+      "count": 100
+    },
+    {
+      "slug": "c-26601-26700",
+      "start": 26601,
+      "end": 26700,
+      "title": "Centers X_26601–X_26700",
+      "summary": "Triangle centers X_26601 through X_26700.",
+      "count": 100
+    },
+    {
+      "slug": "c-26701-26800",
+      "start": 26701,
+      "end": 26800,
+      "title": "Centers X_26701–X_26800",
+      "summary": "Triangle centers X_26701 through X_26800.",
+      "count": 100
+    },
+    {
+      "slug": "c-26801-26900",
+      "start": 26801,
+      "end": 26900,
+      "title": "Centers X_26801–X_26900",
+      "summary": "Triangle centers X_26801 through X_26900.",
+      "count": 100
+    },
+    {
+      "slug": "c-26901-27000",
+      "start": 26901,
+      "end": 27000,
+      "title": "Centers X_26901–X_27000",
+      "summary": "Triangle centers X_26901 through X_27000.",
+      "count": 100
+    },
+    {
+      "slug": "c-27001-27100",
+      "start": 27001,
+      "end": 27100,
+      "title": "Centers X_27001–X_27100",
+      "summary": "Triangle centers X_27001 through X_27100.",
+      "count": 100
+    },
+    {
+      "slug": "c-27101-27200",
+      "start": 27101,
+      "end": 27200,
+      "title": "Centers X_27101–X_27200",
+      "summary": "Triangle centers X_27101 through X_27200.",
+      "count": 100
+    },
+    {
+      "slug": "c-27201-27300",
+      "start": 27201,
+      "end": 27300,
+      "title": "Centers X_27201–X_27300",
+      "summary": "Triangle centers X_27201 through X_27300.",
+      "count": 100
+    },
+    {
+      "slug": "c-27301-27400",
+      "start": 27301,
+      "end": 27400,
+      "title": "Centers X_27301–X_27400",
+      "summary": "Triangle centers X_27301 through X_27400.",
+      "count": 100
+    },
+    {
+      "slug": "c-27401-27500",
+      "start": 27401,
+      "end": 27500,
+      "title": "Centers X_27401–X_27500",
+      "summary": "Triangle centers X_27401 through X_27500.",
+      "count": 100
+    },
+    {
+      "slug": "c-27501-27600",
+      "start": 27501,
+      "end": 27600,
+      "title": "Centers X_27501–X_27600",
+      "summary": "Triangle centers X_27501 through X_27600.",
+      "count": 100
+    },
+    {
+      "slug": "c-27601-27700",
+      "start": 27601,
+      "end": 27700,
+      "title": "Centers X_27601–X_27700",
+      "summary": "Triangle centers X_27601 through X_27700.",
+      "count": 100
+    },
+    {
+      "slug": "c-27701-27800",
+      "start": 27701,
+      "end": 27800,
+      "title": "Centers X_27701–X_27800",
+      "summary": "Triangle centers X_27701 through X_27800.",
+      "count": 100
+    },
+    {
+      "slug": "c-27801-27900",
+      "start": 27801,
+      "end": 27900,
+      "title": "Centers X_27801–X_27900",
+      "summary": "Triangle centers X_27801 through X_27900.",
+      "count": 100
+    },
+    {
+      "slug": "c-27901-28000",
+      "start": 27901,
+      "end": 28000,
+      "title": "Centers X_27901–X_28000",
+      "summary": "Triangle centers X_27901 through X_28000.",
+      "count": 100
+    },
+    {
+      "slug": "c-28001-28100",
+      "start": 28001,
+      "end": 28100,
+      "title": "Centers X_28001–X_28100",
+      "summary": "Triangle centers X_28001 through X_28100.",
+      "count": 100
+    },
+    {
+      "slug": "c-28101-28200",
+      "start": 28101,
+      "end": 28200,
+      "title": "Centers X_28101–X_28200",
+      "summary": "Triangle centers X_28101 through X_28200.",
+      "count": 100
+    },
+    {
+      "slug": "c-28201-28300",
+      "start": 28201,
+      "end": 28300,
+      "title": "Centers X_28201–X_28300",
+      "summary": "Triangle centers X_28201 through X_28300.",
+      "count": 100
+    },
+    {
+      "slug": "c-28301-28400",
+      "start": 28301,
+      "end": 28400,
+      "title": "Centers X_28301–X_28400",
+      "summary": "Triangle centers X_28301 through X_28400.",
+      "count": 100
+    },
+    {
+      "slug": "c-28401-28500",
+      "start": 28401,
+      "end": 28500,
+      "title": "Centers X_28401–X_28500",
+      "summary": "Triangle centers X_28401 through X_28500.",
+      "count": 100
+    },
+    {
+      "slug": "c-28501-28600",
+      "start": 28501,
+      "end": 28600,
+      "title": "Centers X_28501–X_28600",
+      "summary": "Triangle centers X_28501 through X_28600.",
+      "count": 100
+    },
+    {
+      "slug": "c-28601-28700",
+      "start": 28601,
+      "end": 28700,
+      "title": "Centers X_28601–X_28700",
+      "summary": "Triangle centers X_28601 through X_28700.",
+      "count": 100
+    },
+    {
+      "slug": "c-28701-28800",
+      "start": 28701,
+      "end": 28800,
+      "title": "Centers X_28701–X_28800",
+      "summary": "Triangle centers X_28701 through X_28800.",
+      "count": 100
+    },
+    {
+      "slug": "c-28801-28900",
+      "start": 28801,
+      "end": 28900,
+      "title": "Centers X_28801–X_28900",
+      "summary": "Triangle centers X_28801 through X_28900.",
+      "count": 100
+    },
+    {
+      "slug": "c-28901-29000",
+      "start": 28901,
+      "end": 29000,
+      "title": "Centers X_28901–X_29000",
+      "summary": "Triangle centers X_28901 through X_29000.",
+      "count": 100
+    },
+    {
+      "slug": "c-29001-29100",
+      "start": 29001,
+      "end": 29100,
+      "title": "Centers X_29001–X_29100",
+      "summary": "Triangle centers X_29001 through X_29100.",
+      "count": 100
+    },
+    {
+      "slug": "c-29101-29200",
+      "start": 29101,
+      "end": 29200,
+      "title": "Centers X_29101–X_29200",
+      "summary": "Triangle centers X_29101 through X_29200.",
+      "count": 100
+    },
+    {
+      "slug": "c-29201-29300",
+      "start": 29201,
+      "end": 29300,
+      "title": "Centers X_29201–X_29300",
+      "summary": "Triangle centers X_29201 through X_29300.",
+      "count": 100
+    },
+    {
+      "slug": "c-29301-29400",
+      "start": 29301,
+      "end": 29400,
+      "title": "Centers X_29301–X_29400",
+      "summary": "Triangle centers X_29301 through X_29400.",
+      "count": 100
+    },
+    {
+      "slug": "c-29401-29500",
+      "start": 29401,
+      "end": 29500,
+      "title": "Centers X_29401–X_29500",
+      "summary": "Triangle centers X_29401 through X_29500.",
+      "count": 100
+    },
+    {
+      "slug": "c-29501-29600",
+      "start": 29501,
+      "end": 29600,
+      "title": "Centers X_29501–X_29600",
+      "summary": "Triangle centers X_29501 through X_29600.",
+      "count": 100
+    },
+    {
+      "slug": "c-29601-29700",
+      "start": 29601,
+      "end": 29700,
+      "title": "Centers X_29601–X_29700",
+      "summary": "Triangle centers X_29601 through X_29700.",
+      "count": 100
+    },
+    {
+      "slug": "c-29701-29800",
+      "start": 29701,
+      "end": 29800,
+      "title": "Centers X_29701–X_29800",
+      "summary": "Triangle centers X_29701 through X_29800.",
+      "count": 100
+    },
+    {
+      "slug": "c-29801-29900",
+      "start": 29801,
+      "end": 29900,
+      "title": "Centers X_29801–X_29900",
+      "summary": "Triangle centers X_29801 through X_29900.",
+      "count": 100
+    },
+    {
+      "slug": "c-29901-30000",
+      "start": 29901,
+      "end": 30000,
+      "title": "Centers X_29901–X_30000",
+      "summary": "Triangle centers X_29901 through X_30000.",
+      "count": 100
+    },
+    {
+      "slug": "c-30001-30100",
+      "start": 30001,
+      "end": 30100,
+      "title": "Centers X_30001–X_30100",
+      "summary": "Triangle centers X_30001 through X_30100.",
+      "count": 100
+    },
+    {
+      "slug": "c-30101-30200",
+      "start": 30101,
+      "end": 30200,
+      "title": "Centers X_30101–X_30200",
+      "summary": "Triangle centers X_30101 through X_30200.",
+      "count": 100
+    },
+    {
+      "slug": "c-30201-30300",
+      "start": 30201,
+      "end": 30300,
+      "title": "Centers X_30201–X_30300",
+      "summary": "Triangle centers X_30201 through X_30300.",
+      "count": 100
+    },
+    {
+      "slug": "c-30301-30400",
+      "start": 30301,
+      "end": 30400,
+      "title": "Centers X_30301–X_30400",
+      "summary": "Triangle centers X_30301 through X_30400.",
+      "count": 100
+    },
+    {
+      "slug": "c-30401-30500",
+      "start": 30401,
+      "end": 30500,
+      "title": "Centers X_30401–X_30500",
+      "summary": "Triangle centers X_30401 through X_30500.",
+      "count": 100
+    },
+    {
+      "slug": "c-30501-30600",
+      "start": 30501,
+      "end": 30600,
+      "title": "Centers X_30501–X_30600",
+      "summary": "Triangle centers X_30501 through X_30600.",
+      "count": 100
+    },
+    {
+      "slug": "c-30601-30700",
+      "start": 30601,
+      "end": 30700,
+      "title": "Centers X_30601–X_30700",
+      "summary": "Triangle centers X_30601 through X_30700.",
+      "count": 100
+    },
+    {
+      "slug": "c-30701-30800",
+      "start": 30701,
+      "end": 30800,
+      "title": "Centers X_30701–X_30800",
+      "summary": "Triangle centers X_30701 through X_30800.",
+      "count": 100
+    },
+    {
+      "slug": "c-30801-30900",
+      "start": 30801,
+      "end": 30900,
+      "title": "Centers X_30801–X_30900",
+      "summary": "Triangle centers X_30801 through X_30900.",
+      "count": 100
+    },
+    {
+      "slug": "c-30901-31000",
+      "start": 30901,
+      "end": 31000,
+      "title": "Centers X_30901–X_31000",
+      "summary": "Triangle centers X_30901 through X_31000.",
+      "count": 100
+    },
+    {
+      "slug": "c-31001-31100",
+      "start": 31001,
+      "end": 31100,
+      "title": "Centers X_31001–X_31100",
+      "summary": "Triangle centers X_31001 through X_31100.",
+      "count": 100
+    },
+    {
+      "slug": "c-31101-31200",
+      "start": 31101,
+      "end": 31200,
+      "title": "Centers X_31101–X_31200",
+      "summary": "Triangle centers X_31101 through X_31200.",
+      "count": 100
+    },
+    {
+      "slug": "c-31201-31300",
+      "start": 31201,
+      "end": 31300,
+      "title": "Centers X_31201–X_31300",
+      "summary": "Triangle centers X_31201 through X_31300.",
+      "count": 100
+    },
+    {
+      "slug": "c-31301-31400",
+      "start": 31301,
+      "end": 31400,
+      "title": "Centers X_31301–X_31400",
+      "summary": "Triangle centers X_31301 through X_31400.",
+      "count": 100
+    },
+    {
+      "slug": "c-31401-31500",
+      "start": 31401,
+      "end": 31500,
+      "title": "Centers X_31401–X_31500",
+      "summary": "Triangle centers X_31401 through X_31500.",
+      "count": 100
+    },
+    {
+      "slug": "c-31501-31600",
+      "start": 31501,
+      "end": 31600,
+      "title": "Centers X_31501–X_31600",
+      "summary": "Triangle centers X_31501 through X_31600.",
+      "count": 100
+    },
+    {
+      "slug": "c-31601-31700",
+      "start": 31601,
+      "end": 31700,
+      "title": "Centers X_31601–X_31700",
+      "summary": "Triangle centers X_31601 through X_31700.",
+      "count": 100
+    },
+    {
+      "slug": "c-31701-31800",
+      "start": 31701,
+      "end": 31800,
+      "title": "Centers X_31701–X_31800",
+      "summary": "Triangle centers X_31701 through X_31800.",
+      "count": 100
+    },
+    {
+      "slug": "c-31801-31900",
+      "start": 31801,
+      "end": 31900,
+      "title": "Centers X_31801–X_31900",
+      "summary": "Triangle centers X_31801 through X_31900.",
+      "count": 100
+    },
+    {
+      "slug": "c-31901-32000",
+      "start": 31901,
+      "end": 32000,
+      "title": "Centers X_31901–X_32000",
+      "summary": "Triangle centers X_31901 through X_32000.",
+      "count": 100
+    },
+    {
+      "slug": "c-32001-32100",
+      "start": 32001,
+      "end": 32100,
+      "title": "Centers X_32001–X_32100",
+      "summary": "Triangle centers X_32001 through X_32100.",
+      "count": 100
+    },
+    {
+      "slug": "c-32101-32200",
+      "start": 32101,
+      "end": 32200,
+      "title": "Centers X_32101–X_32200",
+      "summary": "Triangle centers X_32101 through X_32200.",
+      "count": 100
+    },
+    {
+      "slug": "c-32201-32300",
+      "start": 32201,
+      "end": 32300,
+      "title": "Centers X_32201–X_32300",
+      "summary": "Triangle centers X_32201 through X_32300.",
+      "count": 100
+    },
+    {
+      "slug": "c-32301-32400",
+      "start": 32301,
+      "end": 32400,
+      "title": "Centers X_32301–X_32400",
+      "summary": "Triangle centers X_32301 through X_32400.",
+      "count": 100
+    },
+    {
+      "slug": "c-32401-32500",
+      "start": 32401,
+      "end": 32500,
+      "title": "Centers X_32401–X_32500",
+      "summary": "Triangle centers X_32401 through X_32500.",
+      "count": 100
+    },
+    {
+      "slug": "c-32501-32600",
+      "start": 32501,
+      "end": 32600,
+      "title": "Centers X_32501–X_32600",
+      "summary": "Triangle centers X_32501 through X_32600.",
+      "count": 100
+    },
+    {
+      "slug": "c-32601-32700",
+      "start": 32601,
+      "end": 32700,
+      "title": "Centers X_32601–X_32700",
+      "summary": "Triangle centers X_32601 through X_32700.",
+      "count": 100
+    },
+    {
+      "slug": "c-32701-32800",
+      "start": 32701,
+      "end": 32800,
+      "title": "Centers X_32701–X_32800",
+      "summary": "Triangle centers X_32701 through X_32800.",
+      "count": 100
+    },
+    {
+      "slug": "c-32801-32900",
+      "start": 32801,
+      "end": 32900,
+      "title": "Centers X_32801–X_32900",
+      "summary": "Triangle centers X_32801 through X_32900.",
+      "count": 100
+    },
+    {
+      "slug": "c-32901-33000",
+      "start": 32901,
+      "end": 33000,
+      "title": "Centers X_32901–X_33000",
+      "summary": "Triangle centers X_32901 through X_33000.",
+      "count": 100
+    },
+    {
+      "slug": "c-33001-33100",
+      "start": 33001,
+      "end": 33100,
+      "title": "Centers X_33001–X_33100",
+      "summary": "Triangle centers X_33001 through X_33100.",
+      "count": 100
+    },
+    {
+      "slug": "c-33101-33200",
+      "start": 33101,
+      "end": 33200,
+      "title": "Centers X_33101–X_33200",
+      "summary": "Triangle centers X_33101 through X_33200.",
+      "count": 100
+    },
+    {
+      "slug": "c-33201-33300",
+      "start": 33201,
+      "end": 33300,
+      "title": "Centers X_33201–X_33300",
+      "summary": "Triangle centers X_33201 through X_33300.",
+      "count": 100
+    },
+    {
+      "slug": "c-33301-33400",
+      "start": 33301,
+      "end": 33400,
+      "title": "Centers X_33301–X_33400",
+      "summary": "Triangle centers X_33301 through X_33400.",
+      "count": 100
+    },
+    {
+      "slug": "c-33401-33500",
+      "start": 33401,
+      "end": 33500,
+      "title": "Centers X_33401–X_33500",
+      "summary": "Triangle centers X_33401 through X_33500.",
+      "count": 100
+    },
+    {
+      "slug": "c-33501-33600",
+      "start": 33501,
+      "end": 33600,
+      "title": "Centers X_33501–X_33600",
+      "summary": "Triangle centers X_33501 through X_33600.",
+      "count": 100
+    },
+    {
+      "slug": "c-33601-33700",
+      "start": 33601,
+      "end": 33700,
+      "title": "Centers X_33601–X_33700",
+      "summary": "Triangle centers X_33601 through X_33700.",
+      "count": 100
+    },
+    {
+      "slug": "c-33701-33800",
+      "start": 33701,
+      "end": 33800,
+      "title": "Centers X_33701–X_33800",
+      "summary": "Triangle centers X_33701 through X_33800.",
+      "count": 100
+    },
+    {
+      "slug": "c-33801-33900",
+      "start": 33801,
+      "end": 33900,
+      "title": "Centers X_33801–X_33900",
+      "summary": "Triangle centers X_33801 through X_33900.",
+      "count": 100
+    },
+    {
+      "slug": "c-33901-34000",
+      "start": 33901,
+      "end": 34000,
+      "title": "Centers X_33901–X_34000",
+      "summary": "Triangle centers X_33901 through X_34000.",
+      "count": 100
+    },
+    {
+      "slug": "c-34001-34100",
+      "start": 34001,
+      "end": 34100,
+      "title": "Centers X_34001–X_34100",
+      "summary": "Triangle centers X_34001 through X_34100.",
+      "count": 100
+    },
+    {
+      "slug": "c-34101-34200",
+      "start": 34101,
+      "end": 34200,
+      "title": "Centers X_34101–X_34200",
+      "summary": "Triangle centers X_34101 through X_34200.",
+      "count": 100
+    },
+    {
+      "slug": "c-34201-34300",
+      "start": 34201,
+      "end": 34300,
+      "title": "Centers X_34201–X_34300",
+      "summary": "Triangle centers X_34201 through X_34300.",
+      "count": 100
+    },
+    {
+      "slug": "c-34301-34400",
+      "start": 34301,
+      "end": 34400,
+      "title": "Centers X_34301–X_34400",
+      "summary": "Triangle centers X_34301 through X_34400.",
+      "count": 100
+    },
+    {
+      "slug": "c-34401-34500",
+      "start": 34401,
+      "end": 34500,
+      "title": "Centers X_34401–X_34500",
+      "summary": "Triangle centers X_34401 through X_34500.",
+      "count": 100
+    },
+    {
+      "slug": "c-34501-34600",
+      "start": 34501,
+      "end": 34600,
+      "title": "Centers X_34501–X_34600",
+      "summary": "Triangle centers X_34501 through X_34600.",
+      "count": 100
+    },
+    {
+      "slug": "c-34601-34700",
+      "start": 34601,
+      "end": 34700,
+      "title": "Centers X_34601–X_34700",
+      "summary": "Triangle centers X_34601 through X_34700.",
+      "count": 100
+    },
+    {
+      "slug": "c-34701-34800",
+      "start": 34701,
+      "end": 34800,
+      "title": "Centers X_34701–X_34800",
+      "summary": "Triangle centers X_34701 through X_34800.",
+      "count": 100
+    },
+    {
+      "slug": "c-34801-34900",
+      "start": 34801,
+      "end": 34900,
+      "title": "Centers X_34801–X_34900",
+      "summary": "Triangle centers X_34801 through X_34900.",
+      "count": 100
+    },
+    {
+      "slug": "c-34901-35000",
+      "start": 34901,
+      "end": 35000,
+      "title": "Centers X_34901–X_35000",
+      "summary": "Triangle centers X_34901 through X_35000.",
+      "count": 100
+    },
+    {
+      "slug": "c-35001-35100",
+      "start": 35001,
+      "end": 35100,
+      "title": "Centers X_35001–X_35100",
+      "summary": "Triangle centers X_35001 through X_35100.",
+      "count": 100
+    },
+    {
+      "slug": "c-35101-35200",
+      "start": 35101,
+      "end": 35200,
+      "title": "Centers X_35101–X_35200",
+      "summary": "Triangle centers X_35101 through X_35200.",
+      "count": 100
+    },
+    {
+      "slug": "c-35201-35300",
+      "start": 35201,
+      "end": 35300,
+      "title": "Centers X_35201–X_35300",
+      "summary": "Triangle centers X_35201 through X_35300.",
+      "count": 100
+    },
+    {
+      "slug": "c-35301-35400",
+      "start": 35301,
+      "end": 35400,
+      "title": "Centers X_35301–X_35400",
+      "summary": "Triangle centers X_35301 through X_35400.",
+      "count": 100
+    },
+    {
+      "slug": "c-35401-35500",
+      "start": 35401,
+      "end": 35500,
+      "title": "Centers X_35401–X_35500",
+      "summary": "Triangle centers X_35401 through X_35500.",
+      "count": 100
+    },
+    {
+      "slug": "c-35501-35600",
+      "start": 35501,
+      "end": 35600,
+      "title": "Centers X_35501–X_35600",
+      "summary": "Triangle centers X_35501 through X_35600.",
+      "count": 100
+    },
+    {
+      "slug": "c-35601-35700",
+      "start": 35601,
+      "end": 35700,
+      "title": "Centers X_35601–X_35700",
+      "summary": "Triangle centers X_35601 through X_35700.",
+      "count": 100
+    },
+    {
+      "slug": "c-35701-35800",
+      "start": 35701,
+      "end": 35800,
+      "title": "Centers X_35701–X_35800",
+      "summary": "Triangle centers X_35701 through X_35800.",
+      "count": 100
+    },
+    {
+      "slug": "c-35801-35900",
+      "start": 35801,
+      "end": 35900,
+      "title": "Centers X_35801–X_35900",
+      "summary": "Triangle centers X_35801 through X_35900.",
+      "count": 100
+    },
+    {
+      "slug": "c-35901-36000",
+      "start": 35901,
+      "end": 36000,
+      "title": "Centers X_35901–X_36000",
+      "summary": "Triangle centers X_35901 through X_36000.",
+      "count": 100
+    },
+    {
+      "slug": "c-36001-36100",
+      "start": 36001,
+      "end": 36100,
+      "title": "Centers X_36001–X_36100",
+      "summary": "Triangle centers X_36001 through X_36100.",
+      "count": 100
+    },
+    {
+      "slug": "c-36101-36200",
+      "start": 36101,
+      "end": 36200,
+      "title": "Centers X_36101–X_36200",
+      "summary": "Triangle centers X_36101 through X_36200.",
+      "count": 100
+    },
+    {
+      "slug": "c-36201-36300",
+      "start": 36201,
+      "end": 36300,
+      "title": "Centers X_36201–X_36300",
+      "summary": "Triangle centers X_36201 through X_36300.",
+      "count": 100
+    },
+    {
+      "slug": "c-36301-36400",
+      "start": 36301,
+      "end": 36400,
+      "title": "Centers X_36301–X_36400",
+      "summary": "Triangle centers X_36301 through X_36400.",
+      "count": 100
+    },
+    {
+      "slug": "c-36401-36500",
+      "start": 36401,
+      "end": 36500,
+      "title": "Centers X_36401–X_36500",
+      "summary": "Triangle centers X_36401 through X_36500.",
+      "count": 100
+    },
+    {
+      "slug": "c-36501-36600",
+      "start": 36501,
+      "end": 36600,
+      "title": "Centers X_36501–X_36600",
+      "summary": "Triangle centers X_36501 through X_36600.",
+      "count": 100
+    },
+    {
+      "slug": "c-36601-36700",
+      "start": 36601,
+      "end": 36700,
+      "title": "Centers X_36601–X_36700",
+      "summary": "Triangle centers X_36601 through X_36700.",
+      "count": 100
+    },
+    {
+      "slug": "c-36701-36800",
+      "start": 36701,
+      "end": 36800,
+      "title": "Centers X_36701–X_36800",
+      "summary": "Triangle centers X_36701 through X_36800.",
+      "count": 100
+    },
+    {
+      "slug": "c-36801-36900",
+      "start": 36801,
+      "end": 36900,
+      "title": "Centers X_36801–X_36900",
+      "summary": "Triangle centers X_36801 through X_36900.",
+      "count": 100
+    },
+    {
+      "slug": "c-36901-37000",
+      "start": 36901,
+      "end": 37000,
+      "title": "Centers X_36901–X_37000",
+      "summary": "Triangle centers X_36901 through X_37000.",
+      "count": 100
+    },
+    {
+      "slug": "c-37001-37100",
+      "start": 37001,
+      "end": 37100,
+      "title": "Centers X_37001–X_37100",
+      "summary": "Triangle centers X_37001 through X_37100.",
+      "count": 100
+    },
+    {
+      "slug": "c-37101-37200",
+      "start": 37101,
+      "end": 37200,
+      "title": "Centers X_37101–X_37200",
+      "summary": "Triangle centers X_37101 through X_37200.",
+      "count": 100
+    },
+    {
+      "slug": "c-37201-37300",
+      "start": 37201,
+      "end": 37300,
+      "title": "Centers X_37201–X_37300",
+      "summary": "Triangle centers X_37201 through X_37300.",
+      "count": 100
+    },
+    {
+      "slug": "c-37301-37400",
+      "start": 37301,
+      "end": 37400,
+      "title": "Centers X_37301–X_37400",
+      "summary": "Triangle centers X_37301 through X_37400.",
+      "count": 100
+    },
+    {
+      "slug": "c-37401-37500",
+      "start": 37401,
+      "end": 37500,
+      "title": "Centers X_37401–X_37500",
+      "summary": "Triangle centers X_37401 through X_37500.",
+      "count": 100
+    },
+    {
+      "slug": "c-37501-37600",
+      "start": 37501,
+      "end": 37600,
+      "title": "Centers X_37501–X_37600",
+      "summary": "Triangle centers X_37501 through X_37600.",
+      "count": 100
+    },
+    {
+      "slug": "c-37601-37700",
+      "start": 37601,
+      "end": 37700,
+      "title": "Centers X_37601–X_37700",
+      "summary": "Triangle centers X_37601 through X_37700.",
+      "count": 100
+    },
+    {
+      "slug": "c-37701-37800",
+      "start": 37701,
+      "end": 37800,
+      "title": "Centers X_37701–X_37800",
+      "summary": "Triangle centers X_37701 through X_37800.",
+      "count": 100
+    },
+    {
+      "slug": "c-37801-37900",
+      "start": 37801,
+      "end": 37900,
+      "title": "Centers X_37801–X_37900",
+      "summary": "Triangle centers X_37801 through X_37900.",
+      "count": 100
+    },
+    {
+      "slug": "c-37901-38000",
+      "start": 37901,
+      "end": 38000,
+      "title": "Centers X_37901–X_38000",
+      "summary": "Triangle centers X_37901 through X_38000.",
+      "count": 100
+    },
+    {
+      "slug": "c-38001-38100",
+      "start": 38001,
+      "end": 38100,
+      "title": "Centers X_38001–X_38100",
+      "summary": "Triangle centers X_38001 through X_38100.",
+      "count": 100
+    },
+    {
+      "slug": "c-38101-38200",
+      "start": 38101,
+      "end": 38200,
+      "title": "Centers X_38101–X_38200",
+      "summary": "Triangle centers X_38101 through X_38200.",
+      "count": 100
+    },
+    {
+      "slug": "c-38201-38300",
+      "start": 38201,
+      "end": 38300,
+      "title": "Centers X_38201–X_38300",
+      "summary": "Triangle centers X_38201 through X_38300.",
+      "count": 100
+    },
+    {
+      "slug": "c-38301-38400",
+      "start": 38301,
+      "end": 38400,
+      "title": "Centers X_38301–X_38400",
+      "summary": "Triangle centers X_38301 through X_38400.",
+      "count": 100
+    },
+    {
+      "slug": "c-38401-38500",
+      "start": 38401,
+      "end": 38500,
+      "title": "Centers X_38401–X_38500",
+      "summary": "Triangle centers X_38401 through X_38500.",
+      "count": 100
+    },
+    {
+      "slug": "c-38501-38600",
+      "start": 38501,
+      "end": 38600,
+      "title": "Centers X_38501–X_38600",
+      "summary": "Triangle centers X_38501 through X_38600.",
+      "count": 100
+    },
+    {
+      "slug": "c-38601-38700",
+      "start": 38601,
+      "end": 38700,
+      "title": "Centers X_38601–X_38700",
+      "summary": "Triangle centers X_38601 through X_38700.",
+      "count": 100
+    },
+    {
+      "slug": "c-38701-38800",
+      "start": 38701,
+      "end": 38800,
+      "title": "Centers X_38701–X_38800",
+      "summary": "Triangle centers X_38701 through X_38800.",
+      "count": 100
+    },
+    {
+      "slug": "c-38801-38900",
+      "start": 38801,
+      "end": 38900,
+      "title": "Centers X_38801–X_38900",
+      "summary": "Triangle centers X_38801 through X_38900.",
+      "count": 100
+    },
+    {
+      "slug": "c-38901-39000",
+      "start": 38901,
+      "end": 39000,
+      "title": "Centers X_38901–X_39000",
+      "summary": "Triangle centers X_38901 through X_39000.",
+      "count": 100
+    },
+    {
+      "slug": "c-39001-39100",
+      "start": 39001,
+      "end": 39100,
+      "title": "Centers X_39001–X_39100",
+      "summary": "Triangle centers X_39001 through X_39100.",
+      "count": 100
+    },
+    {
+      "slug": "c-39101-39200",
+      "start": 39101,
+      "end": 39200,
+      "title": "Centers X_39101–X_39200",
+      "summary": "Triangle centers X_39101 through X_39200.",
+      "count": 100
+    },
+    {
+      "slug": "c-39201-39300",
+      "start": 39201,
+      "end": 39300,
+      "title": "Centers X_39201–X_39300",
+      "summary": "Triangle centers X_39201 through X_39300.",
+      "count": 100
+    },
+    {
+      "slug": "c-39301-39400",
+      "start": 39301,
+      "end": 39400,
+      "title": "Centers X_39301–X_39400",
+      "summary": "Triangle centers X_39301 through X_39400.",
+      "count": 100
+    },
+    {
+      "slug": "c-39401-39500",
+      "start": 39401,
+      "end": 39500,
+      "title": "Centers X_39401–X_39500",
+      "summary": "Triangle centers X_39401 through X_39500.",
+      "count": 100
+    },
+    {
+      "slug": "c-39501-39600",
+      "start": 39501,
+      "end": 39600,
+      "title": "Centers X_39501–X_39600",
+      "summary": "Triangle centers X_39501 through X_39600.",
+      "count": 100
+    },
+    {
+      "slug": "c-39601-39700",
+      "start": 39601,
+      "end": 39700,
+      "title": "Centers X_39601–X_39700",
+      "summary": "Triangle centers X_39601 through X_39700.",
+      "count": 100
+    },
+    {
+      "slug": "c-39701-39800",
+      "start": 39701,
+      "end": 39800,
+      "title": "Centers X_39701–X_39800",
+      "summary": "Triangle centers X_39701 through X_39800.",
+      "count": 100
+    },
+    {
+      "slug": "c-39801-39900",
+      "start": 39801,
+      "end": 39900,
+      "title": "Centers X_39801–X_39900",
+      "summary": "Triangle centers X_39801 through X_39900.",
+      "count": 100
+    },
+    {
+      "slug": "c-39901-40000",
+      "start": 39901,
+      "end": 40000,
+      "title": "Centers X_39901–X_40000",
+      "summary": "Triangle centers X_39901 through X_40000.",
+      "count": 100
+    },
+    {
+      "slug": "c-40001-40100",
+      "start": 40001,
+      "end": 40100,
+      "title": "Centers X_40001–X_40100",
+      "summary": "Triangle centers X_40001 through X_40100.",
+      "count": 100
+    },
+    {
+      "slug": "c-40101-40200",
+      "start": 40101,
+      "end": 40200,
+      "title": "Centers X_40101–X_40200",
+      "summary": "Triangle centers X_40101 through X_40200.",
+      "count": 100
+    },
+    {
+      "slug": "c-40201-40300",
+      "start": 40201,
+      "end": 40300,
+      "title": "Centers X_40201–X_40300",
+      "summary": "Triangle centers X_40201 through X_40300.",
+      "count": 100
+    },
+    {
+      "slug": "c-40301-40400",
+      "start": 40301,
+      "end": 40400,
+      "title": "Centers X_40301–X_40400",
+      "summary": "Triangle centers X_40301 through X_40400.",
+      "count": 100
+    },
+    {
+      "slug": "c-40401-40500",
+      "start": 40401,
+      "end": 40500,
+      "title": "Centers X_40401–X_40500",
+      "summary": "Triangle centers X_40401 through X_40500.",
+      "count": 100
+    },
+    {
+      "slug": "c-40501-40600",
+      "start": 40501,
+      "end": 40600,
+      "title": "Centers X_40501–X_40600",
+      "summary": "Triangle centers X_40501 through X_40600.",
+      "count": 100
+    },
+    {
+      "slug": "c-40601-40700",
+      "start": 40601,
+      "end": 40700,
+      "title": "Centers X_40601–X_40700",
+      "summary": "Triangle centers X_40601 through X_40700.",
+      "count": 100
+    },
+    {
+      "slug": "c-40701-40800",
+      "start": 40701,
+      "end": 40800,
+      "title": "Centers X_40701–X_40800",
+      "summary": "Triangle centers X_40701 through X_40800.",
+      "count": 100
+    },
+    {
+      "slug": "c-40801-40900",
+      "start": 40801,
+      "end": 40900,
+      "title": "Centers X_40801–X_40900",
+      "summary": "Triangle centers X_40801 through X_40900.",
+      "count": 100
+    },
+    {
+      "slug": "c-40901-41000",
+      "start": 40901,
+      "end": 41000,
+      "title": "Centers X_40901–X_41000",
+      "summary": "Triangle centers X_40901 through X_41000.",
+      "count": 100
+    },
+    {
+      "slug": "c-41001-41100",
+      "start": 41001,
+      "end": 41100,
+      "title": "Centers X_41001–X_41100",
+      "summary": "Triangle centers X_41001 through X_41100.",
+      "count": 100
+    },
+    {
+      "slug": "c-41101-41200",
+      "start": 41101,
+      "end": 41200,
+      "title": "Centers X_41101–X_41200",
+      "summary": "Triangle centers X_41101 through X_41200.",
+      "count": 100
+    },
+    {
+      "slug": "c-41201-41300",
+      "start": 41201,
+      "end": 41300,
+      "title": "Centers X_41201–X_41300",
+      "summary": "Triangle centers X_41201 through X_41300.",
+      "count": 100
+    },
+    {
+      "slug": "c-41301-41400",
+      "start": 41301,
+      "end": 41400,
+      "title": "Centers X_41301–X_41400",
+      "summary": "Triangle centers X_41301 through X_41400.",
+      "count": 100
+    },
+    {
+      "slug": "c-41401-41500",
+      "start": 41401,
+      "end": 41500,
+      "title": "Centers X_41401–X_41500",
+      "summary": "Triangle centers X_41401 through X_41500.",
+      "count": 100
+    },
+    {
+      "slug": "c-41501-41600",
+      "start": 41501,
+      "end": 41600,
+      "title": "Centers X_41501–X_41600",
+      "summary": "Triangle centers X_41501 through X_41600.",
+      "count": 100
+    },
+    {
+      "slug": "c-41601-41700",
+      "start": 41601,
+      "end": 41700,
+      "title": "Centers X_41601–X_41700",
+      "summary": "Triangle centers X_41601 through X_41700.",
+      "count": 100
+    },
+    {
+      "slug": "c-41701-41800",
+      "start": 41701,
+      "end": 41800,
+      "title": "Centers X_41701–X_41800",
+      "summary": "Triangle centers X_41701 through X_41800.",
+      "count": 100
+    },
+    {
+      "slug": "c-41801-41900",
+      "start": 41801,
+      "end": 41900,
+      "title": "Centers X_41801–X_41900",
+      "summary": "Triangle centers X_41801 through X_41900.",
+      "count": 100
+    },
+    {
+      "slug": "c-41901-42000",
+      "start": 41901,
+      "end": 42000,
+      "title": "Centers X_41901–X_42000",
+      "summary": "Triangle centers X_41901 through X_42000.",
+      "count": 100
+    },
+    {
+      "slug": "c-42001-42100",
+      "start": 42001,
+      "end": 42100,
+      "title": "Centers X_42001–X_42100",
+      "summary": "Triangle centers X_42001 through X_42100.",
+      "count": 100
+    },
+    {
+      "slug": "c-42101-42200",
+      "start": 42101,
+      "end": 42200,
+      "title": "Centers X_42101–X_42200",
+      "summary": "Triangle centers X_42101 through X_42200.",
+      "count": 100
+    },
+    {
+      "slug": "c-42201-42300",
+      "start": 42201,
+      "end": 42300,
+      "title": "Centers X_42201–X_42300",
+      "summary": "Triangle centers X_42201 through X_42300.",
+      "count": 100
+    },
+    {
+      "slug": "c-42301-42400",
+      "start": 42301,
+      "end": 42400,
+      "title": "Centers X_42301–X_42400",
+      "summary": "Triangle centers X_42301 through X_42400.",
+      "count": 100
+    },
+    {
+      "slug": "c-42401-42500",
+      "start": 42401,
+      "end": 42500,
+      "title": "Centers X_42401–X_42500",
+      "summary": "Triangle centers X_42401 through X_42500.",
+      "count": 100
+    },
+    {
+      "slug": "c-42501-42600",
+      "start": 42501,
+      "end": 42600,
+      "title": "Centers X_42501–X_42600",
+      "summary": "Triangle centers X_42501 through X_42600.",
+      "count": 100
+    },
+    {
+      "slug": "c-42601-42700",
+      "start": 42601,
+      "end": 42700,
+      "title": "Centers X_42601–X_42700",
+      "summary": "Triangle centers X_42601 through X_42700.",
+      "count": 100
+    },
+    {
+      "slug": "c-42701-42800",
+      "start": 42701,
+      "end": 42800,
+      "title": "Centers X_42701–X_42800",
+      "summary": "Triangle centers X_42701 through X_42800.",
+      "count": 100
+    },
+    {
+      "slug": "c-42801-42900",
+      "start": 42801,
+      "end": 42900,
+      "title": "Centers X_42801–X_42900",
+      "summary": "Triangle centers X_42801 through X_42900.",
+      "count": 100
+    },
+    {
+      "slug": "c-42901-43000",
+      "start": 42901,
+      "end": 43000,
+      "title": "Centers X_42901–X_43000",
+      "summary": "Triangle centers X_42901 through X_43000.",
+      "count": 100
+    },
+    {
+      "slug": "c-43001-43100",
+      "start": 43001,
+      "end": 43100,
+      "title": "Centers X_43001–X_43100",
+      "summary": "Triangle centers X_43001 through X_43100.",
+      "count": 100
+    },
+    {
+      "slug": "c-43101-43200",
+      "start": 43101,
+      "end": 43200,
+      "title": "Centers X_43101–X_43200",
+      "summary": "Triangle centers X_43101 through X_43200.",
+      "count": 100
+    },
+    {
+      "slug": "c-43201-43300",
+      "start": 43201,
+      "end": 43300,
+      "title": "Centers X_43201–X_43300",
+      "summary": "Triangle centers X_43201 through X_43300.",
+      "count": 100
+    },
+    {
+      "slug": "c-43301-43400",
+      "start": 43301,
+      "end": 43400,
+      "title": "Centers X_43301–X_43400",
+      "summary": "Triangle centers X_43301 through X_43400.",
+      "count": 100
+    },
+    {
+      "slug": "c-43401-43500",
+      "start": 43401,
+      "end": 43500,
+      "title": "Centers X_43401–X_43500",
+      "summary": "Triangle centers X_43401 through X_43500.",
+      "count": 100
+    },
+    {
+      "slug": "c-43501-43600",
+      "start": 43501,
+      "end": 43600,
+      "title": "Centers X_43501–X_43600",
+      "summary": "Triangle centers X_43501 through X_43600.",
+      "count": 100
+    },
+    {
+      "slug": "c-43601-43700",
+      "start": 43601,
+      "end": 43700,
+      "title": "Centers X_43601–X_43700",
+      "summary": "Triangle centers X_43601 through X_43700.",
+      "count": 100
+    },
+    {
+      "slug": "c-43701-43800",
+      "start": 43701,
+      "end": 43800,
+      "title": "Centers X_43701–X_43800",
+      "summary": "Triangle centers X_43701 through X_43800.",
+      "count": 100
+    },
+    {
+      "slug": "c-43801-43900",
+      "start": 43801,
+      "end": 43900,
+      "title": "Centers X_43801–X_43900",
+      "summary": "Triangle centers X_43801 through X_43900.",
+      "count": 100
+    },
+    {
+      "slug": "c-43901-44000",
+      "start": 43901,
+      "end": 44000,
+      "title": "Centers X_43901–X_44000",
+      "summary": "Triangle centers X_43901 through X_44000.",
+      "count": 100
+    },
+    {
+      "slug": "c-44001-44100",
+      "start": 44001,
+      "end": 44100,
+      "title": "Centers X_44001–X_44100",
+      "summary": "Triangle centers X_44001 through X_44100.",
+      "count": 100
+    },
+    {
+      "slug": "c-44101-44200",
+      "start": 44101,
+      "end": 44200,
+      "title": "Centers X_44101–X_44200",
+      "summary": "Triangle centers X_44101 through X_44200.",
+      "count": 100
+    },
+    {
+      "slug": "c-44201-44300",
+      "start": 44201,
+      "end": 44300,
+      "title": "Centers X_44201–X_44300",
+      "summary": "Triangle centers X_44201 through X_44300.",
+      "count": 100
+    },
+    {
+      "slug": "c-44301-44400",
+      "start": 44301,
+      "end": 44400,
+      "title": "Centers X_44301–X_44400",
+      "summary": "Triangle centers X_44301 through X_44400.",
+      "count": 100
+    },
+    {
+      "slug": "c-44401-44500",
+      "start": 44401,
+      "end": 44500,
+      "title": "Centers X_44401–X_44500",
+      "summary": "Triangle centers X_44401 through X_44500.",
+      "count": 100
+    },
+    {
+      "slug": "c-44501-44600",
+      "start": 44501,
+      "end": 44600,
+      "title": "Centers X_44501–X_44600",
+      "summary": "Triangle centers X_44501 through X_44600.",
+      "count": 100
+    },
+    {
+      "slug": "c-44601-44700",
+      "start": 44601,
+      "end": 44700,
+      "title": "Centers X_44601–X_44700",
+      "summary": "Triangle centers X_44601 through X_44700.",
+      "count": 100
+    },
+    {
+      "slug": "c-44701-44800",
+      "start": 44701,
+      "end": 44800,
+      "title": "Centers X_44701–X_44800",
+      "summary": "Triangle centers X_44701 through X_44800.",
+      "count": 100
+    },
+    {
+      "slug": "c-44801-44900",
+      "start": 44801,
+      "end": 44900,
+      "title": "Centers X_44801–X_44900",
+      "summary": "Triangle centers X_44801 through X_44900.",
+      "count": 100
+    },
+    {
+      "slug": "c-44901-45000",
+      "start": 44901,
+      "end": 45000,
+      "title": "Centers X_44901–X_45000",
+      "summary": "Triangle centers X_44901 through X_45000.",
+      "count": 100
+    },
+    {
+      "slug": "c-45001-45100",
+      "start": 45001,
+      "end": 45100,
+      "title": "Centers X_45001–X_45100",
+      "summary": "Triangle centers X_45001 through X_45100.",
+      "count": 100
+    },
+    {
+      "slug": "c-45101-45200",
+      "start": 45101,
+      "end": 45200,
+      "title": "Centers X_45101–X_45200",
+      "summary": "Triangle centers X_45101 through X_45200.",
+      "count": 100
+    },
+    {
+      "slug": "c-45201-45300",
+      "start": 45201,
+      "end": 45300,
+      "title": "Centers X_45201–X_45300",
+      "summary": "Triangle centers X_45201 through X_45300.",
+      "count": 100
+    },
+    {
+      "slug": "c-45301-45400",
+      "start": 45301,
+      "end": 45400,
+      "title": "Centers X_45301–X_45400",
+      "summary": "Triangle centers X_45301 through X_45400.",
+      "count": 100
+    },
+    {
+      "slug": "c-45401-45500",
+      "start": 45401,
+      "end": 45500,
+      "title": "Centers X_45401–X_45500",
+      "summary": "Triangle centers X_45401 through X_45500.",
+      "count": 100
+    },
+    {
+      "slug": "c-45501-45600",
+      "start": 45501,
+      "end": 45600,
+      "title": "Centers X_45501–X_45600",
+      "summary": "Triangle centers X_45501 through X_45600.",
+      "count": 100
+    },
+    {
+      "slug": "c-45601-45700",
+      "start": 45601,
+      "end": 45700,
+      "title": "Centers X_45601–X_45700",
+      "summary": "Triangle centers X_45601 through X_45700.",
+      "count": 100
+    },
+    {
+      "slug": "c-45701-45800",
+      "start": 45701,
+      "end": 45800,
+      "title": "Centers X_45701–X_45800",
+      "summary": "Triangle centers X_45701 through X_45800.",
+      "count": 100
+    },
+    {
+      "slug": "c-45801-45900",
+      "start": 45801,
+      "end": 45900,
+      "title": "Centers X_45801–X_45900",
+      "summary": "Triangle centers X_45801 through X_45900.",
+      "count": 100
+    },
+    {
+      "slug": "c-45901-46000",
+      "start": 45901,
+      "end": 46000,
+      "title": "Centers X_45901–X_46000",
+      "summary": "Triangle centers X_45901 through X_46000.",
+      "count": 100
+    },
+    {
+      "slug": "c-46001-46100",
+      "start": 46001,
+      "end": 46100,
+      "title": "Centers X_46001–X_46100",
+      "summary": "Triangle centers X_46001 through X_46100.",
+      "count": 100
+    },
+    {
+      "slug": "c-46101-46200",
+      "start": 46101,
+      "end": 46200,
+      "title": "Centers X_46101–X_46200",
+      "summary": "Triangle centers X_46101 through X_46200.",
+      "count": 100
+    },
+    {
+      "slug": "c-46201-46300",
+      "start": 46201,
+      "end": 46300,
+      "title": "Centers X_46201–X_46300",
+      "summary": "Triangle centers X_46201 through X_46300.",
+      "count": 100
+    },
+    {
+      "slug": "c-46301-46400",
+      "start": 46301,
+      "end": 46400,
+      "title": "Centers X_46301–X_46400",
+      "summary": "Triangle centers X_46301 through X_46400.",
+      "count": 100
+    },
+    {
+      "slug": "c-46401-46500",
+      "start": 46401,
+      "end": 46500,
+      "title": "Centers X_46401–X_46500",
+      "summary": "Triangle centers X_46401 through X_46500.",
+      "count": 100
+    },
+    {
+      "slug": "c-46501-46600",
+      "start": 46501,
+      "end": 46600,
+      "title": "Centers X_46501–X_46600",
+      "summary": "Triangle centers X_46501 through X_46600.",
+      "count": 100
+    },
+    {
+      "slug": "c-46601-46700",
+      "start": 46601,
+      "end": 46700,
+      "title": "Centers X_46601–X_46700",
+      "summary": "Triangle centers X_46601 through X_46700.",
+      "count": 100
+    },
+    {
+      "slug": "c-46701-46800",
+      "start": 46701,
+      "end": 46800,
+      "title": "Centers X_46701–X_46800",
+      "summary": "Triangle centers X_46701 through X_46800.",
+      "count": 100
+    },
+    {
+      "slug": "c-46801-46900",
+      "start": 46801,
+      "end": 46900,
+      "title": "Centers X_46801–X_46900",
+      "summary": "Triangle centers X_46801 through X_46900.",
+      "count": 100
+    },
+    {
+      "slug": "c-46901-47000",
+      "start": 46901,
+      "end": 47000,
+      "title": "Centers X_46901–X_47000",
+      "summary": "Triangle centers X_46901 through X_47000.",
+      "count": 100
+    },
+    {
+      "slug": "c-47001-47100",
+      "start": 47001,
+      "end": 47100,
+      "title": "Centers X_47001–X_47100",
+      "summary": "Triangle centers X_47001 through X_47100.",
+      "count": 100
+    },
+    {
+      "slug": "c-47101-47200",
+      "start": 47101,
+      "end": 47200,
+      "title": "Centers X_47101–X_47200",
+      "summary": "Triangle centers X_47101 through X_47200.",
+      "count": 100
+    },
+    {
+      "slug": "c-47201-47300",
+      "start": 47201,
+      "end": 47300,
+      "title": "Centers X_47201–X_47300",
+      "summary": "Triangle centers X_47201 through X_47300.",
+      "count": 100
+    },
+    {
+      "slug": "c-47301-47400",
+      "start": 47301,
+      "end": 47400,
+      "title": "Centers X_47301–X_47400",
+      "summary": "Triangle centers X_47301 through X_47400.",
+      "count": 100
+    },
+    {
+      "slug": "c-47401-47500",
+      "start": 47401,
+      "end": 47500,
+      "title": "Centers X_47401–X_47500",
+      "summary": "Triangle centers X_47401 through X_47500.",
+      "count": 100
+    },
+    {
+      "slug": "c-47501-47600",
+      "start": 47501,
+      "end": 47600,
+      "title": "Centers X_47501–X_47600",
+      "summary": "Triangle centers X_47501 through X_47600.",
+      "count": 100
+    },
+    {
+      "slug": "c-47601-47700",
+      "start": 47601,
+      "end": 47700,
+      "title": "Centers X_47601–X_47700",
+      "summary": "Triangle centers X_47601 through X_47700.",
+      "count": 100
+    },
+    {
+      "slug": "c-47701-47800",
+      "start": 47701,
+      "end": 47800,
+      "title": "Centers X_47701–X_47800",
+      "summary": "Triangle centers X_47701 through X_47800.",
+      "count": 100
+    },
+    {
+      "slug": "c-47801-47900",
+      "start": 47801,
+      "end": 47900,
+      "title": "Centers X_47801–X_47900",
+      "summary": "Triangle centers X_47801 through X_47900.",
+      "count": 100
+    },
+    {
+      "slug": "c-47901-48000",
+      "start": 47901,
+      "end": 48000,
+      "title": "Centers X_47901–X_48000",
+      "summary": "Triangle centers X_47901 through X_48000.",
+      "count": 100
+    },
+    {
+      "slug": "c-48001-48100",
+      "start": 48001,
+      "end": 48100,
+      "title": "Centers X_48001–X_48100",
+      "summary": "Triangle centers X_48001 through X_48100.",
+      "count": 100
+    },
+    {
+      "slug": "c-48101-48200",
+      "start": 48101,
+      "end": 48200,
+      "title": "Centers X_48101–X_48200",
+      "summary": "Triangle centers X_48101 through X_48200.",
+      "count": 100
+    },
+    {
+      "slug": "c-48201-48300",
+      "start": 48201,
+      "end": 48300,
+      "title": "Centers X_48201–X_48300",
+      "summary": "Triangle centers X_48201 through X_48300.",
+      "count": 100
+    },
+    {
+      "slug": "c-48301-48400",
+      "start": 48301,
+      "end": 48400,
+      "title": "Centers X_48301–X_48400",
+      "summary": "Triangle centers X_48301 through X_48400.",
+      "count": 100
+    },
+    {
+      "slug": "c-48401-48500",
+      "start": 48401,
+      "end": 48500,
+      "title": "Centers X_48401–X_48500",
+      "summary": "Triangle centers X_48401 through X_48500.",
+      "count": 100
+    },
+    {
+      "slug": "c-48501-48600",
+      "start": 48501,
+      "end": 48600,
+      "title": "Centers X_48501–X_48600",
+      "summary": "Triangle centers X_48501 through X_48600.",
+      "count": 100
+    },
+    {
+      "slug": "c-48601-48700",
+      "start": 48601,
+      "end": 48700,
+      "title": "Centers X_48601–X_48700",
+      "summary": "Triangle centers X_48601 through X_48700.",
+      "count": 100
+    },
+    {
+      "slug": "c-48701-48800",
+      "start": 48701,
+      "end": 48800,
+      "title": "Centers X_48701–X_48800",
+      "summary": "Triangle centers X_48701 through X_48800.",
+      "count": 100
+    },
+    {
+      "slug": "c-48801-48900",
+      "start": 48801,
+      "end": 48900,
+      "title": "Centers X_48801–X_48900",
+      "summary": "Triangle centers X_48801 through X_48900.",
+      "count": 100
+    },
+    {
+      "slug": "c-48901-49000",
+      "start": 48901,
+      "end": 49000,
+      "title": "Centers X_48901–X_49000",
+      "summary": "Triangle centers X_48901 through X_49000.",
+      "count": 100
+    },
+    {
+      "slug": "c-49001-49100",
+      "start": 49001,
+      "end": 49100,
+      "title": "Centers X_49001–X_49100",
+      "summary": "Triangle centers X_49001 through X_49100.",
+      "count": 100
+    },
+    {
+      "slug": "c-49101-49200",
+      "start": 49101,
+      "end": 49200,
+      "title": "Centers X_49101–X_49200",
+      "summary": "Triangle centers X_49101 through X_49200.",
+      "count": 100
+    },
+    {
+      "slug": "c-49201-49300",
+      "start": 49201,
+      "end": 49300,
+      "title": "Centers X_49201–X_49300",
+      "summary": "Triangle centers X_49201 through X_49300.",
+      "count": 100
+    },
+    {
+      "slug": "c-49301-49400",
+      "start": 49301,
+      "end": 49400,
+      "title": "Centers X_49301–X_49400",
+      "summary": "Triangle centers X_49301 through X_49400.",
+      "count": 100
+    },
+    {
+      "slug": "c-49401-49500",
+      "start": 49401,
+      "end": 49500,
+      "title": "Centers X_49401–X_49500",
+      "summary": "Triangle centers X_49401 through X_49500.",
+      "count": 100
+    },
+    {
+      "slug": "c-49501-49600",
+      "start": 49501,
+      "end": 49600,
+      "title": "Centers X_49501–X_49600",
+      "summary": "Triangle centers X_49501 through X_49600.",
+      "count": 100
+    },
+    {
+      "slug": "c-49601-49700",
+      "start": 49601,
+      "end": 49700,
+      "title": "Centers X_49601–X_49700",
+      "summary": "Triangle centers X_49601 through X_49700.",
+      "count": 100
+    },
+    {
+      "slug": "c-49701-49800",
+      "start": 49701,
+      "end": 49800,
+      "title": "Centers X_49701–X_49800",
+      "summary": "Triangle centers X_49701 through X_49800.",
+      "count": 100
+    },
+    {
+      "slug": "c-49801-49900",
+      "start": 49801,
+      "end": 49900,
+      "title": "Centers X_49801–X_49900",
+      "summary": "Triangle centers X_49801 through X_49900.",
+      "count": 100
+    },
+    {
+      "slug": "c-49901-50000",
+      "start": 49901,
+      "end": 50000,
+      "title": "Centers X_49901–X_50000",
+      "summary": "Triangle centers X_49901 through X_50000.",
+      "count": 100
+    },
+    {
+      "slug": "c-50001-50100",
+      "start": 50001,
+      "end": 50100,
+      "title": "Centers X_50001–X_50100",
+      "summary": "Triangle centers X_50001 through X_50100.",
+      "count": 100
+    },
+    {
+      "slug": "c-50101-50200",
+      "start": 50101,
+      "end": 50200,
+      "title": "Centers X_50101–X_50200",
+      "summary": "Triangle centers X_50101 through X_50200.",
+      "count": 100
+    },
+    {
+      "slug": "c-50201-50300",
+      "start": 50201,
+      "end": 50300,
+      "title": "Centers X_50201–X_50300",
+      "summary": "Triangle centers X_50201 through X_50300.",
+      "count": 100
+    },
+    {
+      "slug": "c-50301-50400",
+      "start": 50301,
+      "end": 50400,
+      "title": "Centers X_50301–X_50400",
+      "summary": "Triangle centers X_50301 through X_50400.",
+      "count": 100
+    },
+    {
+      "slug": "c-50401-50500",
+      "start": 50401,
+      "end": 50500,
+      "title": "Centers X_50401–X_50500",
+      "summary": "Triangle centers X_50401 through X_50500.",
+      "count": 100
+    },
+    {
+      "slug": "c-50501-50600",
+      "start": 50501,
+      "end": 50600,
+      "title": "Centers X_50501–X_50600",
+      "summary": "Triangle centers X_50501 through X_50600.",
+      "count": 100
+    },
+    {
+      "slug": "c-50601-50700",
+      "start": 50601,
+      "end": 50700,
+      "title": "Centers X_50601–X_50700",
+      "summary": "Triangle centers X_50601 through X_50700.",
+      "count": 100
+    },
+    {
+      "slug": "c-50701-50800",
+      "start": 50701,
+      "end": 50800,
+      "title": "Centers X_50701–X_50800",
+      "summary": "Triangle centers X_50701 through X_50800.",
+      "count": 100
+    },
+    {
+      "slug": "c-50801-50900",
+      "start": 50801,
+      "end": 50900,
+      "title": "Centers X_50801–X_50900",
+      "summary": "Triangle centers X_50801 through X_50900.",
+      "count": 100
+    },
+    {
+      "slug": "c-50901-51000",
+      "start": 50901,
+      "end": 51000,
+      "title": "Centers X_50901–X_51000",
+      "summary": "Triangle centers X_50901 through X_51000.",
+      "count": 100
+    },
+    {
+      "slug": "c-51001-51100",
+      "start": 51001,
+      "end": 51100,
+      "title": "Centers X_51001–X_51100",
+      "summary": "Triangle centers X_51001 through X_51100.",
+      "count": 100
+    },
+    {
+      "slug": "c-51101-51200",
+      "start": 51101,
+      "end": 51200,
+      "title": "Centers X_51101–X_51200",
+      "summary": "Triangle centers X_51101 through X_51200.",
+      "count": 100
+    },
+    {
+      "slug": "c-51201-51300",
+      "start": 51201,
+      "end": 51300,
+      "title": "Centers X_51201–X_51300",
+      "summary": "Triangle centers X_51201 through X_51300.",
+      "count": 100
+    },
+    {
+      "slug": "c-51301-51400",
+      "start": 51301,
+      "end": 51400,
+      "title": "Centers X_51301–X_51400",
+      "summary": "Triangle centers X_51301 through X_51400.",
+      "count": 100
+    },
+    {
+      "slug": "c-51401-51500",
+      "start": 51401,
+      "end": 51500,
+      "title": "Centers X_51401–X_51500",
+      "summary": "Triangle centers X_51401 through X_51500.",
+      "count": 100
+    },
+    {
+      "slug": "c-51501-51600",
+      "start": 51501,
+      "end": 51600,
+      "title": "Centers X_51501–X_51600",
+      "summary": "Triangle centers X_51501 through X_51600.",
+      "count": 100
+    },
+    {
+      "slug": "c-51601-51700",
+      "start": 51601,
+      "end": 51700,
+      "title": "Centers X_51601–X_51700",
+      "summary": "Triangle centers X_51601 through X_51700.",
+      "count": 100
+    },
+    {
+      "slug": "c-51701-51800",
+      "start": 51701,
+      "end": 51800,
+      "title": "Centers X_51701–X_51800",
+      "summary": "Triangle centers X_51701 through X_51800.",
+      "count": 100
+    },
+    {
+      "slug": "c-51801-51900",
+      "start": 51801,
+      "end": 51900,
+      "title": "Centers X_51801–X_51900",
+      "summary": "Triangle centers X_51801 through X_51900.",
+      "count": 100
+    },
+    {
+      "slug": "c-51901-52000",
+      "start": 51901,
+      "end": 52000,
+      "title": "Centers X_51901–X_52000",
+      "summary": "Triangle centers X_51901 through X_52000.",
+      "count": 100
+    },
+    {
+      "slug": "c-52001-52100",
+      "start": 52001,
+      "end": 52100,
+      "title": "Centers X_52001–X_52100",
+      "summary": "Triangle centers X_52001 through X_52100.",
+      "count": 100
+    },
+    {
+      "slug": "c-52101-52200",
+      "start": 52101,
+      "end": 52200,
+      "title": "Centers X_52101–X_52200",
+      "summary": "Triangle centers X_52101 through X_52200.",
+      "count": 100
+    },
+    {
+      "slug": "c-52201-52300",
+      "start": 52201,
+      "end": 52300,
+      "title": "Centers X_52201–X_52300",
+      "summary": "Triangle centers X_52201 through X_52300.",
+      "count": 100
+    },
+    {
+      "slug": "c-52301-52400",
+      "start": 52301,
+      "end": 52400,
+      "title": "Centers X_52301–X_52400",
+      "summary": "Triangle centers X_52301 through X_52400.",
+      "count": 100
+    },
+    {
+      "slug": "c-52401-52500",
+      "start": 52401,
+      "end": 52500,
+      "title": "Centers X_52401–X_52500",
+      "summary": "Triangle centers X_52401 through X_52500.",
+      "count": 100
+    },
+    {
+      "slug": "c-52501-52600",
+      "start": 52501,
+      "end": 52600,
+      "title": "Centers X_52501–X_52600",
+      "summary": "Triangle centers X_52501 through X_52600.",
+      "count": 100
+    },
+    {
+      "slug": "c-52601-52700",
+      "start": 52601,
+      "end": 52700,
+      "title": "Centers X_52601–X_52700",
+      "summary": "Triangle centers X_52601 through X_52700.",
+      "count": 100
+    },
+    {
+      "slug": "c-52701-52800",
+      "start": 52701,
+      "end": 52800,
+      "title": "Centers X_52701–X_52800",
+      "summary": "Triangle centers X_52701 through X_52800.",
+      "count": 100
+    },
+    {
+      "slug": "c-52801-52900",
+      "start": 52801,
+      "end": 52900,
+      "title": "Centers X_52801–X_52900",
+      "summary": "Triangle centers X_52801 through X_52900.",
+      "count": 100
+    },
+    {
+      "slug": "c-52901-53000",
+      "start": 52901,
+      "end": 53000,
+      "title": "Centers X_52901–X_53000",
+      "summary": "Triangle centers X_52901 through X_53000.",
+      "count": 100
+    },
+    {
+      "slug": "c-53001-53100",
+      "start": 53001,
+      "end": 53100,
+      "title": "Centers X_53001–X_53100",
+      "summary": "Triangle centers X_53001 through X_53100.",
+      "count": 100
+    },
+    {
+      "slug": "c-53101-53200",
+      "start": 53101,
+      "end": 53200,
+      "title": "Centers X_53101–X_53200",
+      "summary": "Triangle centers X_53101 through X_53200.",
+      "count": 100
+    },
+    {
+      "slug": "c-53201-53300",
+      "start": 53201,
+      "end": 53300,
+      "title": "Centers X_53201–X_53300",
+      "summary": "Triangle centers X_53201 through X_53300.",
+      "count": 100
+    },
+    {
+      "slug": "c-53301-53400",
+      "start": 53301,
+      "end": 53400,
+      "title": "Centers X_53301–X_53400",
+      "summary": "Triangle centers X_53301 through X_53400.",
+      "count": 100
+    },
+    {
+      "slug": "c-53401-53500",
+      "start": 53401,
+      "end": 53500,
+      "title": "Centers X_53401–X_53500",
+      "summary": "Triangle centers X_53401 through X_53500.",
+      "count": 100
+    },
+    {
+      "slug": "c-53501-53600",
+      "start": 53501,
+      "end": 53600,
+      "title": "Centers X_53501–X_53600",
+      "summary": "Triangle centers X_53501 through X_53600.",
+      "count": 100
+    },
+    {
+      "slug": "c-53601-53700",
+      "start": 53601,
+      "end": 53700,
+      "title": "Centers X_53601–X_53700",
+      "summary": "Triangle centers X_53601 through X_53700.",
+      "count": 100
+    },
+    {
+      "slug": "c-53701-53800",
+      "start": 53701,
+      "end": 53800,
+      "title": "Centers X_53701–X_53800",
+      "summary": "Triangle centers X_53701 through X_53800.",
+      "count": 100
+    },
+    {
+      "slug": "c-53801-53900",
+      "start": 53801,
+      "end": 53900,
+      "title": "Centers X_53801–X_53900",
+      "summary": "Triangle centers X_53801 through X_53900.",
+      "count": 100
+    },
+    {
+      "slug": "c-53901-54000",
+      "start": 53901,
+      "end": 54000,
+      "title": "Centers X_53901–X_54000",
+      "summary": "Triangle centers X_53901 through X_54000.",
+      "count": 100
+    },
+    {
+      "slug": "c-54001-54100",
+      "start": 54001,
+      "end": 54100,
+      "title": "Centers X_54001–X_54100",
+      "summary": "Triangle centers X_54001 through X_54100.",
+      "count": 100
+    },
+    {
+      "slug": "c-54101-54200",
+      "start": 54101,
+      "end": 54200,
+      "title": "Centers X_54101–X_54200",
+      "summary": "Triangle centers X_54101 through X_54200.",
+      "count": 100
+    },
+    {
+      "slug": "c-54201-54300",
+      "start": 54201,
+      "end": 54300,
+      "title": "Centers X_54201–X_54300",
+      "summary": "Triangle centers X_54201 through X_54300.",
+      "count": 100
+    },
+    {
+      "slug": "c-54301-54400",
+      "start": 54301,
+      "end": 54400,
+      "title": "Centers X_54301–X_54400",
+      "summary": "Triangle centers X_54301 through X_54400.",
+      "count": 100
+    },
+    {
+      "slug": "c-54401-54500",
+      "start": 54401,
+      "end": 54500,
+      "title": "Centers X_54401–X_54500",
+      "summary": "Triangle centers X_54401 through X_54500.",
+      "count": 100
+    },
+    {
+      "slug": "c-54501-54600",
+      "start": 54501,
+      "end": 54600,
+      "title": "Centers X_54501–X_54600",
+      "summary": "Triangle centers X_54501 through X_54600.",
+      "count": 100
+    },
+    {
+      "slug": "c-54601-54700",
+      "start": 54601,
+      "end": 54700,
+      "title": "Centers X_54601–X_54700",
+      "summary": "Triangle centers X_54601 through X_54700.",
+      "count": 100
+    },
+    {
+      "slug": "c-54701-54800",
+      "start": 54701,
+      "end": 54800,
+      "title": "Centers X_54701–X_54800",
+      "summary": "Triangle centers X_54701 through X_54800.",
+      "count": 100
+    },
+    {
+      "slug": "c-54801-54900",
+      "start": 54801,
+      "end": 54900,
+      "title": "Centers X_54801–X_54900",
+      "summary": "Triangle centers X_54801 through X_54900.",
+      "count": 100
+    },
+    {
+      "slug": "c-54901-55000",
+      "start": 54901,
+      "end": 55000,
+      "title": "Centers X_54901–X_55000",
+      "summary": "Triangle centers X_54901 through X_55000.",
+      "count": 100
+    },
+    {
+      "slug": "c-55001-55100",
+      "start": 55001,
+      "end": 55100,
+      "title": "Centers X_55001–X_55100",
+      "summary": "Triangle centers X_55001 through X_55100.",
+      "count": 100
+    },
+    {
+      "slug": "c-55101-55200",
+      "start": 55101,
+      "end": 55200,
+      "title": "Centers X_55101–X_55200",
+      "summary": "Triangle centers X_55101 through X_55200.",
+      "count": 100
+    },
+    {
+      "slug": "c-55201-55300",
+      "start": 55201,
+      "end": 55300,
+      "title": "Centers X_55201–X_55300",
+      "summary": "Triangle centers X_55201 through X_55300.",
+      "count": 100
+    },
+    {
+      "slug": "c-55301-55400",
+      "start": 55301,
+      "end": 55400,
+      "title": "Centers X_55301–X_55400",
+      "summary": "Triangle centers X_55301 through X_55400.",
+      "count": 100
+    },
+    {
+      "slug": "c-55401-55500",
+      "start": 55401,
+      "end": 55500,
+      "title": "Centers X_55401–X_55500",
+      "summary": "Triangle centers X_55401 through X_55500.",
+      "count": 100
+    },
+    {
+      "slug": "c-55501-55600",
+      "start": 55501,
+      "end": 55600,
+      "title": "Centers X_55501–X_55600",
+      "summary": "Triangle centers X_55501 through X_55600.",
+      "count": 100
+    },
+    {
+      "slug": "c-55601-55700",
+      "start": 55601,
+      "end": 55700,
+      "title": "Centers X_55601–X_55700",
+      "summary": "Triangle centers X_55601 through X_55700.",
+      "count": 100
+    },
+    {
+      "slug": "c-55701-55800",
+      "start": 55701,
+      "end": 55800,
+      "title": "Centers X_55701–X_55800",
+      "summary": "Triangle centers X_55701 through X_55800.",
+      "count": 100
+    },
+    {
+      "slug": "c-55801-55900",
+      "start": 55801,
+      "end": 55900,
+      "title": "Centers X_55801–X_55900",
+      "summary": "Triangle centers X_55801 through X_55900.",
+      "count": 100
+    },
+    {
+      "slug": "c-55901-56000",
+      "start": 55901,
+      "end": 56000,
+      "title": "Centers X_55901–X_56000",
+      "summary": "Triangle centers X_55901 through X_56000.",
+      "count": 100
+    },
+    {
+      "slug": "c-56001-56100",
+      "start": 56001,
+      "end": 56100,
+      "title": "Centers X_56001–X_56100",
+      "summary": "Triangle centers X_56001 through X_56100.",
+      "count": 100
+    },
+    {
+      "slug": "c-56101-56200",
+      "start": 56101,
+      "end": 56200,
+      "title": "Centers X_56101–X_56200",
+      "summary": "Triangle centers X_56101 through X_56200.",
+      "count": 100
+    },
+    {
+      "slug": "c-56201-56300",
+      "start": 56201,
+      "end": 56300,
+      "title": "Centers X_56201–X_56300",
+      "summary": "Triangle centers X_56201 through X_56300.",
+      "count": 100
+    },
+    {
+      "slug": "c-56301-56400",
+      "start": 56301,
+      "end": 56400,
+      "title": "Centers X_56301–X_56400",
+      "summary": "Triangle centers X_56301 through X_56400.",
+      "count": 100
+    },
+    {
+      "slug": "c-56401-56500",
+      "start": 56401,
+      "end": 56500,
+      "title": "Centers X_56401–X_56500",
+      "summary": "Triangle centers X_56401 through X_56500.",
+      "count": 100
+    },
+    {
+      "slug": "c-56501-56600",
+      "start": 56501,
+      "end": 56600,
+      "title": "Centers X_56501–X_56600",
+      "summary": "Triangle centers X_56501 through X_56600.",
+      "count": 100
+    },
+    {
+      "slug": "c-56601-56700",
+      "start": 56601,
+      "end": 56700,
+      "title": "Centers X_56601–X_56700",
+      "summary": "Triangle centers X_56601 through X_56700.",
+      "count": 100
+    },
+    {
+      "slug": "c-56701-56800",
+      "start": 56701,
+      "end": 56800,
+      "title": "Centers X_56701–X_56800",
+      "summary": "Triangle centers X_56701 through X_56800.",
+      "count": 100
+    },
+    {
+      "slug": "c-56801-56900",
+      "start": 56801,
+      "end": 56900,
+      "title": "Centers X_56801–X_56900",
+      "summary": "Triangle centers X_56801 through X_56900.",
+      "count": 100
+    },
+    {
+      "slug": "c-56901-57000",
+      "start": 56901,
+      "end": 57000,
+      "title": "Centers X_56901–X_57000",
+      "summary": "Triangle centers X_56901 through X_57000.",
+      "count": 100
+    },
+    {
+      "slug": "c-57001-57100",
+      "start": 57001,
+      "end": 57100,
+      "title": "Centers X_57001–X_57100",
+      "summary": "Triangle centers X_57001 through X_57100.",
+      "count": 100
+    },
+    {
+      "slug": "c-57101-57200",
+      "start": 57101,
+      "end": 57200,
+      "title": "Centers X_57101–X_57200",
+      "summary": "Triangle centers X_57101 through X_57200.",
+      "count": 100
+    },
+    {
+      "slug": "c-57201-57300",
+      "start": 57201,
+      "end": 57300,
+      "title": "Centers X_57201–X_57300",
+      "summary": "Triangle centers X_57201 through X_57300.",
+      "count": 100
+    },
+    {
+      "slug": "c-57301-57400",
+      "start": 57301,
+      "end": 57400,
+      "title": "Centers X_57301–X_57400",
+      "summary": "Triangle centers X_57301 through X_57400.",
+      "count": 100
+    },
+    {
+      "slug": "c-57401-57500",
+      "start": 57401,
+      "end": 57500,
+      "title": "Centers X_57401–X_57500",
+      "summary": "Triangle centers X_57401 through X_57500.",
+      "count": 100
+    },
+    {
+      "slug": "c-57501-57600",
+      "start": 57501,
+      "end": 57600,
+      "title": "Centers X_57501–X_57600",
+      "summary": "Triangle centers X_57501 through X_57600.",
+      "count": 100
+    },
+    {
+      "slug": "c-57601-57700",
+      "start": 57601,
+      "end": 57700,
+      "title": "Centers X_57601–X_57700",
+      "summary": "Triangle centers X_57601 through X_57700.",
+      "count": 100
+    },
+    {
+      "slug": "c-57701-57800",
+      "start": 57701,
+      "end": 57800,
+      "title": "Centers X_57701–X_57800",
+      "summary": "Triangle centers X_57701 through X_57800.",
+      "count": 100
+    },
+    {
+      "slug": "c-57801-57900",
+      "start": 57801,
+      "end": 57900,
+      "title": "Centers X_57801–X_57900",
+      "summary": "Triangle centers X_57801 through X_57900.",
+      "count": 100
+    },
+    {
+      "slug": "c-57901-58000",
+      "start": 57901,
+      "end": 58000,
+      "title": "Centers X_57901–X_58000",
+      "summary": "Triangle centers X_57901 through X_58000.",
+      "count": 100
+    },
+    {
+      "slug": "c-58001-58100",
+      "start": 58001,
+      "end": 58100,
+      "title": "Centers X_58001–X_58100",
+      "summary": "Triangle centers X_58001 through X_58100.",
+      "count": 100
+    },
+    {
+      "slug": "c-58101-58200",
+      "start": 58101,
+      "end": 58200,
+      "title": "Centers X_58101–X_58200",
+      "summary": "Triangle centers X_58101 through X_58200.",
+      "count": 100
+    },
+    {
+      "slug": "c-58201-58300",
+      "start": 58201,
+      "end": 58300,
+      "title": "Centers X_58201–X_58300",
+      "summary": "Triangle centers X_58201 through X_58300.",
+      "count": 100
+    },
+    {
+      "slug": "c-58301-58400",
+      "start": 58301,
+      "end": 58400,
+      "title": "Centers X_58301–X_58400",
+      "summary": "Triangle centers X_58301 through X_58400.",
+      "count": 100
+    },
+    {
+      "slug": "c-58401-58500",
+      "start": 58401,
+      "end": 58500,
+      "title": "Centers X_58401–X_58500",
+      "summary": "Triangle centers X_58401 through X_58500.",
+      "count": 100
+    },
+    {
+      "slug": "c-58501-58600",
+      "start": 58501,
+      "end": 58600,
+      "title": "Centers X_58501–X_58600",
+      "summary": "Triangle centers X_58501 through X_58600.",
+      "count": 100
+    },
+    {
+      "slug": "c-58601-58700",
+      "start": 58601,
+      "end": 58700,
+      "title": "Centers X_58601–X_58700",
+      "summary": "Triangle centers X_58601 through X_58700.",
+      "count": 100
+    },
+    {
+      "slug": "c-58701-58800",
+      "start": 58701,
+      "end": 58800,
+      "title": "Centers X_58701–X_58800",
+      "summary": "Triangle centers X_58701 through X_58800.",
+      "count": 100
+    },
+    {
+      "slug": "c-58801-58900",
+      "start": 58801,
+      "end": 58900,
+      "title": "Centers X_58801–X_58900",
+      "summary": "Triangle centers X_58801 through X_58900.",
+      "count": 100
+    },
+    {
+      "slug": "c-58901-59000",
+      "start": 58901,
+      "end": 59000,
+      "title": "Centers X_58901–X_59000",
+      "summary": "Triangle centers X_58901 through X_59000.",
+      "count": 100
+    },
+    {
+      "slug": "c-59001-59100",
+      "start": 59001,
+      "end": 59100,
+      "title": "Centers X_59001–X_59100",
+      "summary": "Triangle centers X_59001 through X_59100.",
+      "count": 100
+    },
+    {
+      "slug": "c-59101-59200",
+      "start": 59101,
+      "end": 59200,
+      "title": "Centers X_59101–X_59200",
+      "summary": "Triangle centers X_59101 through X_59200.",
+      "count": 100
+    },
+    {
+      "slug": "c-59201-59300",
+      "start": 59201,
+      "end": 59300,
+      "title": "Centers X_59201–X_59300",
+      "summary": "Triangle centers X_59201 through X_59300.",
+      "count": 100
+    },
+    {
+      "slug": "c-59301-59400",
+      "start": 59301,
+      "end": 59400,
+      "title": "Centers X_59301–X_59400",
+      "summary": "Triangle centers X_59301 through X_59400.",
+      "count": 100
+    },
+    {
+      "slug": "c-59401-59500",
+      "start": 59401,
+      "end": 59500,
+      "title": "Centers X_59401–X_59500",
+      "summary": "Triangle centers X_59401 through X_59500.",
+      "count": 100
+    },
+    {
+      "slug": "c-59501-59600",
+      "start": 59501,
+      "end": 59600,
+      "title": "Centers X_59501–X_59600",
+      "summary": "Triangle centers X_59501 through X_59600.",
+      "count": 100
+    },
+    {
+      "slug": "c-59601-59700",
+      "start": 59601,
+      "end": 59700,
+      "title": "Centers X_59601–X_59700",
+      "summary": "Triangle centers X_59601 through X_59700.",
+      "count": 100
+    },
+    {
+      "slug": "c-59701-59800",
+      "start": 59701,
+      "end": 59800,
+      "title": "Centers X_59701–X_59800",
+      "summary": "Triangle centers X_59701 through X_59800.",
+      "count": 100
+    },
+    {
+      "slug": "c-59801-59900",
+      "start": 59801,
+      "end": 59900,
+      "title": "Centers X_59801–X_59900",
+      "summary": "Triangle centers X_59801 through X_59900.",
+      "count": 100
+    },
+    {
+      "slug": "c-59901-60000",
+      "start": 59901,
+      "end": 60000,
+      "title": "Centers X_59901–X_60000",
+      "summary": "Triangle centers X_59901 through X_60000.",
+      "count": 100
+    },
+    {
+      "slug": "c-60001-60100",
+      "start": 60001,
+      "end": 60100,
+      "title": "Centers X_60001–X_60100",
+      "summary": "Triangle centers X_60001 through X_60100.",
+      "count": 100
+    },
+    {
+      "slug": "c-60101-60200",
+      "start": 60101,
+      "end": 60200,
+      "title": "Centers X_60101–X_60200",
+      "summary": "Triangle centers X_60101 through X_60200.",
+      "count": 100
+    },
+    {
+      "slug": "c-60201-60300",
+      "start": 60201,
+      "end": 60300,
+      "title": "Centers X_60201–X_60300",
+      "summary": "Triangle centers X_60201 through X_60300.",
+      "count": 100
+    },
+    {
+      "slug": "c-60301-60400",
+      "start": 60301,
+      "end": 60400,
+      "title": "Centers X_60301–X_60400",
+      "summary": "Triangle centers X_60301 through X_60400.",
+      "count": 100
+    },
+    {
+      "slug": "c-60401-60500",
+      "start": 60401,
+      "end": 60500,
+      "title": "Centers X_60401–X_60500",
+      "summary": "Triangle centers X_60401 through X_60500.",
+      "count": 100
+    },
+    {
+      "slug": "c-60501-60600",
+      "start": 60501,
+      "end": 60600,
+      "title": "Centers X_60501–X_60600",
+      "summary": "Triangle centers X_60501 through X_60600.",
+      "count": 100
+    },
+    {
+      "slug": "c-60601-60700",
+      "start": 60601,
+      "end": 60700,
+      "title": "Centers X_60601–X_60700",
+      "summary": "Triangle centers X_60601 through X_60700.",
+      "count": 100
+    },
+    {
+      "slug": "c-60701-60800",
+      "start": 60701,
+      "end": 60800,
+      "title": "Centers X_60701–X_60800",
+      "summary": "Triangle centers X_60701 through X_60800.",
+      "count": 100
+    },
+    {
+      "slug": "c-60801-60900",
+      "start": 60801,
+      "end": 60900,
+      "title": "Centers X_60801–X_60900",
+      "summary": "Triangle centers X_60801 through X_60900.",
+      "count": 100
+    },
+    {
+      "slug": "c-60901-61000",
+      "start": 60901,
+      "end": 61000,
+      "title": "Centers X_60901–X_61000",
+      "summary": "Triangle centers X_60901 through X_61000.",
+      "count": 100
+    },
+    {
+      "slug": "c-61001-61100",
+      "start": 61001,
+      "end": 61100,
+      "title": "Centers X_61001–X_61100",
+      "summary": "Triangle centers X_61001 through X_61100.",
+      "count": 100
+    },
+    {
+      "slug": "c-61101-61200",
+      "start": 61101,
+      "end": 61200,
+      "title": "Centers X_61101–X_61200",
+      "summary": "Triangle centers X_61101 through X_61200.",
+      "count": 100
+    },
+    {
+      "slug": "c-61201-61300",
+      "start": 61201,
+      "end": 61300,
+      "title": "Centers X_61201–X_61300",
+      "summary": "Triangle centers X_61201 through X_61300.",
+      "count": 100
+    },
+    {
+      "slug": "c-61301-61400",
+      "start": 61301,
+      "end": 61400,
+      "title": "Centers X_61301–X_61400",
+      "summary": "Triangle centers X_61301 through X_61400.",
+      "count": 100
+    },
+    {
+      "slug": "c-61401-61500",
+      "start": 61401,
+      "end": 61500,
+      "title": "Centers X_61401–X_61500",
+      "summary": "Triangle centers X_61401 through X_61500.",
+      "count": 100
+    },
+    {
+      "slug": "c-61501-61600",
+      "start": 61501,
+      "end": 61600,
+      "title": "Centers X_61501–X_61600",
+      "summary": "Triangle centers X_61501 through X_61600.",
+      "count": 100
+    },
+    {
+      "slug": "c-61601-61700",
+      "start": 61601,
+      "end": 61700,
+      "title": "Centers X_61601–X_61700",
+      "summary": "Triangle centers X_61601 through X_61700.",
+      "count": 100
+    },
+    {
+      "slug": "c-61701-61800",
+      "start": 61701,
+      "end": 61800,
+      "title": "Centers X_61701–X_61800",
+      "summary": "Triangle centers X_61701 through X_61800.",
+      "count": 100
+    },
+    {
+      "slug": "c-61801-61900",
+      "start": 61801,
+      "end": 61900,
+      "title": "Centers X_61801–X_61900",
+      "summary": "Triangle centers X_61801 through X_61900.",
+      "count": 100
+    },
+    {
+      "slug": "c-61901-62000",
+      "start": 61901,
+      "end": 62000,
+      "title": "Centers X_61901–X_62000",
+      "summary": "Triangle centers X_61901 through X_62000.",
+      "count": 100
+    },
+    {
+      "slug": "c-62001-62100",
+      "start": 62001,
+      "end": 62100,
+      "title": "Centers X_62001–X_62100",
+      "summary": "Triangle centers X_62001 through X_62100.",
+      "count": 100
+    },
+    {
+      "slug": "c-62101-62200",
+      "start": 62101,
+      "end": 62200,
+      "title": "Centers X_62101–X_62200",
+      "summary": "Triangle centers X_62101 through X_62200.",
+      "count": 100
+    },
+    {
+      "slug": "c-62201-62300",
+      "start": 62201,
+      "end": 62300,
+      "title": "Centers X_62201–X_62300",
+      "summary": "Triangle centers X_62201 through X_62300.",
+      "count": 100
+    },
+    {
+      "slug": "c-62301-62400",
+      "start": 62301,
+      "end": 62400,
+      "title": "Centers X_62301–X_62400",
+      "summary": "Triangle centers X_62301 through X_62400.",
+      "count": 100
+    },
+    {
+      "slug": "c-62401-62500",
+      "start": 62401,
+      "end": 62500,
+      "title": "Centers X_62401–X_62500",
+      "summary": "Triangle centers X_62401 through X_62500.",
+      "count": 100
+    },
+    {
+      "slug": "c-62501-62600",
+      "start": 62501,
+      "end": 62600,
+      "title": "Centers X_62501–X_62600",
+      "summary": "Triangle centers X_62501 through X_62600.",
+      "count": 100
+    },
+    {
+      "slug": "c-62601-62700",
+      "start": 62601,
+      "end": 62700,
+      "title": "Centers X_62601–X_62700",
+      "summary": "Triangle centers X_62601 through X_62700.",
+      "count": 100
+    },
+    {
+      "slug": "c-62701-62800",
+      "start": 62701,
+      "end": 62800,
+      "title": "Centers X_62701–X_62800",
+      "summary": "Triangle centers X_62701 through X_62800.",
+      "count": 100
+    },
+    {
+      "slug": "c-62801-62900",
+      "start": 62801,
+      "end": 62900,
+      "title": "Centers X_62801–X_62900",
+      "summary": "Triangle centers X_62801 through X_62900.",
+      "count": 100
+    },
+    {
+      "slug": "c-62901-63000",
+      "start": 62901,
+      "end": 63000,
+      "title": "Centers X_62901–X_63000",
+      "summary": "Triangle centers X_62901 through X_63000.",
+      "count": 100
+    },
+    {
+      "slug": "c-63001-63100",
+      "start": 63001,
+      "end": 63100,
+      "title": "Centers X_63001–X_63100",
+      "summary": "Triangle centers X_63001 through X_63100.",
+      "count": 100
+    },
+    {
+      "slug": "c-63101-63200",
+      "start": 63101,
+      "end": 63200,
+      "title": "Centers X_63101–X_63200",
+      "summary": "Triangle centers X_63101 through X_63200.",
+      "count": 100
+    },
+    {
+      "slug": "c-63201-63300",
+      "start": 63201,
+      "end": 63300,
+      "title": "Centers X_63201–X_63300",
+      "summary": "Triangle centers X_63201 through X_63300.",
+      "count": 100
+    },
+    {
+      "slug": "c-63301-63400",
+      "start": 63301,
+      "end": 63400,
+      "title": "Centers X_63301–X_63400",
+      "summary": "Triangle centers X_63301 through X_63400.",
+      "count": 100
+    },
+    {
+      "slug": "c-63401-63500",
+      "start": 63401,
+      "end": 63500,
+      "title": "Centers X_63401–X_63500",
+      "summary": "Triangle centers X_63401 through X_63500.",
+      "count": 100
+    },
+    {
+      "slug": "c-63501-63600",
+      "start": 63501,
+      "end": 63600,
+      "title": "Centers X_63501–X_63600",
+      "summary": "Triangle centers X_63501 through X_63600.",
+      "count": 100
+    },
+    {
+      "slug": "c-63601-63700",
+      "start": 63601,
+      "end": 63700,
+      "title": "Centers X_63601–X_63700",
+      "summary": "Triangle centers X_63601 through X_63700.",
+      "count": 100
+    },
+    {
+      "slug": "c-63701-63800",
+      "start": 63701,
+      "end": 63800,
+      "title": "Centers X_63701–X_63800",
+      "summary": "Triangle centers X_63701 through X_63800.",
+      "count": 100
+    },
+    {
+      "slug": "c-63801-63900",
+      "start": 63801,
+      "end": 63900,
+      "title": "Centers X_63801–X_63900",
+      "summary": "Triangle centers X_63801 through X_63900.",
+      "count": 100
+    },
+    {
+      "slug": "c-63901-64000",
+      "start": 63901,
+      "end": 64000,
+      "title": "Centers X_63901–X_64000",
+      "summary": "Triangle centers X_63901 through X_64000.",
+      "count": 100
+    },
+    {
+      "slug": "c-64001-64100",
+      "start": 64001,
+      "end": 64100,
+      "title": "Centers X_64001–X_64100",
+      "summary": "Triangle centers X_64001 through X_64100.",
+      "count": 100
+    },
+    {
+      "slug": "c-64101-64200",
+      "start": 64101,
+      "end": 64200,
+      "title": "Centers X_64101–X_64200",
+      "summary": "Triangle centers X_64101 through X_64200.",
+      "count": 100
+    },
+    {
+      "slug": "c-64201-64300",
+      "start": 64201,
+      "end": 64300,
+      "title": "Centers X_64201–X_64300",
+      "summary": "Triangle centers X_64201 through X_64300.",
+      "count": 100
+    },
+    {
+      "slug": "c-64301-64400",
+      "start": 64301,
+      "end": 64400,
+      "title": "Centers X_64301–X_64400",
+      "summary": "Triangle centers X_64301 through X_64400.",
+      "count": 100
+    },
+    {
+      "slug": "c-64401-64500",
+      "start": 64401,
+      "end": 64500,
+      "title": "Centers X_64401–X_64500",
+      "summary": "Triangle centers X_64401 through X_64500.",
+      "count": 100
+    },
+    {
+      "slug": "c-64501-64600",
+      "start": 64501,
+      "end": 64600,
+      "title": "Centers X_64501–X_64600",
+      "summary": "Triangle centers X_64501 through X_64600.",
+      "count": 100
+    },
+    {
+      "slug": "c-64601-64700",
+      "start": 64601,
+      "end": 64700,
+      "title": "Centers X_64601–X_64700",
+      "summary": "Triangle centers X_64601 through X_64700.",
+      "count": 100
+    },
+    {
+      "slug": "c-64701-64800",
+      "start": 64701,
+      "end": 64800,
+      "title": "Centers X_64701–X_64800",
+      "summary": "Triangle centers X_64701 through X_64800.",
+      "count": 100
+    },
+    {
+      "slug": "c-64801-64900",
+      "start": 64801,
+      "end": 64900,
+      "title": "Centers X_64801–X_64900",
+      "summary": "Triangle centers X_64801 through X_64900.",
+      "count": 100
+    },
+    {
+      "slug": "c-64901-65000",
+      "start": 64901,
+      "end": 65000,
+      "title": "Centers X_64901–X_65000",
+      "summary": "Triangle centers X_64901 through X_65000.",
+      "count": 100
+    },
+    {
+      "slug": "c-65001-65100",
+      "start": 65001,
+      "end": 65100,
+      "title": "Centers X_65001–X_65100",
+      "summary": "Triangle centers X_65001 through X_65100.",
+      "count": 100
+    },
+    {
+      "slug": "c-65101-65200",
+      "start": 65101,
+      "end": 65200,
+      "title": "Centers X_65101–X_65200",
+      "summary": "Triangle centers X_65101 through X_65200.",
+      "count": 100
+    },
+    {
+      "slug": "c-65201-65300",
+      "start": 65201,
+      "end": 65300,
+      "title": "Centers X_65201–X_65300",
+      "summary": "Triangle centers X_65201 through X_65300.",
+      "count": 100
+    },
+    {
+      "slug": "c-65301-65400",
+      "start": 65301,
+      "end": 65400,
+      "title": "Centers X_65301–X_65400",
+      "summary": "Triangle centers X_65301 through X_65400.",
+      "count": 100
+    },
+    {
+      "slug": "c-65401-65500",
+      "start": 65401,
+      "end": 65500,
+      "title": "Centers X_65401–X_65500",
+      "summary": "Triangle centers X_65401 through X_65500.",
+      "count": 100
+    },
+    {
+      "slug": "c-65501-65600",
+      "start": 65501,
+      "end": 65600,
+      "title": "Centers X_65501–X_65600",
+      "summary": "Triangle centers X_65501 through X_65600.",
+      "count": 100
+    },
+    {
+      "slug": "c-65601-65700",
+      "start": 65601,
+      "end": 65700,
+      "title": "Centers X_65601–X_65700",
+      "summary": "Triangle centers X_65601 through X_65700.",
+      "count": 100
+    },
+    {
+      "slug": "c-65701-65800",
+      "start": 65701,
+      "end": 65800,
+      "title": "Centers X_65701–X_65800",
+      "summary": "Triangle centers X_65701 through X_65800.",
+      "count": 100
+    },
+    {
+      "slug": "c-65801-65900",
+      "start": 65801,
+      "end": 65900,
+      "title": "Centers X_65801–X_65900",
+      "summary": "Triangle centers X_65801 through X_65900.",
+      "count": 100
+    },
+    {
+      "slug": "c-65901-66000",
+      "start": 65901,
+      "end": 66000,
+      "title": "Centers X_65901–X_66000",
+      "summary": "Triangle centers X_65901 through X_66000.",
+      "count": 100
+    },
+    {
+      "slug": "c-66001-66100",
+      "start": 66001,
+      "end": 66100,
+      "title": "Centers X_66001–X_66100",
+      "summary": "Triangle centers X_66001 through X_66100.",
+      "count": 100
+    },
+    {
+      "slug": "c-66101-66200",
+      "start": 66101,
+      "end": 66200,
+      "title": "Centers X_66101–X_66200",
+      "summary": "Triangle centers X_66101 through X_66200.",
+      "count": 100
+    },
+    {
+      "slug": "c-66201-66300",
+      "start": 66201,
+      "end": 66300,
+      "title": "Centers X_66201–X_66300",
+      "summary": "Triangle centers X_66201 through X_66300.",
+      "count": 100
+    },
+    {
+      "slug": "c-66301-66400",
+      "start": 66301,
+      "end": 66400,
+      "title": "Centers X_66301–X_66400",
+      "summary": "Triangle centers X_66301 through X_66400.",
+      "count": 100
+    },
+    {
+      "slug": "c-66401-66500",
+      "start": 66401,
+      "end": 66500,
+      "title": "Centers X_66401–X_66500",
+      "summary": "Triangle centers X_66401 through X_66500.",
+      "count": 100
+    },
+    {
+      "slug": "c-66501-66600",
+      "start": 66501,
+      "end": 66600,
+      "title": "Centers X_66501–X_66600",
+      "summary": "Triangle centers X_66501 through X_66600.",
+      "count": 100
+    },
+    {
+      "slug": "c-66601-66700",
+      "start": 66601,
+      "end": 66700,
+      "title": "Centers X_66601–X_66700",
+      "summary": "Triangle centers X_66601 through X_66700.",
+      "count": 100
+    },
+    {
+      "slug": "c-66701-66800",
+      "start": 66701,
+      "end": 66800,
+      "title": "Centers X_66701–X_66800",
+      "summary": "Triangle centers X_66701 through X_66800.",
+      "count": 100
+    },
+    {
+      "slug": "c-66801-66900",
+      "start": 66801,
+      "end": 66900,
+      "title": "Centers X_66801–X_66900",
+      "summary": "Triangle centers X_66801 through X_66900.",
+      "count": 100
+    },
+    {
+      "slug": "c-66901-67000",
+      "start": 66901,
+      "end": 67000,
+      "title": "Centers X_66901–X_67000",
+      "summary": "Triangle centers X_66901 through X_67000.",
+      "count": 100
+    },
+    {
+      "slug": "c-67001-67100",
+      "start": 67001,
+      "end": 67100,
+      "title": "Centers X_67001–X_67100",
+      "summary": "Triangle centers X_67001 through X_67100.",
+      "count": 100
+    },
+    {
+      "slug": "c-67101-67200",
+      "start": 67101,
+      "end": 67200,
+      "title": "Centers X_67101–X_67200",
+      "summary": "Triangle centers X_67101 through X_67200.",
+      "count": 100
+    },
+    {
+      "slug": "c-67201-67300",
+      "start": 67201,
+      "end": 67300,
+      "title": "Centers X_67201–X_67300",
+      "summary": "Triangle centers X_67201 through X_67300.",
+      "count": 100
+    },
+    {
+      "slug": "c-67301-67400",
+      "start": 67301,
+      "end": 67400,
+      "title": "Centers X_67301–X_67400",
+      "summary": "Triangle centers X_67301 through X_67400.",
+      "count": 100
+    },
+    {
+      "slug": "c-67401-67500",
+      "start": 67401,
+      "end": 67500,
+      "title": "Centers X_67401–X_67500",
+      "summary": "Triangle centers X_67401 through X_67500.",
+      "count": 100
+    },
+    {
+      "slug": "c-67501-67600",
+      "start": 67501,
+      "end": 67600,
+      "title": "Centers X_67501–X_67600",
+      "summary": "Triangle centers X_67501 through X_67600.",
+      "count": 100
+    },
+    {
+      "slug": "c-67601-67700",
+      "start": 67601,
+      "end": 67700,
+      "title": "Centers X_67601–X_67700",
+      "summary": "Triangle centers X_67601 through X_67700.",
+      "count": 100
+    },
+    {
+      "slug": "c-67701-67800",
+      "start": 67701,
+      "end": 67800,
+      "title": "Centers X_67701–X_67800",
+      "summary": "Triangle centers X_67701 through X_67800.",
+      "count": 100
+    },
+    {
+      "slug": "c-67801-67900",
+      "start": 67801,
+      "end": 67900,
+      "title": "Centers X_67801–X_67900",
+      "summary": "Triangle centers X_67801 through X_67900.",
+      "count": 100
+    },
+    {
+      "slug": "c-67901-68000",
+      "start": 67901,
+      "end": 68000,
+      "title": "Centers X_67901–X_68000",
+      "summary": "Triangle centers X_67901 through X_68000.",
+      "count": 100
+    },
+    {
+      "slug": "c-68001-68100",
+      "start": 68001,
+      "end": 68100,
+      "title": "Centers X_68001–X_68100",
+      "summary": "Triangle centers X_68001 through X_68100.",
+      "count": 100
+    },
+    {
+      "slug": "c-68101-68200",
+      "start": 68101,
+      "end": 68200,
+      "title": "Centers X_68101–X_68200",
+      "summary": "Triangle centers X_68101 through X_68200.",
+      "count": 100
+    },
+    {
+      "slug": "c-68201-68300",
+      "start": 68201,
+      "end": 68300,
+      "title": "Centers X_68201–X_68300",
+      "summary": "Triangle centers X_68201 through X_68300.",
+      "count": 100
+    },
+    {
+      "slug": "c-68301-68400",
+      "start": 68301,
+      "end": 68400,
+      "title": "Centers X_68301–X_68400",
+      "summary": "Triangle centers X_68301 through X_68400.",
+      "count": 100
+    },
+    {
+      "slug": "c-68401-68500",
+      "start": 68401,
+      "end": 68500,
+      "title": "Centers X_68401–X_68500",
+      "summary": "Triangle centers X_68401 through X_68500.",
+      "count": 100
+    },
+    {
+      "slug": "c-68501-68600",
+      "start": 68501,
+      "end": 68600,
+      "title": "Centers X_68501–X_68600",
+      "summary": "Triangle centers X_68501 through X_68600.",
+      "count": 100
+    },
+    {
+      "slug": "c-68601-68700",
+      "start": 68601,
+      "end": 68700,
+      "title": "Centers X_68601–X_68700",
+      "summary": "Triangle centers X_68601 through X_68700.",
+      "count": 100
+    },
+    {
+      "slug": "c-68701-68800",
+      "start": 68701,
+      "end": 68800,
+      "title": "Centers X_68701–X_68800",
+      "summary": "Triangle centers X_68701 through X_68800.",
+      "count": 100
+    },
+    {
+      "slug": "c-68801-68900",
+      "start": 68801,
+      "end": 68900,
+      "title": "Centers X_68801–X_68900",
+      "summary": "Triangle centers X_68801 through X_68900.",
+      "count": 100
+    },
+    {
+      "slug": "c-68901-69000",
+      "start": 68901,
+      "end": 69000,
+      "title": "Centers X_68901–X_69000",
+      "summary": "Triangle centers X_68901 through X_69000.",
+      "count": 100
+    },
+    {
+      "slug": "c-69001-69100",
+      "start": 69001,
+      "end": 69100,
+      "title": "Centers X_69001–X_69100",
+      "summary": "Triangle centers X_69001 through X_69100.",
+      "count": 100
+    },
+    {
+      "slug": "c-69101-69200",
+      "start": 69101,
+      "end": 69200,
+      "title": "Centers X_69101–X_69200",
+      "summary": "Triangle centers X_69101 through X_69200.",
+      "count": 100
+    },
+    {
+      "slug": "c-69201-69300",
+      "start": 69201,
+      "end": 69300,
+      "title": "Centers X_69201–X_69300",
+      "summary": "Triangle centers X_69201 through X_69300.",
+      "count": 100
+    },
+    {
+      "slug": "c-69301-69400",
+      "start": 69301,
+      "end": 69400,
+      "title": "Centers X_69301–X_69400",
+      "summary": "Triangle centers X_69301 through X_69400.",
+      "count": 100
+    },
+    {
+      "slug": "c-69401-69500",
+      "start": 69401,
+      "end": 69500,
+      "title": "Centers X_69401–X_69500",
+      "summary": "Triangle centers X_69401 through X_69500.",
+      "count": 100
+    },
+    {
+      "slug": "c-69501-69600",
+      "start": 69501,
+      "end": 69600,
+      "title": "Centers X_69501–X_69600",
+      "summary": "Triangle centers X_69501 through X_69600.",
+      "count": 100
+    },
+    {
+      "slug": "c-69601-69700",
+      "start": 69601,
+      "end": 69700,
+      "title": "Centers X_69601–X_69700",
+      "summary": "Triangle centers X_69601 through X_69700.",
+      "count": 100
+    },
+    {
+      "slug": "c-69701-69800",
+      "start": 69701,
+      "end": 69800,
+      "title": "Centers X_69701–X_69800",
+      "summary": "Triangle centers X_69701 through X_69800.",
+      "count": 100
+    },
+    {
+      "slug": "c-69801-69900",
+      "start": 69801,
+      "end": 69900,
+      "title": "Centers X_69801–X_69900",
+      "summary": "Triangle centers X_69801 through X_69900.",
+      "count": 100
+    },
+    {
+      "slug": "c-69901-70000",
+      "start": 69901,
+      "end": 70000,
+      "title": "Centers X_69901–X_70000",
+      "summary": "Triangle centers X_69901 through X_70000.",
+      "count": 100
+    },
+    {
+      "slug": "c-70001-70100",
+      "start": 70001,
+      "end": 70100,
+      "title": "Centers X_70001–X_70100",
+      "summary": "Triangle centers X_70001 through X_70100.",
+      "count": 100
+    },
+    {
+      "slug": "c-70101-70200",
+      "start": 70101,
+      "end": 70200,
+      "title": "Centers X_70101–X_70200",
+      "summary": "Triangle centers X_70101 through X_70200.",
+      "count": 100
+    },
+    {
+      "slug": "c-70201-70300",
+      "start": 70201,
+      "end": 70300,
+      "title": "Centers X_70201–X_70300",
+      "summary": "Triangle centers X_70201 through X_70300.",
+      "count": 100
+    },
+    {
+      "slug": "c-70301-70400",
+      "start": 70301,
+      "end": 70400,
+      "title": "Centers X_70301–X_70400",
+      "summary": "Triangle centers X_70301 through X_70400.",
+      "count": 100
+    },
+    {
+      "slug": "c-70401-70500",
+      "start": 70401,
+      "end": 70500,
+      "title": "Centers X_70401–X_70500",
+      "summary": "Triangle centers X_70401 through X_70500.",
+      "count": 100
+    },
+    {
+      "slug": "c-70501-70600",
+      "start": 70501,
+      "end": 70600,
+      "title": "Centers X_70501–X_70600",
+      "summary": "Triangle centers X_70501 through X_70600.",
+      "count": 100
+    },
+    {
+      "slug": "c-70601-70700",
+      "start": 70601,
+      "end": 70700,
+      "title": "Centers X_70601–X_70700",
+      "summary": "Triangle centers X_70601 through X_70700.",
+      "count": 100
+    },
+    {
+      "slug": "c-70701-70800",
+      "start": 70701,
+      "end": 70800,
+      "title": "Centers X_70701–X_70800",
+      "summary": "Triangle centers X_70701 through X_70800.",
+      "count": 100
+    },
+    {
+      "slug": "c-70801-70900",
+      "start": 70801,
+      "end": 70900,
+      "title": "Centers X_70801–X_70900",
+      "summary": "Triangle centers X_70801 through X_70900.",
+      "count": 100
+    },
+    {
+      "slug": "c-70901-71000",
+      "start": 70901,
+      "end": 71000,
+      "title": "Centers X_70901–X_71000",
+      "summary": "Triangle centers X_70901 through X_71000.",
+      "count": 100
+    },
+    {
+      "slug": "c-71001-71100",
+      "start": 71001,
+      "end": 71100,
+      "title": "Centers X_71001–X_71100",
+      "summary": "Triangle centers X_71001 through X_71100.",
+      "count": 100
+    },
+    {
+      "slug": "c-71101-71200",
+      "start": 71101,
+      "end": 71200,
+      "title": "Centers X_71101–X_71200",
+      "summary": "Triangle centers X_71101 through X_71200.",
+      "count": 100
+    },
+    {
+      "slug": "c-71201-71300",
+      "start": 71201,
+      "end": 71300,
+      "title": "Centers X_71201–X_71300",
+      "summary": "Triangle centers X_71201 through X_71300.",
+      "count": 100
+    },
+    {
+      "slug": "c-71301-71400",
+      "start": 71301,
+      "end": 71400,
+      "title": "Centers X_71301–X_71400",
+      "summary": "Triangle centers X_71301 through X_71400.",
+      "count": 100
+    },
+    {
+      "slug": "c-71401-71500",
+      "start": 71401,
+      "end": 71500,
+      "title": "Centers X_71401–X_71500",
+      "summary": "Triangle centers X_71401 through X_71500.",
+      "count": 100
+    },
+    {
+      "slug": "c-71501-71600",
+      "start": 71501,
+      "end": 71600,
+      "title": "Centers X_71501–X_71600",
+      "summary": "Triangle centers X_71501 through X_71600.",
+      "count": 100
+    },
+    {
+      "slug": "c-71601-71700",
+      "start": 71601,
+      "end": 71700,
+      "title": "Centers X_71601–X_71700",
+      "summary": "Triangle centers X_71601 through X_71700.",
+      "count": 100
+    },
+    {
+      "slug": "c-71701-71800",
+      "start": 71701,
+      "end": 71800,
+      "title": "Centers X_71701–X_71800",
+      "summary": "Triangle centers X_71701 through X_71800.",
+      "count": 100
+    },
+    {
+      "slug": "c-71801-71900",
+      "start": 71801,
+      "end": 71900,
+      "title": "Centers X_71801–X_71900",
+      "summary": "Triangle centers X_71801 through X_71900.",
+      "count": 100
+    },
+    {
+      "slug": "c-71901-72000",
+      "start": 71901,
+      "end": 72000,
+      "title": "Centers X_71901–X_72000",
+      "summary": "Triangle centers X_71901 through X_72000.",
+      "count": 100
+    },
+    {
+      "slug": "c-72001-72100",
+      "start": 72001,
+      "end": 72100,
+      "title": "Centers X_72001–X_72100",
+      "summary": "Triangle centers X_72001 through X_72100.",
+      "count": 100
+    },
+    {
+      "slug": "c-72101-72200",
+      "start": 72101,
+      "end": 72200,
+      "title": "Centers X_72101–X_72200",
+      "summary": "Triangle centers X_72101 through X_72200.",
+      "count": 100
+    },
+    {
+      "slug": "c-72201-72300",
+      "start": 72201,
+      "end": 72300,
+      "title": "Centers X_72201–X_72300",
+      "summary": "Triangle centers X_72201 through X_72300.",
+      "count": 100
+    },
+    {
+      "slug": "c-72301-72400",
+      "start": 72301,
+      "end": 72400,
+      "title": "Centers X_72301–X_72400",
+      "summary": "Triangle centers X_72301 through X_72400.",
+      "count": 100
+    },
+    {
+      "slug": "c-72401-72500",
+      "start": 72401,
+      "end": 72500,
+      "title": "Centers X_72401–X_72500",
+      "summary": "Triangle centers X_72401 through X_72500.",
+      "count": 100
+    },
+    {
+      "slug": "c-72501-72600",
+      "start": 72501,
+      "end": 72600,
+      "title": "Centers X_72501–X_72600",
+      "summary": "Triangle centers X_72501 through X_72600.",
+      "count": 100
+    },
+    {
+      "slug": "c-72601-72700",
+      "start": 72601,
+      "end": 72700,
+      "title": "Centers X_72601–X_72700",
+      "summary": "Triangle centers X_72601 through X_72700.",
+      "count": 100
+    },
+    {
+      "slug": "c-72701-72800",
+      "start": 72701,
+      "end": 72800,
+      "title": "Centers X_72701–X_72800",
+      "summary": "Triangle centers X_72701 through X_72800.",
+      "count": 100
+    },
+    {
+      "slug": "c-72801-72900",
+      "start": 72801,
+      "end": 72900,
+      "title": "Centers X_72801–X_72900",
+      "summary": "Triangle centers X_72801 through X_72900.",
+      "count": 100
+    },
+    {
+      "slug": "c-72901-73000",
+      "start": 72901,
+      "end": 73000,
+      "title": "Centers X_72901–X_73000",
+      "summary": "Triangle centers X_72901 through X_73000.",
+      "count": 100
+    },
+    {
+      "slug": "c-73001-73100",
+      "start": 73001,
+      "end": 73100,
+      "title": "Centers X_73001–X_73100",
+      "summary": "Triangle centers X_73001 through X_73100.",
+      "count": 100
+    },
+    {
+      "slug": "c-73101-73200",
+      "start": 73101,
+      "end": 73200,
+      "title": "Centers X_73101–X_73200",
+      "summary": "Triangle centers X_73101 through X_73200.",
+      "count": 100
+    },
+    {
+      "slug": "c-73201-73300",
+      "start": 73201,
+      "end": 73300,
+      "title": "Centers X_73201–X_73300",
+      "summary": "Triangle centers X_73201 through X_73300.",
+      "count": 100
+    },
+    {
+      "slug": "c-73301-73400",
+      "start": 73301,
+      "end": 73400,
+      "title": "Centers X_73301–X_73400",
+      "summary": "Triangle centers X_73301 through X_73400.",
+      "count": 10
+    }
+  ],
+  "stats": {
+    "equilateral": {
+      "seconds": 378.85,
+      "exact": 69986,
+      "mp50": 675,
+      "indeterminate": 26403,
+      "ideal": 0,
+      "unresolved": 2649
+    },
+    "heronian": {
+      "seconds": 178.54,
+      "exact": 71004,
+      "mp50": 1777,
+      "indeterminate": 1,
+      "ideal": 1456,
+      "unresolved": 529
+    },
+    "right": {
+      "seconds": 162.18,
+      "exact": 71338,
+      "mp50": 1415,
+      "indeterminate": 126,
+      "ideal": 3000,
+      "unresolved": 557
+    },
+    "kimberling": {
+      "seconds": 359.58,
+      "exact": 71003,
+      "mp50": 1765,
+      "indeterminate": 0,
+      "ideal": 1403,
+      "unresolved": 542
+    },
+    "gnomon": {
+      "seconds": 1032.06,
+      "exact": 70436,
+      "mp50": 898,
+      "indeterminate": 428,
+      "ideal": 7107,
+      "unresolved": 1976
+    },
+    "golden": {
+      "seconds": 1039.58,
+      "exact": 70429,
+      "mp50": 938,
+      "indeterminate": 383,
+      "ideal": 7069,
+      "unresolved": 1943
+    },
+    "kepler": {
+      "seconds": 1027.16,
+      "exact": 71338,
+      "mp50": 1420,
+      "indeterminate": 118,
+      "ideal": 2954,
+      "unresolved": 552
+    }
+  },
+  "collinearity_audits": {
+    "heronian": {
+      "tested_centers": 68047,
+      "passed_centers": 66875,
+      "failed_count": 1172,
+      "failed_sample": [
+        [
+          135,
+          3,
+          4
+        ],
+        [
+          151,
+          3,
+          4
+        ],
+        [
+          198,
+          3,
+          4
+        ],
+        [
+          420,
+          1,
+          4
+        ],
+        [
+          426,
+          1,
+          4
+        ],
+        [
+          434,
+          1,
+          2
+        ],
+        [
+          600,
+          0,
+          1
+        ],
+        [
+          611,
+          1,
+          4
+        ],
+        [
+          681,
+          1,
+          2
+        ],
+        [
+          843,
+          3,
+          4
+        ],
+        [
+          892,
+          3,
+          4
+        ],
+        [
+          920,
+          3,
+          4
+        ],
+        [
+          1009,
+          3,
+          4
+        ],
+        [
+          1071,
+          3,
+          4
+        ],
+        [
+          1223,
+          3,
+          4
+        ],
+        [
+          1415,
+          3,
+          4
+        ],
+        [
+          1469,
+          3,
+          4
+        ],
+        [
+          1512,
+          3,
+          4
+        ],
+        [
+          1567,
+          0,
+          1
+        ],
+        [
+          1586,
+          3,
+          4
+        ],
+        [
+          1612,
+          3,
+          4
+        ],
+        [
+          1616,
+          3,
+          4
+        ],
+        [
+          1824,
+          3,
+          4
+        ],
+        [
+          1895,
+          3,
+          4
+        ],
+        [
+          1912,
+          2,
+          3
+        ]
+      ]
+    },
+    "kimberling": {
+      "tested_centers": 68049,
+      "passed_centers": 66943,
+      "failed_count": 1106,
+      "failed_sample": [
+        [
+          135,
+          3,
+          4
+        ],
+        [
+          151,
+          3,
+          4
+        ],
+        [
+          198,
+          3,
+          4
+        ],
+        [
+          420,
+          1,
+          4
+        ],
+        [
+          426,
+          1,
+          4
+        ],
+        [
+          434,
+          1,
+          2
+        ],
+        [
+          600,
+          0,
+          1
+        ],
+        [
+          611,
+          1,
+          4
+        ],
+        [
+          681,
+          1,
+          2
+        ],
+        [
+          843,
+          3,
+          4
+        ],
+        [
+          892,
+          3,
+          4
+        ],
+        [
+          920,
+          3,
+          4
+        ],
+        [
+          1009,
+          3,
+          4
+        ],
+        [
+          1071,
+          3,
+          4
+        ],
+        [
+          1223,
+          3,
+          4
+        ],
+        [
+          1415,
+          3,
+          4
+        ],
+        [
+          1469,
+          3,
+          4
+        ],
+        [
+          1512,
+          3,
+          4
+        ],
+        [
+          1567,
+          0,
+          1
+        ],
+        [
+          1586,
+          3,
+          4
+        ],
+        [
+          1612,
+          3,
+          4
+        ],
+        [
+          1824,
+          3,
+          4
+        ],
+        [
+          1895,
+          3,
+          4
+        ],
+        [
+          1912,
+          2,
+          3
+        ],
+        [
+          1924,
+          2,
+          3
+        ]
+      ]
+    }
+  },
+  "elapsed_seconds": 88.49
+}

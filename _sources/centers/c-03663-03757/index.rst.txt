@@ -91,5 +91,397 @@ X_3663–X_3757
 
    Having considered the group NT of normalized triangles, we turn next to 3-point combos based on product triangles and inverse triangles. Recall that such a combo, denoted by Xcom(T), is defined, as in the preamble to :ref:`X_3663 <X_3663>`, by the matrix product (x y z)\*(nT), where nT is the normalization of :g:`T <T>`.
 
-.. collection::
-   :sort: order
+Member Centers
+--------------
+
+:ref:`Open Interactive 7-Triangle Constellation & Explorer ↗ <family-c-03663-03757>`
+
+.. list-table::
+   :class: etc-table etc-mode-relations
+   :header-rows: 1
+   :widths: 12 56 18 14
+
+   * - Center
+     - Name
+     - Search (6,9,13)
+     - Precision
+   * - :ref:`X_3663 <X_3663>`
+     - X\_6com(INTOUCH TRIANGLE)
+     - ``2.040979``
+     - Exact
+   * - :ref:`X_3664 <X_3664>`
+     - X\_37com(INTOUCH TRIANGLE)
+     - ``1.488920``
+     - Exact
+   * - :ref:`X_3665 <X_3665>`
+     - X\_41com(INTOUCH TRIANGLE)
+     - ``1.302527``
+     - Exact
+   * - :ref:`X_3666 <X_3666>`
+     - X\_42com(INTOUCH TRIANGLE)
+     - ``1.857741``
+     - Exact
+   * - :ref:`X_3667 <X_3667>`
+     - X\_513com(INTOUCH TRIANGLE)
+     - —
+     - Exact
+   * - :ref:`X_3668 <X_3668>`
+     - X\_219com(INTOUCH TRIANGLE)
+     - ``0.168379``
+     - Exact
+   * - :ref:`X_3669 <X_3669>`
+     - X\_663com(INTOUCH TRIANGLE)
+     - ``0.804909``
+     - Exact
+   * - :ref:`X_3670 <X_3670>`
+     - X\_3293com(INTOUCH TRIANGLE)
+     - ``2.160978``
+     - Exact
+   * - :ref:`X_3671 <X_3671>`
+     - X\_958com(INTOUCH TRIANGLE)
+     - ``0.792557``
+     - Exact
+   * - :ref:`X_3672 <X_3672>`
+     - X\_1449com(INTOUCH TRIANGLE)
+     - ``1.838231``
+     - Exact
+   * - :ref:`X_3673 <X_3673>`
+     - X\_3501com(INTOUCH TRIANGLE)
+     - ``1.857534``
+     - Exact
+   * - :ref:`X_3674 <X_3674>`
+     - X\_2329com(INTOUCH TRIANGLE)
+     - ``0.865978``
+     - Exact
+   * - :ref:`X_3675 <X_3675>`
+     - X\_1026com(INTOUCH TRIANGLE)
+     - ``5.196352``
+     - Exact
+   * - :ref:`X_3676 <X_3676>`
+     - X\_650com(INTOUCH TRIANGLE)
+     - ``1.878121``
+     - Exact
+   * - :ref:`X_3677 <X_3677>`
+     - X\_2999com(INTOUCH TRIANGLE)
+     - ``1.931210``
+     - Exact
+   * - :ref:`X_3678 <X_3678>`
+     - X\_5com(EXTOUCH TRIANGLE)
+     - ``4.383485``
+     - Exact
+   * - :ref:`X_3679 <X_3679>`
+     - X\_3576com(EXTOUCH TRIANGLE)
+     - ``3.568429``
+     - Exact
+   * - :ref:`X_3680 <X_3680>`
+     - X\_2136com(EXTOUCH TRIANGLE)
+     - ``16.226962``
+     - Exact
+   * - :ref:`X_3681 <X_3681>`
+     - X\_1699com(EXTOUCH TRIANGLE)
+     - ``5.281211``
+     - Exact
+   * - :ref:`X_3682 <X_3682>`
+     - X\_1715com(EXTOUCH TRIANGLE)
+     - ``4.283732``
+     - Exact
+   * - :ref:`X_3683 <X_3683>`
+     - X\_3219com(EXTOUCH TRIANGLE)
+     - ``3.361198``
+     - Exact
+   * - :ref:`X_3684 <X_3684>`
+     - X\_3509com(EXTOUCH TRIANGLE)
+     - ``13.582355``
+     - Exact
+   * - :ref:`X_3685 <X_3685>`
+     - X\_1757com(EXTOUCH TRIANGLE)
+     - ``9.867747``
+     - Exact
+   * - :ref:`X_3686 <X_3686>`
+     - X\_37com(EXTOUCH TRIANGLE)
+     - ``4.308363``
+     - Exact
+   * - :ref:`X_3687 <X_3687>`
+     - X\_171com(EXTOUCH TRIANGLE)
+     - ``4.593379``
+     - Exact
+   * - :ref:`X_3688 <X_3688>`
+     - X\_75com(EXTOUCH TRIANGLE)
+     - ``3.249143``
+     - Exact
+   * - :ref:`X_3689 <X_3689>`
+     - X\_3218com(EXTOUCH TRIANGLE)
+     - ``9.911757``
+     - Exact
+   * - :ref:`X_3690 <X_3690>`
+     - X\_1746com(EXTOUCH TRIANGLE)
+     - ``5.469763``
+     - Exact
+   * - :ref:`X_3691 <X_3691>`
+     - X\_3294com(EXTOUCH TRIANGLE)
+     - ``3.825803``
+     - Exact
+   * - :ref:`X_3692 <X_3692>`
+     - X\_1723com(EXTOUCH TRIANGLE)
+     - ``5.925165``
+     - Exact
+   * - :ref:`X_3693 <X_3693>`
+     - X\_672com(EXTOUCH TRIANGLE)
+     - ``7.229488``
+     - Exact
+   * - :ref:`X_3694 <X_3694>`
+     - X\_579com(EXTOUCH TRIANGLE)
+     - ``5.538320``
+     - Exact
+   * - :ref:`X_3695 <X_3695>`
+     - X\_580com(EXTOUCH TRIANGLE)
+     - ``5.979351``
+     - Exact
+   * - :ref:`X_3696 <X_3696>`
+     - X\_991com(EXTOUCH TRIANGLE)
+     - ``4.106974``
+     - Exact
+   * - :ref:`X_3697 <X_3697>`
+     - X\_631com(EXTOUCH TRIANGLE)
+     - ``3.612733``
+     - Exact
+   * - :ref:`X_3698 <X_3698>`
+     - X\_3522com(EXTOUCH TRIANGLE)
+     - ``2.585064``
+     - Exact
+   * - :ref:`X_3699 <X_3699>`
+     - X\_1054com(EXTOUCH TRIANGLE)
+     - ``9.744131``
+     - Exact
+   * - :ref:`X_3700 <X_3700>`
+     - X\_661com(EXTOUCH TRIANGLE)
+     - ``66.109844``
+     - Exact
+   * - :ref:`X_3701 <X_3701>`
+     - X\_3216com(EXTOUCH TRIANGLE)
+     - ``5.637647``
+     - Exact
+   * - :ref:`X_3702 <X_3702>`
+     - X\_3293com(EXTOUCH TRIANGLE)
+     - ``5.179316``
+     - Exact
+   * - :ref:`X_3703 <X_3703>`
+     - X\_31com(EXTOUCH TRIANGLE)
+     - ``5.021073``
+     - Exact
+   * - :ref:`X_3704 <X_3704>`
+     - X\_58com(EXTOUCH TRIANGLE)
+     - ``4.927282``
+     - Exact
+   * - :ref:`X_3705 <X_3705>`
+     - X\_3550com(EXTOUCH TRIANGLE)
+     - ``4.763306``
+     - Exact
+   * - :ref:`X_3706 <X_3706>`
+     - X\_42com(EXTOUCH TRIANGLE)
+     - ``4.746481``
+     - Exact
+   * - :ref:`X_3707 <X_3707>`
+     - X\_45com(EXTOUCH TRIANGLE)
+     - ``4.088483``
+     - Exact
+   * - :ref:`X_3708 <X_3708>`
+     - X\_150com(EXTOUCH TRIANGLE)
+     - ``2.770012``
+     - Exact
+   * - :ref:`X_3709 <X_3709>`
+     - X\_798com(EXTOUCH TRIANGLE)
+     - ``-9.558050``
+     - Exact
+   * - :ref:`X_3710 <X_3710>`
+     - X\_1724com(EXTOUCH TRIANGLE)
+     - ``6.105081``
+     - Exact
+   * - :ref:`X_3711 <X_3711>`
+     - X\_3306com(EXTOUCH TRIANGLE)
+     - ``4.294897``
+     - Exact
+   * - :ref:`X_3712 <X_3712>`
+     - X\_896com(EXTOUCH TRIANGLE)
+     - ``7.921483``
+     - Exact
+   * - :ref:`X_3713 <X_3713>`
+     - X\_2285com(EXTOUCH TRIANGLE)
+     - ``4.826207``
+     - Exact
+   * - :ref:`X_3714 <X_3714>`
+     - X\_386com(EXTOUCH TRIANGLE)
+     - ``4.786772``
+     - Exact
+   * - :ref:`X_3715 <X_3715>`
+     - X\_3305com(EXTOUCH TRIANGLE)
+     - ``3.731071``
+     - Exact
+   * - :ref:`X_3716 <X_3716>`
+     - X\_659com(EXTOUCH TRIANGLE)
+     - ``8.693015``
+     - Exact
+   * - :ref:`X_3717 <X_3717>`
+     - X\_238com(EXTOUCH TRIANGLE)
+     - ``7.187618``
+     - Exact
+   * - :ref:`X_3718 <X_3718>`
+     - X\_1716com(EXTOUCH TRIANGLE)
+     - ``6.426604``
+     - Exact
+   * - :ref:`X_3719 <X_3719>`
+     - X\_1711com(EXTOUCH TRIANGLE)
+     - ``5.927535``
+     - Exact
+   * - :ref:`X_3720 <X_3720>`
+     - X\_756com(INCENTRAL TRIANGLE)
+     - ``1.908161``
+     - Exact
+   * - :ref:`X_3721 <X_3721>`
+     - X\_213com(INCENTRAL TRIANGLE)
+     - ``2.685977``
+     - Exact
+   * - :ref:`X_3722 <X_3722>`
+     - X\_3120com(INCENTRAL TRIANGLE)
+     - ``1.935868``
+     - Exact
+   * - :ref:`X_3723 <X_3723>`
+     - X\_1213com(INCENTRAL TRIANGLE)
+     - ``1.786851``
+     - Exact
+   * - :ref:`X_3724 <X_3724>`
+     - X\_908com(INCENTRAL TRIANGLE)
+     - ``-1.518064``
+     - Exact
+   * - :ref:`X_3725 <X_3725>`
+     - X\_312com(INCENTRAL TRIANGLE)
+     - ``0.827439``
+     - Exact
+   * - :ref:`X_3726 <X_3726>`
+     - X\_2238com(INCENTRAL TRIANGLE)
+     - ``5.882263``
+     - Exact
+   * - :ref:`X_3727 <X_3727>`
+     - X\_2295com(INCENTRAL TRIANGLE)
+     - ``2.255233``
+     - Exact
+   * - :ref:`X_3728 <X_3728>`
+     - X\_192com(INCENTRAL TRIANGLE)
+     - ``2.717070``
+     - Exact
+   * - :ref:`X_3729 <X_3729>`
+     - X\_3056com(EXCENTRAL TRIANGLE)
+     - ``3.806149``
+     - Exact
+   * - :ref:`X_3730 <X_3730>`
+     - X\_1212com(EXCENTRAL TRIANGLE)
+     - ``4.952017``
+     - Exact
+   * - :ref:`X_3731 <X_3731>`
+     - X\_391com(EXCENTRAL TRIANGLE)
+     - ``2.350760``
+     - Exact
+   * - :ref:`X_3732 <X_3732>`
+     - X\_3022com(EXCENTRAL TRIANGLE)
+     - ``1.907399``
+     - Exact
+   * - :ref:`X_3733 <X_3733>`
+     - X\_656com(TANGENTIAL TRIANGLE)
+     - ``4.915693``
+     - Exact
+   * - :ref:`X_3734 <X_3734>`
+     - X\_6com(1st BROCARD TRIANGLE)
+     - ``2.765215``
+     - Exact
+   * - :ref:`X_3735 <X_3735>`
+     - X\_75com(1st BROCARD TRIANGLE)
+     - ``2.411159``
+     - Exact
+   * - :ref:`X_3736 <X_3736>`
+     - X\_2092com(HEXYL TRIANGLE)
+     - ``1.268787``
+     - Exact
+   * - :ref:`X_3737 <X_3737>`
+     - X\_656com(HEXYL TRIANGLE)
+     - ``-13.108515``
+     - Exact
+   * - :ref:`X_3738 <X_3738>`
+     - X\_2804com(HEXYL TRIANGLE)
+     - —
+     - Exact
+   * - :ref:`X_3739 <X_3739>`
+     - X\_37com[n(INCENTRAL)\*n(MEDIAL)]
+     - ``2.898642``
+     - Exact
+   * - :ref:`X_3740 <X_3740>`
+     - X\_210com[n(INCENTRAL)\*n(MEDIAL)]
+     - ``3.292329``
+     - Exact
+   * - :ref:`X_3741 <X_3741>`
+     - X\_321com[n(INCENTRAL)\*n(MEDIAL)]
+     - ``3.302111``
+     - Exact
+   * - :ref:`X_3742 <X_3742>`
+     - X\_3175com[n(INCENTRAL)\*n(MEDIAL)]
+     - ``1.966408``
+     - Exact
+   * - :ref:`X_3743 <X_3743>`
+     - X\_10com[n(MEDIAL)\*n(INCENTRAL)]
+     - ``1.977958``
+     - Exact
+   * - :ref:`X_3744 <X_3744>`
+     - X\_31com[n(MEDIAL)\*n(INCENTRAL)]
+     - ``1.431006``
+     - Exact
+   * - :ref:`X_3745 <X_3745>`
+     - X\_81com[n(MEDIAL)\*n(INCENTRAL)]
+     - ``1.609754``
+     - Exact
+   * - :ref:`X_3746 <X_3746>`
+     - X\_191com[n(MEDIAL)\*n(INCENTRAL)]
+     - ``2.361973``
+     - Exact
+   * - :ref:`X_3747 <X_3747>`
+     - X\_239com[n(MEDIAL)\*n(INCENTRAL)]
+     - ``-2.181291``
+     - Exact
+   * - :ref:`X_3748 <X_3748>`
+     - X\_1621com[n(MEDIAL)\*n(INCENTRAL)]
+     - ``1.903031``
+     - Exact
+   * - :ref:`X_3749 <X_3749>`
+     - X\_1707com[n(MEDIAL)\*n(INCENTRAL)]
+     - ``0.975634``
+     - Exact
+   * - :ref:`X_3750 <X_3750>`
+     - X\_846com[n(MEDIAL)\*n(INCENTRAL)]
+     - ``1.877689``
+     - Exact
+   * - :ref:`X_3751 <X_3751>`
+     - X\_1721com[INVERSE(n(HEXYL TRIANGLE))]
+     - ``0.295508``
+     - Exact
+   * - :ref:`X_3752 <X_3752>`
+     - X\_995com[INVERSE(n(HEXYL TRIANGLE))]
+     - ``1.268956``
+     - Exact
+   * - :ref:`X_3753 <X_3753>`
+     - X\_2com[INVERSE(n(HEXYL TRIANGLE))]
+     - ``2.242508``
+     - Exact
+   * - :ref:`X_3754 <X_3754>`
+     - X\_5com[INVERSE(n(HEXYL TRIANGLE))]
+     - ``1.814313``
+     - Exact
+   * - :ref:`X_3755 <X_3755>`
+     - X\_6com[INVERSE(n(HEXYL TRIANGLE))]
+     - ``1.343579``
+     - Exact
+   * - :ref:`X_3756 <X_3756>`
+     - X\_106com[INVERSE(n(HEXYL TRIANGLE))]
+     - ``-0.928013``
+     - Exact
+   * - :ref:`X_3757 <X_3757>`
+     - X\_846com[INVERSE(n(1st BROCARD TRIANGLE))]
+     - ``3.494134``
+     - Exact

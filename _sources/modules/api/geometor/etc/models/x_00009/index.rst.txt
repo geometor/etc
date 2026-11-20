@@ -1,0 +1,41 @@
+geometor.etc.models.x_00009
+===========================
+
+.. py:module:: geometor.etc.models.x_00009
+
+.. autoapi-nested-parse::
+
+   Exact symbolic GEOMETOR construction model for ``X_9 = MITTENPUNKT``.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.models.x_00009.construct_x_00009
+   geometor.etc.models.x_00009.build_model
+
+
+Module Contents
+---------------
+
+.. py:function:: construct_x_00009(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point) -> sympy.geometry.Point
+
+   Construct ``X_9 = MITTENPUNKT`` and its classical incident central lines on ``ABC``.
+
+   Constructed elements include:
+
+   - Excentral triangle ``< J_a J_b J_c >``, medial triangle ``< M_a M_b M_c >``,
+     and excenter-midpoint lines ``[ J_a M_a ]``, ``[ J_b M_b ]``, ``[ J_c M_c ]``
+     concurring at ``X_9``.
+   - Incident central lines: Incenter-Symmedian ``{ 1, 6 }``, Centroid-Gergonne
+     ``{ 2, 7 }``, and Orthocenter-Spieker-Clawson ``{ 4, 10 }`` (with ``X_4, X_10, X_19``).
+
+
+.. py:function:: build_model(preset: str | tuple[sympy.Expr | int, sympy.Expr | int, sympy.Expr | int] = 'heronian', show_guides: bool = False) -> geometor.model.Model
+
+   Build an exact symbolic :class:`geometor.model.Model` for ``X_9 = MITTENPUNKT``.
+
+

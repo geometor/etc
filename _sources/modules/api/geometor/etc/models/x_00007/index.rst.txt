@@ -1,0 +1,40 @@
+geometor.etc.models.x_00007
+===========================
+
+.. py:module:: geometor.etc.models.x_00007
+
+.. autoapi-nested-parse::
+
+   Exact symbolic GEOMETOR construction model for ``X_7 = GERGONNE POINT``.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.models.x_00007.construct_x_00007
+   geometor.etc.models.x_00007.build_model
+
+
+Module Contents
+---------------
+
+.. py:function:: construct_x_00007(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point) -> sympy.geometry.Point
+
+   Construct ``X_7 = GERGONNE POINT`` and its classical incident central lines on ``ABC``.
+
+   Constructed elements include:
+
+   - Incircle, intouch triangle ``< T_a T_b T_c >``, and Gergonne cevians
+     ``[ A T_a ]``, ``[ B T_b ]``, ``[ C T_c ]`` concurring at ``X_7``.
+   - Incident central lines: Centroid-Mittenpunkt ``{ 2, 9 }``, Soddy ``{ 1, 20 }``,
+     and Nagel-Intouch-Orthocenter ``{ 8, 65 }``.
+
+
+.. py:function:: build_model(preset: str | tuple[sympy.Expr | int, sympy.Expr | int, sympy.Expr | int] = 'heronian', show_guides: bool = False) -> geometor.model.Model
+
+   Build an exact symbolic :class:`geometor.model.Model` for ``X_7 = GERGONNE POINT``.
+
+

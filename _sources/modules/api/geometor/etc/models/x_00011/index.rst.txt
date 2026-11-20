@@ -1,0 +1,40 @@
+geometor.etc.models.x_00011
+===========================
+
+.. py:module:: geometor.etc.models.x_00011
+
+.. autoapi-nested-parse::
+
+   Exact symbolic GEOMETOR construction model for ``X_11 = FEUERBACH POINT``.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.models.x_00011.construct_x_00011
+   geometor.etc.models.x_00011.build_model
+
+
+Module Contents
+---------------
+
+.. py:function:: construct_x_00011(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point) -> sympy.geometry.Point
+
+   Construct ``X_11 = FEUERBACH POINT`` and its classical incident central lines on ``ABC``.
+
+   Constructed elements include:
+
+   - The ``incircle`` and ``nine_point_circle``, internally tangent at ``X_11``.
+   - Incident central lines: Feuerbach ``{ 1, 5 }`` (with ``X_1, X_5, X_12``),
+     Centroid-Insimilicenter ``{ 2, 55 }``, Orthocenter-Exsimilicenter ``{ 4, 56 }``,
+     and ``{ 35, 140 }``.
+
+
+.. py:function:: build_model(preset: str | tuple[sympy.Expr | int, sympy.Expr | int, sympy.Expr | int] = 'heronian', show_guides: bool = False) -> geometor.model.Model
+
+   Build an exact symbolic :class:`geometor.model.Model` for ``X_11 = FEUERBACH POINT``.
+
+

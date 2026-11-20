@@ -33,6 +33,7 @@
   <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
   <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=f1075037" />
   <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/etc-viewer.css?v=6bb90446" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
@@ -108,57 +109,6 @@
         </div>
       </header>
       <div class="content body book-content" role="main">
-        <style id="etc-heading-styles">
-        .book-reading-pane .book-content h1,
-        .folio-book-page h1 {
-            position: relative;
-            text-align: center !important;
-            text-indent: 0 !important;
-            margin-bottom: 0.35rem !important;
-        }
-        .book-reading-pane .book-content h1 a.headerlink,
-        .book-reading-pane .book-content h2 a.headerlink,
-        .folio-book-page h1 a.headerlink,
-        .folio-book-page h2 a.headerlink {
-            position: absolute;
-        }
-        .book-reading-pane .book-content p.rubric,
-        .folio-book-page p.rubric {
-            font-style: normal !important;
-            font-weight: 700 !important;
-            text-align: center !important;
-            text-indent: 0 !important;
-            margin-left: 0 !important;
-            margin-right: 0 !important;
-            padding-left: 0 !important;
-            padding-right: 0 !important;
-            margin-top: 0 !important;
-            margin-bottom: 1.4rem !important;
-        }
-        .geom-ref {
-            cursor: pointer;
-            border-bottom: 1px dotted rgba(0, 229, 255, 0.55);
-            padding: 0 2px;
-            border-radius: 3px;
-            transition: background-color 0.12s ease, color 0.12s ease;
-        }
-        .geom-ref:hover,
-        .geom-highlight-text {
-            background-color: rgba(0, 255, 255, 0.18) !important;
-            color: #0ff !important;
-            border-bottom-color: #0ff !important;
-        }
-        .etc-act-plate {
-            margin: 0.5rem 0;
-        }
-        .etc-symbolic-concordance {
-            text-align: center;
-            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-            font-size: 0.92rem;
-            color: var(--book-text-muted, #94a3b8);
-            margin: -0.6rem 0 1.25rem 0;
-        }
-        </style>
         <section class="level-1" id="module-geometor.etc.triangles">
         <span id="geometor-etc-triangles"></span><h1>geometor.etc.triangles<a class="headerlink" href="#module-geometor.etc.triangles" title="Link to this heading">¶</a></h1>
         <p>Exact symbolic reference triangles for the Encyclopedia of Triangle Centers.</p>
@@ -189,22 +139,37 @@
         <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.triangles.SQRT_105" title="geometor.etc.triangles.SQRT_105"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SQRT_105</span></code></a></p></td>
         <td><p></p></td>
         </tr>
-        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.triangles.HERONIAN_TRIANGLE" title="geometor.etc.triangles.HERONIAN_TRIANGLE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HERONIAN_TRIANGLE</span></code></a></p></td>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.triangles.TAU" title="geometor.etc.triangles.TAU"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TAU</span></code></a></p></td>
         <td><p></p></td>
         </tr>
-        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.triangles.RIGHT_TRIANGLE" title="geometor.etc.triangles.RIGHT_TRIANGLE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RIGHT_TRIANGLE</span></code></a></p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.triangles.HERONIAN_TRIANGLE" title="geometor.etc.triangles.HERONIAN_TRIANGLE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HERONIAN_TRIANGLE</span></code></a></p></td>
         <td><p></p></td>
         </tr>
-        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.triangles.KEPLER_TRIANGLE" title="geometor.etc.triangles.KEPLER_TRIANGLE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KEPLER_TRIANGLE</span></code></a></p></td>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.triangles.RIGHT_TRIANGLE" title="geometor.etc.triangles.RIGHT_TRIANGLE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RIGHT_TRIANGLE</span></code></a></p></td>
         <td><p></p></td>
         </tr>
-        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.triangles.KIMBERLING_TRIANGLE" title="geometor.etc.triangles.KIMBERLING_TRIANGLE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KIMBERLING_TRIANGLE</span></code></a></p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.triangles.KEPLER_TRIANGLE" title="geometor.etc.triangles.KEPLER_TRIANGLE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KEPLER_TRIANGLE</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.triangles.KIMBERLING_TRIANGLE" title="geometor.etc.triangles.KIMBERLING_TRIANGLE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KIMBERLING_TRIANGLE</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.triangles.GOLDEN_TRIANGLE" title="geometor.etc.triangles.GOLDEN_TRIANGLE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GOLDEN_TRIANGLE</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.triangles.GNOMON_TRIANGLE" title="geometor.etc.triangles.GNOMON_TRIANGLE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GNOMON_TRIANGLE</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.triangles.EQUILATERAL_TRIANGLE" title="geometor.etc.triangles.EQUILATERAL_TRIANGLE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EQUILATERAL_TRIANGLE</span></code></a></p></td>
         <td><p></p></td>
         </tr>
         <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.triangles.LEGACY_ACUTE_TRIANGLE" title="geometor.etc.triangles.LEGACY_ACUTE_TRIANGLE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LEGACY_ACUTE_TRIANGLE</span></code></a></p></td>
         <td><p></p></td>
         </tr>
         <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.triangles.CANONICAL_TRIANGLES" title="geometor.etc.triangles.CANONICAL_TRIANGLES"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CANONICAL_TRIANGLES</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.triangles.CANONICAL_GRID_KEYS" title="geometor.etc.triangles.CANONICAL_GRID_KEYS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CANONICAL_GRID_KEYS</span></code></a></p></td>
         <td><p></p></td>
         </tr>
         </tbody>
@@ -258,6 +223,11 @@
         <dl class="py data">
         <dt class="sig sig-object py" id="geometor.etc.triangles.SQRT_105">
         <span class="sig-prename descclassname"><span class="pre">geometor.etc.triangles.</span></span><span class="sig-name descname"><span class="pre">SQRT_105</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.etc.triangles.SQRT_105" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.TAU">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.triangles.</span></span><span class="sig-name descname"><span class="pre">TAU</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.etc.triangles.TAU" title="Link to this definition">¶</a></dt>
         <dd></dd></dl>
 
         <dl class="py class">
@@ -463,6 +433,24 @@
         <dd><p>Return whether <code class="docutils literal notranslate"><span class="pre">exprs</span></code> adjoin <span class="math notranslate nohighlight">\(\sqrt{3}\)</span> over this triangle’s base field.</p>
         </dd></dl>
 
+        <dl class="py property">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.right_angle_vertex">
+        <span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">right_angle_vertex</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.right_angle_vertex" title="Link to this definition">¶</a></dt>
+        <dd><p>Return <code class="docutils literal notranslate"><span class="pre">'A'</span></code>, <code class="docutils literal notranslate"><span class="pre">'B'</span></code>, or <code class="docutils literal notranslate"><span class="pre">'C'</span></code> if that vertex has an exact right angle.</p>
+        </dd></dl>
+
+        <dl class="py property">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.is_equilateral">
+        <span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">is_equilateral</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.is_equilateral" title="Link to this definition">¶</a></dt>
+        <dd><p>Return whether all three sides are symbolically equal.</p>
+        </dd></dl>
+
+        <dl class="py property">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.is_isosceles">
+        <span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">is_isosceles</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.is_isosceles" title="Link to this definition">¶</a></dt>
+        <dd><p>Return whether at least two sides are symbolically equal.</p>
+        </dd></dl>
+
         <dl class="py method">
         <dt class="sig sig-object py" id="geometor.etc.triangles.SymbolicTriangle.coordinate_field_latex">
         <span class="sig-name descname"><span class="pre">coordinate_field_latex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exprs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/collections.abc.html#collections.abc.Iterable" title="(in Python v3.13)"><span class="pre">collections.abc.Iterable</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.triangles.SymbolicTriangle.coordinate_field_latex" title="Link to this definition">¶</a></dt>
@@ -507,6 +495,21 @@
         <dd></dd></dl>
 
         <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.GOLDEN_TRIANGLE">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.triangles.</span></span><span class="sig-name descname"><span class="pre">GOLDEN_TRIANGLE</span></span><a class="headerlink" href="#geometor.etc.triangles.GOLDEN_TRIANGLE" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.GNOMON_TRIANGLE">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.triangles.</span></span><span class="sig-name descname"><span class="pre">GNOMON_TRIANGLE</span></span><a class="headerlink" href="#geometor.etc.triangles.GNOMON_TRIANGLE" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.EQUILATERAL_TRIANGLE">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.triangles.</span></span><span class="sig-name descname"><span class="pre">EQUILATERAL_TRIANGLE</span></span><a class="headerlink" href="#geometor.etc.triangles.EQUILATERAL_TRIANGLE" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py data">
         <dt class="sig sig-object py" id="geometor.etc.triangles.LEGACY_ACUTE_TRIANGLE">
         <span class="sig-prename descclassname"><span class="pre">geometor.etc.triangles.</span></span><span class="sig-name descname"><span class="pre">LEGACY_ACUTE_TRIANGLE</span></span><a class="headerlink" href="#geometor.etc.triangles.LEGACY_ACUTE_TRIANGLE" title="Link to this definition">¶</a></dt>
         <dd></dd></dl>
@@ -516,6 +519,11 @@
         <span class="sig-prename descclassname"><span class="pre">geometor.etc.triangles.</span></span><span class="sig-name descname"><span class="pre">CANONICAL_TRIANGLES</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#geometor.etc.triangles.SymbolicTriangle" title="geometor.etc.triangles.SymbolicTriangle"><span class="pre">SymbolicTriangle</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.triangles.CANONICAL_TRIANGLES" title="Link to this definition">¶</a></dt>
         <dd></dd></dl>
 
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.etc.triangles.CANONICAL_GRID_KEYS">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.triangles.</span></span><span class="sig-name descname"><span class="pre">CANONICAL_GRID_KEYS</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">('heronian',</span> <span class="pre">'right',</span> <span class="pre">'kepler',</span> <span class="pre">'kimberling',</span> <span class="pre">'golden',</span> <span class="pre">'gnomon')</span></span><a class="headerlink" href="#geometor.etc.triangles.CANONICAL_GRID_KEYS" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
         <dl class="py function">
         <dt class="sig sig-object py" id="geometor.etc.triangles.get_canonical_triangle">
         <span class="sig-prename descclassname"><span class="pre">geometor.etc.triangles.</span></span><span class="sig-name descname"><span class="pre">get_canonical_triangle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">preset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'heronian'</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">unit_baseline</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.triangles.SymbolicTriangle" title="geometor.etc.triangles.SymbolicTriangle"><span class="pre">SymbolicTriangle</span></a></span></span><a class="headerlink" href="#geometor.etc.triangles.get_canonical_triangle" title="Link to this definition">¶</a></dt>
@@ -523,8 +531,8 @@
         <dl class="field-list simple">
         <dt class="field-odd">Parameters<span class="colon">:</span></dt>
         <dd class="field-odd"><ul class="simple">
-        <li><p><strong>preset</strong> – One of <code class="docutils literal notranslate"><span class="pre">&quot;heronian&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;right&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;kepler&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;kimberling&quot;</span></code>
-        (or legacy <code class="docutils literal notranslate"><span class="pre">&quot;acute&quot;</span></code>).</p></li>
+        <li><p><strong>preset</strong> – One of <code class="docutils literal notranslate"><span class="pre">&quot;heronian&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;right&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;kepler&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;kimberling&quot;</span></code>,
+        <code class="docutils literal notranslate"><span class="pre">&quot;golden&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;gnomon&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;equilateral&quot;</span></code> (or legacy <code class="docutils literal notranslate"><span class="pre">&quot;acute&quot;</span></code>).</p></li>
         <li><p><strong>unit_baseline</strong> – When <code class="docutils literal notranslate"><span class="pre">True</span></code>, scales the triangle by <span class="math notranslate nohighlight">\(1/c\)</span> so <span class="math notranslate nohighlight">\(AB = 1\)</span>.</p></li>
         </ul>
         </dd>
@@ -573,6 +581,7 @@
     <aside class="aside-recent-logs">
       <h3>Recent Logs</h3>
       <ul>
+        <li><a href="../../../../../log/26.323-184000/index.html">Scaling ETC to All 73,310 Centers in Exact Symbolic Algebra & Unified Viewer</a></li>
         <li><a href="../../../../../log/26.302-183300/index.html">ETC Semantic Parser, Apparatus Registries & Multi-Triangle Codex Builder</a></li>
       </ul>
     </aside>
@@ -581,6 +590,10 @@
       <ul>
         <li><a href="../../../../../tags/apparatus.html">apparatus</a></li>
         <li><a href="../../../../../tags/etc.html">etc</a></li>
+        <li><a href="../../../../../tags/exact-algebra.html">exact-algebra</a></li>
+        <li><a href="../../../../../tags/families.html">families</a></li>
+        <li><a href="../../../../../tags/live-explorer.html">live-explorer</a></li>
+        <li><a href="../../../../../tags/shards.html">shards</a></li>
         <li><a href="../../../../../tags/svg.html">svg</a></li>
         <li><a href="../../../../../tags/triangle-centers.html">triangle-centers</a></li>
       </ul>
@@ -588,6 +601,7 @@
     <aside class="aside-categories">
       <h3>Categories</h3>
       <ul>
+        <li><a href="../../../../../categories/architecture.html">architecture</a></li>
         <li><a href="../../../../../categories/constructions.html">constructions</a></li>
         <li><a href="../../../../../categories/parser.html">parser</a></li>
       </ul>
@@ -625,12 +639,14 @@
 
   <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../../../../_static/documentation_options.js?v=71d9d8e6"></script>
+  <script src="../../../../../_static/documentation_options.js?v=6c02275b"></script>
   <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
   <script src="../../../../../_static/js/collection_directory.js?v=2422530d"></script>
   <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../../../../../_static/js/etc-viewer.js?v=ff0c514d"></script>
+  <script src="../../../../../_static/js/etc-live-viewer.js?v=90a9d2d3"></script>
   <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
   <script src="../../../../../_static/js/search_highlight.js"></script>
 

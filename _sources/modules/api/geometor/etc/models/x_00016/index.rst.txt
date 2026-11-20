@@ -1,0 +1,40 @@
+geometor.etc.models.x_00016
+===========================
+
+.. py:module:: geometor.etc.models.x_00016
+
+.. autoapi-nested-parse::
+
+   Exact symbolic GEOMETOR construction model for ``X_16 = 2ND ISODYNAMIC POINT``.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.models.x_00016.construct_x_00016
+   geometor.etc.models.x_00016.build_model
+
+
+Module Contents
+---------------
+
+.. py:function:: construct_x_00016(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point) -> sympy.geometry.Point
+
+   Construct ``X_16 = 2ND ISODYNAMIC POINT`` and its classical incident central lines on ``ABC``.
+
+   Constructed elements include:
+
+   - Circumcircle, coaxial Apollonian circles ``apollonian_a``, ``apollonian_b``,
+     ``apollonian_c``, and equilateral pedal triangle ``< Pd_a Pd_b Pd_c >``.
+   - Incident central lines: Brocard axis ``{ 3, 6 }`` (with ``X_3, X_6, X_15``),
+     ``{ 2, 13 }``, and ``{ 4, 18 }``.
+
+
+.. py:function:: build_model(preset: str | tuple[sympy.Expr | int, sympy.Expr | int, sympy.Expr | int] = 'heronian', show_guides: bool = False) -> geometor.model.Model
+
+   Build an exact symbolic :class:`geometor.model.Model` for ``X_16 = 2ND ISODYNAMIC POINT``.
+
+

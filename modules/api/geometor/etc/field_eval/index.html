@@ -1,0 +1,1411 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>geometor.etc.field_eval — Encyclopedia of Triangle Centers • GEOMETOR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="canonical" href="https://geometor.github.io/etc/modules/api/geometor/etc/field_eval/" />
+  <meta name="description" content="Fast, 100% exact algebraic-field evaluator for ETC triangle centers." />
+  <meta property="og:site_name" content="GEOMETOR" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="geometor.etc.field_eval — Encyclopedia of Triangle Centers • GEOMETOR" />
+  <meta property="og:description" content="Fast, 100% exact algebraic-field evaluator for ETC triangle centers." />
+  <meta property="og:url" content="https://geometor.github.io/etc/modules/api/geometor/etc/field_eval/" />
+  <meta property="og:image" content="https://geometor.github.io/etc/_static/social/banner.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="640" />
+  <meta property="og:image:alt" content="Encyclopedia of Triangle Centers — GEOMETOR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="geometor.etc.field_eval — Encyclopedia of Triangle Centers • GEOMETOR" />
+  <meta name="twitter:description" content="Fast, 100% exact algebraic-field evaluator for ETC triangle centers." />
+  <meta name="twitter:image" content="https://geometor.github.io/etc/_static/social/banner.png" />
+  <meta name="twitter:image:alt" content="Encyclopedia of Triangle Centers — GEOMETOR" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=f1075037" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/etc-viewer.css?v=6bb90446" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../../../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../../../index.html" title="Home">
+        <img src="../../../../../_static/logo.png" class="logo" alt="GEOMETOR etc"/>
+        <div class="org-repo">
+          <span class="org">GEOMETOR</span>
+          <span class="sep" aria-hidden="true">&bull;</span>
+          <span class="repo">etc</span>
+        </div>
+      </a>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../../../centers/index.html"  >Triangle Centers</a>
+        </li>
+        <li>
+          <a href="../../../../../people/index.html"  >People</a>
+        </li>
+        <li>
+          <a href="../../../../../sources/index.html"  >Sources</a>
+        </li>
+        <li>
+          <a href="../../../../../bibliography.html"  >Bibliography</a>
+        </li>
+        <li>
+          <a href="../../../../../glossary.html"  >Glossary</a>
+        </li>
+        <li>
+          <a href="../../../../../about/index.html"  >About</a>
+        </li>
+        <li>
+          <a href="../../../../../log/index.html"  >Log</a>
+        </li>
+        <li>
+          <a href="../../../../index.html" class="is-active" aria-selected="true" >Modules</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <nav class="book-breadcrumbs" aria-label="Breadcrumb">
+            <a class="book-section-home-link" href="../../../../index.html">Modules</a>
+            <span class="book-crumb-sep" aria-hidden="true">/</span>
+            <a class="book-crumb-link" href="../../../index.html">API Reference</a>
+            <span class="book-crumb-sep" aria-hidden="true">/</span>
+            <span class="book-crumb-current" aria-current="page">geometor.etc.field_eval</span>
+          </nav>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../construct/index.html" title="geometor.etc.construct">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../glossary/index.html" title="geometor.etc.glossary"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <section class="level-1" id="module-geometor.etc.field_eval">
+        <span id="geometor-etc-field-eval"></span><h1>geometor.etc.field_eval<a class="headerlink" href="#module-geometor.etc.field_eval" title="Link to this heading">¶</a></h1>
+        <p>Fast, 100% exact algebraic-field evaluator for ETC triangle centers.</p>
+        <p>Evaluates arbitrary ETC homogeneous trilinear/barycentric expressions and
+        algebraic relation graphs directly inside each canonical reference triangle’s
+        exact number field — zero floating-point drift, zero SymPy expression-tree
+        blowup, and ~500x faster than symbolic expression simplification:</p>
+        <ol class="arabic simple">
+        <li><p><code class="docutils literal notranslate"><span class="pre">heronian</span></code> (15, 13, 14)   : Q          (and Q(sqrt(3)) when trig pi/3 appears)</p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">right</span></code>    (5, 3, 4)      : Q          (and Q(sqrt(3)))</p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">equilateral</span></code> (2, 2, 2)   : Q(sqrt(3))</p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">kimberling</span></code> (6, 9, 13)   : Q(sqrt(35)) (and Q(sqrt(35), sqrt(3)))</p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">kepler</span></code>   (phi, 1, s_phi): Q(sqrt(phi)), alpha^4 = alpha^2 + 1</p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">golden</span></code>   (phi, phi, 1)  : Q(tau),       tau^4 = 10*tau^2 - 5</p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">gnomon</span></code>   (1, 1, phi)    : Q(tau),       tau^4 = 10*tau^2 - 5</p></li>
+        </ol>
+        <p>For the small subset of ETC centers involving genuinely transcendental or
+        non-field expressions (e.g. <code class="docutils literal notranslate"><span class="pre">cos(A/3)</span></code>, <code class="docutils literal notranslate"><span class="pre">arcsin</span></code>, cubic roots), falls back
+        explicitly to 50-digit <code class="docutils literal notranslate"><span class="pre">mpmath</span></code> evaluation tagged <code class="docutils literal notranslate"><span class="pre">precision=&quot;mpmath-50&quot;</span></code>
+        while never injecting floats into <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code>.</p>
+        <section class="level-2" id="attributes">
+        <h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.field_eval.KEPLER_BIQUAD" title="geometor.etc.field_eval.KEPLER_BIQUAD"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KEPLER_BIQUAD</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.field_eval.PENTAGON_BIQUAD" title="geometor.etc.field_eval.PENTAGON_BIQUAD"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PENTAGON_BIQUAD</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="exceptions">
+        <h2>Exceptions<a class="headerlink" href="#exceptions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.field_eval.OutsideFieldError" title="geometor.etc.field_eval.OutsideFieldError"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OutsideFieldError</span></code></a></p></td>
+        <td><p>Raised when an expression leaves the triangle's exact algebraic field.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="classes">
+        <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.field_eval.QElem" title="geometor.etc.field_eval.QElem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">QElem</span></code></a></p></td>
+        <td><p>Exact element of Q backed by <code class="docutils literal notranslate"><span class="pre">fractions.Fraction</span></code>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.field_eval.QuadElem" title="geometor.etc.field_eval.QuadElem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">QuadElem</span></code></a></p></td>
+        <td><p>Exact element <code class="docutils literal notranslate"><span class="pre">c0</span> <span class="pre">+</span> <span class="pre">c1</span> <span class="pre">*</span> <span class="pre">sqrt(d)</span></code> in quadratic field <code class="docutils literal notranslate"><span class="pre">Q(sqrt(d))</span></code>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.field_eval.BiquadSpec" title="geometor.etc.field_eval.BiquadSpec"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BiquadSpec</span></code></a></p></td>
+        <td><p>Specification for degree-4 biquadratic field <code class="docutils literal notranslate"><span class="pre">Q(alpha)</span></code> with <code class="docutils literal notranslate"><span class="pre">alpha^4</span> <span class="pre">=</span> <span class="pre">p*alpha^2</span> <span class="pre">+</span> <span class="pre">q</span></code>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.field_eval.BiquadElem" title="geometor.etc.field_eval.BiquadElem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BiquadElem</span></code></a></p></td>
+        <td><p>Exact element <code class="docutils literal notranslate"><span class="pre">c0</span> <span class="pre">+</span> <span class="pre">c1*a</span> <span class="pre">+</span> <span class="pre">c2*a^2</span> <span class="pre">+</span> <span class="pre">c3*a^3</span></code> in <code class="docutils literal notranslate"><span class="pre">Q[a]</span> <span class="pre">/</span> <span class="pre">(a^4</span> <span class="pre">-</span> <span class="pre">p*a^2</span> <span class="pre">-</span> <span class="pre">q)</span></code>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.field_eval.ExtSqrt3Elem" title="geometor.etc.field_eval.ExtSqrt3Elem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExtSqrt3Elem</span></code></a></p></td>
+        <td><p>Quadratic extension <code class="docutils literal notranslate"><span class="pre">c0</span> <span class="pre">+</span> <span class="pre">c1</span> <span class="pre">*</span> <span class="pre">sqrt(3)</span></code> over any base exact field <code class="docutils literal notranslate"><span class="pre">K</span></code>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.field_eval.AngleLinear" title="geometor.etc.field_eval.AngleLinear"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AngleLinear</span></code></a></p></td>
+        <td><p>Exact linear combination <code class="docutils literal notranslate"><span class="pre">cA*A</span> <span class="pre">+</span> <span class="pre">cB*B</span> <span class="pre">+</span> <span class="pre">cC*C</span> <span class="pre">+</span> <span class="pre">cw*omega</span> <span class="pre">+</span> <span class="pre">cpi*pi</span></code>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.field_eval.ExactEvalResult" title="geometor.etc.field_eval.ExactEvalResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExactEvalResult</span></code></a></p></td>
+        <td><p>Compact exact (or 50-digit mpmath fallback) evaluation result for one triangle.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.field_eval.ExactTriangleField" title="geometor.etc.field_eval.ExactTriangleField"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExactTriangleField</span></code></a></p></td>
+        <td><p>Fast exact algebraic field context for one canonical reference triangle.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.field_eval.ExactCorpusResolver" title="geometor.etc.field_eval.ExactCorpusResolver"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExactCorpusResolver</span></code></a></p></td>
+        <td><p>Resolves a batch of parsed ETC centers across one canonical triangle field.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.field_eval.get_triangle_field" title="geometor.etc.field_eval.get_triangle_field"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_triangle_field</span></code></a>(key) → ExactTriangleField</p></td>
+        <td><p>Return the cached <a class="reference internal" href="#geometor.etc.field_eval.ExactTriangleField" title="geometor.etc.field_eval.ExactTriangleField"><code class="xref py py-class docutils literal notranslate"><span class="pre">ExactTriangleField</span></code></a> for preset <code class="docutils literal notranslate"><span class="pre">key</span></code>.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py exception">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.OutsideFieldError">
+        <span class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.etc.field_eval.</span></span><span class="sig-name descname"><span class="pre">OutsideFieldError</span></span><a class="headerlink" href="#geometor.etc.field_eval.OutsideFieldError" title="Link to this definition">¶</a></dt>
+        <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.13/builtins/exceptions.html#ValueError" title="(in Python v3.13)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ValueError</span></code></a></p>
+        <p>Raised when an expression leaves the triangle’s exact algebraic field.</p>
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QElem">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.etc.field_eval.</span></span><span class="sig-name descname"><span class="pre">QElem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">val</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/fractions.html#fractions.Fraction" title="(in Python v3.13)"><span class="pre">fractions.Fraction</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#geometor.etc.field_eval.QElem" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact element of Q backed by <code class="docutils literal notranslate"><span class="pre">fractions.Fraction</span></code>.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QElem.__slots__">
+        <span class="sig-name descname"><span class="pre">__slots__</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">('val',)</span></span><a class="headerlink" href="#geometor.etc.field_eval.QElem.__slots__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QElem.field_kind">
+        <span class="sig-name descname"><span class="pre">field_kind</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Q'</span></span><a class="headerlink" href="#geometor.etc.field_eval.QElem.field_kind" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QElem.val">
+        <span class="sig-name descname"><span class="pre">val</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/fractions.html#fractions.Fraction" title="(in Python v3.13)"><span class="pre">fractions.Fraction</span></a></span><a class="headerlink" href="#geometor.etc.field_eval.QElem.val" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QElem.is_zero">
+        <span class="sig-name descname"><span class="pre">is_zero</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.QElem.is_zero" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QElem.__bool__">
+        <span class="sig-name descname"><span class="pre">__bool__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.QElem.__bool__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QElem.__eq__">
+        <span class="sig-name descname"><span class="pre">__eq__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#object" title="(in Python v3.13)"><span class="pre">object</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.QElem.__eq__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QElem.__neg__">
+        <span class="sig-name descname"><span class="pre">__neg__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.QElem" title="geometor.etc.field_eval.QElem"><span class="pre">QElem</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.QElem.__neg__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QElem.__pos__">
+        <span class="sig-name descname"><span class="pre">__pos__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.QElem" title="geometor.etc.field_eval.QElem"><span class="pre">QElem</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.QElem.__pos__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QElem.__add__">
+        <span class="sig-name descname"><span class="pre">__add__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.QElem.__add__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QElem.__radd__">
+        <span class="sig-name descname"><span class="pre">__radd__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.QElem.__radd__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QElem.__sub__">
+        <span class="sig-name descname"><span class="pre">__sub__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.QElem.__sub__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QElem.__rsub__">
+        <span class="sig-name descname"><span class="pre">__rsub__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.QElem.__rsub__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QElem.__mul__">
+        <span class="sig-name descname"><span class="pre">__mul__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.QElem.__mul__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QElem.__rmul__">
+        <span class="sig-name descname"><span class="pre">__rmul__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.QElem.__rmul__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QElem.__truediv__">
+        <span class="sig-name descname"><span class="pre">__truediv__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.QElem.__truediv__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QElem.__rtruediv__">
+        <span class="sig-name descname"><span class="pre">__rtruediv__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.QElem.__rtruediv__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QElem.__pow__">
+        <span class="sig-name descname"><span class="pre">__pow__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exp</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.QElem.__pow__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QElem.sqrt_exact">
+        <span class="sig-name descname"><span class="pre">sqrt_exact</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.QElem.sqrt_exact" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QElem.sign">
+        <span class="sig-name descname"><span class="pre">sign</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.QElem.sign" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QElem.to_float">
+        <span class="sig-name descname"><span class="pre">to_float</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.QElem.to_float" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QElem.to_mpf">
+        <span class="sig-name descname"><span class="pre">to_mpf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dps</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">mpmath.mpf</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.QElem.to_mpf" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QElem.rat_coeffs">
+        <span class="sig-name descname"><span class="pre">rat_coeffs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/library/fractions.html#fractions.Fraction" title="(in Python v3.13)"><span class="pre">fractions.Fraction</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.field_eval.QElem.rat_coeffs" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QElem.scale_rational">
+        <span class="sig-name descname"><span class="pre">scale_rational</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">factor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/fractions.html#fractions.Fraction" title="(in Python v3.13)"><span class="pre">fractions.Fraction</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.QElem" title="geometor.etc.field_eval.QElem"><span class="pre">QElem</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.QElem.scale_rational" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QElem.to_sympy">
+        <span class="sig-name descname"><span class="pre">to_sympy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.QElem.to_sympy" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QElem.to_latex">
+        <span class="sig-name descname"><span class="pre">to_latex</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.QElem.to_latex" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QElem.max_digits">
+        <span class="sig-name descname"><span class="pre">max_digits</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.QElem.max_digits" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QElem.__repr__">
+        <span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.QElem.__repr__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.etc.field_eval.</span></span><span class="sig-name descname"><span class="pre">QuadElem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">c0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/fractions.html#fractions.Fraction" title="(in Python v3.13)"><span class="pre">fractions.Fraction</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">c1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/fractions.html#fractions.Fraction" title="(in Python v3.13)"><span class="pre">fractions.Fraction</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact element <code class="docutils literal notranslate"><span class="pre">c0</span> <span class="pre">+</span> <span class="pre">c1</span> <span class="pre">*</span> <span class="pre">sqrt(d)</span></code> in quadratic field <code class="docutils literal notranslate"><span class="pre">Q(sqrt(d))</span></code>.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.__slots__">
+        <span class="sig-name descname"><span class="pre">__slots__</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">('c0',</span> <span class="pre">'c1',</span> <span class="pre">'d')</span></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.__slots__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.field_kind">
+        <span class="sig-name descname"><span class="pre">field_kind</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Quad'</span></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.field_kind" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.c0">
+        <span class="sig-name descname"><span class="pre">c0</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/fractions.html#fractions.Fraction" title="(in Python v3.13)"><span class="pre">fractions.Fraction</span></a></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.c0" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.c1">
+        <span class="sig-name descname"><span class="pre">c1</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/fractions.html#fractions.Fraction" title="(in Python v3.13)"><span class="pre">fractions.Fraction</span></a></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.c1" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.d">
+        <span class="sig-name descname"><span class="pre">d</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.d" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.is_zero">
+        <span class="sig-name descname"><span class="pre">is_zero</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.is_zero" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.__bool__">
+        <span class="sig-name descname"><span class="pre">__bool__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.__bool__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.__eq__">
+        <span class="sig-name descname"><span class="pre">__eq__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#object" title="(in Python v3.13)"><span class="pre">object</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.__eq__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.__neg__">
+        <span class="sig-name descname"><span class="pre">__neg__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.QuadElem" title="geometor.etc.field_eval.QuadElem"><span class="pre">QuadElem</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.__neg__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.__pos__">
+        <span class="sig-name descname"><span class="pre">__pos__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.QuadElem" title="geometor.etc.field_eval.QuadElem"><span class="pre">QuadElem</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.__pos__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.__add__">
+        <span class="sig-name descname"><span class="pre">__add__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.__add__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.__radd__">
+        <span class="sig-name descname"><span class="pre">__radd__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.__radd__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.__sub__">
+        <span class="sig-name descname"><span class="pre">__sub__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.__sub__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.__rsub__">
+        <span class="sig-name descname"><span class="pre">__rsub__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.__rsub__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.__mul__">
+        <span class="sig-name descname"><span class="pre">__mul__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.__mul__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.__rmul__">
+        <span class="sig-name descname"><span class="pre">__rmul__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.__rmul__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.inv">
+        <span class="sig-name descname"><span class="pre">inv</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.QuadElem" title="geometor.etc.field_eval.QuadElem"><span class="pre">QuadElem</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.inv" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.__truediv__">
+        <span class="sig-name descname"><span class="pre">__truediv__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.__truediv__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.__rtruediv__">
+        <span class="sig-name descname"><span class="pre">__rtruediv__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.__rtruediv__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.__pow__">
+        <span class="sig-name descname"><span class="pre">__pow__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exp</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.__pow__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.sqrt_exact">
+        <span class="sig-name descname"><span class="pre">sqrt_exact</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.sqrt_exact" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.sign">
+        <span class="sig-name descname"><span class="pre">sign</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.sign" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.to_float">
+        <span class="sig-name descname"><span class="pre">to_float</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.to_float" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.to_mpf">
+        <span class="sig-name descname"><span class="pre">to_mpf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dps</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">mpmath.mpf</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.to_mpf" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.rat_coeffs">
+        <span class="sig-name descname"><span class="pre">rat_coeffs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/library/fractions.html#fractions.Fraction" title="(in Python v3.13)"><span class="pre">fractions.Fraction</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.rat_coeffs" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.scale_rational">
+        <span class="sig-name descname"><span class="pre">scale_rational</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">factor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/fractions.html#fractions.Fraction" title="(in Python v3.13)"><span class="pre">fractions.Fraction</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.QuadElem" title="geometor.etc.field_eval.QuadElem"><span class="pre">QuadElem</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.scale_rational" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.to_sympy">
+        <span class="sig-name descname"><span class="pre">to_sympy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.to_sympy" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.to_latex">
+        <span class="sig-name descname"><span class="pre">to_latex</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.to_latex" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.max_digits">
+        <span class="sig-name descname"><span class="pre">max_digits</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.max_digits" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.QuadElem.__repr__">
+        <span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.QuadElem.__repr__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadSpec">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.etc.field_eval.</span></span><span class="sig-name descname"><span class="pre">BiquadSpec</span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadSpec" title="Link to this definition">¶</a></dt>
+        <dd><p>Specification for degree-4 biquadratic field <code class="docutils literal notranslate"><span class="pre">Q(alpha)</span></code> with <code class="docutils literal notranslate"><span class="pre">alpha^4</span> <span class="pre">=</span> <span class="pre">p*alpha^2</span> <span class="pre">+</span> <span class="pre">q</span></code>.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadSpec.name">
+        <span class="sig-name descname"><span class="pre">name</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadSpec.name" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadSpec.p">
+        <span class="sig-name descname"><span class="pre">p</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadSpec.p" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadSpec.q">
+        <span class="sig-name descname"><span class="pre">q</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadSpec.q" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadSpec.alpha_float">
+        <span class="sig-name descname"><span class="pre">alpha_float</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadSpec.alpha_float" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadSpec.alpha_sym">
+        <span class="sig-name descname"><span class="pre">alpha_sym</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadSpec.alpha_sym" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadSpec.latex_basis">
+        <span class="sig-name descname"><span class="pre">latex_basis</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadSpec.latex_basis" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadSpec.alpha_mpf">
+        <span class="sig-name descname"><span class="pre">alpha_mpf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dps</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">mpmath.mpf</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadSpec.alpha_mpf" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.KEPLER_BIQUAD">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.field_eval.</span></span><span class="sig-name descname"><span class="pre">KEPLER_BIQUAD</span></span><a class="headerlink" href="#geometor.etc.field_eval.KEPLER_BIQUAD" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.PENTAGON_BIQUAD">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.field_eval.</span></span><span class="sig-name descname"><span class="pre">PENTAGON_BIQUAD</span></span><a class="headerlink" href="#geometor.etc.field_eval.PENTAGON_BIQUAD" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.etc.field_eval.</span></span><span class="sig-name descname"><span class="pre">BiquadElem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">c0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/fractions.html#fractions.Fraction" title="(in Python v3.13)"><span class="pre">fractions.Fraction</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">c1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/fractions.html#fractions.Fraction" title="(in Python v3.13)"><span class="pre">fractions.Fraction</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">c2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/fractions.html#fractions.Fraction" title="(in Python v3.13)"><span class="pre">fractions.Fraction</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">c3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/fractions.html#fractions.Fraction" title="(in Python v3.13)"><span class="pre">fractions.Fraction</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#geometor.etc.field_eval.BiquadSpec" title="geometor.etc.field_eval.BiquadSpec"><span class="pre">BiquadSpec</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact element <code class="docutils literal notranslate"><span class="pre">c0</span> <span class="pre">+</span> <span class="pre">c1*a</span> <span class="pre">+</span> <span class="pre">c2*a^2</span> <span class="pre">+</span> <span class="pre">c3*a^3</span></code> in <code class="docutils literal notranslate"><span class="pre">Q[a]</span> <span class="pre">/</span> <span class="pre">(a^4</span> <span class="pre">-</span> <span class="pre">p*a^2</span> <span class="pre">-</span> <span class="pre">q)</span></code>.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.__slots__">
+        <span class="sig-name descname"><span class="pre">__slots__</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">('c0',</span> <span class="pre">'c1',</span> <span class="pre">'c2',</span> <span class="pre">'c3',</span> <span class="pre">'spec')</span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.__slots__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.field_kind">
+        <span class="sig-name descname"><span class="pre">field_kind</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Biquad'</span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.field_kind" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.c0">
+        <span class="sig-name descname"><span class="pre">c0</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/fractions.html#fractions.Fraction" title="(in Python v3.13)"><span class="pre">fractions.Fraction</span></a></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.c0" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.c1">
+        <span class="sig-name descname"><span class="pre">c1</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/fractions.html#fractions.Fraction" title="(in Python v3.13)"><span class="pre">fractions.Fraction</span></a></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.c1" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.c2">
+        <span class="sig-name descname"><span class="pre">c2</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/fractions.html#fractions.Fraction" title="(in Python v3.13)"><span class="pre">fractions.Fraction</span></a></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.c2" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.c3">
+        <span class="sig-name descname"><span class="pre">c3</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/fractions.html#fractions.Fraction" title="(in Python v3.13)"><span class="pre">fractions.Fraction</span></a></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.c3" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.spec">
+        <span class="sig-name descname"><span class="pre">spec</span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.spec" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.is_zero">
+        <span class="sig-name descname"><span class="pre">is_zero</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.is_zero" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.__bool__">
+        <span class="sig-name descname"><span class="pre">__bool__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.__bool__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.__eq__">
+        <span class="sig-name descname"><span class="pre">__eq__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#object" title="(in Python v3.13)"><span class="pre">object</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.__eq__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.__neg__">
+        <span class="sig-name descname"><span class="pre">__neg__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.BiquadElem" title="geometor.etc.field_eval.BiquadElem"><span class="pre">BiquadElem</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.__neg__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.__pos__">
+        <span class="sig-name descname"><span class="pre">__pos__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.BiquadElem" title="geometor.etc.field_eval.BiquadElem"><span class="pre">BiquadElem</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.__pos__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.__add__">
+        <span class="sig-name descname"><span class="pre">__add__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.__add__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.__radd__">
+        <span class="sig-name descname"><span class="pre">__radd__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.__radd__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.__sub__">
+        <span class="sig-name descname"><span class="pre">__sub__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.__sub__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.__rsub__">
+        <span class="sig-name descname"><span class="pre">__rsub__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.__rsub__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.__mul__">
+        <span class="sig-name descname"><span class="pre">__mul__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.__mul__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.__rmul__">
+        <span class="sig-name descname"><span class="pre">__rmul__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.__rmul__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.inv">
+        <span class="sig-name descname"><span class="pre">inv</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.BiquadElem" title="geometor.etc.field_eval.BiquadElem"><span class="pre">BiquadElem</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.inv" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact O(1) inversion via tower Q(u)(alpha) where u = alpha^2, u^2 = p*u + q.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.__truediv__">
+        <span class="sig-name descname"><span class="pre">__truediv__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.__truediv__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.__rtruediv__">
+        <span class="sig-name descname"><span class="pre">__rtruediv__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.__rtruediv__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.__pow__">
+        <span class="sig-name descname"><span class="pre">__pow__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exp</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.__pow__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.sqrt_exact">
+        <span class="sig-name descname"><span class="pre">sqrt_exact</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.sqrt_exact" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute exact sqrt in Q(alpha) or Q(alpha)(sqrt(3)) for common rational/subfield squares.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.sign">
+        <span class="sig-name descname"><span class="pre">sign</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.sign" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.to_float">
+        <span class="sig-name descname"><span class="pre">to_float</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.to_float" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.to_mpf">
+        <span class="sig-name descname"><span class="pre">to_mpf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dps</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">mpmath.mpf</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.to_mpf" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.rat_coeffs">
+        <span class="sig-name descname"><span class="pre">rat_coeffs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/library/fractions.html#fractions.Fraction" title="(in Python v3.13)"><span class="pre">fractions.Fraction</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.rat_coeffs" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.scale_rational">
+        <span class="sig-name descname"><span class="pre">scale_rational</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">factor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/fractions.html#fractions.Fraction" title="(in Python v3.13)"><span class="pre">fractions.Fraction</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.BiquadElem" title="geometor.etc.field_eval.BiquadElem"><span class="pre">BiquadElem</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.scale_rational" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.to_sympy">
+        <span class="sig-name descname"><span class="pre">to_sympy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.to_sympy" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.to_latex">
+        <span class="sig-name descname"><span class="pre">to_latex</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.to_latex" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.max_digits">
+        <span class="sig-name descname"><span class="pre">max_digits</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.max_digits" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.BiquadElem.__repr__">
+        <span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.BiquadElem.__repr__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.etc.field_eval.</span></span><span class="sig-name descname"><span class="pre">ExtSqrt3Elem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">c0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem" title="Link to this definition">¶</a></dt>
+        <dd><p>Quadratic extension <code class="docutils literal notranslate"><span class="pre">c0</span> <span class="pre">+</span> <span class="pre">c1</span> <span class="pre">*</span> <span class="pre">sqrt(3)</span></code> over any base exact field <code class="docutils literal notranslate"><span class="pre">K</span></code>.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.__slots__">
+        <span class="sig-name descname"><span class="pre">__slots__</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">('c0',</span> <span class="pre">'c1')</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.__slots__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.field_kind">
+        <span class="sig-name descname"><span class="pre">field_kind</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'ExtSqrt3'</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.field_kind" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.c0">
+        <span class="sig-name descname"><span class="pre">c0</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.c0" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.c1">
+        <span class="sig-name descname"><span class="pre">c1</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.c1" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.is_zero">
+        <span class="sig-name descname"><span class="pre">is_zero</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.is_zero" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.__bool__">
+        <span class="sig-name descname"><span class="pre">__bool__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.__bool__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.__eq__">
+        <span class="sig-name descname"><span class="pre">__eq__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#object" title="(in Python v3.13)"><span class="pre">object</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.__eq__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.__neg__">
+        <span class="sig-name descname"><span class="pre">__neg__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.ExtSqrt3Elem" title="geometor.etc.field_eval.ExtSqrt3Elem"><span class="pre">ExtSqrt3Elem</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.__neg__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.__pos__">
+        <span class="sig-name descname"><span class="pre">__pos__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.ExtSqrt3Elem" title="geometor.etc.field_eval.ExtSqrt3Elem"><span class="pre">ExtSqrt3Elem</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.__pos__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.__add__">
+        <span class="sig-name descname"><span class="pre">__add__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.ExtSqrt3Elem" title="geometor.etc.field_eval.ExtSqrt3Elem"><span class="pre">ExtSqrt3Elem</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.__add__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.__radd__">
+        <span class="sig-name descname"><span class="pre">__radd__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.ExtSqrt3Elem" title="geometor.etc.field_eval.ExtSqrt3Elem"><span class="pre">ExtSqrt3Elem</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.__radd__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.__sub__">
+        <span class="sig-name descname"><span class="pre">__sub__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.ExtSqrt3Elem" title="geometor.etc.field_eval.ExtSqrt3Elem"><span class="pre">ExtSqrt3Elem</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.__sub__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.__rsub__">
+        <span class="sig-name descname"><span class="pre">__rsub__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.ExtSqrt3Elem" title="geometor.etc.field_eval.ExtSqrt3Elem"><span class="pre">ExtSqrt3Elem</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.__rsub__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.__mul__">
+        <span class="sig-name descname"><span class="pre">__mul__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.ExtSqrt3Elem" title="geometor.etc.field_eval.ExtSqrt3Elem"><span class="pre">ExtSqrt3Elem</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.__mul__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.__rmul__">
+        <span class="sig-name descname"><span class="pre">__rmul__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.ExtSqrt3Elem" title="geometor.etc.field_eval.ExtSqrt3Elem"><span class="pre">ExtSqrt3Elem</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.__rmul__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.inv">
+        <span class="sig-name descname"><span class="pre">inv</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.ExtSqrt3Elem" title="geometor.etc.field_eval.ExtSqrt3Elem"><span class="pre">ExtSqrt3Elem</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.inv" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.__truediv__">
+        <span class="sig-name descname"><span class="pre">__truediv__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.ExtSqrt3Elem" title="geometor.etc.field_eval.ExtSqrt3Elem"><span class="pre">ExtSqrt3Elem</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.__truediv__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.__rtruediv__">
+        <span class="sig-name descname"><span class="pre">__rtruediv__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.ExtSqrt3Elem" title="geometor.etc.field_eval.ExtSqrt3Elem"><span class="pre">ExtSqrt3Elem</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.__rtruediv__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.__pow__">
+        <span class="sig-name descname"><span class="pre">__pow__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exp</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.ExtSqrt3Elem" title="geometor.etc.field_eval.ExtSqrt3Elem"><span class="pre">ExtSqrt3Elem</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.__pow__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.sqrt_exact">
+        <span class="sig-name descname"><span class="pre">sqrt_exact</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.ExtSqrt3Elem" title="geometor.etc.field_eval.ExtSqrt3Elem"><span class="pre">ExtSqrt3Elem</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.sqrt_exact" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.sign">
+        <span class="sig-name descname"><span class="pre">sign</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.sign" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.to_float">
+        <span class="sig-name descname"><span class="pre">to_float</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.to_float" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.to_mpf">
+        <span class="sig-name descname"><span class="pre">to_mpf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dps</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">mpmath.mpf</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.to_mpf" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.rat_coeffs">
+        <span class="sig-name descname"><span class="pre">rat_coeffs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/library/fractions.html#fractions.Fraction" title="(in Python v3.13)"><span class="pre">fractions.Fraction</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.rat_coeffs" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.scale_rational">
+        <span class="sig-name descname"><span class="pre">scale_rational</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">factor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/fractions.html#fractions.Fraction" title="(in Python v3.13)"><span class="pre">fractions.Fraction</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.scale_rational" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.to_sympy">
+        <span class="sig-name descname"><span class="pre">to_sympy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.to_sympy" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.to_latex">
+        <span class="sig-name descname"><span class="pre">to_latex</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.to_latex" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.max_digits">
+        <span class="sig-name descname"><span class="pre">max_digits</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.max_digits" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExtSqrt3Elem.__repr__">
+        <span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExtSqrt3Elem.__repr__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.AngleLinear">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.etc.field_eval.</span></span><span class="sig-name descname"><span class="pre">AngleLinear</span></span><a class="headerlink" href="#geometor.etc.field_eval.AngleLinear" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact linear combination <code class="docutils literal notranslate"><span class="pre">cA*A</span> <span class="pre">+</span> <span class="pre">cB*B</span> <span class="pre">+</span> <span class="pre">cC*C</span> <span class="pre">+</span> <span class="pre">cw*omega</span> <span class="pre">+</span> <span class="pre">cpi*pi</span></code>.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.AngleLinear.cA">
+        <span class="sig-name descname"><span class="pre">cA</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/fractions.html#fractions.Fraction" title="(in Python v3.13)"><span class="pre">fractions.Fraction</span></a></span><a class="headerlink" href="#geometor.etc.field_eval.AngleLinear.cA" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.AngleLinear.cB">
+        <span class="sig-name descname"><span class="pre">cB</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/fractions.html#fractions.Fraction" title="(in Python v3.13)"><span class="pre">fractions.Fraction</span></a></span><a class="headerlink" href="#geometor.etc.field_eval.AngleLinear.cB" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.AngleLinear.cC">
+        <span class="sig-name descname"><span class="pre">cC</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/fractions.html#fractions.Fraction" title="(in Python v3.13)"><span class="pre">fractions.Fraction</span></a></span><a class="headerlink" href="#geometor.etc.field_eval.AngleLinear.cC" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.AngleLinear.cw">
+        <span class="sig-name descname"><span class="pre">cw</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/fractions.html#fractions.Fraction" title="(in Python v3.13)"><span class="pre">fractions.Fraction</span></a></span><a class="headerlink" href="#geometor.etc.field_eval.AngleLinear.cw" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.AngleLinear.cpi">
+        <span class="sig-name descname"><span class="pre">cpi</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/fractions.html#fractions.Fraction" title="(in Python v3.13)"><span class="pre">fractions.Fraction</span></a></span><a class="headerlink" href="#geometor.etc.field_eval.AngleLinear.cpi" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.AngleLinear.__neg__">
+        <span class="sig-name descname"><span class="pre">__neg__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.AngleLinear" title="geometor.etc.field_eval.AngleLinear"><span class="pre">AngleLinear</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.AngleLinear.__neg__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.AngleLinear.__pos__">
+        <span class="sig-name descname"><span class="pre">__pos__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.AngleLinear" title="geometor.etc.field_eval.AngleLinear"><span class="pre">AngleLinear</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.AngleLinear.__pos__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.AngleLinear.__add__">
+        <span class="sig-name descname"><span class="pre">__add__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.AngleLinear" title="geometor.etc.field_eval.AngleLinear"><span class="pre">AngleLinear</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.AngleLinear.__add__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.AngleLinear.__sub__">
+        <span class="sig-name descname"><span class="pre">__sub__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.AngleLinear" title="geometor.etc.field_eval.AngleLinear"><span class="pre">AngleLinear</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.AngleLinear.__sub__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.AngleLinear.__mul__">
+        <span class="sig-name descname"><span class="pre">__mul__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.AngleLinear" title="geometor.etc.field_eval.AngleLinear"><span class="pre">AngleLinear</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.AngleLinear.__mul__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.AngleLinear.__rmul__">
+        <span class="sig-name descname"><span class="pre">__rmul__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.AngleLinear" title="geometor.etc.field_eval.AngleLinear"><span class="pre">AngleLinear</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.AngleLinear.__rmul__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.AngleLinear.__truediv__">
+        <span class="sig-name descname"><span class="pre">__truediv__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.AngleLinear" title="geometor.etc.field_eval.AngleLinear"><span class="pre">AngleLinear</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.AngleLinear.__truediv__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactEvalResult">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.etc.field_eval.</span></span><span class="sig-name descname"><span class="pre">ExactEvalResult</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactEvalResult" title="Link to this definition">¶</a></dt>
+        <dd><p>Compact exact (or 50-digit mpmath fallback) evaluation result for one triangle.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactEvalResult.triangle_key">
+        <span class="sig-name descname"><span class="pre">triangle_key</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.etc.field_eval.ExactEvalResult.triangle_key" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactEvalResult.precision">
+        <span class="sig-name descname"><span class="pre">precision</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.etc.field_eval.ExactEvalResult.precision" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactEvalResult.bary">
+        <span class="sig-name descname"><span class="pre">bary</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><a class="headerlink" href="#geometor.etc.field_eval.ExactEvalResult.bary" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactEvalResult.trilinear">
+        <span class="sig-name descname"><span class="pre">trilinear</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><a class="headerlink" href="#geometor.etc.field_eval.ExactEvalResult.trilinear" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactEvalResult.xy">
+        <span class="sig-name descname"><span class="pre">xy</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><a class="headerlink" href="#geometor.etc.field_eval.ExactEvalResult.xy" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactEvalResult.search_value">
+        <span class="sig-name descname"><span class="pre">search_value</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Any</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><a class="headerlink" href="#geometor.etc.field_eval.ExactEvalResult.search_value" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactEvalResult.approx_xy">
+        <span class="sig-name descname"><span class="pre">approx_xy</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactEvalResult.approx_xy" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactEvalResult.approx_bary">
+        <span class="sig-name descname"><span class="pre">approx_bary</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactEvalResult.approx_bary" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactEvalResult.approx_search">
+        <span class="sig-name descname"><span class="pre">approx_search</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span><a class="headerlink" href="#geometor.etc.field_eval.ExactEvalResult.approx_search" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactEvalResult.is_indeterminate">
+        <span class="sig-name descname"><span class="pre">is_indeterminate</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactEvalResult.is_indeterminate" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactEvalResult.is_ideal">
+        <span class="sig-name descname"><span class="pre">is_ideal</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactEvalResult.is_ideal" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactEvalResult.symmetry_note">
+        <span class="sig-name descname"><span class="pre">symmetry_note</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactEvalResult.symmetry_note" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactEvalResult.field_tag">
+        <span class="sig-name descname"><span class="pre">field_tag</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactEvalResult.field_tag" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactEvalResult.bary_latex">
+        <span class="sig-name descname"><span class="pre">bary_latex</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactEvalResult.bary_latex" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactEvalResult.trilinear_latex">
+        <span class="sig-name descname"><span class="pre">trilinear_latex</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactEvalResult.trilinear_latex" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactEvalResult.xy_latex">
+        <span class="sig-name descname"><span class="pre">xy_latex</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactEvalResult.xy_latex" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactEvalResult.search_latex">
+        <span class="sig-name descname"><span class="pre">search_latex</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactEvalResult.search_latex" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.etc.field_eval.</span></span><span class="sig-name descname"><span class="pre">ExactTriangleField</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField" title="Link to this definition">¶</a></dt>
+        <dd><p>Fast exact algebraic field context for one canonical reference triangle.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.key">
+        <span class="sig-name descname"><span class="pre">key</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.key" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.is_equilateral">
+        <span class="sig-name descname"><span class="pre">is_equilateral</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.is_equilateral" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.is_isosceles">
+        <span class="sig-name descname"><span class="pre">is_isosceles</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.is_isosceles" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.is_right">
+        <span class="sig-name descname"><span class="pre">is_right</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.is_right" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.two_area">
+        <span class="sig-name descname"><span class="pre">two_area</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.two_area" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.S">
+        <span class="sig-name descname"><span class="pre">S</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.S" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.Qa">
+        <span class="sig-name descname"><span class="pre">Qa</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.Qa" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.Qb">
+        <span class="sig-name descname"><span class="pre">Qb</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.Qb" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.Qc">
+        <span class="sig-name descname"><span class="pre">Qc</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.Qc" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.SA">
+        <span class="sig-name descname"><span class="pre">SA</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.SA" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.SB">
+        <span class="sig-name descname"><span class="pre">SB</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.SB" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.SC">
+        <span class="sig-name descname"><span class="pre">SC</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.SC" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.SW">
+        <span class="sig-name descname"><span class="pre">SW</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.SW" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.s">
+        <span class="sig-name descname"><span class="pre">s</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.s" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.r">
+        <span class="sig-name descname"><span class="pre">r</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.r" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.R">
+        <span class="sig-name descname"><span class="pre">R</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.R" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.Ra">
+        <span class="sig-name descname"><span class="pre">Ra</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.Ra" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.Rb">
+        <span class="sig-name descname"><span class="pre">Rb</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.Rb" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.Rc">
+        <span class="sig-name descname"><span class="pre">Rc</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.Rc" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.cs_A">
+        <span class="sig-name descname"><span class="pre">cs_A</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.cs_A" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.cs_B">
+        <span class="sig-name descname"><span class="pre">cs_B</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.cs_B" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.cs_C">
+        <span class="sig-name descname"><span class="pre">cs_C</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.cs_C" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.cs_pi6">
+        <span class="sig-name descname"><span class="pre">cs_pi6</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.cs_pi6" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.cs_pi3">
+        <span class="sig-name descname"><span class="pre">cs_pi3</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.cs_pi3" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.cs_pi2">
+        <span class="sig-name descname"><span class="pre">cs_pi2</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.cs_pi2" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.OH_sq">
+        <span class="sig-name descname"><span class="pre">OH_sq</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.OH_sq" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.OI_sq">
+        <span class="sig-name descname"><span class="pre">OI_sq</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.OI_sq" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.OH">
+        <span class="sig-name descname"><span class="pre">OH</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.OH" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.OI">
+        <span class="sig-name descname"><span class="pre">OI</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.OI" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.J">
+        <span class="sig-name descname"><span class="pre">J</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.J" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.Q_moses">
+        <span class="sig-name descname"><span class="pre">Q_moses</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.Q_moses" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.cs_omega">
+        <span class="sig-name descname"><span class="pre">cs_omega</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.cs_omega" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.ecc">
+        <span class="sig-name descname"><span class="pre">ecc</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.ecc" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.K_steiner">
+        <span class="sig-name descname"><span class="pre">K_steiner</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.K_steiner" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.tan_half">
+        <span class="sig-name descname"><span class="pre">tan_half</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.tan_half" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.eval_cyclic_exact">
+        <span class="sig-name descname"><span class="pre">eval_cyclic_exact</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">expr_str</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_trilinear</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xyz</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">uvw</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout_sec</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.15</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.eval_cyclic_exact" title="Link to this definition">¶</a></dt>
+        <dd><p>Evaluate a cyclic Python expression exactly in this triangle’s field.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.eval_cyclic_mpmath">
+        <span class="sig-name descname"><span class="pre">eval_cyclic_mpmath</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">expr_str</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_trilinear</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xyz</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">mpmath.mpf</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">mpmath.mpf</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">mpmath.mpf</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">uvw</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">mpmath.mpf</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">mpmath.mpf</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">mpmath.mpf</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dps</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">mpmath.mpf</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">mpmath.mpf</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">mpmath.mpf</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.eval_cyclic_mpmath" title="Link to this definition">¶</a></dt>
+        <dd><p>50-digit <code class="docutils literal notranslate"><span class="pre">mpmath</span></code> fallback for transcendental or non-field formulas.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.eval_builtin_exact">
+        <span class="sig-name descname"><span class="pre">eval_builtin_exact</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.eval_builtin_exact" title="Link to this definition">¶</a></dt>
+        <dd><p>Evaluate a built-in <code class="docutils literal notranslate"><span class="pre">EXACT_CYCLIC_BARYCENTRICS</span></code> center directly in this field.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.package_exact_bary">
+        <span class="sig-name descname"><span class="pre">package_exact_bary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bary_raw</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.ExactEvalResult" title="geometor.etc.field_eval.ExactEvalResult"><span class="pre">ExactEvalResult</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.package_exact_bary" title="Link to this definition">¶</a></dt>
+        <dd><p>Package an exact homogeneous barycentric triple into a full <code class="docutils literal notranslate"><span class="pre">ExactEvalResult</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactTriangleField.package_mpmath_bary">
+        <span class="sig-name descname"><span class="pre">package_mpmath_bary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bary_mp</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">mpmath.mpf</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">mpmath.mpf</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">mpmath.mpf</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dps</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.ExactEvalResult" title="geometor.etc.field_eval.ExactEvalResult"><span class="pre">ExactEvalResult</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactTriangleField.package_mpmath_bary" title="Link to this definition">¶</a></dt>
+        <dd><p>Package a 50-digit <code class="docutils literal notranslate"><span class="pre">mpmath</span></code> fallback barycentric triple.</p>
+        </dd></dl>
+
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.get_triangle_field">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.field_eval.</span></span><span class="sig-name descname"><span class="pre">get_triangle_field</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.etc.field_eval.ExactTriangleField" title="geometor.etc.field_eval.ExactTriangleField"><span class="pre">ExactTriangleField</span></a></span></span><a class="headerlink" href="#geometor.etc.field_eval.get_triangle_field" title="Link to this definition">¶</a></dt>
+        <dd><p>Return the cached <a class="reference internal" href="#geometor.etc.field_eval.ExactTriangleField" title="geometor.etc.field_eval.ExactTriangleField"><code class="xref py py-class docutils literal notranslate"><span class="pre">ExactTriangleField</span></code></a> for preset <code class="docutils literal notranslate"><span class="pre">key</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactCorpusResolver">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.etc.field_eval.</span></span><span class="sig-name descname"><span class="pre">ExactCorpusResolver</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">centers_by_num</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">triangle_key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed_exact</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#geometor.etc.field_eval.ExactCorpusResolver" title="Link to this definition">¶</a></dt>
+        <dd><p>Resolves a batch of parsed ETC centers across one canonical triangle field.</p>
+        <p>Uses exact field arithmetic first (built-ins -&gt; direct formulas -&gt; exact
+        algebraic relations -&gt; exact incidence intersections) and falls back cleanly
+        to 50-digit <code class="docutils literal notranslate"><span class="pre">mpmath</span></code> only when an expression leaves <code class="docutils literal notranslate"><span class="pre">K(sqrt(3))</span></code>.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactCorpusResolver.field">
+        <span class="sig-name descname"><span class="pre">field</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactCorpusResolver.field" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactCorpusResolver.centers_by_num">
+        <span class="sig-name descname"><span class="pre">centers_by_num</span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactCorpusResolver.centers_by_num" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactCorpusResolver.exact_bary">
+        <span class="sig-name descname"><span class="pre">exact_bary</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactCorpusResolver.exact_bary" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactCorpusResolver.mp_bary">
+        <span class="sig-name descname"><span class="pre">mp_bary</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">mpmath.mpf</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">mpmath.mpf</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">mpmath.mpf</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactCorpusResolver.mp_bary" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactCorpusResolver.zero_div_poles">
+        <span class="sig-name descname"><span class="pre">zero_div_poles</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#set" title="(in Python v3.13)"><span class="pre">set</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactCorpusResolver.zero_div_poles" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactCorpusResolver.results">
+        <span class="sig-name descname"><span class="pre">results</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#geometor.etc.field_eval.ExactEvalResult" title="geometor.etc.field_eval.ExactEvalResult"><span class="pre">ExactEvalResult</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactCorpusResolver.results" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactCorpusResolver.audit_exact_collinearity">
+        <span class="sig-name descname"><span class="pre">audit_exact_collinearity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">max_lines_per_center</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">4</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactCorpusResolver.audit_exact_collinearity" title="Link to this definition">¶</a></dt>
+        <dd><p>Verify exact zero-determinant collinearity across all resolved centers.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.etc.field_eval.ExactCorpusResolver.resolve_all">
+        <span class="sig-name descname"><span class="pre">resolve_all</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">max_passes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#geometor.etc.field_eval.ExactEvalResult" title="geometor.etc.field_eval.ExactEvalResult"><span class="pre">ExactEvalResult</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.field_eval.ExactCorpusResolver.resolve_all" title="Link to this definition">¶</a></dt>
+        <dd><p>Resolve all centers in <code class="docutils literal notranslate"><span class="pre">centers_by_num</span></code> (exact first, then 50-digit fallback).</p>
+        </dd></dl>
+
+        </dd></dl>
+
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../construct/index.html" title="geometor.etc.construct">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../index.html">Modules</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../glossary/index.html" title="geometor.etc.glossary"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../../../../log/26.323-184000/index.html">Scaling ETC to All 73,310 Centers in Exact Symbolic Algebra & Unified Viewer</a></li>
+        <li><a href="../../../../../log/26.302-183300/index.html">ETC Semantic Parser, Apparatus Registries & Multi-Triangle Codex Builder</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-tags">
+      <h3>Tags</h3>
+      <ul>
+        <li><a href="../../../../../tags/apparatus.html">apparatus</a></li>
+        <li><a href="../../../../../tags/etc.html">etc</a></li>
+        <li><a href="../../../../../tags/exact-algebra.html">exact-algebra</a></li>
+        <li><a href="../../../../../tags/families.html">families</a></li>
+        <li><a href="../../../../../tags/live-explorer.html">live-explorer</a></li>
+        <li><a href="../../../../../tags/shards.html">shards</a></li>
+        <li><a href="../../../../../tags/svg.html">svg</a></li>
+        <li><a href="../../../../../tags/triangle-centers.html">triangle-centers</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-categories">
+      <h3>Categories</h3>
+      <ul>
+        <li><a href="../../../../../categories/architecture.html">architecture</a></li>
+        <li><a href="../../../../../categories/constructions.html">constructions</a></li>
+        <li><a href="../../../../../categories/parser.html">parser</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../../../types/book.html">book</a></li>
+        <li><a href="../../../../../types/collection.html">collection</a></li>
+        <li><a href="../../../../../types/log.html">log</a></li>
+        <li><a href="../../../../../types/person.html">person</a></li>
+        <li><a href="../../../../../types/source_record.html">source_record</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../../../../usage/index.html"  >Usage</a></li>
+        <li><a href="../../../../../changelog.html"  >Changelog</a></li>
+        <li><a href="../../../../../preambles.html"  >Preambles</a></li>
+        <li><a href="../../../../../connect.html"  >Connect</a></li>
+        <li><a href="../../../../../todos/index.html"  >Todos</a></li>
+        <li><a href="https://github.com/geometor/etc" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://github.com/geometor/etc/issues" target="_blank" rel="noopener">Support</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../../_static/documentation_options.js?v=6c02275b"></script>
+  <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../../../_static/js/collection_directory.js?v=2422530d"></script>
+  <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../../../../../_static/js/etc-viewer.js?v=ff0c514d"></script>
+  <script src="../../../../../_static/js/etc-live-viewer.js?v=90a9d2d3"></script>
+  <script src="../../../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

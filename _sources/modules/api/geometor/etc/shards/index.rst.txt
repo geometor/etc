@@ -1,0 +1,65 @@
+geometor.etc.shards
+===================
+
+.. py:module:: geometor.etc.shards
+
+.. autoapi-nested-parse::
+
+   Parallel exact-symbolic JSON shard builder for GEOMETOR ETC.
+
+   Compiles parsed ETC center HTML files across all 7 canonical reference triangles
+   using :mod:`geometor.etc.field_eval` into compact 100-center JSON shards,
+   a shared companion-center lookup table (``core-centers.json``), a fast search
+   index (``search-index.json``), and a manifest with exact projective collinearity
+   audit metrics (``manifest.json``).
+
+   Usage::
+
+       uv run --no-sync python -m geometor.etc.shards --end 4000
+       uv run --no-sync python -m geometor.etc.shards --end 53144
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.etc.shards.DEFAULT_SPLIT_DIR
+   geometor.etc.shards.DEFAULT_DATA_DIR
+   geometor.etc.shards.SHARD_SIZE
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.shards.build_shards
+   geometor.etc.shards.build_families_json
+   geometor.etc.shards.main
+
+
+Module Contents
+---------------
+
+.. py:data:: DEFAULT_SPLIT_DIR
+
+.. py:data:: DEFAULT_DATA_DIR
+
+.. py:data:: SHARD_SIZE
+   :value: 100
+
+
+.. py:function:: build_shards(*, split_dir: pathlib.Path = DEFAULT_SPLIT_DIR, output_dir: pathlib.Path = DEFAULT_DATA_DIR, end: int = 4000, workers: int | None = None, core_hub_count: int = 600) -> dict[str, Any]
+
+   Parse, evaluate across all 7 canonical triangles, verify, and emit compact JSON shards.
+
+
+.. py:function:: build_families_json(*, split_dir: pathlib.Path = DEFAULT_SPLIT_DIR, output_dir: pathlib.Path = DEFAULT_DATA_DIR) -> dict[str, Any]
+
+   Export all 62 curated thematic collections and all 925 ETC preamble families into ``families.json``.
+
+
+.. py:function:: main() -> None
+

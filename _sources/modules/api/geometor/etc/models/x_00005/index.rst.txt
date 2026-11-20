@@ -1,0 +1,40 @@
+geometor.etc.models.x_00005
+===========================
+
+.. py:module:: geometor.etc.models.x_00005
+
+.. autoapi-nested-parse::
+
+   Exact symbolic GEOMETOR construction model for ``X_5 = NINE-POINT CENTER``.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.models.x_00005.construct_x_00005
+   geometor.etc.models.x_00005.build_model
+
+
+Module Contents
+---------------
+
+.. py:function:: construct_x_00005(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point) -> sympy.geometry.Point
+
+   Construct ``X_5 = NINE-POINT CENTER`` and its classical incident central lines on ``ABC``.
+
+   Constructed elements include:
+
+   - Medial midpoints ``M_a, M_b, M_c``, orthic feet ``H_a, H_b, H_c``, Euler midpoints
+     ``Eu_a, Eu_b, Eu_c``, and the ``nine_point_circle``.
+   - Incident central lines: Euler ``{ 2, 3 }`` (with ``X_2, X_3, X_4``),
+     Feuerbach ``{ 1, 11 }`` (with ``X_1, X_11, X_12``), ``{ 39, 115 }``, and ``{ 54, 110 }``.
+
+
+.. py:function:: build_model(preset: str | tuple[sympy.Expr | int, sympy.Expr | int, sympy.Expr | int] = 'heronian', show_guides: bool = False) -> geometor.model.Model
+
+   Build an exact symbolic :class:`geometor.model.Model` for ``X_5 = NINE-POINT CENTER``.
+
+

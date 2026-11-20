@@ -1,0 +1,59 @@
+geometor.etc.tracks
+===================
+
+.. py:module:: geometor.etc.tracks
+
+.. autoapi-nested-parse::
+
+   Generalized 5-Track Tabular Book Codex generator for GEOMETOR ETC centers.
+
+   Splits each center with a full symbolic plate suite (Collection 1 ``X_1``–``X_19`` and any
+   future multi-plate center) into five fast, focused, tabular Book Codex tracks:
+
+   - ``index.rst`` (Overview): Identity strip, enunciation, primary viewer, ordered Homogeneous
+     Coordinates table, Four-Triangle Symbolic Invariants table, Heronian Coordinate Decomposition
+     table, Constructed Elements table, and Linear Combinations table.
+   - ``lines.rst`` (Lines): Central Lines viewer (4-triangle tabs), Principal Central Lines table
+     with exact Cartesian equations and spreads, incident curves/cubics, and full line catalog.
+   - ``relations.rst`` (Relations): Relations viewer, Canonical Algebraic Operators table, and
+     categorized Functional Relations tables (Unary, Binary, Perspectors/Derived Triangles).
+   - ``notes.rst`` (Notes): Construction viewer, structured metric/excenter identities where
+     present, geometric constructions, historical citations, and companion topic guides.
+   - ``code.rst`` (Code): Construction viewer (4-triangle tabs) alongside exact symbolic ``model.py``.
+
+   Zero center-specific hardcoding; every table derives from ``CenterSymbolicRegistry``,
+   ``CenterRelationsBundle``, the exact symbolic ``Model``, and parsed ETC apparatus records.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.etc.tracks.TRACKS_FRONTMATTER
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.tracks.format_multitrack_center_rsts
+
+
+Module Contents
+---------------
+
+.. py:data:: TRACKS_FRONTMATTER
+   :value: 'Overview: index | Lines: lines | Relations: relations | Notes: notes | Code: code'
+
+
+.. py:function:: format_multitrack_center_rsts(data: dict[str, Any], entry_dir: pathlib.Path, glossary_terms: dict[str, Any] | list[str] | None = None, preambles: list[dict[str, Any]] | None = None, valid_centers: set[int] | None = None, figure_uri: str | None = None, search_value: float | None = None, include_model_py: bool = False, model: Any = None) -> dict[str, str]
+
+   Generate the complete 5-track tabular Book Codex RST mapping for a symbolic center.
+
+   Returns a dict mapping filename (``"index.rst"``, ``"lines.rst"``, ``"relations.rst"``,
+   ``"notes.rst"``) to its verified ReStructuredText source.
+
+

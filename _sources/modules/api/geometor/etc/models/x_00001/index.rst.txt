@@ -1,0 +1,41 @@
+geometor.etc.models.x_00001
+===========================
+
+.. py:module:: geometor.etc.models.x_00001
+
+.. autoapi-nested-parse::
+
+   Exact symbolic GEOMETOR construction model for ``X_1 = INCENTER`` (Euclid IV.4).
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.models.x_00001.construct_x_00001
+   geometor.etc.models.x_00001.build_model
+
+
+Module Contents
+---------------
+
+.. py:function:: construct_x_00001(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point) -> sympy.geometry.Point
+
+   Construct ``X_1 = INCENTER`` and its classical incident central lines on ``ABC``.
+
+   Constructed elements include:
+
+   - Interior angle bisectors ``[ A I_a ]``, ``[ B I_b ]``, ``[ C I_c ]`` concurring at ``X_1``.
+   - Right-spread pedal touchpoints ``T_a``, ``T_b``, ``T_c`` and the inscribed ``incircle``.
+   - Incident central lines: Nagel ``{ 2, 8 }`` (with ``X_2, X_8, X_10``),
+     Incenter-Symmedian ``{ 6, 9 }``, Feuerbach ``{ 5, 11 }``, Soddy ``{ 7, 20 }``,
+     and ``OI`` line ``{ 3, 40 }``.
+
+
+.. py:function:: build_model(preset: str | tuple[sympy.Expr | int, sympy.Expr | int, sympy.Expr | int] = 'heronian', show_guides: bool = False) -> geometor.model.Model
+
+   Build an exact symbolic :class:`geometor.model.Model` for ``X_1 = INCENTER``.
+
+

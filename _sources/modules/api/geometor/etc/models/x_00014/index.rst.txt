@@ -1,0 +1,40 @@
+geometor.etc.models.x_00014
+===========================
+
+.. py:module:: geometor.etc.models.x_00014
+
+.. autoapi-nested-parse::
+
+   Exact symbolic GEOMETOR construction model for ``X_14 = 2ND ISOGONIC CENTER``.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.models.x_00014.construct_x_00014
+   geometor.etc.models.x_00014.build_model
+
+
+Module Contents
+---------------
+
+.. py:function:: construct_x_00014(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point) -> sympy.geometry.Point
+
+   Construct ``X_14 = 2ND ISOGONIC CENTER`` and its classical incident central lines on ``ABC``.
+
+   Constructed elements include:
+
+   - Inner equilateral triangles ``< B C A'' >``, ``< C A B'' >``, ``< A B C'' >``
+     and isogonic lines ``[ A A'' ]``, ``[ B B'' ]``, ``[ C C'' ]`` concurring at ``X_14``.
+   - Incident central lines: Fermat axis ``{ 6, 13 }``, ``{ 2, 15 }``, ``{ 3, 18 }``,
+     and ``{ 5, 17 }``.
+
+
+.. py:function:: build_model(preset: str | tuple[sympy.Expr | int, sympy.Expr | int, sympy.Expr | int] = 'heronian', show_guides: bool = False) -> geometor.model.Model
+
+   Build an exact symbolic :class:`geometor.model.Model` for ``X_14 = 2ND ISOGONIC CENTER``.
+
+

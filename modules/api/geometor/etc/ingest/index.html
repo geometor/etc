@@ -33,6 +33,7 @@
   <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
   <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=f1075037" />
   <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/etc-viewer.css?v=6bb90446" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
@@ -103,62 +104,11 @@
           <div class="book-nav-center">
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="../ops/index.html" title="geometor.etc.ops"><span class="nav-label">Next</span> &rarr;</a>
+            <a class="book-nav-btn" href="../models/index.html" title="geometor.etc.models"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </header>
       <div class="content body book-content" role="main">
-        <style id="etc-heading-styles">
-        .book-reading-pane .book-content h1,
-        .folio-book-page h1 {
-            position: relative;
-            text-align: center !important;
-            text-indent: 0 !important;
-            margin-bottom: 0.35rem !important;
-        }
-        .book-reading-pane .book-content h1 a.headerlink,
-        .book-reading-pane .book-content h2 a.headerlink,
-        .folio-book-page h1 a.headerlink,
-        .folio-book-page h2 a.headerlink {
-            position: absolute;
-        }
-        .book-reading-pane .book-content p.rubric,
-        .folio-book-page p.rubric {
-            font-style: normal !important;
-            font-weight: 700 !important;
-            text-align: center !important;
-            text-indent: 0 !important;
-            margin-left: 0 !important;
-            margin-right: 0 !important;
-            padding-left: 0 !important;
-            padding-right: 0 !important;
-            margin-top: 0 !important;
-            margin-bottom: 1.4rem !important;
-        }
-        .geom-ref {
-            cursor: pointer;
-            border-bottom: 1px dotted rgba(0, 229, 255, 0.55);
-            padding: 0 2px;
-            border-radius: 3px;
-            transition: background-color 0.12s ease, color 0.12s ease;
-        }
-        .geom-ref:hover,
-        .geom-highlight-text {
-            background-color: rgba(0, 255, 255, 0.18) !important;
-            color: #0ff !important;
-            border-bottom-color: #0ff !important;
-        }
-        .etc-act-plate {
-            margin: 0.5rem 0;
-        }
-        .etc-symbolic-concordance {
-            text-align: center;
-            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-            font-size: 0.92rem;
-            color: var(--book-text-muted, #94a3b8);
-            margin: -0.6rem 0 1.25rem 0;
-        }
-        </style>
         <section class="level-1" id="module-geometor.etc.ingest">
         <span id="geometor-etc-ingest"></span><h1>geometor.etc.ingest<a class="headerlink" href="#module-geometor.etc.ingest" title="Link to this heading">¶</a></h1>
         <p>Ingest raw HTML volumes of the Encyclopedia of Triangle Centers (ETC).</p>
@@ -166,6 +116,16 @@
         - Individual center HTML files (<cite>x-00001.html</cite> .. <cite>x-53144.html</cite>) in <cite>output_folder</cite>
         - Inter-center group preambles (<cite>preambles/p-XXXX-x-YYYYY.html</cite> and <cite>preambles.json</cite>)
         - Part 1 introductory essays (<cite>intro/00-header.html</cite> .. <cite>intro/09-combos.html</cite> and <cite>intros.json</cite>)</p>
+        <section class="level-2" id="attributes">
+        <h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.ingest.ETC_BASE_URL" title="geometor.etc.ingest.ETC_BASE_URL"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ETC_BASE_URL</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
         <section class="level-2" id="functions">
         <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
         <table class="autosummary longtable docutils align-default">
@@ -184,6 +144,9 @@
         </tr>
         <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.ingest.ingest_folder" title="geometor.etc.ingest.ingest_folder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ingest_folder</span></code></a>(input_folder, output_folder) → dict[str, Any]</p></td>
         <td><p>Ingest all ETC volume HTML files in <cite>input_folder</cite> and write split files to <cite>output_folder</cite>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.ingest.fetch_latest_etc_parts" title="geometor.etc.ingest.fetch_latest_etc_parts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_latest_etc_parts</span></code></a>([output_folder, start_part, ...]) → list[pathlib.Path]</p></td>
+        <td><p>Download newly published <code class="docutils literal notranslate"><span class="pre">ETCPartN.html</span></code> volumes from Clark Kimberling's ETC site.</p></td>
         </tr>
         </tbody>
         </table>
@@ -221,6 +184,18 @@
         <p>Returns a summary dictionary with counts of centers, preambles, and intro sections.</p>
         </dd></dl>
 
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.etc.ingest.ETC_BASE_URL">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.ingest.</span></span><span class="sig-name descname"><span class="pre">ETC_BASE_URL</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'https://faculty.evansville.edu/ck6/encyclopedia/'</span></span><a class="headerlink" href="#geometor.etc.ingest.ETC_BASE_URL" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.etc.ingest.fetch_latest_etc_parts">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.ingest.</span></span><span class="sig-name descname"><span class="pre">fetch_latest_etc_parts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output_folder</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'resources/source'</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_part</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">27</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_part</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">65</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delay_seconds</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.4</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.etc.ingest.fetch_latest_etc_parts" title="Link to this definition">¶</a></dt>
+        <dd><p>Download newly published <code class="docutils literal notranslate"><span class="pre">ETCPartN.html</span></code> volumes from Clark Kimberling’s ETC site.</p>
+        <p>Stops cleanly on the first HTTP 404 or placeholder stub (&lt; 25 KB).</p>
+        </dd></dl>
+
         </section>
         </section>
 
@@ -235,7 +210,7 @@
             <a class="book-toc-link" href="../../../../index.html">Modules</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="../ops/index.html" title="geometor.etc.ops"><span class="nav-label">Next</span> &rarr;</a>
+            <a class="book-nav-btn" href="../models/index.html" title="geometor.etc.models"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </footer>
@@ -263,6 +238,7 @@
     <aside class="aside-recent-logs">
       <h3>Recent Logs</h3>
       <ul>
+        <li><a href="../../../../../log/26.323-184000/index.html">Scaling ETC to All 73,310 Centers in Exact Symbolic Algebra & Unified Viewer</a></li>
         <li><a href="../../../../../log/26.302-183300/index.html">ETC Semantic Parser, Apparatus Registries & Multi-Triangle Codex Builder</a></li>
       </ul>
     </aside>
@@ -271,6 +247,10 @@
       <ul>
         <li><a href="../../../../../tags/apparatus.html">apparatus</a></li>
         <li><a href="../../../../../tags/etc.html">etc</a></li>
+        <li><a href="../../../../../tags/exact-algebra.html">exact-algebra</a></li>
+        <li><a href="../../../../../tags/families.html">families</a></li>
+        <li><a href="../../../../../tags/live-explorer.html">live-explorer</a></li>
+        <li><a href="../../../../../tags/shards.html">shards</a></li>
         <li><a href="../../../../../tags/svg.html">svg</a></li>
         <li><a href="../../../../../tags/triangle-centers.html">triangle-centers</a></li>
       </ul>
@@ -278,6 +258,7 @@
     <aside class="aside-categories">
       <h3>Categories</h3>
       <ul>
+        <li><a href="../../../../../categories/architecture.html">architecture</a></li>
         <li><a href="../../../../../categories/constructions.html">constructions</a></li>
         <li><a href="../../../../../categories/parser.html">parser</a></li>
       </ul>
@@ -315,12 +296,14 @@
 
   <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../../../../_static/documentation_options.js?v=71d9d8e6"></script>
+  <script src="../../../../../_static/documentation_options.js?v=6c02275b"></script>
   <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
   <script src="../../../../../_static/js/collection_directory.js?v=2422530d"></script>
   <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../../../../../_static/js/etc-viewer.js?v=ff0c514d"></script>
+  <script src="../../../../../_static/js/etc-live-viewer.js?v=90a9d2d3"></script>
   <script src="../../../../../_static/js/search_highlight.js"></script>
 
 </body>

@@ -33,6 +33,7 @@
   <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
   <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=f1075037" />
   <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/etc-viewer.css?v=6bb90446" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
@@ -108,57 +109,6 @@
         </div>
       </header>
       <div class="content body book-content" role="main">
-        <style id="etc-heading-styles">
-        .book-reading-pane .book-content h1,
-        .folio-book-page h1 {
-            position: relative;
-            text-align: center !important;
-            text-indent: 0 !important;
-            margin-bottom: 0.35rem !important;
-        }
-        .book-reading-pane .book-content h1 a.headerlink,
-        .book-reading-pane .book-content h2 a.headerlink,
-        .folio-book-page h1 a.headerlink,
-        .folio-book-page h2 a.headerlink {
-            position: absolute;
-        }
-        .book-reading-pane .book-content p.rubric,
-        .folio-book-page p.rubric {
-            font-style: normal !important;
-            font-weight: 700 !important;
-            text-align: center !important;
-            text-indent: 0 !important;
-            margin-left: 0 !important;
-            margin-right: 0 !important;
-            padding-left: 0 !important;
-            padding-right: 0 !important;
-            margin-top: 0 !important;
-            margin-bottom: 1.4rem !important;
-        }
-        .geom-ref {
-            cursor: pointer;
-            border-bottom: 1px dotted rgba(0, 229, 255, 0.55);
-            padding: 0 2px;
-            border-radius: 3px;
-            transition: background-color 0.12s ease, color 0.12s ease;
-        }
-        .geom-ref:hover,
-        .geom-highlight-text {
-            background-color: rgba(0, 255, 255, 0.18) !important;
-            color: #0ff !important;
-            border-bottom-color: #0ff !important;
-        }
-        .etc-act-plate {
-            margin: 0.5rem 0;
-        }
-        .etc-symbolic-concordance {
-            text-align: center;
-            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-            font-size: 0.92rem;
-            color: var(--book-text-muted, #94a3b8);
-            margin: -0.6rem 0 1.25rem 0;
-        }
-        </style>
         <section class="level-1" id="module-geometor.etc.plates">
         <span id="geometor-etc-plates"></span><h1>geometor.etc.plates<a class="headerlink" href="#module-geometor.etc.plates" title="Link to this heading">¶</a></h1>
         <p>Generalized exact symbolic 5-Act documentation plate generators for GEOMETOR ETC.</p>
@@ -175,6 +125,9 @@
         <table class="autosummary longtable docutils align-default">
         <tbody>
         <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.etc.plates.CIRCLE_CENTER_SPECS" title="geometor.etc.plates.CIRCLE_CENTER_SPECS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CIRCLE_CENTER_SPECS</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.plates.generate_doc_canonical_triangles_svg" title="geometor.etc.plates.generate_doc_canonical_triangles_svg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_doc_canonical_triangles_svg</span></code></a></p></td>
         <td><p></p></td>
         </tr>
         </tbody>
@@ -216,7 +169,7 @@
         <td><p>Generate Act 4 <code class="docutils literal notranslate"><span class="pre">04_relations.svg</span></code> and populate <code class="docutils literal notranslate"><span class="pre">bundle.svg_ids</span></code> with exact plotted IDs.</p></td>
         </tr>
         <tr class="row-even"><td><p><a class="reference internal" href="#geometor.etc.plates.generate_doc_four_triangles_svg" title="geometor.etc.plates.generate_doc_four_triangles_svg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_doc_four_triangles_svg</span></code></a>(num) → str</p></td>
-        <td><p>Generate Act 5 <code class="docutils literal notranslate"><span class="pre">05_four_triangles.svg</span></code> across all 4 Canonical Symbolic Reference Triangles.</p></td>
+        <td><p>Generate Act 5 <code class="docutils literal notranslate"><span class="pre">05_four_triangles.svg</span></code> as a 3×2 grid across the 6 non-degenerate Canonical Triangles.</p></td>
         </tr>
         </tbody>
         </table>
@@ -424,8 +377,13 @@
         <dl class="py function">
         <dt class="sig sig-object py" id="geometor.etc.plates.generate_doc_four_triangles_svg">
         <span class="sig-prename descclassname"><span class="pre">geometor.etc.plates.</span></span><span class="sig-name descname"><span class="pre">generate_doc_four_triangles_svg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.etc.plates.generate_doc_four_triangles_svg" title="Link to this definition">¶</a></dt>
-        <dd><p>Generate Act 5 <code class="docutils literal notranslate"><span class="pre">05_four_triangles.svg</span></code> across all 4 Canonical Symbolic Reference Triangles.</p>
+        <dd><p>Generate Act 5 <code class="docutils literal notranslate"><span class="pre">05_four_triangles.svg</span></code> as a 3×2 grid across the 6 non-degenerate Canonical Triangles.</p>
         </dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.etc.plates.generate_doc_canonical_triangles_svg">
+        <span class="sig-prename descclassname"><span class="pre">geometor.etc.plates.</span></span><span class="sig-name descname"><span class="pre">generate_doc_canonical_triangles_svg</span></span><a class="headerlink" href="#geometor.etc.plates.generate_doc_canonical_triangles_svg" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
         </section>
         </section>
@@ -469,6 +427,7 @@
     <aside class="aside-recent-logs">
       <h3>Recent Logs</h3>
       <ul>
+        <li><a href="../../../../../log/26.323-184000/index.html">Scaling ETC to All 73,310 Centers in Exact Symbolic Algebra & Unified Viewer</a></li>
         <li><a href="../../../../../log/26.302-183300/index.html">ETC Semantic Parser, Apparatus Registries & Multi-Triangle Codex Builder</a></li>
       </ul>
     </aside>
@@ -477,6 +436,10 @@
       <ul>
         <li><a href="../../../../../tags/apparatus.html">apparatus</a></li>
         <li><a href="../../../../../tags/etc.html">etc</a></li>
+        <li><a href="../../../../../tags/exact-algebra.html">exact-algebra</a></li>
+        <li><a href="../../../../../tags/families.html">families</a></li>
+        <li><a href="../../../../../tags/live-explorer.html">live-explorer</a></li>
+        <li><a href="../../../../../tags/shards.html">shards</a></li>
         <li><a href="../../../../../tags/svg.html">svg</a></li>
         <li><a href="../../../../../tags/triangle-centers.html">triangle-centers</a></li>
       </ul>
@@ -484,6 +447,7 @@
     <aside class="aside-categories">
       <h3>Categories</h3>
       <ul>
+        <li><a href="../../../../../categories/architecture.html">architecture</a></li>
         <li><a href="../../../../../categories/constructions.html">constructions</a></li>
         <li><a href="../../../../../categories/parser.html">parser</a></li>
       </ul>
@@ -521,12 +485,14 @@
 
   <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../../../../_static/documentation_options.js?v=71d9d8e6"></script>
+  <script src="../../../../../_static/documentation_options.js?v=6c02275b"></script>
   <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
   <script src="../../../../../_static/js/collection_directory.js?v=2422530d"></script>
   <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../../../../../_static/js/etc-viewer.js?v=ff0c514d"></script>
+  <script src="../../../../../_static/js/etc-live-viewer.js?v=90a9d2d3"></script>
   <script src="../../../../../_static/js/search_highlight.js"></script>
 
 </body>

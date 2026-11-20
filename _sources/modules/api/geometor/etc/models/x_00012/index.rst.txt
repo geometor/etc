@@ -1,0 +1,41 @@
+geometor.etc.models.x_00012
+===========================
+
+.. py:module:: geometor.etc.models.x_00012
+
+.. autoapi-nested-parse::
+
+   Exact symbolic GEOMETOR construction model for ``X_12 = {X_1, X_5}-HARMONIC CONJUGATE OF X_11``.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.models.x_00012.construct_x_00012
+   geometor.etc.models.x_00012.build_model
+
+
+Module Contents
+---------------
+
+.. py:function:: construct_x_00012(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point) -> sympy.geometry.Point
+
+   Construct ``X_12`` and its classical incident central lines on ``ABC``.
+
+   Constructed elements include:
+
+   - Incircle, nine-point circle, Feuerbach triangle ``< F_a F_b F_c >``, and
+     perspectivity lines ``[ A F_a ]``, ``[ B F_b ]``, ``[ C F_c ]`` concurring at ``X_12``.
+   - Incident central lines: Feuerbach ``{ 1, 5 }`` (with ``X_1, X_5, X_11``),
+     Centroid-Exsimilicenter ``{ 2, 56 }``, Orthocenter-Insimilicenter ``{ 4, 55 }``,
+     and ``{ 10, 65 }``.
+
+
+.. py:function:: build_model(preset: str | tuple[sympy.Expr | int, sympy.Expr | int, sympy.Expr | int] = 'heronian', show_guides: bool = False) -> geometor.model.Model
+
+   Build an exact symbolic :class:`geometor.model.Model` for ``X_12``.
+
+

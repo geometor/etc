@@ -109,11 +109,36 @@ Module Contents
       :type:  sympy.Expr
 
 
+   .. py:attribute:: is_indeterminate
+      :type:  bool
+      :value: False
+
+
+
+   .. py:attribute:: is_ideal
+      :type:  bool
+      :value: False
+
+
+
+   .. py:attribute:: symmetry_note
+      :type:  str
+      :value: ''
+
+
+
    .. py:property:: is_kepler
       :type: bool
 
 
       Return whether this record belongs to the Kepler golden triangle.
+
+
+   .. py:property:: is_finite
+      :type: bool
+
+
+      Return whether this record represents a finite determinate Euclidean point.
 
 
    .. py:method:: xy_latex() -> str
@@ -189,7 +214,8 @@ Module Contents
    Exact symbolic evaluator and persistent cache for ETC triangle centers.
 
    :param triangle: A :class:`SymbolicTriangle` instance or canonical preset name
-                    (``"heronian"``, ``"right"``, ``"kepler"``, ``"kimberling"``).
+                    (``"heronian"``, ``"right"``, ``"kepler"``, ``"kimberling"``,
+                    ``"golden"``, ``"gnomon"``, ``"equilateral"``).
    :param cache_dir: Directory where per-triangle JSON cache files are stored. Pass ``None``
                      to disable disk persistence (in-memory only).
 

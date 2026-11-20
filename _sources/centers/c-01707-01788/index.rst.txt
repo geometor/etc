@@ -54,5 +54,345 @@ X_1707–X_1788
 
    Of course, reversing the pairs gives a list of (J,I) for which X_i = :g:`M* <M*>`\ (X_j).
 
-.. collection::
-   :sort: order
+Member Centers
+--------------
+
+:ref:`Open Interactive 7-Triangle Constellation & Explorer ↗ <family-c-01707-01788>`
+
+.. list-table::
+   :class: etc-table etc-mode-relations
+   :header-rows: 1
+   :widths: 12 56 18 14
+
+   * - Center
+     - Name
+     - Search (6,9,13)
+     - Precision
+   * - :ref:`X_1707 <X_1707>`
+     - MIMOSA TRANSFORM OF X\_6
+     - ``-1.473830``
+     - Exact
+   * - :ref:`X_1708 <X_1708>`
+     - MIMOSA TRANSFORM OF X\_7
+     - ``-0.650041``
+     - Exact
+   * - :ref:`X_1709 <X_1709>`
+     - MIMOSA TRANSFORM OF X\_9
+     - ``-8.418403``
+     - Exact
+   * - :ref:`X_1710 <X_1710>`
+     - MIMOSA TRANSFORM OF X\_10
+     - ``-1.984307``
+     - Exact
+   * - :ref:`X_1711 <X_1711>`
+     - MIMOSA TRANSFORM OF X\_19
+     - ``-0.818990``
+     - Exact
+   * - :ref:`X_1712 <X_1712>`
+     - MIMOSA TRANSFORM OF (20)
+     - ``0.861549``
+     - Exact
+   * - :ref:`X_1713 <X_1713>`
+     - MIMOSA TRANSFORM OF X\_27
+     - ``-0.327735``
+     - Exact
+   * - :ref:`X_1714 <X_1714>`
+     - MIMOSA TRANSFORM OF X\_28
+     - ``-1.101878``
+     - Exact
+   * - :ref:`X_1715 <X_1715>`
+     - MIMOSA TRANSFORM OF X\_29
+     - ``2.499192``
+     - Exact
+   * - :ref:`X_1716 <X_1716>`
+     - MIMOSA TRANSFORM OF X\_31
+     - ``-1.749298``
+     - Exact
+   * - :ref:`X_1717 <X_1717>`
+     - MIMOSA TRANSFORM OF X\_35
+     - ``34.690188``
+     - Exact
+   * - :ref:`X_1718 <X_1718>`
+     - MIMOSA TRANSFORM OF X\_36
+     - ``0.733493``
+     - Exact
+   * - :ref:`X_1719 <X_1719>`
+     - MIMOSA TRANSFORM OF X\_37
+     - ``-1.478129``
+     - Exact
+   * - :ref:`X_1720 <X_1720>`
+     - MIMOSA TRANSFORM OF X\_40
+     - ``1.249807``
+     - Exact
+   * - :ref:`X_1721 <X_1721>`
+     - MIMOSA TRANSFORM OF X\_55
+     - ``-4.463951``
+     - Exact
+   * - :ref:`X_1722 <X_1722>`
+     - MIMOSA TRANSFORM OF X\_56
+     - ``-1.616817``
+     - Exact
+   * - :ref:`X_1723 <X_1723>`
+     - MIMOSA TRANSFORM OF X\_57
+     - ``-1.161152``
+     - Exact
+   * - :ref:`X_1724 <X_1724>`
+     - MIMOSA TRANSFORM OF X\_58
+     - ``-1.523028``
+     - Exact
+   * - :ref:`X_1725 <X_1725>`
+     - MIMOSA TRANSFORM OF X\_74
+     - ``0.865650``
+     - Exact
+   * - :ref:`X_1726 <X_1726>`
+     - MIMOSA TRANSFORM OF X\_75
+     - ``-2.343662``
+     - Exact
+   * - :ref:`X_1727 <X_1727>`
+     - MIMOSA TRANSFORM OF X\_80
+     - ``1.658729``
+     - Exact
+   * - :ref:`X_1728 <X_1728>`
+     - MIMOSA TRANSFORM OF X\_84
+     - ``0.256126``
+     - Exact
+   * - :ref:`X_1729 <X_1729>`
+     - MIMOSA TRANSFORM OF X\_85
+     - ``-0.148626``
+     - Exact
+   * - :ref:`X_1730 <X_1730>`
+     - MIMOSA TRANSFORM OF X\_86
+     - ``-1.200151``
+     - Exact
+   * - :ref:`X_1731 <X_1731>`
+     - MIMOSA TRANSFORM OF X\_88
+     - ``-0.876759``
+     - Exact
+   * - :ref:`X_1732 <X_1732>`
+     - MIMOSA TRANSFORM OF X\_89
+     - ``-1.222030``
+     - Exact
+   * - :ref:`X_1733 <X_1733>`
+     - MIMOSA TRANSFORM OF X\_98
+     - ``0.363657``
+     - Exact
+   * - :ref:`X_1734 <X_1734>`
+     - MIMOSA TRANSFORM OF X\_101
+     - ``-18.915357``
+     - Exact
+   * - :ref:`X_1735 <X_1735>`
+     - MIMOSA TRANSFORM OF X\_102
+     - ``1.086370``
+     - Exact
+   * - :ref:`X_1736 <X_1736>`
+     - MIMOSA TRANSFORM OF X\_103
+     - ``0.767220``
+     - Exact
+   * - :ref:`X_1737 <X_1737>`
+     - MIMOSA TRANSFORM OF X\_104
+     - ``0.510337``
+     - Exact
+   * - :ref:`X_1738 <X_1738>`
+     - MIMOSA TRANSFORM OF X\_105
+     - ``-0.989820``
+     - Exact
+   * - :ref:`X_1739 <X_1739>`
+     - MIMOSA TRANSFORM OF X\_106
+     - ``-1.866059``
+     - Exact
+   * - :ref:`X_1740 <X_1740>`
+     - MIMOSA TRANSFORM OF X\_184
+     - ``-0.776784``
+     - Exact
+   * - :ref:`X_1741 <X_1741>`
+     - MIMOSA TRANSFORM OF X\_189
+     - ``1.573970``
+     - Exact
+   * - :ref:`X_1742 <X_1742>`
+     - MIMOSA TRANSFORM OF X\_212
+     - ``5.224683``
+     - Exact
+   * - :ref:`X_1743 <X_1743>`
+     - MIMOSA TRANSFORM OF X\_222
+     - ``-0.525874``
+     - Exact
+   * - :ref:`X_1744 <X_1744>`
+     - MIMOSA TRANSFORM OF X\_226
+     - ``-0.502550``
+     - Exact
+   * - :ref:`X_1745 <X_1745>`
+     - MIMOSA TRANSFORM OF X\_255
+     - ``-3.491509``
+     - Exact
+   * - :ref:`X_1746 <X_1746>`
+     - MIMOSA TRANSFORM OF X\_261
+     - ``-7.561461``
+     - Exact
+   * - :ref:`X_1747 <X_1747>`
+     - MIMOSA TRANSFORM OF X\_262
+     - ``-0.151837``
+     - Exact
+   * - :ref:`X_1748 <X_1748>`
+     - MIMOSA TRANSFORM OF X\_264
+     - ``2.660186``
+     - Exact
+   * - :ref:`X_1749 <X_1749>`
+     - MIMOSA TRANSFORM OF X\_265
+     - ``-0.800763``
+     - Exact
+   * - :ref:`X_1750 <X_1750>`
+     - MIMOSA TRANSFORM OF X\_268
+     - ``-14.938577``
+     - Exact
+   * - :ref:`X_1751 <X_1751>`
+     - MIMOSA TRANSFORM OF X\_272
+     - ``0.906596``
+     - Exact
+   * - :ref:`X_1752 <X_1752>`
+     - MIMOSA TRANSFORM OF X\_277
+     - ``-7.939524``
+     - Exact
+   * - :ref:`X_1753 <X_1753>`
+     - MIMOSA TRANSFORM OF X\_280
+     - ``7.563496``
+     - Exact
+   * - :ref:`X_1754 <X_1754>`
+     - MIMOSA TRANSFORM OF X\_284
+     - ``-3.379057``
+     - Exact
+   * - :ref:`X_1755 <X_1755>`
+     - MIMOSA TRANSFORM OF X\_287
+     - ``-4.092117``
+     - Exact
+   * - :ref:`X_1756 <X_1756>`
+     - MIMOSA TRANSFORM OF X\_293
+     - ``-2.685297``
+     - Exact
+   * - :ref:`X_1757 <X_1757>`
+     - MIMOSA TRANSFORM OF X\_295
+     - ``-9.091119``
+     - Exact
+   * - :ref:`X_1758 <X_1758>`
+     - MIMOSA TRANSFORM OF X\_296
+     - ``-1.039345``
+     - Exact
+   * - :ref:`X_1759 <X_1759>`
+     - MIMOSA TRANSFORM OF X\_304
+     - ``8.471639``
+     - Exact
+   * - :ref:`X_1760 <X_1760>`
+     - MIMOSA TRANSFORM OF X\_305
+     - ``11.158854``
+     - Exact
+   * - :ref:`X_1761 <X_1761>`
+     - MIMOSA TRANSFORM OF X\_306
+     - ``7.198491``
+     - Exact
+   * - :ref:`X_1762 <X_1762>`
+     - MIMOSA TRANSFORM OF X\_307
+     - ``2.072374``
+     - Exact
+   * - :ref:`X_1763 <X_1763>`
+     - MIMOSA TRANSFORM OF X\_326
+     - ``-14.418626``
+     - Exact
+   * - :ref:`X_1764 <X_1764>`
+     - MIMOSA TRANSFORM OF X\_332
+     - ``13.343641``
+     - Exact
+   * - :ref:`X_1765 <X_1765>`
+     - MIMOSA TRANSFORM OF X\_333
+     - ``-11.892930``
+     - Exact
+   * - :ref:`X_1766 <X_1766>`
+     - MIMOSA TRANSFORM OF X\_345
+     - ``14.951547``
+     - Exact
+   * - :ref:`X_1767 <X_1767>`
+     - MIMOSA TRANSFORM OF X\_347
+     - ``0.272956``
+     - Exact
+   * - :ref:`X_1768 <X_1768>`
+     - MIMOSA TRANSFORM OF X\_521
+     - ``20.235471``
+     - Exact
+   * - :ref:`X_1769 <X_1769>`
+     - MIMOSA TRANSFORM OF X\_901
+     - ``-2.771186``
+     - Exact
+   * - :ref:`X_1770 <X_1770>`
+     - MIMOSA TRANSFORM OF X\_943
+     - ``-2.309928``
+     - Exact
+   * - :ref:`X_1771 <X_1771>`
+     - MIMOSA TRANSFORM OF X\_947
+     - ``2.699854``
+     - Exact
+   * - :ref:`X_1772 <X_1772>`
+     - MIMOSA TRANSFORM OF X\_953
+     - ``2.031008``
+     - Exact
+   * - :ref:`X_1773 <X_1773>`
+     - MIMOSA TRANSFORM OF X\_1038
+     - ``0.785367``
+     - Exact
+   * - :ref:`X_1774 <X_1774>`
+     - MIMOSA TRANSFORM OF X\_1061
+     - ``4.215557``
+     - Exact
+   * - :ref:`X_1775 <X_1775>`
+     - MIMOSA TRANSFORM OF X\_1063
+     - ``-0.527668``
+     - Exact
+   * - :ref:`X_1776 <X_1776>`
+     - MIMOSA TRANSFORM OF X\_1156
+     - ``1.143274``
+     - Exact
+   * - :ref:`X_1777 <X_1777>`
+     - MIMOSA TRANSFORM OF X\_1167
+     - ``-1.196890``
+     - Exact
+   * - :ref:`X_1778 <X_1778>`
+     - MIMOSA TRANSFORM OF X\_1171
+     - ``-1.473422``
+     - Exact
+   * - :ref:`X_1779 <X_1779>`
+     - MIMOSA TRANSFORM OF X\_1172
+     - ``0.765108``
+     - Exact
+   * - :ref:`X_1780 <X_1780>`
+     - MIMOSA TRANSFORM OF X\_1175
+     - ``-1.812714``
+     - Exact
+   * - :ref:`X_1781 <X_1781>`
+     - MIMOSA TRANSFORM OF X\_1214
+     - ``0.826332``
+     - Exact
+   * - :ref:`X_1782 <X_1782>`
+     - MIMOSA TRANSFORM OF X\_1257
+     - ``-1.714709``
+     - Exact
+   * - :ref:`X_1783 <X_1783>`
+     - MIMOSA TRANSFORM OF X\_1262
+     - ``-0.637776``
+     - Exact
+   * - :ref:`X_1784 <X_1784>`
+     - MIMOSA TRANSFORM OF X\_1294
+     - ``1.057067``
+     - Exact
+   * - :ref:`X_1785 <X_1785>`
+     - MIMOSA TRANSFORM OF X\_1295
+     - ``1.181378``
+     - Exact
+   * - :ref:`X_1786 <X_1786>`
+     - MIMOSA TRANSFORM OF X\_1442
+     - ``-166.978966``
+     - Exact
+   * - :ref:`X_1787 <X_1787>`
+     - MIMOSA TRANSFORM OF X\_1443
+     - ``0.353080``
+     - Exact
+   * - :ref:`X_1788 <X_1788>`
+     - MIMOSA TRANSFORM OF X\_1476
+     - ``-0.560997``
+     - Exact

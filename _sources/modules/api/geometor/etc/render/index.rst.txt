@@ -83,7 +83,7 @@ Module Contents
       
       #points circle {
           fill: var(--text-color);
-          stroke: var(--background-color);
+          stroke: var(--accent-color);
           stroke-width: 2.5;
           vector-effect: non-scaling-stroke;
           cursor: pointer;
@@ -100,17 +100,18 @@ Module Contents
       }
       
       #points circle.selected,
+      #points circle.given.selected,
       #points circle.target {
-          stroke: var(--select-color);
-          fill: gold;
-          stroke-width: 3;
+          fill: var(--accent-color);
+          stroke: #e8b85a;
+          stroke-width: 2.8;
       }
       
       #points circle:hover,
       #points circle.hover {
-          fill: var(--select-color) !important;
-          stroke: #fff !important;
-          stroke-width: 3.5 !important;
+          fill: #e8b85a !important;
+          stroke: var(--accent-color) !important;
+          stroke-width: 2.5 !important;
       }
       
       #elements line,
@@ -762,16 +763,13 @@ Module Contents
               const vb = getViewBox();
               const unitsPerPx = vb[2] / widthPx;
       
-              const targetRPx = parseFloat(svg.getAttribute('data-target-r-px') || '10.5');
+              const uniformR = (4.8 * unitsPerPx).toFixed(6);
               pointEls.forEach(c => {
-                  const isTarget = c.classList.contains('target') || c.classList.contains('selected');
-                  const isGuide = c.classList.contains('guide');
-                  const rPx = isTarget ? targetRPx : (isGuide ? 4.8 : 7.5);
-                  c.setAttribute('r', (rPx * unitsPerPx).toFixed(6));
+                  c.setAttribute('r', uniformR);
               });
       
-              const fontSize = 20.25 * unitsPerPx;
-              const guideFontSize = 17.5 * unitsPerPx;
+              const fontSize = 24.0 * unitsPerPx;
+              const guideFontSize = 21.0 * unitsPerPx;
               labelEls.forEach(lbl => {
                   const cx = parseFloat(lbl.getAttribute('data-anchor-x') || '0');
                   const cy = parseFloat(lbl.getAttribute('data-anchor-y') || '0');
@@ -1343,12 +1341,12 @@ Module Contents
    Convert a `geometor.model.Model` into a chronological list of browser-ready element dicts.
 
 
-.. py:function:: render_model_svg(model: geometor.model.Model, svg_width: int = 800, svg_height: int = 600, show_labels: bool = True, subtitle: str = '', show_lines: bool = False) -> str
+.. py:function:: render_model_svg(model: geometor.model.Model, svg_width: int = 800, svg_height: int = 600, show_labels: bool = True, subtitle: str = '', show_lines: bool = False, standalone: bool = True) -> str
 
    Render a `geometor.model.Model` to an interactive Explorer-compatible SVG string.
 
 
-.. py:function:: write_center_svg(model: geometor.model.Model, output_path: str | pathlib.Path, subtitle: str = '', show_lines: bool = False) -> pathlib.Path
+.. py:function:: write_center_svg(model: geometor.model.Model, output_path: str | pathlib.Path, subtitle: str = '', show_lines: bool = False, standalone: bool = True) -> pathlib.Path
 
    Render and write a center's `Model` SVG to `output_path`.
 

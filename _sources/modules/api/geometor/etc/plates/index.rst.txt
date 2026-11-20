@@ -23,6 +23,7 @@ Attributes
 .. autoapisummary::
 
    geometor.etc.plates.CIRCLE_CENTER_SPECS
+   geometor.etc.plates.generate_doc_canonical_triangles_svg
 
 
 Classes
@@ -228,6 +229,8 @@ Module Contents
 
 .. py:function:: generate_doc_four_triangles_svg(num: int) -> str
 
-   Generate Act 5 ``05_four_triangles.svg`` across all 4 Canonical Symbolic Reference Triangles.
+   Generate Act 5 ``05_four_triangles.svg`` as a 3×2 grid across the 6 non-degenerate Canonical Triangles.
 
+
+.. py:data:: generate_doc_canonical_triangles_svg
 

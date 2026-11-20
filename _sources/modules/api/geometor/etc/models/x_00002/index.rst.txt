@@ -1,0 +1,41 @@
+geometor.etc.models.x_00002
+===========================
+
+.. py:module:: geometor.etc.models.x_00002
+
+.. autoapi-nested-parse::
+
+   Exact symbolic GEOMETOR construction model for ``X_2 = CENTROID``.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.models.x_00002.construct_x_00002
+   geometor.etc.models.x_00002.build_model
+
+
+Module Contents
+---------------
+
+.. py:function:: construct_x_00002(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point) -> sympy.geometry.Point
+
+   Construct ``X_2 = CENTROID`` and its classical incident central lines on ``ABC``.
+
+   Constructed elements include:
+
+   - Medial triangle ``< M_a M_b M_c >`` and medians ``[ A M_a ]``, ``[ B M_b ]``,
+     ``[ C M_c ]`` concurring at ``X_2``.
+   - Incident central lines: Euler ``{ 3, 4 }`` (with ``X_3, X_4, X_5``),
+     Nagel ``{ 1, 8 }`` (with ``X_1, X_8, X_10``), Gergonne-Mittenpunkt ``{ 7, 9 }``,
+     Symmedian-Isotomic ``{ 6, 69 }``, and Feuerbach-Insimilicenter ``{ 11, 55 }``.
+
+
+.. py:function:: build_model(preset: str | tuple[sympy.Expr | int, sympy.Expr | int, sympy.Expr | int] = 'heronian', show_guides: bool = False) -> geometor.model.Model
+
+   Build an exact symbolic :class:`geometor.model.Model` for ``X_2 = CENTROID``.
+
+

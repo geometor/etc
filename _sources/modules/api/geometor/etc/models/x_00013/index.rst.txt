@@ -1,0 +1,40 @@
+geometor.etc.models.x_00013
+===========================
+
+.. py:module:: geometor.etc.models.x_00013
+
+.. autoapi-nested-parse::
+
+   Exact symbolic GEOMETOR construction model for ``X_13 = 1ST ISOGONIC CENTER`` (Fermat Point).
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.models.x_00013.construct_x_00013
+   geometor.etc.models.x_00013.build_model
+
+
+Module Contents
+---------------
+
+.. py:function:: construct_x_00013(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point) -> sympy.geometry.Point
+
+   Construct ``X_13 = 1ST ISOGONIC CENTER`` and its classical incident central lines on ``ABC``.
+
+   Constructed elements include:
+
+   - Outer equilateral triangles ``< B C A' >``, ``< C A B' >``, ``< A B C' >`` (Euclid I.1)
+     and Fermat lines ``[ A A' ]``, ``[ B B' ]``, ``[ C C' ]`` concurring at ``X_13``.
+   - Incident central lines: Fermat axis ``{ 6, 14 }``, ``{ 2, 16 }``, ``{ 3, 17 }``,
+     and ``{ 5, 18 }``.
+
+
+.. py:function:: build_model(preset: str | tuple[sympy.Expr | int, sympy.Expr | int, sympy.Expr | int] = 'heronian', show_guides: bool = False) -> geometor.model.Model
+
+   Build an exact symbolic :class:`geometor.model.Model` for ``X_13 = 1ST ISOGONIC CENTER``.
+
+

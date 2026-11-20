@@ -88,5 +88,433 @@ X_3758–X_3861
 
    (This section was added to ETC on 12/23/2011.)
 
-.. collection::
-   :sort: order
+Member Centers
+--------------
+
+:ref:`Open Interactive 7-Triangle Constellation & Explorer ↗ <family-c-03758-03861>`
+
+.. list-table::
+   :class: etc-table etc-mode-relations
+   :header-rows: 1
+   :widths: 12 56 18 14
+
+   * - Center
+     - Name
+     - Search (6,9,13)
+     - Precision
+   * - :ref:`X_3758 <X_3758>`
+     - X\_3661com[T(bc, b²)]
+     - ``1.815898``
+     - Exact
+   * - :ref:`X_3759 <X_3759>`
+     - X\_3662com[T(-bc, b²)]
+     - ``-1.098962``
+     - Exact
+   * - :ref:`X_3760 <X_3760>`
+     - X\_2275com[T(-bc, c²)]
+     - ``7.104264``
+     - Exact
+   * - :ref:`X_3761 <X_3761>`
+     - X\_2276com[T(bc, c²)]
+     - ``3.831615``
+     - Exact
+   * - :ref:`X_3762 <X_3762>`
+     - X\_1491com[T(bc, c²)]
+     - ``15.695722``
+     - Exact
+   * - :ref:`X_3763 <X_3763>`
+     - X\_3618com[T(a², a² + c²)]
+     - ``2.956661``
+     - Exact
+   * - :ref:`X_3764 <X_3764>`
+     - X\_869com[T(bc, b²)]
+     - ``1.557996``
+     - Exact
+   * - :ref:`X_3765 <X_3765>`
+     - X\_869com[T(bc, c²)]
+     - ``3.893916``
+     - Exact
+   * - :ref:`X_3766 <X_3766>`
+     - X\_3250com[T(bc, c²)]
+     - ``14.296344``
+     - Exact
+   * - :ref:`X_3767 <X_3767>`
+     - X\_3053com[T(a², a² - c²)]
+     - ``1.116358``
+     - Exact
+   * - :ref:`X_3768 <X_3768>`
+     - X\_3250com[T(bc, b²)]
+     - ``-5.539324``
+     - Exact
+   * - :ref:`X_3769 <X_3769>`
+     - X\_3705com[T(-bc, b²)]
+     - ``-3.223290``
+     - Exact
+   * - :ref:`X_3770 <X_3770>`
+     - X\_3736com[T(bc, c²)]
+     - ``3.854724``
+     - Exact
+   * - :ref:`X_3771 <X_3771>`
+     - X\_1707com[T(a², a² - b²)]
+     - ``4.065143``
+     - Exact
+   * - :ref:`X_3772 <X_3772>`
+     - X\_1707com[T(a², a² - c²)]
+     - ``0.982554``
+     - Exact
+   * - :ref:`X_3773 <X_3773>`
+     - X\_141com[INVERSE(nT(bc, c²))]
+     - ``3.976559``
+     - Exact
+   * - :ref:`X_3774 <X_3774>`
+     - X\_39com[INVERSE(nT(bc, b²))]
+     - ``1.217504``
+     - Exact
+   * - :ref:`X_3775 <X_3775>`
+     - X\_594com[INVERSE(nT(bc, c²))]
+     - ``3.285307``
+     - Exact
+   * - :ref:`X_3776 <X_3776>`
+     - X\_3700com[INVERSE(nT(-bc, c²))]
+     - ``-24.979004``
+     - Exact
+   * - :ref:`X_3777 <X_3777>`
+     - X\_1577com[INVERSE(nT(-bc, c²))]
+     - ``-10.705287``
+     - Exact
+   * - :ref:`X_3778 <X_3778>`
+     - X\_1964com[INVERSE(nT(-bc, b²))]
+     - ``1.804370``
+     - Exact
+   * - :ref:`X_3779 <X_3779>`
+     - X\_3056com[T(-bc, b²)]
+     - ``-1.024025``
+     - Exact
+   * - :ref:`X_3780 <X_3780>`
+     - X\_3721com[T(-bc, b²)]
+     - ``-0.346992``
+     - Exact
+   * - :ref:`X_3781 <X_3781>`
+     - X\_9com[INVERSE(nT(bc, c²))]
+     - ``5.352098``
+     - Exact
+   * - :ref:`X_3782 <X_3782>`
+     - X\_2887com[T(-bc, c²)]
+     - ``2.324757``
+     - Exact
+   * - :ref:`X_3783 <X_3783>`
+     - X\_668com[T(bc, c²)]
+     - ``-16.567030``
+     - Exact
+   * - :ref:`X_3784 <X_3784>`
+     - X\_57com[INVERSE(nT(-bc, c²))]
+     - ``4.627572``
+     - Exact
+   * - :ref:`X_3785 <X_3785>`
+     - X\_2548com[INVERSE(nT(a², a² + b²))]
+     - ``6.060448``
+     - Exact
+   * - :ref:`X_3786 <X_3786>`
+     - X\_1654com[INVERSE(nT(bc, c²))]
+     - ``3.900852``
+     - Exact
+   * - :ref:`X_3787 <X_3787>`
+     - X\_1196com[INVERSE(nT(a², a² - c²))]
+     - ``-1.427002``
+     - Exact
+   * - :ref:`X_3788 <X_3788>`
+     - X\_3053com[T(a², a² - b²)]
+     - ``3.385874``
+     - Exact
+   * - :ref:`X_3789 <X_3789>`
+     - X\_3679com[INVERSE(nT(bc, c²))]
+     - ``3.471599``
+     - Exact
+   * - :ref:`X_3790 <X_3790>`
+     - X\_3662com[INVERSE(nT(bc, c²))]
+     - ``5.121513``
+     - Exact
+   * - :ref:`X_3791 <X_3791>`
+     - X\_2887com[T(-bc, b²)]
+     - ``-1.694612``
+     - Exact
+   * - :ref:`X_3792 <X_3792>`
+     - X\_190com[INVERSE(nT(bc, c²))]
+     - ``-13.900044``
+     - Exact
+   * - :ref:`X_3793 <X_3793>`
+     - X\_625com[INVERSE(nT(a², a² - c²))]
+     - ``-9.153283``
+     - Exact
+   * - :ref:`X_3794 <X_3794>`
+     - X\_2com[INVERSE(nT(-bc, c²))]
+     - ``3.545674``
+     - Exact
+   * - :ref:`X_3795 <X_3795>`
+     - X\_3097com[INVERSE(nT(bc, b²))]
+     - ``0.792893``
+     - Exact
+   * - :ref:`X_3796 <X_3796>`
+     - X\_2com[INVERSE(nT(a², a² + c²))]
+     - ``12.263392``
+     - Exact
+   * - :ref:`X_3797 <X_3797>`
+     - X\_2com[INVERSE(nT(bc, b²))]
+     - ``25.452050``
+     - Exact
+   * - :ref:`X_3798 <X_3798>`
+     - X\_3239com[INVERSE(nT(a², a² - c²))]
+     - ``-13.334656``
+     - Exact
+   * - :ref:`X_3799 <X_3799>`
+     - X\_2com[INVERSE(nT(bc, c²))]
+     - ``4.681115``
+     - Exact
+   * - :ref:`X_3800 <X_3800>`
+     - X\_512com[INVERSE(nT(a², a² + b²))]
+     - —
+     - Exact
+   * - :ref:`X_3801 <X_3801>`
+     - X\_2533com[INVERSE(nT(-bc, b²))]
+     - ``-39.252720``
+     - Exact
+   * - :ref:`X_3802 <X_3802>`
+     - X\_1909com[INVERSE(nT(bc, c²))]
+     - ``2.597755``
+     - Exact
+   * - :ref:`X_3803 <X_3803>`
+     - X\_905com[INVERSE(nT(a², a² + c²))]
+     - ``14.407868``
+     - Exact
+   * - :ref:`X_3804 <X_3804>`
+     - X\_647com[INVERSE(nT(a², a² + c²))]
+     - ``8.493059``
+     - Exact
+   * - :ref:`X_3805 <X_3805>`
+     - X\_2786com[INVERSE(nT(bc,c²))]
+     - —
+     - Exact
+   * - :ref:`X_3806 <X_3806>`
+     - X\_2525com[INVERSE(nT(a², a² + c²))]
+     - ``-58.979576``
+     - Exact
+   * - :ref:`X_3807 <X_3807>`
+     - X\_2525com[INVERSE(nT(bc, b²))]
+     - ``6.681354``
+     - Exact
+   * - :ref:`X_3808 <X_3808>`
+     - X\_2786com[INVERSE(nT(-bc, c²))]
+     - —
+     - Exact
+   * - :ref:`X_3809 <X_3809>`
+     - X\_2786com[INVERSE(nT(bc, b²))]
+     - ``1.728844``
+     - Exact
+   * - :ref:`X_3810 <X_3810>`
+     - X\_525com[INVERSE(nT(-bc, c²))]
+     - —
+     - Exact
+   * - :ref:`X_3811 <X_3811>`
+     - X\_3189com(EULER TRIANGLE)
+     - ``-10.670072``
+     - Exact
+   * - :ref:`X_3812 <X_3812>`
+     - X\_950com(4th EULER TRIANGLE)
+     - ``2.104458``
+     - Exact
+   * - :ref:`X_3813 <X_3813>`
+     - X\_2136com(4th EULER TRIANGLE)
+     - ``6.733062``
+     - Exact
+   * - :ref:`X_3814 <X_3814>`
+     - X\_2077com(EULER TRIANGLE)
+     - ``5.231697``
+     - Exact
+   * - :ref:`X_3815 <X_3815>`
+     - X\_574com(5th EULER TRIANGLE)
+     - ``1.397672``
+     - Exact
+   * - :ref:`X_3816 <X_3816>`
+     - X\_57com(3rd EULER TRIANGLE)
+     - ``2.631482``
+     - Exact
+   * - :ref:`X_3817 <X_3817>`
+     - X\_2com(3rd EULER TRIANGLE)
+     - ``-0.295804``
+     - Exact
+   * - :ref:`X_3818 <X_3818>`
+     - X\_1352com(EULER TRIANGLE)
+     - ``-2.781892``
+     - Exact
+   * - :ref:`X_3819 <X_3819>`
+     - X\_549com(2nd EULER TRIANGLE)
+     - ``3.883740``
+     - Exact
+   * - :ref:`X_3820 <X_3820>`
+     - X\_200com(4th EULER TRIANGLE)
+     - ``3.426362``
+     - Exact
+   * - :ref:`X_3821 <X_3821>`
+     - X\_3056com(4th EULER TRIANGLE)
+     - ``2.569939``
+     - Exact
+   * - :ref:`X_3822 <X_3822>`
+     - X\_2099com(3rd EULER TRIANGLE)
+     - ``2.052751``
+     - Exact
+   * - :ref:`X_3823 <X_3823>`
+     - X\_3717com(4th EULER TRIANGLE)
+     - ``4.446577``
+     - Exact
+   * - :ref:`X_3824 <X_3824>`
+     - X\_3671com(3rd EULER TRIANGLE)
+     - ``2.075960``
+     - Exact
+   * - :ref:`X_3825 <X_3825>`
+     - X\_56com(3rd EULER TRIANGLE)
+     - ``2.938288``
+     - Exact
+   * - :ref:`X_3826 <X_3826>`
+     - X\_3243com(3rd EULER TRIANGLE)
+     - ``2.628483``
+     - Exact
+   * - :ref:`X_3827 <X_3827>`
+     - X\_518com(2nd EULER TRIANGLE)
+     - —
+     - Exact
+   * - :ref:`X_3828 <X_3828>`
+     - X\_210com(4th EULER TRIANGLE)
+     - ``2.864134``
+     - Exact
+   * - :ref:`X_3829 <X_3829>`
+     - X\_3158com(3rd EULER TRIANGLE)
+     - ``2.612935``
+     - Exact
+   * - :ref:`X_3830 <X_3830>`
+     - X\_3543com(EULER TRIANGLE)
+     - ``-9.829614``
+     - Exact
+   * - :ref:`X_3831 <X_3831>`
+     - X\_3702com(4th EULER TRIANGLE)
+     - ``3.384523``
+     - Exact
+   * - :ref:`X_3832 <X_3832>`
+     - X\_3090com(EULER TRIANGLE)
+     - ``-2.116910``
+     - Exact
+   * - :ref:`X_3833 <X_3833>`
+     - X\_3058com(4th EULER TRIANGLE)
+     - ``2.201173``
+     - Exact
+   * - :ref:`X_3834 <X_3834>`
+     - X\_1266com(3rd EULER TRIANGLE)
+     - ``7.141934``
+     - Exact
+   * - :ref:`X_3835 <X_3835>`
+     - X\_693com(3rd EULER TRIANGLE)
+     - ``-2.817181``
+     - Exact
+   * - :ref:`X_3836 <X_3836>`
+     - X\_3685com(4th EULER TRIANGLE)
+     - ``5.794256``
+     - Exact
+   * - :ref:`X_3837 <X_3837>`
+     - X\_2254com(3rd EULER TRIANGLE)
+     - ``7.203934``
+     - Exact
+   * - :ref:`X_3838 <X_3838>`
+     - X\_226com(3rd EULER TRIANGLE)
+     - ``1.816461``
+     - Exact
+   * - :ref:`X_3839 <X_3839>`
+     - X\_3545com(EULER TRIANGLE)
+     - ``-2.907957``
+     - Exact
+   * - :ref:`X_3840 <X_3840>`
+     - X\_3210com(3rd EULER TRIANGLE)
+     - ``3.815443``
+     - Exact
+   * - :ref:`X_3841 <X_3841>`
+     - X\_3210com(4th EULER TRIANGLE)
+     - ``2.522314``
+     - Exact
+   * - :ref:`X_3842 <X_3842>`
+     - X\_3688com(4th EULER TRIANGLE)
+     - ``2.594861``
+     - Exact
+   * - :ref:`X_3843 <X_3843>`
+     - X\_3091com(EULER TRIANGLE)
+     - ``-3.184823``
+     - Exact
+   * - :ref:`X_3844 <X_3844>`
+     - X\_2321com(4th EULER TRIANGLE)
+     - ``3.273249``
+     - Exact
+   * - :ref:`X_3845 <X_3845>`
+     - X\_381com(EULER TRIANGLE)
+     - ``-3.600122``
+     - Exact
+   * - :ref:`X_3846 <X_3846>`
+     - X\_1999com(3rd EULER TRIANGLE)
+     - ``3.254144``
+     - Exact
+   * - :ref:`X_3847 <X_3847>`
+     - X\_1420com(3rd EULER TRIANGLE)
+     - ``3.351348``
+     - Exact
+   * - :ref:`X_3848 <X_3848>`
+     - X\_553com(3rd EULER TRIANGLE)
+     - ``2.297889``
+     - Exact
+   * - :ref:`X_3849 <X_3849>`
+     - X\_524com(5th EULER TRIANGLE)
+     - —
+     - Exact
+   * - :ref:`X_3850 <X_3850>`
+     - X\_140com(EULER TRIANGLE)
+     - ``-1.004501``
+     - Exact
+   * - :ref:`X_3851 <X_3851>`
+     - X\_3523com(EULER TRIANGLE)
+     - ``-0.337056``
+     - Exact
+   * - :ref:`X_3852 <X_3852>`
+     - X\_732com(2nd EULER TRIANGLE)
+     - —
+     - Exact
+   * - :ref:`X_3853 <X_3853>`
+     - X\_3627com(EULER TRIANGLE)
+     - ``-8.791365``
+     - Exact
+   * - :ref:`X_3854 <X_3854>`
+     - X\_3533com(EULER TRIANGLE)
+     - ``-1.279332``
+     - Exact
+   * - :ref:`X_3855 <X_3855>`
+     - X\_3525com(EULER TRIANGLE)
+     - ``-1.146080``
+     - Exact
+   * - :ref:`X_3856 <X_3856>`
+     - X\_3628com(EULER TRIANGLE)
+     - ``-1.783187``
+     - Exact
+   * - :ref:`X_3857 <X_3857>`
+     - X\_3526com(EULER TRIANGLE)
+     - ``-1.226983``
+     - Exact
+   * - :ref:`X_3858 <X_3858>`
+     - X\_1656com(EULER TRIANGLE)
+     - ``-1.938925``
+     - Exact
+   * - :ref:`X_3859 <X_3859>`
+     - X\_632com(EULER TRIANGLE)
+     - ``-1.315976``
+     - Exact
+   * - :ref:`X_3860 <X_3860>`
+     - X\_547com(EULER TRIANGLE)
+     - ``-2.042750``
+     - Exact
+   * - :ref:`X_3861 <X_3861>`
+     - X\_546com(EULER TRIANGLE)
+     - ``-4.119247``
+     - Exact

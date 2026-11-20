@@ -1,0 +1,40 @@
+geometor.etc.models.x_00006
+===========================
+
+.. py:module:: geometor.etc.models.x_00006
+
+.. autoapi-nested-parse::
+
+   Exact symbolic GEOMETOR construction model for ``X_6 = SYMMEDIAN POINT``.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.etc.models.x_00006.construct_x_00006
+   geometor.etc.models.x_00006.build_model
+
+
+Module Contents
+---------------
+
+.. py:function:: construct_x_00006(model: geometor.model.Model, A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point) -> sympy.geometry.Point
+
+   Construct ``X_6 = SYMMEDIAN POINT`` and its classical incident central lines on ``ABC``.
+
+   Constructed elements include:
+
+   - Circumcircle, symmedial triangle ``< Sym_a Sym_b Sym_c >``, and symmedians
+     ``[ A Sym_a ]``, ``[ B Sym_b ]``, ``[ C Sym_c ]`` concurring at ``X_6``.
+   - Incident central lines: Incenter-Mittenpunkt ``{ 1, 9 }``, Brocard axis
+     ``{ 3, 32 }``, Centroid-Isotomic ``{ 2, 69 }``, and ``{ 19, 65 }``.
+
+
+.. py:function:: build_model(preset: str | tuple[sympy.Expr | int, sympy.Expr | int, sympy.Expr | int] = 'heronian', show_guides: bool = False) -> geometor.model.Model
+
+   Build an exact symbolic :class:`geometor.model.Model` for ``X_6 = SYMMEDIAN POINT``.
+
+

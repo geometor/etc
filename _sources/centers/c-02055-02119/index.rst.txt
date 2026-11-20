@@ -136,5 +136,277 @@ X_2055–X_2119
    | b(a+c)[(:math:`c^{2}`-bc-:math:`b^{2})`\ :math:`a^{2}` + abc(c-b) + :math:`b^{2}`\ :math:`c^{2}`] : :ref:`X_6 <X_6>`, - bc : :math:`b^{2}` : 1/[(a+b)(a+c)[(:math:`b^{2}`\ +bc+\ :math:`c^{2})`\ :math:`a^{2}` + abc(b+c) + :math:`b^{2}`\ :math:`c^{2}`]] :
    | 1/[(a+c)[(:math:`c^{2}`-bc-:math:`b^{2})`\ :math:`a^{2}` + abc(c-b) + :math:`b^{2}`\ :math:`c^{2}`]] :
 
-.. collection::
-   :sort: order
+Member Centers
+--------------
+
+:ref:`Open Interactive 7-Triangle Constellation & Explorer ↗ <family-c-02055-02119>`
+
+.. list-table::
+   :class: etc-table etc-mode-relations
+   :header-rows: 1
+   :widths: 12 56 18 14
+
+   * - Center
+     - Name
+     - Search (6,9,13)
+     - Precision
+   * - :ref:`X_2055 <X_2055>`
+     - ORION TRANSFORM OF X\_3
+     - ``-0.172128``
+     - Exact
+   * - :ref:`X_2056 <X_2056>`
+     - ORION TRANSFORM OF X\_6
+     - ``0.272844``
+     - Exact
+   * - :ref:`X_2057 <X_2057>`
+     - ORION TRANSFORM OF X\_8
+     - ``5.505360``
+     - Exact
+   * - :ref:`X_2058 <X_2058>`
+     - ORION TRANSFORM OF X\_15
+     - —
+     - Catalog
+   * - :ref:`X_2059 <X_2059>`
+     - ORION TRANSFORM OF X\_16
+     - —
+     - Catalog
+   * - :ref:`X_2060 <X_2060>`
+     - ORION TRANSFORM OF X\_20
+     - —
+     - Catalog
+   * - :ref:`X_2061 <X_2061>`
+     - ORION TRANSFORM OF X\_40
+     - —
+     - Catalog
+   * - :ref:`X_2062 <X_2062>`
+     - ORION TRANSFORM OF X\_63
+     - ``2.232092``
+     - Exact
+   * - :ref:`X_2063 <X_2063>`
+     - ORION TRANSFORM OF X\_69
+     - ``1.302512``
+     - Exact
+   * - :ref:`X_2064 <X_2064>`
+     - ORION TRANSFORM OF X\_75
+     - ``6.634077``
+     - Exact
+   * - :ref:`X_2065 <X_2065>`
+     - ORION TRANSFORM OF X\_98
+     - ``7.386450``
+     - Exact
+   * - :ref:`X_2066 <X_2066>`
+     - POINT CAROLI I
+     - ``2.045278``
+     - Exact
+   * - :ref:`X_2067 <X_2067>`
+     - POINT CAROLI II
+     - ``-6.463549``
+     - Exact
+   * - :ref:`X_2068 <X_2068>`
+     - POINT CURSA I
+     - ``1.513378``
+     - 50-digit
+   * - :ref:`X_2069 <X_2069>`
+     - POINT CURSA II
+     - ``-4.946728``
+     - 50-digit
+   * - :ref:`X_2070 <X_2070>`
+     - INVERSE-IN-CIRCUMCIRCLE OF X\_5
+     - ``0.225077``
+     - Exact
+   * - :ref:`X_2071 <X_2071>`
+     - INVERSE-IN-CIRCUMCIRCLE OF X\_20
+     - ``10.061006``
+     - Exact
+   * - :ref:`X_2072 <X_2072>`
+     - INVERSE-IN-CIRCUMCIRCLE OF X\_26
+     - ``2.192193``
+     - Exact
+   * - :ref:`X_2073 <X_2073>`
+     - INVERSE-IN-CIRCUMCIRCLE OF X\_27
+     - ``2.427130``
+     - Exact
+   * - :ref:`X_2074 <X_2074>`
+     - INVERSE-IN-CIRCUMCIRCLE OF X\_28
+     - ``1.443426``
+     - Exact
+   * - :ref:`X_2075 <X_2075>`
+     - INVERSE-IN-CIRCUMCIRCLE OF X\_29
+     - ``-20.375745``
+     - Exact
+   * - :ref:`X_2076 <X_2076>`
+     - INVERSE-IN-CIRCUMCIRCLE OF X\_39
+     - ``-2.785481``
+     - Exact
+   * - :ref:`X_2077 <X_2077>`
+     - INVERSE-IN-CIRCUMCIRCLE OF X\_40
+     - ``16.140013``
+     - Exact
+   * - :ref:`X_2078 <X_2078>`
+     - INVERSE-IN-CIRCUMCIRCLE OF X\_57
+     - ``-0.660678``
+     - Exact
+   * - :ref:`X_2079 <X_2079>`
+     - INVERSE-IN-CIRCUMCIRCLE OF X\_115
+     - ``-5.211781``
+     - Exact
+   * - :ref:`X_2080 <X_2080>`
+     - INVERSE-IN-CIRCUMCIRCLE OF X\_182
+     - ``-10.464130``
+     - Exact
+   * - :ref:`X_2081 <X_2081>`
+     - PK-TRANSFORM OF X\_5
+     - ``4.853034``
+     - Exact
+   * - :ref:`X_2082 <X_2082>`
+     - NK-TRANSFORM OF X\_9
+     - ``1.846971``
+     - Exact
+   * - :ref:`X_2083 <X_2083>`
+     - NK-TRANSFORM OF X\_19
+     - ``5.088304``
+     - Exact
+   * - :ref:`X_2084 <X_2084>`
+     - PK-TRANSFORM OF X\_31
+     - ``-10.538232``
+     - Exact
+   * - :ref:`X_2085 <X_2085>`
+     - NK-TRANSFORM OF X\_31
+     - ``1.283778``
+     - Exact
+   * - :ref:`X_2086 <X_2086>`
+     - PK-TRANSFORM OF X\_99
+     - ``-4.538534``
+     - Exact
+   * - :ref:`X_2087 <X_2087>`
+     - PK-TRANSFORM OF X\_100
+     - ``66.426159``
+     - Exact
+   * - :ref:`X_2088 <X_2088>`
+     - PK-TRANSFORM OF X\_110
+     - ``3.181584``
+     - Exact
+   * - :ref:`X_2089 <X_2089>`
+     - 3rd MID-ARC POINT
+     - ``0.522882``
+     - 50-digit
+   * - :ref:`X_2090 <X_2090>`
+     - 1st STEVANOVIC PERSPECTOR
+     - ``3.356487``
+     - 50-digit
+   * - :ref:`X_2091 <X_2091>`
+     - 2nd STEVANOVIC PERSPECTOR
+     - ``0.435726``
+     - 50-digit
+   * - :ref:`X_2092 <X_2092>`
+     - DANNEELS-APOLLONIUS PERSPECTOR
+     - ``1.427223``
+     - Exact
+   * - :ref:`X_2093 <X_2093>`
+     - REFLECTION OF X\_1 IN X\_57
+     - ``-0.929398``
+     - Exact
+   * - :ref:`X_2094 <X_2094>`
+     - REFLECTION OF X\_2 IN X\_57
+     - ``-1.868458``
+     - Exact
+   * - :ref:`X_2095 <X_2095>`
+     - REFLECTION OF X\_3 IN X\_57
+     - ``-6.021452``
+     - Exact
+   * - :ref:`X_2096 <X_2096>`
+     - REFLECTION OF X\_4 IN X\_57
+     - ``6.437530``
+     - Exact
+   * - :ref:`X_2097 <X_2097>`
+     - REFLECTION OF X\_6 IN X\_57
+     - ``-0.231998``
+     - Exact
+   * - :ref:`X_2098 <X_2098>`
+     - REFLECTION OF X\_56 IN X\_1
+     - ``3.193498``
+     - Exact
+   * - :ref:`X_2099 <X_2099>`
+     - REFLECTION OF X\_55 IN X\_1
+     - ``0.745148``
+     - Exact
+   * - :ref:`X_2100 <X_2100>`
+     - REFLECTION OF X\_1 IN X\_1113
+     - ``-0.908158``
+     - 50-digit
+   * - :ref:`X_2101 <X_2101>`
+     - REFLECTION OF X\_1 IN X\_1114
+     - ``24.656992``
+     - 50-digit
+   * - :ref:`X_2102 <X_2102>`
+     - REFLECTION OF X\_1113 IN X\_1
+     - ``2.989542``
+     - 50-digit
+   * - :ref:`X_2103 <X_2103>`
+     - REFLECTION OF X\_1114 IN X\_1
+     - ``-9.793033``
+     - 50-digit
+   * - :ref:`X_2104 <X_2104>`
+     - REFLECTION OF X\_1113 IN X\_6
+     - ``1.594742``
+     - 50-digit
+   * - :ref:`X_2105 <X_2105>`
+     - REFLECTION OF X\_1114 IN X\_6
+     - ``-11.187833``
+     - 50-digit
+   * - :ref:`X_2106 <X_2106>`
+     - POINT KEPLER I
+     - ``-3.198363``
+     - Exact
+   * - :ref:`X_2107 <X_2107>`
+     - X\_2-ISOCONJUGATE OF X\_2106
+     - ``-0.708443``
+     - Exact
+   * - :ref:`X_2108 <X_2108>`
+     - POINT KEPLER I
+     - ``5.319074``
+     - Exact
+   * - :ref:`X_2109 <X_2109>`
+     - X\_2-ISOCONJUGATE OF X\_2108
+     - ``1.991483``
+     - Exact
+   * - :ref:`X_2110 <X_2110>`
+     - POINT KEPLER III
+     - ``2.583869``
+     - Exact
+   * - :ref:`X_2111 <X_2111>`
+     - X\_2-ISOCONJUGATE OF X\_2110
+     - ``4.286092``
+     - Exact
+   * - :ref:`X_2112 <X_2112>`
+     - POINT KEPLER IV
+     - ``1.161253``
+     - Exact
+   * - :ref:`X_2113 <X_2113>`
+     - X\_2-ISOCONJUGATE OF X\_2112
+     - ``7.588781``
+     - Exact
+   * - :ref:`X_2114 <X_2114>`
+     - POINT KEPLER V
+     - ``0.079434``
+     - Exact
+   * - :ref:`X_2115 <X_2115>`
+     - X\_2-ISOCONJUGATE OF X\_2114
+     - ``10.436590``
+     - Exact
+   * - :ref:`X_2116 <X_2116>`
+     - POINT KEPLER VI
+     - ``0.391784``
+     - Exact
+   * - :ref:`X_2117 <X_2117>`
+     - X\_2-ISOCONJUGATE OF X\_2116
+     - ``10.682539``
+     - Exact
+   * - :ref:`X_2118 <X_2118>`
+     - POINT KEPLER VII
+     - ``-4.025763``
+     - 50-digit
+   * - :ref:`X_2119 <X_2119>`
+     - X\_2-ISOCONJUGATE OF X\_2118
+     - ``0.300281``
+     - 50-digit
