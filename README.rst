@@ -1,13 +1,13 @@
+.. image:: docsrc/_static/logo.png
+   :alt: GEOMETOR • etc Medallion
+   :target: https://geometor.github.io/etc/
+   :width: 150px
+   :align: right
+
 GEOMETOR • etc
 ==============
 
 **Visit the Online Archive:** https://geometor.github.io/etc/
-
-.. image:: docsrc/_static/logo.png
-   :alt: GEOMETOR • etc Medallion
-   :target: https://geometor.github.io/etc/
-   :width: 180px
-   :align: center
 
 .. image:: docsrc/_static/coordinates/barycentric_picture.svg
    :alt: GEOMETOR • etc featured geometric construction
