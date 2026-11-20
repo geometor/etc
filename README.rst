@@ -8,26 +8,27 @@ GEOMETOR • etc
    :target: https://geometor.github.io/etc/
    :align: center
 
-**Encyclopedia of Triangle Centers • Clark Kimberling's X(1)–X(53144) • semantic digital archive**
+**Encyclopedia of Triangle Centers • Clark Kimberling's X(1)–X(73310) • semantic digital archive**
 
 Mission
 -------
 
-``geometor/etc`` is part of the interconnected `GEOMETOR <https://geometor.com>`_ semantic digital archive. It provides a computable, symbolic digital edition of Clark Kimberling's *Encyclopedia of Triangle Centers* (ETC), establishing exact algebraic definitions, trilinear and barycentric coordinates, and interactive multi-triangle vector models for centers :math:`X(1)` through :math:`X(53144)`. Liberating the archive from tabular HTML listings into addressable semantic units, the repository bridges classical triangle loci with automated theorem proving and symbolic geometry across the GEOMETOR corpus.
+``geometor/etc`` is part of the interconnected `GEOMETOR <https://geometor.com>`_ semantic digital archive. It provides a computable, exact symbolic digital edition of Clark Kimberling's *Encyclopedia of Triangle Centers* (ETC), evaluating all **73,310 triangle centers** (:math:`X_1`–:math:`X_{73310}`, Parts 1–37) and **925 geometric family constellations** in exact algebraic number fields across **7 canonical reference triangles** (Heronian, Right, Kepler, Kimberling, Golden, Gnomon, Equilateral). Liberating the archive from static HTML listings into addressable symbolic shards and interactive vector constructions, the repository bridges classical triangle loci with automated theorem proving and symbolic geometry across the GEOMETOR corpus.
 
 Catalogs in This Archive
 ------------------------
 
-- `Encyclopedia of Triangle Centers <https://geometor.github.io/etc/centers/>`_ — Clark Kimberling's ETC in exact symbolic algebra, multi-triangle vector diagrams, and 2-track Book Codex representations.
-- `Collection 1 Topics: Conjugacies, Lines, Circles & Triangles <https://geometor.github.io/etc/topics/>`_ — Exact symbolic investigations of central lines, Euler lines, circumcircles, and triangle connections.
+- `Live Exact Symbolic Center Explorer (X_1–X_73310) <https://geometor.github.io/etc/centers/explore.html>`_ — Instant search by ``X(n)``, name, or Kimberling ``(6, 9, 13)`` search value, live 7-triangle geometric constructions, 987 interactive family constellations, and Fullscreen App Mode (``F``).
+- `Encyclopedia of Triangle Centers Collections <https://geometor.github.io/etc/centers/>`_ — 62 curated thematic collection chapters with exact symbolic constellations and member tables.
+- `Collection 1 Topics: Conjugacies, Lines, Circles & Triangles <https://geometor.github.io/etc/topics/>`_ — 24 focused geometric guides covering classical conjugacies, central lines, notable circles, and derived triangles.
 
 
 Repository Contents
 -------------------
 
-- ``docsrc/`` — RST catalog tracks, guides, and preambles compiled by `PHOTON publish <https://github.com/photon-platform/publish>`_.
-- ``resources/`` — Ingested center records, coordinate registries, persons registers, and citations manifests.
-- ``src/geometor/etc/`` — Archival parsing, symbolic coordinate modeling, SVG rendering, and Book Codex generation engine.
+- ``docsrc/`` — RST book codex chapters, topic guides, 925-family preambles guide, and Live Explorer frontend compiled by `PHOTON publish <https://github.com/photon-platform/publish>`_.
+- ``resources/`` — Archival ETC HTML volumes (Parts 1–37) and extracted apparatus registries (glossary, persons, citations).
+- ``src/geometor/etc/`` — Exact algebraic number-field evaluator (``field_eval.py``), sharded JSON corpus builder (``shards.py``), classical ``geometor.model`` constructions (``models/x_00001.py``–``x_00019.py``), parser, and SVG renderer.
 
 Local Build & Verification
 --------------------------

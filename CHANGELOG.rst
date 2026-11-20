@@ -3,6 +3,16 @@ changelog
 
 :project: geometor.etc
 
+0.4.0
+-----
+*2026-11-19*
+
+- **added**: Full **73,310-center** exact symbolic evaluation engine (``field_eval.py``) and sharded JSON corpus generator (``shards.py``) spanning all 37 ETC Parts (``X_1``–``X_73310``, zero gaps) across all **7 canonical reference triangles** (Heronian ``(15, 13, 14)``, Right ``(5, 3, 4)``, Kepler ``(φ, 1, √φ)``, Kimberling ``(6, 9, 13)``, Golden ``(φ, φ, 1)``, Gnomon ``(1, 1, φ)``, Equilateral ``(2, 2, 2)``) with ``96.9%`` exact algebraic resolution on Heronian/Kimberling and ``98.37%`` exact projective collinearity verification.
+- **added**: Unified client-side **Live Center Explorer** (``docsrc/centers/explore.rst``, ``etc-live-viewer.js``) serving all ``73,310`` centers and all **987 family groups** (**925 ETC preamble families** + **62 curated collections** via ``families.json``) with live 7-triangle **Family Constellations** (``#family/<id>``), searchable ``Families`` drawer, Tier 0–4 geometric construction engine (complete textbook compass-and-straightedge constructions for ``X_1``–``X_19`` plus universal derived-triangle, defining-line, functional-relation, and cevian constructions for ``X_20``–``X_73310``), sparse-dot-to-solid color-matched line highlighting, zoom-invariant point rings, unified Construction/Coordinates workspace, docked stage footer, and true edge-to-edge **Fullscreen App Mode** (``F``) with live center ID, title, and 5-track switching.
+- **changed**: Unified **Collection 1** (``X_1``–``X_19``) and all **62** collection landing pages into one consistent format backed by the Live Center Explorer; preserved the 19 exact SymPy ``geometor.model`` construction scripts under ``src/geometor/etc/models/x_00001.py``–``x_00019.py`` and retired all ``4,000`` redundant static ``x-00001``–``x-04000`` directories (cutting clean Sphinx build time from 6+ minutes to ``46.6 s`` and ``docs/`` footprint from ``1.2 GB`` to ``409 MB``).
+- **changed**: Updated GitHub Actions deployment workflow (``.github/workflows/action.yml``) to fetch the compressed ``v0.4.0`` exact symbolic shard corpus archive into ``.cache/etc_data`` prior to ``publish build``.
+- **fixed**: Resolved 4 upstream Evansville HTML heading typos (``X_57621``, ``X_60349``, ``X_68618``, ``X_71412``) in ``ingest.py`` and ``parser.py``, hardened ``field_eval.py`` against >308-digit ``OverflowError`` via 50-digit ``mpmath`` normalization, and fixed MathJax v4 typesetting inside dynamic live explorer views.
+
 0.3.2
 -----
 *2026-11-14*

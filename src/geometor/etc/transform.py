@@ -3342,18 +3342,19 @@ def generate_preambles_guide_rst(
 
         for entry in part_entries:
             e_id = entry.get("id", "")
+            e_idx = int(entry.get("index", 0))
             s_num = int(entry.get("start_num", 0))
             e_num = int(entry.get("end_num", s_num))
             title = entry.get("title", "")
             title_norm = re.sub(r"\bX\((\d+)\)", r"X_\1", title)
 
-            if valid_centers and s_num in valid_centers:
+            if s_num > 0 and (valid_centers is None or s_num in valid_centers):
                 s_ref = f":ref:`X_{s_num} <X_{s_num}>`"
             else:
                 s_ref = f"**X_{s_num}**"
 
             if e_num != s_num:
-                if valid_centers and e_num in valid_centers:
+                if e_num > 0 and (valid_centers is None or e_num in valid_centers):
                     e_ref = f":ref:`X_{e_num} <X_{e_num}>`"
                 else:
                     e_ref = f"**X_{e_num}**"
@@ -3361,14 +3362,16 @@ def generate_preambles_guide_rst(
             else:
                 range_str = s_ref
 
+            fam_link = f" · :ref:`Explore Family ↗ <family-f-{e_idx:04d}>`" if e_idx > 0 else ""
+
             if e_id:
                 lines.append(f".. _{e_id}:")
                 lines.append("")
 
             if title_norm and not re.match(r"^(?:Centers|Points)\s+X_", title_norm, re.IGNORECASE):
-                lines.append(f"* {range_str} — **{title_norm}**")
+                lines.append(f"* {range_str} — **{title_norm}**{fam_link}")
             else:
-                lines.append(f"* {range_str}")
+                lines.append(f"* {range_str}{fam_link}")
 
             body_html = entry.get("html", "")
             if body_html:

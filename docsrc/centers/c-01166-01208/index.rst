@@ -55,5 +55,189 @@ X_1166–X_1208
    | The 2nd Saragossa point of X_i is X_j for these (i,j): (1,386) (6,6)
    | The 3rd Saragossa point of X_i is X_j for these (i,j): (3,185) (4,389) (6,6)
 
-.. collection::
-   :sort: order
+Member Centers
+--------------
+
+:ref:`Open Interactive 7-Triangle Constellation & Explorer ↗ <family-c-01166-01208>`
+
+.. list-table::
+   :class: etc-table etc-mode-relations
+   :header-rows: 1
+   :widths: 12 56 18 14
+
+   * - Center
+     - Name
+     - Search (6,9,13)
+     - Precision
+   * - :ref:`X_1166 <X_1166>`
+     - 1st SARAGOSSA POINT OF X\_5
+     - ``2.074037``
+     - Exact
+   * - :ref:`X_1167 <X_1167>`
+     - 1st SARAGOSSA POINT OF X\_34
+     - ``2.189842``
+     - Exact
+   * - :ref:`X_1168 <X_1168>`
+     - 1st SARAGOSSA POINT OF X\_36
+     - ``0.229086``
+     - Exact
+   * - :ref:`X_1169 <X_1169>`
+     - 1st SARAGOSSA POINT OF X\_37
+     - ``0.653163``
+     - Exact
+   * - :ref:`X_1170 <X_1170>`
+     - 1st SARAGOSSA POINT OF X\_41
+     - ``0.559758``
+     - Exact
+   * - :ref:`X_1171 <X_1171>`
+     - 1st SARAGOSSA POINT OF X\_42
+     - ``0.866473``
+     - Exact
+   * - :ref:`X_1172 <X_1172>`
+     - 1st SARAGOSSA POINT OF X\_48
+     - ``6.368124``
+     - Exact
+   * - :ref:`X_1173 <X_1173>`
+     - 1st SARAGOSSA POINT OF X\_54
+     - ``0.017231``
+     - Exact
+   * - :ref:`X_1174 <X_1174>`
+     - 1st SARAGOSSA POINT OF X\_57
+     - ``1.300153``
+     - Exact
+   * - :ref:`X_1175 <X_1175>`
+     - 1st SARAGOSSA POINT OF X\_65
+     - ``1.172893``
+     - Exact
+   * - :ref:`X_1176 <X_1176>`
+     - 1st SARAGOSSA POINT OF X\_66
+     - ``51.719005``
+     - Exact
+   * - :ref:`X_1177 <X_1177>`
+     - 1st SARAGOSSA POINT OF X\_67
+     - ``-2.660045``
+     - Exact
+   * - :ref:`X_1178 <X_1178>`
+     - 1st SARAGOSSA POINT OF X\_82
+     - ``0.958357``
+     - Exact
+   * - :ref:`X_1179 <X_1179>`
+     - 1st SARAGOSSA POINT OF X\_96
+     - ``-0.100135``
+     - Exact
+   * - :ref:`X_1180 <X_1180>`
+     - 2nd SARAGOSSA POINT OF X\_2
+     - ``1.427576``
+     - Exact
+   * - :ref:`X_1181 <X_1181>`
+     - 2nd SARAGOSSA POINT OF X\_3
+     - ``23.225450``
+     - Exact
+   * - :ref:`X_1182 <X_1182>`
+     - 2nd SARAGOSSA POINT OF X\_19
+     - ``0.644370``
+     - Exact
+   * - :ref:`X_1183 <X_1183>`
+     - 2nd SARAGOSSA POINT OF X\_21
+     - ``1.820096``
+     - Exact
+   * - :ref:`X_1184 <X_1184>`
+     - 2nd SARAGOSSA POINT OF X\_25
+     - ``0.439279``
+     - Exact
+   * - :ref:`X_1185 <X_1185>`
+     - 2nd SARAGOSSA POINT OF X\_31
+     - ``0.765359``
+     - Exact
+   * - :ref:`X_1186 <X_1186>`
+     - 2nd SARAGOSSA POINT OF X\_32
+     - ``0.553057``
+     - Exact
+   * - :ref:`X_1187 <X_1187>`
+     - 2nd SARAGOSSA POINT OF X\_37
+     - ``1.328405``
+     - Exact
+   * - :ref:`X_1188 <X_1188>`
+     - 2nd SARAGOSSA POINT OF X\_41
+     - ``1.459628``
+     - Exact
+   * - :ref:`X_1189 <X_1189>`
+     - 2nd SARAGOSSA POINT OF X\_43
+     - ``0.433367``
+     - Exact
+   * - :ref:`X_1190 <X_1190>`
+     - 2nd SARAGOSSA POINT OF X\_55
+     - ``1.722121``
+     - Exact
+   * - :ref:`X_1191 <X_1191>`
+     - 2nd SARAGOSSA POINT OF X\_56
+     - ``0.616312``
+     - Exact
+   * - :ref:`X_1192 <X_1192>`
+     - 2nd SARAGOSSA POINT OF X\_64
+     - ``4.946711``
+     - Exact
+   * - :ref:`X_1193 <X_1193>`
+     - 3rd SARAGOSSA POINT OF X\_1
+     - ``1.119060``
+     - Exact
+   * - :ref:`X_1194 <X_1194>`
+     - 3rd SARAGOSSA POINT OF X\_2
+     - ``1.250279``
+     - Exact
+   * - :ref:`X_1195 <X_1195>`
+     - 3rd SARAGOSSA POINT OF X\_19
+     - ``1.233330``
+     - Exact
+   * - :ref:`X_1196 <X_1196>`
+     - 3rd SARAGOSSA POINT OF X\_25
+     - ``0.673063``
+     - Exact
+   * - :ref:`X_1197 <X_1197>`
+     - 3rd SARAGOSSA POINT OF X\_31
+     - ``0.823752``
+     - Exact
+   * - :ref:`X_1198 <X_1198>`
+     - 3rd SARAGOSSA POINT OF X\_43
+     - ``0.463682``
+     - Exact
+   * - :ref:`X_1199 <X_1199>`
+     - 3rd SARAGOSSA POINT OF X\_54
+     - ``2.580907``
+     - Exact
+   * - :ref:`X_1200 <X_1200>`
+     - 3rd SARAGOSSA POINT OF X\_55
+     - ``1.627336``
+     - Exact
+   * - :ref:`X_1201 <X_1201>`
+     - 3rd SARAGOSSA POINT OF X\_56
+     - ``0.729346``
+     - Exact
+   * - :ref:`X_1202 <X_1202>`
+     - 3rd SARAGOSSA POINT OF X\_57
+     - ``0.919250``
+     - Exact
+   * - :ref:`X_1203 <X_1203>`
+     - 3rd SARAGOSSA POINT OF X\_58
+     - ``0.925899``
+     - Exact
+   * - :ref:`X_1204 <X_1204>`
+     - 3rd SARAGOSSA POINT OF X\_64
+     - ``8.837658``
+     - Exact
+   * - :ref:`X_1205 <X_1205>`
+     - 3rd SARAGOSSA POINT OF X\_67
+     - ``8.604484``
+     - Exact
+   * - :ref:`X_1206 <X_1206>`
+     - 3rd SARAGOSSA POINT OF X\_81
+     - ``1.056925``
+     - Exact
+   * - :ref:`X_1207 <X_1207>`
+     - 3rd SARAGOSSA POINT OF X\_83
+     - ``1.091775``
+     - Exact
+   * - :ref:`X_1208 <X_1208>`
+     - 3rd SARAGOSSA POINT OF X\_84
+     - ``5.738783``
+     - Exact

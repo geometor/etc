@@ -57,5 +57,129 @@ X_2120–X_2147
 
    This section was added to ETC on 10/(14-17)/03.
 
-.. collection::
-   :sort: order
+Member Centers
+--------------
+
+:ref:`Open Interactive 7-Triangle Constellation & Explorer ↗ <family-c-02120-02147>`
+
+.. list-table::
+   :class: etc-table etc-mode-relations
+   :header-rows: 1
+   :widths: 12 56 18 14
+
+   * - Center
+     - Name
+     - Search (6,9,13)
+     - Precision
+   * - :ref:`X_2120 <X_2120>`
+     - EIGENTRANSFORM OF X\_5
+     - ``1.879616``
+     - Exact
+   * - :ref:`X_2121 <X_2121>`
+     - ISOGONAL CONJUGATE OF X\_2120
+     - ``0.865886``
+     - Exact
+   * - :ref:`X_2122 <X_2122>`
+     - EIGENTRANSFORM OF X\_8
+     - ``-0.249227``
+     - Exact
+   * - :ref:`X_2123 <X_2123>`
+     - ISOGONAL CONJUGATE OF X\_2122
+     - ``5.205916``
+     - Exact
+   * - :ref:`X_2124 <X_2124>`
+     - EIGENTRANSFORM OF X\_9
+     - ``-0.621410``
+     - Exact
+   * - :ref:`X_2125 <X_2125>`
+     - ISOGONAL CONJUGATE OF X\_2124
+     - ``4.665948``
+     - Exact
+   * - :ref:`X_2126 <X_2126>`
+     - EIGENTRANSFORM OF X\_10
+     - ``-10.979806``
+     - Exact
+   * - :ref:`X_2127 <X_2127>`
+     - ISOGONAL CONJUGATE OF X\_2126
+     - ``8.423550``
+     - Exact
+   * - :ref:`X_2128 <X_2128>`
+     - EIGENTRANSFORM OF X\_19
+     - ``7.359139``
+     - Exact
+   * - :ref:`X_2129 <X_2129>`
+     - ISOGONAL CONJUGATE OF X\_2128
+     - ``2.577166``
+     - Exact
+   * - :ref:`X_2130 <X_2130>`
+     - EIGENTRANSFORM OF X\_20
+     - ``14.193656``
+     - Exact
+   * - :ref:`X_2131 <X_2131>`
+     - ISOGONAL CONJUGATE OF X\_2130
+     - ``183.441471``
+     - Exact
+   * - :ref:`X_2132 <X_2132>`
+     - EIGENTRANSFORM OF X\_30
+     - ``-12.727449``
+     - Exact
+   * - :ref:`X_2133 <X_2133>`
+     - ISOGONAL CONJUGATE OF X\_2132
+     - ``7.854906``
+     - Exact
+   * - :ref:`X_2134 <X_2134>`
+     - EIGENTRANSFORM OF X\_37
+     - ``3.150614``
+     - Exact
+   * - :ref:`X_2135 <X_2135>`
+     - ISOGONAL CONJUGATE OF X\_2134
+     - ``0.355363``
+     - Exact
+   * - :ref:`X_2136 <X_2136>`
+     - EIGENTRANSFORM OF X\_57
+     - ``-12.846345``
+     - Exact
+   * - :ref:`X_2137 <X_2137>`
+     - ISOGONAL CONJUGATE OF X\_2136
+     - ``-0.899971``
+     - Exact
+   * - :ref:`X_2138 <X_2138>`
+     - EIGENTRANSFORM OF X\_69
+     - ``0.382101``
+     - Exact
+   * - :ref:`X_2139 <X_2139>`
+     - ISOGONAL CONJUGATE OF X\_2138
+     - ``4.030080``
+     - Exact
+   * - :ref:`X_2140 <X_2140>`
+     - EIGENTRANSFORM OF X\_101
+     - ``1.468045``
+     - Exact
+   * - :ref:`X_2141 <X_2141>`
+     - ISOGONAL CONJUGATE OF X\_2140
+     - ``1.607922``
+     - Exact
+   * - :ref:`X_2142 <X_2142>`
+     - EIGENTRANSFORM OF X\_512
+     - ``-0.226833``
+     - Exact
+   * - :ref:`X_2143 <X_2143>`
+     - ISOGONAL CONJUGATE OF X\_2142
+     - ``7.593564``
+     - Exact
+   * - :ref:`X_2144 <X_2144>`
+     - X\_2-EIGENTRANSFORM OF X\_238
+     - ``0.135245``
+     - Exact
+   * - :ref:`X_2145 <X_2145>`
+     - X\_2-ISOCONJUGATE OF X\_2144
+     - ``-3.903287``
+     - Exact
+   * - :ref:`X_2146 <X_2146>`
+     - X\_238-CEVA CONJUGATE OF X\_365
+     - ``3.773193``
+     - 50-digit
+   * - :ref:`X_2147 <X_2147>`
+     - X\_2-ISOCONJUGATE OF X\_2146
+     - ``2.970520``
+     - 50-digit

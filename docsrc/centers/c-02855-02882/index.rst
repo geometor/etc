@@ -57,5 +57,129 @@ X_2855–X_2882
 
    To conclude, SR(P,U) = S(:ref:`X_1 <X_1>`;P,U) and SM(P,U) = S(:ref:`X_2 <X_2>`;P,U).
 
-.. collection::
-   :sort: order
+Member Centers
+--------------
+
+:ref:`Open Interactive 7-Triangle Constellation & Explorer ↗ <family-c-02855-02882>`
+
+.. list-table::
+   :class: etc-table etc-mode-relations
+   :header-rows: 1
+   :widths: 12 56 18 14
+
+   * - Center
+     - Name
+     - Search (6,9,13)
+     - Precision
+   * - :ref:`X_2855 <X_2855>`
+     - SM(X\_74, X\_98)
+     - ``5.675545``
+     - Exact
+   * - :ref:`X_2856 <X_2856>`
+     - SM(X\_98, X\_100)
+     - ``13.998458``
+     - Exact
+   * - :ref:`X_2857 <X_2857>`
+     - SM(X\_98, X\_110)
+     - ``13.043210``
+     - Exact
+   * - :ref:`X_2858 <X_2858>`
+     - SM(X\_98, X\_111)
+     - ``9.382064``
+     - Exact
+   * - :ref:`X_2859 <X_2859>`
+     - SM(X\_100, X\_112)
+     - ``1.996594``
+     - Exact
+   * - :ref:`X_2860 <X_2860>`
+     - SM(X\_100, X\_101)
+     - —
+     - Catalog
+   * - :ref:`X_2861 <X_2861>`
+     - SM(X\_100, X\_104)
+     - ``14.149119``
+     - Exact
+   * - :ref:`X_2862 <X_2862>`
+     - SM(X\_100, X\_105)
+     - ``10.026686``
+     - Exact
+   * - :ref:`X_2863 <X_2863>`
+     - SM(X\_100, X\_106)
+     - ``7.374202``
+     - Exact
+   * - :ref:`X_2864 <X_2864>`
+     - SM(X\_100, X\_110)
+     - ``0.510771``
+     - Exact
+   * - :ref:`X_2865 <X_2865>`
+     - SM(X\_104, X\_105)
+     - ``8.803477``
+     - Exact
+   * - :ref:`X_2866 <X_2866>`
+     - SM(X\_105, X\_109)
+     - ``9.614456``
+     - Exact
+   * - :ref:`X_2867 <X_2867>`
+     - SM(X\_107, X\_110)
+     - ``2.985507``
+     - Exact
+   * - :ref:`X_2868 <X_2868>`
+     - SM(X\_110, X\_111)
+     - ``8.715380``
+     - Exact
+   * - :ref:`X_2869 <X_2869>`
+     - ISOGONAL CONJUGATE OF X\_2855
+     - —
+     - Exact
+   * - :ref:`X_2870 <X_2870>`
+     - ISOGONAL CONJUGATE OF X\_2856
+     - —
+     - Exact
+   * - :ref:`X_2871 <X_2871>`
+     - ISOGONAL CONJUGATE OF X\_2857
+     - —
+     - Exact
+   * - :ref:`X_2872 <X_2872>`
+     - ISOGONAL CONJUGATE OF X\_2858
+     - —
+     - Exact
+   * - :ref:`X_2873 <X_2873>`
+     - ISOGONAL CONJUGATE OF X\_2859
+     - —
+     - Exact
+   * - :ref:`X_2874 <X_2874>`
+     - ISOGONAL CONJUGATE OF X\_2860
+     - —
+     - Catalog
+   * - :ref:`X_2875 <X_2875>`
+     - ISOGONAL CONJUGATE OF X\_2861
+     - —
+     - Exact
+   * - :ref:`X_2876 <X_2876>`
+     - ISOGONAL CONJUGATE OF X\_2862
+     - —
+     - Exact
+   * - :ref:`X_2877 <X_2877>`
+     - ISOGONAL CONJUGATE OF X\_2863
+     - —
+     - Exact
+   * - :ref:`X_2878 <X_2878>`
+     - ISOGONAL CONJUGATE OF X\_2864
+     - —
+     - Exact
+   * - :ref:`X_2879 <X_2879>`
+     - ISOGONAL CONJUGATE OF X\_2865
+     - —
+     - Exact
+   * - :ref:`X_2880 <X_2880>`
+     - ISOGONAL CONJUGATE OF X\_2866
+     - —
+     - Exact
+   * - :ref:`X_2881 <X_2881>`
+     - ISOGONAL CONJUGATE OF X\_2867
+     - —
+     - Exact
+   * - :ref:`X_2882 <X_2882>`
+     - ISOGONAL CONJUGATE OF X\_2868
+     - —
+     - Exact

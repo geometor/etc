@@ -40,4 +40,4 @@ Key Properties & Sequenced Operations
 Collection 1 Centers Involved
 -----------------------------
 
-:doc:`X_1 <../../centers/c-00001-00019/x-00001/index>`, :doc:`X_2 <../../centers/c-00001-00019/x-00002/index>`, :doc:`X_3 <../../centers/c-00001-00019/x-00003/index>`, :doc:`X_4 <../../centers/c-00001-00019/x-00004/index>`, :doc:`X_6 <../../centers/c-00001-00019/x-00006/index>`, :doc:`X_7 <../../centers/c-00001-00019/x-00007/index>`, :doc:`X_8 <../../centers/c-00001-00019/x-00008/index>`, :doc:`X_9 <../../centers/c-00001-00019/x-00009/index>`, :doc:`X_10 <../../centers/c-00001-00019/x-00010/index>`, :doc:`X_11 <../../centers/c-00001-00019/x-00011/index>`, :doc:`X_12 <../../centers/c-00001-00019/x-00012/index>`, :doc:`X_19 <../../centers/c-00001-00019/x-00019/index>`
+:ref:`X_1 <X_1>`, :ref:`X_2 <X_2>`, :ref:`X_3 <X_3>`, :ref:`X_4 <X_4>`, :ref:`X_6 <X_6>`, :ref:`X_7 <X_7>`, :ref:`X_8 <X_8>`, :ref:`X_9 <X_9>`, :ref:`X_10 <X_10>`, :ref:`X_11 <X_11>`, :ref:`X_12 <X_12>`, :ref:`X_19 <X_19>`

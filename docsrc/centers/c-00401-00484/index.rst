@@ -22,5 +22,353 @@ X_401–X_484
 
 .. _preamble-0009:
 
-.. collection::
-   :sort: order
+Member Centers
+--------------
+
+:ref:`Open Interactive 7-Triangle Constellation & Explorer ↗ <family-c-00401-00484>`
+
+.. list-table::
+   :class: etc-table etc-mode-relations
+   :header-rows: 1
+   :widths: 12 56 18 14
+
+   * - Center
+     - Name
+     - Search (6,9,13)
+     - Precision
+   * - :ref:`X_401 <X_401>`
+     - BAILEY POINT
+     - ``3.684284``
+     - Exact
+   * - :ref:`X_402 <X_402>`
+     - ZEEMAN-GOSSARD PERSPECTOR
+     - ``2.073785``
+     - Exact
+   * - :ref:`X_403 <X_403>`
+     - X\_36 OF THE ORTHIC TRIANGLE
+     - ``-1.086450``
+     - Exact
+   * - :ref:`X_404 <X_404>`
+     - {X\_2,X\_3}-HARMONIC CONJUGATE OF X\_21
+     - ``1.885271``
+     - Exact
+   * - :ref:`X_405 <X_405>`
+     - EULER LINE INTERCEPT OF LINE X\_1X\_6
+     - ``2.922608``
+     - Exact
+   * - :ref:`X_406 <X_406>`
+     - EULER LINE INTERCEPT OF LINE X\_10X\_33
+     - ``3.640581``
+     - Exact
+   * - :ref:`X_407 <X_407>`
+     - CROSSPOINT OF X\_4 AND X\_225
+     - ``-1.726341``
+     - Exact
+   * - :ref:`X_408 <X_408>`
+     - EULER LINE INTERCEPT OF LINE X\_73X\_228
+     - ``-5.051955``
+     - Exact
+   * - :ref:`X_409 <X_409>`
+     - EULER X\_21-1st-SUBSTITUTION POINT
+     - ``2.330340``
+     - Exact
+   * - :ref:`X_410 <X_410>`
+     - EULER X\_29-1st-SUBSTITUTION POINT
+     - ``1.700177``
+     - Exact
+   * - :ref:`X_411 <X_411>`
+     - EULER X\_21-2nd-SUBSTITUTION POINT
+     - ``15.340294``
+     - Exact
+   * - :ref:`X_412 <X_412>`
+     - EULER X\_29-2nd-SUBSTITUTION POINT
+     - ``8.765223``
+     - Exact
+   * - :ref:`X_413 <X_413>`
+     - EULER X\_21-3rd-SUBSTITUTION POINT
+     - ``3.646042``
+     - Exact
+   * - :ref:`X_414 <X_414>`
+     - EULER X\_29-3rd-SUBSTITUTION POINT
+     - ``3.791064``
+     - Exact
+   * - :ref:`X_415 <X_415>`
+     - X\_4-HIRST INVERSE OF X\_29
+     - ``1.593029``
+     - Exact
+   * - :ref:`X_416 <X_416>`
+     - X\_3-HIRST INVERSE OF X\_21
+     - ``2.941460``
+     - Exact
+   * - :ref:`X_417 <X_417>`
+     - X\_3-CEVA CONJUGATE OF X\_185
+     - ``4.693495``
+     - Exact
+   * - :ref:`X_418 <X_418>`
+     - X\_3-CEVA-CONJUGATE OF X\_216
+     - ``0.440187``
+     - Exact
+   * - :ref:`X_419 <X_419>`
+     - X\_4-HIRST INVERSE OF X\_25
+     - ``0.834756``
+     - Exact
+   * - :ref:`X_420 <X_420>`
+     - X\_4-HIRST INVERSE OF X\_427
+     - ``0.834756``
+     - Exact
+   * - :ref:`X_421 <X_421>`
+     - X\_4-HIRST INVERSE OF X\_24
+     - ``5.308205``
+     - Exact
+   * - :ref:`X_422 <X_422>`
+     - X\_4-HIRST INVERSE OF X\_28
+     - ``0.909222``
+     - Exact
+   * - :ref:`X_423 <X_423>`
+     - X\_4-HIRST INVERSE OF X\_27
+     - ``1.100891``
+     - Exact
+   * - :ref:`X_424 <X_424>`
+     - X\_4-HIRST INVERSE OF X\_451
+     - ``1.897303``
+     - Exact
+   * - :ref:`X_425 <X_425>`
+     - X\_4-HIRST INVERSE OF X\_21
+     - ``1.875883``
+     - Exact
+   * - :ref:`X_426 <X_426>`
+     - EULER X\_19-4th-SUBSTITUTION POINT
+     - ``1.875883``
+     - Exact
+   * - :ref:`X_427 <X_427>`
+     - COMPLEMENT OF X\_22
+     - ``16.125778``
+     - Exact
+   * - :ref:`X_428 <X_428>`
+     - EULER X\_38-5th-SUBSTITUTION POINT
+     - ``-2.769480``
+     - Exact
+   * - :ref:`X_429 <X_429>`
+     - EULER X\_58-5th-SUBSTITUTION POINT
+     - ``44.999585``
+     - Exact
+   * - :ref:`X_430 <X_430>`
+     - EULER X\_81-5th-SUBSTITUTION POINT
+     - ``-10.356504``
+     - Exact
+   * - :ref:`X_431 <X_431>`
+     - EULER X\_283-5th-SUBSTITUTION POINT
+     - ``-10.356504``
+     - Exact
+   * - :ref:`X_432 <X_432>`
+     - EULER X\_155-6th-SUBSTITUTION POINT
+     - ``6.350209``
+     - Exact
+   * - :ref:`X_433 <X_433>`
+     - EULER X\_159-6th-SUBSTITUTION POINT
+     - ``8.967336``
+     - Exact
+   * - :ref:`X_434 <X_434>`
+     - EULER X\_195-6th-SUBSTITUTION POINT
+     - ``8.967336``
+     - Exact
+   * - :ref:`X_435 <X_435>`
+     - EULER X\_399-6th-SUBSTITUTION POINT
+     - ``14.361363``
+     - Exact
+   * - :ref:`X_436 <X_436>`
+     - EULER X\_48-7th-SUBSTITUTION POINT
+     - ``0.375186``
+     - Exact
+   * - :ref:`X_437 <X_437>`
+     - EULER X\_214-7th-SUBSTITUTION POINT
+     - ``-2.773444``
+     - Exact
+   * - :ref:`X_438 <X_438>`
+     - EULER X\_204-8th-SUBSTITUTION POINT
+     - ``1.578456``
+     - Exact
+   * - :ref:`X_439 <X_439>`
+     - EULER X\_193-9th-SUBSTITUTION POINT
+     - ``0.915650``
+     - Exact
+   * - :ref:`X_440 <X_440>`
+     - COMPLEMENT OF X\_27
+     - ``5.242466``
+     - Exact
+   * - :ref:`X_441 <X_441>`
+     - COMPLEMENT OF X\_297
+     - ``2.893098``
+     - Exact
+   * - :ref:`X_442 <X_442>`
+     - COMPLEMENT OF SCHIFFLER POINT
+     - ``2.355470``
+     - Exact
+   * - :ref:`X_443 <X_443>`
+     - COMPLEMENT OF X\_452
+     - ``2.325399``
+     - Exact
+   * - :ref:`X_444 <X_444>`
+     - EULER LINE INTERCEPT OF LINE X\_19X\_232
+     - ``-1.132256``
+     - Exact
+   * - :ref:`X_445 <X_445>`
+     - EULER X\_79-10th-SUBSTITUTION POINT
+     - ``3.760058``
+     - Exact
+   * - :ref:`X_446 <X_446>`
+     - CROSSPOINT OF X\_98 AND X\_511
+     - ``28.482023``
+     - Exact
+   * - :ref:`X_447 <X_447>`
+     - X\_2-HIRST INVERSE OF X\_27
+     - ``1.791081``
+     - Exact
+   * - :ref:`X_448 <X_448>`
+     - X\_2-HIRST INVERSE OF X\_21
+     - ``10.626944``
+     - Exact
+   * - :ref:`X_449 <X_449>`
+     - X\_2-HIRST INVERSE OF X\_452
+     - ``9.835757``
+     - Exact
+   * - :ref:`X_450 <X_450>`
+     - X\_3-HIRST INVERSE OF X\_4
+     - ``1.524839``
+     - Exact
+   * - :ref:`X_451 <X_451>`
+     - X\_4-HIRST INVERSE OF X\_424
+     - ``3.105964``
+     - Exact
+   * - :ref:`X_452 <X_452>`
+     - X\_2-HIRST INVERSE OF X\_449
+     - ``3.237309``
+     - Exact
+   * - :ref:`X_453 <X_453>`
+     - POINT ALSHAIN
+     - ``1.182720``
+     - Exact
+   * - :ref:`X_454 <X_454>`
+     - EULER X\_155-11th-SUBSTITUTION POINT
+     - ``-0.003928``
+     - Exact
+   * - :ref:`X_455 <X_455>`
+     - EULER X\_159-11th-SUBSTITUTION POINT
+     - ``-0.233349``
+     - Exact
+   * - :ref:`X_456 <X_456>`
+     - EULER X\_195-11th-SUBSTITUTION POINT
+     - ``3.729691``
+     - Exact
+   * - :ref:`X_457 <X_457>`
+     - EULER X\_399-11th-SUBSTITUTION POINT
+     - ``-0.492701``
+     - Exact
+   * - :ref:`X_458 <X_458>`
+     - EULER LINE INTERCEPT OF LINE X\_76X\_275
+     - ``3.233563``
+     - Exact
+   * - :ref:`X_459 <X_459>`
+     - X\_253-CEVA CONJUGATE OF X\_4
+     - ``1.857177``
+     - Exact
+   * - :ref:`X_460 <X_460>`
+     - POINT ANTARES
+     - ``-0.077383``
+     - Exact
+   * - :ref:`X_461 <X_461>`
+     - EULER LINE INTERCEPT OF LINE X\_33X\_200
+     - ``5.102426``
+     - Exact
+   * - :ref:`X_462 <X_462>`
+     - EULER LINE INTERCEPT OF LINE X\_51X\_397
+     - ``0.331516``
+     - Exact
+   * - :ref:`X_463 <X_463>`
+     - EULER LINE INTERCEPT OF LINE X\_51X\_398
+     - ``-1.200469``
+     - Exact
+   * - :ref:`X_464 <X_464>`
+     - EULER LINE INTERCEPT OF LINE X\_63X\_69
+     - ``5.837182``
+     - Exact
+   * - :ref:`X_465 <X_465>`
+     - EULER LINE INTERCEPT OF LINE X\_216X\_395
+     - ``0.344964``
+     - Exact
+   * - :ref:`X_466 <X_466>`
+     - EULER LINE INTERCEPT OF LINE X\_216X\_396
+     - ``3.717116``
+     - Exact
+   * - :ref:`X_467 <X_467>`
+     - EULER LINE INTERCEPT OF LINE X\_53X\_311
+     - ``0.742978``
+     - Exact
+   * - :ref:`X_468 <X_468>`
+     - X\_2-LINE CONJUGATE OF X\_3
+     - ``1.208635``
+     - Exact
+   * - :ref:`X_469 <X_469>`
+     - EULER LINE INTERCEPT OF LINE X\_92X\_264
+     - ``-17.594580``
+     - Exact
+   * - :ref:`X_470 <X_470>`
+     - X\_15-CROSS CONJUGATE OF X\_298
+     - ``3.743679``
+     - Exact
+   * - :ref:`X_471 <X_471>`
+     - X\_16-CROSS CONJUGATE OF X\_299
+     - ``1.750794``
+     - Exact
+   * - :ref:`X_472 <X_472>`
+     - X\_62-CROSS CONJUGATE OF X\_303
+     - ``0.453874``
+     - Exact
+   * - :ref:`X_473 <X_473>`
+     - X\_61-CROSS CONJUGATE OF X\_302
+     - ``7.198177``
+     - Exact
+   * - :ref:`X_474 <X_474>`
+     - EULER LINE INTERCEPT OF LINE X\_10X\_56
+     - ``2.287910``
+     - Exact
+   * - :ref:`X_475 <X_475>`
+     - EULER LINE INTERCEPT OF LINE X\_10X\_34
+     - ``1.816164``
+     - Exact
+   * - :ref:`X_476 <X_476>`
+     - TIXIER POINT
+     - ``-0.026519``
+     - Exact
+   * - :ref:`X_477 <X_477>`
+     - TIXIER ANTIPODE
+     - ``13.591245``
+     - Exact
+   * - :ref:`X_478 <X_478>`
+     - CENTER OF YIU CONIC
+     - ``-0.295568``
+     - Exact
+   * - :ref:`X_479 <X_479>`
+     - X\_269-CROSS CONJUGATE OF X\_279
+     - ``0.015255``
+     - Exact
+   * - :ref:`X_480 <X_480>`
+     - X\_200-CEVA CONJUGATE OF X\_220
+     - ``5.061393``
+     - Exact
+   * - :ref:`X_481 <X_481>`
+     - 1st EPPSTEIN POINT
+     - ``-0.019071``
+     - Exact
+   * - :ref:`X_482 <X_482>`
+     - 2nd EPPSTEIN POINT
+     - ``1.036213``
+     - Exact
+   * - :ref:`X_483 <X_483>`
+     - RADICAL CENTER OF AJIMA-MALFATTI CIRCLES
+     - ``1.470497``
+     - 50-digit
+   * - :ref:`X_484 <X_484>`
+     - 1st EVANS PERSPECTOR
+     - ``-6.840882``
+     - Exact

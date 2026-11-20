@@ -14,8 +14,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: actions/checkout@v3
-      uses: actions/checkout@v3
+    - name: actions/checkout@v4
+      uses: actions/checkout@v4
+
+    - name: Download Exact Symbolic Shard Corpus (X_1–X_73310)
+      run: |
+        mkdir -p .cache/etc_data
+        curl -fsSL "https://github.com/geometor/etc/releases/download/v0.4.0/etc-shards-v0.4.0.tar.gz" | tar -xz -C .cache/etc_data
 
     - name: photon-platform/action-deploy-sphinx-gh-pages
       uses: photon-platform/action-deploy-sphinx-gh-pages@v20

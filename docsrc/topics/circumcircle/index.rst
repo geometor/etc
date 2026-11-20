@@ -40,4 +40,4 @@ Key Properties & Sequenced Operations
 Collection 1 Centers Involved
 -----------------------------
 
-:doc:`X_3 <../../centers/c-00001-00019/x-00003/index>`, :doc:`X_2 <../../centers/c-00001-00019/x-00002/index>`, :doc:`X_4 <../../centers/c-00001-00019/x-00004/index>`, :doc:`X_5 <../../centers/c-00001-00019/x-00005/index>`, :doc:`X_6 <../../centers/c-00001-00019/x-00006/index>`, :doc:`X_15 <../../centers/c-00001-00019/x-00015/index>`, :doc:`X_16 <../../centers/c-00001-00019/x-00016/index>`
+:ref:`X_3 <X_3>`, :ref:`X_2 <X_2>`, :ref:`X_4 <X_4>`, :ref:`X_5 <X_5>`, :ref:`X_6 <X_6>`, :ref:`X_15 <X_15>`, :ref:`X_16 <X_16>`

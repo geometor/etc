@@ -598,9 +598,87 @@ def _optimize_thumbnail_svgs(app, exception):
         print(f"[etc] Optimized {optimized} thumbnail SVGs in {images_dir}")
 
 
+def _sync_etc_data_shards(app, exception):
+    """Incrementally sync generated exact symbolic JSON shards from .cache/etc_data into _static/data."""
+    import shutil
+
+    if exception is not None:
+        return
+    src_root = _REPO_ROOT / ".cache" / "etc_data"
+    if not src_root.is_dir():
+        return
+    dst_root = Path(app.outdir) / "_static" / "data"
+    copied = 0
+    for src_file in src_root.rglob("*.json"):
+        rel = src_file.relative_to(src_root)
+        dst_file = dst_root / rel
+        if (
+            dst_file.is_file()
+            and dst_file.stat().st_size == src_file.stat().st_size
+            and dst_file.stat().st_mtime >= src_file.stat().st_mtime
+        ):
+            continue
+        dst_file.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(src_file, dst_file)
+        copied += 1
+    if copied:
+        print(f"[etc] Synced {copied} exact symbolic shard files into {dst_root}")
+
+
+_LIVE_CENTER_REF_RE = re.compile(r"^x_(\d+)$", re.IGNORECASE)
+_LIVE_FAMILY_REF_RE = re.compile(r"^family-([a-z0-9_-]+)$", re.IGNORECASE)
+
+
+def _resolve_live_center_ref(app, env, node, contnode):
+    """Route all :ref:`X_n <X_n>` (n >= 1) and :ref:`family-...` refs to the Live Center Explorer."""
+    if node.get("reftype") != "ref":
+        return None
+    target = (node.get("reftarget") or "").strip()
+    if not target:
+        return None
+
+    frag = None
+    reftitle = None
+    m_x = _LIVE_CENTER_REF_RE.match(target)
+    if m_x:
+        num = int(m_x.group(1))
+        if num < 1:
+            return None
+        frag = f"X_{num}"
+        reftitle = f"X({num}) — Live Symbolic Explorer"
+    else:
+        m_f = _LIVE_FAMILY_REF_RE.match(target)
+        if m_f:
+            fid = m_f.group(1)
+            frag = f"family/{fid}"
+            reftitle = f"Family Constellation ({fid}) — Live Symbolic Explorer"
+        else:
+            return None
+
+    fromdoc = node.get("refdoc") or "index"
+    if not hasattr(app.builder, "get_relative_uri"):
+        return None
+    from docutils import nodes as _nodes
+
+    rel_uri = app.builder.get_relative_uri(fromdoc, "centers/explore")
+    refnode = _nodes.reference(
+        "",
+        "",
+        internal=True,
+        refuri=f"{rel_uri}#{frag}",
+        reftitle=reftitle,
+    )
+    refnode["classes"].append("etc-live-xref")
+    refnode.append(contnode)
+    return refnode
+
+
 def setup(app):
     app.add_css_file("css/etc-viewer.css")
     app.add_js_file("js/etc-viewer.js")
+    app.add_js_file("js/etc-live-viewer.js")
+    app.connect("missing-reference", _resolve_live_center_ref)
     app.connect("doctree-resolved", _fix_etc_ref_tooltips, priority=400)
     app.connect("html-page-context", _inline_etc_svgs, priority=600)
     app.connect("build-finished", _optimize_thumbnail_svgs)
+    app.connect("build-finished", _sync_etc_data_shards)

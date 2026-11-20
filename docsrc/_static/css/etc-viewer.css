@@ -69,6 +69,20 @@ body.etc-app-fullscreen {
   height: 100vh !important;
 }
 
+body.etc-app-fullscreen > header,
+body.etc-app-fullscreen > footer,
+body.etc-app-fullscreen > .asides,
+html.etc-app-fullscreen .asides {
+  display: none !important;
+}
+
+body.etc-app-fullscreen > main.book-main {
+  width: 100vw !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 article.book-reading-pane.etc-app-fullscreen {
   position: fixed !important;
   inset: 0 !important;
@@ -120,8 +134,9 @@ article.book-reading-pane.etc-app-fullscreen > .etc-app-bar {
 .etc-app-brand {
   display: inline-flex;
   align-items: baseline;
-  gap: 0.45rem;
+  gap: 0.5rem;
   padding-right: 0.35rem;
+  min-width: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -129,9 +144,16 @@ article.book-reading-pane.etc-app-fullscreen > .etc-app-bar {
 
 .etc-app-brand-id {
   font-family: "EB Garamond", Georgia, serif;
-  font-size: 1.15rem;
+  font-size: 1.24rem;
   font-weight: 700;
   color: var(--geom-accent, #e8b85a);
+  flex-shrink: 0;
+}
+
+.etc-app-brand-id sub,
+.etc-app-brand-title sub {
+  font-size: 0.72em;
+  line-height: 0;
 }
 
 .etc-app-brand-title {
@@ -142,6 +164,12 @@ article.book-reading-pane.etc-app-fullscreen > .etc-app-bar {
   text-transform: uppercase;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.etc-app-brand-title a.etc-live-xref {
+  color: #e8b85a;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(232, 184, 90, 0.5);
 }
 
 .etc-app-nav-btn,
@@ -590,40 +618,57 @@ article.book-reading-pane.etc-app-fullscreen .etc-prose-column {
   fill: none;
   stroke: #b0bec5;
   stroke-width: 2.2;
-  stroke-dasharray: 2, 4.5;
+  stroke-dasharray: 0.1 9;
   stroke-linecap: round;
+  stroke-opacity: 0.72;
   vector-effect: non-scaling-stroke;
+  pointer-events: stroke;
   cursor: pointer;
+  transition: stroke-opacity 0.12s ease, stroke-width 0.12s ease;
 }
 
 .etc-viewer svg.geometor-etc-drawing #elements line.sideline,
 .etc-viewer svg.geometor-etc-drawing #elements path.line.sideline {
-  stroke: #cbd5e1;
+  stroke: #94a3b8;
+  stroke-width: 2.0;
+  stroke-dasharray: 0.1 11;
+  stroke-opacity: 0.48;
+}
+
+.etc-viewer svg.geometor-etc-drawing #elements line.construction_line,
+.etc-viewer svg.geometor-etc-drawing #elements path.line.construction_line {
   stroke-width: 2.3;
+  stroke-linecap: round;
+  stroke-dasharray: 0.1 8.5;
+  stroke-opacity: 0.78;
 }
 
 .etc-viewer svg.geometor-etc-drawing #elements line.central_line,
 .etc-viewer svg.geometor-etc-drawing #elements path.line.central_line {
   stroke: #0bd;
-  stroke-width: 1.85;
-  stroke-opacity: 0.85;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-dasharray: 0.1 11;
+  stroke-opacity: 0.66;
+  pointer-events: stroke;
 }
 
-.etc-viewer svg.geometor-etc-drawing #elements line.central_line[data-color-token="orange"] { stroke: #fb923c; stroke-dasharray: 6, 3; }
-.etc-viewer svg.geometor-etc-drawing #elements line.central_line[data-color-token="teal"] { stroke: #2dd4bf; stroke-dasharray: 6, 3; }
-.etc-viewer svg.geometor-etc-drawing #elements line.central_line[data-color-token="blue"] { stroke: #38bdf8; stroke-dasharray: 6, 3; }
-.etc-viewer svg.geometor-etc-drawing #elements line.central_line[data-color-token="orchid"] { stroke: #e879f9; stroke-dasharray: 6, 3; }
-.etc-viewer svg.geometor-etc-drawing #elements line.central_line[data-color-token="pink"] { stroke: #f472b6; stroke-dasharray: 6, 3; }
-.etc-viewer svg.geometor-etc-drawing #elements line.central_line[data-color-token="lime"] { stroke: #a3e635; stroke-dasharray: 6, 3; }
-.etc-viewer svg.geometor-etc-drawing #elements line.central_line[data-color-token="green"] { stroke: #5ec27e; stroke-dasharray: 6, 3; }
-.etc-viewer svg.geometor-etc-drawing #elements line.central_line[data-color-token="purple"] { stroke: #a855f7; stroke-dasharray: 6, 3; }
+.etc-viewer svg.geometor-etc-drawing #elements line.central_line[data-color-token="orange"] { stroke: #fb923c; }
+.etc-viewer svg.geometor-etc-drawing #elements line.central_line[data-color-token="teal"] { stroke: #2dd4bf; }
+.etc-viewer svg.geometor-etc-drawing #elements line.central_line[data-color-token="blue"] { stroke: #38bdf8; }
+.etc-viewer svg.geometor-etc-drawing #elements line.central_line[data-color-token="orchid"] { stroke: #e879f9; }
+.etc-viewer svg.geometor-etc-drawing #elements line.central_line[data-color-token="pink"] { stroke: #f472b6; }
+.etc-viewer svg.geometor-etc-drawing #elements line.central_line[data-color-token="lime"] { stroke: #a3e635; }
+.etc-viewer svg.geometor-etc-drawing #elements line.central_line[data-color-token="green"] { stroke: #5ec27e; }
+.etc-viewer svg.geometor-etc-drawing #elements line.central_line[data-color-token="purple"] { stroke: #a855f7; }
 
 .etc-viewer svg.geometor-etc-drawing #elements line.golden,
 .etc-viewer svg.geometor-etc-drawing #elements path.line.golden,
 .etc-viewer svg.geometor-etc-drawing #elements line.euler,
 .etc-viewer svg.geometor-etc-drawing #elements path.line.euler {
   stroke: gold;
-  stroke-width: 2.1;
+  stroke-width: 2.5;
+  stroke-dasharray: 0.1 10;
 }
 
 .etc-viewer svg.geometor-etc-drawing #elements line.strut {
@@ -637,7 +682,11 @@ article.book-reading-pane.etc-app-fullscreen .etc-prose-column {
   fill: none;
   stroke: #C09;
   stroke-width: 2;
+  stroke-dasharray: 0.1 9;
+  stroke-linecap: round;
+  stroke-opacity: 0.72;
   vector-effect: non-scaling-stroke;
+  pointer-events: stroke;
   cursor: pointer;
 }
 
@@ -647,25 +696,24 @@ article.book-reading-pane.etc-app-fullscreen .etc-prose-column {
 
 .etc-viewer svg.geometor-etc-drawing #elements circle.nine_point_circle {
   stroke: #00e5ff;
-  stroke-dasharray: 6, 3;
 }
 
 .etc-viewer svg.geometor-etc-drawing #elements circle.secondary_circle {
   stroke: #ff9100;
-  stroke-dasharray: 5, 3;
-  stroke-opacity: 0.85;
+  stroke-opacity: 0.8;
 }
 
 .etc-viewer svg.geometor-etc-drawing #elements .bisector {
-  stroke-dasharray: 2, 4;
+  stroke-dasharray: 0.1 9;
 }
 
 .etc-viewer svg.geometor-etc-drawing #elements .guide {
   stroke: orange;
-  stroke-dasharray: 2, 4;
-  stroke-opacity: 0.65;
+  stroke-dasharray: 0.1 10;
+  stroke-opacity: 0.52;
 }
 
+/* Line & circle highlight: solid stroke in the element's own color */
 .etc-viewer svg.geometor-etc-drawing #elements line:hover,
 .etc-viewer svg.geometor-etc-drawing #elements line.hover,
 .etc-viewer svg.geometor-etc-drawing #elements line.geom-highlight-active,
@@ -675,17 +723,57 @@ article.book-reading-pane.etc-app-fullscreen .etc-prose-column {
 .etc-viewer svg.geometor-etc-drawing #elements circle:hover,
 .etc-viewer svg.geometor-etc-drawing #elements circle.hover,
 .etc-viewer svg.geometor-etc-drawing #elements circle.geom-highlight-active {
-  stroke: var(--geom-accent, #e8b85a) !important;
-  stroke-width: 3.2 !important;
+  stroke-width: 3.1 !important;
   stroke-dasharray: none !important;
   stroke-opacity: 1 !important;
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.22));
+}
+
+/* Point highlight halo rings (scaled to screen-px in etc-viewer.js) */
+.etc-viewer svg.geometor-etc-drawing .etc-point-ring {
+  fill: none;
+  vector-effect: non-scaling-stroke;
+  pointer-events: none;
+}
+
+.etc-viewer svg.geometor-etc-drawing .etc-point-ring.is-primary {
+  stroke: var(--geom-accent, #ffd54f);
+  stroke-width: 2.5;
+  stroke-opacity: 0.96;
+  filter: drop-shadow(0 0 4px rgba(255, 213, 79, 0.55));
+}
+
+.etc-viewer svg.geometor-etc-drawing .etc-point-ring.is-secondary {
+  stroke: #e2e8f0;
+  stroke-width: 1.9;
+  stroke-opacity: 0.88;
+  stroke-dasharray: 3.5 2.5;
+}
+
+/* Subtle construction evidence layer inside Coordinates view */
+.etc-viewer svg.geometor-etc-drawing .etc-coord-evidence line,
+.etc-viewer svg.geometor-etc-drawing .etc-coord-evidence circle,
+.etc-viewer svg.geometor-etc-drawing .etc-coord-evidence polygon {
+  opacity: 0.36;
+  transition: opacity 0.14s ease, stroke-width 0.14s ease;
+}
+
+.etc-viewer svg.geometor-etc-drawing .etc-coord-evidence line.hover,
+.etc-viewer svg.geometor-etc-drawing .etc-coord-evidence line.geom-highlight-active,
+.etc-viewer svg.geometor-etc-drawing .etc-coord-evidence circle.hover,
+.etc-viewer svg.geometor-etc-drawing .etc-coord-evidence circle.geom-highlight-active,
+.etc-viewer svg.geometor-etc-drawing .etc-coord-evidence polygon.hover,
+.etc-viewer svg.geometor-etc-drawing .etc-coord-evidence polygon.geom-highlight-active {
+  opacity: 1 !important;
+  stroke-dasharray: none !important;
+  stroke-width: 3.1 !important;
 }
 
 .etc-viewer svg.geometor-etc-drawing #highlights .highlight-segment {
   stroke: var(--geom-accent, #e8b85a);
   fill: none;
-  stroke-width: 6;
-  stroke-opacity: 0.42;
+  stroke-width: 5.5;
+  stroke-opacity: 0.34;
   vector-effect: non-scaling-stroke;
   marker-start: url(#marker);
   marker-end: url(#marker);
@@ -844,7 +932,6 @@ article.book-reading-pane.etc-app-fullscreen .etc-prose-column {
 
 .etc-viewer svg.geometor-etc-drawing .etc-plate-poly.hover,
 .etc-viewer svg.geometor-etc-drawing .etc-plate-poly.geom-highlight-active {
-  stroke: #ffd54f !important;
   stroke-width: 3.2px !important;
   fill-opacity: 0.42 !important;
 }
@@ -859,20 +946,20 @@ article.book-reading-pane.etc-app-fullscreen .etc-prose-column {
 
 .etc-viewer svg.geometor-etc-drawing .etc-plate-strut.hover,
 .etc-viewer svg.geometor-etc-drawing .etc-plate-strut.geom-highlight-active {
-  stroke: #ffd54f !important;
-  stroke-width: 6.4px !important;
+  stroke-width: 5.2px !important;
   stroke-dasharray: none !important;
   opacity: 1 !important;
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.25));
 }
 
 .etc-viewer svg.geometor-etc-drawing .etc-plate-line.hover,
 .etc-viewer svg.geometor-etc-drawing .etc-plate-line.geom-highlight-active,
 .etc-viewer svg.geometor-etc-drawing .etc-plate-circle.hover,
 .etc-viewer svg.geometor-etc-drawing .etc-plate-circle.geom-highlight-active {
-  stroke: #ffd54f !important;
-  stroke-width: 4.8px !important;
+  stroke-width: 3.4px !important;
   stroke-dasharray: none !important;
   opacity: 1 !important;
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.22));
 }
 
 .etc-viewer svg.geometor-etc-drawing .etc-plate-pt {
@@ -1752,3 +1839,408 @@ article.book-reading-pane.etc-app-fullscreen .etc-prose-column {
     grid-template-columns: 1fr;
   }
 }
+
+/* -------------------------------------------------------------------------
+   9. Universal Live Sharded Center Explorer (.etc-live-app)
+   ------------------------------------------------------------------------- */
+#live-center-explorer > h1,
+.etc-mathjax-seed {
+  display: none !important;
+}
+
+.etc-live-app > .etc-live-header > h1.etc-live-h1 {
+  margin-top: 0.35rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.etc-live-topbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.55rem 0.85rem;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.65rem;
+  background: #19191d;
+  border: 1px solid var(--book-border, #3d3934);
+  border-radius: 6px;
+}
+
+.etc-live-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.etc-live-nav-btn {
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: 1px solid #35343c;
+  background: rgba(255, 255, 255, 0.04);
+  color: #e4e4e7;
+  font-family: var(--geom-font-sans, "Fira Sans Condensed", sans-serif);
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.14s ease, border-color 0.14s ease, background-color 0.14s ease;
+}
+
+.etc-live-nav-btn:hover {
+  color: var(--geom-accent, #e8b85a);
+  border-color: var(--geom-accent, #e8b85a);
+  background: rgba(232, 184, 90, 0.12);
+}
+
+.etc-live-search-wrap {
+  position: relative;
+  flex: 1 1 280px;
+  max-width: 520px;
+}
+
+.etc-live-search {
+  width: 100%;
+  padding: 5px 11px;
+  border-radius: 5px;
+  border: 1px solid #3a3942;
+  background: #121215;
+  color: #f4f4f5;
+  font-family: var(--geom-font-sans, "Fira Sans Condensed", sans-serif);
+  font-size: 0.9rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.etc-live-search:focus {
+  border-color: var(--geom-accent, #e8b85a);
+}
+
+.etc-live-search-results {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  max-height: 360px;
+  overflow-y: auto;
+  background: #17171b;
+  border: 1px solid rgba(232, 184, 90, 0.45);
+  border-radius: 6px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.55);
+  z-index: 90;
+}
+
+.etc-live-search-item {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 6px 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  color: #e4e4e7;
+  text-align: left;
+  cursor: pointer;
+  font-family: var(--geom-font-sans, "Fira Sans Condensed", sans-serif);
+  font-size: 0.86rem;
+}
+
+.etc-live-search-item:hover {
+  background: rgba(232, 184, 90, 0.14);
+}
+
+.etc-ls-id {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-weight: 700;
+  color: var(--geom-accent, #e8b85a);
+}
+
+.etc-ls-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.etc-ls-meta {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.76rem;
+  color: #9c958a;
+}
+
+.etc-live-search-empty {
+  padding: 10px 12px;
+  color: #9c958a;
+  font-size: 0.86rem;
+}
+
+.etc-live-corpus-badge {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.78rem;
+  color: #a8a29e;
+  white-space: nowrap;
+}
+
+.etc-live-tracks-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0.35rem 0 0.55rem 0;
+  font-family: var(--geom-font-sans, "Fira Sans Condensed", sans-serif);
+  font-size: 0.92rem;
+}
+
+.etc-live-tracks-bar .book-track-item {
+  padding: 2px 9px;
+  border-radius: 4px;
+  color: #a1a1aa;
+  text-decoration: none !important;
+  font-weight: 600;
+}
+
+.etc-live-tracks-bar .book-track-item.is-active {
+  color: var(--geom-accent, #e8b85a);
+  background: rgba(232, 184, 90, 0.14);
+}
+
+.etc-prec-badge {
+  display: inline-block;
+  padding: 1px 7px;
+  border-radius: 999px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.76rem;
+  font-weight: 600;
+  vertical-align: baseline;
+}
+
+.etc-prec-badge.is-exact {
+  background: rgba(74, 222, 128, 0.14);
+  color: #4ade80;
+  border: 1px solid rgba(74, 222, 128, 0.36);
+}
+
+.etc-prec-badge.is-mp50 {
+  background: rgba(56, 189, 248, 0.14);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.36);
+}
+
+a.etc-live-xref {
+  color: var(--geom-accent, #e8b85a);
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(232, 184, 90, 0.5);
+}
+
+a.etc-live-xref:hover {
+  color: #ffd54f;
+  border-bottom-style: solid;
+}
+
+/* Fullscreen support when running inside #etc-live-app */
+article.book-reading-pane.etc-app-fullscreen .etc-live-app {
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+}
+
+article.book-reading-pane.etc-app-fullscreen .etc-live-topbar {
+  flex: 0 0 auto;
+  margin: 0;
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  padding: 4px 12px;
+}
+
+article.book-reading-pane.etc-app-fullscreen .etc-live-header {
+  display: none !important;
+}
+
+/* Geometric Construction elements table (harmonized with Construction & Coordinates views) */
+table.etc-construction-table tbody tr {
+  cursor: pointer;
+  transition: background-color 0.12s ease;
+}
+
+table.etc-construction-table tbody tr td:first-child {
+  border-left: 3.5px solid var(--etc-el-color, #94a3b8);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+table.etc-construction-table tbody tr td:first-child .geom-ref {
+  color: var(--etc-el-color, #e4e4e7);
+  border-bottom-color: color-mix(in srgb, var(--etc-el-color, #e4e4e7) 45%, transparent);
+}
+
+table.etc-construction-table tbody tr td:nth-child(2) {
+  font-family: var(--geom-font-sans, "Fira Sans Condensed", sans-serif);
+  font-size: 0.84rem;
+  color: #a1a1aa;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+table.etc-construction-table tbody tr:hover,
+table.etc-construction-table tbody tr.etc-row-highlight {
+  background: rgba(232, 184, 90, 0.11);
+}
+
+.etc-construction-summary {
+  margin: 0 0 0.5rem 0 !important;
+  font-size: 0.94rem;
+  color: var(--book-text-muted, #b8b2a6);
+  line-height: 1.45;
+}
+
+/* Family Group pill, searchable Families Drawer & Preamble Box */
+.etc-family-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: rgba(167, 139, 250, 0.14);
+  color: #c4b5fd !important;
+  border: 1px solid rgba(167, 139, 250, 0.36);
+  font-family: var(--geom-font-sans, "Fira Sans Condensed", sans-serif);
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: background-color 0.14s ease, border-color 0.14s ease;
+}
+
+.etc-family-badge:hover {
+  background: rgba(167, 139, 250, 0.25);
+  border-color: #c4b5fd;
+  color: #ede9fe !important;
+}
+
+.etc-family-drawer {
+  margin: 0 0 0.75rem 0;
+  padding: 0.65rem 0.85rem;
+  background: #17171b;
+  border: 1px solid rgba(232, 184, 90, 0.38);
+  border-radius: 6px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.45);
+}
+
+.etc-family-drawer-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem 0.65rem;
+  margin-bottom: 0.55rem;
+}
+
+.etc-family-tab-btn {
+  padding: 3px 10px;
+  border-radius: 4px;
+  border: 1px solid #35343c;
+  background: rgba(255, 255, 255, 0.04);
+  color: #a1a1aa;
+  font-family: var(--geom-font-sans, "Fira Sans Condensed", sans-serif);
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.etc-family-tab-btn.active {
+  color: var(--geom-accent, #e8b85a);
+  border-color: var(--geom-accent, #e8b85a);
+  background: rgba(232, 184, 90, 0.14);
+}
+
+.etc-family-filter {
+  flex: 1 1 220px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: 1px solid #3a3942;
+  background: #111114;
+  color: #f4f4f5;
+  font-family: var(--geom-font-sans, "Fira Sans Condensed", sans-serif);
+  font-size: 0.88rem;
+  outline: none;
+}
+
+.etc-family-filter:focus {
+  border-color: var(--geom-accent, #e8b85a);
+}
+
+.etc-family-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 6px;
+  max-height: 310px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.etc-family-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 6px 9px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.025);
+  color: #e4e4e7;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.12s ease, background-color 0.12s ease;
+}
+
+.etc-family-card:hover {
+  border-color: rgba(232, 184, 90, 0.55);
+  background: rgba(232, 184, 90, 0.1);
+}
+
+.etc-family-card-range {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--geom-accent, #e8b85a);
+}
+
+.etc-family-card-title {
+  font-family: var(--geom-font-sans, "Fira Sans Condensed", sans-serif);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #f4f4f5;
+  line-height: 1.25;
+}
+
+.etc-family-preamble-box {
+  margin: 0 0 0.85rem 0;
+  padding: 0.65rem 0.85rem;
+  background: rgba(167, 139, 250, 0.07);
+  border: 1px solid rgba(167, 139, 250, 0.25);
+  border-left: 3.5px solid #a78bfa;
+  border-radius: 5px;
+  font-size: 0.94rem;
+  line-height: 1.5;
+}
+
+.etc-family-preamble-box h3 {
+  margin: 0 0 0.35rem 0 !important;
+  font-size: 0.96rem;
+  color: #c4b5fd;
+}
+
+.etc-family-preamble-box p {
+  margin: 0 0 0.45rem 0 !important;
+}
+
+.etc-family-preamble-box p:last-child {
+  margin-bottom: 0 !important;
+}
+
+
+

@@ -127,6 +127,6 @@ __all__ = [
     "symmedial_triangle",
     "symmedian_point",
 ]
-__version__ = "0.3.2"
+__version__ = "0.4.0"
 
 

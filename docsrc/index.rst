@@ -6,7 +6,7 @@
 Encyclopedia of Triangle Centers
 ================================
 
-Clark Kimberling's `Encyclopedia of Triangle Centers <https://faculty.evansville.edu/ck6/encyclopedia/ETC.html>`_ (ETC) at the University of Evansville catalogues tens of thousands of triangle centers (:math:`X_1`–:math:`X_{53144}`) across continuous mathematical families. Within the interconnected `GEOMETOR <https://geometor.com/books/>`_ semantic digital archive, these centers are liberated from static tabular listings into exact symbolic algebra, barycentric and trilinear representations, multi-triangle vector constructions, and interactive incidence networks speaking one shared geometric language.
+Clark Kimberling's `Encyclopedia of Triangle Centers <https://faculty.evansville.edu/ck6/encyclopedia/ETC.html>`_ (ETC) at the University of Evansville catalogues tens of thousands of triangle centers (:math:`X_1`–:math:`X_{73310}`, Parts 1–37) across continuous mathematical families. Within the interconnected `GEOMETOR <https://geometor.com/books/>`_ semantic digital archive, these centers are liberated from static tabular listings into exact symbolic algebra, barycentric and trilinear representations, multi-triangle vector constructions, and interactive incidence networks speaking one shared geometric language.
 
 Books & Visual Guides
 ---------------------
@@ -23,13 +23,14 @@ Books & Visual Guides
 
       .. rubric:: Book Codex
 
-      **Encyclopedia of Triangle Centers** — Canonical centers :ref:`X_1 <X_1>` through :ref:`X_4000 <X_4000>` organized into 62 thematic collections (from 53,144 ingested centers). Collection 1 (:ref:`X_1 <X_1>`–:ref:`X_19 <X_19>`) features a 5-track interactive Book Codex (*Overview · Lines · Relations · Notes · Code*) across seven canonical reference triangles (Heronian, Right, Kepler, Kimberling, Golden, Gnomon, Equilateral) with Fullscreen App Mode (``F``).
+      **Encyclopedia of Triangle Centers** — Complete live corpus of **73,310 triangle centers** (:math:`X_1`–:math:`X_{73310}`, Parts 1–37) and **925 geometric family constellations** evaluated in exact algebraic number fields across all seven canonical reference triangles (Heronian, Right, Kepler, Kimberling, Golden, Gnomon, Equilateral) with Fullscreen App Mode (``F``). Every center from :ref:`X_1 <X_1>` through :ref:`X_73310 <X_73310>` speaks one unified interactive 5-track format.
 
       .. container:: etc-home-actions
 
+         * :doc:`Live Center Explorer (X_1–X_73310) → <centers/explore>`
          * :doc:`Browse All 62 Collections → <centers/index>`
          * :doc:`Collection 1 (X_1–X_19) → <centers/c-00001-00019/index>`
-         * :doc:`Start at X_1 Incenter → <centers/c-00001-00019/x-00001/index>`
+         * :ref:`Start at X_1 Incenter → <X_1>`
 
 .. container:: etc-home-grid
 

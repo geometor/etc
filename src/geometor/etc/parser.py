@@ -295,19 +295,21 @@ def parse_h3(html_content: str) -> dict[str, Any] | None:
     h3_norm = re.sub(r"<sup>\s*3\s*</sup>", "³", h3_norm, flags=re.IGNORECASE)
     h3_norm = re.sub(r"<sup>\s*-1\s*</sup>", "⁻¹", h3_norm, flags=re.IGNORECASE)
     clean_h3 = " ".join(clean_html_entities(remove_tags(h3_norm)).split()).strip()
-    key_match = re.search(r"X\((\d+)\)", clean_h3)
-    if not key_match:
+    h3_id_m = re.search(r'\bid=["\']?X(\d+)["\']?', match.group(1), flags=re.IGNORECASE)
+    id_num_m = h3_id_m or (re.match(r"^X(\d+)$", anchor_id, flags=re.IGNORECASE) if anchor_id else None)
+    key_match = re.search(r"X\((\d+)\)?", clean_h3)
+    if not id_num_m and not key_match:
         return None
 
-    num = int(key_match.group(1))
+    num = int(id_num_m.group(1)) if id_num_m else int(key_match.group(1))
     key = f"X_{num}"
 
     title = re.sub(
-        r"^(?:X[\(\[]\d+[\)\]]\s*=\s*)+", "", clean_h3, flags=re.IGNORECASE
+        r"^(?:X[\(\[]\d+[\)\]]?\s*=\s*)+", "", clean_h3, flags=re.IGNORECASE
     ).strip()
     if not title or title == clean_h3:
         title = re.sub(
-            r"^X[\(\[]\d+[\)\]]\s*", "", clean_h3, flags=re.IGNORECASE
+            r"^X[\(\[]\d+[\)\]]?\s*", "", clean_h3, flags=re.IGNORECASE
         ).strip()
     title = title.lstrip("=").strip()
     if not title:

@@ -42,5 +42,173 @@ X_1354–X_1392
 
    (2) If W is on the line at infinity, then the barycentric square :math:`W^{2}` is on the Steiner inscribed ellipse, and the barycentric product :ref:`X_7 <X_7>`\ \*\ :math:`W^{2}` is on the incircle.
 
-.. collection::
-   :sort: order
+Member Centers
+--------------
+
+:ref:`Open Interactive 7-Triangle Constellation & Explorer ↗ <family-c-01354-01392>`
+
+.. list-table::
+   :class: etc-table etc-mode-relations
+   :header-rows: 1
+   :widths: 12 56 18 14
+
+   * - Center
+     - Name
+     - Search (6,9,13)
+     - Precision
+   * - :ref:`X_1354 <X_1354>`
+     - BRISSE TRANSFORM OF X\_74
+     - ``0.144941``
+     - Exact
+   * - :ref:`X_1355 <X_1355>`
+     - BRISSE TRANSFORM OF X\_98
+     - ``0.198337``
+     - Exact
+   * - :ref:`X_1356 <X_1356>`
+     - BRISSE TRANSFORM OF X\_99
+     - ``0.120238``
+     - Exact
+   * - :ref:`X_1357 <X_1357>`
+     - BRISSE TRANSFORM OF X\_100
+     - ``0.237952``
+     - Exact
+   * - :ref:`X_1358 <X_1358>`
+     - BRISSE TRANSFORM OF X\_101
+     - ``0.758472``
+     - Exact
+   * - :ref:`X_1359 <X_1359>`
+     - BRISSE TRANSFORM OF X\_102
+     - ``0.125836``
+     - Exact
+   * - :ref:`X_1360 <X_1360>`
+     - BRISSE TRANSFORM OF X\_103
+     - ``0.154258``
+     - Exact
+   * - :ref:`X_1361 <X_1361>`
+     - BRISSE TRANSFORM OF X\_104
+     - ``0.181149``
+     - Exact
+   * - :ref:`X_1362 <X_1362>`
+     - BRISSE TRANSFORM OF X\_105
+     - ``0.445441``
+     - Exact
+   * - :ref:`X_1363 <X_1363>`
+     - BRISSE TRANSFORM OF X\_107
+     - ``2.429774``
+     - Exact
+   * - :ref:`X_1364 <X_1364>`
+     - BRISSE TRANSFORM OF X\_108
+     - ``3.199468``
+     - Exact
+   * - :ref:`X_1365 <X_1365>`
+     - BRISSE TRANSFORM OF X\_110
+     - ``1.169181``
+     - Exact
+   * - :ref:`X_1366 <X_1366>`
+     - BRISSE TRANSFORM OF X\_111
+     - ``0.587551``
+     - Exact
+   * - :ref:`X_1367 <X_1367>`
+     - BRISSE TRANSFORM OF X\_112
+     - ``3.355784``
+     - Exact
+   * - :ref:`X_1368 <X_1368>`
+     - COMPLEMENTARY CONJUGATE OF X\_6
+     - ``4.217256``
+     - Exact
+   * - :ref:`X_1369 <X_1369>`
+     - ANTICOMPLEMENTARY CONJUGATE OF X\_6
+     - ``6.742808``
+     - Exact
+   * - :ref:`X_1370 <X_1370>`
+     - ANTICOMPLEMENT OF X\_25
+     - ``8.980916``
+     - Exact
+   * - :ref:`X_1371 <X_1371>`
+     - 1st RIGBY POINT
+     - ``1.123667``
+     - Exact
+   * - :ref:`X_1372 <X_1372>`
+     - 2nd RIGBY POINT
+     - ``-1.174590``
+     - Exact
+   * - :ref:`X_1373 <X_1373>`
+     - 1st GRIFFITHS POINT
+     - ``0.916837``
+     - Exact
+   * - :ref:`X_1374 <X_1374>`
+     - 2nd GRIFFITHS POINT
+     - ``0.472226``
+     - Exact
+   * - :ref:`X_1375 <X_1375>`
+     - EVANS POINT
+     - ``-0.205711``
+     - Exact
+   * - :ref:`X_1376 <X_1376>`
+     - EXSIMILICENTER(CIRCUMCIRCLE, SPIEKER CIRCLE)
+     - ``2.625142``
+     - Exact
+   * - :ref:`X_1377 <X_1377>`
+     - INSIMILICENTER(2nd LEMOINE CIRCLE, SPIEKER CIRCLE)
+     - ``2.559490``
+     - Exact
+   * - :ref:`X_1378 <X_1378>`
+     - EXSIMILICENTER(2nd LEMOINE CIRCLE, SPIEKER CIRCLE)
+     - ``4.204837``
+     - Exact
+   * - :ref:`X_1379 <X_1379>`
+     - 1st BROCARD-AXIS INTERCEPT OF CIRCUMCIRCLE
+     - ``-0.283321``
+     - 50-digit
+   * - :ref:`X_1380 <X_1380>`
+     - 2nd BROCARD-AXIS INTERCEPT OF CIRCUMCIRCLE
+     - ``13.848047``
+     - 50-digit
+   * - :ref:`X_1381 <X_1381>`
+     - 1st INTERCEPT OF LINE X\_1X\_3 AND CIRCUMCIRCLE
+     - ``-0.120510``
+     - 50-digit
+   * - :ref:`X_1382 <X_1382>`
+     - 2nd INTERCEPT OF LINE X\_1X\_3 AND CIRCUMCIRCLE
+     - ``13.685236``
+     - 50-digit
+   * - :ref:`X_1383 <X_1383>`
+     - 1st GRINBERG HOMOTHETIC CENTER
+     - ``0.209320``
+     - Exact
+   * - :ref:`X_1384 <X_1384>`
+     - 2nd GRINBERG HOMOTHETIC CENTER
+     - ``-0.145401``
+     - Exact
+   * - :ref:`X_1385 <X_1385>`
+     - MIDPOINT OF INCENTER AND CIRCUMCENTER
+     - ``4.236336``
+     - Exact
+   * - :ref:`X_1386 <X_1386>`
+     - MIDPOINT OF INCENTER AND SYMMEDIAN POINT
+     - ``1.341609``
+     - Exact
+   * - :ref:`X_1387 <X_1387>`
+     - MIDPOINT OF INCENTER AND FEUERBACH POINT
+     - ``2.166722``
+     - Exact
+   * - :ref:`X_1388 <X_1388>`
+     - POINT ANCHA
+     - ``-1.979641``
+     - Exact
+   * - :ref:`X_1389 <X_1389>`
+     - ISOGONAL CONJUGATE OF X\_1385
+     - ``-1.113088``
+     - Exact
+   * - :ref:`X_1390 <X_1390>`
+     - ISOGONAL CONJUGATE OF X\_1386
+     - ``2.087280``
+     - Exact
+   * - :ref:`X_1391 <X_1391>`
+     - ISOGONAL CONJUGATE OF X\_1387
+     - ``1.041986``
+     - Exact
+   * - :ref:`X_1392 <X_1392>`
+     - ISOGONAL CONJUGATE OF X\_1388
+     - ``3.241463``
+     - Exact

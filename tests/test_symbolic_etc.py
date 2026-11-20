@@ -53,7 +53,7 @@ from geometor.etc.video import compile_scenes_from_script
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 COLL1_DOC_DIR = REPO_ROOT / "docsrc" / "centers" / "c-00001-00019"
-X1_DOC_DIR = COLL1_DOC_DIR / "x-00001"
+MODELS_DIR = REPO_ROOT / "src" / "geometor" / "etc" / "models"
 X1_VIDEO_DIR = REPO_ROOT / "videos" / "x-00001"
 
 PUBLISHED_KIMBERLING_SEARCH_VALUES: dict[int, float] = {
@@ -298,8 +298,8 @@ def test_symbolic_registry_cache_roundtrip_and_kimberling_search_values(
 
 @pytest.mark.parametrize("preset", ["heronian", "right", "kepler", "kimberling"])
 def test_x1_model_py_zero_floats_and_central_line_spreads(preset: str) -> None:
-    """Build x-00001/model.py on all 4 presets with zero sp.Float and verify Heronian spreads."""
-    mod_ns = runpy.run_path(str(X1_DOC_DIR / "model.py"))
+    """Build models/x_00001.py on all 4 presets with zero sp.Float and verify Heronian spreads."""
+    mod_ns = runpy.run_path(str(MODELS_DIR / "x_00001.py"))
     model = mod_ns["build_model"](preset)
     assert len(model) > 0
     for el in model:
@@ -376,8 +376,8 @@ def test_all_19_canonical_constructors_match_symbolic_registry(preset: str) -> N
 
 @pytest.mark.parametrize("num", range(1, 20))
 def test_collection_1_model_py_zero_floats_and_collinearities(num: int) -> None:
-    """Verify every x-000NN/model.py builds cleanly across all 4 presets with exact incidence."""
-    model_py = COLL1_DOC_DIR / f"x-{num:05d}" / "model.py"
+    """Verify every models/x_000NN.py builds cleanly across all 4 presets with exact incidence."""
+    model_py = MODELS_DIR / f"x_{num:05d}.py"
     assert model_py.is_file(), f"Missing {model_py}"
     mod_ns = runpy.run_path(str(model_py))
 
@@ -439,31 +439,17 @@ def test_symbolic_collection_1_constellation_model(preset: str) -> None:
         _assert_zero_floats(el)
 
 
-def test_all_156_collection_1_svgs_and_video_svgs_well_formed() -> None:
-    """Validate XML, data-ref, data-field, and symbolic_rows across all 156 Collection 1 + 5 video SVGs."""
+def test_collection_1_constellation_and_video_svgs_well_formed() -> None:
+    """Validate XML, data-ref, and symbolic_rows across all 7 Collection 1 constellation + 5 video SVGs."""
     coll_svgs = [
         COLL1_DOC_DIR / "c-00001-00019.svg",
         COLL1_DOC_DIR / "c-00001-00019-right.svg",
         COLL1_DOC_DIR / "c-00001-00019-kepler.svg",
         COLL1_DOC_DIR / "c-00001-00019-kimberling.svg",
+        COLL1_DOC_DIR / "c-00001-00019-golden.svg",
+        COLL1_DOC_DIR / "c-00001-00019-gnomon.svg",
+        COLL1_DOC_DIR / "c-00001-00019-equilateral.svg",
     ]
-    center_svgs: list[Path] = []
-    for num in range(1, 20):
-        ed = COLL1_DOC_DIR / f"x-{num:05d}"
-        center_svgs.extend(
-            [
-                ed / f"x-{num:05d}.svg",
-                ed / f"x-{num:05d}-right.svg",
-                ed / f"x-{num:05d}-kepler.svg",
-                ed / f"x-{num:05d}-kimberling.svg",
-                ed / "02_coordinates.svg",
-                ed / "03_central_lines.svg",
-                ed / "04_relations.svg",
-                ed / "05_four_triangles.svg",
-            ]
-        )
-    assert len(coll_svgs) + len(center_svgs) == 156
-
     video_svgs = [
         X1_VIDEO_DIR / "svgs" / "01_primary.svg",
         X1_VIDEO_DIR / "svgs" / "02_coordinates.svg",
@@ -472,7 +458,7 @@ def test_all_156_collection_1_svgs_and_video_svgs_well_formed() -> None:
         X1_VIDEO_DIR / "svgs" / "05_four_triangles.svg",
     ]
 
-    for svg_path in coll_svgs + center_svgs + video_svgs:
+    for svg_path in coll_svgs + video_svgs:
         assert svg_path.is_file(), f"Missing SVG: {svg_path}"
         raw = svg_path.read_text(encoding="utf-8")
         root = ET.fromstring(raw)
@@ -492,68 +478,9 @@ def test_all_156_collection_1_svgs_and_video_svgs_well_formed() -> None:
         )
         assert has_symbolic_rows, f"No symbolic_rows in {svg_path}"
 
-    # Verify algebraic field tags on primary Heronian SVGs
-    for num in range(1, 20):
-        h_svg = COLL1_DOC_DIR / f"x-{num:05d}" / f"x-{num:05d}.svg"
-        root = ET.fromstring(h_svg.read_text(encoding="utf-8"))
-        df = root.attrib.get("data-field", "")
-        if num in range(13, 19):
-            assert df == "ℚ(√3)", f"Expected ℚ(√3) on {h_svg.name}, got {df!r}"
-        else:
-            assert df == "ℚ", f"Expected ℚ on {h_svg.name}, got {df!r}"
-
-
-@pytest.mark.parametrize("num", range(1, 20))
-def test_collection_1_rst_whole_page_and_act_level_g_selector_parity(num: int) -> None:
-    """Verify 100% per-track :g: selector parity and tabular 5-track structure across X_1-X_19."""
-    ed = COLL1_DOC_DIR / f"x-{num:05d}"
-    idx_rst = (ed / "index.rst").read_text(encoding="utf-8")
-    lines_rst = (ed / "lines.rst").read_text(encoding="utf-8")
-    rel_rst = (ed / "relations.rst").read_text(encoding="utf-8")
-    notes_rst = (ed / "notes.rst").read_text(encoding="utf-8")
-    code_rst = (ed / "code.rst").read_text(encoding="utf-8")
-
-    r_act1 = extract_svg_element_refs(ed / f"x-{num:05d}.svg")
-    r_act2 = extract_svg_element_refs(ed / "02_coordinates.svg")
-    r_act3 = extract_svg_element_refs(ed / "03_central_lines.svg")
-    r_act4 = extract_svg_element_refs(ed / "04_relations.svg")
-    r_act5 = extract_svg_element_refs(ed / "05_four_triangles.svg")
-
-    # Verify unified 5-track frontmatter & tabular coordinate/operator structure
-    for tr_name, tr_txt in (
-        ("index.rst", idx_rst),
-        ("lines.rst", lines_rst),
-        ("relations.rst", rel_rst),
-        ("notes.rst", notes_rst),
-        ("code.rst", code_rst),
-    ):
-        assert ":tracks: Overview: index | Lines: lines | Relations: relations | Notes: notes | Code: code" in tr_txt, (
-            f"x-{num:05d}/{tr_name} missing 5-track frontmatter"
-        )
-
-    assert "* - Trilinears" in idx_rst
-    assert "* - Barycentrics" in idx_rst
-    assert ":class: etc-table etc-coord-table" in idx_rst
-    assert ":class: etc-table etc-mode-four-triangles" in idx_rst
-    assert ":class: etc-table etc-mode-coordinates" in idx_rst
-    assert ":class: etc-table etc-mode-lines" in lines_rst
-    assert ":class: etc-table etc-mode-relations" in rel_rst
-
-    # Per-track :g: selector parity against the track's active viewer SVGs
-    for tgt in _extract_g_targets(idx_rst):
-        assert tgt in (r_act1 | r_act2 | r_act5), f"x-{num:05d}/index.rst unresolved :g:`{tgt}`"
-    for tgt in _extract_g_targets(lines_rst):
-        assert tgt in (r_act3 | r_act1), f"x-{num:05d}/lines.rst unresolved :g:`{tgt}`"
-    for tgt in _extract_g_targets(rel_rst):
-        assert tgt in (r_act4 | r_act1), f"x-{num:05d}/relations.rst unresolved :g:`{tgt}`"
-    for tgt in _extract_g_targets(notes_rst):
-        assert tgt in r_act1, f"x-{num:05d}/notes.rst unresolved :g:`{tgt}`"
-    for tgt in _extract_g_targets(code_rst):
-        assert tgt in r_act1, f"x-{num:05d}/code.rst unresolved :g:`{tgt}`"
-
 
 def test_collection_1_overview_rst_g_selector_parity() -> None:
-    """Verify 100% :g: selector parity on docsrc/centers/c-00001-00019/index.rst."""
+    """Verify 100% :g: selector parity and unified Member Centers table on c-00001-00019/index.rst."""
     coll_rst = (COLL1_DOC_DIR / "index.rst").read_text(encoding="utf-8")
     coll_refs = extract_svg_element_refs(COLL1_DOC_DIR / "c-00001-00019.svg")
     targets = _extract_g_targets(coll_rst)
@@ -562,6 +489,8 @@ def test_collection_1_overview_rst_g_selector_parity() -> None:
         assert tgt in coll_refs, f"c-00001-00019/index.rst unresolved :g:`{tgt}`"
     for num in range(1, 20):
         assert f"X_{num}" in targets, f"X_{num} missing from c-00001-00019/index.rst :g: links"
+        assert f":ref:`X_{num} <X_{num}>`" in coll_rst
+    assert "<family-c-00001-00019>" in coll_rst
 
 
 @pytest.mark.parametrize("num", [1, 5, 10, 13, 19])
@@ -607,7 +536,7 @@ def test_svg_opt_line_clipping_and_stripping() -> None:
     assert -10.0001 <= x1 <= 10.0001 and -10.0001 <= x2 <= 10.0001
     assert -10.0001 <= y1 <= 10.0001 and -10.0001 <= y2 <= 10.0001
 
-    raw_x1 = (X1_DOC_DIR / "x-00001.svg").read_text(encoding="utf-8")
+    raw_x1 = (X1_VIDEO_DIR / "svgs" / "01_primary.svg").read_text(encoding="utf-8")
     viewer_svg = strip_svg_for_viewer(raw_x1)
     assert "<style>" not in viewer_svg
     assert "INTERACTIVE_SVG_JS" not in viewer_svg
@@ -649,7 +578,7 @@ def test_svg_opt_line_clipping_and_stripping() -> None:
     assert len(thumb_svg) < 24_000, f"Thumbnail SVG too large: {len(thumb_svg)} bytes"
 
     # Verify legacy glow-coord blur filter & oversized halo are stripped from coordinates plate
-    raw_coord = (X1_DOC_DIR / "02_coordinates.svg").read_text(encoding="utf-8")
+    raw_coord = (X1_VIDEO_DIR / "svgs" / "02_coordinates.svg").read_text(encoding="utf-8")
     viewer_coord = strip_svg_for_viewer(raw_coord)
     root_c = ET.fromstring(viewer_coord)
     assert "feGaussianBlur" not in viewer_coord

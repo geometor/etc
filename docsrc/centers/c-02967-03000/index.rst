@@ -95,5 +95,153 @@ X_2967–X_3000
 
    This section presents points :ref:`X_3000 <X_3000>` to :ref:`X_3019 <X_3019>` of intersection of lines listed in MathWorld's Central Line. Contributed by :person:`Eric Weisstein <eric-weisstein>`, December, 2004.
 
-.. collection::
-   :sort: order
+Member Centers
+--------------
+
+:ref:`Open Interactive 7-Triangle Constellation & Explorer ↗ <family-c-02967-03000>`
+
+.. list-table::
+   :class: etc-table etc-mode-relations
+   :header-rows: 1
+   :widths: 12 56 18 14
+
+   * - Center
+     - Name
+     - Search (6,9,13)
+     - Precision
+   * - :ref:`X_2967 <X_2967>`
+     - 1st MACBEATH POINT
+     - ``-3.903479``
+     - Exact
+   * - :ref:`X_2968 <X_2968>`
+     - 2nd MACBEATH POINT
+     - ``4.664645``
+     - Exact
+   * - :ref:`X_2969 <X_2969>`
+     - 3rd MACBEATH POINT
+     - ``1.986739``
+     - Exact
+   * - :ref:`X_2970 <X_2970>`
+     - 4th MACBEATH POINT
+     - ``3.126706``
+     - Exact
+   * - :ref:`X_2971 <X_2971>`
+     - 5th MACBEATH POINT
+     - ``1.637257``
+     - Exact
+   * - :ref:`X_2972 <X_2972>`
+     - 6th MACBEATH POINT
+     - ``3.979351``
+     - Exact
+   * - :ref:`X_2973 <X_2973>`
+     - 7th MACBEATH POINT
+     - ``2.762040``
+     - Exact
+   * - :ref:`X_2974 <X_2974>`
+     - 8th MACBEATH POINT
+     - ``-0.531514``
+     - Exact
+   * - :ref:`X_2975 <X_2975>`
+     - INSIMILICENTER(CIRCUMCIRCLE, AC-INCIRCLE)
+     - ``5.219779``
+     - Exact
+   * - :ref:`X_2976 <X_2976>`
+     - RADICAL CENTER OF {CIRCUMCIRCLE, INCIRCLE, AC-INCIRCLE}
+     - ``0.590266``
+     - Exact
+   * - :ref:`X_2977 <X_2977>`
+     - RADICAL CENTER OF {CIRCUMCIRCLE, NINE-POINT CIRCLE, AC-INCIRCLE}
+     - ``3.072069``
+     - Exact
+   * - :ref:`X_2978 <X_2978>`
+     - RADICAL CENTER OF {CIRCUMCIRCLE, BROCARD CIRCLE, CONWAY CIRCLE}
+     - ``-91.999014``
+     - Exact
+   * - :ref:`X_2979 <X_2979>`
+     - CENTROID OF DUAL OF THE ORTHIC TRIANGLE
+     - ``7.646855``
+     - Exact
+   * - :ref:`X_2980 <X_2980>`
+     - ISOGONAL CONJUGATE OF X\_2979
+     - ``-5.780786``
+     - Exact
+   * - :ref:`X_2981 <X_2981>`
+     - DC(X\_13)
+     - ``1.790165``
+     - Exact
+   * - :ref:`X_2982 <X_2982>`
+     - DC(X\_21)
+     - ``0.679893``
+     - Exact
+   * - :ref:`X_2983 <X_2983>`
+     - DC(X\_27)
+     - ``2.673849``
+     - Exact
+   * - :ref:`X_2984 <X_2984>`
+     - DC(X\_53)
+     - ``-0.757530``
+     - Exact
+   * - :ref:`X_2985 <X_2985>`
+     - DC(X\_56)
+     - ``2.831841``
+     - Exact
+   * - :ref:`X_2986 <X_2986>`
+     - DC(X\_74)
+     - ``3.913523``
+     - Exact
+   * - :ref:`X_2987 <X_2987>`
+     - DC(X\_98)
+     - ``5.754012``
+     - Exact
+   * - :ref:`X_2988 <X_2988>`
+     - DC(X\_102)
+     - ``3.312811``
+     - Exact
+   * - :ref:`X_2989 <X_2989>`
+     - DC(X\_103)
+     - ``4.213383``
+     - Exact
+   * - :ref:`X_2990 <X_2990>`
+     - DC(X\_104)
+     - ``5.123569``
+     - Exact
+   * - :ref:`X_2991 <X_2991>`
+     - DC(X\_105)
+     - ``41.697337``
+     - Exact
+   * - :ref:`X_2992 <X_2992>`
+     - CD(X\_13)
+     - ``506.325910``
+     - Exact
+   * - :ref:`X_2993 <X_2993>`
+     - CD(X\_14)
+     - ``5.651552``
+     - Exact
+   * - :ref:`X_2994 <X_2994>`
+     - CD(X\_19)
+     - ``3.304563``
+     - Exact
+   * - :ref:`X_2995 <X_2995>`
+     - CD(X\_21)
+     - ``10.870414``
+     - Exact
+   * - :ref:`X_2996 <X_2996>`
+     - CD(X\_25)
+     - ``-2.543775``
+     - Exact
+   * - :ref:`X_2997 <X_2997>`
+     - CD(X\_28)
+     - ``1.259673``
+     - Exact
+   * - :ref:`X_2998 <X_2998>`
+     - CD(X\_32)
+     - ``28.563893``
+     - Exact
+   * - :ref:`X_2999 <X_2999>`
+     - DANNEELS-BEVAN HOMOTHETIC CENTER
+     - ``1.105548``
+     - Exact
+   * - :ref:`X_3000 <X_3000>`
+     - (ANTIORTHIC AXIS)∩(SODDY LINE)
+     - ``-4.419092``
+     - Exact

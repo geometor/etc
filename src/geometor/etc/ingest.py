@@ -333,14 +333,18 @@ def ingest_folder(input_folder: str | Path, output_folder: str | Path) -> dict[s
 
             if part_s.lower().startswith("<h3"):
                 h3_match = re.search(
-                    r"<h3[^>]*>(.*?)</h3>", part_s, re.DOTALL | re.IGNORECASE
+                    r"<h3([^>]*)>(.*?)</h3>", part_s, re.DOTALL | re.IGNORECASE
                 )
-                h3_raw = h3_match.group(1) if h3_match else ""
+                h3_attrs = h3_match.group(1) if h3_match else ""
+                h3_raw = h3_match.group(2) if h3_match else ""
                 h3_clean = " ".join(re.sub(r"<[^>]+>", "", h3_raw).split())
-                x_match = re.match(r"^X\((\d+)\)", h3_clean)
+                id_match = re.search(
+                    r'\bid=["\']?X(\d+)["\']?', h3_attrs, re.IGNORECASE
+                )
+                x_match = re.match(r"^X\((\d+)\)?", h3_clean)
 
-                if x_match:
-                    x_num = int(x_match.group(1))
+                if id_match or x_match:
+                    x_num = int(id_match.group(1) if id_match else x_match.group(1))
                     center_key = f"X({x_num})"
                     filename = f"x-{x_num:05d}.html"
                     cleaned_part = _clean_trailing_hr(part_s)
@@ -433,10 +437,87 @@ def ingest_folder(input_folder: str | Path, output_folder: str | Path) -> dict[s
     }
 
 
+ETC_BASE_URL = "https://faculty.evansville.edu/ck6/encyclopedia/"
+
+
+def fetch_latest_etc_parts(
+    output_folder: str | Path = "resources/source",
+    *,
+    start_part: int = 27,
+    max_part: int = 65,
+    delay_seconds: float = 0.4,
+) -> list[Path]:
+    """Download newly published ``ETCPartN.html`` volumes from Clark Kimberling's ETC site.
+
+    Stops cleanly on the first HTTP 404 or placeholder stub (< 25 KB).
+    """
+    import time
+    import urllib.error
+    import urllib.request
+
+    out_dir = Path(output_folder)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    fetched: list[Path] = []
+
+    # Refresh Guide_to_preambles_in_ETC.html if reachable
+    guide_url = f"{ETC_BASE_URL}Guide_to_preambles_in_ETC.html"
+    try:
+        req_g = urllib.request.Request(
+            guide_url, headers={"User-Agent": "GEOMETOR-ETC-Archive/1.0"}
+        )
+        with urllib.request.urlopen(req_g, timeout=30) as resp_g:
+            raw_g = resp_g.read()
+        if len(raw_g) > 100_000:
+            (out_dir / "Guide_to_preambles_in_ETC.html").write_bytes(raw_g)
+            print(
+                f"[fetch] Updated Guide_to_preambles_in_ETC.html ({len(raw_g) / (1024 * 1024):.2f} MB)",
+                flush=True,
+            )
+    except (urllib.error.HTTPError, OSError) as err:
+        print(f"[fetch] Guide_to_preambles_in_ETC.html skipped ({err})", flush=True)
+
+    for part_num in range(start_part, max_part + 1):
+        fname = f"ETCPart{part_num}.html"
+        url = f"{ETC_BASE_URL}{fname}"
+        req = urllib.request.Request(
+            url, headers={"User-Agent": "GEOMETOR-ETC-Archive/1.0"}
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                raw = resp.read()
+        except urllib.error.HTTPError as err:
+            if err.code == 404:
+                print(f"[fetch] {fname}: HTTP 404 (reached latest part).", flush=True)
+                break
+            print(f"[fetch] {fname}: HTTP {err.code}", flush=True)
+            continue
+        except OSError as err:
+            print(f"[fetch] {fname}: network error ({err})", flush=True)
+            break
+
+        if len(raw) < 25_000:
+            print(
+                f"[fetch] {fname}: {len(raw):,} bytes (placeholder stub, stopping).",
+                flush=True,
+            )
+            break
+
+        dst = out_dir / fname
+        dst.write_bytes(raw)
+        fetched.append(dst)
+        print(f"[fetch] Saved {dst} ({len(raw) / (1024 * 1024):.2f} MB)", flush=True)
+        time.sleep(delay_seconds)
+
+    return fetched
+
+
 if __name__ == "__main__":
     import sys
 
-    if len(sys.argv) > 2:
+    if "--fetch" in sys.argv:
+        fetch_latest_etc_parts("resources/source")
+        ingest_folder("resources/source", "resources/split")
+    elif len(sys.argv) > 2:
         ingest_folder(sys.argv[1], sys.argv[2])
     else:
         ingest_folder("resources/source", "resources/split")

@@ -483,8 +483,8 @@
 
       const brand = document.createElement('div');
       brand.className = 'etc-app-brand';
-      const h1 = article.querySelector('.book-content > section > h1');
-      const rubric = article.querySelector('.book-content > section > p.rubric');
+      const h1 = article.querySelector('.etc-live-h1') || article.querySelector('.book-content > section > h1');
+      const rubric = article.querySelector('.etc-live-subtitle') || article.querySelector('.book-content > section > p.rubric');
       const idSpan = document.createElement('span');
       idSpan.className = 'etc-app-brand-id';
       if (h1) {
@@ -495,12 +495,13 @@
         idSpan.textContent = article.getAttribute('data-canonical-id') || 'ETC';
       }
       brand.appendChild(idSpan);
+
+      const titleSpan = document.createElement('span');
+      titleSpan.className = 'etc-app-brand-title';
       if (rubric && rubric.textContent.trim()) {
-        const titleSpan = document.createElement('span');
-        titleSpan.className = 'etc-app-brand-title';
-        titleSpan.textContent = rubric.textContent.trim();
-        brand.appendChild(titleSpan);
+        titleSpan.innerHTML = rubric.innerHTML.trim();
       }
+      brand.appendChild(titleSpan);
       left.appendChild(brand);
 
       const nextSrc = article.querySelector('.book-nav-next a.book-nav-btn');
@@ -543,8 +544,65 @@
       bar.appendChild(left);
       bar.appendChild(center);
       bar.appendChild(right);
+
+      // Delegate live track and X_n link clicks inside fullscreen app bar back to Live Explorer
+      bar.addEventListener('click', (e) => {
+        const liveApp = article.querySelector('#etc-live-app');
+        if (!liveApp) return;
+        const trLink = e.target.closest('a[data-live-track]');
+        if (trLink) {
+          e.preventDefault();
+          const real = liveApp.querySelector(`.etc-live-tracks-bar a[data-live-track="${trLink.dataset.liveTrack}"]`);
+          if (real) real.click();
+          return;
+        }
+        const xLink = e.target.closest('a[data-jump-x]');
+        if (xLink && window.ETCLiveExplorer) {
+          e.preventDefault();
+          const num = parseInt(xLink.dataset.jumpX, 10);
+          if (Number.isFinite(num)) {
+            window.ETCLiveExplorer.navigateTo(num, window.ETCLiveExplorer.currentTrack);
+          }
+        }
+      });
+
       article.insertBefore(bar, article.firstChild);
+      this.syncAppBar(article);
       return bar;
+    }
+
+    syncAppBar(articleEl) {
+      const article = articleEl || this.viewerEl.closest('article.book-reading-pane');
+      if (!article) return;
+      const bar = article.querySelector(':scope > .etc-app-bar');
+      if (!bar) return;
+
+      const liveH1 = article.querySelector('.etc-live-h1');
+      const liveSub = article.querySelector('.etc-live-subtitle');
+      const liveTracks = article.querySelector('.etc-live-tracks-bar');
+      if (!liveH1) return;
+
+      const idSpan = bar.querySelector('.etc-app-brand-id');
+      if (idSpan) {
+        idSpan.innerHTML = liveH1.innerHTML.trim();
+      }
+      const titleSpan = bar.querySelector('.etc-app-brand-title');
+      if (titleSpan) {
+        titleSpan.innerHTML = liveSub ? liveSub.innerHTML.trim() : '';
+        titleSpan.title = liveSub ? liveSub.textContent.trim() : '';
+      }
+      const center = bar.querySelector('.etc-app-bar-center');
+      if (center && liveTracks) {
+        if (liveTracks.style.display === 'none') {
+          center.innerHTML = '';
+        } else {
+          const clone = liveTracks.cloneNode(true);
+          clone.className = 'etc-app-tracks';
+          clone.style.display = '';
+          center.innerHTML = '';
+          center.appendChild(clone);
+        }
+      }
     }
 
     ensureAppSplitter(article) {
@@ -613,6 +671,7 @@
       const want = Boolean(active);
       if (want) {
         this.ensureAppBar(article);
+        this.syncAppBar(article);
         this.ensureAppSplitter(article);
       }
       this.isFullscreen = want;
@@ -760,7 +819,10 @@
         });
       }
       if (this.triBar) {
-        const supportsTri = this.currentMode === 'construction' || this.currentMode === 'lines';
+        const supportsTri =
+          this.currentMode === 'construction' ||
+          this.currentMode === 'lines' ||
+          (typeof this.liveSvgProvider === 'function' && this.currentMode === 'coordinates');
         this.triBar.classList.toggle('is-disabled', !supportsTri);
         this.triBar.querySelectorAll('.etc-tab-btn').forEach((btn) => {
           const active = btn.getAttribute('data-tab') === this.currentTriangle;
@@ -928,6 +990,9 @@
         if (modeBtn?.dataset.captionHtml) {
           this.updateCaption(modeBtn.dataset.captionHtml);
         }
+        if (typeof this.onViewChange === 'function') {
+          this.onViewChange(this.currentMode, this.currentTriangle);
+        }
         return true;
       }
 
@@ -953,7 +1018,10 @@
         capHtml = modeBtn.dataset.captionHtml || null;
       }
 
-      const svgHtml = await this.loadViewSvgHtml(url, cacheKey);
+      const svgHtml =
+        typeof this.liveSvgProvider === 'function'
+          ? this.liveSvgProvider(targetMode, this.currentTriangle)
+          : await this.loadViewSvgHtml(url, cacheKey);
       if (!svgHtml) return false;
       const newSvg = this.parseSvgFromHtml(svgHtml);
       if (!newSvg) return false;
@@ -965,6 +1033,9 @@
       this.mountSvg(newSvg, { applyModeLines: this.showLines });
       this.syncModeButtons();
       if (capHtml) this.updateCaption(capHtml);
+      if (typeof this.onViewChange === 'function') {
+        this.onViewChange(this.currentMode, this.currentTriangle);
+      }
       return true;
     }
 
@@ -974,12 +1045,17 @@
       if (!triBtn) return false;
 
       if (this.currentMode !== 'construction' && this.currentMode !== 'lines') {
-        this.currentMode = 'construction';
+        if (!(typeof this.liveSvgProvider === 'function' && this.currentMode === 'coordinates')) {
+          this.currentMode = 'construction';
+        }
       }
 
       const url = triBtn.getAttribute('data-src');
       const cacheKey = this.cacheKeyFor('construction', targetTab);
-      const svgHtml = await this.loadViewSvgHtml(url, cacheKey);
+      const svgHtml =
+        typeof this.liveSvgProvider === 'function'
+          ? this.liveSvgProvider(this.currentMode, targetTab)
+          : await this.loadViewSvgHtml(url, cacheKey);
       if (!svgHtml) return false;
       const newSvg = this.parseSvgFromHtml(svgHtml);
       if (!newSvg) return false;
@@ -995,6 +1071,9 @@
         this.updateCaption('__ORIG__');
       } else if (triBtn.dataset.captionHtml) {
         this.updateCaption(triBtn.dataset.captionHtml);
+      }
+      if (typeof this.onViewChange === 'function') {
+        this.onViewChange(this.currentMode, this.currentTriangle);
       }
       return true;
     }
@@ -1053,6 +1132,19 @@
       this.pointsGroup = svgEl.querySelector('#points');
       this.labelsGroup = svgEl.querySelector('#labels');
       this.highlightsGroup = svgEl.querySelector('#highlights');
+      this.activeRingSpecs = [];
+      let ringsGrp = svgEl.querySelector('#etc-point-rings');
+      if (!ringsGrp) {
+        ringsGrp = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+        ringsGrp.setAttribute('id', 'etc-point-rings');
+        ringsGrp.setAttribute('pointer-events', 'none');
+        if (this.labelsGroup && this.labelsGroup.parentNode === svgEl) {
+          svgEl.insertBefore(ringsGrp, this.labelsGroup);
+        } else {
+          svgEl.appendChild(ringsGrp);
+        }
+      }
+      this.pointRingsGroup = ringsGrp;
       this.pointEls = this.pointsGroup ? Array.from(this.pointsGroup.querySelectorAll('circle')) : [];
       this.platePtEls = Array.from(svgEl.querySelectorAll('circle.etc-plate-pt'));
       this.labelEls = this.labelsGroup ? Array.from(this.labelsGroup.querySelectorAll('text[data-point-id]')) : [];
@@ -1168,13 +1260,17 @@
         const pid = pt.getAttribute('data-id');
         if (pid) this.pointById.set(pid, pt);
       });
+      this.platePtEls.forEach((pt) => {
+        const pid = pt.getAttribute('data-id');
+        if (pid && !this.pointById.has(pid)) this.pointById.set(pid, pt);
+      });
       this.labelEls.forEach((lbl) => {
         const pid = lbl.getAttribute('data-point-id');
         if (pid) this.labelByPtId.set(pid, lbl);
       });
       if (this.highlightsGroup) {
-        this.highlightsGroup.querySelectorAll('[data-highlight-for]').forEach((hl) => {
-          const key = hl.getAttribute('data-highlight-for');
+        this.highlightsGroup.querySelectorAll('[data-highlight-for], [data-for]').forEach((hl) => {
+          const key = hl.getAttribute('data-highlight-for') || hl.getAttribute('data-for');
           if (key) {
             canonicalKeys(key).forEach((ck) => this.hlByFor.set(ck, hl));
           }
@@ -1335,6 +1431,12 @@
         const plateR = (4.4 * unitsPerPx).toFixed(6);
         for (let i = 0; i < this.platePtEls.length; i++) {
           this.platePtEls[i].setAttribute('r', plateR);
+        }
+      }
+      if (this.activeRingSpecs && this.activeRingSpecs.length > 0) {
+        for (let i = 0; i < this.activeRingSpecs.length; i++) {
+          const rs = this.activeRingSpecs[i];
+          rs.el.setAttribute('r', ((rs.primary ? 11.5 : 9.2) * unitsPerPx).toFixed(6));
         }
       }
 
@@ -1811,8 +1913,37 @@
       return { keys, matchedEls, primaryId, primaryInfo };
     }
 
+    clearPointRings() {
+      this.activeRingSpecs = [];
+      if (this.pointRingsGroup) {
+        this.pointRingsGroup.innerHTML = '';
+      }
+    }
+
+    addPointRing(ptEl, primary, color) {
+      if (!this.pointRingsGroup || !ptEl) return;
+      const cx = parseFloat(ptEl.getAttribute('cx'));
+      const cy = parseFloat(ptEl.getAttribute('cy'));
+      if (!Number.isFinite(cx) || !Number.isFinite(cy)) return;
+      const vb = this.currentViewBox || this.initialViewBox || [0, 0, 100, 100];
+      const wPx = this.cachedRect?.width || 800;
+      const hPx = this.cachedRect?.height || 600;
+      const unitsPerPx = Math.max(vb[2] / wPx, vb[3] / hPx);
+      const ring = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      ring.setAttribute('class', `etc-point-ring ${primary ? 'is-primary' : 'is-secondary'}`);
+      ring.setAttribute('cx', cx.toFixed(6));
+      ring.setAttribute('cy', cy.toFixed(6));
+      ring.setAttribute('r', ((primary ? 11.5 : 9.2) * unitsPerPx).toFixed(6));
+      if (color && color !== 'none') {
+        ring.style.stroke = color;
+      }
+      this.pointRingsGroup.appendChild(ring);
+      this.activeRingSpecs.push({ el: ring, primary: Boolean(primary) });
+    }
+
     clearHover(force = false) {
       if (this.pinnedKey && !force) return;
+      this.clearPointRings();
       if (this.activeEls.size === 0 && !this.activeKey) return;
       this.activeKey = null;
       this.activeEls.forEach((el) => {
@@ -1855,12 +1986,38 @@
       this.activeKey = dedupKey;
       if (pin) this.pinnedKey = dedupKey;
 
-      // 1. Highlight matched SVG elements + highlight overlays + constituent points/labels
+      // Determine semantic stroke/accent color of primary element (keeps line highlights in their own color!)
+      let primaryColor = primaryInfo?.color || null;
+      if (!primaryColor) {
+        for (const el of matchedEls) {
+          const st = el.style?.stroke || el.getAttribute('stroke');
+          if (st && st !== 'none') {
+            primaryColor = st;
+            break;
+          }
+          if (window.getComputedStyle && el.tagName.toLowerCase() !== 'circle') {
+            const comp = window.getComputedStyle(el).stroke;
+            if (comp && comp !== 'none' && comp !== 'rgb(0, 0, 0)') {
+              primaryColor = comp;
+              break;
+            }
+          }
+        }
+      }
+
+      // 1. Highlight matched SVG elements + highlight overlays + constituent points/labels + point rings
       const allCanonicalForText = new Set(keys);
+      const ringedPts = new Set();
       matchedEls.forEach((el) => {
         el.classList.add('hover', 'geom-highlight-active');
         if (pin) el.classList.add('is-pinned');
         this.activeEls.add(el);
+        const tag = el.tagName.toLowerCase();
+        if (tag === 'circle' && (el.closest('#points') || el.classList.contains('etc-plate-pt'))) {
+          const ptCol = primaryColor && primaryColor !== '#e0e0e0' ? primaryColor : '#ffd54f';
+          this.addPointRing(el, true, ptCol);
+          ringedPts.add(el);
+        }
         const did = el.getAttribute('data-id') || el.getAttribute('data-ref');
         if (did) {
           canonicalKeys(did).forEach((k) => allCanonicalForText.add(k));
@@ -1871,6 +2028,9 @@
         const hl = this.hlByFor.get(ck);
         if (hl) {
           hl.style.display = 'inline';
+          if (primaryColor && !hl.style.stroke) {
+            hl.style.stroke = primaryColor;
+          }
           this.activeEls.add(hl);
         }
       });
@@ -1881,6 +2041,10 @@
         if (ptEl && !matchedEls.has(ptEl)) {
           ptEl.classList.add('geom-highlight-secondary');
           this.activeEls.add(ptEl);
+          if (!ringedPts.has(ptEl)) {
+            this.addPointRing(ptEl, false, primaryColor || '#f6d38b');
+            ringedPts.add(ptEl);
+          }
         }
         const lblEl = this.labelByPtId.get(pid);
         if (lblEl) {
@@ -1894,11 +2058,12 @@
         sourceEl.classList.add('geom-highlight-text');
         this.activeEls.add(sourceEl);
         const coordRow = sourceEl.closest('table.etc-coord-table tbody tr');
+        const constrRow = sourceEl.closest('table.etc-construction-table tbody tr');
         const lineRow =
           String(rawRef).trim().startsWith('{')
             ? sourceEl.closest('table.etc-mode-lines tbody tr')
             : null;
-        const srcRow = coordRow || lineRow;
+        const srcRow = coordRow || constrRow || lineRow;
         if (srcRow) {
           srcRow.classList.add('etc-row-highlight');
           this.activeEls.add(srcRow);
@@ -1997,17 +2162,18 @@
           if (this.pinnedKey) this.unpin();
           return;
         }
-        // On collection constellation pages, clicking a center dot navigates to that center
+        // On collection constellation pages (or live family constellations), clicking a center dot navigates to that center
         const pid = target.getAttribute('data-id') || target.getAttribute('data-ref') || '';
         const cm = pid.match(/^X_(\d+)$/);
-        if (
-          cm &&
-          target.tagName.toLowerCase() === 'circle' &&
-          window.location.pathname.includes('/c-') &&
-          !window.location.pathname.includes('/x-')
-        ) {
-          window.location.href = `x-${cm[1].padStart(5, '0')}/index.html`;
-          return;
+        if (cm && target.tagName.toLowerCase() === 'circle') {
+          const num = parseInt(cm[1], 10);
+          if (typeof this.onPointClick === 'function' && this.onPointClick(num, target) === true) {
+            return;
+          }
+          if (window.location.pathname.includes('/c-') && !window.location.pathname.includes('/x-')) {
+            window.location.href = `../explore.html#X_${num}`;
+            return;
+          }
         }
         // Otherwise toggle pin on clicked element so user can copy/zoom HUD MathJax
         if (this.pinnedKey && this.pinnedKey === pid) {
@@ -2103,9 +2269,9 @@
             }
           }
         }
-        // Whole-row hover on Homogeneous Coordinate tables & Principal Central Lines tables
+        // Whole-row hover on Homogeneous Coordinate, Construction Elements & Central Lines tables
         if (!refStr && !e.target.closest('a')) {
-          const coordRow = e.target.closest('table.etc-coord-table tbody tr');
+          const coordRow = e.target.closest('table.etc-coord-table tbody tr, table.etc-construction-table tbody tr');
           if (coordRow) {
             const rowGeom = coordRow.querySelector('.geom-ref[data-ref]');
             if (rowGeom) {
@@ -2127,31 +2293,19 @@
         }
         if (!refStr) return;
 
-        // If element is in current SVG, highlight immediately
+        // Highlight matching elements in the active SVG ONLY — never hijack/swap view modes on hover
         if (this.hasCanonicalKey(refStr)) {
           this.activateHover(refStr, { fromSvg: false, sourceEl });
-          return;
-        }
-
-        // Cross-mode smart switch: if this section/table specifies a mode, switch smoothly!
-        const wantMode = this.inferTargetModeForElement(sourceEl);
-        if (wantMode && wantMode !== this.currentMode) {
-          this.switchMode(wantMode).then((ok) => {
-            if (ok && !this.pinnedKey) {
-              this.activateHover(refStr, { fromSvg: false, sourceEl });
-            }
-          });
         }
       });
 
       root.addEventListener('mouseout', (e) => {
         if (this.pinnedKey) return;
         if (e.target.closest('.etc-viewer')) return;
-        const fromRow = e.target.closest('table.etc-coord-table tbody tr, table.etc-mode-lines tbody tr');
+        const rowSel = 'table.etc-coord-table tbody tr, table.etc-construction-table tbody tr, table.etc-mode-lines tbody tr';
+        const fromRow = e.target.closest(rowSel);
         if (fromRow) {
-          const toRow = e.relatedTarget
-            ? e.relatedTarget.closest?.('table.etc-coord-table tbody tr, table.etc-mode-lines tbody tr')
-            : null;
+          const toRow = e.relatedTarget ? e.relatedTarget.closest?.(rowSel) : null;
           if (toRow === fromRow) return;
           this.clearHover();
           return;
@@ -2164,12 +2318,12 @@
         }
       });
 
-      // Clicking a non-link .geom-ref (or coordinate/line table row cell) pins highlight & HUD
+      // Clicking a non-link .geom-ref (or coordinate/construction/line table row) pins highlight & HUD
       root.addEventListener('click', (e) => {
         if (e.target.closest('.etc-viewer') || e.target.closest('a')) return;
         let span = e.target.closest('.geom-ref[data-ref]');
         if (!span && !e.target.closest('mjx-container')) {
-          const coordRow = e.target.closest('table.etc-coord-table tbody tr');
+          const coordRow = e.target.closest('table.etc-coord-table tbody tr, table.etc-construction-table tbody tr');
           if (coordRow) {
             span = coordRow.querySelector('.geom-ref[data-ref]');
           } else {
@@ -2234,7 +2388,7 @@
   function initAllViewers() {
     const controllers = [];
     document.querySelectorAll('.etc-viewer').forEach((el) => {
-      if (el.dataset.etcViewerInit === '1') return;
+      if (el.dataset.etcViewerInit === '1' || el.dataset.etcLive === '1') return;
       el.dataset.etcViewerInit = '1';
       controllers.push(new EtcViewerController(el));
     });
@@ -2244,6 +2398,7 @@
 
   window.ETCViewer = {
     init: initAllViewers,
+    Controller: EtcViewerController,
     canonicalKeys,
     clipInfiniteLineToBox,
   };

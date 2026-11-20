@@ -4,32 +4,34 @@ A digital reconstruction and semantic index of Clark Kimberling's *Encyclopedia 
 
 ## Mission
 
-To parse, structure, cross-reference, and model the *Encyclopedia of Triangle Centers* (`X(1)` through `X(53144)`), establishing a computable dependency and incidence graph ready for symbolic and graphical exploration in `geometor.model` and `geometor.explorer`.
+To parse, structure, cross-reference, and evaluate the complete *Encyclopedia of Triangle Centers* (`X_1` through `X_73310`, Parts 1–37) in exact algebraic number fields across 7 canonical reference triangles, establishing a computable dependency and incidence graph ready for symbolic and graphical exploration in `geometor.model`, `geometor.explorer`, and the unified client-side Live Center Explorer.
 
 ## Overview
 
-`geometor.etc` transforms the archival HTML volumes of Clark Kimberling's *Encyclopedia of Triangle Centers* and its supporting *Glossary* into structured data registries and rich ReStructuredText (RST) documentation powered by `photon-platform/publish`.
+`geometor.etc` transforms the archival HTML volumes of Clark Kimberling's *Encyclopedia of Triangle Centers* and its supporting *Glossary* into structured apparatus registries, exact algebraic 100-center JSON shards, and a unified Book Codex powered by `photon-platform/publish`.
 
 It is responsible for:
 
-- **Ingestion**: Splitting raw HTML source volumes (`ETC.html`, `ETCPart2.html`–`ETCPart27.html`) into introductory sections, inter-center group preambles, and individual center records (`resources/split/`).
-- **Semantic Parsing**: Extracting canonical identifiers, primary names, aliases, trilinear/barycentric/tripolar coordinates (including `<p>Barycentrics` blocks and `=` continuation lines), vector/barycentric linear combinations, construction notes, incidence loci (lines, circles, conics, cubics), and functional center relations (`X(n) = f(X(i), X(j))`) with comprehensive `:math:` LaTeX normalization.
-- **Apparatus & Cross-Referencing**: Building `resources/glossary.json`, `resources/persons.json`, and `resources/citations.json` to power interactive `:term:`, `:person:`, `:cite:`, `:ref:`, and Euclidean `:g:` geometric element roles (`:g:`ABC << A B C >>``, `:g:`BC <[ B C ]>``, `:g:`A``) across all centers.
-- **Composable Geometric Modeling**: Constructing each center via `src/geometor/etc/ops.py` and generating standalone per-center `model.py` scripts, `geometor.model` JSON files, and two-layer Explorer-styled SVGs (primary defining construction + toggleable incident central lines) with two-way text ↔ SVG hover synchronization.
-- **RST Generation**: Generating Book Codex (`:layout: book`) 2-track documentation per center (`docsrc/centers/x-NNNNN/index.rst` Overview track with `.. enunciation::`, `.. signature:: center`, and `.. collapse::` sections, plus `code.rst` Code track) alongside `docsrc/glossary.rst`, `docsrc/persons.rst`, and `docsrc/bibliography.rst`.
+- **Ingestion**: Splitting raw HTML source volumes (`ETC.html`, `ETCPart2.html`–`ETCPart37.html`) into introductory sections, 925 inter-center group preambles, and 73,310 contiguous center records (`resources/split/`).
+- **Semantic Parsing**: Extracting canonical identifiers, primary names, aliases, trilinear/barycentric/tripolar coordinates, vector/barycentric linear combinations, construction notes, incidence loci, and functional center relations (`X_n = f(X_i, X_j)`) with `:math:` LaTeX normalization.
+- **Exact Symbolic Field Evaluation & Sharding (`field_eval.py`, `shards.py`)**: Evaluating all 73,310 centers inside exact algebraic rings (`QElem`, `QuadElem`, `BiquadElem`, with 50-digit `mpmath` fallback) across all 7 canonical triangles (Heronian, Right, Kepler, Kimberling, Golden, Gnomon, Equilateral) into 734 partner-deduplicated JSON shards plus `manifest.json`, `core-centers.json`, `search-index.json`, and `families.json` (925 ETC families + 62 curated collections) in `.cache/etc_data/`.
+- **Classical Symbolic Models (`src/geometor/etc/models/`, `ops.py`)**: Exact zero-float `geometor.model` compass-and-straightedge constructions for `X_1`–`X_19` (`models/x_00001.py`–`x_00019.py`) and canonical *Principles of Geometry* operators.
+- **Unified Live Explorer & Book Codex (`docsrc/centers/explore.rst`, `etc-live-viewer.js`, `etc-viewer.js`)**: Serving all `X_1`–`X_73310` centers and all 987 interactive family constellations client-side with 5 synchronized tracks, Tier 0–4 geometric constructions, sparse-dot-to-solid line highlights, zoom-invariant point rings, docked stage footer, and Fullscreen App Mode (`F`).
 
 ## Repository Layout
 
-- `resources/source/`: Archival HTML source files (`ETC.html`, `ETCPart2.html`–`ETCPart27.html`, `GLOSSARY...html`).
+- `resources/source/`: Archival HTML source volumes (`ETC.html`, `ETCPart2.html`–`ETCPart37.html`, `GLOSSARY...html`, `Guide_to_preambles_in_ETC.html`).
 - `resources/split/`: Intermediate split HTML files for centers, preambles, and intro sections (git-ignored).
-- `resources/centers/`: Full archive of 53,144 generated per-center folders (git-ignored).
-- `resources/`: Extracted apparatus registries (`glossary.json`, `persons.json`, `citations.json`).
-- `src/geometor/etc/`: Core Python package (`ingest.py`, `parser.py`, `glossary.py`, `ops.py`, `construct.py`, `render.py`, `transform.py`, `__main__.py`).
-- `docsrc/centers/c-XXXXX-YYYYY/`: Thematic collection folder containing `index.rst`, 4-triangle constellation SVGs (`c-XXXXX-YYYYY.svg`, `-right.svg`, `-kepler.svg`, `-kimberling.svg`), and nested `x-NNNNN/` per-center folders (`index.rst`, `code.rst`, `model.py`, `x-NNNNN.json`, and 4-triangle center SVGs).
+- `.cache/etc_data/`: Exact symbolic JSON shards (`shards/s-XXXXX-YYYYY.json`), indices (`manifest.json`, `core-centers.json`, `search-index.json`, `families.json`), and per-triangle gzip checkpoints (git-ignored; distributed via GitHub Release assets for CI).
+- `src/geometor/etc/`: Core Python package (`ingest.py`, `parser.py`, `field_eval.py`, `shards.py`, `glossary.py`, `ops.py`, `models/x_00001.py`–`x_00019.py`, `construct.py`, `plates.py`, `render.py`, `svg_opt.py`, `transform.py`, `tracks.py`, `topics.py`, `triangles.py`, `symbolic_cache.py`).
+- `docsrc/centers/`: Unified Live Explorer (`explore.rst`) and 62 thematic collection chapter pages (`c-00001-00019/`–`c-03961-04000/`) with constellation SVGs and live member tables.
 
 ## CLI Usage
 
 ```bash
-python3 -m geometor.etc --skip-ingest --limit 3000
+uv run --no-sync python3 -m geometor.etc.shards --max-center 73310 --workers 4
+uv run --no-sync python3 -m geometor.etc.shards --families-only
+publish build
+uv run --no-sync pytest
 ```
 
