@@ -6,6 +6,10 @@
 Encyclopedia of Triangle Centers
 ================================
 
+.. image:: _static/medallion.svg
+   :alt: Encyclopedia of Triangle Centers Medallion
+   :class: repo-medallion-hero
+
 Clark Kimberling's `Encyclopedia of Triangle Centers <https://faculty.evansville.edu/ck6/encyclopedia/ETC.html>`_ (ETC) at the University of Evansville catalogues tens of thousands of triangle centers (:math:`X_1`–:math:`X_{73310}`, Parts 1–37) across continuous mathematical families. Within the interconnected `GEOMETOR <https://geometor.com/books/>`_ semantic digital archive, these centers are liberated from static tabular listings into exact symbolic algebra, barycentric and trilinear representations, multi-triangle vector constructions, and interactive incidence networks speaking one shared geometric language.
 
 Books & Visual Guides
