@@ -96,7 +96,6 @@ Scholarly Apparatus & Edition
    log/index
    modules/index
    demos/index
-   refs/index
    todos/index
    changelog
    connect
